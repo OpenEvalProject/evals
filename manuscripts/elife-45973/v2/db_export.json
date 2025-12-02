@@ -1,0 +1,2521 @@
+{
+  "submission": {
+    "id": "3275616a-ba21-4253-859c-74b265c8a06b",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T09:36:07.846482Z",
+    "updated_at": "2025-12-02T09:36:07.846482Z"
+  },
+  "content": [
+    {
+      "id": "085936da-71d8-4994-8c80-0e177b0e7585",
+      "submission_id": "3275616a-ba21-4253-859c-74b265c8a06b",
+      "content_type": "manuscript",
+      "content_text": "# Gene activation by a CRISPR-assisted trans enhancer\n\n## Authors\n\n- Xinhui Xu<sup>1</sup>\n- Jinliang Gao<sup>1</sup>\n- Wei Dai<sup>1</sup>\n- Danyang Wang<sup>1</sup>\n- Jian Wu<sup>1</sup>\n- Jinke Wang<sup>1</sup> ([ORCID: 0000-0002-3352-4690](https://orcid.org/0000-0002-3352-4690)) \u2020\n\n### Affiliations\n\n1. State Key Laboratory of Bioelectronics Southeast University Nanjing China\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe deactivated CRISPR/Cas9 (dCas9) is now the most widely used gene activator. However, current dCas9-based gene activators are still limited by their unsatisfactory activity. In this study, we developed a new strategy, the CRISPR-assisted trans enhancer, for activating gene expression at high efficiency by combining dCas9-VP64/sgRNA with the widely used strong CMV enhancer. In this strategy, CMV enhancer DNA was recruited to target genes in trans by two systems: dCas9-VP64/csgRNA-sCMV and dCas9-VP64-GAL4/sgRNA-UAS-CMV. The former recruited trans enhancer by annealing between two short complementary oligonucleotides at the ends of the sgRNA and trans enhancer. The latter recruited trans enhancer by binding between GAL4 fused to dCas9 and UAS sequence of trans enhancer. The trans enhancer activated gene transcription as the natural looped cis enhancer. The trans enhancer could activate both exogenous reporter genes and variant endogenous genes in various cells, with much higher activation efficiency than that of current dCas9 activators.\n\n## Introduction\n\nClustered regularly interspaced short palindromic repeats (CRISPR) was originally identified\u00a0in\u00a0the immune system of bacteria, with the function of\u00a0destroying the invading microphage DNA by enzymatic digestion. The system has\u00a0been developed into a highly efficient gene editing tool (Doudna and Charpentier, 2014; Mali et al., 2013c), and also into new gene activators. For example, the dead Cas9 (dCas9) and its associated single guide RNA (sgRNA) have\u00a0been\u00a0widely used to regulate gene expression in recent years (Dominguez et al., 2016; Hilton et al., 2015; Jinek et al., 2012; Kiani et al., 2015; Mali et al., 2013b; Radzisheuskaya et al., 2016; Wang et al., 2016). Both dCas9 and sgRNA have been engineered for activating or repressing gene expression. For instance, the dCas9 protein has\u00a0been\u00a0fused with various gene activation or repression domains, such as VP48 (Cheng et al., 2013), VP160 (Perrin et al., 2017), VP64 (Maeder et al., 2013; Perez-Pinera et al., 2013), VPR (VP64-p65-Rta) (Chavez et al., 2015), and KRAB (Zheng et al., 2018). Additionally, the dCas9 protein has\u00a0been fused with other functional domains with transcriptional regulatory functions, such as p300 (Hilton et al., 2015), LSD1 (Kearns et al., 2015), Dnmt3a (Liu et al., 2016a; Saunderson et al., 2017), and Tet1 (Choudhury et al., 2016; Liu et al., 2016a). Based on these domains, more elaborate activators have been developed for more potent activation of target genes in mammalian cells, such as SunTag (dcas9-GCN4/sgRNA plus scFV-VP64) (Tanenbaum et al., 2014) and SPH (dCas9-GCN4/sgRNA plus scFV-p65-HSF1) (Zhou et al., 2018). Furthermore, some inducible dCas9 systems have\u00a0been developed to control activity of dCas9 activators in cells, such as light-activated CRISPR/Cas9 effector (Nihongaki et al., 2015; Polstein and Gersbach, 2015), hybrid drug inducible CRISPR/Cas9 technology (HIT) (Lu et al., 2018), and CRISPR activator gated by human antibody-based chemically induced dimerizers (AbCIDs) (Liu et al., 2018). However, it is difficult to package most of these dCas9 fusion proteins into adeno-associated virus (AAV) for in vivo application.\n\nsgRNA has\u00a0also\u00a0been engineered to develop new dCas9-based activators. Compared with dCas9 engineering, sgRNA is more simple, flexible, and efficient to redesign. Moreover, the engineered sgRNA is more helpful for the in vivo application of dCas9-based activators because\u00a0of its limited length for virus packaging. The most widely used sgRNA-based gene activator is the synergistic activation mediator (SAM) system, in which MS2 loops are fused to the 3\u2032 end of sgRNA (Konermann et al., 2015; Liao et al., 2017). Similarly, Pumilio/FBF (PUF), modular scaffold RNAs (MS2, PP7, and com), and riboswitches have\u00a0been\u00a0fused to sgRNA (Cheng et al., 2016; Liu et al., 2016b; Zalatan et al., 2015). However, these chimeric sgRNA-based strategies were limited by their complicated RNA aptamers and the cognate RNA-binding fusion proteins.\n\nAlthough variant dCas9-based activators have been developed (Chen and Qi, 2017), the current dCas9-based transcriptional activators are relatively inefficient in endogenous gene activation and cell reprogramming (Gao et al., 2014). By a systematic comparison of relative potency and effectiveness across various cell types and species (human, mouse, and fly) (Chavez et al., 2016), it was found that the\u00a0majority of second-generation activators had higher activity than\u00a0that\u00a0of dCas9-VP64, with the\u00a0three most potent activators being\u00a0VPR, SAM, and Suntag. The three activators were consistently better than VP64 across a range of target genes and cellular environments. Moreover, the three activators showed a similar level of activity,\u00a0and fusing their elements did not yield more potent activators (Chavez et al., 2016). Novel,\u00a0more potent dCas9-based activators might\u00a0be built by creating other architectures.\n\nAlmost three decades ago, the human cytomegalovirus (CMV) enhancer/promoter (referred to as CMV enhancer hereafter) was found. It\u00a0is a natural mammalian promoter with high transcriptional activity (Boshart et al., 1985). Later studies showed the CMV enhancer to\u00a0be\u00a0a strong enhancer in various mammalian cells (Boshart et al., 1985; Foecking and Hofstetter, 1986; Ho et al., 2015; Kim et al., 1990). This enhancer has been widely used to drive ectopic expression of various genes in a\u00a0wide range of mammalian cells, and\u00a0to drive ectopic expression of exogenous genes in broad tissues in transgenic animals (Furth et al., 1991; Schmidt et al., 1990), protein production by gene engineering, and gene therapy. We have recently improved the transcriptional activity of the CMV enhancer by changing the natural NF-\u03baB binding sites into artificially selected NF-\u03baB binding sequences with high binding affinity (Wang et al., 2018). Therefore, we conceived that a unique architecture may be constructed to improve dCas9-based activators using the CMV enhancer.\n\nIn this study, mimicking the natural enhancer activating gene expression by a loop structure (Carter et al., 2002; Tolhuis et al., 2002), we developed a new dCas9-based activator by combining dCas9/sgRNA with CMV enhancer. The 3\u2032 end of sgRNA was redesigned to contain a short capture sequence complementary to a stick-end of a double-stranded CMV enhancer. The CMV enhancer was anchored to the promoter region of a\u00a0target gene by dCas9/sgRNA. The dCas9/sgRNA-recruited CMV enhancer thus functioned like a natural looped cis enhancer in a trans form. We found that the new activator could efficiently activate exogenous and endogenous genes in various cells. More importantly, the CMV enhancer could be also recruited to\u00a0a target gene in trans using another system consisting of dCas9-VP64-GAL4/sgRNA and UAS-CMV.\n\n## Results\n\n### Principle of gene activation by a CRISPR-assisted trans enhancer\n\nThe principle of activating gene expression by a CRISPR-assisted trans enhancer is schematically illustrated in Figure 1a. A capture sgRNA (csgRNA) was produced by adding a capture sequence to the 3\u2032 end of a\u00a0normal sgRNA sequence. A linear stick-end CMV (sCMV) enhancer was produced by adding a 3\u2032 end single-strand overhang. The overhang can anneal with the csgRNA capture sequence. When dCas9 protein was guided to the promoter of the\u00a0target gene by csgRNA, sCMV could be recruited by csgRNA. The recruited sCMV may activate the transcription of the\u00a0target gene like\u00a0a natural looped cis enhancer. Because the dCas9/csgRNA-anchored sCMV functions as\u00a0a transcription factors in trans, we named it a trans enhancer to distinguish it from the natural cis enhancer.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/45973/elife-45973-fig1-v2.jpg)\n\n**Figure 1.:** (a) Schematic illustration of the principle of gene expression activation by the CRISPR-assisted trans enhancer. A capture sequence is added to\u00a0the 3\u2032 end of sgRNA, which is used to capture a trans CMV enhancer with a single-stranded overhang that can anneal with the capture sequence of sgRNA. The captured trans CMV enhancer may function like the natural looped cis enhancer to activate transcription of the gene of interest, including exogenous and endogenous genes. (b) In vitro target DNA cutting by the Cas9-csgRNA complex. DNA fragments\u00a0(732\u00a0bp) amplified from the HNF4\u03b1 promoter region were, respectively, cut by the Cas9/csgRNA and Cas9/sgRNA complexes. csgRNA1, csgRNA2 and csgRNA3 had the same target sequence but different capture sequences.\n\n### Effect of capture sequence on the function of sgRNA\n\nTo determine\u00a0whether the capture sequence affects the function of sgRNA, we prepared a normal sgRNA and three csgRNAs targeting the same site of the\u00a0HNF4\u03b1 promoter. The three csgRNAs had different capture sequences. We used these sgRNAs to associate with the Cas9 endonuclease to cut a 732 bp HNF4\u03b1 promoter fragment. The results indicated that the target DNA could be digested by all sgRNAs (Figure 1b), indicating that the capture sequence did\u00a0not affect the sgRNA function.\n\n### Activation of exogenous reporter gene by trans enhancer\n\nTo determine\u00a0whether the CRISPR-assisted trans enhancer activates gene expression, we constructed a reporter construct of HNF4\u03b1 promoter (pEZX-HP-ZsGreen). 293 T cells were then transfected with various vectors (Figure 2a, Figure 2\u2014figure supplement 1). The transfection indicated that ZsGreen expression could be successfully activated by dCas9/csgRNA2-sCMV but not activated by dCas9/csgRNA2-blunt CMV (bCMV). Although the dCas9/csgRNA2-sCMV showed a similar activation level to\u00a0Cas9-VP64/sgRNA, it was far inferior to cis CMV enhancer. To improve the performance of trans CMV, we tried transfecting 293 T cells with dCas9-VP64/csgRNA2-sCMV. The results indicated that ZsGreen expression was highly activated by the transfection. In contrast, the dCas9-VP64/csgRNA2-bCMV showed a\u00a0similar activation level to\u00a0dCas9-VP64/sgRNA. These data revealed that the trans CMV not only truly functioned in trans via dCas9/csgRNA, but also synergistically interacted with dCas9-fused VP64. Subsequent transfections indicated that ZsGreen expression could also be\u00a0highly activated by combination of dCas9-VP64, sCMV and other two csgRNAs, csgRNA1 and csgRNA3.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/45973/elife-45973-fig2-v2.jpg)\n\n**Figure 2.:** (a) Transcriptional activation of reporter gene ZsGreen in various cells transfected by different vectors. The florescence intensity of cells was analyzed by flow cytometry and is\u00a0shown as the mean fluorescence intensity (MFI). Transfections: DVS, dCas9-VP64/sgRNA; DSC, dCas9/csgRNA-sCMV; DVSC, dCas9-VP64/csgRNA-sCMV. (b) Comparison between trans enhancer and VPR. Cells were transfected with three different transcriptional activation systems to activate reporter gene ZsGreen. The florescence intensity of cells was analyzed by flow cytometry and the number\u00a0of cells with certain fluorescence intensity was counted. Transfections: Lipo, lipofectin; DVS, dCas9-VP64/sgRNA; DVPRS; dCas9-VPR/csgRNA; DVSC, dCas9-VP64/csgRNA-sCMV.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/45973/elife-45973-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Cells were transfected by various vectors. Cells were photographed with a fluorescent microscope and their florescence was analyzed by flow cytometry. The reporter gene activation efficiency was indicated by the percentage of cells with green fluorescence over the threshold (cells in Q1-UR quadrant).\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/45973/elife-45973-fig2-figsupp2-v2.jpg)\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/45973/elife-45973-fig2-figsupp3-v2.jpg)\n\n![Figure 2\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/45973/elife-45973-fig2-figsupp4-v2.jpg)\n\nTo further verify the function of CRISPR-assisted trans enhancer, we transfected six different cell lines with reporter construct and dCas9-VP64/csgRNA2-sCMV, dCas9/csgRNA2-sCMV, or dCas9-VP64/sgRNA (Figure 2b; Figure 2\u2014figure supplement 2\u20134). The results revealed that dCas9-VP64/csgRNA2-sCMV always showed the highest gene activation efficiency in all cell lines. Additionally, dCas9/csgRNA2-sCMV always showed higher activity than dCas9-VP64/sgRNA. These results indicate that genes could be activated by the CRISPR-assisted trans enhancer. Importantly, the trans sCMV could synergistically function with dCas9-fused VP64 in gene activation.\n\n### Comparison of trans CMV enhancer with VPR\n\nHaving shown that VPR is a more potent transcriptional activation domain than VP64, we next compared the trans enhancer with VPR. 293T and HepG2 cells were, respectively, transfected with reporter construct and dCas9-VP64/csgRNA, dCas9-VPR/csgRNA, or dCas9-VP64/csgRNA-sCMV (Figure 2c). The results showed that dCas9-VPR/csgRNA had better activity than dCas9-VP64/csgRNA as previously reported. However, the dCas9-VP64/csgRNA-sCMV always showed significantly higher activity than dCas9-VPR/csgRNA.\n\n### Activation of endogenous genes by trans enhancer\n\nTo further evaluate the activity of CRISPR-assisted trans enhancer, we activated endogenous genes with trans sCMV. csgRNAs targeting ten different genes was designed and their linear expression vectors were produced. Seven different cell lines were transfected with dCas9-VP64/csgRNA2-sCMV, dCas9-VP64/sgRNA and dCas9/csgRNA2-sCMV (Figure 3\u2014figure supplement 1). The quantitative PCR (qPCR) detection of gene expression revealed that almost all genes were most significantly activated by dCas9-VP64/csgRNA2-sCMV in all cells. Moreover, most genes were more significantly activated by dCas9/csgRNA-sCMV than dCas9-VP64/sgRNA in all cells. These results suggest that the CRISPR-assisted trans enhancer could be used to activate variant endogenous genes in various cells. In addition, by activating the HNF4\u03b1 gene in 293 T cells, we found that dCas9-VP64/csgRNA-sCMV had better activity than dCas9-VPR/csgRNA-sCMV in activating endogenous genes (Figure 3\u2014figure supplement 2).\n\nIt has\u00a0been\u00a0reported that the cancer cells HepG2 and PANC1 can be differentiated into normal liver- and pancreas-like cells by exogenously expressing transcription factor HNF4\u03b1 and E47. In the\u00a0above assays, we found that the endogenous HNF4\u03b1 and E47 genes were highly activated by the CRISPR-assisted trans enhancer in HepG2 and PANC1 cells (Figure 3). To further confirm the cellular effects of HNF4\u03b1 and E47 activation, we detected expressions of other genes related to the differentiation of the two cancer cells (Figure 4). The results indicated that the genes related to stemness (CD133 and CD90) and pluripotency (Oct3/4, Sox2, Nanog, c-Myc, LIN28, and Klf4) were down-regulated, but those related to normal liver (GS, BR, ALDOB, CYP1a2, PEPCK, APOCIII, G-6-P, and HPD) and pancreas (MIST1, PRSS2, CELA3A, and CPA2) functions were highly up-regulated in HepG2 and PANC1 cells. Additionally, the cell cycle arrest-related gene p21 (HepG2 and PANC1) and TP53INP1 (PANC1) were highly up-regulated.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/45973/elife-45973-fig3-v2.jpg)\n\n**Figure 3.:** 294T, HepG2 and PANC1 cells were transfected with three different transcriptional activation systems to activate expression of 10 endogenous genes. Gene transcription was detected by qPCR and the expression level is shown as the relative RNA expression fold to house-keeping gene GAPDH. Data are shown as mean\u00a0\u00b1\u00a0SD, n\u00a0=\u00a03. The statistical difference was analyzed using\u00a0the Student\u2019s t test. *, p<0.05; **, p<0.01; NS, no significant statistical difference. Transfection: DVS, dCas9-VP64/sgRNA; DSC, dCas9/csgRNA2-sCMV; DVSC, dCas9-VP64/csgRNA2-sCMV.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/45973/elife-45973-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** A549, HeLa, SKOV, and HT29 cells were transfected with three different transcriptional activation systems to activate the expression of 10 endogenous genes.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/45973/elife-45973-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** The 293 T cell was transfected with various vectors to activate the endogenous HNF4\u03b1 gene. The HNF4\u03b1 and GAPDH genes were detected with qPCR.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/45973/elife-45973-fig4-v2.jpg)\n\n**Figure 4.:** (a and b) Changes of gene expression in the HNF4\u03b1-activated HepG2 cells (a) and E47-activated PANC-1 cells (b). The gene transcription was detected by qPCR and the expression level is shown as the relative RNA expression fold to house-keeping gene GAPDH. Data are shown as mean\u00a0\u00b1\u00a0SD, n\u00a0=\u00a03. The statistical difference was analyzed by Student\u2019s t test. *, p<0.05; **, p<0.01; NS, no significant statistical difference. Transfection: Lipo, lipofectin; DVS, dCas9-VP64/sgRNA; DVSC, dCas9-VP64/csgRNA2-sCMV.\n\n### Activation of genes by other trans enhancers\n\nTo explore whether\u00a0other enhancers could be also used as trans enhancers, we fabricated the blunt- and stick-end versions of two other widely used promoters EF1a and PGK (bEF1a, bPGK, sEF1a, and sPGK). 293 T cells were co-transfected with these trans enhancers and dCas9-VP64/csgRNA and reporter construct. The results indicated that the ZsGreen expression was also activated by the two trans enhancers; however, the activation levels were lower than that of sCMV (Figure 5a, Figure 5\u2014figure supplement 1). All other transfections as controls did\u00a0not activate ZsGreen expression (Figure 5a, Figure 5\u2014figure supplement 1). The qPCR detection of HNF4\u03b1 expression in the same transfected 293 T cells revealed that the endogenous HNF4\u03b1 gene expression was also significantly activated by three stick-end trans enhancers, but not activated by all blunt-ended trans enhancers (Figure 5b). Subsequent HepG2 cell transfections with the same trans enhancers and dCas9-VP64/csgRNA indicated that the endogenous HNF4\u03b1 gene expression could also be\u00a0significantly activated by all stick-ended trans enhancers, but not activated by all blunt-ended trans enhancers (Figure 5b). These results indicate that the variant enhancers could be used as the CRISPR-assisted trans enhancer.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/45973/elife-45973-fig5-v2.jpg)\n\n**Figure 5.:** (a) Activation of exogenous reporter gene ZsGreen. The fluorescence intensity of cells was analyzed with flow cytometry. (b) Activation of endogenous HNF4\u03b1 gene in 293T and HepG2 cells with two new trans enhancers, sEF1a and sPGK. The sCMV was used as a positive control for comparison. The blunt-end trans enhancers (bEF1a and bPGK) were also used as controls. Data are shown as mean\u00a0\u00b1\u00a0SD, n\u00a0=\u00a03. The statistical difference was analyzed using\u00a0Student\u2019s t test. *, p<0.05; **, p<0.01.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/45973/elife-45973-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (a) Activation of exogenous ZsGreen gene in 293 T cells with two new trans enhancers, sEF1a and sPGK. (b) Flow cytometry analysis of ZsGreen expression.\n\n### Activation of genes by the GAL4/UAS-based trans enhancer\n\nTo further improve in vivo application of the\u00a0CRISPR-assisted trans enhancer, we tried realizing\u00a0the trans enhancer with the GAL4-UAS system. A dCas9-VP64-GAL4 expression vector and a UAS-CMV trans enhancer was constructed. Two forms of trans UAS-CMV enhancers, linear UAS-CMV (LUAS-CMV) and circular UAS-CMV (CUAS-CMV), were expected to be recruited to the target gene by the dCas9-VP64-fused GAL4 (Figure 6a). By transfecting 293 T cells with dCas9-VP64-GAL4/sgRNA-LUAS-CMV/CUAS-CMV and reporter construct, the ZsGreen expression of the exogenous reporter gene was significantly activated by both LUAS-CMV and CUAS-CMV, but not activated by all transfections as controls (Figure 6b, Figure 6\u2014figure supplement 1). By transfecting 293T and HepG2 cells with dCas9-VP64-GAL4/sgRNA-LUAS-CMV/CUAS-CMV, the expression of endogenous HNF4\u03b1 gene was highly activated in the two cells (Figure 6c). More importantly, both trans LUAS-CMV and CUAS-CMV enhancers showed significantly higher activity than the trans sCMV (Figure 6c). In contrast, all transfections as controls did\u00a0not activate the expression of endogenous HNF4\u03b1 gene in the two cells (Figure 6c). These results reveal that the CRISPR-assisted trans enhancer could be better realized with the GAL4-UAS system.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/45973/elife-45973-fig6-v2.jpg)\n\n**Figure 6.:** (a) Schematic show of gene activation using the GAL4-UAS-based CRISPR-assisted trans enhancer. (b) Activation of exogenous reporter gene ZsGreen. The fluorescence intensity of cells was analyzed with flow cytometry. (c) Activation of endogenous HNF4\u03b1 gene in 293T and HepG2 cells with\u00a0the GAL4-UAS-based CRISPR-assisted trans enhancer. The sCMV was used as a positive control for comparison. Three other\u00a0transfections were used as controls. LUAS-CMV, linear UAS-CMV; CUAS-CMV, circular UAS-CMV. Data are shown as mean\u00a0\u00b1\u00a0SD, n\u00a0=\u00a03. The statistical difference was analyzed by Student\u2019s t-test. *, p<0.05; **, p<0.01.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/45973/elife-45973-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (a) Activation of exogenous ZsGreen gene in 293 T cells with the GAL4-UAS-based CRISPR-assisted trans enhancer. (b) Flow cytometry analysis of ZsGreen expression.\n\n## Discussion\n\nIn this study, we developed a new dCas9-based gene activation strategy, the\u00a0CRISPR-assisted trans enhancer, in which a trans enhancer could be recruited to target promoters by dCas9-VP64/csgRNA or dCas9-VP64-GAL4/sgRNA. The results revealed that expression of variant exogenous and endogenous genes could be highly activated by CRISPR-assisted trans enhancers in various mammalian cells, more efficiently than with\u00a0current widely\u00a0used dCas9-VP64 and dCas9-VPR. This strategy has\u00a0unique advantages over the current dCas9-based gene activation systems.\n\nFirst, only one csgRNA was used in activating all target genes in various cells with the CRISPR-assisted trans enhancer. However, in current dCas9-based gene activations, multiple sgRNAs are used. In general, three or more sgRNAs are used to activate a gene\u00a0of\u00a0interest (Cheng et al., 2013; Maeder et al., 2013; Mali et al., 2013a; Perez-Pinera et al., 2013). In many assays with various numbers of sgRNAs, one sgRNA often produced very low or undetectable expression. Using multiple sgRNAs, each sgRNA has to be independently transcribed by a long U6 promoter. Second, csgRNA is the simplest sgRNA used in dCas9-based gene activators, which only extended a 24 bp short sequence at the 3\u2032 end of normal sgRNA. However, current dCas9/sgRNA activators often use long complex chimeric sgRNAs that harbor multiple tandem aptamers of various RNA-binding proteins, such as SAM sgRNA (MS2) (Konermann et al., 2015; Liao et al., 2017), Casilio sgRNA (Pumilio/FBF) (Cheng et al., 2016), and scaffold RNAs (MCP, PCP, and Com) (Zalatan et al., 2015).\n\nThe capture sequences of csgRNA can be easily designed. We originally designed three different capture sequences. All functioned in the CRISPR-assisted trans enhancer; however, csgRNA2 showed the best performance. The capture sequences were artificially designed short sequences, they have no complementary sequences in human cells, which is important for their specific annealing with sCMV at\u00a0high efficiency. This study demonstrated that sCMV could be efficiently captured by csgRNA in the\u00a0nucleus of human cells. To our knowledge, this is the first report of\u00a0a\u00a0gene being activated by an artificial DNA in trans.\n\nIn this study, we realized the CRISPR-assisted trans enhancer with two forms: csgRNA-sCMV\u00a0and GAL4-UAS. Two forms can be easily used to activate genes in in vitro cultivated cells. As to the in vivo applications, the csgRNA-sCMV-based trans enhancer can be used via nanoparticle gene carriers, while the GAL4-UAS-based trans enhancer can be easily transferred by virus vectors such as AAV,\u00a0with AAV already being approved for use as a\u00a0gene vector in clinics. We found that the GAL4-UAS-based trans enhancer had better performance than the csgRNA-sCMV-based trans enhancer, especially the linear UAS-CMV. In in vivo applications, the linear UAS-CMV can be easily transferred by AAV vector.\n\nAs a typical application, dCas9-based transcriptional activators are used to reprogram cells in vitro and in vivo for biomedical applications by activating endogenous genes. For example, fibroblasts were reprogramed into induced pluripotent stem (iPS) cells by endogenous\u00a0activation\u00a0of the\u00a0Oct4 and Sox2 genes with dCas9-SunTag-VP64 (Liu et al., 2018). Mouse embryonic fibroblasts were converted into neuronal cells by endogenous\u00a0activation\u00a0of the Brn2, Ascl1, and Myt1l genes with VP64dCas9VP64 (Black et al., 2016). In vivo target genes were activated by MPH to ameliorate disease phenotypes in mouse models of type I diabetes, acute kidney injury, and muscular dystrophy (Liao et al., 2017). Brain astrocytes were converted into functional neurons in vivo by activating the Ascl1, Neurog2 and Neurod1 genes with SPH (Zhou et al., 2018). These studies make CRISPR therapies the grade not the cut (Burgess, 2018).\n\nIn this study, we selected 10 endogenous genes to be activated by the CRISPR-assisted trans enhancer. Most of these genes code\u00a0transcription factors, including HNF4\u03b1, E47, Ascl1, Ngn2, Sox2, Oct4, and Nanog. Ascl1, Ngn2, and Sox2 are used to directly reprogram fibroblasts into nerve cells (Zhao et al., 2015). Oct4, Sox2, and Nanog are widely used to reprogram fibroblasts into iPS cells (Takahashi et al., 2007; Takahashi and Yamanaka, 2016; Yu et al., 2007). HNF4\u03b1 and E47 are used to differentiate liver and panaceas cancer cells into normal cells (Kim et al., 2015; Yin et al., 2008). TNFAIP3 is a well-known natural NF-\u03baB inhibitor (Cooper et al., 1996), having the potential to treat NF-\u03baB-overactivated diseases such as inflammation and cancers. Caspase9 is a key gene making cell apoptosis (Li et al., 2017). CSF3 codes granulocyte-colony stimulating factor (G-CSF), a glycoprotein that stimulates the bone marrow to produce granulocytes and stem cells and release them into bloodstream (Cetean et al., 2015), and is widely used in chemotherapy to enhance the immunity of cancer patients. We selected these genes for exploring the future in vitro and in vivo applications of the CRISPR-assisted trans enhancer.\n\n## Materials and methods\n\n### Vector construction\n\nA lac operon fragment was amplified from pEASY-Blunt-simple (Transgen) using primers Lac-px-F and Lac-px-R. The product was ligated into px458 (Addgene) to construct px458-lac using BbsI (NEB) and BsaI (NEB). The U6-sgRNA-lac fragment was amplified from px458-lac using primers U6-F and U6-R/U6-1-R/U6-2-R/U6-3-R. The products were cloned into the pEASY-Blunt-simple to produce pEASY-sgRNA and pEASY-csgRNA (Supplementary file 2), which were used to construct particular sgRNA/csgRNA expressing plasmids. The sgRNAs targeting genes\u00a0of\u00a0interest were designed by CHOPCHOP. Chemically synthesized complementary oligonucleotides containing sgRNA/csgRNA targets were annealed and ligated into pEASY-sgRNA/pEASY-csgRNA. The ligation reaction consisted of 10 U BbsI (NEB), 120 U T4 DNA ligase (NEB), 1\u00a0\u00d7\u00a0T4 DNA ligase buffer, 0.1 mg/mL bovine serum albumin, and 50 ng plasmid pEASY-csgRNA. The reaction was run as follows: 10 rounds of 37 \u00b0C5 min and 16\u00b0C 10 min, 37\u00b0C 30 min, and 80\u00b0C 5 min. The reaction was then used to transfect DH5\u03b1 competent cells. The white clones were screened by blue-white screening on LB agar plates with 100 \u00b5g/mL ampicillin, 40 \u00b5L of 20 mg/mL X-gal, and 40 \u00b5L of 0.1 M IPTG. The vectors were validated by sequencing,\u00a0then the linear sgRNA/csgRNA expression vectors were amplified from the validated pEASY-sgRNA/pEASY-csgRNAs using primers U6-F and U6-R/U6-1-R/U6-2-R/U6-3-R. The primer U6-R was used to amplify the normal sgRNA expression template (named as U6-sgRNA) from pEASY-sgRNA. The primer U6-1/2/3 R was used to amplify the csgRNA expression template (named as U6-csgRNA) from pEASY-csgRNA. The PCR products were purified with PCR clean kit (Axygen) and used to transfect cells as sgRNA/csgRNA expression vector.\n\nThe CMV enhancer fragment was amplified from pEGFP-N1 using primers CMV-F and CMV-1-R/CMV-2-R/CMV-3-R. The PCR products were purified with PCR clean kit and used as linear blunt-end CMV (bCMV). To prepare stick-end CMV (sCMV), the PCR products were firstly digested with Nt.BbvCI and then added with complementary oligonucleotide CS-1-R/CS-2-R/CS-3-R. The PCR products were denatured at 85\u00b0C for 10 min and then naturally cooled to room temperature. The PCR products was purified with PCR clean kit and used as linear sCMV. The blunt-end EF1\u03b1/PGK promoters were all amplified from pEF1a-FB-dCas9-puro (Addgene) using primers EF1-a-F/R and PGK-F/R. The stick-end EF1\u03b1/PGK promoters were similarly prepared by treating blunt-end EF1\u03b1/PGK promoters.\n\nA 1000 bp HNF4\u03b1 promoter sequence was amplified from the genomic DNA of HepG2 cells using primers HNF4\u03b1-P-F and HNF4\u03b1-P-R. The amplified promoter fragment was ligated into pEZX-ZsGreen, producing an HNF4\u03b1 promoter reporter construct pEZX-HP-ZsGreen. The VP64 sequence was deleted from pcDNA-dCas9-VP64 (Addgene) to construct pcDNA-dCas9. The VPR sequence was cloned into pcDNA-dCas9 to construct pcDNA-dCas9-VPR.\n\nThe GAL4 fragment was amplified from pGBKT7 (MiaoLing Plasmid Sharing Platform) using primers GAL4-BsiEW-F and GAL4-BspE-R, and was then ligated into pcDNA-dCas9-VP64 using BsiWI and BspEI to prepare pcDNA-dCas9-VP64-GAL4. A chemically synthesized 5\u00a0\u00d7\u00a0UAS fragment was ligated into pEASY-Blunt using BglII and HindIII to obtain pEASY-Blunt-UAS. A CMV fragment was amplified from pEGFP-C1 using primers UAS-CMV-Bgl-F and UAS-CMV-Hind-R. The CMV fragment was then ligated into pEASY-Blunt-UAS to obtain pEASY-Blunt-UAS-CMV, which was used as circular UAS-CMV (CUAS-CMV). The linear UAS-CMV (LUAS-CMV) fragment was amplified from pEASY-Blunt-UAS-CMV using primers CMV-UAS-Bgl-F and UAS-CMV-R.\n\nThe sequences of all PCR primers used in the\u00a0above vector construction are shown in the Supplementary file 1\u2013Table 1. The chemically synthesized complementary oligonucleotides used to construct pEASY-sgRNA/pEASY-csgRNA are shown in the Supplementary file 1\u2013Table 2. The functional sequences of all linear and plasmid vectors are provided as Supplementary file 3.\n\n### DNA cutting with Cas9-csgRNA\n\nA sgRNA targeting the HNF4\u03b1 promoter sequence was selected. The sgRNAs were prepared by in vitro transcription using T7 RNA polymerase (NEB). The sgRNA transcription template was amplified from pEASY-csgRNA using primers HNF4\u03b1-T7-F and U6-R/U6-1-R/U6-2-R/U6-3-R. A normal sgRNA (HNF4\u03b1-sgRNA) and three csgRNAs (HNF4\u03b1-csgRNAs) were prepared. A 732 bp HNF4\u03b1 promoter fragment was amplified from pEZX-HP-ZsGreen using primers HNF4\u03b1-sP-F and HNF4\u03b1-sP-R. The sequences of PCR primers are shown in the Supplementary file 1-Table 1. The Cas9 digestion reaction (30 \u03bcL) consisted of 1\u00a0\u00d7\u00a0Cas9 Nuclease Reaction Buffer, 1 \u00b5M Cas9 Nuclease (NEB), and 300 nM HNF4\u03b1-sgRNA or HNF4\u03b1-csgRNA. The reaction was incubated at 25\u00b0C for 10 min. Then 400 ng of purified 732 bp HNF4\u03b1 promoter fragment was added to the reaction and incubated at 37\u00b0C for 15 min. Finally, the Cas9 nuclease was inactivated at 65\u00b0C for 10 min. The reaction was run with 1.5% agarose gel electrophoresis.\n\n### Cell lines\n\nAll cells including 293T, HepG2, PANC1, A549, HeLa, SKOV3, and HT29 were obtained from the Shanghai Institutes for Biological Sciences, Chinese Academy of Sciences. The identity was authenticated by STR profiling. Mycoplasma contamination testing was performed and no mycoplasma contamination was ensured.\n\n### Cell culture and transfection\n\nCells were cultured in Dulbecco\u2019s Modified Eagle Medium (DMEM) or Roswell Park Memorial Institute (RPMI) 1640 medium supplemented with 10% FBS, 100 units/mL penicillin, and 100 \u00b5g/mL streptomycin. Cells at\u00a0>70% confluence in each well of\u00a0a 12-well plate were transfected with various combinations (see figures) of linear or plasmid vectors, including pcDNA-dCas9, pcDNA-dCas9-VP64, pcDNA-dCas9-VPR, U6-sgRNA, U6-csgRNA, sCMV, bCMV, and pEZX-HP-ZsGreen, using Lipofectamine 2000 (ThermoFisher Scientific) according to the manufacturer\u2019s instructions. The transfected cells were incubated at 37\u00b0C and 5% CO2 for 36 h. Cells were then imaged with a fluorescence microscope (Olympus) at 200\u00a0\u00d7\u00a0magnification.\n\n### Flow cytometry\n\nThe fluorescence intensity of cells was quantified with flow cytometry (Calibur). Ten-thousand cells were measured for each transfection. Flow cytometry data analysis and figure preparation were done using BD software.\n\n### Quantitative PCR\n\nThe total RNA was extracted from cells using TRIzol (Invitrogen). The complementary DNA (cDNA) was synthesized with 3 \u03bcg of total RNA using the Hifair III SuperMix (Yeasen). Gene transcription was detected with quantitative PCR (qPCR) using the Hieff qPCR SYBR Green Master Mix (Yeasen) according to the manufacturer\u2019s instructions. GAPDH was used as an internal reference to analyze the relative mRNA expression of different genes. The sequences of PCR primers are shown in the Supplementary file 1-Table 3 and 4. The qPCR programs were run on StepOne Plus (Applied Biosystems). Each qPCR detection was performed in at least three technical replicates. Melting curve analysis was performed. Data analysis was performed using the Applied Biosystems StepOne software v2.3, and Ct values were normalized with that of GAPDH. The relative expression level of target mRNAs was calculated as relative quantity (RQ) according to the equation: RQ\u00a0=\u00a02-\u0394\u0394Ct.\n\n### Statistical analyses\n\nEach cell transfection for detecting gene expression activation by trans\u00a0enhancer was performed in three biological replicates. In each biological replicate, at least three technical replicates (three replicate wells) were performed. In qPCR detection of gene expression, the mean RQ value of technical replicates was used as the RQ value of one biological replicate. The mean RQ value of three biological replicates was used to calculate the final mean and standard deviation (SD). Data were analyzed by Student\u2019s t test when comparing two groups. Data are shown as mean\u00a0\u00b1\u00a0SD, and differences were considered significant at p<0.05.\n",
+      "created_at": "2025-12-02T09:36:07.846482Z"
+    },
+    {
+      "id": "68749652-4a8b-407e-a0f5-401eea10b573",
+      "submission_id": "3275616a-ba21-4253-859c-74b265c8a06b",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Irwin Davidson, Institut de G\u00e9n\u00e9tique et de Biologie Mol\u00e9culaire et Cellulaire France\n\nReviewers:\n- Irwin Davidson, Institut de G\u00e9n\u00e9tique et de Biologie Mol\u00e9culaire et Cellulaire France\n\n## Review text\n\nDOI: [10.7554/eLife.45973.021](https://doi.org/10.7554/eLife.45973.021)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\n[Editors\u2019 note: a previous version of this study was rejected after peer review, but the authors submitted for reconsideration. The first decision letter after peer review is shown below.]\n\nThank you for submitting your work entitled \"Gene activation by a CRISPR-assistant trans enhancer\" for consideration by eLife. Your article has been reviewed by three peer reviewers, including Irwin Davidson as the Reviewing Editor and Reviewer #1, and the evaluation has been overseen by a Reviewing Editor and a Senior Editor.\n\nOur decision has been reached after consultation between the reviewers. Based on these discussions and the individual reviews below, we regret to inform you that your work will not be considered further for publication in eLife.\n\nWhile the referees found the concept of tethering an enhancer element in trans as a novel and innovative approach to activate expression of chosen endogenous cellular genes, they were unanimously concerned by the lack of information on the reproducibility of the data, the absence of appropriate statistical tests and important missing controls. The presentation of the data made it difficult to assess the efficiency of the system and the many of the experiments will have to be repeated again and the data presented in a much more rigorous fashion. The referees would encourage the authors to take note of the many suggestions and comments that would have to be addressed in any future manuscript.\n\nReviewer #1:\n\nThis paper describes a novel system to tether an CMV enhancer element in trans to selected regions of the genome using CRISPR/CAS9 allowing the selective activation of chosen target genes. They show that activation by this method is more efficient that CAS9-VP64 and that the two systems can be used cooperatively.\n\nMajor issues:\n\nTo demonstrate the specificity of the technique, the authors should perform experiments with a version of the CMV enhancer in which key bases have been mutated to impair the binding of transcription factors. This would demonstrate the importance of using a functional enhancer. The authors may also consider experiments using cell-specific enhancers and demonstrating that the system can used in a cell-type specific manner. This is not essential for the message of the paper but may give added value to the study.\n\nIn Figure 2 and Figure 3 as well as Figure 2\u2014figure supplement 2, Figure 2\u2014figure supplement 3, Figure 2\u2014figure supplement 4 the results of the ZsGreen assays are absolutely not clear. What are we supposed to compare, how by looking at the figures can we assess the activation in the different conditions? Also, in the text, there are no precise figures given concerning the fold activation in each condition. In Figure 4A, there are only 2 transfections so there are no robust statistics concerning activation. The reasons for assaying ZsGreen rather measuring RNA output directly are not well justified. All of these figures have to be modified such that the reader can readily assess the differences in each experimental condition. RNA should be measured by RT-qPCR and fold changes and statistics from replicate experiments should be provided.\n\nIn Figure 5 and Figure 6 the number of biological replicates and the statistical tests used should both be indicated. The text describing these figures is somewhat oversimplified as they claim that activation of HNF4A results in strong induction of liver function genes. In fact, some are strongly induced, but for others the effect is very low and this is not recognised in the text. Statistics should be shown for the cell cycle analyses in Figure 6C number of replicates and statistical test used.\n\nFigure S9. There is no obvious difference in the number of cells in the different conditions. This must be quantitated and analysed to provide reliable statistics.\n\nIn summary, while this paper describes an interesting and novel technique, the data as they are presented require additional replicates, statistical test and clearer presentation to be acceptable.\n\nAdditional data files and statistical comments:\n\nThe number of replicates and the statistical tests used are not indicated and more rigorous analyses have to be performed and present in any revised version. The present version is way below acceptable standards.\n\nReviewer #2:\n\nHere, Xu et al., describe a transcriptional activation strategy using dCas9-VP64 together with a modified gRNA scaffold (csgRNA) that can anneal to a CMV enhancer DNA sequence (sCMV) provided in trans. They show that dCas9/csgRNA/sCMV (in the absence of a transactivation domain) is capable of inducing transcription of a reporter construct and that the transcriptional activity of the complex is enhanced by the addition of a transactivation domain (VP64) to dCas9 (dCas9-VP64). They also show that transfecting dCas9-VP64/csgRNA/sCMV is capable of inducing transcription of the reporter in 7 different cell lines. They also claim that dCas9-VP64/csgRNA/sCMV is a little bit more efficient that dCas9-VPR in inducing transcription. Finally, they show that dCas9-VP64/csgRNA/sCMV can induce transcription of endogenous genes in two different cancer cell lines and that this can trigger differentiation.\n\nAlthough the strategy proposed here is original, the sCMV component needs to be provided in trans (co-transfected), therefore application of this system is limited to cells in culture and would be very challenging to use this strategy in vivo.\n\nA major flaw of this study is that transfection efficiency cannot be determined. It is impossible to know the percentage of cells that are expressing dCas9-VP64 and the proportion of these in which transcriptional activation has occurred. Therefore, the transcriptional effect observed is either under- or over-estimated.\n\nThere are many variables in the experiment, as 4 constructs need to be co-transfected (reporter, dCas9-VP64, csgRNA and sCMV). The experiments should have been done in a cell line stably transfected with the reporter construct and using a single plasmid co-expressing the csgRNA together with mCherry-dCas9-VP64 (or mCherry-dCas9-VPR). This would not only reduce the number of variables but would allow the authors to: (1) Determine the transfection efficiency and the frequency of mCherry+ cells (expressing dCas9-VP64) in which transcriptional activation has occurred (ZsGreen+) and (2) Determine the transactivation level by scoring the MFI of ZsGreen in the mCherry+ ZsGreen+ population.\n\nThe FACS data should be presented as dot plots (FSC vs. ZsGreen). This allows to visualize the ZsGreen+ population, which is not clear at all (given the low percentage of ZsGreen+ cells) from the histograms.\n\nThe manuscript is poorly written and is full of strange words and expressions and should be proof-read by an English-speaking person.\n\nFigure legends do not describe the figures and should be re-written. Legend for Figure 1B is missing.\n\nOn all FACS data shown, the gating for ZsGreen is not the same throughout (i.e. compare panels in Figure 2).\n\nIt is not clear how the MFI intensity in Figure 4 was determined. Therefore, it is impossible to assess the validity of the comparisons.\n\nIn Figure 1B, the percentage of cleavage should be displayed, as it is clear that the csgRNA is not as efficient as the unmodified scaffold. Also, the input is missing.\n\nIn Figure 5, a negative control without the csgRNA is missing. The relative mRNA induction should be calculated relative to this control, as it would directly show the fold induction triggered by dCas9-VP64/csgRNA/sCMV. Also, the y axis should be labelled relative mRNA (and not RNA) expression.\n\nIn the qPCR data shown in Figure 6A and 6B, it is not indicated what was used to determine the relative expression. Same as in Figure 5, the negative control (without the csgRNA) is missing and should be performed in order to determine the relative expression of each gene. Also, the expression level of the target gene should be shown.\n\nFor clarity, a diagram of the reporter construct should be shown.\n\nAdditional data files and statistical comments:\n\nThroughout the manuscript, it is not clear how many times the experiments were done. For example, the qPCR data shown in Figure 5, do the error bars correspond to technical or biological replicates? Is a representative experiment shown? Also, in several figures it is not indicated which samples are compared when the * is shown for statistical significance.\n\nReviewer #3:\n\nIn their study, Xu et al., developed a novel approach using CRISPR/dCas9 to activate gene expression. They modified the guide RNA scaffold as such that a CMV enhancer DNA fragment was recruited to the target gene by the dCas9-VP64/sgRNA complex. The authors argue that previously published approaches have limitation regarding the strength of transcriptional activation and their approach is superior in this regard.\n\nThe approach by Xu et al., is novel and innovative having potential beyond the use case presented in the current study. Based on the data presented I have the following comments/questions.\n\n1) The authors initially validate their approach (Figure 2) in 293T cells by co-transfecting an exogenous GFP-based reporter construct. Transient transfection efficiencies of 293T cells are known to be extremely high. Why does e.g. dCas9-VP64/csgRNA2-sCMV achieve only 11% of GFP+ cells, assuming that >90% of 293T are transfected?\n\n2) Regarding Figure 5 and along the line of my previous comment. How do we have to interpret the fold-changes in expression of endogenous genes having seen that in Figure 2 only a comparably small proportion of cells activated the reporter construct? Based on the methods description, all endogenous gene expression analyses were done using the bulk cell cultures. Are the changes in gene expression seen in the bulk culture caused by extremely high transactivation in a small fraction of cells or by homogenous induction across all cells? At least the first scenario is suggested by the pilot experiments shown in Figure 2. Thus, single cell-based approaches could clarify this for the endogenous target genes, e.g. immunofluorescence/FACS for the proteins encoded by the transactivated target genes.\n\n3) If transcriptional activation is achieved only in a fraction (approximately 10%) of the cells despite high transfection efficiencies, then the approach by Xu et al., would have some limitations, at least for bulk cell culture analyses, in comparison to SAM and other methods, which can be also efficiently delivered to target cells by viruses. Where do the authors then see the advantage of their approach, as the requirement for transient transfection remains a drawback, in particular in cell models that are difficult to transfect?\n\n[Editors\u2019 note: what now follows is the decision letter after the authors submitted for further consideration.]\n\nThank you for resubmitting your work entitled \"Gene activation by a CRISPR-assisted trans enhancer\" for further consideration at eLife. Your revised article has been favorably evaluated by Kevin Struhl (Senior Editor), a Reviewing Editor, and two reviewers.\n\nThe manuscript has been improved but there are some remaining issues that need to be addressed before acceptance, as outlined below:\n\nIn this new version, the authors addressed many of the issues raised on the previous versions. They have provided data on the reproducibility of the results with the appropriate statistics. They have used alternative regulatory elements in place of CMV and they have developed an alternative strategy for recruiting the trans-acting element using the GAL4 DNA binding domain. These new innovations have strengthened the study. However, the paper is now too long with too many figures. The paper would be more appropriate if it was shortened to a Tools and Resources article rather than a full manuscript. This can be done by reorganizing the figures. For example, rather than showing all of the fluorescence images and sorting results, this could all be shown in graphical form as is already the case for Figures 8C, D and E and Figure 9C, D and E. This would save a lot of space and condense all the information into a single figure, showing perhaps a single representative sorting experiment and cell images as supplemental data. Also Figure 5 could be shortened to show only 1 or 2 cell types with the rest shown as supplemental data. I also propose that the data on cell cycle changes and migration be removed to shorten the text. This data is not central to the main message of the paper. On the other hand, supplemental figure 11 should be shown in the main figures possibly as an addition to Figure 1.\n\nFinally, the writing is poor and the meaning of what is written is in several places very difficult to understand. Mitigating this will require a major effort.\n\nThe authors are invited to submit a shortened revised version based on the above suggestions.\n",
+      "created_at": "2025-12-02T09:36:07.846482Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T09:36:07.846482Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T09:36:07.846482Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "4f39dca6-21b3-4517-902f-cda0acd32387",
+      "content_id": "085936da-71d8-4994-8c80-0e177b0e7585",
+      "claim_id": "C1",
+      "claim": "CRISPR was originally identified in the immune system of bacteria with the function of destroying invading microphage DNA by enzymatic digestion.",
+      "claim_type": "EXPLICIT",
+      "source": "Clustered regularly interspaced short palindromic repeats (CRISPR) was originally identified in the immune system of bacteria, with the function of destroying the invading microphage DNA by enzymatic digestion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge about CRISPR systems in bacteria.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:36:07.846482Z"
+    },
+    {
+      "id": "ab3b193c-7362-4122-be02-07e7eeae9dff",
+      "content_id": "085936da-71d8-4994-8c80-0e177b0e7585",
+      "claim_id": "C2",
+      "claim": "CRISPR has been developed into a highly efficient gene editing tool.",
+      "claim_type": "EXPLICIT",
+      "source": "The system has been developed into a highly efficient gene editing tool (Doudna and Charpentier, 2014; Mali et al., 2013c)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to published work by Doudna and Charpentier, 2014 and Mali et al., 2013c.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:36:07.846482Z"
+    },
+    {
+      "id": "1ebbf1cb-ed1e-4087-9bb7-96ef51fd86c2",
+      "content_id": "085936da-71d8-4994-8c80-0e177b0e7585",
+      "claim_id": "C3",
+      "claim": "Dead Cas9 (dCas9) and its associated single guide RNA (sgRNA) have been widely used to regulate gene expression in recent years.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the dead Cas9 (dCas9) and its associated single guide RNA (sgRNA) have been widely used to regulate gene expression in recent years (Dominguez et al., 2016; Hilton et al., 2015; Jinek et al., 2012; Kiani et al., 2015; Mali et al., 2013b; Radzisheuskaya et al., 2016; Wang et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations to published work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:36:07.846482Z"
+    },
+    {
+      "id": "31292215-53a2-4ab7-b9f6-6fd0fadb8080",
+      "content_id": "085936da-71d8-4994-8c80-0e177b0e7585",
+      "claim_id": "C4",
+      "claim": "The dCas9 protein has been fused with VP48 for gene activation or repression.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, the dCas9 protein has been fused with various gene activation or repression domains, such as VP48 (Cheng et al., 2013)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Cheng et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:36:07.846482Z"
+    },
+    {
+      "id": "96ff360a-4a2c-4e20-99c7-4c0c0322118e",
+      "content_id": "085936da-71d8-4994-8c80-0e177b0e7585",
+      "claim_id": "C5",
+      "claim": "The dCas9 protein has been fused with VP160 for gene activation or repression.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, the dCas9 protein has been fused with various gene activation or repression domains, such as VP48 (Cheng et al., 2013), VP160 (Perrin et al., 2017)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Perrin et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:36:07.846482Z"
+    },
+    {
+      "id": "6360f357-aca0-4228-8471-33f15147cb3a",
+      "content_id": "085936da-71d8-4994-8c80-0e177b0e7585",
+      "claim_id": "C6",
+      "claim": "The dCas9 protein has been fused with VP64 for gene activation or repression.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, the dCas9 protein has been fused with various gene activation or repression domains, such as VP48 (Cheng et al., 2013), VP160 (Perrin et al., 2017), VP64 (Maeder et al., 2013; Perez-Pinera et al., 2013)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Maeder et al., 2013 and Perez-Pinera et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:36:07.846482Z"
+    },
+    {
+      "id": "a204873d-7bc8-44b6-a089-35da9cd963e7",
+      "content_id": "085936da-71d8-4994-8c80-0e177b0e7585",
+      "claim_id": "C7",
+      "claim": "The dCas9 protein has been fused with VPR (VP64-p65-Rta) for gene activation or repression.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, the dCas9 protein has been fused with various gene activation or repression domains, such as VP48 (Cheng et al., 2013), VP160 (Perrin et al., 2017), VP64 (Maeder et al., 2013; Perez-Pinera et al., 2013), VPR (VP64-p65-Rta) (Chavez et al., 2015)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Chavez et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:36:07.846482Z"
+    },
+    {
+      "id": "4b4524b2-b6ef-46a4-a029-df87fbb19054",
+      "content_id": "085936da-71d8-4994-8c80-0e177b0e7585",
+      "claim_id": "C8",
+      "claim": "The dCas9 protein has been fused with KRAB for gene activation or repression.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, the dCas9 protein has been fused with various gene activation or repression domains, such as VP48 (Cheng et al., 2013), VP160 (Perrin et al., 2017), VP64 (Maeder et al., 2013; Perez-Pinera et al., 2013), VPR (VP64-p65-Rta) (Chavez et al., 2015), and KRAB (Zheng et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Zheng et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:36:07.846482Z"
+    },
+    {
+      "id": "488735ba-cf22-49e9-8047-5b6d16cd68b3",
+      "content_id": "085936da-71d8-4994-8c80-0e177b0e7585",
+      "claim_id": "C9",
+      "claim": "The dCas9 protein has been fused with p300 for transcriptional regulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, the dCas9 protein has been fused with other functional domains with transcriptional regulatory functions, such as p300 (Hilton et al., 2015)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Hilton et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:36:07.846482Z"
+    },
+    {
+      "id": "423ce463-938e-46eb-89d6-406fb0252796",
+      "content_id": "085936da-71d8-4994-8c80-0e177b0e7585",
+      "claim_id": "C10",
+      "claim": "The dCas9 protein has been fused with LSD1 for transcriptional regulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, the dCas9 protein has been fused with other functional domains with transcriptional regulatory functions, such as p300 (Hilton et al., 2015), LSD1 (Kearns et al., 2015)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Kearns et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:36:07.846482Z"
+    },
+    {
+      "id": "9832d3c7-3a6c-4787-a775-504854b3e01d",
+      "content_id": "085936da-71d8-4994-8c80-0e177b0e7585",
+      "claim_id": "C11",
+      "claim": "The dCas9 protein has been fused with Dnmt3a for transcriptional regulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, the dCas9 protein has been fused with other functional domains with transcriptional regulatory functions, such as p300 (Hilton et al., 2015), LSD1 (Kearns et al., 2015), Dnmt3a (Liu et al., 2016a; Saunderson et al., 2017)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Liu et al., 2016a and Saunderson et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:36:07.846482Z"
+    },
+    {
+      "id": "f768f036-11c8-4343-899a-e9502ac70575",
+      "content_id": "085936da-71d8-4994-8c80-0e177b0e7585",
+      "claim_id": "C12",
+      "claim": "The dCas9 protein has been fused with Tet1 for transcriptional regulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, the dCas9 protein has been fused with other functional domains with transcriptional regulatory functions, such as p300 (Hilton et al., 2015), LSD1 (Kearns et al., 2015), Dnmt3a (Liu et al., 2016a; Saunderson et al., 2017), and Tet1 (Choudhury et al., 2016; Liu et al., 2016a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Choudhury et al., 2016 and Liu et al., 2016a.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:36:07.846482Z"
+    },
+    {
+      "id": "b1a0ca83-336a-4851-80dd-d168a7d756ba",
+      "content_id": "085936da-71d8-4994-8c80-0e177b0e7585",
+      "claim_id": "C13",
+      "claim": "SunTag (dcas9-GCN4/sgRNA plus scFV-VP64) is an elaborate activator developed for more potent activation of target genes in mammalian cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on these domains, more elaborate activators have been developed for more potent activation of target genes in mammalian cells, such as SunTag (dcas9-GCN4/sgRNA plus scFV-VP64) (Tanenbaum et al., 2014)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Tanenbaum et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:36:07.846482Z"
+    },
+    {
+      "id": "c439c967-bec1-4fce-947f-54615e4a1801",
+      "content_id": "085936da-71d8-4994-8c80-0e177b0e7585",
+      "claim_id": "C14",
+      "claim": "SPH (dCas9-GCN4/sgRNA plus scFV-p65-HSF1) is an elaborate activator developed for more potent activation of target genes in mammalian cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on these domains, more elaborate activators have been developed for more potent activation of target genes in mammalian cells, such as SunTag (dcas9-GCN4/sgRNA plus scFV-VP64) (Tanenbaum et al., 2014) and SPH (dCas9-GCN4/sgRNA plus scFV-p65-HSF1) (Zhou et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Zhou et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:36:07.846482Z"
+    },
+    {
+      "id": "60d447f6-b76a-4ca9-a074-d992125d80d5",
+      "content_id": "085936da-71d8-4994-8c80-0e177b0e7585",
+      "claim_id": "C15",
+      "claim": "Light-activated CRISPR/Cas9 effector is an inducible dCas9 system developed to control activity of dCas9 activators in cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, some inducible dCas9 systems have been developed to control activity of dCas9 activators in cells, such as light-activated CRISPR/Cas9 effector (Nihongaki et al., 2015; Polstein and Gersbach, 2015)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Nihongaki et al., 2015 and Polstein and Gersbach, 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:36:07.846482Z"
+    },
+    {
+      "id": "8b252b96-cc11-4f8a-a41a-3c1d2fc34dd6",
+      "content_id": "085936da-71d8-4994-8c80-0e177b0e7585",
+      "claim_id": "C16",
+      "claim": "Hybrid drug inducible CRISPR/Cas9 technology (HIT) is an inducible dCas9 system developed to control activity of dCas9 activators in cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, some inducible dCas9 systems have been developed to control activity of dCas9 activators in cells, such as light-activated CRISPR/Cas9 effector (Nihongaki et al., 2015; Polstein and Gersbach, 2015), hybrid drug inducible CRISPR/Cas9 technology (HIT) (Lu et al., 2018)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Lu et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:36:07.846482Z"
+    },
+    {
+      "id": "a67e0283-c73f-420b-b984-4ac8b36fd183",
+      "content_id": "085936da-71d8-4994-8c80-0e177b0e7585",
+      "claim_id": "C17",
+      "claim": "CRISPR activator gated by human antibody-based chemically induced dimerizers (AbCIDs) is an inducible dCas9 system developed to control activity of dCas9 activators in cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, some inducible dCas9 systems have been developed to control activity of dCas9 activators in cells, such as light-activated CRISPR/Cas9 effector (Nihongaki et al., 2015; Polstein and Gersbach, 2015), hybrid drug inducible CRISPR/Cas9 technology (HIT) (Lu et al., 2018), and CRISPR activator gated by human antibody-based chemically induced dimerizers (AbCIDs) (Liu et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Liu et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:36:07.846482Z"
+    },
+    {
+      "id": "18e05391-f21e-4457-9a74-21d4992e1d7f",
+      "content_id": "085936da-71d8-4994-8c80-0e177b0e7585",
+      "claim_id": "C18",
+      "claim": "It is difficult to package most dCas9 fusion proteins into adeno-associated virus (AAV) for in vivo application.",
+      "claim_type": "EXPLICIT",
+      "source": "However, it is difficult to package most of these dCas9 fusion proteins into adeno-associated virus (AAV) for in vivo application.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a known limitation based on the size constraints of AAV packaging capacity.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:36:07.846482Z"
+    },
+    {
+      "id": "4ad84cf3-43fc-46b4-ab25-8e7a12143b75",
+      "content_id": "085936da-71d8-4994-8c80-0e177b0e7585",
+      "claim_id": "C19",
+      "claim": "Compared with dCas9 engineering, sgRNA is more simple, flexible, and efficient to redesign.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared with dCas9 engineering, sgRNA is more simple, flexible, and efficient to redesign.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the relative complexity of protein versus RNA engineering.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:36:07.846482Z"
+    },
+    {
+      "id": "45fab37b-e1bc-4100-913c-840cb7f47e49",
+      "content_id": "085936da-71d8-4994-8c80-0e177b0e7585",
+      "claim_id": "C20",
+      "claim": "The engineered sgRNA is more helpful for the in vivo application of dCas9-based activators because of its limited length for virus packaging.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the engineered sgRNA is more helpful for the in vivo application of dCas9-based activators because of its limited length for virus packaging.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the size constraints of viral packaging.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:36:07.846482Z"
+    },
+    {
+      "id": "a5d1ef5a-9a49-42c3-8810-6ba7ea7fd1eb",
+      "content_id": "085936da-71d8-4994-8c80-0e177b0e7585",
+      "claim_id": "C21",
+      "claim": "The synergistic activation mediator (SAM) system is the most widely used sgRNA-based gene activator, in which MS2 loops are fused to the 3\u2032 end of sgRNA.",
+      "claim_type": "EXPLICIT",
+      "source": "The most widely used sgRNA-based gene activator is the synergistic activation mediator (SAM) system, in which MS2 loops are fused to the 3\u2032 end of sgRNA (Konermann et al., 2015; Liao et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Konermann et al., 2015 and Liao et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:36:07.846482Z"
+    },
+    {
+      "id": "670273df-ad5c-4bba-b04a-80202151ee4b",
+      "content_id": "085936da-71d8-4994-8c80-0e177b0e7585",
+      "claim_id": "C22",
+      "claim": "Pumilio/FBF (PUF), modular scaffold RNAs (MS2, PP7, and com), and riboswitches have been fused to sgRNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, Pumilio/FBF (PUF), modular scaffold RNAs (MS2, PP7, and com), and riboswitches have been fused to sgRNA (Cheng et al., 2016; Liu et al., 2016b; Zalatan et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Cheng et al., 2016, Liu et al., 2016b, and Zalatan et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:36:07.846482Z"
+    },
+    {
+      "id": "167af453-d521-4537-b8bd-5f6c31b3c862",
+      "content_id": "085936da-71d8-4994-8c80-0e177b0e7585",
+      "claim_id": "C23",
+      "claim": "Chimeric sgRNA-based strategies are limited by their complicated RNA aptamers and the cognate RNA-binding fusion proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "However, these chimeric sgRNA-based strategies were limited by their complicated RNA aptamers and the cognate RNA-binding fusion proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the complexity of the systems described.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:36:07.846482Z"
+    },
+    {
+      "id": "4a2b7edf-c038-4813-941d-683b957e2331",
+      "content_id": "085936da-71d8-4994-8c80-0e177b0e7585",
+      "claim_id": "C24",
+      "claim": "Current dCas9-based transcriptional activators are relatively inefficient in endogenous gene activation and cell reprogramming.",
+      "claim_type": "EXPLICIT",
+      "source": "Although variant dCas9-based activators have been developed (Chen and Qi, 2017), the current dCas9-based transcriptional activators are relatively inefficient in endogenous gene activation and cell reprogramming (Gao et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Chen and Qi, 2017 and Gao et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:36:07.846482Z"
+    },
+    {
+      "id": "cd4a8915-c8bf-45aa-a651-55563ebee570",
+      "content_id": "085936da-71d8-4994-8c80-0e177b0e7585",
+      "claim_id": "C25",
+      "claim": "The majority of second-generation activators had higher activity than that of dCas9-VP64 across various cell types and species (human, mouse, and fly).",
+      "claim_type": "EXPLICIT",
+      "source": "By a systematic comparison of relative potency and effectiveness across various cell types and species (human, mouse, and fly) (Chavez et al., 2016), it was found that the majority of second-generation activators had higher activity than that of dCas9-VP64",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Chavez et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:36:07.846482Z"
+    },
+    {
+      "id": "dc0bfcf8-20d7-4874-8630-f7f044ac3045",
+      "content_id": "085936da-71d8-4994-8c80-0e177b0e7585",
+      "claim_id": "C26",
+      "claim": "VPR, SAM, and Suntag are the three most potent dCas9-based activators.",
+      "claim_type": "EXPLICIT",
+      "source": "By a systematic comparison of relative potency and effectiveness across various cell types and species (human, mouse, and fly) (Chavez et al., 2016), it was found that the majority of second-generation activators had higher activity than that of dCas9-VP64, with the three most potent activators being VPR, SAM, and Suntag.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Chavez et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:36:07.846482Z"
+    },
+    {
+      "id": "25947b63-e72a-4b68-b2bf-71604db0a8cc",
+      "content_id": "085936da-71d8-4994-8c80-0e177b0e7585",
+      "claim_id": "C27",
+      "claim": "VPR, SAM, and Suntag were consistently better than VP64 across a range of target genes and cellular environments.",
+      "claim_type": "EXPLICIT",
+      "source": "The three activators were consistently better than VP64 across a range of target genes and cellular environments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the systematic comparison cited from Chavez et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:36:07.846482Z"
+    },
+    {
+      "id": "31925a42-8553-4c9f-97e9-b05db2f7477b",
+      "content_id": "085936da-71d8-4994-8c80-0e177b0e7585",
+      "claim_id": "C28",
+      "claim": "VPR, SAM, and Suntag showed a similar level of activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the three activators showed a similar level of activity",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the systematic comparison cited from Chavez et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:36:07.846482Z"
+    },
+    {
+      "id": "f66ee60c-fee1-45f3-ba1f-f49bc8bb8390",
+      "content_id": "085936da-71d8-4994-8c80-0e177b0e7585",
+      "claim_id": "C29",
+      "claim": "Fusing elements of VPR, SAM, and Suntag did not yield more potent activators.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the three activators showed a similar level of activity, and fusing their elements did not yield more potent activators (Chavez et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Chavez et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:36:07.846482Z"
+    },
+    {
+      "id": "137168d2-fc48-4286-9d02-093917a6edc1",
+      "content_id": "085936da-71d8-4994-8c80-0e177b0e7585",
+      "claim_id": "C30",
+      "claim": "Novel, more potent dCas9-based activators might be built by creating other architectures.",
+      "claim_type": "EXPLICIT",
+      "source": "Novel, more potent dCas9-based activators might be built by creating other architectures.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about future development based on the limitations of current systems.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:36:07.846482Z"
+    },
+    {
+      "id": "1d186cda-127f-4ce8-be3a-9ba0dc603736",
+      "content_id": "085936da-71d8-4994-8c80-0e177b0e7585",
+      "claim_id": "C31",
+      "claim": "The human cytomegalovirus (CMV) enhancer/promoter was found almost three decades ago.",
+      "claim_type": "EXPLICIT",
+      "source": "Almost three decades ago, the human cytomegalovirus (CMV) enhancer/promoter (referred to as CMV enhancer hereafter) was found.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the discovery timeline of the CMV enhancer.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:36:07.846482Z"
+    },
+    {
+      "id": "cb3abed7-89c5-47ea-826d-ce4134eb8157",
+      "content_id": "085936da-71d8-4994-8c80-0e177b0e7585",
+      "claim_id": "C32",
+      "claim": "The CMV enhancer is a natural mammalian promoter with high transcriptional activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Almost three decades ago, the human cytomegalovirus (CMV) enhancer/promoter (referred to as CMV enhancer hereafter) was found. It is a natural mammalian promoter with high transcriptional activity (Boshart et al., 1985).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Boshart et al., 1985.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:36:07.846482Z"
+    },
+    {
+      "id": "cd184030-cfa4-484f-a377-a6a04aac4951",
+      "content_id": "085936da-71d8-4994-8c80-0e177b0e7585",
+      "claim_id": "C33",
+      "claim": "The CMV enhancer is a strong enhancer in various mammalian cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Later studies showed the CMV enhancer to be a strong enhancer in various mammalian cells (Boshart et al., 1985; Foecking and Hofstetter, 1986; Ho et al., 2015; Kim et al., 1990).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to multiple studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:36:07.846482Z"
+    },
+    {
+      "id": "b732347c-2eea-47ce-a7fd-1e8d1c3ae53b",
+      "content_id": "085936da-71d8-4994-8c80-0e177b0e7585",
+      "claim_id": "C34",
+      "claim": "The CMV enhancer has been widely used to drive ectopic expression of various genes in a wide range of mammalian cells.",
+      "claim_type": "EXPLICIT",
+      "source": "This enhancer has been widely used to drive ectopic expression of various genes in a wide range of mammalian cells",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the widespread use of CMV enhancer.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:36:07.846482Z"
+    },
+    {
+      "id": "2dbe6eb8-8997-45f1-9eee-15583f43836f",
+      "content_id": "085936da-71d8-4994-8c80-0e177b0e7585",
+      "claim_id": "C35",
+      "claim": "The CMV enhancer has been used to drive ectopic expression of exogenous genes in broad tissues in transgenic animals.",
+      "claim_type": "EXPLICIT",
+      "source": "This enhancer has been widely used to drive ectopic expression of various genes in a wide range of mammalian cells, and to drive ectopic expression of exogenous genes in broad tissues in transgenic animals (Furth et al., 1991; Schmidt et al., 1990)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Furth et al., 1991 and Schmidt et al., 1990.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:36:07.846482Z"
+    },
+    {
+      "id": "528b665a-24cc-4839-b275-db9dd0d712f9",
+      "content_id": "085936da-71d8-4994-8c80-0e177b0e7585",
+      "claim_id": "C36",
+      "claim": "The CMV enhancer has been used for protein production by gene engineering and gene therapy.",
+      "claim_type": "EXPLICIT",
+      "source": "This enhancer has been widely used to drive ectopic expression of various genes in a wide range of mammalian cells, and to drive ectopic expression of exogenous genes in broad tissues in transgenic animals (Furth et al., 1991; Schmidt et al., 1990), protein production by gene engineering, and gene therapy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about applications of CMV enhancer.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:36:07.846482Z"
+    },
+    {
+      "id": "905141f5-a6a0-4d5e-a113-a19c374e50c0",
+      "content_id": "085936da-71d8-4994-8c80-0e177b0e7585",
+      "claim_id": "C37",
+      "claim": "The transcriptional activity of the CMV enhancer was recently improved by changing the natural NF-\u03baB binding sites into artificially selected NF-\u03baB binding sequences with high binding affinity.",
+      "claim_type": "EXPLICIT",
+      "source": "We have recently improved the transcriptional activity of the CMV enhancer by changing the natural NF-\u03baB binding sites into artificially selected NF-\u03baB binding sequences with high binding affinity (Wang et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Wang et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:36:07.846482Z"
+    },
+    {
+      "id": "2d68eac6-09c5-4db7-8b7b-7bf831ee5ea1",
+      "content_id": "085936da-71d8-4994-8c80-0e177b0e7585",
+      "claim_id": "C38",
+      "claim": "A capture sgRNA (csgRNA) was produced by adding a capture sequence to the 3\u2032 end of a normal sgRNA sequence.",
+      "claim_type": "EXPLICIT",
+      "source": "A capture sgRNA (csgRNA) was produced by adding a capture sequence to the 3\u2032 end of a normal sgRNA sequence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental design of the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:36:07.846482Z"
+    },
+    {
+      "id": "583e71e5-69ac-418e-8700-cc5eb92017f4",
+      "content_id": "085936da-71d8-4994-8c80-0e177b0e7585",
+      "claim_id": "C39",
+      "claim": "A linear stick-end CMV (sCMV) enhancer was produced by adding a 3\u2032 end single-strand overhang.",
+      "claim_type": "EXPLICIT",
+      "source": "A linear stick-end CMV (sCMV) enhancer was produced by adding a 3\u2032 end single-strand overhang.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental design of the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:36:07.846482Z"
+    },
+    {
+      "id": "b1b68471-5fbe-4c49-a991-4ebe43eac9e8",
+      "content_id": "085936da-71d8-4994-8c80-0e177b0e7585",
+      "claim_id": "C40",
+      "claim": "The overhang of sCMV can anneal with the csgRNA capture sequence.",
+      "claim_type": "EXPLICIT",
+      "source": "The overhang can anneal with the csgRNA capture sequence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the design principle of the system.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:36:07.846482Z"
+    },
+    {
+      "id": "48280256-8bed-483a-9b46-c191b2a9e488",
+      "content_id": "085936da-71d8-4994-8c80-0e177b0e7585",
+      "claim_id": "C41",
+      "claim": "When dCas9 protein is guided to the promoter of the target gene by csgRNA, sCMV can be recruited by csgRNA.",
+      "claim_type": "EXPLICIT",
+      "source": "When dCas9 protein was guided to the promoter of the target gene by csgRNA, sCMV could be recruited by csgRNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the mechanism of the system.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:36:07.846482Z"
+    },
+    {
+      "id": "a5a1f623-16bb-4659-8633-89083f4648e1",
+      "content_id": "085936da-71d8-4994-8c80-0e177b0e7585",
+      "claim_id": "C42",
+      "claim": "The recruited sCMV may activate the transcription of the target gene like a natural looped cis enhancer.",
+      "claim_type": "EXPLICIT",
+      "source": "The recruited sCMV may activate the transcription of the target gene like a natural looped cis enhancer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about the mechanism based on analogy to natural enhancers.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:36:07.846482Z"
+    },
+    {
+      "id": "df440514-50ab-4ea5-95f4-80cfdf53b537",
+      "content_id": "085936da-71d8-4994-8c80-0e177b0e7585",
+      "claim_id": "C43",
+      "claim": "The capture sequence does not affect the function of sgRNA.",
+      "claim_type": "EXPLICIT",
+      "source": "The results indicated that the target DNA could be digested by all sgRNAs (Figure 1b), indicating that the capture sequence did not affect the sgRNA function.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 1b demonstrating DNA cutting by Cas9-csgRNA complexes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:36:07.846482Z"
+    },
+    {
+      "id": "31a07a37-02e3-4989-b5d8-9f6e12394b14",
+      "content_id": "085936da-71d8-4994-8c80-0e177b0e7585",
+      "claim_id": "C44",
+      "claim": "Three csgRNAs with different capture sequences targeting the same site of the HNF4\u03b1 promoter can all function to guide Cas9 endonuclease to cut target DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "We used these sgRNAs to associate with the Cas9 endonuclease to cut a 732 bp HNF4\u03b1 promoter fragment. The results indicated that the target DNA could be digested by all sgRNAs (Figure 1b)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 1b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:36:07.846482Z"
+    },
+    {
+      "id": "e843a2b9-efaf-4ae0-939c-ced3f90205b4",
+      "content_id": "085936da-71d8-4994-8c80-0e177b0e7585",
+      "claim_id": "C45",
+      "claim": "ZsGreen expression can be successfully activated by dCas9/csgRNA2-sCMV.",
+      "claim_type": "EXPLICIT",
+      "source": "The transfection indicated that ZsGreen expression could be successfully activated by dCas9/csgRNA2-sCMV",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by transfection experiments described in the text.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:36:07.846482Z"
+    },
+    {
+      "id": "a376ef54-aaaf-40e7-b2f8-d95e8f4e4e23",
+      "content_id": "085936da-71d8-4994-8c80-0e177b0e7585",
+      "claim_id": "C46",
+      "claim": "ZsGreen expression is not activated by dCas9/csgRNA2-blunt CMV (bCMV).",
+      "claim_type": "EXPLICIT",
+      "source": "The transfection indicated that ZsGreen expression could be successfully activated by dCas9/csgRNA2-sCMV but not activated by dCas9/csgRNA2-blunt CMV (bCMV).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by transfection experiments described in the text.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:36:07.846482Z"
+    },
+    {
+      "id": "3f3482a4-0dee-47bb-84e5-937facecabde",
+      "content_id": "085936da-71d8-4994-8c80-0e177b0e7585",
+      "claim_id": "C47",
+      "claim": "dCas9/csgRNA2-sCMV shows a similar activation level to Cas9-VP64/sgRNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the dCas9/csgRNA2-sCMV showed a similar activation level to Cas9-VP64/sgRNA, it was far inferior to cis CMV enhancer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by transfection experiments comparing different activation systems.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:36:07.846482Z"
+    },
+    {
+      "id": "44d5afe4-f96d-4f60-9a18-9c72a636fd34",
+      "content_id": "085936da-71d8-4994-8c80-0e177b0e7585",
+      "claim_id": "C48",
+      "claim": "dCas9/csgRNA2-sCMV is far inferior to cis CMV enhancer in activating ZsGreen expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the dCas9/csgRNA2-sCMV showed a similar activation level to Cas9-VP64/sgRNA, it was far inferior to cis CMV enhancer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by transfection experiments comparing different activation systems.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:36:07.846482Z"
+    },
+    {
+      "id": "8f13bdfa-cc78-4312-9de6-830427644bf3",
+      "content_id": "085936da-71d8-4994-8c80-0e177b0e7585",
+      "claim_id": "C49",
+      "claim": "ZsGreen expression is highly activated by dCas9-VP64/csgRNA2-sCMV transfection.",
+      "claim_type": "EXPLICIT",
+      "source": "To improve the performance of trans CMV, we tried transfecting 293 T cells with dCas9-VP64/csgRNA2-sCMV. The results indicated that ZsGreen expression was highly activated by the transfection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by transfection experiments described in the text.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:36:07.846482Z"
+    },
+    {
+      "id": "1846eab1-9a29-4a37-b66e-288156929b3d",
+      "content_id": "085936da-71d8-4994-8c80-0e177b0e7585",
+      "claim_id": "C50",
+      "claim": "dCas9-VP64/csgRNA2-bCMV shows a similar activation level to dCas9-VP64/sgRNA.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the dCas9-VP64/csgRNA2-bCMV showed a similar activation level to dCas9-VP64/sgRNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by transfection experiments comparing different activation systems.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:36:07.846482Z"
+    },
+    {
+      "id": "b635062c-5607-47f5-b052-43e7e96aeceb",
+      "content_id": "085936da-71d8-4994-8c80-0e177b0e7585",
+      "claim_id": "C51",
+      "claim": "Trans CMV functions in trans via dCas9/csgRNA.",
+      "claim_type": "EXPLICIT",
+      "source": "These data revealed that the trans CMV not only truly functioned in trans via dCas9/csgRNA, but also synergistically interacted with dCas9-fused VP64.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the experimental data showing activation by dCas9/csgRNA-sCMV.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:36:07.846482Z"
+    },
+    {
+      "id": "326c137e-4c52-4fdb-9d5e-5d51ec8bb444",
+      "content_id": "085936da-71d8-4994-8c80-0e177b0e7585",
+      "claim_id": "C52",
+      "claim": "Trans CMV synergistically interacts with dCas9-fused VP64.",
+      "claim_type": "EXPLICIT",
+      "source": "These data revealed that the trans CMV not only truly functioned in trans via dCas9/csgRNA, but also synergistically interacted with dCas9-fused VP64.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the experimental data showing enhanced activation with dCas9-VP64.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:36:07.846482Z"
+    },
+    {
+      "id": "7f2c3c92-436b-4405-8eab-9ac6d26fd370",
+      "content_id": "085936da-71d8-4994-8c80-0e177b0e7585",
+      "claim_id": "C53",
+      "claim": "ZsGreen expression can be highly activated by combination of dCas9-VP64, sCMV and csgRNA1.",
+      "claim_type": "EXPLICIT",
+      "source": "Subsequent transfections indicated that ZsGreen expression could also be highly activated by combination of dCas9-VP64, sCMV and other two csgRNAs, csgRNA1 and csgRNA3.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by transfection experiments with different csgRNAs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:36:07.846482Z"
+    },
+    {
+      "id": "62a3f85e-d401-49fd-bca9-249704602cdd",
+      "content_id": "085936da-71d8-4994-8c80-0e177b0e7585",
+      "claim_id": "C54",
+      "claim": "ZsGreen expression can be highly activated by combination of dCas9-VP64, sCMV and csgRNA3.",
+      "claim_type": "EXPLICIT",
+      "source": "Subsequent transfections indicated that ZsGreen expression could also be highly activated by combination of dCas9-VP64, sCMV and other two csgRNAs, csgRNA1 and csgRNA3.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by transfection experiments with different csgRNAs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:36:07.846482Z"
+    },
+    {
+      "id": "60f279f1-d527-413b-9719-731068a5721e",
+      "content_id": "085936da-71d8-4994-8c80-0e177b0e7585",
+      "claim_id": "C55",
+      "claim": "dCas9-VP64/csgRNA2-sCMV always showed the highest gene activation efficiency in all tested cell lines (293T, HepG2, A549, HeLa, SKOV3, PANC-1, HT29).",
+      "claim_type": "EXPLICIT",
+      "source": "The results revealed that dCas9-VP64/csgRNA2-sCMV always showed the highest gene activation efficiency in all cell lines.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by transfection experiments across multiple cell lines shown in Figure 2b and supplementary figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:36:07.846482Z"
+    },
+    {
+      "id": "11d24881-4b26-449e-9beb-cc8469ccacf8",
+      "content_id": "085936da-71d8-4994-8c80-0e177b0e7585",
+      "claim_id": "C56",
+      "claim": "dCas9/csgRNA2-sCMV always showed higher activity than dCas9-VP64/sgRNA in all tested cell lines.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, dCas9/csgRNA2-sCMV always showed higher activity than dCas9-VP64/sgRNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by transfection experiments across multiple cell lines.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:36:07.846482Z"
+    },
+    {
+      "id": "a200dade-4654-4ff4-8820-ba7bc19c45b2",
+      "content_id": "085936da-71d8-4994-8c80-0e177b0e7585",
+      "claim_id": "C57",
+      "claim": "Genes can be activated by the CRISPR-assisted trans enhancer.",
+      "claim_type": "EXPLICIT",
+      "source": "These results indicate that genes could be activated by the CRISPR-assisted trans enhancer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data across multiple cell lines.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:36:07.846482Z"
+    },
+    {
+      "id": "25017eec-e23e-43ec-95b3-b8b16f09a26d",
+      "content_id": "085936da-71d8-4994-8c80-0e177b0e7585",
+      "claim_id": "C58",
+      "claim": "Trans sCMV can synergistically function with dCas9-fused VP64 in gene activation.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, the trans sCMV could synergistically function with dCas9-fused VP64 in gene activation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data showing enhanced activation with dCas9-VP64.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:36:07.846482Z"
+    },
+    {
+      "id": "2110b284-50b0-457d-ac3b-ff10fe46a64d",
+      "content_id": "085936da-71d8-4994-8c80-0e177b0e7585",
+      "claim_id": "C59",
+      "claim": "VPR is a more potent transcriptional activation domain than VP64.",
+      "claim_type": "EXPLICIT",
+      "source": "Having shown that VPR is a more potent transcriptional activation domain than VP64",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge from prior studies.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:36:07.846482Z"
+    },
+    {
+      "id": "72c4afb2-6d5f-4f9c-bf58-1a0510353357",
+      "content_id": "085936da-71d8-4994-8c80-0e177b0e7585",
+      "claim_id": "C60",
+      "claim": "dCas9-VPR/csgRNA has better activity than dCas9-VP64/csgRNA.",
+      "claim_type": "EXPLICIT",
+      "source": "The results showed that dCas9-VPR/csgRNA had better activity than dCas9-VP64/csgRNA as previously reported.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data comparing the two systems in 293T and HepG2 cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:36:07.846482Z"
+    },
+    {
+      "id": "f83f9b3e-3dac-4ca0-adb2-eea014226e2b",
+      "content_id": "085936da-71d8-4994-8c80-0e177b0e7585",
+      "claim_id": "C61",
+      "claim": "dCas9-VP64/csgRNA-sCMV always showed significantly higher activity than dCas9-VPR/csgRNA.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the dCas9-VP64/csgRNA-sCMV always showed significantly higher activity than dCas9-VPR/csgRNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data shown in Figure 2c comparing the systems in 293T and HepG2 cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:36:07.846482Z"
+    },
+    {
+      "id": "50c2157c-222a-483e-b66e-8c37ac600cfb",
+      "content_id": "085936da-71d8-4994-8c80-0e177b0e7585",
+      "claim_id": "C62",
+      "claim": "Almost all tested endogenous genes were most significantly activated by dCas9-VP64/csgRNA2-sCMV in all tested cell lines.",
+      "claim_type": "EXPLICIT",
+      "source": "The quantitative PCR (qPCR) detection of gene expression revealed that almost all genes were most significantly activated by dCas9-VP64/csgRNA2-sCMV in all cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by qPCR data from transfection experiments across seven cell lines.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:36:07.846482Z"
+    },
+    {
+      "id": "13e985f3-3d35-43ef-ace0-bab51fea4f05",
+      "content_id": "085936da-71d8-4994-8c80-0e177b0e7585",
+      "claim_id": "C63",
+      "claim": "Most endogenous genes were more significantly activated by dCas9/csgRNA-sCMV than dCas9-VP64/sgRNA in all tested cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, most genes were more significantly activated by dCas9/csgRNA-sCMV than dCas9-VP64/sgRNA in all cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by qPCR data from transfection experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:36:07.846482Z"
+    },
+    {
+      "id": "259bd14a-a183-4246-92cf-cabd98acba8a",
+      "content_id": "085936da-71d8-4994-8c80-0e177b0e7585",
+      "claim_id": "C64",
+      "claim": "The CRISPR-assisted trans enhancer can be used to activate variant endogenous genes in various cells.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that the CRISPR-assisted trans enhancer could be used to activate variant endogenous genes in various cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data showing activation of 10 different genes across 7 cell lines.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:36:07.846482Z"
+    },
+    {
+      "id": "299b5695-5313-4017-ac61-322733a47f16",
+      "content_id": "085936da-71d8-4994-8c80-0e177b0e7585",
+      "claim_id": "C65",
+      "claim": "dCas9-VP64/csgRNA-sCMV has better activity than dCas9-VPR/csgRNA-sCMV in activating endogenous HNF4\u03b1 gene in 293T cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, by activating the HNF4\u03b1 gene in 293 T cells, we found that dCas9-VP64/csgRNA-sCMV had better activity than dCas9-VPR/csgRNA-sCMV in activating endogenous genes (Figure 3\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 3\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:36:07.846482Z"
+    },
+    {
+      "id": "a01caed3-a063-4630-b215-e7fe7161ee0d",
+      "content_id": "085936da-71d8-4994-8c80-0e177b0e7585",
+      "claim_id": "C66",
+      "claim": "Cancer cells HepG2 can be differentiated into normal liver-like cells by exogenously expressing transcription factor HNF4\u03b1.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been reported that the cancer cells HepG2 and PANC1 can be differentiated into normal liver- and pancreas-like cells by exogenously expressing transcription factor HNF4\u03b1 and E47.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge from prior studies.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:36:07.846482Z"
+    },
+    {
+      "id": "747fed98-7374-4f30-adfa-85b664e82c1b",
+      "content_id": "085936da-71d8-4994-8c80-0e177b0e7585",
+      "claim_id": "C67",
+      "claim": "Cancer cells PANC1 can be differentiated into normal pancreas-like cells by exogenously expressing transcription factor E47.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been reported that the cancer cells HepG2 and PANC1 can be differentiated into normal liver- and pancreas-like cells by exogenously expressing transcription factor HNF4\u03b1 and E47.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge from prior studies.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:36:07.846482Z"
+    },
+    {
+      "id": "325dbf44-97e0-4807-a345-6c0bb53a8de1",
+      "content_id": "085936da-71d8-4994-8c80-0e177b0e7585",
+      "claim_id": "C68",
+      "claim": "Endogenous HNF4\u03b1 gene was highly activated by the CRISPR-assisted trans enhancer in HepG2 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In the above assays, we found that the endogenous HNF4\u03b1 and E47 genes were highly activated by the CRISPR-assisted trans enhancer in HepG2 and PANC1 cells (Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:36:07.846482Z"
+    },
+    {
+      "id": "dca9fb07-c5ea-40bf-9d6d-0640a9027036",
+      "content_id": "085936da-71d8-4994-8c80-0e177b0e7585",
+      "claim_id": "C69",
+      "claim": "Endogenous E47 gene was highly activated by the CRISPR-assisted trans enhancer in PANC1 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In the above assays, we found that the endogenous HNF4\u03b1 and E47 genes were highly activated by the CRISPR-assisted trans enhancer in HepG2 and PANC1 cells (Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:36:07.846482Z"
+    },
+    {
+      "id": "6d24efed-07c0-4f70-802f-a902c9e4d32e",
+      "content_id": "085936da-71d8-4994-8c80-0e177b0e7585",
+      "claim_id": "C70",
+      "claim": "Genes related to stemness (CD133 and CD90) were down-regulated in HepG2 cells after HNF4\u03b1 activation.",
+      "claim_type": "EXPLICIT",
+      "source": "The results indicated that the genes related to stemness (CD133 and CD90) and pluripotency (Oct3/4, Sox2, Nanog, c-Myc, LIN28, and Klf4) were down-regulated",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by qPCR data shown in Figure 4a for HepG2 cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:36:07.846482Z"
+    },
+    {
+      "id": "207fba7d-77ce-43e5-952b-28145cac7548",
+      "content_id": "085936da-71d8-4994-8c80-0e177b0e7585",
+      "claim_id": "C71",
+      "claim": "Genes related to pluripotency (Oct3/4, Sox2, Nanog, c-Myc, LIN28, and Klf4) were down-regulated in HepG2 cells after HNF4\u03b1 activation.",
+      "claim_type": "EXPLICIT",
+      "source": "The results indicated that the genes related to stemness (CD133 and CD90) and pluripotency (Oct3/4, Sox2, Nanog, c-Myc, LIN28, and Klf4) were down-regulated",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by qPCR data shown in Figure 4a for HepG2 cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:36:07.846482Z"
+    },
+    {
+      "id": "23d4e357-fc1f-4e99-a105-f85201340ea6",
+      "content_id": "085936da-71d8-4994-8c80-0e177b0e7585",
+      "claim_id": "C72",
+      "claim": "Genes related to normal liver functions (GS, BR, ALDOB, CYP1a2, PEPCK, APOCIII, G-6-P, and HPD) were highly up-regulated in HepG2 cells after HNF4\u03b1 activation.",
+      "claim_type": "EXPLICIT",
+      "source": "but those related to normal liver (GS, BR, ALDOB, CYP1a2, PEPCK, APOCIII, G-6-P, and HPD) and pancreas (MIST1, PRSS2, CELA3A, and CPA2) functions were highly up-regulated in HepG2 and PANC1 cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by qPCR data shown in Figure 4a for HepG2 cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:36:07.846482Z"
+    },
+    {
+      "id": "34273da2-c50f-495e-9a67-978de2fe3dfc",
+      "content_id": "085936da-71d8-4994-8c80-0e177b0e7585",
+      "claim_id": "C73",
+      "claim": "Genes related to normal pancreas functions (MIST1, PRSS2, CELA3A, and CPA2) were highly up-regulated in PANC1 cells after E47 activation.",
+      "claim_type": "EXPLICIT",
+      "source": "but those related to normal liver (GS, BR, ALDOB, CYP1a2, PEPCK, APOCIII, G-6-P, and HPD) and pancreas (MIST1, PRSS2, CELA3A, and CPA2) functions were highly up-regulated in HepG2 and PANC1 cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by qPCR data shown in Figure 4b for PANC1 cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:36:07.846482Z"
+    },
+    {
+      "id": "04a11a5e-9878-422c-b221-106e433ae4f3",
+      "content_id": "085936da-71d8-4994-8c80-0e177b0e7585",
+      "claim_id": "C74",
+      "claim": "Cell cycle arrest-related gene p21 was highly up-regulated in HepG2 cells after HNF4\u03b1 activation.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, the cell cycle arrest-related gene p21 (HepG2 and PANC1) and TP53INP1 (PANC1) were highly up-regulated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by qPCR data shown in Figure 4a for HepG2 cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:36:07.846482Z"
+    },
+    {
+      "id": "9e235ca7-eea1-4d81-ad23-73a05f440146",
+      "content_id": "085936da-71d8-4994-8c80-0e177b0e7585",
+      "claim_id": "C75",
+      "claim": "Cell cycle arrest-related gene p21 was highly up-regulated in PANC1 cells after E47 activation.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, the cell cycle arrest-related gene p21 (HepG2 and PANC1) and TP53INP1 (PANC1) were highly up-regulated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by qPCR data shown in Figure 4b for PANC1 cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:36:07.846482Z"
+    },
+    {
+      "id": "ccea5d3e-0292-4746-a1a5-8d998dbc5de2",
+      "content_id": "085936da-71d8-4994-8c80-0e177b0e7585",
+      "claim_id": "C76",
+      "claim": "Cell cycle arrest-related gene TP53INP1 was highly up-regulated in PANC1 cells after E47 activation.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, the cell cycle arrest-related gene p21 (HepG2 and PANC1) and TP53INP1 (PANC1) were highly up-regulated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by qPCR data shown in Figure 4b for PANC1 cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:36:07.846482Z"
+    },
+    {
+      "id": "2ba42830-fa37-4ed2-8328-c24b2e22fff1",
+      "content_id": "085936da-71d8-4994-8c80-0e177b0e7585",
+      "claim_id": "C77",
+      "claim": "ZsGreen expression was activated by trans enhancers sEF1a and sPGK.",
+      "claim_type": "EXPLICIT",
+      "source": "The results indicated that the ZsGreen expression was also activated by the two trans enhancers; however, the activation levels were lower than that of sCMV (Figure 5a, Figure 5\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 5a and Figure 5\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:36:07.846482Z"
+    },
+    {
+      "id": "139d48a9-9682-4a9e-9b19-26d1f9eb6d54",
+      "content_id": "085936da-71d8-4994-8c80-0e177b0e7585",
+      "claim_id": "C78",
+      "claim": "The activation levels of sEF1a and sPGK were lower than that of sCMV for ZsGreen expression.",
+      "claim_type": "EXPLICIT",
+      "source": "The results indicated that the ZsGreen expression was also activated by the two trans enhancers; however, the activation levels were lower than that of sCMV (Figure 5a, Figure 5\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 5a and Figure 5\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:36:07.846482Z"
+    },
+    {
+      "id": "beb8d1cc-8a96-45d3-acac-06ca3c95aece",
+      "content_id": "085936da-71d8-4994-8c80-0e177b0e7585",
+      "claim_id": "C79",
+      "claim": "All blunt-ended trans enhancers (bCMV, bEF1a, bPGK) did not activate ZsGreen expression.",
+      "claim_type": "EXPLICIT",
+      "source": "All other transfections as controls did not activate ZsGreen expression (Figure 5a, Figure 5\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 5a and Figure 5\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:36:07.846482Z"
+    },
+    {
+      "id": "82f193aa-e3c2-4822-8a3e-b0f1355c95ec",
+      "content_id": "085936da-71d8-4994-8c80-0e177b0e7585",
+      "claim_id": "C80",
+      "claim": "Endogenous HNF4\u03b1 gene expression was significantly activated by stick-end trans enhancers (sCMV, sEF1a, sPGK) in 293T cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The qPCR detection of HNF4\u03b1 expression in the same transfected 293 T cells revealed that the endogenous HNF4\u03b1 gene expression was also significantly activated by three stick-end trans enhancers, but not activated by all blunt-ended trans enhancers (Figure 5b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by qPCR data shown in Figure 5b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:36:07.846482Z"
+    },
+    {
+      "id": "28813cb4-a530-4350-acdd-980301373903",
+      "content_id": "085936da-71d8-4994-8c80-0e177b0e7585",
+      "claim_id": "C81",
+      "claim": "Endogenous HNF4\u03b1 gene expression was not activated by all blunt-ended trans enhancers in 293T cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The qPCR detection of HNF4\u03b1 expression in the same transfected 293 T cells revealed that the endogenous HNF4\u03b1 gene expression was also significantly activated by three stick-end trans enhancers, but not activated by all blunt-ended trans enhancers (Figure 5b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by qPCR data shown in Figure 5b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:36:07.846482Z"
+    },
+    {
+      "id": "d72735a1-a28f-4609-b32c-3ba4155e1352",
+      "content_id": "085936da-71d8-4994-8c80-0e177b0e7585",
+      "claim_id": "C82",
+      "claim": "Endogenous HNF4\u03b1 gene expression was significantly activated by all stick-ended trans enhancers in HepG2 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Subsequent HepG2 cell transfections with the same trans enhancers and dCas9-VP64/csgRNA indicated that the endogenous HNF4\u03b1 gene expression could also be significantly activated by all stick-ended trans enhancers, but not activated by all blunt-ended trans enhancers (Figure 5b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by qPCR data shown in Figure 5b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:36:07.846482Z"
+    },
+    {
+      "id": "9d43853d-dd0f-4828-8187-3396962d021e",
+      "content_id": "085936da-71d8-4994-8c80-0e177b0e7585",
+      "claim_id": "C83",
+      "claim": "Endogenous HNF4\u03b1 gene expression was not activated by all blunt-ended trans enhancers in HepG2 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Subsequent HepG2 cell transfections with the same trans enhancers and dCas9-VP64/csgRNA indicated that the endogenous HNF4\u03b1 gene expression could also be significantly activated by all stick-ended trans enhancers, but not activated by all blunt-ended trans enhancers (Figure 5b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by qPCR data shown in Figure 5b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:36:07.846482Z"
+    },
+    {
+      "id": "9edd6c06-a0e2-4092-bc35-46f41b669d4f",
+      "content_id": "085936da-71d8-4994-8c80-0e177b0e7585",
+      "claim_id": "C84",
+      "claim": "Variant enhancers can be used as the CRISPR-assisted trans enhancer.",
+      "claim_type": "EXPLICIT",
+      "source": "These results indicate that the variant enhancers could be used as the CRISPR-assisted trans enhancer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data showing activation by sEF1a and sPGK.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:36:07.846482Z"
+    },
+    {
+      "id": "fb1901b7-4286-4e36-becc-45e0ed3cdd2e",
+      "content_id": "085936da-71d8-4994-8c80-0e177b0e7585",
+      "claim_id": "C85",
+      "claim": "ZsGreen expression of the exogenous reporter gene was significantly activated by both LUAS-CMV and CUAS-CMV in 293T cells.",
+      "claim_type": "EXPLICIT",
+      "source": "By transfecting 293 T cells with dCas9-VP64-GAL4/sgRNA-LUAS-CMV/CUAS-CMV and reporter construct, the ZsGreen expression of the exogenous reporter gene was significantly activated by both LUAS-CMV and CUAS-CMV, but not activated by all transfections as controls (Figure 6b, Figure 6\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 6b and Figure 6\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:36:07.846482Z"
+    },
+    {
+      "id": "ceb97576-9182-49d9-94dc-b6690c29b4ea",
+      "content_id": "085936da-71d8-4994-8c80-0e177b0e7585",
+      "claim_id": "C86",
+      "claim": "ZsGreen expression was not activated by control transfections in the GAL4-UAS system.",
+      "claim_type": "EXPLICIT",
+      "source": "By transfecting 293 T cells with dCas9-VP64-GAL4/sgRNA-LUAS-CMV/CUAS-CMV and reporter construct, the ZsGreen expression of the exogenous reporter gene was significantly activated by both LUAS-CMV and CUAS-CMV, but not activated by all transfections as controls (Figure 6b, Figure 6\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 6b and Figure 6\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:36:07.846482Z"
+    },
+    {
+      "id": "fc942f65-d477-46d7-aa9b-8c4fc5b4b381",
+      "content_id": "085936da-71d8-4994-8c80-0e177b0e7585",
+      "claim_id": "C87",
+      "claim": "Expression of endogenous HNF4\u03b1 gene was highly activated by LUAS-CMV in 293T cells.",
+      "claim_type": "EXPLICIT",
+      "source": "By transfecting 293T and HepG2 cells with dCas9-VP64-GAL4/sgRNA-LUAS-CMV/CUAS-CMV, the expression of endogenous HNF4\u03b1 gene was highly activated in the two cells (Figure 6c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by qPCR data shown in Figure 6c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:36:07.846482Z"
+    },
+    {
+      "id": "f633275b-6862-4efd-82bb-febd22060826",
+      "content_id": "085936da-71d8-4994-8c80-0e177b0e7585",
+      "claim_id": "C88",
+      "claim": "Expression of endogenous HNF4\u03b1 gene was highly activated by CUAS-CMV in 293T cells.",
+      "claim_type": "EXPLICIT",
+      "source": "By transfecting 293T and HepG2 cells with dCas9-VP64-GAL4/sgRNA-LUAS-CMV/CUAS-CMV, the expression of endogenous HNF4\u03b1 gene was highly activated in the two cells (Figure 6c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by qPCR data shown in Figure 6c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:36:07.846482Z"
+    },
+    {
+      "id": "e70a084f-af77-4fa5-85b2-5f6222cd190b",
+      "content_id": "085936da-71d8-4994-8c80-0e177b0e7585",
+      "claim_id": "C89",
+      "claim": "Expression of endogenous HNF4\u03b1 gene was highly activated by LUAS-CMV in HepG2 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "By transfecting 293T and HepG2 cells with dCas9-VP64-GAL4/sgRNA-LUAS-CMV/CUAS-CMV, the expression of endogenous HNF4\u03b1 gene was highly activated in the two cells (Figure 6c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by qPCR data shown in Figure 6c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:36:07.846482Z"
+    },
+    {
+      "id": "24fb4a21-5a68-437d-a4a6-01bcc3689007",
+      "content_id": "085936da-71d8-4994-8c80-0e177b0e7585",
+      "claim_id": "C90",
+      "claim": "Expression of endogenous HNF4\u03b1 gene was highly activated by CUAS-CMV in HepG2 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "By transfecting 293T and HepG2 cells with dCas9-VP64-GAL4/sgRNA-LUAS-CMV/CUAS-CMV, the expression of endogenous HNF4\u03b1 gene was highly activated in the two cells (Figure 6c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by qPCR data shown in Figure 6c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:36:07.846482Z"
+    },
+    {
+      "id": "e811d61a-ad53-4ac9-a29f-ed79b817cd8c",
+      "content_id": "085936da-71d8-4994-8c80-0e177b0e7585",
+      "claim_id": "C91",
+      "claim": "Trans LUAS-CMV showed significantly higher activity than trans sCMV in activating endogenous HNF4\u03b1 gene.",
+      "claim_type": "EXPLICIT",
+      "source": "More importantly, both trans LUAS-CMV and CUAS-CMV enhancers showed significantly higher activity than the trans sCMV (Figure 6c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by qPCR data shown in Figure 6c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:36:07.846482Z"
+    },
+    {
+      "id": "97eb464c-cd31-46c1-8eaa-28649212f535",
+      "content_id": "085936da-71d8-4994-8c80-0e177b0e7585",
+      "claim_id": "C92",
+      "claim": "Trans CUAS-CMV showed significantly higher activity than trans sCMV in activating endogenous HNF4\u03b1 gene.",
+      "claim_type": "EXPLICIT",
+      "source": "More importantly, both trans LUAS-CMV and CUAS-CMV enhancers showed significantly higher activity than the trans sCMV (Figure 6c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by qPCR data shown in Figure 6c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:36:07.846482Z"
+    },
+    {
+      "id": "d215e076-0fb3-440e-a42c-6820239067b8",
+      "content_id": "085936da-71d8-4994-8c80-0e177b0e7585",
+      "claim_id": "C93",
+      "claim": "Control transfections did not activate the expression of endogenous HNF4\u03b1 gene in 293T and HepG2 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, all transfections as controls did not activate the expression of endogenous HNF4\u03b1 gene in the two cells (Figure 6c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by qPCR data shown in Figure 6c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:36:07.846482Z"
+    },
+    {
+      "id": "6c632a2d-dd11-4797-a622-4a7aeafe222d",
+      "content_id": "085936da-71d8-4994-8c80-0e177b0e7585",
+      "claim_id": "C94",
+      "claim": "The CRISPR-assisted trans enhancer can be realized with the GAL4-UAS system.",
+      "claim_type": "EXPLICIT",
+      "source": "These results reveal that the CRISPR-assisted trans enhancer could be better realized with the GAL4-UAS system.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data showing activation by the GAL4-UAS system.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:36:07.846482Z"
+    },
+    {
+      "id": "3e0f225c-2c81-488a-8eb6-82fa4c0d843e",
+      "content_id": "085936da-71d8-4994-8c80-0e177b0e7585",
+      "claim_id": "C95",
+      "claim": "The CRISPR-assisted trans enhancer strategy has unique advantages over current dCas9-based gene activation systems.",
+      "claim_type": "EXPLICIT",
+      "source": "This strategy has unique advantages over the current dCas9-based gene activation systems.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data and comparison with existing systems.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:36:07.846482Z"
+    },
+    {
+      "id": "5e84c7d2-0ee2-4f48-9f9b-bf88ca520d6d",
+      "content_id": "085936da-71d8-4994-8c80-0e177b0e7585",
+      "claim_id": "C96",
+      "claim": "Only one csgRNA was used in activating all target genes in various cells with the CRISPR-assisted trans enhancer.",
+      "claim_type": "EXPLICIT",
+      "source": "First, only one csgRNA was used in activating all target genes in various cells with the CRISPR-assisted trans enhancer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental design used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:36:07.846482Z"
+    },
+    {
+      "id": "fa67f598-03a5-4ce3-8187-664bf4346d8e",
+      "content_id": "085936da-71d8-4994-8c80-0e177b0e7585",
+      "claim_id": "C97",
+      "claim": "In current dCas9-based gene activations, multiple sgRNAs are used.",
+      "claim_type": "EXPLICIT",
+      "source": "However, in current dCas9-based gene activations, multiple sgRNAs are used.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about current dCas9-based activation systems.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:36:07.846482Z"
+    },
+    {
+      "id": "c7b5e054-f859-4558-a988-216dc1cd396f",
+      "content_id": "085936da-71d8-4994-8c80-0e177b0e7585",
+      "claim_id": "C98",
+      "claim": "In general, three or more sgRNAs are used to activate a gene of interest in current dCas9-based systems.",
+      "claim_type": "EXPLICIT",
+      "source": "In general, three or more sgRNAs are used to activate a gene of interest (Cheng et al., 2013; Maeder et al., 2013; Mali et al., 2013a; Perez-Pinera et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to multiple studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:36:07.846482Z"
+    },
+    {
+      "id": "eae300b0-5192-406c-83b7-d1d8774776fc",
+      "content_id": "085936da-71d8-4994-8c80-0e177b0e7585",
+      "claim_id": "C99",
+      "claim": "In many assays with various numbers of sgRNAs, one sgRNA often produced very low or undetectable expression.",
+      "claim_type": "EXPLICIT",
+      "source": "In many assays with various numbers of sgRNAs, one sgRNA often produced very low or undetectable expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the literature about current systems.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:36:07.846482Z"
+    },
+    {
+      "id": "5790e914-401d-461d-bf5b-713baab38eb1",
+      "content_id": "085936da-71d8-4994-8c80-0e177b0e7585",
+      "claim_id": "C100",
+      "claim": "Using multiple sgRNAs, each sgRNA has to be independently transcribed by a long U6 promoter.",
+      "claim_type": "EXPLICIT",
+      "source": "Using multiple sgRNAs, each sgRNA has to be independently transcribed by a long U6 promoter.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about sgRNA expression systems.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:36:07.846482Z"
+    },
+    {
+      "id": "b1c96231-852a-4ac9-9b49-ee5176aa875e",
+      "content_id": "085936da-71d8-4994-8c80-0e177b0e7585",
+      "claim_id": "C101",
+      "claim": "csgRNA is the simplest sgRNA used in dCas9-based gene activators, which only extended a 24 bp short sequence at the 3\u2032 end of normal sgRNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, csgRNA is the simplest sgRNA used in dCas9-based gene activators, which only extended a 24 bp short sequence at the 3\u2032 end of normal sgRNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the design of csgRNA in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:36:07.846482Z"
+    },
+    {
+      "id": "d49783f8-e91c-4cfb-a310-6148cc253e08",
+      "content_id": "085936da-71d8-4994-8c80-0e177b0e7585",
+      "claim_id": "C102",
+      "claim": "Current dCas9/sgRNA activators often use long complex chimeric sgRNAs that harbor multiple tandem aptamers of various RNA-binding proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "However, current dCas9/sgRNA activators often use long complex chimeric sgRNAs that harbor multiple tandem aptamers of various RNA-binding proteins, such as SAM sgRNA (MS2) (Konermann et al., 2015; Liao et al., 2017), Casilio sgRNA (Pumilio/FBF) (Cheng et al., 2016), and scaffold RNAs (MCP, PCP, and Com) (Zalatan et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to studies describing these systems.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:36:07.846482Z"
+    },
+    {
+      "id": "86b1ab4c-efac-4e33-a5e6-824c34c187bf",
+      "content_id": "085936da-71d8-4994-8c80-0e177b0e7585",
+      "claim_id": "C103",
+      "claim": "The capture sequences of csgRNA can be easily designed.",
+      "claim_type": "EXPLICIT",
+      "source": "The capture sequences of csgRNA can be easily designed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the successful design of three different capture sequences.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:36:07.846482Z"
+    },
+    {
+      "id": "82138424-1b11-40b4-aed1-95558751b27f",
+      "content_id": "085936da-71d8-4994-8c80-0e177b0e7585",
+      "claim_id": "C104",
+      "claim": "Three different capture sequences were originally designed and all functioned in the CRISPR-assisted trans enhancer.",
+      "claim_type": "EXPLICIT",
+      "source": "We originally designed three different capture sequences. All functioned in the CRISPR-assisted trans enhancer; however, csgRNA2 showed the best performance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data showing all three csgRNAs functioned.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:36:07.846482Z"
+    },
+    {
+      "id": "6ab11ef5-6e27-4bdc-ac4e-b51efe7bacf8",
+      "content_id": "085936da-71d8-4994-8c80-0e177b0e7585",
+      "claim_id": "C105",
+      "claim": "csgRNA2 showed the best performance among the three designed capture sequences.",
+      "claim_type": "EXPLICIT",
+      "source": "We originally designed three different capture sequences. All functioned in the CRISPR-assisted trans enhancer; however, csgRNA2 showed the best performance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data comparing the three csgRNAs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:36:07.846482Z"
+    },
+    {
+      "id": "057fec6d-199d-40bf-8350-7016e91c8f22",
+      "content_id": "085936da-71d8-4994-8c80-0e177b0e7585",
+      "claim_id": "C106",
+      "claim": "The capture sequences were artificially designed short sequences with no complementary sequences in human cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The capture sequences were artificially designed short sequences, they have no complementary sequences in human cells, which is important for their specific annealing with sCMV at high efficiency.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the design principle to ensure specificity.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:36:07.846482Z"
+    },
+    {
+      "id": "89205160-6f2f-4b9f-84e2-d7b18d8c61d4",
+      "content_id": "085936da-71d8-4994-8c80-0e177b0e7585",
+      "claim_id": "C107",
+      "claim": "sCMV can be efficiently captured by csgRNA in the nucleus of human cells.",
+      "claim_type": "EXPLICIT",
+      "source": "This study demonstrated that sCMV could be efficiently captured by csgRNA in the nucleus of human cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data showing gene activation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:36:07.846482Z"
+    },
+    {
+      "id": "9d1cbaea-aeda-461f-be9b-48e8468655d2",
+      "content_id": "085936da-71d8-4994-8c80-0e177b0e7585",
+      "claim_id": "C108",
+      "claim": "This is the first report of a gene being activated by an artificial DNA in trans.",
+      "claim_type": "EXPLICIT",
+      "source": "To our knowledge, this is the first report of a gene being activated by an artificial DNA in trans.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a claim about the novelty of the work.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:36:07.846482Z"
+    },
+    {
+      "id": "5eba8b10-c9fe-484b-ace1-60aa3687e7f1",
+      "content_id": "085936da-71d8-4994-8c80-0e177b0e7585",
+      "claim_id": "C109",
+      "claim": "The csgRNA-sCMV-based trans enhancer can be used via nanoparticle gene carriers for in vivo applications.",
+      "claim_type": "EXPLICIT",
+      "source": "As to the in vivo applications, the csgRNA-sCMV-based trans enhancer can be used via nanoparticle gene carriers",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about potential future applications.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:36:07.846482Z"
+    },
+    {
+      "id": "6523425f-65ad-4bea-95a3-2e7208f4fee6",
+      "content_id": "085936da-71d8-4994-8c80-0e177b0e7585",
+      "claim_id": "C110",
+      "claim": "The GAL4-UAS-based trans enhancer can be easily transferred by virus vectors such as AAV.",
+      "claim_type": "EXPLICIT",
+      "source": "while the GAL4-UAS-based trans enhancer can be easily transferred by virus vectors such as AAV, with AAV already being approved for use as a gene vector in clinics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the size compatibility with AAV packaging and established knowledge about AAV approval.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:36:07.846482Z"
+    },
+    {
+      "id": "c060313e-a1e5-4748-8ed1-f1ed3266af57",
+      "content_id": "085936da-71d8-4994-8c80-0e177b0e7585",
+      "claim_id": "C111",
+      "claim": "AAV has already been approved for use as a gene vector in clinics.",
+      "claim_type": "EXPLICIT",
+      "source": "while the GAL4-UAS-based trans enhancer can be easily transferred by virus vectors such as AAV, with AAV already being approved for use as a gene vector in clinics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about AAV clinical approval.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:36:07.846482Z"
+    },
+    {
+      "id": "26d5042a-722f-4f4a-879c-8eca52fa7cef",
+      "content_id": "085936da-71d8-4994-8c80-0e177b0e7585",
+      "claim_id": "C112",
+      "claim": "The GAL4-UAS-based trans enhancer had better performance than the csgRNA-sCMV-based trans enhancer.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the GAL4-UAS-based trans enhancer had better performance than the csgRNA-sCMV-based trans enhancer, especially the linear UAS-CMV.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data shown in Figure 6c comparing the two systems.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:36:07.846482Z"
+    },
+    {
+      "id": "ff07534c-759d-424c-b884-7c8cdf2a6489",
+      "content_id": "085936da-71d8-4994-8c80-0e177b0e7585",
+      "claim_id": "C113",
+      "claim": "The linear UAS-CMV can be easily transferred by AAV vector for in vivo applications.",
+      "claim_type": "EXPLICIT",
+      "source": "In in vivo applications, the linear UAS-CMV can be easily transferred by AAV vector.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the size compatibility with AAV packaging.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:36:07.846482Z"
+    },
+    {
+      "id": "74bddc88-80c2-4dd3-9bcd-af1ca0c4c801",
+      "content_id": "085936da-71d8-4994-8c80-0e177b0e7585",
+      "claim_id": "C114",
+      "claim": "Fibroblasts were reprogramed into induced pluripotent stem (iPS) cells by endogenous activation of the Oct4 and Sox2 genes with dCas9-SunTag-VP64.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, fibroblasts were reprogramed into induced pluripotent stem (iPS) cells by endogenous activation of the Oct4 and Sox2 genes with dCas9-SunTag-VP64 (Liu et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Liu et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:36:07.846482Z"
+    },
+    {
+      "id": "dda3f6ec-aa14-4446-8540-22f9dc048279",
+      "content_id": "085936da-71d8-4994-8c80-0e177b0e7585",
+      "claim_id": "C115",
+      "claim": "Mouse embryonic fibroblasts were converted into neuronal cells by endogenous activation of the Brn2, Ascl1, and Myt1l genes with VP64dCas9VP64.",
+      "claim_type": "EXPLICIT",
+      "source": "Mouse embryonic fibroblasts were converted into neuronal cells by endogenous activation of the Brn2, Ascl1, and Myt1l genes with VP64dCas9VP64 (Black et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Black et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:36:07.846482Z"
+    },
+    {
+      "id": "9b50868c-8d5f-469a-94e6-3ed366c6d5d6",
+      "content_id": "085936da-71d8-4994-8c80-0e177b0e7585",
+      "claim_id": "C116",
+      "claim": "In vivo target genes were activated by MPH to ameliorate disease phenotypes in mouse models of type I diabetes, acute kidney injury, and muscular dystrophy.",
+      "claim_type": "EXPLICIT",
+      "source": "In vivo target genes were activated by MPH to ameliorate disease phenotypes in mouse models of type I diabetes, acute kidney injury, and muscular dystrophy (Liao et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Liao et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:36:07.846482Z"
+    },
+    {
+      "id": "9520b8cc-53e3-488d-8bb0-993e1cd1f53f",
+      "content_id": "085936da-71d8-4994-8c80-0e177b0e7585",
+      "claim_id": "C117",
+      "claim": "Brain astrocytes were converted into functional neurons in vivo by activating the Ascl1, Neurog2 and Neurod1 genes with SPH.",
+      "claim_type": "EXPLICIT",
+      "source": "Brain astrocytes were converted into functional neurons in vivo by activating the Ascl1, Neurog2 and Neurod1 genes with SPH (Zhou et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Zhou et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:36:07.846482Z"
+    },
+    {
+      "id": "73ca8264-1cac-4822-907b-40a242164090",
+      "content_id": "085936da-71d8-4994-8c80-0e177b0e7585",
+      "claim_id": "C118",
+      "claim": "Ascl1, Ngn2, and Sox2 are used to directly reprogram fibroblasts into nerve cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Ascl1, Ngn2, and Sox2 are used to directly reprogram fibroblasts into nerve cells (Zhao et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Zhao et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:36:07.846482Z"
+    },
+    {
+      "id": "850f9725-a0f7-4959-b0fb-f5b3641362e0",
+      "content_id": "085936da-71d8-4994-8c80-0e177b0e7585",
+      "claim_id": "C119",
+      "claim": "Oct4, Sox2, and Nanog are widely used to reprogram fibroblasts into iPS cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Oct4, Sox2, and Nanog are widely used to reprogram fibroblasts into iPS cells (Takahashi et al., 2007; Takahashi and Yamanaka, 2016; Yu et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to multiple studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:36:07.846482Z"
+    },
+    {
+      "id": "752d361f-d58c-44e0-882c-19acd7a0eba3",
+      "content_id": "085936da-71d8-4994-8c80-0e177b0e7585",
+      "claim_id": "C120",
+      "claim": "HNF4\u03b1 is used to differentiate liver cancer cells into normal cells.",
+      "claim_type": "EXPLICIT",
+      "source": "HNF4\u03b1 and E47 are used to differentiate liver and panaceas cancer cells into normal cells (Kim et al., 2015; Yin et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Kim et al., 2015 and Yin et al., 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:36:07.846482Z"
+    },
+    {
+      "id": "9f187865-4230-4927-8a40-63f0af4a29ec",
+      "content_id": "085936da-71d8-4994-8c80-0e177b0e7585",
+      "claim_id": "C121",
+      "claim": "E47 is used to differentiate pancreas cancer cells into normal cells.",
+      "claim_type": "EXPLICIT",
+      "source": "HNF4\u03b1 and E47 are used to differentiate liver and panaceas cancer cells into normal cells (Kim et al., 2015; Yin et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Kim et al., 2015 and Yin et al., 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:36:07.846482Z"
+    },
+    {
+      "id": "2b5542b4-e9f9-43c2-878a-29a45b650af5",
+      "content_id": "085936da-71d8-4994-8c80-0e177b0e7585",
+      "claim_id": "C122",
+      "claim": "TNFAIP3 is a well-known natural NF-\u03baB inhibitor.",
+      "claim_type": "EXPLICIT",
+      "source": "TNFAIP3 is a well-known natural NF-\u03baB inhibitor (Cooper et al., 1996)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Cooper et al., 1996.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:36:07.846482Z"
+    },
+    {
+      "id": "de0b163d-f8dc-4638-87df-d559acca8029",
+      "content_id": "085936da-71d8-4994-8c80-0e177b0e7585",
+      "claim_id": "C123",
+      "claim": "TNFAIP3 has the potential to treat NF-\u03baB-overactivated diseases such as inflammation and cancers.",
+      "claim_type": "EXPLICIT",
+      "source": "TNFAIP3 is a well-known natural NF-\u03baB inhibitor (Cooper et al., 1996), having the potential to treat NF-\u03baB-overactivated diseases such as inflammation and cancers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the known function of TNFAIP3 as an NF-\u03baB inhibitor.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:36:07.846482Z"
+    },
+    {
+      "id": "9ba7723c-c5cd-40dd-97cd-e795dd91eae8",
+      "content_id": "085936da-71d8-4994-8c80-0e177b0e7585",
+      "claim_id": "C124",
+      "claim": "Caspase9 is a key gene making cell apoptosis.",
+      "claim_type": "EXPLICIT",
+      "source": "Caspase9 is a key gene making cell apoptosis (Li et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Li et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:36:07.846482Z"
+    },
+    {
+      "id": "e5c26336-361f-467e-9b72-3436fb190146",
+      "content_id": "085936da-71d8-4994-8c80-0e177b0e7585",
+      "claim_id": "C125",
+      "claim": "CSF3 codes granulocyte-colony stimulating factor (G-CSF), a glycoprotein that stimulates the bone marrow to produce granulocytes and stem cells and release them into bloodstream.",
+      "claim_type": "EXPLICIT",
+      "source": "CSF3 codes granulocyte-colony stimulating factor (G-CSF), a glycoprotein that stimulates the bone marrow to produce granulocytes and stem cells and release them into bloodstream (Cetean et al., 2015)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Cetean et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:36:07.846482Z"
+    },
+    {
+      "id": "172a4d67-bbea-43c5-be2c-b57874837008",
+      "content_id": "085936da-71d8-4994-8c80-0e177b0e7585",
+      "claim_id": "C126",
+      "claim": "G-CSF is widely used in chemotherapy to enhance the immunity of cancer patients.",
+      "claim_type": "EXPLICIT",
+      "source": "CSF3 codes granulocyte-colony stimulating factor (G-CSF), a glycoprotein that stimulates the bone marrow to produce granulocytes and stem cells and release them into bloodstream (Cetean et al., 2015), and is widely used in chemotherapy to enhance the immunity of cancer patients.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the clinical use of G-CSF.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:36:07.846482Z"
+    },
+    {
+      "id": "84597397-e3c9-445e-8282-5933584499e2",
+      "content_id": "085936da-71d8-4994-8c80-0e177b0e7585",
+      "claim_id": "C127",
+      "claim": "Expression of variant exogenous and endogenous genes could be highly activated by CRISPR-assisted trans enhancers in various mammalian cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The results revealed that expression of variant exogenous and endogenous genes could be highly activated by CRISPR-assisted trans enhancers in various mammalian cells",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion from all the experimental data presented.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:36:07.846482Z"
+    },
+    {
+      "id": "1bba2b78-47e8-42cd-b86f-266f1cbce16d",
+      "content_id": "085936da-71d8-4994-8c80-0e177b0e7585",
+      "claim_id": "C128",
+      "claim": "CRISPR-assisted trans enhancers activate genes more efficiently than current widely used dCas9-VP64 and dCas9-VPR.",
+      "claim_type": "EXPLICIT",
+      "source": "The results revealed that expression of variant exogenous and endogenous genes could be highly activated by CRISPR-assisted trans enhancers in various mammalian cells, more efficiently than with current widely used dCas9-VP64 and dCas9-VPR.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data comparing the trans enhancer system with dCas9-VP64 and dCas9-VPR.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:36:07.846482Z"
+    },
+    {
+      "id": "664885b6-2ac3-43f8-a7aa-94b65f6abf09",
+      "content_id": "085936da-71d8-4994-8c80-0e177b0e7585",
+      "claim_id": "C129",
+      "claim": "Natural enhancers activate gene expression by a loop structure.",
+      "claim_type": "EXPLICIT",
+      "source": "In this study, mimicking the natural enhancer activating gene expression by a loop structure (Carter et al., 2002; Tolhuis et al., 2002)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Carter et al., 2002 and Tolhuis et al., 2002.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:36:07.846482Z"
+    },
+    {
+      "id": "6ce006a5-4fb8-478e-9075-dcb5aac69668",
+      "content_id": "085936da-71d8-4994-8c80-0e177b0e7585",
+      "claim_id": "C130",
+      "claim": "The dCas9/sgRNA-recruited CMV enhancer functions like a natural looped cis enhancer in a trans form.",
+      "claim_type": "EXPLICIT",
+      "source": "The dCas9/sgRNA-recruited CMV enhancer thus functioned like a natural looped cis enhancer in a trans form.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data showing gene activation by the trans enhancer.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:36:07.846482Z"
+    },
+    {
+      "id": "1b177fde-5bc1-40d6-b6f0-9810b154ea5f",
+      "content_id": "085936da-71d8-4994-8c80-0e177b0e7585",
+      "claim_id": "C131",
+      "claim": "The trans enhancer could activate both exogenous reporter genes and variant endogenous genes in various cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The trans enhancer could activate both exogenous reporter genes and variant endogenous genes in various cells",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data across multiple genes and cell lines.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:36:07.846482Z"
+    },
+    {
+      "id": "89f5d4ab-9250-4202-b13f-874362008339",
+      "content_id": "085936da-71d8-4994-8c80-0e177b0e7585",
+      "claim_id": "C132",
+      "claim": "The trans enhancer has much higher activation efficiency than that of current dCas9 activators.",
+      "claim_type": "EXPLICIT",
+      "source": "The trans enhancer could activate both exogenous reporter genes and variant endogenous genes in various cells, with much higher activation efficiency than that of current dCas9 activators.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data comparing the trans enhancer with dCas9-VP64 and dCas9-VPR.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:36:07.846482Z"
+    },
+    {
+      "id": "c0867bd0-9963-4ab1-bdb1-b6405a1d61d0",
+      "content_id": "085936da-71d8-4994-8c80-0e177b0e7585",
+      "claim_id": "C133",
+      "claim": "The CMV enhancer can be recruited to a target gene in trans using a system consisting of dCas9-VP64-GAL4/sgRNA and UAS-CMV.",
+      "claim_type": "EXPLICIT",
+      "source": "More importantly, the CMV enhancer could be also recruited to a target gene in trans using another system consisting of dCas9-VP64-GAL4/sgRNA and UAS-CMV.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data showing gene activation using the GAL4-UAS system.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:36:07.846482Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "a9442a23-e1c2-4fd8-b4f0-5bb4a93abe5e",
+      "content_id": "085936da-71d8-4994-8c80-0e177b0e7585",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors designed a capture sgRNA (csgRNA) system where a capture sequence is added to the 3' end of sgRNA to anneal with a stick-end CMV (sCMV) enhancer. The capture sequence does not affect sgRNA function, as demonstrated by successful DNA cutting with Cas9-csgRNA complexes targeting the HNF4\u03b1 promoter.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38-C44 describe the design and validation of the csgRNA system. The experimental data in Figure 1b demonstrates that all three csgRNAs with different capture sequences successfully guide Cas9 to cut target DNA, confirming that the capture sequence does not interfere with sgRNA function. This provides solid evidence for the basic functionality of the system.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:36:07.846482Z"
+    },
+    {
+      "id": "f6381ed1-1e70-4e21-93e9-f665f0d4882c",
+      "content_id": "085936da-71d8-4994-8c80-0e177b0e7585",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The trans CMV enhancer (sCMV) recruited by dCas9/csgRNA activates the exogenous reporter gene ZsGreen. The activation is enhanced when combined with dCas9-VP64, showing synergistic interaction between trans CMV and VP64. The stick-end CMV (sCMV) is required for activation, as blunt-end CMV (bCMV) does not activate the reporter.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C54 are supported by transfection experiments in 293T cells showing that dCas9-VP64/csgRNA-sCMV produces the highest activation, while bCMV controls show no activation. The data demonstrate both the trans function of sCMV and its synergistic interaction with VP64. Multiple csgRNAs (csgRNA1, 2, and 3) all function successfully.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:36:07.846482Z"
+    },
+    {
+      "id": "533cf935-4126-45e5-9877-e839880bedf3",
+      "content_id": "085936da-71d8-4994-8c80-0e177b0e7585",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The CRISPR-assisted trans enhancer system (dCas9-VP64/csgRNA-sCMV) consistently shows the highest gene activation efficiency across seven different cell lines (293T, HepG2, A549, HeLa, SKOV3, PANC-1, HT29), outperforming dCas9-VP64/sgRNA and dCas9/csgRNA-sCMV.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55-C58 are supported by extensive experimental data across multiple cell lines shown in Figure 2b and supplementary figures. The consistent superior performance of dCas9-VP64/csgRNA-sCMV across diverse cell types provides strong evidence for the broad applicability and effectiveness of the trans enhancer system.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:36:07.846482Z"
+    },
+    {
+      "id": "8b0ae1b4-b4e8-465e-81d6-efe97e897845",
+      "content_id": "085936da-71d8-4994-8c80-0e177b0e7585",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Despite VPR being a more potent transcriptional activation domain than VP64, the trans enhancer system with VP64 (dCas9-VP64/csgRNA-sCMV) shows significantly higher activity than dCas9-VPR/csgRNA in both 293T and HepG2 cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59-C61 are supported by experimental data in Figure 2c comparing the systems. While C60 confirms the expected superiority of VPR over VP64 alone, C61 demonstrates that the trans enhancer system with VP64 outperforms VPR without the trans enhancer, highlighting the power of the trans enhancer approach.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:36:07.846482Z"
+    },
+    {
+      "id": "a57d4a4d-0510-42e8-8e5c-df053808fdc5",
+      "content_id": "085936da-71d8-4994-8c80-0e177b0e7585",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The CRISPR-assisted trans enhancer can activate diverse endogenous genes (10 different genes) across various cell lines (7 cell types). The dCas9-VP64/csgRNA-sCMV system shows the highest activation for almost all tested genes, outperforming both dCas9-VP64/sgRNA and dCas9-VPR systems.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C62-C65 are supported by comprehensive qPCR data from transfection experiments across seven cell lines testing ten different endogenous genes (Figure 3 and supplements). The breadth of genes and cell types tested provides strong evidence for the general applicability of the trans enhancer system. The comparison with dCas9-VPR in Figure 3\u2014figure supplement 2 further validates the superior performance.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:36:07.846482Z"
+    },
+    {
+      "id": "c317c408-020d-4967-a03f-ed0a3b8773b6",
+      "content_id": "085936da-71d8-4994-8c80-0e177b0e7585",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Activation of HNF4\u03b1 in HepG2 cells and E47 in PANC1 cells by the CRISPR-assisted trans enhancer leads to cancer cell differentiation, as evidenced by downregulation of stemness and pluripotency genes and upregulation of normal tissue-specific function genes and cell cycle arrest genes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C68-C76 are supported by qPCR data in Figures 3 and 4 showing coordinated changes in gene expression patterns consistent with differentiation. The downregulation of stemness/pluripotency markers (CD133, CD90, Oct3/4, Sox2, Nanog, c-Myc, LIN28, Klf4) and upregulation of tissue-specific genes (liver and pancreas function genes) and cell cycle arrest genes (p21, TP53INP1) provide strong evidence for functional differentiation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:36:07.846482Z"
+    },
+    {
+      "id": "d9c6ce3e-af1a-4ac3-819e-4f22e2b259c7",
+      "content_id": "085936da-71d8-4994-8c80-0e177b0e7585",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Alternative enhancers (EF1\u03b1 and PGK) can function as trans enhancers when prepared with stick-ends (sEF1a, sPGK), activating both exogenous reporter genes and endogenous genes in 293T and HepG2 cells. However, their activation levels are lower than sCMV, and blunt-ended versions show no activation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C77-C84 are supported by experimental data in Figure 5 showing that sEF1a and sPGK activate ZsGreen reporter and endogenous HNF4\u03b1 gene, while blunt-ended versions do not. The requirement for stick-ends confirms the mechanism of trans enhancer recruitment via annealing. The lower activity compared to sCMV is clearly demonstrated, supporting the conclusion that various enhancers can be used but with different efficiencies.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:36:07.846482Z"
+    },
+    {
+      "id": "ef53fadb-aa7c-4a33-a8fd-d6a8bc07040c",
+      "content_id": "085936da-71d8-4994-8c80-0e177b0e7585",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The GAL4-UAS system provides an alternative mechanism for trans enhancer recruitment. Both linear (LUAS-CMV) and circular (CUAS-CMV) UAS-CMV constructs activate exogenous reporter genes and endogenous HNF4\u03b1 gene in 293T and HepG2 cells, with significantly higher activity than the csgRNA-sCMV system.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C85-C94 are supported by experimental data in Figure 6 showing successful gene activation by the GAL4-UAS system. The data demonstrate that both LUAS-CMV and CUAS-CMV function effectively, with appropriate negative controls showing no activation. The superior performance compared to csgRNA-sCMV (Figure 6c) is clearly demonstrated, supporting the conclusion that the GAL4-UAS system offers an improved trans enhancer approach.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:36:07.846482Z"
+    },
+    {
+      "id": "416445ad-4800-4a66-80b8-63fa1175082d",
+      "content_id": "085936da-71d8-4994-8c80-0e177b0e7585",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The CRISPR-assisted trans enhancer strategy has advantages over current dCas9-based systems: it requires only one csgRNA per target gene (versus typically three or more sgRNAs in current systems), and each sgRNA in current systems must be independently transcribed by a long U6 promoter.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C95-C100 are supported by the experimental design showing single csgRNA usage throughout the study (C96) and established knowledge about current systems requiring multiple sgRNAs (C97-C100, supported by citations). The advantage is demonstrated practically by the successful activation of multiple genes using single csgRNAs, though the comparison would be strengthened by direct side-by-side experiments.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:36:07.846482Z"
+    },
+    {
+      "id": "5ef803a1-e29e-4e22-b6d0-a6f6b739e1fc",
+      "content_id": "085936da-71d8-4994-8c80-0e177b0e7585",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The csgRNA design is simpler than current chimeric sgRNAs, requiring only a 24 bp extension at the 3' end. Three different capture sequences were successfully designed and all functioned, with csgRNA2 showing the best performance. The capture sequences were designed to have no complementary sequences in human cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C101-C106 are supported by the experimental data showing all three csgRNAs function successfully (C104) and the design specifications (C101, C106). The comparison with complex chimeric sgRNAs in current systems (C102, supported by citations) highlights the simplicity advantage. The successful design of three different capture sequences demonstrates feasibility, though more extensive testing would strengthen claims about ease of design.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:36:07.846482Z"
+    },
+    {
+      "id": "75fc52ed-25ee-42dd-8b0a-ea8bfef38574",
+      "content_id": "085936da-71d8-4994-8c80-0e177b0e7585",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The study demonstrates that sCMV can be efficiently captured by csgRNA in the nucleus of human cells, representing the first report of a gene being activated by an artificial DNA in trans.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C107 is an inference from the gene activation data, but direct evidence of sCMV capture in the nucleus (e.g., imaging, ChIP) is not provided. Claim C108 about novelty is speculative and would require comprehensive literature review to verify. While the functional data support that the system works, the mechanistic claim about nuclear capture and the novelty claim lack direct supporting evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:36:07.846482Z"
+    },
+    {
+      "id": "5b5ecb32-18ca-4872-ad35-b0899d7539e0",
+      "content_id": "085936da-71d8-4994-8c80-0e177b0e7585",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The trans enhancer systems have potential for in vivo applications: the csgRNA-sCMV system via nanoparticle carriers, and the GAL4-UAS system via AAV vectors (which are already clinically approved). The GAL4-UAS system shows better performance, and linear UAS-CMV is suitable for AAV packaging.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C109-C113 are largely speculative about future applications. While C111 (AAV clinical approval) is established knowledge and C112 (GAL4-UAS better performance) is supported by data, the claims about ease of AAV transfer (C110, C113) and nanoparticle delivery (C109) are inferences without experimental validation. No in vivo data or packaging experiments are presented to support these translational claims.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:36:07.846482Z"
+    },
+    {
+      "id": "1b9d8fd7-ba42-40e4-869d-7057f720f34b",
+      "content_id": "085936da-71d8-4994-8c80-0e177b0e7585",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The CRISPR-assisted trans enhancer system can activate both exogenous and endogenous genes in various mammalian cells more efficiently than current dCas9-VP64 and dCas9-VPR systems. The system mimics natural enhancer function by creating a loop structure, with the CMV enhancer functioning like a natural cis enhancer in trans form.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C127-C133 represent the main conclusions of the study, supported by comprehensive experimental data across multiple genes, cell lines, and system variations. The superior performance compared to dCas9-VP64 and dCas9-VPR is consistently demonstrated. However, the mechanistic claim about loop structure (C129-C130) is based on analogy to natural enhancers (supported by citations) rather than direct structural evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:36:07.846482Z"
+    },
+    {
+      "id": "9a72ffab-3f98-4b14-b747-80c9c9311214",
+      "content_id": "085936da-71d8-4994-8c80-0e177b0e7585",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The introduction provides background on CRISPR systems, dCas9-based gene activators, their engineering approaches (protein fusions and sgRNA modifications), current limitations (inefficiency, packaging constraints), and the CMV enhancer as a strong mammalian promoter/enhancer.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C37 constitute the background/introduction section, primarily consisting of established knowledge supported by appropriate citations. These claims accurately represent prior work and provide context for the current study. The claims about limitations (C18, C23, C24) are supported by citations and provide motivation for the new approach.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:36:07.846482Z"
+    },
+    {
+      "id": "c6701208-6ea6-493a-a613-c2f301a33ea9",
+      "content_id": "085936da-71d8-4994-8c80-0e177b0e7585",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The discussion contextualizes the work within established applications of dCas9-based activators for cell reprogramming and differentiation, and describes the biological functions of the target genes selected for testing.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C66-C67 and C114-C126 provide context from prior work (supported by citations) and describe the rationale for gene selection. These claims accurately represent established knowledge and explain why specific genes were chosen for testing the trans enhancer system. The claims are appropriately supported by citations to relevant literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:36:07.846482Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "2d68eac6-09c5-4db7-8b7b-7bf831ee5ea1",
+      "result_id": "a9442a23-e1c2-4fd8-b4f0-5bb4a93abe5e"
+    },
+    {
+      "claim_id": "583e71e5-69ac-418e-8700-cc5eb92017f4",
+      "result_id": "a9442a23-e1c2-4fd8-b4f0-5bb4a93abe5e"
+    },
+    {
+      "claim_id": "b1b68471-5fbe-4c49-a991-4ebe43eac9e8",
+      "result_id": "a9442a23-e1c2-4fd8-b4f0-5bb4a93abe5e"
+    },
+    {
+      "claim_id": "48280256-8bed-483a-9b46-c191b2a9e488",
+      "result_id": "a9442a23-e1c2-4fd8-b4f0-5bb4a93abe5e"
+    },
+    {
+      "claim_id": "a5a1f623-16bb-4659-8633-89083f4648e1",
+      "result_id": "a9442a23-e1c2-4fd8-b4f0-5bb4a93abe5e"
+    },
+    {
+      "claim_id": "df440514-50ab-4ea5-95f4-80cfdf53b537",
+      "result_id": "a9442a23-e1c2-4fd8-b4f0-5bb4a93abe5e"
+    },
+    {
+      "claim_id": "31a07a37-02e3-4989-b5d8-9f6e12394b14",
+      "result_id": "a9442a23-e1c2-4fd8-b4f0-5bb4a93abe5e"
+    },
+    {
+      "claim_id": "e843a2b9-efaf-4ae0-939c-ced3f90205b4",
+      "result_id": "f6381ed1-1e70-4e21-93e9-f665f0d4882c"
+    },
+    {
+      "claim_id": "a376ef54-aaaf-40e7-b2f8-d95e8f4e4e23",
+      "result_id": "f6381ed1-1e70-4e21-93e9-f665f0d4882c"
+    },
+    {
+      "claim_id": "3f3482a4-0dee-47bb-84e5-937facecabde",
+      "result_id": "f6381ed1-1e70-4e21-93e9-f665f0d4882c"
+    },
+    {
+      "claim_id": "44d5afe4-f96d-4f60-9a18-9c72a636fd34",
+      "result_id": "f6381ed1-1e70-4e21-93e9-f665f0d4882c"
+    },
+    {
+      "claim_id": "8f13bdfa-cc78-4312-9de6-830427644bf3",
+      "result_id": "f6381ed1-1e70-4e21-93e9-f665f0d4882c"
+    },
+    {
+      "claim_id": "1846eab1-9a29-4a37-b66e-288156929b3d",
+      "result_id": "f6381ed1-1e70-4e21-93e9-f665f0d4882c"
+    },
+    {
+      "claim_id": "b635062c-5607-47f5-b052-43e7e96aeceb",
+      "result_id": "f6381ed1-1e70-4e21-93e9-f665f0d4882c"
+    },
+    {
+      "claim_id": "326c137e-4c52-4fdb-9d5e-5d51ec8bb444",
+      "result_id": "f6381ed1-1e70-4e21-93e9-f665f0d4882c"
+    },
+    {
+      "claim_id": "7f2c3c92-436b-4405-8eab-9ac6d26fd370",
+      "result_id": "f6381ed1-1e70-4e21-93e9-f665f0d4882c"
+    },
+    {
+      "claim_id": "62a3f85e-d401-49fd-bca9-249704602cdd",
+      "result_id": "f6381ed1-1e70-4e21-93e9-f665f0d4882c"
+    },
+    {
+      "claim_id": "60f279f1-d527-413b-9719-731068a5721e",
+      "result_id": "533cf935-4126-45e5-9877-e839880bedf3"
+    },
+    {
+      "claim_id": "11d24881-4b26-449e-9beb-cc8469ccacf8",
+      "result_id": "533cf935-4126-45e5-9877-e839880bedf3"
+    },
+    {
+      "claim_id": "a200dade-4654-4ff4-8820-ba7bc19c45b2",
+      "result_id": "533cf935-4126-45e5-9877-e839880bedf3"
+    },
+    {
+      "claim_id": "25017eec-e23e-43ec-95b3-b8b16f09a26d",
+      "result_id": "533cf935-4126-45e5-9877-e839880bedf3"
+    },
+    {
+      "claim_id": "2110b284-50b0-457d-ac3b-ff10fe46a64d",
+      "result_id": "8b0ae1b4-b4e8-465e-81d6-efe97e897845"
+    },
+    {
+      "claim_id": "72c4afb2-6d5f-4f9c-bf58-1a0510353357",
+      "result_id": "8b0ae1b4-b4e8-465e-81d6-efe97e897845"
+    },
+    {
+      "claim_id": "f83f9b3e-3dac-4ca0-adb2-eea014226e2b",
+      "result_id": "8b0ae1b4-b4e8-465e-81d6-efe97e897845"
+    },
+    {
+      "claim_id": "50c2157c-222a-483e-b66e-8c37ac600cfb",
+      "result_id": "a57d4a4d-0510-42e8-8e5c-df053808fdc5"
+    },
+    {
+      "claim_id": "13e985f3-3d35-43ef-ace0-bab51fea4f05",
+      "result_id": "a57d4a4d-0510-42e8-8e5c-df053808fdc5"
+    },
+    {
+      "claim_id": "259bd14a-a183-4246-92cf-cabd98acba8a",
+      "result_id": "a57d4a4d-0510-42e8-8e5c-df053808fdc5"
+    },
+    {
+      "claim_id": "299b5695-5313-4017-ac61-322733a47f16",
+      "result_id": "a57d4a4d-0510-42e8-8e5c-df053808fdc5"
+    },
+    {
+      "claim_id": "325dbf44-97e0-4807-a345-6c0bb53a8de1",
+      "result_id": "c317c408-020d-4967-a03f-ed0a3b8773b6"
+    },
+    {
+      "claim_id": "dca9fb07-c5ea-40bf-9d6d-0640a9027036",
+      "result_id": "c317c408-020d-4967-a03f-ed0a3b8773b6"
+    },
+    {
+      "claim_id": "6d24efed-07c0-4f70-802f-a902c9e4d32e",
+      "result_id": "c317c408-020d-4967-a03f-ed0a3b8773b6"
+    },
+    {
+      "claim_id": "207fba7d-77ce-43e5-952b-28145cac7548",
+      "result_id": "c317c408-020d-4967-a03f-ed0a3b8773b6"
+    },
+    {
+      "claim_id": "23d4e357-fc1f-4e99-a105-f85201340ea6",
+      "result_id": "c317c408-020d-4967-a03f-ed0a3b8773b6"
+    },
+    {
+      "claim_id": "34273da2-c50f-495e-9a67-978de2fe3dfc",
+      "result_id": "c317c408-020d-4967-a03f-ed0a3b8773b6"
+    },
+    {
+      "claim_id": "04a11a5e-9878-422c-b221-106e433ae4f3",
+      "result_id": "c317c408-020d-4967-a03f-ed0a3b8773b6"
+    },
+    {
+      "claim_id": "9e235ca7-eea1-4d81-ad23-73a05f440146",
+      "result_id": "c317c408-020d-4967-a03f-ed0a3b8773b6"
+    },
+    {
+      "claim_id": "ccea5d3e-0292-4746-a1a5-8d998dbc5de2",
+      "result_id": "c317c408-020d-4967-a03f-ed0a3b8773b6"
+    },
+    {
+      "claim_id": "2ba42830-fa37-4ed2-8328-c24b2e22fff1",
+      "result_id": "d9c6ce3e-af1a-4ac3-819e-4f22e2b259c7"
+    },
+    {
+      "claim_id": "139d48a9-9682-4a9e-9b19-26d1f9eb6d54",
+      "result_id": "d9c6ce3e-af1a-4ac3-819e-4f22e2b259c7"
+    },
+    {
+      "claim_id": "beb8d1cc-8a96-45d3-acac-06ca3c95aece",
+      "result_id": "d9c6ce3e-af1a-4ac3-819e-4f22e2b259c7"
+    },
+    {
+      "claim_id": "82f193aa-e3c2-4822-8a3e-b0f1355c95ec",
+      "result_id": "d9c6ce3e-af1a-4ac3-819e-4f22e2b259c7"
+    },
+    {
+      "claim_id": "28813cb4-a530-4350-acdd-980301373903",
+      "result_id": "d9c6ce3e-af1a-4ac3-819e-4f22e2b259c7"
+    },
+    {
+      "claim_id": "d72735a1-a28f-4609-b32c-3ba4155e1352",
+      "result_id": "d9c6ce3e-af1a-4ac3-819e-4f22e2b259c7"
+    },
+    {
+      "claim_id": "9d43853d-dd0f-4828-8187-3396962d021e",
+      "result_id": "d9c6ce3e-af1a-4ac3-819e-4f22e2b259c7"
+    },
+    {
+      "claim_id": "9edd6c06-a0e2-4092-bc35-46f41b669d4f",
+      "result_id": "d9c6ce3e-af1a-4ac3-819e-4f22e2b259c7"
+    },
+    {
+      "claim_id": "fb1901b7-4286-4e36-becc-45e0ed3cdd2e",
+      "result_id": "ef53fadb-aa7c-4a33-a8fd-d6a8bc07040c"
+    },
+    {
+      "claim_id": "ceb97576-9182-49d9-94dc-b6690c29b4ea",
+      "result_id": "ef53fadb-aa7c-4a33-a8fd-d6a8bc07040c"
+    },
+    {
+      "claim_id": "fc942f65-d477-46d7-aa9b-8c4fc5b4b381",
+      "result_id": "ef53fadb-aa7c-4a33-a8fd-d6a8bc07040c"
+    },
+    {
+      "claim_id": "f633275b-6862-4efd-82bb-febd22060826",
+      "result_id": "ef53fadb-aa7c-4a33-a8fd-d6a8bc07040c"
+    },
+    {
+      "claim_id": "e70a084f-af77-4fa5-85b2-5f6222cd190b",
+      "result_id": "ef53fadb-aa7c-4a33-a8fd-d6a8bc07040c"
+    },
+    {
+      "claim_id": "24fb4a21-5a68-437d-a4a6-01bcc3689007",
+      "result_id": "ef53fadb-aa7c-4a33-a8fd-d6a8bc07040c"
+    },
+    {
+      "claim_id": "e811d61a-ad53-4ac9-a29f-ed79b817cd8c",
+      "result_id": "ef53fadb-aa7c-4a33-a8fd-d6a8bc07040c"
+    },
+    {
+      "claim_id": "97eb464c-cd31-46c1-8eaa-28649212f535",
+      "result_id": "ef53fadb-aa7c-4a33-a8fd-d6a8bc07040c"
+    },
+    {
+      "claim_id": "d215e076-0fb3-440e-a42c-6820239067b8",
+      "result_id": "ef53fadb-aa7c-4a33-a8fd-d6a8bc07040c"
+    },
+    {
+      "claim_id": "6c632a2d-dd11-4797-a622-4a7aeafe222d",
+      "result_id": "ef53fadb-aa7c-4a33-a8fd-d6a8bc07040c"
+    },
+    {
+      "claim_id": "3e0f225c-2c81-488a-8eb6-82fa4c0d843e",
+      "result_id": "416445ad-4800-4a66-80b8-63fa1175082d"
+    },
+    {
+      "claim_id": "5e84c7d2-0ee2-4f48-9f9b-bf88ca520d6d",
+      "result_id": "416445ad-4800-4a66-80b8-63fa1175082d"
+    },
+    {
+      "claim_id": "fa67f598-03a5-4ce3-8187-664bf4346d8e",
+      "result_id": "416445ad-4800-4a66-80b8-63fa1175082d"
+    },
+    {
+      "claim_id": "c7b5e054-f859-4558-a988-216dc1cd396f",
+      "result_id": "416445ad-4800-4a66-80b8-63fa1175082d"
+    },
+    {
+      "claim_id": "eae300b0-5192-406c-83b7-d1d8774776fc",
+      "result_id": "416445ad-4800-4a66-80b8-63fa1175082d"
+    },
+    {
+      "claim_id": "5790e914-401d-461d-bf5b-713baab38eb1",
+      "result_id": "416445ad-4800-4a66-80b8-63fa1175082d"
+    },
+    {
+      "claim_id": "b1c96231-852a-4ac9-9b49-ee5176aa875e",
+      "result_id": "5ef803a1-e29e-4e22-b6d0-a6f6b739e1fc"
+    },
+    {
+      "claim_id": "d49783f8-e91c-4cfb-a310-6148cc253e08",
+      "result_id": "5ef803a1-e29e-4e22-b6d0-a6f6b739e1fc"
+    },
+    {
+      "claim_id": "86b1ab4c-efac-4e33-a5e6-824c34c187bf",
+      "result_id": "5ef803a1-e29e-4e22-b6d0-a6f6b739e1fc"
+    },
+    {
+      "claim_id": "82138424-1b11-40b4-aed1-95558751b27f",
+      "result_id": "5ef803a1-e29e-4e22-b6d0-a6f6b739e1fc"
+    },
+    {
+      "claim_id": "6ab11ef5-6e27-4bdc-ac4e-b51efe7bacf8",
+      "result_id": "5ef803a1-e29e-4e22-b6d0-a6f6b739e1fc"
+    },
+    {
+      "claim_id": "057fec6d-199d-40bf-8350-7016e91c8f22",
+      "result_id": "5ef803a1-e29e-4e22-b6d0-a6f6b739e1fc"
+    },
+    {
+      "claim_id": "89205160-6f2f-4b9f-84e2-d7b18d8c61d4",
+      "result_id": "75fc52ed-25ee-42dd-8b0a-ea8bfef38574"
+    },
+    {
+      "claim_id": "9d1cbaea-aeda-461f-be9b-48e8468655d2",
+      "result_id": "75fc52ed-25ee-42dd-8b0a-ea8bfef38574"
+    },
+    {
+      "claim_id": "5eba8b10-c9fe-484b-ace1-60aa3687e7f1",
+      "result_id": "5b5ecb32-18ca-4872-ad35-b0899d7539e0"
+    },
+    {
+      "claim_id": "6523425f-65ad-4bea-95a3-2e7208f4fee6",
+      "result_id": "5b5ecb32-18ca-4872-ad35-b0899d7539e0"
+    },
+    {
+      "claim_id": "c060313e-a1e5-4748-8ed1-f1ed3266af57",
+      "result_id": "5b5ecb32-18ca-4872-ad35-b0899d7539e0"
+    },
+    {
+      "claim_id": "26d5042a-722f-4f4a-879c-8eca52fa7cef",
+      "result_id": "5b5ecb32-18ca-4872-ad35-b0899d7539e0"
+    },
+    {
+      "claim_id": "ff07534c-759d-424c-b884-7c8cdf2a6489",
+      "result_id": "5b5ecb32-18ca-4872-ad35-b0899d7539e0"
+    },
+    {
+      "claim_id": "84597397-e3c9-445e-8282-5933584499e2",
+      "result_id": "1b9d8fd7-ba42-40e4-869d-7057f720f34b"
+    },
+    {
+      "claim_id": "1bba2b78-47e8-42cd-b86f-266f1cbce16d",
+      "result_id": "1b9d8fd7-ba42-40e4-869d-7057f720f34b"
+    },
+    {
+      "claim_id": "664885b6-2ac3-43f8-a7aa-94b65f6abf09",
+      "result_id": "1b9d8fd7-ba42-40e4-869d-7057f720f34b"
+    },
+    {
+      "claim_id": "6ce006a5-4fb8-478e-9075-dcb5aac69668",
+      "result_id": "1b9d8fd7-ba42-40e4-869d-7057f720f34b"
+    },
+    {
+      "claim_id": "1b177fde-5bc1-40d6-b6f0-9810b154ea5f",
+      "result_id": "1b9d8fd7-ba42-40e4-869d-7057f720f34b"
+    },
+    {
+      "claim_id": "89f5d4ab-9250-4202-b13f-874362008339",
+      "result_id": "1b9d8fd7-ba42-40e4-869d-7057f720f34b"
+    },
+    {
+      "claim_id": "c0867bd0-9963-4ab1-bdb1-b6405a1d61d0",
+      "result_id": "1b9d8fd7-ba42-40e4-869d-7057f720f34b"
+    },
+    {
+      "claim_id": "4f39dca6-21b3-4517-902f-cda0acd32387",
+      "result_id": "9a72ffab-3f98-4b14-b747-80c9c9311214"
+    },
+    {
+      "claim_id": "ab3b193c-7362-4122-be02-07e7eeae9dff",
+      "result_id": "9a72ffab-3f98-4b14-b747-80c9c9311214"
+    },
+    {
+      "claim_id": "1ebbf1cb-ed1e-4087-9bb7-96ef51fd86c2",
+      "result_id": "9a72ffab-3f98-4b14-b747-80c9c9311214"
+    },
+    {
+      "claim_id": "31292215-53a2-4ab7-b9f6-6fd0fadb8080",
+      "result_id": "9a72ffab-3f98-4b14-b747-80c9c9311214"
+    },
+    {
+      "claim_id": "96ff360a-4a2c-4e20-99c7-4c0c0322118e",
+      "result_id": "9a72ffab-3f98-4b14-b747-80c9c9311214"
+    },
+    {
+      "claim_id": "6360f357-aca0-4228-8471-33f15147cb3a",
+      "result_id": "9a72ffab-3f98-4b14-b747-80c9c9311214"
+    },
+    {
+      "claim_id": "a204873d-7bc8-44b6-a089-35da9cd963e7",
+      "result_id": "9a72ffab-3f98-4b14-b747-80c9c9311214"
+    },
+    {
+      "claim_id": "4b4524b2-b6ef-46a4-a029-df87fbb19054",
+      "result_id": "9a72ffab-3f98-4b14-b747-80c9c9311214"
+    },
+    {
+      "claim_id": "488735ba-cf22-49e9-8047-5b6d16cd68b3",
+      "result_id": "9a72ffab-3f98-4b14-b747-80c9c9311214"
+    },
+    {
+      "claim_id": "423ce463-938e-46eb-89d6-406fb0252796",
+      "result_id": "9a72ffab-3f98-4b14-b747-80c9c9311214"
+    },
+    {
+      "claim_id": "9832d3c7-3a6c-4787-a775-504854b3e01d",
+      "result_id": "9a72ffab-3f98-4b14-b747-80c9c9311214"
+    },
+    {
+      "claim_id": "f768f036-11c8-4343-899a-e9502ac70575",
+      "result_id": "9a72ffab-3f98-4b14-b747-80c9c9311214"
+    },
+    {
+      "claim_id": "b1a0ca83-336a-4851-80dd-d168a7d756ba",
+      "result_id": "9a72ffab-3f98-4b14-b747-80c9c9311214"
+    },
+    {
+      "claim_id": "c439c967-bec1-4fce-947f-54615e4a1801",
+      "result_id": "9a72ffab-3f98-4b14-b747-80c9c9311214"
+    },
+    {
+      "claim_id": "60d447f6-b76a-4ca9-a074-d992125d80d5",
+      "result_id": "9a72ffab-3f98-4b14-b747-80c9c9311214"
+    },
+    {
+      "claim_id": "8b252b96-cc11-4f8a-a41a-3c1d2fc34dd6",
+      "result_id": "9a72ffab-3f98-4b14-b747-80c9c9311214"
+    },
+    {
+      "claim_id": "a67e0283-c73f-420b-b984-4ac8b36fd183",
+      "result_id": "9a72ffab-3f98-4b14-b747-80c9c9311214"
+    },
+    {
+      "claim_id": "18e05391-f21e-4457-9a74-21d4992e1d7f",
+      "result_id": "9a72ffab-3f98-4b14-b747-80c9c9311214"
+    },
+    {
+      "claim_id": "4ad84cf3-43fc-46b4-ab25-8e7a12143b75",
+      "result_id": "9a72ffab-3f98-4b14-b747-80c9c9311214"
+    },
+    {
+      "claim_id": "45fab37b-e1bc-4100-913c-840cb7f47e49",
+      "result_id": "9a72ffab-3f98-4b14-b747-80c9c9311214"
+    },
+    {
+      "claim_id": "a5d1ef5a-9a49-42c3-8810-6ba7ea7fd1eb",
+      "result_id": "9a72ffab-3f98-4b14-b747-80c9c9311214"
+    },
+    {
+      "claim_id": "670273df-ad5c-4bba-b04a-80202151ee4b",
+      "result_id": "9a72ffab-3f98-4b14-b747-80c9c9311214"
+    },
+    {
+      "claim_id": "167af453-d521-4537-b8bd-5f6c31b3c862",
+      "result_id": "9a72ffab-3f98-4b14-b747-80c9c9311214"
+    },
+    {
+      "claim_id": "4a2b7edf-c038-4813-941d-683b957e2331",
+      "result_id": "9a72ffab-3f98-4b14-b747-80c9c9311214"
+    },
+    {
+      "claim_id": "cd4a8915-c8bf-45aa-a651-55563ebee570",
+      "result_id": "9a72ffab-3f98-4b14-b747-80c9c9311214"
+    },
+    {
+      "claim_id": "dc0bfcf8-20d7-4874-8630-f7f044ac3045",
+      "result_id": "9a72ffab-3f98-4b14-b747-80c9c9311214"
+    },
+    {
+      "claim_id": "25947b63-e72a-4b68-b2bf-71604db0a8cc",
+      "result_id": "9a72ffab-3f98-4b14-b747-80c9c9311214"
+    },
+    {
+      "claim_id": "31925a42-8553-4c9f-97e9-b05db2f7477b",
+      "result_id": "9a72ffab-3f98-4b14-b747-80c9c9311214"
+    },
+    {
+      "claim_id": "f66ee60c-fee1-45f3-ba1f-f49bc8bb8390",
+      "result_id": "9a72ffab-3f98-4b14-b747-80c9c9311214"
+    },
+    {
+      "claim_id": "137168d2-fc48-4286-9d02-093917a6edc1",
+      "result_id": "9a72ffab-3f98-4b14-b747-80c9c9311214"
+    },
+    {
+      "claim_id": "1d186cda-127f-4ce8-be3a-9ba0dc603736",
+      "result_id": "9a72ffab-3f98-4b14-b747-80c9c9311214"
+    },
+    {
+      "claim_id": "cb3abed7-89c5-47ea-826d-ce4134eb8157",
+      "result_id": "9a72ffab-3f98-4b14-b747-80c9c9311214"
+    },
+    {
+      "claim_id": "cd184030-cfa4-484f-a377-a6a04aac4951",
+      "result_id": "9a72ffab-3f98-4b14-b747-80c9c9311214"
+    },
+    {
+      "claim_id": "b732347c-2eea-47ce-a7fd-1e8d1c3ae53b",
+      "result_id": "9a72ffab-3f98-4b14-b747-80c9c9311214"
+    },
+    {
+      "claim_id": "2dbe6eb8-8997-45f1-9eee-15583f43836f",
+      "result_id": "9a72ffab-3f98-4b14-b747-80c9c9311214"
+    },
+    {
+      "claim_id": "528b665a-24cc-4839-b275-db9dd0d712f9",
+      "result_id": "9a72ffab-3f98-4b14-b747-80c9c9311214"
+    },
+    {
+      "claim_id": "905141f5-a6a0-4d5e-a113-a19c374e50c0",
+      "result_id": "9a72ffab-3f98-4b14-b747-80c9c9311214"
+    },
+    {
+      "claim_id": "a01caed3-a063-4630-b215-e7fe7161ee0d",
+      "result_id": "c6701208-6ea6-493a-a613-c2f301a33ea9"
+    },
+    {
+      "claim_id": "747fed98-7374-4f30-adfa-85b664e82c1b",
+      "result_id": "c6701208-6ea6-493a-a613-c2f301a33ea9"
+    },
+    {
+      "claim_id": "74bddc88-80c2-4dd3-9bcd-af1ca0c4c801",
+      "result_id": "c6701208-6ea6-493a-a613-c2f301a33ea9"
+    },
+    {
+      "claim_id": "dda3f6ec-aa14-4446-8540-22f9dc048279",
+      "result_id": "c6701208-6ea6-493a-a613-c2f301a33ea9"
+    },
+    {
+      "claim_id": "9b50868c-8d5f-469a-94e6-3ed366c6d5d6",
+      "result_id": "c6701208-6ea6-493a-a613-c2f301a33ea9"
+    },
+    {
+      "claim_id": "9520b8cc-53e3-488d-8bb0-993e1cd1f53f",
+      "result_id": "c6701208-6ea6-493a-a613-c2f301a33ea9"
+    },
+    {
+      "claim_id": "73ca8264-1cac-4822-907b-40a242164090",
+      "result_id": "c6701208-6ea6-493a-a613-c2f301a33ea9"
+    },
+    {
+      "claim_id": "850f9725-a0f7-4959-b0fb-f5b3641362e0",
+      "result_id": "c6701208-6ea6-493a-a613-c2f301a33ea9"
+    },
+    {
+      "claim_id": "752d361f-d58c-44e0-882c-19acd7a0eba3",
+      "result_id": "c6701208-6ea6-493a-a613-c2f301a33ea9"
+    },
+    {
+      "claim_id": "9f187865-4230-4927-8a40-63f0af4a29ec",
+      "result_id": "c6701208-6ea6-493a-a613-c2f301a33ea9"
+    },
+    {
+      "claim_id": "2b5542b4-e9f9-43c2-878a-29a45b650af5",
+      "result_id": "c6701208-6ea6-493a-a613-c2f301a33ea9"
+    },
+    {
+      "claim_id": "de0b163d-f8dc-4638-87df-d559acca8029",
+      "result_id": "c6701208-6ea6-493a-a613-c2f301a33ea9"
+    },
+    {
+      "claim_id": "9ba7723c-c5cd-40dd-97cd-e795dd91eae8",
+      "result_id": "c6701208-6ea6-493a-a613-c2f301a33ea9"
+    },
+    {
+      "claim_id": "e5c26336-361f-467e-9b72-3436fb190146",
+      "result_id": "c6701208-6ea6-493a-a613-c2f301a33ea9"
+    },
+    {
+      "claim_id": "172a4d67-bbea-43c5-be2c-b57874837008",
+      "result_id": "c6701208-6ea6-493a-a613-c2f301a33ea9"
+    }
+  ],
+  "comparisons": []
+}

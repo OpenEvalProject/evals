@@ -1,0 +1,250 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C16",
+      "C17"
+    ],
+    "result": "DOM-A and DOM-B isoforms, which differ only in their C-termini due to alternative splicing, specify two distinct multi-subunit complexes with different protein interactors. Mass spectrometry identified 13 DOM-A-specific and 12 DOM-B-specific interactors, with 7 shared subunits. DOM-A specifically associates with TIP60, ING3, E(Pc), and NIPPED-A (NuA4-like subunits), while DOM-B specifically associates with ARP6 and PPS. The two isoforms do not interact with each other.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C6-C17 are well-supported by rigorous mass spectrometry using endogenously tagged proteins under stringent conditions (C10), validated by orthogonal co-immunoprecipitation (C16, C17). The use of CRISPR-tagged endogenous proteins avoids overexpression artifacts. Statistical thresholds (FDR < 0.05) are appropriate. The distinct C-termini (C6-C9) provide a structural basis for differential complex assembly.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "DOM-A and DOM-B complexes regulate transcription through different mechanisms. Isoform-specific RNAi causes distinct transcriptional responses (correlation r=0.45), with DOM-A effects resembling TIP60 depletion (r=0.83) and DOM-B effects correlating better with H2A.V depletion (r=0.51 vs r=0.25 for DOM-A). TIP60 protein stability depends on DOM-A but not DOM-B, suggesting most TIP60 resides in the DOM-A complex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C18-C28 are supported by comprehensive RNAseq with appropriate spike-in normalization (C27) and multiple biological replicates. PCA clearly separates DOM-A and DOM-B effects (C24). The correlation analyses are quantitative and appropriate (C25, C26, C28). The TIP60 stability data (C19-C22) provides mechanistic insight linking DOM-A to acetyltransferase function. However, the moderate correlation (r=0.45) suggests additional complexity not fully explained.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C56"
+    ],
+    "result": "DOM-B complex is responsible for genome-wide H2A.V incorporation in an ATP-dependent manner. DOM-B (but not DOM-A) depletion causes dramatic reduction in H2A.V protein and chromatin levels genome-wide, including at promoters and termination sites. Complementation with wild-type but not ATPase-dead (K945G) DOM-B rescues H2A.V levels. ARP6, a DOM-B-specific subunit, is also required for H2A.V maintenance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C29-C38, C56 are strongly supported by multiple orthogonal approaches: western blots (C29), ChIP-seq with spike-in normalization (C33-C34), and functional complementation assays (C35-C37). The ATP-dependence is rigorously demonstrated by the K945G mutant failing to rescue (C36-C37). The ARP6 requirement (C31, C56) strengthens the SWR1-like function. Statistical analysis of complementation is appropriate (Figure 3G). Minor concern: residual H2A.V after DOM-B depletion suggests incomplete knockdown or alternative pathways.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C4",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C51",
+      "C52",
+      "C53",
+      "C72",
+      "C73"
+    ],
+    "result": "DOM-A complex functions as an ATP-independent histone acetyltransferase targeting H4K12ac, similar to yeast NuA4. DOM-A (but not DOM-B) depletion reduces H4K12ac by ~29% and H4K5ac by ~23%, with TIP60 depletion showing similar effects (36% and 16% reduction respectively). Complementation with both wild-type and ATPase-dead (K945G) DOM-A rescues H4K12ac, demonstrating ATP-independence. DOM-A shares structural features with yeast NuA4 subunit EAF1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C39-C48, C51-C53, C72-C73 are well-supported by targeted mass spectrometry (C41-C43) and complementation assays (C51-C53). The ATP-independence is a key finding rigorously demonstrated by K945G mutant rescue (C52-C53). ChIP-seq data (C46) shows variability acknowledged by authors, but mass spec provides robust quantification. The structural comparison to EAF1 (C39-C40) provides evolutionary context. Minor concern: global H4K12ac reduction (C48) complicates interpretation of gene-specific effects (C47).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C5",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "Drosophila achieves functional diversification of SWR1 and NuA4 complexes through alternative splicing of a single gene (dom), while yeast maintains separate complexes and humans use gene duplication with paralogs SRCAP and EP400. This alternative splicing strategy appears conserved across Arthropoda, including honeybee, jewel wasp, ant, beetle, and spider.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C87-C90 are supported by sequence analysis across species (C89) and established knowledge of yeast and human systems (C87-C88). The evolutionary comparison is conceptually sound and well-illustrated (Figure 4F). However, C90 is somewhat speculative as functional validation in other arthropods is lacking. The conservation of alternative splicing (C89) is based on sequence analysis but functional equivalence is inferred rather than demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C63",
+      "C78",
+      "C79"
+    ],
+    "result": "DOM-B depletion causes unexpected increase in H4K12ac at promoters, with H2A.V depletion showing similar effects. This may reflect compensatory DOM-A activity when H2A.V-containing nucleosomes are depleted, suggesting H2A-containing nucleosomes are better substrates for DOM-A complex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C49-C50 are supported by ChIP-seq data showing H4K12ac increase upon DOM-B/H2A.V depletion. However, C63, C78-C79 are explicitly speculative explanations without direct experimental validation. The substrate preference hypothesis (C78) is plausible but untested. Alternative explanations (indirect effects, chromatin accessibility changes) are not excluded. This interesting observation requires follow-up experiments to establish mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "DOM-B depletion affects transcription with only partial overlap with H2A.V depletion effects (r=0.51). This may be explained by incomplete H2A.V reduction upon DOM-B knockdown, DOM-B-independent transcriptional effects, or compensatory H4K12ac increases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C59 is supported by correlation analysis. However, C60-C62 are speculative explanations without direct experimental validation. The incomplete correlation is an important observation but the mechanistic basis remains unclear. Multiple plausible explanations are offered but not tested. This represents a limitation of the RNAi approach and requires genetic or biochemical follow-up.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "DOM-A complex does not affect H2A.V incorporation under physiological conditions despite containing an identical ATPase domain to DOM-B. DOM-A lacks the ARP6 subunit required for INO80-type remodeling. The ATPase may function under untested conditions or be inhibited by DOM-A-specific subunits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C65 are well-supported by ChIP-seq and western blot data showing no H2A.V changes upon DOM-A depletion, and mass spec showing ARP6 absence. However, C66-C68 are speculative about potential ATPase function. The negative result (no H2A.V incorporation) is convincing but doesn't exclude all ATPase functions. The speculation about allosteric inhibition (C68) is reasonable but untested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C15",
+      "C57",
+      "C58",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "The functional and mechanistic parallels between Drosophila DOM-B and yeast SWR1/human SRCAP complexes are supported by conservation of key subunits (ARP6) and ATP-dependent mechanisms. Similar regulatory principles (autoinhibition) may apply across species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15, C57-C58, C69-C71 are well-supported by citations to established literature. The mechanistic inference about DOM-B employing similar remodeling mechanisms (C58) is reasonable given ARP6 conservation and ATP-dependence. The comparison to human EP400 (C69-C70) provides important context about in vitro vs in vivo activities. These claims appropriately contextualize the findings within existing knowledge.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "Previous DOM complex characterization likely captured mixed DOM-A/DOM-B complexes. The evolutionary association of HAT and SWR1 modules into a stable complex (dNuA4) is supported by TIP60 instability without DOM-A and parallels with human EP400 and C. albicans reversible association.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C55 appropriately critique prior work and are supported by citations. C80-C81 make reasonable evolutionary inferences based on complex composition and TIP60 stability data. C82-C83 provide comparative context from other species. These claims appropriately integrate current findings with literature. The evolutionary model (C81) is inferential but well-reasoned.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "H4K12ac function in transcriptional regulation is suggested by correlated DOM-A/TIP60 knockdown effects, though the mechanism remains unclear. Additional acetyltransferases like CHAMEAU may also target H4K12. H4K12ac is the most abundant H4 acetylation and has been implicated in aging.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C74 is supported by citations about CHAMEAU. C75 and C77 cite prior work appropriately. However, C76 is explicitly speculative about H4K12ac function in transcription. The correlation between DOM-A/TIP60 effects and transcription is observed but causality is not established. The global nature of H4K12ac changes (C48) complicates gene-specific interpretations. This represents an important area for future investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "CG12054, a DOM-A-specific interactor and transcription factor, has a human ortholog JAZF1 involved in transcriptional repression and endometrial tumors, but its function in flies is unknown.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C86 appropriately report a novel interactor with citations to prior work. The acknowledgment that fly function is unknown (C86) is appropriate. This represents a descriptive finding requiring follow-up but is adequately supported by mass spectrometry data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "Background claims establishing prior knowledge about H2A.Z/H2A.V biology, SWR1 and NuA4 complexes in yeast and humans, DOM complex characterization, alternative splicing, and developmental roles of DOM isoforms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C105 appropriately cite established literature to provide context. These are background claims that set up the study rationale. All citations appear appropriate and accurately represent prior work. C101 appropriately characterizes the prior model as inferential ('appeared to be').",
+    "result_type": "MINOR"
+  }
+]

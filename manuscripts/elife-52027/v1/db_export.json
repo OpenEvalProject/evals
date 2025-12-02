@@ -1,0 +1,1393 @@
+{
+  "submission": {
+    "id": "b30703cc-b4c8-4e65-b9c6-848217558ae4",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T16:38:30.136240Z",
+    "updated_at": "2025-12-02T16:38:30.136240Z"
+  },
+  "content": [
+    {
+      "id": "06f9fb17-9622-4c23-9eed-3b0d0c4af993",
+      "submission_id": "b30703cc-b4c8-4e65-b9c6-848217558ae4",
+      "content_type": "manuscript",
+      "content_text": "# Optogenetic control of excitatory post-synaptic differentiation through neuroligin-1 tyrosine phosphorylation\n\n## Authors\n\n- Mathieu Letellier<sup>1</sup> ([ORCID: 0000-0003-4008-298X](https://orcid.org/0000-0003-4008-298X))\n- Matthieu Lagard\u00e8re<sup>1</sup>\n- B\u00e9atrice Tessier<sup>1</sup>\n- Harald Janovjak<sup>3</sup>\n- Olivier Thoumine<sup>1</sup> ([ORCID: 0000-0002-8041-1349](https://orcid.org/0000-0002-8041-1349)) \u2020\n\n### Affiliations\n\n1. University of Bordeaux, Interdisciplinary Institute for Neuroscience, UMR 5297 Bordeaux France\n2. CNRS, Interdisciplinary Institute for Neuroscience, UMR 5297 Bordeaux France\n3. Australian Regenerative Medicine Institute (ARMI), Faculty of Medicine, Nursing and Health Sciences, Monash University Clayton Australia\n4. European Molecular Biology Laboratory Australia (EMBL Australia), Monash University Clayton Australia\n\n\u2020 Corresponding author\n\n## Abstract\n\nNeuroligins (Nlgns) are adhesion proteins mediating trans-synaptic contacts in neurons. However, conflicting results around their role in synaptic differentiation arise from the various techniques used to manipulate Nlgn expression level. Orthogonally to these approaches, we triggered here the phosphorylation of endogenous Nlgn1 in CA1 mouse hippocampal neurons using a photoactivatable tyrosine kinase receptor (optoFGFR1). Light stimulation for 24 hr selectively increased dendritic spine density and AMPA-receptor-mediated EPSCs in wild-type neurons, but not in Nlgn1 knock-out neurons or when endogenous Nlgn1 was replaced by a non-phosphorylatable mutant (Y782F). Moreover, light stimulation of optoFGFR1 partially occluded LTP in a Nlgn1-dependent manner. Combined with computer simulations, our data support a model by which Nlgn1 tyrosine phosphorylation promotes the assembly of an excitatory post-synaptic scaffold that captures surface AMPA receptors. This optogenetic strategy highlights the impact of Nlgn1 intracellular signaling in synaptic differentiation and potentiation, while enabling an acute control of these mechanisms.\n\n## Introduction\n\nHow early neuronal connections mature into functional synapses is a key question in neurobiology, and adhesion molecules such as neuroligins (Nlgns) are thought to play important roles in this process (Bemben et al., 2015b; Craig and Kang, 2007; S\u00fcdhof, 2008). However, there is an ongoing controversy about the function of Nlgns in synaptic differentiation, arising from divergent results obtained using knock-out (KO), knockdown (KD), and overexpression (OE) approaches. Specifically, whereas Nlgn OE or KD bi-directionally affect synapse number, full or conditional Nlgn1/2/3 KO does not alter synapse density (Chanda et al., 2017; Chih et al., 2005; Levinson et al., 2005; Prange et al., 2004; Varoqueaux et al., 2006), suggesting that Nlgns are not generally required for synaptogenesis. To address this apparent conflict, experiments that mixed wild type and Nlgn1 KO neurons suggested the interesting model that neurons might compete with one another for synapse formation, depending on their intrinsic Nlgn1 level (Kwon et al., 2012).\n\nBesides the role of Nlgns in controlling synapse number, there is also a debate about the actual function of Nlgns in regulating basal excitatory synaptic transmission and plasticity. Several studies relying on the expression of Nlgn mutants have revealed the potential for Nlgn1 to recruit both NMDA receptors (NMDARs) and AMPA receptors (AMPARs) at synapses through extracellular and intracellular interactions, respectively (Budreck et al., 2013; Giannone et al., 2013; Haas et al., 2018; Heine et al., 2008; Letellier et al., 2018; Mondin et al., 2011; Shipman and Nicoll, 2012). However, constitutive or conditional Nlgn1/2/3 KO selectively affect basal NMDAR-mediated EPSCs and not AMPAR-mediated\u00a0EPSCs, and rescue experiments with truncated Nlgn1 mutants suggest that the synaptic recruitment of NMDARs requires the intracellular domain of Nlgn1 (Chanda et al., 2017; Chubykin et al., 2007; Jiang et al., 2017; Wu et al., 2019). Finally, while it is generally accepted that NMDAR-dependent long-term potentiation (LTP) is impaired by Nlgn1 KD or KO, the issues of which Nlgn1 motifs are important in this process and whether the Nlgn1-NMDAR interaction is required, are unclear (Jiang et al., 2017; Kim et al., 2008; Letellier et al., 2018; Shipman and Nicoll, 2012; Wu et al., 2019).\n\nIn addition to differences in experimental preparations, these studies relying on the manipulation of the Nlgn expression level all have potential biases, including the compensatory expression of proteins in the case of KO (Dang et al., 2018), off-target effects of inhibitory RNAs (Alvarez et al., 2006), and mislocalization of overexpressed Nlgns, for\u00a0example Nlgn1 at inhibitory synapses and Nlgn2 at excitatory synapses (Chih et al., 2006; Letellier et al., 2018; Nguyen et al., 2016; Tsetsenis et al., 2014). Furthermore, these techniques operate on a long-term basis, that\u00a0is days to weeks, due to slow protein turnover. Hence, there is a pressing need for alternative paradigms allowing for an acute control of neuroligin signaling pathways (Jeong et al., 2017) without affecting its expression level. Optogenetics is ideally suited for such purpose and was successfully implemented not only to regulate neuronal excitability and homeostasis, but also for fine tuning of protein-protein interactions and signaling pathways in neurons with light (Berlin and Isacoff, 2017; Chang et al., 2014; Goold and Nicoll, 2010; Grubb and Burrone, 2010; Mao et al., 2018; Schwechter et al., 2013; Sinnen et al., 2017; Zhang et al., 2011).\n\nTo acutely control Nlgn1 activity, we manipulated the phosphotyrosine level of endogenous Nlgn1 using a photoactivatable receptor tyrosine kinase targeting a unique intracellular tyrosine in Nlgn1 (Y782). This residue belongs to the gephyrin-binding motif and previous experiments showed that unphosphorylated Y782 strongly binds gephyrin - as does a Y782F mutant - while phosphorylated Y782 weakly binds gephyrin, a behavior phenocopied by a Y782A mutant (Giannone et al., 2013; Letellier et al., 2018). In parallel, neuronal expression of Nlgn1 Y782A (but not Y782F) promotes dendritic spine density and recruitment of PSD-95 and AMPARs (Giannone et al., 2013; Letellier et al., 2018), suggesting that Nlgn1 tyrosine phosphorylation is responsible for these effects. Here, we report that the stimulation of a light-gated version of the fibroblast growth factor receptor 1 (FGFR1) expressed in hippocampal CA1 neurons increases dendritic spine number as well as AMPAR-receptor-mediated EPSCs, and partially blocks LTP, in a Nlgn1 selective fashion, thus demonstrating a major role of the intracellular tyrosine phosphorylation of endogenous Nlgn1 in post-synaptic differentiation. Together, our results show that not only Nlgn1 is important for regulating dendritic spine number, but also that the Nlgn1 intracellular domain mediates AMPAR recruitment in basal conditions and regulates LTP.\n\n## Results\n\n### Light stimulation of Nlgn1 tyrosine phosphorylation\n\nUsing an in vitro kinase assay on recombinant GST fused to the intracellular domain of Nlgn1, we previously identified several tyrosine kinases able to directly phosphorylate Nlgn1, including Trk family receptors and the FGFR1 (Letellier et al., 2018). To acutely control Nlgn1 phosphorylation independently of endogenous ligand-activated kinases, we thus used here a photoactivatable version of FGFR1 (optoFGFR1) (Grusch et al., 2014;\u00a0Figure 1A). To show that Nlgn1 can be acutely phosphorylated by optoFGFR1 in a light-dependent manner, we illuminated COS-7 cells co-expressing recombinant Nlgn1 and optoFGFR1 at 470 nm for 15 min using a light emitting diode (LED) array (Figure 1B). The stimulation of optoFGFR1 by light induced as much Nlgn1 phosphorylation as constitutively active FGFR1 (Figure 1C,D) (conditions CA and opto+, respectively), indicating potent kinase activation, while samples kept in the dark (conditions light-) did not show significant pTyr levels, revealing no unspecific effect of light. Finally, no phosphorylation of the point mutant Nlgn1-Y782F was observed upon light application (Figure 1C,D), demonstrating that Y782 is the only tyrosine residue on Nlgn1 which is phosphorylated by light-gated optoFGFR1.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/52027/elife-52027-fig1-v1.jpg)\n\n**Figure 1.:** (A) Schematic diagram of optogenetically-driven Nlgn1 tyrosine phosphorylation using optoFGFR1. Phosphorylated Nlgn1 is expected to recruit PSD-95 that serves as a platform for trapping AMPARs. (B) Scheme representing the 470 LED array that is placed in\u00a0the\u00a0incubator and used to illuminate COS-7 cells or organotypic slices contained in a six-well plate. (C) pTyr and Nlgn1 immunoblots of proteins extracted from COS-7 cells and immunoprecipitated with anti-Nlgn1 antibodies. Cells expressed either no Nlgn1, Nlgn1 alone, Nlgn1 + constitutively active (CA) FGFR1, Nlgn1 + optoFGFR1, and Nlgn1-Y782F + optoFGFR1. In the first lane, the starting material (SM) from non-transfected cells reveals numerous tyrosine phosphorylated proteins, whereas a single band is present in the Nlgn1 IP samples (black arrowhead). Cells were either kept in the dark (- light), or exposed to alternative 470 nm light and pulses (1 s light pulse every 1 s) for 15 min (+ light). (D) Corresponding starting material immunoblotted with HA and FGFR1 antibodies, respectively. The arrowheads represent HA-tagged Nlgn1, HA-tagged optoFGFR1, or constitutively active FGFR1.\n\n### Light activation of optoFGFR1 increases dendritic spine density\n\nWe then examined the impact of triggering Nlgn1 tyrosine phosphorylation on synapse morphology and function in mouse organotypic hippocampal cultures, using confocal microscopy and electrophysiology, respectively (Figure 2A). Using single-cell electroporation, we expressed optoFGFR1 with a tdTomato volume marker in CA1 neurons of hippocampal slices obtained from either wild type or Nlgn1 KO mice. Immunostained HA-tagged optoFGFR1 was detected throughout dendrites including spines, that\u00a0is at the right location to phosphorylate Nlgn1 (Figure 2B). Dendritic spine density increased by\u00a0~25% in neurons exposed to 470 nm light pulses for 24 hr, but remained stable in neurons expressing optoFGFR1 and kept in the dark, or in light-stimulated CA1 neurons from Nlgn1 KO slices (Figure 2C,D), demonstrating that this effect is mediated by light-dependent tyrosine phosphorylation of endogenous Nlgn1.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/52027/elife-52027-fig2-v1.jpg)\n\n**Figure 2.:** (A) Experimental procedure to investigate the effect of the optogenetic stimulation of optoFGFR1 on spine density and synaptic transmission. CA1 neurons in organotypic slices from WT or Nlgn1 KO mice were electroporated at DIV 3\u20135 with tdTomato and HA-tagged optoFGFR1. Two days later, they were either stimulated with alternating blue light for 24 hr or kept in the dark, and processed for imaging or electrophysiology. (B) Confocal images of CA1 neurons and dendritic segments showing tdTomato (red) and anti-HA immunostaining (green). (C) Confocal images of apical dendrites from electroporated neurons before (0 hr) and 24 hr after light activation of optoFGFR1. Control slices did not receive light, or received light but were from the Nlgn1 KO background. Solid arrowheads point to spines which have appeared, and empty arrowheads to spines which have disappeared in the time interval. (D) Normalized spine density for each condition (n\u00a0=\u00a019\u201328 dendrites from N\u00a0=\u00a05\u20137 cells). Change in spine density was assessed for each condition using paired t-test (***p<0.001, *p<0.05, ns: not significant). Spine density change was compared across conditions using a one-way ANOVA followed by Tukey\u2019s multiple comparison test (***p<0.001, **p<0.01).\n\n### Light activation of optoFGFR1 enhances basal AMPAR-, but not NMDAR-mediated EPSCs\n\nAt the electrophysiological level, we measured both AMPAR- and NMDAR-mediated EPSCs evoked by the stimulation of Schaffer\u2019s collaterals, comparing neurons expressing optoFGFR1 with paired non-electroporated neighbors by dual patch-clamp recordings (Figure 3A). Strikingly, neurons expressing optoFGFR1 and exposed to light for 24 hr exhibited\u00a0~200% larger evoked AMPAR-mediated EPSCs compared to non-electroporated neighbors that also received light, or to neurons expressing optoFGFR1 and kept in the dark (Figure 3D,F). This was accompanied by an almost two-fold increase in the frequency of spontaneous AMPAR-mediated EPSCs (Figure 3B,C), in agreement with the higher number of dendritic spines. No change in the amplitude or kinetics of spontaneous AMPAR-mediated EPSCs was measured (Figure 3\u2014figure supplement 1A\u2013C), indicating that optoFGFR1 activation did not change AMPAR channel conductance. In parallel, there was no significant impact of optoFGFR1 expression and/or light on evoked NMDAR-mediated EPSCs (Figure 3E,G). Importantly, the light-induced increase AMPAR-mediated EPSCs was not observed in CA1 neurons from Nlgn1 KO slices (Figure 3D,F), demonstrating that this effect involves the selective tyrosine phosphorylation of Nlgn1. The paired-pulse ratio was not changed by optoFGFR1 expression or light exposure, suggesting that presynaptic function was unaltered (Figure 3\u2014figure supplement 1D,E). Furthermore, although the critical tyrosine residue belonging to the gephyrin-binding motif is conserved in Nlgn2 and Nlgn3 (Poulopoulos et al., 2009), where it can also be phosphorylated (Letellier et al., 2018), no effect of optoFGFR1 stimulation was observed on inhibitory currents recorded in CA1 neurons (Figure 3\u2014figure supplement 1F,G). Together, these data demonstrate that the phosphorylation mechanism is specific to the Nlgn1 isoform at excitatory post-synapses, and selectively affects AMPAR recruitment at pre-existing or newly formed spines.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/52027/elife-52027-fig3-v1.jpg)\n\n**Figure 3.:** (A) Dual patch-clamp recordings of AMPAR- and NMDAR-mediated currents upon stimulation of Schaffer\u2019s collaterals were made at holding potentials of \u221270 and +40 mV (respectively) in electroporated neurons and non-electroporated counterparts. The image shows two patched neurons in the CA1 area, the brighter one expressing optoFGFR1 + tdTomato. (B) Representative electrophysiological recordings of spontaneous AMPAR-mediated EPSCs (sEPSCs) in a control non-electroporated neuron (black trace), and a paired neuron expressing optoFGFR1 and pre-exposed to light for 24 hr (blue trace). (C) Corresponding sEPSC frequency for control neurons and neurons expressing optoFGFR1. Data were compared using the Wilcoxon matched-pairs signed rank test (*p<0.05). (D, E) Scatter plots of AMPAR- and NMDAR-mediated EPSCs, respectively, in neurons expressing optoFGFR1 compared to paired unelectroporated neurons (control cell), in the indicated conditions. Representative traces (color) normalized to control (grey) are shown as insets. (F, G) Average of AMPAR- and NMDAR-mediated EPSCs in the three conditions, normalized to the control (100%). Data were compared to the control condition by the Wilcoxon matched-pairs signed rank test, and between themselves using one-way ANOVA followed by Tukey's multiple comparison (**p<0.01, *p<0.05, ns: not significant).\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/52027/elife-52027-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A\u2013C) Quantification of AMPAR-mediated sEPSC amplitude, rise time, and decay time, respectively, for control neurons (grey boxes) and neurons expressing optoFGFR1 (blue boxes). Data were compared using the paired t-test (A,B) or the Wilcoxon matched-pairs signed rank test (C) (ns: not significant). (D) Average EPSC traces in response to paired stimuli (50 ms interstimulus interval) recorded from an unelectroporated WT neuron (in black), WT neurons expressing optoFGFR1 kept in the dark (in grey) or exposed to light (in blue) and a Nlgn1-KO neuron expressing optoFGFR1 and exposed to light (in violet). (E) Average PPR for the same conditions as in (A) (Wilcoxon matched-pairs signed rank test, ns: not significant). Data represent mean\u00a0\u00b1\u00a0SE. (F) Scatter plots of IPSCs in optoFGFR1-expressing neurons versus paired unelectroporated neurons (control cell), in the dark (black) and light (blue) and conditions, respectively. Representative IPSCs traces (black or blue) were recorded at a holding potential of +10 mV, normalized to control (grey), and are shown as insets. (G) Average amplitude of IPSCs in the two conditions, normalized to the control (100%). Data were compared to the control condition by the Wilcoxon matched-pairs signed rank test (ns, not significant).\n\n### The intracellular Y782 residue is involved in light-induced effects\n\nTo verify that optoFGFR1 was specifically phosphorylating the Nlgn1 Y782 residue in neurons, we adopted a replacement strategy (Letellier et al., 2018) by co-electroporating optoFgfr1, Nlgn1-shRNA, and Nlgn1 rescue constructs in slices from WT mice (Figure 4A,B). This led to basal AMPAR- and NMDAR-mediated EPSCs in the dark matching those measured in paired non-electroporated neurons expressing endogenous Nlgn1 levels (Figure 4C\u2013F). In parallel, the density of dendritic spines remained stable over time in neurons expressing optoFGFR1 and kept in the dark, or not expressing optoFGFR1 and exposed to light, indicating no side effects of either optoFGFR1 electroporation or photo-stimulation (Figure 4\u2014figure supplement 1). In CA1 neurons expressing rescue Nlgn1-WT and optoFGFR1, light exposure induced again a ~25% increase in dendritic spine number (Figure 4\u2014figure supplement 1), as well as a ~200% increase in AMPAR (but not NMDAR) -mediated EPSCs compared to control non-electroporated neurons (Figure 4C\u2013F). These effects were similar to those found in neurons expressing endogenous Nlgn1 (Figures 2 and 3), validating the Nlgn1 replacement strategy. Importantly, the increase in spine density and AMPAR-mediated EPSCs by optoFGFR1 activation was not observed in CA1 neurons expressing Nlgn1-Y782F (Figure 4C,E and Figure 4\u2014figure supplement 1), indicating that those effects are mediated by phosphorylation of the Nlgn1 Y782 residue induced by the photo-activation of optoFGFR1.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/52027/elife-52027-fig4-v1.jpg)\n\n**Figure 4.:** CA1 Neurons were co-electroporated with plasmids encoding tdTomato, shRNA against endogenous Nlgn1 containing a GFP reporter, shRNA resistant AP-tagged Nlgn1-WT or -Y782F, biotin ligase (BirAER), and HA-tagged optoFgfr1. (A, B) Confocal images showing tdTomato (red) and GFP (green). Biotinylated Nlgn1 and optoFGFR1 were stained in different slices using streptavidin-Atto647 and anti-HA antibody, respectively (magenta). (C, D) Scatter plots of AMPAR- and NMDAR-mediated EPSCs, respectively, for electroporated versus paired non-electroporated neurons (control cell) in the indicated conditions. Representative traces (black, blue or violet) normalized to control (grey) are shown as insets. (E, F) Average of AMPAR-and NMDAR-mediated EPSCs, respectively, normalized to the control (100%) in the different conditions. Data were compared to the control condition by the Wilcoxon matched-pairs signed rank test and between themselves using one-way ANOVA followed by Tukey's multiple comparison (**p<0.01, ns: not significant).\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/52027/elife-52027-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Confocal images of tdTomato in apical dendrites from CA1 neurons before (0 hr) and after (24 hr) light activation. Control neurons either did not receive light, or did not contain optoFGFR1, or were expressing the Nlgn1-Y782F mutant. Solid arrowheads point to spines which have appeared, and empty arrowheads to spines which have disappeared in the time period. (B) Normalized spine density for each condition (n\u00a0=\u00a013\u201333 dendrites from N\u00a0=\u00a04\u201310 cells). Change in spine density was assessed for each condition using the paired t-test (****p<0.0001, ns: not significant). Spine density change was compared across conditions using the Kruskal-Wallis test followed by Dunn\u2019s multiple comparison test, paired t-test (**p<0.001).\n\n### Light activation of Nlgn1 tyrosine phosphorylation impairs LTP\n\nFinally, we asked whether the increase of basal AMPAR-mediated currents induced by Nlgn1 phosphorylation could partially occlude NMDAR-dependent long term potentiation (LTP). Using a pairing protocol, we induced an increase of about threefold in evoked AMPAR-mediated EPSCs, which was blocked by the NMDAR antagonist AP5 (Figure 5\u2014figure supplement 1A). CA1 neurons expressing optoFGFR1 and pre-exposed to light showed a significant\u00a0~50% reduction in the LTP plateau level compared to control non-electroporated neighbors (Figure 5A,B). To check if this effect was again specific of Nlgn1, we performed LTP experiments in hippocampal slices from Nlgn1 KO mice. Surprisingly, the LTP level was barely reduced (Figure 5A,C), despite a significant decrease in NMDA/AMPA ratio in control non-electroporated Nlgn1 KO neurons compared to neurons from WT mice (Figure 5\u2014figure supplement 1B;\u00a0Budreck et al., 2013; Chubykin et al., 2007). However, light stimulation of optoFGFR1 did not alter LTP in Nlgn1 KO neurons (Figure 5C,D), indicating that Nlgn1 phosphorylation is responsible for the decreased LTP in wild-type neurons.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/52027/elife-52027-fig5-v1.jpg)\n\n**Figure 5.:** (A) Average AMPAR-mediated EPSCs in CA1 neurons expressing optoFGFR1 (blue circles) or in non-electroporated neighbors (grey circles), all pre-exposed to light for 24 hr, upon LTP induction at time 0 using a pairing protocol. Sample traces are shown at time 0 and 30 min after LTP induction. The solid lines show averages from 10 computer simulations for each condition with parameters kon\u00a0=\u00a01 s\u22121 (black) or 3 s\u22121 (blue), and koff drops from 0.04 to 0.004 s\u22121. (B) Individual values of the long-term plateau of AMPAR-mediated EPSC in the two conditions (6\u201310 min after LTP induction), expressed as a percentage of the baseline level. Data were compared to the control condition (unelectroporated neuron also exposed to light) by Wilcoxon matched-pairs signed rank test (***p<0.001). (C, D) Similar LTP recordings and quantification in CA1 neurons from Nlgn1 KO slices, with corresponding simulations (red line, kon\u00a0=\u00a01 s\u22121 and koff drops from 0.04 to 0.008 s\u22121). Data were compared to the control condition (unelectroporated neuron also exposed to light) by Wilcoxon matched-pairs signed rank test (ns: non-significant).\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/52027/elife-52027-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) Evoked AMPAR-mediated EPSCs upon induction of LTP at time zero, normalized to baseline, in control ACSF or in the presence of 50 \u00b5M D-AP5. Note the abolishment of LTP in the AP5 condition. (B) Quantification of the ratio between NMDAR-mediated and AMPAR-mediated EPSCs calculated in the same CA1 neurons, for different conditions: control unelectroporated neurons from either wild type (Nlgn1-WT, light grey) or Nlgn1-KO (red) slices, neurons from WT slices electroporated with shRNA to Nlgn1 (Nlgn1-KD, pink), and neurons co-electroporated with shRNA to Nlgn1 and AP-tagged Nlgn1 rescue construct (dark grey).\n\n### Quantitative interpretation of LTP data by modeling AMPAR trapping at synapses\n\nTo quantitatively interpret those LTP results, we carried out computer simulations describing membrane diffusion and synaptic trapping of individual AMPARs (Figure 6A, Figure 6\u2014figure supplement 1A,B and Supplementary source code), based on a previous framework using realistic kinetic parameters (Cz\u00f6nd\u00f6r et al., 2012). This model is in line with experiments showing that hippocampal LTP primarily involves the capture of extra-synaptic AMPARs (Granger et al., 2013; Penn et al., 2017). We mimicked LTP by introducing a step decrease in the apparent off-rate between AMPARs and the PSD scaffold (Figure 6B,C). The simulations matched very well experimental LTP (Figure 5A,C), both in terms of kinetics and plateau value (~270%), supporting this diffusion/trap model. To mimic the effect of Nlgn1 phosphorylation on postsynaptic density (PSD) assembly and AMPAR recruitment (Letellier et al., 2018), we raised the AMPAR/scaffold binding rate, resulting in a\u00a0~2 fold increase of basal synaptic AMPAR number (Figure 6\u2014figure supplement 1C) reproducing the experimental data (Figure 3D,F). In response to the same LTP simulation, the relative increase in AMPAR number now reached only\u00a0~190%, as in optoFGFR1 experiments (Figure 5A). Thus, the partial occlusion of LTP observed upon optoFGFR1 stimulation can be explained by a high initial recruitment of synaptic AMPARs, which depletes the extra-synaptic AMPAR reservoir necessary for LTP. Accordingly, we previously reported an almost complete occlusion of LTP upon replacement of endogenous Nlgn1 by a Y782A mutant which phenocopies maximally phosphorylated Nlgn1 and increases AMPAR-mediated EPSCs by\u00a0~4 fold (Giannone et al., 2013; Letellier et al., 2018). Overall, our model predicts a negative correlation between basal synaptic AMPAR number and the ability to respond to LTP (Figure 6\u2014figure supplement 1D), that perfectly fits the experiments (Figure 6D). These data suggest that Nlgn1 tyrosine phosphorylation impairs LTP by promoting high initial synaptic AMPAR levels.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/52027/elife-52027-fig6-v1.jpg)\n\n**Figure 6.:** (A) Schematic diagram of the AMPAR diffusion/trap process, with model parameters being indicated in italic. (B) Heat maps representing simulations of AMPAR accumulation at a single synapse over time. LTP is mimicked by decreasing the AMPAR/scaffold off-rate, causing a diffusional trapping of AMPARs from extra-synaptic pools. Nlgn1 phosphorylation is mimicked by increasing the initial AMPAR/scaffold on-rate, resulting in higher basal AMPAR level and lower LTP (relatively to baseline). (C) Graph showing the relative change in synaptic AMPAR content (in % of baseline) over time, when LTP is simulated by a drop in koff from 0.04 to 0.004 s\u22121 at time zero. Curves correspond to different values of the parameter kon ranging from 0.05 to 8 s\u22121. (D) Relationship between basal synaptic AMPAR content and LTP plateau level (% of baseline). Experimental points (circles) were obtained from non-electroporated neurons (grey), neurons expressing opoFGFR1 and stimulated with light (blue), or neurons co-expressing shRNA to Nlgn1 and either Nlgn1-WT (light blue) or Nlgn1-Y782A (dark blue) data taken from Letellier et al. (2018). Basal AMPAR-mediated EPSCs were normalized to match a synaptic level of 33 AMPARs in the control condition (Levet et al., 2015). The solid line represents simulated data generated by varying the AMPAR/scaffold binding rate from 0.1 to 10 s\u22121.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/52027/elife-52027-fig6-figsupp1-v1.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (A) Representative example of a single simulated AMPAR trajectory (time step \u0394t\u00a0=\u00a00.1 s, total duration 200 s). Note the fast AMPAR extra-synaptic diffusion and the slow diffusion when the AMPAR is trapped within the synapse (red squares). (B) Still image illustrating the steady-state distribution of AMPARs in the simulated neurite geometry. Individual AMPARs are represented by a Gaussian intensity profile of FWHM of 25 nm. Note AMPAR accumulation at synapses. (C) Graph showing the steady-state synaptic AMPAR number versus the AMPAR/scaffold binding rate (kon ranging from 0.05 s\u22121 to 10 s\u22121), for different values of the unbinding rate (koff ranging from 0.002 s\u22121 to 0.08 s\u22121). The synaptic AMPAR level saturates at high kon and/or low koff values due to the depletion of the finite AMPAR extra-synaptic pool. (D) Predicted relationship between the basal synaptic AMPAR content and the LTP response, expressed as a percentage of the AMPAR baseline (dashed line). The four curves represent different initial koff values (the final value is 0.004 s\u22121 for all conditions), for a constant kon\u00a0=\u00a01 s\u22121.\n\n## Discussion\n\nOrthogonal to the traditional paradigms used to manipulate Nlgn expression level or replace Nlgn isoforms with truncated or mutated versions, this novel optogenetic approach allows for a fine tuning of the tyrosine phosphorylation of endogenous Nlgn1, revealing a strong role of Nlgn1 intracellular signaling in excitatory post-synapse differentiation. Our results show that Nlgn1 tyrosine phosphorylation specifically regulates dendritic spine number, mediates AMPAR recruitment in basal conditions, and impairs LTP.\n\nTogether, our results support a mechanism by which, in its tyrosine phosphorylated state, Nlgn1 preferentially recruits intracellular PDZ domain containing scaffolding proteins including PSD-95 (Giannone et al., 2013; Jeong et al., 2019), associated with a morphological stabilization of dendritic spines (Cane et al., 2014) and serving as slots for the diffusional trapping of surface AMPARs (Cz\u00f6nd\u00f6r et al., 2013; Haas et al., 2018; Mondin et al., 2011). In contrast, NMDAR-mediated EPSCs are not affected by Nlgn1 phosphorylation, supporting the concept of a direct extracellular coupling between Nlgn1 and GluN1 (Budreck et al., 2013; Shipman and Nicoll, 2012). The selective effects of endogenous Nlgn1 tyrosine phosphorylation on dendritic spine density, AMPAR-receptor-mediated EPSCs, and LTP are in close agreement with our previous observations based on the KD plus rescue of Nlgn1 point mutants, in particular the Nlgn1 Y782A mutant, which promotes synaptic recruitment of PSD-95, strongly enhances basal AMPAR-mediated EPSCs, and totally blocks LTP through synapse unsilencing mechanisms (Letellier et al., 2018). The increase in frequency - but not amplitude - of spontaneous AMPAR-mediated EPSCs upon optoFGFR1 stimulation indicates the formation of synapses containing a fixed bolus of AMPARs. Importantly, optogenetic Nlgn1 phosphorylation induces a similar response as PSD-95 overexpression by increasing spine density, enhancing AMPAR- but not NMDAR-dependent transmission, and occluding LTP (Ehrlich and Malinow, 2004; El-Husseini et al., 2000; Stein et al., 2003), which further supports our model. Conversely, unphosphorylated Nlgn1 (as mimicked by the Y782F mutant) might associate instead with gephyrin clusters shown to dynamically appear and disappear on the sides of dendritic spines (Villa et al., 2016). Thus, by locally controlling Nlgn1 phosphorylation, a single spine might have the possibility to assemble either excitatory or inhibitory scaffolding nanomodules (Haas et al., 2018; Hruska et al., 2018; Tang et al., 2016).\n\nOur computer simulations of AMPAR diffusional trapping at PSDs provide a simple framework to interpret the experimental data. By avoiding gephyrin binding and instead triggering PSD scaffold assembly, Nlgn1 tyrosine phosphorylation provides synapses with fresh surface-diffusing AMPARs. These already potentiated (or unsilenced) synapses are thus less prone to respond to the LTP stimulation, because extra-synaptic pools of AMPARs have been consequently depleted (Granger et al., 2013; Penn et al., 2017). A strong role of Nlgn1/PSD-95 interaction in synaptic function is also supported by a recent study showing that PKA-mediated phosphorylation of the S839 residue located near the C-terminal PDZ domain binding motif dynamically regulates PSD-95 binding, affecting both dendritic spine number and AMPAR-mediated miniature EPSCs (Jeong et al., 2019).\n\nAlthough the tyrosine residue in Nlgn1 belongs to a gephyrin-binding motif which is highly conserved among the other Nlgn isoforms and controls gephyrin binding (Giannone et al., 2013; Poulopoulos et al., 2009), optoFGFR1 stimulation did not affect evoked inhibitory currents, suggesting that the phosphorylation of Nlgn2 or Nlgn3 either did not occur, or did not modify the recruitment of the gephyrin scaffold and associated GABAA receptors. The lack of effects of optoFGFR1 stimulation in neurons from Nlgn1 KO slices confirms that it is indeed Nlgn1 phosphorylation which is causing the observed increases in dendritic spine density and AMPAR-mediated EPSCs. It might be interesting to apply similar optogenetic approaches to control the phosphorylation of other intracellular Nlgn1 residues including S839 and T709 by engineering photoactivatable versions of PKA and CamKII, respectively (Bemben et al., 2014; Jeong et al., 2019), or inhibitors of those kinases (Murakoshi et al., 2011), expecting to alter Nlgn1 trafficking and thereby synaptic function and potentiation. Other phosphorylation sites have been reported in Nlgn2 and Nlgn4 which might also be interesting to target with such light-gated kinases (Antonelli et al., 2014; Bemben et al., 2015a).\n\nBecause optoFGFR1 is lacking a ligand-binding domain, its light-activation is expected to by-pass the endogenous regulation of Nlgn1 tyrosine phosphorylation, which involves the Trk family of tyrosine kinases (Letellier et al., 2018) that are responding to intrinsic ligands (BDNF and NGF) (Harward et al., 2016). Photoactivatable versions of Trks have been reported and their stimulation with light for 48 hr induces neurite outgrowth in DIV1-3 dissociated neurons and de novo formation of axonal filopodia within 30 min (Chang et al., 2014), but the effects on spine formation and synaptic transmission in mature neurons have not been measured yet. Short-term photoactivation of another tyrosine kinase, EphB2, leads within seconds to the retraction of non-stabilized dendritic filopodia (Mao et al., 2018) and within minutes to the induction of new filopodia by activating actin polymerization (Locke et al., 2017). Those effects are likely to obey different downstream signaling pathways than the ones we report here and which highly depend on Nlgn1 and the associated PSD scaffold.\n\nOur data demonstrating the critical role of a single tyrosine residue located in the middle of the intracellular motif are difficult to reconcile with a previous report showing that a Nlgn3 construct with a 77-aa intracellular truncation (thus removing the motif containing the tyrosine) can still rescue AMPAR-mediated synaptic transmission upon Nlgn1/2/3 KD (Shipman et al., 2011). Moreover, whereas Nlgn1 KO was shown to affect primarily basal NMDAR-mediated synaptic transmission, we find instead strong effects of acute Nlgn1 tyrosine phosphorylation on basal AMPAR-mediated EPSCs, and no alteration of NMDAR-dependent EPSCs. The fact that AMPAR-mediated EPSCs are not altered in the Nlgn1 KO (Chanda et al., 2017) may result from the compensatory expression of scaffolding or adhesion molecules, in particular Nlgn3 (Dang et al., 2018), which also interacts with PSD-95. This would explain the fact that a dual Nlgn1/3 (and triple Nlgn1/2/3) KO are required to alter AMPARs levels and AMPAR-mEPSCs in cultured neurons (Chanda et al., 2017). In contrast, a compensatory expression of Nlgn3 which does not interact extracellularly with NMDARs (Budreck et al., 2013; Shipman and Nicoll, 2012) is not expected to rescue the decrease in NMDAR-EPSCs caused by Nlgn1 KO.\n\nFinally, increasing the Nlgn1 phosphorylation by optoFGFR1 activation reduced LTP, as did the expression of the non-phosphorylatable Nlgn1-Y782F mutant (Letellier et al., 2018), suggesting that an optimal level of intracellular Nlgn1 tyrosine phosphorylation is necessary to elicit normal LTP. In contrast, another study found that LTP is impaired in acute slices from Nlgn1/2/3 cKO and can be rescued upon expression of a GPI-anchored Nlgn1 lacking the entire intracellular domain (Wu et al., 2019), and thus the C-terminal PDZ domain binding motif which we find important for anchoring AMPARs through PSD-95 (Letellier et al., 2018; Mondin et al., 2011). Moreover, we did not find a significant decrease of LTP in neurons from constitutive Nlgn1 KO, in contrast to previous reports (Budreck et al., 2013; Jiang et al., 2017; Kim et al., 2008; Shipman and Nicoll, 2012). While the differences might come from the use of different experimental preparations (acute vs organotypic slices), LTP stimulation protocols, and perturbation approaches (KD or KO, each with specific timing with respect to the synaptogenesis period), we believe that our approach allowing for an acute control of a signaling mechanism associated with endogenous Nlgn1, demonstrates a strong role of the Nlgn1 intracellular domain in synaptic function. Besides clarifying the role of Nlgn1 at excitatory synapses, the optogenetic phosphorylation of Nlgn1 provides the exciting opportunity to control in time and space synaptic connectivity and function, and has therefore a great potential for investigating the causality between synaptic plasticity and learning processes as well as the possible contribution of Nlgns to neuropsychiatric behaviors (Bourgeron, 2015).\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Gene (Mus musculus)</td>\n      <td>Nlgn1</td>\n      <td>NCBI</td>\n      <td>NM_138666.4</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Gene (Mus musculus)</td>\n      <td>Fgfr1</td>\n      <td>NCBI</td>\n      <td>NM_010206.3</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Mus musculus)</td>\n      <td>C57Bl/6J</td>\n      <td>Charles River</td>\n      <td>RRID:IMSR_JAX:000664</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (Mus musculus)</td>\n      <td>Nlgn1-KO</td>\n      <td>Varoqueaux et al., 2006 (PMID:16982420)</td>\n      <td>RRID:MGI:3688627</td>\n      <td>N. Brose (MPI Goettingen) C57Bl/6J background</td>\n    </tr>\n    <tr>\n      <td>Cell line (Simian)</td>\n      <td>COS-7</td>\n      <td>ATCC</td>\n      <td>RRID:CVCL_0224</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Biological sample (Mus muscumus)</td>\n      <td>Organotypic slices (350 \u00b5m)</td>\n      <td>This paper Stoppini et al. (1991) (PMID:1715499)</td>\n      <td></td>\n      <td>Prepared from P5-P8 animals. From C57Bl/6J WT or Nlgn1-KO mice</td>\n    </tr>\n    <tr>\n      <td>Transfected construct Mus musculus</td>\n      <td>HA-Nlgn1</td>\n      <td>P. Scheiffele (Biozentrum, Basel)</td>\n      <td></td>\n      <td>In COS cells with X-TremeGENE kit</td>\n    </tr>\n    <tr>\n      <td>Transfected construct Mus musculus</td>\n      <td>Fgfr1 V561M-FLAG (CA)</td>\n      <td>This paper</td>\n      <td></td>\n      <td>Obtained with In-Fusion HD Cloning Kit using Fgfr1-V561M-F and Fgfr1-V561M-R primers on the Fgfr1-Flag plasmid. In COS cells</td>\n    </tr>\n    <tr>\n      <td>Transfected construct Mus musculus</td>\n      <td>optoFgfr1-HA</td>\n      <td>Grusch et al., 2014 (PMID:24986882)</td>\n      <td>(RRID:Addgene_58745</td>\n      <td>In COS cells with X-TremeGENE kit. In organotypic slices by single cell electroporation.</td>\n    </tr>\n    <tr>\n      <td>Transfected construct Mus musculus</td>\n      <td>HA-Nlgn1 Y782F</td>\n      <td>Giannone et al., 2013 (PMID:23770246)</td>\n      <td></td>\n      <td>In COS cells with X-TremeGENE kit.</td>\n    </tr>\n    <tr>\n      <td>Transfected construct (Synthetic)</td>\n      <td>tdTomato</td>\n      <td>R. Tsien (UC San Diego, CA)</td>\n      <td></td>\n      <td>In organotypic slices by single cell electroporation.</td>\n    </tr>\n    <tr>\n      <td>Transfected construct (M. musculus)</td>\n      <td>Nlgn1 -shRNA (targeting Nlgn1)</td>\n      <td>Chih et al., 2005 (PMID:15681343)</td>\n      <td>RRID:Addgene_59339</td>\n      <td>Gift from P. Scheiffele In organotypic slices by single cell electroporation.</td>\n    </tr>\n    <tr>\n      <td>Transfected construct (M. musculus)</td>\n      <td>AP-Nlgn1 rescue (shRNA resistant)</td>\n      <td>Chamma et al., 2016 (PMID:26979420)</td>\n      <td></td>\n      <td>In organotypic slices by single cell electroporation.</td>\n    </tr>\n    <tr>\n      <td>Transfected construct (M. musculus)</td>\n      <td>AP-Nlgn1 Y782F rescue (shRNA resistant)</td>\n      <td>Letellier et al., 2018 (PMID:30266896)</td>\n      <td></td>\n      <td>In organotypic slices by single cell electroporation.</td>\n    </tr>\n    <tr>\n      <td>Transfected construct (M. musculus)</td>\n      <td>BirAER</td>\n      <td>A. Ting (Stanford University, CA)</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent (M. musculus)</td>\n      <td>Fgfr1-Flag plasmid</td>\n      <td>Duchesne et al., 2006 PMID:16829530</td>\n      <td></td>\n      <td>L. Duchesne (Universit\u00e9 de Rennes)</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Primers Fgfr1-V561M-F; Fgfr1-V561M-R</td>\n      <td>This paper From Eurogentec</td>\n      <td></td>\n      <td>TGTCATTATGGAGTACGCCTC; TACTCCATAATGACATAAAGAGG</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti-Nlgn1 (Rabbit polyclonal)</td>\n      <td>Synaptic systems 129013</td>\n      <td>RRID:AB_2151646</td>\n      <td>IP (2 \u00b5g) WB (1:1000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti-phosphotyrosine P-Tyr-100 (Mouse monoclonal)</td>\n      <td>Cell Signaling Technology 9411</td>\n      <td>RRID:AB_331228</td>\n      <td>WB (1:1000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti-FGFR1 (monoclonal polyclonal)</td>\n      <td>Cell Signaling Technology D8E4 9740</td>\n      <td>RRID:AB_11178519</td>\n      <td>WB (1:1000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti-HA (Rat monoclonal)</td>\n      <td>Roche 3F10 11867423001</td>\n      <td>RRID:AB_390918</td>\n      <td>WB (1:1000) IHC (1:100)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Easyblot HRP antibodies anti-mouse;anti-rabbit</td>\n      <td>GeneTex GTX221667-01;GTX221666-01</td>\n      <td>RRID:AB_10728926; RRID:AB_10620421</td>\n      <td>WB (1:1000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Alexa647-conjugated anti-rat antibody (Goat Polyclonal)</td>\n      <td>Molecular Probes A21247</td>\n      <td>RRID:AB_141778</td>\n      <td>IHC (1:200)</td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>NeutrAvidin</td>\n      <td>Invitrogen</td>\n      <td>A2666</td>\n      <td>IHC (1:200)</td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>In-Fusion HD Cloning Kit</td>\n      <td>Takara Bio</td>\n      <td>639642 (Ozyme)</td>\n      <td>In COS cells</td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>X-tremeGENE HP DNA Transfection Reagent</td>\n      <td>Roche (RRID:SCR_001326)</td>\n      <td>6366546001</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>Dynabeads Protein G</td>\n      <td>Thermo Fisher Scientific (RRID:SCR_008452)</td>\n      <td>10004D</td>\n      <td>For immunoprecipitation</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>D-AP5</td>\n      <td>TOCRIS (RRID:SCR_003689)</td>\n      <td>0106/10</td>\n      <td>50 \u00b5M</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Bicuculline</td>\n      <td>TOCRIS (RRID:SCR_003689)</td>\n      <td>0130/50</td>\n      <td>20 \u00b5M</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>NBQX</td>\n      <td>TOCRIS (RRID:SCR_003689)</td>\n      <td>0373/10</td>\n      <td>100 nM or 10 \u00b5M</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>NHS-ester ATTO 647N</td>\n      <td>ATTO-TEC GmbH</td>\n      <td>AD 647 N-31</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Metamorph</td>\n      <td>Molecular Devices</td>\n      <td>RRID:SCR_002368</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>GraphPad</td>\n      <td>PRISM</td>\n      <td>RRID:SCR_002798</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Clampex</td>\n      <td>Axon Instruments</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Clampfit</td>\n      <td>Axon Instruments</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Minianalysis</td>\n      <td>Synaptosoft</td>\n      <td>RRID:SCR_002184</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>FluoSim</td>\n      <td>Lagard\u00e8re et al., 2020 (DOI:10.1101/2020.02.06.937045)</td>\n      <td></td>\n      <td>Full source code will be deposited on GitHub upon paper acceptance</td>\n    </tr>\n  </tbody>\n</table>\n\n### Constructs\n\nPlasmids for BirAER and AP-Nlgn1 harboring both extracellular splice inserts A and B were kind gifts from A. Ting (Stanford University, CA). Short hairpin RNA to murine Nlgn1 (shNlgn1) was a generous gift from P. Scheiffele (Biozentrum, Basel). shRNA-resistant AP-tagged Nlgn1 and Nlgn1-Y782F were described previously (Chamma et al., 2016; Letellier et al., 2018). The tdTomato plasmid was a generous gift from R. Tsien (UC San Diego, CA). Fgfr1-Flag (Duchesne et al., 2006) was a generous gift from L. Duchesne (Universit\u00e9 de Rennes). To generate constitutively active (CA) Fgfr1-Flag, the V561M mutation was introduced using the In-Fusion HD Cloning Kit (Takara Bio) and the following primers: Fgfr1-V561M-F 5\u2019TGTCATTATGGAGTACGCCTC3\u2019 and Fgfr1-V561M-R 5\u2019TACTCCATAATGACATAAAGAGG3\u2019. OptoFgfr1 bearing an N-terminal myristoylation motif to attach to the membrane, and a C-terminal HA-tag was described previously (Grusch et al., 2014). In this construct, the extracellular FGF binding domain has been removed, and a light-oxygen voltage sensing (LOV) domain is fused to the C-terminus, such that stimulation with blue light induces dimerization of the FGFR1 intracellular domain and subsequent kinase activation in a ligand-independent manner.\n\n### COS-7 cell culture and transfection\n\nCOS-7 cells purchased from ATCC (cell line source ECACC 87021302) were cultured in DMEM (Eurobio) supplemented with 2 mM glutamax (GIBCO), 1 mM sodium pyruvate (Sigma-Aldrich), and 10% Fetal Bovine Serum (Eurobio). COS-7 cells used in this study were regularly tested negative for Mycoplasma using the MycoAlertTM Detection Kit (LT07-218) from Lonza. For IP experiments, cells were plated in 6-well plates at a density of 120,000 per well. After 1 day, cells were transfected with 10:1 combinations of Nlgn1 and FGFR1 DNA constructs using the X-TremeGENE kit (Roche), with 1 \u00b5g total DNA for 2 \u00b5L reagent in 100 \u00b5L PBS per well. Cells were left under a humidified 5% CO2 atmosphere (37\u00b0C) for 2 days before being processed for biochemistry.\n\n### Organotypic slice culture\n\nOrganotypic hippocampal slice cultures were prepared as described (Stoppini et al., 1991) from either wild type or Nlgn1 knock-out mice (C57Bl/6J strain) obtained from N. Brose (MPI Goettingen). Animals were raised in our animal facility and were handled and killed according to European ethical rules. Briefly, animals at postnatal days 5\u20138 were quickly decapitated and brains placed in ice-cold Gey\u2019s balanced salt solution under sterile conditions. Hippocampi were dissected out and coronal slices (350 \u00b5m) were cut using a tissue chopper (McIlwain) and incubated at 35\u00b0C with serum-containing medium on Millicell culture inserts (CM, Millipore). The medium was replaced every 2\u20133 days.\n\n### LED illumination\n\nFor cells expressing optoFGFR1, all steps before biochemical, confocal, or electrophysiological analysis were done in the dark. COS-7 cells or organotypic hippocampal slices were exposed to light pulses of 1 s every other second for 15 min or 24 hr, respectively, by placing the six-well plates under a custom-made rectangular array comprising 8 \u00d7 12 light emitting diodes (LEDs) (470 nm, 15 mW each), powered by a 24 V DC supply, and driven by an internal Arduino Leonardo pulse generator. The array was covered with a 5-mm-thick white Plexiglas sheet to dim the emitted light power by\u00a0~100 fold (2.5 \u00b5W/mm\u00b2).\n\n### Immuno-precipitation, SDS\u2013PAGE, and immunoblotting\n\nCOS-7 cells were treated with 10 \u00b5M pervanadate for 15 min before lysis to preserve phosphate groups on Nlgn1. Whole-cell protein extracts were obtained by solubilizing cells in lysis buffer (50 mM HEPES, pH 7.2, 10 mM EDTA, 0.1% SDS, 1% NP-40, 0.5% DOC, 2 mM Na-Vanadate, 35 \u00b5M PAO, 48 mM Na-Pyrophosphate, 100 mM NaF, 30 mM phenyl-phosphate, 50 \u00b5M NH4-molybdate and 1 mM ZnCl2) containing protease Inhibitor Cocktail Set III, EDTA-Free (Calbiochem). Lysates were clarified by centrifugation at 8000\u00a0\u00d7\u00a0g for 15 min. Equal amounts of protein (500 \u00b5g, estimated by Direct Detect assay, Merck Millipore) were incubated overnight with 2 \u00b5g rabbit anti-Nlgn1 (Synaptic systems 129013), then precipitated with protein G beads (Dynabeads Protein G, Thermo Fisher Scientific) and washed four times with lysis buffer. At the end of the immunoprecipitation, 20 \u00b5L beads were resuspended in 20 \u00b5L of 2x loading buffer (120 mM Tris-HCl, 3% SDS, 10% glycerol, 2% \u03b2-mercaptoethanol, 0.02% bromophenol blue, pH\u00a0=\u00a06.8). After magnetic beads isolation, half of the supernatants or starting materials (10\u201320 \u00b5g) were separated on 4\u201315% Mini-PROTEAN TGX Precast Protein Gels (Bio-Rad) and transferred to nitrocellulose membranes for immunoblotting (semi-dry, 7 min, Bio-Rad). After blocking with 5% non-fat dried milk in Tris-buffered saline Tween-20 (TBST; 28 mM Tris, 137 mM NaCl, 0.05% Tween-20, pH 7.4) for 45 min at room temperature, membranes were probed for 1 hr at room temperature or overnight at 4\u00b0C with mouse anti-phosphotyrosine (1:1000, Cell Signaling Technology 9411S), rabbit anti-Nlgn1 (1:1000,\u00a0Synaptic systems 129013), rabbit anti-FGFR1 (1:1000, Cell Signaling Technology D8E4), or rat anti-HA (1:1000, Roche 3F10). After washing three times with TBST buffer, blots were incubated for 1 hr at room temperature with the corresponding horseradish peroxidase (HRP)\u2013conjugated goat secondary antibodies (1:5000, Jackson Immunoresearch) for input samples, or Easyblot HRP antibodies (GeneTex) for IP samples. The latter was used to avoid the detection of primary antibodies from the IP. Target proteins were detected by chemiluminescence with Super signal West Femto (Pierce) on the ChemiDoc Touch system (Bio-Rad).\n\n### Single-cell electroporation\n\nAfter 3\u20134 days in culture, organotypic slices were transferred to an artificial cerebrospinal fluid (ACSF) containing (in mM): 130 NaCl, 2.5 KCl, 2.2 CaCl2, 1.5 MgCl2, 10 D-glucose, 10 HEPES (pH 7.35, osmolarity adjusted to 300 mOsm). CA1 pyramidal cells were then processed for single-cell electroporation using glass micropipets containing plasmids encoding TdTomato (6 ng/\u00b5L) and optoFGFR1 (13 ng/\u00b5L). For rescue experiments, a plasmid carrying the Nlgn1 specific shRNA (13 ng/\u00b5L) was electroporated along with a resistant AP-Nlgn1 or Y782F mutant (13 ng/\u00b5L), BirAER (6\u00a0ng/\u00b5L), TdTomato (6 ng/\u00b5L) and optoFGFR1 (13 ng/\u00b5L). Micropipets were pulled from 1 mm borosilicate capillaries (Harvard Apparatus) with a vertical puller (Narishige). Electroporation was performed by applying four square pulses of negative voltage (\u22122.5 V, 25 ms duration) at 1 Hz, then the pipet was gently removed. 10\u201320 neurons were electroporated per slice, and the slice was placed back in the incubator for 2\u20133 days before electrophysiology or confocal imaging.\n\n### Immunohistochemistry\n\nFor visualization of recombinant AP-Nlgn1 and spine morphology in electroporated CA1 neurons expressing tdTomato, AP-Nlgn1 and BirAER, organotypic slices were fixed with 4% paraformaldehyde- 4% sucrose in PBS for 4 hr before the permeabilization of membranes with 0.25% Triton in PBS. Slices were subsequently incubated with NeutrAvidin (1:200,\u00a0Invitrogen, A2226) conjugated to NHS-ester ATTO 647N (ATTO-TEC GmbH, AD 647 N-31) for 2 hr at room temperature. For visualization of HA-tagged optoFGFR1, fixed and permeabilized slices were incubated with rat anti-HA (Roche, clone 3F10, 1:100) overnight at 4\u00b0C. Slices were subsequently incubated with Alexa647-conjugated goat anti-rat antibody (Molecular Probes, 1:200) for 2 hr at room temperature.\n\n### Confocal microscopy and spine counting\n\nFor fixed slices, images of single CA1 electroporated neurons co-expressing tdTomato, BirAER and AP-Nlgn1 (WT or Y782F mutant) were acquired on a commercial Leica DMI6000 TCS SP5 microscope using a 63x/1.4 NA oil objective and a pinhole opened to one time the Airy disk. Images of 4096 \u00d7 4096 pixels, giving a pixel size of 70 nm, were acquired at a scanning frequency of 400 Hz. The number of optical sections was between 150\u2013200, using a vertical step size of 0.3\u20130.4 \u00b5m. The number of spines per unit dendrite length of tdTomato-positive cells in secondary and tertiary apical dendrites was calculated manually using Metamorph (Molecular Devices).\n\nTo assess the effect of optoFGFR1 stimulation on the formation of dendritic spines, we took confocal stacks of the dendritic tree of several CA1 neurons before light stimulation, then exposed the organotypic slices to dim 470 nm light pulses (1 s pulse every 2 s, 2.5 \u00b5W/mm\u00b2) through the LED array placed in the incubator for 24 hr, and finally took another round of images of the same neurons. For such time-lapse imaging, short imaging sessions (10\u201315 min) of live electroporated slices were carried out with a commercial Leica DMI6000 TCS SP5 microscope using a 63x/0.9 NA dipping objective and a pinhole opened to one time the Airy disk. Slices were maintained in HEPES-based ACSF. Laser intensity in all these experiments was kept at a minimum and acquisition conditions remained similar between the two imaging sessions. 12-bit images of 1024 \u00d7 1024 pixels, giving a pixel size of 120 nm, were acquired at a scanning frequency of 400 Hz. The number of optical sections varied between 150\u00a0and\u00a0200, and the vertical step size was 0.3\u20130.4 \u00b5m. The number of spines per unit dendrite length of tdTomato-positive neurons was calculated manually in Metamorph.\n\n### Electrophysiological recordings\n\nWhole-cell patch-clamp recordings were carried out at room temperature in CA1 neurons from organotypic hippocampal cultures, placed on a Nikon Eclipse FN1 upright microscope equipped with a motorized stage and two manipulators (Scientifica). CA1 pyramidal neurons were imaged with DIC and electroporated neurons were identified by visualizing the GFP or Tdtomato fluorescence. The recording chamber was continuously perfused with ACSF bubbled with 95% O2/5% CO2 containing (in mM): 125 NaCl, 2.5 KCl, 26 NaHCO3, 1.25 NaH2PO4, 2 CaCl2, 1 MgCl2, and 25 glucose. 20 \u00b5M bicuculline and 100 nM NBQX were added to block inhibitory synaptic transmission and reduce epileptiform activity, respectively. The series resistance Rs was left uncompensated, and recordings with Rs higher than 30 M\u03a9 were discarded. We measured both AMPA- and NMDA-receptor mediated EPSCs upon electrical stimulation of Schaffer\u2019s collaterals, using a double-patch clamp configuration to normalize the recordings with respect to a neighboring non-electroporated neuron (Shipman et al., 2011). Voltage-clamp recordings were digitized using the Multiclamp 700B amplifier (Axon Instruments) and acquired using the Clampex software (Axon Instruments). EPSCs and IPSCs were evoked in an electroporated neuron and a nearby non-electroporated neuron (control) every 10 s for 5 min using a bipolar electrode in borosilicate theta glass filled with ACSF and placed in the stratum radiatum or pyramidal layer; respectively. AMPAR-mediated currents were recorded at \u221270 mV and NMDAR-mediated currents were recorded at +40 mV and measured 50 ms after the stimulus, when AMPAR-mediated EPSCs are back to baseline. IPSCs were recorded at +10 mV and in the presence of 10 \u00b5M NBQX and 50 \u00b5M D-AP5 to block AMPARs and NMDARs, respectively. EPSCs and IPSCs amplitude measurements were performed using Clampfit (Axon Instruments).\n\nFor LTP recordings, ACSF contained in (mM) 125 NaCl, 2.5 KCl, 26 NaHCO3, 1.25 NaH2PO4, 4 CaCl2, 4 MgCl2, 25 glucose, and 0.02 bicuculline, while recording pipettes were filled with intracellular solution containing in mM: 125 Cs-MeSO4, 10 CsCl, 10 HEPES, 2.5 MgCl2, 4 Na2ATP, 0.4 NaGTP and 10 phosphocreatine. Axons from CA3 pyramidal cells were cut with a scalpel to prevent spontaneous action potential propagation. Slices were maintained at 25\u00b0C throughout the recording. Baseline AMPAR-mediated EPSCs were recorded every 10 s for 2 min before LTP induction. Then LTP was induced by depolarizing the cells to 0 mV while stimulating the afferent Schaffer\u2019s collaterals at 2 Hz for 100 s. Recordings were sampled at \u221270 mV every 10 s for 30 min after LTP induction. In some recordings, LTP was induced in presence of 50 \u00b5m D-AP5 to block NMDARs. Between the stimulations, spontaneous AMPAR-mediated EPSCs (sEPSCs) were also recorded. sEPSC amplitude, frequency, rise time and decay times were measured from averaged sEPSCs using miniAnalysis (Synaptosoft).\n\n### Computer simulations of AMPAR diffusion-trapping in LTP conditions\n\nThe computer program is based on a previous framework describing the role of AMPAR membrane dynamics in synaptic plasticity (Cz\u00f6nd\u00f6r et al., 2012). Our original model included two types of processes to target AMPAR to synapses, that\u00a0is diffusional trapping and vesicular recycling. However, based on recent experimental findings that hippocampal LTP primarily involves the diffusional trapping of extra-synaptic AMPARs (Granger et al., 2013; Penn et al., 2017), the current model focuses only on this process. Briefly, a dendritic segment is approximated by a 2D rectangular region (2 \u00b5m x 10 \u00b5m) containing five synapses (squares of 0.3 \u00b5m x 0.3 \u00b5m, surface area\u00a0~0.1 \u00b5m\u00b2), corresponding to a linear density of 0.5 synapse/\u00b5m as measured experimentally (Letellier et al., 2018). This area is populated with 1000 AMPARs, initially placed at random positions. AMPARs are characterized by their 2D coordinates x and y, over time, t. When AMPARs reach the region contours, rebound conditions are applied to keep them inside, that\u00a0is the system is closed. At each time step (\u2206t\u00a0=\u00a0100 ms), the coordinates are incremented by the distances \u0394x = (2D\u2206t)1/2 nx and \u0394y = (2D\u2206t)1/2 ny, where nx and ny are random numbers generated from a normal distribution, and D is a diffusion coefficient which depends on whether AMPARs are outside (Dout\u00a0=\u00a00.1 \u00b5m2/s) or inside (Din\u00a0=\u00a00.05 \u00b5m\u00b2/s) the synapse, values being taken from single molecule tracking experiments (Nair et al., 2013). Lower AMPAR diffusion within the synaptic cleft is attributed to steric hindrance. To introduce a diffusion barrier at the synapse (Ewers et al., 2014), AMPARs are allowed to cross the synaptic border with a probability Pcrossing\u00a0=\u00a00.5.\n\nWithin the synapse, AMPARs may reversibly bind to static post-synaptic density (PSD) components, namely PDZ domain containing scaffolding proteins including PSD-95, S-SCAM, PICK or GRIP, through the C-terminal PDZ motifs of GluA1/2, or of TARPs (Bats et al., 2007; Kim and Sheng, 2004). To describe those dynamic interactions, we define two global parameters, the AMPAR/scaffold binding and unbinding rates (kon\u00a0=\u00a01 s\u22121 and koff\u00a0=\u00a00.04 s\u22121, respectively), obtained by previously fitting SPT and FRAP experiments (Cz\u00f6nd\u00f6r et al., 2012). AMPARs are allowed to stay in the PSD if the probability of binding in this time interval (kon.\u2206t) is greater than a random number between 0 and 1 generated from a uniform distribution. Otherwise, AMPARs continue to diffuse with coefficient Din. When bound to the PSD, AMPARs move with a lower diffusion coefficient Dtrap\u00a0=\u00a00.006 \u00b5m2/s, corresponding to confinement in the PSD (Cz\u00f6nd\u00f6r et al., 2013; Nair et al., 2013). AMPARs stay in the PSD until their detachment probability (koff.\u2206t), exceeds another random number. Then, AMPARs can bind the same PSD again or escape into the extra-synaptic space. At steady state (reached for t\u00a0>\u00a01/koff), there is a dynamic equilibrium between synaptic and extra-synaptic AMPARs. The enrichment ratio between synaptic and extra-synaptic AMPAR density is given by the formula: Pcrossing (Dout/Din) (1 + kon/koff). The maximal theoretical number of AMPARs per synapse is 200, when all extra-synaptic receptors in the system have been captured (given the excess of scaffolds versus AMPARs, we do not impose a saturation of binding sites here). With the chosen parameters however, there are about 30 AMPARs per synapse at basal state in control conditions, close to experimental measurements made by super-resolution imaging and freeze-fracture EM (Levet et al., 2015; Shinohara et al., 2008). The effect of Nlgn1 tyrosine phosphorylation on basal synaptic AMPAR levels was simulated by raising the AMPAR/scaffold binding rate (kon), thereby mimicking an increase in the steady-state number of average post-synaptic AMPAR trapping slots observed experimentally (Giannone et al., 2013; Letellier et al., 2018; Mondin et al., 2011).\n\nTo simulate LTP, the AMPAR/scaffold unbinding rate (koff) was decreased at time zero from higher (0.02 to 0.08 s\u22121) to lower values (0.002\u20130.006 s\u22121), hereby mimicking a higher affinity of TARPs to PSD-95 induced by CamKII activation (Hafner et al., 2015; Opazo et al., 2010). When we tried instead to simulate LTP by raising the parameter kon at time zero, the predicted time course was much more rapid than the one observed experimentally (i.e. the plateau was reached in about one minute). Thus, that type of mechanism is not likely to operate in the particular LTP protocol used here. The total length of the trajectories was set to 35 min, including a 5 min baseline, to match the whole duration of LTP experiments. Ten simulations were generated for each type of condition, and the number of AMPARs per synapse was determined and averaged (sem is within 1% of the mean). To determine the theoretical relationship between LTP level and basal synaptic AMPARs content, the parameter kon was varied between 0.075 s\u22121 and 10 s\u22121, thus simulating synapses that contain less or more AMPARs, respectively. We provide here as a supplemental text file the original Mathematica source code described earlier to simulate LTP experiments (Cz\u00f6nd\u00f6r et al., 2012). However, the algorithm used to make the simulations in this paper is part of a new, integrated software called FluoSim, which is submitted elsewhere (Lagard\u00e8re et al., 2020) and whose source code will be made freely available through github once published.\n\n### Sampling and statistics\n\nFor the analysis of dendritic spines observed by confocal microscopy, N et n values represent the total number of cells and dendrites, respectively. For each experiment, three\u00a0to\u00a0four independent dissections (from two to three animals) were used. Sample sizes were determined according to previous studies (Letellier et al., 2018; Shipman et al., 2011).\n\nSummary statistics are presented as mean\u00a0\u00b1\u00a0SEM (Standard Error of the Mean), including individual data points. Statistical significance tests were performed using GraphPad Prism software (San Diego, CA). Test for normality was performed with D\u2019Agostino and Pearson omnibus normality test. Paired data obtained by imaging or electrophysiology experiments were compared using the Wilcoxon matched-pairs signed rank test when criteria for normality were not met. When paired data followed a normal distribution, we used a paired t-test. The non-electroporated neuron serves as a paired control, since it is patched simultaneously as the electoporated neuron and receives the same input fibers and stimulation. ANOVA test was used to compare means of several groups of normally distributes variables. Kruskal-Wallis test was used to compare several groups showing non-normal distributions. Dunn\u2019s multiple comparisons post hoc test was then used to determine the p value between two conditions. Statistical significance was assumed when p<0.05. In the figures, *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001.\n\n### Ethical statement\n\nThe authors declare that they have complied with all relevant ethical regulations (study protocol approved by the Ethical Committee of Bordeaux CE50).\n",
+      "created_at": "2025-12-02T16:38:30.136240Z"
+    },
+    {
+      "id": "60f4ee20-f3b7-4692-840e-eadd22b16cd6",
+      "submission_id": "b30703cc-b4c8-4e65-b9c6-848217558ae4",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Graeme W Davis, University of California, San Francisco United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.52027.sa1](https://doi.org/10.7554/eLife.52027.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nThe authors demonstrate the impact of an elegant technique, using light-induced phosphorylation of neuroligin-1 to gauge the impact of endogenous neuroligin-1 on synaptic function and plasticity in organotypic cultures of hippocampal CA1 neurons. This is an important advance for the field, answering fundamental issues and opening the door to new experiments to be pursued in the future.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Optogenetic control of excitatory post-synaptic differentiation through neuroligin-1 tyrosine phosphorylation\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Gary Westbrook as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Markus Missler (Reviewer #1).\n\nSummary:\n\nThree reviewers have read, reviewed and discussed your work. All three appreciate the novelty and importance of the work, a view that is shared by the reviewing editor. The authors demonstrate the impact of light-induced phosphorylation of neuroligin-1 on synaptic function in organotypic cultures of hippocampal CA1 neurons. They report that Nlgn1 phosphorylation at residue Y782 enhances AMPA receptor mediated excitatory PSCs and increases dendritic spine density. In addition, they find reduced LTP levels upon phosphorylation, which they explain by trapping AMPAR in the synapse at the cost of depleting extrasynaptic AMPAR populations. Together, this study confirms key findings and concepts from previous papers (Giannone et al., 2013; Letellier et al., 2018) that examined manipulations of the Nlgn gene and protein. The strong point of the current manuscript is the successful use of an elegant, state-of-the-art method of light-induced phosphorylation and the fact that they address for the first time, at least in the majority of experiments, effects are observed in the background of endogenous Nlgn expression levels. All reviewers consider the work sufficiently novel and relevant for eventual publication in eLife if the authors are able to address major concerns outlined below. It is the general opinion of the reviewers that this additional work is within the scope of the two month window required by eLife, and would not necessitate generation of any new reagents. The additional work would provide essential controls for the final LTP experiments, and are therefore considered essential.\n\nEssential Revisions:\n\n1) The LTP data under optogenetically induced phosphorylation needs to contain at least the Nlgn1 KO or shRNA control under light condition to prove that abolishment of LTP is in fact due to the phosphorylation of Nlgn1. The authors have included this control for other phenotypic observations (AMPAR EPSCs, dendritic spines) but the LTP experiment should include at least one of these control conditions as well.\n\n2) Figure 4B) It is not well explained why a statistical test for paired data sets can be used here since it does not represent the same cells before and after light induction.\n\n3) In a previous paper, authors showed that overexpression of Nlg1 WT and Nlg1 Y782A but not Nlg1 Y782F affect AMPAR-EPSCs (Lettellier et al., 2018), but here in a replacement system, Nlg1 WT and Y782F do not have a significant effect on AMPAR EPSC. Can the authors discuss? Further, can the authors make comparisons with the previously published work more transparent?\n\n4) Figure 3E and F. comparisons between different conditions should be added, or the authors can state why such comparisons are not necessary.\n\n5) Nlg1 KO has been shown to decrease NMDAR-EPSC, but here the authors did not see a decrease. This discrepancy with the literature should be acknowledged and commented upon in the text.\n",
+      "created_at": "2025-12-02T16:38:30.136240Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T16:38:30.136240Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T16:38:30.136240Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "3fbf94dd-a338-4df3-ae4f-e3f2ad623833",
+      "content_id": "06f9fb17-9622-4c23-9eed-3b0d0c4af993",
+      "claim_id": "C1",
+      "claim": "OptoFGFR1 is a photoactivatable version of FGFR1 that can be used to control Nlgn1 phosphorylation.",
+      "claim_type": "EXPLICIT",
+      "source": "To acutely control Nlgn1 phosphorylation independently of endogenous ligand-activated kinases, we thus used here a photoactivatable version of FGFR1 (optoFGFR1) (Grusch et al., 2014; Figure 1A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text directly states the use of optoFGFR1 and cites a previous publication describing it.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:38:30.136240Z"
+    },
+    {
+      "id": "cf17ebbc-5bad-47c7-a658-2f3d5527b8c2",
+      "content_id": "06f9fb17-9622-4c23-9eed-3b0d0c4af993",
+      "claim_id": "C2",
+      "claim": "Light stimulation of optoFGFR1 induces Nlgn1 phosphorylation comparable to constitutively active FGFR1.",
+      "claim_type": "EXPLICIT",
+      "source": "The stimulation of optoFGFR1 by light induced as much Nlgn1 phosphorylation as constitutively active FGFR1 (Figure 1C,D) (conditions CA and opto+, respectively), indicating potent kinase activation, while samples kept in the dark (conditions light-) did not show significant pTyr levels, revealing no unspecific effect of light.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by immunoblot data shown in Figure 1C,D comparing phosphorylation levels.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:38:30.136240Z"
+    },
+    {
+      "id": "6f7ff035-29da-4399-80f7-b5992062e723",
+      "content_id": "06f9fb17-9622-4c23-9eed-3b0d0c4af993",
+      "claim_id": "C3",
+      "claim": "Y782 is the only tyrosine residue on Nlgn1 phosphorylated by light-gated optoFGFR1.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, no phosphorylation of the point mutant Nlgn1-Y782F was observed upon light application (Figure 1C,D), demonstrating that Y782 is the only tyrosine residue on Nlgn1 which is phosphorylated by light-gated optoFGFR1.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data showing no phosphorylation of the Y782F mutant.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:38:30.136240Z"
+    },
+    {
+      "id": "7ed0936c-061a-4816-907b-b4bba03b4e43",
+      "content_id": "06f9fb17-9622-4c23-9eed-3b0d0c4af993",
+      "claim_id": "C4",
+      "claim": "Light activation of optoFGFR1 for 24 hours increases dendritic spine density by approximately 25% in wild-type neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Dendritic spine density increased by ~25% in neurons exposed to 470 nm light pulses for 24 hr, but remained stable in neurons expressing optoFGFR1 and kept in the dark, or in light-stimulated CA1 neurons from Nlgn1 KO slices (Figure 2C,D), demonstrating that this effect is mediated by light-dependent tyrosine phosphorylation of endogenous Nlgn1.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by quantitative spine density measurements shown in Figure 2C,D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:38:30.136240Z"
+    },
+    {
+      "id": "6d65aa68-b03d-4aec-b9d7-93ec360214fa",
+      "content_id": "06f9fb17-9622-4c23-9eed-3b0d0c4af993",
+      "claim_id": "C5",
+      "claim": "The increase in dendritic spine density upon optoFGFR1 activation does not occur in Nlgn1 KO neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Dendritic spine density increased by ~25% in neurons exposed to 470 nm light pulses for 24 hr, but remained stable in neurons expressing optoFGFR1 and kept in the dark, or in light-stimulated CA1 neurons from Nlgn1 KO slices (Figure 2C,D), demonstrating that this effect is mediated by light-dependent tyrosine phosphorylation of endogenous Nlgn1.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data comparing wild-type and Nlgn1 KO neurons.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:38:30.136240Z"
+    },
+    {
+      "id": "fc8dc129-3647-4036-9378-13e662c62a50",
+      "content_id": "06f9fb17-9622-4c23-9eed-3b0d0c4af993",
+      "claim_id": "C6",
+      "claim": "Light activation of optoFGFR1 increases evoked AMPAR-mediated EPSCs by approximately 200% compared to controls.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, neurons expressing optoFGFR1 and exposed to light for 24 hr exhibited ~200% larger evoked AMPAR-mediated EPSCs compared to non-electroporated neighbors that also received light, or to neurons expressing optoFGFR1 and kept in the dark (Figure 3D,F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by electrophysiological recordings shown in Figure 3D,F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:38:30.136240Z"
+    },
+    {
+      "id": "3595fe53-947f-4a87-b525-40abe27a1b43",
+      "content_id": "06f9fb17-9622-4c23-9eed-3b0d0c4af993",
+      "claim_id": "C7",
+      "claim": "Light activation of optoFGFR1 increases the frequency of spontaneous AMPAR-mediated EPSCs by almost two-fold.",
+      "claim_type": "EXPLICIT",
+      "source": "This was accompanied by an almost two-fold increase in the frequency of spontaneous AMPAR-mediated EPSCs (Figure 3B,C), in agreement with the higher number of dendritic spines.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by electrophysiological data shown in Figure 3B,C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:38:30.136240Z"
+    },
+    {
+      "id": "6dfecbe2-fb99-48ee-805a-807c037f7176",
+      "content_id": "06f9fb17-9622-4c23-9eed-3b0d0c4af993",
+      "claim_id": "C8",
+      "claim": "OptoFGFR1 activation does not change AMPAR channel conductance.",
+      "claim_type": "EXPLICIT",
+      "source": "No change in the amplitude or kinetics of spontaneous AMPAR-mediated EPSCs was measured (Figure 3\u2014figure supplement 1A\u2013C), indicating that optoFGFR1 activation did not change AMPAR channel conductance.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by measurements of sEPSC amplitude and kinetics.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:38:30.136240Z"
+    },
+    {
+      "id": "bd754271-6182-419a-804c-a0dd7e2f83f7",
+      "content_id": "06f9fb17-9622-4c23-9eed-3b0d0c4af993",
+      "claim_id": "C9",
+      "claim": "Light activation of optoFGFR1 does not significantly affect evoked NMDAR-mediated EPSCs.",
+      "claim_type": "EXPLICIT",
+      "source": "In parallel, there was no significant impact of optoFGFR1 expression and/or light on evoked NMDAR-mediated EPSCs (Figure 3E,G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by electrophysiological recordings shown in Figure 3E,G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:38:30.136240Z"
+    },
+    {
+      "id": "23f0ec5b-affb-4cac-950e-d9f32b61db77",
+      "content_id": "06f9fb17-9622-4c23-9eed-3b0d0c4af993",
+      "claim_id": "C10",
+      "claim": "The light-induced increase in AMPAR-mediated EPSCs is not observed in CA1 neurons from Nlgn1 KO slices.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, the light-induced increase AMPAR-mediated EPSCs was not observed in CA1 neurons from Nlgn1 KO slices (Figure 3D,F), demonstrating that this effect involves the selective tyrosine phosphorylation of Nlgn1.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by electrophysiological data comparing wild-type and Nlgn1 KO neurons.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:38:30.136240Z"
+    },
+    {
+      "id": "cf55668c-cb2a-4592-b72c-4a43a845e15a",
+      "content_id": "06f9fb17-9622-4c23-9eed-3b0d0c4af993",
+      "claim_id": "C11",
+      "claim": "OptoFGFR1 activation does not change the paired-pulse ratio, suggesting presynaptic function is unaltered.",
+      "claim_type": "EXPLICIT",
+      "source": "The paired-pulse ratio was not changed by optoFGFR1 expression or light exposure, suggesting that presynaptic function was unaltered (Figure 3\u2014figure supplement 1D,E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by paired-pulse ratio measurements.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:38:30.136240Z"
+    },
+    {
+      "id": "45413828-4bf0-4072-8315-6ee0a1aa4416",
+      "content_id": "06f9fb17-9622-4c23-9eed-3b0d0c4af993",
+      "claim_id": "C12",
+      "claim": "OptoFGFR1 stimulation has no effect on inhibitory currents recorded in CA1 neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, although the critical tyrosine residue belonging to the gephyrin-binding motif is conserved in Nlgn2 and Nlgn3 (Poulopoulos et al., 2009), where it can also be phosphorylated (Letellier et al., 2018), no effect of optoFGFR1 stimulation was observed on inhibitory currents recorded in CA1 neurons (Figure 3\u2014figure supplement 1F,G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by electrophysiological recordings of IPSCs.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:38:30.136240Z"
+    },
+    {
+      "id": "3aba89fd-d6bf-470c-b8f7-42d71ffcd8c7",
+      "content_id": "06f9fb17-9622-4c23-9eed-3b0d0c4af993",
+      "claim_id": "C13",
+      "claim": "The phosphorylation mechanism is specific to the Nlgn1 isoform at excitatory post-synapses.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these data demonstrate that the phosphorylation mechanism is specific to the Nlgn1 isoform at excitatory post-synapses, and selectively affects AMPAR recruitment at pre-existing or newly formed spines.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an interpretation of the combined data showing specificity for Nlgn1 and excitatory synapses.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:38:30.136240Z"
+    },
+    {
+      "id": "72ceb1a0-a0da-4e6d-9fb1-be67c722efd1",
+      "content_id": "06f9fb17-9622-4c23-9eed-3b0d0c4af993",
+      "claim_id": "C14",
+      "claim": "The increase in spine density and AMPAR-mediated EPSCs by optoFGFR1 activation is not observed in CA1 neurons expressing Nlgn1-Y782F.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, the increase in spine density and AMPAR-mediated EPSCs by optoFGFR1 activation was not observed in CA1 neurons expressing Nlgn1-Y782F (Figure 4C,E and Figure 4\u2014figure supplement 1), indicating that those effects are mediated by phosphorylation of the Nlgn1 Y782 residue induced by the photo-activation of optoFGFR1.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experiments using the Y782F mutant shown in Figures 4C,E and supplement.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:38:30.136240Z"
+    },
+    {
+      "id": "802a07da-a398-4312-b20f-b7659a169f3a",
+      "content_id": "06f9fb17-9622-4c23-9eed-3b0d0c4af993",
+      "claim_id": "C15",
+      "claim": "CA1 neurons expressing optoFGFR1 and pre-exposed to light show a significant ~50% reduction in the LTP plateau level compared to control non-electroporated neighbors.",
+      "claim_type": "EXPLICIT",
+      "source": "CA1 neurons expressing optoFGFR1 and pre-exposed to light showed a significant ~50% reduction in the LTP plateau level compared to control non-electroporated neighbors (Figure 5A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by LTP recordings shown in Figure 5A,B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:38:30.136240Z"
+    },
+    {
+      "id": "3efdff66-fcbe-4ce5-abb8-76a868090c26",
+      "content_id": "06f9fb17-9622-4c23-9eed-3b0d0c4af993",
+      "claim_id": "C16",
+      "claim": "Light stimulation of optoFGFR1 does not alter LTP in Nlgn1 KO neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "However, light stimulation of optoFGFR1 did not alter LTP in Nlgn1 KO neurons (Figure 5C,D), indicating that Nlgn1 phosphorylation is responsible for the decreased LTP in wild-type neurons.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by LTP recordings in Nlgn1 KO neurons shown in Figure 5C,D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:38:30.136240Z"
+    },
+    {
+      "id": "1900a5e2-8d16-40a4-a3d2-e326494bcca3",
+      "content_id": "06f9fb17-9622-4c23-9eed-3b0d0c4af993",
+      "claim_id": "C17",
+      "claim": "The LTP level in Nlgn1 KO neurons is barely reduced compared to wild-type.",
+      "claim_type": "EXPLICIT",
+      "source": "To check if this effect was again specific of Nlgn1, we performed LTP experiments in hippocampal slices from Nlgn1 KO mice. Surprisingly, the LTP level was barely reduced (Figure 5A,C), despite a significant decrease in NMDA/AMPA ratio in control non-electroporated Nlgn1 KO neurons compared to neurons from WT mice (Figure 5\u2014figure supplement 1B; Budreck et al., 2013; Chubykin et al., 2007).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by LTP recordings comparing wild-type and Nlgn1 KO neurons.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:38:30.136240Z"
+    },
+    {
+      "id": "8364d700-ed83-45e2-b649-0578b18fb74b",
+      "content_id": "06f9fb17-9622-4c23-9eed-3b0d0c4af993",
+      "claim_id": "C18",
+      "claim": "Computer simulations of AMPAR diffusion-trapping match experimental LTP data in terms of kinetics and plateau value (~270%).",
+      "claim_type": "EXPLICIT",
+      "source": "The simulations matched very well experimental LTP (Figure 5A,C), both in terms of kinetics and plateau value (~270%), supporting this diffusion/trap model.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by comparison of simulation results with experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:38:30.136240Z"
+    },
+    {
+      "id": "c2bdfa47-3d13-44ad-a9cb-ee76438ae3cd",
+      "content_id": "06f9fb17-9622-4c23-9eed-3b0d0c4af993",
+      "claim_id": "C19",
+      "claim": "Increasing the AMPAR/scaffold binding rate in simulations results in a ~2 fold increase of basal synaptic AMPAR number, reproducing experimental data.",
+      "claim_type": "EXPLICIT",
+      "source": "To mimic the effect of Nlgn1 phosphorylation on postsynaptic density (PSD) assembly and AMPAR recruitment (Letellier et al., 2018), we raised the AMPAR/scaffold binding rate, resulting in a ~2 fold increase of basal synaptic AMPAR number (Figure 6\u2014figure supplement 1C) reproducing the experimental data (Figure 3D,F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by simulation results matching experimental observations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:38:30.136240Z"
+    },
+    {
+      "id": "dedda18b-ea22-4091-b0a9-917c072e8f10",
+      "content_id": "06f9fb17-9622-4c23-9eed-3b0d0c4af993",
+      "claim_id": "C20",
+      "claim": "The partial occlusion of LTP upon optoFGFR1 stimulation can be explained by high initial recruitment of synaptic AMPARs, which depletes the extra-synaptic AMPAR reservoir necessary for LTP.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the partial occlusion of LTP observed upon optoFGFR1 stimulation can be explained by a high initial recruitment of synaptic AMPARs, which depletes the extra-synaptic AMPAR reservoir necessary for LTP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an interpretation based on simulation results and experimental data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:38:30.136240Z"
+    },
+    {
+      "id": "26ae58e9-8bcb-47f4-995e-8a93c0afba4a",
+      "content_id": "06f9fb17-9622-4c23-9eed-3b0d0c4af993",
+      "claim_id": "C21",
+      "claim": "The model predicts a negative correlation between basal synaptic AMPAR number and the ability to respond to LTP.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, our model predicts a negative correlation between basal synaptic AMPAR number and the ability to respond to LTP (Figure 6\u2014figure supplement 1D), that perfectly fits the experiments (Figure 6D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by simulation predictions that match experimental observations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:38:30.136240Z"
+    },
+    {
+      "id": "348f8648-32f9-4976-a641-23d32ebb244c",
+      "content_id": "06f9fb17-9622-4c23-9eed-3b0d0c4af993",
+      "claim_id": "C22",
+      "claim": "Nlgn1 tyrosine phosphorylation impairs LTP by promoting high initial synaptic AMPAR levels.",
+      "claim_type": "EXPLICIT",
+      "source": "These data suggest that Nlgn1 tyrosine phosphorylation impairs LTP by promoting high initial synaptic AMPAR levels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an interpretation of the combined experimental and simulation data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:38:30.136240Z"
+    },
+    {
+      "id": "be08c465-eaa5-4be6-8774-27c875d4bb5b",
+      "content_id": "06f9fb17-9622-4c23-9eed-3b0d0c4af993",
+      "claim_id": "C23",
+      "claim": "Unphosphorylated Y782 strongly binds gephyrin.",
+      "claim_type": "EXPLICIT",
+      "source": "This residue belongs to the gephyrin-binding motif and previous experiments showed that unphosphorylated Y782 strongly binds gephyrin - as does a Y782F mutant - while phosphorylated Y782 weakly binds gephyrin, a behavior phenocopied by a Y782A mutant (Giannone et al., 2013; Letellier et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous experimental work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:38:30.136240Z"
+    },
+    {
+      "id": "ac697283-a980-4665-b721-5d3a1ea7d504",
+      "content_id": "06f9fb17-9622-4c23-9eed-3b0d0c4af993",
+      "claim_id": "C24",
+      "claim": "Phosphorylated Y782 weakly binds gephyrin.",
+      "claim_type": "EXPLICIT",
+      "source": "This residue belongs to the gephyrin-binding motif and previous experiments showed that unphosphorylated Y782 strongly binds gephyrin - as does a Y782F mutant - while phosphorylated Y782 weakly binds gephyrin, a behavior phenocopied by a Y782A mutant (Giannone et al., 2013; Letellier et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous experimental work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:38:30.136240Z"
+    },
+    {
+      "id": "5cbcb08c-279d-4ecb-a606-ff34023d33dd",
+      "content_id": "06f9fb17-9622-4c23-9eed-3b0d0c4af993",
+      "claim_id": "C25",
+      "claim": "Neuronal expression of Nlgn1 Y782A promotes dendritic spine density and recruitment of PSD-95 and AMPARs.",
+      "claim_type": "EXPLICIT",
+      "source": "In parallel, neuronal expression of Nlgn1 Y782A (but not Y782F) promotes dendritic spine density and recruitment of PSD-95 and AMPARs (Giannone et al., 2013; Letellier et al., 2018), suggesting that Nlgn1 tyrosine phosphorylation is responsible for these effects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous experimental work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:38:30.136240Z"
+    },
+    {
+      "id": "f3e35591-2956-4dd1-ace2-a7c7867a2147",
+      "content_id": "06f9fb17-9622-4c23-9eed-3b0d0c4af993",
+      "claim_id": "C26",
+      "claim": "Nlgn1 overexpression or knockdown bi-directionally affect synapse number.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, whereas Nlgn OE or KD bi-directionally affect synapse number, full or conditional Nlgn1/2/3 KO does not alter synapse density (Chanda et al., 2017; Chih et al., 2005; Levinson et al., 2005; Prange et al., 2004; Varoqueaux et al., 2006), suggesting that Nlgns are not generally required for synaptogenesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by multiple citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:38:30.136240Z"
+    },
+    {
+      "id": "e3e40ca5-53f5-4092-9650-a784ee4c4736",
+      "content_id": "06f9fb17-9622-4c23-9eed-3b0d0c4af993",
+      "claim_id": "C27",
+      "claim": "Full or conditional Nlgn1/2/3 KO does not alter synapse density.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, whereas Nlgn OE or KD bi-directionally affect synapse number, full or conditional Nlgn1/2/3 KO does not alter synapse density (Chanda et al., 2017; Chih et al., 2005; Levinson et al., 2005; Prange et al., 2004; Varoqueaux et al., 2006), suggesting that Nlgns are not generally required for synaptogenesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by multiple citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:38:30.136240Z"
+    },
+    {
+      "id": "c0cf823c-b02b-4c79-874c-02d494ca0a80",
+      "content_id": "06f9fb17-9622-4c23-9eed-3b0d0c4af993",
+      "claim_id": "C28",
+      "claim": "Neurons might compete with one another for synapse formation, depending on their intrinsic Nlgn1 level.",
+      "claim_type": "EXPLICIT",
+      "source": "To address this apparent conflict, experiments that mixed wild type and Nlgn1 KO neurons suggested the interesting model that neurons might compete with one another for synapse formation, depending on their intrinsic Nlgn1 level (Kwon et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:38:30.136240Z"
+    },
+    {
+      "id": "3a755626-a950-49b6-8c0c-e1fb03e6305d",
+      "content_id": "06f9fb17-9622-4c23-9eed-3b0d0c4af993",
+      "claim_id": "C29",
+      "claim": "Constitutive or conditional Nlgn1/2/3 KO selectively affect basal NMDAR-mediated EPSCs and not AMPAR-mediated EPSCs.",
+      "claim_type": "EXPLICIT",
+      "source": "However, constitutive or conditional Nlgn1/2/3 KO selectively affect basal NMDAR-mediated EPSCs and not AMPAR-mediated EPSCs, and rescue experiments with truncated Nlgn1 mutants suggest that the synaptic recruitment of NMDARs requires the intracellular domain of Nlgn1 (Chanda et al., 2017; Chubykin et al., 2007; Jiang et al., 2017; Wu et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by multiple citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:38:30.136240Z"
+    },
+    {
+      "id": "179e14de-1f26-4de4-9145-fe4a3d38248a",
+      "content_id": "06f9fb17-9622-4c23-9eed-3b0d0c4af993",
+      "claim_id": "C30",
+      "claim": "NMDAR-dependent long-term potentiation (LTP) is impaired by Nlgn1 KD or KO.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, while it is generally accepted that NMDAR-dependent long-term potentiation (LTP) is impaired by Nlgn1 KD or KO, the issues of which Nlgn1 motifs are important in this process and whether the Nlgn1-NMDAR interaction is required, are unclear (Jiang et al., 2017; Kim et al., 2008; Letellier et al., 2018; Shipman and Nicoll, 2012; Wu et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by multiple citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:38:30.136240Z"
+    },
+    {
+      "id": "08f3abdd-566a-4ac3-8a16-5d92805a2e5a",
+      "content_id": "06f9fb17-9622-4c23-9eed-3b0d0c4af993",
+      "claim_id": "C31",
+      "claim": "Nlgn1 can be mislocalized at inhibitory synapses when overexpressed.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, these techniques operate on a long-term basis, that is days to weeks, due to slow protein turnover. Hence, there is a pressing need for alternative paradigms allowing for an acute control of neuroligin signaling pathways (Jeong et al., 2017) without affecting its expression level.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous studies showing mislocalization.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:38:30.136240Z"
+    },
+    {
+      "id": "2a828c7b-3966-48c2-bf3c-ffbcc1222624",
+      "content_id": "06f9fb17-9622-4c23-9eed-3b0d0c4af993",
+      "claim_id": "C32",
+      "claim": "In its tyrosine phosphorylated state, Nlgn1 preferentially recruits intracellular PDZ domain containing scaffolding proteins including PSD-95.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, our results support a mechanism by which, in its tyrosine phosphorylated state, Nlgn1 preferentially recruits intracellular PDZ domain containing scaffolding proteins including PSD-95 (Giannone et al., 2013; Jeong et al., 2019), associated with a morphological stabilization of dendritic spines (Cane et al., 2014) and serving as slots for the diffusional trapping of surface AMPARs (Cz\u00f6nd\u00f6r et al., 2013; Haas et al., 2018; Mondin et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous studies and the current experimental data.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:38:30.136240Z"
+    },
+    {
+      "id": "872f3a61-1266-4b4f-b351-706d4012c172",
+      "content_id": "06f9fb17-9622-4c23-9eed-3b0d0c4af993",
+      "claim_id": "C33",
+      "claim": "NMDAR-mediated EPSCs are not affected by Nlgn1 phosphorylation, supporting the concept of a direct extracellular coupling between Nlgn1 and GluN1.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, NMDAR-mediated EPSCs are not affected by Nlgn1 phosphorylation, supporting the concept of a direct extracellular coupling between Nlgn1 and GluN1 (Budreck et al., 2013; Shipman and Nicoll, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an interpretation of the experimental data supported by citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:38:30.136240Z"
+    },
+    {
+      "id": "725b268c-4988-4cf8-95cc-aa7f1a1afa62",
+      "content_id": "06f9fb17-9622-4c23-9eed-3b0d0c4af993",
+      "claim_id": "C34",
+      "claim": "PSD-95 overexpression increases spine density, enhances AMPAR- but not NMDAR-dependent transmission, and occludes LTP.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, optogenetic Nlgn1 phosphorylation induces a similar response as PSD-95 overexpression by increasing spine density, enhancing AMPAR- but not NMDAR-dependent transmission, and occluding LTP (Ehrlich and Malinow, 2004; El-Husseini et al., 2000; Stein et al., 2003), which further supports our model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:38:30.136240Z"
+    },
+    {
+      "id": "d50c5868-5cd4-47ab-bc92-2e90e47b1ff4",
+      "content_id": "06f9fb17-9622-4c23-9eed-3b0d0c4af993",
+      "claim_id": "C35",
+      "claim": "Hippocampal LTP primarily involves the capture of extra-synaptic AMPARs.",
+      "claim_type": "EXPLICIT",
+      "source": "This model is in line with experiments showing that hippocampal LTP primarily involves the capture of extra-synaptic AMPARs (Granger et al., 2013; Penn et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:38:30.136240Z"
+    },
+    {
+      "id": "90ed3c44-daf4-4191-b97d-f69a94c74bba",
+      "content_id": "06f9fb17-9622-4c23-9eed-3b0d0c4af993",
+      "claim_id": "C36",
+      "claim": "PKA-mediated phosphorylation of the S839 residue in Nlgn1 dynamically regulates PSD-95 binding, affecting both dendritic spine number and AMPAR-mediated miniature EPSCs.",
+      "claim_type": "EXPLICIT",
+      "source": "A strong role of Nlgn1/PSD-95 interaction in synaptic function is also supported by a recent study showing that PKA-mediated phosphorylation of the S839 residue located near the C-terminal PDZ domain binding motif dynamically regulates PSD-95 binding, affecting both dendritic spine number and AMPAR-mediated miniature EPSCs (Jeong et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to a recent study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:38:30.136240Z"
+    },
+    {
+      "id": "031d6fba-ad86-4907-8e4c-5ffedcf0e398",
+      "content_id": "06f9fb17-9622-4c23-9eed-3b0d0c4af993",
+      "claim_id": "C37",
+      "claim": "OptoFGFR1 is lacking a ligand-binding domain, so its light-activation is expected to by-pass the endogenous regulation of Nlgn1 tyrosine phosphorylation.",
+      "claim_type": "EXPLICIT",
+      "source": "Because optoFGFR1 is lacking a ligand-binding domain, its light-activation is expected to by-pass the endogenous regulation of Nlgn1 tyrosine phosphorylation, which involves the Trk family of tyrosine kinases (Letellier et al., 2018) that are responding to intrinsic ligands (BDNF and NGF) (Harward et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an inference based on the structure of optoFGFR1 and citations to previous work.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:38:30.136240Z"
+    },
+    {
+      "id": "53c22663-fb7a-49f0-8ecf-02dbc5801d09",
+      "content_id": "06f9fb17-9622-4c23-9eed-3b0d0c4af993",
+      "claim_id": "C38",
+      "claim": "The endogenous regulation of Nlgn1 tyrosine phosphorylation involves the Trk family of tyrosine kinases.",
+      "claim_type": "EXPLICIT",
+      "source": "Because optoFGFR1 is lacking a ligand-binding domain, its light-activation is expected to by-pass the endogenous regulation of Nlgn1 tyrosine phosphorylation, which involves the Trk family of tyrosine kinases (Letellier et al., 2018) that are responding to intrinsic ligands (BDNF and NGF) (Harward et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:38:30.136240Z"
+    },
+    {
+      "id": "55780990-a22e-4180-bbb1-01b4862c1da2",
+      "content_id": "06f9fb17-9622-4c23-9eed-3b0d0c4af993",
+      "claim_id": "C39",
+      "claim": "Trk family kinases respond to intrinsic ligands BDNF and NGF.",
+      "claim_type": "EXPLICIT",
+      "source": "Because optoFGFR1 is lacking a ligand-binding domain, its light-activation is expected to by-pass the endogenous regulation of Nlgn1 tyrosine phosphorylation, which involves the Trk family of tyrosine kinases (Letellier et al., 2018) that are responding to intrinsic ligands (BDNF and NGF) (Harward et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:38:30.136240Z"
+    },
+    {
+      "id": "44b421fc-0d01-4d84-be2d-07da37e0c11e",
+      "content_id": "06f9fb17-9622-4c23-9eed-3b0d0c4af993",
+      "claim_id": "C40",
+      "claim": "Compensatory expression of Nlgn3 in Nlgn1 KO may explain why AMPAR-mediated EPSCs are not altered in the Nlgn1 KO.",
+      "claim_type": "EXPLICIT",
+      "source": "The fact that AMPAR-mediated EPSCs are not altered in the Nlgn1 KO (Chanda et al., 2017) may result from the compensatory expression of scaffolding or adhesion molecules, in particular Nlgn3 (Dang et al., 2018), which also interacts with PSD-95.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a hypothesis supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:38:30.136240Z"
+    },
+    {
+      "id": "bb4c568f-68db-49c3-aff2-c494571571ab",
+      "content_id": "06f9fb17-9622-4c23-9eed-3b0d0c4af993",
+      "claim_id": "C41",
+      "claim": "A dual Nlgn1/3 KO is required to alter AMPARs levels and AMPAR-mEPSCs in cultured neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "This would explain the fact that a dual Nlgn1/3 (and triple Nlgn1/2/3) KO are required to alter AMPARs levels and AMPAR-mEPSCs in cultured neurons (Chanda et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:38:30.136240Z"
+    },
+    {
+      "id": "fa9a0cab-eab9-4e9e-b887-30c0ca6bf60c",
+      "content_id": "06f9fb17-9622-4c23-9eed-3b0d0c4af993",
+      "claim_id": "C42",
+      "claim": "An optimal level of intracellular Nlgn1 tyrosine phosphorylation is necessary to elicit normal LTP.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, increasing the Nlgn1 phosphorylation by optoFGFR1 activation reduced LTP, as did the expression of the non-phosphorylatable Nlgn1-Y782F mutant (Letellier et al., 2018), suggesting that an optimal level of intracellular Nlgn1 tyrosine phosphorylation is necessary to elicit normal LTP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an interpretation of experimental data and previous findings.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:38:30.136240Z"
+    },
+    {
+      "id": "ec64d703-1540-40df-beba-6d7de0f5f59c",
+      "content_id": "06f9fb17-9622-4c23-9eed-3b0d0c4af993",
+      "claim_id": "C43",
+      "claim": "LTP is impaired in acute slices from Nlgn1/2/3 cKO and can be rescued upon expression of a GPI-anchored Nlgn1 lacking the entire intracellular domain.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, another study found that LTP is impaired in acute slices from Nlgn1/2/3 cKO and can be rescued upon expression of a GPI-anchored Nlgn1 lacking the entire intracellular domain (Wu et al., 2019), and thus the C-terminal PDZ domain binding motif which we find important for anchoring AMPARs through PSD-95 (Letellier et al., 2018; Mondin et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:38:30.136240Z"
+    },
+    {
+      "id": "e34dea91-22cd-4429-b1bd-ba54e008d01c",
+      "content_id": "06f9fb17-9622-4c23-9eed-3b0d0c4af993",
+      "claim_id": "C44",
+      "claim": "The optogenetic approach allows for an acute control of Nlgn1 signaling mechanisms.",
+      "claim_type": "EXPLICIT",
+      "source": "This optogenetic strategy highlights the impact of Nlgn1 intracellular signaling in synaptic differentiation and potentiation, while enabling an acute control of these mechanisms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a summary statement about the advantages of the optogenetic approach.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:38:30.136240Z"
+    },
+    {
+      "id": "e0a26693-0330-442a-9aac-d91001d5f63f",
+      "content_id": "06f9fb17-9622-4c23-9eed-3b0d0c4af993",
+      "claim_id": "C45",
+      "claim": "Nlgn1 intracellular signaling has an impact on synaptic differentiation and potentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "This optogenetic strategy highlights the impact of Nlgn1 intracellular signaling in synaptic differentiation and potentiation, while enabling an acute control of these mechanisms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a summary of the main findings of the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:38:30.136240Z"
+    },
+    {
+      "id": "2fda09c3-beef-437a-a979-9438459bb721",
+      "content_id": "06f9fb17-9622-4c23-9eed-3b0d0c4af993",
+      "claim_id": "C46",
+      "claim": "Nlgn1 is important for regulating dendritic spine number.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, our results show that not only Nlgn1 is important for regulating dendritic spine number, but also that the Nlgn1 intracellular domain mediates AMPAR recruitment in basal conditions and regulates LTP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a summary of the main findings of the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:38:30.136240Z"
+    },
+    {
+      "id": "28ab2ed5-1b33-479d-b87e-bc765781eae1",
+      "content_id": "06f9fb17-9622-4c23-9eed-3b0d0c4af993",
+      "claim_id": "C47",
+      "claim": "The Nlgn1 intracellular domain mediates AMPAR recruitment in basal conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, our results show that not only Nlgn1 is important for regulating dendritic spine number, but also that the Nlgn1 intracellular domain mediates AMPAR recruitment in basal conditions and regulates LTP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a summary of the main findings of the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:38:30.136240Z"
+    },
+    {
+      "id": "e13b6771-29f3-4d5e-aa77-1eb39e755bfe",
+      "content_id": "06f9fb17-9622-4c23-9eed-3b0d0c4af993",
+      "claim_id": "C48",
+      "claim": "The Nlgn1 intracellular domain regulates LTP.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, our results show that not only Nlgn1 is important for regulating dendritic spine number, but also that the Nlgn1 intracellular domain mediates AMPAR recruitment in basal conditions and regulates LTP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a summary of the main findings of the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:38:30.136240Z"
+    },
+    {
+      "id": "43d5d6c8-b71a-4187-8a08-fa890e610e8c",
+      "content_id": "06f9fb17-9622-4c23-9eed-3b0d0c4af993",
+      "claim_id": "C49",
+      "claim": "OptoFGFR1 contains a light-oxygen voltage sensing (LOV) domain fused to the C-terminus.",
+      "claim_type": "EXPLICIT",
+      "source": "In this construct, the extracellular FGF binding domain has been removed, and a light-oxygen voltage sensing (LOV) domain is fused to the C-terminus, such that stimulation with blue light induces dimerization of the FGFR1 intracellular domain and subsequent kinase activation in a ligand-independent manner.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the structure of the optoFGFR1 construct.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:38:30.136240Z"
+    },
+    {
+      "id": "ab4c5fd2-4c86-4e03-a898-ebe4126de9aa",
+      "content_id": "06f9fb17-9622-4c23-9eed-3b0d0c4af993",
+      "claim_id": "C50",
+      "claim": "Stimulation with blue light induces dimerization of the FGFR1 intracellular domain and subsequent kinase activation in a ligand-independent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "In this construct, the extracellular FGF binding domain has been removed, and a light-oxygen voltage sensing (LOV) domain is fused to the C-terminus, such that stimulation with blue light induces dimerization of the FGFR1 intracellular domain and subsequent kinase activation in a ligand-independent manner.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the mechanism of optoFGFR1 activation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:38:30.136240Z"
+    },
+    {
+      "id": "aa669142-ac1d-4c06-9e6f-35110a1961e5",
+      "content_id": "06f9fb17-9622-4c23-9eed-3b0d0c4af993",
+      "claim_id": "C51",
+      "claim": "HA-tagged optoFGFR1 is detected throughout dendrites including spines.",
+      "claim_type": "EXPLICIT",
+      "source": "Immunostained HA-tagged optoFGFR1 was detected throughout dendrites including spines, that is at the right location to phosphorylate Nlgn1 (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by immunostaining data shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:38:30.136240Z"
+    },
+    {
+      "id": "5d72053c-9bfe-45da-95d3-78553fd7cea2",
+      "content_id": "06f9fb17-9622-4c23-9eed-3b0d0c4af993",
+      "claim_id": "C52",
+      "claim": "The increase in frequency of spontaneous AMPAR-mediated EPSCs indicates the formation of synapses containing a fixed bolus of AMPARs.",
+      "claim_type": "EXPLICIT",
+      "source": "The increase in frequency - but not amplitude - of spontaneous AMPAR-mediated EPSCs upon optoFGFR1 stimulation indicates the formation of synapses containing a fixed bolus of AMPARs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an interpretation of the electrophysiological data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:38:30.136240Z"
+    },
+    {
+      "id": "fb3cc800-f458-44df-8e5c-728c1dcbe402",
+      "content_id": "06f9fb17-9622-4c23-9eed-3b0d0c4af993",
+      "claim_id": "C53",
+      "claim": "Unphosphorylated Nlgn1 might associate with gephyrin clusters shown to dynamically appear and disappear on the sides of dendritic spines.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, unphosphorylated Nlgn1 (as mimicked by the Y782F mutant) might associate instead with gephyrin clusters shown to dynamically appear and disappear on the sides of dendritic spines (Villa et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a hypothesis supported by citation to a previous study.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:38:30.136240Z"
+    },
+    {
+      "id": "c9f222fb-1197-4412-aa90-dcc8acd7207e",
+      "content_id": "06f9fb17-9622-4c23-9eed-3b0d0c4af993",
+      "claim_id": "C54",
+      "claim": "By locally controlling Nlgn1 phosphorylation, a single spine might have the possibility to assemble either excitatory or inhibitory scaffolding nanomodules.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, by locally controlling Nlgn1 phosphorylation, a single spine might have the possibility to assemble either excitatory or inhibitory scaffolding nanomodules (Haas et al., 2018; Hruska et al., 2018; Tang et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a hypothesis supported by citations to previous studies.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:38:30.136240Z"
+    },
+    {
+      "id": "a3723f92-3452-4c1d-9da6-4e3005e8bd43",
+      "content_id": "06f9fb17-9622-4c23-9eed-3b0d0c4af993",
+      "claim_id": "C55",
+      "claim": "The tyrosine residue in Nlgn1 belongs to a gephyrin-binding motif which is highly conserved among the other Nlgn isoforms.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the tyrosine residue in Nlgn1 belongs to a gephyrin-binding motif which is highly conserved among the other Nlgn isoforms and controls gephyrin binding (Giannone et al., 2013; Poulopoulos et al., 2009), optoFGFR1 stimulation did not affect evoked inhibitory currents, suggesting that the phosphorylation of Nlgn2 or Nlgn3 either did not occur, or did not modify the recruitment of the gephyrin scaffold and associated GABAA receptors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:38:30.136240Z"
+    },
+    {
+      "id": "af24d7f9-a87b-4c4c-8262-d383bbd74ad1",
+      "content_id": "06f9fb17-9622-4c23-9eed-3b0d0c4af993",
+      "claim_id": "C56",
+      "claim": "The lack of effects of optoFGFR1 stimulation in neurons from Nlgn1 KO slices confirms that it is Nlgn1 phosphorylation which is causing the observed increases in dendritic spine density and AMPAR-mediated EPSCs.",
+      "claim_type": "EXPLICIT",
+      "source": "The lack of effects of optoFGFR1 stimulation in neurons from Nlgn1 KO slices confirms that it is indeed Nlgn1 phosphorylation which is causing the observed increases in dendritic spine density and AMPAR-mediated EPSCs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an interpretation of the experimental data from Nlgn1 KO experiments.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:38:30.136240Z"
+    },
+    {
+      "id": "f210393c-aa79-4789-bd78-9d15142684fd",
+      "content_id": "06f9fb17-9622-4c23-9eed-3b0d0c4af993",
+      "claim_id": "C57",
+      "claim": "The optogenetic phosphorylation of Nlgn1 provides the exciting opportunity to control in time and space synaptic connectivity and function.",
+      "claim_type": "EXPLICIT",
+      "source": "Besides clarifying the role of Nlgn1 at excitatory synapses, the optogenetic phosphorylation of Nlgn1 provides the exciting opportunity to control in time and space synaptic connectivity and function, and has therefore a great potential for investigating the causality between synaptic plasticity and learning processes as well as the possible contribution of Nlgns to neuropsychiatric behaviors (Bourgeron, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a statement about the potential applications of the optogenetic approach.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:38:30.136240Z"
+    },
+    {
+      "id": "c7b407eb-668e-48cd-89e7-32f9e2c7151d",
+      "content_id": "06f9fb17-9622-4c23-9eed-3b0d0c4af993",
+      "claim_id": "C58",
+      "claim": "There is a significant decrease in NMDA/AMPA ratio in control non-electroporated Nlgn1 KO neurons compared to neurons from WT mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, the LTP level was barely reduced (Figure 5A,C), despite a significant decrease in NMDA/AMPA ratio in control non-electroporated Nlgn1 KO neurons compared to neurons from WT mice (Figure 5\u2014figure supplement 1B; Budreck et al., 2013; Chubykin et al., 2007).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data shown in Figure 5\u2014figure supplement 1B and citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:38:30.136240Z"
+    },
+    {
+      "id": "f867cb59-593d-4364-ab0e-065a0a1a7491",
+      "content_id": "06f9fb17-9622-4c23-9eed-3b0d0c4af993",
+      "claim_id": "C59",
+      "claim": "LTP is blocked by the NMDAR antagonist AP5.",
+      "claim_type": "EXPLICIT",
+      "source": "Using a pairing protocol, we induced an increase of about threefold in evoked AMPAR-mediated EPSCs, which was blocked by the NMDAR antagonist AP5 (Figure 5\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 5\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:38:30.136240Z"
+    },
+    {
+      "id": "fdbaf7e6-b9f5-4cf0-88eb-2e72a9a1b1a8",
+      "content_id": "06f9fb17-9622-4c23-9eed-3b0d0c4af993",
+      "claim_id": "C60",
+      "claim": "There are about 30 AMPARs per synapse at basal state in control conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "With the chosen parameters however, there are about 30 AMPARs per synapse at basal state in control conditions, close to experimental measurements made by super-resolution imaging and freeze-fracture EM (Levet et al., 2015; Shinohara et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by simulation results matching experimental measurements from cited studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:38:30.136240Z"
+    },
+    {
+      "id": "1accfd0d-bc7e-47b3-9e52-92fca7348086",
+      "content_id": "06f9fb17-9622-4c23-9eed-3b0d0c4af993",
+      "claim_id": "C61",
+      "claim": "CamKII activation increases the affinity of TARPs to PSD-95.",
+      "claim_type": "EXPLICIT",
+      "source": "To simulate LTP, the AMPAR/scaffold unbinding rate (koff) was decreased at time zero from higher (0.02 to 0.08 s\u22121) to lower values (0.002\u20130.006 s\u22121), hereby mimicking a higher affinity of TARPs to PSD-95 induced by CamKII activation (Hafner et al., 2015; Opazo et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:38:30.136240Z"
+    },
+    {
+      "id": "458be3f3-9465-43ad-8a49-b3459309a482",
+      "content_id": "06f9fb17-9622-4c23-9eed-3b0d0c4af993",
+      "claim_id": "C62",
+      "claim": "Expression of the non-phosphorylatable Nlgn1-Y782F mutant reduces LTP.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, increasing the Nlgn1 phosphorylation by optoFGFR1 activation reduced LTP, as did the expression of the non-phosphorylatable Nlgn1-Y782F mutant (Letellier et al., 2018), suggesting that an optimal level of intracellular Nlgn1 tyrosine phosphorylation is necessary to elicit normal LTP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:38:30.136240Z"
+    },
+    {
+      "id": "2775e0fd-f8fd-45c8-8834-6660b4c18217",
+      "content_id": "06f9fb17-9622-4c23-9eed-3b0d0c4af993",
+      "claim_id": "C63",
+      "claim": "Expression of Nlgn1 Y782A almost completely occludes LTP.",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, we previously reported an almost complete occlusion of LTP upon replacement of endogenous Nlgn1 by a Y782A mutant which phenocopies maximally phosphorylated Nlgn1 and increases AMPAR-mediated EPSCs by ~4 fold (Giannone et al., 2013; Letellier et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous studies by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:38:30.136240Z"
+    },
+    {
+      "id": "57ddc26b-9c6d-462a-81c7-2e8e483fc422",
+      "content_id": "06f9fb17-9622-4c23-9eed-3b0d0c4af993",
+      "claim_id": "C64",
+      "claim": "Nlgn1 Y782A mutant increases AMPAR-mediated EPSCs by ~4 fold.",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, we previously reported an almost complete occlusion of LTP upon replacement of endogenous Nlgn1 by a Y782A mutant which phenocopies maximally phosphorylated Nlgn1 and increases AMPAR-mediated EPSCs by ~4 fold (Giannone et al., 2013; Letellier et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous studies by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:38:30.136240Z"
+    },
+    {
+      "id": "ba8cb222-23f7-498d-9358-cde1301594f2",
+      "content_id": "06f9fb17-9622-4c23-9eed-3b0d0c4af993",
+      "claim_id": "C65",
+      "claim": "Several tyrosine kinases including Trk family receptors and FGFR1 can directly phosphorylate Nlgn1.",
+      "claim_type": "EXPLICIT",
+      "source": "Using an in vitro kinase assay on recombinant GST fused to the intracellular domain of Nlgn1, we previously identified several tyrosine kinases able to directly phosphorylate Nlgn1, including Trk family receptors and the FGFR1 (Letellier et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to a previous study by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:38:30.136240Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "a7b3d306-2022-40c0-9436-f05346aa505d",
+      "content_id": "06f9fb17-9622-4c23-9eed-3b0d0c4af993",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "OptoFGFR1 is a photoactivatable tyrosine kinase that specifically phosphorylates Nlgn1 at Y782 in a light-dependent manner. Light stimulation induces Nlgn1 phosphorylation comparable to constitutively active FGFR1, and Y782 is the only tyrosine residue phosphorylated by optoFGFR1.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C3 are well-supported by immunoblot data (Figure 1C,D) showing light-dependent phosphorylation of Nlgn1 that is abolished in the Y782F mutant. The construct design (C49-C50) is appropriately described and cited. The specificity for Y782 is demonstrated by the lack of phosphorylation in the Y782F mutant.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:38:30.136240Z"
+    },
+    {
+      "id": "9292ba0c-42b2-4db2-98ef-296f154f99d5",
+      "content_id": "06f9fb17-9622-4c23-9eed-3b0d0c4af993",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Light activation of optoFGFR1 for 24 hours increases dendritic spine density by approximately 25% in wild-type neurons but not in Nlgn1 KO neurons. OptoFGFR1 is properly localized throughout dendrites including spines.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4-C5 are supported by quantitative confocal microscopy data (Figure 2C,D) showing a significant increase in spine density in WT but not Nlgn1 KO neurons. The localization data (C51, Figure 2B) confirms optoFGFR1 is positioned appropriately to phosphorylate Nlgn1. Statistical tests are appropriate (paired t-test, ANOVA with post-hoc tests).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:38:30.136240Z"
+    },
+    {
+      "id": "ec139716-a602-46af-8843-96d859f7f66e",
+      "content_id": "06f9fb17-9622-4c23-9eed-3b0d0c4af993",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Light activation of optoFGFR1 increases evoked AMPAR-mediated EPSCs by approximately 200% and spontaneous EPSC frequency by two-fold in wild-type neurons, without changing AMPAR channel conductance. These effects are not observed in Nlgn1 KO neurons.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6-C8 and C10 are well-supported by dual patch-clamp electrophysiology data (Figure 3B-F) with appropriate paired controls. The increase in frequency without amplitude change (C7-C8) supports the interpretation of new synapse formation. The Nlgn1 KO control (C10) demonstrates specificity. Statistical tests are appropriate (Wilcoxon matched-pairs signed rank test, ANOVA).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:38:30.136240Z"
+    },
+    {
+      "id": "e8e4b692-5f22-4989-8bba-5f002617dafb",
+      "content_id": "06f9fb17-9622-4c23-9eed-3b0d0c4af993",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "OptoFGFR1 activation selectively affects AMPAR-mediated transmission without altering NMDAR-mediated EPSCs, paired-pulse ratio, or inhibitory currents, demonstrating specificity for Nlgn1 at excitatory post-synapses.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9, C11-C13 are supported by electrophysiological data (Figure 3E,G and supplements) showing no effects on NMDARs, presynaptic function, or inhibitory transmission. The selectivity for excitatory synapses is well-demonstrated through multiple negative controls. The interpretation (C13) is appropriately cautious and supported by the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:38:30.136240Z"
+    },
+    {
+      "id": "e1ff9004-e9ef-41e5-9a0f-64eddeeb7c8c",
+      "content_id": "06f9fb17-9622-4c23-9eed-3b0d0c4af993",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The effects of optoFGFR1 on spine density and AMPAR-mediated EPSCs require phosphorylation of the Y782 residue, as demonstrated by rescue experiments with the Y782F mutant.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C14 and C56 are supported by rescue experiments (Figure 4C,E and supplement) using shRNA knockdown and rescue with WT or Y782F mutants. The replacement strategy is validated by showing that rescue with WT Nlgn1 restores the light-induced effects, while Y782F does not. This provides strong evidence for the specific role of Y782 phosphorylation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:38:30.136240Z"
+    },
+    {
+      "id": "bd8675bd-2195-41e9-99fb-4fd9e954890c",
+      "content_id": "06f9fb17-9622-4c23-9eed-3b0d0c4af993",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Light activation of optoFGFR1 reduces LTP by approximately 50% in wild-type neurons but not in Nlgn1 KO neurons, suggesting that Nlgn1 tyrosine phosphorylation impairs LTP by promoting high initial synaptic AMPAR levels and that an optimal level of phosphorylation is necessary for normal LTP.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C15-C16 are supported by LTP recordings (Figure 5A-D) showing reduced potentiation in optoFGFR1-expressing WT neurons but not in Nlgn1 KO neurons. The interpretation (C22, C42) is supported by the data and computational modeling. However, the claim of 'optimal level' (C42) is somewhat speculative as it relies on comparing current data with previous Y782F mutant data (C62).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:38:30.136240Z"
+    },
+    {
+      "id": "cf72bfc4-8933-4b7b-a6e0-a918c09b90e1",
+      "content_id": "06f9fb17-9622-4c23-9eed-3b0d0c4af993",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "LTP is barely reduced in Nlgn1 KO neurons despite a significant decrease in NMDA/AMPA ratio, and LTP is blocked by the NMDAR antagonist AP5.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C17-C59 are supported by experimental data (Figure 5A,C and supplement 1A,B). The observation that LTP is not significantly reduced in Nlgn1 KO despite altered NMDA/AMPA ratio is surprising and appropriately noted as such. The AP5 control (C59) confirms NMDAR-dependence of the LTP protocol. Statistical comparisons are appropriate.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:38:30.136240Z"
+    },
+    {
+      "id": "61ec566e-b5a0-4f0c-9134-5954e8c79a70",
+      "content_id": "06f9fb17-9622-4c23-9eed-3b0d0c4af993",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Computer simulations of AMPAR diffusion-trapping match experimental LTP data and predict that the partial occlusion of LTP upon optoFGFR1 stimulation results from depletion of extra-synaptic AMPAR pools due to high initial synaptic recruitment.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C18-C21 are supported by computational modeling that matches experimental data well (Figure 5A,C, Figure 6). The model parameters (C60-C61) are based on previous experimental measurements and literature. The simulation provides a mechanistic explanation for the LTP occlusion. However, the model makes simplifying assumptions (e.g., closed system, no vesicular recycling) that should be acknowledged.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:38:30.136240Z"
+    },
+    {
+      "id": "f1306ea0-20cc-4af8-9b07-64e8f776faba",
+      "content_id": "06f9fb17-9622-4c23-9eed-3b0d0c4af993",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Nlgn1 intracellular signaling, particularly tyrosine phosphorylation, regulates dendritic spine number, mediates AMPAR recruitment in basal conditions, and regulates LTP through preferential recruitment of PSD-95 and associated scaffolding proteins.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C33 and C45-C48 represent the main conclusions of the study, supported by the collective experimental data. The mechanism involving PSD-95 recruitment (C32) is supported by current data and previous citations. The lack of effect on NMDARs (C33) supports a model of direct extracellular coupling. These conclusions are well-supported by the experimental evidence presented.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:38:30.136240Z"
+    },
+    {
+      "id": "67c9af45-5b3c-4973-8c0b-fd5b16f5cbe5",
+      "content_id": "06f9fb17-9622-4c23-9eed-3b0d0c4af993",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Previous work has established that Y782 phosphorylation regulates gephyrin binding, with unphosphorylated Y782 strongly binding gephyrin and phosphorylated Y782 weakly binding gephyrin, and that several tyrosine kinases including FGFR1 can phosphorylate Nlgn1.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C23-C25 and C65 are supported by appropriate citations to previous work by the authors and others. These claims provide important context for the current study. The citations are accurate and the prior findings are correctly represented.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:38:30.136240Z"
+    },
+    {
+      "id": "43f88ed3-755b-4e24-8aef-a8e4ce0eb74a",
+      "content_id": "06f9fb17-9622-4c23-9eed-3b0d0c4af993",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Previous literature shows conflicting results regarding Nlgn function, with overexpression/knockdown affecting synapse number but knockout not altering synapse density, and with selective effects on NMDAR- versus AMPAR-mediated transmission.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26-C30 accurately summarize previous literature with appropriate citations. These claims establish the controversy and rationale for the current study. The citations appear accurate and the summary is fair, though the authors could have been more explicit about potential reasons for discrepancies (e.g., experimental preparation differences).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:38:30.136240Z"
+    },
+    {
+      "id": "ecdd7a4b-e187-4be2-9145-8be98e0d19e9",
+      "content_id": "06f9fb17-9622-4c23-9eed-3b0d0c4af993",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Previous work shows that PSD-95 overexpression and PKA-mediated phosphorylation of Nlgn1 have similar effects to those observed here, and that hippocampal LTP involves capture of extra-synaptic AMPARs through CamKII-mediated increases in TARP-PSD-95 affinity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C36 and C61 are supported by appropriate citations to previous studies. These claims provide important context showing that the current findings are consistent with previous work on PSD-95 and AMPAR trafficking. The citations are relevant and accurately represented.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:38:30.136240Z"
+    },
+    {
+      "id": "2780e56e-b1db-43a6-8258-d2e186e0d473",
+      "content_id": "06f9fb17-9622-4c23-9eed-3b0d0c4af993",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "OptoFGFR1 lacks a ligand-binding domain and is expected to bypass endogenous regulation of Nlgn1 phosphorylation by Trk family kinases responding to BDNF and NGF.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-C39 are supported by the construct design and appropriate citations. The inference that optoFGFR1 bypasses endogenous regulation (C37) is reasonable given the lack of ligand-binding domain. The citations to previous work on Trk kinases and their ligands are appropriate.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:38:30.136240Z"
+    },
+    {
+      "id": "412819f2-01fb-4bb6-8517-c625b8fad313",
+      "content_id": "06f9fb17-9622-4c23-9eed-3b0d0c4af993",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Compensatory expression of Nlgn3 in Nlgn1 KO may explain why AMPAR-mediated EPSCs are not altered in the knockout, and dual Nlgn1/3 KO is required to alter AMPAR levels in cultured neurons.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40-C41 are appropriately labeled as hypotheses/explanations and are supported by citations to relevant studies. The speculation about compensatory mechanisms (C40) is reasonable and appropriately cautious. The citation regarding dual KO requirements (C41) is accurate.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:38:30.136240Z"
+    },
+    {
+      "id": "de39edb3-1f63-4b5a-9ee0-5dd5aa710435",
+      "content_id": "06f9fb17-9622-4c23-9eed-3b0d0c4af993",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Previous work shows conflicting results regarding the role of Nlgn1 intracellular domain in LTP, with some studies showing rescue by GPI-anchored Nlgn1 lacking the intracellular domain, while other studies show that Y782F and Y782A mutants differentially affect LTP.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43 and C62-C64 accurately cite previous work, including the authors' own studies. The apparent conflict with Wu et al. (2019) is appropriately noted. The citations to previous work on Y782 mutants are accurate and provide important context for interpreting the current results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:38:30.136240Z"
+    },
+    {
+      "id": "f867559d-d27c-4acc-81ad-e2b681452ecf",
+      "content_id": "06f9fb17-9622-4c23-9eed-3b0d0c4af993",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The optogenetic approach provides acute control of Nlgn1 signaling and has potential for investigating synaptic plasticity, learning processes, and neuropsychiatric behaviors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44 and C57 are appropriately framed as advantages and potential applications of the method. The claim of 'acute control' is supported by the 24-hour stimulation paradigm, though this is not as acute as some optogenetic approaches (seconds to minutes). The potential applications are reasonable but speculative.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:38:30.136240Z"
+    },
+    {
+      "id": "f3ad0e1c-b4a6-4aa6-96e9-b6bcbb71592d",
+      "content_id": "06f9fb17-9622-4c23-9eed-3b0d0c4af993",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "The increase in sEPSC frequency without amplitude change suggests formation of synapses with fixed AMPAR content, and unphosphorylated Nlgn1 might associate with dynamic gephyrin clusters, allowing spines to assemble either excitatory or inhibitory scaffolds.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C52 is a reasonable interpretation of the sEPSC data, but claims C53-C54 are explicitly speculative ('might'). While supported by citations to relevant studies, these hypotheses about gephyrin dynamics and scaffold switching are not directly tested in the current study. The conservation of the gephyrin-binding motif (C55) is supported by citations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:38:30.136240Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "3fbf94dd-a338-4df3-ae4f-e3f2ad623833",
+      "result_id": "a7b3d306-2022-40c0-9436-f05346aa505d"
+    },
+    {
+      "claim_id": "cf17ebbc-5bad-47c7-a658-2f3d5527b8c2",
+      "result_id": "a7b3d306-2022-40c0-9436-f05346aa505d"
+    },
+    {
+      "claim_id": "6f7ff035-29da-4399-80f7-b5992062e723",
+      "result_id": "a7b3d306-2022-40c0-9436-f05346aa505d"
+    },
+    {
+      "claim_id": "43d5d6c8-b71a-4187-8a08-fa890e610e8c",
+      "result_id": "a7b3d306-2022-40c0-9436-f05346aa505d"
+    },
+    {
+      "claim_id": "ab4c5fd2-4c86-4e03-a898-ebe4126de9aa",
+      "result_id": "a7b3d306-2022-40c0-9436-f05346aa505d"
+    },
+    {
+      "claim_id": "7ed0936c-061a-4816-907b-b4bba03b4e43",
+      "result_id": "9292ba0c-42b2-4db2-98ef-296f154f99d5"
+    },
+    {
+      "claim_id": "6d65aa68-b03d-4aec-b9d7-93ec360214fa",
+      "result_id": "9292ba0c-42b2-4db2-98ef-296f154f99d5"
+    },
+    {
+      "claim_id": "aa669142-ac1d-4c06-9e6f-35110a1961e5",
+      "result_id": "9292ba0c-42b2-4db2-98ef-296f154f99d5"
+    },
+    {
+      "claim_id": "fc8dc129-3647-4036-9378-13e662c62a50",
+      "result_id": "ec139716-a602-46af-8843-96d859f7f66e"
+    },
+    {
+      "claim_id": "3595fe53-947f-4a87-b525-40abe27a1b43",
+      "result_id": "ec139716-a602-46af-8843-96d859f7f66e"
+    },
+    {
+      "claim_id": "6dfecbe2-fb99-48ee-805a-807c037f7176",
+      "result_id": "ec139716-a602-46af-8843-96d859f7f66e"
+    },
+    {
+      "claim_id": "23f0ec5b-affb-4cac-950e-d9f32b61db77",
+      "result_id": "ec139716-a602-46af-8843-96d859f7f66e"
+    },
+    {
+      "claim_id": "bd754271-6182-419a-804c-a0dd7e2f83f7",
+      "result_id": "e8e4b692-5f22-4989-8bba-5f002617dafb"
+    },
+    {
+      "claim_id": "cf55668c-cb2a-4592-b72c-4a43a845e15a",
+      "result_id": "e8e4b692-5f22-4989-8bba-5f002617dafb"
+    },
+    {
+      "claim_id": "45413828-4bf0-4072-8315-6ee0a1aa4416",
+      "result_id": "e8e4b692-5f22-4989-8bba-5f002617dafb"
+    },
+    {
+      "claim_id": "3aba89fd-d6bf-470c-b8f7-42d71ffcd8c7",
+      "result_id": "e8e4b692-5f22-4989-8bba-5f002617dafb"
+    },
+    {
+      "claim_id": "72ceb1a0-a0da-4e6d-9fb1-be67c722efd1",
+      "result_id": "e1ff9004-e9ef-41e5-9a0f-64eddeeb7c8c"
+    },
+    {
+      "claim_id": "af24d7f9-a87b-4c4c-8262-d383bbd74ad1",
+      "result_id": "e1ff9004-e9ef-41e5-9a0f-64eddeeb7c8c"
+    },
+    {
+      "claim_id": "802a07da-a398-4312-b20f-b7659a169f3a",
+      "result_id": "bd8675bd-2195-41e9-99fb-4fd9e954890c"
+    },
+    {
+      "claim_id": "3efdff66-fcbe-4ce5-abb8-76a868090c26",
+      "result_id": "bd8675bd-2195-41e9-99fb-4fd9e954890c"
+    },
+    {
+      "claim_id": "348f8648-32f9-4976-a641-23d32ebb244c",
+      "result_id": "bd8675bd-2195-41e9-99fb-4fd9e954890c"
+    },
+    {
+      "claim_id": "fa9a0cab-eab9-4e9e-b887-30c0ca6bf60c",
+      "result_id": "bd8675bd-2195-41e9-99fb-4fd9e954890c"
+    },
+    {
+      "claim_id": "1900a5e2-8d16-40a4-a3d2-e326494bcca3",
+      "result_id": "cf72bfc4-8933-4b7b-a6e0-a918c09b90e1"
+    },
+    {
+      "claim_id": "c7b407eb-668e-48cd-89e7-32f9e2c7151d",
+      "result_id": "cf72bfc4-8933-4b7b-a6e0-a918c09b90e1"
+    },
+    {
+      "claim_id": "f867cb59-593d-4364-ab0e-065a0a1a7491",
+      "result_id": "cf72bfc4-8933-4b7b-a6e0-a918c09b90e1"
+    },
+    {
+      "claim_id": "8364d700-ed83-45e2-b649-0578b18fb74b",
+      "result_id": "61ec566e-b5a0-4f0c-9134-5954e8c79a70"
+    },
+    {
+      "claim_id": "c2bdfa47-3d13-44ad-a9cb-ee76438ae3cd",
+      "result_id": "61ec566e-b5a0-4f0c-9134-5954e8c79a70"
+    },
+    {
+      "claim_id": "dedda18b-ea22-4091-b0a9-917c072e8f10",
+      "result_id": "61ec566e-b5a0-4f0c-9134-5954e8c79a70"
+    },
+    {
+      "claim_id": "26ae58e9-8bcb-47f4-995e-8a93c0afba4a",
+      "result_id": "61ec566e-b5a0-4f0c-9134-5954e8c79a70"
+    },
+    {
+      "claim_id": "fdbaf7e6-b9f5-4cf0-88eb-2e72a9a1b1a8",
+      "result_id": "61ec566e-b5a0-4f0c-9134-5954e8c79a70"
+    },
+    {
+      "claim_id": "1accfd0d-bc7e-47b3-9e52-92fca7348086",
+      "result_id": "61ec566e-b5a0-4f0c-9134-5954e8c79a70"
+    },
+    {
+      "claim_id": "2a828c7b-3966-48c2-bf3c-ffbcc1222624",
+      "result_id": "f1306ea0-20cc-4af8-9b07-64e8f776faba"
+    },
+    {
+      "claim_id": "872f3a61-1266-4b4f-b351-706d4012c172",
+      "result_id": "f1306ea0-20cc-4af8-9b07-64e8f776faba"
+    },
+    {
+      "claim_id": "e0a26693-0330-442a-9aac-d91001d5f63f",
+      "result_id": "f1306ea0-20cc-4af8-9b07-64e8f776faba"
+    },
+    {
+      "claim_id": "2fda09c3-beef-437a-a979-9438459bb721",
+      "result_id": "f1306ea0-20cc-4af8-9b07-64e8f776faba"
+    },
+    {
+      "claim_id": "28ab2ed5-1b33-479d-b87e-bc765781eae1",
+      "result_id": "f1306ea0-20cc-4af8-9b07-64e8f776faba"
+    },
+    {
+      "claim_id": "e13b6771-29f3-4d5e-aa77-1eb39e755bfe",
+      "result_id": "f1306ea0-20cc-4af8-9b07-64e8f776faba"
+    },
+    {
+      "claim_id": "be08c465-eaa5-4be6-8774-27c875d4bb5b",
+      "result_id": "67c9af45-5b3c-4973-8c0b-fd5b16f5cbe5"
+    },
+    {
+      "claim_id": "ac697283-a980-4665-b721-5d3a1ea7d504",
+      "result_id": "67c9af45-5b3c-4973-8c0b-fd5b16f5cbe5"
+    },
+    {
+      "claim_id": "5cbcb08c-279d-4ecb-a606-ff34023d33dd",
+      "result_id": "67c9af45-5b3c-4973-8c0b-fd5b16f5cbe5"
+    },
+    {
+      "claim_id": "ba8cb222-23f7-498d-9358-cde1301594f2",
+      "result_id": "67c9af45-5b3c-4973-8c0b-fd5b16f5cbe5"
+    },
+    {
+      "claim_id": "f3e35591-2956-4dd1-ace2-a7c7867a2147",
+      "result_id": "43f88ed3-755b-4e24-8aef-a8e4ce0eb74a"
+    },
+    {
+      "claim_id": "e3e40ca5-53f5-4092-9650-a784ee4c4736",
+      "result_id": "43f88ed3-755b-4e24-8aef-a8e4ce0eb74a"
+    },
+    {
+      "claim_id": "c0cf823c-b02b-4c79-874c-02d494ca0a80",
+      "result_id": "43f88ed3-755b-4e24-8aef-a8e4ce0eb74a"
+    },
+    {
+      "claim_id": "3a755626-a950-49b6-8c0c-e1fb03e6305d",
+      "result_id": "43f88ed3-755b-4e24-8aef-a8e4ce0eb74a"
+    },
+    {
+      "claim_id": "179e14de-1f26-4de4-9145-fe4a3d38248a",
+      "result_id": "43f88ed3-755b-4e24-8aef-a8e4ce0eb74a"
+    },
+    {
+      "claim_id": "725b268c-4988-4cf8-95cc-aa7f1a1afa62",
+      "result_id": "ecdd7a4b-e187-4be2-9145-8be98e0d19e9"
+    },
+    {
+      "claim_id": "d50c5868-5cd4-47ab-bc92-2e90e47b1ff4",
+      "result_id": "ecdd7a4b-e187-4be2-9145-8be98e0d19e9"
+    },
+    {
+      "claim_id": "90ed3c44-daf4-4191-b97d-f69a94c74bba",
+      "result_id": "ecdd7a4b-e187-4be2-9145-8be98e0d19e9"
+    },
+    {
+      "claim_id": "1accfd0d-bc7e-47b3-9e52-92fca7348086",
+      "result_id": "ecdd7a4b-e187-4be2-9145-8be98e0d19e9"
+    },
+    {
+      "claim_id": "031d6fba-ad86-4907-8e4c-5ffedcf0e398",
+      "result_id": "2780e56e-b1db-43a6-8258-d2e186e0d473"
+    },
+    {
+      "claim_id": "53c22663-fb7a-49f0-8ecf-02dbc5801d09",
+      "result_id": "2780e56e-b1db-43a6-8258-d2e186e0d473"
+    },
+    {
+      "claim_id": "55780990-a22e-4180-bbb1-01b4862c1da2",
+      "result_id": "2780e56e-b1db-43a6-8258-d2e186e0d473"
+    },
+    {
+      "claim_id": "44b421fc-0d01-4d84-be2d-07da37e0c11e",
+      "result_id": "412819f2-01fb-4bb6-8517-c625b8fad313"
+    },
+    {
+      "claim_id": "bb4c568f-68db-49c3-aff2-c494571571ab",
+      "result_id": "412819f2-01fb-4bb6-8517-c625b8fad313"
+    },
+    {
+      "claim_id": "ec64d703-1540-40df-beba-6d7de0f5f59c",
+      "result_id": "de39edb3-1f63-4b5a-9ee0-5dd5aa710435"
+    },
+    {
+      "claim_id": "458be3f3-9465-43ad-8a49-b3459309a482",
+      "result_id": "de39edb3-1f63-4b5a-9ee0-5dd5aa710435"
+    },
+    {
+      "claim_id": "2775e0fd-f8fd-45c8-8834-6660b4c18217",
+      "result_id": "de39edb3-1f63-4b5a-9ee0-5dd5aa710435"
+    },
+    {
+      "claim_id": "57ddc26b-9c6d-462a-81c7-2e8e483fc422",
+      "result_id": "de39edb3-1f63-4b5a-9ee0-5dd5aa710435"
+    },
+    {
+      "claim_id": "e34dea91-22cd-4429-b1bd-ba54e008d01c",
+      "result_id": "f867559d-d27c-4acc-81ad-e2b681452ecf"
+    },
+    {
+      "claim_id": "f210393c-aa79-4789-bd78-9d15142684fd",
+      "result_id": "f867559d-d27c-4acc-81ad-e2b681452ecf"
+    },
+    {
+      "claim_id": "5d72053c-9bfe-45da-95d3-78553fd7cea2",
+      "result_id": "f3ad0e1c-b4a6-4aa6-96e9-b6bcbb71592d"
+    },
+    {
+      "claim_id": "fb3cc800-f458-44df-8e5c-728c1dcbe402",
+      "result_id": "f3ad0e1c-b4a6-4aa6-96e9-b6bcbb71592d"
+    },
+    {
+      "claim_id": "c9f222fb-1197-4412-aa90-dcc8acd7207e",
+      "result_id": "f3ad0e1c-b4a6-4aa6-96e9-b6bcbb71592d"
+    },
+    {
+      "claim_id": "a3723f92-3452-4c1d-9da6-4e3005e8bd43",
+      "result_id": "f3ad0e1c-b4a6-4aa6-96e9-b6bcbb71592d"
+    }
+  ],
+  "comparisons": []
+}

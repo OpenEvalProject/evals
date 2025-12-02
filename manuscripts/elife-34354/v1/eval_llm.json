@@ -1,0 +1,632 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "Bilateral hippocampal lesions were extensive and consistent across three measurement methods (T2-weighted MRI, histology, and deformation-based morphometry), with some apparent sparing of the posterior right hippocampus that may be underestimated due to partial volume effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4 demonstrate convergent evidence from multiple independent measurement techniques showing significant bilateral hippocampal volume reduction. Claims C5-C7 provide additional characterization of lesion extent and acknowledge technical limitations. The multi-modal validation strengthens confidence in the lesion characterization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C8",
+      "C9"
+    ],
+    "result": "Global functional connectivity strength increased during the acute stage (3 months post-lesion) and decreased during the chronic stage (12 months post-lesion).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8 and C9 are supported by highly significant statistical tests (p = 1\u00d710\u207b\u00b2\u00b2 and p = 2\u00d710\u207b\u2076\u00b2) on all pairwise connections. The opposing temporal dynamics suggest distinct processes at different recovery stages.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "During the acute stage, hubness and pre-lesion hippocampal functional connectivity significantly predicted drops in network participation coefficient, explaining 53% of variance, while neuronal and non-neuronal cell densities were not significant predictors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C17 show strong statistical support (F\u2082,\u2087\u2085 = 42.24, p = 5\u00d710\u207b\u00b9\u00b3, r\u00b2 = 0.53) with both predictors highly significant. Claims C18-C19 appropriately report non-significant results. The model explains substantial variance with appropriate statistical controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "During the chronic stage, non-neuronal cell density predicted increases in network participation coefficient while hubness predicted decreases, with neuronal density and hippocampal connectivity not significant.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C21 are supported by significant statistics (F\u2082,\u2087\u2085 = 24.3, p = 7\u00d710\u207b\u2079, r\u00b2 = 0.39) showing distinct predictors from the acute stage. The shift from hippocampal connectivity to non-neuronal cell density as a predictor suggests different mechanisms at chronic stages. Claims C22-C23 appropriately report non-significant findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C24"
+    ],
+    "result": "Hubness significantly predicted acute stage decreases in within-module functional connectivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C24 is supported by significant statistics (F\u2081,\u2087\u2086 = 10.25, p = 0.002, r\u00b2 = 0.12). While the variance explained is modest compared to network participation, the result is statistically robust.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "During the chronic stage, neuronal density predicted decreases in within-module connectivity while pre-lesion hippocampal connectivity predicted increases, with non-neuronal cell density not significant.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C26 show significant opposing effects (F\u2083,\u2087\u2084 = 7.68, p = 0.0002, r\u00b2 = 0.24) suggesting complex reorganization. The opposing directions indicate both degenerative (neuronal density) and compensatory (hippocampal connectivity) processes. Claim C27 appropriately reports non-significance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C28"
+    ],
+    "result": "None of the four predictors (neuronal density, non-neuronal cell density, hubness, hippocampal connectivity) significantly predicted acute stage grey matter volume changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C28 is supported by statistical tests showing all p-values > 0.05. This negative result is important for understanding the temporal dynamics of structural changes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C29"
+    ],
+    "result": "Pre-lesion hippocampal functional connectivity was the only significant predictor of chronic stage grey matter volume loss.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C29 is supported by significant statistics (F\u2081,\u2087\u2086 = 16.39, r\u00b2 = 0.17, t\u2087\u2083 = -4.05, p = 0.0001). The delayed emergence of this predictor (not significant in acute stage) suggests progressive degeneration in connected regions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "Deformation-based morphometry revealed limited volumetric decreases in the acute stage (medial septum, amygdala, dorsal premotor cortex) but more extensive decreases in the chronic stage including hippocampally-connected regions and broader cortical areas, though chronic results did not survive multiple comparisons correction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C30-C35 describe anatomically specific volumetric changes supported by imaging data. However, C36 critically notes that chronic stage results did not survive multiple comparisons correction, likely due to small sample size (n=4-5). This substantially weakens confidence in the specific anatomical patterns described for the chronic stage, though the general pattern of progressive degeneration is consistent with other findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Network module analysis revealed four functional modules pre-lesion, with the parieto-occipital module showing dramatic dispersion by 12 months post-lesion, leading to increased modularity and fewer total modules.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C42 are supported by significant statistics (F\u2083,\u2087\u2086=19.54, p = 4\u00d710\u207b\u2079 for acute; F\u2083,\u2087\u2086=41.86, p = 4\u00d710\u207b\u00b9\u2076 for chronic) and visual evidence in Figure 6. Claims C43-C45 show increased modularity (0.33\u21920.49) and fewer modules across all lambda values tested, indicating robust global network reorganization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C46",
+      "C47"
+    ],
+    "result": "Neuronal density was positively associated with hubness while non-neuronal cell density was negatively associated with hubness.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C47 are supported by significant statistics (F\u2082,\u2087\u2085 = 6.18, r\u00b2 = 0.14, p = 0.003) from an exploratory analysis. While presented as exploratory, the statistics are robust and provide insight into microstructural correlates of network topology.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C48",
+      "C49"
+    ],
+    "result": "Pre-lesion hippocampal functional connectivity was highly correlated with anatomical connectivity from both original and enhanced CoCoMac tract-tracing atlases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C49 show strong correlations (r = 0.54, p = 2.2\u00d710\u207b\u2077 and r = 0.60, p = 3.6\u00d710\u207b\u2079) validating the functional connectivity measurements against independent anatomical data. This validation strengthens confidence in the functional connectivity measures used throughout the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C79",
+      "C80"
+    ],
+    "result": "Acute and chronic changes in network participation coefficient were uncorrelated (p = 0.66), suggesting distinct degenerative and plastic processes at the two stages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C80 are supported by appropriate statistical correction for shared timepoints. The lack of correlation between stages is methodologically sound and supports the interpretation of distinct temporal processes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C81",
+      "C82"
+    ],
+    "result": "Acute and chronic changes in within-module connectivity were positively correlated (p < 0.001), suggesting continuation of degenerative or plastic processes across stages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C82 show significant positive correlation after correcting for shared timepoints, contrasting with network participation results and suggesting different temporal dynamics for different network properties.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C83",
+      "C84"
+    ],
+    "result": "Acute and chronic changes in grey matter volume were positively correlated (p = 0.01), suggesting continuation of degenerative grey matter loss across stages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C84 show significant positive correlation after appropriate statistical correction, indicating progressive structural degeneration distinct from the functional connectivity dynamics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "Brain regions highly connected to the hippocampus pre-lesion showed acute drops in network participation, chronic grey matter loss, but also chronic increases in within-module connectivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C87 synthesize findings from multiple regression analyses showing complex, stage-dependent effects of pre-lesion hippocampal connectivity. The opposing effects (degeneration vs. compensation) are well-supported by the individual analyses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C89",
+      "C90"
+    ],
+    "result": "Network hubs showed distinctive vulnerability to lesion effects, with greater hubness predicting greater functional connectivity reductions at both acute and chronic stages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C90 are supported by consistent findings across multiple analyses showing hubness as a significant predictor of connectivity loss. The consistency across stages and measures strengthens this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C121",
+      "C123"
+    ],
+    "result": "Hub regions were more likely to lose functional connectivity following hippocampal lesions, with hubness being an independent predictor even after accounting for connectivity to the lesioned area.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C121 and C123 are supported by regression analyses where hubness remained significant when hippocampal connectivity was included as a covariate. This demonstrates that hub vulnerability is not simply due to connectivity with the lesioned region.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C124",
+      "C125",
+      "C126"
+    ],
+    "result": "Hub degradation was associated with destruction of overall network structure, with the brain separating into fewer, weakly interconnected modules by 12 months post-lesion, demonstrating global effects of focal lesions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C124-C126 synthesize module analysis findings showing increased modularity and fewer modules. The interpretation linking hub degradation to global network changes is supported by the data, though the causal relationship is inferential.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C133",
+      "C134",
+      "C135"
+    ],
+    "result": "The study demonstrates three key findings: functional and structural changes differ greatly between acute and chronic stages; post-lesion plasticity patterns depend quantitatively on pre-lesion functional connectivity; and microstructural gradients and macrostructural network measures provide additional predictive value.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C133-C135 accurately summarize the major findings of the study, all of which are supported by the detailed analyses. These represent the core contributions of the work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C72",
+      "C73"
+    ],
+    "result": "This is the first study to quantitatively demonstrate relationships between pre-lesion functional connectivity and dynamic plasticity following lesions, showing that multi-scale information aids prediction of recovery.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C73 assert novelty and are supported by the comprehensive analyses presented. While prior work used connectivity atlases to predict affected areas (C92), this study uniquely quantifies temporal dynamics and integrates multiple spatial scales.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C74"
+    ],
+    "result": "The monkeys showed retrograde but not anterograde memory impairment on episodic memory tasks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C74 references behavioral data published elsewhere (Froudist-Walsh et al., 2018). While not directly presented here, this provides important functional context for the imaging findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Resting-state fMRI acquisition used protocols optimized to preserve resting-state networks: minimal isoflurane (1.0-1.6%), delayed scanning after ketamine (\u22652 hours), and normocapnic CO\u2082 levels (33-45 mmHg).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C77 describe methodological controls supported by appropriate citations. These are critical for ensuring data quality in anesthetized non-human primates and strengthen confidence in the functional connectivity measurements.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C78"
+    ],
+    "result": "The first principal component of node strength and network participation coefficient explained 73.19% of variance and was used as a continuous measure of hubness.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C78 describes a methodologically sound approach to creating a composite hub measure. The high variance explained supports the validity of combining these two related metrics.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C88"
+    ],
+    "result": "MRI may be sensitive to distinct microscale plasticity processes occurring during acute versus chronic stages post-lesion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C88 is a reasonable inference from the different predictors at acute (hubness, hippocampal connectivity) versus chronic (non-neuronal cell density, neuronal density) stages. However, this remains inferential as the study does not directly measure microscale processes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C120"
+    ],
+    "result": "Non-neuronal cell density positively correlating with chronic increases in network participation provides a novel link between local glial function and large-scale functional connectivity plasticity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C120 is supported by the regression analysis (C20) and represents an important conceptual advance linking cellular composition to network-level plasticity. However, the mechanism remains speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C127",
+      "C128"
+    ],
+    "result": "Hubs may have high neuron-to-non-neuronal cell ratios, potentially indicating fewer support cells per neuron and reduced capacity to adapt to injury.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C127-C128 are explicitly presented as speculative from an exploratory analysis. While the statistical relationship (C46-C47) is supported, the functional interpretation regarding adaptive capacity is highly speculative and requires experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C112"
+    ],
+    "result": "The study design cannot distinguish between compensatory and maladaptive plasticity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C112 is an appropriate acknowledgment of a study limitation. Without behavioral measures at multiple timepoints or interventional studies, determining whether plasticity is beneficial or detrimental is not possible.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C130",
+      "C131",
+      "C132"
+    ],
+    "result": "The specific cellular composition and unique connectivity of the hippocampus may have influenced the observed plasticity patterns, suggesting different patterns might occur following lesions to other brain regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C130-C132 are presented as speculative possibilities for future investigation. While reasonable given the findings, these remain untested hypotheses that would require comparative lesion studies in other brain regions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R30",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "The hippocampus is a key part of the widespread episodic memory circuit, but lesions restricted to the hippocampus do not always produce large behavioral effects, potentially due to compensatory plasticity dependent on cholinergic inputs to inferior temporal cortex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C13 provide background context supported by appropriate citations to prior literature. These establish the rationale for studying plasticity following hippocampal lesions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R31",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Brain lesions commonly cause distant grey matter degeneration and functional disconnection associated with behavioral impairment, while some areas adapt by altering connectivity, but there is currently no quantitative way to predict which areas will adapt.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C57 provide literature-based background establishing the knowledge gap addressed by the study. The citations appropriately support these general statements about lesion consequences.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R32",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Recovery following brain injury occurs in stages with variable timing, microstructural consequences vary over time in rodents, but rodent models have limitations for studying chronic plasticity, and pre-lesion human scans are rare.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C62 establish the rationale for the non-human primate model with pre-lesion scans. The citations and reasoning appropriately justify the experimental approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R33",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Prior work has proposed that lesion mapping onto connectivity atlases could predict affected areas and that hub regions may be particularly vulnerable and may redistribute resources following injury.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C65 accurately summarize prior hypotheses from the literature with appropriate citations. These establish the conceptual framework for the current study's hypotheses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R34",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Recent work has renewed interest in cortical gradients including neuronal density gradients and the role of non-neuronal cells in plasticity, which may constrain regional responses to injury.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C71 provide literature context for investigating microstructural predictors of plasticity. The citations appropriately support the rationale for including cell density measures.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R35",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "Changes in distant brain region activation are widely agreed to be early adaptations following injury, and while connectomic approaches have been used to identify affected areas, the relationship between connectivity profiles and plasticity dynamics had not been quantitatively investigated until this study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C94 accurately position the current work relative to prior literature, establishing both the foundation and novelty of the approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R36",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "Comparison with a prior study of reversible chemogenetic amygdala suppression suggests that global network structure is better preserved following temporary disruption than permanent hippocampal lesions, which is expected given the different timescales.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C96-C99 compare results to Grayson et al. (2016), but C98 is based on visual comparison of figures rather than quantitative analysis. While the interpretation (C99) is reasonable, the comparison is qualitative and limited by different brain regions and methods.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R37",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "Focal hippocampal damage has widespread consequences beyond immediate functional damage, memory is a distributed process, and the concept of connectional diaschisis has been identified in human patients where functional alterations extend beyond structural damage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C103 provide appropriate literature context with citations supporting the concept of distributed effects of focal lesions, establishing relevance to human conditions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R38",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "NMDA-induced excitotoxic lesions share mechanisms with the initial phase of ischemic injury but differ from traumatic brain injury, and have the advantage of sparing fibers of passage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C106 appropriately discuss the relationship between the experimental lesion method and human pathology, with appropriate citations. This addresses generalizability while acknowledging limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R39",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "The observed volumetric decreases in medial septum, amygdala, and parahippocampal cortex parallel findings in human developmental amnesia and preterm birth, with severe damage causing permanent impairment but milder damage potentially allowing compensatory plasticity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C111 appropriately connect the findings to human conditions with relevant citations. C111 is somewhat speculative regarding the role of incomplete subcortical damage in the current study's behavioral outcomes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R40",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "Dendritic tree size and spine count show opposite gradients to neuronal density, and the loss of connectivity in high neuronal density areas may reflect limited dendritic spines crucial for plasticity, as spine and dendritic remodeling has been observed following stroke.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113-C115 provide mechanistic context for the neuronal density findings with appropriate citations. C114 is inferential but reasonable given the cited literature on dendritic spine gradients and plasticity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R41",
+    "claim_ids": [
+      "C116",
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "While synaptic plasticity is traditionally considered neuronally initiated, astrocytes and microglia can modify synaptic connectivity and strength even without neuronal activity, and have emerged as therapeutic targets for brain injury.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C116-C119 provide important mechanistic context for the non-neuronal cell density findings with appropriate citations to the glial plasticity literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R42",
+    "claim_ids": [
+      "C122"
+    ],
+    "result": "Hubs may be more likely to be connected to lesion sites and thus more likely to suffer from diaschisis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C122 is presented as a hypothesis extending Crossley et al. (2014). While plausible, the current data do not directly test whether hub vulnerability is mediated by connectivity to the lesion site, as hubness was an independent predictor after controlling for hippocampal connectivity (C123).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R43",
+    "claim_ids": [
+      "C129"
+    ],
+    "result": "Consistent relationships between cell densities and hub properties have not emerged across studies, possibly due to different techniques and hub definitions across species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C129 appropriately acknowledges inconsistencies in the literature with relevant citations, providing context for the exploratory nature of the cell density-hubness analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R44",
+    "claim_ids": [
+      "C95"
+    ],
+    "result": "Functional connectivity loss and recovery may correspond to the timeline of behavioral function loss and recovery following lesions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C95 is explicitly presented as a speculative hypothesis for future investigation. The current study lacks the temporal resolution of behavioral testing needed to test this hypothesis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R45",
+    "claim_ids": [
+      "C50",
+      "C51"
+    ],
+    "result": "Pre-lesion hippocampal functional connectivity was strongest with nearby medial and ventral temporal regions, while dorsal frontal regions showed slight negative correlations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C51 describe the pre-lesion connectivity pattern that serves as a predictor in subsequent analyses. These are supported by the functional connectivity data and validated against anatomical atlases (C48-C49).",
+    "result_type": "MINOR"
+  }
+]

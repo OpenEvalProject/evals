@@ -1,0 +1,191 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C66",
+      "C67",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Doa10 functions as a retrotranslocase that facilitates passive movement of the tail-anchored membrane protein Ubc6 from the lipid bilayer into the aqueous phase. This was demonstrated using three independent assays: Get3 capture (43\u00b14% release), antibody accessibility (fluorescence quenching over 30 min), and protease protection (TEV accessibility). The process occurs without ATP hydrolysis and requires Doa10 and Ubc6 to reside in the same membrane.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple orthogonal assays (C17-C25) consistently demonstrate Doa10-dependent retrotranslocation. Critical controls include: (1) ATP-independent Get3 mutant showing similar activity (C19), (2) specificity controls showing ATP synthase does not cause retrotranslocation (C25), (3) requirement for membrane co-localization using docked SNARE mutants (C22). The reconstitution system is well-characterized with orientation controls (C80-C81). Quantitative measurements with error bars strengthen conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "The reconstituted system recapitulates the in vivo Ubc6 ubiquitination pathway: Ubc6 autoubiquitination is enhanced by Doa10 to produce monoubiquitination, followed by Ubc7/Cue1-dependent polyubiquitination with K48 linkages. Monoubiquitination is a prerequisite for polyubiquitination, as demonstrated by experiments with catalytically inactive Ubc6C87A and Ub-Ubc6C87A fusion proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The ubiquitination pathway is systematically dissected using component omission experiments (C31) and kinetic analysis (C33). The monoubiquitination prerequisite is convincingly demonstrated through genetic complementation with Ub-Ubc6C87A (C34). Agreement with prior in vivo and in vitro studies (C36) validates the reconstituted system. The use of K0 ubiquitin mutant to distinguish mono- from polyubiquitination strengthens the mechanistic conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "The Cdc48 ATPase complex (with Ufd1/Npl4 cofactors) provides the driving force for extraction of polyubiquitinated Ubc6 from membranes. Extraction requires ATP hydrolysis by Cdc48, polyubiquitin chains of at least 5 ubiquitin moieties, and both Cdc48 and Ufd1/Npl4 components. In the presence of Cdc48/UN, 45\u00b117% of Ubc6 molecules with >5 ubiquitins were extracted compared to 15\u00b14% background.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The extraction assay includes appropriate controls: catalytically inactive Cdc48E588A (C41), component omissions (C40), and ubiquitin chain length requirements (C38, C42). The quantitative analysis with error bars and background measurements strengthens conclusions. However, the incomplete extraction efficiency (45\u00b117%) is acknowledged but not fully explained, suggesting potential missing factors or technical limitations that warrant future investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "The C-terminal region of Doa10 containing transmembrane segments 3-14 (Doa10-C) is sufficient for retrotranslocation activity, while the N-terminal region containing the RING domain and TM segments 1-2 (Doa10-N) shows minimal activity. This was demonstrated using both antibody accessibility and protease protection assays.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Domain mapping experiments using Doa10 truncations are well-controlled with both positive (full-length) and negative (Doa10-N alone) controls. The use of two independent assays (antibody accessibility and protease protection) provides orthogonal validation. The truncation boundaries were rationally chosen based on K. lactis Doa10 expression as two polypeptides, providing evolutionary support for the domain architecture.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "The identity of the substrate's transmembrane segment is critical for both retrotranslocation and ubiquitination by Doa10. Replacement of the Ubc6 TM with the synaptobrevin TM abolished retrotranslocation and impaired Doa10-dependent monoubiquitination, while E3-independent autoubiquitination remained unaffected. This indicates specific TM-TM recognition between Doa10 and its substrates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The TM swap experiments (C47-C51) provide strong evidence for substrate specificity. Critical controls include: (1) E3-independent autoubiquitination is unaffected, ruling out general protein misfolding (C50), (2) direct co-reconstitution protocol eliminates SNARE-mediated artifacts, (3) affinity purification of Doa10 liposomes ensures proper experimental setup. The mild effect on polyubiquitination (C49) vs. stronger effect on monoubiquitination (C50) suggests TM recognition primarily affects substrate recruitment.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "The transmembrane domain of Doa10 (TM segments 3-14) contributes to substrate ubiquitination efficiency. Doa10-N alone shows reduced ubiquitination activity, but co-reconstitution of Doa10-N and Doa10-C restores wild-type levels, indicating the TM domain plays a role in substrate recognition and recruitment beyond its retrotranslocation function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The rescue experiment with co-reconstituted Doa10-N and Doa10-C (C53) is a strong control demonstrating that reduced activity is not due to impaired E3 catalytic function. The parallel effects on both ubiquitination and retrotranslocation (C55) support a unified model of TM-mediated substrate recognition. However, the mechanism by which separated domains complement each other in trans is not fully explained and may warrant structural investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Doa10 retrotranslocates luminal protein segments in an unfolded state. A protein-protein interaction on the luminal side (Ubc6-SBP bound to streptavidin) prevents retrotranslocation, but Cdc48 acting on cytoplasmic polyubiquitin chains generates mechanical force that dissociates the streptavidin-SBP interaction and drives retrotranslocation. Streptavidin remains encapsulated in liposomes during extraction, demonstrating membrane integrity is maintained and unfolding occurs on the luminal side.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The streptavidin-SBP system is an elegant experimental design to probe luminal unfolding. Critical controls include: (1) biotin vs. biotinylated protein showing membrane impermeability is required (C57), (2) streptavidin flotation demonstrating membrane integrity (C59, C64), (3) dependence on polyubiquitination and Cdc48 activity (C58). The interpretation of SBP-streptavidin dissociation as unfolding (C61) is reasonable given the high-affinity interaction (Kd ~10^-14 M), comparable to intramolecular protein interactions. However, the 57 amino acid SBP-containing segment may not fully represent a stably folded domain.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C27",
+      "C28",
+      "C65"
+    ],
+    "result": "Doa10 facilitates passive equilibrium between membrane-inserted and retrotranslocated states of substrates by lowering the energetic barrier for TM segment extraction. In the absence of traps (chaperones or antibodies), the membrane-embedded state is energetically favored, but traps shift the equilibrium toward the soluble state by preventing reinsertion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The equilibrium model is supported by the observation that ATP-independent chaperones (Get3 D57N) drive retrotranslocation to completion (C19). The model is conceptually sound and consistent with thermodynamic principles. However, the model is primarily inferential (C27-C28) and would benefit from direct measurements of equilibrium constants or kinetic rate constants for insertion/extraction. The claim that Doa10 'lowers the energetic barrier' is mechanistically vague without structural or biophysical data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C1",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C29",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Background: Doa10 is a conserved 150 kDa ubiquitin ligase with 14 TM segments that works with E2 enzymes Ubc6 and Ubc7 (anchored by Cue1) in ERAD. Ubc6 initiates ubiquitin chains while Ubc7 extends K48-linked chains. Degradation of TM-containing substrates requires Cdc48/Ufd1/Npl4, which is recruited via Ubx2. Ubc6 is itself a Doa10 substrate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims represent well-established background knowledge appropriately cited from prior literature. The citations appear accurate and comprehensive. This contextual information is essential for interpreting the novel findings but does not constitute new results from this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Speculation: The authors propose that TM segments access a binding site in Doa10 through a lateral gate, potentially promoting delipidation and breaking helix-helix interactions. They further propose that membrane-bound retrotranslocases generally contribute to AAA protein-driven extraction across biological systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These are explicitly speculative proposals (C76-C77) without direct experimental support in this manuscript. The lateral gate model is plausible based on other membrane protein systems but requires structural data for validation. The general proposal about retrotranslocases (C78) is a reasonable extrapolation but extends beyond the data presented. These represent hypotheses for future investigation rather than supported conclusions.",
+    "result_type": "MINOR"
+  }
+]

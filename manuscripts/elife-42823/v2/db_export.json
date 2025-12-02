@@ -1,0 +1,1512 @@
+{
+  "submission": {
+    "id": "0bf0a5bd-8bd5-4aca-9e22-ec1be7c75265",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T10:08:16.587964Z",
+    "updated_at": "2025-12-02T10:08:16.587964Z"
+  },
+  "content": [
+    {
+      "id": "4fe587b1-7901-4cd4-8c65-2bb95e3e0b92",
+      "submission_id": "0bf0a5bd-8bd5-4aca-9e22-ec1be7c75265",
+      "content_type": "manuscript",
+      "content_text": "# A multiplexed DNA FISH strategy for assessing genome architecture in Caenorhabditis elegans\n\n## Authors\n\n- Brandon D Fields<sup>1</sup> ([ORCID: 0000-0002-8410-9374](https://orcid.org/0000-0002-8410-9374))\n- Son C Nguyen<sup>2</sup>\n- Guy Nir<sup>2</sup> ([ORCID: 0000-0001-9268-6596](https://orcid.org/0000-0001-9268-6596))\n- Scott Kennedy<sup>2</sup> ([ORCID: 0000-0002-7974-8155](https://orcid.org/0000-0002-7974-8155)) \u2020\n\n### Affiliations\n\n1. Laboratory of Genetics University of Wisconsin-Madison Madison United States\n2. Department of Genetics Harvard Medical School Boston United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nEukaryotic DNA is highly organized within nuclei and this organization is important for genome function. Fluorescent in situ hybridization (FISH) approaches allow 3D architectures of genomes to be visualized. Scalable FISH technologies, which can be applied to whole animals, are needed to help unravel how genomic architecture regulates, or is regulated by, gene expression during development, growth, reproduction, and aging. Here, we describe a multiplexed DNA FISH Oligopaint library that targets the entire Caenorhabditis elegans genome at chromosome, three megabase, and 500 kb scales. We describe a hybridization strategy that provides flexibility to DNA FISH experiments by coupling a single primary probe synthesis reaction to dye conjugated detection oligos via bridge oligos, eliminating the time and cost typically associated with labeling probe sets for individual experiments. The approach allows visualization of genome organization at varying scales in all/most cells across all stages of development in an intact animal model system.\n\n## Introduction\n\nEukaryotic genomes are non-randomly organized within mitotic and interphase nuclei. The basic unit of genome organization is the nucleosome. Nucleosomes assemble into higher order structures whose biogenesis, maintenance, regulation, and purpose are poorly understood (Bickmore, 2013; Bonev and Cavalli, 2016; Meaburn, 2016; Yu and Ren, 2017). DNA fluorescent in situ hybridization (FISH) technologies and chromatin conformation capture techniques allow 3D architectures of genomes to be assessed (Bauman et al., 1980; Beliveau et al., 2012; Bienko et al., 2013; Dekker et al., 2013, Dekker et al., 2002; Lieberman-Aiden et al., 2009). Studies using these technologies have begun to reveal how DNA is organized within nuclei. For instance, chromatin capture experiments show that many eukaryotic genomes are assembled into megabase-sized structures termed topologically associated domains (TADs). TADs, and larger organizational units termed compartments, are thought to allow subregions of chromosomes to share and integrate long-range transcriptional regulatory signals (Dekker and Heard, 2015; Dekker and Mirny, 2016; Dixon et al., 2012; Lieberman-Aiden et al., 2009; Vernimmen and Bickmore, 2015). Additionally, DNA FISH and chromatin immunoprecipitation (ChIP) experiments have shown that the position of genes within nuclei is often not random: active genes tend to localize near nuclear pores and/or the nuclear interior while inactive genes tend to localize to the nuclear periphery, distant from nuclear pores (Casolari et al., 2004; Gonzalez-Sandoval and Gasser, 2016; Lema\u00eetre and Bickmore, 2015; Pickersgill et al., 2006; van Steensel and Belmont, 2017). Finally, DNA FISH experiments have shown that individual chromosomes tend to occupy distinct non-overlapping regions of subnuclear space, even in interphase nuclei (termed chromosome territories) (Bolzer et al., 2005; Cremer and Cremer, 2010). Many questions concerning the large-scale architecture of genomes remain unanswered, including the following: how the various aspects of genome architecture, such as gene position, TADs, or territories differ in different cell types or across developmental time, and how such changes relate to gene expression during development. Technologies that enable rapid and flexible analysis of genome organization in an intact animal would allow such questions to be addressed.\n\nThe nematode Caenorhabditis elegans is an excellent model for studying genome organization in an intact animal due to its size (1 mm), lifespan (~3 days to reproductive maturity), genome size (100 Mb across five autosomes and one sex chromosome), and transparent body. Whole-chromosome DNA FISH experiments have been instrumental for our current understanding of chromosome architecture and dynamics in model organisms such as C. elegans (Lau et al., 2014; Nabeshima et al., 2011). Such studies are limited, however, by the cost and time associated with generating DNA FISH probe sets. For example, a previous chromosome level DNA FISH experiment in C. elegans used 127 yeast artificial chromosome (YAC) clones split into 50 amplification reactions for three chromosome probe generation (Nabeshima et al., 2011). Oligopaint technology has made DNA FISH probe production faster, cheaper, and more flexible (Beliveau et al., 2012). Oligopaint takes advantage of massively parallel DNA synthesis technologies to create user defined libraries containing hundreds of thousands of individual DNA oligos each comprised of a short (42 bp) DNA sequence that hybridizes to a genome, as well as additional \u2018barcode\u2019 sequences that serve two major functions. First, barcodes allow probes to be repeatedly amplified from an Oligopaint library, thus providing a virtually inexhaustible supply of oligos for DNA FISH (Beliveau et al., 2012; Chen et al., 2015; Murgha et al., 2014). Second, barcodes allow pre-labeled detection oligos to be used to detect Oligopaint oligos, thus obviating the need for fluorescently labeling probes for each DNA FISH experiment (Beliveau et al., 2015; Beliveau et al., 2012; Nir et al., 2018; Rosin et al., 2018).\n\nPreviously, the Oligopaint technology has been used to visualize chromosome territories in Drosophila cultured cells in normal and mutant contexts (Rosin et al., 2018). Here, we describe a rapid, flexible and inexpensive Oligopaint strategy that enables visualization of chromosome territories and sub-chromosome regions in a whole intact organism. Specifically, we report methods for using this library to simultaneously visualize all six C. elegans chromosomes, as well as three megabase and 500 kilobase subregions of these chromosomes, in all/most cells of C. elegans across all stages of development.\n\n## Results\n\n### C. elegans oligopaint library design.\n\nAn Oligopaints bioinformatics pipeline was used to identify 42 bp DNA sequences in the C. elegans genome (genome reference Ce10) that (1) uniquely map to the genome, (2) exhibit similar melting temperatures and similar GC content, (3) lack repetitive stretches, and (4) lack predicted secondary structures (Beliveau et al., 2012). [Note, an updated bioinformatics pipeline for identifying probes is now available (Beliveau et al., 2018).] The results of our bioinformatic search revealed approximately nine suitable probe sequences per kilobase of C. elegans genomic DNA (Table 1). We generated an Oligopaint library that contained, on average,~2 probe sequences per kb of genomic DNA across each C. elegans chromosome (Figure 1a and Table 1). Figure 1a shows the distribution of all (25,174) chromosome I probes. Few gaps between probes exceeded 5 kb (33 out of 25,174), with the largest gap spanning\u00a0~18 kb. A subtle decrease in probe density is observed on chromosome arms, perhaps due to an increase in repetitive sequences in these regions, which biased against probe selection (C. elegans C. elegans Sequencing Consortium, 1998). Similar probe distributions are observed for the other five C. elegans chromosomes (Figure 1\u2014figure supplement 1). In total, the library consisted of 170,594 oligos (termed primary Oligopaint oligos), which each contain 42 bp of unique genomic sequence flanked by barcode sequences that allow for DNA FISH targeting each of the six C. elegans chromosomes, as well as three megabase, or 500 kb subregions of these chromosomes (Figure 1b). Bridge oligos (also see Nir et al., 2018) were designed to base pair with barcode sequences contained within primary probes as well as base pair with dye-conjugated detection oligos (Figure 1c). Detection oligos were designed that base pair with bridge oligos and are conjugated to three fluorophores (Alexa 488, Cy3, and Alexa 647) (Figure 1c). Thus, bridge oligos are intermediate probes that hybridize to the primary probe and provide a docking site for labeled detection probes. Bridge oligos provide versatility (and cost savings) to DNA FISH experiments as these oligos allow any primary probe set to be coupled to any detection probe set with minimal additional cost. Bridge oligos also allow for more than one fluorophore to be targeted to primary probes, which expands the number of objects that can be visualized with a standard three channel microscopy system (see six chromosome FISH experiments below). By using 1) detection oligos with fluorophores on both 3\u2019 and 5\u2019 termini, 2) two detection oligos per bridge oligo, and 3) bridge oligos that target the 5\u2019 and 3\u2019 barcode sequence of primary probes, it is possible to have each primary oligo recognized by eight fluorophores. To conduct DNA FISH, unlabeled primary probes are first PCR amplified from the Oligopaint library as described in Beliveau et al. (2017); Beliveau et al., 2012; Chen et al., 2015; Murgha et al., 2014 (also see Materials and methods). Second, primary Oligopaint oligos are hybridized to fixed samples of C. elegans overnight (see below and Materials and methods). Third, samples are hybridized with a mixture of bridge oligos and dye-conjugated detection oligos for 3 hr the following day (Figure 1c). Together, this three-step strategy allows many DNA FISH experiments to be conducted fairly cheaply after a single primary probe synthesis step.\n\n**Table 1.**\n Distribution of oligonucleotide sequences across the C. elegans genome.Potential probe sequences were identified as described in Materials and methods. Every fifth oligo sequence was incorporated into the library to ensure even distribution. The average distance between selected probes for each chromosome, and the standard deviations of these distances, are indicated. Kb, kilobase. bp, base pair.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Chr</th>\n      <th>First coordinate</th>\n      <th>Last coordinate</th>\n      <th>Potential oligo sequences</th>\n      <th>Potential oligo sequences/kb</th>\n      <th>Oligo sequences chosen</th>\n      <th>Oligo sequences chosen/kb</th>\n      <th>Average distance between oligos (bp)</th>\n      <th>Standard deviation of distance between oligos (bp)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>I</td>\n      <td>512</td>\n      <td>14999984</td>\n      <td>125,863</td>\n      <td>8.39</td>\n      <td>25,174</td>\n      <td>1.68</td>\n      <td>595.8</td>\n      <td>505.9</td>\n    </tr>\n    <tr>\n      <td>II</td>\n      <td>163</td>\n      <td>15199262</td>\n      <td>136,793</td>\n      <td>9.00</td>\n      <td>27,360</td>\n      <td>1.80</td>\n      <td>555.5</td>\n      <td>484.5</td>\n    </tr>\n    <tr>\n      <td>III</td>\n      <td>123</td>\n      <td>13599784</td>\n      <td>133,977</td>\n      <td>9.85</td>\n      <td>22,796</td>\n      <td>1.68</td>\n      <td>595.9</td>\n      <td>572.2</td>\n    </tr>\n    <tr>\n      <td>IV</td>\n      <td>655</td>\n      <td>17399857</td>\n      <td>137,270</td>\n      <td>7.89</td>\n      <td>27,454</td>\n      <td>1.58</td>\n      <td>633.8</td>\n      <td>585.4</td>\n    </tr>\n    <tr>\n      <td>V</td>\n      <td>414</td>\n      <td>20699907</td>\n      <td>177,948</td>\n      <td>8.60</td>\n      <td>35,590</td>\n      <td>1.72</td>\n      <td>581.6</td>\n      <td>460.4</td>\n    </tr>\n    <tr>\n      <td>X</td>\n      <td>595</td>\n      <td>17599761</td>\n      <td>161,095</td>\n      <td>9.15</td>\n      <td>32,220</td>\n      <td>1.83</td>\n      <td>546.2</td>\n      <td>436.8</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td>872,946</td>\n      <td>8.81</td>\n      <td>170,594</td>\n      <td>1.71</td>\n      <td>584.8</td>\n      <td>507.5</td>\n    </tr>\n  </tbody>\n</table>\n\n![Figure 1.](https://cdn.elifesciences.org/articles/42823/elife-42823-fig1-v2.jpg)\n\n**Figure 1.:** (A) The distribution of Oligopaint probes across chromosome I is shown. Green dashed line indicates the two probe/kb average. Red line indicates the end of the chromosome. Probe distribution is similar for other chromosomes (see Table 1 and Figure 1\u2014figure supplement 1). (B) Oligopaint library allows primary oligos, which are specific to any chromosome, 3 Mb, or 500 Kb region within any chromosome, to be specifically amplified. Primary probes are PCR amplified from Oligopaint library and produced as described in Materials and methods. Bridge and detection probes allow the indicated chromosomal regions to be visualized. (C) Primary probes consist of barcode sequences appended to 42 bp sequences that hybridize uniquely to the C. elegans genome. Total length of each oligo is 150 bp. Barcode sequences allow each primary probe to be amplified as part of a pool of primary probes that target a chromosome (chromosome barcode), 3 Mb subsection of chromosome (3 Mb barcode), or 500 kb subsection of chromosome (500 kb barcode). Bridge oligos and Detection oligos (arrows) are used to recognize and illuminate primary probes. Note: primary oligos contain an additional barcode not used in this work (brown). The barcode is specific to each 500 kb segment and could be used to increase detection efficiencies of 500 kb DNA FISH by allowing an addition detection oligo to be incorporated during the detection phase of DNA FISH.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/42823/elife-42823-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Distance between each individual probe (black dots) along the entire length of each chromosome. Green dashed line indicates the two probe/kb average mark. The red line indicates the end of each chromosome.\n\n### C. elegans oligopaint staining is robust and specific\n\nDNA FISH in C. elegans is typically done on dissected tissue. We developed a fixation and hybridization protocol that allowed for efficient DNA FISH on intact C. elegans. As part of this protocol, hybridization steps are conducted in microcentrifuge tubes, which allows large numbers of animals to be simultaneous assayed by FISH. A detailed description of this fixation and hybridization protocol can be found in Materials and methods. To test our C. elegans Oligopaint library, we amplified a primary probe set targeting chromosome II (27,360 unique probes) and asked if this probe set was able to specifically label chromosome II. The behavior and morphology of chromosomes in the C. elegans germline are well-established (Albertson et al., 2011). For instance, homologous chromosomes pair at the pachytene stage of Meiosis I at a defined region of the germline (termed pachytene region). Oocytes are arrested in diakinesis of meiosis I and chromosomes are highly condensed with homologs connected via a single chiasmata (termed bivalents) (Villeneuve, 1994). Mature sperm harbor highly condensed chromosomes and are haploid. To address specificity, we imaged germ cells of animals subjected to chromosome II DNA FISH. This analysis detected the expected chromosomal structures in pachytene germ cells, oocytes, and sperm; fluorescent staining was observed on a single bivalent in oocytes and in one region of the nucleus in sperm and pachytene germ cells (Figure 2). HIM-8 is required for X chromosome homolog pairing during meiosis and, consequently, X chromosomes are present as two univalents (and not a single bivalent) in him-8 mutant animals (Phillips et al., 2005). To further address specificity, we imaged oocytes of wild type and him-8 (e1489) mutant animals subjected to X chromosome Oligopaint. As expected, X chromosome DNA FISH stained a single bivalent in wild-type oocytes (58/58) and two univalents in 84% of him-8 oocytes (51/61) (Figure 2\u2014figure supplement 1). Together the data show that the C. elegans Oligopaint library is specific.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/42823/elife-42823-fig2-v2.jpg)\n\n**Figure 2.:** (A\u2013C) Adult C. elegans were fixed as described in Materials and methods. Fixed animals were subjected to three step hybridization to detect Chromosome 2 (red). Animals were co-stained with DAPI (blue). (A) 3D maximum projection of the pachytene region of an adult C. elegans germline is shown. (B) 3D maximum projection of an oocyte. A single bivalent is stained with chromosome II Oligopaints. (C) 3D maximum projection of sperm. Scale bars for images are indicated. All images are representative of at least three independent animals.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/42823/elife-42823-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A)\u00a0X chromosome Oligopaint (red) and DAPI (blue) visualized in three C. elegans oocytes from wild type (top) and him-8 (e1489) bottom. Note the presence of two DNA FISH signals in the him-8 (e1489) mutant animals compared to a signal DNA FISH signal observed in wild-type animals. (B) Quantifications of X chromosome Oligopaint signals in wild type and him-8 (e1489) mutant animals. All images are representative of at least three independent animals.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/42823/elife-42823-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** Mixed stage samples of C. elegans were subjected to three-step hybridization to detect Chromosome II as described in Materials and methods. Chromosome II staining is shown in red. Animals were co-stained with DAPI (blue). Scale bars are indicated. (A) Intestinal nuclei, (B) hypodermal nuclei, (C) ventral cord neurons, (D)\u00a0~\u00a0100 cell embryo, and (E) larval stage one animal. All images are representative of at least three independent animals.\n\nTo quantify the efficiency of our method, we first measured the percentage of whole animals stained by chromosome II DNA FISH. Staining presented in an all or nothing fashion with 1085/1303 (83%) of larval stage animals, 317/326 (97%) of adult animals, and 50% of the embryos housed within uteri of adult animals displaying FISH signal (Figure 2\u2014figure supplement 2). [Note, an alternative protocol that allows for greater efficiency using isolated embryos (90%) is described in Materials and methods.] We next measured the % of nuclei within a given animal that were stained by chromosome II DNA FISH. We randomly chose DAPI-stained nuclei (from animals that showed staining) and asked if these nuclei were positive for chromosome II DNA FISH signals. Out of 50 randomly chosen somatic nuclei 50/50 had DNA FISH signal. Likewise, 50/50 germline nuclei were positive for DNA FISH signals. We conclude that our library and hybridization strategy allows for robust and specific labeling of a whole chromosome in many cell types and many developmental stages simultaneously in large numbers of animals. It is possible that DNA FISH signals in every cell and at every stage of development can be visualized with this approach.\n\n### Simultaneous visualization of all six C. elegans chromosomes\n\nC. elegans possess six chromosomes. Most lab microscopy systems are equipped to\u00a0image\u00a03-4 fluorophores and, thus, are not capable of imaging all six C. elegans chromosomes simultaneously. To circumvent this issue, we took advantage of our bridge oligo strategy to target combinations of fluorophores to each C. elegans chromosome in order to image all six chromosomes using a three-channel microscopy system (Figure 3). For instance, Figure 3\u2014figure supplement 1 shows an example of multi-probe labeling of the X chromosome: Detection oligos labeled with either Alexa 647 or Cy3 were targeted to the X chromosome (Figure 3\u2014figure supplement 1a). Overlapping Alexa 647 (green) or Cy3 (red) channels produces a yellow pseudocolor that can be differentiated from Alexa 647 (green) or Cy3 (red) alone (Figure 3\u2014figure supplement 1b). We next amplified primary probe sets targeting all six C. elegans chromosomes and hybridized primary probe sets to fixed adult C. elegans. We then used bridge oligos to couple these primary probe sets to detection probes labeled with Alexa 488, Cy3, or Alexa 647, or combinations of these fluorophores, in order to simultaneously image all six C. elegans chromosomes (Figure 3a). We imaged oocytes in these animals and detected six bivalents that were each labeled a distinct color (Figure 3b). In pachytene stage adult germ cells, C. elegans chromosomes are paired, condensed, and localized near the nuclear periphery (Albertson et al., 2011). DNA FISH illuminated six regions of distinct colors concentrated near the nuclear periphery in pachytene germ cells (Figure 3c). Six chromosome DNA FISH staining was robust: 50/50 randomly chosen DAPI positive nuclei were stained successfully. Six chromosome FISH staining was also successful in somatic nuclei. Six distinct colors were often distinguishable in the nuclei of intestinal and hypodermal nuclei, as well as nuclei whose small size and positioning within the animal were indicative of ventral cord neurons (Figure 3d\u2013f and Figure 3\u2014video 1). These data show that our DNA FISH approach is capable of labeling all six C. elegans chromosomes simultaneously in many different cell types of an intact animal. The data also show that, like interphase chromosomes in other eukaryotes, C. elegans chromosomes occupy largely distinct territories within interphase nuclei and that these chromosome territories persist in post-mitotic cells. Note, because the six color strategy described above visualizes an overlap of two colors (each of which is also used to define a separate chromosome), rigorously defining the subnuclear space occupied by individual chromosomes is not possible using this six color approach. Single channel probe sets are recommended for experiments in which knowing the precise space occupied by a chromosome is relevant (see Figure 5 for examples).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/42823/elife-42823-fig3-v2.jpg)\n\n**Figure 3.:** (A) Strategy to detect six chromosomes is shown. Detection probes labeled with Alexa488 (Green), Cy3 (Red), and Alexa647 (Blue), or combinations of these three fluorophores were used to label each of the six C. elegans chromosomes a different color. (B\u2013F) Adult C. elegans were fixed and subjected to three step hybridization to detect Chromosomes 1, 2, 3, 4, 5, and X. (B) 3D maximum projection of an oocyte. Each bivalent is labeled a different color. (C) 3D maximum projection of the pachytene region of an adult germline. A magnification of one of these nuclei is shown to the right. (D) 3D maximum projections of an intestinal nucleus, (E) hypodermal nucleus, and (F) nuclei whose size and position within the animal suggest the cell is a ventral cord neuron. All images are representative of at least three independent animals.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/42823/elife-42823-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A)\u00a0Schematic diagram of a multicolor labeling strategy. Different bridge and detection oligos are targeted to the 5\u2019 and 3\u2019 chromosome barcodes so that each X chromosome Oligopaint probe is targeted by both Cy3 and Alexa 647 generating an intermediate third color when the two channels are overlaid. (B) Wild-type animals were hybridized with primary probes targeting the X chromosome, and subjected to the bridge and detection oligos described in A. Signals were detected for both the Alexa 647 (green) and Cy3 (red), with the overlap generating yellow. All images are representative of at least three independent animals.\n\n### Detection of 3 Mb and 500 kb chromosomal subregions\n\nWe designed our Oligopaint library to include 3 Mb and 500 Kb barcode sequences that should permit visualization of chromosomal subregions (Figure 1c). To test this aspect of our library, we amplified Oligopaint oligos targeting chromosome I and hybridized these probes to adult C. elegans. We then used bridge oligos that recognized all Chromosome I Oligopaint oligos (~15 Mb), a 3 Mb subregion of chromosome I (0\u20133 Mb), or a 500 kb subregion of this 3 Mb region (1.0\u20131.5 Mb). Detection oligos coupled to Alexa 488, Cy3, and Alexa 647 were used to illuminate each genomic region, respectively. We imaged pachytene germ cells and, as expected, observed a single contiguous DNA FISH signal after chromosome I DNA FISH (Figure 4a). 3 Mb DNA FISH illuminated a subregion of the chromosome I signal and 500 kb DNA FISH illuminated a subregion of this 3 Mb signal (Figure 4a). Staining was robust, with 50/50 randomly chosen nuclei possessing all three fluorescent signals in successfully stained animals. Similar patterns were observed when chromosome IV, a 3 Mb subregion of chromosome IV (0\u20133 Mb), or a 500 kb subregion of this 3 Mb region (2.5\u20133.0 Mb) were analyzed (Figure 4b). We conclude that the Oligopaint library has the capability to visualize 3 Mb and 500 kb subregions of the C. elegans genome.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/42823/elife-42823-fig4-v2.jpg)\n\n**Figure 4.:** Adult C. elegans were fixed and subjected to three step hybridization to detect Chromosome I (A) or IV (B). (A\u2013B) Top, 3D maximum project of pachytene region of adult germline. (A) Chromosome I or (B) chromosome IV, a 3 MB (0\u20133 Mb) region of these chromosomes, and a 500 kb (1\u20131.5 Mb for Ch I and 2.5\u20133 Mb for Ch IV) region of these chromosomes were targeted with detection probes shown in blue, red, and green, respectively. Magnifications of representative nuclei are shown to the right. Bottom, graphic representations of regions of chromosome I (A) or chromosome IV (B) that were stained in the experiment are shown. All images are representative of at least three independent animals.\n\n### Using C. elegans oligopaints to explore the biology of genome architecture\n\nOur C. elegans Oligopaint library and hybridization protocol should allow many questions relating to the biology of genome organization to be asked within the context of a whole animal. We started this process by using our library to ask two simple questions: 1) Whether genomic architecture changes during aging, and (2) what cellular factors are needed to establish and/or maintain chromosome territories in post-mitotic cells?\n\nRecent studies suggest that higher order chromatin structures may break down during aging, and in aging-related diseases such as Alzheimer\u2019s (Winick-Ng and Rylett, 2018). Age-related alterations in nuclear morphology have also been noted in C. elegans (Haithcock et al., 2005). We used our Oligopaint library to simultaneously visualize all six chromosomes in 1- and 10-day-old animals (C. elegans typically live about 2 weeks) to ask if the aging process might affect the genomic architecture. For this analysis, we imaged intestinal nuclei as these cells are postmitotic, have large nuclei, and are easily identifiable due to their idiosyncratic size, shape, and location within the animal. As expected, all six chromosomes occupied largely distinct territories in intestinal cells of 1-day-old animals (Figure 5a). Interestingly, in 10-day-old animals, chromosomes were no longer organized into discrete territories (Figure 5a). Quantification (see Materials and methods) of the space occupied by chromosomes I, II and III in young and aged animals revealed an\u00a0~50% increase in the volume of all three chromosomes (Figure 5b) as well as an increase in the degree to which chromosomes I, II and III overlapped in subnuclear space (Figure 5\u2014figure supplement 1a). The data confirm that the discrete chromosome territories observed in young intestinal nuclei are lost as the worms ages. We asked if the loss of chromosome territories in older animals were a consequence of aging or a function of time. To do so, we conducted a similar analysis on young and old animals harboring a mutation (e1370) in daf-2. daf-2 encodes a insulin-like receptor and loss-of-function mutations in daf-2 and mutations in daf-2 such as e1370 cause animals to live twice as long as wild-type animals (Kenyon et al., 1993; Kimura et al., 1997). Chromosome territories did not become enlarged or disorganized in 10-day-old daf-2 mutant animals versus young animals, indicating that the loss of chromosome territories we see in older wild-type animals is linked to aging and not chronological time (Figure 5a/b and Figure 5\u2014figure supplement 1a). The data are consistent with a model in which higher\u00a0order chromatin structures are lost during aging. Further studies will be needed to address if genome organization in other/all cell types is similarly affected by aging and, more importantly, if the loss of chromosomal territories that occur in aged animals is a cause or consequence of the aging process.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/42823/elife-42823-fig5-v2.jpg)\n\n**Figure 5.:** (A) Adult C. elegans were fixed and subjected to three step hybridization to detect all six chromosomes at day 1 or day 10 of adulthood. 3D maximum projections of a representative intestinal nucleus is shown. Territories appear disorganized in ten-day-old animals. Chromosome territories in ten-day-old daf-2(e1370) (strain\u00a0=\u00a0CB1370) animals are not disorganized. Images shown are representative of at least three independent animals across three biological replicates. (B) Experiment was repeated to detect just chromosomes I, II, and III (this was done to allow unambiguous identification of all three chromosomes as six color DNA FISH introduces overlapping fluorescence signals). ImageJ was used to quantify chromosome territory volume by chromosomes I, II, and III in 1- and 10-day-old animals (see Materials and methods for details of quantification). The volume of chromosomes I, II, and III in 1- or 10-day-old animals of the indicated genotype is indicated on the y-axis. Black bar\u00a0=\u00a0mean value of all data points. p-Values were calculated using a two-tailed student t-test. n =>50 nuclei from at least five animals. (C). Adult C. elegans were subjected to mes-3 RNAi by feeding animals bacteria expressing mes-3 dsRNA for two generations. Animals were subjected to three step hybridization to detect all six chromosomes and 3D maximum projections of a hypodermal nucleus is shown. Territories appear disorganized after treatment with mes-3 dsRNA. Images shown are representative of at least three independent animals across two biological replicates. (D) Quantifications of two independent three chromosome DNA FISH experiments reveals an increase in chromosome territory volume after mes-3 dsRNA. Black bar\u00a0=\u00a0mean value of all data points. p-Values were calculated using a two-tailed student t-test. n =>50 nuclei from at least five animals.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/42823/elife-42823-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** The aging (A) and mes-3 RNAi (B) chromosome quantification data from Figure 5 of main text are displayed here as the degree to which the indicated chromosomal territories overlapped in space. Amount of overlap between chromosomes I-II, I-III, and II-III was calculated for each condition and plotted on the Y axis (log 10 scale) as described in Materials and methods. Numbers in parentheses along the x-axis indicate numbers of data points below 0.01. Black bar\u00a0=\u00a0mean value of all data points. p-Values were calculated using a two-tailed student t-test. ns\u00a0=\u00a0not significant. n =>50 nuclei from at least five animals. Note, for unknown reasons, daf-2 mutant animals exhibited a subtle increase in chromosome territory overlap in both young and old daf-2 animals.\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/42823/elife-42823-fig5-figsupp2-v2.jpg)\n\n**Figure 5\u2014figure supplement 2.:** Control (no RNAi) and mes-3 RNAi animals treated animals were subjected to our six chromosome FISH strategy. Germ cells (A), intestinal nuclei (B), and neuronal nuclei (C) were imaged. No dramatic loss of chromosome territories is seen in these cell types after mes-3 RNAi. All images are representative of at least three independent animals.\n\nVery little is known about how chromosome territories are established or maintained in animals. The Oligopaint DNA FISH library described above could be used to identify and characterize genes and pathways mediating and regulating these processes. As a first attempt to identify such factors, we conducted six chromosome DNA FISH on animals subjected to RNAi targeting seven candidate genes, which we suspected might be involved in establishing/maintaining chromosome territories in C. elegans (Figure 5\u2014source data 1). mes-3, which encodes a component of the Polycomb Repressive Complex 2 (PRC2), was included in this small-scale screen because PRC2 is a known regulator of chromatin architecture in many organisms (Capowski et al., 1991; Holdeman et al., 1998; Ross and Zarkower, 2003; Xu et al., 2001). RNAi targeting mes-3 caused a loss of chromosome territories in adult hypodermal cells (Figure 5c). Note: we chose to image hypodermal cells for this analysis as these cells are, like intestinal cells, easy to identify and because (for unknown reasons) the effects of mes-3 RNAi on genome architecture appeared to be most dramatic in this cell type (Figure 5\u2014figure supplement 2, and see below). Quantification of chromosomes I, II, and III volumes in hypodermal nuclei revealed an\u00a0~45% increase in chromosome volume when animals were exposed to mes-3 RNAi, suggesting that MES-3 is important for maintaining chromosome territories of hypodermal cells during the normal course of growth and development (Figure 5d). Quantification of the degree to which DNA FISH signals for chromosomes I, II, and III overlapped revealed an\u00a0~2 fold increase in overlap after mes-3 RNAi, suggesting that chromosome territories are not just growing, they are also mixing (Figure 5\u2014figure supplement 1b). In summary, the data suggest that MES-3 and, therefore, PRC2 is needed to establish and/or maintain chromosome territories in C. elegans. Additional studies will be needed to understand the source of cell type specificity of mes-3 knockdown on genome architecture and related studies using mutant alleles of mes-3, as well as loss-of-function alleles in other components of the PRC2, will be needed to confirm the link between PRC2 and the maintenance of chromosome territories.\n\n## Discussion\n\nThe invariant cell lineage, transparency, and small genome (100 Mb) of C. elegans make this animal an excellent system in which to explore how genome architecture relates to gene expression, development, growth, reproduction, and aging. DNA FISH experiments in C. elegans have historically relied on 1) labeling PCR products that cover a single small (5\u201310 kb) region, or 2) YACs to generate probes targeting larger regions (up to whole chromosomes). Such approaches are low throughput and rigid in the sense that new probe sets need to be produced for each new DNA FISH experiment. Such experiments have also been limited by the types of cells that can be queried, as most DNA FISH protocols rely on dissection of tissues, which is low throughput and limits the number of cell types that can be analyzed at one time. Here we describe an Oligopaint DNA FISH library and hybridization strategy that allow for visualization of all six C. elegans chromosomes at varying scales. The ability to rapidly and cheaply produce C. elegans DNA FISH probes, in conjunction with improvements to hybridization protocols, enables DNA FISH in all/most cells across all stages of development in an intact animal. These improvements should empower studies asking if/how higher-order chromatin structures regulate, and/or are regulated by, changes in gene expression that occur during growth and development. Given the invariant cell lineage of C. elegans, it should now also be possible to ask if chromosome- chromosome interactions or homolog pairing, or the size, morphology, or sub-nuclear positioning, of chromosomal territories (or subregions of these territories) vary predictably by cell type, age, or developmental trajectory.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>sStrain, strain background (C. elegans)</td>\n      <td>N2 (wild type)</td>\n      <td>CAENORHABDITIS GENETICS CENTER (CGC)</td>\n      <td>N/A</td>\n      <td>https://cgc.umn.edu/strain/N2</td>\n    </tr>\n    <tr>\n      <td>sStrain, strain background (C. elegans)</td>\n      <td>CB1489 (him-8 (e1489))</td>\n      <td>CAENORHABDITIS GENETICS CENTER (CGC)</td>\n      <td>WB Cat# CB1489,RRID:WB-STRAIN:CB1489</td>\n      <td>https://cgc.umn.edu/strain/CB1489</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (C. elegans)</td>\n      <td>CB1370 (daf-2 (e1370))</td>\n      <td>CAENORHABDITIS GENETICS CENTER (CGC)</td>\n      <td>WB Cat# CB1370, RRID:WB-STRAIN:CB1370</td>\n      <td>https://cgc.umn.edu/strain/CB1370</td>\n    </tr>\n    <tr>\n      <td>Strain, strain \u00a0background (E. coli)</td>\n      <td>OP50</td>\n      <td>CAENORHABDITIS GENETICS CENTER (CGC)</td>\n      <td>WB Cat# OP50, RRID:WB-STRAIN:OP50</td>\n      <td>https://cgc.umn.edu/strain/OP50</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (E. coli)</td>\n      <td>HT115 (DE3), control bacteria for RNAi</td>\n      <td>CAENORHABDITIS GENETICS CENTER (CGC)</td>\n      <td>WB Cat# HT115(DE3), RRID:WB-STRAIN:HT115(DE3)</td>\n      <td>https://cgc.umn. edu/strain/HT115(DE3)</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (E. coli)</td>\n      <td>mes-3 RNAi clone</td>\n      <td>PMID: 12828945</td>\n      <td>N/A</td>\n      <td>Ahringer RNAi library</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>ImageJ</td>\n      <td>https://imagej.nih.gov/ij/download.html</td>\n      <td>ImageJ, RRID:SCR_003070</td>\n      <td>SeeSupplementary file 8</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>3D Objects Counter Plugin Imagej</td>\n      <td>https://imagej.net/3D_Objects_Counter</td>\n      <td>3D Objects Counter, RRID:SCR_017066</td>\n      <td>SeeSupplementary file 8</td>\n    </tr>\n    <tr>\n      <td>Software,\u00a0algorithm</td>\n      <td>3D ROI Manager</td>\n      <td>http://imagejdocu.tudor.lu/doku.php? id=plugin:stacks:3d _roi_manager:start</td>\n      <td>N/A</td>\n      <td>See Supplementary file 8</td>\n    </tr>\n  </tbody>\n</table>\n\n### Design and synthesis of multiplexed DNA FISH library\n\nWe used a previously described pipeline to mine the C. elegans genome (build ce10) for desirable (see main text) oligonucleotide nucleotide sequences 42 base pairs in length (Supplementary file 1) (Beliveau et al., 2012). 872,946 oligonucleotide sequences met this criteria, and 170,594 probes sequences were chosen for the library (Supplementary file 2). A series of barcode sequences were appended to each 42 bp hybridization sequence, which resulted in each primary probe being 150 bp. Barcode sequences can be found in Supplementary file 5. The 170,594 sequences were ordered as two 90 k oligonucleotide chips from Custom Array (Bothell, WA). Note that a step by step protocol for Oliogpaint probe synthesis can be found in Supplementary file 6. To obtain primary probes for Oligopaint experiments, desired primary probes were first amplified using primers specific to the outermost barcode sequences, which correspond to the individual chromosome barcodes shown in Figure 1a (Supplementary file 5). Single stranded probe (primary probe) generation was conducted as previously described (Chen et al., 2015). Briefly, PCR was used to append a T7 polymerase site to the 5\u2019 end of chromosome specific barcode sequence, followed by T7 polymerase reactions to generate ssRNA. ssRNA was reverse transcribed into ssDNA. Unwanted ssRNA species were degraded using base hydrolysis. Finally, long ssDNA oligos were purified using the Zymo-100 DNA Clean and Concentrator Kit with oligo binding buffer. Probes were stored at 100 pmol/ul at \u221220C. An aliquot of the library is available to qualified labs upon request.\n\n### Bridge and detection probes\n\nBridge oligos were ordered from IDT at 25 or 100 nmole scales using standard desalting procedures. Fluorescent detection oligos were ordered from IDT with 5\u2019 and 3\u2019 fluorescent modifications on the 250 nm or 1 um scale and subjected to HPLC purification. Bridge and detection probe sequences are listed in Supplementary file 5.\n\n### DNA\u00a0FISH\n\nSee Supplementary file 7 for detailed protocol on worm collection and Oligopaint FISH. 10 cm plates containing adult (or mixed stage) C. elegans were washed with M9 solution (11 mM KH2PO4, 21 mM Na2HPO4, 4 mM NaCl, 9 mM NH4Cl in H2O) and collected in 15 ml conical tubes. Animals were pelleted (3 k rpm for 30 s), and washed two times with M9 solution. Animals were resuspended in 10 ml of M9 solution and rocked for\u00a0~30 min at room temperature. Animals were pelleted and aliquoted to 1.5 ml microcentrifuge tubes (30\u201350 ul of packed worms per tube). Samples were placed in liquid nitrogen for 1 min. Frozen worm pellets were resuspended in cold 95% ethanol and vortexed for 30 s. Samples were rocked for 10 min at room temperature. Samples were spun down (3 k rpm for 30 s), supernatant discarded, and washed twice in 1X PBST (10X Phosphate- Buffered Saline (Thermo Fisher Scientific: 70011\u2013044) diluted to 1X in H2O, 0.5% Triton X-100 (Sigma: X100). 1 ml of 4% paraformaldehyde solution (4% paraformaldehyde in 1X PBS) was added and samples were rocked at room temperature for 5 min, washed twice with 1X PBST, and resuspended in 2X SSC (20X saline-sodium citrate (SSC) buffer (Thermo Fischer Scientific: 15557\u2013044) diluted in H2O) for 5 min at room temperature. Samples were spun down and resuspended in a 50% formamide 2X SSC solution at room temperature for 5 min, 95\u00b0C for 3 min, and 60\u00b0C for 20 min. Samples were spun and resuspended in 60 ul of hybridization mixture (10% dextran sulfate, 2X SSC, 50% formamide, 100 pmol of primary probe per chromosome and 2 ul of RNAse A (sigma 20 mg/ml)). Hybridization reactions were incubated in a 100\u00b0C heat block for 5 min before overnight incubation at 37\u00b0C in a hybridization oven. The next day, samples were washed with prewarmed 2X SSCT (2X SSC with 0.5% Triton X-100) (rotating at 60\u00b0C) for 5 min, followed by a second 2X SSCT wash at 60\u00b0C for 20 min. Wash buffer was removed and samples were resuspended in 60 ul of bridge oligo hybridization mixture (2X SSC, 30% formamide, 100 pmol of bridge oligo per targeted region (ie whole chromosome, three megabase, or 500 kb spots) and 100 pmol of each detection oligo. Bridge/detection oligo hybridization reactions were incubated at room temperature for 3 hr. Samples were washed in prewarmed 2XSSC at 60\u00b0C for 20 min, followed by a 5-min wash with 2XSSCT at 60\u00b0C and a 20 min wash in 2XSSCT at 60\u00b0C. Samples were then washed at room temperature in 2XSSCT. Wash buffer was removed and samples were resuspended in mounting medium (Vectashield with DAPI or Slowfade Gold with DAPI). Samples were mounted on microscope slides and sealed with nail polish.\n\n### Alternate embryo DNA FISH protocol\n\nDNA FISH on in utero embryos was only 50% efficient. The following protocol improves this efficiency to 90%. This protocol is an adaptation of an existing C. elegans DNA FISH protocol (Crane et al., 2015). Briefly, adults were dissected in 8 ul of 1X egg buffer on a coverslip (25 mM HEPEs, pH 7.3, 118 mM NaCl2, 48 mM KCl, 2 mM CaCl2, 2 mM MgCl2) to release embryos. Coverslips were placed on a Superfrost Plus Gold slide (Thermo Scientific) and placed in liquid nitrogen for 1 min. Coverslips were popped off with a razor blade and slides were submerged in 95% cold (\u221220C) ethanol for 10 min. Slides were washed twice in 1XPBST before fixation in 4% paraformaldehyde solution (described above) for 5 min. Slides were washed twice in 1XPBST. 20 ul Primary hybridization mixture (described above) was added to each sample and a coverslip was placed on top. Slides were placed on a 90\u00b0C heat block for 10 min. Slides were placed in a humid chamber at 37\u00b0C overnight. Wash steps and bridge/detection oligo hybridization was carried out as described above. 15 ul of mounting medium was added to each sample, and coverslips were sealed with nail polish.\n\n### Microscopy\n\nStandard fluorescent microscopy was conducted on a widefield Zeiss Axio Observer.Z1 microscope using a Plan-Apochromat 63X/1.40 Oil DIC M27 objective and an ORCA-Flash 4.0 CMOS Camera. The Zeiss Apotome 2.0 was used for structured illumination microscopy using three phase images. All image processing were done using the Zen imaging software from Zeiss. Confocal microscopy was done using a Nikon Eclipse Ti microscope equipped with a W1 Yokogawa Spinning disk with 50 um pinhole disk and an Andor Zyla 4.2 Plus sCMOS monochrome camera. A 60X/1.4 Plan Apo Oil objective or a 100X/1.45 Plan Apo Oil objective was used.\n\n### Aging assay\n\nTen adult animals were picked to 6 cm NGM plates seeded with OP50, and 10 plates were used for each condition. Adult animals were picked off 24 hr later and sacrificed. Once the offspring reached the fourth larval stage, 50 animals were transferred to 6 cm NGM plates seeded with OP50 that were soaked in 1 ml of FUDR solution (3 mg of FUDR (abcam) per plate) the previous day. 20 FUDR soaked plates were used per condition. After 24 hr, 10 plates per condition were collected and animals were frozen as pellets in liquid nitrogen before storage at \u221280C (Day 1 adult samples). Ten days later, the same collection was repeated on the remaining 10 plates per condition (Day 10 adult samples). Dead animals, as determined by animals that did not respond to a light touch, were removed prior to sample collection for each condition.\n\n### RNAi assay\n\nWild-type (N2) embryos were collected via hypochlorite treatment (see Supplementary file 7 for description of embryo isolation by hypochlorite treatment) and placed on RNAi plates (NGM plates with 2.5 mM KH2PO427 mM Carbenicillin, 1 mM IPTG) seeded with either HT115 bacteria, or HT115 bacteria expressing mes-3 dsRNA for two generations: the embryos of adult animals grown on either treatment were placed back onto either treatment, grown to adulthood, and collected for FISH analysis (see Supplementary file 7 for description of sample collection). The mes-3 RNAi clone was obtained from the Ahringer library and confirmed to target mes-3 by Sanger sequencing (Kamath and Ahringer, 2003).\n\n### Assessment of chromosome territory volumes and overlapping chromosome territory volumes\n\nFor a step-by-step protocol for the image analysis used in this study see Supplementary file 8. All territory quantifications were done using standard tools in ImageJ along with the 3D objects counter plugin (Bolte and Cordeli\u00e8res, 2006). First, each individual nucleus was segmented from the original file to generate individual nuclei files. The four-channel stack was then split to create individual files for each chromosome (each chromosome is represented by a single fluorophore/channel). To remove background noise and create a binary mask, each image was subjected to thresholding using the default ImageJ thresholding using \u2018auto\u2019 across every image. Once masks were obtained the 3D objects counter tool was utilized to select objects larger than 30 voxels (eliminating further background signal). Object masks for each channel were loaded into the 3D Manager plugin for ImageJ, and all objects for a given chromosome were merged into a single object. The colocalization and measure 3D functions within 3D manager were used to determine the volume of each chromosome as well as the volume of overlap between each chromosome.\n",
+      "created_at": "2025-12-02T10:08:16.587964Z"
+    },
+    {
+      "id": "421aa12a-2bbd-47e0-b3ca-e8eb33f50eda",
+      "submission_id": "0bf0a5bd-8bd5-4aca-9e22-ec1be7c75265",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Brian D Slaughter, Stowers Institute for Medical Research United States\n\nReviewers:\n- Susan Strome, University of California, Santa Cruz United States\n- Barbara Panning, University of California, San Francisco United States\n- Brian D Slaughter, Stowers Institute for Medical Research United States\n\n## Review text\n\nDOI: [10.7554/eLife.42823.029](https://doi.org/10.7554/eLife.42823.029)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"A Multiplexed DNA FISH strategy for Assessing Genome Architecture in C. elegans\" for consideration by eLife. Your article has been reviewed by four peer reviewers, including Brian D Slaughter as the Reviewing Editor and Reviewer #4, and the evaluation has been overseen by Jessica Tyler as the Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Susan Strome (Reviewer #1); Barbara Panning (Reviewer #3).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThis manuscript details the adaptation of DNA chromosome Oligopaints for use in Caenorhabditis elegans. By altering the hybridization strategy from other DNA oligo-paint protocols, the authors have come up with a bridge oligo method that allows for improved flexibility in the labeling of the FISH oligo pools. Fields et al. designed a set of ~170,000 C. elegans oligos arrayed on two 90,000-oligo chips. Each has a unique 42 bp primary oligo plus 3 barcodes, 1 for that oligo's chromosome, 1 for that oligo's 3 MB location, and 1 for that oligo's 0.5 MB location. Using the library of composite oligos in combination with bridge oligos and detection oligos conjugated to 1 of 3 fluorophores, the investigators can perform DNA FISH with up to 6 combinations to image whole chromosomes and/or 0.5-3 MB regions of chromosomes.\n\nHaving established the effectiveness and versatility of the method, the authors then use this method to assess chromosome organization during aging. They show that chromosomal territories become less distinct (enlarged and disorganized) with more overlap (suggesting that chromosomal territories are not maintained) and that this disorganization is age and not time related. Finally, they identify one molecular player, mes-3, knockdown of which phenocopies age-related chromosome disorganization.\n\nThis manuscript will be of broad interest \u2013 the FISH method will be useful for the C. elegans community and the finding that chromosome organization is altered with age will be intriguing to the aging community. Overall, the manuscript is a nice methods paper that will provide a useful resource for broad use within the C. elegans community to address key questions about how genome architecture influences multiple processes and cell types within a developing and aging organism. The reviewers shared enthusiasm for the paper, and would be supportive of publication given that the concerns below are addressed.\n\nEssential revisions:\n\nIn Figure 2, more work should be given to demonstrate the specificity of the Oligopaint approach. To demonstrate specificity, Oligopaint could be done on animals in which oocytes carry a fusion of two chromosomes \u2013 painting one of the chromosomes of the fusion should paint only half of the long fused chromosome. Probably easier would be to paint the X chromosomes in him-8 mutant oocytes, in which the X chromosomes exist as univalents instead of a bivalent.\n\nSTORM data:\n\nSubsection \u201cUsing OligoSTORM to super resolve C. elegans chromosomes within whole animals\u201d: The authors need to be cautious using FISH and STORM to quantify particle density. First, there is no way to know if all the probes are getting activated since STORM is a stochastic method. Thus, an unknown percent of the probes could remain in the dark state and never be activated; or probes might not be deactivated and sent back to the dark state. Second, there is no way to know if all of the probes have hybridized, thus it is dangerous to assume that the probes are still equally distributed once they have been hybridized in the worm. The authors should address both of these in the manuscript.\n\nSubsection \u201cC. elegans Oligopaint library design: The authors mention that the oligos are \"evenly spaced\" with about 2 probes per kilobase of genomic DNA. Is this true all the way across the chromosome? In other organisms the probes are on average evenly spaced, but there are some regions where this can't occur because of repetitive DNA or potential crosstalk of the sequence with another chromosome. Furthermore, the authors use this equal distribution of probes to quantify the density of DNA in the STORM experiment. If regions of the genome are not evenly covered, then that needs to be mentioned and addressed in the STORM quantification.\n\nBeyond this point, the authors should make more clear what the utility of the STORM analysis is, and what specially it adds to the manuscript. The chiasmata between homologs is easily represented with standard fluorescent microscopy. If true, the 'core' idea would be of interest. However, STORM is very sensitive to environment, and more work should be done to determine that the 'core' at the center of each chromosome IV homolog is real, and not an artifact of STORM. It needs to be verified with a further method. The size of the gradient of STORM density is on the order of a micron. It true, standard, high resolution, confocal data should be able to see this same gradient. Using one color to mark the chromosome, followed by DAPI quantification, may also see it. Is there evidence of such a 'core' density difference from Hi-C data?\n\nIf the authors can demonstrate that this core is missing from other chromosomes, or is missing in some condition such as aged C. elegans, it would also go a long way in determining that this is not an artifact of STORM.\n\nAre the authors able to use STORM to resolve any detail on the scale (reported as 80 nm) of their improved resolution? And if so, what is the relationship between what conclusions can be made with super resolution imaging yet with relatively low probe density (2 probes per kb)? Further discussion on this point would be useful.\n\nMore thorough explanation of methods and more discussion:\n\nSome sections of Materials and methods are quite minimal. Especially since this is a Tools and Resources article, the Materials and methods should provide protocols that are detailed enough for others to use the technology.\n\nSpecifically, the authors combined 3 colors in different combinations to come up with 6 signatures for the 6 chromosomes (Figure 3A). This is very effective in outlining the 6 chromosomes in cases where there is either separation of the chromosomes, or very discrete chromosome territories. However, in cases where there are not discrete territories, and overlap between chromosomes becomes dramatic, separation of 6 chromosomes with 3 colors becomes very difficult. The authors acknowledge this in the Figure 6 figure legend \u2013 and quantification in Figure 6B and CD was done on 3 chromosomes only because of this difficulty. This should be explained more thoroughly in the text.\n\nThe separation of chromosomes with this method, especially in circumstances of chromosome overlap, is a key, others will want to do this in mutants, aged cells etc. Part of this being considered as a tool and resource is a full description of methods not just for probe design, but data analysis. More explanation is needed on criteria for considering a region positive or negative for a color, and how the final determination of where a chromosome is, in cases of high degree of overlap, should be discussed with rigor so others can reproduce it.\n\nIn the section with the mes-3 RNAi \u2013 while the images in aging intestinal nuclei and mes-3 hypodermal nuclei look relatively similar, the quantitation of overlap was quite different. Is that a function of different cell types? Or does it reflect that different mechanisms underlie the breakdown of nuclear organization.\n",
+      "created_at": "2025-12-02T10:08:16.587964Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T10:08:16.587964Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T10:08:16.587964Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "d7fef7ae-e51e-425b-93be-8433738cd933",
+      "content_id": "4fe587b1-7901-4cd4-8c65-2bb95e3e0b92",
+      "claim_id": "C1",
+      "claim": "Eukaryotic DNA is highly organized within nuclei and this organization is important for genome function.",
+      "claim_type": "EXPLICIT",
+      "source": "Eukaryotic DNA is highly organized within nuclei and this organization is important for genome function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of established scientific knowledge about eukaryotic genome organization.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:08:16.587964Z"
+    },
+    {
+      "id": "1b9f99f0-be89-4f7f-b6bf-119b86f9c0ab",
+      "content_id": "4fe587b1-7901-4cd4-8c65-2bb95e3e0b92",
+      "claim_id": "C2",
+      "claim": "Fluorescent in situ hybridization (FISH) approaches allow 3D architectures of genomes to be visualized.",
+      "claim_type": "EXPLICIT",
+      "source": "Fluorescent in situ hybridization (FISH) approaches allow 3D architectures of genomes to be visualized.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about FISH technology capabilities.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:08:16.587964Z"
+    },
+    {
+      "id": "1404829d-eba6-4898-8963-0c593df01102",
+      "content_id": "4fe587b1-7901-4cd4-8c65-2bb95e3e0b92",
+      "claim_id": "C3",
+      "claim": "The described multiplexed DNA FISH Oligopaint library targets the entire Caenorhabditis elegans genome at chromosome, three megabase, and 500 kb scales.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we describe a multiplexed DNA FISH Oligopaint library that targets the entire Caenorhabditis elegans genome at chromosome, three megabase, and 500 kb scales.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the library design described in the manuscript, supported by the experimental data and figures showing the library structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:08:16.587964Z"
+    },
+    {
+      "id": "7355b2eb-e21a-42c8-95a1-55af1a5240ec",
+      "content_id": "4fe587b1-7901-4cd4-8c65-2bb95e3e0b92",
+      "claim_id": "C4",
+      "claim": "The hybridization strategy couples a single primary probe synthesis reaction to dye conjugated detection oligos via bridge oligos.",
+      "claim_type": "EXPLICIT",
+      "source": "We describe a hybridization strategy that provides flexibility to DNA FISH experiments by coupling a single primary probe synthesis reaction to dye conjugated detection oligos via bridge oligos, eliminating the time and cost typically associated with labeling probe sets for individual experiments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental approach developed in the study, supported by the methods and results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:08:16.587964Z"
+    },
+    {
+      "id": "103f581f-f25a-4b5d-8377-6bd11282b583",
+      "content_id": "4fe587b1-7901-4cd4-8c65-2bb95e3e0b92",
+      "claim_id": "C5",
+      "claim": "The approach allows visualization of genome organization at varying scales in all/most cells across all stages of development in an intact animal model system.",
+      "claim_type": "EXPLICIT",
+      "source": "The approach allows visualization of genome organization at varying scales in all/most cells across all stages of development in an intact animal model system.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data showing FISH in various cell types and developmental stages.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:08:16.587964Z"
+    },
+    {
+      "id": "69b3d0cf-3135-43f6-8cf0-84e4f558decd",
+      "content_id": "4fe587b1-7901-4cd4-8c65-2bb95e3e0b92",
+      "claim_id": "C6",
+      "claim": "The basic unit of genome organization is the nucleosome.",
+      "claim_type": "EXPLICIT",
+      "source": "The basic unit of genome organization is the nucleosome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge about chromatin structure.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:08:16.587964Z"
+    },
+    {
+      "id": "1bcddc8b-ac22-45dc-bc06-aca5a7f567d2",
+      "content_id": "4fe587b1-7901-4cd4-8c65-2bb95e3e0b92",
+      "claim_id": "C7",
+      "claim": "Nucleosomes assemble into higher order structures whose biogenesis, maintenance, regulation, and purpose are poorly understood.",
+      "claim_type": "EXPLICIT",
+      "source": "Nucleosomes assemble into higher order structures whose biogenesis, maintenance, regulation, and purpose are poorly understood (Bickmore, 2013; Bonev and Cavalli, 2016; Meaburn, 2016; Yu and Ren, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to the literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:08:16.587964Z"
+    },
+    {
+      "id": "eb66fbe3-7d8c-4a70-b0a6-97fe99a8ecfd",
+      "content_id": "4fe587b1-7901-4cd4-8c65-2bb95e3e0b92",
+      "claim_id": "C8",
+      "claim": "DNA fluorescent in situ hybridization (FISH) technologies and chromatin conformation capture techniques allow 3D architectures of genomes to be assessed.",
+      "claim_type": "EXPLICIT",
+      "source": "DNA fluorescent in situ hybridization (FISH) technologies and chromatin conformation capture techniques allow 3D architectures of genomes to be assessed (Bauman et al., 1980; Beliveau et al., 2012; Bienko et al., 2013; Dekker et al., 2013, Dekker et al., 2002; Lieberman-Aiden et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to the literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:08:16.587964Z"
+    },
+    {
+      "id": "08f6ff6b-b22d-4fc6-a5a3-d4364df2df84",
+      "content_id": "4fe587b1-7901-4cd4-8c65-2bb95e3e0b92",
+      "claim_id": "C9",
+      "claim": "Many eukaryotic genomes are assembled into megabase-sized structures termed topologically associated domains (TADs).",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, chromatin capture experiments show that many eukaryotic genomes are assembled into megabase-sized structures termed topologically associated domains (TADs).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge from chromatin capture experiments.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:08:16.587964Z"
+    },
+    {
+      "id": "030a9ae0-d8bd-4725-bdbd-250969030e4c",
+      "content_id": "4fe587b1-7901-4cd4-8c65-2bb95e3e0b92",
+      "claim_id": "C10",
+      "claim": "TADs and larger organizational units termed compartments are thought to allow subregions of chromosomes to share and integrate long-range transcriptional regulatory signals.",
+      "claim_type": "EXPLICIT",
+      "source": "TADs, and larger organizational units termed compartments, are thought to allow subregions of chromosomes to share and integrate long-range transcriptional regulatory signals (Dekker and Heard, 2015; Dekker and Mirny, 2016; Dixon et al., 2012; Lieberman-Aiden et al., 2009; Vernimmen and Bickmore, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to the literature and represents current scientific understanding.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:08:16.587964Z"
+    },
+    {
+      "id": "8c24cc55-7015-4fa2-897d-deafac21b77a",
+      "content_id": "4fe587b1-7901-4cd4-8c65-2bb95e3e0b92",
+      "claim_id": "C11",
+      "claim": "Active genes tend to localize near nuclear pores and/or the nuclear interior while inactive genes tend to localize to the nuclear periphery, distant from nuclear pores.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, DNA FISH and chromatin immunoprecipitation (ChIP) experiments have shown that the position of genes within nuclei is often not random: active genes tend to localize near nuclear pores and/or the nuclear interior while inactive genes tend to localize to the nuclear periphery, distant from nuclear pores (Casolari et al., 2004; Gonzalez-Sandoval and Gasser, 2016; Lema\u00eetre and Bickmore, 2015; Pickersgill et al., 2006; van Steensel and Belmont, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to the literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:08:16.587964Z"
+    },
+    {
+      "id": "f706818a-949b-4d71-91d1-ef2467715ce7",
+      "content_id": "4fe587b1-7901-4cd4-8c65-2bb95e3e0b92",
+      "claim_id": "C12",
+      "claim": "Individual chromosomes tend to occupy distinct non-overlapping regions of subnuclear space, even in interphase nuclei (termed chromosome territories).",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, DNA FISH experiments have shown that individual chromosomes tend to occupy distinct non-overlapping regions of subnuclear space, even in interphase nuclei (termed chromosome territories) (Bolzer et al., 2005; Cremer and Cremer, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to the literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:08:16.587964Z"
+    },
+    {
+      "id": "069efe7d-c7c8-4389-8217-1dbb94f0c527",
+      "content_id": "4fe587b1-7901-4cd4-8c65-2bb95e3e0b92",
+      "claim_id": "C13",
+      "claim": "C. elegans is an excellent model for studying genome organization in an intact animal due to its size (1 mm), lifespan (~3 days to reproductive maturity), genome size (100 Mb across five autosomes and one sex chromosome), and transparent body.",
+      "claim_type": "EXPLICIT",
+      "source": "The nematode Caenorhabditis elegans is an excellent model for studying genome organization in an intact animal due to its size (1 mm), lifespan (~3 days to reproductive maturity), genome size (100 Mb across five autosomes and one sex chromosome), and transparent body.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about C. elegans as a model organism.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:08:16.587964Z"
+    },
+    {
+      "id": "15e045ec-0a93-4b19-960d-d87c6db82274",
+      "content_id": "4fe587b1-7901-4cd4-8c65-2bb95e3e0b92",
+      "claim_id": "C14",
+      "claim": "A previous chromosome level DNA FISH experiment in C. elegans used 127 yeast artificial chromosome (YAC) clones split into 50 amplification reactions for three chromosome probe generation.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, a previous chromosome level DNA FISH experiment in C. elegans used 127 yeast artificial chromosome (YAC) clones split into 50 amplification reactions for three chromosome probe generation (Nabeshima et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to the literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:08:16.587964Z"
+    },
+    {
+      "id": "58c4a2d2-f991-43c3-bbe2-198809119aaf",
+      "content_id": "4fe587b1-7901-4cd4-8c65-2bb95e3e0b92",
+      "claim_id": "C15",
+      "claim": "Oligopaint technology has made DNA FISH probe production faster, cheaper, and more flexible.",
+      "claim_type": "EXPLICIT",
+      "source": "Oligopaint technology has made DNA FISH probe production faster, cheaper, and more flexible (Beliveau et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to the literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:08:16.587964Z"
+    },
+    {
+      "id": "c239a419-9d26-4e4d-a486-65f5ee83ce7f",
+      "content_id": "4fe587b1-7901-4cd4-8c65-2bb95e3e0b92",
+      "claim_id": "C16",
+      "claim": "Oligopaint takes advantage of massively parallel DNA synthesis technologies to create user defined libraries containing hundreds of thousands of individual DNA oligos each comprised of a short (42 bp) DNA sequence that hybridizes to a genome, as well as additional 'barcode' sequences.",
+      "claim_type": "EXPLICIT",
+      "source": "Oligopaint takes advantage of massively parallel DNA synthesis technologies to create user defined libraries containing hundreds of thousands of individual DNA oligos each comprised of a short (42 bp) DNA sequence that hybridizes to a genome, as well as additional 'barcode' sequences that serve two major functions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the Oligopaint technology, supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:08:16.587964Z"
+    },
+    {
+      "id": "1065f33b-db91-4b71-b2bd-fd0dba3d3ba2",
+      "content_id": "4fe587b1-7901-4cd4-8c65-2bb95e3e0b92",
+      "claim_id": "C17",
+      "claim": "Barcodes allow probes to be repeatedly amplified from an Oligopaint library, thus providing a virtually inexhaustible supply of oligos for DNA FISH.",
+      "claim_type": "EXPLICIT",
+      "source": "First, barcodes allow probes to be repeatedly amplified from an Oligopaint library, thus providing a virtually inexhaustible supply of oligos for DNA FISH (Beliveau et al., 2012; Chen et al., 2015; Murgha et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to the literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:08:16.587964Z"
+    },
+    {
+      "id": "6e8e38a1-af4d-4aa0-9acf-eabc7c502019",
+      "content_id": "4fe587b1-7901-4cd4-8c65-2bb95e3e0b92",
+      "claim_id": "C18",
+      "claim": "Barcodes allow pre-labeled detection oligos to be used to detect Oligopaint oligos, thus obviating the need for fluorescently labeling probes for each DNA FISH experiment.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, barcodes allow pre-labeled detection oligos to be used to detect Oligopaint oligos, thus obviating the need for fluorescently labeling probes for each DNA FISH experiment (Beliveau et al., 2015; Beliveau et al., 2012; Nir et al., 2018; Rosin et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to the literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:08:16.587964Z"
+    },
+    {
+      "id": "73a1a7aa-31ea-41cb-ae58-f297cc809db9",
+      "content_id": "4fe587b1-7901-4cd4-8c65-2bb95e3e0b92",
+      "claim_id": "C19",
+      "claim": "The Oligopaint technology has been used to visualize chromosome territories in Drosophila cultured cells in normal and mutant contexts.",
+      "claim_type": "EXPLICIT",
+      "source": "Previously, the Oligopaint technology has been used to visualize chromosome territories in Drosophila cultured cells in normal and mutant contexts (Rosin et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to the literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:08:16.587964Z"
+    },
+    {
+      "id": "14ff3437-3eaa-41a5-a63b-e93f79e457bc",
+      "content_id": "4fe587b1-7901-4cd4-8c65-2bb95e3e0b92",
+      "claim_id": "C20",
+      "claim": "The bioinformatics pipeline identified approximately nine suitable probe sequences per kilobase of C. elegans genomic DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "The results of our bioinformatic search revealed approximately nine suitable probe sequences per kilobase of C. elegans genomic DNA (Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data presented in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:08:16.587964Z"
+    },
+    {
+      "id": "a355c8c1-ddb1-4ba2-ba53-25596fd0b938",
+      "content_id": "4fe587b1-7901-4cd4-8c65-2bb95e3e0b92",
+      "claim_id": "C21",
+      "claim": "The generated Oligopaint library contained, on average, ~2 probe sequences per kb of genomic DNA across each C. elegans chromosome.",
+      "claim_type": "EXPLICIT",
+      "source": "We generated an Oligopaint library that contained, on average,~2 probe sequences per kb of genomic DNA across each C. elegans chromosome (Figure 1a and Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data presented in Figure 1a and Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:08:16.587964Z"
+    },
+    {
+      "id": "f7f809dd-a494-4185-90c8-a32500d883df",
+      "content_id": "4fe587b1-7901-4cd4-8c65-2bb95e3e0b92",
+      "claim_id": "C22",
+      "claim": "Few gaps between probes exceeded 5 kb (33 out of 25,174), with the largest gap spanning ~18 kb for chromosome I.",
+      "claim_type": "EXPLICIT",
+      "source": "Few gaps between probes exceeded 5 kb (33 out of 25,174), with the largest gap spanning ~18 kb.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by analysis of the probe distribution data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:08:16.587964Z"
+    },
+    {
+      "id": "46481754-337b-4e4d-8814-98665dc1f1d2",
+      "content_id": "4fe587b1-7901-4cd4-8c65-2bb95e3e0b92",
+      "claim_id": "C23",
+      "claim": "A subtle decrease in probe density is observed on chromosome arms, perhaps due to an increase in repetitive sequences in these regions.",
+      "claim_type": "EXPLICIT",
+      "source": "A subtle decrease in probe density is observed on chromosome arms, perhaps due to an increase in repetitive sequences in these regions, which biased against probe selection (C. elegans C. elegans Sequencing Consortium, 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on observed data and supported by a citation about C. elegans genome structure.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:08:16.587964Z"
+    },
+    {
+      "id": "bb3e5722-f707-410b-8146-c277c33b04a0",
+      "content_id": "4fe587b1-7901-4cd4-8c65-2bb95e3e0b92",
+      "claim_id": "C24",
+      "claim": "The library consisted of 170,594 oligos (termed primary Oligopaint oligos).",
+      "claim_type": "EXPLICIT",
+      "source": "In total, the library consisted of 170,594 oligos (termed primary Oligopaint oligos), which each contain 42 bp of unique genomic sequence flanked by barcode sequences that allow for DNA FISH targeting each of the six C. elegans chromosomes, as well as three megabase, or 500 kb subregions of these chromosomes (Figure 1b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the library design data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:08:16.587964Z"
+    },
+    {
+      "id": "db3c22b1-9545-48ed-ab01-e9167847ae1e",
+      "content_id": "4fe587b1-7901-4cd4-8c65-2bb95e3e0b92",
+      "claim_id": "C25",
+      "claim": "Bridge oligos provide versatility (and cost savings) to DNA FISH experiments as these oligos allow any primary probe set to be coupled to any detection probe set with minimal additional cost.",
+      "claim_type": "EXPLICIT",
+      "source": "Bridge oligos provide versatility (and cost savings) to DNA FISH experiments as these oligos allow any primary probe set to be coupled to any detection probe set with minimal additional cost.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference about the advantages of the bridge oligo strategy.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:08:16.587964Z"
+    },
+    {
+      "id": "1d302fd7-84ad-489e-bebe-84e6137eba5e",
+      "content_id": "4fe587b1-7901-4cd4-8c65-2bb95e3e0b92",
+      "claim_id": "C26",
+      "claim": "By using detection oligos with fluorophores on both 3' and 5' termini, two detection oligos per bridge oligo, and bridge oligos that target the 5' and 3' barcode sequence of primary probes, it is possible to have each primary oligo recognized by eight fluorophores.",
+      "claim_type": "EXPLICIT",
+      "source": "By using 1) detection oligos with fluorophores on both 3' and 5' termini, 2) two detection oligos per bridge oligo, and 3) bridge oligos that target the 5' and 3' barcode sequence of primary probes, it is possible to have each primary oligo recognized by eight fluorophores.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the design of the detection system.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:08:16.587964Z"
+    },
+    {
+      "id": "767a53b7-15d0-4cfc-873a-2f00af5ddb08",
+      "content_id": "4fe587b1-7901-4cd4-8c65-2bb95e3e0b92",
+      "claim_id": "C27",
+      "claim": "Chromosome II DNA FISH stained a single bivalent in wild-type oocytes (58/58).",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, X chromosome DNA FISH stained a single bivalent in wild-type oocytes (58/58) and two univalents in 84% of him-8 oocytes (51/61) (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data and quantification.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:08:16.587964Z"
+    },
+    {
+      "id": "6ac18ba5-0fbd-40af-aa92-ff07d5390b07",
+      "content_id": "4fe587b1-7901-4cd4-8c65-2bb95e3e0b92",
+      "claim_id": "C28",
+      "claim": "X chromosome DNA FISH stained two univalents in 84% of him-8 oocytes (51/61).",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, X chromosome DNA FISH stained a single bivalent in wild-type oocytes (58/58) and two univalents in 84% of him-8 oocytes (51/61) (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data and quantification.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:08:16.587964Z"
+    },
+    {
+      "id": "b4c8ad0d-14f0-4fe2-9228-96618dcba57c",
+      "content_id": "4fe587b1-7901-4cd4-8c65-2bb95e3e0b92",
+      "claim_id": "C29",
+      "claim": "HIM-8 is required for X chromosome homolog pairing during meiosis.",
+      "claim_type": "EXPLICIT",
+      "source": "HIM-8 is required for X chromosome homolog pairing during meiosis and, consequently, X chromosomes are present as two univalents (and not a single bivalent) in him-8 mutant animals (Phillips et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to the literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:08:16.587964Z"
+    },
+    {
+      "id": "494acb4c-4fa1-4911-a3be-34ca12ed01d1",
+      "content_id": "4fe587b1-7901-4cd4-8c65-2bb95e3e0b92",
+      "claim_id": "C30",
+      "claim": "X chromosomes are present as two univalents (and not a single bivalent) in him-8 mutant animals.",
+      "claim_type": "EXPLICIT",
+      "source": "HIM-8 is required for X chromosome homolog pairing during meiosis and, consequently, X chromosomes are present as two univalents (and not a single bivalent) in him-8 mutant animals (Phillips et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to the literature and confirmed by experimental data.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:08:16.587964Z"
+    },
+    {
+      "id": "d5c3c425-7d50-4243-a01b-deda35e8d455",
+      "content_id": "4fe587b1-7901-4cd4-8c65-2bb95e3e0b92",
+      "claim_id": "C31",
+      "claim": "The C. elegans Oligopaint library is specific.",
+      "claim_type": "EXPLICIT",
+      "source": "Together the data show that the C. elegans Oligopaint library is specific.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple experimental observations showing expected staining patterns.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:08:16.587964Z"
+    },
+    {
+      "id": "d0035f01-0412-4ecb-9a6a-06418adc370f",
+      "content_id": "4fe587b1-7901-4cd4-8c65-2bb95e3e0b92",
+      "claim_id": "C32",
+      "claim": "83% of larval stage animals (1085/1303) displayed FISH signal.",
+      "claim_type": "EXPLICIT",
+      "source": "Staining presented in an all or nothing fashion with 1085/1303 (83%) of larval stage animals, 317/326 (97%) of adult animals, and 50% of the embryos housed within uteri of adult animals displaying FISH signal (Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental quantification.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:08:16.587964Z"
+    },
+    {
+      "id": "172f1e85-1607-4796-a62d-0b76ac54fcf8",
+      "content_id": "4fe587b1-7901-4cd4-8c65-2bb95e3e0b92",
+      "claim_id": "C33",
+      "claim": "97% of adult animals (317/326) displayed FISH signal.",
+      "claim_type": "EXPLICIT",
+      "source": "Staining presented in an all or nothing fashion with 1085/1303 (83%) of larval stage animals, 317/326 (97%) of adult animals, and 50% of the embryos housed within uteri of adult animals displaying FISH signal (Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental quantification.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:08:16.587964Z"
+    },
+    {
+      "id": "5e4b2993-b652-41c9-9351-ab6ba7d1850b",
+      "content_id": "4fe587b1-7901-4cd4-8c65-2bb95e3e0b92",
+      "claim_id": "C34",
+      "claim": "50% of the embryos housed within uteri of adult animals displayed FISH signal.",
+      "claim_type": "EXPLICIT",
+      "source": "Staining presented in an all or nothing fashion with 1085/1303 (83%) of larval stage animals, 317/326 (97%) of adult animals, and 50% of the embryos housed within uteri of adult animals displaying FISH signal (Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental quantification.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:08:16.587964Z"
+    },
+    {
+      "id": "e05f9186-1f61-48a6-9d1f-f0baf00df08c",
+      "content_id": "4fe587b1-7901-4cd4-8c65-2bb95e3e0b92",
+      "claim_id": "C35",
+      "claim": "Out of 50 randomly chosen somatic nuclei, 50/50 had DNA FISH signal.",
+      "claim_type": "EXPLICIT",
+      "source": "Out of 50 randomly chosen somatic nuclei 50/50 had DNA FISH signal.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental quantification.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:08:16.587964Z"
+    },
+    {
+      "id": "723421bb-d3f4-4bb5-9eb8-acc5d8cca64a",
+      "content_id": "4fe587b1-7901-4cd4-8c65-2bb95e3e0b92",
+      "claim_id": "C36",
+      "claim": "50/50 germline nuclei were positive for DNA FISH signals.",
+      "claim_type": "EXPLICIT",
+      "source": "Likewise, 50/50 germline nuclei were positive for DNA FISH signals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental quantification.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:08:16.587964Z"
+    },
+    {
+      "id": "a5619fb7-62d3-4941-a082-1398550cc496",
+      "content_id": "4fe587b1-7901-4cd4-8c65-2bb95e3e0b92",
+      "claim_id": "C37",
+      "claim": "The library and hybridization strategy allows for robust and specific labeling of a whole chromosome in many cell types and many developmental stages simultaneously in large numbers of animals.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that our library and hybridization strategy allows for robust and specific labeling of a whole chromosome in many cell types and many developmental stages simultaneously in large numbers of animals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the experimental data presented.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:08:16.587964Z"
+    },
+    {
+      "id": "a8662a5d-6f6f-4eb0-90eb-b26872583707",
+      "content_id": "4fe587b1-7901-4cd4-8c65-2bb95e3e0b92",
+      "claim_id": "C39",
+      "claim": "C. elegans chromosomes occupy largely distinct territories within interphase nuclei.",
+      "claim_type": "EXPLICIT",
+      "source": "These data show that our DNA FISH approach is capable of labeling all six C. elegans chromosomes simultaneously in many different cell types of an intact animal. The data also show that, like interphase chromosomes in other eukaryotes, C. elegans chromosomes occupy largely distinct territories within interphase nuclei and that these chromosome territories persist in post-mitotic cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the six chromosome FISH data showing distinct colored regions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:08:16.587964Z"
+    },
+    {
+      "id": "033870ba-9528-4c50-b21f-ca73055c5bc9",
+      "content_id": "4fe587b1-7901-4cd4-8c65-2bb95e3e0b92",
+      "claim_id": "C40",
+      "claim": "C. elegans chromosome territories persist in post-mitotic cells.",
+      "claim_type": "EXPLICIT",
+      "source": "These data show that our DNA FISH approach is capable of labeling all six C. elegans chromosomes simultaneously in many different cell types of an intact animal. The data also show that, like interphase chromosomes in other eukaryotes, C. elegans chromosomes occupy largely distinct territories within interphase nuclei and that these chromosome territories persist in post-mitotic cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the observation of territories in somatic cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:08:16.587964Z"
+    },
+    {
+      "id": "6239b188-4076-486f-bc46-a2a228d21102",
+      "content_id": "4fe587b1-7901-4cd4-8c65-2bb95e3e0b92",
+      "claim_id": "C41",
+      "claim": "Staining was robust, with 50/50 randomly chosen nuclei possessing all three fluorescent signals in successfully stained animals for 3 Mb and 500 kb subregion experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "Staining was robust, with 50/50 randomly chosen nuclei possessing all three fluorescent signals in successfully stained animals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental quantification.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:08:16.587964Z"
+    },
+    {
+      "id": "2006b841-013e-4a97-8654-06c94e3e2560",
+      "content_id": "4fe587b1-7901-4cd4-8c65-2bb95e3e0b92",
+      "claim_id": "C42",
+      "claim": "The Oligopaint library has the capability to visualize 3 Mb and 500 kb subregions of the C. elegans genome.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that the Oligopaint library has the capability to visualize 3 Mb and 500 kb subregions of the C. elegans genome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the experimental data showing successful visualization of these subregions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:08:16.587964Z"
+    },
+    {
+      "id": "f7f10a16-8a82-4860-b9ff-ce31ea43ee8a",
+      "content_id": "4fe587b1-7901-4cd4-8c65-2bb95e3e0b92",
+      "claim_id": "C43",
+      "claim": "Recent studies suggest that higher order chromatin structures may break down during aging, and in aging-related diseases such as Alzheimer's.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent studies suggest that higher order chromatin structures may break down during aging, and in aging-related diseases such as Alzheimer's (Winick-Ng and Rylett, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to the literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:08:16.587964Z"
+    },
+    {
+      "id": "c9d59503-5fb2-48f1-a142-fa34c96ce519",
+      "content_id": "4fe587b1-7901-4cd4-8c65-2bb95e3e0b92",
+      "claim_id": "C44",
+      "claim": "Age-related alterations in nuclear morphology have been noted in C. elegans.",
+      "claim_type": "EXPLICIT",
+      "source": "Age-related alterations in nuclear morphology have also been noted in C. elegans (Haithcock et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to the literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:08:16.587964Z"
+    },
+    {
+      "id": "46fea74f-a774-4eb4-8221-b7bc8f028f26",
+      "content_id": "4fe587b1-7901-4cd4-8c65-2bb95e3e0b92",
+      "claim_id": "C45",
+      "claim": "In 10-day-old animals, chromosomes were no longer organized into discrete territories.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, in 10-day-old animals, chromosomes were no longer organized into discrete territories (Figure 5a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 5a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:08:16.587964Z"
+    },
+    {
+      "id": "9ae85ecd-6f44-49d1-a4f7-0208230873be",
+      "content_id": "4fe587b1-7901-4cd4-8c65-2bb95e3e0b92",
+      "claim_id": "C46",
+      "claim": "There was an ~50% increase in the volume of chromosomes I, II and III in aged animals compared to young animals.",
+      "claim_type": "EXPLICIT",
+      "source": "Quantification (see Materials and methods) of the space occupied by chromosomes I, II and III in young and aged animals revealed an ~50% increase in the volume of all three chromosomes (Figure 5b)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by quantitative data presented in Figure 5b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:08:16.587964Z"
+    },
+    {
+      "id": "97e4632c-6348-4b03-81fe-56a36a04795f",
+      "content_id": "4fe587b1-7901-4cd4-8c65-2bb95e3e0b92",
+      "claim_id": "C47",
+      "claim": "There was an increase in the degree to which chromosomes I, II and III overlapped in subnuclear space in aged animals.",
+      "claim_type": "EXPLICIT",
+      "source": "Quantification (see Materials and methods) of the space occupied by chromosomes I, II and III in young and aged animals revealed an ~50% increase in the volume of all three chromosomes (Figure 5b) as well as an increase in the degree to which chromosomes I, II and III overlapped in subnuclear space (Figure 5\u2014figure supplement 1a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by quantitative data presented in Figure 5\u2014figure supplement 1a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:08:16.587964Z"
+    },
+    {
+      "id": "d33ce1b3-5ada-4f6c-a10d-bd9cfe3b04e2",
+      "content_id": "4fe587b1-7901-4cd4-8c65-2bb95e3e0b92",
+      "claim_id": "C48",
+      "claim": "Chromosome territories did not become enlarged or disorganized in 10-day-old daf-2 mutant animals versus young animals.",
+      "claim_type": "EXPLICIT",
+      "source": "Chromosome territories did not become enlarged or disorganized in 10-day-old daf-2 mutant animals versus young animals, indicating that the loss of chromosome territories we see in older wild-type animals is linked to aging and not chronological time (Figure 5a/b and Figure 5\u2014figure supplement 1a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 5a/b and Figure 5\u2014figure supplement 1a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:08:16.587964Z"
+    },
+    {
+      "id": "5088b223-02c7-4f7c-b9ac-d22b19b304e2",
+      "content_id": "4fe587b1-7901-4cd4-8c65-2bb95e3e0b92",
+      "claim_id": "C49",
+      "claim": "The loss of chromosome territories in older wild-type animals is linked to aging and not chronological time.",
+      "claim_type": "EXPLICIT",
+      "source": "Chromosome territories did not become enlarged or disorganized in 10-day-old daf-2 mutant animals versus young animals, indicating that the loss of chromosome territories we see in older wild-type animals is linked to aging and not chronological time (Figure 5a/b and Figure 5\u2014figure supplement 1a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on the comparison between wild-type and daf-2 mutant animals.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:08:16.587964Z"
+    },
+    {
+      "id": "e90ea672-668d-4701-aefb-766aac8960fe",
+      "content_id": "4fe587b1-7901-4cd4-8c65-2bb95e3e0b92",
+      "claim_id": "C50",
+      "claim": "daf-2 encodes an insulin-like receptor.",
+      "claim_type": "EXPLICIT",
+      "source": "daf-2 encodes a insulin-like receptor and loss-of-function mutations in daf-2 and mutations in daf-2 such as e1370 cause animals to live twice as long as wild-type animals (Kenyon et al., 1993; Kimura et al., 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to the literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:08:16.587964Z"
+    },
+    {
+      "id": "fc683805-0294-4465-9dd4-31f86a15ab51",
+      "content_id": "4fe587b1-7901-4cd4-8c65-2bb95e3e0b92",
+      "claim_id": "C51",
+      "claim": "Loss-of-function mutations in daf-2 such as e1370 cause animals to live twice as long as wild-type animals.",
+      "claim_type": "EXPLICIT",
+      "source": "daf-2 encodes a insulin-like receptor and loss-of-function mutations in daf-2 and mutations in daf-2 such as e1370 cause animals to live twice as long as wild-type animals (Kenyon et al., 1993; Kimura et al., 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to the literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:08:16.587964Z"
+    },
+    {
+      "id": "8b03bab2-46ae-4c9d-a59b-10353bd7772c",
+      "content_id": "4fe587b1-7901-4cd4-8c65-2bb95e3e0b92",
+      "claim_id": "C52",
+      "claim": "mes-3 encodes a component of the Polycomb Repressive Complex 2 (PRC2).",
+      "claim_type": "EXPLICIT",
+      "source": "mes-3, which encodes a component of the Polycomb Repressive Complex 2 (PRC2), was included in this small-scale screen because PRC2 is a known regulator of chromatin architecture in many organisms (Capowski et al., 1991; Holdeman et al., 1998; Ross and Zarkower, 2003; Xu et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to the literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:08:16.587964Z"
+    },
+    {
+      "id": "ad2c480e-8e7f-40f7-a56d-b1cf6bd9efdf",
+      "content_id": "4fe587b1-7901-4cd4-8c65-2bb95e3e0b92",
+      "claim_id": "C53",
+      "claim": "PRC2 is a known regulator of chromatin architecture in many organisms.",
+      "claim_type": "EXPLICIT",
+      "source": "mes-3, which encodes a component of the Polycomb Repressive Complex 2 (PRC2), was included in this small-scale screen because PRC2 is a known regulator of chromatin architecture in many organisms (Capowski et al., 1991; Holdeman et al., 1998; Ross and Zarkower, 2003; Xu et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to the literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:08:16.587964Z"
+    },
+    {
+      "id": "0c371b19-146f-45dc-bebd-1a3b3dbf3805",
+      "content_id": "4fe587b1-7901-4cd4-8c65-2bb95e3e0b92",
+      "claim_id": "C54",
+      "claim": "RNAi targeting mes-3 caused a loss of chromosome territories in adult hypodermal cells.",
+      "claim_type": "EXPLICIT",
+      "source": "RNAi targeting mes-3 caused a loss of chromosome territories in adult hypodermal cells (Figure 5c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 5c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:08:16.587964Z"
+    },
+    {
+      "id": "3558fb64-ad31-45b8-81b9-7df82f1b379f",
+      "content_id": "4fe587b1-7901-4cd4-8c65-2bb95e3e0b92",
+      "claim_id": "C55",
+      "claim": "There was an ~45% increase in chromosome volume in hypodermal nuclei when animals were exposed to mes-3 RNAi.",
+      "claim_type": "EXPLICIT",
+      "source": "Quantification of chromosomes I, II, and III volumes in hypodermal nuclei revealed an ~45% increase in chromosome volume when animals were exposed to mes-3 RNAi, suggesting that MES-3 is important for maintaining chromosome territories of hypodermal cells during the normal course of growth and development (Figure 5d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by quantitative data presented in Figure 5d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:08:16.587964Z"
+    },
+    {
+      "id": "8a7bd559-f131-4152-aceb-dd9103d3c8fb",
+      "content_id": "4fe587b1-7901-4cd4-8c65-2bb95e3e0b92",
+      "claim_id": "C56",
+      "claim": "MES-3 is important for maintaining chromosome territories of hypodermal cells during the normal course of growth and development.",
+      "claim_type": "EXPLICIT",
+      "source": "Quantification of chromosomes I, II, and III volumes in hypodermal nuclei revealed an ~45% increase in chromosome volume when animals were exposed to mes-3 RNAi, suggesting that MES-3 is important for maintaining chromosome territories of hypodermal cells during the normal course of growth and development (Figure 5d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on the experimental data showing increased chromosome volume after mes-3 RNAi.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:08:16.587964Z"
+    },
+    {
+      "id": "3a8d581b-c563-43c4-9702-e08ecc589a3f",
+      "content_id": "4fe587b1-7901-4cd4-8c65-2bb95e3e0b92",
+      "claim_id": "C57",
+      "claim": "There was an ~2 fold increase in overlap of chromosomes I, II, and III after mes-3 RNAi.",
+      "claim_type": "EXPLICIT",
+      "source": "Quantification of the degree to which DNA FISH signals for chromosomes I, II, and III overlapped revealed an ~2 fold increase in overlap after mes-3 RNAi, suggesting that chromosome territories are not just growing, they are also mixing (Figure 5\u2014figure supplement 1b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by quantitative data presented in Figure 5\u2014figure supplement 1b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:08:16.587964Z"
+    },
+    {
+      "id": "1786bd89-45f9-4d3b-b54a-0508a9c47d72",
+      "content_id": "4fe587b1-7901-4cd4-8c65-2bb95e3e0b92",
+      "claim_id": "C58",
+      "claim": "After mes-3 RNAi, chromosome territories are not just growing, they are also mixing.",
+      "claim_type": "EXPLICIT",
+      "source": "Quantification of the degree to which DNA FISH signals for chromosomes I, II, and III overlapped revealed an ~2 fold increase in overlap after mes-3 RNAi, suggesting that chromosome territories are not just growing, they are also mixing (Figure 5\u2014figure supplement 1b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on the quantitative data showing increased overlap.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:08:16.587964Z"
+    },
+    {
+      "id": "1c7b082e-9e7b-484c-9e57-175657db234f",
+      "content_id": "4fe587b1-7901-4cd4-8c65-2bb95e3e0b92",
+      "claim_id": "C59",
+      "claim": "MES-3 and PRC2 are needed to establish and/or maintain chromosome territories in C. elegans.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, the data suggest that MES-3 and, therefore, PRC2 is needed to establish and/or maintain chromosome territories in C. elegans.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the mes-3 RNAi experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:08:16.587964Z"
+    },
+    {
+      "id": "e9239648-edca-4794-9321-c8afc98d95bb",
+      "content_id": "4fe587b1-7901-4cd4-8c65-2bb95e3e0b92",
+      "claim_id": "C60",
+      "claim": "The invariant cell lineage, transparency, and small genome (100 Mb) of C. elegans make this animal an excellent system in which to explore how genome architecture relates to gene expression, development, growth, reproduction, and aging.",
+      "claim_type": "EXPLICIT",
+      "source": "The invariant cell lineage, transparency, and small genome (100 Mb) of C. elegans make this animal an excellent system in which to explore how genome architecture relates to gene expression, development, growth, reproduction, and aging.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about C. elegans as a model organism.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:08:16.587964Z"
+    },
+    {
+      "id": "4812cbf5-34d6-4314-a417-2a02b872a346",
+      "content_id": "4fe587b1-7901-4cd4-8c65-2bb95e3e0b92",
+      "claim_id": "C61",
+      "claim": "DNA FISH experiments in C. elegans have historically relied on labeling PCR products that cover a single small (5\u201310 kb) region, or YACs to generate probes targeting larger regions (up to whole chromosomes).",
+      "claim_type": "EXPLICIT",
+      "source": "DNA FISH experiments in C. elegans have historically relied on 1) labeling PCR products that cover a single small (5\u201310 kb) region, or 2) YACs to generate probes targeting larger regions (up to whole chromosomes).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about historical DNA FISH methods in C. elegans.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:08:16.587964Z"
+    },
+    {
+      "id": "e353b506-efc8-44ed-884b-08150a34f93e",
+      "content_id": "4fe587b1-7901-4cd4-8c65-2bb95e3e0b92",
+      "claim_id": "C62",
+      "claim": "Most DNA FISH protocols rely on dissection of tissues, which is low throughput and limits the number of cell types that can be analyzed at one time.",
+      "claim_type": "EXPLICIT",
+      "source": "Such experiments have also been limited by the types of cells that can be queried, as most DNA FISH protocols rely on dissection of tissues, which is low throughput and limits the number of cell types that can be analyzed at one time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about limitations of traditional DNA FISH protocols.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:08:16.587964Z"
+    },
+    {
+      "id": "db3df82b-41be-49e3-953c-e24e209853e9",
+      "content_id": "4fe587b1-7901-4cd4-8c65-2bb95e3e0b92",
+      "claim_id": "C63",
+      "claim": "The ability to rapidly and cheaply produce C. elegans DNA FISH probes, in conjunction with improvements to hybridization protocols, enables DNA FISH in all/most cells across all stages of development in an intact animal.",
+      "claim_type": "EXPLICIT",
+      "source": "The ability to rapidly and cheaply produce C. elegans DNA FISH probes, in conjunction with improvements to hybridization protocols, enables DNA FISH in all/most cells across all stages of development in an intact animal.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the experimental data and methods developed in the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:08:16.587964Z"
+    },
+    {
+      "id": "9985e431-861e-47b4-ab2d-4aa78b4e33d3",
+      "content_id": "4fe587b1-7901-4cd4-8c65-2bb95e3e0b92",
+      "claim_id": "C64",
+      "claim": "Given the invariant cell lineage of C. elegans, it should now be possible to ask if chromosome-chromosome interactions or homolog pairing, or the size, morphology, or sub-nuclear positioning, of chromosomal territories (or subregions of these territories) vary predictably by cell type, age, or developmental trajectory.",
+      "claim_type": "EXPLICIT",
+      "source": "Given the invariant cell lineage of C. elegans, it should now also be possible to ask if chromosome- chromosome interactions or homolog pairing, or the size, morphology, or sub-nuclear positioning, of chromosomal territories (or subregions of these territories) vary predictably by cell type, age, or developmental trajectory.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about future research possibilities enabled by the developed methods.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:08:16.587964Z"
+    },
+    {
+      "id": "2704a813-1b11-4e4c-a0dd-6c0836859534",
+      "content_id": "4fe587b1-7901-4cd4-8c65-2bb95e3e0b92",
+      "claim_id": "C65",
+      "claim": "An Oligopaints bioinformatics pipeline was used to identify 42 bp DNA sequences in the C. elegans genome (genome reference Ce10) that uniquely map to the genome, exhibit similar melting temperatures and similar GC content, lack repetitive stretches, and lack predicted secondary structures.",
+      "claim_type": "EXPLICIT",
+      "source": "An Oligopaints bioinformatics pipeline was used to identify 42 bp DNA sequences in the C. elegans genome (genome reference Ce10) that (1) uniquely map to the genome, (2) exhibit similar melting temperatures and similar GC content, (3) lack repetitive stretches, and (4) lack predicted secondary structures (Beliveau et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methods used, supported by a citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:08:16.587964Z"
+    },
+    {
+      "id": "baeff4e1-67e2-4e4a-94d9-2974482d378b",
+      "content_id": "4fe587b1-7901-4cd4-8c65-2bb95e3e0b92",
+      "claim_id": "C66",
+      "claim": "An updated bioinformatics pipeline for identifying probes is now available.",
+      "claim_type": "EXPLICIT",
+      "source": "[Note, an updated bioinformatics pipeline for identifying probes is now available (Beliveau et al., 2018).]",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to the literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:08:16.587964Z"
+    },
+    {
+      "id": "3a5deef5-4917-4372-9aad-78b0f2a3b2d0",
+      "content_id": "4fe587b1-7901-4cd4-8c65-2bb95e3e0b92",
+      "claim_id": "C67",
+      "claim": "Homologous chromosomes pair at the pachytene stage of Meiosis I at a defined region of the germline (termed pachytene region).",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, homologous chromosomes pair at the pachytene stage of Meiosis I at a defined region of the germline (termed pachytene region).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about C. elegans germline development.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:08:16.587964Z"
+    },
+    {
+      "id": "34c74e89-8e69-4ccc-9f51-e683d5100c56",
+      "content_id": "4fe587b1-7901-4cd4-8c65-2bb95e3e0b92",
+      "claim_id": "C68",
+      "claim": "Oocytes are arrested in diakinesis of meiosis I and chromosomes are highly condensed with homologs connected via a single chiasmata (termed bivalents).",
+      "claim_type": "EXPLICIT",
+      "source": "Oocytes are arrested in diakinesis of meiosis I and chromosomes are highly condensed with homologs connected via a single chiasmata (termed bivalents) (Villeneuve, 1994).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to the literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:08:16.587964Z"
+    },
+    {
+      "id": "f5b5e757-1b5d-4131-a8fc-5ba521f2a8bc",
+      "content_id": "4fe587b1-7901-4cd4-8c65-2bb95e3e0b92",
+      "claim_id": "C69",
+      "claim": "Mature sperm harbor highly condensed chromosomes and are haploid.",
+      "claim_type": "EXPLICIT",
+      "source": "Mature sperm harbor highly condensed chromosomes and are haploid.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about C. elegans sperm.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:08:16.587964Z"
+    },
+    {
+      "id": "ad2c6727-98ad-4be0-92ff-e2b1b5d6e743",
+      "content_id": "4fe587b1-7901-4cd4-8c65-2bb95e3e0b92",
+      "claim_id": "C70",
+      "claim": "An alternative protocol allows for greater efficiency using isolated embryos (90%).",
+      "claim_type": "EXPLICIT",
+      "source": "[Note, an alternative protocol that allows for greater efficiency using isolated embryos (90%) is described in Materials and methods.]",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the methods described in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:08:16.587964Z"
+    },
+    {
+      "id": "cf62723b-773a-43b2-801d-86469bc03e3c",
+      "content_id": "4fe587b1-7901-4cd4-8c65-2bb95e3e0b92",
+      "claim_id": "C71",
+      "claim": "C. elegans typically live about 2 weeks.",
+      "claim_type": "EXPLICIT",
+      "source": "We used our Oligopaint library to simultaneously visualize all six chromosomes in 1- and 10-day-old animals (C. elegans typically live about 2 weeks)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about C. elegans lifespan.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:08:16.587964Z"
+    },
+    {
+      "id": "70c7ba52-c656-4bdd-a496-43d05d94278d",
+      "content_id": "4fe587b1-7901-4cd4-8c65-2bb95e3e0b92",
+      "claim_id": "C72",
+      "claim": "In pachytene stage adult germ cells, C. elegans chromosomes are paired, condensed, and localized near the nuclear periphery.",
+      "claim_type": "EXPLICIT",
+      "source": "In pachytene stage adult germ cells, C. elegans chromosomes are paired, condensed, and localized near the nuclear periphery (Albertson et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to the literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:08:16.587964Z"
+    },
+    {
+      "id": "adbab44e-7d1f-48f2-b7db-82ed00f458d7",
+      "content_id": "4fe587b1-7901-4cd4-8c65-2bb95e3e0b92",
+      "claim_id": "C73",
+      "claim": "The 170,594 sequences were ordered as two 90 k oligonucleotide chips from Custom Array (Bothell, WA).",
+      "claim_type": "EXPLICIT",
+      "source": "The 170,594 sequences were ordered as two 90 k oligonucleotide chips from Custom Array (Bothell, WA).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methods used to obtain the oligonucleotide library.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:08:16.587964Z"
+    },
+    {
+      "id": "88323b41-4071-48ac-968c-472d1bf92b2b",
+      "content_id": "4fe587b1-7901-4cd4-8c65-2bb95e3e0b92",
+      "claim_id": "C74",
+      "claim": "Each primary probe is 150 bp in length.",
+      "claim_type": "EXPLICIT",
+      "source": "A series of barcode sequences were appended to each 42 bp hybridization sequence, which resulted in each primary probe being 150 bp.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the design of the primary probes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:08:16.587964Z"
+    },
+    {
+      "id": "27a90d57-f5c8-487f-8db8-30c2c8f0eb3b",
+      "content_id": "4fe587b1-7901-4cd4-8c65-2bb95e3e0b92",
+      "claim_id": "C75",
+      "claim": "Single stranded probe (primary probe) generation was conducted as previously described.",
+      "claim_type": "EXPLICIT",
+      "source": "Single stranded probe (primary probe) generation was conducted as previously described (Chen et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to the literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:08:16.587964Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "5fefadcc-9bfd-467d-8cec-b51152cbab7f",
+      "content_id": "4fe587b1-7901-4cd4-8c65-2bb95e3e0b92",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors developed a multiplexed DNA FISH Oligopaint library for C. elegans containing 170,594 primary probes with ~2 probes/kb coverage across all six chromosomes. The library uses a bioinformatics pipeline to identify 42 bp sequences with specific properties, and incorporates barcode sequences enabling targeting at chromosome, 3 Mb, and 500 kb scales.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C20-C24 provide quantitative data on probe density and distribution (Table 1, Figure 1), while C3, C65, C73-C74 describe the library design and synthesis methods. The bioinformatics approach is properly cited (C65) and the probe distribution data shows consistent coverage with few gaps (C22). The library design is well-documented with specific technical details.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:08:16.587964Z"
+    },
+    {
+      "id": "7547a572-e228-46de-8fe5-f086174e0d17",
+      "content_id": "4fe587b1-7901-4cd4-8c65-2bb95e3e0b92",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The authors developed a bridge oligo hybridization strategy that couples primary probes to fluorescently-labeled detection oligos, allowing flexible probe labeling without requiring synthesis of new labeled probes for each experiment. The design enables up to eight fluorophores per primary probe.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4 and C25 describe the bridge oligo strategy with supporting experimental validation throughout the manuscript. C26 provides the mathematical logic for achieving 8-fluorophore labeling per probe. The approach is demonstrated to work in multiple experimental contexts (Figures 2-5), confirming its flexibility and utility.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:08:16.587964Z"
+    },
+    {
+      "id": "ec764083-7a1d-490b-964a-fcc3607be179",
+      "content_id": "4fe587b1-7901-4cd4-8c65-2bb95e3e0b92",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The Oligopaint library demonstrates specificity by correctly labeling expected chromosomal structures in C. elegans germline cells. X chromosome FISH showed single bivalents in wild-type oocytes (58/58) and two univalents in 84% of him-8 mutant oocytes (51/61), consistent with the known pairing defect in him-8 mutants.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C28 provide quantitative validation data with appropriate sample sizes (n=58-61). The him-8 mutant control (C29-C30) is well-established in the literature and provides strong evidence for probe specificity. The 84% penetrance in him-8 mutants is reasonable given biological variability. Figure 2 and Figure 2\u2014figure supplement 1 support these claims.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:08:16.587964Z"
+    },
+    {
+      "id": "72ff1686-5d1d-4039-8e68-310d1f115a64",
+      "content_id": "4fe587b1-7901-4cd4-8c65-2bb95e3e0b92",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The DNA FISH approach shows robust labeling efficiency across developmental stages and cell types, with 83% of larval animals, 97% of adults, and 50% of in utero embryos displaying FISH signal. Within successfully stained animals, 100% of randomly sampled somatic (50/50) and germline (50/50) nuclei showed positive signals.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C36 provide quantitative efficiency data with adequate sample sizes (n=50-1303). The 50% efficiency for in utero embryos is acknowledged as a limitation, with an alternative protocol achieving 90% efficiency noted (C70). The within-animal efficiency of 100% (C35-C36) is impressive and well-documented. Figure 2\u2014figure supplement 2 provides visual support.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:08:16.587964Z"
+    },
+    {
+      "id": "875bed5f-b16c-49bb-98de-3687eb2a6e96",
+      "content_id": "4fe587b1-7901-4cd4-8c65-2bb95e3e0b92",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "C. elegans chromosomes occupy largely distinct territories within interphase nuclei, and these territories persist in post-mitotic somatic cells including intestinal, hypodermal, and neuronal cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39-C40 are supported by six-chromosome FISH data showing distinct colored regions in multiple cell types (Figure 3). The observation is consistent with established knowledge in other eukaryotes (C12). However, the authors appropriately note that the six-color strategy with overlapping fluorophores limits precise territorial boundary definition, recommending single-channel approaches for rigorous spatial analysis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:08:16.587964Z"
+    },
+    {
+      "id": "79662e8e-34c4-42e1-9451-c5f74a8edc07",
+      "content_id": "4fe587b1-7901-4cd4-8c65-2bb95e3e0b92",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The Oligopaint library successfully visualizes 3 Mb and 500 kb subregions of C. elegans chromosomes, with 100% of randomly sampled nuclei (50/50) in successfully stained animals showing all three fluorescent signals.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41-C42 are supported by experimental data in Figure 4 showing nested visualization of whole chromosome, 3 Mb, and 500 kb regions. The quantification (50/50 nuclei positive) demonstrates robust performance. The visual data clearly shows the expected hierarchical organization of signals.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:08:16.587964Z"
+    },
+    {
+      "id": "4fe0c7d9-ae4b-4ce2-a206-1710c9c46788",
+      "content_id": "4fe587b1-7901-4cd4-8c65-2bb95e3e0b92",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Chromosome territories become disorganized during aging in wild-type C. elegans, with 10-day-old animals showing ~50% increase in chromosome volume and increased territorial overlap compared to 1-day-old adults. This effect is linked to biological aging rather than chronological time, as long-lived daf-2 mutants do not show territorial disorganization at day 10.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C47 provide quantitative data with statistical analysis (Figure 5a-b, p<0.0005) and adequate sample sizes (n>50 nuclei from \u22655 animals). The daf-2 control experiment (C48-C49) is well-designed to distinguish aging from chronological time, though the inference in C49 could benefit from additional mechanistic validation. The use of intestinal cells is appropriate as they are post-mitotic and easily identifiable.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:08:16.587964Z"
+    },
+    {
+      "id": "95e7e2c9-2094-4f09-882f-4464763e1f9e",
+      "content_id": "4fe587b1-7901-4cd4-8c65-2bb95e3e0b92",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "RNAi knockdown of mes-3, encoding a component of Polycomb Repressive Complex 2 (PRC2), causes loss of chromosome territories in adult hypodermal cells, with ~45% increase in chromosome volume and ~2-fold increase in territorial overlap. This suggests MES-3/PRC2 is required for maintaining chromosome territories.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C54-C55, C57 provide quantitative data with statistical support (Figure 5c-d, p<0.0005, n>50 nuclei). However, the result has significant limitations: (1) RNAi may have incomplete knockdown; (2) cell-type specificity is unexplained (Figure 5\u2014figure supplement 2 shows minimal effects in other cell types); (3) the causal inference (C56, C59) requires validation with genetic mutants; (4) only one gene from a small screen is reported, raising concerns about selective reporting. The authors appropriately acknowledge these limitations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:08:16.587964Z"
+    },
+    {
+      "id": "19469164-acbf-4934-9dea-073c60ce6aa2",
+      "content_id": "4fe587b1-7901-4cd4-8c65-2bb95e3e0b92",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The developed Oligopaint library and hybridization protocol enable visualization of genome organization at multiple scales in all/most cells across all developmental stages in intact C. elegans animals.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C37, C63 are supported by comprehensive experimental validation across multiple cell types (germline, somatic, embryonic) and developmental stages (embryo, larva, adult) shown in Figures 2-5. The efficiency data (C32-C36) and successful multi-scale visualization (C41-C42) provide strong support. This represents a significant technical advance over previous methods (C14, C61-C62).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:08:16.587964Z"
+    },
+    {
+      "id": "2dcd9b9d-d49a-40f9-b6af-8bfe09ab210c",
+      "content_id": "4fe587b1-7901-4cd4-8c65-2bb95e3e0b92",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Background claims establishing the importance of genome organization, the utility of FISH and chromatin capture technologies, known features of genome architecture (TADs, compartments, chromosome territories, gene positioning), and C. elegans as a model system.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C2, C6-C13 represent established scientific knowledge supported by appropriate citations to the literature. These provide necessary context for the study but are not novel findings. C13 appropriately describes the advantages of C. elegans as a model organism.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:08:16.587964Z"
+    },
+    {
+      "id": "a788f631-4236-47f9-9ed2-41674b5f11d4",
+      "content_id": "4fe587b1-7901-4cd4-8c65-2bb95e3e0b92",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Background claims describing previous DNA FISH approaches in C. elegans and the development and applications of Oligopaint technology in other systems.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C14-C19 are supported by appropriate citations and provide context for how the current work improves upon previous methods. These establish the rationale for developing the C. elegans Oligopaint library but are not novel findings of this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:08:16.587964Z"
+    },
+    {
+      "id": "fc52acdf-2f42-45a3-a31c-27df4e29d050",
+      "content_id": "4fe587b1-7901-4cd4-8c65-2bb95e3e0b92",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Background claims about aging effects on chromatin structure, daf-2 function in longevity, and PRC2's role in chromatin architecture, providing context for the aging and mes-3 RNAi experiments.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C44, C50-C53 are supported by appropriate literature citations and provide necessary background for interpreting the experimental results. These are established facts from prior work, not novel findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:08:16.587964Z"
+    },
+    {
+      "id": "e3829950-c95b-4dbe-bc23-d0f3d46851d5",
+      "content_id": "4fe587b1-7901-4cd4-8c65-2bb95e3e0b92",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Discussion claims about C. elegans as a model system, limitations of previous DNA FISH approaches, and future research possibilities enabled by the new technology.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C60-C62 accurately describe established knowledge and limitations of prior methods. C64 is appropriate speculation about future research directions enabled by the technology, clearly framed as possibilities rather than demonstrated results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:08:16.587964Z"
+    },
+    {
+      "id": "db14649c-ed6f-4ee8-b5ce-5cb4c9fb598f",
+      "content_id": "4fe587b1-7901-4cd4-8c65-2bb95e3e0b92",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Methodological details and established biological facts about C. elegans development, including germline organization, chromosome behavior during meiosis, lifespan, and references to established protocols.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C66-C72, C75 provide methodological context and established biological facts supported by appropriate citations. C70 describes an alternative protocol for improved embryo staining efficiency (90% vs 50%). These are supporting details rather than primary findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:08:16.587964Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "1404829d-eba6-4898-8963-0c593df01102",
+      "result_id": "5fefadcc-9bfd-467d-8cec-b51152cbab7f"
+    },
+    {
+      "claim_id": "7355b2eb-e21a-42c8-95a1-55af1a5240ec",
+      "result_id": "5fefadcc-9bfd-467d-8cec-b51152cbab7f"
+    },
+    {
+      "claim_id": "14ff3437-3eaa-41a5-a63b-e93f79e457bc",
+      "result_id": "5fefadcc-9bfd-467d-8cec-b51152cbab7f"
+    },
+    {
+      "claim_id": "a355c8c1-ddb1-4ba2-ba53-25596fd0b938",
+      "result_id": "5fefadcc-9bfd-467d-8cec-b51152cbab7f"
+    },
+    {
+      "claim_id": "f7f809dd-a494-4185-90c8-a32500d883df",
+      "result_id": "5fefadcc-9bfd-467d-8cec-b51152cbab7f"
+    },
+    {
+      "claim_id": "46481754-337b-4e4d-8814-98665dc1f1d2",
+      "result_id": "5fefadcc-9bfd-467d-8cec-b51152cbab7f"
+    },
+    {
+      "claim_id": "bb3e5722-f707-410b-8146-c277c33b04a0",
+      "result_id": "5fefadcc-9bfd-467d-8cec-b51152cbab7f"
+    },
+    {
+      "claim_id": "2704a813-1b11-4e4c-a0dd-6c0836859534",
+      "result_id": "5fefadcc-9bfd-467d-8cec-b51152cbab7f"
+    },
+    {
+      "claim_id": "adbab44e-7d1f-48f2-b7db-82ed00f458d7",
+      "result_id": "5fefadcc-9bfd-467d-8cec-b51152cbab7f"
+    },
+    {
+      "claim_id": "88323b41-4071-48ac-968c-472d1bf92b2b",
+      "result_id": "5fefadcc-9bfd-467d-8cec-b51152cbab7f"
+    },
+    {
+      "claim_id": "7355b2eb-e21a-42c8-95a1-55af1a5240ec",
+      "result_id": "7547a572-e228-46de-8fe5-f086174e0d17"
+    },
+    {
+      "claim_id": "db3c22b1-9545-48ed-ab01-e9167847ae1e",
+      "result_id": "7547a572-e228-46de-8fe5-f086174e0d17"
+    },
+    {
+      "claim_id": "1d302fd7-84ad-489e-bebe-84e6137eba5e",
+      "result_id": "7547a572-e228-46de-8fe5-f086174e0d17"
+    },
+    {
+      "claim_id": "767a53b7-15d0-4cfc-873a-2f00af5ddb08",
+      "result_id": "ec764083-7a1d-490b-964a-fcc3607be179"
+    },
+    {
+      "claim_id": "6ac18ba5-0fbd-40af-aa92-ff07d5390b07",
+      "result_id": "ec764083-7a1d-490b-964a-fcc3607be179"
+    },
+    {
+      "claim_id": "b4c8ad0d-14f0-4fe2-9228-96618dcba57c",
+      "result_id": "ec764083-7a1d-490b-964a-fcc3607be179"
+    },
+    {
+      "claim_id": "494acb4c-4fa1-4911-a3be-34ca12ed01d1",
+      "result_id": "ec764083-7a1d-490b-964a-fcc3607be179"
+    },
+    {
+      "claim_id": "d5c3c425-7d50-4243-a01b-deda35e8d455",
+      "result_id": "ec764083-7a1d-490b-964a-fcc3607be179"
+    },
+    {
+      "claim_id": "d0035f01-0412-4ecb-9a6a-06418adc370f",
+      "result_id": "72ff1686-5d1d-4039-8e68-310d1f115a64"
+    },
+    {
+      "claim_id": "172f1e85-1607-4796-a62d-0b76ac54fcf8",
+      "result_id": "72ff1686-5d1d-4039-8e68-310d1f115a64"
+    },
+    {
+      "claim_id": "5e4b2993-b652-41c9-9351-ab6ba7d1850b",
+      "result_id": "72ff1686-5d1d-4039-8e68-310d1f115a64"
+    },
+    {
+      "claim_id": "e05f9186-1f61-48a6-9d1f-f0baf00df08c",
+      "result_id": "72ff1686-5d1d-4039-8e68-310d1f115a64"
+    },
+    {
+      "claim_id": "723421bb-d3f4-4bb5-9eb8-acc5d8cca64a",
+      "result_id": "72ff1686-5d1d-4039-8e68-310d1f115a64"
+    },
+    {
+      "claim_id": "a5619fb7-62d3-4941-a082-1398550cc496",
+      "result_id": "72ff1686-5d1d-4039-8e68-310d1f115a64"
+    },
+    {
+      "claim_id": "a8662a5d-6f6f-4eb0-90eb-b26872583707",
+      "result_id": "875bed5f-b16c-49bb-98de-3687eb2a6e96"
+    },
+    {
+      "claim_id": "033870ba-9528-4c50-b21f-ca73055c5bc9",
+      "result_id": "875bed5f-b16c-49bb-98de-3687eb2a6e96"
+    },
+    {
+      "claim_id": "6239b188-4076-486f-bc46-a2a228d21102",
+      "result_id": "79662e8e-34c4-42e1-9451-c5f74a8edc07"
+    },
+    {
+      "claim_id": "2006b841-013e-4a97-8654-06c94e3e2560",
+      "result_id": "79662e8e-34c4-42e1-9451-c5f74a8edc07"
+    },
+    {
+      "claim_id": "46fea74f-a774-4eb4-8221-b7bc8f028f26",
+      "result_id": "4fe0c7d9-ae4b-4ce2-a206-1710c9c46788"
+    },
+    {
+      "claim_id": "9ae85ecd-6f44-49d1-a4f7-0208230873be",
+      "result_id": "4fe0c7d9-ae4b-4ce2-a206-1710c9c46788"
+    },
+    {
+      "claim_id": "97e4632c-6348-4b03-81fe-56a36a04795f",
+      "result_id": "4fe0c7d9-ae4b-4ce2-a206-1710c9c46788"
+    },
+    {
+      "claim_id": "d33ce1b3-5ada-4f6c-a10d-bd9cfe3b04e2",
+      "result_id": "4fe0c7d9-ae4b-4ce2-a206-1710c9c46788"
+    },
+    {
+      "claim_id": "5088b223-02c7-4f7c-b9ac-d22b19b304e2",
+      "result_id": "4fe0c7d9-ae4b-4ce2-a206-1710c9c46788"
+    },
+    {
+      "claim_id": "0c371b19-146f-45dc-bebd-1a3b3dbf3805",
+      "result_id": "95e7e2c9-2094-4f09-882f-4464763e1f9e"
+    },
+    {
+      "claim_id": "3558fb64-ad31-45b8-81b9-7df82f1b379f",
+      "result_id": "95e7e2c9-2094-4f09-882f-4464763e1f9e"
+    },
+    {
+      "claim_id": "8a7bd559-f131-4152-aceb-dd9103d3c8fb",
+      "result_id": "95e7e2c9-2094-4f09-882f-4464763e1f9e"
+    },
+    {
+      "claim_id": "3a8d581b-c563-43c4-9702-e08ecc589a3f",
+      "result_id": "95e7e2c9-2094-4f09-882f-4464763e1f9e"
+    },
+    {
+      "claim_id": "1786bd89-45f9-4d3b-b54a-0508a9c47d72",
+      "result_id": "95e7e2c9-2094-4f09-882f-4464763e1f9e"
+    },
+    {
+      "claim_id": "1c7b082e-9e7b-484c-9e57-175657db234f",
+      "result_id": "95e7e2c9-2094-4f09-882f-4464763e1f9e"
+    },
+    {
+      "claim_id": "103f581f-f25a-4b5d-8377-6bd11282b583",
+      "result_id": "19469164-acbf-4934-9dea-073c60ce6aa2"
+    },
+    {
+      "claim_id": "a5619fb7-62d3-4941-a082-1398550cc496",
+      "result_id": "19469164-acbf-4934-9dea-073c60ce6aa2"
+    },
+    {
+      "claim_id": "db3df82b-41be-49e3-953c-e24e209853e9",
+      "result_id": "19469164-acbf-4934-9dea-073c60ce6aa2"
+    },
+    {
+      "claim_id": "d7fef7ae-e51e-425b-93be-8433738cd933",
+      "result_id": "2dcd9b9d-d49a-40f9-b6af-8bfe09ab210c"
+    },
+    {
+      "claim_id": "1b9f99f0-be89-4f7f-b6bf-119b86f9c0ab",
+      "result_id": "2dcd9b9d-d49a-40f9-b6af-8bfe09ab210c"
+    },
+    {
+      "claim_id": "69b3d0cf-3135-43f6-8cf0-84e4f558decd",
+      "result_id": "2dcd9b9d-d49a-40f9-b6af-8bfe09ab210c"
+    },
+    {
+      "claim_id": "1bcddc8b-ac22-45dc-bc06-aca5a7f567d2",
+      "result_id": "2dcd9b9d-d49a-40f9-b6af-8bfe09ab210c"
+    },
+    {
+      "claim_id": "eb66fbe3-7d8c-4a70-b0a6-97fe99a8ecfd",
+      "result_id": "2dcd9b9d-d49a-40f9-b6af-8bfe09ab210c"
+    },
+    {
+      "claim_id": "08f6ff6b-b22d-4fc6-a5a3-d4364df2df84",
+      "result_id": "2dcd9b9d-d49a-40f9-b6af-8bfe09ab210c"
+    },
+    {
+      "claim_id": "030a9ae0-d8bd-4725-bdbd-250969030e4c",
+      "result_id": "2dcd9b9d-d49a-40f9-b6af-8bfe09ab210c"
+    },
+    {
+      "claim_id": "8c24cc55-7015-4fa2-897d-deafac21b77a",
+      "result_id": "2dcd9b9d-d49a-40f9-b6af-8bfe09ab210c"
+    },
+    {
+      "claim_id": "f706818a-949b-4d71-91d1-ef2467715ce7",
+      "result_id": "2dcd9b9d-d49a-40f9-b6af-8bfe09ab210c"
+    },
+    {
+      "claim_id": "069efe7d-c7c8-4389-8217-1dbb94f0c527",
+      "result_id": "2dcd9b9d-d49a-40f9-b6af-8bfe09ab210c"
+    },
+    {
+      "claim_id": "15e045ec-0a93-4b19-960d-d87c6db82274",
+      "result_id": "a788f631-4236-47f9-9ed2-41674b5f11d4"
+    },
+    {
+      "claim_id": "58c4a2d2-f991-43c3-bbe2-198809119aaf",
+      "result_id": "a788f631-4236-47f9-9ed2-41674b5f11d4"
+    },
+    {
+      "claim_id": "c239a419-9d26-4e4d-a486-65f5ee83ce7f",
+      "result_id": "a788f631-4236-47f9-9ed2-41674b5f11d4"
+    },
+    {
+      "claim_id": "1065f33b-db91-4b71-b2bd-fd0dba3d3ba2",
+      "result_id": "a788f631-4236-47f9-9ed2-41674b5f11d4"
+    },
+    {
+      "claim_id": "6e8e38a1-af4d-4aa0-9acf-eabc7c502019",
+      "result_id": "a788f631-4236-47f9-9ed2-41674b5f11d4"
+    },
+    {
+      "claim_id": "73a1a7aa-31ea-41cb-ae58-f297cc809db9",
+      "result_id": "a788f631-4236-47f9-9ed2-41674b5f11d4"
+    },
+    {
+      "claim_id": "f7f10a16-8a82-4860-b9ff-ce31ea43ee8a",
+      "result_id": "fc52acdf-2f42-45a3-a31c-27df4e29d050"
+    },
+    {
+      "claim_id": "c9d59503-5fb2-48f1-a142-fa34c96ce519",
+      "result_id": "fc52acdf-2f42-45a3-a31c-27df4e29d050"
+    },
+    {
+      "claim_id": "e90ea672-668d-4701-aefb-766aac8960fe",
+      "result_id": "fc52acdf-2f42-45a3-a31c-27df4e29d050"
+    },
+    {
+      "claim_id": "fc683805-0294-4465-9dd4-31f86a15ab51",
+      "result_id": "fc52acdf-2f42-45a3-a31c-27df4e29d050"
+    },
+    {
+      "claim_id": "8b03bab2-46ae-4c9d-a59b-10353bd7772c",
+      "result_id": "fc52acdf-2f42-45a3-a31c-27df4e29d050"
+    },
+    {
+      "claim_id": "ad2c480e-8e7f-40f7-a56d-b1cf6bd9efdf",
+      "result_id": "fc52acdf-2f42-45a3-a31c-27df4e29d050"
+    },
+    {
+      "claim_id": "e9239648-edca-4794-9321-c8afc98d95bb",
+      "result_id": "e3829950-c95b-4dbe-bc23-d0f3d46851d5"
+    },
+    {
+      "claim_id": "4812cbf5-34d6-4314-a417-2a02b872a346",
+      "result_id": "e3829950-c95b-4dbe-bc23-d0f3d46851d5"
+    },
+    {
+      "claim_id": "e353b506-efc8-44ed-884b-08150a34f93e",
+      "result_id": "e3829950-c95b-4dbe-bc23-d0f3d46851d5"
+    },
+    {
+      "claim_id": "9985e431-861e-47b4-ab2d-4aa78b4e33d3",
+      "result_id": "e3829950-c95b-4dbe-bc23-d0f3d46851d5"
+    },
+    {
+      "claim_id": "baeff4e1-67e2-4e4a-94d9-2974482d378b",
+      "result_id": "db14649c-ed6f-4ee8-b5ce-5cb4c9fb598f"
+    },
+    {
+      "claim_id": "3a5deef5-4917-4372-9aad-78b0f2a3b2d0",
+      "result_id": "db14649c-ed6f-4ee8-b5ce-5cb4c9fb598f"
+    },
+    {
+      "claim_id": "34c74e89-8e69-4ccc-9f51-e683d5100c56",
+      "result_id": "db14649c-ed6f-4ee8-b5ce-5cb4c9fb598f"
+    },
+    {
+      "claim_id": "f5b5e757-1b5d-4131-a8fc-5ba521f2a8bc",
+      "result_id": "db14649c-ed6f-4ee8-b5ce-5cb4c9fb598f"
+    },
+    {
+      "claim_id": "ad2c6727-98ad-4be0-92ff-e2b1b5d6e743",
+      "result_id": "db14649c-ed6f-4ee8-b5ce-5cb4c9fb598f"
+    },
+    {
+      "claim_id": "cf62723b-773a-43b2-801d-86469bc03e3c",
+      "result_id": "db14649c-ed6f-4ee8-b5ce-5cb4c9fb598f"
+    },
+    {
+      "claim_id": "70c7ba52-c656-4bdd-a496-43d05d94278d",
+      "result_id": "db14649c-ed6f-4ee8-b5ce-5cb4c9fb598f"
+    },
+    {
+      "claim_id": "27a90d57-f5c8-487f-8db8-30c2c8f0eb3b",
+      "result_id": "db14649c-ed6f-4ee8-b5ce-5cb4c9fb598f"
+    }
+  ],
+  "comparisons": []
+}

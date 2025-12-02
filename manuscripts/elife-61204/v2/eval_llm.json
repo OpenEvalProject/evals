@@ -1,0 +1,318 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "JAK-STAT pathway activity instructs graded FSC proliferation in a dose-dependent manner. Control FSCs show 25.1% EdU incorporation with a posterior-to-anterior gradient (33.4%, 20.0%, 8.2% for layers 1-3). Loss of STAT reduces EdU incorporation to 2.4%, while UAS-Hop increases it to 43.9%. Making JAK-STAT activity uniform across the FSC domain (C587>Hop) eliminates the proliferation gradient, with nearly identical EdU labeling in all layers (38.2%, 37.4%, 41.1%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The claims are well-supported by quantitative EdU incorporation data across multiple genotypes (C36-C40) and experimental manipulations (C43-C44). The C587>Hop experiment provides strong evidence that JAK-STAT activity directly instructs the proliferation gradient (C45, C50). Sample sizes are substantial (n=336-4753 cells) and the gradient elimination upon uniform JAK-STAT activity is compelling evidence of causality.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Additional mechanisms beyond JAK-STAT contribute to graded FSC proliferation. Even in stat mutant FSCs with very low overall EdU incorporation (2.4%), a graded pattern persists (6.5%, 1.5%, 0% for layers 1-3). When proliferation is restored in stat mutants by manipulating CycE, Kibra, or Warts, the gradient remains intact with no significant differences from controls in relative EdU indices.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The data demonstrate that graded proliferation persists in the absence of JAK-STAT signaling (C52), supported by multiple genetic rescue experiments (C54-C55). The statistical analysis showing no significant differences in relative EdU indices from controls is appropriate. However, the identity of the alternative mechanism(s) remains unknown, which is acknowledged by the authors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Loss of JAK-STAT activity causes anterior accumulation of FSCs and greatly impairs FC production independent of division rate. 96.5% of stat FSCs localize to anterior layers by 12d, and the probability of layer 1 FSCs becoming FCs drops from 61.6% (control) to 34.2% (stat). Restoring proliferation in stat mutants (kibra/wts/UAS-CycE stat) does not rescue FC production (25.3% probability), demonstrating that JAK-STAT regulates differentiation independently of division.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The anterior bias of stat FSCs is dramatic and well-quantified (C56). The 'immediate FC' method provides a novel quantitative measure of differentiation probability (C59-C61). The key finding that restoring proliferation does not rescue FC production (C61-C62) strongly supports independent regulation of division and differentiation. The logic is sound and the data are internally consistent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Increased JAK-STAT activity promotes FC production and can induce FC characteristics in ectopic locations. UAS-Hop increases the probability of layer 1 FSCs becoming FCs from 61.6% to 78.1%, an effect maintained when division is blocked (76.7% with UAS-Dap). High JAK-STAT activity induces ectopic Fas3 expression in 66% of germaria with UAS-Hop clones and up to 94% with C587>Hop by 10d. Excess Fas3 partially restores FC production in stat mutants (from 22.8% to 45.4%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The increased FC production with elevated JAK-STAT is well-documented (C63-C64), and the persistence with UAS-Dap demonstrates independence from division rate (C65). The ectopic Fas3 expression data are quantitative and time-resolved (C66-C67). The partial rescue by Fas3 overexpression (C69) suggests Fas3 is a downstream effector, though the mechanism remains incomplete. All claims are supported by appropriate data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "FSC competitive success depends on both division rate and differentiation rate. UAS-Hop FSCs increase to 10.4 per germarium (vs 3.3 control), while stat FSCs decrease to 0.3. Remarkably, kibra UAS-CycE stat FSCs, with only 64% of wild-type EdU incorporation, accumulate to 15.9 per germarium with 94% of ovarioles containing marked FSCs. This dramatic competitive advantage despite reduced division rate results from severely impaired FC production (22.8% probability).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The FSC competition data are comprehensive and internally consistent across multiple genotypes (C70-C75). The kibra UAS-CycE stat result is particularly striking and well-explained by the combination of modest proliferation with severely reduced differentiation (C76). The quantitative measurements of FSC numbers, EdU incorporation, and FC production probability all support the conclusion that differentiation rate is a major determinant of FSC competition.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Wnt pathway activity regulates FSC anterior-posterior location and FC production. Loss of Wnt signaling (arr) causes 77.6% of FSCs to localize to layer 1 and increases FC production probability to 76.9%, while increased Wnt activity (axn/apc) restricts FSCs to 15-20% in layer 1 and reduces FC production to 22.4%. Partial reduction with UAS-dnTCF shows intermediate effects (63.0% in layer 1, 52.9% FC probability).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The effects of Wnt pathway manipulation on FSC location are dramatic and dose-dependent (C77, C79). The 'immediate FC' method provides quantitative differentiation probabilities (C80-C82). The graded response to different levels of Wnt inhibition (arr vs UAS-dnTCF) supports a dose-dependent mechanism. The data are consistent with prior work (cited) and extend it with quantitative differentiation measurements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "Wnt pathway activity promotes EC production from anterior FSCs, while JAK-STAT opposes it. Control EC/aFSC ratio is 0.55 (0-6d) and 0.63 (0-12d), suggesting significant EC turnover. Loss of Wnt signaling (arr) drastically reduces EC production (0.11 at 12d), while increased Wnt activity (axn/apc) elevates it (7.3 at 12d). Loss of STAT activity increases EC production (1.2 at 12d). Blocking apoptosis with DIAP1 only partially rescues arr EC production.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The EC/aFSC ratio method is well-designed and the inference of EC turnover from the less-than-doubling between 6d and 12d is logical (C84-C85). The effects of Wnt and JAK-STAT manipulation on EC production are dramatic and consistent (C86-C87, C91-C92). The DIAP1 experiment (C90) appropriately tests the apoptosis hypothesis and shows it is only partially explanatory. The conclusion that turnover likely reflects FSC-EC interconversion is reasonable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "Wnt signaling has limited effects on the graded pattern of FSC proliferation. Reduced Wnt activity (arr, dnTCF) causes slight reductions in EdU incorporation (26.3%, 24.9% vs 33.4% in layer 1), while increased Wnt activity (axn/apc) substantially reduces proliferation (13.7% in layer 1) but maintains the posterior-to-anterior gradient. Global reduction of Wnt signaling with C587>dnTCF does not alter the proliferation gradient.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The EdU incorporation data across Wnt pathway manipulations are quantitative and show that while Wnt can affect overall proliferation rates, it does not determine the gradient pattern (C93-C94). The C587>dnTCF experiment (C95) provides strong evidence by eliminating the Wnt gradient without affecting the proliferation gradient. The statistical analysis showing no significant differences in relative EdU indices is appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C96",
+      "C97"
+    ],
+    "result": "JAK-STAT and Wnt pathways do not directly affect each other's signal transduction cell autonomously. Neither decreased nor increased JAK-STAT activity significantly altered Fz3-RFP (Wnt reporter) expression, and neither decreased nor increased Wnt activity significantly altered STAT-RFP expression in MARCM clones.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The reporter assays in MARCM clones provide appropriate cell-autonomous tests of pathway cross-regulation (C96-C97). The use of fluorescence intensity measurements comparing marked cells to unmarked neighbors is a sound approach. The lack of significant changes in reporter activity suggests the pathways act independently at the signal transduction level, though they may converge on common downstream targets.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "Wnt pathway inhibition of FSC division is suppressed by JAK-STAT activity. Reducing Wnt signaling with UAS-dnTCF increases EdU incorporation in stat mutants (from 2.4% to 4.5%) and dramatically in stat kibra/wts/UAS-CycE FSCs (from 4.9% to 16.2%). However, increased JAK-STAT activity (UAS-Hop, 43.9% EdU) is not significantly altered by reducing (dnTCF, 46.3%) or eliminating (arr, 37.7%) Wnt signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The epistasis experiments are well-designed and reveal an asymmetric interaction (C98-C100). The dramatic rescue of proliferation in stat mutants by Wnt reduction (C99) is striking and well-quantified. The lack of effect of Wnt manipulation on UAS-Hop proliferation (C100) demonstrates JAK-STAT epistasis. The conclusion of asymmetric suppression (C101) is well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "Combined high JAK-STAT and absent Wnt signaling potently drives FC production. The probability of layer 1 FSCs becoming FCs increases from 78.1% (UAS-Hop) to 90.3% (arr UAS-Hop), higher than arr alone (76.9%). Despite this accelerated differentiation, 87.1% of arr UAS-Hop FSCs remain in layer 1. High JAK-STAT activity also overcomes the inhibition of FC production by elevated Wnt signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The synergistic effect of combining high JAK-STAT with absent Wnt signaling is dramatic and well-quantified (C102). The near-mandatory conversion to FCs (90.3%) is striking (C103). The maintenance of posterior localization despite rapid differentiation (C104) suggests strong posterior bias. The epistasis of JAK-STAT over Wnt for FC production (C105) is consistent with the regional dominance model proposed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "EC production remains highly responsive to Wnt signaling even with elevated JAK-STAT activity. Marked cells in the EC region increase from 1.3 (control) to 3.3 (UAS-Hop), but are drastically reduced with arr UAS-Hop (0.07) and greatly increased with axn UAS-Hop (17.2). This demonstrates regional dominance: Wnt signaling primarily controls differentiation decisions in anterior regions, while JAK-STAT controls posterior decisions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The EC production data across combined pathway manipulations are comprehensive and reveal clear regional dominance (C106-C107). The epistasis pattern\u2014Wnt dominant anteriorly, JAK-STAT dominant posteriorly\u2014is well-supported by the data (C108). This provides a mechanistic explanation for how opposing gradients can define a stem cell domain with distinct differentiation outcomes at each end.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "FSC competitive outcomes reflect the balance between division rate and differentiation flux. Elevated JAK-STAT increases FSCs to 10.4 per germarium through increased division. However, combining high JAK-STAT with absent Wnt (arr UAS-Hop) depletes FSCs to 0.3 per germarium despite high division rates, due to extreme posterior flux and FC conversion. Conversely, combining high JAK-STAT with elevated Wnt (axn UAS-Hop) increases FSCs to 28.1 per germarium by reducing FC production without altering division rates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The FSC competition data across combined pathway manipulations demonstrate that competitive outcomes depend on the balance of division and differentiation (C109-C113). The arr UAS-Hop depletion despite high proliferation (C110-C111) and the axn UAS-Hop accumulation (C112) are dramatic and well-explained. The conclusion that Wnt activity profoundly affects competition by modulating differentiation without altering division (C113) is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C13",
+      "C14",
+      "C114",
+      "C115",
+      "C119"
+    ],
+    "result": "JAK-STAT and Wnt signaling gradients combine to define the FSC domain through coordinated regulation of proliferation and differentiation. JAK-STAT is the primary agent dictating graded proliferation and promoting FC conversion, while Wnt promotes anterior location and EC production. The opposing gradients create a stem cell domain where differentiation occurs at both ends, with proliferation patterns matching derivative production.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This overarching conclusion integrates the major findings and is well-supported by the comprehensive dataset (C1-C3, C13-C14). The identification of JAK-STAT as the primary proliferation regulator (C114) and major FC promoter (C115) is supported by multiple lines of evidence. The model of opposing gradients defining domain boundaries through differentiation control (C119) is a logical synthesis of the regional dominance findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "Summary of main findings on pathway activities and their effects. JAK-STAT activity declines posterior-to-anterior and dictates division patterns, promotes posterior FSC locations and FC conversion, while opposing EC production. Wnt activity declines anterior-to-posterior and promotes anterior FSC locations and EC production, while opposing FC production.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims summarize the main findings stated in the abstract and are supported by the detailed experimental results presented throughout the manuscript (C4-C12). Each claim is backed by quantitative data from multiple experimental approaches including EdU incorporation, FSC location analysis, and differentiation probability measurements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Background and context from prior work. The manuscript reviews established knowledge about FSC organization (14-16 FSCs in three layers producing 5-6 FCs per cycle), the revision from single-cell to population asymmetry, and prior findings on Hh, Wnt, and JAK-STAT signaling in FSC regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims provide essential context and are appropriately cited to prior work (C15-C35). The citations appear accurate and the summary of prior findings is consistent with the referenced literature. The authors appropriately acknowledge their own prior work that revised the FSC model and provide context for the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C59"
+    ],
+    "result": "Control FSCs have a 61.6% probability of becoming an FC in one budding cycle, measured by the 'immediate FC' method.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This baseline measurement is well-supported by data from 556 control germaria across 31 experiments (C59). The method is validated by showing that the calculated FC production (6.1 per cycle) closely matches the value derived from founder FC clone sizes (5.6). This provides confidence in the quantitative approach used throughout the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "Discussion summary of Wnt pathway effects. Wnt pathway magnitude determines FSC AP position and EC conversion (prior work), and the current study shows elevated Wnt inhibits FC production while elimination promotes FC production.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims summarize findings discussed in the manuscript (C116-C118). C116 appropriately cites prior work, while C117-C118 summarize current findings that are well-supported by the experimental data presented. This is appropriate synthesis in the Discussion section.",
+    "result_type": "MINOR"
+  }
+]

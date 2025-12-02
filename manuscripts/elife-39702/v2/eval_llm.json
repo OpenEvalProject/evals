@@ -1,0 +1,208 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "Polygenic height scores computed using GIANT summary statistics show significant population differences that dramatically attenuate when using UK Biobank summary statistics. The differences are qualitatively similar only when restricted to genome-wide significant SNPs (p<5\u00d710\u207b\u2078), suggesting that sub-significant SNPs are particularly susceptible to bias.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C18 provide converging evidence from multiple analyses (modern European populations, ancient populations, global populations) showing consistent attenuation of signals when using UK Biobank vs GIANT data. The quantitative results are shown in multiple figures with appropriate statistical measures and confidence intervals.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "The tSDS signal of polygenic adaptation for height in the UK population, which was significant using GIANT effect sizes (\u03c1=0.078, p=1.55\u00d710\u207b\u2076\u2075), disappeared when using UK Biobank effect sizes (\u03c1=0.009, p=0.077), indicating that concerns about sub-significant SNPs extend to within-population adaptation analyses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C21 present a clear replication followed by a null result with quantitative statistics. The tSDS methodology is independent of allele frequency-based tests, making this an important complementary finding. The statistical significance is clearly reported with appropriate p-values.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "The qualitative differences between GIANT and UK Biobank polygenic adaptation signals are attributed to cumulative subtle biases from incomplete control of population structure in GWAS. GIANT's meta-analysis of heterogeneous cohorts with varying sample sizes provides less effective stratification control than UK Biobank's single homogeneous cohort.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C28 provide a mechanistic explanation supported by study design differences and prior literature (C23, C27, C28). The reasoning is logical and consistent with known limitations of meta-analyses. However, C24 is explicitly hypothetical, and C25 is an inference rather than directly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "GIANT effect sizes are highly correlated with principal component loadings of population structure, while UK Biobank estimates are not. Alleles more common in Great Britain than Tuscany are preferentially estimated as height-increasing in GIANT but not in UK Biobank, providing direct evidence of residual stratification in GIANT.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C31 present direct empirical evidence of stratification shown in Figure 2. The correlation with PC loadings and GBR-TSI allele frequency differences provides clear quantitative support. Multiple supplementary figures confirm the pattern across different analyses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Previously published family-based effect size estimates (NG2015 sibs) showed unexpected correlations with population structure despite being computed within families. This was later attributed to a technical artifact, and updated estimates do not show significant polygenic adaptation signals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C34 identify an important issue with prior published results. C33 is supported by personal communication and website documentation, and C34 cites independent confirmation (Berg et al., 2019). This demonstrates the robustness of the authors' concerns about stratification.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C35",
+      "C36"
+    ],
+    "result": "The white British subset of UK Biobank is not completely free of population stratification, though the magnitude is much smaller than in Continental European populations. The north-south genetic cline in the UK tracks height in the opposite direction from Continental Europe.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C36 are supported by data in supplementary figures and citation to Haworth et al., 2019. The observation about opposite-direction clines is interesting and shown in Figure 2 supplements. This appropriately acknowledges limitations of even the UK Biobank data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "The tSDS signal using GIANT is confounded by a north-south cline in singleton density in Europe that coincidentally parallels both the phenotypic height cline and population structure. SDS correlates with multiple PC loadings and GBR-TSI allele frequency differences, and the tSDS signal across all P values can be mimicked by replacing SDS with allele frequency differences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C43 provide a detailed mechanistic explanation for the tSDS confounding. C37 is supported by citation (Sohail et al., 2017), C38 and C42 are shown in Figure 2, and C43 is demonstrated in Figure 3. The logic connecting demographic history to the observed bias is sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "A small but significant tSDS signal persists at genome-wide significant SNPs (p<5\u00d710\u207b\u2078) in the UK when using UK Biobank family-based estimates, not driven by GBR-TSI allele frequency differences. However, under most genetic architectures, a linear tSDS increase across all P values is not expected from natural selection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C44-C45 report a residual signal with appropriate statistical tests and controls. However, the authors remain cautious about interpretation (as stated elsewhere in the manuscript). C46 invokes theoretical expectations but doesn't provide quantitative modeling or citations to support what patterns are expected under different architectures. The signal could be real or reflect residual confounding not captured by the controls used.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Testing population-level height differences using the Qx statistic shows dramatic attenuation from sub-significant to genome-wide significant SNPs in GIANT (Qx=1100 to 48), while UK Biobank shows more modest attenuation (Qx=64 to 33). The signal disappears entirely with UK Biobank family-based estimates, and Qx P-values are not uniformly distributed as expected under the null model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C52 present quantitative results from the Qx test with specific statistics. The pattern of attenuation and the non-uniform P-value distribution (C52, Figure 4 supplement 3) provide strong evidence. C53 cites independent support (Haworth et al., 2019). The inference in C50 is reasonable given the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "While individual SNP effect estimates are highly concordant between GIANT and UK Biobank, they are influenced by residual population stratification that creates highly significant artificial signals in polygenic adaptation tests, especially when using sub-significant SNPs. The genome-wide significant associations in GIANT remain reliable.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C58 synthesize the main conclusions. C54 is supported by supplementary data showing high correlation. C55-C56 are well-supported by the cumulative evidence. C57-C58 provide appropriate caveats and recommendations. The distinction between individual SNP reliability and polygenic score bias is important and well-articulated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "The findings have implications for polygenic scores used in clinical and sociogenomics applications. Subtle population structure in GWAS meta-analyses could affect polygenic score applicability even within populations, in addition to known issues with cross-population transferability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C61 cite relevant literature establishing context. C62 is a reasonable inference from the study's findings about stratification effects. C63 acknowledges other potential confounders. These claims appropriately discuss broader implications while remaining cautious about overgeneralization.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "Background context on polygenic traits and prior studies: Most human complex traits are highly polygenic, with height modulated by ~4% of allelic variation. Previous studies using GIANT data reported that height-increasing alleles are elevated in northern vs southern Europeans and show recent positive selection in the UK.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C7 establish background context with appropriate citations. These are well-established findings from prior literature that motivate the current study. All claims are supported by multiple citations to peer-reviewed work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "The UK Biobank dataset includes 336,474 genetically unrelated individuals of British Isles ancestry from a single homogeneous cohort enabling better stratification control. Despite high genetic correlation (0.94) with GIANT, small systematic biases lead to qualitatively different conclusions about polygenic adaptation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C10 describe the UK Biobank dataset with specific sample sizes and quantitative measures. C11 is the key observation motivating the entire study and is supported by the extensive analyses presented. The high correlation (C10) makes the qualitative differences (C11) particularly striking and important.",
+    "result_type": "MAJOR"
+  }
+]

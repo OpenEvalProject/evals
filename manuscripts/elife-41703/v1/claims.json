@@ -1,0 +1,1970 @@
+[
+  {
+    "claim_id": "C1",
+    "claim": "Successful behaviour depends on the right balance between maximising reward and soliciting information about the world.",
+    "claim_type": "EXPLICIT",
+    "source": "Successful behaviour depends on the right balance between maximising reward and soliciting information about the world.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a foundational statement in the abstract that frames the paper's investigation.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C2",
+    "claim": "Different types of information-gain emerge when casting behaviour as surprise minimisation.",
+    "claim_type": "EXPLICIT",
+    "source": "Here, we show how different types of information-gain emerge when casting behaviour as surprise minimisation.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is the main theoretical claim of the paper, supported by the mathematical framework and simulations presented throughout.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C3",
+    "claim": "'Hidden state' exploration motivates agents to sample unambiguous observations to accurately infer the (hidden) state of the world.",
+    "claim_type": "EXPLICIT",
+    "source": "'Hidden state' exploration motivates agents to sample unambiguous observations to accurately infer the (hidden) state of the world.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by the simulations in Figures 8 and 9 showing how agents sample cues to infer hidden contexts.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C4",
+    "claim": "'Model parameter' exploration compels agents to sample outcomes associated with high uncertainty, if they are informative for their representation of the task structure.",
+    "claim_type": "EXPLICIT",
+    "source": "Conversely, 'model parameter' exploration, compels agents to sample outcomes associated with high uncertainty, if they are informative for their representation of the task structure.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by the simulations in Figures 3 and 6 showing how agents preferentially sample uncertain options to learn about reward probabilities.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C5",
+    "claim": "The balance between exploitation and exploration lies at the heart of decision-making and adaptive behaviour.",
+    "claim_type": "EXPLICIT",
+    "source": "The balance between exploitation, that is choosing the most valuable option given current beliefs about the world, and exploration, that is choosing options that allow us to forage and learn about our environment, lies at the heart of decision-making and adaptive behaviour (Cohen et al., 2007; Gottlieb et al., 2013).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by citations to prior literature.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C6",
+    "claim": "Recent behavioural evidence suggests that humans perform a mixture of both random and goal-directed exploration.",
+    "claim_type": "EXPLICIT",
+    "source": "Importantly, recent behavioural evidence suggests that humans perform a mixture of both random and goal-directed exploration (Gershman, 2018a; Wilson et al., 2014a).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by citations to empirical studies.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C7",
+    "claim": "Random exploration has been introduced in early accounts of exploratory behaviour.",
+    "claim_type": "EXPLICIT",
+    "source": "Random exploration has been introduced in early accounts of exploratory behaviour (Daw et al., 2006; Sutton and Barto, 1998a).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by citations to foundational literature.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C8",
+    "claim": "Random exploration is defined as a deviation from the currently most valuable policy by randomly sampling any other option.",
+    "claim_type": "EXPLICIT",
+    "source": "This behaviour is defined as a deviation from the currently most valuable policy by randomly sampling any other option.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a definitional claim based on established concepts in the literature.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C10",
+    "claim": "Thompson sampling is a more refined account of random exploration where an agent samples from a posterior over reward statistics.",
+    "claim_type": "EXPLICIT",
+    "source": "A more refined account of random exploration has been introduced via Thompson sampling (Thompson, 1933), where an agent samples from a posterior over reward statistics and chooses the most valuable option with respect to this sample, thus taking its uncertainty over reward statistics into account (Agrawal and Goyal, 2011; Speekenbrink and Konstantinidis, 2015).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by citations to the original Thompson sampling paper and more recent work.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C11",
+    "claim": "Goal-directed, information-seeking exploration is guided by the uncertainty in an agent's model of the structure of the world.",
+    "claim_type": "EXPLICIT",
+    "source": "In contrast to random exploration, goal-directed, information-seeking exploration is guided by the uncertainty in an agent's model of the structure of the world.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a conceptual claim that distinguishes goal-directed from random exploration.",
+    "evidence_type": [
+      "KNOWLEDGE",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C12",
+    "claim": "Uncertainty-sensitive exploration implies that agents will selectively sample options that are informative and associated with the highest uncertainty.",
+    "claim_type": "EXPLICIT",
+    "source": "This implies that agents will selectively sample options that are informative, that is that are associated with the highest uncertainty.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a logical consequence of the definition of goal-directed exploration.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C13",
+    "claim": "The upper confidence bound algorithm is a prominent example of uncertainty-sensitive exploration.",
+    "claim_type": "EXPLICIT",
+    "source": "A prominent example of uncertainty-sensitive exploration is the upper confidence bound algorithm (Agrawal, 1995; Auer et al., 2002; Kaelbling, 1994; Sutton and Barto, 1998a), which adds an uncertainty bonus (Kakade and Dayan, 2002) to options that have not been sampled for a long time or that are associated with high uncertainty.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by multiple citations to the UCB algorithm literature.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C14",
+    "claim": "It is challenging to provide a formal account of the trade-off between behaviour that aims at maximising reward and acquiring information about the world.",
+    "claim_type": "EXPLICIT",
+    "source": "It is challenging to provide a formal account of the trade-off between behaviour that aims at maximising reward and fulfils an agent's preferences over states on the one hand, and acquiring information about the world on the other.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about the difficulty of the problem the paper addresses.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C15",
+    "claim": "An important challenge lies in moving beyond descriptive accounts of behaviour towards understanding the generative mechanisms of information gain that could be implemented by a biological system.",
+    "claim_type": "EXPLICIT",
+    "source": "Furthermore, an important challenge lies in moving beyond descriptive accounts of behaviour towards understanding the generative mechanisms of information gain that could be implemented by a biological system.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about the goals and challenges of the research.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C16",
+    "claim": "One can dissociate different types of uncertainties, such as uncertainty about probabilities versus uncertainty about outcomes.",
+    "claim_type": "EXPLICIT",
+    "source": "This is particularly delicate because one can dissociate different types of uncertainties. For example, if an agent is offered an option that may have a positive or a negative outcome, she will be in a state of uncertainty at two levels. First, she has no idea about the probabilities of winning or losing. For example, there could be a 50% or 99% chance of winning. Second, even if she knew the probability of winning exactly (e.g. 50%), there will still be some uncertainty about the outcome if she chose the option (whether she wins or not).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a conceptual distinction illustrated with an example.",
+    "evidence_type": [
+      "KNOWLEDGE",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C17",
+    "claim": "These types of uncertainties have been termed unexpected and expected uncertainty or ambiguity and risk.",
+    "claim_type": "EXPLICIT",
+    "source": "These types of uncertainties have been termed unexpected and expected uncertainty (Yu and Dayan, 2005) or, in economics, ambiguity and risk.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by citation to prior work and reference to economic terminology.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C18",
+    "claim": "It is necessary to resolve ambiguity first before agents can assess the value of options and their associated risk.",
+    "claim_type": "EXPLICIT",
+    "source": "The key point is that it is necessary to resolve ambiguity first before agents can assess the value of options and their associated risk.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a logical claim about the relationship between different types of uncertainty.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C19",
+    "claim": "Choice behaviour and planning can be cast as variational probabilistic inference.",
+    "claim_type": "EXPLICIT",
+    "source": "We discuss these different aspects of uncertainty-reduction in terms of Bayesian inference, by casting choice behaviour and planning as variational probabilistic inference (Friston et al., 2013; Friston et al., 2017a).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is the core theoretical approach of the paper, supported by citations to prior work.",
+    "evidence_type": [
+      "CITATION",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C20",
+    "claim": "Agents are assumed to form expectations over observable states and infer policies that minimise the expected information-theoretic surprise about these observations.",
+    "claim_type": "EXPLICIT",
+    "source": "Here, agents are assumed to form expectations over observable states (outcomes) and infer policies that minimise the expected information-theoretic surprise about these observations.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a description of the theoretical framework used in the paper.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C21",
+    "claim": "By minimising surprise, agents find policies that make visiting preferred states more likely.",
+    "claim_type": "EXPLICIT",
+    "source": "These expectations reflect an agent's preferences over observations, such that undesired outcomes will be (a priori) unexpected and surprising. Thus, by minimising surprise, agents find policies that make visiting preferred states more likely.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a logical consequence of the surprise minimization framework.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C22",
+    "claim": "The expected free energy can be approximated by a function of beliefs about the states of the world formed under a generative model based on a Markov decision process.",
+    "claim_type": "EXPLICIT",
+    "source": "This information-theoretic quantity can be approximated by the expected free energy, which is a function of (approximate posterior) beliefs about the states of the world, formed under a generative model based on a Markov decision process, as will be described below.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the mathematical approximation used in the framework.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C23",
+    "claim": "Different types of exploitative and exploratory behaviour emerge under the active inference approach.",
+    "claim_type": "EXPLICIT",
+    "source": "Under this approach, different types of exploitative and exploratory behaviour emerge.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a claim about the outcomes of the theoretical framework, supported by the simulations.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C24",
+    "claim": "The key aspect that motivates goal-directed uncertainty reduction is the mapping from hidden states to observations.",
+    "claim_type": "EXPLICIT",
+    "source": "The key aspect that motivates goal-directed uncertainty reduction is the mapping from (hidden) states to observations.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a theoretical claim about what drives exploration in the framework.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C25",
+    "claim": "Uncertainty reduction becomes relevant in partially observable problems where agents have to infer the current hidden state that caused an observation.",
+    "claim_type": "EXPLICIT",
+    "source": "This form of uncertainty reduction becomes relevant in partially observable problems, where in addition to inferring the best policy; agents also have to infer the current (hidden) state that caused an observation.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the conditions under which hidden state exploration is relevant.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C26",
+    "claim": "To minimise uncertainty about the current state, agents can navigate to observable outcomes where the mapping to the underlying hidden state is unambiguous.",
+    "claim_type": "EXPLICIT",
+    "source": "In order to minimise uncertainty about the current state, agents can try to navigate to (observable) outcomes, where the mapping to the underlying hidden state is unambiguous.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the strategy agents use for hidden state exploration.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C27",
+    "claim": "A bird searching for prey might go to a vantage point first to minimise uncertainty about the prey's location before predation.",
+    "claim_type": "EXPLICIT",
+    "source": "A simple example is a bird that is searching for prey: in the case of high uncertainty about the prey's location, a bird might go to a vantage point first to minimise uncertainty about the prey's location (i.e. the underlying hidden state), before predation.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an illustrative example of hidden state exploration.",
+    "evidence_type": [
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C28",
+    "claim": "In contextual inference, agents need to disclose the current context (hidden state) in order to infer what to do.",
+    "claim_type": "EXPLICIT",
+    "source": "Another example is contextual inference, where an agent needs to disclose the current context (i.e. the hidden state), in order to infer what to do (e.g. is there milk in the fridge?).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an illustrative example of contextual inference as a form of hidden state exploration.",
+    "evidence_type": [
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C29",
+    "claim": "In case of contextual uncertainty, agents will prefer to sample outcomes that allow for precise inference about the current context before making a choice about reward.",
+    "claim_type": "EXPLICIT",
+    "source": "In case of contextual uncertainty, agents will prefer to sample outcomes that allow for precise inference about the current context (e.g. sample the fridge), before making a choice about whether to look for reward (e.g. whether or not to make tea).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the predicted behavior under contextual uncertainty.",
+    "evidence_type": [
+      "INFERENCE",
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C30",
+    "claim": "Agents will try to actively sample outcomes that have an unambiguous (low conditional entropy) mapping to hidden states.",
+    "claim_type": "EXPLICIT",
+    "source": "Formally, this means that agents will try to actively sample outcomes that have an unambiguous (low conditional entropy) mapping to hidden states \u2013 hence active inference allowing for 'hidden state exploration'.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a formal description of the hidden state exploration mechanism.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C31",
+    "claim": "The same imperatives apply to beliefs about model parameters that describe a subject's knowledge about state transitions or the probability of various outcomes given the underlying hidden states.",
+    "claim_type": "EXPLICIT",
+    "source": "Importantly, the exact same imperatives apply to beliefs about model parameters that describe a subject's knowledge about state transitions or the probability of various outcomes given the underlying (hidden) states.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This extends the framework to parameter learning.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C32",
+    "claim": "Uncertainty about states of the world is accompanied by uncertainties about the contingencies that underwrite state transitions and the relationship between hidden states and observable outcomes.",
+    "claim_type": "EXPLICIT",
+    "source": "In other words, uncertainty about states of the world is accompanied by uncertainties about the contingencies that underwrite state transitions and the relationship between hidden states and observable outcomes.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the dual nature of uncertainty in the framework.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C33",
+    "claim": "Uncertainty about model parameters reflects an agent's ignorance about the causal structure of the model per se, in contrast to uncertainty about the underlying hidden state given an agent's model of the task.",
+    "claim_type": "EXPLICIT",
+    "source": "In contrast to the examples above, which reflect uncertainty about the underlying hidden state, given an agent's model of the task this form of uncertainty reflects an agent's ignorance about the causal structure of the model per se.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This distinguishes parameter uncertainty from state uncertainty.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C34",
+    "claim": "Agents can be uncertain about the current context that determines the value of options (uncertainty about a hidden state) or uncertain about the value of options given a current context (uncertainty about model parameters).",
+    "claim_type": "EXPLICIT",
+    "source": "For example, agents can be uncertain about the current context that determines the value of options (uncertainty about a hidden state, 'is there milk in my tea?') or uncertain about the value of options given a current context (uncertainty about model parameters, 'what does milky tea taste like?').",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This provides an illustrative example distinguishing the two types of uncertainty.",
+    "evidence_type": [
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C35",
+    "claim": "To reduce uncertainty about model parameters, agents can expose themselves to observations that complete 'knowledge gaps' and thereby learn the probabilistic structure of unknown and unexplored contingencies.",
+    "claim_type": "EXPLICIT",
+    "source": "To reduce the latter type of uncertainty, agents can expose themselves to observations that complete 'knowledge gaps' and thereby learn the probabilistic structure of unknown and unexplored (novel) contingencies \u2013 hence active learning allowing for 'model parameter exploration'.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the mechanism of active learning.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C36",
+    "claim": "Salience is to inference as novelty is to learning.",
+    "claim_type": "EXPLICIT",
+    "source": "We consider the resolution of uncertainty about states and parameters in terms of salience and novelty respectively; where 'salience is to inference' as 'novelty is to learning'.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a conceptual analogy proposed by the authors.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C37",
+    "claim": "Minimising expected free energy leads to curiosity-driven active learning that initially favours the novel risky option because this option provides uncertainty reduction about an agent's parameterisation of the task.",
+    "claim_type": "EXPLICIT",
+    "source": "Minimising expected free energy leads to curiosity-driven active learning that initially favours the novel risky option, because this option provides uncertainty reduction about an agent's parameterisation of the task.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by the simulations shown in Figure 3.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C38",
+    "claim": "The same computational framework motivates active inference in situations where certain actions disclose salient information about hidden states.",
+    "claim_type": "EXPLICIT",
+    "source": "We show how the same computational framework motivates active inference in situations where certain actions disclose salient information about hidden states, such as whether there is currently a high or low reward probability in the risky option.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by the simulations shown in Figure 8.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C39",
+    "claim": "Active inference and active learning rest upon a generative model of observed outcomes.",
+    "claim_type": "EXPLICIT",
+    "source": "Active inference and active learning rest upon a generative model of observed outcomes as illustrated in Figure 1.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a foundational claim about the theoretical framework, illustrated in Figure 1.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C40",
+    "claim": "The generative model is used to infer the most likely causes of outcomes, that is what is the most likely true (hidden) state of the world that caused a given observation.",
+    "claim_type": "EXPLICIT",
+    "source": "This generative model is used to infer the most likely causes of outcomes, that is what is the most likely true (hidden) state of the world (e.g. a current context) that caused a given observation (e.g. a win or a loss).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the function of the generative model.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C41",
+    "claim": "Hidden states are called hidden because they are usually not or only partially observable and can only be inferred through observations.",
+    "claim_type": "EXPLICIT",
+    "source": "These states are called hidden because they are usually not or only partially observable and can only be inferred through observations.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a definitional claim about hidden states.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C42",
+    "claim": "Inferring beliefs about hidden states (state estimation) is cast as an optimisation problem based on minimising variational free energy.",
+    "claim_type": "EXPLICIT",
+    "source": "Inferring beliefs about hidden states (i.e. state estimation) is cast as an optimisation problem based on minimising variational free energy, which finds the most likely (posterior) expectations about states of the world, given current observations.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the mathematical approach to state estimation.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C43",
+    "claim": "Negative free energy is known as an evidence lower bound (ELBO) in machine learning.",
+    "claim_type": "EXPLICIT",
+    "source": "This is the same optimisation found in machine learning, where (negative) free energy is known as an evidence lower bound (ELBO).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This connects the framework to established machine learning concepts.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C44",
+    "claim": "Agents can infer different policies, defined as sequences of actions, that determine the most likely observations they will make.",
+    "claim_type": "EXPLICIT",
+    "source": "Importantly, agents can also infer different policies, defined as sequences of actions, that determine the most likely observations they will make.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes policy inference in the framework.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C45",
+    "claim": "Observations depend upon policies, which requires the generative model to infer expectations about future outcomes under different policies.",
+    "claim_type": "EXPLICIT",
+    "source": "This means that observations depend upon policies, which requires the generative model to infer expectations about future outcomes under different policies.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the relationship between policies and observations in the model.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C46",
+    "claim": "In addition to forming posterior beliefs about hidden states, active inference and learning rest on posterior expectations about the best policy to pursue in a given context.",
+    "claim_type": "EXPLICIT",
+    "source": "Thus, in addition to forming posterior beliefs about hidden states, active inference and learning rest on posterior expectations about the best policy to pursue in a given context.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the dual inference problem in the framework.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C47",
+    "claim": "Agents are assumed to infer 'what is the current state of the world' and 'what are the best actions to pursue' based on the same generative model of the environment.",
+    "claim_type": "EXPLICIT",
+    "source": "In other words, agents are assumed to infer 'what is the current state of the world' and 'what are the best actions to pursue' based on the same generative model of the environment.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This summarizes the unified inference approach of the framework.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C49",
+    "claim": "Depending on an agent's prior uncertainty about the world, gaining information can refer to exploring hidden states underlying observations (active inference) or exploring the correct parameterisation of the agent's world model (active learning).",
+    "claim_type": "EXPLICIT",
+    "source": "Depending on an agent's prior uncertainty about the world, gaining information can refer to exploring hidden states underlying observations, that is 'active inference', or exploring the correct parameterisation of the agent's world model, that is 'active learning'.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This distinguishes the two types of information gain in the framework.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C50",
+    "claim": "Active learning and active inference can make opposing predictions about behaviour.",
+    "claim_type": "EXPLICIT",
+    "source": "Interestingly, these two tendencies can make opposing predictions about behaviour.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by the comparative simulations in Figures 10-12.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C51",
+    "claim": "Active learning allows for 'model parameter exploration' and compels agents to actively seek novel combinations of hidden states and outcomes to learn about the way in which outcomes are generated.",
+    "claim_type": "EXPLICIT",
+    "source": "Active learning allows for 'model parameter exploration' and compels agents to actively seek novel combinations of hidden states and outcomes to learn about the way in which outcomes are generated.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the mechanism and motivation for active learning.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C52",
+    "claim": "Active inference allows for 'hidden state exploration' and compels agents to actively seek known salient observations that enable them to infer the underlying hidden states unambiguously.",
+    "claim_type": "EXPLICIT",
+    "source": "Active inference allows for 'hidden state exploration' and compels agents to actively seek (known) salient observations that enable them to infer the underlying hidden states unambiguously.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the mechanism and motivation for active inference.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C53",
+    "claim": "If an agent is certain that a risky option has a 0.5 probability of being rewarded, this 'certain ambiguity' will be aversive depending on her risk preferences.",
+    "claim_type": "EXPLICIT",
+    "source": "For example, if an agent is certain that a risky option has a 0.5 probability of being rewarded, this 'certain ambiguity' will be aversive (depending on her risk preferences, see appendix I).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a prediction about behavior under certainty about ambiguity.",
+    "evidence_type": [
+      "INFERENCE",
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C54",
+    "claim": "If an agent is uncertain about a 0.5 probability, this 'uncertain ambiguity' means there is an opportunity to resolve uncertainty and motivate active learning.",
+    "claim_type": "EXPLICIT",
+    "source": "However, if she is uncertain about a 0.5 probability, however, this 'uncertain ambiguity' means there is an opportunity to resolve uncertainty and motivate active learning.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a prediction about behavior under uncertainty about ambiguity.",
+    "evidence_type": [
+      "INFERENCE",
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C57",
+    "claim": "The transitions in the model are Markovian, such that the probability of the subsequent state is fully determined by the current state and action.",
+    "claim_type": "EXPLICIT",
+    "source": "These transitions are Markovian, such that the probability of the subsequent state is fully determined by the current state and action.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a property of the state transitions in the model.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C58",
+    "claim": "The c-vector encodes prior expectations about observations and specifies an agent's preferences or utilities over outcomes, determining the 'extrinsic' reward component of a policy's value.",
+    "claim_type": "EXPLICIT",
+    "source": "The arrays c and d encode prior expectations about observations, and initial states, respectively. The former specifies an agent's preferences or utilities over outcomes and determines the 'extrinsic' reward component of a policy's value, whereas the latter specifies an agent's prior beliefs about the starting point in a task.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the role of the c-vector in the model.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C59",
+    "claim": "The d-vector specifies an agent's prior beliefs about the starting point in a task.",
+    "claim_type": "EXPLICIT",
+    "source": "The arrays c and d encode prior expectations about observations, and initial states, respectively. The former specifies an agent's preferences or utilities over outcomes and determines the 'extrinsic' reward component of a policy's value, whereas the latter specifies an agent's prior beliefs about the starting point in a task.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the role of the d-vector in the model.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C63",
+    "claim": "Dopamine plays a key role in orchestrating the cost-benefit trade-off implicated in active inference.",
+    "claim_type": "EXPLICIT",
+    "source": "Dopamine is known to play a key role in orchestrating the cost-benefit trade-off implicated in the active inference examples above (Hauser et al., 2017, see Appendix 1 for a more detailed discussion).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by citation to prior work.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C64",
+    "claim": "Dopamine neurons encode 'information prediction errors' analogously to 'reward prediction errors'.",
+    "claim_type": "EXPLICIT",
+    "source": "In addition, dopamine neurons have been shown to encode 'information prediction errors' analogously to 'reward prediction errors' (Montague et al., 1996; Schultz et al., 1997).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by citations to empirical studies.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C65",
+    "claim": "Bromberg-Martin and Hikosaka (2009) found that dopaminergic neurons signal the information content conveyed by an informative cue in a cue signalling task, just as they signal unexpected (omissions of) reward.",
+    "claim_type": "EXPLICIT",
+    "source": "Bromberg-Martin and Hikosaka (2009) found that dopaminergic neurons signal the information content conveyed by an informative cue in a cue signalling task, just as they signal unexpected (omissions of) reward.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by citation to an empirical study.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C66",
+    "claim": "Dopamine neurons did not differentiate between extrinsic reward and intrinsic information in the Bromberg-Martin and Hikosaka study.",
+    "claim_type": "EXPLICIT",
+    "source": "Importantly, this suggests that these neurons did not differentiate between (extrinsic) reward and (intrinsic) information.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an interpretation of the Bromberg-Martin and Hikosaka findings.",
+    "evidence_type": [
+      "CITATION",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C67",
+    "claim": "Takahashi et al. (2017) showed that dopamine neurons signal prediction errors in reward as well as sensory prediction errors about reward identity that are orthogonal to the reward magnitude.",
+    "claim_type": "EXPLICIT",
+    "source": "Second, a more recent study has shown that dopamine neurons signal prediction errors in reward as well as sensory prediction errors about reward identity that are orthogonal to the reward magnitude (Takahashi et al., 2017).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by citation to an empirical study.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C68",
+    "claim": "The sum firing of dopamine neurons may reflect a 'common currency' for prediction errors about task information and extrinsic reward.",
+    "claim_type": "EXPLICIT",
+    "source": "These results suggest that the sum firing of dopamine neurons may reflect a 'common currency' for prediction errors about task information and extrinsic reward.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an interpretation of the dopamine neuron findings.",
+    "evidence_type": [
+      "CITATION",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C69",
+    "claim": "Similar signals in dopamine-rich midbrain regions have been implicated in recent studies in humans.",
+    "claim_type": "EXPLICIT",
+    "source": "Similar signals in dopamine-rich midbrain regions have been implicated in recent studies in humans (Boorman et al., 2016; Iglesias et al., 2013; Nour et al., 2018; Schwartenbeck et al., 2016).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by citations to human neuroimaging studies.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C70",
+    "claim": "In the setting of active inference and learning, the function of dopamine has been linked to the role of the precision of policy selection.",
+    "claim_type": "EXPLICIT",
+    "source": "In the setting of active inference and learning, the function of dopamine has been linked to the role of the precision of policy selection (Friston et al., 2014; Friston et al., 2012).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by citations to theoretical work.",
+    "evidence_type": [
+      "CITATION",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C72",
+    "claim": "Precision is updated on a trial-by-trial basis based on variational (approximate) inference.",
+    "claim_type": "EXPLICIT",
+    "source": "Additionally, precision is updated on a trial-by-trial basis based on variational (approximate) inference (not discussed or simulated above).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes another role of precision in the model.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C73",
+    "claim": "Variational precision updates have the form of a prediction error between the prior and posterior expected free energy of policies.",
+    "claim_type": "EXPLICIT",
+    "source": "These variational precision updates have the form of a prediction error between the prior and posterior expected free energy of policies (as described in Figure 1 or Equation 7 in Materials and methods, see Friston et al. (2017a) for a detailed treatment and derivation of these variational updates).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the mathematical form of precision updates, supported by citation.",
+    "evidence_type": [
+      "CITATION",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C74",
+    "claim": "The predicted dopamine responses will reflect the difference between the expected (prior) and actual (posterior) reward, model update and knowledge about hidden states.",
+    "claim_type": "EXPLICIT",
+    "source": "In other words, the predicted dopamine responses will reflect the difference between the expected (prior) and actual (posterior) reward, model update and knowledge about hidden states (i.e. the difference between prior and posterior beliefs about the value of a policy).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a prediction about dopamine responses based on the framework.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C75",
+    "claim": "These predictions for dopaminergic signals correspond closely with empirical results reported in Bromberg-Martin and Hikosaka (2009) and Takahashi et al. (2017).",
+    "claim_type": "EXPLICIT",
+    "source": "These predictions for dopaminergic signals correspond closely with empirical results reported in (Bromberg-Martin and Hikosaka, 2009; Takahashi et al., 2017), since an 'information' or 'identity' prediction error results from the difference between prior and posterior beliefs about model parameters and hidden states.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claims alignment between theoretical predictions and empirical findings.",
+    "evidence_type": [
+      "CITATION",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C76",
+    "claim": "Dopaminergic neurons are a key target area of OFC.",
+    "claim_type": "EXPLICIT",
+    "source": "Dopaminergic neurons are a key target area of OFC, and it has been hypothesised that the prediction error signal in dopamine neurons may critically rely on OFC input (Kidd and Hayden, 2015; Takahashi et al., 2011), and that error-driven learning critically depends on the interplay between those two regions (Jones et al., 2012; Takahashi et al., 2009).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by citations to anatomical and functional studies.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C77",
+    "claim": "It has been hypothesised that the prediction error signal in dopamine neurons may critically rely on OFC input.",
+    "claim_type": "EXPLICIT",
+    "source": "Dopaminergic neurons are a key target area of OFC, and it has been hypothesised that the prediction error signal in dopamine neurons may critically rely on OFC input (Kidd and Hayden, 2015; Takahashi et al., 2011), and that error-driven learning critically depends on the interplay between those two regions (Jones et al., 2012; Takahashi et al., 2009).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by citations to prior hypotheses.",
+    "evidence_type": [
+      "CITATION",
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C78",
+    "claim": "Error-driven learning critically depends on the interplay between OFC and dopaminergic neurons.",
+    "claim_type": "EXPLICIT",
+    "source": "Dopaminergic neurons are a key target area of OFC, and it has been hypothesised that the prediction error signal in dopamine neurons may critically rely on OFC input (Kidd and Hayden, 2015; Takahashi et al., 2011), and that error-driven learning critically depends on the interplay between those two regions (Jones et al., 2012; Takahashi et al., 2009).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by citations to prior work.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C79",
+    "claim": "Active inference and active learning may critically depend on a factorised (intrinsic and extrinsic) value representation in OFC and a unified update signal in dopaminergic nuclei.",
+    "claim_type": "EXPLICIT",
+    "source": "Taken together, these simulations and empirical results suggest that active inference and active learning may critically depend on a factorised (intrinsic and extrinsic) value representation in OFC and a unified update signal in dopaminergic nuclei.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a synthesis claim based on the simulations and cited empirical results.",
+    "evidence_type": [
+      "DATA",
+      "CITATION",
+      "INFERENCE",
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C80",
+    "claim": "The OFC has been reported to encode relevant task variables (predictions) during reward-guided decision-making in an orthogonal manner, such as the expected reward and the reward probability of different options.",
+    "claim_type": "EXPLICIT",
+    "source": "The OFC has been reported to encode relevant task variables (predictions) during reward-guided decision-making in an orthogonal manner, such as the expected reward and the reward probability of different options (Padoa-Schioppa and Assad, 2006; Rudebeck et al., 2008; Rushworth et al., 2011; Stalnaker et al., 2018; Wilson et al., 2014b).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by citations to multiple empirical studies.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C81",
+    "claim": "Blanchard et al. (2015) detected different populations of neurons in OFC that encode expected reward (water) and expected information.",
+    "claim_type": "EXPLICIT",
+    "source": "Most importantly, Blanchard et al., 2015 have detected different populations of neurons in OFC that encode expected reward (water) and expected information.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by citation to an empirical study.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C82",
+    "claim": "OFC neurons signal reward and information in an independent and not integrated way.",
+    "claim_type": "EXPLICIT",
+    "source": "This implies that OFC neurons signal reward and information in an independent and not integrated way, such that \ufeffOFC may serve as a kind of workshop that represents elements of reward that can guide choice but not a single domain general value signal\" (Kidd and Hayden, 2015).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an interpretation of the Blanchard et al. findings, supported by a citation.",
+    "evidence_type": [
+      "CITATION",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C83",
+    "claim": "OFC is a key candidate for the encoding of extrinsic and intrinsic value of different options as predicted under the active inference framework.",
+    "claim_type": "EXPLICIT",
+    "source": "This is an important observation, because exactly this form of neuronal representation is predicted by the construction of an additive value signal based on active inference and learning, and thus makes OFC a key candidate for the encoding of extrinsic and intrinsic value of different options as predicted under this framework (Equation 7 in Materials and methods).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a prediction based on the alignment between the framework and empirical findings.",
+    "evidence_type": [
+      "CITATION",
+      "INFERENCE",
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C84",
+    "claim": "Pigeons appear to prefer (on average) a two pellet option over a 'safe' three pellet option, if the two pellet option includes an additional signal about the reward size during the delay period.",
+    "claim_type": "EXPLICIT",
+    "source": "Pigeons appear to prefer (on average) a two pellet option over a 'safe' three pellet option, if the two pellet option includes an additional signal about the reward size during the delay period (Zentall and Stagner, 2012; Zentall and Stagner, 2011).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by citations to empirical studies in pigeons.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C85",
+    "claim": "Starlings show a preference for an option with a lower reward probability, if there is an informative cue in the delay period.",
+    "claim_type": "EXPLICIT",
+    "source": "Analogously, starlings show a preference for an option with a lower reward probability, if there is an informative cue in the delay period (Vasconcelos et al., 2015).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by citation to an empirical study in starlings.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C86",
+    "claim": "The effect of preferring informative options is stronger if the cue is shown shortly after the animal's choice, as opposed to close to the outcome delivery.",
+    "claim_type": "EXPLICIT",
+    "source": "This effect is stronger if the cue is shown shortly after the animal's choice, as opposed to close to the outcome delivery.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a temporal property of the information preference effect.",
+    "evidence_type": [
+      "CITATION",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C87",
+    "claim": "The same 'suboptimal' or 'bounded rational' behaviour has been found in rats, monkeys, and humans.",
+    "claim_type": "EXPLICIT",
+    "source": "The same \u2013 from an economic perspective 'suboptimal' or 'bounded rational' behaviour \u2013 has been found in rats (Chow et al., 2017), monkeys (Blanchard et al., 2015; Bromberg-Martin and Hikosaka, 2009; Smith et al., 2017), and humans (Iigaya et al., 2016).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by citations to empirical studies across multiple species.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C88",
+    "claim": "Empirical results suggest that non-instrumental information provides an additional value to an option, in addition to its external reward.",
+    "claim_type": "EXPLICIT",
+    "source": "These empirical results suggest that non-instrumental information provides an additional value to an option, in addition to its external reward.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an interpretation of the cited empirical findings.",
+    "evidence_type": [
+      "CITATION",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C89",
+    "claim": "This additional informative value can render an option more valuable even though its objective (economic or extrinsic) value is lower than alternative options.",
+    "claim_type": "EXPLICIT",
+    "source": "Importantly, this additional informative value can render an option more valuable even though its objective (economic or extrinsic) value is lower than alternative options.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a consequence of the information value findings.",
+    "evidence_type": [
+      "CITATION",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C90",
+    "claim": "A central prediction from the computational framework is that information provides an additive value to an option, which is evaluated alongside its extrinsic value.",
+    "claim_type": "EXPLICIT",
+    "source": "As previously noted, one central prediction from the computational framework presented here is that information provides an additive value to an option, which is evaluated alongside its extrinsic value.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a key prediction of the framework.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C91",
+    "claim": "Blanchard et al. (2015) found that monkeys are more sensitive to information if the option has higher extrinsic value.",
+    "claim_type": "EXPLICIT",
+    "source": "However, the assumption that the value of an option reflects the linear sum of its extrinsic and intrinsic value may not always be true. Importantly, Blanchard et al., 2015 have found that monkeys are more sensitive to information if the option has higher extrinsic value (see Figure 13A).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This claim is supported by citation to an empirical study and reference to Figure 13A.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C92",
+    "claim": "Blanchard et al. reported that 'the value of information may have a multiplicative effect on the value of water amount, just as probability does in a conventional gambling task, time does in a discounting task, or effort does in an effort task'.",
+    "claim_type": "EXPLICIT",
+    "source": "Using water as reward, they report that \"the value of information may have a multiplicative effect on the value of water amount, just as probability does in a conventional gambling task, time does in a discounting task, or effort does in an effort task''.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a direct quote from the Blanchard et al. paper.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C93",
+    "claim": "The more water was at stake for a given gamble, the more monkeys preferred to choose the option that included a signal during the delay period before receiving the outcome.",
+    "claim_type": "EXPLICIT",
+    "source": "That means that the more water was at stake for a given gamble, the more monkeys preferred to choose the option that included a signal during the delay period before receiving the outcome.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the empirical finding from Blanchard et al.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C94",
+    "claim": "Figure 13 reproduces the effects reported by Blanchard et al., based on an active learning agent.",
+    "claim_type": "EXPLICIT",
+    "source": "Figure 13 reproduces the effects reported by Blanchard et al., based on an active learning agent (assuming that now there are two options with a 0.5 probability for obtaining a reward, but with an information bonus for one of the two options).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This describes the simulation shown in Figure 13.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C95",
+    "claim": "Active learning can account for an interaction between reward and information, as reported in Blanchard et al.'s empirical findings.",
+    "claim_type": "EXPLICIT",
+    "source": "Importantly, active learning and active inference can also account for an interaction between reward and information, as reported in the original results (shown in Figure 13A).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This claim is supported by the simulation shown in Figure 13C.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C96",
+    "claim": "A supra-additive effect (as seen by Blanchard et al.) is expressed when taking a dynamic nature of the precision of policy selection into account.",
+    "claim_type": "EXPLICIT",
+    "source": "A supra-additive effect (as seen by Blanchard et al.) is expressed when taking a dynamic nature of the precision of policy selection into account.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes how the framework can account for the Blanchard et al. findings.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C97",
+    "claim": "Previous studies have shown that reward or information modulate attention (by acting as a salience signal), which in active learning and active inference is reflected by a change in the level of the precision in policy selection.",
+    "claim_type": "EXPLICIT",
+    "source": "Previous studies have shown that reward or information modulate attention (by acting as a salience signal), which in active learning and active inference is reflected by a change in the level of the precision in policy selection (Friston et al., 2012; Feldman and Friston, 2010; Moran et al., 2013; Schwartenbeck et al., 2016).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by citations to prior work.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C98",
+    "claim": "Attention and salience have been identified as mechanisms that modulate curiosity in previous work on curiosity and exploration.",
+    "claim_type": "EXPLICIT",
+    "source": "This is in line with previous work on curiosity and exploration, where attention and salience have been identified as mechanisms that modulate curiosity.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This connects the framework to prior work on curiosity.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C99",
+    "claim": "Kidd et al. found that infants direct less attention towards information about overly simple or overly complex stimuli.",
+    "claim_type": "EXPLICIT",
+    "source": "For example, Kidd et al. have found that infants direct less attention towards information about overly simple or overly complex stimuli (Kidd et al., 2012; Kidd et al., 2014), suggesting that they 'implicitly decide to direct attention to maintain intermediate rates of information absorption' (Kidd and Hayden, 2015).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by citations to empirical studies.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C100",
+    "claim": "A neuronal effect for novelty critically depends on attention towards the reward-predicting feature of a stimulus.",
+    "claim_type": "EXPLICIT",
+    "source": "Further, it has been shown that a neuronal effect for novelty critically depends on attention towards the reward-predicting feature of a stimulus, as opposed to when subjects had to make reward-unrelated judgements about stimuli (Krebs et al., 2009).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by citation to an empirical study.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C101",
+    "claim": "Attention towards the rewarding properties of a stimulus modulate the effects of its informative value.",
+    "claim_type": "EXPLICIT",
+    "source": "Importantly, these results suggest that attention towards the rewarding properties of a stimulus modulate the effects of its informative value.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an interpretation of the cited empirical findings.",
+    "evidence_type": [
+      "CITATION",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C103",
+    "claim": "The empirical observation of a modulatory effect of reward on information speaks to an interplay between the value of different options from the perspective of active learning and inference.",
+    "claim_type": "EXPLICIT",
+    "source": "Thus, from the perspective of active learning (and inference), the empirical observation of a modulatory effect of reward on information speaks to an interplay between the value of different options, which provide empirically testable behavioural and neuronal predictions (see open questions below).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an interpretation of the simulation results in relation to empirical findings.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C104",
+    "claim": "Besides the encoding of information in the OFC and dopaminergic nuclei, the physiological basis of exploration and active sampling has also been associated with other neuronal mechanisms.",
+    "claim_type": "EXPLICIT",
+    "source": "It is important to note that, besides the encoding of information in the OFC and dopaminergic nuclei, the physiological basis of exploration and active sampling has also been associated with other neuronal mechanisms.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This acknowledges other neural mechanisms beyond OFC and dopamine.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C105",
+    "claim": "There has been much recent interest in the neuronal basis of active sensing in animals, such as whisking.",
+    "claim_type": "EXPLICIT",
+    "source": "There has been much recent interest in the neuronal basis of active sensing in animals, such as whisking (Bush et al., 2016; Campagner et al., 2016; Grant et al., 2009; Ranade et al., 2013; Yang et al., 2016).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by citations to studies on active sensing.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C106",
+    "claim": "In humans, exploratory choices and information gain have been correlated with activity in the insula and dorsal anterior cingulate cortex.",
+    "claim_type": "EXPLICIT",
+    "source": "Further, in humans exploratory choices and information gain have been correlated with activity in the insula and dorsal anterior cingulate cortex (Blanchard and Gershman, 2018; Kolling et al., 2012; Muller et al., 2019; van Lieshout et al., 2018) as well as the rostrolateral prefrontal cortex (Badre et al., 2012; Daw et al., 2006; Ligneul et al., 2018).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by citations to human neuroimaging studies.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C107",
+    "claim": "Learning about the structure of a task, besides maximising extrinsic reward, likely depends on a yet unknown integrated circuit of neuronal systems.",
+    "claim_type": "EXPLICIT",
+    "source": "Learning about the structure of a task, besides maximising extrinsic reward, likely depends on a yet unknown integrated circuit of neuronal systems.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about the current state of knowledge.",
+    "evidence_type": [
+      "KNOWLEDGE",
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C108",
+    "claim": "Representations of task structure in OFC critically depend on input from the ventral subiculum.",
+    "claim_type": "EXPLICIT",
+    "source": "For example, it has been shown that representations of task structure in OFC critically depend on input from the ventral subiculum (Wikenheiser et al., 2017), but the neuronal encoding that underlies structure learning in the hippocampal formation, OFC and neuromodulatory systems (and their interaction) is largely unknown.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by citation to an empirical study.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C109",
+    "claim": "The neuronal encoding that underlies structure learning in the hippocampal formation, OFC and neuromodulatory systems (and their interaction) is largely unknown.",
+    "claim_type": "EXPLICIT",
+    "source": "For example, it has been shown that representations of task structure in OFC critically depend on input from the ventral subiculum (Wikenheiser et al., 2017), but the neuronal encoding that underlies structure learning in the hippocampal formation, OFC and neuromodulatory systems (and their interaction) is largely unknown.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about gaps in current knowledge.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C110",
+    "claim": "Minimising the uncertainty over hidden states predicts that agents will seek observations from which there is a clear and precise mapping to the underlying hidden state.",
+    "claim_type": "EXPLICIT",
+    "source": "Minimising the uncertainty over hidden states predicts that agents will seek observations from which there is a clear and precise mapping to the underlying hidden state, such as moving to a vantage point to infer the location of prey or sampling a cue that allows to infer the current context.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a prediction of the active inference framework.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C111",
+    "claim": "Uncertainty reduction about hidden states depends on a particular representation of the structure of the task and a particular parameterisation of that representation.",
+    "claim_type": "EXPLICIT",
+    "source": "Importantly, this sort of uncertainty reduction depends on a particular representation of the structure of the task and a particular parameterisation of that representation, which allows an agent to assess the mapping from observations to hidden states.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a requirement for active inference.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C112",
+    "claim": "Agents are also driven by minimising the uncertainty about the parameterisation of their model itself.",
+    "claim_type": "EXPLICIT",
+    "source": "We argue that agents are also driven by minimising the uncertainty about this parameterisation itself, as illustrated in the first simulations on 'parameter exploration'.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a claim about active learning, supported by the simulations.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C113",
+    "claim": "Minimising the uncertainty over model parameters can result in behaviour that conflicts with minimising the uncertainty over hidden states in situations where agents try to sample options that are associated with high ambiguity but also with high novelty or information gain.",
+    "claim_type": "EXPLICIT",
+    "source": "Minimising the uncertainty over model parameters can even result in behaviour that conflicts with minimising the uncertainty over hidden states \u2013 in situations where agents try to sample options that are associated with high ambiguity but also with high novelty or information gain.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a potential conflict between the two types of exploration.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C114",
+    "claim": "A key prediction for behaviour is that the uncertainty about contingencies will modulate the effect of uncertainty about hidden states on behaviour.",
+    "claim_type": "EXPLICIT",
+    "source": "Consequently, a key prediction for behaviour is that the uncertainty about contingencies will modulate the effect of uncertainty about hidden states on behaviour.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a prediction about the interaction between the two types of uncertainty.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C115",
+    "claim": "An option will be very interesting (informative) if its outcomes are ambiguous due to high uncertainty about the mapping from this option to possible outcomes.",
+    "claim_type": "EXPLICIT",
+    "source": "An option will be very interesting (i.e. informative) if its outcomes are ambiguous due to high uncertainty about the mapping from this option to possible outcomes, but the same option will be highly aversive if the agent is very certain that it leads to ambiguous outcomes.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes how the two types of uncertainty interact to determine option value.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C116",
+    "claim": "It is possible to cast the 'hidden state exploration' example as an active learning problem, if we assume that the current context is stable enough to be learned over time.",
+    "claim_type": "EXPLICIT",
+    "source": "Our simulations, however, highlight an important conceptual distinction between active learning and active inference in their respective time courses. As mentioned above, it is possible to cast our 'hidden state exploration' example as an active learning problem, if we assume that the current context is stable enough to be learned over time.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a relationship between active learning and active inference.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C117",
+    "claim": "A key requirement for learning the context is that it is possible to carry information from one trial to the next.",
+    "claim_type": "EXPLICIT",
+    "source": "A key requirement for learning the context, however, is that it is possible to carry information from one trial to the next.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a requirement for active learning.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C118",
+    "claim": "If continuity is broken by changing the context randomly on every trial, the agent has to rely on active inference in order to gain information about the task.",
+    "claim_type": "EXPLICIT",
+    "source": "If this continuity is broken, for example by changing the context randomly on every trial, the agent has to rely on active inference in order to gain information about the task.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes when active inference is necessary.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C119",
+    "claim": "The framework predicts that active learning will be particularly useful if there are stable regularities or rules in the world that can be learned.",
+    "claim_type": "EXPLICIT",
+    "source": "Thus, our framework predicts that active learning will be particularly useful if there are stable regularities or rules in the world that can be learned.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a prediction about when active learning is most useful.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C120",
+    "claim": "Active inference will be useful if behaviour has to adapt to trial-by-trial changes.",
+    "claim_type": "EXPLICIT",
+    "source": "Active inference, on the other hand, will be useful if behaviour has to adapt to trial-by-trial changes.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a prediction about when active inference is most useful.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C121",
+    "claim": "In other tasks, active inference and active learning may interact, such as by learning about specific contingencies within a particular context.",
+    "claim_type": "EXPLICIT",
+    "source": "In other tasks, active inference and active learning may interact, such as by learning about specific contingencies within a particular context.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes potential interactions between the two mechanisms.",
+    "evidence_type": [
+      "INFERENCE",
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C122",
+    "claim": "The trade-off between exploitative, goal-directed exploratory, and random exploratory behavioural tendencies is governed by their relative precision.",
+    "claim_type": "EXPLICIT",
+    "source": "These considerations highlight the distinction between 'goal-directed' exploratory behaviour in the form of minimising uncertainty about hidden states or model parameters, 'random' exploratory (i.e., imprecise) behaviour and exploitative decision-making. The trade-off between these behavioural tendencies is governed by their relative precision.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes how different behavioral tendencies are balanced in the framework.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C123",
+    "claim": "If an agent strongly prefers one particular outcome over all other outcomes, she will display predominantly exploitative behaviour with the aim of attaining this outcome.",
+    "claim_type": "EXPLICIT",
+    "source": "For example, if an agent strongly prefers one particular outcome over all other outcomes, she will display predominantly exploitative behaviour with the aim of attaining this outcome.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a prediction about behavior under strong preferences.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C124",
+    "claim": "If there is one option that is associated with very high uncertainty about its mappings to outcomes, behaviour will be dominated by sampling that option until its associated uncertainty is resolved.",
+    "claim_type": "EXPLICIT",
+    "source": "In contrast, if there is one option that is associated with very high uncertainty about its mappings to outcomes, behaviour will be dominated by sampling that option until its associated uncertainty is resolved.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a prediction about behavior under high uncertainty.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C125",
+    "claim": "Random exploration becomes adaptive if active learning or active inference is broken (or impossible).",
+    "claim_type": "EXPLICIT",
+    "source": "Our simulations also illustrate that random exploration becomes adaptive if active learning or active inference is broken (or impossible).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by the simulations in Figure 5.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C126",
+    "claim": "If the uncertainty about model parameters and hidden states fails to inform behaviour, the only way to learn about the world is through a higher degree of random sampling of different options.",
+    "claim_type": "EXPLICIT",
+    "source": "If the uncertainty about model parameters and hidden states fails to inform behaviour, the only way to learn about the world is through a higher degree of random sampling of different options.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the role of random exploration when goal-directed exploration fails.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C127",
+    "claim": "Random sampling is the only way to (slowly and inefficiently) learn about the advantage of novel options in the absence of goal-directed exploratory behaviour.",
+    "claim_type": "EXPLICIT",
+    "source": "Our simulations have shown that this is the only way to (slowly and inefficiently) learn about the advantage of novel options in the absence of goal-directed exploratory behaviour.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by the simulations in Figure 5.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C128",
+    "claim": "These types of exploration themselves depend on a model of the task, such as an observation model or a model of the transitions between states.",
+    "claim_type": "EXPLICIT",
+    "source": "Further, it is important to note that these types of exploration themselves depend on a model of the task, such as an observation model or a model of the transitions between states.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a requirement for goal-directed exploration.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C129",
+    "claim": "It will be a key challenge for future work to understand how agents build and compare models in the first place, which provide the basis for inference and learning.",
+    "claim_type": "EXPLICIT",
+    "source": "It will be a key challenge for future work to understand how agents build and compare these models in the first place, which provide the basis for inference and learning.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This identifies an open question for future research.",
+    "evidence_type": [
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C130",
+    "claim": "The distinction between active learning and active inference resonates with previous accounts of minimising different types of uncertainty, for example, the difference between unexpected and expected uncertainty.",
+    "claim_type": "EXPLICIT",
+    "source": "The distinction between active learning and active inference resonates with previous accounts of minimising different types of uncertainty, for example, the difference between unexpected and expected uncertainty (Yu and Dayan, 2005).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This connects the framework to prior theoretical work.",
+    "evidence_type": [
+      "CITATION",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C131",
+    "claim": "The distinction between active learning and active inference emphasises the difference between uncertainty about model parameters and uncertainty about (hidden) states.",
+    "claim_type": "EXPLICIT",
+    "source": "However, the distinction between active learning and active inference emphasises the difference between uncertainty about model parameters and uncertainty about (hidden) states.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This clarifies the conceptual contribution of the framework.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C132",
+    "claim": "This distinction can also be thought of as different modes of addressing different types of uncertainties.",
+    "claim_type": "EXPLICIT",
+    "source": "This distinction can also be thought of as different modes of addressing different types of uncertainties.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This provides an alternative way to think about the distinction.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C133",
+    "claim": "An agent could reduce her unexpected uncertainty via actively learning the 'reward parameterisation' of an option or via actively inferring the 'reward state'.",
+    "claim_type": "EXPLICIT",
+    "source": "For example, an agent could reduce her unexpected uncertainty ('is the reward probability 50% or 99%?') via actively learning the 'reward parameterisation' of an option or via actively inferring the 'reward state'.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This illustrates how the same type of uncertainty can be addressed by different mechanisms.",
+    "evidence_type": [
+      "INFERENCE",
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C134",
+    "claim": "Active inference can often be a faster and more efficient way of reducing uncertainty, but it also requires additional (structural) knowledge about the task.",
+    "claim_type": "EXPLICIT",
+    "source": "Whilst active inference can often be a faster and more efficient way of reducing uncertainty, it also requires additional (structural) knowledge about the task, for example, that there is either a 50% or 99% 'reward probability state' but nothing in-between.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a trade-off between active inference and active learning.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C135",
+    "claim": "An agent can arrive at an accurate estimate of the expected uncertainty of an option via active learning and accumulating evidence or via active inference and forming a precise belief about the current state.",
+    "claim_type": "EXPLICIT",
+    "source": "Likewise, an agent can arrive at an accurate estimate of the expected uncertainty of an option ('there is a 50% chance that there will be a reward') via active learning and accumulating evidence that the true 'reward parameter' is 0.5, or via active inference and forming a precise belief that the current 'reward state' is 0.5.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This illustrates how both mechanisms can address expected uncertainty.",
+    "evidence_type": [
+      "INFERENCE",
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C136",
+    "claim": "This framework promises a refined understanding of goal-directed cognitive deficits within the spectrum of neuropsychiatric disorders and accompanying animal models.",
+    "claim_type": "EXPLICIT",
+    "source": "This framework also promises a refined understanding of goal-directed cognitive deficits within the spectrum of neuropsychiatric disorders and accompanying animal models.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a claim about potential applications of the framework.",
+    "evidence_type": [
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C137",
+    "claim": "Individuals diagnosed with Schizophrenia and schizoaffective disorders are reported to suffer from cognitive deficits associated with both active inference and active learning.",
+    "claim_type": "EXPLICIT",
+    "source": "For example, individuals diagnosed with Schizophrenia and schizoaffective disorders are reported to suffer from cognitive deficits associated with both active inference and active learning (Koch et al., 2010; Morris et al., 2008; Waltz et al., 2007; Weickert et al., 2009).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by citations to clinical studies.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C138",
+    "claim": "A specific characterisation of how diagnosed individuals differ in their information gain during adaptive behaviour has remained elusive.",
+    "claim_type": "EXPLICIT",
+    "source": "However, a specific characterisation of how diagnosed individuals differ in their information gain during adaptive behaviour has remained elusive.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about gaps in current clinical understanding.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C139",
+    "claim": "In a scenario where an individual suffers predominantly from working memory deficits or contextual integration failures, active inference may become impaired, resulting in reduced adaption to task contingencies.",
+    "claim_type": "EXPLICIT",
+    "source": "In a scenario where an individual suffers predominantly from working memory deficits or contextual integration failures, active inference may become impaired, resulting in reduced adaption to task contingencies.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a prediction about clinical deficits based on the framework.",
+    "evidence_type": [
+      "INFERENCE",
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C140",
+    "claim": "Reduced efficiency in trial and error learning and attentional outcome deficits may speak to impairments predominantly in active learning.",
+    "claim_type": "EXPLICIT",
+    "source": "On the other hand, reduced efficiency in trial and error learning and attentional outcome deficits may speak to impairments predominantly in active learning.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a prediction about clinical deficits based on the framework.",
+    "evidence_type": [
+      "INFERENCE",
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C141",
+    "claim": "Active inference and active learning may not always be entirely independent.",
+    "claim_type": "EXPLICIT",
+    "source": "Whilst active inference and active learning may not always be entirely independent, this framework proposes the translation of individual performance into measurable parameters that reflect these different strategies in behaviour.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This acknowledges potential interactions between the mechanisms.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C142",
+    "claim": "A successful empirical dissociation of these behavioural phenotypes promises a refined assessment of cognitive deficits due to a more accurate understanding of the underlying neuropathological mechanisms.",
+    "claim_type": "EXPLICIT",
+    "source": "A successful empirical dissociation of these behavioural phenotypes promises a refined assessment of cognitive deficits due to a more accurate understanding of the underlying neuropathological mechanisms, resulting in improved differentiability and predictability of cognitive dysfunction in individual subjects.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a claim about potential clinical applications of the framework.",
+    "evidence_type": [
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C145",
+    "claim": "In the case where free energy is minimised, the variational free energy becomes the negative log evidence for the generative model.",
+    "claim_type": "EXPLICIT",
+    "source": "In this case, the variational free energy becomes the negative log evidence for the generative model.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a mathematical property of variational inference.",
+    "evidence_type": [
+      "KNOWLEDGE",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C146",
+    "claim": "Minimising variational free energy maximises the expected likelihood of observations under the approximate posterior ('accuracy') whilst minimising the divergence between the approximate and true distribution over hidden causes ('complexity').",
+    "claim_type": "EXPLICIT",
+    "source": "This implies that minimising variational free energy maximises the expected likelihood of observations under the approximate posterior ('accuracy') whilst minimising the divergence between the approximate and true distribution over hidden causes ('complexity').",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the two components of free energy minimization.",
+    "evidence_type": [
+      "KNOWLEDGE",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C147",
+    "claim": "The log prior probability of a policy is the negative free energy expected under that policy.",
+    "claim_type": "EXPLICIT",
+    "source": "However, if we want to apply this notion to define the value of actions and policies, we need to consider potential future outcomes and states under a given policy. This can be achieved by making the log prior probability of a policy the (negative) free energy expected under that policy (Friston et al., 2017b)",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes how policies are valued in the framework, supported by citation.",
+    "evidence_type": [
+      "CITATION",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C148",
+    "claim": "The expected free energy over future states that determines the value of a policy resembles the expected value of future reward in reinforcement learning.",
+    "claim_type": "EXPLICIT",
+    "source": "Note that the expected free energy over future states that determines the value of a policy resembles the expected value of future reward in reinforcement learning (Sutton and Barto, 1998a), although there is no discount parameter over future states.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This connects the framework to reinforcement learning, with a citation.",
+    "evidence_type": [
+      "CITATION",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C149",
+    "claim": "The first term in the value of a policy reflects the mutual information between beliefs about model parameters before and after making a new observation and reflects active learning.",
+    "claim_type": "EXPLICIT",
+    "source": "The first term in the equation above reflects the mutual information between beliefs about model parameters before and after making a new observation and reflects active learning (cf., Yang et al., 2016).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the active learning component of the value function, with a citation.",
+    "evidence_type": [
+      "CITATION",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C150",
+    "claim": "The notion of finding policies that maximise mutual information is equivalent to maximising (expected) Bayesian surprise.",
+    "claim_type": "EXPLICIT",
+    "source": "The notion of finding policies that maximise mutual information is equivalent to maximising (expected) Bayesian surprise (Itti and Baldi, 2009), where Bayesian surprise is the divergence between posterior and prior beliefs about hidden causes.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This connects the framework to the concept of Bayesian surprise, with a citation.",
+    "evidence_type": [
+      "CITATION",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C151",
+    "claim": "When there is no posterior uncertainty and the agent is confident about the structure of the world, there can be no further information gain and preferences over outcomes will dominate policy selection.",
+    "claim_type": "EXPLICIT",
+    "source": "Because mutual information cannot be less than zero, it disappears when the (predictive) posterior ceases to be informed by new observations. This means that 'active learning' will search out observations that resolve uncertainty about the world (e.g. foraging to resolve uncertainty about the reward probability of a risky option). However, when there is no posterior uncertainty \u2013 and the agent is confident about the structure of the world \u2013 there can be no further information gain and preferences over outcomes (i.e. rewards or utility) will dominate policy selection.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the transition from exploration to exploitation in the framework.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C152",
+    "claim": "This resolution of uncertainty is closely related to satisfying artificial curiosity and the 'value of information'.",
+    "claim_type": "EXPLICIT",
+    "source": "This resolution of uncertainty is closely related to satisfying artificial curiosity (Schmidhuber, 1991; Still and Precup, 2012) and the 'value of information' (Howard, 1966).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This connects the framework to prior concepts in AI and decision theory, with citations.",
+    "evidence_type": [
+      "CITATION",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C153",
+    "claim": "The second term of the value of a policy reflects the mutual information of believes about states before and after making an observation and reflects active inference.",
+    "claim_type": "EXPLICIT",
+    "source": "The second term of the value of a policy, on the other hand, reflects the mutual information of believes about states before and after making an observation and reflects active inference.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the active inference component of the value function.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C154",
+    "claim": "The second term of the value function quantifies how well agents can infer the underlying cause of an observation, and motivates agents to seek observations that decrease uncertainty about the current hidden state.",
+    "claim_type": "EXPLICIT",
+    "source": "This term quantifies how well agents can infer the underlying cause of an observation, and motivates agents to seek observations that decrease uncertainty about the current hidden state with respect to this mapping.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the function of the active inference term.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C155",
+    "claim": "These two terms predict that policies will be preferred if they allow agents to optimise the parameterisation of their observation model and at the same time make observations that enable precise inference about the state of the world.",
+    "claim_type": "EXPLICIT",
+    "source": "Taken together, these two terms predict that policies will be preferred if they allow agents to optimise the parameterisation of their observation model and at the same time make observations that enable precise inference about the state of the world, given their observation model.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This summarizes the combined effect of the two information gain terms.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C156",
+    "claim": "The posterior mapping from hidden states to outcomes (A) is parameterised as Dirichlet distribution, whose sufficient statistics are concentration parameters.",
+    "claim_type": "EXPLICIT",
+    "source": "The posterior mapping from hidden states to outcomes (A) is parameterised as Dirichlet distribution, whose sufficient statistics are concentration parameters (Friston et al., 2016).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the mathematical representation of the observation model, with a citation.",
+    "evidence_type": [
+      "CITATION",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C157",
+    "claim": "Concentration parameters effectively reflect the (normalised) number of times a particular combination of states and outcomes has been encountered.",
+    "claim_type": "EXPLICIT",
+    "source": "These concentration parameters effectively reflect the (normalised) number of times a particular combination of states and outcomes has been encountered.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the interpretation of concentration parameters.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C158",
+    "claim": "Learning of the observation model takes place by counting the number of transitions from one particular hidden state to a particular outcome, modulated by an individual learning rate.",
+    "claim_type": "EXPLICIT",
+    "source": "Effectively, Equation (8) implies that learning of the observation model takes place by counting the number of transitions from one particular hidden state to a particular outcome, modulated by an individual learning rate.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the learning mechanism in the model.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  }
+]

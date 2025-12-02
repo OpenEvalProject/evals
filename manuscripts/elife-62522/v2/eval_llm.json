@@ -1,0 +1,369 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C47",
+      "C52",
+      "C55"
+    ],
+    "result": "The study generated single-nucleus ATAC-seq data from 90,980 nuclei and single-nucleus RNA-seq data from 46,500 nuclei from human lung samples across three age groups (30 weeks gestation, 3 years, and 30 years), with three donors per age group.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3, C47, C52, and C55 collectively describe the study design and sample sizes. The numbers are explicitly stated in multiple sections (abstract, introduction, results) and are supported by quality control metrics shown in supplementary figures. The donor-matched design with n=3 per age group is clearly documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C56",
+      "C57"
+    ],
+    "result": "Clustering analysis identified 19 cell type clusters from snATAC-seq data representing epithelial, mesenchymal, endothelial, and hematopoietic cell types, which were validated by cell-type-specific chromatin accessibility patterns at marker genes and overlapped with clusters identified from matched snRNA-seq data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C54 and C56-C57 describe the clustering results with specific cell type annotations. The findings are supported by UMAP visualizations (Figure 1A,C) and marker gene accessibility/expression patterns (Figure 1B,D). The overlap between modalities, including rare PNECs, provides strong validation of the clustering approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "ACE2 expression was detected in very few nuclei (80 total) in normal lungs, enriched in epithelial cells, with AT2 cells containing the highest proportion (48.8%, 39/80 ACE2+ nuclei), consistent with recent publications showing exceptionally low ACE2 expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C61 describe ACE2 expression patterns with specific quantification. The low expression is documented with exact cell counts and percentages, and consistency with multiple recent publications (C60) provides external validation. However, the very low numbers (80 total nuclei) limit statistical power for downstream analyses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "TMPRSS2 was detected in substantially more cells (6,547 nuclei) than ACE2, predominantly in epithelial cells including AT1, AT2, and airway cells, with 45.8% of AT2 cells expressing TMPRSS2, and 21 of 39 ACE2+ AT2 cells co-expressing TMPRSS2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C65 provide detailed quantification of TMPRSS2 expression with specific cell counts and percentages. The co-expression data (C65) is particularly important for understanding viral entry potential. The substantially higher detection rate compared to ACE2 provides better statistical power for regulatory analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "CTSL, BSG, and FURIN showed broader expression and chromatin accessibility patterns across multiple cell types compared to ACE2 and TMPRSS2, with ACE2 and TMPRSS2 showing cell-type-specific accessibility in epithelial cells while CTSL, BSG, and FURIN showed accessibility across epithelial, mesenchymal, endothelial, and immune cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C69 describe expression and accessibility patterns for additional viral entry genes. The findings are supported by dot plots (Figure 2A,B) and genome browser tracks. The broader patterns for CTSL, BSG, and FURIN contrast with the more restricted patterns for ACE2 and TMPRSS2, providing insight into cell-type-specific viral entry mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C71",
+      "C72",
+      "C74",
+      "C75"
+    ],
+    "result": "The study mapped 398,385 candidate cis-regulatory elements (cCREs) across all lung cell types and identified sites co-accessible with viral entry gene promoters: 15 sites for ACE2, 73 sites for TMPRSS2, 73 for CTSL, 213 for FURIN, and 64 for BSG.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C5 and C71-C72, C74-C75 describe the cCRE mapping and co-accessibility analysis. The total number of cCREs (398,385) and specific counts for each gene are explicitly stated. The co-accessibility approach using Cicero is well-established, though the modest number for ACE2 (C73) is appropriately attributed to low ACE2+ cell numbers.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "A higher fraction of AT2 cells expressing ACE2 and TMPRSS2 was observed in adult lungs compared to pediatric samples (n=3 per age group), consistent with Human Cell Atlas findings, while expression levels per nucleus remained similar across ages and no age-related trend was observed for BSG, CTSL, or FURIN.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C79 describe age-related expression patterns with appropriate statistical comparisons (Figure 3A-C). The consistency with HCA findings (C77) provides external validation. However, the modest sample size (n=3 per group) is acknowledged, and the lack of trend for other genes (C79) serves as an important negative control.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C87",
+      "C88"
+    ],
+    "result": "Genome-wide analysis identified 22,745 age-linked chromatin accessibility sites in AT2 cells (FDR<0.05), clustering into five patterns, with two clusters showing age-increasing accessibility including 19 TMPRSS2-linked cCREs (17 statistically significant), while the TMPRSS2 promoter itself showed no age-related changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C82, C87-C88 describe comprehensive differential accessibility analysis with appropriate statistical thresholds. The identification of age-increasing distal elements (C82, C87) while the promoter remains stable (C88) suggests distal regulatory control. However, the modest sample size (n=3 per group, acknowledged in C87) requires cautious interpretation of statistical significance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "Age-increasing chromatin accessibility clusters containing TMPRSS2-linked sites were enriched for immune regulatory signatures including viral infection, interferon signaling, and injury repair processes, with enrichment of transcription factor motifs for cell fate determination (FOXA, NKX, CEBP, ETS) and immune signaling (STAT, IRF, FOS/JUN).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C86 describe functional enrichment analysis of age-dependent chromatin sites. The enrichment for immune-related processes and relevant transcription factor motifs is supported by GREAT analysis (Figure 3F) and motif enrichment (Figure 3G). The biological coherence of these findings strengthens the interpretation, though experimental validation of TF binding would be needed for definitive conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "Analysis of genetic variation identified 2,270 variants in age-increasing TMPRSS2-linked cCREs, including 1,100 in predicted TF motifs and 212 with predicted effects on AT2 chromatin accessibility (deltaSVM FDR<0.1), with 10 common variants (MAF>1%) meeting both criteria, showing generally consistent frequencies across populations except for variants like rs35074065 (much lower in East Asians).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C93 describe systematic variant analysis using established computational methods (motif prediction, deltaSVM). The filtering strategy (motif disruption + predicted chromatin effects) is reasonable for prioritizing functional variants. Population frequency differences (C93) are interesting but require functional validation to determine biological significance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "Nine of ten common variants with predicted AT2 regulatory effects showed nominal associations (p<0.01) with respiratory phenotypes in UK Biobank, with rs35074065 showing highly significant eQTL effects on TMPRSS2 expression (p=3.9\u00d710\u207b\u00b9\u00b9), high fine-mapping probability (PPA=41.6%), disruption of IRF/STAT motifs, and strongest association when including AT2 or macrophage cell proportions in the eQTL model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C98 integrate multiple lines of evidence (GWAS associations, eQTL analysis, fine-mapping, motif disruption, cell-type deconvolution) to support rs35074065 as a likely causal variant. The convergence of evidence is compelling, though the nominal GWAS associations (C94) and cell-type-specific eQTL effects (C98) would benefit from replication in independent cohorts.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "Distal cCREs with age-increased activity linked to TMPRSS2 in AT2 cells had immune regulatory signatures and harbored variants associated with respiratory traits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C8 summarize key findings that are supported by the detailed analyses in C82-C86 (immune signatures) and C89-C94 (variant associations). This represents an integration of chromatin accessibility, functional enrichment, and genetic association data, though the immune regulatory signatures (C7) are inferred from motif enrichment rather than direct functional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "Fine-mapping of the 3p21.31 COVID-19 risk locus identified 22 candidate causal variants, with two overlapping lung cell-type cCREs: rs17713054 (PPA=0.04) in an AT2-enriched epithelial/mesenchymal cCRE predicted to bind CEBP motifs and overlapping ENCODE CEBPB ChIP-seq, and rs76374459 (PPA=0.02) in an erythrocyte cCRE predicted to disrupt SPI1 binding, with both showing nominal associations with respiratory phenotypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C104 describe fine-mapping and functional annotation of COVID-19 risk variants. The integration of fine-mapping probabilities, cell-type-specific accessibility, motif predictions, and ENCODE ChIP-seq data provides multiple lines of evidence. However, the modest posterior probabilities (4% and 2%) and nominal phenotype associations suggest these variants may have small effect sizes or act in combination with other variants.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "The candidate variant rs17713054 at 3p21.31 overlapped a distal cCRE co-accessible with SLC6A20 (along with LIMD1, SACM1L, CCRL2), a gene expressed predominantly in AT2 cells, with nominal eQTL association (p=8.09\u00d710\u207b\u00b3) that was strongest when including AT2 cell proportion in the model (p=4.09\u00d710\u207b\u00b3 for AT2, p=8.00\u00d710\u207b\u2074 for AT1/AT2-like).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C10 and C105-C108 link the risk variant to SLC6A20 through co-accessibility and eQTL analysis. The AT2-specific expression (C106, Figure 5D) and stronger eQTL signal with AT2 proportion (C108) support cell-type-specific regulation. However, the eQTL associations are nominal (not genome-wide significant), and the functional connection to COVID-19 risk requires experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C11",
+      "C109",
+      "C110"
+    ],
+    "result": "SLC6A20 has a known functional association with ACE2, with studies showing ACE2 promotes SLC6A20 protein levels and plasma membrane localization in Xenopus oocytes, and Ace2 mutant mice show severely disrupted proline transport presumably via SLC6A20.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11, C109-C110 cite prior literature establishing the ACE2-SLC6A20 functional relationship. The citations to specific studies (Vuille-dit-Bille et al., 2015; Singer et al., 2012) provide evidence for this connection. This prior knowledge strengthens the biological plausibility of SLC6A20 as a relevant target gene at the 3p21.31 locus, though the relevance to COVID-19 pathogenesis remains to be established.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C70"
+    ],
+    "result": "Both airway and alveolar epithelial cells express genes critical for SARS-CoV-2 entry based on gene expression and chromatin accessibility patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C70 represents a synthesis of findings from C58-C69 regarding expression and accessibility of viral entry genes. The conclusion is supported by the data showing expression of ACE2, TMPRSS2, and other entry factors in both airway (club, ciliated, basal) and alveolar (AT1, AT2) epithelial cells, though the relative importance of each cell type for viral entry would require functional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "The introduction establishes the biological context for the study, including COVID-19's impact on lungs, lung anatomy and cell types, prior single-cell transcriptomics studies, and the gap in single-cell chromatin accessibility data for lung cell types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C29 provide background knowledge and context from the introduction. These claims are appropriately cited to prior literature and establish the rationale for the study. The identification of a gap in single-cell chromatin accessibility data (C29) justifies the current work. These are primarily literature review claims rather than novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "The introduction establishes the biological importance of cis-regulatory elements (CREs) in controlling gene expression, their enrichment for disease-associated variants, and the utility of single-cell chromatin accessibility approaches for mapping cell-type-specific regulatory elements and interpreting disease variants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C38 provide methodological and conceptual background from the introduction, appropriately citing prior literature. These claims establish the rationale for using single-cell ATAC-seq to map regulatory elements and interpret genetic variation. These are primarily literature review claims that justify the study approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "The introduction establishes prior knowledge about age-related differences in COVID-19 outcomes, SARS-CoV-2 host entry mechanisms (ACE2 receptor, TMPRSS2/CTSL proteases, BSG receptor, FURIN protease), and the essential role of TMPRSS2 versus dispensable role of CTSL in coronavirus entry.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C46 provide background on COVID-19 epidemiology and viral entry mechanisms, appropriately citing prior literature including CDC reports and mechanistic studies. This background establishes the biological rationale for focusing on these specific genes. The distinction between essential (TMPRSS2) and dispensable (CTSL) factors (C44) is particularly important for interpreting the findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "The study profiled gene expression dynamics of SARS-CoV-2 host entry genes at cell-type resolution, revealed cCREs underlying changes in ACE2 and TMPRSS2, profiled non-coding variation in TMPRSS2-associated cCREs, and annotated the 3p21.31 COVID-19 risk locus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C51 summarize the study objectives and main findings as stated in the introduction. These claims are supported by the detailed results presented in subsequent sections (C58-C108). The integration of expression profiling, regulatory element mapping, variant analysis, and risk locus annotation represents a comprehensive approach to understanding COVID-19-relevant gene regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C73"
+    ],
+    "result": "The modest number of co-accessible sites at ACE2 is likely due to the small percentage of ACE2+ nuclei.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C73 represents speculation about the reason for finding only 15 ACE2 co-accessible sites. While the low number of ACE2+ cells (80 total, C58) provides a plausible explanation for reduced statistical power to detect co-accessibility, this remains an inference rather than a demonstrated fact. Alternative explanations (e.g., ACE2 regulation primarily through promoter rather than distal elements) are not excluded.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "The discussion cites prior literature showing ACE2 protects lungs from injury-induced ARDS, Tmprss2 mutant mice are more resistant to SARS-CoV infection with no baseline defects, and TMPRSS2 is involved in entry of other respiratory viruses like influenza.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111-C113 cite prior literature to provide context for interpreting the findings. These appropriately referenced claims support the discussion's argument that TMPRSS2 may be a safer therapeutic target than ACE2. However, these are citations of prior work rather than novel findings from the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C114"
+    ],
+    "result": "A web portal was established to disseminate the datasets at https://www.lungepigenome.org/.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C114 states the availability of a data portal. This represents an important resource for the community but is a data sharing statement rather than a scientific finding. The accessibility of the data enhances reproducibility and enables future studies.",
+    "result_type": "MINOR"
+  }
+]

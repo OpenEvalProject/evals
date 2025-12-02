@@ -1,0 +1,873 @@
+{
+  "submission": {
+    "id": "b82a6b3c-d69d-49df-9618-5f5fa11b5ce4",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T13:12:22.041889Z",
+    "updated_at": "2025-12-02T13:12:22.041889Z"
+  },
+  "content": [
+    {
+      "id": "28cedb10-5627-4dc8-813a-546ab797f179",
+      "submission_id": "b82a6b3c-d69d-49df-9618-5f5fa11b5ce4",
+      "content_type": "manuscript",
+      "content_text": "# Selection on mutators is not frequency-dependent\n\n## Authors\n\n- Yevgeniy Raynes<sup>1</sup> ([ORCID: 0000-0003-1608-9479](https://orcid.org/0000-0003-1608-9479)) \u2020\n- Daniel Weinreich<sup>1</sup> ([ORCID: 0000-0003-1424-7541](https://orcid.org/0000-0003-1424-7541))\n\n### Affiliations\n\n1. Department of Ecology and Evolutionary Biology, Center for Computational Molecular Biology Brown University Providence United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe evolutionary fate of mutator mutations \u2013 genetic variants that raise the genome-wide mutation rate \u2013 in asexual populations is often described as being frequency (or number) dependent. Mutators can invade a population by hitchhiking with a sweeping beneficial mutation, but motivated by earlier experiments results, it has been repeatedly suggested that mutators must be sufficiently frequent to produce such a driver mutation before non-mutators do. Here, we use stochastic, agent-based simulations to show that neither the strength nor the sign of selection on mutators depend on their initial frequency, and while the overall probability of hitchhiking increases predictably with frequency, the per-capita probability of fixation remains unchanged.\n\n## Introduction\n\nMutator alleles have been found at considerable frequencies in populations of infectious and commensal bacteria (Matic et al., 1997; LeClerc et al., 1996; Oliver et al., 2000), viruses (Su\u00e1rez et al., 1992), and pathogenic fungi (Healey et al., 2016; Billmyre et al., 2017; Boyce et al., 2017). Mutators are also believed to be widespread in many cancers (Loeb, 2011; Lengauer et al., 1997), and have been repeatedly observed to overtake microbial populations during laboratory evolution experiments (Sniegowski et al., 1997; Shaver et al., 2002; Barrick et al., 2009; Notley-McRobb et al., 2002; Pal et al., 2007; Mao et al., 1997; Raynes and Sniegowski, 2014; Voordeckers et al., 2015). Yet, unlike directly beneficial mutations that are favored by natural selection because they increase an organism\u2019s reproductive success (i.e., its fitness), mutator mutations generally do not appear to be inherently advantageous (Raynes and Sniegowski, 2014), except potentially in some viruses (Furi\u00f3 et al., 2005; Furi\u00f3 et al., 2007). Instead, mutators experience indirect selection, mediated by persistent statistical associations with fitness-affecting mutations elsewhere in the genome. As a result, mutators may invade an adapting population by hitchhiking (Smith and Haigh, 1974) with linked beneficial mutations even when they have no effect on fitness of their own (Sniegowski et al., 2000).\n\nWhether or not mutators can successfully hitchhike to fixation has often been described as depending on the initial prevalence of mutator alleles in a population - most commonly referred to as frequency or number dependence (Raynes and Sniegowski, 2014; Sniegowski et al., 2000). This view holds that to replace the resident non-mutators, mutators must generate a beneficial mutation that escapes genetic drift and sweeps to fixation before their non-mutator competitors do. Accordingly, it has been proposed that mutators may be expected to invade (i.e., are favored by selection) only when already present in sufficient numbers to produce the successful beneficial mutation first, and lose their advantage (i.e., are disfavored by selection) when too rare to do so (reviewed in Raynes and Sniegowski, 2014; Sniegowski et al., 2000).\n\nThis frequency-dependent interpretation of mutator success has been primarily motivated by mutator dynamics observed in experimental studies of laboratory microbial populations. Most famously, in a series of pioneering experiments, Lin Chao and colleagues showed that mutator strains of the bacterium E. coli could supplant otherwise isogenic non-mutator strains by hitchhiking with beneficial mutations when initialized above a critical threshold frequency but would decline when initialized below it (Chao and Cox, 1983:\u00a0reproduced in Figure 1A;\u00a0Chao et al., 1983). Since then, a similar pattern has been recapitulated in several other studies in E. coli and S. cerevisiae (Thompson et al., 2006; Gentile et al., 2011; de Visser and Rozen, 2006; Le Chat et al., 2006). Critically, a frequency-dependent framing of indirect selection on mutators implies a change in the sign or the strength of indirect selection with frequency. Here, we use stochastic, agent-based computer simulations to demonstrate that on the contrary, indirect selection on mutators is independent of frequency.\n\n## Results and discussion\n\nOur computer simulations (Raynes, 2019) model asexual populations that mimic microbial evolution experiments under generally-accepted parameter values (Raynes et al., 2018). Figure 1B shows mutator frequency dynamics in randomly chosen simulations initialized across four log-orders of starting frequency, $x_{0}$, which recapitulate experimental observations of the critical frequency threshold for hitchhiking reproduced in Figure 1A. As in Figure 1A, single, randomly-chosen realizations (i.e., simulation replicates) started below a threshold frequency end in mutator loss, while randomly-chosen realizations started above end in fixation (Figure 1B).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/51177/elife-51177-fig1-v3.jpg)\n\n**Figure 1.:** (A) Changes in the ratio of the mutator and the wild-type alleles of the E. coli mutT locus over time in continuous chemostat cultures. (Figure\u00a01 from Chao and Cox, 1983). (B) In simulations, mutator trajectories in individual realizations initiated at different starting frequencies recapitulate the experimental observation of the frequency-threshold for mutator hitchhiking. Parameter values used are typical of microbial experimental populations\u00a0(Raynes et al., 2018): N = 107, Udel = 10\u22124, Uben = 10\u22126, constant sben = 0.1, constant sdel = -0.1. Mutators mutate 100\u00d7 faster than non-mutators. (C) Average mutator trajectories across realizations do not show evidence of the frequency-threshold. On average, mutators increase in frequency at all $x_{0}$, showing that selection favors mutators independent of frequency. Average mutator frequency always eventually reaches the expected $P_{fix}x_{0}$ (dashed horizontal lines) calculated in Figure 2. Mutator frequencies averaged across 106 simulation runs at $x_{0}$= 10\u22127 and $x_{0}$= 3\u00d710\u22127, and across 105 simulation runs for all other starting frequencies. For simulations with exponentially distributed selection coefficients see Figure 1\u2014figure supplement 1.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/51177/elife-51177-fig1-figsupp1-v3.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Mutator trajectories in individual realizations. (B) Average mutator trajectories across realizations. Mutator frequencies averaged across 105 simulation runs. Parameter values as in Figure 1 except N\u00a0=\u00a0106, and beneficial and deleterious mutations are now\u00a0randomly drawn from an exponential distribution with the mean sben\u00a0=\u00a00.1 and sdel\u00a0=\u00a0\u22120.1 respectively.\n\nCritically, fixation of an allele in a finite population is a probabilistic process influenced both by selection and random genetic drift, and even beneficial mutations will frequently be lost by chance alone. As such, whether an allele is truly favored or disfavored by selection can only be ascertained by evaluating its expected behavior averaged across many replicate, independent realizations. Indeed, if we consider the expected mutator frequency averaged across many replicate simulations, the threshold-frequency effect disappears (Figure 1C). Instead, the average mutator frequency ultimately rises above the starting frequency at all $x_{0}$, suggesting that mutators are, in fact, favored by selection in these populations regardless of starting frequency. (For more on why mutators are favored in large populations such as these see Raynes et al., 2018). The transient decline in average frequency seen in Figure 1C reflects selection against the deleterious load inherent to mutators (Kimura, 1967), and will be explored in a forthcoming publication].\n\nTo confirm that selection on mutators is independent of starting frequency, we measured the fixation probability of a mutator allele, $P_{fix}(x_{0})$, at each initial frequency, $x_{0}$ simulated in Figure 1. Given the stochasticity of the fixation process (and following Good and Desai, 2016; Raynes et al., 2018; Wylie et al., 2009), we compare $P_{fix}(x_{0})$ to the probability of fixation of a neutral allele, given simply by $x_{0}$. If a mutator is favored, we expect it to fare better than neutral (i.e., $P_{fix}(x_{0})>x_{0}$), and worse than neutral (i.e., $P_{fix}(x_{0})<x_{0}$) if disfavored. As Figure 2 shows, $P_{fix}(x_{0})$ exceeds the fixation probability of a neutral allele for all $x_{0}$, as anticipated in Figure 1C and confirming that the sign of selection on mutators does not depend on starting frequency.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/51177/elife-51177-fig2-v3.jpg)\n\n**Figure 2.:** Fixation probability,\u00a0$P_{fix}x_{0},$ of a mutator initiated at frequency $x_{0}$ (circles: orange for $x_{0}=1/N,$ purple for $x_{0}>1/N$). Data from simulations in Figure 1. $P_{fix}x_{0}$ scales with but never crosses the fixation probability of a neutral mutation ($x_{0}$; black dashed line). Thus, mutators are favored at all starting frequencies. The expected fixation probability $P_{fix}x_{0}$\u00a0(solid orange line), calculated from the fixation probability of a single mutator, $P_{fix}x_{0}=1/N$ = 5.6\u00d710\u22124 (orange point) using Equation 1 is indistinguishable from the $P_{fix}x_{0}$ observed in simulations, demonstrating that the per-capita fixation probability at every frequency is independent of $x_{0}$ and equal to $P_{fix}x_{0}=1/N$.\n\nFurthermore, while $P_{fix}x_{0}$ of a mutator increases with $x_{0}$, it does so exactly as expected for a frequency-independent mutation. Under frequency-independent selection $P_{fix}x_{0}$\u00a0is simply the probability that at least one of the $x_{0}N$ alleles reaches fixation (where N is the population size). By definition of frequency-independent selection, the per-capita fixation probability is a constant, written, $P_{fix}x_{0}=1/N$. Correspondingly, $P_{fix}x_{0}$\u00a0for any $x_{0}$\u00a0can be calculated as\n\n$$\nP_{fix}x_{0}=1-(1-P_{fix}x_{0}=1/N)^{x_{0}N}\n$$\n\nAs the orange line in Figure 2 shows, $P_{fix}x_{0}$ calculated with Equation 1\u00a0is indistinguishable from $P_{fix}x_{0}$\u00a0observed in simulations, confirming that the per-capita fixation probability is independent of $x_{0}$ and equal to $P_{fix}x_{0}=1/N$\u00a0at any $x_{0}$. Thus, while the expected fixation probability of a mutator increases with $x_{0}$, the per-capita fixation probability remains unchanged, confirming that individual mutators do not become more likely to hitchhike to fixation when present at higher frequencies in a population.\n\nWhy then do mutators in experimental populations appear destined to go extinct when initially rare (e.g. Chao and Cox, 1983)? Given that this behavior has been documented across different systems and selective environments (as well as in our stochastic simulations in Figure 1B), it seems unlikely to depend on any shared biological property of the experimental systems. Consider, however, that the per-capita fixation probability of a mutator is relatively low \u2013 in our simulations, operating under realistic parameter values, $P_{fix}x_{0}=1/N$ = 5.6\u00d710\u22124. Thus even when mutators are favored, most experimental replicates with rare mutators are expected to end in mutator extinction, and only those started at frequencies higher than roughly $1/[NP_{fix}x_{0}=1/N]$ are expected to end mostly with mutator fixation. Considering only a single or even a few realizations at each starting frequency (as in Figure 1A or B) would, most likely, result in observing only the most expected outcome for each $x_{0}$. Indeed, all experimental studies that have documented the frequency-based transition included only a few populations at each starting frequency. Such limited sampling across a broad range of starting frequencies in these experiments would explain the sharp transition between fixation at high frequencies and loss at lower ones even when selection is frequency-independent (see also Tanaka et al., 2003). We expect that observing the dynamics in Figure 1C would be possible with more experimental replication, which, however, may not always be experimentally feasible.\n\nIn fact, the critical frequency-dependent transition observed in Figure 1A and 1B is not unique to mutators. Recall that $P_{fix}x_{0}$ of any mutation not under frequency-dependent selection, nevertheless, increases with starting frequency, $x_{0}$ (Equation 1). For example, even for a directly beneficial mutation, the probability of fixation from low frequencies is relatively low (Figure 3A Inset), Accordingly,\u00a0as Figure 3A\u00a0illustrates, single realizations of the dynamics of a directly beneficial mutation also\u00a0exhibit a threshold-like switch from fixation to loss. In contrast, expected frequency dynamics averaged across many independent\u00a0realizations confirm that beneficial mutations are favored by selection independent of starting frequency (Figure 3B). Indeed, only for mutations under truly frequency-dependent selection do both the individual realizations (Figure 3C) and the expected dynamics averaged across many realizations (Figure 3D) exhibit an actual frequency-dependent transition.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/51177/elife-51177-fig3-v3.jpg)\n\n**Figure 3.:** (A) Individual realizations of a simulation initiated with a directly beneficial mutation of size $s_{ben}$ = 0.01 at a starting frequency $x_{0}$. Population size, N = 107. Inset: Fixation probability of a beneficial mutation of size $s_{ben}$ =0.01 at N = 107. Dashed line is given by $P_{fix}^{ben}x_{0}=\\frac{1-e^{-2s_{ben}Nx_{0}}}{1-e^{-2s_{ben}N}}$\u00a0(Kimura, 1962), while circles are values of $P_{fix}^{ben}x_{0}$ measured in simulations (averaged across 105 runs). (B) Average frequency trajectories of a beneficial mutation of size $s_{ben}$ = 0.01 in (A) averaged across all 105 runs of simulation. (C) Individual realizations of a simulation initiated with a mutation under frequency dependent selection, with the selection coefficient s(x) = b + mx, where x is the frequency, b = -0.02, and\u00a0m = 0.1, at N = 107. (D) Average frequency trajectories of the frequency-dependent mutation in (C) averaged across all 105 runs of simulation. All panels are on a log-log scale for clarity.\n\nIn summary, our results demonstrate that neither the strength nor the sign of selection on mutators depend on initial frequency or number. Instead, we show that in populations favoring higher mutation rates, mutators consistently fare better than the neutral expectation (Figure 1 and Figure 2) regardless of starting frequency. Most importantly, the per-capita probability of fixation remains unchanged with frequency. We conclude that the frequency threshold observed in earlier experiments is, therefore, an artifact of limited experimental sampling rather than a frequency-dependent change in selective effect.\n\n## Materials and methods\n\nIndividual-based, stochastic simulations employed here have been previously described (Raynes et al., 2018). In brief, we consider haploid asexual populations of constant size, N, evolving in discrete, non-overlapping generations according to the Wright-Fisher model (Ewens, 2004). Populations are composed of genetic lineages - subpopulations of individuals with the same genotype. A genotype is modeled as an array of 99 fitness-affecting loci and 1 mutation rate modifier locus, which in a mutator state raises the genomic mutation rate m-fold. For computational efficiency, simulations in Figure 1 assume constant fitness effects: beneficial mutations at the fitness loci increase fitness by a constant effect sben, while deleterious mutations decrease fitness by a constant effect sdel. We assume additive fitness effects and so calculate fitness of a lineage with x beneficial and y deleterious mutations as $w_{xy}=1+xs_{ben}-ys_{del}$. In simulations in Figure 1\u2014figure supplement 1, beneficial and deleterious fitness effects are randomly drawn from an exponential distribution with the mean sben = 0.1 and sdel = -0.1 respectively. Simulations start with the mutator allele at a frequency of $x_{0}$ and continue until it either fixes or is lost from a population.\n\nEvery generation the size of each lineage i is randomly sampled from a multinomial distribution with expectation $N\u00b7f_{i}\u00b7(w_{i}/w-)$, where $f_{i}$ is the frequency of the lineage in the previous generation, wi is the lineage\u2019s fitness, and $w-$ is the average fitness of the population ($w-=\\sumf_{i}\u2219w_{i}$). Upon reproduction, each lineage acquires a random number of fitness-affecting mutations M, drawn from a Poisson distribution with mean equal to the product of its size and its total per-individual mutation rate, $U_{ben}+U_{del}$, where Uben and Udel are the deleterious and beneficial mutation rates respectively. The number of beneficial and deleterious mutations is then drawn from a binomial distribution with n=M and P = $U_{ben}/U_{ben}+U_{del}$ and new mutations are assigned to randomly chosen non-mutated fitness loci.\n\n### Data availability\n\nAll simulated data were generated in Julia 1.0. Simulation code is available under an open source MIT license at\u00a0https://github.com/yraynes/Mutator-Frequency\u00a0(Raynes, 2019;\u00a0https://github.com/elifesciences-publications/Mutator-Frequency).\n",
+      "created_at": "2025-12-02T13:12:22.041889Z"
+    },
+    {
+      "id": "fc35e2c0-05e0-47a5-9118-d47f6ba09deb",
+      "submission_id": "b82a6b3c-d69d-49df-9618-5f5fa11b5ce4",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Patricia J Wittkopp, University of Michigan United States\n\nReviewers:\n- Timothy Cooper\n\n## Review text\n\nDOI: [10.7554/eLife.51177.sa1](https://doi.org/10.7554/eLife.51177.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nMutator genotypes have elevated mutation rates, introducing more deleterious, neutral, and beneficial mutations into a population each generation than (\"wild-type\") non-mutator genotypes. Prior work has shown that such mutator genotypes are unlikely to become fixed within a population when they exist at low frequencies. This study challenges that view and advances our understanding of evolutionary processes by showing that the probability of mutator genotypes fixing within a population are not dependent upon their starting frequency in the population. The authors argue and then show via many simulations that the probability of fixation does not change with starting frequency under the parameter space of a typical experimental evolution study.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Selection on mutators is not frequency-dependent\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by Patricia Wittkopp as the Senior and Reviewing Editor. The following individual involved in review of your submission has agreed to reveal their identity: Timothy Cooper (Reviewer #3).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThis study shows that the per-capita probability of fixation of mutator genotypes, including the beneficial, neutral or deleterious mutations they produce, are not dependent on starting frequency. This goes against conventional wisdom because experiments with mutator genotypes of microbes have indicated that mutators fail to invade from low starting frequencies, i.e., below the level of their relative increases in beneficial mutation supply rate. The authors argue and then show via many simulations that the probability of fixation does not change with starting frequency under the parameter space of a typical experimental evolution study. This is a notable finding.\n\nEssential revisions:\n\n1) The primary concern raised (and supported by all three reviewers) is that the paper presents a straw man argument. As the authors note numerous times in the manuscript, the argument that selection for mutators is dependent on frequency is \"common intuition\". But the reviewers were not convinced that this intuition is widespread. They thought most people would agree that the probability of fixation is related to mutator frequency, but not that the selective coefficient/advantage for a given mutator changes with frequency in a population.\n\nBasic evolutionary theory would suggest that if the selective advantage of a mutator is due to its linkage with a beneficial mutation, then this selective advantage will be related to the probability of causing a beneficial mutation (i.e., the ratio of beneficial and deleterious mutation rates). This should be independent of how many mutators there are in a population. Of course the probability that a mutator genotype will fix increases with the frequency of mutators. This is simply true for neutral and beneficial mutations in finite populations. In the case of a mutator genotype, it is also true because there is an increase of sampling of mutations and the probability that one of the mutators in the population hits on a beneficial mutation to hitchhike with. But the selective advantage of any individual mutator should not change. I guess what I am saying is that results of the paper seem to demonstrate what a careful consideration of mutators would suggest and that this research is not debunking some wide-held view. That being said, it is a clear and thoughtful demonstration of the phenomenon, which apparently has not been published before, and may contribute to the interpretation of experimental results.\n\n2) A similar straw-man-like concern: Regarding relevance \u2013 the argument that the authors who have found evidence of frequency-dependence (Chao and Cox, 1983, Thompson et al., 2006, Gentile et al., 2011, de Visser and Rozen, 2006, Le Chat et al., 2006) simply did not sample enough to find evidence of frequency-independence is not satisfying because the pattern has replicated across systems and laboratories. This suggests there's more to the biological story here that your simulations fail to capture. What might this be? Please add a paragraph proposing reasons for this disconnect. For instance, could this be a property of the DFE, where one particular type of highly beneficial mutation trumps all, and the lucky genotype that acquires this mutation becomes destined to fix? Could this be a property of the degree of clonal interference or the effective population size, both of which alter drift?\n\n3) About the methods: It seems as though the way the simulations are set up, all deleterious and all beneficial mutations have the same fitness cost/benefit. Is there a reason why the authors didn't draw from a distribution of fitness effects? I am not sure how much changing this would influence the results, but it does seem more biologically realistic. Perhaps commenting on this approach of simulations and parameters would be helpful.\n",
+      "created_at": "2025-12-02T13:12:22.041889Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T13:12:22.041889Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T13:12:22.041889Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "3198785b-2f00-4e46-acda-b6cfe001d20d",
+      "content_id": "28cedb10-5627-4dc8-813a-546ab797f179",
+      "claim_id": "C1",
+      "claim": "Mutator alleles have been found at considerable frequencies in populations of infectious and commensal bacteria.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutator alleles have been found at considerable frequencies in populations of infectious and commensal bacteria (Matic et al., 1997; LeClerc et al., 1996; Oliver et al., 2000)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations to published research on bacterial populations",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:12:22.041889Z"
+    },
+    {
+      "id": "cc2b5e25-9cc8-47f6-9b14-19a5609bd953",
+      "content_id": "28cedb10-5627-4dc8-813a-546ab797f179",
+      "claim_id": "C2",
+      "claim": "Mutator alleles have been found at considerable frequencies in populations of viruses.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutator alleles have been found at considerable frequencies in populations of infectious and commensal bacteria (Matic et al., 1997; LeClerc et al., 1996; Oliver et al., 2000), viruses (Su\u00e1rez et al., 1992)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to published research on viral populations",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:12:22.041889Z"
+    },
+    {
+      "id": "3723ab0f-c283-4c13-aee9-de48123f72d1",
+      "content_id": "28cedb10-5627-4dc8-813a-546ab797f179",
+      "claim_id": "C3",
+      "claim": "Mutator alleles have been found at considerable frequencies in populations of pathogenic fungi.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutator alleles have been found at considerable frequencies in populations of infectious and commensal bacteria (Matic et al., 1997; LeClerc et al., 1996; Oliver et al., 2000), viruses (Su\u00e1rez et al., 1992), and pathogenic fungi (Healey et al., 2016; Billmyre et al., 2017; Boyce et al., 2017)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations to published research on fungal populations",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:12:22.041889Z"
+    },
+    {
+      "id": "f4b5978c-bb41-44d6-a59c-e06e1f9738a9",
+      "content_id": "28cedb10-5627-4dc8-813a-546ab797f179",
+      "claim_id": "C4",
+      "claim": "Mutators are believed to be widespread in many cancers.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutators are also believed to be widespread in many cancers (Loeb, 2011; Lengauer et al., 1997)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to published research on cancer",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:12:22.041889Z"
+    },
+    {
+      "id": "38c4dd41-1fe9-419a-acfd-73e93295e10a",
+      "content_id": "28cedb10-5627-4dc8-813a-546ab797f179",
+      "claim_id": "C5",
+      "claim": "Mutators have been repeatedly observed to overtake microbial populations during laboratory evolution experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "have been repeatedly observed to overtake microbial populations during laboratory evolution experiments (Sniegowski et al., 1997; Shaver et al., 2002; Barrick et al., 2009; Notley-McRobb et al., 2002; Pal et al., 2007; Mao et al., 1997; Raynes and Sniegowski, 2014; Voordeckers et al., 2015)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations to laboratory evolution studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:12:22.041889Z"
+    },
+    {
+      "id": "5bc8b70f-9dd5-40ce-a570-a97cf7da5f2d",
+      "content_id": "28cedb10-5627-4dc8-813a-546ab797f179",
+      "claim_id": "C6",
+      "claim": "Mutator mutations generally do not appear to be inherently advantageous, except potentially in some viruses.",
+      "claim_type": "EXPLICIT",
+      "source": "mutator mutations generally do not appear to be inherently advantageous (Raynes and Sniegowski, 2014), except potentially in some viruses (Furi\u00f3 et al., 2005; Furi\u00f3 et al., 2007)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to published research on mutator fitness effects",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:12:22.041889Z"
+    },
+    {
+      "id": "f6fc76d8-ec52-47c1-9f65-0a4cd76143a2",
+      "content_id": "28cedb10-5627-4dc8-813a-546ab797f179",
+      "claim_id": "C7",
+      "claim": "Mutators experience indirect selection mediated by persistent statistical associations with fitness-affecting mutations elsewhere in the genome.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, mutators experience indirect selection, mediated by persistent statistical associations with fitness-affecting mutations elsewhere in the genome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mechanistic explanation based on established population genetics principles",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:12:22.041889Z"
+    },
+    {
+      "id": "39e98536-6019-404f-8b31-511dc704642c",
+      "content_id": "28cedb10-5627-4dc8-813a-546ab797f179",
+      "claim_id": "C8",
+      "claim": "Mutators may invade an adapting population by hitchhiking with linked beneficial mutations even when they have no effect on fitness of their own.",
+      "claim_type": "EXPLICIT",
+      "source": "As a result, mutators may invade an adapting population by hitchhiking (Smith and Haigh, 1974) with linked beneficial mutations even when they have no effect on fitness of their own (Sniegowski et al., 2000)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to theoretical work on hitchhiking and mutator evolution",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:12:22.041889Z"
+    },
+    {
+      "id": "88617c67-99c6-4ff2-89a2-60997cc5767e",
+      "content_id": "28cedb10-5627-4dc8-813a-546ab797f179",
+      "claim_id": "C9",
+      "claim": "Whether or not mutators can successfully hitchhike to fixation has often been described as depending on the initial prevalence of mutator alleles in a population.",
+      "claim_type": "EXPLICIT",
+      "source": "Whether or not mutators can successfully hitchhike to fixation has often been described as depending on the initial prevalence of mutator alleles in a population - most commonly referred to as frequency or number dependence (Raynes and Sniegowski, 2014; Sniegowski et al., 2000)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to review literature describing this interpretation",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:12:22.041889Z"
+    },
+    {
+      "id": "50db46c1-0e5b-4799-9e88-ae4b5f9705e8",
+      "content_id": "28cedb10-5627-4dc8-813a-546ab797f179",
+      "claim_id": "C10",
+      "claim": "It has been proposed that mutators may be expected to invade only when already present in sufficient numbers to produce the successful beneficial mutation first.",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, it has been proposed that mutators may be expected to invade (i.e., are favored by selection) only when already present in sufficient numbers to produce the successful beneficial mutation first, and lose their advantage (i.e., are disfavored by selection) when too rare to do so (reviewed in Raynes and Sniegowski, 2014; Sniegowski et al., 2000)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to review literature describing this hypothesis",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:12:22.041889Z"
+    },
+    {
+      "id": "acc62aa9-6930-48aa-94f2-268755d9b4b2",
+      "content_id": "28cedb10-5627-4dc8-813a-546ab797f179",
+      "claim_id": "C11",
+      "claim": "Mutator strains of E. coli could supplant otherwise isogenic non-mutator strains by hitchhiking with beneficial mutations when initialized above a critical threshold frequency but would decline when initialized below it.",
+      "claim_type": "EXPLICIT",
+      "source": "Most famously, in a series of pioneering experiments, Lin Chao and colleagues showed that mutator strains of the bacterium E. coli could supplant otherwise isogenic non-mutator strains by hitchhiking with beneficial mutations when initialized above a critical threshold frequency but would decline when initialized below it (Chao and Cox, 1983: reproduced in Figure 1A; Chao et al., 1983)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by citations to experimental studies and reference to Figure 1A showing the data",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:12:22.041889Z"
+    },
+    {
+      "id": "477e1a2c-5f48-4d3c-9e2b-0e47293fb85a",
+      "content_id": "28cedb10-5627-4dc8-813a-546ab797f179",
+      "claim_id": "C12",
+      "claim": "A similar pattern of frequency-dependent mutator dynamics has been recapitulated in several other studies in E. coli and S. cerevisiae.",
+      "claim_type": "EXPLICIT",
+      "source": "Since then, a similar pattern has been recapitulated in several other studies in E. coli and S. cerevisiae (Thompson et al., 2006; Gentile et al., 2011; de Visser and Rozen, 2006; Le Chat et al., 2006)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations to experimental studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:12:22.041889Z"
+    },
+    {
+      "id": "c310e217-9632-4f83-a0fc-e4317fa511d3",
+      "content_id": "28cedb10-5627-4dc8-813a-546ab797f179",
+      "claim_id": "C13",
+      "claim": "A frequency-dependent framing of indirect selection on mutators implies a change in the sign or the strength of indirect selection with frequency.",
+      "claim_type": "EXPLICIT",
+      "source": "Critically, a frequency-dependent framing of indirect selection on mutators implies a change in the sign or the strength of indirect selection with frequency.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference about what frequency-dependence means",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:12:22.041889Z"
+    },
+    {
+      "id": "e01ac064-50f7-48f0-b2cb-523195011a11",
+      "content_id": "28cedb10-5627-4dc8-813a-546ab797f179",
+      "claim_id": "C14",
+      "claim": "Indirect selection on mutators is independent of frequency.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we use stochastic, agent-based computer simulations to demonstrate that on the contrary, indirect selection on mutators is independent of frequency.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main claim of the paper, supported by simulation data presented throughout",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:12:22.041889Z"
+    },
+    {
+      "id": "68e51020-3c3a-4621-95c5-497ace5e9a50",
+      "content_id": "28cedb10-5627-4dc8-813a-546ab797f179",
+      "claim_id": "C16",
+      "claim": "Single, randomly-chosen simulation realizations started below a threshold frequency end in mutator loss, while those started above end in fixation.",
+      "claim_type": "EXPLICIT",
+      "source": "As in Figure 1A, single, randomly-chosen realizations (i.e., simulation replicates) started below a threshold frequency end in mutator loss, while randomly-chosen realizations started above end in fixation (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by simulation data shown in Figure 1B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:12:22.041889Z"
+    },
+    {
+      "id": "d47a67a9-3785-4deb-b5bd-21209b999895",
+      "content_id": "28cedb10-5627-4dc8-813a-546ab797f179",
+      "claim_id": "C17",
+      "claim": "Fixation of an allele in a finite population is a probabilistic process influenced both by selection and random genetic drift.",
+      "claim_type": "EXPLICIT",
+      "source": "Critically, fixation of an allele in a finite population is a probabilistic process influenced both by selection and random genetic drift",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge in population genetics",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:12:22.041889Z"
+    },
+    {
+      "id": "538921af-a3d6-49ee-b6dc-adaf80140901",
+      "content_id": "28cedb10-5627-4dc8-813a-546ab797f179",
+      "claim_id": "C18",
+      "claim": "Even beneficial mutations will frequently be lost by chance alone.",
+      "claim_type": "EXPLICIT",
+      "source": "and even beneficial mutations will frequently be lost by chance alone",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge in population genetics about stochastic loss",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:12:22.041889Z"
+    },
+    {
+      "id": "d36e9d06-b711-40bc-a365-29dba516b850",
+      "content_id": "28cedb10-5627-4dc8-813a-546ab797f179",
+      "claim_id": "C19",
+      "claim": "Whether an allele is truly favored or disfavored by selection can only be ascertained by evaluating its expected behavior averaged across many replicate, independent realizations.",
+      "claim_type": "EXPLICIT",
+      "source": "As such, whether an allele is truly favored or disfavored by selection can only be ascertained by evaluating its expected behavior averaged across many replicate, independent realizations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological principle based on statistical reasoning about stochastic processes",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:12:22.041889Z"
+    },
+    {
+      "id": "4149449e-eb46-4cb4-a777-3b3e835c19bf",
+      "content_id": "28cedb10-5627-4dc8-813a-546ab797f179",
+      "claim_id": "C20",
+      "claim": "When considering the expected mutator frequency averaged across many replicate simulations, the threshold-frequency effect disappears.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, if we consider the expected mutator frequency averaged across many replicate simulations, the threshold-frequency effect disappears (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by simulation data shown in Figure 1C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:12:22.041889Z"
+    },
+    {
+      "id": "66551b6d-d0b5-4820-8c7a-42077f112147",
+      "content_id": "28cedb10-5627-4dc8-813a-546ab797f179",
+      "claim_id": "C23",
+      "claim": "The transient decline in average mutator frequency reflects selection against the deleterious load inherent to mutators.",
+      "claim_type": "EXPLICIT",
+      "source": "The transient decline in average frequency seen in Figure 1C reflects selection against the deleterious load inherent to mutators (Kimura, 1967)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by citation to theoretical work and reference to data in Figure 1C",
+      "evidence_type": "[\"CITATION\", \"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:12:22.041889Z"
+    },
+    {
+      "id": "709d322c-1874-4b34-a1d9-7f62cd595a1b",
+      "content_id": "28cedb10-5627-4dc8-813a-546ab797f179",
+      "claim_id": "C33",
+      "claim": "Even when mutators are favored, most experimental replicates with rare mutators are expected to end in mutator extinction.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus even when mutators are favored, most experimental replicates with rare mutators are expected to end in mutator extinction",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the low per-capita fixation probability",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:12:22.041889Z"
+    },
+    {
+      "id": "6d5dac3a-1ff3-465f-b90d-0030cb705d03",
+      "content_id": "28cedb10-5627-4dc8-813a-546ab797f179",
+      "claim_id": "C36",
+      "claim": "All experimental studies that have documented the frequency-based transition included only a few populations at each starting frequency.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, all experimental studies that have documented the frequency-based transition included only a few populations at each starting frequency.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation about the design of previous experimental studies",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:12:22.041889Z"
+    },
+    {
+      "id": "87f8bb5d-d718-45cc-a619-68d83dff3fea",
+      "content_id": "28cedb10-5627-4dc8-813a-546ab797f179",
+      "claim_id": "C37",
+      "claim": "Limited sampling across a broad range of starting frequencies in experiments would explain the sharp transition between fixation at high frequencies and loss at lower ones even when selection is frequency-independent.",
+      "claim_type": "EXPLICIT",
+      "source": "Such limited sampling across a broad range of starting frequencies in these experiments would explain the sharp transition between fixation at high frequencies and loss at lower ones even when selection is frequency-independent (see also Tanaka et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about how sampling affects observed patterns, supported by citation",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:12:22.041889Z"
+    },
+    {
+      "id": "79ec07da-0dad-48e4-9429-42abfadfb52d",
+      "content_id": "28cedb10-5627-4dc8-813a-546ab797f179",
+      "claim_id": "C38",
+      "claim": "The critical frequency-dependent transition observed in experiments is not unique to mutators.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, the critical frequency-dependent transition observed in Figure 1A and 1B is not unique to mutators.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by showing similar patterns for beneficial mutations in Figure 3",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:12:22.041889Z"
+    },
+    {
+      "id": "de3ef07d-b2bd-4ac2-9546-baf313945a3f",
+      "content_id": "28cedb10-5627-4dc8-813a-546ab797f179",
+      "claim_id": "C40",
+      "claim": "For a directly beneficial mutation, the probability of fixation from low frequencies is relatively low.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, even for a directly beneficial mutation, the probability of fixation from low frequencies is relatively low (Figure 3A Inset)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by simulation data shown in Figure 3A Inset",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:12:22.041889Z"
+    },
+    {
+      "id": "e9aa7664-53c6-4473-aeb7-5c7f4696d20b",
+      "content_id": "28cedb10-5627-4dc8-813a-546ab797f179",
+      "claim_id": "C41",
+      "claim": "Single realizations of the dynamics of a directly beneficial mutation exhibit a threshold-like switch from fixation to loss.",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, as Figure 3A illustrates, single realizations of the dynamics of a directly beneficial mutation also exhibit a threshold-like switch from fixation to loss.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by simulation data shown in Figure 3A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:12:22.041889Z"
+    },
+    {
+      "id": "04a012a6-7493-49d7-9960-c24e8b59d2de",
+      "content_id": "28cedb10-5627-4dc8-813a-546ab797f179",
+      "claim_id": "C42",
+      "claim": "Expected frequency dynamics of beneficial mutations averaged across many independent realizations confirm that beneficial mutations are favored by selection independent of starting frequency.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, expected frequency dynamics averaged across many independent realizations confirm that beneficial mutations are favored by selection independent of starting frequency (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by simulation data shown in Figure 3B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:12:22.041889Z"
+    },
+    {
+      "id": "86686d73-792d-47c8-9533-a2ddf07a312c",
+      "content_id": "28cedb10-5627-4dc8-813a-546ab797f179",
+      "claim_id": "C43",
+      "claim": "For mutations under truly frequency-dependent selection, both individual realizations and expected dynamics averaged across many realizations exhibit an actual frequency-dependent transition.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, only for mutations under truly frequency-dependent selection do both the individual realizations (Figure 3C) and the expected dynamics averaged across many realizations (Figure 3D) exhibit an actual frequency-dependent transition.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by simulation data shown in Figures 3C and 3D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:12:22.041889Z"
+    },
+    {
+      "id": "5b8da722-43d4-43f1-bbba-eac77282125a",
+      "content_id": "28cedb10-5627-4dc8-813a-546ab797f179",
+      "claim_id": "C44",
+      "claim": "Neither the strength nor the sign of selection on mutators depend on initial frequency or number.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, our results demonstrate that neither the strength nor the sign of selection on mutators depend on initial frequency or number.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion summarizing the simulation results",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:12:22.041889Z"
+    },
+    {
+      "id": "c0c38d13-9cca-4ff1-8f10-7ab0ddb033f2",
+      "content_id": "28cedb10-5627-4dc8-813a-546ab797f179",
+      "claim_id": "C45",
+      "claim": "In populations favoring higher mutation rates, mutators consistently fare better than the neutral expectation regardless of starting frequency.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, we show that in populations favoring higher mutation rates, mutators consistently fare better than the neutral expectation (Figure 1 and Figure 2) regardless of starting frequency.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by simulation data shown in Figures 1 and 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:12:22.041889Z"
+    },
+    {
+      "id": "dd42b02b-a8c9-40d0-8b9b-02763e436b2d",
+      "content_id": "28cedb10-5627-4dc8-813a-546ab797f179",
+      "claim_id": "C46",
+      "claim": "The per-capita probability of mutator fixation remains unchanged with frequency.",
+      "claim_type": "EXPLICIT",
+      "source": "Most importantly, the per-capita probability of fixation remains unchanged with frequency.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is concluded from the simulation data and theoretical analysis",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:12:22.041889Z"
+    },
+    {
+      "id": "44e2d94d-2d9d-4633-a9f8-df7f249f8832",
+      "content_id": "28cedb10-5627-4dc8-813a-546ab797f179",
+      "claim_id": "C47",
+      "claim": "The frequency threshold observed in earlier experiments is an artifact of limited experimental sampling rather than a frequency-dependent change in selective effect.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that the frequency threshold observed in earlier experiments is, therefore, an artifact of limited experimental sampling rather than a frequency-dependent change in selective effect.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion of the paper, inferred from the simulation results and analysis of experimental design",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:12:22.041889Z"
+    },
+    {
+      "id": "dd29aabd-4815-4f9d-a476-5a7054ede860",
+      "content_id": "28cedb10-5627-4dc8-813a-546ab797f179",
+      "claim_id": "C48",
+      "claim": "The simulations model asexual populations that mimic microbial evolution experiments under generally-accepted parameter values.",
+      "claim_type": "EXPLICIT",
+      "source": "Our computer simulations (Raynes, 2019) model asexual populations that mimic microbial evolution experiments under generally-accepted parameter values (Raynes et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to the simulation code and parameter justification",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:12:22.041889Z"
+    },
+    {
+      "id": "619b3191-340c-4928-b793-fdf5e60300d9",
+      "content_id": "28cedb10-5627-4dc8-813a-546ab797f179",
+      "claim_id": "C49",
+      "claim": "The simulations consider haploid asexual populations of constant size evolving in discrete, non-overlapping generations according to the Wright-Fisher model.",
+      "claim_type": "EXPLICIT",
+      "source": "In brief, we consider haploid asexual populations of constant size, N, evolving in discrete, non-overlapping generations according to the Wright-Fisher model (Ewens, 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the simulation model, with citation to the Wright-Fisher model",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:12:22.041889Z"
+    },
+    {
+      "id": "223b4838-b391-45b3-a44b-3c880e5f9ded",
+      "content_id": "28cedb10-5627-4dc8-813a-546ab797f179",
+      "claim_id": "C50",
+      "claim": "Populations in the simulations are composed of genetic lineages - subpopulations of individuals with the same genotype.",
+      "claim_type": "EXPLICIT",
+      "source": "Populations are composed of genetic lineages - subpopulations of individuals with the same genotype.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the structure of the simulation model",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:12:22.041889Z"
+    },
+    {
+      "id": "ab731ecf-f98b-4965-adab-3ef637bd4fbe",
+      "content_id": "28cedb10-5627-4dc8-813a-546ab797f179",
+      "claim_id": "C51",
+      "claim": "A genotype in the simulations is modeled as an array of 99 fitness-affecting loci and 1 mutation rate modifier locus.",
+      "claim_type": "EXPLICIT",
+      "source": "A genotype is modeled as an array of 99 fitness-affecting loci and 1 mutation rate modifier locus, which in a mutator state raises the genomic mutation rate m-fold.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the genetic architecture in the simulation model",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:12:22.041889Z"
+    },
+    {
+      "id": "61a170ae-7c3a-476e-8d2f-8c02df3f898f",
+      "content_id": "28cedb10-5627-4dc8-813a-546ab797f179",
+      "claim_id": "C52",
+      "claim": "The mutation rate modifier locus in a mutator state raises the genomic mutation rate m-fold.",
+      "claim_type": "EXPLICIT",
+      "source": "A genotype is modeled as an array of 99 fitness-affecting loci and 1 mutation rate modifier locus, which in a mutator state raises the genomic mutation rate m-fold.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes how the mutator allele functions in the simulation",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:12:22.041889Z"
+    },
+    {
+      "id": "644af17f-9b2a-4888-87a6-a1a9fe8b2bac",
+      "content_id": "28cedb10-5627-4dc8-813a-546ab797f179",
+      "claim_id": "C53",
+      "claim": "In the simulations shown in Figure 1, beneficial mutations at fitness loci increase fitness by a constant effect s_ben, while deleterious mutations decrease fitness by a constant effect s_del.",
+      "claim_type": "EXPLICIT",
+      "source": "For computational efficiency, simulations in Figure 1 assume constant fitness effects: beneficial mutations at the fitness loci increase fitness by a constant effect sben, while deleterious mutations decrease fitness by a constant effect sdel.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the fitness model used in specific simulations",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:12:22.041889Z"
+    },
+    {
+      "id": "05a69a02-d222-442c-8aea-95a0ea2dda8f",
+      "content_id": "28cedb10-5627-4dc8-813a-546ab797f179",
+      "claim_id": "C55",
+      "claim": "In simulations shown in Figure 1\u2014figure supplement 1, beneficial and deleterious fitness effects are randomly drawn from an exponential distribution with mean s_ben = 0.1 and s_del = -0.1 respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "In simulations in Figure 1\u2014figure supplement 1, beneficial and deleterious fitness effects are randomly drawn from an exponential distribution with the mean sben = 0.1 and sdel = -0.1 respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the fitness model used in alternative simulations",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:12:22.041889Z"
+    },
+    {
+      "id": "981afc07-1fc4-47f2-928e-8761196ea58d",
+      "content_id": "28cedb10-5627-4dc8-813a-546ab797f179",
+      "claim_id": "C60",
+      "claim": "Neither the strength nor the sign of selection on mutators depend on their initial frequency.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we use stochastic, agent-based simulations to show that neither the strength nor the sign of selection on mutators depend on their initial frequency",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as the main finding",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:12:22.041889Z"
+    },
+    {
+      "id": "8d0de6fb-19cd-4a58-82b9-f0d24596c93b",
+      "content_id": "28cedb10-5627-4dc8-813a-546ab797f179",
+      "claim_id": "C61",
+      "claim": "While the overall probability of mutator hitchhiking increases predictably with frequency, the per-capita probability of fixation remains unchanged.",
+      "claim_type": "EXPLICIT",
+      "source": "and while the overall probability of hitchhiking increases predictably with frequency, the per-capita probability of fixation remains unchanged.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as the main finding",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:12:22.041889Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "3f74af67-92d9-44b7-a2b5-2c8b32f89344",
+      "content_id": "28cedb10-5627-4dc8-813a-546ab797f179",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Mutator alleles are prevalent across diverse biological systems including bacteria, viruses, fungi, cancers, and laboratory microbial populations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C5 collectively establish the widespread occurrence of mutators through multiple independent citations to published empirical studies across different organisms and experimental systems. These are well-documented observations from prior work that provide context for the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:12:22.041889Z"
+    },
+    {
+      "id": "1d310f9f-5f01-429f-b01c-7daaf1534b15",
+      "content_id": "28cedb10-5627-4dc8-813a-546ab797f179",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Mutators are not directly advantageous but can invade populations through indirect selection via hitchhiking with linked beneficial mutations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6-C8 describe the established theoretical framework for mutator evolution, supported by appropriate citations to prior theoretical and empirical work. This provides the conceptual foundation for understanding mutator dynamics and motivates the current investigation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:12:22.041889Z"
+    },
+    {
+      "id": "5d4ff9fb-4483-46bc-8e3e-026b2106b780",
+      "content_id": "28cedb10-5627-4dc8-813a-546ab797f179",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Previous work has interpreted mutator success as frequency-dependent, with mutators proposed to invade only when sufficiently common to produce beneficial mutations first, based on experimental observations of threshold frequencies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9-C13 accurately characterize the prevailing interpretation in the literature, supported by appropriate citations including the classic Chao and Cox experiments and subsequent replications. This establishes the hypothesis that the current work challenges.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:12:22.041889Z"
+    },
+    {
+      "id": "4ebe51f1-c236-458c-bb92-368fec7deaf8",
+      "content_id": "28cedb10-5627-4dc8-813a-546ab797f179",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Indirect selection on mutators is frequency-independent: while overall fixation probability increases with frequency, the per-capita fixation probability remains constant, and mutators consistently outperform neutral expectations at all starting frequencies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C14-C61 present the central finding supported by simulation data in Figures 1B-C and Figure 2. The averaged trajectories (Figure 1C) show mutators increase from all starting frequencies, and Figure 2 demonstrates that per-capita fixation probability equals P_fix(x_0=1/N) at all frequencies, confirming frequency-independence. The simulation approach with 10^5-10^6 replicates provides sufficient statistical power.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:12:22.041889Z"
+    },
+    {
+      "id": "653e96e2-2ede-4b7c-952b-077ef6ce1b7f",
+      "content_id": "28cedb10-5627-4dc8-813a-546ab797f179",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Fixation in finite populations is stochastic, requiring evaluation across many replicate realizations to distinguish selection from drift.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C17-C19 state fundamental principles of population genetics that are well-established knowledge. These principles provide the theoretical justification for the methodological approach of averaging across many simulation replicates.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:12:22.041889Z"
+    },
+    {
+      "id": "7493dac2-7598-498a-844e-25b2554888f2",
+      "content_id": "28cedb10-5627-4dc8-813a-546ab797f179",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The transient decline in average mutator frequency reflects selection against deleterious mutation load.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C23 provides a mechanistic interpretation of the dynamics in Figure 1C, supported by citation to Kimura's theoretical work on mutation load. The interpretation is consistent with established theory, though the authors note this will be explored further in future work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:12:22.041889Z"
+    },
+    {
+      "id": "9ad376ad-2db8-4a92-9c26-4f8eada4f375",
+      "content_id": "28cedb10-5627-4dc8-813a-546ab797f179",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The apparent frequency threshold in experiments is an artifact of limited sampling: rare mutators have low per-capita fixation probability, so few replicates at each frequency produce a sharp observed transition even under frequency-independent selection.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-C47 provide a statistical explanation reconciling prior experimental observations with frequency-independent selection. The low P_fix(x_0=1/N) = 5.6\u00d710^-4 means most replicates with rare mutators fail, creating an apparent threshold with limited sampling. This is a logical inference well-supported by the simulation results and is consistent with the citation to Tanaka et al. 2003.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:12:22.041889Z"
+    },
+    {
+      "id": "b2e2af0c-5902-45cc-a868-74c4f6e47afd",
+      "content_id": "28cedb10-5627-4dc8-813a-546ab797f179",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The threshold-like transition in individual realizations is not unique to mutators but occurs for any allele not under true frequency-dependent selection, including directly beneficial mutations, while only truly frequency-dependent mutations show thresholds in averaged dynamics.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38-C43 are supported by simulation data in Figure 3, which demonstrates that beneficial mutations (panels A-B) show threshold-like behavior in single realizations but not in averages, while truly frequency-dependent mutations (panels C-D) show thresholds in both. This effectively distinguishes stochastic sampling effects from genuine frequency-dependence and strengthens the main conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:12:22.041889Z"
+    },
+    {
+      "id": "fb5563cf-2ba6-4ea7-a18a-5eaf2dab6de2",
+      "content_id": "28cedb10-5627-4dc8-813a-546ab797f179",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The simulations employ a Wright-Fisher model of asexual haploid populations with 99 fitness loci and 1 mutator locus, using parameter values typical of microbial experiments, with both constant and exponentially-distributed fitness effects tested.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48-C55 describe the simulation methodology with appropriate citations. The Wright-Fisher model is standard, parameter values are justified by citation to prior work (Raynes et al. 2018), and code availability is documented. Testing both constant and exponential fitness distributions (Figure 1 vs Figure 1\u2014supplement 1) demonstrates robustness. However, some details are missing: random seed specification, exact number of replicates for some conditions, and validation against analytical predictions beyond Equation 1.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:12:22.041889Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "3198785b-2f00-4e46-acda-b6cfe001d20d",
+      "result_id": "3f74af67-92d9-44b7-a2b5-2c8b32f89344"
+    },
+    {
+      "claim_id": "cc2b5e25-9cc8-47f6-9b14-19a5609bd953",
+      "result_id": "3f74af67-92d9-44b7-a2b5-2c8b32f89344"
+    },
+    {
+      "claim_id": "3723ab0f-c283-4c13-aee9-de48123f72d1",
+      "result_id": "3f74af67-92d9-44b7-a2b5-2c8b32f89344"
+    },
+    {
+      "claim_id": "f4b5978c-bb41-44d6-a59c-e06e1f9738a9",
+      "result_id": "3f74af67-92d9-44b7-a2b5-2c8b32f89344"
+    },
+    {
+      "claim_id": "38c4dd41-1fe9-419a-acfd-73e93295e10a",
+      "result_id": "3f74af67-92d9-44b7-a2b5-2c8b32f89344"
+    },
+    {
+      "claim_id": "5bc8b70f-9dd5-40ce-a570-a97cf7da5f2d",
+      "result_id": "1d310f9f-5f01-429f-b01c-7daaf1534b15"
+    },
+    {
+      "claim_id": "f6fc76d8-ec52-47c1-9f65-0a4cd76143a2",
+      "result_id": "1d310f9f-5f01-429f-b01c-7daaf1534b15"
+    },
+    {
+      "claim_id": "39e98536-6019-404f-8b31-511dc704642c",
+      "result_id": "1d310f9f-5f01-429f-b01c-7daaf1534b15"
+    },
+    {
+      "claim_id": "88617c67-99c6-4ff2-89a2-60997cc5767e",
+      "result_id": "5d4ff9fb-4483-46bc-8e3e-026b2106b780"
+    },
+    {
+      "claim_id": "50db46c1-0e5b-4799-9e88-ae4b5f9705e8",
+      "result_id": "5d4ff9fb-4483-46bc-8e3e-026b2106b780"
+    },
+    {
+      "claim_id": "acc62aa9-6930-48aa-94f2-268755d9b4b2",
+      "result_id": "5d4ff9fb-4483-46bc-8e3e-026b2106b780"
+    },
+    {
+      "claim_id": "477e1a2c-5f48-4d3c-9e2b-0e47293fb85a",
+      "result_id": "5d4ff9fb-4483-46bc-8e3e-026b2106b780"
+    },
+    {
+      "claim_id": "c310e217-9632-4f83-a0fc-e4317fa511d3",
+      "result_id": "5d4ff9fb-4483-46bc-8e3e-026b2106b780"
+    },
+    {
+      "claim_id": "e01ac064-50f7-48f0-b2cb-523195011a11",
+      "result_id": "4ebe51f1-c236-458c-bb92-368fec7deaf8"
+    },
+    {
+      "claim_id": "68e51020-3c3a-4621-95c5-497ace5e9a50",
+      "result_id": "4ebe51f1-c236-458c-bb92-368fec7deaf8"
+    },
+    {
+      "claim_id": "4149449e-eb46-4cb4-a777-3b3e835c19bf",
+      "result_id": "4ebe51f1-c236-458c-bb92-368fec7deaf8"
+    },
+    {
+      "claim_id": "5b8da722-43d4-43f1-bbba-eac77282125a",
+      "result_id": "4ebe51f1-c236-458c-bb92-368fec7deaf8"
+    },
+    {
+      "claim_id": "c0c38d13-9cca-4ff1-8f10-7ab0ddb033f2",
+      "result_id": "4ebe51f1-c236-458c-bb92-368fec7deaf8"
+    },
+    {
+      "claim_id": "dd42b02b-a8c9-40d0-8b9b-02763e436b2d",
+      "result_id": "4ebe51f1-c236-458c-bb92-368fec7deaf8"
+    },
+    {
+      "claim_id": "981afc07-1fc4-47f2-928e-8761196ea58d",
+      "result_id": "4ebe51f1-c236-458c-bb92-368fec7deaf8"
+    },
+    {
+      "claim_id": "8d0de6fb-19cd-4a58-82b9-f0d24596c93b",
+      "result_id": "4ebe51f1-c236-458c-bb92-368fec7deaf8"
+    },
+    {
+      "claim_id": "d47a67a9-3785-4deb-b5bd-21209b999895",
+      "result_id": "653e96e2-2ede-4b7c-952b-077ef6ce1b7f"
+    },
+    {
+      "claim_id": "538921af-a3d6-49ee-b6dc-adaf80140901",
+      "result_id": "653e96e2-2ede-4b7c-952b-077ef6ce1b7f"
+    },
+    {
+      "claim_id": "d36e9d06-b711-40bc-a365-29dba516b850",
+      "result_id": "653e96e2-2ede-4b7c-952b-077ef6ce1b7f"
+    },
+    {
+      "claim_id": "66551b6d-d0b5-4820-8c7a-42077f112147",
+      "result_id": "7493dac2-7598-498a-844e-25b2554888f2"
+    },
+    {
+      "claim_id": "709d322c-1874-4b34-a1d9-7f62cd595a1b",
+      "result_id": "9ad376ad-2db8-4a92-9c26-4f8eada4f375"
+    },
+    {
+      "claim_id": "6d5dac3a-1ff3-465f-b90d-0030cb705d03",
+      "result_id": "9ad376ad-2db8-4a92-9c26-4f8eada4f375"
+    },
+    {
+      "claim_id": "87f8bb5d-d718-45cc-a619-68d83dff3fea",
+      "result_id": "9ad376ad-2db8-4a92-9c26-4f8eada4f375"
+    },
+    {
+      "claim_id": "44e2d94d-2d9d-4633-a9f8-df7f249f8832",
+      "result_id": "9ad376ad-2db8-4a92-9c26-4f8eada4f375"
+    },
+    {
+      "claim_id": "79ec07da-0dad-48e4-9429-42abfadfb52d",
+      "result_id": "b2e2af0c-5902-45cc-a868-74c4f6e47afd"
+    },
+    {
+      "claim_id": "de3ef07d-b2bd-4ac2-9546-baf313945a3f",
+      "result_id": "b2e2af0c-5902-45cc-a868-74c4f6e47afd"
+    },
+    {
+      "claim_id": "e9aa7664-53c6-4473-aeb7-5c7f4696d20b",
+      "result_id": "b2e2af0c-5902-45cc-a868-74c4f6e47afd"
+    },
+    {
+      "claim_id": "04a012a6-7493-49d7-9960-c24e8b59d2de",
+      "result_id": "b2e2af0c-5902-45cc-a868-74c4f6e47afd"
+    },
+    {
+      "claim_id": "86686d73-792d-47c8-9533-a2ddf07a312c",
+      "result_id": "b2e2af0c-5902-45cc-a868-74c4f6e47afd"
+    },
+    {
+      "claim_id": "dd29aabd-4815-4f9d-a476-5a7054ede860",
+      "result_id": "fb5563cf-2ba6-4ea7-a18a-5eaf2dab6de2"
+    },
+    {
+      "claim_id": "619b3191-340c-4928-b793-fdf5e60300d9",
+      "result_id": "fb5563cf-2ba6-4ea7-a18a-5eaf2dab6de2"
+    },
+    {
+      "claim_id": "223b4838-b391-45b3-a44b-3c880e5f9ded",
+      "result_id": "fb5563cf-2ba6-4ea7-a18a-5eaf2dab6de2"
+    },
+    {
+      "claim_id": "ab731ecf-f98b-4965-adab-3ef637bd4fbe",
+      "result_id": "fb5563cf-2ba6-4ea7-a18a-5eaf2dab6de2"
+    },
+    {
+      "claim_id": "61a170ae-7c3a-476e-8d2f-8c02df3f898f",
+      "result_id": "fb5563cf-2ba6-4ea7-a18a-5eaf2dab6de2"
+    },
+    {
+      "claim_id": "644af17f-9b2a-4888-87a6-a1a9fe8b2bac",
+      "result_id": "fb5563cf-2ba6-4ea7-a18a-5eaf2dab6de2"
+    },
+    {
+      "claim_id": "05a69a02-d222-442c-8aea-95a0ea2dda8f",
+      "result_id": "fb5563cf-2ba6-4ea7-a18a-5eaf2dab6de2"
+    }
+  ],
+  "comparisons": []
+}

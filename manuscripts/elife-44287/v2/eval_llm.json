@@ -1,0 +1,162 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "The manuscript establishes the biological and methodological context for studying cross-frequency coupling (CFC). CFC is described as a fundamental feature of brain activity associated with various brain functions and dysfunctions, with different types (PAC, AAC, PPC) observed across brain regions. Existing methods have limitations, including sensitivity to confounding variables like low-frequency power changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C27 provide well-supported background from the literature (multiple citations) and establish the motivation for the study. The claims about CFC's importance, its various types, and methodological limitations are appropriately cited and represent established knowledge in the field. The logical inference about confounding effects (C3, C27) follows reasonably from cited prior work (C25, C26).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C32"
+    ],
+    "result": "The authors propose a GLM-based framework to assess CFC that simultaneously accounts for low-frequency phase and amplitude effects on high-frequency amplitude. The framework builds on previous work and uses a gamma distribution that provides acceptable fit to example human data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C29 describe the proposed method with appropriate citations to prior work. C32 is supported by Figure 1 showing gamma distribution fits to human data. The methodological framework is clearly described and appropriately situated within existing literature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C30",
+      "C87"
+    ],
+    "result": "The proposed GLM method successfully detects CFC in simulations and outperforms the modulation index in biologically-motivated examples, particularly for weak PAC coupled to low-frequency amplitude fluctuations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C5, C30, and C87 are supported by extensive simulation results presented throughout the manuscript (Figures 5-9). The simulations systematically demonstrate detection of PAC and AAC under various conditions, with quantitative comparisons to the modulation index showing superior performance in specific scenarios.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C40"
+    ],
+    "result": "Two deviance-based model comparison procedures (chi-squared test and AIC) are less robust measures of significant PAC and AAC compared to the proposed R_PAC and R_AAC statistics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C40 is supported by simulation data showing that chi-squared tests detected false positives in 59.7% and 41.5% of no-CFC simulations, while AIC detected false positives in 98.6% and 87.2% of simulations. In contrast, R_PAC and R_AAC showed <0.6% and <0.2% false positive rates, respectively. The comparative evidence is clear and quantitative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C78",
+      "C80",
+      "C82",
+      "C86"
+    ],
+    "result": "In rodent data, the proposed method reveals that increases in modulation index post-stimulation may result from changes in low-frequency amplitude and AAC rather than PAC. The method effectively determines whether stimulation condition significantly changes PAC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78, C80, C82, and C86 are supported by analysis of in vivo rodent data and corresponding simulations. The observation that low-frequency amplitude increases post-stimulation (C78) combined with simulation results showing MI sensitivity to amplitude changes provides evidence for the interpretation in C80. Statistical analysis (C82) and simulation validation (C86) support the method's ability to detect stimulus effects on PAC.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C88",
+      "C92"
+    ],
+    "result": "The simultaneous occurrence of PAC and AAC is less well studied than PAC alone, and the function of concurrent PAC and AAC is not well understood.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88 and C92 accurately characterize the current state of knowledge in the field with appropriate citations (Osipova et al., 2008). These are factual statements about gaps in the literature that motivate the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C89",
+      "C93",
+      "C94"
+    ],
+    "result": "High-frequency rhythms serve as surrogate measures of neuronal spiking, while PAC and AAC have proposed functions including multi-item encoding, long-distance communication, and encoding the amount of information.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89, C93, and C94 are well-supported by multiple citations to prior work. These represent established interpretations in the field and provide functional context for understanding CFC.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C95",
+      "C96"
+    ],
+    "result": "Pathological increases in AAC may overload communication with irrelevant noise, and the attention-based function of PAC may be lost if high-frequency amplitude increases across wide phase intervals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C95 and C96 are explicitly speculative statements about potential pathological mechanisms. While they represent reasonable hypotheses based on the data and proposed functions of CFC, they lack direct experimental validation. The manuscript appropriately presents these as speculative interpretations rather than established findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "The proposed method has limitations including sensitivity to frequency band selection, assumptions about sinusoidal signals, and potential confounds from non-sinusoidal signals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C102 represent appropriate acknowledgment of methodological limitations. C100 and C101 are logical inferences about the method's assumptions, while C102 is supported by citations to prior work documenting confounds from non-sinusoidal signals. These limitations are clearly stated and appropriately contextualized.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "The proposed GLM framework is flexible and can be extended by including additional predictors. The code is modular, facilitates modifications, and is freely available.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C109 are supported by the demonstration of adding a stimulus condition covariate (Figure 13) and the provision of code at the specified GitHub repository. The flexibility is demonstrated through practical application, and code availability is verifiable.",
+    "result_type": "MINOR"
+  }
+]

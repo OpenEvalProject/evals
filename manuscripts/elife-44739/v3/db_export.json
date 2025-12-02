@@ -1,0 +1,2011 @@
+{
+  "submission": {
+    "id": "57ee7154-c13a-48d5-9622-ea9c611038ec",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T12:42:22.581593Z",
+    "updated_at": "2025-12-02T12:42:22.581593Z"
+  },
+  "content": [
+    {
+      "id": "2840dc82-6646-4707-b1c8-9dc1ffbe7e60",
+      "submission_id": "57ee7154-c13a-48d5-9622-ea9c611038ec",
+      "content_type": "manuscript",
+      "content_text": "# Brain-specific Drp1 regulates postsynaptic endocytosis and dendrite formation independently of mitochondrial division\n\n## Authors\n\n- Kie Itoh<sup>1</sup> ([ORCID: 0000-0003-4379-400X](https://orcid.org/0000-0003-4379-400X))\n- Daisuke Murata<sup>1</sup>\n- Takashi Kato<sup>1</sup>\n- Tatsuya Yamada<sup>1</sup>\n- Yoichi Araki<sup>2</sup>\n- Atsushi Saito<sup>3</sup>\n- Yoshihiro Adachi<sup>1</sup>\n- Atsushi Igarashi<sup>1</sup>\n- Shuo Li<sup>1</sup>\n- Mikhail Pletnikov<sup>2</sup>\n- Richard L Huganir<sup>2</sup>\n- Shigeki Watanabe<sup>1</sup>\n- Atsushi Kamiya<sup>3</sup>\n- Miho Iijima<sup>1</sup> \u2020\n- Hiromi Sesaki<sup>1</sup> ([ORCID: 0000-0002-6877-3929](https://orcid.org/0000-0002-6877-3929)) \u2020\n\n### Affiliations\n\n1. Department of Cell Biology Johns Hopkins University School of Medicine Baltimore United States\n2. Solomon H. Snyder Department of Neuroscience Johns Hopkins University School of Medicine Baltimore United States\n3. Department of Psychiatry and Behavioral Sciences Johns Hopkins University School of Medicine Baltimore United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nDynamin-related protein 1 (Drp1) divides mitochondria as a mechano-chemical GTPase. However, the function of Drp1 beyond mitochondrial division is largely unknown. Multiple Drp1 isoforms are produced through mRNA splicing. One such isoform, Drp1ABCD, contains all four alternative exons and is specifically expressed in the brain. Here, we studied the function of Drp1ABCD in mouse neurons in both culture and animal systems using isoform-specific knockdown by shRNA and isoform-specific knockout by CRISPR/Cas9. We found that the expression of Drp1ABCD is induced during postnatal brain development. Drp1ABCD is enriched in dendritic spines and regulates postsynaptic clathrin-mediated endocytosis by positioning the endocytic zone at the postsynaptic density, independently of mitochondrial division. Drp1ABCD loss promotes the formation of ectopic dendrites in neurons and enhanced sensorimotor gating behavior in mice. These data reveal that Drp1ABCD controls postsynaptic endocytosis, neuronal morphology and brain function.\n\n## Introduction\n\nThe major function of Drp1, which is encoded by the Dnm1l gene, is to control mitochondrial division as a mechano-chemical GTPase (Kameoka et al., 2018; Kraus and Ryan, 2017; Pernas and Scorrano, 2016; Prudent and McBride, 2017; Ramachandran, 2018; Tamura et al., 2011; van der Bliek et al., 2013). During mitochondrial division, Drp1 is assembled into helical filaments around the surface of mitochondria. Through GTP hydrolysis and interactions with receptors, the Drp1 filaments change their conformation and constrict the mitochondrial membrane. Mitochondrial division is important for human health: hyper- or hypo-division caused by the mis-regulation of Drp1 has been linked to many neurological disorders, such as Alzheimer's, Parkinson's, and Huntington's diseases (Cho et al., 2010; Itoh et al., 2013; Kandimalla and Reddy, 2016; Roy et al., 2015; Serasinghe and Chipuk, 2017). Notably, human Drp1 mutations also lead to neurodevelopmental defects with post-neonatal lethality, developmental delay, late-onset neurological decline, or optic atrophy (Fahrner et al., 2016; Gerber et al., 2017; Vanstone et al., 2016; Waterham et al., 2007); however, our current understanding of Drp1\u2019s function outside of mitochondrial division is limited.\n\nTo study the function of Drp1, complete and tissue-specific knockout (KO) mice for Drp1 have been characterized. The loss of Drp1 results in mitochondrial elongation and enlargement due to unopposed mitochondrial fusion in the absence of mitochondrial division in many cells (Friedman and Nunnari, 2014; Kashatus, 2018; Widlansky and Hill, 2018; Youle and van der Bliek, 2012). Complete loss causes embryonic lethality (Ishihara et al., 2009; Wakabayashi et al., 2009), whereas neuron-specific KO leads to a wide range of phenotypes, depending on the types of neurons and the timings when Drp1 is knocked out. For example, the loss of Drp1 in cerebellar Purkinje cells results in developmental defects when knocked out in embryos and progressive degeneration when knocked out in post-mitotic adult Purkinje cells (Kageyama et al., 2012; Wakabayashi et al., 2009). Similar to Purkinje cells, the loss of Drp1 induces massive death in dopaminergic neurons (Berthet et al., 2014). In contrast, hippocampal neurons are more resistant to the loss of Drp1; hippocampal neurons that lack Drp1 or express dominant negative Drp1, do not die but instead show deficits in bioenergetic and synaptic functions (Divakaruni et al., 2018; Shields et al., 2015). Similarly, Drp1-KO hypothalamic pro-opiomelanocortin neurons are also viable and show increased glucose and leptin sensing (Santoro et al., 2017).\n\nDrp1 is encoded by a single gene and produces multiple isoforms through alternative splicing of mRNAs. There are four alternative exons in Drp1 in mice (termed A, B, C, and D) (Figure 1A). These alternative exons are located in either the GTPase domain (A and B) or the variable domain (C and D), which is mainly intrinsically disordered and contains regulatory phosphorylation sites (Itoh et al., 2018). All of the Drp1 isoforms are located at mitochondria and function in mitochondrial division (Itoh et al., 2018). Interestingly, a subset of these isoforms is also located at additional sites. For example, Drp1D and Drp1BD are associated with and regulate the dynamics of microtubules (Itoh et al., 2018; Strack et al., 2013). We recently identified a novel isoform of Drp1 (termed Drp1ABCD) that is exclusively expressed in the brain (Itoh et al., 2018). Drp1ABCD, which contains all of the alternative exons, is the only isoform that is associated with lysosomes, late endosomes, and the plasma membrane when this isoform is expressed in Drp1-KO mouse embryonic fibroblasts (MEFs) (Itoh et al., 2018). Analysis of transcripts and proteins showed that Drp1ABCD is expressed at low levels; Drp1ABCD constitutes less than 5% of all the Drp1 isoforms expressed in the brain (Itoh et al., 2018).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/44739/elife-44739-fig1-v3.jpg)\n\n**Figure 1.:** (A) Domain architecture of Drp1ABCD. Alternative exons A and B are present in the 80-loop inside the GTPase domain while alternative exons C and D are located in the variable domain. (B) Different mouse organs were analyzed by Immunoblotting using antibodies to Drp1ABCD (AB), pan-Drp1, the mitochondrial protein PDH, and GAPDH. 60 \u00b5g (AB and pan-Drp1) and 12.5 \u00b5g (PDH and GAPDH) of proteins were loaded per lane. (C) Whole brains and hippocampi were analyzed at the indicated ages by Immunoblotting with antibodies to Drp1ABCD, postsynaptic density protein 95 (Psd-95), pan-Drp1, and actin. (D) Hippocampal neurons were cultured in vitro for 1, 2, 3 and 4 weeks and analyzed by immunoblotting. (E) Cultured hippocampal neurons were co-transfected at 3 weeks with plasmids carrying HA-Drp1ABCD or HA-Drp1BCD, along with plasmids carrying a cytosolic marker, tdTomato. Three days after transfection, neurons were analyzed by immunofluorescence microscopy with antibodies to RFP (which recognizes tdTomato) and HA. Boxed regions are enlarged. Bar, 20 \u00b5m. (F) Intensity of tdTomato (red) and HA (green) signals in dendritic shafts and spines were quantified along the lines shown in Figure 1E. Intensity was normalized to the highest value. (G) Ratios of signal intensity in spines relative to those in dendritic shafts were analyzed for HA-Drp1ABCD and HA-Drp1BCD. As a control, the tdTomato signal was used. Bars are mean\u00a0\u00b1\u00a0SD (n\u00a0=\u00a0176 spines in 10 neurons expressing HA-Drp1ABCD and 163 spines in 10 neurons expressing HA-Drp1BCD). (H) Cultured hippocampal neurons were co-transfected at 3 weeks with plasmids carrying tdTomato and HA-Drp1ABCD or HA-Drp1BCD and subjected to immunofluorescence microscopy with antibodies to HA and vesicular glutamate transporter 1 (VGLUT1). Boxed regions are enlarged. Bar, 5 \u00b5m. (I) Postsynaptic density fractions were isolated from the whole brains of wild-type mice and analyzed by Immunoblotting. Brain, whole brain; P2, membrane fraction; S2, cytosolic fraction; Syn, total synaptosomal fraction; Syn/Tx, Triton-soluble synaptosomal fraction; PSD, postsynaptic density fraction. (J) Band intensity of total Drp1 (pan-Drp1) and Drp1ABCD (AB) in the postsynaptic density fraction was quantified relative to the whole brain. Bars are mean\u00a0\u00b1\u00a0SD (n\u00a0=\u00a03). Statistical analysis was performed using Mann\u2013Whitney U test (G) and Student\u2019s t-test (J). n.s., not significant.\n\nThe unique localization of Drp1ABCD suggests that this brain-specific isoform may play a role in membrane trafficking in neurons; however, its function remains to be determined because of the lack of tools to specifically assess its function without affecting other isoforms. In this study, we have developed isoform-specific knockdown by shRNA and knockout by CRISPR/Cas9. Using these new approaches, we found that Drp1ABCD controls postsynaptic endocytosis and dendrite growth in neurons independently of mitochondrial division.\n\n## Results and discussion\n\n### Drp1ABCD expression is induced during postnatal brain development\n\nSince Drp1ABCD is the only isoform that contains both the alternative exons A and B (Figure 1A), we raised antibodies that specifically recognize Drp1ABCD using the amino acid sequence that corresponds to the junction of exons A and B as an antigen (Itoh et al., 2018). The expression of Drp1ABCD was spatially controlled and specific to the brain (Itoh et al., 2018) (Figure 1B). In the brain, Drp1ABCD was ubiquitously expressed in multiple subregions, including the hippocampus, cortex, midbrain, striatum, and cerebellum (Itoh et al., 2018).\n\nTo test whether the expression of Drp1ABCD is temporarily regulated in the brain, we performed Immunoblotting of whole brain and hippocampus tissues that were harvested from mice at the ages of P0, P8, 1 month, and 2 months. We found that the expression of Drp1ABCD is postnatally induced in both tissues later in neural development compared to that of postsynaptic density protein 95 (Psd-95), which is a synaptic protein required for glutamate receptor organization (Figure 1C). In contrast, anti-pan-Drp1 antibodies, which recognize all Drp1 isoforms, showed similar levels of Drp1 at different stages of postnatal brain development (Figure 1C). Consistent with the in vivo data, immunoblotting of hippocampal neurons cultured in vitro showed that the expression of Drp1ABCD gradually increases and reaches a plateau around 3 weeks (Figure 1D).\n\n### Drp1ABCD is enriched in postsynaptic terminals\n\nTo examine the subcellular localization of Drp1ABCD in neurons, we expressed HA-Drp1ABCD along with a cytosolic marker, tdTomato, in cultured hippocampal neurons. For a comparison, we tested HA-Drp1BCD, the most abundant brain Drp1 isoform (Itoh et al., 2018). In the soma, both HA-Drp1ABCD and HA-Drp1BCD appeared to be uniformly distributed (Figure 1E). We did not observe a clear association between these HA-tagged Drp1 isoforms and mitochondria, lysosomes, or the plasma membrane, likely due to their overexpression and therefore high levels in the cytoplasm. Interestingly, however, we found that HA-Drp1ABCD is enriched in postsynaptic regions, compared to HA-Drp1BCD (Figure 1E). Line scanning analysis of their fluorescence showed a significant increase in the signal ratio of HA-Drp1ABCD (spine vs dendritic shaft), compared to HA-Drp1BCD (Figure 1F and G). Analysis of HA-Drp1ABCD and HA-Drp1BCD in synapses at high magnification suggested its preferential localization of HA-Drp1ABCD around the postsynaptic density, which is in a close apposition to the pre-synaptic marker vesicular glutamate transporter 1 (Figure 1H).\n\nTo test the localization of endogenous Drp1ABCD at the postsynaptic density, we biochemically obtained postsynaptic density fractions from the brains of mice (Araki et al., 2015) since anti-Drp1ABCD antibodies do not work in immunofluorescence of the endogenous protein. Consistent with the immunofluorescence data, increased levels of Drp1ABCD were co-fractionated with the postsynaptic density, compared to total Drp1 detected by pan-Drp1 antibodies (Figure 1I and J).\n\n### The loss of Drp1ABCD inhibits endocytosis at postsynaptic terminals\n\nTo examine the function of Drp1ABCD at the postsynaptic density, we homozygously deleted exon A using the CRISPR/Cas9 genome editing system (termed Drp1exonA-KO mice) since Drp1ABCD is the only isoform that contains this exon (Itoh et al., 2018) (Figure 2A). We confirmed the lack of Drp1ABCD proteins in Drp1exonA-KO mice using Immunoblotting (Figure 2B). Consistent with a low expression level of Drp1ABCD (compared to that of other isoforms, such as Drp1BCD) (Itoh et al., 2018), we found no gross changes in the total amount of Drp1 in Immunoblotting using anti-pan-Drp1 antibodies (Figure 2B). Drp1exonA-KO mice were born at an expected Mendelian ratio with normal weights of the body and brain (Figure 2C\u2013E). H and E staining of sagittal brain sections showed that the histology of the cerebellum appears to be normal in Drp1exonA-KO mice (Figure 2F). DAPI staining also showed similar nuclear patterns of neurons and the thickness of the CA1 layer in the hippocampus in control and Drp1exonA-KO mice (Figure 2G). These data suggest that the loss of Drp1ABCD does not change the overall structure of the brain.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/44739/elife-44739-fig2-v3.jpg)\n\n**Figure 2.:** (A) Two guide RNAs were used to cut the genome at two positions (red arrowheads) to remove the majority of exon A and part of the following intron using CRISPR/Cas9. This deletion introduced a stop codon 20 residues downstream from the deletion site (STOP). (B) The indicated tissues were harvested from control and Drp1exonA-KO mice and analyzed by immunoblotting using antibodies to Drp1ABCD (AB), pan-Drp1, the mitochondrial protein PDH, and GAPDH. (C and D) Weights of the whole body (C) and brain (D) were measured. Bars are mean\u00a0\u00b1\u00a0SD (n\u00a0=\u00a04 in C and 5 in D). (E) Images of the whole brain. Bar, 1 cm. (F) H and E staining of cerebella of control and Drp1exonA-KO mice. Sagittal sections were cut in the midline. Bar, 1 mm. (G) Frozen sections of the hippocampus in control and Drp1exonA-KO mice were stained with DAPI. Bar, 0.5 mm. The thickness of the CA1 layer was measured. Bars are mean\u00a0\u00b1\u00a0SD (n\u00a0=\u00a03). (H) Control and Drp1exonA-KO hippocampal neurons were cultured for 3 weeks and subjected to transmission electron microscopy. An arrowhead indicates a clathrin-coated pit (CCP) at a postsynaptic terminal. Bar, 100 nm. (I and J) Quantification of the number of CCPs at postsynaptic and presynaptic terminals. Bars are mean\u00a0\u00b1\u00a0SD (n\u00a0=\u00a04 experiments, in which 167, 196, 172, 191 control and 158, 161, 169, 221 Drp1exonA-KO synapses were analyzed). (K and L) The numbers of CCPs with three different morphologies (shallow, U-shaped, and Omega-shaped) were measured. Bar, 100 nm. (M\u2013P) Control and Drp1exonA-KO hippocampal neurons were treated with 80 \u00b5M of dynasore for 30 min and analyzed by electron microscopy (M and O). Bar, 500 nm. The number of CCPs (N) and the size of mitochondria (P) were determined. Bars are mean\u00a0\u00b1\u00a0SD (n\u00a0=\u00a0159, 182, 172 -/control, 152, 163, 143 +/control, 176, 163, 129 -/KO, and 162, 146, 145 +/KO synapses) (N) and (n\u00a0=\u00a030\u201332 mitochondria analyzed in each group) (P). (Q and R) Chemical long-term depression (NMDA/Gly) was induced by NMDA for 3 min in the presence or absence dynasore (80 \u00b5M). Neurons were then fixed, and CCPs at postsynaptic and presynaptic terminals were analyzed by electron microscopy. Bars are mean\u00a0\u00b1\u00a0SD (n\u00a0=\u00a03\u20134 experiments. In each experiment, more than 100 synapses were analyzed). Statistical analysis was performed using Student\u2019s t-test (C, D, G, I, J, L and N) and One-way ANOVA with post-hoc Tukey (P, Q and R). (S) Summary of the data.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/44739/elife-44739-fig2-figsupp1-v3.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A\u2013C) Cultured control and Drp1exonA-KO neurons were incubated with 80 \u00b5M of dynasore for 30 min and analyzed using immunofluorescence microscopy with anti-PDH antibodies. Boxed regions are enlarged: a, proximal dendritic regions and b, distal dendritic regions. Bar, 20 \u00b5m. Mitochondrial length was determined in the proximal (B) and distal dendritic regions (C). Bars are mean\u00a0\u00b1\u00a0SD (n\u00a0=\u00a010 neurons analyzed in each group; 99\u2013121 mitochondria were measured in each neuron). The statistical analysis was performed using the Student\u2019s t-test. (D) WT MEFs were treated with 80 \u00b5M of dynasore for 1 hr and analyzed by immunofluorescence microscopy with anti-Tom20 antibodies (BD Biosciences, 61278). As a control for the loss of Drp1 function, Drp1-KO MEFs were also examined. Bar, 20 \u00b5m. (E) Mitochondrial shape is quantified (n\u00a0=\u00a030 cells).\n\nWe isolated hippocampal neurons from E18.5 mouse embryos and cultured them in vitro for 3 weeks. We then examined synapses by transmission electron microscopy. In both control and Drp1exonA-KO neurons, we observed matured synaptic contacts (Figure 2H). However, remarkably, the number of clathrin-coated pits (CCPs) was significantly different in these neurons\u2014Drp1exonA-KO neurons showed more CCPs in postsynaptic terminals compared with control neurons (Figure 2H and I). In contrast, the number of CCPs in presynaptic terminals was indistinguishable (Figure 2H and J). We then divided the morphologies of CCPs in postsynaptic terminals into three categories: shallow, U-shaped and omega-shaped pits. We found an increased frequency of shallow and U-shaped CCPs, which likely represent early stages during endocytosis, in Drp1exonA-KO neurons (Figure 2K and L). The frequencies of omega-shaped CCPs were similar in control and Drp1exonA-KO neurons (Figure 2K and L).\n\nThe observed increase in the number of CCPs could be explained by either activation or inhibition of endocytosis. First, the rate of clathrin-mediated endocytosis may be enhanced in Drp1exonA-KO neurons and therefore shallow and U-shaped CCPs were observed at a higher frequency. Alternatively, clathrin-mediated endocytosis may be slowed at early stages after the initiation of endocytosis perhaps in Drp1exonA-KO neurons and thereby the intermediates were accumulated. To distinguish between these two possibilities, we treated control and Drp1exonA-KO neurons with dynasore, a dynamin inhibitor that blocks the final step of endocytosis (Macia et al., 2006), for 30 min prior to chemical fixation for electron microscopy. As expected, dynasore significantly increased the number of CCPs at postsynaptic terminals in control neurons (Figure 2M and N). In contrast, when we treated Drp1exonA-KO neurons with dynasore, we found no increase in the number of CCPs (Figure 2M and N). Thus, it is likely that the rate of clathrin-mediated endocytosis is decreased in Drp1exonA-KO neurons. The accumulation of shallow and U-shaped CCPs, but not omega-shaped ones, suggest that Drp1ABCD may function at an early step upstream of the constriction and severing of the neck of coated pits that is mediated by dynamin (Figure 2S). We confirmed that dynasore did not inhibit Drp1 by examining mitochondrial morphology in neurons and mouse embryonic fibroblasts using electron microscopy and immunofluorescence microscopy with antibodies to a mitochondrial protein (pyruvate dehydrogenase, PDH)(Figure 2O and P; Figure 2\u2014figure supplement 1).\n\nTo further examine the consequence of Drp1ABCD loss in clathrin-mediated endocytosis, we stimulated WT and KO neurons with N-methyl-D-aspartic acid (NMDA) for a short period of time (3 min) and analyzed the number of CCPs at the postsypatic terminal. When we stimulated neurons in the presence of dynasore, the number of postsynaptic clathrin-coated pits increased in control neurons. This is due to stimulation of endocytosis by NMDA and inhibition of its completion by dynasore. In contrast, the number of CCPs remained unchanged in Drp1exonA-KO neurons (Figure 2Q). These phenotypes of Drp1ABCD loss were only observed at the postsynaptic region and not the presynaptic region (Figure 2R). These data further support the notion that postsynaptic clathrin-mediated endocytosis is slow in Drp1exonA-KO neurons even when stimulated by NMDA (Figure 2S). Interestingly, when stimulated by NMDA in the absence of dynasore, the number of CCPs was decreased in Drp1exonA-KO neurons (Figure 2Q). It appears that NMDA induces internalization of some endocytic vesicles in Drp1exonA-KO neurons. We suggest that Drp1exonA-KO neurons have slow kinetics of endocytosis but do not completely block it (Figure 2S).\n\nTo understand how Drp1ABCD loss results in changes in CCPs, we tested postsynaptic positioning of the endocytic zone using mCherry-clathrin light chain (mCherry-CLC) and Psd-95-Fibronectin intrabodies (Gross et al., 2013; Lu et al., 2007). As previously reported (Lu et al., 2007), the majority of mCherry-CLC signals are localized next to Psd-95 signals in control neurons (Figure 3A and B). In contrast, we found a higher frequency of dissociation of mCherry-CLC signals from Psd-95 signals in Drp1exonA-KO neurons (Figure 3A and B). We speculate that decreased levels of clathrin in the synapses in Drp1exonA-KO neurons slow the progression of endocytosis. In these synapses, the formation of CCPs is initiated; however, the maturation of CCPs is likely decreased due to the limited availability of clathrin molecules. As a result, CCPs accumulate during relatively early stages of endocytosis (e.g., shallow and U-shaped CCPs) (Figure 2L). These data suggest that Drp1ABCD, unlike dynamin, does not play a role in the scission of the neck of coated pits.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/44739/elife-44739-fig3-v3.jpg)\n\n**Figure 3.:** (A and B) Hippocampal neurons were cultured and transfected with plasmids expressing Psd-95.FingR-GFP and mCherry-CLC. Two days after transfection, neurons were subjected to chemical LTD stimulation (NMDA/Gly), fixed and analyzed by laser scanning confocal microscopy. Bar, 5 \u00b5m. The number of Psd-95.FingR-GFP signals that are not associated with mCherry-CLC was scored. Bars are mean\u00a0\u00b1\u00a0SD (n\u00a0=\u00a014\u201315 neurons were analyzed in each group). (C) Cell surface proteins were biotinylated with sulfo-NHS-SS-biotin in cultured control and Drp1exonA-KO hippocampal neurons. The neurons were lysed and incubated with NeutrAvidin agarose. Total cell lysates and precipitated proteins (Surface) were separated by immunoblotting to antibodies to GluR1, GluR2, GluR3 and GAPDH. (D) Band intensity was determined. Bars are mean\u00a0\u00b1\u00a0SD (n\u00a0=\u00a05). (E) Cultured neurons were co-transfected with plasmids carrying Psd-95-mCherry and GFP-GluR1. Two days after transfection, the neurons were treated with chemical LTD (NMDA/Gly) and subjected to immunofluorescence microscopy with anti-GFP antibodies without permeabilization of the plasma membrane. Images were acquired using identical settings. (F) The relative intensity of the signal from the anti-GFP antibodies (surface GFP-GluR1) compared with the GFP signal (total GFP-GluR1) was determined. Bars are mean\u00a0\u00b1\u00a0SD (n\u00a0=\u00a050). (G) Model for the function of Drp1ABCD in the postsynaptic terminal. (H\u2013J) Control and Drp1exonA-KO hippocampal neurons were subjected to immunofluorescence microscopy with antibodies against the mitochondrial protein PDH. Boxed regions are enlarged: a, proximal dendritic regions and b, distal dendritic regions. Bar, 20 \u00b5m. The length of mitochondria was determined in proximal (I) and distal dendritic regions (J). Bars are mean\u00a0\u00b1\u00a0SD (n\u00a0=\u00a010 neurons analyzed in each group. 70\u2013120 mitochondria measured in each neuron). Statistical analysis was performed using Kruskal-Wallis test with Dunn\u2019s multiple comparisons test (B), Mann\u2013Whitney U test (I) and Student\u2019s t-test (D, F and J).\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/44739/elife-44739-fig3-figsupp1-v3.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Cultured control and Drp1exonA-KO neurons were incubated with 50 \u00b5g/ml FITC-transferrin for 15 min at 4\u00b0C or 37\u00b0C. Cells were washed with cold PBS, fixed with paraformaldehyde and viewed by confocal microscopy. Intensity of FITC signals was quantified (n\u00a0=\u00a010 control neurons and 6 KO neurons). Statistical analysis was performed using Student\u2019s t-test. (B) Drp1-KO MEFs expressing no Drp1, Drp1ABCD or Drp1BCD were incubated with 5 \u00b5g/ml of Alexa-Fluor-647-transferrin for 30 min at 4\u00b0C or 37\u00b0C. After fixation, cells were visualized by confocal microscopy. Intensity of Alexa-Fluor-647 signals was quantified. Bars are mean\u00a0\u00b1\u00a0SD (n\u00a0=\u00a015\u201325 cells analyzed in each group). Statistical analysis was performed using one-way ANOVA with post-hoc Tukey. (F) The localization of Drp1ABCD at the plasma membrane is insensitive to dynasore treatment. Drp1-KO MEFs were transduced with lentiviruses expressing Drp1ABCD, treated with 80 \u00b5M dynasore for 1 hr and analyzed by immunofluorescence microscopy with antibodies to Drp1 and Tom20. Bar, 20 \u00b5m. The number of cells that show the localization of Drp1ABCD at the plasma membrane was quantified (n\u00a0=\u00a03 experiments. 30\u201360 cells were analyzed in each experiment). Statistical analysis was performed using Student\u2019s t-test.\n\nThe extent of the dissociation of the postsynaptic density from the endocytic zone in Drp1exonA-KO synapses is similar to that reported for the disruption of Homer, an adaptor protein that connects the postsynaptic density and endocytic zone (Lu et al., 2007). Like Homer defective neurons, the uptake of FITC-transferrin was not affected in Drp1exonA-KO neurons (Figure 3\u2014figure supplement 1). In contrast to the Homer pathway, however, we found that AMPA receptors, such as GluR1, GluR2 and GluR3, are normally expressed on the plasma membrane of Drp1exonA-KO neurons in surface biotinylation experiments (Figure 3C and D). Furthermore, endocytosis of GFP-GluR1 in response to NMDA stimulation was not perturbed in Drp1exonA-KO neurons (Figure 3E and F). These data suggest that the Drp1ABCD pathway has cargos that differ from those of the Homer pathway (Figure 3G).\n\nUsing immunofluorescence microscopy, we observed no gross changes in the morphology of mitochondria in proximal and distal regions along with dendrites in Drp1exonA-KO neurons (Figure 3H\u2013J). Therefore, inhibition of endocytosis does not appear to be the result of defects in mitochondrial morphology. It is likely that other Drp1 isoforms, such as Drp1BCD and Drp1CD, which together constitute the majority of Drp1 isoforms in the brain (Itoh et al., 2018), mainly control mitochondrial division and morphology.\n\nA previous study reported that Drp1 regulates endocytosis for synaptic vesicle recycling at presynaptic terminals in hippocampal neurons through interactions with a Drp1 receptor protein, Mff (Li et al., 2013). Since we found endocytic defects only at postsynaptic terminals in Drp1exonA-KO neurons, distinct Drp1 isoforms may function separately in endocytosis at pre- and postsynaptic terminals.\n\n### The loss of Drp1ABCD induces the extension of ectopic dendrites in cultured neurons\n\nIntriguingly, during analysis of the morphology of cultured hippocampal neurons, we noticed that Drp1exonA-KO neurons significantly increased the number of primary dendrites with dendritic spines (e.g., dendrites that directly emerged from the soma), compared to control neurons (Figure 4A and B). The number of axons that lack spines remained unchanged (one axon per neuron). The effect of Drp1ABCD loss was specific to the number of primary dendrites. We observed no significant difference in the number of dendritic branches between control and Drp1exonA-KO neurons (Figure 4C) or the density of dendritic spines (Figure 4D).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/44739/elife-44739-fig4-v3.jpg)\n\n**Figure 4.:** (A) Control and Drp1exonA-KO hippocampal neurons were cultured and transfected with plasmids expressing GFP at 3 weeks. Boxed regions are enlarged. Arrowheads indicate axons that lack dendritic spines. Bar, 20 \u00b5m. (B and C) The numbers of primary dendrites (B) and dendritic branches (C) were quantified. Bars are mean\u00a0\u00b1\u00a0SD (n\u00a0=\u00a060 control and 59 KO neurons). (D) The number of spines was quantified (n\u00a0=\u00a010 control and 10 KO neurons). (E) The DNA sequence that is targeted to knock down Drp1ABCD is shown. (F) HEK293 cells were co-transfected with plasmids carrying the indicated GFP-Drp1 and shRNAs. Whole-cell extracts were analyzed by Immunoblotting using the indicated antibodies. (G) Mouse hippocampal neurons were cultured for 2 or 3 weeks and transfected with plasmids expressing the indicated shRNAs and GFP as a cytosolic marker. Images of 3 week cultured neurons are presented. Boxed regions are enlarged. Arrowheads indicate axons that lack dendritic spines. Bar, 20 \u00b5m. (H) The number of primary dendrites were quantified. Bars are mean\u00a0\u00b1\u00a0SD (n\u00a0=\u00a029\u201330 neurons at 2 weeks and 50 neurons at 3 weeks). (I) Cultured neurons were transfected at 3 weeks with the plasmid expressing AB-targeted shRNA and GFP along with another plasmid carrying shRNA-resistant Drp1ABCD. The number of primary dendrites was quantified. Bars are mean\u00a0\u00b1\u00a0SD (n\u00a0=\u00a060 neurons for empty plasmid and 52 for Drp1ABCD). (J) Cultured hippocampal neurons were transfected with the indicated shRNA plasmids that co-express GFP in the presence or absence of 2 \u00b5M tetrodotoxin (TTX). The number of primary dendrites was quantified (n\u00a0=\u00a060 for -TTX/scramble, 75 for +TTX/scramble, 79 for -TTX/AB and 57 for +TTX/AB). (K and L) Control and Drp1exonA-KO mice were crossed with a mouse line expressing cytosolic GFP from the neuron-specific Thy1 promoter. We analyzed the number of neurites in the hippocampus (K) and cortex (L) at the age of 3\u20134 months. Bars are mean\u00a0\u00b1\u00a0SD (n\u00a0=\u00a090 neurons in three mice for each genotype). Bar, 10 \u00b5m. (M) Plasmids carrying the indicated shRNAs were introduced into the hippocampi of E15.5 mouse embryos, along with plasmids carrying GFP, by electroporation in utero. (N) Hippocampi were analyzed at an age of 7 weeks using laser confocal microscopy of frozen brain sections. Bar, 20 \u00b5m. The number of neurites that directly emerge from the soma was quantified. Bars are mean\u00a0\u00b1\u00a0SD (n\u00a0=\u00a051 neurons for scramble and 56 for AB-targeted). (O and P) Startle response (O) and PPI tests (P). Bars are mean\u00a0\u00b1\u00a0SD (n\u00a0=\u00a012 control and 14 KO mice). Statistical analysis was performed using Student\u2019s t-test (B, C, D. H-3 weeks, I, K, N and P), Mann\u2013Whitney U test (H-2 weeks, L and O) and One-way ANOVA with post-hoc Tukey (J).\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/44739/elife-44739-fig4-figsupp1-v3.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Cultured hippocampal neurons were transfected at 3 weeks with the indicated shRNA plasmids carrying GFP as a cytosolic marker. Cells were subjected to immunofluorescence microscopy with anti-MAP2 antibodies. Arrowheads indicate axons, and arrows indicate dendrites. Bar, 20 \u00b5m.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/44739/elife-44739-fig4-figsupp2-v3.jpg)\n\n**Figure 4\u2014figure supplement 2.:** Frozen section of the hippocampus (A) and cortex (B) in control and Drp1exonA-KO mice expressing cytosolic GFP from the neuron-specific Thy1 promoter are shown. Bar, 100 \u00b5m.\n\n![Figure 4\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/44739/elife-44739-fig4-figsupp3-v3.jpg)\n\n**Figure 4\u2014figure supplement 3.:** (A) Open field test. Total activity (Locomotor activity) and percentage time spent in the central and peripheral regions (Anxiety). (B) Y-maze tests. Number of arm entries (Locomotor activity), spontaneous alternation (Working memory), and time in novel arm (Spatial recognition memory) were determined. (C) Rotarod test. (D) Elevated plus maze tests. Bars are mean\u00a0\u00b1\u00a0SD (n\u00a0=\u00a026 control and 26 Drp1exonA-KO mice). Statistical analysis was performed using Student\u2019s t-test. Source Data File List for Figures (file name).\n\nTo further test whether Drp1ABCD controls dendrite formation in neurons in a cell-autonomous fashion, we specifically knocked down Drp1ABCD in cultured hippocampal neurons using shRNAs. To target Drp1ABCD, we used an mRNA sequence that corresponds to the junction between exon A and exon B, which is unique to Drp1ABCD (Figure 4E). First, the specificity of this knockdown construct was confirmed. We individually expressed each of GFP-Drp1ACD, GFP-Drp1BCD, and GFP-Drp1ABCD in separate HEK293 cells. We found that AB-targeted shRNA specifically knocked down GFP-Drp1ABCD, but not GFP-Drp1ACD or GFP-Drp1BCD (Figure 4F, AB shRNA). As a negative control, scramble shRNA was used (Figure 4F, Scramble). As a positive control, we targeted an mRNA sequence that is common in all Drp1 isoforms (Figure 4F, Pan-Drp1).\n\nSupporting the data from the above experiments using Drp1exonA-KO neurons, AB-targeted shRNA significantly increased the number of primary dendrites in cultured neurons at both 2 and 3 weeks compared to scramble shRNA (Figure 4G and H). Ectopic dendrites extended within a short period of time (3 days) after knockdown of Drp1ABCD in mature neurons with developed dendrites. The number of axons did not change (one axon per neuron) as assessed by immunofluorescence microscopy with anti-MAP2 antibodies, which label dendrites but not axons (Figure 4\u2014figure supplement 1). To confirm that the induction of dendrite formation results from the knockdown of Drp1ABCD, we co-expressed plasmids carrying a knockdown-resistant form of Drp1ABCD along with AB-targeted shRNAs. The Drp1ABCD plasmid, but not the empty plasmid, significantly rescued the effect of AB-targeted shRNAs (Figure 4I). These data further support the notion that Drp1ABCD is important for controlling the number of primary dendrites in neurons.\n\nDendrite growth is regulated by neuronal activity-dependent and -independent mechanisms (Wong and Ghosh, 2002). To understand the mechanism underlying the ectopic dendrite formation in AB-targeted neurons, we treated hippocampal neurons during knockdown with tetrodotoxin, a sodium channel inhibitor that blocks action potentials. We found that tetrodotoxin significantly blocked the effect of Drp1ABCD knockdown on ectopic dendrite formation, but did not affect the number of dendrites in control neurons (Figure 4J). These data suggest that the formation of primary dendrites induced by Drp1ABCD depletion requires neuronal activity.\n\n### Loss of Drp1ABCD induces the formation of ectopic primary dendrites in vivo\n\nTo test the function of Drp1ABCD in the morphology of neurons in vivo, we analyzed the morphology of neurons in Drp1exonA-KO mice. To achieve this goal, it was critical to sparsely label individual neurons because the density of neurons is too high to faithfully visualize the morphology of each neuron if all of the neurons are labeled. We crossed Drp1exonA-KO mice with a mouse line that expresses a cytosolic GFP in a small number of neurons driven by the neuron-specific Thy1 promoter (Feng et al., 2000) (Figure 4\u2014figure supplement 2). We counted the number of neurites using z stacks of laser confocal microscopy of frozen brain sections. We found a significant increase in the number of neurites in the CA1 and CA2 layers in the dorsal hippocampus (Figure 4K) consistent with the data from the in vitro experiments. The effect of Drp1ABCD loss on primary dendrites was also evident in the cortex (Figure 4L).\n\nTo further test the effect of Drp1ABCD knockdown during brain development in vivo, we performed in utero electroporation of shRNAs. We injected plasmids carrying scramble or AB-targeted shRNA, along with plasmids carrying cytosolic GFP, into the lateral ventricles of E15.5 embryos in timed pregnant mice using a glass micropipette (Figure 4M). We then performed electroporation to introduce the plasmids into the hippocampus, after which the embryos were returned to the abdomen. At 7 weeks after birth, mice were fixed using cardiac perfusion of paraformaldehyde (Figure 4M). Coronal cryosections of the CA1 and 2 layers in the dorsal hippocampus were cut and the neuronal morphology was analyzed using z stacks of laser confocal microscopy images. Since the cytosolic GFP labels both dendrites and axons, we counted the number of neurites (including both dendrites and axons) that directly emerged from the soma. Consistent with the knockout results, we found that knockdown of Drp1ABCD significantly increased the number of neurites, compared to the scramble control, in the hippocampus in vivo (Figure 4N).\n\n### The loss of Drp1ABCD increases sensorimotor gating function\n\nTo test whether the loss of Drp1ABCD affects brain function, behavioral phenotypes were systematically characterized in control and Drp1exonA-KO mice. We observed normal general locomotor activities in Drp1exonA-KO mice in open field test (Figure 4\u2014figure supplement 3A). Intriguingly, KO mice exhibited significantly increased prepulse inhibition (PPI) of the acoustic startle without alterations in the startle response (Figure 4O and P). PPI, as a measure of sensorimotor gating, involves several brain regions (including the hippocampus, medial prefrontal cortex, amygdala, and nucleus accumbens) (Lee and Davis, 1997; Swerdlow et al., 2001). Sensorimotor gating function enables selective attention that distinguishes or separates critical information from background noise. In humans, sensorimotor gating function is often referred to as the cocktail party effect, which allows one to talk with someone even in a crowded party environment (Lee and Davis, 1997; Swerdlow et al., 2001). This gating function is important for human health and its defects have been associated with mental illness, such as schizophrenia and autism spectrum disorders (Lee and Davis, 1997; Swerdlow et al., 2001). At this moment, we do not know the exact mechanistic basis underlying this enhanced sensorimotor gating in Drp1exonA-KO mice; however, the increased number of dendrites or the decreased postsynaptic endocytosis in Drp1exonA-KO mice may contribute to the enhancement in sensorimotor gating function. Behavioral changes in Drp1exonA-KO mice appeared to be specific to sensorimotor gating since we observed no alterations in spatial working and recognition memory tasks in Y-maze tests (Figure 4\u2014figure supplement 3B), motor coordination in rotarod test (Figure 4\u2014figure supplement 3C), and anxiety level in elevated plus maze test (Figure 4\u2014figure supplement 3D).\n\nIn summary, we found, for the first time, that the novel brain-specific isoform Drp1ABCD controls postsynaptic endocytosis independently of mitochondrial division. It would be important to test if this, in turn, results in the accumulation of cargoes on the postsynaptic surface and leads to ectopic formation of dendrites in future studies. Since the expression of Drp1ABCD is induced during the postnatal period, Drp1ABCD may control the number of dendrites by suppressing unwanted, excess dendrite formation in neuronal network wiring during postnatal brain development.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Genetic reagent (M. musculus)</td>\n      <td>Wild-type mice</td>\n      <td>This paper</td>\n      <td></td>\n      <td>Materials and methods: Generation\u00a0of Drp1exonA-KO mice using CRISPR/Cas9</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent(M. musculus)</td>\n      <td>Drp1exonA-KO mice</td>\n      <td>This paper</td>\n      <td></td>\n      <td>Materials and methods: Generation of\u00a0Drp1exonA-KO mice using CRISPR/Cas9</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent(M. musculus)</td>\n      <td>Thy1-GFP-M transgenic mice</td>\n      <td>Jackson Laboratory</td>\n      <td>Stock #: 007788</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent(M. musculus)</td>\n      <td>C57BL/6J mice</td>\n      <td>JacksonLaboratory</td>\n      <td>Stock #: 000664</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cell line (M. musculus)</td>\n      <td>WT and Drp1-KO MEFs</td>\n      <td>Kageyama et al. (2014)</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Rabbit polyclonal anti-exon AB</td>\n      <td>Itoh et al. (2018)</td>\n      <td></td>\n      <td>WB\u00a0(1:2000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Mouse monoclonal anti-Psd-95</td>\n      <td>EMD Millipore</td>\n      <td>Cat #: MABN68</td>\n      <td>WB (1:2000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Mouse monoclonal anti-pan-Drp1</td>\n      <td>BD Biosciences</td>\n      <td>Cat #: 611113</td>\n      <td>WB (1:2000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Mouse monoclonal anti-PDH subunit E2/E3bp</td>\n      <td>Abcam</td>\n      <td>Cat #: ab110333</td>\n      <td>IF (1:300)</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>HA-Drp1ABCD</td>\n      <td>Itoh et al. (2018)</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>HA-Drp1BCD</td>\n      <td>Itoh et al. (2018)</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>Psd95.FingR-GFP</td>\n      <td>Addgene</td>\n      <td>Cat #: 46295</td>\n      <td>Gross et al. (2013)</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>mCherry-Clathrin (CLC)</td>\n      <td>Addgene</td>\n      <td>Cat #: 27680</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>Psd-95-mCherry</td>\n      <td>Blanpied et al. (2008)</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>GFP-GluR1</td>\n      <td>Hussain et al. (2014)</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pSUPER-Scramble</td>\n      <td>This paper</td>\n      <td></td>\n      <td>Materials and methods: Plasmids</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pSUPER-AB</td>\n      <td>This paper</td>\n      <td></td>\n      <td>Materials and methods: Plasmids</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pSUPER-GFP-Scramble</td>\n      <td>This paper</td>\n      <td></td>\n      <td>Materials and methods: Plasmids</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pSUPER-GFP-AB</td>\n      <td>This paper</td>\n      <td></td>\n      <td>Materials and methods: Plasmids</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pCAGGS1-Drp1ABCD(resistant form)</td>\n      <td>This paper</td>\n      <td></td>\n      <td>Materials andmethods:\u00a0Plasmids</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Dynasore hydrate</td>\n      <td>Sigma-Aldrich</td>\n      <td>Cat #: D7693</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>NMDA</td>\n      <td>Tocris</td>\n      <td>Cat #: 0114</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Glycine</td>\n      <td>Tocris</td>\n      <td>Cat #: 0219</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Tetrodotoxin (TTX)</td>\n      <td>Tocris</td>\n      <td>Cat #: 1078</td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### Generation of Drp1exonA-KO mice using CRISPR/Cas9\n\nAll animal work was conducted according to the guidelines established by the Johns Hopkins University Committee on Animal Care and Use. To engineer the mouse Dnm1l gene that encodes Drp1, sgRNA-encoding sequences (5\u2019- AAAATGGTAAATTTCAGAGC- 3\u2019 to target inside the A exon and 5\u2019-TAAAAAGTTGATTGGTGAAT- 3\u2019 to target downstream of the A exon) were cloned into the BbsI site of pX330-T7 and amplified from pX330-T7 with a leading T7 promoter by PCR (Igarashi et al., 2018). These sgRNAs were in vitro transcribed using the HiScribe T7 Quick High Yield RNA Synthesis Kit (New England Biolabs) and purified using the MEGAclear Kit (Ambion). Cas9 mRNA was in vitro transcribed using NotI-linearized pX330-T7 and the mMESSAGE mMACHINE T7 Ultra Kit (Ambion) and purified by LiCl precipitation. Pronuclear injections of zygotes from B6SJLF1/J mice (Jackson Laboratory, stock no. 100012) were performed at the Johns Hopkins University Transgenic Facility using a mix of Cas9 mRNA and two sgRNA-encoding sequences in injection buffer (10 mM Tris-HCl, 0.1 mM EDTA filtered with 0.2 \u00b5m pore size). Three combinations of concentrations were used: 100 ng/\u00b5l of Cas9 mRNA and 50 ng/\u00b5l of each sgRNA, 100 ng/\u00b5l Cas9 of mRNA and 25 ng/\u00b5l of each sgRNA, and 25 ng/\u00b5l of Cas9 mRNA and 12.5 ng/\u00b5l of each sgRNA. The embryos were cultured at 37\u00b0C in the CO2 incubator for 2 hr and then transferred into the oviducts of pseudopregnant ICR females (25 embryos per mouse) (Envigo). Sixteen pups were obtained and their genotypes were analyzed by PCR using the following primers: 5\u2019-AGACCTCTCATTCTGCAGCT-3\u2019 and 5\u2019-GTGGATGGTCGCTGAGTTTG-3\u2019. We identified one founder mouse that truncated 96 bp to remove the A exon, resulting in A knock out. The A exon (KFQSWN) was replaced with 20 amino acids (KWEIIAIAKSEIFRIGINI) and a stop codon. By breeding with the Thy1-GFP-M transgenic mouse line (Jackson Laboratory, stock no. 007788), we generated Thy1-GFP/homozygous Drp1exonA-KO mice and Thy1-GFP/wild-type mice.\n\n### Plasmids\n\nTo create the HA-Drp1BCD plasmid, Drp1ABCD in the HA-Drp1ABCD plasmid (Itoh et al., 2018) was replaced with the full length of Drp1BCD at the BamHI/NotI sites. To create the GFP-Drp1ABCD plasmid, (SAGG)5 linker sequence and full-length Drp1ABCD were cloned into the BglII/EcoRI sites and the XhoI/SmaI sites of pEGFP-C1 (Clontech), respectively. Drp1ABCD was replaced with Drp1ACD and Drp1BCD to create the GFP-Drp1ACD and GFP-Drp1BCD plasmids. To generate the shRNA plasmids, the following target sequences were cloned into pSUPER (Oligoengine, VEC-PBS-0002) or pSUPER-GFP (Yamada et al., 2018). Scramble: CCTAAGGTTAAGTCGCCCTCGttcaagagaCGAGGGCGACTTAACCTTAGG, AB: ATTTCAGAGCTGGAACCCTGCttcaagagaGCAGGGTTCCAGCTCTGAAAT, and pan-Drp1: GCTTCAGATCAGAGAACTTATttcaagagaATAAGTTCTCTGATCTGAAGC. To generate a knockdown-resistant Drp1ABCD plasmid, both target sequences for AB and pan-Drp1 were replaced to the following resistant form. AB: ATTTCAGAGCTGGAACCCTGC to GTTCCAAAGTTGGAATCCAGC, and pan-Drp1: GCTTCAGATCAGAGAACTTAT to GTTGCAAATTCGCGAGCTGAT. Underlined cases are the added silent mutations. Full length of Drp1ABCD with silent mutations was cloned into the XhoI/NotI sites of pCAGGS1 vector.\n\n### Immunoblotting\n\nMouse tissues were harvested, flash-frozen in liquid nitrogen, and homogenized in RIPA buffer (Cell Signaling Technology, 9806) that contained cOmplete Mini Protease Inhibitor (Roche, 11836170001). Lysates were centrifuged at 14,000 x g for 10 min at 4\u00b0C and the supernatants were collected. Proteins were separated by SDS\u2013PAGE and transferred onto Immobilon-FL membranes (Millipore). The antibodies used were exon AB (Itoh et al., 2018), pan-Drp1 (BD Biosciences, 611113), PDH subunit E2/E3bp (Abcam, ab110333), GAPDH (Thermo, MA5-15738), actin (Santa Cruz Biotechnology, sc-1615), Psd-95 (EMD Millipore, MABN68), clathrin (BD Biosciences, 610499), beta-III tubulin (Abcam, ab18207), GFP (Molecular probe, A11121), GluR1 (EMD Millipore, MAB397), GluR2 (Araki et al., 2010) and GluR3 (Araki et al., 2010). Immunocomplexes were visualized using fluorescently-labeled secondary antibodies and detected using a PharosFX Plus Molecular Imager (Bio-Rad).\n\n### Neuronal cultures and immunofluorescence microscopy\n\nHippocampal neurons were isolated and cultured in vitro as previously described (Araki et al., 2015). In brief, E18.5 embryos were decapitated, and brains were quickly removed and transferred in cold Dissection media [1 x HBSS (Gibco, 14185052), 1 mM sodium pyruvate (Gibco, 11360070), 10 mM HEPES (Gibco, 15630080), 30 mM glucose, 100 U/ml penicillin, and 100 \u00b5g/ml streptomycin]. Hippocampi were dissected under a binocular microscope and incubated in Dissection medium supplemented with 0.5 mg/ml papain (Worthington, LS003119) and 0.01% DNase (Sigma, DN25) for 20 min at 37\u00b0C. Hippocampi were washed once with warm Neurobasal medium (Gibco, 21103049) supplemented with 100 U/ml penicillin, 100 \u00b5g/ml streptomycin, 2 mM GlutaMax (Gibco, 35050061), 2% B-27 (Gibco, 17504044) and 5% horse serum (Gibco, 26050088). Neurons were triturated and plated on 18 mm poly-L-lysine-coated coverslips at a density of 160,000 cells/well in 12-well tissue culture plates in 1 ml of the Neurobasal medium supplemented with 100 U/ml penicillin, 100 \u00b5g/ml streptomycin, 2 mM GlutaMax, 2% B-27% and 5% horse serum. After 24 hr, neurons were switched and maintained thereafter in Neurobasal media with 2 mM GlutaMax and 2% B-27. Cultured neurons were fed with half-media changes once per week. Cells were transfected with Lipofectamin 2000 (Invitrogen) in accordance with the manufacturer\u2019s manual. After 2\u20133 days, neurons were fixed using PBS containing 4% paraformaldehyde, washed in PBS, permeabilized with 0.2% Triton X-100/PBS, and blocked in 0.5% BSA/PBS (Adachi et al., 2016). The cells were incubated with antibodies to pan-Drp1, HA (Novus Biologicals, NB600-362), RFP (antibodies-online, ABIN129578), VGLUT1 (Synaptic systems, 135304), MAP2 (Thermo Fisher, MA5-12826) and PDH subunit E2/E3bp, followed by the appropriate secondary antibodies. Samples were mounted in Prolong Gold Antifade Reagent (Cell Signaling, 9071) and viewed using Zeiss LSM510-Meta, LSM700 FCS, and LSM800 GaAsP laser scanning confocal microscopes. To determine the size of the mitochondria in the dendrites, we first examined serial confocal images along the Z-axis to identify individual mitochondria and then measured their length using ImageJ.\n\n### PSD fractionation\n\nFractionation of post-synaptic density was performed as described previously (Araki et al., 2015). In brief, mouse whole brain was dissected and homogenized by a dounce homogenizer 30 times in Buffer A (0.32 M sucrose, 10 mM Hepes, pH7.4, with cOmplete Mini Protease Inhibitor). The homogenate was centrifuged at 1000 x g for 10 min at 4\u00b0C. The post-nuclear supernatant was collected and centrifuged at 13,800 x g for 20 min at 4\u00b0C. The supernatant was kept as S2 fraction. The pellet was resuspended in 3 volumes of Buffer A (P2 fraction). The P2 fraction was layered onto a discontinuous sucrose gradient (0.85, 1.0, and 1.4 M) in 10 mM Hepes (pH7.4) with cOmplete Mini Protease Inhibitor and centrifuged at 82,500 x g for 2 hr at 4\u00b0C. The interface between 1.0 and 1.4 M sucrose was collected as the synaptosome fraction (Syn) and diluted with 80 mM Tris-HCl (pH 8.0). An equal volume of 1% Triton X-100 was added and rotated for 10 min at 4\u00b0C, then centrifuged at 32,000 x g for 20 min. The supernatant was collected as Triton-soluble synaptosome (Syn/Tx) fraction, and the pellet was resuspended in 80 mM Tris-HCl (pH 8.0) (PSD fraction).\n\n### Electron microscopy\n\nCultured neurons were fixed with 2% glutaraldehyde, 3 mM CaCl2, and 0.1 M cacodylate buffer, pH 7.4, for 1 hr. After washes, samples were post-fixed in 2.7% OsO4 and 167 mM cacodylate, pH 7.4, for 1 hr on ice (Kageyama et al., 2014; Wakabayashi et al., 2009). After washes in water, samples were incubated in 2% uranyl acetate for 30 min. After dehydration using 50, 70, 90, and 100% ethanol, samples were embedded in EPON resin. Ultrathin sections were obtained using a Reichert-Jung ultracut E, stained with 2% uranyl acetate and 0.3% lead citrate, and viewed using a transmission electron microscope (H-7600; Hitachi) equipped with a dual CCD camera (Advanced Microscopy Techniques).\n\nFor dynasore treatment, cells were incubated with 80 \u00b5M of dynasore (Sigma-Aldrich, D7693) in culture medium for different times, then fixed and further processed for electron microscopy as described above. To stimulate endocytosis through chemical long-term depression (chemical LTD), neurons were incubated with 20 \u00b5M of NMDA (Tocris, 0114), 10 \u00b5M of glycine (Tocris, 0219), 0.3 mM of MgCl2, 2 mM of CaCl2 and 1 \u00b5M of TTX (Tocris, 1078) in Base buffer (10 mM HEPES, pH 7.4, 140 mM NaCl, 2.4 mM KCl, 10 mM glucose) for 4 min. As a control, Base buffer containing 2 mM of MgCl2, 2 mM of CaCl2 and 1 \u00b5M of TTX was used. To induce chemical LTD in the presence of dynasore, neurons were first incubated for 1 min with 80 \u00b5M of dynasore in the culture medium and followed by a 3 min chemical LTD treatment in the presence of dynasore (80 \u00b5M). Neurons were then fixed and processed as described above.\n\n### Analysis of endocytic zone\n\nHippocampal neurons (DIV22) were transfected with 1 \u00b5g of Psd-95.FingR-GFP plasmids (Addgene, 46295) and 250 ng of mCherry-clathrin light chain plasmids (Addgene, 27680) per coverslip in 12-well plates. Two days after transfection, neurons were treated with chemical LTD stimulation, fixed in PBS containing 4% formaldehyde and 4% sucrose for 20 min, washed with PBS and mounted. Neurons were selected based on GFP fluorescence, and mCherry/GFP images were taken. Images were acquired with LSM800 GaAsP laser scanning confocal microscopes and analyzed using ImageJ.\n\n### Surface biotinylation assay\n\nCultured neurons were washed once with Base buffer containing 2 mM MgCl2 and 2 mM CaCl2 at room temperature; they were then washed twice with an ice-cold version of the same buffer. Cell-surface proteins were biotinylated with 1 mg/mL sulfo-NHS-SS-biotin (Pierce, 21331) in the same buffer for 20 min on ice. The remaining biotin was quenched by washing the cells two times for 5 min each with ice-cold PBS containing 20 mM glycine, 2 mM MgCl2 and 2 mM CaCl2. Immediately after quenching, the neurons were washed twice with PBS containing 2 mM MgCl2 and 2 mM CaCl2 and then lysed with RIPA buffer that contained cOmplete Mini Protease Inhibitor. The biotinylated cell surface proteins were precipitated using NeutrAvidin agarose (Pierce, 29200). The precipitated proteins and total cell lysates were separated by SDS-PAGE and blotted with antibodies to GluR1, GluR2, GluR3 and GAPDH.\n\n### GluR1 internalization assay\n\nCultured neurons were transfected with 1 \u00b5g of Psd-95-mCherry plasmids (Blanpied et al., 2008) and 1 \u00b5g of GFP-GluR1 plasmids (Hussain et al., 2014) per coverslip in 12-well plates. Two days after transfection, the neurons were treated with chemical LTD stimulation, fixed in PBS containing 4% formaldehyde and 4% sucrose for 8 min, washed with PBS and blocked in 1% BSA/PBS for 30 min. To label surface GFP-GluR1, the cells were incubated with GFP antibody (Senoo et al., 2019) at 4\u00b0C overnight and then treated with Alexa Fluor 647-conjugated secondary antibodies. Images were acquired using LSM800 GaAsP laser scanning confocal microscopes and analyzed using ImageJ. Identical settings were used to acquire each image within an experiment.\n\n### Transferrin uptake\n\nMEFs were incubated with 5 \u00b5g/ml of Alexa-Fluor-647-transferrin (Thermo, T23366) in the culture medium for 30 min at 4\u00b0C or 37\u00b0C. Cells were washed twice with cold PBS, fixed using PBS containing 4% paraformaldehyde, washed in PBS and visualized by confocal microscopy. Mean fluorescent signals in each cell were measured using Image J. Cultured neurons were incubated with 50 \u00b5g/ml of FITC-transferrin (Thermo, T2871) in the culture medium for 15 min at 4\u00b0C or 37\u00b0C. Cells were washed twice with cold PBS, fixed using PBS containing 4% paraformaldehyde and 4% sucrose, washed in PBS and then visualized by confocal microscopy. Mean fluorescent intensity was measured along dendrites (100 \u00b5m in length) using Image J.\n\n### In utero electroporation\n\nIn utero electroporation that targeted the dorsal hippocampus region was performed according to our published protocol with some modifications (Saito et al., 2016). Pregnant mice (C57BL/6J, The Jackson Laboratory, stock no. 000664) were anesthetized at embryonic day 15.5 (E15.5) by intraperitoneal administration of a mixed solution of ketamine HCl (100 mg/kg), xylazine HCl (7.5 mg/kg), and buprenorphine HCl (0.05 mg/kg). After the uterine horn was exposed by laparotomy, the CAG promoter-driven eGFP expression plasmid, pCAGGS1-eGFP (1 \u00b5g/\u00b5l), together with the Drp1ABCD knockdown plasmid, pSUPER-AB (1 \u00b5g/\u00b5l), was injected (1\u20132 \u00b5l) into the lateral ventricles with a glass micropipette made from a microcapillary tube (Narishige, Cat #GD-1). Using a \u00f83mm electrode (Nepagene #CUY650P3), the plasmids were delivered into the dorsal hippocampus by electric pulses (40V; 50 ms), which were charged four times at intervals of 950 ms with an electroporator (Nepagene #CUY21EDIT). After electroporation, the uterine horn was replaced in the abdominal cavity to allow the embryos to continue to develop.\n\n### Behavioral analysis\n\nAll of the behavior tests were performed in mice of 2\u20135 months of age at the Behavior Core of the Johns Hopkins University School of Medicine. For open field tests, mice were placed in a Photo-beam Activity System Open Field (San Diego Instruments, CA, USA) and their movement was recorded for 30 min (Breu et al., 2016). The open field chamber consisted of a clear Plexiglas box (40\u00a0\u00d7\u00a040\u00a0\u00d7\u00a037 cm) with 16 horizontal and 16 vertical photo-beams to assess locomotion and location tendency. Activity parameters were quantified as the number of beam breaks.\n\nFor PPI tests, mice were put in a clear Plexiglas cylinder (3.8 cm in diameter) within a startle chamber (San Diego Instruments) and tested for their sensorimotor gating function using SR-LAB software (Nasu et al., 2014; Saito et al., 2016) (Startle Response System, San Diego Instruments, CA, USA). A loudspeaker mounted 24 cm above the cylinder provided acoustic stimuli and background noise (70 dB) and controlled the delivery of all stimuli to the animal by SR-LAB software and the interface system. A maximum voltage during the 100 ms period beginning at the stimulus onset was measured as a startle amplitude. To initiate the test, mice were given a 5 min acclimation period with 70 dB background noise; this background noise was present throughout the entire session. After acclimation, mice were exposed to a pulse (a 120 dB, 40 ms) 10 times and then the background-only session 10 times at a 20 s inter-stimuli interval (habituation session). In experimental sessions, mice were exposed to the following types of trials: pulse alone trial (a 120 dB, 100 ms broadband burst); the omission of stimuli (no pulse, only background noise); and five prepulse-pulse combination trials. Broadband bursts (20 ms) were individually presented as prepulses for 80 ms before the pulse (120 dB, 100 ms broadband pulse). Each session consisted of six presentations of each type of trial presented at a 20 s inter-stimulus interval in a pseudorandom order. PPI was defined as a reduced percentage of startle amplitude in prepulse-pulse trials compared to the startle amplitude in startle-alone trials.\n\nFor the Y-maze test, mice were placed in a Y-shaped maze with three arms (38\u00a0\u00d7\u00a07.5\u00a0\u00d7\u00a012 cm) at 120-degree angles from each other. After introduction to the center of the maze, mice are allowed to freely explore the three arms and are video-recorded for 10 min. The number of arm entries and the time spent in each arm were scored in order to calculate the percentage of alternation.\n\nFor rotarod tests, mice were placed on the rod spindle assembly (3.0 cm in diameter) of the Rotamex-5 system (Kageyama et al., 2012) (Columbus Instruments, OH, USA). Mice were first trained at 4.0 rpm for 5 min. After this training session, the rotarod was accelerated with a 1.0 rpm increase in rotational speed every 5 s. The time elapsed before falling was recorded for each mouse. Three consecutive trials were performed and the results were averaged in each mouse.\n\nFor the elevated plus maze test, a mouse was placed on the starting platform in the plus maze (San Diego Instruments Inc, San Diego, CA, USA) and the mouse's behaviors were video-recorded for 5 min. We scored the numbers of entries into the closed and open arms and the time spent in the closed and open arms.\n\n### MEFs and lentiviruses\n\nDrp1-KO MEFs were cultured in Iscove\u2019s modified Dulbecco\u2019s medium supplemented with 10% fetal bovine serum as described previously (Kageyama et al., 2014). Genotypes of MEFs were confirmed by PCR as described (Kageyama et al., 2014). No contamination of mycoplasma has been confirmed. Lentiviruses were produced as described previously (Itoh et al., 2018).\n",
+      "created_at": "2025-12-02T12:42:22.581593Z"
+    },
+    {
+      "id": "7bdfc7bb-67b1-4ef6-86c6-f169016e2d3b",
+      "submission_id": "57ee7154-c13a-48d5-9622-ea9c611038ec",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Margaret S Robinson, University of Cambridge United Kingdom\n\nReviewers:\n- David Perrais, Universit\u00e9 de Bordeaux France\n- Mary Kay Lobo, University of Maryland United States\n\n## Review text\n\nDOI: [10.7554/eLife.44739.020](https://doi.org/10.7554/eLife.44739.020)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\n[Editors\u2019 note: this article was originally rejected after discussions between the reviewers, but the authors were invited to resubmit after an appeal against the decision.]\n\nThank you for submitting your work entitled \"Brain-specific Drp1 regulates postsynaptic endocytosis and dendrite formation independently of mitochondrial division\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by a Reviewing Editor and a Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: David Perrais (Reviewer #1); Mary Kay Lobo (Reviewer #3).\n\nOur decision has been reached after consultation between the reviewers. Based on these discussions and the individual reviews below, we regret to inform you that your work will not be considered further for publication in eLife.\n\nWe should stress that all of the reviewers found your study very interesting. However, they also all agreed that it was still unclear whether or not brain-specific Drp1 is directly involved in postsynaptic endocytosis. As you know, it is eLife's policy to reject papers where additional work is required to validate major conclusions, when that work would take more than two months. The reviewers have suggestions for further experiments, which we hope you will find useful, but they acknowledged that these experiments would take longer than two months.\n\nReviewer #1:\n\nThe manuscript by Itoh et al. describe the consequences of the deletion of a brain specific splice variant of Drp1 termed Drp1AB. Drp1 is a well characterized GTPase which belongs to the dynamin-like protein family. It has been involved mainly in the fission reaction of mitochondria. In addition, the groups of Miho Iijima and Hiromi Sesaki, corresponding authors of the present manuscript, have very recently found (Itoh et al., 2018) that the splice variant Drp1ABCD, with all four additional inserts, is specific for the brain and is present not only at mitochondria scission sites but also at late endosomes and lysosomes, and the plasma membrane. In the present study, they examine the effect of deleting specifically Drp1ABCD (or Drp1AB deletion, because the only variant containing both A and B also contains C and D) with a Drp1exonA KO mouse and shRNA targeting specifically Drp1 mRNAs containing A and B exons. They found, using cultured hippocampal neurons, that Drp1ABCD is present in dendritic spines and that its absence increases the number of CCPs near post-synaptic sites, suggesting that Drp1ABCS affects clathrin mediated endocytosis. Surprisingly, spine density was not affected but the number of primary dendrites was increased in cultured neurons and in pyramidal neurons in cortex and hippocampus in vivo. Finally, KO mice have a deficit in two behavioral tests involving sensory gating, but not in classical tests of locomotor activity, anxiety, working memory.\n\nThe experiments are in general well performed and the results are clearly and concisely presented. The results are interesting but it is hard to see clear connections between the three main effects of Drp1AB deletion on post-synaptic CCPs, primary dendrites and the modulation of the startle response. In particular, before further consideration for publication, it is important to determine if and how post-synaptic endocytosis is affected and if there is a direct connection with the number of primary dendrites.\n\nTherefore I propose to:\n\n1) Test directly the possibility that postsynaptic endocytosis is affected. First, the number of CCPs near PSDs can be quantified (as in Blanpied et al., 2002, Lu et al., 2007 or Rosendale et al., 2017). Second, test the distribution and internalization of post-synaptic cargoes (e.g. transferrin and AMPARs are the classical ones).\n\n2) Reevaluate the effect of dynasore. It is described as affecting dynamin at a late stage of endocytosis. However, dynasore also affects Drp1, at least in vitro (Figure 2G of Macia et al., 2006) so a different dynamin (or clathrin) blocker such as mitmab or pitstop2 should be used to test if the effects goes through dynamin or Drp1 inhibition.\n\n3) Explain further in what sense the approach with shRNA is more specific than the Drp1exonA-KO. Do the authors mean that they delete the exonA containing Drp1 mRNA in target neurons, and not in the other cells types (e.g. astrocytes)?\n\n4) Explain why the neurons in culture were transfected at an age that seems quite old (22-24 DIV). At this age, cell survival and transfections are notoriously poor. The authors should indicate if and how often medium was replaced in culture. Why did the authors choose such an old age? Is the effect of Drp1AB loss only seen after this time in culture? The authors should document at least in Drp1exonA KO neurons if the number of primary dendrites is affected at early stages of neuronal development. Is there any other example where the number of primary dendrites can be affected late in neuronal development?\n\n5) Figure 1C: the post-natal expression of Drp1AB, is very low at P8 (unlike PSD95 as written in the text). This could be in line with my previous point, if the effects of Drp1AB deletion are only visible at late stages. Could the authors comment this further?\n\nReviewer #2:\n\nThis is an interesting study that describes the involvement of one particular splice variant (isoform) of Drp1 in postsynaptic clathrin-mediated endocytosis (CME), which ultimately affects neuronal morphology and animal behavior. While the experiments are well-executed and the results mostly convincing, the study primarily addresses \"phenomena\" from 36K feet up without attempting to delve into the exact role of this Drp1 variant here, or its mechanism. Therefore, this reviewer finds the study to be largely descriptive and observational, without being able to infer roles or mechanisms. Several important questions therefore need to be addressed.\n\nSpecifically, what is Drp1 doing here while in the presence of dynamin (which mediates fission one would think), and associated BAR domain-containing proteins, which presumably function to create the membrane invaginations in the first place? How does this Drp1 variant contribute to membrane remodeling specifically in the context of postsynaptic CME, or does it? Do other modes or locations of endocytosis rely on this variant? Is this Drp1 variant recruited to the postsynaptic endocytic pit, or to the PM in general, in the absence of dynamin? Is there a role for Mff in the selective PM recruitment of this variant as alluded by Li et al., 2013? It is not clear what allows the selective recruitment of this Drp1 splice variant to the PM.\n\nThe recruitment and role of this variant should therefore be further investigated in the context of isoform-specific and pan-dynamin knockdown, which should provide insight into Drp1's role and mechanism, specifically in postsynaptic CME. What is the morphology of these endocytic pits in the absence (or presence) of dynamin 1/2/3? Can Drp1 substitute for dynamin in postsynaptic CME? Further, are there specific binding partners at the PM for this variant versus other Drp1 isoforms? In other words, what is the basis of the selective recruitment of this Drp1 splice variant over others?\n\nIn a nutshell, the following sentence from this manuscript requires additional clarification: \"The accumulation of shallow and U-shaped CCPs, but not omega-shaped\n\nones, suggest that Drp1ABCD may function at an early step upstream of the constriction and severing of the neck of coated pits that is mediated by dynamin (Schmid and Frolov, 2011).\"\n\nWhat is the role and mechanism of Drp1 here? This should be established to complete this manuscript, which will provide critical insights into the largely unstudied role of Drp1, outside of the context of mitochondria.\n\nReviewer #3:\n\nThe study by Itoh et al. investigates the function of the Drp1-ABCD isoform, which contains all four alternative exons and is specific to the brain. The authors use both shRNA knockdown and CRISPR isoform specific knockouts. They show that Drp1-ABCD is expressed during postnatal development, is enriched in dendritic spines, and regulates postsynaptic clathrin-mediated endocytosis. Drp1-ABCD KO or KD induces primary neuron dendrites in culture and in utero KD in hippocampus increases primary neurites. Finally, Drp1-ABCD KO mice display enhanced sensorimotor gating behavior in mice. This is a clear and well written study that provides novel information into Drp1-ABCD function. However, additional studies would further support the findings and rule out a role for Drp1-ABCD in mitochondria function.\n\n1) Please include representative images used to quantify Spine/Dendrite expression of HA-Drp1 -BCD (Figure 1E and F) similar to those shown of HA-Drp1-ABCD in Figure 1G.\n\n2) The mitochondria analysis in Figure 3 and S2 is preliminary. Since the main role of Drp1 is to mediate mitochondrial fission it will be important to determine if mitochondria are unaltered with Drp1-ABCD-KO and KD. The authors should provide quantification of mitochondria morphology, which may require genetic labeling of mitochondria. Additionally, Drp1 can alter mitochondria across dendritic regions. From the images it seems that only proximal dendrites are examined. It will be important to analyze the mitochondria across the dendritic field.\n\n3) In the last sentence of the Abstract the authors state that their results suggest that DRP1-ABCD controls morphology and function through surface trafficking of neurotransmitter receptors at postsynapses. Inclusion of more details throughout the manuscript that relate the endocytosis findings to receptor trafficking would help support this conclusion and make it understandable to readers unfamiliar with the neurotransmitter receptor trafficking field.\n\n[Editors\u2019 note: what now follows is the decision letter after the authors submitted for further consideration.]\n\nThank you for choosing to send your work entitled \"Brain-specific Drp1 regulates postsynaptic endocytosis and dendrite formation independently of mitochondrial division\" for consideration at eLife. Your letter of appeal has been considered by a Senior Editor and a Reviewing editor, and we are prepared to consider a revised submission.\n\nWe were helped in making our decision by the original reviewers, who read your revised manuscript. They all agreed that your changes had strengthened the story, and thought it would be helpful to include an illustration or model demonstrating how Drp1 ABCD might function in postsynaptic endocytosis.\n\nThe reviewers also suggested a couple of additional experiments. First, there seems to be a discrepancy between the EM data in Figure 2Q, showing more CCPs at the postsynaptic terminal under basal conditions in the KO cells, and the light microscopy data in Figure 3 A-B, which appears to show less clathrin at the postsynaptic terminal terminal. The reviewer who pointed this out felt that you needed more direct evidence for your hypothesis that Drp1ABCD regulates cargo recycling and suggested that you investigate the localisation of AMPA receptors in your KO cells.\n\nThe other suggested experiment was to carry out a similar study to the one in supplementary Figure 6, showing a lack of effect of dynasore on mitochondrial morphology in MEFs, but this time using neurons as in Figure 3D. Because the labelled mitochondria often overlap, it will be important to show how you measure your mitochondrial length. Both of these experiments appear to be straightforward enough to complete within two months.\n\n[Editors' note: further revisions were requested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \"Brain-specific Drp1 regulates postsynaptic endocytosis and dendrite formation independently of mitochondrial division\" for further consideration at eLife. Your revised article has been favorably evaluated by Didier Stainier (Senior Editor), a Reviewing Editor, and three reviewers.\n\nThe manuscript has been improved but there are some remaining issues that need to be addressed before acceptance.\n\nSpecifically, there is still the issue of the connection between the phenotypes, which has not been solved. The authors have convincing data regarding the effect of Drp1ABCD deletion on post-synaptic endocytosis and the formation of ectopic dendrites. However, they do not show that ectopic dendrite formation occurs because postsynaptic endocytosis is affected. Therefore, the last sentence of the Abstract and the last paragraph of the Discussion must be changed.\n",
+      "created_at": "2025-12-02T12:42:22.581593Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T12:42:22.581593Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T12:42:22.581593Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "9917b0c6-a078-45e7-9152-24b68f34d64d",
+      "content_id": "2840dc82-6646-4707-b1c8-9dc1ffbe7e60",
+      "claim_id": "C1",
+      "claim": "Drp1ABCD contains all four alternative exons (A, B, C, and D).",
+      "claim_type": "EXPLICIT",
+      "source": "Drp1ABCD, which contains all of the alternative exons, is the only isoform that is associated with lysosomes, late endosomes, and the plasma membrane when this isoform is expressed in Drp1-KO mouse embryonic fibroblasts (MEFs) (Itoh et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly states that Drp1ABCD contains all alternative exons, and this is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:42:22.581593Z"
+    },
+    {
+      "id": "d68be2e9-487c-4371-a7f4-1392f9c87db8",
+      "content_id": "2840dc82-6646-4707-b1c8-9dc1ffbe7e60",
+      "claim_id": "C2",
+      "claim": "Drp1ABCD is exclusively expressed in the brain.",
+      "claim_type": "EXPLICIT",
+      "source": "We recently identified a novel isoform of Drp1 (termed Drp1ABCD) that is exclusively expressed in the brain (Itoh et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly states exclusive brain expression, supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:42:22.581593Z"
+    },
+    {
+      "id": "a65ad925-d7a5-4e1b-89c2-f0f8b237c456",
+      "content_id": "2840dc82-6646-4707-b1c8-9dc1ffbe7e60",
+      "claim_id": "C3",
+      "claim": "Drp1ABCD constitutes less than 5% of all Drp1 isoforms expressed in the brain.",
+      "claim_type": "EXPLICIT",
+      "source": "Analysis of transcripts and proteins showed that Drp1ABCD is expressed at low levels; Drp1ABCD constitutes less than 5% of all the Drp1 isoforms expressed in the brain (Itoh et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly states the percentage based on analysis of transcripts and proteins, supported by citation.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:42:22.581593Z"
+    },
+    {
+      "id": "3884442c-709e-486e-9aad-96b25b1606c1",
+      "content_id": "2840dc82-6646-4707-b1c8-9dc1ffbe7e60",
+      "claim_id": "C4",
+      "claim": "Drp1ABCD is the only isoform that is associated with lysosomes, late endosomes, and the plasma membrane when expressed in Drp1-KO MEFs.",
+      "claim_type": "EXPLICIT",
+      "source": "Drp1ABCD, which contains all of the alternative exons, is the only isoform that is associated with lysosomes, late endosomes, and the plasma membrane when this isoform is expressed in Drp1-KO mouse embryonic fibroblasts (MEFs) (Itoh et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly states the unique localization pattern of Drp1ABCD, supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:42:22.581593Z"
+    },
+    {
+      "id": "2481ae14-2979-43ce-8da1-8cb38d066131",
+      "content_id": "2840dc82-6646-4707-b1c8-9dc1ffbe7e60",
+      "claim_id": "C5",
+      "claim": "The expression of Drp1ABCD is induced during postnatal brain development.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the expression of Drp1ABCD is postnatally induced in both tissues later in neural development compared to that of postsynaptic density protein 95 (Psd-95), which is a synaptic protein required for glutamate receptor organization (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text explicitly states postnatal induction, and this is supported by immunoblotting data shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:42:22.581593Z"
+    },
+    {
+      "id": "06a7ff78-9618-4b4e-9fbe-11730c814f29",
+      "content_id": "2840dc82-6646-4707-b1c8-9dc1ffbe7e60",
+      "claim_id": "C6",
+      "claim": "Drp1ABCD expression is ubiquitously expressed in multiple brain subregions, including the hippocampus, cortex, midbrain, striatum, and cerebellum.",
+      "claim_type": "EXPLICIT",
+      "source": "In the brain, Drp1ABCD was ubiquitously expressed in multiple subregions, including the hippocampus, cortex, midbrain, striatum, and cerebellum (Itoh et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly states the brain regions where Drp1ABCD is expressed, supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:42:22.581593Z"
+    },
+    {
+      "id": "b6ccb148-1a0b-422f-a562-f48fa41d7809",
+      "content_id": "2840dc82-6646-4707-b1c8-9dc1ffbe7e60",
+      "claim_id": "C7",
+      "claim": "The expression of Drp1ABCD gradually increases in cultured hippocampal neurons and reaches a plateau around 3 weeks.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the in vivo data, immunoblotting of hippocampal neurons cultured in vitro showed that the expression of Drp1ABCD gradually increases and reaches a plateau around 3 weeks (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text explicitly states the temporal pattern of Drp1ABCD expression in cultured neurons, supported by immunoblotting data in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:42:22.581593Z"
+    },
+    {
+      "id": "d1985094-0a74-4546-b2ef-b09ebf8c69df",
+      "content_id": "2840dc82-6646-4707-b1c8-9dc1ffbe7e60",
+      "claim_id": "C8",
+      "claim": "HA-Drp1ABCD is enriched in postsynaptic regions compared to HA-Drp1BCD.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, however, we found that HA-Drp1ABCD is enriched in postsynaptic regions, compared to HA-Drp1BCD (Figure 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text explicitly states the enrichment of HA-Drp1ABCD in postsynaptic regions, supported by immunofluorescence data in Figure 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:42:22.581593Z"
+    },
+    {
+      "id": "b51282aa-39d3-4093-a870-4680582aa1e6",
+      "content_id": "2840dc82-6646-4707-b1c8-9dc1ffbe7e60",
+      "claim_id": "C9",
+      "claim": "Line scanning analysis showed a significant increase in the signal ratio of HA-Drp1ABCD (spine vs dendritic shaft) compared to HA-Drp1BCD.",
+      "claim_type": "EXPLICIT",
+      "source": "Line scanning analysis of their fluorescence showed a significant increase in the signal ratio of HA-Drp1ABCD (spine vs dendritic shaft), compared to HA-Drp1BCD (Figure 1F and G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text explicitly states the quantitative analysis results, supported by data in Figures 1F and 1G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:42:22.581593Z"
+    },
+    {
+      "id": "39d219a2-c13e-46a3-8ed9-3e5d10e1d7bd",
+      "content_id": "2840dc82-6646-4707-b1c8-9dc1ffbe7e60",
+      "claim_id": "C10",
+      "claim": "HA-Drp1ABCD is preferentially localized around the postsynaptic density, which is in close apposition to the pre-synaptic marker vesicular glutamate transporter 1.",
+      "claim_type": "EXPLICIT",
+      "source": "Analysis of HA-Drp1ABCD and HA-Drp1BCD in synapses at high magnification suggested its preferential localization of HA-Drp1ABCD around the postsynaptic density, which is in a close apposition to the pre-synaptic marker vesicular glutamate transporter 1 (Figure 1H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text explicitly states the localization pattern, supported by high magnification imaging data in Figure 1H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:42:22.581593Z"
+    },
+    {
+      "id": "63ee1c57-9647-4ae4-ab4a-893aba4d858f",
+      "content_id": "2840dc82-6646-4707-b1c8-9dc1ffbe7e60",
+      "claim_id": "C11",
+      "claim": "Increased levels of Drp1ABCD were co-fractionated with the postsynaptic density compared to total Drp1.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the immunofluorescence data, increased levels of Drp1ABCD were co-fractionated with the postsynaptic density, compared to total Drp1 detected by pan-Drp1 antibodies (Figure 1I and J).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text explicitly states the biochemical fractionation results, supported by data in Figures 1I and 1J.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:42:22.581593Z"
+    },
+    {
+      "id": "92a10d70-6a94-4d81-a77d-0373771d0a8e",
+      "content_id": "2840dc82-6646-4707-b1c8-9dc1ffbe7e60",
+      "claim_id": "C12",
+      "claim": "Drp1exonA-KO mice were born at an expected Mendelian ratio with normal weights of the body and brain.",
+      "claim_type": "EXPLICIT",
+      "source": "Drp1exonA-KO mice were born at an expected Mendelian ratio with normal weights of the body and brain (Figure 2C\u2013E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text explicitly states the birth ratio and weight measurements, supported by data in Figures 2C-E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:42:22.581593Z"
+    },
+    {
+      "id": "05e9c1d9-0222-491d-8b80-ddbe3d8a2e7f",
+      "content_id": "2840dc82-6646-4707-b1c8-9dc1ffbe7e60",
+      "claim_id": "C13",
+      "claim": "H and E staining of sagittal brain sections showed that the histology of the cerebellum appears to be normal in Drp1exonA-KO mice.",
+      "claim_type": "EXPLICIT",
+      "source": "H and E staining of sagittal brain sections showed that the histology of the cerebellum appears to be normal in Drp1exonA-KO mice (Figure 2F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text explicitly states the histological findings, supported by H&E staining images in Figure 2F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:42:22.581593Z"
+    },
+    {
+      "id": "5fcdfe2f-185e-4eb8-a638-33756450f12b",
+      "content_id": "2840dc82-6646-4707-b1c8-9dc1ffbe7e60",
+      "claim_id": "C14",
+      "claim": "DAPI staining showed similar nuclear patterns of neurons and the thickness of the CA1 layer in the hippocampus in control and Drp1exonA-KO mice.",
+      "claim_type": "EXPLICIT",
+      "source": "DAPI staining also showed similar nuclear patterns of neurons and the thickness of the CA1 layer in the hippocampus in control and Drp1exonA-KO mice (Figure 2G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text explicitly states the DAPI staining results, supported by imaging data in Figure 2G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:42:22.581593Z"
+    },
+    {
+      "id": "df4df378-b030-4f49-90d9-2e814da498d2",
+      "content_id": "2840dc82-6646-4707-b1c8-9dc1ffbe7e60",
+      "claim_id": "C15",
+      "claim": "The loss of Drp1ABCD does not change the overall structure of the brain.",
+      "claim_type": "EXPLICIT",
+      "source": "These data suggest that the loss of Drp1ABCD does not change the overall structure of the brain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly states this conclusion based on histological and DAPI staining data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:42:22.581593Z"
+    },
+    {
+      "id": "889641af-92f2-475c-9e40-51446c7c60ff",
+      "content_id": "2840dc82-6646-4707-b1c8-9dc1ffbe7e60",
+      "claim_id": "C16",
+      "claim": "Drp1exonA-KO neurons showed more clathrin-coated pits (CCPs) in postsynaptic terminals compared with control neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "However, remarkably, the number of clathrin-coated pits (CCPs) was significantly different in these neurons\u2014Drp1exonA-KO neurons showed more CCPs in postsynaptic terminals compared with control neurons (Figure 2H and I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text explicitly states the increase in CCPs, supported by electron microscopy data in Figures 2H and 2I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:42:22.581593Z"
+    },
+    {
+      "id": "bdb7039e-2aee-4d25-ac99-6be1d2a79a33",
+      "content_id": "2840dc82-6646-4707-b1c8-9dc1ffbe7e60",
+      "claim_id": "C17",
+      "claim": "The number of CCPs in presynaptic terminals was indistinguishable between control and Drp1exonA-KO neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the number of CCPs in presynaptic terminals was indistinguishable (Figure 2H and J).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text explicitly states no difference in presynaptic CCPs, supported by data in Figures 2H and 2J.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:42:22.581593Z"
+    },
+    {
+      "id": "26726a36-180c-4017-a5db-3b80ca4e02a7",
+      "content_id": "2840dc82-6646-4707-b1c8-9dc1ffbe7e60",
+      "claim_id": "C18",
+      "claim": "Drp1exonA-KO neurons showed an increased frequency of shallow and U-shaped CCPs, which likely represent early stages during endocytosis.",
+      "claim_type": "EXPLICIT",
+      "source": "We found an increased frequency of shallow and U-shaped CCPs, which likely represent early stages during endocytosis, in Drp1exonA-KO neurons (Figure 2K and L).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text explicitly states the increase in specific CCP morphologies, supported by electron microscopy data in Figures 2K and 2L.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:42:22.581593Z"
+    },
+    {
+      "id": "b6e0c27e-dcfc-4b78-b8d0-890323f39a97",
+      "content_id": "2840dc82-6646-4707-b1c8-9dc1ffbe7e60",
+      "claim_id": "C19",
+      "claim": "The frequencies of omega-shaped CCPs were similar in control and Drp1exonA-KO neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "The frequencies of omega-shaped CCPs were similar in control and Drp1exonA-KO neurons (Figure 2K and L).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text explicitly states no difference in omega-shaped CCPs, supported by data in Figures 2K and 2L.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:42:22.581593Z"
+    },
+    {
+      "id": "cf5f7263-9fc8-4c09-90e6-12607fe90656",
+      "content_id": "2840dc82-6646-4707-b1c8-9dc1ffbe7e60",
+      "claim_id": "C20",
+      "claim": "Dynasore significantly increased the number of CCPs at postsynaptic terminals in control neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, dynasore significantly increased the number of CCPs at postsynaptic terminals in control neurons (Figure 2M and N).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text explicitly states the effect of dynasore treatment, supported by electron microscopy data in Figures 2M and 2N.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:42:22.581593Z"
+    },
+    {
+      "id": "92c3a823-b27c-4423-bdd7-7bec0d82cafa",
+      "content_id": "2840dc82-6646-4707-b1c8-9dc1ffbe7e60",
+      "claim_id": "C21",
+      "claim": "When Drp1exonA-KO neurons were treated with dynasore, there was no increase in the number of CCPs.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, when we treated Drp1exonA-KO neurons with dynasore, we found no increase in the number of CCPs (Figure 2M and N).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text explicitly states the lack of response to dynasore in KO neurons, supported by data in Figures 2M and 2N.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:42:22.581593Z"
+    },
+    {
+      "id": "842a94bf-a616-43d9-8e63-690dc9d905db",
+      "content_id": "2840dc82-6646-4707-b1c8-9dc1ffbe7e60",
+      "claim_id": "C22",
+      "claim": "The rate of clathrin-mediated endocytosis is likely decreased in Drp1exonA-KO neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, it is likely that the rate of clathrin-mediated endocytosis is decreased in Drp1exonA-KO neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly states this conclusion based on the dynasore treatment experiments.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:42:22.581593Z"
+    },
+    {
+      "id": "8c9bdc17-27cf-4506-96f4-26856ae610ee",
+      "content_id": "2840dc82-6646-4707-b1c8-9dc1ffbe7e60",
+      "claim_id": "C23",
+      "claim": "The accumulation of shallow and U-shaped CCPs, but not omega-shaped ones, suggests that Drp1ABCD may function at an early step upstream of the constriction and severing of the neck of coated pits that is mediated by dynamin.",
+      "claim_type": "EXPLICIT",
+      "source": "The accumulation of shallow and U-shaped CCPs, but not omega-shaped ones, suggest that Drp1ABCD may function at an early step upstream of the constriction and severing of the neck of coated pits that is mediated by dynamin (Figure 2S).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text explicitly states this interpretation of the CCP morphology data, supported by the summary in Figure 2S.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:42:22.581593Z"
+    },
+    {
+      "id": "a924c9db-ee4f-430b-ba22-26613b9e139d",
+      "content_id": "2840dc82-6646-4707-b1c8-9dc1ffbe7e60",
+      "claim_id": "C24",
+      "claim": "Dynasore did not inhibit Drp1 as confirmed by examining mitochondrial morphology in neurons and mouse embryonic fibroblasts.",
+      "claim_type": "EXPLICIT",
+      "source": "We confirmed that dynasore did not inhibit Drp1 by examining mitochondrial morphology in neurons and mouse embryonic fibroblasts using electron microscopy and immunofluorescence microscopy with antibodies to a mitochondrial protein (pyruvate dehydrogenase, PDH)(Figure 2O and P; Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text explicitly states the confirmation that dynasore does not affect Drp1, supported by mitochondrial morphology data in Figure 2O, 2P, and Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:42:22.581593Z"
+    },
+    {
+      "id": "cb645d64-621f-4db3-bebb-bb13c779a6fe",
+      "content_id": "2840dc82-6646-4707-b1c8-9dc1ffbe7e60",
+      "claim_id": "C25",
+      "claim": "When control neurons were stimulated with NMDA in the presence of dynasore, the number of postsynaptic clathrin-coated pits increased.",
+      "claim_type": "EXPLICIT",
+      "source": "When we stimulated neurons in the presence of dynasore, the number of postsynaptic clathrin-coated pits increased in control neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly states the effect of NMDA stimulation with dynasore in control neurons.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:42:22.581593Z"
+    },
+    {
+      "id": "835cdb51-560e-4412-9890-434ba90bd4cd",
+      "content_id": "2840dc82-6646-4707-b1c8-9dc1ffbe7e60",
+      "claim_id": "C26",
+      "claim": "The number of CCPs remained unchanged in Drp1exonA-KO neurons when stimulated with NMDA in the presence of dynasore.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the number of CCPs remained unchanged in Drp1exonA-KO neurons (Figure 2Q).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text explicitly states the lack of change in KO neurons, supported by data in Figure 2Q.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:42:22.581593Z"
+    },
+    {
+      "id": "07d73642-9dd9-4775-9901-7e98d3196840",
+      "content_id": "2840dc82-6646-4707-b1c8-9dc1ffbe7e60",
+      "claim_id": "C27",
+      "claim": "Postsynaptic clathrin-mediated endocytosis is slow in Drp1exonA-KO neurons even when stimulated by NMDA.",
+      "claim_type": "EXPLICIT",
+      "source": "These data further support the notion that postsynaptic clathrin-mediated endocytosis is slow in Drp1exonA-KO neurons even when stimulated by NMDA (Figure 2S).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text explicitly states this conclusion based on NMDA stimulation experiments, supported by the summary in Figure 2S.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:42:22.581593Z"
+    },
+    {
+      "id": "c34f842f-35bc-49b1-a498-5ee2461594a5",
+      "content_id": "2840dc82-6646-4707-b1c8-9dc1ffbe7e60",
+      "claim_id": "C28",
+      "claim": "When stimulated by NMDA in the absence of dynasore, the number of CCPs was decreased in Drp1exonA-KO neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, when stimulated by NMDA in the absence of dynasore, the number of CCPs was decreased in Drp1exonA-KO neurons (Figure 2Q).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text explicitly states the decrease in CCPs under these conditions, supported by data in Figure 2Q.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:42:22.581593Z"
+    },
+    {
+      "id": "47c4c63c-1d1c-40f9-bd28-87fb71703b16",
+      "content_id": "2840dc82-6646-4707-b1c8-9dc1ffbe7e60",
+      "claim_id": "C29",
+      "claim": "NMDA induces internalization of some endocytic vesicles in Drp1exonA-KO neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "It appears that NMDA induces internalization of some endocytic vesicles in Drp1exonA-KO neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly states this interpretation of the NMDA stimulation data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:42:22.581593Z"
+    },
+    {
+      "id": "da6206ee-7079-4c5c-8dfe-5986847bc7da",
+      "content_id": "2840dc82-6646-4707-b1c8-9dc1ffbe7e60",
+      "claim_id": "C30",
+      "claim": "Drp1exonA-KO neurons have slow kinetics of endocytosis but do not completely block it.",
+      "claim_type": "EXPLICIT",
+      "source": "We suggest that Drp1exonA-KO neurons have slow kinetics of endocytosis but do not completely block it (Figure 2S).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text explicitly states this conclusion, supported by the summary in Figure 2S.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:42:22.581593Z"
+    },
+    {
+      "id": "bcecb861-901f-4eaa-9460-94d73bcb9211",
+      "content_id": "2840dc82-6646-4707-b1c8-9dc1ffbe7e60",
+      "claim_id": "C31",
+      "claim": "A higher frequency of dissociation of mCherry-CLC signals from Psd-95 signals was found in Drp1exonA-KO neurons compared to control neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, we found a higher frequency of dissociation of mCherry-CLC signals from Psd-95 signals in Drp1exonA-KO neurons (Figure 3A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text explicitly states the increased dissociation, supported by imaging data in Figures 3A and 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:42:22.581593Z"
+    },
+    {
+      "id": "f4e4a86d-0388-4ead-9965-ae3786c989bc",
+      "content_id": "2840dc82-6646-4707-b1c8-9dc1ffbe7e60",
+      "claim_id": "C32",
+      "claim": "Decreased levels of clathrin in the synapses in Drp1exonA-KO neurons slow the progression of endocytosis.",
+      "claim_type": "EXPLICIT",
+      "source": "We speculate that decreased levels of clathrin in the synapses in Drp1exonA-KO neurons slow the progression of endocytosis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly states this speculation based on the clathrin localization data.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:42:22.581593Z"
+    },
+    {
+      "id": "10c41fb4-bb6c-45ba-86f7-8accb656920b",
+      "content_id": "2840dc82-6646-4707-b1c8-9dc1ffbe7e60",
+      "claim_id": "C33",
+      "claim": "In Drp1exonA-KO synapses, the formation of CCPs is initiated; however, the maturation of CCPs is likely decreased due to the limited availability of clathrin molecules.",
+      "claim_type": "EXPLICIT",
+      "source": "In these synapses, the formation of CCPs is initiated; however, the maturation of CCPs is likely decreased due to the limited availability of clathrin molecules.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly states this interpretation of the mechanism.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:42:22.581593Z"
+    },
+    {
+      "id": "a8564fbf-949d-411f-a450-181f83e1d806",
+      "content_id": "2840dc82-6646-4707-b1c8-9dc1ffbe7e60",
+      "claim_id": "C34",
+      "claim": "CCPs accumulate during relatively early stages of endocytosis (e.g., shallow and U-shaped CCPs) in Drp1exonA-KO neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "As a result, CCPs accumulate during relatively early stages of endocytosis (e.g., shallow and U-shaped CCPs) (Figure 2L).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text explicitly states the accumulation of early-stage CCPs, supported by data in Figure 2L.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:42:22.581593Z"
+    },
+    {
+      "id": "62e98dac-f990-408b-9b43-ad93899c1719",
+      "content_id": "2840dc82-6646-4707-b1c8-9dc1ffbe7e60",
+      "claim_id": "C35",
+      "claim": "Drp1ABCD, unlike dynamin, does not play a role in the scission of the neck of coated pits.",
+      "claim_type": "EXPLICIT",
+      "source": "These data suggest that Drp1ABCD, unlike dynamin, does not play a role in the scission of the neck of coated pits.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly states this conclusion based on the CCP morphology and dynasore experiments.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:42:22.581593Z"
+    },
+    {
+      "id": "4bad324d-bb6a-4c41-9e05-68328f3735a5",
+      "content_id": "2840dc82-6646-4707-b1c8-9dc1ffbe7e60",
+      "claim_id": "C36",
+      "claim": "AMPA receptors, such as GluR1, GluR2 and GluR3, are normally expressed on the plasma membrane of Drp1exonA-KO neurons in surface biotinylation experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to the Homer pathway, however, we found that AMPA receptors, such as GluR1, GluR2 and GluR3, are normally expressed on the plasma membrane of Drp1exonA-KO neurons in surface biotinylation experiments (Figure 3C and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text explicitly states the normal expression of AMPA receptors, supported by surface biotinylation data in Figures 3C and 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:42:22.581593Z"
+    },
+    {
+      "id": "48742038-473c-4c36-a1ef-0d7696d7c30f",
+      "content_id": "2840dc82-6646-4707-b1c8-9dc1ffbe7e60",
+      "claim_id": "C37",
+      "claim": "Endocytosis of GFP-GluR1 in response to NMDA stimulation was not perturbed in Drp1exonA-KO neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, endocytosis of GFP-GluR1 in response to NMDA stimulation was not perturbed in Drp1exonA-KO neurons (Figure 3E and F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text explicitly states the normal GluR1 endocytosis, supported by imaging data in Figures 3E and 3F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:42:22.581593Z"
+    },
+    {
+      "id": "e6de0b63-eb39-4a67-ba09-beb245c1b678",
+      "content_id": "2840dc82-6646-4707-b1c8-9dc1ffbe7e60",
+      "claim_id": "C38",
+      "claim": "The Drp1ABCD pathway has cargos that differ from those of the Homer pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "These data suggest that the Drp1ABCD pathway has cargos that differ from those of the Homer pathway (Figure 3G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text explicitly states this conclusion based on the AMPA receptor and GluR1 endocytosis data, supported by the model in Figure 3G.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:42:22.581593Z"
+    },
+    {
+      "id": "e6aa4fde-8f35-4f3a-be0b-0786de52382c",
+      "content_id": "2840dc82-6646-4707-b1c8-9dc1ffbe7e60",
+      "claim_id": "C39",
+      "claim": "No gross changes in the morphology of mitochondria were observed in proximal and distal regions along dendrites in Drp1exonA-KO neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Using immunofluorescence microscopy, we observed no gross changes in the morphology of mitochondria in proximal and distal regions along with dendrites in Drp1exonA-KO neurons (Figure 3H\u2013J).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text explicitly states the lack of mitochondrial morphology changes, supported by imaging data in Figures 3H-J.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:42:22.581593Z"
+    },
+    {
+      "id": "c3f0630c-0b62-49fc-838c-47cf5da5c11c",
+      "content_id": "2840dc82-6646-4707-b1c8-9dc1ffbe7e60",
+      "claim_id": "C40",
+      "claim": "Inhibition of endocytosis does not appear to be the result of defects in mitochondrial morphology.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, inhibition of endocytosis does not appear to be the result of defects in mitochondrial morphology.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly states this conclusion based on the mitochondrial morphology data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:42:22.581593Z"
+    },
+    {
+      "id": "230a18bd-2c22-4418-9632-02505a04252b",
+      "content_id": "2840dc82-6646-4707-b1c8-9dc1ffbe7e60",
+      "claim_id": "C41",
+      "claim": "Other Drp1 isoforms, such as Drp1BCD and Drp1CD, which together constitute the majority of Drp1 isoforms in the brain, mainly control mitochondrial division and morphology.",
+      "claim_type": "EXPLICIT",
+      "source": "It is likely that other Drp1 isoforms, such as Drp1BCD and Drp1CD, which together constitute the majority of Drp1 isoforms in the brain (Itoh et al., 2018), mainly control mitochondrial division and morphology.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly states this interpretation, supported by citation.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:42:22.581593Z"
+    },
+    {
+      "id": "4ed6afc5-cd2f-4098-acaa-bc7db73c8178",
+      "content_id": "2840dc82-6646-4707-b1c8-9dc1ffbe7e60",
+      "claim_id": "C42",
+      "claim": "Distinct Drp1 isoforms may function separately in endocytosis at pre- and postsynaptic terminals.",
+      "claim_type": "EXPLICIT",
+      "source": "Since we found endocytic defects only at postsynaptic terminals in Drp1exonA-KO neurons, distinct Drp1 isoforms may function separately in endocytosis at pre- and postsynaptic terminals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly states this speculation based on the observation of postsynaptic-specific endocytic defects.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:42:22.581593Z"
+    },
+    {
+      "id": "745984c8-057f-4a7b-b7c5-5fcae1afb4f2",
+      "content_id": "2840dc82-6646-4707-b1c8-9dc1ffbe7e60",
+      "claim_id": "C43",
+      "claim": "Drp1exonA-KO neurons significantly increased the number of primary dendrites with dendritic spines compared to control neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Intriguingly, during analysis of the morphology of cultured hippocampal neurons, we noticed that Drp1exonA-KO neurons significantly increased the number of primary dendrites with dendritic spines (e.g., dendrites that directly emerged from the soma), compared to control neurons (Figure 4A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text explicitly states the increase in primary dendrites, supported by imaging data in Figures 4A and 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:42:22.581593Z"
+    },
+    {
+      "id": "1671b172-7d23-4685-8ca9-e3e0b2d56013",
+      "content_id": "2840dc82-6646-4707-b1c8-9dc1ffbe7e60",
+      "claim_id": "C44",
+      "claim": "The number of axons that lack spines remained unchanged (one axon per neuron) in Drp1exonA-KO neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "The number of axons that lack spines remained unchanged (one axon per neuron).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly states the unchanged number of axons.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:42:22.581593Z"
+    },
+    {
+      "id": "3efe8dfe-2e56-4bfa-bd02-8df38890f272",
+      "content_id": "2840dc82-6646-4707-b1c8-9dc1ffbe7e60",
+      "claim_id": "C45",
+      "claim": "No significant difference was observed in the number of dendritic branches between control and Drp1exonA-KO neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed no significant difference in the number of dendritic branches between control and Drp1exonA-KO neurons (Figure 4C)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text explicitly states no difference in dendritic branches, supported by data in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:42:22.581593Z"
+    },
+    {
+      "id": "439eaa41-083d-4a00-b325-08112a4b2779",
+      "content_id": "2840dc82-6646-4707-b1c8-9dc1ffbe7e60",
+      "claim_id": "C46",
+      "claim": "No significant difference was observed in the density of dendritic spines between control and Drp1exonA-KO neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed no significant difference in the number of dendritic branches between control and Drp1exonA-KO neurons (Figure 4C) or the density of dendritic spines (Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text explicitly states no difference in spine density, supported by data in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:42:22.581593Z"
+    },
+    {
+      "id": "418ab238-db64-456d-a9ff-634da369b7bc",
+      "content_id": "2840dc82-6646-4707-b1c8-9dc1ffbe7e60",
+      "claim_id": "C47",
+      "claim": "AB-targeted shRNA specifically knocked down GFP-Drp1ABCD, but not GFP-Drp1ACD or GFP-Drp1BCD.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that AB-targeted shRNA specifically knocked down GFP-Drp1ABCD, but not GFP-Drp1ACD or GFP-Drp1BCD (Figure 4F, AB shRNA).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text explicitly states the specificity of the shRNA, supported by immunoblotting data in Figure 4F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:42:22.581593Z"
+    },
+    {
+      "id": "3ea820d7-f89e-412a-be0c-92dd51eefccf",
+      "content_id": "2840dc82-6646-4707-b1c8-9dc1ffbe7e60",
+      "claim_id": "C48",
+      "claim": "AB-targeted shRNA significantly increased the number of primary dendrites in cultured neurons at both 2 and 3 weeks compared to scramble shRNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Supporting the data from the above experiments using Drp1exonA-KO neurons, AB-targeted shRNA significantly increased the number of primary dendrites in cultured neurons at both 2 and 3 weeks compared to scramble shRNA (Figure 4G and H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text explicitly states the increase in primary dendrites with shRNA knockdown, supported by imaging data in Figures 4G and 4H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:42:22.581593Z"
+    },
+    {
+      "id": "6a3c79bd-f2ba-4a42-bb82-1e0de3768103",
+      "content_id": "2840dc82-6646-4707-b1c8-9dc1ffbe7e60",
+      "claim_id": "C49",
+      "claim": "Ectopic dendrites extended within a short period of time (3 days) after knockdown of Drp1ABCD in mature neurons with developed dendrites.",
+      "claim_type": "EXPLICIT",
+      "source": "Ectopic dendrites extended within a short period of time (3 days) after knockdown of Drp1ABCD in mature neurons with developed dendrites.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly states the time course of ectopic dendrite formation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:42:22.581593Z"
+    },
+    {
+      "id": "cd883256-d387-4a5e-9da9-412901fa847f",
+      "content_id": "2840dc82-6646-4707-b1c8-9dc1ffbe7e60",
+      "claim_id": "C50",
+      "claim": "The Drp1ABCD plasmid, but not the empty plasmid, significantly rescued the effect of AB-targeted shRNAs on dendrite number.",
+      "claim_type": "EXPLICIT",
+      "source": "The Drp1ABCD plasmid, but not the empty plasmid, significantly rescued the effect of AB-targeted shRNAs (Figure 4I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text explicitly states the rescue experiment results, supported by data in Figure 4I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:42:22.581593Z"
+    },
+    {
+      "id": "183c1fc8-f02e-4ce1-a625-c0aa0fd62b8e",
+      "content_id": "2840dc82-6646-4707-b1c8-9dc1ffbe7e60",
+      "claim_id": "C51",
+      "claim": "Tetrodotoxin significantly blocked the effect of Drp1ABCD knockdown on ectopic dendrite formation.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that tetrodotoxin significantly blocked the effect of Drp1ABCD knockdown on ectopic dendrite formation, but did not affect the number of dendrites in control neurons (Figure 4J).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text explicitly states the effect of tetrodotoxin treatment, supported by data in Figure 4J.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:42:22.581593Z"
+    },
+    {
+      "id": "d3dee978-ed87-4fd4-8306-91be7118a0fc",
+      "content_id": "2840dc82-6646-4707-b1c8-9dc1ffbe7e60",
+      "claim_id": "C52",
+      "claim": "The formation of primary dendrites induced by Drp1ABCD depletion requires neuronal activity.",
+      "claim_type": "EXPLICIT",
+      "source": "These data suggest that the formation of primary dendrites induced by Drp1ABCD depletion requires neuronal activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly states this conclusion based on the tetrodotoxin experiments.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:42:22.581593Z"
+    },
+    {
+      "id": "3e30d632-cb1d-4293-91cc-8ed689062c4b",
+      "content_id": "2840dc82-6646-4707-b1c8-9dc1ffbe7e60",
+      "claim_id": "C53",
+      "claim": "A significant increase in the number of neurites was found in the CA1 and CA2 layers in the dorsal hippocampus of Drp1exonA-KO mice expressing cytosolic GFP.",
+      "claim_type": "EXPLICIT",
+      "source": "We found a significant increase in the number of neurites in the CA1 and CA2 layers in the dorsal hippocampus (Figure 4K)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text explicitly states the increase in neurites in vivo, supported by imaging data in Figure 4K.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:42:22.581593Z"
+    },
+    {
+      "id": "85c21f17-ad1b-41c7-b2fa-15a2188ec5fb",
+      "content_id": "2840dc82-6646-4707-b1c8-9dc1ffbe7e60",
+      "claim_id": "C54",
+      "claim": "The effect of Drp1ABCD loss on primary dendrites was evident in the cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "The effect of Drp1ABCD loss on primary dendrites was also evident in the cortex (Figure 4L).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text explicitly states the effect in the cortex, supported by data in Figure 4L.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:42:22.581593Z"
+    },
+    {
+      "id": "a281fc88-2c28-463b-939b-a466162f2e9f",
+      "content_id": "2840dc82-6646-4707-b1c8-9dc1ffbe7e60",
+      "claim_id": "C55",
+      "claim": "Knockdown of Drp1ABCD significantly increased the number of neurites in the hippocampus in vivo at 7 weeks after in utero electroporation.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the knockout results, we found that knockdown of Drp1ABCD significantly increased the number of neurites, compared to the scramble control, in the hippocampus in vivo (Figure 4N).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text explicitly states the in utero electroporation results, supported by imaging data in Figure 4N.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:42:22.581593Z"
+    },
+    {
+      "id": "b2d3e7a9-6a58-42e3-853e-a8374326abd5",
+      "content_id": "2840dc82-6646-4707-b1c8-9dc1ffbe7e60",
+      "claim_id": "C56",
+      "claim": "Drp1exonA-KO mice exhibited normal general locomotor activities in open field test.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed normal general locomotor activities in Drp1exonA-KO mice in open field test (Figure 4\u2014figure supplement 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text explicitly states the normal locomotor activity, supported by behavioral data in Figure 4\u2014figure supplement 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:42:22.581593Z"
+    },
+    {
+      "id": "c26f3ad8-4987-487e-9158-65899bec518d",
+      "content_id": "2840dc82-6646-4707-b1c8-9dc1ffbe7e60",
+      "claim_id": "C57",
+      "claim": "Drp1exonA-KO mice exhibited significantly increased prepulse inhibition (PPI) of the acoustic startle without alterations in the startle response.",
+      "claim_type": "EXPLICIT",
+      "source": "Intriguingly, KO mice exhibited significantly increased prepulse inhibition (PPI) of the acoustic startle without alterations in the startle response (Figure 4O and P).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text explicitly states the increased PPI, supported by behavioral data in Figures 4O and 4P.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:42:22.581593Z"
+    },
+    {
+      "id": "fb97a40c-a3bc-4d1c-882f-034ae05bd73a",
+      "content_id": "2840dc82-6646-4707-b1c8-9dc1ffbe7e60",
+      "claim_id": "C58",
+      "claim": "PPI, as a measure of sensorimotor gating, involves several brain regions including the hippocampus, medial prefrontal cortex, amygdala, and nucleus accumbens.",
+      "claim_type": "EXPLICIT",
+      "source": "PPI, as a measure of sensorimotor gating, involves several brain regions (including the hippocampus, medial prefrontal cortex, amygdala, and nucleus accumbens) (Lee and Davis, 1997; Swerdlow et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly states the brain regions involved in PPI, supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:42:22.581593Z"
+    },
+    {
+      "id": "5fe0f797-9d5e-4809-8616-3d4ded53b267",
+      "content_id": "2840dc82-6646-4707-b1c8-9dc1ffbe7e60",
+      "claim_id": "C59",
+      "claim": "Sensorimotor gating function enables selective attention that distinguishes or separates critical information from background noise.",
+      "claim_type": "EXPLICIT",
+      "source": "Sensorimotor gating function enables selective attention that distinguishes or separates critical information from background noise.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly states the function of sensorimotor gating.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:42:22.581593Z"
+    },
+    {
+      "id": "906240e9-5f06-4116-b92a-268dd28581e9",
+      "content_id": "2840dc82-6646-4707-b1c8-9dc1ffbe7e60",
+      "claim_id": "C60",
+      "claim": "In humans, sensorimotor gating function is often referred to as the cocktail party effect.",
+      "claim_type": "EXPLICIT",
+      "source": "In humans, sensorimotor gating function is often referred to as the cocktail party effect, which allows one to talk with someone even in a crowded party environment (Lee and Davis, 1997; Swerdlow et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly states the cocktail party effect, supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:42:22.581593Z"
+    },
+    {
+      "id": "801e2be6-98d7-43fb-bb83-46deb1d94f5c",
+      "content_id": "2840dc82-6646-4707-b1c8-9dc1ffbe7e60",
+      "claim_id": "C61",
+      "claim": "Defects in sensorimotor gating function have been associated with mental illness, such as schizophrenia and autism spectrum disorders.",
+      "claim_type": "EXPLICIT",
+      "source": "This gating function is important for human health and its defects have been associated with mental illness, such as schizophrenia and autism spectrum disorders (Lee and Davis, 1997; Swerdlow et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly states the association with mental illness, supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:42:22.581593Z"
+    },
+    {
+      "id": "0d72cbad-b3f8-4c1f-a300-916a5f32a6f4",
+      "content_id": "2840dc82-6646-4707-b1c8-9dc1ffbe7e60",
+      "claim_id": "C62",
+      "claim": "No alterations were observed in spatial working and recognition memory tasks in Y-maze tests in Drp1exonA-KO mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Behavioral changes in Drp1exonA-KO mice appeared to be specific to sensorimotor gating since we observed no alterations in spatial working and recognition memory tasks in Y-maze tests (Figure 4\u2014figure supplement 3B)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text explicitly states no alterations in Y-maze tests, supported by behavioral data in Figure 4\u2014figure supplement 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:42:22.581593Z"
+    },
+    {
+      "id": "1ee0fe75-3776-4c94-a2ef-2b2aa77998ab",
+      "content_id": "2840dc82-6646-4707-b1c8-9dc1ffbe7e60",
+      "claim_id": "C63",
+      "claim": "No alterations were observed in motor coordination in rotarod test in Drp1exonA-KO mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Behavioral changes in Drp1exonA-KO mice appeared to be specific to sensorimotor gating since we observed no alterations in spatial working and recognition memory tasks in Y-maze tests (Figure 4\u2014figure supplement 3B), motor coordination in rotarod test (Figure 4\u2014figure supplement 3C)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text explicitly states no alterations in rotarod test, supported by behavioral data in Figure 4\u2014figure supplement 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:42:22.581593Z"
+    },
+    {
+      "id": "c59ffb9b-b027-47b9-bea2-87876be7d8f7",
+      "content_id": "2840dc82-6646-4707-b1c8-9dc1ffbe7e60",
+      "claim_id": "C64",
+      "claim": "No alterations were observed in anxiety level in elevated plus maze test in Drp1exonA-KO mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Behavioral changes in Drp1exonA-KO mice appeared to be specific to sensorimotor gating since we observed no alterations in spatial working and recognition memory tasks in Y-maze tests (Figure 4\u2014figure supplement 3B), motor coordination in rotarod test (Figure 4\u2014figure supplement 3C), and anxiety level in elevated plus maze test (Figure 4\u2014figure supplement 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text explicitly states no alterations in elevated plus maze test, supported by behavioral data in Figure 4\u2014figure supplement 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:42:22.581593Z"
+    },
+    {
+      "id": "5d57602a-0318-4b29-be68-1c854a752f70",
+      "content_id": "2840dc82-6646-4707-b1c8-9dc1ffbe7e60",
+      "claim_id": "C65",
+      "claim": "Drp1ABCD controls postsynaptic endocytosis independently of mitochondrial division.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, we found, for the first time, that the novel brain-specific isoform Drp1ABCD controls postsynaptic endocytosis independently of mitochondrial division.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly states this main conclusion of the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:42:22.581593Z"
+    },
+    {
+      "id": "80c47220-f649-4b3e-8108-68be72b655d8",
+      "content_id": "2840dc82-6646-4707-b1c8-9dc1ffbe7e60",
+      "claim_id": "C66",
+      "claim": "Drp1ABCD may control the number of dendrites by suppressing unwanted, excess dendrite formation in neuronal network wiring during postnatal brain development.",
+      "claim_type": "EXPLICIT",
+      "source": "Since the expression of Drp1ABCD is induced during the postnatal period, Drp1ABCD may control the number of dendrites by suppressing unwanted, excess dendrite formation in neuronal network wiring during postnatal brain development.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly states this speculation about the developmental role of Drp1ABCD.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:42:22.581593Z"
+    },
+    {
+      "id": "90a62d39-048f-4962-b17b-9059e85ee94d",
+      "content_id": "2840dc82-6646-4707-b1c8-9dc1ffbe7e60",
+      "claim_id": "C67",
+      "claim": "Drp1 divides mitochondria as a mechano-chemical GTPase.",
+      "claim_type": "EXPLICIT",
+      "source": "Dynamin-related protein 1 (Drp1) divides mitochondria as a mechano-chemical GTPase.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly states the primary function of Drp1.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:42:22.581593Z"
+    },
+    {
+      "id": "000870da-e960-441c-9bd5-0b9b0396f449",
+      "content_id": "2840dc82-6646-4707-b1c8-9dc1ffbe7e60",
+      "claim_id": "C68",
+      "claim": "Multiple Drp1 isoforms are produced through mRNA splicing.",
+      "claim_type": "EXPLICIT",
+      "source": "Multiple Drp1 isoforms are produced through mRNA splicing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly states that Drp1 isoforms are produced by mRNA splicing.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:42:22.581593Z"
+    },
+    {
+      "id": "010766cc-765e-4744-8630-d240e6e6665e",
+      "content_id": "2840dc82-6646-4707-b1c8-9dc1ffbe7e60",
+      "claim_id": "C69",
+      "claim": "Drp1ABCD is enriched in dendritic spines.",
+      "claim_type": "EXPLICIT",
+      "source": "Drp1ABCD is enriched in dendritic spines and regulates postsynaptic clathrin-mediated endocytosis by positioning the endocytic zone at the postsynaptic density, independently of mitochondrial division.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly states the enrichment in dendritic spines.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:42:22.581593Z"
+    },
+    {
+      "id": "9d778552-331d-42f6-a70b-f8a723eeff94",
+      "content_id": "2840dc82-6646-4707-b1c8-9dc1ffbe7e60",
+      "claim_id": "C70",
+      "claim": "Drp1ABCD regulates postsynaptic clathrin-mediated endocytosis by positioning the endocytic zone at the postsynaptic density.",
+      "claim_type": "EXPLICIT",
+      "source": "Drp1ABCD is enriched in dendritic spines and regulates postsynaptic clathrin-mediated endocytosis by positioning the endocytic zone at the postsynaptic density, independently of mitochondrial division.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly states the mechanism of endocytosis regulation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:42:22.581593Z"
+    },
+    {
+      "id": "5b35bee7-8142-40bb-bbf2-718c593d84aa",
+      "content_id": "2840dc82-6646-4707-b1c8-9dc1ffbe7e60",
+      "claim_id": "C71",
+      "claim": "Drp1ABCD loss promotes the formation of ectopic dendrites in neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Drp1ABCD loss promotes the formation of ectopic dendrites in neurons and enhanced sensorimotor gating behavior in mice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly states the effect of Drp1ABCD loss on dendrite formation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:42:22.581593Z"
+    },
+    {
+      "id": "5393edf5-2a72-40c6-b84b-8e457a53a819",
+      "content_id": "2840dc82-6646-4707-b1c8-9dc1ffbe7e60",
+      "claim_id": "C72",
+      "claim": "Drp1ABCD loss enhances sensorimotor gating behavior in mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Drp1ABCD loss promotes the formation of ectopic dendrites in neurons and enhanced sensorimotor gating behavior in mice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly states the behavioral effect of Drp1ABCD loss.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:42:22.581593Z"
+    },
+    {
+      "id": "267191d8-dc0b-4599-adaa-7f6d7b80fadf",
+      "content_id": "2840dc82-6646-4707-b1c8-9dc1ffbe7e60",
+      "claim_id": "C73",
+      "claim": "During mitochondrial division, Drp1 is assembled into helical filaments around the surface of mitochondria.",
+      "claim_type": "EXPLICIT",
+      "source": "During mitochondrial division, Drp1 is assembled into helical filaments around the surface of mitochondria.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly states the assembly of Drp1 during mitochondrial division.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:42:22.581593Z"
+    },
+    {
+      "id": "413cc3fa-5e9f-4d4e-a183-359dac0b868e",
+      "content_id": "2840dc82-6646-4707-b1c8-9dc1ffbe7e60",
+      "claim_id": "C74",
+      "claim": "Through GTP hydrolysis and interactions with receptors, the Drp1 filaments change their conformation and constrict the mitochondrial membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "Through GTP hydrolysis and interactions with receptors, the Drp1 filaments change their conformation and constrict the mitochondrial membrane.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly states the mechanism of Drp1-mediated membrane constriction.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:42:22.581593Z"
+    },
+    {
+      "id": "15305048-bb0a-42c7-a55c-6b33cb3554a5",
+      "content_id": "2840dc82-6646-4707-b1c8-9dc1ffbe7e60",
+      "claim_id": "C75",
+      "claim": "Hyper- or hypo-division caused by the mis-regulation of Drp1 has been linked to many neurological disorders, such as Alzheimer's, Parkinson's, and Huntington's diseases.",
+      "claim_type": "EXPLICIT",
+      "source": "Mitochondrial division is important for human health: hyper- or hypo-division caused by the mis-regulation of Drp1 has been linked to many neurological disorders, such as Alzheimer's, Parkinson's, and Huntington's diseases (Cho et al., 2010; Itoh et al., 2013; Kandimalla and Reddy, 2016; Roy et al., 2015; Serasinghe and Chipuk, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly states the link between Drp1 mis-regulation and neurological disorders, supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:42:22.581593Z"
+    },
+    {
+      "id": "4e290667-e597-4a14-ac3b-a0cd1f86477a",
+      "content_id": "2840dc82-6646-4707-b1c8-9dc1ffbe7e60",
+      "claim_id": "C76",
+      "claim": "Human Drp1 mutations lead to neurodevelopmental defects with post-neonatal lethality, developmental delay, late-onset neurological decline, or optic atrophy.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, human Drp1 mutations also lead to neurodevelopmental defects with post-neonatal lethality, developmental delay, late-onset neurological decline, or optic atrophy (Fahrner et al., 2016; Gerber et al., 2017; Vanstone et al., 2016; Waterham et al., 2007)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly states the effects of human Drp1 mutations, supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:42:22.581593Z"
+    },
+    {
+      "id": "dfbd1a9d-f653-4282-b48a-3cefd0efa9e0",
+      "content_id": "2840dc82-6646-4707-b1c8-9dc1ffbe7e60",
+      "claim_id": "C77",
+      "claim": "The loss of Drp1 results in mitochondrial elongation and enlargement due to unopposed mitochondrial fusion in the absence of mitochondrial division in many cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The loss of Drp1 results in mitochondrial elongation and enlargement due to unopposed mitochondrial fusion in the absence of mitochondrial division in many cells (Friedman and Nunnari, 2014; Kashatus, 2018; Widlansky and Hill, 2018; Youle and van der Bliek, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly states the effect of Drp1 loss on mitochondrial morphology, supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:42:22.581593Z"
+    },
+    {
+      "id": "ec4cb4f2-5ec1-42b7-b222-a6dacdaa855e",
+      "content_id": "2840dc82-6646-4707-b1c8-9dc1ffbe7e60",
+      "claim_id": "C78",
+      "claim": "Complete loss of Drp1 causes embryonic lethality.",
+      "claim_type": "EXPLICIT",
+      "source": "Complete loss causes embryonic lethality (Ishihara et al., 2009; Wakabayashi et al., 2009)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly states the lethality of complete Drp1 loss, supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:42:22.581593Z"
+    },
+    {
+      "id": "71d5f6ed-8faf-4b48-918f-da8fb2120468",
+      "content_id": "2840dc82-6646-4707-b1c8-9dc1ffbe7e60",
+      "claim_id": "C79",
+      "claim": "The loss of Drp1 in cerebellar Purkinje cells results in developmental defects when knocked out in embryos and progressive degeneration when knocked out in post-mitotic adult Purkinje cells.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the loss of Drp1 in cerebellar Purkinje cells results in developmental defects when knocked out in embryos and progressive degeneration when knocked out in post-mitotic adult Purkinje cells (Kageyama et al., 2012; Wakabayashi et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly states the effects of Drp1 loss in Purkinje cells, supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:42:22.581593Z"
+    },
+    {
+      "id": "8c030fbc-2749-46ba-89d8-e19718ec0736",
+      "content_id": "2840dc82-6646-4707-b1c8-9dc1ffbe7e60",
+      "claim_id": "C80",
+      "claim": "The loss of Drp1 induces massive death in dopaminergic neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to Purkinje cells, the loss of Drp1 induces massive death in dopaminergic neurons (Berthet et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly states the effect of Drp1 loss in dopaminergic neurons, supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:42:22.581593Z"
+    },
+    {
+      "id": "bcd8d92f-8bab-41ff-afc4-11d4f5eb173b",
+      "content_id": "2840dc82-6646-4707-b1c8-9dc1ffbe7e60",
+      "claim_id": "C81",
+      "claim": "Hippocampal neurons that lack Drp1 or express dominant negative Drp1 do not die but instead show deficits in bioenergetic and synaptic functions.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, hippocampal neurons are more resistant to the loss of Drp1; hippocampal neurons that lack Drp1 or express dominant negative Drp1, do not die but instead show deficits in bioenergetic and synaptic functions (Divakaruni et al., 2018; Shields et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly states the effects of Drp1 loss in hippocampal neurons, supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:42:22.581593Z"
+    },
+    {
+      "id": "078db751-5576-47ba-9569-ed8f0dcfc6c4",
+      "content_id": "2840dc82-6646-4707-b1c8-9dc1ffbe7e60",
+      "claim_id": "C82",
+      "claim": "Drp1-KO hypothalamic pro-opiomelanocortin neurons are viable and show increased glucose and leptin sensing.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, Drp1-KO hypothalamic pro-opiomelanocortin neurons are also viable and show increased glucose and leptin sensing (Santoro et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly states the effects of Drp1 loss in hypothalamic neurons, supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:42:22.581593Z"
+    },
+    {
+      "id": "d9bf675d-15e8-4ed5-941f-5e488b724e35",
+      "content_id": "2840dc82-6646-4707-b1c8-9dc1ffbe7e60",
+      "claim_id": "C83",
+      "claim": "There are four alternative exons in Drp1 in mice (termed A, B, C, and D).",
+      "claim_type": "EXPLICIT",
+      "source": "There are four alternative exons in Drp1 in mice (termed A, B, C, and D) (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text explicitly states the number and names of alternative exons, supported by Figure 1A.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:42:22.581593Z"
+    },
+    {
+      "id": "d3bc40d0-bf44-483a-92f8-e4bd23dd200b",
+      "content_id": "2840dc82-6646-4707-b1c8-9dc1ffbe7e60",
+      "claim_id": "C84",
+      "claim": "Alternative exons A and B are located in the GTPase domain.",
+      "claim_type": "EXPLICIT",
+      "source": "These alternative exons are located in either the GTPase domain (A and B) or the variable domain (C and D), which is mainly intrinsically disordered and contains regulatory phosphorylation sites (Itoh et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly states the location of exons A and B, supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:42:22.581593Z"
+    },
+    {
+      "id": "3a7bdd6e-8d1d-4b13-be37-3a3ec54b4ed6",
+      "content_id": "2840dc82-6646-4707-b1c8-9dc1ffbe7e60",
+      "claim_id": "C85",
+      "claim": "Alternative exons C and D are located in the variable domain, which is mainly intrinsically disordered and contains regulatory phosphorylation sites.",
+      "claim_type": "EXPLICIT",
+      "source": "These alternative exons are located in either the GTPase domain (A and B) or the variable domain (C and D), which is mainly intrinsically disordered and contains regulatory phosphorylation sites (Itoh et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly states the location and characteristics of exons C and D, supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:42:22.581593Z"
+    },
+    {
+      "id": "de9b8506-b6a1-4cb6-9035-3d737d2d5dba",
+      "content_id": "2840dc82-6646-4707-b1c8-9dc1ffbe7e60",
+      "claim_id": "C86",
+      "claim": "All of the Drp1 isoforms are located at mitochondria and function in mitochondrial division.",
+      "claim_type": "EXPLICIT",
+      "source": "All of the Drp1 isoforms are located at mitochondria and function in mitochondrial division (Itoh et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly states the mitochondrial localization and function of all Drp1 isoforms, supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:42:22.581593Z"
+    },
+    {
+      "id": "8f5af3cc-8ea6-4918-8a01-d18c50597ef4",
+      "content_id": "2840dc82-6646-4707-b1c8-9dc1ffbe7e60",
+      "claim_id": "C87",
+      "claim": "Drp1D and Drp1BD are associated with and regulate the dynamics of microtubules.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, Drp1D and Drp1BD are associated with and regulate the dynamics of microtubules (Itoh et al., 2018; Strack et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly states the microtubule-related function of Drp1D and Drp1BD, supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:42:22.581593Z"
+    },
+    {
+      "id": "13f3b5e9-c095-4be1-8e8e-17720dc437a0",
+      "content_id": "2840dc82-6646-4707-b1c8-9dc1ffbe7e60",
+      "claim_id": "C88",
+      "claim": "Drp1ABCD is the only isoform that contains both the alternative exons A and B.",
+      "claim_type": "EXPLICIT",
+      "source": "Since Drp1ABCD is the only isoform that contains both the alternative exons A and B (Figure 1A), we raised antibodies that specifically recognize Drp1ABCD using the amino acid sequence that corresponds to the junction of exons A and B as an antigen (Itoh et al., 2018).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text explicitly states that Drp1ABCD is the only isoform with both exons A and B, supported by Figure 1A and citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:42:22.581593Z"
+    },
+    {
+      "id": "f3d46c8f-d839-4a54-a1c2-93a1eb21024b",
+      "content_id": "2840dc82-6646-4707-b1c8-9dc1ffbe7e60",
+      "claim_id": "C89",
+      "claim": "The expression of Drp1ABCD is spatially controlled and specific to the brain.",
+      "claim_type": "EXPLICIT",
+      "source": "The expression of Drp1ABCD was spatially controlled and specific to the brain (Itoh et al., 2018) (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text explicitly states the brain-specific expression, supported by citation and Figure 1B.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:42:22.581593Z"
+    },
+    {
+      "id": "bc1204ec-28e3-4183-a3cb-7cbb64b60fa0",
+      "content_id": "2840dc82-6646-4707-b1c8-9dc1ffbe7e60",
+      "claim_id": "C90",
+      "claim": "The expression of Drp1ABCD is postnatally induced later in neural development compared to that of Psd-95.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the expression of Drp1ABCD is postnatally induced in both tissues later in neural development compared to that of postsynaptic density protein 95 (Psd-95), which is a synaptic protein required for glutamate receptor organization (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text explicitly states the temporal relationship between Drp1ABCD and Psd-95 expression, supported by data in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:42:22.581593Z"
+    },
+    {
+      "id": "02633630-85ff-41cb-bf91-e607e6d273c8",
+      "content_id": "2840dc82-6646-4707-b1c8-9dc1ffbe7e60",
+      "claim_id": "C91",
+      "claim": "Psd-95 is a synaptic protein required for glutamate receptor organization.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the expression of Drp1ABCD is postnatally induced in both tissues later in neural development compared to that of postsynaptic density protein 95 (Psd-95), which is a synaptic protein required for glutamate receptor organization (Figure 1C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly states the function of Psd-95.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:42:22.581593Z"
+    },
+    {
+      "id": "38a4ec15-42a3-4566-8bf4-484a34db6088",
+      "content_id": "2840dc82-6646-4707-b1c8-9dc1ffbe7e60",
+      "claim_id": "C92",
+      "claim": "Anti-pan-Drp1 antibodies showed similar levels of Drp1 at different stages of postnatal brain development.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, anti-pan-Drp1 antibodies, which recognize all Drp1 isoforms, showed similar levels of Drp1 at different stages of postnatal brain development (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text explicitly states the constant levels of total Drp1, supported by data in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:42:22.581593Z"
+    },
+    {
+      "id": "f21eb7af-68a9-4139-8125-b2a6eb71bcd0",
+      "content_id": "2840dc82-6646-4707-b1c8-9dc1ffbe7e60",
+      "claim_id": "C93",
+      "claim": "In the soma, both HA-Drp1ABCD and HA-Drp1BCD appeared to be uniformly distributed.",
+      "claim_type": "EXPLICIT",
+      "source": "In the soma, both HA-Drp1ABCD and HA-Drp1BCD appeared to be uniformly distributed (Figure 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text explicitly states the uniform distribution in the soma, supported by imaging data in Figure 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:42:22.581593Z"
+    },
+    {
+      "id": "050dce8c-ae3d-4ce3-b760-5b8aaf3d476c",
+      "content_id": "2840dc82-6646-4707-b1c8-9dc1ffbe7e60",
+      "claim_id": "C94",
+      "claim": "No clear association was observed between HA-tagged Drp1 isoforms and mitochondria, lysosomes, or the plasma membrane, likely due to their overexpression and therefore high levels in the cytoplasm.",
+      "claim_type": "EXPLICIT",
+      "source": "We did not observe a clear association between these HA-tagged Drp1 isoforms and mitochondria, lysosomes, or the plasma membrane, likely due to their overexpression and therefore high levels in the cytoplasm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly states the lack of clear association and provides an explanation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:42:22.581593Z"
+    },
+    {
+      "id": "108e6179-7ea2-43c4-aa7b-71e110f61040",
+      "content_id": "2840dc82-6646-4707-b1c8-9dc1ffbe7e60",
+      "claim_id": "C95",
+      "claim": "The majority of mCherry-CLC signals are localized next to Psd-95 signals in control neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "As previously reported (Lu et al., 2007), the majority of mCherry-CLC signals are localized next to Psd-95 signals in control neurons (Figure 3A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text explicitly states the localization pattern in control neurons, supported by citation and data in Figures 3A and 3B.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:42:22.581593Z"
+    },
+    {
+      "id": "a02d4d4d-48ff-4d47-bf3e-e3f3af49e783",
+      "content_id": "2840dc82-6646-4707-b1c8-9dc1ffbe7e60",
+      "claim_id": "C96",
+      "claim": "The extent of the dissociation of the postsynaptic density from the endocytic zone in Drp1exonA-KO synapses is similar to that reported for the disruption of Homer.",
+      "claim_type": "EXPLICIT",
+      "source": "The extent of the dissociation of the postsynaptic density from the endocytic zone in Drp1exonA-KO synapses is similar to that reported for the disruption of Homer, an adaptor protein that connects the postsynaptic density and endocytic zone (Lu et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly states the similarity to Homer disruption, supported by citation.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:42:22.581593Z"
+    },
+    {
+      "id": "6cbdaccf-259d-4c20-9f26-3dd97b7e4737",
+      "content_id": "2840dc82-6646-4707-b1c8-9dc1ffbe7e60",
+      "claim_id": "C97",
+      "claim": "Homer is an adaptor protein that connects the postsynaptic density and endocytic zone.",
+      "claim_type": "EXPLICIT",
+      "source": "The extent of the dissociation of the postsynaptic density from the endocytic zone in Drp1exonA-KO synapses is similar to that reported for the disruption of Homer, an adaptor protein that connects the postsynaptic density and endocytic zone (Lu et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly states the function of Homer, supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:42:22.581593Z"
+    },
+    {
+      "id": "014c90b1-2e1d-44f4-833e-1e9c028265cd",
+      "content_id": "2840dc82-6646-4707-b1c8-9dc1ffbe7e60",
+      "claim_id": "C98",
+      "claim": "The uptake of FITC-transferrin was not affected in Drp1exonA-KO neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Like Homer defective neurons, the uptake of FITC-transferrin was not affected in Drp1exonA-KO neurons (Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text explicitly states the normal transferrin uptake, supported by data in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:42:22.581593Z"
+    },
+    {
+      "id": "94a5b815-d714-4230-bc89-f2d6ef8e652b",
+      "content_id": "2840dc82-6646-4707-b1c8-9dc1ffbe7e60",
+      "claim_id": "C99",
+      "claim": "A previous study reported that Drp1 regulates endocytosis for synaptic vesicle recycling at presynaptic terminals in hippocampal neurons through interactions with a Drp1 receptor protein, Mff.",
+      "claim_type": "EXPLICIT",
+      "source": "A previous study reported that Drp1 regulates endocytosis for synaptic vesicle recycling at presynaptic terminals in hippocampal neurons through interactions with a Drp1 receptor protein, Mff (Li et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly states the previous finding about Drp1 and presynaptic endocytosis, supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:42:22.581593Z"
+    },
+    {
+      "id": "33b121b1-e146-4a3a-88e1-ceced2965f87",
+      "content_id": "2840dc82-6646-4707-b1c8-9dc1ffbe7e60",
+      "claim_id": "C100",
+      "claim": "Drp1ABCD is the only isoform that contains exon A.",
+      "claim_type": "IMPLICIT",
+      "source": "To examine the function of Drp1ABCD at the postsynaptic density, we homozygously deleted exon A using the CRISPR/Cas9 genome editing system (termed Drp1exonA-KO mice) since Drp1ABCD is the only isoform that contains this exon (Itoh et al., 2018) (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text states that Drp1ABCD is the only isoform containing exon A, which is the rationale for using exon A deletion to specifically target Drp1ABCD, supported by citation and Figure 2A.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:42:22.581593Z"
+    },
+    {
+      "id": "f656d8d5-bc8f-492c-bee2-84d54e53ba59",
+      "content_id": "2840dc82-6646-4707-b1c8-9dc1ffbe7e60",
+      "claim_id": "C101",
+      "claim": "The lack of Drp1ABCD proteins in Drp1exonA-KO mice was confirmed using immunoblotting.",
+      "claim_type": "EXPLICIT",
+      "source": "We confirmed the lack of Drp1ABCD proteins in Drp1exonA-KO mice using Immunoblotting (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text explicitly states the confirmation of Drp1ABCD absence, supported by immunoblotting data in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:42:22.581593Z"
+    },
+    {
+      "id": "86e105a3-6cf1-493f-a658-b81f350956a6",
+      "content_id": "2840dc82-6646-4707-b1c8-9dc1ffbe7e60",
+      "claim_id": "C102",
+      "claim": "There were no gross changes in the total amount of Drp1 in Drp1exonA-KO mice as assessed by immunoblotting using anti-pan-Drp1 antibodies.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with a low expression level of Drp1ABCD (compared to that of other isoforms, such as Drp1BCD) (Itoh et al., 2018), we found no gross changes in the total amount of Drp1 in Immunoblotting using anti-pan-Drp1 antibodies (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text explicitly states no change in total Drp1, supported by immunoblotting data in Figure 2B and citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:42:22.581593Z"
+    },
+    {
+      "id": "d1097f05-74ea-404f-9c3a-35477abe21b5",
+      "content_id": "2840dc82-6646-4707-b1c8-9dc1ffbe7e60",
+      "claim_id": "C103",
+      "claim": "The increased number of dendrites or the decreased postsynaptic endocytosis in Drp1exonA-KO mice may contribute to the enhancement in sensorimotor gating function.",
+      "claim_type": "EXPLICIT",
+      "source": "At this moment, we do not know the exact mechanistic basis underlying this enhanced sensorimotor gating in Drp1exonA-KO mice; however, the increased number of dendrites or the decreased postsynaptic endocytosis in Drp1exonA-KO mice may contribute to the enhancement in sensorimotor gating function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly states this speculation about the mechanism underlying enhanced sensorimotor gating.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:42:22.581593Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "d35a71bf-cf3f-4df8-ba2b-a98de64c1ece",
+      "content_id": "2840dc82-6646-4707-b1c8-9dc1ffbe7e60",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Drp1ABCD is a brain-specific isoform containing all four alternative exons (A, B, C, D), constituting less than 5% of total brain Drp1, and exhibits unique subcellular localization patterns including association with lysosomes, late endosomes, and plasma membrane in addition to mitochondria.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C4, C6, C83-C89 collectively establish the structural and expression characteristics of Drp1ABCD through multiple lines of evidence including immunoblotting (C3, C89), subcellular fractionation (C4), and domain mapping (C83-C85). The brain-specific expression (C2, C6, C89) and low abundance (C3) are consistently supported by cited prior work and experimental data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:42:22.581593Z"
+    },
+    {
+      "id": "8d2d2f2f-e3c5-4dcc-8186-2da8a8b8ce39",
+      "content_id": "2840dc82-6646-4707-b1c8-9dc1ffbe7e60",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Drp1ABCD expression is postnatally induced during brain development, reaching a plateau around 3 weeks in cultured hippocampal neurons, with expression occurring later than the synaptic marker Psd-95, while total Drp1 levels remain constant.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C7, C90, C92 are supported by immunoblotting data from both in vivo brain tissue (Figure 1C) and cultured neurons (Figure 1D). The temporal expression pattern is clearly demonstrated with appropriate controls (pan-Drp1 and Psd-95), showing developmental regulation specific to the Drp1ABCD isoform.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:42:22.581593Z"
+    },
+    {
+      "id": "ddf3790c-c2b0-4b51-ae91-68071276d6b9",
+      "content_id": "2840dc82-6646-4707-b1c8-9dc1ffbe7e60",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Drp1ABCD is enriched in postsynaptic regions, particularly dendritic spines, compared to other Drp1 isoforms, as demonstrated by both overexpression studies and biochemical fractionation of endogenous protein.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8-C11, C69, C93-C94 are supported by multiple complementary approaches: immunofluorescence microscopy with HA-tagged constructs (Figures 1E-H), line scanning quantification (Figures 1F-G), and biochemical PSD fractionation (Figures 1I-J). The convergence of imaging and biochemical evidence strengthens the conclusion of postsynaptic enrichment.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:42:22.581593Z"
+    },
+    {
+      "id": "f7023a9e-2c32-4d07-884a-ae88ead21cb0",
+      "content_id": "2840dc82-6646-4707-b1c8-9dc1ffbe7e60",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Drp1exonA-KO mice, generated by CRISPR/Cas9 deletion of exon A to specifically eliminate Drp1ABCD, are viable with normal body and brain weights, normal brain histology, and no gross structural brain abnormalities.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C12-C15, C100-C102 establish successful generation and basic characterization of the knockout model. The specificity of the knockout is supported by the unique presence of exon A in Drp1ABCD (C100), confirmed by immunoblotting (C101, Figure 2B). Viability and normal development are documented through multiple measures including Mendelian ratios, weight measurements (Figure 2C-E), and histological analysis (Figures 2F-G).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:42:22.581593Z"
+    },
+    {
+      "id": "098004db-8266-4cc6-9e16-2d6d843a17b7",
+      "content_id": "2840dc82-6646-4707-b1c8-9dc1ffbe7e60",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Loss of Drp1ABCD causes accumulation of clathrin-coated pits (CCPs) specifically at postsynaptic terminals, with increased shallow and U-shaped CCPs but not omega-shaped CCPs, indicating slowed clathrin-mediated endocytosis at an early stage upstream of dynamin-mediated scission.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16-C30, C34-C35, C65, C70 are supported by extensive electron microscopy analysis (Figures 2H-S) including CCP quantification, morphological classification, and pharmacological manipulation with dynasore. The lack of response to dynasore in KO neurons (C21) and the specific accumulation of early-stage CCPs (C18) provide strong evidence for slowed endocytosis. The postsynaptic specificity (C16, C17) and independence from mitochondrial function (C24) are well-documented.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:42:22.581593Z"
+    },
+    {
+      "id": "faf33a19-680e-404b-ac16-4e1558ed5e64",
+      "content_id": "2840dc82-6646-4707-b1c8-9dc1ffbe7e60",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Drp1ABCD loss causes dissociation of the endocytic zone (marked by clathrin) from the postsynaptic density (marked by Psd-95), similar to Homer disruption, suggesting Drp1ABCD positions the endocytic zone at the postsynaptic density.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31-C33, C95-C97 are supported by live-cell imaging with mCherry-CLC and Psd-95.FingR-GFP (Figures 3A-B). The comparison to Homer disruption (C96-C97) provides mechanistic context. However, the proposed mechanism involving limited clathrin availability (C32-C33) is speculative and would benefit from direct measurement of clathrin levels at synapses.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:42:22.581593Z"
+    },
+    {
+      "id": "e6fe2e2c-cef8-44ec-9d06-f6e62ad03824",
+      "content_id": "2840dc82-6646-4707-b1c8-9dc1ffbe7e60",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The Drp1ABCD endocytic pathway has different cargo specificity than the Homer pathway, as AMPA receptor surface expression and GluR1 endocytosis are normal in Drp1exonA-KO neurons, while transferrin uptake is also unaffected.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36-C38, C98 are supported by surface biotinylation experiments (Figures 3C-D) and GFP-GluR1 internalization assays (Figures 3E-F), along with transferrin uptake measurements (Figure 3\u2014figure supplement 1). The data clearly demonstrate cargo selectivity, distinguishing the Drp1ABCD pathway from Homer-dependent endocytosis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:42:22.581593Z"
+    },
+    {
+      "id": "c8371e1e-1089-4d50-a4cd-b5b573a50fed",
+      "content_id": "2840dc82-6646-4707-b1c8-9dc1ffbe7e60",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Mitochondrial morphology is normal in Drp1exonA-KO neurons, indicating that the endocytic defects are independent of mitochondrial division, likely because other Drp1 isoforms (Drp1BCD, Drp1CD) maintain mitochondrial function.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39-C41 are supported by immunofluorescence microscopy of mitochondria in dendrites (Figures 3H-J). The normal mitochondrial morphology despite endocytic defects establishes independence of these two functions. The interpretation that other isoforms maintain mitochondrial function (C41) is reasonable given the low abundance of Drp1ABCD (<5% of total Drp1).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:42:22.581593Z"
+    },
+    {
+      "id": "8922bdb6-742c-47c7-8efc-10c85afb130a",
+      "content_id": "2840dc82-6646-4707-b1c8-9dc1ffbe7e60",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Loss of Drp1ABCD specifically increases the number of primary dendrites emerging from the soma in cultured neurons, without affecting axon number, dendritic branching, or spine density, as demonstrated by both genetic knockout and isoform-specific shRNA knockdown with rescue experiments.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C50, C71 are supported by multiple complementary approaches: knockout analysis (Figures 4A-D), isoform-specific shRNA knockdown (Figures 4F-H), and rescue experiments (Figure 4I). The specificity of the shRNA (C47, Figure 4F) and the rescue by resistant Drp1ABCD (C50) provide strong evidence for on-target effects. The rapid time course (3 days, C49) is notable.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:42:22.581593Z"
+    },
+    {
+      "id": "56b01953-0ca9-47a0-a02e-9f66a6c34171",
+      "content_id": "2840dc82-6646-4707-b1c8-9dc1ffbe7e60",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The formation of ectopic primary dendrites induced by Drp1ABCD depletion requires neuronal activity, as demonstrated by blockade with tetrodotoxin (TTX).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C52 are supported by TTX treatment experiments (Figure 4J) showing that blocking neuronal activity prevents ectopic dendrite formation in Drp1ABCD-depleted neurons. This establishes an activity-dependent mechanism for dendrite regulation by Drp1ABCD.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:42:22.581593Z"
+    },
+    {
+      "id": "0dd50825-c3b6-4a53-8f48-92b7cd759e84",
+      "content_id": "2840dc82-6646-4707-b1c8-9dc1ffbe7e60",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Loss of Drp1ABCD increases the number of primary neurites in vivo in both hippocampus and cortex, as demonstrated by analysis of Thy1-GFP expressing neurons in knockout mice and by in utero electroporation of shRNA.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53-C55 are supported by in vivo imaging in Thy1-GFP mice (Figures 4K-L) and in utero electroporation experiments (Figures 4M-N). The consistency between knockout and knockdown approaches, and between cultured neurons and in vivo systems, strongly supports the physiological relevance of the dendrite phenotype.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:42:22.581593Z"
+    },
+    {
+      "id": "c5eaf565-b5e9-4983-b486-53ac35b0219f",
+      "content_id": "2840dc82-6646-4707-b1c8-9dc1ffbe7e60",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Drp1exonA-KO mice exhibit significantly enhanced prepulse inhibition (PPI) of acoustic startle without changes in startle response, indicating improved sensorimotor gating, while other behaviors (locomotion, memory, motor coordination, anxiety) remain normal.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56-C64, C72 are supported by comprehensive behavioral testing (Figures 4O-P, Figure 4\u2014figure supplement 3). The specific enhancement of PPI (C57) without affecting startle response or other behaviors demonstrates a selective effect on sensorimotor gating. The background information on PPI (C58-C61) is appropriately cited.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:42:22.581593Z"
+    },
+    {
+      "id": "9315d122-af8a-4243-ae9c-f9964dd0af3a",
+      "content_id": "2840dc82-6646-4707-b1c8-9dc1ffbe7e60",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Distinct Drp1 isoforms may function separately in endocytosis at pre- and postsynaptic terminals, as Drp1ABCD affects only postsynaptic endocytosis while prior work showed Drp1 regulates presynaptic vesicle recycling through Mff.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C42 and C99 propose isoform-specific functions at different synaptic compartments. While C99 accurately cites prior work on presynaptic Drp1 function, and the current data clearly show postsynaptic-specific effects of Drp1ABCD loss (C17), the speculation about distinct isoforms (C42) lacks direct experimental evidence. Testing which isoforms function presynaptically would be needed to support this model.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:42:22.581593Z"
+    },
+    {
+      "id": "0bb86dd9-9d5c-427f-a417-fb6dc28abaa1",
+      "content_id": "2840dc82-6646-4707-b1c8-9dc1ffbe7e60",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Drp1ABCD may control dendrite number by suppressing excess dendrite formation during postnatal brain development, and the increased dendrites or decreased endocytosis may contribute to enhanced sensorimotor gating, though the exact mechanisms remain unknown.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C66 and C103 are explicitly speculative (\"may contribute,\" \"do not know the exact mechanistic basis\"). While the temporal expression pattern of Drp1ABCD (postnatal induction) is consistent with a developmental role (C66), and the behavioral phenotype correlates with the cellular changes (C103), causal mechanisms linking endocytosis, dendrite formation, and behavior are not established. These represent reasonable hypotheses for future investigation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:42:22.581593Z"
+    },
+    {
+      "id": "12f9810d-1226-4754-9abb-140f34e8c992",
+      "content_id": "2840dc82-6646-4707-b1c8-9dc1ffbe7e60",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Background information on Drp1 function: Drp1 is a mechano-chemical GTPase that divides mitochondria through GTP hydrolysis-driven membrane constriction, with multiple isoforms produced by mRNA splicing; Drp1 dysfunction is linked to neurological disorders and its loss causes cell-type-specific effects ranging from lethality to viable phenotypes with functional deficits.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C67-C82, C91 provide established background information appropriately supported by citations to prior literature. These claims accurately represent the current understanding of Drp1 biology and provide necessary context for the novel findings about Drp1ABCD.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:42:22.581593Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "9917b0c6-a078-45e7-9152-24b68f34d64d",
+      "result_id": "d35a71bf-cf3f-4df8-ba2b-a98de64c1ece"
+    },
+    {
+      "claim_id": "d68be2e9-487c-4371-a7f4-1392f9c87db8",
+      "result_id": "d35a71bf-cf3f-4df8-ba2b-a98de64c1ece"
+    },
+    {
+      "claim_id": "a65ad925-d7a5-4e1b-89c2-f0f8b237c456",
+      "result_id": "d35a71bf-cf3f-4df8-ba2b-a98de64c1ece"
+    },
+    {
+      "claim_id": "3884442c-709e-486e-9aad-96b25b1606c1",
+      "result_id": "d35a71bf-cf3f-4df8-ba2b-a98de64c1ece"
+    },
+    {
+      "claim_id": "06a7ff78-9618-4b4e-9fbe-11730c814f29",
+      "result_id": "d35a71bf-cf3f-4df8-ba2b-a98de64c1ece"
+    },
+    {
+      "claim_id": "d9bf675d-15e8-4ed5-941f-5e488b724e35",
+      "result_id": "d35a71bf-cf3f-4df8-ba2b-a98de64c1ece"
+    },
+    {
+      "claim_id": "d3bc40d0-bf44-483a-92f8-e4bd23dd200b",
+      "result_id": "d35a71bf-cf3f-4df8-ba2b-a98de64c1ece"
+    },
+    {
+      "claim_id": "3a7bdd6e-8d1d-4b13-be37-3a3ec54b4ed6",
+      "result_id": "d35a71bf-cf3f-4df8-ba2b-a98de64c1ece"
+    },
+    {
+      "claim_id": "de9b8506-b6a1-4cb6-9035-3d737d2d5dba",
+      "result_id": "d35a71bf-cf3f-4df8-ba2b-a98de64c1ece"
+    },
+    {
+      "claim_id": "8f5af3cc-8ea6-4918-8a01-d18c50597ef4",
+      "result_id": "d35a71bf-cf3f-4df8-ba2b-a98de64c1ece"
+    },
+    {
+      "claim_id": "13f3b5e9-c095-4be1-8e8e-17720dc437a0",
+      "result_id": "d35a71bf-cf3f-4df8-ba2b-a98de64c1ece"
+    },
+    {
+      "claim_id": "f3d46c8f-d839-4a54-a1c2-93a1eb21024b",
+      "result_id": "d35a71bf-cf3f-4df8-ba2b-a98de64c1ece"
+    },
+    {
+      "claim_id": "2481ae14-2979-43ce-8da1-8cb38d066131",
+      "result_id": "8d2d2f2f-e3c5-4dcc-8186-2da8a8b8ce39"
+    },
+    {
+      "claim_id": "b6ccb148-1a0b-422f-a562-f48fa41d7809",
+      "result_id": "8d2d2f2f-e3c5-4dcc-8186-2da8a8b8ce39"
+    },
+    {
+      "claim_id": "bc1204ec-28e3-4183-a3cb-7cbb64b60fa0",
+      "result_id": "8d2d2f2f-e3c5-4dcc-8186-2da8a8b8ce39"
+    },
+    {
+      "claim_id": "38a4ec15-42a3-4566-8bf4-484a34db6088",
+      "result_id": "8d2d2f2f-e3c5-4dcc-8186-2da8a8b8ce39"
+    },
+    {
+      "claim_id": "d1985094-0a74-4546-b2ef-b09ebf8c69df",
+      "result_id": "ddf3790c-c2b0-4b51-ae91-68071276d6b9"
+    },
+    {
+      "claim_id": "b51282aa-39d3-4093-a870-4680582aa1e6",
+      "result_id": "ddf3790c-c2b0-4b51-ae91-68071276d6b9"
+    },
+    {
+      "claim_id": "39d219a2-c13e-46a3-8ed9-3e5d10e1d7bd",
+      "result_id": "ddf3790c-c2b0-4b51-ae91-68071276d6b9"
+    },
+    {
+      "claim_id": "63ee1c57-9647-4ae4-ab4a-893aba4d858f",
+      "result_id": "ddf3790c-c2b0-4b51-ae91-68071276d6b9"
+    },
+    {
+      "claim_id": "010766cc-765e-4744-8630-d240e6e6665e",
+      "result_id": "ddf3790c-c2b0-4b51-ae91-68071276d6b9"
+    },
+    {
+      "claim_id": "f21eb7af-68a9-4139-8125-b2a6eb71bcd0",
+      "result_id": "ddf3790c-c2b0-4b51-ae91-68071276d6b9"
+    },
+    {
+      "claim_id": "050dce8c-ae3d-4ce3-b760-5b8aaf3d476c",
+      "result_id": "ddf3790c-c2b0-4b51-ae91-68071276d6b9"
+    },
+    {
+      "claim_id": "92a10d70-6a94-4d81-a77d-0373771d0a8e",
+      "result_id": "f7023a9e-2c32-4d07-884a-ae88ead21cb0"
+    },
+    {
+      "claim_id": "05e9c1d9-0222-491d-8b80-ddbe3d8a2e7f",
+      "result_id": "f7023a9e-2c32-4d07-884a-ae88ead21cb0"
+    },
+    {
+      "claim_id": "5fcdfe2f-185e-4eb8-a638-33756450f12b",
+      "result_id": "f7023a9e-2c32-4d07-884a-ae88ead21cb0"
+    },
+    {
+      "claim_id": "df4df378-b030-4f49-90d9-2e814da498d2",
+      "result_id": "f7023a9e-2c32-4d07-884a-ae88ead21cb0"
+    },
+    {
+      "claim_id": "33b121b1-e146-4a3a-88e1-ceced2965f87",
+      "result_id": "f7023a9e-2c32-4d07-884a-ae88ead21cb0"
+    },
+    {
+      "claim_id": "f656d8d5-bc8f-492c-bee2-84d54e53ba59",
+      "result_id": "f7023a9e-2c32-4d07-884a-ae88ead21cb0"
+    },
+    {
+      "claim_id": "86e105a3-6cf1-493f-a658-b81f350956a6",
+      "result_id": "f7023a9e-2c32-4d07-884a-ae88ead21cb0"
+    },
+    {
+      "claim_id": "889641af-92f2-475c-9e40-51446c7c60ff",
+      "result_id": "098004db-8266-4cc6-9e16-2d6d843a17b7"
+    },
+    {
+      "claim_id": "bdb7039e-2aee-4d25-ac99-6be1d2a79a33",
+      "result_id": "098004db-8266-4cc6-9e16-2d6d843a17b7"
+    },
+    {
+      "claim_id": "26726a36-180c-4017-a5db-3b80ca4e02a7",
+      "result_id": "098004db-8266-4cc6-9e16-2d6d843a17b7"
+    },
+    {
+      "claim_id": "b6e0c27e-dcfc-4b78-b8d0-890323f39a97",
+      "result_id": "098004db-8266-4cc6-9e16-2d6d843a17b7"
+    },
+    {
+      "claim_id": "cf5f7263-9fc8-4c09-90e6-12607fe90656",
+      "result_id": "098004db-8266-4cc6-9e16-2d6d843a17b7"
+    },
+    {
+      "claim_id": "92c3a823-b27c-4423-bdd7-7bec0d82cafa",
+      "result_id": "098004db-8266-4cc6-9e16-2d6d843a17b7"
+    },
+    {
+      "claim_id": "842a94bf-a616-43d9-8e63-690dc9d905db",
+      "result_id": "098004db-8266-4cc6-9e16-2d6d843a17b7"
+    },
+    {
+      "claim_id": "8c9bdc17-27cf-4506-96f4-26856ae610ee",
+      "result_id": "098004db-8266-4cc6-9e16-2d6d843a17b7"
+    },
+    {
+      "claim_id": "a924c9db-ee4f-430b-ba22-26613b9e139d",
+      "result_id": "098004db-8266-4cc6-9e16-2d6d843a17b7"
+    },
+    {
+      "claim_id": "cb645d64-621f-4db3-bebb-bb13c779a6fe",
+      "result_id": "098004db-8266-4cc6-9e16-2d6d843a17b7"
+    },
+    {
+      "claim_id": "835cdb51-560e-4412-9890-434ba90bd4cd",
+      "result_id": "098004db-8266-4cc6-9e16-2d6d843a17b7"
+    },
+    {
+      "claim_id": "07d73642-9dd9-4775-9901-7e98d3196840",
+      "result_id": "098004db-8266-4cc6-9e16-2d6d843a17b7"
+    },
+    {
+      "claim_id": "c34f842f-35bc-49b1-a498-5ee2461594a5",
+      "result_id": "098004db-8266-4cc6-9e16-2d6d843a17b7"
+    },
+    {
+      "claim_id": "47c4c63c-1d1c-40f9-bd28-87fb71703b16",
+      "result_id": "098004db-8266-4cc6-9e16-2d6d843a17b7"
+    },
+    {
+      "claim_id": "da6206ee-7079-4c5c-8dfe-5986847bc7da",
+      "result_id": "098004db-8266-4cc6-9e16-2d6d843a17b7"
+    },
+    {
+      "claim_id": "a8564fbf-949d-411f-a450-181f83e1d806",
+      "result_id": "098004db-8266-4cc6-9e16-2d6d843a17b7"
+    },
+    {
+      "claim_id": "62e98dac-f990-408b-9b43-ad93899c1719",
+      "result_id": "098004db-8266-4cc6-9e16-2d6d843a17b7"
+    },
+    {
+      "claim_id": "5d57602a-0318-4b29-be68-1c854a752f70",
+      "result_id": "098004db-8266-4cc6-9e16-2d6d843a17b7"
+    },
+    {
+      "claim_id": "9d778552-331d-42f6-a70b-f8a723eeff94",
+      "result_id": "098004db-8266-4cc6-9e16-2d6d843a17b7"
+    },
+    {
+      "claim_id": "bcecb861-901f-4eaa-9460-94d73bcb9211",
+      "result_id": "faf33a19-680e-404b-ac16-4e1558ed5e64"
+    },
+    {
+      "claim_id": "f4e4a86d-0388-4ead-9965-ae3786c989bc",
+      "result_id": "faf33a19-680e-404b-ac16-4e1558ed5e64"
+    },
+    {
+      "claim_id": "10c41fb4-bb6c-45ba-86f7-8accb656920b",
+      "result_id": "faf33a19-680e-404b-ac16-4e1558ed5e64"
+    },
+    {
+      "claim_id": "108e6179-7ea2-43c4-aa7b-71e110f61040",
+      "result_id": "faf33a19-680e-404b-ac16-4e1558ed5e64"
+    },
+    {
+      "claim_id": "a02d4d4d-48ff-4d47-bf3e-e3f3af49e783",
+      "result_id": "faf33a19-680e-404b-ac16-4e1558ed5e64"
+    },
+    {
+      "claim_id": "6cbdaccf-259d-4c20-9f26-3dd97b7e4737",
+      "result_id": "faf33a19-680e-404b-ac16-4e1558ed5e64"
+    },
+    {
+      "claim_id": "4bad324d-bb6a-4c41-9e05-68328f3735a5",
+      "result_id": "e6fe2e2c-cef8-44ec-9d06-f6e62ad03824"
+    },
+    {
+      "claim_id": "48742038-473c-4c36-a1ef-0d7696d7c30f",
+      "result_id": "e6fe2e2c-cef8-44ec-9d06-f6e62ad03824"
+    },
+    {
+      "claim_id": "e6de0b63-eb39-4a67-ba09-beb245c1b678",
+      "result_id": "e6fe2e2c-cef8-44ec-9d06-f6e62ad03824"
+    },
+    {
+      "claim_id": "014c90b1-2e1d-44f4-833e-1e9c028265cd",
+      "result_id": "e6fe2e2c-cef8-44ec-9d06-f6e62ad03824"
+    },
+    {
+      "claim_id": "e6aa4fde-8f35-4f3a-be0b-0786de52382c",
+      "result_id": "c8371e1e-1089-4d50-a4cd-b5b573a50fed"
+    },
+    {
+      "claim_id": "c3f0630c-0b62-49fc-838c-47cf5da5c11c",
+      "result_id": "c8371e1e-1089-4d50-a4cd-b5b573a50fed"
+    },
+    {
+      "claim_id": "230a18bd-2c22-4418-9632-02505a04252b",
+      "result_id": "c8371e1e-1089-4d50-a4cd-b5b573a50fed"
+    },
+    {
+      "claim_id": "745984c8-057f-4a7b-b7c5-5fcae1afb4f2",
+      "result_id": "8922bdb6-742c-47c7-8efc-10c85afb130a"
+    },
+    {
+      "claim_id": "1671b172-7d23-4685-8ca9-e3e0b2d56013",
+      "result_id": "8922bdb6-742c-47c7-8efc-10c85afb130a"
+    },
+    {
+      "claim_id": "3efe8dfe-2e56-4bfa-bd02-8df38890f272",
+      "result_id": "8922bdb6-742c-47c7-8efc-10c85afb130a"
+    },
+    {
+      "claim_id": "439eaa41-083d-4a00-b325-08112a4b2779",
+      "result_id": "8922bdb6-742c-47c7-8efc-10c85afb130a"
+    },
+    {
+      "claim_id": "418ab238-db64-456d-a9ff-634da369b7bc",
+      "result_id": "8922bdb6-742c-47c7-8efc-10c85afb130a"
+    },
+    {
+      "claim_id": "3ea820d7-f89e-412a-be0c-92dd51eefccf",
+      "result_id": "8922bdb6-742c-47c7-8efc-10c85afb130a"
+    },
+    {
+      "claim_id": "6a3c79bd-f2ba-4a42-bb82-1e0de3768103",
+      "result_id": "8922bdb6-742c-47c7-8efc-10c85afb130a"
+    },
+    {
+      "claim_id": "cd883256-d387-4a5e-9da9-412901fa847f",
+      "result_id": "8922bdb6-742c-47c7-8efc-10c85afb130a"
+    },
+    {
+      "claim_id": "5b35bee7-8142-40bb-bbf2-718c593d84aa",
+      "result_id": "8922bdb6-742c-47c7-8efc-10c85afb130a"
+    },
+    {
+      "claim_id": "183c1fc8-f02e-4ce1-a625-c0aa0fd62b8e",
+      "result_id": "56b01953-0ca9-47a0-a02e-9f66a6c34171"
+    },
+    {
+      "claim_id": "d3dee978-ed87-4fd4-8306-91be7118a0fc",
+      "result_id": "56b01953-0ca9-47a0-a02e-9f66a6c34171"
+    },
+    {
+      "claim_id": "3e30d632-cb1d-4293-91cc-8ed689062c4b",
+      "result_id": "0dd50825-c3b6-4a53-8f48-92b7cd759e84"
+    },
+    {
+      "claim_id": "85c21f17-ad1b-41c7-b2fa-15a2188ec5fb",
+      "result_id": "0dd50825-c3b6-4a53-8f48-92b7cd759e84"
+    },
+    {
+      "claim_id": "a281fc88-2c28-463b-939b-a466162f2e9f",
+      "result_id": "0dd50825-c3b6-4a53-8f48-92b7cd759e84"
+    },
+    {
+      "claim_id": "b2d3e7a9-6a58-42e3-853e-a8374326abd5",
+      "result_id": "c5eaf565-b5e9-4983-b486-53ac35b0219f"
+    },
+    {
+      "claim_id": "c26f3ad8-4987-487e-9158-65899bec518d",
+      "result_id": "c5eaf565-b5e9-4983-b486-53ac35b0219f"
+    },
+    {
+      "claim_id": "fb97a40c-a3bc-4d1c-882f-034ae05bd73a",
+      "result_id": "c5eaf565-b5e9-4983-b486-53ac35b0219f"
+    },
+    {
+      "claim_id": "5fe0f797-9d5e-4809-8616-3d4ded53b267",
+      "result_id": "c5eaf565-b5e9-4983-b486-53ac35b0219f"
+    },
+    {
+      "claim_id": "906240e9-5f06-4116-b92a-268dd28581e9",
+      "result_id": "c5eaf565-b5e9-4983-b486-53ac35b0219f"
+    },
+    {
+      "claim_id": "801e2be6-98d7-43fb-bb83-46deb1d94f5c",
+      "result_id": "c5eaf565-b5e9-4983-b486-53ac35b0219f"
+    },
+    {
+      "claim_id": "0d72cbad-b3f8-4c1f-a300-916a5f32a6f4",
+      "result_id": "c5eaf565-b5e9-4983-b486-53ac35b0219f"
+    },
+    {
+      "claim_id": "1ee0fe75-3776-4c94-a2ef-2b2aa77998ab",
+      "result_id": "c5eaf565-b5e9-4983-b486-53ac35b0219f"
+    },
+    {
+      "claim_id": "c59ffb9b-b027-47b9-bea2-87876be7d8f7",
+      "result_id": "c5eaf565-b5e9-4983-b486-53ac35b0219f"
+    },
+    {
+      "claim_id": "5393edf5-2a72-40c6-b84b-8e457a53a819",
+      "result_id": "c5eaf565-b5e9-4983-b486-53ac35b0219f"
+    },
+    {
+      "claim_id": "4ed6afc5-cd2f-4098-acaa-bc7db73c8178",
+      "result_id": "9315d122-af8a-4243-ae9c-f9964dd0af3a"
+    },
+    {
+      "claim_id": "94a5b815-d714-4230-bc89-f2d6ef8e652b",
+      "result_id": "9315d122-af8a-4243-ae9c-f9964dd0af3a"
+    },
+    {
+      "claim_id": "80c47220-f649-4b3e-8108-68be72b655d8",
+      "result_id": "0bb86dd9-9d5c-427f-a417-fb6dc28abaa1"
+    },
+    {
+      "claim_id": "d1097f05-74ea-404f-9c3a-35477abe21b5",
+      "result_id": "0bb86dd9-9d5c-427f-a417-fb6dc28abaa1"
+    },
+    {
+      "claim_id": "90a62d39-048f-4962-b17b-9059e85ee94d",
+      "result_id": "12f9810d-1226-4754-9abb-140f34e8c992"
+    },
+    {
+      "claim_id": "000870da-e960-441c-9bd5-0b9b0396f449",
+      "result_id": "12f9810d-1226-4754-9abb-140f34e8c992"
+    },
+    {
+      "claim_id": "267191d8-dc0b-4599-adaa-7f6d7b80fadf",
+      "result_id": "12f9810d-1226-4754-9abb-140f34e8c992"
+    },
+    {
+      "claim_id": "413cc3fa-5e9f-4d4e-a183-359dac0b868e",
+      "result_id": "12f9810d-1226-4754-9abb-140f34e8c992"
+    },
+    {
+      "claim_id": "15305048-bb0a-42c7-a55c-6b33cb3554a5",
+      "result_id": "12f9810d-1226-4754-9abb-140f34e8c992"
+    },
+    {
+      "claim_id": "4e290667-e597-4a14-ac3b-a0cd1f86477a",
+      "result_id": "12f9810d-1226-4754-9abb-140f34e8c992"
+    },
+    {
+      "claim_id": "dfbd1a9d-f653-4282-b48a-3cefd0efa9e0",
+      "result_id": "12f9810d-1226-4754-9abb-140f34e8c992"
+    },
+    {
+      "claim_id": "ec4cb4f2-5ec1-42b7-b222-a6dacdaa855e",
+      "result_id": "12f9810d-1226-4754-9abb-140f34e8c992"
+    },
+    {
+      "claim_id": "71d5f6ed-8faf-4b48-918f-da8fb2120468",
+      "result_id": "12f9810d-1226-4754-9abb-140f34e8c992"
+    },
+    {
+      "claim_id": "8c030fbc-2749-46ba-89d8-e19718ec0736",
+      "result_id": "12f9810d-1226-4754-9abb-140f34e8c992"
+    },
+    {
+      "claim_id": "bcd8d92f-8bab-41ff-afc4-11d4f5eb173b",
+      "result_id": "12f9810d-1226-4754-9abb-140f34e8c992"
+    },
+    {
+      "claim_id": "078db751-5576-47ba-9569-ed8f0dcfc6c4",
+      "result_id": "12f9810d-1226-4754-9abb-140f34e8c992"
+    },
+    {
+      "claim_id": "02633630-85ff-41cb-bf91-e607e6d273c8",
+      "result_id": "12f9810d-1226-4754-9abb-140f34e8c992"
+    }
+  ],
+  "comparisons": []
+}

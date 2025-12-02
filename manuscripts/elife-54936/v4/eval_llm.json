@@ -1,0 +1,274 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "A CNN-based automated freezing detection system was developed and validated, achieving 92-96% accuracy comparable to human observers (95% accuracy) and outperforming commercial FreezeFrame software (correlation with human: 0.96 vs 0.85). The system was used to analyze over 500 hours of behavioral data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3 provide convergent validation evidence including performance metrics, human comparison benchmarks, and superiority over existing software. The CNN architecture (C58-C59) is clearly described, human inter-rater reliability is established (C60: r=0.98), and practical utility is demonstrated (C61). Statistical comparisons and correlation coefficients support all performance claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Mice exhibited expected fear conditioning and extinction behavior patterns across a 4-day protocol, with minimal freezing during habituation, rapid increase during conditioning, and gradual decrease over three extinction days. Experiments used Dat-Cre x Ai148D mice (n=10 medial VTA, n=11 lateral VTA) with fiber photometry recordings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C4 describes the behavioral phenotype consistent with established fear conditioning paradigms. Claims C69-C73 provide complete methodological details including genetic background, sample sizes, and experimental conditions. The behavioral pattern serves as validation that the fear conditioning protocol worked as expected.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C50",
+      "C51",
+      "C52",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "The study is grounded in established theoretical frameworks distinguishing RPE (signed prediction error) from salience (unsigned prediction error). Prior work has shown VTA DA neurons can display heterogeneous signals and that RPE-like signals in DA neurons contribute to fear extinction learning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C6 and C50-C56 establish the theoretical foundation through extensive citations to prior literature. These are knowledge claims and literature summaries that accurately represent the field's understanding of RPE, salience, and DA neuron heterogeneity. The theoretical predictions (C5-C6) logically follow from established RPE and salience frameworks.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C66"
+    ],
+    "result": "During habituation and fear conditioning, medial and lateral VTA DA neurons showed similar activity profiles that could not be easily classified as pure RPE or salience. Both regions showed decreased fluorescence during tones and increased fluorescence to shock. Both regions also showed increased activity to reward.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C10 describe fiber photometry observations during early phases of the behavioral protocol, with appropriate figure references. Claim C66 acknowledges that the lack of differentiation may reflect methodological limitations of fiber photometry in capturing single-neuron heterogeneity. The findings are appropriately qualified and supported by data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C45"
+    ],
+    "result": "During fear extinction, medial VTA DA neuron activity was consistent with RPE: fluorescence decreased during the tone (signaling worse-than-expected outcome) and increased at tone offset (signaling better-than-expected outcome when shock was omitted). Both signals diminished across extinction days as expected with RPE.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C11 provides statistical support (percentile rank p<0.01 after Bonferroni correction) for the RPE-like pattern. Claim C12 describes the temporal dynamics consistent with RPE theory. The pattern matches theoretical predictions (C5) and is supported by appropriate statistical analysis of shuffled controls. Claim C45 provides the summary conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C45"
+    ],
+    "result": "During fear extinction, lateral VTA DA neuron activity was more consistent with salience: fluorescence increased at tone onset and tone offset (both representing salient events). Both signals diminished across extinction days as the tone lost salience.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C13 provides statistical support (percentile rank p<0.01 after Bonferroni correction) for the salience-like pattern at tone onset. Claims C14-C15 describe additional features consistent with salience encoding. The pattern matches theoretical predictions (C6) and is supported by appropriate statistical analysis. This represents a novel finding distinguishing lateral from medial VTA.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "Control experiments validated the specificity of findings: SNc showed different activity profiles from lateral VTA, GFP/YFP controls showed minimal modulation except opposite responses to shock, and DA axons in NAc and DMS showed RPE similar to medial VTA cell bodies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C18 describe critical control experiments. C16 rules out contamination from adjacent SNc (n=2 mice). C17 demonstrates that signals are calcium-dependent and not artifacts (n=8 control mice). C18 shows consistency between cell body and terminal recordings. These controls strengthen the main findings, though the SNc control has limited sample size.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "In medial VTA, trial-by-trial analysis revealed negative correlation between tone-onset fluorescence and freezing (p=0.021) and positive correlation between tone-offset fluorescence and freezing (p<10^-4). Similar correlations were observed across animals. These patterns are consistent with RPE encoding where tone-onset inhibition reflects learned negative association and tone-offset activation reflects 'relief' from omitted shock.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C20 provide trial-by-trial correlation statistics with appropriate sample sizes (n=10 mice). Claims C23-C24 show cross-animal correlations (r=-0.644, p=0.044 for onset; r=0.768, p=0.010 for offset). Claims C21-C22 provide theoretical interpretation grounded in prior literature. The convergence of within-animal and across-animal correlations strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "In lateral VTA, trial-by-trial analysis revealed positive correlation between tone-onset fluorescence and freezing (p<10^-4) but no significant correlation at tone offset (p=0.071). This pattern is consistent with salience encoding where more salient stimuli elicit more freezing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C25 provides strong statistical support for the tone-onset correlation (n=11 mice). Claim C26 appropriately reports the non-significant tone-offset correlation. Claim C27 provides interpretation consistent with salience theory. The differential pattern between tone onset and offset distinguishes this from the medial VTA pattern and supports the salience interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C28",
+      "C29"
+    ],
+    "result": "Ex vivo electrophysiology confirmed NpHR-mediated optogenetic inhibition efficacy, producing peak photocurrents of 332.15\u00b164.79 pA and peak hyperpolarization of 92.76\u00b114.58 mV from baseline (n=7 neurons).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C29 provide quantitative validation of the optogenetic tool with appropriate sample size and error estimates. These are essential control experiments demonstrating that the optogenetic manipulation produces the intended physiological effect. The measurements are standard for optogenetic validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C30",
+      "C31"
+    ],
+    "result": "Optogenetic inhibition of either medial or lateral VTA DA neurons caused real-time place aversion (group effect: F(1,1)=103.33, p=10^-14) and decreased velocity (group effect: F(1,1)=14.35, p<10^-3), with no difference between subregions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C31 provide in vivo validation of optogenetic efficacy using a well-established behavioral assay. Statistical analysis with 2-factor ANOVA appropriately tests for both group and subregion effects. The lack of subregion difference (interaction p>0.5) indicates both manipulations are comparably effective, validating their use in subsequent experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C47"
+    ],
+    "result": "Inhibiting medial VTA DA neurons at tone offset during extinction caused NpHR mice to freeze more to the tone compared to YFP controls (group effect: F(1,62)=7.528, p=0.012), and increased freezing during and after the inhibition period. This demonstrates that medial VTA DA neurons update the value of the preceding tone and modify subsequent behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C34 provide comprehensive statistical analysis of the behavioral effects with appropriate sample sizes (n=14 NpHR, n=10 YFP). The manipulation specifically at tone offset (when RPE signal occurs) produces effects on subsequent tone presentations, consistent with RPE-mediated learning. Claims C35 and C47 provide appropriate interpretation linking the causal manipulation to learning theory.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C48"
+    ],
+    "result": "Inhibiting lateral VTA DA neurons at tone offset yielded no change in freezing during the tone (group effect: F(1,62)=0.002, p=0.964) but increased freezing after the inhibition period (group effect: F(1,62)=6.981, p=0.019). This suggests lateral VTA affects freezing at timepoints after inhibition rather than updating the value of preceding events.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C37 provide statistical evidence for the differential effect compared to medial VTA (n=8 NpHR, n=8 YFP). The lack of effect on tone freezing but presence of post-inhibition effects distinguishes this from the medial VTA pattern. Claims C38 and C48 provide appropriate interpretation distinguishing immediate behavioral effects from learning-related value updating.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Inhibiting SNc DA neurons at tone offset did not affect tone freezing but decreased freezing during the inter-trial interval (ITI) (group effect: F(1,62)=4.980, p=0.047), suggesting lateral VTA and SNc inhibition may not have identical consequences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C40 describe a control experiment in SNc (n=7 NpHR, n=6 YFP) that shows a different pattern from lateral VTA. The ITI effect was not observed in lateral VTA, supporting anatomical specificity. Claim C41 appropriately qualifies the conclusion. However, the sample size is relatively small and the effect is modest.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Inhibiting lateral VTA DA neurons at tone onset caused NpHR mice to extinguish more slowly (significant group\u00d7tone interaction: F(1,62)=2.217, p<10^-6) and showed decreased ITI freezing (group effect: F(1,62)=6.477, p=0.019). This suggests inhibiting the salience signal at tone onset slows extinction learning over time.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C43 provide statistical evidence for effects of tone-onset inhibition (n=12 NpHR, n=10 YFP). The significant interaction term indicates the effect emerges over time, consistent with a learning deficit. Claim C44 synthesizes findings across tone-onset and tone-offset manipulations. The interpretation is reasonable though the authors acknowledge uncertainty about whether this reflects learning vs. expression effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C46"
+    ],
+    "result": "Activity in both medial and lateral VTA subregions contributed causally to fear extinction, but the temporal relationship between activity and freezing differed between regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C46 synthesizes the optogenetic manipulation results (C32-C44). Both regions causally contribute to extinction (both manipulations affect behavior), but medial VTA effects are time-locked to value updating of preceding events while lateral VTA effects are more immediate. This is supported by the differential patterns of behavioral effects across the manipulation experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C67",
+      "C68"
+    ],
+    "result": "The medial/lateral distinction in VTA is supported by prior electrophysiological, anatomical, and functional evidence. However, this distinction may not hold across all behaviors, and different DA subpopulations may share common learning functions despite different neural correlates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C63 cite appropriate prior literature justifying the experimental design. Claims C64-C65 acknowledge limitations and alternative interpretations. Claims C67-C68 place findings in broader theoretical context. These discussion points appropriately qualify the main findings and acknowledge the complexity of DA neuron function across different behavioral contexts.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C49",
+      "C53",
+      "C57"
+    ],
+    "result": "Prior work has established that VTA DA neurons are modulated by aversive stimuli and implicated in fear learning, can display spatially segregated representations of multiple variables, and that automated freezing analysis has been limited by inability to separate tether from mouse movement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49, C53, and C57 are literature review statements with extensive appropriate citations. These establish the context and motivation for the current study. The claims accurately represent the state of the field and identify the gap that the current work addresses.",
+    "result_type": "MINOR"
+  }
+]

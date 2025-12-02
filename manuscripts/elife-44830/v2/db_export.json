@@ -1,0 +1,2293 @@
+{
+  "submission": {
+    "id": "12be7179-7f38-421e-8b79-d72f9bc7e419",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T11:08:40.690056Z",
+    "updated_at": "2025-12-02T11:08:40.690056Z"
+  },
+  "content": [
+    {
+      "id": "cc399c25-f951-4c8b-a1d7-7d2d35d4c719",
+      "submission_id": "12be7179-7f38-421e-8b79-d72f9bc7e419",
+      "content_type": "manuscript",
+      "content_text": "# Neuronal integration in the adult mouse olfactory bulb is a non-selective addition process\n\n## Authors\n\n- Jean-Claude Platel<sup>1</sup> ([ORCID: 0000-0001-5542-3076](https://orcid.org/0000-0001-5542-3076)) \u2020\n- Alexandra Angelova<sup>1</sup>\n- Stephane Bugeon<sup>1</sup>\n- Jenelle Wallace<sup>2</sup>\n- Thibault Ganay<sup>1</sup>\n- Ilona Chudotvorova<sup>1</sup>\n- Jean-Christophe Deloulme<sup>3</sup>\n- Christophe B\u00e9clin<sup>1</sup>\n- Marie-Catherine Tiveron<sup>1</sup>\n- Nathalie Cor\u00e9<sup>1</sup>\n- Venkatesh N Murthy<sup>2</sup> ([ORCID: 0000-0003-2443-4252](https://orcid.org/0000-0003-2443-4252))\n- Harold Cremer<sup>1</sup> ([ORCID: 0000-0002-8673-5176](https://orcid.org/0000-0002-8673-5176))\n\n### Affiliations\n\n1. Aix-Marseille University, CNRS, IBDM, UMR 7288 Marseille France\n2. Department of Molecular & Cellular Biology Harvard University Cambridge United States\n3. Grenoble Institut des Neurosciences Universit\u00e9 Grenoble Alpes Grenoble France\n\n\u2020 Corresponding author\n\n## Abstract\n\nAdult neurogenesis in the olfactory bulb (OB) is considered as a competition in which neurons scramble during a critical selection period for integration and survival. Moreover, newborn neurons are thought to replace pre-existing ones that die. Despite indirect evidence supporting this model, systematic in vivo observations are still scarce. We used two-photon in vivo imaging to study neuronal integration and survival. We show that loss of new neurons in the OB after arrival at terminal positions occurs only at low levels. Moreover, long-term observations showed that no substantial cell death occurred at later stages. Neuronal death was induced by standard doses of thymidine analogs, but disappeared when low doses were used. Finally, we demonstrate that the OB grows throughout life. This shows that neuronal selection during OB-neurogenesis does not occur after neurons reached stable positions. Moreover, this suggests that OB neurogenesis does not represent neuronal turnover but lifelong neuronal addition.\n\n## Introduction\n\nNeurogenesis continues after birth in the hippocampus and olfactory bulb of rodents. During OB neurogenesis predetermined stem cell population along the walls of forebrain ventricles generate neuronal precursors that migrate via the rostral migratory stream (RMS) into the center of the OB. After their radial migration into the principal target layers, the granule cell (GCL) and glomerular layers (GL), cells integrate into the preexisting circuitry and function as interneurons using GABA and dopamine as their principal neurotransmitters (Whitman and Greer, 2007).\n\nThe currently available information indicates that OB neurogenesis is based on two key principles: First, neuronal integration in the adult is a competitive process, during which large numbers of newly arriving neurons compete for integration into the circuitry and ultimately survival. This competition is thought to occur during a defined critical window of 2\u20138 weeks after arrival and leads to the apoptotic elimination of about half of the initial population (Bergami and Berninger, 2012; Lledo et al., 2006; Mandairon et al., 2006; Petreanu and Alvarez-Buylla, 2002; Winner et al., 2002; Yamaguchi and Mori, 2005). Second, the OB represents a turnover system, in which newly integrating cells replace preexisting ones, leading to a relatively stable total number of neurons in the target layers (Bergami and Berninger, 2012; Imayoshi et al., 2008; Lledo et al., 2006).\n\nThese two concepts are to a large extend based on lineage-tracing experiments using thymidine analogs like bromodeoxyuridine (BrdU) or 3H-thymidine to label the DNA of dividing cells (Mandairon et al., 2006; Petreanu and Alvarez-Buylla, 2002; Winner et al., 2002; Yamaguchi and Mori, 2005). A common observation in such experiments is a loss of labeled cells during the first few weeks after their arrival in the olfactory bulb, which led to the postulation of a selection mechanism allowing the remodeling of specific OB circuits during a period when new cells had already matured and developed dendritic arborizations (Petreanu and Alvarez-Buylla, 2002).\n\nAlternatively, genetic approaches using CRE-inducible markers layers have been performed and demonstrated an accumulation of adult born neurons in the OB over time (Imayoshi et al., 2008). In agreement with the turnover model, this has been interpreted as a replacement of older neurons that died (Imayoshi et al., 2008). Only recently more direct approaches based on two-photon in vivo imaging allowed studying OB neurons directly in the living animal (Mizrahi et al., 2006; Sailor et al., 2016; Wallace et al., 2017). Interestingly, long-term observation of either juxtaglomerular neurons in general (Mizrahi et al., 2006), or more specifically of dopaminergic neurons, demonstrated an increase in these populations over time (Adam and Mizrahi, 2011). While at first sight this finding contradicts a pure replacement model, it was interpreted as a change in the interneuron subtype composition of the OB (Adam and Mizrahi, 2011).\n\nIn addition, olfactory activity and learning have been implicated in the regulation of neuron survival. On one hand, sensory deprivation by naris closure reduced the number of BrdU-labeled newborn neurons in the OB (Mandairon et al., 2006; Saghatelyan et al., 2005; Yamaguchi and Mori, 2005). On the other hand, olfactory training increased the number of labeled neurons (Mouret et al., 2008).\n\nThus, while the available data is still mostly indirect, the elegant model based of selection and replacement appears justified. However, to doubtlessly validate this model and to understand the factors controlling the adult neurogenic process, all populations of integrating neurons have to be observed in the living animal from their arrival in the OB throughout the selection phase until their disappearance.\n\nHere, we combined genetic birthdating and lineage tracing with long term in vivo microscopy to follow timed cohorts of postnatal and adult born neurons from their arrival in the OB for up to 6 months. Quantitative analyses demonstrate that neuronal loss during the critical period for survival,\u00a0and also at later stages, is rare in all observed populations. We demonstrate that classically used doses of the tracers BrdU and 5-ethynyl-2'-deoxyuridine (EdU) induce cell loss. This loss was not observed when low doses of EdU were used. Finally, based on in vivo microscopy and light-sheet imaging of fixed cleared tissue, we show that neuronal addition merely than replacement occurs in the adult OB, leading to permanent growth of the structure.\n\n## Results\n\n### Long-term in vivo imaging of postnatal and adult born OB neurons\n\nWe used two-photon imaging to directly study the integration and survival of perinatal and adult born OB neurons at high spatial and temporal resolution in the living animal. We first focused on the perinatal period, when most OB interneurons are generated (Batista-Brito et al., 2008). Postnatal in vivo brain electroporation of the dorsal ventricular zone targets stem cell populations that generate neurons for the superficial layers of the OB (Figure 1a,b; de Chevigny et al., 2012b), which can be reliably reached by two-photon microscopy (Adam and Mizrahi, 2011). We used this dorsal targeting approach to introduce a CRE-expression plasmid into R26-RFP reporter mice (Figure 1a). Three weeks later, OB-labeled neurons comprised a mixed population of 6% tyrosine hydroxylase expressing dopaminergic/GABAergic neurons, 12% calretinin positive purely GABAergic neurons, 22% other GABAergic PGN (Figure 1b) and 60% mostly superficially positioned granule cells (GC).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/44830/elife-44830-fig1-v2.jpg)\n\n**Figure 1.:** (a)\u00a0Induction protocols and imaging timeline. In perinatal animals, a CRE-expression plasmid was introduced in the dorsal neural stem cell compartment of Rosa-RFP mice using postnatal electroporation. To label neurons in adults, Nestin-CreERT2 animals were bred to Rosa-RFP mice and induced with tamoxifen at 2 months of age. Thin skull preparation was routinely performed one-week post induction. A weekly imaging scheme was implemented over the critical period and up to 5 months. (b) Postnatal in vivo brain electroporation at P1-P4 leads at three wpi to the appearance of various interneuron types, including TH and CR expressing subtypes, in the superficial GCL and the GL layers of the OB. (c) In vivo microscopy setup. Mice were imaged with the head fixed to the two-photon microscope. Animals could move on a treadmill but rarely did so during imaging sessions. Thin skull preparation allowed high-resolution imaging on a weekly basis. (d) Example of an image Z-stack showing 25 individually identified neurons from 3, 5, and 8 weeks after CRE electroporation. Note that neurons 14 and 17 are lost (circles) while several neurons are added (arrowheads). (e,\u00a0f,\u00a0g) High-resolution images of weekly observations of three groups of neurons highlighted in d. Cell substructures, dendrites and minor cell displacements can be followed over time. Scale bar: 200 \u03bcm in b, 50 \u03bcm in d, 30 \u03bcm in e,\u00a0f, g.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/44830/elife-44830-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (a)\u00a0Immunostaining for the microglial marker iba1 demonstrates the absence of a detectable microglia reaction at 1 day post-surgery.\u00a0(b) Comparison of GFAP staining in the OB. Control and window carrying OB are indistinguishable at 1 week post-surgery. (c) Immunostaining for the microglial marker iba1 demonstrates the absence of a detectable microglia reaction at 1 week post-surgery. Scale bar: 10 \u03bcm in a, 50 \u03bcm in b,c.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/44830/elife-44830-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (a)\u00a0XZ projection of the OB showing that the PGL, EPL and the superficial GCL can be reached through a thin skull preparation.\u00a0(b) Example of Z-projection identifying individual granule neurons between 3 and 10 weeks post induction in perinatal mice. The first cohort is numbered. Additional neurons of later cohorts appeared in the observation window over successive imaging sessions (arrowheads). Scale bar: 50 \u03bcm in a, 30 \u03bcm b.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/44830/elife-44830-fig1-figsupp3-v2.jpg)\n\n**Figure 1\u2014figure supplement 3.:** Scale bar: 50 \u03bcm in a, 20 \u03bcm b.\n\nAn adaptation of the reinforced thin skull method allowed for frequent and long-term imaging of awake mice while perturbing the physiology of the OB only minimally (Drew et al., 2010). In agreement with previous observations (Xu et al., 2007), there was no detectable astroglia reaction or accumulation of microglia after thinning and window implantation (Figure 1\u2014figure supplement 1).\n\nThree weeks after electroporation, when skull growth was sufficiently advanced, thin-skull preparation was performed and populations of individually identified neurons in the glomerular layer (GL; Figure 1d\u2013g) and the granule cell layer (GCL, Figure 1\u2014figure supplement 2) were imaged in awake animals at high resolution over the following weeks and months. All analyzed neurons were individually identified in Z-stacks (Video 1) based on relative position and morphology. Neurons were numbered and revisited weekly over the next months (Figure 1d\u2013f; Video 1; Figure 1\u2014figure supplement 3a,b). After identification of the first cohort, smaller numbers of additional neurons appeared permanently in the observation window as a consequence of ongoing neurogenesis (arrowheads in Figure 1d, 5wpi). These were also numbered and followed and used for long-term analyses (Figure 6). Neurons in the observation field showed stable relative positions over time (Figure 1d); however, in some cases, minor positional adjustment were observed that could be followed over subsequent imaging sessions (Figure 1d,f). Generally, resolution was sufficient to observe even minor changes in dendritic organization of neurons over time (see neuron no. 7 in Figure 1d,f).\n\n![Video 1.](https://cdn.elifesciences.org/articles/44830/elife-44830-video1.mp4.jpg)\n\n**Video 1.:** This stack was the basis for the projection presented in Figure 1d.\n\n### In vivo observation of perinatally born neurons\n\nBased on this direct and systematic imaging approach, we first focused on perinatally born neurons survival during the proposed critical selection period, thus until 8 weeks after their generation at the ventricles (Mandairon et al., 2006). Neurons that were present during the first observation time point (3 weeks after electroporation of the respective stem cells) were followed over the next 5 weeks. Among 755 periglomerular neurons (PGN) in 11 mice only 5.1% were lost over the proposed critical period (Figure 2a, see circles for lost cells no. 14 and 17 in Figure 1d,g). The percentage of lost neurons was very similar between individual animals and was independent of the density of labeled cells in the observation window (between 18 and 100 neurons; Figure 2a).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/44830/elife-44830-fig2-v2.jpg)\n\n**Figure 2.:** (a)\u00a0Tracing of perinatally induced timed neuron first cohorts (755 neurons) in 11 mice from 3 to 8 wpi. (b) Tracing of perinatally induced first cohorts of granule cells (178 cells in six mice) during the proposed critical period. (c) Tracing of the first cohort of periglomerular neurons in eight adult animals (538 neurons) after induction with tamoxifen injection at 2 months.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/44830/elife-44830-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (a, b)\u00a0Coronal section through the OB of an adult Nestin-Cre-ERT2/Rosa-RFP mouse 6 weeks after tamoxifen injection at 2 months of age stained for the OB neuron subtype markers TH and Calretinin.\u00a0(c, d) Seven days post induction (dpi) large amounts of OB neurons in the OB express the immature neuronal marker doublecortin (dcx). At 14 dpi individual cells in the GCL still express dcx. Scale bar: 300 \u03bcm in a, 30 \u03bcm in c, 10 \u03bcm in d.\n\nNext, we investigated newborn granule cells (GCs) in the underlying GCL in six mice with particularly high-quality and stable window preparations (Figure 1\u2014figure supplement 2). Out of 178 RFP positive neurons observed between 3 and 8 weeks after their birth not a single cell disappeared over the subsequent imaging sessions (Figure 2b). We conclude that perinatally generated OB interneurons in both, the GL and the GCL are rarely eliminated after arrival in terminal positions.\n\n### In vivo observation of adult born neurons\n\nWe then investigated the stability of adult born neurons during the critical selection period. First, we focused on PGN that can be reliably imaged after thin skull preparation. As in vivo electroporation is inefficient in adult mice, we crossed the Rosa-RFP line with Nestin Cre-ERT2 mice (Lagace et al., 2007) and induced a heterogeneous cohort of labeled newborn neurons by tamoxifen injection at 2 months of age (Ninkovic et al., 2007) (Figure 2\u2014figure supplement 1a,b). One week after induction virtually all RFP-positive cells in the RMS and about 30% in the OB layers expressed the immature neuron marker doublecortin (Figure 2\u2014figure supplement 1c,d). Reinforced thin skull preparation was routinely performed at 1 week post-induction (wpi). Weekly observations of individually identified PGN in the GL were performed as described above (Video 2, Figure 1\u2014figure supplement 3c,d). Analyses of 538 periglomerular neurons of the first cohort in eight animals showed that only 1.5% disappeared over the 7 weeks period after their first identification (Figure 2c).\n\n![Video 2.](https://cdn.elifesciences.org/articles/44830/elife-44830-video2.mp4.jpg)\n\n**Video 2.:** This stack was the basis for the projection presented in Extended Data\u00a0Figure 1\u2014figure supplement 3.\n\nFinally, we investigated the survival of adult born granule neurons after their arrival in the OB. To access this deeply positioned and densely packed cell population, we used a cranial window preparation in Nestin Cre-ERT2/Rosa-RFP mice. We observed 101 adult born neurons in nine animals (Figure 3a,b,c). During the 8 weeks observation window, six neurons disappeared (5,9%). In addition, we labeled adult born granule cells with an injection of a tomato-expressing lentivirus into the RMS (Figure 3d; Wallace et al., 2017). Tracing of 48 adult-born GCs in 19 fields of view from three mice led to the identification of only a single cell that disappeared (2.1%; Figure 3e) during the 7 weeks observation period. Thus, overall under physiological conditions cell loss in adult born OB neurons during the proposed critical selection period was very low, comparable to the findings for perinatally born neurons.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/44830/elife-44830-fig3-v2.jpg)\n\n**Figure 3.:** (a)\u00a0Example field of view (maximum intensity projection of volume with depth 150 \u00b5m) showing cells that were tracked between 13 and 65 days post tamoxifen injection (dpi). Arrowheads indicate newcomers that appeared after the first day of imaging and were subsequently stable at later time point. Scale bar 50 \u00b5m. (b) Labeling protocols and imaging timeline. To label granule neurons in adults, Nestin CRE-ERT2/Rosa-RFP animals were induced with tamoxifen. A craniotomy was performed 2 weeks before tamoxifen injection. A weekly imaging scheme was implemented over the critical period. (c) Tracing of adult-born granule cells (101 neurons) in nine mice over the critical period. (d) Labeling protocols and imaging timeline. To label granule neurons in adults, C57Bl6 animals were injected with a tomato lentivirus in the RMS. A craniotomy was performed 3 weeks before lentivirus injection. A weekly imaging scheme was implemented over the critical period.\u00a0(e) Tracing of adult-born granule cells (48 neurons) in 3 mice from 19 fields of view from 1 to 7 weeks post injection in the RMS. Lines beginning at zero indicate new cells that appeared in the field of view and were subsequently tracked.\n\nNext we asked if neuron loss could be detected in non-physiological situations. It has been shown that olfactory sensory deprivation induces cell death in adult born OB neurons (Mandairon et al., 2006; Saghatelyan et al., 2005; Yamaguchi and Mori, 2005). To investigate if increased cell death could be observed in our imaging paradigm, we performed naris closure in adult Nestin Cre-ERT2/Rosa-RFP mice 1 week after tamoxifen induction (Figure 4a). Analysis of RFP-positive PGN over the following 8 weeks revealed a significant increase in cell loss (Figure 4bc; p=0.03, four control and three occluded animals, 151 cells).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/44830/elife-44830-fig4-v2.jpg)\n\n**Figure 4.:** (a)\u00a0Timeline for sensory deprivation experiment. Naris occlusion and thin skull preparation were performed 1 week after induction of RFP-positive neurons in adult mice. (b) Two weeks after occlusion neurons with complex morphologies were lost in the OB. (c) Quantification of neuron loss in control and occluded OBs over 8 weeks. Scale bar: 20 \u03bcm in b.\n\nIn conclusion, under physiological conditions newly born neurons in the perinatal and adult OB show little cell loss after arrival in the OB. However, significant cell loss during this observation period was found after blocking sensory input, demonstrating that cell death could be detected with our approach.\n\n### Dose dependent toxicity of thymidine analogs\n\nThe above findings were at odds with the existence of a critical period for survival during which, under normal conditions, about half of the adult born neurons are removed from the OB by cell death (Mandairon et al., 2006; Mouret et al., 2008; Petreanu and Alvarez-Buylla, 2002; Winner et al., 2002; Yamaguchi and Mori, 2005). This concept is to a large extent based on tracing of timed cohorts of newborn neurons using the integration of thymidine analogs, most often BrdU, into the DNA of dividing cells. To investigate if these differences were due to our particular experimental conditions we first repeated such pulse chase studies using commonly used doses of BrdU and following established protocols (Mandairon et al., 2006; Mouret et al., 2008; Whitman and Greer, 2007). Indeed, using four i.p. injections of 50 mg/kg BrdU every 2 hr into adult mice, we found an approximately 40% loss of labeled neurons in the OB between 2 and 6 weeks in the GL as well as in the GCL (Figure 5ab). As in our direct imaging approach, we focused on the dorsal aspect of the OB, we investigated if in this region BrdU-positive cells showed a different behavior than in the rest of the structure. BrdU+\u00a0cell number in the dorsal OB showed the same 40% loss that was found in the entire bulb (Figure 5b).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/44830/elife-44830-fig5-v2.jpg)\n\n**Figure 5.:** (a)\u00a0Timeline of BrdU or EdU pulse chase experiment. Four BrdU/EdU injections at different concentrations were performed in adult mice. Animals were sacrificed 2 and 6 wpi, respectively. (b)\u00a0BrdU cell density in GL, dorsal GL and GCL between 2 and 6 weeks after injection. (c) Example of immunohistochemical staining of a coronal OB section 2 and 6 weeks after 4 \u00d7 50 mg/kg EdU injection. (d) Example of immunohistochemical staining of coronal OB sections 2 and 6 weeks after 4 \u00d7 5 mg/kg EdU injection. (e) EdU cell density in GL and GCL between 2 and 6 weeks after 4 \u00d7 50 mg/kg edU, 4 \u00d7 5 mg/kg edU and 4 \u00d7 1 mg/kg EdU injection, respectively. Note the strong cell loss at 50 mg/kg of EdU between 2 and 6 weeks and the absence of cell loss at 4 \u00d7 5 and 4 \u00d7 1 mg/kg EdU. (f) EdU cell density in superficial and deep GCL between 2 and 6 weeks after 4 \u00d7 50 mg/kg edU and 4 \u00d7 5 mg/kg edU injection, respectively. Note that for EdU 50 kg both layers show a similar cell loss between 2 and 6 weeks while this cell loss is absent in both layers at 5 mg/kg. (g) Example of immunohistochemical staining of a coronal OB section for EdU at 50 mg/kg (green) and cleaved Caspase 3 (red) (h) Increased concentrations of EdU do not augment the number of EdU/cleaved Caspase3 co-labeled cells. (i) Cleaved Caspase three density is more than four times higher in the RMS that in the GCL or GL layers. Scale bar: 300 \u03bcm in left panel in c, 100 \u03bcm in middle panel in c, 300 and 100 \u03bcm in g.\n\nAltogether, these DNA-labeling based findings were in full agreement with previous studies, showing a strong reduction of newborn cells during the critical selection period (Mandairon et al., 2006; Mouret et al., 2008; Petreanu and Alvarez-Buylla, 2002; Whitman and Greer, 2007; Winner et al., 2002; Yamaguchi and Mori, 2005). However, they strongly contradicted our in vivo observations showing very little cell loss. As suggested before (Lehner et al., 2011), we considered the possibility that incorporation of modified nucleotides impacted on neuronal survival in the OB and developed an approach to test this hypothesis.\n\nTo allow immunohistological BrdU detection, tissue samples have to be subjected to strong denaturing conditions that break the complementary base-pairing of DNA, a prerequisite for efficient BrdU antibody binding. Such treatment invariably leads to sample degradation and negatively impacts on staining intensity (Salic and Mitchison, 2008). In concert with limitations due to antibody penetration, this imposes the use of relatively high concentrations of BrdU, generally several injections of 50 to 200 mg/kg of body weight i.p., for reliable detection (Brown et al., 2003; Mandairon et al., 2006; Mouret et al., 2008; Petreanu and Alvarez-Buylla, 2002; Whitman and Greer, 2007; Winner et al., 2002). In contrast, EdU labeling of DNA is based on a click-reaction with fluorescent azides (Rostovtsev et al., 2002; Salic and Mitchison, 2008; Torn\u00f8e et al., 2002) that have much higher diffusion rates in tissue than antibodies. Moreover, the staining reaction can be can be repeated several times to increase signal strengths and DNA denaturation is dispensable, altogether allowing the use of considerably lower concentrations of EdU in comparison to BrdU (Salic and Mitchison, 2008). Based on this increased sensitivity, we asked if the concentration of altered nucleotides in the DNA impacts on cell survival of new neurons in the OB.\n\nFour injections of 50 mg/kg EdU in 2-month-old mice led to an about 40% loss of labeled cells in the GL and the GCL of the OB between 2 and 6 weeks, highly comparable to the results based on BrdU (Figure 5c,e). Four injection of 1 or 5 mg/kg EdU under the same conditions led to the detection of slightly lower amounts of newly generated cells in the OB layers after 2 weeks (Figure 5de). Importantly, under these conditions the decrease in cell numbers between 2 and 6 weeks was not detectable anymore, both in the GL and the GCL (Figure 5e). As it has been suggested that deep and superficial GCs are differentially susceptible to replacement (Imayoshi et al., 2008), we investigated the impact of low and high doses of EdU on both sub-layers. However, deep and superficial GCs showed the same behavior, cell loss at high EdU dose and survival at 5 mg/kg, as the entire GCL (Figure 5f). Altogether, these results lead to the conclusion that loss of labeled cells in the OB during the critical period is correlated with the concentration of modified nucleotides in the DNA of newborn OB neurons.\n\nProgrammed cell death has been suggested to underlie the removal of integrating neurons from the OB during the critical window (Yokoyama et al., 2011). We investigated Caspase 3 (CC3) expression in the presence of high and low doses of EdU. Analyses of immunostained tissues detected consistently low numbers of CC3 positive cells in the OB layers (363\u00a0\u00b1\u00a034 cells /mm3 n\u00a0=\u00a015; thus about 940 CC3+\u00a0cells/GCL) in overall agreement with previous work (770 cells/GCL; Yamaguchi and Mori, 2005). However, among the 10803 analyzed EdU-positive OB neurons only 26 showed co-labeling for CC3. Application of four\u00a0times\u00a05 mg/kg or 50 mg/kg EdU had no influence on the percentage of double stained cells, indicating that thymidine analog induced toxicity did not pass via the apoptotic pathway (Figure 5h).\n\nNext, we investigated the distribution of total CC3-positive cells in the OB layers and the RMS. Interestingly, density of CC3-positive cells was more than six times higher in the RMS than in the GCL and the GL (Figure 5i). This is in good agreement with previous data (Biebl et al., 2000) and suggests that cell death in the system occurs predominantly at the precursor level.\n\nIn conclusion, the above results, showing that lineage tracing by high doses of thymidine analogs is associated with cell loss in the OB, point to toxicity of such DNA modifying agents. Moreover, the finding that at low EdU doses cell loss in the OB during the proposed critical selection period is notdetected represents an independent confirmation of our in vivo imaging based findings.\n\n### Neuronal addition in the OB\n\nNeurogenesis in the OB is considered to be a turnover system in which new neurons replace older ones, leading to a relatively stable size of the structure (Imayoshi et al., 2008; Petreanu and Alvarez-Buylla, 2002). In such a scenario cell loss has to be expected. As we did not observe considerable cell death during early stages in the OB, we asked if neurons disappear at later stages. Continuous long-term observations of perinatally generated PGN and GC provided no evidence for sustained cell loss after the initial 8 weeks time window (Figure 6a,b). The same stability of the labeled population was evident when adult generated GC or PGN were observed for up to 24 weeks after their generation (Figure 6c,d). Moreover, as CRE-induced recombination in Nestin-CRE-ERT2 mice occurs often at the stem cell level (Imayoshi et al., 2008), recombined stem cells continued to generate new neurons. In agreement, additional adult born neurons permanently appeared in the observation window (Figure 6e), leading to a more than doubling of the neuron population of adult generated PGN over an observation period of six months (Figure 6f).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/44830/elife-44830-fig6-v2.jpg)\n\n**Figure 6.:** Long-term survival of neuron populations and neuronal addition in vivo Very limited cell loss in (a)\u00a0perinatal PGNs, (b) perinatal GCs, (c) adult born PGNs and (d) adult born GCs in long-term in vivo observations. (e) Additional RFP expressing neurons appear constantly in the observation window. (f) Net increase in all newborn periglomerular neurons in adult Nestin Cre-ERT2 mice over time. Scale bar in 40 \u03bcm in e.\n\nHow does the OB deal with this permanent addition of neurons in the absence of considerable cell loss? Two potential consequences can be imagined: either the OB grows in size or the cell density in the different layers increases over time. Currently, information about these parameters in the adult rodent OB is based on measurements of serial sections and the available data are in part contradictory (Hinds and McNelly, 1977; Imayoshi et al., 2008; Mirich et al., 2002; Petreanu and Alvarez-Buylla, 2002; Pomeroy et al., 1990; Richard et al., 2010).\n\nFirst, we asked if a volume increase in the OB could be detected directly in the living brain during in vivo imaging experiments. We found that over time slightly larger image frames were necessary to accommodate the same group of neurons in our Z-maximum projections of the GCL and GL (Figure 1d; Figure 3a; Figure 1\u2014figure supplement 2b). Using our systematic imaging approach, we quantified local changes in OB volume over time by measuring distance between individually identified neurons. Indeed, volumetric analysis of inter-neuronal space between groups of four neurons in X, Y, Z (thus an irregular pyramid) demonstrated that distance between neurons increased steadily between 2 and 5 months (Figures 7a,b and 4 animals at each time point), strongly indicating continuous OB growth.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/44830/elife-44830-fig7-v2.jpg)\n\n**Figure 7.:** (a)\u00a0Example of volumetric analysis of inter-neuronal space between individually identified neurons in vivo (groups of four neurons in X,Y,Z; thus an irregular pyramid). (b) Quantification inter-neuronal space shows that distances between identified neurons increase in adult animals. (c) Reconstruction of an adult OB and part of the cortex based on 3-D light sheet imaging. (d) Comparison of 2- and 12-month-old OBs reconstructed from lightsheet images. (e) Quantification of volume increase in OBs from 1 to 12 months, normalized to 2 months. (f) Quantification of volume increase in OB sublayers from 1 to 12 months, normalized to 2 months. Volume increase affects both, the GL and the GCL. (g) Quantification of the volume of the forebrain at 2, 6 and 12 months, normalized to 2 months. Forebrain size over time does not change. (h) Examples of GCL cell density based on TOPRO-3 nuclear staining in whole, cleared OBs of 2- and 6-month-old mice. (i) Quantification of cell density from 1 to 12 months. Cell density is constant over the observation period. Scale bar: 800 \u03bcm in a,b. 40 \u03bcm in f, 50 \u03bcm in h.\n\n![Figure 7\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/44830/elife-44830-fig7-figsupp1-v2.jpg)\n\n**Figure 7\u2014figure supplement 1.:** (a)\u00a0Repartition of OB layers (GL, EPL, GCL) with increasing age.\u00a0Although the volume of all layers increases with time their ratio remains constant.\u00a0(b) Coronal section through the OB of a 6-month-old C57Bl6 stained for the astrocytic marker S100b, the microglial marker iba1 and the nucleus with DAPI. (c) Quantification of astrocytic and microglial density between 2 and 6 months. Astrocyte density is significantly decreased (p=0,006) while microglia density is constant. Scale bar: 200 \u03bcm in b.\n\nSecond, we used light sheet microscopy on CUBIC-treated (Susaki et al., 2014) brains to investigate the structure and volume of the whole adult mouse OB. Volumetric analysis based on 3D reconstructions of cleared OBs (Figure 7c,d and Video 3) revealed a steady increase in OB size leading to a significant 44% enlargement of the structure from 2 to 12 months (Figure 7d,e). This volume increase affected equally the granule and the glomerular layers (Figure 7f) in the absence of obvious changes in layer repartition (Figure 7\u2014figure supplement 1a). During the same interval, total forebrain volume was unchanged (Figure 7g).\n\n![Video 3.](https://cdn.elifesciences.org/articles/44830/elife-44830-video3.mp4.jpg)\n\nNext, we investigated the evolution of cell density in the more homogeneous granule cell layer using cleared brain tissues. To count all cells in the GCL, we stained nuclei with the fluorescent marker TOPRO3. Quantification revealed that the density of nuclei was highly stable at all observed time points (Figure 7h,i) while the density of astrocytes decreased and microglia density was unchanged (Figure 7\u2014figure supplement 1a, b and c).\n\nThus, both in vivo brain imaging and light sheet microscopy of fixed cleared tissue demonstrate that the mouse OB grows significantly during adult life in the absence of detectable changes in cell density. This is in strong support of the permanent addition of new neurons to a stable preexisting circuitry in the absence of substantial cell death.\n\n## Discussion\n\nOur work, combining long-term in vivo observations, pulse chase experiments and 3D morphometric analyses, leads to three main conclusions:\n\nFirst, the level of neuronal cell death among perinatal and adult born interneurons after their arrival in terminal positions in the OB is very low. Second, adult OB neurogenesis is not a homeostatic but an addition process. Third, classical lineage tracing approaches based on thymidine analogs are associated with unwanted side effects and have to be interpreted with care.\n\nUsing a non-invasive long-term imaging approach combined with lineage-tracing approaches using low concentrations of the thymidine analog EdU, we were unable to detect considerable cell loss among postnatal and adult generated neurons during the first weeks after their arrival in the OB.\n\nThe predominant evidence that led to the postulation of selection in the OB target layers is based on the use of thymidine analogs, generally BrdU or 3H-dT, that incorporate into the nuclear DNA during the S-phase of the cell cycle (Petreanu and Alvarez-Buylla, 2002; Winner et al., 2002).\n\nHowever, both BrdU and 3H-dT are toxic (Breunig et al., 2007; Ehmann et al., 1975; Kolb et al., 1999; Kuwagata et al., 2007; Nowakowski and Hayes, 2000; Sekerkov\u00e1 et al., 2004; Taupin, 2007) and studies in both rodents (Lehner et al., 2011; Webster et al., 1973) and primates (Duque and Rakic, 2011) pointed to unwanted, and hard to interpret, long term effects associated to their use. Accordingly, warnings concerning the interpretation of such data have been issued (Costandi, 2011; Lehner et al., 2011).\n\nIn agreement with the existing literature, we observed massive loss of newborn neurons in the OB when standard doses of BrdU or EdU were used for tracing. Interestingly, in the presence of considerably lower concentrations of EdU neurogenesis was still obvious but cell loss during the critical period was not detectable anymore. This finding is in perfect agreement with our in vivo observations, in which we find very little neuronal death in the OB layers.\n\nThese results lead to the conclusion that a selection step in which an overproduced precursor population is matched to the needs of the target structure, does not principally occur after arrival in the OB. While this observation is unexpected, it is not completely isolated. For example, in Bax-KO mice, in which apoptotic cell death is blocked, the general structure and size of the OB neuron layers are virtually unaffected (Kim et al., 2007) while a disorganization and accumulation of neuronal precursors in the RMS was observed. This points to the possibility that neuronal selection occurs more at the level of recruitment from the RMS than at the level of integration in the target layers. Such a scenario of \u2018early selection\u2019 is also supported by the observation that the density of apoptotic cells is much higher in the RMS than in the OB proper (Figure 5i and Biebl et al., 2000). However, other scenarios, like an impact of altered migration on survival in the OB, cannot be excluded.\n\nAlternatively, integration or death of OB interneurons might be intrinsically encoded. It has been shown that in developing cortical interneurons neuronal survival is largely independent of signals from the local environment but that about 40% of the total population is predestined to undergo Bax-dependent apoptosis (Southwell et al., 2012). In such a scenario, cell death would be expected to occur already in the SVZ/RMS.\n\nOur results demonstrate that neuronal death is a rare event not only during early stages after arrival in the OB, but at all observed time points. However, the permanent addition of new neurons in the absence of considerable cell removal is not compatible with the idea that the OB represents a turnover system of constant size (Bergami and Berninger, 2012; Imayoshi et al., 2008). Growth has to be expected and our in vivo imaging and light sheet microscopy studies clearly demonstrate a 40% vol increase during the first year of adulthood in the absence of detectable changes in cell density. Indeed, growth of the adult OB in mice has been observed in other studies, although considerable variation and dependence on genetic background have been reported (Mirich et al., 2002; Richard et al., 2010). Other studies did not find obvious differences in total OB size or specific sublayers (Imayoshi et al., 2008; Petreanu and Alvarez-Buylla, 2002; Pomeroy et al., 1990). What could be the reason underlying these contradictory findings? Past approaches were based on the 2D analysis of a subset of tissue sections and the extrapolation of the total volume based thereon. However, the OB is not a simple radial symmetric globule, but a complex multi-layered structure that shows huge variations along the rostro-caudal and dorso-ventral axes (see Video 3). Light sheet microscopy is suited to overcome many of these limitations as the OB is imaged and measured in its entirety. Extrapolations can be avoided and the selection of comparable levels for layer analyses is simple and reliable. Increases in OB lengths are directly obvious. As a consequence inter-animal variations are minor and growth of the structure becomes evident.\n\nIndependently from the light-sheet approach, we show that during in vivo long-term observations constantly larger frames are needed to accommodate the same group of cells and that the distance of individually identified neurons measurably increases. The latter finding is in full agreement with the observation that the distance between specific glomeruli increases with age of the animal (Richard et al., 2010). Altogether, these data clearly demonstrate growth of the mouse OB during the entire first year of the animal\u2019s life.\n\nIn conclusion, we show here that neuronal cell death is rare in the OB and that neuronal addition, but not replacement, is the outcome of adult neurogenesis. Genetic fate mapping studies (Ninkovic et al., 2007) and also direct observation of the TH positive neuron population (Adam and Mizrahi, 2011) already pointed toward an increase in specific neuronal subsets in the adult OB. We show that neuronal addition is a general phenomenon that affects perinatally and adult generated neurons, leading to substantial growth of the OB throughout life. Thus, OB neurogenesis appears to reflect ongoing brain development rather than homeostasis.\n\nHow many neurons are added to the adult OB? Our data, based on measurements of cell density and volume of the structure, allows to estimate that between 2 and 6 months about 8000 cells/day are added to the growing OB. Interestingly, using a genetic approach, Imayoshi et al found that 6 months after tamoxifen induction, labeled neurons represent 41.2% of the total population (1,500,000, thus 620,000 new neurons). Considering 60\u201370% recombination efficiency at the stem cell level (Imayoshi et al., 2008), this leads to a number of almost 6000 new cells that are added per day. Thus, our direct measurements and the genetic approach render highly comparable results in terms of the number of neurons that integrates in the adult OB. However, these numbers are substantially lower than estimates based on thymidine analog labeling (Petreanu and Alvarez-Buylla, 2002) and future experiments will be needed to address this discrepancy.\n\nOur work leaves of course other open questions. For example, it has been shown that olfactory enrichment and learning increases the survival of newborn neurons in the OB. Neurons are \u2018saved\u2019 from dying apoptotic death (Mouret et al., 2008; Rochefort et al., 2002; Sultan et al., 2010). But how can neurons be saved when death is extremely rare in first place? Repeating in vivo observations and low-dose EdU studies in the context of olfactory stimulation and learning will help to clarify these matters.\n\nMoreover, an increase in BrdU-positive cells in the GCL was observed in BAX conditional mutant mice (Kim et al., 2007; Sahay et al., 2011). While this could indicate that cell death is a regulating factor in the OB target layers, it is also in agreement with a scenario where neurons are selected during exit from the RMS, as discussed above.\n\nFinally, neuronal selection at the level of integration has been proposed to underlie adult hippocampal neurogenesis (Bergami and Berninger, 2012; Buss et al., 2006), and recent in vivo observations indicate that most cell death occurs among immature neurons, at relatively early stages after their birth (Pilz et al., 2018). This correlates well with the quasi absence of death during later stages, that we observe in the OB.\n\n## Materials and methods\n\n### Animals\n\nAll mice were treated according to protocols approved by the French Ethical Committee (#5223\u20132016042717181477 v2). Mice were group housed in regular cages under standard conditions, with up to five mice per cage on a 12 hr light\u2013dark cycle. 2 months old C57Bl6 males were used for BrdU and edU pulse chase experiments. Rosa-RFP mice (Ai14, Rosa26-CAG-tdTomato;\u00a0Madisen et al., 2010) were obtained from the Jackson laboratory and used on a mixed C57Bl6/CD1 background. For lightsheet experiments, 1, 2, 4,6 and 12 months old male C57Bl6 were obtained from Janvier labs. Nestin-CreERT2 mice were obtained from Amelia Eisch (Lagace et al., 2007) and crossed with Rosa-RFP mice. Male and female Nestin-CreERT2 X rosa-RFP mice were used between 2- and 3-month old at the time of surgery.\n\n### In vivo labeling of neurons\n\nIn vivo electroporation was performed as previously described\u00a0(Boutin et al., 2008). Briefly, 1-day-old pups were anaesthetized by hypothermia and 1 \u03bcl of a pCAG-CRE) plasmid\u00a0(Platel et al., 2010) at 4 \u03bcg/\u03bcl) was injected in the lateral ventricle. Electrical pulses were applied to target the dorsal V-SVZ.\n\nIn adult Nestin-CreERT2 X rosa-RFP mice, RFP expression was induced by tamoxifen injection (Sigma-Aldrich; intraperitoneal; dissolved in 10% EtOH/90% sunflower oil) at 100 mg/kg per day for 2 days.\n\n### Surgical preparation\n\nImplantation of an observation window was performed as previously described\u00a0(Drew et al., 2010) but with minor modifications. Briefly, mice were anaesthetized by intraperitoneal (ip.) injection of ketamine/xylazine (125/12,5 mg/kg). Dexam\u00e9thasone (0.2 mg/kg) and buprenorphine (0.3 mg/mL) were injected subcutaneously and lidocaine was applied locally onto the skull. The pinch withdrawal reflex was monitored throughout the surgery, and additional anesthesia was applied if needed. Carprofen (5 mg/kg) was injected ip. after the surgery. A steel bar was added during this step to allow fixation of the animal to the microscope. The skull overlying the OB was carefully thinned with a sterile scalpel blade until a thickness of 10\u201320 \u03bcm was reached. A thin layer of cyanoacrylate (superglu3, Loctite) was applied and a 3-mm round coverslip was apposed and sealed with dental cement (superbond, GACD). A first microscopic observation was performed on these anesthetized mice.\n\nFor olfactory sensory deprivation, a silicone tube was inserted (Intramedic; 0,5 mm diameter, 3 mm long) into one naris and sealed with cyanoacrylate glue (Cummings et al., 1997). Efficiency of occlusion was checked the following day and before each imaging session. At the end of the experiment, immunostaining against tyrosine hydroxylase was performed to confirm the efficiency of occlusion.\n\n### In vivo two-photon imaging\n\nWe used a Zeiss LSM 7MP two-photon microscope modified to allow animal positioning under a 20X water immersion objective (1.0 NA, 1.7 mm wd) and coupled to a femtosecond pulsed infrared tunable laser (Mai-Tai, SpectraPhysics). After two-photon excitation, epifluorescence signals were collected and separated by dichroic mirrors and filters on four independent non-descanned detectors (NDD). Images were acquired using an excitation wavelength of 950 nm. RFP was first collected between 605\u2013678. In addition, we collected an additional RFP signal between 560\u00a0and\u00a0590 that was voluntarily saturated to allow a better identification of subcellular structures like dendrites.\n\nIn general, image acquisition lasted about 10 min. Mice could potentially move on a treadmill during imaging, but rarely did so. The imaging window was centered on the dorsal surface of the OB. The whole PG layer was imaged for periglomerular observation experiments (around 150 \u03bcm). For GC observation experiments, we imaged from the surface of the olfactory bulb to a depth of 400 to 600 \u03bcm.\n\nOn consecutive observation, the same field of view was localized based on the geometric motifs of groups of neurons and specific morphological features of individual cells. Between 18 and 179 neurons were imaged initially every week for the first 8 weeks and further imaged at irregular intervals for up to 22 weeks. Images of 606 \u00d7 606 \u03bcm were acquired at 0.59 \u03bcm/pixel resolution in the xy dimension and 2 \u03bcm/frame in the z dimension to a maximal depths of 400 \u03bcm.\n\n### In vivo imaging of adult born GCs labeled with a lentivirus\n\nSee Wallace et al. (2017) for cranial window, virus, and imaging. Briefly, 250 nL of undiluted virus (1:1 mixture of lenti-syn-tTAad and lenti-TRE-dTomato-T2A-GCaMP6s) was injected bilaterally at each of two depths to target the RMS (coordinates from bregma: A\u00a0+\u00a03.3, L\u00a0\u00b1\u00a00.82, from the brain surface: V-2.9 and \u22122.7). The virus was locally produced and the viral titer was not measured. Supplementary file 1 in the Wallace et al. (2017) shows an example of the injection site in a sagittal slice and demonstrates that the virus does not diffuse into the bulb at the volume and titer we used. All cells in the present analysis were labeled with the tdTomato-GCaMP6s version of the lentivirus.\n\nAnalysis: Z stacks taken with a 1 or 2 \u00b5m z-step were used for tracking cells over weeks. Maximum intensity projections were created and annotated manually in ImageJ and cross-referenced with z-stacks to confirm that the dendritic structure and location of a cell allowed unambiguous identification. Each line in 3C represents cells tracked for different lengths of time, and multiple lines may correspond to a single field of view. For example, this imaged field of view corresponds to the two lines representing three cells tracked over time, with one line ending at 5 weeks and one ending at 7 weeks (due to the final z stack not extending deep enough to include the first 3 cells). The newcomers arrived at different times, so they have different lines. For example, some of the cells with asterisks arrived at 3 weeks and others arrived at 4 weeks. Incoming cells not marked with asterisks had cell bodies that either were not fully included within the z stack or we were not able to track them for more than one imaging session and so were not quantified.\n\n### Chronic in vivo imaging analysis\n\nQuantitative analyses were performed on raw image stacks using FIJI software (Schindelin et al., 2012). All neurons identified on the first image were assigned a number using ImageJ overlay. Based on morphology and relative position each neuron was individually numbered and tracked on the successive weekly images (see Figure 1\u2014figure supplement 3b,d). After identification of the first cohort, smaller numbers of additional neurons appeared permanently in the observation window as a consequence of ongoing neurogenesis in the stem cell compartment (arrowhead in Figure 1d, 5wpi). These were numbered and followed like the first cohort. Results were summarized in Microsoft Excel. Occasionally neurons located at the border of an image were placed outside of the imaged field in one of the following sessions. These cells were excluded from further analyses. Animals showing an evident degradation of the imaging window were excluded from further imaging sessions.\n\nFor the analyses of the distance between neurons (Figure 7ab), we measured over time the volume between four neurons (three neurons in the same plane and another neuron in a different plane) using FIJI. We measured two pyramids (i.e. eight neurons) per animal in four animals from 2 to 5 months.\n\n### Quantification of Brdu and EdU pulse chase experiments\n\nBrdU (Sigma) was injected ip. 4 times at 50 mg/kg body weight every 2 hr. EdU (Sigma) was injected 4 times at 1, 5 or 50 mg/kg body weight every 2 hr. Staining was performed as described previously (de Chevigny et al., 2012a). For the dose of 1 mg/kg of edu, the labeling protocol was repeated to increase the intensity of the staining. This was not necessary for the dose of 5 mg/kg. Stainings were done on 50 \u03bcm floating vibratome sections. Images were taken either using a fluorescence microscope (Axioplan2, ApoTome system, Zeiss, Germany) or a laser confocal scanning microscope (LSM880, Zeiss, Germany). Conditions were blinded to the experimenter. Labeling at 2 and 6 weeks were performed on the same day. Three to five OB sections were randomly chosen in five animals per condition. Stack of 6 to 15 images were performed every 2 um over the whole surface of the OB slice. The number of BrdU/EdU-positive cells in the glomerular layer and granule cell layer were quantified in three dimension using FIJI software and Imaris software. The results were divided by the volume of the region to give a density of labeled cells per mm3. The mean per animal is represented in Figure 5 and used for statistical tests.\n\n### Quantification of cleaved-Caspase three immunostaining\n\nWe used the same methods as explained in the previous section to measure the density of cleaved caspase3-positive cells. Quantification was performed in 15 animals (5 animals 2 weeks after 5 mg/kg EdU injection, 5 animals 2 weeks after 50 mg/kg EdU injection, 5 animals 6 weeks after 50 mg/kg EdU injection).\n\n### Light-sheet microscopy\n\nTo render brains transparent we followed the Cubic protocol (Susaki et al., 2014). Briefly, brains where incubated in Cubic1 solution for 10 days at 37\u00b0C using gentle agitation. After clearing, brains were incubated for 1 day in the red nuclear dye TOPRO3 (1/1000) in PBS, 0.01% Tween 20, 0.01% sodium Azide at 37\u00b0C. The brains were then re-incubated for 3 hr in Cubic1 solution and subsequently placed in Cubic2 solution for 2 days at 37\u00b0C. Timing of all steps was carefully monitored.\n\nWe used a lightsheet Z1 microscope (Zeiss) with a 5x/0.16NA objective to image the transparized OB and UltraMicroscope II (LaVision BioTec) with LWDO 2x/0.14NA for whole brain imaging. OB layers were easily distinguishable using the nuclear staining of the TOPRO3. The OB was imaged every 5.9 \u03bcm in Z with a xy pixel dimension of 2.5 \u03bcm and the whole brain with 30 \u00b5m steps in Z and a xy resolution of 3.03 \u00b5m, respectively. We used Imaris software (Bitplane, Germany) for reconstruction of the total volume based on the nuclear TOPRO3 staining. To determine total forebrain size we measured the entire volume from the caudal end on the OB to the caudal end of the neocortex. All measurements were normalized to the mean obtained on 2-month-old brains.\n\n### Measurement of cell density\n\nWe measured cell density in the granule cell layer by imaging the same transparized brain with the two-photon microscope used for in vivo imaging to obtain a better resolution. We acquired Z stacks of 200 \u03bcm with 2 \u03bcm resolution in Z and 0.3 \u03bcm in xy in the central part of the OB. These images were first de-noised in Fiji using a 3D mean filter. Then the volumetric density of nuclei was quantified using Imaris software: We use the cell detection module to detect nuclei in the granule cell layer. We used 4 \u03bcm as a seed point value to split the connected objects.\n\n### Immunohistochemistry\n\nStainings were done on 50 \u03bcm floating vibratome sections as described before (Tiveron et al., 2016). Primary antibodies: GFP (rabbit IgG, Life technologies,1 1:1000 or chicken Ig, AVES, 1:1000), Calretinin (mouse IgG1, Synaptic Systems; 1:2000), Tyrosine Hydroxylase (chicken Ig, AVES; 1:1000), IBA1 (life technologies, 1:500), GFAP (life technologies, 1:500), cleaved-caspase3 (Cell Signaling Technology: #9662, 1:500). Secondary antibodies were purchased from Life Technologies. Before mounting, cell nuclei were stained with Hoechst 33258 or TOPRO3. Optical images were taken either using a fluorescence microscope (Axioplan2, ApoTome system, Zeiss, Germany) or a laser confocal scanning microscope (LSM880, Zeiss, Germany).\n\n### Statistical analyses\n\nAll data are presented as mean\u00a0\u00b1\u00a0s.e.m. Statistical comparisons were performed using Matlab software (Mathworks) or R. In box plot representation, center line represents the median; box limits, upper and lower quartiles; whiskers, outliers). All statistical tests were two-tailed. Threshold for significance was set at p=0.05. For occlusion experiments (Figure 2g) we used a Wilcoxon Rank-sum test (p=0,0357). For Brdu and Edu pulse chase experiment (Figure 3), we used a Wilcoxon Rank-sum test (*p<0,05, **p<0,01, ***p<0,001). For quantification of the volume of the OB and the volume of the layers, we used a wilcoxon ranksum test for each comparison (six comparison) and adjusted the p-value threshold for multiple comparisons using Bonferroni (*p<0,0083, **p<0,00167, ***p<0,000167). For the quantification of the increase of size during in vivo imaging experiments (Figure 5i), we used a Friedman rank sum test followed with a post hoc test in the Matlab software (between 2 and 5 months **p<0.01).\n",
+      "created_at": "2025-12-02T11:08:40.690056Z"
+    },
+    {
+      "id": "c7b9062a-2f5a-4fec-8dbd-f1c7941dbac0",
+      "submission_id": "12be7179-7f38-421e-8b79-d72f9bc7e419",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Gary L Westbrook, Oregon Health and Science University United States\n\nReviewers:\n- Richard Nowakowski, Florida State University United States\n\n## Review text\n\nDOI: [10.7554/eLife.44830.020](https://doi.org/10.7554/eLife.44830.020)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\n[Editors\u2019 note: this article was originally rejected after discussions between the reviewers, but the authors were invited to resubmit after an appeal against the decision.]\n\nThank you for submitting your work entitled \"Neuronal integration in the adult olfactory bulb is a non-selective addition process\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by a Reviewing Editor and a Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Richard Nowakowski (Reviewer #2).\n\nOur decision has been reached after consultation between the reviewers. Based on these discussions and the individual reviews below, we regret to inform you that your work will not be considered further for publication in eLife.\n\nSummary:\n\nOverall, this is a potentially interesting manuscript that highlights how experimental differences may lead to very different outcomes/interpretations between studies. As you will see below, there was enthusiasm for this topic and the approach. However, a main concern of the reviewers in the post-review discussion was the strong statements, intended to counter many previous studies. This in itself is not bad, but the experimental rigor is lacking to fully support claims of a strong paradigm shift. In general, that would require consideration of additional data, other experimental approaches, and/or larger sample sizes. At present, the conclusions are over-interpreted. The dose-dependent effects of thymidine analogs suggest that high doses kill cells, but whether the low dose is sufficient to capture a decrease in number due to cell death if less clear. The number of neurons imaged with 2P seems too small to make a definitive conclusion about cell-death.\n\nReviewer #1:\n\nThis is an interesting study that challenges the notion that integration of adult-granule cells is dependent on neuronal competition. The authors show that normally used doses of thymidine analogs induce cell-death whereas low doses fail to do so. Using 2P imaging, the authors do not find evidence of cell death of adult-born granule cells \"during a critical period\" up till 8 weeks.\n\n- The sample size for imaging is on the smaller side: 48 neurons from 3 mice (from 1-7 weeks post injection). Can the authors make conclusions regarding activity dependent survival based on such a small number of cells?\n\n- It is not clear why the authors did not use the Nestin CreERT2:Ai14 system to label adult-born granule cells for 2P imaging. Is Lentiviral labeling an equivalent approach (given the effects of injury, inflammation etc.)?\n\n- Conditional deletion of Bax in nestin+ cells in the adult SVZ results in increased survival of adult-born granule cells (Sahay et al., 2011). Are the authors suggesting that Bax dependent cell-death plays a role prior to neuronal integration?\n\n- Is it possible that activity dependent competition plays a role at a later stage?\n\n- Neuronal competition is suggested to guide integration of adult-born dentate granule cells (Tashiro Nature 2006, Adlaf et al. ELife 2017, McAvoy et al., Neuron 2016). Do the authors think that competition occurs only in the DG niche?\n\nReviewer #2:\n\nThis is a great paper! It has impact on the OB issues and also on the DG related proliferation. It is difficult to argue with the single cell data as it has significant advantages over the generally used S-phase labeling.\n\nThe missing aspects of this paper are the early time points and a quantitative analysis (i.e., model). The first point should be addressed in the paper regarding what limits the missing early time points place on the conclusions \u2013 there are a few. The quantitative analysis, i.e., model could be the topic of a follow up manuscript.\n\nReviewer #3:\n\nIn the manuscript by Platel et al., the authors present an intriguing argument against neuronal turnover in the OB, and against critical periods for adult born neuron survival. They show that (1) populations of OB neurons theoretically replaced by adult neurogenesis are actually quite stable, (2) common methods for labeling adult born neurons via intercalating agents can lead to cell death, and (3) the volume of the OB increases continuously with age in accordance with a net influx of neurons. By implementing chronic two photon imaging of genetically labeled neurons, the authors show that populations of perinatally-born and adult-born PGCs are much more stable than previously appreciated. Whereas previous studies showed up to 50% loss of newborn neurons after 4 wks, this study shows little to no reduction in cell numbers. The authors pose that this is mainly due to differences in labeling strategy, and present intriguing evidence that labeling developing neurons with high concentrations of BrdU/EdU induces artificially high cell death, and that when low concentrations of EdU are used there is limited- or no loss of EdU-labeled cells over time. From these findings, the authors make the argument that adult neurogenesis in the OB is not a homeostatic process where the cell loss is balanced by the addition of new neurons, and that the influx of cells corresponds to a continual increase in OB volume. This finding is surprising and a bit harder to reconcile with the notion that the adult brain is in a relatively steady state. They use a combination of extrapolation within fields of view in vivo and whole OB imaging at different ages to show that the volume increases, but cell density and architecture within and between layers remain the same. Overall, this is a useful and informative study that should certainly be considered at eLife, however key aspects of the manuscript should definitely be addressed prior to acceptance for publication.\n\nConcerns:\n\n\u2022 Although provocative to make the main claim that adult born neurons do not show a \"critical period\", this overall notion is still challenged by the fact that survival/integration is still directly influenced by sensory deprivation/enrichment. This is a key idea to critical period\u2026that levels of activity influence neuronal development. Until this is more clearly fleshed out with further enrichment/learning/training paradigms, it remains a stretch to turn over predominant models, and thus the language should be tempered.\n\n\u2022 The in vivo imaging data is appreciated, and certainly reveals very important discrepancies between previous studies and the current work regarding turnover rates in adult born neuron populations. However, I find it a bit surprising that the authors did not present in vivo imaging data from animals actually labeled with differing concentrations of EdUA. Performing similar analyses in the variable-dosed animals and observing differential turnover rates in vivo would be very compelling, since it would be a direct comparison rather than completely separate experiments. This is a key point, and if not directly addressed with further experimentation, must at least be discussed.\n\n\u2022 The study is lacking details in the Materials and methods section regarding viral injections and imaging methods. From the reference, it is unclear what total volume, titer, and dilution of virus was injected. This is important to assess aspects of labeling progenitor vs. migrating/postmitotic populations through potential diffusion, etc. On the same note, the authors do not describe how they chose their fields of view for imaging, including orientation, depth relative to the surface of the bulb, or other layer landmarks in the OB. Also, each field of view obtained from the same animal should not be considered an independent sample. Especially with only 3 animals, they should account for this by using a nested analysis or a linear mixed model. As is, the current Materials and methods section makes it difficult to fully evaluate this experiment.\n\n\u2022 The description of overall bulb growth using triangulation measurements is appreciated, especially with reference to other brain areas. But given the estimates of newborn neuron birth rates, and the posed limited turnover, it would be possible to generate models and/or estimates of how much the OB should expand. The described growth rate here, still seems quite small considering the robust rate of addition vs. cell death. Can this be modeled, measured, and/or reconciled?\n\n\u2022 For light sheet imaging, the authors use CUBIC-treated samples. Many of the recently developed clearing techniques impact final tissue volumes. It is important to show that this method is not affecting the brain volume differentially at different ages and different structures. Alternatively, other methods such as small animal in vivo CT scans that offer direct volume measurements might be considered.\n\n\u2022 Finally, the authors do not present any data or discussion of how other OB cell types that do not undergo adult neurogenesis compensate for the increase in volume and/or presumed impact on OB circuitry. These issues should at least be raised in the Discussion.\n",
+      "created_at": "2025-12-02T11:08:40.690056Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T11:08:40.690056Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T11:08:40.690056Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "61ff9ebd-4991-4b01-a720-d698f561d3c4",
+      "content_id": "cc399c25-f951-4c8b-a1d7-7d2d35d4c719",
+      "claim_id": "C1",
+      "claim": "Adult neurogenesis occurs in the olfactory bulb (OB) of rodents.",
+      "claim_type": "EXPLICIT",
+      "source": "Neurogenesis continues after birth in the hippocampus and olfactory bulb of rodents.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established fact in the introduction without qualification.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:08:40.690056Z"
+    },
+    {
+      "id": "a7366bd9-a342-472b-9e94-d340796eac61",
+      "content_id": "cc399c25-f951-4c8b-a1d7-7d2d35d4c719",
+      "claim_id": "C2",
+      "claim": "During OB neurogenesis, predetermined stem cell populations along the walls of forebrain ventricles generate neuronal precursors.",
+      "claim_type": "EXPLICIT",
+      "source": "During OB neurogenesis predetermined stem cell population along the walls of forebrain ventricles generate neuronal precursors that migrate via the rostral migratory stream (RMS) into the center of the OB.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is presented as established knowledge about the neurogenesis process.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:08:40.690056Z"
+    },
+    {
+      "id": "140db960-5f7e-4b2f-9169-dcdee321e967",
+      "content_id": "cc399c25-f951-4c8b-a1d7-7d2d35d4c719",
+      "claim_id": "C3",
+      "claim": "Neuronal precursors migrate via the rostral migratory stream (RMS) into the center of the OB.",
+      "claim_type": "EXPLICIT",
+      "source": "During OB neurogenesis predetermined stem cell population along the walls of forebrain ventricles generate neuronal precursors that migrate via the rostral migratory stream (RMS) into the center of the OB.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the established migration pathway of neuronal precursors.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:08:40.690056Z"
+    },
+    {
+      "id": "6b87758c-737f-432d-9e6a-535863f458ae",
+      "content_id": "cc399c25-f951-4c8b-a1d7-7d2d35d4c719",
+      "claim_id": "C4",
+      "claim": "After radial migration, cells integrate into the granule cell layer (GCL) and glomerular layers (GL).",
+      "claim_type": "EXPLICIT",
+      "source": "After their radial migration into the principal target layers, the granule cell (GCL) and glomerular layers (GL), cells integrate into the preexisting circuitry and function as interneurons using GABA and dopamine as their principal neurotransmitters (Whitman and Greer, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Whitman and Greer, 2007.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:08:40.690056Z"
+    },
+    {
+      "id": "7460cb2b-936e-4e09-b82b-2dab5ece77c3",
+      "content_id": "cc399c25-f951-4c8b-a1d7-7d2d35d4c719",
+      "claim_id": "C5",
+      "claim": "Integrated OB neurons function as interneurons using GABA and dopamine as their principal neurotransmitters.",
+      "claim_type": "EXPLICIT",
+      "source": "After their radial migration into the principal target layers, the granule cell (GCL) and glomerular layers (GL), cells integrate into the preexisting circuitry and function as interneurons using GABA and dopamine as their principal neurotransmitters (Whitman and Greer, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Whitman and Greer, 2007.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:08:40.690056Z"
+    },
+    {
+      "id": "9ceebcc8-0e76-4f45-b0ba-904019700822",
+      "content_id": "cc399c25-f951-4c8b-a1d7-7d2d35d4c719",
+      "claim_id": "C6",
+      "claim": "Neuronal integration in the adult OB is considered to be a competitive process.",
+      "claim_type": "EXPLICIT",
+      "source": "First, neuronal integration in the adult is a competitive process, during which large numbers of newly arriving neurons compete for integration into the circuitry and ultimately survival.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This represents the prevailing model in the field that the authors are challenging.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:08:40.690056Z"
+    },
+    {
+      "id": "0d548672-cc13-4565-bbf5-9c294cffc03c",
+      "content_id": "cc399c25-f951-4c8b-a1d7-7d2d35d4c719",
+      "claim_id": "C7",
+      "claim": "Competition for neuronal integration is thought to occur during a critical window of 2\u20138 weeks after arrival.",
+      "claim_type": "EXPLICIT",
+      "source": "This competition is thought to occur during a defined critical window of 2\u20138 weeks after arrival and leads to the apoptotic elimination of about half of the initial population (Bergami and Berninger, 2012; Lledo et al., 2006; Mandairon et al., 2006; Petreanu and Alvarez-Buylla, 2002; Winner et al., 2002; Yamaguchi and Mori, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations describing the prevailing model.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:08:40.690056Z"
+    },
+    {
+      "id": "b3e58ad3-b015-4754-9f9c-086b0bc7a608",
+      "content_id": "cc399c25-f951-4c8b-a1d7-7d2d35d4c719",
+      "claim_id": "C8",
+      "claim": "The competitive process leads to apoptotic elimination of about half of the initial neuron population.",
+      "claim_type": "EXPLICIT",
+      "source": "This competition is thought to occur during a defined critical window of 2\u20138 weeks after arrival and leads to the apoptotic elimination of about half of the initial population (Bergami and Berninger, 2012; Lledo et al., 2006; Mandairon et al., 2006; Petreanu and Alvarez-Buylla, 2002; Winner et al., 2002; Yamaguchi and Mori, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations describing the prevailing model.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:08:40.690056Z"
+    },
+    {
+      "id": "5c13a445-e652-4535-8c0f-b4002b091c64",
+      "content_id": "cc399c25-f951-4c8b-a1d7-7d2d35d4c719",
+      "claim_id": "C9",
+      "claim": "The OB represents a turnover system in which newly integrating cells replace preexisting ones.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, the OB represents a turnover system, in which newly integrating cells replace preexisting ones, leading to a relatively stable total number of neurons in the target layers (Bergami and Berninger, 2012; Imayoshi et al., 2008; Lledo et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations describing the prevailing turnover model.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:08:40.690056Z"
+    },
+    {
+      "id": "8ca4feaf-e1a5-4aa2-941e-a56c3b952673",
+      "content_id": "cc399c25-f951-4c8b-a1d7-7d2d35d4c719",
+      "claim_id": "C10",
+      "claim": "The turnover system leads to a relatively stable total number of neurons in the target layers.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, the OB represents a turnover system, in which newly integrating cells replace preexisting ones, leading to a relatively stable total number of neurons in the target layers (Bergami and Berninger, 2012; Imayoshi et al., 2008; Lledo et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations describing the prevailing turnover model.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:08:40.690056Z"
+    },
+    {
+      "id": "2b3f340f-2e61-4b63-8d7a-a40d6ab9c589",
+      "content_id": "cc399c25-f951-4c8b-a1d7-7d2d35d4c719",
+      "claim_id": "C11",
+      "claim": "The concepts of competitive selection and turnover are largely based on lineage-tracing experiments using thymidine analogs like BrdU or 3H-thymidine.",
+      "claim_type": "EXPLICIT",
+      "source": "These two concepts are to a large extend based on lineage-tracing experiments using thymidine analogs like bromodeoxyuridine (BrdU) or 3H-thymidine to label the DNA of dividing cells (Mandairon et al., 2006; Petreanu and Alvarez-Buylla, 2002; Winner et al., 2002; Yamaguchi and Mori, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to studies using these methods.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:08:40.690056Z"
+    },
+    {
+      "id": "645979ac-6469-43be-9ec4-ec49bb2dfc0c",
+      "content_id": "cc399c25-f951-4c8b-a1d7-7d2d35d4c719",
+      "claim_id": "C12",
+      "claim": "A common observation in thymidine analog experiments is a loss of labeled cells during the first few weeks after their arrival in the olfactory bulb.",
+      "claim_type": "EXPLICIT",
+      "source": "A common observation in such experiments is a loss of labeled cells during the first few weeks after their arrival in the olfactory bulb, which led to the postulation of a selection mechanism allowing the remodeling of specific OB circuits during a period when new cells had already matured and developed dendritic arborizations (Petreanu and Alvarez-Buylla, 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Petreanu and Alvarez-Buylla, 2002.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:08:40.690056Z"
+    },
+    {
+      "id": "61a539a1-dd5d-4c6d-a07f-bc3d02ba84b5",
+      "content_id": "cc399c25-f951-4c8b-a1d7-7d2d35d4c719",
+      "claim_id": "C13",
+      "claim": "Genetic approaches using CRE-inducible markers have demonstrated an accumulation of adult born neurons in the OB over time.",
+      "claim_type": "EXPLICIT",
+      "source": "Alternatively, genetic approaches using CRE-inducible markers layers have been performed and demonstrated an accumulation of adult born neurons in the OB over time (Imayoshi et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Imayoshi et al., 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:08:40.690056Z"
+    },
+    {
+      "id": "028534e7-3497-4b42-87a1-ae9d7096eed4",
+      "content_id": "cc399c25-f951-4c8b-a1d7-7d2d35d4c719",
+      "claim_id": "C14",
+      "claim": "The accumulation of adult born neurons has been interpreted as replacement of older neurons that died.",
+      "claim_type": "EXPLICIT",
+      "source": "In agreement with the turnover model, this has been interpreted as a replacement of older neurons that died (Imayoshi et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Imayoshi et al., 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:08:40.690056Z"
+    },
+    {
+      "id": "27315100-744c-443b-8138-b52b87b26986",
+      "content_id": "cc399c25-f951-4c8b-a1d7-7d2d35d4c719",
+      "claim_id": "C15",
+      "claim": "Two-photon in vivo imaging allows studying OB neurons directly in the living animal.",
+      "claim_type": "EXPLICIT",
+      "source": "Only recently more direct approaches based on two-photon in vivo imaging allowed studying OB neurons directly in the living animal (Mizrahi et al., 2006; Sailor et al., 2016; Wallace et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to studies using this technique.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:08:40.690056Z"
+    },
+    {
+      "id": "986f81f1-6276-4410-b267-3907a313b5d5",
+      "content_id": "cc399c25-f951-4c8b-a1d7-7d2d35d4c719",
+      "claim_id": "C16",
+      "claim": "Long-term observation of juxtaglomerular neurons demonstrated an increase in these populations over time.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, long-term observation of either juxtaglomerular neurons in general (Mizrahi et al., 2006), or more specifically of dopaminergic neurons, demonstrated an increase in these populations over time (Adam and Mizrahi, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Mizrahi et al., 2006 and Adam and Mizrahi, 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:08:40.690056Z"
+    },
+    {
+      "id": "2c2f6cf8-773b-4d3b-9f91-6967599bfc10",
+      "content_id": "cc399c25-f951-4c8b-a1d7-7d2d35d4c719",
+      "claim_id": "C17",
+      "claim": "The increase in juxtaglomerular neurons was interpreted as a change in the interneuron subtype composition of the OB.",
+      "claim_type": "EXPLICIT",
+      "source": "While at first sight this finding contradicts a pure replacement model, it was interpreted as a change in the interneuron subtype composition of the OB (Adam and Mizrahi, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Adam and Mizrahi, 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:08:40.690056Z"
+    },
+    {
+      "id": "2491e317-c62e-422f-bb82-b31428b7838a",
+      "content_id": "cc399c25-f951-4c8b-a1d7-7d2d35d4c719",
+      "claim_id": "C18",
+      "claim": "Sensory deprivation by naris closure reduced the number of BrdU-labeled newborn neurons in the OB.",
+      "claim_type": "EXPLICIT",
+      "source": "On one hand, sensory deprivation by naris closure reduced the number of BrdU-labeled newborn neurons in the OB (Mandairon et al., 2006; Saghatelyan et al., 2005; Yamaguchi and Mori, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to multiple studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:08:40.690056Z"
+    },
+    {
+      "id": "c2dc78c4-9536-484f-b18e-108b3f1d50e8",
+      "content_id": "cc399c25-f951-4c8b-a1d7-7d2d35d4c719",
+      "claim_id": "C19",
+      "claim": "Olfactory training increased the number of labeled neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, olfactory training increased the number of labeled neurons (Mouret et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Mouret et al., 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:08:40.690056Z"
+    },
+    {
+      "id": "121a894e-54df-4f9c-8e08-c459b928d33b",
+      "content_id": "cc399c25-f951-4c8b-a1d7-7d2d35d4c719",
+      "claim_id": "C20",
+      "claim": "Postnatal in vivo brain electroporation of the dorsal ventricular zone targets stem cell populations that generate neurons for the superficial layers of the OB.",
+      "claim_type": "EXPLICIT",
+      "source": "Postnatal in vivo brain electroporation of the dorsal ventricular zone targets stem cell populations that generate neurons for the superficial layers of the OB (Figure 1a,b; de Chevigny et al., 2012b), which can be reliably reached by two-photon microscopy (Adam and Mizrahi, 2011).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by citation to de Chevigny et al., 2012b and reference to Figure 1a,b.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:08:40.690056Z"
+    },
+    {
+      "id": "70646c03-7a6b-4172-8fae-733afcc52142",
+      "content_id": "cc399c25-f951-4c8b-a1d7-7d2d35d4c719",
+      "claim_id": "C21",
+      "claim": "Three weeks after electroporation, OB-labeled neurons comprised 6% tyrosine hydroxylase expressing dopaminergic/GABAergic neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Three weeks later, OB-labeled neurons comprised a mixed population of 6% tyrosine hydroxylase expressing dopaminergic/GABAergic neurons, 12% calretinin positive purely GABAergic neurons, 22% other GABAergic PGN (Figure 1b) and 60% mostly superficially positioned granule cells (GC).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on experimental data shown in Figure 1b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:08:40.690056Z"
+    },
+    {
+      "id": "f107651b-2fd7-408a-8356-ba20db0155c6",
+      "content_id": "cc399c25-f951-4c8b-a1d7-7d2d35d4c719",
+      "claim_id": "C22",
+      "claim": "Three weeks after electroporation, OB-labeled neurons comprised 12% calretinin positive purely GABAergic neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Three weeks later, OB-labeled neurons comprised a mixed population of 6% tyrosine hydroxylase expressing dopaminergic/GABAergic neurons, 12% calretinin positive purely GABAergic neurons, 22% other GABAergic PGN (Figure 1b) and 60% mostly superficially positioned granule cells (GC).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on experimental data shown in Figure 1b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:08:40.690056Z"
+    },
+    {
+      "id": "bc6f29ae-0730-4fff-bf14-e60596be1d9d",
+      "content_id": "cc399c25-f951-4c8b-a1d7-7d2d35d4c719",
+      "claim_id": "C23",
+      "claim": "Three weeks after electroporation, OB-labeled neurons comprised 22% other GABAergic PGN.",
+      "claim_type": "EXPLICIT",
+      "source": "Three weeks later, OB-labeled neurons comprised a mixed population of 6% tyrosine hydroxylase expressing dopaminergic/GABAergic neurons, 12% calretinin positive purely GABAergic neurons, 22% other GABAergic PGN (Figure 1b) and 60% mostly superficially positioned granule cells (GC).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on experimental data shown in Figure 1b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:08:40.690056Z"
+    },
+    {
+      "id": "b75eb64f-4fc7-456f-8d7a-f228a3a0d895",
+      "content_id": "cc399c25-f951-4c8b-a1d7-7d2d35d4c719",
+      "claim_id": "C24",
+      "claim": "Three weeks after electroporation, OB-labeled neurons comprised 60% mostly superficially positioned granule cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Three weeks later, OB-labeled neurons comprised a mixed population of 6% tyrosine hydroxylase expressing dopaminergic/GABAergic neurons, 12% calretinin positive purely GABAergic neurons, 22% other GABAergic PGN (Figure 1b) and 60% mostly superficially positioned granule cells (GC).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on experimental data shown in Figure 1b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:08:40.690056Z"
+    },
+    {
+      "id": "2cdd4897-5b30-469f-832c-8177dc04a304",
+      "content_id": "cc399c25-f951-4c8b-a1d7-7d2d35d4c719",
+      "claim_id": "C25",
+      "claim": "There was no detectable astroglia reaction after thinning and window implantation.",
+      "claim_type": "EXPLICIT",
+      "source": "In agreement with previous observations (Xu et al., 2007), there was no detectable astroglia reaction or accumulation of microglia after thinning and window implantation (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by citation to Xu et al., 2007 and data shown in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:08:40.690056Z"
+    },
+    {
+      "id": "bd4677a2-86d1-48b3-9f0d-2a908a44d169",
+      "content_id": "cc399c25-f951-4c8b-a1d7-7d2d35d4c719",
+      "claim_id": "C26",
+      "claim": "There was no accumulation of microglia after thinning and window implantation.",
+      "claim_type": "EXPLICIT",
+      "source": "In agreement with previous observations (Xu et al., 2007), there was no detectable astroglia reaction or accumulation of microglia after thinning and window implantation (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by citation to Xu et al., 2007 and data shown in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:08:40.690056Z"
+    },
+    {
+      "id": "d4e12b58-a40e-4a35-ac5a-ab7cae7e0393",
+      "content_id": "cc399c25-f951-4c8b-a1d7-7d2d35d4c719",
+      "claim_id": "C27",
+      "claim": "Among 755 periglomerular neurons in 11 mice, only 5.1% were lost over the proposed critical period.",
+      "claim_type": "EXPLICIT",
+      "source": "Among 755 periglomerular neurons (PGN) in 11 mice only 5.1% were lost over the proposed critical period (Figure 2a, see circles for lost cells no. 14 and 17 in Figure 1d,g).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on experimental data shown in Figure 2a and Figure 1d,g.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:08:40.690056Z"
+    },
+    {
+      "id": "61e5902e-eede-4b79-955c-f9461dae4105",
+      "content_id": "cc399c25-f951-4c8b-a1d7-7d2d35d4c719",
+      "claim_id": "C28",
+      "claim": "The percentage of lost neurons was very similar between individual animals.",
+      "claim_type": "EXPLICIT",
+      "source": "The percentage of lost neurons was very similar between individual animals and was independent of the density of labeled cells in the observation window (between 18 and 100 neurons; Figure 2a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on experimental data shown in Figure 2a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:08:40.690056Z"
+    },
+    {
+      "id": "3d8b631b-a034-4dff-a33d-59cde01d2c9e",
+      "content_id": "cc399c25-f951-4c8b-a1d7-7d2d35d4c719",
+      "claim_id": "C29",
+      "claim": "The percentage of lost neurons was independent of the density of labeled cells in the observation window.",
+      "claim_type": "EXPLICIT",
+      "source": "The percentage of lost neurons was very similar between individual animals and was independent of the density of labeled cells in the observation window (between 18 and 100 neurons; Figure 2a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on experimental data shown in Figure 2a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:08:40.690056Z"
+    },
+    {
+      "id": "7837cb12-ee41-4682-9b9a-5b8dc5e61b4c",
+      "content_id": "cc399c25-f951-4c8b-a1d7-7d2d35d4c719",
+      "claim_id": "C30",
+      "claim": "Out of 178 RFP positive granule neurons observed between 3 and 8 weeks after their birth, not a single cell disappeared.",
+      "claim_type": "EXPLICIT",
+      "source": "Out of 178 RFP positive neurons observed between 3 and 8 weeks after their birth not a single cell disappeared over the subsequent imaging sessions (Figure 2b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on experimental data shown in Figure 2b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:08:40.690056Z"
+    },
+    {
+      "id": "5e9de680-e90d-465e-a98d-1442420ea037",
+      "content_id": "cc399c25-f951-4c8b-a1d7-7d2d35d4c719",
+      "claim_id": "C31",
+      "claim": "Perinatally generated OB interneurons in both the GL and the GCL are rarely eliminated after arrival in terminal positions.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that perinatally generated OB interneurons in both, the GL and the GCL are rarely eliminated after arrival in terminal positions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data on perinatal neurons.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:08:40.690056Z"
+    },
+    {
+      "id": "9094db4e-c947-45a2-a87a-f1437fc328b1",
+      "content_id": "cc399c25-f951-4c8b-a1d7-7d2d35d4c719",
+      "claim_id": "C32",
+      "claim": "One week after tamoxifen induction, virtually all RFP-positive cells in the RMS expressed the immature neuron marker doublecortin.",
+      "claim_type": "EXPLICIT",
+      "source": "One week after induction virtually all RFP-positive cells in the RMS and about 30% in the OB layers expressed the immature neuron marker doublecortin (Figure 2\u2014figure supplement 1c,d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on experimental data shown in Figure 2\u2014figure supplement 1c,d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:08:40.690056Z"
+    },
+    {
+      "id": "31184b99-0dfa-4f55-81b6-ebc38a884322",
+      "content_id": "cc399c25-f951-4c8b-a1d7-7d2d35d4c719",
+      "claim_id": "C33",
+      "claim": "One week after tamoxifen induction, about 30% of RFP-positive cells in the OB layers expressed the immature neuron marker doublecortin.",
+      "claim_type": "EXPLICIT",
+      "source": "One week after induction virtually all RFP-positive cells in the RMS and about 30% in the OB layers expressed the immature neuron marker doublecortin (Figure 2\u2014figure supplement 1c,d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on experimental data shown in Figure 2\u2014figure supplement 1c,d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:08:40.690056Z"
+    },
+    {
+      "id": "5481760b-ad4f-4f02-be5c-f469c79ea269",
+      "content_id": "cc399c25-f951-4c8b-a1d7-7d2d35d4c719",
+      "claim_id": "C34",
+      "claim": "Analyses of 538 periglomerular neurons in eight adult animals showed that only 1.5% disappeared over the 7 weeks period after their first identification.",
+      "claim_type": "EXPLICIT",
+      "source": "Analyses of 538 periglomerular neurons of the first cohort in eight animals showed that only 1.5% disappeared over the 7 weeks period after their first identification (Figure 2c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on experimental data shown in Figure 2c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:08:40.690056Z"
+    },
+    {
+      "id": "ac76ef5d-f819-412e-adf8-d94c2bd2ba52",
+      "content_id": "cc399c25-f951-4c8b-a1d7-7d2d35d4c719",
+      "claim_id": "C35",
+      "claim": "During the 8 weeks observation window of adult born granule neurons in Nestin Cre-ERT2/Rosa-RFP mice, six out of 101 neurons disappeared (5.9%).",
+      "claim_type": "EXPLICIT",
+      "source": "We observed 101 adult born neurons in nine animals (Figure 3a,b,c). During the 8 weeks observation window, six neurons disappeared (5,9%).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on experimental data shown in Figure 3a,b,c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:08:40.690056Z"
+    },
+    {
+      "id": "75d982ac-4e57-407c-9cf2-3728385a54c0",
+      "content_id": "cc399c25-f951-4c8b-a1d7-7d2d35d4c719",
+      "claim_id": "C36",
+      "claim": "Tracing of 48 adult-born GCs labeled with lentivirus led to the identification of only a single cell that disappeared (2.1%) during the 7 weeks observation period.",
+      "claim_type": "EXPLICIT",
+      "source": "Tracing of 48 adult-born GCs in 19 fields of view from three mice led to the identification of only a single cell that disappeared (2.1%; Figure 3e) during the 7 weeks observation period.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on experimental data shown in Figure 3e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:08:40.690056Z"
+    },
+    {
+      "id": "1c81960c-e070-40a4-b87e-cf89c675384a",
+      "content_id": "cc399c25-f951-4c8b-a1d7-7d2d35d4c719",
+      "claim_id": "C37",
+      "claim": "Under physiological conditions, cell loss in adult born OB neurons during the proposed critical selection period was very low, comparable to the findings for perinatally born neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, overall under physiological conditions cell loss in adult born OB neurons during the proposed critical selection period was very low, comparable to the findings for perinatally born neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data on adult and perinatal neurons.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:08:40.690056Z"
+    },
+    {
+      "id": "48291ab8-fcad-4e2c-b100-479e02311d2f",
+      "content_id": "cc399c25-f951-4c8b-a1d7-7d2d35d4c719",
+      "claim_id": "C38",
+      "claim": "Naris closure in adult Nestin Cre-ERT2/Rosa-RFP mice resulted in a significant increase in cell loss.",
+      "claim_type": "EXPLICIT",
+      "source": "Analysis of RFP-positive PGN over the following 8 weeks revealed a significant increase in cell loss (Figure 4bc; p=0.03, four control and three occluded animals, 151 cells).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on experimental data shown in Figure 4bc with statistical significance p=0.03.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:08:40.690056Z"
+    },
+    {
+      "id": "bebf9abf-a8c0-4fd5-8abb-4f0ac3ebe734",
+      "content_id": "cc399c25-f951-4c8b-a1d7-7d2d35d4c719",
+      "claim_id": "C39",
+      "claim": "Under physiological conditions, newly born neurons in the perinatal and adult OB show little cell loss after arrival in the OB.",
+      "claim_type": "EXPLICIT",
+      "source": "In conclusion, under physiological conditions newly born neurons in the perinatal and adult OB show little cell loss after arrival in the OB.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:08:40.690056Z"
+    },
+    {
+      "id": "3d6149ab-4f22-440b-987b-fcf8f19b15b2",
+      "content_id": "cc399c25-f951-4c8b-a1d7-7d2d35d4c719",
+      "claim_id": "C40",
+      "claim": "Significant cell loss during the observation period was found after blocking sensory input.",
+      "claim_type": "EXPLICIT",
+      "source": "However, significant cell loss during this observation period was found after blocking sensory input, demonstrating that cell death could be detected with our approach.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the naris occlusion experiment data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:08:40.690056Z"
+    },
+    {
+      "id": "000c20b4-61a7-4919-8bf2-8f478a66ca36",
+      "content_id": "cc399c25-f951-4c8b-a1d7-7d2d35d4c719",
+      "claim_id": "C41",
+      "claim": "Using four i.p. injections of 50 mg/kg BrdU every 2 hr into adult mice, an approximately 40% loss of labeled neurons in the OB was found between 2 and 6 weeks in the GL as well as in the GCL.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, using four i.p. injections of 50 mg/kg BrdU every 2 hr into adult mice, we found an approximately 40% loss of labeled neurons in the OB between 2 and 6 weeks in the GL as well as in the GCL (Figure 5ab).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on experimental data shown in Figure 5ab.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:08:40.690056Z"
+    },
+    {
+      "id": "296aecc8-41f7-45b2-bab4-a2ae35dfdeab",
+      "content_id": "cc399c25-f951-4c8b-a1d7-7d2d35d4c719",
+      "claim_id": "C42",
+      "claim": "BrdU+ cell number in the dorsal OB showed the same 40% loss that was found in the entire bulb.",
+      "claim_type": "EXPLICIT",
+      "source": "BrdU+ cell number in the dorsal OB showed the same 40% loss that was found in the entire bulb (Figure 5b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on experimental data shown in Figure 5b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:08:40.690056Z"
+    },
+    {
+      "id": "d50cb1ba-dde4-4fa7-bfe1-42ee5a5ec3de",
+      "content_id": "cc399c25-f951-4c8b-a1d7-7d2d35d4c719",
+      "claim_id": "C43",
+      "claim": "Four injections of 50 mg/kg EdU in 2-month-old mice led to an about 40% loss of labeled cells in the GL and the GCL of the OB between 2 and 6 weeks.",
+      "claim_type": "EXPLICIT",
+      "source": "Four injections of 50 mg/kg EdU in 2-month-old mice led to an about 40% loss of labeled cells in the GL and the GCL of the OB between 2 and 6 weeks, highly comparable to the results based on BrdU (Figure 5c,e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on experimental data shown in Figure 5c,e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:08:40.690056Z"
+    },
+    {
+      "id": "8dadcea3-e0c5-4fe6-9cdf-e9a955cffda2",
+      "content_id": "cc399c25-f951-4c8b-a1d7-7d2d35d4c719",
+      "claim_id": "C44",
+      "claim": "Four injections of 1 or 5 mg/kg EdU led to the detection of slightly lower amounts of newly generated cells in the OB layers after 2 weeks.",
+      "claim_type": "EXPLICIT",
+      "source": "Four injection of 1 or 5 mg/kg EdU under the same conditions led to the detection of slightly lower amounts of newly generated cells in the OB layers after 2 weeks (Figure 5de).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on experimental data shown in Figure 5de.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:08:40.690056Z"
+    },
+    {
+      "id": "9c24cc78-c0ac-4def-b303-1c3f496e7ed6",
+      "content_id": "cc399c25-f951-4c8b-a1d7-7d2d35d4c719",
+      "claim_id": "C45",
+      "claim": "At 1 or 5 mg/kg EdU, the decrease in cell numbers between 2 and 6 weeks was not detectable, both in the GL and the GCL.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, under these conditions the decrease in cell numbers between 2 and 6 weeks was not detectable anymore, both in the GL and the GCL (Figure 5e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on experimental data shown in Figure 5e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:08:40.690056Z"
+    },
+    {
+      "id": "42ba4408-28a8-48e0-90f0-7de7765d48a5",
+      "content_id": "cc399c25-f951-4c8b-a1d7-7d2d35d4c719",
+      "claim_id": "C46",
+      "claim": "Deep and superficial GCs showed the same behavior: cell loss at high EdU dose and survival at 5 mg/kg.",
+      "claim_type": "EXPLICIT",
+      "source": "However, deep and superficial GCs showed the same behavior, cell loss at high EdU dose and survival at 5 mg/kg, as the entire GCL (Figure 5f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on experimental data shown in Figure 5f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:08:40.690056Z"
+    },
+    {
+      "id": "5552bc89-c8c0-4978-a7c3-d7a34ade605f",
+      "content_id": "cc399c25-f951-4c8b-a1d7-7d2d35d4c719",
+      "claim_id": "C47",
+      "claim": "Loss of labeled cells in the OB during the critical period is correlated with the concentration of modified nucleotides in the DNA of newborn OB neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Altogether, these results lead to the conclusion that loss of labeled cells in the OB during the critical period is correlated with the concentration of modified nucleotides in the DNA of newborn OB neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the EdU dose-response experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:08:40.690056Z"
+    },
+    {
+      "id": "6f011410-36bb-4c4c-bbb9-1bdf7b68a712",
+      "content_id": "cc399c25-f951-4c8b-a1d7-7d2d35d4c719",
+      "claim_id": "C48",
+      "claim": "Analyses of immunostained tissues detected consistently low numbers of CC3 positive cells in the OB layers (363 \u00b1 34 cells /mm3).",
+      "claim_type": "EXPLICIT",
+      "source": "Analyses of immunostained tissues detected consistently low numbers of CC3 positive cells in the OB layers (363 \u00b1 34 cells /mm3 n = 15; thus about 940 CC3+ cells/GCL) in overall agreement with previous work (770 cells/GCL; Yamaguchi and Mori, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on experimental data with n=15 and is in agreement with citation to Yamaguchi and Mori, 2005.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:08:40.690056Z"
+    },
+    {
+      "id": "e89198ab-9865-4285-8522-9d49cfd04c5a",
+      "content_id": "cc399c25-f951-4c8b-a1d7-7d2d35d4c719",
+      "claim_id": "C49",
+      "claim": "Among the 10803 analyzed EdU-positive OB neurons, only 26 showed co-labeling for CC3.",
+      "claim_type": "EXPLICIT",
+      "source": "However, among the 10803 analyzed EdU-positive OB neurons only 26 showed co-labeling for CC3.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on experimental data analyzing EdU and CC3 co-labeling.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:08:40.690056Z"
+    },
+    {
+      "id": "f4719763-efd7-4cbc-8995-4b594dba4bae",
+      "content_id": "cc399c25-f951-4c8b-a1d7-7d2d35d4c719",
+      "claim_id": "C50",
+      "claim": "Application of four times 5 mg/kg or 50 mg/kg EdU had no influence on the percentage of double stained cells (EdU and CC3).",
+      "claim_type": "EXPLICIT",
+      "source": "Application of four times 5 mg/kg or 50 mg/kg EdU had no influence on the percentage of double stained cells, indicating that thymidine analog induced toxicity did not pass via the apoptotic pathway (Figure 5h).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on experimental data shown in Figure 5h.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:08:40.690056Z"
+    },
+    {
+      "id": "b5c843d0-046c-4629-8d09-57a321e90751",
+      "content_id": "cc399c25-f951-4c8b-a1d7-7d2d35d4c719",
+      "claim_id": "C51",
+      "claim": "Thymidine analog induced toxicity did not pass via the apoptotic pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "Application of four times 5 mg/kg or 50 mg/kg EdU had no influence on the percentage of double stained cells, indicating that thymidine analog induced toxicity did not pass via the apoptotic pathway (Figure 5h).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the lack of change in CC3/EdU co-labeling at different EdU doses.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:08:40.690056Z"
+    },
+    {
+      "id": "e4a94fff-8241-45cd-ba29-b76f3d9458e0",
+      "content_id": "cc399c25-f951-4c8b-a1d7-7d2d35d4c719",
+      "claim_id": "C52",
+      "claim": "Density of CC3-positive cells was more than six times higher in the RMS than in the GCL and the GL.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, density of CC3-positive cells was more than six times higher in the RMS than in the GCL and the GL (Figure 5i).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on experimental data shown in Figure 5i.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:08:40.690056Z"
+    },
+    {
+      "id": "38bd628f-3fac-4f04-b209-590928a32cf2",
+      "content_id": "cc399c25-f951-4c8b-a1d7-7d2d35d4c719",
+      "claim_id": "C53",
+      "claim": "The finding that CC3-positive cells are more abundant in the RMS is in good agreement with previous data.",
+      "claim_type": "EXPLICIT",
+      "source": "This is in good agreement with previous data (Biebl et al., 2000) and suggests that cell death in the system occurs predominantly at the precursor level.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Biebl et al., 2000.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:08:40.690056Z"
+    },
+    {
+      "id": "846470a8-c463-4d66-b991-e728b726e91b",
+      "content_id": "cc399c25-f951-4c8b-a1d7-7d2d35d4c719",
+      "claim_id": "C54",
+      "claim": "Cell death in the OB neurogenesis system occurs predominantly at the precursor level.",
+      "claim_type": "EXPLICIT",
+      "source": "This is in good agreement with previous data (Biebl et al., 2000) and suggests that cell death in the system occurs predominantly at the precursor level.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the higher density of CC3-positive cells in the RMS compared to OB layers.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:08:40.690056Z"
+    },
+    {
+      "id": "94534be4-2088-4da8-ad80-a10dd2a0ad92",
+      "content_id": "cc399c25-f951-4c8b-a1d7-7d2d35d4c719",
+      "claim_id": "C55",
+      "claim": "Lineage tracing by high doses of thymidine analogs is associated with cell loss in the OB.",
+      "claim_type": "EXPLICIT",
+      "source": "In conclusion, the above results, showing that lineage tracing by high doses of thymidine analogs is associated with cell loss in the OB, point to toxicity of such DNA modifying agents.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the EdU dose-response experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:08:40.690056Z"
+    },
+    {
+      "id": "5b7a0379-3ab0-4c98-a381-8b5eb4a28123",
+      "content_id": "cc399c25-f951-4c8b-a1d7-7d2d35d4c719",
+      "claim_id": "C56",
+      "claim": "At low EdU doses, cell loss in the OB during the proposed critical selection period is not detected.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the finding that at low EdU doses cell loss in the OB during the proposed critical selection period is notdetected represents an independent confirmation of our in vivo imaging based findings.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on experimental data from low-dose EdU experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:08:40.690056Z"
+    },
+    {
+      "id": "8dc654ef-1bf6-4412-9343-c536da34fe79",
+      "content_id": "cc399c25-f951-4c8b-a1d7-7d2d35d4c719",
+      "claim_id": "C57",
+      "claim": "Continuous long-term observations of perinatally generated PGN and GC provided no evidence for sustained cell loss after the initial 8 weeks time window.",
+      "claim_type": "EXPLICIT",
+      "source": "Continuous long-term observations of perinatally generated PGN and GC provided no evidence for sustained cell loss after the initial 8 weeks time window (Figure 6a,b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on experimental data shown in Figure 6a,b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:08:40.690056Z"
+    },
+    {
+      "id": "9cfe9f88-c849-48bd-9030-c6a7b50517c6",
+      "content_id": "cc399c25-f951-4c8b-a1d7-7d2d35d4c719",
+      "claim_id": "C58",
+      "claim": "Adult generated GC or PGN showed stability when observed for up to 24 weeks after their generation.",
+      "claim_type": "EXPLICIT",
+      "source": "The same stability of the labeled population was evident when adult generated GC or PGN were observed for up to 24 weeks after their generation (Figure 6c,d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on experimental data shown in Figure 6c,d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:08:40.690056Z"
+    },
+    {
+      "id": "b215559d-b386-4627-a76b-ba1bf06ba53b",
+      "content_id": "cc399c25-f951-4c8b-a1d7-7d2d35d4c719",
+      "claim_id": "C59",
+      "claim": "CRE-induced recombination in Nestin-CRE-ERT2 mice occurs often at the stem cell level.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, as CRE-induced recombination in Nestin-CRE-ERT2 mice occurs often at the stem cell level (Imayoshi et al., 2008), recombined stem cells continued to generate new neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Imayoshi et al., 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:08:40.690056Z"
+    },
+    {
+      "id": "f2beec62-0328-438d-9454-e04edecd5bb4",
+      "content_id": "cc399c25-f951-4c8b-a1d7-7d2d35d4c719",
+      "claim_id": "C60",
+      "claim": "Additional adult born neurons permanently appeared in the observation window.",
+      "claim_type": "EXPLICIT",
+      "source": "In agreement, additional adult born neurons permanently appeared in the observation window (Figure 6e), leading to a more than doubling of the neuron population of adult generated PGN over an observation period of six months (Figure 6f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on experimental data shown in Figure 6e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:08:40.690056Z"
+    },
+    {
+      "id": "e1e4acb9-41da-411a-bac9-fa334d896e92",
+      "content_id": "cc399c25-f951-4c8b-a1d7-7d2d35d4c719",
+      "claim_id": "C61",
+      "claim": "The neuron population of adult generated PGN more than doubled over an observation period of six months.",
+      "claim_type": "EXPLICIT",
+      "source": "In agreement, additional adult born neurons permanently appeared in the observation window (Figure 6e), leading to a more than doubling of the neuron population of adult generated PGN over an observation period of six months (Figure 6f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on experimental data shown in Figure 6f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:08:40.690056Z"
+    },
+    {
+      "id": "1a8b5094-ae63-4ebe-9c7f-b1bd8e6c5796",
+      "content_id": "cc399c25-f951-4c8b-a1d7-7d2d35d4c719",
+      "claim_id": "C62",
+      "claim": "Over time, slightly larger image frames were necessary to accommodate the same group of neurons in Z-maximum projections of the GCL and GL.",
+      "claim_type": "EXPLICIT",
+      "source": "First, we asked if a volume increase in the OB could be detected directly in the living brain during in vivo imaging experiments. We found that over time slightly larger image frames were necessary to accommodate the same group of neurons in our Z-maximum projections of the GCL and GL (Figure 1d; Figure 3a; Figure 1\u2014figure supplement 2b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on observations from in vivo imaging data shown in multiple figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:08:40.690056Z"
+    },
+    {
+      "id": "92bb4470-adfb-49e2-814d-15879e20cec4",
+      "content_id": "cc399c25-f951-4c8b-a1d7-7d2d35d4c719",
+      "claim_id": "C63",
+      "claim": "Volumetric analysis of inter-neuronal space demonstrated that distance between neurons increased steadily between 2 and 5 months.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, volumetric analysis of inter-neuronal space between groups of four neurons in X, Y, Z (thus an irregular pyramid) demonstrated that distance between neurons increased steadily between 2 and 5 months (Figures 7a,b and 4 animals at each time point), strongly indicating continuous OB growth.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on experimental data shown in Figures 7a,b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:08:40.690056Z"
+    },
+    {
+      "id": "0a510e6f-0b33-411a-8e60-04e0b506ce8a",
+      "content_id": "cc399c25-f951-4c8b-a1d7-7d2d35d4c719",
+      "claim_id": "C64",
+      "claim": "Volumetric analysis based on 3D reconstructions of cleared OBs revealed a steady increase in OB size leading to a significant 44% enlargement of the structure from 2 to 12 months.",
+      "claim_type": "EXPLICIT",
+      "source": "Volumetric analysis based on 3D reconstructions of cleared OBs (Figure 7c,d and Video 3) revealed a steady increase in OB size leading to a significant 44% enlargement of the structure from 2 to 12 months (Figure 7d,e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on experimental data shown in Figure 7c,d,e and Video 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:08:40.690056Z"
+    },
+    {
+      "id": "ae4f05db-ce08-45e6-b837-b1bd9e51a306",
+      "content_id": "cc399c25-f951-4c8b-a1d7-7d2d35d4c719",
+      "claim_id": "C65",
+      "claim": "The volume increase in the OB affected equally the granule and the glomerular layers.",
+      "claim_type": "EXPLICIT",
+      "source": "This volume increase affected equally the granule and the glomerular layers (Figure 7f) in the absence of obvious changes in layer repartition (Figure 7\u2014figure supplement 1a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on experimental data shown in Figure 7f and Figure 7\u2014figure supplement 1a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:08:40.690056Z"
+    },
+    {
+      "id": "910eb605-ea0b-4417-882a-4716c23db541",
+      "content_id": "cc399c25-f951-4c8b-a1d7-7d2d35d4c719",
+      "claim_id": "C66",
+      "claim": "During the interval from 2 to 12 months, total forebrain volume was unchanged.",
+      "claim_type": "EXPLICIT",
+      "source": "During the same interval, total forebrain volume was unchanged (Figure 7g).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on experimental data shown in Figure 7g.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:08:40.690056Z"
+    },
+    {
+      "id": "e297f571-9cb2-4935-b993-a15e52e19ed9",
+      "content_id": "cc399c25-f951-4c8b-a1d7-7d2d35d4c719",
+      "claim_id": "C67",
+      "claim": "The density of nuclei in the GCL was highly stable at all observed time points.",
+      "claim_type": "EXPLICIT",
+      "source": "Quantification revealed that the density of nuclei was highly stable at all observed time points (Figure 7h,i) while the density of astrocytes decreased and microglia density was unchanged (Figure 7\u2014figure supplement 1a, b and c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on experimental data shown in Figure 7h,i.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:08:40.690056Z"
+    },
+    {
+      "id": "0dc20799-b93c-42b1-a12b-d37223172bd7",
+      "content_id": "cc399c25-f951-4c8b-a1d7-7d2d35d4c719",
+      "claim_id": "C68",
+      "claim": "The density of astrocytes decreased over time.",
+      "claim_type": "EXPLICIT",
+      "source": "Quantification revealed that the density of nuclei was highly stable at all observed time points (Figure 7h,i) while the density of astrocytes decreased and microglia density was unchanged (Figure 7\u2014figure supplement 1a, b and c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on experimental data shown in Figure 7\u2014figure supplement 1a, b and c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:08:40.690056Z"
+    },
+    {
+      "id": "c19b6912-78dc-4c6f-91ae-3fd50b58e36f",
+      "content_id": "cc399c25-f951-4c8b-a1d7-7d2d35d4c719",
+      "claim_id": "C69",
+      "claim": "Microglia density was unchanged over time.",
+      "claim_type": "EXPLICIT",
+      "source": "Quantification revealed that the density of nuclei was highly stable at all observed time points (Figure 7h,i) while the density of astrocytes decreased and microglia density was unchanged (Figure 7\u2014figure supplement 1a, b and c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on experimental data shown in Figure 7\u2014figure supplement 1a, b and c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:08:40.690056Z"
+    },
+    {
+      "id": "c6ffe488-00da-42c8-b8cd-0f6cb703d2f8",
+      "content_id": "cc399c25-f951-4c8b-a1d7-7d2d35d4c719",
+      "claim_id": "C70",
+      "claim": "Both in vivo brain imaging and light sheet microscopy of fixed cleared tissue demonstrate that the mouse OB grows significantly during adult life in the absence of detectable changes in cell density.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, both in vivo brain imaging and light sheet microscopy of fixed cleared tissue demonstrate that the mouse OB grows significantly during adult life in the absence of detectable changes in cell density.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data using both imaging approaches.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:08:40.690056Z"
+    },
+    {
+      "id": "cca31761-7773-4e79-915e-adb19228e36c",
+      "content_id": "cc399c25-f951-4c8b-a1d7-7d2d35d4c719",
+      "claim_id": "C71",
+      "claim": "Between 2 and 6 months, about 8000 cells/day are added to the growing OB.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data, based on measurements of cell density and volume of the structure, allows to estimate that between 2 and 6 months about 8000 cells/day are added to the growing OB.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is calculated from the experimental data on cell density and volume.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:08:40.690056Z"
+    },
+    {
+      "id": "763c7907-1714-4830-8a4c-34a1ce8d8380",
+      "content_id": "cc399c25-f951-4c8b-a1d7-7d2d35d4c719",
+      "claim_id": "C72",
+      "claim": "Using a genetic approach, Imayoshi et al found that 6 months after tamoxifen induction, labeled neurons represent 41.2% of the total population.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, using a genetic approach, Imayoshi et al found that 6 months after tamoxifen induction, labeled neurons represent 41.2% of the total population (1,500,000, thus 620,000 new neurons).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on citation to work by Imayoshi et al.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:08:40.690056Z"
+    },
+    {
+      "id": "0c307f54-c844-4ad1-9d66-97c25ca2d75e",
+      "content_id": "cc399c25-f951-4c8b-a1d7-7d2d35d4c719",
+      "claim_id": "C73",
+      "claim": "Considering 60\u201370% recombination efficiency at the stem cell level, the genetic approach leads to a number of almost 6000 new cells that are added per day.",
+      "claim_type": "EXPLICIT",
+      "source": "Considering 60\u201370% recombination efficiency at the stem cell level (Imayoshi et al., 2008), this leads to a number of almost 6000 new cells that are added per day.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is calculated from data cited from Imayoshi et al., 2008.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:08:40.690056Z"
+    },
+    {
+      "id": "fd369021-856c-4828-b8da-b2a77fedcb4d",
+      "content_id": "cc399c25-f951-4c8b-a1d7-7d2d35d4c719",
+      "claim_id": "C74",
+      "claim": "Direct measurements and the genetic approach render highly comparable results in terms of the number of neurons that integrates in the adult OB.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, our direct measurements and the genetic approach render highly comparable results in terms of the number of neurons that integrates in the adult OB.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison between the authors' data and cited genetic approach data.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:08:40.690056Z"
+    },
+    {
+      "id": "fab553dd-ab1f-4216-a945-59961daf69e1",
+      "content_id": "cc399c25-f951-4c8b-a1d7-7d2d35d4c719",
+      "claim_id": "C75",
+      "claim": "The level of neuronal cell death among perinatal and adult born interneurons after their arrival in terminal positions in the OB is very low.",
+      "claim_type": "EXPLICIT",
+      "source": "First, the level of neuronal cell death among perinatal and adult born interneurons after their arrival in terminal positions in the OB is very low.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a main conclusion of the study based on in vivo imaging data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:08:40.690056Z"
+    },
+    {
+      "id": "d38581cb-2f6b-49d8-a8ab-c57e4a0975b2",
+      "content_id": "cc399c25-f951-4c8b-a1d7-7d2d35d4c719",
+      "claim_id": "C76",
+      "claim": "Adult OB neurogenesis is not a homeostatic but an addition process.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, adult OB neurogenesis is not a homeostatic but an addition process.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a main conclusion of the study based on growth and survival data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:08:40.690056Z"
+    },
+    {
+      "id": "c728a233-cd4a-46eb-b393-0adbe5b7504f",
+      "content_id": "cc399c25-f951-4c8b-a1d7-7d2d35d4c719",
+      "claim_id": "C77",
+      "claim": "Classical lineage tracing approaches based on thymidine analogs are associated with unwanted side effects.",
+      "claim_type": "EXPLICIT",
+      "source": "Third, classical lineage tracing approaches based on thymidine analogs are associated with unwanted side effects and have to be interpreted with care.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a main conclusion of the study based on dose-response experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:08:40.690056Z"
+    },
+    {
+      "id": "3b77ce87-ef8f-4760-8a45-9b6cac47d849",
+      "content_id": "cc399c25-f951-4c8b-a1d7-7d2d35d4c719",
+      "claim_id": "C78",
+      "claim": "Both BrdU and 3H-dT are toxic.",
+      "claim_type": "EXPLICIT",
+      "source": "However, both BrdU and 3H-dT are toxic (Breunig et al., 2007; Ehmann et al., 1975; Kolb et al., 1999; Kuwagata et al., 2007; Nowakowski and Hayes, 2000; Sekerkov\u00e1 et al., 2004; Taupin, 2007) and studies in both rodents (Lehner et al., 2011; Webster et al., 1973) and primates (Duque and Rakic, 2011) pointed to unwanted, and hard to interpret, long term effects associated to their use.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to studies documenting toxicity.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:08:40.690056Z"
+    },
+    {
+      "id": "2d290d42-3550-4bfa-afc9-876d29966548",
+      "content_id": "cc399c25-f951-4c8b-a1d7-7d2d35d4c719",
+      "claim_id": "C79",
+      "claim": "Studies in rodents and primates pointed to unwanted, and hard to interpret, long term effects associated with BrdU and 3H-dT use.",
+      "claim_type": "EXPLICIT",
+      "source": "However, both BrdU and 3H-dT are toxic (Breunig et al., 2007; Ehmann et al., 1975; Kolb et al., 1999; Kuwagata et al., 2007; Nowakowski and Hayes, 2000; Sekerkov\u00e1 et al., 2004; Taupin, 2007) and studies in both rodents (Lehner et al., 2011; Webster et al., 1973) and primates (Duque and Rakic, 2011) pointed to unwanted, and hard to interpret, long term effects associated to their use.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to studies in rodents and primates.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:08:40.690056Z"
+    },
+    {
+      "id": "d4fd7204-3057-4e29-9119-7e47162a64ba",
+      "content_id": "cc399c25-f951-4c8b-a1d7-7d2d35d4c719",
+      "claim_id": "C80",
+      "claim": "A selection step in which an overproduced precursor population is matched to the needs of the target structure does not principally occur after arrival in the OB.",
+      "claim_type": "EXPLICIT",
+      "source": "These results lead to the conclusion that a selection step in which an overproduced precursor population is matched to the needs of the target structure, does not principally occur after arrival in the OB.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the low cell death observed in the OB layers.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:08:40.690056Z"
+    },
+    {
+      "id": "de2056cb-6fa2-4f56-9ddf-260e0b814e59",
+      "content_id": "cc399c25-f951-4c8b-a1d7-7d2d35d4c719",
+      "claim_id": "C81",
+      "claim": "In Bax-KO mice, in which apoptotic cell death is blocked, the general structure and size of the OB neuron layers are virtually unaffected.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, in Bax-KO mice, in which apoptotic cell death is blocked, the general structure and size of the OB neuron layers are virtually unaffected (Kim et al., 2007) while a disorganization and accumulation of neuronal precursors in the RMS was observed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Kim et al., 2007.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:08:40.690056Z"
+    },
+    {
+      "id": "dcb58d14-5edd-48b4-bcbd-31631c139d77",
+      "content_id": "cc399c25-f951-4c8b-a1d7-7d2d35d4c719",
+      "claim_id": "C82",
+      "claim": "In Bax-KO mice, a disorganization and accumulation of neuronal precursors in the RMS was observed.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, in Bax-KO mice, in which apoptotic cell death is blocked, the general structure and size of the OB neuron layers are virtually unaffected (Kim et al., 2007) while a disorganization and accumulation of neuronal precursors in the RMS was observed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Kim et al., 2007.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:08:40.690056Z"
+    },
+    {
+      "id": "7249f774-ebf0-4855-92c6-9ec5f7ee2663",
+      "content_id": "cc399c25-f951-4c8b-a1d7-7d2d35d4c719",
+      "claim_id": "C83",
+      "claim": "Neuronal selection may occur more at the level of recruitment from the RMS than at the level of integration in the target layers.",
+      "claim_type": "EXPLICIT",
+      "source": "This points to the possibility that neuronal selection occurs more at the level of recruitment from the RMS than at the level of integration in the target layers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculated based on the Bax-KO data and CC3 distribution.",
+      "evidence_type": "[\"CITATION\", \"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:08:40.690056Z"
+    },
+    {
+      "id": "3f64c211-fdbe-4faa-963c-0bd4a33ef249",
+      "content_id": "cc399c25-f951-4c8b-a1d7-7d2d35d4c719",
+      "claim_id": "C84",
+      "claim": "In developing cortical interneurons, neuronal survival is largely independent of signals from the local environment.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been shown that in developing cortical interneurons neuronal survival is largely independent of signals from the local environment but that about 40% of the total population is predestined to undergo Bax-dependent apoptosis (Southwell et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Southwell et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:08:40.690056Z"
+    },
+    {
+      "id": "d0c254ca-81c0-47b0-8a9a-732517a63383",
+      "content_id": "cc399c25-f951-4c8b-a1d7-7d2d35d4c719",
+      "claim_id": "C85",
+      "claim": "About 40% of developing cortical interneurons are predestined to undergo Bax-dependent apoptosis.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been shown that in developing cortical interneurons neuronal survival is largely independent of signals from the local environment but that about 40% of the total population is predestined to undergo Bax-dependent apoptosis (Southwell et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Southwell et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:08:40.690056Z"
+    },
+    {
+      "id": "0029209a-3f56-4635-b560-3c6e5a4d3699",
+      "content_id": "cc399c25-f951-4c8b-a1d7-7d2d35d4c719",
+      "claim_id": "C86",
+      "claim": "If neuronal death is intrinsically encoded, cell death would be expected to occur already in the SVZ/RMS.",
+      "claim_type": "EXPLICIT",
+      "source": "In such a scenario, cell death would be expected to occur already in the SVZ/RMS.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference from the intrinsic encoding hypothesis.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:08:40.690056Z"
+    },
+    {
+      "id": "af9b64b6-481a-4eba-9a3d-aef3bba1478f",
+      "content_id": "cc399c25-f951-4c8b-a1d7-7d2d35d4c719",
+      "claim_id": "C87",
+      "claim": "Neuronal death is a rare event not only during early stages after arrival in the OB, but at all observed time points.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results demonstrate that neuronal death is a rare event not only during early stages after arrival in the OB, but at all observed time points.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on long-term in vivo imaging data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:08:40.690056Z"
+    },
+    {
+      "id": "6910195f-ec2a-4594-8d51-bb837542d4be",
+      "content_id": "cc399c25-f951-4c8b-a1d7-7d2d35d4c719",
+      "claim_id": "C88",
+      "claim": "The permanent addition of new neurons in the absence of considerable cell removal is not compatible with the idea that the OB represents a turnover system of constant size.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the permanent addition of new neurons in the absence of considerable cell removal is not compatible with the idea that the OB represents a turnover system of constant size (Bergami and Berninger, 2012; Imayoshi et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference from the data showing neuronal addition without death.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:08:40.690056Z"
+    },
+    {
+      "id": "12cb40b4-9638-41f1-82a1-b4423f7be4eb",
+      "content_id": "cc399c25-f951-4c8b-a1d7-7d2d35d4c719",
+      "claim_id": "C89",
+      "claim": "Growth of the adult OB in mice has been observed in other studies.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, growth of the adult OB in mice has been observed in other studies, although considerable variation and dependence on genetic background have been reported (Mirich et al., 2002; Richard et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Mirich et al., 2002 and Richard et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:08:40.690056Z"
+    },
+    {
+      "id": "f24883c2-507e-4061-86a7-8f36d59b3562",
+      "content_id": "cc399c25-f951-4c8b-a1d7-7d2d35d4c719",
+      "claim_id": "C90",
+      "claim": "Other studies did not find obvious differences in total OB size or specific sublayers.",
+      "claim_type": "EXPLICIT",
+      "source": "Other studies did not find obvious differences in total OB size or specific sublayers (Imayoshi et al., 2008; Petreanu and Alvarez-Buylla, 2002; Pomeroy et al., 1990).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to studies that did not observe OB growth.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:08:40.690056Z"
+    },
+    {
+      "id": "707eed49-5d8c-45a8-9a42-5813ffc858f2",
+      "content_id": "cc399c25-f951-4c8b-a1d7-7d2d35d4c719",
+      "claim_id": "C91",
+      "claim": "Past approaches to measuring OB size were based on 2D analysis of a subset of tissue sections and extrapolation of total volume.",
+      "claim_type": "EXPLICIT",
+      "source": "Past approaches were based on the 2D analysis of a subset of tissue sections and the extrapolation of the total volume based thereon.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methodology of previous studies.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:08:40.690056Z"
+    },
+    {
+      "id": "451d951a-7e1c-4e73-92af-e75bbcc0e762",
+      "content_id": "cc399c25-f951-4c8b-a1d7-7d2d35d4c719",
+      "claim_id": "C92",
+      "claim": "Light sheet microscopy is suited to overcome limitations of 2D sectioning approaches because the OB is imaged and measured in its entirety.",
+      "claim_type": "EXPLICIT",
+      "source": "Light sheet microscopy is suited to overcome many of these limitations as the OB is imaged and measured in its entirety.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological advantage of the light sheet approach.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:08:40.690056Z"
+    },
+    {
+      "id": "d5166a1a-d29b-4289-8d9d-ca4bfb635360",
+      "content_id": "cc399c25-f951-4c8b-a1d7-7d2d35d4c719",
+      "claim_id": "C93",
+      "claim": "During in vivo long-term observations, constantly larger frames are needed to accommodate the same group of cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Independently from the light-sheet approach, we show that during in vivo long-term observations constantly larger frames are needed to accommodate the same group of cells and that the distance of individually identified neurons measurably increases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on in vivo imaging observations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:08:40.690056Z"
+    },
+    {
+      "id": "c3f01a25-1e33-4fe1-af9e-84464d4e6372",
+      "content_id": "cc399c25-f951-4c8b-a1d7-7d2d35d4c719",
+      "claim_id": "C94",
+      "claim": "The distance of individually identified neurons measurably increases over time.",
+      "claim_type": "EXPLICIT",
+      "source": "Independently from the light-sheet approach, we show that during in vivo long-term observations constantly larger frames are needed to accommodate the same group of cells and that the distance of individually identified neurons measurably increases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on in vivo imaging observations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:08:40.690056Z"
+    },
+    {
+      "id": "571d3e92-21bf-43d4-bc91-bdaac7afe2ac",
+      "content_id": "cc399c25-f951-4c8b-a1d7-7d2d35d4c719",
+      "claim_id": "C95",
+      "claim": "The finding that distance between neurons increases is in full agreement with the observation that the distance between specific glomeruli increases with age of the animal.",
+      "claim_type": "EXPLICIT",
+      "source": "The latter finding is in full agreement with the observation that the distance between specific glomeruli increases with age of the animal (Richard et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Richard et al., 2010.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:08:40.690056Z"
+    },
+    {
+      "id": "41a77e13-791e-4a74-b435-d2c651ecb921",
+      "content_id": "cc399c25-f951-4c8b-a1d7-7d2d35d4c719",
+      "claim_id": "C96",
+      "claim": "Neuronal cell death is rare in the OB.",
+      "claim_type": "EXPLICIT",
+      "source": "In conclusion, we show here that neuronal cell death is rare in the OB and that neuronal addition, but not replacement, is the outcome of adult neurogenesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a main conclusion of the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:08:40.690056Z"
+    },
+    {
+      "id": "dbf05865-cc75-42bd-9270-7d4202fcad40",
+      "content_id": "cc399c25-f951-4c8b-a1d7-7d2d35d4c719",
+      "claim_id": "C97",
+      "claim": "Neuronal addition, but not replacement, is the outcome of adult neurogenesis in the OB.",
+      "claim_type": "EXPLICIT",
+      "source": "In conclusion, we show here that neuronal cell death is rare in the OB and that neuronal addition, but not replacement, is the outcome of adult neurogenesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a main conclusion of the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:08:40.690056Z"
+    },
+    {
+      "id": "52218689-2c0a-4f7f-8ec2-7026486bba1b",
+      "content_id": "cc399c25-f951-4c8b-a1d7-7d2d35d4c719",
+      "claim_id": "C98",
+      "claim": "Genetic fate mapping studies pointed toward an increase in specific neuronal subsets in the adult OB.",
+      "claim_type": "EXPLICIT",
+      "source": "Genetic fate mapping studies (Ninkovic et al., 2007) and also direct observation of the TH positive neuron population (Adam and Mizrahi, 2011) already pointed toward an increase in specific neuronal subsets in the adult OB.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Ninkovic et al., 2007 and Adam and Mizrahi, 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:08:40.690056Z"
+    },
+    {
+      "id": "394b9702-8213-4eb0-be05-17dd0e9e7c31",
+      "content_id": "cc399c25-f951-4c8b-a1d7-7d2d35d4c719",
+      "claim_id": "C99",
+      "claim": "Direct observation of the TH positive neuron population pointed toward an increase in specific neuronal subsets in the adult OB.",
+      "claim_type": "EXPLICIT",
+      "source": "Genetic fate mapping studies (Ninkovic et al., 2007) and also direct observation of the TH positive neuron population (Adam and Mizrahi, 2011) already pointed toward an increase in specific neuronal subsets in the adult OB.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Adam and Mizrahi, 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:08:40.690056Z"
+    },
+    {
+      "id": "9192d8b2-fded-4c70-af2f-3cb378f92dde",
+      "content_id": "cc399c25-f951-4c8b-a1d7-7d2d35d4c719",
+      "claim_id": "C100",
+      "claim": "Neuronal addition is a general phenomenon that affects perinatally and adult generated neurons, leading to substantial growth of the OB throughout life.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that neuronal addition is a general phenomenon that affects perinatally and adult generated neurons, leading to substantial growth of the OB throughout life.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the study's data on both perinatal and adult neurons.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:08:40.690056Z"
+    },
+    {
+      "id": "ab276cda-3500-4cbb-90eb-3742ac9ae3d2",
+      "content_id": "cc399c25-f951-4c8b-a1d7-7d2d35d4c719",
+      "claim_id": "C101",
+      "claim": "OB neurogenesis appears to reflect ongoing brain development rather than homeostasis.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, OB neurogenesis appears to reflect ongoing brain development rather than homeostasis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the finding of neuronal addition without replacement.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:08:40.690056Z"
+    },
+    {
+      "id": "1ae82240-1668-4499-a662-2b8dc88ca60c",
+      "content_id": "cc399c25-f951-4c8b-a1d7-7d2d35d4c719",
+      "claim_id": "C102",
+      "claim": "An increase in BrdU-positive cells in the GCL was observed in BAX conditional mutant mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, an increase in BrdU-positive cells in the GCL was observed in BAX conditional mutant mice (Kim et al., 2007; Sahay et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Kim et al., 2007 and Sahay et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:08:40.690056Z"
+    },
+    {
+      "id": "93744ed7-6fa2-4354-9875-bf3d6c64bafe",
+      "content_id": "cc399c25-f951-4c8b-a1d7-7d2d35d4c719",
+      "claim_id": "C103",
+      "claim": "Neuronal selection at the level of integration has been proposed to underlie adult hippocampal neurogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, neuronal selection at the level of integration has been proposed to underlie adult hippocampal neurogenesis (Bergami and Berninger, 2012; Buss et al., 2006), and recent in vivo observations indicate that most cell death occurs among immature neurons, at relatively early stages after their birth (Pilz et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Bergami and Berninger, 2012 and Buss et al., 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:08:40.690056Z"
+    },
+    {
+      "id": "83449486-9cdf-413d-bf71-044d44e4bcb6",
+      "content_id": "cc399c25-f951-4c8b-a1d7-7d2d35d4c719",
+      "claim_id": "C104",
+      "claim": "Recent in vivo observations indicate that most cell death in hippocampal neurogenesis occurs among immature neurons, at relatively early stages after their birth.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, neuronal selection at the level of integration has been proposed to underlie adult hippocampal neurogenesis (Bergami and Berninger, 2012; Buss et al., 2006), and recent in vivo observations indicate that most cell death occurs among immature neurons, at relatively early stages after their birth (Pilz et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Pilz et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:08:40.690056Z"
+    },
+    {
+      "id": "609d0d7e-2013-4446-bc87-3005184a192a",
+      "content_id": "cc399c25-f951-4c8b-a1d7-7d2d35d4c719",
+      "claim_id": "C105",
+      "claim": "The finding that most hippocampal cell death occurs at early stages correlates well with the quasi absence of death during later stages observed in the OB.",
+      "claim_type": "EXPLICIT",
+      "source": "This correlates well with the quasi absence of death during later stages, that we observe in the OB.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference connecting hippocampal data to the OB findings.",
+      "evidence_type": "[\"CITATION\", \"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:08:40.690056Z"
+    },
+    {
+      "id": "4297dd83-289e-4b8e-8b8b-ef2c81fb7884",
+      "content_id": "cc399c25-f951-4c8b-a1d7-7d2d35d4c719",
+      "claim_id": "C106",
+      "claim": "Most OB interneurons are generated during the perinatal period.",
+      "claim_type": "EXPLICIT",
+      "source": "We first focused on the perinatal period, when most OB interneurons are generated (Batista-Brito et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Batista-Brito et al., 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:08:40.690056Z"
+    },
+    {
+      "id": "205b8e57-d47e-48cc-b6b1-f250fd7a9784",
+      "content_id": "cc399c25-f951-4c8b-a1d7-7d2d35d4c719",
+      "claim_id": "C107",
+      "claim": "Loss of new neurons in the OB after arrival at terminal positions occurs only at low levels.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that loss of new neurons in the OB after arrival at terminal positions occurs only at low levels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a main finding stated in the abstract based on in vivo imaging data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:08:40.690056Z"
+    },
+    {
+      "id": "df7ff84a-ab0d-4f63-83fd-a08f105c0f8c",
+      "content_id": "cc399c25-f951-4c8b-a1d7-7d2d35d4c719",
+      "claim_id": "C108",
+      "claim": "Long-term observations showed that no substantial cell death occurred at later stages.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, long-term observations showed that no substantial cell death occurred at later stages.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a main finding stated in the abstract based on long-term in vivo imaging data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:08:40.690056Z"
+    },
+    {
+      "id": "8383d6d1-5e4d-4bb6-bf5a-86c85219dace",
+      "content_id": "cc399c25-f951-4c8b-a1d7-7d2d35d4c719",
+      "claim_id": "C109",
+      "claim": "Neuronal death was induced by standard doses of thymidine analogs.",
+      "claim_type": "EXPLICIT",
+      "source": "Neuronal death was induced by standard doses of thymidine analogs, but disappeared when low doses were used.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a main finding stated in the abstract based on EdU dose-response experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:08:40.690056Z"
+    },
+    {
+      "id": "1145d047-678e-424b-8ef2-2a4ac1ac22a6",
+      "content_id": "cc399c25-f951-4c8b-a1d7-7d2d35d4c719",
+      "claim_id": "C110",
+      "claim": "Neuronal death disappeared when low doses of thymidine analogs were used.",
+      "claim_type": "EXPLICIT",
+      "source": "Neuronal death was induced by standard doses of thymidine analogs, but disappeared when low doses were used.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a main finding stated in the abstract based on EdU dose-response experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:08:40.690056Z"
+    },
+    {
+      "id": "738df8af-8243-49bc-826b-7298257edc5b",
+      "content_id": "cc399c25-f951-4c8b-a1d7-7d2d35d4c719",
+      "claim_id": "C111",
+      "claim": "The OB grows throughout life.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we demonstrate that the OB grows throughout life.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a main finding stated in the abstract based on in vivo imaging and light sheet microscopy data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:08:40.690056Z"
+    },
+    {
+      "id": "6d69db5e-968b-4f71-adc8-796eb949e65a",
+      "content_id": "cc399c25-f951-4c8b-a1d7-7d2d35d4c719",
+      "claim_id": "C112",
+      "claim": "Neuronal selection during OB-neurogenesis does not occur after neurons reached stable positions.",
+      "claim_type": "EXPLICIT",
+      "source": "This shows that neuronal selection during OB-neurogenesis does not occur after neurons reached stable positions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion stated in the abstract based on the low cell death observed.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:08:40.690056Z"
+    },
+    {
+      "id": "1d77c9ea-921b-456e-be73-4300137bd366",
+      "content_id": "cc399c25-f951-4c8b-a1d7-7d2d35d4c719",
+      "claim_id": "C113",
+      "claim": "OB neurogenesis does not represent neuronal turnover but lifelong neuronal addition.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, this suggests that OB neurogenesis does not represent neuronal turnover but lifelong neuronal addition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion stated in the abstract based on the growth and survival data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:08:40.690056Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "fd45bcb2-61f8-4322-81d3-a885f9bd36b1",
+      "content_id": "cc399c25-f951-4c8b-a1d7-7d2d35d4c719",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The manuscript describes the established pathway of adult olfactory bulb (OB) neurogenesis in rodents, where stem cells in forebrain ventricles generate neuronal precursors that migrate via the rostral migratory stream (RMS) to the OB, where they integrate as GABAergic and dopaminergic interneurons.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C5 describe well-established background knowledge about OB neurogenesis, supported by appropriate citations (Whitman and Greer, 2007). These claims provide necessary context for the study but represent prior work rather than novel findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:08:40.690056Z"
+    },
+    {
+      "id": "981bd695-0de0-4e08-82ab-1178f8d792d9",
+      "content_id": "cc399c25-f951-4c8b-a1d7-7d2d35d4c719",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The prevailing model in the field posits that OB neurogenesis involves competitive selection during a critical 2-8 week period leading to ~50% cell death, and represents a turnover system maintaining stable neuron numbers. This model is based primarily on thymidine analog tracing studies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6-C14 accurately summarize the prevailing model that the authors are challenging, supported by multiple appropriate citations. These claims establish the scientific context and rationale for the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:08:40.690056Z"
+    },
+    {
+      "id": "554d1f1f-b327-4276-8d7d-ff6bfa7d75c4",
+      "content_id": "cc399c25-f951-4c8b-a1d7-7d2d35d4c719",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Prior two-photon imaging studies showed increases in juxtaglomerular neuron populations over time, interpreted as changes in interneuron subtype composition. Sensory deprivation reduced while olfactory training increased labeled neuron numbers.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C15-C19 accurately cite prior work (Mizrahi et al., 2006; Adam and Mizrahi, 2011; Mandairon et al., 2006; Mouret et al., 2008) that provides important context showing some contradictions to the turnover model and activity-dependent effects on neurogenesis.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:08:40.690056Z"
+    },
+    {
+      "id": "9b512997-97fd-4d86-8ad6-d70e369c4cc0",
+      "content_id": "cc399c25-f951-4c8b-a1d7-7d2d35d4c719",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Postnatal electroporation of dorsal ventricular zone in Rosa-RFP mice labels a mixed population of OB neurons (6% TH+, 12% calretinin+, 22% other GABAergic PGN, 60% granule cells) that can be imaged via thin-skull preparation without inducing astroglia or microglia reactions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C20-C26 describe the experimental approach with appropriate methodological citations and quantitative characterization of labeled cell types (Figure 1b). The absence of inflammatory response is confirmed by immunostaining (Figure 1\u2014figure supplement 1) and citation to Xu et al., 2007.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:08:40.690056Z"
+    },
+    {
+      "id": "26ae4eff-2c4c-49a0-87c4-112eb118c75a",
+      "content_id": "cc399c25-f951-4c8b-a1d7-7d2d35d4c719",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "In vivo imaging of perinatally-born neurons showed only 5.1% loss of periglomerular neurons (755 cells, 11 mice) and 0% loss of granule cells (178 cells, 6 mice) during the proposed critical period (3-8 weeks post-electroporation).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C31 present quantitative data from systematic longitudinal imaging (Figures 1, 2a,b). The sample sizes are substantial, the methodology is appropriate, and the findings are internally consistent. The conclusion that perinatal neurons are rarely eliminated is well-supported by the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:08:40.690056Z"
+    },
+    {
+      "id": "e62631f6-2c1b-422b-ba9e-d084f4ee2b3f",
+      "content_id": "cc399c25-f951-4c8b-a1d7-7d2d35d4c719",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Adult-born neurons showed similarly low cell loss during the critical period: 1.5% of periglomerular neurons (538 cells, 8 mice) in Nestin-CreERT2 mice and 5.9% (101 cells) or 2.1% (48 cells) of granule cells using genetic or lentiviral labeling, respectively.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C37 present convergent evidence from multiple labeling approaches (genetic and viral) showing minimal cell death in adult-born neurons (Figures 2c, 3). The consistency across methods and cell types strengthens the conclusion. Sample sizes are adequate and methodology is sound.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:08:40.690056Z"
+    },
+    {
+      "id": "516ff0c0-8347-4c0d-bd77-77508fe4dcf2",
+      "content_id": "cc399c25-f951-4c8b-a1d7-7d2d35d4c719",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Naris occlusion significantly increased cell loss in adult-born periglomerular neurons (p=0.03, 151 cells, 7 mice), demonstrating that the imaging approach can detect cell death when it occurs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38-C40 provide an important positive control showing that the imaging method can detect cell death when induced experimentally (Figure 4). The statistical significance (p=0.03) and appropriate experimental design validate the sensitivity of the approach.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:08:40.690056Z"
+    },
+    {
+      "id": "1bc9d21e-d1bc-4d31-a518-b5fd76c63528",
+      "content_id": "cc399c25-f951-4c8b-a1d7-7d2d35d4c719",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Standard doses of BrdU (50 mg/kg) or EdU (50 mg/kg) induced ~40% loss of labeled neurons between 2-6 weeks, while low doses of EdU (1-5 mg/kg) showed no detectable cell loss, indicating dose-dependent toxicity of thymidine analogs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41-C47 present a systematic dose-response experiment (Figure 5) demonstrating that cell loss correlates with thymidine analog concentration. The experimental design is rigorous, comparing multiple doses and both BrdU and EdU. This is a critical finding that reconciles the discrepancy between imaging and prior labeling studies.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:08:40.690056Z"
+    },
+    {
+      "id": "37791092-efd5-461b-8efb-9dfc57dd4fdf",
+      "content_id": "cc399c25-f951-4c8b-a1d7-7d2d35d4c719",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Cleaved caspase-3 (CC3) analysis showed low apoptosis in OB layers (363\u00b134 cells/mm\u00b3), with only 26/10,803 EdU+ neurons co-labeled for CC3. CC3 density was >6-fold higher in RMS than OB layers, suggesting cell death occurs predominantly at the precursor level rather than after integration.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48-C54 provide mechanistic insight through CC3 immunostaining (Figure 5h,i). The data show that thymidine analog toxicity does not increase apoptosis and that most cell death occurs in the RMS. Sample sizes are large (n=15 animals, >10,000 EdU+ cells analyzed) and findings are consistent with Biebl et al., 2000.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:08:40.690056Z"
+    },
+    {
+      "id": "c9c1d933-9594-488a-9b73-b219e649826f",
+      "content_id": "cc399c25-f951-4c8b-a1d7-7d2d35d4c719",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "High doses of thymidine analogs are associated with cell loss in the OB, while low doses do not show this effect, confirming the in vivo imaging findings and indicating toxicity of DNA-modifying agents at standard concentrations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55-C56 synthesize the EdU dose-response data to conclude that thymidine analog toxicity explains the discrepancy between prior studies and current imaging results. This conclusion is well-supported by the convergent evidence from multiple experimental approaches.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:08:40.690056Z"
+    },
+    {
+      "id": "ba68f127-a8ac-4807-9409-93a133d5c3b2",
+      "content_id": "cc399c25-f951-4c8b-a1d7-7d2d35d4c719",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Long-term observations (up to 24 weeks) showed no sustained cell loss in perinatal or adult-born neurons. Instead, additional adult-born neurons continuously appeared, leading to more than doubling of the periglomerular neuron population over 6 months.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57-C61 present long-term imaging data (Figure 6) showing neuronal addition rather than turnover. The observation of continuous appearance of new neurons is consistent with ongoing stem cell activity in Nestin-CreERT2 mice (Imayoshi et al., 2008). The data directly contradict the turnover model.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:08:40.690056Z"
+    },
+    {
+      "id": "7d2db903-b414-4dd6-a73a-6172aa447b33",
+      "content_id": "cc399c25-f951-4c8b-a1d7-7d2d35d4c719",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Both in vivo imaging and light-sheet microscopy of cleared tissue demonstrate that the mouse OB grows significantly during adult life (44% enlargement from 2-12 months), with stable cell density and proportional growth of all layers, while total forebrain volume remains unchanged.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C62-C70 present convergent evidence from two independent methods (in vivo imaging and light-sheet microscopy) showing OB growth (Figure 7). The volumetric analysis is comprehensive, measuring inter-neuronal distances, total OB volume, layer volumes, and cell density. The methodology (light-sheet of cleared brains) overcomes limitations of prior 2D approaches.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:08:40.690056Z"
+    },
+    {
+      "id": "83b16c07-93d8-4a9b-a5fe-8598dac9dcb8",
+      "content_id": "cc399c25-f951-4c8b-a1d7-7d2d35d4c719",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Based on cell density and volume measurements, approximately 8,000 cells/day are added to the growing OB between 2-6 months. This estimate is consistent with genetic labeling data from Imayoshi et al. (2008), which yields ~6,000 cells/day after accounting for recombination efficiency.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C71-C74 provide quantitative estimates of neuronal addition rates that are internally consistent and agree with independent genetic labeling studies. The calculation accounts for recombination efficiency and shows good concordance between methods, strengthening confidence in the estimates.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:08:40.690056Z"
+    },
+    {
+      "id": "63a9cb09-23ec-49d9-b555-3cc3ed05853e",
+      "content_id": "cc399c25-f951-4c8b-a1d7-7d2d35d4c719",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The study's three main conclusions are: (1) neuronal cell death after arrival in the OB is very low, (2) adult OB neurogenesis is an addition rather than homeostatic process, and (3) classical thymidine analog tracing has unwanted side effects requiring careful interpretation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C75-C77 summarize the three major conclusions of the study, each supported by substantial experimental evidence presented in the manuscript. These conclusions fundamentally challenge the prevailing model of OB neurogenesis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:08:40.690056Z"
+    },
+    {
+      "id": "e8c84b00-2a51-43db-8318-885f36cf7c55",
+      "content_id": "cc399c25-f951-4c8b-a1d7-7d2d35d4c719",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "BrdU and \u00b3H-thymidine are toxic, and studies in rodents and primates have documented unwanted long-term effects associated with their use.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C78-C79 cite extensive prior literature documenting thymidine analog toxicity (Breunig et al., 2007; Lehner et al., 2011; Duque and Rakic, 2011; and others). These citations appropriately support the concern about interpreting BrdU-based studies.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:08:40.690056Z"
+    },
+    {
+      "id": "06242e3e-a261-4f0c-88b1-9d753991b9a6",
+      "content_id": "cc399c25-f951-4c8b-a1d7-7d2d35d4c719",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The authors conclude that neuronal selection does not principally occur after arrival in the OB. Evidence from Bax-KO mice (where OB structure is unaffected despite blocked apoptosis but RMS shows precursor accumulation) suggests selection may occur at the RMS recruitment level rather than in target layers.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C80-C83 present a mechanistic interpretation based on the low cell death observed and cite Bax-KO data (Kim et al., 2007). While the conclusion that selection doesn't occur post-integration is well-supported, the alternative hypothesis about RMS-level selection is speculative and would require additional experiments to confirm.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:08:40.690056Z"
+    },
+    {
+      "id": "7e9bc33b-934d-4061-98c2-e801f5964c83",
+      "content_id": "cc399c25-f951-4c8b-a1d7-7d2d35d4c719",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "The authors discuss that in developing cortical interneurons, ~40% are predestined for Bax-dependent apoptosis independent of local environment (Southwell et al., 2012), and suggest that if this applies to OB neurons, cell death would occur in the SVZ/RMS.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C84-C86 appropriately cite relevant developmental neurobiology (Southwell et al., 2012) and draw a logical inference about where cell death might occur if intrinsically programmed. This is presented as speculation rather than established fact.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:08:40.690056Z"
+    },
+    {
+      "id": "9ddea1df-db40-4347-92ff-b4823cc9a8ed",
+      "content_id": "cc399c25-f951-4c8b-a1d7-7d2d35d4c719",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Neuronal death is rare at all observed time points, and permanent neuronal addition without cell removal is incompatible with the OB representing a turnover system of constant size.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C87-C88 synthesize the long-term imaging data to reach a logical conclusion that contradicts the turnover model. The inference is well-supported by the longitudinal data showing both low death rates and continuous addition.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:08:40.690056Z"
+    },
+    {
+      "id": "18c9127f-0881-424a-898a-51f8db4ac5cc",
+      "content_id": "cc399c25-f951-4c8b-a1d7-7d2d35d4c719",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "Prior studies on OB growth have yielded contradictory results, with some observing growth and others not. The authors attribute this to methodological limitations of 2D sectioning approaches, which light-sheet microscopy of whole cleared brains overcomes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C89-C92 appropriately cite contradictory prior literature and provide a reasonable methodological explanation for the discrepancies. The light-sheet approach does offer clear advantages over 2D extrapolation methods for volumetric measurements.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:08:40.690056Z"
+    },
+    {
+      "id": "2526d994-e7ee-4914-8d80-0d3651ec5f19",
+      "content_id": "cc399c25-f951-4c8b-a1d7-7d2d35d4c719",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "In vivo imaging shows that larger frames are needed over time to accommodate the same neurons, and inter-neuronal distances measurably increase, consistent with prior observations that glomerular distances increase with age (Richard et al., 2010).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C93-C95 present direct in vivo evidence of OB growth through systematic measurement of inter-neuronal distances (Figure 7a,b). The finding is internally consistent and agrees with independent prior observations (Richard et al., 2010).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:08:40.690056Z"
+    },
+    {
+      "id": "257acd90-1c65-4c9c-8f0b-593f893f0f5b",
+      "content_id": "cc399c25-f951-4c8b-a1d7-7d2d35d4c719",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "The study concludes that neuronal cell death is rare in the OB, neuronal addition (not replacement) is the outcome of adult neurogenesis, and this represents ongoing brain development rather than homeostasis. This generalizes findings from prior studies showing increases in specific neuronal subsets.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C96-C101 present the study's overarching conclusions, which are well-supported by the comprehensive experimental evidence. The interpretation that OB neurogenesis represents development rather than homeostasis is a logical inference from the data showing addition without replacement.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:08:40.690056Z"
+    },
+    {
+      "id": "e46c20ed-6aca-4fdb-b011-40acd72d2887",
+      "content_id": "cc399c25-f951-4c8b-a1d7-7d2d35d4c719",
+      "result_id": "R22",
+      "result_category": "llm",
+      "result": "The authors discuss that increased BrdU+ cells in Bax-KO mice and evidence from hippocampal neurogenesis (where most cell death occurs early among immature neurons) are consistent with their OB findings of minimal death after integration.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C102-C105 appropriately cite relevant comparative data from Bax-KO mice (Kim et al., 2007; Sahay et al., 2011) and hippocampal neurogenesis (Pilz et al., 2018) to contextualize the findings. The comparison is reasonable and supports the interpretation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:08:40.690056Z"
+    },
+    {
+      "id": "fb23fd13-44eb-431f-be50-8f71854f20b0",
+      "content_id": "cc399c25-f951-4c8b-a1d7-7d2d35d4c719",
+      "result_id": "R23",
+      "result_category": "llm",
+      "result": "The abstract summarizes the main findings: loss of new OB neurons after arrival is low, no substantial late-stage cell death occurs, standard thymidine analog doses induce death while low doses do not, the OB grows throughout life, neuronal selection doesn't occur after stable positioning, and OB neurogenesis represents lifelong addition not turnover.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C106-C113 accurately summarize the manuscript's key findings in the abstract. Each statement is supported by substantial experimental evidence presented in the results sections.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:08:40.690056Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "61ff9ebd-4991-4b01-a720-d698f561d3c4",
+      "result_id": "fd45bcb2-61f8-4322-81d3-a885f9bd36b1"
+    },
+    {
+      "claim_id": "a7366bd9-a342-472b-9e94-d340796eac61",
+      "result_id": "fd45bcb2-61f8-4322-81d3-a885f9bd36b1"
+    },
+    {
+      "claim_id": "140db960-5f7e-4b2f-9169-dcdee321e967",
+      "result_id": "fd45bcb2-61f8-4322-81d3-a885f9bd36b1"
+    },
+    {
+      "claim_id": "6b87758c-737f-432d-9e6a-535863f458ae",
+      "result_id": "fd45bcb2-61f8-4322-81d3-a885f9bd36b1"
+    },
+    {
+      "claim_id": "7460cb2b-936e-4e09-b82b-2dab5ece77c3",
+      "result_id": "fd45bcb2-61f8-4322-81d3-a885f9bd36b1"
+    },
+    {
+      "claim_id": "9ceebcc8-0e76-4f45-b0ba-904019700822",
+      "result_id": "981bd695-0de0-4e08-82ab-1178f8d792d9"
+    },
+    {
+      "claim_id": "0d548672-cc13-4565-bbf5-9c294cffc03c",
+      "result_id": "981bd695-0de0-4e08-82ab-1178f8d792d9"
+    },
+    {
+      "claim_id": "b3e58ad3-b015-4754-9f9c-086b0bc7a608",
+      "result_id": "981bd695-0de0-4e08-82ab-1178f8d792d9"
+    },
+    {
+      "claim_id": "5c13a445-e652-4535-8c0f-b4002b091c64",
+      "result_id": "981bd695-0de0-4e08-82ab-1178f8d792d9"
+    },
+    {
+      "claim_id": "8ca4feaf-e1a5-4aa2-941e-a56c3b952673",
+      "result_id": "981bd695-0de0-4e08-82ab-1178f8d792d9"
+    },
+    {
+      "claim_id": "2b3f340f-2e61-4b63-8d7a-a40d6ab9c589",
+      "result_id": "981bd695-0de0-4e08-82ab-1178f8d792d9"
+    },
+    {
+      "claim_id": "645979ac-6469-43be-9ec4-ec49bb2dfc0c",
+      "result_id": "981bd695-0de0-4e08-82ab-1178f8d792d9"
+    },
+    {
+      "claim_id": "61a539a1-dd5d-4c6d-a07f-bc3d02ba84b5",
+      "result_id": "981bd695-0de0-4e08-82ab-1178f8d792d9"
+    },
+    {
+      "claim_id": "028534e7-3497-4b42-87a1-ae9d7096eed4",
+      "result_id": "981bd695-0de0-4e08-82ab-1178f8d792d9"
+    },
+    {
+      "claim_id": "27315100-744c-443b-8138-b52b87b26986",
+      "result_id": "554d1f1f-b327-4276-8d7d-ff6bfa7d75c4"
+    },
+    {
+      "claim_id": "986f81f1-6276-4410-b267-3907a313b5d5",
+      "result_id": "554d1f1f-b327-4276-8d7d-ff6bfa7d75c4"
+    },
+    {
+      "claim_id": "2c2f6cf8-773b-4d3b-9f91-6967599bfc10",
+      "result_id": "554d1f1f-b327-4276-8d7d-ff6bfa7d75c4"
+    },
+    {
+      "claim_id": "2491e317-c62e-422f-bb82-b31428b7838a",
+      "result_id": "554d1f1f-b327-4276-8d7d-ff6bfa7d75c4"
+    },
+    {
+      "claim_id": "c2dc78c4-9536-484f-b18e-108b3f1d50e8",
+      "result_id": "554d1f1f-b327-4276-8d7d-ff6bfa7d75c4"
+    },
+    {
+      "claim_id": "121a894e-54df-4f9c-8e08-c459b928d33b",
+      "result_id": "9b512997-97fd-4d86-8ad6-d70e369c4cc0"
+    },
+    {
+      "claim_id": "70646c03-7a6b-4172-8fae-733afcc52142",
+      "result_id": "9b512997-97fd-4d86-8ad6-d70e369c4cc0"
+    },
+    {
+      "claim_id": "f107651b-2fd7-408a-8356-ba20db0155c6",
+      "result_id": "9b512997-97fd-4d86-8ad6-d70e369c4cc0"
+    },
+    {
+      "claim_id": "bc6f29ae-0730-4fff-bf14-e60596be1d9d",
+      "result_id": "9b512997-97fd-4d86-8ad6-d70e369c4cc0"
+    },
+    {
+      "claim_id": "b75eb64f-4fc7-456f-8d7a-f228a3a0d895",
+      "result_id": "9b512997-97fd-4d86-8ad6-d70e369c4cc0"
+    },
+    {
+      "claim_id": "2cdd4897-5b30-469f-832c-8177dc04a304",
+      "result_id": "9b512997-97fd-4d86-8ad6-d70e369c4cc0"
+    },
+    {
+      "claim_id": "bd4677a2-86d1-48b3-9f0d-2a908a44d169",
+      "result_id": "9b512997-97fd-4d86-8ad6-d70e369c4cc0"
+    },
+    {
+      "claim_id": "d4e12b58-a40e-4a35-ac5a-ab7cae7e0393",
+      "result_id": "26ae4eff-2c4c-49a0-87c4-112eb118c75a"
+    },
+    {
+      "claim_id": "61e5902e-eede-4b79-955c-f9461dae4105",
+      "result_id": "26ae4eff-2c4c-49a0-87c4-112eb118c75a"
+    },
+    {
+      "claim_id": "3d8b631b-a034-4dff-a33d-59cde01d2c9e",
+      "result_id": "26ae4eff-2c4c-49a0-87c4-112eb118c75a"
+    },
+    {
+      "claim_id": "7837cb12-ee41-4682-9b9a-5b8dc5e61b4c",
+      "result_id": "26ae4eff-2c4c-49a0-87c4-112eb118c75a"
+    },
+    {
+      "claim_id": "5e9de680-e90d-465e-a98d-1442420ea037",
+      "result_id": "26ae4eff-2c4c-49a0-87c4-112eb118c75a"
+    },
+    {
+      "claim_id": "9094db4e-c947-45a2-a87a-f1437fc328b1",
+      "result_id": "e62631f6-2c1b-422b-ba9e-d084f4ee2b3f"
+    },
+    {
+      "claim_id": "31184b99-0dfa-4f55-81b6-ebc38a884322",
+      "result_id": "e62631f6-2c1b-422b-ba9e-d084f4ee2b3f"
+    },
+    {
+      "claim_id": "5481760b-ad4f-4f02-be5c-f469c79ea269",
+      "result_id": "e62631f6-2c1b-422b-ba9e-d084f4ee2b3f"
+    },
+    {
+      "claim_id": "ac76ef5d-f819-412e-adf8-d94c2bd2ba52",
+      "result_id": "e62631f6-2c1b-422b-ba9e-d084f4ee2b3f"
+    },
+    {
+      "claim_id": "75d982ac-4e57-407c-9cf2-3728385a54c0",
+      "result_id": "e62631f6-2c1b-422b-ba9e-d084f4ee2b3f"
+    },
+    {
+      "claim_id": "1c81960c-e070-40a4-b87e-cf89c675384a",
+      "result_id": "e62631f6-2c1b-422b-ba9e-d084f4ee2b3f"
+    },
+    {
+      "claim_id": "48291ab8-fcad-4e2c-b100-479e02311d2f",
+      "result_id": "516ff0c0-8347-4c0d-bd77-77508fe4dcf2"
+    },
+    {
+      "claim_id": "bebf9abf-a8c0-4fd5-8abb-4f0ac3ebe734",
+      "result_id": "516ff0c0-8347-4c0d-bd77-77508fe4dcf2"
+    },
+    {
+      "claim_id": "3d6149ab-4f22-440b-987b-fcf8f19b15b2",
+      "result_id": "516ff0c0-8347-4c0d-bd77-77508fe4dcf2"
+    },
+    {
+      "claim_id": "000c20b4-61a7-4919-8bf2-8f478a66ca36",
+      "result_id": "1bc9d21e-d1bc-4d31-a518-b5fd76c63528"
+    },
+    {
+      "claim_id": "296aecc8-41f7-45b2-bab4-a2ae35dfdeab",
+      "result_id": "1bc9d21e-d1bc-4d31-a518-b5fd76c63528"
+    },
+    {
+      "claim_id": "d50cb1ba-dde4-4fa7-bfe1-42ee5a5ec3de",
+      "result_id": "1bc9d21e-d1bc-4d31-a518-b5fd76c63528"
+    },
+    {
+      "claim_id": "8dadcea3-e0c5-4fe6-9cdf-e9a955cffda2",
+      "result_id": "1bc9d21e-d1bc-4d31-a518-b5fd76c63528"
+    },
+    {
+      "claim_id": "9c24cc78-c0ac-4def-b303-1c3f496e7ed6",
+      "result_id": "1bc9d21e-d1bc-4d31-a518-b5fd76c63528"
+    },
+    {
+      "claim_id": "42ba4408-28a8-48e0-90f0-7de7765d48a5",
+      "result_id": "1bc9d21e-d1bc-4d31-a518-b5fd76c63528"
+    },
+    {
+      "claim_id": "5552bc89-c8c0-4978-a7c3-d7a34ade605f",
+      "result_id": "1bc9d21e-d1bc-4d31-a518-b5fd76c63528"
+    },
+    {
+      "claim_id": "6f011410-36bb-4c4c-bbb9-1bdf7b68a712",
+      "result_id": "37791092-efd5-461b-8efb-9dfc57dd4fdf"
+    },
+    {
+      "claim_id": "e89198ab-9865-4285-8522-9d49cfd04c5a",
+      "result_id": "37791092-efd5-461b-8efb-9dfc57dd4fdf"
+    },
+    {
+      "claim_id": "f4719763-efd7-4cbc-8995-4b594dba4bae",
+      "result_id": "37791092-efd5-461b-8efb-9dfc57dd4fdf"
+    },
+    {
+      "claim_id": "b5c843d0-046c-4629-8d09-57a321e90751",
+      "result_id": "37791092-efd5-461b-8efb-9dfc57dd4fdf"
+    },
+    {
+      "claim_id": "e4a94fff-8241-45cd-ba29-b76f3d9458e0",
+      "result_id": "37791092-efd5-461b-8efb-9dfc57dd4fdf"
+    },
+    {
+      "claim_id": "38bd628f-3fac-4f04-b209-590928a32cf2",
+      "result_id": "37791092-efd5-461b-8efb-9dfc57dd4fdf"
+    },
+    {
+      "claim_id": "846470a8-c463-4d66-b991-e728b726e91b",
+      "result_id": "37791092-efd5-461b-8efb-9dfc57dd4fdf"
+    },
+    {
+      "claim_id": "94534be4-2088-4da8-ad80-a10dd2a0ad92",
+      "result_id": "c9c1d933-9594-488a-9b73-b219e649826f"
+    },
+    {
+      "claim_id": "5b7a0379-3ab0-4c98-a381-8b5eb4a28123",
+      "result_id": "c9c1d933-9594-488a-9b73-b219e649826f"
+    },
+    {
+      "claim_id": "8dc654ef-1bf6-4412-9343-c536da34fe79",
+      "result_id": "ba68f127-a8ac-4807-9409-93a133d5c3b2"
+    },
+    {
+      "claim_id": "9cfe9f88-c849-48bd-9030-c6a7b50517c6",
+      "result_id": "ba68f127-a8ac-4807-9409-93a133d5c3b2"
+    },
+    {
+      "claim_id": "b215559d-b386-4627-a76b-ba1bf06ba53b",
+      "result_id": "ba68f127-a8ac-4807-9409-93a133d5c3b2"
+    },
+    {
+      "claim_id": "f2beec62-0328-438d-9454-e04edecd5bb4",
+      "result_id": "ba68f127-a8ac-4807-9409-93a133d5c3b2"
+    },
+    {
+      "claim_id": "e1e4acb9-41da-411a-bac9-fa334d896e92",
+      "result_id": "ba68f127-a8ac-4807-9409-93a133d5c3b2"
+    },
+    {
+      "claim_id": "1a8b5094-ae63-4ebe-9c7f-b1bd8e6c5796",
+      "result_id": "7d2db903-b414-4dd6-a73a-6172aa447b33"
+    },
+    {
+      "claim_id": "92bb4470-adfb-49e2-814d-15879e20cec4",
+      "result_id": "7d2db903-b414-4dd6-a73a-6172aa447b33"
+    },
+    {
+      "claim_id": "0a510e6f-0b33-411a-8e60-04e0b506ce8a",
+      "result_id": "7d2db903-b414-4dd6-a73a-6172aa447b33"
+    },
+    {
+      "claim_id": "ae4f05db-ce08-45e6-b837-b1bd9e51a306",
+      "result_id": "7d2db903-b414-4dd6-a73a-6172aa447b33"
+    },
+    {
+      "claim_id": "910eb605-ea0b-4417-882a-4716c23db541",
+      "result_id": "7d2db903-b414-4dd6-a73a-6172aa447b33"
+    },
+    {
+      "claim_id": "e297f571-9cb2-4935-b993-a15e52e19ed9",
+      "result_id": "7d2db903-b414-4dd6-a73a-6172aa447b33"
+    },
+    {
+      "claim_id": "0dc20799-b93c-42b1-a12b-d37223172bd7",
+      "result_id": "7d2db903-b414-4dd6-a73a-6172aa447b33"
+    },
+    {
+      "claim_id": "c19b6912-78dc-4c6f-91ae-3fd50b58e36f",
+      "result_id": "7d2db903-b414-4dd6-a73a-6172aa447b33"
+    },
+    {
+      "claim_id": "c6ffe488-00da-42c8-b8cd-0f6cb703d2f8",
+      "result_id": "7d2db903-b414-4dd6-a73a-6172aa447b33"
+    },
+    {
+      "claim_id": "cca31761-7773-4e79-915e-adb19228e36c",
+      "result_id": "83b16c07-93d8-4a9b-a5fe-8598dac9dcb8"
+    },
+    {
+      "claim_id": "763c7907-1714-4830-8a4c-34a1ce8d8380",
+      "result_id": "83b16c07-93d8-4a9b-a5fe-8598dac9dcb8"
+    },
+    {
+      "claim_id": "0c307f54-c844-4ad1-9d66-97c25ca2d75e",
+      "result_id": "83b16c07-93d8-4a9b-a5fe-8598dac9dcb8"
+    },
+    {
+      "claim_id": "fd369021-856c-4828-b8da-b2a77fedcb4d",
+      "result_id": "83b16c07-93d8-4a9b-a5fe-8598dac9dcb8"
+    },
+    {
+      "claim_id": "fab553dd-ab1f-4216-a945-59961daf69e1",
+      "result_id": "63a9cb09-23ec-49d9-b555-3cc3ed05853e"
+    },
+    {
+      "claim_id": "d38581cb-2f6b-49d8-a8ab-c57e4a0975b2",
+      "result_id": "63a9cb09-23ec-49d9-b555-3cc3ed05853e"
+    },
+    {
+      "claim_id": "c728a233-cd4a-46eb-b393-0adbe5b7504f",
+      "result_id": "63a9cb09-23ec-49d9-b555-3cc3ed05853e"
+    },
+    {
+      "claim_id": "3b77ce87-ef8f-4760-8a45-9b6cac47d849",
+      "result_id": "e8c84b00-2a51-43db-8318-885f36cf7c55"
+    },
+    {
+      "claim_id": "2d290d42-3550-4bfa-afc9-876d29966548",
+      "result_id": "e8c84b00-2a51-43db-8318-885f36cf7c55"
+    },
+    {
+      "claim_id": "d4fd7204-3057-4e29-9119-7e47162a64ba",
+      "result_id": "06242e3e-a261-4f0c-88b1-9d753991b9a6"
+    },
+    {
+      "claim_id": "de2056cb-6fa2-4f56-9ddf-260e0b814e59",
+      "result_id": "06242e3e-a261-4f0c-88b1-9d753991b9a6"
+    },
+    {
+      "claim_id": "dcb58d14-5edd-48b4-bcbd-31631c139d77",
+      "result_id": "06242e3e-a261-4f0c-88b1-9d753991b9a6"
+    },
+    {
+      "claim_id": "7249f774-ebf0-4855-92c6-9ec5f7ee2663",
+      "result_id": "06242e3e-a261-4f0c-88b1-9d753991b9a6"
+    },
+    {
+      "claim_id": "3f64c211-fdbe-4faa-963c-0bd4a33ef249",
+      "result_id": "7e9bc33b-934d-4061-98c2-e801f5964c83"
+    },
+    {
+      "claim_id": "d0c254ca-81c0-47b0-8a9a-732517a63383",
+      "result_id": "7e9bc33b-934d-4061-98c2-e801f5964c83"
+    },
+    {
+      "claim_id": "0029209a-3f56-4635-b560-3c6e5a4d3699",
+      "result_id": "7e9bc33b-934d-4061-98c2-e801f5964c83"
+    },
+    {
+      "claim_id": "af9b64b6-481a-4eba-9a3d-aef3bba1478f",
+      "result_id": "9ddea1df-db40-4347-92ff-b4823cc9a8ed"
+    },
+    {
+      "claim_id": "6910195f-ec2a-4594-8d51-bb837542d4be",
+      "result_id": "9ddea1df-db40-4347-92ff-b4823cc9a8ed"
+    },
+    {
+      "claim_id": "12cb40b4-9638-41f1-82a1-b4423f7be4eb",
+      "result_id": "18c9127f-0881-424a-898a-51f8db4ac5cc"
+    },
+    {
+      "claim_id": "f24883c2-507e-4061-86a7-8f36d59b3562",
+      "result_id": "18c9127f-0881-424a-898a-51f8db4ac5cc"
+    },
+    {
+      "claim_id": "707eed49-5d8c-45a8-9a42-5813ffc858f2",
+      "result_id": "18c9127f-0881-424a-898a-51f8db4ac5cc"
+    },
+    {
+      "claim_id": "451d951a-7e1c-4e73-92af-e75bbcc0e762",
+      "result_id": "18c9127f-0881-424a-898a-51f8db4ac5cc"
+    },
+    {
+      "claim_id": "d5166a1a-d29b-4289-8d9d-ca4bfb635360",
+      "result_id": "2526d994-e7ee-4914-8d80-0d3651ec5f19"
+    },
+    {
+      "claim_id": "c3f01a25-1e33-4fe1-af9e-84464d4e6372",
+      "result_id": "2526d994-e7ee-4914-8d80-0d3651ec5f19"
+    },
+    {
+      "claim_id": "571d3e92-21bf-43d4-bc91-bdaac7afe2ac",
+      "result_id": "2526d994-e7ee-4914-8d80-0d3651ec5f19"
+    },
+    {
+      "claim_id": "41a77e13-791e-4a74-b435-d2c651ecb921",
+      "result_id": "257acd90-1c65-4c9c-8f0b-593f893f0f5b"
+    },
+    {
+      "claim_id": "dbf05865-cc75-42bd-9270-7d4202fcad40",
+      "result_id": "257acd90-1c65-4c9c-8f0b-593f893f0f5b"
+    },
+    {
+      "claim_id": "52218689-2c0a-4f7f-8ec2-7026486bba1b",
+      "result_id": "257acd90-1c65-4c9c-8f0b-593f893f0f5b"
+    },
+    {
+      "claim_id": "394b9702-8213-4eb0-be05-17dd0e9e7c31",
+      "result_id": "257acd90-1c65-4c9c-8f0b-593f893f0f5b"
+    },
+    {
+      "claim_id": "9192d8b2-fded-4c70-af2f-3cb378f92dde",
+      "result_id": "257acd90-1c65-4c9c-8f0b-593f893f0f5b"
+    },
+    {
+      "claim_id": "ab276cda-3500-4cbb-90eb-3742ac9ae3d2",
+      "result_id": "257acd90-1c65-4c9c-8f0b-593f893f0f5b"
+    },
+    {
+      "claim_id": "1ae82240-1668-4499-a662-2b8dc88ca60c",
+      "result_id": "e46c20ed-6aca-4fdb-b011-40acd72d2887"
+    },
+    {
+      "claim_id": "93744ed7-6fa2-4354-9875-bf3d6c64bafe",
+      "result_id": "e46c20ed-6aca-4fdb-b011-40acd72d2887"
+    },
+    {
+      "claim_id": "83449486-9cdf-413d-bf71-044d44e4bcb6",
+      "result_id": "e46c20ed-6aca-4fdb-b011-40acd72d2887"
+    },
+    {
+      "claim_id": "609d0d7e-2013-4446-bc87-3005184a192a",
+      "result_id": "e46c20ed-6aca-4fdb-b011-40acd72d2887"
+    },
+    {
+      "claim_id": "4297dd83-289e-4b8e-8b8b-ef2c81fb7884",
+      "result_id": "fb23fd13-44eb-431f-be50-8f71854f20b0"
+    },
+    {
+      "claim_id": "205b8e57-d47e-48cc-b6b1-f250fd7a9784",
+      "result_id": "fb23fd13-44eb-431f-be50-8f71854f20b0"
+    },
+    {
+      "claim_id": "df7ff84a-ab0d-4f63-83fd-a08f105c0f8c",
+      "result_id": "fb23fd13-44eb-431f-be50-8f71854f20b0"
+    },
+    {
+      "claim_id": "8383d6d1-5e4d-4bb6-bf5a-86c85219dace",
+      "result_id": "fb23fd13-44eb-431f-be50-8f71854f20b0"
+    },
+    {
+      "claim_id": "1145d047-678e-424b-8ef2-2a4ac1ac22a6",
+      "result_id": "fb23fd13-44eb-431f-be50-8f71854f20b0"
+    },
+    {
+      "claim_id": "738df8af-8243-49bc-826b-7298257edc5b",
+      "result_id": "fb23fd13-44eb-431f-be50-8f71854f20b0"
+    },
+    {
+      "claim_id": "6d69db5e-968b-4f71-adc8-796eb949e65a",
+      "result_id": "fb23fd13-44eb-431f-be50-8f71854f20b0"
+    },
+    {
+      "claim_id": "1d77c9ea-921b-456e-be73-4300137bd366",
+      "result_id": "fb23fd13-44eb-431f-be50-8f71854f20b0"
+    }
+  ],
+  "comparisons": []
+}

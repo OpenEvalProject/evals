@@ -1,0 +1,256 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C5",
+      "C35",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C94",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "Pure one-sided loop extrusion fails to reproduce mitotic chromosome compaction, interphase TAD formation with dots, and bacterial chromosome arm juxtaposition due to unavoidable unlooped chromatin gaps.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C35, C83-86, C94, C101-103 collectively demonstrate through simulations (Figure 2c, Figure 3b, Figure 4b) that pure one-sided extrusion saturates at ~10-fold linear compaction, leaves unlooped gaps, fails to generate Hi-C dots, and does not produce the secondary diagonal in bacterial Hi-C maps. The simulation results are consistent with theoretical predictions (C83, C85) and directly compared to experimental observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C36",
+      "C100",
+      "C108",
+      "C114",
+      "C121",
+      "C125",
+      "C147"
+    ],
+    "result": "Variants of one-sided loop extrusion that make extrusion effectively two-sided (e.g., switching model) or suppress gap formation (e.g., biased loading) can restore chromosome organization features observed in vivo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C36, C100, C108, C114, C121, C125, C147 are supported by simulation results showing that the switching model with fast switching rates (kswitch/kunbind > 10 for eukaryotes, kswitchL/v > 200 for bacteria) achieves >1000-fold compaction (Figure 2e), generates Hi-C dots (Figure 3d), and produces the bacterial secondary diagonal (Figure 4d). These findings demonstrate that effectively two-sided mechanisms can explain in vivo observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106",
+      "C176"
+    ],
+    "result": "The semi-diffusive model, where the passive subunit diffuses along chromatin, fails to close gaps and achieve sufficient compaction because loop formation is opposed by conformational entropy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-106, C176 are supported by simulation results (Figure 2d, Figure 2\u2014figure supplement 3) showing that diffusion of the passive subunit does not eliminate gaps or achieve >1000-fold compaction for any diffusive stepping rate. The entropic penalty for loop formation prevents gap closure, and experimental observations (C106) confirm that diffusing safety belts do not grow large loops.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C133"
+    ],
+    "result": "One-sided extrusion can generate TADs and stripes but cannot reliably generate dots (corner peaks) in Hi-C maps because gaps between LEFs and CTCF barriers prevent consistent pairing of boundaries.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110-113, C133 are supported by simulation results (Figure 3b) showing that one-sided extrusion generates TAD bodies and stripes but not dots. The mechanistic explanation (C112) that gaps between LEFs and barriers prevent boundary pairing is consistent with the model structure and is remedied by adding two-sided LEFs (C113, Figure 3d).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C122"
+    ],
+    "result": "One-sided extrusion with fast directional switching (switching time <10 s for B. subtilis, <20 s for C. crescentus) can juxtapose bacterial chromosome arms by creating effectively two-sided extrusion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-92, C122 are supported by simulation results (Figure 4d) showing that switching rates kswitchL/v > 200 produce the secondary diagonal characteristic of bacterial Hi-C maps. The calculated upper bounds on switching times (C90) are derived from experimental extrusion speeds and simulation constraints, and the inference that this makes LEFs effectively two-sided (C92) is mechanistically sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C107",
+      "C189",
+      "C191",
+      "C207"
+    ],
+    "result": "Achieving in vivo levels of mitotic compaction requires >80% two-sided LEFs, while reproducing interphase dots requires >50% two-sided LEFs, predictions consistent with recent single-molecule observations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107, C189, C191, C207 are supported by simulation results (Figure 2\u2014figure supplement 1, Figure 3d) showing the fraction of two-sided LEFs required for different phenomena. The predictions are consistent with recent experimental observations that ~80% of human condensin I and ~50% of human condensin II perform two-sided extrusion (C188, C189), providing strong validation of the model predictions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "Strongly biased loading (>100-fold) of one-sided LEFs at CTCF barriers can generate dots, but experimental evidence argues against this mechanism in vertebrate cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C115-118 are supported by simulation results showing that >100-fold biased loading can generate dots, but experimental evidence (C117, C118) demonstrates that CTCF is dispensable for cohesin loading and CTCF degradation has little effect on chromatin-associated cohesin levels. The simulations correctly identify a theoretical possibility while acknowledging that experimental data do not support this mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C193",
+      "C194",
+      "C195",
+      "C196",
+      "C197",
+      "C198",
+      "C199",
+      "C200",
+      "C201",
+      "C202"
+    ],
+    "result": "One-sided LEFs with traversal capability can achieve exponential compaction but generate pseudoknots that disrupt linear spatial ordering, and several questions about the in vivo relevance of Z-loop structures remain unexplored.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C193-202 present preliminary modeling results (Figure 2f-g, Figure 3\u2014figure supplement 7, Figure 4\u2014figure supplement 4) showing that LEF traversal can achieve compaction but with caveats. The authors acknowledge multiple uncertainties (C197-202) including unknown interaction rules, effects on chromatin vs. DNA, and restrictive traversal rules that could limit compaction. The preliminary nature and acknowledged limitations make the overall conclusion uncertain.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C158",
+      "C159",
+      "C160",
+      "C161",
+      "C162"
+    ],
+    "result": "3D attractive interactions between LEFs or between chromatin segments cannot be the primary mechanism of gap closure for mitotic or interphase chromosome organization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C158-162 are supported by simulation results (Figure 2\u2014figure supplement 5, Figure 2\u2014figure supplement 6) showing that weak attractions do not close gaps while strong attractions cause spherical collapse inconsistent with rod-like mitotic chromosomes. The logical arguments (C159-160) that 3D attractions would not maintain CTCF orientation specificity or distinguish proximal/distal boundaries are sound, and the conclusion is consistent with polymer physics theory.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C164",
+      "C165",
+      "C166",
+      "C167",
+      "C168",
+      "C169",
+      "C170",
+      "C171",
+      "C172"
+    ],
+    "result": "Transcription-mediated pushing of SMC complexes cannot be the primary mechanism for effectively two-sided extrusion in mitosis or bacterial chromosome organization, but may contribute to cohesin-dependent dot formation in specific yeast scenarios.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C164-172 are supported by experimental observations that transcription inhibition does not alter mitotic compaction (C164), only condensin and a few factors are needed for in vitro chromosome formation (C165), and bacterial arm juxtaposition is unaffected by transcription inhibition (C168). The hypothesis that transcription could assist one-sided extrusion in yeast (C167, C140-141) is speculative but mechanistically plausible and limited to specific scenarios.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C173",
+      "C174",
+      "C175",
+      "C176",
+      "C177",
+      "C178"
+    ],
+    "result": "Diffusive slip link models with purely diffusive subunits are insufficient to account for mitotic compaction, interphase TAD formation with dots, or bacterial chromosome arm juxtaposition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C173-178 are supported by simulation results (Figure 2d, Figure 3d, Figure 4c) showing that the semi-diffusive model fails to reproduce key features of chromosome organization. The lack of targeted loading in vertebrate cells (C175) and previous modeling showing slip links only work at unphysiologically high densities in bacteria (C177) provide additional support for rejecting this mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C155",
+      "C156"
+    ],
+    "result": "Loop extrusion at experimentally observed speeds (~1 kb/s) is sufficiently rapid to compact metazoan chromosomes during prophase/prometaphase and is energetically feasible within cellular ATP budgets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C151-156 are supported by calculations combining experimental measurements of extrusion speed (C151), ATPase rates, and cellular ATP levels (C153-155). The estimates show that the ATP cost (~10^8) and consumption rate (~10^5 s^-1) are well within cellular capacity (~10^9 ATP present, ~10^9 ATP/s produced), and the time required (<10 residence times) is consistent with prophase/prometaphase duration.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146"
+    ],
+    "result": "One-sided extrusion can explain some but not all yeast chromosome organization phenomena: it is consistent with lower mitotic compaction and domains without dots, but recent observations of dots in yeast Hi-C/micro-C challenge pure one-sided extrusion and suggest yeast SMC complexes may be effectively two-sided or mixed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C126-146 present a nuanced analysis comparing simulation results with yeast experimental data. The ~10-fold compaction by one-sided extrusion (C126) matches yeast mitotic chromosome measurements, and simulations reproduce domains without dots (C133) as observed in some yeast studies (C131-132). However, recent observations of dots in quiescent cells (C135) and S phase (C136) challenge pure one-sided extrusion (C134, C144), leading to the well-supported conclusion that yeast SMC complexes may be effectively two-sided or mixed (C137-138, C145-146).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C204",
+      "C205",
+      "C206",
+      "C207",
+      "C208",
+      "C209"
+    ],
+    "result": "The authors predict that SMC complexes in vivo constitute effectively two-sided motors or exhibit biased loading, with specific quantitative predictions for switching rates and fractions of two-sided extrusion, while acknowledging that various microscopic mechanisms could achieve the same macroscopic organization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C204-209 present testable predictions based on the modeling results. The specific quantitative predictions (C206: switching at least once per 10 s for bSMCs and once per minute for human SMCs; C207: >50% two-sided for cohesin, >80% for condensin; C208: bSMCs are two-sided or dimers) are directly derived from simulation constraints. The acknowledgment that various microscopic mechanisms could achieve the same outcome (C205, C209) appropriately recognizes model limitations while maintaining the core prediction.",
+    "result_type": "MAJOR"
+  }
+]

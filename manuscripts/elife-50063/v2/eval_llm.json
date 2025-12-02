@@ -1,0 +1,241 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C47",
+      "C50",
+      "C51",
+      "C52",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "An RNAi screen of 364 RNA-associated proteins identified 43 candidates affecting circadian period, including enrichment for splicing factors (17 genes) and CCR4-NOT complex members (4 genes). The screen used period length as the primary readout and employed multiple RNAi lines and GAL4 drivers with appropriate statistical cutoffs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The screen design is sound with multiple RNAi lines, two GAL4 drivers (TD2 and PD2), appropriate controls, and statistical cutoffs (2 SD from mean). The authors identified and controlled for technical artifacts (TRiP vs VDRC background differences, 40D insertion site effects). Independent validation of SMG5 (C81-C82) provides external validation. Sample sizes (4-8 flies initially, repeated 3 times) are adequate for behavioral screens.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C10",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "Psi knockdown significantly shortens circadian period by ~0.6-1.2 hours at 25\u00b0C, with effects observed using multiple non-overlapping RNAi lines (4 total) and both tim-GAL4 and Pdf-GAL4 drivers. Both PDF+ sLNvs and non-PDF circadian neurons contribute to the phenotype.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Strong evidence with multiple independent RNAi lines (C83, C88, C90), appropriate controls (C84, C85), qPCR validation of knockdown (C92), and tissue-specific analysis using GAL80 (C96-C98). Statistical significance is demonstrated across temperatures (C86-C87). The use of 4 non-overlapping RNAi lines with consistent phenotypes argues strongly against off-target effects. Sample sizes are adequate (n=35-77 flies per genotype).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "Psi overexpression with tim-GAL4 lengthens circadian period by ~0.7 hours and severely reduces rhythmicity, with effects primarily in non-PDF neurons. Overexpression with Pdf-GAL4 alone shows no significant period change.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The gain-of-function experiments complement the knockdown data, showing opposite effects on period (C99). The tissue-specific analysis (C101-C102) is consistent with knockdown results. However, the severe arrhythmicity (C100, C104) complicates interpretation and suggests potential toxicity or non-specific effects of overexpression. The period lengthening is statistically significant but the biological interpretation is limited by the arrhythmicity phenotype.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "Psi knockdown shortens the period of molecular rhythms measured by luciferase reporters (ptim-TIM-LUC and BG-LUC) by 1-1.5 hours, indicating effects on both brain and peripheral clocks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The luciferase data (C105-C107) provide molecular confirmation of behavioral phenotypes. The ptim-TIM-LUC results are statistically significant, while BG-LUC shows consistent trends across all experiments despite not reaching significance (C106-C107). The interpretation that this reflects peripheral clock effects (C108-C109) is reasonable given the abdominal origin of the signal. Multiple independent experiments strengthen the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C115",
+      "C116",
+      "C117",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147"
+    ],
+    "result": "PSI regulates thermosensitive alternative splicing of tim, promoting warm-temperature splicing patterns. Psi knockdown increases cold-favored isoforms (tim-cold, tim-sc) and decreases warm-favored isoforms (tim-M) at 25\u00b0C, but does not abolish temperature sensitivity of splicing at 18\u00b0C or 29\u00b0C.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The qPCR data (C132, C134, C137) demonstrate significant changes in tim isoform ratios with appropriate statistical testing (two-way ANOVA). The temperature shift experiments (C141-C147) elegantly demonstrate that PSI sets the baseline splicing pattern without affecting temperature responsiveness. Multiple time points (CT 3, 9, 15, 21) and biological replicates (N=3-5) provide robust data. The interpretation is logical and well-supported, though the mechanism remains unclear (C139-C140).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130"
+    ],
+    "result": "Psi knockdown alters cwo splicing patterns, reducing cwo-RA and cwo-RB isoforms while increasing cwo-RC, with overall reduction in total cwo mRNA levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The qPCR data show statistically significant changes in cwo isoforms (C126-C129) with appropriate controls and replicates (N=3-6). However, the functional significance is unclear since the authors do not pursue this further. The changes are modest and time-point specific, and the authors acknowledge they cannot exclude contributions from non-tim splicing events to the phenotype.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C11",
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C155"
+    ],
+    "result": "Psi downregulation advances the phase of evening activity by ~2.5 hours under temperature cycles (29/20\u00b0C), an effect specific to temperature entrainment and not observed under light-dark cycles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The phase advance is demonstrated with two non-overlapping RNAi lines (C151) and multiple controls (C152). The specificity to temperature entrainment (C153-C154) is well-established by comparison to LD conditions. Statistical significance is shown (Figure 4C-D). The experimental design accounts for the stable phase relationship requirement (C151). Sample sizes appear adequate (N=3-5 runs with multiple flies per run).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C148",
+      "C149",
+      "C150"
+    ],
+    "result": "Psi knockdown does not impair temperature compensation, light entrainment, or phase responses to light pulses, though a slight shift in the phase response curve is observed consistent with the shortened period.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The control experiments (C148-C149) demonstrate specificity of PSI's effects. The phase response curve data (C149) show normal responses to light pulses with appropriate statistical testing (two-way ANOVA). The observed shift (C150) is appropriately interpreted as a consequence of the period change rather than a defect in light input. These experiments strengthen the conclusion that PSI specifically affects period and temperature phase.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C156",
+      "C157",
+      "C158",
+      "C159",
+      "C160"
+    ],
+    "result": "Both period shortening and phase advance phenotypes caused by Psi knockdown are suppressed in tim0 flies rescued with timHA (a transgene lacking temperature-sensitive introns), demonstrating that PSI controls circadian period and temperature phase through tim splicing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This is the key mechanistic experiment. The genetic suppression is complete for both period (C158) and phase (C159) phenotypes. The experimental design is sound: tim0 is a null allele upstream of the splicing events (C157), and timHA lacks the relevant introns (C156). Statistical significance is demonstrated (Figure 5B-E). This provides strong evidence for the causal role of tim splicing. However, the authors acknowledge they cannot exclude small contributions from cwo or other splicing targets.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C161",
+      "C162",
+      "C163"
+    ],
+    "result": "The contribution of both PDF+ and non-PDF neurons to the period phenotype is unexpected given that sLNvs normally dictate behavioral period in constant darkness. PSI may alter the neuronal hierarchy, possibly through effects on PDF/PDFR signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "This is primarily speculation (C163) based on the unexpected finding (C161) that contradicts established knowledge (C162). While the observation is well-supported by the GAL80 experiments, the mechanistic explanation is entirely speculative with no experimental evidence. This represents an interesting observation requiring future investigation but does not constitute a supported result.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C164",
+      "C165",
+      "C166",
+      "C167",
+      "C168",
+      "C169",
+      "C170",
+      "C171",
+      "C172",
+      "C173",
+      "C174",
+      "C175",
+      "C176"
+    ],
+    "result": "The screen identified multiple candidate regulators including splicing factors, CCR4-NOT complex members, and other RNA-associated proteins, providing a resource for understanding post-transcriptional control of circadian rhythms. Future work is needed to determine direct vs. indirect effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The screen successfully identified multiple candidates (C164) with enrichment for specific functional categories (C165, C170). The discussion appropriately contextualizes findings with recent literature (C166-C169) and acknowledges limitations (C171-C173). This represents a valuable resource (C174) though most candidates require further validation. The identification of known regulators (SMG5, POP2) validates the approach.",
+    "result_type": "MAJOR"
+  }
+]

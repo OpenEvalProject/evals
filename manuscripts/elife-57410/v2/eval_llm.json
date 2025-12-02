@@ -1,0 +1,252 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "The authors developed EKAR4, a new FRET-based ERK biosensor with improved dynamic range. EKAR4 was created by swapping the positions of ECFP and Ypet fluorescent proteins within the EKAR-EV biosensor, generating a 74.5 \u00b1 2.3% increase in Y/C emission ratio in PC-12 cells (n=83) and showing significantly improved dynamic range compared to EKAR2G1 and EKAR-EV in HEK-293 cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C10 provide converging evidence for the development and characterization of EKAR4. The biosensor design is clearly described (C8), quantitative performance data with adequate sample size is provided (C9, n=83), and comparative validation against previous biosensors is shown (C10). The experimental approach is sound and the data support the conclusion of improved biosensor performance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C64",
+      "C65"
+    ],
+    "result": "EGF induces spatially distinct ERK activity dynamics in different subcellular compartments. EGF induces transient ERK activity in the cytosol and nucleus, but sustained ERK activity at the plasma membrane. The plasma membrane ERK response is statistically different from cytoplasmic and nuclear responses, with slower kinetics of ERK activity accumulation at the plasma membrane.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C15, C64-C65 collectively demonstrate spatially distinct ERK dynamics using targeted EKAR4 biosensors. The data show clear differences in temporal patterns between compartments with statistical validation (C14) and quantitative metrics (SAM40). Sample sizes are adequate (n=71-83 cells) and the findings are internally consistent across multiple figures. This represents a core finding of the manuscript.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C66"
+    ],
+    "result": "The sustained plasma membrane ERK activity is due to continued active ERK phosphorylation rather than lack of dephosphorylation. Addition of ERK inhibitor SCH772984 or MEK inhibitor U0126 at 10 or 40 minutes post-EGF stimulation causes immediate changes in pmEKAR4 signal slope, indicating that ERK and MEK remain actively phosphorylating the biosensor at these time points.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C20, C66 provide strong evidence through pharmacological inhibition experiments. The immediate response to inhibitor addition at multiple time points (10 and 40 min) demonstrates ongoing kinase activity. DMSO controls are included (Figure 2\u2014figure supplement 1C,D), and both ERK and MEK inhibitors show consistent effects. The inference that sustained signal reflects active phosphorylation (C18, C20, C66) is well-supported by the experimental data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "Biochemical fractionation experiments confirm the presence of a continuously phosphorylated pool of ERK at the plasma membrane. ERK phosphorylation is transient in the cytoplasm but remains equally phosphorylated at the plasma membrane between 15 and 40 minutes after EGF treatment, as shown by five independent replicates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C23 are supported by orthogonal biochemical validation (Figure 2B,C) with adequate replication (n=5 independent replicates). The fractionation approach provides independent confirmation of the biosensor data. The inference of a continuously phosphorylated pool (C23) is reasonable given the sustained phosphorylation levels between 15-40 min. However, the manuscript notes that the decrease in phospho-ERK by immunoblot is faster than EKAR signal, likely due to phosphatase activity differences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C67"
+    ],
+    "result": "EGF induces activation of both Rap1A and Rap1B at the plasma membrane in PC12 cells. Using Rap1-FLARE biosensors and TIRF-based EGFP-RalGDS translocation assays, the authors demonstrate that EGF induces Rap1A (25.4 \u00b1 4.7%, n=11) and Rap1B (26 \u00b1 3.4%, n=8) activation, which is completely abrogated by Rap1GAP or GGTI-298.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C34, C67 provide multiple lines of evidence for EGF-induced Rap1 activation using complementary approaches (FRET biosensors and TIRF translocation assays). Sample sizes are modest but adequate for biosensor studies. The specificity is validated through Rap1GAP and GGTI-298 inhibition. This addresses a controversial point in the literature and provides clear evidence for Rap1 activation by EGF in PC12 cells.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C68"
+    ],
+    "result": "Rap1 is critically involved in regulating plasma membrane ERK activity but does not contribute to cytosolic or nuclear ERK activities. Multiple approaches to inhibit Rap1 (Rap1GAP, Rap1B N17, GGTI-298) dramatically dampen plasma membrane ERK activity while having no effect on cytosolic ERK activity, indicating plasma membrane-specific regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C41, C68 demonstrate Rap1's role through multiple independent inhibition strategies with consistent results. The spatial specificity (plasma membrane vs. cytosol) is clearly shown (C35-C37). However, the authors acknowledge that Rap1 inhibition does not completely abolish plasma membrane ERK response (C42), suggesting additional regulatory mechanisms. The convergence of multiple approaches strengthens the conclusion despite incomplete inhibition.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C69"
+    ],
+    "result": "Ras contributes primarily to the initial, but not sustained, component of plasma membrane ERK activity. HRas-N17 completely abolishes cytosolic ERK activity but only alters (not abolishes) plasma membrane ERK activity. The amplitude of pmEKAR4 at 40 min is not different between HRas-N17 expressing cells and controls, indicating Rap1, not Ras, is responsible for late-phase plasma membrane ERK activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C46, C69 provide evidence for differential roles of Ras and Rap1 in plasma membrane ERK regulation. The complete abolition of cytosolic ERK by HRas-N17 (C43) contrasts with the partial effect on plasma membrane ERK (C44), and the lack of effect at 40 min (C45) supports the temporal distinction. The inference that Rap1 is responsible for late-phase activity (C46, C69) is reasonable given the data, though it relies on the assumption that HRas-N17 effectively inhibits all Ras isoforms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Plasma membrane-targeted EMBer (pmEMBer) specifically inhibits ERK activity at the plasma membrane without affecting cytosolic or nuclear ERK activity. This demonstrates the spatial specificity of the inhibition tool and validates its use for functional studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C49 demonstrate the spatial specificity of pmEMBer inhibition through targeted biosensor measurements in different compartments. The data show selective inhibition at the plasma membrane (C47) with no effect in cytosol (C48) or nucleus (C49), validating the tool for subsequent functional experiments. This is critical for establishing causality in the morphology and protrusion experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Inhibition of plasma membrane ERK activity causes dramatic changes in cell morphology. Cells expressing pmEMBer shift from primarily circular (58% with minor:major axis ratio >0.8 in controls) to primarily elliptical (42% with ratio <0.6 with pmEMBer), indicating that plasma membrane ERK activity has an important role in controlling cell morphology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C53 provide quantitative morphological analysis showing clear differences between control and pmEMBer-expressing cells. The shift in axis ratio distribution is substantial and well-documented. The inference that plasma membrane ERK controls morphology (C53) is reasonable given the dependence on pmEMBer expression, though the sample sizes for the morphology analysis are not explicitly stated in the claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C70",
+      "C71"
+    ],
+    "result": "Inhibition of plasma membrane ERK activity leads to enhanced membrane protrusion dynamics. Under pmERK-inhibited conditions, 70% of cells have protrusions longer than 5 \u00b5m (vs. 28% in controls) and 75% have protrusions lasting longer than 15 min (vs. 25% in controls), demonstrating that plasma membrane ERK activity regulates protrusion dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C57, C70-C71 provide quantitative analysis of protrusion dynamics using kymograph analysis. The differences between control and pmEMBer conditions are substantial and clearly documented. Sample sizes are adequate (n=103 control, n=57 pmEMBer from Figure 4D). The conclusion that plasma membrane ERK regulates protrusion dynamics is well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Plasma membrane ERK activity inhibits Rac1 activation. Using the Rac1-2G biosensor, a robust 6.4 \u00b1 0.7% increase in Rac1 activity is observed under pmERK-inhibited conditions (n=24) but not under control conditions (n=19), indicating that endogenous plasma membrane ERK inhibits Rac1 activation, which could contribute to regulation of membrane protrusion dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C63 provide mechanistic insight linking plasma membrane ERK to Rac1 regulation. The Rac1-2G biosensor data show clear activation only when plasma membrane ERK is inhibited, with adequate sample sizes. The inference that pmERK inhibits Rac1 (C62) is well-supported. The connection to protrusion dynamics (C63) is reasonable given prior literature (C58-C59) and the observed phenotypes, though the causal chain could be strengthened with additional experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "The authors propose that EGF stimulates plasma membrane ERK activity to suppress Rac1 and prevent unwanted membrane protrusions and polarization, and that sustained ERK activity at the plasma membrane is required for this effect. They conclude that spatial and temporal dynamics are intricately linked to encode specific signaling information and regulate distinct cellular processes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C72-C74 represent interpretive conclusions that extend beyond the direct experimental evidence. While the data support that plasma membrane ERK inhibits Rac1 and affects protrusions, the claim that this 'prevents unwanted' protrusions (C72) is speculative. The requirement for sustained activity (C73) is explicitly noted as speculative ('likely requires'). The broader conclusion about spatiotemporal encoding (C74) is a reasonable synthesis but represents an interpretive framework rather than a directly tested hypothesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "Background claims establishing that ERK is activated by diverse extracellular signals, that different signals induce distinct temporal patterns of ERK activation, and that ERK substrates are found in multiple subcellular compartments including the Golgi, mitochondria, and plasma membrane.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C7 represent established background knowledge supported by citations to prior literature. These provide context for the current study but are not novel findings. The claims are appropriately cited and represent accurate summaries of the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Background claims establishing that Rap1 can interact with B-Raf to produce sustained ERK activity, that NGF-induced sustained ERK in PC12 cells is mediated through Rap1, that Ras activates rapid/intense ERK while Rap1 induces slow/steady ERK, and that Rap1 needs to be localized near the plasma membrane to activate ERK.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C28 represent prior literature that motivates the current study's focus on Rap1. These are appropriately cited and provide important context for why the authors investigated Rap1's role in plasma membrane ERK activity. The claims accurately represent the cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C58",
+      "C59"
+    ],
+    "result": "Background claims establishing that Rac1 is a known ERK substrate and that EGF-induced Rac1 phosphorylation by ERK in COS-7 cells leads to Rac1 inhibition and removal from the plasma membrane.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C59 cite prior literature (Tong et al., 2013) that provides mechanistic context for the observed Rac1 regulation by plasma membrane ERK. These background claims are appropriately used to interpret the current findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C42"
+    ],
+    "result": "The authors acknowledge that Rap1 inhibition does not completely abrogate plasma membrane ERK response, suggesting additional regulatory mechanisms beyond Rap1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C42 represents an important caveat noted by the authors based on their experimental observations. This acknowledgment of incomplete inhibition is appropriate and suggests complexity in the regulatory mechanisms. This honest assessment strengthens rather than weakens the overall conclusions.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,285 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2"
+    ],
+    "result": "The authors identify a gap in current understanding: while signalling pathways leading to post-synaptic plasticity have been studied, a unified picture of how multiple biochemical pathways collectively shape neocortical plasticity is missing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1 and C2 establish the motivation for the work by describing the current state of knowledge (C1) and identifying a specific gap (C2). These are standard background claims supported by the authors' assessment of the literature and represent well-established context in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "The authors constructed a biochemically detailed computational model of post-synaptic plasticity by integrating components from existing models, including CaMKII, PKA, and PKC pathways, GluR1 and GluR2 dynamics, and a statistical AMPA-receptor-tetramer model for estimating synaptic conductance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C4, C20-C22 describe the model construction methodology with appropriate citations to source models. The integration approach is clearly documented in the Methods section and Figure 1, and the statistical tetramer model (Equations 1-5) is mathematically specified. The model construction is well-supported by the provided documentation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "The model predicts differential Ca2+ sensitivity across signalling pathways: Ca2+ rapidly binds to buffers and pumps (95% saturation in 1-2s), while CaM activation is slower (95% saturation in 32-53s). Large Ca2+ flux is required for CaMKII pathway activation, relatively large flux for PKA, and relatively small flux for PKC pathway activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C38 describe simulation results shown in Figure 2 characterizing pathway activation kinetics. The predictions are internally consistent with the model structure and parameters, and C30 notes consistency with experimental literature. The differential Ca2+ sensitivity provides mechanistic insight into how different stimulation protocols activate distinct pathways.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "The model reproduces frequency-dependent plasticity: 4xHFS induces LTP through increased GluR1 insertion and decreased GluR2, while LFS induces LTD primarily through GluR2 endocytosis. Both forms of plasticity require the presence of both GluR1 and GluR2 subunits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C48 describe simulation results shown in Figure 3 and supplements. The model successfully reproduces the expected direction of plasticity (LTP for HFS, LTD for LFS) and the mechanistic predictions regarding differential pathway activation are consistent with the Ca2+ sensitivity results. The requirement for both receptor subtypes (C47-C48) is demonstrated in Figure 3\u2014figure supplement 1.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "The model predicts specific neuromodulatory dependencies: blocking Ca2+ or \u03b2-adrenergic ligands abolishes HFS-induced LTP, while blocking mGluR/M1 receptors reduces LFS-induced LTD and counterintuitively reduces HFS-induced LTP amplitude by preventing GluR2 endocytosis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C57 describe simulation results shown in Figure 4 examining pathway blockade effects. The predictions are mechanistically explained by the model structure, with the counterintuitive LTP reduction (C56-C57) explained by changes in GluR1 ratio affecting homomeric tetramer formation. The logic is internally consistent with the tetramer model (Equation 5).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C5",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "The model reproduces neuromodulator-gated spike-timing-dependent plasticity (STDP) as observed in visual cortex layer 2/3 pyramidal cells, with \u03b2-adrenergic input enabling ISI-dependent LTP and cholinergic input enabling LTD, both requiring the presence of GluR1 and GluR2 subunits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C58-C68 describe STDP simulation results shown in Figure 5, comparing model predictions with experimental data from Seol et al., 2007. The model qualitatively reproduces the neuromodulator-gated STDP patterns, though quantitative discrepancies are noted in the Discussion. The requirement for both receptor subtypes is demonstrated in Figure 3\u2014figure supplement 1C-D.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "The model predicts that STDP depends on the number of post-synaptic spikes per burst and SK channel activity, with plasticity outcome more strongly correlated with total Ca2+ influx (correlation coefficient 0.96) than peak Ca2+ amplitude (correlation coefficient 0.53).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C74 describe additional STDP analyses shown in Figure 6. The SK channel mechanism (C70-C72) provides a mechanistic explanation for the spike number effects. The correlation analysis (C73-C74) is quantitatively supported by Figure 6\u2014figure supplement 1, though this represents a model prediction rather than experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Parameter exploration reveals that plasticity type and magnitude depend critically on GluR1 ratio, NCX concentration, and PKA-pathway coefficients. Low GluR1 ratio enables strong LTD, medium-high ratios enable LTP, and BCM-type plasticity requires moderate GluR1 ratios (0.40-0.57) and NCX concentrations (0.7-1.4\u00d7 default).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C81 describe parameter exploration results shown in Figure 7. The analysis systematically explores 150,000 parameter combinations and identifies key determinants of plasticity outcomes. The classification into 16 plasticity classes and identification of parameter ranges for specific plasticity types is well-documented, though the biological relevance of all parameter combinations is uncertain.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "Sensitivity analysis shows the model is robust to small (\u00b110%) parameter changes, with most changes causing small deviations in LTP/LTD magnitude. However, 10 species concentrations and 12 reaction rates cause notable (>15%) changes, particularly parameters affecting Ca2+ dynamics, GluR1 activity, or PKA-pathway signalling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C85 describe sensitivity analysis results shown in Figure 8. The analysis systematically tests \u00b110% changes in 270 parameters (47 concentrations + 223 reaction rates). The finding that no single parameter change abolishes plasticity (C84) supports model robustness, while identification of sensitive parameters (C83) provides insight into critical model components.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C6",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C92"
+    ],
+    "result": "The model can be fit to experimental data from multiple cortical areas by varying protein concentrations. Fitting success varied across datasets (0.2-3.9% of tested parameters acceptable), and fitted parameters reflect known pathway dependencies (e.g., higher GluR1 ratio in LTP-expressing vs LTD-expressing neurons).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C86-C89, C92 describe model fitting results shown in Figure 9 and Table 2. The model successfully fits 9 of 11 datasets within one standard deviation, with 2 datasets (VC-1, VC-2) requiring exclusion of CaMKII-blocked conditions. The fitted parameters show biologically meaningful patterns (C92), though the low acceptance rates (C88-C89) suggest tight constraints or potential model limitations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "Using fitted models, the authors predict pathway-specific effects of kinase inhibition across cortical areas: CaMKII inhibition impairs LTP only in EC horizontal pathway, PKA inhibition impairs LTP in most areas, and PKC inhibition transforms LTD to LTP and impairs some forms of LTP.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C99 describe predictions from fitted models shown in Figure 10. The predictions are internally consistent with the fitted parameters and model structure. Claim C94 notes validation against data not used in fitting (Ma et al., 2008), supporting model validity. However, C96-C97 are prospective predictions requiring experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C7",
+      "C107"
+    ],
+    "result": "The model explains how plasticity depends on protein availability, predicting that LTP can be impaired by over- or underexpression of multiple proteins including AC1, I-1, PDE4, PDE1, GluR1, CaM, and altered ATP concentration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7 and C107 are supported by the parameter exploration (Figure 7) and sensitivity analysis (Figure 8B) results. The model systematically demonstrates how protein concentration changes affect plasticity outcomes, providing mechanistic explanations for the diversity of plasticity across cell types.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C8",
+      "C105"
+    ],
+    "result": "The authors propose the model can be used to study mental disorder-associated impairments of cortical plasticity and explain discrepancies in experimental data regarding plasticity diversity across cell types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C8 and C105 are prospective statements about potential model applications. While the model's ability to vary protein concentrations and reproduce diverse plasticity outcomes provides a foundation for such studies, no actual disease modeling or experimental discrepancy resolution is demonstrated in the manuscript. These remain speculative applications requiring future validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C39",
+      "C40",
+      "C41",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C106"
+    ],
+    "result": "The authors provide extensive background on cortical plasticity, citing established knowledge about LTP/LTD discovery, BCM theory, pathway requirements in different cortical areas, receptor subunit roles, and limitations of previous models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C27, C39-C41, C100-C104, C106 are background claims supported by appropriate citations to the literature. These establish the scientific context and justify the need for the current model. The claims accurately represent cited work and established knowledge in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C49",
+      "C50"
+    ],
+    "result": "The model reproduces LTP and LTD using an alternative tetramer formation rule (dimer-of-like-dimers) with modified GluR1:GluR2 ratio (35:65), and predicts LTP for 6xHFSt and LTD for LFS-1Hz consistent with somatosensory cortex data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C50 demonstrate model robustness to assumptions about AMPAR assembly. Figure 3\u2014figure supplement 2 shows successful reproduction of plasticity with alternative tetramer rules, and Figure 3\u2014figure supplement 3 shows agreement with experimental data using realistic NMDAR-conducted Ca2+ transients. This addresses potential concerns about model-specific assumptions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C108",
+      "C109"
+    ],
+    "result": "The model suggests total Ca2+ influx is a better biomarker for plasticity than peak Ca2+ amplitude or transient duration, based on correlation analysis showing stronger correlation with total Ca2+ (r=0.96) than peak amplitude (r=0.53).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C109 are supported by the correlation analysis in Figure 6\u2014figure supplement 1 and are consistent with experimental observations (C73). However, C109 is somewhat speculative as it proposes a new biomarker based solely on model predictions. Experimental validation would strengthen this claim, though the model-based evidence is compelling.",
+    "result_type": "MAJOR"
+  }
+]

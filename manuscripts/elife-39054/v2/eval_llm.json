@@ -1,0 +1,441 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C31",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146"
+    ],
+    "result": "The study employed a comprehensive multi-omics experimental design to characterize the cellular response to ER stress and oxidative stress. HeLa cells were treated with tunicamycin (to induce ER stress) or hydrogen peroxide (to induce oxidative stress) at four time points (0, 1, 4, 8 hours), and samples were analyzed using RNA-seq, ribosome footprinting, protein occupancy profiling, and mass spectrometry to measure RNA abundance, translation, RNA-protein interactions, and protein levels for >7,000 genes in the core dataset.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The experimental design is clearly described with appropriate methods, controls, and validation. Cell line authentication (C145), mycoplasma testing (C146), and consistent sample collection procedures (C142) support data quality. The multi-layered approach integrating four complementary data types (C23-C26) provides comprehensive coverage of gene expression regulation at multiple levels.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C32",
+      "C33"
+    ],
+    "result": "The study applied PECA (Protein Expression Control Analysis) to extract significant regulatory events at specific levels by 'subtracting' changes in transcript abundance to isolate the contribution of translation and degradation to protein expression changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "PECA is an established computational tool (C32 cites Teo et al., 2018; 2014) designed specifically for this type of analysis. The method is appropriate for deconvolving interdependent expression changes across multiple regulatory layers (C33). The approach is validated through identification of known UPR-regulated genes (C51-C52).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Tunicamycin treatment successfully induced ER stress in HeLa cells, as evidenced by increased phosphorylation of PERK and eIF2\u03b1, modest increases in ROS levels, peak UPR gene response at 4 hours, and maintenance of housekeeping gene expression indicating viable, non-apoptotic cells. Hydrogen peroxide treatment induced stronger ROS increases but more modest oxidative stress marker responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple independent lines of evidence confirm successful stress induction: Western blot data showing PERK/eIF2\u03b1 phosphorylation (C40), ROS measurements (C37-C39), temporal analysis of 143 known UPR genes (C43), and housekeeping gene stability (C44). The data are internally consistent and match expected stress response patterns. The comparison between tunicamycin and H2O2 treatments is appropriate for distinguishing ER-specific from general oxidative stress responses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "XBP1 splicing, a hallmark of ER stress, was successfully detected with the spliced isoform (sXBP1) dominating by 8 hours after tunicamycin treatment. The spliced isoform was detected in both RT-qPCR and RNA-sequencing data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "XBP1 splicing is a well-established early marker of ER stress (C45 cites Uemura et al., 2009). Detection in both RT-qPCR and RNA-seq (C47) provides orthogonal validation. The temporal pattern (C46) is consistent with known UPR kinetics. This serves as an important positive control for the experimental system.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "The study validated its analytical approach by identifying significant translation upregulation for eight genes with known uORF-mediated translation increase during ER stress (ATF4, GADD34, HSPA5, ATF3, ATF5, DDIT3, IBTK, IFRD1), with most also showing concordant increases in RNA concentrations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The identification of known uORF-regulated genes (C48-C52) serves as critical validation of the PECA analysis method. These genes are well-established in the literature (C48, C49 cite multiple studies). The detection of significant translation upregulation (FDR < 0.2) in all three replicates (C51) demonstrates reproducibility. The concordant RNA increases for most genes (C52) are consistent with known biology.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "ER stress elicits widespread changes in gene expression: translation repression affects ~1/6 of genes (1,189 genes), but many genes also increase in translation (746 genes). At the transcript level, twice as many genes are transcriptionally upregulated (1,012) compared to downregulated (590).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The quantitative analysis of regulatory events across 7,011 core genes (C53-C55) is supported by the comprehensive dataset and PECA analysis. The finding that many genes increase in translation during ER stress (C54) expands beyond the canonical model of global translation shutdown. The asymmetry in transcriptional regulation (C55) is a novel observation. Statistical significance is established through PECA (FDR < 0.2).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Cluster 11 genes, enriched in UPR pathways (p<0.0001), show concordant upregulation in both transcription and translation (71 of 302 genes). This cluster also encompasses aminoacyl-tRNA synthetases and serine biosynthesis enzymes, and is enriched for targets of established UPR regulators (ATF4, ATF6).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The clustering analysis identifies a coherent set of co-regulated genes (C56-C59). Statistical significance is established (p<0.0001 for UPR enrichment, p<3\u00d710^-9 for aminoacyl-tRNA synthetases, p<3\u00d710^-6 for serine biosynthesis). Upstream regulator analysis (C59) provides mechanistic insight. The concordant regulation pattern (C57) is biologically meaningful and distinguishes this cluster from others showing discordant regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C64"
+    ],
+    "result": "Many DNA repair genes (e.g., NBN, MRE11A, RAD51) show discordant regulation during ER stress: transcriptionally induced but translationally repressed. This counterbalancing regulation is more common than previously thought, with transcription induced early but translation repressed throughout mid-to-late stress phases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The discordant regulation of DNA repair genes (C60) is clearly demonstrated in the data (Figure 4A,B). The temporal analysis (C64) shows transcription induction occurs early while translation repression persists, suggesting transcriptional priming. The broader analysis (C61) indicates this pattern is statistically significant across many genes. This finding challenges the simple model of coordinated regulation and is supported by multiple independent examples.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Temporal analysis reveals that most transcripts change early (1 hour) during ER stress, while post-transcriptional regulation occurs both early and late. UPR genes change early in translation, while other genes change later. The late response is more pronounced for protein expression than ribosome footprinting data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The temporal analysis (C65-C67) is based on comprehensive time-course data (0, 1, 4, 8 hours) across all four data types. The observation that transcriptional changes occur early while post-transcriptional changes span early and late phases (C65-C66) expands the canonical model. The difference between ribosome footprinting and protein data (C67) likely reflects protein half-life effects and is biologically plausible.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "The response to hydrogen peroxide is qualitatively similar to ER stress but much less pronounced. Only ~10% of regulatory events are shared between treatments, though this overlap is statistically significant (p<0.05). The shared response is dominated by transcription and RNA degradation changes, with enrichment in DNA repair pathways (p<0.01).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The comparison between tunicamycin and H2O2 treatments (C68-C72) is well-controlled and statistically rigorous. The modest overlap (C69) with statistical significance (C70) indicates genuine shared stress responses. The enrichment of DNA repair genes in the shared response (C72) is biologically meaningful. The dominance of transcriptional regulation in the shared response (C71) versus translation-dominated ER-specific response provides mechanistic insight.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Genes encoding ER-localized proteins show significant RNA upregulation during tunicamycin treatment (p<0.009). Conversely, plasma membrane proteins show reduced non-ribosomal protein binding to 3' UTRs (p<0.002), with many being transmembrane proteins requiring ER processing and N-linked glycosylation (p<0.0001).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The subcellular localization analysis (C73-C75) reveals organelle-specific regulatory patterns. The upregulation of ER protein genes (C73) is expected and validates the approach. The reduced 3' UTR binding for plasma membrane proteins (C74) is a novel finding with mechanistic implications. The enrichment of N-glycosylated proteins (C75) is particularly relevant given tunicamycin's mechanism of action (blocking N-glycosylation). Statistical significance is established for all observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Mitochondrial proteins are the only category significantly upregulated in translation during ER stress (p<0.0003), with enrichment in oxidative phosphorylation Complex I-IV subunits (p<0.0001). The TISU element is highly enriched at translation initiation sites of Complex I-IV genes (E-value=1.7\u00d710^-8) but not ATP synthase or TCA cycle genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The mitochondrial translation upregulation (C76-C77) is a major novel finding with strong statistical support. The TISU element enrichment analysis (C79-C80) provides a mechanistic explanation for selective translation during stress. The specificity for Complex I-IV versus ATP synthase/TCA cycle (C80) indicates precise regulatory control. The additional mitochondrial components showing increased translation (C81) support a coordinated mitochondrial response.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "Translation regulation suggests metabolic rerouting from the TCA cycle to one-carbon metabolism for NADH production. Serine biosynthesis genes show both transcriptional induction (known from prior studies) and additional translational upregulation (new finding). This pattern is specific to mitochondrial one-carbon metabolism enzymes, not cytosolic homologs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The metabolic rerouting hypothesis (C82) is supported by coordinated changes in multiple pathways. The additional translational control of serine biosynthesis (C84) beyond known transcriptional regulation (C83) is a novel finding. The specificity for mitochondrial versus cytosolic enzymes (C85) strengthens the interpretation. However, this remains largely correlative; direct metabolic flux measurements would strengthen the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C86",
+      "C87"
+    ],
+    "result": "TIM/TOM complexes and respiratory-chain assembly factors show discordant regulation (decreased mRNA, increased translation) similar to Complex I-IV, with TIMM17A as an exception showing protein decrease consistent with prior findings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The discordant regulation of TIM/TOM and assembly factors (C86) parallels the Complex I-IV pattern, suggesting coordinated regulation of oxidative phosphorylation machinery. The TIMM17A exception (C87) is consistent with Rainbolt et al., 2013, providing validation. This coordinated regulation across multiple mitochondrial protein import and assembly components supports a systems-level response.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "Aminoacyl-tRNA synthetases show substantial transcription and translation upregulation during ER stress. The study identified ~80 alternative splicing events among 20 cytosolic aminoacyl-tRNA synthetases, with a distribution similar to genome-wide patterns (exon skipping most frequent).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The aminoacyl-tRNA synthetase analysis (C88-C93) reveals extensive alternative splicing in this gene family. Prior observations of post-transcriptional regulation without explanation (C89) are now extended with specific splicing events (C92). The known moonlighting functions (C90-C91) provide biological context. The similarity to genome-wide splicing patterns (C93) validates the detection method. This represents a comprehensive characterization of a functionally important gene family.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "WARS (tryptophanyl-tRNA synthetase) shows stress-dependent alternative splicing producing mini-TrpRS. Exon II skipping increases at 1 hour post-tunicamycin in RNA and ribosome footprinting data, confirmed by decreased full-length protein. This correlates with increased inclusion of mutually exclusive exon -Ia, with significant bias toward mini-TrpRS production when exon -Ia is used (p<0.001).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The WARS alternative splicing analysis (C94-C98) is supported by multiple data types: RNA-seq, ribosome footprinting, and proteomics. The temporal pattern (C94) is consistent across replicates. The correlation between 5' UTR exon choice and coding exon skipping (C97-C98) suggests coupled regulation. The known anti-proliferative function of mini-TrpRS (C96) provides biological rationale. This represents a detailed mechanistic case study with statistical support (p<0.001).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "Protein footprints are distributed symmetrically around conserved RNA secondary structures in 3' UTRs. The most significant motif is the poly(A) signal (AAUAAA, E-value=1.40\u00d710^-42), located 10-20 nucleotides downstream of structures. Other motifs include predicted Pumilio and Sex-Lethal binding sites, with the SXL motif likely occupied by ELAVL1 in human cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The RNA structure analysis (C99-C103) integrates protein occupancy profiling with predicted secondary structures. The symmetric distribution (C99) suggests direct protein-structure interactions. The poly(A) signal enrichment (C100-C101) with specific spacing is consistent with Wu and Bartel, 2017. The inference about ELAVL1 occupying the SXL motif (C103) is reasonable given the absence of human SXL homolog and ELAVL1's known AU-rich element binding. However, protein identities remain to be experimentally confirmed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "Five conserved 3' UTR structures show significantly increased protein binding during ER stress (adjusted p<0.01), all within UPR genes including three molecular chaperones (HSP90B1, HSPA5, CALR). Increased binding is observed after 8 hours of tunicamycin treatment, independent of RNA level changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The stress-dependent RNA-protein interactions (C104-C106) represent a novel regulatory mechanism. The restriction to established UPR genes (C105) is striking and unlikely to be coincidental. The independence from RNA level changes (C106) indicates post-transcriptional regulation. However, the identities of the binding proteins remain unknown, and the functional consequences require experimental validation. The statistical significance (adjusted p<0.01) accounts for multiple testing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "The study identifies many genes with translation-independent transcription increases during ER stress, expanding beyond known cases. Transcription regulation occurs early while post-transcriptional regulation occurs both early and late. Key UPR regulators show concordant transcription and translation upregulation, with translation increasing early (acute phase) followed by later transcription increases, suggesting stepwise amplification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The comprehensive identification of translationally regulated genes (C107-C108) significantly expands the known repertoire beyond the few well-characterized examples. The temporal analysis (C109-C111) reveals a sophisticated adaptive response with early translation changes followed by transcriptional amplification. This challenges the simple model of global translation shutdown and provides evidence for dynamic, multi-layered regulation. The findings are supported by extensive data across multiple time points and replicates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "A statistically significant and unexpectedly large number of genes show discordant transcriptional and post-transcriptional regulation. DNA repair genes are transcriptionally induced but translationally unchanged or decreased, consistent with suppressed double-strand break repair during ER stress via PERK-mediated pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The widespread discordant regulation (C112-C113) is a major finding that challenges simple models of coordinated gene expression. The DNA repair gene example (C113) is well-supported by data and consistent with prior studies showing suppressed DNA repair during ER stress (C114 cites Yamamori et al., 2013; Oommen and Prise, 2013). The transcriptional priming hypothesis provides a plausible explanation for this seemingly counterintuitive pattern.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "The results provide direct evidence that translation regulation, in addition to transcription, reroutes energy metabolism during ER stress. Mitochondrial genes show translation upregulation, specifically for one-carbon metabolism (SHMT2, MTHFD2, ALDH1L2) and serine biosynthesis (PHGDH, PSAT1, PSPH). The cell employs serine biosynthesis and one-carbon metabolism to generate ATP instead of glycolysis and TCA cycle.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The metabolic rerouting model (C115-C119) integrates multiple observations into a coherent hypothesis. The translation upregulation of specific metabolic enzymes (C117) is well-documented. The proposed mechanism (C118-C119) is biologically plausible and supported by Vazquez et al., 2011. However, this remains largely correlative; direct measurements of metabolic fluxes, NADH levels, or ATP production would strengthen the conclusion. The claim of 'first direct lines of support' (C115) may be overstated without metabolic validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128"
+    ],
+    "result": "The metabolic rerouting is linked to increased glutathione (GSH) demand during ER stress. GSH maintains redox balance and supports disulfide bond formation. Translation regulation supports GSH availability through multiple routes: SHMT2 (glycine synthesis), SEC61 (GSH uptake into ER), and GPX1 (H2O2 reduction). This directs metabolism from glycolysis/TCA cycle to serine biosynthesis/one-carbon metabolism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The GSH-centered hypothesis (C120-C128) is plausible and integrates multiple observations, but remains speculative. The claim is explicitly presented as a suggestion (C120). While individual components are supported (GSH role in redox balance C121, ROS production during protein folding C122, protein disulfide isomerase induction C123, SHMT2/SEC61/GPX1 functions C124-C126), the overall model lacks direct experimental validation. GSH measurements, redox state assessment, or functional perturbation experiments would be needed to support this hypothesis. The inference (C127) is reasonable but not definitively demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136"
+    ],
+    "result": "mRNA regions in 3' UTRs with conserved secondary structures are preferentially occupied by proteins. Stress-dependent RNA-protein interactions coincide with translation induction for chaperones HSP90B1, HSPA5, and CALR. These mRNAs are known to be released from the ER and translated in the cytosol during acute ER stress, but the regulators of this relocalization are unknown.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The RNA structure-protein interaction analysis (C131-C136) identifies a potential regulatory mechanism for UPR chaperones. The correlation between increased 3' UTR protein binding and translation upregulation (C132-C134) is well-documented. The known ER-to-cytosol relocalization (C135) and unknown regulators (C136) provide biological context. However, the causal relationship between protein binding and translation/relocalization remains to be established. The protein identities are unknown, limiting mechanistic interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "The introduction establishes the biological context for the study, describing proteostasis as a major cellular challenge involving integrated regulation at multiple levels (transcription, translation, folding, degradation). The UPR affects all levels of gene expression through PERK/eIF2\u03b1 phosphorylation, IRE1/XBP1 activation, ATF6 cleavage, and proteasomal degradation. ER stress is interconnected with oxidative stress and energy metabolism, and is relevant to cancer, diabetes, and neurodegeneration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The background claims (C1-C20) are well-supported by extensive citations to established literature. These claims provide essential context for interpreting the experimental results. The interconnections between ER stress, oxidative stress, and metabolism (C15-C20) justify the experimental design comparing tunicamycin and H2O2 treatments. The description of known UPR mechanisms (C6-C12) provides benchmarks for validating the dataset.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "The study employed ribosome footprinting to estimate translation efficiency and protein occupancy profiling to monitor non-ribosomal protein binding to UTRs. These proteins are candidate regulators affecting translation, RNA stability, and localization, though protein occupancy profiling does not reveal protein identities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The methodological descriptions (C27-C30) accurately characterize the techniques used. Ribosome footprinting as a translation efficiency measure (C27) is well-established (Ingolia et al., 2009, 2011). Protein occupancy profiling for UTR-binding proteins (C28-C29) is appropriately applied (Baltz et al., 2012; Castello et al., 2016). The limitation regarding protein identity (C30) is honestly acknowledged and represents an important caveat for interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "HSPA5 (BiP/GRP78), a key ER stress chaperone, is significantly upregulated in transcription, translation, and non-ribosomal protein binding to UTRs during ER stress. Despite these increases, protein levels change little, consistent with HSPA5's known short half-life.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The HSPA5 example (C34-C36) illustrates the multi-layered regulation captured by the dataset. The upregulation at multiple levels (C35) is well-documented in the data. The apparent paradox of increased synthesis but stable protein levels is explained by the known short half-life (C36, citing Shim et al., 2018), demonstrating counterbalancing regulation. This serves as a good example of the complexity revealed by the integrated dataset.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C137",
+      "C138",
+      "C139"
+    ],
+    "result": "Many genes involved in neurodegenerative diseases (Alzheimer's, Parkinson's, Huntington's) show translation induction during ER stress. Serine biosynthesis and one-carbon metabolism pathways have strong links to cancer. Mild ER stress exposure can enhance cellular stress responses and protect against disease phenotypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The disease relevance claims (C137-C139) connect the findings to biomedical significance. The neurodegenerative disease gene induction (C137) is supported by data. The cancer links (C138) and stress preconditioning effects (C139) are supported by appropriate citations. These claims provide important context for the translational potential of the findings, though they represent discussion/speculation rather than direct experimental results from this study.",
+    "result_type": "MINOR"
+  }
+]

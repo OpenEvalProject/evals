@@ -1,0 +1,219 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C75"
+    ],
+    "result": "The authors established a semi-natural experimental system where longhorn crazy ants (P. longicornis) cooperatively transported a 1 cm radius silicon ring through randomized cube mazes (70\u00d750 cm arena with 0.8\u00d70.8 cm cubes). Mazes were considered solved if the load reached the nest-side edge within 8 minutes, compared to <1.5 minutes without obstacles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C16 and C68-C75 provide comprehensive methodological details including experimental setup, materials, image processing, and simulation frameworks. The experimental design is clearly described with appropriate controls (no-cube baseline), though some technical adjustments (C75: 0.1 cm radius correction) are based on post-hoc calibration rather than a priori validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "Ants successfully solved mazes up to 55% cube coverage (300 cubes), approaching the system's percolation threshold of 60% coverage, beyond which maze solvability sharply decreases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C19 are supported by experimental data (Figure 1, Figure 1\u2014figure supplement 1b) showing ant performance across cube densities and the percolation threshold determination. The connection to percolation theory provides appropriate theoretical context for interpreting the results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "At intermediate cube densities with composite obstacles, ants significantly outperformed the pinball model (a physics-based biased random walk simulation). The pinball model itself outperforms discrete biased random walks due to rolling behavior over isolated obstacles, which is also observed in ant collective motion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C23 are supported by simulation comparisons (Figure 2b-c, Appendix 2\u2014figure 2c). The pinball model was appropriately fitted to no-obstacle ant behavior before testing on obstacle courses. The performance gap at intermediate densities is clearly demonstrated, though the exact mechanisms underlying ant superiority require further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C28",
+      "C77",
+      "C78"
+    ],
+    "result": "When trapped, carrying ants exhibit altered motion characteristics (increased movement against bias) and receive guidance from non-carrying leader ants that explore the surroundings. Even single leader ants can steer the group up to 10 cm. Preventing detour access significantly reduced collective exploration, and local responsive algorithms alone cannot explain ant performance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C28, C77-C78 are supported by behavioral observations (Appendix 1.4, Appendix 1\u2014figure 2), experimental manipulations (Appendix 1.7), and simulation comparisons (Figure 2d). The evidence converges on non-local information transfer as crucial, though C25-C26, C28 rely heavily on citations to prior work rather than new data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C57"
+    ],
+    "result": "Ants collectively extend their sensing range by distributing non-carrying individuals around the load to scout in all directions. This extension is moderate in magnitude (approximately 10 cm radius based on spatial distribution analysis).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C57 are supported by spatial distribution analysis of non-carrying ants around trapped loads (Figure 3a, Figure 3\u2014figure supplement 1) showing 99% of ant traffic within ~10 cm radius. The measurement approach is reasonable, though the definition of \"sensing range\" based on spatial distribution is somewhat indirect.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C3",
+      "C23",
+      "C66",
+      "C79",
+      "C80"
+    ],
+    "result": "The ants' moderate sensing range extension (~10 cm) enables extremely fast traversal times that substantially outperform physics-based local algorithms. This efficiency stems from the ability to quickly overcome traps up to their sensing range size, while larger sensing ranges are unnecessary due to the rarity of larger traps.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C23, C66, C79-C80 are supported by performance comparisons across models (Figure 2b-d) and trap size statistics (Figure 4a, Figure 3\u2014figure supplement 2). The extended pinball model with rsense=10 cm closely matches ant performance, validating the sensing range estimate. The logical connection between trap statistics and optimal sensing range is well-established.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C4",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C81"
+    ],
+    "result": "Theoretical analysis using percolation theory proves that a logarithmically small sensing range suffices for extreme speedup in solvable labyrinths. Simulations show >200-fold speedup compared to classical biased random walk solutions. A walker with logarithmic sensing range can approximate the shortest path to within ~0.46% by staying within a logarithmic-width strip.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C33-C38, C81 are supported by mathematical proof (Appendix 3.1-3.2), simulations on percolation lattices (Figure 4b-c), and established percolation theory (C37 citing Aizenman & Newman 1984). The theoretical framework is rigorous, though the proof details are in appendices. The 0.46% path length increase (C38) is based on N=50 lattices, which is adequate for this computational analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C39",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Empirical ant trajectories are confined to relatively narrow strips even at high cube densities (Figure 4\u2014figure supplement 1). The experimental parameters (cube size, load radius) were chosen to match typical ant-transported loads. The 10 cm sensing range measured experimentally matches the theoretical prediction of log(1000)\u224810 for the ants' natural 10 m foraging range.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39, C41-C44 connect empirical observations to theoretical predictions. C39 is supported by trajectory analysis (Figure 4\u2014figure supplement 1). The quantitative match between measured sensing range and theoretical prediction (10 cm \u2248 log(1000) grid units) is compelling, though the authors appropriately note this is approximate rather than precise (system size 70 cm vs. 10 m foraging range). C42-C44 provide important context for parameter choices.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "The authors propose that ant navigation represents an evolutionary trade-off: moderate sensing range extension matches the statistics of trap sizes in percolation networks, where intermediate-sized traps are rare, making strategies to tackle them evolutionarily wasteful.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C48-C50 present an evolutionary interpretation that, while plausible and well-reasoned, is speculative. C48 explicitly states this \"may be the result of such a trade-off\" and is marked as INFERENCE/SPECULATION. C50 is supported by percolation theory, but the evolutionary argument connecting trap statistics to sensing range evolution lacks direct empirical evidence. This is an interesting hypothesis requiring further testing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C5",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "The work demonstrates that collective cognition can increase a species' habitable range by enabling navigation through complex environments. Evolutionary trade-offs in problem-solving abilities can arise from balancing challenge difficulty, prevalence, reward, and energetic costs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C5 is a broad inference from the specific experimental results, while C45-C47 provide general evolutionary context supported by citations. The demonstration that ants can solve complex mazes through collective sensing is clear, but the leap to \"increasing habitable range\" (C5) is speculative and not directly tested. The evolutionary framework (C46-C47) is well-established but its specific application here remains hypothetical.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "The authors contextualize their findings within broader biological remote sensing and collective sensing phenomena. Remote sensing (sight, olfaction, echolocation) is common in biology, but ants' small size limits line-of-sight, necessitating collective sensing strategies. Examples include the \"many eyes principle\" in prey animals and collective sensing in fish shoals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C61 provide appropriate biological context supported by citations to established literature. C55-C56 make reasonable inferences about physical constraints on ant vision. C61 cites prior work showing ants solve obstacles imperceptible to individuals. This contextual framing is well-supported but represents background rather than novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "The introduction establishes that animal navigation strategies reflect environmental structure and cognitive capacities, ranging from simple biased random walks (chemotaxis) to complex cognitive tools (active sensing, information processing, memory). Cooperation through social learning, collective decision-making, and leadership can enhance navigational abilities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C11 provide well-cited background context from established literature. These are general principles rather than novel findings, appropriately setting up the research question about whether collective cognition enables species to broaden their navigational capabilities.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C67"
+    ],
+    "result": "The \"ant-in-a-labyrinth\" framework, originally proposed by de Gennes for studying diffusion through disordered media, applies to physical systems like electron transport in alloys. Local algorithms are often preferred for simplicity but can fall short, while extending sensing range to logarithmic scale can significantly impact navigation performance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C65, C67 provide appropriate theoretical context from physics and computer science literature. The connection between the physical ant-in-a-labyrinth problem and the biological system is well-established. C67 is supported by both theoretical analysis and citations, bridging to the current work's findings.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,320 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C7",
+      "C8"
+    ],
+    "result": "Chromosome territories (CTs) are conserved nuclear structures formed by elaborate chromosome folding during interphase. In Drosophila, CT formation can be modulated by altering Condensin II activity, providing a unique experimental system to study CT function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3 and C7 establish CT formation as a conserved phenomenon supported by extensive prior literature. Claim C8 identifies the key experimental advantage of the Drosophila system\u2014the ability to modulate CT formation via Condensin II\u2014which is well-supported by citations to prior work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C23"
+    ],
+    "result": "Prior correlative studies have linked inter-chromosomal contact frequencies with translocation frequencies, supporting a 'contact-first' model. However, whether CT formation itself causally attenuates translocations remained unclear prior to this study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C5 and C23 accurately summarize prior correlative evidence from multiple cited studies. Claim C6 correctly identifies the knowledge gap that motivates the current work. These claims appropriately frame the scientific context and rationale.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C70",
+      "C71"
+    ],
+    "result": "Whole-chromosome Oligopaint FISH can detect rare translocation events and provides absolute translocation frequencies in cell populations, as demonstrated in prior work and validated in diploid BG3 cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C11 establish the methodological foundation based on prior work (Rosin et al., 2018). Claims C70-C71 summarize the method's advantages. The characterization of BG3 cells as diploid with infrequent spontaneous rearrangements is supported by citation and provides appropriate experimental context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "Ionizing radiation (5 Gy and 20 Gy) efficiently induced translocations in BG3 cells (3% and 14.8% respectively) without significantly affecting viability or growth. Translocations included discrete (60.2%), compound (32%), and complex (7.8%) rearrangements, with ~33% being reciprocal.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C17 are directly supported by experimental data shown in Figure 1 and Figure 1\u2014figure supplement 1. The characterization of translocation types, frequencies, and cellular recovery is quantitative and well-documented. The \u03b3-H2Av marker validation is appropriately cited.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "Translocation frequencies varied between chromosome pairs and correlated strongly with total genomic length (r\u00b2=0.72, p=0.0005). However, replicate-to-replicate variation (e.g., 7-14% for chromosomes 2-3) suggested additional factors beyond chromosome size influence translocation potential.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C21 are supported by quantitative data in Figure 1C-D with appropriate statistical analysis. Claim C22 is a reasonable inference from the observed variation. The correlation with chromosome size is strong but not perfect, appropriately motivating investigation of other factors like CT contact frequency.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "In BG3 cells, CT intermixing volumes were minimal (4-8 \u03bcm\u00b3, ~5% of nucleus), consistent with Hi-C data showing ~7% trans interactions. Despite minimal intermixing, CTs contacted each other in 93-99% of cells, independent of ploidy. IR exposure did not alter these CT organization parameters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C28 are supported by experimental data in Figure 2 and Figure 2\u2014figure supplement 1. The consistency with prior Hi-C data (C25) and prior observations in tetraploid cells (C27) strengthens the findings. The high contact frequency despite minimal intermixing is a key observation for subsequent analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Inter-CT contact frequency, not intermixing volume, significantly correlated with translocation frequency (r\u00b2=0.42, p=0.02). Linear regression predicted a 1:1 relationship: each 1% increase in contact frequency yielded a 1% increase in translocation frequency. Intermixing volume showed only weak correlation (r\u00b2=0.16, p=0.21).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C32 present quantitative correlations supported by statistical analysis shown in Figure 2G-H. The 1:1 relationship is striking and well-documented. Claims C33-C34 are reasonable inferences. However, the correlation (r\u00b2=0.42) explains only 42% of variance, suggesting other factors also contribute. The distinction between contact frequency and intermixing volume is a key finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Cap-H2 depletion increased chromosome volumes, CT intermixing, and inter-CT contact frequencies (by 2-5%) without causing chromosome segregation defects, spontaneous translocations, or increased DNA damage. This indicates CT disruption alone does not cause acute genome instability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C40 are supported by experimental data in Figure 3 and supplementary figures, with appropriate citations to prior Hi-C data and literature on Condensin II's dispensability for mitosis in Drosophila. Claim C41 is a reasonable inference from the lack of spontaneous damage. The modest 2-5% increase in contact frequency is important context for interpreting translocation effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Following IR, Cap-H2-depleted cells showed delayed DNA repair but ultimately recovered. Translocation frequency increased moderately overall, with chromosomes 2-3 showing a significant 50% increase. The X chromosome showed only moderate increases, and homolog pairing did not reduce X-2 translocations, suggesting the effect is specific to heterologous translocations between large chromosomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C49 are supported by experimental data in Figure 3 and supplementary figures. The differential effects on different chromosome pairs (C45-C46) and analysis of diploid vs. tetraploid cells (C48-C49) strengthen the interpretation. Claims C50-C51 are reasonable conclusions. The moderate increase paralleling the modest change in contact frequency supports the contact-frequency model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Cap-H2 overexpression produced more compact, spatially separated CTs with increased homolog unpairing, reduced total CT volume, and significantly decreased inter-CT contact frequencies and intermixing volumes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C56 are supported by experimental data in Figure 4B-E. Claim C52 is appropriately supported by citations to prior work. The observation of increased homolog unpairing (C54) is an interesting phenotype that could complicate interpretation but is clearly documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Cap-H2 overexpression significantly reduced translocation frequency by 35% overall (16.7% to 10.9%, p=0.02), with X-2 and 2-3 pairs showing ~50% reductions. All translocation types were equally reduced. The correlation between contact frequency and translocation frequency was maintained (r\u00b2=0.60, p=0.014) with a nearly 1:1 relationship.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C61 are supported by quantitative data in Figure 4F-I with appropriate statistical tests. The maintenance of the 1:1 relationship (C61) across both depletion and overexpression conditions strongly supports a causal relationship between CT contact and translocation frequency. The effect sizes are substantial and statistically significant.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Cap-H2 overexpression did not reduce DNA damage, alter DNA repair kinetics, affect cell viability, increase chromosome segregation defects, or change ploidy or the types of chromosomal aberrations. This indicates mitosis and cell cycle progression are unaffected.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C65 are supported by experimental data in Figure 4J-K and supplementary figures. Claim C66 is a reasonable inference. These controls are critical for ruling out alternative explanations (e.g., that Cap-H2 OX protects DNA or affects repair) and support the interpretation that the effect is specifically through CT spatial organization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "SLMB depletion (which stabilizes Cap-H2) also reduced CT contact frequencies and translocation formation by >50% without affecting DNA repair kinetics or viability, providing independent confirmation that CT spatial separation attenuates translocation potential.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C68 are supported by data in Figure 4\u2014figure supplement 1. Claim C69 is a reasonable conclusion. This genetic approach provides orthogonal validation of the Cap-H2 overexpression results, strengthening the causal interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C77",
+      "C78",
+      "C79",
+      "C84",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "This study provides the first causal evidence that proper CT formation protects against translocations. Translocation frequencies correlate with chromosome size and inter-CT contact frequency (1% contact increase = 1% translocation increase), but not intermixing volume. Condensin II depletion increases translocations while overexpression reduces them by up to 50%, establishing CT organization as causally protective.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C73 and C78-C79 summarize the main experimental findings supported by data throughout the manuscript. Claim C74 notes the contrast with human cells, appropriately citing the discrepant study. Claims C77, C84, C96-C98 present the main conclusions. The causal claim is well-supported by bidirectional genetic manipulation (depletion and overexpression) with consistent dose-response relationships and appropriate controls ruling out alternative mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C75",
+      "C76"
+    ],
+    "result": "The discrepancy between Drosophila (where intermixing doesn't correlate with translocations) and human cells (where it does) may be explained by the larger number of human chromosomes limiting contact probability, making intermixing volume dependent on contact frequency in the population.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C75-C76 are speculative explanations for the difference between systems. While the reasoning is plausible, no direct evidence is provided to test this hypothesis. The speculation is appropriately presented as such in the discussion, but remains unvalidated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C85"
+    ],
+    "result": "While alternative mechanisms (altered chromatin structure, segregation defects) cannot be completely ruled out, the data are more consistent with a causal role of CT organization. No increased DNA damage or segregation defects were observed, and the 1:1 correlation between contact and translocation changes supports the CT model. However, Condensin II manipulation remains the only available method to modulate CT organization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C81 appropriately acknowledge alternative explanations. Claims C82-C83 present evidence against these alternatives. Claim C85 correctly notes a limitation. The authors appropriately weigh the evidence and acknowledge that definitive proof of mechanism awaits identification of additional CT-modulating factors. The inference favoring the CT model is reasonable given the data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "Condensin II is essential for CT compaction in Drosophila and yeast, but its conservation in mammals is unclear due to its essential role in chromosome segregation. However, recent evidence from ARID1A loss in human cells suggests Condensin II's role in CT partitioning may be conserved.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C89 accurately cite prior literature. Claim C90 is appropriately tentative speculation based on the cited evidence. The discussion appropriately contextualizes the Drosophila findings within the broader question of conservation across species.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "Condensin II has been linked to cancer and lymphomagenesis in mice, with highly rearranged chromosomes in transformed cells. While these translocations may result from segregation defects, the spatial separation of interphase chromosomes may represent a novel genome stability pathway. Drosophila provides a unique system to study this function independent of segregation roles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C92 accurately cite disease associations. Claims C93-C94 are appropriately speculative about mechanisms. Claim C95 correctly identifies the advantage of the Drosophila system. This discussion appropriately connects the findings to potential disease relevance while acknowledging uncertainties.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "The study employed standard methods including BG3 cell culture, stable Cap-H2-GFP integration, Oligopaint design and synthesis, IR treatment, FISH, immunofluorescence, widefield microscopy with deconvolution, 3D image segmentation, and Hi-C data analysis with appropriate normalization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C109 describe the materials and methods with appropriate detail and citations to prior methods. The methods are standard and well-established. Key parameters (e.g., CT contact defined as >0.5 \u03bcm\u00b3 colocalization, C108) are clearly specified. The computational analysis of Hi-C data is appropriately described with citations.",
+    "result_type": "MINOR"
+  }
+]

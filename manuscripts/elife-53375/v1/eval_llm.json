@@ -1,0 +1,351 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "siRNA-mediated depletion of H2A.Z isoforms is efficient and specific in both WI38 and U2OS cells, with H2A.Z.1 comprising approximately 2/3 and H2A.Z.2 comprising 1/3 of total H2A.Z in WI38 cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C26 are supported by RT-qPCR and Western blot data (Figure 1A-C) demonstrating efficient and specific knockdown of each isoform. The quantification provides clear evidence for the relative abundance of the two isoforms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "RNA-Seq analysis reveals that H2A.Z.1 regulates 3573 genes and H2A.Z.2 regulates 1500 genes in WI38 cells, with approximately 40-50% of regulated genes being activated upon depletion. An additional 691 genes are affected only upon double depletion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C31 are well-supported by RNA-Seq differential expression analysis with appropriate statistical thresholds (|log2FC| > log\u2082(1.25), adjusted p < 0.05) and two independent replicates. The data clearly demonstrate the scope of H2A.Z isoform regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Gene ontology analysis shows that genes activated upon H2A.Z.1 depletion are enriched in negative regulators of cell proliferation, while repressed genes are enriched in mitosis-linked genes. H2A.Z.2 depletion also affects cell cycle-linked genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C34 are supported by gene ontology analysis of RNA-Seq data (Figure 1D). The enrichments are consistent with known H2A.Z.1 functions in cell proliferation, providing biological context for the transcriptional changes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "H2A.Z.1 and H2A.Z.2 regulate both overlapping and distinct sets of genes, with 759 genes co-regulated (highly significant overlap, p=9.38E-283), while 2814 and 741 genes are regulated specifically by H2A.Z.1 and H2A.Z.2, respectively.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C38 are supported by rigorous statistical analysis (Chi-square test) of RNA-Seq data showing highly significant overlap between regulated gene sets (Figure 2A). The analysis appropriately accounts for expected random overlap, strengthening the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "H2A.Z isoforms can regulate genes similarly (325 co-activated, 192 co-repressed, plus 691 requiring double depletion = 1208 total) or antagonistically (72 genes repressed by H2A.Z.1/activated by H2A.Z.2; 170 genes activated by H2A.Z.1/repressed by H2A.Z.2).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C43 are supported by comprehensive RNA-Seq analysis with appropriate statistical validation (Figure 2B). The identification of both cooperative and antagonistic regulation patterns is a key finding, though the antagonistic overlap for one direction is noted as not highly significant.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Both H2A.Z isoforms accumulate at the -1 and +1 nucleosomes surrounding the TSS of expressed genes, but the amount of a given isoform at the TSS does not predict its transcriptional effect. The H2A.Z.1/H2A.Z.2 ratio depends on total H2A.Z levels rather than functional differences between enhancers and promoters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C46 are supported by ChIP-Seq metadata analysis (Figure 2C, Figure 2\u2014figure supplement 5). The finding that isoform levels at TSS don't predict functional effects is important, though it raises questions about the mechanism of specificity that are addressed in later results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Double depletion of H2A.Z.1 and H2A.Z.2 shows no cumulative effect; instead, the effect is significantly attenuated compared to single depletion, suggesting that the effect of depleting one isoform depends on the presence of the other.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C49 are supported by RNA-Seq analysis with appropriate statistical testing (paired Welch test, Figure 3A-B). This unexpected finding of antagonism rather than additivity is well-documented and represents a key mechanistic insight, though the interpretation (C49) is somewhat speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Both H2A.Z isoforms are recruited to the same promoters (GAPDH, CDKN1A/p21), show strong genome-wide correlation in binding, and can replace each other, as demonstrated by increased H2A.Z.2 occupancy upon H2A.Z.1 depletion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C52 are supported by ChIP-Seq and ChIP-qPCR data with spike-in normalization (Figure 4A-C). The replacement mechanism is well-demonstrated, though the reciprocal experiment (C52 vs. H2A.Z.1 replacement) showed weaker effects, likely due to expression level differences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Mass spectrometry analysis of endogenously-tagged H2A.Z isoforms reveals that both interact with p400/SRCAP complexes and chaperones, but PHF14, HMG20A, TCF20, and RAI1 preferentially associate with H2A.Z.1, while SIRT1 preferentially associates with H2A.Z.2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C56 are supported by tandem affinity purification and mass spectrometry from multiple cell lines (K562, U2OS) with appropriate normalization and controls (Figure 5B-D, Figure 5\u2014figure supplement 2). This is the first demonstration of differential binding to endogenous isoforms, representing a major advance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "H2A.Z.2 depletion decreases SIRT1 in the chromatin fraction, indicating H2A.Z.2 favors SIRT1 chromatin localization. H2A.Z.1 depletion increases PHF14 extraction from chromatin, suggesting H2A.Z.1 favors PHF14-chromatin interaction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C59 are supported by cell fractionation experiments with quantification and replicates (Figure 6A-B, Figure 6\u2014figure supplement 2). The interpretations (C58, C59) are reasonable based on the data, though the PHF14 result is more complex due to lack of decrease in chromatin fraction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "PHF14 and SIRT1 are major mediators of H2A.Z.1 and H2A.Z.2 gene regulation, respectively. PHF14 depletion mimics H2A.Z.1 depletion for 4/5 tested genes and 30.6-38.5% of genome-wide regulated genes. SIRT1 depletion mimics H2A.Z.2 depletion for 3/5 tested genes and 24.7-27.2% of genome-wide regulated genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C66 are supported by RT-qPCR and RNA-Seq data with highly significant overlaps (p=8.4\u00d710\u207b\u00b9\u2079\u2077 and p=0 for PHF14; Figure 6C-E). The conclusion that these are 'major mediators' is justified by the substantial overlap, though the incomplete overlap indicates other mechanisms also contribute.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Co-depletion experiments demonstrate that SIRT1 mediates the antagonistic effects between H2A.Z.1 and H2A.Z.2 on specific genes (PLAT, AKAP12), and PHF14 and SIRT1 can antagonize each other on at least four tested genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C70 are supported by RT-qPCR data from co-depletion experiments (Figure 7A). The demonstration that co-depletion abolishes single depletion effects provides strong evidence for the antagonism mechanism, though this is tested on a limited number of genes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "PHF14 depletion strongly decreases global H3K9 acetylation and reduces H3K9 acetylation at the RRM2 and AKAP12 promoters, indicating that PHF14 favors histone acetylation at these loci.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C73 are supported by Western blot and ChIP-qPCR data with spike-in normalization and replicates (Figure 7B-C, Figure 7\u2014figure supplement 1B). This provides a mechanistic link between PHF14 and gene regulation, though the specificity (no effect on some promoters) requires further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Approximately 5005 genes in WI38 and 6317 genes in U2OS cells (roughly 1/4 of all expressed genes) are deregulated upon H2A.Z isoform depletion, with roughly equal numbers of activated and repressed genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C76 are supported by comprehensive RNA-Seq analysis across two cell lines. The finding that ~25% of expressed genes are regulated by H2A.Z isoforms underscores their importance, and the balance between activation and repression is consistent with prior literature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "H2A.Z isoforms are present on most promoters of expressed genes, but their presence alone does not predict transcriptional effects. The relative levels of the two isoforms are functionally important, and their ability to be incorporated at the same promoters explains both compensation and antagonism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C80 are supported by ChIP-Seq data and the integration of multiple experimental results. The model (C79-C80) is well-reasoned based on the data, though it represents an interpretation that could benefit from additional direct testing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C81",
+      "C82"
+    ],
+    "result": "This study provides the first demonstration that endogenous H2A.Z.1 and H2A.Z.2 can differentially bind to proteins, though previous studies with overexpressed proteins showed similar trends.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C81 is supported by the mass spectrometry data (Figure 5), and C82 correctly cites prior work. The novelty claim is justified as this is the first study using endogenously-tagged proteins rather than overexpression systems.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C83",
+      "C84"
+    ],
+    "result": "Previous studies described H2A.Z-SIRT1 interactions, and the current data suggest that H2A.Z.2/SIRT1 interaction is required for SIRT1 recruitment to the nucleus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C83 is supported by citations, and C84 is supported by fractionation data (Figure 6A). The interpretation differs from prior models (SIRT1 deacetylating H2A.Z) and is better supported by the current data showing decreased nuclear SIRT1 upon H2A.Z.2 depletion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "A mechanistic model is proposed where H2A.Z.1 depletion leads to less PHF14 and more SIRT1 recruitment (favoring deacetylation), while H2A.Z.2 depletion shifts toward acetylation. However, many H2A.Z-regulated genes are not regulated by PHF14/SIRT1, suggesting additional mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C85-C86 represent a mechanistic model based on multiple lines of evidence (fractionation, ChIP, acetylation data), but the model is speculative and not directly tested. Claim C87 is well-supported by the incomplete overlap in RNA-Seq data. The model is reasonable but requires additional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "The two H2A.Z isoforms are produced by independent promoters that can be regulated by signaling pathways (e.g., Wnt pathway for H2AFZ) and show tissue- and developmental stage-dependent expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C90 are supported by appropriate citations to prior work. These claims provide important context for understanding how isoform balance could be regulated, though they represent prior knowledge rather than new findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "One of the three amino acid differences between isoforms (T14 in H2A.Z.1, A14 in H2A.Z.2) is located in a functionally important region subject to post-translational modifications. It is speculated that modifications of T14 or surrounding residues could regulate effector recruitment, and the PHF14 complex contains PhD fingers that could read such modifications.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C91 is supported by structural knowledge, C93 by citations, but C92, C94, and C95 are explicitly speculative. While the speculation is reasonable and well-motivated by the data, it lacks direct experimental support and represents a hypothesis for future testing.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C96"
+    ],
+    "result": "A recent study showed that a S38T substitution in H2A.Z.1 (mimicking H2A.Z.2) rescues SRCAP-dependent Floating-Harbor Syndrome.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C96 is supported by citation to Greenberg et al., 2019. This provides additional context for the functional importance of amino acid differences between isoforms, though it represents prior work rather than a finding of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "Background claims establish that H2A.Z is a major regulator of gene expression encoded by two genes in vertebrates (H2AFZ and H2AFV), producing highly similar isoforms (H2A.Z.1 and H2A.Z.2) that differ by three amino acids and show context-dependent functions in development, cancer, and DNA repair.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C23 represent background knowledge supported by appropriate citations to prior literature. These claims establish the scientific context and rationale for the study but do not represent new findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "The main conclusions of the study are that H2A.Z.1 and H2A.Z.2 regulate both distinct and overlapping gene sets in a context-dependent manner with similar or antagonistic functions, can replace each other at TSS, have specific interactors, and that the balance between them is critically important for gene regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C7 represent the main conclusions of the study, which are well-supported by the comprehensive experimental evidence including RNA-Seq, ChIP-Seq, mass spectrometry, and functional studies. These conclusions integrate multiple lines of evidence and represent the major contributions of the work.",
+    "result_type": "MAJOR"
+  }
+]

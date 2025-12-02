@@ -1,0 +1,291 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C88"
+    ],
+    "result": "The authors report the first successful de novo computational design of a homo-trimeric protein (ABP) that binds a C3 symmetric small molecule (amantadine) larger than a metal ion, with each monomer making identical interactions with the ligand.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, and C88 establish the novelty and achievement of this work. The design is validated through multiple orthogonal structural techniques (X-ray, neutron diffraction, NMR) showing symmetric binding as intended. This represents a significant advance in computational protein design.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "ABP was computationally designed using parametrically generated C3 symmetric helical bundles, with RosettaDesign optimizing residues within 12.5 \u00c5 of amantadine for binding and Rosetta HBNet identifying hydrogen-bond networks, resulting in 19 amino acid changes from the parent scaffold 2L6HC3_13.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C30 describe a well-documented computational design methodology. The approach is clearly described with specific parameters, and the resulting design (ABP) is experimentally validated. The design strategy is sound and reproducible based on the provided information.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C77"
+    ],
+    "result": "ABP expresses at high levels in E. coli and forms a constitutive trimer in both the presence and absence of amantadine, as demonstrated by SEC-MALS.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31, C32, and C77 are directly supported by SEC-MALS data in Figure 2a showing trimeric assembly regardless of ligand presence. This is a clear experimental result with appropriate analytical technique, though it indicates the design did not achieve ligand-induced trimerization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C36",
+      "C37",
+      "C78"
+    ],
+    "result": "Apo-ABP exhibits characteristics of a molten globule state with high initial thermofluor fluorescence, which decreases upon amantadine binding, suggesting ligand-induced local ordering and solvent exclusion, though the trimer may not be thermally stable.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C37 and C78 are supported by thermofluor data in Figure 2b. The interpretation of molten globule state is reasonable based on the fluorescence profile. However, the inference about local ordering (C37) is somewhat speculative, though consistent with subsequent NMR data showing conformational changes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "The parent scaffold 2L6HC3_13 shows thermal stability up to ~80\u00b0C and no response to amantadine, confirming that amantadine binding is specific to the designed binding site in ABP.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C40 provide important negative control data supported by Figure 2b. The lack of amantadine effect on the parent scaffold validates the specificity of the designed binding site. This is appropriate experimental design and interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C41",
+      "C42"
+    ],
+    "result": "CD spectroscopy shows ABP adopts an \u03b1-helical structure at 25\u00b0C that loses signal upon heating to 95\u00b0C, with minimal effect from 1 mM amantadine on thermal stability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C42 are supported by CD data in Figure 2c and supplement. The \u03b1-helical signature is clear, though the lack of amantadine effect on thermal stability by CD contrasts somewhat with the thermofluor results, suggesting different aspects of protein stability are being measured.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C3",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Solution NMR analysis of isotopically labeled ABP reveals regular three-fold symmetry with observation of 70/79 amide and 51/51 methyl resonances, indicating a homogeneous symmetric ensemble in solution with an \u03b1-helical structure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3 and C43-C47 are supported by NMR data in Figure 2d. The single set of peaks for the trimer confirms C3 symmetry. The interpretation of missing amide resonances (C45) as conformational exchange is reasonable. The NMR methodology is appropriate and well-executed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C4",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "NMR titration experiments demonstrate that ABP undergoes localized conformational changes upon amantadine binding with slow exchange kinetics, yielding a KD of 24.1 \u00b1 2.7 \u03bcM by line shape fitting and 25-55 \u03bcM by fraction bound analysis, with kinetics consistent with a buried binding site.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4 and C48-C57 are supported by comprehensive NMR titration data in Figures 2d-e. Two independent methods for KD determination yield consistent results in the low micromolar range. The kinetic analysis is appropriate, though C56 acknowledges uncertainty in resonance assignments. The slow exchange kinetics support the buried binding site interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C58",
+      "C59"
+    ],
+    "result": "ABP crystallizes only in the presence of amantadine, consistent with ligand-induced ordering.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C59 are supported by the experimental observation and consistent with thermofluor and NMR data suggesting conformational ordering upon ligand binding. This is a straightforward experimental result supporting the ordering hypothesis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C5",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "The X-ray crystal structure of ABP+amantadine solved to 1.04 \u00c5 shows close agreement with the design model (RMSD 0.63 \u00c5), with the main difference being a 60\u00b0 rotation of amantadine and water-mediated hydrogen bonds to Ser-71 instead of direct hydrogen bonds as designed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5 and C60-C64 are strongly supported by high-resolution crystallographic data in Figure 3. The RMSD of 0.63 \u00c5 indicates excellent design accuracy. The presence of water molecules mediating binding (not included in design) is clearly documented and represents an important finding about limitations of the design approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Amantadine commonly binds as a hydrate with water molecules associated with its amino group, as seen in other protein structures like influenza M2, suggesting that including explicit waters in Rosetta calculations could improve design affinity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C66 are supported by citations to prior structural work and Figure 3d. Claim C67 is a reasonable speculation for future work based on the observed water-mediated binding. This contextualizes the design outcome and provides direction for improvement.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C6",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C92"
+    ],
+    "result": "Neutron diffraction data collected to 2.3 \u00c5 reveals the protonation states and hydrogen bonding network, showing water molecules DOD-31 and DOD-41 mediating hydrogen bonds between amantadine and Ser-71, with overall structure matching the design model (RMSD 0.59 \u00c5).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6 and C68-C71, C92 are supported by neutron diffraction data in Figure 3e-f. Neutron crystallography uniquely visualizes hydrogen positions, providing direct experimental validation of the hydrogen bonding network. The RMSD of 0.59 \u00c5 confirms excellent agreement with the design. This is high-quality structural validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Both X-ray and neutron structures show amantadine positioned on the C3 symmetry axis with its adamantane moiety surrounded by hydrophobic residues Ile-64, Leu-67, and Ala-68, with no H/D exchange in the trimeric core indicating a tightly packed, solvent-inaccessible interface.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C75 are supported by both X-ray and neutron structures. The lack of H/D exchange (C74) is a direct observation, and the interpretation of tight packing and stability (C75) is reasonable. This demonstrates successful design of the hydrophobic binding pocket.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C76"
+    ],
+    "result": "ABP binds amantadine in a manner very similar to the design model with significant localized structural changes observed by NMR.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C76 is a summary statement supported by the combined NMR, X-ray, and neutron data (C3-C6, C60-C75). The close structural match and observed conformational changes are well-documented across multiple techniques.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "Multiple design strategies to destabilize the ABP trimer and create an inducible system failed, including core mutations, intermolecular hydrogen bond networks, helix truncations, and helical repeat fusions, resulting in poor expression, loss of binding, or maintained constitutive trimerization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C85 document systematic attempts to engineer ligand-induced trimerization, all shown in Figure 1 supplement. The negative results are clearly reported with appropriate characterization methods. This represents thorough experimental exploration of design space, though unsuccessful in the primary goal.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C89",
+      "C90"
+    ],
+    "result": "The authors conclude that creating well-behaved monomers that assemble upon amantadine binding is difficult due to the large buried nonpolar interface and the weak binding affinity of amantadine, which does not provide sufficient driving force for trimerization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C87 and C89-C90 are reasonable inferences from the failed design attempts (C79-C85) and measured KD (~24 \u03bcM). The large hydrophobic interface makes monomers poorly behaved, and micromolar affinity is indeed weak for driving assembly. These conclusions are well-supported by the experimental data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C91"
+    ],
+    "result": "Future success in designing ligand-inducible homo-trimerization systems will likely require smaller subunit interfaces and higher affinity binding sites, possibly using larger C3 symmetric molecules.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C91 is a reasonable speculation based on the lessons learned from this work. The suggestion follows logically from the identified bottlenecks (C89-C90). While speculative, it provides valuable guidance for future design efforts and is appropriately framed as a hypothesis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "The authors establish the context that while progress has been made in de novo small molecule binding protein design and symmetric protein design, no chemically-inducible trimerization systems exist despite their importance in cellular engineering and signaling, motivating the choice of C3-symmetric amantadine as a target ligand.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C20 provide background context supported by appropriate citations. These establish the significance of the work and rationale for design choices. The claims about prior work appear accurate based on citations, and the properties of amantadine (FDA-approved, C3 symmetric, low side effects) are well-documented.",
+    "result_type": "MINOR"
+  }
+]

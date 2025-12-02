@@ -1,0 +1,255 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C18",
+      "C24",
+      "C25",
+      "C26",
+      "C28",
+      "C29"
+    ],
+    "result": "The study identifies a major evolutionary transition in kinase regulation between AncERK1-5 and AncERK1-2, where kinases switched from high to low autophosphorylation activity. AncERK1-2 showed dramatically reduced basal activity compared to earlier ancestors, but could be activated ~6-fold by MEK. This transition was accompanied by decreased TxY motif phosphorylation and changes in both KM and kcat.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C18, C24, C25, C26, C28, and C29 collectively demonstrate a clear evolutionary transition in kinase activity between AncERK1-5 and AncERK1-2. The evidence includes kinase activity assays (C24), MEK activation experiments (C25), kinetic parameters (C26), and LC-MS quantification of phosphorylation (C28, C29). The data are internally consistent and supported by multiple experimental approaches including activity assays, mass spectrometry, and kinetic analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C19",
+      "C31",
+      "C32",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Two synergistic amino acid changes were identified as sufficient to induce the evolutionary change from high to low autophosphorylation: an insertion in the \u03b23-\u03b1C loop (ins44R) and mutation of the gatekeeper residue (Q89M). Reverting these mutations in AncERK1-2 to their ancestral state restored high basal activity, and introducing them into AncERK1-5 suppressed activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C19, C31, C32, C57, C58, and C59 provide strong bidirectional evidence for the causal role of these two mutations. The chimera analysis (C57) narrowed the search to the N-terminus, and targeted mutagenesis experiments demonstrated both gain-of-function (C31) and loss-of-function (C58) effects. The structural mapping (C32) and phylogenetic analysis (C59) provide additional support for the evolutionary significance of these positions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C20",
+      "C33",
+      "C34",
+      "C35",
+      "C48",
+      "C49",
+      "C70"
+    ],
+    "result": "Restoring the two evolutionary mutations (loop insertion and gatekeeper mutation) to their inferred ancestral state in modern ERK1 and ERK2 led to loss of dependence on MEK. The double mutant showed >100-fold increase in activity, MEK-independent activity in cells, and robust phosphorylation even after MEK inhibition with Trametinib.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C20, C33, C34, C35, C48, C49, and C70 demonstrate that reversing evolutionary mutations in modern ERK1/2 restores ancestral regulatory properties. The evidence includes in vitro kinase assays showing dramatic activity increases (C33, C34, C35), cellular assays using ERK-KTR reporter (C48, C70), and Western blots showing phosphorylation after MEK inhibition (C49). The consistency across multiple experimental systems (in vitro, cellular) strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C27",
+      "C37",
+      "C38",
+      "C39",
+      "C64",
+      "C65"
+    ],
+    "result": "The increased activity in ancestral and mutant kinases is mediated by autophosphorylation of the TxY motif. Mutation of the TxY motif abolished the increased activity, and elevated TxY phosphorylation was detected by Western blot and LC-MS in mutant kinases expressed in E. coli, which lacks endogenous kinases capable of phosphorylating this motif.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27, C37, C38, C39, C64, and C65 establish autophosphorylation as the mechanism for increased activity. The TxY mutation experiments (C27, C37) demonstrate necessity, while Western blots and LC-MS (C38) confirm elevated phosphorylation. The use of E. coli expression system (C64) provides strong evidence that phosphorylation is due to autophosphorylation rather than other kinases. The radioactive ATP incorporation assays (C39) directly measure autophosphorylation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C41"
+    ],
+    "result": "Autophosphorylation of ERK1-ins74N occurs through a cis (intramolecular) mechanism, as demonstrated by linear scaling of autophosphorylation with kinase concentration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C41 is supported by concentration-dependent autophosphorylation experiments showing linear rather than quadratic scaling, which distinguishes cis from trans mechanisms. This is further supported by the kinase-dead mixing experiment described in the text (though not explicitly claimed), where catalytically inactive ERK1 was not phosphorylated when mixed with active kinase. The evidence is mechanistically sound and appropriately interpreted.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C36",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "The length of the \u03b23-\u03b1C loop, specifically from K72 to P75, is critical for determining ERK1 basal activity. Many different amino acid insertions at position 74 increased activity, while deletions and insertions within the K72-P75 region greatly affected activity, but changes after P75 had minimal effect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36, C61, C62, and C63 demonstrate that loop length rather than specific amino acid identity is the key determinant of activity. The systematic mutagenesis experiments testing different amino acids (C61) and different positions (C62, C63) provide comprehensive evidence. The data support the conclusion that structural constraints imposed by loop length, rather than specific side chain interactions, drive the regulatory effect.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C66",
+      "C67",
+      "C79",
+      "C82"
+    ],
+    "result": "Molecular dynamics simulations reveal that the evolutionary mutations increase flexibility in the glycine-rich loop and L16, and increase the frequency of the catalytically important K52-E69 salt bridge. The simulations totaled ~2.05 ms across 4,000 trajectories and showed that mutants more frequently adopt conformations with productive active site organization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C47, C66, C67, C79, and C82 describe extensive MD simulations that provide mechanistic insights. The computational methodology is well-described (C66, C67) with appropriate simulation time. The RMSF analysis (C43-C45) and distance measurements (C46, C47) are standard approaches. However, the authors acknowledge that simulations are too short to observe full activation transitions, and some proposed mechanisms (domain closure, R-spine changes) remain uncertain. The conclusions are appropriately cautious and focus on short-timescale dynamics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C30",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Alternative ancestral reconstructions with residues having posterior probability >0.2 behaved similarly to maximum likelihood reconstructions, and chimera analysis localized the key mutations to the N-terminal domain rather than the middle or C-terminal domains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30, C56, C57, and C58 address important controls for ancestral reconstruction uncertainty and systematic identification of causal mutations. The alternative reconstruction experiments (C30) demonstrate robustness to phylogenetic uncertainty. The chimera analysis (C56, C57) systematically narrowed the search space, though the middle domain swap showing no effect (C56) is a negative result that helps localize the critical region. The bidirectional mutagenesis (C58) confirms the identified mutations are sufficient.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "The ancestral reconstruction methodology used maximum likelihood phylogenetic methods with sequences evenly distributed across the eukaryotic phylogeny. The reconstructed ancestors showed expected substrate specificities, including +1 proline preference and loss of -3 arginine specificity at the AncCDK.MAPK transition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C23 and C51-C53 describe the ancestral reconstruction methodology and validation through substrate specificity. The use of maximum likelihood methods (C22) and phylogenetically distributed sequences (C21) are appropriate. The substrate specificity data (C23, C51, C52) provide important validation that reconstructed ancestors have biochemically sensible properties. The mechanistic explanation for loss of -3 arginine specificity (C53) is reasonable but remains inferential.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C68",
+      "C69"
+    ],
+    "result": "MD simulations showed unexpected results regarding the previously proposed autophosphorylation mechanism: the frequency of Y185-D147 hydrogen bonding was highest in WT (1.7%) and decreased in mutants. Seven residues showed large contact changes with Y185 across all mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C68 and C69 describe results that contradict a previously proposed mechanism (Emrick et al., 2006). While the MD data are clearly presented, the authors acknowledge these simulations lack ATP and may be too short to capture relevant conformational changes. The identification of seven residues with altered Y185 contacts (C69) is interesting but requires experimental validation. The discrepancy with prior work and acknowledged simulation limitations make the mechanistic interpretation uncertain.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "The two evolutionary changes (gatekeeper mutation and loop shortening) synergize in their effects, with each conferring an order of magnitude change in basal activity. The gatekeeper mutation from methionine to glutamine and loop shortening both represent transitions to more restrictive regulatory states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C78 synthesize the findings to describe the synergistic nature of the evolutionary changes. The quantitative assessment that each mutation provides ~10-fold change and together >100-fold change (C78) is supported by the kinase assays. The phylogenetic analysis (C75, C76, C77) shows these changes are evolutionarily conserved. The characterization of synergy is appropriate given the multiplicative rather than additive effects observed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "Modern ERK1 and ERK2 can be reverted to an inferred ancestral state of high basal activity without encountering a strong evolutionary ratchet, suggesting kinases are quite tolerant of mutations. This 'evolvability' may explain the prevalence of kinases as regulatory enzymes in eukaryotes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C86 and C87 are well-supported by the experimental data showing successful reversion to ancestral states. However, claims C88 and C89 are explicitly labeled as speculation in the evidence. While the tolerance to mutations is demonstrated for these specific changes, generalizing to all kinases and explaining kinase prevalence in eukaryotes requires much broader evidence. The evolutionary interpretation is interesting but remains speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C50"
+    ],
+    "result": "Changes in \u03b23-\u03b1C loop length have been reported to activate kinases in other families (BRAF, EGFR, HER2) outside the CMGC group, though these involve loop shortening rather than lengthening.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C50 is supported by citation to Foster et al., 2016. This contextualizes the findings within broader kinase biology, though the opposite direction of the effect (shortening vs. lengthening) suggests different mechanisms may be at play in different kinase families. The claim appropriately notes this is from other kinase families and cites the relevant literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C71",
+      "C72",
+      "C80",
+      "C81",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "Background claims establish that protein kinases are crucial regulatory enzymes comprising ~2% of human genes, that most are regulated by TxY motif phosphorylation leading to up to 1000-fold activity changes, and that ERK1/2 exhibit very low autophosphorylation and depend on MEK for activation. Previous work showed ancestral CMGC kinases had high basal activity and that kinase specificity evolution did not require stabilizing mutations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C6-C17, C71, C72, C80, C81, C83-C85 provide background context from established literature and prior work. These are appropriately cited and represent accepted knowledge in the field. The claims about prior ancestral reconstruction work (C2, C14, C85) reference the authors' previous study. These background claims establish the scientific context and rationale for the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C54",
+      "C55"
+    ],
+    "result": "AncERK1-2 showed much lower activity toward ELK1 substrate than AncERK1-5, and the modest activation of AncERK1-2 by MEK is likely due to MEK's high specificity for modern ERK1/2, making AncERK1-2 a poor MEK substrate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C54 is supported by kinase activity assays with ELK1 substrate, confirming the activity transition is not substrate-specific. Claim C55 is explicitly labeled as speculation but is reasonable given MEK's known specificity for modern ERKs. The modest ~6-fold activation by MEK (compared to >100-fold difference in basal activity) supports this interpretation, though direct measurement of MEK-AncERK1-2 kinetics would strengthen the conclusion.",
+    "result_type": "MINOR"
+  }
+]

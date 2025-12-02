@@ -1,0 +1,251 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C65",
+      "C66"
+    ],
+    "result": "A healthy adult woman with a homozygous HAO1 frameshift variant (p.Leu333SerfsTer4) was identified through exome sequencing of autozygous populations. The variant was confirmed by both exome sequencing and Sanger sequencing, and the woman was 7.4% autozygous with the variant located in a 5.2 Mb autozygous region.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The genetic identification is well-supported by multiple lines of evidence including exome sequencing (C65), Sanger sequencing validation (C66), and autozygosity analysis (C12, C13). The variant annotation (C11) is based on standard bioinformatic prediction, and the exclusion of other rare loss-of-function variants (C14) strengthens the attribution of phenotype to HAO1.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "Population genetic analysis indicates that complete HAO1 knockout is extremely rare (~1 in 30 million in outbred populations), with no homozygous loss-of-function variants observed in gnomAD v2.1 (141,456 individuals). Constraint analysis suggests HAO1 is unlikely to have a haploinsufficient phenotype.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The rarity estimate (C2) is appropriately derived from heterozygote frequency data (C16) using Hardy-Weinberg principles. The constraint analysis (C17) with obs/exp = 74% (90% CI 48-117%) correctly spans the range between recessive disease genes and tolerant genes, supporting the inference about lack of haploinsufficiency (C18). The gnomAD analysis (C15) provides strong population-level validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C57",
+      "C61",
+      "C64"
+    ],
+    "result": "The HAO1 knockout woman exhibited markedly elevated glycolate levels: plasma glycolate was 171 nmol/mL (12-fold above normal upper limit of 14 nmol/mL) and urinary glycolate/creatinine ratios were 199-309 mg/g (6-fold above normal upper limit of 50 mg/g).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The biochemical measurements are clearly documented in Table 1 with appropriate reference ranges from 67 healthy controls. The fold-change calculations (12\u00d7 and 6\u00d7) are arithmetically correct. Technical replicates (single void and 24-hour urine samples) show consistency (C61, C64), strengthening confidence in the measurements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C10",
+      "C21",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C56",
+      "C60",
+      "C62",
+      "C63"
+    ],
+    "result": "Despite lifelong complete HAO1 knockout, the woman is healthy without clinical phenotype. She is in her 5th decade with three healthy children, has normal renal ultrasound, normal standard blood biochemistries, and normal plasma and urinary oxalate levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The clinical safety assessment is comprehensive, including medical history review (C21), imaging (C23), longitudinal biochemical data (C25), and specific metabolite measurements (C26, C27, C56, C60, C62, C63). The normal oxalate levels are particularly important for the therapeutic implications. However, the manuscript acknowledges a limitation: effects on other genetic backgrounds cannot be assessed from a single individual.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C6",
+      "C28",
+      "C29",
+      "C30",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Comprehensive metabolomics and lipidomics analysis (1871 biochemicals total) revealed 18 markedly elevated biochemicals (>5 SD outliers) while the majority of metabolites remained similar to controls. Principal component analysis showed the woman as an outlier on PC2, driven primarily by elevated glycolate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The metabolomics analysis is technically sound with excellent technical replicate correlations (C67: r=0.9976; C68: r=0.9737) and appropriate sample size (n=25 controls). The PCA analysis (C29, C30) correctly identifies the major driver of variance. The finding that most metabolites are normal (C28) is consistent with HAO1's limited metabolic role. The custom addition of glycolate measurement (C70) was methodologically appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C31"
+    ],
+    "result": "Metabolomic analysis revealed elevated unconjugated bile acids and reduced glycine- and taurine-conjugated bile acids, potentially due to reduced local availability of glycine for bile acid conjugation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the metabolite changes are documented (C32, C33), the mechanistic explanation (C31) is explicitly speculative. The manuscript uses cautious language ('might be due to'), acknowledging this is a hypothesis rather than demonstrated causation. Additional experiments would be needed to validate this proposed mechanism, such as measuring hepatic glycine levels or testing bile acid conjugation capacity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C34"
+    ],
+    "result": "Six significantly elevated metabolites have structures compatible with being potential HAO1 substrates, with two showing reduced levels of predicted metabolic products.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "This claim relies on structural inference and metabolic pathway knowledge without direct enzymatic validation. While the structural compatibility analysis is reasonable, demonstrating that these compounds are actual HAO1 substrates would require in vitro enzyme assays or other functional validation. The supporting evidence of reduced downstream products strengthens but does not prove the substrate relationship.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C7",
+      "C35",
+      "C36"
+    ],
+    "result": "Comparison with lumasiran clinical trial data suggests the woman has <2% residual glycolate oxidase activity. At the highest lumasiran dose (6 mg/kg, expected to achieve >95% HAO1 mRNA silencing), healthy volunteers had 3-5 times lower glycolate levels than the knockout woman.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The activity estimate is appropriately derived from comparative pharmacology. The lumasiran dose-response relationship (C36) is supported by preclinical modeling and cross-comparison with similar RNAi therapeutics. The 3-5 fold difference in glycolate levels (C35) between 95% silencing and complete knockout reasonably supports the <2% residual activity estimate (C7). However, this remains an indirect inference rather than direct enzymatic measurement.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "Cell line expression studies demonstrated that the p.Leu333SerfsTer4 variant results in markedly reduced HAO1 protein levels and cellular mislocalization, while mRNA levels remain unaffected. The variant protein lacks the C-terminal SKI peroxisomal targeting sequence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The cell line data (Figure 3) clearly demonstrates reduced protein (C8) with normal mRNA (C40), indicating post-transcriptional effects. The mislocalization (C9) is consistent with loss of the C-terminal targeting sequence (C38, C39). The experiments were performed twice with appropriate controls. However, these are in vitro findings in CHO-K1 cells, which may not fully recapitulate hepatocyte peroxisomal biology.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C3",
+      "C20",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "HAO1 inhibition represents a therapeutic approach for primary hyperoxaluria type 1 (PH1), a devastating metabolic disease caused by AGXT deficiency. Reducing glycolate oxidase activity (upstream of AGXT) is expected to decrease oxalate production while increasing highly soluble glycolate that is freely excreted. Preclinical studies showed no adverse signals from chronic HAO1 silencing >95%.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The therapeutic rationale is well-established, supported by knowledge of PH1 pathophysiology (C41-C45), metabolic pathway understanding (C46-C48), and preclinical safety data (C49). The mechanism of lumasiran (C3) is documented. The human knockout data from this study provides critical validation of the therapeutic approach's safety, though the manuscript appropriately notes that a single individual cannot fully de-risk the therapy across all genetic backgrounds.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C19"
+    ],
+    "result": "Three previously reported children with suspected glycolate oxidase deficiency all had confounding factors (multiple gene deletions or additional severe genetic diseases), lacked plasma biochemical assays, and not all had HAO1 sequencing performed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This assessment of prior literature is appropriately critical and well-cited (Frishberg et al., 2014; Clifford-Mobley et al., 2017; Craigen, 1996). The claim correctly identifies methodological limitations in previous reports that prevented clear attribution of phenotype to HAO1 deficiency alone, highlighting why the current case is uniquely informative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Human knockouts provide valuable drug target de-risking (exemplified by PCSK9, LPA, APOC3). Autozygous populations enable identification of rare homozygous variants, and studying even a single human knockout is equivalent to typical knockout mouse studies in terms of genetic background uniformity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the examples of successful human knockout studies (C51) are well-established, the claim about equivalence to mouse studies (C53) is problematic. The argument that inbred mice only provide measurement precision rather than genetic background diversity is technically correct, but the comparison oversimplifies important differences: mice allow controlled experiments, tissue sampling, and mechanistic studies impossible in humans. The value of the human knockout is complementary to, not equivalent to, mouse models. The statement about autozygous populations (C52) is accurate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C22",
+      "C54",
+      "C55",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Methodological details: The woman is of British-Pakistani ethnicity; exome sequencing used Agilent capture and Illumina sequencing; the variant is present on a single transcript across multiple annotation databases; cell line studies used authenticated, mycoplasma-free CHO-K1 cells; data are deposited in the European Genome-phenome Archive.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These methodological claims are straightforward and appropriately documented. The ethnicity information (C22) provides important context for the autozygosity. The sequencing methods (C54) are standard and well-referenced. The transcript annotation (C55) was verified across multiple databases. Cell line authentication (C72) follows best practices. Data availability (C73) meets reproducibility standards.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C50"
+    ],
+    "result": "HAO1 can metabolize 2-hydroxy fatty acids in addition to its glycolate oxidase activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This is established knowledge about HAO1 substrate specificity, relevant for understanding potential broader effects of HAO1 inhibition beyond glycolate metabolism. The claim is appropriately cited as general knowledge.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C58"
+    ],
+    "result": "Plasma glycerate was <1 nmol/mL in the HAO1 knockout woman (reference range \u226428 nmol/mL).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This measurement from Table 1 shows that glycerate, another metabolite in related pathways, remains normal despite the HAO1 knockout. This helps define the metabolic specificity of HAO1 deficiency.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C59"
+    ],
+    "result": "Urine oxalate was 0.16 mmol/L in the HAO1 knockout woman (single void sample).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This measurement provides the absolute concentration from a single void sample, complementing the creatinine-normalized values. The data are clearly presented in Table 1.",
+    "result_type": "MINOR"
+  }
+]

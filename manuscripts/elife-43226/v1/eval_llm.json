@@ -1,0 +1,362 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C30",
+      "C32",
+      "C33",
+      "C60",
+      "C61"
+    ],
+    "result": "The current model improves upon the prior Eastwood et al. (2015) model by integrating nonlinear body mechanics and the spatial distribution of MeT channels along TRNs, rather than using a single effective channel approximation. This addresses key limitations of the prior mean-field approach, including neglect of nonlinear mechanics and inability to capture responses to variations in contact areas or stimulus timing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C3, C30, C32, C33, C60, and C61 collectively establish the model's improvements over prior work. The claims accurately describe limitations of the Eastwood et al. (2015) model (mean-field approximation, neglect of nonlinear mechanics) and how the current model addresses these through spatial integration of channels and nonlinear mechanics. These are well-supported by the subsequent validation against experimental data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C139"
+    ],
+    "result": "The model accurately reproduces neural responses to both simple stimuli (steps, ramps, sinusoids) and complex stimuli (pre-indentation, extended contacts), capturing symmetric and rapidly adapting responses, frequency-dependent behavior, and speed-dependent current amplitudes at both mean and individual realization levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C5, C85-C90, and C139 are strongly supported by experimental validation shown in Figure 3 and discussed throughout the Results. The model successfully recapitulates multiple features of TRN responses including onset-offset symmetry, adaptation, frequency doubling in sinusoidal responses, and speed-dependent amplitudes. Appendix 13 confirms individual-level accuracy beyond just mean responses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "Pre-indentation increases the neural response to subsequent indentation steps, contrary to expectations of adaptation. This unexpected finding is explained by the spatial distribution of tissue deformation and MeT channels: pre-indentation deforms tissue to create a more extended region of stimulation, activating more channels despite individual channel adaptation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36, C37, C92, C93, and C94 are well-supported by new experimental data in Figure 4 and model simulations. The experimental observation (C36, C92) is counterintuitive but clearly demonstrated. The mechanistic explanation (C37, C93) from model simulations is compelling and shown in Figure 4E. The comparison showing the prior mean-field model's failure to capture this effect (C94) validates the importance of spatial integration in the current model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C111",
+      "C140",
+      "C141"
+    ],
+    "result": "Internal hydrostatic pressure is a major contributor to touch sensitivity and a major source of experimental variability. The dissection procedure alters internal pressure differently in 'soft' versus 'stiff' worms, explaining why neural responses are variable for force-clamped but not displacement-clamped stimulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34, C35, C95-C101, C105-C108, C111, C140, and C141 form a coherent explanation supported by Figure 5. The model successfully explains the empirical observation from Eastwood et al. (2015) that soft and stiff worms show similar responses under displacement-clamp but different responses under force-clamp. The mechanistic explanation through pressure variation (estimated range 0.04-16 kPa for soft worms vs 40 kPa for stiff) is quantitatively validated against experimental data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C53",
+      "C54",
+      "C55",
+      "C115",
+      "C144"
+    ],
+    "result": "The mechanical response of C. elegans is captured by a nonlinear elastic cylindrical thin shell model in a pressure-dominated regime, where geometric nonlinearities (Green-Lagrange strain) are essential due to large displacements relative to shell thickness despite small strains. Internal pressure and shell stretching provide the dominant mechanical balance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C51, C53-C55, C115, and C144 establish the mechanical framework. The justification for nonlinear elasticity (large displacements, small strains) is physically sound. The numerical implementation using code-aster is validated against known solutions (C55, Appendix 5). The conclusion that pressure and stretching dominate over bending (C115, C144) is supported by analysis in Figure 6 showing the elastic energy becomes marginal as p/E increases.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C78",
+      "C84",
+      "C145",
+      "C146"
+    ],
+    "result": "The model estimates internal pressure at 40 kPa and Young's modulus at ~4 MPa for intact worms, consistent with measurements in related nematodes and prior studies. The model makes testable predictions about how indenter size affects force-indentation relations and how cuticle mutations should modify bulk modulus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78, C84, C145, and C146 are supported by quantitative validation. The pressure estimate (40 kPa) is consistent with measurements in Ascaris lumbricoides (C78). The Young's modulus (~4 MPa) agrees with prior estimates from bending stiffness. The bulk modulus prediction (150-230 kPa) matches independent measurements (140\u00b120 kPa) from Gilpin et al. (2015), providing strong validation. The testable predictions (C145, C146, Equation 12) are clearly formulated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C150",
+      "C151"
+    ],
+    "result": "The onset-offset symmetry of TRN responses arises from tangential (rather than orthogonal) forces acting on MeT channels. The strain tensor is diagonal, tangential forces have similar amplitudes but opposite signs at stimulus onset and offset, and the neural membrane constraint prevents symmetry in the orthogonal direction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C124-C129, C150, and C151 provide a mechanistic explanation for onset-offset symmetry grounded in thin shell mechanics. The diagonal strain tensor (C124, confirmed in Figure 8B), maximal tangential forces (C125, C127, shown in Figure 8C), and the physical reasoning about membrane constraints (C129) form a coherent explanation. This tangential gating model (C150, C151) differs fundamentally from prior orthogonal models and is well-justified by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C130",
+      "C132",
+      "C133",
+      "C152",
+      "C153",
+      "C154"
+    ],
+    "result": "Analysis of existing data favors a symmetric channel model (where individual channels respond to forces in both directions) over a directional model (where individual channels respond preferentially to one direction), though the evidence is not fully conclusive. Definitive discrimination would require experiments with controlled noise levels and stimulation at different positions along the TRN.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C130, C132, C133, C152-C154 present a careful analysis distinguishing symmetric vs directional channel models. The comparison in Figure 9B shows the directional model produces broader error distributions shifted to higher errors (C132), favoring the symmetric model (C133, C152). However, the authors appropriately acknowledge the evidence is not conclusive (C133) and propose specific experiments to definitively test this (C153, C154), demonstrating scientific rigor.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C142",
+      "C143",
+      "C145"
+    ],
+    "result": "The model predicts that neural response increases with indenter size in a pressure-dependent manner, and that the angular position of the TRN relative to the indentation bead affects the response due to circumferential variation in deformation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C142, C143, and C145 present testable predictions supported by model simulations in Figure 7. The bead size effect (C142, shown in Figure 7D with ~20% increase from 3 to 10 \u03bcm radius) is quantified by Equation 12 and agrees with O'Hagan et al. (2005). The angular position effect (C143) follows logically from the deformation profiles shown in Appendix 6. These are well-formulated predictions for future experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C67",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "The channel gating model incorporates elastic filaments connected to channels with elastic and frictional components, three-state kinetics (closed, subconducting, open), equilibrium gating, and mechanical coupling through filament extension modulating free energy differences. Channels are distributed in puncta along TRNs with log-normal spacing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62, C63, C67, C69-C74 describe the channel gating model components. The elastic-frictional mechanism (C62, from Eastwood et al. 2015) is retained and well-justified. The three-state model (C67, from Brown et al. 2008) and equilibrium assumption (C69) are reasonable simplifications. The mechanical coupling (C70, C71) through free energy modulation is standard. The spatial distribution (C72-C74, from O'Hagan et al. 2005 and Cueva et al. 2007) is empirically grounded. The model successfully reproduces experimental data, validating these choices.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C44",
+      "C45"
+    ],
+    "result": "C. elegans body structure consists of outer and inner tubes separated by fluid-filled pseudocoelom. Experiments use 5-10 \u03bcm radius probes to indent the body to ~10 \u03bcm depth, which is about half the shell radius and larger than its ~1 \u03bcm thickness.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C40, C44, and C45 provide anatomical and experimental context. The anatomical description (C38-C40) is supported by Figure 1 and citation to Altun and Hall (2009). The experimental parameters (C44, C45) accurately describe the methods used in the field and are relevant for justifying the modeling approach. These are well-established facts appropriately cited.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Touch sensation involves force transfer across skin and activation of mechanosensitive channels in somatosensory neurons. In various systems (mammals, Drosophila, C. elegans), mechanoreceptors depend on their association with specialized structures and extracellular/intracellular tethers. In C. elegans, TRNs embedded in skin with specialized ECM enable escape from predatory fungi, with sensitivity depending on both force and body mechanics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C7-C25 provide background on touch sensation across species and establish the biological context for C. elegans. These claims are well-supported by appropriate citations to the literature (Woo et al. 2014, Loewenstein and Mendelson 1965, Li and Ginty 2014, O'Hagan et al. 2005, Eastwood et al. 2015, etc.). The progression from general principles to C. elegans-specific findings is logical and establishes the rationale for the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C31"
+    ],
+    "result": "The Eastwood et al. (2015) model introduced an elastic tether mechanism inspired by the tip-link model for hair cells but differing in using tangential rather than vertical stretching. This tangential motion emerges from thin shell mechanics. The simplification was analogous to a mean-field approximation in physics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C29 and C31 accurately describe the prior model from Eastwood et al. (2015) with appropriate citations. The description of the elastic tether mechanism (C26), its inspiration from hair cell models (C27), the key difference of tangential vs vertical stretching (C28), the physical basis in thin shell mechanics (C29), and the analogy to mean-field approximations (C31) are all accurate characterizations of prior work that provide context for the current improvements.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C138",
+      "C139",
+      "C140",
+      "C141"
+    ],
+    "result": "The model explains several previously unexplained facets of the coupling between tissue mechanics and neural responses, including replicating experimentally observed currents across diverse indentation profiles, explaining variability patterns between force-clamp and displacement-clamp protocols, and identifying internal pressure variation as a major source of experimental variability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C138-C141 are summary statements of the model's contributions that are well-supported by the detailed results presented throughout the manuscript. These claims accurately synthesize the major findings demonstrated in Figures 3-5 and are appropriately conservative in their scope. They represent fair characterizations of what the model achieves.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C42",
+      "C43"
+    ],
+    "result": "Small punctures in the cuticle and skin are thought to decrease but not eliminate internal pressure, and have been demonstrated to decrease stiffness inferred from force-indentation curves.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42 and C43 describe effects of punctures on body mechanics. C42 uses appropriate speculative language ('thought to') for the incomplete pressure release. C43 is supported by citations to Park et al. (2007) and Eastwood et al. (2015) showing decreased stiffness. These claims provide context for understanding the dissection effects analyzed later in the manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C57"
+    ],
+    "result": "The assumption that internal pressure holds constant during stimulation is justified empirically based on the model's ability to reproduce experimental results.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C57 acknowledges that the constant pressure assumption is a simplification justified by empirical success rather than first principles. This is an appropriate modeling choice given the complexity of the system. The subsequent validation against multiple experimental datasets (Figures 2-5) supports this assumption as sufficient for the phenomena studied, though the authors appropriately note this is the 'simplest working hypothesis.'",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C59"
+    ],
+    "result": "MeT channels are proposed to be activated by the deformations described in the mechanical model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C59 is a core hypothesis of the model that is validated by the successful reproduction of experimental neural responses throughout the Results section. While stated as a proposal, the subsequent validation against diverse experimental data (Figures 3-5) provides strong support for this coupling between mechanical deformation and channel activation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C134",
+      "C137",
+      "C153",
+      "C154"
+    ],
+    "result": "Anisotropic channels would reduce the number of active channels and increase noise. Asymmetries between on- and off-currents should become more substantial with fewer stimulated channels if channels are not isotropic. Experiments with controlled noise and variable channel numbers could definitively distinguish symmetric from directional models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C134, C137, C153, and C154 present theoretical predictions and experimental designs to test channel symmetry. The reasoning about anisotropy effects on noise (C134) and asymmetry (C137, shown in Figure 9G) is sound. The proposed experiments (C153, C154) are well-designed to test the hypothesis, particularly the suggestion to stimulate the central 'dead-zone' where few channels are present. These represent thoughtful predictions for future work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C147",
+      "C148",
+      "C149"
+    ],
+    "result": "The model's best fit with zero-force boundary conditions at cylinder ends suggests the nematode body might relax longitudinal stress components, possibly through the annular cuticle structure acting as a shell with anisotropic Young's moduli. This could facilitate bending motions required for motility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C147-C149 are speculative interpretations of the boundary condition analysis. While the observation that zero-force boundary conditions work best is empirical (from the model fitting), the mechanistic explanations (C148, C149) are hypothetical. The language appropriately uses 'might' and 'could' to indicate speculation. However, no direct evidence is provided for the proposed mechanism through annular cuticle structure or its functional significance for motility. These are reasonable hypotheses but require experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C155",
+      "C156",
+      "C157"
+    ],
+    "result": "The current model assumes purely elastic material properties with frequency dependence arising from channel gating. While tissues are known to feature viscous effects, this elastic approximation successfully captures many observations. Future work will address viscoelastic effects relevant at high frequencies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C155-C157 acknowledge a limitation of the current model. The elastic assumption (C155) is a simplification, and the authors appropriately acknowledge that tissues have viscous effects (C156, citing Backholm et al. 2013). The statement that the model 'successfully captures many experimental observations' is supported by Figures 3-5. The acknowledgment that viscoelastic effects should be addressed in future work (C157) is appropriate scientific practice, recognizing model limitations while noting the current approach's success.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C158",
+      "C159",
+      "C160"
+    ],
+    "result": "The modeling relies on touch receptor neurons being close to the skin surface in thin layers, leading to tangential force effects peculiar to thin shells. Since these features are common in touch sensation, the results and methods are expected to be widely relevant.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C158-C160 identify a key assumption (proximity to skin surface) and its consequences (tangential forces from thin shell mechanics), then speculate about broader applicability. The identification of this assumption (C158, C159) is accurate and important for understanding the model's scope. The speculation about wide relevance (C160) is reasonable given that many touch receptors are indeed close to skin surfaces, though the claim appropriately uses 'expected' to indicate this is a prediction rather than demonstrated fact.",
+    "result_type": "MINOR"
+  }
+]

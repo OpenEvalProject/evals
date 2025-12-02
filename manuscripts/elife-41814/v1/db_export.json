@@ -1,0 +1,1444 @@
+{
+  "submission": {
+    "id": "a704c2e1-0d07-4e43-8acf-0c9f622b24b5",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T09:11:38.599779Z",
+    "updated_at": "2025-12-02T09:11:38.599779Z"
+  },
+  "content": [
+    {
+      "id": "9e7d1041-3a63-4081-abfc-62fcc66a46e7",
+      "submission_id": "a704c2e1-0d07-4e43-8acf-0c9f622b24b5",
+      "content_type": "manuscript",
+      "content_text": "# A calcium transport mechanism for atrial fibrillation in Tbx5-mutant mice\n\n## Authors\n\n- Wenli Dai<sup>1</sup> ([ORCID: 0000-0003-4328-9740](https://orcid.org/0000-0003-4328-9740))\n- Brigitte Laforest<sup>2</sup> ([ORCID: 0000-0001-6919-8922](https://orcid.org/0000-0001-6919-8922))\n- Leonid Tyan<sup>1</sup> ([ORCID: 0000-0001-9734-7286](https://orcid.org/0000-0001-9734-7286))\n- Kaitlyn M Shen<sup>2</sup>\n- Rangarajan D Nadadur<sup>2</sup>\n- Francisco J Alvarado<sup>3</sup> ([ORCID: 0000-0003-0552-9029](https://orcid.org/0000-0003-0552-9029))\n- Stefan R Mazurek<sup>4</sup>\n- Sonja Lazarevic<sup>2</sup>\n- Margaret Gadek<sup>2</sup>\n- Yitang Wang<sup>1</sup>\n- Ye Li<sup>1</sup> ([ORCID: 0000-0002-2969-2894](https://orcid.org/0000-0002-2969-2894))\n- Hector H Valdivia<sup>3</sup>\n- Le Shen<sup>1</sup> ([ORCID: 0000-0002-4367-5476](https://orcid.org/0000-0002-4367-5476))\n- Michael T Broman<sup>4</sup>\n- Ivan P Moskowitz<sup>2</sup> ([ORCID: 0000-0003-0014-4963](https://orcid.org/0000-0003-0014-4963)) \u2020\n- Christopher R Weber<sup>1</sup> ([ORCID: 0000-0002-2117-3184](https://orcid.org/0000-0002-2117-3184)) \u2020\n\n### Affiliations\n\n1. Department of Pathology University of Chicago Chicago United States\n2. Departments of Pediatrics, Pathology, and Human Genetics University of Chicago Chicago United States\n3. Department of Medicine, Division of Cardiovascular Medicine University of Wisconsin-Madison School of Medicine and Public Health Madison United States\n4. Department of Medicine University of Chicago Chicago United States\n5. Section of Neurosurgery, Department of Surgery University of Chicago Chicago United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nRisk for Atrial Fibrillation (AF), the most common human arrhythmia, has a major genetic component. The T-box transcription factor TBX5 influences human AF risk, and adult-specific Tbx5-mutant mice demonstrate spontaneous AF. We report that TBX5 is critical for cellular Ca2+ homeostasis, providing a molecular mechanism underlying the genetic implication of TBX5 in AF. We show that cardiomyocyte action potential (AP) abnormalities in Tbx5-deficient atrial cardiomyocytes are caused by a decreased sarcoplasmic reticulum (SR) Ca2+ ATPase (SERCA2)-mediated SR calcium uptake which was balanced by enhanced trans-sarcolemmal calcium fluxes (calcium current and sodium/calcium exchanger), providing mechanisms for triggered activity. The AP defects, cardiomyocyte ectopy, and AF caused by TBX5 deficiency were rescued by phospholamban removal, which normalized SERCA function. These results directly link transcriptional control of SERCA2 activity, depressed SR Ca2+ sequestration, enhanced trans-sarcolemmal calcium fluxes, and AF, establishing a mechanism underlying the genetic basis for a Ca2+-dependent pathway for AF risk.\n\n## Introduction\n\nAtrial fibrillation (AF) is the most common arrhythmia in humans, characterized by irregularly irregular atrial electrical activity, resulting in asynchronous atrial contraction. AF is a global problem, affecting more than 33 million people and approximately 25% of Americans over the age of forty (Nishida and Nattel, 2014; Weng et al., 2018). AF is associated with significant morbidity and mortality due to thromboembolic events, heart failure, and sudden cardiac death. AF also significantly complicates overall health care management, with AF patients costing five times more to treat than patients without AF (Andrade et al., 2014). The total annual cost to treat AF patients in the US is on the order of 26 billion dollars (Nishida and Nattel, 2014). AF is a highly significant and growing public health concern.\n\nA genetic basis for AF risk has been described in the last decade. Large community-based cohort studies indicate that heritability provides between 40% and 62% of AF risk (Nishida and Nattel, 2014; Christophersen et al., 2009). An emerging paradigm describes AF as a multifactorial disease with genetic predisposition that will determine the propensity of secondary clinical insults to cause AF. This model highlights the importance of understanding the molecular mechanisms underlying the genetic predisposition to AF. Genome-wide association studies (GWAS) studies have identified common risk variants and familial mutations at the T-box transcription factor 5 (TBX5) locus that result in increased risk for AF (McDermott et al., 2008; Sinner et al., 2014). Adult-specific Tbx5 knockout mice demonstrate primary spontaneous and sustained AF, providing evidence supporting the genetic implication at this locus. GWAS have also implicated multiple genes involved in cardiomyocyte calcium handling, including Atp2a2, encoding the sarcolemmal calcium ATPase SERCA2, and Sln and Pln, encoding direct binding SERCA2 inhibitors sarcolipin and phospholamban, respectively. We have previously demonstrated that these cardiomyocyte calcium control genes are direct TBX5 targets (Nadadur et al., 2016). These observations suggested that tight transcriptional control of SERCA2 activity may be central to atrial rhythm robustness and that variation in SERCA2 expression and activity may contribute to AF risk.\n\nThe cellular mechanisms causing the irregular electrical activity in AF are believed to include an abnormal myocardial substrate and formation of an ectopic trigger. Abnormal substrate refers to altered electrical conduction between cardiomyocytes. Ectopic trigger refers to cardiomyocyte ectopy, or initiation of electrical activity at regions outside of the sinoatrial node. Both of these cellular phenomena are observed in Tbx5 adult-specific mutant mice and have been associated with abnormal cellular calcium handling (Dobrev, 2010; Voigt et al., 2012; Voigt et al., 2014; Vest et al., 2005; Shanmugam et al., 2011; Neef et al., 2010; Macquaide et al., 2015; Liang et al., 2008; Lenaerts et al., 2009; Hove-Madsen et al., 2004; Greiser et al., 2011; El-Armouche et al., 2006; Brundel et al., 1999). We described the TBX5-dependent gene regulatory network essential for atrial rhythm control and identified downstream ion channels and transporters potentially important to rhythm control (Nadadur et al., 2016; Yang et al., 2017).\u00a0Triggered activity in the form of early and delayed afterdepolarizations (EADs and DADs) observed in Tbx5-deficient atrial cardiomyocytes could be rescued by heavy buffering of cytoplasmic calcium (Nadadur et al., 2016). Tbx5-dependent calcium handling has thereby emerged as a potential mediator of the myocardial physiologic abnormalities resulting in AF.\n\nWe sought to define the Tbx5-dependent cellular mechanisms responsible for abnormal calcium-dependent electrical activity. We found that Tbx5-dependent AF is associated with abnormal sarcoplasmic reticulum (SR) calcium uptake due to depressed SERCA2 expression, depressed SERCA function, and increased phospholamban expression. Decreased SR calcium uptake is compensated by increased Ca2+ extrusion from cardiomyocytes via sodium-calcium exchanger (NCX) current (INCX), which provides a mechanism for TBX5-dependent action potential (AP) prolongation and the propensity for triggered cellular ectopy. In the setting of enhanced NCX mediated Ca2+ efflux and depressed SR uptake, compensatory increases in L-type calcium current (ICaL) balance calcium extrusion to maintain steady state calcium homeostasis. Together these calcium handling alterations contribute to AP prolongation and triggered activity.\n\nWe further demonstrated that calcium handling abnormalities, AP alterations, and triggered activity are all normalized by knockout of phospholamban, which prevents Tbx5-dependent AF. These results establish a direct link between depressed SR Ca2+ sequestration, enhanced NCX activity, and AF. This model suggests that targeting calcium handling pathways may be a treatment approach for a subpopulation of AF patients.\n\n## Results\n\n### Cytoplasmic calcium is responsible for AP prolongation in Tbx5-mutant atrial cardiomyocytes\n\nWe previously reported that Tbx5-deficient atrial cardiomyocytes demonstrated AP prolongation and myocardial ectopy. We hypothesized that these defects were caused by cellular calcium handling abnormalities. We therefore surveyed the expression of known calcium handling genes in the adult-specific Tbx5 knockout model. We assessed gene expression in Tbx5fl/fl;R26CreERT2 and control R26CreERT2 mice at 10 weeks of age following tamoxifen (TM) treatment at 8 weeks of age. Consistent with previous observations, the adult Tbx5fl/fl;R26CreERT2 but not control mice developed spontaneous AF, showing an irregularly irregular heartbeat, by telemetric electrocardiogram (ECG) recordings (Figure 1A,B). As previously shown, APs and [Ca]i transients were prolonged in Tbx5fl/fl;R26CreERT2 (Figure 1C) (Nadadur et al., 2016). We assessed expression of genes important to cellular calcium handling in the left atrium by quantitative PCR (Figure 1D). mRNA transcripts for RyR2 (Ryr2) and SERCA2 (Atp2a2), two of the main determinants of sarcoplasmic reticulum (SR) calcium flux, were decreased by 61% and 71% respectively in Tbx5fl/fl;R26CreERT2 mice compared to R26CreERT2 controls (p=0.026 and p=0.001 for Ryr2 and Atp2a2 respectively) consistent with previous studies (Nadadur et al., 2016). In addition, phospholamban (Pln) mRNA expression was increased by 69% in Tbx5fl/fl;R26CreERT2 compared to R26CreERT2 (p=0.023), which would be expected to further depress SERCA2 activity. There was no significant difference in mRNA expression of the alpha 1C subunit of the L-type calcium channel (Cacna1c), the cardiac sodium calcium exchanger (Ncx1), or any of the calmodulins 1\u20133 (Calm1, Calm2, Calm3) (Figure 1C). These data are consistent with the hypothesis that the myocardial electrophysiology deficits in the Tbx5-deficient AF model may be due to abnormal calcium handling.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/41814/elife-41814-fig1-v1.jpg)\n\n**Figure 1.:** (A) Tbx5fl/fl;R26CreERT2 mice developed spontaneous AF as assessed by surface ECG compared to R26CreERT2. Traces are representative of 15 animals per genotype. (B) Poincar\u00e9 plot shows irregularly irregular rhythm in Tbx5fl/fl;R26CreERT2, consistent with AF, compared to normal sinus rhythm in R26CreERT2 mice. Poincar\u00e9 plots are each from one animal, andrepresentative of 15 animals per genotype. (C) Simultaneous AP and [Ca]i recordings show prolonged AP duration and slowed [Ca2+]i transient decay in Tbx5fl/fl;R26CreERT2 atrial cardiomyocytes compared to R26CreERT2. Recordings are representative of simultaneous [Ca]i and Em recordings (myocytes/mice; dual Em and [Ca]i from 5/5 R26CreERT2 and 17/5\u00a0Tbx5fl/fl;R26CreERT2, Em\u00a0only from 23/9 R26CreERT2 and 20/9 Tbx5fl/fl;R26CreERT2, and [Ca]i\u00a0only from 27/6 R26CreERT2 and 28/6 Tbx5fl/fl;R26CreERT2).\u00a0(D) Quantitative PCR was performed on RNA isolated from left atrial tissue of 3\u20135 animals per genotype. mRNA expression of a panel of calcium handling genes potentially important for rhythm regulation was determined. Ryr2 and Atp2a2 expression were decreased and Pln expression was increased in Tbx5fl/fl;R26CreERT2 relative to R26CreERT2 atria. (***p<0.001, **, p<0.01, *, p<0.05).\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/41814/elife-41814-fig1-figsupp1-v1.jpg)\n\nWe examined the relationship between myocardial electrophysiology deficits and calcium flux in Tbx5-mutant atria. In steady state, with each cardiomyocyte contraction cycle, calcium entering the cardiomyocyte (L-type calcium channel, ICaL) is extruded from the cell (predominantly via inward INCX). Similarly, calcium leaving the SR via RyR2 release or SR leak pathways is taken back up into the SR via SERCA2. We examined the effect of altered TBX5-dependent gene expression on these aspects of cardiomyocyte calcium flux. Given the observed changes in Ryr2 and Atp2a2 mRNA abundance, we hypothesized that AP prolongation in Tbx5 deficient cardiomyocytes was due to calcium handling defects downstream of initial Ca2+ entry through ICaL. To test this, we recorded APs in the presence and absence of the L-type Ca2+ channel blocker nifedipine. This approach blocks Ca2+ entry into the cell and indirectly removes the effect of Ca2+ entry on downstream Ca2+ handling pathways, including SR Ca2+ release/reuptake as well as the electrogenic effect of calcium transport out of the cell via inward INCX. 30 \u03bcM nifedipine completely inhibited L-type calcium current, preventing Ca2+ entry or release of SR calcium in control R26CreERT2 and Tbx5fl/fl;R26CreERT2 (Figure 2\u2014figure supplement 1). In control R26CreERT2 atrial cardiomyocytes, the effect of nifedipine on AP duration (APD)\u00a0was small, with 19 \u00b1 4% shortening of APD at 90% repolarization (APD90) (p=0.008) (Figure 2A). However, in Tbx5fl/fl;R26CreERT2 atrial cardiomyocytes, nifedipine had a profound effect: APD at 50% repolarization (APD50) was shortened by 16 \u00b1 6% and APD90 by 61 \u00b1 6% (p=0.02 and 0.007 respectively) (Figure 2B,C). Western blot with densitometry analysis for CaV1.2 showed no significant difference in protein expression (Figure 2D), in line with the qPCR data (Figure 1D), consistent with no TBX5-driven direct transcriptional regulation of L-type calcium channels. However, peak ICaL current was increased 92 \u00b1 34% (p=0.027) in Tbx5fl/fl;R26CreERT2 atrial cardiomyocytes compared to control R26CreERT2 (Figure 2E and F). The inactivation kinetics at peak ICaL were accelerated Tbx5fl/fl;R26CreERT2 compared to control R26CreERT2 ( \u03c4\u00a0=\u00a026.7\u00a0\u00b1\u00a03.4 ms vs. \u03c4\u00a0=\u00a040.0\u00a0\u00b1\u00a03.0 ms; p=0.05). Steady-state ICaL inactivation was unchanged (Figure 2\u2014figure supplement 2). These data suggest that increased ICaL may contribute to TBX5-loss associated AP prolongation and EADs. However, nifedipine also blocks SR Ca2+ release as well as downstream Ca2+ extrusion pathways, which also affect AP duration. Further, since late AP repolarization is dramatically prolonged (negative to \u221230 mV where ICaL is largely inactive) we hypothesized that Tbx5-deficiency disrupts Ca2+ handling pathways downstream of ICaL.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/41814/elife-41814-fig2-v1.jpg)\n\n**Figure 2.:** (A) Representative recording of an AP from R26CreERT2 atrial cardiomyocytes before and after 30 \u00b5M nifedipine treatment. (B) Representative recording of a Tbx5fl/fl;R26CreERT2 atrial cardiomyocytes before and after nifedipine treatment. (C) Paired APD properties before and after treatment with 30 \u00b5M nifedipine (myocytes/mice; n\u00a0=\u00a08/3Tbx5fl/fl;R26CreERT2 and n\u00a0=\u00a06/4 R26CreERT2). In R26CreERT2 cardiomyocytes, the effect of nifedipine on APD90 was small, but significant 19 \u00b1 4%. A much larger nifedipine effect was observed in Tbx5fl/fl;R26CreERT2 cardiomyocytes. APD50 decreased by 16 \u00b1 6% and APD90 decreased by 61 \u00b1 6% in the presence of nifedipine. (D) Western blot of atrial tissue in five animals for each genotype showed protein expression for the alpha 1C subunit of the L-type calcium channel (Cav1.2) was unchanged. (normalized to GAPDH) (E,F) Representative ICaL recordings show Peak L-type calcium current was increased in Tbx5fl/fl;R26CreERT2 cardiomyocytes compared to R26CreERT2 (G) Average IV relationship of L-type calcium current (myocytes/mice; n\u00a0=\u00a022/7 R26CreERT2 and 20/5 Tbx5fl/fl;R26CreERT2). (***p<0.001, **, p<0.01, *, p\u22640.05).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/41814/elife-41814-fig2-figsupp1-v1.jpg)\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/41814/elife-41814-fig2-figsupp2-v1.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A)\u00a0Protocol used to assess steady state inactivation of ICaL (representative trace from Tbx5fl/fl;R26CreERT2 cardiomyocytes) (B) Steady state inactivation of ICaL was the same in R26CreERT2 and Tbx5fl/fl;R26CreERT2 cardiomyocytes. (myocytes/mice; Representative of 4/9 R26CreERT2 and 3/10 Tbx5fl/fl;R26CreERT2).\n\n### Removal of Tbx5 results in decreased Ca2+ sparks and RyR2 expression, but no overall reduction in RyR2 open probability\n\nBecause RyR2 is a critically important sarcolemmal calcium extrusion channel and Ryr2 mRNA was downregulated in Tbx5-mutant atria, we investigated the Tbx5 dependent regulation of RyR2 protein expression and function. RyR2 protein expression was significantly decreased in left atria of Tbx5fl/fl;R26CreERT2 mice compared to R26CreERT2 mice by western blot (Figure 3A), consistent with the observed downregulation of Ryr2 mRNA (Figure 1B). We hypothesized that decreased RyR2 contributed to abnormal Ca2+ release from the SR and tested this by measuring local spontaneous RyR2-mediated Ca2+ release events (Ca2+ sparks) using confocal linescans (Figure 3B). The frequency of Ca2+ sparks in Tbx5fl/fl;R26CreERT2 atrial cardiomyocytes was decreased in comparison with R26CreERT2 atrial cardiomyocytes at different pacing frequencies from 0 to 2 Hz (Figure 3C). A decrease in calcium sparks can be due to either decreased RyR2 open probability or a reduced SR calcium load. To differentiate these possibilities, we first examined RyR2 function in the setting of reduced RYR2 expression by performing a [3H]-ryanodine binding assay. [3H]-ryanodine binding to RyR2 correlates with RyR2 open probability (Dobrev, 2010). Despite reduced ryanodine receptor expression, overall ryanodine binding was unchanged over the majority of the physiological range of calcium values, with no shift in calcium sensitivity (Figure 3D). This observation suggests that the alterations in spark frequency were not due to changes in total RyR2 open probability. Instead, it may be caused by diminished SR Ca2+ uptake, a SERCA-dependent property.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/41814/elife-41814-fig3-v1.jpg)\n\n**Figure 3.:** (A) Western blot from atrial tissue from 10 animals per genotype was used to measure RyR2 expression. RyR2 was significantly decreased in Tbx5fl/fl;R26CreERT2 atria compared to R26CreERT2 atria (normalized to GAPDH). (B) Fluo-4 loaded cardiomyocytes demonstrated reduced spark frequency in Tbx5fl/fl;R26CreERT2 compared to R26CreERT2 atrial cardiomyocytes (representative recordings). (C) Spark frequency was reduced at rest and after steady state pacing at different frequencies (myocytes/mice; n\u00a0=\u00a012/4 Tbx5fl/fl;R26CreERT2 and n\u00a0=\u00a012/3 R26CreERT2). (D) Ryanodine binding assay (without normalization) demonstrated no significant difference over the physiologic range of [Ca]i in Tbx5fl/fl;R26CreERT2 compared to R26CreERT2 (Weng et al., 2018). Each measure corresponds to an assay performed on pooled atria from 8 to 10 mice with three independent measures per condition (*p<0.05, **p<0.01, ***p<0.001).\n\n### Adult-specific Tbx5 deficiency reduces SERCA activity and SR load while increasing sodium-calcium exchanger activity\n\nWe next focused on the balance of diastolic calcium efflux pathways as potential mediators of Ca2+ mishandling by measuring SR Ca2+ content and protein expression and function of SERCA2 and NCX1. We observed that SERCA2 protein expression was decreased while NCX1 protein expression was increased in Tbx5fl/fl;R26CreERT2 in comparison with R26CreERT2 atria (Figure 4A,B). To define steady state SR Ca2+ content, we loaded cardiomyocytes with Fluo-4 AM and paced with a train of field stimuli to achieve a steady state Ca2+ content, peak Ca2+ content, and rate of Ca2+ removal were measured\u00a0(Figure 4C,D). The [Ca2+]i transient peaks were unchanged, but [Ca2+]i transient decay rates, corresponding to SR Ca2+ uptake and cellular Ca2+ extrusion, were slowed in Tbx5fl/fl;R26CreERT2 compared to R26CreERT2 atrial cardiomyocytes (Figure 4E,F) (Nadadur et al., 2016), consistent with defective Ca2+ removal from the cytosol. We also measured [Ca2+]i transients in voltage clamp mode using 40 ms square wave voltage clamp pulses from \u221280 to 0 mV (Figure 4\u2014figure supplement 1). Similar to the field stimulation experiments, [Ca2+]i transient decay rates were slowed, but [Ca2+]i transient peaks were decreased by 23 \u00b1 4% (p=0.02) in Tbx5fl/fl;R26CreERT2 cardiomyocytes compared to R26CreERT2, which suggests that AP prolongation is essential to maintaining peak twitch [Ca2+]i. The latter experiment is also consistent with depressed SR loads in Tbx5fl/fl;R26CreERT2 compared to R26CreERT2 atrial myocytes.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/41814/elife-41814-fig4-v1.jpg)\n\n**Figure 4.:** (A) Expression of SERCA2 was significantly decreased (normalized to GAPDH)\u00a0while (B) expression of NCX1 was significantly increased in Tbx5fl/fl;R26CreERT2 atria compared to R26CreERT2 atria as measured by western blot in 10 animals per genotype. (normalized to GAPDH) (C) Application of Na+ free caffeine solution after pacing to steady state at 1 Hz provided a measurement of SR load. In the absence of extracellular Na+, [Ca2+]i plateaued at high levels due to negligible role of non-NCX mediated extrusion in R26CreERT2 and Tbx5fl/fl;R26CreERT2 atrial cardiomyocytes. Removal of caffeine in the absence of external Na+ provided a measure of SERCA mediated SR calcium uptake (representative traces). (D) Restoration of external Na+, in the presence of sustained extracellular caffeine provided a measure of NCX mediated calcium efflux (representative traces). (E) The peak of steady state twitch [Ca2+]i transients was similar but (F) tau of [Ca2+]i decay, determined from twitch [Ca2+]i transients, was increased in Tbx5fl/fl;R26CreERT2 compared to R26CreERT2 cardiomyocytes (myocytes/mice; n\u00a0=\u00a027/6 R26CreERT2, n\u00a0=\u00a028/6 Tbx5fl/fl;R26CreERT2). (G) SR load, determined from peak caffeine transients was decreased in Tbx5fl/fl;R26CreERT2 compared to R26CreERT2 cardiomyocytes (myocytes/mice; n\u00a0=\u00a034/6 R26CreERT2, n\u00a0=\u00a032/6 Tbx5fl/fl;R26CreERT2). (H) SERCA activity, determined from the maximal rate of calcium decay was diminished in Tbx5fl/fl;R26CreERT2 compared to R26CreERT2 cardiomyocytes (myocytes/mice; n\u00a0=\u00a029/3 R26CreERT2, n\u00a0=\u00a032/3 Tbx5fl/fl;R26CreERT2). (I) NCX activity (decay slope), was increased at all levels of calcium in Tbx5fl/fl;R26CreERT2 cardiomyocytes (myocytes/mice; n\u00a0=\u00a035/3 R26CreERT2, n\u00a0=\u00a021/3 Tbx5fl/fl;R26CreERT2). (*p<0.05, **p<0.01, ***p<0.001).\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/41814/elife-41814-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** While the decay kinetics of Tbx5fl/fl;R26CreERT2 are slowed, there no differences in the initial rate of [Ca2+]i rise (R26CreERT2 rise slope\u00a0=\u00a0107\u00a0\u00b1\u00a011 F/Fo*s; Tbx5fl/fl;R26CreERT2 rise slope\u00a0=\u00a0108\u00a0\u00b1\u00a018 F/Fo*s, p=0.96). Average of all myocytes is shown in black with grey indicating standard error of mean (myocytes/mice; n\u00a0=\u00a05/3 R26CreERT2, n\u00a0=\u00a013/5 Tbx5fl/fl;R26CreERT2).\n\nWe hypothesized that decreased SERCA2 expression caused decreased SR load. We examined SERCA activity by synchronizing the opening of RyR2 channels while preventing Ca2+ extrusion through NCX using caffeine containing, sodium-free, Tyrode solution. This provides a measurement of the maximum release of Ca2+ into the cytosol from the SR, a measure of the SR Ca2+ load (Figure 4C,D). SR [Ca2+] was reduced by 24 \u00b1 8% (p=0.0005) in Tbx5fl/fl;R26CreERT2 compared with R26CreERT2 atrial cardiomyocytes (Figure 4G). SERCA activity was assessed from [Ca2+]i decay rate after SR release in the absence of external sodium (NCX inactive). Peak SERCA activity was reduced by 31 \u00b1 9% (p=0.006) in Tbx5fl/fl;R26CreERT2 compared with R26CreERT2 atrial cardiomyocytes (Figure 4C,H). NCX activity was assessed as the rate of change in [Ca2+]i decay in Na+ containing caffeine solution, preventing net SR uptake. Since NCX activity depends on [Ca]i, we plotted NCX as a function of the [Ca]i signal. NCX activity was\u00a0~60% higher in Tbx5fl/fl;R26CreERT2 in comparison with R26CreERT2 atrial cardiomyocytes (Figure 4D,I). Thus, removal of Tbx5 causes decreased SR Ca2+ load and decreased SERCA function, but increased NCX mediated Ca2+ extrusion. Increased inward NCX activity promotes cardiomyocyte depolarization, providing a mechanism for prolonged APs and increased ectopy in Tbx5-mutant atrial cardiomyocytes.\n\n### Genetic augmentation of SERCA activity and normalization of SR load eliminates susceptibility to AF\n\nWe hypothesized that Tbx5 deficiency reduces SERCA activity by decreasing SERCA2 protein expression (Figure 4A) and increasing expression of phospholamban (Pln), a negative regulator of SERCA2 (Figure 1D). If these were the primary causes of decreased SERCA function in Tbx5-mutant atria, reduced PLN or PLN phosphorylation (relieving inhibition of SERCA2) would be expected to normalize SERCA function. Western blot analysis showed that PLN expression was significantly increased in Tbx5fl/fl;R26CreERT2 compared with R26CreERT2 atria (Figure 5A). In addition, PLN phosphorylation was also increased at serine 16 in Tbx5fl/fl;R26CreERT2 compared to R26CreERT2. These data suggest PLN phosphorylation may be a compensatory mechanism in response to decreased SERCA expression and activity, but is insufficient to normalize SERCA function (Figure 4). Thus, we hypothesized that reduction of Pln gene expression would be more effective in restoring SERCA function.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/41814/elife-41814-fig5-v1.jpg)\n\n**Figure 5.:** (A) PLN expression was increased in Tbx5fl/fl;R26CreERT2 compared to R26CreERT2 as measured by western blot with five animals per genotype. PLN expression was normalized to GAPDH. The proportion of PLN S16, but not T17 phosphorylation was also increased (normalized to PLN). (B) Representative SR load and SERCA measurements in R26CreERT2, Tbx5fl/fl;R26CreERT2, Pln-/-;R26CreERT2, Tbx5fl/fl;Pln-/+;R26CreERT2 and Tbx5fl/fl;Pln-/-;R26CreERT2 atrial cardiomyocytes were collected as described in Figure 4. (C, D) SR load and SERCA function were significantly higher in Tbx5fl/fl;Pln-/+;R26CreERT2 and Tbx5fl/fl;Pln-/-;R26CreERT2 compared to Tbx5fl/fl;R26CreERT2 cardiomyocytes and comparable to R26CreERT2 cardiomyocytes. (E) [Ca2+]i transient peaks were unchanged in Tbx5fl/fl;R26CreERT2, Tbx5fl/fl;Pln-/+;R26CreERT2 and Tbx5fl/fl;Pln-/-;R26CreERT2, but increased in Pln-/-;R26CreERT2 cardiomyocytes. (F) [Ca2+]i transient decay rate in Tbx5fl/fl;Pln-/+;R26CreERT2 and Tbx5fl/fl;Pln-/-;R26CreERT2 cardiomyocytes were normalized to that of R26CreERT2 cardiomyocytes (myocytes/mice; n\u00a0=\u00a034/3 R26CreERT, n\u00a0=\u00a036/3 Tbx5fl/fl;R26CreERT2, n\u00a0=\u00a030/3 Pln-/-;R26CreERT2, n\u00a0=\u00a021/3 Tbx5fl/fl;Pln-/+;R26CreERT2, n\u00a0=\u00a027/3 Tbx5fl/fl;Pln-/- atrial cardiomyocytes). (*p<0.05, **p<0.01, ***p<0.001).\n\nWe assessed if Pln deficiency can affect SERCA function in a dose dependent manner by crossing the Tbx5fl/fl;R26CreERT2 with germline Pln knockout mice (Pln-/-;R26CreERT2) (Luo et al., 1994). We compared SR load and SERCA function in adult-specific Tbx5; Pln double mutant mice versus Tbx5 mutant mice. We measured SR load and SERCA function using caffeine-induced SR release in atrial cardiomyocytes from R26CreERT2, Tbx5fl/fl;R26CreERT2, Pln-/-;R26CreERT2, Tbx5fl/fl;Pln-/+;R26CreERT2 mice, and Tbx5fl/fl;Pln-/-;R26CreERT2 mice. Control Pln deficient mice (Pln-/-;R26CreERT2) had increased steady state SR load and SERCA activity relative to R26CreERT2 (Figure 5C,D). The decreased SR load and SERCA function observed in Tbx5 mutant mice (Tbx5fl/fl;R26CreERT2) was converted to elevated SR load and SERCA function after the removal of Pln (Tbx5fl/fl;Pln-/-; R26CreERT2) (Figure 5C,D). Pln loss alone increased peak twitch calcium. However, in the setting of combined Tbx5;Pln deficiency, peak twitch calcium and tau twitch were normalized to R26CreERT2 values (Figure 5E,F).\n\nWe next tested the possibility that decreased SERCA function was the mechanism of TBX5-deficiency-driven AP prolongation and triggered activity and that decreased Pln may rescue these defects. As we previously showed, Tbx5fl/fl;R26CreERT2 atrial cardiomyocytes exhibited significantly prolonged APs and frequent EADs and DADs compared to R26CreERT2 atrial cardiomyocytes (Figure 6A,B) (Nadadur et al., 2016). APs of Pln-/-;R26CreERT2 atrial cardiomyocytes were similar to R26CreERT2 controls (Figure 6C). The prolonged AP duration observed Tbx5fl/fl;R26CreERT2 was rescued in both Tbx5fl/fl;Pln+/-;R26CreERT2 and Tbx5fl/fl;Pln-/-;R26CreERT2 atrial cardiomyocytes (43 \u00b1 10% and 38 \u00b1 5% shorter than Tbx5fl/fl;R26CreERT2 respectively; p=0.01,\u00a00.0007) (Figure 6D,E). Along with normalization of AP duration, we observed significantly fewer EADs and DADs in Tbx5fl/fl;Pln-/-;R26CreERT2 cardiomyocytes (Figure 6F). The data demonstrate the importance of TBX5-driven SERCA activity on cellular electrophysiology and triggered activity in atrial cardiomyocytes and decreased Pln rescues both SERCA function and cardiomyocyte electrophysiological abnormalities in Tbx5-mutant mice.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/41814/elife-41814-fig6-v1.jpg)\n\n**Figure 6.:** Representative APs recorded from (A) R26CreERT2, (B)Tbx5fl/fl;R26CreERT2, (C)Pln-/-;R26CreERT2, (D)Tbx5fl/fl;Pln-/+;R26CreERT2, (E)Tbx5fl/fl;Pln-/-;R26CreERT2 atrial cardiomyocytes as described previously in Figure 2. (F) TBX5-loss dependent AP prolongation and frequency of triggered activity was normalized by phospholamban knockout (myocytes/mice: n\u00a0=\u00a018/7 R26CreERT2, n\u00a0=\u00a024/12 Tbx5fl/fl;R26CreERT2, n\u00a0=\u00a012/5 Pln-/-;R26CreERT2, n\u00a0=\u00a09/3 Tbx5fl/fl;Pln-/+;R26CreERT2, and n\u00a0=\u00a022/3 Tbx5fl/fl;Pln-/-;R26CreERT2). (*p<0.05, **p<0.01, ***p<0.001).\n\nThe data above show reducing Pln gene dosage rescues calcium handling defects, AP prolongation and triggered activity observed in Tbx5-mutant atrial cardiomyocytes. We hypothesized that normalizing these cardiomyocyte cellular defects would reduce AF susceptibility in Tbx5 knockout mice (Figure 7). We performed intracardiac burst pacing. All Tbx5fl/fl; R26CreERT2 mice (6/6) paced into AF, compared to none of the R26CreERT2 (0/5) or Pln-/-;R26CreERT2 littermate controls (0/7). Consistent with our hypothesis, AF susceptibility was significantly decreased in Tbx5; Pln compound knockouts: only 1/11 of Tbx5fl/fl;Pln-/-;R26CreERT2 paced into AF (Figure 7F). Thus, Tbx5-deficiency induced AF is due to calcium handling abnormalities, specifically decreased SR load and SERCA activity, and that modulation of the SERCA2 inhibitor, Pln, normalized SERCA activity and AF susceptibility caused by Tbx5 loss.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/41814/elife-41814-fig7-v1.jpg)\n\n**Figure 7.:** Representative intracardiac atrial electrogram recordings and corresponding surface ECG are shown from (A) R26CreERT2, (B)Tbx5fl/fl;R26CreERT2, (C)Pln-/-;R26CreERT2, (D)Tbx5fl/fl;Pln-/+;R26CreERT2, (E)Tbx5fl/fl;Pln-/-;R26CreERT2 atrial cardiomyocytes. A, atrial electrical signal; V, far field ventricular electrical signal. (F) AF was reproducibly demonstrated in 6/6 Tbx5 knockouts in contrast to 1/11 Pln/Tbx5 double knockouts, indicating rescue of atrial arrhythmogenesis. P values were determined by Fisher\u2019s exact test (n\u00a0=\u00a05 R26CreERT2, n\u00a0=\u00a06 Tbx5fl/fl;R26CreERT2, n\u00a0=\u00a07 Pln-/-;R26CreERT2, and n\u00a0=\u00a05 Tbx5fl/fl;Pln-/+;R26CreERT2, n\u00a0=\u00a011 Tbx5fl/fl;Pln-/- mice).\n\n## Discussion\n\nAF initiation has been linked to calcium handling abnormalities in computational and in vivo disease models (Grandi et al., 2011; Heijman et al., 2014). Ectopic or triggered activity in the form of EADs and DADs are often due to calcium handling abnormalities that increase NCX activity and promote AF initiation (Heijman et al., 2014). However, the mechanism underlying genetic predispositions for AF remain poorly understood. Genetic variants and mutations at the Tbx5 locus are associated with increased risk for human AF and Tbx5-mutant mice show both spontaneous and burst pacing-induced AF (Nadadur et al., 2016). We report a calcium transport mechanism for Tbx5-dependent ectopic activity. We show that TBX5 is a critical regulator of SERCA-mediated SR calcium handling and that Tbx5-deficient mice have increased NCX-mediated Ca2+ extrusion, balanced by increased ICaL mediated Ca2+ influx. These calcium handling abnormalities provide a mechanism explaining the frequent triggered activity observed after TBX5 knockout. We show that decreasing phospholamban dosage can normalize TBX5-loss associated cellular calcium handling abnormalities, shorten AP duration, prevent triggered activity, and diminish AF susceptibility.\n\n### Decreased SERCA activity and SR load in TBX5-loss associated atrial fibrillation\n\nWe and others have hypothesized that ectopic triggers of AF can be due to abnormal atrial calcium handling (Greiser et al., 2011; Bers and Grandi, 2011). Here we define this relationship in a model of spontaneous AF. We analyzed the major calcium transport pathways in atrial myocytes and demonstrated that the critical calcium handling deficit associated with Tbx5-loss is depressed SERCA-mediated SR calcium uptake. We report significant reduction of SERCA2 protein expression and function, consistent with human paroxysmal or chronic AF (Voigt et al., 2012; Voigt et al., 2014; El-Armouche et al., 2006; Brundel et al., 1999).\n\nThe mechanism causing cardiomyocyte depolarizations from depressed SERCA activity must be indirect, given that SERCA2 is localized to the intracellular SR membrane and therefore does not directly contribute to membrane potential itself. Instead, slowed SR calcium uptake from depressed SERCA activity provides higher cytosolic calcium driving force for calcium extrusion from the cell via electrogenic inward INCX.\n\n### Increased NCX activity in Tbx5- mutant atrial cardiomyocytes drives ectopic activity\n\nWe demonstrate increased NCX1 protein expression with Tbx5 knockout, a finding also observed in human and other animal models of AF (Neef et al., 2010; Lenaerts et al., 2009; Greiser et al., 2011; El-Armouche et al., 2006). Since protein expression, electrochemical driving force, and allosteric calcium regulation can all affect amplitude of inward INCX (Blaustein and Lederer, 1999), we measured NCX activity following loss of Tbx5. NCX activity was significantly increased at all levels of calcium (Figure 4I). Thus, increased NCX function coupled with prolonged [Ca2+]i transients, drives increased inward INCX, providing additional depolarizing current during the AP, contributing to its prolongation. While increased NCX function may partially compensate for the depressed SERCA function to bring down calcium levels, it may also promote calcium-induced DADs in the setting of inappropriately timed SR calcium release events. Previous modeling in ventricular cardiomyocytes predicted countervailing functions of SERCA and NCX (Li et al., 2011), which we observed in Tbx5 knockout mice. Our data further support that DADs, which are classically thought to relate to SR calcium overload can still occur with depressed SR loads in the appropriate context of depressed SERCA and elevated NCX function (Voigt et al., 2012).\n\nModeling suggests that compensatory increases in L-type calcium current in the setting of depressed SERCA function could be required to maintain systolic and diastolic calcium levels (Li et al., 2011). In line with the modeling, we observed enhanced peak ICaL with loss of Tbx5. This may account for early AP prolongation as well as EADs. It is interesting that peak [Ca]i is depressed using controlled square wave voltage clamp pulses (Figure 4\u2014figure supplement 1), which suggests that 40 ms is insufficient to maintain calcium entry in Tbx5 knockout, even in the setting of enhanced ICaL. However, in the setting of AP prolongation (Figure 2E\u2013G) peak twitch calcium levels are maintained. Additionally, the increase in calcium entering the cell through ICaL during the AP would be expected to balance a net increase in NCX mediated calcium extrusion (Figure 4I), a requirement for steady state [Ca2+]i homeostasis. However, our observations that L-type calcium channel expression is TBX5-independent (Figures 1D and 2D) and that genetically targeting only the Ca2+ efflux pathways in our model is sufficient to restore normal electrical activity (Figures 5\u20137) suggest that the ICaL change is not a primary TBX5-dependent effect. Furthermore, although ICaL is increased, it quickly inactivates in TBX5 knockout cardiomyocytes (Figure 2F). Together with our observation that nifedipine normalizes the APD, this supports that enhanced calcium entry impacts APD via secondary [Ca]i dependent mechanisms.\n\n### TBX5 loss results in reduced RyR2 expression\n\nIn addition to identifying the role of altered NCX and SERCA function, we assessed the importance of TBX5-driven RyR2 expression. RYR2 is a known susceptibility locus for AF and RYR2 mutations are correlated with AF\u00a0(Fatkin et al., 2017; Di Pino et al., 2014). We observed that RyR2 protein expression was significantly depressed following Tbx5 loss . Defective RyR2 function has also been associated with AF (Vest et al., 2005; King et al., 2013). Despite TBX5-dependent RyR2 expression, the ryanodine binding assay (Xu et al., 1998) suggested that RyR2 function is generally preserved over the physiologic range of calcium in Tbx5-mutant atria (Figure 3D). This suggests a compensatory mechanism must occur allowing for preserved RyR2 open probability in the setting of depressed protein expression. For example, CaMKII is a potential regulator of RyR2 function which could increase the open probability and thereby increase steady leakage or favor spontaneous local Ca2+ release events from the SR (Vest et al., 2005; Neef et al., 2010; Fischer et al., 2015) in Tbx5-deficient mice. In line with such compensation, we could not detect any differences in the calcium rise kinetics during controlled square wave voltage clamp pulses (Figure 4\u2014figure supplement 1). Nevertheless, RyR2 compensation in the setting of reduced expression could contribute to abnormal triggered activity in the setting of Tbx5 loss, and is an important topic for further investigation.\n\n### Abnormalities of the TBX5/SERCA2/PLN regulatory axis drive AF formation\n\nWe found that depressed SERCA function in TBX5 knockout was completely normalized with heterozygous or homozygous phospholamban knockout, which normalized AP duration, decreased frequency of afterdepolarizations, and reduced AF inducibility. This finding demonstrates the importance of SERCA2 to the pathophysiology of AF in the Tbx5-loss model. While phospholamban has been associated with AF by GWAS (Fatkin et al., 2017; Federico et al., 2017), its functional role is less clear. Although PLN is predominantly found in the ventricle (Bhupathy et al., 2007), we showed not only its expression is increased in the atria in the context of Tbx5 loss, but also PLN participates in rheostatic control of SERCA activity in the atria, which is sufficient to protect against AF inducibility (Figures 5\u20137). Our findings are further supported by patient studies. For example, in patients who experience post-operative AF, SERCA2 is significantly decreased in the atrial tissue (Zaman et al., 2016), but those with PLN mutations have decreased AF susceptibility in the context of arrhythmogenic right ventricular cardiomyopathy (Bourfiss et al., 2016). Thus, AF is a heterogeneous disease and there can be variability in how the calcium handling proteins are expressed (Dai et al., 2016) in different disease settings. The genetic background of an individual may be a critical determinant of how calcium handling moieties are disrupted to result in AF.\n\nIn summary, the most important features of the Tbx5-dependent SERCA2 and PLN regulatory axis are reduced SR uptake and load (Figure 8). In this setting, enhanced inward INCX and ICaL contributes to AP prolongation, and, more importantly, to cardiomyocyte ectopy. Finally, we demonstrate PLN as a potential means to augment SERCA function, restoring normal atrial myocyte electrical activity and normal sinus rhythm in Tbx5 knockout mice. Thus, the Tbx5 knockout model represents an excellent system to study pharmacologic rescue of SERCA activity, prevention of cardiomyocyte ectopy, and AF.\n\n![Figure 8.](https://cdn.elifesciences.org/articles/41814/elife-41814-fig8-v1.jpg)\n\n**Figure 8.:** (A) Excitation-contraction coupling of atrial cardiomyocytes is achieved through regulation of intracellular calcium handling. (B) Adult-specific Tbx5\u00a0knockout leads to decreased expression of SERCA2 and increased expression of PLN, leading to decreased SR Ca2+ load. In addition, removal of Tbx5 is associated with increased NCX1 expression and activity, thereby increasing Ca2+ extrusion, which is balanced by increased L-type calcium entry. (C) Combined Tbx5/Pln knockout relieves repression of SERCA2. This results in normalization of SERCA activity and rescue of cardiomyocyte ectopy, triggered activity, and AF observed with Tbx5 deficiency.\n\n### Broader implications for clinical treatment of AF\n\nAF has become an increasingly common cause of morbidity and mortality, underlying over one-third of stroke cases and significantly increases the risk for heart failure (Nishida and Nattel, 2014). Consequently, AF poses a significant socioeconomic burden. AF does not always exist in isolation, but rather in conjunction with other predisposing factors such as obesity, thyroid hormone alterations, or heart failure. Interestingly, disruptions in calcium handling proteins such as\u00a0the SERCA2-PLN regulatory axis are implicated as predisposing factors. In AF compounded by heart failure, decreased SERCA2 and phosphorylated PLN, and increased NCX1 expression were observed (Lugenbiel et al., 2015). Decrease in phosphorylated PLN coupled with an increase in total PLN has been found in animal models of obesity, potentially increasing risk of AF (Lima-Leopoldo et al., 2014; Lima-Leopoldo et al., 2008). These findings suggest a need to evaluate an individual\u2019s genetic background as well as changes in calcium handling proteins when considering predisposing factors for AF.\n\nCurrently, there are few effective and targeted AF therapies, in part due to an incomplete understanding of the mechanisms underlying AF. Recent studies of specific genetic loci for AF susceptibility have opened new opportunities to identify specific mechanisms at play in subpopulations of AF patients. Understanding these specific mechanisms may facilitate more effective personalized therapies to target specific atrial Ca2+ handling abnormalities. Our data is consistent with the knowledge that pharmacologic regulators of NCX1 or SERCA2 may normalize defects in cellular calcium handling in the atrium (Dobrev, 2010; Jost et al., 2013; Nagy et al., 2014; Ferrandi et al., 2013; Parikh et al., 2012). For example, a selective NCX1 inhibitor, ORM-10103, was shown to prevent cellular Ca2+ handling abnormalities in ischemic ventricular cardiomyocytes, possibly by limiting calcium entry through outward INCX (Jost et al., 2013; Kormos et al., 2014). The benefit of NCX inhibition might also be considered in human cases of AF with increased NCX activity. Further, resveratrol, which increases SERCA2 activity, has been shown to decrease AF, suggesting that targeting SERCA2 activity may be a viable therapeutic approach (Bai et al., 2016; Chong et al., 2015). In addition to providing specific insight into treating TBX5-loss associated AF, our findings may be more broadly applied. These data suggest that pharmacological treatment of AF may be improved by assessing for a defect in the TBX5-SERCA2-PLN axis followed by specifically targeting the defect to restore normal cardiomyocyte electrical activity. We expect this work and continued efforts to uncover mechanisms responsible for AF in subpopulations of patients will play a key role in advancing personalized therapeutics for AF.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Genetic reagent (M. musculus)</td>\n      <td>Tbx5fl/fl (Tbx5tm1Jse)</td>\n      <td>PMID: 11572777, 27582060</td>\n      <td>MGI:2387850</td>\n      <td>Dr. Jonathan G Seidman (Harvard)</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (M. musculus)</td>\n      <td>Pln-/- (Plntm1Egk)</td>\n      <td>PMID: 8062415</td>\n      <td>MGI:2158357</td>\n      <td>Dr. Evangelia Kranias (University of Cincinnati)</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (M. musculus)</td>\n      <td>Rosa26CreERT2(Gt(ROSA)26Sortm1(cre/ERT2)Tyj)</td>\n      <td>PMID: 17251932, 27582060</td>\n      <td>MGI:3790674</td>\n      <td>Dr. Tyler Jacks (Massachusetts Insititute of Technology)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Mouse anti-RyR2</td>\n      <td>ThermoFisher</td>\n      <td>Cat. #: MA3-925</td>\n      <td>WB (1:2000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Mouse anti-SERCA2</td>\n      <td>ThermoFisher</td>\n      <td>Cat. #: MA3-919</td>\n      <td>WB (1:1000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Mouse anti-NCX</td>\n      <td>ThermoFisher</td>\n      <td>Cat. #: MA3-926</td>\n      <td>WB (1:1000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Mouse anti-PLN</td>\n      <td>Badrilla</td>\n      <td>Cat. #: A010-14</td>\n      <td>WB (1:5000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Rabbit anti-pT17-PLN</td>\n      <td>Badrilla</td>\n      <td>Cat. #: A010-13</td>\n      <td>WB (1:5000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Rabbit anti-pS16-PLN</td>\n      <td>Badrilla</td>\n      <td>Cat. #: A010-12</td>\n      <td>WB (1:5000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Rabbit anti-Cav1.2</td>\n      <td>Alomone</td>\n      <td>Cat. #: ACC-003</td>\n      <td>WB (1:200)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Mouse anti-GAPDH</td>\n      <td>Millipore</td>\n      <td>Cat. #: MAB374</td>\n      <td>WB (1:10000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Goat anti-mouse-HRP</td>\n      <td>Thermofisher</td>\n      <td>Cat. #: 31437</td>\n      <td>WB (1:5000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Goat anti-rabbit-HRP</td>\n      <td>Thermofisher</td>\n      <td>Cat. #: 31463</td>\n      <td>WB (1:5000)</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Fluo-4 AM</td>\n      <td>Thermofisher</td>\n      <td>Cat. #: 14201</td>\n      <td>10 \u00b5M x 20 min</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Nifedipine</td>\n      <td>Sigma</td>\n      <td>Cat. #: N7634</td>\n      <td>30 \u00b5M</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Collagenase Type 2</td>\n      <td>Worthington Biochemical</td>\n      <td>Cat. # LS004177</td>\n      <td>1 g/L</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Tamoxifen</td>\n      <td>MP Biomedicals</td>\n      <td>Cat#: 156738</td>\n      <td>2 mg/injection x three doses</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Laminin</td>\n      <td>Invitrogen</td>\n      <td>Cat. #: 2039175</td>\n      <td>0.5 mg/ml</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>[3H]ryanodine</td>\n      <td>PerkinElmer</td>\n      <td>Cat. #: NET950250UC</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>TRIzol</td>\n      <td>Invitrogen</td>\n      <td>Cat. #: 15596026</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Ryanodine</td>\n      <td>MP Biomedicals</td>\n      <td>SKU #:0215377001</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Caffeine</td>\n      <td>Sigma</td>\n      <td>Cat. #: C0750</td>\n      <td>10 mM</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Clampex/Clampfit Data acquisition and analysis</td>\n      <td>Molecular Devices</td>\n      <td>Version 10.3.2.1</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>LabChart for electrophysiology studies</td>\n      <td>ADInstruments</td>\n      <td>Version 5 and 8</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Buffering analyses using MaxChelator</td>\n      <td>Stanford</td>\n      <td>WEBMAXCLITE v1.15</td>\n      <td>Chris Patton, Stanford University</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Western Blot quantification ImageJ</td>\n      <td>NIH</td>\n      <td>Version 1.48</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Hierarchical Statistical technique using R</td>\n      <td>R Core Team</td>\n      <td>Script from PMID: 29016722</td>\n      <td>Ken Macleod, Imperial College London</td>\n    </tr>\n    <tr>\n      <td>Commercial Assay or Kit</td>\n      <td>qScript cDNA synthesis kit</td>\n      <td>Quanta</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial \u00a0Assay or Kit</td>\n      <td>Power SYBR Green PCR Master Mix</td>\n      <td>Applied Biosystems</td>\n      <td></td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### Generation of mice\n\nThe Tbx5fl/fl, Pln-/- and Rosa26CreERT2 lines have all been previously described and were kept in a mixed genetic background (Luo et al., 1994; Bruneau et al., 2001; Ventura et al., 2007). Double knockout mice were generated by crossing Tbx5fl/fl;R26CreERT2 mice with germline Pln-/- mice. After two generations, we obtained Tbx5fl/fl;R26CreERT2 mice with either loss of one (Pln+/-) or both (Pln-/-) copies of Pln. All experiments were done using age- and genetic strain-matched littermate controls. Tamoxifen was administered for three consecutive days at a dose of 0.167 mg/kg body weight by intraperitoneal injection at 6\u201310 weeks of age, as previously described (Nadadur et al., 2016). All experiments were performed in accordance to The University of Chicago Institutional Animal Care and Use Committee (IACUC) approved protocol.\n\n### ECG recordings\n\n8-to 10- week-old mice were anesthetized using isoflurane, and telemetry transmitters (ETA-F10, Data Science International) were implanted in the back with leads tunneled to the right upper and left lower thorax, as previously described (Wheeler MT et al., JCI 2004). Baseline recordings were obtained for 24 hr after a post-implant recovery period of one day. ECG data was analyzed using LabChart 8 (AD Instruments).\n\n### Intracardiac electrophysiology studies\n\nDetailed protocols for intracardiac electrograms have been previously described (Nadadur et al., 2016). Briefly, 8- to 10- week-old mice were anesthetized with isoflurane and a vertical skin cut-down at the right jugular vein was performed. A 1.1 F octapolar catheter (EPR-800, Millar Instruments) was advanced in the right jugular vein to perform electrical stimulation. The catheter was connected to ADI BioAmp and PowerLab apparatus and signals were recorded using LabChart Software (ADInstruments). Atrial induction pacing was performed using burst pacing and the presence of at least three cycles of atrial tachycardia or fibrillation at least twice was considered positive.\n\n### [Ca2+]i transient measurement\n\nLangendorff perfusion with 2 mg/mL of Collagenase Type 2 (Worthington Biochemical) at 5 ml/min was used to isolate atrial cardiomyocytes. Cardiomyocytes were then plated on laminin coated glass bottom dishes for 30 min prior to incubation with 10 \u00b5M Fluo-4/AM (Molecular Probes/Invitrogen) in normal Tyrode\u2019s solution containing (in mM): 140 NaCl, 4 KCl, 10 glucose, 10 HEPES, and 1 MgCl2, 1 CaCl2 pH 7.4 using NaOH for 20 min at room temperature. Cells were perfused with prewarmed Tyrode for 10 min prior to imaging. Imaging was performed on an Olympus microscope with a 20x objective lens, a LAMBDA DG-4 power source with 488 nm excitation and 515 nm emission filters and a PMT (photomultiplier\u00a0tube) to record whole cell signal. Electrical field stimulation (Grass stimulator; Astro-Med) was performed at 1 Hz. SERCA and NCX measurements were performed by flowing sodium free Tyrode with 10 mM caffeine followed by sodium free Tyrode alone or Tyrode with caffeine respectively. Cells were returned to normal Tyrode in both cases at the end of the recording. [Ca2+]i transients are presented as total fluorescence intensity normalized to resting fluorescence (F/F0) obtained from steady-state resting conditions before field stimulation. [Ca2+]i transients and sparks were acquired in line-scan mode (3 ms per scan; pixel size 0.12 \u00b5m) using a Zeiss confocal microscope.\n\n### Whole-cell electrophysiological recordings\n\nAPs and voltage clamp recordings were recorded using standard ruptured patch protocol (Nadadur et al., 2016). We used current clamp mode with 0.5 nA\u00a0\u00d72 ms current clamp pulses to measure APs. Voltage clamp mode was used to measure capacitance transients and to study [Ca2+]i transients with fixed duration depolarizations. Cardiomyocytes are kept at 37\u00b0C and perfused with Tyrode solution (140 NaCl, 4 KCl, 1 MgCl2, 1 CaCl2, 10 HEPES, 10 Glucose, and pH 7.4 with NaOH). Internal pipette solution composition was (in mM): 20 KCl, 100 K-glutamate, 10 HEPES, 5 MgCl2, 10 NaCl, 5 Mg-ATP, 0.3 Na-GTP. Patch pipettes (World Precision Instruments) were pulled to have a mean resistance of 3.5\u20135 M\u2126. An Ag\u2013AgCl pellet and 3M KCl agar bridge was used to ground the bath. Liquid junction potentials, were always corrected after cell rupture.\n\nExternal solution for ICaL contained (in mM): 120 Tetraethylammonium-chloride, 10 CsCl, 10 Glucose, 10 HEPES, 1.5 MgCl2, 1 CaCl2, pH 7.4 with CsOH. Internal pipette solution contained (in mM): 100 Cs-methanesulfonate, 30 CsCl, 10 HEPES 5 EGTA, 2 MgCl2, 5 Mg-ATP, pH 7.2 with CsOH. ICaL was recorded during 200 ms voltage clamp pulses from a holding potential of \u221240 mV to test potentials ranging from \u221240 to\u00a060 mV, with pulses applied every 2 s in 5 mV increments. Peak current amplitudes were normalized to the cell capacitance (Cm) and presented as current density (A/F). Steady-state inactivation of ICaL was investigated using two-pulse protocol. Holding potential was \u221280 mV. The first pulse depolarized membrane from \u221260 to 20 mV with 10 mV increments during 500 ms, the second pulse depolarized the membrane to 10 mV for 50 ms. The inactivation curves were fit to a Boltzmann distribution.\n\nAcquisition was performed using an Axopatch-200B amplifier connected to a Digidata1550A acquisition system (Axon Instruments, Foster City, CA, USA). In recording filtering at 2 kHz was performed using the amplifier Bessel and sampled at 10 kHz. Analysis was performed using pCLAMP10 (Axon Instruments) and a home written analysis code.\n\n### Western blots\n\nAtrial tissue was collected and homogenized as described previously (Alvarado et al., 2017), in a buffer containing 0.9% NaCl, 10 mM Tris-HCl pH 6.8, 20 mM NaF and protease inhibitors. Equal amounts of protein, as determined by Bradford assay, were loaded. 50 \u00b5g of tissue homogenate, in Laemmli buffer, was separated by SDS-PAGE in 4\u201320% TGX or AnyKD precast gels (Bio-Rad). Proteins were transferred to PVDF membrane using the iblot2 transfer system (ThermoFisher) or wet transfer. Primary antibodies were as follows: anti-RyR2 (1:2000; MA3-925, ThermoFisher), SERCA2 (1:1000; MA3-919, ThermoFisher), NCX (1:1000; MA3-926, ThermoFisher), PLN (1:5000; A010-14, Badrilla), pT17-PLN (1:5000; A010-13, Badrilla), pS16-PLN (1:5000; A010-12, Badrilla), Cav1.2 (1:200; ACC-003, Alomone), GAPDH (1:10000; MAB374, Millipore). Secondary antibodies were: goat anti-mouse-HRP (1:5000; 31437, ThermoFisher) or goat anti-rabbit-HRP (1:5000; 31463, ThermoFisher). Secondary antibody concentrations were 5x higher when using the ibind Flex system. SuperSignal ECL reagent (ThermoFisher) was used to develop membranes followed by imaging with a ChemiDoc MP apparatus (Bio-Rad). Band intensities were quantified with the ImageLab software (Bio-Rad) or using ImageJ (NIH).\n\n### [3H]Ryanodine binding assay\n\nBinding assays were carried out following a protocol previously described (Federico et al., 2017). Binding mixtures contained 100 \u00b5g of protein from homogenates prepared from pooled atria (5\u20137 mice), 0.2 M KCl, 20 mM Hepes (pH 7.4), 6.5 nM [3H]ryanodine (PerkinElmer), 1 mM EGTA and enough CaCl2 to set free [Ca2+] between 10 nM (pCa2+ 8) and 100 \u00b5M (pCa2+ 4). The ratio between Ca2+ and EGTA was determined using MaxChelator (WEBMAXCLITE v1.15 http://maxchelator.stanford.edu/webmaxc/webmaxclite115.htm). Following a 2 hr incubation at 36\u00b0C, reactions were filtered through Whatman GF/B Filters using a Brandel M24-R Harvester. [3H]ryanodine binding was determined using a Beckman LS6500 scintillation counter and BioSafe II scintillation cocktail (RPI Corp). Non-specific binding was quantified in the presence of 2 \u00b5M unlabeled ryanodine (MP Biomedicals) and subtracted.\n\n### Quantitative real time PCR\n\nLeft atrial tissue of Tbx5fl/fl;R26CreERT2 and R26CreERT2 mice was removed two weeks after receiving tamoxifen and RNA was isolated using a Trizol (Invitrogen) based method. Reverse transcription reaction was carried out using the qScript cDNA synthesis kit (Quanta) according to the manufacturer\u2019s protocol. Quantitative RT-PCR was performed using the Power SYBR Green PCR Master Mix (Applied Biosystems) and run on an Applied Biosystems AB7500 machine. Relative fold changes were calculated using the comparative threshold cycle method (2-\u0394\u0394Ct), using glyceraldehyde-3-phosphate dehydrogenase (Gapdh) gene expression level as internal control.\n\n### PCR primers\n\n<table>\n  <thead>\n    <tr>\n      <th>Gene</th>\n      <th>F primer</th>\n      <th>R primer</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Tbx5</td>\n      <td>GGCATGGAAGGAATCAAGGT</td>\n      <td>CTAGGAAACATTCTCCTCCCTGC</td>\n    </tr>\n    <tr>\n      <td>Ryr2</td>\n      <td>CAAATCCTTCTGCTGCCAAG</td>\n      <td>CGAGGATGAGATCCAGTTCC</td>\n    </tr>\n    <tr>\n      <td>Atp2a2</td>\n      <td>CTGGTGATATAGTGGAAATTGCTG</td>\n      <td>GGTCAGGGACAGGGTCAGTA</td>\n    </tr>\n    <tr>\n      <td>Pln</td>\n      <td>TTATGCCAGGACGGCAAAAG</td>\n      <td>CACTGTGACGATCACCGAAG</td>\n    </tr>\n    <tr>\n      <td>Sln</td>\n      <td>CTGAGGTCCTTGGTAGCCTG</td>\n      <td>GGTGTGTCAGGCATTGTGAG</td>\n    </tr>\n    <tr>\n      <td>Cacna1c</td>\n      <td>CTACAGAAACCCATGTGAGCAT</td>\n      <td>CAGCCACGTTGTCAGTGTTG</td>\n    </tr>\n    <tr>\n      <td>Ncx1</td>\n      <td>TTCTCATACTCCTCGTCATCG</td>\n      <td>TTGAGGACACCTGTGGAGTG</td>\n    </tr>\n    <tr>\n      <td>Calm1</td>\n      <td>TGGGAATGGTTACATCAGTGC</td>\n      <td>CGCCATCAATATCTGCTTCTCT</td>\n    </tr>\n    <tr>\n      <td>Calm2</td>\n      <td>ACGGGGATGGGACAATAACAA</td>\n      <td>TGCTGCACTAATATAGCCATTGC</td>\n    </tr>\n    <tr>\n      <td>Calm3</td>\n      <td>GATGGCACCATTACCACCAAG</td>\n      <td>CGCTGTCTGTATCCTTCATCTTT</td>\n    </tr>\n  </tbody>\n</table>\n\n### Statistical analysis\n\nValues are represented as mean\u00a0\u00b1standard error of the mean (\u00b1SEM). Statistical significance for quantitative metrics of APs, SERCA, NCX, SR load, ICaL, spark frequency, and [Ca2+]i transients were determined using hierarchical statistical methods (Sikkel et al., 2017). Statistical significance for mRNA, and protein expression studies was determined using Student\u2019s t-test. Statistical significance of the nifedipine effect on AP duration was determined using two-tailed paired t-test. A two-tailed Fisher\u2019s exact test was used for statistical significance of count-based analysis of AF inducibility and EAD and DAD count. Statistical significance is designated as *p<0.05, **p<0.01, and ***p<0.001.\n",
+      "created_at": "2025-12-02T09:11:38.599779Z"
+    },
+    {
+      "id": "46571796-1c85-4a24-af2f-41e25d339644",
+      "submission_id": "a704c2e1-0d07-4e43-8acf-0c9f622b24b5",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Richard S Lewis, Stanford University School of Medicine United States\n\nReviewers:\n- Robert S Kass, Columbia University United States\n- David Eisner, U. Manchester United Kingdom\n\n## Review text\n\nDOI: [10.7554/eLife.41814.031](https://doi.org/10.7554/eLife.41814.031)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"A calcium transport mechanism for atrial fibrillation in Tbx5 mutant mice\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Richard Aldrich as the Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Robert S. Kass (Reviewer #1); David Eisner (Reviewer #3).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission. Our goal is to provide the essential revision requirements as a single set of instructions, so that you have a clear view of the revisions that are necessary for us to publish your work.\n\nSummary:\n\nThis is an interesting study of the effects of the T-box transcription factor TBX5 on the susceptibility to atrial fibrillation (AF), the most common and difficult to treat human cardiac arrhythmia. The authors provide convincing evidence that knockout of Tbx5 in adult mice leads to (1) decreased expression of the SR Ca2+ pump SERCA2 and increased expression of phospholamban, leading to a decreased level of SR Ca2+ loading; and (2) increased Na-Ca exchanger (NCX1) expression and activity, providing a mechanism for prolonged action potentials and triggered activity. Additional knockout of phospholamban restored normal SR loading and action potential duration and prevented triggered activity and AF in Tbx5-knockout mice. These results provide a mechanistic link from genetic (GWAS) studies to the cellular mechanisms of AF.\n\nEssential revisions:\n\nThe reviewers all found the paper to be interesting and important, but raised a number of concerns that must be adequately addressed before it can be accepted. Some of the required revisions will require further experimentation within the framework of the presented studies and techniques.\n\n1) In Figure 2, the AP is lengthened in the Tbx5 KO cells, and the effect of nifedipine to shorten the AP is greatly increased. The authors interpret this as an effect of prolonged and increased NCX current, but a change in Cav1.2 activity may also contribute. Cav1.2 channels could be more active in the KO cells if there is less Ca2+-dependent inactivation due to less CICR (from the reduced SR Ca content). This could contribute to the prolonged APD and to a more pronounced effect of nifedipine in blocking these channels. To address this point, the authors should conduct voltage clamp recordings of the Cav1.2 current to monitor the degree of inactivation in WT vs. KO, with and without nifedipine. Simultaneous measurement of [Ca2+]i would help establish a basis for these effects.\n\n2) The authors suggest that a larger NCX current occurs in the Tbx5 KO cells because of an increased NCX and decreased SERCA, but this needs some qualification. In the steady state, the amount of Ca pumped out of the cell must balance influx through L-type channels (assuming negligible PMCA activity). Thus, changes in SERCA and NCX cannot affect the integral of the NCX current. If the long plateau of the action potential in Figure 2B reflects an increase of delayed NCX current (due to prolongation of the Ca2+ transient by decreased SERCA), then this must be associated with a decrease of NCX in the earlier stage of the action potential. Is there any evidence for this? As suggested above (#1), simultaneous recording of the action potential and [Ca2+]i in control and Tbx5 KO cells would help to clarify this point.\n\n3) In Figure 4E, the lack of effect of Tbx5 KO on the amplitude of the twitch Ca2+ transient is interesting given that SR Ca2+ content is decreased. Two potential compensatory mechanisms should be addressed. 1) It may be a consequence of the prolongation of the AP. Stimulation of the cells with constant-duration square voltage clamp pulses while measuring [Ca2+]i (see #1 above) would show whether the Ca transient is now less in Tbx5 than control. 2) It looks as though, as a consequence of the slowing of decay of the Ca2+ transient (Figure 4F), the diastolic [Ca2+]i is elevated. This may reduce cytoplasmic Ca2+ buffering such that a smaller total release of Ca2+ from the SR could result in an unchanged amplitude of the Ca2+ transient. Please comment on this possibility.\n\n4) The statistical analysis may need to be modified. In Figure 1, please state the actual numbers of animals used in each group and for the t test. In Figure 2, 3C, 4E-I, and 5C-F, unless each myocyte comes from a different heart, it is invalid to use the number of cells as the \"n\" values for the t test (see Lazic, BMC Neurosci 2010;11:5). Either use hierarchical or nested statistical approaches (e.g., Sikkel, Francis and Howard, et al. 2017) or simply average cells from the same heart and reduce n to be the number of hearts.\n\n5) Although PLB mRNA is increased in Tbx5 KO mice, the functional contribution of PLB needs to be addressed by examining the phosphorylation status of PLB16 and PLB17.\n\n6) The role of increased NCX in causing AF in Tbx5-KO mice needs to be tested directly. Can an NCX inhibitor eliminate EADs and DADs in Tbx5-KO myocytes?\n\n7) The atrial phenotype of the Tbx5 KO mouse (reduced RyR expression, increased NCX, reduced SERCA activity and SR Ca2+ load) are typical heart failure phenotypes. This raises the question of whether the observed phenotype indicates the underlying basis of AF, or is secondary to ventricular changes leading to heart failure. This question may be addressed using the mouse model before it has progressed to the heart failure stage.\n",
+      "created_at": "2025-12-02T09:11:38.599779Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T09:11:38.599779Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T09:11:38.599779Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "30042cc8-8703-4bcd-a273-a6de53f02b18",
+      "content_id": "9e7d1041-3a63-4081-abfc-62fcc66a46e7",
+      "claim_id": "C1",
+      "claim": "Atrial fibrillation (AF) is the most common arrhythmia in humans, characterized by irregularly irregular atrial electrical activity, resulting in asynchronous atrial contraction.",
+      "claim_type": "EXPLICIT",
+      "source": "Atrial fibrillation (AF) is the most common arrhythmia in humans, characterized by irregularly irregular atrial electrical activity, resulting in asynchronous atrial contraction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definitional statement about AF that draws from established medical knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:11:38.599779Z"
+    },
+    {
+      "id": "9a04674b-7b89-412e-8bfc-bfb17f91d114",
+      "content_id": "9e7d1041-3a63-4081-abfc-62fcc66a46e7",
+      "claim_id": "C2",
+      "claim": "AF affects more than 33 million people globally.",
+      "claim_type": "EXPLICIT",
+      "source": "AF is a global problem, affecting more than 33 million people and approximately 25% of Americans over the age of forty (Nishida and Nattel, 2014; Weng et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Nishida and Nattel, 2014 and Weng et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:11:38.599779Z"
+    },
+    {
+      "id": "01928eeb-8c81-4448-b505-4dfa134221a1",
+      "content_id": "9e7d1041-3a63-4081-abfc-62fcc66a46e7",
+      "claim_id": "C3",
+      "claim": "Approximately 25% of Americans over the age of forty are affected by AF.",
+      "claim_type": "EXPLICIT",
+      "source": "AF is a global problem, affecting more than 33 million people and approximately 25% of Americans over the age of forty (Nishida and Nattel, 2014; Weng et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Nishida and Nattel, 2014 and Weng et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:11:38.599779Z"
+    },
+    {
+      "id": "e04e16da-4319-4520-8f08-ee987a981338",
+      "content_id": "9e7d1041-3a63-4081-abfc-62fcc66a46e7",
+      "claim_id": "C4",
+      "claim": "AF is associated with significant morbidity and mortality due to thromboembolic events, heart failure, and sudden cardiac death.",
+      "claim_type": "EXPLICIT",
+      "source": "AF is associated with significant morbidity and mortality due to thromboembolic events, heart failure, and sudden cardiac death.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of established medical knowledge about AF complications.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:11:38.599779Z"
+    },
+    {
+      "id": "dbaa5e4c-8e24-48aa-a77c-7e5b634bc87f",
+      "content_id": "9e7d1041-3a63-4081-abfc-62fcc66a46e7",
+      "claim_id": "C5",
+      "claim": "AF patients cost five times more to treat than patients without AF.",
+      "claim_type": "EXPLICIT",
+      "source": "AF also significantly complicates overall health care management, with AF patients costing five times more to treat than patients without AF (Andrade et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Andrade et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:11:38.599779Z"
+    },
+    {
+      "id": "4d2363b0-91c2-4f7c-9c75-8e53b45ae8ac",
+      "content_id": "9e7d1041-3a63-4081-abfc-62fcc66a46e7",
+      "claim_id": "C6",
+      "claim": "The total annual cost to treat AF patients in the US is on the order of 26 billion dollars.",
+      "claim_type": "EXPLICIT",
+      "source": "The total annual cost to treat AF patients in the US is on the order of 26 billion dollars (Nishida and Nattel, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Nishida and Nattel, 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:11:38.599779Z"
+    },
+    {
+      "id": "acc7e201-b9a6-4fa6-9617-f8b8d9496984",
+      "content_id": "9e7d1041-3a63-4081-abfc-62fcc66a46e7",
+      "claim_id": "C7",
+      "claim": "Heritability provides between 40% and 62% of AF risk.",
+      "claim_type": "EXPLICIT",
+      "source": "Large community-based cohort studies indicate that heritability provides between 40% and 62% of AF risk (Nishida and Nattel, 2014; Christophersen et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Nishida and Nattel, 2014 and Christophersen et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:11:38.599779Z"
+    },
+    {
+      "id": "bdcc9bc5-401b-4ec0-83c6-5b4a96b8b456",
+      "content_id": "9e7d1041-3a63-4081-abfc-62fcc66a46e7",
+      "claim_id": "C8",
+      "claim": "Genome-wide association studies (GWAS) have identified common risk variants and familial mutations at the T-box transcription factor 5 (TBX5) locus that result in increased risk for AF.",
+      "claim_type": "EXPLICIT",
+      "source": "Genome-wide association studies (GWAS) studies have identified common risk variants and familial mutations at the T-box transcription factor 5 (TBX5) locus that result in increased risk for AF (McDermott et al., 2008; Sinner et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to McDermott et al., 2008 and Sinner et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:11:38.599779Z"
+    },
+    {
+      "id": "97f38213-7008-47c8-98d6-d9099c9213aa",
+      "content_id": "9e7d1041-3a63-4081-abfc-62fcc66a46e7",
+      "claim_id": "C9",
+      "claim": "Adult-specific Tbx5 knockout mice demonstrate primary spontaneous and sustained AF.",
+      "claim_type": "EXPLICIT",
+      "source": "Adult-specific Tbx5 knockout mice demonstrate primary spontaneous and sustained AF, providing evidence supporting the genetic implication at this locus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the mouse model that is supported by the study's own data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:11:38.599779Z"
+    },
+    {
+      "id": "a872e50e-9f44-4e0a-8cb0-3437283e29b9",
+      "content_id": "9e7d1041-3a63-4081-abfc-62fcc66a46e7",
+      "claim_id": "C10",
+      "claim": "GWAS have implicated multiple genes involved in cardiomyocyte calcium handling, including Atp2a2, Sln, and Pln.",
+      "claim_type": "EXPLICIT",
+      "source": "GWAS have also implicated multiple genes involved in cardiomyocyte calcium handling, including Atp2a2, encoding the sarcolemmal calcium ATPase SERCA2, and Sln and Pln, encoding direct binding SERCA2 inhibitors sarcolipin and phospholamban, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about GWAS findings that draws from established literature.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:11:38.599779Z"
+    },
+    {
+      "id": "9b8a12b9-76ea-476c-8f84-f157767b8553",
+      "content_id": "9e7d1041-3a63-4081-abfc-62fcc66a46e7",
+      "claim_id": "C11",
+      "claim": "Cardiomyocyte calcium control genes are direct TBX5 targets.",
+      "claim_type": "EXPLICIT",
+      "source": "We have previously demonstrated that these cardiomyocyte calcium control genes are direct TBX5 targets (Nadadur et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Nadadur et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:11:38.599779Z"
+    },
+    {
+      "id": "4dc96a58-bb09-4037-81ce-7eddb52ec7a9",
+      "content_id": "9e7d1041-3a63-4081-abfc-62fcc66a46e7",
+      "claim_id": "C12",
+      "claim": "Tbx5fl/fl;R26CreERT2 mice developed spontaneous AF as assessed by surface ECG compared to R26CreERT2.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with previous observations, the adult Tbx5fl/fl;R26CreERT2 but not control mice developed spontaneous AF, showing an irregularly irregular heartbeat, by telemetric electrocardiogram (ECG) recordings (Figure 1A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by ECG data shown in Figure 1A,B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:11:38.599779Z"
+    },
+    {
+      "id": "8540db8a-9121-45d8-964c-876c57d71647",
+      "content_id": "9e7d1041-3a63-4081-abfc-62fcc66a46e7",
+      "claim_id": "C13",
+      "claim": "APs and [Ca]i transients were prolonged in Tbx5fl/fl;R26CreERT2.",
+      "claim_type": "EXPLICIT",
+      "source": "As previously shown, APs and [Ca]i transients were prolonged in Tbx5fl/fl;R26CreERT2 (Figure 1C) (Nadadur et al., 2016).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data in Figure 1C and citation to Nadadur et al., 2016.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:11:38.599779Z"
+    },
+    {
+      "id": "09a9a47e-d7e8-4e48-a5a0-2f7b17daabe3",
+      "content_id": "9e7d1041-3a63-4081-abfc-62fcc66a46e7",
+      "claim_id": "C14",
+      "claim": "Ryr2 mRNA transcripts were decreased by 61% in Tbx5fl/fl;R26CreERT2 mice compared to R26CreERT2 controls (p=0.026).",
+      "claim_type": "EXPLICIT",
+      "source": "mRNA transcripts for RyR2 (Ryr2) and SERCA2 (Atp2a2), two of the main determinants of sarcoplasmic reticulum (SR) calcium flux, were decreased by 61% and 71% respectively in Tbx5fl/fl;R26CreERT2 mice compared to R26CreERT2 controls (p=0.026 and p=0.001 for Ryr2 and Atp2a2 respectively) consistent with previous studies (Nadadur et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by qPCR data presented in the manuscript and citation to Nadadur et al., 2016.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:11:38.599779Z"
+    },
+    {
+      "id": "6afebc46-2362-4374-8ff7-9aaf8d1826ee",
+      "content_id": "9e7d1041-3a63-4081-abfc-62fcc66a46e7",
+      "claim_id": "C15",
+      "claim": "Atp2a2 mRNA transcripts were decreased by 71% in Tbx5fl/fl;R26CreERT2 mice compared to R26CreERT2 controls (p=0.001).",
+      "claim_type": "EXPLICIT",
+      "source": "mRNA transcripts for RyR2 (Ryr2) and SERCA2 (Atp2a2), two of the main determinants of sarcoplasmic reticulum (SR) calcium flux, were decreased by 61% and 71% respectively in Tbx5fl/fl;R26CreERT2 mice compared to R26CreERT2 controls (p=0.026 and p=0.001 for Ryr2 and Atp2a2 respectively) consistent with previous studies (Nadadur et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by qPCR data presented in the manuscript and citation to Nadadur et al., 2016.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:11:38.599779Z"
+    },
+    {
+      "id": "dd3ba375-2724-4123-b7ee-7ba961adc699",
+      "content_id": "9e7d1041-3a63-4081-abfc-62fcc66a46e7",
+      "claim_id": "C16",
+      "claim": "Phospholamban (Pln) mRNA expression was increased by 69% in Tbx5fl/fl;R26CreERT2 compared to R26CreERT2 (p=0.023).",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, phospholamban (Pln) mRNA expression was increased by 69% in Tbx5fl/fl;R26CreERT2 compared to R26CreERT2 (p=0.023), which would be expected to further depress SERCA2 activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by qPCR data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:11:38.599779Z"
+    },
+    {
+      "id": "f1f65afa-3dfd-4faa-9cf8-f905124790fd",
+      "content_id": "9e7d1041-3a63-4081-abfc-62fcc66a46e7",
+      "claim_id": "C17",
+      "claim": "There was no significant difference in mRNA expression of Cacna1c, Ncx1, or calmodulins 1-3 between Tbx5fl/fl;R26CreERT2 and R26CreERT2.",
+      "claim_type": "EXPLICIT",
+      "source": "There was no significant difference in mRNA expression of the alpha 1C subunit of the L-type calcium channel (Cacna1c), the cardiac sodium calcium exchanger (Ncx1), or any of the calmodulins 1\u20133 (Calm1, Calm2, Calm3) (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by qPCR data shown in Figure 1D (note: text says Figure 1C but refers to panel D).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:11:38.599779Z"
+    },
+    {
+      "id": "045a7c61-8fea-4ca6-a82b-8e81f5077fc5",
+      "content_id": "9e7d1041-3a63-4081-abfc-62fcc66a46e7",
+      "claim_id": "C18",
+      "claim": "30 \u03bcM nifedipine completely inhibited L-type calcium current in control R26CreERT2 and Tbx5fl/fl;R26CreERT2.",
+      "claim_type": "EXPLICIT",
+      "source": "30 \u03bcM nifedipine completely inhibited L-type calcium current, preventing Ca2+ entry or release of SR calcium in control R26CreERT2 and Tbx5fl/fl;R26CreERT2 (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data shown in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:11:38.599779Z"
+    },
+    {
+      "id": "ae52a588-0077-4636-8458-2500baef8133",
+      "content_id": "9e7d1041-3a63-4081-abfc-62fcc66a46e7",
+      "claim_id": "C19",
+      "claim": "In control R26CreERT2 atrial cardiomyocytes, nifedipine caused 19 \u00b1 4% shortening of APD90 (p=0.008).",
+      "claim_type": "EXPLICIT",
+      "source": "In control R26CreERT2 atrial cardiomyocytes, the effect of nifedipine on AP duration (APD) was small, with 19 \u00b1 4% shortening of APD at 90% repolarization (APD90) (p=0.008) (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:11:38.599779Z"
+    },
+    {
+      "id": "63b58590-23e2-419f-a1ab-74556d739dbe",
+      "content_id": "9e7d1041-3a63-4081-abfc-62fcc66a46e7",
+      "claim_id": "C20",
+      "claim": "In Tbx5fl/fl;R26CreERT2 atrial cardiomyocytes, nifedipine shortened APD50 by 16 \u00b1 6% (p=0.02) and APD90 by 61 \u00b1 6% (p=0.007).",
+      "claim_type": "EXPLICIT",
+      "source": "However, in Tbx5fl/fl;R26CreERT2 atrial cardiomyocytes, nifedipine had a profound effect: APD at 50% repolarization (APD50) was shortened by 16 \u00b1 6% and APD90 by 61 \u00b1 6% (p=0.02 and 0.007 respectively) (Figure 2B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 2B,C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:11:38.599779Z"
+    },
+    {
+      "id": "d415cf19-d7a2-435d-8da3-cb1218e61e0d",
+      "content_id": "9e7d1041-3a63-4081-abfc-62fcc66a46e7",
+      "claim_id": "C21",
+      "claim": "Western blot with densitometry analysis for CaV1.2 showed no significant difference in protein expression between Tbx5fl/fl;R26CreERT2 and R26CreERT2.",
+      "claim_type": "EXPLICIT",
+      "source": "Western blot with densitometry analysis for CaV1.2 showed no significant difference in protein expression (Figure 2D), in line with the qPCR data (Figure 1D), consistent with no TBX5-driven direct transcriptional regulation of L-type calcium channels.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by Western blot data shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:11:38.599779Z"
+    },
+    {
+      "id": "c228f713-d96f-413b-931d-4ad517c58b5f",
+      "content_id": "9e7d1041-3a63-4081-abfc-62fcc66a46e7",
+      "claim_id": "C22",
+      "claim": "Peak ICaL current was increased 92 \u00b1 34% (p=0.027) in Tbx5fl/fl;R26CreERT2 atrial cardiomyocytes compared to control R26CreERT2.",
+      "claim_type": "EXPLICIT",
+      "source": "However, peak ICaL current was increased 92 \u00b1 34% (p=0.027) in Tbx5fl/fl;R26CreERT2 atrial cardiomyocytes compared to control R26CreERT2 (Figure 2E and F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by voltage clamp data shown in Figure 2E and F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:11:38.599779Z"
+    },
+    {
+      "id": "9ee97401-5f1d-48dc-b771-ea2e4ed49d52",
+      "content_id": "9e7d1041-3a63-4081-abfc-62fcc66a46e7",
+      "claim_id": "C23",
+      "claim": "The inactivation kinetics at peak ICaL were accelerated in Tbx5fl/fl;R26CreERT2 compared to control R26CreERT2 (\u03c4 = 26.7 \u00b1 3.4 ms vs. \u03c4 = 40.0 \u00b1 3.0 ms; p=0.05).",
+      "claim_type": "EXPLICIT",
+      "source": "The inactivation kinetics at peak ICaL were accelerated Tbx5fl/fl;R26CreERT2 compared to control R26CreERT2 ( \u03c4 = 26.7 \u00b1 3.4 ms vs. \u03c4 = 40.0 \u00b1 3.0 ms; p=0.05).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by analysis of ICaL kinetics from experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:11:38.599779Z"
+    },
+    {
+      "id": "352e8c6d-68d6-482e-80a6-209f9d5c9048",
+      "content_id": "9e7d1041-3a63-4081-abfc-62fcc66a46e7",
+      "claim_id": "C24",
+      "claim": "Steady-state ICaL inactivation was unchanged between Tbx5fl/fl;R26CreERT2 and R26CreERT2.",
+      "claim_type": "EXPLICIT",
+      "source": "Steady-state ICaL inactivation was unchanged (Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data shown in Figure 2\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:11:38.599779Z"
+    },
+    {
+      "id": "9961dcd3-8e28-48ea-bae7-33f5a30db88a",
+      "content_id": "9e7d1041-3a63-4081-abfc-62fcc66a46e7",
+      "claim_id": "C25",
+      "claim": "RyR2 protein expression was significantly decreased in left atria of Tbx5fl/fl;R26CreERT2 mice compared to R26CreERT2 mice.",
+      "claim_type": "EXPLICIT",
+      "source": "RyR2 protein expression was significantly decreased in left atria of Tbx5fl/fl;R26CreERT2 mice compared to R26CreERT2 mice by western blot (Figure 3A), consistent with the observed downregulation of Ryr2 mRNA (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by Western blot data shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:11:38.599779Z"
+    },
+    {
+      "id": "33c19394-a36c-45b2-b821-a6e585f3721e",
+      "content_id": "9e7d1041-3a63-4081-abfc-62fcc66a46e7",
+      "claim_id": "C26",
+      "claim": "The frequency of Ca2+ sparks in Tbx5fl/fl;R26CreERT2 atrial cardiomyocytes was decreased in comparison with R26CreERT2 atrial cardiomyocytes at different pacing frequencies from 0 to 2 Hz.",
+      "claim_type": "EXPLICIT",
+      "source": "The frequency of Ca2+ sparks in Tbx5fl/fl;R26CreERT2 atrial cardiomyocytes was decreased in comparison with R26CreERT2 atrial cardiomyocytes at different pacing frequencies from 0 to 2 Hz (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by confocal linescan data shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:11:38.599779Z"
+    },
+    {
+      "id": "f8f9a39c-86e9-4513-b658-257bc8243798",
+      "content_id": "9e7d1041-3a63-4081-abfc-62fcc66a46e7",
+      "claim_id": "C27",
+      "claim": "Overall ryanodine binding was unchanged over the majority of the physiological range of calcium values in Tbx5fl/fl;R26CreERT2 compared to R26CreERT2, with no shift in calcium sensitivity.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite reduced ryanodine receptor expression, overall ryanodine binding was unchanged over the majority of the physiological range of calcium values, with no shift in calcium sensitivity (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by [3H]-ryanodine binding assay data shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:11:38.599779Z"
+    },
+    {
+      "id": "900e79e7-3bdb-4144-9413-2bbaacdce86d",
+      "content_id": "9e7d1041-3a63-4081-abfc-62fcc66a46e7",
+      "claim_id": "C28",
+      "claim": "SERCA2 protein expression was decreased in Tbx5fl/fl;R26CreERT2 compared to R26CreERT2 atria.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that SERCA2 protein expression was decreased while NCX1 protein expression was increased in Tbx5fl/fl;R26CreERT2 in comparison with R26CreERT2 atria (Figure 4A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by Western blot data shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:11:38.599779Z"
+    },
+    {
+      "id": "101ab44f-bf24-4e76-9265-485c500adcfd",
+      "content_id": "9e7d1041-3a63-4081-abfc-62fcc66a46e7",
+      "claim_id": "C29",
+      "claim": "NCX1 protein expression was increased in Tbx5fl/fl;R26CreERT2 compared to R26CreERT2 atria.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that SERCA2 protein expression was decreased while NCX1 protein expression was increased in Tbx5fl/fl;R26CreERT2 in comparison with R26CreERT2 atria (Figure 4A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by Western blot data shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:11:38.599779Z"
+    },
+    {
+      "id": "8d4b6b99-381d-476e-acb7-24c85bfc859f",
+      "content_id": "9e7d1041-3a63-4081-abfc-62fcc66a46e7",
+      "claim_id": "C30",
+      "claim": "[Ca2+]i transient peaks were unchanged between Tbx5fl/fl;R26CreERT2 and R26CreERT2 atrial cardiomyocytes during field stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "The [Ca2+]i transient peaks were unchanged, but [Ca2+]i transient decay rates, corresponding to SR Ca2+ uptake and cellular Ca2+ extrusion, were slowed in Tbx5fl/fl;R26CreERT2 compared to R26CreERT2 atrial cardiomyocytes (Figure 4E,F) (Nadadur et al., 2016), consistent with defective Ca2+ removal from the cytosol.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by calcium imaging data shown in Figure 4E and citation to Nadadur et al., 2016.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:11:38.599779Z"
+    },
+    {
+      "id": "4543a22c-f6e1-4cb8-bba6-d9d651e13115",
+      "content_id": "9e7d1041-3a63-4081-abfc-62fcc66a46e7",
+      "claim_id": "C31",
+      "claim": "[Ca2+]i transient decay rates were slowed in Tbx5fl/fl;R26CreERT2 compared to R26CreERT2 atrial cardiomyocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "The [Ca2+]i transient peaks were unchanged, but [Ca2+]i transient decay rates, corresponding to SR Ca2+ uptake and cellular Ca2+ extrusion, were slowed in Tbx5fl/fl;R26CreERT2 compared to R26CreERT2 atrial cardiomyocytes (Figure 4E,F) (Nadadur et al., 2016), consistent with defective Ca2+ removal from the cytosol.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by calcium imaging data shown in Figure 4F and citation to Nadadur et al., 2016.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:11:38.599779Z"
+    },
+    {
+      "id": "bafe6816-ad08-4d10-8f9a-de5e8bc695fa",
+      "content_id": "9e7d1041-3a63-4081-abfc-62fcc66a46e7",
+      "claim_id": "C32",
+      "claim": "In voltage clamp mode, [Ca2+]i transient peaks were decreased by 23 \u00b1 4% (p=0.02) in Tbx5fl/fl;R26CreERT2 cardiomyocytes compared to R26CreERT2.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to the field stimulation experiments, [Ca2+]i transient decay rates were slowed, but [Ca2+]i transient peaks were decreased by 23 \u00b1 4% (p=0.02) in Tbx5fl/fl;R26CreERT2 cardiomyocytes compared to R26CreERT2, which suggests that AP prolongation is essential to maintaining peak twitch [Ca2+]i.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by voltage clamp calcium imaging data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:11:38.599779Z"
+    },
+    {
+      "id": "d92cbad8-f367-452a-944e-bb3e4b8daa72",
+      "content_id": "9e7d1041-3a63-4081-abfc-62fcc66a46e7",
+      "claim_id": "C33",
+      "claim": "SR [Ca2+] was reduced by 24 \u00b1 8% (p=0.0005) in Tbx5fl/fl;R26CreERT2 compared with R26CreERT2 atrial cardiomyocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "SR [Ca2+] was reduced by 24 \u00b1 8% (p=0.0005) in Tbx5fl/fl;R26CreERT2 compared with R26CreERT2 atrial cardiomyocytes (Figure 4G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by caffeine-induced SR release measurements shown in Figure 4G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:11:38.599779Z"
+    },
+    {
+      "id": "fea03b6a-e81a-4533-9b19-007229743138",
+      "content_id": "9e7d1041-3a63-4081-abfc-62fcc66a46e7",
+      "claim_id": "C34",
+      "claim": "Peak SERCA activity was reduced by 31 \u00b1 9% (p=0.006) in Tbx5fl/fl;R26CreERT2 compared with R26CreERT2 atrial cardiomyocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "Peak SERCA activity was reduced by 31 \u00b1 9% (p=0.006) in Tbx5fl/fl;R26CreERT2 compared with R26CreERT2 atrial cardiomyocytes (Figure 4C,H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by SERCA activity measurements shown in Figure 4C,H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:11:38.599779Z"
+    },
+    {
+      "id": "48cc761c-38e7-4547-893d-a8df83bf1a24",
+      "content_id": "9e7d1041-3a63-4081-abfc-62fcc66a46e7",
+      "claim_id": "C35",
+      "claim": "NCX activity was ~60% higher in Tbx5fl/fl;R26CreERT2 in comparison with R26CreERT2 atrial cardiomyocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "NCX activity was ~60% higher in Tbx5fl/fl;R26CreERT2 in comparison with R26CreERT2 atrial cardiomyocytes (Figure 4D,I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by NCX activity measurements shown in Figure 4D,I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:11:38.599779Z"
+    },
+    {
+      "id": "0013749b-8fa7-4ca6-b5f0-8b7563755e0c",
+      "content_id": "9e7d1041-3a63-4081-abfc-62fcc66a46e7",
+      "claim_id": "C36",
+      "claim": "PLN expression was significantly increased in Tbx5fl/fl;R26CreERT2 compared with R26CreERT2 atria.",
+      "claim_type": "EXPLICIT",
+      "source": "Western blot analysis showed that PLN expression was significantly increased in Tbx5fl/fl;R26CreERT2 compared with R26CreERT2 atria (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by Western blot data shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:11:38.599779Z"
+    },
+    {
+      "id": "ce96f441-f273-4e01-b1a2-165fec89b262",
+      "content_id": "9e7d1041-3a63-4081-abfc-62fcc66a46e7",
+      "claim_id": "C37",
+      "claim": "PLN phosphorylation at serine 16 was increased in Tbx5fl/fl;R26CreERT2 compared to R26CreERT2.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, PLN phosphorylation was also increased at serine 16 in Tbx5fl/fl;R26CreERT2 compared to R26CreERT2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by Western blot analysis of phosphorylated PLN.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:11:38.599779Z"
+    },
+    {
+      "id": "0afeb0ed-79d0-449d-a11c-3b2600e9f0c5",
+      "content_id": "9e7d1041-3a63-4081-abfc-62fcc66a46e7",
+      "claim_id": "C38",
+      "claim": "Control Pln deficient mice (Pln-/-;R26CreERT2) had increased steady state SR load and SERCA activity relative to R26CreERT2.",
+      "claim_type": "EXPLICIT",
+      "source": "Control Pln deficient mice (Pln-/-;R26CreERT2) had increased steady state SR load and SERCA activity relative to R26CreERT2 (Figure 5C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by SR load and SERCA activity measurements shown in Figure 5C,D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:11:38.599779Z"
+    },
+    {
+      "id": "16fe540f-f3b2-4549-a8df-76c9a34acfd2",
+      "content_id": "9e7d1041-3a63-4081-abfc-62fcc66a46e7",
+      "claim_id": "C39",
+      "claim": "The decreased SR load and SERCA function observed in Tbx5 mutant mice (Tbx5fl/fl;R26CreERT2) was converted to elevated SR load and SERCA function after the removal of Pln (Tbx5fl/fl;Pln-/-; R26CreERT2).",
+      "claim_type": "EXPLICIT",
+      "source": "The decreased SR load and SERCA function observed in Tbx5 mutant mice (Tbx5fl/fl;R26CreERT2) was converted to elevated SR load and SERCA function after the removal of Pln (Tbx5fl/fl;Pln-/-; R26CreERT2) (Figure 5C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by SR load and SERCA activity measurements shown in Figure 5C,D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:11:38.599779Z"
+    },
+    {
+      "id": "3a6e0d2d-e958-46ab-803c-f14f1d841ab5",
+      "content_id": "9e7d1041-3a63-4081-abfc-62fcc66a46e7",
+      "claim_id": "C40",
+      "claim": "In the setting of combined Tbx5;Pln deficiency, peak twitch calcium and tau twitch were normalized to R26CreERT2 values.",
+      "claim_type": "EXPLICIT",
+      "source": "However, in the setting of combined Tbx5;Pln deficiency, peak twitch calcium and tau twitch were normalized to R26CreERT2 values (Figure 5E,F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by calcium transient measurements shown in Figure 5E,F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:11:38.599779Z"
+    },
+    {
+      "id": "9fe38e4b-4666-42d5-8fe9-41d902cb845d",
+      "content_id": "9e7d1041-3a63-4081-abfc-62fcc66a46e7",
+      "claim_id": "C41",
+      "claim": "The prolonged AP duration observed in Tbx5fl/fl;R26CreERT2 was rescued in both Tbx5fl/fl;Pln+/-;R26CreERT2 and Tbx5fl/fl;Pln-/-;R26CreERT2 atrial cardiomyocytes (43 \u00b1 10% and 38 \u00b1 5% shorter than Tbx5fl/fl;R26CreERT2 respectively; p=0.01, 0.0007).",
+      "claim_type": "EXPLICIT",
+      "source": "The prolonged AP duration observed Tbx5fl/fl;R26CreERT2 was rescued in both Tbx5fl/fl;Pln+/-;R26CreERT2 and Tbx5fl/fl;Pln-/-;R26CreERT2 atrial cardiomyocytes (43 \u00b1 10% and 38 \u00b1 5% shorter than Tbx5fl/fl;R26CreERT2 respectively; p=0.01, 0.0007) (Figure 6D,E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by action potential recordings shown in Figure 6D,E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:11:38.599779Z"
+    },
+    {
+      "id": "f062aaa4-4fac-49c3-8be7-428d312cb7e7",
+      "content_id": "9e7d1041-3a63-4081-abfc-62fcc66a46e7",
+      "claim_id": "C42",
+      "claim": "Significantly fewer EADs and DADs were observed in Tbx5fl/fl;Pln-/-;R26CreERT2 cardiomyocytes compared to Tbx5fl/fl;R26CreERT2.",
+      "claim_type": "EXPLICIT",
+      "source": "Along with normalization of AP duration, we observed significantly fewer EADs and DADs in Tbx5fl/fl;Pln-/-;R26CreERT2 cardiomyocytes (Figure 6F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by action potential recordings and quantification shown in Figure 6F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:11:38.599779Z"
+    },
+    {
+      "id": "8d24b41c-7fc5-4284-9909-e8af84dfe868",
+      "content_id": "9e7d1041-3a63-4081-abfc-62fcc66a46e7",
+      "claim_id": "C43",
+      "claim": "All Tbx5fl/fl; R26CreERT2 mice (6/6) paced into AF.",
+      "claim_type": "EXPLICIT",
+      "source": "All Tbx5fl/fl; R26CreERT2 mice (6/6) paced into AF, compared to none of the R26CreERT2 (0/5) or Pln-/-;R26CreERT2 littermate controls (0/7).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by intracardiac burst pacing experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:11:38.599779Z"
+    },
+    {
+      "id": "bda9843f-dcc3-4ec7-8be4-849ac29d6690",
+      "content_id": "9e7d1041-3a63-4081-abfc-62fcc66a46e7",
+      "claim_id": "C44",
+      "claim": "None of the R26CreERT2 (0/5) or Pln-/-;R26CreERT2 (0/7) littermate controls paced into AF.",
+      "claim_type": "EXPLICIT",
+      "source": "All Tbx5fl/fl; R26CreERT2 mice (6/6) paced into AF, compared to none of the R26CreERT2 (0/5) or Pln-/-;R26CreERT2 littermate controls (0/7).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by intracardiac burst pacing experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:11:38.599779Z"
+    },
+    {
+      "id": "74aca721-fa44-43c5-9955-6ac3b7c64f8a",
+      "content_id": "9e7d1041-3a63-4081-abfc-62fcc66a46e7",
+      "claim_id": "C45",
+      "claim": "Only 1/11 of Tbx5fl/fl;Pln-/-;R26CreERT2 paced into AF.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with our hypothesis, AF susceptibility was significantly decreased in Tbx5; Pln compound knockouts: only 1/11 of Tbx5fl/fl;Pln-/-;R26CreERT2 paced into AF (Figure 7F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by intracardiac burst pacing experiments shown in Figure 7F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:11:38.599779Z"
+    },
+    {
+      "id": "b1b91672-069e-46fe-ba93-42da91a2f436",
+      "content_id": "9e7d1041-3a63-4081-abfc-62fcc66a46e7",
+      "claim_id": "C46",
+      "claim": "TBX5 is critical for cellular Ca2+ homeostasis.",
+      "claim_type": "EXPLICIT",
+      "source": "We report that TBX5 is critical for cellular Ca2+ homeostasis, providing a molecular mechanism underlying the genetic implication of TBX5 in AF.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary claim based on the experimental findings presented in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:11:38.599779Z"
+    },
+    {
+      "id": "390b683b-7c4d-444d-b128-856b29cf18ed",
+      "content_id": "9e7d1041-3a63-4081-abfc-62fcc66a46e7",
+      "claim_id": "C47",
+      "claim": "Cardiomyocyte action potential (AP) abnormalities in Tbx5-deficient atrial cardiomyocytes are caused by a decreased sarcoplasmic reticulum (SR) Ca2+ ATPase (SERCA2)-mediated SR calcium uptake.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that cardiomyocyte action potential (AP) abnormalities in Tbx5-deficient atrial cardiomyocytes are caused by a decreased sarcoplasmic reticulum (SR) Ca2+ ATPase (SERCA2)-mediated SR calcium uptake which was balanced by enhanced trans-sarcolemmal calcium fluxes (calcium current and sodium/calcium exchanger), providing mechanisms for triggered activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary claim based on the experimental findings presented in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:11:38.599779Z"
+    },
+    {
+      "id": "53008278-8d5a-4cd6-970f-86983f5adb70",
+      "content_id": "9e7d1041-3a63-4081-abfc-62fcc66a46e7",
+      "claim_id": "C48",
+      "claim": "Decreased SERCA2-mediated SR calcium uptake was balanced by enhanced trans-sarcolemmal calcium fluxes (calcium current and sodium/calcium exchanger).",
+      "claim_type": "EXPLICIT",
+      "source": "We show that cardiomyocyte action potential (AP) abnormalities in Tbx5-deficient atrial cardiomyocytes are caused by a decreased sarcoplasmic reticulum (SR) Ca2+ ATPase (SERCA2)-mediated SR calcium uptake which was balanced by enhanced trans-sarcolemmal calcium fluxes (calcium current and sodium/calcium exchanger), providing mechanisms for triggered activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary claim based on the experimental findings presented in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:11:38.599779Z"
+    },
+    {
+      "id": "5f270c92-e209-4607-8f8a-81703474227c",
+      "content_id": "9e7d1041-3a63-4081-abfc-62fcc66a46e7",
+      "claim_id": "C49",
+      "claim": "The AP defects, cardiomyocyte ectopy, and AF caused by TBX5 deficiency were rescued by phospholamban removal, which normalized SERCA function.",
+      "claim_type": "EXPLICIT",
+      "source": "The AP defects, cardiomyocyte ectopy, and AF caused by TBX5 deficiency were rescued by phospholamban removal, which normalized SERCA function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary claim based on the experimental findings presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:11:38.599779Z"
+    },
+    {
+      "id": "22e09ad7-2358-4499-a378-d23dc1070088",
+      "content_id": "9e7d1041-3a63-4081-abfc-62fcc66a46e7",
+      "claim_id": "C50",
+      "claim": "Depressed SERCA activity provides higher cytosolic calcium driving force for calcium extrusion from the cell via electrogenic inward INCX.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, slowed SR calcium uptake from depressed SERCA activity provides higher cytosolic calcium driving force for calcium extrusion from the cell via electrogenic inward INCX.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the experimental findings and understanding of calcium handling mechanisms.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:11:38.599779Z"
+    },
+    {
+      "id": "2828e2da-1ac1-4a33-8e09-72a86cf0a65b",
+      "content_id": "9e7d1041-3a63-4081-abfc-62fcc66a46e7",
+      "claim_id": "C51",
+      "claim": "Increased NCX function coupled with prolonged [Ca2+]i transients drives increased inward INCX, providing additional depolarizing current during the AP, contributing to its prolongation.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, increased NCX function coupled with prolonged [Ca2+]i transients, drives increased inward INCX, providing additional depolarizing current during the AP, contributing to its prolongation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the experimental findings and understanding of NCX function.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:11:38.599779Z"
+    },
+    {
+      "id": "67cc90db-3461-417f-a785-6c8b4ceb7ca2",
+      "content_id": "9e7d1041-3a63-4081-abfc-62fcc66a46e7",
+      "claim_id": "C52",
+      "claim": "DADs can occur with depressed SR loads in the appropriate context of depressed SERCA and elevated NCX function.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data further support that DADs, which are classically thought to relate to SR calcium overload can still occur with depressed SR loads in the appropriate context of depressed SERCA and elevated NCX function (Voigt et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the experimental findings and citation to Voigt et al., 2012.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:11:38.599779Z"
+    },
+    {
+      "id": "172b991b-0562-4c47-954c-d48fb6ca545a",
+      "content_id": "9e7d1041-3a63-4081-abfc-62fcc66a46e7",
+      "claim_id": "C53",
+      "claim": "Compensatory increases in L-type calcium current in the setting of depressed SERCA function could be required to maintain systolic and diastolic calcium levels.",
+      "claim_type": "EXPLICIT",
+      "source": "Modeling suggests that compensatory increases in L-type calcium current in the setting of depressed SERCA function could be required to maintain systolic and diastolic calcium levels (Li et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Li et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:11:38.599779Z"
+    },
+    {
+      "id": "55da25ab-ff73-4dcb-a9f4-e88b5809a4c2",
+      "content_id": "9e7d1041-3a63-4081-abfc-62fcc66a46e7",
+      "claim_id": "C54",
+      "claim": "The increase in calcium entering the cell through ICaL during the AP would be expected to balance a net increase in NCX mediated calcium extrusion, a requirement for steady state [Ca2+]i homeostasis.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, the increase in calcium entering the cell through ICaL during the AP would be expected to balance a net increase in NCX mediated calcium extrusion (Figure 4I), a requirement for steady state [Ca2+]i homeostasis.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on the experimental findings and understanding of calcium homeostasis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:11:38.599779Z"
+    },
+    {
+      "id": "04f8196e-d05f-4ba9-9e43-8c05727483e9",
+      "content_id": "9e7d1041-3a63-4081-abfc-62fcc66a46e7",
+      "claim_id": "C55",
+      "claim": "L-type calcium channel expression is TBX5-independent.",
+      "claim_type": "EXPLICIT",
+      "source": "However, our observations that L-type calcium channel expression is TBX5-independent (Figures 1D and 2D) and that genetically targeting only the Ca2+ efflux pathways in our model is sufficient to restore normal electrical activity (Figures 5\u20137) suggest that the ICaL change is not a primary TBX5-dependent effect.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a conclusion based on the experimental findings shown in Figures 1D, 2D, 5-7.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:11:38.599779Z"
+    },
+    {
+      "id": "741295e8-0f28-4963-83c2-6079ad5f0f7c",
+      "content_id": "9e7d1041-3a63-4081-abfc-62fcc66a46e7",
+      "claim_id": "C56",
+      "claim": "Genetically targeting only the Ca2+ efflux pathways in the Tbx5 mutant model is sufficient to restore normal electrical activity.",
+      "claim_type": "EXPLICIT",
+      "source": "However, our observations that L-type calcium channel expression is TBX5-independent (Figures 1D and 2D) and that genetically targeting only the Ca2+ efflux pathways in our model is sufficient to restore normal electrical activity (Figures 5\u20137) suggest that the ICaL change is not a primary TBX5-dependent effect.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a conclusion based on the experimental findings shown in Figures 5-7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:11:38.599779Z"
+    },
+    {
+      "id": "eedf3ee1-85b1-47a9-91e4-b7593da678ee",
+      "content_id": "9e7d1041-3a63-4081-abfc-62fcc66a46e7",
+      "claim_id": "C57",
+      "claim": "RYR2 is a known susceptibility locus for AF.",
+      "claim_type": "EXPLICIT",
+      "source": "RYR2 is a known susceptibility locus for AF and RYR2 mutations are correlated with AF (Fatkin et al., 2017; Di Pino et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Fatkin et al., 2017 and Di Pino et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:11:38.599779Z"
+    },
+    {
+      "id": "f8afe01e-9697-4a3d-97fb-a9d4d5524e77",
+      "content_id": "9e7d1041-3a63-4081-abfc-62fcc66a46e7",
+      "claim_id": "C58",
+      "claim": "RYR2 mutations are correlated with AF.",
+      "claim_type": "EXPLICIT",
+      "source": "RYR2 is a known susceptibility locus for AF and RYR2 mutations are correlated with AF (Fatkin et al., 2017; Di Pino et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Fatkin et al., 2017 and Di Pino et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:11:38.599779Z"
+    },
+    {
+      "id": "1108b89f-3cd3-40ca-b6f0-bf647c412f6c",
+      "content_id": "9e7d1041-3a63-4081-abfc-62fcc66a46e7",
+      "claim_id": "C59",
+      "claim": "Defective RyR2 function has been associated with AF.",
+      "claim_type": "EXPLICIT",
+      "source": "Defective RyR2 function has also been associated with AF (Vest et al., 2005; King et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Vest et al., 2005 and King et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:11:38.599779Z"
+    },
+    {
+      "id": "a3c4a3dc-8b03-4379-b763-68a59f27d4ec",
+      "content_id": "9e7d1041-3a63-4081-abfc-62fcc66a46e7",
+      "claim_id": "C60",
+      "claim": "RyR2 function is generally preserved over the physiologic range of calcium in Tbx5-mutant atria despite TBX5-dependent RyR2 expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite TBX5-dependent RyR2 expression, the ryanodine binding assay (Xu et al., 1998) suggested that RyR2 function is generally preserved over the physiologic range of calcium in Tbx5-mutant atria (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by ryanodine binding assay data shown in Figure 3D and citation to Xu et al., 1998.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:11:38.599779Z"
+    },
+    {
+      "id": "5870ddbd-e47b-4024-924a-34079fcd9d70",
+      "content_id": "9e7d1041-3a63-4081-abfc-62fcc66a46e7",
+      "claim_id": "C61",
+      "claim": "Phospholamban has been associated with AF by GWAS.",
+      "claim_type": "EXPLICIT",
+      "source": "While phospholamban has been associated with AF by GWAS (Fatkin et al., 2017; Federico et al., 2017), its functional role is less clear.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Fatkin et al., 2017 and Federico et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:11:38.599779Z"
+    },
+    {
+      "id": "2e1ee876-24e6-4106-834c-1ef77de5c60d",
+      "content_id": "9e7d1041-3a63-4081-abfc-62fcc66a46e7",
+      "claim_id": "C62",
+      "claim": "PLN participates in rheostatic control of SERCA activity in the atria, which is sufficient to protect against AF inducibility.",
+      "claim_type": "EXPLICIT",
+      "source": "Although PLN is predominantly found in the ventricle (Bhupathy et al., 2007), we showed not only its expression is increased in the atria in the context of Tbx5 loss, but also PLN participates in rheostatic control of SERCA activity in the atria, which is sufficient to protect against AF inducibility (Figures 5\u20137).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a conclusion based on the experimental findings shown in Figures 5-7 and citation to Bhupathy et al., 2007.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:11:38.599779Z"
+    },
+    {
+      "id": "a70cfae8-0f2a-47d6-ad81-79da2592108a",
+      "content_id": "9e7d1041-3a63-4081-abfc-62fcc66a46e7",
+      "claim_id": "C63",
+      "claim": "In patients who experience post-operative AF, SERCA2 is significantly decreased in the atrial tissue.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, in patients who experience post-operative AF, SERCA2 is significantly decreased in the atrial tissue (Zaman et al., 2016), but those with PLN mutations have decreased AF susceptibility in the context of arrhythmogenic right ventricular cardiomyopathy (Bourfiss et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Zaman et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:11:38.599779Z"
+    },
+    {
+      "id": "b5cac3f2-d273-410b-8d93-8edae510fdb4",
+      "content_id": "9e7d1041-3a63-4081-abfc-62fcc66a46e7",
+      "claim_id": "C64",
+      "claim": "Patients with PLN mutations have decreased AF susceptibility in the context of arrhythmogenic right ventricular cardiomyopathy.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, in patients who experience post-operative AF, SERCA2 is significantly decreased in the atrial tissue (Zaman et al., 2016), but those with PLN mutations have decreased AF susceptibility in the context of arrhythmogenic right ventricular cardiomyopathy (Bourfiss et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Bourfiss et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:11:38.599779Z"
+    },
+    {
+      "id": "55e2df86-d8ec-45da-aa97-20b7516f890e",
+      "content_id": "9e7d1041-3a63-4081-abfc-62fcc66a46e7",
+      "claim_id": "C65",
+      "claim": "In AF compounded by heart failure, decreased SERCA2 and phosphorylated PLN, and increased NCX1 expression were observed.",
+      "claim_type": "EXPLICIT",
+      "source": "In AF compounded by heart failure, decreased SERCA2 and phosphorylated PLN, and increased NCX1 expression were observed (Lugenbiel et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Lugenbiel et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:11:38.599779Z"
+    },
+    {
+      "id": "5e5d8f8e-14d9-4d84-9c5f-060a4aea6cdd",
+      "content_id": "9e7d1041-3a63-4081-abfc-62fcc66a46e7",
+      "claim_id": "C66",
+      "claim": "Decrease in phosphorylated PLN coupled with an increase in total PLN has been found in animal models of obesity, potentially increasing risk of AF.",
+      "claim_type": "EXPLICIT",
+      "source": "Decrease in phosphorylated PLN coupled with an increase in total PLN has been found in animal models of obesity, potentially increasing risk of AF (Lima-Leopoldo et al., 2014; Lima-Leopoldo et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Lima-Leopoldo et al., 2014 and Lima-Leopoldo et al., 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:11:38.599779Z"
+    },
+    {
+      "id": "c54a545d-7548-4209-94ee-67e081b54703",
+      "content_id": "9e7d1041-3a63-4081-abfc-62fcc66a46e7",
+      "claim_id": "C67",
+      "claim": "A selective NCX1 inhibitor, ORM-10103, was shown to prevent cellular Ca2+ handling abnormalities in ischemic ventricular cardiomyocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, a selective NCX1 inhibitor, ORM-10103, was shown to prevent cellular Ca2+ handling abnormalities in ischemic ventricular cardiomyocytes, possibly by limiting calcium entry through outward INCX (Jost et al., 2013; Kormos et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Jost et al., 2013 and Kormos et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:11:38.599779Z"
+    },
+    {
+      "id": "52407a95-f935-45ff-986c-2dab1a27a935",
+      "content_id": "9e7d1041-3a63-4081-abfc-62fcc66a46e7",
+      "claim_id": "C68",
+      "claim": "Resveratrol, which increases SERCA2 activity, has been shown to decrease AF.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, resveratrol, which increases SERCA2 activity, has been shown to decrease AF, suggesting that targeting SERCA2 activity may be a viable therapeutic approach (Bai et al., 2016; Chong et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Bai et al., 2016 and Chong et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:11:38.599779Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "90df0683-cd72-4ffd-99f8-e2fd0c35dcce",
+      "content_id": "9e7d1041-3a63-4081-abfc-62fcc66a46e7",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "AF is a common arrhythmia with significant global health and economic burden, and has a substantial genetic component with heritability accounting for 40-62% of risk.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C7 provide well-established background on AF prevalence, clinical impact, and genetic basis. These are supported by appropriate citations to prior literature and represent accepted knowledge in the field.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:11:38.599779Z"
+    },
+    {
+      "id": "5bd234d4-8cf1-4bdc-9b22-27ed986b2cf5",
+      "content_id": "9e7d1041-3a63-4081-abfc-62fcc66a46e7",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "GWAS have identified TBX5 as an AF risk locus, and adult-specific Tbx5 knockout mice develop spontaneous AF. TBX5 directly regulates calcium handling genes including Atp2a2, Sln, and Pln.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8-C11 establish the genetic link between TBX5 and AF through GWAS data (C8), mouse model validation (C9), and prior work showing TBX5 regulation of calcium handling genes (C10-C11). These are supported by appropriate citations and experimental data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:11:38.599779Z"
+    },
+    {
+      "id": "3aaa1e64-48a9-438a-a403-9419e77e7931",
+      "content_id": "9e7d1041-3a63-4081-abfc-62fcc66a46e7",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Tbx5fl/fl;R26CreERT2 mice develop spontaneous AF with prolonged action potentials and calcium transients. Gene expression analysis shows decreased Ryr2 (61%) and Atp2a2 (71%) mRNA, increased Pln (69%) mRNA, with no changes in Cacna1c, Ncx1, or calmodulins.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C12-C17 present the core phenotype of the Tbx5 knockout model with appropriate statistical support (p-values provided) and are consistent with prior work. The qPCR data (C14-C17) identify specific calcium handling gene expression changes that form the basis for subsequent mechanistic studies.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:11:38.599779Z"
+    },
+    {
+      "id": "3e158860-7a38-4fc5-a0ba-5100a6321e93",
+      "content_id": "9e7d1041-3a63-4081-abfc-62fcc66a46e7",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Nifedipine (L-type calcium channel blocker) dramatically shortens APD90 in Tbx5 mutant cardiomyocytes (61%) compared to controls (19%), despite no change in CaV1.2 protein expression. Peak ICaL current is increased 92% in Tbx5 mutants with accelerated inactivation kinetics.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C18-C24 demonstrate that calcium-dependent mechanisms downstream of ICaL contribute to AP prolongation. The nifedipine experiments (C18-C20) are well-controlled with appropriate statistics. The increased ICaL (C22) despite unchanged CaV1.2 expression (C21) suggests post-translational regulation, though the mechanism is not fully elucidated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:11:38.599779Z"
+    },
+    {
+      "id": "0ee06800-6e7b-4a5b-8d11-c587be4de6a7",
+      "content_id": "9e7d1041-3a63-4081-abfc-62fcc66a46e7",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "RyR2 protein expression is significantly decreased in Tbx5 mutant atria, with reduced Ca2+ spark frequency. However, ryanodine binding assays show preserved RyR2 function over the physiological calcium range, suggesting compensatory mechanisms maintain RyR2 open probability despite reduced expression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25-C27 and C60 present a nuanced finding: reduced RyR2 expression and spark frequency, but preserved function. The ryanodine binding assay (C27) provides functional validation. The interpretation of compensatory mechanisms is reasonable but speculative, as the specific mechanism is not identified.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:11:38.599779Z"
+    },
+    {
+      "id": "49c92cc6-56de-4227-8593-b1bf894168b6",
+      "content_id": "9e7d1041-3a63-4081-abfc-62fcc66a46e7",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Tbx5 deficiency causes decreased SERCA2 protein expression (C28) and activity (31% reduction, C34), increased NCX1 expression (C29) and activity (~60% increase, C35), reduced SR calcium load (24%, C33), and slowed calcium transient decay (C31). Under voltage clamp, peak calcium transients are reduced 23% (C32).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28-C35 provide comprehensive characterization of calcium handling defects with appropriate quantification and statistics. The data are internally consistent and support the hypothesis that depressed SERCA function and enhanced NCX activity drive the phenotype. The voltage clamp experiments (C32) appropriately control for AP duration effects.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:11:38.599779Z"
+    },
+    {
+      "id": "6d5c9ce0-221c-4fde-87ef-821dbba65e96",
+      "content_id": "9e7d1041-3a63-4081-abfc-62fcc66a46e7",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "PLN expression and S16 phosphorylation are increased in Tbx5 mutants. Genetic removal of Pln in Tbx5 mutants (Tbx5fl/fl;Pln-/-;R26CreERT2) converts decreased SR load and SERCA function to elevated levels, normalizing peak twitch calcium and decay kinetics.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36-C40 demonstrate that PLN is a key mediator of SERCA dysfunction in Tbx5 mutants. The genetic rescue experiments are well-controlled with appropriate genotype comparisons. The data support that PLN removal can overcome the effects of reduced SERCA2 expression.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:11:38.599779Z"
+    },
+    {
+      "id": "88b29b11-e69d-49cf-bf30-51817489b37e",
+      "content_id": "9e7d1041-3a63-4081-abfc-62fcc66a46e7",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Pln knockout rescues prolonged AP duration in Tbx5 mutants (43-38% reduction in both heterozygous and homozygous Pln knockout) and significantly reduces EADs and DADs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41-C42 show that genetic normalization of SERCA function rescues cellular electrophysiology defects. The dose-dependent effect with Pln heterozygous and homozygous knockout strengthens the conclusion. Statistical support is provided (p=0.01, 0.0007).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:11:38.599779Z"
+    },
+    {
+      "id": "133338f7-b930-4ed9-83f3-4dbea452d00e",
+      "content_id": "9e7d1041-3a63-4081-abfc-62fcc66a46e7",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "All Tbx5 knockout mice (6/6) are inducible for AF by burst pacing, while no control mice (0/5 R26CreERT2, 0/7 Pln-/-;R26CreERT2) develop AF. Pln knockout dramatically reduces AF susceptibility in Tbx5 mutants (1/11 inducible).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C45 provide the critical in vivo validation that SERCA dysfunction drives AF susceptibility in Tbx5 mutants. The dramatic rescue by Pln knockout (from 100% to 9% inducibility) with appropriate statistical analysis (Fisher's exact test) strongly supports the mechanistic model.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:11:38.599779Z"
+    },
+    {
+      "id": "6a424674-a8a6-4b9b-a526-cfb9dbbf05dd",
+      "content_id": "9e7d1041-3a63-4081-abfc-62fcc66a46e7",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "TBX5 is critical for cellular calcium homeostasis. AP abnormalities in Tbx5-deficient cardiomyocytes are caused by decreased SERCA2-mediated SR calcium uptake balanced by enhanced trans-sarcolemmal calcium fluxes. These defects are rescued by phospholamban removal.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46-C49 represent the main conclusions synthesizing the experimental findings. These summary claims are well-supported by the comprehensive data presented in the manuscript, including gene expression, protein analysis, functional assays, cellular electrophysiology, and in vivo AF induction studies.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:11:38.599779Z"
+    },
+    {
+      "id": "9236d014-69f4-4ee1-9c7e-c6e5c9407612",
+      "content_id": "9e7d1041-3a63-4081-abfc-62fcc66a46e7",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Depressed SERCA activity increases cytosolic calcium, driving increased inward NCX current that prolongs APs. Increased NCX function coupled with prolonged calcium transients provides additional depolarizing current. DADs can occur with depressed SR loads in the context of depressed SERCA and elevated NCX. Increased ICaL balances increased NCX-mediated calcium extrusion for steady-state homeostasis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50-C52 and C54 present mechanistic interpretations of the experimental data. These are reasonable inferences based on established principles of calcium handling and electrophysiology. The model is internally consistent with the observed phenotypes and supported by the nifedipine experiments and calcium flux measurements.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:11:38.599779Z"
+    },
+    {
+      "id": "bee12c84-1c8b-40df-9222-b5c99906272a",
+      "content_id": "9e7d1041-3a63-4081-abfc-62fcc66a46e7",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Modeling suggests compensatory increases in L-type calcium current may be required to maintain calcium levels in the setting of depressed SERCA function.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C53 is supported by citation to Li et al., 2011 and is consistent with the observed increase in ICaL in the Tbx5 mutant model. This provides theoretical support for the experimental observations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:11:38.599779Z"
+    },
+    {
+      "id": "41ffd7ec-27d9-4bc4-a515-c2b7002fbdf3",
+      "content_id": "9e7d1041-3a63-4081-abfc-62fcc66a46e7",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "L-type calcium channel expression is TBX5-independent, and genetically targeting only calcium efflux pathways (via Pln knockout) is sufficient to restore normal electrical activity, suggesting ICaL changes are not a primary TBX5-dependent effect.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55-C56 provide important mechanistic insight distinguishing primary from secondary effects. The unchanged Cacna1c mRNA and CaV1.2 protein (C17, C21) combined with the complete rescue by Pln knockout (C41-C45) support that ICaL changes are compensatory rather than direct TBX5 effects.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:11:38.599779Z"
+    },
+    {
+      "id": "699fe886-2ab3-4017-8edc-0700fe596e2c",
+      "content_id": "9e7d1041-3a63-4081-abfc-62fcc66a46e7",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "RYR2 and phospholamban are known AF susceptibility loci identified by GWAS, and RYR2 mutations and defective RyR2 function have been associated with AF.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57-C59 and C61 provide relevant background from prior literature with appropriate citations. These establish the clinical relevance of the genes studied in the manuscript.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:11:38.599779Z"
+    },
+    {
+      "id": "dad094ac-40c0-4197-9d32-5eb275fa6d8c",
+      "content_id": "9e7d1041-3a63-4081-abfc-62fcc66a46e7",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "PLN participates in rheostatic control of SERCA activity in the atria, which is sufficient to protect against AF inducibility.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C62 is a key conclusion supported by the genetic rescue experiments (C38-C45). The demonstration that Pln knockout rescues AF susceptibility in Tbx5 mutants provides strong evidence for PLN's functional role in atrial rhythm control.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:11:38.599779Z"
+    },
+    {
+      "id": "996dd24f-d371-4f91-9aed-a5ef1c55355d",
+      "content_id": "9e7d1041-3a63-4081-abfc-62fcc66a46e7",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Human studies show decreased SERCA2 in post-operative AF patients, PLN mutations decrease AF susceptibility in arrhythmogenic right ventricular cardiomyopathy, decreased SERCA2 and phosphorylated PLN with increased NCX1 in AF with heart failure, and altered PLN in obesity models.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C63-C66 cite relevant human and animal studies that support the clinical relevance of the SERCA2-PLN axis in AF. These are appropriately cited and provide context for the experimental findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:11:38.599779Z"
+    },
+    {
+      "id": "c83017a1-c728-464c-a560-6e4d1dec1911",
+      "content_id": "9e7d1041-3a63-4081-abfc-62fcc66a46e7",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Pharmacological approaches targeting NCX (ORM-10103) and SERCA2 (resveratrol) have shown promise in preventing calcium handling abnormalities and decreasing AF.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C67-C68 cite prior studies demonstrating therapeutic potential of targeting calcium handling pathways. These are appropriately cited and support the translational relevance of the findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:11:38.599779Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "30042cc8-8703-4bcd-a273-a6de53f02b18",
+      "result_id": "90df0683-cd72-4ffd-99f8-e2fd0c35dcce"
+    },
+    {
+      "claim_id": "9a04674b-7b89-412e-8bfc-bfb17f91d114",
+      "result_id": "90df0683-cd72-4ffd-99f8-e2fd0c35dcce"
+    },
+    {
+      "claim_id": "01928eeb-8c81-4448-b505-4dfa134221a1",
+      "result_id": "90df0683-cd72-4ffd-99f8-e2fd0c35dcce"
+    },
+    {
+      "claim_id": "e04e16da-4319-4520-8f08-ee987a981338",
+      "result_id": "90df0683-cd72-4ffd-99f8-e2fd0c35dcce"
+    },
+    {
+      "claim_id": "dbaa5e4c-8e24-48aa-a77c-7e5b634bc87f",
+      "result_id": "90df0683-cd72-4ffd-99f8-e2fd0c35dcce"
+    },
+    {
+      "claim_id": "4d2363b0-91c2-4f7c-9c75-8e53b45ae8ac",
+      "result_id": "90df0683-cd72-4ffd-99f8-e2fd0c35dcce"
+    },
+    {
+      "claim_id": "acc7e201-b9a6-4fa6-9617-f8b8d9496984",
+      "result_id": "90df0683-cd72-4ffd-99f8-e2fd0c35dcce"
+    },
+    {
+      "claim_id": "bdcc9bc5-401b-4ec0-83c6-5b4a96b8b456",
+      "result_id": "5bd234d4-8cf1-4bdc-9b22-27ed986b2cf5"
+    },
+    {
+      "claim_id": "97f38213-7008-47c8-98d6-d9099c9213aa",
+      "result_id": "5bd234d4-8cf1-4bdc-9b22-27ed986b2cf5"
+    },
+    {
+      "claim_id": "a872e50e-9f44-4e0a-8cb0-3437283e29b9",
+      "result_id": "5bd234d4-8cf1-4bdc-9b22-27ed986b2cf5"
+    },
+    {
+      "claim_id": "9b8a12b9-76ea-476c-8f84-f157767b8553",
+      "result_id": "5bd234d4-8cf1-4bdc-9b22-27ed986b2cf5"
+    },
+    {
+      "claim_id": "4dc96a58-bb09-4037-81ce-7eddb52ec7a9",
+      "result_id": "3aaa1e64-48a9-438a-a403-9419e77e7931"
+    },
+    {
+      "claim_id": "8540db8a-9121-45d8-964c-876c57d71647",
+      "result_id": "3aaa1e64-48a9-438a-a403-9419e77e7931"
+    },
+    {
+      "claim_id": "09a9a47e-d7e8-4e48-a5a0-2f7b17daabe3",
+      "result_id": "3aaa1e64-48a9-438a-a403-9419e77e7931"
+    },
+    {
+      "claim_id": "6afebc46-2362-4374-8ff7-9aaf8d1826ee",
+      "result_id": "3aaa1e64-48a9-438a-a403-9419e77e7931"
+    },
+    {
+      "claim_id": "dd3ba375-2724-4123-b7ee-7ba961adc699",
+      "result_id": "3aaa1e64-48a9-438a-a403-9419e77e7931"
+    },
+    {
+      "claim_id": "f1f65afa-3dfd-4faa-9cf8-f905124790fd",
+      "result_id": "3aaa1e64-48a9-438a-a403-9419e77e7931"
+    },
+    {
+      "claim_id": "045a7c61-8fea-4ca6-a82b-8e81f5077fc5",
+      "result_id": "3e158860-7a38-4fc5-a0ba-5100a6321e93"
+    },
+    {
+      "claim_id": "ae52a588-0077-4636-8458-2500baef8133",
+      "result_id": "3e158860-7a38-4fc5-a0ba-5100a6321e93"
+    },
+    {
+      "claim_id": "63b58590-23e2-419f-a1ab-74556d739dbe",
+      "result_id": "3e158860-7a38-4fc5-a0ba-5100a6321e93"
+    },
+    {
+      "claim_id": "d415cf19-d7a2-435d-8da3-cb1218e61e0d",
+      "result_id": "3e158860-7a38-4fc5-a0ba-5100a6321e93"
+    },
+    {
+      "claim_id": "c228f713-d96f-413b-931d-4ad517c58b5f",
+      "result_id": "3e158860-7a38-4fc5-a0ba-5100a6321e93"
+    },
+    {
+      "claim_id": "9ee97401-5f1d-48dc-b771-ea2e4ed49d52",
+      "result_id": "3e158860-7a38-4fc5-a0ba-5100a6321e93"
+    },
+    {
+      "claim_id": "352e8c6d-68d6-482e-80a6-209f9d5c9048",
+      "result_id": "3e158860-7a38-4fc5-a0ba-5100a6321e93"
+    },
+    {
+      "claim_id": "9961dcd3-8e28-48ea-bae7-33f5a30db88a",
+      "result_id": "0ee06800-6e7b-4a5b-8d11-c587be4de6a7"
+    },
+    {
+      "claim_id": "33c19394-a36c-45b2-b821-a6e585f3721e",
+      "result_id": "0ee06800-6e7b-4a5b-8d11-c587be4de6a7"
+    },
+    {
+      "claim_id": "f8f9a39c-86e9-4513-b658-257bc8243798",
+      "result_id": "0ee06800-6e7b-4a5b-8d11-c587be4de6a7"
+    },
+    {
+      "claim_id": "a3c4a3dc-8b03-4379-b763-68a59f27d4ec",
+      "result_id": "0ee06800-6e7b-4a5b-8d11-c587be4de6a7"
+    },
+    {
+      "claim_id": "900e79e7-3bdb-4144-9413-2bbaacdce86d",
+      "result_id": "49c92cc6-56de-4227-8593-b1bf894168b6"
+    },
+    {
+      "claim_id": "101ab44f-bf24-4e76-9265-485c500adcfd",
+      "result_id": "49c92cc6-56de-4227-8593-b1bf894168b6"
+    },
+    {
+      "claim_id": "8d4b6b99-381d-476e-acb7-24c85bfc859f",
+      "result_id": "49c92cc6-56de-4227-8593-b1bf894168b6"
+    },
+    {
+      "claim_id": "4543a22c-f6e1-4cb8-bba6-d9d651e13115",
+      "result_id": "49c92cc6-56de-4227-8593-b1bf894168b6"
+    },
+    {
+      "claim_id": "bafe6816-ad08-4d10-8f9a-de5e8bc695fa",
+      "result_id": "49c92cc6-56de-4227-8593-b1bf894168b6"
+    },
+    {
+      "claim_id": "d92cbad8-f367-452a-944e-bb3e4b8daa72",
+      "result_id": "49c92cc6-56de-4227-8593-b1bf894168b6"
+    },
+    {
+      "claim_id": "fea03b6a-e81a-4533-9b19-007229743138",
+      "result_id": "49c92cc6-56de-4227-8593-b1bf894168b6"
+    },
+    {
+      "claim_id": "48cc761c-38e7-4547-893d-a8df83bf1a24",
+      "result_id": "49c92cc6-56de-4227-8593-b1bf894168b6"
+    },
+    {
+      "claim_id": "0013749b-8fa7-4ca6-b5f0-8b7563755e0c",
+      "result_id": "6d5c9ce0-221c-4fde-87ef-821dbba65e96"
+    },
+    {
+      "claim_id": "ce96f441-f273-4e01-b1a2-165fec89b262",
+      "result_id": "6d5c9ce0-221c-4fde-87ef-821dbba65e96"
+    },
+    {
+      "claim_id": "0afeb0ed-79d0-449d-a11c-3b2600e9f0c5",
+      "result_id": "6d5c9ce0-221c-4fde-87ef-821dbba65e96"
+    },
+    {
+      "claim_id": "16fe540f-f3b2-4549-a8df-76c9a34acfd2",
+      "result_id": "6d5c9ce0-221c-4fde-87ef-821dbba65e96"
+    },
+    {
+      "claim_id": "3a6e0d2d-e958-46ab-803c-f14f1d841ab5",
+      "result_id": "6d5c9ce0-221c-4fde-87ef-821dbba65e96"
+    },
+    {
+      "claim_id": "9fe38e4b-4666-42d5-8fe9-41d902cb845d",
+      "result_id": "88b29b11-e69d-49cf-bf30-51817489b37e"
+    },
+    {
+      "claim_id": "f062aaa4-4fac-49c3-8be7-428d312cb7e7",
+      "result_id": "88b29b11-e69d-49cf-bf30-51817489b37e"
+    },
+    {
+      "claim_id": "8d24b41c-7fc5-4284-9909-e8af84dfe868",
+      "result_id": "133338f7-b930-4ed9-83f3-4dbea452d00e"
+    },
+    {
+      "claim_id": "bda9843f-dcc3-4ec7-8be4-849ac29d6690",
+      "result_id": "133338f7-b930-4ed9-83f3-4dbea452d00e"
+    },
+    {
+      "claim_id": "74aca721-fa44-43c5-9955-6ac3b7c64f8a",
+      "result_id": "133338f7-b930-4ed9-83f3-4dbea452d00e"
+    },
+    {
+      "claim_id": "b1b91672-069e-46fe-ba93-42da91a2f436",
+      "result_id": "6a424674-a8a6-4b9b-a526-cfb9dbbf05dd"
+    },
+    {
+      "claim_id": "390b683b-7c4d-444d-b128-856b29cf18ed",
+      "result_id": "6a424674-a8a6-4b9b-a526-cfb9dbbf05dd"
+    },
+    {
+      "claim_id": "53008278-8d5a-4cd6-970f-86983f5adb70",
+      "result_id": "6a424674-a8a6-4b9b-a526-cfb9dbbf05dd"
+    },
+    {
+      "claim_id": "5f270c92-e209-4607-8f8a-81703474227c",
+      "result_id": "6a424674-a8a6-4b9b-a526-cfb9dbbf05dd"
+    },
+    {
+      "claim_id": "22e09ad7-2358-4499-a378-d23dc1070088",
+      "result_id": "9236d014-69f4-4ee1-9c7e-c6e5c9407612"
+    },
+    {
+      "claim_id": "2828e2da-1ac1-4a33-8e09-72a86cf0a65b",
+      "result_id": "9236d014-69f4-4ee1-9c7e-c6e5c9407612"
+    },
+    {
+      "claim_id": "67cc90db-3461-417f-a785-6c8b4ceb7ca2",
+      "result_id": "9236d014-69f4-4ee1-9c7e-c6e5c9407612"
+    },
+    {
+      "claim_id": "55da25ab-ff73-4dcb-a9f4-e88b5809a4c2",
+      "result_id": "9236d014-69f4-4ee1-9c7e-c6e5c9407612"
+    },
+    {
+      "claim_id": "172b991b-0562-4c47-954c-d48fb6ca545a",
+      "result_id": "bee12c84-1c8b-40df-9222-b5c99906272a"
+    },
+    {
+      "claim_id": "04f8196e-d05f-4ba9-9e43-8c05727483e9",
+      "result_id": "41ffd7ec-27d9-4bc4-a515-c2b7002fbdf3"
+    },
+    {
+      "claim_id": "741295e8-0f28-4963-83c2-6079ad5f0f7c",
+      "result_id": "41ffd7ec-27d9-4bc4-a515-c2b7002fbdf3"
+    },
+    {
+      "claim_id": "eedf3ee1-85b1-47a9-91e4-b7593da678ee",
+      "result_id": "699fe886-2ab3-4017-8edc-0700fe596e2c"
+    },
+    {
+      "claim_id": "f8afe01e-9697-4a3d-97fb-a9d4d5524e77",
+      "result_id": "699fe886-2ab3-4017-8edc-0700fe596e2c"
+    },
+    {
+      "claim_id": "1108b89f-3cd3-40ca-b6f0-bf647c412f6c",
+      "result_id": "699fe886-2ab3-4017-8edc-0700fe596e2c"
+    },
+    {
+      "claim_id": "5870ddbd-e47b-4024-924a-34079fcd9d70",
+      "result_id": "699fe886-2ab3-4017-8edc-0700fe596e2c"
+    },
+    {
+      "claim_id": "2e1ee876-24e6-4106-834c-1ef77de5c60d",
+      "result_id": "dad094ac-40c0-4197-9d32-5eb275fa6d8c"
+    },
+    {
+      "claim_id": "a70cfae8-0f2a-47d6-ad81-79da2592108a",
+      "result_id": "996dd24f-d371-4f91-9aed-a5ef1c55355d"
+    },
+    {
+      "claim_id": "b5cac3f2-d273-410b-8d93-8edae510fdb4",
+      "result_id": "996dd24f-d371-4f91-9aed-a5ef1c55355d"
+    },
+    {
+      "claim_id": "55e2df86-d8ec-45da-aa97-20b7516f890e",
+      "result_id": "996dd24f-d371-4f91-9aed-a5ef1c55355d"
+    },
+    {
+      "claim_id": "5e5d8f8e-14d9-4d84-9c5f-060a4aea6cdd",
+      "result_id": "996dd24f-d371-4f91-9aed-a5ef1c55355d"
+    },
+    {
+      "claim_id": "c54a545d-7548-4209-94ee-67e081b54703",
+      "result_id": "c83017a1-c728-464c-a560-6e4d1dec1911"
+    },
+    {
+      "claim_id": "52407a95-f935-45ff-986c-2dab1a27a935",
+      "result_id": "c83017a1-c728-464c-a560-6e4d1dec1911"
+    }
+  ],
+  "comparisons": []
+}

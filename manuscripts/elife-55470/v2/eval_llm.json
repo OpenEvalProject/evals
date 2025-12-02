@@ -1,0 +1,208 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C18",
+      "C22"
+    ],
+    "result": "The authors developed computational models of the pyloric network consisting of three cells with eight currents each, and found multiple sets of maximal conductances and temperature sensitivities that produce triphasic rhythms over a temperature range (10-25\u00b0C), reproducing experimental phenomenology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C18, and C22 describe the model structure and demonstrate that multiple parameter sets can produce temperature-robust triphasic rhythms. The computational results are presented with appropriate figures showing model behavior across temperatures, and the approach is clearly described in the methods section.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C19",
+      "C20",
+      "C29",
+      "C30",
+      "C48"
+    ],
+    "result": "Temperature produces smooth transitions in the relative contributions of ionic currents to neural activity, with currents becoming reorganized rather than simply scaled. A current important for burst termination at 10\u00b0C may no longer play that role at 25\u00b0C, allowing neurons to slide gracefully through different mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C19, C20, C29, C30, and C48 are supported by currentscape analysis shown in Figures 3-5. The visual data clearly demonstrates differential current contributions across temperatures in all 36 models studied. The smooth transitions in mechanism are well-documented through the currentscape visualizations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C21",
+      "C44"
+    ],
+    "result": "Deletion or blockade of a current produces qualitatively different effects at high versus low temperatures. In approximately half of the models, complete removal of a current results in different responses at 10\u00b0C versus 25\u00b0C.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C21, and C44 are supported by perturbation experiments shown in Figures 9 and 10. The data demonstrates temperature-dependent responses to current deletions across multiple models and current types, with quantification showing about half of models respond differently at the two temperatures for most currents.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C27",
+      "C28"
+    ],
+    "result": "Temperature changes affect membrane potential features including spike amplitude and threshold, but these effects are not consistent across models and depend on the specific values of conductances and temperature sensitivities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27 and C28 are supported by Figure 2 and Figure 2\u2014figure supplement 1, which show membrane potential distributions across temperatures for multiple models. The variability across models is clearly demonstrated, though the specific mechanisms underlying this variability could be explored further.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "At temperatures above 25\u00b0C, models either become quiescent/produce subthreshold oscillations, or display irregular aperiodic regimes with timescales much longer than the normal rhythm period (~1 s).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36, C37, and C38 are supported by Figure 7 showing diverse high-temperature behaviors across five models. The emergence of slow timescales and irregular dynamics is clearly demonstrated, though detailed characterization of these regimes is acknowledged as beyond the scope of the work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C39",
+      "C40"
+    ],
+    "result": "Most models (34 of 36) show similar but not identical spiking patterns during temperature up and down ramps, suggesting multiple stable attractors. Some models exhibit hysteresis with temperature differences of ~2\u00b0C between transitions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39 and C40 are supported by Figure 8 and Figure 1\u2014figure supplement 2E showing temperature ramp experiments. The hysteresis is clearly demonstrated in specific examples, and the prevalence across models is quantified. The interpretation of multiple stable attractors is reasonable given the data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "Temperature differentially affects ionic channel conductances and kinetics, with each conductance having different temperature sensitivity. While this poses challenges for neural function, many ectothermic animals maintain circuit function over extended temperature ranges.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C6, C7, and C8 establish the biological context and are supported by appropriate citations to established literature. These are well-accepted principles in the field that motivate the computational study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "Prior experimental work demonstrates diverse temperature effects on neural excitability across neuron types, with some properties (f/I curves, phase relationships) showing temperature compensation while others (spike amplitude, duration) show temperature dependence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C15 summarize prior experimental findings and are supported by appropriate citations. These claims accurately represent the cited literature and provide important context for the modeling work, though the authors do not independently verify these prior results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C47"
+    ],
+    "result": "North Atlantic lobsters and crabs experience temperature swings exceeding 25\u00b0C annually and may see 8-10\u00b0C changes within short time periods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C47 is supported by citations to ecological studies. This provides biological relevance for the temperature range studied in the models (10-25\u00b0C), though the authors do not independently verify these temperature ranges.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C50",
+      "C51"
+    ],
+    "result": "Individual STG neurons express at least 20-30 voltage-gated ion channel genes, with modeled currents like the delayed rectifier potentially having contributions from at least three different genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C50 is supported by citation to gene expression studies, while C51 is an inference based on knowledge of ion channel diversity. These claims provide important context for discussing model limitations, though the specific gene contributions to modeled currents remain uncertain.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C53",
+      "C54"
+    ],
+    "result": "The phase relationships of the pyloric rhythm are maintained over considerable temperature and frequency ranges in experimental preparations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53 and C54 are supported by citations to experimental studies. These observations provide key targets for the computational models and are well-established in the literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C56",
+      "C57"
+    ],
+    "result": "Long-term acclimation mechanisms including RNA editing and splice variant changes can alter ion channel composition, with acclimation to high temperatures typically requiring 3-4 weeks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C56 is supported by citations to molecular studies, while C57 is based on general knowledge. These claims appropriately distinguish acute temperature effects (modeled) from long-term acclimation (not modeled), though the 3-4 week timeframe lacks specific citation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C58"
+    ],
+    "result": "Temperature robust neurons and networks are difficult to find through random parameter searches, requiring optimization approaches.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C58 is supported by citation to prior computational work (Caplan et al., 2014). This justifies the use of genetic algorithms for parameter search and highlights the non-trivial nature of finding temperature-compensated solutions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C59",
+      "C60"
+    ],
+    "result": "Conductance densities can change in activity-dependent manners following perturbations, and measurements show large variability in maximal conductances across individual animals in the STG.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59 and C60 are supported by multiple citations to experimental studies. These observations provide important biological context for interpreting model diversity and individual variability in temperature responses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C61"
+    ],
+    "result": "STG responses to pH changes are diverse across individuals, similar to temperature responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C61 is supported by citation to experimental work. This provides a parallel example of individual variability in response to perturbations, supporting the broader interpretation of the temperature results.",
+    "result_type": "MINOR"
+  }
+]

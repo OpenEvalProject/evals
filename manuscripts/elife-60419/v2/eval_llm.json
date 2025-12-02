@@ -1,0 +1,282 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C5",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Wsp1 contributes to both initiation and propagation of endocytic actin networks. The wsp1\u0394CA mutant shows a 40% decrease in patch initiation rate compared to wild-type, though less severe than dip1\u0394. The double mutant dip1\u0394 wsp1\u0394CA shows no additional decrease beyond dip1\u0394 alone, suggesting Wsp1 acts within the Dip1-mediated initiation pathway rather than in a parallel pathway.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C38-C41 are well-supported by quantitative data in Figure 1D showing statistically significant decreases in patch initiation rates. The genetic epistasis analysis (C40) provides strong evidence for a shared pathway. The data directly contradict the prior model that Wsp1 functions exclusively in propagation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Wsp1 is required for efficient propagation of endocytic actin networks. The wsp1\u0394CA mutant shows increased Fim1 assembly time (5.1 to 6.7 s) and decreased percentage of patches that internalize, consistent with a role in network propagation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C37 are supported by quantitative measurements in Figure 1B, C, and F. The increased assembly time and decreased internalization are consistent with impaired propagation. This confirms the established role of Wsp1 in propagation while adding new quantitative data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Dip1 is specifically required for initiation but not propagation of endocytic actin networks. The dip1\u0394 strain shows a 4-fold reduction in patch initiation rate (0.030 to 0.0076 patches/s/\u03bcm\u00b2) but faster Fim1-GFP accumulation once patches are initiated. The reduced initiation rate is not due to depletion of cytoplasmic actin monomers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C34 are well-supported by quantitative data in Figure 1 and Figure 1\u2014figure supplement 1. The measurements of patch initiation rate, assembly kinetics, and cytoplasmic actin levels provide converging evidence for Dip1's specific role in initiation. This confirms and extends prior work (C23-C24, C31).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C6",
+      "C44",
+      "C45"
+    ],
+    "result": "Wsp1 and Dip1 synergistically co-activate Arp2/3 complex. At saturating Dip1 (~30 \u03bcM), addition of Wsp1-VCA increases the maximum polymerization rate ~1.6-fold over Dip1 alone, indicating synergy rather than additive effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C44-C45 are supported by pyrene actin polymerization assays in Figure 2A-B. The 1.6-fold increase at saturating Dip1 demonstrates true synergy. The experimental design appropriately tests for synergy by using saturating concentrations of one NPF.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C7",
+      "C46",
+      "C47",
+      "C81"
+    ],
+    "result": "Synergistic co-activation by Wsp1 and Dip1 produces linear rather than branched actin filaments and does not require preexisting actin filaments. TIRF microscopy shows that Wsp1-VCA significantly increases the percentage of linear filaments with Dip1 bound at pointed ends.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C46-C47, C81 are supported by single-molecule TIRF data in Figure 2C-F. The quantification of Dip1-bound pointed ends (Figure 2D, F) provides direct evidence for linear filament nucleation. The lack of requirement for preexisting filaments is demonstrated by the de novo nucleation observed in TIRF assays.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C97",
+      "C98"
+    ],
+    "result": "Monomeric Wsp1-VCA shows more potent synergy with Dip1 than dimeric GST-Wsp1-VCA. While both forms decrease the K1/2 for Dip1, only monomeric Wsp1-VCA increases the maximum polymerization rate at saturating Dip1. Dimeric Wsp1-VCA requires higher Arp2/3 complex concentrations to show synergy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C52, C97-C98 are supported by data in Figure 2D-H. The differential effects of monomeric vs. dimeric Wsp1 are clearly demonstrated through both TIRF microscopy and bulk polymerization assays. The requirement for higher Arp2/3 concentrations with GST-VCA (C48-C49) is well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C88"
+    ],
+    "result": "Actin monomer binding to the Dip1-Arp2/3 complex stimulates activation. Kinetic modeling shows that models including one or more actin monomer-binding steps before nucleus formation fit experimental data significantly better than models without monomer collisions. The one-monomer-binding model provides the best fit.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C56, C88 are supported by comprehensive kinetic modeling in Figure 3A-D and supplementary figures. The objective function analysis (Figure 3D) quantitatively demonstrates improved fit with monomer-binding models. The modeling approach is rigorous, though the exact number of monomer-binding steps remains somewhat uncertain (C55).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Actin monomer recruitment by the V region of Wsp1 is required for potent synergy with Dip1. Wsp1-VCA increases maximum polymerization rate ~1.6-fold at saturating Dip1, while Wsp1-CA (lacking the V region) has little or no effect. Wsp1-CA only slightly decreases the K1/2 for Dip1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C60 are supported by data in Figure 3E-F and Supplementary file 1. The comparison between Wsp1-VCA and Wsp1-CA provides strong evidence for the requirement of the V region. The small effect of Wsp1-CA on K1/2 suggests minor contributions independent of actin monomer recruitment.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "Wsp1-mediated actin monomer recruitment accelerates multiple steps in Dip1-mediated Arp2/3 activation beyond simply increasing monomer affinity. Kinetic modeling shows that accurate simulation requires floating both the actin monomer off-rate (k-10) and either the Dip1 off-rate (k-9) or the activation step rate constant (k11).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C63, C93-C95 are supported by systematic kinetic modeling in Figure 4B-E. The modeling demonstrates that increased monomer affinity alone is insufficient (C61, C94). The requirement to float multiple rate constants (C62, C95) indicates that Wsp1 affects multiple steps in the activation pathway.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C89",
+      "C96"
+    ],
+    "result": "Wsp1 and Dip1 together stimulate the short pitch conformational change in Arp2/3 complex more than either NPF alone. Crosslinking assays show that saturating concentrations of both Dip1 and Wsp1 increase short pitch crosslinking beyond either NPF alone, suggesting acceleration of activating conformational changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C66 are supported by crosslinking data in Figure 4\u2014figure supplement 2B. The increased crosslinking with both NPFs provides evidence for enhanced conformational changes. However, C89 and C96 are more speculative interpretations of these data, as the exact relationship between crosslinking and the activation step (k11) is not definitively established.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C67",
+      "C68"
+    ],
+    "result": "Wsp1 and Dip1 can simultaneously bind Arp2/3 complex to form a ternary Wsp1-Arp2/3-Dip1 assembly. GST-Wsp1-VCA pulldown assays show co-precipitation of Dip1 only in the presence of Arp2/3 complex. Detection requires a mutant Arp2/3 complex with increased Wsp1 affinity, likely due to weak Dip1-Arp2/3 interaction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C68 are supported by pulldown data in Figure 4\u2014figure supplement 2C-D. The requirement for Arp2/3 complex demonstrates ternary complex formation. The need for a high-affinity Arp2/3 mutant (C68) is a limitation but is reasonably explained by weak Dip1 binding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Dip1 and Wsp1 colocalize at endocytic sites with nearly identical timing, arriving ~2 s before actin polymerization begins. Both NPFs accumulate gradually over ~6 s, peak just before actin peaks, then dissociate during internalization. This timing suggests Dip1 may co-activate with Wsp1 throughout network assembly, not just during initiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C71 are supported by citations to prior live-cell imaging studies (Basu and Chang, 2011; Sirotkin et al., 2010). The interpretation in C71 is a reasonable inference from the timing data, though it remains somewhat speculative. The colocalization and timing data support the synergy model proposed in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C75"
+    ],
+    "result": "Activators that turn on Wsp1 could indirectly stimulate Dip1 through synergistic co-activation of Arp2/3 complex. This provides a potential mechanism for coordinating initiation and propagation phases of endocytic actin assembly.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C75 is a reasonable inference based on the demonstrated synergy between Wsp1 and Dip1 (C6, C44-C45). While speculative about the regulatory mechanism, it is logically consistent with the experimental findings. This represents an important conceptual advance in understanding NPF coordination.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "Cells may limit synergistic linear filament nucleation by Dip1 and Wsp1 to preserve dendritic network architecture. Potential mechanisms include: (1) Dip1's single-turnover mechanism limiting the number of linear filaments, (2) low Dip1 concentration at patches, and (3) competition between actin filaments and Dip1 for Arp2/3 binding, causing Wsp1-alone activation to dominate once filaments accumulate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C82, C85, C87 are speculative hypotheses not directly tested in this study. C83-C84 are supported by data in Figure 2 and prior work showing Dip1 remains bound after nucleation. C86 is supported by prior work (Luan et al., 2018a). While these mechanisms are plausible, they require experimental validation to be considered supported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "Dimeric WASP proteins bind Arp2/3 complex ~100-150-fold more tightly than monomeric forms and are thought to release more slowly from nascent nuclei, potentially decreasing nucleation rates. This mechanism may explain why dimeric Wsp1 shows less synergy with Dip1 than monomeric Wsp1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C99 is supported by citations to prior literature. Claims C100-C102 are speculative explanations for the observed difference between monomeric and dimeric Wsp1 synergy (C97-C98). While the hypothesis is reasonable and consistent with prior mechanistic studies, it is not directly tested in this manuscript. The slow release model requires experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C42",
+      "C43",
+      "C72",
+      "C73",
+      "C74",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C90",
+      "C91",
+      "C92",
+      "C103",
+      "C104"
+    ],
+    "result": "Background knowledge and context from prior literature establishing the roles of Arp2/3 complex, NPFs, and endocytic actin networks in S. pombe and other systems. This includes established properties of Wsp1, Dip1, and their activation mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C1-C4, C8-C27, C42-C43, C72-C80, C90-C92, C103-C104) represent established knowledge from prior literature, appropriately cited throughout. They provide essential context for interpreting the new findings. Some claims (C77, C92, C104) are speculative about future directions or mechanisms but are clearly presented as such.",
+    "result_type": "MINOR"
+  }
+]

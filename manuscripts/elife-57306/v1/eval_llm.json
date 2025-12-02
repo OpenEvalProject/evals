@@ -1,0 +1,212 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C12",
+      "C14",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "The authors developed a comparative proteomic workflow to map protein-protein interactions for 21 ER-resident E3 ubiquitin ligases, identifying over 450 interactions with 218 high-confidence interacting proteins (HCIPs). The majority of these interactions are novel, with only ~13% previously reported in existing databases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2 and C12-C22 collectively demonstrate successful establishment of a proteomic workflow that identified novel E3 interactions. The validation of tagged E3 localization (C14), detection of proteins (C12, C17-C18), and statistical enrichment analysis (C19-C22) provide converging evidence for the robustness of the approach and novelty of findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C15",
+      "C16"
+    ],
+    "result": "Tagged Hrd1-FH recapitulates endogenous Hrd1 complex composition and sedimentation behavior, validating the experimental approach for studying E3 complexes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C16 demonstrate that the tagged E3 approach preserves native complex interactions through co-IP and velocity sedimentation data. This validation is critical for establishing confidence in the broader proteomic dataset and supports the methodological foundation of the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "ER-E3s other than Hrd1 show minimal transcriptional upregulation during ER stress and are not individually required for ER homeostasis, indicating Hrd1 has a specialized role in stress resolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C24 and C63-C65 provide transcriptional data, XBP1 splicing assays, and literature citations that collectively support Hrd1's unique position among ER-E3s in stress response. The modest upregulation of other E3s (~2-fold vs ~6-fold for Hrd1) and lack of XBP1 splicing upon individual E3 knockdown support this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "VCP/p97 is differentially enriched by ER-E3s, with highest enrichment by gp78/AMFR and Hrd1, and notable enrichment by RNF185, MARCH4, and RNF5, suggesting selective ERAD-related roles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C28 use spectral count data and literature citations to demonstrate differential VCP/p97 recruitment. The identification of UFD1 and NPLOC4 as RNF185 HCIPs (C27) provides additional support for ERAD involvement, though the mechanism of VCP/p97 recruitment to RNF185 remains unclear.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "ER-E3s interact with proteins involved in calcium signaling and lipid metabolism, including RNF170's enrichment of ERLIN1/2 and IP3R, and gp78/AMFR's interaction with HMGCR.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C32 identify specific E3-substrate/cofactor relationships supported by proteomic data and literature citations. The identification of IP3R exclusively with RNF170 (C30) validates the methodology's ability to detect known substrates, while the lipid-related HCIPs (C31-C32) expand understanding of E3 regulatory roles.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C3",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "RNF26 is intrinsically unstable with rapid turnover (t1/2 <0.5 hr) mediated by auto-ubiquitination and proteasome-dependent degradation. A Y432A mutation stabilizes RNF26 and abolishes its ubiquitination activity. RNF26 is modified by non-canonical ubiquitin linkages (K33, K63, K29) rather than degradation-associated linkages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3 and C33-C39 provide multiple lines of evidence including MG132 stabilization, pulse-chase assays, co-IP of endogenous RNF26 with Y432A mutant, and UbiCREST analysis. The data consistently demonstrate RNF26 instability and unusual ubiquitin linkage patterns, though the functional significance of non-canonical linkages requires further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C4",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "RNF26 forms a complex with TMEM43, ENDOD1, TMEM33, and TMED1, with TMEM43 playing a central scaffolding role. The complex migrates at ~200-300 kDa by velocity sedimentation, and TMEM43 depletion disrupts complex assembly.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4 and C40-C49 demonstrate complex formation through multiple approaches including co-IP with both WT and Y432A RNF26, velocity sedimentation, detergent sensitivity analysis, and siRNA knockdown experiments. The data consistently show TMEM43 as essential for complex integrity, though stoichiometry and complete architecture remain to be fully defined.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "RNF26 stability is minimally affected by depletion of most HCIPs except TMED1, which modestly slows degradation. VCP/p97 inhibition only partially stabilizes RNF26, distinguishing its turnover mechanism from canonical ERAD substrates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C53 use CHX chase assays and VCP/p97 inhibition to demonstrate that RNF26 turnover differs from typical ERAD substrates. The lack of VCP/p97 enrichment by RNF26 (C53) and partial stabilization by NMS-873 (C52) support a non-canonical degradation mechanism, though the complete pathway remains undefined.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "The RNF26 complex modulates innate immune signaling through the cGAS-STING pathway. RNF26 and TMED1 knockdown reduce STING levels and attenuate IFIT1 responses, while TMEM43 and TMEM33 depletion enhance IFIT1 responses. ENDOD1 affects signaling without altering STING levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C6 and C54-C62 demonstrate functional roles using siRNA knockdowns, western blots, and qRT-PCR. The opposing effects of different HCIPs (TMED1/ENDOD1 dampening vs TMEM43/TMEM33 enhancing IFIT1 responses) and the RNF26-dependence shown by co-depletion experiments (C61-C62) provide strong evidence for a modulatory complex, though molecular mechanisms require further elucidation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C68"
+    ],
+    "result": "Background claims about ER structure, E3 ligase numbers, and ubiquitin system components establish the biological context for the study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C11 and C68 are supported by appropriate citations to established literature and represent accepted knowledge in the field. These provide necessary context but are not novel findings of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C66",
+      "C67"
+    ],
+    "result": "RNF26 reportedly modifies STING with K11 chains, but the authors show RNF26's own turnover involves K33-, K63-, and K29-linked ubiquitin chains not conventionally associated with degradation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C67 contrast prior literature (Qin et al., 2014) with new UbiCREST data showing non-canonical linkages on RNF26 itself. This highlights the complexity of RNF26 ubiquitination and suggests distinct mechanisms for auto-ubiquitination versus substrate modification, though reconciling these observations requires additional investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "Literature-based characterization of RNF26 HCIPs establishes their known functions: TMEM33 in ER shaping, TMEM43 in nuclear envelope organization and disease associations, ENDOD1 in innate immunity, and connections to STING regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C79 are supported by appropriate citations and provide important context for interpreting the functional significance of the RNF26 complex. Note that C70 contains an error - it states TMEM43 is the orthologue of Tts1, but the source text indicates TMEM33 is the orthologue. This represents a claim extraction error rather than an experimental issue.",
+    "result_type": "MINOR"
+  }
+]

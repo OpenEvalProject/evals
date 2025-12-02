@@ -1,0 +1,1493 @@
+{
+  "submission": {
+    "id": "ec1676a2-5cd6-4844-9778-f05e565247b5",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T13:00:44.353090Z",
+    "updated_at": "2025-12-02T13:00:44.353090Z"
+  },
+  "content": [
+    {
+      "id": "b4d72bd2-f4ae-4e12-84c0-62f8803709aa",
+      "submission_id": "ec1676a2-5cd6-4844-9778-f05e565247b5",
+      "content_type": "manuscript",
+      "content_text": "# Dendritic NMDA receptors in parvalbumin neurons enable strong and stable neuronal assemblies\n\n## Authors\n\n- Jonathan H Cornford<sup>1</sup> \u2020\n- Marion S Mercier<sup>1</sup> ([ORCID: 0000-0003-3929-8118](https://orcid.org/0000-0003-3929-8118))\n- Marco Leite<sup>1</sup>\n- Vincent Magloire<sup>1</sup>\n- Michael H\u00e4usser<sup>2</sup>\n- Dimitri M Kullmann<sup>1</sup> ([ORCID: 0000-0001-6696-3545](https://orcid.org/0000-0001-6696-3545)) \u2020\n\n### Affiliations\n\n1. UCL Queen Square Institute of Neurology University College London London United Kingdom\n2. Wolfson Institute for Biomedical Research University College London London United Kingdom\n\n\u2020 Corresponding author\n\n## Abstract\n\nParvalbumin-expressing (PV+) GABAergic interneurons mediate feedforward and feedback inhibition and have a key role in gamma oscillations and information processing. The importance of fast synaptic recruitment and action potential initiation and repolarization, and rapid synchronous GABA release by PV+ cells, is well established. In contrast, the functional significance of PV+ cell NMDA receptors (NMDARs), which generate relatively slow postsynaptic currents, is unclear. Underlining their potential importance, several studies implicate PV+ cell NMDAR disruption in impaired network function and circuit pathologies. Here, we show that dendritic NMDARs underlie supralinear integration of feedback excitation from local pyramidal neurons onto mouse CA1 PV+ cells. Furthermore, by incorporating NMDARs at feedback connections onto PV+ cells in spiking networks, we show that these receptors enable cooperative recruitment of PV+ interneurons, strengthening and stabilising principal cell assemblies. Failure of this phenomenon provides a parsimonious explanation for cognitive and sensory gating deficits in pathologies with impaired PV+ NMDAR signalling.\n\n## Introduction\n\nInteractions among cell assemblies underlie information representation and processing in the brain (Buzs\u00e1ki, 2010). Inhibitory interneurons, including fast-spiking PV+ cells, which mediate feedforward and feedback inhibition and are central to gamma oscillations, have a major role in segregating excitatory principal cells into functional groups. PV+ cells have broad receptive fields inherited from multiple converging heterogeneously tuned principal neurons (Kerlin et al., 2010) and coupled with their powerful somatic inhibition of principal cells, they are positioned to mediate a \u2018winner-takes-all\u2019 scheme in which neuronal assemblies inhibit each other (Agetsuma et al., 2018; Trouche et al., 2016).\n\nThe biophysical properties of PV+ cells that make them suited to fast inhibition of target neurons are well established (Jonas et al., 2004). These properties are critical for functions such as the enforcement of narrow temporal integration, input normalization, and sparsification of neuronal assemblies (de Almeida et al., 2009; Pouille et al., 2009; Pouille and Scanziani, 2001). However, PV+ interneurons are also equipped with NMDARs whose slow kinetics and nonlinear voltage dependence do not appear well-aligned with fast inhibition of principal cells. Although NMDARs contribute relatively less to synaptic excitation of PV+ cells than principal neurons (Geiger et al., 1997; Lamsa et al., 2007; Matta et al., 2013), several sources of evidence suggest that they are important for the normal operation of cell assemblies. In particular, genetic deletion of NMDARs in PV+ interneurons disrupts both gamma rhythms (Carl\u00e9n et al., 2012) and spatial representations (Korotkova et al., 2010). Moreover, impaired NMDAR-mediated signaling in PV+ interneurons has been suggested to be a core feature of schizophrenia (Coyle, 2012; Lisman et al., 2008). Indeed, genetic manipulation of the schizophrenia risk genes encoding neuregulin and ErbB4, which amongst other functions regulate NMDARs, impairs recruitment of PV+ interneurons and recapitulates some features of the disease (Del Pino et al., 2013; Kotzadimitriou et al., 2018).\n\nA recent study investigating plasticity rules of glutamatergic inputs onto CA1 PV+ interneurons reported NMDAR-dependent long-term potentiation (LTP) at feedback synapses from local pyramidal neurons but not at feedforward connections made by Schaffer collaterals (Le Roux et al., 2013), and attributed the difference to a larger NMDAR conductance at feedback synapses. A natural question prompted by these findings is the degree to which NMDARs contribute to synaptic integration of glutamatergic feedback inputs on PV+ cells. In principal neurons, NMDAR-mediated dendritic nonlinearities enhance the computing capacity of individual cells (Gasparini and Magee, 2006; Losonczy and Magee, 2006; Poirazi and Mel, 2001; Stuart and Spruston, 2015). Do NMDARs have an analogous function in PV+ interneurons? Furthermore, given the importance of excitatory feedback connections on interneurons for microcircuit motifs, how do NMDARs in PV+ interneurons affect interactions between neuronal assemblies?\n\nHere we combine in vitro optogenetic stimulation and two-photon glutamate uncaging with modeling to assess the role of NMDARs at excitatory feedback connections onto mouse hippocampal CA1 PV+ interneurons. We show that NMDARs at feedback synapses mediate integrative dendritic nonlinearities in PV+ interneurons. Importantly, this mechanism can be exploited to promote the formation of robust cell assemblies that are stable in the face of distracting noise.\n\n## Results\n\n### Differential input integration at stratum oriens and stratum radiatum dendrites of PV+ interneurons\n\nExperiments were performed in acute hippocampal slices from mice obtained by crossing PV-Cre mice with Ai9 mice, and tdTomato expression was used to target fast-spiking PV+ interneurons in CA1 stratum pyramidale. Such neurons, which mainly comprise basket cells in addition to axo-axonic and bistratified cells (Bezaire and Soltesz, 2013), receive excitatory feedforward inputs across the full extent of their dendritic trees, in both strata radiatum and oriens. In contrast, feedback inputs from axon collaterals of local pyramidal cells are confined to dendrites in the stratum oriens (Amaral et al., 1991). In order to compare the contribution of NMDARs to dendritic integration of feedforward and feedback excitatory postsynaptic potentials (EPSPs), we took advantage of the anatomical restriction of feedback inputs onto oriens dendrites, and recorded somatic responses to two-photon glutamate uncaging at multiple sites within a 15 \u00b5m dendritic segment in either stratum oriens or stratum radiatum (Figure 1A). Activation of individual uncaging locations in either stratum evoked uncaging-evoked EPSPs (uEPSPs) that were comparable in amplitude and kinetics to spontaneous EPSPs (Figure 1B and Figure 1\u2014figure supplement 1), consistent with a high density of excitatory synapses innervating PV+ interneuron dendrites (Guly\u00e1s et al., 1999). To quantify the degree of nonlinearity of dendritic integration, we compared compound uEPSPs elicited by near-synchronous activation of increasing numbers of uncaging locations to the arithmetic sum of individual uEPSPs at the same sites (Figure 1C). Activation of sites on dendrites in stratum oriens revealed supralinear uEPSP summation (peak amplitude nonlinearity: 24.0 \u00b1 4.5%, mean\u00a0\u00b1\u00a0SEM, n\u00a0=\u00a014; Figure 1D,E; unscaled responses in Figure 1\u2014figure supplement 2). This nonlinearity was even larger when measured using the time-integral of uEPSPs measured between 0 and 50 ms from onset (time-integral nonlinearity: 54.0 \u00b1 10.1%; Figure 1F). In contrast, when glutamate was uncaged along dendritic segments in stratum radiatum, uEPSPs summated in an approximately linear fashion (peak amplitude nonlinearity: 3.8 \u00b1 5.0%, time-integral nonlinearity: 6.3 \u00b1 7.6%, n\u00a0=\u00a09; oriens vs. radiatum p=0.0083 and p=0.0028 for peak amplitude and time-integral comparisons respectively, unpaired t-tests, Figure 1D\u2013F). The difference between strata was also observed in a subset of paired recordings in which dendrites in both strata were tested (Figure 1\u2014figure supplement 3). There was no consistent relationship between integration nonlinearity and either uncaging distance from soma or the size of the arithmetic sum of the uEPSPs (Figure 1\u2014figure supplement 4). Given that synapses in stratum oriens are innervated by both local pyramidal neurons and Schaffer collaterals, the striking supralinear summation of uEPSPs uncovered here may underestimate the true extent of dendritic nonlinearity at feedback connections.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/49872/elife-49872-fig1-v2.jpg)\n\n**Figure 1.:** (A) Two-photon z-projection image of a PV+ interneuron recorded via a patch pipette in stratum pyramidale (SP) and filled with Alexa-594 (left, inset: firing pattern in response to current injection), with two dendritic regions of interest at higher magnification (right: top, stratum radiatum, SR; bottom, stratum oriens, SO), showing glutamate uncaging locations (numbered). (B) Individual uEPSP responses from radiatum dendritic locations shown in (A). (C) Comparison of arithmetic sum of individual uEPSPs and recorded uEPSPs evoked by near-synchronous uncaging at multiple locations in stratum radiatum (blue) and oriens (red). (D) Peak amplitudes of recorded uEPSPs plotted against arithmetically summed waveforms for the two regions shown in (A). Dashed line shows line of identity. Right: bar chart showing percentage amplitude nonlinearity. Red: oriens, blue: radiatum. (E) Summary of scaled peak amplitude comparisons for all cells (oriens locations: n\u00a0=\u00a014, radiatum locations: n\u00a0=\u00a09). Filled circles and error bars indicate mean\u00a0\u00b1\u00a0SEM. Right: bar chart showing quantification of amplitude nonlinearity. (F) Time-integral nonlinearity plotted as for (E). **: p<0.01.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/49872/elife-49872-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Comparison of uEPSPs to spontaneous EPSPs. Half-maximum width (ms) plotted against peak amplitude (mV) for n\u00a0=\u00a0210 spontaneous events (gray) and n\u00a0=\u00a078 uEPSPs (red); data from 4 cells. Inset: peak amplitude (i) and half-width (ii) for one event. (B) Distribution of arithmetic sum of peak amplitudes for oriens and radiatum uncaging locations. (C) As (B) but for arithmetic sum of time-integrals.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/49872/elife-49872-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** Comparisons of the arithmetic sum of individual uEPSPs and corresponding recorded uEPSPs evoked at locations in stratum radiatum (blue, n\u00a0=\u00a09) and stratum oriens (red, n\u00a0=\u00a014). (A, B) Unscaled uEPSP amplitudes, average (A) and raw data (B). (C, D) Unscaled uEPSP integrals, average (C) and raw data (D). For panels (A) and (C) linearly interpolated averages are shown\u00a0\u00b1\u00a0SEM.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/49872/elife-49872-fig1-figsupp3-v2.jpg)\n\n**Figure 1\u2014figure supplement 3.:** (A) Peak amplitude nonlinearity comparison by dendrite location. Statistics for all data, oriens vs radiatum: 26.0 \u00b1 6.0% (n\u00a0=\u00a09) vs 5.4 \u00b1 5.4% (n\u00a0=\u00a08), p=0.02. Statistics for paired data oriens vs radiatum: 29.6 \u00b1 8.7% vs 6.4 \u00b1 6.7%, p=0.01, n\u00a0=\u00a06. (B) Time-integral nonlinearity comparison by dendrite location. Statistics for all data, oriens vs radiatum: 55.9 \u00b1 11.0% (n\u00a0=\u00a09) vs 9.9 \u00b1 7.6% (n\u00a0=\u00a08), p=0.004. Statistics for paired data, oriens vs radiatum: 59.3 \u00b1 16.4% vs 13.1 \u00b1 9.6%, p=0.035, n\u00a0=\u00a06. Closed circles: paired recordings, open circles: unpaired. Bars show mean\u00a0\u00b1\u00a0SEM of all recordings.\n\n![Figure 1\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/49872/elife-49872-fig1-figsupp4-v2.jpg)\n\n**Figure 1\u2014figure supplement 4.:** (A) uEPSP amplitude nonlinearity plotted against glutamate uncaging site distance from soma. (B) uEPSP amplitude nonlinearity plotted against maximal arithmetic sum of uEPSP amplitudes. (C) As (A) but for time-integrals. (D) As (B) but for time-integrals. Statistics: r\u00a0=\u00a0Pearson correlation coefficient, p=associated two-tailed significance.\n\n![Figure 1\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/49872/elife-49872-fig1-figsupp5-v2.jpg)\n\n**Figure 1\u2014figure supplement 5.:** (A) Top: Two-photon z-stack of PV+ interneuron in CA1 region of hippocampus. White box marks region of interest shown below. Scale bar: 50 \u00b5m. Bottom: dendritic regions of interest at higher magnification showing glutamate uncaging locations (numbered) on two dendrites in the same focal plane. Scale bar: 3 \u00b5m. (B) Comparison of arithmetic sum of six individual uEPSPs (black) and the recorded compound uEPSP elicited by uncaging glutamate on single dendrites (green) or across the two dendrites (orange). (C) Summary of single- vs mixed-dendrite peak amplitude nonlinearity for all recordings. Statistics: paired t-test, single vs mixed nonlinearity: 39.3 \u00b1 11.7% vs 16.5 \u00b1 5.6%, p=0.016, n\u00a0=\u00a012 dendrite pairs, n\u00a0=\u00a06 cells. Error bars indicate mean\u00a0\u00b1\u00a0SEM.\n\nWe repeated these experiments with uncaging locations distributed across two dendrites in stratum oriens, and compared the degree of non-linearity to that observed when uncaging was confined to either one of the dendrites. The degree of supralinear summation was significantly lower when uncaging was distributed across two dendrites (peak amplitude nonlinearity, 39.3 \u00b1 11.7% vs 16.5 \u00b1 5.6% for within-dendrite and across-dendrite uncaging respectively, p=0.016, n\u00a0=\u00a012; paired t-test; Figure 1\u2014figure supplement 5). This result indicates that the spatial clustering, or conversely dispersion, of co-active dendritic inputs to PV+ interneurons has an important role in input integration.\n\n### NMDAR expression and dendrite morphology underlie stratum-dependent differences in synaptic integration\n\nSupralinear dendritic integration in pyramidal neurons depends on the recruitment of voltage-dependent conductances. We therefore investigated the role of such conductances in PV+ interneurons. In line with previous evidence for a substantial NMDAR component at feedback inputs onto\u00a0PV+ cells (Le Roux et al., 2013), supralinear dendritic summation in stratum oriens was abolished when NMDARs were blocked by D-AP5 (100 \u00b5M) (time-integral nonlinearity: 2.5 \u00b1 3.0%, vs control without the drug p=0.0004, n\u00a0=\u00a010; Figure 2A\u2013C). Dendritic integration in stratum radiatum was unchanged from control conditions (time-integral nonlinearity: 3.3 \u00b1 2.6%, vs control p=0.88, n\u00a0=\u00a04; Figure 2A\u2013C). In contrast to D-AP5, the sodium channel blocker tetrodotoxin (TTX, 100 nM) did not significantly affect integration in either stratum oriens or radiatum (oriens time-integral nonlinearity 40.1 \u00b1 5.6%, vs control p=0.23, n\u00a0=\u00a016; radiatum time-integral nonlinearity 9.4 \u00b1 3.3%, vs control p=0.71, n\u00a0=\u00a09; Figure 2D). The failure of TTX to affect uEPSP integration is consistent with the view that PV+ interneuron dendrites generally do not support regenerative events (Hu et al., 2010) (although see Chiovini et al., 2014). The effects of pharmacological manipulations were consistent whether measuring time-integrals or peak uEPSP amplitudes (Figure 2\u2014figure supplement 1). Furthermore, uncaging distances from soma were comparable across all conditions, as were somatic uEPSP amplitudes (Figure 2\u2014figure supplement 2). Dendrites of PV+ interneurons that mediate feedback inhibition, but not those mediating purely feedforward inhibition, thus exhibit NMDAR-dependent supralinear input integration. These findings imply that clusters of coactive synapses supplied by local pyramidal neurons cooperate via depolarization-dependent relief of NMDARs from Mg2+ blockade.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/49872/elife-49872-fig2-v2.jpg)\n\n**Figure 2.:** (A) Two-photon z-stack of PV+ interneuron in CA1 region of hippocampus. Red box marks glutamate uncaging location. (B) Comparison of arithmetic and recorded uEPSP summation waveforms in the presence of D-AP5. Right: peak recorded amplitude vs peak arithmetic amplitude. (C) Summary data of time-integrals plotted against arithmetic sum time-integrals for 14 dendritic locations recorded in D-AP5 (oriens locations: n\u00a0=\u00a010, radiatum locations: n\u00a0=\u00a04). Right: quantified synaptic integration nonlinearity. The dashed line marks the average magnitude of oriens nonlinearity from Figure 1F. (D) Summary data for 25 dendritic locations recorded in TTX (oriens locations: n\u00a0=\u00a016, radiatum locations: n\u00a0=\u00a09). Right: quantification of synaptic integration nonlinearity. Filled circles and error bars indicate mean\u00a0\u00b1\u00a0SEM.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/49872/elife-49872-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Summary scaled peak amplitude uEPSP data for 14 dendritic locations recorded in D-AP5, n\u00a0=\u00a010 oriens; n\u00a0=\u00a04 radiatum. Right: quantified synaptic integration nonlinearity. Oriens vs radiatum: 1.9 \u00b1 2.7% vs 7.3 \u00b1 2.5%, p=0.27. Oriens D-AP5 vs oriens control, p=0.001. Radiatum D-AP5 vs radiatum control, p=0.66. (B) Summary scaled peak amplitude uEPSP data for 25 dendritic locations recorded with TTX in the ACSF, n\u00a0=\u00a016 oriens; n\u00a0=\u00a09 radiatum. Right: quantified synaptic integration nonlinearity. Oriens vs radiatum: 22.6\u00a0\u00b1\u00a05.2% vs 2.9 \u00b1 3.9%, p=0.016. Oriens TTX vs oriens control, p=0.84. Radiatum TTX vs radiatum control, p=0.9.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/49872/elife-49872-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A \u2013 C) Peak arithmetic uEPSP amplitudes by uncaging dendrite location in control conditions (A, replotted from Figure 1\u2014figure supplement 1B for comparison), D-AP5 (B), and TTX (C). (D \u2013 F) uEPSP peak amplitude nonlinearity vs uncaging location distance from soma in control conditions (D, replotted from Figure 1\u2014figure supplement 4 for comparison), D-AP5 (E), and TTX (F).\n\nThe results above are consistent with previous evidence of a larger NMDAR/AMPAR conductance ratio at feedback than feedforward synapses, estimated by electrically stimulating axons in the alveus/stratum oriens or stratum radiatum respectively, while clamping PV+ interneurons at positive and negative potentials to separate AMPAR and NMDAR components (Le Roux et al., 2013; Pouille and Scanziani, 2004). However, the low input resistance of PV+ interneurons, together with different dendritic morphologies in strata oriens and radiatum (Hu et al., 2010), potentially confounds the comparison of excitatory postsynaptic currents (EPSCs) originating from the two locations and recorded at positive holding potentials (Williams and Mitchell, 2008). We therefore used an alternative experimental design to estimate the relative contribution of AMPARs and NMDARs. Specifically, we recorded EPSCs in a low (0.1 mM) extracellular [Mg2+] solution to partially unblock NMDARs while holding PV+ interneurons at \u201360 mV, and used sequential addition of AMPAR and NMDAR blockers to separate the two components of transmission (Figure 3A).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/49872/elife-49872-fig3-v2.jpg)\n\n**Figure 3.:** (A) Schematic describing stimulation of feedforward (S1, blue) and antidromic stimulation of feedback (S2, red) axons. Middle: example paired AMPAR and NMDAR EPSC components in low [Mg2+]. Right: NMDAR/AMPAR charge ratios (n\u00a0=\u00a010). (B) Decay time constants of NMDAR-mediated EPSCs recorded in the same PV+ neurons in response to stimulation of feedforward (blue) and feedback (red) axons (n\u00a0=\u00a010). (C) Top: reconstruction of a PV+ interneuron (axon not shown). Simulated synaptic locations are shown in gray. Bottom: example simulated uncaging experiment at the synapses marked with red circles; graph shows recorded EPSP amplitudes vs arithmetic sum of EPSP amplitudes. Inset: red solid lines, recorded summation; dashed black lines, arithmetic summation; waveforms calculated from individual synaptic responses. (D) Scaled recorded time-integrals vs scaled arithmetic sum of time-integrals at all locations with equal NMDAR conductance (oriens locations: n\u00a0=\u00a028, radiatum locations: n\u00a0=\u00a016). Right: quantified synaptic integration nonlinearity. (E) As (D), but with reduced NMDAR/AMPAR conductance ratio at radiatum dendrites. Oriens data replotted from (D).\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/49872/elife-49872-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Scaled recorded time-integrals vs scaled arithmetic sum of time-integrals at all locations with equal NMDAR conductance (oriens locations: n\u00a0=\u00a028, radiatum locations: n\u00a0=\u00a016). As Figure 3D, but with 100 \u00b5M intracellular spermine. (B) Quantified synaptic integration nonlinearity, oriens 37.5 \u00b1 4.4% vs radiatum 15.3\u00a0\u00b1\u00a02.0. (C) Mean percentage integral nonlinearity difference between oriens and radiatum dendrites as peak synaptic AMPA and NMDA receptor conductance is varied. White crosses denote parameter values for simulations shown in panel A and Figure 3D. Mean difference between simulations over parameter range was 2.77 \u00b1 0.17%. Polyamine modulation was simulated using a kinetic scheme based on Bowie et al. (1998). Values for peak synaptic conductance were calculated at \u221260 mV and +60 mV for AMPA and NMDA receptors respectively. n\u00a0=\u00a016 radiatum, n\u00a0=\u00a028 oriens.\n\nPharmacological dissection of EPSCs in 0.1 mM [Mg2+] revealed a\u00a0>\u00a02 fold greater NMDAR/AMPAR charge ratio when stimulating in the alveus than when stimulating in stratum radiatum (charge ratio: 3.5\u00a0\u00b1\u00a00.7 vs 1.3\u00a0\u00b1\u00a00.3, p=0.0017, n\u00a0=\u00a010, paired t-test; Figure 3A). The decay time constant of the NMDAR-mediated EPSCs was similar for the two inputs (Schaffer collaterals: 154.6\u00a0\u00b1\u00a025.9 ms vs alveus: 148.1\u00a0\u00b1\u00a013.4 ms, p=0.8, n\u00a0=\u00a010, paired t-test; Figure 3B) providing no evidence for differences in NR2B subunit inclusion, again consistent with previous work that showed similar effects of selective blockade of NR2B-containing receptors (Le Roux et al., 2013) (although see Matta et al., 2013).\n\nDendrites of PV+ interneurons in stratum oriens are generally thinner and shorter than those in stratum radiatum (Guly\u00e1s et al., 1999) suggestive of a higher effective local input impedance. This raises the possibility that, in addition to enriched NMDAR expression, oriens dendrites may be depolarized more effectively by glutamate uncaging resulting in an enhanced relief of NMDARs from voltage-dependent Mg2+ block (Branco et al., 2010). To investigate the relationship between synaptic integration and dendritic geometry we used a detailed compartmental model of a CA1 PV+ interneuron (Figure 3C). Voltage-dependent conductance densities and membrane properties were implemented according to previously published models (Hu and Jonas, 2014; N\u00f6renberg et al., 2010), and the relative densities of synaptic AMPARs and NMDARs were initially assumed to be the same on oriens and radiatum dendrites. Simulation parameters closely followed the uncaging experiments, with clusters of synapses activated across the range of experimentally measured locations. These simulations revealed supralinear summation of EPSPs recorded at the soma that was more pronounced for stratum oriens than for stratum radiatum dendrites (oriens vs radiatum time-integral nonlinearity: 42.5 \u00b1 3.5% vs 23.9 \u00b1 2.3%, p<0.001, Figure 3D), supporting a role for dendritic morphology in mediating the difference between strata. The simulation results were very similar whether AMPARs were assumed to show polyamine-dependent inward rectification or to have a fixed open-channel conductance (Figure 3\u2014figure supplement 1). The\u00a0~2 fold difference in supralinearity between strata was, however, smaller than the\u00a0>8 fold difference observed experimentally (oriens vs radiatum time-integral nonlinearity: 54.0 \u00b1 10.1% vs 6.3 \u00b1 7.6%; Figure 1).\n\nReducing the simulated NMDAR/AMPAR conductance ratio at radiatum dendrites to half that of the oriens dendrites, in line with results from experiments in Figure 3A, improved agreement with the glutamate uncaging data (time-integral supralinearity in simulations: 42.5 \u00b1 3.5% vs 8.5 \u00b1 0.8% for stratum oriens vs stratum radiatum; Figure 3E). The difference in dendritic integration in oriens and radiatum dendrites observed experimentally (Figure 1) may therefore be accounted for by a combination of differential NMDAR expression (greater in stratum oriens) and dendritic morphology (greater impedance in stratum oriens, thus facilitating depolarization and NMDAR opening).\n\n### NMDAR recruitment at CA1 pyramidal cell feedback connections onto PV+ interneurons\n\nWhile electrical stimulation of the alveus recruits local pyramidal cell axon collaterals, it may also recruit other extrinsic afferents that could contribute to the observed NMDAR currents. In order to isolate the feedback input from CA1 pyramidal cells to PV+ interneurons, and to measure the magnitude of the NMDAR component at these synapses, we combined voltage clamp using a Cs+-based pipette solution with optogenetic stimulation of feedback fibers. ChR2 was selectively expressed in CA1 pyramidal cells by injecting an adeno-associated virus (AAV) encoding ChR2-EYFP under the control of the CaMKII promoter in CA1 of the dorsal hippocampus. We routinely verified that expression was confined to CA1 and did not spread to CA3 (Figure 4A). Wide-field illumination pulses (1 ms) of 470 nm light elicited monophasic EPSCs, in agreement with the low associative connectivity among CA1 pyramidal neurons (Amaral et al., 1991; Deuchars and Thomson, 1996) (Figure 4B). AMPAR- and NMDAR-mediated light-evoked feedback EPSCs were recorded at \u221260 mV and +60 mV, respectively, and NBQX was added to isolate the NMDAR component (Figure 4B). This revealed large NMDAR currents (amplitude: 459.1\u00a0\u00b1\u00a089.2 pA, integral: 39.1\u00a0\u00b1\u00a06.8 nA ms) and NMDAR/AMPAR ratios (amplitude: 0.7\u00a0\u00b1\u00a00.2, integral: 2.7\u00a0\u00b1\u00a00.8, Figure 4C), confirming abundant expression of functional NMDARs at feedback excitatory synapses on PV+ interneurons.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/49872/elife-49872-fig4-v2.jpg)\n\n**Figure 4.:** (A) Schematic of viral injections into dorsal CA1 of PV-tdTomato mice (left), and confocal image of a sagittal hippocampal slice showing selective ChR2-EYFP expression in CA1 pyramidal cells (middle, inset scale: 100 \u00b5m). Right: schematic of optogenetic patch clamp experiments. (B) Example traces of light-evoked feedback EPSCs in a PV+ interneuron held at \u221260 mV (black), +60 mV (black dashed), +60 mV with application of NBQX (red) or +60 mV with NBQX and D-AP5 in voltage clamp. (C) Quantification of absolute NMDAR-mediated feedback EPSCs (amplitude and integral, left, n\u00a0=\u00a07) and NMDAR/AMPAR ratios (amplitude and integral, right, n\u00a0=\u00a06), measured from voltage clamp experiments as in (B). Black bars indicate mean\u00a0\u00b1\u00a0SEM. (D) Schematic of optogenetic stimulation protocol for current clamp experiments: light power was cycled from 20% to 100% of power for maximal response (see Materials\u00a0and\u00a0methods). (E) EPSP integral of maximal response over time, with 20 min application of D-AP5 (red). (F) EPSP amplitude, EPSP integral and integral/amplitude ratio in the presence (red) or absence (black) of D-AP5 (n\u00a0=\u00a05, one-tailed t-tests; control\u00a0=\u00a0average of baseline and wash). Filled circles and error bars indicate mean\u00a0\u00b1\u00a0SEM. (G) Normalized EPSP integrals (black example traces) vs normalized EPSP integrals in the presence of D-AP5 (red example traces), for all stimulation intensities (n\u00a0=\u00a05).\n\nOur results so far argue that NMDARs mediate supralinear integration of uncaging-evoked responses in stratum oriens dendrites, and that synapses mediating feedback excitation of stratum oriens dendrites are enriched with NMDARs. Glutamate uncaging does not necessarily restrict NMDAR activation to synaptic receptors, leaving uncertain whether feedback innervation of PV+ interneurons is able to engage NMDARs under more physiological conditions. We therefore used the same optogenetic strategy, to ask whether feedback inputs from local CA1 pyramidal cells depolarize PV+ interneurons sufficiently to recruit NMDARs. We measured the contribution of NMDARs to optogenetically evoked EPSPs recorded in current clamp, whilst incrementing the light intensity through a duty cycle (Figure 4D). Perfusion of the NMDAR blocker D-AP5 significantly reduced both the average time-integral and the ratio of integral to peak of EPSPs evoked at the maximal light intensity (p=0.033; p=0.014; n\u00a0=\u00a05), but not the peak EPSPs (Figure 4E,F). Furthermore, in line with cooperative postsynaptic voltage-dependent relief of Mg2+ blockade, we observed a larger NMDAR contribution to EPSPs elicited by stronger light pulses (Figure 4G). Together, these experiments confirm that synaptic glutamate\u00a0release at feedback inputs from CA1 pyramidal cells can elicit NMDAR-mediated depolarization of PV+ interneurons.\n\n### NMDAR recruitment at feedback connections onto PV+ interneurons strengthens and stabilizes neuronal assemblies\n\nNMDAR-dependent supralinear dendritic integration increases the computational capacity of principal neurons (Mel, 1992). In an extreme case cooperativity among synapses could implement an AND gate where a somatic depolarization is conditional on more than one near-simultaneous excitatory input impinging on a dendritic branch. We asked how supralinear summation of feedback excitation of PV+ interneurons could affect local circuit behavior. Feedback recruitment of interneurons has been implicated in lateral inhibition, implementing a winner-takes-all mechanism (de Almeida et al., 2009). We therefore simulated a network of 250 excitatory point neurons (Izhikevich, 2003) reciprocally connected to a single fast-spiking inhibitory neuron (Ferguson et al., 2014; Ferguson et al., 2013) (Figure 5A,B). The inhibitory neuron received dual-component (AMPAR and NMDAR) synaptic conductances from the excitatory neurons (Figure 5C), and synapses located close to one another were allowed to interact cooperatively and engage the non-Ohmic behavior of NMDARs. The strength of interaction between individual excitatory synapses on the interneuron fell off with distance in an abstract input space (Figure 5\u2014figure supplement 1), inspired by the experimental evidence for clustering of homotopic inputs on dendritic segments in principal neurons (Iacaruso et al., 2017; Wilson et al., 2016). Excitatory neurons were assumed to be driven by a Poisson process (denoted \u2018external drive\u2019) whose rate across the population was defined to be either clustered or dispersed in the input space. The PV+ interneuron also received a constant fraction of the external drive received by the principal neurons. The overall intensity of this drive was set such that the network entered a sparsely firing oscillatory state akin to a cortical gamma rhythm, with the simulated PV+ interneuron firing one-to-one with the gamma cycle. Excitatory neurons driven by a compact \u2018hump\u2019 of excitation in input space cooperated in recruiting NMDARs on the interneuron to a greater extent than equivalent excitation shuffled randomly in input space (Figure 5D). The disproportionate NMDAR activation by compact versus distributed excitation recapitulates multiple co-active synapses within a small region of the dendritic tree cooperating to relieve NMDARs from Mg2+ blockade. Although individual pyramidal neurons fired sparsely, an effect of the gamma oscillation was to synchronize them so that the local depolarization was maximized.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/49872/elife-49872-fig5-v2.jpg)\n\n**Figure 5.:** (A) Schematic of network structure. (B) Voltage traces of interneuron (black) and principal cells (blue, cell # at right) during network simulation. The network was driven by an asynchronous barrage of spikes, maximal in cell #125 (\u2018clustered\u2019 input). (C) Corresponding currents in interneuron. Red: NMDAR currents from principal cells; green: GABAR currents from autaptic PV+ cell connections; black: sum of NMDAR and AMPAR currents from principal cells; gray: AMPAR currents from external drive. (D) Left: schematic showing cell assemblies receiving clustered (top) or dispersed (bottom) external inputs, and middle: corresponding summary plots of network simulation showing external drive input distribution (gray), pyramidal cell firing (blue, circles), and interneuron firing (black, and vertical dashed lines). Right: average NMDAR and AMPAR charge in interneuron per principal neuron spike. (Autaptic and feedback connections from PV+ cells are omitted from the schematic for clarity.).\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/49872/elife-49872-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) Network schematic showing postsynaptic membrane locations of Izhikevich-model PV+ interneuron. (B) Steady state transfer resistance for a PV+ cell dendritic tree reconstructed using the TREES toolbox (Cuntz et al., 2010). The matrix shows the electrotonic \u2018proximity\u2019 of neighbouring patches of membrane on the dendritic tree (color scale: \u00b5V/pA). The main branches of the dendritic tree are indicated at the bottom. (C) Input cooperativity matrix used in simulations. Inset shows zoomed view of cooperativity matrix for the first 50 principal neurons.\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/49872/elife-49872-fig5-figsupp2-v2.jpg)\n\n**Figure 5\u2014figure supplement 2.:** (A) Distribution of firing rate by neuron during each PV+ interneuron firing cycle, averaged across 500 simulations. Top \u2013 without NMDARs, bottom \u2013 with NMDARs. The hump of excitation was centered on neuron #125. Note the similarity of the first cycle between the two conditions. The behaviors of the networks diverge as the NMDARs are engaged. (B) As (A) but normalized by total firing rates across neurons, for better comparison of distribution dispersion. (C) Comparison of first and tenth simulation cycle: top \u2013 mean spikes per cycle, bottom - standard deviation of average network \u2018receptive field\u2019.\n\nRecruitment of NMDAR conductances in the interneuron also maintained sparse principal cell firing over several oscillatory cycles (Figure 5\u2014figure supplement 2). In contrast, without NMDARs, the hump of active principal cells broadened as the oscillation stabilized. Principal cells at the core of the hump of activity (as defined by synaptic location on the interneuron dendritic tree) thus preferentially influence the firing of the interneuron as a result of the recruitment of NMDARs. We propose, therefore, that NMDARs on PV+ interneurons contribute to maintaining a sharp assembly representation, dependent on the spatial arrangement of active synapses on the dendritic tree of the interneuron.\n\nNext, we simulated two similar networks mutually inhibiting one another (Geisler et al., 2007; Trouche et al., 2016) to understand how NMDARs in the inhibitory neurons could affect competition among cell assemblies. When one network received a stable and compact hump of excitation (again, with input space defined by location on the interneuron dendritic tree) it was much more likely to \u2018win\u2019 than a competing network receiving an equal amount of excitation that was dispersed (Figure 6A). This effect results from the additional interneuron depolarization mediated by NMDARs which were recruited by clustered synapses. The tendency for the network receiving a hump of excitation to win disappeared when NMDARs were removed from the inhibitory neurons (Figure 6B,C).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/49872/elife-49872-fig6-v2.jpg)\n\n**Figure 6.:** (A) Right: schematic showing competing cell assemblies with clustered (blue) or dispersed (orange) inputs; left: example simulation of lateral inhibition between these subnetworks with NMDARs at feedback connections to interneuron (input distribution: gray; pyramidal cell firing: blue/orange, circles; interneuron firing: blue/orange spikes and vertical dashed lines). The network receiving the clustered input out-competed the network receiving the dispersed input. (B) Same as (A) but without NMDARs at feedback connections, showing, in one case the network receiving clustered input firing more than the network receiving dispersed input (top), and in the other case the network receiving dispersed input winning (bottom). (C) Summary of 250 simulations showing ratio of principal cell spikes for each subnetwork with and without NMDARs at feedback inputs onto interneuron. Numbers correspond to simulations illustrated in (A) and (B).\n\nFinally, we explored the ability of the combined network to \u2018lock\u2019 onto one of two inputs of similar strength and compactness presented to the two sub-networks (Figure 7). An ethologically relevant analogous task in humans is the ability to stabilize perception of a Necker cube (Figure 7A). Although we make no claim as to how this task is solved, it exemplifies a situation where two sensory or cognitive representations compete for recruitment of a network. The net excitatory external drive to each of the sub-networks was allowed to fluctuate independently with time (Figure 7B). As a result of this stochastic variability in the external drive strength, and neuronal accommodation, the combined network intermittently \u2018flipped\u2019 between the two inputs. However, the frequency of flipping increased steeply when the normalized conductance of NMDARs was decreased in the inhibitory neurons, resulting in a flickering of the dominant assemblies (Figure 7C). In contrast, the frequency of flipping was relatively unaffected by reducing the AMPAR conductance (Figure 7D). Because gamma oscillations in the hippocampus are nested within slower theta oscillations (Chrobak and Buzs\u00e1ki, 1998), we repeated the simulations while modulating the external drive with a theta oscillation. This yielded qualitatively similar results (Figure 7\u2014figure supplement 1). We thus conclude that NMDAR-mediated cooperative interactions among clustered synapses on an interneuron stabilize cell assemblies.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/49872/elife-49872-fig7-v2.jpg)\n\n**Figure 7.:** (A) Cartoon illustrating a bistable neural representation. (B) Schematic of competing subnetworks both receiving clustered inputs (left) with random fluctuations in external input strength (plotted right). (C) Example simulation of network activity with NMDARs at synapses on interneurons (top), and with NMDARs scaled down to 25% of baseline (bottom). Input distribution: gray; pyramidal cell firing: blue/orange, circles; interneuron firing: blue/orange spikes. Although the dominant networks flipped spontaneously in both cases, the frequency of flipping was much higher with the down-scaled NMDARs. (D) Plot of network flip rate vs NMDAR and AMPAR conductance. White point (1): baseline NMDAR simulation parameters; black point (2): NMDARs down-scaled to 25%.\n\n![Figure 7\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/49872/elife-49872-fig7-figsupp1-v2.jpg)\n\n**Figure 7\u2014figure supplement 1.:** (A) Theta-modulated external drive to the system. (B) Example simulation of network with NMDARs at synapses on interneurons (top), and with NMDARs scaled down to 25% of baseline (bottom). External drive (modulated as shown in panel A): gray; pyramidal cell firing: blue/orange, circles; interneuron firing: blue/orange spikes. Although the dominant networks flipped spontaneously in both cases, the frequency of flipping was much higher with the down-scaled NMDARs. (C) Plot of network flip rate vs NMDAR and AMPAR conductance. White point (1): baseline NMDAR simulation parameters; black point (2): NMDARs down-scaled to 25%.\n\n## Discussion\n\nThe present study shows that clustered excitatory synapses on stratum oriens dendrites of CA1 PV+ interneurons interact supralinearly, challenging the view that they act as linear integrators of synaptic inputs (see also Tzilivaki et al., 2019). The high impedance of stratum oriens dendrites, which are innervated by axon collaterals of local pyramidal neurons, facilitates the cooperative recruitment of NMDARs. In addition, voltage clamp experiments show a larger NMDAR/AMPAR ratio at feedback inputs than at feedforward inputs. We place these results in the context of cell assembly competition by including nonlinear feedback integration in a spiking neural network model. NMDARs at synapses on a simulated feedback interneuron allow multiple principal cells co-innervating a subset of its input space, reminiscent of a dendritic branch, to interact cooperatively in recruiting the interneuron. We show that cooperative assemblies are more able to efficiently engage interneurons in the inhibition of rival competing assembly representations. Furthermore, we report that inclusion of NMDAR conductances at feedback synapses stabilizes cell assemblies, allowing the network to \u2018lock\u2019 on to an input. An adaptive role of NMDARs in feedback excitation of PV+ interneurons can therefore be to facilitate the emergence of strong and stable cell assemblies.\n\nExtrapolating from the behavior of a spiking neural network model to information processing clearly depends on a number of assumptions, not least that the principles underlying NMDAR-dependent input integration observed in CA1 PV+ interneurons apply generally throughout the brain, and that clustering of homotopic inputs on inhibitory dendritic segments obeys the same rules as in excitatory neurons (Iacaruso et al., 2017; Wilson et al., 2016). In addition, while PV+ cells predominantly show NMDAR-independent anti-Hebbian LTP (Lamsa et al., 2007), dependent on calcium-permeable AMPARs, feedback synapses also display NMDAR-dependent Hebbian plasticity rules (Le Roux et al., 2013). In this study, we isolate the integrative properties of NMDARs from their role in synaptic plasticity, but it is expected that plasticity mechanisms may also contribute to the network phenomena described here. For example, NMDAR-dependent plasticity, which could be induced by cooperative feedback synaptic integration, would allow PV+ interneurons to be wired into stimulus-specific ensembles (Khan et al., 2018). Overall, therefore, NMDAR-dependent supralinear integration in the feedback inhibitory loop potentially expands the computational power of a canonical cortical motif.\n\nSelective knockdown of NMDARs in PV+ interneurons has previously been shown to cause a range of functional impairments, including working-memory deficits and a reduction in the precision of hippocampal spatial representations (Korotkova et al., 2010). The network simulations presented here provide a mechanistic explanation for some of these results, in particular, a reduction in spatial information conveyed by principal cell spiking (Korotkova et al., 2010). Other studies highlight a role for PV+ cells and inhibition in cell-assembly competition: in the visual cortex PV+ inhibition increases assembly similarity (Agetsuma et al., 2018) and in the hippocampus silencing of a dominant assembly was shown to uncover an alternative previously inhibited assembly (Trouche et al., 2016). The present study indicates that NMDARs may be integral to these functions.\n\nOur network simulation results also resonate with multiple convergent findings that implicate PV+ cell NMDAR hypofunction at the centre of schizophrenia pathophysiology (Bygrave et al., 2016; Lisman et al., 2008; Nakazawa et al., 2012). For instance, NMDAR blockers have been shown to recapitulate some features of schizophrenia in healthy individuals (Krystal et al., 1994). When coupled with the observation that NMDAR antagonists cause a net disinhibition of principal cell activity (Homayoun and Moghaddam, 2007; Jackson et al., 2004), it has been suggested that cortical circuits are especially vulnerable to failure of NMDAR-mediated signaling in PV+ interneurons. Moreover, post-mortem studies have revealed a selective loss of PV+ interneurons in people with schizophrenia (Lewis et al., 2012) and overexpression of Neuregulin 1, a leading schizophrenia susceptibility gene, is associated with a reduction of NMDARs on PV+ cells (Kotzadimitriou et al., 2018). Destabilization of dominant neuronal assemblies, as shown here to result from impaired NMDAR signaling on PV+ interneurons, may thus explain a failure of sensory gating (Javitt and Freedman, 2015) and evidence for reduced cognitive control, for instance in the Necker cube test (McBain et al., 2011), in schizophrenia.\n\nFeedback inhibition, such as that mediated by PV+ interneurons, is thought to be critical for preventing runaway excitation. Indeed, a failure of feedback inhibitory restraint is a major factor in the emergence of pathological states such as epileptic seizures. Given the importance of inhibition, how then do PV+ interneurons participate in assemblies that are composed of cells that they also regulate? One possibility is that PV+ cells are \u2018transient allies\u2019 (Buzs\u00e1ki, 2010), only aligning with principal cell assemblies over short time windows and at specific times. For example, in a recent study of circuit changes in the visual cortex during learning, PV+ cells were found to become more selective to task-relevant stimuli by increasing their coupling to stimuli selective principal cells and becoming less influenced by the general activity of the remaining surrounding network (Khan et al., 2018).\n\nIt is worth noting that feedback interneurons operating over longer time scales, for example somatostatin-positive oriens-lacunosum/moleculare interneurons, or cholecystokinin-expressing basket cells, may also be suited to mediate assembly competition. However, once recruited they would disengage more slowly because they integrate principal cell firing over a longer time frame. In contrast, PV+ cell firing is thought to define the period for gamma oscillations. As a result, NMDARs on PV+ interneurons are ideally suited to allow for stable assemblies while the stimulus is constant, but also allow for quick switching if the nature of the stimulus changes.\n\nRecurrent connections between PV+ interneurons and local pyramidal cell circuits are found throughout the brain. A challenge for future studies will be to establish whether feedback connections outside of hippocampal area CA1 also display NMDAR-dependent supralinear feedback integration. Furthermore, experiments acutely and specifically blocking NMDARs at feedback synapses onto PV+ cells, as opposed to nonspecific knockdown of all PV+ cell NMDARs during development, will be necessary in order to fully characterize the importance of PV+ cell NMDAR processing in vivo. Taken together, our results expand the computational role of NMDARs on PV+ cells, providing a parsimonious mechanism uniting a number of hitherto unexplained observations, relating to both basic neuronal network function and pathophysiology.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Strain, strain background (Mus musculus)</td>\n      <td>B6;129P2-Pvalbtm1(cre)Arbr/J</td>\n      <td>The Jackson Laboratory</td>\n      <td>008069</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Mus musculus)</td>\n      <td>B6.Cg-Gt(ROSA)26Sortm9(CAG-tdTomato)Hze</td>\n      <td>The Jackson Laboratory</td>\n      <td>007909</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>AAV5-CaMKIIa-hChR2(H134R)-EYFP</td>\n      <td>UNC Vector Core</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Picrotoxin</td>\n      <td>Sigma-Aldrich</td>\n      <td>P1675</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>CGP 55845</td>\n      <td>Abcam</td>\n      <td>Ab120337</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>D-AP5</td>\n      <td>Tocris</td>\n      <td>0105</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>TTX</td>\n      <td>Tocris</td>\n      <td>1078</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>ZD 7288</td>\n      <td>Tocris</td>\n      <td>1000</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>MNI-glutamate TFA</td>\n      <td>Femtonics</td>\n      <td>1951</td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### Animals\n\nHippocampal slices were obtained from postnatal day 14\u201324 male and female mice, or from 2 to 3 month old male and female mice (optogenetic experiments), expressing tdTomato in PV+ interneurons. Experimental mice were obtained by crossing homozygous mice expressing Cre under the PV promoter (Jackson Labs: B6;129P2-Pvalbtm1(cre)Arbr) with homozygous Ai9 Cre reporter mice (Jackson Labs: B6.Cg-Gt(ROSA)26Sortm9(CAG-tdTomato)Hze). Animals were group-housed under a non-reversed 12 hr light/dark cycle, and allowed access to food and water ad libitum. All procedures were carried out in accordance with the UK Animals (Scientific Procedures) Act, 1986.\n\n### Surgery for viral injections\n\nMice (minimum age: 6 weeks) were anesthetized with isoflurane and virus (AAV5-CaMKIIa-hChR2(H134R)-EYFP) was stereotaxically injected into the dorsal CA1 region of both hippocampi using a Hamilton syringe. The injection coordinates were 2.15 mm caudal and 1.4 mm lateral of Bregma, and 1.2 and 1.0 mm deep from the pia. 50 nl of virus was injected at each site at a rate of 100 nl/min, and the needle was left in place for 5 min following injections before withdrawal. Slices were prepared for experiments after a minimum of three weeks post-surgery.\n\n### Slice preparation and electrophysiology\n\nAcute sagittal brain slices (300 \u00b5m) were prepared using a Vibratome (Leica VT1200 S). Slices were cut in an ice-cold artificial cerebrospinal fluid (ACSF) solution, containing (in mM): NaCl (119), KCl (2.5), NaH2PO4 (1.25), NaHCO3 (25), glucose (20), CaCl2 (1.5), MgSO4 (1.3), and saturated with 95% O2, 5% CO2. Slices were allowed to recover at 32 \u00b0C for 15 min after slicing, before subsequent storage in ACSF at room temperature. Older mice (>1 month) were transcardially perfused with ice-cold sucrose-based ACSF solution, containing (in mM): sucrose (75), NaCl (87), KCl (2.5), NaH2PO4 (1.25), NaHCO3 (25), glucose (25), CaCl2 (0.5), MgCl2 (7), and saturated with 95% O2, 5% CO2. Slices were cut in the same solution, and left to recover at 32 \u00b0C for 15 min, before being transferred to normal ACSF (same as above but with 2.5 mM CaCl2) for storage at room temperature. All experiments were carried out in ACSF maintained at 30\u00a0\u00b0 \u2013 32 \u00b0C and perfused at 2\u20133 ml/min. Recordings were made from dorsal hippocampal slices. For dissection of AMPAR and NMDAR components at feedforward and feedback synapses (Figure 3A,B) a modified ACSF containing 0.1 mM MgSO4 was used to partially relieve Mg2+ blockade of NMDARs at rest. NMDARs and AMPARs were sequentially blocked with D-AP5 (100 \u03bcM) and 2,3-dihydroxy-6-nitro-7-sulfamoyl-benzo[f]quinoxaline-2,3-dione (NBQX, 10 \u03bcM), respectively. Picrotoxin (100 \u03bcM) and CGP 55845 (1 \u03bcM) were included throughout these experiments, as well as the HCN channel blocker ZD 7288 (30 \u03bcM), which was included in order to hyperpolarize pyramidal cells and decrease network excitability. Picrotoxin (100 \u03bcM) and CGP 55845 (1 \u03bcM) were also included throughout the optogenetic experiments (Figure 4). For blockade of NMDARs or Na+ channels during uncaging experiments (Figure 2) D-AP5 (100 \u00b5M) or TTX (0.1 \u00b5M) were used, respectively.\n\nFluorescence-guided somatic whole-cell recordings were obtained from PV+ interneurons and pyramidal cells using a Multiclamp 700B amplifier (Molecular Devices), filtered at 5 kHz, and digitized at 20 kHz (National Instruments PCI-6221), with LabVIEW Virtual Instruments. Patch pipettes of 3\u20134 M\u03a9 resistance were filled with KGluconate- or CsGluconate-based internal solution for current clamp or voltage clamp experiments, respectively. These solutions contained (in mM): KGluconate (140), KOH-HEPES (10), EGTA (0.2), NaCl (8), Mg-ATP (2), Na-GTP (0.3) or CsGluconate (125), HCsO-HEPES (10), EGTA (0.2), NaCl (8), Mg-ATP (4), Na-GTP (0.33), Na-Phosphocreatine (10), TEA-Cl (5) QX314 (5). Cells were held at \u221260 mV or +60 mV during voltage-clamp experiments (Figure 3A,B, and Figure 4B,C). All other experiments were performed in current-clamp mode, and current was continuously injected to maintain cell membrane between \u221265 and \u221270 mV. The series resistance during voltage clamp recordings was\u00a0<15 M\u2126 and during current clamp recordings was\u00a0<25 M\u2126. For field stimulation experiments, concentric bipolar stimulating electrodes (FHC) coupled to constant current stimulators (Digitimer) were placed in the alveus and stratum radiatum to evoke responses from feedback and feedforward inputs, respectively (Pouille and Scanziani, 2004). Stimuli were delivered to each pathway at 0.05 Hz, and alternated between the pathways. Optogenetic responses were elicited using 470 nm light pulses (1 ms, 1\u201315 mW) at 0.2 Hz, generated by an LED light-source (ThorLabs) and delivered through a 40X objective lens (Olympus). The light power necessary to elicit maximal and minimal responses was identified for each cell, and the difference in power was divided by five to define the five stimulation strengths (20%, 40%, 60%, 80% and 100%) used in each cycle. Maximal responses were identified as the maximum response elicited without generating an action potential (typically\u00a0\u226415 mV), and minimal responses were the smallest response visible.\n\n### Two-photon imaging and uncaging experiments\n\nSlices were submerged in a perfusion chamber on an upright microscope (FV1000 BX61, Olympus). Simultaneous two-photon imaging and uncaging of MNI-caged glutamate was performed with two Ti-sapphire lasers tuned to 810 nm and 720 nm, for imaging and uncaging respectively (Mai-Tai, Spectra Physics; Chameleon, Coherent). MNI-caged-glutamate-TFA (3 mM; Femtonics) dissolved in the recording ACSF solution was perfused in a closed system.\n\nUncaging locations (range: 8\u201312, mean: 8.4 vs 8.5 sites in radiatum and oriens respectively) were selected either side of a dendritic region of interest, separated by 2\u20133 \u00b5m and within 1 \u00b5m of the dendrite. Uncaging-evoked EPSPs (uEPSPs) were evoked using 0.5 ms-long pulses of 720 nm laser-light. To account for differing depths of dendritic segments, uncaging-laser intensity was adjusted using a Pockels Cell (Conoptics). uEPSPs were first evoked by sequential stimulation of individual uncaging spots with an inter-stimulus interval of 200 ms. Uncaging locations (order chosen at random) were then stimulated at intervals of 1 ms, with 10 s delays between trials. Beginning with a single location, the number of uncaging locations was increased on successive trials until all locations were activated. The entire sequence was repeated between 2 and 5 times, without changing the order of uncaging locations, and the responses to each combination of uncaging locations were averaged. Arithmetic compound uEPSPs were constructed offline from the average of 5\u20138 responses to uncaging at each individual location, including a 1 ms waveform shift to match the experimental protocol, and compared to recorded uEPSPs. Uncaging times and locations were controlled by scanning software (Fluoview 1000V) and a pulse generator (Berkeley Nucleonics) coupled to the Pockels cell. Experiments were discontinued and excluded from analysis if photo-damage to PV+ cells was observed, or if physical drift occurred.\n\nFor experiments in which uncaging locations were placed across pairs of dendrites, uEPSPs were elicited from 12 locations in total, six on each dendrite. Glutamate was uncaged at locations across the two dendrites in five distinct patterns. Patterns 1 and 2 were on single dendrites (using alternate uncaging locations 1, 3, \u2026,11 and 2, 4, \u2026, 12), whereas patterns 3\u20135 (\u2018mixed\u2019 dendrites) were across both dendrites (uncaging locations 1, 2, 3, 4, 5, 6; 4, 5, 6, 7, 8, 9; and 7, 8, 9, 10, 11, 12). For all patterns, locations on the same dendrite were activated with an interval of 2 ms, and waveforms were averaged across four repetitions. We constructed arithmetic compound uEPSPs for each pattern offline from the average of approximately eight responses to uncaging at each individual location as above, and calculated the amplitude nonlinearity of the recorded vs arithmetic uEPSP. To compare between uESPSs evoked on single vs mixed dendrites we averaged the amplitude nonlinearity from patterns 1\u20132 and 3\u20135, respectively.\n\n### Quantification and statistical analysis\n\nData analysis was performed using custom code written in Python. The nonlinearity of responses recorded from uncaging at each dendritic location was quantified using the following equation:\n\n$$\n%nonlinearity=\\sumi=2n\\frac{\\frac{Mi}{Ai}\u22121}{n\u22121}\u22c5100%\n$$\n\nwhere $Mi$ is the amplitude of the $ith$ measured uEPSP (composed of $i$ individual uncaging spots), $Ai$ is the amplitude of the $ith$constructed arithmetic summed uEPSP, and $n$ is the total number of uncaging locations. For uEPSP integral analysis a Savitzky-Golay filter was applied to traces.\n\nFor analysis of NMDAR/AMPAR ratios in Figure 3A, the AMPAR-mediated response was calculated by subtracting the NMDAR-mediated response (recorded in NBQX) from the baseline EPSC. NMDAR and AMPAR charge were then calculated by integrating the first 500 ms or 20 ms, respectively, of these isolated traces. NMDAR/AMPAR ratios in Figure 4C were calculated as the ratio between the NMDAR-mediated response recorded at +60 mV in the presence of NBQX (with the +60 mV response in the presence of D-AP5 subtracted), and the AMPAR-mediated response recorded at \u221260 mV.\n\nStatistical significance was assessed using Student\u2019s paired or unpaired t-tests. Data are presented as mean\u00a0\u00b1\u00a0SEM, unless stated otherwise. Sample sizes were estimated to obtain 80% power to detect effects at p<0.05. n values are for cells.\n\n### Multi-compartmental modeling\n\nMulti-compartmental modeling was performed with the NEURON 7.5 simulation environment (Hines and Carnevale, 1997). The soma and dendrites of a PV+ interneuron were reconstructed using the TREES toolbox in MATLAB (Cuntz et al., 2010). The axon was not included in the reconstruction. As PV+ interneuron dendrites are generally smooth, addition of spines or correction of synaptic responses for spines was deemed unnecessary. The number of segments per section was constrained to odd numbers and set according to the d-lambda rule (Carnevale and Hines, 2009) to have a length no more than 10% of the alternating current length constant at 1 kHz. The model contained 500 segments in total with a maximal segment length of 8.7 \u03bcm.\n\nThe biophysical parameters were based on previously published models of dentate gyrus PV+ basket cells (Hu and Jonas, 2014; N\u00f6renberg et al., 2010). The specific membrane capacitance (Cm) and intracellular resistance (Ri) were assumed to be spatially uniform (for values see Table 1). In contrast, the specific membrane resistance (Rm) was assumed to vary as a step function with distance from the soma. Rm at distal dendrites was 10 times larger than at proximal dendrites, and Rm was chosen so as to make the model cell\u2019s input resistance 78 M\u03a9, close\u00a0to\u00a0the average experimentally recorded input resistance (78.6\u00a0\u00b1\u00a05.2 M\u03a9). The border between proximal and distal dendrites was defined to be 120 \u03bcm from the soma.\n\n**Table 1.**\n NEURON model parameters.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Parameter</th>\n      <th>Proximal</th>\n      <th>Distal</th>\n      <th>Units</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Cm</td>\n      <td>0.9</td>\n      <td>0.9</td>\n      <td>\u00b5F cm-2</td>\n    </tr>\n    <tr>\n      <td>Raxial</td>\n      <td>170</td>\n      <td>170</td>\n      <td>\u03a9 cm</td>\n    </tr>\n    <tr>\n      <td>Rm</td>\n      <td>5.55</td>\n      <td>55.5</td>\n      <td>k\u03a9</td>\n    </tr>\n    <tr>\n      <td>eleak</td>\n      <td>-65</td>\n      <td>-</td>\n      <td>mV</td>\n    </tr>\n    <tr>\n      <td>egk</td>\n      <td>-90</td>\n      <td>-</td>\n      <td>mV</td>\n    </tr>\n    <tr>\n      <td>egNa</td>\n      <td>55</td>\n      <td>-</td>\n      <td>mV</td>\n    </tr>\n    <tr>\n      <td>v Shift</td>\n      <td>-12</td>\n      <td>-12</td>\n      <td>mV</td>\n    </tr>\n    <tr>\n      <td>gk dend</td>\n      <td>300</td>\n      <td>300</td>\n      <td>pS \u00b5m-2</td>\n    </tr>\n    <tr>\n      <td>gNa dend</td>\n      <td>200</td>\n      <td>100</td>\n      <td>pS \u00b5m-2</td>\n    </tr>\n    <tr>\n      <td>gNa Soma</td>\n      <td>2000</td>\n      <td>-</td>\n      <td>pS \u00b5m-2</td>\n    </tr>\n  </tbody>\n</table>\n\nWang and Buzsaki (WB) Na+ and K+ channels were inserted in the model neuron to confer a fast-spiking action potential phenotype (Wang and Buzs\u00e1ki, 1996). However, in order to produce a realistic firing frequency\u00a0\u2013\ufeff current injection relationship, a hyperpolarizing voltage shift was included in the WB implementation. The depolarized threshold of the WB mechanism has been discussed previously (Ferguson et al., 2013).\n\nSubthreshold synaptic integration curves were produced by first finding all sites on the dendritic tree that were located between 40 and 190 \u00b5m from the soma. Simulations then closely followed the experimental protocol detailed above. At each dendritic site, 15 synapses were placed within a distance of 30 \u00b5m. Each synapse was activated individually and the arithmetic sum calculated from the somatic membrane potential. Synapses were then activated in increasing numbers, with an interval of 1 ms between activations, and the integral and amplitude of these measured responses compared to the calculated arithmetic responses. Quantification of dendritic nonlinearity was identical to that applied to experimental data.\n\n### Network modeling\n\n#### Single cell modeling\n\nFor network simulations, PV+ interneurons and CA1 pyramidal cells were represented by two-dimensional Izhikevich model neurons (Izhikevich, 2003). Izhikevich models for these neurons have previously been parameterized from experimental data (Ferguson et al., 2014; Ferguson et al., 2013). In line with this previous work, the models were slightly modified to reproduce the narrow PV+ interneuron spike width, and had the following form:\n\n$$\nC_{m}\\frac{dv}{dt}=k(v\u2212v_{r})(v\u2212v_{t})\u2212u+I_{applied}\\frac{du}{dt}=a[b(v\u2212v_{r})\u2212u]\n$$\n\n\n\n$$\nif\u00a0v\\geqv_{peak},setv=c,u=u+d\n$$\n\n\n\n$$\nwherek=\u00a0k_{low}ifv\\leqv_{t};k=\u00a0k_{high}ifv>v_{t}\n$$\n\nThe variable $v$ represents the membrane potential, and $u$ represents a slow \u2018refractory\u2019 current, that, aside from subthreshold effects governed by $b$, is increased by $d$ when the neuron fires, and decays at a rate determined by $a$. The parameter $C_{m}$ represents the membrane capacitance;\u00a0$\u00a0k$ is a scalar;\u00a0$v_{r}$\u00a0is the resting membrane potential;\u00a0$v_{t}$ is the instantaneous spiking threshold potential; $v_{peak}$\u00a0is the peak action potential voltage;\u00a0$I_{applied}$ is the applied current, comprised of the sum of all synaptic inputs to the cell;\u00a0$a$ is the recovery inverse time constant of the refractory current, u;\u00a0$b$ is the sensitivity of $u$ to subthreshold voltage fluctuations;\u00a0$c$ is the voltage reset value;\u00a0$andd$ is the amount of current generated by the after-spike behavior. The values for all parameters of the network simulations are presented in Table 2.\n\n**Table 2.**\n model neuron parameters for network modeling.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Parameter</th>\n      <th>FS PV+</th>\n      <th>Pyramidal</th>\n      <th>Units</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Cm</td>\n      <td>90</td>\n      <td>115</td>\n      <td>pF</td>\n    </tr>\n    <tr>\n      <td>klow</td>\n      <td>1.7</td>\n      <td>0.1</td>\n      <td>nS/mV</td>\n    </tr>\n    <tr>\n      <td>khigh</td>\n      <td>14</td>\n      <td>3.3</td>\n      <td>nS/mV</td>\n    </tr>\n    <tr>\n      <td>vr</td>\n      <td>\u221260.6</td>\n      <td>\u221265.8</td>\n      <td>mV</td>\n    </tr>\n    <tr>\n      <td>vpeak</td>\n      <td>2.5</td>\n      <td>22.6</td>\n      <td>mV</td>\n    </tr>\n    <tr>\n      <td>vt</td>\n      <td>\u221243.1</td>\n      <td>\u221257</td>\n      <td>mV</td>\n    </tr>\n    <tr>\n      <td>a</td>\n      <td>0.1</td>\n      <td>0.0012</td>\n      <td>ms\u22121</td>\n    </tr>\n    <tr>\n      <td>b</td>\n      <td>\u22120.1</td>\n      <td>3</td>\n      <td>nS</td>\n    </tr>\n    <tr>\n      <td>c</td>\n      <td>\u221267</td>\n      <td>\u221265.8</td>\n      <td>mV</td>\n    </tr>\n    <tr>\n      <td>d</td>\n      <td>0.1</td>\n      <td>10</td>\n      <td>pA</td>\n    </tr>\n    <tr>\n      <td>\u03c41AMPA</td>\n      <td>0.25</td>\n      <td>0.2</td>\n      <td>ms</td>\n    </tr>\n    <tr>\n      <td>\u03c42AMPA</td>\n      <td>0.77</td>\n      <td>1.7</td>\n      <td>ms</td>\n    </tr>\n    <tr>\n      <td>\u03c41GABA</td>\n      <td>0.27</td>\n      <td>0.3</td>\n      <td>ms</td>\n    </tr>\n    <tr>\n      <td>\u03c42GABA</td>\n      <td>1.7</td>\n      <td>3.5</td>\n      <td>ms</td>\n    </tr>\n    <tr>\n      <td>\u03c41NMDA</td>\n      <td>2</td>\n      <td>-</td>\n      <td>ms</td>\n    </tr>\n    <tr>\n      <td>\u03c42NMDA</td>\n      <td>60</td>\n      <td>-</td>\n      <td>ms</td>\n    </tr>\n    <tr>\n      <td>eglu</td>\n      <td>0</td>\n      <td>0</td>\n      <td>mV</td>\n    </tr>\n    <tr>\n      <td>eGABA</td>\n      <td>\u221270</td>\n      <td>\u221270</td>\n      <td>mV</td>\n    </tr>\n    <tr>\n      <td>\u03c3D2</td>\n      <td>0.015/(npyr2)</td>\n      <td>-</td>\n      <td>-</td>\n    </tr>\n    <tr>\n      <td>Csyn</td>\n      <td>9</td>\n      <td>-</td>\n      <td>pF</td>\n    </tr>\n    <tr>\n      <td>ksyn</td>\n      <td>3/npyr</td>\n      <td>-</td>\n      <td>-</td>\n    </tr>\n    <tr>\n      <td>gleak</td>\n      <td>5</td>\n      <td>-</td>\n      <td>nS</td>\n    </tr>\n    <tr>\n      <td>eleak</td>\n      <td>\u221260.6</td>\n      <td>-</td>\n      <td>mV</td>\n    </tr>\n    <tr>\n      <td>kAMPA</td>\n      <td>28</td>\n      <td>-</td>\n      <td>-</td>\n    </tr>\n    <tr>\n      <td>kNMDA</td>\n      <td>212</td>\n      <td>-</td>\n      <td>-</td>\n    </tr>\n    <tr>\n      <td>kGABA</td>\n      <td>28</td>\n      <td>27</td>\n      <td>-</td>\n    </tr>\n    <tr>\n      <td>kext</td>\n      <td>5</td>\n      <td>1</td>\n      <td>-</td>\n    </tr>\n  </tbody>\n</table>\n\n_Izhikevich Parameter values as in Ferguson et al. (2014)\u00a0and Ferguson et al. (2013). Synaptic time constants: (Bartos et al., 2002; Geiger et al., 1997; Roth and van Rossum, 2009). Remaining parameters where adjusted to allow the network to generate a gamma rhythm._\n\n#### Synaptic modeling\n\nSynaptic connections between neurons were modeled as bi-exponential, conductance-based synapses (Roth and van Rossum, 2009), which can be written in the following differential form:\n\n$$\ng^{chan}(v^{syn})=\u00a0\\frac{G^{chan}(v^{syn})}{\\tau_{1}^{chan}\u2212\\tau_{2}^{chan}}(g_{1}^{chan}\u2212\u00a0g_{2}^{chan})\\frac{dg_{1}^{chan}}{dt}=(\\delta^{chan}(t)\u2212\\frac{1}{\\tau_{1}^{chan}}\u00a0g_{1}^{chan})\\frac{dg_{2}^{chan}}{dt}=(\\delta^{chan}(t)\u2212\\frac{2}{\\tau_{2}^{chan}}\u00a0g_{2}^{chan})G^{NMDA}(v^{syn})=(\\frac{1}{2}\u00a0tanh[\\frac{v_{i}^{syn}+50mV}{10mV}]+\\frac{1}{2})G^{AMPA}(v^{syn})=G^{ext}(v^{syn})=G^{GABA}(v^{syn})=1\n$$\n\nWhere $g^{chan}$ is the total synaptic conductance of a given channel family (composed of a rise term $g_{1}^{chan}$ and a decay term\u00a0$g_{2}^{chan}$), $G^{chan}(v^{syn})$ is an eventual instantaneous voltage-gating term dependent on a local synaptic voltage $v^{syn}$\u00a0(only relevant for NMDA channels; detailed in the next section), $\\tau_{1}^{chan}$ is the rising exponential time constant, $\\tau_{2}^{chan}$ is the decay exponential time constant, the variable $t$ is time. The function $\\delta^{chan}t$ represents the input spike train. This is defined in continuous time in order to be agnostic to the numerical integration method used in the simulations. Specifically $\\delta^{chan}t$ is modeled as:\n\n$$\n\\delta^{chan}(t)=\\sumiNspikes\\delta(t\u2212t_{i})\n$$\n\nWhere $t_{i}$ are the times of the input spike arrivals for a particular receptor, and $\\delta(t)$ is the continuous time Dirac delta distribution (0 everywhere apart from t=0 where it has infinite density and integrates to 1).\n\n#### NMDA receptor modeling\n\nNMDARs, present at the feedback connections from principal cells onto the interneuron, and the cooperative relief of NMDAR Mg2+ block by co-active synaptic inputs, were modeled in an abstract manner. We assumed that all co-active inputs from the population of $n_{pyr}$principal cells had a degree of cooperation, or functional clustering (Wilson et al., 2016), which was weighted by a distance matrix, $D^{n_{pyr}\\timesn_{pyr}}$. $D$ was defined as a Toeplitz matrix, with the ith element of the row vector $D_{\\frac{n_{pyr}}{2}}$ equal to:\n\n$$\nD_{\\frac{n_{pyr}}{2},\u00a0i}=\\frac{1}{\\sqrt{2\\pi\u00a0\\sigma_{D}^{2}}}e^{\u2212\u00a0\\frac{(i\u2212n_{pyr}/2)^{2}}{2\u00a0\\sigma_{D}^{2}}}\u00a0\n$$\n\nWhere$\\sigma_{D}^{2}$ controlled the specificity of local cooperation. We then modeled the time evolution of the voltage of the local synaptic membrane patch,$v_{i}^{syn}$, with the following equation:\n\n$$\nC_{syn}\\frac{dv_{i}^{syn}}{dt}=k^{syn}I_{i}^{syn}+g^{leak}(e^{leak}\u2212v_{i}^{syn})I_{i}^{syn}=\\sumj=1n_{pyr}D_{i,j}(k_{pv+}^{AMPA}g_{j}^{AMPA}+k_{pv+}^{NMDA}g_{j}^{NMDA}(v_{j}^{syn}))(e^{ghu}\u2212v_{i}^{syn})\n$$\n\nWhere $C_{syn}$ is the local patch membrane capacitance, $k^{syn}$ is a gain applied to the input current $I_{i}^{syn}$, $k_{pv+}^{chan}$ are gain constants defining each channel family synaptic strength onto the interneuron, $g^{leak}$ is a leak conductance with reversal potential $e^{leak}$.\n\nFinally, the total current, $I_{applied}$, an interneuron receives is given by:\n\n$$\nI_{applied}=(\\sumi=1n_{pyr}k_{pv+}^{AMPA}g_{j}^{AMPA}+k_{pv+}^{NMDA}g_{j}^{NMDA}(v_{i}^{syn})+k_{pv+}^{ext}g_{i}^{ext})(e^{glu}\u2212v)+\u00a0k_{pv+}^{GABA}(\\sumj=1n_{pv+}g_{j}^{GABA})(e^{GABA}\u2212v)\n$$\n\nAccordingly, for the ith pyramidal cell the input current is more simply given by:\n\n$$\nI_{Applied}^{i}=k_{pyr}^{ext}g_{i}^{ext}(e^{glu}\u2212v)+k_{pyr}^{GABA}(\\sumj=1n_{pv+}g_{j}^{GABA})(e^{GABA}\u2212v)\n$$\n\n### External drive\n\nThe external drive to the ith pyramidal neuron was modeled as a non-homogeneous Poisson process, in which the instantaneous rate of incoming spikes was given by an Ornstein\u2013Uhlenbeck process with mean $\\mu_{OU}$, volatility $\\sigma_{OU}$ and time constant $\\tau_{OU}$, multiplied by a Gaussian gain function representing the neuron position in the receptive field. The input of the PV+ interneurons was the scaled mean of all inputs to its afferent pyramidal cells. The peak mean $\\mu_{OU}$ was 5000 spikes per second, $\\tau_{OU}$ was 50 ms and $\\sigma_{OU}$ was $\\frac{1}{6}\\mu_{OU}\\sqrt{2\\tau_{OU}}$ for the simulations in Figure 7 and zero everywhere else (i.e. the Poisson rates were constant). These inputs are convolved with the AMPA synaptic conductance kernel defined in Equation (3) and parameterized by rise and decay time constants shown in Table 2.\n",
+      "created_at": "2025-12-02T13:00:44.353090Z"
+    },
+    {
+      "id": "fa0f3d1d-4bff-41f4-b039-2a5cae6bcfb8",
+      "submission_id": "ec1676a2-5cd6-4844-9778-f05e565247b5",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Marlene Bartos, University of Freiburg Germany\n\nReviewers:\n- Cheng-Chang Lien, National Yang-Ming University Taiwan\n- Jean Christophe Poncer, INSERM, Sorbonne University France\n\n## Review text\n\nDOI: [10.7554/eLife.49872.024](https://doi.org/10.7554/eLife.49872.024)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nAcceptance summary:\n\nThis study provides evidence that dendritic NMDA receptors underlie supralinear integration of excitatory feedback inputs from local principal cells onto CA1 PV-expressing fast-spiking interneurons. By using computational neuronal network models, this work further demonstrates that NMDA receptors in PV-interneurons support their cooperative recruitment and strengthening of principal cell assemblies.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Dendritic NMDA receptors in parvalbumin neurons enable strong and stable neuronal assemblies\" for consideration by eLife. Your article has been reviewed by three peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation has been overseen by Gary Westbrook as the Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Cheng-Chang Lien (Reviewer #2); Jean Christophe Poncer (Reviewer #3). The reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThis manuscript provides a computational explanation on the potential role of NMDAR-mediated currents in PV interneurons in neuronal representation of given information. They show that dendrites receiving feedback excitation from local CA1 principal cells (PCS) show supralinear summation of EPSPs generated in close proximity at a dendritic compartment using glutamate uncaging. The data are reproduced by ChR2-mediated excitation of PC inputs. The authors apply a computational model consisting of PV cells and PCs and show that clustered synchronized excitatory inputs recruit PV cells if NMDAR-mediated EPSPs are induced. In contrast, randomized non-synchronized excitatory inputs do not reliably activate PV cells. By using neural network simulations, the authors provide evidence suggesting NMDAR enrichment may influence the properties of neuronal ensembles by promoting output/input fidelity and the stability of cell assemblies.\n\nEssential revisions:\n\nAll three reviewers judge the work as high-quality, which provides new insights on the synaptic integration of excitatory inputs along the dendrites of parvalbumin (PV)-expressing interneurons. However, all reviewers formulated major criticisms, which need to be addressed by the authors.\n\n1) The reviewers agree that the supralinear summation of uEPSPs evoked in PV+ interneuron dendrites in stratum oriens but not in stratum radiatum is central to the study, including the modeling part, but requires further investigation. Particularly, it is important to test the spatial constraints for supralinearity: how does spacing between simultaneously active inputs influence their summation and what happens when uEPSCs are evoked onto 2 distinct, same order sister dendrites? How does the number and duration of individual uncage locations influence the summation of EPSPs?\n\n2) Figure 3\u2014figure supplement 1 is important as it addresses whether the properties of GluA2-lacking AMPARs in PV+ cells influence synaptic cooperativity. It would be perhaps more explicit to represent these data as in Figure 3D-E and include the appropriate statistics.\n\n3) State clearly that uncaging of glutamate does not necessarily activate synaptic receptors. See statement of reviewer #3 point 2 for details.\n\n4) Figure 5\u2014figure supplement 2 is important, as it describes the effect of NMDAR enrichment on the sharpness of the network response to a clustered burst of input activity. However, in its present form it is only descriptive. Can these simulation data be tested for statistically significant difference? Moreover, explain on what ground they chose the first and last 75 ms of network simulation, as it is not clear from Figure 5D that networks dynamics evolve much over time. It would be useful if the authors could include a panel similar to the middle panel in Figure 5D for the case of no NMDARs.\n\n5) Excitatory inputs: the authors model external inputs to pyramidal neurons using a Poisson process. Although this is often done for modeling cortical networks, the reviewer is unsure whether this is most adapted to area CA1 of the hippocampus. It would perhaps be more informative to use Gaussian-modulated theta-frequency input. This would also let the authors test how/whether \u03b3-band firing of PV cells is modulated by theta-modulated inputs. Moreover, supralinearity of excitatory inputs in this study is dependent on spatial clustering of glutamatergic inputs. Please discuss on what published information is available on the spatial distribution of co-active inputs onto CA1-PV interneuron dendrites in vivo.\n\n6) There is always a concern about 'tuning' models to fit the desired output. Most modeling studies therefore perform a sensitivity analysis of the various parameters that were fixed for the simulations (see Marder and Taylor 2011 Nat Neuroscience; Rathour and Narayanan 2014 PNAS). Was such an analysis conducted within this study to ensure that no bias was generated in the network output due to the choice of various parametric values? Comment on this point in the manuscript.\n\n7) AAV-ChR2 was injected in the dorsal hippocampus. Please comment on what part of the hippocampus has been used for in vitro whole-cell recordings in the study.\n",
+      "created_at": "2025-12-02T13:00:44.353090Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T13:00:44.353090Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T13:00:44.353090Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "39d23991-7fac-4014-a278-04baf8d5a39b",
+      "content_id": "b4d72bd2-f4ae-4e12-84c0-62f8803709aa",
+      "claim_id": "C1",
+      "claim": "Parvalbumin-expressing (PV+) GABAergic interneurons mediate feedforward and feedback inhibition.",
+      "claim_type": "EXPLICIT",
+      "source": "Parvalbumin-expressing (PV+) GABAergic interneurons mediate feedforward and feedback inhibition and have a key role in gamma oscillations and information processing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the abstract as an established fact about PV+ interneurons.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:00:44.353090Z"
+    },
+    {
+      "id": "63c1d754-9532-457d-bf69-256f8d393735",
+      "content_id": "b4d72bd2-f4ae-4e12-84c0-62f8803709aa",
+      "claim_id": "C2",
+      "claim": "PV+ interneurons have a key role in gamma oscillations and information processing.",
+      "claim_type": "EXPLICIT",
+      "source": "Parvalbumin-expressing (PV+) GABAergic interneurons mediate feedforward and feedback inhibition and have a key role in gamma oscillations and information processing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the abstract as an established fact.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:00:44.353090Z"
+    },
+    {
+      "id": "a076d201-0cb3-4c7c-a897-71544df39409",
+      "content_id": "b4d72bd2-f4ae-4e12-84c0-62f8803709aa",
+      "claim_id": "C3",
+      "claim": "Dendritic NMDARs underlie supralinear integration of feedback excitation from local pyramidal neurons onto mouse CA1 PV+ cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we show that dendritic NMDARs underlie supralinear integration of feedback excitation from local pyramidal neurons onto mouse CA1 PV+ cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the abstract and supported by experimental data in Figures 1-4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:00:44.353090Z"
+    },
+    {
+      "id": "889f733b-b758-4887-8c57-7868b222994f",
+      "content_id": "b4d72bd2-f4ae-4e12-84c0-62f8803709aa",
+      "claim_id": "C4",
+      "claim": "NMDARs at feedback connections onto PV+ cells enable cooperative recruitment of PV+ interneurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, by incorporating NMDARs at feedback connections onto PV+ cells in spiking networks, we show that these receptors enable cooperative recruitment of PV+ interneurons, strengthening and stabilising principal cell assemblies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through network modeling simulations shown in Figures 5-7.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:00:44.353090Z"
+    },
+    {
+      "id": "85cbca16-5df8-4263-b50d-91f118f84ff2",
+      "content_id": "b4d72bd2-f4ae-4e12-84c0-62f8803709aa",
+      "claim_id": "C5",
+      "claim": "NMDARs at feedback connections onto PV+ cells strengthen and stabilize principal cell assemblies.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, by incorporating NMDARs at feedback connections onto PV+ cells in spiking networks, we show that these receptors enable cooperative recruitment of PV+ interneurons, strengthening and stabilising principal cell assemblies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through network modeling in Figures 5-7.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:00:44.353090Z"
+    },
+    {
+      "id": "e7454071-1d78-45ec-98d7-edfc34634953",
+      "content_id": "b4d72bd2-f4ae-4e12-84c0-62f8803709aa",
+      "claim_id": "C6",
+      "claim": "Failure of NMDAR-mediated cooperative recruitment provides a parsimonious explanation for cognitive and sensory gating deficits in pathologies with impaired PV+ NMDAR signalling.",
+      "claim_type": "EXPLICIT",
+      "source": "Failure of this phenomenon provides a parsimonious explanation for cognitive and sensory gating deficits in pathologies with impaired PV+ NMDAR signalling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is proposed as an interpretation of the modeling results in the context of disease pathology.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:00:44.353090Z"
+    },
+    {
+      "id": "ec3a2c7a-404f-4c3f-93e5-6d3117ca4069",
+      "content_id": "b4d72bd2-f4ae-4e12-84c0-62f8803709aa",
+      "claim_id": "C7",
+      "claim": "PV+ cells have broad receptive fields inherited from multiple converging heterogeneously tuned principal neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "PV+ cells have broad receptive fields inherited from multiple converging heterogeneously tuned principal neurons (Kerlin et al., 2010) and coupled with their powerful somatic inhibition of principal cells, they are positioned to mediate a 'winner-takes-all' scheme in which neuronal assemblies inhibit each other (Agetsuma et al., 2018; Trouche et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:00:44.353090Z"
+    },
+    {
+      "id": "c0fc9c86-c6d5-471e-a292-8a130a0bffdb",
+      "content_id": "b4d72bd2-f4ae-4e12-84c0-62f8803709aa",
+      "claim_id": "C8",
+      "claim": "PV+ cells are positioned to mediate a 'winner-takes-all' scheme in which neuronal assemblies inhibit each other.",
+      "claim_type": "EXPLICIT",
+      "source": "PV+ cells have broad receptive fields inherited from multiple converging heterogeneously tuned principal neurons (Kerlin et al., 2010) and coupled with their powerful somatic inhibition of principal cells, they are positioned to mediate a 'winner-takes-all' scheme in which neuronal assemblies inhibit each other (Agetsuma et al., 2018; Trouche et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:00:44.353090Z"
+    },
+    {
+      "id": "55255ff3-63d2-456e-8c9a-052a58e67960",
+      "content_id": "b4d72bd2-f4ae-4e12-84c0-62f8803709aa",
+      "claim_id": "C9",
+      "claim": "NMDARs contribute relatively less to synaptic excitation of PV+ cells than principal neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Although NMDARs contribute relatively less to synaptic excitation of PV+ cells than principal neurons (Geiger et al., 1997; Lamsa et al., 2007; Matta et al., 2013), several sources of evidence suggest that they are important for the normal operation of cell assemblies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:00:44.353090Z"
+    },
+    {
+      "id": "bef71e0b-753c-4875-bb1d-818d4295a4d0",
+      "content_id": "b4d72bd2-f4ae-4e12-84c0-62f8803709aa",
+      "claim_id": "C10",
+      "claim": "Genetic deletion of NMDARs in PV+ interneurons disrupts gamma rhythms.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, genetic deletion of NMDARs in PV+ interneurons disrupts both gamma rhythms (Carl\u00e9n et al., 2012) and spatial representations (Korotkova et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:00:44.353090Z"
+    },
+    {
+      "id": "eb9cb11e-4e7c-4d9f-a877-cf9a16025a3c",
+      "content_id": "b4d72bd2-f4ae-4e12-84c0-62f8803709aa",
+      "claim_id": "C11",
+      "claim": "Genetic deletion of NMDARs in PV+ interneurons disrupts spatial representations.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, genetic deletion of NMDARs in PV+ interneurons disrupts both gamma rhythms (Carl\u00e9n et al., 2012) and spatial representations (Korotkova et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:00:44.353090Z"
+    },
+    {
+      "id": "24aebc38-66ba-4cef-b284-d70ff8e7648c",
+      "content_id": "b4d72bd2-f4ae-4e12-84c0-62f8803709aa",
+      "claim_id": "C12",
+      "claim": "Impaired NMDAR-mediated signaling in PV+ interneurons has been suggested to be a core feature of schizophrenia.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, impaired NMDAR-mediated signaling in PV+ interneurons has been suggested to be a core feature of schizophrenia (Coyle, 2012; Lisman et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:00:44.353090Z"
+    },
+    {
+      "id": "0ce45290-20e8-481a-ba01-a8f3e0888c92",
+      "content_id": "b4d72bd2-f4ae-4e12-84c0-62f8803709aa",
+      "claim_id": "C13",
+      "claim": "Feedback synapses from local pyramidal neurons onto CA1 PV+ interneurons show NMDAR-dependent long-term potentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "A recent study investigating plasticity rules of glutamatergic inputs onto CA1 PV+ interneurons reported NMDAR-dependent long-term potentiation (LTP) at feedback synapses from local pyramidal neurons but not at feedforward connections made by Schaffer collaterals (Le Roux et al., 2013), and attributed the difference to a larger NMDAR conductance at feedback synapses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:00:44.353090Z"
+    },
+    {
+      "id": "020c9124-4348-4889-ae92-157ac0402980",
+      "content_id": "b4d72bd2-f4ae-4e12-84c0-62f8803709aa",
+      "claim_id": "C14",
+      "claim": "Feedforward connections made by Schaffer collaterals onto CA1 PV+ interneurons do not show NMDAR-dependent long-term potentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "A recent study investigating plasticity rules of glutamatergic inputs onto CA1 PV+ interneurons reported NMDAR-dependent long-term potentiation (LTP) at feedback synapses from local pyramidal neurons but not at feedforward connections made by Schaffer collaterals (Le Roux et al., 2013), and attributed the difference to a larger NMDAR conductance at feedback synapses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:00:44.353090Z"
+    },
+    {
+      "id": "a3f32f73-12cd-4594-b64c-ac55107dac60",
+      "content_id": "b4d72bd2-f4ae-4e12-84c0-62f8803709aa",
+      "claim_id": "C15",
+      "claim": "Feedback synapses have a larger NMDAR conductance than feedforward synapses onto CA1 PV+ interneurons.",
+      "claim_type": "EXPLICIT",
+      "source": "A recent study investigating plasticity rules of glutamatergic inputs onto CA1 PV+ interneurons reported NMDAR-dependent long-term potentiation (LTP) at feedback synapses from local pyramidal neurons but not at feedforward connections made by Schaffer collaterals (Le Roux et al., 2013), and attributed the difference to a larger NMDAR conductance at feedback synapses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous literature and confirmed by experimental data in Figure 3.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:00:44.353090Z"
+    },
+    {
+      "id": "5cac1548-a8ff-457e-a3e7-a3bcf1bfad9e",
+      "content_id": "b4d72bd2-f4ae-4e12-84c0-62f8803709aa",
+      "claim_id": "C16",
+      "claim": "Activation of uncaging locations in stratum oriens revealed supralinear uEPSP summation with peak amplitude nonlinearity of 24.0 \u00b1 4.5%.",
+      "claim_type": "EXPLICIT",
+      "source": "Activation of sites on dendrites in stratum oriens revealed supralinear uEPSP summation (peak amplitude nonlinearity: 24.0 \u00b1 4.5%, mean \u00b1 SEM, n = 14; Figure 1D,E; unscaled responses in Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative result from glutamate uncaging experiments shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:00:44.353090Z"
+    },
+    {
+      "id": "a4631292-5d9e-4cc8-9b01-bf7e659400e6",
+      "content_id": "b4d72bd2-f4ae-4e12-84c0-62f8803709aa",
+      "claim_id": "C17",
+      "claim": "Activation of uncaging locations in stratum oriens revealed supralinear uEPSP summation with time-integral nonlinearity of 54.0 \u00b1 10.1%.",
+      "claim_type": "EXPLICIT",
+      "source": "This nonlinearity was even larger when measured using the time-integral of uEPSPs measured between 0 and 50 ms from onset (time-integral nonlinearity: 54.0 \u00b1 10.1%; Figure 1F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative result from glutamate uncaging experiments shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:00:44.353090Z"
+    },
+    {
+      "id": "65d70f2a-7d57-4b5a-a3d0-d994d3348952",
+      "content_id": "b4d72bd2-f4ae-4e12-84c0-62f8803709aa",
+      "claim_id": "C18",
+      "claim": "Glutamate uncaging along dendritic segments in stratum radiatum resulted in approximately linear uEPSP summation with peak amplitude nonlinearity of 3.8 \u00b1 5.0%.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, when glutamate was uncaged along dendritic segments in stratum radiatum, uEPSPs summated in an approximately linear fashion (peak amplitude nonlinearity: 3.8 \u00b1 5.0%, time-integral nonlinearity: 6.3 \u00b1 7.6%, n = 9; oriens vs. radiatum p=0.0083 and p=0.0028 for peak amplitude and time-integral comparisons respectively, unpaired t-tests, Figure 1D\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative result from glutamate uncaging experiments shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:00:44.353090Z"
+    },
+    {
+      "id": "814107ee-57cb-4ea5-a80c-146fad0924d7",
+      "content_id": "b4d72bd2-f4ae-4e12-84c0-62f8803709aa",
+      "claim_id": "C19",
+      "claim": "Glutamate uncaging along dendritic segments in stratum radiatum resulted in approximately linear uEPSP summation with time-integral nonlinearity of 6.3 \u00b1 7.6%.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, when glutamate was uncaged along dendritic segments in stratum radiatum, uEPSPs summated in an approximately linear fashion (peak amplitude nonlinearity: 3.8 \u00b1 5.0%, time-integral nonlinearity: 6.3 \u00b1 7.6%, n = 9; oriens vs. radiatum p=0.0083 and p=0.0028 for peak amplitude and time-integral comparisons respectively, unpaired t-tests, Figure 1D\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative result from glutamate uncaging experiments shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:00:44.353090Z"
+    },
+    {
+      "id": "dbb5a4f6-4eda-477a-af3d-99468e78a2a7",
+      "content_id": "b4d72bd2-f4ae-4e12-84c0-62f8803709aa",
+      "claim_id": "C20",
+      "claim": "The difference in integration nonlinearity between stratum oriens and stratum radiatum is statistically significant (p=0.0083 for peak amplitude, p=0.0028 for time-integral).",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, when glutamate was uncaged along dendritic segments in stratum radiatum, uEPSPs summated in an approximately linear fashion (peak amplitude nonlinearity: 3.8 \u00b1 5.0%, time-integral nonlinearity: 6.3 \u00b1 7.6%, n = 9; oriens vs. radiatum p=0.0083 and p=0.0028 for peak amplitude and time-integral comparisons respectively, unpaired t-tests, Figure 1D\u2013F).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical comparison of experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:00:44.353090Z"
+    },
+    {
+      "id": "051507e9-8284-449e-9a23-f4fbdf2b8a86",
+      "content_id": "b4d72bd2-f4ae-4e12-84c0-62f8803709aa",
+      "claim_id": "C21",
+      "claim": "Feedback inputs from axon collaterals of local pyramidal cells are confined to dendrites in the stratum oriens.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, feedback inputs from axon collaterals of local pyramidal cells are confined to dendrites in the stratum oriens (Amaral et al., 1991).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:00:44.353090Z"
+    },
+    {
+      "id": "96d20b45-c8bd-4c33-9050-7fb15da3aa71",
+      "content_id": "b4d72bd2-f4ae-4e12-84c0-62f8803709aa",
+      "claim_id": "C22",
+      "claim": "PV+ interneurons receive excitatory feedforward inputs across the full extent of their dendritic trees, in both strata radiatum and oriens.",
+      "claim_type": "EXPLICIT",
+      "source": "Such neurons, which mainly comprise basket cells in addition to axo-axonic and bistratified cells (Bezaire and Soltesz, 2013), receive excitatory feedforward inputs across the full extent of their dendritic trees, in both strata radiatum and oriens.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:00:44.353090Z"
+    },
+    {
+      "id": "bbad0004-8f51-49c9-acb8-05a020d1deb3",
+      "content_id": "b4d72bd2-f4ae-4e12-84c0-62f8803709aa",
+      "claim_id": "C23",
+      "claim": "Uncaging-evoked EPSPs (uEPSPs) were comparable in amplitude and kinetics to spontaneous EPSPs.",
+      "claim_type": "EXPLICIT",
+      "source": "Activation of individual uncaging locations in either stratum evoked uncaging-evoked EPSPs (uEPSPs) that were comparable in amplitude and kinetics to spontaneous EPSPs (Figure 1B and Figure 1\u2014figure supplement 1), consistent with a high density of excitatory synapses innervating PV+ interneuron dendrites (Guly\u00e1s et al., 1999).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1B and Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:00:44.353090Z"
+    },
+    {
+      "id": "13c6671a-cb31-4f83-95e5-203a30ff4bdf",
+      "content_id": "b4d72bd2-f4ae-4e12-84c0-62f8803709aa",
+      "claim_id": "C24",
+      "claim": "PV+ interneuron dendrites have a high density of excitatory synapses.",
+      "claim_type": "EXPLICIT",
+      "source": "Activation of individual uncaging locations in either stratum evoked uncaging-evoked EPSPs (uEPSPs) that were comparable in amplitude and kinetics to spontaneous EPSPs (Figure 1B and Figure 1\u2014figure supplement 1), consistent with a high density of excitatory synapses innervating PV+ interneuron dendrites (Guly\u00e1s et al., 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous literature and consistent with experimental observations.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:00:44.353090Z"
+    },
+    {
+      "id": "01fe9712-d6ca-4eca-9010-ada6abef3890",
+      "content_id": "b4d72bd2-f4ae-4e12-84c0-62f8803709aa",
+      "claim_id": "C25",
+      "claim": "The degree of supralinear summation was significantly lower when uncaging was distributed across two dendrites (39.3 \u00b1 11.7%) compared to within-dendrite uncaging (16.5 \u00b1 5.6%), p=0.016.",
+      "claim_type": "EXPLICIT",
+      "source": "The degree of supralinear summation was significantly lower when uncaging was distributed across two dendrites (peak amplitude nonlinearity, 39.3 \u00b1 11.7% vs 16.5 \u00b1 5.6% for within-dendrite and across-dendrite uncaging respectively, p=0.016, n = 12; paired t-test; Figure 1\u2014figure supplement 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative result from glutamate uncaging experiments shown in Figure 1\u2014figure supplement 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:00:44.353090Z"
+    },
+    {
+      "id": "4049773e-61ff-4411-8e76-a5c19d7131e4",
+      "content_id": "b4d72bd2-f4ae-4e12-84c0-62f8803709aa",
+      "claim_id": "C26",
+      "claim": "The spatial clustering or dispersion of co-active dendritic inputs to PV+ interneurons has an important role in input integration.",
+      "claim_type": "EXPLICIT",
+      "source": "This result indicates that the spatial clustering, or conversely dispersion, of co-active dendritic inputs to PV+ interneurons has an important role in input integration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the experimental results from Figure 1\u2014figure supplement 5.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:00:44.353090Z"
+    },
+    {
+      "id": "1aa0743f-0dae-4c54-83bf-dafdabd26118",
+      "content_id": "b4d72bd2-f4ae-4e12-84c0-62f8803709aa",
+      "claim_id": "C27",
+      "claim": "Supralinear dendritic summation in stratum oriens was abolished when NMDARs were blocked by D-AP5 (time-integral nonlinearity: 2.5 \u00b1 3.0%, vs control p=0.0004, n = 10).",
+      "claim_type": "EXPLICIT",
+      "source": "In line with previous evidence for a substantial NMDAR component at feedback inputs onto PV+ cells (Le Roux et al., 2013), supralinear dendritic summation in stratum oriens was abolished when NMDARs were blocked by D-AP5 (100 \u00b5M) (time-integral nonlinearity: 2.5 \u00b1 3.0%, vs control without the drug p=0.0004, n = 10; Figure 2A\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative result from pharmacological experiments shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:00:44.353090Z"
+    },
+    {
+      "id": "de4c6fa3-c270-41bd-8a1d-e44c3aec2c34",
+      "content_id": "b4d72bd2-f4ae-4e12-84c0-62f8803709aa",
+      "claim_id": "C28",
+      "claim": "Dendritic integration in stratum radiatum was unchanged by D-AP5 (time-integral nonlinearity: 3.3 \u00b1 2.6%, vs control p=0.88, n = 4).",
+      "claim_type": "EXPLICIT",
+      "source": "Dendritic integration in stratum radiatum was unchanged from control conditions (time-integral nonlinearity: 3.3 \u00b1 2.6%, vs control p=0.88, n = 4; Figure 2A\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative result from pharmacological experiments shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:00:44.353090Z"
+    },
+    {
+      "id": "7760542a-22fe-47e8-9165-3868b3d1d7a8",
+      "content_id": "b4d72bd2-f4ae-4e12-84c0-62f8803709aa",
+      "claim_id": "C29",
+      "claim": "TTX did not significantly affect integration in stratum oriens (time-integral nonlinearity 40.1 \u00b1 5.6%, vs control p=0.23, n = 16).",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to D-AP5, the sodium channel blocker tetrodotoxin (TTX, 100 nM) did not significantly affect integration in either stratum oriens or radiatum (oriens time-integral nonlinearity 40.1 \u00b1 5.6%, vs control p=0.23, n = 16; radiatum time-integral nonlinearity 9.4 \u00b1 3.3%, vs control p=0.71, n = 9; Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative result from pharmacological experiments shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:00:44.353090Z"
+    },
+    {
+      "id": "d62331fd-9754-4a10-a9e2-a3937624fb51",
+      "content_id": "b4d72bd2-f4ae-4e12-84c0-62f8803709aa",
+      "claim_id": "C30",
+      "claim": "TTX did not significantly affect integration in stratum radiatum (time-integral nonlinearity 9.4 \u00b1 3.3%, vs control p=0.71, n = 9).",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to D-AP5, the sodium channel blocker tetrodotoxin (TTX, 100 nM) did not significantly affect integration in either stratum oriens or radiatum (oriens time-integral nonlinearity 40.1 \u00b1 5.6%, vs control p=0.23, n = 16; radiatum time-integral nonlinearity 9.4 \u00b1 3.3%, vs control p=0.71, n = 9; Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative result from pharmacological experiments shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:00:44.353090Z"
+    },
+    {
+      "id": "76cc5f64-7237-4b60-9c71-a5fc63d1cff3",
+      "content_id": "b4d72bd2-f4ae-4e12-84c0-62f8803709aa",
+      "claim_id": "C31",
+      "claim": "PV+ interneuron dendrites generally do not support regenerative events.",
+      "claim_type": "EXPLICIT",
+      "source": "The failure of TTX to affect uEPSP integration is consistent with the view that PV+ interneuron dendrites generally do not support regenerative events (Hu et al., 2010) (although see Chiovini et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature and consistent with experimental observations.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:00:44.353090Z"
+    },
+    {
+      "id": "aec79856-3c69-4c79-98a7-bd32c5f960c6",
+      "content_id": "b4d72bd2-f4ae-4e12-84c0-62f8803709aa",
+      "claim_id": "C32",
+      "claim": "Dendrites of PV+ interneurons that mediate feedback inhibition exhibit NMDAR-dependent supralinear input integration.",
+      "claim_type": "EXPLICIT",
+      "source": "Dendrites of PV+ interneurons that mediate feedback inhibition, but not those mediating purely feedforward inhibition, thus exhibit NMDAR-dependent supralinear input integration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental results in Figures 1 and 2.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:00:44.353090Z"
+    },
+    {
+      "id": "350085e5-0528-4d54-b663-a19d4a484565",
+      "content_id": "b4d72bd2-f4ae-4e12-84c0-62f8803709aa",
+      "claim_id": "C33",
+      "claim": "Clusters of coactive synapses supplied by local pyramidal neurons cooperate via depolarization-dependent relief of NMDARs from Mg2+ blockade.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings imply that clusters of coactive synapses supplied by local pyramidal neurons cooperate via depolarization-dependent relief of NMDARs from Mg2+ blockade.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the experimental results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:00:44.353090Z"
+    },
+    {
+      "id": "fe453be5-aa06-474b-bd91-9f82439655a4",
+      "content_id": "b4d72bd2-f4ae-4e12-84c0-62f8803709aa",
+      "claim_id": "C34",
+      "claim": "Feedback inputs show a > 2 fold greater NMDAR/AMPAR charge ratio (3.5 \u00b1 0.7) compared to feedforward inputs (1.3 \u00b1 0.3), p=0.0017, n = 10.",
+      "claim_type": "EXPLICIT",
+      "source": "Pharmacological dissection of EPSCs in 0.1 mM [Mg2+] revealed a > 2 fold greater NMDAR/AMPAR charge ratio when stimulating in the alveus than when stimulating in stratum radiatum (charge ratio: 3.5 \u00b1 0.7 vs 1.3 \u00b1 0.3, p=0.0017, n = 10, paired t-test; Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative result from voltage clamp experiments shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:00:44.353090Z"
+    },
+    {
+      "id": "fecd8a8e-9aab-4981-93db-b5758a1184dd",
+      "content_id": "b4d72bd2-f4ae-4e12-84c0-62f8803709aa",
+      "claim_id": "C35",
+      "claim": "The decay time constant of NMDAR-mediated EPSCs was similar for feedforward (154.6 \u00b1 25.9 ms) and feedback inputs (148.1 \u00b1 13.4 ms), p=0.8, n = 10.",
+      "claim_type": "EXPLICIT",
+      "source": "The decay time constant of the NMDAR-mediated EPSCs was similar for the two inputs (Schaffer collaterals: 154.6 \u00b1 25.9 ms vs alveus: 148.1 \u00b1 13.4 ms, p=0.8, n = 10, paired t-test; Figure 3B) providing no evidence for differences in NR2B subunit inclusion, again consistent with previous work that showed similar effects of selective blockade of NR2B-containing receptors (Le Roux et al., 2013) (although see Matta et al., 2013).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative result from voltage clamp experiments shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:00:44.353090Z"
+    },
+    {
+      "id": "1525d292-0c58-4c3f-a3da-d0a926639d9c",
+      "content_id": "b4d72bd2-f4ae-4e12-84c0-62f8803709aa",
+      "claim_id": "C36",
+      "claim": "There is no evidence for differences in NR2B subunit inclusion between feedforward and feedback inputs.",
+      "claim_type": "EXPLICIT",
+      "source": "The decay time constant of the NMDAR-mediated EPSCs was similar for the two inputs (Schaffer collaterals: 154.6 \u00b1 25.9 ms vs alveus: 148.1 \u00b1 13.4 ms, p=0.8, n = 10, paired t-test; Figure 3B) providing no evidence for differences in NR2B subunit inclusion, again consistent with previous work that showed similar effects of selective blockade of NR2B-containing receptors (Le Roux et al., 2013) (although see Matta et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of experimental data and consistent with previous literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:00:44.353090Z"
+    },
+    {
+      "id": "df1323aa-f853-414a-933f-e46aa73e9dfe",
+      "content_id": "b4d72bd2-f4ae-4e12-84c0-62f8803709aa",
+      "claim_id": "C37",
+      "claim": "Dendrites of PV+ interneurons in stratum oriens are generally thinner and shorter than those in stratum radiatum.",
+      "claim_type": "EXPLICIT",
+      "source": "Dendrites of PV+ interneurons in stratum oriens are generally thinner and shorter than those in stratum radiatum (Guly\u00e1s et al., 1999) suggestive of a higher effective local input impedance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:00:44.353090Z"
+    },
+    {
+      "id": "40209387-454d-4037-a3d0-91bb18af60bf",
+      "content_id": "b4d72bd2-f4ae-4e12-84c0-62f8803709aa",
+      "claim_id": "C38",
+      "claim": "Oriens dendrites may have a higher effective local input impedance than radiatum dendrites.",
+      "claim_type": "EXPLICIT",
+      "source": "Dendrites of PV+ interneurons in stratum oriens are generally thinner and shorter than those in stratum radiatum (Guly\u00e1s et al., 1999) suggestive of a higher effective local input impedance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the morphological differences cited from previous literature.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:00:44.353090Z"
+    },
+    {
+      "id": "f7630a33-6019-486e-9971-0a523c52b5d3",
+      "content_id": "b4d72bd2-f4ae-4e12-84c0-62f8803709aa",
+      "claim_id": "C39",
+      "claim": "Compartmental model simulations revealed supralinear summation of EPSPs that was more pronounced for stratum oriens (42.5 \u00b1 3.5%) than stratum radiatum dendrites (23.9 \u00b1 2.3%), p<0.001.",
+      "claim_type": "EXPLICIT",
+      "source": "These simulations revealed supralinear summation of EPSPs recorded at the soma that was more pronounced for stratum oriens than for stratum radiatum dendrites (oriens vs radiatum time-integral nonlinearity: 42.5 \u00b1 3.5% vs 23.9 \u00b1 2.3%, p<0.001, Figure 3D), supporting a role for dendritic morphology in mediating the difference between strata.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative result from computational modeling shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:00:44.353090Z"
+    },
+    {
+      "id": "7087f647-67c3-460b-b0f0-db25c4acce4c",
+      "content_id": "b4d72bd2-f4ae-4e12-84c0-62f8803709aa",
+      "claim_id": "C40",
+      "claim": "Dendritic morphology has a role in mediating the difference in integration between strata.",
+      "claim_type": "EXPLICIT",
+      "source": "These simulations revealed supralinear summation of EPSPs recorded at the soma that was more pronounced for stratum oriens than for stratum radiatum dendrites (oriens vs radiatum time-integral nonlinearity: 42.5 \u00b1 3.5% vs 23.9 \u00b1 2.3%, p<0.001, Figure 3D), supporting a role for dendritic morphology in mediating the difference between strata.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of computational modeling results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:00:44.353090Z"
+    },
+    {
+      "id": "61d2ecfc-f43c-4852-9a39-11303c278c65",
+      "content_id": "b4d72bd2-f4ae-4e12-84c0-62f8803709aa",
+      "claim_id": "C41",
+      "claim": "Reducing the simulated NMDAR/AMPAR conductance ratio at radiatum dendrites to half that of oriens dendrites improved agreement with glutamate uncaging data (oriens: 42.5 \u00b1 3.5% vs radiatum: 8.5 \u00b1 0.8%).",
+      "claim_type": "EXPLICIT",
+      "source": "Reducing the simulated NMDAR/AMPAR conductance ratio at radiatum dendrites to half that of the oriens dendrites, in line with results from experiments in Figure 3A, improved agreement with the glutamate uncaging data (time-integral supralinearity in simulations: 42.5 \u00b1 3.5% vs 8.5 \u00b1 0.8% for stratum oriens vs stratum radiatum; Figure 3E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative result from computational modeling shown in Figure 3E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:00:44.353090Z"
+    },
+    {
+      "id": "69a62de7-3a5e-441e-9a0a-da461e11783a",
+      "content_id": "b4d72bd2-f4ae-4e12-84c0-62f8803709aa",
+      "claim_id": "C42",
+      "claim": "The difference in dendritic integration in oriens and radiatum dendrites may be accounted for by a combination of differential NMDAR expression and dendritic morphology.",
+      "claim_type": "EXPLICIT",
+      "source": "The difference in dendritic integration in oriens and radiatum dendrites observed experimentally (Figure 1) may therefore be accounted for by a combination of differential NMDAR expression (greater in stratum oriens) and dendritic morphology (greater impedance in stratum oriens, thus facilitating depolarization and NMDAR opening).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from combining experimental and modeling results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:00:44.353090Z"
+    },
+    {
+      "id": "5aef65d4-c906-4732-b8e4-12d62d5ec3ad",
+      "content_id": "b4d72bd2-f4ae-4e12-84c0-62f8803709aa",
+      "claim_id": "C43",
+      "claim": "Optogenetic stimulation of feedback fibers revealed large NMDAR currents (amplitude: 459.1 \u00b1 89.2 pA, integral: 39.1 \u00b1 6.8 nA ms).",
+      "claim_type": "EXPLICIT",
+      "source": "This revealed large NMDAR currents (amplitude: 459.1 \u00b1 89.2 pA, integral: 39.1 \u00b1 6.8 nA ms) and NMDAR/AMPAR ratios (amplitude: 0.7 \u00b1 0.2, integral: 2.7 \u00b1 0.8, Figure 4C), confirming abundant expression of functional NMDARs at feedback excitatory synapses on PV+ interneurons.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative result from optogenetic experiments shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:00:44.353090Z"
+    },
+    {
+      "id": "dc61697a-60c0-4a19-9dde-247e795856bb",
+      "content_id": "b4d72bd2-f4ae-4e12-84c0-62f8803709aa",
+      "claim_id": "C44",
+      "claim": "Optogenetic stimulation of feedback fibers revealed NMDAR/AMPAR ratios of amplitude: 0.7 \u00b1 0.2 and integral: 2.7 \u00b1 0.8.",
+      "claim_type": "EXPLICIT",
+      "source": "This revealed large NMDAR currents (amplitude: 459.1 \u00b1 89.2 pA, integral: 39.1 \u00b1 6.8 nA ms) and NMDAR/AMPAR ratios (amplitude: 0.7 \u00b1 0.2, integral: 2.7 \u00b1 0.8, Figure 4C), confirming abundant expression of functional NMDARs at feedback excitatory synapses on PV+ interneurons.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative result from optogenetic experiments shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:00:44.353090Z"
+    },
+    {
+      "id": "0b9bf695-d46f-4765-a076-5d5317383813",
+      "content_id": "b4d72bd2-f4ae-4e12-84c0-62f8803709aa",
+      "claim_id": "C45",
+      "claim": "There is abundant expression of functional NMDARs at feedback excitatory synapses on PV+ interneurons.",
+      "claim_type": "EXPLICIT",
+      "source": "This revealed large NMDAR currents (amplitude: 459.1 \u00b1 89.2 pA, integral: 39.1 \u00b1 6.8 nA ms) and NMDAR/AMPAR ratios (amplitude: 0.7 \u00b1 0.2, integral: 2.7 \u00b1 0.8, Figure 4C), confirming abundant expression of functional NMDARs at feedback excitatory synapses on PV+ interneurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from optogenetic experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:00:44.353090Z"
+    },
+    {
+      "id": "ed65e8fb-10dc-4bd3-bb79-473b7e66bcdf",
+      "content_id": "b4d72bd2-f4ae-4e12-84c0-62f8803709aa",
+      "claim_id": "C46",
+      "claim": "Perfusion of D-AP5 significantly reduced the average time-integral of optogenetically evoked EPSPs (p=0.033, n = 5).",
+      "claim_type": "EXPLICIT",
+      "source": "Perfusion of the NMDAR blocker D-AP5 significantly reduced both the average time-integral and the ratio of integral to peak of EPSPs evoked at the maximal light intensity (p=0.033; p=0.014; n = 5), but not the peak EPSPs (Figure 4E,F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative result from optogenetic experiments shown in Figure 4E,F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:00:44.353090Z"
+    },
+    {
+      "id": "e0f6ddc4-6ed4-47b7-913b-186bc39984ab",
+      "content_id": "b4d72bd2-f4ae-4e12-84c0-62f8803709aa",
+      "claim_id": "C47",
+      "claim": "Perfusion of D-AP5 significantly reduced the ratio of integral to peak of optogenetically evoked EPSPs (p=0.014, n = 5).",
+      "claim_type": "EXPLICIT",
+      "source": "Perfusion of the NMDAR blocker D-AP5 significantly reduced both the average time-integral and the ratio of integral to peak of EPSPs evoked at the maximal light intensity (p=0.033; p=0.014; n = 5), but not the peak EPSPs (Figure 4E,F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative result from optogenetic experiments shown in Figure 4E,F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:00:44.353090Z"
+    },
+    {
+      "id": "c5056102-eb37-47f3-8e30-067d71b4cb1c",
+      "content_id": "b4d72bd2-f4ae-4e12-84c0-62f8803709aa",
+      "claim_id": "C48",
+      "claim": "D-AP5 did not significantly affect the peak amplitude of optogenetically evoked EPSPs.",
+      "claim_type": "EXPLICIT",
+      "source": "Perfusion of the NMDAR blocker D-AP5 significantly reduced both the average time-integral and the ratio of integral to peak of EPSPs evoked at the maximal light intensity (p=0.033; p=0.014; n = 5), but not the peak EPSPs (Figure 4E,F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative result from optogenetic experiments shown in Figure 4E,F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:00:44.353090Z"
+    },
+    {
+      "id": "7cd5a2f1-a81f-43de-b860-d13e7b323d73",
+      "content_id": "b4d72bd2-f4ae-4e12-84c0-62f8803709aa",
+      "claim_id": "C49",
+      "claim": "There was a larger NMDAR contribution to EPSPs elicited by stronger light pulses.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, in line with cooperative postsynaptic voltage-dependent relief of Mg2+ blockade, we observed a larger NMDAR contribution to EPSPs elicited by stronger light pulses (Figure 4G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from optogenetic experiments shown in Figure 4G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:00:44.353090Z"
+    },
+    {
+      "id": "5bfd8f6e-2c8b-49cb-bd9d-ce7639b1cdbe",
+      "content_id": "b4d72bd2-f4ae-4e12-84c0-62f8803709aa",
+      "claim_id": "C50",
+      "claim": "Synaptic glutamate release at feedback inputs from CA1 pyramidal cells can elicit NMDAR-mediated depolarization of PV+ interneurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these experiments confirm that synaptic glutamate release at feedback inputs from CA1 pyramidal cells can elicit NMDAR-mediated depolarization of PV+ interneurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from optogenetic experiments in Figure 4.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:00:44.353090Z"
+    },
+    {
+      "id": "380823d1-1daa-4508-bd6f-26d74ad1dbfa",
+      "content_id": "b4d72bd2-f4ae-4e12-84c0-62f8803709aa",
+      "claim_id": "C51",
+      "claim": "Excitatory neurons driven by a compact 'hump' of excitation in input space cooperated in recruiting NMDARs on the interneuron to a greater extent than equivalent excitation shuffled randomly in input space.",
+      "claim_type": "EXPLICIT",
+      "source": "Excitatory neurons driven by a compact 'hump' of excitation in input space cooperated in recruiting NMDARs on the interneuron to a greater extent than equivalent excitation shuffled randomly in input space (Figure 5D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from network modeling simulations shown in Figure 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:00:44.353090Z"
+    },
+    {
+      "id": "348af7e9-945b-4957-b5e8-4cf8a6644fa4",
+      "content_id": "b4d72bd2-f4ae-4e12-84c0-62f8803709aa",
+      "claim_id": "C52",
+      "claim": "NMDARs on PV+ interneurons contribute to maintaining a sharp assembly representation, dependent on the spatial arrangement of active synapses on the dendritic tree.",
+      "claim_type": "EXPLICIT",
+      "source": "We propose, therefore, that NMDARs on PV+ interneurons contribute to maintaining a sharp assembly representation, dependent on the spatial arrangement of active synapses on the dendritic tree of the interneuron.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from network modeling simulations in Figure 5.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:00:44.353090Z"
+    },
+    {
+      "id": "6996b40b-319a-4abb-9d0c-2fccda146ef4",
+      "content_id": "b4d72bd2-f4ae-4e12-84c0-62f8803709aa",
+      "claim_id": "C53",
+      "claim": "When one network received a stable and compact hump of excitation it was much more likely to 'win' than a competing network receiving an equal amount of dispersed excitation.",
+      "claim_type": "EXPLICIT",
+      "source": "When one network received a stable and compact hump of excitation (again, with input space defined by location on the interneuron dendritic tree) it was much more likely to 'win' than a competing network receiving an equal amount of excitation that was dispersed (Figure 6A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from network modeling simulations shown in Figure 6A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:00:44.353090Z"
+    },
+    {
+      "id": "8cb79b05-e098-41c0-90a2-ca51880fd356",
+      "content_id": "b4d72bd2-f4ae-4e12-84c0-62f8803709aa",
+      "claim_id": "C54",
+      "claim": "The tendency for the network receiving a hump of excitation to win disappeared when NMDARs were removed from the inhibitory neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "The tendency for the network receiving a hump of excitation to win disappeared when NMDARs were removed from the inhibitory neurons (Figure 6B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from network modeling simulations shown in Figure 6B,C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:00:44.353090Z"
+    },
+    {
+      "id": "152fac7c-0fe7-49dd-a166-cf8eb491a58e",
+      "content_id": "b4d72bd2-f4ae-4e12-84c0-62f8803709aa",
+      "claim_id": "C55",
+      "claim": "The frequency of flipping between competing networks increased steeply when the normalized conductance of NMDARs was decreased in the inhibitory neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the frequency of flipping increased steeply when the normalized conductance of NMDARs was decreased in the inhibitory neurons, resulting in a flickering of the dominant assemblies (Figure 7C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from network modeling simulations shown in Figure 7C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:00:44.353090Z"
+    },
+    {
+      "id": "79a38568-461a-4c98-99a5-09a718e5b6d8",
+      "content_id": "b4d72bd2-f4ae-4e12-84c0-62f8803709aa",
+      "claim_id": "C56",
+      "claim": "The frequency of flipping was relatively unaffected by reducing the AMPAR conductance.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the frequency of flipping was relatively unaffected by reducing the AMPAR conductance (Figure 7D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from network modeling simulations shown in Figure 7D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:00:44.353090Z"
+    },
+    {
+      "id": "80a0ee9f-4891-4be8-8491-30e23a90fff0",
+      "content_id": "b4d72bd2-f4ae-4e12-84c0-62f8803709aa",
+      "claim_id": "C57",
+      "claim": "NMDAR-mediated cooperative interactions among clustered synapses on an interneuron stabilize cell assemblies.",
+      "claim_type": "EXPLICIT",
+      "source": "We thus conclude that NMDAR-mediated cooperative interactions among clustered synapses on an interneuron stabilize cell assemblies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from network modeling simulations in Figure 7.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:00:44.353090Z"
+    },
+    {
+      "id": "7d04d35a-d184-42f6-b0a4-28dc848c5c3e",
+      "content_id": "b4d72bd2-f4ae-4e12-84c0-62f8803709aa",
+      "claim_id": "C58",
+      "claim": "Clustered excitatory synapses on stratum oriens dendrites of CA1 PV+ interneurons interact supralinearly.",
+      "claim_type": "EXPLICIT",
+      "source": "The present study shows that clustered excitatory synapses on stratum oriens dendrites of CA1 PV+ interneurons interact supralinearly, challenging the view that they act as linear integrators of synaptic inputs (see also Tzilivaki et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary conclusion of the study based on experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:00:44.353090Z"
+    },
+    {
+      "id": "b9b0e131-c0be-46e8-8242-668ffc271b5b",
+      "content_id": "b4d72bd2-f4ae-4e12-84c0-62f8803709aa",
+      "claim_id": "C59",
+      "claim": "The high impedance of stratum oriens dendrites facilitates the cooperative recruitment of NMDARs.",
+      "claim_type": "EXPLICIT",
+      "source": "The high impedance of stratum oriens dendrites, which are innervated by axon collaterals of local pyramidal neurons, facilitates the cooperative recruitment of NMDARs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from experimental and modeling results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:00:44.353090Z"
+    },
+    {
+      "id": "95dfb632-a6aa-4d4d-b773-2d506d1269d8",
+      "content_id": "b4d72bd2-f4ae-4e12-84c0-62f8803709aa",
+      "claim_id": "C60",
+      "claim": "An adaptive role of NMDARs in feedback excitation of PV+ interneurons is to facilitate the emergence of strong and stable cell assemblies.",
+      "claim_type": "EXPLICIT",
+      "source": "An adaptive role of NMDARs in feedback excitation of PV+ interneurons can therefore be to facilitate the emergence of strong and stable cell assemblies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from network modeling results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:00:44.353090Z"
+    },
+    {
+      "id": "067f588c-ad32-4a98-89ff-45f1d7557afd",
+      "content_id": "b4d72bd2-f4ae-4e12-84c0-62f8803709aa",
+      "claim_id": "C61",
+      "claim": "Selective knockdown of NMDARs in PV+ interneurons causes working-memory deficits.",
+      "claim_type": "EXPLICIT",
+      "source": "Selective knockdown of NMDARs in PV+ interneurons has previously been shown to cause a range of functional impairments, including working-memory deficits and a reduction in the precision of hippocampal spatial representations (Korotkova et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:00:44.353090Z"
+    },
+    {
+      "id": "0e6b916c-f0ad-453b-a33f-2ba45c9519f5",
+      "content_id": "b4d72bd2-f4ae-4e12-84c0-62f8803709aa",
+      "claim_id": "C62",
+      "claim": "Selective knockdown of NMDARs in PV+ interneurons causes a reduction in the precision of hippocampal spatial representations.",
+      "claim_type": "EXPLICIT",
+      "source": "Selective knockdown of NMDARs in PV+ interneurons has previously been shown to cause a range of functional impairments, including working-memory deficits and a reduction in the precision of hippocampal spatial representations (Korotkova et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:00:44.353090Z"
+    },
+    {
+      "id": "51a38946-60ed-4e7b-a747-ce5fb3be256b",
+      "content_id": "b4d72bd2-f4ae-4e12-84c0-62f8803709aa",
+      "claim_id": "C63",
+      "claim": "The network simulations provide a mechanistic explanation for the reduction in spatial information conveyed by principal cell spiking observed after NMDAR knockdown in PV+ interneurons.",
+      "claim_type": "EXPLICIT",
+      "source": "The network simulations presented here provide a mechanistic explanation for some of these results, in particular, a reduction in spatial information conveyed by principal cell spiking (Korotkova et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation connecting modeling results to previous experimental findings.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:00:44.353090Z"
+    },
+    {
+      "id": "cade5aa7-9ce7-4e0f-a029-dc3575936e38",
+      "content_id": "b4d72bd2-f4ae-4e12-84c0-62f8803709aa",
+      "claim_id": "C64",
+      "claim": "In the visual cortex PV+ inhibition increases assembly similarity.",
+      "claim_type": "EXPLICIT",
+      "source": "Other studies highlight a role for PV+ cells and inhibition in cell-assembly competition: in the visual cortex PV+ inhibition increases assembly similarity (Agetsuma et al., 2018) and in the hippocampus silencing of a dominant assembly was shown to uncover an alternative previously inhibited assembly (Trouche et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:00:44.353090Z"
+    },
+    {
+      "id": "5a9fc550-73af-4c12-9e36-5ed86f59164c",
+      "content_id": "b4d72bd2-f4ae-4e12-84c0-62f8803709aa",
+      "claim_id": "C65",
+      "claim": "In the hippocampus silencing of a dominant assembly uncovered an alternative previously inhibited assembly.",
+      "claim_type": "EXPLICIT",
+      "source": "Other studies highlight a role for PV+ cells and inhibition in cell-assembly competition: in the visual cortex PV+ inhibition increases assembly similarity (Agetsuma et al., 2018) and in the hippocampus silencing of a dominant assembly was shown to uncover an alternative previously inhibited assembly (Trouche et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:00:44.353090Z"
+    },
+    {
+      "id": "67ff50c1-3f65-46e5-8fcd-a5c5679cd6f5",
+      "content_id": "b4d72bd2-f4ae-4e12-84c0-62f8803709aa",
+      "claim_id": "C66",
+      "claim": "NMDARs may be integral to PV+ cell functions in cell-assembly competition.",
+      "claim_type": "EXPLICIT",
+      "source": "The present study indicates that NMDARs may be integral to these functions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation connecting the current study's findings to previous literature.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:00:44.353090Z"
+    },
+    {
+      "id": "45a5d158-c078-48d8-a478-b69598e4167f",
+      "content_id": "b4d72bd2-f4ae-4e12-84c0-62f8803709aa",
+      "claim_id": "C67",
+      "claim": "NMDAR blockers recapitulate some features of schizophrenia in healthy individuals.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, NMDAR blockers have been shown to recapitulate some features of schizophrenia in healthy individuals (Krystal et al., 1994).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:00:44.353090Z"
+    },
+    {
+      "id": "785bddf2-051c-47ba-8d32-978b43a679c5",
+      "content_id": "b4d72bd2-f4ae-4e12-84c0-62f8803709aa",
+      "claim_id": "C68",
+      "claim": "NMDAR antagonists cause a net disinhibition of principal cell activity.",
+      "claim_type": "EXPLICIT",
+      "source": "When coupled with the observation that NMDAR antagonists cause a net disinhibition of principal cell activity (Homayoun and Moghaddam, 2007; Jackson et al., 2004), it has been suggested that cortical circuits are especially vulnerable to failure of NMDAR-mediated signaling in PV+ interneurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:00:44.353090Z"
+    },
+    {
+      "id": "4934a74a-cf6c-4361-abd7-27fbff351030",
+      "content_id": "b4d72bd2-f4ae-4e12-84c0-62f8803709aa",
+      "claim_id": "C69",
+      "claim": "Post-mortem studies have revealed a selective loss of PV+ interneurons in people with schizophrenia.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, post-mortem studies have revealed a selective loss of PV+ interneurons in people with schizophrenia (Lewis et al., 2012) and overexpression of Neuregulin 1, a leading schizophrenia susceptibility gene, is associated with a reduction of NMDARs on PV+ cells (Kotzadimitriou et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:00:44.353090Z"
+    },
+    {
+      "id": "db282070-b1ad-46be-a60a-4f476bcac5b1",
+      "content_id": "b4d72bd2-f4ae-4e12-84c0-62f8803709aa",
+      "claim_id": "C70",
+      "claim": "Overexpression of Neuregulin 1 is associated with a reduction of NMDARs on PV+ cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, post-mortem studies have revealed a selective loss of PV+ interneurons in people with schizophrenia (Lewis et al., 2012) and overexpression of Neuregulin 1, a leading schizophrenia susceptibility gene, is associated with a reduction of NMDARs on PV+ cells (Kotzadimitriou et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:00:44.353090Z"
+    },
+    {
+      "id": "cd730759-5e09-448c-961b-5dad0438a446",
+      "content_id": "b4d72bd2-f4ae-4e12-84c0-62f8803709aa",
+      "claim_id": "C71",
+      "claim": "Destabilization of dominant neuronal assemblies resulting from impaired NMDAR signaling on PV+ interneurons may explain a failure of sensory gating in schizophrenia.",
+      "claim_type": "EXPLICIT",
+      "source": "Destabilization of dominant neuronal assemblies, as shown here to result from impaired NMDAR signaling on PV+ interneurons, may thus explain a failure of sensory gating (Javitt and Freedman, 2015) and evidence for reduced cognitive control, for instance in the Necker cube test (McBain et al., 2011), in schizophrenia.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation connecting the current study's findings to schizophrenia pathophysiology.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:00:44.353090Z"
+    },
+    {
+      "id": "70d3be08-344e-4e5c-871b-c52dc5efc786",
+      "content_id": "b4d72bd2-f4ae-4e12-84c0-62f8803709aa",
+      "claim_id": "C72",
+      "claim": "Destabilization of dominant neuronal assemblies resulting from impaired NMDAR signaling on PV+ interneurons may explain reduced cognitive control in schizophrenia.",
+      "claim_type": "EXPLICIT",
+      "source": "Destabilization of dominant neuronal assemblies, as shown here to result from impaired NMDAR signaling on PV+ interneurons, may thus explain a failure of sensory gating (Javitt and Freedman, 2015) and evidence for reduced cognitive control, for instance in the Necker cube test (McBain et al., 2011), in schizophrenia.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation connecting the current study's findings to schizophrenia pathophysiology.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:00:44.353090Z"
+    },
+    {
+      "id": "76d959cb-43c9-4160-9fd5-d641e8a82851",
+      "content_id": "b4d72bd2-f4ae-4e12-84c0-62f8803709aa",
+      "claim_id": "C73",
+      "claim": "Recurrent connections between PV+ interneurons and local pyramidal cell circuits are found throughout the brain.",
+      "claim_type": "EXPLICIT",
+      "source": "Recurrent connections between PV+ interneurons and local pyramidal cell circuits are found throughout the brain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as general knowledge about brain anatomy.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:00:44.353090Z"
+    },
+    {
+      "id": "8c21809f-0f82-4913-b071-7e09b2d74354",
+      "content_id": "b4d72bd2-f4ae-4e12-84c0-62f8803709aa",
+      "claim_id": "C74",
+      "claim": "Experiments were performed in acute hippocampal slices from mice obtained by crossing PV-Cre mice with Ai9 mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Experiments were performed in acute hippocampal slices from mice obtained by crossing PV-Cre mice with Ai9 mice, and tdTomato expression was used to target fast-spiking PV+ interneurons in CA1 stratum pyramidale.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental methods used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:00:44.353090Z"
+    },
+    {
+      "id": "aeb910c2-f542-4681-a305-d8536b3b6130",
+      "content_id": "b4d72bd2-f4ae-4e12-84c0-62f8803709aa",
+      "claim_id": "C75",
+      "claim": "PV+ interneurons in CA1 stratum pyramidale mainly comprise basket cells in addition to axo-axonic and bistratified cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Such neurons, which mainly comprise basket cells in addition to axo-axonic and bistratified cells (Bezaire and Soltesz, 2013), receive excitatory feedforward inputs across the full extent of their dendritic trees, in both strata radiatum and oriens.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:00:44.353090Z"
+    },
+    {
+      "id": "63e62c1c-2eb9-4d23-a152-0d90688f6dbd",
+      "content_id": "b4d72bd2-f4ae-4e12-84c0-62f8803709aa",
+      "claim_id": "C76",
+      "claim": "Wide-field illumination pulses of 470 nm light elicited monophasic EPSCs in PV+ interneurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Wide-field illumination pulses (1 ms) of 470 nm light elicited monophasic EPSCs, in agreement with the low associative connectivity among CA1 pyramidal neurons (Amaral et al., 1991; Deuchars and Thomson, 1996) (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from optogenetic experiments shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:00:44.353090Z"
+    },
+    {
+      "id": "19affbcc-5dc4-4ffa-b63b-f4695779386a",
+      "content_id": "b4d72bd2-f4ae-4e12-84c0-62f8803709aa",
+      "claim_id": "C77",
+      "claim": "CA1 pyramidal neurons have low associative connectivity.",
+      "claim_type": "EXPLICIT",
+      "source": "Wide-field illumination pulses (1 ms) of 470 nm light elicited monophasic EPSCs, in agreement with the low associative connectivity among CA1 pyramidal neurons (Amaral et al., 1991; Deuchars and Thomson, 1996) (Figure 4B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature and consistent with experimental observations.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:00:44.353090Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "7e0c8988-b1fe-4193-a941-7a3af5acb814",
+      "content_id": "b4d72bd2-f4ae-4e12-84c0-62f8803709aa",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Glutamate uncaging experiments reveal that stratum oriens dendrites of PV+ interneurons exhibit supralinear integration (peak amplitude nonlinearity: 24.0 \u00b1 4.5%, time-integral nonlinearity: 54.0 \u00b1 10.1%), while stratum radiatum dendrites show approximately linear integration (peak amplitude nonlinearity: 3.8 \u00b1 5.0%, time-integral nonlinearity: 6.3 \u00b1 7.6%). This difference is statistically significant (p=0.0083 for peak amplitude, p=0.0028 for time-integral) and depends on spatial clustering of inputs on dendrites.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16-C20 provide quantitative experimental data with appropriate statistical tests (unpaired t-tests, n=14 for oriens, n=9 for radiatum) demonstrating differential integration between strata. Claims C23, C25, and C26 provide supporting evidence for the validity of the uncaging approach and the importance of spatial clustering. The experimental design is sound with proper controls and replication.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:00:44.353090Z"
+    },
+    {
+      "id": "73e48cea-076f-48e2-9a2f-4aa97655208e",
+      "content_id": "b4d72bd2-f4ae-4e12-84c0-62f8803709aa",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "NMDAR blockade with D-AP5 abolishes supralinear integration in stratum oriens (time-integral nonlinearity reduced to 2.5 \u00b1 3.0%, p=0.0004) but not in stratum radiatum (3.3 \u00b1 2.6%, p=0.88). TTX does not affect integration in either stratum, indicating that NMDARs, but not voltage-gated sodium channels, mediate supralinear integration at feedback synapses.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C30 provide quantitative pharmacological data with appropriate statistical tests and sample sizes (n=10 for D-AP5 oriens, n=4 for D-AP5 radiatum, n=16 for TTX oriens, n=9 for TTX radiatum). The differential effects of D-AP5 versus TTX provide strong mechanistic evidence. Claims C31-C33 draw reasonable conclusions from the data that are consistent with prior literature.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:00:44.353090Z"
+    },
+    {
+      "id": "a7125ae6-28c7-4fc9-8087-24feb36050cb",
+      "content_id": "b4d72bd2-f4ae-4e12-84c0-62f8803709aa",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Voltage clamp experiments in low Mg2+ reveal that feedback inputs have a >2-fold greater NMDAR/AMPAR charge ratio (3.5 \u00b1 0.7) compared to feedforward inputs (1.3 \u00b1 0.3, p=0.0017, n=10). NMDAR decay kinetics are similar between input types (154.6 \u00b1 25.9 ms vs 148.1 \u00b1 13.4 ms, p=0.8), suggesting no difference in NR2B subunit composition. Morphological differences (thinner, shorter oriens dendrites) may contribute to higher local impedance.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C35 provide quantitative voltage clamp data with paired t-tests and appropriate sample size (n=10). The experimental design using low Mg2+ to partially unblock NMDARs at -60 mV is methodologically sound and addresses potential confounds from different dendritic locations. Claims C36-C38 draw reasonable inferences supported by citations to prior morphological studies.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:00:44.353090Z"
+    },
+    {
+      "id": "26505a2e-43f2-4d83-8261-e52a23c3bab2",
+      "content_id": "b4d72bd2-f4ae-4e12-84c0-62f8803709aa",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Compartmental modeling reveals that dendritic morphology alone produces greater supralinear integration in oriens (42.5 \u00b1 3.5%) versus radiatum dendrites (23.9 \u00b1 2.3%, p<0.001). When the NMDAR/AMPAR ratio is reduced by half in radiatum dendrites (matching experimental data), the model better reproduces experimental observations (oriens: 42.5 \u00b1 3.5% vs radiatum: 8.5 \u00b1 0.8%).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39-C41 provide quantitative modeling results that are well-parameterized based on prior literature and the authors' own experimental data. The modeling approach systematically tests the contributions of morphology versus receptor expression. Claim C42 provides a reasonable synthesis of experimental and modeling results. However, the model makes simplifying assumptions about dendritic properties that may not fully capture biological complexity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:00:44.353090Z"
+    },
+    {
+      "id": "dff4e812-7a4f-4a2d-8aab-ee7c69eac73b",
+      "content_id": "b4d72bd2-f4ae-4e12-84c0-62f8803709aa",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Optogenetic stimulation of CA1 pyramidal cell feedback inputs reveals large NMDAR currents (amplitude: 459.1 \u00b1 89.2 pA, integral: 39.1 \u00b1 6.8 nA ms) and NMDAR/AMPAR ratios (amplitude: 0.7 \u00b1 0.2, integral: 2.7 \u00b1 0.8). D-AP5 significantly reduces EPSP time-integral (p=0.033) and integral/peak ratio (p=0.014) but not peak amplitude, with greater NMDAR contribution at higher stimulation intensities.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C48 provide quantitative optogenetic data with appropriate statistical tests (n=5-7). The experimental design using AAV-CaMKII-ChR2 specifically targets CA1 pyramidal cells and avoids confounds from extrinsic inputs. The observation of stimulus-intensity-dependent NMDAR recruitment (C49) is consistent with voltage-dependent Mg2+ block. Sample sizes are modest but adequate for the observed effect sizes.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:00:44.353090Z"
+    },
+    {
+      "id": "119ed7d5-0e9b-4f9e-a075-b111efc7bcf4",
+      "content_id": "b4d72bd2-f4ae-4e12-84c0-62f8803709aa",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Network modeling demonstrates that excitatory neurons with spatially clustered inputs cooperate more effectively in recruiting NMDARs on PV+ interneurons compared to dispersed inputs. In competing networks, clustered inputs are more likely to 'win' than dispersed inputs when NMDARs are present, but this advantage disappears when NMDARs are removed from inhibitory neurons.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C54 describe network modeling results that logically extend from the experimental findings. The modeling approach incorporates biologically plausible parameters and tests specific hypotheses about assembly competition. However, the model makes significant simplifications (abstract input space, single interneuron per network) that limit direct biological interpretation. The conclusions are reasonable within the model's constraints but require experimental validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:00:44.353090Z"
+    },
+    {
+      "id": "81724b1e-9d4d-4448-b017-fe26d1fd3d16",
+      "content_id": "b4d72bd2-f4ae-4e12-84c0-62f8803709aa",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "In network simulations with competing assemblies receiving fluctuating inputs, reducing NMDAR conductance in inhibitory neurons increases the frequency of network 'flipping' between dominant assemblies, while reducing AMPAR conductance has minimal effect. This demonstrates that NMDAR-mediated cooperative interactions stabilize cell assemblies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55-C57 describe modeling results that test the stability of competing assemblies under different receptor conditions. The differential effects of NMDAR versus AMPAR manipulation provide mechanistic insight. However, the model's simplifications (e.g., abstract input space, lack of detailed circuit architecture) limit the strength of conclusions about biological systems. The results are internally consistent but would benefit from experimental validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:00:44.353090Z"
+    },
+    {
+      "id": "7196062e-be47-40b3-ae66-768c7ac9e0b6",
+      "content_id": "b4d72bd2-f4ae-4e12-84c0-62f8803709aa",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The study concludes that clustered excitatory synapses on stratum oriens dendrites of CA1 PV+ interneurons interact supralinearly through NMDAR-dependent mechanisms, facilitated by high dendritic impedance. This enables cooperative recruitment of PV+ interneurons and facilitates the emergence of strong and stable cell assemblies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-C60 synthesize the major findings from experimental and modeling work. C58 is directly supported by experimental data (C16-C33). C59 is supported by both experimental data (C34-C38) and modeling (C39-C42). C60 represents a broader interpretation supported by modeling results (C51-C57) but involves speculation about adaptive function that extends beyond the direct evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:00:44.353090Z"
+    },
+    {
+      "id": "d664f0ec-0280-4dc8-b1c7-6904b3641298",
+      "content_id": "b4d72bd2-f4ae-4e12-84c0-62f8803709aa",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The network simulations provide a mechanistic explanation for previously observed reductions in spatial information and assembly competition deficits following NMDAR knockdown in PV+ interneurons, suggesting that NMDARs are integral to PV+ cell functions in cell-assembly competition.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C63 and C66 connect the current modeling results to prior experimental findings (C61-C62, C64-C65). While the modeling provides a plausible mechanistic framework, the connection to prior in vivo findings is speculative. The model makes significant simplifications that may not capture the complexity of spatial coding or assembly competition in intact circuits. Experimental validation of the proposed mechanism is needed.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:00:44.353090Z"
+    },
+    {
+      "id": "b296b00b-d190-4872-8749-16e8ec986b29",
+      "content_id": "b4d72bd2-f4ae-4e12-84c0-62f8803709aa",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The authors propose that destabilization of neuronal assemblies resulting from impaired NMDAR signaling on PV+ interneurons provides a parsimonious explanation for cognitive and sensory gating deficits in schizophrenia, including failures in sensory gating and reduced cognitive control.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C6, C71, and C72 extend the modeling results to explain schizophrenia pathophysiology. While the hypothesis is plausible and consistent with prior literature (C67-C70), it is highly speculative. The network model does not directly simulate cognitive tasks or sensory gating, and the connection to schizophrenia symptoms involves multiple inferential steps. This represents an interesting hypothesis for future testing rather than a supported conclusion.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:00:44.353090Z"
+    },
+    {
+      "id": "69ed1d30-5e50-4a55-802f-00878795b814",
+      "content_id": "b4d72bd2-f4ae-4e12-84c0-62f8803709aa",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The manuscript establishes the background context for PV+ interneurons, including their roles in feedforward/feedback inhibition, gamma oscillations, information processing, and assembly competition, as well as the anatomical organization of feedforward and feedback inputs onto CA1 PV+ interneurons.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C2, C7-C15, C21-C22, and C73 provide background information supported by appropriate citations to prior literature. These claims establish the scientific context and rationale for the study. The citations appear appropriate and the background claims are consistent with established knowledge in the field.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:00:44.353090Z"
+    },
+    {
+      "id": "3fbc3806-a0c4-4f20-8151-46eb61c88dd1",
+      "content_id": "b4d72bd2-f4ae-4e12-84c0-62f8803709aa",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The study used PV-Cre \u00d7 Ai9 mice to target tdTomato-expressing PV+ interneurons in CA1 stratum pyramidale, which mainly comprise basket cells along with axo-axonic and bistratified cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C74-C75 describe the experimental model and cell types studied. The genetic approach is standard and appropriate for targeting PV+ interneurons. The characterization of cell types is supported by citation to prior literature (C75). This provides essential methodological context for interpreting the results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:00:44.353090Z"
+    },
+    {
+      "id": "e4709ab1-b6a5-4b8d-8d72-d323ef754ff8",
+      "content_id": "b4d72bd2-f4ae-4e12-84c0-62f8803709aa",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Optogenetic stimulation with 470 nm light elicited monophasic EPSCs in PV+ interneurons, consistent with low associative connectivity among CA1 pyramidal neurons.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C76-C77 describe an observation from optogenetic experiments that is consistent with prior anatomical studies. The monophasic nature of EPSCs supports the specificity of the optogenetic approach for activating feedback inputs. This provides validation of the experimental method.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:00:44.353090Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "5cac1548-a8ff-457e-a3e7-a3bcf1bfad9e",
+      "result_id": "7e0c8988-b1fe-4193-a941-7a3af5acb814"
+    },
+    {
+      "claim_id": "a4631292-5d9e-4cc8-9b01-bf7e659400e6",
+      "result_id": "7e0c8988-b1fe-4193-a941-7a3af5acb814"
+    },
+    {
+      "claim_id": "65d70f2a-7d57-4b5a-a3d0-d994d3348952",
+      "result_id": "7e0c8988-b1fe-4193-a941-7a3af5acb814"
+    },
+    {
+      "claim_id": "814107ee-57cb-4ea5-a80c-146fad0924d7",
+      "result_id": "7e0c8988-b1fe-4193-a941-7a3af5acb814"
+    },
+    {
+      "claim_id": "dbb5a4f6-4eda-477a-af3d-99468e78a2a7",
+      "result_id": "7e0c8988-b1fe-4193-a941-7a3af5acb814"
+    },
+    {
+      "claim_id": "bbad0004-8f51-49c9-acb8-05a020d1deb3",
+      "result_id": "7e0c8988-b1fe-4193-a941-7a3af5acb814"
+    },
+    {
+      "claim_id": "01fe9712-d6ca-4eca-9010-ada6abef3890",
+      "result_id": "7e0c8988-b1fe-4193-a941-7a3af5acb814"
+    },
+    {
+      "claim_id": "4049773e-61ff-4411-8e76-a5c19d7131e4",
+      "result_id": "7e0c8988-b1fe-4193-a941-7a3af5acb814"
+    },
+    {
+      "claim_id": "1aa0743f-0dae-4c54-83bf-dafdabd26118",
+      "result_id": "73e48cea-076f-48e2-9a2f-4aa97655208e"
+    },
+    {
+      "claim_id": "de4c6fa3-c270-41bd-8a1d-e44c3aec2c34",
+      "result_id": "73e48cea-076f-48e2-9a2f-4aa97655208e"
+    },
+    {
+      "claim_id": "7760542a-22fe-47e8-9165-3868b3d1d7a8",
+      "result_id": "73e48cea-076f-48e2-9a2f-4aa97655208e"
+    },
+    {
+      "claim_id": "d62331fd-9754-4a10-a9e2-a3937624fb51",
+      "result_id": "73e48cea-076f-48e2-9a2f-4aa97655208e"
+    },
+    {
+      "claim_id": "76cc5f64-7237-4b60-9c71-a5fc63d1cff3",
+      "result_id": "73e48cea-076f-48e2-9a2f-4aa97655208e"
+    },
+    {
+      "claim_id": "aec79856-3c69-4c79-98a7-bd32c5f960c6",
+      "result_id": "73e48cea-076f-48e2-9a2f-4aa97655208e"
+    },
+    {
+      "claim_id": "350085e5-0528-4d54-b663-a19d4a484565",
+      "result_id": "73e48cea-076f-48e2-9a2f-4aa97655208e"
+    },
+    {
+      "claim_id": "fe453be5-aa06-474b-bd91-9f82439655a4",
+      "result_id": "a7125ae6-28c7-4fc9-8087-24feb36050cb"
+    },
+    {
+      "claim_id": "fecd8a8e-9aab-4981-93db-b5758a1184dd",
+      "result_id": "a7125ae6-28c7-4fc9-8087-24feb36050cb"
+    },
+    {
+      "claim_id": "1525d292-0c58-4c3f-a3da-d0a926639d9c",
+      "result_id": "a7125ae6-28c7-4fc9-8087-24feb36050cb"
+    },
+    {
+      "claim_id": "df1323aa-f853-414a-933f-e46aa73e9dfe",
+      "result_id": "a7125ae6-28c7-4fc9-8087-24feb36050cb"
+    },
+    {
+      "claim_id": "40209387-454d-4037-a3d0-91bb18af60bf",
+      "result_id": "a7125ae6-28c7-4fc9-8087-24feb36050cb"
+    },
+    {
+      "claim_id": "f7630a33-6019-486e-9971-0a523c52b5d3",
+      "result_id": "26505a2e-43f2-4d83-8261-e52a23c3bab2"
+    },
+    {
+      "claim_id": "7087f647-67c3-460b-b0f0-db25c4acce4c",
+      "result_id": "26505a2e-43f2-4d83-8261-e52a23c3bab2"
+    },
+    {
+      "claim_id": "61d2ecfc-f43c-4852-9a39-11303c278c65",
+      "result_id": "26505a2e-43f2-4d83-8261-e52a23c3bab2"
+    },
+    {
+      "claim_id": "69a62de7-3a5e-441e-9a0a-da461e11783a",
+      "result_id": "26505a2e-43f2-4d83-8261-e52a23c3bab2"
+    },
+    {
+      "claim_id": "5aef65d4-c906-4732-b8e4-12d62d5ec3ad",
+      "result_id": "dff4e812-7a4f-4a2d-8aab-ee7c69eac73b"
+    },
+    {
+      "claim_id": "dc61697a-60c0-4a19-9dde-247e795856bb",
+      "result_id": "dff4e812-7a4f-4a2d-8aab-ee7c69eac73b"
+    },
+    {
+      "claim_id": "0b9bf695-d46f-4765-a076-5d5317383813",
+      "result_id": "dff4e812-7a4f-4a2d-8aab-ee7c69eac73b"
+    },
+    {
+      "claim_id": "ed65e8fb-10dc-4bd3-bb79-473b7e66bcdf",
+      "result_id": "dff4e812-7a4f-4a2d-8aab-ee7c69eac73b"
+    },
+    {
+      "claim_id": "e0f6ddc4-6ed4-47b7-913b-186bc39984ab",
+      "result_id": "dff4e812-7a4f-4a2d-8aab-ee7c69eac73b"
+    },
+    {
+      "claim_id": "c5056102-eb37-47f3-8e30-067d71b4cb1c",
+      "result_id": "dff4e812-7a4f-4a2d-8aab-ee7c69eac73b"
+    },
+    {
+      "claim_id": "7cd5a2f1-a81f-43de-b860-d13e7b323d73",
+      "result_id": "dff4e812-7a4f-4a2d-8aab-ee7c69eac73b"
+    },
+    {
+      "claim_id": "5bfd8f6e-2c8b-49cb-bd9d-ce7639b1cdbe",
+      "result_id": "dff4e812-7a4f-4a2d-8aab-ee7c69eac73b"
+    },
+    {
+      "claim_id": "380823d1-1daa-4508-bd6f-26d74ad1dbfa",
+      "result_id": "119ed7d5-0e9b-4f9e-a075-b111efc7bcf4"
+    },
+    {
+      "claim_id": "348af7e9-945b-4957-b5e8-4cf8a6644fa4",
+      "result_id": "119ed7d5-0e9b-4f9e-a075-b111efc7bcf4"
+    },
+    {
+      "claim_id": "6996b40b-319a-4abb-9d0c-2fccda146ef4",
+      "result_id": "119ed7d5-0e9b-4f9e-a075-b111efc7bcf4"
+    },
+    {
+      "claim_id": "8cb79b05-e098-41c0-90a2-ca51880fd356",
+      "result_id": "119ed7d5-0e9b-4f9e-a075-b111efc7bcf4"
+    },
+    {
+      "claim_id": "152fac7c-0fe7-49dd-a166-cf8eb491a58e",
+      "result_id": "81724b1e-9d4d-4448-b017-fe26d1fd3d16"
+    },
+    {
+      "claim_id": "79a38568-461a-4c98-99a5-09a718e5b6d8",
+      "result_id": "81724b1e-9d4d-4448-b017-fe26d1fd3d16"
+    },
+    {
+      "claim_id": "80a0ee9f-4891-4be8-8491-30e23a90fff0",
+      "result_id": "81724b1e-9d4d-4448-b017-fe26d1fd3d16"
+    },
+    {
+      "claim_id": "7d04d35a-d184-42f6-b0a4-28dc848c5c3e",
+      "result_id": "7196062e-be47-40b3-ae66-768c7ac9e0b6"
+    },
+    {
+      "claim_id": "b9b0e131-c0be-46e8-8242-668ffc271b5b",
+      "result_id": "7196062e-be47-40b3-ae66-768c7ac9e0b6"
+    },
+    {
+      "claim_id": "95dfb632-a6aa-4d4d-b773-2d506d1269d8",
+      "result_id": "7196062e-be47-40b3-ae66-768c7ac9e0b6"
+    },
+    {
+      "claim_id": "51a38946-60ed-4e7b-a747-ce5fb3be256b",
+      "result_id": "d664f0ec-0280-4dc8-b1c7-6904b3641298"
+    },
+    {
+      "claim_id": "67ff50c1-3f65-46e5-8fcd-a5c5679cd6f5",
+      "result_id": "d664f0ec-0280-4dc8-b1c7-6904b3641298"
+    },
+    {
+      "claim_id": "e7454071-1d78-45ec-98d7-edfc34634953",
+      "result_id": "b296b00b-d190-4872-8749-16e8ec986b29"
+    },
+    {
+      "claim_id": "cd730759-5e09-448c-961b-5dad0438a446",
+      "result_id": "b296b00b-d190-4872-8749-16e8ec986b29"
+    },
+    {
+      "claim_id": "70d3be08-344e-4e5c-871b-c52dc5efc786",
+      "result_id": "b296b00b-d190-4872-8749-16e8ec986b29"
+    },
+    {
+      "claim_id": "39d23991-7fac-4014-a278-04baf8d5a39b",
+      "result_id": "69ed1d30-5e50-4a55-802f-00878795b814"
+    },
+    {
+      "claim_id": "63c1d754-9532-457d-bf69-256f8d393735",
+      "result_id": "69ed1d30-5e50-4a55-802f-00878795b814"
+    },
+    {
+      "claim_id": "ec3a2c7a-404f-4c3f-93e5-6d3117ca4069",
+      "result_id": "69ed1d30-5e50-4a55-802f-00878795b814"
+    },
+    {
+      "claim_id": "c0fc9c86-c6d5-471e-a292-8a130a0bffdb",
+      "result_id": "69ed1d30-5e50-4a55-802f-00878795b814"
+    },
+    {
+      "claim_id": "55255ff3-63d2-456e-8c9a-052a58e67960",
+      "result_id": "69ed1d30-5e50-4a55-802f-00878795b814"
+    },
+    {
+      "claim_id": "bef71e0b-753c-4875-bb1d-818d4295a4d0",
+      "result_id": "69ed1d30-5e50-4a55-802f-00878795b814"
+    },
+    {
+      "claim_id": "eb9cb11e-4e7c-4d9f-a877-cf9a16025a3c",
+      "result_id": "69ed1d30-5e50-4a55-802f-00878795b814"
+    },
+    {
+      "claim_id": "24aebc38-66ba-4cef-b284-d70ff8e7648c",
+      "result_id": "69ed1d30-5e50-4a55-802f-00878795b814"
+    },
+    {
+      "claim_id": "0ce45290-20e8-481a-ba01-a8f3e0888c92",
+      "result_id": "69ed1d30-5e50-4a55-802f-00878795b814"
+    },
+    {
+      "claim_id": "020c9124-4348-4889-ae92-157ac0402980",
+      "result_id": "69ed1d30-5e50-4a55-802f-00878795b814"
+    },
+    {
+      "claim_id": "a3f32f73-12cd-4594-b64c-ac55107dac60",
+      "result_id": "69ed1d30-5e50-4a55-802f-00878795b814"
+    },
+    {
+      "claim_id": "051507e9-8284-449e-9a23-f4fbdf2b8a86",
+      "result_id": "69ed1d30-5e50-4a55-802f-00878795b814"
+    },
+    {
+      "claim_id": "96d20b45-c8bd-4c33-9050-7fb15da3aa71",
+      "result_id": "69ed1d30-5e50-4a55-802f-00878795b814"
+    },
+    {
+      "claim_id": "76d959cb-43c9-4160-9fd5-d641e8a82851",
+      "result_id": "69ed1d30-5e50-4a55-802f-00878795b814"
+    },
+    {
+      "claim_id": "8c21809f-0f82-4913-b071-7e09b2d74354",
+      "result_id": "3fbc3806-a0c4-4f20-8151-46eb61c88dd1"
+    },
+    {
+      "claim_id": "aeb910c2-f542-4681-a305-d8536b3b6130",
+      "result_id": "3fbc3806-a0c4-4f20-8151-46eb61c88dd1"
+    },
+    {
+      "claim_id": "63e62c1c-2eb9-4d23-a152-0d90688f6dbd",
+      "result_id": "e4709ab1-b6a5-4b8d-8d72-d323ef754ff8"
+    },
+    {
+      "claim_id": "19affbcc-5dc4-4ffa-b63b-f4695779386a",
+      "result_id": "e4709ab1-b6a5-4b8d-8d72-d323ef754ff8"
+    }
+  ],
+  "comparisons": []
+}

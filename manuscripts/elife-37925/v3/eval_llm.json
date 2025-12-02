@@ -1,0 +1,277 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "PBRM1 loss in VHL-/- cells leads to greater transcriptional changes than in VHL+/+ cells, with shared gene targets between PBRM1 depletion and VHL re-expression enriched in type I interferon signaling pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C72 provide converging evidence from microarray data (C68), Venn diagram analysis (C69), GO pathway analysis (C71), and GSEA (C72) that PBRM1 loss affects interferon response genes, particularly in VHL-/- cells. The data are internally consistent and supported by appropriate statistical analyses and visualizations in Figures 1A-D.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "KDM5C loss in VHL-/- cells elicits greater transcriptional changes than in VHL+/+ cells, with shared gene targets between KDM5C depletion and VHL re-expression enriched in type I interferon signaling pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C76 provide parallel evidence to the PBRM1 results, showing that KDM5C loss similarly affects interferon response genes in VHL-/- cells. The data are supported by microarray analysis (C73), Venn diagrams (C74), and pathway analyses (C76) shown in Figures 2A-E, with appropriate statistical support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C77",
+      "C78"
+    ],
+    "result": "The vast majority of genes affected by PBRM1 or KDM5C suppression are shared, with induced genes enriched for 'response to virus' pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C78 are supported by Venn diagram analysis (Figure 3A) and GO pathway analysis (Figure 3B) showing significant overlap in transcriptional responses. The statistical significance of the overlap is calculated using hypergeometric tests, providing quantitative support for the shared regulatory mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "PBRM1 physically interacts with KDM5C, forming a protein complex that includes PBAF subunits, with the C-terminus of PBRM1 being important for this interaction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C87 are supported by multiple co-immunoprecipitation experiments (Figures 4A-E) using both overexpressed and endogenous proteins. The truncation analysis (C86, Figure 4E) provides mechanistic insight. The observation that KDM5C pulls down a partial PBAF complex (C82-C83) is appropriately qualified as an inference based on differential co-IP results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "A group of 27 interferon-responsive genes belonging to the type I interferon signaling pathway are suppressed by VHL but induced by PBRM1 or KDM5C.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C90 are supported by gene expression analysis (Figures 5A-C) with appropriate statistical thresholds (fold change \u22651.5, p<0.05). The identification of these genes as interferon-responsive is supported by GO pathway analysis showing enrichment in type I interferon signaling (p=1.9E-19).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C3",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "Loss of HIF2\u03b1, PBRM1, or KDM5C in VHL-/- cells reduces the expression of ISGF3 components (IRF9 and STAT2) and ISGF3 target genes in multiple ccRCC cell lines.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C99 are supported by Western blot data (Figures 5D, 5F) and RT-qPCR data (Figures 5E, 5\u2014figure supplement 3) across multiple cell lines (786-O and Ren-02). The consistency across different shRNA constructs and cell lines strengthens the conclusion. The observation that HIF1\u03b1 suppression does not affect ISGF3 (C93) provides important specificity control.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C100",
+      "C101"
+    ],
+    "result": "ISGF3 is mostly unphosphorylated in 786-O cells, suggesting that elevated protein levels rather than phosphorylation are responsible for ISGF3 activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C101 are supported by Western blot data (Figure 5\u2014figure supplement 4A-B) showing minimal phosphorylation of STAT1 and STAT2 even after interferon stimulation. The inference that protein levels drive activity (C101) is reasonable given the lack of phosphorylation, though additional functional assays would strengthen this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C5",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "Loss of SETD2 or BAP1 reduces ISGF3 levels (IRF9 and STAT2) and ISGF3 target gene expression in multiple VHL-deficient ccRCC cell lines, with BAP1 re-expression rescuing this effect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C111 are supported by Western blot data across multiple cell lines (Ren-02, RCC4, A498) shown in Figures 6A-E. The rescue experiments with BAP1 re-expression (C106, C111) provide strong evidence for specificity. The use of multiple shRNA constructs and different cell lines strengthens the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C115",
+      "C116"
+    ],
+    "result": "Wild-type and N78S BAP1 increase ISGF3 levels and activity in BAP1-null cells, while the tumor-derived G185R mutant fails to do so, suggesting ISGF3 regulation is important for BAP1's tumor suppressor function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C113 are supported by Western blot data in UMRC2 and UMRC6 cells (Figures 6F-G). The differential effects of BAP1 mutations provide functional insight. However, the inference about tumor suppressor function (C116) is speculative and would require additional functional assays to definitively establish causality.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "ISGF3 is tumor-suppressive in xenograft models, as loss of IRF9, STAT1, or STAT2 significantly enhances tumor growth without affecting cell proliferation in culture.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C117-C123 are supported by xenograft data in nude mice (Figures 7C-D, 7\u2014figure supplement 1, 7\u2014figure supplement 3) showing statistically significant increases in tumor size upon ISGF3 component knockdown. The lack of effect on in vitro growth (C117) provides important context. Statistical analyses are appropriate (Mann-Whitney U test, p-values reported).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128"
+    ],
+    "result": "IRF9 knockdown tumors show reduced immune cell infiltration (CD45+ cells) compared to controls, with no significant differences in proliferation, apoptosis, or angiogenesis, suggesting immune evasion as the mechanism of enhanced growth.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C124-C127 are supported by H&E and IHC data (Figure 7E, 7\u2014figure supplement 4) with appropriate quantification and statistical analysis (p=0.007 for CD45). However, the mechanistic interpretation (C128) is speculative and qualified appropriately as 'might be.' Further experiments in immune-competent models would be needed to definitively establish the mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C8",
+      "C129",
+      "C130",
+      "C131",
+      "C132"
+    ],
+    "result": "Overexpression of STAT2 and IRF9 strongly suppresses tumor growth by PBRM1-deficient ccRCC cells in xenograft models without affecting in vitro growth.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C129-C132 are supported by Western blot data (Figure 8A), in vitro growth assays (Figure 8B), and xenograft data (Figures 8C-D). The rescue of tumor suppression by ISGF3 overexpression provides strong functional validation of the pathway. Statistical significance is demonstrated (p=0.0025).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138"
+    ],
+    "result": "Nuclear IRF9 and cytoplasmic STAT2 correlate with expression of PBRM1, SETD2, and BAP1 in human ccRCC tumors, with loss of nuclear IRF9 associated with worse patient survival.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C134-C138 are supported by IHC analysis of a ccRCC TMA with Spearman correlation analysis (Figure 9B) and Kaplan-Meier survival analysis (Figures 9C-D). The correlations are statistically significant across multiple tumor stages and grades. The differential survival associations between IRF9 and STAT2 (C136-C137) are appropriately noted.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C139",
+      "C140",
+      "C141",
+      "C144",
+      "C145"
+    ],
+    "result": "HIF induces ISGF3 after VHL inactivation, which is reversed by loss of secondary tumor suppressors (PBRM1, KDM5C, SETD2, BAP1), constituting a key negative feedback loop in ccRCC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C11 and C139-C145 represent the central model of the paper, integrating multiple lines of evidence from gene expression, protein expression, and functional studies. The model is well-supported by the data, though the characterization as a 'key negative feedback loop' (C11, C144) involves some speculation about the relative importance of this pathway. The schematic in Figure 9E appropriately summarizes the model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C169",
+      "C170",
+      "C173",
+      "C174"
+    ],
+    "result": "PBRM1 and KDM5C regulate ISGF3 subunits at the transcriptional level, while SETD2 and BAP1 regulate ISGF3 at the post-translational modification level.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C169-C174 are explicitly stated as preliminary and speculative by the authors. While C169 provides some support for transcriptional regulation (mRNA levels mirror protein levels), the mechanistic distinction between transcriptional and post-translational regulation (C173-C174) requires additional experimental validation. The authors appropriately qualify these as speculative interpretations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C171"
+    ],
+    "result": "BAP1 loss reduces STAT2 and IRF9 protein levels independent of PBRM1 status.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C171 is supported by Western blot data in RCC4 cells (Figure 6C), which lack endogenous PBRM1. This observation provides important insight into the independence of BAP1's effects from PBRM1, though the mechanism remains to be elucidated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C114"
+    ],
+    "result": "SETD2 and BAP1 are required to maintain the expression and function of ISGF3 in multiple VHL-deficient ccRCC cell lines.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C114 is a summary statement supported by the experimental data in claims C103-C113. The conclusion is well-supported by data across multiple cell lines and with appropriate rescue experiments.",
+    "result_type": "MAJOR"
+  }
+]

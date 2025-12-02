@@ -1,0 +1,226 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C70"
+    ],
+    "result": "Microglia preferentially interact with mushroom spines on adult-born granule cells (abGCs) more frequently than predicted by chance, but not with filopodial spines. Time-lapse imaging showed that microglia interacted with 38.5% of mushroom spines and 27.2% of filopodial spines during 30-90 min sessions, with significantly more frequent interactions with mushroom spines than offset controls (p=0.048), though interaction duration was not different.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C20-C26, and C70 are supported by rigorous time-lapse imaging with automated segmentation and appropriate offset controls. The statistical approach using spatial shuffling to establish chance interactions is methodologically sound. The preferential interaction with mushroom spines (which contain functional synapses) over filopodial spines provides strong evidence for targeted microglial surveillance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C36",
+      "C91"
+    ],
+    "result": "Microglial depletion during abGC development reduces odor responses in developing but not mature abGCs. PLX5622 treatment achieved 85-96% microglial ablation without detectable inflammation. In anesthetized mice, PLX-treated developing abGCs showed reduced responsiveness (p=2.56e-08), responded to fewer odors (median 1 vs 3, p=1.16e-04), and had lower lifetime sparseness (p=4.18e-04). Similar effects were observed in awake mice. The proportion of unresponsive dendrites increased significantly (32% vs 14%, p=0.0013).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C27-C34, C36, and C91 are well-supported by comprehensive in vivo calcium imaging in both anesthetized and awake conditions with appropriate statistical analyses including hierarchical bootstrapping. The microglial depletion was thoroughly validated by multiple methods (immunostaining, flow cytometry). Controls for inflammation (GFAP staining) and neurogenesis (BrdU counts) strengthen the interpretation that effects are specific to microglial loss rather than secondary inflammation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C52",
+      "C53",
+      "C54",
+      "C81"
+    ],
+    "result": "Microglial depletion after abGC maturation (3 months post-labeling) has no significant effect on odor responses or synaptic inputs. Before-and-after imaging in the same mice showed no differences in response distributions (p=0.45), number of effective odors (p=1.00), or lifetime sparseness (p=0.86) after 3 weeks of PLX treatment. Similarly, electrophysiology showed no changes in sEPSC frequency (p=0.76) or amplitude (p=0.09) after PLX treatment of mature abGCs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C42, C52-C54, and C81 demonstrate a critical developmental window for microglial effects. The before-and-after design in the same animals is methodologically strong, controlling for individual variability. However, the authors acknowledge that lentiviral labeling may capture some younger cells (C82), and trends toward reduced responses exist even in mature cells, suggesting the developmental specificity may not be absolute. The lack of statistical significance could reflect insufficient power or genuine lack of effect.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C4",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "AbGCs developing in the absence of microglia have altered spine morphology with higher overall spine density (0.40 vs 0.30 spines/\u03bcm, p=0.039) but smaller spine head volumes (0.31 vs 0.37 \u03bcm\u00b3, p=0.057). The increased density is primarily due to filopodial spines, while mushroom spines specifically have significantly smaller head volumes (0.36 vs 0.45 \u03bcm\u00b3, p=0.036).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C43-C46 are supported by confocal imaging and quantitative morphological analysis using Imaris software. The finding of increased filopodial spines but smaller mushroom spines is internally consistent and suggests impaired spine maturation. However, the overall spine head volume difference (p=0.057) is marginally non-significant, though the mushroom spine-specific analysis reaches significance. The morphological changes align well with the functional deficits observed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C5",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "AbGCs that mature in the absence of microglia receive weaker excitatory synaptic inputs without changes in inhibitory inputs. Electrophysiology showed similar sEPSC frequency (30.8 vs 30.6 Hz, p=0.48) but reduced amplitude (10.8 vs 9.0 pA, p=0.007) in PLX-treated mice. Passive membrane properties were unchanged. sIPSC frequency and amplitude were not different between groups.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C47-C51 are supported by rigorous whole-cell patch-clamp recordings with appropriate quality controls (series resistance monitoring, holding current criteria). The selective reduction in excitatory but not inhibitory input amplitude, combined with unchanged frequency, suggests a postsynaptic mechanism consistent with the smaller spine volumes observed. The hierarchical bootstrap analysis appropriately accounts for nested data structure. The ~15% reduction in sEPSC amplitude is modest but statistically robust.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C6",
+      "C56",
+      "C63",
+      "C66",
+      "C67",
+      "C68",
+      "C71",
+      "C72"
+    ],
+    "result": "The authors propose that microglia promote excitatory synapse development in abGCs through a mechanism involving spine maturation. They suggest that the modest synaptic effects (~15% reduction in sEPSC amplitude) combine nonlinearly across many synapses to produce larger functional deficits in vivo (median response amplitudes halved). The model proposes that abGCs in PLX-treated mice undergo normal decreases in excitability but fail to selectively strengthen specific synaptic inputs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C6, C56, C63, C66-C68, C71-C72 represent interpretive models rather than direct observations. While the proposed mechanism is plausible and consistent with the data, it remains speculative. The claim that small synaptic changes combine nonlinearly is reasonable but not directly tested. Alternative explanations (e.g., effects on dendritic excitability, presynaptic changes, or network-level alterations) are not fully excluded. The model would benefit from additional experiments manipulating specific aspects of the proposed mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C37",
+      "C38"
+    ],
+    "result": "Response time courses differed between control and PLX-treated mice in awake (p=0.004) but not anesthetized (p=0.30) conditions, as assessed by principal components analysis. These differences were not due to changes in sniffing behavior, as breathing rates were similar during baseline and odor periods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C38 are supported by appropriate PCA analysis and breathing rate measurements. The state-dependent difference in temporal dynamics is interesting but not fully explained. The authors appropriately used event detection analysis to avoid confounding temporal differences with amplitude measurements. However, the biological significance of the temporal differences remains unclear.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C55"
+    ],
+    "result": "The authors claim this is the first study to link microglial depletion directly to changes in in vivo activity and functional inputs of a specific affected cell population.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C55 appears accurate based on the novelty of combining in vivo functional imaging with cellular-level electrophysiology and morphology in the same microglial depletion paradigm. Previous studies examined either activity or synapses, but not both in the same system with this level of detail.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "The authors argue that undetected inflammation is unlikely to fully account for their results because inflammation typically reduces spine density, opposite to their observations. However, they acknowledge that brain-wide microglial depletion prevents unambiguous attribution of effects to the olfactory bulb specifically, as abGCs receive inputs from multiple brain regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C60 represent appropriate caveats and limitations. The argument against inflammation is logical given the opposite phenotypes, though more comprehensive inflammatory markers beyond GFAP could strengthen this conclusion. The acknowledgment of brain-wide depletion effects (C60) is an important limitation that could be addressed with region-specific manipulations in future work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C83",
+      "C84"
+    ],
+    "result": "The authors discuss potential mechanisms including synaptic pruning and strengthening, noting that while they did not directly observe spine pruning, microglia may prune presynaptic elements or pruning may occur too rapidly to detect. They acknowledge that effects on non-synaptic aspects of development (e.g., active dendritic properties) cannot be excluded, and that mature abGCs may also be affected to a lesser extent than developing cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C73-C80, C83-C84 are speculative discussions of mechanisms and limitations. The authors appropriately acknowledge what was not directly observed (pruning events) and what cannot be excluded (non-synaptic effects). However, these remain hypotheses requiring additional experiments. The discussion is balanced but does not provide definitive mechanistic insights.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C35",
+      "C61",
+      "C62",
+      "C64",
+      "C65",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C92"
+    ],
+    "result": "The introduction and discussion place the findings in context of prior literature on microglial roles in development, adult neurogenesis, and olfactory processing. The authors cite extensive prior work on microglial functions in synaptic pruning and maturation during early postnatal development, effects of inflammation on adult neurogenesis, and the functional properties of adult-born granule cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C19, C35, C61-C62, C64-C65, C85-C90, C92 represent literature review and contextualization. These are appropriately cited and generally accurate representations of prior work. The citations appear relevant and support the authors' framing of the knowledge gap their study addresses. No major misrepresentations of prior work are evident.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C69",
+      "C82"
+    ],
+    "result": "The authors identify knowledge gaps including whether microglia interact with synapses more than expected by chance in the adult brain, and acknowledge that lentiviral labeling is an imperfect method for isolating single cohorts of abGCs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69 and C82 accurately identify limitations in prior work and the current methodology. The acknowledgment of lentiviral labeling limitations is important for interpreting the developmental timing experiments and is appropriately discussed.",
+    "result_type": "MINOR"
+  }
+]

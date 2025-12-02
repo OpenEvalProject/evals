@@ -1,0 +1,226 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4"
+    ],
+    "result": "Zebrafish are attracted to locations where neighbors recently consumed food within 1-4 seconds, driven by behavioral cues rather than physical food traces. This attraction decreases when food is more abundant in the arena.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C4 provide converging evidence for behavioral attraction to consumption events. C2 demonstrates significant attraction (p<0.05) using trajectory analysis, C3 confirms behavioral (not chemical) cues through pseudo-consumption experiments, and C4 shows context-dependent modulation by food abundance. The experimental design appropriately controls for alternative explanations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C7",
+      "C8"
+    ],
+    "result": "Larger groups of zebrafish consume food faster than smaller groups, exceeding predictions from independent forager models. Groups of three fish exhibit distinct swimming characteristics including higher speeds, polarization, and cohesion variation. Group polarity correlates with cohesion but not speed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C7, and C8 are supported by comparative analysis across group sizes with appropriate statistical testing. The comparison to independent forager models (C5) provides evidence that group effects exceed additive expectations. Swimming statistics (C7, C8) are quantified with clear metrics, though the mechanistic link between these patterns and foraging efficiency could be stronger.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C9",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "The Attfeed+Align model, combining attraction to neighbors' consumption events and alignment with neighbors, most accurately describes zebrafish foraging behavior. Fish continuously respond to neighbors' swimming direction while exhibiting specific attraction to consumption locations. Model superiority is not due to increased complexity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C44-C48 provide strong evidence through systematic model comparison with appropriate statistics (Wilcoxon's signed rank test, p<0.005). C46 addresses the critical concern of overfitting by demonstrating equal parameter counts and showing more complex models perform worse. The hierarchical inference from model performance to behavioral mechanisms (C45, C47, C48) is reasonable but represents interpretation rather than direct observation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C12"
+    ],
+    "result": "Social foraging strategies based on general attraction to neighbors' positions (not specifically related to food consumption) are less efficient than independent foraging.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C12 is supported by simulation comparisons across different social interaction models. This finding is important as it demonstrates specificity\u2014only attraction to consumption events (not general attraction) improves efficiency. However, this is a simulation result that would benefit from experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C13"
+    ],
+    "result": "In mixed-strategy groups, individuals using the Attfeed+Align social strategy consume up to 20% more food than non-social companions, with this advantage decreasing as more group members adopt social strategies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C13 is supported by simulation results of mixed-strategy groups. The finding is logical given the model structure, but represents a prediction rather than experimental observation. The frequency-dependent nature of the advantage is an important theoretical insight but lacks empirical validation in real fish groups.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C49"
+    ],
+    "result": "Real zebrafish groups show high income equality (Theil index ~0.89-0.92), which is reproduced by the Attfeed+Align model. Social interactions increase equality only when resources are clustered (low dispersion), with effects reversing in high-dispersion environments, particularly for larger groups.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C18, C49 provide comprehensive analysis of resource distribution equality using appropriate metrics (Theil index). C14-C15 show model-data agreement, C16 demonstrates specificity to consumption-based attraction, and C17-C18, C49 reveal context-dependence. The statistical support is adequate, though the biological significance of the observed equality differences could be better justified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C50"
+    ],
+    "result": "Social foraging efficiency gains are maximized when food is highly clustered. For groups of 12-24 fish, the Attfeed+Align strategy becomes less efficient than independent foraging due to excessive cohesion, but the Attfeed-only model (without alignment) maintains efficiency benefits at larger group sizes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C21, C50 are supported by systematic simulations across food distributions and group sizes. The mechanistic explanation for large group inefficiency (excessive cohesion limiting search, C20) is logical. However, these are simulation predictions for untested conditions (groups of 12-24 fish) and would benefit from experimental validation. The distinction between Attfeed+Align and Attfeed-only models (C21) is important but purely theoretical.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C36",
+      "C51"
+    ],
+    "result": "Optimal interaction ranges for foraging depend on group size but not food distribution. Fish could adaptively adjust interaction ranges based on perceived group size to maintain robust foraging efficiency across varying food distributions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C24, C25, C36, C51 present important theoretical predictions from simulations, but the evidence is indirect. While simulations show interaction range optima vary with group size (C51), the claim that fish actually adjust ranges adaptively (C25) is speculative. No experimental evidence demonstrates that fish modulate their interaction ranges based on group size perception. This represents a hypothesis requiring empirical testing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C26",
+      "C27"
+    ],
+    "result": "Predicted foraging inefficiency in larger groups (12-24 fish) suggests these groups should break into smaller units. This prediction is consistent with observations that zebrafish rarely form cohesive groups of 12 or more fish in wild and laboratory settings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C26 is an inference from simulation results, while C27 provides supporting observational evidence from cited literature. The consistency between model predictions and natural group sizes is compelling, though the causal link is correlational. Alternative explanations for small group sizes (predation risk, social dynamics) are not excluded.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C28"
+    ],
+    "result": "Attraction to neighbors' consumption events represents a general behavioral strategy applicable to non-schooling species, as simulations show efficiency benefits persist without alignment interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C28 is explicitly stated as a hypothesis based on simulation results showing the Attfeed-only model increases efficiency across group sizes. While the simulation results support the theoretical possibility, this remains speculative without empirical evidence from non-schooling species. The citations provided support the general concept but not this specific prediction.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C29"
+    ],
+    "result": "Vision plays the prominent role in processing social information during zebrafish foraging, as inferred neighbor detection ranges (up to 21 body lengths) exceed plausible ranges for olfactory or tactile detection on relevant timescales.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C29 is supported by inference from model parameters and reasoning about sensory modality ranges, backed by citations on zebrafish sensory systems. The argument is logical: inferred detection ranges (4-8\u00d7 flake detection, up to 21 BL) are inconsistent with known olfactory/tactile ranges. However, this is indirect evidence; direct manipulation of sensory modalities would strengthen the conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C52"
+    ],
+    "result": "Mathematical models based on inferred interactions accurately describe real fish foraging and demonstrate that social interactions enable near-optimal foraging efficiency and promote income equality. The Attfeed+Align strategy constitutes a highly efficient and robust foraging approach.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C40, C52 represent summary conclusions supported by the comprehensive modeling and experimental results. C38 is validated by high model-data correlations, C39 by efficiency analyses showing social models approach optimal performance, and C40 by equality metrics. These are well-supported integrative conclusions, though 'near-optimal' (C39) requires clarification of the optimality benchmark.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "The study used 106 adult zebrafish in a 1:1 sex ratio, testing 14 individuals, 10 groups of three, and 10 groups of six fish. Fish were highly engaged, consuming all flakes in under 2 minutes in most cases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C43 are straightforward methodological statements supported by direct observation. Sample sizes are clearly reported and appear adequate for the statistical tests employed, though power analysis was not conducted a priori. The engagement observation (C43) validates the experimental paradigm.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Group living provides benefits including expanded sensory sensitivity, resource sharing, and collective computation. Social foraging can increase efficiency by combining private and social information. Previous models focused on clustered food sources, though schooling species disperse when encountering distributed resources.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C33 represent literature review and context-setting, supported by appropriate citations. These establish the background and motivation for the study but do not constitute novel findings. The characterization of prior work appears accurate based on the citations provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C53",
+      "C54"
+    ],
+    "result": "The data-driven approach enables quantitative analysis of foraging strategies through local dependencies, demonstrating that social interactions increase foraging efficiency. When individuals have similar capabilities and limited interaction ranges, combining individual and social information is most efficient. This approach is applicable to analyzing large group behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C35, C53-C54 describe methodological contributions and general conclusions. C35 is well-supported by the experimental and modeling results. C53 represents a reasonable inference from the findings. C54's claim about broader applicability is speculative but plausible. These represent valid but somewhat general conclusions about the approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C37"
+    ],
+    "result": "Fish may adaptively select which subset of neighbors to respond to when determining their behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C37 is explicitly stated as a hypothesis without supporting evidence. While consistent with the finding that optimal interaction ranges depend on group size, there is no experimental demonstration that fish actually modulate which neighbors they attend to. This is an interesting speculation requiring future investigation.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,255 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C26",
+      "C30",
+      "C80",
+      "C81"
+    ],
+    "result": "FFN102 is a pH-sensitive fluorescent false neurotransmitter that is a substrate for both DAT and VMAT2, exhibiting ~400% increased fluorescence when transitioning from acidic synaptic vesicles (pH 5.6) to neutral extracellular space (pH 7.4), with a pKa of 6.2. Unlike FM1-43, FFN102 enters synaptic vesicles as a transporter substrate without requiring electrical stimulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C17, C26, C30, C80-C81 are all supported by citations to prior research (Lee et al., 2010; Rodriguez et al., 2013). These properties of FFN102 are well-established from previous work and form the foundation for the current study's methodology.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C18",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Electrical stimulation produces calcium-dependent FFN102 fluorescence transients that require functional dopamine fibers from the SNc. Control experiments demonstrate that slices without FFN102 show no transients, and co-incubation with the DAT inhibitor nomifensine significantly decreases transients by blocking FFN102 uptake into dopamine axons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C46 are supported by experimental data in Figure 2A-D showing no transients without FFN102 and reduced transients with nomifensine. Claim C18 summarizes findings that are demonstrated through multiple experiments. The controls are appropriate and the interpretation is sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "FFN102 transients show calcium-dependent release in both striatum and GPe. In striatum, 0.5 mM calcium produced significantly smaller transients than 2 or 4 mM. In GPe, calcium enhanced transients with apparent saturation above 2 mM. There was a significant interaction between calcium concentration and brain region.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C52 are supported by statistical analysis (repeated measures ANOVA, p<0.001) and experimental data shown in Figure 3. The calcium dependence demonstrates that FFN102 release occurs via synaptic vesicle fusion, a critical validation of the method. The interaction effect suggests regional differences in release properties.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C116",
+      "C117"
+    ],
+    "result": "SNc dopamine neurons are the primary source of FFN102 release in GPe. This was demonstrated using 6-OHDA lesions (which significantly decreased transients) and aphakia mice (which lack SNc dopamine neurons and showed significantly smaller transients than wild-type). A small residual signal in aphakia mice may arise from spared VTA neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C60 and C116-C117 are supported by experimental data in Figure 4 using two complementary approaches: toxin-based lesions and genetic models. The convergent evidence from both methods strongly supports the conclusion. The observation of contralateral effects (C54-C55) is appropriately interpreted as consistent with known anatomy (C56).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Frequency dependence of FFN102 release differs between striatum and GPe. While striatum showed no significant differences between 10 Hz and 50 Hz stimulation, GPe showed significantly higher transients at 50 Hz compared to 10 Hz.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C63 are supported by two-factor ANOVA (p<0.001) and data in Figure 5. The statistical analysis is appropriate and the regional difference is clearly demonstrated. This represents an important functional distinction between dopamine release properties in the two regions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "DAT does not play a role in altering evoked FFN102 signals during stimulation. While nomifensine slightly decreased transient size in striatum, it had no effect in GPe and did not alter decay kinetics in either region. DAT blockade during incubation prevented loading, but blockade during stimulation did not affect transients.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C67 and C107-C109 are supported by experimental data in Figures 2 and 6. The within-slice paired measurements provide strong evidence. The distinction between effects during loading versus release is important and well-demonstrated. This addresses a key alternative explanation for regional differences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C82",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C105"
+    ],
+    "result": "FFN102 transients show distinct kinetics between striatum and GPe. In striatum, fluorescence remained elevated and required ~60s recovery between stimuli. In GPe, transients were smaller, shorter in duration ('flashing'), decayed rapidly, and recovered within 10s. GPe showed few obvious puncta and more variable release that was highly responsive to stimulus frequency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C41 and C82-C105 describe consistent observations across multiple experiments shown in Figures 1, 5, 6, and 7. The kinetic differences are well-documented and quantified. The comparison to cyclic voltammetry data (C40) provides external validation. These represent core findings of the study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C83",
+      "C84",
+      "C99"
+    ],
+    "result": "GPe contains rare 'hotspots' (~1 per slice) with FFN102 transients comparable to striatum. These hotspots were spatially segregated with no clear lateral-to-medial pattern. Surprisingly, hotspot regions lacked obvious FFN102 puncta, and transient amplitude showed no correlation with puncta number (R=0.051) or initial fluorescence (R=-0.062).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C75, C83-C84, and C99 are supported by quantitative analysis in Figure 7. The correlation analysis is appropriate and the lack of relationship between puncta and release is a striking finding. However, the mechanism underlying hotspots remains unclear, limiting the interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C76",
+      "C77"
+    ],
+    "result": "For both striatum and GPe, the largest contribution to the total transient occurred at the first electrical pulse, consistent with cyclic voltammetry estimates of ~180 msec rising phase in striatum.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C77 are supported by derivative analysis of fluorescence data and comparison to prior cyclic voltammetry work (Schmitz et al., 2001). The temporal resolution (100 msec) is appropriate for this observation, and the consistency with electrochemical methods validates the FFN approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C102",
+      "C104"
+    ],
+    "result": "In GPe, the sparse observable puncta (apparent boutons with FFN-loaded vesicles) are functionally silent, and FFN release occurs primarily at sites that do not contain clusters of vesicles observable by FFN imaging.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102 and C104 are supported by the observation that hotspots lack obvious puncta (C70) and the lack of correlation between puncta and release (C71-C73). This is a novel and important finding, though the underlying mechanism requires further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C110",
+      "C111"
+    ],
+    "result": "The longer fluorescence decay in striatum is partly due to diffusion from out-of-plane terminals, whereas in GPe, areas of high release are spatially separated, resulting in less signal diffusion from distal sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110-C111 provide a reasonable interpretation of the kinetic differences between regions, supported by the spatial analysis showing segregated hotspots (C74-C75) and citation to relevant theory (Sulzer and Pothos, 2000). However, this remains an inference rather than directly demonstrated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C79",
+      "C20",
+      "C118"
+    ],
+    "result": "This study introduces a new use for pH-sensitive FFNs ('FFN flashes') to resolve dopamine release in sparsely innervated regions, providing a means to study dopamine neurotransmission where traditional electrochemical methods fail.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79, C20, and C118 represent the main conceptual contribution of the work. The experimental data throughout the manuscript support this conclusion by demonstrating that the method works in GPe where cyclic voltammetry cannot. This is a significant methodological advance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C101",
+      "C113",
+      "C114",
+      "C115",
+      "C122",
+      "C124"
+    ],
+    "result": "The authors propose several speculative mechanisms for GPe hotspots, including convergence of multiple axons, enriched presynaptic proteins, presence of modulatory cells, or exocytosis from small vesicle reservoirs in thin axon portions. They also note potential additional sources of GPe dopamine beyond SNc.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C85-C89, C101, C113-C115, C122, and C124 are explicitly speculative (marked as SPECULATION in evidence_type). While these are reasonable hypotheses supported by citations to relevant literature, they are not tested in this study. These represent important directions for future work but do not constitute supported results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "Electrical stimulation of striatum activates cholinergic interneurons that induce additional dopamine release, but this is expected to play less of a role in GPe which lacks intrinsic cholinergic neurons. Local cholinergic interactions may contribute to differences between regions, though effects are minimized with the train stimuli used.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C93 are supported by citations to prior work and established anatomical knowledge. This represents an important caveat for interpreting regional differences, and the authors appropriately note that their stimulus protocol minimizes these effects. However, this remains a potential confound that is not fully controlled.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C119",
+      "C120"
+    ],
+    "result": "The current approach resolves FFN transients in 30\u00d730 \u03bcm fields of view, potentially enabling characterization of dopamine release near specific GPe cell types such as arkypallidal and protopallidal cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C119 describes the demonstrated spatial resolution of the method. Claim C120 is speculative about future applications but is a reasonable extension given the demonstrated resolution. The spatial resolution is adequate for the stated purpose.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,1843 @@
+{
+  "submission": {
+    "id": "c1d9fc9b-a187-4b32-bc74-e1e9f2e6770d",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T20:01:04.388093Z",
+    "updated_at": "2025-12-02T20:01:04.388093Z"
+  },
+  "content": [
+    {
+      "id": "9d2a9842-c331-4c2d-b6fa-b426761a936b",
+      "submission_id": "c1d9fc9b-a187-4b32-bc74-e1e9f2e6770d",
+      "content_type": "manuscript",
+      "content_text": "# Topological constraints in early multicellularity favor reproductive division of labor\n\n## Authors\n\n- David Yanni<sup>1</sup>\n- Shane Jacobeen<sup>1</sup>\n- Pedro M\u00e1rquez-Zacar\u00edas<sup>2</sup>\n- Joshua S Weitz<sup>1</sup>\n- William C Ratcliff<sup>3</sup> \u2020\n- Peter J Yunker<sup>1</sup> ([ORCID: 0000-0001-8471-4171](https://orcid.org/0000-0001-8471-4171)) \u2020\n\n### Affiliations\n\n1. School of Physics, Georgia Institute of Technology Atlanta United States\n2. Interdisciplinary Graduate Program in Quantitative Biosciences, Georgia Institute of Technology Atlanta United States\n3. School of Biological Sciences, Georgia Institute of Technology Atlanta United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nReproductive division of labor (e.g. germ-soma specialization) is a hallmark of the evolution of multicellularity, signifying the emergence of a new type of individual and facilitating the evolution of increased organismal complexity. A large body of work from evolutionary biology, economics, and ecology has shown that specialization is beneficial when further division of labor produces an accelerating increase in absolute productivity (i.e. productivity is a convex function of specialization). Here we show that reproductive specialization is qualitatively different from classical models of resource sharing, and can evolve even when the benefits of specialization are saturating (i.e. productivity is a concave function of specialization). Through analytical theory and evolutionary individual-based simulations, we demonstrate that reproductive specialization is strongly favored in sparse networks of cellular interactions that reflect the morphology of early, simple multicellular organisms, highlighting the importance of restricted social interactions in the evolution of reproductive specialization.\n\n## Introduction\n\nThe evolution of multicellularity set the stage for unprecedented increases in organismal complexity (Szathm\u00e1ry and Smith, 1995; Knoll, 2011). A key factor in the remarkable success of multicellular strategies is the ability to take advantage of within-organism specialization through cellular differentiation (Queller and Strassmann, 2009; Brunet and King, 2017; Cavalier-Smith, 2017). Reproductive specialization, which includes both the creation of a specialized germ line during ontogeny (as in animals and volvocine green algae) and functional differentiation into reproductive and non-reproductive tissues (as in plants, green and red macroalgae, and fungi), may be especially important (Cooper and West, 2018; Michod et al., 2006; Ispolatov et al., 2012; Solari et al., 2013; Michod, 2007; West et al., 2015). Reproductive specialization is an unambiguous indication that biological individuality rests firmly at the level of the multicellular organism (Michod, 1999; Folse and Roughgarden, 2010), and is thought to play an important role in spurring the evolution of further complexity by inhibiting within-organism (cell-level) evolution (Buss, 1988) and limiting reversion to unicellularity (Libby and Ratcliff, 2014). Despite the central importance of reproductive specialization, its origin and further evolution during the transition to multicellularity remain poorly understood (McShea, 2000).\n\nThe origin of specialization has long been of interest to evolutionary biologists, ecologists, and economists. A large body of theory from these fields shows that specialization pays off only when it increases total productivity, compared to the case where each individual simply produces what they need (Szathm\u00e1ry and Smith, 1995; Smith and Szathm\u00e1ry, 1997; Goldsby et al., 2012; Corning and Szathm\u00e1ry, 2015; Hidalgo and Hausmann, 2009; Boza et al., 2014; Taborsky et al., 2016; Page et al., 2006; Rueffler et al., 2012; Szekely et al., 2013; Findlay, 2008; Amado et al., 2018). Certain types of trading arrangements maximize the benefits of specialization; highly reciprocal interactions, which facilitate exchange between complementary specialists, amplify cooperation (Allen et al., 2017; Pavlogiannis et al., 2018). Still, previous work finds that even when groups grow in an ideal spatial arrangement, increased specialization and trade is only favored by natural selection when productivity increases as an accelerating function of the degree of specialization (i.e., productivity is a convex, or super-linear, function of the degree of specialization). Conversely, saturating functional returns (i.e. productivity is a concave, or sub-linear, function of the degree of specialization) should inhibit the evolution of specialization (Cooper and West, 2018; Michod et al., 2006; Ispolatov et al., 2012; Solari et al., 2013; Michod, 2007; West et al., 2015).\n\nReproductive specialization differs from classical models of trade in several key respects. Trade between germ (reproductive) and somatic (non-reproductive) cells is intrinsically asymmetric, because the cooperative action, multicellular replication, is not a product that is shared evenly. Selection acts primarily on the fitness of the multicellular group as a whole (Folse and Roughgarden, 2010). As a result, optimal specialization can result in behaviors that reduce the short-term fitness of some cells within the multicellular group (Michod et al., 2006; Michod, 2007), often manifest as reproductive altruism.\n\nUnderstanding the evolution of cell-cell trade, a classic form of social evolution (Kirk, 2005), requires understanding the extent of between-cell interactions. Network theory has proven to be an exceptionally powerful and versatile technique for analyzing social dynamics (Wey et al., 2008; Lieberman et al., 2005), and indeed, is uniquely well suited to understanding the evolution of early multicellular organisms. When cells adhere through permanent bonds, sparse network-like bodies (i.e. filaments and trees) often result (Amado et al., 2018). This mode of group formation is not only common today among simple multicellular organisms (Umen, 2014; Claessen et al., 2014), but is the dominant mode of group formation in the lineages evolving complex multicellularity (i.e. plants, red algae, brown algae, and fungi, but not animals).\n\nIn this paper, we develop and investigate a model for how the network topology of early multicellular organisms affects the evolution of reproductive specialization. We find that under a broad class of sparse networks, complete functional specialization can be adaptive even when returns from dividing labor are saturating (i.e. concave/sub linear). Sparse networks impose constraints on who can share with whom, which counterintuitively increases the benefit of specialization (McShea, 2000). By dividing labor, multicellular groups can capitalize on high between-cell variance in behavior, ultimately increasing group-level reproduction. Further, we consider group morphologies that naturally arise from simple biophysical mechanisms and show that these morphologies strongly promote reproductive specialization. Our results show that reproductive specialization can evolve under a far broader set of conditions than previously thought, lowering a key barrier to major evolutionary transitions.\n\n### Model\n\nReproductive specialization can be modeled as the separation of two key fitness parameters, those related to either viability or fecundity, into separate cells within the multicellular organism (Michod, 2006; Folse and Roughgarden, 2010). The dichotomy of viability versus fecundity was originally used by Michod, 2006 to partition components of cellular fitness into actions that contribute to keeping a cell alive (viability), and actions that directly contribute to reproduction (fecundity). Multicellular organisms often have evolved to divide labor along these two lines (i.e. reproduction by germ cells and survival provided by somatic cells), while their unicellular ancestors had to do both. We define viability as activities keeping the cell alive (e.g. investing in cellular homeostasis or behaviors that improve survival), and fecundity as activities involved in cellular reproduction.\n\nAt the cellular level, there appears to be a fundamental asymmetry in how viability effort and fecundity effort can be shared among cells: while multicellular organisms readily evolve differentiated cells that are completely reliant on helper cells (i.e. glial cells that support neurons in animals or companion cells that support sieve tube cells in plants), no cell can directly share its ability to reproduce. To better understand the intuition behind this, consider a cell that elongates prior to fission. This cell must grow to approximately twice its original length. Two cells cannot elongate by 50% and then combine their efforts; elongation is an intrinsically single cell effort. We thus use a model in which viability can be shared across connected cells, but fecundity cannot be shared (note, in order to test the sensitivity of our predictions to this assumption, in a later section we will consider the more general case in which viability and fecundity can both be shared, but by different amounts).\n\nWe consider a model of multicellular groups composed of clonal cells that each invest resources into viability and fecundity. Because there is no within-group genetic variation, within-group evolution is not possible, though selection can act on group-level fitness differences. Specifically, we consider the pattern of cellular investment in fecundity and viability, and their sharing of these resources with neighboring cells within the group, to be the result of a heritable developmental program. Thus, selection is able to act on the multicellular fitness consequences of different patterns of cellular behavior within the group. We let v denote each cell\u2019s investment into viability, and b denote each cell\u2019s investment into fecundity. Each cell's total investment is constrained so that $v+b=1$. However, a cell's return on its investment is in general nonlinear. Here, we let \u03b1 represent the \u2018return on investment exponent': by tuning \u03b1 above and below 1.0, we can simulate conditions with accelerating and saturating (i.e. convex and concave, or super- and sub-linear) returns on investment, respectively. We let $v~$ and $b~$ represent a cell\u2019s return on viability and fecundity investments, respectively. Following Michod, 2006; Michod and Roze, 1997, we calculate a cell\u2019s reproductive output as a multiplicative function of $v~$ and $b~$ (thus, both functions must be positive for a cell to grow). A single cell\u2019s reproduction rate is $w=v~\u2062b~=v^{\\alpha}\u2062b^{\\alpha}$. At the group level, fitness is the total contribution of all cells in the group toward the production of new groups (i.e. group level reproduction). The group level fitness is thus the sum of $v~\u2062b~$ over all cells.\n\nFinally, cells may share the products of their investment in viability with other cells to whom they are connected.For a given group, the details about who may share with whom, and how much, is encoded in a weighted adjacency matrix $\ud835\udc1c$. The element $c_{i\u2062j}$ defines what proportion of viability returns cell i shares with cell j. Cells cannot give away all of their viability returns, as they would no longer be viable; mathematically, we count a cell among its neighbors and thus ensure that they always \u2018share\u2019 a positive portion of viability returns with themselves, so that $c_{i\u2062i}>0$. Furthermore, since a cell cannot share more viability returns than the total it possesses, we have $\\sumi=1Nc_{ji}=1$ for a group of N cells. For the networks we consider, each cell takes a fraction \u03b2 of its viability returns and shares that fraction equally among all of its $n_{i}$ neighbors (including itself), and keeps the rest of its returns $1-\\beta$ for itself. Therefore cell i keeps a total fraction of $1-\\beta+\\frac{\\beta}{n_{i}}$ of its returns for itself and gives $\\frac{\\beta}{n_{i}}$ to each of its non-self neighbors. In other words, $c_{ii}=1\u2212\\beta+\\frac{\\beta}{n_{i}}$, $c_{i\u2062j}=\\frac{\\beta}{n_{i}}$ if cells i and j are connected, and $c_{i\u2062j}=0$ if cells i and j are not connected. This means the total amount of returns kept by cell i depends on both the network topology and \u03b2. When $\\beta=0$ there is no sharing, and when $\\beta=1$ cells share everything equally among all connections and themselves. We refer to \u03b2 as interaction strength. A given group topology (unweighted adjacency matrix) and \u03b2 completely specify $\ud835\udc1c$.\n\nWithin a group of N cells, the overall returns on viability that a given cell enjoys, then, comprises its own returns as well as whatever is shared with it by other members of the group. This can be written as $v~_{i}=v_{i}^{\\alpha}c_{ii}+\\sumj\\neqinv_{j}^{\\alpha}c_{ji}$, or equivalently, $v~_{i}=\\sumjnv_{j}^{\\alpha}c_{ji}$. Note that this is a column sum, since it describes the total incoming viability returns a cell receives as a result of its own effort and trade with neighboring cells. Therefore, we write the group level reproduction rate (i.e. the group fitness) for a group of N cells as\n\n$$\nW=\\sumi=1i=Nb~_{i}\u22c5v~_{i}W=\\sumi=1i=Nb~_{i}\\sumj=1j=Nv_{j}^{\\alpha}c_{ji}W=\\sumi=1i=N\\sumj=1j=Nb_{i}^{\\alpha}c_{ji}v_{j}^{\\alpha},\n$$\n\nwhere all three of the above equations are equivalent. We investigate evolutionary outcomes under this definition of group level fitness for groups with different topologies (who shares with whom), and in scenarios with various return on investment exponents \u03b1.\n\n## Results\n\n### Fixed resource sharing\n\nWe first consider cases wherein cells within a group share across fixed intercellular interactions. In each case we vary the return on investment exponent, \u03b1, between 0.5 and 1.5, and the interaction strength, \u03b2, between 0.0 and 1.0, both in increments of 0.1. For each combination of topology, \u03b1, and \u03b2, the group investment strategy ($v_{i}$ for all i) was allowed to evolve for 1000 generations.\n\nWe begin with simple topologies: groups with no connections and groups that are maximally connected. They represent, respectively, the case in which all cells within the group are autonomous and the case in which every cell interacts with all others (i.e. a \u2018well-mixed\u2019 group). In the absence of interactions, cells cannot benefit from functions performed by others and therefore must perform both functions v and b; hence specialization is not favored, and does not evolve. In the fully connected case, a high degree of specialization is observed for many values of \u03b1 and \u03b2 (Figure 1a). Consistent with classic results (Cooper and West, 2018; Michod et al., 2006; Ispolatov et al., 2012; Solari et al., 2013; Michod, 2007; West et al., 2015), specialization is only achieved in the fully connected case for $\\alpha>1$.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/54348/elife-54348-fig1-v2.jpg)\n\n**Figure 1.:** (A) When each cell in the group is connected to all others, specialization is favored only when $\\alpha>1$. (B) For the nearest neighbor topology, specialization is favorable for a wider range of parameters, including for some values of $\\alpha<1$. Specifically, specialization is advantageous when $\\alpha>\\frac{3}{4\u2062\\beta}$. (C) Connecting alternating specialists creates a bipartite graph which maximizes the benefits of specialization and the range of parameters for which it is advantageous. In this case, specialization is favorable wherever $\\alpha>\\frac{3}{5\u2062\\beta}$. The red curves represent analytical predictions for $\\alpha^{*}$, the lowest value of \u03b1 for which complete generalization is disfavored, and the orange vertical lines are at $\\alpha=1$ to guide the eye. While analysis shows that some degree of specialization must occur in the regime upward and to the right of the red curves, simulations reveal that when complete generalization is disfavored complete specialization is favored in these networks.\n\nNext, we consider a simple sparse network in which each cell within a group is connected to only two other cells, forming a complete ring (Figure 1b); we refer to this as the neighbor network. Surprisingly, preventing trade between most cells encourages division of labor. We find that specialization evolves even when $\\alpha<1.0$, that\u00a0is, when the returns on investment are saturating or concave. In our simulations, this topology leads to alternating specialists in viability and fecundity (Figure 1b). Analytically, we find that this topology always favors at least some degree of specialization whenever $\\alpha>\\frac{3}{4\u2062\\beta}$.\n\nWe next study a network with cells that can be separated into two disjoint sub-groups, where every edge of the network connects a cell in one sub-group to a cell in the other sub-group and no within sub-group connections exist, that\u00a0is, a bipartite graph (Figure 1c). We refer to the specific network structure in Figure 1c as the \u2018balanced bipartite\u2019 network. We find that specialization evolves even when $\\alpha<1.0$, similar to the neighbor network. However, we find that specialization evolves for a wider range of \u03b1 and \u03b2 values for the balanced bipartite network than for the neighbor network.\n\nWe can analytically determine under what conditions complete generalization is optimal. The complete generalist investment strategy is where every cell in the group invests equally into viability and fecundity, defined as: $v_{i}^{*}=\\frac{1}{2}$ for all i. For these simple topologies, the complete generalist strategy is either a maximum or a saddle point, depending on the values of \u03b1 and \u03b2. Complete generalization is only favored when the Hessian evaluated at the generalist investment strategy $\\frac{\u2202^{2}W}{\u2202_{v_{k}}\u2202_{v_{\u2113}}}|_{v\u2192^{\u2217}}=H^{\u2217}$ is negative definite, that\u00a0is, all of its eigenvalues are negative. The largest eigenvalues of the Hessian for the complete, neighbor, and balanced bipartite networks are $\\alpha\u2062(\\frac{1}{2})^{2\u2062\\alpha-3}\u2062(-1+\\alpha\u2062\\beta)$, $\\alpha\u2062(\\frac{1}{2})^{2\u2062\\alpha-3}\u2062(-1+\\frac{4}{3}\u2062\\alpha\u2062\\beta)$, and $\\alpha\u2062(\\frac{1}{2})^{2\u2062\\alpha-3}\u2062(-1+\\frac{2\u2062N}{N+2}\u2062\\alpha\u2062\\beta)$, respectively. When \u03b1 and \u03b2 are chosen so that the largest eigenvalue becomes non-negative, complete generalization cannot maximize group fitness.\n\nWhile we have not analytically shown where the fitness maximum occurs in cases where the generalist strategy becomes a saddle point, evolutionary simulations (Figure 1) suggest that when complete generalization is not a fitness maximum, a high degree of (or even complete) specialization typically does maximize fitness.\n\nIn all cases in which complete specialization is achieved in evolutionary simulations, $v~\u2062b~$ terms for viability specialists go to zero, as they cannot reproduce on their own. Furthermore, the fecundity specialists are entirely reliant on the viability specialists for their survival; if viability sharing were suddenly prevented, their $v~\u2062b~$ terms would also be zero. This amounts to complete reproductive specialization (Cooper and West, 2018; Kirk, 2005; Michod, 2006).\n\n### Evolving resource sharing\n\nUntil now, sharing has been included in every intercellular interaction within groups. Here, we consider the case in which there is initially no sharing, and sharing must evolve along with specialization. These simulations begin with no resource sharing (i.e. $\\beta=0$); during every round, each group in the population has a 2% chance that a mutation will impact its developmental program, and the \u03b2 value for one of its cells will change. The new \u03b2 value is chosen from a truncated Gaussian with standard deviation of 10% of the mean, centered on the current value. Whatever is not retained is shared equally across all interactions, including the self term.\n\nEvolutionary simulation results are similar to those from the fixed-sharing model (Appendix 1\u2014figure 1). Saturating specialization (i.e. specialization despite a concave return function) still occurs for the neighbor and balanced bipartite topologies. Thus, for both fixed and evolved resource sharing, we observe specialization for the largest range of parameters (including $\\alpha<1$) not when the group is maximally connected, but rather when connections are fairly sparse. Therefore, a sparse group topology constitutes a cooperation-prone physical substrate that can favor the evolution of cellular.\n\nAs an example of the benefit of evolving sharing, consider that the maximum fitness according to Equation 1 for a group of N disconnected cells scales as $N\u2062(\\frac{1}{2})^{2\u2062\\alpha}$. On the other hand, for the balanced bipartite network with a complete specialization strategy (i.e. $v\u2192=\u27e80,1,0,1,\u2026\u27e9$), the fitness scales as $(\\frac{N^{2}\u2062\\beta}{2\u2062N+2})$. The ratio of these fitnesses is $(\\frac{N^{2}\u2062\\beta}{2\u2062N^{2}+2\u2062N})\u20622^{2\u2062\\alpha}\u2248\\beta\u20622^{2\u2062\\alpha-1}$, where the approximation is for large N. So for larger groups and when $\\alpha>\\frac{1}{2}-\\frac{log\u2061\\beta}{2\u2062log\u20612}$, if a group can evolve resource sharing (i.e. letting $\\beta\u21921$ and adopting the specialist investment strategy) its maximum fitness will increase.\n\n### Benefit of specialization\n\nWe now consider a simple example to highlight why specialization can be adaptive despite saturating (i.e., concave) returns from trade. Consider groups of four cells, connected via the nearest-neighbor topology (i.e. in a ring). We directly calculate the group-level fitness of generalists and specialists for two scenarios: $\\alpha=0.9$ and $\\alpha=1$ by summing the contributions of each cell within these groups (Figure 2). In this simple scenario, reproductive specialization strongly increases group fitness (33% for $\\alpha=1$ and 16% for $\\alpha=0.9$).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/54348/elife-54348-fig2-v2.jpg)\n\n**Figure 2.:** We first consider the case of linear functional returns ($\\alpha=1$). For the case of generalists (A), each cell receives as much viability as it shares, and all nodes contribute equally to the fitness of the group. Therefore, the fitness of the group is $W=4\u22c5\\frac{1}{2}\u22c5\\frac{1}{2}=1$. For the case of specialists, however, the viability specialist cells (blue) have $v~\u2062b~=0$, while the fecundity specialist cells have nonzero $v~\u2062b~$ due to the fact that they receive $\\frac{1}{3}$ of each viability specialist\u2019s output. Thus the fitness of the group is $W=2\u2062(2\u22c5\\frac{1}{3})=\\frac{4}{3}$. Thus, fitness is higher for the group of specialists, so specialization is favored. For $\\alpha=0.9$, the fitness of generalists is 1.15, and the fitness of specialists is 1.33. Thus, even though the returns on investment are saturating (i.e. concave), specialization is favored.\n\nThe benefit of specialization in neighbor networks increases with group size. For a ring of size N, fitness under the specialist strategy $v\u2192=\u27e80,1,0,1\u2062\u2026\u27e9$ is $W=\\frac{\\beta}{3}\u2062N$. For a ring of generalists the fitness is $W=N\u2062(\\frac{1}{2})^{2\u2062\\alpha}$. Therefore, whenever $\\alpha>\\frac{log\u20613-log\u2061\\beta}{2\u2062log\u20612}$, the ring of complete specialists enjoys a greater fitness than the ring of complete generalists. Again, note that complete generalization becomes disfavored when $\\alpha>\\frac{3}{4\u2062\\beta}$, so there is a narrow regime where $\\frac{3}{4\u2062\\beta}<\\alpha<\\frac{log\u20613-log\u2061\\beta}{2\u2062log\u20612}$ during which neither complete generalization nor complete specialization is optimal. Numerical optimization and evolutionary simulations suggest that even in this region, however, the specialization score of the optimal strategy is large (Figure 1).\n\n### Effect of sparsity\n\nSurprisingly, saturating specialization appears to be the rule, rather than the exception, for sparsely connected graphs. We investigated Erd\u0151s-R\u00e9nyi random graphs with varying degrees of connectivity to systematically examine the relationship between sparsity and the value of \u03b1 at which specialization is favored. We find that many randomly assembled graphs obtain maximum fitness through complete reproductive specialization even when \u03b1 is below 1 (Figure 3b,c). It is only at the extremes of sparsity and connectivity (near the fully connected or fully unconnected points) that generalists maintain superior fitness for all values of $\\alpha<1$. We further show that this general trend is independent of the size of a group; saturating specialization is favorable for groups of size $N=10$, $N=100$, and $N=1000$. When network connectivity is at its minimum, the group consists solely of isolated cells that cannot interact. Under these conditions generalists are favored. Similarly, at maximum connectivity every cell interacts with every other cell. Under these conditions generalists are favored unless $\\alpha\u2062\\beta>1$. However, when connectivity is small but not zero, specialization arises most readily. We conjecture that the troughs in Figure 3b, where specialization occurs for the lowest values of \u03b1, occur when connectivity is just large enough so that the existence of a spanning tree is more likely than not.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/54348/elife-54348-fig3-v2.jpg)\n\n**Figure 3.:** Heat maps showing conditions that favor specialists (white) and generalists (black) for nearest neighbor topologies (A, left) and randomly generated graphs with the same connectivity as nearest neighbor topologies (A, right). Specialization is adaptive on a neighbor network for $\\alpha>\\frac{3}{4\u2062\\beta}$; random networks with the same mean connectivity as the nearest neighbor topology behave similarly. (B) The sparsity of a random graph affects how likely it is to favor specialization. We numerically maximize fitness for random graphs of size $N=10$ (left), $N=20$ (middle), and $N=100$ (right) at different levels of sparsity, and subsequently measure the specialization $\ud835\udcae$ of the fitness maximizing investment strategy. The horizontal axis is the fraction of possible connections present ranging from 0 (none) to 1 (all). The vertical axis is the specialization power \u03b1, and the colormap shows mean specialization.\n\n### Filaments and trees\n\nSparse topologies like the neighbor network configuration have significant biological relevance, and direct ties to early multicellularity. The first step in the evolution of multicellularity is the formation of groups of cells (Szathm\u00e1ry and Smith, 1995; Kirk, 2005; Willensdorfer, 2008; Bonner, 1998; Fairclough et al., 2010). Simple groups readily arise through incomplete cell division, forming either simple filaments (Figure 4a) or tree-like morphologies (Figure 4b; Bengtson et al., 2017b; Droser and Gehling, 2008; Berman-Frank et al., 2007; Ratcliff et al., 2012). Filament topologies have been widely observed in independently-evolved simple multicellular organisms, from ancient fossils of early red algae (Butterfield, 2000; Figure 4a) to extant multicellular bacteria (Claessen et al., 2014) and algae (Umen, 2014). Branching multicellular phenotypes have also been observed to readily evolve from baker\u2019s yeast (Ratcliff et al., 2015; Figure 4b), and are reminiscent of ancient fungus-like structures (Bengtson et al., 2017a) and early multicellular fossils of unknown phylogenetic position from the early Ediacaran (Droser and Gehling, 2008).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/54348/elife-54348-fig4-v2.jpg)\n\n**Figure 4.:** We show two examples of simple multicellular organisms with linear and branched topologies. The image in (A) is a fossilized rhodophyte specimen of Bangiomorpha pubescens, courtesy of Prof. Nicholas Butterfield (see e.g. Butterfield, 2000); the image in (B) is a confocal image of \u2018snowflake yeast\u2019 showing cell volumes in blue and cell-cell connections in green; the image in (C) is an epifluorescence image of individual yeast cells from a planktonic culture, with the same staining technique as in (B). Scale bars in pictures =\u00a010\u00a0\u00b5m. Panels include cartoons depicting simplified topologies. Topologically similar to the two-neighbor configuration, these configurations yield similar simulation results. Specialization is plotted as a function of \u03b1. Solid (A) and blue (B) vertical lines (A and B) indicate analytical solutions for the transition point where the Hessian evaluated at $v\u2192=\\frac{1}{2}1\u2192$ stops being negative definite, that\u00a0is, $\\alpha^{*}$; dotted lines indicate roughly where the simulation curves cross specialization of 0.5, that\u00a0is, the 'true' transition value of \u03b1 where specialization becomes favored. (C) In contrast, for a well-mixed group with fully connected topology, $\\alpha^{\u2217}=0.5$, indicating specialization only occurs when there are accelerating returns on investment. (D) To further explore trees and filaments we analytically solved for $\\alpha^{*}$ for various types of trees and filaments of different sizes. $\\alpha^{*}$ is plotted versus group size for several topologies. This is a proxy measure of how amenable a network structure is to specialization.\n\nSimulations of populations of groups with filamentous and branched topologies reveal that specialization is indeed favored in the sub-linear regime (Figure 4a and b) ; conversely, sub-linear specialization is never observed for fully connected topologies (Figure 4c). While the generalist strategy is never a critical point for these networks (which have $\ud835\udc1c\\neq\ud835\udc1c^{T}$, see Materials and methods), we conjecture that there is a nearby critical point which maximizes fitness at small values of \u03b1 and becomes unstable at larger values of \u03b1. We introduce a new metric, $\\alpha^{*}$, defined as the value of \u03b1 such that the largest (least negative) eigenvalue of the Hessian evaluated at the complete generalist strategy is zero when $\\beta=1$. For topologies in which each member has the same number of neighbors, $\\alpha^{*}$ is a critical value at which generalization is no longer an optimal strategy. However, even for groups where the number of neighbors for each cell varies, we can still use $\\alpha^{*}$ as a proxy for how amenable a topology is to saturating specialization. The smaller $\\alpha^{*}$, the more specialization is likely to be favored. We plot vertical lines where $\\alpha=\\alpha^{*}$ (solid\u00a0lines\u00a0in \ufeffFigure 4(a) Figure 4(b)), and dotted lines to indicate roughly where the simulation curves cross specialization of 0.5. These results show that, for these topologies, $\\alpha^{*}$ acts as an effective metric for how amenable a network is to saturating specialization. This metric $\\alpha^{*}$ only depends on topology and can in principle be calculated analytically given any network. We examined the value of $\\alpha^{*}$ as filaments and a variety of tree-like structures grow larger, and find that specialization becomes more strongly favored (Figure 4D ).\u00a0While group size has no effect on specialization for some topologies, like the neighbor network, filaments and trees all see a decrease in $\\alpha^{*}$ as group size increases; $\\alpha^{*}$ eventually plateaus once groups are larger than a few tens of cells. Simple and easily accessible routes to multicellular group formation can readily evolve in response to selection for organismal size (Ratcliff et al., 2012), and this process may also strongly favor the evolution of cellular differentiation (McCarthy and Enquist, 2005; Heim et al., 2017; McClain and Boyer, 2009; Bonner, 1998).\n\n### Mean field model\n\nFinally, to capture some general principles underlying this phenomenon, we consider a mean-field model with N cells\u00a0(N\u00a0>>\u00a01), each of which is connected to z other cells. For simplicity we consider the case in which $\\beta=1$ and $\\alpha=1$. We pick $\\alpha=1$ as at this point, if the fitness of specialists is greater than that of generalists, specialization will be favored for at least some values of $\\alpha<1$. If the fitness of generalists is greater than or equal to that of specialists, specialization will only be favored if $\\alpha>1$.\n\nFor generalists, the fitness is simply $W_{G}=N/4$, as each cell has $v=1/2$ and $b=1/2$ (before and after sharing). Viability specialists produce $v=1$ and $b=0$, while fecundity specialists produce $v=0$ and $b=1$. Viability specialists then share $v=1/(z+1)$ with each of their z neighbors. After sharing, fecundity specialists receive $v=1/(z+1)$ from each of their viability specialist neighbors. But how many of their neighbors are viability specialists? We label the fraction of cells connected to fecundity specialists that are viability specialists f, that\u00a0is, f is the mean number of viability specialists connected to each fecundity specialist divided by z, averaged over all fecundity specialists. For a bipartite graph, $f=1$; for a randomly connected graph on which half of cells are viability specialists and half of cells are fecundity specialists, $f=1/2$. Group fitness is thus:\n\n$$\nW_{S}=\\frac{z\u2062f\u2062N}{2\u2062(z+1)}.\n$$\n\nHere, $z\u2062f/(z+1)$ is the average viability returns each fecundity specialist has received after sharing, which is multiplied by the amount of fecundity each fecundity specialist has (1) and the number of fecundity specialists ($N/2$). Writing $W_{S}$ in terms of $W_{G}$:\n\n$$\nW_{S}=\\frac{2\u2062z\u2062f\u2062W_{G}}{z+1}.\n$$\n\nSpecialists will be favored if the ratio $W_{S}/W_{G}>1$. This will be true if:\u00a0\n\n$$\nf>\\frac{z+1}{2\u2062z},\n$$\n\nwhich reduces to:\n\n$$\nf>\\frac{1}{2}+\\frac{1}{2\u2062z}.\n$$\n\nThis inequality implies that specialization will only be favored if fecundity specialists are preferentially connected to viability specialists, that\u00a0is, if $f>1/2$. Further, for a fully connected network $f=1/2$, so this inequality is never satisfied, that\u00a0is, specialists cannot have larger fitness than generalists for $\\alpha=1$ and fully connected topologies, as classically predicted.\n\nFurther, f cannot be more than 1, so if the threshold from the inequality in Equation 5 is greater than or equal to 1, specialization cannot be favored for $\\alpha<1$. Thus, specialization for $\\alpha<1$ is only possible if:\n\n$$\n\\frac{1}{2}+\\frac{1}{2\u2062z}<1,\n$$\n\nwhich reduces to: $z>1$. This again reproduces a classic result: specialization for $\\alpha<1$ is not possible for disconnected cells.\n\nThis analysis allows us to interrogate specific cases. For example, if $z=3$, f must be greater than 2/3, while if $z=4$, f must only be greater than 5/8. Can such networks be constructed? The answer will depend on both the number of cells and how they are connected. Ultimately, the question of if a graph can be made with particular values of f and z is a graph coloring problem, and beyond the scope of this manuscript. However, this inequality presents a useful heuristic which can be used to determine if specialization is favored by measuring just a few properties of the graph.\n\n#### Effect of varying ratios of specialists\n\nWe now allow the fraction of fecundity specialists to be X (rather than forcing $X=1/2$). For generalists, the group fitness is unchanged, $W_{G}=N/4$, while for specialists the group fitness is:\n\n$$\nW_{S}=\\frac{z\u2062f\u2062X\u2062N}{z+1}.\n$$\n\nWriting $W_{S}$ in terms of $W_{G}$ gives:\n\n$$\nW_{S}=\\frac{4\u2062z\u2062f\u2062X\u2062W_{G}}{z+1}.\n$$\n\nSpecialists will be favored if the ratio $W_{S}/W_{G}>1$. This will be true if:\u00a0\n\n$$\nf>\\frac{z+1}{4\u2062X\u2062z}=\\frac{1}{4\u2062X}+\\frac{1}{4\u2062X\u2062z}.\n$$\n\nCompared to the threshold value of f when $X=1/2$, if $X>1/2$, that\u00a0is, more than half of cells are fecundity specialists, the value of f necessary for specialization to be favored is lower. If $X<1/2$, the threshold value of f is higher than if $X=1/2$. In other words, 1:2 is different from 2:1, and they both are different from 1:1. Once again, the question of if a particular configuration can be created\u2013and how\u2013is a graph coloring problem beyond the scope of this manuscript. However, this mean field heuristic gives us some information about how to expect graphs with different ratios of specialists to generalists to behave.\n\nWe again ask what must be true for f to be less than 1 (if $f>1$, specialization will not be favored). Thus, specialization is only possible if:\n\n$$\n\\frac{1}{4\u2062X}+\\frac{1}{4\u2062X\u2062z}<1,\n$$\n\nwhich reduces to:\n\n$$\nX>\\frac{1}{4}+\\frac{1}{4\u2062z}.\n$$\n\nFor a mean field model, specialization with $\\alpha<1$ is impossible if fewer than one fourth of cells are fecundity specialists. We stress here that this is a mean field model, and does not apply to scenarios in which cells have a wide range of values of z. If such networks do or do not favor specialization for $\\alpha<1$ will again be a graph coloring problem.\n\n## Discussion\n\nDuring the evolution of multicellularity, formerly autonomous unicellular organisms evolve into functionally-integrated parts of a new higher\u00a0level organism (West et al., 2015; Michod and Nedelcu, 2003). Evolutionary game theory (Corning and Szathm\u00e1ry, 2015; Nash, 1950; Smith, 1988) argues that functional specialization should only evolve when increased investment in trade increases reproductive output. Conventionally, this requires returns from specialization to be accelerating, that\u00a0is, convex or super-linear (Szathm\u00e1ry and Smith, 1995; Smith and Szathm\u00e1ry, 1997; Goldsby et al., 2012; Corning and Szathm\u00e1ry, 2015; Boza et al., 2014; Taborsky et al., 2016; Page et al., 2006; Rueffler et al., 2012; Szekely et al., 2013). While this idea is intuitive, it is, in the case of fixed group topology, also overly restrictive. In this paper, we explore how social interactions within groups, measured by their network topology, affect the evolution of reproductive specialization. Indeed, when all cells within groups interact (with equal interaction strength), returns on investment must be an accelerating, that\u00a0is, convex, function of investment for specialization to evolve (Figure 1a; Szathm\u00e1ry and Smith, 1995; Smith and Szathm\u00e1ry, 1997; Corning and Szathm\u00e1ry, 2015; Cooper and West, 2018). Yet for a broad class of sparsely\u00a0connected networks, complete specialization can evolve even when the viability and fecundity return on investment curves are saturating, that\u00a0is, concave (Figure 3).\n\nTo understand how specialization can be favored despite concave return on investment (ROI) curves, consider Jensen's inequality. Jensen's inequality states that for a convex function $F\u2062(x)$, $\u27e8F\u2062(x)\u27e9>F\u2062(\u27e8x\u27e9)$, that\u00a0is, the average value of $F\u2062(x)$, $\u27e8F\u2062(x)\u27e9$, is larger than $F\u2062(\u27e8x\u27e9)$, where $\u27e8x\u27e9$ is the average value of x. A corollary of Jensen's inequality is that the opposite is true for concave functions, that\u00a0is, for a concave function $G\u2062(x)$, $\u27e8G\u2062(x)\u27e9<G\u2062(\u27e8x\u27e9)$. Jensen\u2019s inequality guarantees that for concave ROI functions generalists produce more total viability and fecundity than specialists, and that for convex ROI functions specialists produce more total viability and fecundity than generalists.\n\nCrucially, however, Jensen's inequality does not connect ROI convexity/concavity to group fitness. Jensen\u2019s inequality relates the degree of specialization to the average viability and average fecundity produced, but does not itself say anything about group fitness, which is the product of viability and fecundity averaged across all cells. For fully connected topologies (i.e. Figure 4c), greater absolute productivity proportionally increases group fitness, and differentiation can only evolve with accelerating benefits of specialization. This is not the case for topologically structured organisms, where fitness also depends on how complementary specialist cells are connected. Natural selection acts on realized productivity, that\u00a0is, average $v\u2062b$; mutations that increase average v or average b without increasing average $v\u2062b$ are not adaptive. The importance of connecting complementary specialists has long been appreciated in other contexts, such as metabolic cross-feeding, for which it has been shown that the spatial arrangement of unlike specialists plays a key role in determining their productivity (and thus fitness) (Co et al., 2020). Indeed, While Jensen's inequality ensures that generalists will produce more viability and fecundity than specialists given a concave ROI function, specialization can still increase the fitness of topologically structured groups by increasing realized productivity.\n\nRather than being unusual, networks favoring specialization readily arise as a consequence of physical processes structuring simple cellular groups (Allen et al., 2017). For example, septin defects during cell division create multicellular groups with simple graph structures (Figure 4a and b), where cells are connected only to parents and offspring (Bengtson et al., 2017b; Droser and Gehling, 2008; Ratcliff et al., 2012; Ratcliff et al., 2013). If cells share resources only with physically-attached neighbors, then the physical topology of the group describes its interaction topology, and these sparse networks strongly favor reproductive specialization. Finally, we note that the primary benefit of sparsity is that sparse networks are likely to be at least somewhat bipartite. The more bipartite-like a network is, the less effort is wasted, and the easier it is for specialization to be favored.\n\nDisentangling the evolutionary underpinnings of ancient events is notoriously difficult. Still, it is worth examining the independent origins of complex multicellularity, which are independent runs of parallel natural experiments in extreme sociality. Complex multicellularity (large multicellular organisms with considerable cellular differentiation) has evolved in at least five eukaryotic lineages, once each in the animals (King, 2004), land plants (Kenrick and Crane, 1997), and brown algae (Silberfeld et al., 2010), two or three times in the red algae (Cock and Coll\u00e9n, 2015; Yoon et al., 2006), and 8\u201311 times in fungi (Nagy et al., 2018). In all cases other than animals, these organisms form multicellular bodies via permanent cell-cell bonds, creating long-lasting highly structured cellular networks. Both fossil and phylogenetic evidence suggests that early multicellular organisms in these lineages were considerably less complex, growing as relatively simple graph structures. For example, 1.2 billion year old red algae formed linear filaments of cells (Butterfield, 2000), basal multicellular charophyte algae formed circular sheets of cells radiating from a common center (Kenrick and Crane, 1997), the ancestor of the brown algae likely formed a branched haplostichous thallus that was either filamentous or pseudoparenchymatous (Silberfeld et al., 2010), and hyphal fungi are primarily composed of linear chains of cells. Much less is known about the topology of animals prior to the evolution of cellular specialization. One hypothesis is that early metazoans resembled extant colonial choanoflagellates (Fairclough et al., 2013), the closest-living protistan relatives of the animals (Fairclough et al., 2010). Extant colony-forming choanoflagellates have evolved a variety of multicellular structures with sparse cellular topologies and permanent cell-cell bonds. For example, many species form branched, tree-like structures (Leadbeater, 2015), Choanoeca flexa grows as a sheet of cells (Brunet et al., 2019), and Salpingoceca rosetta can form either linear chains or rosettes in which the cells are connected via cytoplasmic bridges formed through incomplete cytokinesis (Dayel et al., 2011). While these growth forms are quite diverse, they all share characteristics (i.e. permanent cellular bonds and sparse topologies) that promote the evolution of cellular differentiation.\n\nThe main differences between our work and previous investigations of the effect of group topology on specialization is that we consider the productivity of groups as a whole, not the cells within them, and we consider situations of highly asymmetric sharing. Our approach is general, and can be applied to other systems of trade and specialization, so long as (1) only the aggregate productivity of the group (and not the particles within it) is maximized, (2) the productivity of each particle within the group is a multiplicative function of returns on investment into two (or more) tasks, and (3) there is an asymmetry in how products of those investments are shared. While in this work we have focused on reproductive division of labor, a process in which fecundity returns are not shared at all, we show in the supplement that as long as sharing of two goods is sufficiently asymmetric, specialization with saturating returns on investment can still be adaptive (Appendix 1\u2014figure 2).\n\nFinally, we note that alternative paths to specialization likely exist. For example, cells at different positions in a group may experience different local environments, which may produce cells with varied fecundity-viability trade-offs. A previous paper demonstrated that the evolution of specialization is favored if these \u2018positional effects\u2019 result in an initially heterogeneous population of cell types (Tverskoi et al., 2018). However, these positional effects were considered for the case of well-mixed groups (i.e. completely connected network topologies). We thus anticipate that future work examining the relationship between cellular interaction topology and cellular heterogeneity (as well as a wide range of complex and varied relationships between viability, fecundity, and multicellular fitness) will provide unique insight into the origin and diversity of multicellular forms.\n\n### Conclusion\n\nWe explored the evolution of reproductive specialization in multicellular groups with various cellular interaction topologies. Our results demonstrate that group topological structure can play a key role in the evolution of reproductive division of labor. Indeed, within a broad class of sparsely connected networks, specialization is favored even when the returns from cooperation are saturating (i.e. concave); this result is in direct contrast to the prevailing view that accelerating (i.e. convex), returns are required for natural selection to favor increased specialization (Cooper and West, 2018; Michod et al., 2006; Ispolatov et al., 2012; Solari et al., 2013; Michod, 2007; West et al., 2015). Our results underscore the central importance of life history trade-offs in the origin of reproductive specialization (Michod et al., 2006; Michod, 2007; Hammerschmidt et al., 2014; van Gestel and Tarnita, 2017; Noh et al., 2018), and support the emerging consensus that evolutionary transitions in individuality are not necessarily highly constrained (Ratcliff et al., 2012; Ratcliff et al., 2017; Fairclough et al., 2010; Brunet and King, 2017; Pennisi, 2018; Black et al., 2019; Rose et al., 2020; van Gestel and Tarnita, 2017; Black et al., 2019; Staps et al., 2019; Grosberg and Strathmann, 2007).\n\n## Materials and methods\n\n### Analysis\n\nThe gradient of the fitness with respect to the group investment strategy $v\u2192$, is\n\n$$\n\\frac{\u2202W}{\u2202v\u2192}=\\sumk=1Ne^_{k}\\alpha(v_{k}^{\\alpha\u22121}\\sumj=1Nc_{kj}(1\u2212v_{j})^{\\alpha}\u2212(1\u2212v_{k})^{\\alpha\u22121}\\sumj=1Nc_{jk}v_{j}^{\\alpha})\n$$\n\nwhere $e^_{k}$ is a unit vector in the $k^{th}$ direction. First notice that if $\ud835\udc1c=\ud835\udc1c^{T}$, and $v\u2192=\\frac{1}{2}1\u2192$ where $1\u2192$ is a vector of ones, then the gradient is zero. This strategy, $v\u2192=\\frac{1}{2}1\u2192$, corresponds to the \u2018generalist\u2019 strategy, where every cell invests equally into both tasks. Second, notice that if $\ud835\udc1c\\neq\ud835\udc1c^{T}$ then the gradient is not zero under the generalist strategy, so at least some degree of specialization must be necessary to maximize fitness. To determine the stability of this solution we examine $\ud835\udc07^{*}$, the Hessian (see SI Equation 3) evaluated at the generalist critical point. If $\ud835\udc07^{*}$ is negative definite, then the generalist strategy is a fitness maximum and is therefore an optimal strategy. If, on the other hand, $\ud835\udc07^{*}$ has both positive and negative eigenvalues then the generalist strategy lies at a saddle point within the fitness landscape, and therefore the optimal strategy must be somewhere else in (or on the boundary of) the domain (i.e. $v_{i}\\in[0,1]$ for all $i\\in1,2,\u2026\u2062N$). Finally, note that $\ud835\udc07^{*}$ is never positive definite since $1\u2192$ is always an eigenvector with negative eigenvalue (when $\ud835\udc1c=\ud835\udc1c^{T}$).\n\nWe also use the zero crossing of the largest eigenvalue of $\ud835\udc07^{*}$ evaluated at $v\u2192=\\frac{1}{2}1\u2192$ and $\\beta=1$ as an overall measure of how amenable a network is to specialization, even when $\ud835\udc1c\\neq\ud835\udc1c^{T}$.\n\n### Evolutionary simulations\n\nOur evolutionary simulations maintain the same overall structure as the Wright-Fisher model: a discrete-time Markov chain framework with fitness-weighted multinomial sampling between generations and constant population size. Therefore we refer to them as Wright-Fisher evolutionary simulations. We initialize a population of $\ud835\udca9=1000$ groups, each of group size $N=10$, with uniform random investment strategies. We then let them evolve for 1000 generations, selecting offspring according to the relative fitness of each group (see Equation 1). At each generation, there is a 2% chance for a mutation to a given group\u2019s investment strategy $v\u2192$. If a mutation occurs, a new investment strategy is selected from a truncated multivariate gaussian distribution centered at the current (pre-mutation) investment strategy and with standard deviation equal to $\\frac{1}{10}\u2062v\u2192$. After mutations each group\u2019s fitness is calculated according to Equation 1, and the population is ranked according to fitness. Finally, $\ud835\udca9$ groups are selected (with replacement) to populate the next generation, according to a multinomial distribution weighted by the groups\u2019 fitness ranks.\n\n### Measuring specialization\n\nTo quantify the degree of specialization associated with a given group\u2019s optimal investment strategy\u2014the one which maximizes the fitness\u2014we introduce the following metric, which we refer to simply as \u2018Specialization\u2019:\n\n$$\n\ud835\udcae=\\frac{2}{N}\u2062\\sumi=1N(max\u2061(v_{i},1-v_{i})-\\frac{1}{2}).\n$$\n\nSpecialization ranges from 0 (for groups consisting of cells investing equally in functions v and b) to 1 for groups consisting of cells investing exclusively in either function.\n\n### Code availability\n\nAll evolutionary simulations and other computations associated with this work are available at github.com/dyanni3/topologicalConstraintsSpecialization\u00a0(Yanni, 2020;\u00a0copy archived at https://github.com/elifesciences-publications/topologicalConstraintsSpecialization).\n",
+      "created_at": "2025-12-02T20:01:04.388093Z"
+    },
+    {
+      "id": "628e946c-35c7-490f-a29d-c45c08280b62",
+      "submission_id": "c1d9fc9b-a187-4b32-bc74-e1e9f2e6770d",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Raymond E Goldstein, University of Cambridge United Kingdom\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.54348.sa1](https://doi.org/10.7554/eLife.54348.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nThe evolution of germ-soma differentiation is one of the most fundamental questions in evolutionary biology, and the present paper investigates the consequences of altering one of the most basic assumptions: the traditional (symmetric) division of labor that has been studied from biology to economics. The authors consider a diversity of network structures and fitness functions and they find that sparser networks lead to higher levels of specialization.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Topological constraints in early multicellularity favor reproductive division of labor\" for consideration by eLife. Your article has been reviewed by two peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Diethard Tautz as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Pierrick Bourrat (Reviewer #2).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThis is a very interesting paper on the evolution of germ-soma differentiation in which the authors consider the topology of interactions between the cells that make up the whole. They find that classical considerations about the convexity or concavity of certain functions characterizing the advantages of specialization no longer hold when the network topology is nontrivial. And such topologies are indeed found in nature. The reviewers were generally very supportive of the work but raised a number of points that need to be addressed in a revised manuscript.\n\nEssential revisions:\n\n1) The authors use a notion of fitness in which clonal cells can have different fitnesses, or more accurately, clonal groups can have different fitness. We know that there are some precedents in the literature, but this notion of fitness does not correspond to the notion of fitness one can associate with natural selection. To illustrate why, consider the following plant example. Take a single genet with two ramets in two environmental patches, one rich and one poor. Each ramet might adopt a very different developmental strategy from the other, considering the ecological constraints it is subjected to. These two strategies would nevertheless not be heritable in the sense that two offspring ramets put in the same environmental patch would develop the same developmental strategies (excluding noise). Thus, the differential success of each ramet is not an evolutionary success that can be associated with natural selection. This is a case analogous to the one presented by the authors. The notion of fitness they refer to seems to be rather the notion of realized fitness. This has no implications for the author's results per se but instead leads to an interpretation in which natural selection is not at work for explaining the division of labor in situations of concavity.\n\n2) Related to the previous point, there seems to be a tension between, on the one hand, the claim that a concave function can lead to an increase in reproductive specialization, and on the other hand, claims that it has something to do with fitness. Fitness is about expected values, and in a situation of concave function, two or more cells specializing would yield a lower collective fitness than when not specializing. From a purely analytical point of view (i.e., Fisher's fundamental theorem), this seems impossible. So my question to the authors is whether there is not hidden somewhere a convex function, which is the relevant one for the evolutionary dynamics observed. Otherwise, what is the ecological explanation of such a result? There must be some ecological constraints that give rise to this phenomenon, and it would be good to know what the authors think they are.\n\n3) There are well-known cases presented in the population genetics literature in which Fisher's fundamental theorem seems violated, but this is because of the environment (including the social environment) changes over time, such as frequency-dependent effects on an individual's success. We wonder if the results of the authors could not related to this literature in some way.\n\n4) The model description is a bit abstract and occasionally hard to follow. It would be great to have fecundity and viability defined, and even better to have some real biological example of what returns on viability might mean and how they might be shared (I don't find the filamentous fungi example informative, at least not in the way it is written). That would also help the reader understand why there are returns on viability but not on fecundity. That the vi vector is the \"group investment strategy\" also comes as a surprise and takes a bit for the reader to put it all together. Similarly, the existence of both a general adjancecy matrix and of a special case one that uses the \u03b2, is somewhat confusing the way it's described. If the authors anyway only work with the special case of equal sharing with the non-self neighbors then why not define the 1-\u03b2+\u03b2/ni quantities as cij when they appear in the text, and then write a fourth eqn for W in [1] that explicitly uses the \u03b2. That would certainly help the reader a lot.\n\n5) Results subsection \u201cFixed resource sharing\u201d first paragraph, we may be getting confused, but how can you vary \u03b2 in the case when, as is now written, individual i \"shares equally among interaction and self terms\"? Doesn't this mean that \u03b2 = 1?\n\n6) \u201cWe conjecture that the troughs in Figure 3C, where specialization occurs for the lowest values of, occur when connectivity is just large enough so that a spanning tree is more likely to connect all individuals in the group than not\u201d, we don't fully understand that conjecture: do the authors simply mean that the troughs occur when the random graph becomes connected with probability > 50%? (A spanning tree connects all individuals by definition.)\n\n7) The authors suggest sparsity is the main determinant of whether a network supports reproductive specialization. But, their examples in 1B and 1C (where a ring is sparser than the bipartite network) to us suggest that it is not so much about \"sparsity\" as it is about \"bipartiteness\" \u2013 or how easy it is to subdivide the nodes into two classes such that most edges go between these two classes (that's what you'd want for specialization anyway, we guess), and that sparse graphs simply have a tendency to be close to bipartite. We suspect that a ring graph with an odd number of vertices will be less conducive to specialization (although you could still alternate germ/soma cells except at one point), and that a star graph where there is one node of degree n-1 and all the others have degree 1 may be an example of a sparse graph where evolving specialization is not so easy (because for this graph it's not clear how to divide the vertices into germ and soma).\n\n8) Related to the previous point: we would be interested if the authors have considered what happens when the optimal strategy is not 1:1 but, say, 1:2. Does that make specialization more difficult? Here we think that, with a few additional simulations, the authors could add a lot to the paper in terms of the ability to connect properties of the graph (beyond comparing some explicit topologies and random graphs of varying sparsity) to its ability to support the evolution of reproductive specialization.\n\n9) Finally, it would be nice to see how the different specialists are distributed on these networks (at least when the specialization is equal to 1). One can infer it, but we think it would visually help the reader to get the gist of how the model works very quickly.\n",
+      "created_at": "2025-12-02T20:01:04.388093Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T20:01:04.388093Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T20:01:04.388093Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "be4b0a99-18aa-43ec-b910-a306d5837911",
+      "content_id": "9d2a9842-c331-4c2d-b6fa-b426761a936b",
+      "claim_id": "C1",
+      "claim": "Reproductive division of labor (e.g. germ-soma specialization) is a hallmark of the evolution of multicellularity.",
+      "claim_type": "EXPLICIT",
+      "source": "Reproductive division of labor (e.g. germ-soma specialization) is a hallmark of the evolution of multicellularity, signifying the emergence of a new type of individual and facilitating the evolution of increased organismal complexity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the significance of reproductive division of labor in evolutionary biology, drawing from established scientific consensus.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:01:04.388093Z"
+    },
+    {
+      "id": "6400ea6c-b3f8-47b9-b58f-7da4b8f70bf0",
+      "content_id": "9d2a9842-c331-4c2d-b6fa-b426761a936b",
+      "claim_id": "C2",
+      "claim": "Reproductive division of labor signifies the emergence of a new type of individual.",
+      "claim_type": "EXPLICIT",
+      "source": "Reproductive division of labor (e.g. germ-soma specialization) is a hallmark of the evolution of multicellularity, signifying the emergence of a new type of individual and facilitating the evolution of increased organismal complexity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical statement about the evolutionary significance of reproductive division of labor, based on established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:01:04.388093Z"
+    },
+    {
+      "id": "e4c81dbf-dda9-4f30-8594-aefb2f9b541f",
+      "content_id": "9d2a9842-c331-4c2d-b6fa-b426761a936b",
+      "claim_id": "C3",
+      "claim": "Reproductive division of labor facilitates the evolution of increased organismal complexity.",
+      "claim_type": "EXPLICIT",
+      "source": "Reproductive division of labor (e.g. germ-soma specialization) is a hallmark of the evolution of multicellularity, signifying the emergence of a new type of individual and facilitating the evolution of increased organismal complexity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical statement about the evolutionary consequences of reproductive division of labor, based on established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:01:04.388093Z"
+    },
+    {
+      "id": "14257704-4c87-47db-8ef6-ccc2bd41c3e0",
+      "content_id": "9d2a9842-c331-4c2d-b6fa-b426761a936b",
+      "claim_id": "C4",
+      "claim": "Classical models predict that specialization is beneficial when further division of labor produces an accelerating increase in absolute productivity.",
+      "claim_type": "EXPLICIT",
+      "source": "A large body of work from evolutionary biology, economics, and ecology has shown that specialization is beneficial when further division of labor produces an accelerating increase in absolute productivity (i.e. productivity is a convex function of specialization).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by references to prior work in multiple fields.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:01:04.388093Z"
+    },
+    {
+      "id": "e7384479-f9b0-44b3-a8d2-8d1c328606a4",
+      "content_id": "9d2a9842-c331-4c2d-b6fa-b426761a936b",
+      "claim_id": "C5",
+      "claim": "Reproductive specialization can evolve even when the benefits of specialization are saturating (i.e. productivity is a concave function of specialization).",
+      "claim_type": "EXPLICIT",
+      "source": "Here we show that reproductive specialization is qualitatively different from classical models of resource sharing, and can evolve even when the benefits of specialization are saturating (i.e. productivity is a concave function of specialization).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the manuscript, supported by analytical theory and simulations presented in the paper.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:01:04.388093Z"
+    },
+    {
+      "id": "5e108e7f-1a39-474f-8dc0-34171e15bedb",
+      "content_id": "9d2a9842-c331-4c2d-b6fa-b426761a936b",
+      "claim_id": "C6",
+      "claim": "Reproductive specialization is strongly favored in sparse networks of cellular interactions that reflect the morphology of early, simple multicellular organisms.",
+      "claim_type": "EXPLICIT",
+      "source": "Through analytical theory and evolutionary individual-based simulations, we demonstrate that reproductive specialization is strongly favored in sparse networks of cellular interactions that reflect the morphology of early, simple multicellular organisms, highlighting the importance of restricted social interactions in the evolution of reproductive specialization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding supported by analytical theory and simulations presented in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:01:04.388093Z"
+    },
+    {
+      "id": "67d30017-0503-4d2f-806e-ac92b7873220",
+      "content_id": "9d2a9842-c331-4c2d-b6fa-b426761a936b",
+      "claim_id": "C7",
+      "claim": "The evolution of multicellularity set the stage for unprecedented increases in organismal complexity.",
+      "claim_type": "EXPLICIT",
+      "source": "The evolution of multicellularity set the stage for unprecedented increases in organismal complexity (Szathm\u00e1ry and Smith, 1995; Knoll, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:01:04.388093Z"
+    },
+    {
+      "id": "25c37a4b-d3b1-42c0-a1a3-7a9426d2e808",
+      "content_id": "9d2a9842-c331-4c2d-b6fa-b426761a936b",
+      "claim_id": "C8",
+      "claim": "A key factor in the success of multicellular strategies is the ability to take advantage of within-organism specialization through cellular differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "A key factor in the remarkable success of multicellular strategies is the ability to take advantage of within-organism specialization through cellular differentiation (Queller and Strassmann, 2009; Brunet and King, 2017; Cavalier-Smith, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:01:04.388093Z"
+    },
+    {
+      "id": "0f81d6f3-88e3-40ab-90ba-49e09ec5bb39",
+      "content_id": "9d2a9842-c331-4c2d-b6fa-b426761a936b",
+      "claim_id": "C9",
+      "claim": "Reproductive specialization includes both the creation of a specialized germ line during ontogeny (as in animals and volvocine green algae) and functional differentiation into reproductive and non-reproductive tissues (as in plants, green and red macroalgae, and fungi).",
+      "claim_type": "EXPLICIT",
+      "source": "Reproductive specialization, which includes both the creation of a specialized germ line during ontogeny (as in animals and volvocine green algae) and functional differentiation into reproductive and non-reproductive tissues (as in plants, green and red macroalgae, and fungi), may be especially important (Cooper and West, 2018; Michod et al., 2006; Ispolatov et al., 2012; Solari et al., 2013; Michod, 2007; West et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definitional statement supported by citations and established biological knowledge.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:01:04.388093Z"
+    },
+    {
+      "id": "1c3617a7-6b30-42da-a167-e4771cdeeb1e",
+      "content_id": "9d2a9842-c331-4c2d-b6fa-b426761a936b",
+      "claim_id": "C10",
+      "claim": "Reproductive specialization is an unambiguous indication that biological individuality rests firmly at the level of the multicellular organism.",
+      "claim_type": "EXPLICIT",
+      "source": "Reproductive specialization is an unambiguous indication that biological individuality rests firmly at the level of the multicellular organism (Michod, 1999; Folse and Roughgarden, 2010), and is thought to play an important role in spurring the evolution of further complexity by inhibiting within-organism (cell-level) evolution (Buss, 1988) and limiting reversion to unicellularity (Libby and Ratcliff, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior theoretical work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:01:04.388093Z"
+    },
+    {
+      "id": "9014f9b9-b6ed-47f7-a2e1-5c31386bf01d",
+      "content_id": "9d2a9842-c331-4c2d-b6fa-b426761a936b",
+      "claim_id": "C11",
+      "claim": "Reproductive specialization plays an important role in spurring the evolution of further complexity by inhibiting within-organism (cell-level) evolution.",
+      "claim_type": "EXPLICIT",
+      "source": "Reproductive specialization is an unambiguous indication that biological individuality rests firmly at the level of the multicellular organism (Michod, 1999; Folse and Roughgarden, 2010), and is thought to play an important role in spurring the evolution of further complexity by inhibiting within-organism (cell-level) evolution (Buss, 1988) and limiting reversion to unicellularity (Libby and Ratcliff, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:01:04.388093Z"
+    },
+    {
+      "id": "897698c1-2ac8-4bfa-a258-6cc7e7a3494b",
+      "content_id": "9d2a9842-c331-4c2d-b6fa-b426761a936b",
+      "claim_id": "C12",
+      "claim": "Reproductive specialization limits reversion to unicellularity.",
+      "claim_type": "EXPLICIT",
+      "source": "Reproductive specialization is an unambiguous indication that biological individuality rests firmly at the level of the multicellular organism (Michod, 1999; Folse and Roughgarden, 2010), and is thought to play an important role in spurring the evolution of further complexity by inhibiting within-organism (cell-level) evolution (Buss, 1988) and limiting reversion to unicellularity (Libby and Ratcliff, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:01:04.388093Z"
+    },
+    {
+      "id": "b60fe53a-69dd-4c3a-ace3-6447f9989f6b",
+      "content_id": "9d2a9842-c331-4c2d-b6fa-b426761a936b",
+      "claim_id": "C13",
+      "claim": "The origin and further evolution of reproductive specialization during the transition to multicellularity remain poorly understood.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite the central importance of reproductive specialization, its origin and further evolution during the transition to multicellularity remain poorly understood (McShea, 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation and represents a knowledge gap in the field.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:01:04.388093Z"
+    },
+    {
+      "id": "cf1674cc-aaea-48dc-aded-0a68e27335e9",
+      "content_id": "9d2a9842-c331-4c2d-b6fa-b426761a936b",
+      "claim_id": "C14",
+      "claim": "Specialization pays off only when it increases total productivity, compared to the case where each individual simply produces what they need.",
+      "claim_type": "EXPLICIT",
+      "source": "A large body of theory from these fields shows that specialization pays off only when it increases total productivity, compared to the case where each individual simply produces what they need (Szathm\u00e1ry and Smith, 1995; Smith and Szathm\u00e1ry, 1997; Goldsby et al., 2012; Corning and Szathm\u00e1ry, 2015; Hidalgo and Hausmann, 2009; Boza et al., 2014; Taborsky et al., 2016; Page et al., 2006; Rueffler et al., 2012; Szekely et al., 2013; Findlay, 2008; Amado et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to prior theoretical work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:01:04.388093Z"
+    },
+    {
+      "id": "95897acd-dbcb-4504-af4d-1251ba5b7c53",
+      "content_id": "9d2a9842-c331-4c2d-b6fa-b426761a936b",
+      "claim_id": "C15",
+      "claim": "Highly reciprocal interactions, which facilitate exchange between complementary specialists, amplify cooperation.",
+      "claim_type": "EXPLICIT",
+      "source": "Certain types of trading arrangements maximize the benefits of specialization; highly reciprocal interactions, which facilitate exchange between complementary specialists, amplify cooperation (Allen et al., 2017; Pavlogiannis et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:01:04.388093Z"
+    },
+    {
+      "id": "6ccc6f69-939c-4b32-a55f-3115ce4200ec",
+      "content_id": "9d2a9842-c331-4c2d-b6fa-b426761a936b",
+      "claim_id": "C16",
+      "claim": "Previous work finds that even when groups grow in an ideal spatial arrangement, increased specialization and trade is only favored by natural selection when productivity increases as an accelerating function of the degree of specialization.",
+      "claim_type": "EXPLICIT",
+      "source": "Still, previous work finds that even when groups grow in an ideal spatial arrangement, increased specialization and trade is only favored by natural selection when productivity increases as an accelerating function of the degree of specialization (i.e., productivity is a convex, or super-linear, function of the degree of specialization).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim summarizes findings from prior work, as indicated by the context.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:01:04.388093Z"
+    },
+    {
+      "id": "a0725d4f-d5ea-4f3c-89a3-596de6c004a4",
+      "content_id": "9d2a9842-c331-4c2d-b6fa-b426761a936b",
+      "claim_id": "C17",
+      "claim": "Saturating functional returns (i.e. productivity is a concave, or sub-linear, function of the degree of specialization) should inhibit the evolution of specialization according to previous work.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, saturating functional returns (i.e. productivity is a concave, or sub-linear, function of the degree of specialization) should inhibit the evolution of specialization (Cooper and West, 2018; Michod et al., 2006; Ispolatov et al., 2012; Solari et al., 2013; Michod, 2007; West et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:01:04.388093Z"
+    },
+    {
+      "id": "870b9404-fd4f-4f50-945d-cb39055e42c7",
+      "content_id": "9d2a9842-c331-4c2d-b6fa-b426761a936b",
+      "claim_id": "C18",
+      "claim": "Trade between germ (reproductive) and somatic (non-reproductive) cells is intrinsically asymmetric, because the cooperative action, multicellular replication, is not a product that is shared evenly.",
+      "claim_type": "EXPLICIT",
+      "source": "Trade between germ (reproductive) and somatic (non-reproductive) cells is intrinsically asymmetric, because the cooperative action, multicellular replication, is not a product that is shared evenly.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical statement about the nature of reproductive specialization, based on logical inference.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:01:04.388093Z"
+    },
+    {
+      "id": "b43fb8e1-4d00-4a6d-91dd-481e8b98de95",
+      "content_id": "9d2a9842-c331-4c2d-b6fa-b426761a936b",
+      "claim_id": "C19",
+      "claim": "Selection acts primarily on the fitness of the multicellular group as a whole.",
+      "claim_type": "EXPLICIT",
+      "source": "Selection acts primarily on the fitness of the multicellular group as a whole (Folse and Roughgarden, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:01:04.388093Z"
+    },
+    {
+      "id": "4e8ad9be-1243-47a3-92c3-c5650c854b90",
+      "content_id": "9d2a9842-c331-4c2d-b6fa-b426761a936b",
+      "claim_id": "C20",
+      "claim": "Optimal specialization can result in behaviors that reduce the short-term fitness of some cells within the multicellular group.",
+      "claim_type": "EXPLICIT",
+      "source": "As a result, optimal specialization can result in behaviors that reduce the short-term fitness of some cells within the multicellular group (Michod et al., 2006; Michod, 2007), often manifest as reproductive altruism.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:01:04.388093Z"
+    },
+    {
+      "id": "448b4e19-6e89-4b3c-937e-92c99008951a",
+      "content_id": "9d2a9842-c331-4c2d-b6fa-b426761a936b",
+      "claim_id": "C21",
+      "claim": "Network theory has proven to be an exceptionally powerful and versatile technique for analyzing social dynamics.",
+      "claim_type": "EXPLICIT",
+      "source": "Network theory has proven to be an exceptionally powerful and versatile technique for analyzing social dynamics (Wey et al., 2008; Lieberman et al., 2005), and indeed, is uniquely well suited to understanding the evolution of early multicellular organisms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:01:04.388093Z"
+    },
+    {
+      "id": "02066e00-37ce-4c37-87eb-a729e1023112",
+      "content_id": "9d2a9842-c331-4c2d-b6fa-b426761a936b",
+      "claim_id": "C22",
+      "claim": "When cells adhere through permanent bonds, sparse network-like bodies (i.e. filaments and trees) often result.",
+      "claim_type": "EXPLICIT",
+      "source": "When cells adhere through permanent bonds, sparse network-like bodies (i.e. filaments and trees) often result (Amado et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:01:04.388093Z"
+    },
+    {
+      "id": "a39228fe-cada-4462-8e73-050cc7585b51",
+      "content_id": "9d2a9842-c331-4c2d-b6fa-b426761a936b",
+      "claim_id": "C23",
+      "claim": "This mode of group formation is common today among simple multicellular organisms.",
+      "claim_type": "EXPLICIT",
+      "source": "This mode of group formation is not only common today among simple multicellular organisms (Umen, 2014; Claessen et al., 2014), but is the dominant mode of group formation in the lineages evolving complex multicellularity (i.e. plants, red algae, brown algae, and fungi, but not animals).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:01:04.388093Z"
+    },
+    {
+      "id": "121dc592-de2d-46a0-bc89-764643c63429",
+      "content_id": "9d2a9842-c331-4c2d-b6fa-b426761a936b",
+      "claim_id": "C24",
+      "claim": "Sparse network-like body formation is the dominant mode of group formation in the lineages evolving complex multicellularity (i.e. plants, red algae, brown algae, and fungi, but not animals).",
+      "claim_type": "EXPLICIT",
+      "source": "This mode of group formation is not only common today among simple multicellular organisms (Umen, 2014; Claessen et al., 2014), but is the dominant mode of group formation in the lineages evolving complex multicellularity (i.e. plants, red algae, brown algae, and fungi, but not animals).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about evolutionary patterns, based on established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:01:04.388093Z"
+    },
+    {
+      "id": "021d9a67-7db5-4c75-b705-a5059b4cccee",
+      "content_id": "9d2a9842-c331-4c2d-b6fa-b426761a936b",
+      "claim_id": "C25",
+      "claim": "Under a broad class of sparse networks, complete functional specialization can be adaptive even when returns from dividing labor are saturating (i.e. concave/sub linear).",
+      "claim_type": "EXPLICIT",
+      "source": "We find that under a broad class of sparse networks, complete functional specialization can be adaptive even when returns from dividing labor are saturating (i.e. concave/sub linear).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the manuscript, supported by analytical theory and simulations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:01:04.388093Z"
+    },
+    {
+      "id": "e1c06c72-7837-45fc-a397-7fe2af8de3ee",
+      "content_id": "9d2a9842-c331-4c2d-b6fa-b426761a936b",
+      "claim_id": "C26",
+      "claim": "Sparse networks impose constraints on who can share with whom, which counterintuitively increases the benefit of specialization.",
+      "claim_type": "EXPLICIT",
+      "source": "Sparse networks impose constraints on who can share with whom, which counterintuitively increases the benefit of specialization (McShea, 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding of the manuscript, supported by analytical theory and simulations, with a citation to related prior work.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:01:04.388093Z"
+    },
+    {
+      "id": "4d26e4c7-d1c6-47e5-adc8-f0d56150c579",
+      "content_id": "9d2a9842-c331-4c2d-b6fa-b426761a936b",
+      "claim_id": "C27",
+      "claim": "By dividing labor, multicellular groups can capitalize on high between-cell variance in behavior, ultimately increasing group-level reproduction.",
+      "claim_type": "EXPLICIT",
+      "source": "By dividing labor, multicellular groups can capitalize on high between-cell variance in behavior, ultimately increasing group-level reproduction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the model and results presented in the manuscript.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:01:04.388093Z"
+    },
+    {
+      "id": "c7d87036-6a76-4f0f-bc75-608dd78bbf1c",
+      "content_id": "9d2a9842-c331-4c2d-b6fa-b426761a936b",
+      "claim_id": "C28",
+      "claim": "Group morphologies that naturally arise from simple biophysical mechanisms strongly promote reproductive specialization.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, we consider group morphologies that naturally arise from simple biophysical mechanisms and show that these morphologies strongly promote reproductive specialization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding of the manuscript, supported by simulations and analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:01:04.388093Z"
+    },
+    {
+      "id": "ce88a12a-e773-4232-867b-04e535784fbb",
+      "content_id": "9d2a9842-c331-4c2d-b6fa-b426761a936b",
+      "claim_id": "C29",
+      "claim": "Reproductive specialization can evolve under a far broader set of conditions than previously thought.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results show that reproductive specialization can evolve under a far broader set of conditions than previously thought, lowering a key barrier to major evolutionary transitions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the results of the manuscript.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:01:04.388093Z"
+    },
+    {
+      "id": "2b2d62b6-f2f8-4068-8f50-b902d12f70c8",
+      "content_id": "9d2a9842-c331-4c2d-b6fa-b426761a936b",
+      "claim_id": "C30",
+      "claim": "Viability is defined as activities keeping the cell alive (e.g. investing in cellular homeostasis or behaviors that improve survival).",
+      "claim_type": "EXPLICIT",
+      "source": "We define viability as activities keeping the cell alive (e.g. investing in cellular homeostasis or behaviors that improve survival), and fecundity as activities involved in cellular reproduction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definitional statement for the model.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:01:04.388093Z"
+    },
+    {
+      "id": "bb1adb35-eecc-413c-86e8-08a7b79715a5",
+      "content_id": "9d2a9842-c331-4c2d-b6fa-b426761a936b",
+      "claim_id": "C31",
+      "claim": "Fecundity is defined as activities involved in cellular reproduction.",
+      "claim_type": "EXPLICIT",
+      "source": "We define viability as activities keeping the cell alive (e.g. investing in cellular homeostasis or behaviors that improve survival), and fecundity as activities involved in cellular reproduction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definitional statement for the model.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:01:04.388093Z"
+    },
+    {
+      "id": "4e7b80b6-04e0-4263-9b68-3a0514cdcc80",
+      "content_id": "9d2a9842-c331-4c2d-b6fa-b426761a936b",
+      "claim_id": "C32",
+      "claim": "Multicellular organisms readily evolve differentiated cells that are completely reliant on helper cells.",
+      "claim_type": "EXPLICIT",
+      "source": "At the cellular level, there appears to be a fundamental asymmetry in how viability effort and fecundity effort can be shared among cells: while multicellular organisms readily evolve differentiated cells that are completely reliant on helper cells (i.e. glial cells that support neurons in animals or companion cells that support sieve tube cells in plants), no cell can directly share its ability to reproduce.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement based on established biological knowledge, with examples provided.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:01:04.388093Z"
+    },
+    {
+      "id": "a22ecf55-04d9-4fe0-9a58-a7604f55e728",
+      "content_id": "9d2a9842-c331-4c2d-b6fa-b426761a936b",
+      "claim_id": "C33",
+      "claim": "No cell can directly share its ability to reproduce.",
+      "claim_type": "EXPLICIT",
+      "source": "At the cellular level, there appears to be a fundamental asymmetry in how viability effort and fecundity effort can be shared among cells: while multicellular organisms readily evolve differentiated cells that are completely reliant on helper cells (i.e. glial cells that support neurons in animals or companion cells that support sieve tube cells in plants), no cell can directly share its ability to reproduce.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical statement based on biological reasoning.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:01:04.388093Z"
+    },
+    {
+      "id": "df94152a-6b94-48a2-b05d-78512c88cd3a",
+      "content_id": "9d2a9842-c331-4c2d-b6fa-b426761a936b",
+      "claim_id": "C34",
+      "claim": "In the model, viability can be shared across connected cells, but fecundity cannot be shared.",
+      "claim_type": "EXPLICIT",
+      "source": "We thus use a model in which viability can be shared across connected cells, but fecundity cannot be shared (note, in order to test the sensitivity of our predictions to this assumption, in a later section we will consider the more general case in which viability and fecundity can both be shared, but by different amounts).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the model assumptions.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:01:04.388093Z"
+    },
+    {
+      "id": "3fb1230e-fbab-45ee-a851-257b9ba642d5",
+      "content_id": "9d2a9842-c331-4c2d-b6fa-b426761a936b",
+      "claim_id": "C38",
+      "claim": "Connecting alternating specialists creates a bipartite graph which maximizes the benefits of specialization and the range of parameters for which it is advantageous.",
+      "claim_type": "EXPLICIT",
+      "source": "Connecting alternating specialists creates a bipartite graph which maximizes the benefits of specialization and the range of parameters for which it is advantageous.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by Figure 1c and analytical results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:01:04.388093Z"
+    },
+    {
+      "id": "e71ce21d-a3f2-46a5-8926-e993c94b94eb",
+      "content_id": "9d2a9842-c331-4c2d-b6fa-b426761a936b",
+      "claim_id": "C40",
+      "claim": "Preventing trade between most cells encourages division of labor in the neighbor network.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, preventing trade between most cells encourages division of labor.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the simulations and analysis of the neighbor network.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:01:04.388093Z"
+    },
+    {
+      "id": "f0071dcf-5830-40ea-8e5c-8189112d1b46",
+      "content_id": "9d2a9842-c331-4c2d-b6fa-b426761a936b",
+      "claim_id": "C41",
+      "claim": "The neighbor network topology leads to alternating specialists in viability and fecundity.",
+      "claim_type": "EXPLICIT",
+      "source": "In our simulations, this topology leads to alternating specialists in viability and fecundity (Figure 1b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the simulations shown in Figure 1b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:01:04.388093Z"
+    },
+    {
+      "id": "7a0da7f3-41c2-4a10-b652-30422a1dd8a3",
+      "content_id": "9d2a9842-c331-4c2d-b6fa-b426761a936b",
+      "claim_id": "C42",
+      "claim": "Specialization evolves for a wider range of \u03b1 and \u03b2 values for the balanced bipartite network than for the neighbor network.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we find that specialization evolves for a wider range of \u03b1 and \u03b2 values for the balanced bipartite network than for the neighbor network.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from comparing the results for different network topologies.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:01:04.388093Z"
+    },
+    {
+      "id": "6b10b12a-73a0-4896-a20a-0a1f38a7ac77",
+      "content_id": "9d2a9842-c331-4c2d-b6fa-b426761a936b",
+      "claim_id": "C44",
+      "claim": "When complete generalization is not a fitness maximum, a high degree of (or even complete) specialization typically does maximize fitness.",
+      "claim_type": "EXPLICIT",
+      "source": "While we have not analytically shown where the fitness maximum occurs in cases where the generalist strategy becomes a saddle point, evolutionary simulations (Figure 1) suggest that when complete generalization is not a fitness maximum, a high degree of (or even complete) specialization typically does maximize fitness.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from evolutionary simulations shown in Figure 1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:01:04.388093Z"
+    },
+    {
+      "id": "1bd35899-eddb-4120-9c84-8a1da30d1f81",
+      "content_id": "9d2a9842-c331-4c2d-b6fa-b426761a936b",
+      "claim_id": "C47",
+      "claim": "Complete reproductive specialization occurs when both viability and fecundity specialists cannot survive independently.",
+      "claim_type": "EXPLICIT",
+      "source": "This amounts to complete reproductive specialization (Cooper and West, 2018; Kirk, 2005; Michod, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definitional statement supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:01:04.388093Z"
+    },
+    {
+      "id": "d2b4f4d5-7e5d-41ef-b846-bc53485b12ff",
+      "content_id": "9d2a9842-c331-4c2d-b6fa-b426761a936b",
+      "claim_id": "C48",
+      "claim": "Saturating specialization (i.e. specialization despite a concave return function) occurs for the neighbor and balanced bipartite topologies in the evolving resource sharing model.",
+      "claim_type": "EXPLICIT",
+      "source": "Saturating specialization (i.e. specialization despite a concave return function) still occurs for the neighbor and balanced bipartite topologies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from evolutionary simulations with evolving resource sharing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:01:04.388093Z"
+    },
+    {
+      "id": "e12e70f5-598e-4e08-806a-3579664d9d47",
+      "content_id": "9d2a9842-c331-4c2d-b6fa-b426761a936b",
+      "claim_id": "C50",
+      "claim": "A sparse group topology constitutes a cooperation-prone physical substrate that can favor the evolution of cellular specialization.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, a sparse group topology constitutes a cooperation-prone physical substrate that can favor the evolution of cellular.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the results of the manuscript.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:01:04.388093Z"
+    },
+    {
+      "id": "13f69d58-d262-4f18-82bb-7c6092463983",
+      "content_id": "9d2a9842-c331-4c2d-b6fa-b426761a936b",
+      "claim_id": "C53",
+      "claim": "The benefit of specialization in neighbor networks increases with group size.",
+      "claim_type": "EXPLICIT",
+      "source": "The benefit of specialization in neighbor networks increases with group size.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an analytical result from the mathematical analysis.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:01:04.388093Z"
+    },
+    {
+      "id": "8e0c90e2-2964-410f-aff7-bf83d5af14e0",
+      "content_id": "9d2a9842-c331-4c2d-b6fa-b426761a936b",
+      "claim_id": "C54",
+      "claim": "Many randomly assembled graphs obtain maximum fitness through complete reproductive specialization even when \u03b1 is below 1.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that many randomly assembled graphs obtain maximum fitness through complete reproductive specialization even when \u03b1 is below 1 (Figure 3b,c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from simulations of Erd\u0151s-R\u00e9nyi random graphs shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:01:04.388093Z"
+    },
+    {
+      "id": "e495a25a-d2c1-4ae5-816c-dbc124c41cac",
+      "content_id": "9d2a9842-c331-4c2d-b6fa-b426761a936b",
+      "claim_id": "C57",
+      "claim": "When network connectivity is at its minimum, the group consists solely of isolated cells that cannot interact, and under these conditions generalists are favored.",
+      "claim_type": "EXPLICIT",
+      "source": "When network connectivity is at its minimum, the group consists solely of isolated cells that cannot interact. Under these conditions generalists are favored.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference from the model structure.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:01:04.388093Z"
+    },
+    {
+      "id": "50bd9129-d1b8-4ef3-a930-16594290e3ed",
+      "content_id": "9d2a9842-c331-4c2d-b6fa-b426761a936b",
+      "claim_id": "C59",
+      "claim": "When connectivity is small but not zero, specialization arises most readily.",
+      "claim_type": "EXPLICIT",
+      "source": "However, when connectivity is small but not zero, specialization arises most readily.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the analysis of random graphs with varying connectivity.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:01:04.388093Z"
+    },
+    {
+      "id": "9008acdb-54eb-4dc5-b8d9-0e26537f1b93",
+      "content_id": "9d2a9842-c331-4c2d-b6fa-b426761a936b",
+      "claim_id": "C60",
+      "claim": "The troughs in Figure 3b, where specialization occurs for the lowest values of \u03b1, occur when connectivity is just large enough so that the existence of a spanning tree is more likely than not.",
+      "claim_type": "EXPLICIT",
+      "source": "We conjecture that the troughs in Figure 3b, where specialization occurs for the lowest values of \u03b1, occur when connectivity is just large enough so that the existence of a spanning tree is more likely than not.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a conjecture based on observations from Figure 3b.",
+      "evidence_type": "[\"SPECULATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:01:04.388093Z"
+    },
+    {
+      "id": "09832e71-931f-4fe1-bca0-abd88ee15def",
+      "content_id": "9d2a9842-c331-4c2d-b6fa-b426761a936b",
+      "claim_id": "C61",
+      "claim": "Filament topologies have been widely observed in independently-evolved simple multicellular organisms, from ancient fossils of early red algae to extant multicellular bacteria and algae.",
+      "claim_type": "EXPLICIT",
+      "source": "Filament topologies have been widely observed in independently-evolved simple multicellular organisms, from ancient fossils of early red algae (Butterfield, 2000; Figure 4a) to extant multicellular bacteria (Claessen et al., 2014) and algae (Umen, 2014).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by citations and Figure 4a.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:01:04.388093Z"
+    },
+    {
+      "id": "5cf70410-450e-46bf-a0e0-a099188b34e5",
+      "content_id": "9d2a9842-c331-4c2d-b6fa-b426761a936b",
+      "claim_id": "C62",
+      "claim": "Branching multicellular phenotypes have been observed to readily evolve from baker's yeast.",
+      "claim_type": "EXPLICIT",
+      "source": "Branching multicellular phenotypes have also been observed to readily evolve from baker's yeast (Ratcliff et al., 2015; Figure 4b), and are reminiscent of ancient fungus-like structures (Bengtson et al., 2017a) and early multicellular fossils of unknown phylogenetic position from the early Ediacaran (Droser and Gehling, 2008).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by citations and Figure 4b.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:01:04.388093Z"
+    },
+    {
+      "id": "a38f6931-47ad-4409-81bc-347fb420c5e7",
+      "content_id": "9d2a9842-c331-4c2d-b6fa-b426761a936b",
+      "claim_id": "C63",
+      "claim": "Specialization is favored in the sub-linear regime for populations of groups with filamentous and branched topologies.",
+      "claim_type": "EXPLICIT",
+      "source": "Simulations of populations of groups with filamentous and branched topologies reveal that specialization is indeed favored in the sub-linear regime (Figure 4a and b)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from simulations shown in Figure 4a and b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:01:04.388093Z"
+    },
+    {
+      "id": "109c73c4-7a44-4ae0-8141-f4ab0615b444",
+      "content_id": "9d2a9842-c331-4c2d-b6fa-b426761a936b",
+      "claim_id": "C64",
+      "claim": "Sub-linear specialization is never observed for fully connected topologies.",
+      "claim_type": "EXPLICIT",
+      "source": "conversely, sub-linear specialization is never observed for fully connected topologies (Figure 4c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from simulations shown in Figure 4c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:01:04.388093Z"
+    },
+    {
+      "id": "a093ada9-0d3f-47ec-9161-3568ccb26370",
+      "content_id": "9d2a9842-c331-4c2d-b6fa-b426761a936b",
+      "claim_id": "C68",
+      "claim": "Simple and easily accessible routes to multicellular group formation can readily evolve in response to selection for organismal size.",
+      "claim_type": "EXPLICIT",
+      "source": "Simple and easily accessible routes to multicellular group formation can readily evolve in response to selection for organismal size (Ratcliff et al., 2012), and this process may also strongly favor the evolution of cellular differentiation (McCarthy and Enquist, 2005; Heim et al., 2017; McClain and Boyer, 2009; Bonner, 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:01:04.388093Z"
+    },
+    {
+      "id": "89506a25-1376-49c2-b209-213a156e21aa",
+      "content_id": "9d2a9842-c331-4c2d-b6fa-b426761a936b",
+      "claim_id": "C75",
+      "claim": "When all cells within groups interact (with equal interaction strength), returns on investment must be an accelerating, that is, convex, function of investment for specialization to evolve.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, when all cells within groups interact (with equal interaction strength), returns on investment must be an accelerating, that is, convex, function of investment for specialization to evolve (Figure 1a; Szathm\u00e1ry and Smith, 1995; Smith and Szathm\u00e1ry, 1997; Corning and Szathm\u00e1ry, 2015; Cooper and West, 2018).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by Figure 1a and citations to prior work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:01:04.388093Z"
+    },
+    {
+      "id": "43452ebf-a651-46b3-9d3e-c5c81f3a13c2",
+      "content_id": "9d2a9842-c331-4c2d-b6fa-b426761a936b",
+      "claim_id": "C76",
+      "claim": "For a broad class of sparsely connected networks, complete specialization can evolve even when the viability and fecundity return on investment curves are saturating, that is, concave.",
+      "claim_type": "EXPLICIT",
+      "source": "Yet for a broad class of sparsely connected networks, complete specialization can evolve even when the viability and fecundity return on investment curves are saturating, that is, concave (Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding of the manuscript, supported by Figure 3.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:01:04.388093Z"
+    },
+    {
+      "id": "51dcaf9c-105e-4261-ada2-e9fc546f05f6",
+      "content_id": "9d2a9842-c331-4c2d-b6fa-b426761a936b",
+      "claim_id": "C77",
+      "claim": "Jensen's inequality guarantees that for concave ROI functions generalists produce more total viability and fecundity than specialists.",
+      "claim_type": "EXPLICIT",
+      "source": "Jensen's inequality guarantees that for concave ROI functions generalists produce more total viability and fecundity than specialists, and that for convex ROI functions specialists produce more total viability and fecundity than generalists.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about Jensen's inequality, which is established mathematical knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:01:04.388093Z"
+    },
+    {
+      "id": "b45b0c4b-b05a-4a30-843a-fbd05f9c4288",
+      "content_id": "9d2a9842-c331-4c2d-b6fa-b426761a936b",
+      "claim_id": "C78",
+      "claim": "Jensen's inequality guarantees that for convex ROI functions specialists produce more total viability and fecundity than generalists.",
+      "claim_type": "EXPLICIT",
+      "source": "Jensen's inequality guarantees that for concave ROI functions generalists produce more total viability and fecundity than specialists, and that for convex ROI functions specialists produce more total viability and fecundity than generalists.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about Jensen's inequality, which is established mathematical knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:01:04.388093Z"
+    },
+    {
+      "id": "1352721c-1db5-4199-84bc-9cdf2afe6dae",
+      "content_id": "9d2a9842-c331-4c2d-b6fa-b426761a936b",
+      "claim_id": "C79",
+      "claim": "Jensen's inequality does not connect ROI convexity/concavity to group fitness.",
+      "claim_type": "EXPLICIT",
+      "source": "Crucially, however, Jensen's inequality does not connect ROI convexity/concavity to group fitness.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a key insight from the analysis, based on mathematical reasoning.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:01:04.388093Z"
+    },
+    {
+      "id": "15df8d46-60a6-4486-a71b-2c941557a9ed",
+      "content_id": "9d2a9842-c331-4c2d-b6fa-b426761a936b",
+      "claim_id": "C80",
+      "claim": "For fully connected topologies, greater absolute productivity proportionally increases group fitness, and differentiation can only evolve with accelerating benefits of specialization.",
+      "claim_type": "EXPLICIT",
+      "source": "For fully connected topologies (i.e. Figure 4c), greater absolute productivity proportionally increases group fitness, and differentiation can only evolve with accelerating benefits of specialization.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the analysis and simulations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:01:04.388093Z"
+    },
+    {
+      "id": "e2abe211-ff21-4531-aa70-707b82fafcc6",
+      "content_id": "9d2a9842-c331-4c2d-b6fa-b426761a936b",
+      "claim_id": "C81",
+      "claim": "For topologically structured organisms, fitness depends on how complementary specialist cells are connected.",
+      "claim_type": "EXPLICIT",
+      "source": "This is not the case for topologically structured organisms, where fitness also depends on how complementary specialist cells are connected.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the model and results.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:01:04.388093Z"
+    },
+    {
+      "id": "275b79e4-f1ce-4316-a821-36d41331a861",
+      "content_id": "9d2a9842-c331-4c2d-b6fa-b426761a936b",
+      "claim_id": "C83",
+      "claim": "The spatial arrangement of unlike specialists plays a key role in determining their productivity (and thus fitness) in metabolic cross-feeding.",
+      "claim_type": "EXPLICIT",
+      "source": "The importance of connecting complementary specialists has long been appreciated in other contexts, such as metabolic cross-feeding, for which it has been shown that the spatial arrangement of unlike specialists plays a key role in determining their productivity (and thus fitness) (Co et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:01:04.388093Z"
+    },
+    {
+      "id": "929a4667-dd66-4175-a8c2-7c9da497d238",
+      "content_id": "9d2a9842-c331-4c2d-b6fa-b426761a936b",
+      "claim_id": "C84",
+      "claim": "While Jensen's inequality ensures that generalists will produce more viability and fecundity than specialists given a concave ROI function, specialization can still increase the fitness of topologically structured groups by increasing realized productivity.",
+      "claim_type": "EXPLICIT",
+      "source": "While Jensen's inequality ensures that generalists will produce more viability and fecundity than specialists given a concave ROI function, specialization can still increase the fitness of topologically structured groups by increasing realized productivity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a key insight from the analysis, reconciling Jensen's inequality with the finding that specialization can be favored with concave ROI.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:01:04.388093Z"
+    },
+    {
+      "id": "392d0ab0-4bf1-4351-8a80-93e70fccea87",
+      "content_id": "9d2a9842-c331-4c2d-b6fa-b426761a936b",
+      "claim_id": "C85",
+      "claim": "Networks favoring specialization readily arise as a consequence of physical processes structuring simple cellular groups.",
+      "claim_type": "EXPLICIT",
+      "source": "Rather than being unusual, networks favoring specialization readily arise as a consequence of physical processes structuring simple cellular groups (Allen et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:01:04.388093Z"
+    },
+    {
+      "id": "aca83172-a77e-49e4-8c34-2ebb1a2430e8",
+      "content_id": "9d2a9842-c331-4c2d-b6fa-b426761a936b",
+      "claim_id": "C86",
+      "claim": "Septin defects during cell division create multicellular groups with simple graph structures, where cells are connected only to parents and offspring.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, septin defects during cell division create multicellular groups with simple graph structures (Figure 4a and b), where cells are connected only to parents and offspring (Bengtson et al., 2017b; Droser and Gehling, 2008; Ratcliff et al., 2012; Ratcliff et al., 2013).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by citations and Figure 4a and b.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:01:04.388093Z"
+    },
+    {
+      "id": "178c2987-8840-4b04-a9c9-6bc446cfa99f",
+      "content_id": "9d2a9842-c331-4c2d-b6fa-b426761a936b",
+      "claim_id": "C87",
+      "claim": "If cells share resources only with physically-attached neighbors, then the physical topology of the group describes its interaction topology, and these sparse networks strongly favor reproductive specialization.",
+      "claim_type": "EXPLICIT",
+      "source": "If cells share resources only with physically-attached neighbors, then the physical topology of the group describes its interaction topology, and these sparse networks strongly favor reproductive specialization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the model and results.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:01:04.388093Z"
+    },
+    {
+      "id": "886b244e-473b-4dc0-a499-2ad760625d7e",
+      "content_id": "9d2a9842-c331-4c2d-b6fa-b426761a936b",
+      "claim_id": "C88",
+      "claim": "The primary benefit of sparsity is that sparse networks are likely to be at least somewhat bipartite.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we note that the primary benefit of sparsity is that sparse networks are likely to be at least somewhat bipartite.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the analysis of different network topologies.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:01:04.388093Z"
+    },
+    {
+      "id": "ac625097-25c9-4179-a3f1-41e1c1b7ad73",
+      "content_id": "9d2a9842-c331-4c2d-b6fa-b426761a936b",
+      "claim_id": "C89",
+      "claim": "The more bipartite-like a network is, the less effort is wasted, and the easier it is for specialization to be favored.",
+      "claim_type": "EXPLICIT",
+      "source": "The more bipartite-like a network is, the less effort is wasted, and the easier it is for specialization to be favored.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the analysis of bipartite networks.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:01:04.388093Z"
+    },
+    {
+      "id": "2ed49a1a-6212-4971-abf1-f0d1cf2d2123",
+      "content_id": "9d2a9842-c331-4c2d-b6fa-b426761a936b",
+      "claim_id": "C90",
+      "claim": "Complex multicellularity (large multicellular organisms with considerable cellular differentiation) has evolved in at least five eukaryotic lineages.",
+      "claim_type": "EXPLICIT",
+      "source": "Complex multicellularity (large multicellular organisms with considerable cellular differentiation) has evolved in at least five eukaryotic lineages, once each in the animals (King, 2004), land plants (Kenrick and Crane, 1997), and brown algae (Silberfeld et al., 2010), two or three times in the red algae (Cock and Coll\u00e9n, 2015; Yoon et al., 2006), and 8\u201311 times in fungi (Nagy et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:01:04.388093Z"
+    },
+    {
+      "id": "fd146636-78e1-42d0-82ac-29a0b3ac1092",
+      "content_id": "9d2a9842-c331-4c2d-b6fa-b426761a936b",
+      "claim_id": "C91",
+      "claim": "In all cases other than animals, complex multicellular organisms form multicellular bodies via permanent cell-cell bonds, creating long-lasting highly structured cellular networks.",
+      "claim_type": "EXPLICIT",
+      "source": "In all cases other than animals, these organisms form multicellular bodies via permanent cell-cell bonds, creating long-lasting highly structured cellular networks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the biology of complex multicellular organisms, based on established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:01:04.388093Z"
+    },
+    {
+      "id": "4abcd806-0364-4359-8c81-d3b673b963c7",
+      "content_id": "9d2a9842-c331-4c2d-b6fa-b426761a936b",
+      "claim_id": "C92",
+      "claim": "Both fossil and phylogenetic evidence suggests that early multicellular organisms in these lineages were considerably less complex, growing as relatively simple graph structures.",
+      "claim_type": "EXPLICIT",
+      "source": "Both fossil and phylogenetic evidence suggests that early multicellular organisms in these lineages were considerably less complex, growing as relatively simple graph structures.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about evolutionary history, based on fossil and phylogenetic evidence.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:01:04.388093Z"
+    },
+    {
+      "id": "f435f4de-92ca-44ca-8319-877bc14b95ef",
+      "content_id": "9d2a9842-c331-4c2d-b6fa-b426761a936b",
+      "claim_id": "C93",
+      "claim": "1.2 billion year old red algae formed linear filaments of cells.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, 1.2 billion year old red algae formed linear filaments of cells (Butterfield, 2000), basal multicellular charophyte algae formed circular sheets of cells radiating from a common center (Kenrick and Crane, 1997), the ancestor of the brown algae likely formed a branched haplostichous thallus that was either filamentous or pseudoparenchymatous (Silberfeld et al., 2010), and hyphal fungi are primarily composed of linear chains of cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:01:04.388093Z"
+    },
+    {
+      "id": "e97e0126-7ef1-4b21-82c2-417f2ec3b5d3",
+      "content_id": "9d2a9842-c331-4c2d-b6fa-b426761a936b",
+      "claim_id": "C94",
+      "claim": "Basal multicellular charophyte algae formed circular sheets of cells radiating from a common center.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, 1.2 billion year old red algae formed linear filaments of cells (Butterfield, 2000), basal multicellular charophyte algae formed circular sheets of cells radiating from a common center (Kenrick and Crane, 1997), the ancestor of the brown algae likely formed a branched haplostichous thallus that was either filamentous or pseudoparenchymatous (Silberfeld et al., 2010), and hyphal fungi are primarily composed of linear chains of cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:01:04.388093Z"
+    },
+    {
+      "id": "71b673f0-a46e-4ff4-93d4-09c9b985b594",
+      "content_id": "9d2a9842-c331-4c2d-b6fa-b426761a936b",
+      "claim_id": "C95",
+      "claim": "The ancestor of the brown algae likely formed a branched haplostichous thallus that was either filamentous or pseudoparenchymatous.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, 1.2 billion year old red algae formed linear filaments of cells (Butterfield, 2000), basal multicellular charophyte algae formed circular sheets of cells radiating from a common center (Kenrick and Crane, 1997), the ancestor of the brown algae likely formed a branched haplostichous thallus that was either filamentous or pseudoparenchymatous (Silberfeld et al., 2010), and hyphal fungi are primarily composed of linear chains of cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:01:04.388093Z"
+    },
+    {
+      "id": "eaef5f71-1d50-4627-9f31-820e3d00e3bd",
+      "content_id": "9d2a9842-c331-4c2d-b6fa-b426761a936b",
+      "claim_id": "C96",
+      "claim": "Hyphal fungi are primarily composed of linear chains of cells.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, 1.2 billion year old red algae formed linear filaments of cells (Butterfield, 2000), basal multicellular charophyte algae formed circular sheets of cells radiating from a common center (Kenrick and Crane, 1997), the ancestor of the brown algae likely formed a branched haplostichous thallus that was either filamentous or pseudoparenchymatous (Silberfeld et al., 2010), and hyphal fungi are primarily composed of linear chains of cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the biology of hyphal fungi, based on established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:01:04.388093Z"
+    },
+    {
+      "id": "f46665f9-4bd3-462e-bdf4-8b25a97d0471",
+      "content_id": "9d2a9842-c331-4c2d-b6fa-b426761a936b",
+      "claim_id": "C97",
+      "claim": "One hypothesis is that early metazoans resembled extant colonial choanoflagellates.",
+      "claim_type": "EXPLICIT",
+      "source": "One hypothesis is that early metazoans resembled extant colonial choanoflagellates (Fairclough et al., 2013), the closest-living protistan relatives of the animals (Fairclough et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:01:04.388093Z"
+    },
+    {
+      "id": "bfa64956-5fdb-42bd-801b-5b08a197b014",
+      "content_id": "9d2a9842-c331-4c2d-b6fa-b426761a936b",
+      "claim_id": "C98",
+      "claim": "Extant colony-forming choanoflagellates have evolved a variety of multicellular structures with sparse cellular topologies and permanent cell-cell bonds.",
+      "claim_type": "EXPLICIT",
+      "source": "Extant colony-forming choanoflagellates have evolved a variety of multicellular structures with sparse cellular topologies and permanent cell-cell bonds.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the biology of choanoflagellates, based on established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:01:04.388093Z"
+    },
+    {
+      "id": "507a197b-e958-46bb-90c6-e607b198d883",
+      "content_id": "9d2a9842-c331-4c2d-b6fa-b426761a936b",
+      "claim_id": "C99",
+      "claim": "Many choanoflagellate species form branched, tree-like structures.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, many species form branched, tree-like structures (Leadbeater, 2015), Choanoeca flexa grows as a sheet of cells (Brunet et al., 2019), and Salpingoceca rosetta can form either linear chains or rosettes in which the cells are connected via cytoplasmic bridges formed through incomplete cytokinesis (Dayel et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:01:04.388093Z"
+    },
+    {
+      "id": "e87b6dea-343c-42a3-8e8d-62caf462705b",
+      "content_id": "9d2a9842-c331-4c2d-b6fa-b426761a936b",
+      "claim_id": "C100",
+      "claim": "Choanoeca flexa grows as a sheet of cells.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, many species form branched, tree-like structures (Leadbeater, 2015), Choanoeca flexa grows as a sheet of cells (Brunet et al., 2019), and Salpingoceca rosetta can form either linear chains or rosettes in which the cells are connected via cytoplasmic bridges formed through incomplete cytokinesis (Dayel et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:01:04.388093Z"
+    },
+    {
+      "id": "df3c8d46-7c83-4917-9c58-9bbac64abb70",
+      "content_id": "9d2a9842-c331-4c2d-b6fa-b426761a936b",
+      "claim_id": "C101",
+      "claim": "Salpingoceca rosetta can form either linear chains or rosettes in which the cells are connected via cytoplasmic bridges formed through incomplete cytokinesis.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, many species form branched, tree-like structures (Leadbeater, 2015), Choanoeca flexa grows as a sheet of cells (Brunet et al., 2019), and Salpingoceca rosetta can form either linear chains or rosettes in which the cells are connected via cytoplasmic bridges formed through incomplete cytokinesis (Dayel et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:01:04.388093Z"
+    },
+    {
+      "id": "11b53b9c-4a63-40b1-9f30-f7056664b65c",
+      "content_id": "9d2a9842-c331-4c2d-b6fa-b426761a936b",
+      "claim_id": "C102",
+      "claim": "Choanoflagellate growth forms all share characteristics (i.e. permanent cellular bonds and sparse topologies) that promote the evolution of cellular differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "While these growth forms are quite diverse, they all share characteristics (i.e. permanent cellular bonds and sparse topologies) that promote the evolution of cellular differentiation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the results of the manuscript applied to choanoflagellate biology.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:01:04.388093Z"
+    },
+    {
+      "id": "b6c58590-7acb-42de-9a07-bc07bc35e5ff",
+      "content_id": "9d2a9842-c331-4c2d-b6fa-b426761a936b",
+      "claim_id": "C103",
+      "claim": "The main differences between this work and previous investigations of the effect of group topology on specialization is that this work considers the productivity of groups as a whole, not the cells within them, and considers situations of highly asymmetric sharing.",
+      "claim_type": "EXPLICIT",
+      "source": "The main differences between our work and previous investigations of the effect of group topology on specialization is that we consider the productivity of groups as a whole, not the cells within them, and we consider situations of highly asymmetric sharing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the novelty of the approach in this manuscript.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:01:04.388093Z"
+    },
+    {
+      "id": "6c7a0618-6bb2-491a-8ac1-a2fc53952f6b",
+      "content_id": "9d2a9842-c331-4c2d-b6fa-b426761a936b",
+      "claim_id": "C104",
+      "claim": "The approach in this work is general, and can be applied to other systems of trade and specialization, so long as (1) only the aggregate productivity of the group (and not the particles within it) is maximized, (2) the productivity of each particle within the group is a multiplicative function of returns on investment into two (or more) tasks, and (3) there is an asymmetry in how products of those investments are shared.",
+      "claim_type": "EXPLICIT",
+      "source": "Our approach is general, and can be applied to other systems of trade and specialization, so long as (1) only the aggregate productivity of the group (and not the particles within it) is maximized, (2) the productivity of each particle within the group is a multiplicative function of returns on investment into two (or more) tasks, and (3) there is an asymmetry in how products of those investments are shared.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the generalizability of the approach.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:01:04.388093Z"
+    },
+    {
+      "id": "9be991e3-8350-45bc-8875-d6e87b4f4194",
+      "content_id": "9d2a9842-c331-4c2d-b6fa-b426761a936b",
+      "claim_id": "C105",
+      "claim": "As long as sharing of two goods is sufficiently asymmetric, specialization with saturating returns on investment can still be adaptive.",
+      "claim_type": "EXPLICIT",
+      "source": "While in this work we have focused on reproductive division of labor, a process in which fecundity returns are not shared at all, we show in the supplement that as long as sharing of two goods is sufficiently asymmetric, specialization with saturating returns on investment can still be adaptive (Appendix 1\u2014figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from supplementary analysis shown in Appendix 1\u2014figure 2.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:01:04.388093Z"
+    },
+    {
+      "id": "677415a4-8983-40ed-b48c-5f5d5193dc1d",
+      "content_id": "9d2a9842-c331-4c2d-b6fa-b426761a936b",
+      "claim_id": "C106",
+      "claim": "Alternative paths to specialization likely exist, such as through positional effects that result in an initially heterogeneous population of cell types.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we note that alternative paths to specialization likely exist. For example, cells at different positions in a group may experience different local environments, which may produce cells with varied fecundity-viability trade-offs. A previous paper demonstrated that the evolution of specialization is favored if these 'positional effects' result in an initially heterogeneous population of cell types (Tverskoi et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior work and represents speculation about alternative mechanisms.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:01:04.388093Z"
+    },
+    {
+      "id": "554b5ecc-3f2a-4940-9e74-5f144af3d0be",
+      "content_id": "9d2a9842-c331-4c2d-b6fa-b426761a936b",
+      "claim_id": "C107",
+      "claim": "Positional effects were considered for the case of well-mixed groups (i.e. completely connected network topologies) in previous work.",
+      "claim_type": "EXPLICIT",
+      "source": "However, these positional effects were considered for the case of well-mixed groups (i.e. completely connected network topologies).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the scope of prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:01:04.388093Z"
+    },
+    {
+      "id": "d92a65b9-867d-4dd7-8463-5e8ff0b3584f",
+      "content_id": "9d2a9842-c331-4c2d-b6fa-b426761a936b",
+      "claim_id": "C108",
+      "claim": "Future work examining the relationship between cellular interaction topology and cellular heterogeneity will provide unique insight into the origin and diversity of multicellular forms.",
+      "claim_type": "EXPLICIT",
+      "source": "We thus anticipate that future work examining the relationship between cellular interaction topology and cellular heterogeneity (as well as a wide range of complex and varied relationships between viability, fecundity, and multicellular fitness) will provide unique insight into the origin and diversity of multicellular forms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about future research directions.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:01:04.388093Z"
+    },
+    {
+      "id": "15bde2ce-7a09-4e42-a468-7fb5ec99d6e9",
+      "content_id": "9d2a9842-c331-4c2d-b6fa-b426761a936b",
+      "claim_id": "C109",
+      "claim": "Group topological structure can play a key role in the evolution of reproductive division of labor.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results demonstrate that group topological structure can play a key role in the evolution of reproductive division of labor.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the results of the manuscript.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:01:04.388093Z"
+    },
+    {
+      "id": "863e6e93-d803-463b-860b-03c5387f30f9",
+      "content_id": "9d2a9842-c331-4c2d-b6fa-b426761a936b",
+      "claim_id": "C110",
+      "claim": "Within a broad class of sparsely connected networks, specialization is favored even when the returns from cooperation are saturating (i.e. concave); this result is in direct contrast to the prevailing view that accelerating (i.e. convex), returns are required for natural selection to favor increased specialization.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, within a broad class of sparsely connected networks, specialization is favored even when the returns from cooperation are saturating (i.e. concave); this result is in direct contrast to the prevailing view that accelerating (i.e. convex), returns are required for natural selection to favor increased specialization (Cooper and West, 2018; Michod et al., 2006; Ispolatov et al., 2012; Solari et al., 2013; Michod, 2007; West et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary conclusion of the manuscript, contrasting with prior work cited.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:01:04.388093Z"
+    },
+    {
+      "id": "8662f29a-9bd3-43b8-ab95-9dfe3dfecf1f",
+      "content_id": "9d2a9842-c331-4c2d-b6fa-b426761a936b",
+      "claim_id": "C111",
+      "claim": "The results underscore the central importance of life history trade-offs in the origin of reproductive specialization.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results underscore the central importance of life history trade-offs in the origin of reproductive specialization (Michod et al., 2006; Michod, 2007; Hammerschmidt et al., 2014; van Gestel and Tarnita, 2017; Noh et al., 2018), and support the emerging consensus that evolutionary transitions in individuality are not necessarily highly constrained (Ratcliff et al., 2012; Ratcliff et al., 2017; Fairclough et al., 2010; Brunet and King, 2017; Pennisi, 2018; Black et al., 2019; Rose et al., 2020; van Gestel and Tarnita, 2017; Black et al., 2019; Staps et al., 2019; Grosberg and Strathmann, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the results, supported by citations to prior work.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:01:04.388093Z"
+    },
+    {
+      "id": "c068fb88-2a1f-42ce-bf4f-53a225a5045d",
+      "content_id": "9d2a9842-c331-4c2d-b6fa-b426761a936b",
+      "claim_id": "C112",
+      "claim": "The results support the emerging consensus that evolutionary transitions in individuality are not necessarily highly constrained.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results underscore the central importance of life history trade-offs in the origin of reproductive specialization (Michod et al., 2006; Michod, 2007; Hammerschmidt et al., 2014; van Gestel and Tarnita, 2017; Noh et al., 2018), and support the emerging consensus that evolutionary transitions in individuality are not necessarily highly constrained (Ratcliff et al., 2012; Ratcliff et al., 2017; Fairclough et al., 2010; Brunet and King, 2017; Pennisi, 2018; Black et al., 2019; Rose et al., 2020; van Gestel and Tarnita, 2017; Black et al., 2019; Staps et al., 2019; Grosberg and Strathmann, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the results, supported by citations to prior work.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:01:04.388093Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "00ecec46-09e1-4fb3-84ba-317dba1ee867",
+      "content_id": "9d2a9842-c331-4c2d-b6fa-b426761a936b",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors demonstrate that reproductive specialization can evolve in sparse networks even when returns on investment are saturating (concave, \u03b1 < 1), contradicting classical theory that requires accelerating (convex, \u03b1 > 1) returns. This finding is supported by both analytical theory and evolutionary simulations across multiple network topologies including neighbor networks, bipartite networks, and random graphs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C6, C25, C26, C76, and C110 collectively establish the central finding through analytical derivations (Hessian analysis), evolutionary simulations (Figures 1-4), and systematic exploration of network topologies (Figure 3). The mathematical framework is clearly defined, simulations are appropriately designed with sufficient replication, and results consistently show specialization emerging under concave ROI conditions for sparse networks.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:01:04.388093Z"
+    },
+    {
+      "id": "67c62237-75ba-4027-beb5-7b33d6a97cee",
+      "content_id": "9d2a9842-c331-4c2d-b6fa-b426761a936b",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Simulations reveal that sparse network topologies (neighbor and balanced bipartite networks) favor specialization more readily than fully connected networks. The neighbor network leads to alternating specialists in viability and fecundity, while the balanced bipartite network shows specialization across an even wider parameter range.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38, C40, C41, and C42 are directly supported by simulation results shown in Figure 1b-c. The evolutionary simulations demonstrate clear patterns of specialization emergence, with quantitative comparisons between network types. The analytical predictions (red curves in Figure 1) align well with simulation outcomes.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:01:04.388093Z"
+    },
+    {
+      "id": "02ec674e-12b4-45b4-ab5b-393e6cc22892",
+      "content_id": "9d2a9842-c331-4c2d-b6fa-b426761a936b",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Analysis of Erd\u0151s-R\u00e9nyi random graphs reveals that specialization with saturating returns (\u03b1 < 1) occurs most readily at intermediate connectivity levels, with a non-monotonic relationship between network sparsity and specialization favorability. The authors conjecture this relates to spanning tree formation probability.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54, C57, C59, and C60 are supported by systematic simulations across varying connectivity levels (Figure 3b). The data clearly show the U-shaped relationship between connectivity and \u03b1* values. However, C60 is explicitly labeled as a conjecture by the authors, indicating this mechanistic explanation requires further validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:01:04.388093Z"
+    },
+    {
+      "id": "4d343c5c-c5f4-4844-833e-498be3fb2d74",
+      "content_id": "9d2a9842-c331-4c2d-b6fa-b426761a936b",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Simulations of biologically realistic topologies (filaments and branched structures observed in early multicellular organisms) demonstrate that specialization is favored in the sub-linear regime for these sparse topologies, but not for fully connected topologies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C63 and C64 are directly supported by simulation results in Figure 4a-c. Claims C61 and C62 provide biological context through citations and fossil/experimental evidence. The combination establishes both the biological relevance and the computational validation of the theoretical predictions for realistic morphologies.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:01:04.388093Z"
+    },
+    {
+      "id": "92dd1daf-4a32-4d46-886c-0779f63cc909",
+      "content_id": "9d2a9842-c331-4c2d-b6fa-b426761a936b",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The benefit of specialization in neighbor networks increases with group size, and group morphologies arising from simple biophysical mechanisms strongly promote reproductive specialization. This demonstrates that reproductive specialization can evolve under broader conditions than previously thought.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C53 is supported by analytical derivation showing fitness scaling with N. Claims C27, C28, and C29 represent inferences from the collective results. The analytical results and simulations across different group sizes (Figure 3b, Figure 4D) provide converging evidence for these conclusions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:01:04.388093Z"
+    },
+    {
+      "id": "d63dc44a-3bae-4405-929a-34995ddc7e8b",
+      "content_id": "9d2a9842-c331-4c2d-b6fa-b426761a936b",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The authors explain why their results differ from classical predictions by distinguishing between absolute productivity (governed by Jensen's inequality) and realized productivity (group fitness). For fully connected topologies, convex ROI is required for specialization, but for sparse topologies, network structure allows specialization to increase realized productivity even with concave ROI.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C75, C77, C78, and C79 correctly invoke Jensen's inequality and its limitations. Claims C80 and C84 provide the key mechanistic insight connecting network topology to fitness. This explanation is mathematically sound and reconciles the new findings with established theory. The logic is clearly articulated and supported by the model structure.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:01:04.388093Z"
+    },
+    {
+      "id": "afb7ca14-6ae1-410e-bc9d-938369e8bae7",
+      "content_id": "9d2a9842-c331-4c2d-b6fa-b426761a936b",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "When complete generalization is not a fitness maximum, evolutionary simulations suggest high or complete specialization typically maximizes fitness. Complete reproductive specialization (where specialists cannot survive independently) occurs in both fixed and evolved resource sharing models, establishing sparse topology as a cooperation-prone substrate.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44 and C48 are supported by simulation results (Figure 1, Appendix 1\u2014figure 1). Claim C47 provides a clear definition with citations. Claim C50 represents a valid inference from the collective results. The evolutionary simulations consistently show this pattern across multiple network types and parameter regimes.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:01:04.388093Z"
+    },
+    {
+      "id": "3818113a-a895-4fea-88b0-69e60580f871",
+      "content_id": "9d2a9842-c331-4c2d-b6fa-b426761a936b",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "For topologically structured organisms, fitness depends on how complementary specialist cells are connected. The primary benefit of sparsity is that sparse networks tend to be bipartite-like, reducing wasted effort and favoring specialization when cells share resources only with physically-attached neighbors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C81, C88, and C89 represent key mechanistic insights from the analysis. Claim C87 connects physical topology to interaction topology. These inferences are well-supported by the mathematical analysis (particularly the mean-field model and bipartite network results) and provide a coherent explanation for the observed patterns.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:01:04.388093Z"
+    },
+    {
+      "id": "1a47744c-8b9a-4ce8-9ae1-1c2a19af501e",
+      "content_id": "9d2a9842-c331-4c2d-b6fa-b426761a936b",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The authors contextualize their findings within the evolutionary history of complex multicellularity across multiple lineages (plants, algae, fungi, animals), noting that early multicellular organisms in these lineages formed sparse network structures. They infer that choanoflagellate growth forms share characteristics promoting cellular differentiation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C90-C101 are well-supported by citations to paleontological and phylogenetic literature. Claim C102 represents an inference applying the manuscript's findings to choanoflagellate biology. While the biological facts are appropriately cited, C102 is an extrapolation that, while reasonable, extends beyond the direct evidence presented in the simulations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:01:04.388093Z"
+    },
+    {
+      "id": "97cb5f79-7132-4849-8e09-23e635782b86",
+      "content_id": "9d2a9842-c331-4c2d-b6fa-b426761a936b",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The model defines viability as activities keeping cells alive and fecundity as activities involved in reproduction. A key assumption is that viability can be shared across connected cells but fecundity cannot, reflecting a fundamental asymmetry in cellular biology.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30-C34 clearly define the model structure and assumptions. The asymmetry assumption (C33, C34) is justified with biological examples (C32) and is central to the model's novelty. The authors acknowledge testing sensitivity to this assumption (C34, C105), demonstrating appropriate scientific rigor.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:01:04.388093Z"
+    },
+    {
+      "id": "6d1e2b7c-e5de-41a4-b402-c68b7f545a11",
+      "content_id": "9d2a9842-c331-4c2d-b6fa-b426761a936b",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The authors distinguish their approach from previous work by focusing on group-level productivity rather than individual cell productivity, and by considering highly asymmetric sharing. They demonstrate the approach is general and show that sufficient asymmetry in sharing allows specialization with saturating returns.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C103 and C104 accurately characterize the novelty of the approach. Claim C105 is supported by supplementary analysis (Appendix 1\u2014figure 2). These claims appropriately position the work within the existing literature and demonstrate the generalizability of the findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:01:04.388093Z"
+    },
+    {
+      "id": "bff76c95-5326-4b84-8cb2-b9ee3715445f",
+      "content_id": "9d2a9842-c331-4c2d-b6fa-b426761a936b",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Networks favoring specialization readily arise from physical processes structuring simple cellular groups, such as septin defects during cell division that create groups where cells connect only to parents and offspring.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C85 is supported by citation to prior work on physical processes. Claim C86 is supported by multiple citations and Figure 4a-b showing experimental examples. These claims effectively connect the theoretical findings to biological mechanisms of multicellular group formation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:01:04.388093Z"
+    },
+    {
+      "id": "ecbb0c89-fbc8-46f8-8d26-55966baea933",
+      "content_id": "9d2a9842-c331-4c2d-b6fa-b426761a936b",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The authors conclude that group topological structure plays a key role in reproductive division of labor evolution, underscoring the importance of life history trade-offs and supporting the view that evolutionary transitions in individuality are not highly constrained.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C109, C111, and C112 represent appropriate high-level conclusions from the body of work. They are well-supported by the analytical and simulation results, and appropriately contextualized with citations to relevant literature. These conclusions follow logically from the demonstrated results.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:01:04.388093Z"
+    },
+    {
+      "id": "27232a26-9e3e-459d-bbf4-4742d9e6c1b3",
+      "content_id": "9d2a9842-c331-4c2d-b6fa-b426761a936b",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The introduction establishes that reproductive division of labor is a hallmark of multicellularity evolution, signifying new individuality and facilitating complexity. Despite its importance, the origin and evolution of reproductive specialization remain poorly understood.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C13 provide appropriate background context, all supported by citations to established literature. These claims accurately represent the current state of knowledge and identify the gap the manuscript addresses. The characterization of the field is appropriate and well-documented.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:01:04.388093Z"
+    },
+    {
+      "id": "975a1281-3cbe-4884-97af-0de2f0f372e6",
+      "content_id": "9d2a9842-c331-4c2d-b6fa-b426761a936b",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Classical theory from evolutionary biology, economics, and ecology predicts specialization is beneficial only with accelerating returns (convex functions), while saturating returns (concave functions) should inhibit specialization. Reciprocal interactions amplify cooperation benefits.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C14, C15, C16, and C17 accurately summarize prior theoretical work with appropriate citations. This establishes the classical view that the manuscript challenges. The characterization of prior work is accurate and provides essential context for understanding the novelty of the findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:01:04.388093Z"
+    },
+    {
+      "id": "086eceb4-4133-4125-82dd-937a63f24b64",
+      "content_id": "9d2a9842-c331-4c2d-b6fa-b426761a936b",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Reproductive specialization differs from classical trade models because trade between germ and soma is intrinsically asymmetric, selection acts on group fitness, and optimal specialization can reduce short-term fitness of some cells (reproductive altruism).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C18, C19, and C20 articulate key conceptual distinctions supported by citations. These claims establish why reproductive specialization requires different theoretical treatment than classical trade models. The reasoning is sound and appropriately supported.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:01:04.388093Z"
+    },
+    {
+      "id": "5f7fb53a-2509-4070-ac96-d0e3da0512ac",
+      "content_id": "9d2a9842-c331-4c2d-b6fa-b426761a936b",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Network theory is well-suited for understanding early multicellular evolution. Permanent cell-cell bonds create sparse network-like bodies (filaments and trees), a common mode of group formation in simple multicellular organisms and dominant in lineages evolving complex multicellularity (except animals).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21-C24 establish the biological relevance of network approaches with appropriate citations. The statements about the prevalence of sparse topologies in multicellular evolution are supported by the cited literature and provide strong motivation for the modeling approach.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:01:04.388093Z"
+    },
+    {
+      "id": "2bdff0be-fc5a-41c3-900a-80bb6e5fdad0",
+      "content_id": "9d2a9842-c331-4c2d-b6fa-b426761a936b",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Simple routes to multicellular group formation can readily evolve in response to selection for size, and this process may favor cellular differentiation evolution.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C68 is supported by multiple citations to prior experimental and theoretical work. This claim provides additional context for understanding the evolutionary accessibility of the morphologies studied in the manuscript.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:01:04.388093Z"
+    },
+    {
+      "id": "eaedc5e2-9b3c-43d1-a461-f042be5c3e38",
+      "content_id": "9d2a9842-c331-4c2d-b6fa-b426761a936b",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "In metabolic cross-feeding, the spatial arrangement of unlike specialists plays a key role in determining productivity and fitness.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C83 is supported by citation to prior work and provides a useful parallel to the reproductive specialization case. This comparison helps contextualize the findings within broader principles of spatial structure and cooperation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:01:04.388093Z"
+    },
+    {
+      "id": "eb251ef2-3600-4e9a-a24a-a89bb6d47c9d",
+      "content_id": "9d2a9842-c331-4c2d-b6fa-b426761a936b",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "The authors speculate that alternative paths to specialization exist, such as through positional effects creating heterogeneous cell types. Previous work considered this for well-mixed groups, and future work on topology-heterogeneity interactions may provide insight into multicellular form diversity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C106 and C108 are explicitly speculative about alternative mechanisms and future directions. Claim C107 accurately characterizes prior work. While these are reasonable speculations, they represent hypotheses for future testing rather than findings of the current work. The speculation is appropriately qualified by the authors.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:01:04.388093Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "e7384479-f9b0-44b3-a8d2-8d1c328606a4",
+      "result_id": "00ecec46-09e1-4fb3-84ba-317dba1ee867"
+    },
+    {
+      "claim_id": "5e108e7f-1a39-474f-8dc0-34171e15bedb",
+      "result_id": "00ecec46-09e1-4fb3-84ba-317dba1ee867"
+    },
+    {
+      "claim_id": "021d9a67-7db5-4c75-b705-a5059b4cccee",
+      "result_id": "00ecec46-09e1-4fb3-84ba-317dba1ee867"
+    },
+    {
+      "claim_id": "e1c06c72-7837-45fc-a397-7fe2af8de3ee",
+      "result_id": "00ecec46-09e1-4fb3-84ba-317dba1ee867"
+    },
+    {
+      "claim_id": "43452ebf-a651-46b3-9d3e-c5c81f3a13c2",
+      "result_id": "00ecec46-09e1-4fb3-84ba-317dba1ee867"
+    },
+    {
+      "claim_id": "863e6e93-d803-463b-860b-03c5387f30f9",
+      "result_id": "00ecec46-09e1-4fb3-84ba-317dba1ee867"
+    },
+    {
+      "claim_id": "3fb1230e-fbab-45ee-a851-257b9ba642d5",
+      "result_id": "67c62237-75ba-4027-beb5-7b33d6a97cee"
+    },
+    {
+      "claim_id": "e71ce21d-a3f2-46a5-8926-e993c94b94eb",
+      "result_id": "67c62237-75ba-4027-beb5-7b33d6a97cee"
+    },
+    {
+      "claim_id": "f0071dcf-5830-40ea-8e5c-8189112d1b46",
+      "result_id": "67c62237-75ba-4027-beb5-7b33d6a97cee"
+    },
+    {
+      "claim_id": "7a0da7f3-41c2-4a10-b652-30422a1dd8a3",
+      "result_id": "67c62237-75ba-4027-beb5-7b33d6a97cee"
+    },
+    {
+      "claim_id": "8e0c90e2-2964-410f-aff7-bf83d5af14e0",
+      "result_id": "02ec674e-12b4-45b4-ab5b-393e6cc22892"
+    },
+    {
+      "claim_id": "e495a25a-d2c1-4ae5-816c-dbc124c41cac",
+      "result_id": "02ec674e-12b4-45b4-ab5b-393e6cc22892"
+    },
+    {
+      "claim_id": "50bd9129-d1b8-4ef3-a930-16594290e3ed",
+      "result_id": "02ec674e-12b4-45b4-ab5b-393e6cc22892"
+    },
+    {
+      "claim_id": "9008acdb-54eb-4dc5-b8d9-0e26537f1b93",
+      "result_id": "02ec674e-12b4-45b4-ab5b-393e6cc22892"
+    },
+    {
+      "claim_id": "a38f6931-47ad-4409-81bc-347fb420c5e7",
+      "result_id": "4d343c5c-c5f4-4844-833e-498be3fb2d74"
+    },
+    {
+      "claim_id": "109c73c4-7a44-4ae0-8141-f4ab0615b444",
+      "result_id": "4d343c5c-c5f4-4844-833e-498be3fb2d74"
+    },
+    {
+      "claim_id": "09832e71-931f-4fe1-bca0-abd88ee15def",
+      "result_id": "4d343c5c-c5f4-4844-833e-498be3fb2d74"
+    },
+    {
+      "claim_id": "5cf70410-450e-46bf-a0e0-a099188b34e5",
+      "result_id": "4d343c5c-c5f4-4844-833e-498be3fb2d74"
+    },
+    {
+      "claim_id": "13f69d58-d262-4f18-82bb-7c6092463983",
+      "result_id": "92dd1daf-4a32-4d46-886c-0779f63cc909"
+    },
+    {
+      "claim_id": "4d26e4c7-d1c6-47e5-adc8-f0d56150c579",
+      "result_id": "92dd1daf-4a32-4d46-886c-0779f63cc909"
+    },
+    {
+      "claim_id": "c7d87036-6a76-4f0f-bc75-608dd78bbf1c",
+      "result_id": "92dd1daf-4a32-4d46-886c-0779f63cc909"
+    },
+    {
+      "claim_id": "ce88a12a-e773-4232-867b-04e535784fbb",
+      "result_id": "92dd1daf-4a32-4d46-886c-0779f63cc909"
+    },
+    {
+      "claim_id": "89506a25-1376-49c2-b209-213a156e21aa",
+      "result_id": "d63dc44a-3bae-4405-929a-34995ddc7e8b"
+    },
+    {
+      "claim_id": "15df8d46-60a6-4486-a71b-2c941557a9ed",
+      "result_id": "d63dc44a-3bae-4405-929a-34995ddc7e8b"
+    },
+    {
+      "claim_id": "51dcaf9c-105e-4261-ada2-e9fc546f05f6",
+      "result_id": "d63dc44a-3bae-4405-929a-34995ddc7e8b"
+    },
+    {
+      "claim_id": "b45b0c4b-b05a-4a30-843a-fbd05f9c4288",
+      "result_id": "d63dc44a-3bae-4405-929a-34995ddc7e8b"
+    },
+    {
+      "claim_id": "1352721c-1db5-4199-84bc-9cdf2afe6dae",
+      "result_id": "d63dc44a-3bae-4405-929a-34995ddc7e8b"
+    },
+    {
+      "claim_id": "929a4667-dd66-4175-a8c2-7c9da497d238",
+      "result_id": "d63dc44a-3bae-4405-929a-34995ddc7e8b"
+    },
+    {
+      "claim_id": "6b10b12a-73a0-4896-a20a-0a1f38a7ac77",
+      "result_id": "afb7ca14-6ae1-410e-bc9d-938369e8bae7"
+    },
+    {
+      "claim_id": "1bd35899-eddb-4120-9c84-8a1da30d1f81",
+      "result_id": "afb7ca14-6ae1-410e-bc9d-938369e8bae7"
+    },
+    {
+      "claim_id": "d2b4f4d5-7e5d-41ef-b846-bc53485b12ff",
+      "result_id": "afb7ca14-6ae1-410e-bc9d-938369e8bae7"
+    },
+    {
+      "claim_id": "e12e70f5-598e-4e08-806a-3579664d9d47",
+      "result_id": "afb7ca14-6ae1-410e-bc9d-938369e8bae7"
+    },
+    {
+      "claim_id": "e2abe211-ff21-4531-aa70-707b82fafcc6",
+      "result_id": "3818113a-a895-4fea-88b0-69e60580f871"
+    },
+    {
+      "claim_id": "886b244e-473b-4dc0-a499-2ad760625d7e",
+      "result_id": "3818113a-a895-4fea-88b0-69e60580f871"
+    },
+    {
+      "claim_id": "ac625097-25c9-4179-a3f1-41e1c1b7ad73",
+      "result_id": "3818113a-a895-4fea-88b0-69e60580f871"
+    },
+    {
+      "claim_id": "178c2987-8840-4b04-a9c9-6bc446cfa99f",
+      "result_id": "3818113a-a895-4fea-88b0-69e60580f871"
+    },
+    {
+      "claim_id": "2ed49a1a-6212-4971-abf1-f0d1cf2d2123",
+      "result_id": "1a47744c-8b9a-4ce8-9ae1-1c2a19af501e"
+    },
+    {
+      "claim_id": "fd146636-78e1-42d0-82ac-29a0b3ac1092",
+      "result_id": "1a47744c-8b9a-4ce8-9ae1-1c2a19af501e"
+    },
+    {
+      "claim_id": "4abcd806-0364-4359-8c81-d3b673b963c7",
+      "result_id": "1a47744c-8b9a-4ce8-9ae1-1c2a19af501e"
+    },
+    {
+      "claim_id": "f435f4de-92ca-44ca-8319-877bc14b95ef",
+      "result_id": "1a47744c-8b9a-4ce8-9ae1-1c2a19af501e"
+    },
+    {
+      "claim_id": "e97e0126-7ef1-4b21-82c2-417f2ec3b5d3",
+      "result_id": "1a47744c-8b9a-4ce8-9ae1-1c2a19af501e"
+    },
+    {
+      "claim_id": "71b673f0-a46e-4ff4-93d4-09c9b985b594",
+      "result_id": "1a47744c-8b9a-4ce8-9ae1-1c2a19af501e"
+    },
+    {
+      "claim_id": "eaef5f71-1d50-4627-9f31-820e3d00e3bd",
+      "result_id": "1a47744c-8b9a-4ce8-9ae1-1c2a19af501e"
+    },
+    {
+      "claim_id": "f46665f9-4bd3-462e-bdf4-8b25a97d0471",
+      "result_id": "1a47744c-8b9a-4ce8-9ae1-1c2a19af501e"
+    },
+    {
+      "claim_id": "bfa64956-5fdb-42bd-801b-5b08a197b014",
+      "result_id": "1a47744c-8b9a-4ce8-9ae1-1c2a19af501e"
+    },
+    {
+      "claim_id": "507a197b-e958-46bb-90c6-e607b198d883",
+      "result_id": "1a47744c-8b9a-4ce8-9ae1-1c2a19af501e"
+    },
+    {
+      "claim_id": "e87b6dea-343c-42a3-8e8d-62caf462705b",
+      "result_id": "1a47744c-8b9a-4ce8-9ae1-1c2a19af501e"
+    },
+    {
+      "claim_id": "df3c8d46-7c83-4917-9c58-9bbac64abb70",
+      "result_id": "1a47744c-8b9a-4ce8-9ae1-1c2a19af501e"
+    },
+    {
+      "claim_id": "11b53b9c-4a63-40b1-9f30-f7056664b65c",
+      "result_id": "1a47744c-8b9a-4ce8-9ae1-1c2a19af501e"
+    },
+    {
+      "claim_id": "2b2d62b6-f2f8-4068-8f50-b902d12f70c8",
+      "result_id": "97cb5f79-7132-4849-8e09-23e635782b86"
+    },
+    {
+      "claim_id": "bb1adb35-eecc-413c-86e8-08a7b79715a5",
+      "result_id": "97cb5f79-7132-4849-8e09-23e635782b86"
+    },
+    {
+      "claim_id": "4e7b80b6-04e0-4263-9b68-3a0514cdcc80",
+      "result_id": "97cb5f79-7132-4849-8e09-23e635782b86"
+    },
+    {
+      "claim_id": "a22ecf55-04d9-4fe0-9a58-a7604f55e728",
+      "result_id": "97cb5f79-7132-4849-8e09-23e635782b86"
+    },
+    {
+      "claim_id": "df94152a-6b94-48a2-b05d-78512c88cd3a",
+      "result_id": "97cb5f79-7132-4849-8e09-23e635782b86"
+    },
+    {
+      "claim_id": "b6c58590-7acb-42de-9a07-bc07bc35e5ff",
+      "result_id": "6d1e2b7c-e5de-41a4-b402-c68b7f545a11"
+    },
+    {
+      "claim_id": "6c7a0618-6bb2-491a-8ac1-a2fc53952f6b",
+      "result_id": "6d1e2b7c-e5de-41a4-b402-c68b7f545a11"
+    },
+    {
+      "claim_id": "9be991e3-8350-45bc-8875-d6e87b4f4194",
+      "result_id": "6d1e2b7c-e5de-41a4-b402-c68b7f545a11"
+    },
+    {
+      "claim_id": "392d0ab0-4bf1-4351-8a80-93e70fccea87",
+      "result_id": "bff76c95-5326-4b84-8cb2-b9ee3715445f"
+    },
+    {
+      "claim_id": "aca83172-a77e-49e4-8c34-2ebb1a2430e8",
+      "result_id": "bff76c95-5326-4b84-8cb2-b9ee3715445f"
+    },
+    {
+      "claim_id": "15bde2ce-7a09-4e42-a468-7fb5ec99d6e9",
+      "result_id": "ecbb0c89-fbc8-46f8-8d26-55966baea933"
+    },
+    {
+      "claim_id": "8662f29a-9bd3-43b8-ab95-9dfe3dfecf1f",
+      "result_id": "ecbb0c89-fbc8-46f8-8d26-55966baea933"
+    },
+    {
+      "claim_id": "c068fb88-2a1f-42ce-bf4f-53a225a5045d",
+      "result_id": "ecbb0c89-fbc8-46f8-8d26-55966baea933"
+    },
+    {
+      "claim_id": "be4b0a99-18aa-43ec-b910-a306d5837911",
+      "result_id": "27232a26-9e3e-459d-bbf4-4742d9e6c1b3"
+    },
+    {
+      "claim_id": "6400ea6c-b3f8-47b9-b58f-7da4b8f70bf0",
+      "result_id": "27232a26-9e3e-459d-bbf4-4742d9e6c1b3"
+    },
+    {
+      "claim_id": "e4c81dbf-dda9-4f30-8594-aefb2f9b541f",
+      "result_id": "27232a26-9e3e-459d-bbf4-4742d9e6c1b3"
+    },
+    {
+      "claim_id": "67d30017-0503-4d2f-806e-ac92b7873220",
+      "result_id": "27232a26-9e3e-459d-bbf4-4742d9e6c1b3"
+    },
+    {
+      "claim_id": "25c37a4b-d3b1-42c0-a1a3-7a9426d2e808",
+      "result_id": "27232a26-9e3e-459d-bbf4-4742d9e6c1b3"
+    },
+    {
+      "claim_id": "0f81d6f3-88e3-40ab-90ba-49e09ec5bb39",
+      "result_id": "27232a26-9e3e-459d-bbf4-4742d9e6c1b3"
+    },
+    {
+      "claim_id": "1c3617a7-6b30-42da-a167-e4771cdeeb1e",
+      "result_id": "27232a26-9e3e-459d-bbf4-4742d9e6c1b3"
+    },
+    {
+      "claim_id": "9014f9b9-b6ed-47f7-a2e1-5c31386bf01d",
+      "result_id": "27232a26-9e3e-459d-bbf4-4742d9e6c1b3"
+    },
+    {
+      "claim_id": "897698c1-2ac8-4bfa-a258-6cc7e7a3494b",
+      "result_id": "27232a26-9e3e-459d-bbf4-4742d9e6c1b3"
+    },
+    {
+      "claim_id": "b60fe53a-69dd-4c3a-ace3-6447f9989f6b",
+      "result_id": "27232a26-9e3e-459d-bbf4-4742d9e6c1b3"
+    },
+    {
+      "claim_id": "14257704-4c87-47db-8ef6-ccc2bd41c3e0",
+      "result_id": "975a1281-3cbe-4884-97af-0de2f0f372e6"
+    },
+    {
+      "claim_id": "cf1674cc-aaea-48dc-aded-0a68e27335e9",
+      "result_id": "975a1281-3cbe-4884-97af-0de2f0f372e6"
+    },
+    {
+      "claim_id": "95897acd-dbcb-4504-af4d-1251ba5b7c53",
+      "result_id": "975a1281-3cbe-4884-97af-0de2f0f372e6"
+    },
+    {
+      "claim_id": "6ccc6f69-939c-4b32-a55f-3115ce4200ec",
+      "result_id": "975a1281-3cbe-4884-97af-0de2f0f372e6"
+    },
+    {
+      "claim_id": "a0725d4f-d5ea-4f3c-89a3-596de6c004a4",
+      "result_id": "975a1281-3cbe-4884-97af-0de2f0f372e6"
+    },
+    {
+      "claim_id": "870b9404-fd4f-4f50-945d-cb39055e42c7",
+      "result_id": "086eceb4-4133-4125-82dd-937a63f24b64"
+    },
+    {
+      "claim_id": "b43fb8e1-4d00-4a6d-91dd-481e8b98de95",
+      "result_id": "086eceb4-4133-4125-82dd-937a63f24b64"
+    },
+    {
+      "claim_id": "4e8ad9be-1243-47a3-92c3-c5650c854b90",
+      "result_id": "086eceb4-4133-4125-82dd-937a63f24b64"
+    },
+    {
+      "claim_id": "448b4e19-6e89-4b3c-937e-92c99008951a",
+      "result_id": "5f7fb53a-2509-4070-ac96-d0e3da0512ac"
+    },
+    {
+      "claim_id": "02066e00-37ce-4c37-87eb-a729e1023112",
+      "result_id": "5f7fb53a-2509-4070-ac96-d0e3da0512ac"
+    },
+    {
+      "claim_id": "a39228fe-cada-4462-8e73-050cc7585b51",
+      "result_id": "5f7fb53a-2509-4070-ac96-d0e3da0512ac"
+    },
+    {
+      "claim_id": "121dc592-de2d-46a0-bc89-764643c63429",
+      "result_id": "5f7fb53a-2509-4070-ac96-d0e3da0512ac"
+    },
+    {
+      "claim_id": "a093ada9-0d3f-47ec-9161-3568ccb26370",
+      "result_id": "2bdff0be-fc5a-41c3-900a-80bb6e5fdad0"
+    },
+    {
+      "claim_id": "275b79e4-f1ce-4316-a821-36d41331a861",
+      "result_id": "eaedc5e2-9b3c-43d1-a461-f042be5c3e38"
+    },
+    {
+      "claim_id": "677415a4-8983-40ed-b48c-5f5d5193dc1d",
+      "result_id": "eb251ef2-3600-4e9a-a24a-a89bb6d47c9d"
+    },
+    {
+      "claim_id": "554b5ecc-3f2a-4940-9e74-5f144af3d0be",
+      "result_id": "eb251ef2-3600-4e9a-a24a-a89bb6d47c9d"
+    },
+    {
+      "claim_id": "d92a65b9-867d-4dd7-8463-5e8ff0b3584f",
+      "result_id": "eb251ef2-3600-4e9a-a24a-a89bb6d47c9d"
+    }
+  ],
+  "comparisons": []
+}

@@ -1,0 +1,163 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "The authors developed a computational tool that transforms between projected and received visual stimuli to detect and control optical distortions caused by refraction at air-water interfaces. The tool is implemented in Python, handles flat interfaces with optional plastic layers, supports customizable experimental parameters, and provides two primary use cases: visualizing distortions and inverting the distortion process to generate corrected stimuli.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C6 and C65-C80 collectively demonstrate the development and capabilities of the computational tool. The tool's implementation is well-documented with specific technical details (ray tracing methods, customizable parameters), accessibility options (web-based and local execution), and clear use cases. The methodology is based on established optical principles (Snell's law, Fresnel equations) and includes appropriate technical considerations (moir\u00e9 artifact reduction).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C7",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C47",
+      "C48",
+      "C49",
+      "C51",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Applying refraction corrections to looming stimuli from two prior studies (Dunn et al. 2016a and Temizer et al. 2015) reduced discrepancies in the literature concerning stimuli that evoke escape behavior. The authors quantified stimulus size using solid angle calculations with appropriate geometric projections and error propagation methods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7 and C35-C57 provide a concrete application of the correction tool to reconcile literature discrepancies. The methodology is sound: parameters were approximated from cited studies, solid angle was used as an appropriate metric for stimulus size, and proper mathematical methods (equal-area projections, error propagation) were employed. However, the claim relies on approximated parameters (C35, C37) and acknowledges limitations (C44), which are appropriately disclosed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C9",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "The authors demonstrated through simulations that uncorrected stimuli pose dangers to receptive field mapping experiments by comparing 'true' receptive fields (without interface) to 'apparent' receptive fields (with refraction at air-water interface). Receptive fields were modeled as Gaussian functions on the sphere.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9 and C58-C61 describe a simulation study illustrating the impact of refraction on receptive field mapping. The methodology is clearly defined with explicit definitions of 'true RF' and 'apparent RF', and the Gaussian model is a reasonable simplification. The simulation approach (ray tracing from pixels to fish) is appropriate for demonstrating the distortion effects, though the actual magnitude of errors and their practical significance would depend on the specific experimental parameters.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3"
+    ],
+    "result": "Optical refraction causes light to bend at interfaces between media, which can significantly distort visual stimuli presented to aquatic animals, yet this phenomenon has often been ignored in visual neuroscience experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3 establish the motivation for the work. C1 is established physics, C2 is a logical consequence of C1 applied to aquatic experiments, and C3 is an observational claim about the field that is implicitly supported by the need for this work and the literature reconciliation demonstrated in C7. These claims provide appropriate context and justification.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "The authors calculated light transmission fractions using Fresnel equations, modeling multi-interface systems (air-plastic-water) by multiplying transmission fractions at each interface while ignoring multiple reflections within the plastic.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C15 describe the application of Fresnel equations to calculate transmission. The approach is based on established physics (C10, C11) and the simplification of ignoring multiple reflections (C15) is explicitly acknowledged. The multiplicative approach (C14) is a reasonable first-order approximation for thin plastic layers, though it introduces some error that is appropriately disclosed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C16",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "The authors simulated distorted sinusoidal gratings using ray tracing with Snell's law and Fresnel equations, employing a pinhole detector model for the fish eye, gamma-encoded gratings to mimic real projectors, and ray supersampling with stochastic sampling to reduce moir\u00e9 artifacts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C34 describe the simulation methodology for Figure 1c. The approach is technically sound with appropriate choices: realistic parameters (C18, C19, C29, C31), established ray tracing techniques (C23, C24, C32-C34), and explicit acknowledgment of simplifications (C25) and their consequences (C27, C28). The pinhole detector assumption is a limitation but is clearly stated and its visual artifact is handled appropriately (C28).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C8"
+    ],
+    "result": "The tool is expected to help reconcile other confusing aspects of the literature beyond escape behavior stimuli.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C8 is explicitly speculative about future utility. While the tool's success in reconciling escape behavior literature (C7) provides some support for this expectation, no additional examples or validation are provided. This represents a reasonable hypothesis but lacks direct evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C81",
+      "C82"
+    ],
+    "result": "Some stimuli are physically impossible to correct, such as delivering undistorted image content outside the Snell window.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C82 identify a fundamental physical limitation of the correction approach based on optical principles. This is a logical consequence of total internal reflection and the geometry of the Snell window, representing an important caveat for users of the tool.",
+    "result_type": "MINOR"
+  }
+]

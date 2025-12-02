@@ -1,0 +1,267 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C67",
+      "C68"
+    ],
+    "result": "The model demonstrates that eco-evolutionary dynamics naturally lead to increasing population size through payoff evolution. Without tradeoffs, types with higher payoffs survive preferentially, driving monotonic payoff increases that enhance population size and diversity while making types more similar.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C68 collectively describe a coherent model mechanism supported by simulation data. The model assumptions (C40, C49-C56, C60) are clearly stated, and the evolutionary dynamics (C41, C59, C61-C64) follow logically from these assumptions. Figure 3A provides visual confirmation of increasing population size and diversity over time.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C74",
+      "C75",
+      "C77"
+    ],
+    "result": "In the rapid mutation regime enabled by large population sizes, cyclic dominance can emerge but remains rare. The steady-state fraction of cyclic dominance (\u03c7 \u2248 0.033) is much lower than expected from random interactions (\u03c7 = 0.25), with cyclic dominance saturating at ~0.0036 compared to ~0.105 for non-cyclic dominance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C77 present quantitative findings from simulations shown in Figure 3B-C. The reported fractions (C71, C72) are specific numerical results, and the comparison to random expectations (C77) provides important context. The rarity conclusion is well-supported by the data presented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "Cyclic and non-cyclic dominance triplets have similar lifespans (both destroyed in ~5 mutation events on average), with algebraically decaying distributions. Since lifespan does not explain the rarity of cyclic dominance, the lower chance of emergence must be the determining factor.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C83 present a clear analysis of lifespan distributions supported by Figure 4A showing overlapping CCDF curves. The logical inference (C82-C83) that formation probability rather than lifespan explains rarity is sound given the similar lifespan data. The quantitative finding (C80) is specific and testable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C84",
+      "C88",
+      "C90",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "Payoff correlation arising from inheritance suppresses cyclic dominance formation. Offspring inherit similar payoffs to parents, making triplets with parent-offspring pairs more likely to form non-cyclic dominance. Types in cyclic dominance are less similar than in non-cyclic dominance, as shown by trait vector analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C96 present a mechanistic explanation supported by Figure 4B showing distinct similarity patterns. The mathematical constraint argument (C84, C88) is sound, and the inheritance mechanism (C90, C92-C94, C96) logically explains the observed patterns. The trait vector analysis (C95) provides quantitative support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C100",
+      "C102",
+      "C104",
+      "C109",
+      "C112"
+    ],
+    "result": "Genealogical structure determines payoff correlations and cyclic dominance emergence. Mutations accumulated after all three lineages diverge (characterized by fraction F_l) are crucial for decoupling payoff correlations. In population dynamics, surviving offspring are typically similar to parents, preventing cyclic dominance emergence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C112 present genealogical analysis supported by Figure 5. The characterization by five parameters (C98) and the importance of post-divergence mutations (C100, C102) are clearly demonstrated in Figure 5C. The inference about population dynamics (C109, C112) follows logically from the genealogical analysis and simulation results shown in Figure 6.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C116",
+      "C124",
+      "C125",
+      "C126",
+      "C130"
+    ],
+    "result": "The study's main conclusion is that cyclic dominance is more likely to evolve through assembly of unrelated types than within communities of similar types. The probability to evolve cyclic dominance is even smaller than assembling it by chance, with inheritance of interactions being the key suppressive mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C5 and C116-C130 represent the paper's central findings, well-supported by the mechanistic results (genealogy, payoff correlation, lifespan analysis). The comparison between evolutionary and random assembly (C124) is quantitatively demonstrated. The conclusion about inter- vs intra-species cyclic dominance (C128, C130) follows logically from the model results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "Diversity in the model does not originate from cyclic dominance but from rapid type generation. No correlation exists between diversity and cyclic dominance probability. Cyclic dominance remains rare even with payoff rescaling, and non-cyclic dominance reaches higher population frequencies than cyclic dominance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C117-C122 present additional analyses addressing the relationship between diversity and cyclic dominance. The lack of correlation (C117) and the source of diversity (C118) are important clarifications. The robustness checks (C120-C121) strengthen the main findings, though details are relegated to appendices.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C49",
+      "C50",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "The model uses competitive Lotka-Volterra dynamics where interactions determine death rates from pairwise competition. All types share background birth/death rates, with competition being the only differentiating factor. Payoffs translate to death rates via exponential decay, and offspring inherit parental payoffs with Gaussian noise.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C56 describe the model framework, grounded in established theory (C46-C47 with citations). The assumptions are clearly stated and mathematically specified. The model is internally consistent and appropriate for studying the research question, though simplifications (C52) are acknowledged.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C113"
+    ],
+    "result": "Empirical evidence shows cyclic dominance is rare in nature. In microbial ecosystems from soil, only 3 of ~1000 triplets exhibited cyclic dominance, and similar rarity is found in other soil bacteria and plant systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C35 and C113 cite experimental studies (Higgins et al. 2017, Wright and Vetsigian 2016, Friedman et al. 2017) providing empirical motivation for the theoretical work. The specific quantitative finding (C33) is properly attributed. These claims establish the biological relevance of the research question.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "Background on population diversity and cyclic dominance: Natural populations contain multiple coexisting types with complex interaction structures. Cyclic dominance (rock-paper-scissors dynamics) is a popular theoretical mechanism for maintaining diversity where no type fixates, and has been extensively studied theoretically.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C13 provide established background knowledge supported by numerous citations. These claims accurately represent the theoretical framework and prior understanding in the field. The definitions (C10-C11) are standard and the characterization of prior work (C13) is well-documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "Classic examples of cyclic dominance include E. coli toxin production (toxin producers > sensitive > resistant > toxin producers) and side-blotched lizard mating strategies (multi-female guarders > single-female guarders > sneakers > multi-female guarders). Additional examples exist in various taxa including Drosophila, other lizards, and plants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C26 describe well-documented biological examples with proper citations. The E. coli (C14-C17) and lizard (C18-C21) examples are illustrated in Figure 1B-C. The additional examples (C22-C25) are appropriately cited. These claims accurately represent prior empirical work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "Traditional theory assumes predefined cyclic dominance types without addressing their origin. New types can arise through migration, mutation, or recombination, potentially forming or breaking cycles. Forming cyclic dominance from a single type is challenging due to timing requirements, but rapid evolution through high mutation rates or large populations can facilitate emergence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C39 identify the gap in prior work (C27) and establish the theoretical motivation. The logical argument about formation difficulty (C36-C37) is sound, and the role of rapid evolution (C38-C39) is supported by citations. These claims effectively frame the research question.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C127",
+      "C128",
+      "C129",
+      "C131",
+      "C132"
+    ],
+    "result": "The study uses an evolutionary approach with evolving interactions rather than predefined traits, distinguishing it from prior work. Results suggest cyclic dominance might be more frequent on an inter-species basis (migration-like) than intra-species basis (evolution-like). The categorical classification approach may help bridge model dynamics and experimental data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C114-C115 accurately describe the methodological contribution. However, the speculation about inter- vs intra-species frequency (C127-C128) lacks direct empirical support and represents an extrapolation from the model. The utility of the categorical approach (C131-C132) is speculative. These claims require further validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138"
+    ],
+    "result": "The model assumes global (well-mixed) interactions, ignoring spatial structure. While spatial models could increase cyclic dominance frequency, investigating the issue without spatial confounds is essential for understanding why cyclic dominance is rare within species in nature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C133-C138 acknowledge a key limitation (C133-C134) and discuss potential extensions. The statement about spatial effects (C135-C136) is supported by extensive citations. The justification for the non-spatial approach (C137-C138) is reasonable for establishing baseline understanding, though spatial effects remain an important future direction.",
+    "result_type": "MINOR"
+  }
+]

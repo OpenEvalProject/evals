@@ -1,0 +1,867 @@
+{
+  "submission": {
+    "id": "bc72b99e-1637-4f19-9716-beb6fa4978ea",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T11:54:12.089823Z",
+    "updated_at": "2025-12-02T11:54:12.089823Z"
+  },
+  "content": [
+    {
+      "id": "50407bff-8ed1-442c-aafc-5fe7d1f36472",
+      "submission_id": "bc72b99e-1637-4f19-9716-beb6fa4978ea",
+      "content_type": "manuscript",
+      "content_text": "# Surface-to-volume scaling and aspect ratio preservation in rod-shaped bacteria\n\n## Authors\n\n- Nikola Ojkic<sup>1</sup>\n- Diana Serbanescu<sup>1</sup>\n- Shiladitya Banerjee<sup>1</sup> ([ORCID: 0000-0001-8000-2556](https://orcid.org/0000-0001-8000-2556)) \u2020\n\n### Affiliations\n\n1. Department of Physics and Astronomy, Institute for the Physics of Living Systems University College London London United Kingdom\n\n\u2020 Corresponding author\n\n## Abstract\n\nRod-shaped bacterial cells can readily adapt their lengths and widths in response to environmental changes. While many recent studies have focused on the mechanisms underlying bacterial cell size control, it remains largely unknown how the coupling between cell length and width results in robust control of rod-like bacterial shapes. In this study we uncover a conserved surface-to-volume scaling relation in Escherichia coli and other rod-shaped bacteria, resulting from the preservation of cell aspect ratio. To explain the mechanistic origin of aspect-ratio control, we propose a quantitative model for the coupling between bacterial cell elongation and the accumulation of an essential division protein, FtsZ. This model reveals a mechanism for why bacterial aspect ratio is independent of cell size and growth conditions, and predicts cell morphological changes in response to nutrient perturbations, antibiotics, MreB or FtsZ depletion, in quantitative agreement with experimental data.\n\n## Introduction\n\nCell morphology is an important adaptive trait that is crucial for bacterial growth, motility, nutrient uptake, and proliferation (Young, 2006). When rod-shaped bacteria grow in media with different nutrient availability, both cell length and width increase with growth rate (Schaechter et al., 1958; Si et al., 2017). At the single-cell level, control of cell volume in many rod-shaped cells is achieved via an adder mechanism, whereby cells elongate by a fixed length per division cycle (Amir, 2014; Campos et al., 2014; Taheri-Araghi et al., 2015;\u00a0Deforet et al., 2015;\u00a0Wallden et al., 2016; Banerjee et al., 2017). A recent study has linked the determination of cell size to a condition-dependent regulation of cell surface-to-volume ratio (Harris and Theriot, 2016). However, it remains largely unknown how cell length and width are coupled to regulate rod-like bacterial shapes in diverse growth conditions (Volkmer and Heinemann, 2011; Belgrave and Wolgemuth, 2013; Colavin et al., 2018; Shi et al., 2018).\n\n## Results\n\nHere we investigated the relation between cell surface area ($S$) and cell volume ($V$) for E. coli cells grown under different nutrient conditions, challenged with antibiotics, protein overexpression or depletion, and single gene deletions (Nonejuie et al., 2013; Harris and Theriot, 2016; Si et al., 2017; Vadia et al., 2017;\u00a0Campos et al., 2018;\u00a0Gray et al., 2019). Collected surface and volume data span two orders of magnitude and exhibit a single power law in this regime: $S=\\gamma\u2062V^{2/3}$ (Figure 1A). Specifically, during steady-state growth (Si et al., 2017), \u03b3\u00a0=\u00a06.24\u00a0\u00b1\u00a00.04, suggesting an elegant geometric relation: $S\u22482\u2062\\pi\u2062V^{2/3}$. This surface-to-volume scaling with a constant prefactor, $\\gamma$, is a consequence of tight control of cell aspect ratio $\u03b7$ (length/width) (Figure 1D), whose mechanistic origin has been puzzling for almost half a century (Zaritsky, 1975;\u00a0Zaritsky, 2015). Specifically, for a sphero-cylindrical bacterium, $S=\\gamma\u2062V^{2/3}$ implies $\\gamma=\u03b7\u2062\\pi\u2062(\\frac{\u03b7\u2062\\pi}{4}-\\frac{\\pi}{12})^{-2/3}$. A constant $\\gamma$ thus defines a constant aspect ratio \u03b7\u00a0=\u00a04.14\u00a0\u00b1\u00a00.17 (Figure 1B-inset), with a coefficient of variation \u223c14% (Figure 1B).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/47033/elife-47033-fig1-v2.jpg)\n\n**Figure 1.:** (A) E. coli cells subjected to different antibiotics, nutrient conditions, protein overexpression/depletion, and single gene deletions (Nonejuie et al., 2013; Si et al., 2017; Harris and Theriot, 2016; Vadia et al., 2017; Campos et al., 2018; Gray et al., 2019), follow the scaling relation between population-averaged surface area ($S$) and volume ($V$): $S=\\gamma\u2062V^{2/3}$ (legend on the right, 5011 data points; Supplementary file 1). Best fit shown in dashed black line for steady-state data from Si et al. (2017) gives\u00a0\u03b3\u00a0=\u00a06.24\u00a0\u00b1\u00a00.04, and a power law exponent 0.671 \u00b1 0.006. For single deletion Keio set (Campos et al., 2018), the best fit curve is $S=5.79\u2062V^{2/3}$. (B) Aspect-ratio distribution for cells growing in steady-state, corresponding to the data in (A) (Si et al., 2017). (Inset) Relationship between $\\gamma$ and aspect ratio $\u03b7$ for a sphero-cylinder (red line). Best fit from (A) shown with horizontal green band gives aspect ratio 4.14 \u00b1 0.17. (C) $S/V$ vs growth rate. Model line uses $S=2\u2062\\pi\u2062V^{2/3}$ and the nutrient growth law (Equation 1). Data from Si et al. (2017). (D) $S$-$V$ relation for various bacterial cell shapes. Black dashed line: Small, medium, and large rod-shaped cells with a conserved aspect ratio of 4 follow the relation: $S=2\u2062\\pi\u2062V^{2/3}$. Gray dashed line: Filamentous cells with constant cell width follow the scaling law: $S\u223cV$. Red dashed line: Spheres follow $S=6^{2/3}\\pi^{1/3}V^{2/3}$. (E) $S$ vs $V$ for 49 different bacterial species (Sato, 2000; Trachtenberg, 2004; Pelling et al., 2005; Wright et al., 2015; Deforet et al., 2015; Desmarais et al., 2015; Harris and Theriot, 2016; Ojkic et al., 2016; Quach et al., 2016; Carabetta et al., 2016; Chattopadhyay et al., 2017; Lopez-Garrido et al., 2018; Gray et al., 2019), and one rod-shaped Archaea (H. volcanii) (Supplementary file 2). Rod-shaped cells lie on $S=2\u2062\\pi\u2062V^{2/3}$ line, above the line are Spirochete and below the line are coccoid. For coccoid S. aureus exposed to different antibiotics best fit is $S=4.92\u2062V^{2/3}$, with preserved aspect ratio\u00a0\u03b7\u00a0=\u00a01.38\u00a0\u00b1\u00a00.18. Red dashed line is for spheres.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/47033/elife-47033-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Cell length (A) and width (B) vs $2^{(C+D)/\\tau}$. Data used from Si et al. (2017). Here $C$ is time from initiation to termination of DNA replication, $D$ is time from termination of DNA replication to cell division, and $\\tau$ is doubling time. Green solid\u00a0lines are calculated assuming $S=2\u2062\\pi\u2062V^{2/3}$. Dashed black lines are best fit curves.\n\nThe surface-to-volume relation for steady-state growth, $S\u22482\u2062\\pi\u2062V^{2/3}$, results in a simple expression for cell surface-to-volume ratio: $S/V\u22482\u2062\\pi\u2062V^{-1/3}$. Using the phenomenological nutrient growth law $V=V_{0}\u2062e^{\\alpha\u2062\u03ba}$\u00a0(Schaechter et al., 1958), where $\u03ba$ is the population growth rate, a negative correlation emerges between $S/V$ and $\u03ba$:\n\n$$\nS/V\u22482\u2062\\pi\u2062V_{0}^{-1/3}\u2062e^{-\\alpha\u2062\u03ba/3},\n$$\n\nwith $V_{0}$ the cell volume at $\u03ba=0$, and $\\alpha$ is the relative rate of increase in $V$ with $\u03ba$ (Figure 1C). In Equation (1) underlies an adaptive feedback response of the cell \u2014 at low nutrient concentrations, cells increase their surface-to-volume ratio to promote nutrient influx (Si et al., 2017; Harris and Theriot, 2018). Prediction from Equation (1) is in excellent agreement with the best fit to the experimental data. Furthermore, a constant aspect ratio of \u22484 implies $V\u2248\\sqrt{8}\u2062w^{3}$ and $S\u22484\u2062\\pi\u2062w^{2}$, where $w$ is the cell width, suggesting stronger geometric constraints than recently proposed (Harris and Theriot, 2018; Shi et al., 2018). Thus, knowing cell volume as a function of cell cycle parameters (Si et al., 2017) we can directly predict cell width and length under changes in growth media, in agreement with experimental data (Figure 1\u2014figure supplement 1A\u2013B). We further analysed cell shape data for 48 rod-shaped bacteria, one rod-shaped Archaea (H. vulcanii), two long spiral Spirochete, and one coccoid bacteria (Figure 1E). Collected data for all rod-shaped cells follow closely the relationship $S\u22482\u2062\\pi\u2062V^{2/3}$, while the long Spirochetes deviate from this curve (Figure 1D\u2013E). Coccoid S. aureus also follows the universal scaling relation $S=\\gamma\u2062V^{2/3}$ (with\u00a0\u03b3\u00a0=\u00a04.92), but maintains a much lower aspect ratio\u00a0\u03b7\u00a0=\u00a01.38\u00a0\u00b1\u00a00.18\u00a0(Quach et al., 2016) when exposed to different antibiotics (Figure 1D\u2013E). Therefore, aspect-ratio preservation likely emerges from a mechanism that is common to diverse rod-shaped and coccoid bacterial species.\n\nTo investigate how aspect ratio is regulated at the single cell level we analysed the morphologies of E. coli cells grown in the mother machine (Taheri-Araghi et al., 2015) (Figure 2A,B). For five different growth media, mean volume and surface area of newborn cells also follow the relationship $S=2\u2062\\pi\u2062V^{2/3}$, suggesting that a fixed aspect ratio is maintained on average. In the single-cell data, slight deviation from the 2/3 scaling is a consequence of large fluctuations in newborn cell lengths for a given cell width (Figure 2\u2014figure supplement 1A\u2013B). Importantly, the probability distribution of aspect ratio is independent of the growth media (Figure 2B), implying that cellular aspect ratio is independent of cell size as well as growth rate.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/47033/elife-47033-fig2-v2.jpg)\n\n**Figure 2.:** (A) $S$ vs $V$ for newborn E. coli cells grown in mother machine (Taheri-Araghi et al., 2015). Single cell data (small circles) binned in volume follow population averages (large circles). For sample size refer to Supplementary file 1. (B) Probability distribution of newborn cell aspect ratio is independent of growth rate, fitted by a log-normal distribution (solid line) (C) Model schematic. Cell length $L$ increases exponentially during the division cycle at a rate $k$. Division proteins ($P$) are produced at a rate $k_{P}$, and assembles a ring in the mid-cell region. At birth, cells contain $P^{*}$ molecules in the cytoplasm. Amount of FtsZ recruited in the ring is $P_{r}$. Cells divide when $P_{r}=P_{0}\u221dw$, where $w$ is cell width. $P$ vs time and $L$ vs time are reproduced from model simulations. (D) Ratio of the added length ($\u0394\u2062L$) and cell width ($w$) during one cell cycle is constant and independent of growth rate. Error bars: \u00b11 standard deviation.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/47033/elife-47033-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Surface area vs volume for sphero-cylindrical bacterium, computed using normal distribution for cell widths ($\\mu_{w}$,$\\sigma\u2062(w)$) and log-normal distribution ($\\mu_{L}$,$\\sigma\u2062(L)$) of cell lengths. Green line is $S=2\u2062\\pi\u2062V^{2/3}$. (B) Surface-to-volume scaling exponent computed for different values of $\\sigma\u2062(w)$ and $\\sigma\u2062(L)$ while keeping $L/w=4$. For each pair of values ($\\sigma\u2062(w)$, $\\sigma\u2062(L)$) we pick 104 random numbers from corresponding distributions and computed surface-to-volume scaling exponent. Total of 2500 pairs ($\\sigma\u2062(w)$, $\\sigma\u2062(L)$) were used. We obtained $\\sigma\u2062(w)$ and $\\sigma\u2062(L)$ of newborn cells grown in mother machine by fitting experimental distributions. These values are shown by coloured points that correspond to different growth media (Taheri-Araghi et al., 2015). Large fluctuation in new born lengths for a given cell width results in scaling exponents slightly above 2/3, as expected. (C\u2013D) Single cell data are obtained from Suckjoon Jun lab (UCSD) (Taheri-Araghi et al., 2015). (C) Single cell added length ($\u0394\u2062L$) vs average width ($w$) during one cell cycle for cell grown in TSB. Green circles represent single cell data, orange circles are average of binned data in width, error bars are \u00b11 standard deviation, and orange line is best fit to binned data ($\u0394\u2062L=4.014\u2062w$). (D) Intergeneration autocorrelation function of average cell width during one cell cycle for cell grown in TSB. Once perturbed, cell width takes \u22484 generations to equilibrate to its steady state population average. Error bars: \u00b11 standard deviation.\n\nTo explain the origin of aspect ratio homeostasis we developed a quantitative model for cell shape dynamics that accounts for the coupling between cell elongation and the accumulation of cell division proteins FtsZ (Figure 2C). Our model is thus only applicable to bacteria that divide using the FtsZ machinery. E. coli and other rod-like bacteria maintain a constant width during their cell cycle while elongating exponentially in length $L$\u00a0(Donachie et al., 1976; Taheri-Araghi et al., 2015): $d\u2062L/d\u2062t=k\u2062L$, with $k$ the elongation rate. Cell division is triggered when a constant length is added per division cycle \u2014 a mechanism that is captured by a model for threshold accumulation of division initiator proteins, produced at a rate proportional to cell size (Basan et al., 2015; Deforet et al., 2015; Ghusinga et al., 2016). While many molecular candidates have been suggested as initiators of division (Adams and Errington, 2009), a recent study (Si et al., 2019) has identified FtsZ as the key initiator protein that assembles a ring-like structure in the mid-cell region to trigger septation.\n\nDynamics of division protein accumulation can be described using a two-component model. First, a cytoplasmic component with abundance $P_{c}$ grows in proportion to cell size ($\u221dL$), as ribosome content increases with cell size (Marguerat and B\u00e4hler, 2012). Second, a ring-bound component, $P_{r}$, is assembled from the cytoplasmic pool at a constant rate. Dynamics of the cytoplasmic and ring-bound FtsZ are given by:\n\n$$\n\\frac{d\u2062P_{c}}{d\u2062t}=-k_{b}\u2062P_{c}+k_{d}\u2062P_{r}+k_{P}\u2062L,\n$$\n\n\n\n$$\n\\frac{d\u2062P_{r}}{d\u2062t}=k_{b}\u2062P_{c}-k_{d}\u2062P_{r},\n$$\n\nwhere $k_{P}$ is the constant production rate of cytoplasmic FtsZ, $k_{b}$ is the rate of binding of cytoplasmic FtsZ to the Z-ring, and $k_{d}$ is the rate of disassembly of Z-ring bound FtsZ. At the start of the cell cycle, we have $P_{c}=P^{*}$ (a constant) and $P_{r}=0$. Cell divides when $P_{r}$ reaches a threshold amount, $P_{0}$, required for the completion of ring assembly. A key ingredient of our model is that $P_{0}$ scales linearly with the cell circumference, $P_{0}=\u03c1\u2062\\pi\u2062w$, preserving the density $\u03c1$ of FtsZ in the ring. This is consistent with experimental findings that the total FtsZ scales with the cell width (Shi et al., 2017). Accumulation of FtsZ proteins, $P=P_{c}+P_{r}-P^{*}$, follows the equation: $d\u2062P/d\u2062t=k_{P}\u2062L$, where $k_{P}$ is the production rate of division proteins, with $P=0$ at the start of the division cycle. We assume that $k_{b}\u226bk_{d}$, such that all the newly synthesized cytoplasmic proteins are recruited to the Z-ring at a rate much faster than growth rate (S\u00f6derstr\u00f6m et al., 2018). As a result, cell division occurs when $P=P_{0}$ (Figure 2C). Upon division $P$ is reset to 0 for the two daughter cells. It is reasonable to assume that all the FtsZ proteins are in filamentous form at cell division, as the concentration of FtsZ in an average E. coli cell is in the range 4\u201310 \u03bcM, much higher than the critical concentration 1 \u03bcM (Erickson et al., 2010).\n\nFrom the model it follows that during one division cycle cells grow by adding a length $\u0394\u2062L=P_{0}\u2062k/k_{P}$, which equals the homeostatic length of newborn cells. Furthermore, recent experiments suggest that the amount of FtsZ synthesised per unit cell length, $d\u2062P/d\u2062L$, is constant (Si et al., 2019). This implies,\n\n$$\n\\frac{d\u2062L}{d\u2062P}=\\frac{k}{k_{P}}=\\frac{\u0394\u2062L}{P_{0}}\u221d\\frac{\u0394\u2062L}{w}=c\u2062o\u2062n\u2062s\u2062t.\n$$\n\nAspect ratio homeostasis is thus achieved via a balance between the rates of cell elongation and division protein production, consistent with observations that FtsZ overexpression leads to minicells and FtsZ depletion induces elongated phenotypes (Potluri et al., 2012; Zheng et al., 2016). Indeed single cell E. coli data (Taheri-Araghi et al., 2015) show that $\u0394\u2062L/w$ is constant on average and independent of growth conditions (Figure 2D). Furthermore, added length correlates with cell width during one cell cycle implying that the cell width is a good predictor for added cell length (Figure 2\u2014figure supplement 1C\u2013D).\n\nTo predict cell-shape dynamics under perturbations to growth conditions we simulated our single-cell model (Figure 3, Materials and methods) with an additional equation for cell width that we derived from a recent model proposed by Harris and Theriot (2016): $d\u2062S/d\u2062t=\\beta\u2062V$, where $\\beta$ is the rate of surface area synthesis relative to volume and is a linearly increasing function of $k$ (Figure 3\u2014figure supplement 1A). This model leads to an equation for the control of cell width for a sphero-cylinder shaped bacterium,\n\n$$\n\\frac{d\u2062w}{d\u2062t}=w\u2062(k-\\beta\u2062w/4)\u2062\\frac{1-w/3\u2062L}{1-w/L},\n$$\n\nsuch that $w=4\u2062k/\\beta$ at steady-state. It then follows from Equation (4) that the added cell length $\u0394\u2062L\u221dk^{2}/\\beta\u2062k_{P}$. However, our model for division control is mechanistically different from Harris and Theriot (2016). In the latter, cells accumulate a threshold amount of excess surface area material to trigger septation,\u00a0which does not lead to aspect ratio preservation. By contrast, we propose that cells divide when they accumulate a threshold amount of division proteins in the Z-ring, proportional to the cell diameter.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/47033/elife-47033-fig3-v2.jpg)\n\n**Figure 3.:** (A\u2013C) At t\u00a0=\u00a00\u00a0h cells are exposed to nutrient upshift or downshift. Population average of n\u00a0=\u00a0105 simulated cells. (A) Growth rate ($k$) vs time used as input for our simulations. (B) Population-averaged cell length and width vs time. (C) Population-averaged aspect ratio of newborn cells vs time. Changes in cell width and length result in a transient increase in aspect ratio during nutrient downshift, or a transient decrease during nutrient upshift.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/47033/elife-47033-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) From experimental measurement of growth rate $k$ and cell width $w$ we calculated surface area production rate $\\beta=4\u2062k/w$. Data from Si et al. (2017). Dashed black line is best fit that we used in nutrient shift simulations. (B\u2013E) Single cell traces for simulation of cell shape dynamics during nutrient upshift. (B) Division protein vs time normalised by $P_{0}$ before the nutrient shift. (C) Growth rate vs time. (D) Length vs time. Length fluctuations at division is a consequence of noise in division ratio (see Materials and methods). (E) Cell width vs time. (F) Aspect ratio of newborn cells vs generation number for single cell data from mother machine (Taheri-Araghi et al., 2015). Newborn cells with aspect ratio between 5\u20136 or 3\u20133.5 were tracked over generations. Population average for given generation number over 737\u20132843 cells for different growth condition is shown.\n\nWe simulated nutrient shift experiments using the coupled equations for cell length, width and division protein production (Materials and methods). When simulated cells are exposed to new nutrient conditions (Figure 3\u2014figure supplement 1B\u2013E), changes in cell width result in a transient increase in aspect ratio ($\u03b7=L/w$) during nutrient downshift, or a transient decrease in $\u03b7$ during nutrient upshift (Figure 3C). After nutrient shift, aspect ratio reaches its pre-stimulus homeostatic value over multiple generations. Typical timescale for transition to the new steady-state is controlled by the growth rate of the new medium ($\u221dk^{-1}$), such that the cell shape parameters reach a steady state faster in media with higher growth rate. This result is consistent with the experimental observation that newborn aspect ratio reaches equilibrium faster in fast growing media (Taheri-Araghi et al., 2015) (Figure 3\u2014figure supplement 1F). In our model, cell shape changes are controlled by two parameters: the ratio $k/k_{P}$ that determines cell aspect ratio, and $k/\\beta$ that controls cell width (Figure 4A). Nutrient upshift or downshift only changes the ratio $k/\\beta$ while keeping the steady-state aspect ratio $(\u221dk/k_{P})$ constant.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/47033/elife-47033-fig4-v2.jpg)\n\n**Figure 4.:** (A) Model parameters that control changes in cell aspect ratio ($k/k_{P}$) or width ($k/\\beta$). For quantification see Figure 4\u2014figure supplement 1A. (B) Surface area vs volume for cells under antibiotic treatment (Nonejuie et al., 2013), FtsZ knockdown and MreB depletion (Si et al., 2017; Zheng et al., 2016). Solid lines are best fit obtained using our model and data from Zheng et al. (2016) (see Materials and methods). Cells with depleted FtsZ have elongated phenotypes, while depleted MreB have smaller aspect ratio and larger width. Cell wall or DNA targeting antibiotics induce filamentation. Dashed green line: $S=2\u2062\\pi\u2062V^{2/3}$, dashed black line: spheres.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/47033/elife-47033-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Quantification of surface-to-volume ratio for the schematic shown in Figure 4A. (B) Model prediction for cellular aspect ratio (average over newborn cells) as a function of $k_{b}/k_{d}$. Here $k_{b}$ is the rate of binding of cytoplasmic FtsZ to the Z-ring, and $k_{d}$ is the rate of disassembly of Z-ring bound FtsZ. Dashed green horizontal line corresponds to aspect ratio of 4, obtained in the limit $k_{b}\u226bk_{d}$. (C) Comparison of surface-to-volume scaling for E. coli treated with fosfomycin (Harris and Theriot, 2016) and under FtsZ knockdown (Zheng et al., 2016).\n\nWe further used our model to predict drastic shape changes leading to deviations from the homeostatic aspect ratio when cells are perturbed by FtsZ knockdown, MreB depletion, and antibiotic treatments that induce non steady state filamentation (Figure 4B). First, FtsZ depletion results in long cells while the width stays approximately constant, $S\u221dV^{0.95}$ (Figure 4\u2014figure supplement 1C), data from Zheng et al. (2016). We modelled FtsZ knockdown by decreasing $k_{P}$ and simulations quantitatively agree with experimental data. Second, MreB depletion increases the cell width and slightly decreases cell length while keeping growth rate constant (Zheng et al., 2016). We modelled MreB knockdown by decreasing $\\beta$ as expected for disruption in cell wall synthesis machinery, while simultaneously increasing $k_{P}$ (Materials and methods). This increase in $k_{P}$ is consistent with a prior finding that in MreB mutant cells of various sizes, the total FtsZ scales with the cell width (Shi et al., 2017). Furthermore, cells treated with MreB inhibitor A22 induce envelope stress response system (Rcs) that in turn activates FtsZ overproduction (Carball\u00e8s et al., 1999; Cho et al., 2014). Third, transient long filamentous cells result from exposure to high dosages of cell-wall targeting antibiotics that prevent cell division, or DNA-targeting antibiotics that induce filamentation via SOS response (Nonejuie et al., 2013). Cell-wall targeting antibiotics inhibit the activity of essential septum forming penicillin binding proteins, preventing cell septation. We modelled this response as an effective reduction in $k_{P}$, while slightly decreasing surface synthesis rate $\\beta$ (Materials and methods). For DNA targeting antibiotics, FtsZ is directly sequestered during SOS response resulting in delayed ring formation and septation (Chen et al., 2012). Surprisingly all filamentous cells have a similar aspect ratio of 11.0\u00a0\u00b1\u00a01.4, represented by a single curve in the $S$-$V$ plane (Figure 4B).\n\n## Discussion\n\nThe conserved surface-to-volume scaling in diverse bacterial species, $S\u223cV^{2/3}$, is a direct consequence of aspect-ratio homeostasis at the single-cell level. We present a regulatory model (Figure 2C) where aspect-ratio control is the consequence of a constant ratio between the rate of cell elongation ($k$) and division protein accumulation ($k_{P}$). Deviation from the homeostatic aspect ratio is a consequence of altered $k/k_{P}$, as observed in filamentous cells, FtsZ or MreB depleted cells (Figure 4B). By contrast, drugs that target cell wall biogenesis, for\u00a0example Fosfomycin, do not alter $k/k_{P}$ and maintain cellular aspect ratio (Figure 4\u2014figure supplement 1C).\n\nOur study suggests that cell width is an essential shape parameter for determining cell length in E. coli (Figure 2\u2014figure supplement 1C\u2013D). This is to be contrasted with B. subtilis, where cell width stays approximately constant across different media, while elongating in length (Sharpe et al., 1998). However, FtsZ recruitment in B. subtilis is additionally controlled by effector UgtP, which localises to the division site in a nutrient-dependent manner and prevents Z-ring assembly (Weart et al., 2007). This can be interpreted as a reduction in $k_{P}$ with increasing $k$, within the framework of our model. As a result, B. subtilis aspect ratio ($\u221dk/k_{P}$) is predicted to increase with increasing growth rate.\n\nAspect ratio control may have several adaptive benefits. For instance, increasing cell surface-to-volume ratio under low nutrient conditions can result in an increased nutrient influx to promote cell growth (Figure 1C). Under translation inhibition by ribosome-targeting antibiotics, bacterial cells increase their volume while preserving aspect ratio (Harris and Theriot, 2016; Si et al., 2017). This leads to a reduction in surface-to-volume ratio to counter further antibiotic influx. Furthermore, recent studies have shown that the efficiency of swarming bacteria strongly depends on their aspect ratio (Ilkanaiv et al., 2017; Jeckel et al., 2019). The highest foraging speed has been observed for aspect ratios in the range 4\u20136 (Ilkanaiv et al., 2017), suggesting that the maintenance of an optimal aspect ratio may have evolutionary benefits for cell swarmers.\n\n## Materials and methods\n\n### Cell shape analysis\n\nBacterial cell surface area and volume are obtained directly from previous publications where these values were reported (Si et al., 2017; Campos et al., 2018; Gray et al., 2019), or they are calculated assuming a sphero-cylindrical cell geometry using reported values for population-averaged cell length and width (Vadia et al., 2017; Nonejuie et al., 2013; Zheng et al., 2016; Wright et al., 2015; Deforet et al., 2015; Desmarais et al., 2015; Ojkic et al., 2016; Carabetta et al., 2016; Lopez-Garrido et al., 2018). Single cell data are obtained from Suckjoon Jun lab (UCSD) (Taheri-Araghi et al., 2015). For number of cells analyzed per growth condition see Supplementary file 1. Intergeneration autocorrelation function (Figure 2\u2014figure supplement 1D) of average cell width during one cell cycle is calculated using expression in Ojkic et al. (2014). For a spherocylinder of pole-to-pole length $L$ and width $w$, the surface area is $S=w\u2062L\u2062\\pi$, and volume is given by $V=\\frac{\\pi}{4}\u2062w^{2}\u2062L-\\frac{\\pi}{12}\u2062w^{3}$. In the case of S. aureus, surface area and volume are computed assuming prolate spheroidal shape using reported population averaged values of cell major axis, $c$, and minor axis $a$\u00a0(Quach et al., 2016). Surface area of a prolate spheroid is $S=2\u2062\\pi\u2062a^{2}+\\frac{2\u2062\\pi\u2062a\u2062c^{2}}{\\sqrt{c^{2}-a^{2}}}\u2062arcsin\u2061(\\frac{\\sqrt{c^{2}-a^{2}}}{c})$, and volume is $V=\\frac{4\u2062\\pi}{3}\u2062a^{2}\u2062c$.\n\n### Cell growth simulations\n\nWe simulated the single-cell model using the coupled equations for the dynamics of cell length $L$, cell width $w$, and division protein production $P$ (Figure 2C). In simulations, when $P$ reaches the threshold $P_{0}=\u03c1\u2062\\pi\u2062w$, the mother cell divides into two daughter cells whose lengths are 0.5 \u00b1 \u03b4 of the mother cell. Parameter $\\delta$ is picked from Gaussian distribution ($\\mu=0$, $\\sigma=0.05$).\n\nFor nutrient shift simulations we simulated 105 asynchronous cells growing at a rate $k=0.75\u2062h^{-1}$ (Figure 3). In Equation 5, parameter $\\beta=4\u2062k/w$ is obtained from the fit to experimental data for $4\u2062k/w$ vs $k$ (Figure 3\u2014figure supplement 1A) (Si et al., 2017), giving $\\beta=3.701\u2062k+0.996$, where $k$ is in units of h\u20131, and $\\beta$ in h-1\u00a0\u03bcm-1. At t\u00a0=\u00a00 h we change $k$ corresponding to nutrient upshift ($k=$ 1.25, 2\u00a0h-1) or nutrient downshift ($k=$ 0.75, 0.25 h-1). We calculated population average of length and width (Figure 3B), and population average of aspect ratio of newborn cells (Figure 3C). Aspect ratio of newborn cells are binned in time and the bin average is calculated for a temporal bin size of 10 min. Examples of single cell traces during the nutrient shift are shown in Figure 3\u2014figure supplement 1B\u2013E.\n\nFtsZ depletion experiment (Zheng et al., 2016) was simulated for $w=1\\mum$ while $k_{P}$ was reduced to 40% of its initial value. This is consistent with the reduction of relative mRNA to \u223c40% corresponding to addition of 3 ng/ml of aTc to reduce ftsZ expression (Zheng et al., 2016). Our model predictions for the dependence of cell aspect ratio on $k_{b}/k_{d}$ is shown in Figure 4\u2014figure supplement 1B.\n\nBest fit for MreB depletion experiment (Zheng et al., 2016) was obtained for\u00a0\u03b7 \u2248\u00a02.7, by simulating reduction in division protein production rate, $k_{P}$, and by varying $\\beta$ so that width spans range from 0.9 to 1.8 \u03bcm. The best fit for long filamentous cells (resulting from DNA or cell-wall targeting antibiotics) was obtained for \u03b7 \u2248 11.0 . Filamentation was simulated by decreasing $k_{P}$ and $\\beta$ so that $w$ spans the range from 0.9 to 1.4 \u03bcm as experimentally observed (Nonejuie et al., 2013).\n\nOpen Source Physics (www.compadre.org) Java was used for executing the simulations and Mathematica 11 for data analysis, model fitting, and data presentation.\n",
+      "created_at": "2025-12-02T11:54:12.089823Z"
+    },
+    {
+      "id": "adf702d5-1086-4ea9-8b5f-c2c96effeb37",
+      "submission_id": "bc72b99e-1637-4f19-9716-beb6fa4978ea",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Raymond E Goldstein, University of Cambridge United Kingdom\n\nReviewers:\n- Charles W Wolgemuth\n\n## Review text\n\nDOI: [10.7554/eLife.47033.014](https://doi.org/10.7554/eLife.47033.014)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\n[Editors\u2019 note: this article was originally rejected after discussions between the reviewers, but the authors were invited to resubmit after an appeal against the decision.]\n\nThank you for submitting your work entitled \"Universal surface-to-volume scaling and aspect ratio homeostasis in rod-shaped bacteria\" for consideration by eLife. Your article has been reviewed by two peer reviewers, and the evaluation has been overseen by a Reviewing Editor and a Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Charles W Wolgemuth (Reviewer #1).\n\nThe reviewers had no doubt that the subject matter of your paper is both interesting and timely, but both have raised questions about its significance, the nature of the underlying assumptions, and the level of \"universality\" that can be claimed. Our decision on your manuscript has been reached after consultation between the reviewers. Based on these discussions and the individual reviews below, we regret to inform you that your work will not be considered further for publication in eLife.\n\nReviewer #1:\n\nThis manuscript compiles data on the length, width, and growth rate of E. coli under a number of experimental perturbations, such as changes in growth medium, incubation in antibiotics, inhibited protein synthesis, etc. and shows that the surface area to volume ratio is strongly conserved. This result is consistent with recent work from Julie Theriot's group (which is cited in Harris and Theriot, 2016; 2018). In this manuscript, the author's also add data from other rod-shaped bacteria that show similar behavior (Figure 1G). The authors use this result to develop a model for aspect ratio regulation that is based on exponential growth of the bacterial length at fixed width, FtsZ production at a rate proportional to volume growth rate (which by assuming constant width also assumes that the FtsZ production is proportional to the length growth rate), and division that occurs when FtsZ production reaches a critical value that is proportional to the width. This model predicts a constant aspect ratio and the authors then go on to predict the dynamics under impulse type perturbations.\n\nI have two main concerns with the manuscript.\n\nFirst, the only novelty of the model is the assumption that there is a critical amount of FtsZ required to divide the cell and that this depends on the width. I think that this is a reasonable assumption, but I also feel that the overall results are fairly obvious. That is, it is not clear that the model provides a significant advance in our understanding. That said, there is also a small problem with the model, in that we would expect the binding rate of FtsZ to depend on the surface to volume ratio (which turns out not to matter, because the authors end up making assumptions that the rate the ring is built is equal to the protein production rate). Note also that there is a typo in the equation fordPrdt, which has kd multiplying both rates.\n\nSecond, and more important, is that while the results match well with the data, there are a number of aspects of the presentation that are misleading. The title claims that the results/model presented here are universal. In Figure 1G, the authors select 7 bacteria to claim that the scaling of SA = 2 \u03c0 V(2/3) is ubiquitous among bacteria. As noted, this also suggests that an aspect ratio of ~4 is the rule for rod-shaped bacteria. This is not true. As an example, myxococcus xanthus has an aspect ratio around 7-8 and spirochetes have aspect ratios of ~30! Even more importantly, single species don't always maintain the same aspect ratio. In B. subtilis, the aspect ratio can vary between at least 3.8 \u2013 8 (see Ilkanaiv et al., 2017). Therefore, this model may be applicable to E. coli (and possibly some other bacteria), but it is not universal.\n\nReviewer #2:\n\nIn this study the authors set out to study the size and shape of a wide range of 'rod-shaped' cells by collecting image data from at least seven different species and thousands to total conditions (genotype x nutrients x antibiotics). Across all these conditions, the authors find a simple scaling law to the surface area/volume ratio, namely a scaling that preserves the aspect ratio of the cell at roughly 4:1. Given this observation, they build a simple, mechanistically inspired, quantitative model for the growth of the cell. Using this model, they are able to tune three parameters (k, kp, \u03b2) to match a collection of genetic knockdown and antibiotic treatment experiments.\n\nUnderstanding how cell size and shape homeostasis is maintained throughout the bacterial kingdom is a very interesting and important problem and these authors should be commended for pushing the community to consider that these mechanisms may be conserved across a wide phylogenetic range. However, given the extensive body of literature already available about cell size/shape homeostasis, and, in particular the review mentioned by the authors by Harris and Theriot, the scientific bar for productive engagement on this topic is already quite high. Much of the intellectual driving force for this work seems to follow directly from the hypothesis from Harris and Theriot that \"While many studies have treated volume as the actively controlled parameter in this scenario, our recent work suggests that it is likely the other way around, and that SA/V is the actively regulated variable, with size following along as necessary [13].\" The current work seeks to extend or provide alternatives for the mechanistic models presented in Harris and Theriot as well as integrate additional data in other species. However, given that the idea of SA/V scaling conservation is not new, appealing to a broad audience such as that of eLife would require experimental validation of their mechanistic model.\n\nIn addition to the core concerns around novelty of the central hypothesis and validity of the mechanistic model, there are a few issues the authors might choose to consider:\n\nMajor points:\n\n1) The authors should clearly explain how their mechanistic model contrasts with the cell wall-focused model proposed by Harris and Theriot and should strive to propose experiments with predicted outcomes that would differentiate a peptidoglycan centric model from an FtsZ centric model. If the data already exist to rule out one of them, this should be clearly presented. As one such example, the authors show that tuning one parameter (kp) is consistent with the experimental notion of knocking down the production of FtsZ. However, they fail to show if there is quantitative agreement between the production rate of FtsZ and the amount they expect to need to change kp(40%).\n\n2) The use of 'universal' in the paper's title significantly oversells of the breadth of species included in the observations and a power law describing data which span roughly one order of magnitude. While the authors do include a large collection of data, the collection is far from comprehensive for all size/shape data available and the authors do not clearly indicate why they limited themselves to the data they did. A quick literature search reveals anecdotal evidence of bacterial sizes that are much smaller than a micron such as Brevundimonas (PDA J Pharm Sci Technol. 2002 Mar-Apr;56(2):99-108.) to nearly a millimeter in length Epulopiscium (J. Protozoal., 35(4), 1988, pp. 565-569). Granted, these publications may not have the same type of data necessary to integrate it directly into their model, but for a discussion of the 'universal scaling', the authors should push themselves to cover as large of a length-scale as possible. When choosing a set of species for inclusion in this study, it seems like the microbiology community may have already picked an aspect ratio of about 4:1 in its definition of rod-shaped bacteria. For example, cells that have a much shorter aspect ratio are given the term ovoid or lancet (Streptococcus pneumoniae) or spherical (Staphylococcus aureus included here) and ones that are much longer are called filamentous (Sphaerotilus natans). Confusingly, these authors do not include species that have been traditionally classified as rod-shaped cells with a longer aspect ratio such as (Helicobacter, Spiroplasma, Spirochetes, Myxobacter).\n\n3) I'm not entirely convinced that the universal scaling applies within the single cell data (Figure 1D). By plotting the single cell data from a variety of experiments, the range of the data seems to put a larger priority on the averages. However, within each condition there seems to be clear deviations from the 'single aspect ratio', consistent with the author's single cell growth model that cells grow without changing their diameter before dividing. This should result in a roughly factor of two change in aspect ratio from birth to division. I think this is what the authors refer to in the fourth paragraph of the Introduction but should discuss more fully.\n\n4) I do not understand Figure 2B at all. In particular, the binning of the data that I have been able to find in Taheri-Araghi et al., 2015, is binned by the size of cells at birth, not the individual cell growth rate. Further, the authors do not describe how they go from the data in Taheri-Araghi et al., 2015, to the data in Figure 2B, but it could be that they obtained the raw data from the authors and performed a new type of analysis. If so, a description of this process should be included.\n\n5) I am unclear about why the MreB and FtsZ knockdown data from Si et al. is included in the bulk Figure 1A data but the MreB and FtsZ knockdown data from Zheng et al. is treated as a completely separate experiment. If the approach that these two studies used was different, it may be helpful to explain why some data are included in one place and others are not.\n",
+      "created_at": "2025-12-02T11:54:12.089823Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T11:54:12.089823Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T11:54:12.089823Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "942bc247-afb9-46d0-9cda-d97606f76e50",
+      "content_id": "50407bff-8ed1-442c-aafc-5fe7d1f36472",
+      "claim_id": "C1",
+      "claim": "Rod-shaped bacterial cells can readily adapt their lengths and widths in response to environmental changes.",
+      "claim_type": "EXPLICIT",
+      "source": "Rod-shaped bacterial cells can readily adapt their lengths and widths in response to environmental changes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as a general observation about bacterial behavior.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:54:12.089823Z"
+    },
+    {
+      "id": "297176f9-0608-4905-a24c-b51cbb280676",
+      "content_id": "50407bff-8ed1-442c-aafc-5fe7d1f36472",
+      "claim_id": "C3",
+      "claim": "During steady-state growth, \u03b3 = 6.24 \u00b1 0.04 for E. coli.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, during steady-state growth (Si et al., 2017), \u03b3 = 6.24 \u00b1 0.04",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a specific numerical result obtained from fitting experimental data from Si et al. (2017).",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:54:12.089823Z"
+    },
+    {
+      "id": "91e444dc-496f-481b-abdb-47515826e6ae",
+      "content_id": "50407bff-8ed1-442c-aafc-5fe7d1f36472",
+      "claim_id": "C7",
+      "claim": "The coefficient of variation for E. coli aspect ratio is approximately 14%.",
+      "claim_type": "EXPLICIT",
+      "source": "with a coefficient of variation \u223c14% (Figure 1B)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statistical measure calculated from the aspect ratio distribution shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:54:12.089823Z"
+    },
+    {
+      "id": "9e55c022-587e-4ab1-a4d7-751c837d412f",
+      "content_id": "50407bff-8ed1-442c-aafc-5fe7d1f36472",
+      "claim_id": "C8",
+      "claim": "Both cell length and width increase with growth rate when rod-shaped bacteria grow in media with different nutrient availability.",
+      "claim_type": "EXPLICIT",
+      "source": "When rod-shaped bacteria grow in media with different nutrient availability, both cell length and width increase with growth rate (Schaechter et al., 1958; Si et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by cited experimental studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:54:12.089823Z"
+    },
+    {
+      "id": "f310c520-cc13-4ea0-91eb-40b0829047a1",
+      "content_id": "50407bff-8ed1-442c-aafc-5fe7d1f36472",
+      "claim_id": "C9",
+      "claim": "Control of cell volume in many rod-shaped cells is achieved via an adder mechanism, whereby cells elongate by a fixed length per division cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "At the single-cell level, control of cell volume in many rod-shaped cells is achieved via an adder mechanism, whereby cells elongate by a fixed length per division cycle (Amir, 2014; Campos et al., 2014; Taheri-Araghi et al., 2015; Deforet et al., 2015; Wallden et al., 2016; Banerjee et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple cited studies demonstrating the adder mechanism.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:54:12.089823Z"
+    },
+    {
+      "id": "34e12c88-ed8c-4cd8-82fe-6c61cd903632",
+      "content_id": "50407bff-8ed1-442c-aafc-5fe7d1f36472",
+      "claim_id": "C10",
+      "claim": "The determination of cell size has been linked to a condition-dependent regulation of cell surface-to-volume ratio.",
+      "claim_type": "EXPLICIT",
+      "source": "A recent study has linked the determination of cell size to a condition-dependent regulation of cell surface-to-volume ratio (Harris and Theriot, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on a cited study by Harris and Theriot (2016).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:54:12.089823Z"
+    },
+    {
+      "id": "496b7ca1-536f-4b3c-90b6-c12075c874ec",
+      "content_id": "50407bff-8ed1-442c-aafc-5fe7d1f36472",
+      "claim_id": "C14",
+      "claim": "At low nutrient concentrations, cells increase their surface-to-volume ratio to promote nutrient influx.",
+      "claim_type": "EXPLICIT",
+      "source": "In Equation (1) underlies an adaptive feedback response of the cell \u2014 at low nutrient concentrations, cells increase their surface-to-volume ratio to promote nutrient influx (Si et al., 2017; Harris and Theriot, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the mathematical relationship supported by cited studies.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:54:12.089823Z"
+    },
+    {
+      "id": "2558440c-c6c1-41f6-8082-f5b8fc1a4ea2",
+      "content_id": "50407bff-8ed1-442c-aafc-5fe7d1f36472",
+      "claim_id": "C16",
+      "claim": "Cell width and length under changes in growth media can be directly predicted from knowing cell volume as a function of cell cycle parameters.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, knowing cell volume as a function of cell cycle parameters (Si et al., 2017) we can directly predict cell width and length under changes in growth media, in agreement with experimental data (Figure 1\u2014figure supplement 1A\u2013B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by comparing model predictions with experimental data shown in Figure 1\u2014figure supplement 1A\u2013B.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:54:12.089823Z"
+    },
+    {
+      "id": "bc8e7cac-65ff-4421-994b-886ced10ce07",
+      "content_id": "50407bff-8ed1-442c-aafc-5fe7d1f36472",
+      "claim_id": "C18",
+      "claim": "Long Spirochetes deviate from the S\u22482\u03c0V^(2/3) curve.",
+      "claim_type": "EXPLICIT",
+      "source": "while the long Spirochetes deviate from this curve (Figure 1D\u2013E)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed in the data shown in Figure 1D-E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:54:12.089823Z"
+    },
+    {
+      "id": "48898ff8-b293-4f5b-a15f-bc284ab4bd71",
+      "content_id": "50407bff-8ed1-442c-aafc-5fe7d1f36472",
+      "claim_id": "C20",
+      "claim": "Coccoid S. aureus maintains an aspect ratio \u03b7 = 1.38 \u00b1 0.18 when exposed to different antibiotics.",
+      "claim_type": "EXPLICIT",
+      "source": "but maintains a much lower aspect ratio \u03b7 = 1.38 \u00b1 0.18 (Quach et al., 2016) when exposed to different antibiotics",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is calculated from data in the cited study by Quach et al. (2016).",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:54:12.089823Z"
+    },
+    {
+      "id": "003467f0-f90f-43a4-baa0-a01fcf5074b0",
+      "content_id": "50407bff-8ed1-442c-aafc-5fe7d1f36472",
+      "claim_id": "C21",
+      "claim": "Aspect-ratio preservation likely emerges from a mechanism that is common to diverse rod-shaped and coccoid bacterial species.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, aspect-ratio preservation likely emerges from a mechanism that is common to diverse rod-shaped and coccoid bacterial species.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that both rod-shaped and coccoid bacteria maintain constant aspect ratios.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:54:12.089823Z"
+    },
+    {
+      "id": "6b96be2b-a620-49eb-bebf-a5c9f11f67c5",
+      "content_id": "50407bff-8ed1-442c-aafc-5fe7d1f36472",
+      "claim_id": "C23",
+      "claim": "A fixed aspect ratio is maintained on average for newborn cells across different growth media.",
+      "claim_type": "EXPLICIT",
+      "source": "suggesting that a fixed aspect ratio is maintained on average",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that S=2\u03c0V^(2/3) holds across different media.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:54:12.089823Z"
+    },
+    {
+      "id": "30f09780-3f4a-491c-befc-71746c75b5d3",
+      "content_id": "50407bff-8ed1-442c-aafc-5fe7d1f36472",
+      "claim_id": "C24",
+      "claim": "Slight deviation from the 2/3 scaling in single-cell data is a consequence of large fluctuations in newborn cell lengths for a given cell width.",
+      "claim_type": "EXPLICIT",
+      "source": "In the single-cell data, slight deviation from the 2/3 scaling is a consequence of large fluctuations in newborn cell lengths for a given cell width (Figure 2\u2014figure supplement 1A\u2013B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is explained by analysis shown in Figure 2\u2014figure supplement 1A\u2013B.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:54:12.089823Z"
+    },
+    {
+      "id": "719f9e05-bdde-41e2-89f7-f216de4c6747",
+      "content_id": "50407bff-8ed1-442c-aafc-5fe7d1f36472",
+      "claim_id": "C25",
+      "claim": "The probability distribution of aspect ratio is independent of the growth media.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, the probability distribution of aspect ratio is independent of the growth media (Figure 2B)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by the overlapping distributions shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:54:12.089823Z"
+    },
+    {
+      "id": "289654df-d39c-4016-8ca7-d4ebbec57f8e",
+      "content_id": "50407bff-8ed1-442c-aafc-5fe7d1f36472",
+      "claim_id": "C26",
+      "claim": "Cellular aspect ratio is independent of cell size as well as growth rate.",
+      "claim_type": "EXPLICIT",
+      "source": "implying that cellular aspect ratio is independent of cell size as well as growth rate",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that aspect ratio distributions are independent of growth media.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:54:12.089823Z"
+    },
+    {
+      "id": "da30ac29-b9e2-478f-b252-bdb9c62c5863",
+      "content_id": "50407bff-8ed1-442c-aafc-5fe7d1f36472",
+      "claim_id": "C28",
+      "claim": "Cell division is triggered when a constant length is added per division cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "Cell division is triggered when a constant length is added per division cycle \u2014 a mechanism that is captured by a model for threshold accumulation of division initiator proteins, produced at a rate proportional to cell size (Basan et al., 2015; Deforet et al., 2015; Ghusinga et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the adder mechanism supported by cited studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:54:12.089823Z"
+    },
+    {
+      "id": "92748609-2d98-4846-9bf8-7cd5fd2a9b9a",
+      "content_id": "50407bff-8ed1-442c-aafc-5fe7d1f36472",
+      "claim_id": "C29",
+      "claim": "FtsZ has been identified as the key initiator protein that assembles a ring-like structure in the mid-cell region to trigger septation.",
+      "claim_type": "EXPLICIT",
+      "source": "a recent study (Si et al., 2019) has identified FtsZ as the key initiator protein that assembles a ring-like structure in the mid-cell region to trigger septation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on a cited study by Si et al. (2019).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:54:12.089823Z"
+    },
+    {
+      "id": "8177f6fc-ecbc-40f4-abce-fe6ce8fa4930",
+      "content_id": "50407bff-8ed1-442c-aafc-5fe7d1f36472",
+      "claim_id": "C33",
+      "claim": "The total FtsZ scales with the cell width.",
+      "claim_type": "EXPLICIT",
+      "source": "This is consistent with experimental findings that the total FtsZ scales with the cell width (Shi et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the cited experimental study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:54:12.089823Z"
+    },
+    {
+      "id": "2608d3c5-ceea-4290-bd25-f0302abca4ca",
+      "content_id": "50407bff-8ed1-442c-aafc-5fe7d1f36472",
+      "claim_id": "C34",
+      "claim": "The concentration of FtsZ in an average E. coli cell is in the range 4\u201310 \u03bcM, much higher than the critical concentration 1 \u03bcM.",
+      "claim_type": "EXPLICIT",
+      "source": "It is reasonable to assume that all the FtsZ proteins are in filamentous form at cell division, as the concentration of FtsZ in an average E. coli cell is in the range 4\u201310 \u03bcM, much higher than the critical concentration 1 \u03bcM (Erickson et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on cited measurements of FtsZ concentration.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:54:12.089823Z"
+    },
+    {
+      "id": "dde54ac3-fb20-4035-b063-18f8a8c5b2da",
+      "content_id": "50407bff-8ed1-442c-aafc-5fe7d1f36472",
+      "claim_id": "C37",
+      "claim": "Aspect ratio homeostasis is achieved via a balance between the rates of cell elongation and division protein production.",
+      "claim_type": "EXPLICIT",
+      "source": "Aspect ratio homeostasis is thus achieved via a balance between the rates of cell elongation and division protein production, consistent with observations that FtsZ overexpression leads to minicells and FtsZ depletion induces elongated phenotypes (Potluri et al., 2012; Zheng et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the model and supported by cited experimental observations.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:54:12.089823Z"
+    },
+    {
+      "id": "1bf6dee8-fc2a-4059-a70a-e2b4103ca624",
+      "content_id": "50407bff-8ed1-442c-aafc-5fe7d1f36472",
+      "claim_id": "C39",
+      "claim": "Added length correlates with cell width during one cell cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, added length correlates with cell width during one cell cycle implying that the cell width is a good predictor for added cell length (Figure 2\u2014figure supplement 1C\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by data in Figure 2\u2014figure supplement 1C\u2013D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:54:12.089823Z"
+    },
+    {
+      "id": "bd43d6c8-e1d4-4ecd-b5b1-4a1abc86b5b6",
+      "content_id": "50407bff-8ed1-442c-aafc-5fe7d1f36472",
+      "claim_id": "C45",
+      "claim": "After nutrient shift, aspect ratio reaches its pre-stimulus homeostatic value over multiple generations.",
+      "claim_type": "EXPLICIT",
+      "source": "After nutrient shift, aspect ratio reaches its pre-stimulus homeostatic value over multiple generations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in the model simulations shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:54:12.089823Z"
+    },
+    {
+      "id": "14171bda-84c3-416e-8e87-c35b9d276bff",
+      "content_id": "50407bff-8ed1-442c-aafc-5fe7d1f36472",
+      "claim_id": "C47",
+      "claim": "Cell shape parameters reach a steady state faster in media with higher growth rate.",
+      "claim_type": "EXPLICIT",
+      "source": "such that the cell shape parameters reach a steady state faster in media with higher growth rate. This result is consistent with the experimental observation that newborn aspect ratio reaches equilibrium faster in fast growing media (Taheri-Araghi et al., 2015) (Figure 3\u2014figure supplement 1F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is consistent with experimental observations shown in Figure 3\u2014figure supplement 1F.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:54:12.089823Z"
+    },
+    {
+      "id": "c35a181a-4301-4717-879c-32d938fb67aa",
+      "content_id": "50407bff-8ed1-442c-aafc-5fe7d1f36472",
+      "claim_id": "C52",
+      "claim": "MreB depletion increases the cell width and slightly decreases cell length while keeping growth rate constant.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, MreB depletion increases the cell width and slightly decreases cell length while keeping growth rate constant (Zheng et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on experimental observations from Zheng et al. (2016).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:54:12.089823Z"
+    },
+    {
+      "id": "6d137f4b-ea07-461b-8714-8b8a913e1825",
+      "content_id": "50407bff-8ed1-442c-aafc-5fe7d1f36472",
+      "claim_id": "C55",
+      "claim": "Cells treated with MreB inhibitor A22 induce envelope stress response system (Rcs) that in turn activates FtsZ overproduction.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, cells treated with MreB inhibitor A22 induce envelope stress response system (Rcs) that in turn activates FtsZ overproduction (Carball\u00e8s et al., 1999; Cho et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on cited studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:54:12.089823Z"
+    },
+    {
+      "id": "9a672e04-bcaa-4df1-8fed-676b90ed3f5d",
+      "content_id": "50407bff-8ed1-442c-aafc-5fe7d1f36472",
+      "claim_id": "C56",
+      "claim": "Transient long filamentous cells result from exposure to high dosages of cell-wall targeting antibiotics that prevent cell division.",
+      "claim_type": "EXPLICIT",
+      "source": "Third, transient long filamentous cells result from exposure to high dosages of cell-wall targeting antibiotics that prevent cell division, or DNA-targeting antibiotics that induce filamentation via SOS response (Nonejuie et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on experimental observations from Nonejuie et al. (2013).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:54:12.089823Z"
+    },
+    {
+      "id": "daa6fe68-3887-4836-9b61-2e8a34b89dea",
+      "content_id": "50407bff-8ed1-442c-aafc-5fe7d1f36472",
+      "claim_id": "C57",
+      "claim": "Cell-wall targeting antibiotics inhibit the activity of essential septum forming penicillin binding proteins, preventing cell septation.",
+      "claim_type": "EXPLICIT",
+      "source": "Cell-wall targeting antibiotics inhibit the activity of essential septum forming penicillin binding proteins, preventing cell septation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the mechanism of cell-wall targeting antibiotics.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:54:12.089823Z"
+    },
+    {
+      "id": "cbc1b51c-be80-4c71-8b27-50ed746cd0c4",
+      "content_id": "50407bff-8ed1-442c-aafc-5fe7d1f36472",
+      "claim_id": "C59",
+      "claim": "For DNA targeting antibiotics, FtsZ is directly sequestered during SOS response resulting in delayed ring formation and septation.",
+      "claim_type": "EXPLICIT",
+      "source": "For DNA targeting antibiotics, FtsZ is directly sequestered during SOS response resulting in delayed ring formation and septation (Chen et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on a cited study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:54:12.089823Z"
+    },
+    {
+      "id": "26377433-aef5-4270-bb44-492ff1e2ec32",
+      "content_id": "50407bff-8ed1-442c-aafc-5fe7d1f36472",
+      "claim_id": "C65",
+      "claim": "Cell width is an essential shape parameter for determining cell length in E. coli.",
+      "claim_type": "EXPLICIT",
+      "source": "Our study suggests that cell width is an essential shape parameter for determining cell length in E. coli (Figure 2\u2014figure supplement 1C\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the correlation shown in Figure 2\u2014figure supplement 1C\u2013D.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:54:12.089823Z"
+    },
+    {
+      "id": "a43bb37f-fa57-4e59-a489-9ef743e5a30b",
+      "content_id": "50407bff-8ed1-442c-aafc-5fe7d1f36472",
+      "claim_id": "C66",
+      "claim": "In B. subtilis, cell width stays approximately constant across different media, while elongating in length.",
+      "claim_type": "EXPLICIT",
+      "source": "This is to be contrasted with B. subtilis, where cell width stays approximately constant across different media, while elongating in length (Sharpe et al., 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on a cited study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:54:12.089823Z"
+    },
+    {
+      "id": "542f8255-f1f6-4411-98f6-73ed315e7f65",
+      "content_id": "50407bff-8ed1-442c-aafc-5fe7d1f36472",
+      "claim_id": "C67",
+      "claim": "FtsZ recruitment in B. subtilis is additionally controlled by effector UgtP, which localises to the division site in a nutrient-dependent manner and prevents Z-ring assembly.",
+      "claim_type": "EXPLICIT",
+      "source": "However, FtsZ recruitment in B. subtilis is additionally controlled by effector UgtP, which localises to the division site in a nutrient-dependent manner and prevents Z-ring assembly (Weart et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on a cited study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:54:12.089823Z"
+    },
+    {
+      "id": "c48d9840-115c-4903-9553-6c4d1204dbf0",
+      "content_id": "50407bff-8ed1-442c-aafc-5fe7d1f36472",
+      "claim_id": "C70",
+      "claim": "Increasing cell surface-to-volume ratio under low nutrient conditions can result in an increased nutrient influx to promote cell growth.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, increasing cell surface-to-volume ratio under low nutrient conditions can result in an increased nutrient influx to promote cell growth (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a proposed adaptive benefit supported by the relationship shown in Figure 1C.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:54:12.089823Z"
+    },
+    {
+      "id": "3ce11567-ef9d-45d9-a06c-bc25a9123a4a",
+      "content_id": "50407bff-8ed1-442c-aafc-5fe7d1f36472",
+      "claim_id": "C71",
+      "claim": "Under translation inhibition by ribosome-targeting antibiotics, bacterial cells increase their volume while preserving aspect ratio.",
+      "claim_type": "EXPLICIT",
+      "source": "Under translation inhibition by ribosome-targeting antibiotics, bacterial cells increase their volume while preserving aspect ratio (Harris and Theriot, 2016; Si et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on cited experimental observations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:54:12.089823Z"
+    },
+    {
+      "id": "69e32509-cca3-4607-93e6-ad4c9a897a91",
+      "content_id": "50407bff-8ed1-442c-aafc-5fe7d1f36472",
+      "claim_id": "C72",
+      "claim": "Increasing volume while preserving aspect ratio leads to a reduction in surface-to-volume ratio to counter further antibiotic influx.",
+      "claim_type": "EXPLICIT",
+      "source": "This leads to a reduction in surface-to-volume ratio to counter further antibiotic influx.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a proposed adaptive benefit inferred from the geometric relationship.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:54:12.089823Z"
+    },
+    {
+      "id": "f1342ba6-c5d9-4ec7-8539-e46f38a1fdfb",
+      "content_id": "50407bff-8ed1-442c-aafc-5fe7d1f36472",
+      "claim_id": "C73",
+      "claim": "The efficiency of swarming bacteria strongly depends on their aspect ratio.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, recent studies have shown that the efficiency of swarming bacteria strongly depends on their aspect ratio (Ilkanaiv et al., 2017; Jeckel et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on cited studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:54:12.089823Z"
+    },
+    {
+      "id": "87aa41dc-2d20-454c-a905-c7c888d29e7c",
+      "content_id": "50407bff-8ed1-442c-aafc-5fe7d1f36472",
+      "claim_id": "C74",
+      "claim": "The highest foraging speed has been observed for aspect ratios in the range 4\u20136.",
+      "claim_type": "EXPLICIT",
+      "source": "The highest foraging speed has been observed for aspect ratios in the range 4\u20136 (Ilkanaiv et al., 2017)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on a cited study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:54:12.089823Z"
+    },
+    {
+      "id": "2bd1c54e-7f11-4447-9ba2-1ab78dd2be1b",
+      "content_id": "50407bff-8ed1-442c-aafc-5fe7d1f36472",
+      "claim_id": "C75",
+      "claim": "The maintenance of an optimal aspect ratio may have evolutionary benefits for cell swarmers.",
+      "claim_type": "EXPLICIT",
+      "source": "suggesting that the maintenance of an optimal aspect ratio may have evolutionary benefits for cell swarmers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation based on the observation about foraging speed.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:54:12.089823Z"
+    },
+    {
+      "id": "bc598b44-afec-4d29-8251-162e5c30f6f1",
+      "content_id": "50407bff-8ed1-442c-aafc-5fe7d1f36472",
+      "claim_id": "C76",
+      "claim": "The mechanistic origin of aspect ratio control has been puzzling for almost half a century.",
+      "claim_type": "EXPLICIT",
+      "source": "whose mechanistic origin has been puzzling for almost half a century (Zaritsky, 1975; Zaritsky, 2015)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with reference to historical citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:54:12.089823Z"
+    },
+    {
+      "id": "46e45a1d-89cd-4e16-844f-7310f3489886",
+      "content_id": "50407bff-8ed1-442c-aafc-5fe7d1f36472",
+      "claim_id": "C78",
+      "claim": "The power law exponent for steady-state data is 0.671 \u00b1 0.006.",
+      "claim_type": "EXPLICIT",
+      "source": "Best fit shown in dashed black line for steady-state data from Si et al. (2017) gives \u03b3 = 6.24 \u00b1 0.04, and a power law exponent 0.671 \u00b1 0.006.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is obtained from fitting experimental data.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:54:12.089823Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "6064e184-c5b9-4ed0-a1a6-30803bca0f99",
+      "content_id": "50407bff-8ed1-442c-aafc-5fe7d1f36472",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "E. coli maintains a conserved aspect ratio of \u03b7 = 4.14 \u00b1 0.17 (coefficient of variation ~14%) during steady-state growth, resulting in a surface-to-volume scaling relationship S = 2\u03c0V^(2/3) with \u03b3 = 6.24 \u00b1 0.04 and power law exponent 0.671 \u00b1 0.006. This aspect ratio is independent of growth media, cell size, and growth rate.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C7, C78 provide quantitative measurements from experimental data fitting (Si et al., 2017), while C23, C25, C26 demonstrate that aspect ratio is maintained across conditions. The data span multiple growth conditions and show consistent scaling, with Figure 1 and Figure 2 providing visual confirmation. The slight deviation from exact 2/3 scaling (0.671 vs 0.667) is explained by biological variability.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:54:12.089823Z"
+    },
+    {
+      "id": "24927894-1c47-4ac1-a41d-8c3c420ef80d",
+      "content_id": "50407bff-8ed1-442c-aafc-5fe7d1f36472",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Rod-shaped bacteria adapt their cell dimensions in response to environmental changes, with both length and width increasing with growth rate. Cell volume control follows an adder mechanism, and cells regulate surface-to-volume ratio in response to nutrient availability, with increased S/V at low nutrient concentrations promoting nutrient influx.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8, C9, C10 are well-supported by multiple cited studies. Claim C14 regarding adaptive feedback is supported by citations and mathematical modeling (Equation 1). Claim C16 demonstrates predictive power by comparing model predictions with experimental data in Figure 1\u2014figure supplement 1A-B. The mechanistic links are established through prior literature.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:54:12.089823Z"
+    },
+    {
+      "id": "307c3c90-df13-4c59-8d1f-e94b38610c9a",
+      "content_id": "50407bff-8ed1-442c-aafc-5fe7d1f36472",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The S \u2248 2\u03c0V^(2/3) scaling relationship is conserved across diverse rod-shaped bacterial species and rod-shaped Archaea, while Spirochetes deviate from this relationship. Coccoid S. aureus follows S = \u03b3V^(2/3) scaling but with lower aspect ratio (\u03b7 = 1.38 \u00b1 0.18), suggesting aspect-ratio preservation emerges from a common mechanism across bacterial morphologies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C18 and C20 are supported by data from 49 bacterial species shown in Figure 1E, with quantitative measurements from cited studies. Claim C21 is a reasonable inference from the observation that both rod-shaped and coccoid bacteria maintain constant aspect ratios despite different morphologies. The data compilation across diverse species provides strong comparative evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:54:12.089823Z"
+    },
+    {
+      "id": "a37349c9-e78b-4e6f-8942-6882d8c6af27",
+      "content_id": "50407bff-8ed1-442c-aafc-5fe7d1f36472",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "At the single-cell level, slight deviations from 2/3 scaling arise from fluctuations in newborn cell lengths for a given width. Added length during the cell cycle correlates with cell width, making width an essential predictor of cell length in E. coli.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C24 is explained by analysis in Figure 2\u2014figure supplement 1A-B showing how length variability affects scaling. Claims C39 and C65 are directly supported by single-cell data in Figure 2\u2014figure supplement 1C-D demonstrating the correlation between added length and width. The statistical analysis of variability sources is appropriate.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:54:12.089823Z"
+    },
+    {
+      "id": "ea2c8fe4-a35d-4b6c-b294-5763f3a49f62",
+      "content_id": "50407bff-8ed1-442c-aafc-5fe7d1f36472",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Cell division follows an adder mechanism triggered by threshold accumulation of FtsZ, the key division initiator protein that assembles into a Z-ring. FtsZ scales with cell width, and aspect ratio homeostasis is achieved through balanced rates of cell elongation and division protein production, with FtsZ concentration (4-10 \u03bcM) exceeding the critical concentration (1 \u03bcM) for filament formation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28, C29, C33, C34 are well-supported by multiple cited studies (Si et al., 2019; Shi et al., 2017; Erickson et al., 2010). Claim C37 integrates the model with experimental observations of FtsZ overexpression/depletion phenotypes. The mechanistic model is consistent with established knowledge and provides a coherent framework linking division protein dynamics to aspect ratio control.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:54:12.089823Z"
+    },
+    {
+      "id": "dced0349-fcbb-46bd-85cb-5bd81580dfd2",
+      "content_id": "50407bff-8ed1-442c-aafc-5fe7d1f36472",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Following nutrient shifts, aspect ratio returns to its homeostatic value over multiple generations, with faster equilibration in media with higher growth rates. This is consistent with experimental observations that newborn aspect ratio reaches equilibrium faster in fast-growing media.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C45 is supported by model simulations shown in Figure 3C. Claim C47 is validated by comparison with experimental data from Taheri-Araghi et al. (2015) shown in Figure 3\u2014figure supplement 1F. The model predictions match experimental observations, providing support for the proposed mechanism. The timescale dependence on growth rate (\u221dk^-1) is mechanistically justified.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:54:12.089823Z"
+    },
+    {
+      "id": "8e8fe286-d9a2-4f3c-960c-9236e1001ad0",
+      "content_id": "50407bff-8ed1-442c-aafc-5fe7d1f36472",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Perturbations to cell shape machinery and antibiotic treatments produce predictable morphological changes: MreB depletion increases width and decreases length while inducing FtsZ overproduction via Rcs stress response; cell-wall targeting antibiotics prevent septation by inhibiting penicillin binding proteins; DNA-targeting antibiotics induce filamentation through SOS-mediated FtsZ sequestration.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52, C55, C56, C57, C59 are all supported by cited experimental studies (Zheng et al., 2016; Carball\u00e8s et al., 1999; Cho et al., 2014; Nonejuie et al., 2013; Chen et al., 2012). The model successfully predicts these morphological changes as shown in Figure 4B by adjusting k_P and \u03b2 parameters. The mechanistic explanations are consistent with established knowledge of these perturbations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:54:12.089823Z"
+    },
+    {
+      "id": "351e12f1-0b43-4bf3-b819-e7a5f0a89d67",
+      "content_id": "50407bff-8ed1-442c-aafc-5fe7d1f36472",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "B. subtilis differs from E. coli in that cell width remains approximately constant across different media while length increases. FtsZ recruitment in B. subtilis is additionally controlled by UgtP, which prevents Z-ring assembly in a nutrient-dependent manner.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Both claims are supported by cited studies (Sharpe et al., 1998; Weart et al., 2007). The authors appropriately contrast B. subtilis behavior with E. coli and provide a mechanistic interpretation within their model framework (reduction in k_P with increasing k). This demonstrates species-specific variations in the general mechanism.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:54:12.089823Z"
+    },
+    {
+      "id": "ae477fff-8bff-4e5a-847e-669d9d58ead0",
+      "content_id": "50407bff-8ed1-442c-aafc-5fe7d1f36472",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Aspect ratio control may provide adaptive benefits: increasing S/V under low nutrients promotes nutrient influx, while under ribosome-targeting antibiotics, cells increase volume while preserving aspect ratio, reducing S/V to counter further antibiotic influx.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C71 is supported by cited experimental observations (Harris and Theriot, 2016; Si et al., 2017). However, claims C70 and C72 regarding adaptive benefits are speculative inferences from geometric relationships without direct experimental validation of the proposed functional advantages. While plausible, these remain hypotheses requiring further testing to establish causality between morphological changes and fitness benefits.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:54:12.089823Z"
+    },
+    {
+      "id": "a02263d3-2777-40d6-a651-9f5a03fdf4b5",
+      "content_id": "50407bff-8ed1-442c-aafc-5fe7d1f36472",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Swarming efficiency strongly depends on aspect ratio, with highest foraging speed observed for aspect ratios of 4-6, suggesting that maintenance of optimal aspect ratio may have evolutionary benefits for cell swarmers.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C73 and C74 are supported by cited studies (Ilkanaiv et al., 2017; Jeckel et al., 2019) that experimentally measured swarming efficiency as a function of aspect ratio. Claim C75 is a reasonable inference connecting the observed optimal aspect ratio range (4-6) with the measured E. coli aspect ratio (~4). While the evolutionary benefit is speculative, it is grounded in experimental observations of functional consequences.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:54:12.089823Z"
+    },
+    {
+      "id": "0c63a612-527a-4d1a-b333-e42c95fb55b0",
+      "content_id": "50407bff-8ed1-442c-aafc-5fe7d1f36472",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The mechanistic origin of aspect ratio control has been puzzling for almost half a century, representing a long-standing question in bacterial cell biology.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This claim is supported by historical citations (Zaritsky, 1975; Zaritsky, 2015) spanning nearly 50 years, establishing the context and significance of the current work. This appropriately frames the study as addressing a long-standing problem in the field.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:54:12.089823Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "297176f9-0608-4905-a24c-b51cbb280676",
+      "result_id": "6064e184-c5b9-4ed0-a1a6-30803bca0f99"
+    },
+    {
+      "claim_id": "91e444dc-496f-481b-abdb-47515826e6ae",
+      "result_id": "6064e184-c5b9-4ed0-a1a6-30803bca0f99"
+    },
+    {
+      "claim_id": "46e45a1d-89cd-4e16-844f-7310f3489886",
+      "result_id": "6064e184-c5b9-4ed0-a1a6-30803bca0f99"
+    },
+    {
+      "claim_id": "6b96be2b-a620-49eb-bebf-a5c9f11f67c5",
+      "result_id": "6064e184-c5b9-4ed0-a1a6-30803bca0f99"
+    },
+    {
+      "claim_id": "719f9e05-bdde-41e2-89f7-f216de4c6747",
+      "result_id": "6064e184-c5b9-4ed0-a1a6-30803bca0f99"
+    },
+    {
+      "claim_id": "289654df-d39c-4016-8ca7-d4ebbec57f8e",
+      "result_id": "6064e184-c5b9-4ed0-a1a6-30803bca0f99"
+    },
+    {
+      "claim_id": "942bc247-afb9-46d0-9cda-d97606f76e50",
+      "result_id": "24927894-1c47-4ac1-a41d-8c3c420ef80d"
+    },
+    {
+      "claim_id": "9e55c022-587e-4ab1-a4d7-751c837d412f",
+      "result_id": "24927894-1c47-4ac1-a41d-8c3c420ef80d"
+    },
+    {
+      "claim_id": "f310c520-cc13-4ea0-91eb-40b0829047a1",
+      "result_id": "24927894-1c47-4ac1-a41d-8c3c420ef80d"
+    },
+    {
+      "claim_id": "34e12c88-ed8c-4cd8-82fe-6c61cd903632",
+      "result_id": "24927894-1c47-4ac1-a41d-8c3c420ef80d"
+    },
+    {
+      "claim_id": "496b7ca1-536f-4b3c-90b6-c12075c874ec",
+      "result_id": "24927894-1c47-4ac1-a41d-8c3c420ef80d"
+    },
+    {
+      "claim_id": "2558440c-c6c1-41f6-8082-f5b8fc1a4ea2",
+      "result_id": "24927894-1c47-4ac1-a41d-8c3c420ef80d"
+    },
+    {
+      "claim_id": "bc8e7cac-65ff-4421-994b-886ced10ce07",
+      "result_id": "307c3c90-df13-4c59-8d1f-e94b38610c9a"
+    },
+    {
+      "claim_id": "48898ff8-b293-4f5b-a15f-bc284ab4bd71",
+      "result_id": "307c3c90-df13-4c59-8d1f-e94b38610c9a"
+    },
+    {
+      "claim_id": "003467f0-f90f-43a4-baa0-a01fcf5074b0",
+      "result_id": "307c3c90-df13-4c59-8d1f-e94b38610c9a"
+    },
+    {
+      "claim_id": "30f09780-3f4a-491c-befc-71746c75b5d3",
+      "result_id": "a37349c9-e78b-4e6f-8942-6882d8c6af27"
+    },
+    {
+      "claim_id": "1bf6dee8-fc2a-4059-a70a-e2b4103ca624",
+      "result_id": "a37349c9-e78b-4e6f-8942-6882d8c6af27"
+    },
+    {
+      "claim_id": "26377433-aef5-4270-bb44-492ff1e2ec32",
+      "result_id": "a37349c9-e78b-4e6f-8942-6882d8c6af27"
+    },
+    {
+      "claim_id": "da30ac29-b9e2-478f-b252-bdb9c62c5863",
+      "result_id": "ea2c8fe4-a35d-4b6c-b294-5763f3a49f62"
+    },
+    {
+      "claim_id": "92748609-2d98-4846-9bf8-7cd5fd2a9b9a",
+      "result_id": "ea2c8fe4-a35d-4b6c-b294-5763f3a49f62"
+    },
+    {
+      "claim_id": "8177f6fc-ecbc-40f4-abce-fe6ce8fa4930",
+      "result_id": "ea2c8fe4-a35d-4b6c-b294-5763f3a49f62"
+    },
+    {
+      "claim_id": "2608d3c5-ceea-4290-bd25-f0302abca4ca",
+      "result_id": "ea2c8fe4-a35d-4b6c-b294-5763f3a49f62"
+    },
+    {
+      "claim_id": "dde54ac3-fb20-4035-b063-18f8a8c5b2da",
+      "result_id": "ea2c8fe4-a35d-4b6c-b294-5763f3a49f62"
+    },
+    {
+      "claim_id": "bd43d6c8-e1d4-4ecd-b5b1-4a1abc86b5b6",
+      "result_id": "dced0349-fcbb-46bd-85cb-5bd81580dfd2"
+    },
+    {
+      "claim_id": "14171bda-84c3-416e-8e87-c35b9d276bff",
+      "result_id": "dced0349-fcbb-46bd-85cb-5bd81580dfd2"
+    },
+    {
+      "claim_id": "c35a181a-4301-4717-879c-32d938fb67aa",
+      "result_id": "8e8fe286-d9a2-4f3c-960c-9236e1001ad0"
+    },
+    {
+      "claim_id": "6d137f4b-ea07-461b-8714-8b8a913e1825",
+      "result_id": "8e8fe286-d9a2-4f3c-960c-9236e1001ad0"
+    },
+    {
+      "claim_id": "9a672e04-bcaa-4df1-8fed-676b90ed3f5d",
+      "result_id": "8e8fe286-d9a2-4f3c-960c-9236e1001ad0"
+    },
+    {
+      "claim_id": "daa6fe68-3887-4836-9b61-2e8a34b89dea",
+      "result_id": "8e8fe286-d9a2-4f3c-960c-9236e1001ad0"
+    },
+    {
+      "claim_id": "cbc1b51c-be80-4c71-8b27-50ed746cd0c4",
+      "result_id": "8e8fe286-d9a2-4f3c-960c-9236e1001ad0"
+    },
+    {
+      "claim_id": "a43bb37f-fa57-4e59-a489-9ef743e5a30b",
+      "result_id": "351e12f1-0b43-4bf3-b819-e7a5f0a89d67"
+    },
+    {
+      "claim_id": "542f8255-f1f6-4411-98f6-73ed315e7f65",
+      "result_id": "351e12f1-0b43-4bf3-b819-e7a5f0a89d67"
+    },
+    {
+      "claim_id": "c48d9840-115c-4903-9553-6c4d1204dbf0",
+      "result_id": "ae477fff-8bff-4e5a-847e-669d9d58ead0"
+    },
+    {
+      "claim_id": "3ce11567-ef9d-45d9-a06c-bc25a9123a4a",
+      "result_id": "ae477fff-8bff-4e5a-847e-669d9d58ead0"
+    },
+    {
+      "claim_id": "69e32509-cca3-4607-93e6-ad4c9a897a91",
+      "result_id": "ae477fff-8bff-4e5a-847e-669d9d58ead0"
+    },
+    {
+      "claim_id": "f1342ba6-c5d9-4ec7-8539-e46f38a1fdfb",
+      "result_id": "a02263d3-2777-40d6-a651-9f5a03fdf4b5"
+    },
+    {
+      "claim_id": "87aa41dc-2d20-454c-a905-c7c888d29e7c",
+      "result_id": "a02263d3-2777-40d6-a651-9f5a03fdf4b5"
+    },
+    {
+      "claim_id": "2bd1c54e-7f11-4447-9ba2-1ab78dd2be1b",
+      "result_id": "a02263d3-2777-40d6-a651-9f5a03fdf4b5"
+    },
+    {
+      "claim_id": "bc598b44-afec-4d29-8251-162e5c30f6f1",
+      "result_id": "0c63a612-527a-4d1a-b333-e42c95fb55b0"
+    }
+  ],
+  "comparisons": []
+}

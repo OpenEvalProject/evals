@@ -1,0 +1,427 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C20"
+    ],
+    "result": "The study addresses the technical challenge of measuring metabolic differences between cell types in tumors by tracing isotope-labeled nutrients into slowly-turning-over macromolecules (protein) rather than rapidly-turning-over metabolites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3 and C20 establish the rationale and methodological approach. The approach is well-justified based on established knowledge about metabolite vs. protein turnover rates (C2, C15, C20) and is supported by experimental validation showing protein labeling stability during cell sorting (C48).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C28",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "U-13C-glucose infusion experiments in PDAC mouse models show extensive labeling of metabolic intermediates including TCA cycle metabolites, with increased M+2 and M+3 labeling patterns in KP-/-C tumors compared to normal pancreas, indicating glucose contribution to TCA cycle via both PDH and PC pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C34 are supported by experimental data from multiple figures showing glucose labeling patterns in different PDAC models (KP-/-C, KPC, orthotopic). The data consistently demonstrate glucose metabolism in tumors, though the extent varies by model (C31) and infusion conditions (C33).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C26",
+      "C27"
+    ],
+    "result": "The biochemical basis for interpreting M+2 vs M+3 labeling patterns: PDH produces M+2 labeling while PC produces M+3 labeling of TCA cycle metabolites from 13C-glucose.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C27 describe established biochemical knowledge about PDH and PC enzyme activities and their resulting labeling patterns, which is correctly stated and illustrated in Figure 1G. This provides the interpretive framework for the experimental findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "PC expression is higher in cancer cells compared to stroma in both mouse and human PDAC tumors, as assessed by immunohistochemistry and qPCR.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While IHC data (C38-C40) show higher PC staining in cancer cells, qPCR data (C41) show only a trend (p=0.0722, not significant). The authors acknowledge that expression analysis alone is insufficient to determine functional activity (C42), and that PC mRNA is detected in fibroblasts.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C43"
+    ],
+    "result": "When cultured separately in vitro, PSCs exhibit similar or higher M+3 TCA cycle metabolite labeling from glucose compared to PDAC cancer cells, despite lower PC expression in tumors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C43 is supported by experimental data in Figure 2D-E showing metabolite labeling in monocultures. This finding highlights the discrepancy between in vitro metabolism and in vivo enzyme expression patterns, motivating the need for co-culture systems.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "A PDAC organoid-PSC co-culture system was developed where organoid growth depends on PSC presence under minimal medium conditions, and both cell types show elevated PC expression and M+3 metabolite labeling compared to monocultures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C46 are supported by experimental data in Figures 2F-J showing PSC-dependent organoid growth and metabolic changes in co-culture. This establishes a tractable model system for studying cell-type-specific metabolism in mixed populations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Metabolite levels and labeling patterns change during the time required for cell sorting, but protein labeling from glucose remains stable and is detectable by GC-MS even from small cell numbers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C49 are supported by experimental data in Figure 3 showing time-dependent changes in metabolites but stability of protein labeling. This validates the protein labeling approach as superior to metabolite analysis for sorted cells and addresses a key technical limitation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C50",
+      "C51"
+    ],
+    "result": "tdTomato fluorescence in KP-/-C tumors specifically marks cancer cells (co-localizes with CK19) and not fibroblasts (no co-localization with \u03b1-SMA).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C51 are supported by immunofluorescence data in Figure 5A-B. This validation is essential for the subsequent cell sorting experiments to ensure accurate separation of cancer cells from stromal populations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C59"
+    ],
+    "result": "In organoid-PSC co-cultures, cancer cells show higher M+3 labeling of aspartate, glutamate, and proline in protein compared to PSCs, while M+2 aspartate labeling and labeling of glucose-derived amino acids (alanine, serine) are similar, indicating higher pyruvate carboxylation activity in cancer cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C55 and C59 are supported by protein labeling data from sorted cells in Figures 4B-K. The differential M+3 labeling pattern specifically in TCA-derived amino acids provides strong evidence for higher pyruvate carboxylation in cancer cells. Use of 1-13C-pyruvate and 3,4-13C-glucose (C59) provides additional specificity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C56",
+      "C57"
+    ],
+    "result": "Glutamine tracing in organoid co-cultures shows slightly higher aspartate labeling in PSCs compared to cancer cells, with no differences in glutamate or proline labeling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C57 are supported by experimental data in Figure 4\u2014figure supplement 1C-E. This finding complements the glucose tracing results and suggests differential nutrient utilization between cell types, though the differences are modest.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C58"
+    ],
+    "result": "Protein synthesis rates are higher in PSCs than cancer cells in organoid co-cultures, as measured by BFP reporter accumulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C58 is supported by experimental data in Figure 4H using a validated protein synthesis reporter. This finding is important because it rules out differential protein synthesis rates as an explanation for the higher M+3 aspartate labeling in cancer cells.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C60",
+      "C61"
+    ],
+    "result": "In PDAC tumors in vivo, tdTomato+ cancer cells show the highest M+3 and M+2 protein aspartate labeling and higher M+2/M+3 glutamate labeling compared to other cell populations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C61 are supported by protein labeling data from sorted tumor cells in Figures 5H-I and Figure 5\u2014figure supplement 1E-J. This extends the organoid co-culture findings to the in vivo tumor context, demonstrating that the metabolic phenotype is preserved in tumors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "PC knockdown in PDAC cells reduces pyruvate carboxylation activity and organoid co-culture growth but not monoculture proliferation; PC knockdown cells form tumors with restored PC expression, suggesting selection for PC expression reversal in vivo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C67 are supported by experimental data in Figure 6\u2014figure supplement 1. The observation that PC knockdown is dispensable in culture but tumors show restored PC expression (C65-C66) strongly suggests in vivo selection pressure, though direct clonal analysis was not performed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C71"
+    ],
+    "result": "Complete PC knockout has no effect on PDAC cell proliferation in monoculture but reduces organoid co-culture growth and completely prevents tumor formation in subcutaneous and orthotopic transplantation models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C69 and C71 are supported by experimental data in Figure 6A-E. The complete absence of tumor formation from PC-null cells (C71) provides strong evidence for PC requirement in vivo, contrasting with the dispensability in culture (C68).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C70"
+    ],
+    "result": "PC knockout PSCs retain ability to enhance PDAC organoid and tumor growth, though the effect is reduced compared to control PSCs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C70 is supported by experimental data in Figure 6\u2014figure supplement 2D-F. This suggests that PC in PSCs contributes to but is not absolutely required for their tumor-supporting function, contrasting with the absolute requirement in cancer cells.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C72",
+      "C73"
+    ],
+    "result": "PC-null cancer cells retain substantial pyruvate carboxylation activity from 1-13C-pyruvate, indicating another enzyme contributes to this activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C73 are supported by experimental data in Figure 6F-G showing residual M+1 aspartate labeling in PC knockout cells. This unexpected finding motivates investigation of alternative pyruvate carboxylation enzymes and is a key observation leading to the ME1 studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C74",
+      "C75"
+    ],
+    "result": "Malic enzyme can catalyze the reversible interconversion of pyruvate/CO2 and malate, and has been shown to produce malate from pyruvate in purified enzyme assays.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C75 describe established biochemical knowledge supported by citations to classic literature (Ochoa et al., 1947, 1948). While ME is typically considered to function in the decarboxylation direction in cells, the reversibility has been demonstrated biochemically.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Double knockout of both PC and ME1 in PDAC cells and organoids virtually abolishes aspartate labeling from 1-13C-pyruvate, and ME1 re-expression restores labeling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C78 are supported by experimental data in Figure 7A-B and Figure 7\u2014figure supplement 1A-D. The near-complete loss of pyruvate carboxylation activity in double knockouts and rescue by ME1 expression provides strong evidence that ME1 contributes to pyruvate carboxylation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C79"
+    ],
+    "result": "ME1 knockout alone in PDAC cell lines reduces aspartate M+1 labeling and pyruvate carboxylation activity from 1-13C-pyruvate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C79 is supported by experimental data in Figure 7\u2014figure supplement 1F-K. This demonstrates that ME1 contributes to pyruvate carboxylation even when PC is present, suggesting both enzymes are active simultaneously.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C80"
+    ],
+    "result": "ME1 expression is higher in cancer cells compared to stroma in mouse and human PDAC tumors and organoids, similar to the pattern observed for PC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C80 is supported by experimental data in Figure 7C-E and Figure 7\u2014figure supplement 2A-E showing IHC and qPCR results. The parallel expression pattern of ME1 and PC in cancer cells supports the hypothesis that both contribute to the higher pyruvate carboxylation observed in cancer cells.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "ME1 loss has minimal effect on cancer cell proliferation in monoculture but reduces organoid co-culture growth and tumor growth in vivo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C83 are supported by experimental data in Figure 7F-I. The pattern mirrors that observed for PC, with context-dependent essentiality. The in vivo tumor growth data (C83) is consistent with prior published work (Son et al., 2013).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C84"
+    ],
+    "result": "Both PC and ME1 are important for PDAC cancer cells in tumors and contribute to pyruvate carboxylation activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C84 is a synthesis conclusion supported by the collective evidence from PC and ME1 knockout/knockdown experiments (C62-C83). The requirement for both enzymes in tumor growth and their combined contribution to pyruvate carboxylation is well-demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C85"
+    ],
+    "result": "Dissecting metabolism of specific cell populations within heterogeneous systems can identify dependencies not evident from studying isolated cells or bulk tissue.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C85 represents the overarching conclusion of the study. It is supported by the demonstration that PC and ME1 are dispensable in monoculture but required in co-culture and tumors, and that bulk tissue analysis would miss the cell-type-specific differences in pyruvate carboxylation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C29"
+    ],
+    "result": "Cancer cells cannot take up extracellular aspartate in PDAC tumors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C29 is supported by citation to prior work (Sullivan et al., 2018) and by plasma aspartate labeling data (Figure 1\u2014figure supplement 1J). This is important for interpreting the aspartate labeling data as reflecting de novo synthesis rather than uptake.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "Background context establishing that environmental factors and cell-cell interactions affect cancer metabolism, that PDAC tumors are heterogeneous with cancer cells as a minority population, and that existing methods have limitations for studying cell-type-specific metabolism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C19 provide literature-supported background establishing the rationale for the study. These are well-supported by appropriate citations and represent accurate summaries of prior work and technical challenges in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C30"
+    ],
+    "result": "Proline is not extensively labeled from glucose in pancreas or PDAC tumor tissue.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C30 is supported by experimental data in Figure 1O showing minimal proline labeling from glucose. This observation suggests glucose carbon contributes minimally to proline synthesis in these tissues.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Orthotopic transplant tumors contain stroma, cancer cells are a minority in autochthonous models, and metabolite labeling in bulk tissue reflects a weighted average of all cell types present.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C37 are supported by citation (C35) and established knowledge (C36), with C37 being a logical inference about bulk tissue measurements. These claims acknowledge important limitations of bulk tissue analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C42"
+    ],
+    "result": "Metabolic fluxes can be more dependent on metabolite concentrations than enzyme expression levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C42 is supported by citation to prior literature (Hackett et al., 2016). This principle is important for interpreting the discrepancy between enzyme expression and metabolic activity observed in the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Background on differences between PDAC mouse models and characteristics of pancreatic stellate cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C88 provide literature-supported background on model systems used in the study. These are accurately cited and provide important context for interpreting differences observed between models.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R30",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "Discussion context about glucose and glutamine metabolism in PDAC tumors, including FDG-PET positivity, glucose depletion in tumor interstitial fluid, ME1's role in redox balance, and various nutrient sources for PDAC cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C100 provide literature-supported discussion context. These accurately cite prior work and place the current findings in the broader context of PDAC metabolism research. The statements are appropriately qualified (e.g., 'some PDAC tumors' in C98).",
+    "result_type": "MINOR"
+  }
+]

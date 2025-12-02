@@ -1,0 +1,1194 @@
+{
+  "submission": {
+    "id": "f7b214d6-ee30-4458-b530-f8b2be18fcb2",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T12:02:45.085733Z",
+    "updated_at": "2025-12-02T12:02:45.085733Z"
+  },
+  "content": [
+    {
+      "id": "a79c3cb7-ce17-4507-a51f-8c12acac2e26",
+      "submission_id": "f7b214d6-ee30-4458-b530-f8b2be18fcb2",
+      "content_type": "manuscript",
+      "content_text": "# The nature of the animacy organization in human ventral temporal cortex\n\n## Authors\n\n- Sushrut Thorat<sup>1</sup> \u2020\n- Daria Proklova<sup>2</sup>\n- Marius V Peelen<sup>1</sup> ([ORCID: 0000-0002-4026-7303](https://orcid.org/0000-0002-4026-7303)) \u2020\n\n### Affiliations\n\n1. Donders Institute for Brain, Cognition and Behaviour Radboud University Nijmegen Netherlands\n2. Brain and Mind Institute University of Western Ontario London Canada\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe principles underlying the animacy organization of the ventral temporal cortex (VTC) remain hotly debated, with recent evidence pointing to an animacy continuum rather than a dichotomy. What drives this continuum? According to the visual categorization hypothesis, the continuum reflects the degree to which animals contain animal-diagnostic features. By contrast, the agency hypothesis posits that the continuum reflects the degree to which animals are perceived as (social) agents. Here, we tested both hypotheses with a stimulus set in which visual categorizability and agency were dissociated based on representations in convolutional neural networks and behavioral experiments. Using fMRI, we found that visual categorizability and agency explained independent components of the animacy continuum in VTC. Modeled together, they fully explained the animacy continuum. Finally, clusters explained by visual categorizability were localized posterior to clusters explained by agency. These results show that multiple organizing principles, including agency, underlie the animacy continuum in VTC.\n\n## Introduction\n\nOne of the main goals of visual cognitive neuroscience is to understand the principles that govern the organization of object representations in high-level visual cortex. There is broad consensus that the first principle of organization in ventral temporal cortex (VTC) reflects the distinction between animate and inanimate objects. These categories form distinct representational clusters (Kriegeskorte et al., 2008) and activate anatomically distinct regions of VTC (Grill-Spector and Weiner, 2014; Chao et al., 1999).\n\nAccording to the visual categorization hypothesis, this animate-inanimate organization supports the efficient readout of superordinate category information, allowing for the rapid visual categorization of objects as being animate or inanimate (Grill-Spector and Weiner, 2014). The ability to rapidly detect animals may have constituted an evolutionary advantage (Caramazza and Shelton, 1998; New et al., 2007).\n\nHowever, recent work has shown that the animacy organization reflects a continuum rather than a dichotomy, with VTC showing a gradation from objects and insects to birds and mammals (Connolly et al., 2012; Sha et al., 2015). This continuum was interpreted as evidence that VTC reflects the psychological property of animacy, or agency, in line with earlier work showing animate-like VTC responses to simple shapes whose movements imply agency (Castelli et al., 2002; Martin and Weisberg, 2003; Gobbini et al., 2007). According to this agency hypothesis, the animacy organization reflects the degree to which animals share psychological characteristics with humans, such as the ability to perform goal-directed actions and experiencing thoughts and feelings.\n\nImportantly, however, the finding of an animacy continuum can also be explained under the visual categorization hypothesis. This is because some animals (such as cats) are easier to visually categorize as animate than others (such as stingrays). This visual categorizability is closely related to visual typicality \u2013 an animal's perceptual similarity to other animals (Mohan and Arun, 2012). Indeed, recent work showed that the visual categorizability of animals (as measured by reaction times) correlates with the representational distance of those animals from the decision boundary of an animate-inanimate classifier trained on VTC activity patterns (Carlson et al., 2014). The finding of an animacy continuum is thus fully in line with the visual categorization hypothesis.\n\nThe difficulty in distinguishing between the visual categorization and agency hypotheses lies in the fact that animals\u2019 visual categorizability and agency are correlated. For example, four-legged mammals are relatively fast to categorize as animate and are also judged to be psychologically relatively similar to humans. Nevertheless, visual categorizability and agency are distinct properties that can be experimentally dissociated. For example, a dolphin and a trout differ strongly in perceived agency (dolphin > trout) but not necessarily in visual categorizability. In the present fMRI study, we disentangled visual categorizability and agency to assess their ability to explain the animacy continuum in VTC. This was achieved by selecting, out of a larger set, 12\u00a0animals for which visual categorizability and agency were orthogonal to each other across the set.\n\nWe find that visual categorizability and agency independently contribute to the animacy continuum in VTC as a whole. A model that combines these two factors fully explains the animacy continuum. In further analyses, we localize the independent contributions of visual categorizability and agency to distinct regions in posterior and anterior VTC, respectively. These results provide evidence that multiple organizing principles, including agency, underlie the animacy continuum and that these principles express in different parts of visual cortex.\n\n## Results\n\n### Disentangling visual categorizability and agency\n\nTo create a stimulus set in which visual categorizability and agency are dissociated, we selected 12 animals from a total of 40 animals. Visual categorizability was quantified in two ways, using convolutional neural networks (CNNs) and human behavior, to ensure a comprehensive measure of visual categorizability. Agency was measured using a rating experiment in which participants indicated the degree to which an animal can think and feel. Familiarity with the objects was also assessed and controlled for in the final stimulus set used in the fMRI experiment.\n\n#### Agency and familiarity\n\nAgency and familiarity measures were obtained through ratings (N =\u00a016), in which participants indicated the thoughtfulness of, feelings of, and familiarity with the 40 animals (Figure 1A). The correlation between the thoughtfulness and feelings ratings (\u03c4\u00a0=\u00a00.70) was at the noise ceiling of both those ratings (\u03c4thought\u00a0=\u00a00.69,\u00a0\u03c4feel\u00a0=\u00a00.70). We therefore averaged the thoughtfulness and feelings ratings and considered the averaged rating a measure of agency.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/47142/elife-47142-fig1-v1.jpg)\n\n**Figure 1.:** (A) Trials from the ratings experiment are shown. Participants were asked to rate 40 animals on three factors - familiarity, thoughtfulness, and feelings. The correlations between the thoughtfulness and feelings ratings are at the noise ceilings of both these ratings. Therefore, the average of these ratings was taken as a measure of agency. (B) A schematic of the convolutional neural network (CNN) VGG-16 is shown. The CNN contains 13 convolutional layers (shown in green), which are constrained to perform the spatially-local computations across the visual field, and three\u00a0fully-connected layers (shown in blue). The network is trained to take RGB image pixels as inputs and output the label of the object in the image. Linear classifiers are trained on layer FC8 of the CNN to classify between the activation patterns in response to animate and inanimate images. The distance from the decision boundary, toward the animate direction, is the image categorizability of an object. (C) A trial from the visual search task is shown. Participants had to quickly indicate the location (in the left or right panel) of the oddball target among 15 identical distractors which varied in size. The inverse of the pairwise reaction times are arranged as shown. Either the distractors or the targets are assigned as features of a representational space on which a linear classifier is trained to distinguish between animate and inanimate exemplars (Materials\u00a0and\u00a0methods). These classifiers are then used to categorize the set of images relevant to subsequent analyses; the distance from the decision boundary, towards the animate direction, is a measure of the perceptual categorizability of an object.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/47142/elife-47142-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** The image categorizabilities evolve as we go deeper into the network, as evidenced by the two middle and late clusters (in green) which are not similar to each other. The image categorizabilities of the fully\u00a0connected layers (FCs) are highly similar and all the findings described in the paper are robust to a change in layer-selection among the FCs.\n\n#### Visual categorizability\n\nThe first measure of visual categorizability was based on the features extracted from the final layer (FC8) of a pre-trained CNN (VGG-16 [Simonyan and Zisserman, 2015]; Materials\u00a0and\u00a0methods). This layer contains rich feature sets that can be used to accurately categorize objects as animate or inanimate by a support vector machine (SVM) classifier. This same classifier was then deployed on the 40 candidate objects (4 exemplars each) of our experiment to quantify their categorizability. This resulted, for each object, in a representational distance from the decision boundary of the animate-inanimate classifier (Figure 1B). Because this measure was based on a feedforward transformation of the images, which was not informed by inferred agentic properties of the objects (such as thoughtfulness), we label this measure image categorizability.\n\nThe second measure of visual categorizability was based on reaction times in an oddball detection task previously shown to predict visual categorization times (Mohan and Arun, 2012; Figure 1C). The appeal of this task is that it provides reliable estimates of visual categorizability using simple and unambiguous instructions (unlike a direct categorization task, which relies on the participants\u2019 concept of animacy, again potentially confounding agency and visual categorizability). Participants were instructed to detect whether an oddball image appears to the left or the right of fixation. Reaction times in this task are an index of visual similarity, with relatively slow responses to oddball objects that are visually relatively similar to the surrounding objects (e.g. a dog surrounded by cats). A full matrix of pairwise visual similarities was created by pairing all images with each other. For a given object, these similarity values constitute a perceptual representation with respect to the other objects. These visual similarity values were then used as features in an SVM trained to classify animate vs inanimate objects. Testing this classifier on the images of the fMRI experiment resulted, for each object, in a representational distance from the decision boundary of the animate-inanimate classifier (Figure 1C). Because this measure was based on human perception, we labeled this measure perceptual categorizability. The neural representations the reaction times in this task rely on are not fully known, and might reflect information about inferred agency of the objects. As such, accounting for the contribution of perceptual categorizability in subsequent analyses provides a conservative estimate of the independent contribution of agency to neural representations in VTC.\n\nThe two measures of visual categorizability were positively correlated for the 12 animals that were selected for the fMRI experiment (Kendall\u2019s\u00a0\u03c4\u00a0=\u00a00.64), indicating that they partly reflect similar animate-selective visual properties of the objects. The correspondence between these two independently obtained measures of visual categorizability provides a validation of these measures and also shows that the image categorizability obtained from the CNN is meaningfully related to human perception.\n\n#### Selection of image set\n\nThe final set of 12 animals for the fMRI experiment were chosen from the set of 40 images such that the correlations between image categorizability, agency, and familiarity were minimized (Figure 2). This was successful, as indicated by low correlations between these variables (\u03c4\u00a0<\u00a00.13, for all correlations). Because perceptual categorizability was not part of the selection procedure of the stimulus set, there was a moderate residual correlation (\u03c4\u00a0=\u00a00.30) between perceptual categorizability and agency.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/47142/elife-47142-fig2-v1.jpg)\n\n**Figure 2.:** The values of agency and image categorizability are plotted for the 40 animals used in the ratings experiment. We selected 12 animals such that the correlation between agency and image categorizability is minimized. Data-points corresponding to those 12 animals are highlighted in red.\n\n### Animacy in the ventral temporal cortex\n\nParticipants (N\u00a0=\u00a017) in the main fMRI experiment viewed the 4 exemplars of the 12 selected animals while engaged in a one-back object-level repetition-detection task (Figure 3). The experiment additionally included 3 inanimate objects (cars, chairs, plants) and humans. In a separate block-design animacy localizer experiment, participants viewed\u00a072 object images (36 animate, 36 inanimate) while detecting image repetitions (Figure 3).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/47142/elife-47142-fig3-v1.jpg)\n\n**Figure 3.:** In the main fMRI experiment, participants viewed images of the 12 selected animals and four additional objects (cars, trees, chairs, persons). Participants indicated, via button-press, one-back object repetitions (here, two parrots). In the animacy localizer experiment, participants viewed blocks of animal (top sequence) and non-animal (bottom sequence) images. All images were different from the ones used in the main experiment. Each block lasted 16s, and participants indicated one-back image repetitions (here, the fish image).\n\nIn a first analysis, we aimed to replicate the animacy continuum for the objects in the main experiment. The VTC region of interest was defined anatomically, following earlier work (Haxby et al., 2011; Figure 4A; Materials\u00a0and\u00a0methods). An SVM classifier was trained on activity patterns in this region to distinguish between blocks of animate and inanimate objects in the animacy localizer, and tested on the 16 individual objects in the main experiment. The distances from the decision boundary, towards the animate direction, were taken as the animacy scores.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/47142/elife-47142-fig4-v1.jpg)\n\n**Figure 4.:** (A) The region-of-interest, VTC, is highlighted. (B) The order of objects on the VTC animacy continuum, image categorizability (IC), perceptual categorizability (PC), and agency (Ag) are shown. (C) The within-participant correlations between VTC animacy and image categorizability (IC), perceptual categorizability (PC), visual categorizability (VC, a combination of image categorizability and perceptual categorizability; Materials\u00a0and\u00a0methods), and agency (Ag) are shown. All four models correlated positively with VTC animacy. (D) The left panel shows the correlations between VTC animacy and VC and Ag after regressing out the other measure from VTC animacy. Both correlations are positive, providing evidence for independent contributions of both agency and visual categorizability. The right panel shows the correlation between VTC animacy and a combination of agency and visual categorizability (Materials\u00a0and\u00a0methods). The combined model does not differ significantly from the VTC animacy noise ceiling (Materials\u00a0and\u00a0methods). This suggests that visual categorizability and agency are sufficient to explain the animacy organization in VTC. Error bars indicate 95% confidence intervals for the mean correlations.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/47142/elife-47142-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Principal component analysis was performed on the average of the regression weights (VTC activations) for each of the 16 objects, which were computed using a general linear model for each run of the main experiment. (A) The average of the participant-wise percentage variance in the VTC activations explained by each of the 15\u00a0principal components is shown. (B) The average participant-wise correlations between the principal components (PCs) and VTC animacy are shown. Although the first PC captures more variance than the second PC, the second PC contributes more to VTC animacy than the first. None of the individual PCs can fully account for VTC animacy. (C) The average scores of the 16 objects on the first three PCs are shown. Animacy organizations are seen in all the three PCs, where humans and other mammals lie on one end, insects in the middle, and cars and other inanimate objects lie on the other end of the representational spaces.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/47142/elife-47142-fig4-figsupp2-v1.jpg)\n\n**Figure 4\u2014figure supplement 2.:** Agency is regressed out of IC and PC and correlations of those two residuals (ICi and PCi) with VTC animacy are shown in (A) and (B), respectively. Both IC and PC explain variance in VTC animacy that is not accounted for by Ag (p\u00a0<\u00a00.05 for both correlations). IC and PC are also separately regressed out of Ag and the correlations of the two residuals with VTC animacy are shown in (A) and (B) respectively (p\u00a0<\u00a00.05 for both correlations). Echoing the observations in Figure 4C, agency contributes to VTC animacy independently of either IC, PC, or a combination of both (visual categorizability - VC in Figure 4C).\n\n![Figure 4\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/47142/elife-47142-fig4-figsupp3-v1.jpg)\n\n**Figure 4\u2014figure supplement 3.:** Eberhardt et al. (2016) showed that the image categorizability scores of objects (different images than the ones we used) from the second layer of the fifth group of convolutional layers (C5-2) of VGG-16 correlated highest with how quickly humans categorized those objects as animate or inanimate in a behavioral experiment. Results were highly similar when the image categorizability (IC) as used in Figure 4 was replaced by the image categorizability of C5-2. Specifically, the independent contributions of visual categorizability and agency to VTC animacy remained significant and the correlation between the combined model and VTC animacy was at VTC animacy noise ceiling.\n\nThe mean cross-validated training accuracy (animacy localizer) of animate-inanimate classification in VTC was 89.6%, while the cross-experiment accuracy in classifying the 16 stimuli from the main fMRI experiment was 71.3%, indicating reliable animacy information in both experiments. Importantly, there was systematic and meaningful variation in the animacy scores for the objects in the main experiment (Figure 4B). Among the animals, humans were the most animate whereas reptiles and insects were the least animate (they were classified as inanimate, on average). These results replicate previous findings of an animacy continuum (Connolly et al., 2012; Sha et al., 2015).\n\nNow that we established the animacy continuum for the selected stimulus set, we can turn to our main question of interest: what are the contributions of visual categorizability and agency to the animacy continuum in VTC? To address this question, we first correlated the visual categorizability scores and the agency ratings with the VTC animacy scores (Figure 4C). VTC animacy scores correlated positively with all three measures: image categorizability\u00a0(\u03c4\u00a0=\u00a00.16;\u00a0p\u00a0=\u00a010-3), perceptual categorizability (\u03c4\u00a0=\u00a00.26;\u00a0p\u00a0<\u00a010-4); and agency (\u03c4\u00a0=\u00a00.30;\u00a0p\u00a0<\u00a010-4). A combined model of image categorizability and perceptual categorizability (visual categorizability; Materials\u00a0and\u00a0methods) also positively correlated with VTC animacy (\u03c4\u00a0=\u00a00.23;\u00a0p\u00a0<\u00a010-4).\n\nBecause agency and visual categorizability scores were weakly correlated, it is possible that the contribution of one of these factors was partly driven by the other. To test for their independent contributions, we regressed out the contribution of the other factor(s) from VTC animacy scores before computing the correlations. The correlation between VTC animacy and agency remained positive in all individual participants (\u03c4\u00a0=\u00a00.23;\u00a0p\u00a0<\u00a010-4\u00a0Figure 4D) after regressing out both image categorizability and perceptual categorizability. Similarly, the correlation between VTC animacy and visual categorizability remained positive after regressing out agency (\u03c4\u00a0=\u00a00.12;\u00a0p\u00a0=\u00a04.7\u00a0\u00d7\u00a0103).\n\nFinally, to test whether a combined model including visual categorizability and agency fully explained the animacy continuum, we performed leave-one-out regression on VTC animacy with all three factors as independent measures. The resultant combined model (derived separately for each left-out participant) had a higher correlation with VTC animacy than any of the three factors alone\u00a0(within-participant comparisons - \u0394IC\u00a0=\u00a00.21,\u00a0p\u00a0<\u00a010-4;\u00a0\u0394PC\u00a0=\u00a00.10,\u00a0p\u00a0=\u00a06\u00a0x\u00a010-4, \u0394Ag\u00a0=\u00a00.07,\u00a0p\u00a0=\u00a08.3\u00a0x\u00a010-3). Furthermore, the correlation between the combined model and VTC animacy (\u03c4\u00a0=\u00a00.37; Figure 4D) is at VTC animacy noise ceiling (\u03c4NC\u00a0=\u00a00.39; Materials and methods). This result suggests that a linear combination of the two models (visual categorizability and agency) fully explains the animacy continuum in VTC, but the single models alone do not.\n\n#### Whole-brain searchlight analysis\n\nOur results indicate that both visual categorizability and agency contribute to the animacy continuum in VTC as a whole. Can these contributions be anatomically dissociated as well? To test this, we repeated the analyses in a whole-brain searchlight analysis (spheres of 100 proximal voxels). To reduce the number of comparisons, we constrained the analysis to clusters showing significant above-chance animacy classification (Materials\u00a0and\u00a0methods). Our aim was to reveal spheres showing independent contributions of visual categorizability or agency. To obtain the independent contribution of agency, we regressed out both image categorizability and perceptual categorizability from each sphere's animacy continuum and tested if the residue reflected agency. Similarly, to obtain the independent contribution of visual categorizability, we regressed out agency from the sphere's animacy continuum and tested if the residue reflected either image categorizability or perceptual categorizability. The resulting brain maps were corrected for multiple comparisons (Materials\u00a0and\u00a0methods).\n\nResults (Figure 5) showed that both visual categorizability and agency explained unique variance in clusters of VTC, consistent with the region-of-interest analysis. Moreover, there was a consistent anatomical mapping of the two factors: the independent visual categorizability contribution (LH: 1584\u00a0mm3, center Montreal Neurological Institute (MNI) coordinates:\u00a0x\u00a0=\u00a0-38,\u00a0y\u00a0=\u00a0-80,\u00a0z\u00a0=\u00a07; RH: 7184\u00a0mm3, center coordinates:\u00a0x\u00a0=\u00a041,\u00a0y\u00a0=\u00a0-71,\u00a0z\u00a0=\u00a01) was located posterior to the independent agency contribution (LH:\u00a0592\u00a0mm3, center coordinates:\u00a0x\u00a0=\u00a0-42,\u00a0y\u00a0=\u00a0-56,\u00a0z\u00a0=\u00a0-19; RH: 4000\u00a0mm3, center coordinates:\u00a0x\u00a0=\u00a039,\u00a0y\u00a0=\u00a0-52,\u00a0z\u00a0=\u00a0-12), extending from VTC into the lateral occipital regions. The majority of the independent agency contribution was located in the anterior part of VTC. A similar posterior-anterior organization was observed in both hemispheres (Figure 5B), though stronger in the right hemisphere. These results provide converging evidence for independent contributions of visual categorizability and agency to the animacy continuum, and show that these factors explain the animacy continuum at different locations in the visual system.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/47142/elife-47142-fig5-v1.jpg)\n\n**Figure 5.:** The analysis followed the approach performed within the VTC ROI (Figure 4C, middle panel) but now separately for individual spheres (100 voxels). The independent contribution of agency is observed within anterior VTC, while the independent contribution of visual categorizability extends from posterior VTC into the lateral occipital regions. Results are corrected for multiple comparisons (Materials\u00a0and\u00a0methods). (B) The correlations between agency and the animacy continuum in the searchlight spheres (variance independent of visual categorizability, in red) and the mean of the correlations between image and perceptual categorizabilities and the animacy continuum in the searchlight spheres (variance independent of agency, in blue), are shown as a function of the MNI y-coordinate. For each participant, the correlations are averaged across x and z dimensions for all the searchlight spheres that survived multiple comparison correction in the searchlight analysis depicted in (A). The blue and red bounds around the means reflect the 95% confidence bounds of the average correlations across participants. The green area denotes the anatomical bounds of VTC. Visual categorizability contributes more than agency to the animacy organization in the spheres in posterior VTC. This difference in contribution switches within VTC and agency contributes maximally to the animacy organization in more anterior regions of VTC.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/47142/elife-47142-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** Both factors contribute to similar extents to the variance in the animacy continua.\n\n## Discussion\n\nThe present study investigated the organizing principles underlying the animacy organization in human ventral temporal cortex. Our starting point was the observation that the animacy organization expresses as a continuum rather than a dichotomy (Connolly et al., 2012; Sha et al., 2015; Carlson et al., 2014), such that some animals evoke more animate-like response patterns than others. Our results replicate this continuum, with the most animate response patterns evoked by humans and mammals and the weakest animate response patterns evoked by insects and snakes (Figure 4B). Unlike previous studies, our stimulus set was designed to distinguish between two possible organizing principles underlying the animacy continuum, reflecting the degree to which an animal is visually animate (visual categorizability) and the degree to which an animal is perceived to have thoughts and feelings (agency). We found that both dimensions independently explained part of the animacy continuum in VTC; together, they fully explained the animacy continuum. Whole-brain searchlight analysis revealed distinct clusters in which visual categorizability and agency explained the animacy continuum, with the agency-based organization located anterior to the visual categorizability-based organization. Below we discuss the implications of these results for our understanding of the animacy organization in VTC.\n\nThe independent contribution of visual categorizability shows that the animacy continuum in VTC is at least partly explained by the degree to which the visual features of an animal are typical of the animate category. This was observed both for the image features themselves (as represented in a CNN) and for the perceptual representations of these images in a behavioral task. These findings are in line with previous studies showing an influence of visual features on the categorical organization in high-level visual cortex (Baldassi et al., 2013; Coggan et al., 2016; Nasr et al., 2014; Rice et al., 2014; Jozwik et al., 2016). Furthermore, recent work has shown that mid-level perceptual features allow for distinguishing between animate and inanimate objects (Levin et al., 2001; Long et al., 2017; Schmidt et al., 2017; Zachariou et al., 2018) and that these features can elicit a VTC animacy organization in the absence of object recognition (Long et al., 2018). Our results show that (part of) the animacy continuum is similarly explained by visual features: animals that were more easily classified as animate by a CNN (based on visual features) were also more easily classified as animate in VTC. This correlation persisted when regressing out the perceived agency of the animals. Altogether, these findings support accounts that link the animacy organization in VTC to visual categorization demands (Grill-Spector and Weiner, 2014).\n\nIn parallel to investigations into the role of visual features in driving the categorical organization of VTC, other studies have shown that visual features do not full explain this organization (for reviews, see Peelen and Downing, 2017; Bracci et al., 2017). For example, animate-selective responses in VTC are also observed for shape- and texture-matched objects (Proklova et al., 2016; Bracci and Op de Beeck, 2016) and animate-like VTC responses can be evoked by geometric shapes that, through their movement, imply the presence of social agents (Castelli et al., 2002; Martin and Weisberg, 2003; Gobbini et al., 2007). The current results contribute to these findings by showing that (part of) the animacy continuum reflects the perceived agency of the animals: animals that were perceived as being relatively more capable of having thoughts and feelings were more easily classified as animate in VTC. This correlation persisted when regressing out the influence of animal-diagnostic visual features. These findings provide evidence that the animacy continuum is not fully explained by visual categorization demands, with perceived agency contributing significantly to the animacy organization. The finding of an agency contribution to the animacy continuum raises several interesting questions.\n\nFirst, what do we mean with agency and how does it relate to other properties? In the current study, agency was measured as the perceived ability of an animal to think and feel. Ratings on these two scales were highly correlated with each other, and also likely correlate highly with related properties such as the ability to perform complex goal-directed actions, the degree of autonomy, and levels of consciousness (Appendix). On all of these dimensions, humans will score highest and animals that score highly will be perceived as relatively more similar to humans. As such, the agency contribution revealed in the current study may reflect a human-centric organization (Contini et al., 2019). Future studies could aim to disentangle these various properties.\n\nSecond, why would agency be an organizing principle? One reason for why agency could be an important organizing principle is because the level of agency determines how we interact with an animal: we can meaningfully interact with cats but not with slugs. To predict the behavior of high-agentic animals requires inferring internal states underlying complex goal-directed behavior (Sha et al., 2015). Again, these processes will be most important when interacting with humans but will also, to varying degrees, be recruited when interacting with animals. The agency organization may reflect the specialized perceptual analysis of facial and bodily signals that allow for inferring internal states, or the perceptual predictions that follow from this analysis.\n\nFinally, how can such a seemingly high-level psychological property as agency affect responses in visual cortex? One possibility is that anterior parts of visual cortex are not exclusively visual and represent agency more abstractly, independent of input modality (Fairhall et al., 2017; van den Hurk et al., 2017). Alternatively, agency could modulate responses in visual cortex through feedback from downstream regions involved in social cognition. Regions in visual cortex responsive to social stimuli are functionally connected to the precuneus and medial prefrontal cortex \u2013 regions involved in social perspective taking and reasoning about mental states (Simmons and Martin, 2012). Indeed, it is increasingly appreciated that category-selective responses in visual cortex are not solely driven by bottom-up visual input but are integral parts of large-scale domain-selective networks involved in domain-specific tasks like social cognition, tool use, navigation, or reading (Peelen and Downing, 2017; Price and Devlin, 2011; Martin, 2007; Mahon and Caramazza, 2011). Considering the close connections between regions within each of these networks, stimuli that strongly engage the broader system will also evoke responses in the visual cortex node of the network, even in the absence of visual input (Peelen and Downing, 2017; Amedi et al., 2017).\n\nAn alternative possibility is that agency is computed within the visual system based on visual features. This scenario is consistent with our results as long as these features are different from the features leading to animate-inanimate categorization. Similar to the visual categorizability of animacy, visual categorizability of agency could arise if there was strong pressure to quickly determine the agency of an animal based on visual input. In a supplementary analysis, we found that a model based on the features represented in the final fully\u00a0connected layer of a CNN allows for predicting agency ratings (Appendix). As such, it remains possible that agency is itself visually determined.\n\nThe unique contributions of agency and visual categorizability were observed in different parts of VTC, with the agency cluster located anterior to the visual categorizability cluster. This posterior-anterior organization mirrors the well-known hierarchical organization of visual cortex. A similar posterior-anterior difference was observed in studies dissociating shape and category representations in VTC, with object shape represented posterior to object category (Proklova et al., 2016; Bracci and Op de Beeck, 2016). The finding that visual categorizability and agency expressed in different parts of VTC is consistent with multiple scenarios. One possibility is that VTC contains two distinct representations of animals, one representing category-diagnostic visual features and one representing perceived agency. Alternatively, VTC may contain a gradient from a more visual to a more conceptual representations of animacy, with the visual representation gradually being transformed into a conceptual representation. More work is needed to distinguish between these possibilities.\n\nIn sum, our results provide evidence that two principles independently contribute to the animacy organization in human VTC: visual categorizability, reflecting the presence of animal-diagnostic visual features, and agency, reflecting the degree to which animals are perceived as thinking and feeling social agents. These two principles expressed in different parts of visual cortex, following a posterior-to-anterior distinction. The finding of an agency organization that is not explained by differences in visual categorizability raises many new questions that can be addressed in future research.\n\n## Materials and methods\n\n### Neural network for image categorizability\n\nImage categorizability was quantified using a convolutional neural network (CNN), VGG-16 (Simonyan and Zisserman, 2015), which had 13 convolutional layers and 3\u00a0fully-connected layers which map 224\u00a0\u00d7\u00a0224\u00a0\u00d7\u00a03 RGB images to a 1000 dimensional object category space (each neuron corresponds to distinct labels such as cat and car). The CNN was taken from the MatConvNet package (Vedaldi and Lenc, 2015) and was pre-trained on images from the ImageNet ILSVRC classification challenge (Russakovsky et al., 2015).\n\nActivations were extracted from the final fully-connected layer, prior to the softmax operation, for 960 colored images obtained from Kiani et al. (2007) of which 480 contain an animal or animal parts and the rest contain inanimate objects or their parts. The dimensionality of the activations was reduced to 495\u00a0dimensions using principal component analysis in order to reduce the training time while keeping the captured variance high (more details can be found in Thorat, 2017). Support vector machines (SVMs) with linear kernels were trained (with the default parameters of the function fitcsvm in MATLAB r2017b, The MathWorks, Natick, MA) to distinguish between animate and inanimate object-driven activations. Training accuracies were quantified using 6-fold cross-validation. The average cross-validation accuracy was 92.2%. The image categorizability of an object was defined as the distance to the representation of that object from the decision boundary of the trained classifier. The stimuli used in the subsequent tasks, behavioral and fMRI, did not occur in this training set of 960 images.\n\n### Visual search task for perceptual categorizability\n\nPerceptual categorizability was quantified using a visual search task adopted from Mohan and Arun (2012).\u00a029 healthy adults participated in this experiment, of which 21 (9\u00a0females; age range: 19\u201362, median: 27) were selected according to the conditions specified below to obtain an estimate of perceptual categorizability. All participants gave informed consent. All procedures were carried out in accordance with the Declaration of Helsinki and were approved by the ethics committee of Radboud University (ECSW2017-2306-517).\n\nFor details of the experimental procedure, we refer the reader to Proklova et al. (2016). Briefly, on each trial, participants were presented with 16 images and had to indicate, as fast and as accurately as possible, in which panel (left or right) the oddball image occurred (see Figure 1C). The 15 distractor images were identical except that they varied in size. Participants were not instructed to look for a particular category and only had to indicate the position of the different-looking object. All participants had accuracies of 90% and higher in every block. The trials on which they made an error were repeated at the end of the respective blocks. Psychtoolbox (Brainard, 1997) controlled the stimuli presentation. Gray-scaled images of the animate objects (four exemplars each of 12 animals and humans) used in the fMRI experiment and 72 images (36 animate) from the functional localizer experiment of Proklova et al. (2016) were used in this experiment. Images were gray-scaled to make the participants capitalize on differences in object shapes and textures rather than color.\n\nIn order to obtain perceptual categorizability scores for the animate objects used in the fMRI experiment, we trained animate-inanimate classifiers on representations capturing perceptual similarity between objects. For each participant, the images of animate objects from the fMRI experiment were the test set, and 28 (14\u00a0animate) images randomly chosen from the 72 images were the training set. In order to obtain representations which encoded perceptual similarity between objects, each of the images from the training and test set were used as either targets or distractors (randomly chosen for each participant) while the images from the training set were used as distractors or targets (corresponding to the previous choice made for each participant). The inverse of the reaction time was used as a measure of perceptual similarity (Mohan and Arun, 2012). For each of the images in the train and test set, 82 values (1/RT) were obtained which were associated with a perceptual similarity-driven representational space and were used as features for the animate-inanimate classifier. A linear SVM was trained to classify the training images as animate or inanimate. The distances of the representations of the test images were then calculated from the classification boundary and were termed decision scores. This resulted, for each participant, in decision scores for images of animals and humans used in the main fMRI experiment.\n\nFor further analysis, only those participants who had both training (4-fold cross-validation) and test accuracies for animacy classification above 50% were selected. For the relevant 21 participants, the mean training accuracy was 63.4% (>50%, p\u00a0<\u00a010-4), and the mean test accuracy was 70.0% (>50%, p\u00a0<\u00a010-4). Each object\u2019s perceptual categorizability was quantified as the average of its decision scores across participants.\n\n### Main ratings experiment for agency\n\nAgency was quantified using a ratings experiment. Sixteen healthy adults participated in this experiment (9\u00a0females; all students at the University of Trento). All participants gave informed consent. All procedures were carried out in accordance with the Declaration of Helsinki and were approved by the ethics committee of the University of Trento (protocol 2013\u2013015).\n\nIn each trial, four colored images of an animal from a set of 40 animals were shown, and participants were asked to indicate, on a scale of 0\u00a0to 100, how much thoughtfulness or feelings they attributed to the animal, or how familiar they were with the animal. These three factors constituted three blocks of the experiment (the order was randomized across participants). At the beginning of each block, a description of the relevant factor was provided. Participants were encouraged to use the descriptions as guidelines for the three factors. In quantifying their familiarity with an animal, participants had to account for the knowledge about and the amount of interaction they have had with the animal. In quantifying the thoughtfulness an animal might have, participants had to account for the animal\u2019s ability in planning, having intentions, and abstraction. In quantifying the feelings an animal might have, participants had to account for the animal\u2019s ability to empathise, have sensations, and react to situations.\n\nAs mentioned in the Results section, the feelings and thoughtfulness ratings co-varied substantially with each other (the within-participant correlations were at the noise ceilings of the two factors). Agency was quantified as the average of the ratings for feelings and thoughtfulness.\n\n### fMRI experiment\n\nA functional magnetic resonance imaging (fMRI) experiment was performed to obtain the animacy continua in high-level visual cortex, specifically the ventral temporal cortex (VTC). The design was adopted from Proklova et al. (2016). Schematics of the main experiment and the animacy localizer experiment are shown in Figure 3.\n\n#### Participants\n\nSeventeen healthy adults (6 females; age range: 20\u00a0\u2212\u00a032, median: 25) were scanned at the Center for Mind/Brain Sciences of the University of Trento. This sample size was chosen to be the same as in Proklova et al. (2016), as our animacy localizer and main experiment procedure were similar to theirs. All participants gave informed consent. All procedures were carried out in accordance with the Declaration of Helsinki and were approved by the ethics committee of the University of Trento (protocol 2013\u2013015).\n\n#### Main experiment procedure\n\nThe stimuli consisted of colored images (4 exemplars each) of the 12 animals for which image categorizability and agency were orthogonalized, humans, and three inanimate objects (cars, plants, and chairs). There were a total of 64 images.\n\nThe main experiment consisted of eight runs. Each run consisted of 80 trials that were composed of 64\u00a0object trials and 16 fixation-only trials. In object trials, a single stimulus was presented for 300\u00a0ms, followed by a 3700\u00a0ms fixation period. In each run, each of the 64 images appeared exactly once. In fixation-only trials, the fixation cross was shown for 4000\u00a0ms. Trial order was randomized, with the constraints that there were exactly eight one-back repetitions of the same category (e.g., two cows in direct succession) within the object trials and that there were no two fixation trials appearing in direct succession. Each run started and ended with a 16s fixation period, leading to a total run duration of 5.9\u00a0min. Participants were instructed to press a button whenever they detected a one-back object repetition.\n\n#### Animacy localizer experiment procedure\n\nIn addition to the main experiment, participants completed one run of a functional localizer experiment. During the localizer, participants viewed grey-scale images of 36 animate and 36 inanimate stimuli in a block design. Each block lasted 16s, containing 20\u00a0stimuli that were each presented for 400\u00a0ms, followed by a 400\u00a0ms blank interval. There were eight blocks of each stimulus category and four fixation-only blocks per run. The order of the first 10 blocks was randomized and then mirror-reversed for the other 10 blocks. Participants were asked to detect one-back image repetitions, which happened twice during every non-fixation block.\n\n#### fMRI acquisition\n\nImaging data were acquired using a MedSpec 4-T head scanner (Bruker Biospin GmbH, Rheinstetten, Germany), equipped with an eight-channel head coil. For functional imaging, T2*-weighted EPIs were collected (repetition time\u00a0=\u00a02.0s, echo-time\u00a0=\u00a033\u00a0ms, 73\u00b0 flip-angle, 3\u00a0mm \u00d7\u00a03\u00a0mm\u00a0\u00d7 3\u00a0mm voxel size, 1\u00a0mm gap, 34 slices, 192\u00a0mm field of view, 64\u00a0\u00d7\u00a064 matrix size). A high-resolution T1-weighted image (magnetization prepared rapid gradient echo; 1\u00a0mm \u00d7\u00a01\u00a0mm \u00d7\u00a01\u00a0mm voxel size) was obtained as an anatomical reference.\n\n#### fMRI data pre-processing\n\nThe fMRI data were analyzed using MATLAB and SPM8. During preprocessing, the functional volumes were realigned, co-registered to the structural image, re-sampled to a 2\u00a0mm \u00d7\u00a02\u00a0mm \u00d7\u00a02\u00a0mm grid, and spatially normalized to the Montreal Neurological Institute 305 template included in SPM8. No spatial smoothing was applied.\n\n#### Region of interest -\u00a0Ventral temporal cortex\n\nVTC was defined as in Haxby et al. (2011). The region extended from \u221271 to \u221221 on the y-axis of the Montreal Neurological Institute (MNI) coordinates. The region was drawn to include the inferior temporal, fusiform, and lingual/parahippocampal gyri. The gyri were identified using Automated Anatomical Labelling (AAL) parcellation (Tzourio-Mazoyer et al., 2002).\n\n#### Obtaining the animacy continua from fMRI data\n\nAnimacy continua were extracted from parts of the brain (either a region of interest such as VTC or a searchlight sphere) with a cross-decoding approach. SVM classifiers were trained on the BOLD images obtained from the animate and inanimate blocks of the localizer experiment, and tested on the BOLD images obtained from the main experiment. The degree of animacy of an object is given by the distance of its representation from the classifier decision boundary. As the BOLD response is delayed by seconds after stimulus onset, we had to decide the latency of the BOLD images we wanted to base our analysis on. The classification test accuracy and the animacy continuum noise ceiling for the objects from the main experiment were higher for the BOLD images at 4s latency than both 6s latency and the average of the images at 4 and 6s latencies. Therefore, we based our analysis on the BOLD images at 4s latency. The findings remain unchanged across the latencies mentioned.\n\nAll the images of the brain shown in this article were rendered using MRIcron.\n\n#### Comparing models with the animacy continua in the brain\n\nWe compared the animacy continua in the brain (such as the animacy continuum in VTC and animacy continua in searchlight spheres) with image and perceptual categorizabilities (visual categorizability), agency, their combination, and their independent components. The comparisons were performed at participant-level with rank-order correlations (Kendall's\u00a0\u03c4). The comparison between an animacy continuum and the independent component of a model was performed by regressing out other models from the animacy continuum and correlating the residue with the model of interest, for each participant.\n\nGiven a participant, the comparison between an animacy continuum and the combination of models was computed as follows. The animacy continuum was modeled as a linear combination of the models (with linear regression) for the rest of the participants. The regression weights associated with each model in the combination across those participants were averaged, and the animacy continuum of the participant of interest was predicted using a linear combination of the models using the averaged weights. The predicted animacy continuum was then correlated with the actual animacy continuum of this participant. This procedure was implemented iteratively for each participant to get a group estimate of the correlation between an animacy continuum and a combination of models.\n\n#### Comparing visual categorizability with the animacy continua\n\nThe contribution of visual categorizability to an animacy continuum is gauged by the comparison between that animacy continuum and a combination of image and perceptual categorizabilities in a leave-one-participant-out analysis as mentioned above. The independent contribution of visual categorizability to an animacy continuum is gauged by regressing out agency from the image and perceptual categorizabilities and combining the residues to model the animacy continuum in a leave-one-participant-out analysis as mentioned above. When visual categorizability is to be regressed out of an animacy continuum (to obtain the independent contribution of agency), image and perceptual categorizabilities are regressed out. When visual categorizability is to be included in a combination of models, image and perceptual categorizabilities are added as models.\n\nTo assess if a model or a combination of models explained all the variance in the animacy continuum across participants, for each participant we tested if the correlation between the model or the animacy continuum predicted by the combined model (in a leave-one-out fashion as above) and the average of animacy continua of the other participants was lower than the correlation between the participant\u2019s animacy continuum and the average of animacy continua of the other participants. On the group level, if this one-sided test (see \u2018Statistical tests in use\u2019) was not significant (p\u00a0>\u00a00.05), we concluded that the correlation between the model or a combination of models hit the animacy continuum noise ceiling and thus explained all the variance in the animacy continuum across participants. In the comparisons in Figure 4C\u2013D, only the correlation between VTC animacy and the combination of visual categorizability and agency was at VTC animacy noise ceiling.\n\n#### Searchlight details\n\nIn the whole-brain searchlight analysis, the searchlight spheres contained 100 proximal voxels. SVM classifiers were trained to distinguish between the BOLD images, within the sphere, corresponding to animate and inanimate stimuli from the localizer experiment. The classifiers were tested on the BOLD images, within the sphere, from the main experiment. Threshold-free cluster enhancement (TFCE; Smith and Nichols, 2009) with a permutation test was used to correct for multiple comparisons of the accuracies relative to baseline (50%). Further analysis was constrained to the clusters which showed above-chance classification (between-subjects, p\u00a0<\u00a00.05, on both localizer and main experiment accuracies) of animate and inanimate objects. Within each searchlight sphere that survived the multiple comparisons correction, the animacy continuum was compared with image and perceptual categorizabilities (after regressing out agency) and agency (after regressing out both image and perceptual categorizabilities). Multiple comparisons across spheres of correlations to baseline (0) were corrected using TFCE. The independent visual categorizability clusters were computed as a union of spheres that had a significant contribution (independent of agency) from either image or perceptual categorizabilities.\n\n#### Statistical tests in use\n\nHypothesis testing was done with bootstrap analysis. We sampled 10,000 times with replacement from the observations being tested. p-Values correspond to one minus the proportion of sample means that are above or below the null hypothesis (corresponding to the test of interest). The p-values reported in the paper correspond to one-sided tests. The 95% confidence intervals were computed by identifying the values below and above which 2.5% of the values in the bootstrapped distribution lay. Exact p-values are reported except when means of all the bootstrap samples are higher or lower than hypothesized in which case we mention p\u00a0<\u00a010-4.\n",
+      "created_at": "2025-12-02T12:02:45.085733Z"
+    },
+    {
+      "id": "cc2044c1-7b45-4081-99c4-9cea76e0a336",
+      "submission_id": "f7b214d6-ee30-4458-b530-f8b2be18fcb2",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Thomas Serre, Brown University United States\n\nReviewers:\n- James Haxby, Dartmouth College United States\n- Dirk Bernhardt-Walther\n\n## Review text\n\nDOI: [10.7554/eLife.47142.020](https://doi.org/10.7554/eLife.47142.020)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"The nature of the animacy organization in human ventral temporal cortex\" for consideration by eLife. Your article has been reviewed by three peer reviewers, including Thomas Serre as the Reviewing Editor and Reviewer #1, and the evaluation has been overseen by Michael Frank as the Senior Editor. The following individuals involved in the review of your submission have agreed to reveal their identity: James Haxby (Reviewer #2); Dirk Bernhardt-Walther (Reviewer #3).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThis is a timely manuscript that seeks to explain the animacy continuum found in the Ventral Temporal Cortex (VTC). The authors used computational and behavioral methods to parameterize a set of stimuli used for an fMRI experiment to disentangle visual categorizability vs. agency. While these two measures have been confounded in previous work, the present study uses a stimulus set in which visual categorizability and agency are dissociated based on representations derived from convolutional neural networks and behavioral experiments. A linear model which incorporates both measures fully explains the continuum found in the fMRI experiment. A subsequent spotlight search shows that categorizability and agency are actually represented in separate clusters of voxels further strengthening the main result.\n\nThe reviewers unanimously agreed that the paper is of sufficient interest, quality, and novelty to merit accepting it for publication in eLife. The reviewers all agreed that no additional experiments are needed. A revision is however needed to clarify some of the methods and concepts used as well as to provide additional data analyses. We have the following suggestions to improve the manuscript.\n\nEssential revisions:\n\nThe reviewers suggest further analyses and figures to clarify how the representation of visual categorization and of agency are structured. Is the animacy continuum based both on visual features and agentic properties, or are there two animacy continua or a gradient reflecting a transition from a representation of visual information that lays the foundation and a representation of agency? Should the term \"animacy continuum\" refer to an amalgam of visual features and agency, or should it be reserved for semantic content?\n\nOne suggestion includes a multidimensional scaling analysis similar to the analyses and figures of Connolly et al. (2016). In the original paper, the authors showed gradients of changes in representational geometry that (a) disentangled representation of animal taxonomy vs. visual appearance in VTC and (b) disentangled predacity from visual appearance and taxonomy along the STS. A similar method could be used to help clarify exactly how the animacy continuum in VTC reflects both visual categorizability and agency. They seem to be dissociable, and the anatomical and conceptual aspects of this dissociation could be explored and explicated more thoroughly.\n\nIn a similar vein, the authors pose the question \"How can such a seemingly high-level psychological property as agency affect responses in visual cortex?\" Why the need to assume VTC is purely visual? This assumption carries with it the assertion that semantic information must come from elsewhere in a large-scale network. It seems quite possible that IT cortex makes the same computations to extract this critical feature from the constellation of visual features and learned associations that could be calculated elsewhere in a network, and direct and automatic extraction of this information in VTC may be more efficient and adaptive, as the authors acknowledge later in the Discussion. Are such computations \"visual\" or should VTC be characterized as something more than \"visual\"? The authors cite numerous papers that show the influence of nonvisual information on representation in VTC, and clearer incorporation of these facts in their reasoning could help here. Incidentally, the discussion of nonvisual activation of VTC should include a paper by Fairhall et al. (2017), who show representation in VTC of agentic properties conveyed by voices in the congenitally blind.\n\nWith regard to using a CNN as a measure of visual categorizablity, the authors write, \"Because this measure was based on a feedforward transformation of the images, we label this measure image categorizability.\" This statement may not be completely accurate. The training of a CNN uses millions of semantically-labeled images, meaning that semantics are incorporated in the development of feature spaces that afford view-invariant, lighting-invariant, and most importantly exemplar-invariant labeling of new images. Thus, characterizing this CNN as solely feedforward overlooks the fact that it is trained with semantic labels and produces semantic labels. This gray area between \"visual categorizability\" and semantic classification needs to be clarified. The current manuscript tries to make a binary distinction between visual categorizability and semantic judgment of agency, when in fact it is more complicated insofar as both the CNN and behavioral criteria for visual categorizability can be influenced by semantics \u2013 the CNN in how it is trained and the behavioral task in terms of the role that automatic activation of semantic features and categories may influence response times.\n\nThe reviewers suggest a rework of the Materials and methods section as they found it difficult to decipher what exactly had been done in the experiment and in the data analysis. Below is a list of clarifications or requests for missing information.\n\nClarifications regarding methods for using the CNN are also requested:\n\n1) Please confirm/clarify that the network was not specifically fine-tuned for animal/non-animal categorization. An SVM is trained for animal vs. non-animal categorization on top of features extracted from a pre-trained CNN.\n\n2) More generally, when using a CNN to get a visual categorizability score per image, the choice of the final layer as \"feature representation\" is somewhat odd because units are already category selective and responses across category units tend to be very sparse. For these kinds of transfer learning tasks, people normally consider layers below. Prior work (see Eberhardt et al., 2016) has shown that the best correlation between layer outputs and human decisions for rapid animal/non-animal categorization was actually in the higher convolutional layers. Please comment.\n\n3) In the statement: \"Training accuracies were quantified using 6-fold cross-validation. The training accuracy was 92.2%.\" The authors probably meant \"average test or validation accuracy\", right (i.e., by training using 5 folds and testing on the remaining one and averaging over 6 rounds)? Please confirm.\n\n4) The image categorizability of an object was defined as the distance to the representation of that object from the decision boundary of the trained classifier. Please confirm that this is distance when the image is used as a test.\n\n5) There is a methodological difference in the way categorizability scores are derived for CNNs and humans. Why? It would have been better to use the cross-validation method for both but obviously, there are constraints on how perceptual measures can be derived. Why not then use the same method for CNNs as for the human experiment of categorizability?\n\nClarifications regarding human experiments:\n\n1) Which classifier was used for the animacy decoding?\n\n2) What is the \"animacy continuum\"? Is it the unthresholded decision value of the classifier that was trained on the localizer run?\n\n3) The authors introduced two separate measures of categorizability, which turn out to be correlated. How do these two separate measures of categorizability interact with animacy?\n\n4) The linear relationship between animacy, agency, and categorizability could be investigated solely based on behavioral data. What was the scientific contribution that we obtained from the fMRI data? There is no question that there is one, but we would like to see this worked out better.\n\n5) There is no statement about informed consent for the psychophysics experiments.\n\n6) The image used differ across experiments: sometimes images are grayscale, sometimes color and sometimes unspecified. Please comment.\n\n7) The subsection about \"Comparing visual categorizability with the animacy continua\" is confusing. As written, the statistical analysis tests whether the model correlation with the animacy score is lower than that of the human to human correlation. If the corresponding p-value is <.05 as stated, then the model is indeed lower than the noise ceiling not at the noise ceiling? Please clarify. At the very least the wording should be such as to remove any source of ambiguity about the null hypothesis etc.\n\n8) It is said that \"Animacy classifiers were trained on the BOLD images obtained from the animate and inanimate blocks of the localizer experiment and tested on the BOLD images obtained from the main experiment.\" How do you then get a p-value for significance for above chance classification for each sphere as reported in the subsection \u201cSearchlight details\u201d?\n",
+      "created_at": "2025-12-02T12:02:45.085733Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T12:02:45.085733Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T12:02:45.085733Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "14210bc8-e743-4996-a0b7-6558e0983a4e",
+      "content_id": "a79c3cb7-ce17-4507-a51f-8c12acac2e26",
+      "claim_id": "C1",
+      "claim": "The animacy organization in ventral temporal cortex (VTC) reflects a continuum rather than a dichotomy.",
+      "claim_type": "EXPLICIT",
+      "source": "The principles underlying the animacy organization of the ventral temporal cortex (VTC) remain hotly debated, with recent evidence pointing to an animacy continuum rather than a dichotomy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous work (Connolly et al., 2012; Sha et al., 2015) and replicated in the current study's results.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:02:45.085733Z"
+    },
+    {
+      "id": "ebdf0bda-807b-49d5-8b80-1fb103f401b4",
+      "content_id": "a79c3cb7-ce17-4507-a51f-8c12acac2e26",
+      "claim_id": "C2",
+      "claim": "Animate and inanimate objects form distinct representational clusters in ventral temporal cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "These categories form distinct representational clusters (Kriegeskorte et al., 2008) and activate anatomically distinct regions of VTC (Grill-Spector and Weiner, 2014; Chao et al., 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous neuroimaging studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:02:45.085733Z"
+    },
+    {
+      "id": "076e8214-cba6-43a1-8e0e-18247d322f01",
+      "content_id": "a79c3cb7-ce17-4507-a51f-8c12acac2e26",
+      "claim_id": "C3",
+      "claim": "Visual categorizability and agency explain independent components of the animacy continuum in VTC.",
+      "claim_type": "EXPLICIT",
+      "source": "Using fMRI, we found that visual categorizability and agency explained independent components of the animacy continuum in VTC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by fMRI data analysis showing independent correlations after regression.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:02:45.085733Z"
+    },
+    {
+      "id": "d68b6a84-34ac-4a4c-9d0b-d6147fefb9e5",
+      "content_id": "a79c3cb7-ce17-4507-a51f-8c12acac2e26",
+      "claim_id": "C4",
+      "claim": "Visual categorizability and agency together fully explain the animacy continuum in VTC.",
+      "claim_type": "EXPLICIT",
+      "source": "Modeled together, they fully explained the animacy continuum.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by combined model reaching noise ceiling in fMRI data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:02:45.085733Z"
+    },
+    {
+      "id": "13d4dba8-2005-4209-b290-8905cb07562d",
+      "content_id": "a79c3cb7-ce17-4507-a51f-8c12acac2e26",
+      "claim_id": "C5",
+      "claim": "Clusters explained by visual categorizability are localized posterior to clusters explained by agency in VTC.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, clusters explained by visual categorizability were localized posterior to clusters explained by agency.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by searchlight analysis showing anatomical separation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:02:45.085733Z"
+    },
+    {
+      "id": "c9d7f974-fd58-4f73-93a4-38b1d772f140",
+      "content_id": "a79c3cb7-ce17-4507-a51f-8c12acac2e26",
+      "claim_id": "C6",
+      "claim": "The correlation between thoughtfulness and feelings ratings was at the noise ceiling of both ratings (\u03c4 = 0.70).",
+      "claim_type": "EXPLICIT",
+      "source": "The correlation between the thoughtfulness and feelings ratings (\u03c4 = 0.70) was at the noise ceiling of both those ratings (\u03c4thought = 0.69, \u03c4feel = 0.70).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by behavioral rating data from N=16 participants.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:02:45.085733Z"
+    },
+    {
+      "id": "38708aba-d16e-4d49-a0ff-aae1cc792b00",
+      "content_id": "a79c3cb7-ce17-4507-a51f-8c12acac2e26",
+      "claim_id": "C7",
+      "claim": "Agency was measured as the average of thoughtfulness and feelings ratings.",
+      "claim_type": "EXPLICIT",
+      "source": "We therefore averaged the thoughtfulness and feelings ratings and considered the averaged rating a measure of agency.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on high correlation between thoughtfulness and feelings ratings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:02:45.085733Z"
+    },
+    {
+      "id": "492531df-d688-4b09-bfec-770eedd1ce8a",
+      "content_id": "a79c3cb7-ce17-4507-a51f-8c12acac2e26",
+      "claim_id": "C8",
+      "claim": "Image categorizability and perceptual categorizability were positively correlated for the 12 selected animals (Kendall's \u03c4 = 0.64).",
+      "claim_type": "EXPLICIT",
+      "source": "The two measures of visual categorizability were positively correlated for the 12 animals that were selected for the fMRI experiment (Kendall's \u03c4 = 0.64), indicating that they partly reflect similar animate-selective visual properties of the objects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by correlation analysis between CNN-based and behavioral measures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:02:45.085733Z"
+    },
+    {
+      "id": "bb25a28d-ecf3-4304-998f-1a7debae9ba0",
+      "content_id": "a79c3cb7-ce17-4507-a51f-8c12acac2e26",
+      "claim_id": "C9",
+      "claim": "The final set of 12 animals had low correlations between image categorizability, agency, and familiarity (\u03c4 < 0.13).",
+      "claim_type": "EXPLICIT",
+      "source": "This was successful, as indicated by low correlations between these variables (\u03c4 < 0.13, for all correlations).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by correlation analysis of the selected stimulus set.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:02:45.085733Z"
+    },
+    {
+      "id": "9d7ea8cb-8a75-4131-b1e5-1244391e0ff2",
+      "content_id": "a79c3cb7-ce17-4507-a51f-8c12acac2e26",
+      "claim_id": "C10",
+      "claim": "The mean cross-validated training accuracy of animate-inanimate classification in VTC was 89.6%.",
+      "claim_type": "EXPLICIT",
+      "source": "The mean cross-validated training accuracy (animacy localizer) of animate-inanimate classification in VTC was 89.6%, while the cross-experiment accuracy in classifying the 16 stimuli from the main fMRI experiment was 71.3%, indicating reliable animacy information in both experiments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by SVM classification analysis of fMRI data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:02:45.085733Z"
+    },
+    {
+      "id": "e54e1330-d40e-4307-823c-d84d5cee1690",
+      "content_id": "a79c3cb7-ce17-4507-a51f-8c12acac2e26",
+      "claim_id": "C11",
+      "claim": "Among the animals, humans were the most animate whereas reptiles and insects were the least animate.",
+      "claim_type": "EXPLICIT",
+      "source": "Among the animals, humans were the most animate whereas reptiles and insects were the least animate (they were classified as inanimate, on average).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by animacy scores from fMRI classification analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:02:45.085733Z"
+    },
+    {
+      "id": "b99f05ac-f51a-4f7a-8cce-9fa792c69287",
+      "content_id": "a79c3cb7-ce17-4507-a51f-8c12acac2e26",
+      "claim_id": "C12",
+      "claim": "VTC animacy scores correlated positively with image categorizability (\u03c4 = 0.16; p = 10-3).",
+      "claim_type": "EXPLICIT",
+      "source": "VTC animacy scores correlated positively with all three measures: image categorizability (\u03c4 = 0.16; p = 10-3), perceptual categorizability (\u03c4 = 0.26; p < 10-4); and agency (\u03c4 = 0.30; p < 10-4).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by correlation analysis of fMRI data with behavioral measures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:02:45.085733Z"
+    },
+    {
+      "id": "34f2b4ea-1442-4e6c-81a2-ade2632ffa7b",
+      "content_id": "a79c3cb7-ce17-4507-a51f-8c12acac2e26",
+      "claim_id": "C13",
+      "claim": "VTC animacy scores correlated positively with perceptual categorizability (\u03c4 = 0.26; p < 10-4).",
+      "claim_type": "EXPLICIT",
+      "source": "VTC animacy scores correlated positively with all three measures: image categorizability (\u03c4 = 0.16; p = 10-3), perceptual categorizability (\u03c4 = 0.26; p < 10-4); and agency (\u03c4 = 0.30; p < 10-4).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by correlation analysis of fMRI data with behavioral measures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:02:45.085733Z"
+    },
+    {
+      "id": "d9839896-2030-41d0-a9ff-694321e79a92",
+      "content_id": "a79c3cb7-ce17-4507-a51f-8c12acac2e26",
+      "claim_id": "C14",
+      "claim": "VTC animacy scores correlated positively with agency (\u03c4 = 0.30; p < 10-4).",
+      "claim_type": "EXPLICIT",
+      "source": "VTC animacy scores correlated positively with all three measures: image categorizability (\u03c4 = 0.16; p = 10-3), perceptual categorizability (\u03c4 = 0.26; p < 10-4); and agency (\u03c4 = 0.30; p < 10-4).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by correlation analysis of fMRI data with behavioral measures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:02:45.085733Z"
+    },
+    {
+      "id": "b1f7cecb-de18-4072-b0bc-d1b38898b062",
+      "content_id": "a79c3cb7-ce17-4507-a51f-8c12acac2e26",
+      "claim_id": "C15",
+      "claim": "The correlation between VTC animacy and agency remained positive (\u03c4 = 0.23; p < 10-4) after regressing out image categorizability and perceptual categorizability.",
+      "claim_type": "EXPLICIT",
+      "source": "The correlation between VTC animacy and agency remained positive in all individual participants (\u03c4 = 0.23; p < 10-4 Figure 4D) after regressing out both image categorizability and perceptual categorizability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by regression analysis of fMRI data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:02:45.085733Z"
+    },
+    {
+      "id": "fa7d8720-be9f-4531-9176-e64ec637a056",
+      "content_id": "a79c3cb7-ce17-4507-a51f-8c12acac2e26",
+      "claim_id": "C16",
+      "claim": "The correlation between VTC animacy and visual categorizability remained positive (\u03c4 = 0.12; p = 4.7 \u00d7 103) after regressing out agency.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, the correlation between VTC animacy and visual categorizability remained positive after regressing out agency (\u03c4 = 0.12; p = 4.7 \u00d7 103).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by regression analysis of fMRI data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:02:45.085733Z"
+    },
+    {
+      "id": "61c027e5-4d14-4811-98da-1002ca231a3c",
+      "content_id": "a79c3cb7-ce17-4507-a51f-8c12acac2e26",
+      "claim_id": "C17",
+      "claim": "The combined model of visual categorizability and agency had a higher correlation with VTC animacy than any of the three factors alone.",
+      "claim_type": "EXPLICIT",
+      "source": "The resultant combined model (derived separately for each left-out participant) had a higher correlation with VTC animacy than any of the three factors alone (within-participant comparisons - \u0394IC = 0.21, p < 10-4; \u0394PC = 0.10, p = 6 x 10-4, \u0394Ag = 0.07, p = 8.3 x 10-3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by leave-one-out regression analysis of fMRI data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:02:45.085733Z"
+    },
+    {
+      "id": "f2ab0e15-6752-4c1d-9b3c-6b3e30b67a4f",
+      "content_id": "a79c3cb7-ce17-4507-a51f-8c12acac2e26",
+      "claim_id": "C18",
+      "claim": "The correlation between the combined model and VTC animacy (\u03c4 = 0.37) is at VTC animacy noise ceiling (\u03c4NC = 0.39).",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the correlation between the combined model and VTC animacy (\u03c4 = 0.37; Figure 4D) is at VTC animacy noise ceiling (\u03c4NC = 0.39; Materials and methods).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by comparison of combined model correlation to noise ceiling.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:02:45.085733Z"
+    },
+    {
+      "id": "0b97cb53-3df7-41c1-9e2e-aa4558bc3bef",
+      "content_id": "a79c3cb7-ce17-4507-a51f-8c12acac2e26",
+      "claim_id": "C19",
+      "claim": "The independent visual categorizability contribution was located in posterior VTC (LH: 1584 mm3, center MNI coordinates: x = -38, y = -80, z = 7; RH: 7184 mm3, center coordinates: x = 41, y = -71, z = 1).",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, there was a consistent anatomical mapping of the two factors: the independent visual categorizability contribution (LH: 1584 mm3, center Montreal Neurological Institute (MNI) coordinates: x = -38, y = -80, z = 7; RH: 7184 mm3, center coordinates: x = 41, y = -71, z = 1) was located posterior to the independent agency contribution (LH: 592 mm3, center coordinates: x = -42, y = -56, z = -19; RH: 4000 mm3, center coordinates: x = 39, y = -52, z = -12), extending from VTC into the lateral occipital regions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by searchlight analysis of fMRI data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:02:45.085733Z"
+    },
+    {
+      "id": "c2471e2f-3429-4129-9465-ae9e7ae0fbf0",
+      "content_id": "a79c3cb7-ce17-4507-a51f-8c12acac2e26",
+      "claim_id": "C20",
+      "claim": "The independent agency contribution was located in anterior VTC (LH: 592 mm3, center coordinates: x = -42, y = -56, z = -19; RH: 4000 mm3, center coordinates: x = 39, y = -52, z = -12).",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, there was a consistent anatomical mapping of the two factors: the independent visual categorizability contribution (LH: 1584 mm3, center Montreal Neurological Institute (MNI) coordinates: x = -38, y = -80, z = 7; RH: 7184 mm3, center coordinates: x = 41, y = -71, z = 1) was located posterior to the independent agency contribution (LH: 592 mm3, center coordinates: x = -42, y = -56, z = -19; RH: 4000 mm3, center coordinates: x = 39, y = -52, z = -12), extending from VTC into the lateral occipital regions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by searchlight analysis of fMRI data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:02:45.085733Z"
+    },
+    {
+      "id": "a02491cd-7be1-493a-bd15-6346d0aa8321",
+      "content_id": "a79c3cb7-ce17-4507-a51f-8c12acac2e26",
+      "claim_id": "C21",
+      "claim": "The posterior-anterior organization of visual categorizability and agency was observed in both hemispheres, though stronger in the right hemisphere.",
+      "claim_type": "EXPLICIT",
+      "source": "A similar posterior-anterior organization was observed in both hemispheres (Figure 5B), though stronger in the right hemisphere.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by searchlight analysis shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:02:45.085733Z"
+    },
+    {
+      "id": "954d2148-1f7b-4785-9e24-1fc3b24b3021",
+      "content_id": "a79c3cb7-ce17-4507-a51f-8c12acac2e26",
+      "claim_id": "C22",
+      "claim": "According to the visual categorization hypothesis, the animacy organization supports efficient readout of superordinate category information for rapid visual categorization.",
+      "claim_type": "EXPLICIT",
+      "source": "According to the visual categorization hypothesis, this animate-inanimate organization supports the efficient readout of superordinate category information, allowing for the rapid visual categorization of objects as being animate or inanimate (Grill-Spector and Weiner, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to theoretical framework.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:02:45.085733Z"
+    },
+    {
+      "id": "d78e510b-4516-4ca8-9824-9f8c528a9c69",
+      "content_id": "a79c3cb7-ce17-4507-a51f-8c12acac2e26",
+      "claim_id": "C23",
+      "claim": "The ability to rapidly detect animals may have constituted an evolutionary advantage.",
+      "claim_type": "EXPLICIT",
+      "source": "The ability to rapidly detect animals may have constituted an evolutionary advantage (Caramazza and Shelton, 1998; New et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to evolutionary psychology literature.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:02:45.085733Z"
+    },
+    {
+      "id": "f6c69cbd-409c-44f9-beec-389b54417c12",
+      "content_id": "a79c3cb7-ce17-4507-a51f-8c12acac2e26",
+      "claim_id": "C24",
+      "claim": "According to the agency hypothesis, the animacy organization reflects the degree to which animals share psychological characteristics with humans.",
+      "claim_type": "EXPLICIT",
+      "source": "According to this agency hypothesis, the animacy organization reflects the degree to which animals share psychological characteristics with humans, such as the ability to perform goal-directed actions and experiencing thoughts and feelings.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by theoretical framework and citations to previous work on agency.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:02:45.085733Z"
+    },
+    {
+      "id": "21d0830a-bafd-4f8a-a77a-e1fa651a3ac3",
+      "content_id": "a79c3cb7-ce17-4507-a51f-8c12acac2e26",
+      "claim_id": "C25",
+      "claim": "VTC shows animate-like responses to simple shapes whose movements imply agency.",
+      "claim_type": "EXPLICIT",
+      "source": "This continuum was interpreted as evidence that VTC reflects the psychological property of animacy, or agency, in line with earlier work showing animate-like VTC responses to simple shapes whose movements imply agency (Castelli et al., 2002; Martin and Weisberg, 2003; Gobbini et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous neuroimaging studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:02:45.085733Z"
+    },
+    {
+      "id": "3e6e50f2-e2c2-41b5-950f-a3199f5db808",
+      "content_id": "a79c3cb7-ce17-4507-a51f-8c12acac2e26",
+      "claim_id": "C26",
+      "claim": "Visual categorizability of animals correlates with the representational distance from the decision boundary of an animate-inanimate classifier trained on VTC activity patterns.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, recent work showed that the visual categorizability of animals (as measured by reaction times) correlates with the representational distance of those animals from the decision boundary of an animate-inanimate classifier trained on VTC activity patterns (Carlson et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:02:45.085733Z"
+    },
+    {
+      "id": "ba02b5cd-8a41-4c59-9313-a85bb5c42278",
+      "content_id": "a79c3cb7-ce17-4507-a51f-8c12acac2e26",
+      "claim_id": "C27",
+      "claim": "Animals' visual categorizability and agency are correlated.",
+      "claim_type": "EXPLICIT",
+      "source": "The difficulty in distinguishing between the visual categorization and agency hypotheses lies in the fact that animals' visual categorizability and agency are correlated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on logical inference from the properties of animals.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:02:45.085733Z"
+    },
+    {
+      "id": "6ee87614-438e-4625-9d70-8690770ae488",
+      "content_id": "a79c3cb7-ce17-4507-a51f-8c12acac2e26",
+      "claim_id": "C28",
+      "claim": "Four-legged mammals are relatively fast to categorize as animate and are also judged to be psychologically relatively similar to humans.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, four-legged mammals are relatively fast to categorize as animate and are also judged to be psychologically relatively similar to humans.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on general knowledge about animal perception.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:02:45.085733Z"
+    },
+    {
+      "id": "172df4ea-fb06-4375-b647-7b5eaea448bd",
+      "content_id": "a79c3cb7-ce17-4507-a51f-8c12acac2e26",
+      "claim_id": "C29",
+      "claim": "The CNN VGG-16 contains 13 convolutional layers and 3 fully-connected layers.",
+      "claim_type": "EXPLICIT",
+      "source": "A schematic of the convolutional neural network (CNN) VGG-16 is shown. The CNN contains 13 convolutional layers (shown in green), which are constrained to perform the spatially-local computations across the visual field, and three fully-connected layers (shown in blue).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by description and Figure 1B showing CNN architecture.",
+      "evidence_type": "[\"KNOWLEDGE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:02:45.085733Z"
+    },
+    {
+      "id": "5b39fcd2-467e-41ec-af84-3e516dffdc23",
+      "content_id": "a79c3cb7-ce17-4507-a51f-8c12acac2e26",
+      "claim_id": "C30",
+      "claim": "The average cross-validation accuracy of the CNN animate-inanimate classifier was 92.2%.",
+      "claim_type": "EXPLICIT",
+      "source": "The average cross-validation accuracy was 92.2%.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by CNN classification analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:02:45.085733Z"
+    },
+    {
+      "id": "d39ed999-97e6-401d-a693-eaddbc600dff",
+      "content_id": "a79c3cb7-ce17-4507-a51f-8c12acac2e26",
+      "claim_id": "C31",
+      "claim": "29 healthy adults participated in the visual search task, of which 21 were selected for analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "29 healthy adults participated in this experiment, of which 21 (9 females; age range: 19\u201362, median: 27) were selected according to the conditions specified below to obtain an estimate of perceptual categorizability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by description of participant selection.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:02:45.085733Z"
+    },
+    {
+      "id": "96ce055a-0117-4ac3-bf24-292fc5491eb5",
+      "content_id": "a79c3cb7-ce17-4507-a51f-8c12acac2e26",
+      "claim_id": "C32",
+      "claim": "All participants in the visual search task had accuracies of 90% and higher in every block.",
+      "claim_type": "EXPLICIT",
+      "source": "All participants had accuracies of 90% and higher in every block.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by behavioral task performance data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:02:45.085733Z"
+    },
+    {
+      "id": "d7e1dcc6-4ef8-4df5-8019-719ad239bfd1",
+      "content_id": "a79c3cb7-ce17-4507-a51f-8c12acac2e26",
+      "claim_id": "C33",
+      "claim": "For the 21 selected participants in the visual search task, the mean training accuracy was 63.4% (>50%, p < 10-4).",
+      "claim_type": "EXPLICIT",
+      "source": "For the relevant 21 participants, the mean training accuracy was 63.4% (>50%, p < 10-4), and the mean test accuracy was 70.0% (>50%, p < 10-4).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by SVM classification analysis of behavioral data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:02:45.085733Z"
+    },
+    {
+      "id": "0324535d-a784-40e0-b6c8-df0c6f3de83d",
+      "content_id": "a79c3cb7-ce17-4507-a51f-8c12acac2e26",
+      "claim_id": "C34",
+      "claim": "For the 21 selected participants in the visual search task, the mean test accuracy was 70.0% (>50%, p < 10-4).",
+      "claim_type": "EXPLICIT",
+      "source": "For the relevant 21 participants, the mean training accuracy was 63.4% (>50%, p < 10-4), and the mean test accuracy was 70.0% (>50%, p < 10-4).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by SVM classification analysis of behavioral data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:02:45.085733Z"
+    },
+    {
+      "id": "b5bd44a9-705c-4454-80bd-51b491669d3f",
+      "content_id": "a79c3cb7-ce17-4507-a51f-8c12acac2e26",
+      "claim_id": "C35",
+      "claim": "Sixteen healthy adults participated in the ratings experiment.",
+      "claim_type": "EXPLICIT",
+      "source": "Sixteen healthy adults participated in this experiment (9 females; all students at the University of Trento).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by description of participant sample.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:02:45.085733Z"
+    },
+    {
+      "id": "e31aa622-a728-4904-bdb6-97b8f7b0973a",
+      "content_id": "a79c3cb7-ce17-4507-a51f-8c12acac2e26",
+      "claim_id": "C36",
+      "claim": "Seventeen healthy adults participated in the fMRI experiment.",
+      "claim_type": "EXPLICIT",
+      "source": "Seventeen healthy adults (6 females; age range: 20 \u2212 32, median: 25) were scanned at the Center for Mind/Brain Sciences of the University of Trento.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by description of participant sample.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:02:45.085733Z"
+    },
+    {
+      "id": "01cb976c-fcc2-4ac9-89ac-6a828838632a",
+      "content_id": "a79c3cb7-ce17-4507-a51f-8c12acac2e26",
+      "claim_id": "C37",
+      "claim": "The main fMRI experiment consisted of eight runs.",
+      "claim_type": "EXPLICIT",
+      "source": "The main experiment consisted of eight runs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by description of experimental design.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:02:45.085733Z"
+    },
+    {
+      "id": "9a0dc52a-2a7f-468a-ad9a-670b609e6056",
+      "content_id": "a79c3cb7-ce17-4507-a51f-8c12acac2e26",
+      "claim_id": "C38",
+      "claim": "Each run in the main fMRI experiment consisted of 80 trials composed of 64 object trials and 16 fixation-only trials.",
+      "claim_type": "EXPLICIT",
+      "source": "Each run consisted of 80 trials that were composed of 64 object trials and 16 fixation-only trials.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by description of experimental design.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:02:45.085733Z"
+    },
+    {
+      "id": "8d96abb0-e218-400f-a73c-af4027e2edde",
+      "content_id": "a79c3cb7-ce17-4507-a51f-8c12acac2e26",
+      "claim_id": "C39",
+      "claim": "The animacy localizer experiment included 36 animate and 36 inanimate stimuli.",
+      "claim_type": "EXPLICIT",
+      "source": "During the localizer, participants viewed grey-scale images of 36 animate and 36 inanimate stimuli in a block design.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by description of experimental design.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:02:45.085733Z"
+    },
+    {
+      "id": "3ac29f82-15d1-4a28-a1dd-fadf7a1f2ca3",
+      "content_id": "a79c3cb7-ce17-4507-a51f-8c12acac2e26",
+      "claim_id": "C40",
+      "claim": "VTC was defined to extend from \u221271 to \u221221 on the y-axis of the MNI coordinates.",
+      "claim_type": "EXPLICIT",
+      "source": "The region extended from \u221271 to \u221221 on the y-axis of the Montreal Neurological Institute (MNI) coordinates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by description of ROI definition.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:02:45.085733Z"
+    },
+    {
+      "id": "770642f3-3288-4e31-a2e3-7c3d0bc8138b",
+      "content_id": "a79c3cb7-ce17-4507-a51f-8c12acac2e26",
+      "claim_id": "C41",
+      "claim": "The animacy organization in VTC is not fully explained by visual categorization demands.",
+      "claim_type": "EXPLICIT",
+      "source": "The current results contribute to these findings by showing that (part of) the animacy continuum reflects the perceived agency of the animals: animals that were perceived as being relatively more capable of having thoughts and feelings were more easily classified as animate in VTC. This correlation persisted when regressing out the influence of animal-diagnostic visual features. These findings provide evidence that the animacy continuum is not fully explained by visual categorization demands, with perceived agency contributing significantly to the animacy organization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by fMRI data showing independent agency contribution.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:02:45.085733Z"
+    },
+    {
+      "id": "6d64ea91-ed82-41de-a294-39ba094c6df9",
+      "content_id": "a79c3cb7-ce17-4507-a51f-8c12acac2e26",
+      "claim_id": "C42",
+      "claim": "Regions in visual cortex responsive to social stimuli are functionally connected to the precuneus and medial prefrontal cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "Regions in visual cortex responsive to social stimuli are functionally connected to the precuneus and medial prefrontal cortex \u2013 regions involved in social perspective taking and reasoning about mental states (Simmons and Martin, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to previous connectivity study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:02:45.085733Z"
+    },
+    {
+      "id": "70c11585-d537-4fb7-9a2a-543dcee7165a",
+      "content_id": "a79c3cb7-ce17-4507-a51f-8c12acac2e26",
+      "claim_id": "C43",
+      "claim": "Category-selective responses in visual cortex are integral parts of large-scale domain-selective networks.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, it is increasingly appreciated that category-selective responses in visual cortex are not solely driven by bottom-up visual input but are integral parts of large-scale domain-selective networks involved in domain-specific tasks like social cognition, tool use, navigation, or reading (Peelen and Downing, 2017; Price and Devlin, 2011; Martin, 2007; Mahon and Caramazza, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to theoretical and empirical literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:02:45.085733Z"
+    },
+    {
+      "id": "e65bcb9f-c11e-4bff-bf0c-01d3c79d1fd7",
+      "content_id": "a79c3cb7-ce17-4507-a51f-8c12acac2e26",
+      "claim_id": "C44",
+      "claim": "The posterior-anterior organization of visual categorizability and agency mirrors the hierarchical organization of visual cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "The unique contributions of agency and visual categorizability were observed in different parts of VTC, with the agency cluster located anterior to the visual categorizability cluster. This posterior-anterior organization mirrors the well-known hierarchical organization of visual cortex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on comparison to known hierarchical organization and current findings.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:02:45.085733Z"
+    },
+    {
+      "id": "942f7d68-6804-45d4-abab-666a38be9677",
+      "content_id": "a79c3cb7-ce17-4507-a51f-8c12acac2e26",
+      "claim_id": "C45",
+      "claim": "A similar posterior-anterior difference was observed in studies dissociating shape and category representations in VTC.",
+      "claim_type": "EXPLICIT",
+      "source": "A similar posterior-anterior difference was observed in studies dissociating shape and category representations in VTC, with object shape represented posterior to object category (Proklova et al., 2016; Bracci and Op de Beeck, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:02:45.085733Z"
+    },
+    {
+      "id": "fccd427b-ec5f-4edd-9f97-0c9dad6cede1",
+      "content_id": "a79c3cb7-ce17-4507-a51f-8c12acac2e26",
+      "claim_id": "C46",
+      "claim": "Animate-selective responses in VTC are observed for shape- and texture-matched objects.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, animate-selective responses in VTC are also observed for shape- and texture-matched objects (Proklova et al., 2016; Bracci and Op de Beeck, 2016) and animate-like VTC responses can be evoked by geometric shapes that, through their movement, imply the presence of social agents (Castelli et al., 2002; Martin and Weisberg, 2003; Gobbini et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous neuroimaging studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:02:45.085733Z"
+    },
+    {
+      "id": "720f57f2-246a-462f-b620-04b8815e4218",
+      "content_id": "a79c3cb7-ce17-4507-a51f-8c12acac2e26",
+      "claim_id": "C47",
+      "claim": "Mid-level perceptual features allow for distinguishing between animate and inanimate objects.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, recent work has shown that mid-level perceptual features allow for distinguishing between animate and inanimate objects (Levin et al., 2001; Long et al., 2017; Schmidt et al., 2017; Zachariou et al., 2018) and that these features can elicit a VTC animacy organization in the absence of object recognition (Long et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous studies on perceptual features.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:02:45.085733Z"
+    },
+    {
+      "id": "04734d7a-d4eb-48af-bb99-f432d85fccdf",
+      "content_id": "a79c3cb7-ce17-4507-a51f-8c12acac2e26",
+      "claim_id": "C48",
+      "claim": "The VGG-16 CNN was pre-trained on images from the ImageNet ILSVRC classification challenge.",
+      "claim_type": "EXPLICIT",
+      "source": "The CNN was taken from the MatConvNet package (Vedaldi and Lenc, 2015) and was pre-trained on images from the ImageNet ILSVRC classification challenge (Russakovsky et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by description of CNN training procedure.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:02:45.085733Z"
+    },
+    {
+      "id": "e7586876-ee64-4a82-81a1-1216d54fe88d",
+      "content_id": "a79c3cb7-ce17-4507-a51f-8c12acac2e26",
+      "claim_id": "C49",
+      "claim": "Activations were extracted from 960 colored images, of which 480 contain an animal or animal parts and the rest contain inanimate objects or their parts.",
+      "claim_type": "EXPLICIT",
+      "source": "Activations were extracted from the final fully-connected layer, prior to the softmax operation, for 960 colored images obtained from Kiani et al. (2007) of which 480 contain an animal or animal parts and the rest contain inanimate objects or their parts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by description of CNN training data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:02:45.085733Z"
+    },
+    {
+      "id": "6f3ff7e3-2ba7-4bf2-b890-04f5e88a78b9",
+      "content_id": "a79c3cb7-ce17-4507-a51f-8c12acac2e26",
+      "claim_id": "C50",
+      "claim": "The dimensionality of CNN activations was reduced to 495 dimensions using principal component analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "The dimensionality of the activations was reduced to 495 dimensions using principal component analysis in order to reduce the training time while keeping the captured variance high (more details can be found in Thorat, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by description of data preprocessing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:02:45.085733Z"
+    },
+    {
+      "id": "eda5d8ec-52d0-49bd-b069-1efa8b7d2fb6",
+      "content_id": "a79c3cb7-ce17-4507-a51f-8c12acac2e26",
+      "claim_id": "C51",
+      "claim": "Imaging data were acquired using a MedSpec 4-T head scanner equipped with an eight-channel head coil.",
+      "claim_type": "EXPLICIT",
+      "source": "Imaging data were acquired using a MedSpec 4-T head scanner (Bruker Biospin GmbH, Rheinstetten, Germany), equipped with an eight-channel head coil.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by description of MRI acquisition parameters.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:02:45.085733Z"
+    },
+    {
+      "id": "00551c40-fe30-4751-9efc-2577507ac0b6",
+      "content_id": "a79c3cb7-ce17-4507-a51f-8c12acac2e26",
+      "claim_id": "C52",
+      "claim": "Functional images were collected with T2*-weighted EPIs (repetition time = 2.0s, echo-time = 33 ms, 73\u00b0 flip-angle, 3 mm \u00d7 3 mm \u00d7 3 mm voxel size).",
+      "claim_type": "EXPLICIT",
+      "source": "For functional imaging, T2*-weighted EPIs were collected (repetition time = 2.0s, echo-time = 33 ms, 73\u00b0 flip-angle, 3 mm \u00d7 3 mm \u00d7 3 mm voxel size, 1 mm gap, 34 slices, 192 mm field of view, 64 \u00d7 64 matrix size).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by description of MRI acquisition parameters.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:02:45.085733Z"
+    },
+    {
+      "id": "b0c2e910-88de-470b-85a3-b1635d7ca62e",
+      "content_id": "a79c3cb7-ce17-4507-a51f-8c12acac2e26",
+      "claim_id": "C53",
+      "claim": "No spatial smoothing was applied to the fMRI data.",
+      "claim_type": "EXPLICIT",
+      "source": "No spatial smoothing was applied.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by description of preprocessing steps.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:02:45.085733Z"
+    },
+    {
+      "id": "54349127-432d-4133-852b-f8f13e22d00e",
+      "content_id": "a79c3cb7-ce17-4507-a51f-8c12acac2e26",
+      "claim_id": "C54",
+      "claim": "The searchlight spheres contained 100 proximal voxels.",
+      "claim_type": "EXPLICIT",
+      "source": "In the whole-brain searchlight analysis, the searchlight spheres contained 100 proximal voxels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by description of searchlight analysis parameters.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:02:45.085733Z"
+    },
+    {
+      "id": "b4f756cb-e1f4-42db-8760-443c502284a1",
+      "content_id": "a79c3cb7-ce17-4507-a51f-8c12acac2e26",
+      "claim_id": "C55",
+      "claim": "Threshold-free cluster enhancement (TFCE) with a permutation test was used to correct for multiple comparisons.",
+      "claim_type": "EXPLICIT",
+      "source": "Threshold-free cluster enhancement (TFCE; Smith and Nichols, 2009) with a permutation test was used to correct for multiple comparisons of the accuracies relative to baseline (50%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by description of statistical correction method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:02:45.085733Z"
+    },
+    {
+      "id": "432e6b4c-5b8c-4c97-8d5e-779477d2185f",
+      "content_id": "a79c3cb7-ce17-4507-a51f-8c12acac2e26",
+      "claim_id": "C56",
+      "claim": "Bootstrap analysis with 10,000 samples was used for hypothesis testing.",
+      "claim_type": "EXPLICIT",
+      "source": "Hypothesis testing was done with bootstrap analysis. We sampled 10,000 times with replacement from the observations being tested.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by description of statistical methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:02:45.085733Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "985acb9e-c19c-4da2-9a26-236b018ff988",
+      "content_id": "a79c3cb7-ce17-4507-a51f-8c12acac2e26",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Agency was operationalized as the average of thoughtfulness and feelings ratings, justified by their high correlation (\u03c4 = 0.70) which was at the noise ceiling of both measures.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6 and C7 provide a methodologically sound justification for combining thoughtfulness and feelings ratings. The correlation at noise ceiling indicates these measures capture the same underlying construct, supporting their aggregation into a single agency measure.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:02:45.085733Z"
+    },
+    {
+      "id": "eaee0bb6-6ee4-4737-a51b-d10e2c96e22c",
+      "content_id": "a79c3cb7-ce17-4507-a51f-8c12acac2e26",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Image categorizability was quantified using a pre-trained VGG-16 CNN that achieved 92.2% cross-validation accuracy in classifying animate vs. inanimate objects from 960 images, with activations extracted from the final fully-connected layer and reduced to 495 dimensions via PCA.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29, C30, C48-C50 describe a standard and well-documented CNN-based approach. The high classification accuracy (92.2%) validates the method, and the use of a pre-trained network on ImageNet is appropriate. The PCA dimensionality reduction is adequately justified for computational efficiency.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:02:45.085733Z"
+    },
+    {
+      "id": "a1ff4514-5dc2-40b2-ac49-0e898edf6d11",
+      "content_id": "a79c3cb7-ce17-4507-a51f-8c12acac2e26",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Perceptual categorizability was measured using a visual search task with 21 participants (selected from 29) who achieved 90%+ accuracy, with animate-inanimate classification reaching 63.4% training and 70.0% test accuracy (both significantly above chance, p < 10-4).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31-C34 describe appropriate participant selection criteria and demonstrate above-chance classification performance. The high task accuracy (90%+) indicates participants understood the task, and the significant classification accuracies validate the perceptual categorizability measure.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:02:45.085733Z"
+    },
+    {
+      "id": "b29ddaf4-f7b9-4533-b366-78b7498fbc6b",
+      "content_id": "a79c3cb7-ce17-4507-a51f-8c12acac2e26",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The final stimulus set of 12 animals successfully orthogonalized image categorizability, agency, and familiarity (\u03c4 < 0.13 for all correlations), while image and perceptual categorizability remained positively correlated (\u03c4 = 0.64).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8 and C9 demonstrate successful experimental design. The low correlations between key variables (C9) enable independent assessment of their contributions, while the moderate correlation between the two categorizability measures (C8) validates their convergent validity as measures of visual properties.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:02:45.085733Z"
+    },
+    {
+      "id": "f241084d-c6db-4cb7-818d-4caf88b78785",
+      "content_id": "a79c3cb7-ce17-4507-a51f-8c12acac2e26",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The fMRI experiment involved 17 participants viewing 12 animals plus 4 other objects across 8 runs, with a separate animacy localizer using 72 objects. Data were acquired at 4T with 3mm isotropic voxels, preprocessed without smoothing, and analyzed using searchlight spheres of 100 voxels with TFCE correction and bootstrap statistics (10,000 samples).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C40 and C51-C56 provide comprehensive methodological details. The sample size (N=17) is adequate for within-subject fMRI designs, acquisition parameters are standard, and statistical corrections (TFCE, bootstrap) are appropriate for the analyses performed.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:02:45.085733Z"
+    },
+    {
+      "id": "30f06343-acea-4796-8b84-9ceb946fa333",
+      "content_id": "a79c3cb7-ce17-4507-a51f-8c12acac2e26",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The study replicated the animacy continuum in VTC, with 89.6% cross-validated training accuracy and 71.3% cross-experiment accuracy for animate-inanimate classification. Humans were most animate while reptiles and insects were least animate among the animals tested.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C10, and C11 successfully replicate prior findings of an animacy continuum. The high classification accuracies demonstrate reliable animacy information in VTC, and the ordering of animals along the continuum is consistent with prior literature and theoretical expectations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:02:45.085733Z"
+    },
+    {
+      "id": "10f9ca5e-484c-49e8-bcf2-b9c65bf0701c",
+      "content_id": "a79c3cb7-ce17-4507-a51f-8c12acac2e26",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "VTC animacy scores correlated positively with image categorizability (\u03c4 = 0.16; p = 10-3), perceptual categorizability (\u03c4 = 0.26; p < 10-4), and agency (\u03c4 = 0.30; p < 10-4).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C12-C14 demonstrate significant correlations between VTC animacy and all three predictor variables. The statistical significance is well-established with appropriate non-parametric tests (Kendall's \u03c4), though the modest effect sizes suggest these factors explain only part of the variance.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:02:45.085733Z"
+    },
+    {
+      "id": "bf5c30ab-2a67-41e5-a444-48ce7b2f4430",
+      "content_id": "a79c3cb7-ce17-4507-a51f-8c12acac2e26",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "After regression to control for confounds, both agency (\u03c4 = 0.23; p < 10-4, controlling for visual categorizability) and visual categorizability (\u03c4 = 0.12; p = 4.7 \u00d7 10-3, controlling for agency) independently contributed to VTC animacy scores.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C15 and C16 provide critical evidence for independent contributions through appropriate regression analyses. Both correlations remain significant after controlling for the other factor, demonstrating that visual categorizability and agency explain distinct variance in VTC animacy organization.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:02:45.085733Z"
+    },
+    {
+      "id": "fb3df78b-3afd-42ff-9eb1-c32e985a7715",
+      "content_id": "a79c3cb7-ce17-4507-a51f-8c12acac2e26",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "A combined model of visual categorizability and agency fully explained the VTC animacy continuum, with correlation (\u03c4 = 0.37) reaching the noise ceiling (\u03c4NC = 0.39) and significantly outperforming individual factors (all p < 0.01).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C4, C17, and C18 demonstrate that the combined model accounts for all reliable variance in VTC animacy. The noise ceiling analysis is methodologically sound, and the leave-one-out cross-validation approach appropriately guards against overfitting. This is a key finding supporting the dual-factor account.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:02:45.085733Z"
+    },
+    {
+      "id": "4711c8c4-bc9d-4c59-8639-c9253a6d778b",
+      "content_id": "a79c3cb7-ce17-4507-a51f-8c12acac2e26",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Searchlight analysis revealed anatomical dissociation: independent visual categorizability contributions were localized to posterior VTC (extending to lateral occipital cortex), while independent agency contributions were localized to anterior VTC, with this posterior-anterior organization observed bilaterally but stronger in the right hemisphere.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C19-C21 provide converging spatial evidence for the dual-factor account. The searchlight analysis with appropriate multiple comparison correction (TFCE) demonstrates anatomically distinct contributions. The posterior-anterior gradient aligns with known hierarchical organization of visual cortex, strengthening the interpretation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:02:45.085733Z"
+    },
+    {
+      "id": "6b5891fb-6c2b-4987-9e5b-5557440a9d5f",
+      "content_id": "a79c3cb7-ce17-4507-a51f-8c12acac2e26",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The study situates findings within two theoretical frameworks: the visual categorization hypothesis (emphasizing rapid animate-inanimate categorization with potential evolutionary advantages) and the agency hypothesis (emphasizing psychological properties and social cognition), both supported by prior literature.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C26 accurately represent prior theoretical frameworks and supporting evidence from the literature. The citations are appropriate and the characterization of competing hypotheses provides necessary context for interpreting the current findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:02:45.085733Z"
+    },
+    {
+      "id": "74ca41b3-2fa4-4a52-bec0-92d97795a959",
+      "content_id": "a79c3cb7-ce17-4507-a51f-8c12acac2e26",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The findings demonstrate that VTC animacy organization is not fully explained by visual categorization demands alone, with agency contributing independently. The posterior-anterior spatial organization mirrors hierarchical visual cortex organization and parallels prior findings dissociating shape from category representations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41, C44-C47 appropriately interpret the findings in light of prior work. The conclusion that agency contributes beyond visual features is supported by the regression analyses (C15), and the comparison to hierarchical organization and prior shape-category dissociations (C45) is well-justified by the spatial findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:02:45.085733Z"
+    },
+    {
+      "id": "7822f162-90ea-44e6-b456-7ccc07c8a764",
+      "content_id": "a79c3cb7-ce17-4507-a51f-8c12acac2e26",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Visual cortex regions responsive to social stimuli are functionally connected to social cognition networks (precuneus, medial prefrontal cortex), and category-selective responses are increasingly understood as parts of large-scale domain-selective networks rather than purely bottom-up visual processing.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42 and C43 accurately represent current understanding of visual cortex organization based on appropriate citations. These claims provide theoretical context for how agency might influence VTC responses through network-level interactions, though they describe prior work rather than novel findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:02:45.085733Z"
+    },
+    {
+      "id": "53279186-54a5-459b-adc9-dcff6f480630",
+      "content_id": "a79c3cb7-ce17-4507-a51f-8c12acac2e26",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Visual categorizability and agency are naturally correlated properties of animals (e.g., four-legged mammals are both fast to categorize as animate and judged psychologically similar to humans), creating a challenge for distinguishing their independent contributions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27 and C28 accurately describe the confound that motivated the experimental design. This is based on logical inference and general knowledge about animal properties, appropriately setting up the rationale for orthogonalizing these factors in the stimulus selection.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:02:45.085733Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "c9d7f974-fd58-4f73-93a4-38b1d772f140",
+      "result_id": "985acb9e-c19c-4da2-9a26-236b018ff988"
+    },
+    {
+      "claim_id": "38708aba-d16e-4d49-a0ff-aae1cc792b00",
+      "result_id": "985acb9e-c19c-4da2-9a26-236b018ff988"
+    },
+    {
+      "claim_id": "172df4ea-fb06-4375-b647-7b5eaea448bd",
+      "result_id": "eaee0bb6-6ee4-4737-a51b-d10e2c96e22c"
+    },
+    {
+      "claim_id": "5b39fcd2-467e-41ec-af84-3e516dffdc23",
+      "result_id": "eaee0bb6-6ee4-4737-a51b-d10e2c96e22c"
+    },
+    {
+      "claim_id": "04734d7a-d4eb-48af-bb99-f432d85fccdf",
+      "result_id": "eaee0bb6-6ee4-4737-a51b-d10e2c96e22c"
+    },
+    {
+      "claim_id": "e7586876-ee64-4a82-81a1-1216d54fe88d",
+      "result_id": "eaee0bb6-6ee4-4737-a51b-d10e2c96e22c"
+    },
+    {
+      "claim_id": "6f3ff7e3-2ba7-4bf2-b890-04f5e88a78b9",
+      "result_id": "eaee0bb6-6ee4-4737-a51b-d10e2c96e22c"
+    },
+    {
+      "claim_id": "d39ed999-97e6-401d-a693-eaddbc600dff",
+      "result_id": "a1ff4514-5dc2-40b2-ac49-0e898edf6d11"
+    },
+    {
+      "claim_id": "96ce055a-0117-4ac3-bf24-292fc5491eb5",
+      "result_id": "a1ff4514-5dc2-40b2-ac49-0e898edf6d11"
+    },
+    {
+      "claim_id": "d7e1dcc6-4ef8-4df5-8019-719ad239bfd1",
+      "result_id": "a1ff4514-5dc2-40b2-ac49-0e898edf6d11"
+    },
+    {
+      "claim_id": "0324535d-a784-40e0-b6c8-df0c6f3de83d",
+      "result_id": "a1ff4514-5dc2-40b2-ac49-0e898edf6d11"
+    },
+    {
+      "claim_id": "492531df-d688-4b09-bfec-770eedd1ce8a",
+      "result_id": "b29ddaf4-f7b9-4533-b366-78b7498fbc6b"
+    },
+    {
+      "claim_id": "bb25a28d-ecf3-4304-998f-1a7debae9ba0",
+      "result_id": "b29ddaf4-f7b9-4533-b366-78b7498fbc6b"
+    },
+    {
+      "claim_id": "b5bd44a9-705c-4454-80bd-51b491669d3f",
+      "result_id": "f241084d-c6db-4cb7-818d-4caf88b78785"
+    },
+    {
+      "claim_id": "e31aa622-a728-4904-bdb6-97b8f7b0973a",
+      "result_id": "f241084d-c6db-4cb7-818d-4caf88b78785"
+    },
+    {
+      "claim_id": "01cb976c-fcc2-4ac9-89ac-6a828838632a",
+      "result_id": "f241084d-c6db-4cb7-818d-4caf88b78785"
+    },
+    {
+      "claim_id": "9a0dc52a-2a7f-468a-ad9a-670b609e6056",
+      "result_id": "f241084d-c6db-4cb7-818d-4caf88b78785"
+    },
+    {
+      "claim_id": "8d96abb0-e218-400f-a73c-af4027e2edde",
+      "result_id": "f241084d-c6db-4cb7-818d-4caf88b78785"
+    },
+    {
+      "claim_id": "3ac29f82-15d1-4a28-a1dd-fadf7a1f2ca3",
+      "result_id": "f241084d-c6db-4cb7-818d-4caf88b78785"
+    },
+    {
+      "claim_id": "eda5d8ec-52d0-49bd-b069-1efa8b7d2fb6",
+      "result_id": "f241084d-c6db-4cb7-818d-4caf88b78785"
+    },
+    {
+      "claim_id": "00551c40-fe30-4751-9efc-2577507ac0b6",
+      "result_id": "f241084d-c6db-4cb7-818d-4caf88b78785"
+    },
+    {
+      "claim_id": "b0c2e910-88de-470b-85a3-b1635d7ca62e",
+      "result_id": "f241084d-c6db-4cb7-818d-4caf88b78785"
+    },
+    {
+      "claim_id": "54349127-432d-4133-852b-f8f13e22d00e",
+      "result_id": "f241084d-c6db-4cb7-818d-4caf88b78785"
+    },
+    {
+      "claim_id": "b4f756cb-e1f4-42db-8760-443c502284a1",
+      "result_id": "f241084d-c6db-4cb7-818d-4caf88b78785"
+    },
+    {
+      "claim_id": "432e6b4c-5b8c-4c97-8d5e-779477d2185f",
+      "result_id": "f241084d-c6db-4cb7-818d-4caf88b78785"
+    },
+    {
+      "claim_id": "14210bc8-e743-4996-a0b7-6558e0983a4e",
+      "result_id": "30f06343-acea-4796-8b84-9ceb946fa333"
+    },
+    {
+      "claim_id": "9d7ea8cb-8a75-4131-b1e5-1244391e0ff2",
+      "result_id": "30f06343-acea-4796-8b84-9ceb946fa333"
+    },
+    {
+      "claim_id": "e54e1330-d40e-4307-823c-d84d5cee1690",
+      "result_id": "30f06343-acea-4796-8b84-9ceb946fa333"
+    },
+    {
+      "claim_id": "b99f05ac-f51a-4f7a-8cce-9fa792c69287",
+      "result_id": "10f9ca5e-484c-49e8-bcf2-b9c65bf0701c"
+    },
+    {
+      "claim_id": "34f2b4ea-1442-4e6c-81a2-ade2632ffa7b",
+      "result_id": "10f9ca5e-484c-49e8-bcf2-b9c65bf0701c"
+    },
+    {
+      "claim_id": "d9839896-2030-41d0-a9ff-694321e79a92",
+      "result_id": "10f9ca5e-484c-49e8-bcf2-b9c65bf0701c"
+    },
+    {
+      "claim_id": "b1f7cecb-de18-4072-b0bc-d1b38898b062",
+      "result_id": "bf5c30ab-2a67-41e5-a444-48ce7b2f4430"
+    },
+    {
+      "claim_id": "fa7d8720-be9f-4531-9176-e64ec637a056",
+      "result_id": "bf5c30ab-2a67-41e5-a444-48ce7b2f4430"
+    },
+    {
+      "claim_id": "076e8214-cba6-43a1-8e0e-18247d322f01",
+      "result_id": "fb3df78b-3afd-42ff-9eb1-c32e985a7715"
+    },
+    {
+      "claim_id": "61c027e5-4d14-4811-98da-1002ca231a3c",
+      "result_id": "fb3df78b-3afd-42ff-9eb1-c32e985a7715"
+    },
+    {
+      "claim_id": "f2ab0e15-6752-4c1d-9b3c-6b3e30b67a4f",
+      "result_id": "fb3df78b-3afd-42ff-9eb1-c32e985a7715"
+    },
+    {
+      "claim_id": "d68b6a84-34ac-4a4c-9d0b-d6147fefb9e5",
+      "result_id": "fb3df78b-3afd-42ff-9eb1-c32e985a7715"
+    },
+    {
+      "claim_id": "0b97cb53-3df7-41c1-9e2e-aa4558bc3bef",
+      "result_id": "4711c8c4-bc9d-4c59-8639-c9253a6d778b"
+    },
+    {
+      "claim_id": "c2471e2f-3429-4129-9465-ae9e7ae0fbf0",
+      "result_id": "4711c8c4-bc9d-4c59-8639-c9253a6d778b"
+    },
+    {
+      "claim_id": "a02491cd-7be1-493a-bd15-6346d0aa8321",
+      "result_id": "4711c8c4-bc9d-4c59-8639-c9253a6d778b"
+    },
+    {
+      "claim_id": "13d4dba8-2005-4209-b290-8905cb07562d",
+      "result_id": "4711c8c4-bc9d-4c59-8639-c9253a6d778b"
+    },
+    {
+      "claim_id": "954d2148-1f7b-4785-9e24-1fc3b24b3021",
+      "result_id": "6b5891fb-6c2b-4987-9e5b-5557440a9d5f"
+    },
+    {
+      "claim_id": "d78e510b-4516-4ca8-9824-9f8c528a9c69",
+      "result_id": "6b5891fb-6c2b-4987-9e5b-5557440a9d5f"
+    },
+    {
+      "claim_id": "f6c69cbd-409c-44f9-beec-389b54417c12",
+      "result_id": "6b5891fb-6c2b-4987-9e5b-5557440a9d5f"
+    },
+    {
+      "claim_id": "21d0830a-bafd-4f8a-a77a-e1fa651a3ac3",
+      "result_id": "6b5891fb-6c2b-4987-9e5b-5557440a9d5f"
+    },
+    {
+      "claim_id": "3e6e50f2-e2c2-41b5-950f-a3199f5db808",
+      "result_id": "6b5891fb-6c2b-4987-9e5b-5557440a9d5f"
+    },
+    {
+      "claim_id": "770642f3-3288-4e31-a2e3-7c3d0bc8138b",
+      "result_id": "74ca41b3-2fa4-4a52-bec0-92d97795a959"
+    },
+    {
+      "claim_id": "e65bcb9f-c11e-4bff-bf0c-01d3c79d1fd7",
+      "result_id": "74ca41b3-2fa4-4a52-bec0-92d97795a959"
+    },
+    {
+      "claim_id": "942f7d68-6804-45d4-abab-666a38be9677",
+      "result_id": "74ca41b3-2fa4-4a52-bec0-92d97795a959"
+    },
+    {
+      "claim_id": "fccd427b-ec5f-4edd-9f97-0c9dad6cede1",
+      "result_id": "74ca41b3-2fa4-4a52-bec0-92d97795a959"
+    },
+    {
+      "claim_id": "720f57f2-246a-462f-b620-04b8815e4218",
+      "result_id": "74ca41b3-2fa4-4a52-bec0-92d97795a959"
+    },
+    {
+      "claim_id": "6d64ea91-ed82-41de-a294-39ba094c6df9",
+      "result_id": "7822f162-90ea-44e6-b456-7ccc07c8a764"
+    },
+    {
+      "claim_id": "70c11585-d537-4fb7-9a2a-543dcee7165a",
+      "result_id": "7822f162-90ea-44e6-b456-7ccc07c8a764"
+    },
+    {
+      "claim_id": "ba02b5cd-8a41-4c59-9313-a85bb5c42278",
+      "result_id": "53279186-54a5-459b-adc9-dcff6f480630"
+    },
+    {
+      "claim_id": "6ee87614-438e-4625-9d70-8690770ae488",
+      "result_id": "53279186-54a5-459b-adc9-dcff6f480630"
+    }
+  ],
+  "comparisons": []
+}

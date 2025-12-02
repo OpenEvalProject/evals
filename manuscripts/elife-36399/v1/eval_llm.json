@@ -1,0 +1,323 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C47",
+      "C48",
+      "C15",
+      "C16",
+      "C49"
+    ],
+    "result": "The study analyzed 2898 publications from 1995-2017 where authors claimed equal contribution, identifying eight classes of author gender combinations. Of these, 2406 (83%) had two equal contributors and 492 (17%) had three or more.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C47, C48, C15, C16, and C49 provide consistent data on the dataset composition and are directly supported by Table 1. The methodology for data collection and classification is clearly described, and the numbers are internally consistent across multiple claims.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C50",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "For two-author equal contribution papers, mixed-gender combinations were most common, followed by male-male (1000) and female-female (377) combinations. Male-female combinations (583) were more frequent than female-male (446) with a ratio of 1.3:1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C50, C28, C29, and C30 are directly supported by the data in Table 1 showing 1029 mixed-gender (583 mf + 446 fm), 1000 mm, and 377 ff combinations. The calculated ratio of 1.3:1 (583/446 = 1.30) is mathematically correct.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C31",
+      "C32",
+      "C59",
+      "C64"
+    ],
+    "result": "Among mixed-gender two-author papers, males were listed first more often (548/972, 56.38%) than females (424/972, 43.62%), with statistical significance (\u03c7\u00b2=15.8, p<0.001). However, this disparity decreased over time, with significant bias before 2007 (p<0.001) but not after 2007 (p=0.156). The odds ratio showed a 4.2% annual decrease in male preference (OR=0.958, 95% CI: 0.931-0.986, p=0.003).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C17-C22, C31-C32, C59, and C64 present a coherent temporal analysis with appropriate statistical tests. The chi-square test is appropriate for comparing observed vs. expected ratios, and the GEE analysis properly accounts for clustering by journal. The temporal trend is consistently supported across multiple analytical approaches and visualized in Figures 1-2.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C23",
+      "C24",
+      "C33",
+      "C34"
+    ],
+    "result": "For papers with three or more equal contributors, males were listed first more often (201/349, 57.59%) than females (148/349, 42.40%) with p=0.005, yielding a ratio of 1.35:1. All-male combinations (116) were nearly four times more common than all-female combinations (27).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C5, C23, C24, C33, and C34 are supported by data in Table 1 and statistical analysis. The ratios are correctly calculated (201/148 = 1.36, 116/27 = 4.3), and the p-value of 0.005 indicates statistical significance. However, the sample size for three+ author papers (492 total) is smaller than for two-author papers.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C25",
+      "C65",
+      "C97"
+    ],
+    "result": "The frequency of publications with three or more authors contributing equally is increasing over time, with a positive trendline (R\u00b2=0.4857) shown in Figure 3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C25, C65, and C97 describe a temporal trend supported by Figure 3. However, the R\u00b2 value of 0.4857 indicates that only ~49% of variance is explained by the linear trend, suggesting moderate predictive power. The claim of increasing frequency is visually apparent but the strength of evidence is moderate given the R\u00b2 value and potential confounding factors not addressed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C6",
+      "C26",
+      "C27",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Overall, 49.6% of publications had alphabetically ordered authors. Among alphabetically ordered publications, male-female combinations were more common than female-male (\u03c7\u00b2=4.359, p=0.037). The gender inequalities observed are not consistent with random or alphabetical ordering.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C26-C27, and C69-C77 provide evidence that alphabetical ordering does not explain the observed gender disparities. The finding that even among alphabetically ordered papers, mf > fm (p=0.037) strengthens the conclusion that the bias is not due to alphabetical conventions. The detailed percentages for different author combinations (C70-C77) show that alphabetical ordering varies by gender combination type.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C66",
+      "C68",
+      "C83",
+      "C45"
+    ],
+    "result": "Analysis by geographical region showed no differences in gender bias by country for two-author papers. Patterns for Asia, Australia, and North America were similar, while Africa, Europe, and South America showed different patterns, though sample sizes for some regions may be inadequate for comparison.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C66, C68, C83, and C45 present geographical analysis with important caveats. The authors appropriately note that sample sizes for some regions may be inadequate (C45), which undermines confidence in the regional comparisons. The lack of statistical significance by country (C66) may reflect insufficient power rather than true absence of differences. Figure 4 shows overlapping confidence intervals consistent with no difference.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C67"
+    ],
+    "result": "For publications with more than two equally contributing authors, the GEE model showed a 1% decrease in odds of gender bias per year (OR=0.99, 95% CI: 0.933-1.051).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C67 reports a non-significant temporal trend for 3+ author papers (95% CI includes 1.0), contrasting with the significant trend for 2-author papers. This suggests the temporal improvement in gender equity may be limited to two-author papers, but the smaller sample size (492 vs 2406 papers) limits statistical power to detect trends in the 3+ author group.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "The dataset of 2898 publications represents ~1.45% of available equal-contribution publications in PubMed. Gender was successfully assigned for 97% of papers using Google image searches, with 4% uncertainty comparable to or better than other studies (5-17%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C54, C87-C89 describe the sampling and methodology with appropriate context. The calculation of 1.45% (2898/200,000) is correct given the cited estimate that 0.8% of 25 million PubMed papers have equal contributors. The 4% gender non-identification rate compares favorably to other methods (C87), supporting the validity of the image-based gender assignment approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "The Google Scholar search strategy returned more older papers with higher male-female ratios compared to journal website searches, revealing a temporal variable. Each publication required ~5 minutes of manual inspection, often necessitating PDF review as equal contribution information was frequently absent from online versions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C58 describe important methodological observations about data collection. The discovery that search strategy affected temporal distribution (C55-C56) demonstrates appropriate quality control. The time investment (C57) and format issues (C58) are practical details that support reproducibility and highlight challenges in this type of research.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C38",
+      "C78",
+      "C79"
+    ],
+    "result": "Equal contribution information is often in footnotes and may be absent from online versions. The second-listed author may not benefit as much as the first, leading some journals to encourage citing both authors instead of 'firstname et al.' format.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38, C78, and C79 describe practical implications of author ordering. C38 is an empirical observation from the study. C78 is a reasonable inference about reader behavior and credit attribution. C79 is supported by citation to a journal editorial (Drubin, 2014), showing that the scientific community recognizes this issue.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C91",
+      "C101"
+    ],
+    "result": "In biological sciences, first authorship indicates the most important contributor, typically trainees (students/postdocs). First author publications are measures of success that affect career trajectories, with career milestones occurring years after these publications.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C36, C91, and C101 describe established conventions in biomedical publishing and academic career progression. These are well-established norms in the field and provide important context for understanding why author order matters. The claims are presented as general knowledge rather than novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C37",
+      "C92",
+      "C93",
+      "C96"
+    ],
+    "result": "Women have exceeded men in biological sciences PhD training since 2000. The early-period gender bias may reflect residual seniority differences when males comprised a higher percentage of trainees. However, the predominance of male-only author combinations cannot be explained by trainee demographics post-2000.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37, C92-C93, and C96 integrate demographic data from cited sources with the study findings. The temporal context is important: the shift in trainee demographics around 2000 provides a potential explanation for early-period bias (C93) but makes post-2000 disparities more concerning (C96). The logic is sound and supported by appropriate citations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C98",
+      "C100"
+    ],
+    "result": "The observed gender inequalities raise the possibility that authorship decisions are vulnerable to conscious or unconscious biases. This suggests journals should require statements explaining how author ordering was determined for equal contribution publications.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C63, C98, and C100 present reasonable inferences and recommendations based on the empirical findings. The conclusion that observed disparities suggest potential bias (C62) is warranted given the statistical evidence against random ordering. The recommendation for transparency in author ordering (C63, C98) is a logical policy implication, though C90 notes only one paper in the dataset explained ordering rationale.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C95",
+      "C102"
+    ],
+    "result": "The effects of historical gender disparities in author ordering may have long-lasting career consequences, potentially affecting hiring, promotion, and grant funding decisions. This information should be considered by review committees evaluating applications with equal contribution publications.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C60-C61, C95, and C102 are speculative about long-term consequences. While the logic is plausible (historical disparities \u2192 career impacts), these are inferences about future/ongoing effects rather than demonstrated outcomes. The claims appropriately use conditional language ('could have consequences,' 'may linger'), but lack direct evidence linking past author ordering to current career outcomes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "The number of authors per publication has increased steadily in recent decades due to team science and increased data content. Equal contribution statements increased from <1% in 2000 to 1.0-8.6% by 2009, with some journals (e.g., Gastroenterology) reaching 21% by 2011-2012.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C11 provide background context from cited literature. These establish the increasing prevalence of multi-author papers and equal contribution statements, motivating the study. All claims are supported by appropriate citations to prior work and provide important context for understanding the significance of the research question.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Prior research documents gender disparities in academia: women are underrepresented in senior positions, less likely to be first or senior authors, more likely to be middle authors, and receive less credit for teamwork. Male graduate students are 15% more likely to be listed in publications, and males preferentially share data with other men.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C14, C39-C42 summarize prior literature on gender disparities in science. Each claim is supported by appropriate citations. This background establishes that gender inequities in authorship are part of a broader pattern documented in multiple studies, providing important context for interpreting the current findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C46",
+      "C80",
+      "C81"
+    ],
+    "result": "The study observed groupings of up to 11 equal contributors. Prior work found no journal guidelines address equal contribution statements, and that female co-first authors are less represented in clinical vs. basic science journals. The prevalence of all-male author groups echoes concerns about male-exclusive networks, though some question whether equal contribution statements can ever be accurate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C44, C46, C80-C81 provide additional context from literature and study observations. C43 documents an extreme case with citations. C44 and C81 cite relevant prior work on policy gaps and conceptual issues. C46 cites a recent study with findings consistent with the current work. C80 appropriately connects findings to broader concerns about gender networks.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C82",
+      "C84",
+      "C85",
+      "C86",
+      "C94",
+      "C99"
+    ],
+    "result": "Most publications analyzed were from the US. Similar patterns across Asia, Australia, and North America may reflect similar author ordering practices. Temporal variation suggests rapidly changing variables. Differences between journals suggest field-specific effects that could skew results. The declining male preference may reflect recent gains by women in academia, though country-specific differences warrant future investigation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C82, C84-C86, C94, and C99 present interpretations and limitations with appropriate caution. C84, C94, and C99 use conditional language ('may reflect,' 'could reflect') acknowledging speculation. C86 appropriately identifies a limitation regarding field differences. However, these interpretations lack direct supporting evidence and represent plausible hypotheses rather than demonstrated findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C90"
+    ],
+    "result": "Only one publication in the dataset provided rationale for author ordering, indicating it was alphabetical.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C90 is a direct empirical observation from the study with a specific citation (Bieberstein et al., 2012). This finding highlights the lack of transparency in author ordering decisions and supports the recommendation for journals to require such statements. The observation that only 1/2898 papers explained ordering is striking.",
+    "result_type": "MINOR"
+  }
+]

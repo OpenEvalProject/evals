@@ -1,0 +1,254 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C58"
+    ],
+    "result": "The aqueous solubility of Vx-770 at 25\u00b0C and pH 7.1 is approximately 60 nM, which is ~200-fold lower than previously believed. The drug shows high solubility in organic solvents (DMSO ~0.77 M, 1-octanol ~3.9 mM, ethanol ~3.1 mM) and exhibits strong absorption at 311 nm in 1-octanol.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C7 and C58 are well-supported by systematic experimental measurements using spectrophotometry and extraction methods (Figure 1, Table 1). The methodology includes appropriate controls (repeated extractions, filtration, centrifugation) and multiple independent measurements (n=4 for aqueous solubility). The 200-fold discrepancy with previous reports is a calculated comparison based on the measured data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C74",
+      "C75",
+      "C76",
+      "C80",
+      "C81",
+      "C49",
+      "C50",
+      "C82"
+    ],
+    "result": "The aqueous solubility of Vx-770 is pH-independent between pH 7.1 and 7.4 (~50-62 nM at 25\u00b0C), temperature-dependent (~138 nM at 37\u00b0C, ~2-fold increase), with thermodynamic parameters \u0394H\u00b0sol = +51.2 kJ/mol and \u0394G\u00b0sol = +41.1 kJ/mol. The drug remains uncharged across the physiological pH range, making its distribution independent of pH gradients and membrane potential.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C31, C74-C76, C80-C82, C49-C50 are supported by systematic solubility measurements at different pH values and temperatures (n=3 independent measurements each). The thermodynamic calculations follow standard equations. The inference about the pKa being >7.4 is reasonable given the pH-independence of solubility. However, C76 (hydrogen bond disruption explanation) is somewhat speculative, though thermodynamically plausible.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C12",
+      "C22",
+      "C23",
+      "C59",
+      "C60"
+    ],
+    "result": "Vx-770 stimulation of WT CFTR is fully reversible in cell-free patches, with ~4-fold current stimulation at saturating concentrations and a deactivation time constant of ~2 minutes. The drug increases channel opening rate and decreases closing rate. Previous reports of irreversibility were likely due to supersaturated drug concentrations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C9, C12, C22, C23, C59, C60 are well-supported by macroscopic and single-channel patch-clamp recordings (Figure 2). The reversibility is clearly demonstrated with exponential fits. The mechanistic explanation for previous irreversibility (C9) is a reasonable inference based on the newly measured solubility, though it remains somewhat speculative without direct testing of the supersaturation hypothesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C62"
+    ],
+    "result": "The K0.5 of Vx-770 for WT CFTR stimulation is approximately 0.47-0.49 nM with a Hill coefficient of ~1.3, representing a ~600-fold higher potency than previously reported (~300 nM).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10, C11, C62 are supported by dose-response experiments using both aqueous-saturated and DMSO-based stocks (Figure 3a-c). The two independent approaches yielded consistent K0.5 values (~0.47 and ~0.49 nM), strengthening confidence. The comparison with previous literature is appropriately cited. Sample sizes are adequate (n=3-13).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C63",
+      "C64"
+    ],
+    "result": "Vx-770 stimulates G551D and \u0394F508 CFTR currents by ~11-12-fold with K0.5 values of ~1.5 nM and Hill coefficients of ~1.12-1.22. This represents 20-300-fold higher potency than previously reported for these mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C18, C63-C64 are supported by dose-response experiments on mutant CFTR channels (Figure 3d-f). The methodology is consistent with WT experiments. The effects are fully reversible with similar time constants (~2 min). Sample sizes appear adequate (n=3-13 based on error bars). The comparison with previous literature is appropriately cited.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Vx-770 activation shows sigmoidal kinetics with marked delays (up to ~1 min) at low concentrations, requiring at least three sequential concentration-dependent slow steps for adequate fitting. Deactivation follows single-exponential kinetics independent of drug concentration, while activation rate increases with concentration. Single-channel recordings show abrupt but delayed changes in open probability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C21, C65-C69 are well-supported by detailed kinetic analysis of macroscopic and single-channel recordings (Figure 4). The sigmoidal activation is clearly visible, and the requirement for three sequential steps is demonstrated by fitting. The concentration-independence of deactivation rate and concentration-dependence of activation rate are shown experimentally (Figure 4b-c). C66 includes a mechanistic interpretation supported by citation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C24",
+      "C53",
+      "C54",
+      "C72",
+      "C73"
+    ],
+    "result": "A kinetic model (Scheme 3) with two independent drug binding sites provides a good fit to Vx-770 activation/deactivation time courses over a 100-fold concentration range. The model predicts that two drug molecules must bind for potentiation, slow deactivation reflects drug dissociation from protein (not membrane washout), and an apparent Hill slope of ~1.17 consistent with experimental data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24, C53, C54, C72, C73 are supported by systematic kinetic modeling (Figure 5). Scheme 3 provides dramatically improved fits compared to simpler models despite having the same number of free parameters as Scheme 1. The model predictions (Hill slope ~1.17) match experimental observations (Hill coefficients 1.12-1.32). The ensemble fitting approach across multiple concentrations strengthens the conclusions. However, the model remains a working hypothesis requiring further validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C25"
+    ],
+    "result": "The octanol/water distribution coefficient of Vx-770 at pH 7.1 is approximately 62,580 (logD = 4.8).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C25 is supported by direct calculation from measured solubilities in octanol (~3.9 mM) and water (~62 nM) shown in Table 1. The calculation is straightforward (3900 \u03bcM / 0.062 \u03bcM \u2248 62,900), and this value was used as a constraint in kinetic modeling, which is a standard approach for membrane-partitioning drugs.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "All published in vitro studies used Vx-770 at supersaturated concentrations (100 nM to 10 \u03bcM), which may explain previously reported channel inactivation and irreversibility through formation of intramembrane crystalline precipitates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C43 is well-supported by comparison of measured solubility with concentrations used in cited studies. However, C44 and C45 are speculative mechanistic explanations for previous observations. While plausible given the supersaturation finding, these hypotheses lack direct experimental validation (e.g., no direct evidence of precipitate formation or demonstration that precipitates cause the reported effects).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C51",
+      "C52"
+    ],
+    "result": "The apparent second-order on-rates of Vx-770 from kinetic modeling are several orders of magnitude slower than expected for diffusion-limited binding. This may be explained by the drug remaining associated with the polar bilayer surface due to its hydrogen bonding capability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C51 is supported by comparison of fitted rate constants with literature values for lipid bilayer diffusion coefficients. However, C52 is speculative. While the chemical structure (Figure 1a) shows five polar groups capable of hydrogen bonding, there is no direct experimental evidence that the drug associates with the bilayer surface or that this explains the slow on-rate. Alternative explanations (e.g., induced fit) are mentioned but not tested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Half-maximal CFTR potentiation is achieved by ~100-fold dilution of saturated Vx-770 solution, suggesting that lower drug doses than currently approved (~$300,000/patient/year) might be equally beneficial to CF patients.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C55 is supported by the dose-response data showing K0.5 values much lower than saturation concentration. C57 (treatment cost) is stated as fact. However, C56 is highly speculative. The suggestion that lower doses might be equally beneficial extrapolates from in vitro findings to clinical outcomes without considering pharmacokinetics, tissue distribution, protein binding, or actual clinical efficacy data. This would require clinical trials to validate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C77",
+      "C78",
+      "C83",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "Background claims about CF disease, CFTR protein structure and function, CF mutations, Vx-770 approval and clinical use, and current research status.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C32-C38, C77, C78, C83, C91-C98 represent established knowledge about CF, CFTR, and Vx-770, appropriately supported by citations to primary literature and regulatory documents. These provide necessary context but are not novel findings of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C46",
+      "C47",
+      "C48",
+      "C70",
+      "C71",
+      "C84",
+      "C85",
+      "C86",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "Summary of previous literature findings regarding Vx-770 effects, pharmacokinetics, and potential binding sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C42, C46-C48, C70-C71, C84-C86, C88-C90 accurately summarize findings from cited literature. These provide important context for interpreting the current study's findings, particularly the discrepancies with previous reports. The citations appear appropriate and the summaries are fair representations of prior work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C61",
+      "C79",
+      "C87"
+    ],
+    "result": "Methodological details: WT CFTR open probability in ATP is ~0.16, Vx-770 has two potentially deprotonatable groups and five polar groups capable of hydrogen bonding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61, C79, C87 are supported by experimental data (C61 from Figure 2c) or structural analysis (C79, C87 from Figure 1a). These are factual observations used in the analysis but not primary findings of the study.",
+    "result_type": "MINOR"
+  }
+]

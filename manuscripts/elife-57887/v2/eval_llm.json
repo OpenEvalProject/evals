@@ -1,0 +1,354 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "EMC2 forms stable heterodimeric complexes with either EMC8 or EMC9, but not both simultaneously. SEC-MALS analysis showed that EMC2, EMC8, and EMC9 are monomeric individually, and form 1:1 heterodimers (EMC2\u2022EMC8 or EMC2\u2022EMC9). No ternary complex formation was observed when excess EMC8 or EMC9 was added to preformed heterodimers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C37 are directly supported by SEC-MALS data (Figure 1B, Figure 1\u2014figure supplement 1) showing monomeric states of individual proteins and heterodimeric complexes with expected molecular weights. The absence of ternary complex formation is experimentally demonstrated. This explains the evolutionary observation that some species have only one of these genes (C38).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "The cytosolic EMC2\u2022EMC8 or EMC2\u2022EMC9 heterodimers can bind substrate TMDs and prevent their aggregation. Photocrosslinking experiments showed that release of SQS from calmodulin in the presence of these heterodimers resulted in crosslinks to EMC2, EMC8, and EMC9, with reduced substrate aggregation. EMC2 alone showed similar potency to the heterodimers, while EMC8 had lower potency and EMC9 was largely inert.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C43 are supported by photocrosslinking data (Figure 1C) and aggregation inhibition assays (Figure 1\u2014figure supplement 2). The differential activities of individual subunits versus complexes are experimentally demonstrated, supporting the conclusion that the cytosolic domain contains a TMD-binding heterodimer.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C44",
+      "C45"
+    ],
+    "result": "EMC8 and EMC9 are functionally interchangeable in cells. Individual knockdowns of EMC8 or EMC9 do not significantly impact EMC substrate biogenesis, but double knockdown does. Knockdown of EMC8 is accompanied by increased EMC9 expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C45 are supported by flow cytometry data (Figure 1\u2014figure supplement 3) showing that only the double knockdown of EMC8/9 phenocopies EMC3 knockdown for both SQS and OPRK substrates. The compensatory upregulation of EMC9 upon EMC8 knockdown is cited from prior work (Volkmar et al., 2019).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "The crystal structure of EMC2\u2022EMC9 was solved at 2.2 \u00c5 resolution using sulfur-SAD phasing. EMC2 contains a curved TPR motif, while EMC9 has a \u03b2-barrel core flanked by \u03b1-helices. The interface between EMC2 and EMC9 is extensive (~1100 \u00c5\u00b2) with hydrogen bonds and salt bridges, explaining the high stability of the complex. Together, they form a moderately hydrophobic cytosolic vestibule.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C52 are supported by crystallographic data (Table 1, Figure 2A-B, PDB: 6Y4L). The structural features described are directly observable in the crystal structure. The interface analysis using established methods (Krissinel and Henrick, 2007) supports the stability claims. The vestibule is visualized in Figure 2B.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Computational modeling predicts that EMC8 has a very similar structure to EMC9. Reference-free Rosetta modeling of EMC8 yielded a structure with RMSD of 2.3 \u00c5 to EMC9, and template-based modeling using EMC9 as reference gave RMSD of 0.6 \u00c5. This structural similarity explains why loss of either EMC8 or EMC9 individually has no obvious cellular phenotype.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C56 are supported by computational modeling data (Figure 2\u2014figure supplement 1) and binding affinity measurements (Figure 2\u2014figure supplement 2) showing similar Kd values (~550-850 nM). The high sequence identity (~44%) and structural similarity provide a mechanistic explanation for the functional redundancy observed in cells.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "The cytosolic vestibule of EMC2\u2022EMC9 functionally engages substrate TMDs. Photocrosslinking experiments identified specific residues in the vestibule (R167 in EMC9, Q193 in EMC2) that crosslink to substrate TMDs. Mutations in the region of highest crosslinking (HLY*: H189E, L190E, Y191K) impaired substrate insertion in cells, while mutations in regions with weak crosslinking (IMA*) had minimal effect. The HLY* mutation did not affect EMC2 assembly into native EMC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C64 are supported by photocrosslinking data (Figure 3A-B, Figure 3\u2014figure supplement 1) and flow cytometry analysis of substrate insertion (Figure 3C, Figure 3\u2014figure supplement 2A-B). The concordance between in vitro crosslinking and in vivo functional effects provides strong evidence for the vestibule's role in substrate binding. Controls verify that the HLY* mutation doesn't affect assembly.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Cryo-EM reconstruction of native EMC at 6.4 \u00c5 resolution reveals the overall architecture with lumenal, transmembrane, and cytoplasmic regions. The EMC2\u2022EMC9 crystal structure was fitted into the cytosolic density using flexible refinement. The complex is oriented with TPR repeats of EMC2 proximal to the membrane at ~30\u00b0 angle, positioning the substrate-binding vestibule to access both cytosol and membrane domain. The membrane-facing surface of EMC2 is highly conserved.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C71 are supported by cryo-EM data (Figure 4A-C, Table 2, EMD-11058). The resolution limitation (6.5 \u00c5) due to preferential orientation is acknowledged. The fitting of the crystal structure into EM density using Flex-EM, Coot, and PHENIX is methodologically sound (Figure 4B, Figure 4\u2014figure supplement 2). Conservation analysis supports functional importance of the membrane-facing surface.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "The membrane domain of EMC contains 13 transmembrane helices. trRosetta modeling accurately predicted structures for EMC subunits, validated by comparison to known structures (EMC2, EMC9, Sec61\u03b1). The modeling revealed that EMC6 has three TMDs (not two as previously predicted), and EMC4 also has three TMDs. The EMC4 topology was experimentally validated by protease-protection assays showing N-terminus in cytosol and C-terminus in ER lumen.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C76 are supported by cryo-EM density (Figure 5A), trRosetta modeling (Figure 5\u2014figure supplement 1), and experimental validation by protease-protection assays (Figure 5\u2014figure supplement 2). The validation of trRosetta predictions against known structures provides confidence in the modeling approach. The protease-protection data directly confirms the predicted topology of EMC4.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Site-specific photocrosslinking using AbK identified the positions of membrane subunits within the EMC structure. EMC3 TMD1 and TMD2 (but not TMD3) crosslink to EMC1, validating the trRosetta model for EMC3 and assigning EMC1's TMD position in the EM density. The remaining TMD density was assigned to EMC7. Additional crosslinking between EMC5 and EMC6 supported the overall TMD arrangement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C84 are supported by extensive photocrosslinking experiments (Figure 5C-D, Figure 5\u2014figure supplement 3). The crosslinking data were validated by native and denaturing immunoprecipitation. The systematic scanning of multiple positions provides robust constraints for subunit positioning. The assignments are consistent with the EM density and trRosetta models.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C85",
+      "C86"
+    ],
+    "result": "EMC2 organizes EMC's membrane subunits through multi-pronged interactions with EMC1, EMC3, and EMC6. This explains why the membrane domain of EMC completely disassembles in the absence of EMC2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C86 are supported by the structural data showing EMC2's interactions with multiple membrane subunits and a citation to prior work (Volkmar et al., 2019) demonstrating that loss of EMC2 causes complete disassembly of the membrane domain. The structural basis for this organizing role is evident from the composite model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "The lumenal region of EMC is composed of domains from EMC1, EMC7, and EMC10. trRosetta modeling predicted that EMC1 contains two \u03b2-propellers, while EMC7 and EMC10 each contain small \u03b2-barrels. Inspection of the EM density shows that EMC lacks a trans-bilayer pore connecting the cytosolic vestibule to the ER lumen. The trRosetta models account for all membrane-embedded and lumenal density in the EM map.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C92 are supported by trRosetta modeling (Figure 5\u2014figure supplement 1) and fitting into EM density (Figure 5E-F). The absence of a trans-bilayer pore is directly observable in the EM density (Figure 5F). The composite model accounts for the majority of EMC polypeptides except the TMD of EMC10 and flexible regions (Table 3, Figure 5\u2014figure supplement 5).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "The cytosolic vestibule is continuous with a large horseshoe-shaped intramembrane groove lined by TMDs of EMC1, EMC3, EMC6, and EMC5. The groove is sealed on the lumenal side by the EMC1 crossbar and is open laterally to the lipid bilayer. A ~9 \u00c5 gap separates the cytosolic side of the groove (at EMC5 N-terminus) from EMC2, providing a potential path for substrate egress. This region of EMC2 is predicted to be flexible.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C98 are supported by the composite structural model (Figure 6A-B). The intramembrane groove is clearly visible in the structure, and the gap measurement is directly obtained from the model. Normal mode analysis (Figure 4\u2014figure supplement 2) supports the predicted flexibility of EMC2 near the gap. The structural features provide a plausible mechanistic pathway for substrate insertion and release.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "The moderately hydrophobic cytosolic vestibule of EMC2\u2022EMC8/9 serves as a portal for TMD entry rather than a stable binding site. The vestibule is constitutively open, shallow, and only moderately hydrophobic, differing from the deeper, more hydrophobic grooves of targeting factors SRP and Get3. This reflects their distinct roles: SRP and Get3 ferry TMDs through the cytosol, while EMC engages TMDs already at the membrane.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C104 are supported by the crystal structure showing the physicochemical properties of the vestibule (Figure 2B) and comparison to known structures of SRP and Get3. The functional interpretation is consistent with the structural features and known roles of these factors. The speculation about stable binding being detrimental (C104) is a reasonable inference from the proposed mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "EMC contains a conserved intramolecular placeholder in the substrate binding site, similar to SRP and Get3. Substrates must be more favorable in the vestibule than both the aqueous environment and the placeholder, providing specificity. The nascent TMD is likely unstructured when first binding the shallow vestibule, then forms a helix upon entering the more hydrophobic intramembrane groove. TMD movement into the groove, helix formation, and membrane partitioning likely occur in rapid succession, following a hydrophobicity gradient.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C105-C111 are largely speculative mechanistic inferences (C105, C107, C108, C109, C110) based on structural features and analogy to SRP and Get3. While the hydrophobicity gradient is observable in the structure (C111), the detailed mechanistic steps (unstructured binding, helix formation timing, rapid succession) lack direct experimental evidence. The placeholder is inferred from EM density but not definitively identified. These are plausible hypotheses requiring further validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "The topology of inserted TMDs is influenced by steric constraints from flanking regions. Because the groove is not open to the lumen, only the side with a short flexible segment can be translocated, while the side with a bulky domain cannot. Translocation of the short terminus can be promoted by thermodynamically favorable TMD release into the lipid environment, which can facilitate translocation of up to ~100 amino acid segments without a translocon.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C113 are mechanistic inferences supported by the structural observation that the groove lacks a lumenal opening (C90). Claims C114-C115 are supported by citations to prior work on TMD energetics (Engelman and Steitz, 1981; Brambillasca et al., 2006). The mechanistic explanation is consistent with the structural features and established biophysical principles.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "The entry to the intramembrane groove is enriched in conserved basic residues from EMC2 (Arg26, Arg91), EMC1 (four conserved basic residues), and possibly EMC5 (position 6). This positive charge enrichment would disfavor entry of polypeptide segments enriched in basic amino acids, selecting against mitochondrial TA proteins, cleavable signal peptides, and Ncyt signal anchors (which are enriched in basic residues). Bona fide EMC substrates are typically depleted in basic residues in the translocated tail. This mechanism might partially explain the 'positive-inside rule'.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C116-C118 are supported by structural observations from the crystal structure and composite model. Claims C119-C120 are mechanistic inferences based on electrostatic considerations. Claim C121 is supported by citations to prior work characterizing these sequences. Claim C122 is stated as general knowledge without specific data. Claim C123 is speculation connecting the EMC mechanism to the positive-inside rule. While the structural observations are solid, the functional consequences (substrate selectivity) and connection to the positive-inside rule require experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128"
+    ],
+    "result": "EMC cannot approach closer than ~100 \u00c5 to a ribosome-bound Sec61 complex due to steric constraints. Therefore, EMC can only act co-translationally before ribosome docking on Sec61 or after sufficient polypeptide has emerged. The authors propose that EMC acts after SRP-mediated targeting but before ribosome binding to Sec61, during a brief window when the TMD is available. This timing constraint helps prevent inappropriate insertion of N-terminal TMDs intended for Ncyt topology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C124-C125 are supported by structural modeling showing the spatial constraints (Figure 7B). Claims C126-C127 are mechanistic inferences supported by citations to prior work (Chitwood and Hegde, 2019; Jomaa et al., 2017; Kobayashi et al., 2018). Claim C128 is speculation about functional significance. The spatial constraints are well-demonstrated, and the proposed timing model is consistent with known ribosome-Sec61 structures, though direct experimental evidence for the timing is limited.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136"
+    ],
+    "result": "While the intramembrane groove could serve as a chaperone for a single TMD, this function is unlikely to occur adjacent to the Sec61 translocon due to spatial constraints. Co-translational engagement by TMDs from ribosome-Sec61 could only occur once a TMD diffuses at least 100 \u00c5 away. The rigid structure of EMC2\u2022EMC9 and absence of subcomplexes make it unlikely these constraints can be overcome. The groove can house one TMD (possibly a second just outside), so EMC is unlikely to bind multiple TMDs simultaneously. A chaperone function would be limited to post-translational engagement of isolated TMDs. Direct evidence for this function is currently lacking.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C129-C132 are supported by structural analysis and spatial constraints (Figure 7B). The assessment that a chaperone function adjacent to Sec61 is unlikely is well-reasoned based on the structural data and challenges a prior proposal (Shurtleff et al., 2018). Claims C133-C135 are inferences from the structural dimensions. Claim C136 acknowledges the lack of direct evidence. The evaluation is appropriately cautious and based on solid structural reasoning.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C137",
+      "C138",
+      "C139",
+      "C140"
+    ],
+    "result": "The lumenal domain likely serves a structural role in stabilizing the seven integral membrane subunits and sealing the intramembrane groove toward the lumen. Maintaining the groove configuration might be energetically unfavorable without structural caps on both sides. Unlike other proteins with lipid-exposed grooves (which have TMDs in a single polypeptide), EMC is a multi-protein assembly. The lumenal domain, like EMC2, might nucleate EMC assembly.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C137-C140 are speculations about the function of the lumenal domain. While the structural role is plausible given the architecture, there is no direct experimental evidence for this function. Claim C139 is supported by citations to other structures. The speculation is reasonable but requires experimental validation to be considered supported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149"
+    ],
+    "result": "The proposed EMC mechanism is conceptually similar to the prokaryotic insertase YidC, which has a 5-TMD core forming an intramembrane 'hydrophobic slide'. However, YidC's slide is smaller than EMC's groove. The EMC3 structural model is consistent with evolutionary relationship to YidC, but EMC3 is oriented such that its putative hydrophobic slide faces opposite to EMC's intramembrane groove. This raises the possibility of an alternative 'backside' insertion route via EMC3, though access to lipid is partially occluded by EMC4 and might require conformational changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C141-C142 are supported by citations comparing EMC to YidC (Dalbey et al., 2014; Kumazaki et al., 2014). Claim C143 is a structural comparison. Claim C144 is supported by citations to biochemical studies on YidC. Claim C145 is supported by citation and structural data. Claim C146 is a structural observation (Figure 5D). Claims C147-C149 are speculations about an alternative insertion route. While the structural observations are solid, the functional implications (alternative route) are speculative and require experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C150",
+      "C151",
+      "C152"
+    ],
+    "result": "A simplified insertase originating from a YidC-like protein has been elaborated during evolution to form EMC. Get1 appears to be a homolog of EMC3, and the Get1/Get2 complex may be a simplified version of EMC that co-opted a different binding partner.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C150 is an evolutionary inference supported by citation (Borowska et al., 2015) and consistent with the structural data. Claims C151-C152 are inferences about evolutionary relationships. While these are speculative regarding the exact evolutionary path, they are reasonable hypotheses based on structural and sequence similarities. The evolutionary relationship between EMC3 and Get1/YidC is supported by prior work (C30, C145).",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,231 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5"
+    ],
+    "result": "The manuscript establishes background knowledge about protein folding and the role of molecular chaperones, particularly Hsp70s, in cellular protein homeostasis. These claims describe that while proteins can fold spontaneously in vitro, they may misfold in cells, necessitating ATP-dependent molecular chaperones like Hsp70s that assist multiple cellular processes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C5 are all supported by appropriate citations to established literature (Anfinsen 1973, Dobson 2003, Hartl 1996, Clerico et al. 2019, Rosenzweig et al. 2019). These represent well-established background knowledge in the field and provide appropriate context for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "The manuscript describes the established mechanistic framework of Hsp70 function, including its two-domain structure (SBD and NBD), allosteric coupling between domains, nucleotide-dependent conformational states, differential binding kinetics in ATP vs ADP states, and the role of J-domain protein cochaperones in accelerating ATP hydrolysis, leading to ultra-affinity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C15 are well-supported by citations to established literature (Mayer 2013, Mayer et al. 2000, Kampinga and Craig 2010, Kampinga et al. 2019, De Los Rios and Barducci 2014, Barducci and De Los Rios 2015). These describe the canonical Hsp70 mechanism and provide essential background for understanding the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "Prior experimental evidence demonstrates that Hsp70 binding induces substrate expansion, as shown by increased proteolysis sensitivity, decreased Thioflavin-T binding, NMR-detected tertiary structure destabilization, and single-molecule FRET measurements showing ATP-dependent expansion of rhodanese that reverses upon ATP exhaustion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C21 are supported by appropriate citations to experimental studies (Sharma et al. 2010, Lee et al. 2015, Sekhar et al. 2015, Kellner et al. 2014). These prior results establish the phenomenon that the current manuscript aims to explain mechanistically.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "The authors performed coarse-grained molecular dynamics simulations using a one-bead-per-residue force field that reproduces rhodanese compactness without tuning. Six Hsp70 binding sites were identified using bioinformatic algorithms, and all 64 possible binding configurations were simulated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C25 describe the computational methodology. The force field choice (C22, C23) is validated by citation to Smith et al. 2014 and agreement with experimental data. The binding site identification (C24) uses two established algorithms. The exhaustive simulation approach (C25) is mathematically sound (2^6 = 64 configurations).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "MD simulations reveal that chaperone binding leads to larger radii of gyration and higher potential energies due to excluded-volume interactions that expand the complex and disrupt intra-chain interactions. The conformational free energy increases with substrate swelling, with entropy gains only marginally compensating for potential energy increases, and depends on both stoichiometry and specific binding patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C31 are supported by simulation data shown in Figures 1 and 2. The results are consistent with prior FRET experiments (Kellner et al. 2014). The interpretation that excluded volume drives expansion (C27) is reasonable given the simulation design. The free energy analysis (C29-C31) is based on appropriate enhanced sampling methods (Jarzynski equality).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C34"
+    ],
+    "result": "The agreement between simulation results and Sanchez polymer theory was achieved without fitting, using only experimentally-derived parameters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C34 is supported by reference to Appendix 2 where parameter extraction is described. This strengthens the validity of the simulation approach by showing agreement with established polymer physics theory without adjustable parameters.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "A kinetic model encompassing 729 states (3^6 configurations) was developed where binding rates are modulated by conformational free energies from MD simulations. The model incorporates experimental observations that unbinding rates are similar for proteins and peptides, while binding rates can be 100-fold slower for proteins, consistent with a conformational selection mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C39 describe the kinetic model methodology. The state space calculation (C35) is correct (3^6 = 729). The integration of MD free energies into kinetic rates (C36) is methodologically sound. Claims C37-C39 are supported by appropriate citations (Schmid et al. 1994, Mayer et al. 2000, Kellner et al. 2014, Sekhar et al. 2018).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C42"
+    ],
+    "result": "Chaperone binding in ATP excess is a non-equilibrium effect driven by ATP hydrolysis, not merely a consequence of ATP/ADP ratio or differential binding rates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C42 is supported by model results shown in Figure 4 (bottom panel), where eliminating ATPase activity abolishes efficient binding despite maintaining other parameters. This demonstrates the non-equilibrium nature of the process and is a key mechanistic insight.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C44",
+      "C45"
+    ],
+    "result": "At thermodynamic equilibrium (low ATP/ADP), the model predicts substrate radius of gyration similar to free substrate, consistent with experimental observations that rhodanese-DnaK complex formation requires ATP hydrolysis and ADP cannot trigger expansion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C45 are supported by data in Figure 5 and agreement with experimental observations (Kellner et al. 2014). This validates the model's ability to reproduce equilibrium behavior and confirms the ATP-dependence of the expansion mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C47",
+      "C48"
+    ],
+    "result": "In ATP excess, the model predicts substantial substrate swelling (Rg = 75-95 \u00c5) compatible with FRET experiments, and correctly captures the non-monotonic FRET efficiency as a function of dye separation, which previous calculations failed to reproduce.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C48 are strongly supported by quantitative agreement with experimental FRET data shown in Figure 5 inset. The ability to reproduce the non-monotonic behavior (C48) that previous models missed represents a significant validation of the approach and demonstrates predictive power.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C49",
+      "C51"
+    ],
+    "result": "Energy transduction analysis reveals that Hsp70s are maximally efficient at ATP/ADP ratios corresponding to cellular conditions, converting up to 20% of ATP chemical energy into non-equilibrium excess binding energy at physiological conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49 and C51 are supported by data in Figure 6. The analysis of energy conversion efficiency is methodologically sound, comparing conformational free energy changes to ATP hydrolysis free energy. The finding that efficiency peaks near physiological ATP/ADP ratios is a significant result, though the evolutionary interpretation (C50) is speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C50"
+    ],
+    "result": "The authors suggest that Hsp70 chaperones may have been evolutionarily tuned to optimize chemical-to-mechanical energy conversion for substrate expansion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C50 is explicitly speculative ('hints at the possibility'). While the observation that efficiency peaks at physiological conditions is intriguing, this correlation does not establish evolutionary optimization. Alternative explanations (e.g., constraint-based optimization, historical contingency) are not excluded. This remains a hypothesis requiring further investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C52",
+      "C60"
+    ],
+    "result": "The authors conclude that Hsp70s induce non-equilibrium redistribution of substrate conformational ensembles through a force-generating mechanism that depends on efficient ATP-to-ultra-affinity conversion rather than power-stroke conformational changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52 and C60 represent the central mechanistic conclusion of the study. These are well-supported by the combined computational and kinetic modeling results showing that ATP hydrolysis drives non-equilibrium binding (C42), which causes substrate expansion through excluded volume effects (C26-C27), with efficient energy conversion (C49, C51).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "The authors discuss broader implications, suggesting that Hsp70-mediated expansion followed by release may enhance native state populations beyond equilibrium predictions, consistent with recent observations that Hsp70s maintain proteome solubility in vivo and similar effects observed for GroEL chaperonin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C53-C56 extend beyond the direct findings. While C54 and C55 cite supporting literature (Goloubinoff et al. 2018, Zhao et al. 2019, Chakrabarti et al. 2017), claims C53 and C56 are speculative extrapolations. The current study demonstrates expansion but does not directly show enhancement of native state populations or test whether this mechanism generalizes to other chaperone families.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C57"
+    ],
+    "result": "The authors speculate that chaperone ability to favor native states may have reduced evolutionary selection pressure for thermodynamic stability, allowing faster evolution and tolerance for destabilizing mutations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C57 is explicitly speculative and extends well beyond the study's findings. While supported by citations (Rutherford and Lindquist 1998, Tokuriki and Tawfik 2009), this evolutionary hypothesis is not tested by the current work and represents a broader theoretical framework rather than a result of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C58",
+      "C59"
+    ],
+    "result": "The authors propose that the Hsp70 mechanism elucidated here (ultra-affinity and entropic pulling) applies broadly to other Hsp70 functions including protein translocation, translation, and complex disassembly.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C59 are supported by citations to studies of these other Hsp70 functions (De Los Rios et al. 2006, Assenza et al. 2015, Sousa et al. 2016, Liu et al. 2013). While the current study focuses on substrate expansion, the mechanistic principles (ATP-dependent binding and excluded volume effects) are reasonably generalizable to these related processes.",
+    "result_type": "MINOR"
+  }
+]

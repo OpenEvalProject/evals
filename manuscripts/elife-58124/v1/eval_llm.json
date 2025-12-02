@@ -1,0 +1,327 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9"
+    ],
+    "result": "Human iPSC-derived neurons undergo developmental stages 1-3 similar to rat neurons but with prolonged timing. NSCs differentiate into cortical neurons over ~14 days, with NSC markers decreasing and neuronal/axonal markers increasing, culminating in AIS assembly at day 13-14.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C9 provide converging evidence from immunofluorescence, western blot, and morphological measurements showing stage-specific marker expression and timing. The data demonstrate clear developmental progression with appropriate controls and multiple markers, though the comparison to rat neurons relies primarily on literature citations rather than direct experimental comparison.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "AIS proteins Trim46 and AnkG show overlapping localization with AnkG peak ~6 \u00b5m distal to Trim46 peak, and the AIS is enriched for voltage-gated sodium channels that co-localize with AnkG.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C12 are supported by quantitative fluorescence intensity profiling and immunofluorescence co-localization data. The spatial relationship between Trim46 and AnkG is consistent with prior literature in rat neurons, providing validation of the human iPSC model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "Nearly all recorded neurons (59/61) fired action potentials, with 41% firing multiple APs and 59% firing single APs. Single-AP neurons showed more immature electrophysiological properties, and spontaneous activity was rare, consistent with limited synapse formation at this developmental stage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C18 are supported by systematic electrophysiology recordings with adequate sample sizes (n=54-61 neurons). The characterization of AP firing patterns and intrinsic properties is thorough, though the underlying cause of single vs. multiple AP firing heterogeneity remains unexplained. The interpretation regarding synapse formation is supported by citation to prior literature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "RNA sequencing identified 14,551 transcripts with 1,163 showing differential expression during early development. Downregulated genes (614) were enriched for cell proliferation processes, while upregulated genes (549) were enriched for neuronal development, axonogenesis, and microtubule cytoskeleton functions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C25 are supported by RNA-seq data with appropriate biological and technical replicates, statistical correction for multiple testing (FDR < 0.05), and GO enrichment analysis. The findings are consistent with expected developmental transitions and align with prior studies in mouse and human ESCs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "Specific genes showed expected developmental regulation: proliferation factors (SOX2, NOTCH1, OTX2) and mitotic kinesins (KIF4a, KIF22) were downregulated, while neuronal kinesins (KIF1a, KIF5c, KIF21b), neuron-specific tubulin (TUBB3), and axonal MAP (MAPT) were upregulated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C30 provide specific examples from the RNA-seq dataset that validate the broader GO enrichment patterns. The findings are consistent with prior literature and provide molecular detail supporting the developmental transition from proliferating NSCs to differentiating neurons.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "Mass spectrometry identified 7,512 proteins with 2,218 showing differential expression. Unsupervised clustering revealed six expression profiles, with Cluster 1 showing slight upregulation of proteins involved in neuronal differentiation and intracellular transport, including KLC1, Trim46, and Camsap proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C39 are supported by quantitative proteomics with technical replicates and appropriate quality control (excluding proteins with high variability). The clustering analysis and GO enrichment provide biological interpretation, and specific proteins are validated by literature citations regarding their known functions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "Cluster 2 proteins showed strong upregulation from day 3-7, coinciding with axon formation. This cluster was enriched for neuronal development and axonogenesis factors, including Septin family members (Sept3, Sept5, Sept6) and established neuronal markers (DCX, Tau, Ncam1, Basp1, Snap91, Syt1).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C48 are supported by proteomics data and GO enrichment analysis. The temporal correlation with stage 3 onset strengthens the interpretation. However, claims about Septin function (C44-C45) are speculative and rely on emerging literature rather than direct experimental evidence in this system.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Cluster 3 proteins increased from day 1-3 with minimal subsequent change, enriched for cell metabolism and component relocalization. This cluster included SoxC transcription factors (Sox4, Sox11) involved in neurogenesis and Arp2/3 complex subunits (Arpc2, Arpc4) required for actin polymerization and axon guidance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C54 are supported by proteomics clustering and GO analysis. The identification of specific proteins and their functions is validated by literature citations. The temporal pattern suggests early differentiation events preceding axon formation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Clusters 4-6 contained downregulated proteins involved in cell cycle, DNA replication, translation, and biosynthesis, consistent with terminal differentiation observed in other neuronal systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C57 are supported by proteomics clustering, GO enrichment, and comparison to prior literature in neuroblastoma cells and rat neurons. The findings align with expected molecular changes during exit from proliferation and terminal differentiation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Transcriptomic and proteomic profiles showed significant correlation (R=0.51, p<0.0001) with 4,536 of 7,021 factors following the same trend. Stem cell markers decreased while neuronal and axonal markers increased at both RNA and protein levels, including dynamic expression of semaphorins and Rap1GTPases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C63 demonstrate integration of transcriptomics and proteomics datasets with appropriate statistical analysis. The moderate correlation (R=0.51) is reasonable given temporal lags between transcription and translation. Specific marker validation strengthens confidence in both datasets.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "Axon specification proceeds through four substages (2a, 2b, 3a, 3b) based on AIS protein localization. Stage 3a represents a novel intermediate stage where AIS proteins (Trim46, AnkG, NaV) first appear as noncontinuous structures in distal axons (~40% longer coverage) before relocating proximally to form the mature AIS in stage 3b (~55% shorter coverage).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C74 present the major novel finding supported by systematic immunofluorescence quantification across developmental timepoints and multiple protocols/donors (C67). The spatial and temporal measurements are rigorous with appropriate statistics. This distal-to-proximal AIS assembly pattern has not been previously described and represents a significant advance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "Action potential properties matured between days 10-14, with neurons at day 13-14 showing larger amplitude and shorter half-width compared to day 10-11. This maturation coincided with the developmental transition from stage 3a to stage 3b neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C79 are supported by electrophysiology measurements across developmental timepoints. The temporal correlation between AP maturation and AIS reorganization (stage 3a\u21923b) is compelling, though causality is not directly tested. Claim C77 about after-hyperpolarization is noted as unpublished data, which weakens this specific point.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "Microtubule plus-end dynamics showed developmental reorganization: initial bidirectional movement (day 5) shifted toward retrograde in dendrites and unidirectional anterograde in axons. This axonal reorganization occurred in a distal-to-proximal fashion, with changes primarily driven by retrograde comet dynamics. Comet run length increased while growth speed slightly decreased, suggesting reduced catastrophe events.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C86 are supported by systematic live-cell imaging with quantification of comet directionality, number, speed, and run length. The spatial and temporal patterns align with the AIS protein reorganization. The inference about catastrophe events (C86) is reasonable but indirect. Consistency with prior literature (C82) validates the approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "Laser-severing experiments revealed the underlying microtubule organization: dendrites showed balanced bidirectional orientation with increased retrograde comets suggesting stable minus-end-out microtubules, while axons showed strong unidirectional plus-end-out organization. This axonal microtubule remodeling occurred in a distal-to-proximal fashion coinciding with AIS protein relocation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C93 are supported by laser-severing experiments that reveal stable microtubule populations not visible in standard MT+TIP imaging. The experimental approach is sound and provides mechanistic insight into the reorganization process. The correlation between microtubule and AIS protein dynamics (C92-C93) is well-supported though causality is not directly tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "Human iPSC-derived neurons develop more slowly than rodent neurons (stage 3 at 7-14 days vs. 1.5 days in rats), consistent with protracted human brain development. This slower timeline enables higher temporal resolution studies of processes like AP maturation and AIS assembly.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C96 are supported by comparison to literature on rodent and human development timing. The developmental timeline is well-characterized in this study. Claim C97 about astrocyte co-culture is speculative. Claim C98 about temporal resolution is a reasonable inference from the observed slower development.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "Comprehensive transcriptomic (1,163 differentially expressed) and proteomic (2,218 differentially expressed) profiling revealed the importance of microtubule cytoskeleton remodeling during early development. A novel stage 3a was identified characterized by distal-to-proximal reorganization of axonal microtubules and AIS proteins, coinciding with action potential maturation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C103 synthesize the major findings of the study. The multi-omics approach provides comprehensive molecular characterization, and the identification of stage 3a with its associated cellular and electrophysiological changes represents a significant advance. All claims are well-supported by the presented data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C104",
+      "C105"
+    ],
+    "result": "MT+TIP growth speeds in human neurons are higher than in rodent neurons, suggesting possible species-specific regulation of microtubule dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C105 are supported by live-cell imaging data compared to literature values for rodent neurons. However, the comparison is indirect (different experimental conditions, labs, imaging parameters) and the inference about species-specific regulation (C105) is speculative. Direct side-by-side comparison would strengthen this conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "The AIS is required for AP generation and neuronal polarity maintenance. Trim46 and AnkG cooperate through a feedback mechanism to form stable AIS-microtubule structures, with AnkG acting as a scaffold to recruit Trim46-positive microtubules and direct AIS protein trafficking.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C109 represent established knowledge from prior literature (all supported by citations). These claims provide necessary background context but do not represent new findings from this study. The citations appear appropriate and accurate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "The function of AIS proteins in distal axons remains unclear, but they may stabilize microtubules to drive axon outgrowth. As Trim46 moves proximally, the axonal microtubule network is remodeled to uniform plus-end-out orientation. Whether this distal AIS protein accumulation is unique to humans or simply more visible due to slower development remains unknown.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C110-C116 are explicitly speculative (acknowledged by authors with language like 'may,' 'remains elusive,' 'remains unknown'). While the hypotheses are reasonable based on known AIS protein functions, they lack direct experimental support. These represent important questions for future investigation but cannot be evaluated as supported or unsupported findings.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,235 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "The authors developed tiv-AFM, a novel technique combining time-lapse in vivo atomic force microscopy with upright fluorescence imaging. This custom system overcomes the optical opacity of Xenopus brains by integrating an upright epifluorescence microscope above the AFM head, enabling simultaneous mechanical measurements and fluorescence imaging of developing embryonic tissue.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C37-C40 collectively describe the development and technical specifications of the tiv-AFM system. The methodological details are comprehensive, including specific equipment models and optical parameters. The technical solution directly addresses the stated challenge of imaging optically opaque tissue during AFM measurements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C43"
+    ],
+    "result": "Using tiv-AFM with ~35 minute temporal resolution, the authors demonstrate that local tissue stiffness in the developing Xenopus brain changes significantly within tens of minutes, with a stiffness gradient arising during this timeframe.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C5, and C43 establish the rapid dynamics of tissue stiffness changes. The temporal resolution of ~35 minutes is explicitly stated (C43), and the findings of significant stiffness changes and gradient formation within tens of minutes (C4, C5) are directly supported by this measurement capability. However, the manuscript excerpt does not include the actual data figures that would show these changes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C6"
+    ],
+    "result": "Retinal ganglion cell axons turn to follow the stiffness gradient that arises in the developing brain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C6 states that axons turned to follow the gradient, but the manuscript excerpt provided contains only methods and abstract text without the actual experimental data, statistical analyses, or figures demonstrating this correlation. The temporal relationship and causality between gradient formation and axon turning cannot be evaluated from the methods section alone.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9"
+    ],
+    "result": "Cell proliferation governs changes in local tissue stiffness, as perturbation of mitosis diminishes both the stiffness gradient and the caudal turn of axons in developing brains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C7-C9 present a mechanistic conclusion linking cell proliferation to stiffness changes and axon guidance. While the methods describe mitosis perturbation experiments using BI2536, hydroxyurea, and aphidicolin, the actual experimental results, quantification, statistical significance, and controls are not provided in this excerpt. The causal chain requires demonstration that mitosis perturbation specifically affects stiffness before affecting axon turning.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "AFM measurements were performed using calibrated tipless cantilevers with 37.28 \u00b1 0.34 \u00b5m spherical probes, with specific measurement parameters: 10 nN maximum force, 5 \u00b5m/s approach speed, 1,000 Hz data rate, and 20-25 \u00b5m spatial resolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C36 provide comprehensive technical specifications for AFM measurements. The thermal noise calibration method is appropriately cited (C29), cantilever selection criteria are defined (C30), and all measurement parameters are explicitly stated. These methodological details are sufficient for reproducibility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Force-distance curves were analyzed using the Hertz model to obtain the reduced apparent elastic modulus K, with quality control criteria excluding curves with poor baseline fits or inadequate Hertzian fits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C49 describe the data analysis approach with appropriate citations to established methods. The Hertz model is standard for AFM indentation analysis, and the quality control criteria (C48, C49) are reasonable for ensuring data integrity. However, the assumption of the Hertz model (homogeneous, isotropic material) may not fully apply to complex biological tissue.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "AFM data were smoothed using a discrete cosine transform-based algorithm that interpolates missing values using the entire dataset rather than only nearest neighbors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C52 describe the smoothing algorithm with appropriate citations (Garcia 2010, 2011). The iteratively weighted penalized least squares approach is a valid method for handling missing data. However, the extent of smoothing and its potential impact on gradient measurements is not discussed, which could affect the interpretation of rapid stiffness changes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C53",
+      "C54"
+    ],
+    "result": "Local tissue stiffness gradients were quantified using 50 \u00d7 50 \u00b5m\u00b2 regions of interest on rostral and caudal sides of the optic tract, with measurements repeated three times per frame.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C54 describe a systematic approach to gradient quantification with technical replication (three measurements per frame). The ROI size matches the spatial resolution of AFM measurements (~20-25 \u00b5m spacing), providing adequate sampling. The method is clearly defined and reproducible.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Optic tract turning angles were measured using FIJI software by defining three anatomical points, with measurements repeated three times and averaged, where positive values indicate caudal turning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C57 describe a manual but systematic measurement approach with technical replication. The three-point angle measurement is straightforward and the convention for interpreting direction is clearly defined. However, manual definition of points introduces potential subjectivity, and inter-rater reliability is not discussed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C60",
+      "C61"
+    ],
+    "result": "Cell body density was measured in 50 \u00b5m \u00d7 50 \u00b5m regions matching stiffness gradient analysis regions, calculated as the ratio of nuclear area to total region area.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C61 describe a method for quantifying cell density that spatially corresponds to stiffness measurements, enabling direct comparison. The approach using nuclear area as a proxy for cell density is reasonable, though it assumes uniform nuclear size and does not account for cell size variation or three-dimensional packing.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "The ath5::GAP-eGFP construct selectively labels retinal ganglion cells in a single retina, with axons growing across the optic chiasm into the unlabeled brain hemisphere.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C19 describe the genetic labeling strategy with appropriate citation (Kanekar et al., 1997). The RGC-specific promoter and membrane-tagged GFP provide selective visualization of axon trajectories. This unilateral labeling approach is well-established for studying axon guidance in Xenopus.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "Polyacrylamide hydrogels with defined compositions produce substrates with specific stiffnesses: ~300 Pa (5% AA/0.07% Bis-AA), ~5,500 Pa (7.5% AA/0.2% Bis-AA), and ~200 Pa (5% AA/0.04% Bis-AA).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C27 provide specific hydrogel formulations and their mechanical properties. These are standard materials for mechanobiology studies. However, the manuscript states these values were 'previously determined' or measured by AFM, but does not provide validation data or measurement variability for these specific batches.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Experiments included at least three independent replicates with randomized data collection order but no blinding, with no data exclusion and analysis using non-parametric tests and linear regression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C67 describe the experimental design and statistical approach. N\u22653 is minimal but acceptable for biological replicates. The lack of blinding (C65) is a limitation for subjective measurements like manual angle quantification. The statement of no data exclusion (C66) is transparent, though exclusion criteria for poor AFM curves were defined earlier (C48-C49), creating a minor inconsistency.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "Xenopus laevis embryos were obtained by in vitro fertilization, cultured to stage 33/34, then subjected to exposed brain preparation by removing the eye primordium in high osmolarity medium to retard skin regrowth, with viability monitored by heartbeat.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C16, C20-C23 describe standard Xenopus embryo handling and surgical preparation with appropriate citations to established methods (Nieuwkoop and Faber 1958; Chien et al. 1993; Irie et al. 2002). The use of higher osmolarity to prevent skin regrowth (C22) is a practical consideration for extended experiments. Heartbeat as a viability indicator (C23) is appropriate for these developmental stages.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C12",
+      "C13"
+    ],
+    "result": "All animal experiments were approved by the University of Cambridge Ethical Review Committee and complied with UK Home Office guidelines.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C13 document ethical and regulatory compliance. These are standard statements for animal research conducted in the UK and indicate appropriate oversight.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C10",
+      "C11"
+    ],
+    "result": "The study addresses the knowledge gap in understanding spatio-temporal dynamics of tissue stiffness during development, identifying a close relationship between tissue mechanics dynamics and developmental processes that underscores the importance of time-resolved measurements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C1-C2 establish the motivation, while C10-C11 present broad conclusions. However, these conclusions require support from the actual experimental data not provided in this excerpt. The 'close relationship' (C10) between mechanics and development needs quantitative demonstration, and the importance of time-resolved measurements (C11) depends on showing that static measurements would miss critical dynamics.",
+    "result_type": "MAJOR"
+  }
+]

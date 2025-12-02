@@ -1,0 +1,293 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5"
+    ],
+    "result": "Subjects (N=24) performed a speeded perceptual discrimination task with random dot kinematograms at individually calibrated difficulty levels, achieving 75% accuracy with mean response times of 994 ms, and employed the entire 9-point confidence rating scale despite constant stimulus difficulty.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C5 provide a coherent description of the experimental paradigm with specific quantitative behavioral outcomes. The task design is clearly specified, performance metrics are reported with appropriate descriptive statistics, and the observation that subjects used the full rating scale despite constant difficulty is directly supported by the data presented in Figure 1B.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9"
+    ],
+    "result": "Confidence ratings showed expected relationships with task performance: positive correlation with accuracy (R=0.30, t(23)=13.9, p<0.001) and negative correlation with response time (R=-0.27, t(23)=-7.8, p<0.001), indicating that confidence ratings were generally reflective of performance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C9 establish the validity of confidence ratings through well-established relationships with performance metrics. The statistical tests are appropriate (one-sample t-tests), effect sizes are reported, and results are consistent with prior literature (C6). The conclusion (C9) is justified by the significant correlations observed in C7-C8.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "Control analyses demonstrated that confidence variability reflected internal fluctuations rather than external factors: serial autocorrelation explained minimal variance (R\u00b2=0.07), and confidence reports showed no significant correlation across identical stimulus blocks (R=0.02, p=0.44).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C12 provide converging evidence through multiple control analyses that confidence variability is internally driven. The serial autocorrelation analysis (C10) and identical-stimulus comparison (C11) are appropriate methods to test for external confounds. The conclusion (C12) is well-supported by these negative results, though the interpretation relies on absence of evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "EEG discrimination between high and low confidence trials peaked at 708 ms post-stimulus (SD=162 ms), with temporal and spatial profiles consistent with previous work, demonstrating that confidence dynamics can be reliably captured using EEG inside the MR scanner and may generalize across tasks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C16 establish the reliability and generalizability of the EEG confidence signal. The temporal profile (C13) is precisely quantified, consistency with prior work (C14) provides validation, and the conclusions about MR compatibility (C15) and generalizability (C16) are appropriately cautious given the cross-task comparison. The replication strengthens confidence in the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "The EEG-derived confidence discriminant component showed graded modulation across confidence levels (Medium between High and Low, both p<0.001), correlated with accuracy (t(23)=8.6, p<0.001), and could be dissociated from objective performance when controlling for correctness.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C22 provide strong evidence for the validity of the EEG confidence measure through multiple complementary analyses. The graded effect (C17), correlation with accuracy (C18-C19), and crucially, the dissociation from performance when controlling for correctness (C20-C21) demonstrate that the component captures confidence beyond mere accuracy. Statistical tests are appropriate and consistently significant.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C23",
+      "C25",
+      "C26"
+    ],
+    "result": "Control analyses ruled out potential confounds: weak correlation with stimulus duration (R=-0.15), no significant difference between high vs. low prestimulus alpha power groups (p=0.19), and no correlation across identical stimulus blocks (R=0.02, p=0.39).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23, C25-C26 systematically address potential confounds through appropriate control analyses. The weak correlations and non-significant differences support the interpretation that the confidence signal is not driven by stimulus properties, attentional state, or low-level stimulus features. These controls strengthen the validity of the main findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C28",
+      "C57"
+    ],
+    "result": "Stronger neural confidence signals increased the likelihood of choice repetition on subsequent trials when stimulus motion direction was consistent with the previous trial.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28 and C57 describe an exploratory behavioral effect linking neural confidence to subsequent choice behavior. The effect is specific to consistent stimulus conditions, which is intriguing but requires the statistical details to be fully evaluated. The finding is presented as exploratory, which is appropriate given its post-hoc nature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C30",
+      "C55"
+    ],
+    "result": "A race model of decision-making provided good fit to behavioral data (Accuracy: R=0.76, p<0.001; RT: R=0.965, p\u22640.0016), and neural confidence signals were consistent with model predictions quantifying confidence as the difference in accumulated evidence at decision termination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30 and C55 demonstrate that the computational model adequately captures behavioral data and provides a mechanistic interpretation of confidence. The model fits are strong (particularly for RT), and the consistency between neural signals and model predictions (C55) provides preliminary mechanistic insight. However, C55 is somewhat speculative about the exact relationship.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C35",
+      "C36"
+    ],
+    "result": "During the perceptual decision phase, BOLD response showed positive correlations with confidence in striatum, lateral OFC, and ventral ACC, and negative correlations in supplementary motor area, dorsomedial PFC, right IFG, and anterior insula.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C36 report fMRI activations during the decision phase that are consistent with prior literature on confidence and uncertainty. The regions identified align with known roles in valuation/reward (C35) and decision uncertainty (C36). The results are appropriately contextualized with citations, though the claim would benefit from more detail on statistical thresholding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C37",
+      "C38"
+    ],
+    "result": "During the metacognitive rating phase, negative correlations with confidence were found in extended networks including rostrolateral PFC, angular gyrus, precuneus, and PCC, while positive correlations were observed in striatum, amygdala/hippocampus, and motor cortices.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C38 describe fMRI activations during explicit confidence rating that are consistent with metacognitive evaluation networks. The extensive negative correlations in frontoparietal regions align with prior metacognition research. However, the interpretation is complicated by potential motor confounds during the rating phase, which the authors acknowledge for C38.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "EEG-informed fMRI analysis revealed VMPFC activation (peak MNI [-8 40 -14]) uniquely correlated with the EEG-derived confidence component, a region previously linked to confidence in value-based decisions but not typically associated with perceptual confidence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C42 present the key novel finding of the study. The VMPFC activation is precisely localized (C39-C40), and the contextualization with prior literature (C41-C42) appropriately highlights the novelty. The claim that this activation is 'unique' to the EEG-informed regressor (beyond behavioral ratings) is supported by the GLM design, though the statistical independence could be more explicitly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C46",
+      "C48",
+      "C49"
+    ],
+    "result": "PPI analysis revealed increased negative functional connectivity between VMPFC and bilateral OFC, left aPFC, and right dlPFC during perceptual decisions, regions previously linked to perceptual decision-making and metacognition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46, C48-C49 describe functional connectivity results that link the VMPFC to decision-making and metacognitive networks. The negative correlation pattern is appropriately interpreted in the context of the task, and the regions identified (C48-C49) are well-supported by prior literature (C49). The PPI analysis is an appropriate method to test functional interactions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "The EEG confidence-discriminating activity showed consistency with prior work and centroparietal scalp projections, and fMRI data revealed distinct neural networks for confidence during perceptual decision versus explicit reporting stages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C52 synthesize findings about the temporal and spatial characteristics of confidence signals. The consistency with prior work (C50) validates the approach, the topographic interpretation (C51) is appropriately cautious given EEG's spatial limitations, and the distinction between decision and rating networks (C52) is supported by the different activation patterns observed in C35-C38.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C54",
+      "C61",
+      "C62"
+    ],
+    "result": "Regions active during confidence rating (particularly anterior PFC) have been associated with explicit metacognitive judgment, and the timing of EEG-derived confidence signals (prior to motor response) supports the hypothesis that VMPFC encodes an automatic confidence readout, consistent with theoretical accounts of hierarchical confidence processing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54, C61-C62 integrate the findings with theoretical frameworks. The association of aPFC with metacognition (C54) is well-established in prior literature. The theoretical interpretation (C61-C62) appropriately connects the timing of neural signals to models of automatic vs. deliberate confidence processing, though this remains somewhat speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C56",
+      "C59",
+      "C60"
+    ],
+    "result": "Early confidence representations may reflect a readout of decision-related evidence that is distinct from but informed by the decision process itself, with VMPFC representing a potentially noisy readout of confidence-related information given its lack of typical involvement in perceptual decisions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C56, C59-C60 present interpretations about the functional role of VMPFC confidence signals. While the reasoning is logical and consistent with the data, these claims are explicitly speculative (C56, C60 use 'possible' and 'plausible'). The interpretation relies on absence of evidence for VMPFC in perceptual decisions (C59), which is a weaker form of support. Additional experiments would be needed to test these mechanistic hypotheses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C68"
+    ],
+    "result": "Prior research has shown VMPFC activation modulated by confidence across multiple decision-making tasks including value-based, rating, and memory-related decisions, and the region is known for involvement in subjective valuation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C65, C68 summarize prior literature on VMPFC function. These are well-supported by multiple citations and provide important context for interpreting the current findings. The claims accurately represent the state of the field regarding VMPFC's role in confidence and valuation, though they rely entirely on cited work rather than current data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C66",
+      "C67"
+    ],
+    "result": "Recent evidence suggests choice and motor activity affect confidence and may calibrate metacognitive reports, and functional connectivity analysis revealed strengthened links between VMPFC and frontal areas (aPFC, dlPFC) during perceptual decisions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C66 accurately summarizes prior literature on motor influences on confidence. Claim C67 reports the PPI finding linking VMPFC to decision-related frontal regions. Both claims are supported, though C67 is also covered in the PPI result group. The connection between these claims could be made more explicit.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Confidence may represent inherently valuable information that acts as implicit reward and a teaching signal for learning, with evidence that confidence is used in prediction error computation and that mesolimbic dopamine regions encode confidence-related anticipation and prediction errors predictive of learning efficiency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C73 present a theoretical framework linking confidence to learning and reward processing, supported by citations to prior work. The interpretation is logical and well-grounded in existing literature (C71-C73), though somewhat speculative for the current data (C69-C70 use 'likely' and 'may'). These claims provide important context for understanding VMPFC involvement but are not directly tested in the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "The simultaneous EEG-fMRI approach enabled localization of early confidence representations with higher spatiotemporal precision than fMRI alone, providing novel evidence for VMPFC encoding of a generalized confidence readout signal preceding explicit metacognitive report.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C76 summarize the main contributions of the study. The methodological advantage of combined EEG-fMRI (C74) is demonstrated by the results, the novelty of the VMPFC finding (C75) is supported by the data and literature context, and the forward-looking statement (C76) is appropriately modest. These conclusions are well-justified by the collective findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "The study included 30 initial participants, with 6 excluded based on pre-defined criteria (performance, rating behavior, decoder performance), resulting in a final sample of 24 right-handed subjects (age 20-32) with normal vision and no neurological history, analyzed using within-subject cross-validation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C84 provide transparent reporting of participant characteristics and exclusion criteria. The exclusions are justified and clearly documented (C78-C80), demographic information is appropriate (C81-C82), ethical approval is stated (C83), and the analytical approach is described (C84). The lack of formal power analysis is acknowledged, with justification based on the within-subject design. This represents good methodological reporting.",
+    "result_type": "MINOR"
+  }
+]

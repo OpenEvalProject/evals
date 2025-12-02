@@ -1,0 +1,281 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C32",
+      "C34",
+      "C35",
+      "C37",
+      "C38",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "The authors developed MS2RP (MS2-tagged ribosome profiling), a method to selectively profile mutant ribosomes with altered anti-Shine-Dalgarno (ASD) sequences. Three ASD mutants (S, O, and A) were created, expressed transiently in E. coli, and purified with high purity using MS2 aptamer tagging. The mutant ribosomes can engage in translation but show impaired activity compared to wild-type ribosomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C45 collectively establish the MS2RP methodology with appropriate controls. The RT-PCR data (C45, Figure 1C) demonstrates high purity of mutant ribosome isolation. Growth curves (C37), polysome profiles (C38), and rRNA processing analysis (C40) provide evidence that the system is functional. The observation that mutant ribosomes are present but reduced in polysomes (C41-C43) is consistent with their expected impaired function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C1",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C2",
+      "C6"
+    ],
+    "result": "Using MS2RP, the authors reveal for the first time a genome-wide correlation between Shine-Dalgarno (SD) motif strength and ribosome occupancy. While wild-type ribosomes show only weak correlation (C53), ASD mutant ribosomes show robust negative correlation with SD strength (C54). By calculating \u0394logRO (difference between wild-type and mutant), the authors isolate the SD contribution and observe a strong linear positive correlation between SD strength and translation efficiency (C56).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C58 are well-supported by the correlation analyses shown in Figures 2A-C and supplementary figures. The logic is sound: mutant ribosomes cannot use SD-ASD pairing, so their negative correlation with SD strength reveals that other factors mask SD effects in wild-type profiling. The \u0394logRO analysis effectively isolates the SD contribution. The validation that genes with highest \u0394logRO have strongest SD affinity in the -15 to -6 region (C58) confirms the calculations are capturing genuine SD effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C5"
+    ],
+    "result": "Using retapamulin to trap initiation complexes, the authors demonstrate that mutant ribosomes with altered ASD sequences correctly select annotated start sites genome-wide, even at sites with no predicted affinity for the mutant ASDs and at sites with strong wild-type SD motifs. This indicates that start sites are 'hard-wired' for initiation independent of SD-ASD base pairing, and that SD motifs are not necessary for determining where initiation occurs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C75 provide compelling evidence through multiple lines of analysis. Individual gene examples (C60-C65, Figures 3A-B) show mutant ribosomes initiate at correct sites. Genome-wide analyses (C66-C67, Figures 3C-D) confirm this pattern. Critical controls include: (1) sites with no affinity for any mutant ASD still show initiation (C69, Figure 3E), (2) sites with strong wild-type SD motifs are still recognized by mutants (C71-C72), and (3) all three different mutant ASDs initiate at the same sites (C70, C73-C74), arguing against serendipitous base-pairing. The convergence of evidence from multiple mutants and multiple site categories strongly supports the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "Analysis of non-annotated AUG codons shows that SD-ASD pairing is neither necessary nor sufficient for translational initiation. Non-annotated AUGs with high initiation scores for wild-type ribosomes also show high scores for mutant ribosomes (C78), and the presence of complementary SD-like sequences near AUG codons is not sufficient to recruit mutant ribosomes (C81). Sites that initiate with one ribosome type initiate with all types regardless of ASD sequence (C82-C83).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C86 extend the findings from annotated sites to non-annotated AUGs. The initiation score analysis (Figures 4B-G) shows that: (1) mutant ribosomes are not generally enriched at non-annotated AUGs (C76-C77), (2) the rare non-annotated sites that do show initiation behave the same for all ribosome types (C78, C82-C83), and (3) complementary sequences alone are insufficient (C80-C81). The consistency across multiple mutant ribosomes and the analysis of both high-IS and low-IS sites provide strong support for the conclusion that SD-ASD pairing is neither necessary nor sufficient.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C4",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "The authors identify A-rich sequences upstream of start codons as a feature that promotes initiation. Adenosines are enriched 15 nt upstream and 5 nt downstream of annotated start sites compared to non-annotated AUGs (C87). Reporter assays show that replacing A's with U's reduces GFP expression, and replacing A's with C's abolishes expression (C88-C89). A-rich sequences are enriched at annotated start sites across diverse bacterial species, particularly in species lacking SD motifs like Mycoplasma pneumoniae and Flavobacterium johnsoniae (C91-C92).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C93 are supported by sequence analysis (Figure 5A, Figure 5\u2014supplement 1) and functional validation through reporter assays (Figure 5D). The probability logos clearly show A enrichment at annotated sites. The reporter assays provide direct functional evidence, though the effect of U substitution is variable (C88). The complete loss of expression with C substitution (C89) is more convincing. The cross-species analysis (C91-C92) strengthens the generality of the finding. However, the mechanism remains unclear (acknowledged in the discussion), and the reporter assays test only four sites.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C95",
+      "C97",
+      "C98",
+      "C101",
+      "C111"
+    ],
+    "result": "mRNA structure surrounding start codons differs between annotated and non-annotated AUGs. Annotated initiation sites have significantly lower mRNA structure for ~30 nt on both sides of the AUG codon, while non-annotated AUGs show consistently high structure across this region. This suggests that local mRNA structure plays a critical role in start codon selection and likely has a causal role in setting initiation rates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95, C97-C98, C101, and C111 are supported by SHAPE-MaPseq data analysis (Figure 5E) and citations to previous studies. The difference in structure between annotated and non-annotated sites is clear in the data. However, there is a causality issue: the authors acknowledge that ribosomes themselves melt structure during translation (C99), so lower structure at annotated sites could be consequence rather than cause. The correlation between in vivo and in vitro structure measurements (C100) partially addresses this, but the causal claim (C101) remains somewhat uncertain.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "A small number of endogenous genes show increased translation with mutant ribosomes when they have complementary SD-like sequences to the mutant ASD. Examples include hemA (10-fold higher with O-ribosomes), rbsK (7-fold), mreB (10-fold), sapA (9-fold with S-ribosomes), and rsmH (4-fold). However, such examples are rare, and the three ASD mutants essentially act as general loss-of-function mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C52 are supported by specific gene examples shown in Figures 1E and Figure 1\u2014supplement 2. The fold-changes are substantial and the complementarity between mRNA sequences and mutant ASDs is shown. The conclusion that these are rare exceptions (C52) is reasonable given that endogenous genes evolved to interact with the canonical ASD. This result validates the approach and confirms that the mutants can recognize complementary sequences when present, but also establishes that most genes do not have such sequences.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "The authors propose that MS2RP is a versatile method that could be applied to study rRNA variants in bacteria and eukaryotes, characterize rRNA domain functions, and investigate variant rRNA alleles that are expressed differentially in response to environmental changes or developmental stages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C102-C107 are largely speculative about future applications (C103, C107 explicitly marked as speculation). While the logic is sound that a plasmid-based system could be transferred to other organisms (C102), this has not been demonstrated. The citations to variant rRNA alleles in bacteria and eukaryotes (C104-C106) establish that such variants exist and are interesting, but do not demonstrate that MS2RP will work in these contexts. These are reasonable proposals for future work but are not supported by data in this manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C108",
+      "C109"
+    ],
+    "result": "The authors propose two possible explanations for why mutant ribosomes show negative correlation with SD strength: (1) wild-type ribosomes may occlude ribosome-binding sites on mRNAs with strong SD motifs, or (2) mRNA structure and other features may outweigh SD motif effects, masking them in conventional profiling studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C108-C109 are explicitly speculative explanations for the observed negative correlation. Both are plausible mechanisms, but the manuscript does not provide data to distinguish between them. The authors acknowledge this uncertainty by presenting both as possibilities. Additional experiments would be needed to determine which mechanism (or combination) is correct.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "The authors discuss potential mechanisms by which A-rich sequences might enhance initiation, including effects on mRNA dynamics/structure, specific interactions with ribosomal components near the start codon (possibly conserved across domains), or interactions with ribosomal protein S1 further upstream. They note that A-rich sequences have been reported to enhance translation in eukaryotic systems and that the Kozak sequence contains a purine at position -3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C112, C114, C118-C119 are explicitly speculative about mechanisms. The observation that U substitution reduces translation (C113) argues against a simple structural explanation, but the mechanism remains unclear. The citations to eukaryotic A-rich sequences (C117) and the Kozak sequence (C115-C116) provide interesting context but do not establish mechanism. These are reasonable hypotheses for future investigation but lack direct experimental support in this manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C33",
+      "C36",
+      "C39",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "The introduction and discussion provide extensive background on bacterial translation initiation, SD motifs, regulatory mechanisms, ribosomal protein S1, and the evolutionary variation in SD motif usage across bacterial species. This establishes the context and significance of the study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C31, C33, C36, C39, C120-C124 are primarily background knowledge and citations to previous work. These are well-supported by the cited literature and represent established knowledge in the field. They provide appropriate context for understanding the significance of the current findings. The claims about SD motif variation across species (C24-C29) and the evolutionary implications (C122-C124) are particularly important for framing why the current study matters.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C110"
+    ],
+    "result": "SD motifs are underrepresented within ORFs to avoid spurious initiation at internal start codons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C110 is supported by citation to Hockenberry et al., 2018. This is established prior work that provides context for understanding the selective pressures on SD motif usage. It supports the interpretation that SD motifs have functional significance even if they are not necessary for start site selection.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C99",
+      "C100"
+    ],
+    "result": "Ribosomes can melt RNA structure during translation, and SHAPE/DMS reactivity measurements in vivo and in vitro are strongly correlated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C100 are supported by citations to previous studies. These establish important context for interpreting the mRNA structure data, particularly regarding the causality question of whether low structure enables initiation or results from it. The correlation between in vivo and in vitro measurements (C100) suggests structure has some causal role, but does not definitively resolve the issue.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "The methods section describes growth conditions, induction protocols, and retapamulin treatment procedures used in the experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C125-C127 describe experimental methods that are straightforward and standard. These are adequately documented for reproducibility. The specific conditions (temperature, media, OD600 values, induction times, antibiotic concentrations) are clearly stated.",
+    "result_type": "MINOR"
+  }
+]

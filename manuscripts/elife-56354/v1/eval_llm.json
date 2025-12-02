@@ -1,0 +1,314 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "Living systems operate across multiple temporal and spatial scales (nanoseconds to millions of years, molecules to populations), and individual experimental techniques work over limited ranges. Therefore, understanding living systems requires integrating information from multiple techniques across different scales.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3 establish the multi-scale nature of biology and technical limitations, while C115-C117 provide concrete examples of cross-scale dependencies (mutations affecting multiple levels, evolutionary compensation mechanisms). These claims collectively support the foundational premise that multi-scale integration is necessary, though this is primarily conceptual framing rather than novel empirical findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C108"
+    ],
+    "result": "The author proposes a six-category taxonomy for classifying biological experimental techniques (perturbation, visualization, substitution, characterization, reconstitution, and simulation) that is applicable across all biological scales from molecules to ecosystems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C6 and C108 present the core taxonomic framework with supporting visual representation (Figure 1). The classification is logically coherent and the manuscript provides examples for each category across multiple scales. However, this is a conceptual/organizational contribution rather than an empirical finding, and its utility depends on adoption by the community.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C118",
+      "C119"
+    ],
+    "result": "Perturbation experiments can yield misleading inferences when system-level interactions and compensatory mechanisms are not considered, as illustrated by the pha-1 gene example in C. elegans where the protein functions as an antidote to maternal toxin rather than as a master regulator.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C9 provide a well-documented case study (cited to primary literature) demonstrating how initial interpretations of perturbation experiments can be incorrect. Claims C10, C118-C119 generalize this principle appropriately. The pha-1 example effectively illustrates the limitations of perturbation approaches when system context is ignored.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C120",
+      "C121"
+    ],
+    "result": "Biological systems exhibit various compensatory mechanisms (regulative development, regeneration, reorganization, transcriptional adaptation) that can mask or blunt the effects of perturbations, complicating inference from genetic and chemical perturbation experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C18 provide multiple cited examples of compensation across different biological contexts and scales. The morpholino vs. CRISPR disagreement in zebrafish (C16-C17) is particularly relevant as a contemporary methodological issue. Claims C120-C121 appropriately contextualize how prior assumptions affect experimental design. All claims are well-supported by citations to primary literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "Visualization approaches face limitations including difficulty in accurate observation (ecosystem counts), perturbation from observation methods, and methodological constraints that can leave functionally important features invisible until methods improve.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C22 provide cited examples of visualization limitations across scales (ecosystems to organisms). Each example is supported by appropriate citations. The claims appropriately illustrate how what can be observed depends on available methodology, though these are illustrative examples rather than novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C122"
+    ],
+    "result": "Molecular visualization requires specialized techniques and faces challenges including ensuring labels are uniformly detectable across cellular compartments and do not interfere with protein function, as exemplified by constraints on tagging G\u03b1 proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C28 describe well-established principles and challenges in molecular visualization, supported by appropriate citations (Rodriguez et al., Costantini et al., Hughes et al.). The G\u03b1 protein example (C27-C28) effectively illustrates the constraint that multiple interaction partners limit tagging options. Claim C122 appropriately generalizes the bidirectional nature of observation effects.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "The substitution approach requires that proxies interact with the system identically to the original part without causing interference; when proxies do interfere, a mixture of perturbation and substitution occurs, complicating inference.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29 and C33 establish the logical requirements for valid substitution experiments. Claims C30-C32 provide cited examples across scales (sentinel species, tracers, reporter genes). The reasoning is sound and the examples appropriately illustrate the approach and its limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C123"
+    ],
+    "result": "Failed proxies can reveal new biological phenomena, as demonstrated by plant gene overexpression attempts that led to discovery of RNA interference, though even precisely engineered proxies can be unexpectedly silenced through mechanisms like germline small RNAs in C. elegans.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C35 provide a well-documented historical example of serendipitous discovery from failed experiments (cited to Napoli, van der Krol, and Fire). Claims C36-C37 illustrate that even modern precision methods (CRISPR) face unexpected challenges (cited to Almeida review). Claim C123 appropriately generalizes the principle. This effectively illustrates both the value and persistent challenges of substitution approaches.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Characterization approaches face limitations including that in vitro conditions may alter properties relative to in vivo function, techniques may be unable to characterize certain features (e.g., flexible protein regions), and technical limitations may go unrecognized for extended periods (17 years for methylcytosine discrimination).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C45 provide well-cited examples of characterization limitations across scales and techniques. The methylcytosine example (C44-C45) is particularly compelling as a documented case where a widely-used technique had an unrecognized limitation for 17 years. The temporal claim in C45 is verifiable from publication dates. All examples are appropriately cited.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C124",
+      "C125"
+    ],
+    "result": "Reconstitution approaches can provide compelling evidence for sufficiency of components by recovering system properties from isolated parts, applicable across scales from molecular motors to embryos to symbioses, though differences from living systems may persist due to missing or incorrectly arranged components.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C55 and C124-C125 provide well-cited examples of reconstitution across scales (F1-ATPase rotation, phosphorylation oscillations, brain organoids, IVF, squid-Vibrio symbiosis). Each example is supported by appropriate primary citations. Claims C54-C55 and C125 appropriately acknowledge limitations and the iterative nature of reconstitution. The examples effectively illustrate both the power and limitations of the approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Simulation approaches range from simple sketches to complex computational models and can explore experimentally inaccessible conditions, but all simulations are incomplete and require iterative refinement, as illustrated by ongoing surprises in well-studied systems like the E. coli lac operon.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C67 provide cited examples of simulations across complexity levels (Darwin's sketch, DNA model, cellular automata, whole-cell models, digital evolution). The lac operon example (C66-C67) effectively illustrates that even extensively studied and modeled systems can yield surprises (Phillips et al. 2019), supporting the need for iterative refinement. Claim C60 appropriately notes the inherent incompleteness of all simulations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C4",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "The complexity of living systems, sophistication of techniques, and need for multi-technique integration can generate persistent illusions of knowledge that are difficult to anticipate, may provide false security about disciplinary foundations, and make it challenging to evaluate new findings in context.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C4, C109-C114 present the manuscript's central concern about illusions of knowledge. While the reasoning is logical and the problem is plausible, these claims are primarily speculative/conceptual (evidence_type: SPECULATION, INFERENCE, KNOWLEDGE) without empirical demonstration that such illusions are widespread or quantification of their impact. The claims identify a potential problem but don't provide systematic evidence of its prevalence or severity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C87",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C95",
+      "C100",
+      "C107",
+      "C108"
+    ],
+    "result": "The proposed six-approach taxonomy could improve reproducibility of inferences, increase fairness in peer review, guide experimental design, and help scientists contextualize progress if adopted with explicit statements about inference rationales and acceptable levels of doubt.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C68-C69, C87, C89-C92, C95, C100, C107-C108 propose potential benefits of the taxonomy. However, all are speculative (evidence_type: SPECULATION) about future utility without empirical validation. The claims use conditional language ('could improve', 'should lead to') appropriately, but no evidence is provided that the taxonomy would actually achieve these benefits if implemented. These are reasonable hypotheses requiring future testing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "The reproducibility of inferences is difficult to quantify because exploratory analyses are often unreported, the number of explored inferences is undocumented, persuasive storytelling can obscure logical gaps, and different research teams can draw different conclusions from identical data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C83 describe challenges in inference reproducibility with appropriate citations (Tukey on exploratory vs. confirmatory analysis, Botvinik-Nezer on divergent conclusions from neuroimaging data, Goodman on levels of reproducibility). The neuroimaging example (C76) provides concrete empirical evidence of the inference reproducibility problem. Claims about undocumented exploration (C77-C78) and storytelling effects (C80) are based on knowledge of scientific practice. The logical chain is coherent.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "Inferences are influenced by prevailing paradigms, and erroneous paradigms can drive accumulation of wrong inferences for extended periods (exemplified by the Ptolemaic model), demonstrating that knowledge from reproducible observations can nevertheless be illusory.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C86 present a well-established principle in philosophy of science using the Ptolemaic model as a canonical historical example. The reasoning is sound: observations were reproducible within the Ptolemaic framework, but the interpretive paradigm was incorrect. This effectively illustrates how reproducibility at the observational level doesn't guarantee correct inference. The claims are appropriately based on established historical knowledge.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "Peer review faces inherent challenges including that it's unreasonable to expect all six approaches in any study, quality matters more than quantity of approaches, impact estimates are paradigm-influenced guesses, subjective interpretations cause disagreements, and different panels show low agreement on the same proposals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C94 make reasonable logical inferences about expectations for studies. Claims C96-C99 are supported by appropriate citations (Park and Siler on impact prediction, Keeling on subjective interpretation of 'function', Pier on low inter-panel agreement). These claims accurately characterize documented challenges in peer review, though they don't propose validated solutions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "Experiments on peer review processes are underway, including publishing author-reviewer exchanges for transparency, though these exchanges can be difficult for non-experts to decipher; solutions include providing summaries (as some funding agencies do) or acceptance explanations (as eLife recently introduced).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C106 describe current practices and recent innovations in peer review, supported by appropriate citations (Rennie, Rodgers, Polka on peer review experiments; Nature 2020 on transparency). Claim C104 about funding agency practices and C105 about eLife's acceptance explanations describe verifiable current practices. Claim C106 makes a reasonable inference about educational value. These accurately characterize the current state of peer review innovation.",
+    "result_type": "MINOR"
+  }
+]

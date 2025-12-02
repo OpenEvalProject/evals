@@ -1,0 +1,367 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C112"
+    ],
+    "result": "BAC firing is almost entirely absent in V2m ttL5 neurons compared to V1, where approximately half of neurons exhibit BAC firing. Under GABAB receptor blockade with CGP52432, BAC firing was observed in 10/21 V1 neurons but only 1/18 V2m neurons (p = 4.6\u00d710\u207b\u00b3, Fisher's exact test).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C24 provide converging experimental evidence with appropriate statistical analysis (Fisher's exact test) showing a significant difference in BAC firing between V1 and V2m. The experimental design (C25, C112) includes appropriate controls (GABAB blockade) and clear criteria for BAC firing classification. The sample sizes are adequate and the statistical test is appropriate for categorical data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C31",
+      "C26"
+    ],
+    "result": "V2m neurons show significantly reduced critical frequency afterdepolarization (cfADP) compared to V1 neurons. Maximum ADP integral values were significantly smaller in V2m (42 \u00b1 33 mV\u00b7ms) than V1 (91 \u00b1 50 mV\u00b7ms, p = 4.54\u00d710\u207b\u2076), with V1 showing more than three times higher percentage of neurons with cfADP (p = 2.6\u00d710\u207b\u2075).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27, C28, and C31 provide robust quantitative evidence with appropriate statistical tests (Kolmogorov-Smirnov test, Fisher's exact test) and adequate sample sizes (V1 n=41, V2m n=49). The k-means clustering approach for classification is reasonable. C26 shows that among neurons with defined critical frequency, the actual frequency values did not differ, supporting that the difference is in the presence/absence of the phenomenon rather than its properties.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C4"
+    ],
+    "result": "Apical trunk length is significantly shorter in V2m (313 \u00b1 65 \u03bcm) compared to V1 (409 \u00b1 64 \u03bcm, p = 4.26\u00d710\u207b\u2076), and this morphological difference correlates with reduced dendritic excitability as measured by maximum ADP integral values (p = 5.37\u00d710\u207b\u00b3).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C33 provide direct morphological measurements with appropriate statistical analysis (two-sample t-test for length comparison, F-test for correlation). The sample sizes (V1 n=22, V2m n=26) are adequate for morphological analysis. The correlation analysis (C33) appropriately links morphology to function, though correlation does not establish causation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "The reduced dendritic excitability in V2m is robust across different experimental conditions, including different extracellular Ca\u00b2\u207a concentrations (1.5 mM vs 2 mM) and different cell labeling methods (retrograde CTB vs Colgalt2-Cre).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C30 demonstrate appropriate controls showing no significant differences across Ca\u00b2\u207a concentrations or labeling methods within each region, supporting the robustness of the main findings. The statistical tests (Kolmogorov-Smirnov) are appropriate. This strengthens the conclusion (C70) that the observed differences are genuine regional differences rather than artifacts of experimental conditions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C34",
+      "C35"
+    ],
+    "result": "Morphological analysis reveals that while tuft and basal dendrite properties are similar between V1 and V2m, apical length, convex hull, and largest Sholl radius are significantly greater in V1 neurons (p < 0.005, Bonferroni-corrected).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C35 provide detailed morphological characterization with appropriate statistical correction (Bonferroni) for multiple comparisons. The finding that only specific morphological features differ (apical-related measures) while others remain similar strengthens the specificity of the morphological differences. Sample sizes (V1 n=6, V2m n=7 for full reconstructions) are modest but adequate for detailed morphological analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "V1 and V2m neurons show similar subthreshold properties but differ significantly in firing properties. V1 neurons have significantly higher burst ratios (12.9 \u00b1 12.3 vs 5 \u00b1 3.8, p = 6.1\u00d710\u207b\u2075), more burst spikes (3 \u00b1 0.7 vs 2.3 \u00b1 0.6, p = 6.2\u00d710\u207b\u2076), and larger burst AHP (17.9 \u00b1 7 mV vs 13.6 \u00b1 3 mV, p = 1.9\u00d710\u207b\u2074).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113-C116 provide comprehensive characterization of intrinsic properties with appropriate statistical tests (two-sample t-tests) and adequate sample sizes. The finding that subthreshold properties are similar while suprathreshold properties differ is important for ruling out general excitability differences and focusing on dendritic mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C72"
+    ],
+    "result": "Computational modeling using the detailed Hay et al. (2011) model shows that applying the same biophysical parameters to a shorter V2m morphology results in loss of BAC firing, independently of Ca\u00b2\u207a channel density.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C37 and C72 demonstrate that morphological differences alone can account for the loss of BAC firing in computational models. The use of an established, validated model (Hay et al. 2011) with only morphological changes provides strong evidence for the morphology-dependence of the phenomenon. However, the model is based on rat neurons and has limitations noted in C74-C75.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "In the detailed model with short morphology, Ca\u00b2\u207a plateaus could only be evoked by the largest coincident current injections (0.5 nA, \u00b11 ms), and BAC firing was never observed even with increased Ca\u00b2\u207a conductance. Neither hot zone length nor HVA:LVA ratio substantially affected the difference between long and short morphologies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C40 provide systematic exploration of parameter space in the detailed model, demonstrating that the length effect is robust to variations in Ca\u00b2\u207a channel properties. The finding that even maximal stimulation and increased Ca\u00b2\u207a conductance cannot restore BAC firing in short morphologies is strong evidence for a fundamental length-dependent mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C73"
+    ],
+    "result": "In the reduced model, Ca\u00b2\u207a plateau generation depends strongly on apical trunk length, with a critical threshold at approximately 350 \u03bcm (\u22450.35\u03bb). Below this length, no Ca\u00b2\u207a plateaus are triggered regardless of Ca\u00b2\u207a channel density.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C42 and C73 identify a specific critical length threshold in the reduced model. However, C74-C75 appropriately note that the reduced model is based on rat neurons and pools apical trunk with oblique dendrites, so the numerical values may not translate directly to mouse neurons. The qualitative finding of a length threshold is well-supported, but the specific value should be interpreted cautiously.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C76",
+      "C77"
+    ],
+    "result": "Voltage-gated Na\u207a channels in the apical dendrite are critical for the length-dependent effect. Removing Na\u207a channels abolishes the trend of increasing tuft voltages with longer trunks, while the width and peak voltage in the tuft increase with dendritic length even without Ca\u00b2\u207a conductances.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C45 and C76-C77 provide systematic computational evidence identifying Na\u207a channels as the key mechanism. The finding that tuft voltage increases with length even without Ca\u00b2\u207a channels (C43) but this trend is abolished without Na\u207a channels (C45) provides strong mechanistic insight. The computational experiments are well-designed with appropriate controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C82"
+    ],
+    "result": "Active propagation mediated by Na\u207a channels causes backpropagating action potentials (bAPs) to be larger and broader at all distances along long dendrites compared to the same absolute distances in shorter dendrites. In passive dendrites, voltage attenuation depends almost exclusively on distance, not trunk length.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C47 and C82 provide clear computational evidence distinguishing active from passive propagation. The comparison between active and passive conditions is well-controlled and demonstrates the specific contribution of active conductances to the length-dependent effect. This is a key mechanistic insight.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C78",
+      "C53",
+      "C54",
+      "C56"
+    ],
+    "result": "The mechanism underlying length-dependent excitability involves Na\u207a channel-dependent broadening of bAPs due to capacitive filtering, which increases voltage integrals in the distal trunk. This interacts with tuft time constant to create higher tuft depolarization in longer neurons, enabling dendritic Ca\u00b2\u207a electrogenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78, C53-C54, and C56 provide a coherent mechanistic explanation supported by computational modeling. The proposed mechanism involving bAP broadening, voltage integral, and tuft time constant is well-supported by the modeling results. However, C53 is noted as partially speculative, and the mechanism would benefit from experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "The length-dependent enhancement of dendritic excitability is robust to variations in conductance distributions and H-current (Ih). Uniform distribution of conductances along the trunk does not eliminate the effect, and tuft voltage remains positively correlated with trunk length even after total removal of Ih. Axial resistance (Ra) is not the primary determinant.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C52 demonstrate robustness of the main finding through systematic parameter exploration. The tests of Ih (C49-C50) and Ra (C51-C52) are appropriate controls addressing potential alternative mechanisms. The conclusion that Na\u207a channels are the primary determinant is well-supported by these exclusion experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C55",
+      "C80",
+      "C79"
+    ],
+    "result": "Above a critical trunk voltage integral, many different combinations of bAP width and amplitude can evoke Ca\u00b2\u207a plateaus in the tuft. The overall voltage integral is more important than the specific combination of depolarization width and amplitude.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55 and C80 provide computational evidence for the voltage integral hypothesis. The systematic exploration of width-amplitude combinations (C55) is well-designed. However, C79 is explicitly stated as a hypothesis, and while C80 provides supporting evidence, this aspect would benefit from additional experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C6"
+    ],
+    "result": "L5PNs in V2m show fundamentally different computational properties compared to V1, with reduced dendritic excitability and burst firing correlated with shorter apical dendrites. This demonstrates that the same cell type in adjacent cortical areas can have very different computational repertoires, challenging the notion of canonical computations at the single cell level.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This result integrates the major experimental and computational findings (C2-C3, C57-C60) into a coherent conclusion (C61-C62, C6). The evidence from both experiments and models converges to support this conclusion. However, C62 makes a strong claim about canonical computations that, while supported by the data, represents a significant conceptual leap. C63 extends this to circuit level, which is more speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "The experimental design included appropriate controls to ensure rigorous comparison between V1 and V2m, including GABAB receptor blockade, standardized protocols, and well-defined cell populations identified by projection target or genetic label.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C67 describe the methodological controls used in the study. The use of GABAB blockade (C65) is appropriate and well-justified by citation (C64). The standardization of protocols (C66) and cell identification methods (C67) are important for ensuring valid comparisons. These methodological details support the validity of the main findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "Recordings were made from ttL5 neurons in V1 and V2m identified using retrograde labeling with CTB (n=117) or Colgalt2-Cre mouse line (n=12), ensuring consistency in cell type across experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C21 describe the experimental approach with appropriate cell identification methods. The use of both retrograde labeling and genetic labeling provides confidence in cell type identification. The citation support for Colgalt2-Cre labeling ttL5 PNs (C21) is appropriate. Sample sizes are adequate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C71",
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "The findings are consistent with structural MRI data showing thinner cortical mantle in medial/posterior cortex. Despite typical voltage attenuation with distance, there is a counter-intuitive interaction where longer apical trunks enhance the ability of bAPs to trigger Ca\u00b2\u207a plateaus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C71 appropriately connects the findings to prior structural data. Claims C118-C119 articulate the counter-intuitive nature of the finding, which is well-supported by the experimental and modeling data. However, C117 cites prior work suggesting this possibility, so the finding is not entirely novel but provides mechanistic insight.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C83",
+      "C90",
+      "C91",
+      "C93"
+    ],
+    "result": "The study predicts that bAP width and amplitude at the same absolute distance from soma will be larger in neurons with longer trunks. The positive effect of length may not increase monotonically due to saturation, and beyond a certain length, trunk voltage may attenuate sufficiently to prevent Ca\u00b2\u207a plateaus. Generalization to other species and cortical areas remains to be tested.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C83, C90-C91, and C93 are explicitly predictive or speculative. C83 is a testable prediction from the modeling results. C90-C91 propose limits to the length-dependent enhancement based on biophysical reasoning, but these are not directly tested. C93 appropriately acknowledges the need for further work. These represent reasonable extrapolations but require experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C92"
+    ],
+    "result": "The length-dependence principle may reconcile apparent counterexamples: human ttL5 neurons are longer but less excitable (possibly due to reduced ion channel densities), while layer 2/3 pyramidal neurons in rat barrel cortex show cfADP despite shorter trunks (though without spike bursts during BAC firing).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C88-C89 and C92 discuss how the findings relate to prior work on other cell types and species. C88 is well-supported by citation, and C89 provides a reasonable interpretation connecting prior findings to the current study. However, C92 presents a counterexample that is not fully explained by the current framework. These claims appropriately acknowledge complexity but require further investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "The computational models lacked NMDA channels, but this is unlikely to affect the conclusions because NMDA spikes contribute little to Ca\u00b2\u207a plateaus when triggered at the hot zone, and the cfADP protocol is independent of synaptically released glutamate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C87 appropriately address a potential limitation of the modeling approach. The reasoning is sound: C85-C86 cite prior work showing NMDA spikes have limited contribution at the hot zone, and C87 notes the cfADP protocol doesn't involve synaptic glutamate. This adequately justifies the model simplification for the specific phenomena studied.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "The study uncovers a possible mechanistic link between cortical thickness and dendritic excitability, with potential clinical implications for neurological diseases and mental health conditions where altered cortical thickness (Alzheimer's, bipolar disorder, autism) and altered dendritic excitability have been implicated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C94-C98 appropriately cite prior clinical literature linking cortical thickness and dendritic excitability to disease. However, C99's claim of uncovering a mechanistic link is somewhat overstated\u2014the study demonstrates a link between morphology and excitability in healthy tissue, but does not directly study disease conditions. This represents a reasonable speculation about clinical relevance but requires validation in disease models.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "The findings challenge the notion that the neocortex performs stereotyped canonical computations across brain areas. In secondary visual cortex, different operations must implement multimodal coincidence detection than those proposed for primary sensory cortices, where BAC firing is thought to integrate feedforward and feedback pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C102 appropriately cite prior work on cortical connectivity and BAC firing function. Claims C103-C104 draw strong conclusions from the experimental findings. While the data clearly show regional differences in cellular properties, the leap to challenging canonical circuit computations (C104) is significant. The conclusion is reasonable given the data but represents a conceptual interpretation that goes beyond the direct findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "Heterogeneity in neuronal operating modes may allow cortical areas to specialize for processing specific inputs, potentially at the cost of reduced flexibility. Nonlinear operations through Ca\u00b2\u207a plateaus and BAC firing may not be required outside primary sensory cortices where input hierarchy is less defined. Simple morphological adjustments can generate diverse computational operations that the brain may leverage for cognitive processing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C105-C111 present speculative interpretations about the functional implications of the findings. While these are reasonable hypotheses based on the data, they are explicitly speculative (note the use of \"may\" throughout). C111 makes a strong claim (\"undoubtedly\") that is not directly supported by the data. These represent interesting ideas for future investigation but go well beyond what the current study demonstrates.",
+    "result_type": "MINOR"
+  }
+]

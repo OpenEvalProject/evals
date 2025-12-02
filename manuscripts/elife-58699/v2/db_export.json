@@ -1,0 +1,1772 @@
+{
+  "submission": {
+    "id": "5b106689-8d1f-4fba-9a90-c5ec90a003d0",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T19:26:54.567578Z",
+    "updated_at": "2025-12-02T19:26:54.567578Z"
+  },
+  "content": [
+    {
+      "id": "e6e895c1-23e1-48df-93da-85e4489d3344",
+      "submission_id": "5b106689-8d1f-4fba-9a90-c5ec90a003d0",
+      "content_type": "manuscript",
+      "content_text": "# The contribution of asymptomatic SARS-CoV-2 infections to transmission on the Diamond Princess cruise ship\n\n## Authors\n\n- Jon C Emery<sup>1</sup> ([ORCID: 0000-0001-6644-7604](https://orcid.org/0000-0001-6644-7604))\n- Timothy W Russell<sup>1</sup>\n- Yang Liu<sup>1</sup>\n- Joel Hellewell<sup>1</sup>\n- Carl AB Pearson<sup>1</sup>\n- Katherine E Atkins<sup>1</sup>\n- Katherine E Atkins\n- Petra Klepac\n- Akira Endo\n- Christopher I Jarvis\n- Nicholas G Davies\n- Eleanor M Rees\n- Sophie R Meakin\n- Alicia Rosello\n- Kevin van Zandvoort\n- James D Munday\n- W John Edmunds\n- Thibaut Jombart\n- Megan Auzenbergs\n- Emily S Nightingale\n- Mark Jit\n- Sam Abbott\n- David Simons\n- Nikos I Bosse\n- Quentin J Leclerc\n- Simon R Procter\n- C Julian Villabona-Arenas\n- Damien C Tully\n- Arminder K Deol\n- Fiona Yueqian Sun\n- St\u00e9phane Hu\u00e9\n- Anna M Foss\n- Kiesha Prem\n- Graham Medley\n- Amy Gimma\n- Rachel Lowe\n- Samuel Clifford\n- Matthew Quaife\n- Charlie Diamond\n- Hamish P Gibbs\n- Billy J Quilty\n- Kathleen OReilly\n- Gwenan M Knight<sup>1</sup> ([ORCID: 0000-0002-7263-9896](https://orcid.org/0000-0002-7263-9896))\n- Rosalind M Eggo<sup>1</sup>\n- Adam J Kucharski<sup>1</sup> ([ORCID: 0000-0001-8814-9421](https://orcid.org/0000-0001-8814-9421))\n- Sebastian Funk<sup>1</sup> ([ORCID: 0000-0002-2842-3406](https://orcid.org/0000-0002-2842-3406))\n- Stefan Flasche<sup>1</sup>\n- Rein MGJ Houben<sup>1</sup> ([ORCID: 0000-0003-4132-7467](https://orcid.org/0000-0003-4132-7467)) \u2020\n\n### Affiliations\n\n1. Centre for Mathematical Modelling of Infectious Diseases, Department of Infectious Disease Epidemiology, Faculty of Epidemiology and Population Health, London School of Hygiene and Tropical Medicine London United Kingdom\n\n\u2020 Corresponding author\n\n## Abstract\n\nA key unknown for SARS-CoV-2 is how asymptomatic infections contribute to transmission. We used a transmission model with asymptomatic and presymptomatic states, calibrated to data on disease onset and test frequency from the Diamond Princess cruise ship outbreak, to quantify the contribution of asymptomatic infections to transmission. The model estimated that 74% (70\u201378%, 95% posterior interval) of infections proceeded asymptomatically. Despite intense testing, 53% (51\u201356%) of infections remained undetected, most of them asymptomatic. Asymptomatic individuals were the source for 69% (20\u201385%) of all infections. The data did not allow identification of the infectiousness of asymptomatic infections, however low ranges (0\u201325%) required a net reproduction number for individuals progressing through presymptomatic and symptomatic stages of at least 15. Asymptomatic SARS-CoV-2 infections may contribute substantially to transmission. Control measures, and models projecting their potential impact, need to look beyond the symptomatic cases if they are to understand and address ongoing transmission.\n\n## Introduction\n\nThe ongoing COVID-19 pandemic has spread rapidly across the globe, and the number of individuals infected with SARS-CoV-2 outstrips the number of reported cases (Wang et al., 2020; Golding et al., 2020). One key reason for this may be that a substantial proportion of cases proceed asymptomatically, that is, they either do not experience or are not aware of symptoms throughout their infection but may still transmit to others. In this sense, asymptomatic infections differ from presymptomatic infections, which describes the portion of the incubation period before symptoms develop during which onward transmission is possible.\n\nWhile pre- and asymptomatic individuals do not directly contribute to morbidity or mortality in an outbreak, they can contribute to ongoing transmission, as has been shown for COVID-19 (Rothe et al., 2020; Chen et al., 2020; Ganyani et al., 2020) and other diseases (Dean et al., 2016; Slater et al., 2019; Esmail et al., 2018). In particular, purely symptom-based interventions (e.g., self-isolation upon onset of disease) will not interrupt transmission from asymptomatic individuals and hence may be insufficient for outbreak control if a substantial proportion of transmission originates from pre- and asymptomatic infections (Chen et al., 2020).\n\nAn estimate of the proportion of infections that progress to symptomatic disease, also known as the case-to-infection ratio, provides an indicator of what proportion of infections will remain undetected by symptom-based case detection (Salomon and COVID-19 Statistics, Policy modeling, and Epidemiology Collective, 2020). Evidence so far have suggested that the proportion of SARS-CoV-2 infections that proceed asymptomatically is likely non-trivial (Li et al., 2020; Liu et al., 2020a; He et al., 2020; Mizumoto et al., 2020; Lavezzo et al., 2020; Bendavid et al., 2020), although empirical data are often difficult to interpret due to opportunistic sampling frames (Nishiura et al., 2020) combined with low (Fontanet et al., 2020) and imbalanced participation from individuals with and without symptoms (Gudbjartsson et al., 2020). While it is likely that transmission from asymptomatic individuals can occur, (Bai et al., 2020) quantitative estimates are effectively absent. Improved understanding of the relative infectiousness of asymptomatic SARS-CoV-2 infection, and its contribution to overall transmission will greatly improve the ability to estimate the impact of intervention strategies (Salomon and COVID-19 Statistics, Policy modeling, and Epidemiology Collective, 2020). What is known is that in the presence of active case-finding, presymptomatic infections and symptomatic cases contribute almost equally to overall transmission, as both modelling and empirical studies have shown (Liu et al., 2020a; He et al., 2020).\n\nDocumented outbreaks in a closed population with extensive testing of individuals regardless of symptoms provide unique opportunities for improved insights into the dynamics of an infection, as knowledge of the denominator and true proportion infected are crucial, yet often unavailable in other datasets. Here, we use data from the well-documented outbreak on the Diamond Princess cruise ship to capture the mechanics of COVID-19 in a transmission model with explicit asymptomatic and presymptomatic states to infer estimates for the proportion, infectiousness and contribution to transmission of asymptomatic infections. Available data included the date of symptom onset for symptomatic disease for passengers and crew, the number of symptom-agnostic tests administered each day, and the date of positive tests for asymptomatic and presymptomatic individuals (Mizumoto et al., 2020; Nishiura, 2020; NIID, 2020).\n\n## Results\n\n### Model calibration\n\nThe model reflected the data well (Figure 1), including the differently timed peaks for confirmed symptomatic cases for crew (Figure 1A) and passengers (Figure 1B). In addition, the model matched the expected impact of quarantine of passengers on transmission from February 4th as illustrated by the drop in reproductive number (Figure 1E), followed by a later drop in transmission after February 10th, which was driven by a change in contact pattern in crew. See Figure 1\u2014figure supplements 1\u20132 for full calibration outputs.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/58699/elife-58699-fig1-v2.jpg)\n\n**Figure 1.:** Figure shows data from the Diamond Princess (points (A-D) and bars (F)) and results from model calibration. Red lines = median, shading = 95% posterior plus observational interval (A-C) and 95% posterior interval only (D-E). Two vertical lines show the date of the first confirmed diagnosis (left) and the start of quarantine measures (right). (A-B) show confirmed symptomatic cases among crew (A) and passengers (B) with a reported date of onset; (C) shows confirmed pre- or asymptomatic individuals by test date; (D) shows the prevalence of pre/asymptomatic individuals by test date. Points and error bars show point estimates and 95% confidence intervals; (E) shows the basic reproduction number over time for the ship as a whole, reflecting the drop in contact rates (F) shows the number of tests administered irrespective of symptoms, by test date.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/58699/elife-58699-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Parameter correlation plot containing parameter values from 10,000 samples of the joint posterior distribution found during MCMC model calibration. See Table 2 for parameter definitions and descriptions.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/58699/elife-58699-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** Parameter trace plot showing all 1.5 million samples from the MCMC model calibration sequentially. See Table 2 for parameter definitions and descriptions.\n\n### Asymptomatic infections\n\nWe estimated that 74% of infections proceeded asymptomatically (70\u201378%, 95% Posterior Interval (PI)) (see Figure 2A). The strong identifiability of this parameter is driven by the relative proportions of individuals testing positive with and without symptoms, combined with the time-delay between symptom-based and symptom-agnostic testing. As a result, our model estimated that in total 1304 (1,198\u20131,416) individuals were infected, representing 35% (32\u201338%) of the initial total population on the Diamond Princess. Over half of these infections had not been detected at disembarkation on February 21 st (53%, 51\u201356%) consisting of infected individuals who had recovered and became test negative before they were tested (37%, 34\u201340%), were yet to be tested (15%, 13\u201316%), or had recently been exposed and were not yet detectable at that point (1%, 1\u20133%). Nearly two-thirds of pre- and asymptomatic infections (67%, 66\u201368%) and 8% (6\u20139%) of symptomatic infections went undetected up until disembarkation (Figure 2C).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/58699/elife-58699-fig2-v2.jpg)\n\n**Figure 2.:** (A) Prior (blue) and posterior (red) probability distribution for the proportion progressing to asymptomatic infections. (B) Prior (blue) and posterior (red) probability distribution for the relative infectiousness of asymptomatic infections. (C) Number of pre- and asymptomatic infections and symptomatic cases detected (dark red) and not detected (light red) during the outbreak. Error bars indicate 95% posterior intervals. (D) Posterior probability distribution for proportion of transmission that is from asymptomatic individuals. Dashed and dotted lines show median and interquartile range, respectively.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/58699/elife-58699-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Correlation between the proportion of transmission from asymptomatics and their relative infectiousness, using 100,000 model runs sampled from the joint posterior distribution. The relationship is non-linear, such that a modest relative infectiousness can still lead to a significant contribution to transmission.\n\nIn contrast to the strong identifiability of the proportion of infections that were asymptomatic, the model was unable to identify the relative infectiousness of asymptomatic infections from the data, that is, a uniform prior was effectively returned (see Figure 2B). This is because the relative infectiousness of asymptomatic infections was degenerate with the overall contact rate, meaning the data were consistent with either relatively frequent contact with less infectious individuals or relatively infrequent contact with more infectious individuals (see Figure 1\u2014figure supplement 1). Despite this, the estimated proportion of transmission due to asymptomatic infections is 69%, with a wide confidence interval (20\u201385%) and an interquartile range of 56\u201376% (Figure 2D). The reason this estimate is not effectively 0\u2013100%, as might be expected by the unidentifiable relative infectiousness, is the combination of the strongly identified, relatively high proportion of infections that are asymptomatic and the non-linear relationship between the relative infectiousness of asymptomatics and their contribution to transmission, which quickly saturates to its maximal value (see Figure 2\u2014figure supplement 1). The result is that only a modest relative infectiousness is required to produce a non-trivial contribution to transmission. The relative infectiousness of presymptomatics was also unidentifiable, however, in all scenarios the remaining transmission was equally distributed between the presymptomatic (14%, 1\u201344%) and symptomatic (17%, 11\u201342%) individuals. Figure 3 shows the instantaneous proportion of transmission from symptomatic (A), presymptomatic (B) and asymptomatic (C) individuals over the course of the epidemic.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/58699/elife-58699-fig3-v2.jpg)\n\n**Figure 3.:** Instantaneous proportion of transmission from symptomatic (A), presymptomatic (B) and asymptomatic (C) individuals over the course of the epidemic, following the introduction of a single symptomatic individual on 20th Jan. Red lines = median, shading = 95% posterior interval. Two vertical lines show the date of the first confirmed diagnosis (left) and the start of quarantine measures (right).\n\nBecause of the non-identifiability of the relative infectiousness of asymptomatic infections we investigated marginal posterior estimates (Table 1). We find that low relative infectiousness of asymptomatic infections (0\u201325% compared to symptomatic individuals) would need to be compensated by a net reproduction number for individuals during their presymptomatic and symptomatic phase of 15.5\u201329.1.\n\n**Table 1.**\n Model outputs by relative infectiousness of asymptomatic individuals.Relative infectiousness expressed as proportion compared to symptomatic individuals. All values are 95% posterior ranges from model scenarios. Net reproduction number represents the typical number of infections generated by a single infected individual during their presymptomatic and symptomatic stages.\n\n\n<table>\n  <thead>\n    <tr>\n      <th rowspan=\"2\">Range of relative infectiousness of asymptomatic individual</th>\n      <th colspan=\"3\">Model output</th>\n    </tr>\n    <tr>\n      <th>Transmission from asymptomatic individuals (%)</th>\n      <th>Net reproduction number for presymptomatic passengers</th>\n      <th>Basic reproduction number</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>0\u20131%</td>\n      <td>0\u20133</td>\n      <td>22.7\u201329.1</td>\n      <td>6.7\u20137.6</td>\n    </tr>\n    <tr>\n      <td>1\u201325%</td>\n      <td>7\u201358</td>\n      <td>15.5\u201325.5</td>\n      <td>7.0\u20138.8</td>\n    </tr>\n    <tr>\n      <td>25\u201350%</td>\n      <td>44\u201375</td>\n      <td>11.1\u201317.6</td>\n      <td>8.0\u20139.6</td>\n    </tr>\n    <tr>\n      <td>50\u201375%</td>\n      <td>60\u201382</td>\n      <td>8.7\u201313.6</td>\n      <td>8.7\u201310.2</td>\n    </tr>\n    <tr>\n      <td>75\u201399%</td>\n      <td>68\u201386</td>\n      <td>7.2\u201311.4</td>\n      <td>9.3\u201310.8</td>\n    </tr>\n    <tr>\n      <td>99\u2013100%</td>\n      <td>72\u201387</td>\n      <td>6.7\u201310.2</td>\n      <td>9.5\u201310.9</td>\n    </tr>\n  </tbody>\n</table>\n\n_Relative infectiousness expressed as proportion compared to symptomatic individuals. All values are 95% posterior ranges from model scenarios. Net reproduction number represents the typical number of infections generated by a single infected individual during their presymptomatic and symptomatic stages._\n\n### Sensitivity analyses\n\nWithout an asymptomatic state the model was unable to reconstruct the dynamics of the outbreak (Appendix 2\u2014figures 1\u20133, Deviance Information Criterion (DIC) = 974 vs 329 for the primary analysis). Moreover, adjusting the relative value for mixing between crew and passengers did not have a qualitative effect on the results (Appendix 2\u2014figures 4\u201311).\n\nBiased symptom-agnostic testing had a greater impact on the results. Those testing negative having a 50% higher probability of being tested compared to the primary analysis led to a corresponding greater proportion of infections that were asymptomatic (84%, 82\u201387%), total number infected (2,097, 1,914-2,292) and contribution of asymptomatics to transmission (78%, 36\u201391%) (see Appendix 2\u2014figures 12\u201315). Conversely, those testing positive having a 50% higher probability of being tested compared to the primary analysis led to a corresponding smaller proportion of infections that were asymptomatic (66%, 61\u201371%), total number infected (1,051, 965-1,161) and contribution of asymptomatics to transmission (59%, 9\u201379%) (see Appendix 2\u2014figures 16\u201319).\n\nWhen we assumed a fixed age-specific ratio for the proportion of infections that progress asymptomatically, the model was able to fit the data, although the number of correlated parameters was high. Overall results were similar to the main analysis, with a proportion asymptomatic of 42% (41\u201344%) and 89% (85\u201391%) for passengers and crew, respectively. The proportion of all transmission from asymptomatics was 69% (IQR = 59\u201374%). Relative infectiousness was again unidentifiable. See Appendix 2\u2014figures 20\u201323 for details.\n\nA longer latent period provided a poorer fit to the data (DIC = 361) (Appendix 2\u2014figures 24\u201327). Adjusting the duration of the asymptomatic state to half or double the sum of the presymptomatic and symptomatic states made little qualitative difference to the results (Appendix 2\u2014figures 28\u201335), although the shorter asymptomatic period was a marginally poorer fit to the data (DIC = 338). Finally, recalibrating the model assuming the 35 confirmed pre/asymptomatic cases where a test date was not available were allocated to the last feasible day (13th Feb) made no qualitative difference to our results (see Appendix 2\u2014figures 36\u201339).\n\n## Discussion\n\n### Summary\n\nWe find that in this well-documented outbreak in a closed population, 74% (70\u201378%) of infections proceeded asymptomatically, equaling a 1:3.8 (1:3.3-1:4.4) case-to-infection ratio. The majority of asymptomatic infections remained undetected, but may have contributed substantially to ongoing transmission. While the relative infectiousness of asymptomatic infections could not be identified, low infectiousness (e.g. 0\u201325% compared to symptomatic individuals) would have required a very high net reproduction number for individuals during their presymptomatic and symptomatic stages of (15.5\u201329.1).\n\n### Interpretation\n\nOur results are strongly informed by data, which show that when extensive symptom-agnostic testing was ramped up, substantial numbers of pre- or asymptomatic infections were identified. Given the clear suppression of transmission through quarantining, as indicated by the drop in incident symptomatic disease, this finding is most likely explained by a large proportion of undetected asymptomatic individuals.\n\nThe model and data were unable to identify a value for the relative infectiousness, although we showed how different ranges for this key parameter required specific trade-offs, as reflected in the net reproduction number for infected individuals who will develop symptomatic disease. One can argue that a net reproduction number for presymptomatic passengers at the start of the outbreak of over 20 in this population, as required if asymptomatic individuals are effectively unable to transmit (range for relative infectiousness of 0\u20131%) is unlikely. Such high reproductive numbers are not usually seen, exceeding for example values found for norovirus outbreaks on cruise ships (Gaythorpe et al., 2018). While SARS-CoV-2 has been shown to survive on surfaces (van Doremalen et al., 2020), this does not seem to be the primary mode of transmission. In combination with growing evidence around viral load in asymptomatic infections and their involvement in transmission chains (Lavezzo et al., 2020), as well as anecdotal evidence about transmission from asymptomatic individuals (Bai et al., 2020; Chau et al., 2020) including in closed populations (Arons et al., 2020), it is reasonable to assume that asymptomatic infections play some role in ongoing SARS-CoV transmission. In our model, asymptomatic infections were responsible for more than half of all transmission in 83% of the scenarios compatible with the data.\n\nIt is important to note that our conclusion that asymptomatic infections may have contributed substantially to ongoing transmission is critically dependent on the setting. In this case symptomatic infections were quickly identified and removed from the ship before symptom-agnostic testing began, thereby leaving asymptomatic infections to dominate transmission. Such dominance should therefore not be interpreted as a constant of nature, but instead an important consideration in settings where prompt isolation of symptomatic infections is already in place but with little to no consideration for asymptomatic infections.\n\n### Comparison to other studies\n\nOur estimated proportion of asymptomatic infections in this outbreak is higher than previous studies, which relied on diagnosed cases only (Mizumoto et al., 2020). As we have shown, a substantial number of infections were not detected, which would explain some of the difference. Other empirical studies have found usually lower values, while some found similar ranges. While underestimation in other estimates due to low (Fontanet et al., 2020) and imbalanced participation from individuals with and without symptoms (Gudbjartsson et al., 2020) will be part of the explanation, there remains scope for unexplained variation from more complete samples (Lavezzo et al., 2020). In addition, it is possible that PCR-based testing has a lower sensitivity for asymptomatic individuals, which would further increase the proportion of infections that were asymptomatic (Chau et al., 2020).\n\nA sensitivity analysis showed that our results were robust to age-specific probabilities of progressing to asymptomatic infections, as well as other assumptions made in the model, and driven by trends in the data.\n\nOur estimated substantial contribution to transmission from asymptomatic infections confirms a hypothesis from Nishiura after analysing symptomatic cases occurring post-disembarkation (Nishiura, 2020). Our initial reproduction number of 9.3 (7.4\u201310.6) reflects the high transmission environment expected on cruise ships via increased contacts in a confined space, although lower than the value found in an earlier analysis by Rockl\u00f6v et al., 2020.\n\nOur finding of similar contribution to transmission from presymptomatic and symptomatic individuals also matches findings by others (Ganyani et al., 2020; Liu et al., 2020a; He et al., 2020). In line with this, it is clear that having symptoms, or at least being aware of them, is not required in the transmission of SARS-CoV-2 (Ganyani et al., 2020; Liu et al., 2020a; He et al., 2020; Kimball et al., 2020; Wei et al., 2020). Although cough is often considered essential for transmission of respiratory infections (Patterson and Wood, 2019), work in tuberculosis, influenza and other coronaviruses has shown that while a cough may increase spread, it is not a requirement. Transmission from breathing, talking and sneezing is also possible, as well as transmission from contaminated surfaces (van Doremalen et al., 2020; Leung et al., 2020; Asadi et al., 2019; Williams et al., 2020).\n\n### Limitations\n\nAdditional data, in particular on the distribution of asymptomatic infections across crew and passengers, by age and shared quarantine environments would have benefited the model and potentially enabled us to estimate a range for the relative infectiousness of asymptomatic infections. A serological survey of the population, and the date and testing history of individuals who developed symptoms post-disembarkation, would also have likely informed more precise model estimates. In addition, better evidence on performance of the test used, and the associated likelihood of false-negative or false-positive results would help refine estimates. As more data become available, future model analyses of SARS-CoV-2 dynamics in closed populations should further inform the key questions we have looked to address here.\n\nWhilst symptom-agnostic testing provided valuable insights into the pre- and asymptomatic states, such testing was not necessarily random, as was assumed in our primary analysis. Indeed, it is known that individuals were generally screened in reverse-age order (NIID, 2020). Sensitivity analyses considering biased testing still produced non-trivial results for the proportion of infections that were asymptomatic however.\n\nOur model also assumed that the infectiousness of all transmissible states was constant over time. If instead symptomatic individuals are most infectious immediately after symptom onset (He et al., 2020), an estimate of their contribution to transmission would in principle increase. Given the likely heightened awareness of symptoms on board however, such an increase is likely to be marginal. Indeed, since our assumption of an average one-day, exponentially distributed delay between symptom onset and removal from the ship is likely to be an overestimate, a prompter removal distribution would at least in part offset such an increase.\n\nA similar simplification was made by assuming that the probability of an individual progressing to either a presymptomatic or asymptomatic infection was independent of who infected whom. It is possible, however, that transmission from a symptomatic infection may be more likely to ultimately result in another symptomatic infection, owing to a higher infecting dose for example.\n\n### Conclusion\n\nAsymptomatic SARS-CoV-2 infections may contribute substantially to transmission. This is essential to consider for countries when assessing the potential effectiveness of ongoing control measures to contain COVID-19.\n\n## Materials and methods\n\n### Data\n\nData from the Diamond Princess outbreak have been widely reported. (Mizumoto et al., 2020; Nishiura, 2020; NIID, 2020) On January 20th, the Diamond Princess cruise ship departed from Yokohama on a tour of Southeast Asia. A passenger that disembarked on January 25th in Hong Kong subsequently tested positive for SARS-CoV-2 on February 1st, reporting the date of symptom onset as January 23rd.\n\nAfter arriving back in Yokohama on February 3rd, all passengers and crew were screened for symptoms, and those screening positive were then tested. The ship began quarantine on February 5th with all passengers confined to their cabins and crew undertaking essential activities only. At the start of quarantine there were 3711 individuals on board (2666 passengers and 1045 crew) with a median age of 65 (45\u201375 interquartile range).\n\nTesting capacity was limited until February 11th and before then the majority of individuals tested had reported symptoms, referred to here as \u2018symptom-based testing\u2019. All individuals with a positive test at any stage were promptly removed from the ship and isolated. After February 11th, testing capacity increased and the testing of individuals irrespective of symptoms, referred to here as \u2018symptom-agnostic testing\u2019, was scaled up. In total, 314 symptomatic and 320 pre- or asymptomatic infections were reported before disembarkation was principally completed on February 21st.\n\nWe extracted the following data from Mizumoto et al., 2020; Nishiura, 2020; NIID, 2020 (see Figure 1). Firstly, the number of symptomatic cases per day (i.e. those testing positive having reported symptoms) by date of symptom onset, separately for passengers and crew. The date of symptom onset was not available for 115 cases, which we accounted for in our model structure by assuming they were distributed over time proportional to those cases with a reported date of symptom onset (see Appendix 1\u2014table 1). Secondly, we extracted the number of pre- or asymptomatic infections identified per day (i.e. individuals testing positive having not reported symptoms) by date of test. The test date was not available for 35 pre- or asymptomatic individuals between the February 6-14th, which we assumed were distributed over time proportional to the daily number of tests performed amongst individuals not reporting symptoms. No data were available on how many individuals that tested positive in the absence of symptoms became symptomatic after disembarkation. Finally, we extracted the number of tests performed per day amongst individuals not reporting symptoms (see Appendix 1\u2014table 2).\n\n### Model\n\nWe built a deterministic, compartmental model to capture transmission, disease development and the effect of interventions on board the Diamond Princess. Following exposure, after which an individual is assumed to test negative for SARS-CoV-2 for the duration of the latent phase (see Table 2), a proportion of individuals proceed asymptomatically with the remainder becoming presymptomatic. This proportion equates to a universal probability of becoming either presymptomatic or asymptomatic, independent of who infected whom. Individuals in the presymptomatic, asymptomatic or symptomatic state are assumed to test positive and have independent infectiousness, expressed relative to those with symptomatic disease.\n\n**Table 2.**\n Model parameters and priors/values.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Parameter</th>\n      <th>Description</th>\n      <th>Prior/value</th>\n      <th>Source/Notes</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>\u03b2\u00af</td>\n      <td>Overall contact rate (1/days)</td>\n      <td>Estimated: Uniform(0,100)</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>c(cc)</td>\n      <td>Relative initial contact rate between crew/crew</td>\n      <td>Fixed: 1</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>c(pp)</td>\n      <td>Relative initial contact rate between passengers/passengers</td>\n      <td>Estimated: Uniform(0,100)</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>c(pc)</td>\n      <td>Relative initial contact rate between passengers/crew</td>\n      <td>Fixed relative to c(pp)</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>X</td>\n      <td>Ratio: c(pc)c(pp)</td>\n      <td>Fixed: 0.1</td>\n      <td>Assumed. Varied in sensitivity analyses</td>\n    </tr>\n    <tr>\n      <td>b1</td>\n      <td>Percentage reduction in all initial contact rates (%)</td>\n      <td>Estimated: Uniform(0,100)</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>b2</td>\n      <td>Rate of change of all contact rates (1/days)</td>\n      <td>Fixed: 10</td>\n      <td>Assumed. Transitions completed over approximately one day</td>\n    </tr>\n    <tr>\n      <td>\u03c4(pp),\u03c4(pc)</td>\n      <td>Time of transition for contacts between passengers/passengers and passengers/crew (days)</td>\n      <td>Estimated: Uniform(0,32)</td>\n      <td>Assumed to be equal to each other</td>\n    </tr>\n    <tr>\n      <td>\u03c4(cc)</td>\n      <td>Time of transition for contacts between crew/crew (days)</td>\n      <td>Estimated: Uniform(0,32)</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>\u03b8p</td>\n      <td>Relative infectiousness of presymptomatic state</td>\n      <td>Estimated: Uniform(0,1)</td>\n      <td>Relative to symptomatic state</td>\n    </tr>\n    <tr>\n      <td>\u03b8a</td>\n      <td>Relative infectiousness of asymptomatic state</td>\n      <td>Estimated: Uniform(0,1)</td>\n      <td>Relative to symptomatic state</td>\n    </tr>\n    <tr>\n      <td>\u03c7</td>\n      <td>Proportion of infections that proceed to asymptomatic state</td>\n      <td>Estimated: Uniform(0,1)</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>1v</td>\n      <td>Latent period (days)</td>\n      <td>Fixed: 4.3</td>\n      <td>Derived from Backer et al., 2020</td>\n    </tr>\n    <tr>\n      <td>1\u03b3a</td>\n      <td>Mean duration in asymptomatic state (days)</td>\n      <td>Fixed: 5.0</td>\n      <td>Assumed. Sum of mean durations in presymptomatic and symptomatic states. Varied in sensitivity analyses.</td>\n    </tr>\n    <tr>\n      <td>1\u03b3p</td>\n      <td>Mean duration in presymptomatic state (days)</td>\n      <td>Fixed: 2.1</td>\n      <td>Derived from Backer et al., 2020</td>\n    </tr>\n    <tr>\n      <td>1\u03b3s</td>\n      <td>Mean duration in infectious symptomatic state (days).</td>\n      <td>Fixed: 2.9</td>\n      <td>From Liu et al., 2020b Applicable only until quarantine starts on 5th Feb</td>\n    </tr>\n    <tr>\n      <td>1\u03bc</td>\n      <td>Mean delay between onset of symptomatic disease and symptom-based testing and removal (days).</td>\n      <td>Fixed: 1</td>\n      <td>Assumed. Applicable only after quarantine starts on 5th Feb.</td>\n    </tr>\n    <tr>\n      <td>1\u03b7</td>\n      <td>Mean duration of test positivity following recovery (days)</td>\n      <td>Fixed: 7</td>\n      <td>From Woelfel et al., 2020</td>\n    </tr>\n    <tr>\n      <td>\u03d5</td>\n      <td>Proportion of symptomatic cases with a reported onset date</td>\n      <td>Fixed: 0.661 (199/314)</td>\n      <td>From Mizumoto et al., 2020; Nishiura, 2020</td>\n    </tr>\n    <tr>\n      <td>f(t)</td>\n      <td>Rate of symptom-agnostic testing and removal (1/days)</td>\n      <td>Fixed: Calculated</td>\n      <td>From Mizumoto et al., 2020 Calculated using the number of tests administered per day amongst individuals not reporting symptoms (see Appendix 1)</td>\n    </tr>\n    <tr>\n      <td>N(p)</td>\n      <td>Total number of passengers on the ship as at start of quarantine on 5th Feb</td>\n      <td>Fixed: 2666</td>\n      <td>From NIID, 2020</td>\n    </tr>\n    <tr>\n      <td>N(c)</td>\n      <td>Total number of crew on the ship as at start of quarantine on 5th Feb</td>\n      <td>Fixed: 1045</td>\n      <td>From NIID, 2020</td>\n    </tr>\n  </tbody>\n</table>\n\nIndividuals with presymptomatic infection are either detected through symptom-agnostic testing before being removed from the ship, or develop symptomatic disease. Once symptomatic disease starts, individuals can either recover undetected on the ship or, following the start of quarantine on February 5th, be detected through symptom-based testing and removed from the ship with an average delay of one day following symptom onset. We allowed for individuals to test positive after their infectious period for an average of seven days (Woelfel et al., 2020). After this, we assume they would test negative.\n\nIndividuals with asymptomatic infections either recover undetected on the ship, or are detected by symptom-agnostic testing before being removed from the ship. See Appendix 1\u2014figure 1 for a diagram of the model.\n\nSymptom-agnostic testing was assumed to have been random amongst those not reporting symptoms and no delay was introduced between testing and removal of those that tested positive from the ship. As such, the number of people that tested positive through symptom-agnostic testing before being removed from the ship per day was calculated using the number of tests performed per day (Figure 1F) and the proportion of individuals that were either presymptomatic, asymptomatic or recovered but continued to test positive for up to seven days, amongst all individuals on the ship not reporting symptoms. All testing was assumed to have 100% sensitivity and specificity.\n\nCrew and passengers were modelled separately, using stratified data on the number of confirmed symptomatic cases (Figure 1A\u2013B). We estimated the within-crew and within-passenger contact rates through calibration to the data, but assumed that the between-group contact rate was a fixed factor of 1/10th of the within-passenger rate, and explored the impact of this assumption in sensitivity analyses. We enabled the model to capture potential changes in contact behaviour between individuals by representing contact rates as sigmoid functions over time, reflecting any reductions in contact. The dates and extent of the changes were determined solely through model calibration to the data.\n\n### Model parameterisation\n\nWe used data from the literature to inform the natural history of COVID-19, in particular for the duration of presymptomatic and symptomatic phases (see Table 2).\n\n### Model calibration\n\nThe model was calibrated in a Bayesian framework. We fitted to the daily incidence of confirmed symptomatic cases with a known onset date, separately for passengers and crew, assuming a Poisson distribution in the likelihood. We simultaneously fitted to the daily number of confirmed pre- and asymptomatic infections for passengers and crew combined by using the number of tests administered per day and the prevalence of presymptomatic, asymptomatic and post-infection test-positive individuals, assuming a binomial distribution in the likelihood. We used uniform priors for the parameters to be estimated (see Table 2) and sampled the posterior of the model parameters using sequential Markov Chain Monte-Carlo (MCMC). A burn in phase during which the proposal distributions were adapted in both scale and shape to provide optimal sampling efficiency was discarded, leaving chains with 1.5 million iterations. The resultant MCMC chains were visually inspected for convergence.\n\n### Model outputs\n\nModel outputs were calculated by randomly sampling 100,000 parameter values from the posterior distribution. Model trajectories were generated and compared to the data in Figure 1A\u2013C to inspect model fit. The basic reproduction number was also calculated over time using the next-generation matrix (Diekmann et al., 2010), as a measure of ongoing transmission. We estimated the proportion of infections that become asymptomatic and the relative infectiousness of asymptomatic infections using their respective marginal posterior parameter values. Finally, the contribution of asymptomatic infections to overall transmission, as well as the net reproduction number for presymptomatic passengers at the beginning of the outbreak (i.e. the typical number of infections generated by a single presymptomatic individual) were estimated, both overall and by specific ranges of relative infectiousness. We report the median and 95% equal-tailed posterior intervals throughout.\n\n### Sensitivity analyses\n\nWe recalibrated the model for a number of alternative scenarios to assess model sensitivity. Firstly, we assessed the impact of removing the asymptomatic phase (i.e. 100% of infections progressed to symptomatic disease). Secondly, we explored the impact of assuming different values for the relative mixing between crew and passengers as well as shorter and longer durations of asymptomatic infection. Thirdly, we considered the impact of biased symptom-agnostic testing. Specifically, we first assumed that those that would test positive were 50% more likely to be tested, before then assuming that those that would test negative were 50% more likely to be tested, both compared to purely random testing as per the primary analysis. We also explored the impact of assuming a different proportion of asymptomatic infections for crew and passengers based on their distinct median ages (36 years for crew, 69 years for passengers), using a fixed ratio for the two proportions taken from the results of a model fitted to epidemic data in six countries by Davies et al., 2020. In addition, we explored a longer latent period given the relatively high age in our population (Jiang et al., 2020). Finally, we recalibrated the model assuming the 35 confirmed pre/asymptomatic cases where a test date was not available were allocated to the last feasible day (13th Feb) instead of proportionate to the overall number of tests over the period February 6-14th(see Appendix 2 for further details).\n\nAll analyses were conducted using R version 3.5.0 (R Development Core Team, 2014). Bayesian calibration was performed in LibBi (Murray, 2013) using RBi (Funk, 2019) as an interface. Replication data and analyses scripts are available on GitHub at https://github.com/thimotei/covid19_asymptomatic_trans (Emery et al., 2020; copy archived at https://github.com/elifesciences-publications/covid19_asymptomatic_trans).\n\n### Role of funding source\n\nThe funder of the study had no role in study design, data collection, data analysis, data interpretation, or writing of the report. The corresponding author had full access to all the data in the study and had final responsibility for the decision to submit for publication.\n",
+      "created_at": "2025-12-02T19:26:54.567578Z"
+    },
+    {
+      "id": "929979df-8a64-4654-a873-5c715b8f03e6",
+      "submission_id": "5b106689-8d1f-4fba-9a90-c5ec90a003d0",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Marc Lipsitch, Harvard TH Chan School of Public Health United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.58699.sa1](https://doi.org/10.7554/eLife.58699.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nThis is a very detailed model-based workup of the Diamond Princess outbreak that is thoughtfully done, extracts tremendous insight from a messy dataset, and provides a good example of how rich such outbreak workups can be in elucidating features of transmission.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"The contribution of asymptomatic SARS-CoV-2 to transmission \u2013 a modelling analysis of the Diamond Princess outbreak\" for consideration by eLife. Your article has been reviewed by two peer reviewers, including Marc Lipsitch as the Reviewing Editor and Reviewer #1, and the evaluation has been overseen by Senior Editor.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nWe would like to draw your attention to changes in our revision policy that we have made in response to COVID-19 (https://elifesciences.org/articles/57162). Specifically, we are asking editors to accept without delay manuscripts, like yours, that they judge can stand as eLife papers without additional data, even if they feel that they would make the manuscript stronger. Thus the revisions requested below mainly address clarity and presentation (one sensitivity analysis requested in point 7 and one optionally in point 6).\n\nWe thank the authors for their patience during the review process, during which expert reviewers have been understandably rather overstretched.\n\nSummary:\n\nExcellent paper providing careful analysis of valuable data on asymptomatic transmission. [From reviewer 3]: This article is a very important analysis that provides a result of immediate interest to the field as well as to policymakers dealing with the pandemic. The analysis is conducted well and the manuscript describes the approach well, as well as providing several sensitivity analyses to demonstrate the robustness of the results. I have a few suggestions for pieces of the analysis to clarify and potential sensitivity analyses to add, but I believe this work should be published soon as it is important information to contribute to the discussion in the field.\n\nEssential revisions:\n\n1) I wish some more intuition (or any) could be provided for why infectiousness of asymptomatics is not identified but proportion asymptomatic so strongly is and contribution to transmission somewhat is.\n\n2) I wonder how sensitive the results are to the assumptions about the flat contagiousness over the natural history. If symptomatics were most infectious during their early days of symptoms (as viral load data suggest) then their removal would do less to reduce their infectiousness and they would contribute more to transmission (I think). Some sensitivity analysis to this would be helpful.\n\n3) How well supported by data is the 1 day mean (and exponential distribution, which is probably wrong) of time to removal post-test+? Does changing this to an immediate end to infectiousness (presumably people are very careful around known positives) change things?\n\n4) The conclusions are critically conditional on the setting. This needs to be emphasized in a whole paragraph of the Discussion, including how they might change in a setting of less intense testing and removal. For example if symptomatic test+ people are removed very fast (on average) this will increase the proportion of transmission by asymptomatics, at least in a period where only symptomatics are tested. So it is important to avoid the situation where this high proportion of contribution to transmission becomes interpreted as a constant of nature rather than a property of transmission on the DP.\n\n5) I would like to see more explanation of why it is possible to id the % asymptomatic, and their contribution to transmission, but not a quantity that is related to the ratio of these: their relative infectiousness.\n\n6) It appears that asymptomatic infections occur independently (i.e., an individual infected by someone who is asymptomatic is no more or less likely to be asymptomatic themselves). Is this correct? If so, it is worth mentioning the assumption and possible consequences of it in the Materials and methods and Discussion. This could be an additional sensitivity analysis as well.\n\n7) It would be helpful to explain the assumptions about the testing regime in the main text. Sensitivity analyses should also consider if the testing is not truly random sampling of non-symptomatic individuals. E.g., what if individuals with infection are more likely to get tested (low-level symptoms they do not report)? Or what if individuals with infection are less likely to get tested (health-seeking behavior)? Since it relates directly to the number of asymptomatic infections in the model, it might have a larger effect than some of the other sensitivity tests.\n\n8) If possible, it would be good to see the percentage of infections that are by pre and asymptomatic individuals by date, to see how it changes with the progression of the epidemic and the progression to symptoms within individuals.\n",
+      "created_at": "2025-12-02T19:26:54.567578Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T19:26:54.567578Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T19:26:54.567578Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "29f29b46-7907-4d37-a44d-6302f72c8e49",
+      "content_id": "e6e895c1-23e1-48df-93da-85e4489d3344",
+      "claim_id": "C1",
+      "claim": "74% (70\u201378%, 95% posterior interval) of SARS-CoV-2 infections on the Diamond Princess proceeded asymptomatically.",
+      "claim_type": "EXPLICIT",
+      "source": "The model estimated that 74% (70\u201378%, 95% posterior interval) of infections proceeded asymptomatically.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by model estimates calibrated to data from the Diamond Princess outbreak, including disease onset dates and test frequency.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:26:54.567578Z"
+    },
+    {
+      "id": "9c4227ff-a081-4d51-9bec-5b9d8386f81c",
+      "content_id": "e6e895c1-23e1-48df-93da-85e4489d3344",
+      "claim_id": "C2",
+      "claim": "53% (51\u201356%) of infections on the Diamond Princess remained undetected despite intense testing.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite intense testing, 53% (51\u201356%) of infections remained undetected, most of them asymptomatic.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on model estimates using data from the Diamond Princess outbreak.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:26:54.567578Z"
+    },
+    {
+      "id": "5c7190f2-1ad8-4e39-931d-a3b36fc23d34",
+      "content_id": "e6e895c1-23e1-48df-93da-85e4489d3344",
+      "claim_id": "C3",
+      "claim": "Most undetected infections on the Diamond Princess were asymptomatic.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite intense testing, 53% (51\u201356%) of infections remained undetected, most of them asymptomatic.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by model estimates analyzing detected versus undetected infections.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:26:54.567578Z"
+    },
+    {
+      "id": "fb26332f-c491-4e50-a3ff-6b91d4f96eca",
+      "content_id": "e6e895c1-23e1-48df-93da-85e4489d3344",
+      "claim_id": "C4",
+      "claim": "Asymptomatic individuals were the source for 69% (20\u201385%) of all infections on the Diamond Princess.",
+      "claim_type": "EXPLICIT",
+      "source": "Asymptomatic individuals were the source for 69% (20\u201385%) of all infections.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on model estimates of transmission contributions from different infection states.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:26:54.567578Z"
+    },
+    {
+      "id": "5aac29c4-48a0-439f-8ace-8a8136345737",
+      "content_id": "e6e895c1-23e1-48df-93da-85e4489d3344",
+      "claim_id": "C5",
+      "claim": "Low relative infectiousness of asymptomatic infections (0\u201325%) would require a net reproduction number for presymptomatic and symptomatic individuals of at least 15.",
+      "claim_type": "EXPLICIT",
+      "source": "The data did not allow identification of the infectiousness of asymptomatic infections, however low ranges (0\u201325%) required a net reproduction number for individuals progressing through presymptomatic and symptomatic stages of at least 15.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on model inference exploring trade-offs between relative infectiousness and reproduction numbers.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:26:54.567578Z"
+    },
+    {
+      "id": "36d04bb8-d699-41ce-9d27-1dea57b58de4",
+      "content_id": "e6e895c1-23e1-48df-93da-85e4489d3344",
+      "claim_id": "C6",
+      "claim": "The data from the Diamond Princess did not allow identification of the infectiousness of asymptomatic infections.",
+      "claim_type": "EXPLICIT",
+      "source": "The data did not allow identification of the infectiousness of asymptomatic infections, however low ranges (0\u201325%) required a net reproduction number for individuals progressing through presymptomatic and symptomatic stages of at least 15.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on the inability of the model to identify this parameter from the available data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:26:54.567578Z"
+    },
+    {
+      "id": "6456ed4e-1aa6-4bea-ac15-123094b48651",
+      "content_id": "e6e895c1-23e1-48df-93da-85e4489d3344",
+      "claim_id": "C7",
+      "claim": "Asymptomatic SARS-CoV-2 infections may contribute substantially to transmission.",
+      "claim_type": "EXPLICIT",
+      "source": "Asymptomatic SARS-CoV-2 infections may contribute substantially to transmission.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by model estimates showing high contribution of asymptomatic infections to overall transmission.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:26:54.567578Z"
+    },
+    {
+      "id": "ce713dc2-cd07-4d53-8264-c132c04c6aff",
+      "content_id": "e6e895c1-23e1-48df-93da-85e4489d3344",
+      "claim_id": "C8",
+      "claim": "Control measures need to look beyond symptomatic cases to understand and address ongoing SARS-CoV-2 transmission.",
+      "claim_type": "EXPLICIT",
+      "source": "Control measures, and models projecting their potential impact, need to look beyond the symptomatic cases if they are to understand and address ongoing transmission.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an inference based on the finding that asymptomatic infections contribute substantially to transmission.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:26:54.567578Z"
+    },
+    {
+      "id": "e0dea2eb-810a-420f-a8e0-00e63501aac8",
+      "content_id": "e6e895c1-23e1-48df-93da-85e4489d3344",
+      "claim_id": "C9",
+      "claim": "The number of individuals infected with SARS-CoV-2 outstrips the number of reported cases.",
+      "claim_type": "EXPLICIT",
+      "source": "The ongoing COVID-19 pandemic has spread rapidly across the globe, and the number of individuals infected with SARS-CoV-2 outstrips the number of reported cases (Wang et al., 2020; Golding et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to other studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:26:54.567578Z"
+    },
+    {
+      "id": "0b31c75d-3558-499a-9098-4ef7c5aa281c",
+      "content_id": "e6e895c1-23e1-48df-93da-85e4489d3344",
+      "claim_id": "C10",
+      "claim": "A substantial proportion of SARS-CoV-2 cases proceed asymptomatically.",
+      "claim_type": "EXPLICIT",
+      "source": "One key reason for this may be that a substantial proportion of cases proceed asymptomatically, that is, they either do not experience or are not aware of symptoms throughout their infection but may still transmit to others.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is presented as a hypothesis to explain why infections outnumber reported cases.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:26:54.567578Z"
+    },
+    {
+      "id": "23a4011a-61c8-4077-90e6-173f7e7923c1",
+      "content_id": "e6e895c1-23e1-48df-93da-85e4489d3344",
+      "claim_id": "C11",
+      "claim": "Asymptomatic infections differ from presymptomatic infections in that asymptomatic individuals do not experience or are not aware of symptoms throughout their infection.",
+      "claim_type": "EXPLICIT",
+      "source": "In this sense, asymptomatic infections differ from presymptomatic infections, which describes the portion of the incubation period before symptoms develop during which onward transmission is possible.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a definitional statement based on established understanding of disease states.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:26:54.567578Z"
+    },
+    {
+      "id": "e353b24b-a39c-4a5a-bb74-ebcb0fbf7060",
+      "content_id": "e6e895c1-23e1-48df-93da-85e4489d3344",
+      "claim_id": "C12",
+      "claim": "Presymptomatic infections describe the portion of the incubation period before symptoms develop during which onward transmission is possible.",
+      "claim_type": "EXPLICIT",
+      "source": "In this sense, asymptomatic infections differ from presymptomatic infections, which describes the portion of the incubation period before symptoms develop during which onward transmission is possible.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a definitional statement based on established understanding of disease states.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:26:54.567578Z"
+    },
+    {
+      "id": "35001515-6d32-4ec6-89db-0afe5a50fbe1",
+      "content_id": "e6e895c1-23e1-48df-93da-85e4489d3344",
+      "claim_id": "C13",
+      "claim": "Pre- and asymptomatic individuals can contribute to ongoing SARS-CoV-2 transmission.",
+      "claim_type": "EXPLICIT",
+      "source": "While pre- and asymptomatic individuals do not directly contribute to morbidity or mortality in an outbreak, they can contribute to ongoing transmission, as has been shown for COVID-19 (Rothe et al., 2020; Chen et al., 2020; Ganyani et al., 2020) and other diseases (Dean et al., 2016; Slater et al., 2019; Esmail et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to studies on COVID-19 and other diseases.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:26:54.567578Z"
+    },
+    {
+      "id": "1fd73563-de11-4266-9259-c5a732e6dcb8",
+      "content_id": "e6e895c1-23e1-48df-93da-85e4489d3344",
+      "claim_id": "C14",
+      "claim": "Purely symptom-based interventions will not interrupt transmission from asymptomatic individuals.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, purely symptom-based interventions (e.g., self-isolation upon onset of disease) will not interrupt transmission from asymptomatic individuals and hence may be insufficient for outbreak control if a substantial proportion of transmission originates from pre- and asymptomatic infections (Chen et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a logical inference about the limitations of symptom-based interventions, supported by citation.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:26:54.567578Z"
+    },
+    {
+      "id": "20cbd0fb-37cd-46bc-abed-f8b3ff1d7975",
+      "content_id": "e6e895c1-23e1-48df-93da-85e4489d3344",
+      "claim_id": "C15",
+      "claim": "Symptom-based interventions may be insufficient for outbreak control if a substantial proportion of transmission originates from pre- and asymptomatic infections.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, purely symptom-based interventions (e.g., self-isolation upon onset of disease) will not interrupt transmission from asymptomatic individuals and hence may be insufficient for outbreak control if a substantial proportion of transmission originates from pre- and asymptomatic infections (Chen et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a logical inference supported by citation.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:26:54.567578Z"
+    },
+    {
+      "id": "ce1b6a17-7273-4bfc-8d30-011d00eec043",
+      "content_id": "e6e895c1-23e1-48df-93da-85e4489d3344",
+      "claim_id": "C16",
+      "claim": "The proportion of SARS-CoV-2 infections that proceed asymptomatically is likely non-trivial.",
+      "claim_type": "EXPLICIT",
+      "source": "Evidence so far have suggested that the proportion of SARS-CoV-2 infections that proceed asymptomatically is likely non-trivial (Li et al., 2020; Liu et al., 2020a; He et al., 2020; Mizumoto et al., 2020; Lavezzo et al., 2020; Bendavid et al., 2020), although empirical data are often difficult to interpret due to opportunistic sampling frames (Nishiura et al., 2020) combined with low (Fontanet et al., 2020) and imbalanced participation from individuals with and without symptoms (Gudbjartsson et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by multiple citations to studies on asymptomatic infections.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:26:54.567578Z"
+    },
+    {
+      "id": "9660bc72-734a-4ad3-864e-e87a4fc2723d",
+      "content_id": "e6e895c1-23e1-48df-93da-85e4489d3344",
+      "claim_id": "C17",
+      "claim": "Empirical data on asymptomatic SARS-CoV-2 infections are often difficult to interpret due to opportunistic sampling frames combined with low and imbalanced participation from individuals with and without symptoms.",
+      "claim_type": "EXPLICIT",
+      "source": "Evidence so far have suggested that the proportion of SARS-CoV-2 infections that proceed asymptomatically is likely non-trivial (Li et al., 2020; Liu et al., 2020a; He et al., 2020; Mizumoto et al., 2020; Lavezzo et al., 2020; Bendavid et al., 2020), although empirical data are often difficult to interpret due to opportunistic sampling frames (Nishiura et al., 2020) combined with low (Fontanet et al., 2020) and imbalanced participation from individuals with and without symptoms (Gudbjartsson et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to studies discussing methodological challenges.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:26:54.567578Z"
+    },
+    {
+      "id": "73b2373d-4993-4a3e-a79b-46271d4a83eb",
+      "content_id": "e6e895c1-23e1-48df-93da-85e4489d3344",
+      "claim_id": "C18",
+      "claim": "Transmission from asymptomatic SARS-CoV-2 individuals can occur.",
+      "claim_type": "EXPLICIT",
+      "source": "While it is likely that transmission from asymptomatic individuals can occur, (Bai et al., 2020) quantitative estimates are effectively absent.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to a study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:26:54.567578Z"
+    },
+    {
+      "id": "64273558-c343-41f5-9d42-019a7659bbcf",
+      "content_id": "e6e895c1-23e1-48df-93da-85e4489d3344",
+      "claim_id": "C19",
+      "claim": "Quantitative estimates of transmission from asymptomatic SARS-CoV-2 individuals are effectively absent.",
+      "claim_type": "EXPLICIT",
+      "source": "While it is likely that transmission from asymptomatic individuals can occur, (Bai et al., 2020) quantitative estimates are effectively absent.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an assessment of the state of evidence in the literature.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:26:54.567578Z"
+    },
+    {
+      "id": "65efe830-34fd-44bd-af70-eb3bccba7c6a",
+      "content_id": "e6e895c1-23e1-48df-93da-85e4489d3344",
+      "claim_id": "C20",
+      "claim": "In the presence of active case-finding, presymptomatic infections and symptomatic cases contribute almost equally to overall SARS-CoV-2 transmission.",
+      "claim_type": "EXPLICIT",
+      "source": "What is known is that in the presence of active case-finding, presymptomatic infections and symptomatic cases contribute almost equally to overall transmission, as both modelling and empirical studies have shown (Liu et al., 2020a; He et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to modeling and empirical studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:26:54.567578Z"
+    },
+    {
+      "id": "46a0aa86-a01c-4226-8a1c-e67d83ba106f",
+      "content_id": "e6e895c1-23e1-48df-93da-85e4489d3344",
+      "claim_id": "C21",
+      "claim": "The model reflected the data well, including the differently timed peaks for confirmed symptomatic cases for crew and passengers.",
+      "claim_type": "EXPLICIT",
+      "source": "The model reflected the data well (Figure 1), including the differently timed peaks for confirmed symptomatic cases for crew (Figure 1A) and passengers (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by comparison of model outputs to data shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:26:54.567578Z"
+    },
+    {
+      "id": "7cda29d5-30c0-4947-9a8e-91478b4a6a83",
+      "content_id": "e6e895c1-23e1-48df-93da-85e4489d3344",
+      "claim_id": "C22",
+      "claim": "The model matched the expected impact of quarantine of passengers on transmission from February 4th as illustrated by the drop in reproductive number.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the model matched the expected impact of quarantine of passengers on transmission from February 4th as illustrated by the drop in reproductive number (Figure 1E), followed by a later drop in transmission after February 10th, which was driven by a change in contact pattern in crew.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by model outputs shown in Figure 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:26:54.567578Z"
+    },
+    {
+      "id": "d6b20e04-500e-46bb-b729-0d65f98524ee",
+      "content_id": "e6e895c1-23e1-48df-93da-85e4489d3344",
+      "claim_id": "C23",
+      "claim": "A drop in transmission after February 10th was driven by a change in contact pattern in crew.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the model matched the expected impact of quarantine of passengers on transmission from February 4th as illustrated by the drop in reproductive number (Figure 1E), followed by a later drop in transmission after February 10th, which was driven by a change in contact pattern in crew.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on model inference about the cause of the observed drop in transmission.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:26:54.567578Z"
+    },
+    {
+      "id": "bfcf1d84-946a-456d-8da2-ce52ccba113b",
+      "content_id": "e6e895c1-23e1-48df-93da-85e4489d3344",
+      "claim_id": "C24",
+      "claim": "In total 1304 (1,198\u20131,416) individuals were infected on the Diamond Princess.",
+      "claim_type": "EXPLICIT",
+      "source": "As a result, our model estimated that in total 1304 (1,198\u20131,416) individuals were infected, representing 35% (32\u201338%) of the initial total population on the Diamond Princess.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on model estimates.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:26:54.567578Z"
+    },
+    {
+      "id": "b1fdee71-b0cd-497c-8497-c884b3db8f8d",
+      "content_id": "e6e895c1-23e1-48df-93da-85e4489d3344",
+      "claim_id": "C25",
+      "claim": "35% (32\u201338%) of the initial total population on the Diamond Princess were infected.",
+      "claim_type": "EXPLICIT",
+      "source": "As a result, our model estimated that in total 1304 (1,198\u20131,416) individuals were infected, representing 35% (32\u201338%) of the initial total population on the Diamond Princess.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on model estimates.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:26:54.567578Z"
+    },
+    {
+      "id": "c2f9db8a-8e27-4678-93c9-bd6b9f7a3e77",
+      "content_id": "e6e895c1-23e1-48df-93da-85e4489d3344",
+      "claim_id": "C26",
+      "claim": "Over half of infections on the Diamond Princess had not been detected at disembarkation on February 21st (53%, 51\u201356%).",
+      "claim_type": "EXPLICIT",
+      "source": "Over half of these infections had not been detected at disembarkation on February 21 st (53%, 51\u201356%) consisting of infected individuals who had recovered and became test negative before they were tested (37%, 34\u201340%), were yet to be tested (15%, 13\u201316%), or had recently been exposed and were not yet detectable at that point (1%, 1\u20133%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on model estimates.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:26:54.567578Z"
+    },
+    {
+      "id": "b4b19d30-c0fe-4317-ae53-0c7483f35c04",
+      "content_id": "e6e895c1-23e1-48df-93da-85e4489d3344",
+      "claim_id": "C27",
+      "claim": "37% (34\u201340%) of infections on the Diamond Princess consisted of individuals who had recovered and became test negative before they were tested.",
+      "claim_type": "EXPLICIT",
+      "source": "Over half of these infections had not been detected at disembarkation on February 21 st (53%, 51\u201356%) consisting of infected individuals who had recovered and became test negative before they were tested (37%, 34\u201340%), were yet to be tested (15%, 13\u201316%), or had recently been exposed and were not yet detectable at that point (1%, 1\u20133%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on model estimates.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:26:54.567578Z"
+    },
+    {
+      "id": "c793bed5-b3c6-4c89-b665-9f190f530e7f",
+      "content_id": "e6e895c1-23e1-48df-93da-85e4489d3344",
+      "claim_id": "C28",
+      "claim": "15% (13\u201316%) of infections on the Diamond Princess were yet to be tested at disembarkation.",
+      "claim_type": "EXPLICIT",
+      "source": "Over half of these infections had not been detected at disembarkation on February 21 st (53%, 51\u201356%) consisting of infected individuals who had recovered and became test negative before they were tested (37%, 34\u201340%), were yet to be tested (15%, 13\u201316%), or had recently been exposed and were not yet detectable at that point (1%, 1\u20133%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on model estimates.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:26:54.567578Z"
+    },
+    {
+      "id": "8c1cf50d-4dfd-4ead-9f4f-1546390155ce",
+      "content_id": "e6e895c1-23e1-48df-93da-85e4489d3344",
+      "claim_id": "C29",
+      "claim": "1% (1\u20133%) of infections on the Diamond Princess had recently been exposed and were not yet detectable at disembarkation.",
+      "claim_type": "EXPLICIT",
+      "source": "Over half of these infections had not been detected at disembarkation on February 21 st (53%, 51\u201356%) consisting of infected individuals who had recovered and became test negative before they were tested (37%, 34\u201340%), were yet to be tested (15%, 13\u201316%), or had recently been exposed and were not yet detectable at that point (1%, 1\u20133%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on model estimates.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:26:54.567578Z"
+    },
+    {
+      "id": "9ab23df4-20fb-4848-be58-ab3ac0b2faa2",
+      "content_id": "e6e895c1-23e1-48df-93da-85e4489d3344",
+      "claim_id": "C30",
+      "claim": "Nearly two-thirds of pre- and asymptomatic infections (67%, 66\u201368%) went undetected up until disembarkation.",
+      "claim_type": "EXPLICIT",
+      "source": "Nearly two-thirds of pre- and asymptomatic infections (67%, 66\u201368%) and 8% (6\u20139%) of symptomatic infections went undetected up until disembarkation (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on model estimates shown in Figure 2C.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:26:54.567578Z"
+    },
+    {
+      "id": "bc8f9bef-047e-418a-b57a-a35875b552a2",
+      "content_id": "e6e895c1-23e1-48df-93da-85e4489d3344",
+      "claim_id": "C31",
+      "claim": "8% (6\u20139%) of symptomatic infections went undetected up until disembarkation.",
+      "claim_type": "EXPLICIT",
+      "source": "Nearly two-thirds of pre- and asymptomatic infections (67%, 66\u201368%) and 8% (6\u20139%) of symptomatic infections went undetected up until disembarkation (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on model estimates shown in Figure 2C.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:26:54.567578Z"
+    },
+    {
+      "id": "d28485bd-9fa1-45c2-a237-a0cac191906a",
+      "content_id": "e6e895c1-23e1-48df-93da-85e4489d3344",
+      "claim_id": "C32",
+      "claim": "The model was unable to identify the relative infectiousness of asymptomatic infections from the data.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to the strong identifiability of the proportion of infections that were asymptomatic, the model was unable to identify the relative infectiousness of asymptomatic infections from the data, that is, a uniform prior was effectively returned (see Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on model calibration results shown in Figure 2B.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:26:54.567578Z"
+    },
+    {
+      "id": "ecab0083-e78a-40c4-a607-9d48d99068a5",
+      "content_id": "e6e895c1-23e1-48df-93da-85e4489d3344",
+      "claim_id": "C33",
+      "claim": "The relative infectiousness of asymptomatic infections was degenerate with the overall contact rate.",
+      "claim_type": "EXPLICIT",
+      "source": "This is because the relative infectiousness of asymptomatic infections was degenerate with the overall contact rate, meaning the data were consistent with either relatively frequent contact with less infectious individuals or relatively infrequent contact with more infectious individuals (see Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on model analysis shown in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:26:54.567578Z"
+    },
+    {
+      "id": "73c9ba9e-8b26-4fd7-b3fa-8f8fafa1f2b7",
+      "content_id": "e6e895c1-23e1-48df-93da-85e4489d3344",
+      "claim_id": "C34",
+      "claim": "The estimated proportion of transmission due to asymptomatic infections is 69%, with a wide confidence interval (20\u201385%) and an interquartile range of 56\u201376%.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite this, the estimated proportion of transmission due to asymptomatic infections is 69%, with a wide confidence interval (20\u201385%) and an interquartile range of 56\u201376% (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on model estimates shown in Figure 2D.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:26:54.567578Z"
+    },
+    {
+      "id": "00d7152a-0e0d-4fbf-a518-566bdec65f55",
+      "content_id": "e6e895c1-23e1-48df-93da-85e4489d3344",
+      "claim_id": "C35",
+      "claim": "Only a modest relative infectiousness is required to produce a non-trivial contribution to transmission from asymptomatic infections.",
+      "claim_type": "EXPLICIT",
+      "source": "The result is that only a modest relative infectiousness is required to produce a non-trivial contribution to transmission.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on model analysis of the relationship between relative infectiousness and contribution to transmission.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:26:54.567578Z"
+    },
+    {
+      "id": "8bb9239e-b900-434d-a5fe-e501e10ecec4",
+      "content_id": "e6e895c1-23e1-48df-93da-85e4489d3344",
+      "claim_id": "C36",
+      "claim": "The relative infectiousness of presymptomatics was unidentifiable.",
+      "claim_type": "EXPLICIT",
+      "source": "The relative infectiousness of presymptomatics was also unidentifiable, however, in all scenarios the remaining transmission was equally distributed between the presymptomatic (14%, 1\u201344%) and symptomatic (17%, 11\u201342%) individuals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on model calibration results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:26:54.567578Z"
+    },
+    {
+      "id": "a1be3277-dce5-4f47-aa8b-8571b8288c73",
+      "content_id": "e6e895c1-23e1-48df-93da-85e4489d3344",
+      "claim_id": "C37",
+      "claim": "In all scenarios the remaining transmission was equally distributed between the presymptomatic (14%, 1\u201344%) and symptomatic (17%, 11\u201342%) individuals.",
+      "claim_type": "EXPLICIT",
+      "source": "The relative infectiousness of presymptomatics was also unidentifiable, however, in all scenarios the remaining transmission was equally distributed between the presymptomatic (14%, 1\u201344%) and symptomatic (17%, 11\u201342%) individuals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on model estimates.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:26:54.567578Z"
+    },
+    {
+      "id": "34b7d1bc-8615-4930-8707-eaaa80893f19",
+      "content_id": "e6e895c1-23e1-48df-93da-85e4489d3344",
+      "claim_id": "C38",
+      "claim": "Low relative infectiousness of asymptomatic infections (0\u201325% compared to symptomatic individuals) would need to be compensated by a net reproduction number for individuals during their presymptomatic and symptomatic phase of 15.5\u201329.1.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that low relative infectiousness of asymptomatic infections (0\u201325% compared to symptomatic individuals) would need to be compensated by a net reproduction number for individuals during their presymptomatic and symptomatic phase of 15.5\u201329.1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on model analysis of marginal posterior estimates shown in Table 1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:26:54.567578Z"
+    },
+    {
+      "id": "7d72ab1b-203b-4562-8e75-7ee4f9404573",
+      "content_id": "e6e895c1-23e1-48df-93da-85e4489d3344",
+      "claim_id": "C39",
+      "claim": "Without an asymptomatic state the model was unable to reconstruct the dynamics of the outbreak.",
+      "claim_type": "EXPLICIT",
+      "source": "Without an asymptomatic state the model was unable to reconstruct the dynamics of the outbreak (Appendix 2\u2014figures 1\u20133, Deviance Information Criterion (DIC) = 974 vs 329 for the primary analysis).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on sensitivity analysis comparing model fit with and without asymptomatic state.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:26:54.567578Z"
+    },
+    {
+      "id": "c5eb7bd8-83cb-4b46-be64-8e9bf0cd7eae",
+      "content_id": "e6e895c1-23e1-48df-93da-85e4489d3344",
+      "claim_id": "C40",
+      "claim": "Adjusting the relative value for mixing between crew and passengers did not have a qualitative effect on the results.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, adjusting the relative value for mixing between crew and passengers did not have a qualitative effect on the results (Appendix 2\u2014figures 4\u201311).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on sensitivity analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:26:54.567578Z"
+    },
+    {
+      "id": "07553403-2646-49ce-aa21-108ff9ba40ea",
+      "content_id": "e6e895c1-23e1-48df-93da-85e4489d3344",
+      "claim_id": "C41",
+      "claim": "Biased symptom-agnostic testing had a greater impact on the results than adjusting mixing between crew and passengers.",
+      "claim_type": "EXPLICIT",
+      "source": "Biased symptom-agnostic testing had a greater impact on the results.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on sensitivity analysis comparing different scenarios.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:26:54.567578Z"
+    },
+    {
+      "id": "6eb2ef6d-8aee-48e7-87c3-157513232ef3",
+      "content_id": "e6e895c1-23e1-48df-93da-85e4489d3344",
+      "claim_id": "C42",
+      "claim": "When those testing negative had a 50% higher probability of being tested, the proportion of infections that were asymptomatic was 84% (82\u201387%).",
+      "claim_type": "EXPLICIT",
+      "source": "Those testing negative having a 50% higher probability of being tested compared to the primary analysis led to a corresponding greater proportion of infections that were asymptomatic (84%, 82\u201387%), total number infected (2,097, 1,914-2,292) and contribution of asymptomatics to transmission (78%, 36\u201391%) (see Appendix 2\u2014figures 12\u201315).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on sensitivity analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:26:54.567578Z"
+    },
+    {
+      "id": "9a9ac882-a059-4ee9-a90d-f4edc0cea8e1",
+      "content_id": "e6e895c1-23e1-48df-93da-85e4489d3344",
+      "claim_id": "C43",
+      "claim": "When those testing positive had a 50% higher probability of being tested, the proportion of infections that were asymptomatic was 66% (61\u201371%).",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, those testing positive having a 50% higher probability of being tested compared to the primary analysis led to a corresponding smaller proportion of infections that were asymptomatic (66%, 61\u201371%), total number infected (1,051, 965-1,161) and contribution of asymptomatics to transmission (59%, 9\u201379%) (see Appendix 2\u2014figures 16\u201319).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on sensitivity analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:26:54.567578Z"
+    },
+    {
+      "id": "087be96b-fb7a-439e-b47e-6aafccf2b5f2",
+      "content_id": "e6e895c1-23e1-48df-93da-85e4489d3344",
+      "claim_id": "C44",
+      "claim": "When assuming a fixed age-specific ratio for the proportion of infections that progress asymptomatically, the proportion asymptomatic was 42% (41\u201344%) for passengers and 89% (85\u201391%) for crew.",
+      "claim_type": "EXPLICIT",
+      "source": "When we assumed a fixed age-specific ratio for the proportion of infections that progress asymptomatically, the model was able to fit the data, although the number of correlated parameters was high. Overall results were similar to the main analysis, with a proportion asymptomatic of 42% (41\u201344%) and 89% (85\u201391%) for passengers and crew, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on sensitivity analysis with age-specific assumptions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:26:54.567578Z"
+    },
+    {
+      "id": "10a79b96-ebb8-48b0-b94a-1e16998d8054",
+      "content_id": "e6e895c1-23e1-48df-93da-85e4489d3344",
+      "claim_id": "C45",
+      "claim": "A longer latent period provided a poorer fit to the data (DIC = 361).",
+      "claim_type": "EXPLICIT",
+      "source": "A longer latent period provided a poorer fit to the data (DIC = 361) (Appendix 2\u2014figures 24\u201327).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on sensitivity analysis comparing model fit.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:26:54.567578Z"
+    },
+    {
+      "id": "993dff74-3823-4228-9413-5e8c55b1ff48",
+      "content_id": "e6e895c1-23e1-48df-93da-85e4489d3344",
+      "claim_id": "C46",
+      "claim": "Adjusting the duration of the asymptomatic state to half or double the sum of the presymptomatic and symptomatic states made little qualitative difference to the results.",
+      "claim_type": "EXPLICIT",
+      "source": "Adjusting the duration of the asymptomatic state to half or double the sum of the presymptomatic and symptomatic states made little qualitative difference to the results (Appendix 2\u2014figures 28\u201335), although the shorter asymptomatic period was a marginally poorer fit to the data (DIC = 338).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on sensitivity analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:26:54.567578Z"
+    },
+    {
+      "id": "6dfbde6c-ccfa-4413-8768-0aa6eefa55eb",
+      "content_id": "e6e895c1-23e1-48df-93da-85e4489d3344",
+      "claim_id": "C47",
+      "claim": "The estimated proportion of asymptomatic infections in this outbreak is higher than previous studies which relied on diagnosed cases only.",
+      "claim_type": "EXPLICIT",
+      "source": "Our estimated proportion of asymptomatic infections in this outbreak is higher than previous studies, which relied on diagnosed cases only (Mizumoto et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim compares the current study's results to previous studies, supported by citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:26:54.567578Z"
+    },
+    {
+      "id": "309872e1-7794-4053-863b-aa917b768a66",
+      "content_id": "e6e895c1-23e1-48df-93da-85e4489d3344",
+      "claim_id": "C48",
+      "claim": "A substantial number of infections were not detected on the Diamond Princess, which would explain some of the difference from previous studies.",
+      "claim_type": "EXPLICIT",
+      "source": "As we have shown, a substantial number of infections were not detected, which would explain some of the difference.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an inference based on the study's findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:26:54.567578Z"
+    },
+    {
+      "id": "2b4e9bab-07f6-49a9-943f-5975c323b92d",
+      "content_id": "e6e895c1-23e1-48df-93da-85e4489d3344",
+      "claim_id": "C49",
+      "claim": "It is possible that PCR-based testing has a lower sensitivity for asymptomatic individuals.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, it is possible that PCR-based testing has a lower sensitivity for asymptomatic individuals, which would further increase the proportion of infections that were asymptomatic (Chau et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a speculation supported by citation.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:26:54.567578Z"
+    },
+    {
+      "id": "d22ca553-393e-4491-96e0-7e51cb12e0f9",
+      "content_id": "e6e895c1-23e1-48df-93da-85e4489d3344",
+      "claim_id": "C50",
+      "claim": "The results were robust to age-specific probabilities of progressing to asymptomatic infections.",
+      "claim_type": "EXPLICIT",
+      "source": "A sensitivity analysis showed that our results were robust to age-specific probabilities of progressing to asymptomatic infections, as well as other assumptions made in the model, and driven by trends in the data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on sensitivity analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:26:54.567578Z"
+    },
+    {
+      "id": "361d85dc-ad52-497d-8586-7847ff6797ff",
+      "content_id": "e6e895c1-23e1-48df-93da-85e4489d3344",
+      "claim_id": "C51",
+      "claim": "The estimated substantial contribution to transmission from asymptomatic infections confirms a hypothesis from Nishiura after analysing symptomatic cases occurring post-disembarkation.",
+      "claim_type": "EXPLICIT",
+      "source": "Our estimated substantial contribution to transmission from asymptomatic infections confirms a hypothesis from Nishiura after analysing symptomatic cases occurring post-disembarkation (Nishiura, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim compares the study's findings to a previous hypothesis, supported by citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:26:54.567578Z"
+    },
+    {
+      "id": "3309a926-96ae-4f5f-ab7c-82a402a1e48d",
+      "content_id": "e6e895c1-23e1-48df-93da-85e4489d3344",
+      "claim_id": "C52",
+      "claim": "The initial reproduction number was 9.3 (7.4\u201310.6).",
+      "claim_type": "EXPLICIT",
+      "source": "Our initial reproduction number of 9.3 (7.4\u201310.6) reflects the high transmission environment expected on cruise ships via increased contacts in a confined space, although lower than the value found in an earlier analysis by Rockl\u00f6v et al., 2020.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on model estimates.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:26:54.567578Z"
+    },
+    {
+      "id": "2e0ffa28-572f-42bc-8083-bb5bedf46b5d",
+      "content_id": "e6e895c1-23e1-48df-93da-85e4489d3344",
+      "claim_id": "C53",
+      "claim": "The initial reproduction number reflects the high transmission environment expected on cruise ships via increased contacts in a confined space.",
+      "claim_type": "EXPLICIT",
+      "source": "Our initial reproduction number of 9.3 (7.4\u201310.6) reflects the high transmission environment expected on cruise ships via increased contacts in a confined space, although lower than the value found in an earlier analysis by Rockl\u00f6v et al., 2020.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an interpretation of the model estimate based on knowledge of cruise ship environments.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:26:54.567578Z"
+    },
+    {
+      "id": "47765b91-eec1-46c2-9a5d-920bf5db487e",
+      "content_id": "e6e895c1-23e1-48df-93da-85e4489d3344",
+      "claim_id": "C54",
+      "claim": "The finding of similar contribution to transmission from presymptomatic and symptomatic individuals matches findings by others.",
+      "claim_type": "EXPLICIT",
+      "source": "Our finding of similar contribution to transmission from presymptomatic and symptomatic individuals also matches findings by others (Ganyani et al., 2020; Liu et al., 2020a; He et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim compares the study's findings to other studies, supported by citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:26:54.567578Z"
+    },
+    {
+      "id": "64cb058c-e70d-46f2-90ad-e7d056399d9b",
+      "content_id": "e6e895c1-23e1-48df-93da-85e4489d3344",
+      "claim_id": "C55",
+      "claim": "Having symptoms, or at least being aware of them, is not required in the transmission of SARS-CoV-2.",
+      "claim_type": "EXPLICIT",
+      "source": "In line with this, it is clear that having symptoms, or at least being aware of them, is not required in the transmission of SARS-CoV-2 (Ganyani et al., 2020; Liu et al., 2020a; He et al., 2020; Kimball et al., 2020; Wei et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:26:54.567578Z"
+    },
+    {
+      "id": "36ada0e1-5d7f-41f6-bc1e-0d8a7d038448",
+      "content_id": "e6e895c1-23e1-48df-93da-85e4489d3344",
+      "claim_id": "C56",
+      "claim": "While a cough may increase spread of respiratory infections, it is not a requirement for transmission.",
+      "claim_type": "EXPLICIT",
+      "source": "Although cough is often considered essential for transmission of respiratory infections (Patterson and Wood, 2019), work in tuberculosis, influenza and other coronaviruses has shown that while a cough may increase spread, it is not a requirement.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation and draws on knowledge from other respiratory infections.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:26:54.567578Z"
+    },
+    {
+      "id": "4e823e22-8c4b-48ce-9644-53645cd4596b",
+      "content_id": "e6e895c1-23e1-48df-93da-85e4489d3344",
+      "claim_id": "C57",
+      "claim": "Transmission from breathing, talking and sneezing is possible for SARS-CoV-2.",
+      "claim_type": "EXPLICIT",
+      "source": "Transmission from breathing, talking and sneezing is also possible, as well as transmission from contaminated surfaces (van Doremalen et al., 2020; Leung et al., 2020; Asadi et al., 2019; Williams et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to studies on transmission modes.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:26:54.567578Z"
+    },
+    {
+      "id": "96207e94-6161-45c9-bfdc-c5dc30edb26b",
+      "content_id": "e6e895c1-23e1-48df-93da-85e4489d3344",
+      "claim_id": "C58",
+      "claim": "Transmission from contaminated surfaces is possible for SARS-CoV-2.",
+      "claim_type": "EXPLICIT",
+      "source": "Transmission from breathing, talking and sneezing is also possible, as well as transmission from contaminated surfaces (van Doremalen et al., 2020; Leung et al., 2020; Asadi et al., 2019; Williams et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to studies on transmission modes.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:26:54.567578Z"
+    },
+    {
+      "id": "2b60d343-04da-474f-a831-9dbe09b56f94",
+      "content_id": "e6e895c1-23e1-48df-93da-85e4489d3344",
+      "claim_id": "C59",
+      "claim": "On January 20th, the Diamond Princess cruise ship departed from Yokohama on a tour of Southeast Asia.",
+      "claim_type": "EXPLICIT",
+      "source": "On January 20th, the Diamond Princess cruise ship departed from Yokohama on a tour of Southeast Asia.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a factual statement about the timeline of events.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:26:54.567578Z"
+    },
+    {
+      "id": "2cec585d-c7e8-4980-b828-ae9636cdfeb5",
+      "content_id": "e6e895c1-23e1-48df-93da-85e4489d3344",
+      "claim_id": "C60",
+      "claim": "A passenger that disembarked on January 25th in Hong Kong subsequently tested positive for SARS-CoV-2 on February 1st.",
+      "claim_type": "EXPLICIT",
+      "source": "A passenger that disembarked on January 25th in Hong Kong subsequently tested positive for SARS-CoV-2 on February 1st, reporting the date of symptom onset as January 23rd.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a factual statement about the timeline of events.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:26:54.567578Z"
+    },
+    {
+      "id": "eb7dd564-0c64-4677-9454-74ded303422e",
+      "content_id": "e6e895c1-23e1-48df-93da-85e4489d3344",
+      "claim_id": "C61",
+      "claim": "The passenger who tested positive reported the date of symptom onset as January 23rd.",
+      "claim_type": "EXPLICIT",
+      "source": "A passenger that disembarked on January 25th in Hong Kong subsequently tested positive for SARS-CoV-2 on February 1st, reporting the date of symptom onset as January 23rd.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a factual statement about the timeline of events.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:26:54.567578Z"
+    },
+    {
+      "id": "2212a02d-67d2-4db8-bb0d-427333983c36",
+      "content_id": "e6e895c1-23e1-48df-93da-85e4489d3344",
+      "claim_id": "C62",
+      "claim": "The Diamond Princess began quarantine on February 5th with all passengers confined to their cabins and crew undertaking essential activities only.",
+      "claim_type": "EXPLICIT",
+      "source": "The ship began quarantine on February 5th with all passengers confined to their cabins and crew undertaking essential activities only.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a factual statement about the quarantine measures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:26:54.567578Z"
+    },
+    {
+      "id": "c86aebd8-5864-4e8b-aa13-eb611de1707a",
+      "content_id": "e6e895c1-23e1-48df-93da-85e4489d3344",
+      "claim_id": "C63",
+      "claim": "At the start of quarantine there were 3711 individuals on board (2666 passengers and 1045 crew) with a median age of 65 (45\u201375 interquartile range).",
+      "claim_type": "EXPLICIT",
+      "source": "At the start of quarantine there were 3711 individuals on board (2666 passengers and 1045 crew) with a median age of 65 (45\u201375 interquartile range).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a factual statement about the population on the ship.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:26:54.567578Z"
+    },
+    {
+      "id": "dbfff7e7-5d1d-47bc-a012-1b7c1b011ba3",
+      "content_id": "e6e895c1-23e1-48df-93da-85e4489d3344",
+      "claim_id": "C64",
+      "claim": "Testing capacity was limited until February 11th and before then the majority of individuals tested had reported symptoms.",
+      "claim_type": "EXPLICIT",
+      "source": "Testing capacity was limited until February 11th and before then the majority of individuals tested had reported symptoms, referred to here as 'symptom-based testing'.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a factual statement about testing practices.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:26:54.567578Z"
+    },
+    {
+      "id": "40f20e71-3181-4427-8cb9-b10bf36dc14a",
+      "content_id": "e6e895c1-23e1-48df-93da-85e4489d3344",
+      "claim_id": "C65",
+      "claim": "All individuals with a positive test at any stage were promptly removed from the ship and isolated.",
+      "claim_type": "EXPLICIT",
+      "source": "All individuals with a positive test at any stage were promptly removed from the ship and isolated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a factual statement about the response to positive tests.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:26:54.567578Z"
+    },
+    {
+      "id": "bb19a6f2-f7eb-4098-ad48-cfce80010bad",
+      "content_id": "e6e895c1-23e1-48df-93da-85e4489d3344",
+      "claim_id": "C66",
+      "claim": "After February 11th, testing capacity increased and the testing of individuals irrespective of symptoms was scaled up.",
+      "claim_type": "EXPLICIT",
+      "source": "After February 11th, testing capacity increased and the testing of individuals irrespective of symptoms, referred to here as 'symptom-agnostic testing', was scaled up.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a factual statement about testing practices.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:26:54.567578Z"
+    },
+    {
+      "id": "31b5e637-5bee-4817-881c-e599ff61a06f",
+      "content_id": "e6e895c1-23e1-48df-93da-85e4489d3344",
+      "claim_id": "C67",
+      "claim": "In total, 314 symptomatic and 320 pre- or asymptomatic infections were reported before disembarkation was principally completed on February 21st.",
+      "claim_type": "EXPLICIT",
+      "source": "In total, 314 symptomatic and 320 pre- or asymptomatic infections were reported before disembarkation was principally completed on February 21st.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a factual statement about the number of infections detected.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:26:54.567578Z"
+    },
+    {
+      "id": "ef33b2ae-e1a5-4fc0-a225-298f963f8453",
+      "content_id": "e6e895c1-23e1-48df-93da-85e4489d3344",
+      "claim_id": "C68",
+      "claim": "The model assumed that individuals in the presymptomatic, asymptomatic or symptomatic state test positive and have independent infectiousness, expressed relative to those with symptomatic disease.",
+      "claim_type": "EXPLICIT",
+      "source": "Individuals in the presymptomatic, asymptomatic or symptomatic state are assumed to test positive and have independent infectiousness, expressed relative to those with symptomatic disease.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes a model assumption.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:26:54.567578Z"
+    },
+    {
+      "id": "5fd625d1-ca82-4be3-81fd-68891cb4af48",
+      "content_id": "e6e895c1-23e1-48df-93da-85e4489d3344",
+      "claim_id": "C69",
+      "claim": "Following exposure, an individual is assumed to test negative for SARS-CoV-2 for the duration of the latent phase.",
+      "claim_type": "EXPLICIT",
+      "source": "Following exposure, after which an individual is assumed to test negative for SARS-CoV-2 for the duration of the latent phase (see Table 2), a proportion of individuals proceed asymptomatically with the remainder becoming presymptomatic.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes a model assumption.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:26:54.567578Z"
+    },
+    {
+      "id": "3f9f0fea-94b6-4270-bbbb-c4a9af1716dd",
+      "content_id": "e6e895c1-23e1-48df-93da-85e4489d3344",
+      "claim_id": "C70",
+      "claim": "The model assumed a universal probability of becoming either presymptomatic or asymptomatic, independent of who infected whom.",
+      "claim_type": "EXPLICIT",
+      "source": "This proportion equates to a universal probability of becoming either presymptomatic or asymptomatic, independent of who infected whom.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes a model assumption.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:26:54.567578Z"
+    },
+    {
+      "id": "2008e667-e747-4ad0-a7f5-143c3b4fbeeb",
+      "content_id": "e6e895c1-23e1-48df-93da-85e4489d3344",
+      "claim_id": "C71",
+      "claim": "Individuals with presymptomatic infection are either detected through symptom-agnostic testing before being removed from the ship, or develop symptomatic disease.",
+      "claim_type": "EXPLICIT",
+      "source": "Individuals with presymptomatic infection are either detected through symptom-agnostic testing before being removed from the ship, or develop symptomatic disease.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes model structure.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:26:54.567578Z"
+    },
+    {
+      "id": "ce75e143-7245-47b9-b3b2-21891aae94be",
+      "content_id": "e6e895c1-23e1-48df-93da-85e4489d3344",
+      "claim_id": "C72",
+      "claim": "Once symptomatic disease starts, individuals can either recover undetected on the ship or be detected through symptom-based testing and removed from the ship with an average delay of one day following symptom onset.",
+      "claim_type": "EXPLICIT",
+      "source": "Once symptomatic disease starts, individuals can either recover undetected on the ship or, following the start of quarantine on February 5th, be detected through symptom-based testing and removed from the ship with an average delay of one day following symptom onset.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes model structure and assumptions.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:26:54.567578Z"
+    },
+    {
+      "id": "51b824e3-1d0a-4e53-b1c1-42d7b6efcab2",
+      "content_id": "e6e895c1-23e1-48df-93da-85e4489d3344",
+      "claim_id": "C73",
+      "claim": "The model allowed for individuals to test positive after their infectious period for an average of seven days.",
+      "claim_type": "EXPLICIT",
+      "source": "We allowed for individuals to test positive after their infectious period for an average of seven days (Woelfel et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes a model assumption supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:26:54.567578Z"
+    },
+    {
+      "id": "00869c38-a8ab-4a1d-afc6-d235197c04a5",
+      "content_id": "e6e895c1-23e1-48df-93da-85e4489d3344",
+      "claim_id": "C74",
+      "claim": "After seven days post-infectious period, individuals are assumed to test negative.",
+      "claim_type": "EXPLICIT",
+      "source": "After this, we assume they would test negative.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes a model assumption.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:26:54.567578Z"
+    },
+    {
+      "id": "3be9674a-7af3-4bb5-9aa9-89295f1ba34a",
+      "content_id": "e6e895c1-23e1-48df-93da-85e4489d3344",
+      "claim_id": "C75",
+      "claim": "Symptom-agnostic testing was assumed to have been random amongst those not reporting symptoms.",
+      "claim_type": "EXPLICIT",
+      "source": "Symptom-agnostic testing was assumed to have been random amongst those not reporting symptoms and no delay was introduced between testing and removal of those that tested positive from the ship.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes a model assumption.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:26:54.567578Z"
+    },
+    {
+      "id": "c31d1e17-845f-4f49-b6e1-7522737e1570",
+      "content_id": "e6e895c1-23e1-48df-93da-85e4489d3344",
+      "claim_id": "C76",
+      "claim": "No delay was introduced between testing and removal of those that tested positive from the ship.",
+      "claim_type": "EXPLICIT",
+      "source": "Symptom-agnostic testing was assumed to have been random amongst those not reporting symptoms and no delay was introduced between testing and removal of those that tested positive from the ship.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes a model assumption.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:26:54.567578Z"
+    },
+    {
+      "id": "7677e1cc-ffed-40de-ad6e-d9f0eb5c28a0",
+      "content_id": "e6e895c1-23e1-48df-93da-85e4489d3344",
+      "claim_id": "C77",
+      "claim": "All testing was assumed to have 100% sensitivity and specificity.",
+      "claim_type": "EXPLICIT",
+      "source": "All testing was assumed to have 100% sensitivity and specificity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes a model assumption.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:26:54.567578Z"
+    },
+    {
+      "id": "6d7bb631-5ced-4eb3-bf6f-80fbccfbc5df",
+      "content_id": "e6e895c1-23e1-48df-93da-85e4489d3344",
+      "claim_id": "C78",
+      "claim": "The between-group contact rate was assumed to be a fixed factor of 1/10th of the within-passenger rate.",
+      "claim_type": "EXPLICIT",
+      "source": "We estimated the within-crew and within-passenger contact rates through calibration to the data, but assumed that the between-group contact rate was a fixed factor of 1/10th of the within-passenger rate, and explored the impact of this assumption in sensitivity analyses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes a model assumption.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:26:54.567578Z"
+    },
+    {
+      "id": "57062980-bc57-4368-8da9-1d3133d6100c",
+      "content_id": "e6e895c1-23e1-48df-93da-85e4489d3344",
+      "claim_id": "C79",
+      "claim": "The model assumed that the infectiousness of all transmissible states was constant over time.",
+      "claim_type": "EXPLICIT",
+      "source": "Our model also assumed that the infectiousness of all transmissible states was constant over time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes a model assumption.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:26:54.567578Z"
+    },
+    {
+      "id": "685bf268-d48d-488a-ab86-eb66b62d3b86",
+      "content_id": "e6e895c1-23e1-48df-93da-85e4489d3344",
+      "claim_id": "C80",
+      "claim": "The model assumed that the probability of an individual progressing to either a presymptomatic or asymptomatic infection was independent of who infected whom.",
+      "claim_type": "EXPLICIT",
+      "source": "A similar simplification was made by assuming that the probability of an individual progressing to either a presymptomatic or asymptomatic infection was independent of who infected whom.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes a model assumption.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:26:54.567578Z"
+    },
+    {
+      "id": "159cc79f-30f8-48f7-a279-b3600f399803",
+      "content_id": "e6e895c1-23e1-48df-93da-85e4489d3344",
+      "claim_id": "C81",
+      "claim": "It is possible that transmission from a symptomatic infection may be more likely to ultimately result in another symptomatic infection, owing to a higher infecting dose.",
+      "claim_type": "EXPLICIT",
+      "source": "It is possible, however, that transmission from a symptomatic infection may be more likely to ultimately result in another symptomatic infection, owing to a higher infecting dose for example.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a speculation about a potential mechanism.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:26:54.567578Z"
+    },
+    {
+      "id": "173155b3-b845-4966-a1c8-7316e18383f3",
+      "content_id": "e6e895c1-23e1-48df-93da-85e4489d3344",
+      "claim_id": "C82",
+      "claim": "A net reproduction number for presymptomatic passengers at the start of the outbreak of over 20 is unlikely.",
+      "claim_type": "EXPLICIT",
+      "source": "One can argue that a net reproduction number for presymptomatic passengers at the start of the outbreak of over 20 in this population, as required if asymptomatic individuals are effectively unable to transmit (range for relative infectiousness of 0\u20131%) is unlikely.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an inference based on comparison to known reproduction numbers for other diseases.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:26:54.567578Z"
+    },
+    {
+      "id": "82021f5f-e0bd-431b-a666-028901e7cef8",
+      "content_id": "e6e895c1-23e1-48df-93da-85e4489d3344",
+      "claim_id": "C83",
+      "claim": "Such high reproductive numbers are not usually seen, exceeding for example values found for norovirus outbreaks on cruise ships.",
+      "claim_type": "EXPLICIT",
+      "source": "Such high reproductive numbers are not usually seen, exceeding for example values found for norovirus outbreaks on cruise ships (Gaythorpe et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation and draws on knowledge of other disease outbreaks.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:26:54.567578Z"
+    },
+    {
+      "id": "c2f460e3-171d-42f2-9e9f-1923e50c580f",
+      "content_id": "e6e895c1-23e1-48df-93da-85e4489d3344",
+      "claim_id": "C84",
+      "claim": "SARS-CoV-2 has been shown to survive on surfaces.",
+      "claim_type": "EXPLICIT",
+      "source": "While SARS-CoV-2 has been shown to survive on surfaces (van Doremalen et al., 2020), this does not seem to be the primary mode of transmission.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:26:54.567578Z"
+    },
+    {
+      "id": "eae9460b-8e2f-49ce-8b21-6f336801171d",
+      "content_id": "e6e895c1-23e1-48df-93da-85e4489d3344",
+      "claim_id": "C85",
+      "claim": "Surface transmission does not seem to be the primary mode of transmission for SARS-CoV-2.",
+      "claim_type": "EXPLICIT",
+      "source": "While SARS-CoV-2 has been shown to survive on surfaces (van Doremalen et al., 2020), this does not seem to be the primary mode of transmission.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an inference based on current understanding of transmission modes.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:26:54.567578Z"
+    },
+    {
+      "id": "68b86a1b-34f0-46af-b9a3-ea9491d329b7",
+      "content_id": "e6e895c1-23e1-48df-93da-85e4489d3344",
+      "claim_id": "C86",
+      "claim": "There is growing evidence around viral load in asymptomatic infections and their involvement in transmission chains.",
+      "claim_type": "EXPLICIT",
+      "source": "In combination with growing evidence around viral load in asymptomatic infections and their involvement in transmission chains (Lavezzo et al., 2020), as well as anecdotal evidence about transmission from asymptomatic individuals (Bai et al., 2020; Chau et al., 2020) including in closed populations (Arons et al., 2020), it is reasonable to assume that asymptomatic infections play some role in ongoing SARS-CoV transmission.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to studies on viral load and transmission.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:26:54.567578Z"
+    },
+    {
+      "id": "3d81e805-deee-4561-9f2a-f6d8fded62a6",
+      "content_id": "e6e895c1-23e1-48df-93da-85e4489d3344",
+      "claim_id": "C87",
+      "claim": "There is anecdotal evidence about transmission from asymptomatic individuals.",
+      "claim_type": "EXPLICIT",
+      "source": "In combination with growing evidence around viral load in asymptomatic infections and their involvement in transmission chains (Lavezzo et al., 2020), as well as anecdotal evidence about transmission from asymptomatic individuals (Bai et al., 2020; Chau et al., 2020) including in closed populations (Arons et al., 2020), it is reasonable to assume that asymptomatic infections play some role in ongoing SARS-CoV transmission.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to case reports.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:26:54.567578Z"
+    },
+    {
+      "id": "d7b73955-3865-43db-8edc-259225d8bd2b",
+      "content_id": "e6e895c1-23e1-48df-93da-85e4489d3344",
+      "claim_id": "C88",
+      "claim": "It is reasonable to assume that asymptomatic infections play some role in ongoing SARS-CoV-2 transmission.",
+      "claim_type": "EXPLICIT",
+      "source": "In combination with growing evidence around viral load in asymptomatic infections and their involvement in transmission chains (Lavezzo et al., 2020), as well as anecdotal evidence about transmission from asymptomatic individuals (Bai et al., 2020; Chau et al., 2020) including in closed populations (Arons et al., 2020), it is reasonable to assume that asymptomatic infections play some role in ongoing SARS-CoV transmission.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an inference based on multiple lines of evidence from citations.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:26:54.567578Z"
+    },
+    {
+      "id": "7f730dba-403c-4f7d-a2d4-09224da4c517",
+      "content_id": "e6e895c1-23e1-48df-93da-85e4489d3344",
+      "claim_id": "C89",
+      "claim": "In 83% of the scenarios compatible with the data, asymptomatic infections were responsible for more than half of all transmission.",
+      "claim_type": "EXPLICIT",
+      "source": "In our model, asymptomatic infections were responsible for more than half of all transmission in 83% of the scenarios compatible with the data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on model analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:26:54.567578Z"
+    },
+    {
+      "id": "5473e5fc-eecf-4d9d-ab74-dd5fa79324b7",
+      "content_id": "e6e895c1-23e1-48df-93da-85e4489d3344",
+      "claim_id": "C90",
+      "claim": "The conclusion that asymptomatic infections may have contributed substantially to ongoing transmission is critically dependent on the setting.",
+      "claim_type": "EXPLICIT",
+      "source": "It is important to note that our conclusion that asymptomatic infections may have contributed substantially to ongoing transmission is critically dependent on the setting.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an interpretation of the study's findings emphasizing context-dependence.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:26:54.567578Z"
+    },
+    {
+      "id": "5c821c4e-ab09-45f8-a64a-fe1a80c4c708",
+      "content_id": "e6e895c1-23e1-48df-93da-85e4489d3344",
+      "claim_id": "C91",
+      "claim": "Symptomatic infections were quickly identified and removed from the ship before symptom-agnostic testing began, thereby leaving asymptomatic infections to dominate transmission.",
+      "claim_type": "EXPLICIT",
+      "source": "In this case symptomatic infections were quickly identified and removed from the ship before symptom-agnostic testing began, thereby leaving asymptomatic infections to dominate transmission.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an inference about the mechanism explaining the high contribution of asymptomatic infections.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:26:54.567578Z"
+    },
+    {
+      "id": "cd8bee54-22cd-4e64-97b1-4167b67c5c70",
+      "content_id": "e6e895c1-23e1-48df-93da-85e4489d3344",
+      "claim_id": "C92",
+      "claim": "The dominance of asymptomatic infections in transmission should not be interpreted as a constant of nature, but instead an important consideration in settings where prompt isolation of symptomatic infections is already in place.",
+      "claim_type": "EXPLICIT",
+      "source": "Such dominance should therefore not be interpreted as a constant of nature, but instead an important consideration in settings where prompt isolation of symptomatic infections is already in place but with little to no consideration for asymptomatic infections.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an interpretation and inference about the generalizability of the findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:26:54.567578Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "6cc6587b-b018-4d92-b7c1-0cba3e772369",
+      "content_id": "e6e895c1-23e1-48df-93da-85e4489d3344",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The model estimated that 74% (70\u201378%) of SARS-CoV-2 infections on the Diamond Princess proceeded asymptomatically, with a total of 1,304 (1,198\u20131,416) individuals infected, representing 35% (32\u201338%) of the initial population.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C24, and C25 are well-supported by Bayesian model calibration to outbreak data including symptom onset dates and testing patterns (C21). The model fit the data well (Figure 1) and the proportion asymptomatic was strongly identifiable from the relative proportions testing positive with/without symptoms. Sensitivity analyses (C39-C46, C50) confirmed robustness.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:26:54.567578Z"
+    },
+    {
+      "id": "254d4f62-6f09-451a-9ef8-4ffc6752da39",
+      "content_id": "e6e895c1-23e1-48df-93da-85e4489d3344",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Over half (53%, 51\u201356%) of infections remained undetected at disembarkation despite intense testing, with the majority being asymptomatic. Undetected infections comprised those who recovered before testing (37%), were yet to be tested (15%), or were recently exposed (1%). Nearly two-thirds (67%) of pre/asymptomatic infections went undetected compared to only 8% of symptomatic infections.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C3, C26-C31 are supported by model estimates that account for testing patterns, recovery dynamics, and the 7-day post-infectious test-positive period (C73). The breakdown of undetected infections is internally consistent and follows logically from the model structure. Figure 2C provides visual confirmation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:26:54.567578Z"
+    },
+    {
+      "id": "da98ca38-0da5-4044-8b1f-063e094bf82c",
+      "content_id": "e6e895c1-23e1-48df-93da-85e4489d3344",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Asymptomatic individuals were estimated to be the source of 69% (20\u201385%, IQR 56\u201376%) of all infections, with asymptomatic infections responsible for more than half of transmission in 83% of scenarios compatible with the data. Presymptomatic and symptomatic individuals contributed approximately equally to the remaining transmission (14% and 17% respectively).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C4, C34, C35, C37, and C89 report model estimates with very wide confidence intervals (20\u201385%) for asymptomatic contribution. While the model produces these estimates, the authors acknowledge that relative infectiousness is unidentifiable (C6, C32, C33), creating degeneracy with contact rates. The high contribution estimate relies on the non-linear saturation relationship (C35, Figure 2\u2014figure supplement 1) rather than direct data constraint, introducing substantial uncertainty about the true value.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:26:54.567578Z"
+    },
+    {
+      "id": "97c6fd12-5c28-47ef-8841-f75b6ec58001",
+      "content_id": "e6e895c1-23e1-48df-93da-85e4489d3344",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The data could not identify the relative infectiousness of asymptomatic or presymptomatic infections due to degeneracy with overall contact rates. However, low asymptomatic infectiousness (0\u201325%) would require implausibly high net reproduction numbers (15.5\u201329.1) for presymptomatic/symptomatic individuals.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C6, C32, C33, C36, and C38 accurately describe a fundamental identifiability limitation. The uniform posterior for relative infectiousness (Figure 2B) confirms non-identifiability. The trade-off analysis (Table 1) showing extreme R values for low asymptomatic infectiousness is mathematically sound and provides indirect evidence that asymptomatic transmission is non-negligible, though the specific threshold of 15.5\u201329.1 depends on model assumptions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:26:54.567578Z"
+    },
+    {
+      "id": "9be7805f-c407-41c1-84d0-affe798582c1",
+      "content_id": "e6e895c1-23e1-48df-93da-85e4489d3344",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The model successfully captured outbreak dynamics including differently timed peaks for crew and passengers, the impact of passenger quarantine on February 4th (shown by drop in reproduction number), and a later transmission drop after February 10th driven by crew contact pattern changes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21-C23 are supported by visual comparison of model outputs to data in Figure 1A-E. The model's ability to capture temporal dynamics and intervention effects provides validation. However, C23's attribution of the February 10th drop specifically to crew contact changes is a model inference that could have alternative explanations not fully explored.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:26:54.567578Z"
+    },
+    {
+      "id": "03d3d885-605e-45a5-87dc-3e35071f1169",
+      "content_id": "e6e895c1-23e1-48df-93da-85e4489d3344",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Sensitivity analyses demonstrated that the model required an asymptomatic state to fit the data (DIC 974 vs 329), results were robust to crew-passenger mixing assumptions and asymptomatic state duration, but were sensitive to biased testing assumptions (asymptomatic proportion ranging 66\u201384% depending on testing bias direction).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39-C46 and C50 describe comprehensive sensitivity analyses with quantitative model comparison (DIC values). The finding that biased testing has greater impact than mixing assumptions (C41) is well-demonstrated. However, the authors acknowledge testing may not have been random (C75 assumption, later contradicted by known reverse-age screening), which is a significant limitation not fully resolved by sensitivity analyses.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:26:54.567578Z"
+    },
+    {
+      "id": "d3c7c95a-d730-4d0d-9770-d540725f5356",
+      "content_id": "e6e895c1-23e1-48df-93da-85e4489d3344",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The authors conclude that asymptomatic infections may contribute substantially to SARS-CoV-2 transmission, requiring control measures to look beyond symptomatic cases. However, they emphasize this conclusion is critically setting-dependent: symptomatic cases were rapidly removed before symptom-agnostic testing began, allowing asymptomatic infections to dominate transmission in this specific context.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7, C8, C90-C92 appropriately contextualize the findings. The authors correctly note that asymptomatic dominance resulted from the specific intervention sequence (rapid symptomatic case removal) rather than being a universal constant. This interpretation is logically sound and appropriately cautious, though C8's policy recommendation extends beyond what the data directly support.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:26:54.567578Z"
+    },
+    {
+      "id": "8dfaa142-a270-426f-994a-ecd6ad08ea63",
+      "content_id": "e6e895c1-23e1-48df-93da-85e4489d3344",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The estimated proportion of asymptomatic infections (74%) is higher than previous studies relying only on diagnosed cases, which the authors attribute to substantial undetected infections in their analysis. This finding confirms a prior hypothesis by Nishiura (2020) based on post-disembarkation symptomatic cases.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47, C48, and C51 appropriately compare results to prior work. The explanation that accounting for undetected infections increases the asymptomatic proportion is logically sound. However, the comparison is limited by differences in methodology and populations across studies, and alternative explanations (age differences, testing sensitivity) are only briefly mentioned (C49).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:26:54.567578Z"
+    },
+    {
+      "id": "37b8412b-37fe-4c65-979c-85671da2ec8a",
+      "content_id": "e6e895c1-23e1-48df-93da-85e4489d3344",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The initial reproduction number was estimated at 9.3 (7.4\u201310.6), reflecting the high transmission environment on cruise ships. The finding of similar contributions from presymptomatic and symptomatic individuals matches findings from other studies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52-C54 report model estimates and compare to literature. The R\u2080 estimate is plausible for a cruise ship setting (C53) and is lower than one earlier analysis (Rockl\u00f6v et al., 2020), suggesting reasonable calibration. The consistency with other studies on presymptomatic/symptomatic contributions (C20, C54) provides external validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:26:54.567578Z"
+    },
+    {
+      "id": "c70af06d-eabe-4e2e-b6f8-409b720e139d",
+      "content_id": "e6e895c1-23e1-48df-93da-85e4489d3344",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The model incorporated key assumptions including: 100% test sensitivity/specificity, 4.3-day latent period, 7-day post-infectious test positivity, random symptom-agnostic testing, 1-day delay for symptomatic case removal, constant infectiousness over time, universal probability of asymptomatic progression independent of infector, and 1/10th between-group contact rate relative to within-passenger contacts.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C68-C80 describe model assumptions that are clearly stated but several are problematic. The 100% sensitivity/specificity assumption (C77) is unrealistic and could bias results. The random testing assumption (C75) contradicts known reverse-age screening. The constant infectiousness assumption (C79) ignores evidence of peak viral load timing. The independence assumption (C80) may miss dose-response effects (C81). While sensitivity analyses address some concerns, these structural assumptions limit confidence in point estimates.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:26:54.567578Z"
+    },
+    {
+      "id": "b89a7af4-6f3b-4ae0-ad85-d81ce69574a9",
+      "content_id": "e6e895c1-23e1-48df-93da-85e4489d3344",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The Diamond Princess departed Yokohama on January 20th; a passenger who disembarked January 25th tested positive February 1st with symptom onset January 23rd. Quarantine began February 5th with 3,711 individuals (2,666 passengers, 1,045 crew, median age 65). Testing was initially symptom-based until February 11th when symptom-agnostic testing scaled up. By disembarkation February 21st, 314 symptomatic and 320 pre/asymptomatic infections were reported.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59-C67 provide factual background on the outbreak timeline, population characteristics, and testing strategy. These are well-documented facts from cited sources (Mizumoto et al., 2020; Nishiura, 2020; NIID, 2020) and form the empirical foundation for the modeling analysis.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:26:54.567578Z"
+    },
+    {
+      "id": "8bec870c-0216-41cb-8eff-0609316c6383",
+      "content_id": "e6e895c1-23e1-48df-93da-85e4489d3344",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The authors argue that net reproduction numbers exceeding 20 (required if asymptomatic infectiousness is near zero) are unlikely based on comparison to other diseases like norovirus on cruise ships. Combined with evidence on viral load in asymptomatic infections and anecdotal transmission reports, they conclude it is reasonable to assume asymptomatic infections play some role in transmission.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C82, C83, C86-C88 present a reasonable inference chain supported by citations. The comparison to norovirus (C83) provides useful context, though cross-disease comparisons have limitations. The integration of viral load evidence (C86) and case reports (C87) strengthens the argument, though the conclusion (C88) remains an assumption rather than a direct finding from this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:26:54.567578Z"
+    },
+    {
+      "id": "b67378ba-6438-46e8-9936-61fef037356c",
+      "content_id": "e6e895c1-23e1-48df-93da-85e4489d3344",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The authors speculate that PCR-based testing may have lower sensitivity for asymptomatic individuals, which would further increase the estimated proportion of asymptomatic infections.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C49 is presented as speculation with a single citation (Chau et al., 2020). While biologically plausible (lower viral loads in asymptomatic individuals could reduce test sensitivity), this is not tested in the current analysis and would require additional data to evaluate. If true, it would significantly impact the main findings but remains unquantified.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:26:54.567578Z"
+    },
+    {
+      "id": "ff84972c-bdaa-428a-a6c6-89c8ce03b8e4",
+      "content_id": "e6e895c1-23e1-48df-93da-85e4489d3344",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The authors define asymptomatic infections as those where individuals do not experience or are not aware of symptoms throughout infection, distinguishing them from presymptomatic infections which describe the incubation period before symptom development during which transmission is possible.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11 and C12 provide standard epidemiological definitions that are well-established in the literature. These definitional claims are appropriately used to frame the analysis and are consistent with general scientific understanding.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:26:54.567578Z"
+    },
+    {
+      "id": "762ba84f-ca65-478b-ac16-7179a7ec06b4",
+      "content_id": "e6e895c1-23e1-48df-93da-85e4489d3344",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The authors argue that symptoms are not required for SARS-CoV-2 transmission, noting that while cough may increase spread of respiratory infections, it is not essential. Transmission can occur through breathing, talking, sneezing, and contaminated surfaces.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55-C58 are supported by multiple citations and draw on established knowledge from other respiratory pathogens (C56). These claims provide biological plausibility for asymptomatic transmission, though C58 on surface transmission is noted as likely not the primary mode (C85).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:26:54.567578Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "29f29b46-7907-4d37-a44d-6302f72c8e49",
+      "result_id": "6cc6587b-b018-4d92-b7c1-0cba3e772369"
+    },
+    {
+      "claim_id": "bfcf1d84-946a-456d-8da2-ce52ccba113b",
+      "result_id": "6cc6587b-b018-4d92-b7c1-0cba3e772369"
+    },
+    {
+      "claim_id": "b1fdee71-b0cd-497c-8497-c884b3db8f8d",
+      "result_id": "6cc6587b-b018-4d92-b7c1-0cba3e772369"
+    },
+    {
+      "claim_id": "9c4227ff-a081-4d51-9bec-5b9d8386f81c",
+      "result_id": "254d4f62-6f09-451a-9ef8-4ffc6752da39"
+    },
+    {
+      "claim_id": "5c7190f2-1ad8-4e39-931d-a3b36fc23d34",
+      "result_id": "254d4f62-6f09-451a-9ef8-4ffc6752da39"
+    },
+    {
+      "claim_id": "c2f9db8a-8e27-4678-93c9-bd6b9f7a3e77",
+      "result_id": "254d4f62-6f09-451a-9ef8-4ffc6752da39"
+    },
+    {
+      "claim_id": "b4b19d30-c0fe-4317-ae53-0c7483f35c04",
+      "result_id": "254d4f62-6f09-451a-9ef8-4ffc6752da39"
+    },
+    {
+      "claim_id": "c793bed5-b3c6-4c89-b665-9f190f530e7f",
+      "result_id": "254d4f62-6f09-451a-9ef8-4ffc6752da39"
+    },
+    {
+      "claim_id": "8c1cf50d-4dfd-4ead-9f4f-1546390155ce",
+      "result_id": "254d4f62-6f09-451a-9ef8-4ffc6752da39"
+    },
+    {
+      "claim_id": "9ab23df4-20fb-4848-be58-ab3ac0b2faa2",
+      "result_id": "254d4f62-6f09-451a-9ef8-4ffc6752da39"
+    },
+    {
+      "claim_id": "bc8f9bef-047e-418a-b57a-a35875b552a2",
+      "result_id": "254d4f62-6f09-451a-9ef8-4ffc6752da39"
+    },
+    {
+      "claim_id": "fb26332f-c491-4e50-a3ff-6b91d4f96eca",
+      "result_id": "da98ca38-0da5-4044-8b1f-063e094bf82c"
+    },
+    {
+      "claim_id": "73c9ba9e-8b26-4fd7-b3fa-8f8fafa1f2b7",
+      "result_id": "da98ca38-0da5-4044-8b1f-063e094bf82c"
+    },
+    {
+      "claim_id": "00d7152a-0e0d-4fbf-a518-566bdec65f55",
+      "result_id": "da98ca38-0da5-4044-8b1f-063e094bf82c"
+    },
+    {
+      "claim_id": "a1be3277-dce5-4f47-aa8b-8571b8288c73",
+      "result_id": "da98ca38-0da5-4044-8b1f-063e094bf82c"
+    },
+    {
+      "claim_id": "7f730dba-403c-4f7d-a2d4-09224da4c517",
+      "result_id": "da98ca38-0da5-4044-8b1f-063e094bf82c"
+    },
+    {
+      "claim_id": "5aac29c4-48a0-439f-8ace-8a8136345737",
+      "result_id": "97c6fd12-5c28-47ef-8841-f75b6ec58001"
+    },
+    {
+      "claim_id": "36d04bb8-d699-41ce-9d27-1dea57b58de4",
+      "result_id": "97c6fd12-5c28-47ef-8841-f75b6ec58001"
+    },
+    {
+      "claim_id": "d28485bd-9fa1-45c2-a237-a0cac191906a",
+      "result_id": "97c6fd12-5c28-47ef-8841-f75b6ec58001"
+    },
+    {
+      "claim_id": "ecab0083-e78a-40c4-a607-9d48d99068a5",
+      "result_id": "97c6fd12-5c28-47ef-8841-f75b6ec58001"
+    },
+    {
+      "claim_id": "8bb9239e-b900-434d-a5fe-e501e10ecec4",
+      "result_id": "97c6fd12-5c28-47ef-8841-f75b6ec58001"
+    },
+    {
+      "claim_id": "34b7d1bc-8615-4930-8707-eaaa80893f19",
+      "result_id": "97c6fd12-5c28-47ef-8841-f75b6ec58001"
+    },
+    {
+      "claim_id": "46a0aa86-a01c-4226-8a1c-e67d83ba106f",
+      "result_id": "9be7805f-c407-41c1-84d0-affe798582c1"
+    },
+    {
+      "claim_id": "7cda29d5-30c0-4947-9a8e-91478b4a6a83",
+      "result_id": "9be7805f-c407-41c1-84d0-affe798582c1"
+    },
+    {
+      "claim_id": "d6b20e04-500e-46bb-b729-0d65f98524ee",
+      "result_id": "9be7805f-c407-41c1-84d0-affe798582c1"
+    },
+    {
+      "claim_id": "7d72ab1b-203b-4562-8e75-7ee4f9404573",
+      "result_id": "03d3d885-605e-45a5-87dc-3e35071f1169"
+    },
+    {
+      "claim_id": "c5eb7bd8-83cb-4b46-be64-8e9bf0cd7eae",
+      "result_id": "03d3d885-605e-45a5-87dc-3e35071f1169"
+    },
+    {
+      "claim_id": "07553403-2646-49ce-aa21-108ff9ba40ea",
+      "result_id": "03d3d885-605e-45a5-87dc-3e35071f1169"
+    },
+    {
+      "claim_id": "6eb2ef6d-8aee-48e7-87c3-157513232ef3",
+      "result_id": "03d3d885-605e-45a5-87dc-3e35071f1169"
+    },
+    {
+      "claim_id": "9a9ac882-a059-4ee9-a90d-f4edc0cea8e1",
+      "result_id": "03d3d885-605e-45a5-87dc-3e35071f1169"
+    },
+    {
+      "claim_id": "087be96b-fb7a-439e-b47e-6aafccf2b5f2",
+      "result_id": "03d3d885-605e-45a5-87dc-3e35071f1169"
+    },
+    {
+      "claim_id": "10a79b96-ebb8-48b0-b94a-1e16998d8054",
+      "result_id": "03d3d885-605e-45a5-87dc-3e35071f1169"
+    },
+    {
+      "claim_id": "993dff74-3823-4228-9413-5e8c55b1ff48",
+      "result_id": "03d3d885-605e-45a5-87dc-3e35071f1169"
+    },
+    {
+      "claim_id": "d22ca553-393e-4491-96e0-7e51cb12e0f9",
+      "result_id": "03d3d885-605e-45a5-87dc-3e35071f1169"
+    },
+    {
+      "claim_id": "6456ed4e-1aa6-4bea-ac15-123094b48651",
+      "result_id": "d3c7c95a-d730-4d0d-9770-d540725f5356"
+    },
+    {
+      "claim_id": "ce713dc2-cd07-4d53-8264-c132c04c6aff",
+      "result_id": "d3c7c95a-d730-4d0d-9770-d540725f5356"
+    },
+    {
+      "claim_id": "5473e5fc-eecf-4d9d-ab74-dd5fa79324b7",
+      "result_id": "d3c7c95a-d730-4d0d-9770-d540725f5356"
+    },
+    {
+      "claim_id": "5c821c4e-ab09-45f8-a64a-fe1a80c4c708",
+      "result_id": "d3c7c95a-d730-4d0d-9770-d540725f5356"
+    },
+    {
+      "claim_id": "cd8bee54-22cd-4e64-97b1-4167b67c5c70",
+      "result_id": "d3c7c95a-d730-4d0d-9770-d540725f5356"
+    },
+    {
+      "claim_id": "6dfbde6c-ccfa-4413-8768-0aa6eefa55eb",
+      "result_id": "8dfaa142-a270-426f-994a-ecd6ad08ea63"
+    },
+    {
+      "claim_id": "309872e1-7794-4053-863b-aa917b768a66",
+      "result_id": "8dfaa142-a270-426f-994a-ecd6ad08ea63"
+    },
+    {
+      "claim_id": "361d85dc-ad52-497d-8586-7847ff6797ff",
+      "result_id": "8dfaa142-a270-426f-994a-ecd6ad08ea63"
+    },
+    {
+      "claim_id": "3309a926-96ae-4f5f-ab7c-82a402a1e48d",
+      "result_id": "37b8412b-37fe-4c65-979c-85671da2ec8a"
+    },
+    {
+      "claim_id": "2e0ffa28-572f-42bc-8083-bb5bedf46b5d",
+      "result_id": "37b8412b-37fe-4c65-979c-85671da2ec8a"
+    },
+    {
+      "claim_id": "47765b91-eec1-46c2-9a5d-920bf5db487e",
+      "result_id": "37b8412b-37fe-4c65-979c-85671da2ec8a"
+    },
+    {
+      "claim_id": "ef33b2ae-e1a5-4fc0-a225-298f963f8453",
+      "result_id": "c70af06d-eabe-4e2e-b6f8-409b720e139d"
+    },
+    {
+      "claim_id": "5fd625d1-ca82-4be3-81fd-68891cb4af48",
+      "result_id": "c70af06d-eabe-4e2e-b6f8-409b720e139d"
+    },
+    {
+      "claim_id": "3f9f0fea-94b6-4270-bbbb-c4a9af1716dd",
+      "result_id": "c70af06d-eabe-4e2e-b6f8-409b720e139d"
+    },
+    {
+      "claim_id": "2008e667-e747-4ad0-a7f5-143c3b4fbeeb",
+      "result_id": "c70af06d-eabe-4e2e-b6f8-409b720e139d"
+    },
+    {
+      "claim_id": "ce75e143-7245-47b9-b3b2-21891aae94be",
+      "result_id": "c70af06d-eabe-4e2e-b6f8-409b720e139d"
+    },
+    {
+      "claim_id": "51b824e3-1d0a-4e53-b1c1-42d7b6efcab2",
+      "result_id": "c70af06d-eabe-4e2e-b6f8-409b720e139d"
+    },
+    {
+      "claim_id": "00869c38-a8ab-4a1d-afc6-d235197c04a5",
+      "result_id": "c70af06d-eabe-4e2e-b6f8-409b720e139d"
+    },
+    {
+      "claim_id": "3be9674a-7af3-4bb5-9aa9-89295f1ba34a",
+      "result_id": "c70af06d-eabe-4e2e-b6f8-409b720e139d"
+    },
+    {
+      "claim_id": "c31d1e17-845f-4f49-b6e1-7522737e1570",
+      "result_id": "c70af06d-eabe-4e2e-b6f8-409b720e139d"
+    },
+    {
+      "claim_id": "7677e1cc-ffed-40de-ad6e-d9f0eb5c28a0",
+      "result_id": "c70af06d-eabe-4e2e-b6f8-409b720e139d"
+    },
+    {
+      "claim_id": "6d7bb631-5ced-4eb3-bf6f-80fbccfbc5df",
+      "result_id": "c70af06d-eabe-4e2e-b6f8-409b720e139d"
+    },
+    {
+      "claim_id": "57062980-bc57-4368-8da9-1d3133d6100c",
+      "result_id": "c70af06d-eabe-4e2e-b6f8-409b720e139d"
+    },
+    {
+      "claim_id": "685bf268-d48d-488a-ab86-eb66b62d3b86",
+      "result_id": "c70af06d-eabe-4e2e-b6f8-409b720e139d"
+    },
+    {
+      "claim_id": "2b60d343-04da-474f-a831-9dbe09b56f94",
+      "result_id": "b89a7af4-6f3b-4ae0-ad85-d81ce69574a9"
+    },
+    {
+      "claim_id": "2cec585d-c7e8-4980-b828-ae9636cdfeb5",
+      "result_id": "b89a7af4-6f3b-4ae0-ad85-d81ce69574a9"
+    },
+    {
+      "claim_id": "eb7dd564-0c64-4677-9454-74ded303422e",
+      "result_id": "b89a7af4-6f3b-4ae0-ad85-d81ce69574a9"
+    },
+    {
+      "claim_id": "2212a02d-67d2-4db8-bb0d-427333983c36",
+      "result_id": "b89a7af4-6f3b-4ae0-ad85-d81ce69574a9"
+    },
+    {
+      "claim_id": "c86aebd8-5864-4e8b-aa13-eb611de1707a",
+      "result_id": "b89a7af4-6f3b-4ae0-ad85-d81ce69574a9"
+    },
+    {
+      "claim_id": "dbfff7e7-5d1d-47bc-a012-1b7c1b011ba3",
+      "result_id": "b89a7af4-6f3b-4ae0-ad85-d81ce69574a9"
+    },
+    {
+      "claim_id": "40f20e71-3181-4427-8cb9-b10bf36dc14a",
+      "result_id": "b89a7af4-6f3b-4ae0-ad85-d81ce69574a9"
+    },
+    {
+      "claim_id": "bb19a6f2-f7eb-4098-ad48-cfce80010bad",
+      "result_id": "b89a7af4-6f3b-4ae0-ad85-d81ce69574a9"
+    },
+    {
+      "claim_id": "31b5e637-5bee-4817-881c-e599ff61a06f",
+      "result_id": "b89a7af4-6f3b-4ae0-ad85-d81ce69574a9"
+    },
+    {
+      "claim_id": "173155b3-b845-4966-a1c8-7316e18383f3",
+      "result_id": "8bec870c-0216-41cb-8eff-0609316c6383"
+    },
+    {
+      "claim_id": "82021f5f-e0bd-431b-a666-028901e7cef8",
+      "result_id": "8bec870c-0216-41cb-8eff-0609316c6383"
+    },
+    {
+      "claim_id": "68b86a1b-34f0-46af-b9a3-ea9491d329b7",
+      "result_id": "8bec870c-0216-41cb-8eff-0609316c6383"
+    },
+    {
+      "claim_id": "3d81e805-deee-4561-9f2a-f6d8fded62a6",
+      "result_id": "8bec870c-0216-41cb-8eff-0609316c6383"
+    },
+    {
+      "claim_id": "d7b73955-3865-43db-8edc-259225d8bd2b",
+      "result_id": "8bec870c-0216-41cb-8eff-0609316c6383"
+    },
+    {
+      "claim_id": "2b4e9bab-07f6-49a9-943f-5975c323b92d",
+      "result_id": "b67378ba-6438-46e8-9936-61fef037356c"
+    },
+    {
+      "claim_id": "23a4011a-61c8-4077-90e6-173f7e7923c1",
+      "result_id": "ff84972c-bdaa-428a-a6c6-89c8ce03b8e4"
+    },
+    {
+      "claim_id": "e353b24b-a39c-4a5a-bb74-ebcb0fbf7060",
+      "result_id": "ff84972c-bdaa-428a-a6c6-89c8ce03b8e4"
+    },
+    {
+      "claim_id": "64cb058c-e70d-46f2-90ad-e7d056399d9b",
+      "result_id": "762ba84f-ca65-478b-ac16-7179a7ec06b4"
+    },
+    {
+      "claim_id": "36ada0e1-5d7f-41f6-bc1e-0d8a7d038448",
+      "result_id": "762ba84f-ca65-478b-ac16-7179a7ec06b4"
+    },
+    {
+      "claim_id": "4e823e22-8c4b-48ce-9644-53645cd4596b",
+      "result_id": "762ba84f-ca65-478b-ac16-7179a7ec06b4"
+    },
+    {
+      "claim_id": "96207e94-6161-45c9-bfdc-c5dc30edb26b",
+      "result_id": "762ba84f-ca65-478b-ac16-7179a7ec06b4"
+    }
+  ],
+  "comparisons": []
+}

@@ -1,0 +1,238 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "The authors developed SM-PAT-seq, a single-molecule, nucleotide-resolution, transcriptome-wide method for measuring poly(A) tail lengths. The method uses Pacific Biosciences Sequel technology to generate circular consensus sequences (CCS) from individual mRNA molecules, with each CCS read representing a single mRNA with its full-length PAT. Validation showed R\u00b2 = 0.58 correlation with RNA-seq for transcriptome-wide abundance and R\u00b2 = 0.96 correlation with northern blotting for GFP mRNA quantification, with >99% of reads representing unique molecules.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C25-C29 describe the SM-PAT-seq methodology with supporting data in Figures 1-2. The method is well-documented with appropriate validation experiments. The correlation with RNA-seq (C27) is moderate but reasonable given technical differences between methods, while the correlation with northern blotting (C28, C40) is excellent. The uniqueness analysis (C29) demonstrates single-molecule resolution. The methodological claims (C96-C98) are standard descriptions of the PacBio technology.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "LARP4 overexpression in HEK293 cells leads to dose-dependent PAT lengthening across ~13,500 mRNAs. At 11X LARP4 expression, the median PAT length shifted from ~75 nt (1X) to ~90 nt, with the greatest increase in mRNAs with PATs of 150-250 nt. Most gene ontology categories showed PAT lengthening correlated with LARP4 levels, except mitochondrial DNA-encoded mRNAs. Nuclear-encoded mitochondrial mRNAs showed significantly shorter PATs and less response to LARP4. GFP reporter mRNA showed dose-dependent PAT lengthening and increased accumulation with LARP4 expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C40 are well-supported by SM-PAT-seq data in Figure 2 with appropriate statistical analysis (p-values provided for comparisons). The dose-response relationship is clear across three LARP4 expression levels (1X, 3X, 11X) with biological triplicates. The exception for mitochondrial mRNAs (C36, C37) is interesting and appropriately noted. The GFP reporter validation (C38-C40) provides orthogonal confirmation with excellent correlation between SM-PAT-seq and northern blotting (R\u00b2 = 0.96, p = 0.000035).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "LARP4 knockout in MEFs results in transcriptome-wide PAT shortening across ~10,500 mRNAs. KO MEFs showed increased fractions of mRNAs with short PATs (30-60 nt) and decreased fractions with longer PATs (75-200 nt) compared to WT. The median PAT lengths were significantly shorter in KO versus WT cells. LARP4 had no effect on mitochondrial DNA-encoded mRNA PATs. The data indicate that PATs \u226475 nt are more susceptible to deadenylation in the absence of LARP4.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C43 are supported by SM-PAT-seq data from triplicate MEF cell lines (Figure 3A-B) with highly significant p-values (p = 4.53E-291 for overall distribution, p = 9.34E-55 for median lengths). The specificity for nuclear-encoded mRNAs (C43) is demonstrated in Figure 3\u2014figure supplement 1. The conclusions about PAT susceptibility (C70-C72) are reasonable interpretations of the steady-state data, though they represent inferences rather than direct measurements of deadenylation rates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "LARP4 deletion alters the PAT length phasing pattern of ribosomal protein mRNAs in MEFs. Both WT and KO showed bimodal distributions in the 35-70 nt range, but with different relative peak heights. The KO showed a higher peak at 60-75 nt and a steeper transition from long to short PATs. The profiles intersected at ~110 nt, similar to the transition point observed for total mRNAs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C48 are supported by data in Figure 3C showing clear differences in phasing patterns between WT and KO for ribosomal protein mRNAs (p = 1.81E-61 for overall distribution, p = 0.000431 for median lengths). The bimodal distribution (C47) is evident in the data. The interpretation of altered phasing (C48) is reasonable given the observed differences. Background claims about phasing (C44-C45) are appropriately cited to prior work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "LARP4 promotes accumulation of interferon-stimulated gene (ISG) mRNAs. RNA-seq identified 128 ISG mRNAs induced \u22651.5-fold higher with 3X LARP4 after DNA transfection (Padj < 0.05). Northern blots confirmed higher ISG mRNA levels with LARP4 overexpression after poly(I:C) transfection, with evidence of PAT lengthening. Cells expressing 3X LARP4 produced more ISG mRNA at lower doses of inducing DNA. The effect requires LARP4's PABP-interaction motifs (PAM2w and PBM).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C55 are supported by RNA-seq data (Supplementary file 3) and northern blots (Figure 4A-D). The RNA-seq used appropriate statistical thresholds (\u22651.5-fold, Padj < 0.05) with biological triplicates. Northern blot validation (C51-C52) provides orthogonal confirmation with quantification shown in Figure 4B. The dose-response experiment (C53) and motif requirement analysis (C55) strengthen the conclusions. However, the mechanism by which LARP4 affects ISG induction versus stability is not fully resolved.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Time-course analysis after transcription inhibition revealed that LARP4 slows deadenylation, with effects most apparent at PATs \u226475 nt. ISG15 mRNA showed a ~4 hr half-life in WT cells but 2.8 hr in KO cells. SM-PAT-seq time courses showed that in KO cells, a peak at 35-40 nt appeared by 30 min, while this peak appeared later (60 min) in WT cells. The ~75 nt PAT peak converted to ~38 nt PATs faster in KO than WT cells. Analysis of 194 ISG mRNAs and ~10,500 total mRNAs showed consistent patterns of accelerated deadenylation in KO cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C68 are supported by northern blot and SM-PAT-seq time-course data (Figure 5). The ISG15 half-life measurements (C56) are from duplicate experiments with citation to prior work for the WT value. The SM-PAT-seq time courses (C58-C62, C66-C67) show clear kinetic differences between WT and KO, with the KO showing earlier appearance of short PAT peaks. The interpretation that LARP4 slows deadenylation (C63, C68) is well-supported by the kinetic data. The analysis includes both total mRNAs and a defined ISG set (C64), strengthening the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C69",
+      "C73"
+    ],
+    "result": "LARP4 is a general factor that shapes PAT profiles throughout mRNA lifespan, with most prominent effects at 30-75 nt. LARP4 slows the conversion of long PAT-mRNAs to short PAT-mRNAs transcriptome-wide, impacting mRNA decay at short lengths known to sensitize PABP dissociation. Time-course analysis demonstrated accelerated deadenylation in KO cells on PATs < 75 nt with phasing consistent with greater PABP dissociation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C7, C69, C73 represent the major conclusions of the study, synthesizing results from multiple experiments. These conclusions are well-supported by the steady-state SM-PAT-seq data (Figures 2-3) showing effects across thousands of mRNAs, and the time-course data (Figure 5) demonstrating kinetic differences. The emphasis on 30-75 nt PATs (C5, C6) is supported by the data showing most prominent differences in this range. The interpretation linking PAT protection to mRNA stability (C7) is reasonable given the combined PAT length and mRNA decay data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "LARP4 can stabilize both stable and unstable mRNAs by protecting against deadenylation. The stable GFP reporter mRNA showed longer PATs than cellular mRNAs, likely because it represents newly transcribed mRNA versus steady-state populations. LARP4 increased GFP mRNA stability by protecting long PATs during its lifespan. Changes in LARP4 levels may differentially affect turnover of different mRNA sets depending on their lifespan poly(A) profiles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C76 are supported by the GFP reporter data (Figure 2E-F) and citations to prior work (C76). The interpretation that GFP mRNA represents newly transcribed species (C74) is reasonable and cited to recent work (Eisen et al., 2020b). The conclusion about LARP4 protecting long PATs on stable mRNA (C75) is supported by the dose-dependent increases in both PAT length and mRNA accumulation. Claim C77 is more speculative but represents a reasonable hypothesis based on the data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "The authors propose a model for LARP4 action based on PAT phasing patterns. The WT and KO profiles intersect at ~110 nt, corresponding to the transition from PAN2/3 to CNOT deadenylation. The KO 60-75 nt peak may represent PATs bound by three PABPs including dissociation intermediates. The steeper KO transition profile suggests more efficient formation of these complexes, consistent with LARP4 impeding CNOT deadenylation. Time-course data suggest the ~75 nt PABP(3) complex is less stable in KO cells, with intermediates appearing in KO that are masked in WT.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C84-C90 represent speculative interpretations of the phasing data (Figure 6) in the context of prior biochemical studies. While the observations about profile intersections (C84) and peak differences (C85-C88) are data-supported, the molecular interpretations about specific PABP complexes and intermediates are largely speculative (note the language: \"we suspect,\" \"might suggest,\" \"may reflect\"). The model is plausible and consistent with cited biochemical studies, but lacks direct experimental validation of the proposed PABP complexes and intermediates.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "The authors propose a model in which LARP4 stabilizes PABP on short PATs to shield them from deadenylases, compensating for decreased PABP-PAT stability through interactions involving LARP4's two PABP-binding motifs (PAM2w and PBM). LARP4's unique PAM2w can alternatively bind poly(A) or PABP. Effects on long PATs and stable mRNA suggest LARP4 may influence mRNA early in its lifespan with consequences later.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C95 represent the authors' mechanistic model. While C91 acknowledges that direct 3' end protection remains possible, the model emphasizing PABP stabilization (C92-C93) is well-supported by the combined data showing: (1) PAT protection requires PABP-binding motifs (C55), (2) effects are most prominent at short PATs where PABP stability is known to decrease, and (3) phasing patterns suggest altered PABP dynamics. The dual-binding capability of PAM2w (C94) is cited to prior structural work. Claim C95 is more speculative but reasonable given the effects on long PATs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C49",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "Background claims about LARP4, PABP, and deadenylation machinery establish the context for the study. LARP4 directly binds poly(A) and PABP via PAM2w and PBM motifs, and was previously shown to promote PAT lengthening and mRNA stabilization. PABP binds poly(A) with ~27 nt periodicity and recruits deadenylases. Prior work showed PAT lengthening and stabilization effects of LARP4 on reporter and endogenous mRNAs, with requirements for PABP-interaction motifs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C8-C24, C49, C78-C83 are background claims appropriately cited to prior literature. These establish the known properties of LARP4, PABP, and deadenylation machinery that provide context for the current study. All claims are supported by appropriate citations to primary research or reviews. These are not novel findings of the current study but necessary background information.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "Methodological details for cell culture and quality control. Primary MEFs were generated from E14.5 embryos (all female), with different immortalization methods used for different experiments. HEK293 cells were authenticated by STR profiling and verified free of mycoplasma contamination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C104 describe standard cell culture methods and quality control procedures. The use of different MEF immortalization methods for different experiments (C101-C102) is clearly documented with appropriate citations. Cell authentication and mycoplasma testing (C103-C104) represent good practice. The specification that all MEFs were from female embryos (C100) is important for reproducibility.",
+    "result_type": "MINOR"
+  }
+]

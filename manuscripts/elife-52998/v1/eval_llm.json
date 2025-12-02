@@ -1,0 +1,336 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "Zebrafish adult stripe patterns consist of three pigment cell types (melanocytes, xanthophores, and S-iridophores) organized in distinct layers, with S-iridophores appearing in two forms (dense in interstripes, loose in stripes).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C3-C8 describe well-established biological observations about zebrafish pigment pattern composition and cellular organization, supported by multiple citations to published experimental work (Hirata et al., 2003; Frohnh\u00f6fer et al., 2013; Parichy et al., 2009) and Figure 1. These are foundational biological facts that form the basis for the modeling work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "Adult zebrafish pattern formation begins with xanthophore dedifferentiation to xanthoblasts by 21dpf, followed by appearance of metamorphic melanocytes (14-21dpf) and dense S-iridophores along the horizontal myoseptum, which initiate the first interstripe and subsequent bidirectional pattern development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C15 describe the temporal sequence of pattern development, supported by multiple citations (McMenamin et al., 2014; Mahalwar et al., 2014; Parichy et al., 2000b, 2009) and Figure 1C. These are established biological observations from the literature that provide the developmental context for the model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "All three pigment cell types are required for proper stripe formation, and previous mathematical models that neglected S-iridophores failed to predict that their absence leads to melanocyte spots rather than stripes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C18 are supported by citations to experimental work (Frohnh\u00f6fer et al., 2013; Patterson and Parichy, 2013) and references to previous modeling studies. This establishes the motivation for including S-iridophores in the current model and highlights a key limitation of prior Turing reaction-diffusion models.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C19",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "The model is an agent-based, on-lattice model incorporating five cell types (melanocytes, xanthophores, xanthoblasts, dense and loose S-iridophores) on three independent 2D lattice domains, initialized at 25dpf (2mm \u00d7 1mm), updated using the Gillespie algorithm, and including uniform domain growth and both short-range and long-range cellular interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19, C23-C33 describe the model architecture and implementation details, supported by citations to relevant methods (Gillespie, 1977; Parichy et al., 2009) and Figures 2A, 3. The model structure is clearly defined and justified based on biological observations and computational considerations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "The model incorporates novel predictions about S-iridophore behavior: dense S-iridophores are attracted to xanthophores in short range, loose S-iridophores repel each other in short range, S-iridophores proliferate 1-2 times per day with rapid migration, and transitions between dense and loose forms are interchangeable and regulated by Tjp1a.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C42 describe S-iridophore behaviors, combining established observations (C38-C42 supported by Mahalwar et al., 2014; Fadeev et al., 2015) with novel predictions (C34-C37) derived from mutant phenotype analysis. The predictions are explicitly stated as hypotheses and are justified by the authors' reasoning about mutant patterns shown in Figure 4.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C2",
+      "C20",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "The model qualitatively reproduces wild-type and mutant (shd, nac, pfe) pigment patterns across developmental stages, with quantitative robustness demonstrated through 100 simulations with perturbed parameters showing consistent pattern formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C20, C47-C52 are supported by simulation results in Figures 5-6 and Appendix 4-figure 1. The model successfully generates patterns matching real fish at multiple developmental stages (PB, PR, SP, J+) for WT and three mutants, with specific quantitative metrics (e.g., 100% of shd simulations showing two pseudo-stripes, mean spot width 0.18 of length) demonstrating reproducibility.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C53",
+      "C54"
+    ],
+    "result": "The model successfully replicates patterns of additional mutants not used in model derivation (rse, sbr, cho, seurat) and regeneration patterns after ablation experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C54 are supported by Figures 7-9 showing qualitative matches between simulations and published observations for mutants with S-iridophore defects and regeneration experiments. This represents a more stringent test of model validity since these phenotypes were not used to derive the model rules.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C55",
+      "C58",
+      "C59"
+    ],
+    "result": "The model quantitatively matches published data for melanocyte numbers across developmental stages (within error bars except stage SP), X0 interstripe widths (within \u00b11 SD for all mutants), and pigment cell density ratios (4.01:1 xanthophores to melanocytes).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55, C58-C59 are supported by Figure 10A-B comparing simulated data with published measurements from Frohnh\u00f6fer et al., 2013 and Mahalwar et al., 2016. The quantitative agreement is strong, with only one exception (stage SP melanocyte numbers), demonstrating the model's predictive accuracy.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C60"
+    ],
+    "result": "All S-iridophore transition interactions are necessary for pattern formation in WT and single-cell mutants (nac, pfe), as demonstrated by systematic removal of individual interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C60 is supported by Figure 11 showing that removal of any S-iridophore transition rule disrupts pattern formation in WT, nac, or pfe. This systematic analysis demonstrates the necessity of the proposed S-iridophore rules for successful pattern generation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C62",
+      "C78",
+      "C79"
+    ],
+    "result": "The model predicts that S-iridophores play a more important role than xanthophores in promoting melanocyte differentiation, with stronger S-iridophore signaling improving qualitative and quantitative matches for shd and pfe patterns and affecting stripe/interstripe width.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62, C78-C79 are supported by Figure 14A-B showing improved pattern matches with increased S-iridophore signaling strength and discussion of quantitative improvements in melanocyte numbers and stripe widths. This represents a novel prediction that differs from previous models and is supported by simulation results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C71"
+    ],
+    "result": "The model proposes five testable hypotheses about leo gene function affecting cell-cell interactions, successfully replicating leo and leo double mutant patterns (leo;nac, leo;pfe, leo;shd, leo;sbr), and predicting that melanocyte repulsion from xanthophores may not be necessary for leo spot formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C65, C71 are supported by Figure 15 showing systematic testing of hypotheses and successful pattern replication for leo and multiple double mutants. The model generates novel predictions about leo function through systematic hypothesis testing, though these remain to be validated experimentally.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C76",
+      "C77"
+    ],
+    "result": "The model predicts that pattern formation depends on both initial S-iridophore interstripe position and domain growth, with initial domain size affecting stripe number, and demonstrates that stripe insertion (as in Pomocanthus) can occur with appropriate initial conditions and centered growth.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C69, C76-C77 are supported by Figure 13 showing in silico experiments manipulating initial conditions and domain size. These predictions about the roles of initial conditions and growth in pattern formation represent novel insights from the model that can guide future experimental work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C61"
+    ],
+    "result": "Increased height-to-length ratio correlates with more tortuous stripes in simulations (R = -0.617, p<0.01).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C61 is supported by Figure 14C showing the correlation. However, the authors note this does not match real fish observations, suggesting missing mechanisms for stripe straightness maintenance. This represents a limitation of the current model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C21",
+      "C70",
+      "C90"
+    ],
+    "result": "Current biological understanding, combined with simple assumptions about S-iridophore behavior, is sufficient to explain adult pigment pattern formation in WT and multiple mutants, with independent modeling approaches (this study and Volkening & Sandstede, 2018) providing mutually reinforcing support.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21, C70, C90 represent the main conclusion of the study, supported by the successful simulation of WT and multiple mutant patterns (Figures 5-7, 10) and comparison with the independent work of Volkening & Sandstede, 2018. The convergence of two independent modeling approaches strengthens confidence in the sufficiency of the proposed biological rules.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "The model is the first to explicitly test the sbr mutation, providing theoretical support that delayed S-iridophore transition from dense to loose (due to Tjp1a loss) is sufficient to explain the sbr phenotype.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C75 are supported by Figure 7K'-N' showing successful replication of sbr pattern development and citations to Fadeev et al., 2015 describing the biological basis. This represents a novel application of the model to test a specific molecular mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "The model's complex rule-set differs from simpler Turing reaction-diffusion models in that small parameter changes do not generate qualitatively different patterns, suggesting evolved robustness through partially redundant mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C85 are supported by the robustness analysis (Figure 6, Appendix 4-figure 1) showing consistent patterns with parameter perturbations, and comparison with Turing models (citations to Watanabe & Kondo, 2015; Maini et al., 2012). This represents an important conceptual insight about biological pattern formation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "The modeling approach differs from Volkening & Sandstede (2018) in using an on-lattice model, continuous-time updates, and incorporating stronger S-iridophore signaling for melanocyte differentiation, leading to better quantitative matches for some mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C89 are supported by citations to Volkening & Sandstede, 2018 and discussion of methodological differences. The comparison highlights complementary approaches and specific improvements in the current model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "The model correctly predicts pfe melanocyte numbers up to stage J+ but fails to predict the sharp decrease to 50% of WT by adulthood, indicating that new mechanisms involving L-iridophores are needed for pattern maintenance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C93 are supported by citation to Frohnh\u00f6fer et al., 2013 and acknowledgment of model limitations. This represents an important identification of the model's scope and areas requiring future work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C94",
+      "C95"
+    ],
+    "result": "The on-lattice model is amenable to derivation of a continuum model, opening opportunities to explore whether pfe and nac pattern formation can be described as Turing patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C95 describe future research directions based on the model structure. This is a reasonable proposal given the on-lattice formulation, though the actual derivation and analysis remain to be done.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "The model predicts that pattern integrity in fish with particular height-to-length ratios may relate to growth position, and will allow exploration of dorso-ventral asymmetry drivers including Agouti signaling and differential growth.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C96-C98 describe predictions and future directions. C97 is supported by citation to Cal et al., 2019 regarding Agouti's role, but C96 and C98 are speculative proposals for future work without current supporting evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "The leo gene encodes Connexin 39.4 (required in melanocytes and xanthophores but not S-iridophores), leo melanocytes are not repelled by xanthophores, and the model provides testable hypotheses about leo function to guide future experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C82 are supported by citations to Irion et al., 2014 and Yamanaka & Kondo, 2014 for biological facts, and by Figure 15 showing the model's ability to generate testable hypotheses. This represents an important application of the model to guide experimental work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C99"
+    ],
+    "result": "The model highlights areas where knowledge is incomplete and enables in silico investigations to identify plausible mechanisms requiring experimental testing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C99 is supported by the various predictions and hypotheses generated throughout the study (e.g., S-iridophore rules, leo function, role of growth). This represents a key value of the modeling approach.",
+    "result_type": "MAJOR"
+  }
+]

@@ -1,0 +1,181 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C44",
+      "C53",
+      "C54"
+    ],
+    "result": "Temperature is a major factor shaping fish gut microbiome composition. Cold exposure (12\u00b0C) dramatically decreased microbial diversity and richness in both resistant and sensitive fish, with enrichment of Proteobacteria orders (Vibrionales and Alteromonadales) and depletion of other phyla. Low temperature acts as a selective pressure that constrains microbial communities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C18 provide converging statistical evidence (linear mixed-effects models, Wilcoxon tests, Permanova) showing temperature as the major factor affecting microbiome diversity, richness, and composition. The p-values are significant (p<0.001 to p=0.002), sample sizes are adequate (84 fish), and findings are supported by multiple complementary analyses including 16S gene copy numbers and rarefaction curves.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C55"
+    ],
+    "result": "Host genetic selection for cold tolerance shapes baseline microbiome composition. At optimal temperature (24\u00b0C), cold-resistant fish had lower microbial diversity but higher within-group similarity compared to sensitive fish. Specific taxa were enriched in each group, with resistant fish harboring microbes associated with broad temperature tolerance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C26 demonstrate host genetic effects through statistical analyses (Permanova, indicator species analysis) with significant p-values (p=0.04, p=0.01). The experimental design controls for environmental confounders by housing all fish in the same tanks. The identification of host-associated taxa is supported by both sequencing data and prior literature on temperature tolerance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C2",
+      "C56",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Host thermal tolerance modulates microbiome response to temperature stress. Cold-resistant fish showed significantly less change in microbiome composition and core microbiome abundance when exposed to cold compared to sensitive fish, indicating higher microbiome resilience in resistant hosts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C30 provide strong evidence through multiple complementary approaches: \u03b2-diversity analysis (p=0.02), fold-change comparisons of core microbiome, and qPCR validation of specific taxa. The convergence of sequencing and qPCR data strengthens the conclusion. The significant interaction term (C20: p=0.012) supports differential responses between host groups.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C47",
+      "C48"
+    ],
+    "result": "Cold exposure induced functional shifts in the microbiome, with depletion of metabolic pathways and enrichment of cellular processes, signaling, and stress response pathways. These functional changes were more pronounced in cold-sensitive fish compared to resistant fish.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C36 are supported by PICRUSt functional predictions and LEfSe analysis showing significant pathway changes (p<0.0001 for fold-change differences between groups). However, PICRUSt predictions are computational inferences from 16S data rather than direct functional measurements, which introduces some uncertainty. The consistency with prior cold-response literature (C35, C48) provides additional support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C51",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Host transcriptomic response parallels microbiome response to cold exposure. Resistant fish showed lower fold-change in gene expression and higher similarity between temperature conditions compared to sensitive fish. Canonical correlation analysis revealed that 83% of microbiome variance could be explained by transcriptomic variance (p=0.0044), with shared metabolic pathways affected in both host and microbiome.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C43 demonstrate host-microbiome correlation through transcriptomic analysis with appropriate statistical tests (Wilcoxon p<0.0001, CCA p=0.0044). The CCA permutation test (1000 permutations) provides robust evidence for the correlation. However, correlation does not establish causation, and the direction of influence remains unclear. The shared pathway analysis (C41-C42) strengthens the biological interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C1",
+      "C50",
+      "C52",
+      "C62",
+      "C66",
+      "C67"
+    ],
+    "result": "The findings support the hologenome concept, demonstrating that host genetic selection for thermal tolerance is associated with microbiome composition and response, suggesting host-microbe associations function as a unit responding to environmental stress.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C50, C52, C62, C66-C67 represent the study's overarching interpretation. The experimental data (previous result groups) collectively support this conclusion by showing coordinated host-microbiome responses. The experimental design (same-tank housing across generations, C52, C73) controls for environmental confounders, strengthening the genetic interpretation. However, this remains an association study and does not demonstrate that the hologenome is the unit of selection.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C78"
+    ],
+    "result": "The experimental design involved 84 fish from 6 families (3 resistant, 3 sensitive) selected based on extreme cold-tolerance phenotypes, challenged by temperature reduction from 24\u00b0C to 12\u00b0C, with microbiome and transcriptomic analysis. All fish were housed in the same tanks to control for environmental effects, and no mortality occurred during the challenge.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C78 describe the experimental design, which is clearly documented and appropriate for testing the hypothesis. The sample size (7 fish per family, 84 total) is adequate for statistical analyses performed. Housing fish in the same tanks (C73) is a strength that controls for environmental confounders. The lack of mortality (C78) indicates the cold challenge was sub-lethal, appropriate for studying acclimation rather than survival.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C45",
+      "C46",
+      "C49",
+      "C57",
+      "C58",
+      "C60",
+      "C68",
+      "C69",
+      "C70",
+      "C77"
+    ],
+    "result": "Background literature establishes that gut microbiomes are important for host function, temperature affects poikilothermic organisms and their microbiomes, tilapia show cold sensitivity with transgenerational inheritance of tolerance, and specific microbial taxa and metabolic pathways are associated with cold adaptation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C8, C45-C46, C49, C57-C58, C60, C68-C70, C77 represent prior knowledge supported by appropriate citations. These provide the scientific context and rationale for the study. The citations appear relevant and appropriately used to establish background knowledge.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C10"
+    ],
+    "result": "There was a dramatic decrease in microbial diversity when both groups were exposed to cold temperature, though the p-value (p=7.2E-02) does not reach conventional significance threshold.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C10 reports a p-value of 0.072, which does not meet the conventional significance threshold of p<0.05. While the trend is consistent with the highly significant richness decrease (C11: p=2.7E-08) and the overall conclusion, this specific diversity comparison is not statistically significant by standard criteria. The authors describe it as 'dramatic' despite marginal statistical support.",
+    "result_type": "MINOR"
+  }
+]

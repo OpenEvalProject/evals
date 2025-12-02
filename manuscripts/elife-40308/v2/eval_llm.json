@@ -1,0 +1,368 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "The study compiled a dataset of 138 OMBBs and used HMM profile alignments to identify evolutionary relationships, focusing on a prototypical group of 97 barrels (71%) representing 50,832 sequences. This dataset provides good coverage of the OMBB sequence space.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C40 and C90-C92 describe the dataset construction and coverage. The methods are clearly described, the dataset size is quantified, and the coverage assessment is supported by comparison to prior estimates (C91). The use of experimentally-solved structures (C29) addresses limitations of topology prediction (C28).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C45",
+      "C46",
+      "C47",
+      "C93",
+      "C94"
+    ],
+    "result": "Prototypical OMBBs are organized into subclusters by strand number, with barrels of the same strand number being more closely related than those with different strand numbers. Alignments within the same strand number are more frequent and of higher quality (lower E-values) than between different strand numbers, suggesting that mutation events are more frequently fixed than duplication events in OMBBs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C47 and C93-C94 are supported by quantitative network analysis data shown in Figures 1-2. The E-value comparisons (C45) and frequency analysis (C46) provide clear evidence. The inference about mutation vs. duplication fixation rates (C47, C93) is logically drawn from the alignment quality data, though it contrasts with general expectations (C24-C27).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C95",
+      "C96"
+    ],
+    "result": "Internal repeats are identified in 39% of prototypical barrels, predominantly in smaller barrels, and consist of hairpin or double hairpin shifts. The 8-stranded barrels show double hairpin shifts, while 12-, 14-, and 16-stranded barrels show single hairpin shifts. These findings suggest that strand number diversification largely results from amplification when it occurs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C57 provide detailed quantitative findings about internal repeat patterns, supported by Figure 3 and supplementary data. The characterization of repeat types is systematic and the data are robust across different E-value thresholds (C50). The inference about amplification (C95-C96) is reasonable given the high percentage of barrels with internal repeats.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "The internal repeat pattern in 8-stranded barrels (strands 1-3 aligning with 5-7 in 8/14 cases) suggests evolution from a smaller double hairpin unit, with the last strand possibly degenerated. This raises the possibility of a primordial four-strand multi-chain beta barrel, consistent with hypotheses about repeat protein origins from homo-oligomers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C97-C101 present a speculative evolutionary hypothesis. While C97 provides quantitative data (8/14 barrels), the interpretations in C98-C100 are increasingly speculative. The hypothesis about a primordial multi-chain barrel (C100) is interesting but lacks direct evidence. The connection to homo-oligomer origins (C101) is supported by citation but remains speculative for this specific case.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C87",
+      "C102"
+    ],
+    "result": "An evolutionary pathway is traced from 8-stranded barrels to 10-, 12-, 14-, and 16-stranded barrels through C-terminal alignments, where the last strands of both barrels align. The 8-stranded barrels align with 2-8 strands (145/186 involving the last strand), and this pattern is maintained in subsequent transitions, consistent with a primordial 8-stranded barrel developing more strands at the N-terminus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C67 and C87, C102 describe a clear evolutionary pathway supported by extensive alignment data shown in Figure 4. The quantitative findings (C64-C67) provide strong evidence for C-terminal conservation. The interpretation of an 8-stranded primordial barrel (C102) is well-supported by the alignment patterns, though the specific mechanism (hairpin duplication or other) remains open.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C68",
+      "C103",
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "Secondary evolutionary transitions occurred from 14-stranded to 22-stranded barrels (strands 4-13 aligning to 10-19) and from 16-stranded to 18-stranded barrels. The 14-to-22 transition mechanism remains unclear, with unusual non-C-terminal localization and lack of internal duplication suggesting a different amplification mechanism than other transitions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68, C103, C118-C120 describe the second step of diversification. The 14-to-22 alignment pattern (C68) is clearly documented. The acknowledgment that this transition mechanism is unclear (C118) is appropriate given the unusual features (C120). The speculation about large stabilizing domains (C119) is reasonable but unproven.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "The 16-to-18-stranded barrel transition shows extensive variation with four categories of alignments: C-terminal (46%), N-terminal (32%), offset (14%), and loop-to-strand transitions (9%). These include loop-to-hairpin transitions (2 and 9 examples in different directions) and large rearrangements (7 examples), suggesting multiple evolutionary paths and non-duplication mechanisms for strand number increase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C81 and C104-C109 provide detailed quantitative characterization of 16-to-18 transitions shown in Figures 4-5. The categorization is systematic and the percentages are clearly stated. The minimal HMM overlap (C74: 0.041% average, 3.7% max) addresses concerns about contamination. The interpretation of multiple evolutionary paths (C106) and non-duplication mechanisms (C105, C109) is well-supported by the diversity of alignment patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "Loop-to-strand transitions show intermediate biochemical properties: polarity alternation in loops (45%) and strands (55%) are both similar to control strands (44%) rather than control loops (28%), while hydropathy values show loops (-0.57) are less hydrophobic than strands (-0.22) but more hydrophobic than control loops (-1.11). These properties suggest a fluid boundary between strand and loop conformations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C86 provide quantitative biochemical analysis of loop-to-strand transitions. The data show that transitioning loops have intermediate properties between typical loops and strands. The interpretation of a fluid boundary (C110) is reasonable given these data. The speculation about mutation mechanisms (C113) and the acknowledgment of alternative explanations like indels (C114) are appropriately cautious.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "The novel non-duplication mechanisms of strand number diversification challenge the view that all repeat segments arise from gene/motif duplications, indicating that the membrane environment and barrel function enforce structural repeats even without sequence repeats.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C115-C117 present the key conceptual advance of the study. The evidence for non-duplication mechanisms (loop-to-hairpin transitions, large rearrangements) is well-documented in prior result groups. The interpretation that environment and function enforce structural repeats (C117) is a significant insight supported by the observation of repeated topology without sequence duplication.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C143",
+      "C144",
+      "C145"
+    ],
+    "result": "There is significant conservation of strands in the C-terminal half of OMBBs across all strand numbers, with much lower conservation in the N-terminus. This pattern is most distinct for 16-stranded barrels and represents unequal diversification within membrane proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C89 and C143-C145 describe C-terminal conservation patterns shown in Figure 6. The finding is consistent across different sequence identity thresholds (Figure 6 and supplement). The observation extends prior work on membrane protein diversification (C142) by showing it is applied unequally (C143). The quantitative data clearly support this asymmetric conservation pattern.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C33",
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C155"
+    ],
+    "result": "The C-terminal conservation may be related to OMP folding, potentially through C-terminal nucleation of folding or a SAM50-like mechanism where BamA incorporates C-terminal strands. This is supported by prior experimental work showing the importance of penultimate strands in folding and is consistent with folding nucleus conservation in soluble proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C9-C10, C33, and C146-C155 connect C-terminal conservation to folding mechanisms. While the conservation pattern is well-established (prior result), the folding implications are speculative. Prior experimental work (C147-C149) supports the importance of C-terminal/penultimate strands, but the specific folding models (C153, C155) are hypothetical. The alternative explanations (C146: negative vs. positive selection) are not distinguished. This requires experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "All bacterial OMBBs are even-stranded because the charge-out rule and membrane topology are difficult to override. Only 11/2642 alignments show strand redirection, and in all cases the topology flip is corrected by a subsequent strand becoming a loop, preventing perpetuation of topology reversal through the protein.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C121-C127 explain why single-strand additions don't lead to odd-stranded barrels despite being theoretically possible. The quantitative data (C125: 11/2642 redirections) and the observation that all are corrected (C126) provide strong evidence. The explanation based on the charge-out rule (C123) and topological constraints (C124) is logical and supported by citations. The contrast with helical proteins (C127) strengthens the argument.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133"
+    ],
+    "result": "The network shows frequent strand additions but no clear cases of strand deletion, though deletions cannot be excluded. This may be due to lower deletion rates in bacteria, the requirement for two events to see deletion from an 8-stranded primordial barrel, or insufficient sample size to detect rare events.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C128-C133 acknowledge a limitation in detecting strand deletions. The finding of no clear deletions (C130) is honestly reported with appropriate caveats. The three alternative explanations (C131-C133) are all plausible and supported by citations (C131) or logical reasoning (C132-C133). The uncertainty is appropriately characterized.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141"
+    ],
+    "result": "No 20-stranded barrels have been found despite structures for all other even-numbered barrels from 8-26. This absence may be explained by the rarity of strand number transitions and the improbable pathways required (doubling of rare 10-stranded barrels or three transitions from the primordial group via 18-stranded barrels).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C134-C141 address the absence of 20-stranded barrels. The observation is well-documented (C134-C135) and the non-random distribution is clear (C136). The explanations (C138-C141) are speculative but logical given the established rarity of transitions (C137) and the scarcity of 10-stranded barrels (C139). The speculation is appropriately qualified (C141: 'may be').",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C43",
+      "C44"
+    ],
+    "result": "As barrels increase in strand number, there is a slight increase in average amino acid volume in the strands, likely because larger barrels require larger amino acids to enforce the smaller curvature of larger barrel circumferences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C44 describe a correlation between strand number and amino acid volume shown in Figure 2\u2014figure supplement 1. The observation (C43) is data-based, and the explanation (C44) is a reasonable structural interpretation, though it remains speculative. This is a minor supporting observation that doesn't affect the main conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Background context on OMBBs: they are \u03b2-barrel proteins in Gram-negative bacterial outer membranes with diverse functions, even strand numbers (8-26), and are believed to have evolved through \u03b2-hairpin amplification. Duplication events are generally more common than mutations, though the study addresses this specifically for OMBBs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C28 provide background information supported by citations and established knowledge. These are not novel findings but necessary context. The mutation and duplication rates (C25-C27) are from cited sources and provide important context for interpreting the study's findings about OMBB evolution.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C29",
+      "C30"
+    ],
+    "result": "The study used experimentally-solved structures rather than predictions to obtain accurate strand numbers and identities, combined with HMM alignments to leverage statistical power from thousands of sequences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C30 describe a key methodological choice that addresses the limitations of topology prediction (C28: 69% accuracy). This approach is well-justified and enables the detailed structural-evolutionary analysis that follows. The methodology is clearly described and appropriate for the research questions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C156"
+    ],
+    "result": "The study identifies strand-number-based evolutionary pathways from 8- to 16- to 18-stranded barrels, including non-amplification mechanisms like loop-to-hairpin transitions that challenge the view that repeat topology arises only from DNA duplication. This illustrates how genetic changes influence structural changes in OMBBs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C32, C5-C8, and C156 summarize the main findings. These are well-supported by the detailed results in prior groups. The identification of non-amplification diversification (C5, C32) is a major contribution. The interpretation about membrane-induced topology perpetuation (C8) is somewhat speculative but reasonable given the evidence. The summary (C156) accurately captures the study's contributions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C157",
+      "C158"
+    ],
+    "result": "Future structural characterization of more prototypical beta barrels will elucidate additional evolutionary links, though some evolutionary steps may remain obscured by subsequent evolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C157-C158 are reasonable predictions about future work. C157 is a straightforward expectation that more data will reveal more connections. C158 appropriately acknowledges the fundamental limitation that evolutionary intermediates may be lost. These are appropriate concluding statements.",
+    "result_type": "MINOR"
+  }
+]

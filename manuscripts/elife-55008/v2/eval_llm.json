@@ -1,0 +1,332 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C19",
+      "C25",
+      "C26",
+      "C27",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "A fluctuation analysis algorithm was developed and validated to detect localized Ca2+ puffs during global Ca2+ signals. The algorithm applies spatial and temporal filtering, calculates standard deviation in a running window, and corrects for photon shot noise. Validation using IP3R-null cells treated with ionomycin showed no spurious fluctuations, confirming the method specifically detects puff activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The methodological claims are well-supported by systematic validation experiments (C31-C33) showing that the algorithm correctly identifies puff activity while avoiding false positives from photon noise or uniform Ca2+ elevations. The technical specifications (C25-C27) are clearly described, and comparison with spatial SD analysis (C34) provides additional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C20",
+      "C21",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C112"
+    ],
+    "result": "During IP3-evoked global Ca2+ signals, puffs occur as a transient flurry during the rising phase but terminate before the peak response. The duration of puff activity shortens and peak SD magnitude increases with faster rising global Ca2+ signals. Notably, cytosolic Ca2+ continues to rise after puffs cease.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple experimental observations (C36-C44) consistently demonstrate the temporal pattern of puff activity across different stimulation strengths. The pooled data (C42) from multiple cells confirms this is a reproducible phenomenon. The continued Ca2+ rise after puff cessation (C41) is a key observation supporting the existence of a second mode of Ca2+ release.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Carbachol (CCH)-evoked Ca2+ signals show similar patterns of puff activity as photoreleased i-IP3, with puffs occurring during the rising phase and subsiding before peak. Peak amplitudes and rising kinetics are comparable between CCH and i-IP3 stimulation, though CCH responses decay faster, likely due to more rapid IP3 degradation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The comparison between CCH and i-IP3 stimulation (C47-C49) is quantitatively supported with statistical measurements. The interpretation of faster decay with CCH (C50) is reasonable speculation based on known IP3 metabolism, though it remains inferential. The key finding that both stimulation methods produce similar puff patterns strengthens the generalizability of the results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "Puff activity shows an inverted-U relationship with global Ca2+ levels, peaking at \u0394F/F0 ~2 and declining at higher Ca2+ levels. This decline is not due to indicator saturation, as evidenced by: ionomycin responses reaching much higher fluorescence levels, detection of puffs at peak Ca2+ levels, and similar patterns with the lower-affinity indicator fluo-8L.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The inverted-U relationship is well-documented across multiple conditions (C51-C53). The extensive controls ruling out indicator saturation (C54-C57, C106-C108) are thorough and convincing, including use of different indicators, demonstration of higher achievable fluorescence, and direct observation of puffs at high Ca2+ levels. This is critical for validating the physiological interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C142",
+      "C143"
+    ],
+    "result": "Puff activity patterns during IP3-evoked global Ca2+ signals are independent of extracellular Ca2+ influx. Responses in 2 mM Ca2+ closely match those in Ca2+-free medium, though decay is slower in Ca2+-containing medium, likely due to store-operated Ca2+ entry (SOCE).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The comparison between Ca2+-containing and Ca2+-free conditions (C58-C59) demonstrates that puff patterns are unaffected by extracellular Ca2+. The quantitative measurements of decay kinetics (C61) support the inference about SOCE (C62, C143). This effectively rules out a major potential confounding variable.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C63",
+      "C64"
+    ],
+    "result": "Inhibition of mitochondrial and lysosomal Ca2+ uptake with FCCP does not substantially alter the patterns of puff activity or global Ca2+ signals during CCH stimulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The FCCP experiments (C63-C64) provide clear evidence that mitochondrial and lysosomal Ca2+ handling does not significantly influence the puff-to-global Ca2+ signal transition. This control experiment helps narrow down the mechanisms responsible for puff termination.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C110",
+      "C123"
+    ],
+    "result": "Puff termination during global Ca2+ signals is not primarily caused by cytosolic Ca2+-mediated inhibition of IP3Rs. Prior elevation of cytosolic Ca2+ does not suppress subsequent puff activity, and EGTA buffering shifts but does not prevent puff termination, indicating the decline in SD signal reflects physiological puff cessation rather than indicator saturation or Ca2+ inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The experiments with prior Ca2+ elevation (C65-C66) and EGTA buffering (C67-C70) provide strong evidence against cytosolic Ca2+ inhibition as the primary mechanism. The shift in the inverted-U relationship with EGTA (C69-C70) is particularly informative. The conclusion (C71-C72) is well-supported by converging evidence from multiple experimental approaches.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C111",
+      "C124"
+    ],
+    "result": "Partial depletion of ER Ca2+ stores selectively suppresses puff activity while still allowing substantial global Ca2+ signals. This demonstrates that IP3 can evoke Ca2+ release through a diffuse, puff-independent mode when stores are partially depleted, and implicates ER luminal Ca2+ depletion as the dominant mechanism for puff termination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The ER depletion experiments using CPA (C73-C75) and repeated CCH stimulation (C76-C79) provide compelling evidence for store-dependent regulation of puff activity. The selective suppression of puffs while maintaining global responses (C74-C75) is a key observation supporting the two-mode model. The conclusion about luminal Ca2+ as the termination mechanism (C80-C81, C124) is well-supported, though the exact mechanism (local vs. global depletion) remains to be determined.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C109",
+      "C132"
+    ],
+    "result": "All three IP3R isoforms (types 1, 2, and 3) can individually mediate both punctate and diffuse modes of Ca2+ release. Cells expressing single isoforms show qualitatively similar patterns with puffs terminating before peak global Ca2+, though with isoform-specific differences in signal amplitude and kinetics. This demonstrates that functional differences between release modes cannot be attributed to different IP3R isoforms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The experiments with single-isoform expressing cells (C84-C88) provide strong evidence that both release modes are not isoform-specific. The quantitative differences between isoforms (C85-C88) are well-documented, but the qualitative similarity in the biphasic pattern (C84, C109) supports the conclusion that isoform identity does not determine release mode (C132). This is an important mechanistic insight.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C89"
+    ],
+    "result": "HeLa cells stimulated with histamine show similar patterns of Ca2+ signaling as HEK cells, with flurries of local activity during the rising phase that subside as Ca2+ levels rise.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The observation in HeLa cells (C89) demonstrates that the findings are not unique to HEK cells, supporting generalizability across cell types. However, this is a single observation and would benefit from more extensive characterization.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "Lattice light-sheet microscopy reveals that puff activity in the cell interior follows similar kinetics to peripheral sites, starting early and terminating during the rising phase. Interior puff activity is about one-quarter that of the periphery, and the diffuse Ca2+ component observed by TIRF cannot be explained by blurred signals from interior puffs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The light-sheet imaging (C90-C94) provides crucial 3D spatial information ruling out the possibility that diffuse signals in TIRF result from interior puffs. The quantitative comparison (C94) and the similar termination kinetics (C92-C93) support the conclusion (C95) that a distinct diffuse release mode exists. This addresses a key alternative explanation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C117",
+      "C118"
+    ],
+    "result": "Quantitative analysis of Ca2+ flux indicates that punctate puff activity contributes approximately 41% of initial Ca2+ release during the rising phase, but only ~13-17% of total Ca2+ liberation over the entire response. The majority of Ca2+ release occurs through a sustained, diffuse mode.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The quantitative flux analysis (C96-C99) provides important estimates of the relative contributions of the two release modes. The methodology for calculating Ca2+ removal rates (C96-C97) is sound, using both caged Ca2+ and tail-end decay measurements. The estimates (C98-C99, C117) are based on reasonable assumptions, though they involve some modeling uncertainty. The conclusion about diffuse release dominance (C118) is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C22",
+      "C23",
+      "C105",
+      "C113",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "Global Ca2+ signals involve two distinct modes of IP3R-mediated Ca2+ liberation: punctate release as transient local puffs, and a sustained diffuse release mode. The diffuse component cannot be explained by slow diffusion from puff sites and is evident when large global signals occur without detectable fluctuations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This is the central conclusion of the paper (C105), supported by multiple lines of evidence: continued Ca2+ rise after puff cessation (C3, C41), quantitative contribution analysis (C4, C22), theoretical arguments against diffusion (C113-C115), and direct observation of fluctuation-free global signals (C116). The convergence of evidence from different experimental approaches strongly supports this two-mode model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C125"
+    ],
+    "result": "The accelerated puff activity during the rising phase likely results from positive feedback via rising cytosolic Ca2+. Individual puffs terminate rapidly via stochastic Ca2+ inhibition, but flurries of repeated puffs indicate a slower termination process. ER depletion during rapid puff flurries at multiple sites is plausible as the termination mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The mechanistic interpretation (C120-C122) is well-grounded in established IP3R biophysics and the experimental observations. The speculation about ER depletion during flurries (C125) is reasonable given the data, though it remains to be directly tested. The distinction between fast (single puff) and slow (flurry) termination mechanisms (C122) is an important insight.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131"
+    ],
+    "result": "The two release modes might arise from functionally distinct IP3R populations: stationary clustered receptors (~30%) near the plasma membrane that mediate puffs, and motile distributed receptors throughout the cytoplasm that could mediate diffuse release. The motile receptors remain silent under conditions that selectively activate puffs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "This is largely speculative (C126, C131) based on prior knowledge about IP3R populations (C127-C130). While the hypothesis is plausible and consistent with existing literature, the current study does not directly test whether motile receptors mediate diffuse release. This represents a reasonable working model but requires further experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C24",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C141",
+      "C143",
+      "C144",
+      "C145"
+    ],
+    "result": "The two modes of Ca2+ liberation have important implications for downstream signaling specificity. Punctate puffs could selectively activate proximate effectors experiencing brief, high Ca2+ transients, while diffuse release would activate effectors responding to sustained bulk Ca2+ elevations. This spatial organization may be important for processes like SOCE activation, mitochondrial signaling, and lysosomal coupling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These claims about downstream signaling implications (C24, C138-C139) are largely speculative based on the current findings and prior knowledge. While the reasoning is sound and the cited examples (C141, C144-C145) are well-established, the current study does not directly test how the two release modes differentially affect downstream targets. The inference about SOCE (C143) is supported by the kinetic data but remains indirect.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C1",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "Background on IP3-mediated Ca2+ signaling: The building-block model proposes that global Ca2+ signals arise from coordinated activation of localized puffs at stationary IP3R clusters through Ca2+-induced Ca2+ release (CICR). However, recent theoretical work questions whether puffs alone are sufficient for global signal propagation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These are well-established background claims (C1, C5-C15, C100-C104) supported by extensive prior literature. The challenge to the building-block model (C16) appropriately sets up the motivation for the current study. These claims provide essential context but are not novel findings of this work.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,2062 @@
+{
+  "submission": {
+    "id": "4c42c7e9-e4bb-43c1-a4e0-42160720191a",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T20:56:45.238753Z",
+    "updated_at": "2025-12-02T20:56:45.238753Z"
+  },
+  "content": [
+    {
+      "id": "ae8f3b7b-bacc-4f92-aa1b-22d802d0f458",
+      "submission_id": "4c42c7e9-e4bb-43c1-a4e0-42160720191a",
+      "content_type": "manuscript",
+      "content_text": "# Task specialization across research careers\n\n## Authors\n\n- Nicolas Robinson-Garcia<sup>1</sup> ([ORCID: 0000-0002-0585-7359](https://orcid.org/0000-0002-0585-7359)) \u2020\n- Rodrigo Costas<sup>2</sup> ([ORCID: 0000-0002-7465-6462](https://orcid.org/0000-0002-7465-6462))\n- Cassidy R Sugimoto<sup>4</sup>\n- Vincent Larivi\u00e8re<sup>5</sup>\n- Gabriela F Nane<sup>1</sup>\n\n### Affiliations\n\n1. Delft Institute of Applied Mathematics, Delft University of Technology Delft Netherlands\n2. Centre for Science and Technology Studies, Leiden University Leiden Netherlands\n3. Centre for Research on Evaluation, Science and Technology (CREST), Stellenbosch University Stellenbosch South Africa\n4. School of Informatics, Computing, and Engineering, Indiana University Bloomington Bloomington United States\n5. \u00c9cole de biblioth\u00e9conomie et des sciences de l'information, Universit\u00e9 de Montr\u00e9al Montreal Canada\n\n\u2020 Corresponding author\n\n## Abstract\n\nResearch careers are typically envisioned as a single path in which a scientist starts as a member of a team working under the guidance of one or more experienced scientists and, if they are successful, ends with the individual leading their own research group and training future generations of scientists. Here we study the author contribution statements of published research papers in order to explore possible biases and disparities in career trajectories in science. We used Bayesian networks to train a prediction model based on a dataset of 70,694 publications from PLoS journals, which included 347,136 distinct authors and their associated contribution statements. This model was used to predict the contributions of 222,925 authors in 6,236,239 publications, and to apply a robust archetypal analysis to profile scientists across four career stages: junior, early-career, mid-career and late-career. All three of the archetypes we found - leader, specialized, and supporting - were encountered for early-career and mid-career researchers. Junior researchers displayed only two archetypes (specialized, and supporting), as did late-career researchers (leader and supporting). Scientists assigned to the leader and specialized archetypes tended to have longer careers than those assigned to the supporting archetype. We also observed consistent gender bias at all stages: the majority of male scientists belonged to the leader archetype, while the larger proportion of women belonged to the specialized archetype, especially for early-career and mid-career researchers.\n\n## Introduction\n\nSuccessful research careers are built on concepts such as leadership (Shen and Barab\u00e1si, 2014), productivity (McKiernan et al., 2019; Reskin, 1979), and impact (Radicchi et al., 2009; Petersen et al., 2014). But evidence suggests that the design of a unique career path built on individualistic success may hamper the way in which science is actually produced (Milojevi\u0107 et al., 2018). Collaboration has become essential and ubiquitous (Guimer\u00e0 et al., 2005; Mongeon et al., 2017); however, the increase in team size may come at a cost for those who are not in leading roles (Milojevi\u0107 et al., 2018). The overreliance on past success in terms of accrued credit through publications and citations (Merton, 1968) may both reduce the scientific careers of team players and introduce gender biases (Cole and Zuckerman, 1984; Macaluso et al., 2016; Larivi\u00e8re et al., 2013), discouraging women to pursue careers in academia (Gaule and Piacentini, 2018; Huang et al., 2019). The heterogeneity in scientists\u2019 profiles realizes the need for distribution of labor (Larivi\u00e8re et al., 2016). However, there is still a lack of understanding of how research profiles differ from each other, and how they are associated with career stages (Laudel and Gl\u00e4ser, 2008).\n\nThe goal of this study is to analyze the relation between task specialization and career length of scientists. Do specific profiles of scientists have shorter research careers than others? How do profiles relate to gender? Are these differences also reflected in productivity and citations? To answer those questions, we develop a Bayesian network-that is, a probabilistic graphical model-to predict the specific contributions scientists made to each of their publications throughout their career. We then profile researchers based on contribution statements and explore how those profiles evolve throughout their careers. We investigate how profiles at each career stage affect career length, with a particular focus on the relationship with the perceived gender of the scientist. Finally, we examine the relationship between profiles and bibliometric characteristics, such as research production and scientific impact.\n\nOur seed dataset contains a total of 70,694 papers authored by 347,136 scientists from PLoS journals in the Medical and Life Sciences fields. Author names are disambiguated using a rule-based scoring algorithm (Caron and van Eck, 2014). Each author has also been linked to their bibliometric data from Web of Science. We restrict our dataset to the Medical and Life Sciences to make it more homogeneous and avoid disciplinary differences in task distribution. We assign papers to fields by identifying the journal to which each of the references of the publications in our dataset belong. We then assign to each publication the field from which most of its references come. Finally, we only include those which are assigned to the Medical and Life Sciences fields. Further details are provided in the Materials\u00a0and\u00a0methods section.\n\nWe then build a probabilistic model to predict authors\u2019 contribution to publications, based on a set of bibliometric variables. This model allows us to extend our analysis from the initial dataset to the complete publication history of these authors. We reconstruct the publication history of 222,925 authors from our original dataset and predict, for each author, the probability of conducting a given contribution on each of their publications. Based on the new dataset of predicted probabilities of contributorship, we divide scientists\u2019 careers into four stages and conduct an robust archetypal analysis (Eugster and Leisch, 2011) by stage. This allows us to identify differences in scientific profiles by stage and gender, and explore differences in scientific paths.\n\n## Results\n\n### Contribution statements and predicting variables\n\nFive types of contribution statements are identified in the contribution dataset: wrote the paper (WR), conceived and designed the experiments (CE), performed the experiments (PE), analyzed the data (AD), and contributed reagents/materials/analysis tools (CT). The number of contributions (NC), that is, the sum by paper of the contributorships each author reports, is also considered. These contributions are assumed to be related with author order (Milojevi\u0107 et al., 2018; Mongeon et al., 2017; Sauermann and Haeussler, 2017), with first and last positions in author order reflecting leadership (Chinchilla-Rodr\u00edguez et al., 2019), as per the recommendations of the International Committee of Medical Journal Editors, 2015. Figure 1 relates career stage and author order with contribution role. We define four career stages: junior (< 5 years since first publication), early-career (\u2265 5 and < 15 years since first publication), mid-career (\u2265 15 and < 30 years since first publication) and late-career (\u2265 30 years since first publication). These four stages are defined in consistency with other classifications of career stages in the literature (Laudel and Gl\u00e4ser, 2008; Milojevi\u0107 et al., 2018; European Commission, 2016).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/60586/elife-60586-fig1-v2.jpg)\n\n**Figure 1.:** (A) Share of publications of authors by contributorship at each career stage. (B) Share of publications of authors by contributorship based on their author position in each paper. Only publications with at least 3 authors are included for B. Career stages: junior stage (< 5 years since first publication); early-career stage (\u2265 5 and < 15 since first publication); mid-career stage (\u2265 15 and < 30 years since first publication); and full career stage (\u2265 30 years since first publication). WR (wrote the paper); AD (analyzed the data); CE (conceived and designed the experiments); CT (contributed reagents/materials/analysis tools); PE (performed the experiments); NC (number of contributions).\n\nThe distribution of reported contribution roles by career stage shows that earlier stages are more often associated with performing experiments and analyzing data, and that this contribution decreases as individuals become more senior. Writing the manuscript and contributing reagents and tools increase over time, with a decline in the late-career stage. Conceiving and designing the experiments demonstrates a modal shape, where early-career and mid-career stages are the ones in which these tasks are more prominent. In terms of labor distribution, first authors are heavily associated with all contributions, with the exception of contributing tools, reagents, data, and other materials. Middle authors report to be less involved in writing tasks or in the design and conception of experiments but are associated with contributing resources to a much greater extent. Last authors report contributing mostly to the design and conception of experiments as well as to writing tasks, and to a lesser extent to the performance of experiments.\n\nBibliometric indicators are employed as predictors of contributorship. Two types of bibliometric variables are included: paper-level and author-level. Paper-level variables are document type (DT), number of authors (AU), number of countries (CO), and institutions (IN) to which authors of the paper are affiliated. Author-level variables include their position in the authors\u2019 list (PO), number of years since they published their first publication (YE) and the average number of publications per year (PU).\n\nFigure 2A depicts the coefficients of a mixed correlation matrix of the contributorship and bibliometric data, while Figure 2B illustrates the Bayesian network used for predicting the contribution of a researcher for a given publication. The highest correlations within types of contributorship are between writing the manuscript and conceiving and designing the experiments (0.71), while the rest of contributorship variables exhibit low correlations. In the case of bibliometric variables, there is a moderate positive correlation between number of countries and institutions (0.66), author position and number of authors (0.68), and number of authors and number of institutions (0.72). A strong positive monotone relation between the number of contributions and either writing the manuscript (0.85), conceiving the experiments (0.82) or analyzing the data (0.79) is observed. The number of contributions seem therefore to be associated with those type of contributions. Weak monotone negative relationships are suggested by correlations between the number of contributorships and bibliometric variables. Negative correlations are observed between performing the experiments and position in authors list, years since publication and average number of publications. Weak to moderate negative correlations are observed between contributorship variables and the number of countries and institutions, author\u2019s position, and number of authors of a publication.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/60586/elife-60586-fig2-v2.jpg)\n\n**Figure 2.:** Contribution variables are in green, bibliometric variables are in blue. Bibliometric variables: PO (author\u2019s position); AU (number of authors); DT (document type); CO (number of countries); IN (number of institutions); YE (years since first publication); PU (average number of publications). Contribution variables: WR (wrote the paper); AD (analyzed the data); CE (conceived and designed the experiments); CT (contributed reagents/materials/analysis tools); PE (performed the experiments); NC (number of contributions).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/60586/elife-60586-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Contribution variables are in green, bibliometric variables are in blue. Red arcs correspond to white listed relations, that is, those arcs which, although identified by the algorithm, have modified directionality to allow predictions on contributorship based on bibliometric information.\n\n### Bayesian network model for predicting contributorship\n\nWe model our dataset using a Bayesian network (BN) to be able to predict contribution roles of scientists for their publications based on the bibliometric information of the given publications. The aim here is to expand our original dataset to the complete publication history of the 347,136 researchers from the Medical and Life Sciences who had published at least one paper in our PLOS seed dataset. A BN is a probabilistic graphical tool used to model multivariate data (Nielsen and Jensen, 2009). The variables are denoted as nodes in the network, whereas the arcs denote influences between variables, typically quantified as dependencies. BN accounts not only for dependencies between the predictor variables and variables of interest, but also for dependencies between predictor variables. This characteristic, along with the forthright graphical representation, makes BNs an attractive choice to model dependent multivariate data.\n\nFigure 2B shows the structure of the obtained BN. Five types of contributions along with the number of contributions (in green) of scientists are predicted using the seven bibliometric variables (in blue). The structure of the BN has been obtained by using a hybrid data-learning algorithm called Max-Min Hill Climbing (MMHC) (Tsamardinos et al., 2006), along with the constraint that bibliometric variables are influencing contributorship variables. That is, if an arc between bibliometric and contributorship variables is present in the structure, then it should be directed to the contributorship variable. Furthermore, the structure of the network has been tested for robustness. The strength of the arcs, i.e., relationships between variables, has been investigated using the bootstrap procedure, with 50 repetitions. Only the arcs that were present in 80% of the repetitions have been considered and are depicted in Figure 2B.\n\nWe evaluate the predictive power of the obtained BN using k-fold cross-validation. That is, the data has been repeatedly divided in 10 random folds, of which 9 have been used to learn the BN structure using the MMHC algorithm together with the aforementioned constraints. The contributions were then predicted for the remaining fold. The procedure has been repeated for each of the 10 folds and results on the prediction errors reported in the Materials\u00a0and\u00a0methods section. The predictive performance of the BN has been shown to be extremely good, with an average classification error rate of between 6-8% for all contributorships and a mean squared error (MSE) of 0.12 for the predicted NC. The BN is used to predict the contributions for the complete publication history of a subset of 222,925 scientists who have published in PLOS journals, for a total of 6,236,239 publications. Each contribution is predicted as the probability that an author has performed a given contribution on a publication. We further investigate the distributions of the predicted contributorships.\n\nWhen distinguishing by career stage (Figure 3), the densities clearly depict differences in contributorships. Performing the experiments is the most discriminative contributorship type, with junior scientists more likely be associated with this contribution. The more scientists advance in their career, the less likely that they will perform the experiments. Albeit less dramatic, the same discriminative pattern can be observed for analyzing the data and for the total number of contributorships, with decreasing association by age. Inversely, the contribution roles of wrote the manuscript, conceived the experiments, and contributed with tools are more likely for advanced career stages.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/60586/elife-60586-fig3-v2.jpg)\n\n**Figure 3.:** Distributions are aggregated by career stage. (A) Probability distributions for the contributorship Wrote the manuscript.\u00a0(B) Probability distributions for the contributorship Analyzed the data. (C) Probability distributions for the contributorship Conceived and designed the experiments. (D) Probability distributions for the contributorship Contributed with tools. (E) Probability distributions for the contributorship Performed the experiments. (F) Probability distributions for estimated Number of contributions of an author. Red color refers to scientists\u2019 junior stage, green to early-career stage, blue to mid-career stage and purple to late-career stage.\n\n### Profiling scientists using robust archetypal analysis\n\nWe aggregate the predicted contributorships at the individual level and by career stage to profile scientists based on their contributorship patterns. To avoid the effect of contributorship outliers, we aggregate researchers\u2019 contributorships by choosing the median predicted contributorship of publications for each career stage. We perform a robust archetypal analysis (RAA) to identify types of scientists based on their contributorships (Eugster and Leisch, 2011). Archetypes accentuate distinct features of scientists based on contribution data. Robust archetypal analysis identifies \u2018\u2018prototypical types\u2019\u2019 of the multivariate aggregated contributorship dataset, correcting for outlier effects in the data. Each of these \u2018\u2018prototypical types\u2019\u2019 or archetypes is represented as a convex combination of researchers in the aggregated contributorship dataset and, in turn, each researcher is well described by a convex combination of these archetypes.\n\nWe consider archetypes of scientists at each career stage. A residual sum of squares (RSS) analysis for different archetypes reveals that using two archetypes for the junior and late-career stages, and three for early-career and mid-career stages results in significantly smaller RSS. Figure 4\u2014figure supplement 1 reveals the screeplots of RSS per career stage, where the elbow criterion supports the choice of number of archetypes per career stage. The influence of contributorships within each archetype is captured by corresponding coefficient values. Coefficients of each archetype (Leading, Specialized and Supporting) per career stage are presented in Figure 4. Low values indicate low prevalence of corresponding type of contributorship, whereas high values indicate a high contribution to the archetype.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/60586/elife-60586-fig4-v2.jpg)\n\n**Figure 4.:** Two archetypes are identified in the junior stage (Specialized and Supporting), three have been identified for the early- and mid-career (Leader, Specialized and Supporting) and two have been identified for the late-career stage (Leader and Supporting). Uncertainty intervals of coefficients are shown in brackets. Color grades reflect the value of the parameters. Contributions statements: WR, wrote the manuscript; AD, analyzed data; CE, conceived and designed the experiments; PE, performed the experiments; CT, contributed with tools.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/60586/elife-60586-fig4-figsupp1-v2.jpg)\n\nA first notable observation is that differences in contributions are remarkably small for certain archetypes throughout career stages. Given that the archetypes at each stage have common characteristics, we maintain the same profile naming across stages. Three archetypes are identified. The Leader is characterized by high coefficient values for all contributions, except for PE, indicating a high prevalence of each contribution role, and especially on WR and CE. The Specialized archetype is characterized by high coefficient values for PE and AD. A trend analysis for this archetype indicates a shift between PE and AD contributions. The third archetype is referred to as the Supporting, and is characterized by generally low values for all contributorships. This is the least discriminatory archetype.\n\nAt the junior stage, we observe two archetypes: Specialized and Supporting. Both are characterized by scientists reporting more than two contributions per paper. For the Specialized archetype, the most prevalent roles are on PE and AD, although they show higher coefficients than Supporting for all contributorships except CT (with a marginal difference). At the early-career stage, three archetypes are obtained, with a clear difference on PE between Leader and Specialized. These three archetypes are maintained during the mid-career stage, with the most notable difference being the shift between AD and PE for the Specialized, that now exhibits a higher probability of conducting the former than the latter. In the late-career stage, the Specialized archetype is no longer identified, and again two archetypes emerge. Both archetypes show low probabilities on PE, while the Leader is characterized by a higher probability on WR and CE. Overall, RAA shows that BN\u2019s predictions can accurately capture the diversity of archetypes of scientists and are sufficiently discriminating.\n\nUncertainty of the coefficient values has been accounted for to illustrate the robustness of the obtained archetypes, per career stage. The uncertainty intervals display small variations around the initial coefficients, which confirms the robustness of the archetypes. The large differences as well as similarities in contributions are well preserved by the uncertainty intervals.\n\n### Career paths, productivity and citation impact\n\nSimilarities between the archetypes are identified at each career stage, demonstrating the stability of the classification by scientific age (Figure 4). In turn, each scientist can be represented as a weighted combination of the archetypes. For a given scientist, the weights, or \u03b1 scores, corresponding to each archetype determine the researchers\u2019 assignment to one of the two or three archetypes. Here, we assign researchers to archetypes based on the highest weight. The assignment can be done for each career stage, which naturally leads to a career path.\n\nFigure 5A presents the assignment of researchers to the archetypes and their evolution over the four career stages, using the maximum coefficients and the median aggregation method. However, we observe some patterns by archetype. Out of the 222,295 scientists included in the dataset, 27,714 reached the late-career stage. We observe that there is little attrition, regardless of the archetype to which scientists belong, between the junior and early-career stage (93% for junior Specialized and 83% for Supporting authors). At the early-career stage, when the Leader archetype emerges, the advantage of those exhibiting a Leader profile becomes evident: 84% of scientists who belong to the Leader archetype in their early-career reach the next career stage, while 30% and 16% of Specialized and Supporting scientists progress to mid-career stage respectively. The cost is even higher from mid-career to late-career, with 37% of Leader profile scientists, and only 1% and 2% of Specialized and Supporting authors reaching the last career stage.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/60586/elife-60586-fig5-v2.jpg)\n\n**Figure 5.:** (A) Sankey diagrams indicating the number of scientists by archetype at each career stage and transitions from one stage to the next, including changes on researchers\u2019 archetype. (B) Productivity boxplots, by archetype and career stage. This is calculated based on the cumulative number of publications scientists had authored at each given stage. (C) Share of highly cited publications boxplots by archetype and career stage. Highly cited publications are defined as those which are among the 10% most highly cited publications in their field and year of publication. Red refers to the Leader archetype, Blue refers to the Specialized archetype and Green refers to the Supporting archetype.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/60586/elife-60586-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** Colored areas provide descriptive interpretation. Yellow indicates a small effect size, green indicates medium and purple indicates a large effect size. size.\n\nFurthermore, 98% of scientists reaching the late-career stage exhibited a Specialized archetype in their junior stage, and 67% of those reaching this last career stage have consistently displayed a Leader profile in early- and mid-career stages. Shifts across archetypes appear more likely at earlier career stages, as well as from the Leader archetype to the other two archetypes (but not vice versa). Even though most of the scientists reaching the late-career stage belong to the Leader archetype in their mid-career stage, 66% of late-career researchers are in a Supporting role, although they remain involved in more than one contributorship type.\n\nWhen comparing archetypes by number of publications (Figure 5B), we observe almost no differences in publication rates in the junior stage. Nonetheless, differences emerge for later career stages. Except for the late-career stage, where Supporting scientists are the most productive, the Leader archetype exhibits higher productivity, followed by Supporting. Specialized scientists appear to be much less productive than scientists assigned to the other two archetypes in the early- and mid-career stages. This pattern is also observed for Specialized, in the case of citation impact. However, differences in terms of share of highly cited publications between the Leader and the Supporting archetypes are much smaller, with the latter exhibiting higher values.\n\nWe investigated whether the differences are statistically significant using Wilcoxon rank sum test (Wilcoxon, 1945). All group comparisons between archetypes within each career stage reveal statistically significant differences. Furthermore, effect sizes to evaluate the strength of the differences are reported in Figure 5\u2014figure supplement 1, along with their confidence intervals. We observe large effect sizes on the differences in productivity for early- and mid-career stages, a medium effect size for late-career and a small effect-size for junior stage. Despite the low p-values (all below $2.2\u2062E-16$) and the apparent difference in median share of highly cited publications between the specialized archetype and the other two archetypes of the mid-career stage, we observe that the effect sizes are small across all career stages.\n\n### Archetypes and gender\n\nFigure 6 shows that scientists are unevenly distributed by gender in each archetype. Note that scientists from different generations are included in the analysis, therefore, caution should be expressed in drawing any conclusion on the number of scientists by gender that reach the late-career stage. The share of women who reach the late-career stage is affected by the generational diversity of scientists and hence we make comparisons only within career stage. We observe a gender disparity especially in the early- and mid- career stages. The share of men is higher for the Specialized archetype at the junior stage, and for the Leader archetype at the early- and mid-career stages. The second most frequent is the Specialized archetype, with few men in the Supporting archetype, except for the late-career stage. Women are less likely to appear as the Leader archetype in the early- and mid-career stages. Whereas 87% of men in the junior stage have a Specialized archetype, 43% and 77% in the early- and mid-stage are designated as Leaders; 84% of women in junior are Specialized, and only 27% and 65% in early- and mid-career stages show a leading profile. The gender distribution becomes more balanced again at the late-career stage, where 35% of men and 31% of women are in the Leader archetype. In summary, women appear to group within the Specialized archetype in the early-career stage, and show similar distributions to that of men at the other career stages, although the shares of the Leader archetype are consistently lower to that of men. These differences on the distribution of scientists by archetype and gender and how they might affect their trajectory is made more evident in Figure 6\u2014figure supplement 1 and 2.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/60586/elife-60586-fig6-v2.jpg)\n\n**Figure 6.:** Top-left panel refers to the junior stage in which only two archetypes are present: specialized and supporting. Top-right refers to the early-career stage. Bottom-left refers to the mid-career stage. Bottom-right refers to the late-career stage, again here only two archetypes are observed: leader and supporting. Blue refers to women scientists and yellow to men scientists.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/60586/elife-60586-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** Red refers to the Leader archetype, Blue refers to the Specialized archetype and Green refers to the Supporting archetype.\u00a0.\n\n![Figure 6\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/60586/elife-60586-fig6-figsupp2-v2.jpg)\n\n**Figure 6\u2014figure supplement 2.:** Red refers to the Leader archetype, Blue refers to the Specialized archetype and Green refers to the Supporting archetype.\n\n![Figure 6\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/60586/elife-60586-fig6-figsupp3-v2.jpg)\n\n**Figure 6\u2014figure supplement 3.:** Colored areas provide descriptive interpretation. Yellow indicates small effect size, green indicates medium and purple indicates large effect. Values for all archetypes in junior and late-career stage are overlapping.\n\nWe employed two-proportion z tests, based on Pearson\u2019s chi-squared test statistic, to investigate whether the differences in proportions within career stage are statistically significant. A 95% confidence interval of the differences in proportion allowed us to compute confidence intervals around the estimated percentages. As expected, the confidence intervals along with the very small p-values (all below $2.2\u2062E-16$) indicate that the differences are statistically significant, hence it is unlikely that the observed differences to have occurred by chance. Effect sizes have been computed using Cohen, 2013. We observe a medium effect size on differences by gender for Leader and Specialized profiles at the early- and mid-career stages (Figure 6\u2014figure supplement 3).\n\n### Archetypes and author position\n\nWe analyze the relationship between author order and archetypes by career stage. Figure 7 shows the share of papers by archetype and career stage of scientists based on their author position. Middle authorships occupy a larger share of publications irrespective of the archetype or career stage, which is a consequence of the fact that any paper with more than three authors, most authors are in middle positions. We do observe, however, variation in middle authorship by career stage. At the junior stage, middle authorships account for half of the papers from Specialized scientists, while Supporting scientists occupy a middle position in almost 75% of their publications. In the early-career stage, the Leader archetype emerges, exhibiting a more balanced share of publications between first (32%), middle (37%) and last positions (32%). Specialized scientists publish a slightly higher share as first authors (36%) but almost in half of their papers appear in middle positions (48%). The Supporting archetype publishes more than half of their papers as middle authors (53%), evenly distributed between first and last authored publications.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/60586/elife-60586-fig7-v2.jpg)\n\n**Figure 7.:** Top-left panel refers to the junior stage in which only two archetypes are present: specialized and supporting. Top-right refers to the early-career stage. Bottom-left refers to the mid-career stage. Bottom-right refers to the late-career stage, again here only two archetypes are observed: leader and supporting. Blue refers to share of scientists publishing as first authors, green refers to those publishing as middle authors, and pink refers to those publishing as last authors.\n\n![Figure 7\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/60586/elife-60586-fig7-figsupp1-v2.jpg)\n\n**Figure 7\u2014figure supplement 1.:** Colored areas provide descriptive interpretation. Yellow indicates small effect size, green indicates medium and purple indicates large effect. Values for specialized and supporting and the junior stage and leader and supporting at the late-career are overlapped.\n\nAt the mid-career stage, Leader scientists start to shift to last positions (36%), with only 26% of their publications being first authored. Specialized scientists become the middle authors in 55% of their publications and are last authors on 23% of their publications. Supporting scientists, however, position themselves as last authors in 35% of their publications. The Specialized archetype disappears in the late-career stage. The Leader and Supporting archetypes show similar distributions of publications according to their author position, revealing that at this stage, author position is more related with seniority than contributorship.\n\nSimilar to the gender analysis, we have evaluated whether the differences in proportions are statistically significant. All pairwise tests reveal statistical significance, as supported also by the very small confidence intervals. The effect sizes are reported in Figure 7\u2014figure supplement 1. We observe a large effect size for specialized authors in the junior stage and supporting authors in the late-career between being first or last author. Large effects sizes are also observed between being first or middle author for supporting authors across all stages, as well as specialized at their mid-career stage and leaders and their late-career stage. Finally, we observe a large effect size between having a middle or last position for specialized and supporting authors at the junior and early-career stage, and for specialized authors at the mid-career stage. For the rest, we report between middle and small effect sizes.\n\n## Discussion\n\nThe assessment of researchers has been under scrutiny for some time (McKiernan et al., 2019; Moher et al., 2018; Way et al., 2019; Weingart, 2005). They are immersed in a reward system that evaluates them individually following uniform expectations of leadership and excellence (Bol et al., 2018; Merton, 1968; Reskin, 1977). Recent evidence shows an increasing need for a larger and more stratified scientific workforce (Milojevi\u0107, 2014; Larivi\u00e8re et al., 2016; Newman, 2004; Wuchty et al., 2007) which necessarily involves a reconceptualization of research careers and considering a breadth of profiles for which specific paths should be considered. Larger teams require a distribution of tasks which will translate on individuals specializing on certain roles (Larivi\u00e8re et al., 2016). Here we identify and characterize such diversity of profiles by career stage, by combining contribution statements with bibliometric variables and applying a machine learning algorithm to predict contributions.\n\nWe find that scientists exhibit different archetypes at different stages, following many paths during their career trajectory. Some paths, however, come at a cost. Out of the 222,295 scientists included in our dataset, only 12% reached the late-career stage. While this should not be striking, as scientists of different ages are included in our analysis, it is worth noting that the vast majority (98%) of these scientists displayed a Specialized archetype in their junior stage. Even though most of them belonged to the Leader archetype in their early- and mid-career stages, scientists at the late-career stage mostly exhibit a Supporting archetype (66%). This could be happening because many scientists adopt a secondary role when they reach seniority, leaving the leading role to their younger colleagues.\n\nThe names assigned to each archetype are figurative but reflect an implicit hierarchy in science. This hierarchy exists at each career stage, indicating that the diversity of profiles is not the result of scientists evolving in their career trajectory and adopting different roles, but that diverse archetypes exist between and within career stages. The robust archetypal analysis identified no Leader archetype at the junior stage, when scientists are still \u2019earning their stripes\u2019, nor are there Specialized scientists in the late-career stage. Such reality enters into conflict with the current expectations of research careers, which consider roles to be attached with career stages and steps that must be made to progress. Our findings have important policy implications as they indicate that scientists\u2019 career design may be at odds with the way science is produced, and suggest a complete reform wherein reproduction of Leaders is not the only model of success (Milojevi\u0107 et al., 2018).\n\nOur results demonstrate the high versatility of the Leader archetype: scientists with this profile are able to move seamlessly across archetypes during their careers. While there are some scientists with a Specialized or Supporting profile who manage to shift to the other three archetypes, most of the scientists fitting these archetypes in our dataset do not progress to more senior stages. Our analysis on productivity and citation impact by archetype sheds light on the mechanisms which may be affecting trajectories. Specialized scientists are less productive and have a lower share of highly cited publications than Leaders and Supporting scientists, which may serve a disadvantage for career advancement in those environments which prioritize publication productivity indicators in research assessment (Figure 5B,C). The lack of assessment schemes sensitive to the diversity of profiles, partly due the inappropriate use of bibliometric indicators at the individual researcher level (McKiernan et al., 2019; Hicks et al., 2015), limits the capacity of policies to correct for inequalities observed across and within archetypes. Structural changes in the academic reward system are necessary to support the advancement and retention of Specialized and Supporting scientists.\n\nWe observe consistent differences in the distribution of archetypes by gender, which may contribute to explain the higher rates of attrition for women (Huang et al., 2019). Early-career stage is key to the development of scientific careers, and it is at this stage that large gender differences are observed. While in the other career stages women and men exhibit a similar distribution of archetypes, women are more likely to be of the Specialized archetype in early-career, while men are more likely to be Leaders. That women disproportionately engage in technical labor\u2013even when controlling for academic age\u2013has been demonstrated in previous studies (Macaluso et al., 2016). This is consistent with general patterns in academic labor; for example, the higher service work done by women academics (Heijstra et al., 2017).\n\nContributorships are generally associated with author order (Larivi\u00e8re et al., 2016; Sauermann and Haeussler, 2017), based on the presumption that first and last author will have major roles, while middle authors will play a secondary role. These roles reinforce hierarchy and organizational strategies: leaders set the agenda and define lines of work, whereas technicians are prized for their ability to implement this agenda (Latour and Woolgar, 2013). This model, however, does not provide equal access to career advancement for all types of scientists: those showcasing a Specialized or Supporting archetype in their early- and mid-career stages have greater difficulties to progress in their research career. These obstacles affect women at a greater extent than men, as a higher proportion of female scientists adopt these roles. Our findings suggest systematic biases on the selection of individuals which may be hampering the efficiency of the scientific system to self-organize itself and assemble robust and diverse scientific teams.\n\n## Materials and methods\n\nThe data needed to reproduce the our analysis are openly accessible at http://doi.org/10.5281/zenodo.3891055. Data were processed and extracted from a T-SQL database server held at the Centre for Science and Technology Studies-CWTS (Leiden University). Data modelling, analyses and visualization figures were conducted using the R statistical programming language version 3.6.3 (R Development Core Team, 2020). The Bayesian network modelling was conducted using the bnlearn package (Scutari and Denis, 2014). The Robust Archetypal Analyses were conducted using the archetypes package (Eugster and Leisch, 2009). Visualizations were created using the ggplot2 (Wickham, 2016) and ggpubr packages (Kassambara, 2020). Mixed correlation matrix in 2A was calculated using the psych package (Revelle et al., 2010). Spearman rank correlations have been determined for continuous variables, tetrachoric correlations for binary random variables and biserial and polyserial correlations for mixed random variables, i.e., between binary or other discrete and continuous random variables.\n\nOur analysis is based on two datasets: a seed dataset of contributorship statements and dataset of researchers\u2019 late-publication histories. The seed dataset combines bibliometric and contributorship data for 85,260 publications from 7 PLoS journals, during the 2006-2013 period. Although many biomedical journals have adopted contributorship statements (e.g., BMJ, The Lancet), PLoS journals provide data in an XML format which ease the data retrieval process.\n\nThis dataset is used to train a predicting model of contributorship based on bibliometric variables. The full publication histories dataset contains the complete publication history of the 222,925 authors selected from the list of publications of the first dataset. This dataset is used to predict authors\u2019 contributorship per paper and is later aggregated at the individual level to identify archetypes of scientists per career stage. The analyses were conducted on an Intel Core i7-8550U CPU with 16GB RAM, running Microsoft Windows 10 Home Edition. The total computational time of the analyses took around 30 hours, with 20 hours being required for the data modelling.\n\n### Contributorship statements\n\nWe used a dataset of 85,260 distinct PLoS papers published during the 2006-2013 period. This dataset was gathered from the PLoS website in combination with Web of Science data. Full account of the complete extraction procedure is provided in a previous study (Larivi\u00e8re et al., 2016). For each publication and author, a dummy value is assigned based on the tasks they performed. Table 2 shows the list of journals together with the number of publications per journal. 88% of the publications have been published in PLoS One. Seven types of contributions were originally included in the dataset. Only five of those contributorships are being used consistently throughout the dataset. \"Approved final version of the manuscript\" and \"Other contributions\" are present in less than 5% and 20% of the papers respectively. While the former is a requirement of the ICMJE and therefore is used mostly in PLoS Medicine, the latter is not an individual category, but an aggregate containing nearly 20,000 different types of contributions. The low incidence of the \"Approved final version\" contribution together with the difficulties in interpreting the \"Other\" contributorship led to their exclusion from the analysis.\n\n#### Bibliometric data\n\nThe bibliometric data is obtained from the CWTS (Leiden University) in-house version of the Web of Science. This database contained at the moment of analysis all publications included in the Science Citation Index Expanded, Social Science Citation Index, and Arts and Humanities Citation Index for the 1980-2017 period. Furthermore, an author name disambiguation algorithm (Caron and van Eck, 2014) is applied to the complete database, allowing to identify a scientist\u2019s complete publication history. This allowed us to retrieve, for each paper contained in the contribution dataset, bibliometric variables at the publication and at the author level. A set of seven bibliometric variables is considered, which is described in Table 1 by author-publication combination. Here, we highlight the use of the variable years since first publication (YE). This variable is used to determine the age of scientists and is used later to estimate the different career stages of the individuals identified. Our use of the year of first publication as an indicator for academic age is based on previous research (Nane et al., 2017), in which the year of first publication is found to be the best predictor for the academic age of scientists. In the case of productivity, we use a full counting approach. While fractional counting can be considered as being more accurate from a mathematical point of view (Waltman, 2016), the focus here is on the previous publication experience of the author and how that might influence their role in future publications. Hence we consider full counting to suit best the purposes of the analysis.\n\n**Table 1.**\n Definition of variables included in the dataset.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Acronym</th>\n      <th>Definition</th>\n      <th>Source</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td colspan=\"3\">Bibliometric variables</td>\n    </tr>\n    <tr>\n      <td>PO</td>\n      <td>Author\u2019s position in the paper</td>\n      <td>WoS</td>\n    </tr>\n    <tr>\n      <td>AU</td>\n      <td>Total number of authors in the paper</td>\n      <td>WoS</td>\n    </tr>\n    <tr>\n      <td>DT</td>\n      <td>Document type. Letters are excluded</td>\n      <td>WoS</td>\n    </tr>\n    <tr>\n      <td>CO</td>\n      <td>Number of countries to which authors of the paper are affiliated</td>\n      <td>WoS</td>\n    </tr>\n    <tr>\n      <td>IN</td>\n      <td>Number of institutions to which authors of the paper are affiliated</td>\n      <td>WoS</td>\n    </tr>\n    <tr>\n      <td>YE</td>\n      <td>Number of years since first publication at the time the paper was published</td>\n      <td>WoS</td>\n    </tr>\n    <tr>\n      <td>PU</td>\n      <td>Average number of publications (full counting) per year</td>\n      <td>WoS</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>of the author at the time the paper was published</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td colspan=\"3\">Contribution variables</td>\n    </tr>\n    <tr>\n      <td>WR</td>\n      <td>Wrote the paper</td>\n      <td>PLoS</td>\n    </tr>\n    <tr>\n      <td>AD</td>\n      <td>Analyzed the data</td>\n      <td>PLoS</td>\n    </tr>\n    <tr>\n      <td>PE</td>\n      <td>Performed the experiments</td>\n      <td>PLoS</td>\n    </tr>\n    <tr>\n      <td>CE</td>\n      <td>Conceived and designed the experiments</td>\n      <td>PLoS</td>\n    </tr>\n    <tr>\n      <td>CT</td>\n      <td>Contributed reagents/materials/analysis tools</td>\n      <td>PLoS</td>\n    </tr>\n    <tr>\n      <td>NC</td>\n      <td>Number of contributions</td>\n      <td>PLoS</td>\n    </tr>\n  </tbody>\n</table>\n\n#### Merging of bibliometric and contribution data\n\nThe merging process was undertaken by matching documents by their DOI identifier and authors who had the same initials and surname in both datasets. We only included papers for which all authors were successfully matched. After this process was undertaken, we ended up with a total of 77,749 publications, containing a total of 369,537 disambiguated unique authors.\n\n#### Subject field identification\n\nWe assigned a subject field to each publication and filtered only those publications that belong to the Medical and Life Sciences to ensure consistency on publication patterns and distribution of contributorships. For this, we used the Dutch NOWT Classification which introduces three levels of categorization: 7 broad areas, 14 fields, and 34 subjects. This classification is linked to the the Web of Science subject categories (see correspondence here https://www.cwts.nl/pdf/nowt_classification_sc.pdf). The classification is made at the journal level, which implies that, given the high incidence of the PloS One papers in our data set, most publications would be categorized as Multidisciplinary. To overcome this issue, publications in Multidisciplinary were reclassified into other more specific fields based on their reference lists. We identified the journal to which each of the references of the publications in our data set belong to. Then, we assigned to each publication the field from which most of its references come from. Finally, we only include those which are assigned to the Medical and Life Sciences fields. A total of 70,694 publications and 347,136 distinct authors were extracted from this process, constituting the \u2018\u2018seed data set\u2019\u2019.\n\n### Publication history of individual scientists\n\nWe reconstructed the publication histories of scientists, and predicted their contributions throughout their careers. The set of authors identified is retrieved from the seed dataset to ensure consistency on the predictions of the Bayesian Network model. But a series of thresholds are imposed. First, we retrieve authors\u2019 gender using the following sources to identify gender: Gender API, Genderize.io and Gender Guesser. We apply a 90% accuracy threshold before assigning gender and only include those authors who surpass such threshold. By promoting accuracy over recall, we assume some selection biases derived from limitations on the identification of gender. By doing so, we minimize potentially misclassified authors due to the assumption of gender as a binary variable. Second, we include only authors whose first publication occurred from 1980 onwards. While the CWTS in-house database includes publications prior to 1980, it does not contain metadata of sufficient quality as to rely on the name disambiguation algorithm. Hence, authors with their first publication prior to 1980 are discarded. Third, we include only authors who have contributed to at least five publications. We do this for two reasons. On the one hand, we remove transient authors, that is, those who have published sporadically, and focus only on scientists that have more chances of being pursuing a research career. On the other hand, this increases the accuracy of the author name disambiguation performed on those researchers. This is specially relevant since the algorithm adopts a conservative approach: when confronted with individuals having outlier patterns of behavior, such as rapid shifts across publication venues, disciplines and co-authors, it will consider them as different authors and consequently split their publications across different \u2018\u2018individuals\u2019\u2019. Hence, by including a publication threshold, we focus on those individuals for whom the algorithm is more robust and accurate at identifying them uniquely. Last, we remove the publications classified as letters to ensure consistency between the two datasets with respect to the document type. As a result, the final dataset contains a total of 222,925 individuals and 6,236,239 distinct publications. The reason for the much larger set of publications is that for those scientists identified in the Seed dataset, we have expanded to all their other publications identified by the algorithm (and not just those from Table 2).\n\n**Table 2.**\n Distribution of papers by journal of the seed dataset on contributions.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Journal</th>\n      <th>No. of papers</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>PLOS ONE</td>\n      <td>62,174</td>\n    </tr>\n    <tr>\n      <td>PLOS GENETICS</td>\n      <td>2408</td>\n    </tr>\n    <tr>\n      <td>PLOS PATHOGENS</td>\n      <td>1882</td>\n    </tr>\n    <tr>\n      <td>PLOS COMPUTATIONAL BIOLOGY</td>\n      <td>1684</td>\n    </tr>\n    <tr>\n      <td>PLOS NEGLECTED TROPICAL DISEASES</td>\n      <td>1432</td>\n    </tr>\n    <tr>\n      <td>PLOS BIOLOGY</td>\n      <td>697</td>\n    </tr>\n    <tr>\n      <td>PLOS MEDICINE</td>\n      <td>417</td>\n    </tr>\n  </tbody>\n</table>\n\n### Bayesian networks for predicting contributorships\n\nBayesian networks (BNs) graphically depict interactions among dependent multivariate data. The network structure represents a directed acyclic graph (DAG), where nodes represent random variables and arcs encode direct influences. Along with dependence statements, a BN encodes conditional independence statements among random variables. These conditional independencies are described by the d-separation concept (Nielsen and Jensen, 2009) and are captured graphically by the BN structure. The Markov property ensures a convenient factorization of the joint distribution of the multivariate data. Say $n$ continuously distributed random variables $X_{1},X_{2},\u2026,X_{n}$ are modeled by a Bayesian network. Then, the joint probability density function can factorize in the following manner\n\n$$\nf\u2062(x_{1},x_{2},\u2026,x_{n})=\\prodi=1nf\u2062(x_{i}|P_{a}\u2062(X_{i})),\n$$\n\nwhere $P\u2062a\u2062(X_{i})$, for $i=1,\u2026,n$, represents the parent set of node $X_{i}$, that is, the set of nodes (variables) whose arcs are directed at $X_{i}$. The conditional densities $f\u2062(x_{i}|P_{a}\u2062(X_{i}))$, for $i=1,\u2026,n$, of each random variable conditioned on its set of parent nodes encode the Markov property. The joint density factorization therefore depends on the structure of the network, that is, on the presence or absence of arcs and their directions.\n\nThere are numerous structures that can be considered, and the number of structures grows super-exponentially with the number of variables (Robinson, 1977). Let $a_{n}$ denote the number of BNs with $n$ random variables. Then\n\n$$\na_{n}=\\sumk=1n(-1)^{k+1}\u2062(\\frac{n}{k})\u20622^{k\u2062(n-k)}\u2062a_{n-k},\n$$\n\nwhere $a_{0}=1$. The structure of a BN can be learned from data or from experts, or from mixing data-driven algorithms with expert input.\n\nData driven learning algorithms of a BN structured are broadly categorized into constraint-based and score-based learning algorithms (Scutari and Denis, 2014). Constraint-based methods rely on conditional independence tests, whereas score-based methods employ likelihood-based metrics to evaluate structures. Both types of algorithms also contain a search procedure, such as a local search in the space of network structure (Scutari and Denis, 2014; Koller and Friedman, 2009). We employ the Max-Min Hill-Climbing (MMHC) algorithm (Tsamardinos et al., 2006), which combined techniques from constraint and score-based algorithms, along with an initial local discovery algorithm of edges without any orientation.\n\nWe have employed a mixed approach, which imposed, via a white list, the direct influences of bibliometric to contributorship variables. The white-listed arcs are depicted in red in Figure S1. It is noteworthy that the arcs were present from employing the MMHC data-driven algorithm, and only the direction was switched. These white-listed nodes have been accounted for in learning the structure with the remaining variables. Thus, the remaining arcs in the BN together with their directionality have been fully assigned by using data-driven algorithms.\n\nFinally, the BN structure has been subjected a robustness check by employing a bootstrap procedure, by which bootstrap replications of the data have been sampled 50 times from the initial data, with replacement. The bootstrap samples had the same size as the initial dataset. The MMHC algorithm has provided network structures and the arcs that have appeared in at least 80% of the structures have been retained. Figure 2B illustrates the resulting network.\n\n### Cross-validation\n\nTo validate the BN used to predict contributions, we perform a k-fold cross-validation. The data are split in 10 subsets. For each subset, in turn, the BN is fitted on the other k - 1 subsets and a predictive loss function is then computed using that subset. Loss estimates for each of the k subsets are then combined to give an overall predictive loss. Since we are interested in predicting whether a scientist had a certain contributorship for the publications in the dataset, we translate the predictive loss into classification error. That is, we quantify the classification error rate of the BN in predicting a certain contributorship, given the bibliometric information of scientists and publications. The classification error rates obtained for each contributorship with a cut-off value of 0.5 are shown in Table 3. While the error rates obtained are quite low, it is true that this validation is performed using data which is of the same nature as the data on which the BN has been quantified. This means that the extent to which contribution patterns in our dataset can be inferred to other datasets should be further investigated using different journals or fields.\n\n**Table 3.**\n Classification error rates from cross-validation of Bayesian Network model for the contribution variables.For contributorships, the percentage of mis-classified predictions is shown, while for NC, the mean squared error between the predicted and the observed values is reported.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Variables</th>\n      <th>Min.</th>\n      <th>Median</th>\n      <th>Mean</th>\n      <th>Max.</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>WR</td>\n      <td>0.062</td>\n      <td>0.064</td>\n      <td>0.064</td>\n      <td>0.065</td>\n    </tr>\n    <tr>\n      <td>AD</td>\n      <td>0.064</td>\n      <td>0.067</td>\n      <td>0.067</td>\n      <td>0.069</td>\n    </tr>\n    <tr>\n      <td>PE</td>\n      <td>0.072</td>\n      <td>0.075</td>\n      <td>0.075</td>\n      <td>0.077</td>\n    </tr>\n    <tr>\n      <td>CE</td>\n      <td>0.062</td>\n      <td>0.064</td>\n      <td>0.064</td>\n      <td>0.066</td>\n    </tr>\n    <tr>\n      <td>CT</td>\n      <td>0.077</td>\n      <td>0.078</td>\n      <td>0.078</td>\n      <td>0.081</td>\n    </tr>\n    <tr>\n      <td>NC</td>\n      <td>0.120</td>\n      <td>0.125</td>\n      <td>0.125</td>\n      <td>0.127</td>\n    </tr>\n  </tbody>\n</table>\n\n### Constructing scientific profiles\n\n#### Data aggregation\n\nPredicted probabilities of all contributorship types obtained from the BN are available for each author-publication combination. We aim to aggregate those prediction at the author level, that is, to derive, for each scientist, the probability of fulfilling each contribution role. For this, we used the median probability value per contribution type. Furthermore, we grouped the publications by career stage, that is, publications within 5 years from the first publication (junior stage), publications between 5 and 15 years from first publication (early-career), publications between 15 and 30 years from first publication (mid-career) and publications after 30 years from first publication (late-career). Here must note that the selection of the time periods was selected for convenience and that any other division could have been selected. For each researcher, we obtain a median probability per contribution type and career stage.\n\nSuppose within career stage $i$, with $i=1,\u2026,4$, a scientist has $k$ publications. Let $p_{j}^{i}$ the probability that the scientist performs contributorship $j$ within career stage $i$, for $j=1,\u2026,5$ denoting the five different types of contributions (WR, CT, CE, PE, AD). Then\n\n$$\np_{j}^{i}=M\u2062e\u2062d\u2062i\u2062a\u2062n\u2062(p_{j,1}^{i},p_{j,2}^{i},\u2026,p_{j,k}^{i}),\n$$\n\nwhere $p_{j,1}^{i}$ is the predicted probability for contribution $j$ of scientist\u2019s first publication in career stage $i$. For the number of contributions (NC), the same aggregation rule is applied\n\n$$\nN\u2062C^{i}=M\u2062e\u2062d\u2062i\u2062a\u2062n\u2062(N\u2062C_{1}^{i},\u2026,N\u2062C_{k}^{i})\n$$\n\nwhere $N\u2062C_{1}^{i}$ is the predicted number of contributions for the first paper in career stage i.\n\n#### Robust archetypal analysis\n\nProfiles of researchers, by career stage, are obtained using a robust archetypal analysis. Archetypal analysis aims to identify archetypes that emerge from the given contribution data for scientists. This approach has been previously applied to identify scientists\u2019 profiles based on citation and publication data (Seiler and Wohlrabe, 2013). The archetypes are extreme observations in a multivariate dataset and represented as convex combinations of the observations in the dataset that result from a least squares problem (Cutler and Breiman, 1994). For multivariate data with n observations (scientists, per career stage, in our case) and m random variables (types of contributorships, in our case), then X is a n\u00d7m matrix denoting the aggregated dataset. For given k archetypes, denote by Z the k\u00d7m the matrix of archetypes, represented in terms of the types of contributorships. Then, the residual sum of squares (RSS) plotted in Figure S1 is denoted by\n\n$$\nR\u2062S\u2062S=||X-\\alpha\u2062Z^{T}||_{2},\n$$\n\nwith $Z=X^{T}\u2062\\beta$, where \u03b1,\u03b2 are positive coefficients and where $||\u22c5||_{2}$ denotes the Euclidean matrix norm. In turn, each observation in the dataset can be represented as a convex combination of the archetypes\n\n$$\nX\u2248\\alpha\u2062Z^{T}.\n$$\n\nIn the standard approach of archetypal analysis, each residual contributes to the RSS with equal weight. The archetypal analysis is thus sensitive to outliers, whose large residuals can contribute significantly to the RSS. A robust archetypal analysis (Eugster and Leisch, 2011) has been proposed to weight down the influence of outliers to the construction of archetypes. By letting W be a n\u00d7n matrix of weights, we define the weighted RSS\n\n$$\nR\u2062S\u2062S=\u2223\u2223W\u2062(X-\\alpha\u2062Z^{T})\u2223\u2223_{2}.\n$$\n\nThe weights can be chosen by the user or can be chosen to depend on each observation\u2019s residual. The robust archetypal analysis proposed by Eugster and Leisch, 2011 proposes an iterative re-weighted least squares algorithm. Unlike the k-means clustering approach, which engages averaging when profiling out clusters, archetypal analysis focuses on extremes and explore the heterogeneity of complex multivariate data. Furthermore, archetypes are not forced to be mutually exclusive, as principal components are, nor do they remain the same when the number of considered archetypes is changing. The archetypal analysis has been performed using the archetypes package in R (Eugster and Leisch, 2009).\n\n#### Confidence intervals, hypothesis testing and effect sizes\n\nIn this section we report how confidence intervals were constructed for Figures 4, 6 and 7, as well as additional analyses conducted for those figures which are reported in supplement figures.\n\nNeither the BN\u2019s predictions, nor the RAA coefficient or alpha values account for uncertainty in the form of confidence intervals. Nevertheless, accounting for uncertainty in reporting the coefficient values of the archetypes would inform about the potential varying influence of contributions within each archetype. To construct those uncertainty intervals for the coefficient values of contributions (Figure 4), we have used the classification error rates as uncertainty bounds of our predicted probability of contribution. We have extracted and added the mean classification error rate to our predicted values, creating two additional datasets of predicted probabilities of contributorships: one for the upper value and the other one for the lower value. We have then conducted a RAA for each of the two new datasets, for each career stage. The same number of archetypes have been obtained as for the initial dataset. The coefficient values obtained for the upper and lower datasets are reported as uncertainty intervals in Figure 4.\n\nWhen analyzing the distributions of number of publications and share of highly cited papers by archetype across career stages (Figure 5), we tested if the differences in medians are statistically significant. We performed a Wilcoxon rank sum hypothesis test. Very low p-values ($p-v\u2062a\u2062l\u2062u\u2062e<2.2\u2062E-16$ for all paired hypothesis tests), suggest that the differences in median are statistically significant within each career stage. However, this was expected, given the large sample sizes across the career stages. To evaluate the strength of the differences, we also investigated the effect size using the epsilon squared measure (Kelley, 1935), which are displayed, along with confidence intervals, in Figure 5\u2014figure supplement 1.\n\nIn the case of gender and author position (Figures 6 and 7), we investigated whether the differences in proportions within each career stage are statistically significant by using the two-proportion z-test (Cohen, 2013). The Pearson\u2019s chi-squared test statistics allowed us to determine 95% confidence intervals for the differences in proportions, which, in turn, has been used to construct 95% confidence intervals for each proportion. Also, we reported effect sizes using Cohen, 2013.\n\n### Limitations of the study\n\n#### Representativeness of the sample of scientists\n\nThe analysis is based on a set of publications and a sample of scientists which may not represent accurately the whole population of scientists. This means that, despite the robustness of the results, any inference to the whole population should be done with caution. Furthermore, the thresholds imposed to introduce such scientists in the archetypal analysis further restricts such inference endeavour. If we compare the productivity distributions of our set of researchers and for the whole population of the Web of Science, we observe that while we still retain a high skewness of productivity, this is much lower than the overall one.\n\n#### Identification of scientists\n\nThe study relies heavily on the competence of an author name disambiguation algorithm to correctly identify disambiguated authors. As previously noted, this algorithm has some limitations which are partially overcome by the production thresholds imposed. However, inaccurate assignments can still occur.\n\n#### Author age\n\nWe estimate researchers\u2019 age based on the year of first publication and build the four career stages based on such year. However, alternative approaches could have been adopted and these could have some impact on the results. For instance, first year of first-authored publication could have been used instead. The selection of the first year of publication is based on empirical data suggesting that it is the best proxy for PhD year (Nane et al., 2017).\n\n#### Taxonomy of contributorships\n\nIn this paper, contributions are classified into five types. These types are obtained from the data itself. However, one may question the appropriateness of the number and contribution types. The ones used in this paper are consistent with those used in other studies (Larivi\u00e8re et al., 2016), but different from those implemented in the CRediT initiative, which defines up to 14 types of contributions. Furthermore, evidence suggests that author self-reporting on contributorship is not exempt of limitations (Ilakovac et al., 2007). Questions like the extent to which contribution types are field-dependent are still unsolved. With this respect, our predictions already point towards some of these issues. Despite the low error rates, we observe that the distribution of predicted probabilities exhibits a normal distribution for writing the manuscript (Figure 2A). This could be due to the ambiguity of the statement. As observed in the CRediT intitiative, this statement is disclosed into two: wrote the first draft and wrote parts of the manuscript and revised. Such distinction might help the model to better discriminate contributorships.\n",
+      "created_at": "2025-12-02T20:56:45.238753Z"
+    },
+    {
+      "id": "e86ea94e-f5b5-462e-87e1-949b27707ef6",
+      "submission_id": "4c42c7e9-e4bb-43c1-a4e0-42160720191a",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Peter Rodgers, eLife United Kingdom\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.60586.sa1](https://doi.org/10.7554/eLife.60586.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nThank you for submitting your article \"Task specialization and its effects on research careers\" to eLife for consideration as a Feature Article. Your article has been reviewed by two peer reviewers, and the evaluation has been overseen by the eLife Features Editor (Peter Rodgers). The following individuals involved in review of your submission have agreed to reveal their identity: Allison Morgan (Reviewer #1).\n\nThe reviewers and editors have discussed the reviews and we have drafted this decision letter to help you prepare a revised submission. We hope you will be able to submit the revised version within two months.\n\nSummary:\n\nUsing data on over 6M publications and 200K authors, the authors aim to consider how prominent various scientific archetypes are across researchers' careers and whether there are gendered differences in these roles. The main takeaways are: (i) contributions shift over career stages, due to who is performing experiments/analyzing data (junior/early-career) or conceiving experiments/writing (mid/late-career); (ii) researchers who present as leaders in their early-careers are more likely to remain; (iii) women are less likely to appear in the leader archetype across career stages (and more likely to be in specialized/supporting roles with typically lower productivity). However, there are a number of points and concerns about the work that need to be addressed to make the article suitable for publication.\n\nEssential revisions:\n\n1) Title: I worry that the phrase \"its effects\" implies a causal relationship that is not warranted by the analysis presented in the paper. Possibly something like: \"Task specialization across research careers\" is a little more accurate.\n\n2) Please explain why Bayesian analysis was used to determine which of the variables in the dataset predict the Contributorship categories: to me the use of machine learning with boosting classification would seem more appropriate.\n\nAlso, please explain how various of the criteria used in the analysis were chosen (eg, the definitions of career stage, the number of iterations used in the Bayesian analysis, the ICMJE criteria included in the analysis).\n\n3) I would like to see the analysis of Contributorship and career stages across years, if possible, to see if there is a change in trends over the years, especially for the gender differences and career advancement.\n\n[Note from the Features Editor: Addressing this point is optional]\n\n4) The low error rates in the Bayesian analysis seem very impressive, but to interpret them better I'd appreciate some notion of recall since (I think?) most authors would not fill a given role. I also assume a cutoff value was chosen from the predicted probability, but this was not explicitly said. These suggestions would likely not impact the conclusions of the work, but would aid in reproducibility.\n\n5) I do not understand why authors use Spearman correlation coefficient because you were investigating an association between nominal/categorical variables and ordinal variables. Please use appropriate measures of association for variables of interest or omit this analysis completely.\n\n6) In subsection \u201cBayesian network model for predicting contributorship\u201d: The strength of the arcs, i.e., relationships between variables, has been investigated using the bootstrap procedure, with 50 repetitions. Only the arcs that were present in 80% of the repetitions have been considered and are depicted in Figure 2B.\n\nIs this standard procedure? If it is, please give a reference, and in case it is not please explain what is the rationale behind choosing those criteria.\n\nThere are several places where I believe the authors should provide statistical hypothesis testing and state the actual differences. These are documented below:\n\n7) In subsection \u201cCareer paths, productivity and citation impact\u201d: Figure 5B/C doesn't lead me to believe the differences in publications or citations are meaningfully different across career stages, but the text alludes to differences. Mentioning whether these are supported by statistical tests would strengthen your claims. Also, please expand the caption for figure 5 to fully explain what is being plotted in panels B and C.\n\n8) Figure 6: A significance test across the proportions for men and women would be valuable again, since the text draws our attention to them.\n\n9) Figures 6 and 7: Please include confidence intervals so that the reader can assess whether there are differences between groups.\n\n10) You argue that there are differences in proportions between men and women in archetypes, but I wonder whether that is really due to the fact because in the previous paragraph you state that is more likely for researchers who are leaders in early stages to come to the late stages of career. I wonder what the more predictive factor for career advancement is - gender or specialization in early stage - and it would be good if the authors could resolve this issue by using some prediction model.\n\nAlso, you state that the shares of leader archetype are consistently lower for women compare to the men. Can you please test this using some kind of test of proportions (chi square for example) and also report the 95% confidence intervals for proportions?\n\nAlso, what does the distribution of \\alpha (weights on archetypes) look like for most researchers? Is it easy to distinguish which archetype researchers fall into at a given career stage? This seems slightly important to the interpretation of the results.\n",
+      "created_at": "2025-12-02T20:56:45.238753Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T20:56:45.238753Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T20:56:45.238753Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "1e48205a-530b-4e1b-a8cb-7572ea5f7fa2",
+      "content_id": "ae8f3b7b-bacc-4f92-aa1b-22d802d0f458",
+      "claim_id": "C2",
+      "claim": "The dataset included 347,136 distinct authors.",
+      "claim_type": "EXPLICIT",
+      "source": "Our seed dataset contains a total of 70,694 papers authored by 347,136 scientists from PLoS journals in the Medical and Life Sciences fields.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states the number of distinct authors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:56:45.238753Z"
+    },
+    {
+      "id": "ca011662-3ff2-4c2d-86f6-7347031d3ec4",
+      "content_id": "ae8f3b7b-bacc-4f92-aa1b-22d802d0f458",
+      "claim_id": "C3",
+      "claim": "The Bayesian network model was used to predict contributions of 222,925 authors in 6,236,239 publications.",
+      "claim_type": "EXPLICIT",
+      "source": "This model was used to predict the contributions of 222,925 authors in 6,236,239 publications, and to apply a robust archetypal analysis to profile scientists across four career stages: junior, early-career, mid-career and late-career.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states the number of authors and publications analyzed.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:56:45.238753Z"
+    },
+    {
+      "id": "5bfdece6-ddd1-4214-9f23-f6222144d256",
+      "content_id": "ae8f3b7b-bacc-4f92-aa1b-22d802d0f458",
+      "claim_id": "C4",
+      "claim": "Three archetypes were identified: leader, specialized, and supporting.",
+      "claim_type": "EXPLICIT",
+      "source": "All three of the archetypes we found - leader, specialized, and supporting - were encountered for early-career and mid-career researchers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly names the three archetypes identified.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:56:45.238753Z"
+    },
+    {
+      "id": "6103ec2a-c9d5-4fcb-a69b-c1c8bbd3400b",
+      "content_id": "ae8f3b7b-bacc-4f92-aa1b-22d802d0f458",
+      "claim_id": "C5",
+      "claim": "Junior researchers displayed only two archetypes: specialized and supporting.",
+      "claim_type": "EXPLICIT",
+      "source": "Junior researchers displayed only two archetypes (specialized, and supporting), as did late-career researchers (leader and supporting).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states which archetypes were found for junior researchers.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:56:45.238753Z"
+    },
+    {
+      "id": "aa2da833-cea4-4268-acd9-20b6b835ebbe",
+      "content_id": "ae8f3b7b-bacc-4f92-aa1b-22d802d0f458",
+      "claim_id": "C6",
+      "claim": "Late-career researchers displayed only two archetypes: leader and supporting.",
+      "claim_type": "EXPLICIT",
+      "source": "Junior researchers displayed only two archetypes (specialized, and supporting), as did late-career researchers (leader and supporting).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states which archetypes were found for late-career researchers.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:56:45.238753Z"
+    },
+    {
+      "id": "814bd90a-9ae5-4480-80e3-a216b0e24e3c",
+      "content_id": "ae8f3b7b-bacc-4f92-aa1b-22d802d0f458",
+      "claim_id": "C7",
+      "claim": "Scientists assigned to the leader and specialized archetypes tended to have longer careers than those assigned to the supporting archetype.",
+      "claim_type": "EXPLICIT",
+      "source": "Scientists assigned to the leader and specialized archetypes tended to have longer careers than those assigned to the supporting archetype.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states this finding about career length.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:56:45.238753Z"
+    },
+    {
+      "id": "7f2bbc7d-bd02-4476-a017-c76c9b4855b4",
+      "content_id": "ae8f3b7b-bacc-4f92-aa1b-22d802d0f458",
+      "claim_id": "C8",
+      "claim": "The majority of male scientists belonged to the leader archetype.",
+      "claim_type": "EXPLICIT",
+      "source": "We also observed consistent gender bias at all stages: the majority of male scientists belonged to the leader archetype, while the larger proportion of women belonged to the specialized archetype, especially for early-career and mid-career researchers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states this gender distribution finding.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:56:45.238753Z"
+    },
+    {
+      "id": "32a9a718-8f78-444b-a75c-e8ee40b416bc",
+      "content_id": "ae8f3b7b-bacc-4f92-aa1b-22d802d0f458",
+      "claim_id": "C9",
+      "claim": "The larger proportion of women belonged to the specialized archetype, especially for early-career and mid-career researchers.",
+      "claim_type": "EXPLICIT",
+      "source": "We also observed consistent gender bias at all stages: the majority of male scientists belonged to the leader archetype, while the larger proportion of women belonged to the specialized archetype, especially for early-career and mid-career researchers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states this gender distribution finding.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:56:45.238753Z"
+    },
+    {
+      "id": "2d716a83-1c79-42ce-8272-2c57e973cb3e",
+      "content_id": "ae8f3b7b-bacc-4f92-aa1b-22d802d0f458",
+      "claim_id": "C10",
+      "claim": "Collaboration has become essential and ubiquitous in science.",
+      "claim_type": "EXPLICIT",
+      "source": "Collaboration has become essential and ubiquitous (Guimer\u00e0 et al., 2005; Mongeon et al., 2017); however, the increase in team size may come at a cost for those who are not in leading roles (Milojevi\u0107 et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:56:45.238753Z"
+    },
+    {
+      "id": "c32c2385-b1d7-4e89-8725-7c025a5152ff",
+      "content_id": "ae8f3b7b-bacc-4f92-aa1b-22d802d0f458",
+      "claim_id": "C11",
+      "claim": "The increase in team size may come at a cost for those who are not in leading roles.",
+      "claim_type": "EXPLICIT",
+      "source": "Collaboration has become essential and ubiquitous (Guimer\u00e0 et al., 2005; Mongeon et al., 2017); however, the increase in team size may come at a cost for those who are not in leading roles (Milojevi\u0107 et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:56:45.238753Z"
+    },
+    {
+      "id": "06f40438-853b-4e52-a8c3-737dca01f97d",
+      "content_id": "ae8f3b7b-bacc-4f92-aa1b-22d802d0f458",
+      "claim_id": "C12",
+      "claim": "Five types of contribution statements are identified: wrote the paper, conceived and designed the experiments, performed the experiments, analyzed the data, and contributed reagents/materials/analysis tools.",
+      "claim_type": "EXPLICIT",
+      "source": "Five types of contribution statements are identified in the contribution dataset: wrote the paper (WR), conceived and designed the experiments (CE), performed the experiments (PE), analyzed the data (AD), and contributed reagents/materials/analysis tools (CT).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly lists the five contribution types.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:56:45.238753Z"
+    },
+    {
+      "id": "21bf90cf-d5a5-4013-8ade-59d4edf2d335",
+      "content_id": "ae8f3b7b-bacc-4f92-aa1b-22d802d0f458",
+      "claim_id": "C13",
+      "claim": "Four career stages are defined: junior (< 5 years since first publication), early-career (\u2265 5 and < 15 years since first publication), mid-career (\u2265 15 and < 30 years since first publication) and late-career (\u2265 30 years since first publication).",
+      "claim_type": "EXPLICIT",
+      "source": "We define four career stages: junior (< 5 years since first publication), early-career (\u2265 5 and < 15 years since first publication), mid-career (\u2265 15 and < 30 years since first publication) and late-career (\u2265 30 years since first publication).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly defines the four career stages.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:56:45.238753Z"
+    },
+    {
+      "id": "efd38e2e-f705-4a55-935c-45fa67309845",
+      "content_id": "ae8f3b7b-bacc-4f92-aa1b-22d802d0f458",
+      "claim_id": "C14",
+      "claim": "Earlier career stages are more often associated with performing experiments and analyzing data, and this contribution decreases as individuals become more senior.",
+      "claim_type": "EXPLICIT",
+      "source": "The distribution of reported contribution roles by career stage shows that earlier stages are more often associated with performing experiments and analyzing data, and that this contribution decreases as individuals become more senior.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data analysis and Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:56:45.238753Z"
+    },
+    {
+      "id": "1c6b708d-f1e4-4e0c-a09d-6f2a195d587a",
+      "content_id": "ae8f3b7b-bacc-4f92-aa1b-22d802d0f458",
+      "claim_id": "C15",
+      "claim": "Writing the manuscript and contributing reagents and tools increase over time, with a decline in the late-career stage.",
+      "claim_type": "EXPLICIT",
+      "source": "Writing the manuscript and contributing reagents and tools increase over time, with a decline in the late-career stage.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data analysis and Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:56:45.238753Z"
+    },
+    {
+      "id": "d4b5210b-5dae-4350-8836-b3f1ebdd7e8a",
+      "content_id": "ae8f3b7b-bacc-4f92-aa1b-22d802d0f458",
+      "claim_id": "C16",
+      "claim": "Conceiving and designing the experiments demonstrates a modal shape, where early-career and mid-career stages are the ones in which these tasks are more prominent.",
+      "claim_type": "EXPLICIT",
+      "source": "Conceiving and designing the experiments demonstrates a modal shape, where early-career and mid-career stages are the ones in which these tasks are more prominent.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data analysis and Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:56:45.238753Z"
+    },
+    {
+      "id": "4f552485-0997-4595-896e-27ccb3e4adc2",
+      "content_id": "ae8f3b7b-bacc-4f92-aa1b-22d802d0f458",
+      "claim_id": "C17",
+      "claim": "First authors are heavily associated with all contributions, with the exception of contributing tools, reagents, data, and other materials.",
+      "claim_type": "EXPLICIT",
+      "source": "In terms of labor distribution, first authors are heavily associated with all contributions, with the exception of contributing tools, reagents, data, and other materials.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data analysis and Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:56:45.238753Z"
+    },
+    {
+      "id": "aae598b7-3187-4c3d-a1ed-210b9ccb6bdb",
+      "content_id": "ae8f3b7b-bacc-4f92-aa1b-22d802d0f458",
+      "claim_id": "C18",
+      "claim": "Middle authors report to be less involved in writing tasks or in the design and conception of experiments but are associated with contributing resources to a much greater extent.",
+      "claim_type": "EXPLICIT",
+      "source": "Middle authors report to be less involved in writing tasks or in the design and conception of experiments but are associated with contributing resources to a much greater extent.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data analysis and Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:56:45.238753Z"
+    },
+    {
+      "id": "08f371e0-77bc-4560-b576-7850a77b45ae",
+      "content_id": "ae8f3b7b-bacc-4f92-aa1b-22d802d0f458",
+      "claim_id": "C19",
+      "claim": "Last authors report contributing mostly to the design and conception of experiments as well as to writing tasks, and to a lesser extent to the performance of experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "Last authors report contributing mostly to the design and conception of experiments as well as to writing tasks, and to a lesser extent to the performance of experiments.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data analysis and Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:56:45.238753Z"
+    },
+    {
+      "id": "a6ca1fa8-8191-4402-ad71-5ac73e6bd30a",
+      "content_id": "ae8f3b7b-bacc-4f92-aa1b-22d802d0f458",
+      "claim_id": "C20",
+      "claim": "The highest correlations within types of contributorship are between writing the manuscript and conceiving and designing the experiments (0.71).",
+      "claim_type": "EXPLICIT",
+      "source": "The highest correlations within types of contributorship are between writing the manuscript and conceiving and designing the experiments (0.71), while the rest of contributorship variables exhibit low correlations.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by correlation analysis shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:56:45.238753Z"
+    },
+    {
+      "id": "2bd3be31-3958-440b-bc12-ee614152a4df",
+      "content_id": "ae8f3b7b-bacc-4f92-aa1b-22d802d0f458",
+      "claim_id": "C21",
+      "claim": "There is a moderate positive correlation between number of countries and institutions (0.66).",
+      "claim_type": "EXPLICIT",
+      "source": "In the case of bibliometric variables, there is a moderate positive correlation between number of countries and institutions (0.66), author position and number of authors (0.68), and number of authors and number of institutions (0.72).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by correlation analysis shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:56:45.238753Z"
+    },
+    {
+      "id": "2319eda1-c6c0-43f2-8e0e-cea7cde4940f",
+      "content_id": "ae8f3b7b-bacc-4f92-aa1b-22d802d0f458",
+      "claim_id": "C22",
+      "claim": "There is a moderate positive correlation between author position and number of authors (0.68).",
+      "claim_type": "EXPLICIT",
+      "source": "In the case of bibliometric variables, there is a moderate positive correlation between number of countries and institutions (0.66), author position and number of authors (0.68), and number of authors and number of institutions (0.72).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by correlation analysis shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:56:45.238753Z"
+    },
+    {
+      "id": "b75089fc-3540-431e-9d8f-ea21a66b2e04",
+      "content_id": "ae8f3b7b-bacc-4f92-aa1b-22d802d0f458",
+      "claim_id": "C23",
+      "claim": "There is a moderate positive correlation between number of authors and number of institutions (0.72).",
+      "claim_type": "EXPLICIT",
+      "source": "In the case of bibliometric variables, there is a moderate positive correlation between number of countries and institutions (0.66), author position and number of authors (0.68), and number of authors and number of institutions (0.72).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by correlation analysis shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:56:45.238753Z"
+    },
+    {
+      "id": "5f4a2f1b-6743-4951-80f2-18cc959a69c4",
+      "content_id": "ae8f3b7b-bacc-4f92-aa1b-22d802d0f458",
+      "claim_id": "C24",
+      "claim": "A strong positive monotone relation between the number of contributions and either writing the manuscript (0.85), conceiving the experiments (0.82) or analyzing the data (0.79) is observed.",
+      "claim_type": "EXPLICIT",
+      "source": "A strong positive monotone relation between the number of contributions and either writing the manuscript (0.85), conceiving the experiments (0.82) or analyzing the data (0.79) is observed.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by correlation analysis shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:56:45.238753Z"
+    },
+    {
+      "id": "9e5d3300-c9d4-4536-babf-ac3245c8b0c0",
+      "content_id": "ae8f3b7b-bacc-4f92-aa1b-22d802d0f458",
+      "claim_id": "C25",
+      "claim": "The predictive performance of the Bayesian network has been shown to be extremely good, with an average classification error rate of between 6-8% for all contributorships and a mean squared error (MSE) of 0.12 for the predicted NC.",
+      "claim_type": "EXPLICIT",
+      "source": "The predictive performance of the BN has been shown to be extremely good, with an average classification error rate of between 6-8% for all contributorships and a mean squared error (MSE) of 0.12 for the predicted NC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states the predictive performance metrics.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:56:45.238753Z"
+    },
+    {
+      "id": "d53bca1f-301e-4ac8-8041-eea1bc3094c3",
+      "content_id": "ae8f3b7b-bacc-4f92-aa1b-22d802d0f458",
+      "claim_id": "C26",
+      "claim": "Performing the experiments is the most discriminative contributorship type, with junior scientists more likely be associated with this contribution.",
+      "claim_type": "EXPLICIT",
+      "source": "Performing the experiments is the most discriminative contributorship type, with junior scientists more likely be associated with this contribution.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by analysis of predicted contributions shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:56:45.238753Z"
+    },
+    {
+      "id": "c5ed6934-6b8e-4f53-aead-5065d95ce4f8",
+      "content_id": "ae8f3b7b-bacc-4f92-aa1b-22d802d0f458",
+      "claim_id": "C27",
+      "claim": "The more scientists advance in their career, the less likely that they will perform the experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "The more scientists advance in their career, the less likely that they will perform the experiments.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by analysis of predicted contributions shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:56:45.238753Z"
+    },
+    {
+      "id": "b06a678e-4a5d-4b7b-9517-e953e15bb4f3",
+      "content_id": "ae8f3b7b-bacc-4f92-aa1b-22d802d0f458",
+      "claim_id": "C28",
+      "claim": "The contribution roles of wrote the manuscript, conceived the experiments, and contributed with tools are more likely for advanced career stages.",
+      "claim_type": "EXPLICIT",
+      "source": "Inversely, the contribution roles of wrote the manuscript, conceived the experiments, and contributed with tools are more likely for advanced career stages.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by analysis of predicted contributions shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:56:45.238753Z"
+    },
+    {
+      "id": "8aa1224a-4f6c-4c32-9726-d0e8672f58e7",
+      "content_id": "ae8f3b7b-bacc-4f92-aa1b-22d802d0f458",
+      "claim_id": "C29",
+      "claim": "The Leader archetype is characterized by high coefficient values for all contributions, except for PE, indicating a high prevalence of each contribution role, and especially on WR and CE.",
+      "claim_type": "EXPLICIT",
+      "source": "The Leader is characterized by high coefficient values for all contributions, except for PE, indicating a high prevalence of each contribution role, and especially on WR and CE.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by the archetypal analysis shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:56:45.238753Z"
+    },
+    {
+      "id": "3734ba81-1716-4396-b325-4ba45e2e1936",
+      "content_id": "ae8f3b7b-bacc-4f92-aa1b-22d802d0f458",
+      "claim_id": "C30",
+      "claim": "The Specialized archetype is characterized by high coefficient values for PE and AD.",
+      "claim_type": "EXPLICIT",
+      "source": "The Specialized archetype is characterized by high coefficient values for PE and AD.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by the archetypal analysis shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:56:45.238753Z"
+    },
+    {
+      "id": "8175c964-eb61-45e5-a137-b67efb53760d",
+      "content_id": "ae8f3b7b-bacc-4f92-aa1b-22d802d0f458",
+      "claim_id": "C31",
+      "claim": "The Supporting archetype is characterized by generally low values for all contributorships.",
+      "claim_type": "EXPLICIT",
+      "source": "The third archetype is referred to as the Supporting, and is characterized by generally low values for all contributorships.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by the archetypal analysis shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:56:45.238753Z"
+    },
+    {
+      "id": "863288b5-47e0-4899-a37d-5c30c874426c",
+      "content_id": "ae8f3b7b-bacc-4f92-aa1b-22d802d0f458",
+      "claim_id": "C32",
+      "claim": "Out of the 222,295 scientists included in the dataset, 27,714 reached the late-career stage.",
+      "claim_type": "EXPLICIT",
+      "source": "Out of the 222,295 scientists included in the dataset, 27,714 reached the late-career stage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states these numbers.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:56:45.238753Z"
+    },
+    {
+      "id": "cbd147e6-9b42-41b5-9f79-49bcf8a44010",
+      "content_id": "ae8f3b7b-bacc-4f92-aa1b-22d802d0f458",
+      "claim_id": "C33",
+      "claim": "There is little attrition between the junior and early-career stage (93% for junior Specialized and 83% for Supporting authors).",
+      "claim_type": "EXPLICIT",
+      "source": "We observe that there is little attrition, regardless of the archetype to which scientists belong, between the junior and early-career stage (93% for junior Specialized and 83% for Supporting authors).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states these attrition rates.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:56:45.238753Z"
+    },
+    {
+      "id": "4371f24e-be33-4cc5-bc8e-733b8612d89d",
+      "content_id": "ae8f3b7b-bacc-4f92-aa1b-22d802d0f458",
+      "claim_id": "C34",
+      "claim": "84% of scientists who belong to the Leader archetype in their early-career reach the next career stage.",
+      "claim_type": "EXPLICIT",
+      "source": "At the early-career stage, when the Leader archetype emerges, the advantage of those exhibiting a Leader profile becomes evident: 84% of scientists who belong to the Leader archetype in their early-career reach the next career stage, while 30% and 16% of Specialized and Supporting scientists progress to mid-career stage respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states this progression rate.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:56:45.238753Z"
+    },
+    {
+      "id": "cd2ff5a1-4401-4471-b2be-e505af2a6000",
+      "content_id": "ae8f3b7b-bacc-4f92-aa1b-22d802d0f458",
+      "claim_id": "C35",
+      "claim": "30% of Specialized scientists progress from early-career to mid-career stage.",
+      "claim_type": "EXPLICIT",
+      "source": "At the early-career stage, when the Leader archetype emerges, the advantage of those exhibiting a Leader profile becomes evident: 84% of scientists who belong to the Leader archetype in their early-career reach the next career stage, while 30% and 16% of Specialized and Supporting scientists progress to mid-career stage respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states this progression rate.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:56:45.238753Z"
+    },
+    {
+      "id": "495769a8-051b-42ef-a1c6-c70ccbd6267d",
+      "content_id": "ae8f3b7b-bacc-4f92-aa1b-22d802d0f458",
+      "claim_id": "C36",
+      "claim": "16% of Supporting scientists progress from early-career to mid-career stage.",
+      "claim_type": "EXPLICIT",
+      "source": "At the early-career stage, when the Leader archetype emerges, the advantage of those exhibiting a Leader profile becomes evident: 84% of scientists who belong to the Leader archetype in their early-career reach the next career stage, while 30% and 16% of Specialized and Supporting scientists progress to mid-career stage respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states this progression rate.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:56:45.238753Z"
+    },
+    {
+      "id": "178b552f-a7a8-4151-94af-f7fb62e3c5ae",
+      "content_id": "ae8f3b7b-bacc-4f92-aa1b-22d802d0f458",
+      "claim_id": "C37",
+      "claim": "37% of Leader profile scientists progress from mid-career to late-career.",
+      "claim_type": "EXPLICIT",
+      "source": "The cost is even higher from mid-career to late-career, with 37% of Leader profile scientists, and only 1% and 2% of Specialized and Supporting authors reaching the last career stage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states this progression rate.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:56:45.238753Z"
+    },
+    {
+      "id": "eb8cc825-ec89-4237-aeac-2f8f2e04d1e9",
+      "content_id": "ae8f3b7b-bacc-4f92-aa1b-22d802d0f458",
+      "claim_id": "C38",
+      "claim": "Only 1% of Specialized authors reach the late-career stage from mid-career.",
+      "claim_type": "EXPLICIT",
+      "source": "The cost is even higher from mid-career to late-career, with 37% of Leader profile scientists, and only 1% and 2% of Specialized and Supporting authors reaching the last career stage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states this progression rate.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:56:45.238753Z"
+    },
+    {
+      "id": "013fac45-bd98-4c6f-bf99-5d2a0ac53b9a",
+      "content_id": "ae8f3b7b-bacc-4f92-aa1b-22d802d0f458",
+      "claim_id": "C39",
+      "claim": "Only 2% of Supporting authors reach the late-career stage from mid-career.",
+      "claim_type": "EXPLICIT",
+      "source": "The cost is even higher from mid-career to late-career, with 37% of Leader profile scientists, and only 1% and 2% of Specialized and Supporting authors reaching the last career stage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states this progression rate.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:56:45.238753Z"
+    },
+    {
+      "id": "278dff5b-cf5d-4676-9bbe-bfc58f5029fb",
+      "content_id": "ae8f3b7b-bacc-4f92-aa1b-22d802d0f458",
+      "claim_id": "C40",
+      "claim": "98% of scientists reaching the late-career stage exhibited a Specialized archetype in their junior stage.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, 98% of scientists reaching the late-career stage exhibited a Specialized archetype in their junior stage, and 67% of those reaching this last career stage have consistently displayed a Leader profile in early- and mid-career stages.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states this percentage.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:56:45.238753Z"
+    },
+    {
+      "id": "fe43910a-6a66-4c37-8c29-7e807cdcc460",
+      "content_id": "ae8f3b7b-bacc-4f92-aa1b-22d802d0f458",
+      "claim_id": "C41",
+      "claim": "67% of scientists reaching the late-career stage have consistently displayed a Leader profile in early- and mid-career stages.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, 98% of scientists reaching the late-career stage exhibited a Specialized archetype in their junior stage, and 67% of those reaching this last career stage have consistently displayed a Leader profile in early- and mid-career stages.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states this percentage.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:56:45.238753Z"
+    },
+    {
+      "id": "85d9e877-7ee8-4420-befb-3cfdf4ac1fd4",
+      "content_id": "ae8f3b7b-bacc-4f92-aa1b-22d802d0f458",
+      "claim_id": "C42",
+      "claim": "66% of late-career researchers are in a Supporting role.",
+      "claim_type": "EXPLICIT",
+      "source": "Even though most of the scientists reaching the late-career stage belong to the Leader archetype in their mid-career stage, 66% of late-career researchers are in a Supporting role, although they remain involved in more than one contributorship type.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states this percentage.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:56:45.238753Z"
+    },
+    {
+      "id": "b81f5923-8a61-4dfc-b875-41854f7d1b98",
+      "content_id": "ae8f3b7b-bacc-4f92-aa1b-22d802d0f458",
+      "claim_id": "C43",
+      "claim": "Except for the late-career stage, where Supporting scientists are the most productive, the Leader archetype exhibits higher productivity, followed by Supporting.",
+      "claim_type": "EXPLICIT",
+      "source": "Except for the late-career stage, where Supporting scientists are the most productive, the Leader archetype exhibits higher productivity, followed by Supporting.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by productivity analysis shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:56:45.238753Z"
+    },
+    {
+      "id": "930b259d-42a1-4c00-9031-2cea45a616e2",
+      "content_id": "ae8f3b7b-bacc-4f92-aa1b-22d802d0f458",
+      "claim_id": "C44",
+      "claim": "Specialized scientists appear to be much less productive than scientists assigned to the other two archetypes in the early- and mid-career stages.",
+      "claim_type": "EXPLICIT",
+      "source": "Specialized scientists appear to be much less productive than scientists assigned to the other two archetypes in the early- and mid-career stages.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by productivity analysis shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:56:45.238753Z"
+    },
+    {
+      "id": "a5aa2456-a011-46f7-b585-2bee1e29e7c3",
+      "content_id": "ae8f3b7b-bacc-4f92-aa1b-22d802d0f458",
+      "claim_id": "C45",
+      "claim": "All group comparisons between archetypes within each career stage reveal statistically significant differences in productivity and citation impact.",
+      "claim_type": "EXPLICIT",
+      "source": "All group comparisons between archetypes within each career stage reveal statistically significant differences.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states the results of statistical testing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:56:45.238753Z"
+    },
+    {
+      "id": "f288c666-7162-43eb-a1cc-84c2330a1204",
+      "content_id": "ae8f3b7b-bacc-4f92-aa1b-22d802d0f458",
+      "claim_id": "C46",
+      "claim": "Large effect sizes are observed on the differences in productivity for early- and mid-career stages.",
+      "claim_type": "EXPLICIT",
+      "source": "We observe large effect sizes on the differences in productivity for early- and mid-career stages, a medium effect size for late-career and a small effect-size for junior stage.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by effect size analysis shown in Figure 5\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:56:45.238753Z"
+    },
+    {
+      "id": "b2e70a99-fcb5-45a3-8a1d-5c46a063c580",
+      "content_id": "ae8f3b7b-bacc-4f92-aa1b-22d802d0f458",
+      "claim_id": "C47",
+      "claim": "87% of men in the junior stage have a Specialized archetype.",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas 87% of men in the junior stage have a Specialized archetype, 43% and 77% in the early- and mid-stage are designated as Leaders; 84% of women in junior are Specialized, and only 27% and 65% in early- and mid-career stages show a leading profile.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states this percentage.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:56:45.238753Z"
+    },
+    {
+      "id": "96d0b338-aa2a-452b-8e1a-6dcb54869e2a",
+      "content_id": "ae8f3b7b-bacc-4f92-aa1b-22d802d0f458",
+      "claim_id": "C48",
+      "claim": "43% of men in the early-career stage are designated as Leaders.",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas 87% of men in the junior stage have a Specialized archetype, 43% and 77% in the early- and mid-stage are designated as Leaders; 84% of women in junior are Specialized, and only 27% and 65% in early- and mid-career stages show a leading profile.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states this percentage.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:56:45.238753Z"
+    },
+    {
+      "id": "cb35f81d-ae1f-4166-b0b2-401efad4f6a5",
+      "content_id": "ae8f3b7b-bacc-4f92-aa1b-22d802d0f458",
+      "claim_id": "C49",
+      "claim": "77% of men in the mid-career stage are designated as Leaders.",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas 87% of men in the junior stage have a Specialized archetype, 43% and 77% in the early- and mid-stage are designated as Leaders; 84% of women in junior are Specialized, and only 27% and 65% in early- and mid-career stages show a leading profile.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states this percentage.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:56:45.238753Z"
+    },
+    {
+      "id": "d0d9ef79-14d5-45d3-aa59-b1a69a7d7c8b",
+      "content_id": "ae8f3b7b-bacc-4f92-aa1b-22d802d0f458",
+      "claim_id": "C50",
+      "claim": "84% of women in junior stage are Specialized.",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas 87% of men in the junior stage have a Specialized archetype, 43% and 77% in the early- and mid-stage are designated as Leaders; 84% of women in junior are Specialized, and only 27% and 65% in early- and mid-career stages show a leading profile.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states this percentage.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:56:45.238753Z"
+    },
+    {
+      "id": "e173302c-dc5b-4925-80cf-7dfea383c449",
+      "content_id": "ae8f3b7b-bacc-4f92-aa1b-22d802d0f458",
+      "claim_id": "C51",
+      "claim": "Only 27% of women in early-career stages show a leading profile.",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas 87% of men in the junior stage have a Specialized archetype, 43% and 77% in the early- and mid-stage are designated as Leaders; 84% of women in junior are Specialized, and only 27% and 65% in early- and mid-career stages show a leading profile.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states this percentage.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:56:45.238753Z"
+    },
+    {
+      "id": "1db67050-5d9f-473e-9e57-42874667db24",
+      "content_id": "ae8f3b7b-bacc-4f92-aa1b-22d802d0f458",
+      "claim_id": "C52",
+      "claim": "Only 65% of women in mid-career stages show a leading profile.",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas 87% of men in the junior stage have a Specialized archetype, 43% and 77% in the early- and mid-stage are designated as Leaders; 84% of women in junior are Specialized, and only 27% and 65% in early- and mid-career stages show a leading profile.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states this percentage.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:56:45.238753Z"
+    },
+    {
+      "id": "f227c89f-4d04-430e-b249-dc8ab0b96e0b",
+      "content_id": "ae8f3b7b-bacc-4f92-aa1b-22d802d0f458",
+      "claim_id": "C53",
+      "claim": "35% of men at the late-career stage are in the Leader archetype.",
+      "claim_type": "EXPLICIT",
+      "source": "The gender distribution becomes more balanced again at the late-career stage, where 35% of men and 31% of women are in the Leader archetype.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states this percentage.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:56:45.238753Z"
+    },
+    {
+      "id": "0b65a431-2030-4c62-9c1a-fd4f632fa90a",
+      "content_id": "ae8f3b7b-bacc-4f92-aa1b-22d802d0f458",
+      "claim_id": "C54",
+      "claim": "31% of women at the late-career stage are in the Leader archetype.",
+      "claim_type": "EXPLICIT",
+      "source": "The gender distribution becomes more balanced again at the late-career stage, where 35% of men and 31% of women are in the Leader archetype.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states this percentage.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:56:45.238753Z"
+    },
+    {
+      "id": "5e82fd23-1476-4eca-9069-3b422b8ff2ae",
+      "content_id": "ae8f3b7b-bacc-4f92-aa1b-22d802d0f458",
+      "claim_id": "C55",
+      "claim": "Middle authorships occupy a larger share of publications irrespective of the archetype or career stage.",
+      "claim_type": "EXPLICIT",
+      "source": "Middle authorships occupy a larger share of publications irrespective of the archetype or career stage, which is a consequence of the fact that any paper with more than three authors, most authors are in middle positions.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by analysis shown in Figure 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:56:45.238753Z"
+    },
+    {
+      "id": "ee0b1ed4-12d6-4434-966d-c3155d1d4a1e",
+      "content_id": "ae8f3b7b-bacc-4f92-aa1b-22d802d0f458",
+      "claim_id": "C56",
+      "claim": "At the junior stage, middle authorships account for half of the papers from Specialized scientists.",
+      "claim_type": "EXPLICIT",
+      "source": "At the junior stage, middle authorships account for half of the papers from Specialized scientists, while Supporting scientists occupy a middle position in almost 75% of their publications.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by analysis shown in Figure 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:56:45.238753Z"
+    },
+    {
+      "id": "13bb6772-8e8f-4471-a6d4-b4233d31e9c1",
+      "content_id": "ae8f3b7b-bacc-4f92-aa1b-22d802d0f458",
+      "claim_id": "C57",
+      "claim": "Supporting scientists at the junior stage occupy a middle position in almost 75% of their publications.",
+      "claim_type": "EXPLICIT",
+      "source": "At the junior stage, middle authorships account for half of the papers from Specialized scientists, while Supporting scientists occupy a middle position in almost 75% of their publications.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by analysis shown in Figure 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:56:45.238753Z"
+    },
+    {
+      "id": "0db94342-9847-4416-9229-cc0eb7737ac1",
+      "content_id": "ae8f3b7b-bacc-4f92-aa1b-22d802d0f458",
+      "claim_id": "C58",
+      "claim": "In the early-career stage, the Leader archetype exhibits a more balanced share of publications between first (32%), middle (37%) and last positions (32%).",
+      "claim_type": "EXPLICIT",
+      "source": "In the early-career stage, the Leader archetype emerges, exhibiting a more balanced share of publications between first (32%), middle (37%) and last positions (32%).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by analysis shown in Figure 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:56:45.238753Z"
+    },
+    {
+      "id": "1969149b-6cb6-44a4-bd93-f5201ff21c0a",
+      "content_id": "ae8f3b7b-bacc-4f92-aa1b-22d802d0f458",
+      "claim_id": "C59",
+      "claim": "Only 12% of the 222,295 scientists included in the dataset reached the late-career stage.",
+      "claim_type": "EXPLICIT",
+      "source": "Out of the 222,295 scientists included in our dataset, only 12% reached the late-career stage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states this percentage.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:56:45.238753Z"
+    },
+    {
+      "id": "38167d70-4014-4931-98a2-2de6544cbe81",
+      "content_id": "ae8f3b7b-bacc-4f92-aa1b-22d802d0f458",
+      "claim_id": "C60",
+      "claim": "The diversity of profiles is not the result of scientists evolving in their career trajectory and adopting different roles, but that diverse archetypes exist between and within career stages.",
+      "claim_type": "EXPLICIT",
+      "source": "This hierarchy exists at each career stage, indicating that the diversity of profiles is not the result of scientists evolving in their career trajectory and adopting different roles, but that diverse archetypes exist between and within career stages.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on interpretation of the archetypal analysis results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:56:45.238753Z"
+    },
+    {
+      "id": "8d49c454-eee4-49b0-9455-a7d3234650dc",
+      "content_id": "ae8f3b7b-bacc-4f92-aa1b-22d802d0f458",
+      "claim_id": "C61",
+      "claim": "Specialized scientists are less productive and have a lower share of highly cited publications than Leaders and Supporting scientists.",
+      "claim_type": "EXPLICIT",
+      "source": "Specialized scientists are less productive and have a lower share of highly cited publications than Leaders and Supporting scientists, which may serve a disadvantage for career advancement in those environments which prioritize publication productivity indicators in research assessment (Figure 5B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by analysis shown in Figure 5B and 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:56:45.238753Z"
+    },
+    {
+      "id": "95582c15-3a23-44d8-b4d3-636ae33cac4c",
+      "content_id": "ae8f3b7b-bacc-4f92-aa1b-22d802d0f458",
+      "claim_id": "C62",
+      "claim": "Women are more likely to be of the Specialized archetype in early-career, while men are more likely to be Leaders.",
+      "claim_type": "EXPLICIT",
+      "source": "While in the other career stages women and men exhibit a similar distribution of archetypes, women are more likely to be of the Specialized archetype in early-career, while men are more likely to be Leaders.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by gender distribution analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:56:45.238753Z"
+    },
+    {
+      "id": "d665e91e-53c4-4a0c-b177-5d3aebb08685",
+      "content_id": "ae8f3b7b-bacc-4f92-aa1b-22d802d0f458",
+      "claim_id": "C63",
+      "claim": "Women disproportionately engage in technical labor\u2013even when controlling for academic age.",
+      "claim_type": "EXPLICIT",
+      "source": "That women disproportionately engage in technical labor\u2013even when controlling for academic age\u2013has been demonstrated in previous studies (Macaluso et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:56:45.238753Z"
+    },
+    {
+      "id": "30fa940a-e8e8-4a25-b4ae-80d5a57564b0",
+      "content_id": "ae8f3b7b-bacc-4f92-aa1b-22d802d0f458",
+      "claim_id": "C64",
+      "claim": "Women academics do higher service work than men.",
+      "claim_type": "EXPLICIT",
+      "source": "This is consistent with general patterns in academic labor; for example, the higher service work done by women academics (Heijstra et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:56:45.238753Z"
+    },
+    {
+      "id": "f473caf6-31d3-471f-9af0-954f607af7c2",
+      "content_id": "ae8f3b7b-bacc-4f92-aa1b-22d802d0f458",
+      "claim_id": "C65",
+      "claim": "Contributorships are generally associated with author order.",
+      "claim_type": "EXPLICIT",
+      "source": "Contributorships are generally associated with author order (Larivi\u00e8re et al., 2016; Sauermann and Haeussler, 2017), based on the presumption that first and last author will have major roles, while middle authors will play a secondary role.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:56:45.238753Z"
+    },
+    {
+      "id": "701b14ca-2d1f-4d88-ab82-314f17128100",
+      "content_id": "ae8f3b7b-bacc-4f92-aa1b-22d802d0f458",
+      "claim_id": "C66",
+      "claim": "First and last author positions are presumed to have major roles, while middle authors will play a secondary role.",
+      "claim_type": "EXPLICIT",
+      "source": "Contributorships are generally associated with author order (Larivi\u00e8re et al., 2016; Sauermann and Haeussler, 2017), based on the presumption that first and last author will have major roles, while middle authors will play a secondary role.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established conventions in scientific authorship.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:56:45.238753Z"
+    },
+    {
+      "id": "6df29997-f2aa-42ba-9ae4-40a7b8b1de6e",
+      "content_id": "ae8f3b7b-bacc-4f92-aa1b-22d802d0f458",
+      "claim_id": "C67",
+      "claim": "Those showcasing a Specialized or Supporting archetype in their early- and mid-career stages have greater difficulties to progress in their research career.",
+      "claim_type": "EXPLICIT",
+      "source": "This model, however, does not provide equal access to career advancement for all types of scientists: those showcasing a Specialized or Supporting archetype in their early- and mid-career stages have greater difficulties to progress in their research career.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on the career progression data presented.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:56:45.238753Z"
+    },
+    {
+      "id": "c0817250-9d19-4719-ac78-8e2224311b7d",
+      "content_id": "ae8f3b7b-bacc-4f92-aa1b-22d802d0f458",
+      "claim_id": "C68",
+      "claim": "These obstacles affect women at a greater extent than men, as a higher proportion of female scientists adopt these roles.",
+      "claim_type": "EXPLICIT",
+      "source": "These obstacles affect women at a greater extent than men, as a higher proportion of female scientists adopt these roles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on the gender distribution data presented.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:56:45.238753Z"
+    },
+    {
+      "id": "d7fa4844-4575-4204-b7ba-7db5a63284fb",
+      "content_id": "ae8f3b7b-bacc-4f92-aa1b-22d802d0f458",
+      "claim_id": "C69",
+      "claim": "The study findings suggest systematic biases on the selection of individuals which may be hampering the efficiency of the scientific system to self-organize itself and assemble robust and diverse scientific teams.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings suggest systematic biases on the selection of individuals which may be hampering the efficiency of the scientific system to self-organize itself and assemble robust and diverse scientific teams.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretive claim based on the study findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:56:45.238753Z"
+    },
+    {
+      "id": "0a6cecec-8761-417b-8aed-5639c00eb1ab",
+      "content_id": "ae8f3b7b-bacc-4f92-aa1b-22d802d0f458",
+      "claim_id": "C70",
+      "claim": "The data needed to reproduce the analysis are openly accessible at http://doi.org/10.5281/zenodo.3891055.",
+      "claim_type": "EXPLICIT",
+      "source": "The data needed to reproduce the our analysis are openly accessible at http://doi.org/10.5281/zenodo.3891055.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states the data availability.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:56:45.238753Z"
+    },
+    {
+      "id": "1fc82ccf-35a0-45da-9e8a-af5d5f2cc178",
+      "content_id": "ae8f3b7b-bacc-4f92-aa1b-22d802d0f458",
+      "claim_id": "C71",
+      "claim": "88% of the publications have been published in PLoS One.",
+      "claim_type": "EXPLICIT",
+      "source": "88% of the publications have been published in PLoS One.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states this percentage.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:56:45.238753Z"
+    },
+    {
+      "id": "bab6ce98-e530-4f8d-815f-f11a2823aff5",
+      "content_id": "ae8f3b7b-bacc-4f92-aa1b-22d802d0f458",
+      "claim_id": "C72",
+      "claim": "The year of first publication is found to be the best predictor for the academic age of scientists.",
+      "claim_type": "EXPLICIT",
+      "source": "Our use of the year of first publication as an indicator for academic age is based on previous research (Nane et al., 2017), in which the year of first publication is found to be the best predictor for the academic age of scientists.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:56:45.238753Z"
+    },
+    {
+      "id": "dfd0c4ee-b644-4b94-a84a-77c7d7c29aeb",
+      "content_id": "ae8f3b7b-bacc-4f92-aa1b-22d802d0f458",
+      "claim_id": "C73",
+      "claim": "The Max-Min Hill Climbing (MMHC) algorithm was employed to learn the Bayesian network structure.",
+      "claim_type": "EXPLICIT",
+      "source": "We employ the Max-Min Hill-Climbing (MMHC) algorithm (Tsamardinos et al., 2006), which combined techniques from constraint and score-based algorithms, along with an initial local discovery algorithm of edges without any orientation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly describes the algorithm used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:56:45.238753Z"
+    },
+    {
+      "id": "391e8bdd-1130-4cba-b3df-2f254e5930a9",
+      "content_id": "ae8f3b7b-bacc-4f92-aa1b-22d802d0f458",
+      "claim_id": "C74",
+      "claim": "The structure of the Bayesian network has been tested for robustness using a bootstrap procedure with 50 repetitions.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the structure of the network has been tested for robustness. The strength of the arcs, i.e., relationships between variables, has been investigated using the bootstrap procedure, with 50 repetitions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly describes the robustness testing procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:56:45.238753Z"
+    },
+    {
+      "id": "a1852981-57f1-432a-81fa-59b212415f6a",
+      "content_id": "ae8f3b7b-bacc-4f92-aa1b-22d802d0f458",
+      "claim_id": "C75",
+      "claim": "Only the arcs that were present in 80% of the bootstrap repetitions have been considered in the final Bayesian network structure.",
+      "claim_type": "EXPLICIT",
+      "source": "Only the arcs that were present in 80% of the repetitions have been considered and are depicted in Figure 2B.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly describes the threshold for arc inclusion.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:56:45.238753Z"
+    },
+    {
+      "id": "57e71e19-f85f-4f3f-837e-843650dc6447",
+      "content_id": "ae8f3b7b-bacc-4f92-aa1b-22d802d0f458",
+      "claim_id": "C76",
+      "claim": "The analysis was restricted to the Medical and Life Sciences to make it more homogeneous and avoid disciplinary differences in task distribution.",
+      "claim_type": "EXPLICIT",
+      "source": "We restrict our dataset to the Medical and Life Sciences to make it more homogeneous and avoid disciplinary differences in task distribution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states the rationale for field restriction.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:56:45.238753Z"
+    },
+    {
+      "id": "04bfd5c2-135a-4477-9773-11293c47e836",
+      "content_id": "ae8f3b7b-bacc-4f92-aa1b-22d802d0f458",
+      "claim_id": "C77",
+      "claim": "Author names are disambiguated using a rule-based scoring algorithm.",
+      "claim_type": "EXPLICIT",
+      "source": "Author names are disambiguated using a rule-based scoring algorithm (Caron and van Eck, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly describes the disambiguation method.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:56:45.238753Z"
+    },
+    {
+      "id": "d30b9733-0327-4ea3-a138-6047c811de2d",
+      "content_id": "ae8f3b7b-bacc-4f92-aa1b-22d802d0f458",
+      "claim_id": "C78",
+      "claim": "A 90% accuracy threshold was applied before assigning gender.",
+      "claim_type": "EXPLICIT",
+      "source": "We apply a 90% accuracy threshold before assigning gender and only include those authors who surpass such threshold.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly describes the gender assignment threshold.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:56:45.238753Z"
+    },
+    {
+      "id": "bbcf230f-743a-4e43-b26a-d22cb2320480",
+      "content_id": "ae8f3b7b-bacc-4f92-aa1b-22d802d0f458",
+      "claim_id": "C79",
+      "claim": "Only authors whose first publication occurred from 1980 onwards were included.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, we include only authors whose first publication occurred from 1980 onwards.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly describes this inclusion criterion.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:56:45.238753Z"
+    },
+    {
+      "id": "92a873c3-1c6d-4b68-a77a-edec356bf75f",
+      "content_id": "ae8f3b7b-bacc-4f92-aa1b-22d802d0f458",
+      "claim_id": "C80",
+      "claim": "Only authors who have contributed to at least five publications were included.",
+      "claim_type": "EXPLICIT",
+      "source": "Third, we include only authors who have contributed to at least five publications.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly describes this inclusion criterion.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:56:45.238753Z"
+    },
+    {
+      "id": "d07c656c-78c2-40c5-8018-a233b7b5e77d",
+      "content_id": "ae8f3b7b-bacc-4f92-aa1b-22d802d0f458",
+      "claim_id": "C81",
+      "claim": "The final dataset contains a total of 222,925 individuals and 6,236,239 distinct publications.",
+      "claim_type": "EXPLICIT",
+      "source": "As a result, the final dataset contains a total of 222,925 individuals and 6,236,239 distinct publications.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states the final dataset size.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:56:45.238753Z"
+    },
+    {
+      "id": "11d004ff-a6f1-4e6a-a832-038f05631671",
+      "content_id": "ae8f3b7b-bacc-4f92-aa1b-22d802d0f458",
+      "claim_id": "C82",
+      "claim": "The total computational time of the analyses took around 30 hours, with 20 hours being required for the data modelling.",
+      "claim_type": "EXPLICIT",
+      "source": "The total computational time of the analyses took around 30 hours, with 20 hours being required for the data modelling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states the computational time.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:56:45.238753Z"
+    },
+    {
+      "id": "9e55eb4c-1bcf-48a2-a584-d0ec31cf36b3",
+      "content_id": "ae8f3b7b-bacc-4f92-aa1b-22d802d0f458",
+      "claim_id": "C83",
+      "claim": "Robust archetypal analysis identifies 'prototypical types' of the multivariate aggregated contributorship dataset, correcting for outlier effects in the data.",
+      "claim_type": "EXPLICIT",
+      "source": "Robust archetypal analysis identifies ''prototypical types'' of the multivariate aggregated contributorship dataset, correcting for outlier effects in the data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly describes what robust archetypal analysis does.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:56:45.238753Z"
+    },
+    {
+      "id": "1cd050b3-8170-48da-ab37-46294f913d00",
+      "content_id": "ae8f3b7b-bacc-4f92-aa1b-22d802d0f458",
+      "claim_id": "C84",
+      "claim": "Using two archetypes for the junior and late-career stages, and three for early-career and mid-career stages results in significantly smaller RSS.",
+      "claim_type": "EXPLICIT",
+      "source": "A residual sum of squares (RSS) analysis for different archetypes reveals that using two archetypes for the junior and late-career stages, and three for early-career and mid-career stages results in significantly smaller RSS.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by RSS analysis shown in Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:56:45.238753Z"
+    },
+    {
+      "id": "9d3a9b0f-5f2c-421e-99b8-24f2f2ac5e50",
+      "content_id": "ae8f3b7b-bacc-4f92-aa1b-22d802d0f458",
+      "claim_id": "C85",
+      "claim": "The elbow criterion supports the choice of number of archetypes per career stage.",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 4\u2014figure supplement 1 reveals the screeplots of RSS per career stage, where the elbow criterion supports the choice of number of archetypes per career stage.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by the screeplot analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:56:45.238753Z"
+    },
+    {
+      "id": "caf6a1cc-b7bf-490a-913b-bb78315d3677",
+      "content_id": "ae8f3b7b-bacc-4f92-aa1b-22d802d0f458",
+      "claim_id": "C86",
+      "claim": "The uncertainty intervals display small variations around the initial coefficients, which confirms the robustness of the archetypes.",
+      "claim_type": "EXPLICIT",
+      "source": "The uncertainty intervals display small variations around the initial coefficients, which confirms the robustness of the archetypes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states this conclusion about robustness.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:56:45.238753Z"
+    },
+    {
+      "id": "bb910a9d-34fb-475d-8aef-c41861b50a5b",
+      "content_id": "ae8f3b7b-bacc-4f92-aa1b-22d802d0f458",
+      "claim_id": "C87",
+      "claim": "A medium effect size is observed on differences by gender for Leader and Specialized profiles at the early- and mid-career stages.",
+      "claim_type": "EXPLICIT",
+      "source": "We observe a medium effect size on differences by gender for Leader and Specialized profiles at the early- and mid-career stages (Figure 6\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by effect size analysis shown in Figure 6\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:56:45.238753Z"
+    },
+    {
+      "id": "6b811f96-e328-448d-82cd-0103814c6920",
+      "content_id": "ae8f3b7b-bacc-4f92-aa1b-22d802d0f458",
+      "claim_id": "C88",
+      "claim": "All pairwise tests of differences in author position proportions reveal statistical significance.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to the gender analysis, we have evaluated whether the differences in proportions are statistically significant. All pairwise tests reveal statistical significance, as supported also by the very small confidence intervals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states the results of statistical testing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:56:45.238753Z"
+    },
+    {
+      "id": "0f7468dc-83cc-400d-9a1e-ae29dec4337e",
+      "content_id": "ae8f3b7b-bacc-4f92-aa1b-22d802d0f458",
+      "claim_id": "C89",
+      "claim": "Large effect sizes are observed for specialized authors in the junior stage and supporting authors in the late-career between being first or last author.",
+      "claim_type": "EXPLICIT",
+      "source": "We observe a large effect size for specialized authors in the junior stage and supporting authors in the late-career between being first or last author.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by effect size analysis shown in Figure 7\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:56:45.238753Z"
+    },
+    {
+      "id": "eb767efa-31b1-4c4d-a213-adbae9762860",
+      "content_id": "ae8f3b7b-bacc-4f92-aa1b-22d802d0f458",
+      "claim_id": "C90",
+      "claim": "The assessment of researchers has been under scrutiny for some time.",
+      "claim_type": "EXPLICIT",
+      "source": "The assessment of researchers has been under scrutiny for some time (McKiernan et al., 2019; Moher et al., 2018; Way et al., 2019; Weingart, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:56:45.238753Z"
+    },
+    {
+      "id": "7ee53815-2fe7-4c13-943e-26d9a089f77f",
+      "content_id": "ae8f3b7b-bacc-4f92-aa1b-22d802d0f458",
+      "claim_id": "C91",
+      "claim": "Researchers are immersed in a reward system that evaluates them individually following uniform expectations of leadership and excellence.",
+      "claim_type": "EXPLICIT",
+      "source": "They are immersed in a reward system that evaluates them individually following uniform expectations of leadership and excellence (Bol et al., 2018; Merton, 1968; Reskin, 1977).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:56:45.238753Z"
+    },
+    {
+      "id": "8b462a98-0a5b-42bd-8fef-e2e2ad69e7f8",
+      "content_id": "ae8f3b7b-bacc-4f92-aa1b-22d802d0f458",
+      "claim_id": "C92",
+      "claim": "Recent evidence shows an increasing need for a larger and more stratified scientific workforce.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent evidence shows an increasing need for a larger and more stratified scientific workforce (Milojevi\u0107, 2014; Larivi\u00e8re et al., 2016; Newman, 2004; Wuchty et al., 2007) which necessarily involves a reconceptualization of research careers and considering a breadth of profiles for which specific paths should be considered.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:56:45.238753Z"
+    },
+    {
+      "id": "3ad054c5-f470-477a-92c4-c4611c27888a",
+      "content_id": "ae8f3b7b-bacc-4f92-aa1b-22d802d0f458",
+      "claim_id": "C93",
+      "claim": "Larger teams require a distribution of tasks which will translate on individuals specializing on certain roles.",
+      "claim_type": "EXPLICIT",
+      "source": "Larger teams require a distribution of tasks which will translate on individuals specializing on certain roles (Larivi\u00e8re et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:56:45.238753Z"
+    },
+    {
+      "id": "aba8f980-3efa-484f-aaff-98242cf297f5",
+      "content_id": "ae8f3b7b-bacc-4f92-aa1b-22d802d0f458",
+      "claim_id": "C94",
+      "claim": "Scientists exhibit different archetypes at different stages, following many paths during their career trajectory.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that scientists exhibit different archetypes at different stages, following many paths during their career trajectory.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary claim based on the study findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:56:45.238753Z"
+    },
+    {
+      "id": "9dd07ae8-325d-4803-8b6a-e38d47127e45",
+      "content_id": "ae8f3b7b-bacc-4f92-aa1b-22d802d0f458",
+      "claim_id": "C95",
+      "claim": "The robust archetypal analysis identified no Leader archetype at the junior stage.",
+      "claim_type": "EXPLICIT",
+      "source": "The robust archetypal analysis identified no Leader archetype at the junior stage, when scientists are still 'earning their stripes', nor are there Specialized scientists in the late-career stage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on the archetypal analysis results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:56:45.238753Z"
+    },
+    {
+      "id": "9fa94ab1-c8d0-49b2-ac69-bfd43398d56c",
+      "content_id": "ae8f3b7b-bacc-4f92-aa1b-22d802d0f458",
+      "claim_id": "C96",
+      "claim": "There are no Specialized scientists in the late-career stage.",
+      "claim_type": "EXPLICIT",
+      "source": "The robust archetypal analysis identified no Leader archetype at the junior stage, when scientists are still 'earning their stripes', nor are there Specialized scientists in the late-career stage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on the archetypal analysis results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:56:45.238753Z"
+    },
+    {
+      "id": "206b4921-d75f-4cfc-8c67-43faed9c2c84",
+      "content_id": "ae8f3b7b-bacc-4f92-aa1b-22d802d0f458",
+      "claim_id": "C97",
+      "claim": "Scientists' career design may be at odds with the way science is produced.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings have important policy implications as they indicate that scientists' career design may be at odds with the way science is produced, and suggest a complete reform wherein reproduction of Leaders is not the only model of success (Milojevi\u0107 et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretive claim based on the study findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:56:45.238753Z"
+    },
+    {
+      "id": "83fd6e4a-261c-4218-b1a9-3a9fedbe2410",
+      "content_id": "ae8f3b7b-bacc-4f92-aa1b-22d802d0f458",
+      "claim_id": "C98",
+      "claim": "Scientists with a Leader profile are able to move seamlessly across archetypes during their careers.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results demonstrate the high versatility of the Leader archetype: scientists with this profile are able to move seamlessly across archetypes during their careers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretive claim based on the career trajectory data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:56:45.238753Z"
+    },
+    {
+      "id": "d07499b7-eeb5-4d12-acb9-2602f528e5d6",
+      "content_id": "ae8f3b7b-bacc-4f92-aa1b-22d802d0f458",
+      "claim_id": "C99",
+      "claim": "Most of the scientists fitting Specialized or Supporting archetypes do not progress to more senior stages.",
+      "claim_type": "EXPLICIT",
+      "source": "While there are some scientists with a Specialized or Supporting profile who manage to shift to the other three archetypes, most of the scientists fitting these archetypes in our dataset do not progress to more senior stages.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the career progression data presented.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:56:45.238753Z"
+    },
+    {
+      "id": "7272d0ba-2a02-4959-8998-2d0b1413c163",
+      "content_id": "ae8f3b7b-bacc-4f92-aa1b-22d802d0f458",
+      "claim_id": "C100",
+      "claim": "The lack of assessment schemes sensitive to the diversity of profiles limits the capacity of policies to correct for inequalities observed across and within archetypes.",
+      "claim_type": "EXPLICIT",
+      "source": "The lack of assessment schemes sensitive to the diversity of profiles, partly due the inappropriate use of bibliometric indicators at the individual researcher level (McKiernan et al., 2019; Hicks et al., 2015), limits the capacity of policies to correct for inequalities observed across and within archetypes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretive claim based on the study findings and cited literature.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:56:45.238753Z"
+    },
+    {
+      "id": "9fa89277-e93e-4526-baa2-b59367ad5355",
+      "content_id": "ae8f3b7b-bacc-4f92-aa1b-22d802d0f458",
+      "claim_id": "C101",
+      "claim": "Structural changes in the academic reward system are necessary to support the advancement and retention of Specialized and Supporting scientists.",
+      "claim_type": "EXPLICIT",
+      "source": "Structural changes in the academic reward system are necessary to support the advancement and retention of Specialized and Supporting scientists.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a policy recommendation based on the study findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:56:45.238753Z"
+    },
+    {
+      "id": "d724963a-f9d8-49a6-8259-d0fdb43b8953",
+      "content_id": "ae8f3b7b-bacc-4f92-aa1b-22d802d0f458",
+      "claim_id": "C102",
+      "claim": "Early-career stage is key to the development of scientific careers.",
+      "claim_type": "EXPLICIT",
+      "source": "Early-career stage is key to the development of scientific careers, and it is at this stage that large gender differences are observed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretive claim based on the gender distribution data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:56:45.238753Z"
+    },
+    {
+      "id": "8ad53e3b-6e0b-405e-a90c-5055e9a89da9",
+      "content_id": "ae8f3b7b-bacc-4f92-aa1b-22d802d0f458",
+      "claim_id": "C103",
+      "claim": "The higher rates of attrition for women may be explained by consistent differences in the distribution of archetypes by gender.",
+      "claim_type": "EXPLICIT",
+      "source": "We observe consistent differences in the distribution of archetypes by gender, which may contribute to explain the higher rates of attrition for women (Huang et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretive claim connecting the study findings to cited literature on attrition.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:56:45.238753Z"
+    },
+    {
+      "id": "63e9de4b-19fa-4701-ba82-5ab3fed26b0b",
+      "content_id": "ae8f3b7b-bacc-4f92-aa1b-22d802d0f458",
+      "claim_id": "C104",
+      "claim": "Leaders set the agenda and define lines of work, whereas technicians are prized for their ability to implement this agenda.",
+      "claim_type": "EXPLICIT",
+      "source": "These roles reinforce hierarchy and organizational strategies: leaders set the agenda and define lines of work, whereas technicians are prized for their ability to implement this agenda (Latour and Woolgar, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on cited literature about scientific organization.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:56:45.238753Z"
+    },
+    {
+      "id": "304df86a-a3f0-490e-807e-efe5132e941a",
+      "content_id": "ae8f3b7b-bacc-4f92-aa1b-22d802d0f458",
+      "claim_id": "C105",
+      "claim": "The study is based on a set of publications and a sample of scientists which may not represent accurately the whole population of scientists.",
+      "claim_type": "EXPLICIT",
+      "source": "The analysis is based on a set of publications and a sample of scientists which may not represent accurately the whole population of scientists.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an explicit acknowledgment of a study limitation.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:56:45.238753Z"
+    },
+    {
+      "id": "127cf033-c9ee-4dd6-b14a-ce645ec4f36a",
+      "content_id": "ae8f3b7b-bacc-4f92-aa1b-22d802d0f458",
+      "claim_id": "C106",
+      "claim": "The study relies heavily on the competence of an author name disambiguation algorithm to correctly identify disambiguated authors.",
+      "claim_type": "EXPLICIT",
+      "source": "The study relies heavily on the competence of an author name disambiguation algorithm to correctly identify disambiguated authors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an explicit acknowledgment of a methodological dependency.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:56:45.238753Z"
+    },
+    {
+      "id": "4b985162-f164-435c-a201-198b33348557",
+      "content_id": "ae8f3b7b-bacc-4f92-aa1b-22d802d0f458",
+      "claim_id": "C107",
+      "claim": "Evidence suggests that author self-reporting on contributorship is not exempt of limitations.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, evidence suggests that author self-reporting on contributorship is not exempt of limitations (Ilakovac et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:56:45.238753Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "ee694e80-2c7f-4519-96ae-313f14523803",
+      "content_id": "ae8f3b7b-bacc-4f92-aa1b-22d802d0f458",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The study analyzed 70,694 papers from PLoS journals (88% from PLoS One) authored by 347,136 scientists in Medical and Life Sciences. After applying filters (gender assignment threshold of 90%, first publication from 1980 onwards, minimum 5 publications), the final dataset contained 222,925 individuals and 6,236,239 publications. Five contribution types were analyzed across four career stages defined by years since first publication.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C3, C12, C13, C70-C81 provide comprehensive documentation of the dataset construction, inclusion criteria, and methodological choices. The data are openly accessible (C70), and the methods are explicitly described with clear thresholds and rationale. The restriction to Medical and Life Sciences (C76) and use of established disambiguation algorithms (C77) are appropriately justified.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:56:45.238753Z"
+    },
+    {
+      "id": "6187622d-3156-4006-9301-6680dd3d9292",
+      "content_id": "ae8f3b7b-bacc-4f92-aa1b-22d802d0f458",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Contribution patterns vary systematically by career stage and author position. Earlier career stages are associated with performing experiments and analyzing data (decreasing with seniority), while writing and contributing reagents/tools increase over time with a decline in late-career. First authors are heavily involved in most contributions except contributing tools; middle authors contribute resources; last authors focus on design, conception, and writing.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C14-C19 describe patterns observed in Figure 1 from the seed dataset of self-reported contributions. These are descriptive findings directly supported by the data visualization. The patterns are consistent with established norms in scientific authorship and provide the empirical basis for the subsequent predictive modeling.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:56:45.238753Z"
+    },
+    {
+      "id": "3c305cea-c47e-487e-b710-2d6d18414c25",
+      "content_id": "ae8f3b7b-bacc-4f92-aa1b-22d802d0f458",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Correlation analysis reveals that writing the manuscript and conceiving experiments are highly correlated (0.71), while bibliometric variables show moderate correlations (countries-institutions: 0.66; author position-number of authors: 0.68; authors-institutions: 0.72). Number of contributions strongly correlates with writing (0.85), conceiving (0.82), and analyzing data (0.79).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C20-C24 report correlation coefficients shown in Figure 2A. These are straightforward statistical measures appropriately calculated using mixed correlation methods (Spearman, tetrachoric, biserial, polyserial) for different variable types. The correlations inform the structure of the Bayesian network model.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:56:45.238753Z"
+    },
+    {
+      "id": "631d411f-ac69-4b01-80f7-a8961be24f65",
+      "content_id": "ae8f3b7b-bacc-4f92-aa1b-22d802d0f458",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "A Bayesian network was constructed using the Max-Min Hill Climbing algorithm with robustness testing via 50 bootstrap repetitions. Only arcs present in 80% of bootstrap samples were retained. The model achieved 6-8% classification error for contributorships and MSE of 0.12 for number of contributions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C73-C75, C25 describe the BN methodology and validation. The MMHC algorithm is appropriate for learning BN structure, the bootstrap procedure (50 repetitions, 80% threshold) provides robustness assessment, and cross-validation results (Table 3) demonstrate good predictive performance. The methods are standard and well-executed.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:56:45.238753Z"
+    },
+    {
+      "id": "aafb6d09-6f4b-4e49-9c28-9d1425414fb0",
+      "content_id": "ae8f3b7b-bacc-4f92-aa1b-22d802d0f458",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Predicted contribution probabilities show that performing experiments is most discriminative by career stage, with junior scientists most likely to perform experiments and this likelihood decreasing with career advancement. Conversely, writing, conceiving experiments, and contributing tools become more likely at advanced career stages.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26-C28 describe patterns in Figure 3 showing predicted probability distributions by career stage. These findings are consistent with the descriptive patterns in the seed data (C14-C16) and represent successful model predictions. The distributions show clear separation by career stage, validating the model's discriminative ability.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:56:45.238753Z"
+    },
+    {
+      "id": "43e9a531-7e48-4f6c-9b59-a8b519ae70f7",
+      "content_id": "ae8f3b7b-bacc-4f92-aa1b-22d802d0f458",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Robust archetypal analysis identified three archetypes: Leader (high on all contributions except performing experiments), Specialized (high on performing experiments and analyzing data), and Supporting (low on all contributions). Junior and late-career stages show only two archetypes each: junior has Specialized and Supporting; late-career has Leader and Supporting. Early- and mid-career stages exhibit all three archetypes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4-C6, C29-C31, C83-C86, C95-C96 describe the archetypal analysis results shown in Figure 4. The choice of archetype numbers is justified by RSS analysis and elbow criterion (C84-C85). Uncertainty intervals confirm robustness (C86). The finding that archetype composition varies by career stage is well-supported and represents a key discovery of the study.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:56:45.238753Z"
+    },
+    {
+      "id": "a1a1d2fd-46ed-473c-b741-a7bdbaeb69da",
+      "content_id": "ae8f3b7b-bacc-4f92-aa1b-22d802d0f458",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Career progression analysis shows that only 12% (27,714 of 222,925) scientists reached late-career stage. Attrition is low between junior and early-career (93% Specialized, 83% Supporting progress), but substantial thereafter. From early- to mid-career: 84% of Leaders progress vs. 30% Specialized and 16% Supporting. From mid- to late-career: 37% Leaders vs. 1-2% Specialized/Supporting. 98% of late-career scientists were Specialized as juniors, and 67% consistently showed Leader profile in early- and mid-career. Despite this, 66% of late-career researchers are in Supporting roles.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C42, C59, C7 present career trajectory data from Figure 5A. The progression rates are explicitly stated and show dramatic differences by archetype. The finding that Leader archetype scientists have substantially higher progression rates is well-documented. However, the interpretation requires caution given the cross-sectional nature of the data and potential cohort effects (acknowledged in C59).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:56:45.238753Z"
+    },
+    {
+      "id": "3e891a57-6603-4ceb-b061-69697ab9532a",
+      "content_id": "ae8f3b7b-bacc-4f92-aa1b-22d802d0f458",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Productivity and citation impact differ significantly by archetype. Leaders show highest productivity (except late-career where Supporting is most productive), followed by Supporting. Specialized scientists are much less productive in early- and mid-career stages and have lower shares of highly cited publications than Leaders and Supporting scientists. All comparisons are statistically significant with large effect sizes for productivity differences in early- and mid-career.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C46, C61 describe productivity and citation patterns in Figure 5B-C with statistical testing. Wilcoxon tests show significance (C45), and effect size analysis (Figure 5\u2014supplement 1) confirms large effects for productivity differences (C46). The finding that Specialized scientists have lower productivity and citation impact is well-supported, though effect sizes for citation impact are small despite statistical significance.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:56:45.238753Z"
+    },
+    {
+      "id": "59f53583-f615-43d0-93e9-16f4ea80d49e",
+      "content_id": "ae8f3b7b-bacc-4f92-aa1b-22d802d0f458",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Gender disparities exist across career stages, with men predominantly in Leader archetype and women in Specialized archetype, especially at early- and mid-career. Specifically: junior stage shows similar distributions (87% men, 84% women Specialized); early-career shows 43% men vs. 27% women as Leaders; mid-career shows 77% men vs. 65% women as Leaders. Late-career becomes more balanced (35% men, 31% women Leaders). Effect sizes are medium for Leader and Specialized profiles at early- and mid-career stages.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8-C9, C47-C54, C62, C87 present gender distribution data from Figure 6. Two-proportion z-tests confirm statistical significance with very small p-values, and effect size analysis (Figure 6\u2014supplement 3) shows medium effects at early- and mid-career (C87). The gender disparities are well-documented, though the analysis is limited by the 90% gender assignment threshold (C78) which may introduce selection bias.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:56:45.238753Z"
+    },
+    {
+      "id": "aa85940c-8f1c-4f2d-be08-2d6d2cf17ed4",
+      "content_id": "ae8f3b7b-bacc-4f92-aa1b-22d802d0f458",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Author position patterns vary by archetype and career stage. Middle authorships dominate across all archetypes due to team size. At junior stage, Specialized scientists publish 50% as middle authors while Supporting publish 75% as middle authors. Leaders at early-career show balanced distribution (32% first, 37% middle, 32% last). All pairwise comparisons are statistically significant with large effect sizes for specialized junior and supporting late-career scientists between first and last authorship.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55-C58, C88-C89 describe author position distributions in Figure 7. The statistical testing confirms significance (C88) and effect size analysis (Figure 7\u2014supplement 1) shows large effects for specific comparisons (C89). The finding that middle authorship dominates is appropriately attributed to team size (C55), and the patterns by archetype are well-documented.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:56:45.238753Z"
+    },
+    {
+      "id": "32de8f6b-6f21-4b80-ad47-366b80b63dc8",
+      "content_id": "ae8f3b7b-bacc-4f92-aa1b-22d802d0f458",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The diversity of scientific profiles exists within and between career stages, not just as a result of career evolution. Scientists with Leader profiles show high versatility and can move across archetypes, while most Specialized and Supporting scientists do not progress to senior stages. This creates systematic barriers to career advancement that disproportionately affect women, who are more likely to adopt Specialized and Supporting roles, suggesting biases in the scientific system's organization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C60, C94, C98-C99, C67-C69, C97 present interpretive conclusions based on the empirical findings. The interpretation that profile diversity exists within stages (C60) is supported by the archetypal analysis. The differential progression rates by archetype (C67, C99) and gender (C68) are well-documented. However, the causal claims about systematic biases (C69, C97) are inferential and would benefit from additional evidence about mechanisms.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:56:45.238753Z"
+    },
+    {
+      "id": "f559a301-0934-4883-864a-baff41511ab8",
+      "content_id": "ae8f3b7b-bacc-4f92-aa1b-22d802d0f458",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Current assessment schemes lack sensitivity to profile diversity, limiting policy capacity to address inequalities. Structural changes in academic reward systems are necessary to support Specialized and Supporting scientists. Early-career stage is critical for career development, where large gender differences emerge, potentially explaining higher attrition rates for women.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C100-C103 present policy recommendations and causal interpretations. While the empirical findings on gender disparities and differential progression are well-supported, the causal link to attrition (C103) relies on cited literature rather than direct evidence from this study. The policy recommendations (C101) are reasonable but speculative. The claim about assessment schemes (C100) is interpretive rather than empirically tested.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:56:45.238753Z"
+    },
+    {
+      "id": "8ff2ddd3-4f58-4c8b-8247-70a6cec4afd9",
+      "content_id": "ae8f3b7b-bacc-4f92-aa1b-22d802d0f458",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The study situates findings within existing literature on collaboration, team science, gender disparities, and academic reward systems. Prior work establishes that collaboration is ubiquitous, team size increases may disadvantage non-leaders, women engage disproportionately in technical labor, and larger teams require task distribution and role specialization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10-C11, C63-C66, C72, C90-C93, C104 cite prior literature to contextualize the study. These are appropriately referenced claims that establish the research context. The citations appear relevant and support the study's motivation, though the accuracy of the cited claims themselves cannot be verified without examining the original sources.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:56:45.238753Z"
+    },
+    {
+      "id": "1001d2cf-9c87-478f-89d2-2ed86de73f6f",
+      "content_id": "ae8f3b7b-bacc-4f92-aa1b-22d802d0f458",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The study acknowledges limitations including potential lack of representativeness of the sample, reliance on author name disambiguation algorithms, and limitations of self-reported contributorship data.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C105-C107 explicitly acknowledge study limitations. This is appropriate scientific practice. The limitations are real and could affect generalizability (C105), accuracy of author identification (C106), and validity of contribution data (C107). The authors appropriately note these constraints on interpretation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:56:45.238753Z"
+    },
+    {
+      "id": "d27c60c7-90db-4642-b11b-0e1826946ab6",
+      "content_id": "ae8f3b7b-bacc-4f92-aa1b-22d802d0f458",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The computational analysis required approximately 30 hours total, with 20 hours for data modeling.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C82 provides computational resource information. This is a straightforward factual statement about the analysis runtime and is useful for reproducibility assessment.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:56:45.238753Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "1e48205a-530b-4e1b-a8cb-7572ea5f7fa2",
+      "result_id": "ee694e80-2c7f-4519-96ae-313f14523803"
+    },
+    {
+      "claim_id": "ca011662-3ff2-4c2d-86f6-7347031d3ec4",
+      "result_id": "ee694e80-2c7f-4519-96ae-313f14523803"
+    },
+    {
+      "claim_id": "06f40438-853b-4e52-a8c3-737dca01f97d",
+      "result_id": "ee694e80-2c7f-4519-96ae-313f14523803"
+    },
+    {
+      "claim_id": "21bf90cf-d5a5-4013-8ade-59d4edf2d335",
+      "result_id": "ee694e80-2c7f-4519-96ae-313f14523803"
+    },
+    {
+      "claim_id": "0a6cecec-8761-417b-8aed-5639c00eb1ab",
+      "result_id": "ee694e80-2c7f-4519-96ae-313f14523803"
+    },
+    {
+      "claim_id": "1fc82ccf-35a0-45da-9e8a-af5d5f2cc178",
+      "result_id": "ee694e80-2c7f-4519-96ae-313f14523803"
+    },
+    {
+      "claim_id": "57e71e19-f85f-4f3f-837e-843650dc6447",
+      "result_id": "ee694e80-2c7f-4519-96ae-313f14523803"
+    },
+    {
+      "claim_id": "04bfd5c2-135a-4477-9773-11293c47e836",
+      "result_id": "ee694e80-2c7f-4519-96ae-313f14523803"
+    },
+    {
+      "claim_id": "d30b9733-0327-4ea3-a138-6047c811de2d",
+      "result_id": "ee694e80-2c7f-4519-96ae-313f14523803"
+    },
+    {
+      "claim_id": "bbcf230f-743a-4e43-b26a-d22cb2320480",
+      "result_id": "ee694e80-2c7f-4519-96ae-313f14523803"
+    },
+    {
+      "claim_id": "92a873c3-1c6d-4b68-a77a-edec356bf75f",
+      "result_id": "ee694e80-2c7f-4519-96ae-313f14523803"
+    },
+    {
+      "claim_id": "d07c656c-78c2-40c5-8018-a233b7b5e77d",
+      "result_id": "ee694e80-2c7f-4519-96ae-313f14523803"
+    },
+    {
+      "claim_id": "efd38e2e-f705-4a55-935c-45fa67309845",
+      "result_id": "6187622d-3156-4006-9301-6680dd3d9292"
+    },
+    {
+      "claim_id": "1c6b708d-f1e4-4e0c-a09d-6f2a195d587a",
+      "result_id": "6187622d-3156-4006-9301-6680dd3d9292"
+    },
+    {
+      "claim_id": "d4b5210b-5dae-4350-8836-b3f1ebdd7e8a",
+      "result_id": "6187622d-3156-4006-9301-6680dd3d9292"
+    },
+    {
+      "claim_id": "4f552485-0997-4595-896e-27ccb3e4adc2",
+      "result_id": "6187622d-3156-4006-9301-6680dd3d9292"
+    },
+    {
+      "claim_id": "aae598b7-3187-4c3d-a1ed-210b9ccb6bdb",
+      "result_id": "6187622d-3156-4006-9301-6680dd3d9292"
+    },
+    {
+      "claim_id": "08f371e0-77bc-4560-b576-7850a77b45ae",
+      "result_id": "6187622d-3156-4006-9301-6680dd3d9292"
+    },
+    {
+      "claim_id": "a6ca1fa8-8191-4402-ad71-5ac73e6bd30a",
+      "result_id": "3c305cea-c47e-487e-b710-2d6d18414c25"
+    },
+    {
+      "claim_id": "2bd3be31-3958-440b-bc12-ee614152a4df",
+      "result_id": "3c305cea-c47e-487e-b710-2d6d18414c25"
+    },
+    {
+      "claim_id": "2319eda1-c6c0-43f2-8e0e-cea7cde4940f",
+      "result_id": "3c305cea-c47e-487e-b710-2d6d18414c25"
+    },
+    {
+      "claim_id": "b75089fc-3540-431e-9d8f-ea21a66b2e04",
+      "result_id": "3c305cea-c47e-487e-b710-2d6d18414c25"
+    },
+    {
+      "claim_id": "5f4a2f1b-6743-4951-80f2-18cc959a69c4",
+      "result_id": "3c305cea-c47e-487e-b710-2d6d18414c25"
+    },
+    {
+      "claim_id": "dfd0c4ee-b644-4b94-a84a-77c7d7c29aeb",
+      "result_id": "631d411f-ac69-4b01-80f7-a8961be24f65"
+    },
+    {
+      "claim_id": "391e8bdd-1130-4cba-b3df-2f254e5930a9",
+      "result_id": "631d411f-ac69-4b01-80f7-a8961be24f65"
+    },
+    {
+      "claim_id": "a1852981-57f1-432a-81fa-59b212415f6a",
+      "result_id": "631d411f-ac69-4b01-80f7-a8961be24f65"
+    },
+    {
+      "claim_id": "9e5d3300-c9d4-4536-babf-ac3245c8b0c0",
+      "result_id": "631d411f-ac69-4b01-80f7-a8961be24f65"
+    },
+    {
+      "claim_id": "d53bca1f-301e-4ac8-8041-eea1bc3094c3",
+      "result_id": "aafb6d09-6f4b-4e49-9c28-9d1425414fb0"
+    },
+    {
+      "claim_id": "c5ed6934-6b8e-4f53-aead-5065d95ce4f8",
+      "result_id": "aafb6d09-6f4b-4e49-9c28-9d1425414fb0"
+    },
+    {
+      "claim_id": "b06a678e-4a5d-4b7b-9517-e953e15bb4f3",
+      "result_id": "aafb6d09-6f4b-4e49-9c28-9d1425414fb0"
+    },
+    {
+      "claim_id": "5bfdece6-ddd1-4214-9f23-f6222144d256",
+      "result_id": "43e9a531-7e48-4f6c-9b59-a8b519ae70f7"
+    },
+    {
+      "claim_id": "6103ec2a-c9d5-4fcb-a69b-c1c8bbd3400b",
+      "result_id": "43e9a531-7e48-4f6c-9b59-a8b519ae70f7"
+    },
+    {
+      "claim_id": "aa2da833-cea4-4268-acd9-20b6b835ebbe",
+      "result_id": "43e9a531-7e48-4f6c-9b59-a8b519ae70f7"
+    },
+    {
+      "claim_id": "8aa1224a-4f6c-4c32-9726-d0e8672f58e7",
+      "result_id": "43e9a531-7e48-4f6c-9b59-a8b519ae70f7"
+    },
+    {
+      "claim_id": "3734ba81-1716-4396-b325-4ba45e2e1936",
+      "result_id": "43e9a531-7e48-4f6c-9b59-a8b519ae70f7"
+    },
+    {
+      "claim_id": "8175c964-eb61-45e5-a137-b67efb53760d",
+      "result_id": "43e9a531-7e48-4f6c-9b59-a8b519ae70f7"
+    },
+    {
+      "claim_id": "9e55eb4c-1bcf-48a2-a584-d0ec31cf36b3",
+      "result_id": "43e9a531-7e48-4f6c-9b59-a8b519ae70f7"
+    },
+    {
+      "claim_id": "1cd050b3-8170-48da-ab37-46294f913d00",
+      "result_id": "43e9a531-7e48-4f6c-9b59-a8b519ae70f7"
+    },
+    {
+      "claim_id": "9d3a9b0f-5f2c-421e-99b8-24f2f2ac5e50",
+      "result_id": "43e9a531-7e48-4f6c-9b59-a8b519ae70f7"
+    },
+    {
+      "claim_id": "caf6a1cc-b7bf-490a-913b-bb78315d3677",
+      "result_id": "43e9a531-7e48-4f6c-9b59-a8b519ae70f7"
+    },
+    {
+      "claim_id": "9dd07ae8-325d-4803-8b6a-e38d47127e45",
+      "result_id": "43e9a531-7e48-4f6c-9b59-a8b519ae70f7"
+    },
+    {
+      "claim_id": "9fa94ab1-c8d0-49b2-ac69-bfd43398d56c",
+      "result_id": "43e9a531-7e48-4f6c-9b59-a8b519ae70f7"
+    },
+    {
+      "claim_id": "863288b5-47e0-4899-a37d-5c30c874426c",
+      "result_id": "a1a1d2fd-46ed-473c-b741-a7bdbaeb69da"
+    },
+    {
+      "claim_id": "cbd147e6-9b42-41b5-9f79-49bcf8a44010",
+      "result_id": "a1a1d2fd-46ed-473c-b741-a7bdbaeb69da"
+    },
+    {
+      "claim_id": "4371f24e-be33-4cc5-bc8e-733b8612d89d",
+      "result_id": "a1a1d2fd-46ed-473c-b741-a7bdbaeb69da"
+    },
+    {
+      "claim_id": "cd2ff5a1-4401-4471-b2be-e505af2a6000",
+      "result_id": "a1a1d2fd-46ed-473c-b741-a7bdbaeb69da"
+    },
+    {
+      "claim_id": "495769a8-051b-42ef-a1c6-c70ccbd6267d",
+      "result_id": "a1a1d2fd-46ed-473c-b741-a7bdbaeb69da"
+    },
+    {
+      "claim_id": "178b552f-a7a8-4151-94af-f7fb62e3c5ae",
+      "result_id": "a1a1d2fd-46ed-473c-b741-a7bdbaeb69da"
+    },
+    {
+      "claim_id": "eb8cc825-ec89-4237-aeac-2f8f2e04d1e9",
+      "result_id": "a1a1d2fd-46ed-473c-b741-a7bdbaeb69da"
+    },
+    {
+      "claim_id": "013fac45-bd98-4c6f-bf99-5d2a0ac53b9a",
+      "result_id": "a1a1d2fd-46ed-473c-b741-a7bdbaeb69da"
+    },
+    {
+      "claim_id": "278dff5b-cf5d-4676-9bbe-bfc58f5029fb",
+      "result_id": "a1a1d2fd-46ed-473c-b741-a7bdbaeb69da"
+    },
+    {
+      "claim_id": "fe43910a-6a66-4c37-8c29-7e807cdcc460",
+      "result_id": "a1a1d2fd-46ed-473c-b741-a7bdbaeb69da"
+    },
+    {
+      "claim_id": "85d9e877-7ee8-4420-befb-3cfdf4ac1fd4",
+      "result_id": "a1a1d2fd-46ed-473c-b741-a7bdbaeb69da"
+    },
+    {
+      "claim_id": "1969149b-6cb6-44a4-bd93-f5201ff21c0a",
+      "result_id": "a1a1d2fd-46ed-473c-b741-a7bdbaeb69da"
+    },
+    {
+      "claim_id": "814bd90a-9ae5-4480-80e3-a216b0e24e3c",
+      "result_id": "a1a1d2fd-46ed-473c-b741-a7bdbaeb69da"
+    },
+    {
+      "claim_id": "b81f5923-8a61-4dfc-b875-41854f7d1b98",
+      "result_id": "3e891a57-6603-4ceb-b061-69697ab9532a"
+    },
+    {
+      "claim_id": "930b259d-42a1-4c00-9031-2cea45a616e2",
+      "result_id": "3e891a57-6603-4ceb-b061-69697ab9532a"
+    },
+    {
+      "claim_id": "a5aa2456-a011-46f7-b585-2bee1e29e7c3",
+      "result_id": "3e891a57-6603-4ceb-b061-69697ab9532a"
+    },
+    {
+      "claim_id": "f288c666-7162-43eb-a1cc-84c2330a1204",
+      "result_id": "3e891a57-6603-4ceb-b061-69697ab9532a"
+    },
+    {
+      "claim_id": "8d49c454-eee4-49b0-9455-a7d3234650dc",
+      "result_id": "3e891a57-6603-4ceb-b061-69697ab9532a"
+    },
+    {
+      "claim_id": "7f2bbc7d-bd02-4476-a017-c76c9b4855b4",
+      "result_id": "59f53583-f615-43d0-93e9-16f4ea80d49e"
+    },
+    {
+      "claim_id": "32a9a718-8f78-444b-a75c-e8ee40b416bc",
+      "result_id": "59f53583-f615-43d0-93e9-16f4ea80d49e"
+    },
+    {
+      "claim_id": "b2e70a99-fcb5-45a3-8a1d-5c46a063c580",
+      "result_id": "59f53583-f615-43d0-93e9-16f4ea80d49e"
+    },
+    {
+      "claim_id": "96d0b338-aa2a-452b-8e1a-6dcb54869e2a",
+      "result_id": "59f53583-f615-43d0-93e9-16f4ea80d49e"
+    },
+    {
+      "claim_id": "cb35f81d-ae1f-4166-b0b2-401efad4f6a5",
+      "result_id": "59f53583-f615-43d0-93e9-16f4ea80d49e"
+    },
+    {
+      "claim_id": "d0d9ef79-14d5-45d3-aa59-b1a69a7d7c8b",
+      "result_id": "59f53583-f615-43d0-93e9-16f4ea80d49e"
+    },
+    {
+      "claim_id": "e173302c-dc5b-4925-80cf-7dfea383c449",
+      "result_id": "59f53583-f615-43d0-93e9-16f4ea80d49e"
+    },
+    {
+      "claim_id": "1db67050-5d9f-473e-9e57-42874667db24",
+      "result_id": "59f53583-f615-43d0-93e9-16f4ea80d49e"
+    },
+    {
+      "claim_id": "f227c89f-4d04-430e-b249-dc8ab0b96e0b",
+      "result_id": "59f53583-f615-43d0-93e9-16f4ea80d49e"
+    },
+    {
+      "claim_id": "0b65a431-2030-4c62-9c1a-fd4f632fa90a",
+      "result_id": "59f53583-f615-43d0-93e9-16f4ea80d49e"
+    },
+    {
+      "claim_id": "95582c15-3a23-44d8-b4d3-636ae33cac4c",
+      "result_id": "59f53583-f615-43d0-93e9-16f4ea80d49e"
+    },
+    {
+      "claim_id": "bb910a9d-34fb-475d-8aef-c41861b50a5b",
+      "result_id": "59f53583-f615-43d0-93e9-16f4ea80d49e"
+    },
+    {
+      "claim_id": "5e82fd23-1476-4eca-9069-3b422b8ff2ae",
+      "result_id": "aa85940c-8f1c-4f2d-be08-2d6d2cf17ed4"
+    },
+    {
+      "claim_id": "ee0b1ed4-12d6-4434-966d-c3155d1d4a1e",
+      "result_id": "aa85940c-8f1c-4f2d-be08-2d6d2cf17ed4"
+    },
+    {
+      "claim_id": "13bb6772-8e8f-4471-a6d4-b4233d31e9c1",
+      "result_id": "aa85940c-8f1c-4f2d-be08-2d6d2cf17ed4"
+    },
+    {
+      "claim_id": "0db94342-9847-4416-9229-cc0eb7737ac1",
+      "result_id": "aa85940c-8f1c-4f2d-be08-2d6d2cf17ed4"
+    },
+    {
+      "claim_id": "6b811f96-e328-448d-82cd-0103814c6920",
+      "result_id": "aa85940c-8f1c-4f2d-be08-2d6d2cf17ed4"
+    },
+    {
+      "claim_id": "0f7468dc-83cc-400d-9a1e-ae29dec4337e",
+      "result_id": "aa85940c-8f1c-4f2d-be08-2d6d2cf17ed4"
+    },
+    {
+      "claim_id": "38167d70-4014-4931-98a2-2de6544cbe81",
+      "result_id": "32de8f6b-6f21-4b80-ad47-366b80b63dc8"
+    },
+    {
+      "claim_id": "aba8f980-3efa-484f-aaff-98242cf297f5",
+      "result_id": "32de8f6b-6f21-4b80-ad47-366b80b63dc8"
+    },
+    {
+      "claim_id": "83fd6e4a-261c-4218-b1a9-3a9fedbe2410",
+      "result_id": "32de8f6b-6f21-4b80-ad47-366b80b63dc8"
+    },
+    {
+      "claim_id": "d07499b7-eeb5-4d12-acb9-2602f528e5d6",
+      "result_id": "32de8f6b-6f21-4b80-ad47-366b80b63dc8"
+    },
+    {
+      "claim_id": "6df29997-f2aa-42ba-9ae4-40a7b8b1de6e",
+      "result_id": "32de8f6b-6f21-4b80-ad47-366b80b63dc8"
+    },
+    {
+      "claim_id": "c0817250-9d19-4719-ac78-8e2224311b7d",
+      "result_id": "32de8f6b-6f21-4b80-ad47-366b80b63dc8"
+    },
+    {
+      "claim_id": "d7fa4844-4575-4204-b7ba-7db5a63284fb",
+      "result_id": "32de8f6b-6f21-4b80-ad47-366b80b63dc8"
+    },
+    {
+      "claim_id": "206b4921-d75f-4cfc-8c67-43faed9c2c84",
+      "result_id": "32de8f6b-6f21-4b80-ad47-366b80b63dc8"
+    },
+    {
+      "claim_id": "7272d0ba-2a02-4959-8998-2d0b1413c163",
+      "result_id": "f559a301-0934-4883-864a-baff41511ab8"
+    },
+    {
+      "claim_id": "9fa89277-e93e-4526-baa2-b59367ad5355",
+      "result_id": "f559a301-0934-4883-864a-baff41511ab8"
+    },
+    {
+      "claim_id": "d724963a-f9d8-49a6-8259-d0fdb43b8953",
+      "result_id": "f559a301-0934-4883-864a-baff41511ab8"
+    },
+    {
+      "claim_id": "8ad53e3b-6e0b-405e-a90c-5055e9a89da9",
+      "result_id": "f559a301-0934-4883-864a-baff41511ab8"
+    },
+    {
+      "claim_id": "2d716a83-1c79-42ce-8272-2c57e973cb3e",
+      "result_id": "8ff2ddd3-4f58-4c8b-8247-70a6cec4afd9"
+    },
+    {
+      "claim_id": "c32c2385-b1d7-4e89-8725-7c025a5152ff",
+      "result_id": "8ff2ddd3-4f58-4c8b-8247-70a6cec4afd9"
+    },
+    {
+      "claim_id": "d665e91e-53c4-4a0c-b177-5d3aebb08685",
+      "result_id": "8ff2ddd3-4f58-4c8b-8247-70a6cec4afd9"
+    },
+    {
+      "claim_id": "30fa940a-e8e8-4a25-b4ae-80d5a57564b0",
+      "result_id": "8ff2ddd3-4f58-4c8b-8247-70a6cec4afd9"
+    },
+    {
+      "claim_id": "f473caf6-31d3-471f-9af0-954f607af7c2",
+      "result_id": "8ff2ddd3-4f58-4c8b-8247-70a6cec4afd9"
+    },
+    {
+      "claim_id": "701b14ca-2d1f-4d88-ab82-314f17128100",
+      "result_id": "8ff2ddd3-4f58-4c8b-8247-70a6cec4afd9"
+    },
+    {
+      "claim_id": "bab6ce98-e530-4f8d-815f-f11a2823aff5",
+      "result_id": "8ff2ddd3-4f58-4c8b-8247-70a6cec4afd9"
+    },
+    {
+      "claim_id": "eb767efa-31b1-4c4d-a213-adbae9762860",
+      "result_id": "8ff2ddd3-4f58-4c8b-8247-70a6cec4afd9"
+    },
+    {
+      "claim_id": "7ee53815-2fe7-4c13-943e-26d9a089f77f",
+      "result_id": "8ff2ddd3-4f58-4c8b-8247-70a6cec4afd9"
+    },
+    {
+      "claim_id": "8b462a98-0a5b-42bd-8fef-e2e2ad69e7f8",
+      "result_id": "8ff2ddd3-4f58-4c8b-8247-70a6cec4afd9"
+    },
+    {
+      "claim_id": "3ad054c5-f470-477a-92c4-c4611c27888a",
+      "result_id": "8ff2ddd3-4f58-4c8b-8247-70a6cec4afd9"
+    },
+    {
+      "claim_id": "63e9de4b-19fa-4701-ba82-5ab3fed26b0b",
+      "result_id": "8ff2ddd3-4f58-4c8b-8247-70a6cec4afd9"
+    },
+    {
+      "claim_id": "304df86a-a3f0-490e-807e-efe5132e941a",
+      "result_id": "1001d2cf-9c87-478f-89d2-2ed86de73f6f"
+    },
+    {
+      "claim_id": "127cf033-c9ee-4dd6-b14a-ce645ec4f36a",
+      "result_id": "1001d2cf-9c87-478f-89d2-2ed86de73f6f"
+    },
+    {
+      "claim_id": "4b985162-f164-435c-a201-198b33348557",
+      "result_id": "1001d2cf-9c87-478f-89d2-2ed86de73f6f"
+    },
+    {
+      "claim_id": "11d004ff-a6f1-4e6a-a832-038f05631671",
+      "result_id": "d27c60c7-90db-4642-b11b-0e1826946ab6"
+    }
+  ],
+  "comparisons": []
+}

@@ -1,0 +1,290 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "D. sechellia larvae are sugar intolerant compared to D. simulans. D. sechellia showed complete lethality on 20% sucrose/20% yeast diet, slowed development and reduced survival on diets with >10% sugar, with significant correlations between sugar concentration and development time/survival. In contrast, D. simulans tolerated diets up to 20% sugar with rapid development and high survival.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C3, C36-C48 provide converging evidence from multiple metrics (development time, survival, pupariation index) across a 5\u00d75 diet grid, supported by statistical analyses (correlation, GLM, effect sizes). The phenotypic differences are well-documented in Figure 1A and Tables 1-3, with appropriate statistical tests showing significant effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C44"
+    ],
+    "result": "Feeding behavior does not differ between D. simulans and D. sechellia in response to sugar.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C44 reports ANOVA results showing no significant effect of species, sugar concentration, or their interaction on mouth hook extension rate (p > 0.05 for all comparisons). This control experiment rules out behavioral differences as an explanation for differential sugar tolerance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C104"
+    ],
+    "result": "Sugar tolerance is rescued in F1 hybrids, suggesting a genetic basis involving complementation of D. sechellia alleles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51, C52, C104 demonstrate that F1 hybrids (D. sechellia male \u00d7 D. simulans female) show restored sugar tolerance (Figure 1B), indicating that D. simulans alleles can complement the sugar intolerance phenotype. This supports a genetic rather than purely environmental basis for the phenotype.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C6"
+    ],
+    "result": "Phenotype-based introgression successfully transferred sugar tolerance from D. simulans into a mostly D. sechellia genomic background after 10 generations of backcrossing with selection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C56 describe the introgression experiment with appropriate controls (selected vs. non-selected lines). The selected line achieved D. simulans-level sugar tolerance while the control line remained intolerant (Figure 2B). The maternal inheritance pattern ensures mitochondrial genomes are identical, attributing differences to nuclear genome.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C57",
+      "C58"
+    ],
+    "result": "Sugar intolerant lines show impaired glucose clearance after high-sugar diet challenge.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C58 report metabolic analysis showing D. sechellia and control lines have elevated hemolymph glucose 2 hours after high-sugar feeding compared to D. simulans (Figure 2C, with statistical significance by Dunnett's test). This provides mechanistic insight into the sugar intolerance phenotype.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C5",
+      "C62",
+      "C63",
+      "C110"
+    ],
+    "result": "Sugar tolerance is associated with global reprogramming of metabolic gene expression. Sugar-selected hybrids cluster with D. simulans while sugar-intolerant controls cluster with D. sechellia in gene expression profiles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C63, C110 report RNAseq analysis showing striking clustering by sugar tolerance phenotype (Figure 3B) and enrichment of specific functional categories (mitochondrial ribosome, detoxification, carbohydrate metabolism) in differentially expressed genes (Figure 3C). The analysis used appropriate methods (pvclust, limma, pathway enrichment with p < 0.05 threshold).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Gene expression profiles of sugar intolerant lines show significant similarity to mlx1 mutants, which lack functional sugar sensing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C69 demonstrate overlap between sugar intolerant lines and mlx1 mutants, with 30% of mlx1-downregulated genes also reduced in intolerant lines (p = 1.2\u00d710\u207b\u2076\u2079). This includes known sugar tolerance genes (sugarbabe, astray) shown in Figure 4, providing mechanistic context for the phenotype.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C7"
+    ],
+    "result": "Introgression mapping identified three regions on chromosome 2R containing 372 genes associated with sugar tolerance, with only 64 showing differential expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C76 report whole-genome sequencing identifying specific introgressed regions (Figure 5A-B) with precise coordinates. The observation that most introgressed genes show no expression changes (Figure 5C) supports the inference that a small number of regulatory loci control downstream gene expression.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C113",
+      "C114"
+    ],
+    "result": "Three mitochondrial ribosome genes (mRpL43, CG4882, bonsai) from introgressed regions contribute to sugar tolerance and show reduced expression in sugar intolerant lines.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C80 report RNAi screen results showing sugar intolerance phenotypes for three mitochondrial ribosome genes (Figure 6A-C), with corresponding reduced expression in intolerant lines (Figure 6D-F). Claims C113-C114 provide supporting literature context for the role of mitochondrial ribosome biogenesis in sugar metabolism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C8",
+      "C9"
+    ],
+    "result": "SERCA, PPP1R15/Gadd34, and Pi3K59F contribute to sugar tolerance based on RNAi knockdown phenotypes, with SERCA showing reduced expression in sugar intolerant lines.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C82 report strong sugar intolerance phenotypes upon RNAi knockdown of three signaling genes (Figure 7A-C), with SERCA expression reduced in intolerant lines (Figure 7D-F). Multiple replicates are reported (n=5-13) with appropriate controls. Claims C8-C9 summarize these findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C86"
+    ],
+    "result": "Three additional genes (Taldo, Dpit47, GlcT-1) show milder sugar intolerance phenotypes with reduced eclosion on high-sugar diet.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C86 reports RNAi screen results for three genes with milder phenotypes (Figure 7\u2014figure supplement 1). While less severe than SERCA/PPP1R15/Pi3K59F, these provide additional candidate genes contributing to sugar tolerance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "The SERCA promoter region shows high SNP density between species, and the D. sechellia promoter has significantly lower activity than D. simulans in reporter assays.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C89 report SNP density analysis (Figure 8A) and functional validation using lacZ reporter assays showing significantly lower activity (p < 0.01) for D. sechellia SERCA promoter (Figure 8B). This provides a mechanistic explanation for reduced SERCA expression in D. sechellia, with n=8 replicates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "PPP1R15 shows unusually high ratio of amino acid changing to silent mutations (Ka/Ks = 0.58) in D. sechellia compared to D. simulans, suggesting reduced purifying selection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C93 report sequence analysis showing 10 amino acid changing vs. 5 silent mutations in PPP1R15 (Table 4), with Ka/Ks = 0.58 significantly higher than other candidate genes (\u03c7\u00b2 = 17.03, p < 0.01). This suggests evolutionary relaxation of constraint or positive selection on PPP1R15 in D. sechellia.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "Sugar tolerance and Morinda toxin tolerance are genetically independent traits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C96 report selection experiments showing no association between sugar and toxin tolerance (Figure 9\u2014figure supplement 1). Sugar-selected lines tolerate toxins, and toxin selection doesn't affect sugar tolerance. This rules out pleiotropy between these traits and suggests sugar intolerance is not simply a consequence of Morinda specialization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C4",
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "Sugar tolerance in D. simulans represents a tradeoff with performance on low-energy diet. D. sechellia shows advantage on \u22645% yeast/0% sugar diets, while sugar-selected introgression lines perform like D. simulans on low-energy diet.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C97-C100 demonstrate reciprocal fitness advantages across the nutrient space (Figure 9A-B). On 2.5% yeast diet, sugar-intolerant control lines outperform sugar-selected lines, matching parental species patterns. This provides evidence for antagonistic pleiotropy between sugar tolerance and low-energy performance, with n=5-9 replicates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C101",
+      "C102"
+    ],
+    "result": "PPP1R15 knockdown increases pupariation on low-energy diet, demonstrating that individual regulatory genes can shift optimal macronutrient space.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C102 report that PPP1R15 RNAi shows elevated pupariation on 2% yeast compared to controls (Figure 9C, n=28 replicates). This provides direct genetic evidence that manipulating a single gene can alter the fitness tradeoff between sugar tolerance and low-energy performance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C10",
+      "C103",
+      "C105",
+      "C111",
+      "C128"
+    ],
+    "result": "Genomic variation affecting genes involved in global metabolic control defines optimal macronutrient composition, and such changes can occur rapidly (~0.4 million years) in evolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10, C103, C105, C111, C128 represent the main conclusions integrating all findings. The evidence supports that: (1) macronutrient spaces differ between species concordant with natural diets, (2) genetic basis involves hub genes affecting global metabolism, (3) changes occurred within ~0.4 MY divergence time. These conclusions are well-supported by the collective experimental evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C112"
+    ],
+    "result": "A plausible model is that rapid evolution of macronutrient space occurs through changes in metabolic 'hub' genes affecting multiple pathways simultaneously.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C112 proposes a model based on the findings but is explicitly speculative ('plausible model'). While the identification of mitochondrial ribosome genes and signaling components (SERCA, PPP1R15) supports this model, it remains a hypothesis requiring further testing to establish causality and generality.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C129"
+    ],
+    "result": "Human populations with distinct dietary histories may have differential vulnerabilities to nutrient overload from modern lifestyles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C129 is explicitly speculative ('may be conceptually relevant') and extrapolates from Drosophila findings to human health. While the THADA/SERCA connection to human evolution (C120-C122) provides some support, this claim requires direct evidence in human populations to be validated.",
+    "result_type": "MINOR"
+  }
+]

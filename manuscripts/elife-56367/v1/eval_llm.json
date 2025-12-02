@@ -1,0 +1,375 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "Genotype-based diagnostics for antibiotic resistance are promising but face challenges from novel resistance variants, necessitating surveillance programs for early detection to maintain diagnostic utility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3 and C6-C8 establish the context and rationale for the study through citations and logical inference. The claims consistently describe the promise of genotype-based diagnostics (C1, C6), their vulnerability to novel variants (C2, C7), and the need for surveillance (C3, C8). These are well-supported by citations to prior work and represent established knowledge in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "Diagnostic escape variants have emerged in multiple pathogens including N. gonorrhoeae, C. trachomatis, S. aureus, and P. falciparum, resulting from mutations at NAAT target loci or undetected resistance-conferring variants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C11 document specific examples of diagnostic escape across multiple pathogens, supported by multiple citations. The claims provide concrete evidence that diagnostic escape is a real phenomenon requiring attention, establishing the practical importance of the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C12",
+      "C13"
+    ],
+    "result": "A previous framework for quantifying sampling rates for early detection of novel resistance variants may be challenging to apply in practice for high-incidence pathogens like N. gonorrhoeae due to high phenotyping costs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C13 reference prior work by the authors and identify a practical limitation of unbiased sampling approaches. This establishes the motivation for developing more efficient targeted sampling strategies, which is the focus of the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "Novel resistance variants may be more likely to emerge or spread in specific patient demographics, anatomical niches, geographic regions, genetically divergent lineages, or genomic backgrounds associated with existing resistance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C17 present hypotheses about factors that might predict where novel variants emerge, all supported by citations to prior work. These hypotheses form the basis for the targeted sampling approaches tested in the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C18"
+    ],
+    "result": "N. gonorrhoeae serves as a useful model organism for testing sampling strategies due to increasing drug resistance and focus on developing sequence-based resistance diagnostics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C18 justifies the choice of N. gonorrhoeae as the study organism, supported by citations. This is a reasonable methodological choice given the pathogen's characteristics.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "The datasets used in the study exhibited significant sampling biases across patient demographics (overrepresentation of men and MSM), anatomical sites (variable pharyngeal representation), and geographic regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C22 document biases in the datasets using statistical tests (chi-squared, p<0.001). These biases are important to acknowledge as they affect the interpretation of patient characteristic-informed sampling approaches. The statistical support is appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C4"
+    ],
+    "result": "Patient characteristic-informed sampling (demography-, niche-, geography-aware) did not reliably improve detection efficiency compared to random sampling, and in some cases significantly decreased efficiency due to variant enrichment in overrepresented groups.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C29 and C4 present a major finding that patient-based sampling strategies are unreliable. The claims are supported by simulation data (Figure 1), statistical tests, and specific examples showing inconsistent associations between variants and patient characteristics across datasets. The evidence demonstrates that no patient characteristic was consistently predictive across all variants.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Preferential sampling based on travel history or sex work status showed variant-specific improvements in detection efficiency, but these improvements were inconsistent across different resistance variants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C35 show that while some patient characteristics (travel, sex work) improved detection for specific variants, the benefit was not generalizable. Claim C30 is supported by phylogenetic analysis (Figure 1\u2014figure supplement 1), and C31-C35 are supported by simulation data and statistical tests. This reinforces the main finding that patient-based strategies are unreliable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C56"
+    ],
+    "result": "Phylogeny-aware sampling using a clonal group approach significantly improved detection efficiency over random sampling for resistance and diagnostic-associated variants across multiple datasets, while distance maximization showed inconsistent performance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C40 and C56 present a major finding supported by extensive simulation data (Figure 2, Figure 2\u2014figure supplement 1). The clonal group approach consistently outperformed random sampling except in one specific case (C37), while distance maximization was unreliable (C36). Claims C39-C40 show the approach is robust to different SNP thresholds but not to MLST-based grouping, providing important methodological insights.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C5"
+    ],
+    "result": "Sampling informed by genomic background markers, specifically GyrA S91F (ciprofloxacin resistance) and PorB G120/A121 mutations, significantly increased detection efficiency of ESC resistance variants across all datasets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C49 and C5 present another major finding supported by statistical analysis (Fisher's exact test, p<0.001) and simulation data (Figure 3). The claims establish that ESC resistance is significantly associated with these genetic markers (C46), that these markers occur across diverse resistance haplotypes (C47), and that preferential sampling based on these markers improves detection efficiency (C48). This represents a practical, generalizable strategy.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C60",
+      "C61"
+    ],
+    "result": "Detection efficiency of the clonal group approach was consistent across WGS-based thresholds (SNPs and fastBAPS) but inconsistent and sometimes worse than random sampling when using MLST-based grouping.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C61 provide important methodological findings about the robustness of the clonal group approach. The claims are supported by simulation data (Figure 2\u2014figure supplement 1) and include a mechanistic explanation citing prior work on MLST limitations in N. gonorrhoeae. This has practical implications for implementation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "While patient metadata collection is important for understanding resistance epidemiology, incorporation of pathogen genomic data into surveillance programs may be more practical and cost-effective for maintaining genotype-based diagnostics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C55 synthesize the study's implications, supported by citations and logical inference from the results. The claims acknowledge the value of patient metadata (C53) while highlighting practical challenges (C54) and the potential advantages of pathogen-based approaches (C52, C55). This represents a balanced interpretation of the findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C57",
+      "C58"
+    ],
+    "result": "Combining phylogeny-aware sampling with genomic background-aware sampling may further optimize detection efficiency, though utility will vary by drug and treatment guidelines.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C58 propose a combined approach based on inference from the study results, with appropriate caveats about generalizability. This represents a reasonable synthesis of the findings, though C58 appropriately notes uncertainty about future applications.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C59",
+      "C62"
+    ],
+    "result": "Determining optimal thresholds for clonal grouping may be challenging and context-dependent, but WGS-based surveillance offers advantages over MLST for detecting diagnostic escape variants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59 and C62 acknowledge practical implementation challenges while highlighting the advantages of WGS. C59 is appropriately cautious about generalizability, while C62 makes a specific inference about WGS advantages supported by the study's findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "The clonal group approach may be applicable to other pathogens like M. tuberculosis with high clonality, though applicability to species with gene acquisition-based resistance is uncertain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C63-C65 speculate about generalizability to other pathogens. C63 is supported by citations about M. tuberculosis characteristics, making it a reasonable hypothesis. C64 appropriately expresses uncertainty about species with different resistance mechanisms. C65 provides some evidence for core genome-plasmid relationships in gonococcus. However, these remain speculative without direct testing.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C66",
+      "C67"
+    ],
+    "result": "For pathogens with reliably identifiable treatment failures, treatment failure identification may be more efficient than confirmatory phenotyping, but this does not apply to N. gonorrhoeae where failures often go undetected.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C67 make a logical distinction between pathogens based on treatment failure detectability, supported by citations. This contextualizes when the proposed surveillance approaches are most needed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C68",
+      "C70",
+      "C78"
+    ],
+    "result": "Future work should assess these approaches across pathogens with different characteristics and include longitudinal studies to characterize resistance emergence patterns, particularly after diagnostic implementation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68, C70, and C78 appropriately identify future research needs based on the study's limitations and findings. These represent reasonable next steps for the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C69"
+    ],
+    "result": "Associations between variants and patient/pathogen features observed in the study may not reflect those at the time of variant emergence due to lack of longitudinal data from emergence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C69 acknowledges an important limitation of the study design. This is a valid concern that appropriately tempers interpretation of the findings, particularly for patient characteristic-based sampling.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "Phylogeny-aware surveillance may be feasible without mass prospective sequencing by pairing with diagnostic approaches like genomic neighbor typing or transcriptomic-genomic typing that identify divergent or ambiguous isolates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C71-C74 propose alternative implementation strategies. C71 correctly identifies an assumption of the study. C72-C74 speculate about practical implementations supported by citations to relevant technologies. However, these remain untested hypotheses about how to operationalize the findings without full prospective sequencing.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "The targeted sampling approaches may be broadly applicable to surveillance programs tracking AMR or other resource-intensive phenotypes, with potential adoption by programs like NARMS.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C75-C77 speculate about broader applications beyond the specific context tested. While C77 makes a general statement about opportunities, C75-C76 extend beyond the evidence provided. These represent reasonable hypotheses but lack direct supporting data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Genomic data processing involved standard bioinformatics pipelines including genome assembly (SPAdes), quality control (QUAST), pseudogenome construction (BWA-MEM, Pilon), variant calling (blastn, MUSCLE), recombination detection (Gubbins), phylogenetic reconstruction (RAxML), and population structure analysis (fastBAPS, MLST).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C88 describe the computational methods used. These are standard, well-established approaches with appropriate tool versions specified. The methods are adequately described for reproducibility, though some parameters (e.g., random seeds for stochastic algorithms) are not mentioned.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "Detection efficiency was assessed through 100 simulations per approach/dataset/variant combination, defined as one minus the fraction of isolates sampled before detection, with statistical comparison using Mann-Whitney U tests. Variants with >10% prevalence were excluded.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C92 describe the simulation and statistical methods. The approach is reasonable: 100 simulations provide adequate power, the detection efficiency metric is clearly defined, and Mann-Whitney U test is appropriate for non-normal distributions. Excluding high-prevalence variants (C92) is justified given the focus on rare variant detection.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "Patient characteristic-informed sampling approaches alternated sampling across demographic groups (men vs. women, MSM vs. MSW/WSM), anatomical sites (cervix, urethra, rectum, pharynx), or geographic regions (countries or prefectures).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C95 describe the implementation of patient-based sampling strategies. The approaches are clearly defined and represent reasonable operationalizations of the hypotheses about patient characteristics predicting variant presence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C97",
+      "C98"
+    ],
+    "result": "The clonal group approach was tested using multiple thresholds: 134 SNPs and 422 SNPs (based on 95% CI of mean distances to closest susceptible/variant-negative isolates), plus fastBAPS and MLST groupings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C98 describe how clonal grouping thresholds were determined. The SNP thresholds are empirically derived from the data in a principled way (95% CI of relevant distances). Testing multiple thresholds and methods (fastBAPS, MLST) strengthens the robustness assessment.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C99"
+    ],
+    "result": "Genomic background-aware sampling limited the pool to isolates with GyrA S91F mutation (ciprofloxacin resistance) or PorB G120/A121 mutations (associated with multi-class resistance).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C99 describes the implementation of genomic background-aware sampling. The choice of markers is justified by their associations with resistance, and the approach is clearly defined.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,1863 @@
+{
+  "submission": {
+    "id": "0f27fc12-65dd-40a0-b76b-467f004ea08d",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T18:19:41.700762Z",
+    "updated_at": "2025-12-02T18:19:41.700762Z"
+  },
+  "content": [
+    {
+      "id": "98b94d76-1b30-4d2f-8bb4-e59ab1bfb965",
+      "submission_id": "0f27fc12-65dd-40a0-b76b-467f004ea08d",
+      "content_type": "manuscript",
+      "content_text": "# Earliest infections predict the age distribution of seasonal influenza A cases\n\n## Authors\n\n- Philip Arevalo<sup>1</sup> ([ORCID: 0000-0003-1237-2314](https://orcid.org/0000-0003-1237-2314)) \u2020\n- Huong Q McLean<sup>2</sup>\n- Edward A Belongia<sup>2</sup>\n- Sarah Cobey<sup>1</sup>\n\n### Affiliations\n\n1. Department of Ecology and Evolutionary Biology, University of Chicago Chicago United States\n2. Center for Clinical Epidemiology and Population Health, Marshfield Clinic Research Institute Marshfield United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nSeasonal variation in the age distribution of influenza A cases suggests that factors other than age shape susceptibility to medically attended infection. We ask whether these differences can be partly explained by protection conferred by childhood influenza infection, which has lasting impacts on immune responses to influenza and protection against new influenza A subtypes (phenomena known as original antigenic sin and immune imprinting). Fitting a statistical model to data from studies of influenza vaccine effectiveness (VE), we find that primary infection appears to reduce the risk of medically attended infection with that subtype throughout life. This effect is stronger for H1N1 compared to H3N2. Additionally, we find evidence that VE varies with both age and birth year, suggesting that VE is sensitive to early exposures. Our findings may improve estimates of age-specific risk and VE in similarly vaccinated populations and thus improve forecasting and vaccination strategies to combat seasonal influenza.\n\n## Introduction\n\nSeasonal influenza is a serious public health concern, resulting in approximately 100,000\u2013600,000 hospitalizations and 5000\u201327,000 deaths per year in the United States despite extensive annual vaccination campaigns (Reed et al., 2015). The rapid evolution of the virus to escape preexisting immunity contributes to the relatively high incidence of influenza, including in previously infected older children and adults. How susceptibility arises and changes over time in the host population has been difficult to quantify.\n\nA pathogen\u2019s rate of antigenic evolution should affect the mean age of the hosts it infects, and differences in the rate of antigenic evolution have been proposed to explain differences in the age distributions of the two subtypes of influenza A. Compared to H3N2, H1N1 disproportionately infects children (Gagnon et al., 2018b; Caini et al., 2018; Khiabanian et al., 2009). It also evolves antigenically more slowly (Bedford et al., 2015). Thus, compared to H3N2, H1N1 is slower to escape immunity in individuals who have experienced prior infection (namely older children and adults), making them less susceptible to reinfection (Bedford et al., 2015; Beaut\u00e9 et al., 2015; Caini et al., 2018; Khiabanian et al., 2009). H3N2, in contrast, exhibits well known changes in antigenic phenotype that are expected to drive cases toward adults (Smith et al., 2004; Cobey and Hensley, 2017). Under this simple model, hosts previously infected with a subtype face equal risk of reinfection (on challenge) with an antigenic variant of that subtype.\n\nThe age distributions of influenza cases in exceptional circumstances\u2014pandemics and spillovers of avian influenza\u2014have shown unexpected variation that suggests important effects of prior infection. Excess mortality in some adult cohorts during the 1918 and 2009 H1N1 pandemics correlates with childhood infection with other subtypes (Gagnon et al., 2013; Worobey et al., 2014; Gagnon et al., 2018a). In the post-2009 pandemic period, excess mortality and hospitalization were observed among cohorts first exposed to H2N2 or H3N2 during H1N1pdm-dominated seasons (Budd et al., 2019). Similarly, the subtypes circulating in childhood predict individuals\u2019 susceptibility to severe zoonotic infections with avian H5N1 and H7N9, regardless of later exposure to other seasonal subtypes (Gostic et al., 2016). These patterns suggest that early influenza infections, and not prior infection per se, strongly shape susceptibility.\n\nEarly infections might also affect the protection conferred by influenza vaccination. Foundational work on the theory of original antigenic sin demonstrated that an individual\u2019s immune response to influenza vaccination is biased toward antigens similar to those encountered in childhood (Davenport and Hennessy, 1956). In some cases, this may result in a narrow antibody response focused on a single epitope (Davis et al., 2018). This phenomenon has been suggested to explain an unexpected decrease in vaccine effectiveness (VE) in the middle-aged in the 2015\u20132016 influenza season (Skowronski et al., 2017b; Flannery et al., 2018). More generally, it has been hypothesized that biases in immune memory can arise from both past infections and vaccinations and lead to variation in VE that is sensitive to the precise history of exposures (Smith et al., 1999; Skowronski et al., 2017a).\n\nTo measure the effect of early exposures on medically attended infection risk and VE, we fitted statistical models to 3493 PCR-confirmed influenza cases identified through seasonal studies of influenza VE from the 2007\u20132008 to 2017\u20132018 seasons in the Marshfield Epidemiologic Study Area (MESA) in Marshfield, Wisconsin (Belongia et al., 2009; Belongia et al., 2011; Griffin et al., 2011; Treanor et al., 2012; Ohmit et al., 2016; McLean et al., 2014; Gaglani et al., 2016; Zimmerman et al., 2016; Jackson et al., 2017; Flannery et al., 2018, Figure 1\u2014figure supplement 1). Each influenza season, individuals in a defined community cohort were recruited and tested for influenza when seeking outpatient care for acute respiratory infection. Eligibility was restricted to individuals\u00a0>6 months of age living in MESA who received routine care from the Marshfield Clinic and who presented in an outpatient setting.\n\nWe sought to explain the variation in the age distribution of these cases by subtype and over time. Our model predicted the relative number of cases of influenza in each birth year each season as a function of the age structure of the population, age-specific differences in the risk of medically attended influenza A infection, early influenza infection, and vaccination. Despite the extensive antigenic evolution in both subtypes over the study period, we found strong evidence of protection from the subtype to which a birth cohort was likely first infected (the imprinting subtype) and variation in VE by birth cohort.\n\n## Materials and methods\n\n### Study cohort\n\nCases of PCR-confirmed, medically attended influenza were identified from annual community cohorts based on residency in MESA. MESA is a contiguous geographic area surrounding Marshfield, Wisconsin, where nearly all 61,000 residents receive outpatient and inpatient care from the Marshfield Clinic Health System (Kieke et al., 2015). For each influenza season from 2007 to 2008 through 2017\u20132018, we identified MESA residents\u00a0>6 months of age who received routine care from the Marshfield Clinic. These individuals were eligible for recruitment into that season\u2019s VE study if they sought care for acute respiratory infection. Trained research coordinators recruited patients during clinical encounters in primary care departments, including urgent care, pediatrics, combined internal medicine and pediatrics, internal medicine, and family practice. Patients were enrolled on weekdays, evenings, and weekends when clinical services were provided. Research staff used an electronic appointment system to screen the chief complaints for respiratory or febrile illness. Patients were then approached in-person to assess eligibility based on specific respiratory symptoms and duration of illness. The proportion of patients with medically attended acute respiratory infection (MAARI) who were screened for enrollment varied by season and was largely determined by the volume of patients each day and staffing capacity. Only symptoms and illness duration were used to determine eligibility among those patients who were in the predefined cohort. Patients were also assessed for the presence of medical conditions that put them at high risk for complications from influenza infection, as defined by the Advisory Committee on Immunization Practice (Smith et al., 2006). These conditions included cardiovascular disease, diabetes, pulmonary disease, cancer, kidney disease, liver disease, blood disorders, immunosuppressive disorders, metabolic disorders, and neurological/musculoskeletal disorders. We considered subjects vaccinated if they received that season\u2019s influenza vaccine \u226514 days before enrollment. For the 2009\u20132010 season, we only considered receipt of the 2009 monovalent vaccine. The Marshfield Clinic generally does not capture MAARI in nursing facilities with dedicated medical staff, causing undersampling of the oldest age groups. We adjusted for this (Appendix 1: \u2018Age-specific rates of approachment, enrollment, and nursing home residence\u2019).\n\nEach season, recruitment began when influenza activity was detected in the community and usually continued for 12\u201315 weeks. Symptom eligibility criteria varied by season but included fever/feverishness or cough during most seasons. We retroactively standardized symptom eligibility criteria to only require cough as a symptom. Individuals with illness duration\u00a0>7 days or presenting in an inpatient (hospital) setting were excluded. After obtaining informed consent, a mid-turbinate swab was obtained for influenza detection. RT-PCR was performed using CDC primers and probes to identify influenza cases, including type and subtype.\n\n### Calculating differences in the age distribution between seasons\n\nWe defined the age distribution of each season as the number of cases of the dominant (more common) subtype in each of nine age groups (0\u20134 year-olds, 5\u20139 year-olds, 10\u201314 year-olds, 15\u201319 year-olds, 20\u201329 year-olds, 30\u201339 year-olds, 40\u201349 year-olds, 50\u201364 year-olds, and \u226565 years old). We excluded the subdominant subtype in each season due to concerns that short-term interference between the subtypes (Laurie et al., 2015; Goldstein et al., 2011) would affect the age distribution of the rarer subtype. The G-test of independence was used to measure differences in seasons\u2019 age distributions.\n\n### Calculating relative risk\n\nTo evaluate relative infection risk in different age groups, we measured their relative risk of infection in the first versus second half of each season. This risk is a combination of the chance of infection, conditional on infection (susceptibility), and the rate of contact with infected people. Attack rates should be higher in populations that experience more risk, and therefore these populations should be infected earlier in the epidemic (Worby et al., 2015). To calculate relative risk we used an approach similar to Worby et al., 2015. We defined the midpoint of each season as the week in which the cumulative number of cases of the dominant subtype among all people exceeded half the total for that season. Weeks before and after this point were assigned to the first and second half of the season, respectively. We assigned each case to one of the five age groups used by Worby et al., 2015 (0-4 year-olds, 5\u201317 year-olds, 18\u201349 year-olds, 50\u201364 year olds, and \u226565 years old). For each age group $g$, we defined relative risk as\n\n$$\n\\frac{C_{first,t,g}}{C_{second,t,g}},\n$$\n\nwhere $C_{first,t,g}$ and $C_{second,t,g}$ are the fraction of cases of the dominant subtype during influenza season $t$ that occurred during the first or second half of the season, respectively. A relative risk\u00a0>1 indicates that cases in an age group were more likely to occur during the first half of the season.\n\n### Calculating imprinting probabilities\n\nWe hypothesized that the subtype of a person\u2019s first influenza A infection affects their future susceptibility to that subtype. Testing this hypothesis requires knowing the probability that a person\u2019s primary influenza A infection was with a particular subtype. To calculate these probabilities, we emulated the approach of Gostic et al., 2016, which assumes these probabilities are determined by a person\u2019s year of birth and subsequent exposure to each subtype.\n\nFirst, we calculated the probability that an individual born in year $y$ received their first influenza A exposure in influenza season $t$. Assuming a constant per-season rate of infection $i_{0}$, the probability of infection in one season (i.e., the attack rate) is given by\n\n$$\nPr(infection\u00a0in\u00a0single\u00a0season)=1\u2212e^{\u2212i_{0}}.\n$$\n\nBy assuming that the average probability that a naive individual is infected in a single season is 0.28 (Bodewes et al., 2011; Gostic et al., 2016), we calculated the expected per-season infection rate ($i_{0}$) as\n\n$$\n0.28=1\u2212e^{\u2212i_{0}},i_{0}=\u2212ln(0.72).\n$$\n\nHowever, because the intensity of epidemics varies between seasons ($I_{t}$, Appendix 1: \u2018Seasonal intensity\u2019) and the fraction of the epidemic experienced by a person depends on their birth year ($\\gamma_{y,t}$, Appendix 1: \u2018Fraction of season experienced\u2019), we considered the time-varying per-season infection rate,\n\n$$\ni_{y,t}=i_{0}\u2062I_{t}\u2062\\gamma_{y,t}.\n$$\n\nTherefore, the probability that a naive individual born in year $y$ is infected in season $t$ is\n\n$$\na_{y,t}=1-e^{-i_{y,t}}.\n$$\n\nWe used $a_{y,t}$ to calculate the fraction of a birth cohort $y$ that received their first influenza A infection in season $t$. Let $U_{y,t}$ be the fraction of people born in year $y$ who were unexposed at the beginning of season $t$ (Appendix 1: \u2018Calculating the fraction unexposed\u2019). The probability that a person born in year $y$ has their first infection in season $t$ is\n\n$$\nPr(first\u00a0exposure\u00a0in\u00a0season\u00a0t)=Pr(infected|unexposed)Pr(unexposed)=a_{y,t}U_{y,t}\n$$\n\nWe calculated $m_{s,t,y}$, the probability that a person born in year $y$ had their first influenza A infection with subtype $s$ in season $t$, by multiplying $a_{y,t}\u2062U_{y,t}$ by the frequency of subtype $s$ in season $t$, $l_{s,t}$ (Figure 3\u2014figure supplement 1),\n\n$$\nm_{s,t,y}=l_{s,t}\u2062a_{y,t}\u2062U_{y,t}.\n$$\n\n### Modeling approach\n\nWe aimed to predict $p_{s,t,y,v}$, the fraction of cases of subtype $s$ in season $t$ among people born in year $y$ with vaccination status $v$. Our models assume that this is proportional to a combination of the following factors:\n\nWe defined models as specific combinations of the above factors. We tested a set of 10 models by pairing each of the possible implementations of HA imprinting with each implementation of VE (Figure 1). Demography, age-specific effects, and N2 imprinting were included in all these models. To test whether more complex models truly improved model fit, we also tested a simple model with constant VE and no effect of imprinting. We evaluated these 11 models by maximum likelihood and compared their performance using the corrected Akaike information criterion (cAIC, \u2018Model likelihood\u2019) and leave-one-out cross-validation.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/50060/elife-50060-fig1-v2.jpg)\n\n**Figure 1.:** Ten different models result from considering different combinations of HA imprinting and VE. We also tested one additional model excluding the effects of N2 and HA imprinting (Materials and methods: \u2018Modeling approach\u2019).\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/50060/elife-50060-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Flowchart of sample collection (A) and final study population stratified by season, age, test status, and vaccination status (B). \u2018Test-positive\u2019 is defined as testing positive for the dominant circulating influenza A subtype in that season.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/50060/elife-50060-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** Each panel shows the population distribution of all individuals in the study area who met the age criteria for study enrollment. People under 6 months old at the start of the sampling period in a season were not eligible to participate.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/50060/elife-50060-fig1-figsupp3-v2.jpg)\n\n**Figure 1\u2014figure supplement 3.:** We estimated monovalent vaccination coverage in 2009\u20132010 by measuring vaccination coverage among enrolled people and fitting a smoothing spline to the data (solid line).\n\n![Figure 1\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/50060/elife-50060-fig1-figsupp4-v2.jpg)\n\n**Figure 1\u2014figure supplement 4.:** High-risk medical status (Materials and methods, \u2018Study cohort\u2019) varies with age and vaccination status but stays relatively consistent across seasons. Each plot shows the fraction of enrolled people who had a high-risk medical condition for each season stratified by age, vaccination status, and test status. High-risk medical condition data was not collected for the 2009 pandemic season.\n\n![Figure 1\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/50060/elife-50060-fig1-figsupp5-v2.jpg)\n\n**Figure 1\u2014figure supplement 5.:** Vaccinated individuals seek healthcare for MAARI at a higher rate than predicted by vaccination coverage. We measured the fraction of vaccinated people among all who presented with MAARI and tested negative for influenza ($R=\\frac{Vaccinated test-negative controls}{Unvaccinated test-negative controls+Vaccinated test-negative controls}$; Materials and methods: \u2018Vaccination\u2019). This is plotted against vaccination coverage by season for different age groups. The dashed grey line shows where $R$ and vaccination coverage are equal. Vaccination coverage for the 2009\u20132010 season uses monovalent vaccination coverage estimated directly from all individuals with MAARI. We do not show the 2009 pandemic season because the monovalent vaccine was not distributed until the second wave of the pandemic.\n\n![Figure 1\u2014figure supplement 6.](https://cdn.elifesciences.org/articles/50060/elife-50060-fig1-figsupp6-v2.jpg)\n\n**Figure 1\u2014figure supplement 6.:** Each bar shows the fraction of individuals who were vaccinated in that season who also received at least one influenza vaccination in the previous two seasons.\n\n![Figure 1\u2014figure supplement 7.](https://cdn.elifesciences.org/articles/50060/elife-50060-fig1-figsupp7-v2.jpg)\n\n**Figure 1\u2014figure supplement 7.:** Most vaccinated study participants received the inactivated influenza vaccine. The fraction of vaccinated people who received the standard-dose inactivated influenza vaccine (IIV-SD), the high-dose inactivated influenza vaccine (IIV-HD), or the live attenuated influenza vaccine (LAIV) is shown for all participants (A), children\u00a0<\u00a018 years old (B), and adults \u226565 years old (C).\n\n### Mathematical expressions for model components\n\n#### Demography\n\nWe expect that the fraction of cases in each birth cohort should be proportional to the underlying demographic birth year distribution of the population. To calculate the demographic birth year distribution, we used MESA-specific data on the age distribution for each season (Kieke et al., 2015). Because people \u226590 years old were grouped into a single age class, we estimated the number of people in each age \u226590 years old by assuming a geometric decline in population with age. We converted the age distribution for each season into a distribution by birth year by assigning people of a specific age into the two possible birth years of that age (Appendix 1: \u2018Birth year distribution of the study population\u2019). Therefore,\n\n$$\np_{s,t,y,v}\u221dD_{t,y},\n$$\n\nwhere $D_{t,y}$ is the fraction of the population in season $t$ who were born in year $y$ .\n\n#### Age-specific factors\n\nWe modeled intrinsically age-specific differences in medically attended influenza A infection risk and healthcare-seeking behavior by using parameters that represent the relative risk of medically attended influenza A infection in each age group. These parameters combine the effects of underlying age-specific differences in influenza A medically attended infection risk as well as age-specific differences in healthcare-seeking behavior. We considered the same age groups as before (0\u20134 year-olds, 5\u20139 year-olds, 10\u201314 year-olds, 15\u201319 year-olds, 20\u201329 year-olds, 30\u201339 year-olds, 40\u201349 year-olds, 50\u201364 year-olds, and \u226565 years old). We chose 20\u201329 year-olds as our reference age group. All age groups $g$ aside from 20 to 29 year-olds had an associated parameter ($A_{g}$) that scaled their risk of medically attended influenza A infection relative to 20\u201329 year-olds. These parameters can take on any positive value.\n\nSince our models describe the distribution of cases by birth year and not by age, we mapped the age-group-specific parameters ($A_{g}$) to birth cohorts in each season $t$ ($A_{t,y}$). We considered that each birth cohort has two possible ages in each season ($a\u20621$ and $a\u20622$). Let $G\u2062(a)$ be a function that specifies the age group $g$ of a given age $a$. Then $A_{t,y}$, the age-specific relative risk in season $t$ of medically attended influenza A infection for a person born in year $y$, is\n\n$$\nA_{t,y}=f_{a\u20621,t,y}\u2062A_{G\u2062(a\u20621)}+f_{a\u20622,t,y}\u2062A_{G\u2062(a\u20622)},\n$$\n\nwhere $f_{a\u20621,t,y}$ and $f_{a\u20622,t,y}$ are the fractions of birth cohort $y$ who are age $a\u20621$ or $a\u20622$ in influenza season $t$ (Appendix 1: \u2018Fraction of birth cohort with specific age\u2019), and $A_{G\u2062(a\u20621)}$ and $A_{G\u2062(a\u20622)}$ are the age-group-specific parameters for $a\u20621$ and $a\u20622$.\n\nOur models also included age-specific approachment rates ($x_{approach,t,y}^{\u2032}$), enrollment rates ($x_{enroll,t,y,v}^{\u2032}$), and nursing home enrollment ($k_{t,y}$) as covariates, all of which bias the age distribution of medically attended influenza infections (Appendix 1: \u2018Age-specific rates of approachment, enrollment, and nursing home residence\u2019). The combination of estimated age-specific effects and age-specific covariates was modeled as\n\n$$\np_{s,t,y,v}\u221dA_{t,y}\u2062x_{approach,t,y}^{\u2032}\u2062x_{enroll,t,y,v}^{\u2032}\u2062(1-k_{t,y}).\n$$\n\n#### HA subtype imprinting\n\nWe considered that imprinting to HA reduces a birth cohort\u2019s risk of future infection from the same HA subtype. Therefore,\n\n$$\np_{s,t,y,v}\u221d1-h_{s}\u2062m_{s,t,y},\n$$\n\nwhere $h_{s}$ is the strength of HA imprinting for subtype $s$ and $m_{s,t,y}$ is the imprinting probability in season $t$ of birth cohort $y$ to subtype $s$ (\u2018Calculating imprinting probabilities\u2019).\n\n#### HA group imprinting\n\nWe considered that imprinting to HA reduces a birth cohort\u2019s risk of future infection with viruses from the same HA group. Therefore,\n\n$$\np_{H1N1,t,y,v}\u221d1-g_{1}\u2062(m_{H1N1,t,y}+m_{H2N2,t,y}),\n$$\n\n\n\n$$\np_{H3N2,t,y,v}\u221d1-g_{2}\u2062m_{H3N2,t,y},\n$$\n\nwhere $g_{1}$ is the strength of HA imprinting for group one viruses; $g_{2}$ is the strength of HA imprinting for group two viruses; and $m_{H1N1,t,y}$, $m_{H2N2,t,y}$, and $m_{H3N2,t,y}$ are the imprinting probabilities in season $t$ of birth cohort $y$ to H1N1, H2N2, and H3N2.\n\n#### N2\u00a0imprinting\n\nWe considered that imprinting to N2 reduces a birth cohort\u2019s risk of H3N2 infection. Therefore,\n\n$$\np_{H3N2,t,y,v}\u221d1-n_{m}\u2062(m_{H3N2,t,y}+m_{H2N2,t,y}),\n$$\n\nwhere $n_{m}$ is the strength of N2 imprinting, and $m_{H3N2,t,y}$ and $m_{H2N2,t,y}$ are the imprinting probabilities of birth cohort $y$ in season $t$ to H3N2 and H2N2.\n\n#### Vaccination\n\nWe assumed that vaccination decreases the risk of medically attended infection. However, vaccinated individuals may seek healthcare for symptomatic influenza at a different rate than unvaccinated individuals. Moreover, because vaccines are routinely recommended for individuals with underlying health conditions, pre-existing susceptibility to MAARI among vaccinated individuals may also differ from unvaccinated individuals. Let $R_{t,g}$ represent the fraction of vaccinated individuals in age group $g$ in season $t$ that present with MAARI. We use test-negative controls to estimate this as\n\n$$\nR_{t,g}=\\frac{v_{t,g}^{-}}{u_{t,g}^{-}+v_{t,g}^{-}},\n$$\n\nwhere $v_{t,g}^{-}$ and $u_{t,g}^{-}$ are the number of vaccinated or unvaccinated individuals born in year $g$ presenting with MAARI and testing negative for influenza in season $t$. We converted $R_{t,g}$ to $R_{t,y}$ (i.e., to a covariate indexed by birth cohort) using the same method described in \u2018Age-specific factors.\u2019 We tested five different VE schemes: subtype-specific VE that remained constant across seasons and cohorts (two parameters), subtype-specific VE that varied between the age groups described above (18 parameters), VE that varied between seasons (12 parameters), VE for each possible imprinting subtype (six parameters), and birth-cohort-specific VE (18 parameters). These VE parameters ($V$) reduced the probability of medically attended influenza A infection among vaccinated individuals in a birth cohort, i.e,\n\n$$\np_{s,t,y,vac.}\u221dR_{t,y}\u2062(1-V)\n$$\n\n\n\n$$\np_{s,t,y,unvac.}\u221d(1-R_{t,y}),\n$$\n\nwhere $V$ depends on the specific implementation of VE used.\n\nConstant VE only varies with the infecting subtype, thus\n\n$$\nV=v_{s}.\n$$\n\nSeason-specific VE varies with subtype and season, thus\n\n$$\nV=v_{s,t}.\n$$\n\nFor age-specific VE, we used the same age classes described above for \u2018Age-specific factors\u2019 but did not consider a reference age class, so that each age group had an associated VE for each subtype. We used these age-specific VE parameters to calculate the VE against subtype $s$ in birth cohort $y$ during season $t$ using the same procedure described in \u2018Age-specific factors\u2019 (Equation 9). Therefore,\n\n$$\nV=f_{a\u20621,t,y}\u2062v_{G\u2062(a\u20621),s}+f_{a\u20622,t,y}\u2062v_{G\u2062(a\u20622),s},\n$$\n\nwhere $v_{G\u2062(a\u20621),s}$ and $v_{G\u2062(a\u20622),s}$ are age-specific VE parameters for $a\u20621$ and $a\u20622$.\n\nFor imprinting-specific VE, we used the imprinting probabilities for each birth cohort described in \u2018Calculating imprinting probabilities\u2019 to scale V such that\n\n$$\nV=1-\\prodz\\in{H1N1, H2N2, H3N2}(1-v_{s,z}\u2062m_{z,t,y}),\n$$\n\nwhere $v_{s,z}$ is the VE among people imprinted to subtype $z$ against infection by dominant subtype $s$, and $m_{z,t,y}$ is the imprinting probability for subtype $z$ in season $t$ for birth cohort $y$.\n\nFor birth-cohort-specific VE, we defined nine birth cohorts corresponding to the nine age groups we used for the 2017\u20132018 season: 1918\u20131952, 1953\u20131967, 1968\u20131977, 1978\u20131987, 1988\u20131997, 1998\u20132002, 2003\u20132007, 2008\u20132012, and 2013\u20132017. Let $Q\u2062(y)$ be the birth cohort of people born in year $y$. Then\n\n$$\nV=v_{Q\u2062(y),s},\n$$\n\nwhere $v_{Q\u2062(y),s}$ is the VE among people in cohort $Q\u2062(y)$ against infection by dominant subtype $s$.\n\n### Model likelihood\n\nRecall that our aim is to predict $p_{s,t,y,v}$, the fraction of all PCR-confirmed influenza cases of dominant subtype $s$ in influenza season $t$ among people born in year $y$ with vaccination status $v$. These fractions can also be interpreted as multinomial parameters that describe the probability that in season $t$, a medically attended influenza infection of subtype $s$ occurs among people born in year $y$ with vaccination status $v$. Each model $M$ assumes that $p_{s,t,y,v}$ is proportional to a collection of model components $j$ described above (demography, age, imprinting, and vaccination). Thus,\n\n$$\np_{M,s,t,y,v}\u221d\\prodj\u03d5_{M,j}\u2062\u03b7_{j,s,t,y,v},\n$$\n\nwhere $p_{M,s,t,y,v}$ is a multinomial probability under model $M$, $\u03d5_{M,j}$ indicates whether model $M$ contains component $j$, and $\u03b7_{j,s,t,y,v}$ is the mathematical expression for model component $j$ given $s$, $t$, $y$, and $v$ (e.g., for HA subtype imprinting, $\u03b7_{j,s,t,y,v}=1-h_{s}\u2062m_{s,t,y}$).\n\nTo obtain proper multinomial probabilities, we calculated a normalizing constant for each season $t$ such that all probabilities in that season sum to 1. For convenience, let $p_{M,s,t,y,v}^{\u2032}=\\prod_{j}\u03d5_{M,j}\u2062\u03b7_{j,s,t,y,v}$ be the unnormalized multinomial probability for model $M$. Then for a specific season $t$, the normalized multinomial probability is\n\n$$\np_{M,s,t,y,v}=\\frac{p_{M,s,t,y,v}^{\u2032}}{\\sum_{y^{\u2032}=1918}^{y_{max,t}}p_{M,s,t,y^{\u2032},unvac.}^{\u2032}+\\sum_{y^{\u2032}=1918}^{y_{max,t}}p_{M,s,t,y^{\u2032},vac.}^{\u2032}}.\n$$\n\nwhere $y_{max,t}$ is the maximum birth year possible for a specific season $t$.\n\nTo calculate the likelihood of a given model, we used the multinomial probabilities and the observed birth year distribution of cases. Let $n_{s,t,y,v}$ be the number of PCR-confirmed cases of dominant subtype $s$ in influenza season $t$ among people born in year $y$ with vaccination status $v$. The total number of PCR-confirmed cases of dominant subtype $s$ in season $t$ is\n\n$$\nN_{s,t}=\\sumy=1918y_{max,t}n_{s,t,y,unvac.}+\\sumy=1918y_{max,t}n_{s,t,y,vac}.\n$$\n\nFor models fitted to a restricted set of ages, we limited the cases for each season to the birth cohorts that were guaranteed to meet the age requirements in that season.\n\nThen, the likelihood of model $M$ in season $t$ is given by the multinomial likelihood,\n\n$$\n\u2112_{M,t}=\\frac{N_{s,t}!\u2062p_{M,s,t,1918,unvac.}^{n_{s,t,1918,unvac.}}\u2062p_{M,s,t,1918,vac.}^{n_{s,t,1918,vac.}}\u2062\u22ef\u2062p_{M,s,t,y_{max,t},unvac.}^{n_{s,t,y_{max,t},unvac.}}\u2062p_{M,s,t,y_{max,t},vac.}^{n_{s,t,y_{max,t},vac.}}}{n_{s,t,1918,unvac.}!\u2062n_{s,t,1918,vac.}!\u2062\u22ef\u2062n_{s,t,y_{max,t},unvac.}!\u2062n_{s,t,y_{max,t},vac.}!},\n$$\n\nFinally, the full model likelihood for model $M$ over all observed seasons is\n\n$$\n\u2112_{M}=\\prodt=2007-20082017-2018\u2112_{M,t}.\n$$\n\nWe fitted the model to case data using the L-BFGS-B algorithm implemented in the R package optimx. We estimated 95% confidence intervals for parameters of the best-fitting model by evaluating likelihood profiles at 14 evenly spaced points and interpolating the entire profile using a smoothing spline.\n\n## Results\n\n### The age distribution of cases varies between seasons and subtypes\n\nThe age distribution of cases varies between subtypes. The relative burden of cases is consistently higher in people \u226565 years old during H3N2-dominated seasons compared to H1N1-dominated seasons (Figure 2). The age distribution tends to vary more between subtypes than within either over time (Figure 2\u2014figure supplement 1, off-diagonal quadrants). This is consistent with recent work showing that the ratios of H3N2 to H1N1 cases differ between age groups (Gagnon et al., 2018b).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/50060/elife-50060-fig2-v2.jpg)\n\n**Figure 2.:** (A) The age distributions of cases from the 2007\u20132008 through the 2017\u20132018 influenza seasons in MESA. Dark lines with open circles indicate the average fraction of cases in each age group. Lighter-colored lines show the age distribution for individual seasons. (B) The age distribution of cases in H1N1-dominated seasons. (C) The age distribution of cases in H3N2-dominated seasons.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/50060/elife-50060-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Seasons differ in their age distributions. The color intensity of each cell shows the observed G-test statistic, which measures how much the age distributions of two seasons differ from the null expectation that they are drawn from the same distribution (Materials and methods: \u2018Calculating differences in the age distribution between seasons'.). The text in each cell shows the Bonferroni-corrected p-value for each G-test. The dominant subtype of each season is indicated by the label color.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/50060/elife-50060-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A). Each point shows the rank of an age group\u2019s relative risk of infection during the first half compared to the second half of an epidemic period (x-axis) and the rank of the fraction of cases belonging to that age group in the same epidemic period (y-axis) (Appendix 1: \u2018Correlation of relative risk and fraction of cases\u2019). Points are colored by the dominant subtype of the season and x-axis values are offset to facilitate visualization. Points with the same x and y values overlap and are indicated by darker shading. (B). To account for potential undersampling of cases at the beginning and end of specific seasons, we simulated 1000 replicate epidemics (Appendix 1 : \u2018Sensitivity to sampling effort\u2019) and calculated the same correlation as in panel A. The range is indicated by a vertical line and the median by a square.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/50060/elife-50060-fig2-figsupp3-v2.jpg)\n\n**Figure 2\u2014figure supplement 3.:** Each panel shows the relative risk of infection in the first versus the second half of an epidemic for different age groups in each season (Materials and methods: \u2018Calculating relative risk\u2019). Relative risk greater than 1 (indicated by the grey dashed line) means that an age group was more likely to be infected at during the first rather than second half of an epidemic. Age groups with no cases in the latter half of a season are indicated by asterisks and no bar. The dominant subtype of each subtype is indicated by the bar color. 95% binomial confidence intervals are indicated by grey vertical lines. Bars with asterisks over them indicate that the 95% confidence interval includes the scenario where all cases occur in the first half of the season.\n\nThe age distribution also varies within subtypes over time (Figure 2\u2014figure supplement 1, diagonal quadrants). The seven H3N2-dominated seasons display three types of age distributions (Figure 2\u2014figure supplement 1, clusters of lighter-colored cells in the upper left-hand quadrant), and two correspond to major antigenic clusters (2007\u20132008, Fonville et al., 2016; 2010\u20132012, Ann et al., 2012). These differences sometimes coincide with significant shifts in the age distribution between seasons. For instance, the highest fraction of H3N2 cases occurs in 20\u201329 year olds in the 2007\u20132008 season, but this age group has the lowest fraction of cases in the next H3N2-dominated season (2010\u20132011, Figure 2C). In H1N1, the shift from seasonal to pandemic strains is associated with large changes in the age distribution (Figure 2\u2014figure supplement 1, lower right-hand quadrant).\n\nWe found further evidence that age groups differed in their susceptibility across seasons by examining the relative risk of infection during the first versus second half of each epidemic period (Materials and methods: \u2018Calculating relative risk\u2019). Individuals at greater risk of infection should be infected disproportionately early rather than late in an epidemic (Worby et al., 2015). We confirmed that an age group\u2019s relative risk correlates with the fraction of cases within that age group in the same season (Pearson\u2019s r\u00a0=\u00a00.58, 95% CI 0.38\u20130.73; Figure 2\u2014figure supplement 2A; Appendix 1: \u2018Correlation of relative risk and fraction of cases\u2019). This trend is evident for H1N1 (Pearson\u2019s r\u00a0=\u00a00.73, 95% CI 0.45\u20130.88; Figure 2\u2014figure supplement 2A) and H3N2 seasons separately (Pearson\u2019s r\u00a0=\u00a00.52, 95% CI 0.30\u20130.69; Figure 2\u2014figure supplement 2A). The positive correlation in all seasons is robust to undersampling of cases at the start and end of seasons (Appendix 1: \u2018Sensitivity to sampling effort\u2019, Figure 2\u2014figure supplement 2B). This provides supporting evidence that the different numbers of cases in each age group reflect underlying differences in infection risk.\n\nJust as the age distribution of cases varies over time, the age groups with high relative risks of infection change over time. If people contact one another similarly from one season to the next, these shifting relative risks imply that age groups\u2019 relative susceptibilities change over time. For instance, 5\u201317 year olds had the highest relative risk of early infection in the 2008\u20132009 season, whereas 50\u201364 year-olds had the highest relative risk in the 2013\u20132014 season (Figure 2\u2014figure supplement 3). Relative risks in MESA vary more than national estimates, which show that 5\u201317 year-olds had the highest relative risk in all but one season from the 2009 pandemic to 2013\u20132014 (Worby et al., 2015). These differences may partly be due to the fact that our measurements of relative risk use outpatient visits, whereas the national estimates use hospitalizations.\n\nTaken together, these findings suggest that the risk of influenza infection is not a simple function of age alone. Other factors, such as past influenza infections and vaccination, might explain the changing age distributions of cases in time.\n\n### Imprinting probabilities of age groups change over time\n\nWe hypothesized that variation in the age distribution of cases could be explained by the aging of birth cohorts with similar early exposure histories. This would cause the early exposure history of an age group, and thus potentially its susceptibility, to change in time. To calculate the probability that people in a particular age group had their first influenza A infection with a particular subtype, we adapted the approach from Gostic et al., 2016. Briefly, we calculated the probability that an individual born in a specific year had a primary infection with H1N1, H2N2, or H3N2 using data on relative epidemic sizes and the frequencies of circulating subtypes (Figure 3\u2014figure supplement 1; Materials and methods: \u2018Calculating imprinting probabilities\u2019).\n\nAs expected, age groups\u2019 early exposures are not static and change over time (Figure 3). Older people nonetheless tend to be imprinted to H1N1 or H2N2, whereas younger people have higher probabilities of imprinting to H3N2. The effects of the 2009 H1N1 pandemic are evident in the three youngest age groups as a transient increase (from 2009 to approximately 2013) in their H1N1 imprinting probability. These imprinting probabilities are relatively well-constrained even after for accounting for uncertainty in epidemic size (Figure 3\u2014figure supplement 2; Appendix 1: \u2018Sensitivity to uncertainty in ILI and the frequency of influenza A\u2019).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/50060/elife-50060-fig3-v2.jpg)\n\n**Figure 3.:** Each panel shows the imprinting probabilities of an age group from the 2007\u20132008 season through the 2017\u20132018 season. The color of each bar corresponds to the imprinting subtype or naive individuals, who have not yet been infected.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/50060/elife-50060-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** The intensity (top panel) and subtype frequencies (bottom panel) of influenza A seasons in the United States. Intensity is measured as the product of influenza-like illness (ILI) and the fraction of respiratory specimens testing positive for influenza A in national surveillance data (Appendix 1: \u2018Seasonal intensity\u2019). This is normalized to the average intensity value between 1977 and 2017\u20132018. Seasons before 1977 where United States ILI surveillance data are unavailable are assumed to have an intensity score of 1 (i.e., the average score over all other seasons). Subtype frequencies were obtained from national surveillance data before the 2007\u20132008 season and directly from the MESA studies afterwards.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/50060/elife-50060-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** Uncertainty in ILI and the frequency of A have a small impact on imprinting probabilities. We simulated 10000 datasets to represent the range of possible epidemic sizes for seasons where we did not have data on either ILI or the frequency of influenza A (Appendix 1: \u2018Sensitivity to uncertainty in ILI and the frequency of influenza A\u2019). The vertical dashed line shows the point at which data on ILI and the frequency of influenza A are available while the vertical dotted line shows the point at which data on only the frequency of A is available. The median imprinting probabilities for those simulations is shown as a solid line with the maximum and minimum imprinting probabilities shown by the bounds of the shaded area.\n\n### Age-specific differences in medically attended influenza A infection risk affect epidemic patterns\n\nWe fitted models to estimate the underlying effects of age, early infections, and vaccination on the age distributions of cases. As expected, the cases reveal age-specific differences in the risk of medically attended influenza A infection (Figure 4; Figure 4\u2014figure supplement 1; Appendix 2\u2014table 1). This risk is roughly threefold higher among children\u00a0<4 years old compared to adults 20\u201329 years old, after adjusting for other effects (Figure 4). The decline in risk through middle age is generally consistent with attack rates estimated from serology (Monto et al., 1985; Bodewes et al., 2011; Wu et al., 2010; Huang et al., 2019) and clinical infections (Wu et al., 2017). We recently observed smaller differences in the attack rates of school-aged children and their parents when estimating infections serologically (Ranjeva et al., 2019). We hypothesize that the attack rates estimated from clinical infections might show larger differences by age due to age-related changes in infection severity and healthcare-seeking behavior. Indeed, rates of healthcare-seeking behavior have been shown to decline with age before rising in adults \u226565 years old (Biggerstaff et al., 2014; Brooks-Pollock et al., 2011; Van Cauteren et al., 2012), consistent with our results. Finally, the increased risk of medically attended influenza A infection among people \u226565 years old compared to other adults may be related to the increasing prevalence of high-risk medical conditions with age (Figure 1\u2014figure supplement 4).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/50060/elife-50060-fig4-v2.jpg)\n\n**Figure 4.:** Open circles represent the maximum likelihood estimates of parameters describing age-specific differences in the relative risk of medically attended influenza A infection. Lines show the 95% confidence interval.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/50060/elife-50060-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** The best-fitting model includes age-specific risk of medically attended influenza A infection, HA subtype imprinting, and age-specific VE. The 11 main models are shown as rows with colored squares indicating whether that model included parameters indicated by the columns. Orange squares indicate covariates that were not estimated. Light green squares mean that a given estimated parameter was supported. Dark green squares mean that the model did not support the inclusion of the parameters indicated by the column (i.e., the CI includes 0). Models are sorted by their cAIC relative to the best-fitting model.\n\n### Initial infection confers long-lasting, subtype-specific protection against future infection\n\nOur best-fitting model supports subtype-specific imprinting for H1N1 and H3N2 (Figure 5, top row; Appendix 2\u2014table 1). This model also provides the best predictive power compared to other models in a leave-one-out cross-validation analysis (Figure 5\u2014figure supplement 1; Figure 5\u2014figure supplement 2; Appendix 1: \u2018Evaluation of predictive power\u2019). The risk of future medically attended infection by H1N1 is reduced by 66% (95% CI 53\u201377%) in people imprinted to H1N1, whereas the risk of future medically attended infection by H3N2 is reduced by 33% (95% CI 17\u201346%) in people imprinted to H3N2. We found no evidence of a protective effect from imprinting to N2 (0%, 95% CI 0\u20137%). These estimates of imprinting protection are insensitive to:\n\n![Figure 5.](https://cdn.elifesciences.org/articles/50060/elife-50060-fig5-v2.jpg)\n\n**Figure 5.:** Imprinting is more protective against H1N1 infection than H3N2 infection. Open circles represent the maximum likelihood estimates of imprinting parameters from the model including HA subtype imprinting and age-specific VE fitted to the indicated age group (y-axis). Black lines show 95% confidence intervals.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/50060/elife-50060-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** The model which best-predicts excluded seasons includes HA subtype imprinting and age-specific VE. Models are shown as rows with colored squares indicating whether that model included parameters indicated by the columns. Orange squares indicate covariates that were not estimated. Light green squares mean that a given estimated parameter was supported. Dark green squares mean that the model did not support the inclusion of the parameters indicated by the column (i.e., the CI includes 0). Models are sorted by their MSE in predicting excluded seasons (Appendix 1: \u2018Evaluation of predictive power\u2019).\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/50060/elife-50060-fig5-figsupp2-v2.jpg)\n\n**Figure 5\u2014figure supplement 2.:** Each panel shows the number of observed and predicted cases by birth year among unvaccinated (A) and vaccinated (B) study participants. Predictions and 95% prediction intervals were generated by fitting the model including age-specific risk of medically attended influenza A infection, HA subtype imprinting, and age-specific VE fitted to all seasons except the season in the panel (Appendix 1: \u2018Evaluation of predictive power\u2019).\n\n![Figure 5\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/50060/elife-50060-fig5-figsupp3-v2.jpg)\n\n**Figure 5\u2014figure supplement 3.:** Each panel shows the number of cases per sampling day (green circles). We extrapolated cases at the start and end of the season (orange dashed line) if the observed number of cases per day exceeded 1 (black line) at the start and end of that season (Appendix 1: \u2018Sensitivity to sampling effort\u2019).\n\n![Figure 5\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/50060/elife-50060-fig5-figsupp4-v2.jpg)\n\n**Figure 5\u2014figure supplement 4.:** We fitted the model including HA subtype imprinting and age-specific VE to simulated cases in seasons where the enrollment period does not fully overlap the epidemic period and recorded the maximum likelihood estimates for H1N1 and H3N2 imprinting protection (Appendix 1: \u2018Sensitivity to sampling effort\u2019). The distributions of these values are shown as violin plots and the medians are shown as squares. Estimates of imprinting protection from the best-fitting model without simulated data with a 95% confidence interval are shown as circles with error bars.\n\n![Figure 5\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/50060/elife-50060-fig5-figsupp5-v2.jpg)\n\n**Figure 5\u2014figure supplement 5.:** We tested whether excess cases in each birth cohort were negatively correlated with excess cases in the same birth cohort in the next season of the same subtype (Appendix 1: \u2018Calculating excess cases\u2019). We find a weak positive correlation for cases of H1N1 (Spearman\u2019s $\u03c1$=0.12, 95% CI 0.02\u20130.22) and H3N2 (Spearman\u2019s $\u03c1$=0.05, 95% CI \u22120.03\u20130.14).\n\nIn theory, the estimated protective effects of imprinting could be influenced by cross-protection rather than the impact of first infection per se. Because first infections are also recent infections in children, we reasoned that the observed imprinting effects might arise from confounding with recent infections in these ages. Based on an estimated 7 year half-life of homologous protection after H1N1pdm infection in children (Ranjeva et al., 2019) and the fact that most children experience primary influenza A infection by 5 years of age (Bodewes et al., 2011), we reasoned that excluding children <15 years old would diminish the impact of protection from recent infection on our results. When we excluded the youngest age groups, our estimates of H1N1 imprinting protection decreased while H3N2 imprinting protection increased (Figure 5, second row). However, initial infection by H1N1 was still more protective than initial infection by H3N2, both imprinting effects remained positive, and there was no significant change in the values of other estimated parameters (Appendix 2\u2014table 1 and Appendix 2\u2014table 2).\n\nThe effects of recent infection should also manifest in the difference between the observed and estimated numbers of cases (i.e., the excess cases, Appendix 1: \u2018Calculating excess cases\u2019), since unlike typical transmission models, our model does not take prior-season infections into account when estimating cases for the current season. More infections in a birth cohort in one season should reduce susceptibility in that birth cohort at the start of the next season. We thus expect that excess cases in one season will be followed by missing cases in the next season dominated by that subtype (i.e., a negative correlation in excess cases). Instead, we observed that excess cases for each birth cohort are weakly positively correlated from season to season, suggesting that immunity from recent infections is not a major driver of temporal variation in the age distribution of cases (Figure 5\u2014figure supplement 5).\n\nSince older adults have the highest probability of primary infection with H1N1, we also reasoned that older adults might disproportionately drive the strong protection from H1N1 imprinting we observe. People born before 1947 were likely exposed to H1N1 strains that are antigenically similar to the post-pandemic H1N1 strains that comprise most of our H1N1 infection data (Manicassamy et al., 2010; O'Donnell et al., 2012), creating the possibility that strain-specific cross-immunity drives the pattern we attribute to subtype-specific imprinting. These people nearly all fall into the \u226565 year-old age group in the study period. The study also underenrolled medically attended infections among people in nursing facilities, which would artificially lower the case count in this age group and may affect estimates of imprinting protection. Therefore, we excluded adults \u226565 years old and refitted our models. Excluding the oldest adults does not significantly change estimated imprinting protection or other parameters (Appendix 2\u2014table 1 and Appendix 2\u2014table 2).\n\nWhen we exclude both the youngest and oldest age groups, initial infections by H1N1 and H3N2 have similar protective effects (Figure 5, bottom row). This shows that the combined effects of cross-protection in both the youngest and oldest individuals contribute to the signal of imprinting protection we observe, but they are not its sole drivers.\n\n### VE varies by birth cohort in older children and adults\n\nThe best-fitting model includes age-specific VE (Figure 4\u2014figure supplement 1; Appendix 2\u2014table 2). While serological responses to influenza vaccination are weakest in the young (Englund et al., 2005; Neuzil et al., 2006) and old (Lee et al., 2018; DiazGranados et al., 2014), it is unclear what age-related factors would drive variation in VE in other age groups. We hypothesized that VE in these ages varies with early exposure history, which correlates with birth year, rather than age.\n\nTo test this hypothesis, we fitted a model with birth-cohort-specific VE to the cases, excluding either children <15 years old or adults \u226565 years old. We chose birth cohorts that corresponded to the age groups of the original model in 2017\u20132018 (Materials and methods: \u2018Vaccination\u2019), keeping the number of parameters the same (e.g., VE in the 20\u201329 age group became VE in the 1988\u20131997 birth year cohort). We find that age-specific VE still outperforms all other models after we exclude the oldest age group (\u226565 years old). In contrast, birth-cohort-specific VE performs better when we exclude children <15 years old (Figure 6\u2014figure supplement 1). Estimates of imprinting protection and age-specific risk of medically attended influenza in the birth-cohort-specific VE models are not significantly different from estimates from the best-fitting model fitted to all ages (Appendix 2\u2014table 1). Taken together, these results suggest that birth-cohort-specific VE best explains the case distribution in older children and adults, who have likely experienced their first influenza infection, whereas age-specific VE best explains cases in younger children, who have less influenza exposure.\n\nVE differs between birth cohorts that have similar imprinting by subtype (Figure 6; Appendix 2\u2014table 5). For example, the 1968\u20131977 and 1988\u20131997 cohorts have similar probabilities of primary exposure to H1N1 and H3N2, but they differ substantially in their VE to both subtypes (Figure 6). The 1988\u20131997 and 1998\u20132002 cohorts also have similar probabilities of primary exposure to each subtype and have similar H1N1 VEs, but have significantly different H3N2 VEs (Figure 6). Antigenic differences within each subtype might explain this variation.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/50060/elife-50060-fig6-v2.jpg)\n\n**Figure 6.:** Birth-cohort-specific VE differs significantly between subtypes and birth cohorts. The location of each pie chart represents the H3N2 (x-axis) and H1N1 (y-axis) VE estimates for a birth cohort (indicated by text) obtained from our model fitted to people \u226515 years old. Pie charts are colored by the probability of first infection by each subtype (i.e, imprinting probability). 95% confidence intervals of the VE estimates are indicated by light grey solid lines. The dashed grey line shows the diagonal where the VE estimate for H1N1 is equal to the VE estimate for H3N2.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/50060/elife-50060-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** A model including age-specific risk of medically attended influenza A infection, HA subtype imprinting, and birth-cohort-specific VE best fits cases of people \u226515 years old. The 11 main models are shown as rows with colored squares indicating whether that model uses parameters indicated by the columns. Orange squares indicate covariates that were not estimated. Light green squares mean that a given estimated parameter was supported. Dark green squares mean that the model did not support the inclusion of the parameters indicated by the column (i.e, the CI includes 0). Models are sorted by their cAIC relative to the best-fitting model.\n\n![Figure 6\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/50060/elife-50060-fig6-figsupp2-v2.jpg)\n\n**Figure 6\u2014figure supplement 2.:** The birth-cohort-specific VE model predicts observed cases better than the age-specific VE model for people \u226515 years old. Bars show the excess cases in vaccinated individuals relative to the birth-cohort-specific VE model (dark colors) and the age-specific VE model (light colors) for age groups \u226515 years old. Colors indicate the dominant subtype of a given season. 95% prediction intervals are shown as grey error bars.\n\n### Discrepancies partly explained by antigenic evolution\n\nThe best-fitting model accurately reproduces the age distributions of vaccinated and unvaccinated cases of each subtype, aggregated across seasons (Figure 7A). The only exception is that it underestimates aggregate H1N1 cases in unvaccinated 5\u20139 year-olds. By examining the differences between predicted and observed cases for each season, we see that this is largely driven by infection during the 2009 H1N1 pandemic (Figure 7B). Such a large antigenic change may have negated any protection from previous infection in 5\u20139 year-olds and made them particularly susceptible to pandemic infection.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/50060/elife-50060-fig7-v2.jpg)\n\n**Figure 7.:** (A) The model including age-specific VE and subtype-specific HA imprinting accurately predicts the overall age distribution of cases across seasons and age groups. Each row depicts the age distribution of cases among unvaccinated (top) and vaccinated (bottom) individuals over all sampled seasons (2007\u20132008 through 2017\u20132018). Each column indicates H1N1 cases (left, blue) and H3N2 cases (right, red). Open circles represent observed cases, solid lines represent the predicted number of cases from the best-fitting model, the shaded area represents the 95% prediction interval of the best-fitting model. (B) Excess cases of dominant subtype for each season. Excess cases are defined as the predicted number of cases from the best-fitting model - observed cases (Appendix 1: \u2018Calculating excess cases\u2019). Each panel shows the excess cases of the dominant subtype for each season for each age group among unvaccinated (dark bars) and vaccinated (light bars) individuals. Grey error bars show the 95% prediction interval.\n\nThe model underestimates cases in unvaccinated individuals who were 30\u201339 years old and over 50 years old in the 2013\u20132014 season (Figure 7B), as indicated by the many excess cases in these age groups in that season. This is further evidence that subtype-specific imprinting cannot explain all age variation. As mentioned before, this season provided one of the first examples that original antigenic sin could affect protection: middle-aged adults had been targeting a familiar site on the pandemic strain that then mutated, rendering them susceptible. Other age groups were effectively blind to these changes, owing to their different exposure histories (Linderman et al., 2014; Huang et al., 2015; Arriola et al., 2014; D\u00e1vila et al., 2014; Petrie et al., 2016).\n\n## Discussion\n\nThe distribution of influenza cases by birth year is consistent with subtype-level imprinting, whereby initial infection with a subtype protects against future medically attended infections by the same subtype. The stronger protective effect observed from primary H1N1 infection compared to primary H3N2 infection may be caused by stronger cross-protective responses to conserved epitopes in the more slowly evolving H1N1 (Bedford et al., 2015). This is in line with previous work showing that protection conferred by H1N1 infection lasts longer than protection conferred by H3N2 infection (Ranjeva et al., 2019). Another recent study found stronger imprinting protection from primary H1N1 compared to primary H3N2 infection (Gostic et al., 2019). Subtype-specific protection observed in seasonal influenza is narrower than the previously reported HA-group-level imprinting protection against avian influenza (Gostic et al., 2016), but in both cases, the protection correlates strongly with primary infection rather than any prior exposure.\n\nExamining cases of seasonal influenza over a 20 year period in Arizona, Gostic et al., 2019 find evidence of imprinting protection not only from HA but also NA, which we do not. We speculate that this discrepancy may be due to increasing vaccination coverage over time in middle-aged adults. During the period of the Arizona study (1993\u20131994 through 2014\u20132015), vaccination coverage in U.S. adults increased most rapidly in this age group (NHIS, 2009), which corresponds to the H2N2-imprinted cohorts near the end of the study. Without adjustment for vaccination, the apparently increased protection in the middle aged might resemble N2 imprinting. Accounting for vaccination in the MESA population, including the relatively stable vaccination coverage in each age group over time (Figure 1\u2014figure supplement 3), suggests imprinting protection is driven by HA.\n\nIn contrast to the clear role of the imprinting subtype in protection against medically attended infection, the model implicates the imprinting strain or other attributes of early exposure history in VE. We expect that people born around the same time were likely exposed to similar strains, not just subtypes, of influenza A early in life, and our results support the idea that biases in immune memory from these early exposures (i.e., original antigenic sin; Davenport and Hennessy, 1957; Francis, 1960; Fazekas de St Groth and Webster, 1966) influence VE. Specifically, we observe that our model is consistent with previous suggestions of birth-cohort-specific VE. The model with birth-cohort-specific VE better estimates cases in vaccinated 50\u201364 year-olds (born 1953\u20131967) in the 2015\u20132016 season than the model with age-specific VE, as indicated by the fewer excess cases predicted in that age group and an improved fit of 1.1 log-likelihood units (Figure 6\u2014figure supplement 2; Appendix 1: \u2018Calculating excess cases\u2019). Reduced VE in this group during the 2015\u20132016 season has been attributed to the exacerbation of antigenic mismatch by the vaccine in adults whose antibody responses were focused on a non-protective site (Skowronski et al., 2017b; Flannery et al., 2018). The improved performance of birth-cohort-specific VE relative to age-specific VE suggests other seasons and age groups where original antigenic sin might have influenced VE, such as 20\u201329 year-olds in the 2007\u20132008 influenza season.\n\nAlthough seasonal estimates of VE routinely stratify by age, shifts in VE from one season to the next might thus be easier to interpret in light of infection history (e.g., Skowronski et al., 2017b; Flannery et al., 2018). The results suggest this effect may be subtle, i.e, influenced by strains\u2019 specific identities rather than merely their subtype. Our model cannot distinguish between the possibility that the precise identity of the imprinting strain primarily determines later VE, or if individuals\u2019 responses to vaccination are shaped by a particular succession of exposures, which would be common to others in the same birth cohort. Regardless, variation in VE between birth cohorts appears substantial and presents a challenge for vaccination strategies (Erbelding et al., 2018).\n\nThe use of different influenza vaccines in MESA during this period is unlikely to affect the results. Most people enrolled in the study received the standard-dose inactivated influenza vaccine (IIV-SD) (Figure 1\u2014figure supplement 7). However, between 9\u201326% of vaccinated children <18 years old received the live attenuated influenza vaccine (LAIV) between the 2008\u20132009 and 2015\u20132016 seasons (Figure 1\u2014figure supplement 7B). A separate study of LAIV VE in the United States found that LAIV and IIV-SD recipients who were repeat vaccinees (as most children were) had similar VE, and thus we do not expect that LAIV receipt should affect VE estimates (McLean et al., 2018). Similarly, 1\u201315% of adults \u226565 years old received the high-dose inactivated influenza vaccine (IIV-HD) between 2009\u20132010 and 2017\u20132018 (Figure 1\u2014figure supplement 7C). This vaccine is 20% more effective than IIV-SD (Lee et al., 2018). Therefore, the changing ratio of IIV-HD to IIV-SD recipients over time might bias results toward cohort-specific VE in models that include people \u226565 years old. However, when we fitted to cases between 15\u201364 years old, we found that cohort-specific VE still performed best. Thus, we conclude that changes in IIV-HD coverage do not substantially influence results.\n\nPotential methodological biases and the vaccination history of the study population nonetheless suggest caution in interpreting VE estimates. Selection and misclassification biases can arise when using influenza test-negative controls to control for differences in healthcare-seeking behavior (Lewnard et al., 2018; Sullivan et al., 2016). Because we also use test-negative controls to set our null expectation for the distribution of cases among birth cohorts, our VE estimates are subject to these biases as well. Moreover, since 45% of the study population is vaccinated, and most participants are frequent vaccinees (Figure 1\u2014figure supplement 6), we are limited in our ability to generalize the VE results to populations with much lower vaccination coverage and/or a shorter history of vaccination. Frequent vaccination has been associated with reduced VE (McLean et al., 2014; Saito et al., 2018; Skowronski et al., 2016). Therefore, the model may underestimate VE in less vaccinated populations. Underestimation of VE could also occur if unvaccinated people are protected by vaccination in the preceding season. Inference might also be distorted if vaccination has large indirect effects, which our model does not consider. Finally, our analysis is worth repeating in a larger population to reduce stochastic influences. We observed an unusually high H1N1 VE in the 1998\u20132002 birth cohort. Because we restricted cases in this analysis to people \u226515 years old, this VE estimate included data from only the 2013\u20132014 and 2015\u20132016 influenza seasons. No H1N1 cases among vaccinated or unvaccinated individuals were observed in this birth cohort in those seasons, which led to the high VE. This might have been due to particular epidemic dynamics in MESA.\n\nIncorporating differences in susceptibility based on early exposures might improve methods to forecast influenza seasons. The analysis of the relative risk of infection during the first half of each season shows more variation in the susceptible age groups from season to season than previously estimated (Worby et al., 2015). While the smaller sample sizes in MESA introduce uncertainty, the correlation between the relative risk and total fraction of cases indicates that the age groups driving epidemics indeed change from season to season. Because the contact structure of the population is probably constant over influenza seasons, variation in the driving age group may be determined by fluctuating susceptibility, which is partly determined by early infections. Therefore, incorporating information on early exposure history into epidemic models may allow for more accurate identification of at-risk populations and fine-scale epidemic timing.\n\nWhile the rate of antigenic evolution affects the rate at which different populations become susceptible to infection, we propose that the heterogeneity in susceptibility observed here may also drive antigenic evolution. Heterogeneity in susceptibility implies that influenza viruses face different selective pressures in groups with different exposure histories (Cobey and Koelle, 2008; Nakajima et al., 2000). Recent research consistent with this hypothesis has shown that sera isolated from different individuals can select for distinct escape mutants (Lee et al., 2019). More careful study of how immune memory to influenza evolves from infection and vaccination might improve understanding of influenza\u2019s evolution.\n\n### Code and data availability\n\nThe code and data used to perform the analyses for this project are available at https://github.com/cobeylab/FluAImprinting\u00a0(Arevalo et al., 2019; copy archived at https://github.com/elifesciences-publications/FluAImprinting).\n",
+      "created_at": "2025-12-02T18:19:41.700762Z"
+    },
+    {
+      "id": "aaf859d5-29b0-4201-8ffd-307c9a4a3488",
+      "submission_id": "0f27fc12-65dd-40a0-b76b-467f004ea08d",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Ben S Cooper, Mahidol University Thailand\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.50060.sa1](https://doi.org/10.7554/eLife.50060.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nRapid evolution of influenza A presents the immune system with a moving target and allows the virus to infect the same human host multiple times. This is because changes in the virus mean that acquired immunity to a strain causing one infection will not, in general, be able to prevent subsequent infections with different strains. The first influenza infection a person experiences may have a particularly strong influence on how the immune system responds to subsequent influenza infections. In this study, the effects of these early influenza exposures (determined indirectly by birth year) are examined with a thorough and elegant analysis of high quality influenza data. The findings provide strong evidence that the first infection does indeed have an important influence, explaining variation in the age distribution of influenza cases in different influenza seasons and variation in vaccine effectiveness. The evidence that vaccine effectiveness varies with birth cohort and not just with age, in particular, has important implications for how we think about vaccine effectiveness.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Earliest infections predict the age distribution of seasonal influenza A cases\" for consideration by eLife. Your article has been reviewed by four peer reviewers, including Ben S Cooper as the Reviewing Editor and Reviewer #2, and the evaluation has been overseen by Neil Ferguson as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Marc Baguelin (Reviewer #3).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThis manuscript presents an analysis of 10 years of clinical testing of respiratory illness cases for influenza from a single population in the US. Data include PCR-confirmed influenza cases including type and sub-type, age and vaccine history. The analysis aims to quantify the effects of earliest influenza infections in childhood on subsequent risk of clinical infection with different subtypes, a question of considerable scientific interest. The analysis provides evidence that susceptibility to different subtypes is determined by the subtype of the first infection (as proxied by the birth cohort) and that vaccine responses are driven by precise infection history.\n\nEssential revisions:\n\n1) Fairly substantial re-organisation of the paper is needed in order to improve readability. In particular, although the Results and Discussion are separate sections, the Results sections tend to stray into discussion, and we advise you to change this. Furthermore, this manuscript would profit from putting the Materials and methods before the Results. Although it is normal to structure eLife articles with the Materials and methods section following the Discussion, we can accommodate different organisation if the editors feel the paper requires this for readability.\n\n2) In some places more precise terminology is needed and the almost interchangeable use of infection and case is potentially confusing. These data are all obtained from people seeking care and the primary results are about subtype differences. At the very least, the language describing the results has to be very tightly constrained to cases with any discussion of possible implications for infections reserved for the discussion. Although there is a paucity of good data describing the rate at which H1 and H3 result in clinical cases, there is no suggestion that this is a uniform process. It likely varies from year to year and from age group to age group.\n\n3) The formal description of the models was in some places ambiguous or confusing and this section needs careful attention.\n\n4) We strongly suggest that the results should be about cases as a function of birth cohort (as these are the data available) and then the idea that birth cohort may be a proxy for infection history should be reserved for the discussion. Even in older people, recent infection history will vary among people the same age and will likely to be a dominant factor in both risk of infection and risk of clinical disease. Especially, given other publications from the group looking at epitope-level histories, mapping infection history so strongly onto birth cohort seems unusual.\n\n5) The results are likely to be of wide interest because of the duration of the study and the consistency of the study design. However, the population from which they come is not representative. Levels of vaccination in the US are extremely high and, given how vaccination efficacy is measured by reduced rates of clinical disease rather than by reduced rates of infection, and these data are from clinical cases, caution is needed when generalizing these results. Even though this is mentioned in the discussion, the characteristics of the population are not given sufficient prominence in the Abstract and Discussion.\n\n6) Please provide a visualisation of the raw data showing how many tests were done in each year, and what was their outcome, stratified by reported vaccination status. How did the control population compare?\n\n7) Throughout the manuscript the authors dichotomise results into significant/non-significant based on whether p-values are below or above the arbitrary threshold of 0.05 (and in some cases it is only reported whether p-values are above or below, the actual values are not given). While this is common practice, it goes against mainstream statistical thinking which advises against the use of such \"bright lines\" when reporting or interpreting results (see the recent consensus statement on p-values from the American Statistical Association which \"is intended to steer research into a post p<0.05 era.\" https://www.amstat.org/asa/files/pdfs/P-ValueStatement.pdf). While p-values clearly have a role (though the authors should bear in mind that with enough data, an arbitrarily small difference of no clinical significance can have an arbitrarily small p-value) dichotomising results into significant /non-significant is rarely helpful. We strongly encourage the authors to consider whether this approach is justified in light of the ASA statement and to consider revising the manuscript accordingly.\n\n8) While not an essential revision, out-of-sample validation of the models (rather than just model comparison) would greatly strengthen the conclusions.\n",
+      "created_at": "2025-12-02T18:19:41.700762Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T18:19:41.700762Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T18:19:41.700762Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "d24baaeb-0b37-42b0-9cd5-ac6843dd8107",
+      "content_id": "98b94d76-1b30-4d2f-8bb4-e59ab1bfb965",
+      "claim_id": "C1",
+      "claim": "Seasonal influenza results in approximately 100,000\u2013600,000 hospitalizations per year in the United States.",
+      "claim_type": "EXPLICIT",
+      "source": "Seasonal influenza is a serious public health concern, resulting in approximately 100,000\u2013600,000 hospitalizations and 5000\u201327,000 deaths per year in the United States despite extensive annual vaccination campaigns (Reed et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Reed et al., 2015",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:19:41.700762Z"
+    },
+    {
+      "id": "549e2ccf-9e9c-4287-9aed-76d2b49eb75b",
+      "content_id": "98b94d76-1b30-4d2f-8bb4-e59ab1bfb965",
+      "claim_id": "C2",
+      "claim": "Seasonal influenza results in approximately 5000\u201327,000 deaths per year in the United States.",
+      "claim_type": "EXPLICIT",
+      "source": "Seasonal influenza is a serious public health concern, resulting in approximately 100,000\u2013600,000 hospitalizations and 5000\u201327,000 deaths per year in the United States despite extensive annual vaccination campaigns (Reed et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Reed et al., 2015",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:19:41.700762Z"
+    },
+    {
+      "id": "a3b8f7d7-c476-410c-9151-b69bab5b0cb6",
+      "content_id": "98b94d76-1b30-4d2f-8bb4-e59ab1bfb965",
+      "claim_id": "C3",
+      "claim": "H1N1 disproportionately infects children compared to H3N2.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared to H3N2, H1N1 disproportionately infects children (Gagnon et al., 2018b; Caini et al., 2018; Khiabanian et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to multiple studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:19:41.700762Z"
+    },
+    {
+      "id": "bcbe0576-5d4d-4f15-aad0-8fe45637485b",
+      "content_id": "98b94d76-1b30-4d2f-8bb4-e59ab1bfb965",
+      "claim_id": "C4",
+      "claim": "H1N1 evolves antigenically more slowly than H3N2.",
+      "claim_type": "EXPLICIT",
+      "source": "It also evolves antigenically more slowly (Bedford et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Bedford et al., 2015",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:19:41.700762Z"
+    },
+    {
+      "id": "ffbe2184-856c-4cdd-b3a1-f31437929e8d",
+      "content_id": "98b94d76-1b30-4d2f-8bb4-e59ab1bfb965",
+      "claim_id": "C5",
+      "claim": "Excess mortality in some adult cohorts during the 1918 and 2009 H1N1 pandemics correlates with childhood infection with other subtypes.",
+      "claim_type": "EXPLICIT",
+      "source": "Excess mortality in some adult cohorts during the 1918 and 2009 H1N1 pandemics correlates with childhood infection with other subtypes (Gagnon et al., 2013; Worobey et al., 2014; Gagnon et al., 2018a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to multiple studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:19:41.700762Z"
+    },
+    {
+      "id": "7349059b-a664-4953-bda6-fe41c53ec9b6",
+      "content_id": "98b94d76-1b30-4d2f-8bb4-e59ab1bfb965",
+      "claim_id": "C6",
+      "claim": "The subtypes circulating in childhood predict individuals' susceptibility to severe zoonotic infections with avian H5N1 and H7N9.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, the subtypes circulating in childhood predict individuals' susceptibility to severe zoonotic infections with avian H5N1 and H7N9, regardless of later exposure to other seasonal subtypes (Gostic et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Gostic et al., 2016",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:19:41.700762Z"
+    },
+    {
+      "id": "150baf53-86ac-41b5-ac2d-54001e37cca8",
+      "content_id": "98b94d76-1b30-4d2f-8bb4-e59ab1bfb965",
+      "claim_id": "C7",
+      "claim": "An individual's immune response to influenza vaccination is biased toward antigens similar to those encountered in childhood.",
+      "claim_type": "EXPLICIT",
+      "source": "Foundational work on the theory of original antigenic sin demonstrated that an individual's immune response to influenza vaccination is biased toward antigens similar to those encountered in childhood (Davenport and Hennessy, 1956).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Davenport and Hennessy, 1956",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:19:41.700762Z"
+    },
+    {
+      "id": "09d3df38-ee6a-4a95-bda0-c60dadc32d81",
+      "content_id": "98b94d76-1b30-4d2f-8bb4-e59ab1bfb965",
+      "claim_id": "C8",
+      "claim": "3493 PCR-confirmed influenza cases were identified through seasonal studies from the 2007\u20132008 to 2017\u20132018 seasons in MESA.",
+      "claim_type": "EXPLICIT",
+      "source": "To measure the effect of early exposures on medically attended infection risk and VE, we fitted statistical models to 3493 PCR-confirmed influenza cases identified through seasonal studies of influenza VE from the 2007\u20132008 to 2017\u20132018 seasons in the Marshfield Epidemiologic Study Area (MESA) in Marshfield, Wisconsin (Belongia et al., 2009; Belongia et al., 2011; Griffin et al., 2011; Treanor et al., 2012; Ohmit et al., 2016; McLean et al., 2014; Gaglani et al., 2016; Zimmerman et al., 2016; Jackson et al., 2017; Flannery et al., 2018, Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated in the manuscript with supporting citations",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:19:41.700762Z"
+    },
+    {
+      "id": "5ea6ad8d-101d-450b-aff2-1a5c37bad736",
+      "content_id": "98b94d76-1b30-4d2f-8bb4-e59ab1bfb965",
+      "claim_id": "C9",
+      "claim": "MESA is a contiguous geographic area surrounding Marshfield, Wisconsin, where nearly all 61,000 residents receive outpatient and inpatient care from the Marshfield Clinic Health System.",
+      "claim_type": "EXPLICIT",
+      "source": "MESA is a contiguous geographic area surrounding Marshfield, Wisconsin, where nearly all 61,000 residents receive outpatient and inpatient care from the Marshfield Clinic Health System (Kieke et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Kieke et al., 2015",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:19:41.700762Z"
+    },
+    {
+      "id": "c09f3b8c-c7cb-4bd0-b94c-1a51cb82059f",
+      "content_id": "98b94d76-1b30-4d2f-8bb4-e59ab1bfb965",
+      "claim_id": "C10",
+      "claim": "The relative burden of cases is consistently higher in people \u226565 years old during H3N2-dominated seasons compared to H1N1-dominated seasons.",
+      "claim_type": "EXPLICIT",
+      "source": "The relative burden of cases is consistently higher in people \u226565 years old during H3N2-dominated seasons compared to H1N1-dominated seasons (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data shown in Figure 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:19:41.700762Z"
+    },
+    {
+      "id": "76386741-be57-4460-80ed-077ac2f26877",
+      "content_id": "98b94d76-1b30-4d2f-8bb4-e59ab1bfb965",
+      "claim_id": "C11",
+      "claim": "The age distribution tends to vary more between subtypes than within either over time.",
+      "claim_type": "EXPLICIT",
+      "source": "The age distribution tends to vary more between subtypes than within either over time (Figure 2\u2014figure supplement 1, off-diagonal quadrants).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data shown in Figure 2\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:19:41.700762Z"
+    },
+    {
+      "id": "e2162c23-c35d-4cb5-9b2d-ca8520143608",
+      "content_id": "98b94d76-1b30-4d2f-8bb4-e59ab1bfb965",
+      "claim_id": "C12",
+      "claim": "An age group's relative risk correlates with the fraction of cases within that age group in the same season (Pearson's r = 0.58, 95% CI 0.38\u20130.73).",
+      "claim_type": "EXPLICIT",
+      "source": "We confirmed that an age group's relative risk correlates with the fraction of cases within that age group in the same season (Pearson's r = 0.58, 95% CI 0.38\u20130.73; Figure 2\u2014figure supplement 2A; Appendix 1: 'Correlation of relative risk and fraction of cases').",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by statistical analysis and data shown in Figure 2\u2014figure supplement 2A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:19:41.700762Z"
+    },
+    {
+      "id": "10ba4e7d-d084-40f5-81aa-a8c3f0365463",
+      "content_id": "98b94d76-1b30-4d2f-8bb4-e59ab1bfb965",
+      "claim_id": "C13",
+      "claim": "The risk of medically attended influenza A infection is roughly threefold higher among children <4 years old compared to adults 20\u201329 years old.",
+      "claim_type": "EXPLICIT",
+      "source": "This risk is roughly threefold higher among children <4 years old compared to adults 20\u201329 years old, after adjusting for other effects (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by model estimates shown in Figure 4",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:19:41.700762Z"
+    },
+    {
+      "id": "398fa800-57f6-476f-8eef-5b562d25ec64",
+      "content_id": "98b94d76-1b30-4d2f-8bb4-e59ab1bfb965",
+      "claim_id": "C14",
+      "claim": "The risk of future medically attended infection by H1N1 is reduced by 66% (95% CI 53\u201377%) in people imprinted to H1N1.",
+      "claim_type": "EXPLICIT",
+      "source": "The risk of future medically attended infection by H1N1 is reduced by 66% (95% CI 53\u201377%) in people imprinted to H1N1, whereas the risk of future medically attended infection by H3N2 is reduced by 33% (95% CI 17\u201346%) in people imprinted to H3N2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by model estimates with confidence intervals",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:19:41.700762Z"
+    },
+    {
+      "id": "d3332add-c786-45a2-8aab-06f2cc09668f",
+      "content_id": "98b94d76-1b30-4d2f-8bb4-e59ab1bfb965",
+      "claim_id": "C15",
+      "claim": "The risk of future medically attended infection by H3N2 is reduced by 33% (95% CI 17\u201346%) in people imprinted to H3N2.",
+      "claim_type": "EXPLICIT",
+      "source": "The risk of future medically attended infection by H1N1 is reduced by 66% (95% CI 53\u201377%) in people imprinted to H1N1, whereas the risk of future medically attended infection by H3N2 is reduced by 33% (95% CI 17\u201346%) in people imprinted to H3N2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by model estimates with confidence intervals",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:19:41.700762Z"
+    },
+    {
+      "id": "84b03fa0-ecdc-42d1-872b-6ed343185cd8",
+      "content_id": "98b94d76-1b30-4d2f-8bb4-e59ab1bfb965",
+      "claim_id": "C16",
+      "claim": "There is no evidence of a protective effect from imprinting to N2 (0%, 95% CI 0\u20137%).",
+      "claim_type": "EXPLICIT",
+      "source": "We found no evidence of a protective effect from imprinting to N2 (0%, 95% CI 0\u20137%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by model estimates with confidence intervals",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:19:41.700762Z"
+    },
+    {
+      "id": "7bbed68b-a2c1-47c0-a803-299df315d100",
+      "content_id": "98b94d76-1b30-4d2f-8bb4-e59ab1bfb965",
+      "claim_id": "C17",
+      "claim": "The best-fitting model includes age-specific risk of medically attended influenza A infection, HA subtype imprinting, and age-specific VE.",
+      "claim_type": "EXPLICIT",
+      "source": "Our best-fitting model supports subtype-specific imprinting for H1N1 and H3N2 (Figure 5, top row; Appendix 2\u2014table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by model comparison results shown in Figure 4\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:19:41.700762Z"
+    },
+    {
+      "id": "17fdafad-2fde-457f-924f-8f3db4d560e4",
+      "content_id": "98b94d76-1b30-4d2f-8bb4-e59ab1bfb965",
+      "claim_id": "C18",
+      "claim": "The model with subtype-specific imprinting and age-specific VE provides the best predictive power in leave-one-out cross-validation analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "This model also provides the best predictive power compared to other models in a leave-one-out cross-validation analysis (Figure 5\u2014figure supplement 1; Figure 5\u2014figure supplement 2; Appendix 1: 'Evaluation of predictive power').",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by cross-validation results shown in Figure 5\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:19:41.700762Z"
+    },
+    {
+      "id": "4c9da39d-8e50-4647-a337-5b9069bbb1ed",
+      "content_id": "98b94d76-1b30-4d2f-8bb4-e59ab1bfb965",
+      "claim_id": "C19",
+      "claim": "The model underestimates aggregate H1N1 cases in unvaccinated 5\u20139 year-olds, largely driven by infection during the 2009 H1N1 pandemic.",
+      "claim_type": "EXPLICIT",
+      "source": "The only exception is that it underestimates aggregate H1N1 cases in unvaccinated 5\u20139 year-olds. By examining the differences between predicted and observed cases for each season, we see that this is largely driven by infection during the 2009 H1N1 pandemic (Figure 7B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by model predictions compared to observed data shown in Figure 7B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:19:41.700762Z"
+    },
+    {
+      "id": "990dd356-27ea-4d95-aa9e-1016284d35f2",
+      "content_id": "98b94d76-1b30-4d2f-8bb4-e59ab1bfb965",
+      "claim_id": "C20",
+      "claim": "The model underestimates cases in unvaccinated individuals who were 30\u201339 years old and over 50 years old in the 2013\u20132014 season.",
+      "claim_type": "EXPLICIT",
+      "source": "The model underestimates cases in unvaccinated individuals who were 30\u201339 years old and over 50 years old in the 2013\u20132014 season (Figure 7B), as indicated by the many excess cases in these age groups in that season.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by model predictions compared to observed data shown in Figure 7B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:19:41.700762Z"
+    },
+    {
+      "id": "5a685f79-7df2-4ee5-b7fc-d1bc5d25fab7",
+      "content_id": "98b94d76-1b30-4d2f-8bb4-e59ab1bfb965",
+      "claim_id": "C21",
+      "claim": "Primary infection appears to reduce the risk of medically attended infection with that subtype throughout life.",
+      "claim_type": "EXPLICIT",
+      "source": "Fitting a statistical model to data from studies of influenza vaccine effectiveness (VE), we find that primary infection appears to reduce the risk of medically attended infection with that subtype throughout life.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by model results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:19:41.700762Z"
+    },
+    {
+      "id": "ac3b7a01-a969-46c9-ac77-0f67f28ac948",
+      "content_id": "98b94d76-1b30-4d2f-8bb4-e59ab1bfb965",
+      "claim_id": "C22",
+      "claim": "The protective effect of primary infection is stronger for H1N1 compared to H3N2.",
+      "claim_type": "EXPLICIT",
+      "source": "This effect is stronger for H1N1 compared to H3N2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by model results showing 66% protection for H1N1 vs 33% for H3N2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:19:41.700762Z"
+    },
+    {
+      "id": "812ac5e3-978e-4b99-94ae-bdcc40bf3290",
+      "content_id": "98b94d76-1b30-4d2f-8bb4-e59ab1bfb965",
+      "claim_id": "C23",
+      "claim": "VE varies with both age and birth year.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, we find evidence that VE varies with both age and birth year, suggesting that VE is sensitive to early exposures.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by model comparison results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:19:41.700762Z"
+    },
+    {
+      "id": "f868628b-d5d7-45af-8a57-a0e7b21c3586",
+      "content_id": "98b94d76-1b30-4d2f-8bb4-e59ab1bfb965",
+      "claim_id": "C24",
+      "claim": "VE is sensitive to early exposures.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, we find evidence that VE varies with both age and birth year, suggesting that VE is sensitive to early exposures.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the finding that VE varies with birth year",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:19:41.700762Z"
+    },
+    {
+      "id": "b831fa87-9a6e-49c2-9d05-73bd7bdd6d3e",
+      "content_id": "98b94d76-1b30-4d2f-8bb4-e59ab1bfb965",
+      "claim_id": "C26",
+      "claim": "Most people enrolled in the study received the standard-dose inactivated influenza vaccine (IIV-SD).",
+      "claim_type": "EXPLICIT",
+      "source": "Most people enrolled in the study received the standard-dose inactivated influenza vaccine (IIV-SD) (Figure 1\u2014figure supplement 7).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data shown in Figure 1\u2014figure supplement 7",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:19:41.700762Z"
+    },
+    {
+      "id": "7a7f69cf-ac1f-43c8-8fdf-c17f4572337d",
+      "content_id": "98b94d76-1b30-4d2f-8bb4-e59ab1bfb965",
+      "claim_id": "C27",
+      "claim": "Between 9\u201326% of vaccinated children <18 years old received the live attenuated influenza vaccine (LAIV) between the 2008\u20132009 and 2015\u20132016 seasons.",
+      "claim_type": "EXPLICIT",
+      "source": "However, between 9\u201326% of vaccinated children <18 years old received the live attenuated influenza vaccine (LAIV) between the 2008\u20132009 and 2015\u20132016 seasons (Figure 1\u2014figure supplement 7B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data shown in Figure 1\u2014figure supplement 7B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:19:41.700762Z"
+    },
+    {
+      "id": "4f34510a-4ca3-450c-b1a6-3a1c97b077f8",
+      "content_id": "98b94d76-1b30-4d2f-8bb4-e59ab1bfb965",
+      "claim_id": "C28",
+      "claim": "1\u201315% of adults \u226565 years old received the high-dose inactivated influenza vaccine (IIV-HD) between 2009\u20132010 and 2017\u20132018.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, 1\u201315% of adults \u226565 years old received the high-dose inactivated influenza vaccine (IIV-HD) between 2009\u20132010 and 2017\u20132018 (Figure 1\u2014figure supplement 7C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data shown in Figure 1\u2014figure supplement 7C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:19:41.700762Z"
+    },
+    {
+      "id": "b1b0dec2-d7b3-49ee-b1a0-0b6d96587157",
+      "content_id": "98b94d76-1b30-4d2f-8bb4-e59ab1bfb965",
+      "claim_id": "C29",
+      "claim": "The high-dose inactivated influenza vaccine is 20% more effective than standard-dose IIV.",
+      "claim_type": "EXPLICIT",
+      "source": "This vaccine is 20% more effective than IIV-SD (Lee et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Lee et al., 2018",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:19:41.700762Z"
+    },
+    {
+      "id": "e874f0b6-bdf4-462b-a94e-0f6a78ada15e",
+      "content_id": "98b94d76-1b30-4d2f-8bb4-e59ab1bfb965",
+      "claim_id": "C30",
+      "claim": "45% of the study population is vaccinated.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, since 45% of the study population is vaccinated, and most participants are frequent vaccinees (Figure 1\u2014figure supplement 6), we are limited in our ability to generalize the VE results to populations with much lower vaccination coverage and/or a shorter history of vaccination.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated in the manuscript",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:19:41.700762Z"
+    },
+    {
+      "id": "1e54be23-1552-4e66-ab2b-9963a46a6f63",
+      "content_id": "98b94d76-1b30-4d2f-8bb4-e59ab1bfb965",
+      "claim_id": "C31",
+      "claim": "Most participants are frequent vaccinees.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, since 45% of the study population is vaccinated, and most participants are frequent vaccinees (Figure 1\u2014figure supplement 6), we are limited in our ability to generalize the VE results to populations with much lower vaccination coverage and/or a shorter history of vaccination.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data shown in Figure 1\u2014figure supplement 6",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:19:41.700762Z"
+    },
+    {
+      "id": "21851573-59bf-4f8d-afef-c9411ab014a7",
+      "content_id": "98b94d76-1b30-4d2f-8bb4-e59ab1bfb965",
+      "claim_id": "C32",
+      "claim": "Frequent vaccination has been associated with reduced VE.",
+      "claim_type": "EXPLICIT",
+      "source": "Frequent vaccination has been associated with reduced VE (McLean et al., 2014; Saito et al., 2018; Skowronski et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to multiple studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:19:41.700762Z"
+    },
+    {
+      "id": "b2f3623b-5127-4ccc-b114-72653f8e092a",
+      "content_id": "98b94d76-1b30-4d2f-8bb4-e59ab1bfb965",
+      "claim_id": "C33",
+      "claim": "The stronger protective effect observed from primary H1N1 infection compared to primary H3N2 infection may be caused by stronger cross-protective responses to conserved epitopes in the more slowly evolving H1N1.",
+      "claim_type": "EXPLICIT",
+      "source": "The stronger protective effect observed from primary H1N1 infection compared to primary H3N2 infection may be caused by stronger cross-protective responses to conserved epitopes in the more slowly evolving H1N1 (Bedford et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative explanation with supporting citation",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:19:41.700762Z"
+    },
+    {
+      "id": "c233517d-0fa4-426a-a3de-3a709c935de3",
+      "content_id": "98b94d76-1b30-4d2f-8bb4-e59ab1bfb965",
+      "claim_id": "C34",
+      "claim": "Protection conferred by H1N1 infection lasts longer than protection conferred by H3N2 infection.",
+      "claim_type": "EXPLICIT",
+      "source": "This is in line with previous work showing that protection conferred by H1N1 infection lasts longer than protection conferred by H3N2 infection (Ranjeva et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Ranjeva et al., 2019",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:19:41.700762Z"
+    },
+    {
+      "id": "db41579d-b95b-47aa-8f5d-05b38465bb03",
+      "content_id": "98b94d76-1b30-4d2f-8bb4-e59ab1bfb965",
+      "claim_id": "C35",
+      "claim": "Another recent study found stronger imprinting protection from primary H1N1 compared to primary H3N2 infection.",
+      "claim_type": "EXPLICIT",
+      "source": "Another recent study found stronger imprinting protection from primary H1N1 compared to primary H3N2 infection (Gostic et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Gostic et al., 2019",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:19:41.700762Z"
+    },
+    {
+      "id": "99c3b173-6d0c-48e1-b863-870756a689e0",
+      "content_id": "98b94d76-1b30-4d2f-8bb4-e59ab1bfb965",
+      "claim_id": "C36",
+      "claim": "Examining cases of seasonal influenza over a 20 year period in Arizona, Gostic et al., 2019 find evidence of imprinting protection from both HA and NA.",
+      "claim_type": "EXPLICIT",
+      "source": "Examining cases of seasonal influenza over a 20 year period in Arizona, Gostic et al., 2019 find evidence of imprinting protection not only from HA but also NA, which we do not.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Gostic et al., 2019",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:19:41.700762Z"
+    },
+    {
+      "id": "fbc055bf-995c-45e7-9a47-370941f6391a",
+      "content_id": "98b94d76-1b30-4d2f-8bb4-e59ab1bfb965",
+      "claim_id": "C37",
+      "claim": "Vaccination coverage in U.S. adults increased most rapidly in the 30-39 and over 50 age groups during the period of the Arizona study (1993\u20131994 through 2014\u20132015).",
+      "claim_type": "EXPLICIT",
+      "source": "During the period of the Arizona study (1993\u20131994 through 2014\u20132015), vaccination coverage in U.S. adults increased most rapidly in this age group (NHIS, 2009), which corresponds to the H2N2-imprinted cohorts near the end of the study.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to NHIS, 2009",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:19:41.700762Z"
+    },
+    {
+      "id": "d61956ae-7bcb-4aba-aa6f-907c7725dba4",
+      "content_id": "98b94d76-1b30-4d2f-8bb4-e59ab1bfb965",
+      "claim_id": "C38",
+      "claim": "The model with birth-cohort-specific VE better estimates cases in vaccinated 50\u201364 year-olds (born 1953\u20131967) in the 2015\u20132016 season than the model with age-specific VE.",
+      "claim_type": "EXPLICIT",
+      "source": "The model with birth-cohort-specific VE better estimates cases in vaccinated 50\u201364 year-olds (born 1953\u20131967) in the 2015\u20132016 season than the model with age-specific VE, as indicated by the fewer excess cases predicted in that age group and an improved fit of 1.1 log-likelihood units (Figure 6\u2014figure supplement 2; Appendix 1: 'Calculating excess cases').",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by model comparison results shown in Figure 6\u2014figure supplement 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:19:41.700762Z"
+    },
+    {
+      "id": "13766e2b-0af8-44ea-949d-e5e014ca8957",
+      "content_id": "98b94d76-1b30-4d2f-8bb4-e59ab1bfb965",
+      "claim_id": "C39",
+      "claim": "Reduced VE in 50-64 year-olds during the 2015\u20132016 season has been attributed to the exacerbation of antigenic mismatch by the vaccine in adults whose antibody responses were focused on a non-protective site.",
+      "claim_type": "EXPLICIT",
+      "source": "Reduced VE in this group during the 2015\u20132016 season has been attributed to the exacerbation of antigenic mismatch by the vaccine in adults whose antibody responses were focused on a non-protective site (Skowronski et al., 2017b; Flannery et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Skowronski et al., 2017b and Flannery et al., 2018",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:19:41.700762Z"
+    },
+    {
+      "id": "e4b5b951-82ce-47b1-8d65-bee4994ab7ef",
+      "content_id": "98b94d76-1b30-4d2f-8bb4-e59ab1bfb965",
+      "claim_id": "C40",
+      "claim": "LAIV and IIV-SD recipients who were repeat vaccinees had similar VE.",
+      "claim_type": "EXPLICIT",
+      "source": "A separate study of LAIV VE in the United States found that LAIV and IIV-SD recipients who were repeat vaccinees (as most children were) had similar VE, and thus we do not expect that LAIV receipt should affect VE estimates (McLean et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to McLean et al., 2018",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:19:41.700762Z"
+    },
+    {
+      "id": "1861891d-2e10-41dd-8d20-5d07728348cf",
+      "content_id": "98b94d76-1b30-4d2f-8bb4-e59ab1bfb965",
+      "claim_id": "C41",
+      "claim": "Selection and misclassification biases can arise when using influenza test-negative controls to control for differences in healthcare-seeking behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "Selection and misclassification biases can arise when using influenza test-negative controls to control for differences in healthcare-seeking behavior (Lewnard et al., 2018; Sullivan et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Lewnard et al., 2018 and Sullivan et al., 2016",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:19:41.700762Z"
+    },
+    {
+      "id": "9fb54fd4-86f2-47fd-97a2-1653db394509",
+      "content_id": "98b94d76-1b30-4d2f-8bb4-e59ab1bfb965",
+      "claim_id": "C42",
+      "claim": "Sera isolated from different individuals can select for distinct escape mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent research consistent with this hypothesis has shown that sera isolated from different individuals can select for distinct escape mutants (Lee et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Lee et al., 2019",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:19:41.700762Z"
+    },
+    {
+      "id": "de6bd7b0-2a84-46ab-84e3-dab221cd4760",
+      "content_id": "98b94d76-1b30-4d2f-8bb4-e59ab1bfb965",
+      "claim_id": "C43",
+      "claim": "Eligibility for the study was restricted to individuals >6 months of age living in MESA who received routine care from the Marshfield Clinic and who presented in an outpatient setting.",
+      "claim_type": "EXPLICIT",
+      "source": "Eligibility was restricted to individuals >6 months of age living in MESA who received routine care from the Marshfield Clinic and who presented in an outpatient setting.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated in the methods section",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:19:41.700762Z"
+    },
+    {
+      "id": "900aa10f-462a-4349-92d2-5a5afea71e9e",
+      "content_id": "98b94d76-1b30-4d2f-8bb4-e59ab1bfb965",
+      "claim_id": "C44",
+      "claim": "Subjects were considered vaccinated if they received that season's influenza vaccine \u226514 days before enrollment.",
+      "claim_type": "EXPLICIT",
+      "source": "We considered subjects vaccinated if they received that season's influenza vaccine \u226514 days before enrollment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated in the methods section",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:19:41.700762Z"
+    },
+    {
+      "id": "013fe784-6727-4ca9-a5ef-e89edcde5e26",
+      "content_id": "98b94d76-1b30-4d2f-8bb4-e59ab1bfb965",
+      "claim_id": "C45",
+      "claim": "For the 2009\u20132010 season, only receipt of the 2009 monovalent vaccine was considered for vaccination status.",
+      "claim_type": "EXPLICIT",
+      "source": "For the 2009\u20132010 season, we only considered receipt of the 2009 monovalent vaccine.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated in the methods section",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:19:41.700762Z"
+    },
+    {
+      "id": "f40ae632-b0a7-427d-85c2-a59bfc40f01d",
+      "content_id": "98b94d76-1b30-4d2f-8bb4-e59ab1bfb965",
+      "claim_id": "C46",
+      "claim": "The Marshfield Clinic generally does not capture MAARI in nursing facilities with dedicated medical staff, causing undersampling of the oldest age groups.",
+      "claim_type": "EXPLICIT",
+      "source": "The Marshfield Clinic generally does not capture MAARI in nursing facilities with dedicated medical staff, causing undersampling of the oldest age groups.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated in the methods section",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:19:41.700762Z"
+    },
+    {
+      "id": "45d63712-5b8d-4bcb-8bd9-f15ee2a89c89",
+      "content_id": "98b94d76-1b30-4d2f-8bb4-e59ab1bfb965",
+      "claim_id": "C47",
+      "claim": "Each season, recruitment began when influenza activity was detected in the community and usually continued for 12\u201315 weeks.",
+      "claim_type": "EXPLICIT",
+      "source": "Each season, recruitment began when influenza activity was detected in the community and usually continued for 12\u201315 weeks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated in the methods section",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:19:41.700762Z"
+    },
+    {
+      "id": "dcedc3d6-b321-456e-9f32-6c773af36362",
+      "content_id": "98b94d76-1b30-4d2f-8bb4-e59ab1bfb965",
+      "claim_id": "C48",
+      "claim": "Individuals with illness duration >7 days or presenting in an inpatient (hospital) setting were excluded.",
+      "claim_type": "EXPLICIT",
+      "source": "Individuals with illness duration >7 days or presenting in an inpatient (hospital) setting were excluded.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated in the methods section",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:19:41.700762Z"
+    },
+    {
+      "id": "6c1491f4-1cdc-4afb-bae7-cc727cb1beb2",
+      "content_id": "98b94d76-1b30-4d2f-8bb4-e59ab1bfb965",
+      "claim_id": "C49",
+      "claim": "RT-PCR was performed using CDC primers and probes to identify influenza cases, including type and subtype.",
+      "claim_type": "EXPLICIT",
+      "source": "RT-PCR was performed using CDC primers and probes to identify influenza cases, including type and subtype.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated in the methods section",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:19:41.700762Z"
+    },
+    {
+      "id": "8358facb-5d0a-4df7-9e67-5d7bfa118caf",
+      "content_id": "98b94d76-1b30-4d2f-8bb4-e59ab1bfb965",
+      "claim_id": "C50",
+      "claim": "The subdominant subtype in each season was excluded due to concerns that short-term interference between the subtypes would affect the age distribution of the rarer subtype.",
+      "claim_type": "EXPLICIT",
+      "source": "We excluded the subdominant subtype in each season due to concerns that short-term interference between the subtypes (Laurie et al., 2015; Goldstein et al., 2011) would affect the age distribution of the rarer subtype.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Methodological decision supported by citations",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:19:41.700762Z"
+    },
+    {
+      "id": "8c5d89d6-690b-473b-888b-6a021e4c68a1",
+      "content_id": "98b94d76-1b30-4d2f-8bb4-e59ab1bfb965",
+      "claim_id": "C51",
+      "claim": "Attack rates should be higher in populations that experience more risk, and therefore these populations should be infected earlier in the epidemic.",
+      "claim_type": "EXPLICIT",
+      "source": "Attack rates should be higher in populations that experience more risk, and therefore these populations should be infected earlier in the epidemic (Worby et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Worby et al., 2015",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:19:41.700762Z"
+    },
+    {
+      "id": "f059bfb5-f72f-411a-9f1e-ea888bc65dce",
+      "content_id": "98b94d76-1b30-4d2f-8bb4-e59ab1bfb965",
+      "claim_id": "C52",
+      "claim": "Most children experience primary influenza A infection by 5 years of age.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on an estimated 7 year half-life of homologous protection after H1N1pdm infection in children (Ranjeva et al., 2019) and the fact that most children experience primary influenza A infection by 5 years of age (Bodewes et al., 2011)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Bodewes et al., 2011",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:19:41.700762Z"
+    },
+    {
+      "id": "93123c27-5ae7-4224-bc99-971a710676f5",
+      "content_id": "98b94d76-1b30-4d2f-8bb4-e59ab1bfb965",
+      "claim_id": "C53",
+      "claim": "The estimated half-life of homologous protection after H1N1pdm infection in children is 7 years.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on an estimated 7 year half-life of homologous protection after H1N1pdm infection in children (Ranjeva et al., 2019)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Ranjeva et al., 2019",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:19:41.700762Z"
+    },
+    {
+      "id": "959c9276-82a8-49fa-ba48-f8d7019d6806",
+      "content_id": "98b94d76-1b30-4d2f-8bb4-e59ab1bfb965",
+      "claim_id": "C54",
+      "claim": "People born before 1947 were likely exposed to H1N1 strains that are antigenically similar to the post-pandemic H1N1 strains.",
+      "claim_type": "EXPLICIT",
+      "source": "People born before 1947 were likely exposed to H1N1 strains that are antigenically similar to the post-pandemic H1N1 strains that comprise most of our H1N1 infection data (Manicassamy et al., 2010; O'Donnell et al., 2012)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Manicassamy et al., 2010 and O'Donnell et al., 2012",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:19:41.700762Z"
+    },
+    {
+      "id": "5693f71b-60de-4de4-a8e5-b3078edb7f15",
+      "content_id": "98b94d76-1b30-4d2f-8bb4-e59ab1bfb965",
+      "claim_id": "C55",
+      "claim": "Serological responses to influenza vaccination are weakest in the young and old.",
+      "claim_type": "EXPLICIT",
+      "source": "While serological responses to influenza vaccination are weakest in the young (Englund et al., 2005; Neuzil et al., 2006) and old (Lee et al., 2018; DiazGranados et al., 2014)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to multiple studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:19:41.700762Z"
+    },
+    {
+      "id": "a8a1aaee-1bec-46e5-ad31-7c6935ee09a8",
+      "content_id": "98b94d76-1b30-4d2f-8bb4-e59ab1bfb965",
+      "claim_id": "C56",
+      "claim": "Biases in immune memory can arise from both past infections and vaccinations and lead to variation in VE that is sensitive to the precise history of exposures.",
+      "claim_type": "EXPLICIT",
+      "source": "More generally, it has been hypothesized that biases in immune memory can arise from both past infections and vaccinations and lead to variation in VE that is sensitive to the precise history of exposures (Smith et al., 1999; Skowronski et al., 2017a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Smith et al., 1999 and Skowronski et al., 2017a",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:19:41.700762Z"
+    },
+    {
+      "id": "382dbd78-e2b9-4aa8-8f91-83ec23069313",
+      "content_id": "98b94d76-1b30-4d2f-8bb4-e59ab1bfb965",
+      "claim_id": "C57",
+      "claim": "Excess mortality and hospitalization were observed among cohorts first exposed to H2N2 or H3N2 during H1N1pdm-dominated seasons in the post-2009 pandemic period.",
+      "claim_type": "EXPLICIT",
+      "source": "In the post-2009 pandemic period, excess mortality and hospitalization were observed among cohorts first exposed to H2N2 or H3N2 during H1N1pdm-dominated seasons (Budd et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Budd et al., 2019",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:19:41.700762Z"
+    },
+    {
+      "id": "55a4b4cf-03ff-426d-ace6-a10b4086ec64",
+      "content_id": "98b94d76-1b30-4d2f-8bb4-e59ab1bfb965",
+      "claim_id": "C58",
+      "claim": "The ratios of H3N2 to H1N1 cases differ between age groups.",
+      "claim_type": "EXPLICIT",
+      "source": "This is consistent with recent work showing that the ratios of H3N2 to H1N1 cases differ between age groups (Gagnon et al., 2018b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Gagnon et al., 2018b",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:19:41.700762Z"
+    },
+    {
+      "id": "959a765f-1d25-4f8c-8d2b-4cad458644a0",
+      "content_id": "98b94d76-1b30-4d2f-8bb4-e59ab1bfb965",
+      "claim_id": "C59",
+      "claim": "The seven H3N2-dominated seasons display three types of age distributions.",
+      "claim_type": "EXPLICIT",
+      "source": "The seven H3N2-dominated seasons display three types of age distributions (Figure 2\u2014figure supplement 1, clusters of lighter-colored cells in the upper left-hand quadrant)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data shown in Figure 2\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:19:41.700762Z"
+    },
+    {
+      "id": "fdaff2a9-adfb-4289-af33-a17bf052c5a3",
+      "content_id": "98b94d76-1b30-4d2f-8bb4-e59ab1bfb965",
+      "claim_id": "C60",
+      "claim": "Two of the three types of age distributions in H3N2-dominated seasons correspond to major antigenic clusters.",
+      "claim_type": "EXPLICIT",
+      "source": "and two correspond to major antigenic clusters (2007\u20132008, Fonville et al., 2016; 2010\u20132012, Ann et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Fonville et al., 2016 and Ann et al., 2012",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:19:41.700762Z"
+    },
+    {
+      "id": "0646946b-4aa5-4039-8ee2-67a2eb56e1da",
+      "content_id": "98b94d76-1b30-4d2f-8bb4-e59ab1bfb965",
+      "claim_id": "C61",
+      "claim": "The highest fraction of H3N2 cases occurs in 20\u201329 year olds in the 2007\u20132008 season.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, the highest fraction of H3N2 cases occurs in 20\u201329 year olds in the 2007\u20132008 season, but this age group has the lowest fraction of cases in the next H3N2-dominated season (2010\u20132011, Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data shown in Figure 2C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:19:41.700762Z"
+    },
+    {
+      "id": "25e3d145-bcea-4a1c-8f87-1644bb5f6f26",
+      "content_id": "98b94d76-1b30-4d2f-8bb4-e59ab1bfb965",
+      "claim_id": "C62",
+      "claim": "The 20-29 year old age group has the lowest fraction of H3N2 cases in the 2010-2011 season.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, the highest fraction of H3N2 cases occurs in 20\u201329 year olds in the 2007\u20132008 season, but this age group has the lowest fraction of cases in the next H3N2-dominated season (2010\u20132011, Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data shown in Figure 2C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:19:41.700762Z"
+    },
+    {
+      "id": "6e9de0a3-d98d-445e-bda1-bda2fbee337c",
+      "content_id": "98b94d76-1b30-4d2f-8bb4-e59ab1bfb965",
+      "claim_id": "C63",
+      "claim": "The shift from seasonal to pandemic H1N1 strains is associated with large changes in the age distribution.",
+      "claim_type": "EXPLICIT",
+      "source": "In H1N1, the shift from seasonal to pandemic strains is associated with large changes in the age distribution (Figure 2\u2014figure supplement 1, lower right-hand quadrant).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data shown in Figure 2\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:19:41.700762Z"
+    },
+    {
+      "id": "fec82ca2-cdd0-4d46-b823-3493142b553e",
+      "content_id": "98b94d76-1b30-4d2f-8bb4-e59ab1bfb965",
+      "claim_id": "C64",
+      "claim": "5\u201317 year olds had the highest relative risk of early infection in the 2008\u20132009 season.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, 5\u201317 year olds had the highest relative risk of early infection in the 2008\u20132009 season, whereas 50\u201364 year-olds had the highest relative risk in the 2013\u20132014 season (Figure 2\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data shown in Figure 2\u2014figure supplement 3",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:19:41.700762Z"
+    },
+    {
+      "id": "21580e9f-997a-4f6e-b5c0-71744b47ea14",
+      "content_id": "98b94d76-1b30-4d2f-8bb4-e59ab1bfb965",
+      "claim_id": "C65",
+      "claim": "50\u201364 year-olds had the highest relative risk of early infection in the 2013\u20132014 season.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, 5\u201317 year olds had the highest relative risk of early infection in the 2008\u20132009 season, whereas 50\u201364 year-olds had the highest relative risk in the 2013\u20132014 season (Figure 2\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data shown in Figure 2\u2014figure supplement 3",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:19:41.700762Z"
+    },
+    {
+      "id": "5524bf9c-18ce-47a1-bd64-5667f029b06c",
+      "content_id": "98b94d76-1b30-4d2f-8bb4-e59ab1bfb965",
+      "claim_id": "C66",
+      "claim": "National estimates show that 5\u201317 year-olds had the highest relative risk in all but one season from the 2009 pandemic to 2013\u20132014.",
+      "claim_type": "EXPLICIT",
+      "source": "Relative risks in MESA vary more than national estimates, which show that 5\u201317 year-olds had the highest relative risk in all but one season from the 2009 pandemic to 2013\u20132014 (Worby et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Worby et al., 2015",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:19:41.700762Z"
+    },
+    {
+      "id": "7e62a0da-17d6-432f-b80a-77c20834017a",
+      "content_id": "98b94d76-1b30-4d2f-8bb4-e59ab1bfb965",
+      "claim_id": "C67",
+      "claim": "The decline in risk of medically attended influenza A infection through middle age is generally consistent with attack rates estimated from serology.",
+      "claim_type": "EXPLICIT",
+      "source": "The decline in risk through middle age is generally consistent with attack rates estimated from serology (Monto et al., 1985; Bodewes et al., 2011; Wu et al., 2010; Huang et al., 2019) and clinical infections (Wu et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to multiple studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:19:41.700762Z"
+    },
+    {
+      "id": "be5ba6e3-1c8e-40d3-be60-2e14623bcc4c",
+      "content_id": "98b94d76-1b30-4d2f-8bb4-e59ab1bfb965",
+      "claim_id": "C68",
+      "claim": "Smaller differences in the attack rates of school-aged children and their parents were observed when estimating infections serologically.",
+      "claim_type": "EXPLICIT",
+      "source": "We recently observed smaller differences in the attack rates of school-aged children and their parents when estimating infections serologically (Ranjeva et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Ranjeva et al., 2019",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:19:41.700762Z"
+    },
+    {
+      "id": "0ebe9754-9115-4436-a7cc-248795f4e5c8",
+      "content_id": "98b94d76-1b30-4d2f-8bb4-e59ab1bfb965",
+      "claim_id": "C69",
+      "claim": "Rates of healthcare-seeking behavior decline with age before rising in adults \u226565 years old.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, rates of healthcare-seeking behavior have been shown to decline with age before rising in adults \u226565 years old (Biggerstaff et al., 2014; Brooks-Pollock et al., 2011; Van Cauteren et al., 2012), consistent with our results.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to multiple studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:19:41.700762Z"
+    },
+    {
+      "id": "db638567-23b1-416a-a2b0-3a5cf7cbabfb",
+      "content_id": "98b94d76-1b30-4d2f-8bb4-e59ab1bfb965",
+      "claim_id": "C70",
+      "claim": "The increased risk of medically attended influenza A infection among people \u226565 years old compared to other adults may be related to the increasing prevalence of high-risk medical conditions with age.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, the increased risk of medically attended influenza A infection among people \u226565 years old compared to other adults may be related to the increasing prevalence of high-risk medical conditions with age (Figure 1\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Speculative explanation supported by data shown in Figure 1\u2014figure supplement 4",
+      "evidence_type": "[\"SPECULATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:19:41.700762Z"
+    },
+    {
+      "id": "6ef8943e-bd8f-491c-a7fb-931eb010cce0",
+      "content_id": "98b94d76-1b30-4d2f-8bb4-e59ab1bfb965",
+      "claim_id": "C71",
+      "claim": "When excluding children <15 years old, estimates of H1N1 imprinting protection decreased while H3N2 imprinting protection increased.",
+      "claim_type": "EXPLICIT",
+      "source": "When we excluded the youngest age groups, our estimates of H1N1 imprinting protection decreased while H3N2 imprinting protection increased (Figure 5, second row).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by model results shown in Figure 5",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:19:41.700762Z"
+    },
+    {
+      "id": "2671047d-b15c-407c-8785-79dd9a0837d5",
+      "content_id": "98b94d76-1b30-4d2f-8bb4-e59ab1bfb965",
+      "claim_id": "C72",
+      "claim": "Initial infection by H1N1 was still more protective than initial infection by H3N2 after excluding children <15 years old.",
+      "claim_type": "EXPLICIT",
+      "source": "However, initial infection by H1N1 was still more protective than initial infection by H3N2, both imprinting effects remained positive, and there was no significant change in the values of other estimated parameters (Appendix 2\u2014table 1 and Appendix 2\u2014table 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by model results in Appendix 2 tables",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:19:41.700762Z"
+    },
+    {
+      "id": "f1a31c11-85c0-4495-a36b-07c8195302b0",
+      "content_id": "98b94d76-1b30-4d2f-8bb4-e59ab1bfb965",
+      "claim_id": "C73",
+      "claim": "Excess cases for each birth cohort are weakly positively correlated from season to season.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, we observed that excess cases for each birth cohort are weakly positively correlated from season to season, suggesting that immunity from recent infections is not a major driver of temporal variation in the age distribution of cases (Figure 5\u2014figure supplement 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data shown in Figure 5\u2014figure supplement 5",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:19:41.700762Z"
+    },
+    {
+      "id": "bbef2765-e90c-4de9-8576-29126eda1122",
+      "content_id": "98b94d76-1b30-4d2f-8bb4-e59ab1bfb965",
+      "claim_id": "C74",
+      "claim": "Excluding adults \u226565 years old does not significantly change estimated imprinting protection or other parameters.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, we excluded adults \u226565 years old and refitted our models. Excluding the oldest adults does not significantly change estimated imprinting protection or other parameters (Appendix 2\u2014table 1 and Appendix 2\u2014table 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by model results in Appendix 2 tables",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:19:41.700762Z"
+    },
+    {
+      "id": "cd6a59bf-9601-4009-bdaa-2d45a0565596",
+      "content_id": "98b94d76-1b30-4d2f-8bb4-e59ab1bfb965",
+      "claim_id": "C75",
+      "claim": "When excluding both the youngest and oldest age groups, initial infections by H1N1 and H3N2 have similar protective effects.",
+      "claim_type": "EXPLICIT",
+      "source": "When we exclude both the youngest and oldest age groups, initial infections by H1N1 and H3N2 have similar protective effects (Figure 5, bottom row).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by model results shown in Figure 5",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:19:41.700762Z"
+    },
+    {
+      "id": "b8b07caf-7fea-4ae9-8405-f2b95bf7593c",
+      "content_id": "98b94d76-1b30-4d2f-8bb4-e59ab1bfb965",
+      "claim_id": "C76",
+      "claim": "The combined effects of cross-protection in both the youngest and oldest individuals contribute to the signal of imprinting protection observed, but they are not its sole drivers.",
+      "claim_type": "EXPLICIT",
+      "source": "This shows that the combined effects of cross-protection in both the youngest and oldest individuals contribute to the signal of imprinting protection we observe, but they are not its sole drivers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from model results when excluding different age groups",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:19:41.700762Z"
+    },
+    {
+      "id": "aa21400c-bfa1-4b4f-86c9-036f19733cfc",
+      "content_id": "98b94d76-1b30-4d2f-8bb4-e59ab1bfb965",
+      "claim_id": "C77",
+      "claim": "Age-specific VE still outperforms all other models after excluding the oldest age group (\u226565 years old).",
+      "claim_type": "EXPLICIT",
+      "source": "We find that age-specific VE still outperforms all other models after we exclude the oldest age group (\u226565 years old).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by model comparison results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:19:41.700762Z"
+    },
+    {
+      "id": "c4b54308-d7c6-4221-af41-ba4d8004fd9c",
+      "content_id": "98b94d76-1b30-4d2f-8bb4-e59ab1bfb965",
+      "claim_id": "C78",
+      "claim": "Birth-cohort-specific VE performs better when excluding children <15 years old.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, birth-cohort-specific VE performs better when we exclude children <15 years old (Figure 6\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by model comparison results shown in Figure 6\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:19:41.700762Z"
+    },
+    {
+      "id": "814f9488-ce7b-416e-b7bc-13b84cd0e6b1",
+      "content_id": "98b94d76-1b30-4d2f-8bb4-e59ab1bfb965",
+      "claim_id": "C79",
+      "claim": "Birth-cohort-specific VE best explains the case distribution in older children and adults who have likely experienced their first influenza infection.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these results suggest that birth-cohort-specific VE best explains the case distribution in older children and adults, who have likely experienced their first influenza infection, whereas age-specific VE best explains cases in younger children, who have less influenza exposure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from model comparison results across different age groups",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:19:41.700762Z"
+    },
+    {
+      "id": "33303631-b29a-4de4-bfdb-a08605aedbc1",
+      "content_id": "98b94d76-1b30-4d2f-8bb4-e59ab1bfb965",
+      "claim_id": "C80",
+      "claim": "Age-specific VE best explains cases in younger children who have less influenza exposure.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these results suggest that birth-cohort-specific VE best explains the case distribution in older children and adults, who have likely experienced their first influenza infection, whereas age-specific VE best explains cases in younger children, who have less influenza exposure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from model comparison results across different age groups",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:19:41.700762Z"
+    },
+    {
+      "id": "8ace836e-5687-494a-a07f-904907848d93",
+      "content_id": "98b94d76-1b30-4d2f-8bb4-e59ab1bfb965",
+      "claim_id": "C81",
+      "claim": "VE differs between birth cohorts that have similar imprinting by subtype.",
+      "claim_type": "EXPLICIT",
+      "source": "VE differs between birth cohorts that have similar imprinting by subtype (Figure 6; Appendix 2\u2014table 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by model results shown in Figure 6",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:19:41.700762Z"
+    },
+    {
+      "id": "538acfad-a590-48af-87ec-0249da21e03f",
+      "content_id": "98b94d76-1b30-4d2f-8bb4-e59ab1bfb965",
+      "claim_id": "C82",
+      "claim": "The 1968\u20131977 and 1988\u20131997 cohorts have similar probabilities of primary exposure to H1N1 and H3N2, but they differ substantially in their VE to both subtypes.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the 1968\u20131977 and 1988\u20131997 cohorts have similar probabilities of primary exposure to H1N1 and H3N2, but they differ substantially in their VE to both subtypes (Figure 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by model results shown in Figure 6",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:19:41.700762Z"
+    },
+    {
+      "id": "9e447ef5-ae28-4ad6-b367-982e0bde0d82",
+      "content_id": "98b94d76-1b30-4d2f-8bb4-e59ab1bfb965",
+      "claim_id": "C83",
+      "claim": "The 1988\u20131997 and 1998\u20132002 cohorts have similar probabilities of primary exposure to each subtype and have similar H1N1 VEs, but have significantly different H3N2 VEs.",
+      "claim_type": "EXPLICIT",
+      "source": "The 1988\u20131997 and 1998\u20132002 cohorts also have similar probabilities of primary exposure to each subtype and have similar H1N1 VEs, but have significantly different H3N2 VEs (Figure 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by model results shown in Figure 6",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:19:41.700762Z"
+    },
+    {
+      "id": "5d132c77-648e-43fc-bc47-84c242097b33",
+      "content_id": "98b94d76-1b30-4d2f-8bb4-e59ab1bfb965",
+      "claim_id": "C84",
+      "claim": "Antigenic differences within each subtype might explain variation in VE between birth cohorts with similar imprinting probabilities.",
+      "claim_type": "EXPLICIT",
+      "source": "Antigenic differences within each subtype might explain this variation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative explanation for observed VE variation",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:19:41.700762Z"
+    },
+    {
+      "id": "9b9c70f5-ec26-48af-9b2e-18329dc8a249",
+      "content_id": "98b94d76-1b30-4d2f-8bb4-e59ab1bfb965",
+      "claim_id": "C85",
+      "claim": "A large antigenic change during the 2009 H1N1 pandemic may have negated any protection from previous infection in 5\u20139 year-olds.",
+      "claim_type": "EXPLICIT",
+      "source": "By examining the differences between predicted and observed cases for each season, we see that this is largely driven by infection during the 2009 H1N1 pandemic (Figure 7B). Such a large antigenic change may have negated any protection from previous infection in 5\u20139 year-olds and made them particularly susceptible to pandemic infection.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Speculative explanation supported by data shown in Figure 7B",
+      "evidence_type": "[\"SPECULATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:19:41.700762Z"
+    },
+    {
+      "id": "0b2d7f28-a2d1-4232-bf6d-0bcacec4dda0",
+      "content_id": "98b94d76-1b30-4d2f-8bb4-e59ab1bfb965",
+      "claim_id": "C86",
+      "claim": "The 2013-2014 season provided one of the first examples that original antigenic sin could affect protection.",
+      "claim_type": "EXPLICIT",
+      "source": "As mentioned before, this season provided one of the first examples that original antigenic sin could affect protection: middle-aged adults had been targeting a familiar site on the pandemic strain that then mutated, rendering them susceptible.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by previous literature on the 2013-2014 season",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:19:41.700762Z"
+    },
+    {
+      "id": "9b9ed248-32c0-4a27-8839-33b9a389acac",
+      "content_id": "98b94d76-1b30-4d2f-8bb4-e59ab1bfb965",
+      "claim_id": "C87",
+      "claim": "In the 2013-2014 season, middle-aged adults had been targeting a familiar site on the pandemic strain that then mutated, rendering them susceptible.",
+      "claim_type": "EXPLICIT",
+      "source": "As mentioned before, this season provided one of the first examples that original antigenic sin could affect protection: middle-aged adults had been targeting a familiar site on the pandemic strain that then mutated, rendering them susceptible. Other age groups were effectively blind to these changes, owing to their different exposure histories (Linderman et al., 2014; Huang et al., 2015; Arriola et al., 2014; D\u00e1vila et al., 2014; Petrie et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to multiple studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:19:41.700762Z"
+    },
+    {
+      "id": "7e9c03b1-ae5a-4210-b982-b7dab9814907",
+      "content_id": "98b94d76-1b30-4d2f-8bb4-e59ab1bfb965",
+      "claim_id": "C88",
+      "claim": "Other age groups were effectively blind to antigenic changes in the 2013-2014 season, owing to their different exposure histories.",
+      "claim_type": "EXPLICIT",
+      "source": "Other age groups were effectively blind to these changes, owing to their different exposure histories (Linderman et al., 2014; Huang et al., 2015; Arriola et al., 2014; D\u00e1vila et al., 2014; Petrie et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to multiple studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:19:41.700762Z"
+    },
+    {
+      "id": "62e52bad-0fc5-4ee8-a00c-4e8bde76db2b",
+      "content_id": "98b94d76-1b30-4d2f-8bb4-e59ab1bfb965",
+      "claim_id": "C89",
+      "claim": "Subtype-specific protection observed in seasonal influenza is narrower than the previously reported HA-group-level imprinting protection against avian influenza.",
+      "claim_type": "EXPLICIT",
+      "source": "Subtype-specific protection observed in seasonal influenza is narrower than the previously reported HA-group-level imprinting protection against avian influenza (Gostic et al., 2016), but in both cases, the protection correlates strongly with primary infection rather than any prior exposure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Comparison with previous findings supported by citation",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:19:41.700762Z"
+    },
+    {
+      "id": "ad6509e5-5d47-4ef1-91cb-9609375de075",
+      "content_id": "98b94d76-1b30-4d2f-8bb4-e59ab1bfb965",
+      "claim_id": "C90",
+      "claim": "In both seasonal and avian influenza, protection correlates strongly with primary infection rather than any prior exposure.",
+      "claim_type": "EXPLICIT",
+      "source": "Subtype-specific protection observed in seasonal influenza is narrower than the previously reported HA-group-level imprinting protection against avian influenza (Gostic et al., 2016), but in both cases, the protection correlates strongly with primary infection rather than any prior exposure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by current study results and previous findings",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:19:41.700762Z"
+    },
+    {
+      "id": "6de3f2ff-1f20-4971-9855-8075b04aa26e",
+      "content_id": "98b94d76-1b30-4d2f-8bb4-e59ab1bfb965",
+      "claim_id": "C91",
+      "claim": "Incorporating information on early exposure history into epidemic models may allow for more accurate identification of at-risk populations and fine-scale epidemic timing.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, incorporating information on early exposure history into epidemic models may allow for more accurate identification of at-risk populations and fine-scale epidemic timing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative suggestion based on study findings",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:19:41.700762Z"
+    },
+    {
+      "id": "5d72bbb7-1b5d-40fe-bdc0-a28dfd3d156a",
+      "content_id": "98b94d76-1b30-4d2f-8bb4-e59ab1bfb965",
+      "claim_id": "C92",
+      "claim": "Heterogeneity in susceptibility implies that influenza viruses face different selective pressures in groups with different exposure histories.",
+      "claim_type": "EXPLICIT",
+      "source": "Heterogeneity in susceptibility implies that influenza viruses face different selective pressures in groups with different exposure histories (Cobey and Koelle, 2008; Nakajima et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Cobey and Koelle, 2008 and Nakajima et al., 2000",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:19:41.700762Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "775074ee-0360-4fbd-ae8b-9276c1657f45",
+      "content_id": "98b94d76-1b30-4d2f-8bb4-e59ab1bfb965",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Seasonal influenza causes substantial morbidity and mortality in the United States, with approximately 100,000\u2013600,000 hospitalizations and 5,000\u201327,000 deaths annually despite vaccination campaigns.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1 and C2 are both supported by citation to Reed et al., 2015, providing established epidemiological context for the study. These are background claims from prior work that establish the public health significance of influenza.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:19:41.700762Z"
+    },
+    {
+      "id": "407d54b8-d2e2-4fa4-a7ca-416e21a97b1d",
+      "content_id": "98b94d76-1b30-4d2f-8bb4-e59ab1bfb965",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Prior work demonstrates that early influenza exposures have lasting impacts on susceptibility, with H1N1 and H3N2 showing different epidemiological patterns, and childhood infections influencing responses to both pandemic strains and vaccination.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3-C7 summarize established findings from prior literature with appropriate citations. These provide the scientific foundation and motivation for the current study's investigation of imprinting effects.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:19:41.700762Z"
+    },
+    {
+      "id": "fbdc4202-7cbb-425e-9691-570b22bfaa97",
+      "content_id": "98b94d76-1b30-4d2f-8bb4-e59ab1bfb965",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The study analyzed 3,493 PCR-confirmed influenza cases from the MESA cohort over 11 seasons (2007-2008 to 2017-2018), with specific eligibility criteria and methodological procedures for case identification.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8, C9, and C43-C49 describe the study cohort and methods with appropriate detail and citations. The sample size, geographic area, eligibility criteria, and testing procedures are clearly documented.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:19:41.700762Z"
+    },
+    {
+      "id": "21607789-6281-4d7c-875f-c7504e5341c0",
+      "content_id": "98b94d76-1b30-4d2f-8bb4-e59ab1bfb965",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The age distribution of influenza cases varies systematically between H1N1 and H3N2 subtypes and changes over time within subtypes, with H3N2 disproportionately affecting older adults and showing multiple distinct age distribution patterns corresponding to antigenic clusters.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10-C11 and C58-C63 are supported by data shown in Figure 2 and related supplements, with statistical testing (G-test) and citations to corroborating literature. The patterns are clearly documented and consistent with prior work.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:19:41.700762Z"
+    },
+    {
+      "id": "eee1d43b-55e8-4800-8c22-b3177351cbb7",
+      "content_id": "98b94d76-1b30-4d2f-8bb4-e59ab1bfb965",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Age groups' relative risk of early versus late infection within seasons correlates with their fraction of total cases (r=0.58, 95% CI 0.38-0.73), with the highest-risk age groups varying between seasons.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C12 provides statistical evidence with confidence intervals, and C64-C66 document specific seasonal patterns supported by Figure 2 supplements. The correlation analysis appropriately tests the hypothesis that case distribution reflects underlying risk differences.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:19:41.700762Z"
+    },
+    {
+      "id": "7a45fe01-d6a3-4698-b0b9-da4f223e563c",
+      "content_id": "98b94d76-1b30-4d2f-8bb4-e59ab1bfb965",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Age-specific risk of medically attended influenza A infection is approximately threefold higher in children <4 years compared to adults 20-29 years, with patterns generally consistent with prior serological and clinical studies, though healthcare-seeking behavior likely contributes to observed age patterns.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C13 is supported by model estimates in Figure 4, and C67-C70 appropriately contextualize findings with citations to prior work and acknowledge the contribution of healthcare-seeking behavior. The interpretation is appropriately cautious.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:19:41.700762Z"
+    },
+    {
+      "id": "828f25c7-9f22-41a8-984a-181eae933b86",
+      "content_id": "98b94d76-1b30-4d2f-8bb4-e59ab1bfb965",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Primary infection with H1N1 reduces risk of future medically attended H1N1 infection by 66% (95% CI 53-77%), while primary H3N2 infection reduces H3N2 risk by 33% (95% CI 17-46%), with no evidence of N2 imprinting protection (0%, 95% CI 0-7%). This model provides the best fit and predictive power.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C14-C18, C21-C22 present the core imprinting findings with confidence intervals, model comparison results (Figure 4 supplement 1), and cross-validation evidence (Figure 5 supplements 1-2). The statistical support is robust with appropriate uncertainty quantification.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:19:41.700762Z"
+    },
+    {
+      "id": "76410c04-f834-40d3-a913-d0baf9386d63",
+      "content_id": "98b94d76-1b30-4d2f-8bb4-e59ab1bfb965",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Sensitivity analyses excluding young children (<15 years) or older adults (\u226565 years) show that imprinting protection persists but is modulated by these age groups, with H1N1 remaining more protective than H3N2 across analyses, and weak positive correlation of excess cases between seasons suggesting recent infections are not the primary driver.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C71-C76 describe systematic sensitivity analyses with results shown in Figure 5 and Appendix tables. The analyses appropriately address potential confounding from recent infections and cross-protection, strengthening the imprinting interpretation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:19:41.700762Z"
+    },
+    {
+      "id": "59bb5f21-ff29-4e5e-adfd-fa3f32e733c0",
+      "content_id": "98b94d76-1b30-4d2f-8bb4-e59ab1bfb965",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Vaccine effectiveness varies with both age and birth cohort, with birth-cohort-specific VE best explaining cases in individuals \u226515 years old while age-specific VE best explains cases in younger children. VE differs substantially between birth cohorts with similar imprinting probabilities.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C23-C24 and C77-C83 are supported by model comparison results (Figure 6 supplement 1) and VE estimates (Figure 6). The differential performance of age- versus cohort-specific VE models across age groups provides evidence that early exposures influence vaccine responses.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:19:41.700762Z"
+    },
+    {
+      "id": "ac892f77-6722-4cee-b166-5e95559dd2cb",
+      "content_id": "98b94d76-1b30-4d2f-8bb4-e59ab1bfb965",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The model underestimates H1N1 cases in unvaccinated 5-9 year-olds during the 2009 pandemic and cases in 30-39 and 50+ year-olds during the 2013-2014 season, likely due to large antigenic changes and original antigenic sin effects in middle-aged adults.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C19-C20 and C85-C88 identify specific model discrepancies shown in Figure 7B and provide mechanistic explanations supported by citations to prior work on these specific seasons. The interpretation appropriately acknowledges model limitations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:19:41.700762Z"
+    },
+    {
+      "id": "585b94c6-013c-41d0-9bde-eee59d32bb49",
+      "content_id": "98b94d76-1b30-4d2f-8bb4-e59ab1bfb965",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The stronger H1N1 imprinting protection may result from stronger cross-protective responses to conserved epitopes in the more slowly evolving H1N1, consistent with prior findings that H1N1 protection lasts longer than H3N2 protection, though antigenic differences within subtypes may also contribute to VE variation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C33 and C84 are speculative mechanistic explanations (marked as SPECULATION in evidence_type), while C34-C35 cite supporting prior work. The proposed mechanisms are plausible but not directly tested in this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:19:41.700762Z"
+    },
+    {
+      "id": "e5c68a31-92d4-471c-a712-f3b0e59b455f",
+      "content_id": "98b94d76-1b30-4d2f-8bb4-e59ab1bfb965",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "A prior Arizona study found evidence of NA imprinting protection, which this study does not replicate, potentially due to differences in vaccination coverage patterns over time in middle-aged adults.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C36-C37 compare findings to Gostic et al. 2019 and propose a speculative explanation for the discrepancy based on vaccination coverage differences. The explanation is plausible but not directly tested.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:19:41.700762Z"
+    },
+    {
+      "id": "42f80e5f-39bf-4fb2-9b68-adb2a436ecc0",
+      "content_id": "98b94d76-1b30-4d2f-8bb4-e59ab1bfb965",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Birth-cohort-specific VE better estimates cases in vaccinated 50-64 year-olds during the 2015-2016 season than age-specific VE, consistent with prior attributions of reduced VE in this group to original antigenic sin effects.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38-C39 are supported by model comparison results (Figure 6 supplement 2) showing improved fit and by citations to prior mechanistic studies of this specific season. This provides a concrete example of birth cohort effects on VE.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:19:41.700762Z"
+    },
+    {
+      "id": "347f20c9-826e-4171-902b-a9f399a6a7d7",
+      "content_id": "98b94d76-1b30-4d2f-8bb4-e59ab1bfb965",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Most study participants received standard-dose IIV, with 9-26% of children receiving LAIV and 1-15% of older adults receiving high-dose IIV, but these different vaccine types are unlikely to substantially affect results based on prior studies showing similar effectiveness in repeat vaccinees.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26-C29 document vaccine types with data from Figure 1 supplement 7, and C40 cites evidence that LAIV and IIV-SD have similar VE in repeat vaccinees. The assessment that vaccine type differences don't substantially affect results is reasonable.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:19:41.700762Z"
+    },
+    {
+      "id": "e4a4b0f9-ec3e-429e-b4b1-e23e94ad9d11",
+      "content_id": "98b94d76-1b30-4d2f-8bb4-e59ab1bfb965",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The study population has 45% vaccination coverage with most participants being frequent vaccinees, which limits generalizability to less-vaccinated populations and introduces potential biases from test-negative control design and the association between frequent vaccination and reduced VE.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30-C32 and C41 appropriately acknowledge study limitations with supporting data (Figure 1 supplement 6) and citations. The authors correctly identify constraints on generalizability and potential methodological biases.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:19:41.700762Z"
+    },
+    {
+      "id": "e6f19698-699e-4f6c-ac00-9c44dd74f3ef",
+      "content_id": "98b94d76-1b30-4d2f-8bb4-e59ab1bfb965",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Methodological decisions and assumptions underlying the analysis, including exclusion of subdominant subtypes, assumptions about attack rates and timing, and prior knowledge about protection duration and serological responses.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50-C56 describe methodological choices and assumptions with appropriate citations. These are transparently documented and generally well-justified, though some involve assumptions that could affect results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:19:41.700762Z"
+    },
+    {
+      "id": "47286342-ae80-4091-9881-6589c5377096",
+      "content_id": "98b94d76-1b30-4d2f-8bb4-e59ab1bfb965",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Subtype-specific imprinting protection in seasonal influenza is narrower than HA-group-level protection against avian influenza but similarly correlates with primary infection. Incorporating early exposure history into epidemic models may improve identification of at-risk populations, and heterogeneity in susceptibility implies different selective pressures on influenza evolution.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C89-C90 appropriately compare findings to prior work with citations. Claims C91-C92 propose implications that are logical extensions of the findings, though C91 is somewhat speculative about future applications.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:19:41.700762Z"
+    },
+    {
+      "id": "87c19645-6f64-4abc-805c-e87c117a1491",
+      "content_id": "98b94d76-1b30-4d2f-8bb4-e59ab1bfb965",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Excess mortality and hospitalization were observed among H2N2/H3N2-imprinted cohorts during post-2009 H1N1pdm seasons.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C57 cites prior work (Budd et al., 2019) documenting patterns consistent with the current study's findings. This provides additional context supporting the imprinting hypothesis.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:19:41.700762Z"
+    },
+    {
+      "id": "5f3d7190-ddcd-4594-b61c-ebf67185a8d8",
+      "content_id": "98b94d76-1b30-4d2f-8bb4-e59ab1bfb965",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "Sera from different individuals can select for distinct escape mutants, consistent with the hypothesis that heterogeneity in immune memory drives viral evolution.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C42 cites recent work (Lee et al., 2019) supporting the proposed mechanism linking immune heterogeneity to viral evolution. This provides mechanistic support for the study's implications.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:19:41.700762Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "d24baaeb-0b37-42b0-9cd5-ac6843dd8107",
+      "result_id": "775074ee-0360-4fbd-ae8b-9276c1657f45"
+    },
+    {
+      "claim_id": "549e2ccf-9e9c-4287-9aed-76d2b49eb75b",
+      "result_id": "775074ee-0360-4fbd-ae8b-9276c1657f45"
+    },
+    {
+      "claim_id": "a3b8f7d7-c476-410c-9151-b69bab5b0cb6",
+      "result_id": "407d54b8-d2e2-4fa4-a7ca-416e21a97b1d"
+    },
+    {
+      "claim_id": "bcbe0576-5d4d-4f15-aad0-8fe45637485b",
+      "result_id": "407d54b8-d2e2-4fa4-a7ca-416e21a97b1d"
+    },
+    {
+      "claim_id": "ffbe2184-856c-4cdd-b3a1-f31437929e8d",
+      "result_id": "407d54b8-d2e2-4fa4-a7ca-416e21a97b1d"
+    },
+    {
+      "claim_id": "7349059b-a664-4953-bda6-fe41c53ec9b6",
+      "result_id": "407d54b8-d2e2-4fa4-a7ca-416e21a97b1d"
+    },
+    {
+      "claim_id": "150baf53-86ac-41b5-ac2d-54001e37cca8",
+      "result_id": "407d54b8-d2e2-4fa4-a7ca-416e21a97b1d"
+    },
+    {
+      "claim_id": "09d3df38-ee6a-4a95-bda0-c60dadc32d81",
+      "result_id": "fbdc4202-7cbb-425e-9691-570b22bfaa97"
+    },
+    {
+      "claim_id": "5ea6ad8d-101d-450b-aff2-1a5c37bad736",
+      "result_id": "fbdc4202-7cbb-425e-9691-570b22bfaa97"
+    },
+    {
+      "claim_id": "de6bd7b0-2a84-46ab-84e3-dab221cd4760",
+      "result_id": "fbdc4202-7cbb-425e-9691-570b22bfaa97"
+    },
+    {
+      "claim_id": "900aa10f-462a-4349-92d2-5a5afea71e9e",
+      "result_id": "fbdc4202-7cbb-425e-9691-570b22bfaa97"
+    },
+    {
+      "claim_id": "013fe784-6727-4ca9-a5ef-e89edcde5e26",
+      "result_id": "fbdc4202-7cbb-425e-9691-570b22bfaa97"
+    },
+    {
+      "claim_id": "f40ae632-b0a7-427d-85c2-a59bfc40f01d",
+      "result_id": "fbdc4202-7cbb-425e-9691-570b22bfaa97"
+    },
+    {
+      "claim_id": "45d63712-5b8d-4bcb-8bd9-f15ee2a89c89",
+      "result_id": "fbdc4202-7cbb-425e-9691-570b22bfaa97"
+    },
+    {
+      "claim_id": "dcedc3d6-b321-456e-9f32-6c773af36362",
+      "result_id": "fbdc4202-7cbb-425e-9691-570b22bfaa97"
+    },
+    {
+      "claim_id": "6c1491f4-1cdc-4afb-bae7-cc727cb1beb2",
+      "result_id": "fbdc4202-7cbb-425e-9691-570b22bfaa97"
+    },
+    {
+      "claim_id": "c09f3b8c-c7cb-4bd0-b94c-1a51cb82059f",
+      "result_id": "21607789-6281-4d7c-875f-c7504e5341c0"
+    },
+    {
+      "claim_id": "76386741-be57-4460-80ed-077ac2f26877",
+      "result_id": "21607789-6281-4d7c-875f-c7504e5341c0"
+    },
+    {
+      "claim_id": "55a4b4cf-03ff-426d-ace6-a10b4086ec64",
+      "result_id": "21607789-6281-4d7c-875f-c7504e5341c0"
+    },
+    {
+      "claim_id": "959a765f-1d25-4f8c-8d2b-4cad458644a0",
+      "result_id": "21607789-6281-4d7c-875f-c7504e5341c0"
+    },
+    {
+      "claim_id": "fdaff2a9-adfb-4289-af33-a17bf052c5a3",
+      "result_id": "21607789-6281-4d7c-875f-c7504e5341c0"
+    },
+    {
+      "claim_id": "0646946b-4aa5-4039-8ee2-67a2eb56e1da",
+      "result_id": "21607789-6281-4d7c-875f-c7504e5341c0"
+    },
+    {
+      "claim_id": "25e3d145-bcea-4a1c-8f87-1644bb5f6f26",
+      "result_id": "21607789-6281-4d7c-875f-c7504e5341c0"
+    },
+    {
+      "claim_id": "6e9de0a3-d98d-445e-bda1-bda2fbee337c",
+      "result_id": "21607789-6281-4d7c-875f-c7504e5341c0"
+    },
+    {
+      "claim_id": "e2162c23-c35d-4cb5-9b2d-ca8520143608",
+      "result_id": "eee1d43b-55e8-4800-8c22-b3177351cbb7"
+    },
+    {
+      "claim_id": "fec82ca2-cdd0-4d46-b823-3493142b553e",
+      "result_id": "eee1d43b-55e8-4800-8c22-b3177351cbb7"
+    },
+    {
+      "claim_id": "21580e9f-997a-4f6e-b5c0-71744b47ea14",
+      "result_id": "eee1d43b-55e8-4800-8c22-b3177351cbb7"
+    },
+    {
+      "claim_id": "5524bf9c-18ce-47a1-bd64-5667f029b06c",
+      "result_id": "eee1d43b-55e8-4800-8c22-b3177351cbb7"
+    },
+    {
+      "claim_id": "10ba4e7d-d084-40f5-81aa-a8c3f0365463",
+      "result_id": "7a45fe01-d6a3-4698-b0b9-da4f223e563c"
+    },
+    {
+      "claim_id": "7e62a0da-17d6-432f-b80a-77c20834017a",
+      "result_id": "7a45fe01-d6a3-4698-b0b9-da4f223e563c"
+    },
+    {
+      "claim_id": "be5ba6e3-1c8e-40d3-be60-2e14623bcc4c",
+      "result_id": "7a45fe01-d6a3-4698-b0b9-da4f223e563c"
+    },
+    {
+      "claim_id": "0ebe9754-9115-4436-a7cc-248795f4e5c8",
+      "result_id": "7a45fe01-d6a3-4698-b0b9-da4f223e563c"
+    },
+    {
+      "claim_id": "db638567-23b1-416a-a2b0-3a5cf7cbabfb",
+      "result_id": "7a45fe01-d6a3-4698-b0b9-da4f223e563c"
+    },
+    {
+      "claim_id": "398fa800-57f6-476f-8eef-5b562d25ec64",
+      "result_id": "828f25c7-9f22-41a8-984a-181eae933b86"
+    },
+    {
+      "claim_id": "d3332add-c786-45a2-8aab-06f2cc09668f",
+      "result_id": "828f25c7-9f22-41a8-984a-181eae933b86"
+    },
+    {
+      "claim_id": "84b03fa0-ecdc-42d1-872b-6ed343185cd8",
+      "result_id": "828f25c7-9f22-41a8-984a-181eae933b86"
+    },
+    {
+      "claim_id": "7bbed68b-a2c1-47c0-a803-299df315d100",
+      "result_id": "828f25c7-9f22-41a8-984a-181eae933b86"
+    },
+    {
+      "claim_id": "17fdafad-2fde-457f-924f-8f3db4d560e4",
+      "result_id": "828f25c7-9f22-41a8-984a-181eae933b86"
+    },
+    {
+      "claim_id": "5a685f79-7df2-4ee5-b7fc-d1bc5d25fab7",
+      "result_id": "828f25c7-9f22-41a8-984a-181eae933b86"
+    },
+    {
+      "claim_id": "ac3b7a01-a969-46c9-ac77-0f67f28ac948",
+      "result_id": "828f25c7-9f22-41a8-984a-181eae933b86"
+    },
+    {
+      "claim_id": "6ef8943e-bd8f-491c-a7fb-931eb010cce0",
+      "result_id": "76410c04-f834-40d3-a913-d0baf9386d63"
+    },
+    {
+      "claim_id": "2671047d-b15c-407c-8785-79dd9a0837d5",
+      "result_id": "76410c04-f834-40d3-a913-d0baf9386d63"
+    },
+    {
+      "claim_id": "f1a31c11-85c0-4495-a36b-07c8195302b0",
+      "result_id": "76410c04-f834-40d3-a913-d0baf9386d63"
+    },
+    {
+      "claim_id": "bbef2765-e90c-4de9-8576-29126eda1122",
+      "result_id": "76410c04-f834-40d3-a913-d0baf9386d63"
+    },
+    {
+      "claim_id": "cd6a59bf-9601-4009-bdaa-2d45a0565596",
+      "result_id": "76410c04-f834-40d3-a913-d0baf9386d63"
+    },
+    {
+      "claim_id": "b8b07caf-7fea-4ae9-8405-f2b95bf7593c",
+      "result_id": "76410c04-f834-40d3-a913-d0baf9386d63"
+    },
+    {
+      "claim_id": "812ac5e3-978e-4b99-94ae-bdcc40bf3290",
+      "result_id": "59bb5f21-ff29-4e5e-adfd-fa3f32e733c0"
+    },
+    {
+      "claim_id": "f868628b-d5d7-45af-8a57-a0e7b21c3586",
+      "result_id": "59bb5f21-ff29-4e5e-adfd-fa3f32e733c0"
+    },
+    {
+      "claim_id": "aa21400c-bfa1-4b4f-86c9-036f19733cfc",
+      "result_id": "59bb5f21-ff29-4e5e-adfd-fa3f32e733c0"
+    },
+    {
+      "claim_id": "c4b54308-d7c6-4221-af41-ba4d8004fd9c",
+      "result_id": "59bb5f21-ff29-4e5e-adfd-fa3f32e733c0"
+    },
+    {
+      "claim_id": "814f9488-ce7b-416e-b7bc-13b84cd0e6b1",
+      "result_id": "59bb5f21-ff29-4e5e-adfd-fa3f32e733c0"
+    },
+    {
+      "claim_id": "33303631-b29a-4de4-bfdb-a08605aedbc1",
+      "result_id": "59bb5f21-ff29-4e5e-adfd-fa3f32e733c0"
+    },
+    {
+      "claim_id": "8ace836e-5687-494a-a07f-904907848d93",
+      "result_id": "59bb5f21-ff29-4e5e-adfd-fa3f32e733c0"
+    },
+    {
+      "claim_id": "538acfad-a590-48af-87ec-0249da21e03f",
+      "result_id": "59bb5f21-ff29-4e5e-adfd-fa3f32e733c0"
+    },
+    {
+      "claim_id": "9e447ef5-ae28-4ad6-b367-982e0bde0d82",
+      "result_id": "59bb5f21-ff29-4e5e-adfd-fa3f32e733c0"
+    },
+    {
+      "claim_id": "4c9da39d-8e50-4647-a337-5b9069bbb1ed",
+      "result_id": "ac892f77-6722-4cee-b166-5e95559dd2cb"
+    },
+    {
+      "claim_id": "990dd356-27ea-4d95-aa9e-1016284d35f2",
+      "result_id": "ac892f77-6722-4cee-b166-5e95559dd2cb"
+    },
+    {
+      "claim_id": "9b9c70f5-ec26-48af-9b2e-18329dc8a249",
+      "result_id": "ac892f77-6722-4cee-b166-5e95559dd2cb"
+    },
+    {
+      "claim_id": "0b2d7f28-a2d1-4232-bf6d-0bcacec4dda0",
+      "result_id": "ac892f77-6722-4cee-b166-5e95559dd2cb"
+    },
+    {
+      "claim_id": "9b9ed248-32c0-4a27-8839-33b9a389acac",
+      "result_id": "ac892f77-6722-4cee-b166-5e95559dd2cb"
+    },
+    {
+      "claim_id": "7e9c03b1-ae5a-4210-b982-b7dab9814907",
+      "result_id": "ac892f77-6722-4cee-b166-5e95559dd2cb"
+    },
+    {
+      "claim_id": "b2f3623b-5127-4ccc-b114-72653f8e092a",
+      "result_id": "585b94c6-013c-41d0-9bde-eee59d32bb49"
+    },
+    {
+      "claim_id": "c233517d-0fa4-426a-a3de-3a709c935de3",
+      "result_id": "585b94c6-013c-41d0-9bde-eee59d32bb49"
+    },
+    {
+      "claim_id": "db41579d-b95b-47aa-8f5d-05b38465bb03",
+      "result_id": "585b94c6-013c-41d0-9bde-eee59d32bb49"
+    },
+    {
+      "claim_id": "5d132c77-648e-43fc-bc47-84c242097b33",
+      "result_id": "585b94c6-013c-41d0-9bde-eee59d32bb49"
+    },
+    {
+      "claim_id": "99c3b173-6d0c-48e1-b863-870756a689e0",
+      "result_id": "e5c68a31-92d4-471c-a712-f3b0e59b455f"
+    },
+    {
+      "claim_id": "fbc055bf-995c-45e7-9a47-370941f6391a",
+      "result_id": "e5c68a31-92d4-471c-a712-f3b0e59b455f"
+    },
+    {
+      "claim_id": "d61956ae-7bcb-4aba-aa6f-907c7725dba4",
+      "result_id": "42f80e5f-39bf-4fb2-9b68-adb2a436ecc0"
+    },
+    {
+      "claim_id": "13766e2b-0af8-44ea-949d-e5e014ca8957",
+      "result_id": "42f80e5f-39bf-4fb2-9b68-adb2a436ecc0"
+    },
+    {
+      "claim_id": "b831fa87-9a6e-49c2-9d05-73bd7bdd6d3e",
+      "result_id": "347f20c9-826e-4171-902b-a9f399a6a7d7"
+    },
+    {
+      "claim_id": "7a7f69cf-ac1f-43c8-8fdf-c17f4572337d",
+      "result_id": "347f20c9-826e-4171-902b-a9f399a6a7d7"
+    },
+    {
+      "claim_id": "4f34510a-4ca3-450c-b1a6-3a1c97b077f8",
+      "result_id": "347f20c9-826e-4171-902b-a9f399a6a7d7"
+    },
+    {
+      "claim_id": "b1b0dec2-d7b3-49ee-b1a0-0b6d96587157",
+      "result_id": "347f20c9-826e-4171-902b-a9f399a6a7d7"
+    },
+    {
+      "claim_id": "e4b5b951-82ce-47b1-8d65-bee4994ab7ef",
+      "result_id": "347f20c9-826e-4171-902b-a9f399a6a7d7"
+    },
+    {
+      "claim_id": "e874f0b6-bdf4-462b-a94e-0f6a78ada15e",
+      "result_id": "e4a4b0f9-ec3e-429e-b4b1-e23e94ad9d11"
+    },
+    {
+      "claim_id": "1e54be23-1552-4e66-ab2b-9963a46a6f63",
+      "result_id": "e4a4b0f9-ec3e-429e-b4b1-e23e94ad9d11"
+    },
+    {
+      "claim_id": "21851573-59bf-4f8d-afef-c9411ab014a7",
+      "result_id": "e4a4b0f9-ec3e-429e-b4b1-e23e94ad9d11"
+    },
+    {
+      "claim_id": "1861891d-2e10-41dd-8d20-5d07728348cf",
+      "result_id": "e4a4b0f9-ec3e-429e-b4b1-e23e94ad9d11"
+    },
+    {
+      "claim_id": "8358facb-5d0a-4df7-9e67-5d7bfa118caf",
+      "result_id": "e6f19698-699e-4f6c-ac00-9c44dd74f3ef"
+    },
+    {
+      "claim_id": "8c5d89d6-690b-473b-888b-6a021e4c68a1",
+      "result_id": "e6f19698-699e-4f6c-ac00-9c44dd74f3ef"
+    },
+    {
+      "claim_id": "f059bfb5-f72f-411a-9f1e-ea888bc65dce",
+      "result_id": "e6f19698-699e-4f6c-ac00-9c44dd74f3ef"
+    },
+    {
+      "claim_id": "93123c27-5ae7-4224-bc99-971a710676f5",
+      "result_id": "e6f19698-699e-4f6c-ac00-9c44dd74f3ef"
+    },
+    {
+      "claim_id": "959c9276-82a8-49fa-ba48-f8d7019d6806",
+      "result_id": "e6f19698-699e-4f6c-ac00-9c44dd74f3ef"
+    },
+    {
+      "claim_id": "5693f71b-60de-4de4-a8e5-b3078edb7f15",
+      "result_id": "e6f19698-699e-4f6c-ac00-9c44dd74f3ef"
+    },
+    {
+      "claim_id": "a8a1aaee-1bec-46e5-ad31-7c6935ee09a8",
+      "result_id": "e6f19698-699e-4f6c-ac00-9c44dd74f3ef"
+    },
+    {
+      "claim_id": "62e52bad-0fc5-4ee8-a00c-4e8bde76db2b",
+      "result_id": "47286342-ae80-4091-9881-6589c5377096"
+    },
+    {
+      "claim_id": "ad6509e5-5d47-4ef1-91cb-9609375de075",
+      "result_id": "47286342-ae80-4091-9881-6589c5377096"
+    },
+    {
+      "claim_id": "6de3f2ff-1f20-4971-9855-8075b04aa26e",
+      "result_id": "47286342-ae80-4091-9881-6589c5377096"
+    },
+    {
+      "claim_id": "5d72bbb7-1b5d-40fe-bdc0-a28dfd3d156a",
+      "result_id": "47286342-ae80-4091-9881-6589c5377096"
+    },
+    {
+      "claim_id": "382dbd78-e2b9-4aa8-8f91-83ec23069313",
+      "result_id": "87c19645-6f64-4abc-805c-e87c117a1491"
+    },
+    {
+      "claim_id": "9fb54fd4-86f2-47fd-97a2-1653db394509",
+      "result_id": "5f3d7190-ddcd-4594-b61c-ebf67185a8d8"
+    }
+  ],
+  "comparisons": []
+}

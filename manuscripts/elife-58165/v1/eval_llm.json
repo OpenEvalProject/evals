@@ -1,0 +1,288 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "RhoA activates Rac1 via DIA and inhibits Rac1 via ROCK, while Rac1 inhibits RhoA through PAK. DIA knockdown experiments show decreased RhoA and Rac1 activities, supporting DIA's role in activating Rac1 and a positive feedback loop between DIA and RhoA. The network also features a positive feedback from PAK to Rac1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3, C32-C35 collectively establish the core regulatory interactions in the RhoA-Rac1 network. The DIA knockdown experiments (C32) provide direct experimental evidence supporting DIA's activation of Rac1 (C33), while the literature citations support the ROCK-mediated inhibition (C2) and PAK-mediated inhibition (C3). The positive feedback loops are supported by both experimental data and literature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "In polarized cells, RhoA-DIA interactions dominate at the leading edge while RhoA-ROCK interactions prevail at the rear. PLA data show higher density of RhoA-DIA complexes at the front and RhoA-ROCK complexes at the rear, corroborated by immunostaining showing DIA localization at the leading edge and ROCK at the rear and cell body.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C5 and C36-C39 are well-supported by converging experimental evidence from PLA assays (Figure 1A-B) and immunostaining (Figure 1C-D), along with literature citations. The spatial segregation of effector interactions is demonstrated through multiple independent methods, providing strong support for this key finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Mathematical modeling predicts distinct dynamic regimes: self-perpetuating oscillations at the leading edge (regime 1) where RhoA activates Rac1 via DIA and Rac1 inhibits RhoA via PAK, and a BiDR regime (regime 3) where oscillations and stable steady states coexist depending on initial conditions. These oscillations drive protrusion-retraction cycles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C46 describe model predictions that are mathematically derived from the ODE/PDE system (Equations 6-10) and supported by bifurcation analysis (Figure 2A). The model predictions are internally consistent and based on established dynamical systems theory. However, these are theoretical predictions requiring experimental validation (addressed in subsequent results).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "The spatiotemporal model predicts autonomous, repeating cycles where high RhoA and low Rac1 persist at the rear while RhoA and Rac1 oscillate at the leading edge, with waves propagating from front to rear. When waves reach the rear, they induce RhoA-GTP spikes. Experimentally, RhoA FRET imaging confirms three zones (oscillations, dark zone, light zone) and shows ~5-fold more RhoA bursts at the leading edge than the rear.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C56 combine model predictions (C47-C51, C55) with experimental validation (C52-C54, C56). The FRET imaging data (Figure 3H-J) directly corroborate the model's predicted spatial patterns and temporal dynamics. The quantification of RhoA bursts (C56, Figure 3J) provides statistical support with significant p-values, strongly validating the model predictions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "Rac1 activity is mainly at the leading edge with lower activity between nucleus and rear, as shown by immunostaining and super-resolution microscopy. FRET experiments corroborate RhoA-GTP dynamics predictions at the leading edge and cell body/rear. The model's prediction of more RhoA bursts at the leading edge than rear is fully supported by experimental data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C58 and C91-C93 provide experimental validation of model predictions using multiple imaging modalities (immunostaining, super-resolution microscopy, FRET). The convergence of evidence from different techniques (Figure 3H-M) and quantitative analysis (Figure 3J) strongly supports both the Rac1 and RhoA spatiotemporal dynamics predicted by the model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C94",
+      "C95"
+    ],
+    "result": "PAK inhibition changes MDA-MB-231 cell shape from mesenchymal (elongated, high Rac1) to amoeboid (rounded, high RhoA), correlating with hysteresis of RhoA and Rac1 activities. Hysteresis is the hallmark of bistability. The reaction-diffusion model demonstrates hysteresis of averaged RhoGTPase activities for non-stationary spatiotemporal dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C63, C94-C95 connect previous experimental work (C59, C62, C94) with the current model's ability to explain hysteresis in spatiotemporal dynamics (C95). The model successfully recapitulates the experimentally observed hysteresis (Figure 4), providing mechanistic insight into the mesenchymal-amoeboid transition. The theoretical framework is well-established (C63).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "ROCK inhibition below a threshold results in multiple oscillatory centers of GTPase activities with high Rac1 activity. Experimentally, ROCK inhibition induced multiple Rac1-GTP foci and uncoordinated RhoA activities, with cells exhibiting elongated shapes and reduced migration distance. ROCK activity above a threshold is necessary for single high Rac1 activity center at the leading edge, and ROCK cooperates with PAK to maintain polarized lamellipodia formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C71 combine model predictions (C64) with experimental validation (C65-C69) and mechanistic conclusions (C70-C71). The immunostaining (Figure 5A) and FRET data (Figure 5B) directly support the model's prediction of multiple oscillatory centers upon ROCK inhibition. The migration assays (C69, Figure 5\u2014supplement 1D) provide functional validation, though statistical details are limited.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C80",
+      "C81",
+      "C82",
+      "C99"
+    ],
+    "result": "Periodic, propagating GTPase waves coordinate distinct GTPase patterns at the leading and trailing edges. At the rear, high RhoA and low Rac1 are maintained until waves from the front induce transient oscillations and RhoA spikes, after which the initial pattern resumes. These waves occur due to diffusion fluxes and excitable dynamics, creating an autonomous cyclic mechanism controlling mesenchymal migration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C9, C80-C82, C99 describe the central finding of the manuscript. The wave propagation mechanism is supported by both model predictions (C80-C81) and experimental validation (C6-C7, Figure 3). The claim that waves coordinate front-rear dynamics (C9, C82, C99) is well-supported by the convergence of modeling and experimental evidence throughout the manuscript.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C74",
+      "C77",
+      "C78",
+      "C79",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "The model rationalizes how amoeboid and mesenchymal migration types interchange through effector modulation. Differential localization of DIA and ROCK generates distinct RhoA-Rac1 interaction circuitries along the cell. Oscillations at the leading edge guide protrusions/retractions while high RhoA at the rear maintains adhesions. In late migration, RhoA extends forward and Rac1 travels rearward, pulling up the rear. Critical coordination is accomplished by spatially resolved dynamic regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74, C77-C79, C83-C88 synthesize the model's mechanistic insights into cell migration. The claims are supported by the integration of experimental data (spatial localization) with model predictions (temporal dynamics). The proposed mechanism for front-rear coordination (C88) is the logical conclusion from the combined modeling and experimental results, though direct experimental manipulation of the coordination mechanism is not performed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C40",
+      "C41"
+    ],
+    "result": "In MDA-MB-231 cells, RhoA abundance is at least 10-fold larger than DIA and ROCK isoforms combined. The RhoA-effector concentrations depend approximately linearly on DIA and ROCK abundances.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C41 are supported by quantitative proteomics data (C40, Supplementary file 1) and mathematical derivation (C41, Equations 1-3 in Materials and methods). The linear approximation is justified by the large excess of RhoA over effectors and the dissociation constant values, providing a sound basis for the modeling approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "DIA downregulation by siRNA resulted in increased RhoA abundance and decreased Rac1 abundance. Model simulations show these changes can decrease the threshold DIA abundance required to maintain initial GTPase dynamics. Cells tend to adapt to DIA1 perturbation by adjusting other protein abundances to keep minimally perturbed Rho-Rac signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C98 combine experimental observations (C96, Figure 1\u2014supplement 1) with model-based interpretation (C97-C98). The western blot data clearly show the abundance changes upon DIA knockdown. The model simulations (C97) and adaptive interpretation (C98) are reasonable, though the adaptive mechanism is inferred rather than directly demonstrated through time-course or rescue experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Background on cell migration and RhoGTPase regulation: Cell migration relies on coordinated actin dynamics at leading and trailing edges. During mesenchymal migration, F-actin is cyclically polymerized/depolymerized at the leading edge while the actomyosin-enriched trailing edge forms the rear. RhoA and Rac1 control protrusions/retractions and contractility. The canonical view shows Rac1-GTP at the leading edge and RhoA-GTP at the rear, explained by mutual antagonism mediated by effectors (PAK, ROCK). However, at the leading edge, RhoA activation is rapidly followed by Rac1 activation via DIA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C28 establish the scientific background and are well-supported by extensive literature citations. These claims accurately represent established knowledge in the field and provide the necessary context for the current work. The claims about mutual antagonism (C19-C24) and the non-antagonistic behavior at the leading edge (C25-C28) set up the key question addressed by the manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C29",
+      "C30"
+    ],
+    "result": "At the leading edge, the intertwined network circuitry of RhoA activating Rac1 and Rac1 inhibiting RhoA forces periodic changes in activities, giving rise to self-perpetuating oscillations. At the trailing edge and cell body, mutual RhoA and Rac1 inhibition results in maintenance of a quasi-steady state with high RhoA and low Rac1 activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C30 are theoretical predictions based on established dynamical systems principles (supported by citations to Kholodenko 2006, Tsyganov et al. 2012). These predictions are subsequently validated by the mathematical model and experimental data presented in the manuscript. The theoretical framework is sound and well-established in systems biology.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C75",
+      "C76",
+      "C100",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "Discussion of RhoGTPases as core regulators integrating multiple cues and relaying information to cellular machineries. Live cell imaging showed oscillations at the leading edge, challenging traditional views. The periodic waves described here differ from previously reported traveling waves and trigger phosphorylation waves. Microtubules and mechanical tension have been suggested as coordination mechanisms, but membrane tension propagates only locally. These findings support that mechanics modulates biochemical signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C73, C75-C76, C100, C102-C109 provide discussion context, comparing the current findings to prior work and alternative mechanisms. These claims are well-supported by literature citations and accurately represent the state of the field. The distinction from other wave types (C100) and the discussion of alternative mechanisms (C102-C109) appropriately contextualize the current findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C89",
+      "C101",
+      "C111"
+    ],
+    "result": "Hypotheses and future directions: Crosstalk interactions of the core signaling network with cytoskeleton proteins may generate actomyosin waves and cytoskeletal dynamics required for migration. Wave interactions with deforming cell boundaries will likely modulate propagation patterns. This core biochemical network might be a foundation for detailed mechanistic models including many more signaling and cytoskeleton proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C89, C101, C111 are explicitly speculative (C89 states 'We hypothesize', C101 states 'will likely', C111 states 'might be'). These are reasonable hypotheses and future directions based on the current findings, but they are not tested in the manuscript. They represent appropriate scientific speculation about extensions of the work rather than supported conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C90",
+      "C110"
+    ],
+    "result": "Summary claims: Model predictions are supported by imaging and western blot experiments. The spatiotemporal model represents a minimal, experimentally validated model of the biochemical RhoGTPase network that regulates cell migration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90 and C110 are summary statements that accurately reflect the overall findings of the manuscript. The model predictions are indeed supported by multiple experimental approaches (FRET, immunostaining, super-resolution microscopy, western blots), and the model does represent a minimal, experimentally validated framework for understanding RhoGTPase dynamics in cell migration.",
+    "result_type": "MAJOR"
+  }
+]

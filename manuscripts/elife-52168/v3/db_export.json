@@ -1,0 +1,1988 @@
+{
+  "submission": {
+    "id": "4ba36e60-a6f4-43b2-8529-57716eb77198",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T14:44:42.208223Z",
+    "updated_at": "2025-12-02T14:44:42.208223Z"
+  },
+  "content": [
+    {
+      "id": "abd3897d-c44b-4797-8ae7-acb845d1fd8b",
+      "submission_id": "4ba36e60-a6f4-43b2-8529-57716eb77198",
+      "content_type": "manuscript",
+      "content_text": "# Single cell analysis reveals human cytomegalovirus drives latently infected cells towards an anergic-like monocyte state\n\n## Authors\n\n- Miri Shnayder<sup>1</sup>\n- Aharon Nachshon<sup>1</sup>\n- Batsheva Rozman<sup>1</sup>\n- Biana Bernshtein<sup>1</sup>\n- Michael Lavi<sup>1</sup>\n- Noam Fein<sup>1</sup>\n- Emma Poole<sup>2</sup> ([ORCID: 0000-0003-3904-6121](https://orcid.org/0000-0003-3904-6121))\n- Selmir Avdic<sup>3</sup>\n- Emily Blyth<sup>3</sup>\n- David Gottlieb<sup>3</sup>\n- Allison Abendroth<sup>5</sup>\n- Barry Slobedman<sup>5</sup> ([ORCID: 0000-0002-9431-6094](https://orcid.org/0000-0002-9431-6094))\n- John Sinclair<sup>2</sup>\n- Noam Stern-Ginossar<sup>1</sup> ([ORCID: 0000-0003-3583-5932](https://orcid.org/0000-0003-3583-5932)) \u2020\n- Michal Schwartz<sup>1</sup> ([ORCID: 0000-0001-5442-0201](https://orcid.org/0000-0001-5442-0201)) \u2020\n\n### Affiliations\n\n1. Department of Molecular Genetics, Weizmann Institute of Science Rehovot Israel\n2. Department of Medicine, Addenbrooke's Hospital, University of Cambridge Cambridge United Kingdom\n3. Sydney Cellular Therapies Laboratory, Westmead Sydney Australia\n4. Blood and Bone Marrow Transplant Unit, Westmead Hospital Sydney Australia\n5. Discipline of Infectious Diseases and Immunology, Faculty of Medicine and Health, Charles Perkins Centre, University of Sydney Sydney Australia\n\n\u2020 Corresponding author\n\n## Abstract\n\nHuman cytomegalovirus (HCMV) causes a lifelong infection through establishment of latency. Although reactivation from latency can cause life-threatening disease, our molecular understanding of HCMV latency is incomplete. Here we use single cell RNA-seq analysis to characterize latency in monocytes and hematopoietic stem and progenitor cells (HSPCs). In monocytes, we identify host cell surface markers that enable enrichment of latent cells harboring higher viral transcript levels, which can reactivate more efficiently, and are characterized by reduced intrinsic immune response that is important for viral gene expression. Significantly, in latent HSPCs, viral transcripts could be detected only in monocyte progenitors and were also associated with reduced immune-response. Overall, our work indicates that regardless of the developmental stage in which HCMV infects, HCMV drives hematopoietic cells towards a weaker immune-responsive monocyte state and that this anergic-like state is crucial for the virus ability to express its transcripts and to eventually reactivate.\n\n## Introduction\n\nHuman cytomegalovirus (HCMV) is a prevalent pathogen of the beta-herpesvirus family, infecting the majority of the human population worldwide (Staras et al., 2006). Following primary infection, HCMV persists through the lifetime of the host by establishing latency. In the latent state, no viral progeny is produced but the virus maintains the capacity to reactivate. Reactivation in immunocompromised individuals, such as transplant recipients and HIV patients, leads to severe illness and mortality (Crough and Khanna, 2009). Despite the significant health burden that accompanies HCMV reactivation from latency, to date there is no treatment that targets the latent stage and the processes governing latency and reactivation are far from fully understood.\n\nHCMV has a wide cell tropism within its human host (Mocarski and Shenk, 2013), with most cell types supporting lytic replication (Sinzger et al., 2008a). In contrast, latent infection has so far been characterized in cells of the early myeloid lineage, including CD34+ hematopoietic stem and progenitor cells (HSPCs) and CD14+ monocytes in vivo (Mendelson et al., 1996; Taylor-Wiedeman et al., 1991; von Laer et al., 1995). Since CD14+ monocytes are short-lived cells it has been proposed that the latent reservoir resides in hematopoietic stem cells (HSCs) (Slobedman et al., 2010) and that latent monocytes support viral spread and persistence within the infected host (Stevenson et al., 2014). Latent cells in HCMV seropositive individuals are scarce and were estimated by PCR-driven in situ hybridization, at 1:10,000 to 25,000 with a copy number of 2 to 13 genomes per infected cell (Slobedman and Mocarski, 1999). Using highly sensitive methodologies, such as digital PCR, viral genomes were detected in less than half of seropositive individuals and viral load was estimated at less than 10 genomes in 10,000 cells in most individuals (Jackson et al., 2017; Parry et al., 2016). Due to the scarcity of HCMV-infected cells in the natural context, in vitro HCMV infection of primary cells, mainly HSPCs and monocytes were developed as models. The caveat of these systems is their heterogeneity and the possibility that they may represent dynamic differentiation states. Additionally, although both models are being widely used, the differences between them are not well understood.\n\nIt is becoming increasingly evident that the repertoire of viral genes expressed during latent infections is broader than initially appreciated (Cheng et al., 2017; Schwartz and Stern-Ginossar, 2019; Shnayder et al., 2018). Despite low expression of viral transcripts, a number of studies have described infection driven changes in host cells during HCMV latency (Chan et al., 2010; Kew et al., 2017; Reeves et al., 2012; Slobedman et al., 2002; Smith et al., 2007; Smith et al., 2004). Monocyte infection was proposed to promote differentiation to macrophages with specific polarization towards genes that mark M1 phenotype with some atypical attributes (Chan et al., 2008; Smith et al., 2004). On the other hand it was shown that the viral homolog of human interleukin-10, encoded by UL111A, polarizes monocytes into an anti-inflammatory M2 subset (Avdic et al., 2013). The UL7 viral protein was found to bind Fms-like tyrosine kinase three receptor (Flt-3R), inducing differentiation of HSPCs to monocytes and of monocytes to macrophages (Crawford et al., 2018). Finally, analysis of HCMV- infected HSPCs revealed reprogramming of HSPCs into immune-suppressive monocytes (Zhu et al., 2018). Thus, although it is clear that latent HCMV infection affects the differentiation state of infected HSPCs and monocytes, the nature of these effects is still enigmatic and controversial.\n\nThe studies to date examining host responses to latent HCMV infection focused on differences between infected and uninfected cells or on the effect of specific viral transcripts. Since the experimental systems for HCMV latency rely on primary immune cell populations, which are heterogeneous, and since infection is variable within the culture, it is likely that analyses of bulk populations could miss important signatures. Single cell-RNA-seq (scRNA-seq) provides a unique opportunity to depict viral and host heterogeneity simultaneously and thus to uncover functional connections between the cellular environment and viral gene expression. Indeed, several recent works that applied single cell transcriptomics, revealed novel insights into the complexity of the host response and cellular permissiveness for a number of well-studied viruses (Douam et al., 2017; Drayman et al., 2019; Galinato et al., 2018; Rato et al., 2017; Russell et al., 2018; Steuerman et al., 2018; Wyler et al., 2019; Zanini et al., 2018).\n\nUsing single cell RNA data, we analyzed host determinants that are associated with HCMV latency. In CD14+ monocytes, we identified two cellular cell surface markers, MHCII and its chaperon CD74, whose expression is inversely-correlated with viral transcript levels. We demonstrate these markers allow separating between cells harboring higher and lower viral transcript levels, that these differences are induced by HCMV infection and that the cells exhibiting higher viral transcript levels support more efficient reactivation of HCMV from latency. Using these markers, we show that latently infected cells display an intrinsic weaker immune response state that is important for the viral ability to express its genes and reactivate. Furthermore, analysis of 7500 infected HSPCs revealed very heterogeneous populations, but viral transcripts were only detected in cells expressing monocyte lineage markers, such as CD14. Remarkably, also in these HSPC-derived monocytes, higher viral transcript levels were associated with lower expression of CD74 and reduced immune response gene signature. Taken together, our findings highlight cell surface proteins associated with viral transcript levels and establish that both HSPC and monocyte infection models lead to establishment of HCMV latency in a similar anergic-like state of monocytic cells.\n\n## Results\n\n### Expression of host genes correlates with viral transcript levels\n\nWe have previously performed single cell RNA sequencing (scRNA-seq) on HCMV- infected CD14+ monocytes as a model for studying HCMV latency (Shnayder et al., 2018). We used the Massively Parallel RNA Sequencing (MARS-seq) platform (Jaitin et al., 2014; Paul et al., 2015) to analyze experimentally infected primary CD14+ monocytes at different days post infection (dpi). This approach provided high coverage of cellular and viral transcriptomes, spanning expression of more than 11,000 genes in 3,655 cells. We previously used this dataset to examine the viral transcriptome during HCMV latency, showing it largely mirrors a late lytic viral program, albeit at much lower levels of expression (Shnayder et al., 2018).\n\nAn inherent advantage of scRNA-seq is the ability to track viral and host expression within the same cell, thus allowing analysis of viral-host interactions while keeping information on cell-to-cell and infection heterogeneity. Viral transcript levels in the majority of the infected monocyte population was low to undetectable and projection of the cells using t-distributed stochastic neighbor embedding (t-SNE) demonstrated that the cell distribution is determined mainly according to host gene expression variations (Shnayder et al., 2018). Nevertheless, the cells are organized according to viral transcript levels (Shnayder et al., 2018) and Figure 1A), suggesting that much of the differences in host gene expression are associated with variation in viral transcript levels. We therefore calculated Spearman correlation coefficient between the expression of each host gene and the total number of viral transcripts across all cells (Figure 1B). 319 cellular genes showed significant positive or negative correlations with viral gene expression (Z score\u00a0>2, Figure 1\u2014source data 1). Since a key challenge in transcriptome analysis is to connect between snapshots of gene expression profiles and a functional outcome, we first focused on identifying cell surface markers that exhibited strong association with viral gene expression in the scRNA-seq data as these may allow us to enrich for cells with higher viral transcript levels within the population. Among the strongest co-varying genes were genes encoding for MHC class II (variants HLA-DRB1/HLA-DPB1/HLA-DRA/HLA-DQB1/HLA-DPA1/HLA-DQA1/HLA-DMA/HLA-DRB5/HLA-DQA2 and HLA-DMB) and the transcript of CD74, an MHCII chaperon as well as a cell surface receptor on its own (Bergmann, 2012). Indeed, across the infected monocyte population, the expression level of MHC class II (MHCII, Figure 1C) and CD74 (Figure 1D) showed clear inverse-correlation to viral transcript levels (Figure 1A).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/52168/elife-52168-fig1-v3.jpg)\n\n**Figure 1.:** (A)\u00a0t-SNE plot of 3416 latently infected CD14+ monocytes based on host and viral gene expression (Shnayder et al., 2018), colored by percentage of HCMV reads per cell. (B) Distribution of Z scores of the Spearman correlation coefficients between host transcript levels and total HCMV transcript levels across a single population of infected CD14+ monocytes. Black dots mark cells surface markers coding transcripts, blue marks CD74 and red marks transcripts of MHCII (isoforms HLA-RB1/HLA-DPB1/HLA-DRA/HLA-DQB1/HLA-DPA1/HLA-DQA1/HLA-DMA/HLA-DRB5/HLA-DQA2 and HLA-DMB, left to right), gray dots mark all other transcripts. (C and D) t-SNE plots of monocytes as presented in A colored coded by their expression levels of MHCII (HLA-RB1/HLA-DPB1/HLA-DRA/HLA-DQB1/HLA-DPA1/HLA-DQA1/HLA-DMA/HLA-DRB5/HLA-DQA2 and HLA-DMB) (C) or CD74 (D) transcripts. (E) Percentage of viral reads measured in all single cells by days post infection (dpi). Error bars represent standard deviation across the single cells.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/52168/elife-52168-fig1-figsupp1-v3.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Scatterplot showing correlation of host transcript levels and total HCMV transcript levels compared to correlation of host transcript levels and time along infection.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/52168/elife-52168-fig1-figsupp2-v3.jpg)\n\n**Figure 1\u2014figure supplement 2.:** Relative expression levels of CD74 (A) and MHCII (B) in HCMV- infected cells and uninfected cells, measured by RT-qPCR at 6hpi, 3dpi and 6dpi. Error bars reflect standard deviation of 3 measurements. A representative analysis of two independent experiments is shown.\n\n### Cell-surface levels of CD74 and MHCII inversely-correlate with viral transcript levels\n\nViral gene expression levels in latent infection decreases with time in culture, likely due to continuous repression of the viral genome. This time related reduction in viral transcript levels is also apparent in our CD14+ monocytes scRNA-seq data (Figure 1E), thus the increase in CD74 and MHCII expression could be related to time in culture and to only indirectly inversely-correlate with viral transcript levels (Figure 1\u2014figure supplement 1). Indeed, we observed that the expression of both CD74 and MHCII increase over time in culture, both in infected and in uninfected cells (Figure 1\u2014figure supplement 2). We therefore tested whether this inverse-correlation between CD74 and MHCII expression and viral transcript levels is upheld within a single infected population at single time points. To this end, we infected primary CD14+ monocytes with HCMV strain TB40/E-GFP (O'Connor and Murphy, 2012; Sinzger et al., 2008a). At 3 days post infection (dpi) the cells were FACS-sorted according to the cell-surface levels of CD74 and MHCII (Figure 2A and Figure 2\u2014figure supplement 1). RT-qPCR analysis of viral gene expression in these populations confirmed that both CD74low and MHCIIlow monocyte populations express higher levels of viral transcripts compared to their high expressing counterparts (Figure 2B and Figure 2\u2014figure supplement 1). Importantly, the association of higher viral transcript levels with lower cell-surface levels of CD74 was also maintained at 6dpi (Figure 2\u2014figure supplement 2). We next examined if MHCII and CD74 are independent markers or are co-expressed and therefore mark the same population. mRNA expression analysis of CD74 and MHCII cells sorted according to the cell-surface levels of CD74 and MHCII as well as analysis of their co-expression in the scRNA-seq data, confirmed that the two markers are co-expressed and probably can be used to sort similar subpopulations within the infected cell population (Figure 2C and Figure 2\u2014figure supplement 3). We therefore conducted all further experiments using CD74 based sorts. qPCR Analysis of viral DNA levels demonstrated that higher viral transcript levels in CD74low monocytes are concurrent with higher abundance of viral genomes (Figure 2D) suggesting that differential loads of viral genome templates probably contribute to differential viral transcript levels and therefore to the effect on the host. Finally, we examined CD74 cell surface expression in infected and uninfected cells at different time points post infection but no major changes in CD74 distribution following infection were observed (Figure 2\u2014figure supplement 4).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/52168/elife-52168-fig2-v3.jpg)\n\n**Figure 2.:** (A)\u00a0HCMV- infected monocytes were FACS sorted according to cell-surface levels of CD74 or MHCII, at 3dpi.\u00a0High and low gates were determined as highest and lowest 30% of the population, respectively. (B and C) Relative expression level of the viral transcripts RNA2.7 and UL138 (B) or MHCII and CD74 transcripts (C), as measured by RT-qPCR in HCMV- infected cells, sorted by either MHCII (left) or CD74 (right) cell-surface levels at 3dpi. (D) Relative abundance of viral DNA in HCMV- infected CD74high and CD74low monocytes, at 3dpi as measured by qPCR. Graphs show a representative experiment of 3 biological repeats, error bars reflect standard deviation of 3 measurements. P values as calculated by t-test are indicated.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/52168/elife-52168-fig2-figsupp1-v3.jpg)\n\n**Figure 2\u2014figure supplement 1.:** HCMV- infected monocytes were FACS sorted according to cell-surface levels of (A) MHCII or (B) CD74, at 3dpi.\u00a0High and low gates were determined as highest and lowest 30% of the population, respectively. Two biological repeats are shown. Viral expression levels in cells from each gate were assessed by RT-qPCR measurement of the viral transcript RNA2.7. Error bars reflect standard deviation of 3 measurements. P values as calculated by t-test are indicated.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/52168/elife-52168-fig2-figsupp2-v3.jpg)\n\n**Figure 2\u2014figure supplement 2.:** Expression level of viral transcripts RNA2.7 and UL138, as RT-qPCR measured in HCMV- infected cells, sorted by CD74 cell-surface levels at 6dpi. Error bars reflect standard deviation of 3 technical replicates. P values, as calculated by t-test, are indicated.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/52168/elife-52168-fig2-figsupp3-v3.jpg)\n\n**Figure 2\u2014figure supplement 3.:** Scatterplot showing read number of CD74 vs.read number of MHCII genes in single HCMV- infected monocytes according to scRNA-seq data (Shnayder et al., 2018).\n\n![Figure 2\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/52168/elife-52168-fig2-figsupp4-v3.jpg)\n\n**Figure 2\u2014figure supplement 4.:** Infected (green) and uninfected (gray) cells were stained for surface expression of CD74 and analyzed by flow cytometry at 0, 3 and 6dpi.\n\n### Changes in CD74 and MHCII expression are induced by infection\n\nThere are two alternative explanations for the inverse-correlation between viral transcript levels and CD74 cell-surface levels, several days post infection with HCMV. The first possibility is that viral entry is more efficient in CD74low monocytes compared to CD74high monocytes, leading to more incoming viral genomes and higher viral transcript levels. In this case, differences in viral levels between CD74high and CD74low monocytes should be evident immediately following viral entry to the cells. An alternative option is that the differential expression of CD74 is driven by HCMV infection. In this case, the viral DNA and RNA levels in early stages of infection should be independent of CD74 cell-surface levels, and at later time points, higher load of virus leads to the observed differences in CD74 expression. To test these possibilities, uninfected freshly isolated CD14+ monocytes were FACS sorted based on CD74 cell-surface levels and then infected separately with TB40E-GFP. At 8 and 72 hr post infection (hpi) viral DNA and RNA were analyzed by qPCR. We confirmed that indeed the CD74high and CD74low sorted cells exhibited differences in CD74 transcript levels negating the possibility that the separation is only due to variations associated with the cell surface staining (Figure 3A). No significant differences between viral DNA load (Figure 3B) or viral transcript levels (Figure 3C) in CD74high and CD74low monocytes were observed at either 8 or 72hpi, indicating there are no major differences in the efficiency of viral entry between the two populations. Taken together, these results indicate that the observed variation in CD74 cell-surface levels is induced following HCMV infection.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/52168/elife-52168-fig3-v3.jpg)\n\n**Figure 3.:** Uninfected primary monocytes were FACS sorted according to cell-surface levels of CD74.\u00a0Equivalent numbers of CD74high and CD74low cells were infected with HCMV and differences in CD74 RNA levels and in viral DNA and RNA levels between these two cell populations were assessed by qPCR. (A) Relative CD74 transcript levels in CD74high and CD74low cells at 8hpi. (B) Relative abundance of viral DNA in CD74high and CD74low cells at 8hpi and 72hpi. (C) Relative expression level of the viral transcripts UL22A and RNA2.7 in CD74high and CD74low cells as measured at 8hpi and 72hpi. Graphs show a representative experiment of 3 biological repeats, error bars reflect standard deviation of 3 measurements. P values were calculated by t-test.\n\n### CD74low monocytes reactivate more efficiently\n\nAn important characteristic that defines latent infection is the ability of the virus to reactivate. Therefore, a key challenge in gene expression analysis is to connect between snapshots of gene expression profiles and the infection status of the cells, which is defined by this functional outcome. The identification of cellular cell surface markers that inversely-correlate with viral transcript levels provides a handle to connect between gene expression and the ability of the virus to reactivate. To test the association between viral transcript levels and reactivation efficiency, HCMV- infected primary CD14+ monocytes were sorted by CD74 cell-surface levels, and viral reactivation was induced by two complementary methods; cytokine driven differentiation to dendritic cells (DCs) (Reeves et al., 2005), followed by incubation with an indicator fibroblasts monolayer, or long term co-culturing with fibroblasts. Quantification of GFP positive plaques showed that reactivation was significantly more frequent in CD74low cells compared to CD74high cells, in both protocols (Figure 4A and B). Lysed samples of monocytes plated onto indicator fibroblasts produced no plaques, confirming that these infected cells did not produce any detectable infectious virus, consistent with latency prior to reactivation induction. These results demonstrate a functional difference in reactivation efficiency associated with cell-surface CD74 levels as well as with viral transcript levels and genome load.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/52168/elife-52168-fig4-v3.jpg)\n\n**Figure 4.:** HCMV- infected CD14+ Monocytes were sorted according to cell-surface levels of CD74 at 3dpi.\u00a0Equivalent numbers of cells were plated and (A) differentiated into DCs followed by co-culture with fibroblasts to quantify reactivation events or (B) directly co-cultured with fibroblasts to induce reactivation. Data ais shown as number of infectious centers formed by CD74high vs. CD74low cells. Means and error bars (reflecting standard deviation) were generated from 4 independent experiments (A) and 3 independent experiments (B). Dot colors indicate sets from the same experiment. P values as calculated by t-test are indicated.\n\n### CD74 can be used to enrich for HCMV harboring CD14+ monocytes from viremic patients\n\nBased on our experimental infection results, we next tested whether CD74 expression on CD14+ monocytes could be used as a cell surface marker that will allow enrichment of cells that contain HCMV genomes in healthy seropositive individuals. We used digital droplet PCR (ddPCR) to detect viral genome loads in CD14+ monocytes from seven seropositive donors. Despite using a highly sensitive platform (Figure 5\u2014figure supplement 1) and detection of several positive events, testing 100,000\u2013400,000 cells per donor did not provide us with levels of detection and reproducibility that allowed relative quantification (Figure 5\u2014figure supplement 2A and B and Supplementary file 1). Recently, it was suggested that latent HCMV resides in a unique B7H4-positive monocyte subset (Zhu et al., 2018). To examine whether we can enrich for a cell population in which we can detect robust levels of HCMV genomes, we collected CD14+ monocytes from 5 healthy seropositive individuals. In all five donors we could not detect a distinct population of B7H4-positive cells (Figure 5\u2014figure supplement 2C). We nevertheless sorted the top 2% and the bottom 70% B7H4 stained cells and measured HCMV genome loads by ddPCR but did not detect higher levels of HCMV genomes in the top 2% B7H4 cells (Figure 5\u2014figure supplement 2D). We therefore next analyzed CD14+ monocytes from seven hematopoietic stem cell transplant (HSCT) recipient samples in which HCMV viremia was detected, for the presence of viral genomes. In three of the tested samples no virus could be detected in CD14+ monocytes (Figure 5\u2014figure supplement 2E). Monocytes from the four additional samples, in which viral genomes were detected (Figure 5\u2014figure supplement 2E), were sorted according to CD74 cell-surface levels (Figure 5A). In agreement with our results in the experimental infection model, CD74 low monocytes were significantly enriched for the virus compared to CD74high monocytes, illustrating that also in this natural infection setting, CD74 expression can be used to enrich for monocytes carrying viral genomes (Figure 5B and C).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/52168/elife-52168-fig5-v3.jpg)\n\n**Figure 5.:** CD14+ monocytes from HSCT recipients with HCMV reactivation were sorted according to CD74 cell-surface levels.\u00a0In total, 4 samples were tested, originating from 3 different donors (samples 1 and 2 were collected at different time points from the same donor), and viral genome abundance was measured by ddPCR. (A) A representative FACS sort of the cells. The highest and lowest 30% of the population were collected as CD74high and CD74low samples. (B) ddPCR results of two representative replicates from a single sample, separated by yellow vertical line. Upper panel shows detection of viral DNA, lower panel reflects detection of host genomes. The magenta line marks the threshold. (C) Quantification of viral genomes in CD74high and CD74low cells from four different samples, presented as copies per 10,000 cells. Graph reflects mean and 95% CV of poisson distribution, calculated from 5 technical replicates for each donor. P values as calculated by Fisher test are indicated.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/52168/elife-52168-fig5-figsupp1-v3.jpg)\n\n**Figure 5\u2014figure supplement 1.:** Standard curve measuring the sensitivity and accuracy of viral DNA detection by ddPCR, using a CMV positive control template in copy number of: 1, 3, 6, 14, 35 and 140.\u00a0Detection was possible down to 3 copies per sample.\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/52168/elife-52168-fig5-figsupp2-v3.jpg)\n\n**Figure 5\u2014figure supplement 2.:** (A) Analysis of samples from a healthy seropositive donor by ddPCR, done in eight replicates.\u00a0Upper panel shows detection of viral DNA (1 positive event), lower panel reflects detection of host genomes. The magenta line marks the threshold. (B) Summary of all positive events detected in A. (C) Monocytes from 5 healthy seropositive individuals were FACS sorted according to B7H4 levels. A gate defining positive cells, as determined by minimal staining with isotype control (0.2%\u20130.8%) for each donor, and the sorting gates indicating the top 2% and bottom 70% are shown. (D) Quantification of viral genomes in the bottom 70% and top 2% B7H4 cells, designated as \u2013 and +, respectively, from 5 different donors, presented as copies per 10,000 cells. Graph reflects mean and 95% CV of poisson distribution, calculated from 2 to 4 technical replicates for each donor. (E) ddPCR analysis of monocytes from 7 samples originating from 6 HSCT patients with HCMV viremia. Each sample was tested in a duplicate for presence of viral genomes, shown separated by yellow vertical lines. Monocytes from donors that were positive for viral genomes by ddPCR (samples 1\u20134) were used for CD74 analysis, as shown in Figure 5.\n\n### Cells with higher viral load express lower immune-responsive gene signatures\n\nTo further characterize the differences in host pathways associated with the variations in viral transcript levels we conducted RNA-seq on latently infected monocytes, sorted according to their CD74 cell-surface levels. As was seen for single viral genes (Figure 2B), we found that on a genome-wide level, viral gene expression is higher in CD74low cells compared to CD74high cells (Figure 6A and Figure 6\u2014figure supplement 1A). Furthermore, in accordance with our previous findings (Shnayder et al., 2018) the viral gene expression profile in these cells was correlated with late lytic profile (Figure 6\u2014figure supplement 1B), but viral transcript levels were very low (~0.1% of mRNA reads originated from the virus). We performed differential gene expression analysis comparing between the CD74low and CD74high populations. This analysis revealed 113 differentially expressed cellular genes (FDR\u00a0<\u00a00.05, Figure 6\u2014source data 1). Gene set enrichment analysis (GSEA) show that compared to CD74low,CD74high monocytes, which exhibit lower viral transcript levels, are enriched for many immune response related pathways (Figure 6B and Figure 6\u2014source data 2) including adaptive immune response and response to interferon gamma (Figure 6C). Since these cells were extracted from the same culture, these results suggest that monocytes carrying higher viral load are driven towards an intrinsic anergic-like phenotype. Reassuringly, many of the cellular genes and pathways exhibiting higher expression in CD74high cells were also inversely-correlated with viral transcript levels in the scRNA-seq data (Figure 6D, Figure 6\u2014figure supplement 2 and Supplementary file 2). The CD74low monocyte population, which exhibits higher viral transcript levels, was enriched in genes that are related to transcription and virus life cycle (Figure 6B and Figure 6\u2014source data 2). These pathways were not significantly correlated with viral expression levels in the single cell dataset, perhaps due to the sparser nature of our single cell measurements, which due to the sampling of limited number of cells may not detect some weaker effects.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/52168/elife-52168-fig6-v3.jpg)\n\n**Figure 6.:** RNA-seq was performed on HCMV- infected CD14+ Monocytes that were sorted according to cell-surface levels of CD74 at 3dpi.\u00a0(A) Normalized viral gene expression in CD74high and CD74low cells. P value, calculated using likelihood ratio test on logistic regression of viral reads, is indicated. (B) Summary of gene set enrichment analysis (GSEA) of differential expressed genes identified in RNA-seq analysis of CD74high and CD74low cells using annotated GO biological processes and Reactome pathways. (C) Representative pathways from GSEA of genes ranked by their differential expression between CD74high and CD74low cells. (D) tSNE plot of scRNA-seq of latent monocytes colored by expression level of the pathways shown in C. (E) Monocyte priming gene set from Velten et al. (2017) analyzed on GSEA. Genes are ranked by their differential expression between CD74high and CD74low monocytes. (F) tSNE plot of scRNA-seq of latent monocytes colored by the expression level of the monocyte priming gene set from Velten et al. (2017).\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/52168/elife-52168-fig6-figsupp1-v3.jpg)\n\n**Figure 6\u2014figure supplement 1.:** Scatterplot showing read number of all viral genes in CD74high compared with CD74low cells at 3dpi (A)\u00a0Scatterplot showing read number of all viral genes in CD74high+CD74low cells at 3dpi compared to lytically infected monocyte-derived macrophages at 4dpi (B).\n\n![Figure 6\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/52168/elife-52168-fig6-figsupp2-v3.jpg)\n\n**Figure 6\u2014figure supplement 2.:** Relationship between the fold changes in RNA-seq of CD74high vs.\u00a0CD74low infected monocytes and correlation with viral transcript levels in infected monocyte scRNA-seq. Only genes that were differentially expressed in the bulk RNA-seq with p values<0.01 are shown.\n\nTo decipher the differentiation status of latent monocytes we compared our data to a recently published single cell analysis of lineage commitment during hematopoiesis (Velten et al., 2017). The genes that showed elevated expression in the CD74high cell population compared to the CD74low population were enriched for genes associated with monocyte lineage priming (Figure 6E), implying that the cells exhibiting higher viral transcript levels express less commitment markers and therefore may represent a less differentiated state. Significantly, this gene signature of monocyte lineage priming was also inversely-correlated with viral transcript levels in the scRNA-seq data (Figure 6F). To further investigate the cell differentiation state, we analyzed gene sets that were previously associated with M1 or M2 polarization (Gerrick et al., 2018) and found that genes that were more highly expressed in CD74high monocytes were significantly enriched for genes previously associated with M2 phenotype (Pval\u00a0=\u00a02.25\u00d710\u22128). This suggests that the infected CD14+ monocytes in our culture conditions may be polarized towards a cell-state associated with M2 phenotype, however higher viral transcript levels attenuates this differentiation trajectory.\n\n### Inhibition of interferon signaling increases viral gene expression and reactivation\n\nSince a main feature of CD74low monocytes is intrinsic reduced responsiveness to immune signals, we reasoned that this feature could contribute to the higher ability of the virus to express viral transcripts and eventually reactivate. To test this we examined whether inhibition of interferon signaling affects the expression level of viral transcripts and its ability to reactivate in infected CD14+ monocytes. We used ruxolitinib, a potent and selective Janus kinase (JAK) 1 and 2 inhibitor (Lin et al., 2009) that blocks the signaling downstream of interferon receptors. Treatment with ruxolitinib immediately after infection (3hpi) resulted in a considerable reduction in the levels of interferon-induced genes at 3 and 6dpi (Figure 7A) and in increased expression of essentially all viral transcripts (Figure 7B), in an overall uniform manner (Figure 7\u2014figure supplement 1). In order to test how long after infection blocking interferon signaling still affects viral transcript levels, we applied ruxolitinib at different time points along infection and measured viral transcripts by RNA-seq. Interestingly, although the effect was smaller when the inhibitor was added later along infection, blocking interferon signaling still increased viral transcript levels even when added 3dpi (Figure 7C). These results therefore indicate there is continuous expression of viral genes and at 3dpi viral genes are still transcribed. However, the reduced effect of ruxolitinib with time also points that in addition there is gradual repression of viral gene expression as was also captured in our scRNA-seq analysis (Shnayder et al., 2018 and Figure 1E). Importantly, blocking interferon signaling led to more efficient reactivation of the virus (Figure 7D). This demonstrates that interferon signaling has a major role in repression of viral gene expression in infected monocytes and that the anergic-like state of monocytes exhibiting higher viral transcript levels is likely important for latency maintenance and reactivation.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/52168/elife-52168-fig7-v3.jpg)\n\n**Figure 7.:** (A and B) HCMV- infected monocytes were treated at 3hpi with interferon signaling inhibitor, ruxolitinib (ruxo), or left untreated, and analyzed for gene expression level, by RNA-seq.\u00a0(A) Expression of interferon-induced genes at 3dpi (left) and 6dpi (right). (B) Expression of viral genes at 3dpi (left) and 6dpi (right). (C) Viral gene expression in HCMV- infected monocytes that were treated with ruxo at 1, 2, 3dpi or left untreated was measured by RNA-seq at 5dpi. P values for (A-C), calculated using likelihood ratio test on logistic regression of viral reads, are indicated. (D) HCMV- infected monocytes were treated at 3hpi with interferon signaling inhibitor, ruxolitinib (ruxo), or left untreated, and at 6dpi, equivalent numbers of monocytes were co-cultured with fibroblasts to induce reactivation. Viral reactivation in ruxo treated vs. untreated cells was assessed by count of GFP positive plaques formed on the fibroblasts. Means and error bars (reflecting standard deviation) were calculated from 2 independent biological repeats. P value as calculated using likelihood ratio test on Poisson regression of positive plaque events is indicated.\n\n![Figure 7\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/52168/elife-52168-fig7-figsupp1-v3.jpg)\n\n**Figure 7\u2014figure supplement 1.:** Scatterplot showing read number of all viral genes in ruxolitinib treated cells compared to untreated cells at (A) 3dpi and (B) 6dpi.\n\n### Viral transcript levels in HCMV-infected CD34+ HSPCs are associated with priming towards the monocyte lineage and reduced immune-response\n\nWe have previously also performed scRNA-seq analysis of HCMV- infected CD34+ HSPCs at 4dpi (Shnayder et al., 2018). To gain insight into the effects of HCMV on HSPC differentiation, we inferred differentiation trajectories using Monocle, a strategy that allows placing single cells along a pseudotime continuum based on their gene expression (Trapnell et al., 2014; Figure 8A). The cells expressing HCMV transcripts were clustered in a region that exhibited the latest pseudotime (i.e the most differentiated state, Figure 8B). Remarkably, although we infected bone marrow derived\u00a0CD34+ HSPCs, viral transcripts were expressed only in cells expressing monocyte lineage markers (Velten et al., 2017), such as IRF7, IRF8 (Figure 8C) and CD14 (Figure 8D). Taking into account that it was previously shown that HCMV infects multipotent hematopoietic stem cells (Goodrum et al., 2004), these results indicate that HCMV induces differentiation of infected HSPCs towards the monocyte lineage. Interestingly, more detailed analysis of the distinct group of cells that expressed monocyte markers, revealed that this group could be split into two close yet distinct clusters, with viral reads being detected in much more cells in one of the clusters. Interestingly, the cluster showing higher viral transcript levels exhibited lower expression of CD74 (Pval\u00a0=\u00a01.73\u00d710\u221295, Figure 8E and F) as well as gene signatures associated with lower immune response to interferon gamma and lower adaptive immune response (Pval\u00a0<0.001 and Pval\u00a0=\u00a00.003, respectively, Figure 8G and H). Thus, cells within the HSPC population that exhibit the highest viral gene expression belong to the CD14+ monocyte cell lineage and are associated with similar anergic-like signatures as infected monocytes.\n\n![Figure 8.](https://cdn.elifesciences.org/articles/52168/elife-52168-fig8-v3.jpg)\n\n**Figure 8.:** Pseudotime trajectory of single cell transcriptomes from HCMV- infected CD34+ HSPCs (n\u00a0=\u00a07,634, Shnayder et al., 2018) colored by pseudotime (A), viral transcript levels (B), expression of monocyte priming gene signature (Velten et al., 2017)\u00a0(C) and CD14 expression (D). Zoom-in representation of the pseudotime trajectory in A-D, on the region exhibiting higher viral transcript level (top right group of cells), colored by expression of CD74 (E), viral transcript levels (F), expression level of the cellular response to interferon gamma pathways (G) and of the adaptive immune response pathway (H).\n\n## Discussion\n\nHCMV establishes latency in its host in progenitor cells of the myeloid system (Mendelson et al., 1996; Taylor-Wiedeman et al., 1991; von Laer et al., 1995). Nevertheless, in cell culture experimental systems it is apparent that not all cells have the ability to reactivate, indicating that there are variations in the levels or dynamics of latent infection. This heterogeneity means that bulk assays, comparing infected and uninfected cell populations can capture host responses to HCMV infection but likely miss specific responses in the group of cells in which latency is established, and will enable reactivation down the line.\n\nRecent single cell RNA-seq data portray low-level expression of a broad spectrum of canonical viral lytic genes during HCMV latent infection of various cells of the hematopoietic system (Galinato et al., 2018; Shnayder et al., 2018). Our analysis of latent HCMV- infected CD14+ monocytes revealed a continuous population. Essentially, all of the cells were infected; however, they varied in the levels of viral transcripts. We exploited the host and viral heterogeneity, revealed simultaneously in scRNA-seq data, to look for associations between viral transcript levels and the human transcriptome. We found that among the genes that were highly inversely-correlated with viral transcript levels, is a group of genes encoding MHCII as well as the cell surface marker CD74, which serves as an MHCII chaperone. The finding that there are host genes that show specific correlation with viral transcript levels indicates that there is direct interaction between the host and the virus during latent infection- either there is a preference of the virus to infect specific cell types or that the virus actively affects the host transcriptome. Indeed, these markers could be used to enrich for cells with increased viral genome load and viral transcript levels. Importantly, this was supported by analysis of CD14+ monocytes from viremic patients, which also shows a clear inverse-correlation between CD74 cell-surface levels and viral genome load. These results are in line with previous findings showing that human, murine and rat cytomegalovirus down regulate the surface expression of MHCII molecules in cells of the myeloid lineage (Baca Jones et al., 2009; Elder et al., 2019; Lee et al., 2011; Slobedman et al., 2002; Yunis et al., 2018). In addition, CIITA, a transcription factor that regulates CD74 and MHCII, was shown to be down regulated by HCMV (Lee et al., 2011).\n\nThe inverse-association between the expression of CD74 and MHCII and viral transcript levels could be related to differences in permissivity for the virus. By cell sorting according to CD74 levels prior to infection, we show that this is likely not the case; instead, these changes seem to be induced by viral infection. Moreover, we see that higher viral transcript levels in CD74low cells is also accompanied by higher abundance of viral genomes, indicating that the level of viral transcripts is determined, at least initially, by the amount of incoming genomes, and this contributes to the extent of the effect on the host. Importantly, reactivation from HCMV latency happens in a very small population of cells even in experimental systems where the majority of cells are infected. We show here that CD74low monocytes, which carry higher viral transcript and viral genome levels, reactivate more efficiently. This indicates that the ability of monocytes to reactivate is associated with viral transcript expression and that the cells carrying higher viral loads in these models are functionally the latent cell population, as they are more likely to reactivate. Recently, B7H4 was suggested as a marker for monocytes with higher levels of HCMV genomes from HCMV seropositive individuals (Zhu et al., 2018), however, we could not detect expression of B7H4 mRNA in any of our RNA-seq samples. Moreover, by staining for B7H4, we could not identify a distinct B7H4 positive monocyte population and did not detect higher levels of HCMV genomes in the top 2% B7H4 sorted cells. According to available human datasets, B7H4 is indeed not expressed in healthy monocytes (Blood Atlas, 2019), however, these differences may stem from sampling of different donors or due to other variables related to the isolation of the cells.\n\nOur analysis indicates that the cells that have higher expression of viral genes are less immune-responsive including reduced response to interferons. Since the CD74high and CD74low monocytes we analyzed grew in the same culture, they were exposed to the same immune-extrinsic signals. Hence, this difference is intrinsic to specific cells, and may be actively induced by the virus. This is supported by a recent report showing that interferon induced genes are downregulated during latent infection of CD14+ monocytes (Elder et al., 2019). This anergic-like state is functionally related to the ability of the virus to express viral transcripts and to reactivate, as inhibiting the response to interferons resulted in increased expression of viral transcripts as well as increased reactivation efficiency. The importance of the role interferon plays in latent infection is further supported by the fact that CMV replication can be inhibited in otherwise permissive cells by treatment with interferon beta (Da\u011f et al., 2014). Similarly, extrinsic interferon stimuli inhibited HSV-1 reactivation from latency in neuronal cells (Linderman et al., 2017). Importantly, blocking interferon signaling increases viral gene expression even when done up to 3dpi, suggesting that there is continuous viral gene expression. However, the effect was smaller when the inhibitor was added later along infection, indicating a gradual repression of viral gene expression with time. Overall, these findings indicate that a major aspect of the maintenance of latency and of the ability to reactivate at the cellular level is a balance between opposing forces which also affect each other- the intrinsic immune response, specifically the interferon pathway, and viral transcript levels. Future work will have to delineate the mechanisms by which these immune response pathways control general viral transcription and how viral transcripts and viral proteins modulate the immune response during latent infection.\n\nPrevious works have described changes in the differentiation state of monocytes in response to infection or to specific viral genes (Avdic et al., 2013; Chan et al., 2008; Smith et al., 2004). The use of the CD74 marker, allowed us to focus on differentiation processes unique to the CD14+ monocytes with higher viral transcript levels and higher reactivation efficiencies. We show that higher viral transcript levels are associated with less expression of monocyte priming signature and lower expression of a gene signature associated with M2 phenotype. It was previously shown that the HCMV encoded IL-10 homolog polarizes monocytes towards an M2c macrophage phenotype (Avdic et al., 2013). It is possible that the total population is indeed polarized towards this direction; however, this process may be inhibited in cells with higher viral transcript levels. These findings may suggest that the virus promotes attenuation of differentiation processes that monocytes are undergoing in culture and in the blood (Patel et al., 2017).\n\nExamining the differentiation state in HSPCs following infection is far more complicated than in monocytes, as CD34+ HSPCs are a mix of pluripotent cells as well as progenitor cells in different stages of lineage commitment (Velten et al., 2017). By applying single cell trajectory analysis, which allows recovery of gene expression kinetics of differentiating cells (Trapnell et al., 2014), and aligning our data with data of lineage commitment during hematopoiesis (Velten et al., 2017), we show that cells containing detectable viral transcripts belong largely to one specific population- cells primed towards the monocyte lineage. From our data, we cannot determine whether this is due to preferential infection by HCMV of monocyte lineage committed cells within the HSPC compartment or whether HCMV infects multipotent cells, which are then either preferentially skewed towards the monocytic lineage or viral gene expression is initiated only when cells start to differentiate in the monocytes lineage. However since it was previously demonstrated that multipotent cells are infected with HCMV (Goodrum et al., 2004), the latter options are more likely. Previous studies demonstrated that HCMV infection leads to an increase in monocyte markers (Zhu et al., 2018) and similar results were shown specifically for the viral gene UL7 (Crawford et al., 2018). Our results are in line with these studies and show directly and in an unbiased manner that several days post infection, viral gene expression can be found only in cells in the monocyte lineage. Moreover, within the monocyte lineage primed cells, the cells exhibiting higher viral transcript levels show the same markers and characteristics as we found when infecting CD14+ monocytes, primarily lower expression of CD74 and weaker immune responsiveness. This is especially interesting as it suggests that regardless of the developmental stage in which HCMV infects, the end point, a few days after infection, are cells with very similar characteristics.\n\nOverall, we use here single cell data to pinpoint the characteristics of the latently infected cells in an unbiased manner. Our analyses indicate that HCMV drives human HSPCs and monocytes into a monocyte state characterized by anergic-like gene signature. These findings shed light on the characteristics of the latent reservoir, which may help in the effort of developing strategies to eradicate the latently infected cells.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Cell line (Homo-sapiens)</td>\n      <td>Primary human foreskin fibroblasts (HFF)</td>\n      <td>ATCC</td>\n      <td>Cat#: CRL-1634</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (HCMV virus)</td>\n      <td>TB40E-GFP</td>\n      <td>O'Connor and Murphy, 2012; Sinzger et al., 2008a</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti-human APC-CD74 (Mouse monoclonal)</td>\n      <td>Miltenyi Biotec</td>\n      <td>Clone: 5\u2013329 RRID:AB_2659190</td>\n      <td>1:200</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti-human PE-HLA-DR, DP, DQ (recombinant)</td>\n      <td>Miltenyi Biotec</td>\n      <td>clone: REA332 RRID:AB_2652177</td>\n      <td>1:200</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti-human FITC-CD14 (Mouse monoclonal)</td>\n      <td>Miltenyi Biotec</td>\n      <td>Clone: T\u00dcK4 RRID:AB_244303</td>\n      <td>1:200</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti-human APC-B7H4 (Mouse monoclonal)</td>\n      <td>Biolegend</td>\n      <td>clone: MIH43 RRID:AB_2562580</td>\n      <td>1:200</td>\n    </tr>\n    <tr>\n      <td>Antibody (isotype control)</td>\n      <td>APC-Mouse IgG1 isotype control (Mouse monoclonal)</td>\n      <td>Biolegend</td>\n      <td>clone: MOPC-21 RRID:AB_326443</td>\n      <td>1:200</td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>Human CMV HHV5 kit for qPCR using a glycoprotein B target</td>\n      <td>PrimerDesign</td>\n      <td>Cat#: Path-HHV5</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>HEX labeled RPP30 copy number assay for ddPCR</td>\n      <td>Bio-Rad</td>\n      <td>Cat#: dHsaCP1000485</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Ruxolitinib</td>\n      <td>InvivoGen</td>\n      <td>Cat#: tlrl-rux</td>\n      <td>4 \u00b5M</td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>Human GM-CSF</td>\n      <td>Peprotech</td>\n      <td>Cat#: 300-03-20</td>\n      <td>1,000 U/ml</td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>Human IL-4</td>\n      <td>Peprotech</td>\n      <td>Cat#: 200-04-20</td>\n      <td>1,000 U/ml</td>\n    </tr>\n    <tr>\n      <td>Biological compound (E.\u00a0coli 0111:B4)</td>\n      <td>LPS</td>\n      <td>Sigma</td>\n      <td>Cat#: L4391</td>\n      <td>500 ng/ml</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>R 3.5.1</td>\n      <td>https://www.r-project.org/</td>\n      <td>RRID:SCR_001905</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Monocle 2.10.1</td>\n      <td>http://cole-trapnell-lab.github.io/monocle-release/</td>\n      <td>2.10.1</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>DESeq2 1.22.2</td>\n      <td>https://bioconductor.org/packages/release/bioc/html/DESeq2.html</td>\n      <td>RRID:SCR_015687</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>enrichplot</td>\n      <td>https://github.com/GuangchuangYu/enrichplot</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>GSEA 3.0</td>\n      <td>http://software.broadinstitute.org/gsea/index.jsp</td>\n      <td>RRID:SCR_003199</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>MSigDB 6.2</td>\n      <td>http://software.broadinstitute.org/gsea/index.jsp</td>\n      <td>RRID:SCR_016863</td>\n      <td>Database used for GSEA</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>CellRanger 2.0.0</td>\n      <td>https://support.10xgenomics.com/single-cell-gene-expression/software/pipelines/latest/what-is-cell-ranger</td>\n      <td>RRID:SCR_017344</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>lme4 1.1\u201321</td>\n      <td>https://cran.r-project.org/web/packages/lme4/index.html</td>\n      <td>RRID:SCR_015654</td>\n      <td>R package</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Bowtie2 2.2.9</td>\n      <td>http://bowtie-bio.sourceforge.net/bowtie2/index.shtml</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Rtsne 0.15</td>\n      <td>https://cran.r-project.org/web/packages/Rtsne/index.html</td>\n      <td>RRID:SCR_016342</td>\n      <td>R package</td>\n    </tr>\n  </tbody>\n</table>\n\n### Cells and virus stocks\n\nPrimary CD14+ monocytes were isolated from fresh venous blood, obtained from healthy donors, using Lymphoprep (Stemcell Technologies) density gradient followed by magnetic cell sorting with CD14+\u200f magnetic beads (Miltenyi Biotec). The cells were cultured in X-Vivo15 media (Lonza) supplemented with 2.25 mM L-glutamine at 37\u2070C in 5% CO2 (Fortunato, 2014). Primary human foreskin fibroblasts (HFF) (ATCC CRL-1634) were maintained in DMEM with 10% fetal bovine serum (FBS), 2 mM L-glutamine, and 100 units/ml penicillin and streptomycin (Beit-Haemek, Israel).\n\nThe TB40E virus containing an SV40-GFP tag (TB40E-GFP) was described previously (O'Connor and Murphy, 2012; Sinzger et al., 2008b). Virus was propagated by electroporation of infectious bacterial artificial chromosome (BAC) DNA into fibroblasts using the Amaxa P2 4D-Nucleofector kit (Lonza) according to the manufacturer\u2019s instructions. Viral stocks were concentrated by centrifugation at 26000xg, 4\u2070C for 120 min. Infectious virus yields were assayed on THP-1 cells (ATCC TIB-202).\n\n### Infection and reactivation procedures\n\nFor experimental latent infection, CD14+ monocytes were incubated with the virus for 3 hr, washed twice and supplemented with fresh media. To assess infection efficiency, a sample of the infected cell population was FACS analyzed for GFP expression at 3dpi. All experiments were conducted when there was a shift in GFP intensity of the entire population following infection, indicating all cells were infected. HCMV latency was validated by absence of GFP positive plaques on fibroblasts incubated with infected monocytes cell lysate.\n\nFor reactivation assays, infected monocytes were counted, plated and co-cultured with primary fibroblasts immediately or following differentiation into dendritic cells (DCs). DC differentiation was done by incubation of cells with granulocyte-macrophage CSF and interleukin-4 (Peprotech) at 1,000 U/ml for 5 days, followed by stimulation with 500 ng/ml of LPS (Sigma) for 48 hr (as previously described in Cobbs et al., 2014). Release of infectious virions was assayed by quantification of GFP positive plaques on the fibroblasts monolayer.\n\n### Ruxolitinib treatment\n\nRuxolitinib (Ruxo) was added at a concentration of 4 uM, either immediately after infection (3hpi) or at later time points (1, 2, or 3dpi). Monocytes were washed to remove residual Ruxo before co-culturing with fibroblasts.\n\n### Quantitative real-time PCR analysis\n\nFor analysis of RNA expression, total RNA was extracted using Tri-Reagent (Sigma) according to manufacturer\u2019s protocol. cDNA was prepared using qScript cDNA Synthesis Kit (Quanta Biosciences) according to manufacturer\u2019s protocol. For analysis of DNA levels, cells were lysed in a 1:1 mixture of PCR solutions A (100 mM KCl, 10 mM Tris\u2013HCl pH 8.3, and 2.5 mM MgCl2) and B (10 mM Tris\u2013HCl pH 8.3, 2.5 mM MgCl2, 1% Tween 20, 1% Non-idet P-40, and 0.4 mg/ml Proteinase K), for 60 min at 60\u00b0C followed by a 10 min 95\u00b0C incubation, as described in Roback et al. (2001). Real time PCR was performed using the SYBR Green PCR master-mix (ABI) on the QuantStudio 12K Flex (ABI) with the following primers (forward, reverse):\n\nViral DNA was quantified with RNA2.7 primers, host DNA was measured with the following primers (forward, reverse):\n\n### Cell staining for flow cytometry and sorting\n\nCells were counted, and stained in cold MACS buffer (PBS, 5% BSA, 2 mM EDTA). Cell staining was done using the following antibodies: anti-human APC-CD74 (Clone: 5\u2013329, Miltenyi Biotec), anti-human PE-HLA-DR, DP, DQ (clone: REA332, Miltenyi Biotec), anti-human FITC-CD14 (Clone: T\u00dcK4, Miltenyi Biotec), anti-human APC-B7H4 (clone: MIH43, Biolegend), APC-Mouse IgG1 isotype control (clone: MOPC-21, Biolegend) according to manufacturer\u2019s instructions. Cells were analyzed and sorted on a BD FACSAriaIII.\n\n### Detection of viral genomes by digital PCR\n\nDetection of viral DNA in monocytes from natural latent samples was done using the QX200 droplet digital PCR system (Bio-Rad), using FAM labeled HCMV primer and probe: Human CMV HHV5 kit for qPCR using a glycoprotein B target (PrimerDesign); and HEX labeled RPP30 copy number assay for ddPCR (Bio-Rad), as previously described (Jackson et al., 2017). Calibration curve was ran in duplicate, using CMV positive control template (PrimerDesign). The limit of detection was 3 events per sample, with accuracy improved at 10 copies and higher (Figure 5\u2014figure supplement 1). For sample preparation cells were counted, dry pelleted, and stored at \u221280\u00b0C prior to DNA extraction. DNA was extracted from the cell pellet in a 1:1 mixture of PCR solutions A (100 mM KCl, 10 mM Tris\u2013HCl pH 8.3, and 2.5 mM MgCl2) and B (10 mM Tris\u2013HCl pH 8.3, 2.5 mM MgCl2, 0.25% Tween 20, 0.25% Non-idet P-40, and 0.4 mg/ml Proteinase K), for 60 min at 60\u00b0C followed by a 10 min 95\u00b0C incubation, according to the description in Roback et al. (2001).\n\n### RNA library construction\n\nRNA libraries were generated from samples of\u00a0~10,000 cells according to the MARS-seq protocol (Jaitin et al., 2014; Keren-Shaul et al., 2019).\n\n### Sequencing and data analysis\n\nRNA-Seq libraries (pooled at equimolar concentration) were performed in duplicates and sequenced using NextSeq 500 (Illumina), with read parameters: Read1: 72 cycles and Read2: 15 cycles.\n\nAnalysis of bulk MARS-seq of CD14+ monocytes, sorted according to the CD74 cell-surface levels, was done as described previously (Shnayder et al., 2018). The number of Unique Molecular Identifiers (UMIs) were: 976,294, and 947,474 for the CD74high samples, 902,150, and 844,872 for the CD74low samples (Figure 6A\u2013E); 2,422,356 and 2,395,329 for the \u2013Ruxo 3dpi samples, 2,187,290 and 925,362 for the +Ruxo 3dpi samples, 4,228,168 and 3,854,339 for the \u2013Ruxo 6dpi samples and 3,449,188 and 1,900,301 for the +Ruxo 6dpi samples (Figure 7A and B); 2,076,741 and 1,858,871 for the +Ruxo at 1dpi samples, 1,914,289 and 1,163,469 for the +Ruxo at 2dpi samples, 1,554,298 and 1,685,834 for the +Ruxo at 3dpi samples, 2,004,859 and 2,450,039 for the \u2013Ruxo control (Figure 7C).\n\nReads for gene expression and correlation analyses were normalized using DEseq2.\n\nBased on the t-SNE plot of the CD14+ monocyte cells in Shnayder et al. (2018), the latent cells were defined as all cells besides the small distinct group of cells that show high levels of viral reads (mean 9.5%). All the analyses in this paper include only the remaining 3,416 cells.\n\n### Correlation and t-SNE coloring\n\nFor calculating the Spearman correlation between host genes and either viral expression levels or dpi, in each cell, the sum of viral reads was normalized to the total number of reads in the cell, and the number of reads of each host gene was normalized to the total number of host reads in the cell. The correlation was calculated across 1,448 cells for 6997 genes. Cells with no viral reads, or with less than 700 different host genes expressed, were omitted. Genes with total number of reads less than 20 were ignored. The Z-score was calculated based on the mean and the standard deviation calculated over all 6997 genes.\n\nColor coding of t-SNE (Figure 1C, Figure 6D and Figure 7B) or Monocle (e.g. Figure 7C, G, H) plots for expression levels of groups of genes was calculated according to the average relative expression as follows: First, genes with low level of expression, that\u00a0is expressed in less than 50 cells, were omitted. Next, the number of host reads per cell was normalized so that all cells will include the same number of reads. Next, for each cell and each gene, the relative expression is calculated as $log_{2}(\\frac{r_{ij}+1}{r_{i}-+1})$ where $r_{ij}$ is the number of reads of gene $i$ in cell $j$ and $r_{i}-$ is the average number of reads of gene $i$ over all cells. Finally, for each cell the average $log_{2}$\u00a0relative expression over all genes in the group was calculated.\n\n### Differential expression and enrichment analysis\n\nThe differential expression analysis was done with DESeq2 (version 1.22.2) (Love et al., 2014) using default parameters, with the number of reads in each of the samples as an input. The normalized number of reads according to DESeq2 were used for enrichment analysis using GSEA (version 3.0) (Subramanian et al., 2005). The genes sets that were used were GO biological process (c5.bp) and REACTOME (c2.cp.reactome) from MSigDB (version 6.2) (Liberzon et al., 2011) and the monocyte progenitor gene list from Velten et al. (2017). The GSEA plots were created based on the GSEA output with the R package enrichplot. To calculate differential expression and pathway enrichment within the distinct group of cells that expressed monocyte priming markers, we used the graph-based clustering of the Cell Ranger software, stratifying this group of cells into two distinct clusters and GSEA (version 3.0) (Subramanian et al., 2005) for pathway enrichment. Differential expression and enrichment analysis were done on these two clusters. Enrichment of M1 and M2 associated genes was done by hypergeometric test taking all genes with mean expression\u00a0\u22655 as background.\n\n### Monocle analysis\n\nCD34+ cells were ordered according to the predicted pseudo-time using Monocle (version 2.10.1) (Trapnell et al., 2014). The cells used in this analysis were filtered to have at least 1000 expressed genes and not more than 10,000 UMIs, while the genes were filtered to have mean expression greater than 0.1, and empirical dispersion greater than the global dispersion fit.\n\n### Ethics statement\n\nAll fresh peripheral blood samples were obtained after approval of protocols by the Weizmann Institutional Review Board (IRB application 92\u20131). The study using HSCT recipient samples was approved by the Human Research Ethics Committee of the University of Sydney and the Western Sydney Local Health District. Informed consent was obtained from all study participants prior to enrolment in accordance with the Declaration of Helsinki.\n",
+      "created_at": "2025-12-02T14:44:42.208223Z"
+    },
+    {
+      "id": "cd5289d0-d108-4e50-bafc-3d56f5c82024",
+      "submission_id": "4ba36e60-a6f4-43b2-8529-57716eb77198",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Melanie M Brinkmann, Technische Universit\u00e4t Braunschweig Germany\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.52168.sa1](https://doi.org/10.7554/eLife.52168.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nThe human pathogen Human Cytomegalovirus (HCMV) causes a lifelong infection and achieves this through effective modulation of the host's immune response and establishment of a dormant state called latency. Reactivation from latency can cause life threatening disease. Our understanding of the molecular mechanisms of HCMV latency is far from complete. This study comprehensively characterizes, by applying single cell RNA-seq analysis, latency in monocytes and hematopoietic stem and progenitor cells (HSPCs). The authors identify monocyte cell surface markers that enable enrichment of latent cells which harbor higher viral transcript levels and can reactivate more efficiently. Importantly, these cells are characterized by reduced intrinsic immune responses, which is important for viral gene expression. For HSPCs latently infected with HCMV, viral transcripts could only be detected in monocyte progenitors, and these were also associated with reduced immune responses. In conclusion, this study shows that HCMV drives hematopoietic cells towards a weaker immune-responsive state, which is crucial for the virus to eventually reactivate and cause disease.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Single cell analysis reveals human cytomegalovirus drives latently infected cells towards an anergic-like monocyte state\" for consideration by eLife. Your article has been reviewed by three peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation has been overseen by P\u00e4ivi Ojala as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Lars D\u00f6lken (Reviewer #2).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission. Overall, the reviewers were very impressed with the data and how it was presented.\n\nSummary:\n\nIn their manuscript entitled \"Single cell analysis reveals human cytomegalovirus drives latently infected cells towards an anergic-like monocyte state\", the authors employ scRNA-seq to analyze determinants that are associated with HCMV latency. They identify surface expression of MHCII and the MHCII chaperon CD74 to be inversely correlated with viral transcript levels. They go on to show that these differences are not due to differences in virus entry but are rather induced upon virus entry. They show that cells exhibiting higher viral transcript levels support more efficient reactivation. The same phenotype was observed in HSPC-derived monocytes indicating that HCMV infection drives an immunologically anergic-like state of monocytic cells.\n\nEssential revisions:\n\n1) Figure 3: A useful experiment for Figure 2 or Figure 3 would be to quantify the increase in CD74 surface expression upon infection by FACS (histograms of CD74 signal at 0-14dpi). It would be interesting to see whether the distribution of CD74 surface expression is normally distributed before infection, and particularly whether it becomes bimodal/multimodal upon infection, as predicted from the scRNA-seq data. This would also support the conclusion from Figure 2, especially if the viral load could also be measured and would show lower values in cells with higher CD74 surface expression.\n\n2) The authors show that viral gene expression in both CD14+ monocytes and HSPC essentially resembles late stage infection regarding the distribution of viral mRNA levels of the individual viral genes. As many viral genes act as immune evasins, it is not surprising that cells that express higher levels of these viral genes show signs of a counter-regulated IFNgamma response, namely a reduction in MHCII and CD74 surface levels. Furthermore, it is not surprising that this also augments virus reactivation. The million-dollar-question, however, is how it is possible that viral gene expression so closely matches the profile which is observed in late lytic infection despite no apparent DNA replication. The data obtained using ruxolitinib to inhibit IFN signaling provide strong evidence that the observed viral gene expression indeed results from de novo transcriptional activity and not from virion-associated RNA (the authors may want to state this in the Discussion). The key open question, however, is at what time after infection this viral gene expression occurs. It could either occur immediately after virus entry and then be more and more efficiently silenced, or it could be rather continuous thereby reflecting \"true latent\" viral gene expression. To clarify this important question, the authors should infect monocytes with HCMV and apply ruxolitinib at different time of infection and analyze the extent and expression profile of viral genes at 6dpi. This could e.g. comprise the following conditions: (i) ruxolitinib applied immediately with the virus, (ii) at 1dpi, (ii) at 2dpi, (iii) at 3 dpi, (iv) at 4 dpi and (v) at 5 dpi. Furthermore, they should apply ruxolitinib for the first three days and then replace the media with conditioned media from HCMV-infected monocytes. In case viral gene expression only occurs within the first 1-2 days post infection and is then efficiently silenced, treatment with ruxolitinib later on should not make any difference.\n",
+      "created_at": "2025-12-02T14:44:42.208223Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T14:44:42.208223Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T14:44:42.208223Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "4271d62e-f527-4618-a5aa-8b0ed9049781",
+      "content_id": "abd3897d-c44b-4797-8ae7-acb845d1fd8b",
+      "claim_id": "C1",
+      "claim": "Human cytomegalovirus (HCMV) infects the majority of the human population worldwide.",
+      "claim_type": "EXPLICIT",
+      "source": "Human cytomegalovirus (HCMV) is a prevalent pathogen of the beta-herpesvirus family, infecting the majority of the human population worldwide (Staras et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Staras et al., 2006",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:44:42.208223Z"
+    },
+    {
+      "id": "134ddd2a-f2a1-4c03-86eb-7ccd1c6dece3",
+      "content_id": "abd3897d-c44b-4797-8ae7-acb845d1fd8b",
+      "claim_id": "C2",
+      "claim": "Following primary infection, HCMV persists through the lifetime of the host by establishing latency.",
+      "claim_type": "EXPLICIT",
+      "source": "Following primary infection, HCMV persists through the lifetime of the host by establishing latency.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by established scientific knowledge about HCMV infection",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:44:42.208223Z"
+    },
+    {
+      "id": "a00c1a8a-d9b7-4330-bda0-cfa868066a2a",
+      "content_id": "abd3897d-c44b-4797-8ae7-acb845d1fd8b",
+      "claim_id": "C3",
+      "claim": "In the latent state, no viral progeny is produced but the virus maintains the capacity to reactivate.",
+      "claim_type": "EXPLICIT",
+      "source": "In the latent state, no viral progeny is produced but the virus maintains the capacity to reactivate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by established scientific knowledge about viral latency",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:44:42.208223Z"
+    },
+    {
+      "id": "1873054a-d896-4fa7-8fc1-9016e658ee4e",
+      "content_id": "abd3897d-c44b-4797-8ae7-acb845d1fd8b",
+      "claim_id": "C4",
+      "claim": "Reactivation in immunocompromised individuals, such as transplant recipients and HIV patients, leads to severe illness and mortality.",
+      "claim_type": "EXPLICIT",
+      "source": "Reactivation in immunocompromised individuals, such as transplant recipients and HIV patients, leads to severe illness and mortality (Crough and Khanna, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Crough and Khanna, 2009",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:44:42.208223Z"
+    },
+    {
+      "id": "1ea75c2b-a4c5-4b7c-a77c-c6f53aee08ac",
+      "content_id": "abd3897d-c44b-4797-8ae7-acb845d1fd8b",
+      "claim_id": "C5",
+      "claim": "There is no treatment that targets the latent stage of HCMV.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite the significant health burden that accompanies HCMV reactivation from latency, to date there is no treatment that targets the latent stage and the processes governing latency and reactivation are far from fully understood.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by established knowledge about current HCMV treatments",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:44:42.208223Z"
+    },
+    {
+      "id": "0e509165-7b9e-4c32-a722-3001411f872c",
+      "content_id": "abd3897d-c44b-4797-8ae7-acb845d1fd8b",
+      "claim_id": "C6",
+      "claim": "HCMV has a wide cell tropism within its human host.",
+      "claim_type": "EXPLICIT",
+      "source": "HCMV has a wide cell tropism within its human host (Mocarski and Shenk, 2013), with most cell types supporting lytic replication (Sinzger et al., 2008a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Mocarski and Shenk, 2013 and Sinzger et al., 2008a",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:44:42.208223Z"
+    },
+    {
+      "id": "d9523f27-25f8-4b9e-9d2d-6873a853d6c1",
+      "content_id": "abd3897d-c44b-4797-8ae7-acb845d1fd8b",
+      "claim_id": "C7",
+      "claim": "Most cell types support lytic replication of HCMV.",
+      "claim_type": "EXPLICIT",
+      "source": "HCMV has a wide cell tropism within its human host (Mocarski and Shenk, 2013), with most cell types supporting lytic replication (Sinzger et al., 2008a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Sinzger et al., 2008a",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:44:42.208223Z"
+    },
+    {
+      "id": "cfa02519-d051-48e3-a8a8-748212e2e934",
+      "content_id": "abd3897d-c44b-4797-8ae7-acb845d1fd8b",
+      "claim_id": "C8",
+      "claim": "Latent HCMV infection has been characterized in CD34+ hematopoietic stem and progenitor cells (HSPCs) in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, latent infection has so far been characterized in cells of the early myeloid lineage, including CD34+ hematopoietic stem and progenitor cells (HSPCs) and CD14+ monocytes in vivo (Mendelson et al., 1996; Taylor-Wiedeman et al., 1991; von Laer et al., 1995).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Mendelson et al., 1996; Taylor-Wiedeman et al., 1991; von Laer et al., 1995",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:44:42.208223Z"
+    },
+    {
+      "id": "730e2b51-5a20-47e4-be1a-4420283de485",
+      "content_id": "abd3897d-c44b-4797-8ae7-acb845d1fd8b",
+      "claim_id": "C9",
+      "claim": "Latent HCMV infection has been characterized in CD14+ monocytes in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, latent infection has so far been characterized in cells of the early myeloid lineage, including CD34+ hematopoietic stem and progenitor cells (HSPCs) and CD14+ monocytes in vivo (Mendelson et al., 1996; Taylor-Wiedeman et al., 1991; von Laer et al., 1995).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Mendelson et al., 1996; Taylor-Wiedeman et al., 1991; von Laer et al., 1995",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:44:42.208223Z"
+    },
+    {
+      "id": "b1e9c5c2-4936-485d-8032-c3f89080d8a3",
+      "content_id": "abd3897d-c44b-4797-8ae7-acb845d1fd8b",
+      "claim_id": "C10",
+      "claim": "CD14+ monocytes are short-lived cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Since CD14+ monocytes are short-lived cells it has been proposed that the latent reservoir resides in hematopoietic stem cells (HSCs) (Slobedman et al., 2010) and that latent monocytes support viral spread and persistence within the infected host (Stevenson et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by established knowledge about monocyte lifespan",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:44:42.208223Z"
+    },
+    {
+      "id": "2161409a-a332-45b7-a8d0-a66cba56a9c0",
+      "content_id": "abd3897d-c44b-4797-8ae7-acb845d1fd8b",
+      "claim_id": "C11",
+      "claim": "The latent HCMV reservoir resides in hematopoietic stem cells (HSCs).",
+      "claim_type": "EXPLICIT",
+      "source": "Since CD14+ monocytes are short-lived cells it has been proposed that the latent reservoir resides in hematopoietic stem cells (HSCs) (Slobedman et al., 2010) and that latent monocytes support viral spread and persistence within the infected host (Stevenson et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Slobedman et al., 2010",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:44:42.208223Z"
+    },
+    {
+      "id": "7013f913-1afb-4a73-9461-6ccf26395279",
+      "content_id": "abd3897d-c44b-4797-8ae7-acb845d1fd8b",
+      "claim_id": "C12",
+      "claim": "Latent monocytes support viral spread and persistence within the infected host.",
+      "claim_type": "EXPLICIT",
+      "source": "Since CD14+ monocytes are short-lived cells it has been proposed that the latent reservoir resides in hematopoietic stem cells (HSCs) (Slobedman et al., 2010) and that latent monocytes support viral spread and persistence within the infected host (Stevenson et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Stevenson et al., 2014",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:44:42.208223Z"
+    },
+    {
+      "id": "3f6dbb4b-1aef-4d1a-a143-9915ccef74fc",
+      "content_id": "abd3897d-c44b-4797-8ae7-acb845d1fd8b",
+      "claim_id": "C13",
+      "claim": "Latent cells in HCMV seropositive individuals are scarce, estimated at 1:10,000 to 25,000.",
+      "claim_type": "EXPLICIT",
+      "source": "Latent cells in HCMV seropositive individuals are scarce and were estimated by PCR-driven in situ hybridization, at 1:10,000 to 25,000 with a copy number of 2 to 13 genomes per infected cell (Slobedman and Mocarski, 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Slobedman and Mocarski, 1999",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:44:42.208223Z"
+    },
+    {
+      "id": "d0050e11-52fb-459d-8c86-042055f432be",
+      "content_id": "abd3897d-c44b-4797-8ae7-acb845d1fd8b",
+      "claim_id": "C14",
+      "claim": "Latent HCMV-infected cells have a copy number of 2 to 13 genomes per infected cell.",
+      "claim_type": "EXPLICIT",
+      "source": "Latent cells in HCMV seropositive individuals are scarce and were estimated by PCR-driven in situ hybridization, at 1:10,000 to 25,000 with a copy number of 2 to 13 genomes per infected cell (Slobedman and Mocarski, 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Slobedman and Mocarski, 1999",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:44:42.208223Z"
+    },
+    {
+      "id": "952f2ae5-7cf0-48af-a9b4-aed18475fe97",
+      "content_id": "abd3897d-c44b-4797-8ae7-acb845d1fd8b",
+      "claim_id": "C15",
+      "claim": "Using digital PCR, viral genomes were detected in less than half of seropositive individuals.",
+      "claim_type": "EXPLICIT",
+      "source": "Using highly sensitive methodologies, such as digital PCR, viral genomes were detected in less than half of seropositive individuals and viral load was estimated at less than 10 genomes in 10,000 cells in most individuals (Jackson et al., 2017; Parry et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Jackson et al., 2017; Parry et al., 2016",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:44:42.208223Z"
+    },
+    {
+      "id": "c00b8d98-281a-4860-97b0-87c98d7fc50e",
+      "content_id": "abd3897d-c44b-4797-8ae7-acb845d1fd8b",
+      "claim_id": "C16",
+      "claim": "Viral load was estimated at less than 10 genomes in 10,000 cells in most seropositive individuals.",
+      "claim_type": "EXPLICIT",
+      "source": "Using highly sensitive methodologies, such as digital PCR, viral genomes were detected in less than half of seropositive individuals and viral load was estimated at less than 10 genomes in 10,000 cells in most individuals (Jackson et al., 2017; Parry et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Jackson et al., 2017; Parry et al., 2016",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:44:42.208223Z"
+    },
+    {
+      "id": "5d438e79-de59-4777-ad60-5f79807945b6",
+      "content_id": "abd3897d-c44b-4797-8ae7-acb845d1fd8b",
+      "claim_id": "C17",
+      "claim": "The repertoire of viral genes expressed during latent infections is broader than initially appreciated.",
+      "claim_type": "EXPLICIT",
+      "source": "It is becoming increasingly evident that the repertoire of viral genes expressed during latent infections is broader than initially appreciated (Cheng et al., 2017; Schwartz and Stern-Ginossar, 2019; Shnayder et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Cheng et al., 2017; Schwartz and Stern-Ginossar, 2019; Shnayder et al., 2018",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:44:42.208223Z"
+    },
+    {
+      "id": "ba883511-c6c5-4c95-8d75-aca92384c6f7",
+      "content_id": "abd3897d-c44b-4797-8ae7-acb845d1fd8b",
+      "claim_id": "C18",
+      "claim": "HCMV infection drives changes in host cells during latency.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite low expression of viral transcripts, a number of studies have described infection driven changes in host cells during HCMV latency (Chan et al., 2010; Kew et al., 2017; Reeves et al., 2012; Slobedman et al., 2002; Smith et al., 2007; Smith et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Chan et al., 2010; Kew et al., 2017; Reeves et al., 2012; Slobedman et al., 2002; Smith et al., 2007; Smith et al., 2004",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:44:42.208223Z"
+    },
+    {
+      "id": "45354a09-80da-435f-aa7b-65c37083891e",
+      "content_id": "abd3897d-c44b-4797-8ae7-acb845d1fd8b",
+      "claim_id": "C19",
+      "claim": "Monocyte infection was proposed to promote differentiation to macrophages with specific polarization towards genes that mark M1 phenotype with some atypical attributes.",
+      "claim_type": "EXPLICIT",
+      "source": "Monocyte infection was proposed to promote differentiation to macrophages with specific polarization towards genes that mark M1 phenotype with some atypical attributes (Chan et al., 2008; Smith et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Chan et al., 2008; Smith et al., 2004",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:44:42.208223Z"
+    },
+    {
+      "id": "3ed451e4-f896-4e43-8e99-f7670c002436",
+      "content_id": "abd3897d-c44b-4797-8ae7-acb845d1fd8b",
+      "claim_id": "C20",
+      "claim": "The viral homolog of human interleukin-10, encoded by UL111A, polarizes monocytes into an anti-inflammatory M2 subset.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand it was shown that the viral homolog of human interleukin-10, encoded by UL111A, polarizes monocytes into an anti-inflammatory M2 subset (Avdic et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Avdic et al., 2013",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:44:42.208223Z"
+    },
+    {
+      "id": "64077a26-2fd1-4d2e-b641-48e22a51aca3",
+      "content_id": "abd3897d-c44b-4797-8ae7-acb845d1fd8b",
+      "claim_id": "C21",
+      "claim": "The UL7 viral protein binds Fms-like tyrosine kinase three receptor (Flt-3R), inducing differentiation of HSPCs to monocytes and of monocytes to macrophages.",
+      "claim_type": "EXPLICIT",
+      "source": "The UL7 viral protein was found to bind Fms-like tyrosine kinase three receptor (Flt-3R), inducing differentiation of HSPCs to monocytes and of monocytes to macrophages (Crawford et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Crawford et al., 2018",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:44:42.208223Z"
+    },
+    {
+      "id": "e4d34b5c-4523-4771-a3e1-4ce9496683fb",
+      "content_id": "abd3897d-c44b-4797-8ae7-acb845d1fd8b",
+      "claim_id": "C22",
+      "claim": "Analysis of HCMV-infected HSPCs revealed reprogramming of HSPCs into immune-suppressive monocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, analysis of HCMV- infected HSPCs revealed reprogramming of HSPCs into immune-suppressive monocytes (Zhu et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Zhu et al., 2018",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:44:42.208223Z"
+    },
+    {
+      "id": "e1f8a063-a66f-4265-be64-8414308c451f",
+      "content_id": "abd3897d-c44b-4797-8ae7-acb845d1fd8b",
+      "claim_id": "C23",
+      "claim": "Single cell RNA-seq provides a unique opportunity to depict viral and host heterogeneity simultaneously.",
+      "claim_type": "EXPLICIT",
+      "source": "Single cell-RNA-seq (scRNA-seq) provides a unique opportunity to depict viral and host heterogeneity simultaneously and thus to uncover functional connections between the cellular environment and viral gene expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by established knowledge about scRNA-seq capabilities",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:44:42.208223Z"
+    },
+    {
+      "id": "18be7411-0cfb-46b1-9b49-0694ca52f7b6",
+      "content_id": "abd3897d-c44b-4797-8ae7-acb845d1fd8b",
+      "claim_id": "C24",
+      "claim": "Several recent works that applied single cell transcriptomics revealed novel insights into the complexity of the host response and cellular permissiveness for a number of well-studied viruses.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, several recent works that applied single cell transcriptomics, revealed novel insights into the complexity of the host response and cellular permissiveness for a number of well-studied viruses (Douam et al., 2017; Drayman et al., 2019; Galinato et al., 2018; Rato et al., 2017; Russell et al., 2018; Steuerman et al., 2018; Wyler et al., 2019; Zanini et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Douam et al., 2017; Drayman et al., 2019; Galinato et al., 2018; Rato et al., 2017; Russell et al., 2018; Steuerman et al., 2018; Wyler et al., 2019; Zanini et al., 2018",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:44:42.208223Z"
+    },
+    {
+      "id": "525d0750-2f85-4cdf-9f8d-c1fa294e8a8a",
+      "content_id": "abd3897d-c44b-4797-8ae7-acb845d1fd8b",
+      "claim_id": "C25",
+      "claim": "In CD14+ monocytes, two cellular cell surface markers, MHCII and CD74, show expression inversely-correlated with viral transcript levels.",
+      "claim_type": "EXPLICIT",
+      "source": "In CD14+ monocytes, we identified two cellular cell surface markers, MHCII and its chaperon CD74, whose expression is inversely-correlated with viral transcript levels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data from the study's scRNA-seq analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:44:42.208223Z"
+    },
+    {
+      "id": "1a3501ed-fa9b-4ab0-a60c-f2bbb13892ff",
+      "content_id": "abd3897d-c44b-4797-8ae7-acb845d1fd8b",
+      "claim_id": "C26",
+      "claim": "CD74 and MHCII markers allow separating between cells harboring higher and lower viral transcript levels.",
+      "claim_type": "EXPLICIT",
+      "source": "We demonstrate these markers allow separating between cells harboring higher and lower viral transcript levels, that these differences are induced by HCMV infection and that the cells exhibiting higher viral transcript levels support more efficient reactivation of HCMV from latency.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data from FACS sorting and qPCR analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:44:42.208223Z"
+    },
+    {
+      "id": "91321b6b-07c6-476d-9882-d86e611b7585",
+      "content_id": "abd3897d-c44b-4797-8ae7-acb845d1fd8b",
+      "claim_id": "C27",
+      "claim": "Differences in CD74 and MHCII expression are induced by HCMV infection.",
+      "claim_type": "EXPLICIT",
+      "source": "We demonstrate these markers allow separating between cells harboring higher and lower viral transcript levels, that these differences are induced by HCMV infection and that the cells exhibiting higher viral transcript levels support more efficient reactivation of HCMV from latency.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data showing no differences at early time points post-infection",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:44:42.208223Z"
+    },
+    {
+      "id": "2cc15105-8183-4dd6-b85f-29fdc78eaa01",
+      "content_id": "abd3897d-c44b-4797-8ae7-acb845d1fd8b",
+      "claim_id": "C28",
+      "claim": "Cells exhibiting higher viral transcript levels support more efficient reactivation of HCMV from latency.",
+      "claim_type": "EXPLICIT",
+      "source": "We demonstrate these markers allow separating between cells harboring higher and lower viral transcript levels, that these differences are induced by HCMV infection and that the cells exhibiting higher viral transcript levels support more efficient reactivation of HCMV from latency.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data from reactivation assays",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:44:42.208223Z"
+    },
+    {
+      "id": "cf7da9cc-c26a-4e2a-be14-0e0c8852c5c6",
+      "content_id": "abd3897d-c44b-4797-8ae7-acb845d1fd8b",
+      "claim_id": "C29",
+      "claim": "Latently infected cells display an intrinsic weaker immune response state that is important for viral gene expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Using these markers, we show that latently infected cells display an intrinsic weaker immune response state that is important for the viral ability to express its genes and reactivate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by RNA-seq data and ruxolitinib treatment experiments",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:44:42.208223Z"
+    },
+    {
+      "id": "d8ce1ad7-5916-45da-97c4-8b82473f22fd",
+      "content_id": "abd3897d-c44b-4797-8ae7-acb845d1fd8b",
+      "claim_id": "C30",
+      "claim": "In latent HSPCs, viral transcripts could be detected only in monocyte progenitors.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, analysis of 7500 infected HSPCs revealed very heterogeneous populations, but viral transcripts were only detected in cells expressing monocyte lineage markers, such as CD14.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by scRNA-seq data from infected HSPCs",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:44:42.208223Z"
+    },
+    {
+      "id": "36b64838-c967-47d4-ac0d-7d556fe2b895",
+      "content_id": "abd3897d-c44b-4797-8ae7-acb845d1fd8b",
+      "claim_id": "C31",
+      "claim": "In HSPC-derived monocytes, higher viral transcript levels were associated with lower expression of CD74.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, also in these HSPC-derived monocytes, higher viral transcript levels were associated with lower expression of CD74 and reduced immune response gene signature.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by scRNA-seq data from infected HSPCs",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:44:42.208223Z"
+    },
+    {
+      "id": "dc8be57c-a15b-4491-a136-854350f53432",
+      "content_id": "abd3897d-c44b-4797-8ae7-acb845d1fd8b",
+      "claim_id": "C32",
+      "claim": "In HSPC-derived monocytes, higher viral transcript levels were associated with reduced immune response gene signature.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, also in these HSPC-derived monocytes, higher viral transcript levels were associated with lower expression of CD74 and reduced immune response gene signature.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by scRNA-seq data from infected HSPCs",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:44:42.208223Z"
+    },
+    {
+      "id": "398f75f1-7a5f-443c-aa31-2128e5b873cb",
+      "content_id": "abd3897d-c44b-4797-8ae7-acb845d1fd8b",
+      "claim_id": "C33",
+      "claim": "HCMV drives hematopoietic cells towards a weaker immune-responsive monocyte state regardless of the developmental stage in which HCMV infects.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, our work indicates that regardless of the developmental stage in which HCMV infects, HCMV drives hematopoietic cells towards a weaker immune-responsive monocyte state and that this anergic-like state is crucial for the virus ability to express its transcripts and to eventually reactivate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data from both monocyte and HSPC infection models",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:44:42.208223Z"
+    },
+    {
+      "id": "e21444fb-75ee-42d1-834c-7462ae397bf1",
+      "content_id": "abd3897d-c44b-4797-8ae7-acb845d1fd8b",
+      "claim_id": "C34",
+      "claim": "The anergic-like state is crucial for the virus ability to express its transcripts and to eventually reactivate.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, our work indicates that regardless of the developmental stage in which HCMV infects, HCMV drives hematopoietic cells towards a weaker immune-responsive monocyte state and that this anergic-like state is crucial for the virus ability to express its transcripts and to eventually reactivate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data from ruxolitinib experiments showing increased viral expression and reactivation",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:44:42.208223Z"
+    },
+    {
+      "id": "602bea91-ba31-4c9b-9bad-6d27b8cdcbb5",
+      "content_id": "abd3897d-c44b-4797-8ae7-acb845d1fd8b",
+      "claim_id": "C35",
+      "claim": "Single cell RNA sequencing was performed on HCMV-infected CD14+ monocytes using the MARS-seq platform.",
+      "claim_type": "EXPLICIT",
+      "source": "We have previously performed single cell RNA sequencing (scRNA-seq) on HCMV- infected CD14+ monocytes as a model for studying HCMV latency (Shnayder et al., 2018). We used the Massively Parallel RNA Sequencing (MARS-seq) platform (Jaitin et al., 2014; Paul et al., 2015) to analyze experimentally infected primary CD14+ monocytes at different days post infection (dpi).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Shnayder et al., 2018 and description of methods",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:44:42.208223Z"
+    },
+    {
+      "id": "c277d8a4-75af-4d15-a424-225422587114",
+      "content_id": "abd3897d-c44b-4797-8ae7-acb845d1fd8b",
+      "claim_id": "C36",
+      "claim": "The scRNA-seq approach provided high coverage of cellular and viral transcriptomes, spanning expression of more than 11,000 genes in 3,655 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "This approach provided high coverage of cellular and viral transcriptomes, spanning expression of more than 11,000 genes in 3,655 cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data from the scRNA-seq experiment",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:44:42.208223Z"
+    },
+    {
+      "id": "e3914ba0-d38e-403b-bf22-f346691f8def",
+      "content_id": "abd3897d-c44b-4797-8ae7-acb845d1fd8b",
+      "claim_id": "C37",
+      "claim": "The viral transcriptome during HCMV latency largely mirrors a late lytic viral program, albeit at much lower levels of expression.",
+      "claim_type": "EXPLICIT",
+      "source": "We previously used this dataset to examine the viral transcriptome during HCMV latency, showing it largely mirrors a late lytic viral program, albeit at much lower levels of expression (Shnayder et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Shnayder et al., 2018",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:44:42.208223Z"
+    },
+    {
+      "id": "f30e9fb0-c7bf-4952-bd53-551933017b03",
+      "content_id": "abd3897d-c44b-4797-8ae7-acb845d1fd8b",
+      "claim_id": "C38",
+      "claim": "Viral transcript levels in the majority of the infected monocyte population was low to undetectable.",
+      "claim_type": "EXPLICIT",
+      "source": "Viral transcript levels in the majority of the infected monocyte population was low to undetectable and projection of the cells using t-distributed stochastic neighbor embedding (t-SNE) demonstrated that the cell distribution is determined mainly according to host gene expression variations (Shnayder et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Shnayder et al., 2018 and scRNA-seq data",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:44:42.208223Z"
+    },
+    {
+      "id": "c4f3efd4-dedd-41d3-b93a-84dceeb23e55",
+      "content_id": "abd3897d-c44b-4797-8ae7-acb845d1fd8b",
+      "claim_id": "C39",
+      "claim": "The cells are organized according to viral transcript levels in t-SNE projection.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, the cells are organized according to viral transcript levels (Shnayder et al., 2018) and Figure 1A), suggesting that much of the differences in host gene expression are associated with variation in viral transcript levels.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by citation to Shnayder et al., 2018 and Figure 1A",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:44:42.208223Z"
+    },
+    {
+      "id": "a73feb7c-95d2-49bf-9f3a-a979dc2ed3c5",
+      "content_id": "abd3897d-c44b-4797-8ae7-acb845d1fd8b",
+      "claim_id": "C40",
+      "claim": "319 cellular genes showed significant positive or negative correlations with viral gene expression (Z score >2).",
+      "claim_type": "EXPLICIT",
+      "source": "We therefore calculated Spearman correlation coefficient between the expression of each host gene and the total number of viral transcripts across all cells (Figure 1B). 319 cellular genes showed significant positive or negative correlations with viral gene expression (Z score >2, Figure 1\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data shown in Figure 1B and source data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:44:42.208223Z"
+    },
+    {
+      "id": "d8284bc9-211f-450f-b551-439f602132a8",
+      "content_id": "abd3897d-c44b-4797-8ae7-acb845d1fd8b",
+      "claim_id": "C41",
+      "claim": "Among the strongest co-varying genes were genes encoding for MHC class II and CD74.",
+      "claim_type": "EXPLICIT",
+      "source": "Among the strongest co-varying genes were genes encoding for MHC class II (variants HLA-DRB1/HLA-DPB1/HLA-DRA/HLA-DQB1/HLA-DPA1/HLA-DQA1/HLA-DMA/HLA-DRB5/HLA-DQA2 and HLA-DMB) and the transcript of CD74, an MHCII chaperon as well as a cell surface receptor on its own (Bergmann, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by correlation analysis data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:44:42.208223Z"
+    },
+    {
+      "id": "f93929db-36e1-44ef-928c-0ec52eacfda2",
+      "content_id": "abd3897d-c44b-4797-8ae7-acb845d1fd8b",
+      "claim_id": "C42",
+      "claim": "CD74 is an MHCII chaperon as well as a cell surface receptor on its own.",
+      "claim_type": "EXPLICIT",
+      "source": "Among the strongest co-varying genes were genes encoding for MHC class II (variants HLA-DRB1/HLA-DPB1/HLA-DRA/HLA-DQB1/HLA-DPA1/HLA-DQA1/HLA-DMA/HLA-DRB5/HLA-DQA2 and HLA-DMB) and the transcript of CD74, an MHCII chaperon as well as a cell surface receptor on its own (Bergmann, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Bergmann, 2012",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:44:42.208223Z"
+    },
+    {
+      "id": "941c7419-2d8f-4da5-b361-d063a651ba47",
+      "content_id": "abd3897d-c44b-4797-8ae7-acb845d1fd8b",
+      "claim_id": "C43",
+      "claim": "Across the infected monocyte population, the expression level of MHC class II showed clear inverse-correlation to viral transcript levels.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, across the infected monocyte population, the expression level of MHC class II (MHCII, Figure 1C) and CD74 (Figure 1D) showed clear inverse-correlation to viral transcript levels (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data shown in Figures 1A and 1C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:44:42.208223Z"
+    },
+    {
+      "id": "695ce30d-8c3b-406e-9da8-155534885067",
+      "content_id": "abd3897d-c44b-4797-8ae7-acb845d1fd8b",
+      "claim_id": "C44",
+      "claim": "Across the infected monocyte population, the expression level of CD74 showed clear inverse-correlation to viral transcript levels.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, across the infected monocyte population, the expression level of MHC class II (MHCII, Figure 1C) and CD74 (Figure 1D) showed clear inverse-correlation to viral transcript levels (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data shown in Figures 1A and 1D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:44:42.208223Z"
+    },
+    {
+      "id": "6d018c86-25a5-4d49-b192-bfe7d3f15cca",
+      "content_id": "abd3897d-c44b-4797-8ae7-acb845d1fd8b",
+      "claim_id": "C45",
+      "claim": "The expression of both CD74 and MHCII increase over time in culture, both in infected and in uninfected cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, we observed that the expression of both CD74 and MHCII increase over time in culture, both in infected and in uninfected cells (Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data shown in Figure 1\u2014figure supplement 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:44:42.208223Z"
+    },
+    {
+      "id": "bb680853-4875-4881-b089-2f06a8520b0e",
+      "content_id": "abd3897d-c44b-4797-8ae7-acb845d1fd8b",
+      "claim_id": "C46",
+      "claim": "CD74low monocyte populations express higher levels of viral transcripts compared to CD74high populations.",
+      "claim_type": "EXPLICIT",
+      "source": "RT-qPCR analysis of viral gene expression in these populations confirmed that both CD74low and MHCIIlow monocyte populations express higher levels of viral transcripts compared to their high expressing counterparts (Figure 2B and Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by RT-qPCR data shown in Figure 2B and supplement",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:44:42.208223Z"
+    },
+    {
+      "id": "585ace1b-baf1-4bc3-acd1-5b99c19a6ac3",
+      "content_id": "abd3897d-c44b-4797-8ae7-acb845d1fd8b",
+      "claim_id": "C47",
+      "claim": "MHCIIlow monocyte populations express higher levels of viral transcripts compared to MHCIIhigh populations.",
+      "claim_type": "EXPLICIT",
+      "source": "RT-qPCR analysis of viral gene expression in these populations confirmed that both CD74low and MHCIIlow monocyte populations express higher levels of viral transcripts compared to their high expressing counterparts (Figure 2B and Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by RT-qPCR data shown in Figure 2B and supplement",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:44:42.208223Z"
+    },
+    {
+      "id": "63d1f28d-ea68-4bb9-b24a-e40bcdcb07a2",
+      "content_id": "abd3897d-c44b-4797-8ae7-acb845d1fd8b",
+      "claim_id": "C48",
+      "claim": "The association of higher viral transcript levels with lower cell-surface levels of CD74 was maintained at 6dpi.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, the association of higher viral transcript levels with lower cell-surface levels of CD74 was also maintained at 6dpi (Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data shown in Figure 2\u2014figure supplement 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:44:42.208223Z"
+    },
+    {
+      "id": "2671d955-9468-45d2-b9d5-1d04acbf69f4",
+      "content_id": "abd3897d-c44b-4797-8ae7-acb845d1fd8b",
+      "claim_id": "C49",
+      "claim": "CD74 and MHCII are co-expressed and mark the same population.",
+      "claim_type": "EXPLICIT",
+      "source": "We next examined if MHCII and CD74 are independent markers or are co-expressed and therefore mark the same population. mRNA expression analysis of CD74 and MHCII cells sorted according to the cell-surface levels of CD74 and MHCII as well as analysis of their co-expression in the scRNA-seq data, confirmed that the two markers are co-expressed and probably can be used to sort similar subpopulations within the infected cell population (Figure 2C and Figure 2\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data shown in Figure 2C and Figure 2\u2014figure supplement 3",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:44:42.208223Z"
+    },
+    {
+      "id": "fa1ff081-d5c1-433e-9451-75ef5f7f1fb0",
+      "content_id": "abd3897d-c44b-4797-8ae7-acb845d1fd8b",
+      "claim_id": "C50",
+      "claim": "Higher viral transcript levels in CD74low monocytes are concurrent with higher abundance of viral genomes.",
+      "claim_type": "EXPLICIT",
+      "source": "qPCR Analysis of viral DNA levels demonstrated that higher viral transcript levels in CD74low monocytes are concurrent with higher abundance of viral genomes (Figure 2D) suggesting that differential loads of viral genome templates probably contribute to differential viral transcript levels and therefore to the effect on the host.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by qPCR data shown in Figure 2D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:44:42.208223Z"
+    },
+    {
+      "id": "dff8386e-a020-4a5a-b3a8-2800a6a9498b",
+      "content_id": "abd3897d-c44b-4797-8ae7-acb845d1fd8b",
+      "claim_id": "C51",
+      "claim": "Differential loads of viral genome templates probably contribute to differential viral transcript levels.",
+      "claim_type": "EXPLICIT",
+      "source": "qPCR Analysis of viral DNA levels demonstrated that higher viral transcript levels in CD74low monocytes are concurrent with higher abundance of viral genomes (Figure 2D) suggesting that differential loads of viral genome templates probably contribute to differential viral transcript levels and therefore to the effect on the host.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the correlation between viral DNA and RNA levels",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:44:42.208223Z"
+    },
+    {
+      "id": "c1e7984c-cfb2-42b7-81ee-f61aa1659c8f",
+      "content_id": "abd3897d-c44b-4797-8ae7-acb845d1fd8b",
+      "claim_id": "C52",
+      "claim": "No major changes in CD74 distribution following infection were observed.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we examined CD74 cell surface expression in infected and uninfected cells at different time points post infection but no major changes in CD74 distribution following infection were observed (Figure 2\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data shown in Figure 2\u2014figure supplement 4",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:44:42.208223Z"
+    },
+    {
+      "id": "3fdc1d48-e022-4a6d-8d53-01af386fe3b7",
+      "content_id": "abd3897d-c44b-4797-8ae7-acb845d1fd8b",
+      "claim_id": "C53",
+      "claim": "No significant differences between viral DNA load in CD74high and CD74low monocytes were observed at 8 or 72hpi.",
+      "claim_type": "EXPLICIT",
+      "source": "No significant differences between viral DNA load (Figure 3B) or viral transcript levels (Figure 3C) in CD74high and CD74low monocytes were observed at either 8 or 72hpi, indicating there are no major differences in the efficiency of viral entry between the two populations.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by qPCR data shown in Figure 3B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:44:42.208223Z"
+    },
+    {
+      "id": "38f69904-7c01-4863-a658-fe80c0097bdb",
+      "content_id": "abd3897d-c44b-4797-8ae7-acb845d1fd8b",
+      "claim_id": "C54",
+      "claim": "No significant differences between viral transcript levels in CD74high and CD74low monocytes were observed at 8 or 72hpi.",
+      "claim_type": "EXPLICIT",
+      "source": "No significant differences between viral DNA load (Figure 3B) or viral transcript levels (Figure 3C) in CD74high and CD74low monocytes were observed at either 8 or 72hpi, indicating there are no major differences in the efficiency of viral entry between the two populations.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by qPCR data shown in Figure 3C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:44:42.208223Z"
+    },
+    {
+      "id": "c8a1a09c-3d7e-4009-b1d9-0d29352b738e",
+      "content_id": "abd3897d-c44b-4797-8ae7-acb845d1fd8b",
+      "claim_id": "C55",
+      "claim": "There are no major differences in the efficiency of viral entry between CD74high and CD74low monocyte populations.",
+      "claim_type": "EXPLICIT",
+      "source": "No significant differences between viral DNA load (Figure 3B) or viral transcript levels (Figure 3C) in CD74high and CD74low monocytes were observed at either 8 or 72hpi, indicating there are no major differences in the efficiency of viral entry between the two populations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the lack of differences in viral DNA and RNA at early time points",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:44:42.208223Z"
+    },
+    {
+      "id": "1347db0a-35da-4fee-bba7-e10dc6fec98e",
+      "content_id": "abd3897d-c44b-4797-8ae7-acb845d1fd8b",
+      "claim_id": "C56",
+      "claim": "The observed variation in CD74 cell-surface levels is induced following HCMV infection.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these results indicate that the observed variation in CD74 cell-surface levels is induced following HCMV infection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the lack of differences at early time points and presence of differences at later time points",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:44:42.208223Z"
+    },
+    {
+      "id": "69acdcc5-bd21-4af8-adaa-23571a99ca27",
+      "content_id": "abd3897d-c44b-4797-8ae7-acb845d1fd8b",
+      "claim_id": "C57",
+      "claim": "Reactivation was significantly more frequent in CD74low cells compared to CD74high cells in both DC differentiation and fibroblast co-culture protocols.",
+      "claim_type": "EXPLICIT",
+      "source": "Quantification of GFP positive plaques showed that reactivation was significantly more frequent in CD74low cells compared to CD74high cells, in both protocols (Figure 4A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data shown in Figures 4A and 4B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:44:42.208223Z"
+    },
+    {
+      "id": "89659e25-83bd-4b5f-ac6a-f9f0d434315d",
+      "content_id": "abd3897d-c44b-4797-8ae7-acb845d1fd8b",
+      "claim_id": "C58",
+      "claim": "Lysed samples of monocytes plated onto indicator fibroblasts produced no plaques, confirming that these infected cells did not produce any detectable infectious virus, consistent with latency prior to reactivation induction.",
+      "claim_type": "EXPLICIT",
+      "source": "Lysed samples of monocytes plated onto indicator fibroblasts produced no plaques, confirming that these infected cells did not produce any detectable infectious virus, consistent with latency prior to reactivation induction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data from reactivation assays",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:44:42.208223Z"
+    },
+    {
+      "id": "da3b9100-ea77-4054-942d-a0c30c1eb62c",
+      "content_id": "abd3897d-c44b-4797-8ae7-acb845d1fd8b",
+      "claim_id": "C59",
+      "claim": "CD74 low monocytes from viremic patients were significantly enriched for the virus compared to CD74high monocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "In agreement with our results in the experimental infection model, CD74 low monocytes were significantly enriched for the virus compared to CD74high monocytes, illustrating that also in this natural infection setting, CD74 expression can be used to enrich for monocytes carrying viral genomes (Figure 5B and C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by ddPCR data shown in Figures 5B and 5C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:44:42.208223Z"
+    },
+    {
+      "id": "6daf1114-e6cc-4e18-b446-18ccd01e7f0f",
+      "content_id": "abd3897d-c44b-4797-8ae7-acb845d1fd8b",
+      "claim_id": "C60",
+      "claim": "CD74 expression can be used to enrich for monocytes carrying viral genomes in natural infection settings.",
+      "claim_type": "EXPLICIT",
+      "source": "In agreement with our results in the experimental infection model, CD74 low monocytes were significantly enriched for the virus compared to CD74high monocytes, illustrating that also in this natural infection setting, CD74 expression can be used to enrich for monocytes carrying viral genomes (Figure 5B and C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by ddPCR data from patient samples",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:44:42.208223Z"
+    },
+    {
+      "id": "a8b90f1e-6110-421c-8476-9a581423addb",
+      "content_id": "abd3897d-c44b-4797-8ae7-acb845d1fd8b",
+      "claim_id": "C61",
+      "claim": "On a genome-wide level, viral gene expression is higher in CD74low cells compared to CD74high cells.",
+      "claim_type": "EXPLICIT",
+      "source": "As was seen for single viral genes (Figure 2B), we found that on a genome-wide level, viral gene expression is higher in CD74low cells compared to CD74high cells (Figure 6A and Figure 6\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by RNA-seq data shown in Figure 6A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:44:42.208223Z"
+    },
+    {
+      "id": "946483d2-65c5-4b14-aebe-11810ccf6b59",
+      "content_id": "abd3897d-c44b-4797-8ae7-acb845d1fd8b",
+      "claim_id": "C62",
+      "claim": "The viral gene expression profile in latently infected cells was correlated with late lytic profile.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, in accordance with our previous findings (Shnayder et al., 2018) the viral gene expression profile in these cells was correlated with late lytic profile (Figure 6\u2014figure supplement 1B), but viral transcript levels were very low (~0.1% of mRNA reads originated from the virus).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by RNA-seq data shown in Figure 6\u2014figure supplement 1B and citation to Shnayder et al., 2018",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:44:42.208223Z"
+    },
+    {
+      "id": "ff8b3f9e-bfe4-4a21-9848-ba48023756eb",
+      "content_id": "abd3897d-c44b-4797-8ae7-acb845d1fd8b",
+      "claim_id": "C63",
+      "claim": "Viral transcript levels in latently infected cells were very low (~0.1% of mRNA reads originated from the virus).",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, in accordance with our previous findings (Shnayder et al., 2018) the viral gene expression profile in these cells was correlated with late lytic profile (Figure 6\u2014figure supplement 1B), but viral transcript levels were very low (~0.1% of mRNA reads originated from the virus).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by RNA-seq data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:44:42.208223Z"
+    },
+    {
+      "id": "8b9b2041-595e-4428-8999-2438a242b6a7",
+      "content_id": "abd3897d-c44b-4797-8ae7-acb845d1fd8b",
+      "claim_id": "C64",
+      "claim": "Differential gene expression analysis revealed 113 differentially expressed cellular genes (FDR < 0.05) between CD74low and CD74high populations.",
+      "claim_type": "EXPLICIT",
+      "source": "We performed differential gene expression analysis comparing between the CD74low and CD74high populations. This analysis revealed 113 differentially expressed cellular genes (FDR < 0.05, Figure 6\u2014source data 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by RNA-seq data analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:44:42.208223Z"
+    },
+    {
+      "id": "cd875512-bf62-497e-b1d5-15c692981ec2",
+      "content_id": "abd3897d-c44b-4797-8ae7-acb845d1fd8b",
+      "claim_id": "C65",
+      "claim": "CD74high monocytes are enriched for many immune response related pathways compared to CD74low monocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "Gene set enrichment analysis (GSEA) show that compared to CD74low,CD74high monocytes, which exhibit lower viral transcript levels, are enriched for many immune response related pathways (Figure 6B and Figure 6\u2014source data 2) including adaptive immune response and response to interferon gamma (Figure 6C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by GSEA analysis shown in Figures 6B and 6C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:44:42.208223Z"
+    },
+    {
+      "id": "6fa6bef5-a7ea-49d7-ae8e-177966dde0f8",
+      "content_id": "abd3897d-c44b-4797-8ae7-acb845d1fd8b",
+      "claim_id": "C66",
+      "claim": "CD74high monocytes are enriched for adaptive immune response and response to interferon gamma pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "Gene set enrichment analysis (GSEA) show that compared to CD74low,CD74high monocytes, which exhibit lower viral transcript levels, are enriched for many immune response related pathways (Figure 6B and Figure 6\u2014source data 2) including adaptive immune response and response to interferon gamma (Figure 6C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by GSEA analysis shown in Figure 6C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:44:42.208223Z"
+    },
+    {
+      "id": "de23de2a-a220-4095-9fe3-eca04f3f09d4",
+      "content_id": "abd3897d-c44b-4797-8ae7-acb845d1fd8b",
+      "claim_id": "C67",
+      "claim": "Monocytes carrying higher viral load are driven towards an intrinsic anergic-like phenotype.",
+      "claim_type": "EXPLICIT",
+      "source": "Since these cells were extracted from the same culture, these results suggest that monocytes carrying higher viral load are driven towards an intrinsic anergic-like phenotype.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the differential immune response gene expression in cells from the same culture",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:44:42.208223Z"
+    },
+    {
+      "id": "ff6cc96f-939a-4e30-bf1d-0f603809b2e9",
+      "content_id": "abd3897d-c44b-4797-8ae7-acb845d1fd8b",
+      "claim_id": "C68",
+      "claim": "The CD74low monocyte population, which exhibits higher viral transcript levels, was enriched in genes that are related to transcription and virus life cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "The CD74low monocyte population, which exhibits higher viral transcript levels, was enriched in genes that are related to transcription and virus life cycle (Figure 6B and Figure 6\u2014source data 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by GSEA analysis shown in Figure 6B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:44:42.208223Z"
+    },
+    {
+      "id": "3a847045-2258-4dd0-bfc5-041e3a1afc5e",
+      "content_id": "abd3897d-c44b-4797-8ae7-acb845d1fd8b",
+      "claim_id": "C69",
+      "claim": "The genes that showed elevated expression in the CD74high cell population compared to the CD74low population were enriched for genes associated with monocyte lineage priming.",
+      "claim_type": "EXPLICIT",
+      "source": "To decipher the differentiation status of latent monocytes we compared our data to a recently published single cell analysis of lineage commitment during hematopoiesis (Velten et al., 2017). The genes that showed elevated expression in the CD74high cell population compared to the CD74low population were enriched for genes associated with monocyte lineage priming (Figure 6E), implying that the cells exhibiting higher viral transcript levels express less commitment markers and therefore may represent a less differentiated state.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by GSEA analysis shown in Figure 6E and comparison to Velten et al., 2017",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:44:42.208223Z"
+    },
+    {
+      "id": "b7ba019d-4fa7-4b6e-be3a-ef574954225a",
+      "content_id": "abd3897d-c44b-4797-8ae7-acb845d1fd8b",
+      "claim_id": "C70",
+      "claim": "Cells exhibiting higher viral transcript levels express less commitment markers and may represent a less differentiated state.",
+      "claim_type": "EXPLICIT",
+      "source": "The genes that showed elevated expression in the CD74high cell population compared to the CD74low population were enriched for genes associated with monocyte lineage priming (Figure 6E), implying that the cells exhibiting higher viral transcript levels express less commitment markers and therefore may represent a less differentiated state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the enrichment of monocyte priming genes in CD74high cells",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:44:42.208223Z"
+    },
+    {
+      "id": "966a9adc-75c1-46c6-89b5-5f37e8ff59a8",
+      "content_id": "abd3897d-c44b-4797-8ae7-acb845d1fd8b",
+      "claim_id": "C71",
+      "claim": "Genes that were more highly expressed in CD74high monocytes were significantly enriched for genes previously associated with M2 phenotype.",
+      "claim_type": "EXPLICIT",
+      "source": "To further investigate the cell differentiation state, we analyzed gene sets that were previously associated with M1 or M2 polarization (Gerrick et al., 2018) and found that genes that were more highly expressed in CD74high monocytes were significantly enriched for genes previously associated with M2 phenotype (Pval = 2.25\u00d710\u22128).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by gene set analysis using Gerrick et al., 2018 gene sets",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:44:42.208223Z"
+    },
+    {
+      "id": "ce445029-8641-422a-96ae-ed341fca0e97",
+      "content_id": "abd3897d-c44b-4797-8ae7-acb845d1fd8b",
+      "claim_id": "C72",
+      "claim": "The infected CD14+ monocytes in culture conditions may be polarized towards a cell-state associated with M2 phenotype, however higher viral transcript levels attenuates this differentiation trajectory.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that the infected CD14+ monocytes in our culture conditions may be polarized towards a cell-state associated with M2 phenotype, however higher viral transcript levels attenuates this differentiation trajectory.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the M2 gene enrichment in CD74high cells",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:44:42.208223Z"
+    },
+    {
+      "id": "b90114c5-e37e-4a80-bdc3-7fa7ba1b4309",
+      "content_id": "abd3897d-c44b-4797-8ae7-acb845d1fd8b",
+      "claim_id": "C73",
+      "claim": "Treatment with ruxolitinib immediately after infection resulted in a considerable reduction in the levels of interferon-induced genes at 3 and 6dpi.",
+      "claim_type": "EXPLICIT",
+      "source": "Treatment with ruxolitinib immediately after infection (3hpi) resulted in a considerable reduction in the levels of interferon-induced genes at 3 and 6dpi (Figure 7A) and in increased expression of essentially all viral transcripts (Figure 7B), in an overall uniform manner (Figure 7\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by RNA-seq data shown in Figure 7A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:44:42.208223Z"
+    },
+    {
+      "id": "5a272470-46fe-4874-b429-e166acadbe93",
+      "content_id": "abd3897d-c44b-4797-8ae7-acb845d1fd8b",
+      "claim_id": "C74",
+      "claim": "Treatment with ruxolitinib immediately after infection resulted in increased expression of essentially all viral transcripts.",
+      "claim_type": "EXPLICIT",
+      "source": "Treatment with ruxolitinib immediately after infection (3hpi) resulted in a considerable reduction in the levels of interferon-induced genes at 3 and 6dpi (Figure 7A) and in increased expression of essentially all viral transcripts (Figure 7B), in an overall uniform manner (Figure 7\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by RNA-seq data shown in Figure 7B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:44:42.208223Z"
+    },
+    {
+      "id": "b8fa58f3-76ac-4909-ab1e-312a2be7d6ef",
+      "content_id": "abd3897d-c44b-4797-8ae7-acb845d1fd8b",
+      "claim_id": "C75",
+      "claim": "Blocking interferon signaling still increased viral transcript levels even when added 3dpi.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, although the effect was smaller when the inhibitor was added later along infection, blocking interferon signaling still increased viral transcript levels even when added 3dpi (Figure 7C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by RNA-seq data shown in Figure 7C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:44:42.208223Z"
+    },
+    {
+      "id": "5bf48f87-ba12-45bd-ae3b-f4112c66ff69",
+      "content_id": "abd3897d-c44b-4797-8ae7-acb845d1fd8b",
+      "claim_id": "C76",
+      "claim": "There is continuous expression of viral genes at 3dpi.",
+      "claim_type": "EXPLICIT",
+      "source": "These results therefore indicate there is continuous expression of viral genes and at 3dpi viral genes are still transcribed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the effect of ruxolitinib added at 3dpi",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:44:42.208223Z"
+    },
+    {
+      "id": "d9019634-67fa-493f-9c39-713d0b255351",
+      "content_id": "abd3897d-c44b-4797-8ae7-acb845d1fd8b",
+      "claim_id": "C77",
+      "claim": "There is gradual repression of viral gene expression over time.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the reduced effect of ruxolitinib with time also points that in addition there is gradual repression of viral gene expression as was also captured in our scRNA-seq analysis (Shnayder et al., 2018 and Figure 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inferred from the reduced effect of ruxolitinib when added later and supported by scRNA-seq data",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:44:42.208223Z"
+    },
+    {
+      "id": "be38c9cb-4295-4bfb-b04f-1cec45ea0f56",
+      "content_id": "abd3897d-c44b-4797-8ae7-acb845d1fd8b",
+      "claim_id": "C78",
+      "claim": "Blocking interferon signaling led to more efficient reactivation of the virus.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, blocking interferon signaling led to more efficient reactivation of the virus (Figure 7D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by reactivation assay data shown in Figure 7D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:44:42.208223Z"
+    },
+    {
+      "id": "1fed82c5-2fd4-4e08-8b3c-d5c60c465fde",
+      "content_id": "abd3897d-c44b-4797-8ae7-acb845d1fd8b",
+      "claim_id": "C79",
+      "claim": "Interferon signaling has a major role in repression of viral gene expression in infected monocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "This demonstrates that interferon signaling has a major role in repression of viral gene expression in infected monocytes and that the anergic-like state of monocytes exhibiting higher viral transcript levels is likely important for latency maintenance and reactivation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the effects of ruxolitinib on viral gene expression and reactivation",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:44:42.208223Z"
+    },
+    {
+      "id": "3b823e8c-6248-41b1-91e0-dd5592f584ee",
+      "content_id": "abd3897d-c44b-4797-8ae7-acb845d1fd8b",
+      "claim_id": "C80",
+      "claim": "The anergic-like state of monocytes exhibiting higher viral transcript levels is likely important for latency maintenance and reactivation.",
+      "claim_type": "EXPLICIT",
+      "source": "This demonstrates that interferon signaling has a major role in repression of viral gene expression in infected monocytes and that the anergic-like state of monocytes exhibiting higher viral transcript levels is likely important for latency maintenance and reactivation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the effects of blocking interferon signaling on viral gene expression and reactivation",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:44:42.208223Z"
+    },
+    {
+      "id": "ec9be89d-e62e-4dec-bb00-1da92944cea4",
+      "content_id": "abd3897d-c44b-4797-8ae7-acb845d1fd8b",
+      "claim_id": "C81",
+      "claim": "Cells expressing HCMV transcripts were clustered in a region that exhibited the latest pseudotime (i.e the most differentiated state) in HSPC trajectory analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "To gain insight into the effects of HCMV on HSPC differentiation, we inferred differentiation trajectories using Monocle, a strategy that allows placing single cells along a pseudotime continuum based on their gene expression (Trapnell et al., 2014; Figure 8A). The cells expressing HCMV transcripts were clustered in a region that exhibited the latest pseudotime (i.e the most differentiated state, Figure 8B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by Monocle analysis shown in Figures 8A and 8B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:44:42.208223Z"
+    },
+    {
+      "id": "4dbbb1ab-44a5-4b44-abb2-77b9505ef2dd",
+      "content_id": "abd3897d-c44b-4797-8ae7-acb845d1fd8b",
+      "claim_id": "C82",
+      "claim": "Viral transcripts were expressed only in cells expressing monocyte lineage markers in infected HSPCs.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, although we infected bone marrow derived CD34+ HSPCs, viral transcripts were expressed only in cells expressing monocyte lineage markers (Velten et al., 2017), such as IRF7, IRF8 (Figure 8C) and CD14 (Figure 8D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by scRNA-seq data shown in Figures 8C and 8D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:44:42.208223Z"
+    },
+    {
+      "id": "cec9c076-6bbc-4fae-bb76-9ce6ea99f70a",
+      "content_id": "abd3897d-c44b-4797-8ae7-acb845d1fd8b",
+      "claim_id": "C83",
+      "claim": "HCMV induces differentiation of infected HSPCs towards the monocyte lineage.",
+      "claim_type": "EXPLICIT",
+      "source": "Taking into account that it was previously shown that HCMV infects multipotent hematopoietic stem cells (Goodrum et al., 2004), these results indicate that HCMV induces differentiation of infected HSPCs towards the monocyte lineage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the observation that viral transcripts are only in monocyte lineage cells and citation to Goodrum et al., 2004",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:44:42.208223Z"
+    },
+    {
+      "id": "00508fb1-1dd8-49f1-bdcb-19b5f7f4fe92",
+      "content_id": "abd3897d-c44b-4797-8ae7-acb845d1fd8b",
+      "claim_id": "C84",
+      "claim": "HCMV infects multipotent hematopoietic stem cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Taking into account that it was previously shown that HCMV infects multipotent hematopoietic stem cells (Goodrum et al., 2004), these results indicate that HCMV induces differentiation of infected HSPCs towards the monocyte lineage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Goodrum et al., 2004",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:44:42.208223Z"
+    },
+    {
+      "id": "47e3c7a7-88c1-4013-925a-1ce68a3535fc",
+      "content_id": "abd3897d-c44b-4797-8ae7-acb845d1fd8b",
+      "claim_id": "C85",
+      "claim": "The cluster of HSPC-derived monocytes showing higher viral transcript levels exhibited lower expression of CD74.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, more detailed analysis of the distinct group of cells that expressed monocyte markers, revealed that this group could be split into two close yet distinct clusters, with viral reads being detected in much more cells in one of the clusters. Interestingly, the cluster showing higher viral transcript levels exhibited lower expression of CD74 (Pval = 1.73\u00d710\u221295, Figure 8E and F) as well as gene signatures associated with lower immune response to interferon gamma and lower adaptive immune response (Pval <0.001 and Pval = 0.003, respectively, Figure 8G and H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by scRNA-seq data shown in Figures 8E and 8F",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:44:42.208223Z"
+    },
+    {
+      "id": "795ebebe-8c3d-44ff-b4d5-65b973911fea",
+      "content_id": "abd3897d-c44b-4797-8ae7-acb845d1fd8b",
+      "claim_id": "C86",
+      "claim": "The cluster of HSPC-derived monocytes showing higher viral transcript levels exhibited gene signatures associated with lower immune response to interferon gamma.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the cluster showing higher viral transcript levels exhibited lower expression of CD74 (Pval = 1.73\u00d710\u221295, Figure 8E and F) as well as gene signatures associated with lower immune response to interferon gamma and lower adaptive immune response (Pval <0.001 and Pval = 0.003, respectively, Figure 8G and H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by scRNA-seq data shown in Figure 8G",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:44:42.208223Z"
+    },
+    {
+      "id": "3f1b09aa-4e0a-42d1-a2e5-982ad6f04d98",
+      "content_id": "abd3897d-c44b-4797-8ae7-acb845d1fd8b",
+      "claim_id": "C87",
+      "claim": "The cluster of HSPC-derived monocytes showing higher viral transcript levels exhibited gene signatures associated with lower adaptive immune response.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the cluster showing higher viral transcript levels exhibited lower expression of CD74 (Pval = 1.73\u00d710\u221295, Figure 8E and F) as well as gene signatures associated with lower immune response to interferon gamma and lower adaptive immune response (Pval <0.001 and Pval = 0.003, respectively, Figure 8G and H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by scRNA-seq data shown in Figure 8H",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:44:42.208223Z"
+    },
+    {
+      "id": "94448b63-7682-40de-bbb1-fccc24980b5c",
+      "content_id": "abd3897d-c44b-4797-8ae7-acb845d1fd8b",
+      "claim_id": "C88",
+      "claim": "Cells within the HSPC population that exhibit the highest viral gene expression belong to the CD14+ monocyte cell lineage.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, cells within the HSPC population that exhibit the highest viral gene expression belong to the CD14+ monocyte cell lineage and are associated with similar anergic-like signatures as infected monocytes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by scRNA-seq data from infected HSPCs",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:44:42.208223Z"
+    },
+    {
+      "id": "c6fac079-dac2-4b36-9d98-3c52621648e7",
+      "content_id": "abd3897d-c44b-4797-8ae7-acb845d1fd8b",
+      "claim_id": "C89",
+      "claim": "Cells within the HSPC population that exhibit the highest viral gene expression are associated with similar anergic-like signatures as infected monocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, cells within the HSPC population that exhibit the highest viral gene expression belong to the CD14+ monocyte cell lineage and are associated with similar anergic-like signatures as infected monocytes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by comparison of gene signatures between HSPC-derived monocytes and infected monocytes",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:44:42.208223Z"
+    },
+    {
+      "id": "28348fab-ca09-4665-8e1e-7a76fb3094ba",
+      "content_id": "abd3897d-c44b-4797-8ae7-acb845d1fd8b",
+      "claim_id": "C91",
+      "claim": "Human, murine and rat cytomegalovirus down regulate the surface expression of MHCII molecules in cells of the myeloid lineage.",
+      "claim_type": "EXPLICIT",
+      "source": "These results are in line with previous findings showing that human, murine and rat cytomegalovirus down regulate the surface expression of MHCII molecules in cells of the myeloid lineage (Baca Jones et al., 2009; Elder et al., 2019; Lee et al., 2011; Slobedman et al., 2002; Yunis et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Baca Jones et al., 2009; Elder et al., 2019; Lee et al., 2011; Slobedman et al., 2002; Yunis et al., 2018",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:44:42.208223Z"
+    },
+    {
+      "id": "cea1d0e2-32e2-416d-b19a-3b50d8c37d5e",
+      "content_id": "abd3897d-c44b-4797-8ae7-acb845d1fd8b",
+      "claim_id": "C92",
+      "claim": "CIITA, a transcription factor that regulates CD74 and MHCII, was shown to be down regulated by HCMV.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, CIITA, a transcription factor that regulates CD74 and MHCII, was shown to be down regulated by HCMV (Lee et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Lee et al., 2011",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:44:42.208223Z"
+    },
+    {
+      "id": "409cc77b-29b4-483c-99eb-650e8e67c748",
+      "content_id": "abd3897d-c44b-4797-8ae7-acb845d1fd8b",
+      "claim_id": "C93",
+      "claim": "Interferon induced genes are downregulated during latent infection of CD14+ monocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "This is supported by a recent report showing that interferon induced genes are downregulated during latent infection of CD14+ monocytes (Elder et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Elder et al., 2019",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:44:42.208223Z"
+    },
+    {
+      "id": "1bff4030-b442-456b-b775-ecda1cac5947",
+      "content_id": "abd3897d-c44b-4797-8ae7-acb845d1fd8b",
+      "claim_id": "C94",
+      "claim": "CMV replication can be inhibited in otherwise permissive cells by treatment with interferon beta.",
+      "claim_type": "EXPLICIT",
+      "source": "The importance of the role interferon plays in latent infection is further supported by the fact that CMV replication can be inhibited in otherwise permissive cells by treatment with interferon beta (Da\u011f et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Da\u011f et al., 2014",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:44:42.208223Z"
+    },
+    {
+      "id": "2ae16ac8-70ca-4876-9f9b-587f8caddf19",
+      "content_id": "abd3897d-c44b-4797-8ae7-acb845d1fd8b",
+      "claim_id": "C95",
+      "claim": "Extrinsic interferon stimuli inhibited HSV-1 reactivation from latency in neuronal cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, extrinsic interferon stimuli inhibited HSV-1 reactivation from latency in neuronal cells (Linderman et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Linderman et al., 2017",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:44:42.208223Z"
+    },
+    {
+      "id": "3d382af9-07c6-479c-81a9-cfe34d98d39d",
+      "content_id": "abd3897d-c44b-4797-8ae7-acb845d1fd8b",
+      "claim_id": "C96",
+      "claim": "A major aspect of the maintenance of latency and of the ability to reactivate at the cellular level is a balance between the intrinsic immune response, specifically the interferon pathway, and viral transcript levels.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, these findings indicate that a major aspect of the maintenance of latency and of the ability to reactivate at the cellular level is a balance between opposing forces which also affect each other- the intrinsic immune response, specifically the interferon pathway, and viral transcript levels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the experimental data showing the relationship between interferon signaling and viral gene expression/reactivation",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:44:42.208223Z"
+    },
+    {
+      "id": "017cb1bf-d845-4492-9041-b45fc965cce4",
+      "content_id": "abd3897d-c44b-4797-8ae7-acb845d1fd8b",
+      "claim_id": "C97",
+      "claim": "B7H4 was suggested as a marker for monocytes with higher levels of HCMV genomes from HCMV seropositive individuals.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently, B7H4 was suggested as a marker for monocytes with higher levels of HCMV genomes from HCMV seropositive individuals (Zhu et al., 2018), however, we could not detect expression of B7H4 mRNA in any of our RNA-seq samples.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Zhu et al., 2018",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:44:42.208223Z"
+    },
+    {
+      "id": "70b5cb6e-a0de-42a2-83e1-af74280abc99",
+      "content_id": "abd3897d-c44b-4797-8ae7-acb845d1fd8b",
+      "claim_id": "C98",
+      "claim": "B7H4 mRNA could not be detected in the RNA-seq samples from this study.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently, B7H4 was suggested as a marker for monocytes with higher levels of HCMV genomes from HCMV seropositive individuals (Zhu et al., 2018), however, we could not detect expression of B7H4 mRNA in any of our RNA-seq samples.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by RNA-seq data from the study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:44:42.208223Z"
+    },
+    {
+      "id": "cbaf3735-30d7-4bb2-a46f-05f9f9d8c00a",
+      "content_id": "abd3897d-c44b-4797-8ae7-acb845d1fd8b",
+      "claim_id": "C99",
+      "claim": "A distinct B7H4 positive monocyte population could not be detected by staining in five healthy seropositive individuals.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, by staining for B7H4, we could not identify a distinct B7H4 positive monocyte population and did not detect higher levels of HCMV genomes in the top 2% B7H4 sorted cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by flow cytometry data from the study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:44:42.208223Z"
+    },
+    {
+      "id": "10677fc0-097f-435f-9d63-4de91ae07543",
+      "content_id": "abd3897d-c44b-4797-8ae7-acb845d1fd8b",
+      "claim_id": "C100",
+      "claim": "Higher levels of HCMV genomes were not detected in the top 2% B7H4 sorted cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, by staining for B7H4, we could not identify a distinct B7H4 positive monocyte population and did not detect higher levels of HCMV genomes in the top 2% B7H4 sorted cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by ddPCR data from the study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:44:42.208223Z"
+    },
+    {
+      "id": "37b1e09a-e4dc-45ce-82dd-401cdb78abeb",
+      "content_id": "abd3897d-c44b-4797-8ae7-acb845d1fd8b",
+      "claim_id": "C101",
+      "claim": "B7H4 is not expressed in healthy monocytes according to available human datasets.",
+      "claim_type": "EXPLICIT",
+      "source": "According to available human datasets, B7H4 is indeed not expressed in healthy monocytes (Blood Atlas, 2019), however, these differences may stem from sampling of different donors or due to other variables related to the isolation of the cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Blood Atlas, 2019",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:44:42.208223Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "97270fe8-7992-4c71-81b7-16cadb230c12",
+      "content_id": "abd3897d-c44b-4797-8ae7-acb845d1fd8b",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors provide background on HCMV infection, latency, and reactivation, including prevalence, cell tropism, latent reservoir location, viral load estimates, and prior findings on host cell changes during latency.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C22 are background claims supported by citations to prior literature and established knowledge. These provide context for the current study and are appropriately referenced.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:44:42.208223Z"
+    },
+    {
+      "id": "54c2ba84-ab9a-40a3-8237-5b7012a54c39",
+      "content_id": "abd3897d-c44b-4797-8ae7-acb845d1fd8b",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Single-cell RNA-seq provides unique opportunities to study viral-host interactions and has revealed novel insights for multiple viruses.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C23-C24 describe the rationale for using scRNA-seq and are supported by citations to prior work and established knowledge about the technology's capabilities.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:44:42.208223Z"
+    },
+    {
+      "id": "b6c0c399-290f-4e48-8fde-86c8862f04be",
+      "content_id": "abd3897d-c44b-4797-8ae7-acb845d1fd8b",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The authors performed scRNA-seq on HCMV-infected CD14+ monocytes, achieving high coverage of >11,000 genes in 3,655 cells, and identified that MHCII and CD74 expression inversely correlates with viral transcript levels.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C44 describe the scRNA-seq dataset and correlation analysis. The data quality metrics are provided (C36), and the inverse correlation between CD74/MHCII and viral transcripts is supported by correlation analysis (C40) and visualization (C43-C44, Figure 1).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:44:42.208223Z"
+    },
+    {
+      "id": "27a2b387-9e55-4d0b-9645-75a0c7e83283",
+      "content_id": "abd3897d-c44b-4797-8ae7-acb845d1fd8b",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "CD74 and MHCII expression increases over time in culture in both infected and uninfected cells, but CD74low and MHCIIlow populations express higher viral transcript levels at single timepoints, and these markers are co-expressed.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C49 are supported by RT-qPCR data (Figure 1\u2014supplement 2, Figure 2B) and FACS sorting experiments. The co-expression of CD74 and MHCII is confirmed by multiple analyses (C49, Figure 2C).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:44:42.208223Z"
+    },
+    {
+      "id": "c7f8348a-542b-47e9-b328-3238f131f8d1",
+      "content_id": "abd3897d-c44b-4797-8ae7-acb845d1fd8b",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Higher viral transcript levels in CD74low monocytes correlate with higher viral genome abundance, suggesting differential viral genome loads contribute to differential transcript levels.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50-C51 are supported by qPCR data showing correlation between viral DNA and RNA levels (Figure 2D). The inference that genome load contributes to transcript differences (C51) is reasonable given the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:44:42.208223Z"
+    },
+    {
+      "id": "6ecf327d-ee00-4e1d-8e23-311e2a2fff2b",
+      "content_id": "abd3897d-c44b-4797-8ae7-acb845d1fd8b",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The variation in CD74 cell-surface levels is induced by HCMV infection rather than reflecting pre-existing differences in viral entry efficiency, as no differences in viral DNA or RNA were observed at early timepoints (8-72 hpi) between CD74high and CD74low sorted populations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52-C56 are supported by the pre-sort experiment (Figure 3) showing no differences in viral DNA/RNA at early timepoints between CD74high and CD74low populations sorted before infection. This effectively rules out differential entry as the explanation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:44:42.208223Z"
+    },
+    {
+      "id": "199a5b83-c09c-44b0-8253-62f3db7de1b9",
+      "content_id": "abd3897d-c44b-4797-8ae7-acb845d1fd8b",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "CD74low monocytes reactivate HCMV significantly more efficiently than CD74high monocytes in both DC differentiation and fibroblast co-culture protocols, and lysed monocytes produced no infectious virus confirming latency.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57-C58 are supported by reactivation assay data (Figure 4A-B) showing significantly more GFP+ plaques from CD74low cells. The control experiment (C58) confirms latency prior to reactivation induction.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:44:42.208223Z"
+    },
+    {
+      "id": "7832dd1d-03e5-4fd0-b0d7-bb2de9171473",
+      "content_id": "abd3897d-c44b-4797-8ae7-acb845d1fd8b",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "In viremic HSCT patients, CD74low monocytes were significantly enriched for HCMV genomes compared to CD74high monocytes, demonstrating that CD74 can be used to enrich for virus-carrying cells in natural infection.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59-C60 are supported by ddPCR data from 4 patient samples (Figure 5B-C) showing significantly higher viral genome copies in CD74low cells. However, the sample size is limited and 3 of 7 samples had no detectable virus.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:44:42.208223Z"
+    },
+    {
+      "id": "307eb13b-31aa-4d82-afea-c63931d122a7",
+      "content_id": "abd3897d-c44b-4797-8ae7-acb845d1fd8b",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The authors could not replicate prior findings that B7H4 marks monocytes with higher HCMV genome levels, as B7H4 mRNA was not detected in their RNA-seq samples and no distinct B7H4+ population or enrichment of viral genomes was found in sorted cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C97-C101 are supported by the authors' RNA-seq data (C98), flow cytometry (C99), and ddPCR analysis (C100). The discrepancy with prior work (C97) is acknowledged and potential explanations are discussed.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:44:42.208223Z"
+    },
+    {
+      "id": "09f075a8-5a2f-4afd-811f-e28d16e40cfc",
+      "content_id": "abd3897d-c44b-4797-8ae7-acb845d1fd8b",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "RNA-seq of CD74-sorted monocytes revealed that CD74low cells have higher viral gene expression genome-wide, with a late lytic profile at very low levels (~0.1% viral reads), and CD74high cells are enriched for immune response pathways including interferon gamma response, suggesting CD74low cells have an intrinsic anergic-like phenotype.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C61-C68 are supported by RNA-seq data (Figure 6A-C) and GSEA analysis showing differential pathway enrichment. The inference of an anergic-like phenotype (C67) is reasonable given cells are from the same culture but show differential immune response signatures.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:44:42.208223Z"
+    },
+    {
+      "id": "bf1d4362-0116-48d7-9f53-701979b4276f",
+      "content_id": "abd3897d-c44b-4797-8ae7-acb845d1fd8b",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "CD74high cells express higher levels of monocyte lineage priming genes and M2-associated genes, suggesting CD74low cells with higher viral transcripts represent a less differentiated state and that infection attenuates M2 polarization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C69-C72 are supported by GSEA analysis comparing to published hematopoiesis data (Figure 6E) and M1/M2 gene set analysis. The inferences about differentiation state (C70, C72) are reasonable interpretations of the enrichment data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:44:42.208223Z"
+    },
+    {
+      "id": "929a1128-93ff-4ae0-87e6-12546ed34051",
+      "content_id": "abd3897d-c44b-4797-8ae7-acb845d1fd8b",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Treatment with the JAK1/2 inhibitor ruxolitinib reduced interferon-induced gene expression and increased viral transcript levels at both 3 and 6 dpi, with effects persisting even when added at 3 dpi, and led to more efficient viral reactivation, demonstrating that interferon signaling represses viral gene expression and that the anergic-like state is important for latency and reactivation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C73-C80 are supported by RNA-seq data showing reduced IFN genes and increased viral transcripts with ruxolitinib treatment (Figure 7A-C), and reactivation assays showing increased efficiency (Figure 7D). The inferences about continuous viral expression (C76) and the role of interferon signaling (C79-C80) are well-supported by the dose-response and timing experiments.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:44:42.208223Z"
+    },
+    {
+      "id": "2b627055-006e-4c3f-ac62-8f6928b0e0e1",
+      "content_id": "abd3897d-c44b-4797-8ae7-acb845d1fd8b",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "In infected HSPCs, viral transcripts were detected only in cells expressing monocyte lineage markers (CD14, IRF7, IRF8) at the most differentiated pseudotime state, and these HSPC-derived monocytes with higher viral transcripts showed lower CD74 expression and reduced immune response signatures similar to infected monocytes, indicating HCMV drives differentiation toward an anergic-like monocyte state.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C81-C89 are supported by Monocle trajectory analysis and scRNA-seq data from infected HSPCs (Figure 8). The observation that viral transcripts are restricted to monocyte-lineage cells (C82) is clearly shown, and the parallel findings of lower CD74 and immune response in high-viral cells (C85-C87) strengthen the connection to the monocyte infection model.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:44:42.208223Z"
+    },
+    {
+      "id": "c2c9e4d5-4975-4fe3-aabd-ba981093d24e",
+      "content_id": "abd3897d-c44b-4797-8ae7-acb845d1fd8b",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Analysis of infected HSPCs revealed viral transcripts only in monocyte progenitors, with higher viral levels associated with lower CD74 and reduced immune response, leading to the conclusion that HCMV drives hematopoietic cells toward a weaker immune-responsive monocyte state crucial for viral gene expression and reactivation regardless of infection stage.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30-C34 summarize key findings from the HSPC analysis and integrate them with monocyte data. The conclusion (C33-C34) is well-supported by convergent evidence from both infection models showing similar anergic-like signatures associated with higher viral expression and reactivation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:44:42.208223Z"
+    },
+    {
+      "id": "82cd033e-2cbe-4025-bc94-54204b06c7a2",
+      "content_id": "abd3897d-c44b-4797-8ae7-acb845d1fd8b",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The authors identified CD74 and MHCII as cell surface markers inversely correlated with viral transcript levels that can separate cells with higher and lower viral loads, these differences are induced by infection, cells with higher viral transcripts reactivate more efficiently, and display an intrinsic weaker immune response important for viral gene expression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25-C29 represent the main conclusions of the study and are well-supported by the collective evidence from scRNA-seq correlation analysis, FACS sorting experiments, reactivation assays, RNA-seq of sorted populations, and ruxolitinib experiments.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:44:42.208223Z"
+    },
+    {
+      "id": "bef11932-5e69-4048-9c66-390be77be641",
+      "content_id": "abd3897d-c44b-4797-8ae7-acb845d1fd8b",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The authors discuss that their findings align with prior work showing CMV downregulates MHCII and CIITA, that interferon-induced genes are downregulated during latency, and that interferon can inhibit CMV replication, concluding that latency maintenance involves a balance between intrinsic immune response and viral transcript levels.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C91-C96 place the current findings in context of prior literature through appropriate citations. The synthesis about the balance between immune response and viral transcripts (C96) is a reasonable interpretation supported by the ruxolitinib experiments.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:44:42.208223Z"
+    },
+    {
+      "id": "380f4299-4d0a-4a33-9466-e333d5664332",
+      "content_id": "abd3897d-c44b-4797-8ae7-acb845d1fd8b",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "CD74 functions as both an MHCII chaperone and a cell surface receptor.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C42 is a factual statement about CD74 function supported by citation to Bergmann, 2012.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:44:42.208223Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "4271d62e-f527-4618-a5aa-8b0ed9049781",
+      "result_id": "97270fe8-7992-4c71-81b7-16cadb230c12"
+    },
+    {
+      "claim_id": "134ddd2a-f2a1-4c03-86eb-7ccd1c6dece3",
+      "result_id": "97270fe8-7992-4c71-81b7-16cadb230c12"
+    },
+    {
+      "claim_id": "a00c1a8a-d9b7-4330-bda0-cfa868066a2a",
+      "result_id": "97270fe8-7992-4c71-81b7-16cadb230c12"
+    },
+    {
+      "claim_id": "1873054a-d896-4fa7-8fc1-9016e658ee4e",
+      "result_id": "97270fe8-7992-4c71-81b7-16cadb230c12"
+    },
+    {
+      "claim_id": "1ea75c2b-a4c5-4b7c-a77c-c6f53aee08ac",
+      "result_id": "97270fe8-7992-4c71-81b7-16cadb230c12"
+    },
+    {
+      "claim_id": "0e509165-7b9e-4c32-a722-3001411f872c",
+      "result_id": "97270fe8-7992-4c71-81b7-16cadb230c12"
+    },
+    {
+      "claim_id": "d9523f27-25f8-4b9e-9d2d-6873a853d6c1",
+      "result_id": "97270fe8-7992-4c71-81b7-16cadb230c12"
+    },
+    {
+      "claim_id": "cfa02519-d051-48e3-a8a8-748212e2e934",
+      "result_id": "97270fe8-7992-4c71-81b7-16cadb230c12"
+    },
+    {
+      "claim_id": "730e2b51-5a20-47e4-be1a-4420283de485",
+      "result_id": "97270fe8-7992-4c71-81b7-16cadb230c12"
+    },
+    {
+      "claim_id": "b1e9c5c2-4936-485d-8032-c3f89080d8a3",
+      "result_id": "97270fe8-7992-4c71-81b7-16cadb230c12"
+    },
+    {
+      "claim_id": "2161409a-a332-45b7-a8d0-a66cba56a9c0",
+      "result_id": "97270fe8-7992-4c71-81b7-16cadb230c12"
+    },
+    {
+      "claim_id": "7013f913-1afb-4a73-9461-6ccf26395279",
+      "result_id": "97270fe8-7992-4c71-81b7-16cadb230c12"
+    },
+    {
+      "claim_id": "3f6dbb4b-1aef-4d1a-a143-9915ccef74fc",
+      "result_id": "97270fe8-7992-4c71-81b7-16cadb230c12"
+    },
+    {
+      "claim_id": "d0050e11-52fb-459d-8c86-042055f432be",
+      "result_id": "97270fe8-7992-4c71-81b7-16cadb230c12"
+    },
+    {
+      "claim_id": "952f2ae5-7cf0-48af-a9b4-aed18475fe97",
+      "result_id": "97270fe8-7992-4c71-81b7-16cadb230c12"
+    },
+    {
+      "claim_id": "c00b8d98-281a-4860-97b0-87c98d7fc50e",
+      "result_id": "97270fe8-7992-4c71-81b7-16cadb230c12"
+    },
+    {
+      "claim_id": "5d438e79-de59-4777-ad60-5f79807945b6",
+      "result_id": "97270fe8-7992-4c71-81b7-16cadb230c12"
+    },
+    {
+      "claim_id": "ba883511-c6c5-4c95-8d75-aca92384c6f7",
+      "result_id": "97270fe8-7992-4c71-81b7-16cadb230c12"
+    },
+    {
+      "claim_id": "45354a09-80da-435f-aa7b-65c37083891e",
+      "result_id": "97270fe8-7992-4c71-81b7-16cadb230c12"
+    },
+    {
+      "claim_id": "3ed451e4-f896-4e43-8e99-f7670c002436",
+      "result_id": "97270fe8-7992-4c71-81b7-16cadb230c12"
+    },
+    {
+      "claim_id": "64077a26-2fd1-4d2e-b641-48e22a51aca3",
+      "result_id": "97270fe8-7992-4c71-81b7-16cadb230c12"
+    },
+    {
+      "claim_id": "e4d34b5c-4523-4771-a3e1-4ce9496683fb",
+      "result_id": "97270fe8-7992-4c71-81b7-16cadb230c12"
+    },
+    {
+      "claim_id": "e1f8a063-a66f-4265-be64-8414308c451f",
+      "result_id": "54c2ba84-ab9a-40a3-8237-5b7012a54c39"
+    },
+    {
+      "claim_id": "18be7411-0cfb-46b1-9b49-0694ca52f7b6",
+      "result_id": "54c2ba84-ab9a-40a3-8237-5b7012a54c39"
+    },
+    {
+      "claim_id": "602bea91-ba31-4c9b-9bad-6d27b8cdcbb5",
+      "result_id": "b6c0c399-290f-4e48-8fde-86c8862f04be"
+    },
+    {
+      "claim_id": "c277d8a4-75af-4d15-a424-225422587114",
+      "result_id": "b6c0c399-290f-4e48-8fde-86c8862f04be"
+    },
+    {
+      "claim_id": "e3914ba0-d38e-403b-bf22-f346691f8def",
+      "result_id": "b6c0c399-290f-4e48-8fde-86c8862f04be"
+    },
+    {
+      "claim_id": "f30e9fb0-c7bf-4952-bd53-551933017b03",
+      "result_id": "b6c0c399-290f-4e48-8fde-86c8862f04be"
+    },
+    {
+      "claim_id": "c4f3efd4-dedd-41d3-b93a-84dceeb23e55",
+      "result_id": "b6c0c399-290f-4e48-8fde-86c8862f04be"
+    },
+    {
+      "claim_id": "a73feb7c-95d2-49bf-9f3a-a979dc2ed3c5",
+      "result_id": "b6c0c399-290f-4e48-8fde-86c8862f04be"
+    },
+    {
+      "claim_id": "d8284bc9-211f-450f-b551-439f602132a8",
+      "result_id": "b6c0c399-290f-4e48-8fde-86c8862f04be"
+    },
+    {
+      "claim_id": "941c7419-2d8f-4da5-b361-d063a651ba47",
+      "result_id": "b6c0c399-290f-4e48-8fde-86c8862f04be"
+    },
+    {
+      "claim_id": "695ce30d-8c3b-406e-9da8-155534885067",
+      "result_id": "b6c0c399-290f-4e48-8fde-86c8862f04be"
+    },
+    {
+      "claim_id": "6d018c86-25a5-4d49-b192-bfe7d3f15cca",
+      "result_id": "27a2b387-9e55-4d0b-9645-75a0c7e83283"
+    },
+    {
+      "claim_id": "bb680853-4875-4881-b089-2f06a8520b0e",
+      "result_id": "27a2b387-9e55-4d0b-9645-75a0c7e83283"
+    },
+    {
+      "claim_id": "585ace1b-baf1-4bc3-acd1-5b99c19a6ac3",
+      "result_id": "27a2b387-9e55-4d0b-9645-75a0c7e83283"
+    },
+    {
+      "claim_id": "63d1f28d-ea68-4bb9-b24a-e40bcdcb07a2",
+      "result_id": "27a2b387-9e55-4d0b-9645-75a0c7e83283"
+    },
+    {
+      "claim_id": "2671d955-9468-45d2-b9d5-1d04acbf69f4",
+      "result_id": "27a2b387-9e55-4d0b-9645-75a0c7e83283"
+    },
+    {
+      "claim_id": "fa1ff081-d5c1-433e-9451-75ef5f7f1fb0",
+      "result_id": "c7f8348a-542b-47e9-b328-3238f131f8d1"
+    },
+    {
+      "claim_id": "dff8386e-a020-4a5a-b3a8-2800a6a9498b",
+      "result_id": "c7f8348a-542b-47e9-b328-3238f131f8d1"
+    },
+    {
+      "claim_id": "c1e7984c-cfb2-42b7-81ee-f61aa1659c8f",
+      "result_id": "6ecf327d-ee00-4e1d-8e23-311e2a2fff2b"
+    },
+    {
+      "claim_id": "3fdc1d48-e022-4a6d-8d53-01af386fe3b7",
+      "result_id": "6ecf327d-ee00-4e1d-8e23-311e2a2fff2b"
+    },
+    {
+      "claim_id": "38f69904-7c01-4863-a658-fe80c0097bdb",
+      "result_id": "6ecf327d-ee00-4e1d-8e23-311e2a2fff2b"
+    },
+    {
+      "claim_id": "c8a1a09c-3d7e-4009-b1d9-0d29352b738e",
+      "result_id": "6ecf327d-ee00-4e1d-8e23-311e2a2fff2b"
+    },
+    {
+      "claim_id": "1347db0a-35da-4fee-bba7-e10dc6fec98e",
+      "result_id": "6ecf327d-ee00-4e1d-8e23-311e2a2fff2b"
+    },
+    {
+      "claim_id": "69acdcc5-bd21-4af8-adaa-23571a99ca27",
+      "result_id": "199a5b83-c09c-44b0-8253-62f3db7de1b9"
+    },
+    {
+      "claim_id": "89659e25-83bd-4b5f-ac6a-f9f0d434315d",
+      "result_id": "199a5b83-c09c-44b0-8253-62f3db7de1b9"
+    },
+    {
+      "claim_id": "da3b9100-ea77-4054-942d-a0c30c1eb62c",
+      "result_id": "7832dd1d-03e5-4fd0-b0d7-bb2de9171473"
+    },
+    {
+      "claim_id": "6daf1114-e6cc-4e18-b446-18ccd01e7f0f",
+      "result_id": "7832dd1d-03e5-4fd0-b0d7-bb2de9171473"
+    },
+    {
+      "claim_id": "017cb1bf-d845-4492-9041-b45fc965cce4",
+      "result_id": "307eb13b-31aa-4d82-afea-c63931d122a7"
+    },
+    {
+      "claim_id": "70b5cb6e-a0de-42a2-83e1-af74280abc99",
+      "result_id": "307eb13b-31aa-4d82-afea-c63931d122a7"
+    },
+    {
+      "claim_id": "cbaf3735-30d7-4bb2-a46f-05f9f9d8c00a",
+      "result_id": "307eb13b-31aa-4d82-afea-c63931d122a7"
+    },
+    {
+      "claim_id": "10677fc0-097f-435f-9d63-4de91ae07543",
+      "result_id": "307eb13b-31aa-4d82-afea-c63931d122a7"
+    },
+    {
+      "claim_id": "37b1e09a-e4dc-45ce-82dd-401cdb78abeb",
+      "result_id": "307eb13b-31aa-4d82-afea-c63931d122a7"
+    },
+    {
+      "claim_id": "a8b90f1e-6110-421c-8476-9a581423addb",
+      "result_id": "09f075a8-5a2f-4afd-811f-e28d16e40cfc"
+    },
+    {
+      "claim_id": "946483d2-65c5-4b14-aebe-11810ccf6b59",
+      "result_id": "09f075a8-5a2f-4afd-811f-e28d16e40cfc"
+    },
+    {
+      "claim_id": "ff8b3f9e-bfe4-4a21-9848-ba48023756eb",
+      "result_id": "09f075a8-5a2f-4afd-811f-e28d16e40cfc"
+    },
+    {
+      "claim_id": "8b9b2041-595e-4428-8999-2438a242b6a7",
+      "result_id": "09f075a8-5a2f-4afd-811f-e28d16e40cfc"
+    },
+    {
+      "claim_id": "cd875512-bf62-497e-b1d5-15c692981ec2",
+      "result_id": "09f075a8-5a2f-4afd-811f-e28d16e40cfc"
+    },
+    {
+      "claim_id": "6fa6bef5-a7ea-49d7-ae8e-177966dde0f8",
+      "result_id": "09f075a8-5a2f-4afd-811f-e28d16e40cfc"
+    },
+    {
+      "claim_id": "de23de2a-a220-4095-9fe3-eca04f3f09d4",
+      "result_id": "09f075a8-5a2f-4afd-811f-e28d16e40cfc"
+    },
+    {
+      "claim_id": "ff6cc96f-939a-4e30-bf1d-0f603809b2e9",
+      "result_id": "09f075a8-5a2f-4afd-811f-e28d16e40cfc"
+    },
+    {
+      "claim_id": "3a847045-2258-4dd0-bfc5-041e3a1afc5e",
+      "result_id": "bf1d4362-0116-48d7-9f53-701979b4276f"
+    },
+    {
+      "claim_id": "b7ba019d-4fa7-4b6e-be3a-ef574954225a",
+      "result_id": "bf1d4362-0116-48d7-9f53-701979b4276f"
+    },
+    {
+      "claim_id": "966a9adc-75c1-46c6-89b5-5f37e8ff59a8",
+      "result_id": "bf1d4362-0116-48d7-9f53-701979b4276f"
+    },
+    {
+      "claim_id": "ce445029-8641-422a-96ae-ed341fca0e97",
+      "result_id": "bf1d4362-0116-48d7-9f53-701979b4276f"
+    },
+    {
+      "claim_id": "b90114c5-e37e-4a80-bdc3-7fa7ba1b4309",
+      "result_id": "929a1128-93ff-4ae0-87e6-12546ed34051"
+    },
+    {
+      "claim_id": "5a272470-46fe-4874-b429-e166acadbe93",
+      "result_id": "929a1128-93ff-4ae0-87e6-12546ed34051"
+    },
+    {
+      "claim_id": "b8fa58f3-76ac-4909-ab1e-312a2be7d6ef",
+      "result_id": "929a1128-93ff-4ae0-87e6-12546ed34051"
+    },
+    {
+      "claim_id": "5bf48f87-ba12-45bd-ae3b-f4112c66ff69",
+      "result_id": "929a1128-93ff-4ae0-87e6-12546ed34051"
+    },
+    {
+      "claim_id": "d9019634-67fa-493f-9c39-713d0b255351",
+      "result_id": "929a1128-93ff-4ae0-87e6-12546ed34051"
+    },
+    {
+      "claim_id": "be38c9cb-4295-4bfb-b04f-1cec45ea0f56",
+      "result_id": "929a1128-93ff-4ae0-87e6-12546ed34051"
+    },
+    {
+      "claim_id": "1fed82c5-2fd4-4e08-8b3c-d5c60c465fde",
+      "result_id": "929a1128-93ff-4ae0-87e6-12546ed34051"
+    },
+    {
+      "claim_id": "3b823e8c-6248-41b1-91e0-dd5592f584ee",
+      "result_id": "929a1128-93ff-4ae0-87e6-12546ed34051"
+    },
+    {
+      "claim_id": "ec9be89d-e62e-4dec-bb00-1da92944cea4",
+      "result_id": "2b627055-006e-4c3f-ac62-8f6928b0e0e1"
+    },
+    {
+      "claim_id": "4dbbb1ab-44a5-4b44-abb2-77b9505ef2dd",
+      "result_id": "2b627055-006e-4c3f-ac62-8f6928b0e0e1"
+    },
+    {
+      "claim_id": "cec9c076-6bbc-4fae-bb76-9ce6ea99f70a",
+      "result_id": "2b627055-006e-4c3f-ac62-8f6928b0e0e1"
+    },
+    {
+      "claim_id": "00508fb1-1dd8-49f1-bdcb-19b5f7f4fe92",
+      "result_id": "2b627055-006e-4c3f-ac62-8f6928b0e0e1"
+    },
+    {
+      "claim_id": "47e3c7a7-88c1-4013-925a-1ce68a3535fc",
+      "result_id": "2b627055-006e-4c3f-ac62-8f6928b0e0e1"
+    },
+    {
+      "claim_id": "795ebebe-8c3d-44ff-b4d5-65b973911fea",
+      "result_id": "2b627055-006e-4c3f-ac62-8f6928b0e0e1"
+    },
+    {
+      "claim_id": "3f1b09aa-4e0a-42d1-a2e5-982ad6f04d98",
+      "result_id": "2b627055-006e-4c3f-ac62-8f6928b0e0e1"
+    },
+    {
+      "claim_id": "94448b63-7682-40de-bbb1-fccc24980b5c",
+      "result_id": "2b627055-006e-4c3f-ac62-8f6928b0e0e1"
+    },
+    {
+      "claim_id": "c6fac079-dac2-4b36-9d98-3c52621648e7",
+      "result_id": "2b627055-006e-4c3f-ac62-8f6928b0e0e1"
+    },
+    {
+      "claim_id": "d8ce1ad7-5916-45da-97c4-8b82473f22fd",
+      "result_id": "c2c9e4d5-4975-4fe3-aabd-ba981093d24e"
+    },
+    {
+      "claim_id": "36b64838-c967-47d4-ac0d-7d556fe2b895",
+      "result_id": "c2c9e4d5-4975-4fe3-aabd-ba981093d24e"
+    },
+    {
+      "claim_id": "dc8be57c-a15b-4491-a136-854350f53432",
+      "result_id": "c2c9e4d5-4975-4fe3-aabd-ba981093d24e"
+    },
+    {
+      "claim_id": "398f75f1-7a5f-443c-aa31-2128e5b873cb",
+      "result_id": "c2c9e4d5-4975-4fe3-aabd-ba981093d24e"
+    },
+    {
+      "claim_id": "e21444fb-75ee-42d1-834c-7462ae397bf1",
+      "result_id": "c2c9e4d5-4975-4fe3-aabd-ba981093d24e"
+    },
+    {
+      "claim_id": "525d0750-2f85-4cdf-9f8d-c1fa294e8a8a",
+      "result_id": "82cd033e-2cbe-4025-bc94-54204b06c7a2"
+    },
+    {
+      "claim_id": "1a3501ed-fa9b-4ab0-a60c-f2bbb13892ff",
+      "result_id": "82cd033e-2cbe-4025-bc94-54204b06c7a2"
+    },
+    {
+      "claim_id": "91321b6b-07c6-476d-9882-d86e611b7585",
+      "result_id": "82cd033e-2cbe-4025-bc94-54204b06c7a2"
+    },
+    {
+      "claim_id": "2cc15105-8183-4dd6-b85f-29fdc78eaa01",
+      "result_id": "82cd033e-2cbe-4025-bc94-54204b06c7a2"
+    },
+    {
+      "claim_id": "cf7da9cc-c26a-4e2a-be14-0e0c8852c5c6",
+      "result_id": "82cd033e-2cbe-4025-bc94-54204b06c7a2"
+    },
+    {
+      "claim_id": "28348fab-ca09-4665-8e1e-7a76fb3094ba",
+      "result_id": "bef11932-5e69-4048-9c66-390be77be641"
+    },
+    {
+      "claim_id": "cea1d0e2-32e2-416d-b19a-3b50d8c37d5e",
+      "result_id": "bef11932-5e69-4048-9c66-390be77be641"
+    },
+    {
+      "claim_id": "409cc77b-29b4-483c-99eb-650e8e67c748",
+      "result_id": "bef11932-5e69-4048-9c66-390be77be641"
+    },
+    {
+      "claim_id": "1bff4030-b442-456b-b775-ecda1cac5947",
+      "result_id": "bef11932-5e69-4048-9c66-390be77be641"
+    },
+    {
+      "claim_id": "2ae16ac8-70ca-4876-9f9b-587f8caddf19",
+      "result_id": "bef11932-5e69-4048-9c66-390be77be641"
+    },
+    {
+      "claim_id": "3d382af9-07c6-479c-81a9-cfe34d98d39d",
+      "result_id": "bef11932-5e69-4048-9c66-390be77be641"
+    },
+    {
+      "claim_id": "f93929db-36e1-44ef-928c-0ec52eacfda2",
+      "result_id": "380f4299-4d0a-4a33-9466-e333d5664332"
+    }
+  ],
+  "comparisons": []
+}

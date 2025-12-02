@@ -1,0 +1,284 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C17",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "MYC is frequently amplified in high-grade serous ovarian cancer (HGSOC), with chromosome 8q gains occurring in 65% of tumors and MYC showing the highest amplification frequency among cancer types. MYC copy number correlates significantly with gene expression levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C17, C41-C45 are well-supported by TCGA data analysis shown in Figure 1A-C, demonstrating widespread MYC amplification and significant correlation (p<1\u00d710\u207b\u2074) between copy number and expression. The data presentation is clear and appropriately analyzed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Ovarian cancer cells demonstrate high functional dependence on MYC for maintaining oncogenic growth. CRISPR/Cas9-mediated MYC depletion significantly reduces cell viability in KURAMOCHI and OVCAR8 cells, and CERES dependency analysis shows ovarian cancer cells have high MYC dependency that correlates with MAX dependency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C4, C46-C50 are supported by CRISPR experiments (Figure 1D) and CERES computational analysis (Figure 1\u2014figure supplement 1). The use of CERES model appropriately controls for copy number effects. The correlation with MAX dependency provides biological validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C52",
+      "C53"
+    ],
+    "result": "JQ1, a BET bromodomain inhibitor, effectively downregulates MYC in multiple myeloma cells (MM1.S) at nanomolar concentrations but does not downregulate MYC in ovarian cancer cells at similar concentrations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C53 are supported by immunoblotting data in Figure 1E showing differential response between MM1.S and ovarian cancer cells. This establishes the rationale for screening alternative approaches to target MYC in ovarian cancer.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "THZ1, a multi-CDK inhibitor targeting CDK7, CDK12, and CDK13, was identified as the most potent compound for downregulating MYC expression in a screen of 42 transcriptional/epigenetic inhibitors. THZ1 decreases MYC protein at ~250 nM and suppresses RNA polymerase II CTD phosphorylation at Ser2, 5, and 7.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C7, C54-C56 are well-supported by screening data (Figure 2B) and dose-response immunoblotting (Figure 2C). The screen design is appropriate, and the biochemical readouts (CTD phosphorylation) are consistent with CDK7 inhibition.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "THZ1 concomitantly represses MCL-1, an anti-apoptotic protein, along with MYC at both mRNA and protein levels. MCL-1 amplification occurs in 12% of HGSOCs, and co-amplification of MYC and MCL-1 is associated with significantly worse prognosis compared to MYC amplification alone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C63 are supported by immunoblotting (Figure 2C), qPCR (Figure 2D), TCGA data analysis, and Kaplan-Meier survival analysis (Figure 2\u2014figure supplement 2A). The survival analysis shows statistically significant differences (log-rank test), supporting the clinical relevance of MCL-1.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "SKOV3 cells, which have low basal expression of MYC and MCL-1, are the least sensitive to THZ1 among eight ovarian cancer cell lines tested and are largely unaffected by CRISPR-mediated loss of MYC or MCL-1. This suggests that MYC and MCL-1 expression levels determine THZ1 sensitivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C67 are supported by cell viability assays, immunoblotting (Figure 2\u2014figure supplement 2B-C), and CRISPR experiments (Figure 2\u2014figure supplement 2D-E). The correlation between expression levels and drug sensitivity is logical, though causality is inferred rather than directly demonstrated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C74"
+    ],
+    "result": "THZ1 treatment at 250 nM causes profound suppression of gene expression in KURAMOCHI and COV362 cells, with 1060 and 1524 genes downregulated respectively. Both MYC and MCL-1 are significantly downregulated (Log2 FC >0.5, FDR<0.001), while PVT1, a lncRNA co-amplified with MYC, is not significantly affected. 685 genes are commonly downregulated between the two cell lines.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C72, C74 are supported by RNA-seq analysis (Figure 3A-C). The statistical thresholds are appropriate, and the specificity for MYC over PVT1 (Figure 3\u2014figure supplement 1) strengthens the conclusion. The overlap analysis shows significant concordance (p<2e-16).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Gene set enrichment analysis reveals that G2M_checkpoint and E2F_targets are the top enriched pathways among genes downregulated by THZ1. MYC target gene sets (MYC_targets_V1 and V2) are significantly enriched, and MYC target genes show significantly greater downregulation compared to other active genes, indicating THZ1 downregulates a MYC-dependent gene expression program.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C78 are supported by GSEA analysis (Figure 3D-E) with appropriate statistical testing (Wilcoxon rank sum test, p=0.006 and p=0.003). The enrichment of MYC target genes provides mechanistic support for MYC-dependent effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C39",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C106"
+    ],
+    "result": "Abolishing MYC expression requires combined inhibition of CDK7, CDK12, and CDK13, not CDK7 alone. YKL-1-116 (CDK7-selective) shows weaker MYC downregulation than THZ1, while THZ531 (CDK12/13-selective) has biphasic effects on MYC. The combination of YKL-1-116 and THZ531 recapitulates THZ1's effects on MYC and MCL-1 downregulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C9, C39, C79-C85, C106 are well-supported by experiments using selective inhibitors (Figure 4A-E). The combination experiments provide strong evidence for the requirement of multi-CDK inhibition. However, the mechanism explaining why both CDK7 and CDK12/13 are required remains unclear.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "A THZ1-resistant CDK7 mutant (C312S) rescues THZ1-induced MYC downregulation and CTD phosphorylation at Ser5 and Ser7, confirming CDK7 as a THZ1 target. However, CDK7 C312S overexpression does not rescue THZ1-induced cell growth inhibition, though it rescues YKL-1-116 effects, suggesting parallel pathways beyond MYC contribute to THZ1's anti-proliferative effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C92 are supported by rescue experiments (Figure 4\u2014figure supplement 2). The differential rescue of molecular markers versus cell growth is appropriately interpreted as evidence for additional THZ1 targets. The inability to rescue THZ1 effects with CDK7 alone is consistent with the multi-targeting requirement.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C38",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C100"
+    ],
+    "result": "In 11 patient-derived xenograft (PDX) models from heavily pre-treated ovarian cancer patients, THZ1 (10 mg/kg IP BID) was well-tolerated and induced significant tumor growth inhibition in all models. Four models showed complete inhibition, six showed initial regression followed by regrowth, and one showed slower growth. MYC and MCL-1 protein levels were nearly abrogated in tumors following THZ1 treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10, C11, C38, C93-C97, C100 are supported by PDX experiments with bioluminescent imaging (Figure 5B-C) and immunoblotting (Figure 5D). The use of 11 independent PDX models from heavily pre-treated patients strengthens clinical relevance. However, the claim of 'no overt toxicity' is based on body weight and behavior only (data not shown), lacking comprehensive toxicity assessment.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C102"
+    ],
+    "result": "Olaparib (PARP inhibitor) showed modest effects in only three PDX models. The combination of THZ1 and Olaparib displayed synergistic effects with further tumor growth inhibition in five models, suggesting that combining THZ1 with PARP inhibitors could be a promising therapeutic approach.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C98-C99 are supported by PDX data (Figure 5C), but C102 is speculative. The term 'synergistic' is used without formal synergy analysis (e.g., Bliss independence or combination index calculations). The combination shows additive or enhanced effects in some models, but true synergy is not rigorously demonstrated. Additional mechanistic studies would be needed to support clinical translation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C12",
+      "C40",
+      "C103",
+      "C104",
+      "C105",
+      "C107"
+    ],
+    "result": "The study demonstrates exceptional antitumor activity of THZ1 in ovarian cancer models through strong suppression of MYC, providing a compelling rationale for investigating THZ1 or its derivatives for treating MYC-dependent ovarian cancer clinically. The requirement for simultaneous CDK7, CDK12, and CDK13 inhibition demonstrates the advantage of polypharmacology in overcoming functional redundancy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12, C40, C103-C105, C107 represent appropriate conclusions from the combined in vitro and in vivo data. The evidence supports THZ1's efficacy and the multi-CDK targeting mechanism. However, C105 is somewhat speculative regarding clinical translation, as additional preclinical studies (pharmacokinetics, comprehensive toxicity, resistance mechanisms) would typically be needed before clinical investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "Background claims establishing the clinical context: ovarian cancer is the fifth leading cause of female cancer death and most lethal gynecologic malignancy; HGSOC is the most common and aggressive subtype; HGSOCs have universal TP53 mutations and ~50% have HR deficiency; platinum-based therapy achieves 70% complete remission but >90% relapse; resistance to platinum and PARP inhibitors is common, creating urgent need for novel therapies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C16, C18-C27 are standard background knowledge appropriately cited from epidemiological and clinical literature. These establish the clinical rationale for the study but are not novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C51",
+      "C73"
+    ],
+    "result": "Background claims on transcriptional CDKs and their role in cancer: CDK7, CDK8, CDK9, CDK11, CDK12, CDK13, and CDK19 regulate transcription by phosphorylating RNA polymerase II; certain oncogenes (MYC, MYCN, RUNX1) depend on continuous transcription driven by super-enhancers; THZ1 inhibits CDK7, CDK12, and CDK13 and suppresses super-enhancer-associated transcription in other cancers; MAX is a MYC partner; PVT1 is co-amplified with MYC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C37, C51, C73 represent established knowledge from prior literature, appropriately cited. These provide mechanistic context but are not novel findings of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C5"
+    ],
+    "result": "Targeting MYC directly has proven difficult.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C5 is well-established knowledge in cancer therapeutics, providing rationale for indirect targeting approaches.",
+    "result_type": "MINOR"
+  }
+]

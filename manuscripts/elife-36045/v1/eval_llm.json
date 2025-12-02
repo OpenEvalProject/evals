@@ -1,0 +1,382 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "CRISPRi-mediated knockdown of ROCK1 and CDH1 in hiPSCs achieved substantial reduction in mRNA and protein levels by day 3 of doxycycline treatment, with sustained knockdown through day 6.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C33 demonstrate effective knockdown with qPCR showing ROCK1 mRNA <30% and CDH1 mRNA <10% by day 3, and western blot confirming ROCK1 protein <20% and CDH1 protein <10% by day 3, maintained through day 6. The data provide converging molecular evidence for successful CRISPRi function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "ROCK1 and CDH1 knockdown in pure hiPSC populations produced distinct morphological changes while maintaining epithelial characteristics, with ROCK1 KD cells displaying cell protrusions at colony borders and CDH1 KD cells showing irregular colony shapes with internal gaps.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C37 are supported by brightfield imaging data showing specific morphological phenotypes for each knockdown. The similarity between ROCK1 KD and Y-27632 treatment (C37) provides orthogonal validation of the ROCK1 knockdown phenotype.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C38",
+      "C39"
+    ],
+    "result": "CDH1 knockdown resulted in complete loss of CDH1 protein expression after 5 days of DOX treatment, while ROCK1 KD and control cells maintained CDH1 expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C39 are directly supported by immunofluorescence data in Figure 1E showing absence of CDH1 staining in CDH1 KD cells and maintained expression in ROCK1 KD and control cells, confirming target specificity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "ROCK1 knockdown cells displayed twofold increased cortical stiffness compared to control and CDH1 KD cells after 6 days, while contact angle measurements showed no significant differences between groups.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C43 are supported by AFM measurements (C42-C43) and contact angle analysis (C40-C41). However, the increased stiffness in ROCK1 KD cells is counterintuitive given ROCK1's known role in promoting contractility, which the authors acknowledge requires further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "In pre-mixing induction experiments, ROCK1 KD cells sorted radially to colony edges without forming sharp borders, while CDH1 KD cells formed distinct boundaries with WT cells regardless of spatial location.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C46 are supported by live cell imaging and confocal microscopy in Figure 2B-C showing distinct patterning behaviors. The differential segregation patterns demonstrate that ROCK1 and CDH1 regulate different aspects of multicellular organization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "The extent of ROCK1 KD cell clustering decreased with increasing proportion of ROCK1 KD cells, while CDH1 KD cells maintained segregation regardless of cell ratio.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C49 are supported by experiments varying cell ratios shown in Figure 2\u2014figure supplement 1. This demonstrates that ROCK1-mediated patterning is ratio-dependent while CDH1-mediated patterning is ratio-independent, revealing different mechanisms of cell sorting.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C50"
+    ],
+    "result": "Pattern formation in mixed colonies results from knockdown of target genes rather than dCas9-KRAB expression, as demonstrated by segregation of KD cells from CRISPRi cells lacking gRNA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C50 is supported by control experiments showing that CRISPRi cells without gRNA do not pattern with WT cells, but do segregate when containing ROCK1 or CDH1 gRNAs. This control is essential for ruling out non-specific effects of the CRISPRi machinery.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Post-mixing knockdown induction produced different patterning outcomes than pre-mixing induction, with ROCK1 KD cells showing vertical stacking rather than radial segregation, while CDH1 KD cells maintained robust segregation with less distinct borders.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C54 are supported by imaging data in Figure 2F-H showing temporal dependence of pattern formation. The 3D stacking of ROCK1 KD cells in post-mixing conditions versus 2D segregation in pre-mixing conditions reveals that timing of mechanical perturbation affects organizational outcomes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "CRISPRi cells increased in proportion over time in mixed colonies due to reduced DNA synthesis in WT-GFP cells, but differential proliferation did not account for pattern formation as control mixed colonies showed no patterning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C57 are supported by flow cytometry and EdU incorporation data. The logic that proliferation differences don't explain patterning (C57) is sound because control colonies with similar proliferation differences don't pattern, though this confounding factor complicates interpretation of other results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Mixed ROCK1 KD and CDH1 KD colonies maintained epithelial morphology throughout 6 days of knockdown, with expression of epithelial markers EpCAM and junction-localized \u03b2-catenin, and no cell migration away from colonies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C62 are supported by immunostaining data showing maintained epithelial markers despite mechanical perturbations. The presence of junction-localized \u03b2-catenin (C61-C62) provides molecular evidence for maintained adherens junctions, though the inference about epithelial colony maintenance (C62) is reasonable but indirect.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Pluripotency markers OCT3/4 and SOX2 were maintained in both pure and mixed ROCK1 KD and CDH1 KD colonies at protein and transcript levels, with no spatial patterning of pluripotency marker expression despite physical cell segregation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C66 are supported by immunostaining and qPCR data showing maintained pluripotency markers. The observation that physical patterning occurs without corresponding pluripotency marker patterning (C64) is important for demonstrating that mechanical perturbations can organize cells without affecting cell state.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "ROCK1 KD cells showed transient upregulation of primitive streak markers BRA and SOX9 on day 3 that returned to baseline by day 6, indicating that loss of ROCK1 or CDH1 is insufficient to disrupt pluripotency or induce differentiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C69 are supported by gene expression data showing transient changes that resolve. The inference that KD is insufficient to induce differentiation (C69) is reasonable given the return to baseline and maintained pluripotency markers, though high variability in CDH1 KD samples suggests some instability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Mosaic ROCK1 knockdown in mixed populations induced transient gene expression changes associated with primitive streak formation and adhesion molecules on days 1-3, with mosaic-specific changes distinct from pure KD, but all changes resolved by day 6.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C76 are supported by comprehensive gene expression analysis in Figure 4E showing temporal dynamics and mosaic-specific effects. The resolution of gene expression changes by day 6 (C76) correlates with pattern stabilization, supporting a model of transient signaling during self-organization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Mosaic CDH1 knockdown caused upregulation of cell-cell adhesion genes and Wnt signaling on day 1 that was exacerbated in mosaic conditions, with all changes except CDH1 itself resolving by day 6 in coordination with pattern establishment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C80 are supported by gene expression data in Figure 4F showing mosaic-specific Wnt pathway activation. The temporal correlation between gene expression stabilization and pattern formation (C80) is an important observation, though causality is not established.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "WT-GFP cells mixed with ROCK1 KD cells showed distinct gene expression changes including upregulation of cell sorting and movement genes, while WT cells mixed with CDH1 KD cells resembled control populations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C83 are supported by gene expression analysis of sorted WT populations showing non-cell-autonomous effects. The differential response of WT cells to ROCK1 versus CDH1 KD neighbors demonstrates that mechanical perturbations can propagate signals to neighboring cells.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "CDH1 KD populations showed biased differentiation with fewer PAX6+ ectodermal cells and more EOMES+ mesendodermal cells compared to WT, while ROCK1 KD populations showed no significant differences in lineage marker expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C87 are supported by quantification of immunofluorescence data in Figure 4\u2014figure supplement 2. The differential lineage bias in CDH1 KD cells demonstrates that mosaic patterning can influence subsequent differentiation outcomes, though the mechanism remains unclear.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "Prolonged ROCK1 knockdown resulted in twofold increased cortical stiffness, potentially due to differences between genetic knockdown and pharmacological inhibition or compensatory mechanisms from long-term perturbation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C90 is supported by AFM data, but claims C91-C92 are speculative explanations for the counterintuitive result. The increased stiffness contradicts expectations from ROCK inhibitor studies, and while the authors propose reasonable hypotheses, no experimental evidence is provided to test these mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C101",
+      "C103"
+    ],
+    "result": "CDH1 knockdown alone is insufficient to induce differentiation, with cell density and intercellular signaling buffering against cell state changes, potentially through a priming mechanism similar to stiffness-dependent integrin signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C98 is supported by maintained pluripotency markers, but C99, C101, and C103 are speculative mechanistic explanations without direct experimental support. The priming hypothesis is plausible given transient gene expression changes, but would require additional experiments to validate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C109",
+      "C110"
+    ],
+    "result": "Mosaic ROCK1 knockdown demonstrates that spatial location within colonies can be controlled without altering differentiation potential, while mosaic CDH1 knockdown enables dual control of both spatial positioning and lineage potential.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C110 are supported by the combination of patterning data and differentiation experiments. ROCK1 KD produces spatial organization without lineage bias, while CDH1 KD affects both, demonstrating orthogonal control over different aspects of morphogenesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "WT cells in mixed colonies showed downregulation of GATA4, a mesendoderm marker, which may affect their ability to differentiate to mesendoderm, though no functional differences were observed in CHIR-induced differentiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C111-C113 are supported by gene expression data, but C114 is speculation about functional consequences. The lack of observed differences in EOMES expression during mesendoderm differentiation (C115) suggests the GATA4 downregulation may not be functionally significant, or is overcome by strong differentiation signals.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C122"
+    ],
+    "result": "CRISPRi technology offers flexibility for targeting any gene and timing of knockdown, enabling potential applications in pre-patterning colonies, examining signal propagation, and improving organoid reproducibility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C117 is supported by citations, but C118-C120 and C122 are speculative about future applications without experimental demonstration. While the potential applications are reasonable extrapolations from the demonstrated technology, they represent proposed rather than validated capabilities.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C1",
+      "C6",
+      "C7",
+      "C8",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Background claims establish that morphogenesis involves asymmetric cell populations forming complex patterns through coordination of biochemical and biophysical cues, with ROCK1 regulating cortical tension via actin-myosin dynamics and CDH1 functioning as an adhesion molecule associated with pluripotency and morphogenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C6-C8, C19-C23, C26-C28 are supported by citations to established literature and represent accepted knowledge in the field. These provide appropriate scientific context for the experimental work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C2",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C89"
+    ],
+    "result": "Current methods for modeling morphogenesis lack control over cell-type co-emergence and selective perturbation of subpopulations, with existing approaches relying on sequential differentiation/recombination or physical constraints that limit cellular degrees of freedom.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C12-C17, and C89 represent the authors' assessment of limitations in current methods, supported by citations. While these are evaluative statements rather than experimental results, they accurately characterize gaps in the field that motivate the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C18",
+      "C24",
+      "C25",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C100",
+      "C102",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C113",
+      "C121"
+    ],
+    "result": "Literature-based claims establish that hPSCs can self-organize into tissue-like structures, CRISPRi enables temporal gene regulation, CDH1's role in pluripotency is context-dependent, and cellular position within embryos influences fate decisions through mechanical and signaling cues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C11, C18, C24-C25, C93-C97, C100, C102, C104-C108, C113, and C121 are supported by appropriate citations to prior literature and provide necessary background for interpreting the experimental results.",
+    "result_type": "MINOR"
+  }
+]

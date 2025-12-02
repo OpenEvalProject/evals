@@ -1,0 +1,306 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "The authors provide background on multidomain protein folding, citing that multidomain proteins are predominant across life, that domains fold independently but multidomain folding is more complex than the sum of individual domains, and that interdomain interactions play nonuniversal roles in modulating stability, cooperativity, and kinetics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C20 are all supported by citations to prior literature and represent established knowledge in the field. These claims provide context for the study but are not novel findings from this work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "DPO4 consists of four domains (F, P, T, LF) connected by a flexible linker, with many more intradomain than interdomain contacts. Thermal unfolding experiments indicate one intermediate state, and the 'open-to-closed' conformational transition during DNA binding is critical for function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C28 describe the structural and functional properties of DPO4 based on prior experimental work (citations to Wong et al., 2008; Sherrer et al., 2012; Fiala and Suo, 2004; etc.). These are well-established facts about DPO4 that provide necessary background.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Structure-based model simulations reveal that DPO4 folding proceeds through multiple intermediate states in a 'divide-and-conquer' framework, consistent with experimental unfolding data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C31 are supported by simulation data (Figure 1A) and comparison with experimental results (Sherrer et al., 2012). The 2D free energy landscape clearly shows multiple intermediate states, and the divide-and-conquer mechanism is supported by structural analysis of contact maps.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Backtracking during DPO4 folding is most probable when interdomain interactions are stronger than the default SBM value, and is led by unstable folding/unfolding of small F and T domains. The DPO4 core shows high cooperative folding, and moderate increases in interdomain interaction strength (\u03c1 = 0.5-1.0) significantly increase folding cooperativity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C41 are supported by kinetic simulation data (Figure 2\u2014figure supplements 4 and 5), TCI analysis (Figure 2G-H), and comparison with experimental data (Sherrer et al., 2012). The backtracking analysis is based on direct observation in trajectories, and cooperativity is quantified using the TCI metric.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Weakening interdomain interactions promotes domain folding. When interdomain interactions are weak (\u03c1 = 0.5-0.9), interface formation is rate-limiting; when strong (\u03c1 \u2265 1.0), domain folding becomes rate-limiting. The T-LF interface and linker formation are accelerated when \u03c1 increases from 0.5 to 0.8, which are critical structures for DPO4-DNA binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C47 are supported by kinetic simulation data (Figure 3A-C) showing U-shaped folding kinetics and differential effects on domain vs. interface formation. The identification of rate-limiting steps is based on comparison of mean first passage times.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C53",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "DPO4-DNA binding affinity increases with strengthening interdomain interactions. A multistate binding process (US\u2192EC\u2192IS\u2192BS) is observed for all \u03c1 values. During binding, DPO4 adopts three conformational forms (apo, intermediate, binary), with increasing \u03c1 leading to higher apo form population in the IS.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C59 are supported by umbrella sampling simulations (Figure 4A-B) and conformational analysis (Figure 4\u2014figure supplement 1). The free energy landscapes clearly show the multistate process and the effects of \u03c1 on binding affinity and conformational distributions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C63",
+      "C64"
+    ],
+    "result": "Structural fluctuations of DPO4 have little effect on diffusion coefficient D, suggesting that DNA capture rates should be similar for different interdomain interaction strengths. However, weakly formed and flexible domain interfaces facilitate the DNA-binding process, with a strong correlation between conformational fluctuation (RMSF) and encounter times.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C64 are supported by diffusion coefficient calculations (Figure 4C, Figure 4\u2014figure supplement 2), encounter time analysis (Figure 4D), and correlation analysis (Figure 4D insert). The data show \u03c1-independent diffusion but \u03c1-dependent encounter times.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C69"
+    ],
+    "result": "Transition times from metadynamics simulations correlate strongly with barrier heights from umbrella sampling. Both IS\u2192BS and BS\u2192IS transition times increase monotonically with \u03c1, with significant deceleration of IS\u2192BS transition as interdomain interactions strengthen. To maintain functional conformation, DPO4 must avoid strong interdomain interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C69 are supported by metadynamics simulations (Figure 4E) and comparison with thermodynamic data (Figure 4\u2014figure supplements 4 and 5). The strong correlation between kinetic and thermodynamic results validates the findings, though the authors acknowledge quantitative discrepancies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Prior experimental and computational studies of DPO4 and other multidomain proteins have shown that domains can fold independently but that weak interdomain interactions still play important roles in folding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C75 summarize prior work on DPO4 and multidomain proteins, all supported by appropriate citations. These provide context for interpreting the current simulation results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "Weak interdomain interactions enhance stability of on-pathway intermediate states and promote deterministic folding order while eliminating backtracking. Very weak interactions destabilize folded states, while strong interactions couple domain folding and interface formation, leading to 'all-or-none' folding with high cooperativity and more backtracking. Fast folding requires weak interdomain interactions for efficient 'divide-and-conquer' strategy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C83 synthesize thermodynamic (Figure 1C), kinetic (Figure 3), cooperativity (Figure 2H), and backtracking (Figure 2\u2014figure supplement 4) data to explain the mechanistic basis for optimal folding. The conclusions are well-supported by the simulation data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "Weak interdomain interactions induce conformational flexibility that facilitates DNA anchoring (reminiscent of 'fly-casting' effect). Decreasing interdomain interaction strength accelerates the IS\u2192BS transition, promoting DNA replication and lesion bypass function. This is consistent with experimental observations of nonproductive to productive complex switching.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C89 are supported by DNA-binding simulation data (Figure 4D-E, Figure 5) and comparison with experimental FRET studies (Brenlla et al., 2014; Raper et al., 2016, 2018). The mechanistic interpretation is well-grounded in both simulation and experimental evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C90",
+      "C91"
+    ],
+    "result": "Very weak interdomain interactions lead to high conformational flexibility and very low DNA-binding affinity, while very strong interactions quench conformational dynamics and slow binding transitions, populating the nonproductive IS rather than productive BS.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C91 are supported by simulation data showing conformational flexibility (Figure 4\u2014figure supplement 3), binding affinity (Figure 4A), and transition kinetics (Figure 4E). The interpretation is consistent with the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "The default SBM with homogeneously weighted interactions shows many consistencies with experimental observations of DPO4 folding and DNA binding, indicating that native topology is a major determinant of folding and binding mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C95 are supported by comparison of simulation results with multiple experimental studies (Sherrer et al., 2012; Maxwell et al., 2014; Raper and Suo, 2016; Lee et al., 2017). The agreement validates the SBM approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "DPO4 folding is not most efficient when intra- and interdomain interactions have equal weights. The default SBM leads to enhanced DNA-binding affinity and stabilization of the functionally inactive IS rather than active BS. Weak interdomain interactions (\u03c1 < 1.0) are key to the trade-off between DPO4 folding and function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C99 are supported by kinetic data (Figure 3A) and DNA-binding data (Figure 4A). The conclusion that \u03c1 < 1.0 is optimal is based on synthesis of both folding and binding results, though the exact optimal value is not precisely determined.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C101",
+      "C102"
+    ],
+    "result": "DPO4 domains contain a large proportion of conserved hydrophobic residues that should form stronger interactions inside domains than between domains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C102 are supported by citation to structural analysis (Ling et al., 2001) and basic principles of protein chemistry. This provides a structural rationale for why \u03c1 < 1.0 might be optimal.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "Backtracking in DPO4 folding is related to unstable folding/unfolding of small F and T domains. These domains are smaller than in high-fidelity polymerases, reducing DNA interactions and enabling lesion accommodation. Backtracking may help DPO4 perform translesion synthesis through domain fluctuations, though limited backtracking at \u03c1 < 1.0 may maintain F domain rigidity needed for low-fidelity polymerization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C103-C111 combine simulation observations (backtracking data) with structural comparisons (Ling et al., 2001) and functional speculation. While the backtracking observation is supported (C103), the functional interpretation (C106, C111) is speculative and not directly tested. The connection between backtracking and TLS function requires experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "DPO4 has naturally evolved to favor both folding and function through optimization of interdomain interactions. High structural modularity enables efficient 'divide-and-conquer' folding, while weak interdomain interactions (weaker than topology alone would predict) enable fast folding and facilitate DNA binding. Evolutionary pressure has placed more hydrophobic residues inside domains rather than at interfaces.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C112-C117 present an evolutionary interpretation of the simulation results. While the simulation data support that \u03c1 < 1.0 is optimal for both folding and function (C114, C116), the evolutionary claims (C112, C115, C117) are speculative. The authors acknowledge this is a suggestion based on inference rather than direct evidence of evolutionary optimization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C118",
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "All Y-family polymerases share conserved architecture and sequence homology. Unlike replicative polymerases that show large-scale F domain conformational changes responsible for high-fidelity synthesis, Y-family polymerases do not show such changes. Differences in topology lead to different folding scenarios and biological functions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C118-C121 are supported by citations to structural studies of various polymerases (Ling et al., 2001; Silvian et al., 2001; Trincao et al., 2001; Uljon et al., 2004; Swan et al., 2009; Johnson, 2010; Prindle et al., 2013; B\u0119benek and Ziuzia-Graczyk, 2018). These provide context for the generalizability of the findings.",
+    "result_type": "MINOR"
+  }
+]

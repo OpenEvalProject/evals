@@ -1,0 +1,1617 @@
+{
+  "submission": {
+    "id": "a5ebb2c5-ddb4-4b89-848c-9f2535521803",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T12:45:36.006275Z",
+    "updated_at": "2025-12-02T12:45:36.006275Z"
+  },
+  "content": [
+    {
+      "id": "4829f732-6ca9-437b-b423-23d1fafc46e7",
+      "submission_id": "a5ebb2c5-ddb4-4b89-848c-9f2535521803",
+      "content_type": "manuscript",
+      "content_text": "# Implementation of an antibody characterization procedure and application to the major ALS/FTD disease gene C9ORF72\n\n## Authors\n\n- Carl Laflamme<sup>1</sup> ([ORCID: 0000-0001-5906-025X](https://orcid.org/0000-0001-5906-025X))\n- Paul M McKeever<sup>2</sup>\n- Rahul Kumar<sup>1</sup> ([ORCID: 0000-0002-1061-5194](https://orcid.org/0000-0002-1061-5194))\n- Julie Schwartz<sup>1</sup>\n- Mahshad Kolahdouzan<sup>4</sup>\n- Carol X Chen<sup>1</sup>\n- Zhipeng You<sup>1</sup>\n- Faiza Benaliouad<sup>1</sup>\n- Opher Gileadi<sup>5</sup> ([ORCID: 0000-0001-6886-898X](https://orcid.org/0000-0001-6886-898X))\n- Heidi M McBride<sup>1</sup> ([ORCID: 0000-0003-4666-2280](https://orcid.org/0000-0003-4666-2280))\n- Thomas M Durcan<sup>1</sup>\n- Aled M Edwards<sup>1</sup>\n- Luke M Healy<sup>4</sup>\n- Janice Robertson<sup>2</sup>\n- Peter S McPherson<sup>1</sup> ([ORCID: 0000-0001-7806-5662](https://orcid.org/0000-0001-7806-5662)) \u2020\n\n### Affiliations\n\n1. Tanenbaum Open Science Institute, Montreal Neurological Institute McGill University Montreal Canada\n2. Tanz Centre for Research in Neurodegenerative Diseases University of Toronto Toronto Canada\n3. Department of Laboratory Medicine and Pathobiology University of Toronto Toronto Canada\n4. Neuroimmunology Unit, Montreal Neurological Institute McGill University Montreal Canada\n5. Structural Genomics Consortium University of Toronto Toronto Canada\n6. Structural Genomics Consortium, Nuffield Department of Clinical Medicine University of Oxford Oxford United Kingdom\n\n\u2020 Corresponding author\n\n## Abstract\n\nAntibodies are a key resource in biomedical research yet there are no community-accepted standards to rigorously characterize their quality. Here we develop a procedure to validate pre-existing antibodies. Human cell lines with high expression of a target, determined through a proteomics database, are modified with CRISPR/Cas9 to knockout (KO) the corresponding gene. Commercial antibodies against the target are purchased and tested by immunoblot comparing parental and KO. Validated antibodies are used to definitively identify the most highly expressing cell lines, new KOs are generated if needed, and the lines are screened by immunoprecipitation and immunofluorescence. Selected antibodies are used for more intensive procedures such as immunohistochemistry. The pipeline is easy to implement and scalable. Application to the major ALS disease gene C9ORF72 identified high-quality antibodies revealing C9ORF72 localization to phagosomes/lysosomes. Antibodies that do not recognize C9ORF72 have been used in highly cited papers, raising concern over previously reported C9ORF72 properties.\n\n## Introduction\n\nAntibodies are vital tools in the biomedical research arsenal and in keeping with their importance there are over a million unique antibodies that are commercially available (Dr. Matt Baker, ThermoFisher, personal communication). In addition are the outputs of numerous, publicly-funded projects, which have generated recombinant or monoclonal antibodies, thus creating renewable antibodies with the potential for high reproducibility (Hornsby et al., 2015; Marcon et al., 2015; Na et al., 2016; Venkataraman et al., 2018; Andrews et al., 2019). The largest public antibody initiative has generated greater than 24,000 antibodies corresponding to almost 17,000 human genes, with a focus on polyclonal antibodies (Uhl\u00e9n et al., 2015). Thus, there are pre-existing antibodies for a large percentage of the human genome.\n\nThe pace and attention given to antibody generation has not been matched with an equal effort on antibody characterization or in implementing standardized antibody characterization procedures. As a result, most products are generated and then sold/distributed with only rudimentary and non-quantitative supporting data, and as a result there are serious flaws in the reliability of many of the available reagents. Ill-defined antibodies contribute significantly to a lack of reproducibility in important research efforts including preclinical studies, with estimates that up to 90% of a select group of 53 landmark preclinical studies suffered from such flaws (Bradbury and Pl\u00fcckthun, 2015).\n\nSeveral ad hoc international working groups have met to help define best practices for antibody validation (Taussig et al., 2018). One of the groups (Uhlen et al., 2016) proposed five separate validation criteria: (1) genetic strategies in which the specificity of the antibody toward the endogenous protein is confirmed by the loss of signal in cells or tissues comparing parental to knockout (KO) or knockdown controls; (2) orthogonal strategies in which correlations are made between the antibody signal and known information regarding protein abundance or localization; (3) the ability of two independent uncharacterized antibodies recognizing different epitopes in the same target protein to recognize the same protein; (4) using overexpressed epitope-tagged proteins comparing antibodies against the tag to the uncharacterized antibody; (5) immunoprecipitation followed by mass spectrometry to determine if the protein of interest is a major signal in the sample. These criteria are arguably not of equal scientific value and there is no consensus as to which should be used. The first and fifth methods are the most unbiased and useful, whereas the remaining are less informative and perhaps flawed. The genetic approaches presented in criterion one are suitable for antibody validation in all applications, yet there is no template for their application.\n\nHistorically, the lack of a suitable control \u2013 an isogenic source of proteins lacking the target antigen, has hampered the implementation of criterion 1, but this has changed: it is now routine to make KO cell lines in an array of cell types which, for non-essential proteins, provides the ideal control for testing antibody specificity for the endogenous protein in multiple applications. This capability then opens up the possibility of creating a standardized characterization process that can be applied systematically to characterize not only new antibodies but also the\u00a0~1 million antibodies that are already commercially available. With such a process in hand it should be possible to identify high quality antibodies for different applications from the existing set of commercially-available antibodies, seemingly for a large percentage of all human gene products.\n\nTo pilot the concept that excellent antibodies can be found among those that are commercially available if one carries out a systematic analysis, we studied the major amyotrophic lateral sclerosis (ALS, OMIM #105400) disease gene product, C9ORF72. ALS is a fatal neurodegenerative disease characterized by progressive paralysis leading to respiratory failure (Kiernan et al., 2011) and is on a genetic and pathophysiological continuum with frontotemporal dementia (FTD, OMIM #600274) (Ng et al., 2015). A search for genes involved in ALS/FTD led to the discovery of a hexanucleotide-repeat expansion mutation in the first intron of C9ORF72. In a North America cohort, this mutation underlies 11.7% and 23.5% of familial FTD and ALS cases, respectively, and in a large Finnish population, the C9ORF72 mutation underlies 46.0% of familial ALS and 21.1% of sporadic ALS (DeJesus-Hernandez et al., 2011; Renton et al., 2011). Thus, the C9ORF72 mutation is the most common genetic abnormality in both FTD and ALS. It is vital to understand the cell biological role of C9ORF72, but the literature regarding C9ORF72 subcellular and tissue-distribution is conflicting (Burk and Pasterkamp, 2019). We believe the lack of consensus on C9ORF72 expression, function and subcellular localization stems in part from the use of non-specific antibodies.\n\nC9ORF72 provides an excellent protein on which to develop an antibody characterization process because although the protein is of relatively low abundance, there are many commercially-available antibodies. The process we outline can be applied to any protein target and here it led us to the recognition of problems with the C9ORF72 literature and to the discovery of unexpected properties of the protein.\n\n## Results\n\n### Development of an antibody validation strategy\n\nThe antibody validation strategy developed in this manuscript is presented in overview in Figure 1. The steps were built empirically as we proceeded with our analysis of antibodies for C9ORF72. The workflow is as follows: 1) use PaxDB (https://pax-db.org/) to identify a cell line that expresses the protein of interest at relatively high levels, is readily modifiable by CRISPR/Cas9, and is easy to grow and manipulate; 2) use CRISPR/Cas9 to generate a KO in this cell line; 3) identify all commercial antibodies against the protein of interest and screen them by immunoblot comparing the parental cell line to the KO controls; 4) use an antibody validated in step three for quantitative immunoblots on a panel of cell lines to identify a line that has the highest levels of expression of the target protein and has appropriate characteristics for the target of interest. This step is recommended as it provides more reliable information than could be provided by the proteomics database. However, the selected line may well be the original line that was chosen; 5) use the selected edited line to screen antibodies for specificity by immunoprecipitation and immunofluorescence.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/48363/elife-48363-fig1-v2.jpg)\n\n**Figure 1.:** IB\u00a0=\u00a0immunoblot; IP\u00a0=\u00a0immunoprecipitation; IF\u00a0=\u00a0immunofluorescence; KO\u00a0=\u00a0knockout.\n\n### Selection and editing of a cell line and selection of antibodies\n\nThe single most common application of commercial antibodies for the majority of laboratories is immunoblot. We initially sought to screen all commercially available C9ORF72 antibodies by immunoblot comparing parental and KO cell lines. We first referenced PaxDb, a comprehensive proteomic database that provides protein abundance across multiple organisms and tissues/cell lines (Wang et al., 2015) (https://pax-db.org/). C9ORF72 is expressed at relatively low levels in most tissues and cell lines ranging from the 77th percentile for HeLa cells to the 35th percentile in RKO cells. We eventually chose to start with HEK-293 cells (expression levels at the 65th percentile) as they are the 5th most abundant C9ORF72 expressing cell line, and are easy to grow and to edit with CRISPR/Cas9. We then used CRISPR/Cas9 to generate C9ORF72 heterozygous and KO HEK-293 cells. Briefly, we introduced the sequence of our KO sgRNA into an expression plasmid bearing both the sgRNA scaffold backbone and Cas9. We then transfected the plasmid into HEK-293 cells and selected transfected cells with puromycin for 3 days. Cells were grown following clonal dilution and sequencing of the genomic DNA of multiple clones revealed double-strand breaks at the expected localization leading to one heterozygous and two complete KO lines.\n\nWe then purchased all known commercial antibodies for C9ORF72. For this we searched the literature by PubMed and examined the websites of companies with C9ORF72 antibodies identified using Google searches. We initially identified more than 100 antibodies for C9ORF72. However, we avoided purchasing the same antibody available from different companies. For example, the C9ORF72 antibody Prestige Antibodies Powered by Atlas Antibodies was purchased at Sigma (HPA023873), but is also sold by other companies including Novus Biological (NBP1-93504). This led to 14 distinct commercial C9ORF72 antibodies, 10 rabbit polyclonal antibodies, three mouse monoclonal antibodies and one rabbit monoclonal antibody (Supplementary file 1). The antibodies were available from Abcam (5), Proteintech (3), GeneTex (3), Cell Signaling Technology (1), Sigma (1), and Santa Cruz (1). In addition we identified two sheep polyclonal antibodies from the Protein Phosphorylation and Ubiquitylation Unit of the Medical Research Council (MRC) in Dundee Scotland (Supplementary file 1). Interestingly, we eventually received refunds for many of the antibodies that did not perform as advertised, lowering overall costs.\n\n### Analysis by immunoblot\n\nWe screened the 16 C9ORF72 antibodies by immunoblot using lysates of HEK-293 cells including parental cells, the isogenic heterozygous line and the two isogenic KO lines (Figure 2). For each series of blots we resolved 50 \u03bcg of protein (using 5\u201316% gradients gels) from lysates prepared in buffer containing 1% Triton X-100 in order to extract both cytosolic and membrane-associated proteins. The proteins, transferred to nitrocellulose membranes, were stained with Ponceau S to ensure even loading of lysates. After screening all 16 antibodies we found one mouse monoclonal antibody from GeneTex (GTX634482) that has optimal features (Figure 2). This antibody demonstrates a strong signal in parental HEK-293 cell lysates, the signal is reduced by\u00a0~50% in the heterozygous line, and no signal for the antibody is detected in the two KO lines (Figure 2). Moreover, no band other than C9ORF72 is visible, even upon long exposure (Figure 2\u2014figure supplement 1A). Abcam rabbit monoclonal antibody (ab221137) and GeneTex mouse monoclonal antibody (GTX632041) also gave specific signals on immunoblot (Figure 2) but other non-specific bands were detected upon longer exposure (Figure 2\u2014figure supplement 1A).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/48363/elife-48363-fig2-v2.jpg)\n\n**Figure 2.:** Cell lysates from HEK-293 parental, heterozygous (+/-) or two individual C9ORF72 KO clones (KOA, KOB) were prepared and processed for immunoblot with the indicated C9ORF72 antibodies. The arrows point to positive C9ORF72 signals. The Ponceau stained transfers associated with each blot are shown as a protein loading control.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/48363/elife-48363-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Selected immunoblots on HEK-293 cell lysates from Figure 2 or on mouse brain samples from part (B) of this supplement are shown with longer exposure. (B) Brain lysates from WT and C9ORF72 KO mice were prepared and processed for immunoblot with the indicated C9ORF72 antibodies. The arrows point to positive C9ORF72 signals.\n\nC9ORF72 is studied in mouse models of ALS and thus the identification of high-quality antibodies for murine C9ORF72 would be useful for the ALS community. We screened all 16 antibodies using brain extract from wild-type (WT) and C9ORF72 KO animals and found that both GTX634482 and ab221137 showed strong specific signals (Figure 2\u2014figure supplement 1A, B). Other antibodies that recognize both human and murine C9ORF72 include ab12179 from Abcam, PT25757 and PT22637 from Proteintech, HPA023873 from Sigma, MRC-S478D and MRC-S479D from the MRC, and CST64196 from Cell Signaling Technology (Figure 2; Figure 2\u2014figure supplement 1B). We were surprised to observe that some antibodies that did not detect C9ORF72 specifically in human lysates could identify C9ORF72 in mouse samples. These antibodies are GTX119776, ab227555 and sc-138763. All of these antibodies detect additional bands, and in several cases they reveal multiple cross-reactive species. Thus, GTX634482 from GeneTex and ab221137 from Abcam are robust antibodies for immunoblot.\n\n### Analysis by immunoprecipitation\n\nWe next sought to test the functionality of the antibodies in immunoprecipitation applications. All 16 antibodies were pre-coupled to protein A- or protein G-Sepharose as appropriate and a detergent solubilized HEK-293 lysate from parental cells only was prepared and incubated with the antibody/bead mixtures. Controls included lysates incubated with beads alone and the bead/antibody conjugates incubated with buffer alone. After washing the beads, the presence of C9ORF72 in the immunoprecipitates was detected by immunoblot using rabbit antibody PT22637 for the immunoprecipitates with mouse antibodies, and the mouse antibody GTX634482 for immunoprecipitates with rabbit or sheep antibodies (Figure 3). Of the 16 antibodies, nine immunoprecipitate endogenous C9ORF72, with GeneTex monoclonal antibody GTX632041 demonstrating the most robust enrichment of the protein compared to starting material (SM) (Figure 3A/B). Seven antibodies showed no appreciable C9ORF72 immunoprecipitation including GTX634482 and ab221137 (Figure 3A/B), which were the most effective antibodies in immunoblot. We also determined the percentage of protein depleted from the supernatant after immunoprecipitation by performing immunoblots on the unbound fraction (Figure 3\u2014figure supplement 1). For this we employed the LI-COR Odyssey Imaging System (LI-COR Biosciences), which utilizes fluorescent secondary antibodies to allow for quantitative immunoblots. Approximately 70% of endogenous C9ORF72 is captured from 1 mg of HEK-293 lysates using 1 \u00b5g of GTX632041, whereas the other 15 antibodies capture either no protein or at most 20% of total C9ORF72 (Figure 3\u2014figure supplement 1). The effectiveness of GTX634482 and ab221137 on immunoblot coupled to their inability to immunoprecipitate C9ORF72 highlights the need to screen all antibodies for all applications.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/48363/elife-48363-fig3-v2.jpg)\n\n**Figure 3.:** (A) HEK-293 cell lysates were prepared and immunoprecipitation was performed using the indicated C9ORF72 antibodies pre-coupled to protein G-Sepharose (prot. G). Controls included the Protein G-Sepharose alone incubated with cell lysate or protein G-Sepharose pre-coupled with the antibodies but incubated with lysis buffer. Samples were washed and processed for immunoblot with C9ORF72 antibody PT22637. (B) HEK-293 cell lysates were prepared and immunoprecipitation was performed using the indicated C9ORF72 antibodies pre-coupled to protein A-Sepharose (prot. (A). Controls included the Protein S-Sepharose alone incubated with cell lysate or protein A-Sepharose pre-coupled with the antibodies but incubated with lysis buffer. Samples were washed and processed for immunoblot with C9ORF72 antibody GTX634482. (C) Lysates were prepared from HEK-293 cells, parental (+/+) and KO (-/-) and immunoprecipitation was performed using C9ORF72 antibody GTX632041 pre-coupled to protein G-Sepharose. Samples were washed and processed for immunoblot with C9ORF72 antibody PT22637. Blots were also performed for SMCR8 and WDR41. The Ponceau stained transfer of the blot is shown as a protein loading control. Aliquots (10%) of the cell lysates before (starting material, SM) and after incubation with the antibody-coupled beads (unbound, UB) were processed in parallel. (D) Table indicating the total spectrum count and protein identification probabilities for the indicated gene products proteins obtained by mass spectrometry analysis of the immunoprecipitated samples from three independent experiments (D1\u2013D2\u2013D3).\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/48363/elife-48363-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** HEK-293 cell lysates were prepared and immunoprecipitation was performed using the indicated C9ORF72 antibodies and the appropriate protein A/G-Sepharose (prot. A/G) bead controls. After the O/N incubation period, samples were spun to pellet the bead-antibody conjugates. The supernatant (unbound fraction) were conserved and analyzed by quantitative immunoblot with the C9ORF72 antibody ab221137 (left panel) or GTX634482 (right panel). The C9ORF72 protein signal as a ratio to total protein was determined, normalized to the appropriate prot A/G control, and presented as fold change (blue numbers).\n\nWe next assessed the degree to which GTX632041 was selective for C9ORF72 in immunoprecipitation applications. We performed three independent immunoprecipitation studies with GTX632041 using parental and KO HEK-293 cell lysates (Figure 3C) followed by mass spectrometry analysis of the immunoprecipitated samples (Supplementary file 2). Mass spectrometry of immunoprecipitates from the parental cells identified C9ORF72 (13, 24, 19 peptides) and two known C9ORF72-binding partners, SMCR8 (51, 69, 62 peptides) and WDR41 (23, 28, 24 peptides) (Figure 3D, Supplementary file 2) (Sellier et al., 2016; Amick et al., 2016; Zhang et al., 2018). The presence of both SMCR8 and WDR41 in the immunoprecipitates was confirmed by immunoblot (Figure 3C). The presence of C9ORF72 and its known-binding partners at near 1:1:1 level (when adjusting for the mass of the proteins) indicates that GTX632041 is selective for C9ORF72 and further supports the use of HEK-293 cells in our analysis. There were no peptides detected for any of these proteins in the immunoprecipitates from the C9ORF72 KO cells (Figure 3D, Supplementary file 2). Interestingly, we also identified MMS19, a 113 kDa protein component of the iron-sulfur protein assembly complex in the immunoprecipitates from parental cells (5, 1, 2 peptides) with no peptides in immuoprecipitates from the KO cells (Figure 3D), suggesting that MMS19 is a novel C9ORF72-binding partner. We also identified clathrin heavy chain (CLH1) with (85, 72 and 58 peptides) but similar numbers of peptides (75, 51, 53) were seen in the KO immunoprecipitations. This clearly indicates that the presence of clathrin heavy chain is not biologically significant but it is not possible to determine if it immunoprecipitates because it cross-reacts with the C9ORF72 antibody or for other non-specific reasons. In fact antibody cross-reactivity in immunoprecipitation applications is inherently difficult to determine. In addition to the proteins indicated in Figure 3D numerous other proteins were identified in the mass spectrometry studies but with limited numbers of peptides and always with similar peptide numbers from the parental and KO samples (Supplementary file 2).\n\n### Analysis by immunofluorescence\n\nWe next tested the effectiveness of the antibodies for immunofluorescence applications. HEK-293 cells, parental and KO were fixed in paraformaldehyde (PFA), permeabilized with Triton X-100, and stained with C9ORF72 antibodies with appropriate fluorescent secondary antibodies. The antibodies gave various staining patterns with no reduction in fluorescent staining in KO cells (Figure 4\u2014figure supplement 1). Similar results were seen when the cells were fixed in \u221220\u00b0C methanol (Figure 4\u2014figure supplement 2).\n\nAchieving successful detection of endogenous proteins by immunofluorescence can be challenging, especially for lower abundance proteins. Generating knockin lines with GFP tags on endogenous proteins could provide a mechanism to screen antibodies for such targets. In our study, we sought to obtain a better signal to noise ratio by identifying a cell line with higher levels of endogenous C9ORF72 expression. We thus used GTX634482 for quantitative immunoblots on multiple cell lines using the LI-COR system for detection. C9ORF72 is observed in a variety of human cell lines including U2OS (osteosarcoma), HeLa (cervical cancer), RKO (colon carcinoma), U87 and U251 (glioblastomas), motor neuron precursor cells (NPCs) and motor neurons (MNs) derived from human-induced pluripotent stem cells (Figure 4\u2014figure supplement 3A). It is worth noting that with the LI-COR system (fluorescent secondary antibodies) the signals appear generally weaker than when using ECL development methods (compare the HEK-293 cell lysates from Figure 4\u2014figure supplement 3A to those with GTX634482 in Figure 2). Even under these conditions there are additional bands detected in several of the cell lysates, indicating that even though GTX624482 is highly specific in HEK-293 cells and mouse brain, it recognizes non-specific bands in other cell lysates, an inherent weakness of any antibody validation procedure. Of the cell lines tested, U2OS has the highest levels of C9ORF72 whereas RKO cells have lower expression than HeLa (Figure 4\u2014figure supplement 3A). Interesting, the levels of C9ORF72 in motor neurons is similar to that in HEK-293. U2OS are easy to genome edit and are large cells suitable for immunofluorescence analysis. We thus used CRISPR/Cas9 to generate U2OS cells lacking C9ORF72, which was confirmed by immunoblot with GTX634482 (Figure 4\u2014figure supplement 3B). To better distinguish between the parental and C9ORF72 KO lines, we transfected the lysosomal protein LAMP1 tagged to YFP in parental cells and LAMP1-RFP in C9ORF72 KO cells. We then re-plated the cells such that both parental and KO cells were found on the same coverslip as a mosaic (Figure 4\u2014figure supplement 3C). This strategy reduces microscopy imaging and figure processing biases. We screened all 16 C9ORF72 antibodies using this strategy and we found GTX632041 as the sole antibody to recognize endogenous C9ORF72 specifically (Figure 4A/B). Indeed, GTX632041 immunofluorescence labeling reveals a cytosolic/punctate fluorescence signal that is dramatically reduced in KO cells to a level comparable to buffer control (Figure 4A). The other 15 antibodies showed non-specific staining patterns that are similar between control and KO cells (Figure 4A/B).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/48363/elife-48363-fig4-v2.jpg)\n\n**Figure 4.:** (A) Parental and KO cells were transfected with LAMP1-YFP or LAMP1-RFP, respectively. Parental and KO cells were combined and incubated with buffer only or stained with the indicated GeneTex C9ORF72 monoclonal antibodies. Grayscale images of the green, red and far-red channels are shown. Parental and KO cells are outlined with green and red dashed line, respectively. Representative images are shown. Bars\u00a0=\u00a040 \u00b5m. (B) Parental and KO cells were prepared as in (A) and stained with the indicated C9ORF72 antibodies. Grayscale images of the far-red channel are shown. Parental and KO cells are outlined with green and red dashed line, respectively. Representative images are shown. Bars\u00a0=\u00a040 \u00b5m.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/48363/elife-48363-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Representative images are shown. Cells are outlined with yellow dashed lines.Bars\u00a0=\u00a016 \u00b5m.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/48363/elife-48363-fig4-figsupp2-v2.jpg)\n\n**Figure 4\u2014figure supplement 2.:** Representative images are shown. Cells are outlined with yellow dashed lines.Bars\u00a0=\u00a016 \u00b5m.\n\n![Figure 4\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/48363/elife-48363-fig4-figsupp3-v2.jpg)\n\n**Figure 4\u2014figure supplement 3.:** (A) Lysates were prepared from selective human cell lines and processed for quantitative immunoblot using antibody GTX634482 (HEK, human embryonic kidney; HeLa, human cervical cancer; U2OS, human osteocarcoma; RKO, human colon carcinoma; U87/U251, human glioblastoma; NPC, human neural precursor cells; MN, human motor neurons). The total protein stained transfers are shown as a loading control. The C9ORF72 protein signal as a ratio to total protein was determined, normalized to parental HEK-293 cells (red), and presented as fold change (blue numbers). (B) Cell lysates of parental and KO U2OS cells were analyzed by immunoblot with C9ORF72 antibody GTX634482. (C) Mosaic strategy used to investigate antibody specificity by immunofluorescence.\n\nBased on this experience we recommend that once immunoblot screens identify a specific antibody for a target of interest, the next step should involve screening panels of cell lines with that antibody to find those with the highest expression levels (Figure 1). While PaxDb appears to be effective to identify appropriate lines to start the analysis it is not infallible. For example, while it indicated higher expression levels for C9ORF72 in U2OS versus HEK-293, it also indicated that RKO had higher levels than U2OS, which did not bear out in the immunoblot analysis (Figure 4\u2014figure supplement 3). Thus, moving straight to KO in U2OS cells for the immunofluorescence analysis would have been a more effective strategy. Moreover, while the HEK-293 cells were effective for the immunoprecipitation studies here (Figure 3), we recommend also performing the immunoprecipitation studies following the cell distribution blots (Figure 1).\n\n### Identification of C9ORF72 antibodies effective for immunohistochemistry\n\nGiven the importance of C9ORF72 in ALS and FTD it is vital to identify antibodies effective for staining of tissue sections. We thus used diaminobenzidine (DAB) labeling comparing brain sections from WT littermate mice to mice with the C9ORF72 ortholog (31100432O21Rik) deleted . We originally focused on GTX634482, which is the most specific antibody for immunoblot and recognizes the protein in mouse brain (Figure 2\u2014figure supplement 1A). We tested the antibody on sections that had been treated at 110\u00b0C, pH 9.0 for epitope unmasking. A punctate and/or neuritic-like signal is observed in the neuropil of the glomerular layer of the olfactory bulb, the ventral pallidum of the basal ganglia, the CA4 (hilus), CA3, and CA2 region of the hippocampus, the substantia nigra, the inferior olive, and granular layer of the cerebellar cortex of WT mice (Figure 5A, arrows). The signal is nearly completely ablated in the KO mice although there is some non-specific signal seen in the dentate gyrus/CA4, inferior olive and cerebellar cortex sections (Figure 5A, arrows). The staining pattern observed is similar to the basal ganglia, hippocampal formation, and cerebellum staining observed in a previous study (Frick et al., 2018). GTX632041, which is the most effective antibody for immunoprecipitation (Figure 3A) and immunofluorescence (Figure 4A) analysis, also specifically recognizes C9ORF72 in mouse brain sections including those through the hippocampus (Figure 5B) but staining is not as strong or consistently specific as seen with GTX634482. Antibody ab221137, which worked well for immunoblot (Figure 2; Figure 2\u2014figure supplement 1A) did not reveal any signal in the IHC analysis (Figure 5C).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/48363/elife-48363-fig5-v2.jpg)\n\n**Figure 5.:** (A) DAB immunohistochemistry of C9ORF72 WT and C9ORF72 KO mouse brains in the sagittal plane using C9ORF72 antibody GTX634482.\u00a0Micrographs are ordered from the rostral to caudal aspect of the mouse brain. For C9ORF72 WT, arrows indicate areas of increased DAB labeling intensity and correspond to the inset regions in the middle column of images. For C9ORF72 KO (right most column), arrows indicate areas of non-specific labeling. Scale bars\u00a0=\u00a0100 \u00b5m or 25 \u00b5m for the inset images on the right for the C9ORF72 WT micrographs). (B) DAB immunohistochemistry of C9ORF72 WT and C9ORF72 KO mouse brains in the sagittal plane of the indicated brain regions using C9ORF72 antibody GTX632041. Scale bars\u00a0=\u00a0100 \u00b5m. (C) DAB immunohistochemistry of C9ORF72 WT and C9ORF72 KO mouse brains in the sagittal plane of the indicated region using C9ORF72 antibody ab221137. Scale bar\u00a0=\u00a0100 \u00b5m.\n\nThus, we have identified three monoclonal antibodies that effectively and specifically recognize C9ORF72 in multiple applications. The antibody GTX634482 is recommended for immunoblot and immunohistochemical applications on antigen unmasked samples, and GTX632041 is recommended for immunoprecipitation and immunofluorescence. The antibody ab221137 is recommended for immunoblot.\n\n### C9ORF72 localizes to lysosomes\n\nThe GeneTex antibodies GTX634482 and GTX632041 and the Abcam antibody ab221137 are valuable tools to assess C9ORF72 biology. We thus used these antibodies to resolve controversies regarding C9ORF72 tissue distribution and subcellular localization (Burk and Pasterkamp, 2019). Endogenous C9ORF72 has been localized to the nucleus (Renton et al., 2011;\u00a0Atkinson et al., 2016), early endosomes (Farg et al., 2014; Shi et al., 2018), recycling and late endosomes (Farg et al., 2014), the Golgi apparatus (Aoki et al., 2017), stress granules (Chitiprolu et al., 2018) the cytoplasm, neurites, growth cones (Atkinson et al., 2016), and lysosomes (Shi et al., 2018). Each of these studies performed immunofluorescence using commercial C9ORF72 antibodies that failed our validation criteria.\n\nOne study used CRISPR to add an HA tag to endogenous C9ORF72, localizing the fusion protein with an antibody against the tag. This study revealed a diffuse cytoplasmic localization for tagged C9ORF72 under basal cell culture conditions, with the observation that the protein became concentrated on lysosomes following starvation (Amick et al., 2016). We thus performed co-staining immunofluorescence studies with GTX632041 in cells expressing the lysosomal marker LAMP1 tagged with RFP. Under basal conditions, C9ORF72 demonstrates a consistent lysosomal localization (Figure 6A, top panels). As expected, starvation leads to larger LAMP1-positive lysosomes as a result of membrane fusion (Yu et al., 2010) but the localization of C9ORF72 is not altered (Figure 6A, bottom panels). In fact 82% of LAMP1-positive lysosomes show C9ORF72 puncta on their periphery in both fed and starved conditions (Figure 6B). Consistent with a lysosomal localization, C9ORF72 co-localizes in part with GFP-Rab7a and GFP-Rab9, two small GTPases involved in vesicle trafficking to lysosomes but has little co-localization with GFP-Rab5a or GFP-Rab11a, markers of early and recycling endosomes, respectively (Figure 6\u2014figure supplement 1A, B).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/48363/elife-48363-fig6-v2.jpg)\n\n**Figure 6.:** (A) Immunofluorescence of endogenous C9ORF72 stained with GTX632041 in U2OS cells expressing LAMP1-RFP.\u00a0The large images on the left show a maximum projection to highlight intracellular structures. Insets 1 and 2 are single focal plane, higher magnification images of the boxed regions. Merge and grayscale images of C9ORF72 and LAMP1-RFP are shown. C9ORF72 localization was observed under basal conditions (top panels) or under starvation for 2 hr (bottom panels). Cells are outlined with white dashed lines. Scale bars\u00a0=\u00a020 \u00b5m for large images and 2 \u00b5m for insets. (B) Quantification of LAMP1 structures positive for C9ORF72 in basal growing condition (fed) or 2 hr starved condition (starved) in U2OS cells. Between 228\u2013262 lysosomes were counted from at least nine different cells from three independent experiments. A Student\u2019s t-test reveals that the percentage of LAMP1 structures positive for C9ORF72 is not significantly different between the fed and starved conditions (C) Lysates were prepared from HEK-293 cells expressing the Tmem192-3xHA (HA-Lyso cells) or the Tmem192-2xFlag (Control-Lyso cells). Lysosomes were immunoprecipitated using anti-HA magnetic beads. Quantitative immunoblotting for the indicated proteins was performed for starting material (SM), purified lysosomes and control immunoprecipitates (anti-HA IP). C9ORF72 was detected using GTX634482.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/48363/elife-48363-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** GTPases Immunofluorescence of endogenous C9ORF72 stained with GTX632041 in U2OS cells expressing GFP-Rab5a, GFP-Rab7a, GFP-Rab9 and GFP-Rab11a as indicated.\u00a0Insets are higher magnifications of the boxed regions. Merge and grayscale images of C9ORF72 and GFP-Rabs are shown. All images are the result of LIGHTNING applied to the confocal image. Cells are outlined with white dashed lines. For full-sized cells the bars\u00a0=\u00a010 \u00b5m, for insets the bars\u00a0=\u00a02 \u00b5m. White arrows point toward close proximity between the marker and C9ORF72. (B) Pearson\u2019s correlation coefficient of C9ORF72 stained with GTX632041 and GFP-Rab5a, GFP-Rab11a, GFP-Rab7a and GFP-Rab9 in U2OS cells. Between 8 and 12 regions of interest were analyzed from at least five different cells for each construct. A Student\u2019s t-test reveals that the means of the correlation coefficient between Rab5 and the other tested Rab is significantly different. ***=p value<0.01.\n\n![Figure 6\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/48363/elife-48363-fig6-figsupp2-v2.jpg)\n\n**Figure 6\u2014figure supplement 2.:** (A) Lysates were prepared from HEK-293 cells non-transfected or expressing 3xHA-eGFP-OMP25 (MitoIP).\u00a0Lysates were incubated with anti-HA magnetic beads to immunoprecipitate mitochondria. Immunoblotting for the indicated proteins was performed for starting material (SM), purified mitochondria and control immunoprecipitates (anti-HA IP). (B) Quantification of C9ORF72 fluorescent signal on LAMP1 structures or outside LAMP1 structures in basal growing condition (fed) or following 2 hr starvation (starved) in U2OS cells. The C9ORF72 fluorescent signal was quantified in nine individual cells for both conditions from three independent experiments. A Student\u2019s t-test reveals that the C9ORF72 pool between fed and starved condition is not significantly different. (C) RAW264.7 cells treated with 1 \u00b5g/ml LPS and both parental and C9ORF72 KO U2OS cells were lysed in 20 mM HEPEs pH 7.4 without detergent. Lysates were spun at 200 000 g for 30 min. Supernatant (S) was collected and the pellet (P) was resuspended and conserved. The S and P fractions for each cell line were analyzed by quantitative immunoblot using GTX634482. The C9ORF72 protein signal in both the S and P fraction was determined, normalized to total protein, and presented as percentage (blue numbers) of the total S + P C9ORF72 signal for each cell line.\n\nTo support the lysosomal localization of C9ORF72 observed by immunofluorescence, we analyzed lysosomes that were immuno-isolated using the lysosomal bait protein Tmem192-3xHA, a method previously described as a lysosomal immunoprecipitation (Abu-Remaileh et al., 2017). HEK-293 cells were transfected with Tmem192-3xHA (HA-Lyso cells) or with Tmem192-2xFlag (Control-Lyso cells). Following cell homogenization, an anti-HA immunoprecipitation was performed, leading to highly enriched lysosomes (Abu-Remaileh et al., 2017). This purification strategy resulted in the selective enrichment of LAMP1 by\u00a0~14 fold (Figure 6C). A mild enrichment of TOM20 was also observed as expected since lysosomes and mitochondria are tightly associated (Wong et al., 2018). C9ORF72 is enriched on lysosomes by\u00a0~3\u20134 fold in both basal and starved conditions (Figure 6C). In contrast, C9ORF72 is not enriched after immunoprecipitation of mitochondria (Figure 6\u2014figure supplement 2A) using 3xHA-eGFP-OMP25 as bait (Chen et al., 2016).\n\nWhile C9ORF72 definitively localizes to lysosomes a significant pool of the protein (~85%) is found outside of lysosomes (Figure 6\u2014figure supplement 2B). When we performed a biochemical cytosol/membrane fractionation of RAW264.7 and U2OS cells followed by quantitative immunoblot, we found that\u00a0~75% of total C9ORF72 is in the soluble/cytosolic fraction in both cell lines, whereas 25% of total C9ORF72 is membrane-associated (Figure 6\u2014figure supplement 2C). Thus, the fraction of C9ORF72 not found on lysosomes appears to correspond to a cytosolic pool. In conclusion, C9ORF72 distributes to a cytosolic pool and a membrane-bound pool on lysosomes.\n\n### C9ORF72 localizes to late phagosomes and phagolysosomes in macrophages\n\nC9ORF72 KO mice age without motor neuron disease (O'Rourke et al., 2016; Jiang et al., 2016; Burberry et al., 2016) but instead develop progressive splenomegaly and lymphadenopathy and ultimately die due to complications of autoimmunity (O'Rourke et al., 2016; Burberry et al., 2016; Atanasio et al., 2016). C9ORF72 is required for the normal function of murine myeloid cells, such as macrophages and microglia (resident macrophages in the central nervous system) (O'Rourke et al., 2016; Atanasio et al., 2016; Jiang et al., 2016) and C9ORF72 KO macrophages and microglia display lysosomal dysfunction (O'Rourke et al., 2016; Zhang et al., 2018). Interestingly, C9ORF72 is expressed at higher levels in bone marrow-derived macrophages (BMDM) from mice than in whole mouse brain or in cultures of rodent neurons (Figure 7A). Next, we examined human monocyte-derived macrophages (MDMs) under traditional M1 polarization conditions (IFN-\u03b3 and LPS treated) or in the presence of TGF-\u03b2, which reproduces the homeostatic state of the cells in vitro (Healy et al., 2016) (Figure 7B). We again observed strong expression of C9ORF72 in the macrophage cells.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/48363/elife-48363-fig7-v2.jpg)\n\n**Figure 7.:** (A) Lysates were prepared from rat cortical neurons, rat hippocampal neurons, mouse bone marrow-derived macrophages (BMDMs) and mouse whole brain, and processed for quantitative immunoblot using antibody GTX634482 with the LI-COR Odyssey Imaging System that utilizes fluorescent secondary antibodies to allow for quantitative blots.\u00a0The total protein stained transfers are shown as a loading control. The C9ORF72 protein signal as a ratio to total protein was determined, normalized to parental HEK-293 cells (red), and presented as fold change (blue numbers). C9ORF72 KO mouse brain (KO) was included as a specificity control. (B) Lysates were prepared from human monocyte-derived macrophages (MDMs) treated with either IFN-\u03b3 and LPS or with TGF-\u03b2. Immunoblot and C9ORF72 quantification were performed as in (A).\n\nSince the highest expression of C9ORF72 is in macrophages, we sought to investigate localization in these cells. In human MDMs, C9ORF72 decorates large organelles that appear to be phagosomes (Figure 8A). Macrophages are specialized phagocytic cells that engulf extracellular pathogens and cell debris into phagosomes. Early phagosomes are coated with F-actin (Liebl and Griffiths, 2009) before they mature into late phagosomes that lose their F-actin coat. Late phagosomes than fuse with lysosomes to form phagolysosomes. To confirm that C9ORF72 decorates phagosomes, we preceded with bead-capture experiments in RAW264.7 cells, a mouse macrophage-like cell line. First, RAW264.7 cells were differentiated from monocytes to macrophages by treating them with 1 \u00b5g/ml of LPS for 24 hr (Figure 8B). LPS treatment lead to an\u00a0~1.8 fold increase in C9ORF72 protein levels (Figure 8C). We then added 2.3 \u00b5m diameter beads and internalization was allowed for 30 min (pulse period) (Figure 8D). Cells were then washed and were chased (removal of the beads) for the indicated chase period. F-actin was used to label early-phagosomes, whereas LAMP1 was used to label phagolysosomes (Figure 8D). After a 30 min pulse (30-0), F-actin-coated early phagosomes are devoid of LAMP1, as expected, and devoid of C9ORF72. After a 30 min chase period (30-30), late phagosomes lost the majority of their actin coat, are devoid of LAMP1, but started to accumulate C9ORF72. A 90 min chase period (30-90) allowed enough time for late phagosomes to fuse with lysosomes. Phagolysosomes were devoid of F-actin and accumulated both LAMP1 and C9ORF72 (Figure 8D). Thus, C9ORF72 starts to accumulate on late-phagosomes once F-actin is being disassembled. C9ORF72 localizes before lysosome fusion on late-phagosomes and remains present on phagolysosomes.\n\n![Figure 8.](https://cdn.elifesciences.org/articles/48363/elife-48363-fig8-v2.jpg)\n\n**Figure 8.:** (A) Immunofluorescence of C9ORF72 (GTX632041, magenta) and F-actin staining (cyan) in human MDMs.\u00a0The inset is a higher magnification of the region indicated by the arrow and shows a grayscale image of C9ORF72. Cell is outlined with a white dashed line. Scale bar\u00a0=\u00a05 \u00b5m (full size) and 2 \u00b5m (inset). (B) Quantitative immunoblot of RAW264.7 cell lysates treated with 1 \u00b5g/ml LPS for the indicated time points. The total protein stained transfer is shown as loading control. C9ORF72 is detected using GTX634482. The C9ORF72 protein signal as a ratio to total protein was determined, normalized to RAW264.7 lysates at time 0 (red), and presented as fold change (blue numbers). C9ORF72 KO MEFs are included as a specificity control. (C) Quantification of C9ORF72 intensity from immunoblots performed as in (B) at 0 hr and 24 hr time points, presented as normalized values. Four individual experiments were quantified. *=p value<0.05 (D) Pulse-chase (P\u2013C) experiments in LPS-treated RAW264.7 cells using phagocytosed beads. Beads were incubated for a 30 min pulse followed by a 0 min (30-0), 30 min (30-30) or 90 min (30-90) chase. Brightfield imaging reveals the phagocytosed beads. Staining of C9ORF72 (GTX632041; magenta), LAMP1 (yellow) and F-actin (cyan) were performed and imaged using confocal microscopy together with LIGHTNING image processing as described previously. Single focal plane images are shown. Insets are higher magnification views of the internalized beads indicated with arrowheads in the large images and show the merged channel together with grayscale images of F-actin, LAMP1 and C9ORF72. White arrows point toward C9ORF72 and LAMP1 co-localization. All images are the result of LIGHTNING applied to the confocal image. Cells are outlined with white dashed lines. Scale bar\u00a0=\u00a08 \u00b5m (full size) and 2 \u00b5m (inset).\n\nIn conclusion, we have developed an antibody validation process that is effective in identifying high-quality antibodies from pre-existing commercial pools and in revealing antibodies that should not be used or should be used with extreme caution. With high-quality antibodies new biology can emerge. The technologies employed are simple, easily applicable to any cell biological laboratory, and scalable. Most importantly, implementation of the procedures formalized in this study can serve as a template for granting agencies and journals as a mechanism to ensure enhanced reproducibility.\n\n## Discussion\n\nThe scientific community, including academic scientists and commercial antibody producers recognize that there is a crisis in reproducibility caused by the use of non-validated antibodies. The problem could be alleviated with proper characterization of antibodies, but progress to this end has been impeded by technical, economic and sociological challenges. On the technological front, there are numerous types of antibodies (polyclonal, monoclonal, recombinant) used in many different applications - and each combination will require bespoke characterization. It is time-consuming and for some applications there is no quantitative readout. Moreover, these characterization processes are expensive and beyond the budget of any single antibody producer. Finally, there is no consensus among often conflicted scientists and companies, many of whom produce the antibodies, as to what the ideal antibody characterization pipeline should comprise. The advent of CRISPR genome-editing technology provides a powerful new approach to aid in antibody validation, and points to the possibility of creating a more standard antibody characterization approach that depends upon the use of KO controls.\n\nHere we develop a simple, reproducible and relatively inexpensive approach for antibody characterization. While we applied the pipeline to all known commercial antibodies against C9ORF72, the process is certainly applicable to home-made antibodies and individual steps of the pipeline can be used in isolation depending on the needs of the user. Other complementary pipelines have been recently described (Sikorski et al., 2018). While our pipeline is for the most part straight forward, there are factors that need to be considered at each step. One important consideration is the choice of a target-expressing cell line to initiate the studies. We used PaxDb, a proteomic database providing protein abundance across several tissues/cell types (Wang et al., 2015) (https://pax-db.org/), which indicated that C9ORF72 is expressed in multiple cell lines (HEK-293, HeLa, U2OS) at equal or higher levels than brain, a result confirmed by quantitative immunoblot. PaxDb is useful but also limited in several respects. First, the reference mass spectrometry data is several years old but with continuing advances in proteomics and cell profiling approaches, it will becoming increasingly more accurate in general to predict appropriate cells lines for analysis. Moreover, PaxDb is limited to specific cell lines. In this context, it is important to avoid preconceived notions regarding protein distribution. For example, it is often assumed that neurodegenerative disease genes are predominantly expressed within the neuronal population that is most sensitive to degeneration, yet it is emerging that this is often not the case. Indeed very few are expressed specifically in the nervous system and most are found in multiple cell and tissue types (see the Genotype-Tissue Expression Project; https://gtexportal.org/home/). One example that parallels our findings for C9ORF72 is the major Parkinson disease gene LRRK2 that is broadly expressed in non-neuronal cells, and even within the nervous system, LRRK2 expression levels are low in the most affected area, the substantia nigra (Rui et al., 2018). In fact LRRK2 is most highly expressed in immune cells (Dzamko, 2017). Our study reveals that the highest levels of C9ORF72 are in macrophages and yet we could not determine this with PaxDb as the database has no proteomic data on this cell type. Therefore, an immunoblot-validated antibody should be used early in the pipeline to screen multiple cell lines.\n\nAnother factor to consider are the redundancies seen in commercial antibodies as companies cross-license. For C9ORF72 we identified over 100 commercial antibodies from multiple companies, but when eliminating redundancies, we recognized 16 unique antibodies. While this analysis was tedious, the process could be improved by searches involving Research Resource Identifiers (RRID) that provide unique and permanent identifiers to every antibody (https://scicrunch.org/resources). The number of antibodies available for each target is variable with, for example, eight antibodies for the newly identified ALS disease gene NEK1 and over 700 for SOD1, an abundant and well-studied ALS gene. If the number of antibodies is unmanageable, it would be advisable to limit validation studies to renewable antibodies such as monoclonals (Andrews et al., 2019). Also, whereas the cost of antibody purchase can appear to be a barrier, many companies have refund policies that can decrease costs if the antibodies to not meet reasonable functional criteria.\n\nPerhaps the most important considerations are the conditions for the analysis by immunoblot, immunoprecipitation, and immunofluorescence. For immunoblot these involve but are not limited to the method of cell lysis, the amount of material analyzed, the type of gel, the transfer method, and the immunoblot conditions. For immunoprecipitation the cell lysis conditions are particularly important as it is vital to generate a fully soluble lysate that extracts the target protein yet maintains native structure. Perhaps the most challenging procedure is immunofluorescence. In our study we were unable to observe a specific signal in HEK-293 cells despite multiple attempts in which we varied fixation and permeabilization conditions. However, when we analyzed U2OS and macrophages, which have higher expression levels, we obtained a specific signal with little effort using 4% PFA followed by Triton X-100 permeabilisation. In a multi-variant screen of fixation conditions for immunofluorescence, it was concluded that 4% PFA followed by Triton X-100 permeabilisation will suffice for the vast majority of targets (Stadler et al., 2010). Therefore, we stress that one needs to perform the immunofluorescence studies in parental versus KO cells after determining an appropriate, highly expressing cell line by immunoblot to ensure a high signal-to-noise ratio (Figure 1). Given that the human proteome contains a vast range of proteins with highly variant chemical compositions, it is difficult to envision set protocols for any of these procedures. It is a challenge to the pipeline to determine empirically the appropriate parameters and this is best left to Investigators with knowledge of selected targets of interest.\n\nIt is relatively straight forward to evaluate antibody performance by immunoprecipitation followed by immunoblot in terms of antibody effectiveness in precipitating the target. Moreover, by analyzing the unbound material one can achieve a good sense of efficiency of immunoprecipitation. For example, GTX632041 significantly enriched C9ORF72 in the immunoprecipitate by capturing approximately 70% of all available C9ORF72 in our experimental setup. However, it is much more difficult to determine antibody specificity for the intended target. Analysis by mass spectrometry revealed hundreds of proteins in the GTX632041 immunoprecipitates from parental HEK-293 cells. While the vast majority of these proteins were also detected in immunoprecipitates from the C9ORF72 KO cells, indicating that they are not relevant C9ORF72-interacting proteins, it is almost impossible to tell whether they cross-react with GTX632041 or are present through another forms of non-specific interactions. However, we can stipulate that a protein identified in the parental immunoprecipitates that is absent from the KO immunoprecipitates is a bona fide C9ORF72 binding partner. C9ORF72, SMCR8 and WD41 are found with robust peptide counts in the parental immunoprecipitates and absent in the KO immunoprecipitates. MMS19 was also identified only in the parental immunoprecipitates but with low peptide counts, suggesting a novel, transient interaction with the C9ORF72 protein complex.\n\nFinally, it is important to mention that all antibodies need to be tested under all conditions since the performance and specificity of an antibody depends on the nature of the binding to its protein target, including if the recognition involves linear or conformational epitopes, which must be determined empirically (Forsstr\u00f6m et al., 2015). A clear example in this study is GTX634482 that has optimal properties for immunoblot and immunohistochemistry but is not specific in immunofluorescence and is totally negative in immunoprecipitation.\n\nThe two GeneTex mouse monoclonal antibodies effective for immunoblot, immunoprecipitation, immunohistochemistry and immunofluorescence and the Abcam rabbit monoclonal ab221137 effective for immunoblot have not yet been used in a published paper, whereas the GeneTex rabbit polyclonal antibody (GTX119776), which does not detect the protein by blot and only weakly immunoprecipitates has been used in five published papers (Supplementary file 1). A troubling finding of our study is that the rabbit polyclonal antibody SC-138763, which clearly does not recognize C9ORF72 in any human sample in any application, has been used in 15 published manuscripts to ascribe specific properties to the protein in normal and disease states (Supplementary file 1). A Google Scholar-based bibliometric approach revealed that those 15 papers have been cited greater than 3000 times and that first layer citations to those citing papers is greater than 66000 citations. While clearly the majority of first and second layer citations do not focus on discoveries related to the use of the antibody in the original 15 papers, this simple analysis reveals the cumulative and sustained impact of inadequate characterization of antibodies.\n\n## Materials and methods\n\n### Antibodies\n\nAll C9ORF72 antibodies are listed in Supplementary file 1. SMCR8 antibody is from Abcam (ab202283). WDR41 antibody is from Abgent (AP10866B-EV). TOM20 antibody is from Santa Cruz Biotechnology, Inc (sc-11414). PDI antibody is from Abcam (ab2792). GAPDH antibody is from OriGene (TA802519). LAMP1 antibody used for immunoblot is from Cell Signaling Technology (#9091). LAMP1 antibody used for IF in RAW264.7 cells is from Thermo (PA1-654A). Peroxidase-conjugated goat anti-mouse and anti-rabbit are from Jackson ImmunoResearch Laboratories. Odyssey IRDye 800CW goat anti-mouse-HRP, the REVERT total protein stain solution and the Odyssey Blocking buffer (TBS) are from LI-COR Biosciences. Alexa Fluor 647-conjugated mouse and rabbit secondary antibodies are from Invitrogen.\n\n### Mouse breeding\n\nMice were bred and cared for in accordance with the guidelines of the Canadian Council on Animal Care following protocols approved by the University of Toronto Animal Care Committee. C9ORF72 KO mice were a generous gift of Dr. Don Cleveland (UCSD) and Dr. Clothilde Lagier-Tourenne (UMass). In-house breeding and genotyping were performed as previously described (Jiang et al., 2016). Briefly, heterozygous C9ORF72 mice (C57BL/6 background) were crossed to produce homozygous C9ORF72 KO mice, heterozygous C9ORF72 mice, and WT littermates.\n\n### Cell lines\n\nHEK-293 cell line is from ATCC (CRL-1573). U2OS cell line is from ATCC (HTB-96). Once received from ATCC, cells were immediately amplified and froze down in multiple aliquots. Generation of KO in HEK-293 and U2OS lines was done using low passage cells. The RAW264.7 cell line is from American Type Culture Collection, Rockville, MD (Duclos et al., 2000). Cell lines are monthly tested for mycoplasma contamination using the mycoplasma detection kit (biotool cat# B39038). Contaminated cell lines are immediately discarded.\n\n### Cell culture\n\nHEK-293 were cultured in DMEM high-glucose (GE Healthcare cat# SH30081.01) containing 10% bovine calf serum (GE Healthcare cat# SH30072.03), 2 mM L-glutamate (Wisent cat# 609065, 100 IU penicillin and 100 \u00b5g/ml streptomycin (Wisent cat# 450201). U2OS were cultured in DMEM high-glucose containing 10% tetracyclin-free fetal bovine serum (FBS) (Wisent cat# 081150) 2 mM L-glutamate, 100 IU penicillin and 100 g/ml streptomycin. Tetracyclin-free FBS was used to limit Cas9 expression. U2OS were starved for 2 hr in Earle\u2019s balanced salts medium (Sigma cat# E2888).\n\n### CRISPR/Cas9 genome editing\n\nFor the KO HEK-293 cells, a C9ORF72 KO gRNA was annealed and ligated into Bbs1-digested pSpCas9(BB)\u22122A-Puro (PX459) V2.0 vector. PX459 V2.0 was a gift from Feng Zhang (Addgene plasmid # 62988). The gRNA was designed using the \u2018optimized CRISPR design\u2019 tool (www.crisp.mit.edu). Oligonucleotides with Bsb1 cleavage overhangs were annealed and cloned into the Cas9/puromycin expressing vector (PX459 from Addgene #48139). The following gRNA sequence was used to create the KO line: CAACAGCTGGAGATGGCGGT. Genome editing plasmids expressing gRNA were transfected in HEK-293 cells using jetPRIME Transfection Reagent (Polyplus) according to the manufacturer\u2019s protocol. The next day, transfected cells were selected using 2 \u03bcg/ml puromycin for 24 hr. At 96 hr post-selection, cells were isolated by clonal dilution. Following the selection expansion of colonies, KOs were confirmed by sequencing of PCR-amplified genomic DNA (data not shown) and immunoblot. Genomic DNA was extracted using QuickExtract DNA extraction solution (Epicentre Biotechnologies).\n\nFor the KO U2OS cells, we first generated a line with stable-inducible Cas9. The line was generated using the pAAVS1-PDi-CRISPRn knockin vector and the TALEN pair arms were gifts from Bruce Conklin (Addgene plasmid # 73500) (Mandegar et al., 2016). U2OS cells were resuspended in complete media and 1 \u00d7 105 cells were mixed with pAAVS1-PDi-CRISPRn knockin vector (0.25 ug) and each AAVS1 TALEN pair (0.1 ug) and nucleofected using the Neon Transfection System (program 17; Life Technologies). Polyclonal population was selected with 2 \u00b5g/ml of puromycin (Bioshop cat# PUR555). Seventy-two hours post-treatment, single cells were plated in a 96-well plate. U2OS-PDi-CRISPRn positive clones were detected by PCR and the presence of the PDi-CRISPRn knockin platform into the safe-harbor AAVS1 locus was confirmed by Sanger sequencing. To KO C9ORF72, synthetic single gRNAs (sgRNAs) were designed using the CRISPR Design Tool from Synthego (https://www.synthego.com/products/bioinformatics/crispr-design-tool). The sgRNAs (from Synthego) were transfected in the stable-inducible Cas9 U2OS cell line using JetPRIME transfection reagent. At 1 hr post transfection, Cas9 expression was induced by treating cells with 2 \u00b5g/ml of doxycycline (Bioshop cat# DOX44). The next day, media was changed to remove doxycycline and stop the expression of Cas9. C9ORF72 KO cells were isolated by clonal dilution and KOs were confirmed by sequencing of PCR-amplified genomic DNA and immunoblot. Genomic DNA was extracted using QuickExtract DNA extraction solution (Epicentre Biotechnologies). C9ORF72 targeting sgRNA1: GCAACAGCUGGAGAUGGCGG, C9ORF72 targeting sgRNA2: GUCUUGGCAACAGCUGGAGA, AAVS1 locus targeting sgRNA1.2: GGGGCCACUAGGGACAGGAU and AAVS1 locus targeting sgRNA 1.3: GUCCCCUCCACCCCACAGUG. Cell lines transfected with AAVS1 sgRNA1.2 and AAVS1 sgRNA 1.3 are called parental A and parental B, respectively.\n\n### Immunoblot\n\nCultured cells were collected in HEPES lysis buffer (20 mM HEPES, 100 mM sodium chloride, 1 mM EDTA, 5% glycerol, 1% Triton X-100, pH 7.4) supplemented with protease inhibitors. Following 30 min on ice, lysates were spun at 238,700xg for 15 min at 4\u00b0C and equal protein aliquots of the supernatants were analyzed by SDS-PAGE and immunoblot. Brains from 3 month old mice were homogenized in HEPES lysis buffer (without detergent) using a glass/Teflon homogenizer with 10 strokes at 2000 rpm and Triton X-100 was added to 1% final concentration. Following 30 min on ice, mouse tissues lysates were spun at 238,700xg for 15 min at 4\u00b0C. Equal protein aliquots of the supernatants were analyzed by SDS-PAGE and immunoblot. Immune cell populations were prepared from spleen, thymus and bone marrow by disrupting the tissue in media using a sterile syringe plunger as a pestle and passing the slurry through a 40 \u00b5m cell strainer. Red blood cells from were removed using a red blood cell lysis buffer (155 mM NH4Cl, 12 mM NaHCO3, 0.1 mM EDTA). Equal protein aliquots of the supernatants were analyzed by SDS-PAGE and immunoblot.\n\nImmunoblots were performed with large 5\u201316% gradient polyacrylamide gels and nitrocellulose membranes. Proteins on the blots were visualized by Ponceau staining. Blots were blocked with 5% milk, and antibodies were incubated O/N at 4\u00b0C with 5% bovine serum albumin in TBS with 0.1% Tween 20 (TBST). The peroxidase conjugated secondary antibody was incubated in a 1:10000 dilution in TBST with 5% milk for 1 hr at room temperature followed by washes. For quantitative immunoblots, nitrocellulose transfers were incubated with REVERT total protein stain to quantify the amount of protein per lane, than blocked in Odyssey Blocking buffer (TBS) and C9ORF72 antibody GTX634482 was incubated O/N at 4\u00b0C in TBS, 5% BSA and 0.2% Tween-20. The secondary antibody (Odyssey IRDye 800CW) was incubated in a 1:20000 dilution in TBST with 5% BSA for 1 hr at room temperature followed by washes. Detection of immuno-reactive bands was performed by image scan using a LI-COR Odyssey Imaging System (LI-COR Biosciences) and data analysis was done using LI-COR Image Studio Lite Version 5.2.\n\n### Immunoprecipitation\n\nHEK-293 cells were collected in HEPES lysis buffer supplemented with protease inhibitors. Following 30 min on ice, lysates were spun at 238,700xg for 15 min at 4\u00b0C. One ml aliquots at 1 mg/ml of lysate were incubated for\u00a0~18 hr at 4\u00b0C with either 1 \u00b5g of a C9ORF72 antibody coupled to protein A or G Sepharose. Beads were subsequently washed four times with 1 ml of HEPES lysis buffer, and processed for SDS-PAGE and immunoblot. For immunoprecipitation with GTX632041 prior to mass spectrometry, HEK-293 cells (parental and C9ORF72 KO) were collected in HEPES lysis buffer supplemented with protease inhibitors. Following 30 min on ice, lysates were spun at 238,700xg for 15 min at 4\u00b0C. One ml aliquots at 1 mg/ml were incubated with empty protein G Sepharose beads for 30 min to reduce the levels of proteins bound non-specifically. These pre-cleared supernatants were incubated for 4 hr at 4\u00b0C with GTX632041 antibody coupled to protein G Sepharose. Following centrifugation, the unbound fractions were collected and the beads were washed 3 times with 1 ml of HEPES lysis buffer. The beads were then suspended in 1X SDS gel sample buffer. Fractions of the sample were processed for immunoblot. Parallel fractions were run into a single stacking gel band on SDS-PAGE gels to remove detergents and salts. The gel band was reduced with DTT, alkylated with iodoacetic acid and digested with trypsin. Extracted peptides were re-solubilized in 0.1% aqueous formic acid and loaded onto a Thermo Acclaim Pepmap (Thermo, 75 uM ID X 2 cm C18 3 uM beads) precolumn and then onto an Acclaim Pepmap Easyspray (Thermo, 75 uM X 15 cm with 2 uM C18 beads) analytical column separation using a Dionex Ultimate 3000 uHPLC at 220 nl/min with a gradient of 2\u201335% organic (0.1% formic acid in acetonitrile) over 2 hr. Peptides were analyzed using a Thermo Orbitrap Fusion mass spectrometer operating at 120,000 resolution (FWHM in MS1) with HCD sequencing at top speed (15,000 FWHM) of all peptides with a charge of 2+ or greater. The raw data were converted into *.mgf format (Mascot generic format) for searching using the Mascot 2.5.1 search engine (Matrix Science) against Rat protein sequences (Uniprot 2017). The database search results were loaded onto Scaffold Q+ Scaffold_4.4.8 (Proteome Sciences) for statistical treatment and data visualization.\n\n### Immunofluorescence\n\nFor antibody validation, U2OS cells (parental and C9ORF72 KO) were transfected with LAMP1-YFP and LAMP1-RFP, respectively. LAMP1-YFP (Addgene plasmid #1816) and LAMP1-RFP (Addgene plasmid #1817) are gifts from Walther Mothes. At 24 hr post transfection, both cell lines were plated on glass coverslips as a mosaic and incubated for 24 hr. Cells were fixed in 4% PFA for 10 min and then washed 3 times. Cells were then blocked and permeabilized in blocking buffer (TBS, 5% BSA and 0.3% Triton X-100, pH 7.4) for 1 hr at room temperature. Coverslips were incubated face down on a 50 \u00b5l drop (on paraffin film in a moist chamber) of blocking buffer containing the primary C9ORF72 antibodies diluted at 2 \u00b5g/ml and incubated O/N at 4\u00b0C. Cells were washed 3 \u00d7 10 min and incubated with corresponding Alexa Fluor 647-conjugated secondary antibodies diluted 1:1000 in blocking buffer for 2 hr at room temperature. Cells were washed 3 \u00d7 10 min with blocking buffer and once with TBS. Coverslips were mounted on a microscopic slide using fluorescence mounting media (DAKO, Cat# S3023). HEK-293 (parental and C9ORF72 KO) were plated separately on coverslips and stained as mentioned above. HEK-293 cell lines were fixed in either 4% PFA for 10 min or in methanol (chilled at \u221220\u00b0C) for 10 min. Imaging was performed using a Leica SP8 laser scanning confocal microscope equipped with a 40x oil objective (NA\u00a0=\u00a01.30) and HyD detectors. Acquisition was performed using Leica Application Suite X software (version 3.1.5.16308) and analysis was done using Image J. All cell images represent a single focal plane. They were prepared for publication using Adobe Photoshop to adjust contrast, apply 1 pixel Gaussian blur and then assembled with Adobe Illustrator.\n\nImaging of C9ORF72 in U2OS cells was performed as above after transfecting LAMP1-RFP or GFP-Rab constructs. GFP-Rab5a, GFP-Rab7a, GFP-Rab9 and GFP-Rab11a were gifts from Mitsunori Fukuda (Matsui et al., 2011). Imaging was performed using a 63x oil objective (NA\u00a0=\u00a01.40) and we used LIGHTNING (Leica) to acquire images using the best setting for the resolution of the deconvolved image. Enough Z-stack were imaged to cover the whole cell depth. To evaluate co-localization between C9ORF72 and GFP-Rab5, GFP-Rab7a, GFP-Rab9 and GFP-Rab11, we collected confocal images appropriate for a co-localization study (Dunn et al., 2011). LIGHTNING deconvolution was applied to all images. Pearson\u2019s coefficient correlation was measured using the Coloc2 plugin from Fiji (Schindelin et al., 2012). We used a Student\u2019s t-test to determine if the means of the correlation coefficient between C9ORF72 and the Rabs is significantly different. ***=p value lower than 0.01.\n\nQuantification of the percentage of C9ORF72 fluorescence signal on and outside of lysosomes was performed in three dimensions (3D) using Imaris software (Bitplane, version 9.3). Briefly, a mask was applied on the whole cell of interest by manually drawing the cell contour. The total C9ORF72 fluorescent (C9ORF72total) signal was determined within the mask. Then the LAMP1 signal was segmented and the amount of C9ORF72 fluorescent signal found on lysosomal surfaces was calculated (C9ORF72lyso). The percentage of C9ORF72 fluorescent signal on lysosomes was calculated as follow: C9ORF72lyso/C9ORF72total X 100. Assessment of LAMP1 structures positive for C9ORF72 was performed by visual identification of C9ORF72 fluorescent signal on lysosomal surfaces. We used a Student\u2019s t-test to determine if the means of C9ORF72 fluorescent signal on lysosome or the means of LAMP1 structures positive for C9ORF72 between fed and starved condition are significantly different. n/s\u00a0=\u00a0p value higher than 0.05.\n\n### Immunohistochemistry with 3,3\u2019-diaminobenzidine (DAB) staining\n\nFormalin-fixed, paraffin-embedded brain tissue from 3 month old C9-KO (n\u00a0=\u00a03) and C9-WT (n\u00a0=\u00a03) mice were sectioned at 6 \u03bcm in the sagittal plane and then mounted onto positively charged slides. Sections were deparaffinised at 60\u00b0C for 20 min on a heat block and then incubated in xylene (3 \u00d7 5 min). Subsequent rehydration was performed through graded ethanol washes and finally in water. For epitope unmasking, heat-induced epitope retrieval was carried out using TE9 buffer (10 mM Trizma base, 1 mM EDTA, 0.1% Tween 20, pH 9) at 110\u00b0C for 15 min. Endogenous peroxidases were quenched with 3% H2O2 in TBS for 10 min at room temperature. Slides were then blocked in 2.5% normal horse serum and 0.3% Triton X-100 in TBS for 1 hr at room temperature. GTX63448 and GTX632041 were diluted in DAKO antibody diluent (Agilent, Cat# S0809) at 1:5000 and then slides were incubated O/N at 4\u00b0C. Washes were then performed 3 \u00d7 10 min in TBS-0.1% Tween 20 (TBST) prior to secondary antibody incubation with ImmPRESS HRP horse anti-mouse IgG (Vector Labs, Cat# MP-7402), for 1 hr at room temperature. Slides were then washed 3 \u00d7 20 min in TBST. DAB staining was developed under a light microscope for between 2\u201310 min as per the manufacturer\u2019s instructions with the ImmPACT DAB peroxidase substrate kit (Vector Labs, Cat# SK-4105). Slides were then counterstained with Hematoxylin Solution, Gill No.1 (Sigma-Aldrich, Cat# GHS132) for 5 min at room temperature. Slides were then dehydrated with sequentially increasing graded ethanol and finally in xylene prior to coverslipping with Cytoseal 60 (Fisher Scientific, Cat# 8310\u201316). Micrographs were captured with a digital camera mounted on a Leica DM6000 B upright microscope with either 10X or 40X objectives using Volocity Imaging software (version 6.3.0 PerkinElmer).\n\n### Rapid immune-isolation of lysosomes (LysoIP) and mitochondria (MitoIP)\n\nThe isolation of lysosomes and mitochondria was performed following the LysoIP protocol (Abu-Remaileh et al., 2017) and the MitoIP protocol (Chen et al., 2016), respectively, with slight modifications. Tmem192-3xHA (Addgene #102930), Tmem192-2xFlag (Addgene #102929) and 3xHA-eGFP-OMP25 (Addgene #83356) were gifts from Dr. David Sabatini. For LysoIP experiments, HEK-293 cells were transfected with either Tmem192-3xHA (HA-Lyso cells) or with TMEM192-2xFlag (Control-Lyso cells). For MitoIP, HEK-293 were transfected without (control anti-HA IP) or with the 3xHA-eGFP-OMP25 construct.\n\nThe following steps are the same for LysoIP and MitoIP: Approximately 35 million cells were used for each immunoprecipitation. Cells were quickly rinsed twice with cold PBS and scraped in 2 ml of KPBS (136 mM KCl, 10 mM KH2PO4, pH 7.25 and protease inhibitor) and centrifuged at 1000 x g for 2 min at 4\u00b0C. Pelleted cells were resuspended in 900 \u00b5l of KPBS and gently homogenized with 20 strokes in a 2 ml hand-held homogenizer. The homogenate was centrifuged at 1000 x g for 2 min at 4\u00b0C. The supernatant was collected and 10 \u00b5l (equivalent to 1,1%) was reserved and run on immunoblot as the starting material. The remaining supernatant was incubated with 150 \u00b5l of KPBS prewashed anti-HA magnetic beads (Thermo Fisher Scientific cat# 88837) on a gentle rotator shaker for 3 min. Beads were gently washed 3 times with 1 ml of KPBS using a DynaMag-2 magnet (Thermo Fisher Scientific cat# 12321D). Beads were resuspended in 1 ml of KPBS and transfer to a new tube. KPBS was removed and beads were incubated in resuspension buffer (20 mM HEPES, 1 mM EDTA, 150 mM NaCl, 1% Triton X-100, pH 7,4 + phosphatase inhibitor). Supernatant was collected and run on an immunoblot.\n\n### Subcellular fractionation\n\nCells were quickly rinsed with cold PBS and scraped in HEPES buffer (20 mM HEPES, pH 7.4) supplemented with protease inhibitors. Lysates were gently homogenized with 20 strokes in a 2 ml hand-held homogenizer and spun at 200 000 x g for 30 min at 4\u00b0C, yielding the supernatant (S) and pellet (P) fractions. Equal protein aliquots of the fractions were analyzed by quantitative immunoblot.\n\n### Bone-marrow-derived macrophages\n\nBone marrow cells were isolated from femurs of around 12 weeks old mice, as described elsewhere (Trouplin et al., 2013). Cells were seeded in bacterial dishes and cultured in DMEM high-glucose (GE Healthcare cat# SH30081.01) containing 10% heat inactivated fetal calf serum (FBS; 080\u2013150), 2 mM L-glutamate (Wisent cat# 609065, 100 IU penicillin and 100 \u00b5g/ml streptomycin (Wisent cat# 450201) and containing 20% L929 cell-conditioned medium as a source of M-CSF. After 7 days, cells were harvested using cold PBS, seeded, and kept in DMEM, 10% FBS and penicillin/streptomycin for 24 hr before experiment.\n\n### Human monocyte-derived macrophages\n\nPeripheral blood mononuclear cells (PBMCs) were isolated from whole blood using Ficoll\u2013Paque density gradient centrifugation (GE Healthcare). CD14+ cell isolation was done using immunomagnetic bead selection according to manufacturer\u2019s instructions to achieve 95\u201399% purity (Miltenyi Biotec). CD14+ monocytes were cultured in RPMI cell medium supplemented with 10% FCS, 0.1% penicillin/streptomycin and 0.1% glutamine. MDMs were differentiated in vitro with 25 ng/ml M-CSF for 6 d, during which time cells they were either activated with the pro-inflammatory cytokines IFN-\u03b3 and LPS or the anti-inflammatory cytokine TGF-\u03b2, as previously described (Healy et al., 2016). Briefly TGF-\u03b2-treated cells received recombinant human TGF-\u03b2 (20 ng/ml) on days 1 and 4. Pro-inflammatory activated cells received IFN-\u03b3 (20 ng/ml) for 1 hr followed by a 48 hr treatment with LPS (serotype 0127:B8, 100 ng/ml). The studies with human tissue followed Canadian Institutes of Health Research approved guidelines. Secondary use of de-identified tissues was carried out in accordance with the guidelines set by the McGill University Institutional Review Board (McGill University Health Centre Ethics Board and approved under protocol ANTJ1988/89). All experiments were conducted in accordance with the Helsinki Declaration with sample procured with informed consent.\n",
+      "created_at": "2025-12-02T12:45:36.006275Z"
+    },
+    {
+      "id": "c7e2a714-2b3a-40d4-ad62-b95a12fc8dea",
+      "submission_id": "a5ebb2c5-ddb4-4b89-848c-9f2535521803",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Suzanne R Pfeffer, Stanford University School of Medicine United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.48363.sa1](https://doi.org/10.7554/eLife.48363.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nThank you for submitting your article \"Implementation of an antibody validation procedure: Application to the major ALS/FTD disease gene C9ORF72\" for consideration by eLife. Your article has been reviewed by three peer reviewers, including Suzanne R Pfeffer as the Reviewing Editor and Reviewer #1, and the evaluation has been overseen by Michael Eisen as the Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Fridtjof Lund-Johansen (#2) and Dario R Alessi (Reviewer #3).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nThis paper presents a critically important evaluation of available antibodies that recognize a widely studied and important protein linked to frontotemporal dementia and ALS. The work will be of broad interest and significance to readers of eLife however the reviewers were slightly split in their assessments. Reviewer #2 was less convinced that the manuscript presented the best pipeline for all proteins, but felt that the authors could refer to other published pipelines and discuss the limitations mentioned in each of the reviews. Because all reviewers noted the importance of this contribution, we welcome a revised version.\n\nEssential revisions:\n\nIt seems really important to:\n\n1) Quantify the IF;\n\n2) Include a mouse cell line;\n\n3) Determine percent efficiency of IP as noted in the reviews below. It would also be valuable to consider IF/IP for the antibodies that did not blot well as some may be useful for those types of analysis.\n\nAlso, all other points should be discussed. We include for your guidance all reviews so that you can address many of the points textually.\n\nWe hope you will find these comments constructive.\n\nReviewer #1:\n\nThis is a timely and important TOOL contribution that highlights the importance of antibody validation in the biomedical research community. The authors characterize all commercially available antibodies that are supposed to recognize a protein important in frontotemporal dementia and ALS and show that many prior studies are incorrect.\n\nThe work will be of broad interest to readers of eLife after the authors address the following issues.\n\n1) Since the authors are presenting what should be the definitive localization/characterization paper, they need to complete the IF localization with additional markers and quantitation of co-localization over a larger number of cells to report the precise localizations of the protein under study in at least two cell types. Also, membrane/cytosol fractionation is important as large cytosolic pools of proteins can interfere with proper membrane localizations and this causes many to use saponin or liquid nitrogen permeabilization to depleted cytosolic proteins before fixation (please discuss).\n\n2) Since there are many papers with the wrong conclusions, these should be included in Table 1 (or in another table) in terms of who used which antibody, to best help workers in this field re-evaluate the literature.\n\nAdditional comment received by email: \"The blot in Figure 4B appears to be underexposed if we compare it to those in Figure 1 and Figure 2\u2014figure supplement 1. Even at this brief exposure, there are additional bands in all cell types except for HEK which were used in Figure 1 and Figure 2\u2014figure supplement 1. We therefore need to see a blot with longer exposure time. We also need to see the full blots for murine tissues in Figure 4A. This result illustrates a key challenge with antibody validation: Cross-reactivity is often sample-dependent. Thus, a clean WB in one, or a few, cell types is not evidence for consistent specificity.\u201d\n\nReviewer #2:\n\n1) McPherson and co-authors describe a pipeline to characterize antibodies to human proteins. The article addresses an important problem in bio-medical research since a high frequency of commercially available antibodies do not perform in the applications they were specified for by the manufacturers. The pipeline involves the use of published MS data to identify a human cell line with abundant expression of the antibody target, CRISPR/Cas9 KO, identification of non-redundant commercially available antibodies to the target, western blotting of parental and KO cells, western blotting with a panel of cell lines to identify a cell type with high expression, use of antibody in IP-MS and immunofluorescence microscopy (4% PFA/1% Triton X100).\n\nThe authors also generated KO mice to test performance of the antibodies in IHC.\n\nGeneral assessment. The experiments are well performed and the data are convincing. However, the manuscript merely describes use of techniques that are already well-established. Moreover, the pipeline they describe has several important limitations.\n\n2) Buying all commercially available antibodies to a given protein is hardly a \"relatively inexpensive approach\" to begin with. A key question is if the product specification sheets were at all useful to narrow down the number of reagents for testing. The manufacturers WBs for the two GeneTex antibodies look quite good, and the best antibody is the same as that reported here. I was unable to find data specification sheets for the catalogue numbers of most antibodies listed in Table 1. The exception was the HPA reagent, which as listed as not useful in WB. Were the WBs of all other antibodies really as convincing as those from GeneTex? This would be surprising in view of the horrible blots in Figure 2.\n\n3) The authors initially selected HEK293 cells for KO on basis of published MS data from human cell lines. The reference data were published in 2012, and for MS this is outdated. The limitation of the reference is also evident from their results. Thus, the authors found that none of the antibodies were useful in immunofluorescence microscopy in HEK cells. Rather than sticking to their original pipeline, they now selected another cell type (U2OS) for KO on basis of a minor difference in the intensity of bands on WB. I do not find this to be particularly convincing. A better approach would be to generate a new MS dataset from the cell lines they intended to use. (Please discuss).\n\n4) The authors also used KO cells as reference to test performance of antibodies in IP-MS. However, KO is not necessary or even particularly useful in this setting since the assay primarily reports on the ability of the antibody to enrich the intended target, and the identification is based on sequence information. Cross-reactivity is generally not assessed, and the authors did not make attempts to do so here. A more relevant reference would be shotgun MS analysis of a total cell lysate to determine enrichment in the IP as relative protein rank. This was not performed here. Please discuss (see next comment).\n\n5) I think it would be useful to have a discussion about IP-MS. My view is that it is very difficult to assess specificity by IP-MS if one uses total cell lysates as starting material. We would see this more clearly if the authors had provided the processed MS data. IPs of native proteins from total cell lysates typically contain hundreds of proteins. Let us say you compare the list from KO and WT. Would you consider the overlap to be cross-reactivity or \"CRAPOME\"? Should all proteins found in IP from WT and not in KO be considered as interaction partners of the intended target? Probably not. Aled Edwards has published a paper on this topic in Nature Methods in 2015, so the authors are experienced enough to do this. My suggestion is that they revise the paper to discuss their MS data in more detail. They can certainly make claims about enrichment of the intended target, but can they really say anything about cross-reactivity?\n\nReviewer #3:\n\nThe paper touches upon a very significant issue of the vast majority of antibodies used in research not being properly validated. This results in confusion and lack of reproducibility in the field.\n\nThe authors describe an antibody validation workflow using the C9ORF72, one of the major ALS disease genes. They employ immunoblotting, immunoprecipitation, immunofluorescence and immunohistochemistry to validate a set of commercially available antibodies. The first step in the pipeline is immunoblot validation by screening various cell lines in order to determine expression levels of the target protein and choose the right cell line for further validation steps.\n\nThe study is very well written and very clear. Data presentation is also very clear. This study is an important addition to the literature, and I would be in favour of recommending it be published in eLife. There a few points that the authors may wish to consider in a revised version that are outlined below.\n\n1) As various disease models are used employing different animal species not just humans, it would be useful to include cell lines of other species i.e. mouse at the initial immunoblotting validation, as a good antibody (e.g. anti-mouse) may be missed because the primary screen is performed in human cell lines only. It could be done especially if the knock-out animal model is available. It is the case with the C9ORF72 (knock-out mouse available) and a mouse embryonic fibroblast cell line could be easily generated to be used for validation. We often find that antibodies unfortunately do not always behave the same for mouse and human.\n\n2) Generation of CRISPR/Cas9 knock-out in human cell lines expressing the target protein is a very effective approach to validate the antibodies both for immunoblotting and immunofluorescence. For immunofluorescence validation (Figure 4) an additional approach of generating a GFP-tag CRISPR knock-in could be used to further support the results, in which GFP signal would co-localise with the target protein signal. This also offers the advantage of knowing that you can visualise the endogenous protein before testing the IF grade antibody.\n\n3) For testing immunoprecipitation, we always quantify percentage of protein depleted from the supernatant after immunoprecipitation. This is very important. Many antibodies that are claimed to immunoprecipitated only deplete a small percentage of the endogenous protein from the supernatant. We recently tested 167 monoclonal clones against one target and only one of these was capable at nearly quantitatively depleting the endogenous protein from the supernatant with the rest bringing down trace or small levels in comparison.\n\n4) If the KO mouse model is available, it may be useful to include validation using wild-type and knock-out mouse embryonic fibroblasts or other cell lines before moving on to immunohistochemistry in mouse tissues (Supplementary Figure 5) (not essential).\n\n5) For MS experiments I would recommend doing IPs just from the wild type and KO cells (no other controls needed). In addition to the bait protein you are looking for additional proteins that co-IP with bait in wild type and not KO cells.\n\n6) MS analysis performed on the immunoprecipitates allowed to show the selected antibodies were able to enrich C9ORF72 and its interactors (SMCR8 and WDR41). However, it would help to compare the overall selectivity of the antibodies if the abundance of the target proteins versus the large number of contaminating proteins could be presented. Ideally for immunoprecipitation of endogenous proteins especially if this is going to be used in biochemical studies one needs the immunoprecipitates to be as clean as possible. Being able to catalogue the identity and number of non-specific proteins in each immunoprecipitate may be useful in selecting an antibody for such an application.\n\n7) This article is written for researchers wishing to select which is the best available commercial antibody. However, it is very applicable to researchers raising and characterising their own antibodies-especially monoclonal antibodies where one needs to test many dozens of clones. Maybe this could be mentioned.\n\n8) The clones that work best for immunoblot are not always the best for IP or IF analysis so we would recommend retesting all available antibodies for these applications and not just testing the antibody that works best for immunoblot analysis.\n\n9) Maybe the authors could discuss the danger of a field relying on a small number of commercial antibodies. What happens if the supplier making these terminates the programme and no longer supplies the reagents? There is also batch to batch variation of commercial products, and I have often heard that quality of commercial antibody batches can vary. The cost of commercial antibodies is extremely high and prohibitive for many researchers. Most researchers would never have the funds to purchase dozens of commercially available antibodies for each antibody to test. I think the solution to all of this is mass spectrometry sequencing of the best set of identified commercial monoclonal antibodies. We have done this a few times and there are commercial very reliable companies who do this for a cost of around $10,000 and require <200 micrograms of monoclonal antibody (that can be purchased from supplier). This may seem expensive but once this information is available an expression construct can be made to generate large amounts of the recombinant antibody in HEK293 cells (often >10 mg/litre expression). This plasmid vector could then be given out freely to all researchers working in the field to generate widely used antibodies needed for their work. The overall cost of doing this is very low compared to the overall cost of the research being funded by foundations and agencies. Perhaps foundations and agencies could have calls put out to enable key antibodies used by research fields to be sequenced and cloned for the benefit of everyone. If the hybridoma clone for the antibody is available, the antibody sequence can be obtained very easily by PCR DNA sequencing-but for most commercial antibodies the hybridoma clone is not available.\n\n10) Could the authors discuss where researchers who spend a lot of time characterizing antibodies could deposit this important characterisation data \u2013 i.e. make it available in a timely manner to researchers working in the field. If it just stays in the researchers lab book it is not much use for the research field. It is very unlikely that this data could be published in a conventional paper and even if it was it would be buried in likely as supplementary methods or figure section and thus very hard to locate. Some thoughts on this would be interesting.\n\n11) Mouse ortholog gene name should be 3110043O21Rik not 31100432021.\n",
+      "created_at": "2025-12-02T12:45:36.006275Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T12:45:36.006275Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T12:45:36.006275Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "74cbe8a3-4c75-4ca0-8f34-9f4beb0a5b4b",
+      "content_id": "4829f732-6ca9-437b-b423-23d1fafc46e7",
+      "claim_id": "C1",
+      "claim": "There are over a million unique antibodies that are commercially available.",
+      "claim_type": "EXPLICIT",
+      "source": "In keeping with their importance there are over a million unique antibodies that are commercially available (Dr. Matt Baker, ThermoFisher, personal communication).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by personal communication from Dr. Matt Baker at ThermoFisher",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:45:36.006275Z"
+    },
+    {
+      "id": "b68060a5-51cc-4a75-b685-534ab01319a9",
+      "content_id": "4829f732-6ca9-437b-b423-23d1fafc46e7",
+      "claim_id": "C2",
+      "claim": "The largest public antibody initiative has generated greater than 24,000 antibodies corresponding to almost 17,000 human genes.",
+      "claim_type": "EXPLICIT",
+      "source": "The largest public antibody initiative has generated greater than 24,000 antibodies corresponding to almost 17,000 human genes, with a focus on polyclonal antibodies (Uhl\u00e9n et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Uhl\u00e9n et al., 2015",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:45:36.006275Z"
+    },
+    {
+      "id": "96a468e6-07ff-45e2-9435-f3dbd98b8986",
+      "content_id": "4829f732-6ca9-437b-b423-23d1fafc46e7",
+      "claim_id": "C3",
+      "claim": "Up to 90% of a select group of 53 landmark preclinical studies suffered from flaws related to ill-defined antibodies.",
+      "claim_type": "EXPLICIT",
+      "source": "Ill-defined antibodies contribute significantly to a lack of reproducibility in important research efforts including preclinical studies, with estimates that up to 90% of a select group of 53 landmark preclinical studies suffered from such flaws (Bradbury and Pl\u00fcckthun, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Bradbury and Pl\u00fcckthun, 2015",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:45:36.006275Z"
+    },
+    {
+      "id": "ee352d82-4334-4d15-b003-5d5f45e2e027",
+      "content_id": "4829f732-6ca9-437b-b423-23d1fafc46e7",
+      "claim_id": "C4",
+      "claim": "Five separate validation criteria for antibodies have been proposed by an international working group.",
+      "claim_type": "EXPLICIT",
+      "source": "One of the groups (Uhlen et al., 2016) proposed five separate validation criteria: (1) genetic strategies in which the specificity of the antibody toward the endogenous protein is confirmed by the loss of signal in cells or tissues comparing parental to knockout (KO) or knockdown controls; (2) orthogonal strategies in which correlations are made between the antibody signal and known information regarding protein abundance or localization; (3) the ability of two independent uncharacterized antibodies recognizing different epitopes in the same target protein to recognize the same protein; (4) using overexpressed epitope-tagged proteins comparing antibodies against the tag to the uncharacterized antibody; (5) immunoprecipitation followed by mass spectrometry to determine if the protein of interest is a major signal in the sample.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Uhlen et al., 2016",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:45:36.006275Z"
+    },
+    {
+      "id": "0644ea68-b0ce-470d-a18d-8dfdea30b8a9",
+      "content_id": "4829f732-6ca9-437b-b423-23d1fafc46e7",
+      "claim_id": "C5",
+      "claim": "The C9ORF72 mutation underlies 11.7% of familial FTD cases and 23.5% of familial ALS cases in a North American cohort.",
+      "claim_type": "EXPLICIT",
+      "source": "In a North America cohort, this mutation underlies 11.7% and 23.5% of familial FTD and ALS cases, respectively, and in a large Finnish population, the C9ORF72 mutation underlies 46.0% of familial ALS and 21.1% of sporadic ALS (DeJesus-Hernandez et al., 2011; Renton et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to DeJesus-Hernandez et al., 2011 and Renton et al., 2011",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:45:36.006275Z"
+    },
+    {
+      "id": "7000d292-69f9-4db2-a85c-3abe7374e511",
+      "content_id": "4829f732-6ca9-437b-b423-23d1fafc46e7",
+      "claim_id": "C6",
+      "claim": "The C9ORF72 mutation underlies 46.0% of familial ALS and 21.1% of sporadic ALS in a large Finnish population.",
+      "claim_type": "EXPLICIT",
+      "source": "In a North America cohort, this mutation underlies 11.7% and 23.5% of familial FTD and ALS cases, respectively, and in a large Finnish population, the C9ORF72 mutation underlies 46.0% of familial ALS and 21.1% of sporadic ALS (DeJesus-Hernandez et al., 2011; Renton et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to DeJesus-Hernandez et al., 2011 and Renton et al., 2011",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:45:36.006275Z"
+    },
+    {
+      "id": "34814801-1a53-426d-bef1-d007469915d5",
+      "content_id": "4829f732-6ca9-437b-b423-23d1fafc46e7",
+      "claim_id": "C7",
+      "claim": "The C9ORF72 mutation is the most common genetic abnormality in both FTD and ALS.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the C9ORF72 mutation is the most common genetic abnormality in both FTD and ALS.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the prevalence data cited in the previous sentences",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:45:36.006275Z"
+    },
+    {
+      "id": "d9b2921b-6944-4a72-92d2-51cd77667c41",
+      "content_id": "4829f732-6ca9-437b-b423-23d1fafc46e7",
+      "claim_id": "C8",
+      "claim": "The literature regarding C9ORF72 subcellular and tissue-distribution is conflicting.",
+      "claim_type": "EXPLICIT",
+      "source": "It is vital to understand the cell biological role of C9ORF72, but the literature regarding C9ORF72 subcellular and tissue-distribution is conflicting (Burk and Pasterkamp, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Burk and Pasterkamp, 2019",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:45:36.006275Z"
+    },
+    {
+      "id": "8ad1c267-be10-4f6e-9c70-79490ff5147b",
+      "content_id": "4829f732-6ca9-437b-b423-23d1fafc46e7",
+      "claim_id": "C9",
+      "claim": "The lack of consensus on C9ORF72 expression, function and subcellular localization stems in part from the use of non-specific antibodies.",
+      "claim_type": "EXPLICIT",
+      "source": "We believe the lack of consensus on C9ORF72 expression, function and subcellular localization stems in part from the use of non-specific antibodies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis proposed by the authors based on their findings",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:45:36.006275Z"
+    },
+    {
+      "id": "01192a0a-b8b8-47d3-927f-1147eeb24436",
+      "content_id": "4829f732-6ca9-437b-b423-23d1fafc46e7",
+      "claim_id": "C10",
+      "claim": "HEK-293 cells express C9ORF72 at the 65th percentile according to PaxDb.",
+      "claim_type": "EXPLICIT",
+      "source": "C9ORF72 is expressed at relatively low levels in most tissues and cell lines ranging from the 77th percentile for HeLa cells to the 35th percentile in RKO cells. We eventually chose to start with HEK-293 cells (expression levels at the 65th percentile) as they are the 5th most abundant C9ORF72 expressing cell line, and are easy to grow and to edit with CRISPR/Cas9.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on data from PaxDb database",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:45:36.006275Z"
+    },
+    {
+      "id": "c1ff0bcd-895c-4469-a8ba-95b55e8d5b42",
+      "content_id": "4829f732-6ca9-437b-b423-23d1fafc46e7",
+      "claim_id": "C11",
+      "claim": "CRISPR/Cas9 was used to generate C9ORF72 heterozygous and knockout HEK-293 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We then used CRISPR/Cas9 to generate C9ORF72 heterozygous and KO HEK-293 cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Experimental procedure described in the manuscript",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:45:36.006275Z"
+    },
+    {
+      "id": "d602688d-f778-477a-aa57-ad65fdf4831a",
+      "content_id": "4829f732-6ca9-437b-b423-23d1fafc46e7",
+      "claim_id": "C12",
+      "claim": "More than 100 commercial antibodies for C9ORF72 were initially identified.",
+      "claim_type": "EXPLICIT",
+      "source": "We initially identified more than 100 antibodies for C9ORF72.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on the authors' search of commercial antibodies",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:45:36.006275Z"
+    },
+    {
+      "id": "fef327d6-59e6-4e8d-a2fe-7d91efd4fbe5",
+      "content_id": "4829f732-6ca9-437b-b423-23d1fafc46e7",
+      "claim_id": "C13",
+      "claim": "14 distinct commercial C9ORF72 antibodies were purchased after eliminating redundancies.",
+      "claim_type": "EXPLICIT",
+      "source": "This led to 14 distinct commercial C9ORF72 antibodies, 10 rabbit polyclonal antibodies, three mouse monoclonal antibodies and one rabbit monoclonal antibody (Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on the authors' antibody purchasing strategy",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:45:36.006275Z"
+    },
+    {
+      "id": "73445108-1584-494f-8073-2a90fbcf5ddc",
+      "content_id": "4829f732-6ca9-437b-b423-23d1fafc46e7",
+      "claim_id": "C14",
+      "claim": "Two sheep polyclonal antibodies from the MRC were identified in addition to the 14 commercial antibodies.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition we identified two sheep polyclonal antibodies from the Protein Phosphorylation and Ubiquitylation Unit of the Medical Research Council (MRC) in Dundee Scotland (Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on the authors' antibody identification",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:45:36.006275Z"
+    },
+    {
+      "id": "a40a743b-b7a2-4e25-a5fd-88a50c922d23",
+      "content_id": "4829f732-6ca9-437b-b423-23d1fafc46e7",
+      "claim_id": "C15",
+      "claim": "GeneTex mouse monoclonal antibody GTX634482 demonstrates a strong signal in parental HEK-293 cell lysates that is reduced by ~50% in the heterozygous line and absent in KO lines.",
+      "claim_type": "EXPLICIT",
+      "source": "This antibody demonstrates a strong signal in parental HEK-293 cell lysates, the signal is reduced by ~50% in the heterozygous line, and no signal for the antibody is detected in the two KO lines (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by immunoblot data shown in Figure 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:45:36.006275Z"
+    },
+    {
+      "id": "2fc7e491-409d-4014-b1de-164c541c0134",
+      "content_id": "4829f732-6ca9-437b-b423-23d1fafc46e7",
+      "claim_id": "C16",
+      "claim": "GTX634482 shows no bands other than C9ORF72, even upon long exposure.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, no band other than C9ORF72 is visible, even upon long exposure (Figure 2\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by immunoblot data shown in Figure 2\u2014figure supplement 1A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:45:36.006275Z"
+    },
+    {
+      "id": "557e66e7-73f8-47d1-96a3-7c511cbcc2b0",
+      "content_id": "4829f732-6ca9-437b-b423-23d1fafc46e7",
+      "claim_id": "C17",
+      "claim": "Abcam rabbit monoclonal antibody ab221137 and GeneTex mouse monoclonal antibody GTX632041 gave specific signals on immunoblot but showed other non-specific bands upon longer exposure.",
+      "claim_type": "EXPLICIT",
+      "source": "Abcam rabbit monoclonal antibody (ab221137) and GeneTex mouse monoclonal antibody (GTX632041) also gave specific signals on immunoblot (Figure 2) but other non-specific bands were detected upon longer exposure (Figure 2\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by immunoblot data shown in Figure 2 and Figure 2\u2014figure supplement 1A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:45:36.006275Z"
+    },
+    {
+      "id": "580fa32b-81ae-4f73-b68a-7a7d4dd09880",
+      "content_id": "4829f732-6ca9-437b-b423-23d1fafc46e7",
+      "claim_id": "C18",
+      "claim": "GTX634482 and ab221137 showed strong specific signals in mouse brain extract from wild-type compared to C9ORF72 KO animals.",
+      "claim_type": "EXPLICIT",
+      "source": "We screened all 16 antibodies using brain extract from wild-type (WT) and C9ORF72 KO animals and found that both GTX634482 and ab221137 showed strong specific signals (Figure 2\u2014figure supplement 1A, B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by immunoblot data shown in Figure 2\u2014figure supplement 1A, B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:45:36.006275Z"
+    },
+    {
+      "id": "78f2fe8d-a6ff-4aa9-adcb-0f00eb1f0147",
+      "content_id": "4829f732-6ca9-437b-b423-23d1fafc46e7",
+      "claim_id": "C19",
+      "claim": "Some antibodies that did not detect C9ORF72 specifically in human lysates could identify C9ORF72 in mouse samples.",
+      "claim_type": "EXPLICIT",
+      "source": "We were surprised to observe that some antibodies that did not detect C9ORF72 specifically in human lysates could identify C9ORF72 in mouse samples. These antibodies are GTX119776, ab227555 and sc-138763.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on immunoblot comparisons between human and mouse samples",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:45:36.006275Z"
+    },
+    {
+      "id": "b056a214-269d-4db4-a386-4bb1d87315f3",
+      "content_id": "4829f732-6ca9-437b-b423-23d1fafc46e7",
+      "claim_id": "C20",
+      "claim": "Nine out of 16 antibodies immunoprecipitate endogenous C9ORF72.",
+      "claim_type": "EXPLICIT",
+      "source": "Of the 16 antibodies, nine immunoprecipitate endogenous C9ORF72, with GeneTex monoclonal antibody GTX632041 demonstrating the most robust enrichment of the protein compared to starting material (SM) (Figure 3A/B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by immunoprecipitation data shown in Figure 3A/B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:45:36.006275Z"
+    },
+    {
+      "id": "4a865d2e-e3bc-4567-944c-839060b853e0",
+      "content_id": "4829f732-6ca9-437b-b423-23d1fafc46e7",
+      "claim_id": "C21",
+      "claim": "GTX632041 demonstrates the most robust enrichment of C9ORF72 in immunoprecipitation compared to starting material.",
+      "claim_type": "EXPLICIT",
+      "source": "Of the 16 antibodies, nine immunoprecipitate endogenous C9ORF72, with GeneTex monoclonal antibody GTX632041 demonstrating the most robust enrichment of the protein compared to starting material (SM) (Figure 3A/B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by immunoprecipitation data shown in Figure 3A/B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:45:36.006275Z"
+    },
+    {
+      "id": "a4e0983a-6e4c-4e02-8cc9-c17e33b6228a",
+      "content_id": "4829f732-6ca9-437b-b423-23d1fafc46e7",
+      "claim_id": "C22",
+      "claim": "GTX634482 and ab221137 showed no appreciable C9ORF72 immunoprecipitation despite being effective for immunoblot.",
+      "claim_type": "EXPLICIT",
+      "source": "Seven antibodies showed no appreciable C9ORF72 immunoprecipitation including GTX634482 and ab221137 (Figure 3A/B), which were the most effective antibodies in immunoblot.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by immunoprecipitation data shown in Figure 3A/B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:45:36.006275Z"
+    },
+    {
+      "id": "c4115069-8c78-4a20-94d1-3d62968c5320",
+      "content_id": "4829f732-6ca9-437b-b423-23d1fafc46e7",
+      "claim_id": "C23",
+      "claim": "Approximately 70% of endogenous C9ORF72 is captured from 1 mg of HEK-293 lysates using 1 \u00b5g of GTX632041.",
+      "claim_type": "EXPLICIT",
+      "source": "Approximately 70% of endogenous C9ORF72 is captured from 1 mg of HEK-293 lysates using 1 \u00b5g of GTX632041, whereas the other 15 antibodies capture either no protein or at most 20% of total C9ORF72 (Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by quantitative immunoblot data shown in Figure 3\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:45:36.006275Z"
+    },
+    {
+      "id": "857ea077-69c5-4912-86be-9f2f19ea6e78",
+      "content_id": "4829f732-6ca9-437b-b423-23d1fafc46e7",
+      "claim_id": "C24",
+      "claim": "Mass spectrometry of immunoprecipitates from parental cells identified C9ORF72 and two known C9ORF72-binding partners, SMCR8 and WDR41.",
+      "claim_type": "EXPLICIT",
+      "source": "Mass spectrometry of immunoprecipitates from the parental cells identified C9ORF72 (13, 24, 19 peptides) and two known C9ORF72-binding partners, SMCR8 (51, 69, 62 peptides) and WDR41 (23, 28, 24 peptides) (Figure 3D, Supplementary file 2) (Sellier et al., 2016; Amick et al., 2016; Zhang et al., 2018).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by mass spectrometry data shown in Figure 3D and Supplementary file 2, with known binding partners confirmed by citations",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:45:36.006275Z"
+    },
+    {
+      "id": "967cf115-05ce-4341-92fd-7281ecb5f6c5",
+      "content_id": "4829f732-6ca9-437b-b423-23d1fafc46e7",
+      "claim_id": "C25",
+      "claim": "The presence of C9ORF72, SMCR8, and WDR41 at near 1:1:1 level indicates that GTX632041 is selective for C9ORF72.",
+      "claim_type": "EXPLICIT",
+      "source": "The presence of C9ORF72 and its known-binding partners at near 1:1:1 level (when adjusting for the mass of the proteins) indicates that GTX632041 is selective for C9ORF72 and further supports the use of HEK-293 cells in our analysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on mass spectrometry data analysis",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:45:36.006275Z"
+    },
+    {
+      "id": "c8aff5c2-596b-49b7-802b-dea02c397a5c",
+      "content_id": "4829f732-6ca9-437b-b423-23d1fafc46e7",
+      "claim_id": "C26",
+      "claim": "MMS19 was identified as a novel C9ORF72-binding partner.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, we also identified MMS19, a 113 kDa protein component of the iron-sulfur protein assembly complex in the immunoprecipitates from parental cells (5, 1, 2 peptides) with no peptides in immuoprecipitates from the KO cells (Figure 3D), suggesting that MMS19 is a novel C9ORF72-binding partner.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on mass spectrometry data showing MMS19 peptides only in parental cell immunoprecipitates",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:45:36.006275Z"
+    },
+    {
+      "id": "bd4b936e-e002-46e8-8201-fb6e949ca193",
+      "content_id": "4829f732-6ca9-437b-b423-23d1fafc46e7",
+      "claim_id": "C27",
+      "claim": "Clathrin heavy chain (CLH1) was identified in immunoprecipitates but with similar numbers of peptides in both parental and KO samples, indicating it is not biologically significant.",
+      "claim_type": "EXPLICIT",
+      "source": "We also identified clathrin heavy chain (CLH1) with (85, 72 and 58 peptides) but similar numbers of peptides (75, 51, 53) were seen in the KO immunoprecipitations. This clearly indicates that the presence of clathrin heavy chain is not biologically significant but it is not possible to determine if it immunoprecipitates because it cross-reacts with the C9ORF72 antibody or for other non-specific reasons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on mass spectrometry data showing similar peptide counts in parental and KO samples",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:45:36.006275Z"
+    },
+    {
+      "id": "5ba138cb-d1ec-40eb-a763-983ca2923c1c",
+      "content_id": "4829f732-6ca9-437b-b423-23d1fafc46e7",
+      "claim_id": "C28",
+      "claim": "All 16 C9ORF72 antibodies gave various staining patterns with no reduction in fluorescent staining in KO cells when HEK-293 cells were fixed in paraformaldehyde.",
+      "claim_type": "EXPLICIT",
+      "source": "The antibodies gave various staining patterns with no reduction in fluorescent staining in KO cells (Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by immunofluorescence data shown in Figure 4\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:45:36.006275Z"
+    },
+    {
+      "id": "112fb15b-21b4-4598-ba57-4fec4849d64d",
+      "content_id": "4829f732-6ca9-437b-b423-23d1fafc46e7",
+      "claim_id": "C29",
+      "claim": "Similar results were seen when HEK-293 cells were fixed in \u221220\u00b0C methanol.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar results were seen when the cells were fixed in \u221220\u00b0C methanol (Figure 4\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by immunofluorescence data shown in Figure 4\u2014figure supplement 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:45:36.006275Z"
+    },
+    {
+      "id": "699f9ee1-d6b3-4482-969a-aea511712926",
+      "content_id": "4829f732-6ca9-437b-b423-23d1fafc46e7",
+      "claim_id": "C30",
+      "claim": "U2OS cells have the highest levels of C9ORF72 among the cell lines tested.",
+      "claim_type": "EXPLICIT",
+      "source": "Of the cell lines tested, U2OS has the highest levels of C9ORF72 whereas RKO cells have lower expression than HeLa (Figure 4\u2014figure supplement 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by quantitative immunoblot data shown in Figure 4\u2014figure supplement 3A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:45:36.006275Z"
+    },
+    {
+      "id": "f2861373-ecca-4e66-9794-06b12845cd5f",
+      "content_id": "4829f732-6ca9-437b-b423-23d1fafc46e7",
+      "claim_id": "C31",
+      "claim": "The levels of C9ORF72 in motor neurons is similar to that in HEK-293.",
+      "claim_type": "EXPLICIT",
+      "source": "Interesting, the levels of C9ORF72 in motor neurons is similar to that in HEK-293.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on quantitative immunoblot comparison",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:45:36.006275Z"
+    },
+    {
+      "id": "681feb7e-ddbb-4ee7-8110-662786a0fea6",
+      "content_id": "4829f732-6ca9-437b-b423-23d1fafc46e7",
+      "claim_id": "C32",
+      "claim": "GTX632041 is the sole antibody to recognize endogenous C9ORF72 specifically in immunofluorescence analysis of U2OS cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We screened all 16 C9ORF72 antibodies using this strategy and we found GTX632041 as the sole antibody to recognize endogenous C9ORF72 specifically (Figure 4A/B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by immunofluorescence data shown in Figure 4A/B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:45:36.006275Z"
+    },
+    {
+      "id": "2e469c97-0905-433c-b114-d5317d6659f1",
+      "content_id": "4829f732-6ca9-437b-b423-23d1fafc46e7",
+      "claim_id": "C33",
+      "claim": "GTX632041 immunofluorescence labeling reveals a cytosolic/punctate fluorescence signal that is dramatically reduced in KO cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, GTX632041 immunofluorescence labeling reveals a cytosolic/punctate fluorescence signal that is dramatically reduced in KO cells to a level comparable to buffer control (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by immunofluorescence data shown in Figure 4A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:45:36.006275Z"
+    },
+    {
+      "id": "de6f55a1-912d-4fde-861d-7c0de3a77e04",
+      "content_id": "4829f732-6ca9-437b-b423-23d1fafc46e7",
+      "claim_id": "C34",
+      "claim": "GTX634482 shows a punctate and/or neuritic-like signal in specific brain regions of WT mice that is nearly completely ablated in KO mice.",
+      "claim_type": "EXPLICIT",
+      "source": "A punctate and/or neuritic-like signal is observed in the neuropil of the glomerular layer of the olfactory bulb, the ventral pallidum of the basal ganglia, the CA4 (hilus), CA3, and CA2 region of the hippocampus, the substantia nigra, the inferior olive, and granular layer of the cerebellar cortex of WT mice (Figure 5A, arrows). The signal is nearly completely ablated in the KO mice although there is some non-specific signal seen in the dentate gyrus/CA4, inferior olive and cerebellar cortex sections (Figure 5A, arrows).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by immunohistochemistry data shown in Figure 5A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:45:36.006275Z"
+    },
+    {
+      "id": "908f2d87-2850-49d4-8255-4b8aa00664b0",
+      "content_id": "4829f732-6ca9-437b-b423-23d1fafc46e7",
+      "claim_id": "C35",
+      "claim": "GTX632041 specifically recognizes C9ORF72 in mouse brain sections including those through the hippocampus but staining is not as strong or consistently specific as seen with GTX634482.",
+      "claim_type": "EXPLICIT",
+      "source": "GTX632041, which is the most effective antibody for immunoprecipitation (Figure 3A) and immunofluorescence (Figure 4A) analysis, also specifically recognizes C9ORF72 in mouse brain sections including those through the hippocampus (Figure 5B) but staining is not as strong or consistently specific as seen with GTX634482.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by immunohistochemistry data shown in Figure 5B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:45:36.006275Z"
+    },
+    {
+      "id": "ace3e370-85e1-4a59-8b49-61081376113f",
+      "content_id": "4829f732-6ca9-437b-b423-23d1fafc46e7",
+      "claim_id": "C36",
+      "claim": "Antibody ab221137 did not reveal any signal in the immunohistochemistry analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Antibody ab221137, which worked well for immunoblot (Figure 2; Figure 2\u2014figure supplement 1A) did not reveal any signal in the IHC analysis (Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by immunohistochemistry data shown in Figure 5C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:45:36.006275Z"
+    },
+    {
+      "id": "68f4eca6-6095-4ec3-967b-9dbea7e0b0cd",
+      "content_id": "4829f732-6ca9-437b-b423-23d1fafc46e7",
+      "claim_id": "C37",
+      "claim": "Endogenous C9ORF72 has been localized to the nucleus by previous studies.",
+      "claim_type": "EXPLICIT",
+      "source": "Endogenous C9ORF72 has been localized to the nucleus (Renton et al., 2011; Atkinson et al., 2016), early endosomes (Farg et al., 2014; Shi et al., 2018), recycling and late endosomes (Farg et al., 2014), the Golgi apparatus (Aoki et al., 2017), stress granules (Chitiprolu et al., 2018) the cytoplasm, neurites, growth cones (Atkinson et al., 2016), and lysosomes (Shi et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to multiple previous studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:45:36.006275Z"
+    },
+    {
+      "id": "f4ff7b9f-ddf7-485e-941a-eb7092903299",
+      "content_id": "4829f732-6ca9-437b-b423-23d1fafc46e7",
+      "claim_id": "C38",
+      "claim": "Each of the previous studies on C9ORF72 localization performed immunofluorescence using commercial C9ORF72 antibodies that failed the validation criteria in this study.",
+      "claim_type": "EXPLICIT",
+      "source": "Each of these studies performed immunofluorescence using commercial C9ORF72 antibodies that failed our validation criteria.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on the authors' validation results compared to antibodies used in previous studies",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:45:36.006275Z"
+    },
+    {
+      "id": "b8fcb990-97b5-48f7-b8d6-910483416f4f",
+      "content_id": "4829f732-6ca9-437b-b423-23d1fafc46e7",
+      "claim_id": "C39",
+      "claim": "A previous study using CRISPR to add an HA tag to endogenous C9ORF72 revealed a diffuse cytoplasmic localization under basal conditions and concentration on lysosomes following starvation.",
+      "claim_type": "EXPLICIT",
+      "source": "One study used CRISPR to add an HA tag to endogenous C9ORF72, localizing the fusion protein with an antibody against the tag. This study revealed a diffuse cytoplasmic localization for tagged C9ORF72 under basal cell culture conditions, with the observation that the protein became concentrated on lysosomes following starvation (Amick et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Amick et al., 2016",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:45:36.006275Z"
+    },
+    {
+      "id": "c6a3126b-85ca-4f9d-a257-240f7e57ce96",
+      "content_id": "4829f732-6ca9-437b-b423-23d1fafc46e7",
+      "claim_id": "C40",
+      "claim": "C9ORF72 demonstrates a consistent lysosomal localization under basal conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Under basal conditions, C9ORF72 demonstrates a consistent lysosomal localization (Figure 6A, top panels).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by immunofluorescence data shown in Figure 6A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:45:36.006275Z"
+    },
+    {
+      "id": "c9d134e7-7483-4112-a6da-4ad6880871d2",
+      "content_id": "4829f732-6ca9-437b-b423-23d1fafc46e7",
+      "claim_id": "C41",
+      "claim": "Starvation leads to larger LAMP1-positive lysosomes as a result of membrane fusion.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, starvation leads to larger LAMP1-positive lysosomes as a result of membrane fusion (Yu et al., 2010) but the localization of C9ORF72 is not altered (Figure 6A, bottom panels).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by immunofluorescence data shown in Figure 6A, with membrane fusion mechanism cited from Yu et al., 2010",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:45:36.006275Z"
+    },
+    {
+      "id": "706bcb18-3933-4743-9eb4-19085d521555",
+      "content_id": "4829f732-6ca9-437b-b423-23d1fafc46e7",
+      "claim_id": "C42",
+      "claim": "The localization of C9ORF72 is not altered by starvation.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, starvation leads to larger LAMP1-positive lysosomes as a result of membrane fusion (Yu et al., 2010) but the localization of C9ORF72 is not altered (Figure 6A, bottom panels).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by immunofluorescence data shown in Figure 6A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:45:36.006275Z"
+    },
+    {
+      "id": "81d54e91-3178-4380-b62f-8a0ee4eabf7d",
+      "content_id": "4829f732-6ca9-437b-b423-23d1fafc46e7",
+      "claim_id": "C43",
+      "claim": "82% of LAMP1-positive lysosomes show C9ORF72 puncta on their periphery in both fed and starved conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact 82% of LAMP1-positive lysosomes show C9ORF72 puncta on their periphery in both fed and starved conditions (Figure 6B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by quantification data shown in Figure 6B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:45:36.006275Z"
+    },
+    {
+      "id": "77edec7f-fb0d-453b-8e14-48bce410cd0a",
+      "content_id": "4829f732-6ca9-437b-b423-23d1fafc46e7",
+      "claim_id": "C44",
+      "claim": "C9ORF72 co-localizes in part with GFP-Rab7a and GFP-Rab9, two small GTPases involved in vesicle trafficking to lysosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with a lysosomal localization, C9ORF72 co-localizes in part with GFP-Rab7a and GFP-Rab9, two small GTPases involved in vesicle trafficking to lysosomes but has little co-localization with GFP-Rab5a or GFP-Rab11a, markers of early and recycling endosomes, respectively (Figure 6\u2014figure supplement 1A, B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by immunofluorescence co-localization data shown in Figure 6\u2014figure supplement 1A, B",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:45:36.006275Z"
+    },
+    {
+      "id": "d7755301-54b8-4f98-8ee0-3be65cd75bb0",
+      "content_id": "4829f732-6ca9-437b-b423-23d1fafc46e7",
+      "claim_id": "C45",
+      "claim": "C9ORF72 has little co-localization with GFP-Rab5a or GFP-Rab11a, markers of early and recycling endosomes, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with a lysosomal localization, C9ORF72 co-localizes in part with GFP-Rab7a and GFP-Rab9, two small GTPases involved in vesicle trafficking to lysosomes but has little co-localization with GFP-Rab5a or GFP-Rab11a, markers of early and recycling endosomes, respectively (Figure 6\u2014figure supplement 1A, B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by immunofluorescence co-localization data shown in Figure 6\u2014figure supplement 1A, B",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:45:36.006275Z"
+    },
+    {
+      "id": "8a375ca1-1fb5-4382-b55c-4b8b95fdcb35",
+      "content_id": "4829f732-6ca9-437b-b423-23d1fafc46e7",
+      "claim_id": "C46",
+      "claim": "C9ORF72 is enriched on lysosomes by ~3\u20134 fold in both basal and starved conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "C9ORF72 is enriched on lysosomes by ~3\u20134 fold in both basal and starved conditions (Figure 6C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by lysosomal immunoprecipitation data shown in Figure 6C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:45:36.006275Z"
+    },
+    {
+      "id": "ac6c6670-3171-4459-b042-b4edd71e7363",
+      "content_id": "4829f732-6ca9-437b-b423-23d1fafc46e7",
+      "claim_id": "C47",
+      "claim": "C9ORF72 is not enriched after immunoprecipitation of mitochondria.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, C9ORF72 is not enriched after immunoprecipitation of mitochondria (Figure 6\u2014figure supplement 2A) using 3xHA-eGFP-OMP25 as bait (Chen et al., 2016).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by mitochondrial immunoprecipitation data shown in Figure 6\u2014figure supplement 2A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:45:36.006275Z"
+    },
+    {
+      "id": "91882146-435e-47db-8f89-2981da04303a",
+      "content_id": "4829f732-6ca9-437b-b423-23d1fafc46e7",
+      "claim_id": "C48",
+      "claim": "A significant pool of C9ORF72 (~85%) is found outside of lysosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "While C9ORF72 definitively localizes to lysosomes a significant pool of the protein (~85%) is found outside of lysosomes (Figure 6\u2014figure supplement 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by quantification data shown in Figure 6\u2014figure supplement 2B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:45:36.006275Z"
+    },
+    {
+      "id": "c4bbdcdb-24ac-487b-88aa-07790d800b61",
+      "content_id": "4829f732-6ca9-437b-b423-23d1fafc46e7",
+      "claim_id": "C49",
+      "claim": "~75% of total C9ORF72 is in the soluble/cytosolic fraction in both RAW264.7 and U2OS cells, whereas 25% is membrane-associated.",
+      "claim_type": "EXPLICIT",
+      "source": "When we performed a biochemical cytosol/membrane fractionation of RAW264.7 and U2OS cells followed by quantitative immunoblot, we found that ~75% of total C9ORF72 is in the soluble/cytosolic fraction in both cell lines, whereas 25% of total C9ORF72 is membrane-associated (Figure 6\u2014figure supplement 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by subcellular fractionation data shown in Figure 6\u2014figure supplement 2C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:45:36.006275Z"
+    },
+    {
+      "id": "c42c0476-d690-4861-9ef8-d778b3e54869",
+      "content_id": "4829f732-6ca9-437b-b423-23d1fafc46e7",
+      "claim_id": "C50",
+      "claim": "C9ORF72 distributes to a cytosolic pool and a membrane-bound pool on lysosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the fraction of C9ORF72 not found on lysosomes appears to correspond to a cytosolic pool. In conclusion, C9ORF72 distributes to a cytosolic pool and a membrane-bound pool on lysosomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on integration of lysosomal localization and fractionation data",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:45:36.006275Z"
+    },
+    {
+      "id": "b64710d2-c958-4f46-ae49-e27bab69bcd1",
+      "content_id": "4829f732-6ca9-437b-b423-23d1fafc46e7",
+      "claim_id": "C51",
+      "claim": "C9ORF72 KO mice age without motor neuron disease.",
+      "claim_type": "EXPLICIT",
+      "source": "C9ORF72 KO mice age without motor neuron disease (O'Rourke et al., 2016; Jiang et al., 2016; Burberry et al., 2016) but instead develop progressive splenomegaly and lymphadenopathy and ultimately die due to complications of autoimmunity (O'Rourke et al., 2016; Burberry et al., 2016; Atanasio et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to O'Rourke et al., 2016; Jiang et al., 2016; Burberry et al., 2016",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:45:36.006275Z"
+    },
+    {
+      "id": "dee927e5-7aa7-4a6e-802a-d6d42347780f",
+      "content_id": "4829f732-6ca9-437b-b423-23d1fafc46e7",
+      "claim_id": "C52",
+      "claim": "C9ORF72 KO mice develop progressive splenomegaly and lymphadenopathy and ultimately die due to complications of autoimmunity.",
+      "claim_type": "EXPLICIT",
+      "source": "C9ORF72 KO mice age without motor neuron disease (O'Rourke et al., 2016; Jiang et al., 2016; Burberry et al., 2016) but instead develop progressive splenomegaly and lymphadenopathy and ultimately die due to complications of autoimmunity (O'Rourke et al., 2016; Burberry et al., 2016; Atanasio et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to O'Rourke et al., 2016; Burberry et al., 2016; Atanasio et al., 2016",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:45:36.006275Z"
+    },
+    {
+      "id": "aec68a16-80b7-48ef-94b7-b991f436e18a",
+      "content_id": "4829f732-6ca9-437b-b423-23d1fafc46e7",
+      "claim_id": "C55",
+      "claim": "C9ORF72 is expressed at higher levels in bone marrow-derived macrophages from mice than in whole mouse brain or in cultures of rodent neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, C9ORF72 is expressed at higher levels in bone marrow-derived macrophages (BMDM) from mice than in whole mouse brain or in cultures of rodent neurons (Figure 7A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by quantitative immunoblot data shown in Figure 7A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:45:36.006275Z"
+    },
+    {
+      "id": "cddcb849-5423-40a4-9e6b-549172c122b7",
+      "content_id": "4829f732-6ca9-437b-b423-23d1fafc46e7",
+      "claim_id": "C56",
+      "claim": "Strong expression of C9ORF72 was observed in human monocyte-derived macrophages under traditional M1 polarization conditions and in the presence of TGF-\u03b2.",
+      "claim_type": "EXPLICIT",
+      "source": "Next, we examined human monocyte-derived macrophages (MDMs) under traditional M1 polarization conditions (IFN-\u03b3 and LPS treated) or in the presence of TGF-\u03b2, which reproduces the homeostatic state of the cells in vitro (Healy et al., 2016) (Figure 7B). We again observed strong expression of C9ORF72 in the macrophage cells.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by quantitative immunoblot data shown in Figure 7B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:45:36.006275Z"
+    },
+    {
+      "id": "641a1d05-0586-45d5-8923-6395954da671",
+      "content_id": "4829f732-6ca9-437b-b423-23d1fafc46e7",
+      "claim_id": "C57",
+      "claim": "In human MDMs, C9ORF72 decorates large organelles that appear to be phagosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "In human MDMs, C9ORF72 decorates large organelles that appear to be phagosomes (Figure 8A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by immunofluorescence data shown in Figure 8A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:45:36.006275Z"
+    },
+    {
+      "id": "6acd76d7-7004-40f6-bb1c-0bf37770d494",
+      "content_id": "4829f732-6ca9-437b-b423-23d1fafc46e7",
+      "claim_id": "C58",
+      "claim": "LPS treatment of RAW264.7 cells leads to an ~1.8 fold increase in C9ORF72 protein levels.",
+      "claim_type": "EXPLICIT",
+      "source": "LPS treatment lead to an ~1.8 fold increase in C9ORF72 protein levels (Figure 8C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by quantitative immunoblot data shown in Figure 8C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:45:36.006275Z"
+    },
+    {
+      "id": "1b2bd54b-c16b-483d-a028-0f133eccf10d",
+      "content_id": "4829f732-6ca9-437b-b423-23d1fafc46e7",
+      "claim_id": "C59",
+      "claim": "After a 30 min pulse, F-actin-coated early phagosomes are devoid of LAMP1 and devoid of C9ORF72.",
+      "claim_type": "EXPLICIT",
+      "source": "After a 30 min pulse (30-0), F-actin-coated early phagosomes are devoid of LAMP1, as expected, and devoid of C9ORF72.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated by pulse-chase immunofluorescence experiment",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:45:36.006275Z"
+    },
+    {
+      "id": "2aec2633-dae0-4e8b-a132-c10e2b9ff8d8",
+      "content_id": "4829f732-6ca9-437b-b423-23d1fafc46e7",
+      "claim_id": "C60",
+      "claim": "After a 30 min chase period, late phagosomes lost the majority of their actin coat, are devoid of LAMP1, but started to accumulate C9ORF72.",
+      "claim_type": "EXPLICIT",
+      "source": "After a 30 min chase period (30-30), late phagosomes lost the majority of their actin coat, are devoid of LAMP1, but started to accumulate C9ORF72.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated by pulse-chase immunofluorescence experiment",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:45:36.006275Z"
+    },
+    {
+      "id": "988fd012-705f-461f-bb8f-bab73159f46f",
+      "content_id": "4829f732-6ca9-437b-b423-23d1fafc46e7",
+      "claim_id": "C61",
+      "claim": "After a 90 min chase period, phagolysosomes were devoid of F-actin and accumulated both LAMP1 and C9ORF72.",
+      "claim_type": "EXPLICIT",
+      "source": "A 90 min chase period (30-90) allowed enough time for late phagosomes to fuse with lysosomes. Phagolysosomes were devoid of F-actin and accumulated both LAMP1 and C9ORF72 (Figure 8D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by pulse-chase immunofluorescence data shown in Figure 8D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:45:36.006275Z"
+    },
+    {
+      "id": "b7378180-92a1-4f73-a7e8-669f35f964bd",
+      "content_id": "4829f732-6ca9-437b-b423-23d1fafc46e7",
+      "claim_id": "C62",
+      "claim": "C9ORF72 starts to accumulate on late-phagosomes once F-actin is being disassembled.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, C9ORF72 starts to accumulate on late-phagosomes once F-actin is being disassembled.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on the temporal sequence observed in pulse-chase experiments",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:45:36.006275Z"
+    },
+    {
+      "id": "dcde30aa-40d9-47fe-987f-12745ec31582",
+      "content_id": "4829f732-6ca9-437b-b423-23d1fafc46e7",
+      "claim_id": "C63",
+      "claim": "C9ORF72 localizes before lysosome fusion on late-phagosomes and remains present on phagolysosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "C9ORF72 localizes before lysosome fusion on late-phagosomes and remains present on phagolysosomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on the temporal sequence observed in pulse-chase experiments",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:45:36.006275Z"
+    },
+    {
+      "id": "2452c5fd-8e6b-44d7-8b8e-71982c31f33b",
+      "content_id": "4829f732-6ca9-437b-b423-23d1fafc46e7",
+      "claim_id": "C64",
+      "claim": "The GeneTex rabbit polyclonal antibody GTX119776 has been used in five published papers.",
+      "claim_type": "EXPLICIT",
+      "source": "A troubling finding of our study is that the rabbit polyclonal antibody SC-138763, which clearly does not recognize C9ORF72 in any human sample in any application, has been used in 15 published manuscripts to ascribe specific properties to the protein in normal and disease states (Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on literature search documented in Supplementary file 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:45:36.006275Z"
+    },
+    {
+      "id": "f601ffb5-7cd9-43b1-9f4c-50f2884f5e6f",
+      "content_id": "4829f732-6ca9-437b-b423-23d1fafc46e7",
+      "claim_id": "C65",
+      "claim": "The rabbit polyclonal antibody SC-138763 does not recognize C9ORF72 in any human sample in any application.",
+      "claim_type": "EXPLICIT",
+      "source": "A troubling finding of our study is that the rabbit polyclonal antibody SC-138763, which clearly does not recognize C9ORF72 in any human sample in any application, has been used in 15 published manuscripts to ascribe specific properties to the protein in normal and disease states (Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on the validation experiments performed in this study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:45:36.006275Z"
+    },
+    {
+      "id": "dae46c2b-82d9-4264-8dc1-bffb8d5339ea",
+      "content_id": "4829f732-6ca9-437b-b423-23d1fafc46e7",
+      "claim_id": "C66",
+      "claim": "The rabbit polyclonal antibody SC-138763 has been used in 15 published manuscripts to ascribe specific properties to C9ORF72 in normal and disease states.",
+      "claim_type": "EXPLICIT",
+      "source": "A troubling finding of our study is that the rabbit polyclonal antibody SC-138763, which clearly does not recognize C9ORF72 in any human sample in any application, has been used in 15 published manuscripts to ascribe specific properties to the protein in normal and disease states (Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on literature search documented in Supplementary file 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:45:36.006275Z"
+    },
+    {
+      "id": "d74a55a1-74e9-4c00-8977-c64b543ac134",
+      "content_id": "4829f732-6ca9-437b-b423-23d1fafc46e7",
+      "claim_id": "C67",
+      "claim": "The 15 papers using SC-138763 have been cited greater than 3000 times.",
+      "claim_type": "EXPLICIT",
+      "source": "A Google Scholar-based bibliometric approach revealed that those 15 papers have been cited greater than 3000 times and that first layer citations to those citing papers is greater than 66000 citations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on Google Scholar bibliometric analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:45:36.006275Z"
+    },
+    {
+      "id": "eb0c707e-f2ba-42d1-b067-75ab002a35c2",
+      "content_id": "4829f732-6ca9-437b-b423-23d1fafc46e7",
+      "claim_id": "C68",
+      "claim": "First layer citations to the 15 papers using SC-138763 is greater than 66000 citations.",
+      "claim_type": "EXPLICIT",
+      "source": "A Google Scholar-based bibliometric approach revealed that those 15 papers have been cited greater than 3000 times and that first layer citations to those citing papers is greater than 66000 citations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on Google Scholar bibliometric analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:45:36.006275Z"
+    },
+    {
+      "id": "dec06596-4292-4f95-a224-6f48e46f873e",
+      "content_id": "4829f732-6ca9-437b-b423-23d1fafc46e7",
+      "claim_id": "C69",
+      "claim": "PaxDb is a comprehensive proteomic database that provides protein abundance across multiple organisms and tissues/cell lines.",
+      "claim_type": "EXPLICIT",
+      "source": "We first referenced PaxDb, a comprehensive proteomic database that provides protein abundance across multiple organisms and tissues/cell lines (Wang et al., 2015) (https://pax-db.org/).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Wang et al., 2015",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:45:36.006275Z"
+    },
+    {
+      "id": "4efa282d-c291-46b5-91d4-b3b4f0bc6fb3",
+      "content_id": "4829f732-6ca9-437b-b423-23d1fafc46e7",
+      "claim_id": "C70",
+      "claim": "The antibody validation strategy developed in this manuscript is easy to implement and scalable.",
+      "claim_type": "EXPLICIT",
+      "source": "The pipeline is easy to implement and scalable.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a claim made by the authors about their methodology",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:45:36.006275Z"
+    },
+    {
+      "id": "eddbf189-6bc4-4259-a399-d3d6c0e983c9",
+      "content_id": "4829f732-6ca9-437b-b423-23d1fafc46e7",
+      "claim_id": "C71",
+      "claim": "Application of the antibody validation pipeline to C9ORF72 identified high-quality antibodies revealing C9ORF72 localization to phagosomes/lysosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Application to the major ALS disease gene C9ORF72 identified high-quality antibodies revealing C9ORF72 localization to phagosomes/lysosomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary claim based on the experimental results presented",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:45:36.006275Z"
+    },
+    {
+      "id": "710aab8d-3c3b-4282-a96c-e129eec875cb",
+      "content_id": "4829f732-6ca9-437b-b423-23d1fafc46e7",
+      "claim_id": "C72",
+      "claim": "Antibodies that do not recognize C9ORF72 have been used in highly cited papers, raising concern over previously reported C9ORF72 properties.",
+      "claim_type": "EXPLICIT",
+      "source": "Antibodies that do not recognize C9ORF72 have been used in highly cited papers, raising concern over previously reported C9ORF72 properties.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the validation results and literature analysis",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:45:36.006275Z"
+    },
+    {
+      "id": "38579fdb-a446-4e8e-9025-5b58944489d4",
+      "content_id": "4829f732-6ca9-437b-b423-23d1fafc46e7",
+      "claim_id": "C73",
+      "claim": "GTX634482 is recommended for immunoblot and immunohistochemical applications on antigen unmasked samples.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, we have identified three monoclonal antibodies that effectively and specifically recognize C9ORF72 in multiple applications. The antibody GTX634482 is recommended for immunoblot and immunohistochemical applications on antigen unmasked samples, and GTX632041 is recommended for immunoprecipitation and immunofluorescence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a recommendation based on the validation results",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:45:36.006275Z"
+    },
+    {
+      "id": "35d6661a-fbb1-458b-9c26-057472e0e57c",
+      "content_id": "4829f732-6ca9-437b-b423-23d1fafc46e7",
+      "claim_id": "C74",
+      "claim": "GTX632041 is recommended for immunoprecipitation and immunofluorescence.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, we have identified three monoclonal antibodies that effectively and specifically recognize C9ORF72 in multiple applications. The antibody GTX634482 is recommended for immunoblot and immunohistochemical applications on antigen unmasked samples, and GTX632041 is recommended for immunoprecipitation and immunofluorescence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a recommendation based on the validation results",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:45:36.006275Z"
+    },
+    {
+      "id": "5e1c6a30-85ee-4aec-b0eb-f51d87d99d8b",
+      "content_id": "4829f732-6ca9-437b-b423-23d1fafc46e7",
+      "claim_id": "C75",
+      "claim": "The antibody ab221137 is recommended for immunoblot.",
+      "claim_type": "EXPLICIT",
+      "source": "The antibody ab221137 is recommended for immunoblot.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a recommendation based on the validation results",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:45:36.006275Z"
+    },
+    {
+      "id": "683e75e1-cb4f-4d4c-b5a4-24b310ce99dd",
+      "content_id": "4829f732-6ca9-437b-b423-23d1fafc46e7",
+      "claim_id": "C76",
+      "claim": "The performance and specificity of an antibody depends on the nature of the binding to its protein target, including if the recognition involves linear or conformational epitopes.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, it is important to mention that all antibodies need to be tested under all conditions since the performance and specificity of an antibody depends on the nature of the binding to its protein target, including if the recognition involves linear or conformational epitopes, which must be determined empirically (Forsstr\u00f6m et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Forsstr\u00f6m et al., 2015",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:45:36.006275Z"
+    },
+    {
+      "id": "d204121d-5aa3-40e4-905f-b5166553c11a",
+      "content_id": "4829f732-6ca9-437b-b423-23d1fafc46e7",
+      "claim_id": "C77",
+      "claim": "LRRK2 expression levels are low in the substantia nigra, the most affected area in Parkinson's disease.",
+      "claim_type": "EXPLICIT",
+      "source": "One example that parallels our findings for C9ORF72 is the major Parkinson disease gene LRRK2 that is broadly expressed in non-neuronal cells, and even within the nervous system, LRRK2 expression levels are low in the most affected area, the substantia nigra (Rui et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Rui et al., 2018",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:45:36.006275Z"
+    },
+    {
+      "id": "596eb328-702b-463f-a75f-73752f49abd2",
+      "content_id": "4829f732-6ca9-437b-b423-23d1fafc46e7",
+      "claim_id": "C78",
+      "claim": "LRRK2 is most highly expressed in immune cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact LRRK2 is most highly expressed in immune cells (Dzamko, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Dzamko, 2017",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:45:36.006275Z"
+    },
+    {
+      "id": "e30a8239-f360-4d5c-b1ac-d8423f80b7fd",
+      "content_id": "4829f732-6ca9-437b-b423-23d1fafc46e7",
+      "claim_id": "C79",
+      "claim": "4% PFA followed by Triton X-100 permeabilisation will suffice for the vast majority of targets in immunofluorescence.",
+      "claim_type": "EXPLICIT",
+      "source": "In a multi-variant screen of fixation conditions for immunofluorescence, it was concluded that 4% PFA followed by Triton X-100 permeabilisation will suffice for the vast majority of targets (Stadler et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Stadler et al., 2010",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:45:36.006275Z"
+    },
+    {
+      "id": "6ee54886-88ed-4184-bef0-b31f15564442",
+      "content_id": "4829f732-6ca9-437b-b423-23d1fafc46e7",
+      "claim_id": "C80",
+      "claim": "The antibody validation procedure developed can be applied to any protein target.",
+      "claim_type": "EXPLICIT",
+      "source": "The process we outline can be applied to any protein target and here it led us to the recognition of problems with the C9ORF72 literature and to the discovery of unexpected properties of the protein.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a claim about the generalizability of the method",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:45:36.006275Z"
+    },
+    {
+      "id": "7cad5eb4-7f44-444c-9fe9-d109fbe325c0",
+      "content_id": "4829f732-6ca9-437b-b423-23d1fafc46e7",
+      "claim_id": "C81",
+      "claim": "Individual steps of the antibody validation pipeline can be used in isolation depending on the needs of the user.",
+      "claim_type": "EXPLICIT",
+      "source": "While we applied the pipeline to all known commercial antibodies against C9ORF72, the process is certainly applicable to home-made antibodies and individual steps of the pipeline can be used in isolation depending on the needs of the user.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the flexibility of the method",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:45:36.006275Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "de09b00b-e12e-4443-baf3-33890a2bb44a",
+      "content_id": "4829f732-6ca9-437b-b423-23d1fafc46e7",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors selected HEK-293 cells based on PaxDb expression data (65th percentile for C9ORF72), generated CRISPR/Cas9 knockout cell lines, and identified 16 distinct commercial C9ORF72 antibodies (14 commercial + 2 from MRC) for validation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10-C14 describe the initial cell line selection and antibody procurement strategy. The use of PaxDb for cell line selection is reasonable, CRISPR/Cas9 knockout generation is standard methodology, and the antibody identification process is clearly documented in Supplementary file 1.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:45:36.006275Z"
+    },
+    {
+      "id": "20bba459-24be-480b-90f7-5b208295f711",
+      "content_id": "4829f732-6ca9-437b-b423-23d1fafc46e7",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Immunoblot screening of 16 C9ORF72 antibodies using parental, heterozygous, and knockout HEK-293 cells identified GTX634482 as the most specific antibody, with ab221137 and GTX632041 also showing specificity but with additional non-specific bands upon longer exposure.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C15-C19 are well-supported by Figure 2 and Figure 2\u2014figure supplement 1, showing clear dose-dependent signal reduction in heterozygous cells and complete loss in KO cells for GTX634482. The validation using mouse brain samples (C18) provides orthogonal confirmation. The observation that some antibodies work in mouse but not human samples (C19) is interesting but adequately documented.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:45:36.006275Z"
+    },
+    {
+      "id": "2671bc22-5d98-4c2a-8531-25b3b3084bab",
+      "content_id": "4829f732-6ca9-437b-b423-23d1fafc46e7",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Immunoprecipitation screening revealed that 9 of 16 antibodies can immunoprecipitate endogenous C9ORF72, with GTX632041 showing the most robust enrichment (~70% capture efficiency), while GTX634482 and ab221137 (effective for immunoblot) showed no appreciable immunoprecipitation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C20-C23 are supported by Figure 3A/B and Figure 3\u2014figure supplement 1. The quantitative assessment of capture efficiency using LI-COR fluorescent detection (C23) provides rigorous quantification. The finding that antibodies effective for immunoblot may not work for immunoprecipitation (C22) highlights the importance of application-specific validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:45:36.006275Z"
+    },
+    {
+      "id": "f4f71166-1686-46e5-9708-8a1936e50b2a",
+      "content_id": "4829f732-6ca9-437b-b423-23d1fafc46e7",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Mass spectrometry analysis of GTX632041 immunoprecipitates identified C9ORF72 and known binding partners SMCR8 and WDR41 at near 1:1:1 stoichiometry, suggesting high selectivity. MMS19 was identified as a potential novel binding partner, while clathrin heavy chain was deemed non-specific based on similar peptide counts in KO samples.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24-C27 are supported by Figure 3C/D and Supplementary file 2. The 1:1:1 stoichiometry of the known complex members (C25) provides strong evidence for antibody selectivity. The identification of MMS19 (C26) is appropriately cautious given low peptide counts (5, 1, 2 peptides). The interpretation of clathrin as non-specific (C27) is sound based on similar peptide counts in parental and KO samples, though the authors appropriately note they cannot distinguish between antibody cross-reactivity and other non-specific binding mechanisms.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:45:36.006275Z"
+    },
+    {
+      "id": "f2461d82-a7d8-4a7d-8e18-8401674aed89",
+      "content_id": "4829f732-6ca9-437b-b423-23d1fafc46e7",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Initial immunofluorescence screening in HEK-293 cells failed to identify specific antibodies under multiple fixation conditions. Subsequent screening in U2OS cells (highest C9ORF72 expression among tested lines) identified GTX632041 as the sole antibody showing specific cytosolic/punctate staining that was dramatically reduced in KO cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28-C33 demonstrate a systematic approach to immunofluorescence validation. The failure in HEK-293 cells (C28-C29) followed by success in U2OS cells (C30-C33) highlights the importance of using high-expressing cell lines for immunofluorescence. The mosaic strategy mixing parental and KO cells (Figure 4\u2014figure supplement 3C) is an excellent control to minimize imaging bias. Figure 4A/B clearly shows specific signal with GTX632041.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:45:36.006275Z"
+    },
+    {
+      "id": "11ce50b5-ef57-4ca7-98fd-526a88d22ec6",
+      "content_id": "4829f732-6ca9-437b-b423-23d1fafc46e7",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Immunohistochemistry analysis of mouse brain sections revealed that GTX634482 shows strong specific staining in multiple brain regions (olfactory bulb, basal ganglia, hippocampus, substantia nigra, inferior olive, cerebellar cortex) that is nearly completely ablated in C9ORF72 KO mice. GTX632041 also shows specific staining but less consistently, while ab221137 showed no signal.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C36 are supported by Figure 5A-C. The use of epitope unmasking (110\u00b0C, pH 9.0) is appropriate for IHC. The regional specificity observed with GTX634482 (C34) is well-documented, though some non-specific signal is acknowledged in certain regions. The differential performance of antibodies across applications (C36: ab221137 works for immunoblot but not IHC) reinforces the need for application-specific validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:45:36.006275Z"
+    },
+    {
+      "id": "2455ecf6-906e-4dcd-ae1b-f3ea9fe78664",
+      "content_id": "4829f732-6ca9-437b-b423-23d1fafc46e7",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "C9ORF72 localizes to lysosomes under both basal and starvation conditions, with 82% of LAMP1-positive lysosomes showing C9ORF72 on their periphery. C9ORF72 co-localizes with late endosome/lysosome markers (Rab7a, Rab9) but not early/recycling endosome markers (Rab5a, Rab11a). Biochemical fractionation and lysosomal immunoprecipitation reveal ~15% of C9ORF72 is lysosome-associated while ~85% is cytosolic.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40-C50 provide comprehensive evidence for C9ORF72 lysosomal localization through multiple orthogonal approaches: immunofluorescence (Figure 6A-B), co-localization with Rab GTPases (Figure 6\u2014figure supplement 1), lysosomal immunoprecipitation (Figure 6C), and biochemical fractionation (Figure 6\u2014figure supplement 2C). The quantification is rigorous (82% of lysosomes positive, C43; 3-4 fold enrichment, C46; 75% cytosolic/25% membrane, C49). The finding contradicts a previous study (C39, Amick et al., 2016) that reported diffuse cytoplasmic localization under basal conditions, which the authors attribute to antibody quality issues.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:45:36.006275Z"
+    },
+    {
+      "id": "39c44c68-cc15-43db-a42d-89e34451294a",
+      "content_id": "4829f732-6ca9-437b-b423-23d1fafc46e7",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "C9ORF72 is highly expressed in macrophages (bone marrow-derived and human monocyte-derived) and localizes to phagosomes. Pulse-chase experiments in RAW264.7 cells demonstrate that C9ORF72 accumulates on late phagosomes after F-actin disassembly and before lysosome fusion, remaining present on phagolysosomes. LPS treatment increases C9ORF72 levels ~1.8-fold.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55-C63 reveal novel biology of C9ORF72 in macrophages. The high expression in macrophages (C55-C56, Figure 7) is well-documented. The temporal dynamics of C9ORF72 recruitment to phagosomes (C59-C63, Figure 8D) are clearly demonstrated through pulse-chase experiments with appropriate markers (F-actin for early phagosomes, LAMP1 for phagolysosomes). This finding is particularly significant given the autoimmune phenotype of C9ORF72 KO mice and suggests an important role in phagocytosis/autophagy.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:45:36.006275Z"
+    },
+    {
+      "id": "507b450a-1eb3-461b-8a5d-59fb2ed08f34",
+      "content_id": "4829f732-6ca9-437b-b423-23d1fafc46e7",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The non-specific antibody SC-138763 has been used in 15 published manuscripts that have been cited >3000 times, with first-layer citations exceeding 66,000. This antibody does not recognize C9ORF72 in any human sample or application according to the validation performed in this study.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C64-C68 highlight a critical problem in the C9ORF72 literature. The validation data clearly show SC-138763 does not recognize C9ORF72 (Figure 2), yet it has been widely used. The bibliometric analysis (C67-C68) quantifies the potential impact of this problem. However, the claim about GTX119776 being used in five papers (C64) appears to be stated incorrectly in the text, which actually discusses SC-138763 being used in 15 papers. This is a minor inconsistency in claim extraction but does not affect the core finding.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:45:36.006275Z"
+    },
+    {
+      "id": "d6fe6d47-a6fb-462e-92a2-f332b2f9fdc3",
+      "content_id": "4829f732-6ca9-437b-b423-23d1fafc46e7",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The authors developed an antibody validation pipeline that is easy to implement, scalable, and applicable to any protein target. They recommend GTX634482 for immunoblot and immunohistochemistry, GTX632041 for immunoprecipitation and immunofluorescence, and ab221137 for immunoblot. Individual steps can be used in isolation depending on user needs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C70, C73-C75, C80-C81 describe the methodological contribution and recommendations. The pipeline is well-documented (Figure 1) and the recommendations are based on systematic validation across multiple applications. The claims about ease of implementation and scalability (C70) are reasonable given the use of standard techniques (CRISPR, immunoblot, IP, IF). The generalizability claim (C80) is supported by the logical workflow, though actual demonstration on other targets would strengthen this assertion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:45:36.006275Z"
+    },
+    {
+      "id": "19b6fb21-54f2-420c-b299-d77f1da88001",
+      "content_id": "4829f732-6ca9-437b-b423-23d1fafc46e7",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The manuscript provides background on the antibody reproducibility crisis, citing that over 1 million commercial antibodies exist, up to 90% of landmark preclinical studies suffered from antibody-related flaws, and five validation criteria have been proposed by international working groups.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C4 provide literature context. C1 is based on personal communication, which is not ideal but acceptable for a general market estimate. C2-C4 are supported by appropriate citations. These claims establish the rationale for the study but are not primary findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:45:36.006275Z"
+    },
+    {
+      "id": "467aa945-46da-4b19-bfcf-1af119604a1a",
+      "content_id": "4829f732-6ca9-437b-b423-23d1fafc46e7",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "C9ORF72 hexanucleotide repeat expansion is the most common genetic cause of ALS and FTD, accounting for 11.7-46% of familial cases depending on population. The literature on C9ORF72 localization is conflicting, which the authors hypothesize stems from use of non-specific antibodies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5-C7 are well-supported by citations to the original discovery papers. C8 is supported by a review citation. C9 is the authors' hypothesis that motivates the study and is ultimately supported by their findings (C38, C72). These claims provide important disease context but are not primary findings of this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:45:36.006275Z"
+    },
+    {
+      "id": "b6d0a0c1-fef3-4d2c-b859-d417a2d481e9",
+      "content_id": "4829f732-6ca9-437b-b423-23d1fafc46e7",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Previous studies have localized C9ORF72 to multiple cellular compartments (nucleus, endosomes, Golgi, stress granules, lysosomes) using commercial antibodies that failed validation criteria in this study. One study using HA-tagged endogenous C9ORF72 reported diffuse cytoplasmic localization under basal conditions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-C39 summarize prior literature. C37 is supported by multiple citations. C38 is a key finding showing that previous localization studies used non-validated antibodies. C39 describes the one study that used epitope tagging rather than antibodies, which reported different results than the current study. This discrepancy is discussed but not fully resolved\u2014it could reflect differences between tagged and endogenous protein or differences in cell types/conditions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:45:36.006275Z"
+    },
+    {
+      "id": "382ff207-48dd-44c2-98b1-cdb29200b7ae",
+      "content_id": "4829f732-6ca9-437b-b423-23d1fafc46e7",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "C9ORF72 KO mice do not develop motor neuron disease but instead develop autoimmune phenotypes including splenomegaly and lymphadenopathy, ultimately dying from autoimmunity complications.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C52 are supported by multiple citations to published mouse studies. This provides important context for why the authors examined C9ORF72 expression and function in immune cells, but these are not findings of the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:45:36.006275Z"
+    },
+    {
+      "id": "49e0bd02-9162-4931-8780-2bf1859dcd12",
+      "content_id": "4829f732-6ca9-437b-b423-23d1fafc46e7",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The manuscript cites various technical and biological facts from the literature: PaxDb is a comprehensive proteomic database; antibody performance depends on epitope recognition; LRRK2 (another neurodegenerative disease gene) is highly expressed in immune cells despite low expression in affected brain regions; 4% PFA/Triton X-100 is suitable for most immunofluorescence targets.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C69, C76-C79 provide technical and contextual information supported by appropriate citations. These are not primary findings but rather support the methodological choices and provide comparative context (e.g., LRRK2 expression pattern parallels C9ORF72).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:45:36.006275Z"
+    },
+    {
+      "id": "b5c7985d-755f-4ae4-88d0-5c0d8220d836",
+      "content_id": "4829f732-6ca9-437b-b423-23d1fafc46e7",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Application of the validation pipeline to C9ORF72 identified high-quality antibodies and revealed that non-specific antibodies have been used in highly cited papers, raising concerns about previously reported C9ORF72 properties.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C71-C72 are summary statements of the major findings. They are well-supported by the collective evidence from antibody validation (C15-C36) and literature analysis (C64-C68). These represent the two main contributions of the paper: methodological (validation pipeline) and biological (C9ORF72 localization).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:45:36.006275Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "01192a0a-b8b8-47d3-927f-1147eeb24436",
+      "result_id": "de09b00b-e12e-4443-baf3-33890a2bb44a"
+    },
+    {
+      "claim_id": "c1ff0bcd-895c-4469-a8ba-95b55e8d5b42",
+      "result_id": "de09b00b-e12e-4443-baf3-33890a2bb44a"
+    },
+    {
+      "claim_id": "d602688d-f778-477a-aa57-ad65fdf4831a",
+      "result_id": "de09b00b-e12e-4443-baf3-33890a2bb44a"
+    },
+    {
+      "claim_id": "fef327d6-59e6-4e8d-a2fe-7d91efd4fbe5",
+      "result_id": "de09b00b-e12e-4443-baf3-33890a2bb44a"
+    },
+    {
+      "claim_id": "73445108-1584-494f-8073-2a90fbcf5ddc",
+      "result_id": "de09b00b-e12e-4443-baf3-33890a2bb44a"
+    },
+    {
+      "claim_id": "a40a743b-b7a2-4e25-a5fd-88a50c922d23",
+      "result_id": "20bba459-24be-480b-90f7-5b208295f711"
+    },
+    {
+      "claim_id": "2fc7e491-409d-4014-b1de-164c541c0134",
+      "result_id": "20bba459-24be-480b-90f7-5b208295f711"
+    },
+    {
+      "claim_id": "557e66e7-73f8-47d1-96a3-7c511cbcc2b0",
+      "result_id": "20bba459-24be-480b-90f7-5b208295f711"
+    },
+    {
+      "claim_id": "580fa32b-81ae-4f73-b68a-7a7d4dd09880",
+      "result_id": "20bba459-24be-480b-90f7-5b208295f711"
+    },
+    {
+      "claim_id": "78f2fe8d-a6ff-4aa9-adcb-0f00eb1f0147",
+      "result_id": "20bba459-24be-480b-90f7-5b208295f711"
+    },
+    {
+      "claim_id": "b056a214-269d-4db4-a386-4bb1d87315f3",
+      "result_id": "2671bc22-5d98-4c2a-8531-25b3b3084bab"
+    },
+    {
+      "claim_id": "4a865d2e-e3bc-4567-944c-839060b853e0",
+      "result_id": "2671bc22-5d98-4c2a-8531-25b3b3084bab"
+    },
+    {
+      "claim_id": "a4e0983a-6e4c-4e02-8cc9-c17e33b6228a",
+      "result_id": "2671bc22-5d98-4c2a-8531-25b3b3084bab"
+    },
+    {
+      "claim_id": "c4115069-8c78-4a20-94d1-3d62968c5320",
+      "result_id": "2671bc22-5d98-4c2a-8531-25b3b3084bab"
+    },
+    {
+      "claim_id": "857ea077-69c5-4912-86be-9f2f19ea6e78",
+      "result_id": "f4f71166-1686-46e5-9708-8a1936e50b2a"
+    },
+    {
+      "claim_id": "967cf115-05ce-4341-92fd-7281ecb5f6c5",
+      "result_id": "f4f71166-1686-46e5-9708-8a1936e50b2a"
+    },
+    {
+      "claim_id": "c8aff5c2-596b-49b7-802b-dea02c397a5c",
+      "result_id": "f4f71166-1686-46e5-9708-8a1936e50b2a"
+    },
+    {
+      "claim_id": "bd4b936e-e002-46e8-8201-fb6e949ca193",
+      "result_id": "f4f71166-1686-46e5-9708-8a1936e50b2a"
+    },
+    {
+      "claim_id": "5ba138cb-d1ec-40eb-a763-983ca2923c1c",
+      "result_id": "f2461d82-a7d8-4a7d-8e18-8401674aed89"
+    },
+    {
+      "claim_id": "112fb15b-21b4-4598-ba57-4fec4849d64d",
+      "result_id": "f2461d82-a7d8-4a7d-8e18-8401674aed89"
+    },
+    {
+      "claim_id": "699f9ee1-d6b3-4482-969a-aea511712926",
+      "result_id": "f2461d82-a7d8-4a7d-8e18-8401674aed89"
+    },
+    {
+      "claim_id": "f2861373-ecca-4e66-9794-06b12845cd5f",
+      "result_id": "f2461d82-a7d8-4a7d-8e18-8401674aed89"
+    },
+    {
+      "claim_id": "681feb7e-ddbb-4ee7-8110-662786a0fea6",
+      "result_id": "f2461d82-a7d8-4a7d-8e18-8401674aed89"
+    },
+    {
+      "claim_id": "2e469c97-0905-433c-b114-d5317d6659f1",
+      "result_id": "f2461d82-a7d8-4a7d-8e18-8401674aed89"
+    },
+    {
+      "claim_id": "de6f55a1-912d-4fde-861d-7c0de3a77e04",
+      "result_id": "11ce50b5-ef57-4ca7-98fd-526a88d22ec6"
+    },
+    {
+      "claim_id": "908f2d87-2850-49d4-8255-4b8aa00664b0",
+      "result_id": "11ce50b5-ef57-4ca7-98fd-526a88d22ec6"
+    },
+    {
+      "claim_id": "ace3e370-85e1-4a59-8b49-61081376113f",
+      "result_id": "11ce50b5-ef57-4ca7-98fd-526a88d22ec6"
+    },
+    {
+      "claim_id": "c6a3126b-85ca-4f9d-a257-240f7e57ce96",
+      "result_id": "2455ecf6-906e-4dcd-ae1b-f3ea9fe78664"
+    },
+    {
+      "claim_id": "c9d134e7-7483-4112-a6da-4ad6880871d2",
+      "result_id": "2455ecf6-906e-4dcd-ae1b-f3ea9fe78664"
+    },
+    {
+      "claim_id": "706bcb18-3933-4743-9eb4-19085d521555",
+      "result_id": "2455ecf6-906e-4dcd-ae1b-f3ea9fe78664"
+    },
+    {
+      "claim_id": "81d54e91-3178-4380-b62f-8a0ee4eabf7d",
+      "result_id": "2455ecf6-906e-4dcd-ae1b-f3ea9fe78664"
+    },
+    {
+      "claim_id": "77edec7f-fb0d-453b-8e14-48bce410cd0a",
+      "result_id": "2455ecf6-906e-4dcd-ae1b-f3ea9fe78664"
+    },
+    {
+      "claim_id": "d7755301-54b8-4f98-8ee0-3be65cd75bb0",
+      "result_id": "2455ecf6-906e-4dcd-ae1b-f3ea9fe78664"
+    },
+    {
+      "claim_id": "8a375ca1-1fb5-4382-b55c-4b8b95fdcb35",
+      "result_id": "2455ecf6-906e-4dcd-ae1b-f3ea9fe78664"
+    },
+    {
+      "claim_id": "ac6c6670-3171-4459-b042-b4edd71e7363",
+      "result_id": "2455ecf6-906e-4dcd-ae1b-f3ea9fe78664"
+    },
+    {
+      "claim_id": "91882146-435e-47db-8f89-2981da04303a",
+      "result_id": "2455ecf6-906e-4dcd-ae1b-f3ea9fe78664"
+    },
+    {
+      "claim_id": "c4bbdcdb-24ac-487b-88aa-07790d800b61",
+      "result_id": "2455ecf6-906e-4dcd-ae1b-f3ea9fe78664"
+    },
+    {
+      "claim_id": "c42c0476-d690-4861-9ef8-d778b3e54869",
+      "result_id": "2455ecf6-906e-4dcd-ae1b-f3ea9fe78664"
+    },
+    {
+      "claim_id": "aec68a16-80b7-48ef-94b7-b991f436e18a",
+      "result_id": "39c44c68-cc15-43db-a42d-89e34451294a"
+    },
+    {
+      "claim_id": "cddcb849-5423-40a4-9e6b-549172c122b7",
+      "result_id": "39c44c68-cc15-43db-a42d-89e34451294a"
+    },
+    {
+      "claim_id": "641a1d05-0586-45d5-8923-6395954da671",
+      "result_id": "39c44c68-cc15-43db-a42d-89e34451294a"
+    },
+    {
+      "claim_id": "6acd76d7-7004-40f6-bb1c-0bf37770d494",
+      "result_id": "39c44c68-cc15-43db-a42d-89e34451294a"
+    },
+    {
+      "claim_id": "1b2bd54b-c16b-483d-a028-0f133eccf10d",
+      "result_id": "39c44c68-cc15-43db-a42d-89e34451294a"
+    },
+    {
+      "claim_id": "2aec2633-dae0-4e8b-a132-c10e2b9ff8d8",
+      "result_id": "39c44c68-cc15-43db-a42d-89e34451294a"
+    },
+    {
+      "claim_id": "988fd012-705f-461f-bb8f-bab73159f46f",
+      "result_id": "39c44c68-cc15-43db-a42d-89e34451294a"
+    },
+    {
+      "claim_id": "b7378180-92a1-4f73-a7e8-669f35f964bd",
+      "result_id": "39c44c68-cc15-43db-a42d-89e34451294a"
+    },
+    {
+      "claim_id": "dcde30aa-40d9-47fe-987f-12745ec31582",
+      "result_id": "39c44c68-cc15-43db-a42d-89e34451294a"
+    },
+    {
+      "claim_id": "2452c5fd-8e6b-44d7-8b8e-71982c31f33b",
+      "result_id": "507b450a-1eb3-461b-8a5d-59fb2ed08f34"
+    },
+    {
+      "claim_id": "f601ffb5-7cd9-43b1-9f4c-50f2884f5e6f",
+      "result_id": "507b450a-1eb3-461b-8a5d-59fb2ed08f34"
+    },
+    {
+      "claim_id": "dae46c2b-82d9-4264-8dc1-bffb8d5339ea",
+      "result_id": "507b450a-1eb3-461b-8a5d-59fb2ed08f34"
+    },
+    {
+      "claim_id": "d74a55a1-74e9-4c00-8977-c64b543ac134",
+      "result_id": "507b450a-1eb3-461b-8a5d-59fb2ed08f34"
+    },
+    {
+      "claim_id": "eb0c707e-f2ba-42d1-b067-75ab002a35c2",
+      "result_id": "507b450a-1eb3-461b-8a5d-59fb2ed08f34"
+    },
+    {
+      "claim_id": "4efa282d-c291-46b5-91d4-b3b4f0bc6fb3",
+      "result_id": "d6fe6d47-a6fb-462e-92a2-f332b2f9fdc3"
+    },
+    {
+      "claim_id": "38579fdb-a446-4e8e-9025-5b58944489d4",
+      "result_id": "d6fe6d47-a6fb-462e-92a2-f332b2f9fdc3"
+    },
+    {
+      "claim_id": "35d6661a-fbb1-458b-9c26-057472e0e57c",
+      "result_id": "d6fe6d47-a6fb-462e-92a2-f332b2f9fdc3"
+    },
+    {
+      "claim_id": "5e1c6a30-85ee-4aec-b0eb-f51d87d99d8b",
+      "result_id": "d6fe6d47-a6fb-462e-92a2-f332b2f9fdc3"
+    },
+    {
+      "claim_id": "6ee54886-88ed-4184-bef0-b31f15564442",
+      "result_id": "d6fe6d47-a6fb-462e-92a2-f332b2f9fdc3"
+    },
+    {
+      "claim_id": "7cad5eb4-7f44-444c-9fe9-d109fbe325c0",
+      "result_id": "d6fe6d47-a6fb-462e-92a2-f332b2f9fdc3"
+    },
+    {
+      "claim_id": "74cbe8a3-4c75-4ca0-8f34-9f4beb0a5b4b",
+      "result_id": "19b6fb21-54f2-420c-b299-d77f1da88001"
+    },
+    {
+      "claim_id": "b68060a5-51cc-4a75-b685-534ab01319a9",
+      "result_id": "19b6fb21-54f2-420c-b299-d77f1da88001"
+    },
+    {
+      "claim_id": "96a468e6-07ff-45e2-9435-f3dbd98b8986",
+      "result_id": "19b6fb21-54f2-420c-b299-d77f1da88001"
+    },
+    {
+      "claim_id": "ee352d82-4334-4d15-b003-5d5f45e2e027",
+      "result_id": "19b6fb21-54f2-420c-b299-d77f1da88001"
+    },
+    {
+      "claim_id": "0644ea68-b0ce-470d-a18d-8dfdea30b8a9",
+      "result_id": "467aa945-46da-4b19-bfcf-1af119604a1a"
+    },
+    {
+      "claim_id": "7000d292-69f9-4db2-a85c-3abe7374e511",
+      "result_id": "467aa945-46da-4b19-bfcf-1af119604a1a"
+    },
+    {
+      "claim_id": "34814801-1a53-426d-bef1-d007469915d5",
+      "result_id": "467aa945-46da-4b19-bfcf-1af119604a1a"
+    },
+    {
+      "claim_id": "d9b2921b-6944-4a72-92d2-51cd77667c41",
+      "result_id": "467aa945-46da-4b19-bfcf-1af119604a1a"
+    },
+    {
+      "claim_id": "8ad1c267-be10-4f6e-9c70-79490ff5147b",
+      "result_id": "467aa945-46da-4b19-bfcf-1af119604a1a"
+    },
+    {
+      "claim_id": "68f4eca6-6095-4ec3-967b-9dbea7e0b0cd",
+      "result_id": "b6d0a0c1-fef3-4d2c-b859-d417a2d481e9"
+    },
+    {
+      "claim_id": "f4ff7b9f-ddf7-485e-941a-eb7092903299",
+      "result_id": "b6d0a0c1-fef3-4d2c-b859-d417a2d481e9"
+    },
+    {
+      "claim_id": "b8fcb990-97b5-48f7-b8d6-910483416f4f",
+      "result_id": "b6d0a0c1-fef3-4d2c-b859-d417a2d481e9"
+    },
+    {
+      "claim_id": "b64710d2-c958-4f46-ae49-e27bab69bcd1",
+      "result_id": "382ff207-48dd-44c2-98b1-cdb29200b7ae"
+    },
+    {
+      "claim_id": "dee927e5-7aa7-4a6e-802a-d6d42347780f",
+      "result_id": "382ff207-48dd-44c2-98b1-cdb29200b7ae"
+    },
+    {
+      "claim_id": "dec06596-4292-4f95-a224-6f48e46f873e",
+      "result_id": "49e0bd02-9162-4931-8780-2bf1859dcd12"
+    },
+    {
+      "claim_id": "683e75e1-cb4f-4d4c-b5a4-24b310ce99dd",
+      "result_id": "49e0bd02-9162-4931-8780-2bf1859dcd12"
+    },
+    {
+      "claim_id": "d204121d-5aa3-40e4-905f-b5166553c11a",
+      "result_id": "49e0bd02-9162-4931-8780-2bf1859dcd12"
+    },
+    {
+      "claim_id": "596eb328-702b-463f-a75f-73752f49abd2",
+      "result_id": "49e0bd02-9162-4931-8780-2bf1859dcd12"
+    },
+    {
+      "claim_id": "e30a8239-f360-4d5c-b1ac-d8423f80b7fd",
+      "result_id": "49e0bd02-9162-4931-8780-2bf1859dcd12"
+    },
+    {
+      "claim_id": "eddbf189-6bc4-4259-a399-d3d6c0e983c9",
+      "result_id": "b5c7985d-755f-4ae4-88d0-5c0d8220d836"
+    },
+    {
+      "claim_id": "710aab8d-3c3b-4282-a96c-e129eec875cb",
+      "result_id": "b5c7985d-755f-4ae4-88d0-5c0d8220d836"
+    }
+  ],
+  "comparisons": []
+}

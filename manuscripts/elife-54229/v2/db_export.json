@@ -1,0 +1,2101 @@
+{
+  "submission": {
+    "id": "32449d1d-7bc1-405a-81c6-862ca5d5562a",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T16:36:14.166523Z",
+    "updated_at": "2025-12-02T16:36:14.166523Z"
+  },
+  "content": [
+    {
+      "id": "a04f9962-0655-4084-921e-5f34d798a70c",
+      "submission_id": "32449d1d-7bc1-405a-81c6-862ca5d5562a",
+      "content_type": "manuscript",
+      "content_text": "# A neuropeptide regulates fighting behavior in Drosophila melanogaster\n\n## Authors\n\n- Fengming Wu<sup>1</sup>\n- Bowen Deng<sup>3</sup>\n- Na Xiao<sup>5</sup> ([ORCID: 0000-0002-7732-9117](https://orcid.org/0000-0002-7732-9117))\n- Tao Wang<sup>1</sup>\n- Yining Li<sup>3</sup>\n- Rencong Wang<sup>1</sup>\n- Kai Shi<sup>1</sup>\n- Dong-Gen Luo<sup>4</sup>\n- Yi Rao<sup>3</sup> ([ORCID: 0000-0002-0405-5426](https://orcid.org/0000-0002-0405-5426))\n- Chuan Zhou<sup>1</sup> ([ORCID: 0000-0001-7952-7048](https://orcid.org/0000-0001-7952-7048)) \u2020\n\n### Affiliations\n\n1. State Key Laboratory of Integrated Management of Pest Insects and Rodents, Institute of Zoology, Chinese Academy of Sciences Beijing China\n2. University of Chinese Academy of Sciences Beijing China\n3. Chinese Institute for Brain Research, Peking-Tsinghua Center for Life Sciences, Zhongguangchun Life Sciences Park Beijing China\n4. Institute of Molecular Physiology Shenzhen Bay Laboratory Shenzhen China\n5. State Key Laboratory of Membrane Biology, College of Life Sciences, IDG/McGovern Institute for Brain Research, Peking-Tsinghua Center for Life Sciences, Academy for Advanced Interdisciplinary Studies, Center for Quantitative Biology, Academy for Advanced Interdisciplinary Studies, Peking University Beijing China\n6. School of Life Sciences, University of Science and Technology of China Hefei China\n7. Peking-Tsinghua Center for Life Sciences, PKU-IDG/McGovern Institute for Brain Research, Advanced Innovation Center for Genomics, Peking University School of Life Sciences Beijing China\n\n\u2020 Corresponding author\n\n## Abstract\n\nAggressive behavior is regulated by various neuromodulators such as neuropeptides and biogenic amines. Here we found that the neuropeptide Drosulfakinin (Dsk) modulates aggression in Drosophila melanogaster. Knock-out of Dsk or Dsk receptor CCKLR-17D1 reduced aggression. Activation and inactivation of Dsk-expressing neurons increased and decreased male aggressive behavior, respectively. Moreover, data from transsynaptic tracing, electrophysiology and behavioral epistasis reveal that Dsk-expressing neurons function downstream of a subset of P1 neurons (P1a-splitGAL4) to control fighting behavior. In addition, winners show increased calcium activity in Dsk-expressing neurons. Conditional overexpression of Dsk promotes social dominance, suggesting a positive correlation between Dsk signaling and winning effects. The mammalian ortholog CCK has been implicated in mammal aggression, thus our work suggests a conserved neuromodulatory system for the modulation of aggressive behavior.\n\n## Introduction\n\nAggression is a common innate behavior in most vertebrate and invertebrate species and a major driving force for natural and sexual selections (Darwin, 1859; Lorenz, 1963). It is a critical behavior for defense against conspecifics to obtain food resources and mating partners (Beye et al., 1998; Kravitz and Huber, 2003; Siegel et al., 1997).\n\nAggressive behavior of fruit flies was first reported by Alfred Sturtevant (Sturtevant, 1915). Since then, a number of ethological and behavioral studies in flies pave the way for using Drosophila as a genetic system to study aggression (Chen et al., 2002; Hoffmann, 1987; Hoffmann and Cacoyianni, 1989;\u00a0Hoffmann and Cacoyianni, 1990. Drosophila provides an excellent system to manipulate genes and genetically defined populations of neurons, leading to the identification of multiple genes and neural circuits that control aggression. The neural circuits of aggression involve the peripheral sensory systems that detect male-specific pheromones and auditory cues necessary for aggression (Liu et al., 2011; Versteven et al., 2017; Wang and Anderson, 2010; Wang et al., 2011), a subset of P1 neurons (Hoopfer et al., 2015), pCd (Jung et al., 2020) in the central brain controlling aggressive arousal, and AIP neurons controlling threat displays (Duistermars et al., 2018). Aggression is modulated by various monoamines and neuropeptides. Octopamine, serotonin and dopamine are important neuromodulators for fly aggression and the specific aminergic neurons that control aggression have been identified (Alekseyenko et al., 2014; Alekseyenko et al., 2013; Certel et al., 2007; Hoyer et al., 2008; Watanabe et al., 2017; Zhou et al., 2008). Neuropeptides such as tachykinin and neuropeptide F are required for normal male aggression (Asahina et al., 2014; Dierick and Greenspan, 2007). Cholecystokinin (CCK) is a neuropeptide that is linked to a number of psychiatric disorders and involved in various emotional behaviors in humans and other mammals (Arey et al., 2014; Sears et al., 2013; Shen et al., 2019; T\u00f5ru et al., 2010). Infusion of CCK induces panic attack in humans (Bradwejn et al., 1990). Enhanced CCK level is detected in a rat model of social defeat (Becker et al., 2001; Becker et al., 2008). CCK is implicated to act in the periaqueductal gray to potentiate defensive rage behavior in cats (Luo et al., 1998). In addition, CCK is a satiety signal in a number of species. Silencing CCK-like peptide Drosulfakinin could decrease satiety signaling and increase intake of food in flies. (N\u00e4ssel and Williams, 2014; Williams et al., 2014). Co-injection of nesfatin-1 and CCK8 decreased food intake in Siberian sturgeon (Acipenser baerii) (Zhang et al., 2018).\n\nHere we investigate the roles of cholecysokinin-like peptide Drosulfakinin (Dsk) in Drosophila aggression. We generated knock-outs and GAL4 knock-ins for Dsk and candidate Dsk receptors. Loss-of-function in either Dsk or Dsk receptor CCKLR-17D1 reduces aggression. Thermogenetic activation of DskGAL4 neurons promotes aggression, while silencing these neurons suppresses aggression. We performed transsynaptic tracing, electrophysiology and behavioral epistasis experiments to illustrate that Dsk-expressing neurons are functionally connected with a subset of P1 neurons (P1a-splitGAL4, 8\u00a0~\u00a010 pairs of P1 Neurons) and act downstream of a subset of P1 neurons to control fighting behavior. Furthermore, we found that winners show increased calcium activity in Dsk-expressing neurons and that conditional overexpression of Dsk promotes winning effects, implicating an important role of the Dsk system in the establishment of social hierarchy during fly fighting. Previously the mamalian ortholog CCK has been implicated in aggression (Li et al., 2007; Luo et al., 1998), thus our work suggests a potentially conserved neural pathway for the modulation of aggressive behavior.\n\n## Results\n\n### Reduced aggression in Loss-of-function Dsk mutants\n\nWe used genome editing by the CRISPR-Cas9 system to target the Dsk locus and generate knock-out and knock-in lines (Deng et al., 2019). The 5\u2019 UTR and coding region of Dsk were replaced by a 3P3-RFP cassette through homologous recombination to obtain the knock-out line, which we refer to as \u0394Dsk (Figure 1A, Figure 1\u2014figure supplement 1). Immunohistochemical analysis confirmed that Dsk immunoreactivity is detected in the brains of wildtype and \u0394Dsk/+ but not detected at all in the brain of \u0394Dsk/\u0394Dsk (Figure 1B). Interestingly, homozygous \u0394Dsk male mutants showed reduced frequency of lunge (Figure 1H) and wing threat (Figure 1\u2014figure supplement 2) and prolonged latency to initiate fighting (Figure 1I), while conditional overexpression of Dsk promoted aggressive behavior (Figure 1\u2014figure supplement 3). Furthermore, female aggression is also suppressed in homozygous \u0394Dsk mutants (Figure 1\u2014figure supplement 4, Video 1), suggesting that Dsk is required for aggressive behavior in both sexes. Note that the \u0394Dsk mutants do not show defects in courtship behavior or locomotion activity, but show increased food intake (Figure 1\u2014figure supplement 5).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/54229/elife-54229-fig1-v2.jpg)\n\n**Figure 1.:** (A) Generation of \u0394Dsk (A1) and \u0394DskGAL4 (A2). Dashed boxes indicate the region replaced by 3P3-RFP (A1) or GAL4 (A2) cassette. (B) Male adult brains of the indicated genotypes were stained with anti-DSK antibody (green) and counter-stained with nc82 antibody (magenta) to label neuropil. Arrowheads: Dsk-expressing neurons. (C\u2013G) \u0394DskGAL4 driven UAS-mCD8:GFP expression in +/\u0394DskGAL4 (C), \u0394Dsk/\u0394DskGAL4 (D), \u0394DskGAL4/\u0394DskGAL4 (E), \u0394DskGAL4/\u0394DskGAL4 rescued by UAS-Dsk (F), \u0394Dsk/\u0394DskGAL4 rescued by UAS-Dsk (G). Male brains were stained with anti-DSK antibody (magenta; C1\u2013G1) and anti-GFP antibody (green; C2\u2013G2). the anti-DSK antibody signal was undetected in Dsk mutant background (D1 and E1), but recovered when the Dsk mutant was rescued by \u0394DskGAL4 driven UAS-Dsk expression (F1 and G1). C4-G4: regions in the red dashed boxes of C3-G3. Scale bars represent 50 \u03bcm. (H\u2013I) Dsk mutants show reduced number of lunges (H) and prolonged fighting latency (I) compared with wildtype and heterozygous controls. (J\u2013K) Number of lunges per minute after initiation (J) and fighting latency (K) for indicated genotype. Reduced aggression phenotypes of Dsk mutants were rescued by \u0394DskGAL4 driven UAS-Dsk expression. *p<0.05, **p<0.01, ***p<0.001, n.s. indicates no significant difference (Kruskal-Wallis and post-hoc Mann-Whitney U tests).\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/54229/elife-54229-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Quantification of Dsk mRNA by qRT-PCR in the homozygotes, heterozygotes, and wildtypes. The Dsk transcripts were not detectable in \u0394Dsk /\u0394Dsk and \u0394DskGAL4/\u0394DskGAL4 mutants. Triplicate assays per cDNA sample were carried out independently, the results were obtained from three independent RNA samples. **p<0.01, ***p<0.001 (one-way ANOVA and post-hoc Student\u2019s T-test). Error bars indicate SEM.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/54229/elife-54229-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A) \u0394Dsk mutants show reduced number of wing threats compared to wildtype and heterozygous controls. ***p<0.001 (Kruskal-Wallis and post-hoc Mann-Whitney U tests).\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/54229/elife-54229-fig1-figsupp3-v2.jpg)\n\n**Figure 1\u2014figure supplement 3.:** (A\u2013B) RU486 induced overexpression of Dsk increased number of lunges per minute after initiation (A) and shortened fighting latency (B) in males. **p<0.01, ***p<0.001, n.s. indicates no significant difference (Kruskal-Wallis and post-hoc Mann-Whitney U tests).\n\n![Figure 1\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/54229/elife-54229-fig1-figsupp4-v2.jpg)\n\n**Figure 1\u2014figure supplement 4.:** (A) Head butts frequency of female-female aggression. Homozygotes of \u0394Dsk showed a significant decrease in head butts compared to heterozygotes or wildtypes. (B) Fighting latency of female-female aggression. Fighting latencies were significantly longer in Dsk mutants than in heterozygotes or wildtypes. (C\u2013D) Kir2.1 inactivation of DskGAL4 neurons in females decreased head butts frequency (C) and prolonged fighting latency (D). *p<0.05, ***p<0.001 (Kruskal-Wallis and post-hoc Mann-Whitney U tests).\n\n![Figure 1\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/54229/elife-54229-fig1-figsupp5-v2.jpg)\n\n**Figure 1\u2014figure supplement 5.:** (A) Courtship indices for male-male courtship. (B) Courtship indices for male-female courtship. (C) The locomotive speed of \u0394Dsk mutants. (D)\u00a0The feeding behavior of \u0394Dsk mutants. \u0394Dsk mutants show increased food consumption compared to wildtype and heterozygous controls in the CAFE essay. *p<0.05, **p<0.01, n.s. indicates no significant difference (Kruskal-Wallis and post-hoc Mann-Whitney U tests).\n\n![Figure 1\u2014figure supplement 6.](https://cdn.elifesciences.org/articles/54229/elife-54229-fig1-figsupp6-v2.jpg)\n\n**Figure 1\u2014figure supplement 6.:** The aggression chamber consists of four acrylic plates. The bottom plate (Plate 4) contains 12 wells for food patches (diameter: 8 mm; depth: 3 mm). The lower (Plate 3) and upper plates (Plate 2) have 12 cylindrical arenas (diameter: 15 mm; height of each plates: 3 mm). A transparent film is sandwiched by Plate two and Plate three to separate the two flies and removal of the transparent film allows encounters of the two flies.\n\n![Video 1.](https://cdn.elifesciences.org/articles/54229/elife-54229-video1.mp4.jpg)\n\n**Video 1.:** Right, female aggression of wildtypes. Female \u0394Dsk mutants show fewer aggressive encounters than wildtypes.\n\nWe next performed genetic rescue experiments to examine whether expression of Dsk in DSK neurons is sufficient to restore the aggressiveness in Dsk mutants. To this end, we replaced the coding region of Dsk with a GAL4 cassette to generate the \u0394DskGAL4 knock-in line, in which GAL4 transcripts instead of Dsk transcripts are produced from Dsk promoter (Figure 1A). \u0394DskGAL4 identifies precisely the DSK neurons in the male brain (Figure 1C). \u0394DskGAL4 is a null mutation for Dsk, as Dsk immunoreactivity is absent in both \u0394DskGAL4/\u0394Dsk hetero-allelic (Figure 1D) and \u0394DskGAL4/\u0394DskGAL4 homozygotes (Figure 1E). \u0394DskGAL4 driven UAS-Dsk expression was capable of restoring the Dsk immunoreactivity in both \u0394DskGAL4/\u0394DskGAL4 homozygous mutant background (Figure 1F) and \u0394DskGAL4/\u0394Dsk hetero-allelic mutant background (Figure 1G). Next we used these genetic reagents to perform behavioral analysis. As expected, Dsk expression in \u0394DskGAL4 neurons restores the aggression levels of \u0394DskGAL4/\u0394DskGAL4 and \u0394DskGAL4/\u0394Dsk mutants to comparable levels observed in heterozygous controls (Figure 1J and K).\n\n### Anatomical and behavioral dissection of DskGAL4 Neurons\n\nTo precisely mark DSK neurons without affecting Dsk expression, a knock-in DskGAL4 was generated by fusing the GAL4 cassette to the end of the Dsk open reading frame with a T2A peptide linker (Donnelly et al., 2001; Figure 2A). Eight neurons, with four neurons in the lateral region (DSK-L) and four neurons in the middle region (DSK-M) were labeled by DskGAL4 driving the expression of UAS-mCD8:GFP in the brain, which fully recapitulated the endogenous expression pattern of Dsk in both female and male brains by co-staining experiments (Figure 2B and C).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/54229/elife-54229-fig2-v2.jpg)\n\n**Figure 2.:** (A) Generation of DskGAL4 Knock-in line. GAL4 was fused to the end of open reading frame (ORF) of Dsk with a T2A peptide linker. (B\u2013C) Anatomical features of DSK neurons revealed by DskGAL4 driven UAS-mCD8:GFP expression. Adult female brains stained with anti-DSK antibody (magenta; B1) and anti-GFP antibody (green; B2); adult male brains stained with anti-DSK antibody (magenta; C1) and anti-GFP antibody (green; C2). Scale bars represent 50 \u03bcm. (D\u2013G) Characterization of individual DskGAL4 neurons using MultiColor FlpOut (MCFO) method in males. Eight DSK-expressing neurons were classified into three neuronal cell types (D\u2013G). Scale bars represent 50 \u03bcm. (H\u2013I) TNTE inactivation of DskGAL4 neurons in males reduced lunge frequency (H) and prolonged fighting latency (I). (J\u2013K) Kir2.1 inactivation of DskGAL4 neurons in males decreased lunge frequency (J) and prolonged fighting latency (K). (L\u2013M) Number of lunges per minute after initiation (L) and fighting latency (M) for males during thermogenetic activation of DskGAL4 neurons. *p<0.05, **p<0.01, ***p<0.001, n.s. indicates no significant difference (Kruskal-Wallis and post-hoc Mann-Whitney U tests).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/54229/elife-54229-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A\u2013D) Characterization of individual DskGAL4 neurons using MultiColor FlpOut (MCFO) method in females (A). Eight DSK-expressing neurons were classified into three neuronal cell types (B\u2013D). Scale bars represent 50 \u03bcm.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/54229/elife-54229-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A) The locomotive speed of TNT experiment. (B) The locomotive speed of trpA1 experiment. Inactivation or activation of DskGAL4 neurons could not affect locomotion behavior. ns. indicates no significant difference (Kruskal-Wallis and post-hoc Mann-Whitney U tests).\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/54229/elife-54229-fig2-figsupp3-v2.jpg)\n\n**Figure 2\u2014figure supplement 3.:** (A) A negative correlation between the number of type I plus type II neurons inhibited and the lunge numbers of individual flies. (B) A negative correlation between the number of type I neurons inhibited and the lunge numbers of individual flies. (C) A negative correlation between the number of type II neurons inhibited and the lunge numbers of individual flies. (D) Lunge frequency in males with type III neurons silenced was not significantly different from that in males without type III neurons silenced. The flies of hs-FLP; UAS > stop > Kir2.1eGFP/DskGAL4 were heat-shocked for 90 min at 37\u00b0C during the mid- to late-larval stage. *p<0.05, **p<0.01, ***p<0.001, n.s. indicates no significant difference (Kruskal-Wallis and post-hoc Mann-Whitney U tests).\n\n![Figure 2\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/54229/elife-54229-fig2-figsupp4-v2.jpg)\n\n**Figure 2\u2014figure supplement 4.:** The aggression chamber consists of four acrylic plates. The bottom plate (Plate 4) contains 12 wells for food patches (diameter: 8 mm; depth: 3 mm). The lower (Plate 3) and upper plates (Plate 2) have 12 cylindrical arenas (diameter: 15 mm; height of each plates: 3 mm). A transparent film is sandwiched by Plate two and Plate three to separate the two flies and removal of the transparent film allows encounters of the two flies.\n\nWe further analyzed the projection patterns of individual DskGAL4 neurons using the MultiColor Flip-Out (MCFO) method (Figure 2D; Nern et al., 2015). Morphologically, these DskGAL4 neurons could be classified into three neuronal types. The type I neurons project to the lobula and ventrolateral neuropils, and extend descending fibers to innervate the Accessory Mesothoracic Neuropil (AMNp) in the VNC (Figure 2E, Figure 2\u2014figure supplement 1). The type II neurons arborize in the ventrolateral neuropils and superior lateral protocerebrum (Figure 2F, Figure 2\u2014figure supplement 1). The arborizations of type III neurons project ipsilaterally to the superior lateral protocerebrum (Figure 2G, Figure 2\u2014figure supplement 1).\n\nTo assess the function of DskGAL4 neurons in aggression, we silenced DskGAL4 neurons by expressing tetanus toxin light chain (TNT) which can completely block chemical synapses (Keller et al., 2002; Sweeney et al., 1995; Watkins et al., 1996), or an inwardly rectifying K+ channel (Kir2.1) which can hyperpolarize neurons (Thum et al., 2006). Compared to control males, male flies with DskGAL4 neurons inhibited by either TNT or Kir2.1 showed reduced lunge frequency and prolonged fighting latency (Figure 2H\u2013K). Conversely, we activated the DskGAL4 neurons by using the temperature sensitive cation channel Drosophila TRPA1 (dTRPA1) (Hamada et al., 2008). Males carrying DskGAL4 and UAS-dTRPA1 displayed higher aggression level at 28\u00b0C than at 21\u00b0C, and the temperature-dependent changes of aggression levels were not observed in males carrying DskGAL4 or UAS-dTRPA1 alone (Figure 2L\u2013M; Video 2). In addition, no significant changes of locomotion activity were observed after the inactivation or activation of DskGAL4 neurons (Figure 2\u2014figure supplement 2). Thus, these results support a role of Dsk-expressing neurons in modulating intermale aggression.\n\n![Video 2.](https://cdn.elifesciences.org/articles/54229/elife-54229-video2.mp4.jpg)\n\nTo characterize the subset of Dsk-expressing neurons involved in aggression, we generated 93 mosaic flies in which subset of DskGAL4 neurons were inactivated by the expression of Kir2.1::eGFP and paired each mosaic fly with a \u0394Dsk mutant fly to quantify the lunge frequency. We then determined which DskGAL4 neurons are labeled in all 93 mosaic flies (Supplementary file 2). We found there is a negative correlation between the number of type I plus type II neurons inhibited and the lunge numbers of individual flies (Figure 2\u2014figure supplement 3A).The analyzing of type I or type II neurons separately also showed very similar results (Figure 2\u2014figure supplement 3B\u2013C). And these results should not be attributing to the inactivation of type III neurons, since no significant changes of lunge frequency have been observed after analyzing type III neurons. (Figure 2\u2014figure supplement 3D). In addition, our electrophysiology experiments have shown that the activation of R71G01-LexA labeled P1 neurons (Pan et al., 2012) could strongly activates type I and type II neurons but only elicited weak responses from type III neurons. Those results demonstrated the necessity type I and type II neuron in aggression. But we still do not have enough evidences to show whether type III neurons are also involved in aggression.\n\n### The Dsk receptor CCKLR-17D1 regulates aggression\n\nTwo putative Dsk receptors have been identified in Drosophila: CCKLR-17D1 and CCKLR-17D3 (Kubiak et al., 2002; N\u00e4ssel and Williams, 2014; Nichols et al., 1988). Loss-of-function mutants for CCKLR-17D1 and CCKLR-17D3 were generated by replacing the last two exons with 3P3-RFP cassette via homologous recombination (Figure 3A). Knock-in GAL4s for these two receptors were generated by fusing GAL4 to the C terminus of the receptors with a T2A linker to visualize the expression patterns of Dsk receptors (Figure 3B). We confirmed the targeted insertion with DNA sequencing. The knock-out lines were also validated with quantitative PCR (Figure 3\u2014figure supplement 1). UAS-mCD8-GFP reporter driven by CCKLR-17D1GAL4 marked neuronal clusters in the central complex, lateral horn, optical lobe, suboesophageal ganglion and ventral nerve cord (Figure 3B), while CCKLR-17D3GAL4 predominantly labels neuronal clusters in the central complex, suboesophageal ganglion and ventral nerve cord (Figure 3\u2014figure supplement 2).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/54229/elife-54229-fig3-v2.jpg)\n\n**Figure 3.:** (A) Schematic view of CCKLR-17D1 gene locus and generation of \u0394CCKLR-17D1 and CCKLR-17D1GAL4 Knock-in lines. The last two exons of CCKLR-17D1 gene were replaced by 3P3-RFP to generate \u0394CCKLR-17D1. To generate CCKLR-17D1GAL4 Knock-in, T2A-GAL4 was fused to the end of ORF. (B) Anatomical analysis of CCKLR-17D1 expressing neurons revealed by CCKLR-17D1GAL4 driven UAS-mCD8:GFP expression. (B1) Adult female CNS stained with anti-GFP antibody (green) and nc82 antibody (magenta). (B2) Adult male CNS stained with anti-GFP antibody (green) and nc82 antibody (magenta). Scale bars represent 50 \u03bcm. (C) Number of lunges per minute after initiation of the indicated genotypes. (D) Fighting latency of the indicated genotypes. (E and F) Number of lunges per minute after initiation (E) and fighting latency (F) in \u0394CCKLR-17D1 mutants rescued by elav-GAL4 driven UAS-CCKLR-17D1 expression. (G and H) Number of lunges per minute after initiation (G) and fighting latency (H) during thermogenetic activation of DskGAL4 neurons in the \u0394CCKLR-17D1 mutant background. Thermogenetic activation of DskGAL4 neurons could not enhance aggression level in the \u0394CCKLR-17D1 mutant background. *p<0.05, **p<0.01, ***p<0.001, n.s. indicates no significant difference (Kruskal-Wallis and post-hoc Mann-Whitney U tests).\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/54229/elife-54229-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Quantification of CCKLR-17D1 and CCKLR-17D3 mRNA by qRT-PCR in the CCKLR mutants and wildtypes. CCKLR-17D1 and CCKLR-17D3 transcripts were not detected in \u0394CCKLR-17D1/y and \u0394CCKLR-17D3/y mutants. Triplicate assays per cDNA sample were carried out independently, the results were obtained from three independent RNA samples. ***p<0.001 (one-way ANOVA and post-hoc Student\u2019s T-test). Error bars indicate SEM.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/54229/elife-54229-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** (A) Generation of CCKLR-17D3GAL4 Knock-in line. GAL4 was fused to the end of open reading frame (ORF) of CCKLR-17D3 with a T2A peptide linker. (B\u2013C) Projection patterns of CCKLR-17D3GAL4 neurons in the central nervous system of female (B) and male (C) revealed by CCKLR-17D3GAL4 driving UAS-mCD8:GFP. Female and male central nervous system were immunostained with anti-GFP antibody (green) and the neuropil marker nc82 (magenta). Scale bars represent 50 \u03bcm.\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/54229/elife-54229-fig3-figsupp3-v2.jpg)\n\n**Figure 3\u2014figure supplement 3.:** (A) The locomotive speed of \u0394CCKLR-17D1 and \u0394CCKLR-17D3 mutants. ns. indicates no significant difference (Kruskal-Wallis and post-hoc Mann-Whitney U tests).\n\n![Figure 3\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/54229/elife-54229-fig3-figsupp4-v2.jpg)\n\n**Figure 3\u2014figure supplement 4.:** (A\u2013B) RNAi knock-down of CCKLR-17D1 decreases inter-male aggression. (A) Number of lunges per minute after initiation. (B) Fighting latency. elav-GAL4; UAS-dcr2 or CCKLR-17D1GAL4 drives CCKLR-17D1 RNAi to knock down the expression level of CCKLR-17D1. In both cases, RNAi knock-down of CCKLR-17D1 significantly reduces aggression. (C) The locomotion of CCKLR-17D RNAi no significant locomotion activity changes were observed. (D) Quantification of CCKLR-17D1 mRNA by qRT-PCR in the CCKLR-17D1 knock-down flies. Error bars indicate SEM. *p<0.05, **p<0.01, ***p<0.001, n.s. indicates no significant difference (Kruskal-Wallis and post-hoc Mann-Whitney U tests or post-hoc Student\u2019s T-test).\n\n![Figure 3\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/54229/elife-54229-fig3-figsupp5-v2.jpg)\n\n**Figure 3\u2014figure supplement 5.:** The aggression chamber consists of four acrylic plates. The bottom plate (Plate 4) contains 12 wells for food patches (diameter: 8 mm; depth: 3 mm). The lower (Plate 3) and upper plates (Plate 2) have 12 cylindrical arenas (diameter: 15 mm; height of each plates: 3 mm). A transparent film is sandwiched by Plate two and Plate three to separate the two flies and removal of the transparent film allows encounters of the two flies.\n\nAggressive behavior was largely abolished in \u0394CCKLR-17D1 mutants compared with wildtype controls, while \u0394CCKLR-17D3 mutants preserved normal level of aggression (Figure 3C and D), and no significant locomotion defects were observed for \u0394CCKLR-17D1 and \u0394CCKLR-17D3 mutants (Figure 3\u2014figure supplement 3). The reduced aggression phenotype could be rescued by pan-neuronal expression of UAS-CCKLR-17D1 driven by elav-GAL4 (Figure 3E and F). Moreover, RNAi silencing of CCKLR-17D1 using elav-GAL4 or CCKLR-17D1GAL4 also significantly suppressed aggression (Figure 3\u2014figure supplement 4). Taken together, these results suggest that Dsk act upon the CCKLR-17D1 receptor to modulate aggression.\n\nTo evaluate whether the aggression-promoting effect of activating DskGAL4 neuron requires CCKLR-17D1, we used UAS-dTRPA1 to activate DskGAL4 neuron in the \u0394CCKLR-17D1 mutant background. In this case, dTRPA1 activation of DskGAL4 neuron no longer enhanced aggression level in the absence of CCKLR-17D1 (Figure 3G and H). We conclude that CCKLR-17D1 is necessary for Dsk-mediated neuromodulation of aggressive behavior.\n\n### Dsk-expressing neurons function downstream of a subset of P1 neurons (P1a-splitGAL4) to Control Fighting Behavior\n\nPrevious works revealed that several group of neurons including a subset of P1 neurons (Hoopfer et al., 2015), Fru\u2013 population of pC1 neurons (Koganezawa et al., 2016), pCd neurons (Jung et al., 2020), a small subset of aSP2 neurons (Watanabe et al., 2017), and a group of Fru+ Tk neurosn (Asahina et al., 2014) in the central brain can promote aggression when activated. Our anterograde trans-synaptic tracing experiments using trans-Tango method (Talay et al., 2017) revealed that there might be direct connections between a subset of P1 neurons and Dsk-expressing neurons. A split-GAL4 labeling a subset of P1 neurons was used to drive the expression of trans-Tango ligand and myrGFP, and the post-synaptic neurons were identified by immunostaining with anti-HA antibody (Figure 4A). Interestingly, a few post-synaptic neurons showed immunoreactivity to Dsk, suggesting that these Dsk-expressing neurons are post-synaptic to a subset of P1 neurons (Figure 4A, Figure 4\u2014figure supplement 1). Furthermore, we confirmed the connection between a subset of P1 neurons and Dsk-expressing neurons using the GFP Reconstitution Across Synaptic Partners (GRASP) method (Alekseyenko et al., 2014; Feinberg et al., 2008). Significant GRASP signals were observed between R71G01-LexA labeled P1 neurons and DSK neurons (Figure 4B, Figure 4\u2014figure supplement 1; Pan et al., 2012). Moreover, Anatomical registration of a subset of P1 neurons and DSK neurons suggests that a subset of P1 neurons axons overlap with DSK dendrites (Figure 4C).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/54229/elife-54229-fig4-v2.jpg)\n\n**Figure 4.:** (A) Transsynaptic labeling by trans-Tango method identifies DSK neurons as postsynaptic partners of a subset of P1 neurons. Expression of the trans-Tango ligand in a subset of P1 neurons (red) (A1) induces postsynaptic signals (anti-HA, magenta) (A2) in the central brain. Green, anti-DSK antibody staining (A2). (A3\u2013A5) and (A6\u2013A8) are enlargements of dashed boxes in (A2). Genotypes of a subset of P1 neurons (P1a split-GAL4): +/y; R15A01.AD/R15A01.AD; R71G01-GAL4.DBD/R71G01-GAL4.DBD. (B) GRASP signals (B1) reveal synaptic connections between R71G01-LexA labeled P1 Neurons and DSK neurons. spGFP1\u201310 is expressed by DskGal4 drivers; spGFP11 is driven by the R71G01-LexA. Magenta, anti-DSK antibody. (B4\u2013B6) are enlargements of the dashed box in (B3). White arrowheads point to areas in which GRASP signal co-localized with synaptic boutons revealed by anti-DSK antibody staining (B6). Scale bars represent 50 \u03bcm in (A1\u2013A2, B1\u2013B3). Scale bars represent 5 \u03bcm (A3\u2013A8, B4\u2013B6). (C) Dendrites of DSK neurons revealed by DskGAL4 driven UAS-Denmark expression (red). Axons of a subset of P1 neurons revealed by P1a split-GAL4 driven UAS-sytGFP expression (green). nc82 antibody (blue) was used to label neuropils. Scale bars represent 50 \u03bcm. (D\u2013E) Enlargements of dashed boxes in (C). White arrowheads point to areas in which a subset of P1 axons and DSK dendrites overlap. Scale bars represent 5 \u03bcm. (F and G) Number of lunges per minute after initiation (F) and fighting latency (G) during thermogenetic activation of a subset of P1 neurons in the \u0394Dsk mutant background. The aggression-promoting effect of activating a subset of P1 neurons is suppressed by the \u0394Dsk mutants. ***p<0.001, n.s. indicates no significant difference (Kruskal-Wallis and post-hoc Mann-Whitney U tests).\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/54229/elife-54229-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Negative control demonstrates lack of postsynaptic signals (anti-HA, magenta) (A2) for the trans-Tango experiment. Red, anti-DSK antibody staining (A1). (B\u2013C) Negative controls for the GRASP experiments. Magenta, anti-DSK antibody (B2, C2). Scale bars represent 50 \u03bcm.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/54229/elife-54229-fig4-figsupp2-v2.jpg)\n\n**Figure 4\u2014figure supplement 2.:** (A\u2013B) Raster plots of unilateral wing extensions during 10 min. (C\u2013D) The number (C) and total duration (D) of unilateral wing extensions in (A\u2013B) during thermogenetic activation of a subset of P1 neurons in the \u0394Dsk mutant background (black: 21\u00b0C, red: 28\u00b0C). a subset of P1 neurons can promote courtship behavior in \u0394Dsk mutant background. **p<0.01, ***p<0.001 (Kruskal-Wallis and post-hoc Mann-Whitney U tests).\n\n![Figure 4\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/54229/elife-54229-fig4-figsupp3-v2.jpg)\n\n**Figure 4\u2014figure supplement 3.:** The aggression chamber consists of four acrylic plates. The bottom plate (Plate 4) contains 12 wells for food patches (diameter: 8 mm; depth: 3 mm). The lower (Plate 3) and upper plates (Plate 2) have 12 cylindrical arenas (diameter: 15 mm; height of each plates: 3 mm). A transparent film is sandwiched by Plate two and Plate three to separate the two flies and removal of the transparent film allows encounters of the two flies.\n\nIs Dsk necessary for the aggression promoting effects of a subset of P1 neurons? To address this question, a subset of P1 neurons were activated by P1a split-GAL4 driving UAS-dTRPA1 in the homozygous \u0394Dsk mutant background. We observed that the aggression-promoting effect but not the courtship-promoting effect of a subset of P1 neurons activation is dramatically suppressed by the loss of the Dsk gene (Figure 4F and G, Figure 4\u2014figure supplement 2). Taken together, these anatomical and behavioral analysis suggest that the Dsk system functions downstream of a subset of P1 neurons to modulate aggression.\n\n### The functional connectivity between Dsk-expressing neurons and R71G01-LexA labeled P1 neurons\n\nTo investigate the functional connectivity between Dsk-expressing neurons and P1 neurons were labeled by R71G01-LexA (Pan et al., 2012), we examined whether and how Dsk-expressing neurons respond to the activation of P1 neurons by patch-clamp recordings and calcium imaging.\n\nATP is an extracellular messenger in organisms that can activate several cell-surface receptors, such as P2X2. The ATP-gated ionotropic purinoceptor P2X2 channel was expressed in P1 neurons for chemogenetic activation of P1 neurons by ATP (Brake et al., 1994). We performed patch-clamp recordings from DSK-L neurons (with cell bodies located laterally, type III) and DSK-M neurons (with cell bodies located in the medial region, type I and type II) (Figure 5A). In perforate patch recordings, ATP activation of P1 neurons elicited robust electrical responses from DSK-M neurons and relatively weak responses from DSK-L neurons (Figure 5B). Meanwhile, we also performed calcium imaging on DSK-M and DSK-L neurons expressing the calcium sensor GCaMP6m (Figure 5C). Consistently, ATP stimulation elicited a strong calcium response in DSK-M neurons and a smaller calcium response in DSK-L neurons (Figure 5D and Video 3). In contrast, ATP activation of DSK neurons did not induce calcium responses in P1 neurons (Figure 5\u2014figure supplement 1). These data further confirmed the functional connections between Dsk-expressing neurons and P1 neurons, suggesting that Dsk-expressing neurons receive inputs from P1 neurons.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/54229/elife-54229-fig5-v2.jpg)\n\n**Figure 5.:** (A) Illustration of patch-clamp recording on DSK neurons (magenta). ATP-gated ion channel P2X2 was expressed in R71G01-LexA labeled P1 neurons for chemogenetic activation of P1 neurons. Genotype: +/y; R71G01-LexA/+; DskGAL4/LexAop-P2 \u00d7 2,UAS-GCaMP6m. (B) The electrical responses of medial DSK neurons (DSK-M) and lateral DSK neurons (DSK-L) to ATP activation of R71G01-LexA labeled P1 neurons. ATP: 2.5 mM. Left: spikes firing (current clamp). Middle: current responses (voltage clamp). Right: quantification of absolute current responses. n\u00a0=\u00a08 from six flies for DSK-M, 8 from five flies for DSK-L, 6 from four flies for DSK-M control, 4 from four flies for DSK-L control. The electrical responses of medial DSK-M and DSK-L control to ATP activation. The Genotype of the control: +/y; +/+; DskGAL4/LexAop-P2 \u00d7 2,UAS-GCaMP6m. (C) Illustration of two-photon calcium imaging in DSK neurons. (D) Left: Calcium imaging of GCaMP6m in the cell bodies of medial DSK neurons (DSK-M) and lateral DSK neurons (DSK-L) with P2X2-expressing R71G01-LexA labeled P1 neurons activated by ATP. ATP: 2.5 mM. Middle: calcium responses of DSK neurons to ATP stimulation. Gray envelopes represent SEM. Right: quantification of peak \u0394F/F in the DSK-M and DSK-L neurons. Scale bars represent 5 \u03bcm. n\u00a0=\u00a019 from four flies for DSK-M, 16 from four flies for DSK-L, 11 from four flies for DSK-M control, 10 from four flies for DSK-L control. Genotypes: +/y; R71G01-LexA/+; DskGAL4/LexAop-P2 \u00d7 2, UAS-GCaMP6m for DSK-M and DSK-L; +/y; +/+; DskGAL4/LexAop-P2 \u00d7 2, UAS-GCaMP6m for DSK-M control and DSK-L control. ***p<0.001 (Mann-Whitney U tests).\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/54229/elife-54229-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A\u2013B) Calcium imaging of GCaMP6m in the cell bodies of R71G01-LexA labeled P1 neurons with P2X2-expressing DSK neurons activated by ATP. ATP: 2.5 mM. White dashed lines indicate ROI. Scale bars represent 5 \u03bcm. (C) Averaged traces of \u0394F/F. The black lines represent the means, and the light gray envelopes represent SEM. n\u00a0=\u00a026 trials from 9 \ufb02ies. Genotype: +/y; R71G01-LexA/+; DskGAL4/UAS-P2 \u00d7 2, LexAOP-GCaMP6m.\n\n![Video 3.](https://cdn.elifesciences.org/articles/54229/elife-54229-video3.mp4.jpg)\n\n### Dsk signaling is upregulated in winner flies\n\nIt was well-known that hierarchical relationships could be established during fly fighting: the winners dominate the food patch and maintain high levels of aggressiveness, while the losers retreat and exhibit reduced aggression (Yurkovic et al., 2006). To explore the involvement of Dsk in the establishment of dominance, we used elav-GS to drive UAS-Dsk to induce conditional overexpression of Dsk. A pair of flies were introduced into one chamber, one of which overexpressed DSK induced by RU486 while the other did not. The one with Dsk overexpression tends to show increased aggression and establish social dominance over the opponent. It suggests that conditional overexpression of Dsk can promote social dominance (Figure 6A\u2013D).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/54229/elife-54229-fig6-v2.jpg)\n\n**Figure 6.:** (A\u2013C) Conditionally overexpression of Dsk increases number of lunges compared to controls. Pairs of flies of the indicated genotypes were introduced into one chamber, one of which overexpressed DSK induced by RU486 while the other did not. (D) Conditionally overexpression of Dsk promotes social dominance. Fight outcomes of the RU486-induced flies of the indicated genotypes in (A\u2013C) were classified into \u2018dominance\u2019, \u2018draw\u2019 and \u2018no fight\u2019. (E\u2013G) Calcium activity of DSK-M neurons in winner (E), loser (F) and control (G) brains detected by the TRIC method. TRIC signal (green) in DSK-M neurons is increased in the winner brain (E3). (E2\u2013E4), (F2\u2013F4), (G2\u2013G4) are within the dashed boxes in (E1), (F1) and (G1). Scale bars represent 50 \u03bcm. Genotype: UAS-IVS-mCD8::RFP, LexAop2-mCD8::GFP/y; nSyb-MKII::nlsLexADBDo/+; DskGAL4/UAS-p65AD::CaM. (H) Quantification of TRIC signals in the DSK-M neurons of winner, loser and control brains. **p<0.01, ***p<0.001, n.s. indicates no significant difference (Kruskal-Wallis and post-hoc Mann-Whitney U tests).\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/54229/elife-54229-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** The aggression chamber consists of four acrylic plates. The bottom plate (Plate 4) contains 12 wells for food patches (diameter: 8 mm; depth: 3 mm). The lower (Plate 3) and upper plates (Plate 2) have 12 cylindrical arenas (diameter: 15 mm; height of each plates: 3 mm). A transparent film is sandwiched by Plate two and Plate three to separate the two flies and removal of the transparent film allows encounters of the two flies.\n\nTo assess the relationship between the activity of Dsk-expressing neurons and winner effect, we used the transcriptional reporter of intracellular Ca2+ (TRIC) technique to monitor the neuronal activity (Gao et al., 2015). We found that the TRIC signals in the DSK-M neurons are significantly higher in the winner brains than in the loser and control brains (Figure 6E\u2013H). Thus DSK-M neurons appear to be hyperactive in winners. It should be noted that TRIC signals are not detectable in the DSK-L neurons, possibly due to low levels of baseline activity in the DSK-L neurons.\n\n## Discussion\n\nIn this study, we systematically dissected the neuromodulatory roles of the Dsk system in fly aggression. At the molecular level, Dsk neuropeptide and its receptor CCKLR-17D1 are important for fly aggression. At the circuit level, Dsk-expressing neurons function downstream of a subset of P1 neurons (P1a-splitGAL4, 8\u00a0~\u00a010 pairs of P1 Neurons) to control aggression. Furthermore, winners show increased calcium activity of Dsk-expressing neurons. Conditional overexpression of Dsk promotes winner effects, suggesting that Dsk is closely linked to the establishment of dominance. Taken together, our results elucidate the molecular and circuit mechanism underlying male aggression and suggest that cholecystokinin-like neuropeptide is likely to be evolutionarily conserved for the neuromodulation of aggression.\n\n### Neural circuitry that controls male aggression\n\nA neural circuitry controlling aggression should be composed of multiple modules that extend from sensory inputs to motor outputs. A variety of peptidergic and aminergic neurons are implicated in fly aggression (Asahina, 2017), but it is not clear how these modulatory neurons integrate input signals from other neural circuits to signal specific physiological states. Our data from circuit tracing, functional connectivity and behavioral epistasis suggest that Dsk-expressing neurons function downstream of a subset of P1 neurons and likely summate inputs from a subset of P1 neurons to signal an internal state of aggression (Figures 4 and 5, Figure 5\u2014figure supplement 1). Activation of a subset of P1 neurons triggers both aggression and courtship (Hoopfer et al., 2015). Interestingly, while the aggression-promoting effect of activating a subset of P1 neurons is dramatically suppressed by the loss of the Dsk gene, the courtship-promoting effect remains intact in the \u0394Dsk mutant background. On the other hand, recent study suggested that Dsk neurons might function to antagonize P1 neurons on regulating male courtship (Sf et al., 2019). This dissociation suggests that while a subset of P1 neurons signal an arousal state facilitating both aggression and courtship, the Dsk system acts downstream of a subset of P1 neurons specifically required for aggression. It worth nothing to mention that the P1a-splitGAL4 used in those studies not only labeled a small subset of Fru+ neurons but also several Fru- neurons, and previous study on pC1 neurons suggested that Fru+ pC1 neurons promote courtship and Fru- pC1 neurons promote aggression (Koganezawa et al., 2016), so further studies are needed to characterize whether different subset of P1a-splitGAL4 labeled neurons are function differently on aggression and how Dsk system are involved. In addition, it remains unknown whether the Dsk system is responsible for integrating the sensory inputs and arousal state related to aggression, and how it connects to other components of the aggression circuitry, such as Tk neurons and AIP neurons.\n\nAs a caveat, it has been reported that Dsk is involved in feeding behavior (N\u00e4ssel and Williams, 2014; Williams et al., 2014). Our experiment also reproduced the result that \u0394Dsk mutants show increased food consumption in the CAFE essay (Diegelmann et al., 2017). Previous studies reported a positive correlation between the body size of flies and the aggression level, suggesting that the modulational effects of DSK neurons on aggression and feeding can be separated (Hoffmann, 1987; Hoffmann, 1990). Further research is required to disentangle the relationship between DSK neurons modulating aggression and those regulating feeding.\n\nIn this study, we classified the eight DSK neurons into three subtypes (Type I, II and III) based on the morphology of the neurites or two subtypes (DSK-M and DSK-L) based on the location of the cell bodies. Interestingly, these subtypes also show functional difference in modulating aggression and differential connectivity with the a subset of P1 neurons. Note that Type I and II neurons correspond to DSK-M and Type III neurons correspond to DSK-L. Our finding that DSK-M neurons showed stronger responses to a subset of P1 neurons activation is consistent with the behavioral results of the flip-out experiment, in which Type I and II neurons, but not Type III, are critical to aggression. In future research, it would be interesting to use intersect method to more specifically label and manipulate the DSK neuron subtypes.\n\n### Cholecystokinin-Like peptide is a potentially conserved mechanism underlying aggression\n\nPrevious study implicated that the cholecystokinin system is closely linked with various human psychiatric disorders, such as bipolar disorder (Sears et al., 2013) and panic attacks (Bradwejn et al., 1990). Interestingly, verbal aggression is promoted by the administration of cholecystokinin tetrapeptide in human subjects (T\u00f5ru et al., 2010). In cats, cholecystokinin agonists potentiate the defensive rage behavior while the cholecystokinin antagonists suppress it (Luo et al., 1998). Our results reveal that cholecystokinin-like peptide Dsk and Dsk receptor CCKLR-17D1 are important forDrosophilaaggression (Figures 1 and 3). In addition, increased calcium activity in Dsk-expressing neurons coincides with winner states (Figure 6). Thus, the cholecystokinin system is linked to aggressive behavior in a variety of species and is likely to be an evolutionarily conserved pathway for modulating aggressiveness.\n\n### Social hierarchy during fly fights\n\nIt has long been noticed that hierarchical relationships could be established during fly fights, with winners remaining highly aggressive and winning the subsequent encounters, and losers retreating and losing second fights (Chen et al., 2002; Yurkovic et al., 2006). The winner state is perceived as a reward signal while losing experience is aversive (Kim et al., 2018). The establishment of social hierarchy is only observed in males (Nilsen et al., 2004), and this male-specific feature of fly aggression is specified by fruitless (Vrontou et al., 2006). However, neural correlates of dominance have not been reported. In this study, Using a transcriptional reporter of intracellular calcium (TRIC), we found that winners display increased calcium activity in the median Dsk-expressing neurons. Moreover, conditional overexpression of Dsk specifically in the adult stage increases the flies' aggressiveness and makes them more likely to win against opponents without Dsk overexpression. Thus, both the enhanced Dsk signaling in the brain and the winning-promoting effect of conditional overexpression supported that the Dsk system may be involved in the establishment of social hierarchy during fly aggression.\n\n## Materials and methods\n\n### Fly stocks\n\nFlies were maintained on standard cornmeal medium at 25\u00b0C, 60% humidity in a 12 hr:12 hr Light:Dark cycle. For the thermogenetic activation experiments with UAS-dTrpA1, all the flies were reared at 21\u00b0C. The lines were backcrossed to isogenized Canton S flies for at least five generations prior to behavior studies. Trans-Tango lines were gifts from Dr. Yi Zhong (Tsinghua University). +; sp/CyO; LexAop-P2 \u00d7 2, UAS-GCamP/Tm2 was from Dr. Donggen Luo (Peking University). UAS-TNTE and UAS-impTNT were gifts from Dr. Cahir O'Kane (University of Cambridge). UAS-dTRPA1 was a gift from Dr. Paul Garrity (Brandeis University). R15A01-p65.AD (BL#68837), R71G01-GAL4.DBD (BL#69507), R71G01-LexA (BL#54733), TRIC line (BL#61679), MCFO line (BL#64089), UAS-Kir2.1 (BL#6595 and BL#6596), UAS-mCD8::GFP (BL#5137) and LexAop2-mCD8::GFP (BL#32203) were obtained from the BloomingtonDrosophilaStock Center. Lexo-CD4-spGFP11/CyO; UAS-CD4-spGFP1-10/Tb was previously described (Gordon and Scott, 2009). Please refer to Supplementary file 1 for the complete genotypes of fly stocks used in this study.\n\n### Method details\n\n#### Calcium imaging and electrophysiological recordings\n\nYoung adult flies (1\u20132 days after eclosion) were used for calcium imaging. Fly brain was dissected out with fine forceps in saline solution. The saline is composed of (in mM): 103 NaCl, 3 KCl, 4 MgCl2, 1.5 CaCl2, 26 NaHCO3, 1 NaH2PO4, 5 N-tri-(hydroxymethyl)-methyl-2-aminoethane-sulfonic acid (TES), 20 D-glucose, 17 sucrose, and five trehalose. The brain was continuously perfused with saline saturated with 95% O2/5% CO2 (~pH 7.3) at 21\u00b0C during imaging.\n\nTime series of images were acquired on a Nikon A1R+ confocal microscope with a 60\u00a0\u00d7\u00a0water immersion objective. A 512\u00a0\u00d7\u00a0128 pixel imaging region was captured at a frame rate of 7 fps. The images were analyzed with a graphical user interface (GUI) written in Matlab (Zhou et al., 2015). Regions of interest (ROIs) were selected manually, and the mean baseline fluorescence values (F0) were calculated from 30 frames before ATP stimulation. The fluorescence change was calculated as: \u0394F/F = (Ft \u2212 F0)/F0\u00a0\u00d7100%. Peak \u0394F/F is defined as the maximum \u0394F/F value after the onset of ATP stimulus.\n\nElectrophysiological recordings were conducted on the same microscope with infrared-differential interference contrast (IR-DIC) optics and IR-CCD (DAGE-MTI) for visualizing the target neurons. The recording pipette (~10\u201315 M\u03a9) was filled with internal solution containing 150 \u03bcg/ml amphotericin B. The internal solution consists of (in mM): 140 K-gluconate, 6 NaCl, 2 MgCl2, 0.1 CaCl2, 1 EGTA, 10 HEPES (pH 7.3). Signals were amplified with MultiClamp 700B, digitized with Digidata 1440A, recorded with Clampex 10.6 (all from Molecular Devices), filtered at 2 kHz, and sampled at 5 kHz. The recorded neuron was voltage clamped at \u221270 mV. Measured voltages were corrected for a liquid junction potential.\n\n### Chemogenetic stimulation\n\nATP-gated ion channel P2X2 was expressed in P1 neurons. 2.5 mM ATP-Na (Sigma-Aldrich) was delivered through a three-barrel tube, controlled by SF77B stepper (Warner Instruments) driven by Axon\u00a0Digidata 1440A analog voltage output. These devices achieved fast switch between perfusion saline and ATP stimulation.\n\n### Immunohistochemistry\n\nThe adult flies were cold anesthetized and the CNSs were dissected in 1X PBS (Corning, 21\u2013040-CVR). The samples were fixed in 2% paraformaldehyde for 55 min at room temperature, washed three times for 20 min in PBT (1X PBS containing 0.3% Triton-X100) at room temperature, blocked in PBT containing 5% goat serum for 1 hr at room temperature. Brains were then incubated with primary antibody (diluted in blocking solution) for 18\u00a0~\u00a024 hr at 4\u00b0C, washed three times in 0.3% PBT for 20 min before incubated in the secondary antibody (diluted with 5% goat serum in 0.3%PBT) for 18\u00a0~\u00a024 hr at 4\u00b0C. Brain samples were then washed three times for 20 min in PBT at room temperature, fixed in 4% paraformaldehyde for 4 hr at room temperature, and washed in PBT three times for 20 min at room temperature. Lastly, brains were mounted onto poly-L-lysine (PLL)-coated coverslip in 1X PBS. The coverslip with mounted brains was then soaked for 5 min each in a gradient of ethanol baths: 30%, 50%, 75%, 95%, 100%, and then soaked three times for 5 min in xylene. DPX was applied to the samples on the coverslip and the coverslip was placed on the slide and dried for 2 days before imaging. Images were taken with Carl Zeiss (LSM710) confocal microscopy and then processed with Fiji software. The following primary antibodies were used: mouse anti-nc82 (1:50; DSHB), chicken anti-GFP (1:1000; life technologies), rabbit anti-DSK antibody (1:1000), rabbit anti-GFP (1:1000; Invitrogen), rabbit anti-HA (1:300; Cell Signaling Technologies), rat anti-FLAG (1:200; Novus Biologicals), Rat anti-HA (1:100; Roche), mouse anti-GFP-20 (1:100; sigma), rabbit anti-RFP (1:1000; Invitrogen). The following secondary antibodies were used: Alexa Fluor goat anti-chicken 488 (1:500; life technologies), Alexa Fluor goat anti-rabbit 488 (1:500; life technologies), Alexa Fluor goat anti-mouse 546 (1:500; life technologies), Alexa Fluor goat anti-rat 546 (1:500; Invitrogen), Alexa Fluor goat anti-rabbit 546 (1:500; Invitrogen), Alexa Fluor goat anti-rat 633 (1:500; Invitrogen), and Alexa Fluor goat anti-rat 647 (1:500; Invitrogen), (1:500; life technologies).\n\n### Brain registration\n\nCMTK software was used to generate a standard brain by averaging six male brains and six female brains stained with nc82 antibody (Rohlfing and Maurer, 2003). Confocal stacks were then registered into the common standard brain by linear registration and non-rigid warping methods based on the nc82 channel (Jefferis et al., 2007).\n\n### Generation of anti-DSK antibody\n\nThe antisera used to recognize Dsk peptide were raised in New Zealand white rabbits using the synthetic peptide N\u2019-GGDDQFDDYGHMRFG-C\u2019. Because Dsk and FMRFamide peptides share the same C-terminal sequence, antibody against Dsk may also recognize FMRFamide peptides. To resolve this problem, we negatively purified the antiserum by binding the antiserum to a FMRFamide peptide affinity column after positive purification. The synthesis of antigen peptide and FMRF peptide, the production and purification of antiserum were performed by Beijing Genomics Institute (BGI).\n\n### Generation of Knock-Out and Knock-In lines\n\nWe generated mutants of Dsk, CCKLR17D1 and CCKLR17D3 through homologous recombination in Drosophila embryos with the CRISPR/Cas9 system.\n\nWhen generating the knock-out mutants, we introduced an attP site into the noncoding region of each gene. Based on the knock-out lines, knock-in Gal4s for each gene were generated through phiC31 mediated transgenesis as described in Deng et al. (2019).\n\nTo construct targeting vectors for knock-out generation, the homologous arms were subcloned into pBSK-attP-3P3-RFP-loxP vector through Gibson assembly using the following primers:\n\n#### Dsk (CG18090)\n\n#### CCKLR17D1 (CG42301)\n\n#### CCKLR17D3 (CG32540)\n\nTo generate knock-in Gal4 constructs, the deleted regions of each gene\u2019s knock-out mutant were subcloned into the pBSK-attB-2xMyc-T2A-Gal4 (Deng et al., 2019) through Gibson assembly using the following primers.\n\n#### Dsk\n\n#### CCKLR17D1\n\n#### CCKLR17D3\n\nTo generate \u0394DskGAL4, the coding region of Dsk was deleted and replaced by GAL4 cassette. First, the 551 bp before the coding region and coding region of Dsk was replaced by an attP-3P3-RFP cassette through homologous recombination to obtain the \u0394Dsk knock-out line. \u0394DskGAL4 flies were then generated through phiC31 mediated attB/attP recombination in the knock-out line such that the deleted 551 bp of non-coding sequence followed by GAL4 cassette was integrated into the Dsk locus. Primers for amplifying the 551 bp before the coding region of Dsk:\n\n#### \u0394DskGAL4-F\n\n#### \u0394DskGAL4-R\n\nThe embryo injection and fly screen processes were the same as described in Deng et al. (2019). We verified all the knock-out and knock-in lines through PCR amplification followed by DNA sequencing.\n\n### Generation of UAS-Dsk and UAS-CCKLR-17D1\n\nThe pJFRC28-UAS-Dsk (\u2018UAS-Dsk\u2019) and pJFRC28-UAS-CCKLR-17D1 (\u2018UAS-CCKLR-17D1\u2019) constructs were generated using pJFRC28-10XUAS-IVS-GFP-p10 (Addgene # 36431). The plasmid of pJFRC28-10XUAS-IVS-GFP-p10 was digested with NotI and XbaI to remove the GFP coding sequence, and then the cDNA of Dsk and CCKLR-17D1 were cloned into this plasmid by Gibson Assembly. The Kozak sequence was added right upstream of the ATG. Next, UAS-Dsk and UAS-CCKLR-17D1 constructs were injected and integrated into the attP40 and attP2 sites on the second and third chromosome through phiC31 integrase mediated transgenesis, respectively. All the transgenes were verified by PCR and DNA sequencing. The primer sets for cloning the cDNA of Dsk and CCKLR-17D1:\n\n#### UAS-Dsk-F\n\n#### UAS-Dsk-R\n\n#### UAS-CCKLR-17D1-F\n\n#### UAS-CCKLR-17D1-R\n\n### Quantitative PCR\n\nWhole head RNA was extracted from 50 fly heads using TRIzol (Ambion #15596018). The cDNA of whole fly heads was synthesized using Prime Script reagent kit (Takara).\n\nQuantitative PCR was performed on Thermo Piko Real 96 (Thermo) using SYBR Green PCR Master Mix (Takara #RR820A). The primer sets used in this study are:\n\n### Behavior assay\n\n#### Aggressive behavior\n\nThe flies were raised at 25\u00b0C and 60% humidity under a 12 hr:12 h L:D cycle. Male or female flies were collected immediately after eclosion and isolated for 5\u20137 days in food tubes prior to behavioral assays. All behavioral assays were carried out at 25\u00b0C and 60% humidity between 11AM-16PM, except the thermogenetic experiments.\n\nIn most experiments, aggression assays were done in the aggression chamber (Figure 1\u2014figure supplement 6, Figure 2\u2014figure supplement 4, Figure 3\u2014figure supplement 5, Figure 4\u2014figure supplement 3, Figure 6\u2014figure supplement 1). The aggression chamber is made up of four acrylic plates. The bottom plate has 12 wells for containing food substrates (diameter: 8 mm; depth: 3 mm). The lower and upper plates have 12 cylindrical arenas (diameter: 15 mm; height of each plates: 3 mm). Two males were briefly cold anesthetized and introduced into the lower and upper plates separated by a transparent film. The flies were allowed to recover for 60 min at 25\u00b0C. Once the recording began, the transparent film was removed to allow aggressive encounters between the two flies. The aggressive encounters were videotaped for 30 min by cameras (Canon VIXIA HF R500) at 30 fps for further analysis. The number of lunges within 30 min and the latency of initiating fighting after removing the separation are counted. All behavioral assays were analyzed manually and assigned to three experimenters randomly for independent scoring. The scorers were blind to the genotypes and conditions of the experiment.\n\nIn dTRPA1 experiments, flies were reared at 21\u00b0C and isolated for 6\u20137 days. Aggressive assay was carried out at 21\u00b0C (control)\u00a0or 28\u00b0C (activation) and 60% humidity. For the activation group, the aggression chambers containing flies will be pre-warmed at 28\u00b0C for 20 min prior to removing the separation and videotaping.\n\nTo generate mosaic flies and enable stochastic inactivation of DSK neurons, the flies of hs-FLP; UAS > stop > Kir2.1eGFP/DskGAL4 were heat-shocked for 90 min at 37\u00b0C during the mid- to late-larval stage. Male flies were collected immediately after eclosion, marked on the thorax with yellow acrylic paint on the second day of eclosion, and isolated for 5\u20137 days in food tubes prior to behavioral assays. Each male mosaic fly was paired with a \u0394Dsk mutant which served as a hypo-aggressive opponent. The homozygous \u0394Dsk male mutants showed a significantly reduced lunge frequency. The mosaic flies could attack homozygous \u0394Dsk mutants, and then we could obtain larger aggression scores from mosaic flies, so we choose \u0394Dsk mutants as an attack target for mosaic flies. After testing individual male mosaics for aggression, we dissected and stained their brains using anti-GFP to identify the cell types labeled.\n\n### Courtship behavior\n\nThe virgin of Females and males were anesthetized on ice and introduced into the lower and upper courtship chamber separated by a transparent film. The courtship chamber is cylindrical and consists of two layers (diameter: 10 mm; height of each layer: 3 mm). Flies were allowed to recover for 1 hr at 25\u00b0C. After 1 hr, the transparent film was removed and courtship video was videotaped for 30 min by cameras (Canon VIXIA HF R500) at 30 fps for further analysis.\n\n### Experiments of social hierarchy\n\nThe virgin male flies were collected and isolated upon eclosion. On the second day of eclosion, flies were anesthetized under light CO2 and marked on the thorax with yellow and red acrylic paint, respectively, and then singly housed in food tubes. On the sixth day after eclosion, a pair of flies with two different colors were introduced into one aggressive chamber and a transparent film was used to separate the two males. Meanwhile, we introduced a single painted fly into another chamber as the control group without fighting experience. Flies were allowed to recover for 60 min at 25\u00b0C before removing the separation to allow aggressive encounters for a period of 4 hr (eight 30 min sessions). Usually at the end of the first session social dominances were stably established with winners occupying the food patch and lunging toward losers. We chose pairs of winners/losers that maintain stable dominance relationships in all the eight sessions for further TRIC analysis.\n\nIn TRIC experiments, the brains of these three groups were dissected and fixed with 8% paraformaldehyde for 2 hr, and then mounted with DPX. All the brains were imaged on Carl Zeiss (LSM710) confocal microscopy with the same settings.\n\nWe used Fiji to quantify the fluorescence intensity by first generating a Z stack of the sum of fluorescence signals, and then quantifying the total intensity of manually selected ROIs. The signal intensity was normalized to that of the control group.\n\n### Statistical analysis\n\nAll statistical analyses were conducted using the Prism7 (GraphPad software) or MATLAB (MathWorks) software. Kruskal-Wallis ANOVA test followed by post-hoc Mann-Whitney U test, was used to identify significant differences between multiple groups. The Mann-Whitney U test was used for analyzing the data of two columns. The sample sizes are indicated in the figures.\n",
+      "created_at": "2025-12-02T16:36:14.166523Z"
+    },
+    {
+      "id": "f7ad2df0-e909-438d-aa25-d2e750fd8e05",
+      "submission_id": "32449d1d-7bc1-405a-81c6-862ca5d5562a",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Leslie C Griffith, Brandeis University United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.54229.sa1](https://doi.org/10.7554/eLife.54229.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nThe authors present an extensive set of experiments to show that Drosulfakinin neurons are involved in Drosophila aggression, and suggest that this peptide family (which includes the mammalian ortholog Cholecystokinin) may have conserved behavioral functions. Specifically, the authors suggest that the Dsk system plays an important role in promoting aggression and the establishment of winner's state, acting downstream of P1 interneurons that have been implicated to be a trigger center for aggression and courtship.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"A neuropeptide regulates fighting behavior in Drosophila melanogaster\" for consideration by eLife. Your article has been reviewed by two peer reviewers, and the evaluation has been overseen by Leslie Griffith as Reviewing Editor and Ronald Calabrese as the Senior Editor. The reviewers have opted to remain anonymous. The reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThe authors present an extensive set of experiments to show that Drosulfakinin neurons are involved in Drosophila aggression, and suggest that this peptide family (which includes the mammalian ortholog Cholecystokinin) may have conserved behavioral functions. Specifically, the authors suggest that the Dsk system plays an important role in promoting aggression and the establishment of winner's state, acting downstream of P1 interneurons that have been implicated to be a trigger center for aggression and courtship. In general, experiments were conducted carefully and the quality of data was high. There remain a few issues with data analysis and presentation, however, that require attention.\n\nEssential revisions:\n\n1) The analysis of lunging data may be obscuring the actual cause of the phenotype. Because of the way the data are presented, it is impossible to know if the low values they see are due to low levels of lunging or failure to initiate lunging within the 30 min window. The authors either need to reanalyze their data to look at lunge/min after initiation or collect a new data set that looks at the lunge rate AFTER initiation. This is an important point and the authors need to differentiate between initiation and maintenance as the basis of the defect.\n\n2) The authors fail to provide any locomotor controls. This is critical since the authors are claiming the phenotypes are specific to aggression.\n\n3) Some of the ephys/imaging data cannot be correct as shown. The upper traces in Figure 5B seem to indicate the time of light stimulation to release caged ATP, but the onset of ATP release as indicated in the figure preceded the initial sign of deflection of electrical responses, in particular the current response (lower trace). This invites the suspicion that the ATP trace was not correctly recorded along with the voltage/current trances. The time required for synaptic transmission (synaptic delay) is typically just a few milliseconds. To demonstrate direct synaptic connections, the postsynaptic response must be recorded together with the spike invading the presynaptic terminal. The presented data do not satisfy this requirement. The statement \"These data further confirmed the synaptic connections between Dsk-neurons\" should be toned down and the figure should be clarified/corrected.\n\n4) In general there are problems with data presentation (see #1 above). The authors should present all the individual points in addition to the mean and confidence intervals. Their latency data might look quite bimodal if presented this way and that would be informative. It is also eLife's policy that all the data should be available to the reader and this could easily be done here.\n",
+      "created_at": "2025-12-02T16:36:14.166523Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T16:36:14.166523Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T16:36:14.166523Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "eb7e3b2c-95ea-45de-bdb8-26d2eb333a25",
+      "content_id": "a04f9962-0655-4084-921e-5f34d798a70c",
+      "claim_id": "C1",
+      "claim": "The neuropeptide Drosulfakinin (Dsk) modulates aggression in Drosophila melanogaster.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we found that the neuropeptide Drosulfakinin (Dsk) modulates aggression in Drosophila melanogaster.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main finding stated in the abstract, supported by multiple experimental results presented throughout the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:36:14.166523Z"
+    },
+    {
+      "id": "b34c49a5-bfd1-4c7c-af6c-3aa529ea9820",
+      "content_id": "a04f9962-0655-4084-921e-5f34d798a70c",
+      "claim_id": "C2",
+      "claim": "Knock-out of Dsk reduced aggression.",
+      "claim_type": "EXPLICIT",
+      "source": "Knock-out of Dsk or Dsk receptor CCKLR-17D1 reduced aggression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by behavioral data showing reduced lunge frequency and prolonged fighting latency in \u0394Dsk mutants (Figure 1H, I).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:36:14.166523Z"
+    },
+    {
+      "id": "ade7d6fd-2905-4451-aa8c-3b2231d30e27",
+      "content_id": "a04f9962-0655-4084-921e-5f34d798a70c",
+      "claim_id": "C3",
+      "claim": "Knock-out of Dsk receptor CCKLR-17D1 reduced aggression.",
+      "claim_type": "EXPLICIT",
+      "source": "Knock-out of Dsk or Dsk receptor CCKLR-17D1 reduced aggression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by behavioral data showing reduced aggression in \u0394CCKLR-17D1 mutants (Figure 3C, D).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:36:14.166523Z"
+    },
+    {
+      "id": "91a985cf-e214-46d9-8184-ebb2b6b071b3",
+      "content_id": "a04f9962-0655-4084-921e-5f34d798a70c",
+      "claim_id": "C4",
+      "claim": "Activation of Dsk-expressing neurons increased male aggressive behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "Activation and inactivation of Dsk-expressing neurons increased and decreased male aggressive behavior, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by thermogenetic activation experiments using dTRPA1 (Figure 2L-M).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:36:14.166523Z"
+    },
+    {
+      "id": "4fc94731-be70-4483-922f-d2b37ab70f98",
+      "content_id": "a04f9962-0655-4084-921e-5f34d798a70c",
+      "claim_id": "C5",
+      "claim": "Inactivation of Dsk-expressing neurons decreased male aggressive behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "Activation and inactivation of Dsk-expressing neurons increased and decreased male aggressive behavior, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by TNT and Kir2.1 inactivation experiments (Figure 2H-K).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:36:14.166523Z"
+    },
+    {
+      "id": "86bcf1f7-de21-406f-8e4b-4f98ddbfa7fb",
+      "content_id": "a04f9962-0655-4084-921e-5f34d798a70c",
+      "claim_id": "C6",
+      "claim": "Dsk-expressing neurons function downstream of a subset of P1 neurons (P1a-splitGAL4) to control fighting behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, data from transsynaptic tracing, electrophysiology and behavioral epistasis reveal that Dsk-expressing neurons function downstream of a subset of P1 neurons (P1a-splitGAL4) to control fighting behavior.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by trans-Tango tracing, GRASP, electrophysiology, and behavioral epistasis experiments (Figures 4 and 5).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:36:14.166523Z"
+    },
+    {
+      "id": "4e0087cd-affb-48fb-a543-986db4043e30",
+      "content_id": "a04f9962-0655-4084-921e-5f34d798a70c",
+      "claim_id": "C7",
+      "claim": "Winners show increased calcium activity in Dsk-expressing neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, winners show increased calcium activity in Dsk-expressing neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by TRIC experiments showing higher signals in winner brains (Figure 6E-H).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:36:14.166523Z"
+    },
+    {
+      "id": "1f68eee8-4aec-49b7-888d-82df5a89b895",
+      "content_id": "a04f9962-0655-4084-921e-5f34d798a70c",
+      "claim_id": "C8",
+      "claim": "Conditional overexpression of Dsk promotes social dominance.",
+      "claim_type": "EXPLICIT",
+      "source": "Conditional overexpression of Dsk promotes social dominance, suggesting a positive correlation between Dsk signaling and winning effects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by RU486-induced Dsk overexpression experiments (Figure 6A-D).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:36:14.166523Z"
+    },
+    {
+      "id": "cddbed35-c717-4f17-9cad-bb3c2f39412c",
+      "content_id": "a04f9962-0655-4084-921e-5f34d798a70c",
+      "claim_id": "C9",
+      "claim": "There is a positive correlation between Dsk signaling and winning effects.",
+      "claim_type": "EXPLICIT",
+      "source": "Conditional overexpression of Dsk promotes social dominance, suggesting a positive correlation between Dsk signaling and winning effects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the conditional overexpression and TRIC experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:36:14.166523Z"
+    },
+    {
+      "id": "6b74291d-c6c6-4cc7-965f-87b1a701bd54",
+      "content_id": "a04f9962-0655-4084-921e-5f34d798a70c",
+      "claim_id": "C10",
+      "claim": "The mammalian ortholog CCK has been implicated in mammal aggression.",
+      "claim_type": "EXPLICIT",
+      "source": "The mammalian ortholog CCK has been implicated in mammal aggression, thus our work suggests a conserved neuromodulatory system for the modulation of aggressive behavior.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature on CCK in mammals.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:36:14.166523Z"
+    },
+    {
+      "id": "34f7491d-279a-4a11-b49b-00adc6f72103",
+      "content_id": "a04f9962-0655-4084-921e-5f34d798a70c",
+      "claim_id": "C11",
+      "claim": "The work suggests a conserved neuromodulatory system for the modulation of aggressive behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "The mammalian ortholog CCK has been implicated in mammal aggression, thus our work suggests a conserved neuromodulatory system for the modulation of aggressive behavior.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the similarity between Dsk and CCK functions across species.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:36:14.166523Z"
+    },
+    {
+      "id": "c651b7f0-64cb-4a7d-b31a-3db7244910e3",
+      "content_id": "a04f9962-0655-4084-921e-5f34d798a70c",
+      "claim_id": "C12",
+      "claim": "Aggression is a common innate behavior in most vertebrate and invertebrate species.",
+      "claim_type": "EXPLICIT",
+      "source": "Aggression is a common innate behavior in most vertebrate and invertebrate species and a major driving force for natural and sexual selections (Darwin, 1859; Lorenz, 1963).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations to Darwin and Lorenz.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:36:14.166523Z"
+    },
+    {
+      "id": "66bf56d3-29b1-4325-8ab1-4e6a695e55d8",
+      "content_id": "a04f9962-0655-4084-921e-5f34d798a70c",
+      "claim_id": "C13",
+      "claim": "Aggression is a major driving force for natural and sexual selections.",
+      "claim_type": "EXPLICIT",
+      "source": "Aggression is a common innate behavior in most vertebrate and invertebrate species and a major driving force for natural and sexual selections (Darwin, 1859; Lorenz, 1963).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations to Darwin and Lorenz.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:36:14.166523Z"
+    },
+    {
+      "id": "d2a6f76b-6851-4ce3-9153-854b71df1218",
+      "content_id": "a04f9962-0655-4084-921e-5f34d798a70c",
+      "claim_id": "C14",
+      "claim": "Aggression is a critical behavior for defense against conspecifics to obtain food resources and mating partners.",
+      "claim_type": "EXPLICIT",
+      "source": "It is a critical behavior for defense against conspecifics to obtain food resources and mating partners (Beye et al., 1998; Kravitz and Huber, 2003; Siegel et al., 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:36:14.166523Z"
+    },
+    {
+      "id": "ac5a0c68-1b0d-4c6b-9bf4-2a7478099ef1",
+      "content_id": "a04f9962-0655-4084-921e-5f34d798a70c",
+      "claim_id": "C15",
+      "claim": "Aggressive behavior of fruit flies was first reported by Alfred Sturtevant.",
+      "claim_type": "EXPLICIT",
+      "source": "Aggressive behavior of fruit flies was first reported by Alfred Sturtevant (Sturtevant, 1915).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a historical fact supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:36:14.166523Z"
+    },
+    {
+      "id": "5a860b74-8cf9-4653-8d2c-125a386d96dd",
+      "content_id": "a04f9962-0655-4084-921e-5f34d798a70c",
+      "claim_id": "C16",
+      "claim": "Drosophila immunoreactivity is detected in the brains of wildtype and \u0394Dsk/+ but not detected at all in the brain of \u0394Dsk/\u0394Dsk.",
+      "claim_type": "EXPLICIT",
+      "source": "Immunohistochemical analysis confirmed that Dsk immunoreactivity is detected in the brains of wildtype and \u0394Dsk/+ but not detected at all in the brain of \u0394Dsk/\u0394Dsk (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by immunohistochemical staining data shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:36:14.166523Z"
+    },
+    {
+      "id": "1cac3a3e-b4f6-4b7f-a675-9664d6e08896",
+      "content_id": "a04f9962-0655-4084-921e-5f34d798a70c",
+      "claim_id": "C17",
+      "claim": "Homozygous \u0394Dsk male mutants showed reduced frequency of lunge.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, homozygous \u0394Dsk male mutants showed reduced frequency of lunge (Figure 1H) and wing threat (Figure 1\u2014figure supplement 2) and prolonged latency to initiate fighting (Figure 1I), while conditional overexpression of Dsk promoted aggressive behavior (Figure 1\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by behavioral data shown in Figure 1H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:36:14.166523Z"
+    },
+    {
+      "id": "a2de6242-5487-4b8a-b42c-975a6c4c5294",
+      "content_id": "a04f9962-0655-4084-921e-5f34d798a70c",
+      "claim_id": "C18",
+      "claim": "Homozygous \u0394Dsk male mutants showed reduced frequency of wing threat.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, homozygous \u0394Dsk male mutants showed reduced frequency of lunge (Figure 1H) and wing threat (Figure 1\u2014figure supplement 2) and prolonged latency to initiate fighting (Figure 1I), while conditional overexpression of Dsk promoted aggressive behavior (Figure 1\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by behavioral data shown in Figure 1\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:36:14.166523Z"
+    },
+    {
+      "id": "fb179836-978c-458b-9e55-c00ff116de52",
+      "content_id": "a04f9962-0655-4084-921e-5f34d798a70c",
+      "claim_id": "C19",
+      "claim": "Homozygous \u0394Dsk male mutants showed prolonged latency to initiate fighting.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, homozygous \u0394Dsk male mutants showed reduced frequency of lunge (Figure 1H) and wing threat (Figure 1\u2014figure supplement 2) and prolonged latency to initiate fighting (Figure 1I), while conditional overexpression of Dsk promoted aggressive behavior (Figure 1\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by behavioral data shown in Figure 1I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:36:14.166523Z"
+    },
+    {
+      "id": "ea480d08-c8b9-4315-b1d7-09d1c7c765df",
+      "content_id": "a04f9962-0655-4084-921e-5f34d798a70c",
+      "claim_id": "C20",
+      "claim": "Conditional overexpression of Dsk promoted aggressive behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, homozygous \u0394Dsk male mutants showed reduced frequency of lunge (Figure 1H) and wing threat (Figure 1\u2014figure supplement 2) and prolonged latency to initiate fighting (Figure 1I), while conditional overexpression of Dsk promoted aggressive behavior (Figure 1\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by behavioral data shown in Figure 1\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:36:14.166523Z"
+    },
+    {
+      "id": "949d0f7b-575e-4e5c-90bc-c6ce8245a9a2",
+      "content_id": "a04f9962-0655-4084-921e-5f34d798a70c",
+      "claim_id": "C21",
+      "claim": "Female aggression is suppressed in homozygous \u0394Dsk mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, female aggression is also suppressed in homozygous \u0394Dsk mutants (Figure 1\u2014figure supplement 4, Video 1), suggesting that Dsk is required for aggressive behavior in both sexes.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by female aggression data shown in Figure 1\u2014figure supplement 4 and Video 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:36:14.166523Z"
+    },
+    {
+      "id": "9bd51b0f-3499-49c7-ab4c-9e6a5aceeaf7",
+      "content_id": "a04f9962-0655-4084-921e-5f34d798a70c",
+      "claim_id": "C22",
+      "claim": "Dsk is required for aggressive behavior in both sexes.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, female aggression is also suppressed in homozygous \u0394Dsk mutants (Figure 1\u2014figure supplement 4, Video 1), suggesting that Dsk is required for aggressive behavior in both sexes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the observation that both male and female \u0394Dsk mutants show reduced aggression.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:36:14.166523Z"
+    },
+    {
+      "id": "1badd753-e2bc-4b7f-8cfb-b4286c2c5a90",
+      "content_id": "a04f9962-0655-4084-921e-5f34d798a70c",
+      "claim_id": "C23",
+      "claim": "The \u0394Dsk mutants do not show defects in courtship behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "Note that the \u0394Dsk mutants do not show defects in courtship behavior or locomotion activity, but show increased food intake (Figure 1\u2014figure supplement 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by courtship behavior data shown in Figure 1\u2014figure supplement 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:36:14.166523Z"
+    },
+    {
+      "id": "1d334ee0-23a1-4d3b-8679-7db2937007be",
+      "content_id": "a04f9962-0655-4084-921e-5f34d798a70c",
+      "claim_id": "C24",
+      "claim": "The \u0394Dsk mutants do not show defects in locomotion activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Note that the \u0394Dsk mutants do not show defects in courtship behavior or locomotion activity, but show increased food intake (Figure 1\u2014figure supplement 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by locomotion data shown in Figure 1\u2014figure supplement 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:36:14.166523Z"
+    },
+    {
+      "id": "63b1781a-814e-4c6d-a9bb-7e3b9fd6316a",
+      "content_id": "a04f9962-0655-4084-921e-5f34d798a70c",
+      "claim_id": "C25",
+      "claim": "The \u0394Dsk mutants show increased food intake.",
+      "claim_type": "EXPLICIT",
+      "source": "Note that the \u0394Dsk mutants do not show defects in courtship behavior or locomotion activity, but show increased food intake (Figure 1\u2014figure supplement 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by feeding behavior data shown in Figure 1\u2014figure supplement 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:36:14.166523Z"
+    },
+    {
+      "id": "4178a8ac-e42a-455f-9417-bdd1094d0393",
+      "content_id": "a04f9962-0655-4084-921e-5f34d798a70c",
+      "claim_id": "C26",
+      "claim": "\u0394DskGAL4 is a null mutation for Dsk.",
+      "claim_type": "EXPLICIT",
+      "source": "\u0394DskGAL4 is a null mutation for Dsk, as Dsk immunoreactivity is absent in both \u0394DskGAL4/\u0394Dsk hetero-allelic (Figure 1D) and \u0394DskGAL4/\u0394DskGAL4 homozygotes (Figure 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by immunohistochemical data showing absence of Dsk immunoreactivity in Figure 1D and 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:36:14.166523Z"
+    },
+    {
+      "id": "7815ebed-53a5-4677-a8bb-a2a8cd13cf77",
+      "content_id": "a04f9962-0655-4084-921e-5f34d798a70c",
+      "claim_id": "C27",
+      "claim": "Dsk immunoreactivity is absent in \u0394DskGAL4/\u0394Dsk hetero-allelic mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "\u0394DskGAL4 is a null mutation for Dsk, as Dsk immunoreactivity is absent in both \u0394DskGAL4/\u0394Dsk hetero-allelic (Figure 1D) and \u0394DskGAL4/\u0394DskGAL4 homozygotes (Figure 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by immunohistochemical data shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:36:14.166523Z"
+    },
+    {
+      "id": "43568760-76af-4bb1-88f2-8f3e4a8f2cf0",
+      "content_id": "a04f9962-0655-4084-921e-5f34d798a70c",
+      "claim_id": "C28",
+      "claim": "Dsk immunoreactivity is absent in \u0394DskGAL4/\u0394DskGAL4 homozygotes.",
+      "claim_type": "EXPLICIT",
+      "source": "\u0394DskGAL4 is a null mutation for Dsk, as Dsk immunoreactivity is absent in both \u0394DskGAL4/\u0394Dsk hetero-allelic (Figure 1D) and \u0394DskGAL4/\u0394DskGAL4 homozygotes (Figure 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by immunohistochemical data shown in Figure 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:36:14.166523Z"
+    },
+    {
+      "id": "a3f15c58-fea4-4d2f-adaf-3de0a722651d",
+      "content_id": "a04f9962-0655-4084-921e-5f34d798a70c",
+      "claim_id": "C29",
+      "claim": "\u0394DskGAL4 driven UAS-Dsk expression was capable of restoring the Dsk immunoreactivity in \u0394DskGAL4/\u0394DskGAL4 homozygous mutant background.",
+      "claim_type": "EXPLICIT",
+      "source": "\u0394DskGAL4 driven UAS-Dsk expression was capable of restoring the Dsk immunoreactivity in both \u0394DskGAL4/\u0394DskGAL4 homozygous mutant background (Figure 1F) and \u0394DskGAL4/\u0394Dsk hetero-allelic mutant background (Figure 1G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by immunohistochemical data shown in Figure 1F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:36:14.166523Z"
+    },
+    {
+      "id": "19a9be68-d27a-4c0d-aa38-0b41986b436c",
+      "content_id": "a04f9962-0655-4084-921e-5f34d798a70c",
+      "claim_id": "C30",
+      "claim": "\u0394DskGAL4 driven UAS-Dsk expression was capable of restoring the Dsk immunoreactivity in \u0394DskGAL4/\u0394Dsk hetero-allelic mutant background.",
+      "claim_type": "EXPLICIT",
+      "source": "\u0394DskGAL4 driven UAS-Dsk expression was capable of restoring the Dsk immunoreactivity in both \u0394DskGAL4/\u0394DskGAL4 homozygous mutant background (Figure 1F) and \u0394DskGAL4/\u0394Dsk hetero-allelic mutant background (Figure 1G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by immunohistochemical data shown in Figure 1G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:36:14.166523Z"
+    },
+    {
+      "id": "6f3b91c9-4ff7-4c49-9ecf-bd59d3575a05",
+      "content_id": "a04f9962-0655-4084-921e-5f34d798a70c",
+      "claim_id": "C31",
+      "claim": "Dsk expression in \u0394DskGAL4 neurons restores the aggression levels of \u0394DskGAL4/\u0394DskGAL4 and \u0394DskGAL4/\u0394Dsk mutants to comparable levels observed in heterozygous controls.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, Dsk expression in \u0394DskGAL4 neurons restores the aggression levels of \u0394DskGAL4/\u0394DskGAL4 and \u0394DskGAL4/\u0394Dsk mutants to comparable levels observed in heterozygous controls (Figure 1J and K).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by behavioral rescue data shown in Figure 1J and K.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:36:14.166523Z"
+    },
+    {
+      "id": "c85bd42b-e002-4cec-9ba5-b56626441dca",
+      "content_id": "a04f9962-0655-4084-921e-5f34d798a70c",
+      "claim_id": "C32",
+      "claim": "Eight neurons, with four neurons in the lateral region (DSK-L) and four neurons in the middle region (DSK-M) were labeled by DskGAL4 driving the expression of UAS-mCD8:GFP in the brain.",
+      "claim_type": "EXPLICIT",
+      "source": "Eight neurons, with four neurons in the lateral region (DSK-L) and four neurons in the middle region (DSK-M) were labeled by DskGAL4 driving the expression of UAS-mCD8:GFP in the brain, which fully recapitulated the endogenous expression pattern of Dsk in both female and male brains by co-staining experiments (Figure 2B and C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by anatomical data shown in Figure 2B and C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:36:14.166523Z"
+    },
+    {
+      "id": "14710e2d-38f2-4290-86b2-97ae58fac9fa",
+      "content_id": "a04f9962-0655-4084-921e-5f34d798a70c",
+      "claim_id": "C33",
+      "claim": "DskGAL4 driven UAS-mCD8:GFP expression fully recapitulated the endogenous expression pattern of Dsk in both female and male brains.",
+      "claim_type": "EXPLICIT",
+      "source": "Eight neurons, with four neurons in the lateral region (DSK-L) and four neurons in the middle region (DSK-M) were labeled by DskGAL4 driving the expression of UAS-mCD8:GFP in the brain, which fully recapitulated the endogenous expression pattern of Dsk in both female and male brains by co-staining experiments (Figure 2B and C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by co-staining experiments shown in Figure 2B and C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:36:14.166523Z"
+    },
+    {
+      "id": "09be5776-a5a4-470e-ac3d-04893f3e7da8",
+      "content_id": "a04f9962-0655-4084-921e-5f34d798a70c",
+      "claim_id": "C34",
+      "claim": "Eight DSK-expressing neurons were classified into three neuronal cell types.",
+      "claim_type": "EXPLICIT",
+      "source": "Morphologically, these DskGAL4 neurons could be classified into three neuronal types.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by MCFO analysis shown in Figure 2D-G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:36:14.166523Z"
+    },
+    {
+      "id": "b3956e97-0bf4-46cf-87b4-b4f8dcfaa28f",
+      "content_id": "a04f9962-0655-4084-921e-5f34d798a70c",
+      "claim_id": "C35",
+      "claim": "Type I neurons project to the lobula and ventrolateral neuropils, and extend descending fibers to innervate the Accessory Mesothoracic Neuropil (AMNp) in the VNC.",
+      "claim_type": "EXPLICIT",
+      "source": "The type I neurons project to the lobula and ventrolateral neuropils, and extend descending fibers to innervate the Accessory Mesothoracic Neuropil (AMNp) in the VNC (Figure 2E, Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by MCFO anatomical data shown in Figure 2E and Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:36:14.166523Z"
+    },
+    {
+      "id": "2181163d-d85f-486d-9542-a54d2bebac50",
+      "content_id": "a04f9962-0655-4084-921e-5f34d798a70c",
+      "claim_id": "C36",
+      "claim": "Type II neurons arborize in the ventrolateral neuropils and superior lateral protocerebrum.",
+      "claim_type": "EXPLICIT",
+      "source": "The type II neurons arborize in the ventrolateral neuropils and superior lateral protocerebrum (Figure 2F, Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by MCFO anatomical data shown in Figure 2F and Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:36:14.166523Z"
+    },
+    {
+      "id": "be2a3ac9-382c-45be-867a-1b69e9d3ade5",
+      "content_id": "a04f9962-0655-4084-921e-5f34d798a70c",
+      "claim_id": "C37",
+      "claim": "The arborizations of type III neurons project ipsilaterally to the superior lateral protocerebrum.",
+      "claim_type": "EXPLICIT",
+      "source": "The arborizations of type III neurons project ipsilaterally to the superior lateral protocerebrum (Figure 2G, Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by MCFO anatomical data shown in Figure 2G and Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:36:14.166523Z"
+    },
+    {
+      "id": "3faad049-cf02-4867-889b-82783dc241e2",
+      "content_id": "a04f9962-0655-4084-921e-5f34d798a70c",
+      "claim_id": "C38",
+      "claim": "Male flies with DskGAL4 neurons inhibited by TNT showed reduced lunge frequency.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared to control males, male flies with DskGAL4 neurons inhibited by either TNT or Kir2.1 showed reduced lunge frequency and prolonged fighting latency (Figure 2H\u2013K).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by behavioral data shown in Figure 2H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:36:14.166523Z"
+    },
+    {
+      "id": "ee4539d9-34a1-4176-aa8b-955ca2f08b5e",
+      "content_id": "a04f9962-0655-4084-921e-5f34d798a70c",
+      "claim_id": "C39",
+      "claim": "Male flies with DskGAL4 neurons inhibited by TNT showed prolonged fighting latency.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared to control males, male flies with DskGAL4 neurons inhibited by either TNT or Kir2.1 showed reduced lunge frequency and prolonged fighting latency (Figure 2H\u2013K).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by behavioral data shown in Figure 2I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:36:14.166523Z"
+    },
+    {
+      "id": "12e89033-881a-4b0a-a568-ca99d7ff6984",
+      "content_id": "a04f9962-0655-4084-921e-5f34d798a70c",
+      "claim_id": "C40",
+      "claim": "Male flies with DskGAL4 neurons inhibited by Kir2.1 showed reduced lunge frequency.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared to control males, male flies with DskGAL4 neurons inhibited by either TNT or Kir2.1 showed reduced lunge frequency and prolonged fighting latency (Figure 2H\u2013K).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by behavioral data shown in Figure 2J.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:36:14.166523Z"
+    },
+    {
+      "id": "f6a3a5de-38e9-4ff4-8e18-2332ec6faf09",
+      "content_id": "a04f9962-0655-4084-921e-5f34d798a70c",
+      "claim_id": "C41",
+      "claim": "Male flies with DskGAL4 neurons inhibited by Kir2.1 showed prolonged fighting latency.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared to control males, male flies with DskGAL4 neurons inhibited by either TNT or Kir2.1 showed reduced lunge frequency and prolonged fighting latency (Figure 2H\u2013K).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by behavioral data shown in Figure 2K.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:36:14.166523Z"
+    },
+    {
+      "id": "e7f2f144-8191-4e92-b3a1-bb2594896327",
+      "content_id": "a04f9962-0655-4084-921e-5f34d798a70c",
+      "claim_id": "C42",
+      "claim": "Males carrying DskGAL4 and UAS-dTRPA1 displayed higher aggression level at 28\u00b0C than at 21\u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "Males carrying DskGAL4 and UAS-dTRPA1 displayed higher aggression level at 28\u00b0C than at 21\u00b0C, and the temperature-dependent changes of aggression levels were not observed in males carrying DskGAL4 or UAS-dTRPA1 alone (Figure 2L\u2013M; Video 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by thermogenetic activation data shown in Figure 2L-M and Video 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:36:14.166523Z"
+    },
+    {
+      "id": "16eb9e02-bd2f-4546-b489-2d1b76370054",
+      "content_id": "a04f9962-0655-4084-921e-5f34d798a70c",
+      "claim_id": "C43",
+      "claim": "Temperature-dependent changes of aggression levels were not observed in males carrying DskGAL4 or UAS-dTRPA1 alone.",
+      "claim_type": "EXPLICIT",
+      "source": "Males carrying DskGAL4 and UAS-dTRPA1 displayed higher aggression level at 28\u00b0C than at 21\u00b0C, and the temperature-dependent changes of aggression levels were not observed in males carrying DskGAL4 or UAS-dTRPA1 alone (Figure 2L\u2013M; Video 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by control experiments shown in Figure 2L-M.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:36:14.166523Z"
+    },
+    {
+      "id": "c82b3892-37b0-4e9b-8461-ee81e2974a87",
+      "content_id": "a04f9962-0655-4084-921e-5f34d798a70c",
+      "claim_id": "C44",
+      "claim": "No significant changes of locomotion activity were observed after the inactivation or activation of DskGAL4 neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, no significant changes of locomotion activity were observed after the inactivation or activation of DskGAL4 neurons (Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by locomotion data shown in Figure 2\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:36:14.166523Z"
+    },
+    {
+      "id": "db2ac5f5-d8ef-4728-9c17-1c8e1fbae99e",
+      "content_id": "a04f9962-0655-4084-921e-5f34d798a70c",
+      "claim_id": "C45",
+      "claim": "There is a negative correlation between the number of type I plus type II neurons inhibited and the lunge numbers of individual flies.",
+      "claim_type": "EXPLICIT",
+      "source": "We found there is a negative correlation between the number of type I plus type II neurons inhibited and the lunge numbers of individual flies (Figure 2\u2014figure supplement 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by mosaic analysis data shown in Figure 2\u2014figure supplement 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:36:14.166523Z"
+    },
+    {
+      "id": "8fc25ec0-735e-4359-9ae4-2e8aa390a39b",
+      "content_id": "a04f9962-0655-4084-921e-5f34d798a70c",
+      "claim_id": "C46",
+      "claim": "Two putative Dsk receptors have been identified in Drosophila: CCKLR-17D1 and CCKLR-17D3.",
+      "claim_type": "EXPLICIT",
+      "source": "Two putative Dsk receptors have been identified in Drosophila: CCKLR-17D1 and CCKLR-17D3 (Kubiak et al., 2002; N\u00e4ssel and Williams, 2014; Nichols et al., 1988).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:36:14.166523Z"
+    },
+    {
+      "id": "744c61e2-7dc8-4270-8931-82d2cccc77ec",
+      "content_id": "a04f9962-0655-4084-921e-5f34d798a70c",
+      "claim_id": "C47",
+      "claim": "Aggressive behavior was largely abolished in \u0394CCKLR-17D1 mutants compared with wildtype controls.",
+      "claim_type": "EXPLICIT",
+      "source": "Aggressive behavior was largely abolished in \u0394CCKLR-17D1 mutants compared with wildtype controls, while \u0394CCKLR-17D3 mutants preserved normal level of aggression (Figure 3C and D), and no significant locomotion defects were observed for \u0394CCKLR-17D1 and \u0394CCKLR-17D3 mutants (Figure 3\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by behavioral data shown in Figure 3C and D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:36:14.166523Z"
+    },
+    {
+      "id": "f4393e48-e75c-4715-9cb8-2085d1c82ba8",
+      "content_id": "a04f9962-0655-4084-921e-5f34d798a70c",
+      "claim_id": "C48",
+      "claim": "\u0394CCKLR-17D3 mutants preserved normal level of aggression.",
+      "claim_type": "EXPLICIT",
+      "source": "Aggressive behavior was largely abolished in \u0394CCKLR-17D1 mutants compared with wildtype controls, while \u0394CCKLR-17D3 mutants preserved normal level of aggression (Figure 3C and D), and no significant locomotion defects were observed for \u0394CCKLR-17D1 and \u0394CCKLR-17D3 mutants (Figure 3\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by behavioral data shown in Figure 3C and D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:36:14.166523Z"
+    },
+    {
+      "id": "4707ee4c-1f02-43a4-868c-d5fe5e76f82f",
+      "content_id": "a04f9962-0655-4084-921e-5f34d798a70c",
+      "claim_id": "C49",
+      "claim": "No significant locomotion defects were observed for \u0394CCKLR-17D1 and \u0394CCKLR-17D3 mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "Aggressive behavior was largely abolished in \u0394CCKLR-17D1 mutants compared with wildtype controls, while \u0394CCKLR-17D3 mutants preserved normal level of aggression (Figure 3C and D), and no significant locomotion defects were observed for \u0394CCKLR-17D1 and \u0394CCKLR-17D3 mutants (Figure 3\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by locomotion data shown in Figure 3\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:36:14.166523Z"
+    },
+    {
+      "id": "ff84a45e-3aae-4eeb-8eb8-239939dfeffd",
+      "content_id": "a04f9962-0655-4084-921e-5f34d798a70c",
+      "claim_id": "C50",
+      "claim": "The reduced aggression phenotype in \u0394CCKLR-17D1 mutants could be rescued by pan-neuronal expression of UAS-CCKLR-17D1 driven by elav-GAL4.",
+      "claim_type": "EXPLICIT",
+      "source": "The reduced aggression phenotype could be rescued by pan-neuronal expression of UAS-CCKLR-17D1 driven by elav-GAL4 (Figure 3E and F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by genetic rescue data shown in Figure 3E and F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:36:14.166523Z"
+    },
+    {
+      "id": "d4ef80ea-afc7-42ed-80d6-40810835f4ab",
+      "content_id": "a04f9962-0655-4084-921e-5f34d798a70c",
+      "claim_id": "C51",
+      "claim": "RNAi silencing of CCKLR-17D1 using elav-GAL4 significantly suppressed aggression.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, RNAi silencing of CCKLR-17D1 using elav-GAL4 or CCKLR-17D1GAL4 also significantly suppressed aggression (Figure 3\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by RNAi knockdown data shown in Figure 3\u2014figure supplement 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:36:14.166523Z"
+    },
+    {
+      "id": "7daa03d5-fe41-4b5e-b148-9e00a99390d2",
+      "content_id": "a04f9962-0655-4084-921e-5f34d798a70c",
+      "claim_id": "C52",
+      "claim": "RNAi silencing of CCKLR-17D1 using CCKLR-17D1GAL4 significantly suppressed aggression.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, RNAi silencing of CCKLR-17D1 using elav-GAL4 or CCKLR-17D1GAL4 also significantly suppressed aggression (Figure 3\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by RNAi knockdown data shown in Figure 3\u2014figure supplement 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:36:14.166523Z"
+    },
+    {
+      "id": "5f57165e-8eeb-484f-bccd-9130d9eeac7b",
+      "content_id": "a04f9962-0655-4084-921e-5f34d798a70c",
+      "claim_id": "C53",
+      "claim": "CCKLR-17D1 is necessary for Dsk-mediated neuromodulation of aggressive behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that CCKLR-17D1 is necessary for Dsk-mediated neuromodulation of aggressive behavior.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the observation that dTRPA1 activation of DskGAL4 neurons no longer enhanced aggression in the absence of CCKLR-17D1 (Figure 3G and H).",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:36:14.166523Z"
+    },
+    {
+      "id": "22c7af7c-ab8f-4307-8884-f3247ac15ee0",
+      "content_id": "a04f9962-0655-4084-921e-5f34d798a70c",
+      "claim_id": "C54",
+      "claim": "dTRPA1 activation of DskGAL4 neuron no longer enhanced aggression level in the absence of CCKLR-17D1.",
+      "claim_type": "EXPLICIT",
+      "source": "In this case, dTRPA1 activation of DskGAL4 neuron no longer enhanced aggression level in the absence of CCKLR-17D1 (Figure 3G and H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by behavioral epistasis data shown in Figure 3G and H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:36:14.166523Z"
+    },
+    {
+      "id": "bd76183c-12ed-4b56-a5ad-87d1b9f65dd3",
+      "content_id": "a04f9962-0655-4084-921e-5f34d798a70c",
+      "claim_id": "C55",
+      "claim": "A subset of P1 neurons can promote aggression when activated.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous works revealed that several group of neurons including a subset of P1 neurons (Hoopfer et al., 2015), Fru\u2013 population of pC1 neurons (Koganezawa et al., 2016), pCd neurons (Jung et al., 2020), a small subset of aSP2 neurons (Watanabe et al., 2017), and a group of Fru+ Tk neurosn (Asahina et al., 2014) in the central brain can promote aggression when activated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citation to Hoopfer et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:36:14.166523Z"
+    },
+    {
+      "id": "fea90437-0778-4119-b4b3-07fa9fbde3a7",
+      "content_id": "a04f9962-0655-4084-921e-5f34d798a70c",
+      "claim_id": "C56",
+      "claim": "Fru\u2013 population of pC1 neurons can promote aggression when activated.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous works revealed that several group of neurons including a subset of P1 neurons (Hoopfer et al., 2015), Fru\u2013 population of pC1 neurons (Koganezawa et al., 2016), pCd neurons (Jung et al., 2020), a small subset of aSP2 neurons (Watanabe et al., 2017), and a group of Fru+ Tk neurosn (Asahina et al., 2014) in the central brain can promote aggression when activated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citation to Koganezawa et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:36:14.166523Z"
+    },
+    {
+      "id": "ad9e2b22-b29e-4c39-ae9e-bd8ac627af3a",
+      "content_id": "a04f9962-0655-4084-921e-5f34d798a70c",
+      "claim_id": "C57",
+      "claim": "pCd neurons can promote aggression when activated.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous works revealed that several group of neurons including a subset of P1 neurons (Hoopfer et al., 2015), Fru\u2013 population of pC1 neurons (Koganezawa et al., 2016), pCd neurons (Jung et al., 2020), a small subset of aSP2 neurons (Watanabe et al., 2017), and a group of Fru+ Tk neurosn (Asahina et al., 2014) in the central brain can promote aggression when activated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citation to Jung et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:36:14.166523Z"
+    },
+    {
+      "id": "07a26020-47b3-4ada-a064-03bdc2bc9b27",
+      "content_id": "a04f9962-0655-4084-921e-5f34d798a70c",
+      "claim_id": "C58",
+      "claim": "A small subset of aSP2 neurons can promote aggression when activated.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous works revealed that several group of neurons including a subset of P1 neurons (Hoopfer et al., 2015), Fru\u2013 population of pC1 neurons (Koganezawa et al., 2016), pCd neurons (Jung et al., 2020), a small subset of aSP2 neurons (Watanabe et al., 2017), and a group of Fru+ Tk neurosn (Asahina et al., 2014) in the central brain can promote aggression when activated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citation to Watanabe et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:36:14.166523Z"
+    },
+    {
+      "id": "f99820f6-9761-488f-873a-08131c77be76",
+      "content_id": "a04f9962-0655-4084-921e-5f34d798a70c",
+      "claim_id": "C59",
+      "claim": "A group of Fru+ Tk neurons can promote aggression when activated.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous works revealed that several group of neurons including a subset of P1 neurons (Hoopfer et al., 2015), Fru\u2013 population of pC1 neurons (Koganezawa et al., 2016), pCd neurons (Jung et al., 2020), a small subset of aSP2 neurons (Watanabe et al., 2017), and a group of Fru+ Tk neurosn (Asahina et al., 2014) in the central brain can promote aggression when activated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citation to Asahina et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:36:14.166523Z"
+    },
+    {
+      "id": "2d558ca2-2a57-4efc-b831-73396491b40a",
+      "content_id": "a04f9962-0655-4084-921e-5f34d798a70c",
+      "claim_id": "C60",
+      "claim": "There might be direct connections between a subset of P1 neurons and Dsk-expressing neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Our anterograde trans-synaptic tracing experiments using trans-Tango method (Talay et al., 2017) revealed that there might be direct connections between a subset of P1 neurons and Dsk-expressing neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by trans-Tango tracing data shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:36:14.166523Z"
+    },
+    {
+      "id": "9843ef19-1c51-4aac-a29d-8c5ce8db4f0b",
+      "content_id": "a04f9962-0655-4084-921e-5f34d798a70c",
+      "claim_id": "C61",
+      "claim": "A few post-synaptic neurons showed immunoreactivity to Dsk, suggesting that these Dsk-expressing neurons are post-synaptic to a subset of P1 neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, a few post-synaptic neurons showed immunoreactivity to Dsk, suggesting that these Dsk-expressing neurons are post-synaptic to a subset of P1 neurons (Figure 4A, Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by trans-Tango tracing data shown in Figure 4A and Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:36:14.166523Z"
+    },
+    {
+      "id": "a1e44976-5238-446e-a783-f7518dade232",
+      "content_id": "a04f9962-0655-4084-921e-5f34d798a70c",
+      "claim_id": "C62",
+      "claim": "Significant GRASP signals were observed between R71G01-LexA labeled P1 neurons and DSK neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, we confirmed the connection between a subset of P1 neurons and Dsk-expressing neurons using the GFP Reconstitution Across Synaptic Partners (GRASP) method (Alekseyenko et al., 2014; Feinberg et al., 2008). Significant GRASP signals were observed between R71G01-LexA labeled P1 neurons and DSK neurons (Figure 4B, Figure 4\u2014figure supplement 1; Pan et al., 2012).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by GRASP data shown in Figure 4B and Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:36:14.166523Z"
+    },
+    {
+      "id": "ab88b58a-a660-4e4f-a7bb-b7bb18cdf196",
+      "content_id": "a04f9962-0655-4084-921e-5f34d798a70c",
+      "claim_id": "C63",
+      "claim": "A subset of P1 neurons axons overlap with DSK dendrites.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, Anatomical registration of a subset of P1 neurons and DSK neurons suggests that a subset of P1 neurons axons overlap with DSK dendrites (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by anatomical registration data shown in Figure 4C.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:36:14.166523Z"
+    },
+    {
+      "id": "16eb6a15-255e-4a00-9071-46f4d6c4b266",
+      "content_id": "a04f9962-0655-4084-921e-5f34d798a70c",
+      "claim_id": "C64",
+      "claim": "The aggression-promoting effect of activating a subset of P1 neurons is dramatically suppressed by the loss of the Dsk gene.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that the aggression-promoting effect but not the courtship-promoting effect of a subset of P1 neurons activation is dramatically suppressed by the loss of the Dsk gene (Figure 4F and G, Figure 4\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by behavioral epistasis data shown in Figure 4F and G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:36:14.166523Z"
+    },
+    {
+      "id": "8385dbbf-a9c7-434d-89dc-e50c6f19ec91",
+      "content_id": "a04f9962-0655-4084-921e-5f34d798a70c",
+      "claim_id": "C65",
+      "claim": "The courtship-promoting effect of a subset of P1 neurons activation is not suppressed by the loss of the Dsk gene.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that the aggression-promoting effect but not the courtship-promoting effect of a subset of P1 neurons activation is dramatically suppressed by the loss of the Dsk gene (Figure 4F and G, Figure 4\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by courtship behavior data shown in Figure 4\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:36:14.166523Z"
+    },
+    {
+      "id": "c85f79e2-dcac-4e80-9444-2d0747893dcc",
+      "content_id": "a04f9962-0655-4084-921e-5f34d798a70c",
+      "claim_id": "C66",
+      "claim": "ATP activation of P1 neurons elicited robust electrical responses from DSK-M neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "In perforate patch recordings, ATP activation of P1 neurons elicited robust electrical responses from DSK-M neurons and relatively weak responses from DSK-L neurons (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by patch-clamp recording data shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:36:14.166523Z"
+    },
+    {
+      "id": "0e8d1263-c07c-4d1d-8edc-c884f16f8fe4",
+      "content_id": "a04f9962-0655-4084-921e-5f34d798a70c",
+      "claim_id": "C67",
+      "claim": "ATP activation of P1 neurons elicited relatively weak responses from DSK-L neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "In perforate patch recordings, ATP activation of P1 neurons elicited robust electrical responses from DSK-M neurons and relatively weak responses from DSK-L neurons (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by patch-clamp recording data shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:36:14.166523Z"
+    },
+    {
+      "id": "a0372746-6022-42d5-a9ca-bb4a6c5b8753",
+      "content_id": "a04f9962-0655-4084-921e-5f34d798a70c",
+      "claim_id": "C68",
+      "claim": "ATP stimulation elicited a strong calcium response in DSK-M neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistently, ATP stimulation elicited a strong calcium response in DSK-M neurons and a smaller calcium response in DSK-L neurons (Figure 5D and Video 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by calcium imaging data shown in Figure 5D and Video 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:36:14.166523Z"
+    },
+    {
+      "id": "dacbdb98-23bb-4e41-963a-c2c2964e598f",
+      "content_id": "a04f9962-0655-4084-921e-5f34d798a70c",
+      "claim_id": "C69",
+      "claim": "ATP stimulation elicited a smaller calcium response in DSK-L neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistently, ATP stimulation elicited a strong calcium response in DSK-M neurons and a smaller calcium response in DSK-L neurons (Figure 5D and Video 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by calcium imaging data shown in Figure 5D and Video 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:36:14.166523Z"
+    },
+    {
+      "id": "b0d18e6e-9fbe-46e6-a19f-4b93b85d9206",
+      "content_id": "a04f9962-0655-4084-921e-5f34d798a70c",
+      "claim_id": "C70",
+      "claim": "ATP activation of DSK neurons did not induce calcium responses in P1 neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, ATP activation of DSK neurons did not induce calcium responses in P1 neurons (Figure 5\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by calcium imaging data shown in Figure 5\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:36:14.166523Z"
+    },
+    {
+      "id": "6134835a-583d-4a05-844b-319a79295fb7",
+      "content_id": "a04f9962-0655-4084-921e-5f34d798a70c",
+      "claim_id": "C71",
+      "claim": "Dsk-expressing neurons receive inputs from P1 neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "These data further confirmed the functional connections between Dsk-expressing neurons and P1 neurons, suggesting that Dsk-expressing neurons receive inputs from P1 neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the electrophysiology and calcium imaging data showing that P1 activation elicits responses in DSK neurons but not vice versa.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:36:14.166523Z"
+    },
+    {
+      "id": "9de335a2-0cae-4648-8495-9af9c6a3f3d2",
+      "content_id": "a04f9962-0655-4084-921e-5f34d798a70c",
+      "claim_id": "C72",
+      "claim": "Hierarchical relationships could be established during fly fighting: the winners dominate the food patch and maintain high levels of aggressiveness, while the losers retreat and exhibit reduced aggression.",
+      "claim_type": "EXPLICIT",
+      "source": "It was well-known that hierarchical relationships could be established during fly fighting: the winners dominate the food patch and maintain high levels of aggressiveness, while the losers retreat and exhibit reduced aggression (Yurkovic et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citation to Yurkovic et al., 2006.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:36:14.166523Z"
+    },
+    {
+      "id": "272e2780-e356-47ff-9806-176d01950003",
+      "content_id": "a04f9962-0655-4084-921e-5f34d798a70c",
+      "claim_id": "C73",
+      "claim": "Conditional overexpression of Dsk can promote social dominance.",
+      "claim_type": "EXPLICIT",
+      "source": "It suggests that conditional overexpression of Dsk can promote social dominance (Figure 6A\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by social dominance experiments shown in Figure 6A-D.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:36:14.166523Z"
+    },
+    {
+      "id": "f332a054-4f9c-4ba6-a537-e21654ecf40e",
+      "content_id": "a04f9962-0655-4084-921e-5f34d798a70c",
+      "claim_id": "C74",
+      "claim": "The TRIC signals in the DSK-M neurons are significantly higher in the winner brains than in the loser and control brains.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the TRIC signals in the DSK-M neurons are significantly higher in the winner brains than in the loser and control brains (Figure 6E\u2013H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by TRIC data shown in Figure 6E-H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:36:14.166523Z"
+    },
+    {
+      "id": "a79b5f59-c541-4a08-be82-ae82f171ccd8",
+      "content_id": "a04f9962-0655-4084-921e-5f34d798a70c",
+      "claim_id": "C75",
+      "claim": "DSK-M neurons appear to be hyperactive in winners.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus DSK-M neurons appear to be hyperactive in winners.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the TRIC data showing higher signals in winner brains.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:36:14.166523Z"
+    },
+    {
+      "id": "4cb06d37-8b56-46b7-9832-31996ce8778e",
+      "content_id": "a04f9962-0655-4084-921e-5f34d798a70c",
+      "claim_id": "C76",
+      "claim": "TRIC signals are not detectable in the DSK-L neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "It should be noted that TRIC signals are not detectable in the DSK-L neurons, possibly due to low levels of baseline activity in the DSK-L neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the TRIC experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:36:14.166523Z"
+    },
+    {
+      "id": "7adff6d6-e049-4bc2-8c52-96cbe6cfd67d",
+      "content_id": "a04f9962-0655-4084-921e-5f34d798a70c",
+      "claim_id": "C77",
+      "claim": "Low levels of baseline activity in the DSK-L neurons may explain why TRIC signals are not detectable in these neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "It should be noted that TRIC signals are not detectable in the DSK-L neurons, possibly due to low levels of baseline activity in the DSK-L neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about why TRIC signals are not detected in DSK-L neurons.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:36:14.166523Z"
+    },
+    {
+      "id": "70a13e98-c683-4197-9d55-ee5e409f7368",
+      "content_id": "a04f9962-0655-4084-921e-5f34d798a70c",
+      "claim_id": "C78",
+      "claim": "Dsk is closely linked to the establishment of dominance.",
+      "claim_type": "EXPLICIT",
+      "source": "Conditional overexpression of Dsk promotes winner effects, suggesting that Dsk is closely linked to the establishment of dominance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the conditional overexpression and TRIC experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:36:14.166523Z"
+    },
+    {
+      "id": "985fa40f-6b88-40c6-a128-2432dbff8efb",
+      "content_id": "a04f9962-0655-4084-921e-5f34d798a70c",
+      "claim_id": "C79",
+      "claim": "Cholecystokinin-like neuropeptide is likely to be evolutionarily conserved for the neuromodulation of aggression.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, our results elucidate the molecular and circuit mechanism underlying male aggression and suggest that cholecystokinin-like neuropeptide is likely to be evolutionarily conserved for the neuromodulation of aggression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the similarity between Dsk and CCK functions across species.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:36:14.166523Z"
+    },
+    {
+      "id": "795d4979-0b0c-4001-b837-d5efe37dfc26",
+      "content_id": "a04f9962-0655-4084-921e-5f34d798a70c",
+      "claim_id": "C80",
+      "claim": "The Dsk system acts downstream of a subset of P1 neurons specifically required for aggression.",
+      "claim_type": "EXPLICIT",
+      "source": "This dissociation suggests that while a subset of P1 neurons signal an arousal state facilitating both aggression and courtship, the Dsk system acts downstream of a subset of P1 neurons specifically required for aggression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the observation that loss of Dsk suppresses aggression but not courtship promoted by P1 activation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:36:14.166523Z"
+    },
+    {
+      "id": "8b3014aa-3bc0-4656-97de-ac3d4b6b68b6",
+      "content_id": "a04f9962-0655-4084-921e-5f34d798a70c",
+      "claim_id": "C81",
+      "claim": "A subset of P1 neurons signal an arousal state facilitating both aggression and courtship.",
+      "claim_type": "EXPLICIT",
+      "source": "This dissociation suggests that while a subset of P1 neurons signal an arousal state facilitating both aggression and courtship, the Dsk system acts downstream of a subset of P1 neurons specifically required for aggression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the observation that P1 activation promotes both behaviors.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:36:14.166523Z"
+    },
+    {
+      "id": "3b9b9500-9129-4da3-8426-45c64953265e",
+      "content_id": "a04f9962-0655-4084-921e-5f34d798a70c",
+      "claim_id": "C82",
+      "claim": "Dsk is involved in feeding behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "As a caveat, it has been reported that Dsk is involved in feeding behavior (N\u00e4ssel and Williams, 2014; Williams et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:36:14.166523Z"
+    },
+    {
+      "id": "0b56879f-abe9-4701-a7c6-c4329b144a41",
+      "content_id": "a04f9962-0655-4084-921e-5f34d798a70c",
+      "claim_id": "C83",
+      "claim": "\u0394Dsk mutants show increased food consumption in the CAFE essay.",
+      "claim_type": "EXPLICIT",
+      "source": "Our experiment also reproduced the result that \u0394Dsk mutants show increased food consumption in the CAFE essay (Diegelmann et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by feeding behavior data shown in Figure 1\u2014figure supplement 5D.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:36:14.166523Z"
+    },
+    {
+      "id": "1d4082ba-830f-4f44-81ab-616cbebb7ba9",
+      "content_id": "a04f9962-0655-4084-921e-5f34d798a70c",
+      "claim_id": "C84",
+      "claim": "There is a positive correlation between the body size of flies and the aggression level.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies reported a positive correlation between the body size of flies and the aggression level, suggesting that the modulational effects of DSK neurons on aggression and feeding can be separated (Hoffmann, 1987; Hoffmann, 1990).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations to Hoffmann, 1987 and 1990.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:36:14.166523Z"
+    },
+    {
+      "id": "81ff73f1-607b-4e8a-bc30-8fd4ee0bf066",
+      "content_id": "a04f9962-0655-4084-921e-5f34d798a70c",
+      "claim_id": "C85",
+      "claim": "The modulational effects of DSK neurons on aggression and feeding can be separated.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies reported a positive correlation between the body size of flies and the aggression level, suggesting that the modulational effects of DSK neurons on aggression and feeding can be separated (Hoffmann, 1987; Hoffmann, 1990).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on previous studies showing correlation between body size and aggression.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:36:14.166523Z"
+    },
+    {
+      "id": "c3eba67b-a662-4b1f-ab61-b19cd7bd6014",
+      "content_id": "a04f9962-0655-4084-921e-5f34d798a70c",
+      "claim_id": "C86",
+      "claim": "Type I and II neurons correspond to DSK-M.",
+      "claim_type": "EXPLICIT",
+      "source": "Note that Type I and II neurons correspond to DSK-M and Type III neurons correspond to DSK-L.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a clarification of the relationship between the two classification systems.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:36:14.166523Z"
+    },
+    {
+      "id": "2f0d8e6d-34c5-4387-8133-43e2643615e4",
+      "content_id": "a04f9962-0655-4084-921e-5f34d798a70c",
+      "claim_id": "C87",
+      "claim": "Type III neurons correspond to DSK-L.",
+      "claim_type": "EXPLICIT",
+      "source": "Note that Type I and II neurons correspond to DSK-M and Type III neurons correspond to DSK-L.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a clarification of the relationship between the two classification systems.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:36:14.166523Z"
+    },
+    {
+      "id": "ae7d7894-d931-4868-beda-5c4ab21f7190",
+      "content_id": "a04f9962-0655-4084-921e-5f34d798a70c",
+      "claim_id": "C88",
+      "claim": "DSK-M neurons showed stronger responses to a subset of P1 neurons activation than DSK-L neurons.",
+      "claim_type": "IMPLICIT",
+      "source": "Our finding that DSK-M neurons showed stronger responses to a subset of P1 neurons activation is consistent with the behavioral results of the flip-out experiment, in which Type I and II neurons, but not Type III, are critical to aggression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the electrophysiology and calcium imaging data (Figure 5).",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:36:14.166523Z"
+    },
+    {
+      "id": "5947cd6d-af1e-458a-9539-56b36e75446f",
+      "content_id": "a04f9962-0655-4084-921e-5f34d798a70c",
+      "claim_id": "C89",
+      "claim": "Type I and II neurons, but not Type III, are critical to aggression.",
+      "claim_type": "EXPLICIT",
+      "source": "Our finding that DSK-M neurons showed stronger responses to a subset of P1 neurons activation is consistent with the behavioral results of the flip-out experiment, in which Type I and II neurons, but not Type III, are critical to aggression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by mosaic analysis data shown in Figure 2\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:36:14.166523Z"
+    },
+    {
+      "id": "d68f4dbf-db9c-49f6-89a3-7aef67eada86",
+      "content_id": "a04f9962-0655-4084-921e-5f34d798a70c",
+      "claim_id": "C90",
+      "claim": "Cholecystokinin is linked to a number of psychiatric disorders.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous study implicated that the cholecystokinin system is closely linked with various human psychiatric disorders, such as bipolar disorder (Sears et al., 2013) and panic attacks (Bradwejn et al., 1990).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:36:14.166523Z"
+    },
+    {
+      "id": "018ab7d2-27e7-4b90-8052-b6ed422a306e",
+      "content_id": "a04f9962-0655-4084-921e-5f34d798a70c",
+      "claim_id": "C91",
+      "claim": "Cholecystokinin is linked to bipolar disorder.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous study implicated that the cholecystokinin system is closely linked with various human psychiatric disorders, such as bipolar disorder (Sears et al., 2013) and panic attacks (Bradwejn et al., 1990).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citation to Sears et al., 2013.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:36:14.166523Z"
+    },
+    {
+      "id": "20b25eb4-b278-4d9d-a06d-b0798f097cb0",
+      "content_id": "a04f9962-0655-4084-921e-5f34d798a70c",
+      "claim_id": "C92",
+      "claim": "Cholecystokinin is linked to panic attacks.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous study implicated that the cholecystokinin system is closely linked with various human psychiatric disorders, such as bipolar disorder (Sears et al., 2013) and panic attacks (Bradwejn et al., 1990).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citation to Bradwejn et al., 1990.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:36:14.166523Z"
+    },
+    {
+      "id": "f4262d69-1779-4b6d-8b0f-499f8b4d61da",
+      "content_id": "a04f9962-0655-4084-921e-5f34d798a70c",
+      "claim_id": "C93",
+      "claim": "Verbal aggression is promoted by the administration of cholecystokinin tetrapeptide in human subjects.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, verbal aggression is promoted by the administration of cholecystokinin tetrapeptide in human subjects (T\u00f5ru et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citation to T\u00f5ru et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:36:14.166523Z"
+    },
+    {
+      "id": "af5bdb30-90c3-41b8-90c8-50f577e1f9b0",
+      "content_id": "a04f9962-0655-4084-921e-5f34d798a70c",
+      "claim_id": "C94",
+      "claim": "Cholecystokinin agonists potentiate the defensive rage behavior in cats.",
+      "claim_type": "EXPLICIT",
+      "source": "In cats, cholecystokinin agonists potentiate the defensive rage behavior while the cholecystokinin antagonists suppress it (Luo et al., 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citation to Luo et al., 1998.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:36:14.166523Z"
+    },
+    {
+      "id": "f2446467-75c2-45a5-bc72-600d9d9b8694",
+      "content_id": "a04f9962-0655-4084-921e-5f34d798a70c",
+      "claim_id": "C95",
+      "claim": "Cholecystokinin antagonists suppress defensive rage behavior in cats.",
+      "claim_type": "EXPLICIT",
+      "source": "In cats, cholecystokinin agonists potentiate the defensive rage behavior while the cholecystokinin antagonists suppress it (Luo et al., 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citation to Luo et al., 1998.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:36:14.166523Z"
+    },
+    {
+      "id": "cfbbb1a7-81db-4c2b-9a88-2feb901ef50a",
+      "content_id": "a04f9962-0655-4084-921e-5f34d798a70c",
+      "claim_id": "C96",
+      "claim": "The cholecystokinin system is linked to aggressive behavior in a variety of species.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the cholecystokinin system is linked to aggressive behavior in a variety of species and is likely to be an evolutionarily conserved pathway for modulating aggressiveness.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the data from this study and previous literature on CCK in other species.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:36:14.166523Z"
+    },
+    {
+      "id": "dc9e998f-248c-4004-b808-0e04ea7e5d6c",
+      "content_id": "a04f9962-0655-4084-921e-5f34d798a70c",
+      "claim_id": "C97",
+      "claim": "The cholecystokinin system is likely to be an evolutionarily conserved pathway for modulating aggressiveness.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the cholecystokinin system is linked to aggressive behavior in a variety of species and is likely to be an evolutionarily conserved pathway for modulating aggressiveness.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the similarity of CCK/Dsk function across species.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:36:14.166523Z"
+    },
+    {
+      "id": "1c397453-be77-4456-abd2-f561964177f7",
+      "content_id": "a04f9962-0655-4084-921e-5f34d798a70c",
+      "claim_id": "C98",
+      "claim": "The establishment of social hierarchy is only observed in males.",
+      "claim_type": "EXPLICIT",
+      "source": "The establishment of social hierarchy is only observed in males (Nilsen et al., 2004), and this male-specific feature of fly aggression is specified by fruitless (Vrontou et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citation to Nilsen et al., 2004.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:36:14.166523Z"
+    },
+    {
+      "id": "0e373690-da3c-480d-9e2d-068385d78a52",
+      "content_id": "a04f9962-0655-4084-921e-5f34d798a70c",
+      "claim_id": "C99",
+      "claim": "The male-specific feature of fly aggression is specified by fruitless.",
+      "claim_type": "EXPLICIT",
+      "source": "The establishment of social hierarchy is only observed in males (Nilsen et al., 2004), and this male-specific feature of fly aggression is specified by fruitless (Vrontou et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citation to Vrontou et al., 2006.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:36:14.166523Z"
+    },
+    {
+      "id": "81745eba-1639-458c-922c-98104771e6e4",
+      "content_id": "a04f9962-0655-4084-921e-5f34d798a70c",
+      "claim_id": "C100",
+      "claim": "Winners display increased calcium activity in the median Dsk-expressing neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "In this study, Using a transcriptional reporter of intracellular calcium (TRIC), we found that winners display increased calcium activity in the median Dsk-expressing neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by TRIC data shown in Figure 6E-H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:36:14.166523Z"
+    },
+    {
+      "id": "5d1b64d9-55df-4786-aff4-e229866849d0",
+      "content_id": "a04f9962-0655-4084-921e-5f34d798a70c",
+      "claim_id": "C101",
+      "claim": "Conditional overexpression of Dsk specifically in the adult stage increases the flies' aggressiveness.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, conditional overexpression of Dsk specifically in the adult stage increases the flies' aggressiveness and makes them more likely to win against opponents without Dsk overexpression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by RU486-induced overexpression experiments shown in Figure 6A-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:36:14.166523Z"
+    },
+    {
+      "id": "7b053e1e-5b14-470c-8db0-3d039b845268",
+      "content_id": "a04f9962-0655-4084-921e-5f34d798a70c",
+      "claim_id": "C102",
+      "claim": "Conditional overexpression of Dsk makes flies more likely to win against opponents without Dsk overexpression.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, conditional overexpression of Dsk specifically in the adult stage increases the flies' aggressiveness and makes them more likely to win against opponents without Dsk overexpression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by social dominance experiments shown in Figure 6A-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:36:14.166523Z"
+    },
+    {
+      "id": "dcdd53e1-48f0-4dd7-8258-79f34ea80f14",
+      "content_id": "a04f9962-0655-4084-921e-5f34d798a70c",
+      "claim_id": "C103",
+      "claim": "The Dsk system may be involved in the establishment of social hierarchy during fly aggression.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, both the enhanced Dsk signaling in the brain and the winning-promoting effect of conditional overexpression supported that the Dsk system may be involved in the establishment of social hierarchy during fly aggression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the TRIC and conditional overexpression data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:36:14.166523Z"
+    },
+    {
+      "id": "9178aa90-3ba2-439c-8b39-45941812a3a9",
+      "content_id": "a04f9962-0655-4084-921e-5f34d798a70c",
+      "claim_id": "C104",
+      "claim": "The mammalian ortholog CCK has been implicated in aggression.",
+      "claim_type": "EXPLICIT",
+      "source": "Previously the mamalian ortholog CCK has been implicated in aggression (Li et al., 2007; Luo et al., 1998), thus our work suggests a potentially conserved neural pathway for the modulation of aggressive behavior.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations to Li et al., 2007 and Luo et al., 1998.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:36:14.166523Z"
+    },
+    {
+      "id": "3aaa38c4-1f1d-478e-ac1d-fd6753963c18",
+      "content_id": "a04f9962-0655-4084-921e-5f34d798a70c",
+      "claim_id": "C105",
+      "claim": "The work suggests a potentially conserved neural pathway for the modulation of aggressive behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "Previously the mamalian ortholog CCK has been implicated in aggression (Li et al., 2007; Luo et al., 1998), thus our work suggests a potentially conserved neural pathway for the modulation of aggressive behavior.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the similarity between Dsk and CCK functions.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:36:14.166523Z"
+    },
+    {
+      "id": "a680f939-7113-49ff-b4d5-bfbdcbe62f1a",
+      "content_id": "a04f9962-0655-4084-921e-5f34d798a70c",
+      "claim_id": "C106",
+      "claim": "Infusion of CCK induces panic attack in humans.",
+      "claim_type": "EXPLICIT",
+      "source": "Infusion of CCK induces panic attack in humans (Bradwejn et al., 1990).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citation to Bradwejn et al., 1990.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:36:14.166523Z"
+    },
+    {
+      "id": "e99b07d7-c0df-427e-a386-c6c8fbf6fa6b",
+      "content_id": "a04f9962-0655-4084-921e-5f34d798a70c",
+      "claim_id": "C107",
+      "claim": "Enhanced CCK level is detected in a rat model of social defeat.",
+      "claim_type": "EXPLICIT",
+      "source": "Enhanced CCK level is detected in a rat model of social defeat (Becker et al., 2001; Becker et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations to Becker et al., 2001 and 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:36:14.166523Z"
+    },
+    {
+      "id": "29e431ae-2fee-4c15-8f4f-50bb507e4126",
+      "content_id": "a04f9962-0655-4084-921e-5f34d798a70c",
+      "claim_id": "C108",
+      "claim": "CCK is implicated to act in the periaqueductal gray to potentiate defensive rage behavior in cats.",
+      "claim_type": "EXPLICIT",
+      "source": "CCK is implicated to act in the periaqueductal gray to potentiate defensive rage behavior in cats (Luo et al., 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citation to Luo et al., 1998.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:36:14.166523Z"
+    },
+    {
+      "id": "052afe62-cb0f-4044-a9a2-3f641d495ae0",
+      "content_id": "a04f9962-0655-4084-921e-5f34d798a70c",
+      "claim_id": "C109",
+      "claim": "CCK is a satiety signal in a number of species.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, CCK is a satiety signal in a number of species.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:36:14.166523Z"
+    },
+    {
+      "id": "99873438-cfec-4ad5-bae6-78cf77f4991e",
+      "content_id": "a04f9962-0655-4084-921e-5f34d798a70c",
+      "claim_id": "C110",
+      "claim": "Silencing CCK-like peptide Drosulfakinin could decrease satiety signaling and increase intake of food in flies.",
+      "claim_type": "EXPLICIT",
+      "source": "Silencing CCK-like peptide Drosulfakinin could decrease satiety signaling and increase intake of food in flies. (N\u00e4ssel and Williams, 2014; Williams et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations to N\u00e4ssel and Williams, 2014 and Williams et al., 2014.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:36:14.166523Z"
+    },
+    {
+      "id": "8424a16d-03ab-473a-b9ef-2b99cbe0adaa",
+      "content_id": "a04f9962-0655-4084-921e-5f34d798a70c",
+      "claim_id": "C111",
+      "claim": "Co-injection of nesfatin-1 and CCK8 decreased food intake in Siberian sturgeon (Acipenser baerii).",
+      "claim_type": "EXPLICIT",
+      "source": "Co-injection of nesfatin-1 and CCK8 decreased food intake in Siberian sturgeon (Acipenser baerii) (Zhang et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citation to Zhang et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:36:14.166523Z"
+    },
+    {
+      "id": "cccdc1fc-6825-4b19-ab80-a557e4ae42af",
+      "content_id": "a04f9962-0655-4084-921e-5f34d798a70c",
+      "claim_id": "C112",
+      "claim": "The winner state is perceived as a reward signal.",
+      "claim_type": "EXPLICIT",
+      "source": "The winner state is perceived as a reward signal while losing experience is aversive (Kim et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citation to Kim et al., 2018.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:36:14.166523Z"
+    },
+    {
+      "id": "1aa7329f-f076-4c08-a4b6-1e3ee0655ded",
+      "content_id": "a04f9962-0655-4084-921e-5f34d798a70c",
+      "claim_id": "C113",
+      "claim": "Losing experience is aversive.",
+      "claim_type": "EXPLICIT",
+      "source": "The winner state is perceived as a reward signal while losing experience is aversive (Kim et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citation to Kim et al., 2018.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:36:14.166523Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "7bc523a3-53bb-4bef-8939-446af642dc46",
+      "content_id": "a04f9962-0655-4084-921e-5f34d798a70c",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Loss-of-function mutations in Dsk reduce aggressive behavior in both male and female Drosophila. Homozygous \u0394Dsk mutants show reduced lunge frequency, wing threat frequency, and prolonged fighting latency. Genetic rescue experiments restore aggression to control levels.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C16-C19, C21 provide converging evidence from knockout mutants showing reduced aggression across multiple behavioral metrics. Claims C26-C31 demonstrate proper genetic controls with null alleles and successful rescue experiments, establishing causality. The data are internally consistent and appropriately controlled.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:36:14.166523Z"
+    },
+    {
+      "id": "f4580e08-5a69-4e3a-bac7-f8dc96fe9336",
+      "content_id": "a04f9962-0655-4084-921e-5f34d798a70c",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Dsk-expressing neurons are necessary and sufficient for aggressive behavior. Eight Dsk neurons are classified into three morphological types (I, II, III), with Type I and II neurons (DSK-M) being critical for aggression. Thermogenetic activation increases aggression while genetic silencing decreases it.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4-C5, C38-C43 demonstrate bidirectional control of aggression through neuronal manipulation with appropriate controls (C43-C44). Claims C32-C37 provide anatomical characterization. Claims C45, C88-C89 from mosaic analysis identify specific neuron subtypes required for aggression, showing dose-dependent effects. The convergence of gain-of-function, loss-of-function, and anatomical data strongly supports the conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:36:14.166523Z"
+    },
+    {
+      "id": "984ad3b1-ab05-4aae-a676-c4010cd67235",
+      "content_id": "a04f9962-0655-4084-921e-5f34d798a70c",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The Dsk receptor CCKLR-17D1, but not CCKLR-17D3, is necessary for aggressive behavior. \u0394CCKLR-17D1 mutants show abolished aggression that can be rescued by pan-neuronal receptor expression. CCKLR-17D1 is required for Dsk neuron-mediated aggression enhancement.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47-C48 demonstrate receptor specificity with appropriate controls. Claims C50-C52 show genetic rescue and RNAi knockdown effects. Claim C54 provides epistasis data showing CCKLR-17D1 is necessary for Dsk neuron function. The multiple lines of evidence (knockout, rescue, RNAi, epistasis) converge to support receptor identification.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:36:14.166523Z"
+    },
+    {
+      "id": "8fe72fd5-c5e9-4564-a9d6-e9db90b26bd2",
+      "content_id": "a04f9962-0655-4084-921e-5f34d798a70c",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Dsk-expressing neurons function downstream of P1 neurons to specifically control aggression but not courtship. Trans-Tango tracing, GRASP, and anatomical registration reveal synaptic connections. Electrophysiology and calcium imaging show functional connectivity with DSK-M neurons responding more strongly than DSK-L neurons to P1 activation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C60-C63 provide anatomical evidence for connectivity using three independent methods. Claims C64-C65 demonstrate behavioral specificity through epistasis experiments. Claims C66-C71 provide functional evidence through electrophysiology and calcium imaging with appropriate controls (C70). The convergence of anatomical, functional, and behavioral data strongly supports the circuit relationship.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:36:14.166523Z"
+    },
+    {
+      "id": "88c6e621-249c-4c36-a1a7-84cf3a561dc5",
+      "content_id": "a04f9962-0655-4084-921e-5f34d798a70c",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Dsk signaling is upregulated in winner flies and promotes social dominance. Winners show increased calcium activity in DSK-M neurons measured by TRIC. Conditional overexpression of Dsk in adults increases aggressiveness and winning probability.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7, C74-C75, C100 provide TRIC data showing elevated activity in winners. Claims C8, C73, C101-C102 demonstrate that Dsk overexpression promotes dominance. The correlation between neural activity and behavioral state, combined with gain-of-function effects on dominance, supports the conclusion. However, the causal relationship could be strengthened with additional manipulations during established hierarchies.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:36:14.166523Z"
+    },
+    {
+      "id": "c14e5deb-c4cb-469c-9ece-c7d2c65c74a2",
+      "content_id": "a04f9962-0655-4084-921e-5f34d798a70c",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The cholecystokinin-like neuropeptide system is evolutionarily conserved for aggression modulation. The mammalian ortholog CCK has been implicated in aggression across multiple species including humans, cats, and rats.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10, C93-C95, C104, C106-C108 cite established literature on CCK's role in aggression and related behaviors across species. Claims C11, C79, C96-C97, C105 draw reasonable inferences about conservation based on functional similarity. However, this is primarily a literature-based comparative claim rather than direct experimental evidence from the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:36:14.166523Z"
+    },
+    {
+      "id": "353e88fa-ad76-407c-825a-1136a457e396",
+      "content_id": "a04f9962-0655-4084-921e-5f34d798a70c",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Dsk mutants show behavioral specificity: aggression is reduced while courtship and locomotion are normal, but food intake is increased. The effects on aggression and feeding may be separable based on body size correlations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C23-C24 demonstrate behavioral specificity with appropriate control assays. Claims C25, C83 confirm known feeding phenotypes. Claims C84-C85 cite literature suggesting separability but this remains speculative without direct experimental evidence. The behavioral specificity data are solid, but the mechanistic separation of aggression and feeding functions requires further investigation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:36:14.166523Z"
+    },
+    {
+      "id": "7ba39217-b7f5-41da-8aac-5cf8b7577096",
+      "content_id": "a04f9962-0655-4084-921e-5f34d798a70c",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Background knowledge claims about aggression biology, Drosophila aggression history, known aggression-promoting neurons, social hierarchy, and CCK function in feeding and reward.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims (C12-C15, C55-C59, C72, C98-C99, C109-C113) represent established knowledge supported by appropriate citations. They provide context but are not novel findings from this study. The citations appear appropriate for the claims made.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:36:14.166523Z"
+    },
+    {
+      "id": "585bd23f-d533-4cf9-b82b-c32736b2706e",
+      "content_id": "a04f9962-0655-4084-921e-5f34d798a70c",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "TRIC signals are not detectable in DSK-L neurons, possibly due to low baseline activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C76 reports an observation, but C77 is speculation without supporting evidence. The lack of signal could reflect low activity, technical limitations of TRIC sensitivity, or other factors. Additional experiments with alternative activity reporters would be needed to distinguish these possibilities.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:36:14.166523Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "eb7e3b2c-95ea-45de-bdb8-26d2eb333a25",
+      "result_id": "7bc523a3-53bb-4bef-8939-446af642dc46"
+    },
+    {
+      "claim_id": "b34c49a5-bfd1-4c7c-af6c-3aa529ea9820",
+      "result_id": "7bc523a3-53bb-4bef-8939-446af642dc46"
+    },
+    {
+      "claim_id": "ade7d6fd-2905-4451-aa8c-3b2231d30e27",
+      "result_id": "7bc523a3-53bb-4bef-8939-446af642dc46"
+    },
+    {
+      "claim_id": "5a860b74-8cf9-4653-8d2c-125a386d96dd",
+      "result_id": "7bc523a3-53bb-4bef-8939-446af642dc46"
+    },
+    {
+      "claim_id": "1cac3a3e-b4f6-4b7f-a675-9664d6e08896",
+      "result_id": "7bc523a3-53bb-4bef-8939-446af642dc46"
+    },
+    {
+      "claim_id": "a2de6242-5487-4b8a-b42c-975a6c4c5294",
+      "result_id": "7bc523a3-53bb-4bef-8939-446af642dc46"
+    },
+    {
+      "claim_id": "fb179836-978c-458b-9e55-c00ff116de52",
+      "result_id": "7bc523a3-53bb-4bef-8939-446af642dc46"
+    },
+    {
+      "claim_id": "949d0f7b-575e-4e5c-90bc-c6ce8245a9a2",
+      "result_id": "7bc523a3-53bb-4bef-8939-446af642dc46"
+    },
+    {
+      "claim_id": "9bd51b0f-3499-49c7-ab4c-9e6a5aceeaf7",
+      "result_id": "7bc523a3-53bb-4bef-8939-446af642dc46"
+    },
+    {
+      "claim_id": "4178a8ac-e42a-455f-9417-bdd1094d0393",
+      "result_id": "7bc523a3-53bb-4bef-8939-446af642dc46"
+    },
+    {
+      "claim_id": "7815ebed-53a5-4677-a8bb-a2a8cd13cf77",
+      "result_id": "7bc523a3-53bb-4bef-8939-446af642dc46"
+    },
+    {
+      "claim_id": "43568760-76af-4bb1-88f2-8f3e4a8f2cf0",
+      "result_id": "7bc523a3-53bb-4bef-8939-446af642dc46"
+    },
+    {
+      "claim_id": "a3f15c58-fea4-4d2f-adaf-3de0a722651d",
+      "result_id": "7bc523a3-53bb-4bef-8939-446af642dc46"
+    },
+    {
+      "claim_id": "19a9be68-d27a-4c0d-aa38-0b41986b436c",
+      "result_id": "7bc523a3-53bb-4bef-8939-446af642dc46"
+    },
+    {
+      "claim_id": "6f3b91c9-4ff7-4c49-9ecf-bd59d3575a05",
+      "result_id": "7bc523a3-53bb-4bef-8939-446af642dc46"
+    },
+    {
+      "claim_id": "91a985cf-e214-46d9-8184-ebb2b6b071b3",
+      "result_id": "f4580e08-5a69-4e3a-bac7-f8dc96fe9336"
+    },
+    {
+      "claim_id": "4fc94731-be70-4483-922f-d2b37ab70f98",
+      "result_id": "f4580e08-5a69-4e3a-bac7-f8dc96fe9336"
+    },
+    {
+      "claim_id": "c85bd42b-e002-4cec-9ba5-b56626441dca",
+      "result_id": "f4580e08-5a69-4e3a-bac7-f8dc96fe9336"
+    },
+    {
+      "claim_id": "14710e2d-38f2-4290-86b2-97ae58fac9fa",
+      "result_id": "f4580e08-5a69-4e3a-bac7-f8dc96fe9336"
+    },
+    {
+      "claim_id": "09be5776-a5a4-470e-ac3d-04893f3e7da8",
+      "result_id": "f4580e08-5a69-4e3a-bac7-f8dc96fe9336"
+    },
+    {
+      "claim_id": "b3956e97-0bf4-46cf-87b4-b4f8dcfaa28f",
+      "result_id": "f4580e08-5a69-4e3a-bac7-f8dc96fe9336"
+    },
+    {
+      "claim_id": "2181163d-d85f-486d-9542-a54d2bebac50",
+      "result_id": "f4580e08-5a69-4e3a-bac7-f8dc96fe9336"
+    },
+    {
+      "claim_id": "be2a3ac9-382c-45be-867a-1b69e9d3ade5",
+      "result_id": "f4580e08-5a69-4e3a-bac7-f8dc96fe9336"
+    },
+    {
+      "claim_id": "3faad049-cf02-4867-889b-82783dc241e2",
+      "result_id": "f4580e08-5a69-4e3a-bac7-f8dc96fe9336"
+    },
+    {
+      "claim_id": "ee4539d9-34a1-4176-aa8b-955ca2f08b5e",
+      "result_id": "f4580e08-5a69-4e3a-bac7-f8dc96fe9336"
+    },
+    {
+      "claim_id": "12e89033-881a-4b0a-a568-ca99d7ff6984",
+      "result_id": "f4580e08-5a69-4e3a-bac7-f8dc96fe9336"
+    },
+    {
+      "claim_id": "f6a3a5de-38e9-4ff4-8e18-2332ec6faf09",
+      "result_id": "f4580e08-5a69-4e3a-bac7-f8dc96fe9336"
+    },
+    {
+      "claim_id": "e7f2f144-8191-4e92-b3a1-bb2594896327",
+      "result_id": "f4580e08-5a69-4e3a-bac7-f8dc96fe9336"
+    },
+    {
+      "claim_id": "16eb9e02-bd2f-4546-b489-2d1b76370054",
+      "result_id": "f4580e08-5a69-4e3a-bac7-f8dc96fe9336"
+    },
+    {
+      "claim_id": "c82b3892-37b0-4e9b-8461-ee81e2974a87",
+      "result_id": "f4580e08-5a69-4e3a-bac7-f8dc96fe9336"
+    },
+    {
+      "claim_id": "db2ac5f5-d8ef-4728-9c17-1c8e1fbae99e",
+      "result_id": "f4580e08-5a69-4e3a-bac7-f8dc96fe9336"
+    },
+    {
+      "claim_id": "c3eba67b-a662-4b1f-ab61-b19cd7bd6014",
+      "result_id": "f4580e08-5a69-4e3a-bac7-f8dc96fe9336"
+    },
+    {
+      "claim_id": "2f0d8e6d-34c5-4387-8133-43e2643615e4",
+      "result_id": "f4580e08-5a69-4e3a-bac7-f8dc96fe9336"
+    },
+    {
+      "claim_id": "ae7d7894-d931-4868-beda-5c4ab21f7190",
+      "result_id": "f4580e08-5a69-4e3a-bac7-f8dc96fe9336"
+    },
+    {
+      "claim_id": "5947cd6d-af1e-458a-9539-56b36e75446f",
+      "result_id": "f4580e08-5a69-4e3a-bac7-f8dc96fe9336"
+    },
+    {
+      "claim_id": "ade7d6fd-2905-4451-aa8c-3b2231d30e27",
+      "result_id": "984ad3b1-ab05-4aae-a676-c4010cd67235"
+    },
+    {
+      "claim_id": "8fc25ec0-735e-4359-9ae4-2e8aa390a39b",
+      "result_id": "984ad3b1-ab05-4aae-a676-c4010cd67235"
+    },
+    {
+      "claim_id": "744c61e2-7dc8-4270-8931-82d2cccc77ec",
+      "result_id": "984ad3b1-ab05-4aae-a676-c4010cd67235"
+    },
+    {
+      "claim_id": "f4393e48-e75c-4715-9cb8-2085d1c82ba8",
+      "result_id": "984ad3b1-ab05-4aae-a676-c4010cd67235"
+    },
+    {
+      "claim_id": "4707ee4c-1f02-43a4-868c-d5fe5e76f82f",
+      "result_id": "984ad3b1-ab05-4aae-a676-c4010cd67235"
+    },
+    {
+      "claim_id": "ff84a45e-3aae-4eeb-8eb8-239939dfeffd",
+      "result_id": "984ad3b1-ab05-4aae-a676-c4010cd67235"
+    },
+    {
+      "claim_id": "d4ef80ea-afc7-42ed-80d6-40810835f4ab",
+      "result_id": "984ad3b1-ab05-4aae-a676-c4010cd67235"
+    },
+    {
+      "claim_id": "7daa03d5-fe41-4b5e-b148-9e00a99390d2",
+      "result_id": "984ad3b1-ab05-4aae-a676-c4010cd67235"
+    },
+    {
+      "claim_id": "5f57165e-8eeb-484f-bccd-9130d9eeac7b",
+      "result_id": "984ad3b1-ab05-4aae-a676-c4010cd67235"
+    },
+    {
+      "claim_id": "22c7af7c-ab8f-4307-8884-f3247ac15ee0",
+      "result_id": "984ad3b1-ab05-4aae-a676-c4010cd67235"
+    },
+    {
+      "claim_id": "86bcf1f7-de21-406f-8e4b-4f98ddbfa7fb",
+      "result_id": "8fe72fd5-c5e9-4564-a9d6-e9db90b26bd2"
+    },
+    {
+      "claim_id": "2d558ca2-2a57-4efc-b831-73396491b40a",
+      "result_id": "8fe72fd5-c5e9-4564-a9d6-e9db90b26bd2"
+    },
+    {
+      "claim_id": "9843ef19-1c51-4aac-a29d-8c5ce8db4f0b",
+      "result_id": "8fe72fd5-c5e9-4564-a9d6-e9db90b26bd2"
+    },
+    {
+      "claim_id": "a1e44976-5238-446e-a783-f7518dade232",
+      "result_id": "8fe72fd5-c5e9-4564-a9d6-e9db90b26bd2"
+    },
+    {
+      "claim_id": "ab88b58a-a660-4e4f-a7bb-b7bb18cdf196",
+      "result_id": "8fe72fd5-c5e9-4564-a9d6-e9db90b26bd2"
+    },
+    {
+      "claim_id": "16eb6a15-255e-4a00-9071-46f4d6c4b266",
+      "result_id": "8fe72fd5-c5e9-4564-a9d6-e9db90b26bd2"
+    },
+    {
+      "claim_id": "8385dbbf-a9c7-434d-89dc-e50c6f19ec91",
+      "result_id": "8fe72fd5-c5e9-4564-a9d6-e9db90b26bd2"
+    },
+    {
+      "claim_id": "c85f79e2-dcac-4e80-9444-2d0747893dcc",
+      "result_id": "8fe72fd5-c5e9-4564-a9d6-e9db90b26bd2"
+    },
+    {
+      "claim_id": "0e8d1263-c07c-4d1d-8edc-c884f16f8fe4",
+      "result_id": "8fe72fd5-c5e9-4564-a9d6-e9db90b26bd2"
+    },
+    {
+      "claim_id": "a0372746-6022-42d5-a9ca-bb4a6c5b8753",
+      "result_id": "8fe72fd5-c5e9-4564-a9d6-e9db90b26bd2"
+    },
+    {
+      "claim_id": "dacbdb98-23bb-4e41-963a-c2c2964e598f",
+      "result_id": "8fe72fd5-c5e9-4564-a9d6-e9db90b26bd2"
+    },
+    {
+      "claim_id": "b0d18e6e-9fbe-46e6-a19f-4b93b85d9206",
+      "result_id": "8fe72fd5-c5e9-4564-a9d6-e9db90b26bd2"
+    },
+    {
+      "claim_id": "6134835a-583d-4a05-844b-319a79295fb7",
+      "result_id": "8fe72fd5-c5e9-4564-a9d6-e9db90b26bd2"
+    },
+    {
+      "claim_id": "795d4979-0b0c-4001-b837-d5efe37dfc26",
+      "result_id": "8fe72fd5-c5e9-4564-a9d6-e9db90b26bd2"
+    },
+    {
+      "claim_id": "8b3014aa-3bc0-4656-97de-ac3d4b6b68b6",
+      "result_id": "8fe72fd5-c5e9-4564-a9d6-e9db90b26bd2"
+    },
+    {
+      "claim_id": "4e0087cd-affb-48fb-a543-986db4043e30",
+      "result_id": "88c6e621-249c-4c36-a1a7-84cf3a561dc5"
+    },
+    {
+      "claim_id": "1f68eee8-4aec-49b7-888d-82df5a89b895",
+      "result_id": "88c6e621-249c-4c36-a1a7-84cf3a561dc5"
+    },
+    {
+      "claim_id": "cddbed35-c717-4f17-9cad-bb3c2f39412c",
+      "result_id": "88c6e621-249c-4c36-a1a7-84cf3a561dc5"
+    },
+    {
+      "claim_id": "272e2780-e356-47ff-9806-176d01950003",
+      "result_id": "88c6e621-249c-4c36-a1a7-84cf3a561dc5"
+    },
+    {
+      "claim_id": "f332a054-4f9c-4ba6-a537-e21654ecf40e",
+      "result_id": "88c6e621-249c-4c36-a1a7-84cf3a561dc5"
+    },
+    {
+      "claim_id": "a79b5f59-c541-4a08-be82-ae82f171ccd8",
+      "result_id": "88c6e621-249c-4c36-a1a7-84cf3a561dc5"
+    },
+    {
+      "claim_id": "70a13e98-c683-4197-9d55-ee5e409f7368",
+      "result_id": "88c6e621-249c-4c36-a1a7-84cf3a561dc5"
+    },
+    {
+      "claim_id": "81745eba-1639-458c-922c-98104771e6e4",
+      "result_id": "88c6e621-249c-4c36-a1a7-84cf3a561dc5"
+    },
+    {
+      "claim_id": "5d1b64d9-55df-4786-aff4-e229866849d0",
+      "result_id": "88c6e621-249c-4c36-a1a7-84cf3a561dc5"
+    },
+    {
+      "claim_id": "7b053e1e-5b14-470c-8db0-3d039b845268",
+      "result_id": "88c6e621-249c-4c36-a1a7-84cf3a561dc5"
+    },
+    {
+      "claim_id": "dcdd53e1-48f0-4dd7-8258-79f34ea80f14",
+      "result_id": "88c6e621-249c-4c36-a1a7-84cf3a561dc5"
+    },
+    {
+      "claim_id": "6b74291d-c6c6-4cc7-965f-87b1a701bd54",
+      "result_id": "c14e5deb-c4cb-469c-9ece-c7d2c65c74a2"
+    },
+    {
+      "claim_id": "34f7491d-279a-4a11-b49b-00adc6f72103",
+      "result_id": "c14e5deb-c4cb-469c-9ece-c7d2c65c74a2"
+    },
+    {
+      "claim_id": "985fa40f-6b88-40c6-a128-2432dbff8efb",
+      "result_id": "c14e5deb-c4cb-469c-9ece-c7d2c65c74a2"
+    },
+    {
+      "claim_id": "d68f4dbf-db9c-49f6-89a3-7aef67eada86",
+      "result_id": "c14e5deb-c4cb-469c-9ece-c7d2c65c74a2"
+    },
+    {
+      "claim_id": "018ab7d2-27e7-4b90-8052-b6ed422a306e",
+      "result_id": "c14e5deb-c4cb-469c-9ece-c7d2c65c74a2"
+    },
+    {
+      "claim_id": "20b25eb4-b278-4d9d-a06d-b0798f097cb0",
+      "result_id": "c14e5deb-c4cb-469c-9ece-c7d2c65c74a2"
+    },
+    {
+      "claim_id": "f4262d69-1779-4b6d-8b0f-499f8b4d61da",
+      "result_id": "c14e5deb-c4cb-469c-9ece-c7d2c65c74a2"
+    },
+    {
+      "claim_id": "af5bdb30-90c3-41b8-90c8-50f577e1f9b0",
+      "result_id": "c14e5deb-c4cb-469c-9ece-c7d2c65c74a2"
+    },
+    {
+      "claim_id": "f2446467-75c2-45a5-bc72-600d9d9b8694",
+      "result_id": "c14e5deb-c4cb-469c-9ece-c7d2c65c74a2"
+    },
+    {
+      "claim_id": "cfbbb1a7-81db-4c2b-9a88-2feb901ef50a",
+      "result_id": "c14e5deb-c4cb-469c-9ece-c7d2c65c74a2"
+    },
+    {
+      "claim_id": "dc9e998f-248c-4004-b808-0e04ea7e5d6c",
+      "result_id": "c14e5deb-c4cb-469c-9ece-c7d2c65c74a2"
+    },
+    {
+      "claim_id": "9178aa90-3ba2-439c-8b39-45941812a3a9",
+      "result_id": "c14e5deb-c4cb-469c-9ece-c7d2c65c74a2"
+    },
+    {
+      "claim_id": "3aaa38c4-1f1d-478e-ac1d-fd6753963c18",
+      "result_id": "c14e5deb-c4cb-469c-9ece-c7d2c65c74a2"
+    },
+    {
+      "claim_id": "a680f939-7113-49ff-b4d5-bfbdcbe62f1a",
+      "result_id": "c14e5deb-c4cb-469c-9ece-c7d2c65c74a2"
+    },
+    {
+      "claim_id": "e99b07d7-c0df-427e-a386-c6c8fbf6fa6b",
+      "result_id": "c14e5deb-c4cb-469c-9ece-c7d2c65c74a2"
+    },
+    {
+      "claim_id": "29e431ae-2fee-4c15-8f4f-50bb507e4126",
+      "result_id": "c14e5deb-c4cb-469c-9ece-c7d2c65c74a2"
+    },
+    {
+      "claim_id": "ea480d08-c8b9-4315-b1d7-09d1c7c765df",
+      "result_id": "353e88fa-ad76-407c-825a-1136a457e396"
+    },
+    {
+      "claim_id": "1badd753-e2bc-4b7f-8cfb-b4286c2c5a90",
+      "result_id": "353e88fa-ad76-407c-825a-1136a457e396"
+    },
+    {
+      "claim_id": "1d334ee0-23a1-4d3b-8679-7db2937007be",
+      "result_id": "353e88fa-ad76-407c-825a-1136a457e396"
+    },
+    {
+      "claim_id": "63b1781a-814e-4c6d-a9bb-7e3b9fd6316a",
+      "result_id": "353e88fa-ad76-407c-825a-1136a457e396"
+    },
+    {
+      "claim_id": "3b9b9500-9129-4da3-8426-45c64953265e",
+      "result_id": "353e88fa-ad76-407c-825a-1136a457e396"
+    },
+    {
+      "claim_id": "0b56879f-abe9-4701-a7c6-c4329b144a41",
+      "result_id": "353e88fa-ad76-407c-825a-1136a457e396"
+    },
+    {
+      "claim_id": "1d4082ba-830f-4f44-81ab-616cbebb7ba9",
+      "result_id": "353e88fa-ad76-407c-825a-1136a457e396"
+    },
+    {
+      "claim_id": "81ff73f1-607b-4e8a-bc30-8fd4ee0bf066",
+      "result_id": "353e88fa-ad76-407c-825a-1136a457e396"
+    },
+    {
+      "claim_id": "c651b7f0-64cb-4a7d-b31a-3db7244910e3",
+      "result_id": "7ba39217-b7f5-41da-8aac-5cf8b7577096"
+    },
+    {
+      "claim_id": "66bf56d3-29b1-4325-8ab1-4e6a695e55d8",
+      "result_id": "7ba39217-b7f5-41da-8aac-5cf8b7577096"
+    },
+    {
+      "claim_id": "d2a6f76b-6851-4ce3-9153-854b71df1218",
+      "result_id": "7ba39217-b7f5-41da-8aac-5cf8b7577096"
+    },
+    {
+      "claim_id": "ac5a0c68-1b0d-4c6b-9bf4-2a7478099ef1",
+      "result_id": "7ba39217-b7f5-41da-8aac-5cf8b7577096"
+    },
+    {
+      "claim_id": "bd76183c-12ed-4b56-a5ad-87d1b9f65dd3",
+      "result_id": "7ba39217-b7f5-41da-8aac-5cf8b7577096"
+    },
+    {
+      "claim_id": "fea90437-0778-4119-b4b3-07fa9fbde3a7",
+      "result_id": "7ba39217-b7f5-41da-8aac-5cf8b7577096"
+    },
+    {
+      "claim_id": "ad9e2b22-b29e-4c39-ae9e-bd8ac627af3a",
+      "result_id": "7ba39217-b7f5-41da-8aac-5cf8b7577096"
+    },
+    {
+      "claim_id": "07a26020-47b3-4ada-a064-03bdc2bc9b27",
+      "result_id": "7ba39217-b7f5-41da-8aac-5cf8b7577096"
+    },
+    {
+      "claim_id": "f99820f6-9761-488f-873a-08131c77be76",
+      "result_id": "7ba39217-b7f5-41da-8aac-5cf8b7577096"
+    },
+    {
+      "claim_id": "9de335a2-0cae-4648-8495-9af9c6a3f3d2",
+      "result_id": "7ba39217-b7f5-41da-8aac-5cf8b7577096"
+    },
+    {
+      "claim_id": "1c397453-be77-4456-abd2-f561964177f7",
+      "result_id": "7ba39217-b7f5-41da-8aac-5cf8b7577096"
+    },
+    {
+      "claim_id": "0e373690-da3c-480d-9e2d-068385d78a52",
+      "result_id": "7ba39217-b7f5-41da-8aac-5cf8b7577096"
+    },
+    {
+      "claim_id": "052afe62-cb0f-4044-a9a2-3f641d495ae0",
+      "result_id": "7ba39217-b7f5-41da-8aac-5cf8b7577096"
+    },
+    {
+      "claim_id": "99873438-cfec-4ad5-bae6-78cf77f4991e",
+      "result_id": "7ba39217-b7f5-41da-8aac-5cf8b7577096"
+    },
+    {
+      "claim_id": "8424a16d-03ab-473a-b9ef-2b99cbe0adaa",
+      "result_id": "7ba39217-b7f5-41da-8aac-5cf8b7577096"
+    },
+    {
+      "claim_id": "cccdc1fc-6825-4b19-ab80-a557e4ae42af",
+      "result_id": "7ba39217-b7f5-41da-8aac-5cf8b7577096"
+    },
+    {
+      "claim_id": "1aa7329f-f076-4c08-a4b6-1e3ee0655ded",
+      "result_id": "7ba39217-b7f5-41da-8aac-5cf8b7577096"
+    },
+    {
+      "claim_id": "4cb06d37-8b56-46b7-9832-31996ce8778e",
+      "result_id": "585bd23f-d533-4cf9-b82b-c32736b2706e"
+    },
+    {
+      "claim_id": "7adff6d6-e049-4bc2-8c52-96cbe6cfd67d",
+      "result_id": "585bd23f-d533-4cf9-b82b-c32736b2706e"
+    }
+  ],
+  "comparisons": []
+}

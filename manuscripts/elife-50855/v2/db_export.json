@@ -1,0 +1,1660 @@
+{
+  "submission": {
+    "id": "e7bd97d3-5049-4274-bff6-4078ecd78bd1",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T13:11:54.510323Z",
+    "updated_at": "2025-12-02T13:11:54.510323Z"
+  },
+  "content": [
+    {
+      "id": "cc981459-cafb-48c4-a7ee-d53a99e11726",
+      "submission_id": "e7bd97d3-5049-4274-bff6-4078ecd78bd1",
+      "content_type": "manuscript",
+      "content_text": "# Interhemispherically dynamic representation of an eye movement-related activity in mouse frontal cortex\n\n## Authors\n\n- Takashi R Sato<sup>1</sup> ([ORCID: 0000-0002-7623-9021](https://orcid.org/0000-0002-7623-9021)) \u2020\n- Takahide Itokazu<sup>2</sup>\n- Hironobu Osaki<sup>2</sup> ([ORCID: 0000-0001-9780-0810](https://orcid.org/0000-0001-9780-0810))\n- Makoto Ohtake<sup>1</sup>\n- Tetsuya Yamamoto<sup>7</sup>\n- Kazuhiro Sohya<sup>3</sup>\n- Takakuni Maki<sup>8</sup>\n- Tatsuo K Sato<sup>4</sup> ([ORCID: 0000-0002-1279-5125](https://orcid.org/0000-0002-1279-5125)) \u2020\n\n### Affiliations\n\n1. Department of Neuroscience Medical University of South Carolina Charleston United States\n2. Center for Integrative Neuroscience University of T\u00fcbingen T\u00fcbingen Germany\n3. Department of Mental Disorder Research, National Institute of Neuroscience National Center of Neurology and Psychiatry Tokyo Japan\n4. JST PRESTO Kawaguchi Japan\n5. Department of Neuro-Medical Science Osaka University Osaka Japan\n6. Department of Physiology Tokyo Women\u2019s Medical University Tokyo Japan\n7. Department of Neurosurgery Yokohama City University Graduate School of Medicine Yokohama Japan\n8. Department of Neurology Kyoto University Graduate School of Medicine Kyoto Japan\n9. Department of Physiology Monash University Clayton Australia\n10. Neuroscience Program, Biomedicine Discovery Institute Monash University Clayton Australia\n\n\u2020 Corresponding author\n\n## Abstract\n\nCortical plasticity is fundamental to motor recovery following cortical perturbation. However, it is still unclear how this plasticity is induced at a functional circuit level. Here, we investigated motor recovery and underlying neural plasticity upon optogenetic suppression of a cortical area for eye movement. Using a visually-guided eye movement task in mice, we suppressed a portion of the secondary motor cortex (MOs) that encodes contraversive eye movement. Optogenetic unilateral suppression severely impaired contraversive movement on the first day. However, on subsequent days the suppression became inefficient and capability for the movement was restored. Longitudinal two-photon calcium imaging revealed that the regained capability was accompanied by an increased number of neurons encoding for ipsiversive movement in the unsuppressed contralateral MOs. Additional suppression of the contralateral MOs impaired the recovered movement again, indicating a compensatory mechanism. Our findings demonstrate that repeated optogenetic suppression leads to functional recovery mediated by the contralateral hemisphere.\n\n## Introduction\n\nNeural plasticity in motor cortex is critical not only for motor learning (Peters et al., 2017), but also for motor recovery following cortical damage (Nudo, 2013). Motor plasticity has been traditionally investigated using motor cortex in higher animals (Travis and Woolsey, 1956). However, recent technical advancements have rendered rodent cortex a fruitful model to study circuit mechanisms in motor learning (Makino et al., 2016), motor deficits (Ebbesen and Brecht, 2017) and motor recovery (Murphy and Corbett, 2009). For example, previous studies in rodents investigated the cellular and molecular mechanisms that underlie compensatory pathophysiological changes in the cortical network during stroke recovery (Alia et al., 2017; Fawcett, 2015; Li et al., 2010; Schwab and Strittmatter, 2014). Such changes include modification of extracellular matrix structures (Fawcett, 2015) and increased neurotropic factors for angiogenesis, neurogenesis, and synaptic plasticity (Berretta et al., 2014). However, it is not clear whether these molecular processes are necessary to recover impaired movements or whether motor recovery can be mediated simply by mechanisms similar to motor learning inherent to the physiological circuits.\n\nRecovery from motor deficits relies on the intact brain regions including a hemisphere contralateral to cortical lesions. Indeed, the contralateral hemisphere has been a target for motor rehabilitation in humans (Buetefisch, 2015). To investigate the role of the contralateral hemisphere in motor recovery, one of ideal models is neural circuits underlying eye movement. Eye movement, like binocularly coupled saccade, shows a simple but robust motor output, and its direction is represented mainly in the contralateral frontal cortex. Consistent with this representation, a unilateral lesion in primate frontal cortex disrupts saccades toward the contralateral side (i.e., contraversive saccades) (Crowne et al., 1981; Pierrot-Deseilligny et al., 2002; van der Steen et al., 1986). However, such deficits can ease over time (Crowne et al., 1981; van der Steen et al., 1986), even after the removal of an entire cortical hemisphere (Bruell and Volk, 1956; Esta\u00f1ol et al., 1980; Herter and Guitton, 2004; Perenin and Jeannerod, 1978; Sharpe et al., 1979; Troost et al., 1972; Tusa et al., 1986). The recovery of the contraversive saccade in primate implies compensatory neural plasticity, potentially involving the contralateral hemisphere.\n\nTo investigate the neural basis for motor recovery in eye movement, we optogenetically suppressed the unilateral mouse frontal cortex during a visually-guided eye movement task (Itokazu et al., 2018). Using this task, we previously demonstrated that a small portion of the secondary motor cortex (MOs) in the frontal cortex controls contraversive eye movements, optogenetic suppression of MOs impairs contraversive eye movements, and MOs neurons preferentially encode contraversive eye movements. Here, we found that the suppressed eye movement can be recovered over time due to plasticity of the contralateral MOs. We propose that the neural representation of motor output is highly plastic even without pathophysiological events. Such plasticity could represent the neural basis of motor recovery.\n\n## Results\n\n### The MOs primarily encodes contraversive eye movement condition\n\nTo establish a circuit basis of the neural plasticity underlying motor recovery, we investigated the neural representation of eye movements during a visually-guided eye movement task that we previously developed (Itokazu et al., 2018). In this task, a head-fixed mouse first directs its left eye toward a central fixation light-emitting diode (LED), and then moves its left eye in the direction of a target LED that is illuminated on either the nasal or temporal side (Figure 1A, see Materials and methods). After the target LED illumination, the mice were required to perform eye movements. After several weeks of training, the mice became capable of performing eye shifts in the appropriate direction within 10 s to obtain reward with 84.7 \u00b1 2.5% success (n\u00a0=\u00a010 mice, See Materials and methods). As we previously reported (Itokazu et al., 2018), even though the task required only left eye movement, movements of both eyes were coupled (Figure 1B).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/50855/elife-50855-fig1-v2.jpg)\n\n**Figure 1.:** (A) Experimental design of a visually-guided eye movement task. After the mice fixated the central LED, nasal or temporal target LED was turned on, instructing the mice to shift their left eye toward the target. (B) Example traces of eye position recorded during one behavioral session. Traces are aligned to the target onset. Magenta traces: trials with temporal target (n\u00a0=\u00a08 trials). Cyan traces: trials with nasal target (n\u00a0=\u00a08 trials). (C) GCaMP6m was virally expressed in the MOs in the right hemisphere for two-photon calcium imaging. (D) Representative image and corresponding ROIs for neurons labeled with GCaMP6m. Magenta polygons: neurons exhibiting higher activity in the contraversive than ipsiversive condition just before eye movement onset. Cyan polygons: neurons exhibiting higher activity in the ipsiversive condition. White polygons: neurons showing significant movement-related activity. Gray polygons: neurons showing no significant movement-related activity. Black squares: example neurons shown in E. (E) Fluorescence changes for the two neurons shown in D. Average fluorescence changes for contraversive trials (magenta) and ipsiversive (cyan). Vertical line indicates eye movement onset. (F) Distribution of contraversive/ipsiversive difference in \u0394F/F increase for neurons showing significant fluorescence change (n\u00a0=\u00a0463). Magenta bars: neurons significantly selective for the contraversive condition (n\u00a0=\u00a0114). Cyan bars: neurons significantly selective for the ipsiversive condition (n\u00a0=\u00a035).\n\nUsing our task, we investigated the movement direction preference of neurons in the secondary motor cortex (MOs), a motor area for eye movement (Itokazu et al., 2018). We monitored MOs neural activity in vivo by imaging the virally expressed genetically encoded calcium indicator GCaMP6m (see Materials and methods, Figure 1C and D). Among the imaged neurons, 47.0% showed a significant increase in activity just before eye movement onset (n\u00a0=\u00a0463/985 neurons in ten mice). This activity \u2013 which we refer to as eye movement-related activity \u2013 is considered a mixture of motor command and visual activity (Itokazu et al., 2018) due to the short separation between visual cue onset and motor onset. To evaluate the contraversive or ipsiversive preference of the eye movement-related activity, we computed the difference in \u0394F/F increase (see Materials and methods). As expected based on our previous report (Itokazu et al., 2018), the distribution of selectivity was significantly skewed to the positive value (Figure 1E and F, Wilcoxon signed-rank test, p<10\u221210), indicating the preference for the contraversive condition as a population. In addition, more individual neurons showed significantly higher activity in the contraversive eye movement condition (24.5% neurons, contraversive selective) than the ipsiversive one (7.5%, ipsiversive selective), confirming that the MOs mainly encodes contraversive eye movement condition.\n\n### Unilateral MOs suppression impairs contraversive eye movement only on the first day\n\nPrevious behavioral lesion studies in primates suggest that deficits in eye movement can be recovered. We reproduced this behavioral result for the first time in rodents by unilateral optogenetic suppression across several days. Previously, we demonstrated that optogenetic suppression of the MOs during the eye movement task impeded contraversive eye movement severely and had non-significant effects on ipsiversive movements (Itokazu et al., 2018). Therefore, in this study, except for the two control mice (n\u00a0=\u00a02 mice) that received both ipsiversive and contraversive suppression, we tracked the impact of unilateral suppression only on contraversive eye movement (n\u00a0=\u00a08 mice, Materials and methods). We achieved optogenetic suppression in randomly interleaved trials by locally activating parvalbumin (PV) interneurons that expressed channelrhodopsin-2 (ChR2) via viral transduction, and maintained the suppression for 1 s after target LED onset (Figure 2A).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/50855/elife-50855-fig2-v2.jpg)\n\n**Figure 2.:** (A) The experimental design and example traces of eye position from one animal. Neuronal activity of the unilateral MOs was optogenetically suppressed during the eye movement task by activating PV+ interneurons. Optogenetic suppression was induced just after visual cues (blue shaded period) only for 1 s. When the blue light was illuminated, the mice could not produce temporal eye movements for the contraversive direction. (B, C) Effect of the unilateral optogenetic suppression during the task. Example traces from one animal. The suppression severely impaired the contraversive eye movements on the first day (B) but not after 4 days (C). Traces of the bilateral eyes are shown. The blue shades indicate the optogenetic suppression period. (D, E) Distribution of reaction time for the first day (1.76\u00a0\u00b1\u00a01.47 s, 96 out of127 trials, eight mice) and after 5.9\u00a0\u00b1\u00a01.0 days (1.06\u00a0\u00b1\u00a01.00 s, 198 out of 220 trials, eight mice). The reaction times were significantly different (p<10\u22129, Mann-Whitney U test).\n\nThe unilateral optogenetic suppression turned out to be ineffective on the subsequent days. On the first day of the optogenetic experiment, although\u00a0the mice could produce contraversive eye movements within a reaction time of 10 s (with suppression: proportion of trials with a reaction time less than 10 s, 75.6%, reaction time, 1.76\u00a0\u00b1\u00a01.47 s, n\u00a0=\u00a0127; without suppression: 85.0%, 1.09\u00a0\u00b1\u00a01.72 s, n\u00a0=\u00a0193), they could\u00a0not during the 1 s suppression period (Figure 2A,B and D; trials with optogenetic suppression: proportion of trials with a reaction time less than 1 s, 7.1%, n\u00a0=\u00a0127; trials without suppression: 40.4%, n\u00a0=\u00a0193 trials; p<10\u221210, Pearson\u2019s chi-square test,\u00a0see\u00a0also\u00a0Itokazu et al. (2018). However, after several days (5.9\u00a0\u00b1\u00a01.0 days, n\u00a0=\u00a08 mice) of optogenetic suppression, the mice regained their contraversive eye movements even during the suppression (Figure 2C and E; trials with optogenetic suppression: proportion of trials with a reaction time less than 10 s, 90.0%, less than 1 s, 44.5%, reaction time, 1.06\u00a0\u00b1\u00a01.00 s, n\u00a0=\u00a0220 trials; trials without suppression: less than 10 s, 90.7%, less than 1 s, 52.7%, 0.78\u00a0\u00b1\u00a01.40 s, n\u00a0=\u00a0150 trials; comparison between with and without suppression, p>0.12, Pearson\u2019s chi-square test; comparison between suppression on the first day and one on the last day, p<10\u221212, Pearson\u2019s chi-square test), consistent with the behavioral recovery observed in primate lesion studies (van der Steen et al., 1986). The recovery from the initial functional deficit implies that this eye movement might be newly encoded in other brain regions.\n\n### Unilateral MOs suppression alters the direction preference of MOs neurons in the contralateral hemisphere\n\nWe hypothesized that the MOs in the unsuppressed contralateral hemisphere may be responsible for the recovered movement. If this were the case, the MOs neurons in the unsuppressed contralateral hemisphere might change how they encode movements, perhaps by encoding a de novo preference for recovered eye movement the direction of which is ipsiversive. To investigate the directional preference of the MOs neurons in the unsuppressed hemisphere, we injected additional virus to express GCaMP6m for in vivo two-photon calcium imaging (e.g., suppressing the right hemisphere and imaging the left hemisphere in Figure 3A). A few weeks later, following sufficient viral expression, we mapped the response patterns of individual neurons in the MOs while the mouse performed the task (\u2018before\u2019 condition, Figure 3B and D). Then, we performed optogenetic suppression for contraversive eye movement trials. The contraversive movement was severely impaired on the first day, consistent with Figure 2B. However, the movement was eventually recovered (6.8\u00a0\u00b1\u00a01.0 days, n\u00a0=\u00a06 mice; as in Figure 2C). At this point, we performed two-photon imaging again to examine the response patterns of individual neurons without optogenetic MOs suppression (\u2018after\u2019 condition, Figure 3A). We found neurons that showed a new preference for the ipsiversive movement and those that no longer preferred the contraversive movement (Figure 3D and E). As a population, many neurons showed an increased preference for the ipsiversive direction or a reduced preference for the contraversive direction (data points below the scatter plot unity line, Figure 3F, n\u00a0=\u00a0415 eye movement-related neurons in six mice), especially for neurons that showed direction-selectivity in the \u2018before\u2019 or \u2018after\u2019 conditions (n\u00a0=\u00a0190 out of 415, black circles). Consistently, the distribution for the change in selectivity index (see Materials and methods) was biased toward the ipsiversive condition for direction-selective neurons (p<10\u22128, Wilcoxon signed-rank test, n\u00a0=\u00a0190, black bars, top-right inset in Figure 3F), and for all neurons that showed a significant movement-related activity (p<10\u22126, n\u00a0=\u00a0415, black plus white bars). These changes were not simply caused by the training over several days. In control mice that expressed only GFP and thereby received no optogenetic suppression, additional training did not cause an increased ipsiversive preference, but rather led to a tendency for an increased contraversive preference (p=0.13, n\u00a0=\u00a0123 for all direction-selective neurons; p<0.002, n\u00a0=\u00a0282 for all neurons that showed significant motor-related activity, Figure 3\u2014figure supplement 1). Therefore, optogenetic suppression caused an increase in neurons selective for ipsiversive direction and a decrease in those selective for contraversive direction, accompanied by a learned capacity to make ipsiversive eye movements.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/50855/elife-50855-fig3-v2.jpg)\n\n**Figure 3.:** (A) Experimental design. When the mice learned the visually-guided eye movement task, we performed two photon calcium imaging to investigate directional preference of the MOs neurons in one hemisphere (\u2018Before\u2019 condition). Then optogenetic suppression was applied to the MOs in the contralateral hemisphere. While the mice were trained for several days, they regained the ability to make contraversive eye movements. We again performed two-photon calcium imaging (\u2018After\u2019 condition) to obtain the neuronal response for the same neurons imaged in the \u2018Before\u2019 condition. (B, C) Training-induced changes in direction selectivity of the MOs neurons in a representative imaging session. In the \u2018Before\u2019 condition (B), many neurons preferred the contraversive direction (magenta polygons), but in the \u2018After\u2019 condition (C), these neurons got sparser, and one neuron selective for ipsiversive direction (cyan polygon) showed up. White polygons indicate movement-related cells, and gray polygons non-significant cells. Black squares: example neurons shown in D, E. (D, E) Examples of two neurons (indicated in B, C) where direction selectivity changed between the \u2018Before\u2019 and \u2018After\u2019 conditions. Average fluorescence changes for trials with ipsiversive movements (cyan traces: Before, n\u00a0=\u00a030; After, n\u00a0=\u00a031 trials) and contraversive movements (magenta traces: Before, n\u00a0=\u00a035; After, n\u00a0=\u00a032 trials). (F) Training for several days induced difference in selectivity index for MOs neurons (six mice). White dots in the scatter plot (n\u00a0=\u00a0225) are neurons showing significant movement-related activity, and black dots (n\u00a0=\u00a0190) are neurons showing significant selectivity on top of the movement-related activity (total of 415 neurons are shown). The x-axis indicates selectivity index for the Before condition and the y-axis for the After condition. The histograms for the selectivity index are shown along the x-axis (Before) and the y-axis (After). Black bars are neurons showing significant direction preference either \u2018before\u2019 or \u2018after\u2019 conditions (n\u00a0=\u00a0190 neurons). On top of black bars, magenta and cyan bars are overlaid for neurons showing preference for contraversive and ipsiversive directions (\u2018before\u2019 condition: contraversive, magenta, n\u00a0=\u00a078 neurons, ipsiversive, cyan, n\u00a0=\u00a018 neurons, \u2018after\u2019 condition: contraversive, magenta, n\u00a0=\u00a040 neurons, ipsiversive, cyan, n\u00a0=\u00a069 neurons). Change in the selectivity index is shown in a histogram in the top right corner. White bars indicate the movement-related neurons (n\u00a0=\u00a0225) and black bars the direction-selective neurons (n\u00a0=\u00a0190).\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/50855/elife-50855-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Training for several days caused slight changes in selectivity index difference in control mice that virally expressed GFP (n\u00a0=\u00a04 mice). The tendency of the change was opposite to Figure 3F. White dots in the scatter plot (n\u00a0=\u00a0159) are neurons showing significant movement-related activity, and black dots (n\u00a0=\u00a0123) are neurons showing significant selectivity on top of the movement-related activity (total of 282 neurons are shown). The x-axis indicates the selectivity index for the Before condition and the y-axis for the After condition. The histograms for the selectivity index are shown along the x-axis (Before) and the y-axis (After). Black bars are neurons showing significant direction preference either \u2018before\u2019 or \u2018after\u2019 conditions (n\u00a0=\u00a0123 neurons). On top of black bars, cyan and magenta bars are overlaid for neurons showing preference for contraversive and ipsiversive directions (\u2018before\u2019 condition: contraversive, magenta, n\u00a0=\u00a039 neurons, ipsiversive, cyan, n\u00a0=\u00a023 neurons, \u2018after\u2019 condition: contraversive, magenta, n\u00a0=\u00a069 neurons, ipsiversive, cyan, n\u00a0=\u00a027 neurons). Change in the selectivity index is shown in a histogram in the top right corner. White bars indicate the movement-related neurons (n\u00a0=\u00a0159) and black bars the direction-selective neurons (n\u00a0=\u00a0123). Color convention is the same with Figure 3F.\n\n### The MOs in the contralateral hemisphere is responsible for the recovery\n\nOur hypothesis predicts that activity of the MOs contralateral to the optogenetic suppression, including the newly emerged ipsiversive preference, could contribute to the recovery of the impaired eye movement. To investigate the contribution of the contralateral MOs, we suppressed this area after the impaired movement was recovered (Figure 4). As it is necessary to suppress the MOs in bilateral hemispheres, we used a transgenic line that expresses ChR2-eYFP in PV-positive interneurons (PV-Cre\u00a0\u00d7Ai32). As expected from Figure 2B, on the first day of unilateral suppression the mice were unable to generate contraversive eye movements during 1 s optogenetic suppression (Figure 4D, reaction time with and without suppression, 1.69\u00a0\u00b1\u00a01.51 s, n\u00a0=\u00a035 out of 39 trials, vs 0.89\u00a0\u00b1\u00a01.36 s, n\u00a0=\u00a092 out of 96 trials, p<0.0002, Mann-Whitney U test, n\u00a0=\u00a04 mice). Within several days (3.8\u00a0\u00b1\u00a00.7 days), the mice regained the capacity to make contraversive movements during unilateral MOs suppression (Figure 4B and E, 0.83\u00a0\u00b1\u00a00.90 s, n\u00a0=\u00a059/61 trials vs 0.59\u00a0\u00b1\u00a00.90 s, n\u00a0=\u00a056/61 trials, p>0.07, Mann-Whitney U test). However, additional suppression of the MOs in the contralateral hemisphere caused the same impairment as on the first day (Figure 4C and F, 1.27\u00a0\u00b1\u00a01.21 s, n\u00a0=\u00a035/37 trials vs 0.45\u00a0\u00b1\u00a00.97 s, n\u00a0=\u00a0102/108 trials, p<10\u22125, Mann-Whitney U test). The reaction time for bilateral suppression was significantly longer than that for post-training unilateral suppression (Figure 4E and F, bottom, 1.27\u00a0\u00b1\u00a01.21 s vs. 0.83\u00a0\u00b1\u00a00.90 s, p<0.02, Mann-Whitney U test), and was similar to the reaction time before training (first day, Figure 4D bottom, 1.69\u00a0\u00b1\u00a01.51 s, p>0.05, Mann-Whitney U test). The trial proportion with a reaction time less than 1 s was 21.6 \u00b1 8.1% (n\u00a0=\u00a04 mice) for bilateral suppression, which was significantly lower than that for unilateral suppression (56.0 \u00b1 9.7%, p<0.001, Pearson\u2019s chi-square test), but similar to that before training (10.6 \u00b1 5.2% for before training, p>0.25, Pearson\u2019s chi-square test). The significant impact of the bilateral suppression demonstrates that the contralateral MOs acquired an essential role in motor recovery after repetitive optogenetic suppression. This essential role, together with new encoding for ipsiversive direction (Figure 3), suggests that the dynamic properties of MOs neurons may underlie suppression-induced adaptation.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/50855/elife-50855-fig4-v2.jpg)\n\n**Figure 4.:** (A\u2013C) Optogenetic suppression design. On the first day of optogenetic suppression (A), mice showed difficulty in performing the contraversive eye movements within 1 s of optogenetic suppression. After several days of training (B), the mice were able to make contraversive eye movements (\u2018After training\u2019). However, bilateral suppression of the MOs (C) induced the difficulty again. (D\u2013F) The distribution of reaction times for A-C. Top and bottom histograms are from trials without and with optogenetic suppression. On the first day (D), the reaction time is rarely within the 1 s period of optogenetic suppression (10.3% of 39 trials with suppression vs. 52.1% of 96 trials without suppression, p<10\u22125, Pearson\u2019s chi-square test, n\u00a0=\u00a04 mice). After several days of training (E), the reaction time could be shorter than 1 s (55.7% of 61 trials with suppression vs. 55.7% of 61 trials without suppression, p=1, Pearson\u2019s chi-square test). However, bilateral suppression of the MOs prolonged the reaction time again (18.9% of 37 trials, with suppression vs. 66.7% of 108 trials without suppression, p<10\u22126, Pearson\u2019s chi-square test).\n\n## Discussion\n\nIn this study, we investigated the contribution of the contralateral hemisphere to eye movement recovery following suppression of the unilateral motor cortex. We showed that following unilateral MOs suppression, the contralateral MOs encoded the ipsiversive direction, and played a critical role to compensate for the impaired function of the suppressed hemisphere. To our knowledge, this is the first direct evidence showing dynamic directional encoding of eye movement across hemispheres.\n\nOur finding unveiled a recovery process following unilateral optogenetic suppression. It shares similarity with recovery processes following a unilateral lesion in the motor cortex in human patients and in animal models (reviewed in Alia et al., 2017; Murphy and Corbett, 2009; Nudo, 2007). Cortical lesions are usually induced by events such as cortical resection, aspiration, traumatic brain injuries, and experimental strokes, which severely damage neurons, glial cells, vessels, neighboring axons, and the extracellular matrix including perineuronal nets. This damage initiates highly complex pathophysiologic reactions like inflammation and reactive gliosis, which leads to the upregulation of neurotrophic factors and pro-inflammatory cytokines. All of these reactions could, in principle, be involved in plasticity (Alia et al., 2017; da Silva Meirelles et al., 2017; Fawcett, 2015; Li et al., 2010). Therefore, it was not clear whether functional recovery could be achieved without complex pathophysiological events triggered by cortical lesions. Our findings demonstrate that a built-in plastic capability of normal cortical circuits alone could cause motor recovery of eye movement.\n\nOur findings demonstrate that the motor cortex in the contralateral hemisphere underlies the flexibility in the neural representation of motor output. Studies in the forelimb/hindlimb motor cortex suggest that both the perilesional areas and the contralateral unaffected motor cortex play critical roles in motor recovery (Alia et al., 2017; Benowitz and Carmichael, 2010; Murphy and Corbett, 2009). In particular, following a cortical lesion, neurons in the contralateral cortex show increased turnover of dendritic spines and an increased number of dendritic branches. Consistently, following a large unilateral infarct, pharmacological silencing of the contralateral hemisphere can deteriorate recovered forelimb movement, indicating a facilitatory role (Biernaskie et al., 2004). However, the role of the contralateral hemisphere still remains controversial (Alia et al., 2017; Hosp and Luft, 2011; Mohajerani et al., 2011), and indeed a study showed that silencing the undamaged contralateral hemisphere by continuous infusion of GABA-A agonist improves recovery performance, implying a suppressive role (Mansoori et al., 2014). A prevailing hypothesis that reconciles these findings is that the role of the contralateral hemisphere depends on the size of infarction, particularly on whether remaining intact cortical areas in the ipsi-lesional hemisphere can take over the original functions of the lesioned area (Buetefisch, 2015; Di Pino et al., 2014). If they can, they will be interfered with by the contralateral hemisphere. If they cannot, the contralateral hemisphere instead can substitute for the functions of the lesioned area. Our findings suggest that neighboring areas in the hemisphere ipsilateral to the optogenetic suppression, despite potentially exhibiting some forms of plasticity, may not substitute for the role of MOs in our task.\n\nOur findings indicate that the MOs has a latent capability to control ipsiversive eye movements and can learn to turn on these movements. This capability might depend on existing anatomical projections from the MOs to subcortical eye-movement related regions for ipsiversive movements. For instance, the MOs normally projects to the superior colliculus. However, in this case the MOs likely would need to project to the contralateral superior colliculus; these projections are rather sparse (Oh et al., 2014, for\u00a0example, mouse #141603190). Another possibility is the relatively strong projections from the MOs to the contralateral striatum (Oh et al., 2014); the striatum has been linked to saccade output as an indirect pathway in primates (Basso and Sommer, 2011). Further research is required to determine which anatomical wirings the MOs neurons learn to exploit to achieve motor recovery.\n\nOptogenetic suppression has been a standard technique to investigate the specific functions of neural circuits (Guo et al., 2014; Li et al., 2016). Our data show that repeated suppression across multiple days can induce changes in the functions of the contralateral hemisphere, leading to the recovery from the initial motor deficits induced by optogenetic suppression. Therefore, our results indicate that the impact of optogenetic suppression needs to be interpreted with caution, and the suppression paradigms need to be carefully designed. Our study highlights the flexibility of cortical circuits that can overcome even short-term reversible manipulation of neural activity.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Strain, strain background (Mus musculus)</td>\n      <td>PV-Cre, C57Bl/6</td>\n      <td>PMID: 15836427</td>\n      <td>RRID:IMSR_JAX:008069</td>\n      <td>The Jackson Laboratory (#008069)</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Mus musculus)</td>\n      <td>Ai32, C57Bl/6</td>\n      <td>PMID: 22446880</td>\n      <td>RRID:IMSR_JAX:012569</td>\n      <td>The Jackson Laboratory (#012569)</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>AAV2/1-syn-GCaMP6m</td>\n      <td>PMID: 23868258</td>\n      <td>RRID:Addgene_100841</td>\n      <td>Upenn Vector Core</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>AAV2/1-EF1\u03b1-DIO-hChR2(H134R)-EYFP</td>\n      <td>http://www.optogenetics.org</td>\n      <td>RRID:Addgene_ 20298</td>\n      <td>Upenn Vector Core</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Matlab</td>\n      <td>https://www.mathworks.com/products/matlab.html</td>\n      <td>RRID:SCR_001622</td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### Animals and surgery\n\nC57BL/6J, PV\u2013Cre, which has the Cre recombinase gene targeted to the Pvalb locus (JAX stock #008069), and Ai32 (JAX stock #012569; Rosa-CAG-LSL-ChR2(H134R)-EYFP-WPRE) mouse lines were used in this study. In some experiments, PV\u2013Cre mice were crossed with Ai32 mice, and the resulting mouse line was designated PV\u2013ChR2. For all experiments, male mice of 8 weeks or older in age were used. The mice were group housed in a cage, and experiments were performed during the dark period of the 12 hr light/12 hr dark cycle. Sixteen mice were included in this study. For surgical procedures, mice were anesthetized with 0.1 mg/g ketamine and 0.008 mg/g xylazine (intraperitoneally), and isoflurane was supplemented to maintain the anesthesia. Lidocaine was applied subcutaneously at the incision site. Dexamethasone (2 mg/kg) was administered intraperitoneally after the onset of anesthesia to reduce swelling of the tissue. Lidocaine was applied to the wound margins for topical anesthesia. A custom-built headpost was glued to the skull and then cemented to the animal\u2019s head using dental acrylic. A craniotomy (1\u20132 mm rectangle) was performed over the MOs of one hemisphere (centered 700 \u03bcm anterior and 700 \u03bcm lateral from the bregma). Then, virus (AAV2/1-syn-GCaMP6m or AAV2/1-EF1\u03b1-DIO-hChR2(H134R)-EYFP) was injected at multiple sites (10\u201320 nL/site; depth, 200\u2013300 \u03bcm; 3\u20135 min/injection), which resulted in virus expression of\u00a0~400 \u03bcm. The laterality of the hemisphere was randomized across mice. For PV-ChR2 mice, no virus was injected, but two separate craniotomies were made over the MOs of both hemispheres. Following virus injection, an imaging window consisting of two or three layers of cover glass was implanted. The space between the imaging window and bone was sealed with 1.5% agarose and the window was cemented with dental acrylic (Komiyama et al., 2010).\n\n### Behavioral training\n\nMice were trained on a visually-guided eye movement task that we previously developed (Itokazu et al., 2018). In brief, mice were pre-trained to enter a tube to obtain a water reward for\u00a0~7 days. Then, the mice were acclimated to the imaging setup (head-fixed condition), and rapid eye movements were encouraged with water reward for 2 days. Following this, the mice were trained to perform a visually-guided eye movement task. In this behavioral paradigm, three blue LEDs (a fixation LED, a nasal target LED, and a temporal target LED; wavelength 470 nm, M470F1, Thorlabs) were used as visual stimuli. During the trial, the brightness of LEDs indicated where the left eye should be located (Figure 1A). The light of the fixation LED was first set at 260 \u03bcW for 3\u20134 s, and then increased to 470 \u03bcW at the start of the trial. When the left eye was directed to the fixation LED (within\u00a0\u00b12.5\u00b0), the brightness was increased to 500 \u03bcW. The mouse was required to maintain the fixation for 750\u20131,000 ms. After successful fixation, one of the two target LEDs was turned on (450 \u03bcW). At the same time, the brightness of the fixation LED was decreased (260 \u03bcW). The mouse needed to shift its gaze in the direction of the target LED within 10 s. The 10 s window for the correct eye movements remains the same for all the trials including those with optogenetic suppression. If the mouse did not make the eye movements within 10 s, the trial was aborted and excluded from the reaction time analysis. Following successful eye movements, the target LED was turned off (70 ms later). After a short delay, a drop of water was provided. The eye shift needed to be a rapid movement (amplitude\u00a0>5\u00b0, speed\u00a0>0.1\u00b0/ms). If the gaze moved out from the fixation window without the correct eye movement, the trial was considered as an error. Incorrect eye movements included rapid eye movements toward the wrong direction, rapid movements with amplitudes smaller than 5\u00b0, and slow eye drifts. Each mouse generally performed this task\u00a0~50 times per day. The behavior was monitored using a program written in TEMPO (Itokazu et al., 2018; Sato and Schall, 2003; Sato et al., 2003). In this study, we did not force animals to make eye movements at long latency (Itokazu et al., 2018) in optogenetic experiments. In pilot experiments, optogenetic suppression discouraged such animals from task engagement.\n\n### Measurement and analysis for eye position\n\nMethods used to measure and analyze eye position have been described in detail previously (Itokazu et al., 2018). In brief, the position of the left eye was monitored using a commercial eye-detection package (Eyelink 1000, SR Research, sampled at 500 Hz). This system returns, without saving the original image, analog voltage output that corresponds to the position of the eye. These voltage outputs are fed into our behavior monitoring program. The light source for the camera was a 940 nm LED. To block the infrared light for the right eye, target LEDs, a two-photon laser, an 800 nm long-pass filter (#66\u2013059, Edmund), and a 960 nm short-pass filter (HQ960SP, Chroma) were placed in front of the camera.\n\nIn some experiments, the image of the right eye was recorded at 200 Hz using a complementary metal-oxide semiconductor (CMOS) camera (DCC1240M, Thorlabs). The position of the right eye was determined for each frame using a custom-written program in MATLAB (Itokazu et al., 2018). The light source for this camera was a 780 nm LED (M780L2, Thorlabs). In front of the camera, a 960 nm short-pass filter (HQ960SP, Chroma) was placed.\n\n### Two-photon imaging\n\nIn vivo imaging was performed using a two-photon microscope based on a movable objective microscope system (Sutter) controlled by ScanImage software (Pologruto et al., 2003), as previously described (Itokazu et al., 2018). The light source was a pulsed Ti:sapphire laser (Chameleon, Coherent), and the laser wavelength was set at 980 nm, which provides a high fluorescent change in GCaMP signal (https://www.janelia.org/lab/harris-lab-apig/research/photophysics/two-photon-fluorescent-probes) and less scattering in the tissue than shorter wavelengths. The objective lens was apochromatic (16\u00d7, 0.80 NA, Nikon). Signals were collected using photomultiplier tubes (Hamamatsu Photonics, H10770PA-40); frame scanning (frame rate\u00a0~6 Hz) was used. Images were collected at a depth of 150\u2013300 \u03bcm from the dura surface for layer 2/3 neurons. For image analysis, movement artifacts were corrected in two steps: performing a cross correlation-based image alignment (Turboreg) (Th\u00e9venaz et al., 1998) followed by a line-by-line correction using an algorithm based on a hidden-Markov model (Dombeck et al., 2007). Then, the regions of interest (ROIs) containing the neurons were drawn manually, and the pixel values within each ROI were summed to estimate the fluorescence of the individual neuron. \u2206F/F signal was calculated as (F-Fbaseline)/Fbaseline, where Fbaseline is the baseline fluorescence signal (30th percentile) within each trial.\n\n### Optogenetic suppression\n\nThe design of optogenetic stimulation is the same as in our previous report (Itokazu et al., 2018). AAV2/1-EF1\u03b1-DIO-hChR2(H134R)-EYFP was injected into the MOs of PV\u2013Cre mice (Lee et al., 2012; Olsen et al., 2012) unilaterally, which resulted in virus expression of\u00a0~800 \u03bcm. In the control mice (Figure 3\u2014figure supplement 1), AAV2/1 CAG-FLEX-EGFP was injected. Bilateral suppression studies employed PV\u2013ChR2 mice, which were produced by crossing PV\u2013Cre to Ai32 (Rosa-CAG-LSL-ChR2(H134R)-EYFP-WPRE) mice. A blue laser (473 nm, CrystaLaser) was coupled to an optic fiber (M15L02, Thorlabs). The output power was manipulated by combining a half-wave plate with a polarizing beamsplitter cube. An optical chopper was used to convert the continuous wave into a 40 Hz pulse (pulse width, 2.5 ms; Edmund optics, 59\u2013894) (Cardin et al., 2009). The output of the optic fiber and surface of the cortex were placed on conjugate planes using two convex lenses. A dichroic mirror was placed in the infinity space, and the reflected light was focused onto the sensor of a CMOS camera (Thorlabs). This design enabled monitoring of the precise location of the stimulated site. The blue light was illuminated in 40\u201360% of the trials, where contralateral eye movement was required. Illumination was made only in trials with contralateral eye movements (n\u00a0=\u00a08 mice), as optogenetic suppression affects only those movements (Itokazu et al., 2018). In two control mice, both contraversive and ipsiversive trials were suppressed, which resulted in impairment only in contraversive trials. The laterality of suppressed hemisphere for contraversive-trial suppression was randomized between mice, although in PV-Cre mice it was based on the virus injection site (which was randomized at the time of virus injection across mice). We illuminated\u00a0~30% of the trials on the first day and the day of bilateral suppression; if we used a higher proportion of optogenetic suppression, the mice often stopped the task engagement. The average power of the light at the surface of the cortex was 600\u20131,200 \u03bcW. Optogenetic suppression was applied for multiple days (5.2\u00a0\u00b1\u00a00.7 days). During these periods, the mice learned to perform eye movements under optogenetic suppression. In the following session after learning, two-photon imaging was performed without optogenetic suppression in six PV-Cre mice, and bilateral suppression was performed in four PV-ChR2 mice using two separate lasers and optic fibers.\n\nEven for trials with optogenetic suppression, eye movements within 10 s were considered to be a success, and were thereby rewarded with a drop of water. The effect of optogenetic suppression was quantified by comparing the probability of eye movement within 1 s between trials with and without illumination. The probability was also compared between the first and the last day of unilateral optogenetic suppression, and between unilateral and bilateral suppression (Pearson\u2019s chi-square test). The distributions of the reaction times were also compared using the Mann-Whitney U test.\n\nThis optogenetic stimulation caused no behavioral effects when blue light illumination was targeted to the primary motor cortex (1 mm lateral to the MOs), excluding non-specific effects of blue light illumination (Itokazu et al., 2018).\n\n### Image data analysis\n\nFor each neuron, movement-related activity was quantified as an increase in \u2206F/F between the frame at baseline (600 ms before the movement onset) and the frame at the time of movement. The neurons were considered to contain significant movement activity if the activity was significant based on the Wilcoxon signed-rank test (p<0.05) in either contraversive or ipsiversive movement conditions. For these neurons, the difference in movement activity between the contraversive or ipsiversive conditions was computed (difference in \u0394F/F increase in Figure 1F). The significance of the direction selectivity was determined by the Mann\u2013Whitney U test with p<0.05.\n\nFor the animals that were imaged before and after the training with optogenetic suppression, the neurons were considered to contain significant movement activity if the activity was significant (Wilcoxon signed-rank test, p<0.05) either before or after the training (white dots/bars; Figure 3F). Similarly, the neurons were considered as direction selective if the difference in movement activity was significant (Mann-Whitney U test, p<0.05) either before or after the training (black dots/bars; Figure 3F). Selectivity index for contraversive/ipsiversive directions was computed as (Rcontra \u2212 Ripsi) / |Rcontra + Ripsi|, where Rcontra is the response in the contraversive condition and Ripsi is in the ipsiversive. The index could be larger than one or smaller than \u22121 when either of Rcontra and Ripsi was negative. In addition, we used a common and the larger denominator between \u2018before\u2019 and \u2018after\u2019 conditions, to avoid a small denominator resulting from non-significant Rcontra and Ripsi (e.g., Neuron two in \u2018after\u2019 condition in Figure 3E).\n\n### Experimental design and statistical analysis\n\nTen mice (PV-Cre and C57BL/6) were used to study the neural representation of eye movements in MOs, eight mice (PV-Cre) to examine the effects of unilateral optogenetic suppression of MOs, six mice (PV-Cre) to monitor the effects of repeated optogenetic suppression on neural representation in MOs, and four mice (PV-ChR2) for bilateral suppression of MOs.\n\nAll of the statistical tests were non-parametric, and are indicated in the relevant text or figure legend. Data and traces are show as mean\u00a0\u00b1\u00a0s.e.m., except that reaction times are described as median\u00a0\u00b1\u00a0m.a.d., because they have highly skewed distributions (Reddi and Carpenter, 2000). Our sample sizes are similar to those reported in previous publications (Itokazu et al., 2018).\n\n### Code accessibility\n\nThe data and computer codes for this study are available as supplementary data.\n",
+      "created_at": "2025-12-02T13:11:54.510323Z"
+    },
+    {
+      "id": "d26dad09-f2a1-4ed3-ab59-1d8be41ecf02",
+      "submission_id": "e7bd97d3-5049-4274-bff6-4078ecd78bd1",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Naoshige Uchida, Harvard University United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.50855.sa1](https://doi.org/10.7554/eLife.50855.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nThis study provides important insights into the plasticity in the secondary motor cortex during recovery from motor deficits as well as important caveats in interpreting experiments using optogenetic inactivation (or more generally, transient inactivation). These results are of great interest to a wide neuroscience audience.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Interhemispherically dynamic representation of an eye movement-related activity in mouse frontal cortex\" for consideration by eLife. Your article has been reviewed by two peer reviewers, and the evaluation has been overseen by Naoshige Uchida as the Reviewing Editor and Richard Ivry as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nIn this short report, Sato and colleagues studied the effects of optogenetic inactivation of secondary motor cortex (MOs) on eye movements using a visually-guided eye movement task in mice. The authors show that unilateral inactivation of MOs impaired contraversive eye movements on the first day of manipulation but this effect was greatly reduced after several days of repeated inactivation. This behavioral recovery was accompanied by changes in MOs activity: MOs neurons initially showed significant contraversive preference. However, after repeated unilateral inactivation, the contralateral MOs reduced contraversive preference. Inactivation of bilateral MOs eliminated the recovered movements.\n\nThe reviewers found this study to contain very important and impactful results. Optogenetics is very widely used under the assumption that brief stimulations do not cause significant long-lasting changes in the underlying brain mechanisms. The current study clearly refutes that assumption, at least in the context studied here. As such, this study will be of great interest to a wide neuroscience audience.\n\nThe reviewers also found the conclusions to be well supported by the data, the manuscript is well-written, and the results are interesting and thought-provoking. However, the reviewers raised some concerns to which we would like to see your response.\n\nEssential revisions:\n\nCan the authors exclude the possibility that the reported plasticity was caused by tissue damage made by the repetitive illumination of blue laser, but not by the reversible inactivation? One possible control experiment would be 2-photon imaging of the suppressed area after the repetitive suppression. The other possibility would be to test whether a repetitive illumination of MOs without the optogenetics will impair the eye movements or not.\n\nMinor points:\n\n1) Although the \"success rate\" of the animal's performance in the task is one of the key measures in this study, its definition is somewhat ambiguous. Please clarify the definition of a success rate. For example, in the Materials and methods section, \"the mouse needed to shift its gaze.\u2026 within 10 s.\" In the subsection \u201cThe MOs primarily encodes contraversive eye movement condition\u201d, success rate based on this definition was \"84.5% success\". On the other hand, in the subsection \u201cUnilateral MOs suppression impairs contraversive eye movement only on the first day\u201d, the success rate was measured as \"proportion of trials with a reaction time less than 1 sec\". Therefore, the post-suppression% correct was \"7.1% \" and that of pre-suppression was \"40.4%\". Is it possible to use the same definition throughout the manuscript for clarity?\n\n2) Based on Figure 2B left, the mouse made correct saccades in the suppression trials after the light was turned off in some trials. This might suggest that mice were rewarded in many of the suppression trials. What was the rate of reward in the suppression trials? Or, what are the success rates in the experimental sessions if a correct saccade within 10 sec was defined as success? Please clarify the reward contingency and definition of \"success\" in these cases.\n\n3) Please clarify whether the suppression was applied randomly or in a blocked design (i.e. successive trials).\n\n4) Did the authors examine the neural activity in the surrounding region of the suppressed area or in the suppressed area after the repetitive suppression? If these areas did not change their activity, the conclusion of the manuscript can be strengthened.\n\n5) Are there anatomical reports that support the compensation in the contralateral hemisphere?\n",
+      "created_at": "2025-12-02T13:11:54.510323Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T13:11:54.510323Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T13:11:54.510323Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "a1ba7b4b-c727-415c-8ec5-69227d0ebc5d",
+      "content_id": "cc981459-cafb-48c4-a7ee-d53a99e11726",
+      "claim_id": "C1",
+      "claim": "Cortical plasticity is fundamental to motor recovery following cortical perturbation.",
+      "claim_type": "EXPLICIT",
+      "source": "Cortical plasticity is fundamental to motor recovery following cortical perturbation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement in the abstract that draws from established scientific understanding about cortical plasticity and motor recovery.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:11:54.510323Z"
+    },
+    {
+      "id": "806cf227-6b01-47ff-baf8-98c1e09d8484",
+      "content_id": "cc981459-cafb-48c4-a7ee-d53a99e11726",
+      "claim_id": "C2",
+      "claim": "Optogenetic unilateral suppression of a portion of the secondary motor cortex (MOs) that encodes contraversive eye movement severely impaired contraversive movement on the first day.",
+      "claim_type": "EXPLICIT",
+      "source": "Optogenetic unilateral suppression severely impaired contraversive movement on the first day.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data presented in the manuscript, specifically in Figure 2 and related text.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:11:54.510323Z"
+    },
+    {
+      "id": "28949a1b-5a70-42ed-af76-0eca747c51d9",
+      "content_id": "cc981459-cafb-48c4-a7ee-d53a99e11726",
+      "claim_id": "C3",
+      "claim": "On subsequent days after optogenetic suppression, the suppression became inefficient and capability for the movement was restored.",
+      "claim_type": "EXPLICIT",
+      "source": "However, on subsequent days the suppression became inefficient and capability for the movement was restored.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental observations shown in Figure 2C and related behavioral data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:11:54.510323Z"
+    },
+    {
+      "id": "36613c4e-c533-4caf-81b7-6542ebbb25d8",
+      "content_id": "cc981459-cafb-48c4-a7ee-d53a99e11726",
+      "claim_id": "C4",
+      "claim": "The regained capability for contraversive eye movement was accompanied by an increased number of neurons encoding for ipsiversive movement in the unsuppressed contralateral MOs.",
+      "claim_type": "EXPLICIT",
+      "source": "Longitudinal two-photon calcium imaging revealed that the regained capability was accompanied by an increased number of neurons encoding for ipsiversive movement in the unsuppressed contralateral MOs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by two-photon calcium imaging data presented in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:11:54.510323Z"
+    },
+    {
+      "id": "f76bf7e0-07ac-439c-ae6c-bcaf52020280",
+      "content_id": "cc981459-cafb-48c4-a7ee-d53a99e11726",
+      "claim_id": "C5",
+      "claim": "Additional suppression of the contralateral MOs impaired the recovered movement again.",
+      "claim_type": "EXPLICIT",
+      "source": "Additional suppression of the contralateral MOs impaired the recovered movement again, indicating a compensatory mechanism.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by bilateral suppression experiments shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:11:54.510323Z"
+    },
+    {
+      "id": "29bb0a57-4a3f-4402-be76-cb535ae001da",
+      "content_id": "cc981459-cafb-48c4-a7ee-d53a99e11726",
+      "claim_id": "C6",
+      "claim": "Repeated optogenetic suppression leads to functional recovery mediated by the contralateral hemisphere.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings demonstrate that repeated optogenetic suppression leads to functional recovery mediated by the contralateral hemisphere.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion drawn from the experimental data presented throughout the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:11:54.510323Z"
+    },
+    {
+      "id": "ef977f93-cebf-4683-a6c7-b517d4bbb70d",
+      "content_id": "cc981459-cafb-48c4-a7ee-d53a99e11726",
+      "claim_id": "C7",
+      "claim": "Neural plasticity in motor cortex is critical for motor learning.",
+      "claim_type": "EXPLICIT",
+      "source": "Neural plasticity in motor cortex is critical not only for motor learning (Peters et al., 2017), but also for motor recovery following cortical damage (Nudo, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Peters et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:11:54.510323Z"
+    },
+    {
+      "id": "88c7824d-cf81-4a18-8145-5061d5a124b7",
+      "content_id": "cc981459-cafb-48c4-a7ee-d53a99e11726",
+      "claim_id": "C8",
+      "claim": "Neural plasticity in motor cortex is critical for motor recovery following cortical damage.",
+      "claim_type": "EXPLICIT",
+      "source": "Neural plasticity in motor cortex is critical not only for motor learning (Peters et al., 2017), but also for motor recovery following cortical damage (Nudo, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Nudo, 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:11:54.510323Z"
+    },
+    {
+      "id": "ddfe22b9-3279-48d5-b54b-0c64fc5b551d",
+      "content_id": "cc981459-cafb-48c4-a7ee-d53a99e11726",
+      "claim_id": "C9",
+      "claim": "Motor plasticity has been traditionally investigated using motor cortex in higher animals.",
+      "claim_type": "EXPLICIT",
+      "source": "Motor plasticity has been traditionally investigated using motor cortex in higher animals (Travis and Woolsey, 1956).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Travis and Woolsey, 1956.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:11:54.510323Z"
+    },
+    {
+      "id": "3b044bc7-1b14-462f-9f54-e9537584f91a",
+      "content_id": "cc981459-cafb-48c4-a7ee-d53a99e11726",
+      "claim_id": "C10",
+      "claim": "Recent technical advancements have rendered rodent cortex a fruitful model to study circuit mechanisms in motor learning.",
+      "claim_type": "EXPLICIT",
+      "source": "However, recent technical advancements have rendered rodent cortex a fruitful model to study circuit mechanisms in motor learning (Makino et al., 2016), motor deficits (Ebbesen and Brecht, 2017) and motor recovery (Murphy and Corbett, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Makino et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:11:54.510323Z"
+    },
+    {
+      "id": "5553561a-6c26-4a37-a953-5119d6e13bcd",
+      "content_id": "cc981459-cafb-48c4-a7ee-d53a99e11726",
+      "claim_id": "C11",
+      "claim": "Recent technical advancements have rendered rodent cortex a fruitful model to study motor deficits.",
+      "claim_type": "EXPLICIT",
+      "source": "However, recent technical advancements have rendered rodent cortex a fruitful model to study circuit mechanisms in motor learning (Makino et al., 2016), motor deficits (Ebbesen and Brecht, 2017) and motor recovery (Murphy and Corbett, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Ebbesen and Brecht, 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:11:54.510323Z"
+    },
+    {
+      "id": "89575027-4efa-4373-9404-2161ec0656f4",
+      "content_id": "cc981459-cafb-48c4-a7ee-d53a99e11726",
+      "claim_id": "C12",
+      "claim": "Recent technical advancements have rendered rodent cortex a fruitful model to study motor recovery.",
+      "claim_type": "EXPLICIT",
+      "source": "However, recent technical advancements have rendered rodent cortex a fruitful model to study circuit mechanisms in motor learning (Makino et al., 2016), motor deficits (Ebbesen and Brecht, 2017) and motor recovery (Murphy and Corbett, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Murphy and Corbett, 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:11:54.510323Z"
+    },
+    {
+      "id": "ab5c8ffc-ff5d-43dd-91f5-67fe35ca9bde",
+      "content_id": "cc981459-cafb-48c4-a7ee-d53a99e11726",
+      "claim_id": "C13",
+      "claim": "Previous studies in rodents investigated the cellular and molecular mechanisms that underlie compensatory pathophysiological changes in the cortical network during stroke recovery.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, previous studies in rodents investigated the cellular and molecular mechanisms that underlie compensatory pathophysiological changes in the cortical network during stroke recovery (Alia et al., 2017; Fawcett, 2015; Li et al., 2010; Schwab and Strittmatter, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to multiple studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:11:54.510323Z"
+    },
+    {
+      "id": "a93e5086-d706-43cb-a957-c4152a78e814",
+      "content_id": "cc981459-cafb-48c4-a7ee-d53a99e11726",
+      "claim_id": "C14",
+      "claim": "Compensatory pathophysiological changes during stroke recovery include modification of extracellular matrix structures.",
+      "claim_type": "EXPLICIT",
+      "source": "Such changes include modification of extracellular matrix structures (Fawcett, 2015) and increased neurotropic factors for angiogenesis, neurogenesis, and synaptic plasticity (Berretta et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Fawcett, 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:11:54.510323Z"
+    },
+    {
+      "id": "db76547a-e509-44aa-b673-06d1c036875e",
+      "content_id": "cc981459-cafb-48c4-a7ee-d53a99e11726",
+      "claim_id": "C15",
+      "claim": "Compensatory pathophysiological changes during stroke recovery include increased neurotropic factors for angiogenesis, neurogenesis, and synaptic plasticity.",
+      "claim_type": "EXPLICIT",
+      "source": "Such changes include modification of extracellular matrix structures (Fawcett, 2015) and increased neurotropic factors for angiogenesis, neurogenesis, and synaptic plasticity (Berretta et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Berretta et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:11:54.510323Z"
+    },
+    {
+      "id": "3a110791-f05a-47b0-91f5-f82053f4f3c1",
+      "content_id": "cc981459-cafb-48c4-a7ee-d53a99e11726",
+      "claim_id": "C16",
+      "claim": "It is not clear whether molecular processes are necessary to recover impaired movements or whether motor recovery can be mediated simply by mechanisms similar to motor learning inherent to the physiological circuits.",
+      "claim_type": "EXPLICIT",
+      "source": "However, it is not clear whether these molecular processes are necessary to recover impaired movements or whether motor recovery can be mediated simply by mechanisms similar to motor learning inherent to the physiological circuits.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement identifies a gap in knowledge that the study aims to address.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:11:54.510323Z"
+    },
+    {
+      "id": "4a782bc6-5de0-4a6d-9d70-6cbaffe2c75c",
+      "content_id": "cc981459-cafb-48c4-a7ee-d53a99e11726",
+      "claim_id": "C17",
+      "claim": "Recovery from motor deficits relies on the intact brain regions including a hemisphere contralateral to cortical lesions.",
+      "claim_type": "EXPLICIT",
+      "source": "Recovery from motor deficits relies on the intact brain regions including a hemisphere contralateral to cortical lesions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement based on established knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:11:54.510323Z"
+    },
+    {
+      "id": "0282e2f8-5975-4e60-90e4-da3b52d5bc3c",
+      "content_id": "cc981459-cafb-48c4-a7ee-d53a99e11726",
+      "claim_id": "C18",
+      "claim": "The contralateral hemisphere has been a target for motor rehabilitation in humans.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, the contralateral hemisphere has been a target for motor rehabilitation in humans (Buetefisch, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Buetefisch, 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:11:54.510323Z"
+    },
+    {
+      "id": "d7a1e98d-7480-4c01-8cee-7cfeb3ee1ae7",
+      "content_id": "cc981459-cafb-48c4-a7ee-d53a99e11726",
+      "claim_id": "C19",
+      "claim": "Eye movement, like binocularly coupled saccade, shows a simple but robust motor output.",
+      "claim_type": "EXPLICIT",
+      "source": "Eye movement, like binocularly coupled saccade, shows a simple but robust motor output, and its direction is represented mainly in the contralateral frontal cortex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge about eye movement control.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:11:54.510323Z"
+    },
+    {
+      "id": "6ca10327-3b79-4b59-95ba-c1bf43ba6327",
+      "content_id": "cc981459-cafb-48c4-a7ee-d53a99e11726",
+      "claim_id": "C20",
+      "claim": "Eye movement direction is represented mainly in the contralateral frontal cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "Eye movement, like binocularly coupled saccade, shows a simple but robust motor output, and its direction is represented mainly in the contralateral frontal cortex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge about eye movement control.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:11:54.510323Z"
+    },
+    {
+      "id": "e2d8d07f-8b95-4799-b85b-ceaf7838e3d0",
+      "content_id": "cc981459-cafb-48c4-a7ee-d53a99e11726",
+      "claim_id": "C21",
+      "claim": "A unilateral lesion in primate frontal cortex disrupts saccades toward the contralateral side (contraversive saccades).",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this representation, a unilateral lesion in primate frontal cortex disrupts saccades toward the contralateral side (i.e., contraversive saccades) (Crowne et al., 1981; Pierrot-Deseilligny et al., 2002; van der Steen et al., 1986).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to multiple primate studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:11:54.510323Z"
+    },
+    {
+      "id": "a47813e1-184e-4491-88d3-fa9677bdbc7f",
+      "content_id": "cc981459-cafb-48c4-a7ee-d53a99e11726",
+      "claim_id": "C22",
+      "claim": "Deficits in contraversive saccades following unilateral frontal cortex lesion can ease over time.",
+      "claim_type": "EXPLICIT",
+      "source": "However, such deficits can ease over time (Crowne et al., 1981; van der Steen et al., 1986), even after the removal of an entire cortical hemisphere (Bruell and Volk, 1956; Esta\u00f1ol et al., 1980; Herter and Guitton, 2004; Perenin and Jeannerod, 1978; Sharpe et al., 1979; Troost et al., 1972; Tusa et al., 1986).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Crowne et al., 1981 and van der Steen et al., 1986.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:11:54.510323Z"
+    },
+    {
+      "id": "f767fb0b-a91b-4f41-aca1-dcbaed3f24e6",
+      "content_id": "cc981459-cafb-48c4-a7ee-d53a99e11726",
+      "claim_id": "C23",
+      "claim": "Deficits in contraversive saccades can ease even after the removal of an entire cortical hemisphere.",
+      "claim_type": "EXPLICIT",
+      "source": "However, such deficits can ease over time (Crowne et al., 1981; van der Steen et al., 1986), even after the removal of an entire cortical hemisphere (Bruell and Volk, 1956; Esta\u00f1ol et al., 1980; Herter and Guitton, 2004; Perenin and Jeannerod, 1978; Sharpe et al., 1979; Troost et al., 1972; Tusa et al., 1986).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to multiple studies on hemispherectomy.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:11:54.510323Z"
+    },
+    {
+      "id": "adb97e80-e61f-42cf-9d62-5694c3bda907",
+      "content_id": "cc981459-cafb-48c4-a7ee-d53a99e11726",
+      "claim_id": "C24",
+      "claim": "The recovery of the contraversive saccade in primate implies compensatory neural plasticity, potentially involving the contralateral hemisphere.",
+      "claim_type": "EXPLICIT",
+      "source": "The recovery of the contraversive saccade in primate implies compensatory neural plasticity, potentially involving the contralateral hemisphere.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the cited primate studies.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:11:54.510323Z"
+    },
+    {
+      "id": "40a02a00-a245-4c0c-8724-dcb0a964bfd1",
+      "content_id": "cc981459-cafb-48c4-a7ee-d53a99e11726",
+      "claim_id": "C25",
+      "claim": "A small portion of the secondary motor cortex (MOs) in the frontal cortex controls contraversive eye movements.",
+      "claim_type": "EXPLICIT",
+      "source": "Using this task, we previously demonstrated that a small portion of the secondary motor cortex (MOs) in the frontal cortex controls contraversive eye movements, optogenetic suppression of MOs impairs contraversive eye movements, and MOs neurons preferentially encode contraversive eye movements.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on the authors' previous work (Itokazu et al., 2018).",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:11:54.510323Z"
+    },
+    {
+      "id": "cba73597-5893-4a04-8a8f-3ce89dce5218",
+      "content_id": "cc981459-cafb-48c4-a7ee-d53a99e11726",
+      "claim_id": "C26",
+      "claim": "Optogenetic suppression of MOs impairs contraversive eye movements.",
+      "claim_type": "EXPLICIT",
+      "source": "Using this task, we previously demonstrated that a small portion of the secondary motor cortex (MOs) in the frontal cortex controls contraversive eye movements, optogenetic suppression of MOs impairs contraversive eye movements, and MOs neurons preferentially encode contraversive eye movements.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on the authors' previous work (Itokazu et al., 2018).",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:11:54.510323Z"
+    },
+    {
+      "id": "49a98b61-b611-4b36-8fed-7fda4d2369fb",
+      "content_id": "cc981459-cafb-48c4-a7ee-d53a99e11726",
+      "claim_id": "C27",
+      "claim": "MOs neurons preferentially encode contraversive eye movements.",
+      "claim_type": "EXPLICIT",
+      "source": "Using this task, we previously demonstrated that a small portion of the secondary motor cortex (MOs) in the frontal cortex controls contraversive eye movements, optogenetic suppression of MOs impairs contraversive eye movements, and MOs neurons preferentially encode contraversive eye movements.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on the authors' previous work (Itokazu et al., 2018).",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:11:54.510323Z"
+    },
+    {
+      "id": "e83aad45-528b-46aa-908a-b101d6d11c84",
+      "content_id": "cc981459-cafb-48c4-a7ee-d53a99e11726",
+      "claim_id": "C28",
+      "claim": "The suppressed eye movement can be recovered over time due to plasticity of the contralateral MOs.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we found that the suppressed eye movement can be recovered over time due to plasticity of the contralateral MOs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main finding of the current study, supported by experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:11:54.510323Z"
+    },
+    {
+      "id": "463f0e34-15a0-4f31-a7c5-b5bd13b4d6bf",
+      "content_id": "cc981459-cafb-48c4-a7ee-d53a99e11726",
+      "claim_id": "C29",
+      "claim": "The neural representation of motor output is highly plastic even without pathophysiological events.",
+      "claim_type": "EXPLICIT",
+      "source": "We propose that the neural representation of motor output is highly plastic even without pathophysiological events.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:11:54.510323Z"
+    },
+    {
+      "id": "0d0bc8fa-cecd-439f-a1e8-8cba47f150e5",
+      "content_id": "cc981459-cafb-48c4-a7ee-d53a99e11726",
+      "claim_id": "C30",
+      "claim": "After several weeks of training, mice became capable of performing eye shifts in the appropriate direction within 10 s to obtain reward with 84.7 \u00b1 2.5% success (n = 10 mice).",
+      "claim_type": "EXPLICIT",
+      "source": "After several weeks of training, the mice became capable of performing eye shifts in the appropriate direction within 10 s to obtain reward with 84.7 \u00b1 2.5% success (n = 10 mice, See Materials and methods).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by behavioral training data from the experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:11:54.510323Z"
+    },
+    {
+      "id": "ae2791c8-a46a-43ee-b9e1-5ff3517cc915",
+      "content_id": "cc981459-cafb-48c4-a7ee-d53a99e11726",
+      "claim_id": "C31",
+      "claim": "Even though the task required only left eye movement, movements of both eyes were coupled.",
+      "claim_type": "EXPLICIT",
+      "source": "As we previously reported (Itokazu et al., 2018), even though the task required only left eye movement, movements of both eyes were coupled (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by eye tracking data shown in Figure 1B and previously reported in Itokazu et al., 2018.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:11:54.510323Z"
+    },
+    {
+      "id": "d41b26c3-dca4-4601-98a9-75c1adcad9bc",
+      "content_id": "cc981459-cafb-48c4-a7ee-d53a99e11726",
+      "claim_id": "C32",
+      "claim": "47.0% of imaged MOs neurons showed a significant increase in activity just before eye movement onset (n = 463/985 neurons in ten mice).",
+      "claim_type": "EXPLICIT",
+      "source": "Among the imaged neurons, 47.0% showed a significant increase in activity just before eye movement onset (n = 463/985 neurons in ten mice).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by two-photon calcium imaging data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:11:54.510323Z"
+    },
+    {
+      "id": "9d03b576-498e-4a44-91e2-2aa0ba46b844",
+      "content_id": "cc981459-cafb-48c4-a7ee-d53a99e11726",
+      "claim_id": "C33",
+      "claim": "Eye movement-related activity is considered a mixture of motor command and visual activity due to the short separation between visual cue onset and motor onset.",
+      "claim_type": "EXPLICIT",
+      "source": "This activity \u2013 which we refer to as eye movement-related activity \u2013 is considered a mixture of motor command and visual activity (Itokazu et al., 2018) due to the short separation between visual cue onset and motor onset.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the authors' previous work and the experimental design.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:11:54.510323Z"
+    },
+    {
+      "id": "e8e268a8-2a68-4046-8e95-31f8833e5daa",
+      "content_id": "cc981459-cafb-48c4-a7ee-d53a99e11726",
+      "claim_id": "C34",
+      "claim": "The distribution of selectivity was significantly skewed to the positive value, indicating the preference for the contraversive condition as a population.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected based on our previous report (Itokazu et al., 2018), the distribution of selectivity was significantly skewed to the positive value (Figure 1E and F, Wilcoxon signed-rank test, p<10\u221210), indicating the preference for the contraversive condition as a population.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by statistical analysis of imaging data shown in Figure 1E and F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:11:54.510323Z"
+    },
+    {
+      "id": "b36871ae-f17a-4382-a24f-779ca0ffdb99",
+      "content_id": "cc981459-cafb-48c4-a7ee-d53a99e11726",
+      "claim_id": "C35",
+      "claim": "More individual neurons showed significantly higher activity in the contraversive eye movement condition (24.5% neurons, contraversive selective) than the ipsiversive one (7.5%, ipsiversive selective).",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, more individual neurons showed significantly higher activity in the contraversive eye movement condition (24.5% neurons, contraversive selective) than the ipsiversive one (7.5%, ipsiversive selective), confirming that the MOs mainly encodes contraversive eye movement condition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by analysis of individual neuron responses from imaging data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:11:54.510323Z"
+    },
+    {
+      "id": "300d17fa-e687-4ead-b257-6b6c6189a84e",
+      "content_id": "cc981459-cafb-48c4-a7ee-d53a99e11726",
+      "claim_id": "C36",
+      "claim": "The MOs mainly encodes contraversive eye movement condition.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, more individual neurons showed significantly higher activity in the contraversive eye movement condition (24.5% neurons, contraversive selective) than the ipsiversive one (7.5%, ipsiversive selective), confirming that the MOs mainly encodes contraversive eye movement condition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the imaging data showing more contraversive-selective neurons.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:11:54.510323Z"
+    },
+    {
+      "id": "8dd49015-b7df-40a2-9f08-f365f388d1bd",
+      "content_id": "cc981459-cafb-48c4-a7ee-d53a99e11726",
+      "claim_id": "C37",
+      "claim": "On the first day of optogenetic suppression, mice could produce contraversive eye movements within a reaction time of 10 s (with suppression: 75.6%, reaction time 1.76 \u00b1 1.47 s, n = 127; without suppression: 85.0%, 1.09 \u00b1 1.72 s, n = 193).",
+      "claim_type": "EXPLICIT",
+      "source": "On the first day of the optogenetic experiment, although the mice could produce contraversive eye movements within a reaction time of 10 s (with suppression: proportion of trials with a reaction time less than 10 s, 75.6%, reaction time, 1.76 \u00b1 1.47 s, n = 127; without suppression: 85.0%, 1.09 \u00b1 1.72 s, n = 193), they could not during the 1 s suppression period (Figure 2A,B and D; trials with optogenetic suppression: proportion of trials with a reaction time less than 1 s, 7.1%, n = 127; trials without suppression: 40.4%, n = 193 trials; p<10\u221210, Pearson's chi-square test, see also Itokazu et al. (2018).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by behavioral data shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:11:54.510323Z"
+    },
+    {
+      "id": "f570b06a-47d7-4d40-b446-f44330be825b",
+      "content_id": "cc981459-cafb-48c4-a7ee-d53a99e11726",
+      "claim_id": "C38",
+      "claim": "On the first day of optogenetic suppression, mice could not produce contraversive eye movements during the 1 s suppression period (with suppression: 7.1% trials with reaction time < 1 s; without suppression: 40.4%; p<10\u221210).",
+      "claim_type": "EXPLICIT",
+      "source": "On the first day of the optogenetic experiment, although the mice could produce contraversive eye movements within a reaction time of 10 s (with suppression: proportion of trials with a reaction time less than 10 s, 75.6%, reaction time, 1.76 \u00b1 1.47 s, n = 127; without suppression: 85.0%, 1.09 \u00b1 1.72 s, n = 193), they could not during the 1 s suppression period (Figure 2A,B and D; trials with optogenetic suppression: proportion of trials with a reaction time less than 1 s, 7.1%, n = 127; trials without suppression: 40.4%, n = 193 trials; p<10\u221210, Pearson's chi-square test, see also Itokazu et al. (2018).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by behavioral data and statistical analysis shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:11:54.510323Z"
+    },
+    {
+      "id": "aef8dd6f-290b-4994-8cb8-855c55795a4a",
+      "content_id": "cc981459-cafb-48c4-a7ee-d53a99e11726",
+      "claim_id": "C39",
+      "claim": "After several days (5.9 \u00b1 1.0 days, n = 8 mice) of optogenetic suppression, mice regained their contraversive eye movements even during the suppression.",
+      "claim_type": "EXPLICIT",
+      "source": "However, after several days (5.9 \u00b1 1.0 days, n = 8 mice) of optogenetic suppression, the mice regained their contraversive eye movements even during the suppression (Figure 2C and E; trials with optogenetic suppression: proportion of trials with a reaction time less than 10 s, 90.0%, less than 1 s, 44.5%, reaction time, 1.06 \u00b1 1.00 s, n = 220 trials; trials without suppression: less than 10 s, 90.7%, less than 1 s, 52.7%, 0.78 \u00b1 1.40 s, n = 150 trials; comparison between with and without suppression, p>0.12, Pearson's chi-square test; comparison between suppression on the first day and one on the last day, p<10\u221212, Pearson's chi-square test), consistent with the behavioral recovery observed in primate lesion studies (van der Steen et al., 1986).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by behavioral data shown in Figure 2C and E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:11:54.510323Z"
+    },
+    {
+      "id": "92b62a87-edd1-40b3-82a5-41c689e919fa",
+      "content_id": "cc981459-cafb-48c4-a7ee-d53a99e11726",
+      "claim_id": "C40",
+      "claim": "The behavioral recovery observed in mice is consistent with behavioral recovery observed in primate lesion studies.",
+      "claim_type": "EXPLICIT",
+      "source": "However, after several days (5.9 \u00b1 1.0 days, n = 8 mice) of optogenetic suppression, the mice regained their contraversive eye movements even during the suppression (Figure 2C and E; trials with optogenetic suppression: proportion of trials with a reaction time less than 10 s, 90.0%, less than 1 s, 44.5%, reaction time, 1.06 \u00b1 1.00 s, n = 220 trials; trials without suppression: less than 10 s, 90.7%, less than 1 s, 52.7%, 0.78 \u00b1 1.40 s, n = 150 trials; comparison between with and without suppression, p>0.12, Pearson's chi-square test; comparison between suppression on the first day and one on the last day, p<10\u221212, Pearson's chi-square test), consistent with the behavioral recovery observed in primate lesion studies (van der Steen et al., 1986).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This comparison is made to primate studies cited (van der Steen et al., 1986).",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:11:54.510323Z"
+    },
+    {
+      "id": "a62852cb-b7c6-469c-91f9-5e7b079972c0",
+      "content_id": "cc981459-cafb-48c4-a7ee-d53a99e11726",
+      "claim_id": "C41",
+      "claim": "The recovery from the initial functional deficit implies that this eye movement might be newly encoded in other brain regions.",
+      "claim_type": "EXPLICIT",
+      "source": "The recovery from the initial functional deficit implies that this eye movement might be newly encoded in other brain regions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the behavioral recovery data.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:11:54.510323Z"
+    },
+    {
+      "id": "828c0137-ea03-4212-a079-dad7833c4525",
+      "content_id": "cc981459-cafb-48c4-a7ee-d53a99e11726",
+      "claim_id": "C42",
+      "claim": "Following optogenetic suppression and recovery, neurons were found that showed a new preference for the ipsiversive movement and those that no longer preferred the contraversive movement.",
+      "claim_type": "EXPLICIT",
+      "source": "We found neurons that showed a new preference for the ipsiversive movement and those that no longer preferred the contraversive movement (Figure 3D and E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by two-photon imaging data shown in Figure 3D and E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:11:54.510323Z"
+    },
+    {
+      "id": "af5583ba-6e12-4479-9c5d-9fbcae6d5dea",
+      "content_id": "cc981459-cafb-48c4-a7ee-d53a99e11726",
+      "claim_id": "C43",
+      "claim": "As a population, many neurons showed an increased preference for the ipsiversive direction or a reduced preference for the contraversive direction (n = 415 eye movement-related neurons in six mice).",
+      "claim_type": "EXPLICIT",
+      "source": "As a population, many neurons showed an increased preference for the ipsiversive direction or a reduced preference for the contraversive direction (data points below the scatter plot unity line, Figure 3F, n = 415 eye movement-related neurons in six mice), especially for neurons that showed direction-selectivity in the 'before' or 'after' conditions (n = 190 out of 415, black circles).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by analysis of imaging data shown in Figure 3F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:11:54.510323Z"
+    },
+    {
+      "id": "3fec4988-88d7-44df-8297-6eb20208474c",
+      "content_id": "cc981459-cafb-48c4-a7ee-d53a99e11726",
+      "claim_id": "C44",
+      "claim": "The distribution for the change in selectivity index was biased toward the ipsiversive condition for direction-selective neurons (p<10\u22128, Wilcoxon signed-rank test, n = 190).",
+      "claim_type": "EXPLICIT",
+      "source": "Consistently, the distribution for the change in selectivity index (see Materials and methods) was biased toward the ipsiversive condition for direction-selective neurons (p<10\u22128, Wilcoxon signed-rank test, n = 190, black bars, top-right inset in Figure 3F), and for all neurons that showed a significant movement-related activity (p<10\u22126, n = 415, black plus white bars).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by statistical analysis of imaging data shown in Figure 3F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:11:54.510323Z"
+    },
+    {
+      "id": "1fd93475-11fa-45f8-958c-d046ee5cb8d8",
+      "content_id": "cc981459-cafb-48c4-a7ee-d53a99e11726",
+      "claim_id": "C45",
+      "claim": "The distribution for the change in selectivity index was biased toward the ipsiversive condition for all neurons that showed significant movement-related activity (p<10\u22126, n = 415).",
+      "claim_type": "EXPLICIT",
+      "source": "Consistently, the distribution for the change in selectivity index (see Materials and methods) was biased toward the ipsiversive condition for direction-selective neurons (p<10\u22128, Wilcoxon signed-rank test, n = 190, black bars, top-right inset in Figure 3F), and for all neurons that showed a significant movement-related activity (p<10\u22126, n = 415, black plus white bars).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by statistical analysis of imaging data shown in Figure 3F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:11:54.510323Z"
+    },
+    {
+      "id": "e98edc75-4a63-49dc-a12d-3aafc84b4fe6",
+      "content_id": "cc981459-cafb-48c4-a7ee-d53a99e11726",
+      "claim_id": "C46",
+      "claim": "In control mice that expressed only GFP and received no optogenetic suppression, additional training did not cause an increased ipsiversive preference.",
+      "claim_type": "EXPLICIT",
+      "source": "In control mice that expressed only GFP and thereby received no optogenetic suppression, additional training did not cause an increased ipsiversive preference, but rather led to a tendency for an increased contraversive preference (p=0.13, n = 123 for all direction-selective neurons; p<0.002, n = 282 for all neurons that showed significant motor-related activity, Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by control experiment data shown in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:11:54.510323Z"
+    },
+    {
+      "id": "1e082ab4-fe90-404d-9dde-b0714654a863",
+      "content_id": "cc981459-cafb-48c4-a7ee-d53a99e11726",
+      "claim_id": "C47",
+      "claim": "In control mice, additional training led to a tendency for an increased contraversive preference (p=0.13 for direction-selective neurons; p<0.002 for all motor-related neurons).",
+      "claim_type": "EXPLICIT",
+      "source": "In control mice that expressed only GFP and thereby received no optogenetic suppression, additional training did not cause an increased ipsiversive preference, but rather led to a tendency for an increased contraversive preference (p=0.13, n = 123 for all direction-selective neurons; p<0.002, n = 282 for all neurons that showed significant motor-related activity, Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by control experiment data shown in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:11:54.510323Z"
+    },
+    {
+      "id": "1bb8582c-8420-49a5-a4ff-14851d2936c0",
+      "content_id": "cc981459-cafb-48c4-a7ee-d53a99e11726",
+      "claim_id": "C48",
+      "claim": "Optogenetic suppression caused an increase in neurons selective for ipsiversive direction and a decrease in those selective for contraversive direction, accompanied by a learned capacity to make ipsiversive eye movements.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, optogenetic suppression caused an increase in neurons selective for ipsiversive direction and a decrease in those selective for contraversive direction, accompanied by a learned capacity to make ipsiversive eye movements.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from comparing experimental and control data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:11:54.510323Z"
+    },
+    {
+      "id": "6a340424-cb65-4852-9696-f39d46f3ad63",
+      "content_id": "cc981459-cafb-48c4-a7ee-d53a99e11726",
+      "claim_id": "C49",
+      "claim": "On the first day of unilateral suppression, mice were unable to generate contraversive eye movements during 1 s optogenetic suppression (reaction time with suppression: 1.69 \u00b1 1.51 s, n = 35/39 trials vs without suppression: 0.89 \u00b1 1.36 s, n = 92/96 trials, p<0.0002).",
+      "claim_type": "EXPLICIT",
+      "source": "As expected from Figure 2B, on the first day of unilateral suppression the mice were unable to generate contraversive eye movements during 1 s optogenetic suppression (Figure 4D, reaction time with and without suppression, 1.69 \u00b1 1.51 s, n = 35 out of 39 trials, vs 0.89 \u00b1 1.36 s, n = 92 out of 96 trials, p<0.0002, Mann-Whitney U test, n = 4 mice).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by behavioral data shown in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:11:54.510323Z"
+    },
+    {
+      "id": "d4a04324-1f04-4dbb-b3c6-00a208a6a5cf",
+      "content_id": "cc981459-cafb-48c4-a7ee-d53a99e11726",
+      "claim_id": "C50",
+      "claim": "Within several days (3.8 \u00b1 0.7 days), mice regained the capacity to make contraversive movements during unilateral MOs suppression (0.83 \u00b1 0.90 s, n = 59/61 trials vs 0.59 \u00b1 0.90 s, n = 56/61 trials, p>0.07).",
+      "claim_type": "EXPLICIT",
+      "source": "Within several days (3.8 \u00b1 0.7 days), the mice regained the capacity to make contraversive movements during unilateral MOs suppression (Figure 4B and E, 0.83 \u00b1 0.90 s, n = 59/61 trials vs 0.59 \u00b1 0.90 s, n = 56/61 trials, p>0.07, Mann-Whitney U test).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by behavioral data shown in Figure 4B and E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:11:54.510323Z"
+    },
+    {
+      "id": "758b3dd4-d206-4cc8-bd2a-2f8e097544ef",
+      "content_id": "cc981459-cafb-48c4-a7ee-d53a99e11726",
+      "claim_id": "C51",
+      "claim": "Additional suppression of the MOs in the contralateral hemisphere caused the same impairment as on the first day (1.27 \u00b1 1.21 s, n = 35/37 trials vs 0.45 \u00b1 0.97 s, n = 102/108 trials, p<10\u22125).",
+      "claim_type": "EXPLICIT",
+      "source": "However, additional suppression of the MOs in the contralateral hemisphere caused the same impairment as on the first day (Figure 4C and F, 1.27 \u00b1 1.21 s, n = 35/37 trials vs 0.45 \u00b1 0.97 s, n = 102/108 trials, p<10\u22125, Mann-Whitney U test).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by behavioral data shown in Figure 4C and F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:11:54.510323Z"
+    },
+    {
+      "id": "eae1efb8-c945-4f13-845b-21d2a78f7874",
+      "content_id": "cc981459-cafb-48c4-a7ee-d53a99e11726",
+      "claim_id": "C52",
+      "claim": "The reaction time for bilateral suppression was significantly longer than that for post-training unilateral suppression (1.27 \u00b1 1.21 s vs. 0.83 \u00b1 0.90 s, p<0.02).",
+      "claim_type": "EXPLICIT",
+      "source": "The reaction time for bilateral suppression was significantly longer than that for post-training unilateral suppression (Figure 4E and F, bottom, 1.27 \u00b1 1.21 s vs. 0.83 \u00b1 0.90 s, p<0.02, Mann-Whitney U test), and was similar to the reaction time before training (first day, Figure 4D bottom, 1.69 \u00b1 1.51 s, p>0.05, Mann-Whitney U test).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by statistical comparison of behavioral data shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:11:54.510323Z"
+    },
+    {
+      "id": "dc5bd620-7cd2-48eb-8897-083231f2cc14",
+      "content_id": "cc981459-cafb-48c4-a7ee-d53a99e11726",
+      "claim_id": "C53",
+      "claim": "The reaction time for bilateral suppression was similar to the reaction time before training (bilateral: 1.27 \u00b1 1.21 s; first day: 1.69 \u00b1 1.51 s, p>0.05).",
+      "claim_type": "EXPLICIT",
+      "source": "The reaction time for bilateral suppression was significantly longer than that for post-training unilateral suppression (Figure 4E and F, bottom, 1.27 \u00b1 1.21 s vs. 0.83 \u00b1 0.90 s, p<0.02, Mann-Whitney U test), and was similar to the reaction time before training (first day, Figure 4D bottom, 1.69 \u00b1 1.51 s, p>0.05, Mann-Whitney U test).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by statistical comparison of behavioral data shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:11:54.510323Z"
+    },
+    {
+      "id": "4a4b872d-8f0f-4687-845f-b150b7809055",
+      "content_id": "cc981459-cafb-48c4-a7ee-d53a99e11726",
+      "claim_id": "C54",
+      "claim": "The trial proportion with a reaction time less than 1 s was 21.6 \u00b1 8.1% (n = 4 mice) for bilateral suppression, which was significantly lower than that for unilateral suppression (56.0 \u00b1 9.7%, p<0.001).",
+      "claim_type": "EXPLICIT",
+      "source": "The trial proportion with a reaction time less than 1 s was 21.6 \u00b1 8.1% (n = 4 mice) for bilateral suppression, which was significantly lower than that for unilateral suppression (56.0 \u00b1 9.7%, p<0.001, Pearson's chi-square test), but similar to that before training (10.6 \u00b1 5.2% for before training, p>0.25, Pearson's chi-square test).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by statistical analysis of behavioral data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:11:54.510323Z"
+    },
+    {
+      "id": "cb7a44b5-017b-4c0a-9662-bbbe302ce104",
+      "content_id": "cc981459-cafb-48c4-a7ee-d53a99e11726",
+      "claim_id": "C55",
+      "claim": "The trial proportion with a reaction time less than 1 s for bilateral suppression was similar to that before training (bilateral: 21.6 \u00b1 8.1%; before training: 10.6 \u00b1 5.2%, p>0.25).",
+      "claim_type": "EXPLICIT",
+      "source": "The trial proportion with a reaction time less than 1 s was 21.6 \u00b1 8.1% (n = 4 mice) for bilateral suppression, which was significantly lower than that for unilateral suppression (56.0 \u00b1 9.7%, p<0.001, Pearson's chi-square test), but similar to that before training (10.6 \u00b1 5.2% for before training, p>0.25, Pearson's chi-square test).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by statistical analysis of behavioral data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:11:54.510323Z"
+    },
+    {
+      "id": "b1909cd7-06c4-4814-b979-f744a0555403",
+      "content_id": "cc981459-cafb-48c4-a7ee-d53a99e11726",
+      "claim_id": "C56",
+      "claim": "The significant impact of the bilateral suppression demonstrates that the contralateral MOs acquired an essential role in motor recovery after repetitive optogenetic suppression.",
+      "claim_type": "EXPLICIT",
+      "source": "The significant impact of the bilateral suppression demonstrates that the contralateral MOs acquired an essential role in motor recovery after repetitive optogenetic suppression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the bilateral suppression experiment data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:11:54.510323Z"
+    },
+    {
+      "id": "159d5ba2-4ace-4a21-a268-50f46484165f",
+      "content_id": "cc981459-cafb-48c4-a7ee-d53a99e11726",
+      "claim_id": "C57",
+      "claim": "The essential role of contralateral MOs, together with new encoding for ipsiversive direction, suggests that the dynamic properties of MOs neurons may underlie suppression-induced adaptation.",
+      "claim_type": "EXPLICIT",
+      "source": "This essential role, together with new encoding for ipsiversive direction (Figure 3), suggests that the dynamic properties of MOs neurons may underlie suppression-induced adaptation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from combining the bilateral suppression and imaging results.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:11:54.510323Z"
+    },
+    {
+      "id": "13631c55-2fba-409c-9c15-6cdf8bd67634",
+      "content_id": "cc981459-cafb-48c4-a7ee-d53a99e11726",
+      "claim_id": "C58",
+      "claim": "This is the first direct evidence showing dynamic directional encoding of eye movement across hemispheres.",
+      "claim_type": "EXPLICIT",
+      "source": "To our knowledge, this is the first direct evidence showing dynamic directional encoding of eye movement across hemispheres.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a claim about the novelty of the findings based on the authors' knowledge of the literature.",
+      "evidence_type": "[\"KNOWLEDGE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:11:54.510323Z"
+    },
+    {
+      "id": "08577d87-6e01-49eb-bf0c-382ae5cfde8a",
+      "content_id": "cc981459-cafb-48c4-a7ee-d53a99e11726",
+      "claim_id": "C59",
+      "claim": "The recovery process following unilateral optogenetic suppression shares similarity with recovery processes following a unilateral lesion in the motor cortex in human patients and in animal models.",
+      "claim_type": "EXPLICIT",
+      "source": "Our finding unveiled a recovery process following unilateral optogenetic suppression. It shares similarity with recovery processes following a unilateral lesion in the motor cortex in human patients and in animal models (reviewed in Alia et al., 2017; Murphy and Corbett, 2009; Nudo, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This comparison is made to lesion studies cited in reviews.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:11:54.510323Z"
+    },
+    {
+      "id": "59cc3f23-821e-4e17-9a21-08927921ce07",
+      "content_id": "cc981459-cafb-48c4-a7ee-d53a99e11726",
+      "claim_id": "C60",
+      "claim": "Cortical lesions are usually induced by events such as cortical resection, aspiration, traumatic brain injuries, and experimental strokes, which severely damage neurons, glial cells, vessels, neighboring axons, and the extracellular matrix including perineuronal nets.",
+      "claim_type": "EXPLICIT",
+      "source": "Cortical lesions are usually induced by events such as cortical resection, aspiration, traumatic brain injuries, and experimental strokes, which severely damage neurons, glial cells, vessels, neighboring axons, and the extracellular matrix including perineuronal nets.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge about cortical lesions.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:11:54.510323Z"
+    },
+    {
+      "id": "9966b157-1edb-4ba1-8980-23dec30bb87a",
+      "content_id": "cc981459-cafb-48c4-a7ee-d53a99e11726",
+      "claim_id": "C61",
+      "claim": "Cortical damage initiates highly complex pathophysiologic reactions like inflammation and reactive gliosis, which leads to the upregulation of neurotrophic factors and pro-inflammatory cytokines.",
+      "claim_type": "EXPLICIT",
+      "source": "This damage initiates highly complex pathophysiologic reactions like inflammation and reactive gliosis, which leads to the upregulation of neurotrophic factors and pro-inflammatory cytokines.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge about pathophysiological responses to brain damage.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:11:54.510323Z"
+    },
+    {
+      "id": "a79a53dc-0806-4bb9-b88d-e4e9830c7b89",
+      "content_id": "cc981459-cafb-48c4-a7ee-d53a99e11726",
+      "claim_id": "C62",
+      "claim": "All pathophysiological reactions following cortical damage could, in principle, be involved in plasticity.",
+      "claim_type": "EXPLICIT",
+      "source": "All of these reactions could, in principle, be involved in plasticity (Alia et al., 2017; da Silva Meirelles et al., 2017; Fawcett, 2015; Li et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to multiple studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:11:54.510323Z"
+    },
+    {
+      "id": "9c200e05-9ece-403e-b959-5c2d61ca6a56",
+      "content_id": "cc981459-cafb-48c4-a7ee-d53a99e11726",
+      "claim_id": "C63",
+      "claim": "It was not clear whether functional recovery could be achieved without complex pathophysiological events triggered by cortical lesions.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, it was not clear whether functional recovery could be achieved without complex pathophysiological events triggered by cortical lesions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This identifies a gap in knowledge that the study addresses.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:11:54.510323Z"
+    },
+    {
+      "id": "51b27246-d3fd-4d29-a607-0b52923a276f",
+      "content_id": "cc981459-cafb-48c4-a7ee-d53a99e11726",
+      "claim_id": "C64",
+      "claim": "A built-in plastic capability of normal cortical circuits alone could cause motor recovery of eye movement.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings demonstrate that a built-in plastic capability of normal cortical circuits alone could cause motor recovery of eye movement.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental findings showing recovery without lesion-induced pathophysiology.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:11:54.510323Z"
+    },
+    {
+      "id": "a3d65921-134a-4c6b-81c7-39ba7345d9f1",
+      "content_id": "cc981459-cafb-48c4-a7ee-d53a99e11726",
+      "claim_id": "C65",
+      "claim": "The motor cortex in the contralateral hemisphere underlies the flexibility in the neural representation of motor output.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings demonstrate that the motor cortex in the contralateral hemisphere underlies the flexibility in the neural representation of motor output.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:11:54.510323Z"
+    },
+    {
+      "id": "d0412edd-5969-4f63-a415-1c83d429a910",
+      "content_id": "cc981459-cafb-48c4-a7ee-d53a99e11726",
+      "claim_id": "C66",
+      "claim": "Studies in the forelimb/hindlimb motor cortex suggest that both the perilesional areas and the contralateral unaffected motor cortex play critical roles in motor recovery.",
+      "claim_type": "EXPLICIT",
+      "source": "Studies in the forelimb/hindlimb motor cortex suggest that both the perilesional areas and the contralateral unaffected motor cortex play critical roles in motor recovery (Alia et al., 2017; Benowitz and Carmichael, 2010; Murphy and Corbett, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to multiple studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:11:54.510323Z"
+    },
+    {
+      "id": "c2f546c9-d36a-4fac-8657-90c2b49df009",
+      "content_id": "cc981459-cafb-48c4-a7ee-d53a99e11726",
+      "claim_id": "C67",
+      "claim": "Following a cortical lesion, neurons in the contralateral cortex show increased turnover of dendritic spines and an increased number of dendritic branches.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, following a cortical lesion, neurons in the contralateral cortex show increased turnover of dendritic spines and an increased number of dendritic branches.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established findings in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:11:54.510323Z"
+    },
+    {
+      "id": "bff81c90-9144-4692-ba98-3b4aafb5d904",
+      "content_id": "cc981459-cafb-48c4-a7ee-d53a99e11726",
+      "claim_id": "C68",
+      "claim": "Following a large unilateral infarct, pharmacological silencing of the contralateral hemisphere can deteriorate recovered forelimb movement, indicating a facilitatory role.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistently, following a large unilateral infarct, pharmacological silencing of the contralateral hemisphere can deteriorate recovered forelimb movement, indicating a facilitatory role (Biernaskie et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Biernaskie et al., 2004.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:11:54.510323Z"
+    },
+    {
+      "id": "5abf2594-53a2-44d5-b89d-80c56e0d4b6a",
+      "content_id": "cc981459-cafb-48c4-a7ee-d53a99e11726",
+      "claim_id": "C69",
+      "claim": "The role of the contralateral hemisphere in motor recovery remains controversial.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the role of the contralateral hemisphere still remains controversial (Alia et al., 2017; Hosp and Luft, 2011; Mohajerani et al., 2011), and indeed a study showed that silencing the undamaged contralateral hemisphere by continuous infusion of GABA-A agonist improves recovery performance, implying a suppressive role (Mansoori et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to multiple studies showing conflicting results.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:11:54.510323Z"
+    },
+    {
+      "id": "b198eb14-4bfb-4e16-843b-a3e58f0c219b",
+      "content_id": "cc981459-cafb-48c4-a7ee-d53a99e11726",
+      "claim_id": "C70",
+      "claim": "Silencing the undamaged contralateral hemisphere by continuous infusion of GABA-A agonist improves recovery performance, implying a suppressive role.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the role of the contralateral hemisphere still remains controversial (Alia et al., 2017; Hosp and Luft, 2011; Mohajerani et al., 2011), and indeed a study showed that silencing the undamaged contralateral hemisphere by continuous infusion of GABA-A agonist improves recovery performance, implying a suppressive role (Mansoori et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Mansoori et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:11:54.510323Z"
+    },
+    {
+      "id": "804c1d80-0de7-468c-9f5b-ac0f1aa782ea",
+      "content_id": "cc981459-cafb-48c4-a7ee-d53a99e11726",
+      "claim_id": "C71",
+      "claim": "A prevailing hypothesis is that the role of the contralateral hemisphere depends on the size of infarction, particularly on whether remaining intact cortical areas in the ipsi-lesional hemisphere can take over the original functions of the lesioned area.",
+      "claim_type": "EXPLICIT",
+      "source": "A prevailing hypothesis that reconciles these findings is that the role of the contralateral hemisphere depends on the size of infarction, particularly on whether remaining intact cortical areas in the ipsi-lesional hemisphere can take over the original functions of the lesioned area (Buetefisch, 2015; Di Pino et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This hypothesis is supported by citations to Buetefisch, 2015 and Di Pino et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:11:54.510323Z"
+    },
+    {
+      "id": "815aed6c-92ba-455a-8c41-ae00bd6b0944",
+      "content_id": "cc981459-cafb-48c4-a7ee-d53a99e11726",
+      "claim_id": "C72",
+      "claim": "If remaining intact cortical areas in the ipsi-lesional hemisphere can take over the original functions, they will be interfered with by the contralateral hemisphere.",
+      "claim_type": "EXPLICIT",
+      "source": "If they can, they will be interfered with by the contralateral hemisphere.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is part of the hypothesis about the role of the contralateral hemisphere.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:11:54.510323Z"
+    },
+    {
+      "id": "6bcee713-0758-4b92-a570-b8689acd7bc1",
+      "content_id": "cc981459-cafb-48c4-a7ee-d53a99e11726",
+      "claim_id": "C73",
+      "claim": "If remaining intact cortical areas in the ipsi-lesional hemisphere cannot take over the original functions, the contralateral hemisphere can substitute for the functions of the lesioned area.",
+      "claim_type": "EXPLICIT",
+      "source": "If they cannot, the contralateral hemisphere instead can substitute for the functions of the lesioned area.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is part of the hypothesis about the role of the contralateral hemisphere.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:11:54.510323Z"
+    },
+    {
+      "id": "1e569786-8f03-4110-b9f6-4320c3e09dc5",
+      "content_id": "cc981459-cafb-48c4-a7ee-d53a99e11726",
+      "claim_id": "C74",
+      "claim": "Neighboring areas in the hemisphere ipsilateral to the optogenetic suppression may not substitute for the role of MOs in the eye movement task.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings suggest that neighboring areas in the hemisphere ipsilateral to the optogenetic suppression, despite potentially exhibiting some forms of plasticity, may not substitute for the role of MOs in our task.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the experimental findings showing the importance of the contralateral hemisphere.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:11:54.510323Z"
+    },
+    {
+      "id": "263dc271-5b6d-4e4b-9f7a-082d95a417e7",
+      "content_id": "cc981459-cafb-48c4-a7ee-d53a99e11726",
+      "claim_id": "C75",
+      "claim": "The MOs has a latent capability to control ipsiversive eye movements and can learn to turn on these movements.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings indicate that the MOs has a latent capability to control ipsiversive eye movements and can learn to turn on these movements.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the imaging and behavioral data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:11:54.510323Z"
+    },
+    {
+      "id": "aa6d2059-6349-403a-8048-325addf0752e",
+      "content_id": "cc981459-cafb-48c4-a7ee-d53a99e11726",
+      "claim_id": "C76",
+      "claim": "The latent capability of MOs to control ipsiversive eye movements might depend on existing anatomical projections from the MOs to subcortical eye-movement related regions for ipsiversive movements.",
+      "claim_type": "EXPLICIT",
+      "source": "This capability might depend on existing anatomical projections from the MOs to subcortical eye-movement related regions for ipsiversive movements.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about the anatomical basis for the observed plasticity.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:11:54.510323Z"
+    },
+    {
+      "id": "8f2474a2-d3d5-416e-afac-3c4c1f44dd22",
+      "content_id": "cc981459-cafb-48c4-a7ee-d53a99e11726",
+      "claim_id": "C77",
+      "claim": "The MOs normally projects to the superior colliculus.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, the MOs normally projects to the superior colliculus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established anatomical knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:11:54.510323Z"
+    },
+    {
+      "id": "e795f83a-1bf1-4a22-9ca8-487390ab6c97",
+      "content_id": "cc981459-cafb-48c4-a7ee-d53a99e11726",
+      "claim_id": "C78",
+      "claim": "Projections from MOs to the contralateral superior colliculus are rather sparse.",
+      "claim_type": "EXPLICIT",
+      "source": "However, in this case the MOs likely would need to project to the contralateral superior colliculus; these projections are rather sparse (Oh et al., 2014, for example, mouse #141603190).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Oh et al., 2014 and reference to specific anatomical data.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:11:54.510323Z"
+    },
+    {
+      "id": "6b1f282f-acd0-4ef8-b7fe-92dedcbaf96b",
+      "content_id": "cc981459-cafb-48c4-a7ee-d53a99e11726",
+      "claim_id": "C79",
+      "claim": "There are relatively strong projections from the MOs to the contralateral striatum.",
+      "claim_type": "EXPLICIT",
+      "source": "Another possibility is the relatively strong projections from the MOs to the contralateral striatum (Oh et al., 2014); the striatum has been linked to saccade output as an indirect pathway in primates (Basso and Sommer, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Oh et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:11:54.510323Z"
+    },
+    {
+      "id": "cf44f60f-d97a-4c24-8ffc-5f7adabf8dd2",
+      "content_id": "cc981459-cafb-48c4-a7ee-d53a99e11726",
+      "claim_id": "C80",
+      "claim": "The striatum has been linked to saccade output as an indirect pathway in primates.",
+      "claim_type": "EXPLICIT",
+      "source": "Another possibility is the relatively strong projections from the MOs to the contralateral striatum (Oh et al., 2014); the striatum has been linked to saccade output as an indirect pathway in primates (Basso and Sommer, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Basso and Sommer, 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:11:54.510323Z"
+    },
+    {
+      "id": "fec0d7d3-f603-4382-9244-19fb34aff9d8",
+      "content_id": "cc981459-cafb-48c4-a7ee-d53a99e11726",
+      "claim_id": "C81",
+      "claim": "Optogenetic suppression has been a standard technique to investigate the specific functions of neural circuits.",
+      "claim_type": "EXPLICIT",
+      "source": "Optogenetic suppression has been a standard technique to investigate the specific functions of neural circuits (Guo et al., 2014; Li et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Guo et al., 2014 and Li et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:11:54.510323Z"
+    },
+    {
+      "id": "004a9a0b-8bb5-43c1-a552-0572e800998b",
+      "content_id": "cc981459-cafb-48c4-a7ee-d53a99e11726",
+      "claim_id": "C82",
+      "claim": "Repeated suppression across multiple days can induce changes in the functions of the contralateral hemisphere, leading to the recovery from the initial motor deficits induced by optogenetic suppression.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data show that repeated suppression across multiple days can induce changes in the functions of the contralateral hemisphere, leading to the recovery from the initial motor deficits induced by optogenetic suppression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:11:54.510323Z"
+    },
+    {
+      "id": "464e2c4f-644b-48ae-abf4-e158125cb3ef",
+      "content_id": "cc981459-cafb-48c4-a7ee-d53a99e11726",
+      "claim_id": "C83",
+      "claim": "The impact of optogenetic suppression needs to be interpreted with caution, and the suppression paradigms need to be carefully designed.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, our results indicate that the impact of optogenetic suppression needs to be interpreted with caution, and the suppression paradigms need to be carefully designed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a recommendation based on the findings of the study.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:11:54.510323Z"
+    },
+    {
+      "id": "3862f89e-14bf-433f-86a6-d5c8c2c4e3c6",
+      "content_id": "cc981459-cafb-48c4-a7ee-d53a99e11726",
+      "claim_id": "C84",
+      "claim": "The study highlights the flexibility of cortical circuits that can overcome even short-term reversible manipulation of neural activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Our study highlights the flexibility of cortical circuits that can overcome even short-term reversible manipulation of neural activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:11:54.510323Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "4c69cdd3-96ff-430a-a7e3-2e57ccb05293",
+      "content_id": "cc981459-cafb-48c4-a7ee-d53a99e11726",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The MOs primarily encodes contraversive eye movements in trained mice. After several weeks of training, mice performed the visually-guided eye movement task with 84.7\u00b12.5% success. Two-photon calcium imaging revealed that 47.0% of MOs neurons showed eye movement-related activity, with significantly more neurons selective for contraversive (24.5%) than ipsiversive (7.5%) movements, and the population distribution significantly skewed toward contraversive preference (p<10\u207b\u00b9\u2070).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30-C36 provide converging evidence from behavioral training and two-photon calcium imaging with appropriate statistical tests. The behavioral success rate, proportion of active neurons, directional selectivity analysis, and population-level statistics all support the conclusion that MOs primarily encodes contraversive eye movements. The data presentation includes sample sizes and statistical significance values.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:11:54.510323Z"
+    },
+    {
+      "id": "bcded391-6edf-45d1-9029-4e1275ed2974",
+      "content_id": "cc981459-cafb-48c4-a7ee-d53a99e11726",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Unilateral optogenetic suppression of MOs severely impaired contraversive eye movements on the first day. While mice could eventually produce contraversive movements within 10 seconds (75.6% of trials), they could not do so during the 1-second suppression period (only 7.1% vs 40.4% without suppression, p<10\u207b\u00b9\u2070).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C37, and C38 are well-supported by behavioral data in Figure 2 with appropriate statistical analysis (Pearson's chi-square test). The distinction between eventual movement capability (within 10s) and immediate impairment (within 1s suppression) is clearly demonstrated with sufficient sample sizes and highly significant p-values.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:11:54.510323Z"
+    },
+    {
+      "id": "654eaf4b-261e-465e-8338-b23a07300763",
+      "content_id": "cc981459-cafb-48c4-a7ee-d53a99e11726",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "After several days of repeated optogenetic suppression (5.9\u00b11.0 days, n=8 mice), mice regained their ability to make contraversive eye movements even during the suppression period. The recovery was statistically significant (p<10\u207b\u00b9\u00b2) and consistent with behavioral recovery observed in primate lesion studies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C39, and C40 are supported by longitudinal behavioral data showing recovery over multiple days with appropriate statistical comparisons. The comparison to primate studies (C40) provides context but the mouse data stands independently. Sample sizes are adequate (n=8 mice, 220 trials with suppression) and the statistical significance is strong.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:11:54.510323Z"
+    },
+    {
+      "id": "8f2836ac-b0fa-4c4a-b0da-7565f8477c12",
+      "content_id": "cc981459-cafb-48c4-a7ee-d53a99e11726",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Following recovery from optogenetic suppression, the contralateral MOs showed increased encoding of ipsiversive movements. Two-photon imaging revealed neurons with new ipsiversive preference and reduced contraversive preference. The population showed a significant bias toward ipsiversive encoding (p<10\u207b\u2078 for direction-selective neurons, p<10\u207b\u2076 for all movement-related neurons). Control mice without suppression showed the opposite trend, confirming the effect was due to optogenetic suppression rather than training alone.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4 and C42-C48 provide strong evidence from longitudinal two-photon imaging with appropriate controls. The before-after comparison in the same neurons (n=415 movement-related neurons in 6 mice), statistical analysis with significant p-values, and critical control experiment (C46-C47) showing opposite effects in GFP-only mice all support the conclusion. The control is essential and strengthens the interpretation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:11:54.510323Z"
+    },
+    {
+      "id": "21aa2c35-e044-4397-9897-76e7195ef2c9",
+      "content_id": "cc981459-cafb-48c4-a7ee-d53a99e11726",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Bilateral suppression of MOs after recovery re-impaired contraversive eye movements, demonstrating the contralateral MOs acquired an essential role in motor recovery. After mice recovered from unilateral suppression (3.8\u00b10.7 days), additional bilateral suppression increased reaction times to levels similar to the first day of unilateral suppression (1.27\u00b11.21s vs 1.69\u00b11.51s, p>0.05) and significantly longer than post-training unilateral suppression (p<0.02).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5 and C49-C57 provide compelling causal evidence through bilateral suppression experiments. The experimental design is strong: recovery from unilateral suppression followed by bilateral suppression that re-creates the initial deficit. Statistical comparisons are appropriate (Mann-Whitney U test, Pearson's chi-square) with adequate sample sizes (n=4 mice). This causally demonstrates the contralateral hemisphere's role in recovery.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:11:54.510323Z"
+    },
+    {
+      "id": "f799aabb-89b5-4159-8a5c-d70c3d605428",
+      "content_id": "cc981459-cafb-48c4-a7ee-d53a99e11726",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The study demonstrates that repeated optogenetic suppression leads to functional recovery mediated by the contralateral hemisphere, revealing that normal cortical circuits possess built-in plastic capabilities for motor recovery without pathophysiological events. This highlights the flexibility of cortical circuits to overcome even short-term reversible manipulation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C28-C29, C64-C65, C82, and C84 represent the main conclusions synthesized from the experimental results. These are well-supported by the convergence of behavioral recovery data (C2-C3, C37-C39), neural plasticity evidence (C4, C42-C48), and causal bilateral suppression experiments (C5, C49-C56). The conclusion about recovery without pathophysiological events is justified by the optogenetic approach avoiding tissue damage.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:11:54.510323Z"
+    },
+    {
+      "id": "9ade93b7-8471-48cd-9331-c3d34a31355d",
+      "content_id": "cc981459-cafb-48c4-a7ee-d53a99e11726",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The authors claim this is the first direct evidence showing dynamic directional encoding of eye movement across hemispheres.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C58 asserts novelty based on the authors' knowledge of the literature. While the experimental findings are well-supported, the claim of being 'first' cannot be fully verified without comprehensive literature review. The combination of longitudinal imaging and optogenetic suppression showing interhemispheric plasticity is indeed novel, but absolute priority claims require caution.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:11:54.510323Z"
+    },
+    {
+      "id": "189e6a77-d14a-408f-9fe0-44ea7dc02183",
+      "content_id": "cc981459-cafb-48c4-a7ee-d53a99e11726",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The recovery implies that eye movements are newly encoded in other brain regions, specifically that the contralateral MOs has latent capability to control ipsiversive movements. The authors suggest neighboring ipsilateral areas may not substitute for MOs function in this task.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41, C74, and C75 are reasonable inferences from the experimental data. The bilateral suppression experiment (C5, C49-C56) provides strong evidence that the contralateral MOs is essential for recovery, supporting C74-C75. However, the study does not directly test ipsilateral perilesional areas, so C74 is an inference rather than direct demonstration. The conclusion about latent capability (C75) is well-supported by the imaging data showing emergence of ipsiversive encoding.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:11:54.510323Z"
+    },
+    {
+      "id": "2a81d376-897f-47ce-b4ef-0d3e439e1076",
+      "content_id": "cc981459-cafb-48c4-a7ee-d53a99e11726",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The authors speculate that the latent capability of MOs to control ipsiversive movements might depend on existing anatomical projections to subcortical regions. They note that projections to contralateral superior colliculus are sparse, but projections to contralateral striatum are relatively strong, and the striatum has been linked to saccade output in primates.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C76-C80 are explicitly speculative (C76 uses 'might depend'). While the anatomical citations (C78-C80) are appropriately referenced, no experiments in this study test these anatomical pathways or their functional roles. This is reasonable speculation for future work but lacks experimental support in the current manuscript. The authors appropriately acknowledge this as speculation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:11:54.510323Z"
+    },
+    {
+      "id": "db9daadd-fdc4-4bd2-b2b5-26a2aa8ab386",
+      "content_id": "cc981459-cafb-48c4-a7ee-d53a99e11726",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The recovery process shares similarity with recovery following unilateral motor cortex lesions in humans and animal models. However, traditional lesions cause complex pathophysiological reactions (inflammation, gliosis, upregulation of neurotrophic factors) that could be involved in plasticity, and it was unclear whether recovery could occur without these events.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59-C63 appropriately contextualize the study within existing literature on motor recovery. The comparison to lesion studies (C59) is supported by citations, and the description of pathophysiological responses (C60-C62) is based on established knowledge with appropriate citations. Claim C63 correctly identifies the knowledge gap that motivated the study. This provides important context for interpreting the significance of the optogenetic approach.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:11:54.510323Z"
+    },
+    {
+      "id": "231605ca-0ae1-4b8b-a7d6-bad97324219d",
+      "content_id": "cc981459-cafb-48c4-a7ee-d53a99e11726",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Prior studies show that both perilesional areas and the contralateral hemisphere play roles in motor recovery, but the role of the contralateral hemisphere remains controversial. Some studies show facilitatory effects while others show suppressive effects. A prevailing hypothesis suggests the role depends on lesion size and whether ipsilesional areas can compensate.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C66-C73 accurately summarize the controversial literature on the contralateral hemisphere's role in motor recovery, with appropriate citations to studies showing both facilitatory (C68) and suppressive (C70) effects. The prevailing hypothesis (C71-C73) is properly attributed to citations. This provides important context for the study's findings and demonstrates awareness of the complexity in the field.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:11:54.510323Z"
+    },
+    {
+      "id": "277946b6-69fc-4cdd-a790-aaab31e1b850",
+      "content_id": "cc981459-cafb-48c4-a7ee-d53a99e11726",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The study indicates that optogenetic suppression, while a standard technique for investigating neural circuit functions, can induce adaptive changes when applied repeatedly. Therefore, the impact of optogenetic suppression needs to be interpreted with caution and paradigms carefully designed.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C81 and C83 are well-supported by the experimental findings showing that repeated optogenetic suppression induces compensatory plasticity. This is an important methodological insight for the field. The recommendation for caution (C83) is a reasonable inference from the data, though it could be considered conservative given that the plasticity itself is the main finding rather than a confound.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:11:54.510323Z"
+    },
+    {
+      "id": "bcb991fe-8898-4cff-b122-602c0df82beb",
+      "content_id": "cc981459-cafb-48c4-a7ee-d53a99e11726",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The introduction establishes background knowledge about cortical plasticity in motor learning and recovery, the use of rodent models, prior work on stroke recovery mechanisms, the role of the contralateral hemisphere, eye movement control, and the authors' previous work on MOs function.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1 and C7-C27 provide appropriate background context with proper citations to establish the study's rationale. These claims about prior work are supported by citations to relevant literature. Claims C25-C27 about the authors' previous work are appropriately cited to Itokazu et al., 2018. This background appropriately motivates the current study's questions about contralateral hemisphere plasticity in motor recovery.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:11:54.510323Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "0d0bc8fa-cecd-439f-a1e8-8cba47f150e5",
+      "result_id": "4c69cdd3-96ff-430a-a7e3-2e57ccb05293"
+    },
+    {
+      "claim_id": "ae2791c8-a46a-43ee-b9e1-5ff3517cc915",
+      "result_id": "4c69cdd3-96ff-430a-a7e3-2e57ccb05293"
+    },
+    {
+      "claim_id": "d41b26c3-dca4-4601-98a9-75c1adcad9bc",
+      "result_id": "4c69cdd3-96ff-430a-a7e3-2e57ccb05293"
+    },
+    {
+      "claim_id": "9d03b576-498e-4a44-91e2-2aa0ba46b844",
+      "result_id": "4c69cdd3-96ff-430a-a7e3-2e57ccb05293"
+    },
+    {
+      "claim_id": "e8e268a8-2a68-4046-8e95-31f8833e5daa",
+      "result_id": "4c69cdd3-96ff-430a-a7e3-2e57ccb05293"
+    },
+    {
+      "claim_id": "b36871ae-f17a-4382-a24f-779ca0ffdb99",
+      "result_id": "4c69cdd3-96ff-430a-a7e3-2e57ccb05293"
+    },
+    {
+      "claim_id": "300d17fa-e687-4ead-b257-6b6c6189a84e",
+      "result_id": "4c69cdd3-96ff-430a-a7e3-2e57ccb05293"
+    },
+    {
+      "claim_id": "806cf227-6b01-47ff-baf8-98c1e09d8484",
+      "result_id": "bcded391-6edf-45d1-9029-4e1275ed2974"
+    },
+    {
+      "claim_id": "8dd49015-b7df-40a2-9f08-f365f388d1bd",
+      "result_id": "bcded391-6edf-45d1-9029-4e1275ed2974"
+    },
+    {
+      "claim_id": "f570b06a-47d7-4d40-b446-f44330be825b",
+      "result_id": "bcded391-6edf-45d1-9029-4e1275ed2974"
+    },
+    {
+      "claim_id": "28949a1b-5a70-42ed-af76-0eca747c51d9",
+      "result_id": "654eaf4b-261e-465e-8338-b23a07300763"
+    },
+    {
+      "claim_id": "aef8dd6f-290b-4994-8cb8-855c55795a4a",
+      "result_id": "654eaf4b-261e-465e-8338-b23a07300763"
+    },
+    {
+      "claim_id": "92b62a87-edd1-40b3-82a5-41c689e919fa",
+      "result_id": "654eaf4b-261e-465e-8338-b23a07300763"
+    },
+    {
+      "claim_id": "36613c4e-c533-4caf-81b7-6542ebbb25d8",
+      "result_id": "8f2836ac-b0fa-4c4a-b0da-7565f8477c12"
+    },
+    {
+      "claim_id": "828c0137-ea03-4212-a079-dad7833c4525",
+      "result_id": "8f2836ac-b0fa-4c4a-b0da-7565f8477c12"
+    },
+    {
+      "claim_id": "af5583ba-6e12-4479-9c5d-9fbcae6d5dea",
+      "result_id": "8f2836ac-b0fa-4c4a-b0da-7565f8477c12"
+    },
+    {
+      "claim_id": "3fec4988-88d7-44df-8297-6eb20208474c",
+      "result_id": "8f2836ac-b0fa-4c4a-b0da-7565f8477c12"
+    },
+    {
+      "claim_id": "1fd93475-11fa-45f8-958c-d046ee5cb8d8",
+      "result_id": "8f2836ac-b0fa-4c4a-b0da-7565f8477c12"
+    },
+    {
+      "claim_id": "e98edc75-4a63-49dc-a12d-3aafc84b4fe6",
+      "result_id": "8f2836ac-b0fa-4c4a-b0da-7565f8477c12"
+    },
+    {
+      "claim_id": "1e082ab4-fe90-404d-9dde-b0714654a863",
+      "result_id": "8f2836ac-b0fa-4c4a-b0da-7565f8477c12"
+    },
+    {
+      "claim_id": "1bb8582c-8420-49a5-a4ff-14851d2936c0",
+      "result_id": "8f2836ac-b0fa-4c4a-b0da-7565f8477c12"
+    },
+    {
+      "claim_id": "f76bf7e0-07ac-439c-ae6c-bcaf52020280",
+      "result_id": "21aa2c35-e044-4397-9897-76e7195ef2c9"
+    },
+    {
+      "claim_id": "6a340424-cb65-4852-9696-f39d46f3ad63",
+      "result_id": "21aa2c35-e044-4397-9897-76e7195ef2c9"
+    },
+    {
+      "claim_id": "d4a04324-1f04-4dbb-b3c6-00a208a6a5cf",
+      "result_id": "21aa2c35-e044-4397-9897-76e7195ef2c9"
+    },
+    {
+      "claim_id": "758b3dd4-d206-4cc8-bd2a-2f8e097544ef",
+      "result_id": "21aa2c35-e044-4397-9897-76e7195ef2c9"
+    },
+    {
+      "claim_id": "eae1efb8-c945-4f13-845b-21d2a78f7874",
+      "result_id": "21aa2c35-e044-4397-9897-76e7195ef2c9"
+    },
+    {
+      "claim_id": "dc5bd620-7cd2-48eb-8897-083231f2cc14",
+      "result_id": "21aa2c35-e044-4397-9897-76e7195ef2c9"
+    },
+    {
+      "claim_id": "4a4b872d-8f0f-4687-845f-b150b7809055",
+      "result_id": "21aa2c35-e044-4397-9897-76e7195ef2c9"
+    },
+    {
+      "claim_id": "cb7a44b5-017b-4c0a-9662-bbbe302ce104",
+      "result_id": "21aa2c35-e044-4397-9897-76e7195ef2c9"
+    },
+    {
+      "claim_id": "b1909cd7-06c4-4814-b979-f744a0555403",
+      "result_id": "21aa2c35-e044-4397-9897-76e7195ef2c9"
+    },
+    {
+      "claim_id": "159d5ba2-4ace-4a21-a268-50f46484165f",
+      "result_id": "21aa2c35-e044-4397-9897-76e7195ef2c9"
+    },
+    {
+      "claim_id": "29bb0a57-4a3f-4402-be76-cb535ae001da",
+      "result_id": "f799aabb-89b5-4159-8a5c-d70c3d605428"
+    },
+    {
+      "claim_id": "e83aad45-528b-46aa-908a-b101d6d11c84",
+      "result_id": "f799aabb-89b5-4159-8a5c-d70c3d605428"
+    },
+    {
+      "claim_id": "463f0e34-15a0-4f31-a7c5-b5bd13b4d6bf",
+      "result_id": "f799aabb-89b5-4159-8a5c-d70c3d605428"
+    },
+    {
+      "claim_id": "51b27246-d3fd-4d29-a607-0b52923a276f",
+      "result_id": "f799aabb-89b5-4159-8a5c-d70c3d605428"
+    },
+    {
+      "claim_id": "a3d65921-134a-4c6b-81c7-39ba7345d9f1",
+      "result_id": "f799aabb-89b5-4159-8a5c-d70c3d605428"
+    },
+    {
+      "claim_id": "004a9a0b-8bb5-43c1-a552-0572e800998b",
+      "result_id": "f799aabb-89b5-4159-8a5c-d70c3d605428"
+    },
+    {
+      "claim_id": "3862f89e-14bf-433f-86a6-d5c8c2c4e3c6",
+      "result_id": "f799aabb-89b5-4159-8a5c-d70c3d605428"
+    },
+    {
+      "claim_id": "13631c55-2fba-409c-9c15-6cdf8bd67634",
+      "result_id": "9ade93b7-8471-48cd-9331-c3d34a31355d"
+    },
+    {
+      "claim_id": "a62852cb-b7c6-469c-91f9-5e7b079972c0",
+      "result_id": "189e6a77-d14a-408f-9fe0-44ea7dc02183"
+    },
+    {
+      "claim_id": "1e569786-8f03-4110-b9f6-4320c3e09dc5",
+      "result_id": "189e6a77-d14a-408f-9fe0-44ea7dc02183"
+    },
+    {
+      "claim_id": "263dc271-5b6d-4e4b-9f7a-082d95a417e7",
+      "result_id": "189e6a77-d14a-408f-9fe0-44ea7dc02183"
+    },
+    {
+      "claim_id": "aa6d2059-6349-403a-8048-325addf0752e",
+      "result_id": "2a81d376-897f-47ce-b4ef-0d3e439e1076"
+    },
+    {
+      "claim_id": "8f2474a2-d3d5-416e-afac-3c4c1f44dd22",
+      "result_id": "2a81d376-897f-47ce-b4ef-0d3e439e1076"
+    },
+    {
+      "claim_id": "e795f83a-1bf1-4a22-9ca8-487390ab6c97",
+      "result_id": "2a81d376-897f-47ce-b4ef-0d3e439e1076"
+    },
+    {
+      "claim_id": "6b1f282f-acd0-4ef8-b7fe-92dedcbaf96b",
+      "result_id": "2a81d376-897f-47ce-b4ef-0d3e439e1076"
+    },
+    {
+      "claim_id": "cf44f60f-d97a-4c24-8ffc-5f7adabf8dd2",
+      "result_id": "2a81d376-897f-47ce-b4ef-0d3e439e1076"
+    },
+    {
+      "claim_id": "08577d87-6e01-49eb-bf0c-382ae5cfde8a",
+      "result_id": "db9daadd-fdc4-4bd2-b2b5-26a2aa8ab386"
+    },
+    {
+      "claim_id": "59cc3f23-821e-4e17-9a21-08927921ce07",
+      "result_id": "db9daadd-fdc4-4bd2-b2b5-26a2aa8ab386"
+    },
+    {
+      "claim_id": "9966b157-1edb-4ba1-8980-23dec30bb87a",
+      "result_id": "db9daadd-fdc4-4bd2-b2b5-26a2aa8ab386"
+    },
+    {
+      "claim_id": "a79a53dc-0806-4bb9-b88d-e4e9830c7b89",
+      "result_id": "db9daadd-fdc4-4bd2-b2b5-26a2aa8ab386"
+    },
+    {
+      "claim_id": "9c200e05-9ece-403e-b959-5c2d61ca6a56",
+      "result_id": "db9daadd-fdc4-4bd2-b2b5-26a2aa8ab386"
+    },
+    {
+      "claim_id": "d0412edd-5969-4f63-a415-1c83d429a910",
+      "result_id": "231605ca-0ae1-4b8b-a7d6-bad97324219d"
+    },
+    {
+      "claim_id": "c2f546c9-d36a-4fac-8657-90c2b49df009",
+      "result_id": "231605ca-0ae1-4b8b-a7d6-bad97324219d"
+    },
+    {
+      "claim_id": "bff81c90-9144-4692-ba98-3b4aafb5d904",
+      "result_id": "231605ca-0ae1-4b8b-a7d6-bad97324219d"
+    },
+    {
+      "claim_id": "5abf2594-53a2-44d5-b89d-80c56e0d4b6a",
+      "result_id": "231605ca-0ae1-4b8b-a7d6-bad97324219d"
+    },
+    {
+      "claim_id": "b198eb14-4bfb-4e16-843b-a3e58f0c219b",
+      "result_id": "231605ca-0ae1-4b8b-a7d6-bad97324219d"
+    },
+    {
+      "claim_id": "804c1d80-0de7-468c-9f5b-ac0f1aa782ea",
+      "result_id": "231605ca-0ae1-4b8b-a7d6-bad97324219d"
+    },
+    {
+      "claim_id": "815aed6c-92ba-455a-8c41-ae00bd6b0944",
+      "result_id": "231605ca-0ae1-4b8b-a7d6-bad97324219d"
+    },
+    {
+      "claim_id": "6bcee713-0758-4b92-a570-b8689acd7bc1",
+      "result_id": "231605ca-0ae1-4b8b-a7d6-bad97324219d"
+    },
+    {
+      "claim_id": "fec0d7d3-f603-4382-9244-19fb34aff9d8",
+      "result_id": "277946b6-69fc-4cdd-a790-aaab31e1b850"
+    },
+    {
+      "claim_id": "464e2c4f-644b-48ae-abf4-e158125cb3ef",
+      "result_id": "277946b6-69fc-4cdd-a790-aaab31e1b850"
+    },
+    {
+      "claim_id": "a1ba7b4b-c727-415c-8ec5-69227d0ebc5d",
+      "result_id": "bcb991fe-8898-4cff-b122-602c0df82beb"
+    },
+    {
+      "claim_id": "ef977f93-cebf-4683-a6c7-b517d4bbb70d",
+      "result_id": "bcb991fe-8898-4cff-b122-602c0df82beb"
+    },
+    {
+      "claim_id": "88c7824d-cf81-4a18-8145-5061d5a124b7",
+      "result_id": "bcb991fe-8898-4cff-b122-602c0df82beb"
+    },
+    {
+      "claim_id": "ddfe22b9-3279-48d5-b54b-0c64fc5b551d",
+      "result_id": "bcb991fe-8898-4cff-b122-602c0df82beb"
+    },
+    {
+      "claim_id": "3b044bc7-1b14-462f-9f54-e9537584f91a",
+      "result_id": "bcb991fe-8898-4cff-b122-602c0df82beb"
+    },
+    {
+      "claim_id": "5553561a-6c26-4a37-a953-5119d6e13bcd",
+      "result_id": "bcb991fe-8898-4cff-b122-602c0df82beb"
+    },
+    {
+      "claim_id": "89575027-4efa-4373-9404-2161ec0656f4",
+      "result_id": "bcb991fe-8898-4cff-b122-602c0df82beb"
+    },
+    {
+      "claim_id": "ab5c8ffc-ff5d-43dd-91f5-67fe35ca9bde",
+      "result_id": "bcb991fe-8898-4cff-b122-602c0df82beb"
+    },
+    {
+      "claim_id": "a93e5086-d706-43cb-a957-c4152a78e814",
+      "result_id": "bcb991fe-8898-4cff-b122-602c0df82beb"
+    },
+    {
+      "claim_id": "db76547a-e509-44aa-b673-06d1c036875e",
+      "result_id": "bcb991fe-8898-4cff-b122-602c0df82beb"
+    },
+    {
+      "claim_id": "3a110791-f05a-47b0-91f5-f82053f4f3c1",
+      "result_id": "bcb991fe-8898-4cff-b122-602c0df82beb"
+    },
+    {
+      "claim_id": "4a782bc6-5de0-4a6d-9d70-6cbaffe2c75c",
+      "result_id": "bcb991fe-8898-4cff-b122-602c0df82beb"
+    },
+    {
+      "claim_id": "0282e2f8-5975-4e60-90e4-da3b52d5bc3c",
+      "result_id": "bcb991fe-8898-4cff-b122-602c0df82beb"
+    },
+    {
+      "claim_id": "d7a1e98d-7480-4c01-8cee-7cfeb3ee1ae7",
+      "result_id": "bcb991fe-8898-4cff-b122-602c0df82beb"
+    },
+    {
+      "claim_id": "6ca10327-3b79-4b59-95ba-c1bf43ba6327",
+      "result_id": "bcb991fe-8898-4cff-b122-602c0df82beb"
+    },
+    {
+      "claim_id": "e2d8d07f-8b95-4799-b85b-ceaf7838e3d0",
+      "result_id": "bcb991fe-8898-4cff-b122-602c0df82beb"
+    },
+    {
+      "claim_id": "a47813e1-184e-4491-88d3-fa9677bdbc7f",
+      "result_id": "bcb991fe-8898-4cff-b122-602c0df82beb"
+    },
+    {
+      "claim_id": "f767fb0b-a91b-4f41-aca1-dcbaed3f24e6",
+      "result_id": "bcb991fe-8898-4cff-b122-602c0df82beb"
+    },
+    {
+      "claim_id": "adb97e80-e61f-42cf-9d62-5694c3bda907",
+      "result_id": "bcb991fe-8898-4cff-b122-602c0df82beb"
+    },
+    {
+      "claim_id": "40a02a00-a245-4c0c-8724-dcb0a964bfd1",
+      "result_id": "bcb991fe-8898-4cff-b122-602c0df82beb"
+    },
+    {
+      "claim_id": "cba73597-5893-4a04-8a8f-3ce89dce5218",
+      "result_id": "bcb991fe-8898-4cff-b122-602c0df82beb"
+    },
+    {
+      "claim_id": "49a98b61-b611-4b36-8fed-7fda4d2369fb",
+      "result_id": "bcb991fe-8898-4cff-b122-602c0df82beb"
+    }
+  ],
+  "comparisons": []
+}

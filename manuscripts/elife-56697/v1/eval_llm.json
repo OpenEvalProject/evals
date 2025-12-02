@@ -1,0 +1,337 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C13",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "GWAS studies have identified common SNPs in the gene desert upstream of TBX3 that are associated with PR interval and QRS duration. Two variant regions (VR1 and VR2) were identified, with VR1 associated with both PR interval and QRS duration, and VR2 associated with PR interval only.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C13, C31-C33 are well-supported by multiple GWAS citations and visualization in Figure 1A showing the genomic locations of associated variants. The identification of two distinct variant regions is clearly demonstrated with appropriate statistical thresholds and mapping to the human genome.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "High-throughput STARR-seq was performed on the entire 1.3 Mb human and mouse TBX3 locus, identifying 216 SG4-responsive and 257 Wnt-responsive regions in the mouse locus, and 206 SG4-responsive and 190 Wnt-responsive regions in the human locus. Approximately 20% of active regions showed functional conservation between species, and 84% of tested regions showed luciferase activity >2-fold.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C41-C49 are supported by comprehensive STARR-seq data shown in Figures 2 and supplementary figures. The validation by luciferase assays (84% vs 10% for negative controls, p=0.0007) provides strong orthogonal support. The identification of known enhancers (Tbx3-eA, Tbx3-eB) validates the approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "ATAC-seq on FACS-purified AVCS cardiomyocytes identified 67 accessible genomic regions within the Tbx3/Tbx5 regulatory domain, including previously identified enhancers Tbx3-eA and Tbx3-eB. Motif enrichment analysis revealed enrichment for Smad/Gata and Tcf transcription factor binding sites in AVCS-specific accessible regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C40 are supported by ATAC-seq data shown in Figure 1B and motif enrichment analysis in Figure 1C. The identification of known enhancers validates the approach, and the motif enrichment is consistent with known roles of these factors in AVCS development (supported by citations C37, C39).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C50",
+      "C51"
+    ],
+    "result": "Motif enrichment analysis validated that STARR-seq identified regions were activated by the appropriate transcription factors, with mSTARR_SG4 sequences enriched for Smad/Gata motifs and mSTARR_Wnt sequences enriched for Tcf motifs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C51 are supported by HOMER motif enrichment analysis shown in Figure 2K. This provides important validation that the >1.5 fold change threshold used to identify active regions is appropriate and that the regions respond to the intended transcription factors.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "A systematic approach combining hSTARR-seq (254 regions), hEMERGE prediction (24 regions), and mouse orthologous regions (62 regions) identified 296 candidate regulatory elements in the human TBX3 locus. Within VR1 and VR2, 6 candidate REs in each region were found to harbor GWAS variants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C60 are supported by the integration approach shown in Figure 3. The validation that known enhancer Tbx3-eA is marked by all three criteria (C56) supports the validity of this multi-pronged approach. The identification of variant-containing REs is clearly documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Luciferase assays demonstrated that candidate REs have regulatory activity and that risk alleles affect this activity. The risk alleles of hRE5, hRE7, hRE8, and hRE18 increased basal activity in HL-1 cells, while risk alleles of hRE9, hRE11, and hRE15-16 decreased activity. Risk alleles also affected SG4- and Wnt-dependent activity in specific REs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C68 are supported by luciferase assay data in Figure 4A-B. The experiments were performed in duplicate and replicated twice with appropriate statistical testing (p<0.05). The differential effects of risk alleles on basal and stimulated activity are clearly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C69"
+    ],
+    "result": "None of the variants within functionally affected REs matched known transcription factor binding motifs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C69 is supported by motif analysis using JASPAR. However, this negative result suggests the mechanism by which variants affect RE activity remains unclear and may involve more complex regulatory mechanisms not captured by simple motif matching.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C4",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "BAC transgenic reporter mice demonstrated that both variant regions drive gene expression in cardiac conduction tissue. BAC 459M16-GFP (containing VR1) showed GFP expression throughout the entire AVCS including AV canal, AV node, AV bundle, and bundle branches, as well as in other Tbx3-expressing tissues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C70-C75 are supported by immunohistochemistry data in Figure 5C and supplementary figures. The observation that multiple physically separated BACs drive AVCS expression (C75) is well-supported by comparing expression patterns of different BACs. The evolutionary conservation (C71-C72) is demonstrated by conservation tracks.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C94"
+    ],
+    "result": "Deletion of VR1 from the mouse genome (Tbx3\u0394VRI/\u0394VRI) did not affect Mendelian ratios, gene expression levels of Tbx3, Med13l, or Tbx5, or cardiac conduction parameters (PR interval and QRS duration) measured by both in vivo and ex vivo ECG.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C79, C94 are supported by data in Figure 6B-C and Figure 6\u2014figure supplement 2A-E. The lack of phenotype is clearly demonstrated with appropriate sample sizes (n=9-12 for in vivo ECG, n=6 for ex vivo). The ex vivo experiments appropriately control for potential autonomic nervous system effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C5",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C95"
+    ],
+    "result": "Deletion of VR2 from the mouse genome (Tbx3\u0394VRI/\u0394VRI) resulted in reduced postnatal survival (~50% of expected), approximately 2.5-fold increased Tbx3 expression specifically in the AVCS (p=2*10^-11), altered expression of ion channel genes (increased Hcn4 and Cacna1g, decreased Scn5a), but no change in expression of neighboring genes (Tbx5, Rbm19, Med13l) or Tbx3 expression pattern.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C80-C89, C95 are supported by comprehensive data in Figure 6D-G. The statistical significance of Tbx3 upregulation is very strong (p=2*10^-11, n=8-9). The specificity for Tbx3 regulation (C87) is well-supported by qPCR data showing no change in neighboring genes. The in situ hybridization (C89) confirms the expression pattern is unchanged despite increased levels.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "Tbx3\u0394VRI/\u0394VRI mice showed shortened PR intervals (30.4 ms vs 35.3 ms, p=0.025) and increased QRS duration (15.1 ms vs 11.7 ms, p=0.004) compared to wildtype mice. Similar effects were observed in ex vivo ECG recordings, suggesting the autonomic nervous system is not involved.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C7, C90-C93 are supported by ECG data in Figure 6H-I and Figure 6\u2014figure supplement 2F-H. The statistical significance is appropriate (p<0.05) with adequate sample sizes (n=8). The ex vivo experiments provide important mechanistic insight by ruling out autonomic nervous system involvement (C93).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "The TBX3 locus is organized in a topologically associating domain (TAD) of approximately 1.3 Mb, delimited by CTCF binding sites and physically separated from the neighboring MED13L TAD. Some interaction occurs between the TBX3 and TBX5 TADs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C30 are supported by Hi-C data and CTCF ChIP-seq shown in Figure 1A. The TAD organization is clearly demonstrated, and the role of CTCF in TAD boundary formation is well-established in the literature (C28). The observation of some TBX3/TBX5 interaction (C30) is appropriately cautious.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "The cardiac and limb expression of Tbx3 involves multiple redundant or synergistically acting regulatory elements. The two TBX3 risk loci harbor multiple active REs whose activity is affected by risk alleles, suggesting common genomic variation affects multiple redundant REs rather than individual elements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C102 are supported by the combination of BAC transgenic data showing multiple regions drive AVCS expression and luciferase data showing multiple REs are affected by variants. This interpretation is well-supported by citations to previous work on regulatory redundancy and is consistent with the lack of phenotype in VR1 deletion mice.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C104",
+      "C105"
+    ],
+    "result": "Genomic deletion of VR1 removes potentially affected REs and disrupts locus topology, which could be functionally buffered by regulatory redundancy. This redundancy may not be deployed when only a single nucleotide is variable, potentially explaining the absence of effect in Tbx3\u0394VRI/\u0394VRI mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C104-C105 represent speculation to explain the lack of VR1 deletion phenotype. While the hypothesis is reasonable and supported by citations to regulatory redundancy literature, it remains untested. The authors appropriately present this as a possible explanation rather than a definitive conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "The increased Tbx3 expression in Tbx3\u0394VRI/\u0394VRI hearts could be caused by disruption of the balance between activating and repressive REs within VR2. VR2 potentially harbors multiple silencer elements, as suggested by H3K27me3 marks in the adult heart.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C106-C108 represent speculation about the mechanism of increased Tbx3 expression. While the H3K27me3 data (C107) is mentioned, it is not shown in the manuscript, weakening the support. The hypothesis is reasonable but requires additional experimental validation to confirm the presence and function of silencer elements.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "Tbx3 has many target genes enriched for ion channel-encoding genes, suggesting hundreds of genes may be deregulated in Tbx3\u0394VRI/\u0394VRI mice. Proper AVCS function depends on balanced Tbx3 levels. The Tbx3/Tbx5 balance model does not appear to hold for the AV node, as increased Tbx3 led to faster rather than slower conduction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C113 are supported by citations to previous work on Tbx3 target genes and the current study's findings. The observation that increased Tbx3 leads to shortened PR intervals (faster conduction) rather than the predicted slowing (C113) is well-supported by the ECG data and represents an important mechanistic insight that challenges existing models.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "STARR-seq has several limitations: DNA fragments are tested episomally out of genomic context, potentially yielding false positives; the specific vector used has a conflicting bacterial origin-of-replication and high basal promoter activity; enhancer activity depends on promoter context; and there is weak overlap with EMERGE/ATAC-seq and low correlation with luciferase assays for some sequences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C114-C120 represent an honest assessment of methodological limitations, well-supported by citations to the literature (C114-C118) and the authors' own data (C119-C120 shown in Figure 2\u2014figure supplement 2). This critical self-evaluation strengthens rather than weakens the overall conclusions by acknowledging the approach's constraints.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "Despite limitations, STARR-seq provides a useful tool for identifying REs given the scarcity of human AVCS tissue. The use of COS-7 cells was justified by high transfection efficiency and allowed specific assessment of SG4/Tcf factor responses. Motif enrichment for Smad/Gata and Tcf factors in AVCS cells, while limited by database incompleteness, was consistent with previous studies on AVCS patterning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C121-C127 provide appropriate justification for methodological choices. The rationale for using COS-7 cells (C122-C123) is sound, and the motif enrichment findings (C124, C126) are validated by consistency with previous functional studies. The acknowledgment of motif database limitations (C125) is appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C96",
+      "C97",
+      "C103",
+      "C128"
+    ],
+    "result": "Background and contextual claims about GWAS variants, AVCS function, gene regulation, and methodological challenges in studying AVCS tissue. These include the location of trait-associated variants in noncoding DNA, the role of Tbx3/Tbx5/Med13l in AVCS development, challenges in obtaining AVCS tissue and cells, and the small effect sizes of common GWAS variants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C25, C96-C97, C103, C128 represent well-established background knowledge supported by appropriate citations to the literature. These claims provide essential context for the study but do not represent novel findings. They are accurately stated and appropriately referenced.",
+    "result_type": "MINOR"
+  }
+]

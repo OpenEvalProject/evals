@@ -1,0 +1,341 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C9",
+      "C10"
+    ],
+    "result": "PHLPP1 deletion protects mice from lethal bacterial infection and endotoxemia. At doses lethal to >50% of WT mice within 12 hours, 50% of Phlpp1-/- mice survived E. coli challenge for 10 days, and nearly half survived LPS injection compared to only 1/16 WT mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C9, and C10 are directly supported by survival curve data in Figures 1A-B showing statistically significant protection (p<0.01 for E. coli, p<0.05 for LPS) in Phlpp1-/- mice. The survival data are clear and appropriately analyzed with log-rank tests.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "PHLPP1 deletion alters cytokine dynamics during endotoxemia. Phlpp1-/- mice showed 2-fold lower IL-6 at 5 hours but sustained elevation to 24 hours, consistently higher IL-1\u03b2, and no difference in IL-10 compared to WT mice following LPS injection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C15 are directly supported by ELISA data in Figures 1C-E with appropriate statistical analysis. The interpretation in C13 that sustained IL-6 is 'suggestive of improper resolution of inflammation' is reasonable but somewhat speculative. C16's conclusion about PHLPP1's essential role is well-supported by the combined survival and cytokine data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C81",
+      "C82"
+    ],
+    "result": "PHLPP1 deletion causes global transcriptional changes in macrophages. RNA-Seq identified 1,654 KLA-induced genes, with 199 genes (12%) showing elevated expression in Phlpp1-/- macrophages at 6 hours that remained elevated at 24 hours, and 144 genes showing reduced expression at 24 hours.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C20, C81-C82 are directly supported by RNA-Seq data in Figure 2A with appropriate FDR thresholds (FDR<0.05). The experimental design includes appropriate time points and biological replicates. The percentage calculations (12% = 199/1654) are mathematically correct.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C21",
+      "C22"
+    ],
+    "result": "Genes with altered expression in Phlpp1-/- macrophages are enriched for specific functional pathways. Elevated genes are associated with inflammatory signaling pathways (innate immune response, cytokine-cytokine receptor interactions, LPS signaling, interferon-\u03b2 response, TNF signaling), while decreased genes are enriched for central carbon metabolism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C22 are supported by gene ontology analysis shown in Figure 2B. The analysis appropriately identifies functional enrichment in the differentially expressed gene sets. The methods describe standard approaches for pathway analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C109"
+    ],
+    "result": "Promoters of genes elevated in Phlpp1-/- macrophages are enriched for STAT and IRF transcription factor binding motifs. De novo motif analysis revealed significant enrichment of STAT (p<10\u207b\u00b9\u2078) and IRF (p<10\u207b\u2079) motifs, with 46% containing STAT motifs, 51% IRF motifs, and 26% both.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C26 and C109 are directly supported by HOMER motif analysis in Figures 2C-D. The statistical significance is very strong (p<10\u207b\u00b9\u2078 for STAT, p<10\u207b\u2079 for IRF). The percentages are clearly presented and add up appropriately (46% STAT only + 26% both = 72% total with STAT; 51% IRF only + 26% both = 77% total with IRF, allowing for rounding).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C94"
+    ],
+    "result": "STAT1 is required for expression of PHLPP1-regulated genes and shows enhanced promoter binding in Phlpp1-/- macrophages. STAT1 knockdown reduced KLA-induced transcription of Cd69, Ifit2, and Gbp5 by 2-fold at 6 hours. STAT1 binding to these promoters was enhanced and sustained in Phlpp1-/- macrophages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C31 and C94 are supported by qPCR data (Figure 3A-C) and ChIP-qPCR data (Figure 3D-F). C27 is supported by appropriate citations. The opposing effects of PHLPP1 and STAT1 depletion provide strong evidence for their functional relationship. Statistical significance is shown for key comparisons.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C74",
+      "C75"
+    ],
+    "result": "PHLPP1 selectively dephosphorylates STAT1 at Ser727 but not Tyr701. Loss of PHLPP1 in BMDMs increased Ser727 phosphorylation without affecting Tyr701. In vitro phosphatase assays and overexpression studies confirmed PHLPP1 directly dephosphorylates Ser727.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C39, C74-C75 are strongly supported by multiple complementary approaches: western blots in BMDMs (Figure 4A-B), in vitro phosphatase assays (Figure 4C), and overexpression studies in HEK-293T cells (Figure 4D-E). The selectivity for Ser727 over Tyr701 is consistently demonstrated across all experimental systems. Quantification shows statistical significance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "STAT1 Ser727 phosphorylation is insensitive to okadaic acid, consistent with PHLPP1 (a PP2C family member) being the primary regulator. While okadaic acid significantly increased phosphorylation of PP2A-sensitive substrates (Erk and Akt), it had minimal effect on STAT1 Ser727 phosphorylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C43, C88-C90 are supported by western blot data in Figure 5A-B showing differential sensitivity to okadaic acid. The logic is sound: okadaic acid inhibits PP1/PP2A but not PP2C family members, so insensitivity suggests PP2C involvement. The positive controls (Erk, Akt) demonstrate okadaic acid was effective. Statistical analysis confirms the differential effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "Both catalytic activity and nuclear localization of PHLPP1 are required for STAT1 regulation. STAT1 promoter activity was higher in Phlpp1-/- MEFs and insensitive to okadaic acid. The isolated PP2C domain was ineffective, but nuclear-targeted PP2C (NLS-PP2C) was as effective as full-length PHLPP1. Catalytically-inactive NLS-PP2C (DDAA mutant) could not suppress STAT1 activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C49, C77-C79 are supported by luciferase reporter assays in Figures 6A and 6C. The experimental design systematically tests the requirements for PHLPP1 function using domain deletion and mutation approaches. The results clearly demonstrate that both nuclear localization and catalytic activity are necessary. Statistical significance is shown for key comparisons.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C80",
+      "C103"
+    ],
+    "result": "PHLPP1 contains a functional bipartite NLS in its N-terminal extension that is required for STAT1 regulation. Bioinformatics identified a potential NLS (92RRRRR-X-122RRGRLKR), which was validated by immunofluorescence showing nuclear localization of the NTE. Mutation of NLS2 or both NLS1/2 abolished PHLPP1's ability to suppress STAT1 activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C52, C56-C60, C80, C103 are supported by bioinformatics analysis (Figure 6D), immunofluorescence data (Figure 6E-F), and functional luciferase assays (Figure 6G). The identification of the NLS is novel and well-validated through multiple approaches. The functional requirement is clearly demonstrated by loss-of-function mutations. Statistical analysis of nuclear:cytoplasmic ratios supports the localization data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C104",
+      "C105"
+    ],
+    "result": "PHLPP1 contains a nuclear export signal (NES) that opposes nuclear localization. Full-length PHLPP1 was primarily cytosolic under unstimulated conditions. Bioinformatics identified a Leu-rich NES (residues 1125-1134) following the LRR domain, which when attached to the NTE, redistributed it to the cytosol.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C55, C104-C105 are supported by immunofluorescence data in Figure 6\u2014figure supplement 3 and 4. The identification of the NES provides a mechanism for the predominantly cytosolic localization of full-length PHLPP1. The functional validation by NES fusion experiments is appropriate. However, C105's interpretation about 'masking of the NLS and exposure of the NES' is somewhat speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C97"
+    ],
+    "result": "The N-terminal extension (NTE) of PHLPP1 mediates interaction with STAT1 and is required for full suppression of STAT1 activity. The isolated NTE bound STAT1 ~5-fold more strongly than full-length PHLPP1 and ~26-fold more strongly than PHLPP1 lacking the NTE. The isolated NTE showed dominant-negative activity, increasing GAS promoter activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C69 and C97 are supported by luciferase assays (Figure 7A) and co-immunoprecipitation experiments (Figure 7B-C). The binding data are quantified from three independent experiments with statistical analysis. The dominant-negative effect of the isolated NTE is interesting and suggests it can sequester STAT1 without dephosphorylating it. The interpretation about 'fidelity and specificity' in C97 is reasonable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C8",
+      "C73",
+      "C76",
+      "C85",
+      "C86",
+      "C87",
+      "C96",
+      "C101",
+      "C102",
+      "C107",
+      "C111"
+    ],
+    "result": "Nuclear PHLPP1 controls the magnitude and duration of inflammatory signaling by dephosphorylating STAT1 on Ser727, thereby inhibiting its transcriptional activity, reducing promoter residency, and decreasing expression of target genes involved in innate immunity and cytokine signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This integrative result synthesizes multiple lines of evidence from the manuscript. Claims C3-C6, C8, C73, C76, C85-C87, C96, C101-C102, C107, C111 are supported by the combined data from phosphorylation studies (Figure 4), ChIP experiments (Figure 3), transcriptional activity assays (Figure 6), RNA-Seq (Figure 2), and nuclear localization studies (Figure 6). The model is well-supported by converging evidence from multiple experimental approaches.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "PHLPP1 is a physiologically relevant phosphatase in the innate immune response, though the immunoregulatory phenotype likely reflects roles in multiple immune cell types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C71 are supported by the survival data in Figure 1. However, C72 is explicitly speculative, acknowledging that the whole-organism phenotype may involve multiple cell types beyond macrophages. The authors appropriately suggest that cell-specific deletion studies would be needed to fully understand PHLPP1's role in different immune cell types.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "PHLPP1's effect on STAT1 is unlikely to involve Akt or Erk as intermediates, and is not mediated through PKC. Both Akt and Erk activities are sensitive to okadaic acid, unlike STAT1 Ser727 phosphorylation. The PKC inhibitor G\u00f66983 did not alter GAS promoter activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C93 are supported by the okadaic acid sensitivity data (Figure 5) and PKC inhibitor data (Figure 6\u2014figure supplement 2). The logic is sound: if PHLPP1 acted through Akt or Erk, their okadaic acid sensitivity would be expected to affect STAT1 phosphorylation. The PKC inhibitor experiment provides additional evidence against PKC involvement. These are appropriate control experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C110"
+    ],
+    "result": "PHLPP1 is likely recruited to gene promoters through its association with STAT1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C110 is inferred from the co-immunoprecipitation data showing direct interaction between PHLPP1 and STAT1 (Figure 7B-C). While the interaction is well-demonstrated, direct evidence for PHLPP1 recruitment to chromatin (e.g., ChIP for PHLPP1) is not provided. The claim is plausible but would benefit from additional experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C106",
+      "C108"
+    ],
+    "result": "Inputs regulating NLS/NES exposure are likely important regulators of PHLPP1 function, and PHLPP1 may selectively discriminate between inflammatory promoters regulated by distinct transcription factor families.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C106 and C108 are explicitly speculative statements by the authors. While they are reasonable hypotheses based on the data (identification of NLS/NES and selective effects on STAT-regulated genes), they lack direct experimental support. These represent interesting directions for future research rather than established findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C115",
+      "C123",
+      "C130"
+    ],
+    "result": "PHLPP1 inhibitors could be explored as therapeutic agents for Gram-negative sepsis, cartilage regeneration, or modulation of gene expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C115, C123, and C130 are speculative therapeutic implications. C115 is based on the protective effect of PHLPP1 loss in mouse models but lacks direct evidence that enhanced STAT1 phosphorylation causes the protection. C123 is based on prior work (Bradley et al., 2015) rather than the current study. C130 is a general statement about PHLPP1 as a therapeutic target. These are reasonable hypotheses but require substantial additional validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C27",
+      "C83",
+      "C84",
+      "C89",
+      "C95",
+      "C99",
+      "C100",
+      "C112",
+      "C113",
+      "C114",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129"
+    ],
+    "result": "Background knowledge and prior work on STAT1, PHLPP1, and related signaling pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27, C83-C84, C89, C95, C99-C100, C112-C114, C116-C122, C124-C129 represent established knowledge from the field or prior published work, appropriately cited. These provide necessary context for the current findings. C27 and C95 cite relevant prior work. C83-C84, C89, C116 represent established knowledge. C99-C100, C112-C114, C117-C122, C124-C129 are supported by appropriate citations to prior literature.",
+    "result_type": "MINOR"
+  }
+]

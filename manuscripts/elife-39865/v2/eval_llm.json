@@ -1,0 +1,264 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C101"
+    ],
+    "result": "MBLAC1 has an MBL fold with a di-zinc active site structurally related to but distinct from CPSF73. The crystal structure (1.8 \u00c5 resolution) reveals MBLAC1 has four of five characteristic MBL metal-binding motifs, distinctive active site flanking loops, and lacks the \u03b2-CASP domain present in CPSF73. MBLAC1 is dimeric in solution with the active site adjacent to the dimer interface.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C42 and C101 are well-supported by crystallographic data (Table 1, Figure 1), ICP-MS measurements (C38), and biophysical analyses (MALS, native PAGE). The structural characterization is comprehensive with appropriate controls and multiple complementary techniques validating the MBL fold, metal binding, and oligomeric state.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C5",
+      "C31"
+    ],
+    "result": "MBLAC1 depletion causes cell cycle defects with accumulation in G1/early S-phase and delayed S-phase progression. MBLAC1 localizes to both cytosol and nucleus, with nuclear enrichment during early S-phase, suggesting cell-cycle-dependent nuclear function. Cyclin D1 is upregulated upon MBLAC1 depletion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C48, C5, and C31 are supported by flow cytometry (Figure 2A), western blots (Figure 2B), and subcellular fractionation (Figure 2C). The cell cycle phenotype is consistent across multiple time points and synchronization conditions. The nuclear localization during S-phase provides mechanistic insight linking MBLAC1 to S-phase-specific functions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C103",
+      "C104"
+    ],
+    "result": "Both MBLAC1 and CPSF73 depletion impair S-phase entry/progression, but MBLAC1 depletion shows more pronounced cell cycle defects. MBLAC1 levels increase during mid S-phase while CPSF73 levels remain constant. MBLAC1 depletion reduces histone H3 levels and alters cyclin D1 and E expression. CRISPR/Cas9-mediated stable knockdown shows more severe phenotypes than siRNA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C60, C103-C104 are supported by BrdU incorporation assays (Figure 3A), western blots (Figure 3B-D), and flow cytometry (Figure 3, Figure 3\u2014figure supplement 1). The comparison between MBLAC1 and CPSF73 depletion is well-controlled. Statistical significance is demonstrated (p<0.05-0.001). The CRISPR/Cas9 validation strengthens the findings by eliminating off-target concerns from siRNA.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C30"
+    ],
+    "result": "MBLAC1 depletion causes transcription termination defects specifically in RD histone genes but not in normal polyA genes like GAPDH. ChrRNA-seq shows 29 of 43 RD histone genes manifest clear termination defects with ~200 base read-through transcripts. RT-qPCR validates increased abundance of termination-defective RD histone mRNA in MBLAC1-depleted cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C69 and C30 are supported by ChrRNA-seq data (Figure 4B-C, Figure 4\u2014figure supplements 2-4) and RT-qPCR validation (Figure 4D-E). The selectivity for histone genes over GAPDH is clearly demonstrated. The analysis of 43 non-overlapping histone genes provides comprehensive coverage. Both siRNA and CRISPR/Cas9 knockdowns show consistent phenotypes, strengthening the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C70",
+      "C71"
+    ],
+    "result": "MBLAC1-depleted cells show a modest (~15%) but consistent increase in polyadenylated histone transcripts, supporting that RD histone pre-mRNA can undergo polyadenylation when inefficiently processed at their normal 3' processing site.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C71 are supported by RT-qPCR analysis of polyA-selected RNA (Figure 4\u2014figure supplement 1C). The finding is consistent with previous studies (Sullivan et al., 2009b; Romeo et al., 2014; Kari et al., 2013). While the effect is modest, it is reproducible and provides mechanistic insight into the fate of misprocessed histone transcripts.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "MBLAC1 specifically associates with chromatin-associated histone mRNA during early S-phase but shows minimal interaction with normal protein-coding mRNA (GAPDH). RNA-ChIP experiments using FLAG-tagged MBLAC1 demonstrate selective recruitment to histone RNA comparable to FLASH.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C74 are supported by RNA-ChIP data (Figure 4F-G) using CRISPR/Cas9-generated FLAG-tagged MBLAC1 knock-in cells. The comparison with FLASH (a known histone processing factor) provides appropriate positive control. The input controls (C74) confirm that tagging does not affect histone mRNA levels. The selectivity for histone over GAPDH mRNA strengthens the functional specificity claim.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "Recombinant MBLAC1 exhibits endoribonucleolytic activity in vitro. Wild-type MBLAC1 from E. coli shows nonspecific activity, while HEK293-produced MBLAC1 displays more specific cleavage at biologically authentic positions. The H196A/D221A/H263A active site variant shows minimal activity. MBLAC1 specifically recognizes the CA dinucleotide at the cleavage site and lacks exonucleolytic activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C86 are supported by in vitro cleavage assays using radiolabeled RNA substrates (Figure 5C-F). The comparison between E. coli and HEK293-produced enzyme is informative, though the speculation about post-translational modifications (C78) requires further validation. The active site mutant provides strong negative control. The specificity for the CA dinucleotide is demonstrated by loss of activity with A/G substitution. The lack of mononucleotide accumulation supports endonuclease rather than exonuclease activity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C100",
+      "C106",
+      "C107"
+    ],
+    "result": "MBLAC1 cleaves at physiological major (position 27) and minor (position 29) cleavage sites corresponding to CA dinucleotides 5 and 7 nucleotides downstream of the stem-loop. The stem-loop structure is required for cleavage specificity, preventing access to upstream sites. The HDE sequence contributes to specificity but is not absolutely required for cleavage at position 27.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C98, C100, C106-C107 are supported by systematic in vitro cleavage assays with modified RNA substrates (Figure 6A-F). The experimental design systematically tests the contribution of different RNA elements (CA dinucleotides, stem-loop structure, HDE sequence) to cleavage specificity. The results are internally consistent and provide mechanistic insight into substrate recognition. The observation that HDE deletion reduces but does not eliminate cleavage at position 27 is important for understanding the relative contributions of different elements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C4",
+      "C99",
+      "C105"
+    ],
+    "result": "MBLAC1 is an endoribonuclease selective for 3' end processing of RD histone pre-mRNA during S-phase of the cell cycle. This conclusion integrates cellular, genetic, biochemical, substrate selectivity, and crystallographic evidence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C99, and C105 represent the main conclusion of the study, which is well-supported by the convergence of multiple independent lines of evidence: structural characterization (C26-C42), cell cycle phenotypes (C43-C60), transcriptomics showing histone-specific effects (C61-C69), RNA-ChIP demonstrating selective association (C72-C74), and in vitro biochemistry demonstrating endonuclease activity and substrate specificity (C75-C98). The integration of these diverse approaches provides strong support for the central claim.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C6",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "MBLAC1 represents a potential new S-phase-specific cancer target. MBLAC1 inhibition may selectively slow S-phase progression in cancer cells. Human MBL-fold endonucleases are likely amenable to small molecule targeting, and targeting MBLAC1 may be less toxic than targeting CPSF73.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C6, C115-C119 are largely speculative and represent future directions rather than demonstrated results. While the cell cycle effects of MBLAC1 depletion are well-established (C5, C31, C43-C60), the therapeutic potential claims lack direct experimental support. No cancer cell-specific effects are demonstrated, no small molecule inhibitors are tested, and no toxicity comparisons with CPSF73 inhibition are performed. The claims about druggability (C117) are inferences from bacterial MBL studies. These represent reasonable hypotheses for future work but are not supported by data in this manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C32",
+      "C33"
+    ],
+    "result": "MBLAC1 was previously classified as an RNAse Z and glyoxalase II subfamily enzyme based on sequence similarity, but recombinant MBLAC1 from E. coli shows only low, likely non-specific glyoxalase activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C33 are supported by prior classification (Ridderstr\u00f6m et al., 1996; Sievers et al., 2011) and the authors' biochemical assays. This result is important for establishing that MBLAC1's function differs from its previous annotation, motivating the structural and functional characterization. The low glyoxalase activity is consistent with other subfamily members (Shen et al., 2011).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C102"
+    ],
+    "result": "The slow growth rate of MBLAC1-depleted cells likely reflects its important role in RD histone pre-mRNA processing required for normal cell cycle progression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C102 is supported by proliferation assay data (Figure 3\u2014figure supplement 2C) and is a reasonable inference from the demonstrated roles of MBLAC1 in histone processing (C61-C69) and cell cycle progression (C43-C60). The causal link between histone processing defects and slow growth is logical given the requirement for histones during DNA replication.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "CPSF73 promotes RD histone pre-mRNA processing and is likely more important than MBLAC1 outside of S-phase. CPSF73 and MBLAC1 may selectively impact different histone pre-mRNA substrates and could compensate for each other's depletion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C111-C114 are partially supported but contain significant speculation. C111 is supported by the authors' data and prior studies. However, C112-C114 are largely speculative. The relative importance of CPSF73 outside S-phase (C112) is inferred but not directly tested. The compensation hypothesis (C113) and substrate selectivity (C114) are reasonable interpretations of the data (Figure 4\u2014figure supplements 2-4) but lack direct experimental validation. The overlapping but distinct effects on histone genes suggest possible functional redundancy, but this requires further investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "The HDE is a major factor in defining the cleavage site of RD histone pre-mRNA. Isolated MBLAC1 can catalyze cleavage at CA sites other than positions 27 and 29. MBLAC1 may recognize histone substrates without requiring as many additional factors as CPSF73.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C108 is supported by citation to previous work (Scharl and Steitz, 1994) and the authors' data (Figure 6F). Claim C109 is supported by in vitro data but the biological relevance is acknowledged as uncertain. Claim C110 is speculative\u2014while MBLAC1 shows sequence specificity in vitro (C85, C98), the factor requirements for in vivo targeting are not comprehensively defined. The RNA-ChIP data (C72-C74) show MBLAC1 associates with histone RNA but don't establish the complete set of required factors.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C120",
+      "C121"
+    ],
+    "result": "Zinc ion chelating compounds including HDAC inhibitors like SAHA are used for cancer treatment via S-phase targeting and may work partly by inhibiting metal-dependent endoribonucleases like CPSF73 and MBLAC1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C120 is established knowledge supported by citation (West and Johnstone, 2014). However, claim C121 is purely speculative with no experimental support. While MBLAC1 and CPSF73 are zinc-dependent enzymes (C27, C38), there is no evidence presented that HDAC inhibitors affect their activity or that this contributes to their therapeutic mechanism. This represents an interesting hypothesis for future investigation but is not supported by data in this manuscript.",
+    "result_type": "MINOR"
+  }
+]

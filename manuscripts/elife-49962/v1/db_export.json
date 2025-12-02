@@ -1,0 +1,2497 @@
+{
+  "submission": {
+    "id": "e00c3650-961e-491c-986f-a0f8ced0e9e7",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T15:42:57.410702Z",
+    "updated_at": "2025-12-02T15:42:57.410702Z"
+  },
+  "content": [
+    {
+      "id": "88d4f8b4-0f6f-44c3-b90c-9fb4d0ad0b23",
+      "submission_id": "e00c3650-961e-491c-986f-a0f8ced0e9e7",
+      "content_type": "manuscript",
+      "content_text": "# Can education be personalised using pupils\u2019 genetic data?\n\n## Authors\n\n- Tim T Morris<sup>1</sup> ([ORCID: 0000-0001-8178-6815](https://orcid.org/0000-0001-8178-6815)) \u2020\n- Neil M Davies<sup>1</sup> ([ORCID: 0000-0002-2460-0508](https://orcid.org/0000-0002-2460-0508))\n- George Davey Smith<sup>1</sup> ([ORCID: 0000-0002-1407-8314](https://orcid.org/0000-0002-1407-8314))\n\n### Affiliations\n\n1. MRC Integrative Epidemiology Unit, University of Bristol Bristol United Kingdom\n2. Population Health Sciences, Bristol Medical School, University of Bristol Bristol United Kingdom\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe increasing predictive power of polygenic scores for education has led to their promotion by some as a potential tool for genetically informed policy. How accurately polygenic scores predict an individual pupil's educational performance conditional on other phenotypic data is however not well understood. Using data from a UK cohort study with data linkage to national schooling records, we investigated how accurately polygenic scores for education predicted pupils\u2019 test score achievement. We also assessed the performance of polygenic scores over and above phenotypic data that are available to schools. Across our sample, there was high overlap between the polygenic score and achievement distributions, leading to poor predictive accuracy at the individual level. Prediction of educational outcomes from polygenic scores were inferior to those from parental socioeconomic factors. Conditional on prior achievement, polygenic scores failed to accurately predict later achievement. Our results suggest that while polygenic scores can be informative for identifying group level differences, they currently have limited use for accurately predicting individual educational performance or for personalised education.\n\n## Introduction\n\nThe increase in genetic discoveries from large-scale\u00a0genomewide association studies (GWAS) has greatly advanced scientific understanding of the way in which complex social and health outcomes may arise. GWAS with sample sizes of over one million participants have identified hundreds of genetic variants (single nucleotide polymorphisms, or SNPs) that associate with educational attainment and other social phenotypes (Lee et al., 2018; Karlsson Linn\u00e9r et al., 2019; Luciano et al., 2018). While individual SNPs associate only very weakly with complex polygenic phenotypes in isolation - typically accounting for less than 0.01% of variation - together they can explain a considerable proportion of phenotypic variation. For example, in the most recent education GWAS, the median per allele effect size of lead SNPs related to an additional 1.7 weeks of schooling, but polygenic scores combining all identified SNPs\u00a0explained up to 13% of the variance in years of educational\u00a0attainment (defined as completed years of education) and 9.2% of the variation in educational\u00a0achievement (defined as high school grade point average [GPA]) in out of sample prediction samples (Lee et al., 2018). The combination of multiple SNPs in polygenic scores (Dudbridge, 2013) - measures that sum the estimated effects of all individual SNPs associated with a phenotype - are increasingly being used as indicators of genetic propensity, and have been promoted as a potential tool for genetically informed policy (Plomin, 2018; Conley and Fletcher, 2017). It has been suggested that genetic information could be used prescriptively to provide personalised medicine, education and even dating (Plomin, 2018; McCarthy and Mahajan, 2018).\n\nPersonalisation refers to the tailoring of services away from a one-size-fits-all model to a customised approach that focuses on the needs of an individual. The definition of personalised education has been inconsistent, generally referring to either the tailoring of educational curriculums, learning environments and teaching styles for individual students, or for groups of students within a classroom (Department for Education and Skills, 2004; Hartley, 2007). Throughout, we refer to personalised education as administered at the individual level.\u00a0Personalised learning was adopted in national policy statements in England in 2004 with a focus on the needs of individual students (Gilbert, 2020; Department for Children, Schools and Families, 2007). However, it was not mandated and was seen as being conceptually ambiguous, leading to inconsistency in its implementation across schools (Maguire et al., 2013). There are currently no policies in place that rely on educational prediction, but calls are increasingly being made for genetic data to be used to personalise education to, for example, identify pupils in need of greater educational support (Miller, 1990; Grigorenko, 2007; Sabatello, 2018). Given the social complexity of educational attainment, polygenic\u00a0scores for\u00a0education\u00a0associate with many aspects of environment and schooling (Abdellaoui et al., 2019; Harden et al., 2020), referred to as gene-environment correlation. Active gene-environment correlation can be thought of as environment downstream of genotype; for example, pupil\u2019s selecting certain subjects based on their genotype. Passive gene-environment correlation can be thought of as environment upstream of genotype; for example, children of highly educated parents being more likely to inherit education associated environments as well as education associated genes (Kong et al., 2018) (also referred to as dynastic effects Davies et al., 2019; Morris et al., 2019). That a person\u2019s education polygenic score associates with a range of phenotypic differences very early in life demonstrates that it captures a very broad range of information, not just their education.\n\nThe theoretical maximum bounds placed on the predictive ability of polygenic scores have been discussed in detail elsewhere (see Janssens et al., 2006; Wray et al., 2010; Zhao and Zou, 2018). Briefly, polygenic scores are more predictive when genetic factors play a larger role in a phenotype (as measured by heritability), and in the case of binary phenotypes where prevalence in the outcome is higher (Janssens et al., 2006; Wray et al., 2010; Zhao and Zou, 2018). For polygenic scores to be informative for personalised education and provide actionable information to inform effective policy, the scores must not only explain sufficient variation in educational achievement across a group of pupils (defined as performance in educational tests), but they must also explain sufficient variation over and above other readily available phenotypic data and accurately predict achievement at the individual level. Phenotypic measures that are predictive of educational achievement such as sex, month of birth and prior achievement (Benton et al., 2004; Solli, 2017) are readily available to schools, while other measures such as parental education and socioeconomic position (Morris et al., 2016; Strand, 2011) are, in principle, simple and inexpensive to collect. To date, few studies have investigated how well polygenic scores predict individual level educational attainment or achievement conditional on observable phenotypes that are easily available to educators. Here we investigate how\u00a0much\u00a0information pupils\u2019 genetics may\u00a0confer to knowledge of their educational test performance over prior achievement and other phenotypic characteristics.\n\nIn this paper we combine educational and genetic data from a UK cohort, the Avon Longitudinal Study of Parents and Children (ALSPAC), to investigate the potential\u00a0value\u00a0of genotypic data for predicting pupil achievement and personalising education. We answer three related questions: 1) How predictive of realised educational achievement are polygenic scores? 2) Does polygenic prediction outperform phenotypic prediction from family background measures available to schools? 3) What incremental increase in predictive performance do polygenic scores offer over and above phenotypic information?\n\n## Results\n\n### Group level polygenic score prediction\n\nTo investigate how predictive polygenic scores are of realised educational achievement, we created two polygenic\u00a0scores for education based on the results of the latest GWAS for educational attainment (Lee et al., 2018). The first polygenic\u00a0score\u00a0used SNPs that reached genomewide significance (p<5\u00d710\u22128) and the second used all education associated SNPs. Our measure of educational achievement was fine graded point scores from educational exams taken at ages 7 and 16, obtained through data linkage to national school records. The all SNP polygenic score was more strongly correlated with educational achievement ($r$ for age 16 = 0.37) than the genomewide significant polygenic score ($r$ for age 16 = 0.19) (Table 1). Children with higher polygenic scores, on average, had higher exam scores than those with lower polygenic scores. Correlations were similar between achievement and parents\u2019 years of education and achievement and\u00a0highest parental socioeconomic position. Correlations were consistently stronger for age 16 than age 7 educational achievement.\n\n**Table 1.**\n Correlation coefficients between educational achievement at ages 7 and 16 and the genotypic and social predictors.Educational achievement measured using fine graded point scores from educational exams at ages 7 and 16. Genotypic predictors measured using two polygenic scores (PGS) built using only genome-wide significant SNPs (GWAS sig PGS) or all education associated SNPs (all SNP PGS) from the largest GWAS of educational attainment (Lee et al., 2018). Parental educational attainment (EA) was measured as average completed years of education. Parental socioeconomic position (SEP) was measured as highest parental score on the Cambridge Social Stratification Score scale.\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th>Achievement age 7</th>\n      <th>Achievement 16</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>GWAS sig PGS</td>\n      <td>0.17</td>\n      <td>0.19</td>\n    </tr>\n    <tr>\n      <td>All SNP PGS</td>\n      <td>0.26</td>\n      <td>0.37</td>\n    </tr>\n    <tr>\n      <td>Mothers EA</td>\n      <td>0.28</td>\n      <td>0.39</td>\n    </tr>\n    <tr>\n      <td>Fathers EA</td>\n      <td>0.27</td>\n      <td>0.40</td>\n    </tr>\n    <tr>\n      <td>Parents SEP</td>\n      <td>0.30</td>\n      <td>0.40</td>\n    </tr>\n  </tbody>\n</table>\n\nNext, we assessed the explanatory power of polygenic scores for educational achievement at age 7. We assessed this using the incremental gain in variance of educational achievement explained by the polygenic scores over and above pupil characteristics available to schools (age, sex, Free School Meal status, English as a Foreign Language status, Special Educational Needs status), parents' years of education, and parent socioeconomic position (Figure 1). Both the genomewide significant and the all SNP polygenic scores accounted for a larger proportion of variance explained (R2) in achievement than age and sex alone. Pupil characteristics outperformed polygenic scores in terms of explanatory power, but together they explained up to 21.5% (95% CI: 18.9 to 24.1) of the variation in age 7 achievement. Including information on the social background of pupils\u2019 parents that is potentially obtainable by schools further increased the explanatory power of the models up to a maximum R2\u00a0of 26.3% (23.4 to 29.2). The incremental R2 of the polygenic scores over pupil characteristics were 1.8% (-0.7 to 4.3) and 4.8 (2.1 to 7.3), suggesting that they provide some additional predictive information over currently available or easily collectable data.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/49962/elife-49962-fig1-v1.jpg)\n\n**Figure 1.:** (A) Variance explained in age 7 educational achievement by the polygenic scores while controlling for pupil characteristics and social factors. (B) Additional variance explained by the polygenic scores over and above pupil characteristics and social factors. Educational achievement measured using fine graded point scores from educational exams at age 7. Polygenic scores (PGS) built using only genome-wide significant SNPs (GWAS sig PGS) or all education associated SNPs (all SNP PGS) from the largest GWAS of educational attainment (Lee et al., 2018). Pupil characteristics available to schools include Free School Meals (FSM), English as a Foreign language (EFL) and Special Educational Needs (SEN) status. Parental educational attainment was measured as average years of completed education. Parental socioeconomic position (SEP) was measured as highest parental score on the Cambridge Social Stratification Score scale. All analyses include adjustment for the first 20 principal components of population stratification. Parameter estimates in Supplementary files 1A and 1B.\n\nThe genomewide significant and all SNP polygenic scores explained more variation of achievement in exams sat at the end of compulsory education at age 16, explaining an additional 3.4% (1.7 to 5.0) and 12.9% (10.6 to 15.3) of educational achievement over age and sex alone (Figure 2B). By comparison, measures of parental education and socioeconomic position provided greater returns to explanatory power than the polygenic scores when unadjusted for prior achievement, explaining an additional 19% (16.6 to 21.4) and 21.4% (18.8 to 23.9) respectively over age and sex (Figure 2B). As with age 7 achievement, using both genotype and social background data explained the largest amount of variation. At this stage of education schools also hold data on pupils' prior achievement, and these prior achievement measures explained a large amount of variation in age 16 achievement. For example, prior achievement at age 14 explained 65.1% (60.9 to 69.4) of the variation in age 16 achievement alongside age and sex (Figure 2A). Conditional on prior achievement data, the polygenic scores provide very little discernible increase in explanatory power (Figure 2B).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/49962/elife-49962-fig2-v1.jpg)\n\n**Figure 2.:** (A) Variance explained in age 16 educational achievement by the polygenic scores while controlling for pupil characteristics and social factors. (B) Additional variance explained by the polygenic scores over and above pupil characteristics and social factors. Educational achievement (EA) measured using fine graded point scores from educational exams at ages 7, 11, 14 and 16. Polygenic scores (PGS) built using only genome-wide significant SNPs (GWAS sig PGS) or all education associated SNPs (all SNP PGS) from the largest GWAS of educational attainment (Lee et al., 2018). Pupil characteristics available to schools include Free School Meals (FSM), English as a Foreign language (EFL) and Special Educational Needs (SEN) status. Parental educational attainment was measured as average years of completed education. Parental socioeconomic position (SEP) was measured as highest parental score on the Cambridge Social Stratification Score scale. All analyses include adjustment for the first 20 principal components of population stratification. Parameter estimates in Supplementary files 1C and 1D.\n\n### Individual level polygenic score prediction\n\nWe next investigated how well the polygenic scores could identify high achieving pupils, defined as those with the highest 10% of educational test scores. Figure 3 shows the distributions of the two polygenic scores for high achieving pupils at age 16 and all other pupils. The polygenic scores of high achievers are, on average, higher than of other pupils, but there is near complete overlap in the distributions between the groups. This suggests there would be a large proportion of misclassification when trying to predict from genetic data whether a pupil will be in the top 10%. By comparison, there is far less overlap in the distributions of prior achievement between high achievers and other pupils (Figure 3\u2014figure supplement 1). Figure 4 displays this misclassification of pupils; while some are correctly predicted from their genetic data to be high achievers, a greater proportion are erroneously predicted to be in the wrong group. This misclassification is similar for parental education and socioeconomic position but lower for prior attainment (Figure 4\u2014figure supplement 1). In each case, the group of pupils predicted to be in the top 10% of achievers will on average perform higher than other pupils in exams, but the large variability shows that many of the pupils in this group will not ultimately be in the top 10%. High levels of misclassification from the polygenic scores compared to prior attainment were also evident when assessing agreement with quantiled measures of educational achievement (Supplementary file 1E).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/49962/elife-49962-fig3-v1.jpg)\n\n**Figure 3.:** (A) Polygenic score distributions for the GWAS significant polygenic score. (B) Polygenic score distributions for the all SNP polygenic score. High achievers defined as pupils with age 16 educational exam scores in the top 10% of the sample. Polygenic scores (PGS) built using only genome-wide significant SNPs (GWAS sig PGS) or all education associated SNPs (all SNP PGS) from the largest GWAS of educational attainment (Lee et al., 2018).\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/49962/elife-49962-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Prior achievement at age 7. (B) Prior achievement at age 11. (C) Prior achievement at age 14. Educational achievement (EA) measured using fine graded point scores from educational exams taken at ages 7, 11 and 14. s High achievers defined as pupils with age 16 educational exam scores in the top 10% of the sample. Prior attainment measured as educational achievement (EA) at ages.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/49962/elife-49962-fig4-v1.jpg)\n\n**Figure 4.:** Educational achievement measured using fine graded point scores from educational exams at age 16. Predicted achievement at age 16 generated from a polygenic score built using all education associated SNPs (all SNP PGS) from the largest GWAS of educational attainment (Lee et al., 2018). Solid lines separate pupils who's exams scores were in the top 10% at age 16 (high achievers) on the y axis and pupils who's exam scores were predicted from genetic data\u00a0to in the top 10%\u00a0on the x axis. Dotted line represents best fit.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/49962/elife-49962-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Educational achievement measured using fine graded point scores from educational exams. Genetically predicted achievement at age 16 generated from a polygenic score built using all education associated SNPs (all SNP PGS) from the largest GWAS of educational attainment. Parental educational attainment measured as average years of completed education. Parental socioeconomic position (SEP) measured as highest parental score on the Cambridge Social Stratification Score scale. All PGS analyses include adjustment for the first 20 principal components of population stratification.\n\n### Using polygenic scores to identify future pupil performance\n\nTo investigate the potential performance of polygenic scores for correctly identifying individual high achieving students from all other pupils, we used Receiver Operating Characteristic (ROC) curves to calculate Area Under the Curve (AUC). ROC curves assess the sensitivity (the true positive rate, in our case the probability that a high achieving pupil will be correctly identified as a high achiever) and the specificity (the true negative rate, in our case the probability that that all other pupils will be correctly identified as not being high achievers) of a classifier as\u00a0its discrimination threshold is varied. Compared to measures of parental socioeconomic position (AUCs: 0.70 for both years of education and social class), the polygenic scores have a lower AUC and therefore poorer sensitivity and specificity to discriminate high achievers at age 7 (AUCs: 0.63 for the GWAS sig\u00a0PGS; 0.68 for the All SNP PGS) (Figure 5). The trade-off in sensitivity and specificity for each of the measures at different classification thresholds is also poor; high sensitivity comes at the cost of low specificity (and vice versa). This means that in order to accurately identify most of the pupils who will go on to be in the top 10% of achievers, one would have to set the classification at the point where almost all students would be identified. These results were consistent when other cut-offs were used to determine the high achieving group (Figure 5\u2014figure supplement 1), suggesting that the results do not reflect our definition of high achievers.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/49962/elife-49962-fig5-v1.jpg)\n\n**Figure 5.:** High achievers defined as pupils with age 16 educational exam scores in the top 10% of the sample. Parental educational attainment (EA) was measured as average years of completed education. Parental socioeconomic position (SEP) was measured as highest parental score on the Cambridge Social Stratification Score scale. Polygenic scores (PGS) built using only genome-wide significant SNPs (GWAS sig PGS) or all education associated SNPs (all SNP PGS) from the largest GWAS of educational attainment (Lee et al., 2018). All PGS analyses include adjustment for the first 20 principal components of population stratification. Note that x axis displays 1-specificty.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/49962/elife-49962-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** Parents educational attainment (EA) measured as years of completed education. Parents socioeconomic position (SEP) measured as highest parental score on the CAMSIS social class scale. Polygenic scores (PGS) built using only genome-wide significant SNPs (GWAS sig PGS) or all education associated SNPs (All SNP PGS) from the largest GWAS of educational attainment1. All PGS analyses include adjustment for the first 20 principal components of population stratification. Note that x axis displays 1-specificty. Note that cut-offs of 1% and 5% could not be used due to lack of data richness in the age 7 achievement scores.\n\nAt age 16, prior achievement data were available. Figure 6a shows that measures of prior achievement provide far higher sensitivity and specificity for predicting educational achievement than the polygenic scores (AUCs: 0.83 to 0.95 for prior achievement compared to 0.61 to 0.70 for the polygenic scores). For example, a classification point can be set for prior achievement at age 14 with a sensitivity and specificity of around 0.85, whereas the best classification point for polygenic scores would give a sensitivity and specificity of around 0.65. As with achievement at age 7, the ROC curve for the All SNP polygenic score was similar to the ROC curves for parent\u2019s years of education and socioeconomic position (Figure 6b). To investigate the value\u00a0added\u00a0by polygenic scores above phenotypic data, we calculated ROC curves for the polygenic scores on educational achievement at age 16 residualised on age, sex, prior achievement, and pupil characteristics. The results (Figure 6c) demonstrated that after accounting for the phenotypic information already available to schools, the polygenic scores provide almost no information to reliably identify high achievers (AUC: 0.51 and 0.56). The results were consistent had these predictions been made earlier in schooling where later measures of prior attainment were unavailable (Figure 6\u2014figure supplement 1; AUC\u2019s: 0.54 to 0.61). As with achievement at age 7, these results were consistent when other cut-offs were used to determine the high achieving group (Figure 6\u2014figure supplement 2).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/49962/elife-49962-fig6-v1.jpg)\n\n**Figure 6.:** (A) Independent ROC curves for deciled measures of prior achievement and polygenic scores (PGS) predicting high educational achievement (EA) at age 16. (B) Independent ROC curves for deciled measures of parental education and socioeconomic position predicting high educational achievement (EA) at age 16. (C) ROC curves for deciled polygenic scores predicting high educational achievement (EA) at age 16 residualised on age, sex, prior achievement, and pupil characteristics available to schools. Parental educational attainment was measured as average years of completed education. Parental socioeconomic position (SEP) was measured as highest parental score on the Cambridge Social Stratification Score scale. Polygenic scores (PGS) built using only genome-wide significant SNPs (GWAS sig PGS) or all education associated SNPs (all SNP PGS) from the largest GWAS of educational attainment (Lee et al., 2018). All PGS analyses include adjustment for the first 20 principal components of population stratification. Note that x axis displays 1-specificty.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/49962/elife-49962-fig6-figsupp1-v1.jpg)\n\n**Figure 6\u2014figure supplement 1.:** Polygenic scores (PGS) built using only genome-wide significant SNPs (GWAS sig PGS) or all education associated SNPs (all SNP PGS) from the largest GWAS of educational attainment1. Pupil characteristics include Free School Meals (FSM), English as a Foreign language (EFL) and Special Educational Needs (SEN) status. All analyses include adjustment for the first 20 principal components of population stratification. Note that x axis displays 1-specificty.\n\n![Figure 6\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/49962/elife-49962-fig6-figsupp2-v1.jpg)\n\n**Figure 6\u2014figure supplement 2.:** Polygenic scores (PGS) built using only genome-wide significant SNPs (GWAS sig PGS) or all education associated SNPs (all SNP PGS) from the largest GWAS of educational attainment1. All PGS analyses include adjustment for the first 20 principal components of population stratification. Note that x axis displays 1-specificty.\n\nIf a school headteacher or principal wanted to use polygenic scores as a selection criterion to select the highest performing students, would they identify a group that has higher educational attainment at age 16 than when that selection had been made on other criteria? If they selected the students with the top 10% of polygenic scores, they would on average only sample 24% of the top 10% highest achievers at age 16, and 76% of those not in the top 10%. In contrast, if the principal or policy maker used phenotypic measures from age 11, they would sample 51% of the top 10% highest achievers at age 16, and 49% of those not in the top 10%. This suggests that polygenic scores cannot be used to identify high achieving students more accurately than available phenotypic measures. The group of pupils with the highest polygenic scores do - on average - have higher achievement, but the predictive information provided from the polygenic scores is inferior to that provided by phenotypic predictors. Figure 4\u2014figure supplement 1 demonstrates the variability in age 16 educational achievement for pupils predicted to be in the top 10% from each of the genotypic and phenotypic predictors.\n\n## Discussion\n\nWe investigated how predictive polygenic scores for education were of realised educational\u00a0achievement and the incremental increase in explanatory\u00a0and\u00a0predictive power that they offered over and above readily available phenotypic measures. Our results demonstrated that the polygenic scores were predictive of educational achievement, accounting for 3.4% and 12.9% of the\u00a0variance (above age and sex) across our sample at age 7 and 16 respectively. This was higher than the 9.2% reported for high school GPA in the original GWAS (Lee et al., 2018). For informative education predictions at the individual level, the most predictive measure was prior achievement. This reflects some current schooling practices whereby pupils are streamed into different classes based upon ability. Conditional on prior achievement there was little incremental gain in the predictive power of polygenic scores for subsequent achievement, suggesting that when prior achievement data are available, polygenic scores are of little utility to providing accurate predictions of a child\u2019s future achievement. When children start school and prior achievement data are unavailable, or in cases where pre-intervention characteristics are limited (Rietveld et al., 2013), the scores may provide a small amount of predictive power. However, parental socioeconomic position and education were more strongly predictive of achievement than a pupil\u2019s genome. Genetic data from individuals therefore provided little information on their future achievement over phenotypic data that is either available or easily obtainable by educators. This is consistent with results from the only other study we are aware of to assess incremental variance explained over parental social characteristics, which observed higher variance explained in years of education by parental education (18% to 21.3%) than the polygenic score (10.6% to 12.7%) in two US samples (Lee et al., 2018).\n\nThe lack of genotypic predictive power that we observed over and above phenotypic data may be because prior achievement mediates genotypic\u00a0effects on educational outcomes; genetic variants that affect educational achievement at earlier ages are likely to also affect achievement at later ages. It has been suggested that for complex phenotypes, accurate prediction at the individual level may require a polygenic score that explains up to 75% of the total genetic variance of the phenotype (Wray et al., 2010). It is therefore possible that polygenic scores for education will require greater explanatory power for accurate prediction of\u00a0educational achievement\u00a0in the future. Our polygenic scores were constructed using results from a GWAS of over a million people, meaning that far larger samples will be required. While future studies may lead to polygenic scores that explain a greater amount of variation in education, these may still not provide useful returns to personalised interventions. High incremental variance explained is a necessary pre-requisite for successful intervention, but it is not a guarantee that an actionable intervention will have a large effect. Furthermore, to provide actionable evidence for personalisation at a given age, polygenic scores need to explain variation in educational outcomes over and above available phenotypic at that age. If most or all the educational differences associated with the polygenic score are phenotypically expressed at a given age, then the score is unlikely to be useful for personalisation.\n\nAt the individual level, polygenic scores and parental social background provided similar, but relatively imprecise predictions of achievement within our sample. This reflects a wider issue of the different challenges in analysing group and individual level differences (Davey Smith, 2011): while stochastic events will be averaged out at the group level, they are important in determining outcomes at the individual level. There was a large amount of overlap in the polygenic score distribution between pupils in the top 10% of achievers and all others; while pupils with a high polygenic score are more likely to be high achievers, genetics did not determine high achievement. High academic achievement is due to both environmental and genetic factors, including social background (Morris et al., 2016), teacher bias (Campbell, 2015; Morris et al., 2018), the home and school environment (Nieuwenhuis and Hooimeijer, 2016; Rasbash et al., 2010), and luck (Davey Smith, 2011). It is also possible that the quality of family and school environments may constrain or support pupils\u2019 ability to exploit their genetic propensity to education. For example, without the means to attend university, it does not matter what an individual\u2019s genotype is. In this, it is the combination of nature, nurture and chance that is important (de Zeeuw and Boomsma, 2017; Belsky et al., 2019).\n\nIn fields such as medicine, where genetic risk can be of clinical significance for some diseases (Lu et al., 2014), personalisation based on genotype may offer actionable intervention at the individual level. However, our results demonstrate that even for the purpose of identifying groups of pupils who will be high achievers, polygenic scores offer limited prediction value above phenotypic data in education. The usefulness of genetic data for educational research however lies in investigating group level differences. This has been previously demonstrated for example in assessing the effectiveness of teachers and schools (Harden et al., 2020; Morris et al., 2018); selection differences between schools (Smith-Woolley et al., 2018; Trejo et al., 2018) social mobility over time and space (Belsky et al., 2018), and, in a different context, for performing Mendelian randomization studies of the effects of education on various outcomes (Tillmann et al., 2017; Sanderson et al., 2019). Our results demonstrate that while polygenic scores are useful for investigating group differences such as these, they do not provide suitable value for routine use by teachers and schools to predict a pupil\u2019s future achievement. There is a wide range of non-genetic information available to teachers as part of their day to day interactions with pupils that are used to inform and personalise teaching. This may include knowledge of what the pupil responds well to, any stressful life events that they have recently experienced, and their physical and mental health. To the extent that this knowledge captures genotypic information of the pupil (through its expression in phenotype), it is unclear what novel information genotype would offer to teachers. Finally, genetic studies are focused heavily on samples of European ancestry (Mills and Rahal, 2019). Polygenic scores built from these studies do not perform well when applied to other ancestry groups (Duncan et al., 2019), meaning that their system-wide application to all pupils in an education system could lead to systematic prediction errors and inequalities in schooling.\n\nThis study has several limitations. First, the ALSPAC cohort is not fully representative of the UK population and as such our results may not be generalisable to all UK pupils. Other studies, such as the Millennium Cohort Study are more representative and therefore could provide further evidence about personalised education for the broader UK population. Second, the educational achievement polygenic score that we use was based on a GWAS of years of education rather than exam scores. Years of education can be considered a more social measure of education than exam performance, and previous work has demonstrated that the educational attainment polygenic score strongly reflects parental social position (and through this access to further or higher education) (Bates et al., 2018). Future research could investigate this possibility by conducting a GWAS on detailed standardized exam scores on a large sample. Furthermore, it is possible that polygenic scores from a GWAS conducted on change in test scores throughout education may provide higher prediction accuracy over and beyond phenotypic data if there are genetic factors associated with differences in educational progress. Third, while the educational attainment polygenic score accounts for around 13% of the variance in years of education in our data, increases to this from future GWAS\u00a0meta-analyses will provide greater power. Twin studies have estimated that the heritability of educational attainment is around 40% (Branigan et al., 2013), which limits the predictive power of genetic measures for education over some other phenotypes (Daetwyler et al., 2008). Finally, issues from confounding biases caused by population level phenomena such as population stratification, assortative mating and dynastic effects (genetic nurture) (Kong et al., 2018; Morris et al., 2019; Bates et al., 2018; Young et al., 2018) may have impacted our results. These biases can lead to social and family differences being masked as genetic differences between individuals, inflating associations between polygenic scores and educational achievement in between individual analyses. Family data are required to further investigate the impact of these baises (Brumpton et al., 2019).\n\nIn conclusion, our results suggest that currently available genetic scores are unlikely to provide more accurate predictions of how well a pupil will perform in school exams than easily measured phenotypes. Genetic data provide little additional information on an individual's school performance over and above more readily available and easily collected phenotypic data, except where prior achievement measures are unavailable. The greatest value of genetic data may lie instead for researchers investigating the\u00a0etiology\u00a0of educational\u00a0differences between groups of pupils, teachers and schools and for novel sociogenomic\u00a0analyses into socioeconomic inequalities in education achievement and attainment.\n\n## Materials and methods\n\n### Study sample\n\nParticipants were children from the Avon Longitudinal Study of Parents and Children (ALSPAC) (RRID: SCR_007260). Pregnant women resident in Avon, UK with expected dates of delivery 1 st April 1991 to 31st December 1992 were invited to take part in the study. The initial number of pregnancies enrolled was 14,541. When the oldest children were approximately 7 years of age, an attempt was made to bolster the initial sample with eligible cases who had failed to join the study originally. This additional recruitment resulted in a total sample of 15,454 pregnancies, resulting in 14,901 children who were alive at one year of age. From this sample genetic data was available for 7988 after quality control and removal of related individuals. For full details of the cohort profile and study design see Boyd et al. (2013)\u00a0and Fraser et al. (2013). Please note that the study website contains details of all the data that is available through a fully searchable data dictionary and variable search tool at http://www.bristol.ac.uk/alspac/researchers/our-data/. The ALSPAC cohort is largely representative of the UK population when compared with 1991 Census data; there is under representation of some ethnic minorities, single parent families, and those living in rented accommodation (Boyd et al., 2013). Ethical approval for the study was obtained from the ALSPAC Ethics and Law Committee and the Local Research Ethics Committees. Following listwise deletion of cases with missing data our final analytical sample was 3,453.\n\n### Genetic data\n\nDNA of the ALSPAC children was extracted from blood, cell line and mouthwash samples, then genotyped using references panels and subjected to standard quality control approaches. ALSPAC children were genotyped using the Illumina HumanHap550 quad chip genotyping platforms by 23andme subcontracting the Wellcome Trust Sanger Institute, Cambridge, UK and the Laboratory Corporation of America, Burlington, NC, US. The resulting raw genome-wide data were subjected to standard quality control methods. Individuals were excluded on the basis of gender mismatches; minimal or excessive heterozygosity; disproportionate levels of individual missingness (>3%) and insufficient sample replication (<0.8). Population stratification was assessed by multidimensional scaling analysis and compared with Hapmap II (release 22) European descent (CEU), Han Chinese, Japanese and Yoruba reference populations; all individuals with non-European ancestry were removed. SNPs with a minor allele frequency of\u00a0<1%, a call rate of\u00a0<95% or evidence for violations of Hardy-Weinberg equilibrium (p<5\u00d710\u22127) were removed. Cryptic relatedness was measured as proportion of identity by descent (IBD)\u00a0>0.1. Related subjects that passed all other quality control thresholds were retained during subsequent phasing and imputation. 9115 participants and 500,527 SNPs passed these quality control filters. ALSPAC mothers were genotyped using the Illumina human660W-quad array at Centre National de G\u00e9notypage (CNG) and genotypes were called with Illumina GenomeStudio. PLINK (v1.07) was used to carry out quality control measures on an initial set of 10,015 participants and 557,124 directly genotyped SNPs. SNPs were removed if they displayed more than 5% missingness or a Hardy-Weinberg equilibrium P value of less than 1.0e-06. Additionally SNPs with a minor allele frequency of less than 1% were removed. Samples were excluded if they displayed more than 5% missingness, had indeterminate X chromosome heterozygosity or extreme autosomal heterozygosity. Samples showing evidence of population stratification were identified by multidimensional scaling of genome-wide identity by state pairwise distances using the four HapMap populations as a reference, and then excluded. Cryptic relatedness was assessed using an IBD estimate of more than 0.125 which is expected to correspond to roughly 12.5% alleles shared IBD or a relatedness at the first cousin level. Related subjects that passed all other quality control thresholds were retained during subsequent phasing and imputation. 9048 participants and 526,688 SNPs passed these quality control filters.\n\nWe combined 477,482 SNP genotypes in common between the sample of mothers and sample of children. We removed SNPs with genotype missingness above 1% due to poor quality (11,396 SNPs removed) and removed a further 321 participants due to potential ID mismatches. This resulted in a dataset of 17,842 participants containing 6305 duos and 465,740 SNPs (112 were removed during liftover and 234 were out of HWE after combination). We estimated haplotypes using ShapeIT (v2.r644) which utilises relatedness during phasing. The phased haplotypes were then imputed to the Haplotype Reference Consortium (HRCr1.1, 2016) panel of approximately 31,000 phased whole genomes. The HRC panel was phased using ShapeIt v2, and the imputation was performed using the Michigan imputation server. This gave 8237 eligible children and 8196 eligible mothers with available genotype data after exclusion of related subjects using cryptic relatedness measures described previously. Principal components were generated by extracting unrelated individuals (IBS\u00a0<0.05) and independent SNPs with long range LD regions removed, and then calculating using the `--pca` command in plink1.90.\u00a0Only the children's genetic data was used in this paper.\n\n### Educational achievement\n\nWe use average fine graded point scores at four major Key Stages of education in the UK. These are Key Stage 1 (age 7), Key Stage 2 (age 11), Key Stage 3 (age 14), and Key Stage 4 (age 16). We use scores for performance at the end of each Key Stage and a score at entry to Key Stage 1, which represents the start of schooling. At the time the ALSPAC cohort were at school, the age 16 Key Stage 4 exams represented final compulsory schooling examinations. Scores were obtained through data linkage to the UK National Pupil Database (NPD), which represents the most accurate record of individual educational achievement available in the UK. We used data from the Key Stage 1 and Key Stage 4 files. The Key Stage 4 database provides a larger sample size than Key Stage 2 and 3 databases and contains data for each.\n\n### Educational attainment polygenic scores\n\nTwo educational attainment polygenic scores were generated using the software package PRSice (Euesden et al., 2015) based upon the list of SNPs identified to associate with years of education in the largest GWAS of education to date (Lee et al., 2018). The polygenic scores were generated using GWAS results which had removed ALSPAC and 23andMe participants from the meta-analysis (n=763,468), and as such are not perfectly comparable to those reported in the published meta-analysis. SNPs were weighted by their effect size in the replication cohort of the GWAS, and these sizes were summed using allelic scoring. PRSice was used to thin SNPs according to linkage disequilibrium through clumping, where the SNP with the smallest P-value in each 250kb window was retained and all other SNPs in linkage disequilibrium with an $r$2 of >0.1 were removed. The first polygenic score (GWAS sig PGS) was created from the 1,271 independent SNPs that associated with years of education at genome-wide levels of significance (p<5\u00d710\u22128). The second (all SNP PGS) was created from all genome-wide SNPs reported in the meta-analysis.\n\n### Covariates\n\nWe selected covariates that are easily available to schools in the UK. These include the study participants sex and month of birth, and their status on three pupil characteristics that are available to schools the NPD: eligibility for Free School Meals (FSM); Special Education Needs (SEN); and English as a Foreign Language (EFL). FSM is a proxy for low income as only children from low income families are eligible. We use years of parental education, coded as basic formal education (7 years), certificate of secondary education (10 years), O-levels and vocational qualifications (11 years), A-level (13 years), and degree (16 years). For dual parent families we use the average of the two parents\u2019 years of education, while for single parent families we use the mother\u2019s years of education. Finally, we use a continuous measure of socioeconomic position, the Cambridge Social Stratification Score (CAMSIS). For dual parent families we used the highest of either parents score, while for single parent families we use the mother\u2019s score. Parental years of education and CAMSIS were measured when the study participants were in utero.\n\n### Statistical analysis\n\nTo examine the predictive ability of polygenic scores for educational achievement we ran a series of regression analyses of the polygenic scores on achievement each controlling for sex, month of birth, and the first 20 principal components of inferred population structure. Principal components are included to adjust estimates for population stratification; systematic differences in allele frequencies between subpopulations due to ancestral differences. Predictive ability of the polygenic scores was determined by the incremental increase in variance explained (R2) in educational achievement above age and sex; pupil characteristics; and prior achievement. Bootstrapping with 1000 replications was used to estimate confidence intervals for R2 values. To compare the predictive power of polygenic scores to additional phenotypic data that schools could collect, we repeated the regression analyses controlling for parental years of education and parental socioeconomic position. Sensitivity and specificity were calculated using selection into the top 10% of educational achievers at age 16 from the whole cohort as the \u2018diagnosis\u2019. Receiver Operating Characteristic (ROC) curves were used to visually compare models and to calculate the Area Under the Curve (AUC).\n",
+      "created_at": "2025-12-02T15:42:57.410702Z"
+    },
+    {
+      "id": "7b2dc8a3-8e04-4e37-9d50-d0938a338ddc",
+      "submission_id": "e00c3650-961e-491c-986f-a0f8ced0e9e7",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Mark I McCarthy, Genentech United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.49962.sa1](https://doi.org/10.7554/eLife.49962.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nThank you for submitting your article \"Can education be personalised using pupils' genetic data?\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Mark McCarthy as the Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Cecile Janssens (Reviewer #1); Kathryn Paige Harden (Reviewer #2); David Cesarini (Reviewer #3).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nAll reviewers agree that this is an interesting manuscript with clear research questions and solid methods. The paper sets out the limits of genetic prediction for aspects of educational attainment, especially as compared to the existing information supplied by readily available risk predictors (and previous educational performance).\n\nHaving said that the reviewers considered that the manuscript needed to be revised to reflect the issues described below. The thrust of the argument from several of the reviewers (both in their reviews and in the subsequent inter-reviewer discussion) was a \"shared concern that the paper is a bit cavalier in how it talks about the relationship between incremental R2s and the scope for personalized interventions. The title is an obvious place to start fixing this issue\". One reviewer suggested a more descriptively on-point title along the lines of: \"Polygenic Scores For Educational Attainment Do Not Predict Exam Performance Beyond Readily Available Phenotypic Information\". All felt that the discussion about personalized interventions could use a major overhaul that takes into account the specific concerns raised.\n\nEssential revisions:\n\nThe major issues that need to be addressed are these:\n\n1) More complete analysis of group level predictions (see more detailed comments from R1 in particular). The key point here is that in focusing on individual level predictions (which are \"far out of reach\" as anticipated given the low R2), an opportunity has been lost to explore the impact on group level differences (and how the PRS might, or might not, influence that above and beyond standard criteria). As reviewer 1 states: \"by focusing on individual prediction (which is way out of reach), we lose out of sight that there is potential for misuse on group level discrimination\"\n\n2) Defend the use of cutoffs such as defining the outcome as the top 10%? Does the ROC change with different definitions of the outcome?\n\n3) Please define \"personalized education\". Per the comments of reviewer 2, you should spell out what you mean by this term (is it individual personalization within each classroom, or is it streaming of groups of students), and give reference to the educational literature on this subject. This revision is clearly tied to the first, in terms of setting out more clearly the opportunities for use/misuse of PRS in both the individual and the group setting. As reviewer 2 states: \"the authors could be more careful about delineating more specifically *which* educational policies or practices hinge on individual prediction.\"\n\n4) Please do more to help readers understand exactly what is being reported in a few instances. The goal is a paper clear enough that someone with access to the data set could reproduce the exact analyses run without having to make guesses or judgment calls. (see full reviews for more specific suggestions).\n\n5) Please do more to help readers compare their estimates to the previous literature.\n\n6) Please expand the paper's Discussion about the relationship between the incremental R2 of a PGS and the scope for personalized interventions (see full reviews for details).\n\nA suggestion from reviewer 1 with which we agree:\n\n7) The structure of the results can be improved by presenting three sections in line with the three research questions. The ROC analyses is discussed under the individual prediction, but it is a population evaluation equivalent to (but not the same as) R2, not for individual prediction.\n",
+      "created_at": "2025-12-02T15:42:57.410702Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T15:42:57.410702Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T15:42:57.410702Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "de152795-93ed-4b90-8bbb-e46dd255854f",
+      "content_id": "88d4f8b4-0f6f-44c3-b90c-9fb4d0ad0b23",
+      "claim_id": "C1",
+      "claim": "GWAS with sample sizes of over one million participants have identified hundreds of genetic variants (single nucleotide polymorphisms, or SNPs) that associate with educational attainment and other social phenotypes.",
+      "claim_type": "EXPLICIT",
+      "source": "GWAS with sample sizes of over one million participants have identified hundreds of genetic variants (single nucleotide polymorphisms, or SNPs) that associate with educational attainment and other social phenotypes (Lee et al., 2018; Karlsson Linn\u00e9r et al., 2019; Luciano et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to published GWAS studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:42:57.410702Z"
+    },
+    {
+      "id": "fbafa78c-74bc-42d8-a4e8-b0fc8a570026",
+      "content_id": "88d4f8b4-0f6f-44c3-b90c-9fb4d0ad0b23",
+      "claim_id": "C2",
+      "claim": "Individual SNPs associate only very weakly with complex polygenic phenotypes in isolation, typically accounting for less than 0.01% of variation.",
+      "claim_type": "EXPLICIT",
+      "source": "While individual SNPs associate only very weakly with complex polygenic phenotypes in isolation - typically accounting for less than 0.01% of variation",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established understanding from genetic studies",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:42:57.410702Z"
+    },
+    {
+      "id": "69546e17-3b4d-4404-bab5-839d0f38f8c5",
+      "content_id": "88d4f8b4-0f6f-44c3-b90c-9fb4d0ad0b23",
+      "claim_id": "C3",
+      "claim": "In the most recent education GWAS, the median per allele effect size of lead SNPs related to an additional 1.7 weeks of schooling.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, in the most recent education GWAS, the median per allele effect size of lead SNPs related to an additional 1.7 weeks of schooling",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Reported finding from cited GWAS study",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:42:57.410702Z"
+    },
+    {
+      "id": "703620a2-7666-492a-94ad-6041e5573d53",
+      "content_id": "88d4f8b4-0f6f-44c3-b90c-9fb4d0ad0b23",
+      "claim_id": "C4",
+      "claim": "Polygenic scores combining all identified SNPs explained up to 13% of the variance in years of educational attainment in out of sample prediction samples.",
+      "claim_type": "EXPLICIT",
+      "source": "but polygenic scores combining all identified SNPs explained up to 13% of the variance in years of educational attainment (defined as completed years of education) and 9.2% of the variation in educational achievement (defined as high school grade point average [GPA]) in out of sample prediction samples (Lee et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Reported finding from cited GWAS study",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:42:57.410702Z"
+    },
+    {
+      "id": "1da077d3-b1a9-4217-9e8b-be587bca8385",
+      "content_id": "88d4f8b4-0f6f-44c3-b90c-9fb4d0ad0b23",
+      "claim_id": "C5",
+      "claim": "Polygenic scores combining all identified SNPs explained 9.2% of the variation in educational achievement (high school GPA) in out of sample prediction samples.",
+      "claim_type": "EXPLICIT",
+      "source": "but polygenic scores combining all identified SNPs explained up to 13% of the variance in years of educational attainment (defined as completed years of education) and 9.2% of the variation in educational achievement (defined as high school grade point average [GPA]) in out of sample prediction samples (Lee et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Reported finding from cited GWAS study",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:42:57.410702Z"
+    },
+    {
+      "id": "09940e22-0458-468d-842a-e152a5b29d97",
+      "content_id": "88d4f8b4-0f6f-44c3-b90c-9fb4d0ad0b23",
+      "claim_id": "C6",
+      "claim": "Polygenic scores have been promoted as a potential tool for genetically informed policy.",
+      "claim_type": "EXPLICIT",
+      "source": "are increasingly being used as indicators of genetic propensity, and have been promoted as a potential tool for genetically informed policy (Plomin, 2018; Conley and Fletcher, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to publications promoting this use",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:42:57.410702Z"
+    },
+    {
+      "id": "07cb5b69-6405-4590-8a58-c7ee1dd06242",
+      "content_id": "88d4f8b4-0f6f-44c3-b90c-9fb4d0ad0b23",
+      "claim_id": "C7",
+      "claim": "It has been suggested that genetic information could be used prescriptively to provide personalised medicine, education and even dating.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been suggested that genetic information could be used prescriptively to provide personalised medicine, education and even dating (Plomin, 2018; McCarthy and Mahajan, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to publications suggesting these applications",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:42:57.410702Z"
+    },
+    {
+      "id": "3d9c00a1-a36f-4d17-948b-0eea96d993b6",
+      "content_id": "88d4f8b4-0f6f-44c3-b90c-9fb4d0ad0b23",
+      "claim_id": "C8",
+      "claim": "Personalised learning was adopted in national policy statements in England in 2004 with a focus on the needs of individual students.",
+      "claim_type": "EXPLICIT",
+      "source": "Personalised learning was adopted in national policy statements in England in 2004 with a focus on the needs of individual students (Gilbert, 2020; Department for Children, Schools and Families, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to policy documents",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:42:57.410702Z"
+    },
+    {
+      "id": "605cea6d-3530-4bf3-b0b4-acfba8d78662",
+      "content_id": "88d4f8b4-0f6f-44c3-b90c-9fb4d0ad0b23",
+      "claim_id": "C9",
+      "claim": "Personalised learning was not mandated and was seen as being conceptually ambiguous, leading to inconsistency in its implementation across schools.",
+      "claim_type": "EXPLICIT",
+      "source": "However, it was not mandated and was seen as being conceptually ambiguous, leading to inconsistency in its implementation across schools (Maguire et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to research on policy implementation",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:42:57.410702Z"
+    },
+    {
+      "id": "8fde4af3-61d9-4716-b9fd-f1e3c0847cd2",
+      "content_id": "88d4f8b4-0f6f-44c3-b90c-9fb4d0ad0b23",
+      "claim_id": "C10",
+      "claim": "There are currently no policies in place that rely on educational prediction.",
+      "claim_type": "EXPLICIT",
+      "source": "There are currently no policies in place that rely on educational prediction",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about current policy landscape",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:42:57.410702Z"
+    },
+    {
+      "id": "9588ec95-4af9-4c38-a291-c995ff2de60e",
+      "content_id": "88d4f8b4-0f6f-44c3-b90c-9fb4d0ad0b23",
+      "claim_id": "C11",
+      "claim": "Calls are increasingly being made for genetic data to be used to personalise education to identify pupils in need of greater educational support.",
+      "claim_type": "EXPLICIT",
+      "source": "but calls are increasingly being made for genetic data to be used to personalise education to, for example, identify pupils in need of greater educational support (Miller, 1990; Grigorenko, 2007; Sabatello, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to publications calling for this use",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:42:57.410702Z"
+    },
+    {
+      "id": "4c99705f-1406-4f08-8eed-f5ff9eddb3b0",
+      "content_id": "88d4f8b4-0f6f-44c3-b90c-9fb4d0ad0b23",
+      "claim_id": "C12",
+      "claim": "Polygenic scores for education associate with many aspects of environment and schooling.",
+      "claim_type": "EXPLICIT",
+      "source": "Given the social complexity of educational attainment, polygenic scores for education associate with many aspects of environment and schooling (Abdellaoui et al., 2019; Harden et al., 2020), referred to as gene-environment correlation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to research demonstrating these associations",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:42:57.410702Z"
+    },
+    {
+      "id": "d641c9da-93e9-4d25-bdbd-c05d8c4aa523",
+      "content_id": "88d4f8b4-0f6f-44c3-b90c-9fb4d0ad0b23",
+      "claim_id": "C13",
+      "claim": "Active gene-environment correlation can be thought of as environment downstream of genotype.",
+      "claim_type": "EXPLICIT",
+      "source": "Active gene-environment correlation can be thought of as environment downstream of genotype; for example, pupil's selecting certain subjects based on their genotype.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conceptual definition with example",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:42:57.410702Z"
+    },
+    {
+      "id": "bc910d3e-913d-4207-9c38-b907736ab2fe",
+      "content_id": "88d4f8b4-0f6f-44c3-b90c-9fb4d0ad0b23",
+      "claim_id": "C14",
+      "claim": "Passive gene-environment correlation can be thought of as environment upstream of genotype.",
+      "claim_type": "EXPLICIT",
+      "source": "Passive gene-environment correlation can be thought of as environment upstream of genotype; for example, children of highly educated parents being more likely to inherit education associated environments as well as education associated genes (Kong et al., 2018) (also referred to as dynastic effects Davies et al., 2019; Morris et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conceptual definition with example and citations",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:42:57.410702Z"
+    },
+    {
+      "id": "1f78e832-84f8-49ea-83b8-ce5cdc507ac6",
+      "content_id": "88d4f8b4-0f6f-44c3-b90c-9fb4d0ad0b23",
+      "claim_id": "C15",
+      "claim": "A person's education polygenic score associates with a range of phenotypic differences very early in life.",
+      "claim_type": "EXPLICIT",
+      "source": "That a person's education polygenic score associates with a range of phenotypic differences very early in life demonstrates that it captures a very broad range of information, not just their education.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from observed associations",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:42:57.410702Z"
+    },
+    {
+      "id": "81967a47-5bb4-47e2-a278-638b2bb53f44",
+      "content_id": "88d4f8b4-0f6f-44c3-b90c-9fb4d0ad0b23",
+      "claim_id": "C16",
+      "claim": "Polygenic scores are more predictive when genetic factors play a larger role in a phenotype (as measured by heritability).",
+      "claim_type": "EXPLICIT",
+      "source": "Briefly, polygenic scores are more predictive when genetic factors play a larger role in a phenotype (as measured by heritability), and in the case of binary phenotypes where prevalence in the outcome is higher (Janssens et al., 2006; Wray et al., 2010; Zhao and Zou, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to theoretical work on polygenic score prediction",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:42:57.410702Z"
+    },
+    {
+      "id": "2e6a3ecb-1be8-424c-b2ce-e599d9922f91",
+      "content_id": "88d4f8b4-0f6f-44c3-b90c-9fb4d0ad0b23",
+      "claim_id": "C17",
+      "claim": "In the case of binary phenotypes, polygenic scores are more predictive where prevalence in the outcome is higher.",
+      "claim_type": "EXPLICIT",
+      "source": "Briefly, polygenic scores are more predictive when genetic factors play a larger role in a phenotype (as measured by heritability), and in the case of binary phenotypes where prevalence in the outcome is higher (Janssens et al., 2006; Wray et al., 2010; Zhao and Zou, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to theoretical work on polygenic score prediction",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:42:57.410702Z"
+    },
+    {
+      "id": "4a38069f-334d-403b-9f10-e8032604f450",
+      "content_id": "88d4f8b4-0f6f-44c3-b90c-9fb4d0ad0b23",
+      "claim_id": "C18",
+      "claim": "Phenotypic measures such as sex, month of birth and prior achievement are predictive of educational achievement.",
+      "claim_type": "EXPLICIT",
+      "source": "Phenotypic measures that are predictive of educational achievement such as sex, month of birth and prior achievement (Benton et al., 2004; Solli, 2017) are readily available to schools",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to research demonstrating these associations",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:42:57.410702Z"
+    },
+    {
+      "id": "cf948745-3b3e-405c-b092-d0984d4c3897",
+      "content_id": "88d4f8b4-0f6f-44c3-b90c-9fb4d0ad0b23",
+      "claim_id": "C19",
+      "claim": "Parental education and socioeconomic position are predictive of educational achievement.",
+      "claim_type": "EXPLICIT",
+      "source": "while other measures such as parental education and socioeconomic position (Morris et al., 2016; Strand, 2011) are, in principle, simple and inexpensive to collect.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to research demonstrating these associations",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:42:57.410702Z"
+    },
+    {
+      "id": "ad887858-9b9d-426d-a41e-f78627f3a43d",
+      "content_id": "88d4f8b4-0f6f-44c3-b90c-9fb4d0ad0b23",
+      "claim_id": "C20",
+      "claim": "Few studies have investigated how well polygenic scores predict individual level educational attainment or achievement conditional on observable phenotypes that are easily available to educators.",
+      "claim_type": "EXPLICIT",
+      "source": "To date, few studies have investigated how well polygenic scores predict individual level educational attainment or achievement conditional on observable phenotypes that are easily available to educators.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about the state of the literature",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:42:57.410702Z"
+    },
+    {
+      "id": "3454c088-51fe-4569-9677-1dcc1ca9285f",
+      "content_id": "88d4f8b4-0f6f-44c3-b90c-9fb4d0ad0b23",
+      "claim_id": "C22",
+      "claim": "Children with higher polygenic scores, on average, had higher exam scores than those with lower polygenic scores.",
+      "claim_type": "EXPLICIT",
+      "source": "Children with higher polygenic scores, on average, had higher exam scores than those with lower polygenic scores.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from correlation data",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:42:57.410702Z"
+    },
+    {
+      "id": "bd242ee8-5160-41a5-a20a-9f9b586edd36",
+      "content_id": "88d4f8b4-0f6f-44c3-b90c-9fb4d0ad0b23",
+      "claim_id": "C24",
+      "claim": "Correlations between predictors and achievement were consistently stronger for age 16 than age 7 educational achievement.",
+      "claim_type": "EXPLICIT",
+      "source": "Correlations were consistently stronger for age 16 than age 7 educational achievement.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Comparison of correlation coefficients from study data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:42:57.410702Z"
+    },
+    {
+      "id": "018794b3-b086-431c-b518-565b149528b3",
+      "content_id": "88d4f8b4-0f6f-44c3-b90c-9fb4d0ad0b23",
+      "claim_id": "C25",
+      "claim": "Both the genomewide significant and the all SNP polygenic scores accounted for a larger proportion of variance explained (R2) in achievement than age and sex alone.",
+      "claim_type": "EXPLICIT",
+      "source": "Both the genomewide significant and the all SNP polygenic scores accounted for a larger proportion of variance explained (R2) in achievement than age and sex alone.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Comparison of R2 values from regression analyses",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:42:57.410702Z"
+    },
+    {
+      "id": "d26491e2-42ee-4647-9b6d-2559bd5fae87",
+      "content_id": "88d4f8b4-0f6f-44c3-b90c-9fb4d0ad0b23",
+      "claim_id": "C26",
+      "claim": "Pupil characteristics outperformed polygenic scores in terms of explanatory power for age 7 achievement.",
+      "claim_type": "EXPLICIT",
+      "source": "Pupil characteristics outperformed polygenic scores in terms of explanatory power",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Comparison of R2 values from regression analyses shown in Figure 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:42:57.410702Z"
+    },
+    {
+      "id": "66c29446-38df-4169-b9f3-eca03d069bf0",
+      "content_id": "88d4f8b4-0f6f-44c3-b90c-9fb4d0ad0b23",
+      "claim_id": "C27",
+      "claim": "Polygenic scores and pupil characteristics together explained up to 21.5% (95% CI: 18.9 to 24.1) of the variation in age 7 achievement.",
+      "claim_type": "EXPLICIT",
+      "source": "but together they explained up to 21.5% (95% CI: 18.9 to 24.1) of the variation in age 7 achievement.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "R2 value with confidence interval from regression analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:42:57.410702Z"
+    },
+    {
+      "id": "80212c1d-6114-422c-aa87-6c4bfa4b55d1",
+      "content_id": "88d4f8b4-0f6f-44c3-b90c-9fb4d0ad0b23",
+      "claim_id": "C28",
+      "claim": "Including information on the social background of pupils' parents that is potentially obtainable by schools further increased the explanatory power of the models up to a maximum R2 of 26.3% (23.4 to 29.2) for age 7 achievement.",
+      "claim_type": "EXPLICIT",
+      "source": "Including information on the social background of pupils' parents that is potentially obtainable by schools further increased the explanatory power of the models up to a maximum R2 of 26.3% (23.4 to 29.2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "R2 value with confidence interval from regression analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:42:57.410702Z"
+    },
+    {
+      "id": "253de1c5-d609-47cc-8cb6-145493386bda",
+      "content_id": "88d4f8b4-0f6f-44c3-b90c-9fb4d0ad0b23",
+      "claim_id": "C29",
+      "claim": "The incremental R2 of the polygenic scores over pupil characteristics were 1.8% (-0.7 to 4.3) and 4.8 (2.1 to 7.3) for age 7 achievement.",
+      "claim_type": "EXPLICIT",
+      "source": "The incremental R2 of the polygenic scores over pupil characteristics were 1.8% (-0.7 to 4.3) and 4.8 (2.1 to 7.3), suggesting that they provide some additional predictive information over currently available or easily collectable data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Incremental R2 values with confidence intervals from regression analyses",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:42:57.410702Z"
+    },
+    {
+      "id": "bac165da-32ca-4e55-952e-a44aa266573d",
+      "content_id": "88d4f8b4-0f6f-44c3-b90c-9fb4d0ad0b23",
+      "claim_id": "C30",
+      "claim": "The genomewide significant and all SNP polygenic scores explained an additional 3.4% (1.7 to 5.0) and 12.9% (10.6 to 15.3) of educational achievement at age 16 over age and sex alone.",
+      "claim_type": "EXPLICIT",
+      "source": "The genomewide significant and all SNP polygenic scores explained more variation of achievement in exams sat at the end of compulsory education at age 16, explaining an additional 3.4% (1.7 to 5.0) and 12.9% (10.6 to 15.3) of educational achievement over age and sex alone (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Incremental R2 values with confidence intervals from regression analyses shown in Figure 2B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:42:57.410702Z"
+    },
+    {
+      "id": "1e1dde1f-d309-47a7-8333-8f468d214b0d",
+      "content_id": "88d4f8b4-0f6f-44c3-b90c-9fb4d0ad0b23",
+      "claim_id": "C31",
+      "claim": "Measures of parental education and socioeconomic position provided greater returns to explanatory power than the polygenic scores when unadjusted for prior achievement, explaining an additional 19% (16.6 to 21.4) and 21.4% (18.8 to 23.9) respectively over age and sex for age 16 achievement.",
+      "claim_type": "EXPLICIT",
+      "source": "By comparison, measures of parental education and socioeconomic position provided greater returns to explanatory power than the polygenic scores when unadjusted for prior achievement, explaining an additional 19% (16.6 to 21.4) and 21.4% (18.8 to 23.9) respectively over age and sex (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Incremental R2 values with confidence intervals from regression analyses shown in Figure 2B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:42:57.410702Z"
+    },
+    {
+      "id": "a2d6e420-c2d2-435c-b83a-5260581064e9",
+      "content_id": "88d4f8b4-0f6f-44c3-b90c-9fb4d0ad0b23",
+      "claim_id": "C32",
+      "claim": "Prior achievement at age 14 explained 65.1% (60.9 to 69.4) of the variation in age 16 achievement alongside age and sex.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, prior achievement at age 14 explained 65.1% (60.9 to 69.4) of the variation in age 16 achievement alongside age and sex (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "R2 value with confidence interval from regression analysis shown in Figure 2A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:42:57.410702Z"
+    },
+    {
+      "id": "ffa3e8f0-5fd5-4edb-8ce5-049d398081fb",
+      "content_id": "88d4f8b4-0f6f-44c3-b90c-9fb4d0ad0b23",
+      "claim_id": "C33",
+      "claim": "Conditional on prior achievement data, the polygenic scores provide very little discernible increase in explanatory power for age 16 achievement.",
+      "claim_type": "EXPLICIT",
+      "source": "Conditional on prior achievement data, the polygenic scores provide very little discernible increase in explanatory power (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Comparison of incremental R2 values shown in Figure 2B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:42:57.410702Z"
+    },
+    {
+      "id": "b01bdd10-5833-47c6-a661-7f069f3e5df7",
+      "content_id": "88d4f8b4-0f6f-44c3-b90c-9fb4d0ad0b23",
+      "claim_id": "C34",
+      "claim": "There is near complete overlap in the distributions of polygenic scores between high achieving pupils at age 16 and all other pupils.",
+      "claim_type": "EXPLICIT",
+      "source": "The polygenic scores of high achievers are, on average, higher than of other pupils, but there is near complete overlap in the distributions between the groups.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Visual inspection of distributions shown in Figure 3",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:42:57.410702Z"
+    },
+    {
+      "id": "cd363542-54af-4fc3-b3eb-d0588251112b",
+      "content_id": "88d4f8b4-0f6f-44c3-b90c-9fb4d0ad0b23",
+      "claim_id": "C35",
+      "claim": "The near complete overlap in polygenic score distributions suggests there would be a large proportion of misclassification when trying to predict from genetic data whether a pupil will be in the top 10%.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests there would be a large proportion of misclassification when trying to predict from genetic data whether a pupil will be in the top 10%.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from observed distribution overlap",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:42:57.410702Z"
+    },
+    {
+      "id": "1b0e92b4-e868-4f62-b909-be45c2167eee",
+      "content_id": "88d4f8b4-0f6f-44c3-b90c-9fb4d0ad0b23",
+      "claim_id": "C36",
+      "claim": "There is far less overlap in the distributions of prior achievement between high achievers and other pupils compared to polygenic scores.",
+      "claim_type": "EXPLICIT",
+      "source": "By comparison, there is far less overlap in the distributions of prior achievement between high achievers and other pupils (Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Visual comparison of distributions shown in Figure 3 and Figure 3\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:42:57.410702Z"
+    },
+    {
+      "id": "a9d3c993-55f7-4b1b-939f-9bbfc3452170",
+      "content_id": "88d4f8b4-0f6f-44c3-b90c-9fb4d0ad0b23",
+      "claim_id": "C37",
+      "claim": "While some pupils are correctly predicted from their genetic data to be high achievers, a greater proportion are erroneously predicted to be in the wrong group.",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 4 displays this misclassification of pupils; while some are correctly predicted from their genetic data to be high achievers, a greater proportion are erroneously predicted to be in the wrong group.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Visual display of misclassification shown in Figure 4",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:42:57.410702Z"
+    },
+    {
+      "id": "0f7ea500-0e2b-4c23-ba12-0e93e3111322",
+      "content_id": "88d4f8b4-0f6f-44c3-b90c-9fb4d0ad0b23",
+      "claim_id": "C38",
+      "claim": "Misclassification from polygenic scores is similar for parental education and socioeconomic position but lower for prior attainment.",
+      "claim_type": "EXPLICIT",
+      "source": "This misclassification is similar for parental education and socioeconomic position but lower for prior attainment (Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Comparison of misclassification patterns shown in Figure 4\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:42:57.410702Z"
+    },
+    {
+      "id": "d6fd5e7d-38c6-4b42-8807-e8fa298771dc",
+      "content_id": "88d4f8b4-0f6f-44c3-b90c-9fb4d0ad0b23",
+      "claim_id": "C39",
+      "claim": "The group of pupils predicted to be in the top 10% of achievers will on average perform higher than other pupils in exams, but the large variability shows that many of the pupils in this group will not ultimately be in the top 10%.",
+      "claim_type": "EXPLICIT",
+      "source": "In each case, the group of pupils predicted to be in the top 10% of achievers will on average perform higher than other pupils in exams, but the large variability shows that many of the pupils in this group will not ultimately be in the top 10%.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from observed variability in predictions",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:42:57.410702Z"
+    },
+    {
+      "id": "7e68cd69-9ac2-44f6-b849-03ba1c026f4d",
+      "content_id": "88d4f8b4-0f6f-44c3-b90c-9fb4d0ad0b23",
+      "claim_id": "C40",
+      "claim": "Compared to measures of parental socioeconomic position (AUCs: 0.70 for both years of education and social class), the polygenic scores have a lower AUC and therefore poorer sensitivity and specificity to discriminate high achievers at age 7 (AUCs: 0.63 for the GWAS sig PGS; 0.68 for the All SNP PGS).",
+      "claim_type": "EXPLICIT",
+      "source": "Compared to measures of parental socioeconomic position (AUCs: 0.70 for both years of education and social class), the polygenic scores have a lower AUC and therefore poorer sensitivity and specificity to discriminate high achievers at age 7 (AUCs: 0.63 for the GWAS sig PGS; 0.68 for the All SNP PGS) (Figure 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "AUC values calculated from ROC curves shown in Figure 5",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:42:57.410702Z"
+    },
+    {
+      "id": "0e95f581-a877-40f4-8474-d22c73db601a",
+      "content_id": "88d4f8b4-0f6f-44c3-b90c-9fb4d0ad0b23",
+      "claim_id": "C41",
+      "claim": "The trade-off in sensitivity and specificity for each of the measures at different classification thresholds is poor; high sensitivity comes at the cost of low specificity (and vice versa).",
+      "claim_type": "EXPLICIT",
+      "source": "The trade-off in sensitivity and specificity for each of the measures at different classification thresholds is also poor; high sensitivity comes at the cost of low specificity (and vice versa).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Interpretation of ROC curves shown in Figure 5",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:42:57.410702Z"
+    },
+    {
+      "id": "aa8a2252-5484-4aba-b2f4-a4933a2f4caa",
+      "content_id": "88d4f8b4-0f6f-44c3-b90c-9fb4d0ad0b23",
+      "claim_id": "C42",
+      "claim": "In order to accurately identify most of the pupils who will go on to be in the top 10% of achievers, one would have to set the classification at the point where almost all students would be identified.",
+      "claim_type": "EXPLICIT",
+      "source": "This means that in order to accurately identify most of the pupils who will go on to be in the top 10% of achievers, one would have to set the classification at the point where almost all students would be identified.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from ROC curve analysis",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:42:57.410702Z"
+    },
+    {
+      "id": "0a6da503-d2ab-4e8f-a2b2-6c3e6a40e53e",
+      "content_id": "88d4f8b4-0f6f-44c3-b90c-9fb4d0ad0b23",
+      "claim_id": "C43",
+      "claim": "The results were consistent when other cut-offs were used to determine the high achieving group, suggesting that the results do not reflect the definition of high achievers.",
+      "claim_type": "EXPLICIT",
+      "source": "These results were consistent when other cut-offs were used to determine the high achieving group (Figure 5\u2014figure supplement 1), suggesting that the results do not reflect our definition of high achievers.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Sensitivity analysis using different cut-offs shown in Figure 5\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:42:57.410702Z"
+    },
+    {
+      "id": "16684044-7166-4315-b7a3-120a9a626615",
+      "content_id": "88d4f8b4-0f6f-44c3-b90c-9fb4d0ad0b23",
+      "claim_id": "C44",
+      "claim": "At age 16, measures of prior achievement provide far higher sensitivity and specificity for predicting educational achievement than the polygenic scores (AUCs: 0.83 to 0.95 for prior achievement compared to 0.61 to 0.70 for the polygenic scores).",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 6a shows that measures of prior achievement provide far higher sensitivity and specificity for predicting educational achievement than the polygenic scores (AUCs: 0.83 to 0.95 for prior achievement compared to 0.61 to 0.70 for the polygenic scores).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "AUC values calculated from ROC curves shown in Figure 6a",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:42:57.410702Z"
+    },
+    {
+      "id": "62dcb527-4c4f-403b-a506-31a0357e265d",
+      "content_id": "88d4f8b4-0f6f-44c3-b90c-9fb4d0ad0b23",
+      "claim_id": "C45",
+      "claim": "A classification point can be set for prior achievement at age 14 with a sensitivity and specificity of around 0.85, whereas the best classification point for polygenic scores would give a sensitivity and specificity of around 0.65.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, a classification point can be set for prior achievement at age 14 with a sensitivity and specificity of around 0.85, whereas the best classification point for polygenic scores would give a sensitivity and specificity of around 0.65.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Specific values read from ROC curves",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:42:57.410702Z"
+    },
+    {
+      "id": "e97a366f-d86f-426d-aa21-3f86c1337373",
+      "content_id": "88d4f8b4-0f6f-44c3-b90c-9fb4d0ad0b23",
+      "claim_id": "C46",
+      "claim": "The ROC curve for the All SNP polygenic score was similar to the ROC curves for parent's years of education and socioeconomic position at age 16.",
+      "claim_type": "EXPLICIT",
+      "source": "As with achievement at age 7, the ROC curve for the All SNP polygenic score was similar to the ROC curves for parent's years of education and socioeconomic position (Figure 6b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Visual comparison of ROC curves shown in Figure 6b",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:42:57.410702Z"
+    },
+    {
+      "id": "d207f7e6-ffc0-4105-a476-966c51c0712b",
+      "content_id": "88d4f8b4-0f6f-44c3-b90c-9fb4d0ad0b23",
+      "claim_id": "C47",
+      "claim": "After accounting for the phenotypic information already available to schools, the polygenic scores provide almost no information to reliably identify high achievers (AUC: 0.51 and 0.56).",
+      "claim_type": "EXPLICIT",
+      "source": "The results (Figure 6c) demonstrated that after accounting for the phenotypic information already available to schools, the polygenic scores provide almost no information to reliably identify high achievers (AUC: 0.51 and 0.56).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "AUC values from ROC curves for residualized achievement shown in Figure 6c",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:42:57.410702Z"
+    },
+    {
+      "id": "866d51a5-3ce7-46b3-998e-b3c1c10eae75",
+      "content_id": "88d4f8b4-0f6f-44c3-b90c-9fb4d0ad0b23",
+      "claim_id": "C48",
+      "claim": "The results were consistent had these predictions been made earlier in schooling where later measures of prior attainment were unavailable (AUC's: 0.54 to 0.61).",
+      "claim_type": "EXPLICIT",
+      "source": "The results were consistent had these predictions been made earlier in schooling where later measures of prior attainment were unavailable (Figure 6\u2014figure supplement 1; AUC's: 0.54 to 0.61).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "AUC values from sensitivity analysis shown in Figure 6\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:42:57.410702Z"
+    },
+    {
+      "id": "60ea262c-4d4e-4dbd-b3f8-69309f6fed02",
+      "content_id": "88d4f8b4-0f6f-44c3-b90c-9fb4d0ad0b23",
+      "claim_id": "C49",
+      "claim": "If a school headteacher selected the students with the top 10% of polygenic scores, they would on average only sample 24% of the top 10% highest achievers at age 16, and 76% of those not in the top 10%.",
+      "claim_type": "EXPLICIT",
+      "source": "If they selected the students with the top 10% of polygenic scores, they would on average only sample 24% of the top 10% highest achievers at age 16, and 76% of those not in the top 10%.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Calculation from classification analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:42:57.410702Z"
+    },
+    {
+      "id": "ba4dfa41-18c3-4d84-a39c-83d43a5b7799",
+      "content_id": "88d4f8b4-0f6f-44c3-b90c-9fb4d0ad0b23",
+      "claim_id": "C50",
+      "claim": "If the principal or policy maker used phenotypic measures from age 11, they would sample 51% of the top 10% highest achievers at age 16, and 49% of those not in the top 10%.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, if the principal or policy maker used phenotypic measures from age 11, they would sample 51% of the top 10% highest achievers at age 16, and 49% of those not in the top 10%.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Calculation from classification analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:42:57.410702Z"
+    },
+    {
+      "id": "2dd2a18b-3ab7-4188-8ee9-9b54e830180c",
+      "content_id": "88d4f8b4-0f6f-44c3-b90c-9fb4d0ad0b23",
+      "claim_id": "C51",
+      "claim": "Polygenic scores cannot be used to identify high achieving students more accurately than available phenotypic measures.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that polygenic scores cannot be used to identify high achieving students more accurately than available phenotypic measures.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from classification accuracy comparisons",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:42:57.410702Z"
+    },
+    {
+      "id": "e4c2d207-adab-4ab5-a3c9-5723b12b5624",
+      "content_id": "88d4f8b4-0f6f-44c3-b90c-9fb4d0ad0b23",
+      "claim_id": "C52",
+      "claim": "The group of pupils with the highest polygenic scores do - on average - have higher achievement, but the predictive information provided from the polygenic scores is inferior to that provided by phenotypic predictors.",
+      "claim_type": "EXPLICIT",
+      "source": "The group of pupils with the highest polygenic scores do - on average - have higher achievement, but the predictive information provided from the polygenic scores is inferior to that provided by phenotypic predictors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary inference from all prediction analyses",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:42:57.410702Z"
+    },
+    {
+      "id": "2cd090c0-bb34-4af7-9c38-df6f4b6e3336",
+      "content_id": "88d4f8b4-0f6f-44c3-b90c-9fb4d0ad0b23",
+      "claim_id": "C53",
+      "claim": "The polygenic scores were predictive of educational achievement, accounting for 3.4% and 12.9% of the variance (above age and sex) across the sample at age 7 and 16 respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results demonstrated that the polygenic scores were predictive of educational achievement, accounting for 3.4% and 12.9% of the variance (above age and sex) across our sample at age 7 and 16 respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of variance explained from regression analyses",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:42:57.410702Z"
+    },
+    {
+      "id": "85a7390d-6ff6-414c-a48c-5b880c725379",
+      "content_id": "88d4f8b4-0f6f-44c3-b90c-9fb4d0ad0b23",
+      "claim_id": "C54",
+      "claim": "The variance explained by polygenic scores in this study (12.9% at age 16) was higher than the 9.2% reported for high school GPA in the original GWAS.",
+      "claim_type": "EXPLICIT",
+      "source": "This was higher than the 9.2% reported for high school GPA in the original GWAS (Lee et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Comparison with published GWAS results",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:42:57.410702Z"
+    },
+    {
+      "id": "b1d5d0b0-a62d-4ad7-b80b-55ce9fddc58f",
+      "content_id": "88d4f8b4-0f6f-44c3-b90c-9fb4d0ad0b23",
+      "claim_id": "C55",
+      "claim": "For informative education predictions at the individual level, the most predictive measure was prior achievement.",
+      "claim_type": "EXPLICIT",
+      "source": "For informative education predictions at the individual level, the most predictive measure was prior achievement.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary conclusion from prediction analyses",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:42:57.410702Z"
+    },
+    {
+      "id": "c1542554-d112-4a10-b8d5-0c3901c78b49",
+      "content_id": "88d4f8b4-0f6f-44c3-b90c-9fb4d0ad0b23",
+      "claim_id": "C56",
+      "claim": "Conditional on prior achievement there was little incremental gain in the predictive power of polygenic scores for subsequent achievement.",
+      "claim_type": "EXPLICIT",
+      "source": "Conditional on prior achievement there was little incremental gain in the predictive power of polygenic scores for subsequent achievement, suggesting that when prior achievement data are available, polygenic scores are of little utility to providing accurate predictions of a child's future achievement.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary conclusion from incremental variance analyses",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:42:57.410702Z"
+    },
+    {
+      "id": "b813aeb4-e20c-43ec-befb-4168c6872060",
+      "content_id": "88d4f8b4-0f6f-44c3-b90c-9fb4d0ad0b23",
+      "claim_id": "C57",
+      "claim": "When children start school and prior achievement data are unavailable, or in cases where pre-intervention characteristics are limited, the polygenic scores may provide a small amount of predictive power.",
+      "claim_type": "EXPLICIT",
+      "source": "When children start school and prior achievement data are unavailable, or in cases where pre-intervention characteristics are limited (Rietveld et al., 2013), the scores may provide a small amount of predictive power.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from results with citation to related work",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:42:57.410702Z"
+    },
+    {
+      "id": "4c4cad0a-6fcc-44ab-9319-a4fd8a064678",
+      "content_id": "88d4f8b4-0f6f-44c3-b90c-9fb4d0ad0b23",
+      "claim_id": "C58",
+      "claim": "Parental socioeconomic position and education were more strongly predictive of achievement than a pupil's genome.",
+      "claim_type": "EXPLICIT",
+      "source": "However, parental socioeconomic position and education were more strongly predictive of achievement than a pupil's genome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary conclusion from comparative prediction analyses",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:42:57.410702Z"
+    },
+    {
+      "id": "63a44587-f2e6-4437-b703-9f3df684f69f",
+      "content_id": "88d4f8b4-0f6f-44c3-b90c-9fb4d0ad0b23",
+      "claim_id": "C59",
+      "claim": "Genetic data from individuals provided little information on their future achievement over phenotypic data that is either available or easily obtainable by educators.",
+      "claim_type": "EXPLICIT",
+      "source": "Genetic data from individuals therefore provided little information on their future achievement over phenotypic data that is either available or easily obtainable by educators.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary conclusion from incremental prediction analyses",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:42:57.410702Z"
+    },
+    {
+      "id": "97148d3e-b85b-493e-99a6-ee0d4e01c47d",
+      "content_id": "88d4f8b4-0f6f-44c3-b90c-9fb4d0ad0b23",
+      "claim_id": "C60",
+      "claim": "Results showing higher variance explained in years of education by parental education (18% to 21.3%) than the polygenic score (10.6% to 12.7%) in two US samples are consistent with this study's findings.",
+      "claim_type": "EXPLICIT",
+      "source": "This is consistent with results from the only other study we are aware of to assess incremental variance explained over parental social characteristics, which observed higher variance explained in years of education by parental education (18% to 21.3%) than the polygenic score (10.6% to 12.7%) in two US samples (Lee et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Comparison with published results from cited study",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:42:57.410702Z"
+    },
+    {
+      "id": "735e5cb7-8f01-443d-81e9-2305a1d13c4e",
+      "content_id": "88d4f8b4-0f6f-44c3-b90c-9fb4d0ad0b23",
+      "claim_id": "C61",
+      "claim": "The lack of genotypic predictive power over and above phenotypic data may be because prior achievement mediates genotypic effects on educational outcomes.",
+      "claim_type": "EXPLICIT",
+      "source": "The lack of genotypic predictive power that we observed over and above phenotypic data may be because prior achievement mediates genotypic effects on educational outcomes; genetic variants that affect educational achievement at earlier ages are likely to also affect achievement at later ages.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative explanation for observed results",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:42:57.410702Z"
+    },
+    {
+      "id": "e87520e3-bc14-4528-8b52-88d3da46c3dc",
+      "content_id": "88d4f8b4-0f6f-44c3-b90c-9fb4d0ad0b23",
+      "claim_id": "C62",
+      "claim": "Genetic variants that affect educational achievement at earlier ages are likely to also affect achievement at later ages.",
+      "claim_type": "EXPLICIT",
+      "source": "genetic variants that affect educational achievement at earlier ages are likely to also affect achievement at later ages.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Logical inference about genetic effects over time",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:42:57.410702Z"
+    },
+    {
+      "id": "7a3887d4-c45b-4224-b09d-854134a7bf4b",
+      "content_id": "88d4f8b4-0f6f-44c3-b90c-9fb4d0ad0b23",
+      "claim_id": "C63",
+      "claim": "For complex phenotypes, accurate prediction at the individual level may require a polygenic score that explains up to 75% of the total genetic variance of the phenotype.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been suggested that for complex phenotypes, accurate prediction at the individual level may require a polygenic score that explains up to 75% of the total genetic variance of the phenotype (Wray et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited theoretical work on prediction requirements",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:42:57.410702Z"
+    },
+    {
+      "id": "ba8ec096-1f5b-43d9-a7c2-bfcf91cef7d2",
+      "content_id": "88d4f8b4-0f6f-44c3-b90c-9fb4d0ad0b23",
+      "claim_id": "C64",
+      "claim": "Polygenic scores for education will require greater explanatory power for accurate prediction of educational achievement in the future.",
+      "claim_type": "EXPLICIT",
+      "source": "It is therefore possible that polygenic scores for education will require greater explanatory power for accurate prediction of educational achievement in the future.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculation about future developments",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:42:57.410702Z"
+    },
+    {
+      "id": "458dc44f-c074-4dbb-a8ee-5bca2a4ddfbf",
+      "content_id": "88d4f8b4-0f6f-44c3-b90c-9fb4d0ad0b23",
+      "claim_id": "C65",
+      "claim": "The polygenic scores in this study were constructed using results from a GWAS of over a million people, meaning that far larger samples will be required for improvement.",
+      "claim_type": "EXPLICIT",
+      "source": "Our polygenic scores were constructed using results from a GWAS of over a million people, meaning that far larger samples will be required.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about study methods and implications",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:42:57.410702Z"
+    },
+    {
+      "id": "c3e8e887-1719-4701-8bbf-c9b0af4f69dc",
+      "content_id": "88d4f8b4-0f6f-44c3-b90c-9fb4d0ad0b23",
+      "claim_id": "C66",
+      "claim": "Future studies may lead to polygenic scores that explain a greater amount of variation in education, but these may still not provide useful returns to personalised interventions.",
+      "claim_type": "EXPLICIT",
+      "source": "While future studies may lead to polygenic scores that explain a greater amount of variation in education, these may still not provide useful returns to personalised interventions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculation about future developments and their limitations",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:42:57.410702Z"
+    },
+    {
+      "id": "0e6449ea-386e-4f15-bcb0-740f786f3864",
+      "content_id": "88d4f8b4-0f6f-44c3-b90c-9fb4d0ad0b23",
+      "claim_id": "C67",
+      "claim": "High incremental variance explained is a necessary pre-requisite for successful intervention, but it is not a guarantee that an actionable intervention will have a large effect.",
+      "claim_type": "EXPLICIT",
+      "source": "High incremental variance explained is a necessary pre-requisite for successful intervention, but it is not a guarantee that an actionable intervention will have a large effect.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Logical reasoning about intervention requirements",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:42:57.410702Z"
+    },
+    {
+      "id": "e5f75b12-adeb-49bf-8a22-e72304e74b4f",
+      "content_id": "88d4f8b4-0f6f-44c3-b90c-9fb4d0ad0b23",
+      "claim_id": "C68",
+      "claim": "To provide actionable evidence for personalisation at a given age, polygenic scores need to explain variation in educational outcomes over and above available phenotypic data at that age.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, to provide actionable evidence for personalisation at a given age, polygenic scores need to explain variation in educational outcomes over and above available phenotypic at that age.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Logical reasoning about requirements for actionable prediction",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:42:57.410702Z"
+    },
+    {
+      "id": "3ac95bb5-8085-4968-b340-091a36cbbbd5",
+      "content_id": "88d4f8b4-0f6f-44c3-b90c-9fb4d0ad0b23",
+      "claim_id": "C69",
+      "claim": "If most or all the educational differences associated with the polygenic score are phenotypically expressed at a given age, then the score is unlikely to be useful for personalisation.",
+      "claim_type": "EXPLICIT",
+      "source": "If most or all the educational differences associated with the polygenic score are phenotypically expressed at a given age, then the score is unlikely to be useful for personalisation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Logical reasoning about utility of genetic prediction",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:42:57.410702Z"
+    },
+    {
+      "id": "e15dd72d-e7dd-49ae-99da-bbb82ab391b7",
+      "content_id": "88d4f8b4-0f6f-44c3-b90c-9fb4d0ad0b23",
+      "claim_id": "C70",
+      "claim": "At the individual level, polygenic scores and parental social background provided similar, but relatively imprecise predictions of achievement within the sample.",
+      "claim_type": "EXPLICIT",
+      "source": "At the individual level, polygenic scores and parental social background provided similar, but relatively imprecise predictions of achievement within our sample.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of prediction accuracy results",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:42:57.410702Z"
+    },
+    {
+      "id": "0b355dfa-ffc5-436b-bea6-bdb9de378864",
+      "content_id": "88d4f8b4-0f6f-44c3-b90c-9fb4d0ad0b23",
+      "claim_id": "C71",
+      "claim": "While stochastic events will be averaged out at the group level, they are important in determining outcomes at the individual level.",
+      "claim_type": "EXPLICIT",
+      "source": "This reflects a wider issue of the different challenges in analysing group and individual level differences (Davey Smith, 2011): while stochastic events will be averaged out at the group level, they are important in determining outcomes at the individual level.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited conceptual framework about group vs individual prediction",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:42:57.410702Z"
+    },
+    {
+      "id": "b37c66f3-5a72-418a-9246-a20087a675f2",
+      "content_id": "88d4f8b4-0f6f-44c3-b90c-9fb4d0ad0b23",
+      "claim_id": "C72",
+      "claim": "While pupils with a high polygenic score are more likely to be high achievers, genetics did not determine high achievement.",
+      "claim_type": "EXPLICIT",
+      "source": "while pupils with a high polygenic score are more likely to be high achievers, genetics did not determine high achievement.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from observed distribution overlap and probabilistic nature of associations",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:42:57.410702Z"
+    },
+    {
+      "id": "265c2a1d-f928-4dd9-aeba-e3a2065a231e",
+      "content_id": "88d4f8b4-0f6f-44c3-b90c-9fb4d0ad0b23",
+      "claim_id": "C73",
+      "claim": "High academic achievement is due to both environmental and genetic factors, including social background, teacher bias, the home and school environment, and luck.",
+      "claim_type": "EXPLICIT",
+      "source": "High academic achievement is due to both environmental and genetic factors, including social background (Morris et al., 2016), teacher bias (Campbell, 2015; Morris et al., 2018), the home and school environment (Nieuwenhuis and Hooimeijer, 2016; Rasbash et al., 2010), and luck (Davey Smith, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to research on multiple determinants of achievement",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:42:57.410702Z"
+    },
+    {
+      "id": "cdf15a0e-65f8-4965-bb13-f124c99ab6cf",
+      "content_id": "88d4f8b4-0f6f-44c3-b90c-9fb4d0ad0b23",
+      "claim_id": "C74",
+      "claim": "The quality of family and school environments may constrain or support pupils' ability to exploit their genetic propensity to education.",
+      "claim_type": "EXPLICIT",
+      "source": "It is also possible that the quality of family and school environments may constrain or support pupils' ability to exploit their genetic propensity to education.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculation about gene-environment interactions",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:42:57.410702Z"
+    },
+    {
+      "id": "e65f10e6-99eb-475c-be47-12169bf467c9",
+      "content_id": "88d4f8b4-0f6f-44c3-b90c-9fb4d0ad0b23",
+      "claim_id": "C75",
+      "claim": "Without the means to attend university, it does not matter what an individual's genotype is.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, without the means to attend university, it does not matter what an individual's genotype is.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Example illustrating environmental constraints on genetic potential",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:42:57.410702Z"
+    },
+    {
+      "id": "a702a7dc-9a52-43bb-866a-d5359795c170",
+      "content_id": "88d4f8b4-0f6f-44c3-b90c-9fb4d0ad0b23",
+      "claim_id": "C76",
+      "claim": "It is the combination of nature, nurture and chance that is important for educational outcomes.",
+      "claim_type": "EXPLICIT",
+      "source": "In this, it is the combination of nature, nurture and chance that is important (de Zeeuw and Boomsma, 2017; Belsky et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited conceptual framework about determinants of outcomes",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:42:57.410702Z"
+    },
+    {
+      "id": "9dcf85fa-f64a-427f-8af8-855cb17894b1",
+      "content_id": "88d4f8b4-0f6f-44c3-b90c-9fb4d0ad0b23",
+      "claim_id": "C77",
+      "claim": "In fields such as medicine, where genetic risk can be of clinical significance for some diseases, personalisation based on genotype may offer actionable intervention at the individual level.",
+      "claim_type": "EXPLICIT",
+      "source": "In fields such as medicine, where genetic risk can be of clinical significance for some diseases (Lu et al., 2014), personalisation based on genotype may offer actionable intervention at the individual level.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited example from medical genetics",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:42:57.410702Z"
+    },
+    {
+      "id": "b20b9f63-3f06-49bb-be50-6af7746f9381",
+      "content_id": "88d4f8b4-0f6f-44c3-b90c-9fb4d0ad0b23",
+      "claim_id": "C78",
+      "claim": "Even for the purpose of identifying groups of pupils who will be high achievers, polygenic scores offer limited prediction value above phenotypic data in education.",
+      "claim_type": "EXPLICIT",
+      "source": "However, our results demonstrate that even for the purpose of identifying groups of pupils who will be high achievers, polygenic scores offer limited prediction value above phenotypic data in education.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary conclusion from all prediction analyses",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:42:57.410702Z"
+    },
+    {
+      "id": "423aa24f-3609-4779-a013-9db0fdb52442",
+      "content_id": "88d4f8b4-0f6f-44c3-b90c-9fb4d0ad0b23",
+      "claim_id": "C79",
+      "claim": "The usefulness of genetic data for educational research lies in investigating group level differences.",
+      "claim_type": "EXPLICIT",
+      "source": "The usefulness of genetic data for educational research however lies in investigating group level differences.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference about appropriate applications of genetic data",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:42:57.410702Z"
+    },
+    {
+      "id": "bb244366-7c30-4753-ba06-d7e33635d3fa",
+      "content_id": "88d4f8b4-0f6f-44c3-b90c-9fb4d0ad0b23",
+      "claim_id": "C80",
+      "claim": "Genetic data have been used for assessing the effectiveness of teachers and schools.",
+      "claim_type": "EXPLICIT",
+      "source": "This has been previously demonstrated for example in assessing the effectiveness of teachers and schools (Harden et al., 2020; Morris et al., 2018)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited examples of appropriate uses of genetic data",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:42:57.410702Z"
+    },
+    {
+      "id": "d5229994-3a0e-4280-8f5c-a9a5525689a2",
+      "content_id": "88d4f8b4-0f6f-44c3-b90c-9fb4d0ad0b23",
+      "claim_id": "C81",
+      "claim": "Genetic data have been used for investigating selection differences between schools.",
+      "claim_type": "EXPLICIT",
+      "source": "selection differences between schools (Smith-Woolley et al., 2018; Trejo et al., 2018)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited examples of appropriate uses of genetic data",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:42:57.410702Z"
+    },
+    {
+      "id": "51c37333-1d25-4fce-a6bb-8d3aa3ebac64",
+      "content_id": "88d4f8b4-0f6f-44c3-b90c-9fb4d0ad0b23",
+      "claim_id": "C82",
+      "claim": "Genetic data have been used for investigating social mobility over time and space.",
+      "claim_type": "EXPLICIT",
+      "source": "social mobility over time and space (Belsky et al., 2018)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited example of appropriate use of genetic data",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:42:57.410702Z"
+    },
+    {
+      "id": "15791dfa-ed00-4c60-9bbf-2e3ae3e3ae1f",
+      "content_id": "88d4f8b4-0f6f-44c3-b90c-9fb4d0ad0b23",
+      "claim_id": "C83",
+      "claim": "Genetic data have been used for performing Mendelian randomization studies of the effects of education on various outcomes.",
+      "claim_type": "EXPLICIT",
+      "source": "and, in a different context, for performing Mendelian randomization studies of the effects of education on various outcomes (Tillmann et al., 2017; Sanderson et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited examples of appropriate uses of genetic data",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:42:57.410702Z"
+    },
+    {
+      "id": "a2b67394-f5e9-4c26-9be2-e18c7d96c500",
+      "content_id": "88d4f8b4-0f6f-44c3-b90c-9fb4d0ad0b23",
+      "claim_id": "C84",
+      "claim": "While polygenic scores are useful for investigating group differences, they do not provide suitable value for routine use by teachers and schools to predict a pupil's future achievement.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results demonstrate that while polygenic scores are useful for investigating group differences such as these, they do not provide suitable value for routine use by teachers and schools to predict a pupil's future achievement.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary conclusion from all analyses",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:42:57.410702Z"
+    },
+    {
+      "id": "49e2706d-14fd-4d08-828e-9b21cb0a1aa3",
+      "content_id": "88d4f8b4-0f6f-44c3-b90c-9fb4d0ad0b23",
+      "claim_id": "C85",
+      "claim": "There is a wide range of non-genetic information available to teachers as part of their day to day interactions with pupils that are used to inform and personalise teaching.",
+      "claim_type": "EXPLICIT",
+      "source": "There is a wide range of non-genetic information available to teachers as part of their day to day interactions with pupils that are used to inform and personalise teaching.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about current teaching practice",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:42:57.410702Z"
+    },
+    {
+      "id": "398004de-e7da-4f91-860b-fc337994543e",
+      "content_id": "88d4f8b4-0f6f-44c3-b90c-9fb4d0ad0b23",
+      "claim_id": "C86",
+      "claim": "Non-genetic information available to teachers may include knowledge of what the pupil responds well to, any stressful life events that they have recently experienced, and their physical and mental health.",
+      "claim_type": "EXPLICIT",
+      "source": "This may include knowledge of what the pupil responds well to, any stressful life events that they have recently experienced, and their physical and mental health.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Examples of phenotypic information available to teachers",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:42:57.410702Z"
+    },
+    {
+      "id": "b508dc38-2c66-4f43-97bf-017617395011",
+      "content_id": "88d4f8b4-0f6f-44c3-b90c-9fb4d0ad0b23",
+      "claim_id": "C87",
+      "claim": "To the extent that teacher knowledge captures genotypic information of the pupil (through its expression in phenotype), it is unclear what novel information genotype would offer to teachers.",
+      "claim_type": "EXPLICIT",
+      "source": "To the extent that this knowledge captures genotypic information of the pupil (through its expression in phenotype), it is unclear what novel information genotype would offer to teachers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Logical reasoning about redundancy of genetic information",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:42:57.410702Z"
+    },
+    {
+      "id": "a8389a28-1ac9-4e4f-a216-2e219cca69c0",
+      "content_id": "88d4f8b4-0f6f-44c3-b90c-9fb4d0ad0b23",
+      "claim_id": "C88",
+      "claim": "Genetic studies are focused heavily on samples of European ancestry.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, genetic studies are focused heavily on samples of European ancestry (Mills and Rahal, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited observation about genetic study populations",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:42:57.410702Z"
+    },
+    {
+      "id": "6b9715a8-bdcc-4105-802f-1d6e71c0a690",
+      "content_id": "88d4f8b4-0f6f-44c3-b90c-9fb4d0ad0b23",
+      "claim_id": "C89",
+      "claim": "Polygenic scores built from studies of European ancestry do not perform well when applied to other ancestry groups.",
+      "claim_type": "EXPLICIT",
+      "source": "Polygenic scores built from these studies do not perform well when applied to other ancestry groups (Duncan et al., 2019)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited research on cross-ancestry performance of polygenic scores",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:42:57.410702Z"
+    },
+    {
+      "id": "488eba60-5bd0-46cc-bdb7-f1fc353e11e5",
+      "content_id": "88d4f8b4-0f6f-44c3-b90c-9fb4d0ad0b23",
+      "claim_id": "C90",
+      "claim": "System-wide application of polygenic scores to all pupils in an education system could lead to systematic prediction errors and inequalities in schooling.",
+      "claim_type": "EXPLICIT",
+      "source": "meaning that their system-wide application to all pupils in an education system could lead to systematic prediction errors and inequalities in schooling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from poor cross-ancestry performance",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:42:57.410702Z"
+    },
+    {
+      "id": "f1b88e2b-504f-4e75-8a17-3259b190ca81",
+      "content_id": "88d4f8b4-0f6f-44c3-b90c-9fb4d0ad0b23",
+      "claim_id": "C91",
+      "claim": "The ALSPAC cohort is not fully representative of the UK population and the results may not be generalisable to all UK pupils.",
+      "claim_type": "EXPLICIT",
+      "source": "First, the ALSPAC cohort is not fully representative of the UK population and as such our results may not be generalisable to all UK pupils.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about study limitation",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:42:57.410702Z"
+    },
+    {
+      "id": "c30bf330-507c-4741-8fa0-eb7f796725f6",
+      "content_id": "88d4f8b4-0f6f-44c3-b90c-9fb4d0ad0b23",
+      "claim_id": "C92",
+      "claim": "The educational achievement polygenic score used was based on a GWAS of years of education rather than exam scores.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, the educational achievement polygenic score that we use was based on a GWAS of years of education rather than exam scores.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about study methods",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:42:57.410702Z"
+    },
+    {
+      "id": "18a0bf02-d5df-4463-86b5-609420dd7ca2",
+      "content_id": "88d4f8b4-0f6f-44c3-b90c-9fb4d0ad0b23",
+      "claim_id": "C93",
+      "claim": "Years of education can be considered a more social measure of education than exam performance.",
+      "claim_type": "EXPLICIT",
+      "source": "Years of education can be considered a more social measure of education than exam performance",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conceptual distinction between education measures",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:42:57.410702Z"
+    },
+    {
+      "id": "028f2081-c0d2-40fb-a7e8-b77a28115471",
+      "content_id": "88d4f8b4-0f6f-44c3-b90c-9fb4d0ad0b23",
+      "claim_id": "C94",
+      "claim": "Previous work has demonstrated that the educational attainment polygenic score strongly reflects parental social position (and through this access to further or higher education).",
+      "claim_type": "EXPLICIT",
+      "source": "and previous work has demonstrated that the educational attainment polygenic score strongly reflects parental social position (and through this access to further or higher education) (Bates et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited research on what polygenic scores capture",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:42:57.410702Z"
+    },
+    {
+      "id": "0ab516ea-e205-4d95-b37d-3f9c557b8ac4",
+      "content_id": "88d4f8b4-0f6f-44c3-b90c-9fb4d0ad0b23",
+      "claim_id": "C95",
+      "claim": "It is possible that polygenic scores from a GWAS conducted on change in test scores throughout education may provide higher prediction accuracy over and beyond phenotypic data if there are genetic factors associated with differences in educational progress.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, it is possible that polygenic scores from a GWAS conducted on change in test scores throughout education may provide higher prediction accuracy over and beyond phenotypic data if there are genetic factors associated with differences in educational progress.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculation about alternative polygenic score construction",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:42:57.410702Z"
+    },
+    {
+      "id": "62590341-2457-4aff-b05f-c6194ae8ea17",
+      "content_id": "88d4f8b4-0f6f-44c3-b90c-9fb4d0ad0b23",
+      "claim_id": "C96",
+      "claim": "While the educational attainment polygenic score accounts for around 13% of the variance in years of education in the study data, increases to this from future GWAS meta-analyses will provide greater power.",
+      "claim_type": "EXPLICIT",
+      "source": "Third, while the educational attainment polygenic score accounts for around 13% of the variance in years of education in our data, increases to this from future GWAS meta-analyses will provide greater power.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about current performance and future potential",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:42:57.410702Z"
+    },
+    {
+      "id": "2787e11d-c0a3-483b-8b55-a6df5fdec55e",
+      "content_id": "88d4f8b4-0f6f-44c3-b90c-9fb4d0ad0b23",
+      "claim_id": "C97",
+      "claim": "Twin studies have estimated that the heritability of educational attainment is around 40%.",
+      "claim_type": "EXPLICIT",
+      "source": "Twin studies have estimated that the heritability of educational attainment is around 40% (Branigan et al., 2013)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited heritability estimate from twin studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:42:57.410702Z"
+    },
+    {
+      "id": "ebf7a23b-56a5-4102-aec6-8d4e60261916",
+      "content_id": "88d4f8b4-0f6f-44c3-b90c-9fb4d0ad0b23",
+      "claim_id": "C98",
+      "claim": "The heritability of educational attainment (around 40%) limits the predictive power of genetic measures for education over some other phenotypes.",
+      "claim_type": "EXPLICIT",
+      "source": "which limits the predictive power of genetic measures for education over some other phenotypes (Daetwyler et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from heritability with citation to theoretical work",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:42:57.410702Z"
+    },
+    {
+      "id": "9c1d1827-b55b-4f9d-8ba9-13becbabb889",
+      "content_id": "88d4f8b4-0f6f-44c3-b90c-9fb4d0ad0b23",
+      "claim_id": "C99",
+      "claim": "Issues from confounding biases caused by population level phenomena such as population stratification, assortative mating and dynastic effects (genetic nurture) may have impacted the results.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, issues from confounding biases caused by population level phenomena such as population stratification, assortative mating and dynastic effects (genetic nurture) (Kong et al., 2018; Morris et al., 2019; Bates et al., 2018; Young et al., 2018) may have impacted our results.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about potential biases with citations",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:42:57.410702Z"
+    },
+    {
+      "id": "03b9ba97-5310-4556-bb95-0e82ef281e4f",
+      "content_id": "88d4f8b4-0f6f-44c3-b90c-9fb4d0ad0b23",
+      "claim_id": "C100",
+      "claim": "Confounding biases can lead to social and family differences being masked as genetic differences between individuals, inflating associations between polygenic scores and educational achievement in between individual analyses.",
+      "claim_type": "EXPLICIT",
+      "source": "These biases can lead to social and family differences being masked as genetic differences between individuals, inflating associations between polygenic scores and educational achievement in between individual analyses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Explanation of how biases affect results",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:42:57.410702Z"
+    },
+    {
+      "id": "b63122e0-7328-414b-bbc4-8972e1f582ae",
+      "content_id": "88d4f8b4-0f6f-44c3-b90c-9fb4d0ad0b23",
+      "claim_id": "C101",
+      "claim": "Family data are required to further investigate the impact of confounding biases.",
+      "claim_type": "EXPLICIT",
+      "source": "Family data are required to further investigate the impact of these baises (Brumpton et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited methodological requirement for addressing biases",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:42:57.410702Z"
+    },
+    {
+      "id": "10b6e94a-f25e-4543-b5e5-6c57eaba3982",
+      "content_id": "88d4f8b4-0f6f-44c3-b90c-9fb4d0ad0b23",
+      "claim_id": "C102",
+      "claim": "Currently available genetic scores are unlikely to provide more accurate predictions of how well a pupil will perform in school exams than easily measured phenotypes.",
+      "claim_type": "EXPLICIT",
+      "source": "In conclusion, our results suggest that currently available genetic scores are unlikely to provide more accurate predictions of how well a pupil will perform in school exams than easily measured phenotypes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary conclusion from all analyses",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:42:57.410702Z"
+    },
+    {
+      "id": "8db19f92-3a13-45e8-8ea1-7cd2ffd2366b",
+      "content_id": "88d4f8b4-0f6f-44c3-b90c-9fb4d0ad0b23",
+      "claim_id": "C103",
+      "claim": "Genetic data provide little additional information on an individual's school performance over and above more readily available and easily collected phenotypic data, except where prior achievement measures are unavailable.",
+      "claim_type": "EXPLICIT",
+      "source": "Genetic data provide little additional information on an individual's school performance over and above more readily available and easily collected phenotypic data, except where prior achievement measures are unavailable.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary conclusion from incremental prediction analyses",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:42:57.410702Z"
+    },
+    {
+      "id": "03f146ca-4b90-481b-9800-f1632a0c0f18",
+      "content_id": "88d4f8b4-0f6f-44c3-b90c-9fb4d0ad0b23",
+      "claim_id": "C104",
+      "claim": "The greatest value of genetic data may lie for researchers investigating the etiology of educational differences between groups of pupils, teachers and schools.",
+      "claim_type": "EXPLICIT",
+      "source": "The greatest value of genetic data may lie instead for researchers investigating the etiology of educational differences between groups of pupils, teachers and schools and for novel sociogenomic analyses into socioeconomic inequalities in education achievement and attainment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference about appropriate applications of genetic data",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:42:57.410702Z"
+    },
+    {
+      "id": "a0b3038c-5843-46ef-ad97-7b0a06b72e43",
+      "content_id": "88d4f8b4-0f6f-44c3-b90c-9fb4d0ad0b23",
+      "claim_id": "C105",
+      "claim": "Genetic data may be valuable for novel sociogenomic analyses into socioeconomic inequalities in education achievement and attainment.",
+      "claim_type": "EXPLICIT",
+      "source": "The greatest value of genetic data may lie instead for researchers investigating the etiology of educational differences between groups of pupils, teachers and schools and for novel sociogenomic analyses into socioeconomic inequalities in education achievement and attainment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference about appropriate applications of genetic data",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:42:57.410702Z"
+    },
+    {
+      "id": "32db3443-b763-48ec-95a7-e5c9d8660bb6",
+      "content_id": "88d4f8b4-0f6f-44c3-b90c-9fb4d0ad0b23",
+      "claim_id": "C106",
+      "claim": "Participants were children from the Avon Longitudinal Study of Parents and Children (ALSPAC).",
+      "claim_type": "EXPLICIT",
+      "source": "Participants were children from the Avon Longitudinal Study of Parents and Children (ALSPAC) (RRID: SCR_007260).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about study sample",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:42:57.410702Z"
+    },
+    {
+      "id": "11195b09-3fd8-418e-bb8f-a218745acb75",
+      "content_id": "88d4f8b4-0f6f-44c3-b90c-9fb4d0ad0b23",
+      "claim_id": "C107",
+      "claim": "The initial number of pregnancies enrolled in ALSPAC was 14,541.",
+      "claim_type": "EXPLICIT",
+      "source": "The initial number of pregnancies enrolled was 14,541.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about study enrollment",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:42:57.410702Z"
+    },
+    {
+      "id": "b2cd3632-bad4-4d9e-85c2-88534d55771c",
+      "content_id": "88d4f8b4-0f6f-44c3-b90c-9fb4d0ad0b23",
+      "claim_id": "C108",
+      "claim": "Additional recruitment resulted in a total ALSPAC sample of 15,454 pregnancies, resulting in 14,901 children who were alive at one year of age.",
+      "claim_type": "EXPLICIT",
+      "source": "This additional recruitment resulted in a total sample of 15,454 pregnancies, resulting in 14,901 children who were alive at one year of age.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about study sample size",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:42:57.410702Z"
+    },
+    {
+      "id": "f0b47ed6-4f2f-4a57-b914-141a5065c1a5",
+      "content_id": "88d4f8b4-0f6f-44c3-b90c-9fb4d0ad0b23",
+      "claim_id": "C109",
+      "claim": "From the ALSPAC sample, genetic data was available for 7988 children after quality control and removal of related individuals.",
+      "claim_type": "EXPLICIT",
+      "source": "From this sample genetic data was available for 7988 after quality control and removal of related individuals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about available genetic data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:42:57.410702Z"
+    },
+    {
+      "id": "f2330f69-c621-44d3-a3ca-cef28ee3777f",
+      "content_id": "88d4f8b4-0f6f-44c3-b90c-9fb4d0ad0b23",
+      "claim_id": "C110",
+      "claim": "The ALSPAC cohort is largely representative of the UK population when compared with 1991 Census data.",
+      "claim_type": "EXPLICIT",
+      "source": "The ALSPAC cohort is largely representative of the UK population when compared with 1991 Census data",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about cohort representativeness",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:42:57.410702Z"
+    },
+    {
+      "id": "b11bfbd0-13d8-4547-a2c8-8cfde8c594a9",
+      "content_id": "88d4f8b4-0f6f-44c3-b90c-9fb4d0ad0b23",
+      "claim_id": "C111",
+      "claim": "There is under representation in ALSPAC of some ethnic minorities, single parent families, and those living in rented accommodation.",
+      "claim_type": "EXPLICIT",
+      "source": "there is under representation of some ethnic minorities, single parent families, and those living in rented accommodation (Boyd et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited information about cohort composition",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:42:57.410702Z"
+    },
+    {
+      "id": "e79e7082-517f-44e4-8146-71c001be2b9b",
+      "content_id": "88d4f8b4-0f6f-44c3-b90c-9fb4d0ad0b23",
+      "claim_id": "C112",
+      "claim": "Following listwise deletion of cases with missing data, the final analytical sample was 3,453.",
+      "claim_type": "EXPLICIT",
+      "source": "Following listwise deletion of cases with missing data our final analytical sample was 3,453.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about final sample size",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:42:57.410702Z"
+    },
+    {
+      "id": "61996df9-5537-4484-91dc-691d42c0062f",
+      "content_id": "88d4f8b4-0f6f-44c3-b90c-9fb4d0ad0b23",
+      "claim_id": "C113",
+      "claim": "ALSPAC children were genotyped using the Illumina HumanHap550 quad chip genotyping platforms.",
+      "claim_type": "EXPLICIT",
+      "source": "ALSPAC children were genotyped using the Illumina HumanHap550 quad chip genotyping platforms by 23andme subcontracting the Wellcome Trust Sanger Institute, Cambridge, UK and the Laboratory Corporation of America, Burlington, NC, US.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about genotyping methods",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:42:57.410702Z"
+    },
+    {
+      "id": "9ce0312b-a722-46f9-be5c-41976fa70a05",
+      "content_id": "88d4f8b4-0f6f-44c3-b90c-9fb4d0ad0b23",
+      "claim_id": "C114",
+      "claim": "9115 ALSPAC participants and 500,527 SNPs passed quality control filters.",
+      "claim_type": "EXPLICIT",
+      "source": "9115 participants and 500,527 SNPs passed these quality control filters.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about data after quality control",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:42:57.410702Z"
+    },
+    {
+      "id": "896e39df-c15a-41c6-a3a4-7c0833a2d0eb",
+      "content_id": "88d4f8b4-0f6f-44c3-b90c-9fb4d0ad0b23",
+      "claim_id": "C115",
+      "claim": "ALSPAC mothers were genotyped using the Illumina human660W-quad array at Centre National de G\u00e9notypage (CNG).",
+      "claim_type": "EXPLICIT",
+      "source": "ALSPAC mothers were genotyped using the Illumina human660W-quad array at Centre National de G\u00e9notypage (CNG) and genotypes were called with Illumina GenomeStudio.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about genotyping methods",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:42:57.410702Z"
+    },
+    {
+      "id": "bd8ebc78-c561-4923-ab15-65ce8d184045",
+      "content_id": "88d4f8b4-0f6f-44c3-b90c-9fb4d0ad0b23",
+      "claim_id": "C116",
+      "claim": "9048 ALSPAC mother participants and 526,688 SNPs passed quality control filters.",
+      "claim_type": "EXPLICIT",
+      "source": "9048 participants and 526,688 SNPs passed these quality control filters.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about data after quality control",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:42:57.410702Z"
+    },
+    {
+      "id": "40b77ec4-06df-4fa2-aee2-895d8770c4cb",
+      "content_id": "88d4f8b4-0f6f-44c3-b90c-9fb4d0ad0b23",
+      "claim_id": "C117",
+      "claim": "The phased haplotypes were imputed to the Haplotype Reference Consortium (HRCr1.1, 2016) panel of approximately 31,000 phased whole genomes.",
+      "claim_type": "EXPLICIT",
+      "source": "The phased haplotypes were then imputed to the Haplotype Reference Consortium (HRCr1.1, 2016) panel of approximately 31,000 phased whole genomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about imputation methods",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:42:57.410702Z"
+    },
+    {
+      "id": "ed0b17d6-f2bc-4154-9e1f-083a9506abe1",
+      "content_id": "88d4f8b4-0f6f-44c3-b90c-9fb4d0ad0b23",
+      "claim_id": "C118",
+      "claim": "The study used average fine graded point scores at four major Key Stages of education in the UK: Key Stage 1 (age 7), Key Stage 2 (age 11), Key Stage 3 (age 14), and Key Stage 4 (age 16).",
+      "claim_type": "EXPLICIT",
+      "source": "We use average fine graded point scores at four major Key Stages of education in the UK. These are Key Stage 1 (age 7), Key Stage 2 (age 11), Key Stage 3 (age 14), and Key Stage 4 (age 16).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about outcome measures",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:42:57.410702Z"
+    },
+    {
+      "id": "e8bf96ac-3717-459d-9d52-9ccaf7cb4647",
+      "content_id": "88d4f8b4-0f6f-44c3-b90c-9fb4d0ad0b23",
+      "claim_id": "C119",
+      "claim": "Educational achievement scores were obtained through data linkage to the UK National Pupil Database (NPD).",
+      "claim_type": "EXPLICIT",
+      "source": "Scores were obtained through data linkage to the UK National Pupil Database (NPD), which represents the most accurate record of individual educational achievement available in the UK.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about data source",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:42:57.410702Z"
+    },
+    {
+      "id": "b99539e3-3845-4359-955f-a10d19b22ad0",
+      "content_id": "88d4f8b4-0f6f-44c3-b90c-9fb4d0ad0b23",
+      "claim_id": "C120",
+      "claim": "Two educational attainment polygenic scores were generated using the software package PRSice based upon SNPs identified in the largest GWAS of education to date.",
+      "claim_type": "EXPLICIT",
+      "source": "Two educational attainment polygenic scores were generated using the software package PRSice (Euesden et al., 2015) based upon the list of SNPs identified to associate with years of education in the largest GWAS of education to date (Lee et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about polygenic score construction methods",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:42:57.410702Z"
+    },
+    {
+      "id": "b7cf0531-08ad-4730-b0f7-33274e0b5226",
+      "content_id": "88d4f8b4-0f6f-44c3-b90c-9fb4d0ad0b23",
+      "claim_id": "C121",
+      "claim": "The polygenic scores were generated using GWAS results which had removed ALSPAC and 23andMe participants from the meta-analysis (n=763,468).",
+      "claim_type": "EXPLICIT",
+      "source": "The polygenic scores were generated using GWAS results which had removed ALSPAC and 23andMe participants from the meta-analysis (n=763,468), and as such are not perfectly comparable to those reported in the published meta-analysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about GWAS sample used for score construction",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:42:57.410702Z"
+    },
+    {
+      "id": "3c7db3d8-35f8-4df9-9374-8d3ec474c326",
+      "content_id": "88d4f8b4-0f6f-44c3-b90c-9fb4d0ad0b23",
+      "claim_id": "C122",
+      "claim": "The first polygenic score (GWAS sig PGS) was created from the 1,271 independent SNPs that associated with years of education at genome-wide levels of significance (p<5\u00d710\u22128).",
+      "claim_type": "EXPLICIT",
+      "source": "The first polygenic score (GWAS sig PGS) was created from the 1,271 independent SNPs that associated with years of education at genome-wide levels of significance (p<5\u00d710\u22128).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about polygenic score construction",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:42:57.410702Z"
+    },
+    {
+      "id": "fd1f3424-e4b5-4a3f-a70b-0fd49c4cd6a8",
+      "content_id": "88d4f8b4-0f6f-44c3-b90c-9fb4d0ad0b23",
+      "claim_id": "C123",
+      "claim": "The second polygenic score (all SNP PGS) was created from all genome-wide SNPs reported in the meta-analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "The second (all SNP PGS) was created from all genome-wide SNPs reported in the meta-analysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about polygenic score construction",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:42:57.410702Z"
+    },
+    {
+      "id": "c162a30e-3bbd-48ea-86fd-43715ae3d8c3",
+      "content_id": "88d4f8b4-0f6f-44c3-b90c-9fb4d0ad0b23",
+      "claim_id": "C124",
+      "claim": "Covariates selected include the study participants' sex and month of birth, and their status on Free School Meals (FSM), Special Education Needs (SEN), and English as a Foreign Language (EFL).",
+      "claim_type": "EXPLICIT",
+      "source": "We selected covariates that are easily available to schools in the UK. These include the study participants sex and month of birth, and their status on three pupil characteristics that are available to schools the NPD: eligibility for Free School Meals (FSM); Special Education Needs (SEN); and English as a Foreign Language (EFL).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about covariates used in analyses",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:42:57.410702Z"
+    },
+    {
+      "id": "a33a690c-f4ef-416b-b5e1-ed81e3adbf96",
+      "content_id": "88d4f8b4-0f6f-44c3-b90c-9fb4d0ad0b23",
+      "claim_id": "C125",
+      "claim": "FSM is a proxy for low income as only children from low income families are eligible.",
+      "claim_type": "EXPLICIT",
+      "source": "FSM is a proxy for low income as only children from low income families are eligible.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Explanation of covariate meaning",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:42:57.410702Z"
+    },
+    {
+      "id": "7c9ce895-7437-45d1-a1b4-71c994f236f6",
+      "content_id": "88d4f8b4-0f6f-44c3-b90c-9fb4d0ad0b23",
+      "claim_id": "C126",
+      "claim": "Bootstrapping with 1000 replications was used to estimate confidence intervals for R2 values.",
+      "claim_type": "EXPLICIT",
+      "source": "Bootstrapping with 1000 replications was used to estimate confidence intervals for R2 values.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about statistical methods",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:42:57.410702Z"
+    },
+    {
+      "id": "40ea7119-4127-407a-a18a-602e54eefda8",
+      "content_id": "88d4f8b4-0f6f-44c3-b90c-9fb4d0ad0b23",
+      "claim_id": "C127",
+      "claim": "Receiver Operating Characteristic (ROC) curves were used to visually compare models and to calculate the Area Under the Curve (AUC).",
+      "claim_type": "EXPLICIT",
+      "source": "Receiver Operating Characteristic (ROC) curves were used to visually compare models and to calculate the Area Under the Curve (AUC).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about statistical methods",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:42:57.410702Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "ac6902ce-4135-456d-a1fc-0c0d680c77fe",
+      "content_id": "88d4f8b4-0f6f-44c3-b90c-9fb4d0ad0b23",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Large-scale GWAS studies have identified hundreds of SNPs associated with educational attainment. While individual SNPs have very small effects (median 1.7 weeks of schooling), polygenic scores combining all SNPs explain up to 13% of variance in years of education and 9.2% in educational achievement (GPA).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C5 accurately report findings from published GWAS studies (Lee et al., 2018) with appropriate citations. The claims correctly distinguish between individual SNP effects and combined polygenic score performance, providing specific quantitative estimates with proper context.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:42:57.410702Z"
+    },
+    {
+      "id": "98310a9b-2739-4f51-99f2-cb2c9739db44",
+      "content_id": "88d4f8b4-0f6f-44c3-b90c-9fb4d0ad0b23",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "At age 7, polygenic scores showed positive correlations with educational achievement and explained additional variance beyond age and sex alone. However, pupil characteristics (FSM, SEN, EFL status) outperformed polygenic scores, with combined models explaining up to 26.3% of variance when including parental social background. The incremental R\u00b2 of polygenic scores over pupil characteristics was modest (1.8-4.8%).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C29 present consistent findings from regression analyses with appropriate confidence intervals. The hierarchical modeling approach properly quantifies incremental variance explained, and the results are supported by data shown in Figure 1 and Table 1.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:42:57.410702Z"
+    },
+    {
+      "id": "a90f9e84-ba2e-4f38-927c-14d24daf8c0d",
+      "content_id": "88d4f8b4-0f6f-44c3-b90c-9fb4d0ad0b23",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "At age 16, polygenic scores explained 3.4-12.9% additional variance beyond age and sex. However, parental education and socioeconomic position provided greater explanatory power (19-21.4% additional variance). Most importantly, prior achievement at age 14 explained 65.1% of variance, and conditional on prior achievement, polygenic scores provided virtually no additional predictive power.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30-C33 are well-supported by regression analyses with confidence intervals reported. The key finding that prior achievement dominates prediction is clearly demonstrated in Figure 2, showing polygenic scores add minimal incremental variance when prior achievement is available.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:42:57.410702Z"
+    },
+    {
+      "id": "9489fc0c-a67b-49f4-9cd2-ea32ae7cbe08",
+      "content_id": "88d4f8b4-0f6f-44c3-b90c-9fb4d0ad0b23",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Distribution analyses revealed near-complete overlap in polygenic scores between high achievers (top 10%) and other pupils, suggesting high misclassification rates. In contrast, prior achievement distributions showed much less overlap between groups. Visual inspection of predictions confirmed substantial misclassification from polygenic scores, similar to parental socioeconomic measures but worse than prior attainment.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C39 are supported by distribution plots in Figures 3-4 and supplements. The visual evidence clearly demonstrates the overlap issue, and the inference about misclassification logically follows from the observed distributions. The comparison across predictors is appropriately documented.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:42:57.410702Z"
+    },
+    {
+      "id": "4176c649-b9f6-46a7-be2f-0f1d22abb9b4",
+      "content_id": "88d4f8b4-0f6f-44c3-b90c-9fb4d0ad0b23",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "ROC curve analysis for age 7 achievement showed polygenic scores had lower discriminatory ability (AUC: 0.63-0.68) compared to parental socioeconomic measures (AUC: 0.70). The sensitivity-specificity trade-off was poor across all measures, requiring near-universal classification to capture most high achievers. Results were consistent across different achievement cut-offs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40-C43 are supported by ROC analyses in Figure 5 with specific AUC values reported. The interpretation of poor sensitivity-specificity trade-offs is appropriate given the ROC curves. Sensitivity analyses (Figure 5 supplement 1) confirm robustness to definition of high achievers.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:42:57.410702Z"
+    },
+    {
+      "id": "95a564b5-9dd7-488d-b21c-8dc7bca5690a",
+      "content_id": "88d4f8b4-0f6f-44c3-b90c-9fb4d0ad0b23",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "At age 16, prior achievement measures provided far superior discrimination (AUC: 0.83-0.95) compared to polygenic scores (AUC: 0.61-0.70). After accounting for phenotypic information available to schools, polygenic scores provided almost no discriminatory ability (AUC: 0.51-0.56). Results were consistent when using earlier prior achievement measures.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44-C48 are well-supported by ROC analyses in Figure 6 and supplements. The residualization analysis (Figure 6c) appropriately tests incremental value, and the near-chance AUC values (0.51-0.56) clearly demonstrate lack of added predictive utility beyond available phenotypic data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:42:57.410702Z"
+    },
+    {
+      "id": "a2460bf2-1d54-42d6-b928-3f08841d812c",
+      "content_id": "88d4f8b4-0f6f-44c3-b90c-9fb4d0ad0b23",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Practical classification analysis showed that selecting students by top 10% polygenic scores would only capture 24% of actual top achievers (76% false positives), while using age 11 phenotypic measures would capture 51%. This demonstrates that polygenic scores cannot identify high achievers more accurately than available phenotypic measures, despite group-level associations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49-C52 provide concrete quantification of classification accuracy that follows logically from the ROC analyses. The specific percentages illustrate the practical implications of the poor discriminatory ability, making the abstract AUC values interpretable for educational policy.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:42:57.410702Z"
+    },
+    {
+      "id": "8fbd9955-ed00-493e-8206-f149be9a5900",
+      "content_id": "88d4f8b4-0f6f-44c3-b90c-9fb4d0ad0b23",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Summary of main findings: Polygenic scores explained 3.4-12.9% variance in achievement (higher than original GWAS), but prior achievement was the strongest predictor. Conditional on prior achievement, polygenic scores added minimal predictive power. Parental socioeconomic factors outperformed polygenic scores. Genetic data provided little incremental information over readily available phenotypic data, except when prior achievement is unavailable.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53-C59 accurately summarize the study's main findings, appropriately synthesizing results from multiple analyses. The comparison to original GWAS (C54) is valid, and the conditional conclusions (C56-C57) correctly reflect the hierarchical modeling results. The overall inference is well-supported by the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:42:57.410702Z"
+    },
+    {
+      "id": "92237b2b-76fa-4793-9d0c-e3e0c1e85928",
+      "content_id": "88d4f8b4-0f6f-44c3-b90c-9fb4d0ad0b23",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The authors propose that lack of incremental genetic prediction may be because prior achievement mediates genetic effects. They note theoretical work suggesting 75% genetic variance explanation may be needed for individual prediction, and that their scores (from >1 million person GWAS) would require much larger samples to improve. However, even improved variance explanation may not provide useful returns for personalized interventions if genetic effects are phenotypically expressed.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C61-C69 are largely speculative (C61, C64, C66) or cite theoretical work (C63). While the mediation hypothesis (C61-C62) is plausible, it is not directly tested. The logical reasoning about requirements for actionable prediction (C67-C69) is sound, but these remain theoretical considerations rather than empirically demonstrated findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:42:57.410702Z"
+    },
+    {
+      "id": "f0d3f312-8def-4729-b03e-5f16d1b75d59",
+      "content_id": "88d4f8b4-0f6f-44c3-b90c-9fb4d0ad0b23",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Individual-level predictions from polygenic scores and parental background were imprecise due to stochastic factors important at individual but not group level. While high polygenic scores associated with higher achievement on average, genetics did not determine outcomes. Achievement results from combinations of genetic factors, environmental factors (social background, teacher bias, school quality), and chance.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C70-C76 appropriately interpret the study's findings in context of broader understanding of educational achievement. The distinction between group and individual prediction (C71) is well-established, and the multifactorial nature of achievement (C73) is supported by cited literature. The inference about non-determinism (C72) follows from the distribution overlap data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:42:57.410702Z"
+    },
+    {
+      "id": "14ac9771-6911-4786-be30-e6a08a10d0be",
+      "content_id": "88d4f8b4-0f6f-44c3-b90c-9fb4d0ad0b23",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The authors conclude that while genetic personalization may work in medicine for some diseases, polygenic scores offer limited value for educational prediction beyond phenotypic data. However, genetic data remain useful for research on group-level differences, including teacher/school effectiveness, selection differences, social mobility, and Mendelian randomization studies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C77-C84 appropriately contextualize findings and distinguish between individual prediction (not supported) and group-level research applications (supported by citations). The contrast with medical genetics (C77) is reasonable, and the cited examples of appropriate uses (C80-C83) demonstrate the authors understand the value of genetic data for different purposes.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:42:57.410702Z"
+    },
+    {
+      "id": "5551b734-13a4-4cb0-88a3-80b0d4a04e1e",
+      "content_id": "88d4f8b4-0f6f-44c3-b90c-9fb4d0ad0b23",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Genetic studies focus heavily on European ancestry samples, and polygenic scores from these studies perform poorly in other ancestry groups. System-wide application could therefore lead to systematic prediction errors and inequalities in schooling.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C88-C90 correctly identify a major limitation of current polygenic scores with appropriate citations. The inference about potential inequalities (C90) logically follows from poor cross-ancestry performance (C89). This is an important consideration for policy applications.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:42:57.410702Z"
+    },
+    {
+      "id": "a2cf678c-1bc8-45f7-ac6c-687b7b958945",
+      "content_id": "88d4f8b4-0f6f-44c3-b90c-9fb4d0ad0b23",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Study limitations include: ALSPAC is not fully representative of UK population; polygenic scores were based on years of education (a more social measure) rather than exam scores, which may capture parental social position; alternative GWAS on test score changes might perform differently if genetic factors affect educational progress.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C91-C95 appropriately acknowledge study limitations. The representativeness issue (C91) is documented, the distinction between education measures (C92-C93) is valid, and the speculation about alternative approaches (C95) is reasonable. These limitations are important for interpreting generalizability.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:42:57.410702Z"
+    },
+    {
+      "id": "cac2042f-c0f2-4130-b090-f8b60b8c2dd3",
+      "content_id": "88d4f8b4-0f6f-44c3-b90c-9fb4d0ad0b23",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Additional limitations: Current polygenic scores explain ~13% variance, and while future GWAS may improve this, heritability of educational attainment (~40%) fundamentally limits genetic prediction. Confounding biases (population stratification, assortative mating, dynastic effects) may inflate associations, masking social differences as genetic differences. Family data are needed to investigate these biases.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C96-C101 identify important methodological limitations with appropriate citations. The heritability constraint (C97-C98) is well-established, and the discussion of confounding biases (C99-C100) reflects current understanding in the field. The need for family data (C101) is a recognized methodological requirement.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:42:57.410702Z"
+    },
+    {
+      "id": "cbf384a8-b94a-41f3-aa83-c115d967fd32",
+      "content_id": "88d4f8b4-0f6f-44c3-b90c-9fb4d0ad0b23",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Main conclusions: Currently available genetic scores are unlikely to provide more accurate predictions than easily measured phenotypes. Genetic data provide little additional information over readily available phenotypic data except when prior achievement is unavailable. The greatest value lies in research on etiology of group differences and sociogenomic analyses of inequalities.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C102-C105 appropriately summarize the study's main conclusions, which are well-supported by the comprehensive analyses presented. The distinction between individual prediction utility (limited) and research value (substantial) is clearly demonstrated throughout the results.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:42:57.410702Z"
+    },
+    {
+      "id": "b938dacc-bb2b-41ee-8886-69f4ffeb89a3",
+      "content_id": "88d4f8b4-0f6f-44c3-b90c-9fb4d0ad0b23",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Study sample consisted of children from ALSPAC cohort (14,541 initial pregnancies, 15,454 total, 14,901 alive at 1 year). After quality control, 7,988 had genetic data, and final analytical sample was 3,453 after listwise deletion. ALSPAC is largely representative of UK population but underrepresents some ethnic minorities, single parents, and renters.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C106-C112 accurately describe the study sample with specific numbers documented. The representativeness assessment (C110-C111) is appropriately qualified with citation. The substantial reduction from 7,988 to 3,453 due to missing data is clearly stated but raises questions about potential selection bias not fully addressed.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:42:57.410702Z"
+    },
+    {
+      "id": "b582d497-0ef5-44d2-8903-30ac49105f8a",
+      "content_id": "88d4f8b4-0f6f-44c3-b90c-9fb4d0ad0b23",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Genetic data were generated using Illumina HumanHap550 for children (9,115 participants, 500,527 SNPs passed QC) and Illumina human660W-quad for mothers (9,048 participants, 526,688 SNPs passed QC). Phased haplotypes were imputed to HRC reference panel (~31,000 phased genomes).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C113-C117 provide standard descriptions of genotyping and imputation procedures with specific platforms, sample sizes, and reference panels documented. These methods are appropriate and well-established for this type of genetic study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:42:57.410702Z"
+    },
+    {
+      "id": "3e40a377-b15d-4adb-b449-e1d71d4971b6",
+      "content_id": "88d4f8b4-0f6f-44c3-b90c-9fb4d0ad0b23",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Educational achievement measured using fine-graded point scores from UK National Pupil Database at ages 7, 11, 14, and 16. Two polygenic scores were generated using PRSice: GWAS sig PGS (1,271 genome-wide significant SNPs) and all SNP PGS (all genome-wide SNPs), based on Lee et al. 2018 GWAS with ALSPAC/23andMe removed (n=763,468).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C118-C123 clearly describe outcome measures and polygenic score construction. The use of NPD data is appropriate, and the exclusion of ALSPAC/23andMe from the GWAS (C121) properly avoids sample overlap. The two-score approach (genome-wide significant vs. all SNPs) is standard practice.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:42:57.410702Z"
+    },
+    {
+      "id": "79910685-a17d-46f3-b671-47d1f93e1931",
+      "content_id": "88d4f8b4-0f6f-44c3-b90c-9fb4d0ad0b23",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "Covariates included sex, month of birth, and pupil characteristics available to schools (FSM, SEN, EFL status), plus parental education and socioeconomic position (CAMSIS). Statistical methods included regression with bootstrapped confidence intervals (1000 replications) for R\u00b2 and ROC curve analysis for discrimination.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C124-C127 describe appropriate covariate selection and statistical methods. The choice of readily available school data is well-justified for the research question. Bootstrapping for confidence intervals and ROC analysis are appropriate methods for the analyses conducted.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:42:57.410702Z"
+    },
+    {
+      "id": "44ab6301-29ee-4d6e-b2d3-d634d9f04945",
+      "content_id": "88d4f8b4-0f6f-44c3-b90c-9fb4d0ad0b23",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "Background on policy context: Polygenic scores have been promoted for genetically informed policy and personalized applications (medicine, education, dating). Personalized learning was adopted in England in 2004 but was not mandated and inconsistently implemented. Currently no policies rely on educational prediction, but calls are increasing for genetic data to personalize education.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6-C11 provide appropriate policy context with citations. These claims accurately characterize the landscape of proposals for genetic applications in education and the history of personalized learning policy, setting up the motivation for the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:42:57.410702Z"
+    },
+    {
+      "id": "df26c6e7-14af-4aee-9922-9aea6d23941a",
+      "content_id": "88d4f8b4-0f6f-44c3-b90c-9fb4d0ad0b23",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "Background on polygenic scores and prediction: Education polygenic scores associate with many environmental factors (gene-environment correlation). Theoretical work shows polygenic scores are more predictive when heritability is higher and (for binary outcomes) prevalence is higher. Phenotypic measures (sex, birth month, prior achievement, parental education/SES) predict achievement, but few studies have examined polygenic prediction conditional on readily available phenotypes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C12-C20 provide appropriate scientific background with citations. The discussion of gene-environment correlation (C12-C14) and theoretical prediction limits (C16-C17) is accurate. The identification of the research gap (C20) appropriately motivates the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:42:57.410702Z"
+    },
+    {
+      "id": "be46a906-0cb3-4c56-8eea-7ab4340f2b2d",
+      "content_id": "88d4f8b4-0f6f-44c3-b90c-9fb4d0ad0b23",
+      "result_id": "R22",
+      "result_category": "llm",
+      "result": "The findings are consistent with the only other comparable study (Lee et al., 2018), which found parental education explained more variance (18-21.3%) than polygenic scores (10.6-12.7%) in two US samples.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C60 appropriately contextualizes findings with the only comparable prior study. The consistency across studies strengthens confidence in the results, though the limited number of comparable studies is notable.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:42:57.410702Z"
+    },
+    {
+      "id": "011e0dfc-e7f9-4925-a5cb-62ae13af9ce7",
+      "content_id": "88d4f8b4-0f6f-44c3-b90c-9fb4d0ad0b23",
+      "result_id": "R23",
+      "result_category": "llm",
+      "result": "Teachers have access to wide-ranging non-genetic information from daily interactions (student responses, life events, physical/mental health) used to inform teaching. To the extent this captures genotypic information through phenotypic expression, it is unclear what novel information genotype would offer.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C85-C87 make a logical argument about the redundancy of genetic information when phenotype is already observed. This reasoning is sound and supported by the empirical finding that polygenic scores add little beyond phenotypic measures. However, this assumes complete phenotypic expression, which may not always hold.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:42:57.410702Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "de152795-93ed-4b90-8bbb-e46dd255854f",
+      "result_id": "ac6902ce-4135-456d-a1fc-0c0d680c77fe"
+    },
+    {
+      "claim_id": "fbafa78c-74bc-42d8-a4e8-b0fc8a570026",
+      "result_id": "ac6902ce-4135-456d-a1fc-0c0d680c77fe"
+    },
+    {
+      "claim_id": "69546e17-3b4d-4404-bab5-839d0f38f8c5",
+      "result_id": "ac6902ce-4135-456d-a1fc-0c0d680c77fe"
+    },
+    {
+      "claim_id": "703620a2-7666-492a-94ad-6041e5573d53",
+      "result_id": "ac6902ce-4135-456d-a1fc-0c0d680c77fe"
+    },
+    {
+      "claim_id": "1da077d3-b1a9-4217-9e8b-be587bca8385",
+      "result_id": "ac6902ce-4135-456d-a1fc-0c0d680c77fe"
+    },
+    {
+      "claim_id": "3454c088-51fe-4569-9677-1dcc1ca9285f",
+      "result_id": "98310a9b-2739-4f51-99f2-cb2c9739db44"
+    },
+    {
+      "claim_id": "bd242ee8-5160-41a5-a20a-9f9b586edd36",
+      "result_id": "98310a9b-2739-4f51-99f2-cb2c9739db44"
+    },
+    {
+      "claim_id": "018794b3-b086-431c-b518-565b149528b3",
+      "result_id": "98310a9b-2739-4f51-99f2-cb2c9739db44"
+    },
+    {
+      "claim_id": "d26491e2-42ee-4647-9b6d-2559bd5fae87",
+      "result_id": "98310a9b-2739-4f51-99f2-cb2c9739db44"
+    },
+    {
+      "claim_id": "66c29446-38df-4169-b9f3-eca03d069bf0",
+      "result_id": "98310a9b-2739-4f51-99f2-cb2c9739db44"
+    },
+    {
+      "claim_id": "80212c1d-6114-422c-aa87-6c4bfa4b55d1",
+      "result_id": "98310a9b-2739-4f51-99f2-cb2c9739db44"
+    },
+    {
+      "claim_id": "253de1c5-d609-47cc-8cb6-145493386bda",
+      "result_id": "98310a9b-2739-4f51-99f2-cb2c9739db44"
+    },
+    {
+      "claim_id": "bac165da-32ca-4e55-952e-a44aa266573d",
+      "result_id": "a90f9e84-ba2e-4f38-927c-14d24daf8c0d"
+    },
+    {
+      "claim_id": "1e1dde1f-d309-47a7-8333-8f468d214b0d",
+      "result_id": "a90f9e84-ba2e-4f38-927c-14d24daf8c0d"
+    },
+    {
+      "claim_id": "a2d6e420-c2d2-435c-b83a-5260581064e9",
+      "result_id": "a90f9e84-ba2e-4f38-927c-14d24daf8c0d"
+    },
+    {
+      "claim_id": "ffa3e8f0-5fd5-4edb-8ce5-049d398081fb",
+      "result_id": "a90f9e84-ba2e-4f38-927c-14d24daf8c0d"
+    },
+    {
+      "claim_id": "b01bdd10-5833-47c6-a661-7f069f3e5df7",
+      "result_id": "9489fc0c-a67b-49f4-9cd2-ea32ae7cbe08"
+    },
+    {
+      "claim_id": "cd363542-54af-4fc3-b3eb-d0588251112b",
+      "result_id": "9489fc0c-a67b-49f4-9cd2-ea32ae7cbe08"
+    },
+    {
+      "claim_id": "1b0e92b4-e868-4f62-b909-be45c2167eee",
+      "result_id": "9489fc0c-a67b-49f4-9cd2-ea32ae7cbe08"
+    },
+    {
+      "claim_id": "a9d3c993-55f7-4b1b-939f-9bbfc3452170",
+      "result_id": "9489fc0c-a67b-49f4-9cd2-ea32ae7cbe08"
+    },
+    {
+      "claim_id": "0f7ea500-0e2b-4c23-ba12-0e93e3111322",
+      "result_id": "9489fc0c-a67b-49f4-9cd2-ea32ae7cbe08"
+    },
+    {
+      "claim_id": "d6fd5e7d-38c6-4b42-8807-e8fa298771dc",
+      "result_id": "9489fc0c-a67b-49f4-9cd2-ea32ae7cbe08"
+    },
+    {
+      "claim_id": "7e68cd69-9ac2-44f6-b849-03ba1c026f4d",
+      "result_id": "4176c649-b9f6-46a7-be2f-0f1d22abb9b4"
+    },
+    {
+      "claim_id": "0e95f581-a877-40f4-8474-d22c73db601a",
+      "result_id": "4176c649-b9f6-46a7-be2f-0f1d22abb9b4"
+    },
+    {
+      "claim_id": "aa8a2252-5484-4aba-b2f4-a4933a2f4caa",
+      "result_id": "4176c649-b9f6-46a7-be2f-0f1d22abb9b4"
+    },
+    {
+      "claim_id": "0a6da503-d2ab-4e8f-a2b2-6c3e6a40e53e",
+      "result_id": "4176c649-b9f6-46a7-be2f-0f1d22abb9b4"
+    },
+    {
+      "claim_id": "16684044-7166-4315-b7a3-120a9a626615",
+      "result_id": "95a564b5-9dd7-488d-b21c-8dc7bca5690a"
+    },
+    {
+      "claim_id": "62dcb527-4c4f-403b-a506-31a0357e265d",
+      "result_id": "95a564b5-9dd7-488d-b21c-8dc7bca5690a"
+    },
+    {
+      "claim_id": "e97a366f-d86f-426d-aa21-3f86c1337373",
+      "result_id": "95a564b5-9dd7-488d-b21c-8dc7bca5690a"
+    },
+    {
+      "claim_id": "d207f7e6-ffc0-4105-a476-966c51c0712b",
+      "result_id": "95a564b5-9dd7-488d-b21c-8dc7bca5690a"
+    },
+    {
+      "claim_id": "866d51a5-3ce7-46b3-998e-b3c1c10eae75",
+      "result_id": "95a564b5-9dd7-488d-b21c-8dc7bca5690a"
+    },
+    {
+      "claim_id": "60ea262c-4d4e-4dbd-b3f8-69309f6fed02",
+      "result_id": "a2460bf2-1d54-42d6-b928-3f08841d812c"
+    },
+    {
+      "claim_id": "ba4dfa41-18c3-4d84-a39c-83d43a5b7799",
+      "result_id": "a2460bf2-1d54-42d6-b928-3f08841d812c"
+    },
+    {
+      "claim_id": "2dd2a18b-3ab7-4188-8ee9-9b54e830180c",
+      "result_id": "a2460bf2-1d54-42d6-b928-3f08841d812c"
+    },
+    {
+      "claim_id": "e4c2d207-adab-4ab5-a3c9-5723b12b5624",
+      "result_id": "a2460bf2-1d54-42d6-b928-3f08841d812c"
+    },
+    {
+      "claim_id": "2cd090c0-bb34-4af7-9c38-df6f4b6e3336",
+      "result_id": "8fbd9955-ed00-493e-8206-f149be9a5900"
+    },
+    {
+      "claim_id": "85a7390d-6ff6-414c-a48c-5b880c725379",
+      "result_id": "8fbd9955-ed00-493e-8206-f149be9a5900"
+    },
+    {
+      "claim_id": "b1d5d0b0-a62d-4ad7-b80b-55ce9fddc58f",
+      "result_id": "8fbd9955-ed00-493e-8206-f149be9a5900"
+    },
+    {
+      "claim_id": "c1542554-d112-4a10-b8d5-0c3901c78b49",
+      "result_id": "8fbd9955-ed00-493e-8206-f149be9a5900"
+    },
+    {
+      "claim_id": "b813aeb4-e20c-43ec-befb-4168c6872060",
+      "result_id": "8fbd9955-ed00-493e-8206-f149be9a5900"
+    },
+    {
+      "claim_id": "4c4cad0a-6fcc-44ab-9319-a4fd8a064678",
+      "result_id": "8fbd9955-ed00-493e-8206-f149be9a5900"
+    },
+    {
+      "claim_id": "63a44587-f2e6-4437-b703-9f3df684f69f",
+      "result_id": "8fbd9955-ed00-493e-8206-f149be9a5900"
+    },
+    {
+      "claim_id": "735e5cb7-8f01-443d-81e9-2305a1d13c4e",
+      "result_id": "92237b2b-76fa-4793-9d0c-e3e0c1e85928"
+    },
+    {
+      "claim_id": "e87520e3-bc14-4528-8b52-88d3da46c3dc",
+      "result_id": "92237b2b-76fa-4793-9d0c-e3e0c1e85928"
+    },
+    {
+      "claim_id": "7a3887d4-c45b-4224-b09d-854134a7bf4b",
+      "result_id": "92237b2b-76fa-4793-9d0c-e3e0c1e85928"
+    },
+    {
+      "claim_id": "ba8ec096-1f5b-43d9-a7c2-bfcf91cef7d2",
+      "result_id": "92237b2b-76fa-4793-9d0c-e3e0c1e85928"
+    },
+    {
+      "claim_id": "458dc44f-c074-4dbb-a8ee-5bca2a4ddfbf",
+      "result_id": "92237b2b-76fa-4793-9d0c-e3e0c1e85928"
+    },
+    {
+      "claim_id": "c3e8e887-1719-4701-8bbf-c9b0af4f69dc",
+      "result_id": "92237b2b-76fa-4793-9d0c-e3e0c1e85928"
+    },
+    {
+      "claim_id": "0e6449ea-386e-4f15-bcb0-740f786f3864",
+      "result_id": "92237b2b-76fa-4793-9d0c-e3e0c1e85928"
+    },
+    {
+      "claim_id": "e5f75b12-adeb-49bf-8a22-e72304e74b4f",
+      "result_id": "92237b2b-76fa-4793-9d0c-e3e0c1e85928"
+    },
+    {
+      "claim_id": "3ac95bb5-8085-4968-b340-091a36cbbbd5",
+      "result_id": "92237b2b-76fa-4793-9d0c-e3e0c1e85928"
+    },
+    {
+      "claim_id": "e15dd72d-e7dd-49ae-99da-bbb82ab391b7",
+      "result_id": "f0d3f312-8def-4729-b03e-5f16d1b75d59"
+    },
+    {
+      "claim_id": "0b355dfa-ffc5-436b-bea6-bdb9de378864",
+      "result_id": "f0d3f312-8def-4729-b03e-5f16d1b75d59"
+    },
+    {
+      "claim_id": "b37c66f3-5a72-418a-9246-a20087a675f2",
+      "result_id": "f0d3f312-8def-4729-b03e-5f16d1b75d59"
+    },
+    {
+      "claim_id": "265c2a1d-f928-4dd9-aeba-e3a2065a231e",
+      "result_id": "f0d3f312-8def-4729-b03e-5f16d1b75d59"
+    },
+    {
+      "claim_id": "cdf15a0e-65f8-4965-bb13-f124c99ab6cf",
+      "result_id": "f0d3f312-8def-4729-b03e-5f16d1b75d59"
+    },
+    {
+      "claim_id": "e65f10e6-99eb-475c-be47-12169bf467c9",
+      "result_id": "f0d3f312-8def-4729-b03e-5f16d1b75d59"
+    },
+    {
+      "claim_id": "a702a7dc-9a52-43bb-866a-d5359795c170",
+      "result_id": "f0d3f312-8def-4729-b03e-5f16d1b75d59"
+    },
+    {
+      "claim_id": "9dcf85fa-f64a-427f-8af8-855cb17894b1",
+      "result_id": "14ac9771-6911-4786-be30-e6a08a10d0be"
+    },
+    {
+      "claim_id": "b20b9f63-3f06-49bb-be50-6af7746f9381",
+      "result_id": "14ac9771-6911-4786-be30-e6a08a10d0be"
+    },
+    {
+      "claim_id": "423aa24f-3609-4779-a013-9db0fdb52442",
+      "result_id": "14ac9771-6911-4786-be30-e6a08a10d0be"
+    },
+    {
+      "claim_id": "bb244366-7c30-4753-ba06-d7e33635d3fa",
+      "result_id": "14ac9771-6911-4786-be30-e6a08a10d0be"
+    },
+    {
+      "claim_id": "d5229994-3a0e-4280-8f5c-a9a5525689a2",
+      "result_id": "14ac9771-6911-4786-be30-e6a08a10d0be"
+    },
+    {
+      "claim_id": "51c37333-1d25-4fce-a6bb-8d3aa3ebac64",
+      "result_id": "14ac9771-6911-4786-be30-e6a08a10d0be"
+    },
+    {
+      "claim_id": "15791dfa-ed00-4c60-9bbf-2e3ae3e3ae1f",
+      "result_id": "14ac9771-6911-4786-be30-e6a08a10d0be"
+    },
+    {
+      "claim_id": "a2b67394-f5e9-4c26-9be2-e18c7d96c500",
+      "result_id": "14ac9771-6911-4786-be30-e6a08a10d0be"
+    },
+    {
+      "claim_id": "a8389a28-1ac9-4e4f-a216-2e219cca69c0",
+      "result_id": "5551b734-13a4-4cb0-88a3-80b0d4a04e1e"
+    },
+    {
+      "claim_id": "6b9715a8-bdcc-4105-802f-1d6e71c0a690",
+      "result_id": "5551b734-13a4-4cb0-88a3-80b0d4a04e1e"
+    },
+    {
+      "claim_id": "488eba60-5bd0-46cc-bdb7-f1fc353e11e5",
+      "result_id": "5551b734-13a4-4cb0-88a3-80b0d4a04e1e"
+    },
+    {
+      "claim_id": "f1b88e2b-504f-4e75-8a17-3259b190ca81",
+      "result_id": "a2cf678c-1bc8-45f7-ac6c-687b7b958945"
+    },
+    {
+      "claim_id": "c30bf330-507c-4741-8fa0-eb7f796725f6",
+      "result_id": "a2cf678c-1bc8-45f7-ac6c-687b7b958945"
+    },
+    {
+      "claim_id": "18a0bf02-d5df-4463-86b5-609420dd7ca2",
+      "result_id": "a2cf678c-1bc8-45f7-ac6c-687b7b958945"
+    },
+    {
+      "claim_id": "028f2081-c0d2-40fb-a7e8-b77a28115471",
+      "result_id": "a2cf678c-1bc8-45f7-ac6c-687b7b958945"
+    },
+    {
+      "claim_id": "0ab516ea-e205-4d95-b37d-3f9c557b8ac4",
+      "result_id": "a2cf678c-1bc8-45f7-ac6c-687b7b958945"
+    },
+    {
+      "claim_id": "62590341-2457-4aff-b05f-c6194ae8ea17",
+      "result_id": "cac2042f-c0f2-4130-b090-f8b60b8c2dd3"
+    },
+    {
+      "claim_id": "2787e11d-c0a3-483b-8b55-a6df5fdec55e",
+      "result_id": "cac2042f-c0f2-4130-b090-f8b60b8c2dd3"
+    },
+    {
+      "claim_id": "ebf7a23b-56a5-4102-aec6-8d4e60261916",
+      "result_id": "cac2042f-c0f2-4130-b090-f8b60b8c2dd3"
+    },
+    {
+      "claim_id": "9c1d1827-b55b-4f9d-8ba9-13becbabb889",
+      "result_id": "cac2042f-c0f2-4130-b090-f8b60b8c2dd3"
+    },
+    {
+      "claim_id": "03b9ba97-5310-4556-bb95-0e82ef281e4f",
+      "result_id": "cac2042f-c0f2-4130-b090-f8b60b8c2dd3"
+    },
+    {
+      "claim_id": "b63122e0-7328-414b-bbc4-8972e1f582ae",
+      "result_id": "cac2042f-c0f2-4130-b090-f8b60b8c2dd3"
+    },
+    {
+      "claim_id": "10b6e94a-f25e-4543-b5e5-6c57eaba3982",
+      "result_id": "cbf384a8-b94a-41f3-aa83-c115d967fd32"
+    },
+    {
+      "claim_id": "8db19f92-3a13-45e8-8ea1-7cd2ffd2366b",
+      "result_id": "cbf384a8-b94a-41f3-aa83-c115d967fd32"
+    },
+    {
+      "claim_id": "03f146ca-4b90-481b-9800-f1632a0c0f18",
+      "result_id": "cbf384a8-b94a-41f3-aa83-c115d967fd32"
+    },
+    {
+      "claim_id": "a0b3038c-5843-46ef-ad97-7b0a06b72e43",
+      "result_id": "cbf384a8-b94a-41f3-aa83-c115d967fd32"
+    },
+    {
+      "claim_id": "32db3443-b763-48ec-95a7-e5c9d8660bb6",
+      "result_id": "b938dacc-bb2b-41ee-8886-69f4ffeb89a3"
+    },
+    {
+      "claim_id": "11195b09-3fd8-418e-bb8f-a218745acb75",
+      "result_id": "b938dacc-bb2b-41ee-8886-69f4ffeb89a3"
+    },
+    {
+      "claim_id": "b2cd3632-bad4-4d9e-85c2-88534d55771c",
+      "result_id": "b938dacc-bb2b-41ee-8886-69f4ffeb89a3"
+    },
+    {
+      "claim_id": "f0b47ed6-4f2f-4a57-b914-141a5065c1a5",
+      "result_id": "b938dacc-bb2b-41ee-8886-69f4ffeb89a3"
+    },
+    {
+      "claim_id": "f2330f69-c621-44d3-a3ca-cef28ee3777f",
+      "result_id": "b938dacc-bb2b-41ee-8886-69f4ffeb89a3"
+    },
+    {
+      "claim_id": "b11bfbd0-13d8-4547-a2c8-8cfde8c594a9",
+      "result_id": "b938dacc-bb2b-41ee-8886-69f4ffeb89a3"
+    },
+    {
+      "claim_id": "e79e7082-517f-44e4-8146-71c001be2b9b",
+      "result_id": "b938dacc-bb2b-41ee-8886-69f4ffeb89a3"
+    },
+    {
+      "claim_id": "61996df9-5537-4484-91dc-691d42c0062f",
+      "result_id": "b582d497-0ef5-44d2-8903-30ac49105f8a"
+    },
+    {
+      "claim_id": "9ce0312b-a722-46f9-be5c-41976fa70a05",
+      "result_id": "b582d497-0ef5-44d2-8903-30ac49105f8a"
+    },
+    {
+      "claim_id": "896e39df-c15a-41c6-a3a4-7c0833a2d0eb",
+      "result_id": "b582d497-0ef5-44d2-8903-30ac49105f8a"
+    },
+    {
+      "claim_id": "bd8ebc78-c561-4923-ab15-65ce8d184045",
+      "result_id": "b582d497-0ef5-44d2-8903-30ac49105f8a"
+    },
+    {
+      "claim_id": "40b77ec4-06df-4fa2-aee2-895d8770c4cb",
+      "result_id": "b582d497-0ef5-44d2-8903-30ac49105f8a"
+    },
+    {
+      "claim_id": "ed0b17d6-f2bc-4154-9e1f-083a9506abe1",
+      "result_id": "3e40a377-b15d-4adb-b449-e1d71d4971b6"
+    },
+    {
+      "claim_id": "e8bf96ac-3717-459d-9d52-9ccaf7cb4647",
+      "result_id": "3e40a377-b15d-4adb-b449-e1d71d4971b6"
+    },
+    {
+      "claim_id": "b99539e3-3845-4359-955f-a10d19b22ad0",
+      "result_id": "3e40a377-b15d-4adb-b449-e1d71d4971b6"
+    },
+    {
+      "claim_id": "b7cf0531-08ad-4730-b0f7-33274e0b5226",
+      "result_id": "3e40a377-b15d-4adb-b449-e1d71d4971b6"
+    },
+    {
+      "claim_id": "3c7db3d8-35f8-4df9-9374-8d3ec474c326",
+      "result_id": "3e40a377-b15d-4adb-b449-e1d71d4971b6"
+    },
+    {
+      "claim_id": "fd1f3424-e4b5-4a3f-a70b-0fd49c4cd6a8",
+      "result_id": "3e40a377-b15d-4adb-b449-e1d71d4971b6"
+    },
+    {
+      "claim_id": "c162a30e-3bbd-48ea-86fd-43715ae3d8c3",
+      "result_id": "79910685-a17d-46f3-b671-47d1f93e1931"
+    },
+    {
+      "claim_id": "a33a690c-f4ef-416b-b5e1-ed81e3adbf96",
+      "result_id": "79910685-a17d-46f3-b671-47d1f93e1931"
+    },
+    {
+      "claim_id": "7c9ce895-7437-45d1-a1b4-71c994f236f6",
+      "result_id": "79910685-a17d-46f3-b671-47d1f93e1931"
+    },
+    {
+      "claim_id": "40ea7119-4127-407a-a18a-602e54eefda8",
+      "result_id": "79910685-a17d-46f3-b671-47d1f93e1931"
+    },
+    {
+      "claim_id": "09940e22-0458-468d-842a-e152a5b29d97",
+      "result_id": "44ab6301-29ee-4d6e-b2d3-d634d9f04945"
+    },
+    {
+      "claim_id": "07cb5b69-6405-4590-8a58-c7ee1dd06242",
+      "result_id": "44ab6301-29ee-4d6e-b2d3-d634d9f04945"
+    },
+    {
+      "claim_id": "3d9c00a1-a36f-4d17-948b-0eea96d993b6",
+      "result_id": "44ab6301-29ee-4d6e-b2d3-d634d9f04945"
+    },
+    {
+      "claim_id": "605cea6d-3530-4bf3-b0b4-acfba8d78662",
+      "result_id": "44ab6301-29ee-4d6e-b2d3-d634d9f04945"
+    },
+    {
+      "claim_id": "8fde4af3-61d9-4716-b9fd-f1e3c0847cd2",
+      "result_id": "44ab6301-29ee-4d6e-b2d3-d634d9f04945"
+    },
+    {
+      "claim_id": "9588ec95-4af9-4c38-a291-c995ff2de60e",
+      "result_id": "44ab6301-29ee-4d6e-b2d3-d634d9f04945"
+    },
+    {
+      "claim_id": "4c99705f-1406-4f08-8eed-f5ff9eddb3b0",
+      "result_id": "df26c6e7-14af-4aee-9922-9aea6d23941a"
+    },
+    {
+      "claim_id": "d641c9da-93e9-4d25-bdbd-c05d8c4aa523",
+      "result_id": "df26c6e7-14af-4aee-9922-9aea6d23941a"
+    },
+    {
+      "claim_id": "bc910d3e-913d-4207-9c38-b907736ab2fe",
+      "result_id": "df26c6e7-14af-4aee-9922-9aea6d23941a"
+    },
+    {
+      "claim_id": "1f78e832-84f8-49ea-83b8-ce5cdc507ac6",
+      "result_id": "df26c6e7-14af-4aee-9922-9aea6d23941a"
+    },
+    {
+      "claim_id": "81967a47-5bb4-47e2-a278-638b2bb53f44",
+      "result_id": "df26c6e7-14af-4aee-9922-9aea6d23941a"
+    },
+    {
+      "claim_id": "2e6a3ecb-1be8-424c-b2ce-e599d9922f91",
+      "result_id": "df26c6e7-14af-4aee-9922-9aea6d23941a"
+    },
+    {
+      "claim_id": "4a38069f-334d-403b-9f10-e8032604f450",
+      "result_id": "df26c6e7-14af-4aee-9922-9aea6d23941a"
+    },
+    {
+      "claim_id": "cf948745-3b3e-405c-b092-d0984d4c3897",
+      "result_id": "df26c6e7-14af-4aee-9922-9aea6d23941a"
+    },
+    {
+      "claim_id": "ad887858-9b9d-426d-a41e-f78627f3a43d",
+      "result_id": "df26c6e7-14af-4aee-9922-9aea6d23941a"
+    },
+    {
+      "claim_id": "97148d3e-b85b-493e-99a6-ee0d4e01c47d",
+      "result_id": "be46a906-0cb3-4c56-8eea-7ab4340f2b2d"
+    },
+    {
+      "claim_id": "49e2706d-14fd-4d08-828e-9b21cb0a1aa3",
+      "result_id": "011e0dfc-e7f9-4925-a5cb-62ae13af9ce7"
+    },
+    {
+      "claim_id": "398004de-e7da-4f91-860b-fc337994543e",
+      "result_id": "011e0dfc-e7f9-4925-a5cb-62ae13af9ce7"
+    },
+    {
+      "claim_id": "b508dc38-2c66-4f43-97bf-017617395011",
+      "result_id": "011e0dfc-e7f9-4925-a5cb-62ae13af9ce7"
+    }
+  ],
+  "comparisons": []
+}

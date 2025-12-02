@@ -1,0 +1,1592 @@
+{
+  "submission": {
+    "id": "9f3ee021-9224-4c6e-8377-e180b4f36391",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T10:43:26.668991Z",
+    "updated_at": "2025-12-02T10:43:26.668991Z"
+  },
+  "content": [
+    {
+      "id": "ea87d182-6052-459d-991c-c780e7dcf3e8",
+      "submission_id": "9f3ee021-9224-4c6e-8377-e180b4f36391",
+      "content_type": "manuscript",
+      "content_text": "# Inhibitory muscarinic acetylcholine receptors enhance aversive olfactory learning in adult Drosophila\n\n## Authors\n\n- Noa Bielopolski<sup>1</sup>\n- Hoger Amin<sup>2</sup> ([ORCID: 0000-0002-7884-4815](https://orcid.org/0000-0002-7884-4815))\n- Anthi A Apostolopoulou<sup>2</sup> ([ORCID: 0000-0002-8174-4372](https://orcid.org/0000-0002-8174-4372))\n- Eyal Rozenfeld<sup>1</sup> ([ORCID: 0000-0001-5316-0495](https://orcid.org/0000-0001-5316-0495))\n- Hadas Lerner<sup>1</sup>\n- Wolf Huetteroth<sup>3</sup> ([ORCID: 0000-0003-3421-9935](https://orcid.org/0000-0003-3421-9935))\n- Andrew C Lin<sup>2</sup> ([ORCID: 0000-0001-6310-9765](https://orcid.org/0000-0001-6310-9765)) \u2020\n- Moshe Parnas<sup>1</sup> ([ORCID: 0000-0001-9726-1511](https://orcid.org/0000-0001-9726-1511)) \u2020\n\n### Affiliations\n\n1. Department of Physiology and Pharmacology, Sackler School of Medicine Tel Aviv University Tel Aviv Israel\n2. Department of Biomedical Science University of Sheffield Sheffield United Kingdom\n3. Institute for Biology University of Leipzig Leipzig Germany\n4. Sagol School of Neuroscience Tel Aviv University Tel Aviv Israel\n\n\u2020 Corresponding author\n\n## Abstract\n\nOlfactory associative learning in Drosophila is mediated by synaptic plasticity between the Kenyon cells of the mushroom body and their output neurons. Both Kenyon cells and their inputs from projection neurons are cholinergic, yet little is known about the physiological function of muscarinic acetylcholine receptors in learning in adult flies. Here, we show that aversive olfactory learning in adult flies requires type A muscarinic acetylcholine receptors (mAChR-A), particularly in the gamma subtype of Kenyon cells. mAChR-A inhibits odor responses and is localized in Kenyon cell dendrites. Moreover, mAChR-A knockdown impairs the learning-associated depression of odor responses in a mushroom body output neuron. Our results suggest that mAChR-A function in Kenyon cell dendrites is required for synaptic plasticity between Kenyon cells and their output neurons.\n\n## Introduction\n\nAnimals learn to modify their behavior based on past experience by changing connection strengths between neurons, and this synaptic plasticity is often regulated by metabotropic receptors. In particular, neurons commonly express both ionotropic and metabotropic receptors for the same neurotransmitter, where the two may mediate different functions (e.g. direct excitation/inhibition vs. synaptic plasticity). In mammals, where glutamate is the principal excitatory neurotransmitter, metabotropic glutamate receptors (mGluRs) have been widely implicated in synaptic plasticity and memory (J\u00f6rntell and Hansel, 2006; L\u00fcscher and Huber, 2010). Given the complexity of linking behavior to artificially induced plasticity in brain slices (Schonewille et al., 2011; Yamaguchi et al., 2016), it would be useful to study the role of metabotropic receptors in learning in a simpler genetic model system with a clearer behavioral readout of synaptic plasticity. One such system is Drosophila, where powerful genetic tools and well-defined anatomy have yielded a detailed understanding of the circuit and molecular mechanisms underlying associative memory (Busto et al., 2010; Cognigni et al., 2018; Hige, 2018). The principal excitatory neurotransmitter in Drosophila is acetylcholine, but, surprisingly, little is known about the function of metabotropic acetylcholine signaling in synaptic plasticity or neuromodulation in Drosophila. Here, we address this question using olfactory associative memory.\n\nFlies can learn to associate an odor (conditioned stimulus, CS) with a positive (sugar) or a negative (electric shock) unconditioned stimulus (US), so that they later approach \u2018rewarded\u2019 odors and avoid \u2018punished\u2019 odors. This association is thought to be formed in the presynaptic terminals of the\u00a0~2000 Kenyon cells (KCs) that make up the mushroom body (MB), the fly\u2019s olfactory memory center (Busto et al., 2010; Cognigni et al., 2018; Hige, 2018). These KCs are activated by odors via second-order olfactory neurons called projection neurons (PNs). Each odor elicits responses in a sparse subset of KCs (Campbell et al., 2013; Lin et al., 2014) so that odor identity is encoded in which KCs respond to each odor. When an odor (CS) is paired with reward/punishment (US), an odor-specific set of KCs is activated at the same time that dopaminergic neurons (DANs) release dopamine onto KC presynaptic terminals. The coincident activation causes long-term depression (LTD) of synapses from the odor-activated KCs onto mushroom body output neurons (MBONs) that lead to approach or avoidance behavior (Aso and Rubin, 2016; Aso et al., 2014b; Cohn et al., 2015; Hige et al., 2015; Owald et al., 2015; Perisse et al., 2016; S\u00e9journ\u00e9 et al., 2011). In particular, training specifically depresses KC-MBON synapses of the \u2018wrong\u2019 valence (e.g. odor-punishment pairing depresses odor responses of MBONs that lead to approach behavior), because different pairs of \u2018matching\u2019 DANs/MBONs (e.g. punishment/approach, reward/avoidance) innervate distinct regions along KC axons (Aso et al., 2014a).\n\nBoth MB input (PNs) and output (KCs) are cholinergic (Barnstedt et al., 2016; Yasuyama and Salvaterra, 1999), and KCs express both ionotropic (nicotinic) and metabotropic (muscarinic) acetylcholine receptors (Crocker et al., 2016; Croset et al., 2018; Davie et al., 2018; Shih et al., 2019). The nicotinic receptors mediate fast excitatory synaptic currents (Su and O'Dowd, 2003), while the physiological function of the muscarinic receptors is unknown. Muscarinic acetylcholine receptors (mAChRs) are G-protein-coupled receptors; out of the three mAChRs in Drosophila (mAChR-A, mAChR-B and mAChR-C), mAChR-A (also called Dm1, mAcR-60C or mAChR) is the most closely homologous to mammalian mAChRs (Collin et al., 2013). Mammalian mAChRs are typically divided between \u2018M1-type\u2019 (M1/M3/M5), which signal via Gq and are generally excitatory, and \u2018M2-type\u2019 (M2/M4), which signal via Gi/o and are generally inhibitory (Caulfield and Birdsall, 1998). Drosophila mAChR-A seems to use \u2018M1-type\u2019 signaling: when heterologously expressed in Chinese hamster ovary (CHO) cells, it signals via Gq protein (Collin et al., 2013; Ren et al., 2015) to activate phospholipase C, which produces inositol trisphosphate to release Ca2+ from internal stores.\n\nRecent work indicates that mAChR-A is required for aversive olfactory learning in Drosophila larvae, as knocking down mAChR-A expression in KCs impairs learning (Silva et al., 2015). However, it is unclear whether mAChR-A is involved in olfactory learning in adult Drosophila, given that mAChR-A is thought to signal through Gq, and in adult flies Gq signaling downstream of the dopamine receptor Damb promotes forgetting, not learning (Berry et al., 2012; Himmelreich et al., 2017). Moreover, it is unknown how mAChR-A affects the activity or physiology of KCs, where it acts (at KC axons or dendrites or both), and how these effects contribute to olfactory learning.\n\nHere, we show that mAChR-A is required in KCs for aversive olfactory learning in adult Drosophila. Surprisingly, genetic and pharmacological manipulations of mAChR-A suggest that mAChR-A is inhibitory and acts on KC dendrites. Moreover, mAChR-A knockdown impairs the learning-associated depression of odor responses in an MB output neuron, MB-MVP2, that is required for aversive memory retrieval. We suggest that dendritically\u00a0acting mAChR-A is required for synaptic depression between KCs and their outputs.\n\n## Results\n\n### mAChR-A expression in KCs is required for aversive olfactory learning in adult flies\n\nDrosophila larvae with reduced mAChR-A expression in KCs show impaired aversive olfactory learning (Silva et al., 2015), but it remains unknown whether mAChR-A in KCs also functions in learning in adult flies. We addressed this question by knocking down mAChR-A expression in KCs using two UAS-RNAi lines, \u2018RNAi 1\u2019 and \u2018RNAi 2\u2019 (see Materials\u00a0and\u00a0methods). Only RNAi 2 requires co-expression of Dicer-2 (Dcr-2) for optimal knockdown. To test the efficiency of these RNAi constructs, we expressed them pan-neuronally using elav-GAL4 and measured their effects on mAChR-A expression levels using quantitative real-time polymerase chain reaction (qRT-PCR). Both RNAi lines strongly reduce mAChR-A levels (RNAi 1: 39 \u00b1 8% of elav-GAL4 control, or 61 \u00b1 8% below normal; RNAi 2: 43 \u00b1 10% of normal; mean\u00a0\u00b1\u00a0s.e.m.; see Figure 1A). We then examined whether knocking down mAChR-A in KCs using the pan-KC driver OK107-GAL4 affects short-term aversive learning in adult flies. We used the standard odors used in the field (i.e. 3-octanol, OCT, and 4-methylcyclohexanol, MCH; see Materials\u00a0and\u00a0methods). Under these conditions, both UAS-RNAi transgenes significantly reduced aversive learning, whether training against MCH or OCT (Figure 1B,C and Figure 1\u2014figure supplement 1). Interestingly, knocking down mAChR-A did not affect learning when we trained flies with a more intense shock (90 V instead of 50 V, Figure 1\u2014figure supplement 1), suggesting that mAChR-A may only be required for learning with moderate intensity reinforcement, not severe reinforcement. Consistent with this, knocking down mAChR-A had no effect on na\u00efve avoidance of MCH and OCT (Figure 1D; see Materials\u00a0and\u00a0methods) or flies\u2019 reaction to electric shock (Figure 1\u2014figure supplement 1), showing that the defect was specific to learning, rather than reflecting a failure to detect odors or shock.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/48264/elife-48264-fig1-v2.jpg)\n\n**Figure 1.:** (A) qRT-PCR of mAChR-A with mAChR-A RNAi driven by elav-GAL4.\u00a0The housekeeping gene eEF1\u03b12 (eukaryotic translation elongation factor 1 alpha 2, CG1873) was used for normalization. Knockdown flies have\u00a0~40% of the control levels of mAChR-A mRNA (mean\u00a0\u00b1\u00a0SEM; number of biological replicates (left to right): 6, 7, 7, 4, 4, each with three technical replicates; *p<0.05; Kruskal-Wallis test with Dunn\u2019s multiple comparisons test and Welch ANOVA test with Dunnett\u2019s T3 multiple comparisons test). For detailed statistical analysis see Supplementary file 1. (B) Each trace shows the movement of an individual fly during the training protocol, with fly position in the chamber (horizontal dimension) plotted against time (vertical dimension). Colored rectangles illustrate which odor is presented on each side of the chamber during training and testing. Flies were conditioned against MCH (blue rectangles; see Materials\u00a0and\u00a0methods). (C) Learning scores in flies with mAChR-A RNAi driven by OK107-GAL4. mAChR-A knockdown reduced learning scores compared to controls (mean\u00a0\u00b1\u00a0SEM, n (left to right): 69, 69, 70, 71, 71, 47, 48, 53, 58, 51 *p<0.05; Kruskal-Wallis test with Dunn\u2019s multiple comparisons test). (D) mAChR-A knockdown flies show normal olfactory avoidance to OCT and MCH compared to their genotypic controls (mean\u00a0\u00b1\u00a0SEM, n (left to right): 68, 67, 58, 63, 91, 67, p=0.82 for OCT, p=0.64 for MCH; Kruskal-Wallis test). Colored rectangles show stimulus protocol as in (B); red for odor (MCH or OCT), white for air. (E) Learning scores in flies with mAChR-A RNAi 1 driven by OK107-GAL4 with GAL80ts repression. Flies raised at 23\u00b0C and heated to 31\u00b0C as adults (red outlines) had impaired learning compared to controls. Control flies kept at 23\u00b0C throughout (blue outline), thus blocking mAChR-A RNAi expression, showed no learning defects (mean\u00a0\u00b1\u00a0SEM, n (left to right): 51, 41, 58, 51, **p<0.05, Kruskal-Wallis test with Dunn\u2019s multiple comparisons test). For detailed statistical analysis see Supplementary file 1.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/48264/elife-48264-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Flies were subjected to the same protocol as in Figure 1 but with\u00a0no, or stronger, electric shock.\u00a0With no electric shock, the flies do not change their odor preference and have a learning index which is not statistically different from 0 (n (left to right): 79, 73, 71; p>0.3, one-sample t-test). When flies were conditioned against MCH using 90 V electric shock instead of 50 V (as in the main Figures; see Materials\u00a0and\u00a0methods), driving mAChR-A RNAi in KCs using OK107-GAL4 did not affect learning compared to controls (mean\u00a0\u00b1\u00a0SEM, n (left to right): 52, 46, 51, p>0.13, Kruskal-Wallis test). For detailed statistical analysis see Supplementary file 1. (B) Sensitivity to shock (extent to which flies walk faster while being shocked) is not affected by knocking down mAChR-A in KCs. Shown here is walking speed during training (time\u00a0=\u00a05\u20136 and 7\u20138 min in Figure 1B), taking the difference between speed during MCH (CS+) and speed during OCT (CS\u2013). In mock training, the difference is close to zero, but during training, when MCH is paired with shock, flies walk much faster in MCH (*p<0.05, **p<0.01, ***p<0.001, Mann-Whitney test with Bonferroni correction, comparing training vs. mock training). The effect of shock is not significantly different between OK107 alone and OK107\u00a0>mAChR A-RNAi flies (n.s.: p=0.44 for interaction between genotype and training vs. mock training, 2-way ANOVA). n (left to right): 72, 100, 80, 80, 140, 160.\n\nGiven that mAChR-A is expressed in the larval MB and indeed contributes to aversive learning in larvae, it is possible that developmental effects underlie the reduced learning observed in mAChR-A knockdown flies. To test this, we used tub-GAL80ts to suppress RNAi 1 expression during development. Flies were grown at 23\u00b0C until 3 days after eclosion and were then transferred to 31\u00b0C for 7 days. Adult-only knockdown of mAChR-A in KCs reduced learning (Figure 1E), just as constitutive knockdown did, indicating that mAChR-A plays a physiological, not purely developmental, role in aversive learning. To further verify that GAL80ts efficiently blocks RNAi expression (i.e. that GAL80ts is not leaky), flies were grown at 23\u00b0C without transferring them to 31\u00b0C, thus blocking RNAi expression also in adults. When tested for learning at 10 days old, these flies showed normal learning (Figure 1E).\n\n### mAChR-A is required for olfactory learning in \u03b3 KCs, not \u03b1\u03b2 or \u03b1\u2032\u03b2\u2032 KCs\n\nKenyon cells are subdivided into three main classes according to their innervation of the horizontal and vertical lobes of the MB: \u03b3 neurons send axons only to the \u03b3 lobe of the horizontal lobes, while the axons of \u03b1\u03b2 and \u03b1\u2032\u03b2\u2032 neurons bifurcate and go to both the vertical and horizontal lobes (\u03b1\u03b2 axons make up the \u03b1 lobe of the vertical lobe and \u03b2 lobe of the horizontal lobe, while \u03b1\u2032\u03b2\u2032 axons make up the \u03b1\u2032 lobe of the vertical lobe and \u03b2\u2032 portion of the horizontal lobe). These different classes play different roles in olfactory learning (Guven-Ozkan and Davis, 2014; Krashes et al., 2007). To unravel in which class(es) mAChR-A functions, we used a Minos-mediated integration cassette (MiMIC) line to investigate where mAChR-A is expressed (Venken et al., 2011). The MiMIC insertion in mAChR-A lies in the first 5\u2019 non-coding intron, creating a gene trap where GFP in the MiMIC cassette should be expressed in whichever cells endogenously express mAChR-A. Because the GFP in the original mAChR-A MiMIC cassette produced very little fluorescent signal (data not shown), we used recombinase-mediated cassette exchange (RMCE) to replace the original MiMIC cassette with a MiMIC cassette containing GAL4 (Venken et al., 2011). These new mAChR-A-MiMIC-GAL4 flies should express GAL4 wherever mAChR-A is endogenously expressed. To reveal the expression pattern of mAChR-A, we crossed mAChR-A-MiMIC-GAL4 and 20xUAS-6xeGFP flies. mAChR-A-MiMIC-GAL4 drove GFP expression throughout the brain, consistent with previous reports (Blake et al., 1993; Croset et al., 2018; Davie et al., 2018; Hannan and Hall, 1996) and with the fact that the Drosophila brain is mostly cholinergic. In the mushroom bodies, GFP was expressed in the \u03b1\u03b2 and \u03b3 lobes, but not the \u03b1\u2032\u03b2\u2032 lobes (Figure 2A). No GFP signal was observed with an inverted insertion where GAL4 is inserted in the MiMIC locus in the wrong orientation (data not shown). Consistent with these MiMIC results, two recently reported databases of single-cell transcriptomic analysis of the Drosophila brain (Croset et al., 2018; Davie et al., 2018) confirm that mAChR-A is more highly expressed in \u03b1\u03b2 and \u03b3 KCs than in \u03b1\u2032\u03b2\u2032 KCs (Figure 2\u2014figure supplement 1). However, mAChR-A is still clearly present in \u03b1\u2032\u03b2\u2032 KCs\u2019 transcriptomes, suggesting that mAChR-A-MiMIC-GAL4 may not reveal all neurons that express mAChR-A.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/48264/elife-48264-fig2-v2.jpg)\n\n**Figure 2.:** (A) Maximum intensity projection of 70 confocal sections (2 \u00b5m) through the central brain of a fly carrying MiMIC-mAChR-A-GAL4 and 20xUAS-6xGFP transgenes. MB \u03b1\u03b2 and \u03b3 lobes are clearly observed. No GFP expression is observed in \u03b1\u2032\u03b2\u2032 lobes. (B) mAChR-A RNAi 1 was targeted to different subpopulations of KCs. Learning scores were reduced compared to controls when mAChR-A RNAi 1 was expressed in \u03b1\u03b2 and \u03b3 KCs or \u03b3 KCs alone, but not when mAChR-A RNAi 1 was expressed in \u03b1\u03b2 or \u03b1\u2032\u03b2\u2032 KCs. (mean\u00a0\u00b1\u00a0SEM, n (left to right): 69, 41, 70, 76, 69, 66, 71, 50, 68, **p<0.01, ***p<0.001, Kruskal-Wallis test with Dunn\u2019s multiple comparisons test). For detailed statistical analysis see Supplementary file 1. The data for the UAS-mAChR-A RNAi 1 control are duplicated from Figure 1.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/48264/elife-48264-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Data from Davie et al. (2018). 56,902 Drosophila brain cells arranged according to their single-cell transcriptome profiles, along the top two principal components using t-SNE. Red coloring indicates expression of mAChR-A. KC subtype clusters are labeled as identified in Davie et al. (2018). (B) Expression of DAT (marker for \u03b1\u2032\u03b2\u2032 KCs), trio (marker for \u03b1\u2032\u03b2\u2032 and \u03b3 KCs), and mAChR-A for cells identified as \u03b1\u2032\u03b2\u2032, \u03b1\u03b2 and \u03b3 KCs in Davie et al. (2018). mAChR-A expression is higher in \u03b1\u03b2 and \u03b3 KCs compared to \u03b1\u2032\u03b2\u2032 KCs. (C) As in A but with data from Croset et al. (2018) (10,286 Drosophila brain cells). (D) As in B but with data from Croset et al. (2018). Images screenshotted and raw data downloaded from SCope (http://scope.aertslab.org) on 24 June 2018.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/48264/elife-48264-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** GFP expression was driven by the named GAL4 or LexA driver lines and the general neuropil was stained with an antibody to NC82 (magenta). Images are maximum-intensity Z-projections of confocal stacks. Panels A-D, G show only the planes of the mushroom body lobes and peduncle to more clearly show which lobes are labeled. (A) OK107-GAL4 labels all KCs. (B) MB247-GAL4 labels \u03b1\u03b2 and \u03b3 KCs. (C) c305a-GAL4 labels \u03b1\u2032\u03b2\u2032 KCs. (D) R44E04-LexA labels \u03b1\u03b2 KCs. (E) R45H04-LexA strongly labels \u03b3 KCs. (F) Silencing MB247-GAL4 expression in \u03b3 KCs by using R45H04-LexA to drive lexAop-GAL80 in \u03b3 KCs results in fairly specific expression in \u03b1\u03b2 KCs. (G) Silencing MB247-GAL4 expression in \u03b1\u03b2 KCs by using R44E04 to drive lexAop-GAL80 in \u03b1\u03b2 KCs results in fairly specific expression in \u03b3 KCs. (H) R12G04-GAL4 labels MBON-\u03b31pedc>\u03b1/\u03b2, aka MB-MVP2.\n\nThe higher expression of mAChR-A in \u03b1\u03b2 and \u03b3 KCs compared to \u03b1\u2032\u03b2\u2032 KCs suggests that learning would be impaired by mAChR-A knockdown in \u03b1\u03b2 or \u03b3, but not \u03b1\u2032\u03b2\u2032, KCs. To test this, we expressed mAChR-A RNAi in different KC classes. As expected, aversive olfactory learning was reduced by knocking down mAChR-A in \u03b1\u03b2 and \u03b3 KCs together using MB247-GAL4, but not by knockdown in \u03b1\u2032\u03b2\u2032 KCs using c305a-GAL4. To examine if \u03b1\u03b2 and \u03b3 KCs both participate in the reduced learning observed in mAChR-A knockdown flies, we sought to limit mAChR-A RNAi expression to either \u03b1\u03b2 or \u03b3 neurons. While strong driver lines exist for \u03b1\u03b2 neurons, the \u03b3 GAL4 drivers we tested were fairly weak (H24-GAL4, MB131B, R45H04-GAL4, data not shown), perhaps too weak to drive mAChR-A-RNAi enough to knock down mAChR-A efficiently. Therefore, we used MB247-GAL4, which was strong enough to affect behavior, and blocked GAL4 activity in either \u03b1\u03b2 or \u03b3 KCs by expressing the GAL80 repressor under the control of R44E04-LexA (\u03b1\u03b2 KCs) or R45H04-LexA (\u03b3 KCs) (Br\u00e4cker et al., 2013). These combinations drove strong, specific expression in \u03b1\u03b2 or \u03b3 KCs (Figure 2\u2014figure supplement 2). Learning was reduced by mAChR-A RNAi expression in \u03b3, but not \u03b1\u03b2, KCs (Figure 2B). These results suggest that mAChR-A is specifically required in \u03b3 KCs for aversive olfactory learning and short-term memory.\n\n### mAChR-A suppresses odor responses in \u03b3 KCs\n\nWe next asked what effect mAChR-A knockdown has on the physiology of KCs, by expressing GCaMP6f and mAChR-A RNAi 2 together in KCs using OK107-GAL4 (this driver and RNAi combination was also used for behavior in Figure 1C). Knocking down mAChR-A in KCs increased odor-evoked Ca2+ influx in the mushroom body calyx, where KC dendrites reside (Figure 3). This result is somewhat surprising because mAChR-A is a Gq-coupled receptor whose activation leads to Ca2+ release from internal stores (Ren et al., 2015), which predicts that mAChR-A knockdown should decrease, not increase, odor-evoked Ca2+ influx in KCs. However, some examples have been reported of inhibitory signaling through Gq by M1-type mAChRs (see Discussion), and Drosophila mAChR-A may join these as another example of an inhibitory mAChR signaling through Gq.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/48264/elife-48264-fig3-v2.jpg)\n\n**Figure 3.:** Odor responses to MCH and OCT were measured in control (OK107-GAL4\u00a0>\u00a0GCaMP6f, Dcr-2) and knockdown (OK107-GAL4\u00a0>\u00a0GCaMP6f, Dcr-2, mAChR-A-RNAi 2) flies. (A) \u2206F/F of GCaMP6f signal in different areas of the MB in control (black) and knockdown (red) flies, during presentation of odor pulses (horizontal lines). Data are mean (solid line)\u00a0\u00b1\u00a0SEM (shaded area). Diagrams illustrate which region of the MB was analyzed. (B) Peak response of the traces presented in A (mean\u00a0\u00b1\u00a0SEM). n given as number of hemispheres (number of flies) for control and knockdown flies, respectively: calyx, 23 (13), 17 (10); \u03b1 and \u03b1\u2019, 24 (13), 20 (10); \u03b2, \u03b2\u2019 and \u03b3, 27 (14), 22 (11). *p<0.05, ***p<0.001, two-way ANOVA with Holm-Sidak multiple comparisons test). For detailed statistical analysis see Supplementary file 1.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/48264/elife-48264-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) SNR in the baseline GCaMP6f signal differs among regions of the mushroom body.\u00a0SNR was measured as the reciprocal of the standard deviation of \u2206F/F during the 2 s immediately preceding odor onset (the period used to calculate baseline fluorescence, or F0). SNR is mean signal divided by standard deviation; here the standard deviation of \u2206F/F equals (the standard deviation of F) divided by F0, which is the mean signal during the pre-stimulus period. (B) Statistical power to detect the effect size of the difference in \u03b3 lobe odor response between control and mAChR-A knockdown flies (Cohen\u2019s d\u00a0=\u00a01.3 for OCT, Figure 3B), for different SNRs. Statistical power did not differ for SNRs in the range observed in (A) (SNR\u00a0=\u00a020\u201350). Materials\u00a0and\u00a0method: We simulated two groups of 20 random samples (n\u00a0=\u00a020 was the smallest sample size out of the \u03b1\u03b2 and \u03b1\u2032\u03b2\u2032 lobes) where the effect size of the difference between the two groups was 1.3. Each sample had a \u2018ground truth\u2019 value, from which we sampled three \u2018time points\u2019 that were subject to noise with SNR from 1 to 50 (we sampled three time points because the peak of the odor response almost always occurred between 1\u00a0and\u00a02 s after odor onset, and our frame rate was\u00a0~3 Hz). The maximum of these three time points was taken as the measured \u2018peak odor response\u2019. We ran 1000 simulations, ran t-tests on the simulated data, and counted how many gave a p-value<0.0125 (a Holm-Bonferroni correction for the four mushroom body regions that did not consistently show significant differences between control and mAChR-A knockdown flies) \u2013 this fraction is the statistical power for detecting a difference in the non-\u03b3 lobes with effect size 1.3.\n\nBecause mAChR-A is required for aversive learning in \u03b3 KCs, not \u03b1\u03b2 or \u03b1\u2032\u03b2\u2032 KCs (Figure 2), we next asked how odor responses in \u03b1\u03b2, \u03b1\u2032\u03b2\u2032 and \u03b3 KCs are affected by mAChR-A knockdown. \u03b1\u03b2, \u03b1\u2032\u03b2\u2032 and \u03b3 KC dendrites are not clearly segregated in the calyx, so we examined odor responses in the axonal lobes. Indeed, although odor responses in all lobes were increased by mAChR-A knockdown, only in the \u03b3 lobe was the effect statistically significant for both MCH and OCT (Figure 3). This result is consistent with the behavioral requirement for mAChR-A only in \u03b3 KCs. However, we do not rule out the possibility that mAChR-A knockdown also affects \u03b1\u03b2 and \u03b1\u2032\u03b2\u2032 odor responses in a way that does not affect short-term memory, especially as \u03b1\u03b2 and \u03b1\u2032\u03b2\u2032 odor responses were somewhat, although not consistently significantly, increased. Although the \u2206F/F traces from the \u03b3 lobe had higher signal-to-noise ratio (SNR) than some other lobes (Figure 3\u2014figure supplement 1) due to its larger size (averaging over more pixels) or shallower z-depth (less light scattering), a power analysis revealed that all lobes had SNRs high enough to detect an effect as large as that observed in the \u03b3 lobe (Figure 3\u2014figure supplement 1). However, note that we do not exclude the possibility that \u03b1\u03b2- or \u03b1\u2032\u03b2\u2032-specific (as opposed to pan-KC) knockdown of mAChR-A might significantly increase \u03b1\u03b2 or \u03b1\u2032\u03b2\u2032 KC odor responses.\n\nDo increased odor responses in \u03b3 KCs prevent learning by increasing the overlap between the \u03b3 KC population representations of the two odors used in our task (Lin et al., 2014)? When GCaMP6f and mAChR-A-RNAi 2 were expressed in all KCs, mAChR-A knockdown did not affect the sparseness or inter-odor correlation of KC population odor responses (Figure 4A\u2013C) even though it increased overall calyx responses. To focus specifically on \u03b3 KCs, we expressed GCaMP6f and mAChR-A-RNAi 1 only in \u03b3 KCs, using mb247-Gal4, R44E04-LexA and lexAop-GAL80, the same driver and RNAi combination used in the behavioral experiments in Figure 2B. GCaMP6f was visible mainly in the \u03b3 lobe (Figure 4D). \u03b3-only expression of mAChR-A-RNAi 1 increased odor responses in the calyx (here, dendrites of \u03b3 KCs only) and, in the case of OCT, in the \u03b3 lobe (Figure 4E,F). Note that \u03b3 KC odor responses were increased by both RNAi 1 (Figure 3A,B) and RNAi 2 (Figure 4E,F). As with pan-KC expression, \u03b3-only expression of mAChR-A-RNAi 1 did not affect the sparseness or inter-odor correlation of \u03b3 KCs (Figure 4G\u2013I). Thus, mAChR-A knockdown does not impair learning through increased overlap in KC population odor representations.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/48264/elife-48264-fig4-v2.jpg)\n\n**Figure 4.:** (A) Example activity maps (single optical sections from a z-stack) of KC odor responses to MCH and OCT in control (OK107-GAL4\u00a0>\u00a0GCaMP6f, Dcr-2) and mAChR-A knockdown (OK107-GAL4\u00a0>\u00a0GCaMP6f, Dcr-2, mAChR-A-RNAi 2) flies where all KCs are imaged. False-coloring indicates \u2206F/F of the odor response, overlaid on grayscale baseline GCaMP6f signal. Scale bar, 10 \u00b5m. For detailed statistical analysis see Supplementary file 1. (B) Sparseness of pan-KC population responses is not affected by mAChR-A knockdown (p=0.38, two-way repeated-measures ANOVA). (C) Correlation between pan-KC population responses to MCH and OCT is not affected by mAChR-A knockdown (p=0.75, t-test). (D) Upper: diagram of \u03b3 KCs (green). Lower: False-colored average-intensity Z-projection of the horizontal lobe in a control fly imaged from a dorsal view in panel E (mb247-GAL4\u00a0>\u00a0GCaMP6f, R44E04-LexA\u00a0>\u00a0GAL80), averaged over 10 s before the odor stimulus. R44E04-LexA\u00a0>\u00a0GAL80 almost completely suppresses \u03b2 lobe expression. Scale bar, 20 \u00b5m. (E) Knocking down mAChR-A only in \u03b3 KCs increases \u03b3 KC odor responses. Shown here are odor responses in the calyx and \u03b3 lobe of control (mb247-GAL4\u00a0>\u00a0GCaMP6f, R44E04-LexA\u00a0>\u00a0GAL80) and knockdown (mb247-GAL4\u00a0>\u00a0GCaMP6f, mAChR-A-RNAi 1, R44E04-LexA\u00a0>\u00a0GAL80) flies. (F) Peak response of the traces presented in D (mean\u00a0\u00b1\u00a0SEM.) n given as number of hemispheres (number of flies): 11 (6) for control, 12 (6) for knockdown. *p<0.05, **p<0.01, 2-way repeated-measures ANOVA with Holm-Sidak multiple comparisons test. (G) Example activity maps (single optical sections from a z-stack) of \u03b3 KC odor responses to MCH and OCT in control (mb247-GAL4\u00a0>\u00a0GCaMP6f, R44E04-LexA\u00a0>\u00a0GAL80) and knockdown (mb247-GAL4\u00a0>\u00a0GCaMP6f, mAChR-A-RNAi 1, R44E04-LexA\u00a0>\u00a0GAL80) flies. Note the gaps in baseline GCaMP6f signal due to lack of \u03b1\u03b2 and \u03b1\u2032\u03b2\u2032 KCs labeled. Scale bar, 10 \u00b5m (H) Sparseness of \u03b3 KC population responses is not affected by mAChR-A knockdown (p=0.76, two-way repeated-measures ANOVA). (I) Correlation between \u03b3 KC population responses to MCH and OCT is not affected by mAChR-A knockdown (p=0.32, t-test).\n\n### KC odor responses are decreased by an mAChR agonist\n\nRNAi-based knockdown of mAChR-A might induce homeostatic compensation that obscures or even reverses the primary effect of reduced mAChR-A expression. To test the acute role of mAChR-A in regulating KC activity, we took the complementary approach of pharmacologically activating mAChR-A. Initially, we bath-applied 10 \u00b5M muscarine, an mAChR-A agonist (Drosophila mAChR-B is 1000-fold less sensitive to muscarine than mAChR-A is [Collin et al., 2013], and mAChR-C is not expressed in the brain [Davie et al., 2018]). Muscarine strongly decreased odor responses in all subtypes of KCs (Figure 5A,B, Figure 5\u2014figure supplement 1). However, muscarine did not significantly affect the amplitude of odor responses in PN axons in the calyx (Figure 5C), suggesting that the effect of muscarine on KCs arose in KCs, not earlier in the olfactory pathway. KCs can be silenced by an inhibitory GABAergic neuron called the anterior paired lateral (APL) neuron (Lin et al., 2014; Masuda-Nakagawa et al., 2014; Papadopoulou et al., 2011), so we asked whether muscarine reduces KC odor responses indirectly by activating APL, rather than directly inhibiting KCs. We applied muscarine to flies with APL-specific expression of tetanus toxin (TNT), which blocks inhibition from APL and thereby greatly increases KC odor responses. In these flies, APL is labeled stochastically, so hemispheres where APL was unlabeled served as controls (Lin et al., 2014) (see Materials\u00a0and\u00a0methods). Muscarine decreased KC odor responses both in control hemispheres and hemispheres where APL synaptic output was blocked by tetanus toxin (Figure 5D), and the effect of muscarine was not significantly different between the two cases (Figure 5E). This result indicates that muscarine does not act solely by activating APL or by enhancing inhibition on KCs (e.g. increasing membrane localization of GABAA receptors).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/48264/elife-48264-fig5-v2.jpg)\n\n**Figure 5.:** (A) Odor responses in the calyx and \u03b3 lobe of OK107-GAL4\u00a0>\u00a0GCaMP6f flies, before (black) and after (red) adding 10 \u00b5M muscarine in the bath. Data are mean (solid line)\u00a0\u00b1\u00a0SEM (shaded area); horizontal lines indicate the odor pulse. Traces for all lobes are shown in Figure 5\u2014figure supplement 1. For detailed statistical analysis see Supplementary file 1. (B) Peak \u2206F/F during the odor pulse before and after muscarine. n\u00a0=\u00a011 hemispheres from 6 flies. *p<0.05, **p<0.01, ***p<0.001 by two-way repeated measures ANOVA with Holm-Sidak multiple comparisons test. (C) Odor responses in PN axons in the calyx are not affected by 10 \u00b5M muscarine, in GH146-GAL4\u00a0>\u00a0GCaMP6f flies (p>0.49, two-way repeated measures ANOVA, n\u00a0=\u00a05 flies). (D) Peak \u2206F/F during the odor pulse before and after muscarine in control hemispheres where APL was unlabeled (left, n\u00a0=\u00a06 hemispheres from 6 flies) and hemispheres where APL expressed tetanus toxin (TNT) (right, n\u00a0=\u00a06 hemispheres from 5 flies). *p<0.05, **p<0.01, ***p<0.001 by two-way repeated measures ANOVA with Holm-Sidak multiple comparisons test. (E) (Response (peak \u2206F/F during the odor pulse) after muscarine) / (response before muscarine), using data from (D). No significant differences were observed (p>0.05, two-way repeated measures ANOVA with Holm-Sidak multiple comparisons test).\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/48264/elife-48264-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** Extended data for Figure 5. Odor responses in OK107-GAL4\u00a0> GCaMP6f flies (A), control APL unlabeled hemispheres (B), and APL\u00a0>TNT hemispheres (C), before (black) and after (red) adding 10 \u00b5M muscarine in the bath. Data are mean (solid line)\u00a0\u00b1\u00a0SEM (shaded area); diagrams illustrate which region of the MB was analyzed; horizontal lines indicate the odor pulse. These are the traces for the summary data shown in Figure 5B,D.\n\nTo test mAChR-A function even more acutely, we locally applied muscarine to the MB calyx by pressure ejection (Figure 6, Figure 6\u2014figure supplement 1). Red dye included in the ejected solution confirmed that the muscarine remained in the calyx for several seconds but did not spread to the MB lobes (Figure 6B). Surprisingly, applying muscarine to the calyx in the absence of odor stimuli increased GCaMP6f signal in the calyx and \u03b1 lobe, with small increases in the \u03b2 and \u03b3 lobe that were not statistically significant (Figure 6A,C). It also decreased GCaMP6f signal in the \u03b1\u2032 and \u03b2\u2032 lobes around 1\u20132 s after application (Figure 6A), although this effect was also not statistically significant. The increased Ca2+ in the calyx most likely did not reflect increased excitability, as applying muscarine to the calyx did not increase the calyx odor response (Figure 6D,E). If anything, it likely decreased the calyx odor response, because the Ca2+ increase induced by muscarine alone (no odor) lasted\u00a0~6\u20137 s and thus would have continued into the odor pulse in the muscarine\u00a0+odor condition. If the odor response was unaffected by muscarine, the muscarine-evoked and odor-evoked increases in GCaMP6f signal should have summed. Instead, the peak calyx \u2206F/F during the odor pulse was the same before and after locally applying muscarine, suggesting that the specifically odor-evoked increase in GCaMP6f was decreased by muscarine.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/48264/elife-48264-fig6-v2.jpg)\n\n**Figure 6.:** (A) Left: Schematic of MB, showing color scheme for the different regions where responses are quantified.\u00a0Right: Average \u2206F/F GCaMP6f signal in different areas of the MB of OK107\u00a0>\u00a0GCaMP6f flies in response to a 10 ms pulse of 20 mM muscarine on the calyx. Data are mean (solid line)\u00a0\u00b1\u00a0SEM (shaded area). Dashed vertical line shows the timing of muscarine application. Shaded bar indicates time window used to quantify responses in panel C. n\u00a0=\u00a07 hemispheres (5 flies). (B) \u2206F/F traces of red dye indicator, showing which MB regions the muscarine spread to. The traces follow the same color scheme and visuals as shown in panel A. (C) Scatter plot showing average \u2206F/F of GCaMP6f signal of the different MB regions at time 0\u20131 s 10 ms pulse of 20 mM muscarine on the calyx, quantified from traces shown in (A). n as in (A). *p<0.05, one-sample t-test (different from 0), Bonferroni correction for multiple comparisons. (D) Average \u2206F/F GCaMP6f signal of different areas of the MB during odor pulses of OCT (horizontal bar), before (black) and after (red) muscarine application on the calyx, 1 s before the odor pulse (vertical bar). Data are mean (solid line)\u00a0\u00b1\u00a0SEM (shaded area). n: 7 hemispheres (5 flies). See Figure 6\u2014figure supplement 1 for all traces. (E) Line-bar plots showing paired peak \u2206F/F GCaMP6f responses of the different MB regions during 5 s odor pulses of MCH or OCT, before (gray) and after (pink) muscarine application to the calyx, in the hemisphere where the muscarine was applied (same side, right) or the opposite (opposite side, left). Muscarine was applied 1 s before the odor pulse. Bars show mean value. n given as number of hemispheres (number of flies): Same side MCH 7 (6), OCT 9 (8), opposite side MCH 7 (5), OCT 8 (5). *p<0.05, **p<0.01, ***p<0.001 by two-way repeated measures ANOVA with Holm-Sidak multiple comparisons test.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/48264/elife-48264-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** Average \u2206F/F GCaMP6f traces of the different MB regions of OK107\u00a0>GCaMP6f flies that only received the muscarine pulse (A) or received an odor pulse (MCH or OCT) before (black) or after (red) 10 ms pulse of 20 mM muscarine (B,C). Panel A is duplicated from Figure 6A; panel B is the traces corresponding to the Figure 6E. Muscarine was applied in the calyx, 1 s before the odor pulse where applicable. Traces are from the same side or the opposite side that muscarine was applied. Data are mean (solid line)\u00a0\u00b1\u00a0SEM (shaded area). Horizontal bars indicate odor pulse timing and duration. Vertical bars indicate timing of muscarine pulse. n, by number of hemispheres (number of flies): same side MCH 6 (4), OCT 7 (5), opposite side MCH 5 (3), OCT 5 (3), muscarine alone 7 (5).\n\nIndeed, applying muscarine to the calyx suppressed odor responses in KC axons (Figure 6D,E). Although muscarine did not significantly affect peak \u2206F/F during the odor in the \u03b1 lobe, muscarine most likely did decrease \u03b1 lobe odor responses, by the same logic as for calyx odor responses (see above). Given that calyx muscarine suppresses \u03b1\u2032\u03b2\u2032 axonal odor responses, the decrease in \u03b1\u2032\u03b2\u2032 KC GCaMP6f signal in the absence of odor likely reflects suppression of spontaneous action potentials (Figure 6A,C), as \u03b1\u2032\u03b2\u2032 KCs have the highest spontaneous spike rate out of the three subtypes (Groschner et al., 2018; Turner et al., 2008). The effect of muscarine on \u03b1\u2032\u03b2\u2032 KCs is consistent with single-cell transcriptome analyses showing that \u03b1\u2032\u03b2\u2032 KCs express mAChR-A, albeit at a lower level than \u03b1\u03b2 or \u03b3 KCs (Figure 2\u2014figure supplement 1) (Croset et al., 2018; Davie et al., 2018). The increase in calyx Ca2+ induced by muscarine alone (without odor) might reflect Ca2+ release from internal stores triggered by Gq signaling, which then inhibits KC excitability (thus smaller odor responses). Note that muscarine on the calyx is unlikely to reduce KC odor responses via presynaptic inhibition of PNs, because bath muscarine does not affect odor-evoked Ca2+ influx in PNs in the calyx (Figure 5C), although we cannot rule out Ca2+-independent inhibition.\n\n### mAChR-A localized to the MB calyx can rescue learning in a mAChR-A hypomorphic mutant\n\nWe next asked where mAChR-A exerts its effect. To visualize the localization of mAChR-A, we created a new construct with mAChR-A tagged with FLAG on the C-terminus under UAS control. When we overexpressed FLAG-tagged mAChR-A in KCs using OK107-GAL4, we only observed anti-FLAG staining in the calyx (Figure 7A), suggesting that mAChR-A is localized to the calyx. To test whether the FLAG tag or overexpression might cause the mAChR-A to be mis-localized, we tested whether mb247-GAL4\u00a0>\u00a0mAChR A-FLAG overexpression could rescue learning in a mAChR-A mutant background. The original MiMIC allele with a GFP insertion in the 5\u2019 UTR intron of mAChR-A contains a stop cassette and polyadenylation signal, and indeed, it is a strongly hypomorphic allele: qPCR shows almost total lack of mAChR-A mRNA in the \u2018MiMIC-stop\u2019 allele (Figure 7B). Flies homozygous for the \u2018MiMIC-stop\u2019 allele are viable but show impaired learning, while learning is significantly improved by using mb247-GAL4 to overexpress mAChR-A-FLAG in \u03b1\u03b2 and \u03b3 KCs (Figure 7C), indicating that overexpressed mAChR-A-FLAG can support learning. These flies (\u2018MiMIC-stop\u2019, mb247\u00a0>mAChR A-FLAG) also show anti-FLAG staining only in the calyx (Figure 7\u2014figure supplement 1). These results suggest that mAChR-A exerts its effect on learning in KC dendrites, consistent with the effect of locally applying muscarine to KC dendrites.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/48264/elife-48264-fig7-v2.jpg)\n\n**Figure 7.:** (A) mAChR-A-FLAG overexpressed in KCs by OK107-GAL4 appears in the calyx but not the lobes of the mushroom body. (B) Flies homozygous for the MiMIC mAChR-A-stop allele (which contains a stop cassette as part of the Minos gene-trap cassette in the 5\u2019UTR) have virtually no mAChR-A mRNA. In contrast, flies with the MiMIC mAChR-A-GAL4 allele do not have reduced mAChR-A mRNA levels, because the stop cassette was replaced with GAL4 (indeed, their mAChR-A levels are slightly higher than the control). (mean\u00a0\u00b1\u00a0SEM; n\u00a0=\u00a04 each with three technical replicates; **p=0.0001; Welch ANOVA test with Dunnett\u2019s T3 multiple comparisons test). For detailed statistical analysis see Supplementary file 1. (C) Homozygous MiMIC mAChR-A-stop flies are defective in olfactory aversive learning, but learning is rescued by driving mAChR-A-FLAG in \u03b1\u03b2 and \u03b3 KCs by mb247-GAL4. n (left to right): 49, 70, 56, 47, *p<0.05, Kruskal-Wallis test with Dunn\u2019s multiple comparisons test). For detailed statistical analysis see Supplementary file 1.\n\n![Figure 7\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/48264/elife-48264-fig7-figsupp1-v2.jpg)\n\n**Figure 7\u2014figure supplement 1.:** Anti-FLAG immunostaining shows signal only in the calyx in flies expressing mAChR-A-FLAG under the control of mb247-GAL4 in a homozygous MiMIC mAChR-A-stop hypomorphic background.The signal is less clear than in Figure 7A most likely because OK107-GAL4 is a stronger driver than mb247-GAL4.\n\n### mAChR-A knockdown prevents training-induced depression of MBON odor responses\n\nThe finding that mAChR-A functions in KC dendrites raises the question of how mAChR-A can affect learning. While learning-associated plasticity in KC dendrites has been observed in honeybees, In Drosophila, olfactory associative memories are stored by weakening the synapses between KCs and output neurons that lead to the \u2018wrong\u2019 behavior. For example, aversive memory requires an output neuron downstream of \u03b3 KCs, called MBON-\u03b31pedc>\u03b1/\u03b2 or MB-MVP2. MB-MVP2 leads to approach behavior (Aso et al., 2014b), and aversive conditioning reduces MB-MVP2\u2019s responses to the aversively-trained odor (Hige et al., 2015; Perisse et al., 2016). We tested whether knocking down mAChR-A would prevent this depression. We knocked down mAChR-A in KCs using OK107-GAL4 and UAS-mAChR-A-RNAi 1, and expressed GCaMP6f in MB-MVP2 using R12G04-LexA and lexAop-GCaMP6f (Figure 8A). We trained flies in the behavior apparatus and then imaged MB-MVP2 odor responses (3 hr after training to avoid cold-shock-sensitive memory). Because overall response amplitudes were variable across flies, for each fly we measured the ratio of the response to MCH (the trained odor) over the response to OCT (the untrained odor). Consistent with previous published results (Hige et al., 2015; Perisse et al., 2016), in control flies not expressing mAChR-A RNAi, the MCH/OCT ratio was substantially reduced in trained flies relative to mock-trained flies (Figure 8B). This was not because the OCT response increased, because there was no difference between trained and mock-trained flies in the ratio of the response to OCT over the response to isoamyl acetate, a \u2018reference\u2019 odor that was absent in the training protocol. This was also not because of any general decrease in odor responses, as shown by analyzing absolute response amplitudes to MCH, OCT and isoamyl acetate (Figure 8\u2014figure supplement 1). In contrast, in flies expressing mAChR-A RNAi in KCs, the MCH/OCT ratio was the same between trained and mock-trained flies (Figure 8B), indicating that the mAChR-A knockdown impaired the learning-related depression of the KC to MB-MVP2 synapse. This result suggests that mAChR-A function in KC dendrites is necessary for learning-related synaptic plasticity in KC axons.\n\n![Figure 8.](https://cdn.elifesciences.org/articles/48264/elife-48264-fig8-v2.jpg)\n\n**Figure 8.:** (A) Odor responses in MB-MVP2 to isoamyl acetate (IAA, not presented during training), OCT (not shocked during training) and MCH (shocked during training), in control (OK107-GAL4, R12G04-LexA\u00a0>\u00a0GCaMP6f, mb247-dsRed) and knockdown (OK107-GAL4\u00a0>\u00a0mAChR A-RNAi 1, R12G04-LexA\u00a0> GCaMP6f, mb247-dsRed) flies, with mock training (no shock) or training against MCH.\u00a0Traces show mean (solid line)\u00a0\u00b1\u00a0SEM (shaded area). (B) MCH:OCT or OCT:IAA ratios of peak \u2206F/F values from (A). n\u00a0=\u00a05. *p<0.05, Mann-Whitney test. Power analysis shows that n\u00a0=\u00a05 would suffice to detect an effect as strong as the difference between training and mock training in the MCH:OCT ratio, with power 0.9. See Figure 8\u2014figure supplement 1 for absolute \u2206F/F values.\n\n![Figure 8\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/48264/elife-48264-fig8-figsupp1-v2.jpg)\n\n**Figure 8\u2014figure supplement 1.:** (A) Diagram of genotype: mAChR-A RNAi 1 was expressed in KCs with OK107 (gray), while GCaMP6f was expressed in MB-MVP2 with R12G04-LexA (green). The imaging plane is shown in blue. (B) Absolute \u2206F/F values from MB-MVP2 corresponding to the ratios shown in Figure 8B. Odors and genotypes as in Figure 8B. No general depression was observed following RNAi expression. (mean\u00a0\u00b1\u00a0SEM; n\u00a0=\u00a05, p>0.05 for all mock vs. trained comparisons, Mann-Whitney tests). The difference between mock vs. trained for MCH in control flies is not statistically significant because of variability in overall responsiveness to odors between flies. When MCH responses are normalized to OCT responses as in Figure 8B, the difference is statistically significant.\n\n## Discussion\n\nHere, we show that mAChR-A is required in \u03b3 KCs for aversive olfactory learning and short-term memory in adult Drosophila. Knocking down mAChR-A increases KC odor responses, while the mAChR-A agonist muscarine suppresses KC activity. Knocking down mAChR-A prevents aversive learning from reducing responses of the MB output neuron MB-MVP2 to the conditioned odor, suggesting that mAChR-A is required for the learning-related depression of KC->MBON synapses.\n\nWhy is mAChR-A only required for aversive learning in \u03b3 KCs, not \u03b1\u03b2 or \u03b1\u2032\u03b2\u2032 KCs? Although our mAChR-A MiMIC gene trap agrees with single-cell transcriptome analysis that \u03b1\u2032\u03b2\u2032 KCs express less mAChR-A than do \u03b3 and \u03b1\u03b2 KCs (Croset et al., 2018; Davie et al., 2018), transcriptome analysis indicates that \u03b1\u2032\u03b2\u2032 KCs do express some mAChR-A (Figure 2\u2014figure supplement 1). Moreover, \u03b3 and \u03b1\u03b2 KCs express similar levels of mAChR-A (Crocker et al., 2016). It may be that the RNAi knockdown is less efficient at affecting the physiology of \u03b1\u03b2 and \u03b1\u2032\u03b2\u2032 KCs than \u03b3 KCs, whether because the knockdown is less efficient at reducing protein levels, or because \u03b1\u03b2 and \u03b1\u2032\u03b2\u2032 KCs have different intrinsic properties or a different function of mAChR-A such that 40% of normal mAChR-A levels is sufficient in \u03b1\u03b2 and \u03b1\u2032\u03b2\u2032 KCs but not \u03b3 KCs. This interpretation is supported by our finding that mAChR-A RNAi knockdown significantly increases odor responses only in the \u03b3 lobe, not the \u03b1\u03b2 or \u03b1\u2032\u03b2\u2032 lobes. Alternatively, \u03b3, \u03b1\u03b2 and \u03b1\u2032\u03b2\u2032 KCs are thought to be important mainly for short-term memory, long-term memory, and memory consolidation, respectively (Guven-Ozkan and Davis, 2014; Krashes et al., 2007); as we only tested short-term memory, mAChR-A may carry out the same function in all KCs, but only its role in \u03b3 KCs is required for short-term (as opposed to long-term) memory. Indeed, the key plasticity gene DopR1 is required in \u03b3, not \u03b1\u03b2 or \u03b1\u2032\u03b2\u2032 KCs, for short-term memory (Qin et al., 2012). It may be that mAChR-A is required in non-\u03b3 KC types for other forms of memory besides short-term aversive memory, such\u00a0as appetitive conditioning or other phases of memory like long-term memory. Our finding that mAChR-A is required in \u03b3 KCs for aversive short-term memory is consistent with our finding that mAChR-A knockdown in KCs disrupts training-induced depression of odor responses in MB-MVP2, an MBON postsynaptic to \u03b3 KCs required for aversive short-term memory (Perisse et al., 2016). However, the latter finding does not rule out the possibility that other MBONs postsynaptic to non-\u03b3 KCs may also be affected by mAChR-A knockdown in KCs.\n\nmAChR-A seems to inhibit KC odor responses, because knocking down mAChR-A increases odor responses in the calyx and \u03b3 lobe, while activating mAChR-A with bath or local application of muscarine decreases KC odor responses. Some details differ between the genetic and pharmacological results. In particular, while mAChR-A knockdown mainly affects \u03b3 KCs, with other subtypes inconsistently affected, muscarine reduces responses in all KC subtypes. What explains these differences? mAChR-A might be weakly activated in physiological conditions, in which case gain of function would cause a stronger effect than loss of function. Similarly, pharmacological activation of mAChR-A is likely a more drastic manipulation than a 60% reduction of mAChR-A mRNA levels. Although we cannot entirely rule out network effects from muscarine application, the effect of muscarine does not stem from PNs or APL (Figure 5C,D) and locally applied muscarine would have little effect on neurons outside the mushroom body.\n\nHow does mAChR-A inhibit odor-evoked Ca2+ influx in KCs? Given that mAChR-A signals through Gq when expressed in CHO cells (Ren et al., 2015), that muscarinic Gq signaling normally increases excitability in mammals (Caulfield and Birdsall, 1998), and that pan-neuronal artificial activation of Gq signaling in Drosophila larvae increases overall excitability (Becnel et al., 2013), it may be surprising that mAChR-A inhibits KCs. However, Gq signaling may exert different effects on different neurons in the fly brain, and some examples exist of inhibitory Gq signaling by mammalian mAChRs. M1/M3/M5 receptors acting via Gq can inhibit voltage-dependent Ca2+ channels (Gamper et al., 2004; Kammermeier et al., 2000; Keum et al., 2014; Suh et al., 2010), reduce voltage-gated Na\u00a0+currents (Cantrell et al., 1996), or trigger surface transport of KCNQ channels (Jiang et al., 2015), thus increasing inhibitory K+ currents. Drosophila mAChR-A may inhibit KCs through similar mechanisms.\n\nWhat is the source of ACh which activates mAChR-A and modulates odor responses? In the calyx, cholinergic PNs are certainly a major source of ACh. However, KCs themselves are cholinergic (Barnstedt et al., 2016) and release neurotransmitter in both the calyx and lobes (Christiansen et al., 2011). KCs form synapses on each other in the calyx (Zheng et al., 2018), possibly allowing mAChR-A to mediate lateral inhibition, in conjunction with the lateral inhibition provided by the GABAergic APL neuron (Lin et al., 2014).\n\nWhat function does mAChR-A serve in learning and memory? Our results indicate that mAChR-A knockdown prevents the learning-associated weakening of KC-MBON synapses, in particular for MBON-\u03b31pedc>\u03b1/\u03b2, aka MB-MVP2 (Figure 7). One potential explanation is that the increased odor-evoked Ca2+ influx observed in knockdown flies increases synaptic release, which overrides the learning-associated synaptic depression. However, increased odor-evoked Ca2+ influx per\u00a0se is unlikely on its own to straightforwardly explain a learning defect, because other genetic manipulations that increase odor-evoked Ca2+ influx in KCs either have no effect on, or even improve, olfactory learning. For example, knocking down GABA synthesis in the inhibitory APL neuron increases odor-evoked Ca2+ influx in KCs (Lei et al., 2013; Lin et al., 2014) and improves olfactory learning (Liu and Davis, 2009).\n\nThe most intuitive explanation would be that mAChR-A acts at KC synaptic terminals in KC axons to help depress KC-MBON synapses. Yet overexpressed mAChR-A localizes to KC dendrites, not axons, and functionally rescues mAChR-A hypomorphic mutants, showing that dendritic mAChR-A suffices for its function in learning and memory. Does this show that mAChR-A has no role in KC axons? Our inability to detect GFP expressed from the mAChR-A MiMIC gene trap suggests that normally there may only be a small amount of mAChR-A in KCs. It may be that with mAChR-A-FLAG overexpression, the correct (undetectable) amount of mAChR-A is trafficked to and functions in axons, but due to a bottleneck in axonal transport, the excess tagged mAChR-A is trapped in KC dendrites. While our results do not rule out this possibility, a general bottleneck in axonal transport seems unlikely as many overexpressed proteins are localized to KC axons (Trunova et al., 2011). We feel it is more parsimonious to take the dendritic localization of mAChR-A-FLAG at face value and infer that mAChR-A functions in KC dendrites.\n\nHow can mAChR-A in KC dendrites affect synaptic plasticity in KC axons? mAChR-A signaling might change the shape or duration of KC action potentials (Allen and Burnstock, 1990; Ghamari-Langroudi and Bourque, 2004), an effect that could potentially propagate to KC axon terminals (Juusola et al., 2007; Shu et al., 2006). Such changes in the action potential waveform may not be detected by calcium imaging, but could potentially affect a \u2018coincidence detector\u2019 in KC axons that detects when odor (i.e. KC activity) coincides with reward/punishment (i.e. dopamine). This coincidence detector is generally believed to be the Ca2+-dependent adenylyl cyclase rutabaga (Levin et al., 1992). Changing the waveform of KC action potentials could potentially affect local dynamics of Ca2+ influx near rutabaga molecules. In addition, rutabaga mutations do not abolish learning (mutants have\u00a0~40\u201350% of normal learning scores) (Yildizoglu et al., 2015), so there may be additional coincidence detection mechanisms affected by action potential waveforms. Testing this idea would require a better understanding of biochemical events underlying learning at KC synaptic terminals.\n\nAlternatively, mAChR-A\u2019s effects on synaptic plasticity may not occur acutely. Although we ruled out purely developmental effects of mAChR-A through adult-only RNAi expression (Figure 1E), knocking out mAChR-A for several days in adulthood might still affect KC physiology in a not-entirely-acute way. For example, as with other G-protein-coupled receptors (Wang and Zhuo, 2012), muscarinic receptors can affect gene expression (von der Kammer et al., 1998), which could have wide-ranging effects on KC physiology, for\u00a0example action potential waveform, expression of key genes required for synaptic plasticity, etc. Another intriguing possibility is suggested by an apparent paradox: both mAChR-A and the dopamine receptor Damb signal through Gq (Himmelreich et al., 2017), but mAChR-A promotes learning while Damb promotes forgetting (Berry et al., 2012). How can Gq mediate apparently opposite effects? Perhaps Gq signaling aids both learning and forgetting by generally rendering synapses more labile. Indeed, although damb mutants retain memories for longer than wildtype, their initial learning is slightly impaired (Berry et al., 2012); damb mutant larvae are also impaired in aversive olfactory learning (Selcho et al., 2009). Although one study reports that knocking down Gq in KCs did not impair initial memory (Himmelreich et al., 2017), the Gq knockdown may not have been strong enough; also, that study shocked flies with 90 V shocks, which also gives normal learning in mAChR-A knockdown flies (Figure 1\u2014figure supplement 1).\n\nSuch hypotheses posit that mAChR-A regulates synaptic plasticity \u2018competence\u2019 rather than participating directly in the plasticity mechanism itself. Why should synaptic plasticity competence be controlled by an activity-dependent mechanism? It is tempting to speculate that mAChR-A may allow a kind of metaplasticity (Abraham, 2008) in which exposure to odors (hence activation of mAChR-A in KCs) makes flies\u2019 learning mechanisms more sensitive. Indeed, mAChR-A is required for learning with moderate (50 V) shocks, not severe (90 V) shocks. Future studies may further clarify how muscarinic signaling contributes to olfactory learning.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Gene (Drosophila melanogaster)</td>\n      <td>mAChR-A</td>\n      <td></td>\n      <td>FLYB: FBgn0000037</td>\n      <td>Also known as: mAChR, mAcR-60C, DM1, Acr60C, CG4356</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. melanogaster)</td>\n      <td>MiMIC mAChR-A-stop</td>\n      <td>(Venken et al., 2011) PMID 21985007</td>\n      <td>BDSC:59216</td>\n      <td>mAChR-AMI13848</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. melanogaster)</td>\n      <td>UAS-GCaMP6f (attP40)</td>\n      <td>(Chen et al., 2013) PMID 23868258</td>\n      <td>BDSC:42747</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. melanogaster)</td>\n      <td>UAS-GCaMP6f (VK00005)</td>\n      <td>(Chen et al., 2013) PMID 23868258</td>\n      <td>BDSC:52869</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. melanogaster)</td>\n      <td>lexAop-GCaMP6f</td>\n      <td>(Barnstedt et al., 2016) PMID 26948892</td>\n      <td></td>\n      <td>Gift from S. Waddell</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. melanogaster)</td>\n      <td>UAS-mAChR-A RNAi 1</td>\n      <td>Bloomington Drosophila Stock Center</td>\n      <td>BDSC:27571</td>\n      <td>TRiP.JF02725</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. melanogaster)</td>\n      <td>UAS-mAChR-A RNAi 2</td>\n      <td>Vienna Drosophila Resource Center</td>\n      <td>VDRC:101407</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. melanogaster)</td>\n      <td>UAS-Dcr-2</td>\n      <td>Bloomington Drosophila Stock Center</td>\n      <td>BDSC:24651</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. melanogaster)</td>\n      <td>lexAop-GAL80</td>\n      <td>Bloomington Drosophila Stock Center</td>\n      <td>BDSC:32216</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. melanogaster)</td>\n      <td>tub-GAL80ts</td>\n      <td>(McGuire et al., 2003) PMID 14657498</td>\n      <td>BDSC:7108</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. melanogaster)</td>\n      <td>mb247-dsRed</td>\n      <td>(Riemensperger et al., 2005) PMID 16271874</td>\n      <td>FLYB:FBtp0022384</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. melanogaster)</td>\n      <td>GH146-GAL4</td>\n      <td>(Stocker et al., 1997) PMID 9110257</td>\n      <td>BDSC:30026</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. melanogaster)</td>\n      <td>OK107-GAL4</td>\n      <td>(Connolly et al., 1996) PMID 8953046</td>\n      <td>BDSC:854</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. melanogaster)</td>\n      <td>c305a-GAL4</td>\n      <td>(Krashes et al., 2007) PMID 17196534</td>\n      <td>BDSC:30829</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. melanogaster)</td>\n      <td>mb247-GAL4</td>\n      <td>(Zars et al., 2000) PMID 10784450</td>\n      <td>BDSC:50742</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. melanogaster)</td>\n      <td>R44E04-LexA</td>\n      <td>(Jenett et al., 2012) PMID 23063364</td>\n      <td>BDSC:52736</td>\n      <td>Gift from A. Thum</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. melanogaster)</td>\n      <td>R45H04-LexA</td>\n      <td>(Br\u00e4cker et al., 2013) PMID 23770186</td>\n      <td>FLYB:FBti0155893</td>\n      <td>Gift from A. Thum</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. melanogaster)</td>\n      <td>R12G04-LexA</td>\n      <td>(Jenett et al., 2012) PMID 23063364</td>\n      <td>BDSC:52448</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. melanogaster)</td>\n      <td>elav-GAL4</td>\n      <td>(Lin and Goodman, 1994) PMID 7917288</td>\n      <td>BDSC:458</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. melanogaster)</td>\n      <td>NP2631-GAL4</td>\n      <td>(Lin et al., 2014; Tanaka et al., 2008) PMID 24561998, 18395827</td>\n      <td>Kyoto Stock Center 104266</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. melanogaster)</td>\n      <td>GH146-FLP</td>\n      <td>(Hong et al., 2009; Lin et al., 2014) PMID 19915565,24561998</td>\n      <td>FLYB:FBtp0053491</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. melanogaster)</td>\n      <td>tub-FRT-GAL80-FRT</td>\n      <td>(Gordon and Scott, 2009; Lin et al., 2014) PMID 19217375, 24561998</td>\n      <td>BDSC:38880</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. melanogaster)</td>\n      <td>UAS-TNT</td>\n      <td>(Lin et al., 2014; Sweeney et al., 1995) PMID 24561998, 7857643</td>\n      <td>FLYB:FBtp0001264</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. melanogaster)</td>\n      <td>UAS-mCherry-CAAX</td>\n      <td>(Kakihara et al., 2008;Lin et al., 2014) PMID 18083504, 24561998</td>\n      <td>FLYB:FBtp0041366</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. melanogaster)</td>\n      <td>mb247-LexA</td>\n      <td>(Lin et al., 2014; Pitman et al., 2011) PMID 24561998</td>\n      <td>FLYB:FBtp0070099</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. melanogaster)</td>\n      <td>20xUAS-6xGFP</td>\n      <td>(Shearin et al., 2014) PMID 24451596</td>\n      <td>BDSC:52266</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. melanogaster)</td>\n      <td>UAS-mCD8-GFP</td>\n      <td>(Lee et al., 1999) PMID 10457015</td>\n      <td>BDSC:5130</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>nc82 (mouse monoclonal)</td>\n      <td>Developmental Studies Hybridoma Bank</td>\n      <td>nc82</td>\n      <td>(1:50, supernatant or 1:200, concentrate)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>FLAG (mouse monoclonal M2)</td>\n      <td>Sigma-Aldrich</td>\n      <td>F3165</td>\n      <td>(1:250)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Goat anti-mouse secondary Alexa 647</td>\n      <td>Abcam</td>\n      <td>ab150115</td>\n      <td>(1:500)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Goat anti-mouse secondary Alexa 546</td>\n      <td>Thermo Fisher</td>\n      <td>A11018</td>\n      <td>(1:1000)</td>\n    </tr>\n  </tbody>\n</table>\n\n### Fly strains\n\nFly strains (see below) were raised on cornmeal agar under a 12 hr light/12 hr dark cycle and studied 1\u201310 days post-eclosion. Strains were cultivated at 25\u02daC unless they expressed temperature-sensitive gene products (GAL80ts); in these cases, the experimental animals and all relevant controls were grown at 23\u02daC. To de-repress the expression of RNAi with GAL80ts, experimental and control animals were incubated at 31\u02daC for 7 days. Subsequent behavioral experiments were performed at 25\u02daC.\n\nExperimental animals carried transgenes over Canton-S chromosomes where possible to minimize genetic differences between strains. Details of fly strains are given in the Key Resources Table.\n\nUAS-mAChR-A-FLAG plasmid was generated by Gibson assembly of fragments using the NEBuilder HiFi Master Mix (NEB). Fragments were created by PCR using Phusion High-Fidelity DNA Polymerase (NEB). The full-length mAChR-A cDNA was purchased from GenScript (clone ID OFa11160). The vector was pTWF-attB, a gift from Prof. Oren Schuldiner (Yaniv et al., 2012). This vector consists of a FLAG tag in the C-terminal of the inserted gene and an attB site for site-specific integration of the transgene. PCR and Gibson assembly were carried out following the manufacturer\u2019s recommendations with the following primers:\n\nFor mAChR-A: tgggaattatcgacaagtttgtacaaaaaagcaggctATGGAGCCGGTCATGAGTC and cactttgtacaagaaagctgggtaATTGTAGACGCCGCGTAC\n\nFor pTWF-AttB: aaagctgggtaCTTGTACAAAGTGGTGAGCTCC and agcctgcttttttgtacAAACTTGTCGATAATTCCC\n\nTransgenes were injected into the attP2 landing site using \u03c6C31 integration (by BestGene).\n\n### Quantitative real-time PCR\n\nTotal RNA was extracted by EZ-RNA II Total RNA Isolation kit (Biological Industries, Israel) from 30 adult heads for each biological replicate. cDNA was generated from 1 \u00b5g total RNA with the High-Capacity cDNA Reverse Transcription Kit with RNase Inhibitor (Applied Biosystems). Real-time quantitative PCR was carried with TaqMan Fast Advanced Master Mix (Applied Biosystems) and run in technical triplicates on a StepOne Plus Real-Time PCR System (Applied Biosystems). Taqman assays were Dm01820303_g1 for mAChR-A and Dm02151962_g1 for EF1 (Ef1alpha100E, ThermoFisher). The expression levels obtained for mAChR-A were normalized to those of the housekeeping gene EF1. The fold change for mAChR-A was subsequently calculated by comparing to the normalized value of either ELAV-gal4 parent (for RNAi experiments) or w1118 flies (for MIMiC experiments).\n\n### Behavioral analysis\n\nBehavioral experiments were performed in a custom-built, fully automated apparatus (Claridge-Chang et al., 2009; Lin et al., 2014; Parnas et al., 2013). Single flies were housed in clear polycarbonate chambers (length 50 mm, width 5 mm, height 1.3 mm) with printed circuit boards (PCBs) at both floors and ceilings. Solid-state relays (Panasonic AQV253) connected the PCBs to a 50 V source.\n\nAir flow was controlled with mass flow controllers (CMOSens PerformanceLine, Sensirion). A carrier flow (2.7 l/min) was combined with an odor stream (0.3 l/min) obtained by circulating the air flow through vials filled with a liquid odorant. Odors were prepared at 10 fold dilution in mineral oil. Therefore, liquid dilution and mixing carrier and odor stimulus stream resulted in a final 100 fold dilution of odors. Fresh odors were prepared daily.\n\nThe 3 l/min total flow (carrier and odor stimulus) was split between 20 chambers resulting in a flow rate of 0.15 l/min per half chamber. Two identical odor delivery systems delivered odors independently to each half of the chamber. Air or odor streams from the two halves of the chamber converged at a central choice zone. The 20 chambers were stacked in two columns each containing 10 chambers and were backlit by 940 nm LEDs (Vishay TSAL6400). Images were obtained by a MAKO CMOS camera (Allied Vision Technologies) equipped with a Computar M0814-MP2 lens. The apparatus was operated in a temperature-controlled incubator (Panasonic MIR-154) maintained at 25\u02daC.\n\nA virtual instrument written in LabVIEW 7.1 (National Instruments) extracted fly position data from video images and controlled the delivery of odors and electric shocks. Data were analyzed in MATLAB 2015b (The MathWorks) and Prism 6 (GraphPad).\n\nA fly\u2019s preference was calculated as the percentage of time that it spent on one side of the chamber. Training and odor avoidance protocols were as depicted in Figure 1. The na\u00efve avoidance index was calculated as (preference for left side when it contains air) \u2013 (preference for left side when it contains odor). During training, MCH was paired with 12 equally spaced 1.25 s electric shocks at 50 V (Tully and Quinn, 1985). The learning index was calculated as (preference for MCH before training) \u2013 (preference for MCH after training). Flies were excluded from analysis if they entered the choice zone fewer than four times during odor presentation.\n\n### Functional imaging\n\nBrains were imaged by two-photon laser-scanning microscopy (Ng et al., 2002; Wang et al., 2003). Cuticle and trachea in a window overlying the required area were removed, and the exposed brain was superfused with carbogenated solution (95% O2, 5% CO2) containing 103 mM NaCl, 3 mM KCl, 5 mM trehalose, 10 mM glucose, 26 mM NaHCO3, 1 mM NaH2PO4, 3 mM CaCl2, 4 mM MgCl2, 5 mM N-Tris (TES), pH 7.3. Odors at 10\u22121 dilution were delivered by switching mass-flow controlled carrier and stimulus streams (Sensirion) via software controlled solenoid valves (The Lee Company). Flow rates at the exit port of the odor tube were 0.5 or 0.8 l/min.\n\nFluorescence was excited by a Ti-Sapphire laser centered at 910 nm, attenuated by a Pockels cell (Conoptics) and coupled to a galvo-resonant scanner. Excitation light was focussed by a 20X, 1.0 NA objective (Olympus XLUMPLFLN20XW), and emitted photons were detected by GaAsP photomultiplier tubes (Hamamatsu Photonics, H10770PA-40SEL), whose currents were amplified and transferred to the imaging computer. Two imaging systems were used, #1 for Figures 3\u20136 except 5C, and #2 for Figure 5C and Figure 7, which differed in the following components: laser (1: Mai Tai eHP DS, 70 fs pulses; 2: Mai Tai HP DS, 100 fs pulses; both from Spectra-Physics); microscope (1: Movable Objective Microscope; 2: DF-Scope installed on an Olympus BX51WI microscope; both from Sutter); amplifier for PMT currents (1: Thorlabs TIA-60; 2: Hamamatsu HC-130-INV); software (1: ScanImage 5; 2: MScan 2.3.01). Volume imaging on System 1 was performed using a piezo objective stage (nPFocus400, nPoint). Muscarine was applied locally by pressure ejection from borosilicate patch pipettes (resistance\u00a0~10 MOhm; capillary inner diameter 0.86 mm, outer diameter 1.5 mm; concentration in pipette 20 mM; pressure 12.5 psi) using a Picospritzer III (Parker). A red dye was added to the pipette to visualize the ejected fluid (SeTau-647, SETA BioMedicals) (Podgorski et al., 2012).\n\nMovies were motion-corrected in X-Y using the moco ImageJ plugin (Dubbs et al., 2016), with pre-processing to collapse volume movies in Z and to smooth the image with a Gaussian filter (standard deviation\u00a0=\u00a04 pixels; the displacements generated from the smoothed movie were then applied to the original, unsmoothed movie), and motion-corrected in Z by maximizing the pixel-by-pixel correlation between each volume and the average volume across time points. \u2206F/F, activity maps, sparseness and inter-odor correlation were calculated as in Lin et al. (2014). Briefly, movies were smoothed with a 5-pixel-square Gaussian filter (standard deviation 2). Baseline fluorescence was taken as the average fluorescence during the pre-stimulus period. Frames with sudden, large axial movements were discarded by correlating each frame to the baseline image and discarding it if the correlation fell below a threshold value, which was manually selected for each brain by noting the constant high correlation value when the brain was stationary and sudden drops in correlation when the brain moved. \u2206F/F was calculated for each pixel as the difference between mean fluorescence during the stimulus period vs. the baseline fluorescence (\u2206F), divided by the baseline fluorescence. For pixels where \u2206F did not exceed two times the standard deviation over time of that pixel\u2019s intensity during the pre-stimulus period, the pixel was considered non-responsive. We excluded non-responsive flies and flies whose motion could not be corrected.\n\nInter-odor correlations were calculated by first aligning the activity maps of each odor response by maximizing the inter-odor correlations of baseline fluorescence, and then converting image matrices of the activity maps of each odor response into linear vectors and calculating the Pearson correlation coefficients between each \u2018odor vector\u2019. A threshold for baseline fluorescence was applied as a mask to the activity map to exclude pixels with no baseline GCaMP6f signal. Population sparseness was calculated for activity maps using the following equation (Vinje and Gallant, 2000; Willmore and Tolhurst, 2001):\n\n$$\nS_{P}=\\frac{1}{1-\\frac{1}{N}}(1-\\frac{\\sumi=1N\\frac{r_{i}}{N}^{2}}{\\sumi=1N\\frac{r_{i}^{2}}{N}})\n$$\n\n### Structural imaging\n\nBrain dissections, fixation, and immunostaining were performed as described (Pitman et al., 2011; Wu and Luo, 2006). To visualize native GFP fluorescence, dissected brains were fixed in 4% (w/v) paraformaldehyde in PBS (1.86 mM NaH2PO4, 8.41 mM Na2HPO4, 175 mM NaCl) and fixed for 20 min at room temperature. Samples were washed for 3\u00a0\u00d7\u00a020 min in PBS containing 0.3% (v/v) Triton-X-100 (PBT). The neuropil was counterstained with nc82 (DSHB) or monoclonal anti-FLAG M2 antibody (F3165, Sigma) and goat anti-mouse Alexa 647 or Alexa 546. Primary antisera were applied for 1\u20132 days and secondary antisera for 1\u20132 days in PBT at 4\u02daC, followed by embedding in Vectashield. Images were collected on a Leica TCS SP5, SP8, or Nikon A1 confocal microscope and processed in ImageJ.\n\nAPL expression of tetanus toxin was scored by widefield imaging of mCherry. mCherry expression in APL was distinguished from 3XP3-driven dsRed from the GH146-FLP transgene by using separate filter cubes for dsRed (49004, Chroma: 545/25 excitation; 565 dichroic; 605/70 emission) and mCherry (LED-mCherry-A-000, Semrock: 578/21 excitation; 596 dichroic; 641/75 emission).\n\n### Statistics\n\nStatistical analyses were carried out in GraphPad Prism as described in figure legends and Supplementary file 1. In general, no statistical methods were used to predetermine sample sizes, but where conclusions were drawn from the absence of a statistically significant difference, a power analysis was carried out in G*Power to confirm that the sample size provided sufficient power to detect an effect of the expected size. The experimenter was blind to which hemispheres had APL neurons expressing tetanus toxin before post-experiment dissection (Figure 5) but not otherwise.\n",
+      "created_at": "2025-12-02T10:43:26.668991Z"
+    },
+    {
+      "id": "914919fa-0141-4f11-948a-9cd1b0dbb785",
+      "submission_id": "9f3ee021-9224-4c6e-8377-e180b4f36391",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Mani Ramaswami, Trinity College Dublin Ireland\n\nReviewers:\n- Andre Fiala, Georg-August-Universitaet Goettingen Germany\n\n## Review text\n\nDOI: [10.7554/eLife.48264.034](https://doi.org/10.7554/eLife.48264.034)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\n[Editors\u2019 note: a previous version of this study was rejected after peer review, but the authors submitted for reconsideration. The first decision letter after peer review is shown below.]\n\nThank you for submitting your work entitled \"Inhibitory muscarinic acetylcholine receptors enhance aversive olfactory conditioning in adult Drosophila\" for consideration by eLife. Your article has been reviewed by three peer reviewers, including Mani Ramaswami as the Reviewing Editor and Reviewer #1, and the evaluation has been overseen by a Reviewing Editor and a Senior Editor.\n\nOur decision has been reached after consultation between the reviewers. Based on these discussions and the individual reviews below, we regret to inform you that your work will not be considered further for publication in eLife. However, we do feel the work could be made acceptable but only after the essential changes noted below are handled experimentally.\n\nAll the reviewers note the interest in the core observation that the Drosophila mAChR mediates inhibition in the mushroom body as well that it is required in Kenyon cells for aversive associative memory. However, the mechanism by which it functions, in terms of the receptor's localisation at Kenyon cell presynaptic terminals and role in mediating signalling required for learning-associated depression of \u03b3 Kenyon cell \u2013 MBON synapses is not sufficiently well established. In addition to responding constructively to the various specific comments listed in the appended reviews, the reviewers felt that would be crucially important to: (a) demonstrate (potentially using lines expressing genomically-tagged mAChRs) the physical presence of mAChR in \u03b3 Kenyon cell presynapses; and (b) reanalyse data for the crucial Figure 7D in a way shows changes to MCH/OCT and IAA induced responses separately, in order to clarify that there is no depression to either the shock paired or shock unpaired odorant. (The current Figure 7D could potentially be explained if there were depression observed in both cases).\n\nReviewer #1:\n\nBielopolsky and coauthors analyse the expression muscarinic AcRs in the Drosophila mushroom body as well as in their function in the physiology and plasticity of Kenyon cells that involved in encoding associative memory. This is interesting as the role of metabotropic ACh signalling has not been previously analysed at this level of resolution, in neurons and synapses that encode memory. The major conclusion of the paper is that mAchR is required in \u03b3 Kenyon cells to mediate synaptic depression that underlies reduced response to odor that has been associated with an aversive stimulus. This conclusion is well justified, based on several well-done experiments that point to the cell-autonomous function of mAChRs in Kenyon cells, their physiological role in reducing odor-evoked response, and their function both for physiological depression and associative memory formation. It is also broadly interesting mAChR function in Drosophila may prove to be anagolous to the role of mGluR in mammalian synapses. The paper is well written and clear.\n\nOther, less clearly resolved but interesting aspects of the paper involve fundamental aspects of mAChR physiology in the calyx and in different classes of Kenyon cell axons, as revealed by RNAi based knockdown experiments and direct muscarine application. Muscarine application increases basal calcium-levels in calyx, but reduces odor evoked responses in axons may be explained as the authors proposed, but there could be alternative explanations.\n\nEssential revisions:\n\n1) Figure 7 shows normal levels of memory \u2013 which superficially contradicts Figure 2. Better and more clear labelling should be used to show that this is only true when there are much higher levels of aversive stimulation. This is also confusing because the imaging experiments shown in subsequent panels of the same figure use \"normal\" and lower levels of aversive stimulation.\n\n2) The observations Figure 6 (subsection \u201cKC odor responses are decreased by an mAChR agonist\u201d) seem to be overinterpreted. I think the data are fine to include, but the differences in OCT responses vs. MCH responses in the different classes of Kenyon cell axons etc. are not particularly compelling and may simply be at the level of experimental and biological noise. I suggest focusing on the main, robust and interpretable thread of these observations, and to present the other data observations that will take follow up work to understand completely.\n\n3) I also found the robust effect of mAChR in \u03b1\u2032\u03b2\u2032 cells to be confusing, given its apparent weak expression in this class of Kenyon cell. Can this be explained \u2013 perhaps the expression is not perfectly revealed by the MiMIC conversion line?\n\n4) In subsection \u201cmAChR-A is required for olfactory learning in \u03b3 KCs, not \u03b1\u03b2 or \u03b1\u2032\u03b2\u2032 KCs\u201d, \"\u03b3 neurons project to the horizontal lobes only, while the axons of \u03b1\u03b2 and \u03b1\u2032\u03b2\u2032 neurons bifurcate to form the \u03b1 an \u03b1\u2032 portions of the vertical lobes and the \u03b2 and \u03b2\u2032 portions of the horizontal lobes\" is a bit confusing.\n\nReviewer #2:\n\nIn this manuscript, the authors knock down a muscarinic acetylcholine receptor (mAChR-A) first, in all Kenyon cells (KCs) and then in subsets, while reading out flies' ability to form odor-shock associations as well as neuronal calcium responses. They conclude that mAChR-As mediate a spatially localized inhibition of odor responses in the dendritic as well as the axonal compartments of Kenyon cells and that this inhibition is needed in \u03b3 Kenyon cells, specifically in the horizontal lobe for learning.\n\nA major failing is the use of imprecise RNAi based methods to knockdown mAChR-A, the efficacy of which in blocking behavior depends on the drivers used (see essential revisions 1). Another issue is the way the Calcium imaging data was analyzed. The authors use imprecise analyses and then report a negative result (see essential revisions 1 and 2).\n\nI feel the manuscript has convincingly shown that mAChRs mediate cholinergic inhibition and that this may affect learning in some way. This is an interesting, initial result. The additional claims about how it affects learning and that it is necessary in \u03b3 KCs lobes are not justified by the data and analyses. Significant re-analysis and possibly some new experiments might be needed in order to draw any mechanistic conclusions. How does the mAChR-A mediated inhibition influence plasticity? This question has not been answered here.\n\nEssential revisions:\n\n1) \u03b3 KC specificity claim is not justified:\n\nThe RNAi knock downs depended on the driver lines used (subsection \u201cmAChR-A is required for olfactory learning in \u03b3 KCs, not \u03b1\u03b2 or \u03b1\u2032\u03b2\u2032 KCs\u201d). The authors use different RNAi driver in the behavior (Figure 2) and imaging experiments (Figure 3). In fact, the significant reduction in response for OCT not seen in Figure 3, appears in Figure 4E, reinforcing the notion that the differences being detected here fluctuate depending on the strength of the manipulation and might not reflect real physiological differences.\n\nThe signal to noise of the Ca response trace would depend on the size of the ROI being averaged. More careful analysis and/or experiments would be needed to conclude that \u03b3 KCs have larger increases in response sizes than other cell types. The authors should either image and analyze single KC somata or at least, draw ROIs that average a fixed number of pixels from a single plane in the volume (averaging in z should also be controlled for).\n\n2) Claims of lobe specific effects of localized muscarine application are not justified:\n\nIn Figure 6, the authors claim to measure Ca-responses to either muscarine alone or muscarine plus odor in the various lobes and compare the effect of local muscarine application. When muscarine was applied in the horizontal lobes (Figures 6C,D), the spread of muscarine into the various lobes could be non-uniform. The regions of interest over which \u2206F/F values were calculated (as drawn in Figure 6A) would probably include different ratios of muscarine-applied and muscarine un-applied neuropil. Ca-fluorescence should only be extracted from regions of the lobes over-lapping with muscarine (red dye) spread. This should be straightforward to re-analyze. The lack of a clear and significant difference in most if not all the lobes in Figure 6G might also be a result of this effect.\n\nReviewer #3:\n\nBielopolsky et al. report learning experiments in Drosophila melanogaster. They use an RNAi approach to knockdown a metabotropic acetylcholine receptor in the mushroom body, and this affects aversive associative olfactory learning. Downregulation of this receptor in \u03b3-type Kenyon cells, but not other Kenyon cell types, is sufficient to impair learning. Odor-evoked calcium activity increases mainly in the Kenyon cell input region of the mushroom body (calyx), but also to some degree in axonal regions and not for both odorants used. Application of the receptor agonist muscarine also slightly decreased odor-evoked calcium activity in Kenyon cells when applied to the axons and slightly increased baseline calcium. However, application of muscarine to the calyx increased baseline calcium more pronounced and decreased odor-evoked calcium influx. Local injections of muscarine into lobes cause a slight decrease of calcium in \u03b3 lobes which leads them to conclude that mAChR-A might be present in axons and contribute to learning-induced synaptic plasticity. The data I do not find convincing because the restriction of the injected drug is only confirmed by dye application. Injection of the drug into the calyx causes effects in the \u03b1 lobe. It might be possible that injection into the in \u03b3 lobe also affects calycal input. The argument that increasing the strength of the US compensates for the learning deficit induced by the RNAi construct I do not find convincing because one could conclude that a modified CS (changed through the RNAi expression) requires a stronger US to be learned. Also, the conclusion that \"odor coding\" is not affected by the mAchR-A knockdown I find difficult given that odor-evoked calcium is significantly increased. The plasticity observed in the MB-MVP2 neuron 3 hours after training and the absence of this plasticity when the receptor is downregulated is a very indirect hint that the receptor might be present on axons. Overall, the finding that a muscarinic acetylcholine receptor is required in \u03b3-type Kenyon cells for learning but not odor avoidance is very nice, and I would like to congratulate the authors for that interesting result. The conclusion that this receptor is also localized to axons and has a role in presynaptic plasticity is not convincing. Localization studies of the receptor would be required.\n\n[Editors\u2019 note: what now follows is the decision letter after the authors submitted for further consideration.]\n\nThank you for resubmitting your work entitled \"Inhibitory muscarinic acetylcholine receptors enhance aversive olfactory learning in adult Drosophila\" for further consideration at eLife. Your revised article has been favorably evaluated by K VijayRaghavan (Senior Editor), Mani Ramaswami as Reviewing Editor, and two reviewers.\n\nThe manuscript has been greatly improved by careful and constructive revisions but there is one remaining issue that needs to be addressed before acceptance.\n\nWe would like you to please consider the comments below (reproduced verbatim) and respond appropriately with revisions if you agree, or with a brief rebuttal if you do not, and to submit a final revised manuscript that will then be acceptable for publication.\n\n1) The authors emphasize differential effects on subsets of KCs when the data do not justify these claims. The claim of differential effects on KC subtypes may detract from the clear communication of the central observations.\n\na) The authors claim in Figure 2 with the driver MB247 Gal4 that only \u03b3 KC based learning involves AChR-A, by receptor knockdown. The behavioral readout here is aversive, differential odor conditioning with a specific CS-US pairing protocol. Had the authors used appetitive reinforcement or spaced training protocols with more repeats, they might have seen behavioral effects with other KC subtypes as well. Furthermore, they use a different driver, OK107 Gal4 for knockdown in Figure 3 to claim that odor responses are significantly increased by receptor knockdown only in \u03b3 KCs. The use of different drivers to draw a parallel between behavior and neuronal activity is not strictly correct.\n\nb) The main claim made in Figure 6 is that muscarine application in the calyx differentially affects KC subtypes. This claim is based on the observation that muscarine application in the calyx depressed odor responses in all lobes except the \u03b1 lobe. It is hard to explain how a manipulation in the calyx differentially affects only the \u03b1 lobe axonal branch of \u03b1/\u03b2 KCs. The odor-response traces for this same \u03b1 lobe in Figure 6D rise when muscarine is applied, before odor delivery. It is unclear if the experiment is clean enough to support the claim being made. Note also that the \u03b3 KCs, which are described as the main targets of the effect of mAChR-A in Figure 2 and Figure 3 behave similarly to other KC subtypes in this figure.\n\nc) Figure 8 shows that mAChR-A knockdown prevents learning-related plasticity in a \u03b3 KC compartment. This does not show that other KCs and KC compartments are not similarly affected by mAChR-A.\n\nd) I would instead argue that Figure 5 indicates that odor responses in all KC subtypes are affected by mAChRs in a similar, important, surprising manner; consistent with the behavior and MBON imaging observations.\n",
+      "created_at": "2025-12-02T10:43:26.668991Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T10:43:26.668991Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T10:43:26.668991Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "08da4a50-f09d-4590-aabb-a7498b797bdd",
+      "content_id": "ea87d182-6052-459d-991c-c780e7dcf3e8",
+      "claim_id": "C1",
+      "claim": "Olfactory associative learning in Drosophila is mediated by synaptic plasticity between the Kenyon cells of the mushroom body and their output neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Olfactory associative learning in Drosophila is mediated by synaptic plasticity between the Kenyon cells of the mushroom body and their output neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement in the abstract that represents established knowledge in the field, as evidenced by the extensive citations in the introduction.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:43:26.668991Z"
+    },
+    {
+      "id": "aa023c14-cbde-450a-b178-92708e72ec34",
+      "content_id": "ea87d182-6052-459d-991c-c780e7dcf3e8",
+      "claim_id": "C2",
+      "claim": "Both Kenyon cells and their inputs from projection neurons are cholinergic.",
+      "claim_type": "EXPLICIT",
+      "source": "Both Kenyon cells and their inputs from projection neurons are cholinergic, yet little is known about the physiological function of muscarinic acetylcholine receptors in learning in adult flies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations in the main text (Barnstedt et al., 2016; Yasuyama and Salvaterra, 1999).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:43:26.668991Z"
+    },
+    {
+      "id": "28f33350-12a2-4082-b615-e23aac58d34e",
+      "content_id": "ea87d182-6052-459d-991c-c780e7dcf3e8",
+      "claim_id": "C3",
+      "claim": "Aversive olfactory learning in adult flies requires type A muscarinic acetylcholine receptors (mAChR-A), particularly in the gamma subtype of Kenyon cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we show that aversive olfactory learning in adult flies requires type A muscarinic acetylcholine receptors (mAChR-A), particularly in the gamma subtype of Kenyon cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding supported by behavioral experiments shown in Figures 1 and 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:43:26.668991Z"
+    },
+    {
+      "id": "95afee1d-b002-49f3-8e81-5c34492f92f7",
+      "content_id": "ea87d182-6052-459d-991c-c780e7dcf3e8",
+      "claim_id": "C4",
+      "claim": "mAChR-A inhibits odor responses in Kenyon cells.",
+      "claim_type": "EXPLICIT",
+      "source": "mAChR-A inhibits odor responses and is localized in Kenyon cell dendrites.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by calcium imaging data in Figures 3-6 showing increased odor responses with mAChR-A knockdown and decreased responses with muscarine application.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:43:26.668991Z"
+    },
+    {
+      "id": "87b710c7-f7c1-4d2f-bdfb-2ebb879179b2",
+      "content_id": "ea87d182-6052-459d-991c-c780e7dcf3e8",
+      "claim_id": "C5",
+      "claim": "mAChR-A is localized in Kenyon cell dendrites.",
+      "claim_type": "EXPLICIT",
+      "source": "mAChR-A inhibits odor responses and is localized in Kenyon cell dendrites.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by immunostaining data in Figure 7 showing FLAG-tagged mAChR-A expression in the calyx.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:43:26.668991Z"
+    },
+    {
+      "id": "9641f3e4-5f8d-46c6-ae09-c6fdfd20d0b6",
+      "content_id": "ea87d182-6052-459d-991c-c780e7dcf3e8",
+      "claim_id": "C6",
+      "claim": "mAChR-A knockdown impairs the learning-associated depression of odor responses in a mushroom body output neuron.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, mAChR-A knockdown impairs the learning-associated depression of odor responses in a mushroom body output neuron.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by imaging data in Figure 8 showing that mAChR-A knockdown prevents training-induced depression of MB-MVP2 responses.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:43:26.668991Z"
+    },
+    {
+      "id": "36e47501-f7cf-4c60-9173-8908e9fcc25b",
+      "content_id": "ea87d182-6052-459d-991c-c780e7dcf3e8",
+      "claim_id": "C7",
+      "claim": "mAChR-A function in Kenyon cell dendrites is required for synaptic plasticity between Kenyon cells and their output neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results suggest that mAChR-A function in Kenyon cell dendrites is required for synaptic plasticity between Kenyon cells and their output neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the combination of localization data (Figure 7) and plasticity data (Figure 8).",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:43:26.668991Z"
+    },
+    {
+      "id": "959c835d-5559-4617-8ae3-b27fb3c850d4",
+      "content_id": "ea87d182-6052-459d-991c-c780e7dcf3e8",
+      "claim_id": "C8",
+      "claim": "Drosophila larvae with reduced mAChR-A expression in KCs show impaired aversive olfactory learning.",
+      "claim_type": "EXPLICIT",
+      "source": "Drosophila larvae with reduced mAChR-A expression in KCs show impaired aversive olfactory learning (Silva et al., 2015), but it remains unknown whether mAChR-A in KCs also functions in learning in adult flies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Silva et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:43:26.668991Z"
+    },
+    {
+      "id": "0bb7e851-5597-48cc-9009-026fbb75419a",
+      "content_id": "ea87d182-6052-459d-991c-c780e7dcf3e8",
+      "claim_id": "C9",
+      "claim": "Both UAS-RNAi lines (RNAi 1 and RNAi 2) strongly reduce mAChR-A levels when expressed pan-neuronally.",
+      "claim_type": "EXPLICIT",
+      "source": "Both RNAi lines strongly reduce mAChR-A levels (RNAi 1: 39 \u00b1 8% of elav-GAL4 control, or 61 \u00b1 8% below normal; RNAi 2: 43 \u00b1 10% of normal; mean \u00b1 s.e.m.; see Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by qRT-PCR data shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:43:26.668991Z"
+    },
+    {
+      "id": "d149eba0-a0a6-49fa-be33-53a68579431f",
+      "content_id": "ea87d182-6052-459d-991c-c780e7dcf3e8",
+      "claim_id": "C10",
+      "claim": "Knocking down mAChR-A in KCs using OK107-GAL4 significantly reduces short-term aversive learning in adult flies.",
+      "claim_type": "EXPLICIT",
+      "source": "Under these conditions, both UAS-RNAi transgenes significantly reduced aversive learning, whether training against MCH or OCT (Figure 1B,C and Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by behavioral data shown in Figure 1B,C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:43:26.668991Z"
+    },
+    {
+      "id": "4abb0d24-a7c2-452b-8376-d26fd1074453",
+      "content_id": "ea87d182-6052-459d-991c-c780e7dcf3e8",
+      "claim_id": "C11",
+      "claim": "Knocking down mAChR-A did not affect learning when flies were trained with a more intense shock (90 V instead of 50 V).",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, knocking down mAChR-A did not affect learning when we trained flies with a more intense shock (90 V instead of 50 V, Figure 1\u2014figure supplement 1), suggesting that mAChR-A may only be required for learning with moderate intensity reinforcement, not severe reinforcement.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by behavioral data shown in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:43:26.668991Z"
+    },
+    {
+      "id": "9041e399-6b32-4664-a3cf-feb8dcbe4687",
+      "content_id": "ea87d182-6052-459d-991c-c780e7dcf3e8",
+      "claim_id": "C12",
+      "claim": "mAChR-A may only be required for learning with moderate intensity reinforcement, not severe reinforcement.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, knocking down mAChR-A did not affect learning when we trained flies with a more intense shock (90 V instead of 50 V, Figure 1\u2014figure supplement 1), suggesting that mAChR-A may only be required for learning with moderate intensity reinforcement, not severe reinforcement.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation based on the differential effects of mAChR-A knockdown at different shock intensities.",
+      "evidence_type": "[\"SPECULATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:43:26.668991Z"
+    },
+    {
+      "id": "3f78e5c3-1c96-4f1a-b36e-cf0a45ce3a85",
+      "content_id": "ea87d182-6052-459d-991c-c780e7dcf3e8",
+      "claim_id": "C13",
+      "claim": "Knocking down mAChR-A had no effect on na\u00efve avoidance of MCH and OCT.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this, knocking down mAChR-A had no effect on na\u00efve avoidance of MCH and OCT (Figure 1D; see Materials and methods) or flies' reaction to electric shock (Figure 1\u2014figure supplement 1), showing that the defect was specific to learning, rather than reflecting a failure to detect odors or shock.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by behavioral data shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:43:26.668991Z"
+    },
+    {
+      "id": "514f6bc9-a000-4fce-851c-68fbba9b4db2",
+      "content_id": "ea87d182-6052-459d-991c-c780e7dcf3e8",
+      "claim_id": "C14",
+      "claim": "Knocking down mAChR-A had no effect on flies' reaction to electric shock.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this, knocking down mAChR-A had no effect on na\u00efve avoidance of MCH and OCT (Figure 1D; see Materials and methods) or flies' reaction to electric shock (Figure 1\u2014figure supplement 1), showing that the defect was specific to learning, rather than reflecting a failure to detect odors or shock.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by behavioral data shown in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:43:26.668991Z"
+    },
+    {
+      "id": "75e12169-ee6f-4518-ad72-e44e6117d318",
+      "content_id": "ea87d182-6052-459d-991c-c780e7dcf3e8",
+      "claim_id": "C15",
+      "claim": "Adult-only knockdown of mAChR-A in KCs reduced learning.",
+      "claim_type": "EXPLICIT",
+      "source": "Flies were grown at 23\u00b0C until 3 days after eclosion and were then transferred to 31\u00b0C for 7 days. Adult-only knockdown of mAChR-A in KCs reduced learning (Figure 1E), just as constitutive knockdown did, indicating that mAChR-A plays a physiological, not purely developmental, role in aversive learning.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by behavioral data using GAL80ts shown in Figure 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:43:26.668991Z"
+    },
+    {
+      "id": "1d34d7e2-e63f-4207-9858-062dd0ab29e4",
+      "content_id": "ea87d182-6052-459d-991c-c780e7dcf3e8",
+      "claim_id": "C16",
+      "claim": "mAChR-A plays a physiological, not purely developmental, role in aversive learning.",
+      "claim_type": "EXPLICIT",
+      "source": "Adult-only knockdown of mAChR-A in KCs reduced learning (Figure 1E), just as constitutive knockdown did, indicating that mAChR-A plays a physiological, not purely developmental, role in aversive learning.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the adult-only knockdown experiment shown in Figure 1E.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:43:26.668991Z"
+    },
+    {
+      "id": "8cb777ae-ef22-4f30-b957-0a355b6037bd",
+      "content_id": "ea87d182-6052-459d-991c-c780e7dcf3e8",
+      "claim_id": "C17",
+      "claim": "mAChR-A-MiMIC-GAL4 drove GFP expression in the \u03b1\u03b2 and \u03b3 lobes, but not the \u03b1\u2032\u03b2\u2032 lobes of the mushroom body.",
+      "claim_type": "EXPLICIT",
+      "source": "mAChR-A-MiMIC-GAL4 drove GFP expression throughout the brain, consistent with previous reports (Blake et al., 1993; Croset et al., 2018; Davie et al., 2018; Hannan and Hall, 1996) and with the fact that the Drosophila brain is mostly cholinergic. In the mushroom bodies, GFP was expressed in the \u03b1\u03b2 and \u03b3 lobes, but not the \u03b1\u2032\u03b2\u2032 lobes (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by imaging data shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:43:26.668991Z"
+    },
+    {
+      "id": "67cbe43b-0494-40a1-ba07-78c790752d41",
+      "content_id": "ea87d182-6052-459d-991c-c780e7dcf3e8",
+      "claim_id": "C18",
+      "claim": "mAChR-A is more highly expressed in \u03b1\u03b2 and \u03b3 KCs than in \u03b1\u2032\u03b2\u2032 KCs according to single-cell transcriptomic analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with these MiMIC results, two recently reported databases of single-cell transcriptomic analysis of the Drosophila brain (Croset et al., 2018; Davie et al., 2018) confirm that mAChR-A is more highly expressed in \u03b1\u03b2 and \u03b3 KCs than in \u03b1\u2032\u03b2\u2032 KCs (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by single-cell transcriptome data shown in Figure 2\u2014figure supplement 1 and citations to Croset et al., 2018 and Davie et al., 2018.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:43:26.668991Z"
+    },
+    {
+      "id": "24d8a5e9-339a-40af-8e61-afe2255a533c",
+      "content_id": "ea87d182-6052-459d-991c-c780e7dcf3e8",
+      "claim_id": "C19",
+      "claim": "Learning scores were reduced when mAChR-A RNAi 1 was expressed in \u03b1\u03b2 and \u03b3 KCs or \u03b3 KCs alone, but not when expressed in \u03b1\u03b2 or \u03b1\u2032\u03b2\u2032 KCs.",
+      "claim_type": "EXPLICIT",
+      "source": "Learning scores were reduced compared to controls when mAChR-A RNAi 1 was expressed in \u03b1\u03b2 and \u03b3 KCs or \u03b3 KCs alone, but not when mAChR-A RNAi 1 was expressed in \u03b1\u03b2 or \u03b1\u2032\u03b2\u2032 KCs. (mean \u00b1 SEM, n (left to right): 69, 41, 70, 76, 69, 66, 71, 50, 68, **p<0.01, ***p<0.001, Kruskal-Wallis test with Dunn's multiple comparisons test).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by behavioral data shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:43:26.668991Z"
+    },
+    {
+      "id": "e7cd90aa-0329-42ff-a9a8-2d758e4c0870",
+      "content_id": "ea87d182-6052-459d-991c-c780e7dcf3e8",
+      "claim_id": "C20",
+      "claim": "mAChR-A is specifically required in \u03b3 KCs for aversive olfactory learning and short-term memory.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that mAChR-A is specifically required in \u03b3 KCs for aversive olfactory learning and short-term memory.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the KC subtype-specific knockdown experiments shown in Figure 2B.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:43:26.668991Z"
+    },
+    {
+      "id": "7d63dad9-7c57-4a29-9acf-cd25f397eb89",
+      "content_id": "ea87d182-6052-459d-991c-c780e7dcf3e8",
+      "claim_id": "C21",
+      "claim": "Knocking down mAChR-A in KCs increased odor-evoked Ca2+ influx in the mushroom body calyx.",
+      "claim_type": "EXPLICIT",
+      "source": "Knocking down mAChR-A in KCs increased odor-evoked Ca2+ influx in the mushroom body calyx, where KC dendrites reside (Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by calcium imaging data shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:43:26.668991Z"
+    },
+    {
+      "id": "8d521c7c-42df-4cf9-b3ed-d1dac366d984",
+      "content_id": "ea87d182-6052-459d-991c-c780e7dcf3e8",
+      "claim_id": "C22",
+      "claim": "mAChR-A is a Gq-coupled receptor whose activation leads to Ca2+ release from internal stores.",
+      "claim_type": "EXPLICIT",
+      "source": "This result is somewhat surprising because mAChR-A is a Gq-coupled receptor whose activation leads to Ca2+ release from internal stores (Ren et al., 2015), which predicts that mAChR-A knockdown should decrease, not increase, odor-evoked Ca2+ influx in KCs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Ren et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:43:26.668991Z"
+    },
+    {
+      "id": "9d954eab-cc60-4aba-8395-711074459e69",
+      "content_id": "ea87d182-6052-459d-991c-c780e7dcf3e8",
+      "claim_id": "C23",
+      "claim": "Only in the \u03b3 lobe was the effect of mAChR-A knockdown on odor responses statistically significant for both MCH and OCT.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, although odor responses in all lobes were increased by mAChR-A knockdown, only in the \u03b3 lobe was the effect statistically significant for both MCH and OCT (Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by calcium imaging data shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:43:26.668991Z"
+    },
+    {
+      "id": "6dd41104-f237-44bc-86f2-a982afadb736",
+      "content_id": "ea87d182-6052-459d-991c-c780e7dcf3e8",
+      "claim_id": "C24",
+      "claim": "mAChR-A knockdown did not affect the sparseness or inter-odor correlation of KC population odor responses when GCaMP6f and mAChR-A-RNAi 2 were expressed in all KCs.",
+      "claim_type": "EXPLICIT",
+      "source": "When GCaMP6f and mAChR-A-RNAi 2 were expressed in all KCs, mAChR-A knockdown did not affect the sparseness or inter-odor correlation of KC population odor responses (Figure 4A\u2013C) even though it increased overall calyx responses.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by calcium imaging data shown in Figure 4A-C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:43:26.668991Z"
+    },
+    {
+      "id": "e30728fb-e712-4fa3-8623-f88d9216b89e",
+      "content_id": "ea87d182-6052-459d-991c-c780e7dcf3e8",
+      "claim_id": "C25",
+      "claim": "\u03b3-only expression of mAChR-A-RNAi 1 increased odor responses in the calyx and, in the case of OCT, in the \u03b3 lobe.",
+      "claim_type": "EXPLICIT",
+      "source": "GCaMP6f was visible mainly in the \u03b3 lobe (Figure 4D). \u03b3-only expression of mAChR-A-RNAi 1 increased odor responses in the calyx (here, dendrites of \u03b3 KCs only) and, in the case of OCT, in the \u03b3 lobe (Figure 4E,F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by calcium imaging data shown in Figure 4E,F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:43:26.668991Z"
+    },
+    {
+      "id": "408664db-9e70-44ea-a923-0bfd486e5122",
+      "content_id": "ea87d182-6052-459d-991c-c780e7dcf3e8",
+      "claim_id": "C26",
+      "claim": "\u03b3-only expression of mAChR-A-RNAi 1 did not affect the sparseness or inter-odor correlation of \u03b3 KCs.",
+      "claim_type": "EXPLICIT",
+      "source": "As with pan-KC expression, \u03b3-only expression of mAChR-A-RNAi 1 did not affect the sparseness or inter-odor correlation of \u03b3 KCs (Figure 4G\u2013I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by calcium imaging data shown in Figure 4G-I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:43:26.668991Z"
+    },
+    {
+      "id": "87a0a419-9a69-46be-a109-943b542d9baf",
+      "content_id": "ea87d182-6052-459d-991c-c780e7dcf3e8",
+      "claim_id": "C27",
+      "claim": "mAChR-A knockdown does not impair learning through increased overlap in KC population odor representations.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, mAChR-A knockdown does not impair learning through increased overlap in KC population odor representations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the sparseness and correlation data shown in Figure 4.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:43:26.668991Z"
+    },
+    {
+      "id": "60f5b8b4-306b-4bc6-b658-561858206a59",
+      "content_id": "ea87d182-6052-459d-991c-c780e7dcf3e8",
+      "claim_id": "C28",
+      "claim": "Muscarine strongly decreased odor responses in all subtypes of KCs.",
+      "claim_type": "EXPLICIT",
+      "source": "Muscarine strongly decreased odor responses in all subtypes of KCs (Figure 5A,B, Figure 5\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by calcium imaging data shown in Figure 5A,B and Figure 5\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:43:26.668991Z"
+    },
+    {
+      "id": "864fde16-db14-4c2d-9a85-b1a31b210394",
+      "content_id": "ea87d182-6052-459d-991c-c780e7dcf3e8",
+      "claim_id": "C29",
+      "claim": "Muscarine did not significantly affect the amplitude of odor responses in PN axons in the calyx.",
+      "claim_type": "EXPLICIT",
+      "source": "However, muscarine did not significantly affect the amplitude of odor responses in PN axons in the calyx (Figure 5C), suggesting that the effect of muscarine on KCs arose in KCs, not earlier in the olfactory pathway.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by calcium imaging data shown in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:43:26.668991Z"
+    },
+    {
+      "id": "1547d1ed-0c44-4601-9bae-12ec7932703e",
+      "content_id": "ea87d182-6052-459d-991c-c780e7dcf3e8",
+      "claim_id": "C30",
+      "claim": "The effect of muscarine on KCs arose in KCs, not earlier in the olfactory pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "However, muscarine did not significantly affect the amplitude of odor responses in PN axons in the calyx (Figure 5C), suggesting that the effect of muscarine on KCs arose in KCs, not earlier in the olfactory pathway.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the PN imaging data shown in Figure 5C.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:43:26.668991Z"
+    },
+    {
+      "id": "d14ad75d-1a8b-4075-bc7f-1b03201f9b54",
+      "content_id": "ea87d182-6052-459d-991c-c780e7dcf3e8",
+      "claim_id": "C31",
+      "claim": "Muscarine decreased KC odor responses both in control hemispheres and hemispheres where APL synaptic output was blocked by tetanus toxin.",
+      "claim_type": "EXPLICIT",
+      "source": "Muscarine decreased KC odor responses both in control hemispheres and hemispheres where APL synaptic output was blocked by tetanus toxin (Figure 5D), and the effect of muscarine was not significantly different between the two cases (Figure 5E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by calcium imaging data shown in Figure 5D,E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:43:26.668991Z"
+    },
+    {
+      "id": "cd95db29-43db-4189-9069-a889791eaa4b",
+      "content_id": "ea87d182-6052-459d-991c-c780e7dcf3e8",
+      "claim_id": "C32",
+      "claim": "Muscarine does not act solely by activating APL or by enhancing inhibition on KCs.",
+      "claim_type": "EXPLICIT",
+      "source": "This result indicates that muscarine does not act solely by activating APL or by enhancing inhibition on KCs (e.g. increasing membrane localization of GABAA receptors).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the APL-TNT experiment shown in Figure 5D,E.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:43:26.668991Z"
+    },
+    {
+      "id": "6db171b5-45d3-4510-8efa-d86226b3ec02",
+      "content_id": "ea87d182-6052-459d-991c-c780e7dcf3e8",
+      "claim_id": "C33",
+      "claim": "Applying muscarine to the calyx in the absence of odor stimuli increased GCaMP6f signal in the calyx and \u03b1 lobe.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, applying muscarine to the calyx in the absence of odor stimuli increased GCaMP6f signal in the calyx and \u03b1 lobe, with small increases in the \u03b2 and \u03b3 lobe that were not statistically significant (Figure 6A,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by calcium imaging data shown in Figure 6A,C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:43:26.668991Z"
+    },
+    {
+      "id": "bd766587-bd1a-4db5-8c24-e5a6cb31947e",
+      "content_id": "ea87d182-6052-459d-991c-c780e7dcf3e8",
+      "claim_id": "C34",
+      "claim": "Applying muscarine to the calyx decreased GCaMP6f signal in the \u03b1\u2032 and \u03b2\u2032 lobes around 1\u20132 s after application.",
+      "claim_type": "EXPLICIT",
+      "source": "It also decreased GCaMP6f signal in the \u03b1\u2032 and \u03b2\u2032 lobes around 1\u20132 s after application (Figure 6A), although this effect was also not statistically significant.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by calcium imaging data shown in Figure 6A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:43:26.668991Z"
+    },
+    {
+      "id": "a32c85e8-9b4a-4142-9e26-c33b83a5ea4b",
+      "content_id": "ea87d182-6052-459d-991c-c780e7dcf3e8",
+      "claim_id": "C35",
+      "claim": "Applying muscarine to the calyx did not increase the calyx odor response.",
+      "claim_type": "EXPLICIT",
+      "source": "The increased Ca2+ in the calyx most likely did not reflect increased excitability, as applying muscarine to the calyx did not increase the calyx odor response (Figure 6D,E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by calcium imaging data shown in Figure 6D,E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:43:26.668991Z"
+    },
+    {
+      "id": "ef75be10-0ce3-4a3c-b315-370da489d98c",
+      "content_id": "ea87d182-6052-459d-991c-c780e7dcf3e8",
+      "claim_id": "C36",
+      "claim": "Applying muscarine to the calyx suppressed odor responses in KC axons.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, applying muscarine to the calyx suppressed odor responses in KC axons (Figure 6D,E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by calcium imaging data shown in Figure 6D,E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:43:26.668991Z"
+    },
+    {
+      "id": "958cbe9e-759a-460c-88c6-859570f6d918",
+      "content_id": "ea87d182-6052-459d-991c-c780e7dcf3e8",
+      "claim_id": "C37",
+      "claim": "Overexpressed FLAG-tagged mAChR-A in KCs was only observed in the calyx.",
+      "claim_type": "EXPLICIT",
+      "source": "When we overexpressed FLAG-tagged mAChR-A in KCs using OK107-GAL4, we only observed anti-FLAG staining in the calyx (Figure 7A), suggesting that mAChR-A is localized to the calyx.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by immunostaining data shown in Figure 7A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:43:26.668991Z"
+    },
+    {
+      "id": "0a23253e-b39e-494b-ae11-79ed744b1a0d",
+      "content_id": "ea87d182-6052-459d-991c-c780e7dcf3e8",
+      "claim_id": "C38",
+      "claim": "mAChR-A is localized to the calyx.",
+      "claim_type": "EXPLICIT",
+      "source": "When we overexpressed FLAG-tagged mAChR-A in KCs using OK107-GAL4, we only observed anti-FLAG staining in the calyx (Figure 7A), suggesting that mAChR-A is localized to the calyx.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the immunostaining data shown in Figure 7A.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:43:26.668991Z"
+    },
+    {
+      "id": "bc2a185e-311f-427b-b0d1-60d16571bb82",
+      "content_id": "ea87d182-6052-459d-991c-c780e7dcf3e8",
+      "claim_id": "C39",
+      "claim": "The MiMIC-stop allele is a strongly hypomorphic allele with almost total lack of mAChR-A mRNA.",
+      "claim_type": "EXPLICIT",
+      "source": "The original MiMIC allele with a GFP insertion in the 5' UTR intron of mAChR-A contains a stop cassette and polyadenylation signal, and indeed, it is a strongly hypomorphic allele: qPCR shows almost total lack of mAChR-A mRNA in the 'MiMIC-stop' allele (Figure 7B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by qPCR data shown in Figure 7B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:43:26.668991Z"
+    },
+    {
+      "id": "a4ad650b-376f-4a94-9333-4c6f1ac384ca",
+      "content_id": "ea87d182-6052-459d-991c-c780e7dcf3e8",
+      "claim_id": "C40",
+      "claim": "Flies homozygous for the 'MiMIC-stop' allele are viable but show impaired learning.",
+      "claim_type": "EXPLICIT",
+      "source": "Flies homozygous for the 'MiMIC-stop' allele are viable but show impaired learning, while learning is significantly improved by using mb247-GAL4 to overexpress mAChR-A-FLAG in \u03b1\u03b2 and \u03b3 KCs (Figure 7C), indicating that overexpressed mAChR-A-FLAG can support learning.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by behavioral data shown in Figure 7C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:43:26.668991Z"
+    },
+    {
+      "id": "c4a2e084-214a-4f6a-9076-4ad0f6ef1122",
+      "content_id": "ea87d182-6052-459d-991c-c780e7dcf3e8",
+      "claim_id": "C41",
+      "claim": "Overexpressed mAChR-A-FLAG can support learning.",
+      "claim_type": "EXPLICIT",
+      "source": "Flies homozygous for the 'MiMIC-stop' allele are viable but show impaired learning, while learning is significantly improved by using mb247-GAL4 to overexpress mAChR-A-FLAG in \u03b1\u03b2 and \u03b3 KCs (Figure 7C), indicating that overexpressed mAChR-A-FLAG can support learning.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the rescue experiment shown in Figure 7C.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:43:26.668991Z"
+    },
+    {
+      "id": "a51749d4-c6a9-4983-951b-9246f8765d2e",
+      "content_id": "ea87d182-6052-459d-991c-c780e7dcf3e8",
+      "claim_id": "C42",
+      "claim": "mAChR-A exerts its effect on learning in KC dendrites.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that mAChR-A exerts its effect on learning in KC dendrites, consistent with the effect of locally applying muscarine to KC dendrites.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the localization and rescue data shown in Figure 7.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:43:26.668991Z"
+    },
+    {
+      "id": "71bb0d85-0d8b-4bc0-b784-8ac29adf8a99",
+      "content_id": "ea87d182-6052-459d-991c-c780e7dcf3e8",
+      "claim_id": "C43",
+      "claim": "Aversive conditioning reduces MB-MVP2's responses to the aversively-trained odor.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, aversive memory requires an output neuron downstream of \u03b3 KCs, called MBON-\u03b31pedc>\u03b1/\u03b2 or MB-MVP2. MB-MVP2 leads to approach behavior (Aso et al., 2014b), and aversive conditioning reduces MB-MVP2's responses to the aversively-trained odor (Hige et al., 2015; Perisse et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Aso et al., 2014b; Hige et al., 2015; Perisse et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:43:26.668991Z"
+    },
+    {
+      "id": "5d141c94-3156-4e80-ac6f-bcda320bd7f0",
+      "content_id": "ea87d182-6052-459d-991c-c780e7dcf3e8",
+      "claim_id": "C44",
+      "claim": "In control flies not expressing mAChR-A RNAi, the MCH/OCT ratio was substantially reduced in trained flies relative to mock-trained flies.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with previous published results (Hige et al., 2015; Perisse et al., 2016), in control flies not expressing mAChR-A RNAi, the MCH/OCT ratio was substantially reduced in trained flies relative to mock-trained flies (Figure 8B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by calcium imaging data shown in Figure 8B and citations to Hige et al., 2015; Perisse et al., 2016.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:43:26.668991Z"
+    },
+    {
+      "id": "6ae324e3-daa5-40fe-825b-7c3c786252ee",
+      "content_id": "ea87d182-6052-459d-991c-c780e7dcf3e8",
+      "claim_id": "C45",
+      "claim": "In flies expressing mAChR-A RNAi in KCs, the MCH/OCT ratio was the same between trained and mock-trained flies.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, in flies expressing mAChR-A RNAi in KCs, the MCH/OCT ratio was the same between trained and mock-trained flies (Figure 8B), indicating that the mAChR-A knockdown impaired the learning-related depression of the KC to MB-MVP2 synapse.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by calcium imaging data shown in Figure 8B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:43:26.668991Z"
+    },
+    {
+      "id": "6bb007bf-6a92-4f37-8d64-6410aafe6f24",
+      "content_id": "ea87d182-6052-459d-991c-c780e7dcf3e8",
+      "claim_id": "C46",
+      "claim": "mAChR-A knockdown impaired the learning-related depression of the KC to MB-MVP2 synapse.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, in flies expressing mAChR-A RNAi in KCs, the MCH/OCT ratio was the same between trained and mock-trained flies (Figure 8B), indicating that the mAChR-A knockdown impaired the learning-related depression of the KC to MB-MVP2 synapse.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the imaging data shown in Figure 8B.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:43:26.668991Z"
+    },
+    {
+      "id": "83d4f87e-5484-41b2-a687-8d642c0f2556",
+      "content_id": "ea87d182-6052-459d-991c-c780e7dcf3e8",
+      "claim_id": "C47",
+      "claim": "mAChR-A function in KC dendrites is necessary for learning-related synaptic plasticity in KC axons.",
+      "claim_type": "EXPLICIT",
+      "source": "This result suggests that mAChR-A function in KC dendrites is necessary for learning-related synaptic plasticity in KC axons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the MB-MVP2 imaging data shown in Figure 8.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:43:26.668991Z"
+    },
+    {
+      "id": "cfcc07ac-17e4-46ca-b85b-971b92e144d9",
+      "content_id": "ea87d182-6052-459d-991c-c780e7dcf3e8",
+      "claim_id": "C48",
+      "claim": "mAChR-A is required in KCs for aversive olfactory learning in adult Drosophila.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we show that mAChR-A is required in KCs for aversive olfactory learning in adult Drosophila.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding supported by behavioral experiments shown in Figures 1 and 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:43:26.668991Z"
+    },
+    {
+      "id": "661b2568-a286-479e-bae8-6603f2b927d4",
+      "content_id": "ea87d182-6052-459d-991c-c780e7dcf3e8",
+      "claim_id": "C49",
+      "claim": "Genetic and pharmacological manipulations of mAChR-A suggest that mAChR-A is inhibitory and acts on KC dendrites.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, genetic and pharmacological manipulations of mAChR-A suggest that mAChR-A is inhibitory and acts on KC dendrites.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the combined genetic (Figures 3-4) and pharmacological (Figures 5-6) data, along with localization data (Figure 7).",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:43:26.668991Z"
+    },
+    {
+      "id": "af2ef478-ce53-4c16-a194-eed3a3cad98e",
+      "content_id": "ea87d182-6052-459d-991c-c780e7dcf3e8",
+      "claim_id": "C50",
+      "claim": "Dendritically acting mAChR-A is required for synaptic depression between KCs and their outputs.",
+      "claim_type": "EXPLICIT",
+      "source": "We suggest that dendritically acting mAChR-A is required for synaptic depression between KCs and their outputs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation based on the combined findings from localization and plasticity experiments.",
+      "evidence_type": "[\"SPECULATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:43:26.668991Z"
+    },
+    {
+      "id": "5844832c-c705-4bf0-8a7a-e9ff2f52244a",
+      "content_id": "ea87d182-6052-459d-991c-c780e7dcf3e8",
+      "claim_id": "C51",
+      "claim": "Drosophila mAChR-A seems to use 'M1-type' signaling via Gq protein when heterologously expressed in CHO cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Drosophila mAChR-A seems to use 'M1-type' signaling: when heterologously expressed in Chinese hamster ovary (CHO) cells, it signals via Gq protein (Collin et al., 2013; Ren et al., 2015) to activate phospholipase C, which produces inositol trisphosphate to release Ca2+ from internal stores.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Collin et al., 2013 and Ren et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:43:26.668991Z"
+    },
+    {
+      "id": "9b3a08d7-2f86-4bf8-a263-833e65a589c6",
+      "content_id": "ea87d182-6052-459d-991c-c780e7dcf3e8",
+      "claim_id": "C52",
+      "claim": "mAChR-A is required for aversive olfactory learning in Drosophila larvae.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent work indicates that mAChR-A is required for aversive olfactory learning in Drosophila larvae, as knocking down mAChR-A expression in KCs impairs learning (Silva et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Silva et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:43:26.668991Z"
+    },
+    {
+      "id": "b227edd5-a287-48fc-a6e6-f84c4820ba3c",
+      "content_id": "ea87d182-6052-459d-991c-c780e7dcf3e8",
+      "claim_id": "C53",
+      "claim": "In adult flies Gq signaling downstream of the dopamine receptor Damb promotes forgetting, not learning.",
+      "claim_type": "EXPLICIT",
+      "source": "However, it is unclear whether mAChR-A is involved in olfactory learning in adult Drosophila, given that mAChR-A is thought to signal through Gq, and in adult flies Gq signaling downstream of the dopamine receptor Damb promotes forgetting, not learning (Berry et al., 2012; Himmelreich et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Berry et al., 2012 and Himmelreich et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:43:26.668991Z"
+    },
+    {
+      "id": "426c0bef-0104-43e9-a6cd-e6fa83719bae",
+      "content_id": "ea87d182-6052-459d-991c-c780e7dcf3e8",
+      "claim_id": "C54",
+      "claim": "Flies can learn to associate an odor (conditioned stimulus, CS) with a positive (sugar) or a negative (electric shock) unconditioned stimulus (US).",
+      "claim_type": "EXPLICIT",
+      "source": "Flies can learn to associate an odor (conditioned stimulus, CS) with a positive (sugar) or a negative (electric shock) unconditioned stimulus (US), so that they later approach 'rewarded' odors and avoid 'punished' odors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge in the field of Drosophila learning and memory.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:43:26.668991Z"
+    },
+    {
+      "id": "3ad905f7-7d0b-4ade-945e-5ae3fedf5abb",
+      "content_id": "ea87d182-6052-459d-991c-c780e7dcf3e8",
+      "claim_id": "C55",
+      "claim": "The association between odor and reinforcement is thought to be formed in the presynaptic terminals of the ~2000 Kenyon cells (KCs) that make up the mushroom body (MB).",
+      "claim_type": "EXPLICIT",
+      "source": "This association is thought to be formed in the presynaptic terminals of the ~2000 Kenyon cells (KCs) that make up the mushroom body (MB), the fly's olfactory memory center (Busto et al., 2010; Cognigni et al., 2018; Hige, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Busto et al., 2010; Cognigni et al., 2018; Hige, 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:43:26.668991Z"
+    },
+    {
+      "id": "bfec7137-c66b-4e01-9215-438ef0896edd",
+      "content_id": "ea87d182-6052-459d-991c-c780e7dcf3e8",
+      "claim_id": "C56",
+      "claim": "KCs are activated by odors via second-order olfactory neurons called projection neurons (PNs).",
+      "claim_type": "EXPLICIT",
+      "source": "These KCs are activated by odors via second-order olfactory neurons called projection neurons (PNs).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:43:26.668991Z"
+    },
+    {
+      "id": "e5bb726a-457c-4444-acab-0210c62ba169",
+      "content_id": "ea87d182-6052-459d-991c-c780e7dcf3e8",
+      "claim_id": "C57",
+      "claim": "Each odor elicits responses in a sparse subset of KCs.",
+      "claim_type": "EXPLICIT",
+      "source": "Each odor elicits responses in a sparse subset of KCs (Campbell et al., 2013; Lin et al., 2014) so that odor identity is encoded in which KCs respond to each odor.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Campbell et al., 2013 and Lin et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:43:26.668991Z"
+    },
+    {
+      "id": "c50661db-ecc6-4e63-893b-47a22dda1787",
+      "content_id": "ea87d182-6052-459d-991c-c780e7dcf3e8",
+      "claim_id": "C58",
+      "claim": "When an odor (CS) is paired with reward/punishment (US), an odor-specific set of KCs is activated at the same time that dopaminergic neurons (DANs) release dopamine onto KC presynaptic terminals.",
+      "claim_type": "EXPLICIT",
+      "source": "When an odor (CS) is paired with reward/punishment (US), an odor-specific set of KCs is activated at the same time that dopaminergic neurons (DANs) release dopamine onto KC presynaptic terminals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:43:26.668991Z"
+    },
+    {
+      "id": "4a314ca6-465b-4c49-8b27-6033b3e2a6e9",
+      "content_id": "ea87d182-6052-459d-991c-c780e7dcf3e8",
+      "claim_id": "C59",
+      "claim": "The coincident activation causes long-term depression (LTD) of synapses from the odor-activated KCs onto mushroom body output neurons (MBONs) that lead to approach or avoidance behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "The coincident activation causes long-term depression (LTD) of synapses from the odor-activated KCs onto mushroom body output neurons (MBONs) that lead to approach or avoidance behavior (Aso and Rubin, 2016; Aso et al., 2014b; Cohn et al., 2015; Hige et al., 2015; Owald et al., 2015; Perisse et al., 2016; S\u00e9journ\u00e9 et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Aso and Rubin, 2016; Aso et al., 2014b; Cohn et al., 2015; Hige et al., 2015; Owald et al., 2015; Perisse et al., 2016; S\u00e9journ\u00e9 et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:43:26.668991Z"
+    },
+    {
+      "id": "b365363a-1957-43c7-8866-d1b35713ccd9",
+      "content_id": "ea87d182-6052-459d-991c-c780e7dcf3e8",
+      "claim_id": "C60",
+      "claim": "Training specifically depresses KC-MBON synapses of the 'wrong' valence.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, training specifically depresses KC-MBON synapses of the 'wrong' valence (e.g. odor-punishment pairing depresses odor responses of MBONs that lead to approach behavior), because different pairs of 'matching' DANs/MBONs (e.g. punishment/approach, reward/avoidance) innervate distinct regions along KC axons (Aso et al., 2014a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Aso et al., 2014a.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:43:26.668991Z"
+    },
+    {
+      "id": "59a1177c-dc4f-46c2-b3e2-2b4a2dc710b2",
+      "content_id": "ea87d182-6052-459d-991c-c780e7dcf3e8",
+      "claim_id": "C61",
+      "claim": "KCs express both ionotropic (nicotinic) and metabotropic (muscarinic) acetylcholine receptors.",
+      "claim_type": "EXPLICIT",
+      "source": "Both MB input (PNs) and output (KCs) are cholinergic (Barnstedt et al., 2016; Yasuyama and Salvaterra, 1999), and KCs express both ionotropic (nicotinic) and metabotropic (muscarinic) acetylcholine receptors (Crocker et al., 2016; Croset et al., 2018; Davie et al., 2018; Shih et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Crocker et al., 2016; Croset et al., 2018; Davie et al., 2018; Shih et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:43:26.668991Z"
+    },
+    {
+      "id": "1cf2944f-82de-4db9-9861-392062e5b1d7",
+      "content_id": "ea87d182-6052-459d-991c-c780e7dcf3e8",
+      "claim_id": "C62",
+      "claim": "The nicotinic receptors mediate fast excitatory synaptic currents.",
+      "claim_type": "EXPLICIT",
+      "source": "The nicotinic receptors mediate fast excitatory synaptic currents (Su and O'Dowd, 2003), while the physiological function of the muscarinic receptors is unknown.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Su and O'Dowd, 2003.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:43:26.668991Z"
+    },
+    {
+      "id": "316e288a-36e2-4c8b-acba-b0a31a8b1b4c",
+      "content_id": "ea87d182-6052-459d-991c-c780e7dcf3e8",
+      "claim_id": "C63",
+      "claim": "mAChR-A is the most closely homologous to mammalian mAChRs out of the three mAChRs in Drosophila.",
+      "claim_type": "EXPLICIT",
+      "source": "Muscarinic acetylcholine receptors (mAChRs) are G-protein-coupled receptors; out of the three mAChRs in Drosophila (mAChR-A, mAChR-B and mAChR-C), mAChR-A (also called Dm1, mAcR-60C or mAChR) is the most closely homologous to mammalian mAChRs (Collin et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Collin et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:43:26.668991Z"
+    },
+    {
+      "id": "9b4f07b1-165a-47ba-9b1a-644a9f84601d",
+      "content_id": "ea87d182-6052-459d-991c-c780e7dcf3e8",
+      "claim_id": "C64",
+      "claim": "Mammalian mAChRs are typically divided between 'M1-type' (M1/M3/M5), which signal via Gq and are generally excitatory, and 'M2-type' (M2/M4), which signal via Gi/o and are generally inhibitory.",
+      "claim_type": "EXPLICIT",
+      "source": "Mammalian mAChRs are typically divided between 'M1-type' (M1/M3/M5), which signal via Gq and are generally excitatory, and 'M2-type' (M2/M4), which signal via Gi/o and are generally inhibitory (Caulfield and Birdsall, 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Caulfield and Birdsall, 1998.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:43:26.668991Z"
+    },
+    {
+      "id": "3b98f636-4365-454d-b0ab-b0f1c0862753",
+      "content_id": "ea87d182-6052-459d-991c-c780e7dcf3e8",
+      "claim_id": "C65",
+      "claim": "Drosophila mAChR-B is 1000-fold less sensitive to muscarine than mAChR-A is.",
+      "claim_type": "EXPLICIT",
+      "source": "Initially, we bath-applied 10 \u00b5M muscarine, an mAChR-A agonist (Drosophila mAChR-B is 1000-fold less sensitive to muscarine than mAChR-A is [Collin et al., 2013], and mAChR-C is not expressed in the brain [Davie et al., 2018]).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Collin et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:43:26.668991Z"
+    },
+    {
+      "id": "6be8c3ed-e141-4ded-81e6-a27bd7d8aa56",
+      "content_id": "ea87d182-6052-459d-991c-c780e7dcf3e8",
+      "claim_id": "C66",
+      "claim": "mAChR-C is not expressed in the brain.",
+      "claim_type": "EXPLICIT",
+      "source": "Initially, we bath-applied 10 \u00b5M muscarine, an mAChR-A agonist (Drosophila mAChR-B is 1000-fold less sensitive to muscarine than mAChR-A is [Collin et al., 2013], and mAChR-C is not expressed in the brain [Davie et al., 2018]).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Davie et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:43:26.668991Z"
+    },
+    {
+      "id": "7fc5fa24-6225-43c2-9976-74fad6180dda",
+      "content_id": "ea87d182-6052-459d-991c-c780e7dcf3e8",
+      "claim_id": "C67",
+      "claim": "KCs can be silenced by an inhibitory GABAergic neuron called the anterior paired lateral (APL) neuron.",
+      "claim_type": "EXPLICIT",
+      "source": "KCs can be silenced by an inhibitory GABAergic neuron called the anterior paired lateral (APL) neuron (Lin et al., 2014; Masuda-Nakagawa et al., 2014; Papadopoulou et al., 2011), so we asked whether muscarine reduces KC odor responses indirectly by activating APL, rather than directly inhibiting KCs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Lin et al., 2014; Masuda-Nakagawa et al., 2014; Papadopoulou et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:43:26.668991Z"
+    },
+    {
+      "id": "694c2cac-ebe6-4bf3-aafd-64ff20d2f368",
+      "content_id": "ea87d182-6052-459d-991c-c780e7dcf3e8",
+      "claim_id": "C68",
+      "claim": "M1/M3/M5 receptors acting via Gq can inhibit voltage-dependent Ca2+ channels.",
+      "claim_type": "EXPLICIT",
+      "source": "However, Gq signaling may exert different effects on different neurons in the fly brain, and some examples exist of inhibitory Gq signaling by mammalian mAChRs. M1/M3/M5 receptors acting via Gq can inhibit voltage-dependent Ca2+ channels (Gamper et al., 2004; Kammermeier et al., 2000; Keum et al., 2014; Suh et al., 2010), reduce voltage-gated Na +currents (Cantrell et al., 1996), or trigger surface transport of KCNQ channels (Jiang et al., 2015), thus increasing inhibitory K+ currents.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Gamper et al., 2004; Kammermeier et al., 2000; Keum et al., 2014; Suh et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:43:26.668991Z"
+    },
+    {
+      "id": "b5a1aa48-75b0-449f-bf35-2c3cd5c68456",
+      "content_id": "ea87d182-6052-459d-991c-c780e7dcf3e8",
+      "claim_id": "C69",
+      "claim": "M1/M3/M5 receptors acting via Gq can reduce voltage-gated Na+ currents.",
+      "claim_type": "EXPLICIT",
+      "source": "However, Gq signaling may exert different effects on different neurons in the fly brain, and some examples exist of inhibitory Gq signaling by mammalian mAChRs. M1/M3/M5 receptors acting via Gq can inhibit voltage-dependent Ca2+ channels (Gamper et al., 2004; Kammermeier et al., 2000; Keum et al., 2014; Suh et al., 2010), reduce voltage-gated Na +currents (Cantrell et al., 1996), or trigger surface transport of KCNQ channels (Jiang et al., 2015), thus increasing inhibitory K+ currents.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Cantrell et al., 1996.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:43:26.668991Z"
+    },
+    {
+      "id": "f6cbd5b5-b869-4de6-98a3-9ada184787bd",
+      "content_id": "ea87d182-6052-459d-991c-c780e7dcf3e8",
+      "claim_id": "C70",
+      "claim": "M1/M3/M5 receptors acting via Gq can trigger surface transport of KCNQ channels, thus increasing inhibitory K+ currents.",
+      "claim_type": "EXPLICIT",
+      "source": "However, Gq signaling may exert different effects on different neurons in the fly brain, and some examples exist of inhibitory Gq signaling by mammalian mAChRs. M1/M3/M5 receptors acting via Gq can inhibit voltage-dependent Ca2+ channels (Gamper et al., 2004; Kammermeier et al., 2000; Keum et al., 2014; Suh et al., 2010), reduce voltage-gated Na +currents (Cantrell et al., 1996), or trigger surface transport of KCNQ channels (Jiang et al., 2015), thus increasing inhibitory K+ currents.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Jiang et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:43:26.668991Z"
+    },
+    {
+      "id": "a3bdd8fc-aa90-4eaf-9c67-df09cd898509",
+      "content_id": "ea87d182-6052-459d-991c-c780e7dcf3e8",
+      "claim_id": "C71",
+      "claim": "KCs themselves are cholinergic and release neurotransmitter in both the calyx and lobes.",
+      "claim_type": "EXPLICIT",
+      "source": "However, KCs themselves are cholinergic (Barnstedt et al., 2016) and release neurotransmitter in both the calyx and lobes (Christiansen et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Barnstedt et al., 2016 and Christiansen et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:43:26.668991Z"
+    },
+    {
+      "id": "fb81ed86-783a-4b1d-8c0e-1befeb65ec0e",
+      "content_id": "ea87d182-6052-459d-991c-c780e7dcf3e8",
+      "claim_id": "C72",
+      "claim": "KCs form synapses on each other in the calyx.",
+      "claim_type": "EXPLICIT",
+      "source": "KCs form synapses on each other in the calyx (Zheng et al., 2018), possibly allowing mAChR-A to mediate lateral inhibition, in conjunction with the lateral inhibition provided by the GABAergic APL neuron (Lin et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Zheng et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:43:26.668991Z"
+    },
+    {
+      "id": "a123b6f1-4b04-4014-b052-914ef42a72e2",
+      "content_id": "ea87d182-6052-459d-991c-c780e7dcf3e8",
+      "claim_id": "C73",
+      "claim": "mAChR-A may mediate lateral inhibition in conjunction with the lateral inhibition provided by the GABAergic APL neuron.",
+      "claim_type": "EXPLICIT",
+      "source": "KCs form synapses on each other in the calyx (Zheng et al., 2018), possibly allowing mAChR-A to mediate lateral inhibition, in conjunction with the lateral inhibition provided by the GABAergic APL neuron (Lin et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation based on the known properties of KC-KC synapses and APL function.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:43:26.668991Z"
+    },
+    {
+      "id": "2255ec59-ef4c-45e0-a8dd-3c34f30d134c",
+      "content_id": "ea87d182-6052-459d-991c-c780e7dcf3e8",
+      "claim_id": "C74",
+      "claim": "Knocking down GABA synthesis in the inhibitory APL neuron increases odor-evoked Ca2+ influx in KCs.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, knocking down GABA synthesis in the inhibitory APL neuron increases odor-evoked Ca2+ influx in KCs (Lei et al., 2013; Lin et al., 2014) and improves olfactory learning (Liu and Davis, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Lei et al., 2013 and Lin et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:43:26.668991Z"
+    },
+    {
+      "id": "b4e829a8-d073-4511-bbc6-112d3699fbe7",
+      "content_id": "ea87d182-6052-459d-991c-c780e7dcf3e8",
+      "claim_id": "C75",
+      "claim": "Knocking down GABA synthesis in the inhibitory APL neuron improves olfactory learning.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, knocking down GABA synthesis in the inhibitory APL neuron increases odor-evoked Ca2+ influx in KCs (Lei et al., 2013; Lin et al., 2014) and improves olfactory learning (Liu and Davis, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Liu and Davis, 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:43:26.668991Z"
+    },
+    {
+      "id": "0cfa7d07-fbc8-4b2b-9aca-baa3b004745d",
+      "content_id": "ea87d182-6052-459d-991c-c780e7dcf3e8",
+      "claim_id": "C76",
+      "claim": "Rutabaga is generally believed to be the coincidence detector in KC axons that detects when odor coincides with dopamine.",
+      "claim_type": "EXPLICIT",
+      "source": "Such changes in the action potential waveform may not be detected by calcium imaging, but could potentially affect a 'coincidence detector' in KC axons that detects when odor (i.e. KC activity) coincides with reward/punishment (i.e. dopamine). This coincidence detector is generally believed to be the Ca2+-dependent adenylyl cyclase rutabaga (Levin et al., 1992).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Levin et al., 1992.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:43:26.668991Z"
+    },
+    {
+      "id": "70b46c66-0257-4ad4-a599-a1a2d3bc8bff",
+      "content_id": "ea87d182-6052-459d-991c-c780e7dcf3e8",
+      "claim_id": "C77",
+      "claim": "Rutabaga mutations do not abolish learning (mutants have ~40\u201350% of normal learning scores).",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, rutabaga mutations do not abolish learning (mutants have ~40\u201350% of normal learning scores) (Yildizoglu et al., 2015), so there may be additional coincidence detection mechanisms affected by action potential waveforms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Yildizoglu et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:43:26.668991Z"
+    },
+    {
+      "id": "b7c7d4d8-ab44-4f80-90e8-0a4640fd80fc",
+      "content_id": "ea87d182-6052-459d-991c-c780e7dcf3e8",
+      "claim_id": "C78",
+      "claim": "Both mAChR-A and the dopamine receptor Damb signal through Gq.",
+      "claim_type": "EXPLICIT",
+      "source": "Another intriguing possibility is suggested by an apparent paradox: both mAChR-A and the dopamine receptor Damb signal through Gq (Himmelreich et al., 2017), but mAChR-A promotes learning while Damb promotes forgetting (Berry et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Himmelreich et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:43:26.668991Z"
+    },
+    {
+      "id": "c4417695-3596-4ca1-adbb-c75cb0f6188d",
+      "content_id": "ea87d182-6052-459d-991c-c780e7dcf3e8",
+      "claim_id": "C79",
+      "claim": "Damb promotes forgetting.",
+      "claim_type": "EXPLICIT",
+      "source": "Another intriguing possibility is suggested by an apparent paradox: both mAChR-A and the dopamine receptor Damb signal through Gq (Himmelreich et al., 2017), but mAChR-A promotes learning while Damb promotes forgetting (Berry et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Berry et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:43:26.668991Z"
+    },
+    {
+      "id": "9a771bb6-e4c0-41c8-aa59-7b4461dc0beb",
+      "content_id": "ea87d182-6052-459d-991c-c780e7dcf3e8",
+      "claim_id": "C80",
+      "claim": "Although damb mutants retain memories for longer than wildtype, their initial learning is slightly impaired.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, although damb mutants retain memories for longer than wildtype, their initial learning is slightly impaired (Berry et al., 2012); damb mutant larvae are also impaired in aversive olfactory learning (Selcho et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Berry et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:43:26.668991Z"
+    },
+    {
+      "id": "e50d5e40-5bf8-4978-972b-bdbb8fc67ea8",
+      "content_id": "ea87d182-6052-459d-991c-c780e7dcf3e8",
+      "claim_id": "C81",
+      "claim": "damb mutant larvae are impaired in aversive olfactory learning.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, although damb mutants retain memories for longer than wildtype, their initial learning is slightly impaired (Berry et al., 2012); damb mutant larvae are also impaired in aversive olfactory learning (Selcho et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Selcho et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:43:26.668991Z"
+    },
+    {
+      "id": "bfedd44c-ac8f-4639-beed-7a51a8fa5532",
+      "content_id": "ea87d182-6052-459d-991c-c780e7dcf3e8",
+      "claim_id": "C82",
+      "claim": "Gq signaling may aid both learning and forgetting by generally rendering synapses more labile.",
+      "claim_type": "EXPLICIT",
+      "source": "Perhaps Gq signaling aids both learning and forgetting by generally rendering synapses more labile.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about the role of Gq signaling in synaptic plasticity.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:43:26.668991Z"
+    },
+    {
+      "id": "3c5e0852-d898-44b1-9ec6-76bc7fd89d54",
+      "content_id": "ea87d182-6052-459d-991c-c780e7dcf3e8",
+      "claim_id": "C83",
+      "claim": "mAChR-A may allow a kind of metaplasticity in which exposure to odors makes flies' learning mechanisms more sensitive.",
+      "claim_type": "EXPLICIT",
+      "source": "It is tempting to speculate that mAChR-A may allow a kind of metaplasticity (Abraham, 2008) in which exposure to odors (hence activation of mAChR-A in KCs) makes flies' learning mechanisms more sensitive.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about the potential role of mAChR-A in metaplasticity.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:43:26.668991Z"
+    },
+    {
+      "id": "1f3d32ba-6d76-49a7-9fe3-6ebfcb3c833c",
+      "content_id": "ea87d182-6052-459d-991c-c780e7dcf3e8",
+      "claim_id": "C84",
+      "claim": "Kenyon cells are subdivided into three main classes according to their innervation of the horizontal and vertical lobes of the MB: \u03b3 neurons, \u03b1\u03b2 neurons, and \u03b1\u2032\u03b2\u2032 neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Kenyon cells are subdivided into three main classes according to their innervation of the horizontal and vertical lobes of the MB: \u03b3 neurons send axons only to the \u03b3 lobe of the horizontal lobes, while the axons of \u03b1\u03b2 and \u03b1\u2032\u03b2\u2032 neurons bifurcate and go to both the vertical and horizontal lobes (\u03b1\u03b2 axons make up the \u03b1 lobe of the vertical lobe and \u03b2 lobe of the horizontal lobe, while \u03b1\u2032\u03b2\u2032 axons make up the \u03b1\u2032 lobe of the vertical lobe and \u03b2\u2032 portion of the horizontal lobe).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established anatomical knowledge about Kenyon cell subtypes.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:43:26.668991Z"
+    },
+    {
+      "id": "b516a417-8d0d-43e4-886f-aa599ff57508",
+      "content_id": "ea87d182-6052-459d-991c-c780e7dcf3e8",
+      "claim_id": "C85",
+      "claim": "Different KC classes play different roles in olfactory learning.",
+      "claim_type": "EXPLICIT",
+      "source": "These different classes play different roles in olfactory learning (Guven-Ozkan and Davis, 2014; Krashes et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Guven-Ozkan and Davis, 2014 and Krashes et al., 2007.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:43:26.668991Z"
+    },
+    {
+      "id": "b5bd63c3-9d5c-406f-9c27-84aa9ed4c452",
+      "content_id": "ea87d182-6052-459d-991c-c780e7dcf3e8",
+      "claim_id": "C86",
+      "claim": "\u03b3, \u03b1\u03b2 and \u03b1\u2032\u03b2\u2032 KCs are thought to be important mainly for short-term memory, long-term memory, and memory consolidation, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "Alternatively, \u03b3, \u03b1\u03b2 and \u03b1\u2032\u03b2\u2032 KCs are thought to be important mainly for short-term memory, long-term memory, and memory consolidation, respectively (Guven-Ozkan and Davis, 2014; Krashes et al., 2007); as we only tested short-term memory, mAChR-A may carry out the same function in all KCs, but only its role in \u03b3 KCs is required for short-term (as opposed to long-term) memory.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Guven-Ozkan and Davis, 2014 and Krashes et al., 2007.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:43:26.668991Z"
+    },
+    {
+      "id": "15e6c03c-b932-4982-af52-87112ee702bd",
+      "content_id": "ea87d182-6052-459d-991c-c780e7dcf3e8",
+      "claim_id": "C87",
+      "claim": "The key plasticity gene DopR1 is required in \u03b3, not \u03b1\u03b2 or \u03b1\u2032\u03b2\u2032 KCs, for short-term memory.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, the key plasticity gene DopR1 is required in \u03b3, not \u03b1\u03b2 or \u03b1\u2032\u03b2\u2032 KCs, for short-term memory (Qin et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Qin et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:43:26.668991Z"
+    },
+    {
+      "id": "2eb66d7d-0430-4f7a-bbe6-4f2d55cbce75",
+      "content_id": "ea87d182-6052-459d-991c-c780e7dcf3e8",
+      "claim_id": "C88",
+      "claim": "MB-MVP2 is an MBON postsynaptic to \u03b3 KCs required for aversive short-term memory.",
+      "claim_type": "EXPLICIT",
+      "source": "Our finding that mAChR-A is required in \u03b3 KCs for aversive short-term memory is consistent with our finding that mAChR-A knockdown in KCs disrupts training-induced depression of odor responses in MB-MVP2, an MBON postsynaptic to \u03b3 KCs required for aversive short-term memory (Perisse et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Perisse et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:43:26.668991Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "ac35ea1a-3a07-4091-bb79-1e9cbf034c9c",
+      "content_id": "ea87d182-6052-459d-991c-c780e7dcf3e8",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "mAChR-A is required in Kenyon cells for aversive olfactory learning in adult Drosophila. RNAi knockdown of mAChR-A in KCs significantly reduces short-term aversive learning without affecting odor or shock detection, and this effect is physiological rather than developmental.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C9, C10, C13-C16, and C48 collectively demonstrate that mAChR-A knockdown in KCs impairs learning through multiple independent RNAi lines (C9, C10), with appropriate controls showing no defects in sensory perception (C13, C14) and adult-specific knockdown producing the same phenotype (C15, C16). The data include qRT-PCR validation of knockdown efficiency and behavioral assays with statistical significance.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:43:26.668991Z"
+    },
+    {
+      "id": "86be8b7c-4e99-4ee1-9113-7a6ac3ce245b",
+      "content_id": "ea87d182-6052-459d-991c-c780e7dcf3e8",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "mAChR-A knockdown does not affect learning with high-intensity shock (90V), suggesting mAChR-A may be specifically required for learning with moderate but not severe reinforcement.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "While C11 presents data showing no learning defect at 90V shock, C12 is explicitly labeled as speculation. The interpretation that mAChR-A is only required for moderate reinforcement requires additional experiments to rule out alternative explanations such as ceiling effects or different learning mechanisms at high shock intensities.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:43:26.668991Z"
+    },
+    {
+      "id": "45626898-5d91-4743-bb90-e0030dc9bb34",
+      "content_id": "ea87d182-6052-459d-991c-c780e7dcf3e8",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "mAChR-A is specifically required in gamma Kenyon cells for aversive olfactory learning and short-term memory. Expression analysis shows mAChR-A is present in \u03b1\u03b2 and \u03b3 but not \u03b1'\u03b2' lobes, and cell-type-specific knockdown demonstrates learning deficits only when \u03b3 KCs are targeted.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C17-C20 provide converging evidence from expression mapping (C17, C18) and functional genetics (C19, C20). The MiMIC-GAL4 expression pattern is corroborated by independent single-cell transcriptomics, and the behavioral requirement is demonstrated through multiple driver combinations with appropriate controls. Statistical significance is reported for the \u03b3-specific effect.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:43:26.668991Z"
+    },
+    {
+      "id": "f02367cd-4258-4c30-a175-22ae977f3038",
+      "content_id": "ea87d182-6052-459d-991c-c780e7dcf3e8",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "mAChR-A knockdown increases odor-evoked calcium responses in Kenyon cells, particularly in the gamma lobe, indicating that mAChR-A inhibits odor responses.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21, C23, and C4 are supported by calcium imaging data showing increased \u0394F/F in the calyx and specifically in the \u03b3 lobe with statistical significance for both odors tested. This finding is consistent across multiple figures and provides physiological evidence for mAChR-A's inhibitory function.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:43:26.668991Z"
+    },
+    {
+      "id": "bb55268d-1aa5-4e02-b814-67fb1aeffd45",
+      "content_id": "ea87d182-6052-459d-991c-c780e7dcf3e8",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "mAChR-A knockdown does not impair learning by altering the sparseness or inter-odor correlation of KC population odor representations, despite increasing overall odor response amplitudes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24-C27 demonstrate through population imaging that mAChR-A knockdown increases response amplitudes but preserves coding properties. This is shown for both pan-KC (C24) and \u03b3-specific (C25, C26) manipulations, with quantitative analysis of sparseness and correlation metrics. This rules out one potential mechanism for the learning deficit.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:43:26.668991Z"
+    },
+    {
+      "id": "24cd51fd-2b9a-4b42-a4a1-338373ddfa47",
+      "content_id": "ea87d182-6052-459d-991c-c780e7dcf3e8",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Pharmacological activation of mAChR-A with muscarine strongly decreases odor responses in all KC subtypes without affecting projection neuron responses, indicating mAChR-A acts directly on KCs to inhibit their activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28-C30 provide complementary pharmacological evidence for mAChR-A's inhibitory function. Bath application of muscarine decreased KC responses across all subtypes (C28) while sparing PN responses (C29), supporting the inference that the effect is KC-intrinsic (C30). This converges with the genetic loss-of-function data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:43:26.668991Z"
+    },
+    {
+      "id": "38c7af3e-8c8e-4dce-8904-b46f1f7ccb7e",
+      "content_id": "ea87d182-6052-459d-991c-c780e7dcf3e8",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Muscarine's inhibitory effect on KC odor responses does not require the GABAergic APL neuron, as muscarine suppresses KC responses even when APL output is blocked by tetanus toxin.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31 and C32 demonstrate through within-animal controls (APL-TNT vs unlabeled hemispheres) that muscarine acts independently of APL-mediated inhibition. The experimental design with stochastic labeling provides strong internal controls, and the lack of difference between conditions supports the conclusion.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:43:26.668991Z"
+    },
+    {
+      "id": "92319519-4093-4d72-a8e8-3bf514fb1416",
+      "content_id": "ea87d182-6052-459d-991c-c780e7dcf3e8",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Local application of muscarine to the calyx increases calcium signals in the calyx and \u03b1 lobe in the absence of odor, but suppresses odor-evoked responses in KC axons, suggesting complex effects on KC physiology.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-C36 describe the effects of local muscarine application with appropriate controls (red dye spread). The increase in baseline calcium (C33, C34) combined with suppression of odor responses (C35, C36) is well-documented, though the interpretation of these complex effects requires caution. The data are internally consistent and include proper controls.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:43:26.668991Z"
+    },
+    {
+      "id": "1e06795d-09d9-4116-aa64-53b877f14d83",
+      "content_id": "ea87d182-6052-459d-991c-c780e7dcf3e8",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "mAChR-A is localized to KC dendrites in the calyx, as shown by FLAG-tagged overexpression, and dendritic mAChR-A is sufficient to rescue learning deficits in a hypomorphic mutant.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-C42 provide multiple lines of evidence for dendritic localization: immunostaining of overexpressed FLAG-tagged receptor (C37, C38), validation of the hypomorphic allele by qPCR (C39), and functional rescue demonstrating the tagged receptor supports learning (C40, C41). The convergence of localization and functional data strongly supports the conclusion (C42).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:43:26.668991Z"
+    },
+    {
+      "id": "36ea6edf-7798-47dd-91be-c66a591665a8",
+      "content_id": "ea87d182-6052-459d-991c-c780e7dcf3e8",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "mAChR-A knockdown in KCs prevents the learning-induced depression of odor responses in the mushroom body output neuron MB-MVP2, suggesting mAChR-A function in KC dendrites is necessary for synaptic plasticity at KC-MBON synapses.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44-C47 demonstrate that mAChR-A knockdown abolishes the training-induced reduction in MCH/OCT response ratio in MB-MVP2 (C45, C46), while controls show the expected depression (C44). The inference that dendritic mAChR-A is required for axonal plasticity (C47) is supported by the combination of localization and plasticity data, though the mechanism remains unclear. Sample size (n=5) is validated by power analysis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:43:26.668991Z"
+    },
+    {
+      "id": "90fd8e3d-dea0-4d44-9a58-74fa48fc3306",
+      "content_id": "ea87d182-6052-459d-991c-c780e7dcf3e8",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "mAChR-A signals through Gq protein when expressed in heterologous cells, and while mammalian M1-type Gq-coupled receptors are typically excitatory, examples exist of inhibitory Gq signaling through multiple mechanisms.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22, C51, C64, and C68-C70 are all supported by appropriate citations to prior literature. These establish the signaling properties of mAChR-A and provide precedent for inhibitory Gq signaling. However, these are background claims from the literature rather than findings of the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:43:26.668991Z"
+    },
+    {
+      "id": "d81a8e92-63a1-4f68-80b1-f945e0d556ff",
+      "content_id": "ea87d182-6052-459d-991c-c780e7dcf3e8",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The authors propose that mAChR-A is inhibitory and acts on KC dendrites, and that dendritically-acting mAChR-A is required for synaptic depression between KCs and their outputs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49 and C50 represent the main conclusions synthesizing multiple experimental findings. C49 is supported by the combination of genetic (increased responses with knockdown) and pharmacological (decreased responses with agonist) data plus localization studies. C50, while labeled as speculation in the evidence, is reasonably supported by the convergence of dendritic localization and impaired KC-MBON plasticity data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:43:26.668991Z"
+    },
+    {
+      "id": "ba192edc-4f46-45fb-95a8-510f8de8a3f1",
+      "content_id": "ea87d182-6052-459d-991c-c780e7dcf3e8",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The authors speculate that mAChR-A may mediate lateral inhibition in conjunction with APL, that Gq signaling may render synapses more labile to aid both learning and forgetting, and that mAChR-A may enable metaplasticity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C73, C82, and C83 are explicitly labeled as speculation in the evidence field. While these hypotheses are plausible given the data presented, they lack direct experimental support in the current manuscript. These represent interesting directions for future work but should not be considered established results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:43:26.668991Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "28f33350-12a2-4082-b615-e23aac58d34e",
+      "result_id": "ac35ea1a-3a07-4091-bb79-1e9cbf034c9c"
+    },
+    {
+      "claim_id": "0bb7e851-5597-48cc-9009-026fbb75419a",
+      "result_id": "ac35ea1a-3a07-4091-bb79-1e9cbf034c9c"
+    },
+    {
+      "claim_id": "d149eba0-a0a6-49fa-be33-53a68579431f",
+      "result_id": "ac35ea1a-3a07-4091-bb79-1e9cbf034c9c"
+    },
+    {
+      "claim_id": "3f78e5c3-1c96-4f1a-b36e-cf0a45ce3a85",
+      "result_id": "ac35ea1a-3a07-4091-bb79-1e9cbf034c9c"
+    },
+    {
+      "claim_id": "514f6bc9-a000-4fce-851c-68fbba9b4db2",
+      "result_id": "ac35ea1a-3a07-4091-bb79-1e9cbf034c9c"
+    },
+    {
+      "claim_id": "75e12169-ee6f-4518-ad72-e44e6117d318",
+      "result_id": "ac35ea1a-3a07-4091-bb79-1e9cbf034c9c"
+    },
+    {
+      "claim_id": "1d34d7e2-e63f-4207-9858-062dd0ab29e4",
+      "result_id": "ac35ea1a-3a07-4091-bb79-1e9cbf034c9c"
+    },
+    {
+      "claim_id": "cfcc07ac-17e4-46ca-b85b-971b92e144d9",
+      "result_id": "ac35ea1a-3a07-4091-bb79-1e9cbf034c9c"
+    },
+    {
+      "claim_id": "4abb0d24-a7c2-452b-8376-d26fd1074453",
+      "result_id": "86be8b7c-4e99-4ee1-9113-7a6ac3ce245b"
+    },
+    {
+      "claim_id": "9041e399-6b32-4664-a3cf-feb8dcbe4687",
+      "result_id": "86be8b7c-4e99-4ee1-9113-7a6ac3ce245b"
+    },
+    {
+      "claim_id": "8cb777ae-ef22-4f30-b957-0a355b6037bd",
+      "result_id": "45626898-5d91-4743-bb90-e0030dc9bb34"
+    },
+    {
+      "claim_id": "67cbe43b-0494-40a1-ba07-78c790752d41",
+      "result_id": "45626898-5d91-4743-bb90-e0030dc9bb34"
+    },
+    {
+      "claim_id": "24d8a5e9-339a-40af-8e61-afe2255a533c",
+      "result_id": "45626898-5d91-4743-bb90-e0030dc9bb34"
+    },
+    {
+      "claim_id": "e7cd90aa-0329-42ff-a9a8-2d758e4c0870",
+      "result_id": "45626898-5d91-4743-bb90-e0030dc9bb34"
+    },
+    {
+      "claim_id": "7d63dad9-7c57-4a29-9acf-cd25f397eb89",
+      "result_id": "f02367cd-4258-4c30-a175-22ae977f3038"
+    },
+    {
+      "claim_id": "9d954eab-cc60-4aba-8395-711074459e69",
+      "result_id": "f02367cd-4258-4c30-a175-22ae977f3038"
+    },
+    {
+      "claim_id": "95afee1d-b002-49f3-8e81-5c34492f92f7",
+      "result_id": "f02367cd-4258-4c30-a175-22ae977f3038"
+    },
+    {
+      "claim_id": "6dd41104-f237-44bc-86f2-a982afadb736",
+      "result_id": "bb55268d-1aa5-4e02-b814-67fb1aeffd45"
+    },
+    {
+      "claim_id": "e30728fb-e712-4fa3-8623-f88d9216b89e",
+      "result_id": "bb55268d-1aa5-4e02-b814-67fb1aeffd45"
+    },
+    {
+      "claim_id": "408664db-9e70-44ea-a923-0bfd486e5122",
+      "result_id": "bb55268d-1aa5-4e02-b814-67fb1aeffd45"
+    },
+    {
+      "claim_id": "87a0a419-9a69-46be-a109-943b542d9baf",
+      "result_id": "bb55268d-1aa5-4e02-b814-67fb1aeffd45"
+    },
+    {
+      "claim_id": "60f5b8b4-306b-4bc6-b658-561858206a59",
+      "result_id": "24cd51fd-2b9a-4b42-a4a1-338373ddfa47"
+    },
+    {
+      "claim_id": "864fde16-db14-4c2d-9a85-b1a31b210394",
+      "result_id": "24cd51fd-2b9a-4b42-a4a1-338373ddfa47"
+    },
+    {
+      "claim_id": "1547d1ed-0c44-4601-9bae-12ec7932703e",
+      "result_id": "24cd51fd-2b9a-4b42-a4a1-338373ddfa47"
+    },
+    {
+      "claim_id": "95afee1d-b002-49f3-8e81-5c34492f92f7",
+      "result_id": "24cd51fd-2b9a-4b42-a4a1-338373ddfa47"
+    },
+    {
+      "claim_id": "d14ad75d-1a8b-4075-bc7f-1b03201f9b54",
+      "result_id": "38c7af3e-8c8e-4dce-8904-b46f1f7ccb7e"
+    },
+    {
+      "claim_id": "cd95db29-43db-4189-9069-a889791eaa4b",
+      "result_id": "38c7af3e-8c8e-4dce-8904-b46f1f7ccb7e"
+    },
+    {
+      "claim_id": "6db171b5-45d3-4510-8efa-d86226b3ec02",
+      "result_id": "92319519-4093-4d72-a8e8-3bf514fb1416"
+    },
+    {
+      "claim_id": "bd766587-bd1a-4db5-8c24-e5a6cb31947e",
+      "result_id": "92319519-4093-4d72-a8e8-3bf514fb1416"
+    },
+    {
+      "claim_id": "a32c85e8-9b4a-4142-9e26-c33b83a5ea4b",
+      "result_id": "92319519-4093-4d72-a8e8-3bf514fb1416"
+    },
+    {
+      "claim_id": "ef75be10-0ce3-4a3c-b315-370da489d98c",
+      "result_id": "92319519-4093-4d72-a8e8-3bf514fb1416"
+    },
+    {
+      "claim_id": "958cbe9e-759a-460c-88c6-859570f6d918",
+      "result_id": "1e06795d-09d9-4116-aa64-53b877f14d83"
+    },
+    {
+      "claim_id": "0a23253e-b39e-494b-ae11-79ed744b1a0d",
+      "result_id": "1e06795d-09d9-4116-aa64-53b877f14d83"
+    },
+    {
+      "claim_id": "bc2a185e-311f-427b-b0d1-60d16571bb82",
+      "result_id": "1e06795d-09d9-4116-aa64-53b877f14d83"
+    },
+    {
+      "claim_id": "a4ad650b-376f-4a94-9333-4c6f1ac384ca",
+      "result_id": "1e06795d-09d9-4116-aa64-53b877f14d83"
+    },
+    {
+      "claim_id": "c4a2e084-214a-4f6a-9076-4ad0f6ef1122",
+      "result_id": "1e06795d-09d9-4116-aa64-53b877f14d83"
+    },
+    {
+      "claim_id": "a51749d4-c6a9-4983-951b-9246f8765d2e",
+      "result_id": "1e06795d-09d9-4116-aa64-53b877f14d83"
+    },
+    {
+      "claim_id": "87b710c7-f7c1-4d2f-bdfb-2ebb879179b2",
+      "result_id": "1e06795d-09d9-4116-aa64-53b877f14d83"
+    },
+    {
+      "claim_id": "5d141c94-3156-4e80-ac6f-bcda320bd7f0",
+      "result_id": "36ea6edf-7798-47dd-91be-c66a591665a8"
+    },
+    {
+      "claim_id": "6ae324e3-daa5-40fe-825b-7c3c786252ee",
+      "result_id": "36ea6edf-7798-47dd-91be-c66a591665a8"
+    },
+    {
+      "claim_id": "6bb007bf-6a92-4f37-8d64-6410aafe6f24",
+      "result_id": "36ea6edf-7798-47dd-91be-c66a591665a8"
+    },
+    {
+      "claim_id": "83d4f87e-5484-41b2-a687-8d642c0f2556",
+      "result_id": "36ea6edf-7798-47dd-91be-c66a591665a8"
+    },
+    {
+      "claim_id": "9641f3e4-5f8d-46c6-ae09-c6fdfd20d0b6",
+      "result_id": "36ea6edf-7798-47dd-91be-c66a591665a8"
+    },
+    {
+      "claim_id": "8d521c7c-42df-4cf9-b3ed-d1dac366d984",
+      "result_id": "90fd8e3d-dea0-4d44-9a58-74fa48fc3306"
+    },
+    {
+      "claim_id": "5844832c-c705-4bf0-8a7a-e9ff2f52244a",
+      "result_id": "90fd8e3d-dea0-4d44-9a58-74fa48fc3306"
+    },
+    {
+      "claim_id": "9b4f07b1-165a-47ba-9b1a-644a9f84601d",
+      "result_id": "90fd8e3d-dea0-4d44-9a58-74fa48fc3306"
+    },
+    {
+      "claim_id": "694c2cac-ebe6-4bf3-aafd-64ff20d2f368",
+      "result_id": "90fd8e3d-dea0-4d44-9a58-74fa48fc3306"
+    },
+    {
+      "claim_id": "b5a1aa48-75b0-449f-bf35-2c3cd5c68456",
+      "result_id": "90fd8e3d-dea0-4d44-9a58-74fa48fc3306"
+    },
+    {
+      "claim_id": "f6cbd5b5-b869-4de6-98a3-9ada184787bd",
+      "result_id": "90fd8e3d-dea0-4d44-9a58-74fa48fc3306"
+    },
+    {
+      "claim_id": "661b2568-a286-479e-bae8-6603f2b927d4",
+      "result_id": "d81a8e92-63a1-4f68-80b1-f945e0d556ff"
+    },
+    {
+      "claim_id": "af2ef478-ce53-4c16-a194-eed3a3cad98e",
+      "result_id": "d81a8e92-63a1-4f68-80b1-f945e0d556ff"
+    },
+    {
+      "claim_id": "a123b6f1-4b04-4014-b052-914ef42a72e2",
+      "result_id": "ba192edc-4f46-45fb-95a8-510f8de8a3f1"
+    },
+    {
+      "claim_id": "bfedd44c-ac8f-4639-beed-7a51a8fa5532",
+      "result_id": "ba192edc-4f46-45fb-95a8-510f8de8a3f1"
+    },
+    {
+      "claim_id": "3c5e0852-d898-44b1-9ec6-76bc7fd89d54",
+      "result_id": "ba192edc-4f46-45fb-95a8-510f8de8a3f1"
+    }
+  ],
+  "comparisons": []
+}

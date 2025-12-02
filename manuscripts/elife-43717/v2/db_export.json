@@ -1,0 +1,1775 @@
+{
+  "submission": {
+    "id": "c767fa19-5fac-41f8-a8f8-13429f5e8cc0",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T10:04:19.029880Z",
+    "updated_at": "2025-12-02T10:04:19.029880Z"
+  },
+  "content": [
+    {
+      "id": "c562b2a0-9bdf-4391-b93c-6c2ce87217dc",
+      "submission_id": "c767fa19-5fac-41f8-a8f8-13429f5e8cc0",
+      "content_type": "manuscript",
+      "content_text": "# Self-organized reactivation maintains and reinforces memories despite synaptic turnover\n\n## Authors\n\n- Michael Jan Fauth<sup>1</sup> ([ORCID: 0000-0002-0732-2972](https://orcid.org/0000-0002-0732-2972))\n- Mark CW van Rossum<sup>3</sup> ([ORCID: 0000-0001-6525-6814](https://orcid.org/0000-0001-6525-6814)) \u2020\n\n### Affiliations\n\n1. School of Informatics University of Edinburgh Edinburgh United Kingdom\n2. Third Physics Institute University of G\u00f6ttingen G\u00f6ttingen Germany\n3. School of Psychology University of Nottingham Nottingham United Kingdom\n4. School of Mathematical Sciences University of Nottingham Nottingham United Kingdom\n\n\u2020 Corresponding author\n\n## Abstract\n\nLong-term memories are believed to be stored in the synapses of cortical neuronal networks. However, recent experiments report continuous creation and removal of cortical synapses, which raises the question how memories can survive on such a variable substrate. Here, we study the formation and retention of associative memory in a computational model based on Hebbian cell assemblies in the presence of both synaptic and structural plasticity. During rest periods, such as may occur during sleep, the assemblies reactivate spontaneously, reinforcing memories against ongoing synapse removal and replacement. Brief daily reactivations during rest-periods suffice to not only maintain the assemblies, but even strengthen them, and improve pattern completion, consistent with offline memory gains observed experimentally. While the connectivity inside memory representations is strengthened during rest phases, connections in the rest of the network decay and vanish thus reconciling apparently conflicting hypotheses of the influence of sleep on cortical connectivity.\n\n## Introduction\n\nLong-term memories are believed to be stored in the connections of cortical neuronal networks (Martin et al., 2000; Mayford et al., 2012). While it is often assumed that the synaptic connectivity remains stable after memory formation, there is an increasing body of evidence that connectivity changes substantially on a daily basis. Continuous rewiring of the synaptic connections (Holtmaat et al., 2005; Xu et al., 2009; Yang et al., 2009; Loewenstein et al., 2015) may exchange up to 50% of the synapse population over a time-course of weeks (Loewenstein et al., 2015). Hence, only a minuscule fraction of synaptic connections generated upon the original learning experience persists after a few months (Yang et al., 2009). Intriguingly, experiments demonstrate that despite this continuous synaptic turnover, memories are not only stable but might even improve without further training (Walker et al., 2003; Cai and Rickard, 2009; Honma et al., 2015), especially during sleep (Jenkins and Dallenbach, 1924; Karni et al., 1994; Fischer et al., 2002; Walker et al., 2003; Dudai, 2004; Stickgold, 2005; Gais et al., 2006; Korman et al., 2007; Lahl et al., 2008; Diekelmann and Born, 2010; Pan and Rickard, 2015; Rickard and Pan, 2017).\n\nIt is unclear how cortical networks can retain, let alone improve, memories over time (Mongillo et al., 2017; Ziv and Brenner, 2018; Rumpel and Triesch, 2016). One hypothesis is that there are two pools of synapses: a stable and an unstable one (Kasai et al., 2003; Loewenstein et al., 2015), and in particular inhibitory stability could play a crucial role (Mongillo et al., 2018). Another possibility is that, by hippocampal coordination, memory events are replayed in the cortex. For example, Acker et al. (2018) show that periodic, external replay of learned input patterns strengthens synaptic connections that are consistent with existing connections. However, as the case of patient H.M. shows, hippocampal replay does not appear to be necessary to maintain cortical memories. Finally, in Kappel et al. (2018), synaptic plasticity depending on a global reinforcement signal is used to stabilize new synapses which contribute to a learned behavior. However, such a reinforcement signal seems biologically implausible to maintain long-term memories.\n\nIn this study, we will explore another possibility, namely that the Hebbian cell assemblies that store the memories (Hebb, 1949; Palm, 1982; Harris, 2012; Palm et al., 2014; Litwin-Kumar and Doiron, 2014), spontaneously transiently reactivate. Such spontaneous alternation between high and low population activity has previously been associated with Up-Down-dynamics (Holcman and Tsodyks, 2006; Barak and Tsodyks, 2007; Setareh et al., 2017; Jercog et al., 2017), observed in cortical networks during sleep (Steriade et al., 1993) and in quiescent awake states (Poulet and Petersen, 2008; Okun et al., 2010; Engel et al., 2016). Along these lines, experiments show that learning- and memory-related activity patterns are reactivated in cortex, predominantly during sleep and rest (Peyrache et al., 2009; Gulati et al., 2014; Ramanathan et al., 2015; Gulati et al., 2017; Jiang et al., 2017). Recent modeling work has shown that in the absence of synaptic turnover, reactivation can indeed maintain stable memories in recurrent networks (Tetzlaff et al., 2013; Litwin-Kumar and Doiron, 2014; Zenke et al., 2015). However, it is unclear whether memories can be made robust against synaptic turnover which would be necessary to account for long-memory in biological networks.\n\nSynaptic turnover partly depends on neuronal activity or the size of the synapses (see Fauth and Tetzlaff, 2016 for a review). In particular, larger synapses are less likely to be removed (e.g. Le B\u00e9 and Markram, 2006) implying that rewiring follows synaptic plasticity and attains Hebbian-like character. Here, we show that the combination of structural plasticity, synaptic plasticity and self-generated reactivation, even for a just short period every day, can not only stabilize assemblies against synaptic turnover but even enhance their connectivity and associative memory.\n\n## Results\n\nUsing a computational model, we investigate the storage and long-term stability of memories in the presence of short-term depression and the two major activity-dependent processes that are thought to implement long-lasting cortical connectivity changes (Figure 1A, for a review see Fauth and Tetzlaff, 2016): (1) Synaptic plasticity, which changes the transmission efficacy - or synaptic weight - between neurons (see Martin et al., 2000; Takeuchi et al., 2014 for a review), and (2)\u00a0structural plasticity, that is, the creation and removal of synapses. Structural plasticity is strongly correlated to successful learning (Patel and Stewart, 1988; Patel et al., 1988; Kleim et al., 2002; Xu et al., 2009; Yang et al., 2009; Lai et al., 2012; Moczulska et al., 2013), but also gives rise to continuous synaptic turnover. We study how these plasticity processes store co-activity patterns in the connectivity of recurrent neuronal networks and how the corresponding connectivity changes are retained and strengthened over time.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/43717/elife-43717-fig1-v2.jpg)\n\n**Figure 1.:** (A) Neuron $j$ is connected to neuron $i$ at $S_{max}$ potential synaptic locations (here $S_{max}=7$). (Inset) Non-functional potential synapses (dashed) become functional synapses (solid) with a constant rate $b$ and are deleted with a weight-dependent rate $d\u2062(w_{i\u2062j,k})$. The weights of functional synapses are adapted by a Hebbian plasticity rule $w\u02d9_{i\u2062j,k}$.\u00a0(B) The simulation protocol is structured in three phases: During a learning phase (blue) groups of neurons are strongly stimulated in an alternating fashion. During subsequent sensory phases (yellow), the network is bombarded with quickly changing patterns. Finally, during rest phases (red), the network receives no stimulation but spontaneously reactivates.\n\nThe simulation protocol has three phases (Figure 1B): During the learning phase, alternate groups of neurons receive strong stimulation and the patterns are stored into the network. Next, during the sensory phase, the network receives ongoing input from upstream networks mimicking incoming sensory information. Finally, during the rest phase, the neurons do not receive any external stimulation but re-activate spontaneously.\n\n### Assembly formation during learning phase\n\nAs a first step to investigate memory storage in the presence of synaptic and structural plasticity, we examine how cell assemblies are formed. We simulate a learning phase where multiple groups of neurons receive strong, external stimulation in an alternating fashion. This stimulation leads to high activity in these neurons, and low activity in the rest of the network due to lateral inhibition (Figure 2A).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/43717/elife-43717-fig2-v2.jpg)\n\n**Figure 2.:** (A) Activity during the learning phase when assemblies receive strong, alternating stimulation. (B) Top: Time-course of the synaptic weights per synapse during learning. Between neurons within an assembly (purple), between control neurons (grey), and between different assemblies or assembly and control neurons (green). Curves depict the mean and shadings the standard deviation. Bottom: The slower time-course of the number of synapses per connection. (C) Top: Matrix depicting the sum of weights between 120 exemplary neurons (including all three stimulated groups) after learning at $t=15\u2062h$. Each point represents the synaptic weight summed over all the synaptic connections between the two neurons (x-axis pre- and y-axis-postsynaptic neuron; sorted). Bottom: Corresponding connectivity matrix of the number of synapses.\n\nWe track the time-course of the average synaptic weight (Figure 2B, Top) and the average number of synapses (Figure 2B, Bottom) in three different classes of connections: First, connections within the same stimulated group (intra-assembly connections, purple curves) are potentiated as a result of intervals of correlated high pre- and postsynaptic activity. As the decay occurring between these intervals is limited, there is a fast increase of the weights (Figure 2B, Top, purple curves). On a slower time-scale, new connections are build up (Figure 2B, Bottom). The build up occurs because, while the connection creation rate is constant, the deletion probability decreases for larger weights, in line with experiments (Le B\u00e9 and Markram, 2006; Yasumatsu et al., 2008).\n\nSecond, neurons outside the assembly, also referred to as control neurons, are not stimulated and exhibit low activity. Connections between them are not potentiated and remain unstable, leading to a low connectivity between these neurons (Figure 2B, grey curves). Third, connections between different stimulated groups as well as connections between control neurons and stimulated groups are asynchronously active. These connections have small weights, such that synapses are unstable and the number of synapses remains low (Figure 2B, green curves).\n\nIn summary, during the learning phase, each stimulated group becomes a highly interconnected cell assembly, while all non-intra-assembly synapses remain sparse and have small synaptic weights (Figure 2B). The synaptic connectivity follows the synaptic strength on a time-scale of hours.\n\n### Cell assemblies spontaneously reactivate\n\nAfter the learning phase, the network alternates between two modes. During sensory phases, the network receives stimulation with quickly changing random patterns mimicking incoming information from upstream networks. In this phase, lateral inhibition prevents spontaneous activation of non-stimulated neurons and the assemblies slowly decay.\n\nHowever, during rest phases, stimulation is absent and the assemblies can reactivate. This happens provided there is sufficient intra-assembly recurrence, so that the positive feedback drives the assemblies towards a high population activity (e.g. Wilson and Cowan, 1972; Brunel, 2000; Figure 3A, black nullcline), which corresponds to a reactivation of the learned pattern. As lateral inhibition implements a winner-take-all structure, only one of the assemblies reactivates at any time.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/43717/elife-43717-fig3-v2.jpg)\n\n**Figure 3.:** (A) Sketch of the dynamics during the rest phase.\u00a0Solid lines mark the fixed points of population activity in a strongly connected assembly for relaxed weights (black) and after short-term depression (grey). When the assembly is taken beyond a upper bifurcation point (black dot), it becomes highly active (black dashed arrow). Subsequently, short-term depression decreases the recurrent connectivity and the population activity falls back to the low activity (grey dashed arrow). (B) Mean activity in stimulated groups and control neurons during sensory and rest phase. Shadings depict standard deviations. (Ci) Correlation of\u00a0pre- and postsynaptic activity during the rest phase for intra-assembly connections. (Cii) Same for connections between two stimulated groups and between stimulated groups and control neurons.\n\nTo confirm this, we tracked the pre- and postsynaptic activities for all connections during the rest phase. For connections within the same assembly, the activity is strongly correlated (Figure 3Ci). We find a high probability of experiencing either high activities in both pre- and postsynaptic neuron (self-reactivations) or low activities (activation of other assemblies). In contrast, for connections between pairs of neurons from different assemblies or from assembly and control group there is virtually no correlated activity (Figure 3Cii).\n\nThe high activity state is sustained by strong positive feedback from inside the assembly. To prevent that the assembly stays highly active, the positive feedback-loop must be shut down. Similar to other models (Barak and Tsodyks, 2007; Holcman and Tsodyks, 2006), short-term depression weakens the transmission efficacy of the excitatory synapses and thereby the positive feedback. As a consequence, the high population activity becomes unstable (i.e. the high activity fixed-point vanishes, Figure 3A, grey nullcline) such that the activity drops back and the synapses can recover.\n\n### Self-reactivation strengthens cell assemblies\n\nNext, we investigate how reactivation is crucial for maintaining the assemblies. If there are no rest phases in which the assemblies can reactivate, the synaptic weights inside the assemblies decay (Figure 4A, Top). Because the synaptic removal rate is faster for small synapses, the synaptic weight decay is followed by a decay in the number of synapses on a timescale of days (Figure 4A, Bottom).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/43717/elife-43717-fig4-v2.jpg)\n\n**Figure 4.:** (A) Without resting intervals mean intra-group weights decay (purple), followed by a decay in connectivity (bottom panel).\u00a0Weights between control neurons (grey) and between different assemblies or assembly and control neurons (green) remain low. Dashed line depicts theoretical prediction; shading represents standard deviation. (B) Reactivation during rest phases rescues the assemblies. (C) Connectivity matrix depicting the sum of weights (top) and number of synapses (bottom) between 120 exemplary neurons at the end of the simulation in panel B. (D) Simulation with the same sequence of sensory and rest phases, but all structural plasticity is blocked after learning ($t=15\u2062h$). The memory is retained for a while, but after about 100 hr, when there is a longer period without reactivation, the assemblies decay. (E) Connectivity matrices as in panel C for the simulation in panel D. Although the number of synapses is similar, the synaptic weights have decayed.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/43717/elife-43717-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Rest phases strengthen intra-assembly connectivity and weaken extra-assembly connectivity. (A) Change of the average synaptic weight between neurons within the same assembly (blue) and between neurons outside the assemblies (grey) during individual rest phases depending on the length of the resting interval. (B) Change in the mean number of stable synapses (synapses above $w_{o\u2062f\u2062f}$) during individual rest phase. Both intra-assembly weights and number of connections grow, whereas connectivity outside the assemblies decays. (C) During the sensory intervals, the opposite occurs. (D) Change in the mean number of stable synapses during sensory intervals.\u00a0.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/43717/elife-43717-fig4-figsupp2-v2.jpg)\n\n**Figure 4\u2014figure supplement 2.:** Relative change of the synaptic weight after 24 hr of repeated sensory and rest phases. Difference between synaptic weight (of individual synapses) at each full day in the simulation (starting from $t=24\u2062h$) and the same weight 24 hr later (if still existent normalized by the initial weight).\n\nIn contrast, when the sensory phases are interleaved with rest phases, we observe that the strong connectivity inside the assembly is not only preserved by the self-reactivations, but even gradually increases (Figure 4B, Bottom, purple curve). Moreover, the connectivity from and to other assemblies in the network remains weak (Figure 4C). Close inspection of the connectivity changes reveals that also spurious connections that were built-up during the sensory phases are removed during the rest phase (Figure 4\u2014figure supplement 1).\n\nIn the absence of structural plasticity, maintaining the memories is more challenging. In Figure 4D, we blocked structural plasticity during the retention phase. The assemblies initially reactivate and are stable for multiple days, but a long sensory phase after 100\u00a0hours\u00a0drives them below the reactivation threshold and all assemblies are lost.\n\n### Synapses in assemblies are continuously replaced\n\nThe assembly strengthening during the rest phase could be due to addition of new synapses, or the net result of concurrent creation and removal. Similar to experiments (Holtmaat et al., 2005; Yang et al., 2009; Loewenstein et al., 2015), we measured the persistence of synapses at a specific potential synaptic locations from day to day and find ongoing synapse creation and removal within the assemblies, exchanging around 10% of the synapse population on a daily basis (Figure 5A). Moreover, synapse creation transiently increases shortly after learning while spine removal remains low, similar as in experiments (Yang et al., 2014). The fraction of synapses that were present after learning and persist until a given time-point continuously decreases (Figure 5B) indicating that also strong synapses inside the assemblies are continuously removed. Hence, the strengthening of the assemblies is not emerging from a simple addition of new synapses, but because the reactivations stabilize more synapses than are being removed and thus the synaptic substrate of the assemblies is continuously exchanged (Figure 5C).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/43717/elife-43717-fig5-v2.jpg)\n\n**Figure 5.:** (A) Synapse creation (red) and removal (blue) relative to the synapses existing at the previous day.\u00a0Synapse creation is strongly elevated the first day after learning. (B) The decay of persistent synapses created during learning indicate ongoing removal and replacement of synapses that originally formed the memory. (C) Sketch of the structural changes occurring in the presence of self-reactivation. Although the synapses that have been created during learning are continuously removed (-), the collective dynamics of the assembly stabilizes new synapses (+) between its neurons which counteracts synapse loss and can lead to a net strengthening of the assembly.\n\n### Self-reinforcements improves robustness of pattern completion\n\nKnowing that cell assemblies can strengthen their connectivity by self-organized reactivation, we examine whether this improves the associative properties of the encoded memories. Associative memory requires the re-activation of an assembly, even when presented with a cue that only partially overlaps with the memory.\n\nQuick and correct recall of a cued pattern requires that those neurons which should be active in this pattern receive a strong input and those neurons which should stay silent receive a weak input. The further the input distributions are separated from each other and from the offset of the neuronal gain function, the better and faster the recall quality. We investigate the retrieval robustness of the memory against corruption in the cue, by switching a fraction of the active neurons of the pattern off and the same number of inactive neurons on. Immediately after learning ($t=15\u2062h$, left most time-point in 4B), the input distributions partly overlap (Figure 6A). However, after reactivations during rest ($t=300\u2062h$), the distributions are separated further and the currents of the active neurons are above the offset of the sigmoidal gain function (Figure 6B), such that the pattern will be correctly completed.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/43717/elife-43717-fig6-v2.jpg)\n\n**Figure 6.:** (A) Histograms of the incoming currents to different classes of neurons right after learning ($t=15\u2062h$), when presented with corrupted memory patterns (histograms from 100 realizations). For successful pattern completion, the incoming currents of neurons in the tested stimulation pattern (blue) should be above the threshold at zero while the currents from neurons that are part of another pattern (green) and neurons that have not been stimulated during learning (grey) should be below. (B) After the reactivations during rest phases, the distributions are more separated ($t=300\u2062h$). (C) Fraction of correctly classified neurons (active and inactive) for different levels of cue corruption. (D) Fraction of wrongly inactive (bottom) and wrongly active neurons (top).\n\nTo quantify this further, we evaluated the quality of pattern completion for varying levels of pattern corruption. Directly after learning, errors increase when the corruption exceeds 15% (Figure 6C), mostly due to an increase in false negatives (Figure 6D). After the resting phases, the strengthened network ($t=300\u2062h$) recalls correctly up till much higher noise levels. In summary, the self-induced strengthening improves recall quality.\n\n### Timescale requirements for assembly strengthening\n\nGiven that spontaneous reactivation during the rest phase is thus crucial for memory maintenance (Figure 4B), we analyze how frequent and how long the rest phases need to be. Starting from a given number of synapses between the neurons in the assembly, we find that the number of connections increases more the longer the rest phases and the shorter sensory phases (Figure 7A). When the sensory phases are too long ($\\tau_{rnd}$\u00a0>\u00a020 hr), the assemblies loose synapses (blue region).\n\n![Figure 7.](https://cdn.elifesciences.org/articles/43717/elife-43717-fig7-v2.jpg)\n\n**Figure 7.:** (A) Change of the number of synapses between intra-assembly neurons after 5 days. The intra-assembly connectivity grows stronger for longer rest phases and shorter sensory phases. For long sensory phases connectivity decreases. (Averaged over fifteen 30-neuron assemblies initialized with eight synapses per connection.) (B) The theoretical prediction matches the simulation. (C) Maximal duration of sensory phase after which assemblies still self-reactivate increases when starting of with a larger initial numbers of synapses. The curve shows the theoretical predictions of the latest possible reactivation. (D) Time-course of the average number of synapses (network alternating between $t_{s\u2062e\u2062n\u2062s}=4.5\u2062h$ sensory phases and $t_{r\u2062e\u2062s\u2062t}=0.5\u2062h$ rest phases). Above a minimal initial number of synapses, a convergence to a stable state can be observed. (E) Change in the number of synapses after one cycle of sensory and rest phase for different initial numbers of synapses and durations of the sensory phase ($t_{r\u2062e\u2062s\u2062t}=1\u2062h$). In the green region, reactivations will not occur (see panel C) and assemblies will decay (see panel D). (F) Theoretical prediction of the change per cycle (color code) matches experiment and exhibits a stable stationary value (solid grey curve). (G) Theoretically predicted stationary number of synapses for different rest phase durations.\n\nThis behaviour can be described theoretically (Materials\u00a0and\u00a0methods): We assume that all synapses in an assembly are maximally potentiated by reactivation during the rest phase and decay exponentially during sensory phases and then calculate the expected synaptic creation and removal. This simple theory explains the simulation results over a broad regime of timescales (Figure 7B) indicating that the dynamics of the intra-assembly synapses is governed by the collective reactivation of the assemblies.\n\nIt is also possible, however, that assemblies fail to reactivate and decay instead. To quantify when such reactivation failures occur, we evaluated the maximal duration of the sensory phase after which at least 90% of assemblies still reactivate for different initial connectivity levels. Unsurprisingly, the larger the number of initial connections, the longer the assemblies survive (Figure 7C). This, in turn, implies that by increasing their connectivity by self-reactivation, the assemblies also become more and more stable against prolonged absence of reactivation.\n\n### Strengthening emerges from convergence to an attractive state\n\nConnections in an anssembly can undergo two fates: either the connections decay to control levels or they converge to a fixed number of synapses (Figure 7D). Self-organized strengthening, as observed above, occurs when the initial number of synapses is below the fixed point, yet the assembly is strong enough to survive and self-reactivate (e.g. traces starting at $S=8$ or $S=12$ in Figure 7D).\n\nTo study the emergence of this fixed point in the number of synapses, we simulated the change in the number of synapses after one full cycle of sensory and rest phase (Figure 7E). The number of synapses either decreases for large initial numbers of synapses and increases for small initial numbers of synapses, matching theory (Figure 7F). Hence, after many cycles with the same phase durations, the number of synapses will converge and fluctuate around a stationary final value (gray line). The theory provides the dependence of this final value on the durations of sensory and rest phases: The longer the rest phase and the shorter the sensory the higher the value (Figure 7G).\n\nFor long sensory phases (x-axis in Figure 7E,F and G), the synaptic survival probability diminishes. The stationary number qualitatively follows this survival probability and decreases for longer duration of the sensory phase. The longest sensory phase after which reactivation is no longer possible is well predicted by the time at which the excitatory strength (product of weight and number of synapses) drops below inhibition (Figure 7C, black line, Figure 7F, green region).\n\nWithin longer resting intervals, more synapses are created and stabilized, such that the stationary value increases (Figure 7G). Note, however, even a short rest phase of 3 min is sufficient to maintain strong connectivity for up to 20 hr of sensory phase.\n\n### Role of short-term depression\n\nIn the above, spontaneous reactivations of assemblies were terminated by short-term depression. However, short-term depression is not the only candidate mechanism and spike-frequency adaptation can be used instead (Jercog et al., 2017). This does not lead to qualitative changes in the results thus far (data not shown), however, a qualitative difference emerges when considering the stability of overlapping cell assemblies. We initialized our network with two 30-neuron assemblies with an overlap of 5 neurons, initially connected by 12 synapses on each connection. After 5 days, the network with short-term depression maintained the overlapping assemblies (Figure 8A). In contrast, the network with spike-frequency adaptation has formed non-overlapping assemblies (Figure 8B) and the neurons in the overlapping population have been incorporated into either one of the assemblies.\n\n![Figure 8.](https://cdn.elifesciences.org/articles/43717/elife-43717-fig8-v2.jpg)\n\n**Figure 8.:** (A) Connectivity matrix of the number of synapses after 5 days for two overlapping assemblies and the combination of plasticity processes used in this paper. (B) Same for using spike-frequency adaptation instead of short-term depression. Neurons from the overlap-region have become associated to one of the assemblies and disconnected from the other. In all cases, connections within assemblies were initialized with eight synapses.\n\nThe reason for the difference is that with spike-frequency adaptation, neurons activated with the first assembly will be adapted and therefore less likely to be reactivated with second assembly. Due to this competition and the positive feedback between activity and connectivity introduced by the Hebbian plasticity processes, the overlap region will be reactivated and connected more and more with only one of the assemblies and disconnect from the other, separating the assemblies. In contrast, using short-term depression, only the synapses between the overlap region and the assembly are adapted such that a reactivation with another assembly is not impeded.\n\n## Discussion\n\nWe have introduced a network with synaptic and structural plasticity which forms Hebbian cell assemblies in response to external stimulation. During random sensory stimulation these assemblies decay, but in the absence of external stimulation, the cell assemblies self-reactivate resulting in periods of strong correlated activity which strengthen and stabilize the intra-assembly connectivity, and weaken other connections. This protects the assemblies against ongoing synaptic turnover, increases their robustness against prolonged phases without reactivation, and leads to off-line improvement of the associative properties of the memories.\n\nThe critical ingredients and parameters for the mechanism to work are as follows: (1) The network needs to be able to spontaneously reactivate assemblies. This requires sufficient increase of the synaptic weights during the learning phase, so that the assembly has a net positive feedback and can transition to a high activity state. (2) The high activity state needs to terminate, requiring an adaptive mechanism such as spike frequency adaptation or short-term synaptic depression. (3) Lateral inhibition is required to prevent the activation from spreading to multiple assemblies. This de-correlates activity and ensures that only connections within the assemblies potentiate. (4) Structural plasticity should encourage stabilization of intra-assembly synapses. Here, this is achieved by a higher synapses removal rate for small synapses, while the synapse creation rate is fixed. Note, that the the structural plasticity in our model is not associative by itself. It becomes so indirectly via its dependence on the synaptic weights. (5) Connections between assemblies should remain weak, which, given (3) and (4), requires synaptic plasticity which depresses weights in case of asynchronous high pre- and postsynaptic activity, as is the case in Hebbian learning.\n\n### Self-organized reactivations\n\nA number of earlier models of long-term and very-long-term memory have used reactivation to strengthen or restructure previously stored memories. However, these models often rely on an external reactivation mechanism (Tetzlaff et al., 2013; Acker et al., 2018). In contrast, here the self-generated reactivations of cell assemblies cause non-correlated reactivations of individual cell assemblies, such that neither individual external cues (Acker et al., 2018), nor pre-structured connectivity (Tetzlaff et al., 2011; Tetzlaff et al., 2013) are necessary.\n\nOther models have shown that self-organized reactivation can stabilize Hebbian cell assemblies against ongoing synaptic plasticity (Litwin-Kumar and Doiron, 2014; Zenke et al., 2015). However, stability was only demonstrated on a timescale of hours and in the absence of synaptic turnover. It remained questionable whether assemblies could survive prolonged periods in which the reactivations are absent or when their synaptic substrate is subject to synaptic turnover. Here, we show that assemblies can indeed survive for many hours without reactivation. Moreover, in our model, reactivations maintain and strengthen the assembly connectivity by stabilizing new synapses which support the memories, while removing distracting synapses, resulting in offline memory gains.\n\nWe expect that offline memory gains will generally emerge for mechanisms which induce a bi-stable connectivity dynamics, that\u00a0is when synapse creation balances removal both in a weakly and a strongly connected configuration and connectivity will converge to one of these configurations from any initial condition (Figure 7D\u2013G). For example, the bi-stablility does not necessarily have to rely on reactivation (see\u00a0Helias, 2008; Deger et al., 2012; Fauth et al., 2015; Deger et al., 2018 for alternatives). However, as connectivity dynamics in the presence of structural plasticity is slow, memory strength will typically not be saturated after learning. Therefore whenever the memory is strong enough, one should observe convergence to the upper configuration and hence a strengthening after learning. However, when only faster synaptic plasticity is considered for memory formation, the connectivity (i.e. the weights) tends to converge already during learning and no off-line strengthening will be observed (Zenke et al., 2015; Litwin-Kumar and Doiron, 2014; but see\u00a0Figure\u00a06\u00a0in Tetzlaff et al., 2013 for an example of non-converged weights).\n\n### Reactivation, sleep and memory improvement\n\nReactivations of memory related activity patterns in cortex have been reported mostly during sleep, predominantly during NREM or slow-wave sleep (Ramanathan et al., 2015; Gulati et al., 2017; Gulati et al., 2014; Peyrache et al., 2009; Jiang et al., 2017). During this sleep phase, the cortex exhibits alternating phases of high and low activity, so-called Up- and Down-phases or slow oscillations (Steriade et al., 1993; Steriade et al., 2001; Timofeev et al., 2001). This Up-Down-dynamics relies on recurrent excitation (Sanchez-Vives and McCormick, 2000), similar to the dynamics here. In vitro imaging of individual activity during Up-Down-dynamics in cortical slices reveal further similarities with our model: Each Up-state comprises a subgroup of cells with strong correlated activity and the time-course of the activity is reminiscent of the convergence into an attractive state (Cossart et al., 2003; Shu et al., 2003). Accordingly, also in vivo, Up-states induce stereotypical local patterns (Luczak et al., 2007). Finally, single-cell recordings indicate that learning-related activity patterns reactivate during slow-wave sleep and that this is phase-coupled with Up-states (Ramanathan et al., 2015). The memory strengthening reported here might therefore be related to the long known beneficial properties of sleep on memory (Jenkins and Dallenbach, 1924; Karni et al., 1994; Fischer et al., 2002; Walker et al., 2003; Dudai, 2004; Stickgold, 2005; Gais et al., 2006; Korman et al., 2007; Lahl et al., 2008; Diekelmann and Born, 2010; Pan and Rickard, 2015; Rickard and Pan, 2017).\n\nIn our model, we observe a decrease of memory stability for very long wake (sensory) phases (Figure 7). However, as sleep deprivation normally does not lead to a large scale loss of memories, it is possible that there are further processes at work to prevent the decay of memories. For example, there may be a stable pool of synapses (Kasai et al., 2003; Loewenstein et al., 2015), which is more resilient to decay. Another possibility is that reactivations do not exclusively occur during sleep, as sleep-like activity patterns can also be observed during periods of resting or quiet wakefulness (Vyazovskiy et al., 2011; Sachidhanandam et al., 2013; Engel et al., 2016; Gentet et al., 2010; Poulet and Petersen, 2008; Okun et al., 2010). Coherent with the above-presented model, offline-gains for some kinds of memories have been observed during wakefulness (Walker et al., 2003; Rickard et al., 2008; Cai and Rickard, 2009; Varga et al., 2014; Honma et al., 2015; Pan and Rickard, 2015; Rickard and Pan, 2017 but see, for\u00a0example Adi-Japha and Karni, 2016). Moreover, several fMRI studies establish a link between the reactivation of task specific patterns during rest periods and later task performance (Staresina et al., 2013; Deuker et al., 2013), which is consistent with this view.\n\n### Connectivity changes during sleep\n\nThe question whether cortical connectivity increases or decreases during sleep - especially slow-wave sleep - has been heavily debated recently (Tononi and Cirelli, 2003; Frank, 2012; Frank, 2013; Tononi and Cirelli, 2014; Timofeev and Chauvette, 2017). On one hand, the synaptic homeostasis hypothesis states that connectivity should be down-regulated during sleep to balance the potentiation dominated wake intervals and to allow for new learning (Tononi and Cirelli, 2003; Tononi and Cirelli, 2014). On the other hand, there is accumulating evidence that connectivity is built-up especially after learning (e.g. Yang et al., 2014, for a recent review see Timofeev and Chauvette, 2017).\n\nHere, we observe an increase in the intra-assembly connectivity, consistent with the second hypothesis. Yet, inter-assembly and control connectivity decreases, as proposed by the synaptic homeostasis hypothesis. Thus, our model combines and refines both views: connectivity inside memory representations is up-regulated, such that memories are consolidated and strengthened, whereas the rest of of the network down-regulates weights and number of synapses, such that these neurons remain susceptible to subsequent learning.\n\n### Synaptic weight fluctuations\n\nWhile our model focuses on the critical ingredients described above, there are further challenges to the retention of memories on long timescales. Most prominent are the large intrinsic fluctuations of the synaptic weights observed on a daily basis (Yasumatsu et al., 2008; Statman et al., 2014; Dvorkin and Ziv, 2016). Although the daily changes of the synaptic weights in our model are comparable to experimental data, in the model the synapses segregrate in a stable and unstable pool (Figure 4\u2014figure supplement 2, compare to Yasumatsu et al., 2008, Figure 1B). It needs to be clarified in future research how such synapse intrinsic fluctuations affect memory maintenance. We expect that also in this context the connectivity build-up due self-reactivation will make memories more robust.\n\n## Materials and methods\n\n### Model description\n\n#### Neuron model\n\nAs the simulations extend to timescales of days and weeks, we use computationally efficient rate-based neurons. The membrane potential $u_{i}$ follows\n\n$$\n\\tau\u2062\\frac{d\u2062u_{i}}{d\u2062t}=-u_{i}+\\sumj=1N_{c\u2062e\u2062l\u2062l\u2062s}\\sumk=1S_{i\u2062j}f_{j}\u2062w_{i\u2062j,k}\u2062v_{j}+I_{i\u2062n\u2062h}+I_{s\u2062t\u2062i\u2062m,i}+I_{n\u2062o\u2062i\u2062s\u2062e,i}\n$$\n\nwhere $\\tau=155\u2062m\u2062s$ is the neural time-constant, $I_{s\u2062t\u2062i\u2062m,i}$ is the individual external stimulation current and $I_{n\u2062o\u2062i\u2062s\u2062e,i}$ is a spatio-temporal white noise current drawn from a Gaussian distribution with zero mean and standard deviation of 1.5. As neurons can be connected with multiple synapses, the connection between each pair $(i,j)$ of neurons is described by a number of synapses $S_{i\u2062j}$ and their synaptic weights $w_{i\u2062j,k}$ with $k\\in{1,\u2026,S_{i\u2062j}}$ (see Figure 1A). The utilization factor $f_{j}$ arises from short-term depression (below).\n\nMoreover, each neuron receives a global inhibitory current\n\n$$\n\\tau\u2062\\frac{d\u2062I_{i\u2062n\u2062h}}{d\u2062t}=-I_{i\u2062n\u2062h}-w_{i\u2062n\u2062h}\u2062\\sumi=1N_{c\u2062e\u2062l\u2062l\u2062s}v_{i}\n$$\n\ndetermined by the sum of all firing rates $v_{i}$ and the inhibitory weight $w_{i\u2062n\u2062h}=3.5\u2062w_{m\u2062a\u2062x}$, where $w_{m\u2062a\u2062x}=0.7$ is a global factor scaling all weights (see below).\n\nThe firing rate follows from the membrane potential by a logistic function $v_{i}=(1+exp\u2061(-u_{i}))^{-1}$.\n\n#### Structural plasticity\n\nWe assume an all-to-all potential connectivity. Each pair of neurons has $S_{max}$ potential synaptic locations at which functional synapses can be formed (Figure 1A). An unoccupied potential synapse is converted to a functional synapse with rate $b=1day^{\u22121}$. These new synapses are initialized at a small weight ($w_{0}=0.001$) and then evolve according to the synaptic plasticity rule described below. On the other hand, functional synapses will be removed with a certain probability. To model the experimental observation that larger synapses are more stable than small synapses (Le B\u00e9 and Markram, 2006; Matsuzaki et al., 2001; Yasumatsu et al., 2008), we use a deletion probability\n\n$$\nd(w_{ij,k})=d_{1}+\\frac{d_{0}\u2212d_{1}}{1+exp\u2061(\u2212\\beta(w_{_{off}}\u2212w_{_{ij,k}}))}\n$$\n\nwhich scales between $d_{1}=0.03day^{\u22121}$ (when $w_{i\u2062j,k}\u2192w_{m\u2062a\u2062x}$) and $d_{0}=24day^{\u22121}$ (for $w_{i\u2062j,k}\u21920$), with an offset $w_{o\u2062f\u2062f}=0.35\u2062w_{m\u2062a\u2062x}$ and steepness $\\beta=20$.\n\n#### Synaptic plasticity\n\nThe weights of existing synapses evolve according to a threshold-based Hebbian synaptic plasticity rule inspired by the calcium-based plasticity rule of Graupner and Brunel (2012):\n\n$$\n\\frac{dw_{ij,k}}{dt}={\u2212\u0394_{decay}w_{ij,k}ifv_{i}<0.5andv_{j}<0.5+\u0394_{LTP}(w_{max}\u2212w_{ij,k})ifv_{i}>0.5andv_{j}>0.5\u2212\u0394_{LTD}w_{ij,k}otherwise\n$$\n\nwhere $\u0394_{d\u2062e\u2062c\u2062a\u2062y}=(2\u2062d\u2062a\u2062y\u2062s)^{-1}$ is the weight-decay rate at low activity. The synapse potentiates (with a potentiation rate $\u0394_{L\u2062T\u2062P}=0.1\u2062s^{-1}$) when pre- and postsynaptic neurons are simultaneously highly active. Potentiation is soft-bound and diminishes close to the maximal weight $w_{m\u2062a\u2062x}$. When only one of the neurons is active, the synapse depresses with a rate $\u0394_{L\u2062T\u2062D}=0.01\u2062s^{-1}$. Note, this rule can also be seen as a variant of the covariance rule (Sejnowski and Tesauro, 1989) with decay instead of potentiation when both activities are low.\n\n#### Short-term depression\n\nSimilar as in previous models (Holcman and Tsodyks, 2006; Barak and Tsodyks, 2007), excitatory synapses are subject to short-term depression (Tsodyks et al., 1998; Markram et al., 1998; Holcman and Tsodyks, 2006; Barak and Tsodyks, 2007) to terminate high activty states. The utilization variable $f_{i}$ follows the presynaptic activity $v_{i}$:\n\n$$\n\\frac{d\u2062f_{i}}{d\u2062t}=\\frac{1-f_{i}}{\\tau_{r\u2062e\u2062l\u2062a\u2062x}}-F\u2062f_{i}\u2062v_{i},\n$$\n\nwhere $\\tau_{r\u2062e\u2062l\u2062a\u2062x}=5\u2062s$ is the time constant describing recovery from depression, and $F=1\u2062s^{-1}$ scales the amount of depression when the synapse is activated. Note, as the dynamics of the utilization variable only depends on the presynaptic activity, we can use the same $f_{i}$ for all synapses from the same presynaptic neuron $i$.\n\n#### Spike-frequency adaptation\n\nWe focus on short-term depression as a mechanism to terminate the high population activity. As an alternative mechanism (see, for\u00a0example Jercog et al., 2017; Setareh et al., 2017), we use spike-frequency adaptation (Benda and Herz, 2003). We model this process as an additional current $I_{a\u2062d,i}$ in Equation 1. This current shifts the sigmoidal gain function and, thereby, adapts the firing frequency (Jercog et al., 2017). The adaptation current follows\n\n$$\n\\tau_{a\u2062d\u2062a\u2062p\u2062t}\u2062\\frac{d\u2062I_{a\u2062d,i}}{d\u2062t}=-I_{a\u2062d,i}-\\alpha\u2062v_{i}\n$$\n\nwith adaptation strength $\\alpha=33$ and an adaptation timescale $\\tau_{a\u2062d\u2062a\u2062p\u2062t}=5\u2062s$ to achieve dynamics comparable to short-term depression. In the simulations with spike-frequency adaptation, the utilization variable $f_{i}$ was fixed to 1 (no short-term depression).\n\n### Simulations\n\nWe simulate a network of 240 neurons with an all-to-all potential connectivity of $S_{max}=16$ potential connections between each pair of neurons. The network is initialized without any functional synapses and exposed to a 6 hr long sensory phase (see below), during which structural plasticity converges to an equilibrium state in which synapse creation and removal are balanced. The subsequent simulation protocol has three phases (Figure 1B): During the learning phase, one of three disjunct stimulation groups of 30 neurons each receives a strong ($I_{s\u2062t\u2062i\u2062m}=200$) stimulation for 18\u00a0s, which leads to nearly maximum activity in that group, followed by 36\u00a0s without stimulation. After that, the next group is stimulated. This protocol is repeated as long as the learning phase lasts (typically 9\u00a0h).\n\nAfter learning, the network is alternately exposed to sensory phases and rest phases with durations drawn from exponential distributions with means $\\tau_{sens}=4\u2062h$ and $\\tau_{rest}=2\u2062h$ respectively unless stated otherwise. The sensory phase models the ongoing input from upstream networks arising from sensory information. During this phase, we randomly select 15 neurons and expose them to strong stimulation ($I_{s\u2062t\u2062i\u2062m}=50$) for 1\u00a0s. After this, a new group of neurons is selected for stimulation. Note, we exclude the neurons that have been stimulated during the learning phase from the being stimulated in this phase. This guarantees that the random patterns do not (accidentally) reactivate the stored assemblies such that we are able to investigate the impact of phases without reactivation in our model.\n\nFinally, during the rest phase, none of the neurons receives any external stimulation and activity is entirely intrinsically generated.\n\nFor simulations that investigate memory retention (Figure 7B and C, and Figure 8), we skip the learning phase and manually initialize strongly connected assemblies. Each connection within these assemblies starts with the same number of synapses with the maximum weight $w_{m\u2062a\u2062x}$, whereas all other connections start with no synapses. In these simulations, the sensory and rest phase durations are drawn from truncated normal distributions with a standard deviation set to 0.25 times the mean.\n\nSimulations were written in C++\u00a0and optimized for efficient implementation of the above-described synaptic and structural plasticity rules on long timescales. For example, synapse creation and removal were simulated event-based. Differential equations were integrated with an Forward-Euler-method with a step-size of $100\u2062m\u2062s$. Note that ideally the step size should be much smaller than the smallest time-constant in the system; however, this large value was chosen for efficiency and we checked that a shorter time-step did not substantially change the results (data not shown). Analysis was carried out in Python.\n\n### Evaluating associative memory quality\n\nTo quantify pattern completion, we examine the currents evoked by corrupted versions of the learned activity patterns (stimulation groups). Corrupted pattern are created by randomly switching off a certain percentage of neurons which are active in the pattern , while the same number of inactive neurons is switched on. We evaluate the evoked current distributions in neurons which were active in the original pattern and in neurons that were inactive across 100 randomly corrupted versions of each pattern. For good pattern completion, these distributions should be well separated.\n\nAs performance measure, we evaluate how well the currents can be classified. Neurons which should be active should receive a current above the offset of the sigmoidal gain function in order to exhibit a high activity. Hence, to assess the influence of the corruption level, we abstract the neurons to binary units (i.e. active vs inactive classifiers) with a threshold at zero. We evaluate the percentage of neurons that reproduce the correct activity of the original pattern (again averaging over 100 corrupted versions of each pattern).\n\n### Analysis of connectivity decay during sensory phases\n\nTo gain better insight into the mechanisms that influence the connectivity, we compare our simulations with an analytical theory. We first investigate the connectivity decay in the sensory phase during which the network receives random stimulation. For this, we use a mean-field approach and assume that an assembly is homogeneously connected with weights $w$ and a number of synapses $S$ between each pair of neurons (whose continuous value represents the expected number of synapses between two neurons). Due to the fast timescale of LTP, we assume that the weights have reached $w\u2062(0)=w_{m\u2062a\u2062x}$ at the end of a preceding learning or rest phase. During the sensory phase, the pre- and postsynaptic activity in the stimulated groups are almost always below the plasticity thresholds. Hence, weights will exponentially decay as $w\u2062(t)=w_{m\u2062a\u2062x}\u2062exp\u2061(-\u0394_{d\u2062e\u2062c\u2062a\u2062y}\u2062t)$.\n\nUsing the removal probability $d\u2062(w\u2062(t))$, Equation 2, the probability $s\u2062(t)$ that a pre-existing synapse survives until time $t$ is\n\n$$\ns(t)=exp\u2061[\u2212\\int_{0}^{t}d(w(\\tau))d\\tau]\n$$\n\n\n\n$$\n=exp\u2061[\u2212\\int_{0}^{t}d(w_{max}exp\u2061(\u2212\u0394_{decay}\\tau))d\\tau],\n$$\n\nwhich needs to be evaluated numerically due to the non-linearity of $d\u2062(w)$. Given a connection with $S(t=0)=S_{0}$ synapses, the expected number of surviving synapses is $S_{0}\u2062s\u2062(t)$.\n\nIn addition to the surviving pre-existing synapses, new synapses will be created during the sensory phase at vacant potential synaptic locations with rate $b$. These synapses will remain at very small weights with a high removal probability $d\u2248d_{0}$. We approximate their number $S_{s\u2062m\u2062a\u2062l\u2062l}$ by assuming that the creation and the removal of these small synapses is in equilibrium. Then, the expected number of created synapses equals the number of removed ones (Deger et al., 2012; Fauth et al., 2015), which gives\n\n$$\nS_{s\u2062m\u2062a\u2062l\u2062l}\u2062(t)=\\frac{b}{d_{0}+b}\u2062(S_{max}-S_{0}\u2062s\u2062(t)).\n$$\n\nThe resulting time-course of the total number of synapses, $S\u2062(t)=S_{0}\u2062s\u2062(t)+S_{s\u2062m\u2062a\u2062l\u2062l}\u2062(t)$, matches the connectivity decay in simulations (dashed line in Figure 4B).\n\n#### Analysis of maximal time without reactivation\n\nTo estimate the longest duration of a sensory phase after which an assembly can still self-reactivate, $t_{m\u2062a\u2062x}$, we determine the time-point at which the inhibition between the neurons within the assembly becomes stronger than the excitation. We neglect the $S_{s\u2062m\u2062a\u2062l\u2062l}$ newly formed synapses with small weights and assume that only $S_{0}\u2062s\u2062(t)$ synapses with weights $w\u2062(t)$ contribute to the excitatory recurrent connectivity. Overcoming the inhibitory coupling between two neurons given by $w_{i\u2062n\u2062h}$ requires $S_{0}\u2062s\u2062(t)\u2062w\u2062(t)\\geqw_{i\u2062n\u2062h}$. We find the implicit relation for $t_{m\u2062a\u2062x}$\n\n$$\nexp\u2061(-\u0394_{d\u2062e\u2062c\u2062a\u2062y}\u2062t_{m\u2062a\u2062x})\u2062s\u2062(t_{m\u2062a\u2062x})=\\frac{w_{i\u2062n\u2062h}}{w_{m\u2062a\u2062x}\u2062S_{0}},\n$$\n\nwhich is solved numerically to obtain an estimate of the longest time after which the assembly can still reactivate. Reactivation needs to happen before then, otherwise the connectivity keeps decaying and the assembly is lost.\n\n#### Analysis of one full cycle of sensory and rest phase\n\nIn the simulation, the network cycles between sensory and rest phases. We examine the expected connectivity changes within the stimulated groups for one full cycle of a sensory and rest phase. Until the end of the sensory phase, $t_{s\u2062e\u2062n\u2062s}$, the connectivity follows the above derived time-courses. Assuming that the assemblies self-reactivate during the rest phase, the surviving $S_{0}\u2062s\u2062(t_{s\u2062e\u2062n\u2062s})$ synapses as well as the $S_{s\u2062m\u2062a\u2062l\u2062l}\u2062(t_{s\u2062e\u2062n\u2062s})$ small synapses formed during the sensory phase will quickly potentiate due to the correlated activity and remain stable throughout the rest phase. For longer resting interval durations $t_{r\u2062e\u2062s\u2062t}$, we also have to consider synapse creation during this phase. The probability that a vacant potential synapse is created during the rest phase is $p\u2062(t_{r\u2062e\u2062s\u2062t})=1-exp\u2061(-b\u2062t_{r\u2062e\u2062s\u2062t})$. Therefore,\n\n$$\nS_{new}=[S_{max}\u2212S_{0}s(t_{sens})\u2212S_{small}(t_{sens})]\u23dfvacantlocationsatt_{rand}\u22c5[1\u2212exp\u2061(\u2212bt_{rest})]=\\frac{d_{0}}{d_{0}+b}[S_{max}\u2212S_{0}s(t_{sens})]\u22c5[1\u2212exp\u2061(\u2212bt_{rest})]\n$$\n\npotential synaptic locations are turned into synapses and stabilized during the resting interval.\n\nHence, the expected change in the number of connections per full cycle is\n\n$$\n\u0394S(S_{0},t_{rest,}t_{sens})=S_{new}+S_{small}(t_{sens})\u2212S_{0}[1\u2212s(t_{sens})]=S_{max}[1\u2212\\gamma(t_{rest})]\u2212S_{0}[1\u2212\\gamma(t_{rest})s(t_{sens})]\n$$\n\nwith $\\gamma\u2062(t_{r\u2062e\u2062s\u2062t})=\\frac{d_{0}}{d_{0}+b}\u2062exp\u2061(-b\u2062t_{r\u2062e\u2062s\u2062t})$.\n\nTo compare this to the simulation results (Figure 7B), we estimated the number of cycles in the simulation by dividing the simulation time of 5 days by the sum of the mean interval durations $\\tau_{r\u2062e\u2062s\u2062t}$ and $\\tau_{s\u2062e\u2062n\u2062s}$ and calculate the total expected change after the respective number of cycles.\n\nFurthermore, we can use Equation 6 to determine the stationary number of synapses $S^{\u2217}$ at the start of a sensory phase for which we expect no change after one full cycle (i.e. $\u0394\u2062S\u2062(S^{\u2217},t_{r\u2062e\u2062s\u2062t},t_{r\u2062a\u2062n\u2062d})=0$) as\n\n$$\nS^{\u2217}=S_{max}\u2062\\frac{1-\\gamma\u2062(t_{r\u2062e\u2062s\u2062t})}{1-\\gamma\u2062(t_{r\u2062e\u2062s\u2062t})\u2062s\u2062(t_{d\u2062e\u2062c\u2062a\u2062y})}.\n$$\n\nFor this initial value, the number of synapses will still drop during sensory phases but will return to the same value after each full cycle. Whether this stationary state is stable and can be reached will be discussed below.\n",
+      "created_at": "2025-12-02T10:04:19.029880Z"
+    },
+    {
+      "id": "34e8db68-ce48-4d89-97ee-8e0ffbfe9494",
+      "submission_id": "c767fa19-5fac-41f8-a8f8-13429f5e8cc0",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Frances K Skinner, Krembil Research Institute, University Health Network Canada\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.43717.015](https://doi.org/10.7554/eLife.43717.015)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Self-organized reactivation maintains and reinforces memories despite synaptic turnover\" for consideration by eLife. Your article has been reviewed by two peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Eve Marder as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nUsing computational models, the authors address the question of maintaining stable memories in the face of much synaptic perturbation. Both reviewers found the work an interesting expansion on previous studies, and intuitive and clearly written. However, questions were raised regarding (i) the necessity of synaptic turnover dynamics for assembly stability, and (ii) observations relative to experiment requiring some discussion. These aspects are detailed below and need to be addressed. Further, it would be appropriate to make public the model simulations used in the paper.\n\nEssential revisions:\n\n1) The authors have expanded on previous models (Litwin-Kumar and Doiron, 2014; Zenke et al., 2015) and have combined synaptic turnover and plasticity mechanisms to build stable assembly structure. These previous models only considered plasticity mechanics. Because of the long timescales involved in synapse creation and deletion the authors had to consider only firing rate dynamics (the past models used spiking neuron models), a much smaller network (hundreds instead of thousands), and a very large time step (100 ms) so that any fine timescale effects are ignored. Had they not made these simplifications the simulations would have taken an excessive amount of time on a reasonable computer.\n\nHowever, both Litwin-Kumar et al. and Zenke et al. did produce stable assemblies without considering synaptic turnover, or at least they appeared stable for the simulation lengths they performed (hours \u2013 not days like the current manuscript). Also, they did have reduced mean field models that showed the assembly structure that was asymptotically stable, but these theories ignored any spiking dynamics so it is possible that the network simulations did not have stable structure (just a very slow decay).\n\nI would like to know if the synaptic turnover dynamics in the current study are necessary for assembly stability. Basically, if the parameter b is set to zero in the equation for d(wij,k) (subsection \u201cStructural plasticity\u201d) do assemblies now dissolve during the sensory and rest phases? Or does turnover just expand the region of parameter space where stable assemblies can be trained?\n\n2) The paper addresses the question of synaptic turnover and strength modulation, specifically its effect on network functionality in terms of memory retention. In general this is a timely question that has received considerable attention recently, with several different possible resolutions to the problem of how stable functionality is maintained in face of synaptic fluctuations.\n\nHere the authors investigate a computational model where memory relies on cell assemblies, and their stability is maintained by recurring spontaneous reactivation of the assemblies. The computational model is quite complicated and includes numerous processes: in addition to interaction among neurons, a global inhibition proportional to total firing rate is fed back to each neuron. External stimulus and external noise is added independently to each neuron, where the form of stimulus determines the particular protocol ('sensory', 'rest'). Three different forms of synaptic plasticity are included, spanning a broad range of timescales: LTP and LTD, on timescale ~10-100ms; short-term depression, ~1-5sec; and structural plasticity, ~hr-day, depending both on size and on firing rate (synapses tend to be deleted more when they are small, and/or when both neurons exhibit a low firing rate).\n\nPart of the resolution to structural plasticity and synaptic turnover is found in the assumption of multiple potential synapses connecting each pair of neurons. This essentially adds a slower timescale to synaptic changes, and further stabilizes strong synapses by positive feedback. Thus while individual synapses turn over the pair can remained connected and neural assemblies remain stable.\n\nSimulations of the model under the defined protocol \u2013 an extended period of embedding the memory patterns, followed by interspersed random inputs and rest periods \u2013 confirm and extend previous results on maintenance of assemblies through synaptic plasticity, over the longer timescales included in the model. Essentially the effect is a strong feedback internal to the formed assemblies, with lateral inhibition with the rest of the network, effectively forming a bistable system with reactivation by spontaneous firing. If the bistable system never goes below the transition point to the low firing state, it will easily be reactivated back to the high state. Learning is a very long process of embedding the memories in the system, utilizing a broad range of timescales (but still leaving some strengthening by reactivation by the slowest structural plasticity; \"offline strengthening\").\n\nThe paper is interesting and clearly written. Although the model is not simple, intuition is given for the observed effects. One disappointing feature is that the resulting synaptic fluctuations are far removed from those observed experimentally: they are essentially trapped at the highest value possible within assemblies, with small decreases between \"rescues\" back to their maximal value. This would merit at least some discussion.\n",
+      "created_at": "2025-12-02T10:04:19.029880Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T10:04:19.029880Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T10:04:19.029880Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "e5ce6268-c329-430a-ac86-ffb0c428190a",
+      "content_id": "c562b2a0-9bdf-4391-b93c-6c2ce87217dc",
+      "claim_id": "C2",
+      "claim": "Continuous rewiring of synaptic connections may exchange up to 50% of the synapse population over a time-course of weeks.",
+      "claim_type": "EXPLICIT",
+      "source": "Continuous rewiring of the synaptic connections (Holtmaat et al., 2005; Xu et al., 2009; Yang et al., 2009; Loewenstein et al., 2015) may exchange up to 50% of the synapse population over a time-course of weeks (Loewenstein et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to experimental studies, particularly Loewenstein et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:04:19.029880Z"
+    },
+    {
+      "id": "3cf50ba4-76a3-4aad-9b33-2e8e89c71775",
+      "content_id": "c562b2a0-9bdf-4391-b93c-6c2ce87217dc",
+      "claim_id": "C3",
+      "claim": "Only a minuscule fraction of synaptic connections generated upon original learning persists after a few months.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, only a minuscule fraction of synaptic connections generated upon the original learning experience persists after a few months (Yang et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Yang et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:04:19.029880Z"
+    },
+    {
+      "id": "29bbb355-ba9f-4426-8f90-7b25faa72a3e",
+      "content_id": "c562b2a0-9bdf-4391-b93c-6c2ce87217dc",
+      "claim_id": "C4",
+      "claim": "Despite continuous synaptic turnover, memories are not only stable but might even improve without further training.",
+      "claim_type": "EXPLICIT",
+      "source": "Intriguingly, experiments demonstrate that despite this continuous synaptic turnover, memories are not only stable but might even improve without further training (Walker et al., 2003; Cai and Rickard, 2009; Honma et al., 2015), especially during sleep (Jenkins and Dallenbach, 1924; Karni et al., 1994; Fischer et al., 2002; Walker et al., 2003; Dudai, 2004; Stickgold, 2005; Gais et al., 2006; Korman et al., 2007; Lahl et al., 2008; Diekelmann and Born, 2010; Pan and Rickard, 2015; Rickard and Pan, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by multiple citations to experimental studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:04:19.029880Z"
+    },
+    {
+      "id": "c0c90ee2-6fe4-415a-82de-9a6a569eca97",
+      "content_id": "c562b2a0-9bdf-4391-b93c-6c2ce87217dc",
+      "claim_id": "C5",
+      "claim": "One hypothesis for memory retention is that there are two pools of synapses: a stable and an unstable one.",
+      "claim_type": "EXPLICIT",
+      "source": "One hypothesis is that there are two pools of synapses: a stable and an unstable one (Kasai et al., 2003; Loewenstein et al., 2015), and in particular inhibitory stability could play a crucial role (Mongillo et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Kasai et al., 2003, Loewenstein et al., 2015, and Mongillo et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:04:19.029880Z"
+    },
+    {
+      "id": "ee58ef36-7fcb-4a41-be6c-b9dba7da5a26",
+      "content_id": "c562b2a0-9bdf-4391-b93c-6c2ce87217dc",
+      "claim_id": "C6",
+      "claim": "Periodic external replay of learned input patterns strengthens synaptic connections that are consistent with existing connections.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, Acker et al. (2018) show that periodic, external replay of learned input patterns strengthens synaptic connections that are consistent with existing connections.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Acker et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:04:19.029880Z"
+    },
+    {
+      "id": "6b245621-ce1d-436d-a006-8effaf6ed53b",
+      "content_id": "c562b2a0-9bdf-4391-b93c-6c2ce87217dc",
+      "claim_id": "C7",
+      "claim": "Hippocampal replay does not appear to be necessary to maintain cortical memories, as shown by the case of patient H.M.",
+      "claim_type": "EXPLICIT",
+      "source": "However, as the case of patient H.M. shows, hippocampal replay does not appear to be necessary to maintain cortical memories.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from the well-known case of patient H.M.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:04:19.029880Z"
+    },
+    {
+      "id": "0c46d20f-a35e-4458-b1f6-90c59985dbc6",
+      "content_id": "c562b2a0-9bdf-4391-b93c-6c2ce87217dc",
+      "claim_id": "C8",
+      "claim": "Spontaneous alternation between high and low population activity has been associated with Up-Down-dynamics observed in cortical networks during sleep.",
+      "claim_type": "EXPLICIT",
+      "source": "Such spontaneous alternation between high and low population activity has previously been associated with Up-Down-dynamics (Holcman and Tsodyks, 2006; Barak and Tsodyks, 2007; Setareh et al., 2017; Jercog et al., 2017), observed in cortical networks during sleep (Steriade et al., 1993) and in quiescent awake states (Poulet and Petersen, 2008; Okun et al., 2010; Engel et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by multiple citations to experimental and modeling studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:04:19.029880Z"
+    },
+    {
+      "id": "571b9c8b-6849-4c1d-b40b-1888962c7215",
+      "content_id": "c562b2a0-9bdf-4391-b93c-6c2ce87217dc",
+      "claim_id": "C9",
+      "claim": "Learning- and memory-related activity patterns are reactivated in cortex, predominantly during sleep and rest.",
+      "claim_type": "EXPLICIT",
+      "source": "Along these lines, experiments show that learning- and memory-related activity patterns are reactivated in cortex, predominantly during sleep and rest (Peyrache et al., 2009; Gulati et al., 2014; Ramanathan et al., 2015; Gulati et al., 2017; Jiang et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to multiple experimental studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:04:19.029880Z"
+    },
+    {
+      "id": "b1569ddf-4f7b-41e1-94cc-ddacd96abdf6",
+      "content_id": "c562b2a0-9bdf-4391-b93c-6c2ce87217dc",
+      "claim_id": "C10",
+      "claim": "Larger synapses are less likely to be removed than smaller synapses.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, larger synapses are less likely to be removed (e.g. Le B\u00e9 and Markram, 2006) implying that rewiring follows synaptic plasticity and attains Hebbian-like character.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Le B\u00e9 and Markram, 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:04:19.029880Z"
+    },
+    {
+      "id": "daa39de9-b96c-42a2-8fce-c73012c0a9cc",
+      "content_id": "c562b2a0-9bdf-4391-b93c-6c2ce87217dc",
+      "claim_id": "C11",
+      "claim": "The combination of structural plasticity, synaptic plasticity and self-generated reactivation can stabilize assemblies against synaptic turnover and enhance their connectivity and associative memory.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we show that the combination of structural plasticity, synaptic plasticity and self-generated reactivation, even for a just short period every day, can not only stabilize assemblies against synaptic turnover but even enhance their connectivity and associative memory.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main claim of the paper, supported by the computational modeling results presented throughout.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:04:19.029880Z"
+    },
+    {
+      "id": "b2094541-18a4-4482-9bf7-9859e5d84a23",
+      "content_id": "c562b2a0-9bdf-4391-b93c-6c2ce87217dc",
+      "claim_id": "C12",
+      "claim": "During the learning phase, each stimulated group becomes a highly interconnected cell assembly.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, during the learning phase, each stimulated group becomes a highly interconnected cell assembly, while all non-intra-assembly synapses remain sparse and have small synaptic weights (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by simulation data shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:04:19.029880Z"
+    },
+    {
+      "id": "be64bab0-04e8-469e-83f1-e8666b19df36",
+      "content_id": "c562b2a0-9bdf-4391-b93c-6c2ce87217dc",
+      "claim_id": "C13",
+      "claim": "The synaptic connectivity follows the synaptic strength on a time-scale of hours.",
+      "claim_type": "EXPLICIT",
+      "source": "The synaptic connectivity follows the synaptic strength on a time-scale of hours.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on the simulation results showing the temporal dynamics of weights and connectivity.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:04:19.029880Z"
+    },
+    {
+      "id": "49c5361e-ab77-40bc-9e56-0e8d0bfbb49a",
+      "content_id": "c562b2a0-9bdf-4391-b93c-6c2ce87217dc",
+      "claim_id": "C14",
+      "claim": "During sensory phases, lateral inhibition prevents spontaneous activation of non-stimulated neurons and the assemblies slowly decay.",
+      "claim_type": "EXPLICIT",
+      "source": "During sensory phases, the network receives stimulation with quickly changing random patterns mimicking incoming information from upstream networks. In this phase, lateral inhibition prevents spontaneous activation of non-stimulated neurons and the assemblies slowly decay.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on the model design and simulation results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:04:19.029880Z"
+    },
+    {
+      "id": "5cd4b808-8271-4fee-884b-eb902e9f998d",
+      "content_id": "c562b2a0-9bdf-4391-b93c-6c2ce87217dc",
+      "claim_id": "C15",
+      "claim": "During rest phases, assemblies can reactivate provided there is sufficient intra-assembly recurrence.",
+      "claim_type": "EXPLICIT",
+      "source": "However, during rest phases, stimulation is absent and the assemblies can reactivate. This happens provided there is sufficient intra-assembly recurrence, so that the positive feedback drives the assemblies towards a high population activity (e.g. Wilson and Cowan, 1972; Brunel, 2000; Figure 3A, black nullcline), which corresponds to a reactivation of the learned pattern.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by simulation data and theoretical considerations, with reference to Figure 3A.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:04:19.029880Z"
+    },
+    {
+      "id": "deeb8f12-4ab4-4678-8316-55c200f8d696",
+      "content_id": "c562b2a0-9bdf-4391-b93c-6c2ce87217dc",
+      "claim_id": "C16",
+      "claim": "Lateral inhibition implements a winner-take-all structure such that only one assembly reactivates at any time.",
+      "claim_type": "EXPLICIT",
+      "source": "As lateral inhibition implements a winner-take-all structure, only one of the assemblies reactivates at any time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on the model design and known properties of lateral inhibition.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:04:19.029880Z"
+    },
+    {
+      "id": "f721e436-1d34-4eeb-b925-d303070242e8",
+      "content_id": "c562b2a0-9bdf-4391-b93c-6c2ce87217dc",
+      "claim_id": "C17",
+      "claim": "For connections within the same assembly, the activity is strongly correlated during rest phases.",
+      "claim_type": "EXPLICIT",
+      "source": "For connections within the same assembly, the activity is strongly correlated (Figure 3Ci).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by simulation data shown in Figure 3Ci.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:04:19.029880Z"
+    },
+    {
+      "id": "3b243815-418c-4bf6-a70c-c1c34ef8ad7d",
+      "content_id": "c562b2a0-9bdf-4391-b93c-6c2ce87217dc",
+      "claim_id": "C18",
+      "claim": "For connections between pairs of neurons from different assemblies or from assembly and control group there is virtually no correlated activity during rest phases.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, for connections between pairs of neurons from different assemblies or from assembly and control group there is virtually no correlated activity (Figure 3Cii).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by simulation data shown in Figure 3Cii.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:04:19.029880Z"
+    },
+    {
+      "id": "bc048fa4-d25b-458c-8aab-b735d2284c01",
+      "content_id": "c562b2a0-9bdf-4391-b93c-6c2ce87217dc",
+      "claim_id": "C19",
+      "claim": "Short-term depression weakens the transmission efficacy of excitatory synapses and thereby the positive feedback, causing the high population activity to become unstable.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to other models (Barak and Tsodyks, 2007; Holcman and Tsodyks, 2006), short-term depression weakens the transmission efficacy of the excitatory synapses and thereby the positive feedback. As a consequence, the high population activity becomes unstable (i.e. the high activity fixed-point vanishes, Figure 3A, grey nullcline) such that the activity drops back and the synapses can recover.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by the model mechanism and citations to similar models, with reference to Figure 3A.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:04:19.029880Z"
+    },
+    {
+      "id": "e8b4981f-a4f4-43df-9f1a-657a6c866455",
+      "content_id": "c562b2a0-9bdf-4391-b93c-6c2ce87217dc",
+      "claim_id": "C20",
+      "claim": "Without rest phases in which assemblies can reactivate, synaptic weights inside assemblies decay.",
+      "claim_type": "EXPLICIT",
+      "source": "If there are no rest phases in which the assemblies can reactivate, the synaptic weights inside the assemblies decay (Figure 4A, Top).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by simulation data shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:04:19.029880Z"
+    },
+    {
+      "id": "e90e3fd1-f65a-4155-847e-a20be86eb7cb",
+      "content_id": "c562b2a0-9bdf-4391-b93c-6c2ce87217dc",
+      "claim_id": "C21",
+      "claim": "Synaptic weight decay is followed by a decay in the number of synapses on a timescale of days.",
+      "claim_type": "EXPLICIT",
+      "source": "Because the synaptic removal rate is faster for small synapses, the synaptic weight decay is followed by a decay in the number of synapses on a timescale of days (Figure 4A, Bottom).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by simulation data shown in Figure 4A and the model's structural plasticity rule.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:04:19.029880Z"
+    },
+    {
+      "id": "645ef90b-dcf1-4378-a163-2d801a5bdae5",
+      "content_id": "c562b2a0-9bdf-4391-b93c-6c2ce87217dc",
+      "claim_id": "C22",
+      "claim": "When sensory phases are interleaved with rest phases, the strong connectivity inside the assembly is not only preserved but even gradually increases.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, when the sensory phases are interleaved with rest phases, we observe that the strong connectivity inside the assembly is not only preserved by the self-reactivations, but even gradually increases (Figure 4B, Bottom, purple curve).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by simulation data shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:04:19.029880Z"
+    },
+    {
+      "id": "c1358849-d206-4140-b953-c8dfb32d9380",
+      "content_id": "c562b2a0-9bdf-4391-b93c-6c2ce87217dc",
+      "claim_id": "C23",
+      "claim": "Connectivity from and to other assemblies in the network remains weak when sensory phases are interleaved with rest phases.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the connectivity from and to other assemblies in the network remains weak (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by simulation data shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:04:19.029880Z"
+    },
+    {
+      "id": "acb2dc53-f9c2-4491-b77b-5cec43abb325",
+      "content_id": "c562b2a0-9bdf-4391-b93c-6c2ce87217dc",
+      "claim_id": "C24",
+      "claim": "Spurious connections built up during sensory phases are removed during rest phases.",
+      "claim_type": "EXPLICIT",
+      "source": "Close inspection of the connectivity changes reveals that also spurious connections that were built-up during the sensory phases are removed during the rest phase (Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by simulation data shown in Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:04:19.029880Z"
+    },
+    {
+      "id": "0708c2d8-e465-437a-bfed-ee751e2d45c5",
+      "content_id": "c562b2a0-9bdf-4391-b93c-6c2ce87217dc",
+      "claim_id": "C25",
+      "claim": "In the absence of structural plasticity during retention, assemblies initially reactivate and are stable for multiple days, but a long sensory phase can drive them below the reactivation threshold causing all assemblies to be lost.",
+      "claim_type": "EXPLICIT",
+      "source": "In the absence of structural plasticity, maintaining the memories is more challenging. In Figure 4D, we blocked structural plasticity during the retention phase. The assemblies initially reactivate and are stable for multiple days, but a long sensory phase after 100 hours drives them below the reactivation threshold and all assemblies are lost.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by simulation data shown in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:04:19.029880Z"
+    },
+    {
+      "id": "b3882b8c-63da-424e-bf97-b1f12f50d996",
+      "content_id": "c562b2a0-9bdf-4391-b93c-6c2ce87217dc",
+      "claim_id": "C26",
+      "claim": "The model exhibits ongoing synapse creation and removal within assemblies, exchanging around 10% of the synapse population on a daily basis.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to experiments (Holtmaat et al., 2005; Yang et al., 2009; Loewenstein et al., 2015), we measured the persistence of synapses at a specific potential synaptic locations from day to day and find ongoing synapse creation and removal within the assemblies, exchanging around 10% of the synapse population on a daily basis (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by simulation data shown in Figure 5A and comparison to experimental studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:04:19.029880Z"
+    },
+    {
+      "id": "46d3e3c5-c0a3-4775-9039-1763925ebe56",
+      "content_id": "c562b2a0-9bdf-4391-b93c-6c2ce87217dc",
+      "claim_id": "C27",
+      "claim": "Synapse creation transiently increases shortly after learning while spine removal remains low, similar to experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, synapse creation transiently increases shortly after learning while spine removal remains low, similar as in experiments (Yang et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by simulation data and citation to Yang et al., 2014.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:04:19.029880Z"
+    },
+    {
+      "id": "1396c60f-8b57-4ff1-8906-053101819e36",
+      "content_id": "c562b2a0-9bdf-4391-b93c-6c2ce87217dc",
+      "claim_id": "C28",
+      "claim": "The fraction of synapses present after learning that persist until a given time-point continuously decreases.",
+      "claim_type": "EXPLICIT",
+      "source": "The fraction of synapses that were present after learning and persist until a given time-point continuously decreases (Figure 5B) indicating that also strong synapses inside the assemblies are continuously removed.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by simulation data shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:04:19.029880Z"
+    },
+    {
+      "id": "7a58bb4f-ebb9-4b68-b70f-8a23f47538ce",
+      "content_id": "c562b2a0-9bdf-4391-b93c-6c2ce87217dc",
+      "claim_id": "C29",
+      "claim": "The strengthening of assemblies emerges because reactivations stabilize more synapses than are being removed, resulting in continuous exchange of the synaptic substrate.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, the strengthening of the assemblies is not emerging from a simple addition of new synapses, but because the reactivations stabilize more synapses than are being removed and thus the synaptic substrate of the assemblies is continuously exchanged (Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on inference from simulation data, with reference to Figure 5C.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:04:19.029880Z"
+    },
+    {
+      "id": "da918ca0-d34c-4c38-8530-620eb14c1412",
+      "content_id": "c562b2a0-9bdf-4391-b93c-6c2ce87217dc",
+      "claim_id": "C32",
+      "claim": "Self-induced strengthening improves recall quality.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, the self-induced strengthening improves recall quality.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a summary conclusion based on the pattern completion analysis presented in Figure 6.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:04:19.029880Z"
+    },
+    {
+      "id": "c76852a9-c190-4468-b383-dc88ea0cea5a",
+      "content_id": "c562b2a0-9bdf-4391-b93c-6c2ce87217dc",
+      "claim_id": "C33",
+      "claim": "The number of connections in an assembly increases more the longer the rest phases and the shorter the sensory phases.",
+      "claim_type": "EXPLICIT",
+      "source": "Starting from a given number of synapses between the neurons in the assembly, we find that the number of connections increases more the longer the rest phases and the shorter sensory phases (Figure 7A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by simulation data shown in Figure 7A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:04:19.029880Z"
+    },
+    {
+      "id": "d485ea45-c430-42d2-b265-a2d0c30ac8a0",
+      "content_id": "c562b2a0-9bdf-4391-b93c-6c2ce87217dc",
+      "claim_id": "C35",
+      "claim": "A simple theory assuming all synapses in an assembly are maximally potentiated by reactivation during rest and decay exponentially during sensory phases explains the simulation results over a broad regime of timescales.",
+      "claim_type": "EXPLICIT",
+      "source": "This simple theory explains the simulation results over a broad regime of timescales (Figure 7B) indicating that the dynamics of the intra-assembly synapses is governed by the collective reactivation of the assemblies.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by comparison of theoretical predictions with simulation data shown in Figure 7B.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:04:19.029880Z"
+    },
+    {
+      "id": "50f29247-792c-44ad-b765-f0c62a6f52ca",
+      "content_id": "c562b2a0-9bdf-4391-b93c-6c2ce87217dc",
+      "claim_id": "C36",
+      "claim": "The larger the number of initial connections, the longer assemblies survive without reactivation.",
+      "claim_type": "EXPLICIT",
+      "source": "Unsurprisingly, the larger the number of initial connections, the longer the assemblies survive (Figure 7C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by simulation data shown in Figure 7C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:04:19.029880Z"
+    },
+    {
+      "id": "157fb4ac-b99e-426f-8359-187f8a1566fe",
+      "content_id": "c562b2a0-9bdf-4391-b93c-6c2ce87217dc",
+      "claim_id": "C37",
+      "claim": "By increasing their connectivity through self-reactivation, assemblies become more stable against prolonged absence of reactivation.",
+      "claim_type": "EXPLICIT",
+      "source": "This, in turn, implies that by increasing their connectivity by self-reactivation, the assemblies also become more and more stable against prolonged absence of reactivation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from the simulation results showing the relationship between connectivity and survival time.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:04:19.029880Z"
+    },
+    {
+      "id": "99dd0b19-3767-452c-aa44-ec9fba9ca50b",
+      "content_id": "c562b2a0-9bdf-4391-b93c-6c2ce87217dc",
+      "claim_id": "C38",
+      "claim": "Connections in an assembly can either decay to control levels or converge to a fixed number of synapses.",
+      "claim_type": "EXPLICIT",
+      "source": "Connections in an anssembly can undergo two fates: either the connections decay to control levels or they converge to a fixed number of synapses (Figure 7D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by simulation data shown in Figure 7D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:04:19.029880Z"
+    },
+    {
+      "id": "8f15fcdf-3acf-41ff-b4af-696705c07722",
+      "content_id": "c562b2a0-9bdf-4391-b93c-6c2ce87217dc",
+      "claim_id": "C40",
+      "claim": "The number of synapses either decreases for large initial numbers and increases for small initial numbers, converging to a stationary final value after many cycles.",
+      "claim_type": "EXPLICIT",
+      "source": "The number of synapses either decreases for large initial numbers of synapses and increases for small initial numbers of synapses, matching theory (Figure 7F). Hence, after many cycles with the same phase durations, the number of synapses will converge and fluctuate around a stationary final value (gray line).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by simulation data and theoretical predictions shown in Figures 7E and 7F.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:04:19.029880Z"
+    },
+    {
+      "id": "1f52b900-ac93-4544-a82f-5ed00916e85f",
+      "content_id": "c562b2a0-9bdf-4391-b93c-6c2ce87217dc",
+      "claim_id": "C41",
+      "claim": "The longer the rest phase and the shorter the sensory phase, the higher the stationary value of synapses.",
+      "claim_type": "EXPLICIT",
+      "source": "The theory provides the dependence of this final value on the durations of sensory and rest phases: The longer the rest phase and the shorter the sensory the higher the value (Figure 7G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by theoretical predictions shown in Figure 7G.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:04:19.029880Z"
+    },
+    {
+      "id": "62d09f46-2a63-48fe-8f30-49fb0489a5a4",
+      "content_id": "c562b2a0-9bdf-4391-b93c-6c2ce87217dc",
+      "claim_id": "C42",
+      "claim": "Even a short rest phase of 3 min is sufficient to maintain strong connectivity for up to 20 hr of sensory phase.",
+      "claim_type": "EXPLICIT",
+      "source": "Note, however, even a short rest phase of 3 min is sufficient to maintain strong connectivity for up to 20 hr of sensory phase.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on analysis of the theoretical predictions shown in Figure 7G.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:04:19.029880Z"
+    },
+    {
+      "id": "f3a1c280-2fe4-4c1e-83a9-15d59a51381f",
+      "content_id": "c562b2a0-9bdf-4391-b93c-6c2ce87217dc",
+      "claim_id": "C43",
+      "claim": "A network with short-term depression maintained overlapping assemblies after 5 days.",
+      "claim_type": "EXPLICIT",
+      "source": "After 5 days, the network with short-term depression maintained the overlapping assemblies (Figure 8A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by simulation data shown in Figure 8A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:04:19.029880Z"
+    },
+    {
+      "id": "1d15b9f4-82ff-4ea8-a3e7-5f0631d0bcef",
+      "content_id": "c562b2a0-9bdf-4391-b93c-6c2ce87217dc",
+      "claim_id": "C44",
+      "claim": "A network with spike-frequency adaptation formed non-overlapping assemblies, with neurons in the overlapping population incorporated into either one of the assemblies.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the network with spike-frequency adaptation has formed non-overlapping assemblies (Figure 8B) and the neurons in the overlapping population have been incorporated into either one of the assemblies.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by simulation data shown in Figure 8B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:04:19.029880Z"
+    },
+    {
+      "id": "bdabe624-1055-4425-9784-d06c8c39d662",
+      "content_id": "c562b2a0-9bdf-4391-b93c-6c2ce87217dc",
+      "claim_id": "C45",
+      "claim": "With spike-frequency adaptation, neurons activated with the first assembly will be adapted and less likely to be reactivated with the second assembly, leading to separation of overlapping assemblies.",
+      "claim_type": "EXPLICIT",
+      "source": "The reason for the difference is that with spike-frequency adaptation, neurons activated with the first assembly will be adapted and therefore less likely to be reactivated with second assembly. Due to this competition and the positive feedback between activity and connectivity introduced by the Hebbian plasticity processes, the overlap region will be reactivated and connected more and more with only one of the assemblies and disconnect from the other, separating the assemblies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from the model mechanisms and simulation results.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:04:19.029880Z"
+    },
+    {
+      "id": "52910988-23f5-4662-9c21-5ff007ab5d43",
+      "content_id": "c562b2a0-9bdf-4391-b93c-6c2ce87217dc",
+      "claim_id": "C46",
+      "claim": "Using short-term depression, only the synapses between the overlap region and the assembly are adapted such that reactivation with another assembly is not impeded.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, using short-term depression, only the synapses between the overlap region and the assembly are adapted such that a reactivation with another assembly is not impeded.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from the model mechanisms.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:04:19.029880Z"
+    },
+    {
+      "id": "94d1b8b5-c0f0-4496-aa81-2407cdda2f19",
+      "content_id": "c562b2a0-9bdf-4391-b93c-6c2ce87217dc",
+      "claim_id": "C47",
+      "claim": "During random sensory stimulation, cell assemblies decay.",
+      "claim_type": "EXPLICIT",
+      "source": "During random sensory stimulation these assemblies decay, but in the absence of external stimulation, the cell assemblies self-reactivate resulting in periods of strong correlated activity which strengthen and stabilize the intra-assembly connectivity, and weaken other connections.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a summary of the main findings supported by simulation data throughout the paper.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:04:19.029880Z"
+    },
+    {
+      "id": "326f1154-78fe-413f-a974-addc34254e5a",
+      "content_id": "c562b2a0-9bdf-4391-b93c-6c2ce87217dc",
+      "claim_id": "C48",
+      "claim": "In the absence of external stimulation, cell assemblies self-reactivate resulting in periods of strong correlated activity which strengthen and stabilize intra-assembly connectivity and weaken other connections.",
+      "claim_type": "EXPLICIT",
+      "source": "During random sensory stimulation these assemblies decay, but in the absence of external stimulation, the cell assemblies self-reactivate resulting in periods of strong correlated activity which strengthen and stabilize the intra-assembly connectivity, and weaken other connections.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a summary of the main findings supported by simulation data throughout the paper.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:04:19.029880Z"
+    },
+    {
+      "id": "c7ddf98f-9430-49b9-a0ab-b64738ae2d1a",
+      "content_id": "c562b2a0-9bdf-4391-b93c-6c2ce87217dc",
+      "claim_id": "C49",
+      "claim": "Self-reactivation protects assemblies against ongoing synaptic turnover.",
+      "claim_type": "EXPLICIT",
+      "source": "This protects the assemblies against ongoing synaptic turnover, increases their robustness against prolonged phases without reactivation, and leads to off-line improvement of the associative properties of the memories.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a summary conclusion based on the simulation results presented throughout the paper.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:04:19.029880Z"
+    },
+    {
+      "id": "9c4a0191-dd35-41c8-81b9-231ab59d1be3",
+      "content_id": "c562b2a0-9bdf-4391-b93c-6c2ce87217dc",
+      "claim_id": "C50",
+      "claim": "Self-reactivation increases assembly robustness against prolonged phases without reactivation.",
+      "claim_type": "EXPLICIT",
+      "source": "This protects the assemblies against ongoing synaptic turnover, increases their robustness against prolonged phases without reactivation, and leads to off-line improvement of the associative properties of the memories.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a summary conclusion based on the simulation results, particularly those shown in Figure 7.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:04:19.029880Z"
+    },
+    {
+      "id": "de7ce9b5-b993-4b15-849f-bd084ff2068a",
+      "content_id": "c562b2a0-9bdf-4391-b93c-6c2ce87217dc",
+      "claim_id": "C51",
+      "claim": "Self-reactivation leads to offline improvement of the associative properties of memories.",
+      "claim_type": "EXPLICIT",
+      "source": "This protects the assemblies against ongoing synaptic turnover, increases their robustness against prolonged phases without reactivation, and leads to off-line improvement of the associative properties of the memories.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a summary conclusion based on the simulation results, particularly those shown in Figure 6.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:04:19.029880Z"
+    },
+    {
+      "id": "4515d8cc-f3d5-4057-95a1-a36dab5f5875",
+      "content_id": "c562b2a0-9bdf-4391-b93c-6c2ce87217dc",
+      "claim_id": "C52",
+      "claim": "The network needs to be able to spontaneously reactivate assemblies, requiring sufficient increase of synaptic weights during learning for net positive feedback.",
+      "claim_type": "EXPLICIT",
+      "source": "The critical ingredients and parameters for the mechanism to work are as follows: (1) The network needs to be able to spontaneously reactivate assemblies. This requires sufficient increase of the synaptic weights during the learning phase, so that the assembly has a net positive feedback and can transition to a high activity state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes a critical requirement of the model mechanism.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:04:19.029880Z"
+    },
+    {
+      "id": "9c321aa2-7715-4800-8a6b-c02ab5687620",
+      "content_id": "c562b2a0-9bdf-4391-b93c-6c2ce87217dc",
+      "claim_id": "C53",
+      "claim": "The high activity state needs to terminate, requiring an adaptive mechanism such as spike frequency adaptation or short-term synaptic depression.",
+      "claim_type": "EXPLICIT",
+      "source": "(2) The high activity state needs to terminate, requiring an adaptive mechanism such as spike frequency adaptation or short-term synaptic depression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes a critical requirement of the model mechanism.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:04:19.029880Z"
+    },
+    {
+      "id": "807d4e66-9b65-409b-a814-f54a0dd13527",
+      "content_id": "c562b2a0-9bdf-4391-b93c-6c2ce87217dc",
+      "claim_id": "C54",
+      "claim": "Lateral inhibition is required to prevent activation from spreading to multiple assemblies and to decorrelate activity.",
+      "claim_type": "EXPLICIT",
+      "source": "(3) Lateral inhibition is required to prevent the activation from spreading to multiple assemblies. This de-correlates activity and ensures that only connections within the assemblies potentiate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes a critical requirement of the model mechanism.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:04:19.029880Z"
+    },
+    {
+      "id": "583f86a6-f1a4-4396-a060-15a485874277",
+      "content_id": "c562b2a0-9bdf-4391-b93c-6c2ce87217dc",
+      "claim_id": "C55",
+      "claim": "Structural plasticity should encourage stabilization of intra-assembly synapses.",
+      "claim_type": "EXPLICIT",
+      "source": "(4) Structural plasticity should encourage stabilization of intra-assembly synapses. Here, this is achieved by a higher synapses removal rate for small synapses, while the synapse creation rate is fixed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes a critical requirement of the model mechanism.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:04:19.029880Z"
+    },
+    {
+      "id": "dc15caa9-0eb9-4240-910e-340989592390",
+      "content_id": "c562b2a0-9bdf-4391-b93c-6c2ce87217dc",
+      "claim_id": "C56",
+      "claim": "The structural plasticity in the model is not associative by itself but becomes so indirectly via its dependence on synaptic weights.",
+      "claim_type": "EXPLICIT",
+      "source": "Note, that the the structural plasticity in our model is not associative by itself. It becomes so indirectly via its dependence on the synaptic weights.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim clarifies a property of the model mechanism.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:04:19.029880Z"
+    },
+    {
+      "id": "6e13abea-b6b9-4510-b641-e758ee2140d5",
+      "content_id": "c562b2a0-9bdf-4391-b93c-6c2ce87217dc",
+      "claim_id": "C57",
+      "claim": "Connections between assemblies should remain weak, which requires synaptic plasticity that depresses weights in case of asynchronous high pre- and postsynaptic activity.",
+      "claim_type": "EXPLICIT",
+      "source": "(5) Connections between assemblies should remain weak, which, given (3) and (4), requires synaptic plasticity which depresses weights in case of asynchronous high pre- and postsynaptic activity, as is the case in Hebbian learning.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes a critical requirement of the model mechanism.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:04:19.029880Z"
+    },
+    {
+      "id": "e9771443-be65-4aec-85a4-a312899ef167",
+      "content_id": "c562b2a0-9bdf-4391-b93c-6c2ce87217dc",
+      "claim_id": "C58",
+      "claim": "Previous models have used reactivation to strengthen or restructure previously stored memories but often rely on external reactivation mechanisms.",
+      "claim_type": "EXPLICIT",
+      "source": "A number of earlier models of long-term and very-long-term memory have used reactivation to strengthen or restructure previously stored memories. However, these models often rely on an external reactivation mechanism (Tetzlaff et al., 2013; Acker et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous modeling work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:04:19.029880Z"
+    },
+    {
+      "id": "d1faae66-dda1-451d-8509-ddbee6dccec8",
+      "content_id": "c562b2a0-9bdf-4391-b93c-6c2ce87217dc",
+      "claim_id": "C59",
+      "claim": "In the current model, self-generated reactivations cause non-correlated reactivations of individual cell assemblies, such that neither individual external cues nor pre-structured connectivity are necessary.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, here the self-generated reactivations of cell assemblies cause non-correlated reactivations of individual cell assemblies, such that neither individual external cues (Acker et al., 2018), nor pre-structured connectivity (Tetzlaff et al., 2011; Tetzlaff et al., 2013) are necessary.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim contrasts the current model with previous work, supported by citations.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:04:19.029880Z"
+    },
+    {
+      "id": "cada1c49-d80e-41c5-bd7f-c852dd2ddfd8",
+      "content_id": "c562b2a0-9bdf-4391-b93c-6c2ce87217dc",
+      "claim_id": "C60",
+      "claim": "Other models have shown that self-organized reactivation can stabilize Hebbian cell assemblies against ongoing synaptic plasticity, but stability was only demonstrated on a timescale of hours and in the absence of synaptic turnover.",
+      "claim_type": "EXPLICIT",
+      "source": "Other models have shown that self-organized reactivation can stabilize Hebbian cell assemblies against ongoing synaptic plasticity (Litwin-Kumar and Doiron, 2014; Zenke et al., 2015). However, stability was only demonstrated on a timescale of hours and in the absence of synaptic turnover.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous modeling work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:04:19.029880Z"
+    },
+    {
+      "id": "813fb384-6f7b-4178-a3e5-f59dc7b89ddf",
+      "content_id": "c562b2a0-9bdf-4391-b93c-6c2ce87217dc",
+      "claim_id": "C61",
+      "claim": "In the current model, assemblies can survive for many hours without reactivation.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we show that assemblies can indeed survive for many hours without reactivation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by simulation results shown in Figure 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:04:19.029880Z"
+    },
+    {
+      "id": "0f4b8d9b-592b-4a69-bcf7-88a24cdac4b4",
+      "content_id": "c562b2a0-9bdf-4391-b93c-6c2ce87217dc",
+      "claim_id": "C62",
+      "claim": "In the current model, reactivations maintain and strengthen assembly connectivity by stabilizing new synapses which support memories while removing distracting synapses, resulting in offline memory gains.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, in our model, reactivations maintain and strengthen the assembly connectivity by stabilizing new synapses which support the memories, while removing distracting synapses, resulting in offline memory gains.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a summary of the main findings supported by simulation data throughout the paper.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:04:19.029880Z"
+    },
+    {
+      "id": "956a171c-0626-4ca4-963f-5966fdf48e73",
+      "content_id": "c562b2a0-9bdf-4391-b93c-6c2ce87217dc",
+      "claim_id": "C63",
+      "claim": "Offline memory gains will generally emerge for mechanisms which induce a bi-stable connectivity dynamics.",
+      "claim_type": "EXPLICIT",
+      "source": "We expect that offline memory gains will generally emerge for mechanisms which induce a bi-stable connectivity dynamics, that is when synapse creation balances removal both in a weakly and a strongly connected configuration and connectivity will converge to one of these configurations from any initial condition (Figure 7D\u2013G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is a generalization based on the model results and theoretical analysis.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:04:19.029880Z"
+    },
+    {
+      "id": "464f702f-c7c4-4277-b802-7a18c405b870",
+      "content_id": "c562b2a0-9bdf-4391-b93c-6c2ce87217dc",
+      "claim_id": "C64",
+      "claim": "Bi-stability in connectivity dynamics does not necessarily have to rely on reactivation.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the bi-stablility does not necessarily have to rely on reactivation (see Helias, 2008; Deger et al., 2012; Fauth et al., 2015; Deger et al., 2018 for alternatives).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to alternative mechanisms.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:04:19.029880Z"
+    },
+    {
+      "id": "57d206cd-b399-460f-b321-988830fc0989",
+      "content_id": "c562b2a0-9bdf-4391-b93c-6c2ce87217dc",
+      "claim_id": "C65",
+      "claim": "As connectivity dynamics in the presence of structural plasticity is slow, memory strength will typically not be saturated after learning.",
+      "claim_type": "EXPLICIT",
+      "source": "However, as connectivity dynamics in the presence of structural plasticity is slow, memory strength will typically not be saturated after learning.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from the model properties.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:04:19.029880Z"
+    },
+    {
+      "id": "6e210909-7f02-4125-82c6-f57d34ca4e13",
+      "content_id": "c562b2a0-9bdf-4391-b93c-6c2ce87217dc",
+      "claim_id": "C66",
+      "claim": "Whenever the memory is strong enough, one should observe convergence to the upper configuration and hence a strengthening after learning.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore whenever the memory is strong enough, one should observe convergence to the upper configuration and hence a strengthening after learning.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from the bi-stable dynamics analysis.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:04:19.029880Z"
+    },
+    {
+      "id": "9832164a-5fad-47f3-a6a8-5d844eb43fde",
+      "content_id": "c562b2a0-9bdf-4391-b93c-6c2ce87217dc",
+      "claim_id": "C67",
+      "claim": "When only faster synaptic plasticity is considered for memory formation, connectivity tends to converge already during learning and no offline strengthening will be observed.",
+      "claim_type": "EXPLICIT",
+      "source": "However, when only faster synaptic plasticity is considered for memory formation, the connectivity (i.e. the weights) tends to converge already during learning and no off-line strengthening will be observed (Zenke et al., 2015; Litwin-Kumar and Doiron, 2014; but see Figure 6 in Tetzlaff et al., 2013 for an example of non-converged weights).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous modeling work.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:04:19.029880Z"
+    },
+    {
+      "id": "256c319a-ac9a-401f-ab28-2f4e85682534",
+      "content_id": "c562b2a0-9bdf-4391-b93c-6c2ce87217dc",
+      "claim_id": "C68",
+      "claim": "Reactivations of memory related activity patterns in cortex have been reported mostly during sleep, predominantly during NREM or slow-wave sleep.",
+      "claim_type": "EXPLICIT",
+      "source": "Reactivations of memory related activity patterns in cortex have been reported mostly during sleep, predominantly during NREM or slow-wave sleep (Ramanathan et al., 2015; Gulati et al., 2017; Gulati et al., 2014; Peyrache et al., 2009; Jiang et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to experimental studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:04:19.029880Z"
+    },
+    {
+      "id": "b1397087-1d46-4aa0-9934-5408a81a6618",
+      "content_id": "c562b2a0-9bdf-4391-b93c-6c2ce87217dc",
+      "claim_id": "C69",
+      "claim": "During slow-wave sleep, the cortex exhibits alternating phases of high and low activity, called Up- and Down-phases or slow oscillations.",
+      "claim_type": "EXPLICIT",
+      "source": "During this sleep phase, the cortex exhibits alternating phases of high and low activity, so-called Up- and Down-phases or slow oscillations (Steriade et al., 1993; Steriade et al., 2001; Timofeev et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to experimental studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:04:19.029880Z"
+    },
+    {
+      "id": "d480a1c0-c4f9-4bf6-96ec-1e66ac3cadba",
+      "content_id": "c562b2a0-9bdf-4391-b93c-6c2ce87217dc",
+      "claim_id": "C70",
+      "claim": "Up-Down-dynamics relies on recurrent excitation.",
+      "claim_type": "EXPLICIT",
+      "source": "This Up-Down-dynamics relies on recurrent excitation (Sanchez-Vives and McCormick, 2000), similar to the dynamics here.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to experimental work and comparison to the model.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:04:19.029880Z"
+    },
+    {
+      "id": "e3e04388-9889-4b8a-a35b-f6a9aa7ea3c6",
+      "content_id": "c562b2a0-9bdf-4391-b93c-6c2ce87217dc",
+      "claim_id": "C71",
+      "claim": "In vitro imaging of individual activity during Up-Down-dynamics in cortical slices reveals that each Up-state comprises a subgroup of cells with strong correlated activity.",
+      "claim_type": "EXPLICIT",
+      "source": "In vitro imaging of individual activity during Up-Down-dynamics in cortical slices reveal further similarities with our model: Each Up-state comprises a subgroup of cells with strong correlated activity and the time-course of the activity is reminiscent of the convergence into an attractive state (Cossart et al., 2003; Shu et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to experimental studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:04:19.029880Z"
+    },
+    {
+      "id": "e8eba9c4-ceae-48f3-a130-0b6eb76568c0",
+      "content_id": "c562b2a0-9bdf-4391-b93c-6c2ce87217dc",
+      "claim_id": "C72",
+      "claim": "In vivo, Up-states induce stereotypical local patterns.",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, also in vivo, Up-states induce stereotypical local patterns (Luczak et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to experimental work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:04:19.029880Z"
+    },
+    {
+      "id": "00f6da5e-12cd-4db4-9b8e-6605b9ac9c17",
+      "content_id": "c562b2a0-9bdf-4391-b93c-6c2ce87217dc",
+      "claim_id": "C73",
+      "claim": "Single-cell recordings indicate that learning-related activity patterns reactivate during slow-wave sleep and that this is phase-coupled with Up-states.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, single-cell recordings indicate that learning-related activity patterns reactivate during slow-wave sleep and that this is phase-coupled with Up-states (Ramanathan et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to experimental work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:04:19.029880Z"
+    },
+    {
+      "id": "8d61d20a-956a-4248-b1a0-47c4e2464d60",
+      "content_id": "c562b2a0-9bdf-4391-b93c-6c2ce87217dc",
+      "claim_id": "C74",
+      "claim": "The memory strengthening reported in the model might be related to the long known beneficial properties of sleep on memory.",
+      "claim_type": "EXPLICIT",
+      "source": "The memory strengthening reported here might therefore be related to the long known beneficial properties of sleep on memory (Jenkins and Dallenbach, 1924; Karni et al., 1994; Fischer et al., 2002; Walker et al., 2003; Dudai, 2004; Stickgold, 2005; Gais et al., 2006; Korman et al., 2007; Lahl et al., 2008; Diekelmann and Born, 2010; Pan and Rickard, 2015; Rickard and Pan, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is speculative, connecting model results to experimental observations via citations.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:04:19.029880Z"
+    },
+    {
+      "id": "c2ae22ba-4527-40df-9476-54b9e440a1e8",
+      "content_id": "c562b2a0-9bdf-4391-b93c-6c2ce87217dc",
+      "claim_id": "C75",
+      "claim": "In the model, there is a decrease of memory stability for very long wake (sensory) phases.",
+      "claim_type": "EXPLICIT",
+      "source": "In our model, we observe a decrease of memory stability for very long wake (sensory) phases (Figure 7).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by simulation data shown in Figure 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:04:19.029880Z"
+    },
+    {
+      "id": "a00a290c-0cba-4f46-b708-8bf91eac64cf",
+      "content_id": "c562b2a0-9bdf-4391-b93c-6c2ce87217dc",
+      "claim_id": "C76",
+      "claim": "As sleep deprivation normally does not lead to large scale loss of memories, there may be further processes at work to prevent memory decay.",
+      "claim_type": "EXPLICIT",
+      "source": "However, as sleep deprivation normally does not lead to a large scale loss of memories, it is possible that there are further processes at work to prevent the decay of memories.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is speculative, based on general knowledge about sleep deprivation effects.",
+      "evidence_type": "[\"SPECULATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:04:19.029880Z"
+    },
+    {
+      "id": "71edd5fe-cf3b-41ec-ba9f-2bff7ab2344f",
+      "content_id": "c562b2a0-9bdf-4391-b93c-6c2ce87217dc",
+      "claim_id": "C77",
+      "claim": "There may be a stable pool of synapses which is more resilient to decay.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, there may be a stable pool of synapses (Kasai et al., 2003; Loewenstein et al., 2015), which is more resilient to decay.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is speculative, supported by citations to experimental work.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:04:19.029880Z"
+    },
+    {
+      "id": "f33922cc-78b1-49e4-ab11-9794c5579afb",
+      "content_id": "c562b2a0-9bdf-4391-b93c-6c2ce87217dc",
+      "claim_id": "C78",
+      "claim": "Reactivations do not exclusively occur during sleep, as sleep-like activity patterns can also be observed during periods of resting or quiet wakefulness.",
+      "claim_type": "EXPLICIT",
+      "source": "Another possibility is that reactivations do not exclusively occur during sleep, as sleep-like activity patterns can also be observed during periods of resting or quiet wakefulness (Vyazovskiy et al., 2011; Sachidhanandam et al., 2013; Engel et al., 2016; Gentet et al., 2010; Poulet and Petersen, 2008; Okun et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to experimental studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:04:19.029880Z"
+    },
+    {
+      "id": "0e0165cc-0e65-410f-ae88-bca9988d932a",
+      "content_id": "c562b2a0-9bdf-4391-b93c-6c2ce87217dc",
+      "claim_id": "C79",
+      "claim": "Offline-gains for some kinds of memories have been observed during wakefulness.",
+      "claim_type": "EXPLICIT",
+      "source": "Coherent with the above-presented model, offline-gains for some kinds of memories have been observed during wakefulness (Walker et al., 2003; Rickard et al., 2008; Cai and Rickard, 2009; Varga et al., 2014; Honma et al., 2015; Pan and Rickard, 2015; Rickard and Pan, 2017 but see, for example Adi-Japha and Karni, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to experimental studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:04:19.029880Z"
+    },
+    {
+      "id": "0f21de7b-a318-47f9-afe0-63b38d30795f",
+      "content_id": "c562b2a0-9bdf-4391-b93c-6c2ce87217dc",
+      "claim_id": "C80",
+      "claim": "Several fMRI studies establish a link between the reactivation of task specific patterns during rest periods and later task performance.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, several fMRI studies establish a link between the reactivation of task specific patterns during rest periods and later task performance (Staresina et al., 2013; Deuker et al., 2013), which is consistent with this view.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to experimental studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:04:19.029880Z"
+    },
+    {
+      "id": "db452dd3-6b56-4b72-91d3-71387ea1a5ef",
+      "content_id": "c562b2a0-9bdf-4391-b93c-6c2ce87217dc",
+      "claim_id": "C81",
+      "claim": "The synaptic homeostasis hypothesis states that connectivity should be down-regulated during sleep to balance the potentiation dominated wake intervals and to allow for new learning.",
+      "claim_type": "EXPLICIT",
+      "source": "On one hand, the synaptic homeostasis hypothesis states that connectivity should be down-regulated during sleep to balance the potentiation dominated wake intervals and to allow for new learning (Tononi and Cirelli, 2003; Tononi and Cirelli, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to the synaptic homeostasis hypothesis.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:04:19.029880Z"
+    },
+    {
+      "id": "18829598-931c-453b-9b4f-d8acac8f0b98",
+      "content_id": "c562b2a0-9bdf-4391-b93c-6c2ce87217dc",
+      "claim_id": "C82",
+      "claim": "There is accumulating evidence that connectivity is built-up especially after learning.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, there is accumulating evidence that connectivity is built-up especially after learning (e.g. Yang et al., 2014, for a recent review see Timofeev and Chauvette, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to experimental studies and reviews.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:04:19.029880Z"
+    },
+    {
+      "id": "cd3d47f2-9f30-4925-b0c9-50fb1ee4098c",
+      "content_id": "c562b2a0-9bdf-4391-b93c-6c2ce87217dc",
+      "claim_id": "C83",
+      "claim": "In the model, there is an increase in intra-assembly connectivity during rest phases.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we observe an increase in the intra-assembly connectivity, consistent with the second hypothesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by simulation data shown throughout the paper.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:04:19.029880Z"
+    },
+    {
+      "id": "ee77eca5-051d-4cc7-8889-79637b60d4fe",
+      "content_id": "c562b2a0-9bdf-4391-b93c-6c2ce87217dc",
+      "claim_id": "C84",
+      "claim": "In the model, inter-assembly and control connectivity decreases during rest phases.",
+      "claim_type": "EXPLICIT",
+      "source": "Yet, inter-assembly and control connectivity decreases, as proposed by the synaptic homeostasis hypothesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by simulation data shown in Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:04:19.029880Z"
+    },
+    {
+      "id": "ea15ce22-39ce-4f7c-a017-c5c62e0aba17",
+      "content_id": "c562b2a0-9bdf-4391-b93c-6c2ce87217dc",
+      "claim_id": "C85",
+      "claim": "The model combines and refines both views: connectivity inside memory representations is up-regulated while the rest of the network down-regulates weights and number of synapses.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, our model combines and refines both views: connectivity inside memory representations is up-regulated, such that memories are consolidated and strengthened, whereas the rest of of the network down-regulates weights and number of synapses, such that these neurons remain susceptible to subsequent learning.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a summary conclusion based on the simulation results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:04:19.029880Z"
+    },
+    {
+      "id": "fd46c47e-dddf-4e4a-854d-a517b321330a",
+      "content_id": "c562b2a0-9bdf-4391-b93c-6c2ce87217dc",
+      "claim_id": "C86",
+      "claim": "Large intrinsic fluctuations of synaptic weights are observed on a daily basis in experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "Most prominent are the large intrinsic fluctuations of the synaptic weights observed on a daily basis (Yasumatsu et al., 2008; Statman et al., 2014; Dvorkin and Ziv, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to experimental studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:04:19.029880Z"
+    },
+    {
+      "id": "58c28279-a4ce-4104-aef3-eced6fe6fcd4",
+      "content_id": "c562b2a0-9bdf-4391-b93c-6c2ce87217dc",
+      "claim_id": "C87",
+      "claim": "The daily changes of synaptic weights in the model are comparable to experimental data.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the daily changes of the synaptic weights in our model are comparable to experimental data, in the model the synapses segregrate in a stable and unstable pool (Figure 4\u2014figure supplement 2, compare to Yasumatsu et al., 2008, Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by comparison of simulation data to experimental data.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:04:19.029880Z"
+    },
+    {
+      "id": "0537c16c-8ddc-4530-878b-fbbdecbc1133",
+      "content_id": "c562b2a0-9bdf-4391-b93c-6c2ce87217dc",
+      "claim_id": "C88",
+      "claim": "In the model, synapses segregate into a stable and unstable pool.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the daily changes of the synaptic weights in our model are comparable to experimental data, in the model the synapses segregrate in a stable and unstable pool (Figure 4\u2014figure supplement 2, compare to Yasumatsu et al., 2008, Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by simulation data shown in Figure 4\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:04:19.029880Z"
+    },
+    {
+      "id": "e87329b7-00b2-4d7e-aa61-33a3dad10a94",
+      "content_id": "c562b2a0-9bdf-4391-b93c-6c2ce87217dc",
+      "claim_id": "C89",
+      "claim": "It needs to be clarified in future research how synapse intrinsic fluctuations affect memory maintenance.",
+      "claim_type": "EXPLICIT",
+      "source": "It needs to be clarified in future research how such synapse intrinsic fluctuations affect memory maintenance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about future research directions.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:04:19.029880Z"
+    },
+    {
+      "id": "ae8dc82b-eb3b-434e-a4fe-4d0223a0504c",
+      "content_id": "c562b2a0-9bdf-4391-b93c-6c2ce87217dc",
+      "claim_id": "C90",
+      "claim": "Connectivity build-up due to self-reactivation is expected to make memories more robust even in the context of synapse intrinsic fluctuations.",
+      "claim_type": "EXPLICIT",
+      "source": "We expect that also in this context the connectivity build-up due self-reactivation will make memories more robust.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative claim about expected behavior.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:04:19.029880Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "5c36f261-9e81-439d-a7ee-b5b22f2371aa",
+      "content_id": "c562b2a0-9bdf-4391-b93c-6c2ce87217dc",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The manuscript establishes the biological context that synaptic connections undergo continuous turnover (exchanging up to 50% over weeks), yet memories remain stable and can improve without further training, especially during sleep.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2-C4 are well-supported by multiple experimental citations establishing the paradox that motivates the study: synaptic turnover is extensive yet memories persist and improve. These are literature-based claims that provide the biological foundation for the computational work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:04:19.029880Z"
+    },
+    {
+      "id": "c59428b1-b941-4b8d-8324-ad2c423d6f7a",
+      "content_id": "c562b2a0-9bdf-4391-b93c-6c2ce87217dc",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The manuscript reviews existing hypotheses for memory retention including stable/unstable synapse pools, hippocampal replay mechanisms, and notes that hippocampal replay is not necessary for cortical memory maintenance based on patient H.M.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5-C7 accurately summarize prior hypotheses with appropriate citations. The inference about patient H.M. (C7) is a well-established observation in neuroscience, though the claim could be more nuanced about what H.M.'s case actually demonstrates.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:04:19.029880Z"
+    },
+    {
+      "id": "7310a8a8-c3bf-4790-805f-ec4792141312",
+      "content_id": "c562b2a0-9bdf-4391-b93c-6c2ce87217dc",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The manuscript establishes that spontaneous activity alternations (Up-Down dynamics) occur during sleep and rest, memory-related patterns reactivate during these periods, and larger synapses are more stable than smaller ones.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8-C10 are well-supported by appropriate experimental citations. These establish key biological phenomena that the computational model aims to capture: spontaneous reactivation dynamics, memory replay during rest, and size-dependent synaptic stability.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:04:19.029880Z"
+    },
+    {
+      "id": "fd79a8b2-99d6-4ffc-be86-1c7ef894634f",
+      "content_id": "c562b2a0-9bdf-4391-b93c-6c2ce87217dc",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The main finding is that combining structural plasticity, synaptic plasticity, and self-generated reactivation stabilizes cell assemblies against synaptic turnover, strengthens connectivity, increases robustness, and leads to offline memory improvement.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11, C47-C51 represent the core conclusions supported by extensive simulation data (Figures 2-7). The model demonstrates that brief daily reactivations during rest maintain and strengthen assemblies despite ongoing turnover, with improved pattern completion. The computational evidence is internally consistent and mechanistically explained.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:04:19.029880Z"
+    },
+    {
+      "id": "6470dd89-015d-433d-9e11-4c541639e351",
+      "content_id": "c562b2a0-9bdf-4391-b93c-6c2ce87217dc",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "During learning, stimulated neuron groups form highly interconnected cell assemblies while non-assembly connections remain sparse, with connectivity following synaptic strength on an hours timescale.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C12-C13 are supported by simulation data in Figure 2B showing differential strengthening of intra-assembly versus inter-assembly connections. The temporal dynamics of weight and connectivity changes are clearly demonstrated, though the specific timescale depends on model parameters.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:04:19.029880Z"
+    },
+    {
+      "id": "a0552773-0821-48ee-b54a-5892ad4af7e9",
+      "content_id": "c562b2a0-9bdf-4391-b93c-6c2ce87217dc",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The model exhibits distinct dynamics during sensory versus rest phases: assemblies decay during sensory input due to lateral inhibition, but spontaneously reactivate during rest when sufficient recurrence exists, with winner-take-all dynamics ensuring only one assembly activates at a time, terminated by short-term depression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C14-C19 describe the core dynamical mechanism supported by Figures 3A-C. The phase-plane analysis (Figure 3A) and activity correlation data (Figures 3Ci-ii) demonstrate the reactivation mechanism. The role of short-term depression in terminating high activity is well-established in cited prior models and implemented here.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:04:19.029880Z"
+    },
+    {
+      "id": "2c0916f2-4562-4cd3-b8dc-4d34ea4dcb23",
+      "content_id": "c562b2a0-9bdf-4391-b93c-6c2ce87217dc",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Without rest phases, assembly weights and connectivity decay over days, but interleaving sensory and rest phases preserves and gradually increases intra-assembly connectivity while maintaining weak inter-assembly connections and removing spurious connections.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C20-C24 are strongly supported by simulation data in Figures 4A-C and supplement 1. The contrast between continuous sensory input (decay) and alternating phases (strengthening) is clearly demonstrated. The removal of spurious connections during rest is an important refinement shown in supplementary data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:04:19.029880Z"
+    },
+    {
+      "id": "71192ab7-447b-45b8-a9ef-96d3110982d3",
+      "content_id": "c562b2a0-9bdf-4391-b93c-6c2ce87217dc",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Without structural plasticity during retention, assemblies initially remain stable but are eventually lost after prolonged sensory phases that drive them below reactivation threshold.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C25 is supported by Figure 4D showing assembly loss after ~100 hours when structural plasticity is blocked. This demonstrates the necessity of structural plasticity for long-term memory maintenance in the model, though the specific timescale depends on parameters.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:04:19.029880Z"
+    },
+    {
+      "id": "590c0ced-1c7c-4c73-9dcd-174983a36e29",
+      "content_id": "c562b2a0-9bdf-4391-b93c-6c2ce87217dc",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The model exhibits ongoing synapse turnover (~10% daily) with transiently increased creation after learning, continuous removal of learning-formed synapses, and strengthening through stabilizing more synapses than are removed rather than simple addition.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26-C29 are supported by Figure 5A-C and comparisons to experimental data. The turnover rate and post-learning dynamics match experimental observations. The mechanistic insight that strengthening emerges from differential stabilization rather than net addition (C29) is well-demonstrated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:04:19.029880Z"
+    },
+    {
+      "id": "19cc38ad-c843-405f-ba97-278ffeb787ab",
+      "content_id": "c562b2a0-9bdf-4391-b93c-6c2ce87217dc",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Self-induced strengthening through reactivation improves recall quality and pattern completion robustness.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C32 is supported by Figure 6 showing improved separation of input current distributions and better pattern completion at higher corruption levels after rest-phase strengthening (t=300h vs t=15h). The functional benefit of structural changes is clearly demonstrated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:04:19.029880Z"
+    },
+    {
+      "id": "6d655b1f-2ec5-4a46-a4a9-42adebf7c03d",
+      "content_id": "c562b2a0-9bdf-4391-b93c-6c2ce87217dc",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Assembly connectivity increases with longer rest and shorter sensory phases, with dynamics explained by a theory assuming maximal potentiation during rest and exponential decay during sensory phases; larger initial connectivity enables longer survival without reactivation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-C37 are supported by Figures 7A-C showing parameter dependencies and theory-simulation agreement. The theoretical framework (Materials and methods) provides mechanistic understanding. However, the theory makes simplifying assumptions (homogeneous connectivity, maximal potentiation) that may not fully capture heterogeneity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:04:19.029880Z"
+    },
+    {
+      "id": "44cf0e66-13a5-4cad-a901-08c02cf9a0d5",
+      "content_id": "c562b2a0-9bdf-4391-b93c-6c2ce87217dc",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Assembly connectivity exhibits bistable dynamics, converging to either decay or a stationary value that increases with longer rest and shorter sensory phases; even brief rest (3 min) can maintain connectivity for up to 20 hours of sensory input.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38-C42 are supported by Figures 7D-G showing convergence dynamics and theoretical predictions of stationary states. The bistability is a key mechanistic insight. However, the claim about 3-minute rest (C42) is based on theoretical extrapolation (Figure 7G) and would benefit from simulation validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:04:19.029880Z"
+    },
+    {
+      "id": "10285407-4306-46c3-8c54-862e3705bc70",
+      "content_id": "c562b2a0-9bdf-4391-b93c-6c2ce87217dc",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Short-term depression maintains overlapping assemblies while spike-frequency adaptation causes separation, because adaptation of neurons prevents reactivation with multiple assemblies whereas synaptic depression only affects transmission.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C46 are supported by Figure 8A-B showing contrasting outcomes. The mechanistic explanation (C45-C46) is logically sound: neuronal adaptation creates competition while synaptic depression does not. This demonstrates an important functional difference between adaptation mechanisms.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:04:19.029880Z"
+    },
+    {
+      "id": "bc718965-9b26-47ff-82ad-8c6668c1689f",
+      "content_id": "c562b2a0-9bdf-4391-b93c-6c2ce87217dc",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The mechanism requires five critical ingredients: spontaneous reactivation capability, activity termination via adaptation, lateral inhibition for winner-take-all dynamics, structural plasticity favoring large synapses, and Hebbian plasticity that depresses asynchronous connections.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52-C57 accurately identify the necessary model components. Each requirement is justified by the model's behavior and supported by the simulation results. The clarification that structural plasticity becomes associative indirectly (C56) is an important mechanistic insight.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:04:19.029880Z"
+    },
+    {
+      "id": "b8cb0f17-0ef7-4028-911b-de96d465b1b9",
+      "content_id": "c562b2a0-9bdf-4391-b93c-6c2ce87217dc",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The current model advances beyond previous work by using self-generated rather than external reactivation, demonstrating survival for many hours without reactivation, and showing memory strengthening through selective synapse stabilization despite ongoing turnover.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-C62 appropriately position the work relative to prior models with accurate citations. The advances are genuine: self-organized reactivation without external cues, longer timescales, and explicit structural plasticity. The comparisons are fair and the novelty is substantiated by the simulation results.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:04:19.029880Z"
+    },
+    {
+      "id": "0d3842ce-e368-4cfc-9bc8-825008af1593",
+      "content_id": "c562b2a0-9bdf-4391-b93c-6c2ce87217dc",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Offline memory gains generally emerge from bistable connectivity dynamics where creation balances removal at weak and strong configurations; slow structural plasticity prevents saturation during learning, enabling post-learning strengthening unlike faster synaptic-only plasticity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C63-C67 provide theoretical generalization supported by the bistability analysis (Figure 7) and appropriate citations to alternative mechanisms. The distinction between structural and synaptic plasticity timescales (C65-C67) explains why offline gains occur here but not in some prior models. The reasoning is sound.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:04:19.029880Z"
+    },
+    {
+      "id": "06932815-acef-49c2-8ddb-9f13719ce336",
+      "content_id": "c562b2a0-9bdf-4391-b93c-6c2ce87217dc",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "The model's reactivation dynamics during rest phases parallel experimental observations of memory reactivation during NREM/slow-wave sleep, Up-Down state dynamics, stereotypical activity patterns, and phase-coupling with Up-states, potentially relating to sleep's beneficial effects on memory.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C68-C73 establish strong parallels between model and experimental observations with appropriate citations. The connection to sleep benefits (C74) is appropriately speculative. The biological plausibility is well-argued, though direct experimental validation of the specific mechanism would require additional work.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:04:19.029880Z"
+    },
+    {
+      "id": "25246258-9a14-4d73-9ef8-08862a7445a2",
+      "content_id": "c562b2a0-9bdf-4391-b93c-6c2ce87217dc",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "The model predicts memory instability after very long wake phases, but additional mechanisms (stable synapse pools, wake reactivations) may prevent memory loss during sleep deprivation; offline gains during wakefulness and rest-period reactivation are experimentally observed.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C75-C80 appropriately discuss model limitations (C75-C77) and supporting evidence (C78-C80) with relevant citations. The speculation about additional protective mechanisms (C76-C77) is reasonable given that sleep deprivation doesn't cause massive memory loss. The experimental support for wake reactivation strengthens the model's relevance.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:04:19.029880Z"
+    },
+    {
+      "id": "eb700900-bd26-45d2-b3c7-e4a618c434bb",
+      "content_id": "c562b2a0-9bdf-4391-b93c-6c2ce87217dc",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "The model reconciles competing hypotheses about sleep's effects on connectivity: intra-assembly connections strengthen (supporting consolidation evidence) while inter-assembly and control connections weaken (supporting synaptic homeostasis), with memory representations selectively up-regulated.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C81-C85 effectively synthesize how the model addresses an ongoing debate with appropriate citations to both hypotheses. The simulation data (Figures 4B-C, supplement 1) support the differential effects. This is an important conceptual contribution showing both hypotheses can be partially correct in different network compartments.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:04:19.029880Z"
+    },
+    {
+      "id": "0d61f37a-d7ec-4363-aa5c-31462b41fee7",
+      "content_id": "c562b2a0-9bdf-4391-b93c-6c2ce87217dc",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "While the model's daily weight changes are comparable to experiments, synapses segregate into stable/unstable pools unlike some experimental observations; the impact of intrinsic weight fluctuations on memory maintenance requires future investigation, though connectivity build-up should provide robustness.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C86-C88 identify a discrepancy between model and some experimental data regarding synapse pool segregation, supported by Figure 4-supplement 2. Claims C89-C90 appropriately acknowledge this as a limitation requiring future work. The speculation about robustness (C90) is reasonable but untested. This honest assessment of model limitations is appropriate.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:04:19.029880Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "e5ce6268-c329-430a-ac86-ffb0c428190a",
+      "result_id": "5c36f261-9e81-439d-a7ee-b5b22f2371aa"
+    },
+    {
+      "claim_id": "3cf50ba4-76a3-4aad-9b33-2e8e89c71775",
+      "result_id": "5c36f261-9e81-439d-a7ee-b5b22f2371aa"
+    },
+    {
+      "claim_id": "29bbb355-ba9f-4426-8f90-7b25faa72a3e",
+      "result_id": "5c36f261-9e81-439d-a7ee-b5b22f2371aa"
+    },
+    {
+      "claim_id": "c0c90ee2-6fe4-415a-82de-9a6a569eca97",
+      "result_id": "c59428b1-b941-4b8d-8324-ad2c423d6f7a"
+    },
+    {
+      "claim_id": "ee58ef36-7fcb-4a41-be6c-b9dba7da5a26",
+      "result_id": "c59428b1-b941-4b8d-8324-ad2c423d6f7a"
+    },
+    {
+      "claim_id": "6b245621-ce1d-436d-a006-8effaf6ed53b",
+      "result_id": "c59428b1-b941-4b8d-8324-ad2c423d6f7a"
+    },
+    {
+      "claim_id": "0c46d20f-a35e-4458-b1f6-90c59985dbc6",
+      "result_id": "7310a8a8-c3bf-4790-805f-ec4792141312"
+    },
+    {
+      "claim_id": "571b9c8b-6849-4c1d-b40b-1888962c7215",
+      "result_id": "7310a8a8-c3bf-4790-805f-ec4792141312"
+    },
+    {
+      "claim_id": "b1569ddf-4f7b-41e1-94cc-ddacd96abdf6",
+      "result_id": "7310a8a8-c3bf-4790-805f-ec4792141312"
+    },
+    {
+      "claim_id": "daa39de9-b96c-42a2-8fce-c73012c0a9cc",
+      "result_id": "fd79a8b2-99d6-4ffc-be86-1c7ef894634f"
+    },
+    {
+      "claim_id": "94d1b8b5-c0f0-4496-aa81-2407cdda2f19",
+      "result_id": "fd79a8b2-99d6-4ffc-be86-1c7ef894634f"
+    },
+    {
+      "claim_id": "326f1154-78fe-413f-a974-addc34254e5a",
+      "result_id": "fd79a8b2-99d6-4ffc-be86-1c7ef894634f"
+    },
+    {
+      "claim_id": "c7ddf98f-9430-49b9-a0ab-b64738ae2d1a",
+      "result_id": "fd79a8b2-99d6-4ffc-be86-1c7ef894634f"
+    },
+    {
+      "claim_id": "9c4a0191-dd35-41c8-81b9-231ab59d1be3",
+      "result_id": "fd79a8b2-99d6-4ffc-be86-1c7ef894634f"
+    },
+    {
+      "claim_id": "de7ce9b5-b993-4b15-849f-bd084ff2068a",
+      "result_id": "fd79a8b2-99d6-4ffc-be86-1c7ef894634f"
+    },
+    {
+      "claim_id": "b2094541-18a4-4482-9bf7-9859e5d84a23",
+      "result_id": "6470dd89-015d-433d-9e11-4c541639e351"
+    },
+    {
+      "claim_id": "be64bab0-04e8-469e-83f1-e8666b19df36",
+      "result_id": "6470dd89-015d-433d-9e11-4c541639e351"
+    },
+    {
+      "claim_id": "49c5361e-ab77-40bc-9e56-0e8d0bfbb49a",
+      "result_id": "a0552773-0821-48ee-b54a-5892ad4af7e9"
+    },
+    {
+      "claim_id": "5cd4b808-8271-4fee-884b-eb902e9f998d",
+      "result_id": "a0552773-0821-48ee-b54a-5892ad4af7e9"
+    },
+    {
+      "claim_id": "deeb8f12-4ab4-4678-8316-55c200f8d696",
+      "result_id": "a0552773-0821-48ee-b54a-5892ad4af7e9"
+    },
+    {
+      "claim_id": "f721e436-1d34-4eeb-b925-d303070242e8",
+      "result_id": "a0552773-0821-48ee-b54a-5892ad4af7e9"
+    },
+    {
+      "claim_id": "3b243815-418c-4bf6-a70c-c1c34ef8ad7d",
+      "result_id": "a0552773-0821-48ee-b54a-5892ad4af7e9"
+    },
+    {
+      "claim_id": "bc048fa4-d25b-458c-8aab-b735d2284c01",
+      "result_id": "a0552773-0821-48ee-b54a-5892ad4af7e9"
+    },
+    {
+      "claim_id": "e8b4981f-a4f4-43df-9f1a-657a6c866455",
+      "result_id": "2c0916f2-4562-4cd3-b8dc-4d34ea4dcb23"
+    },
+    {
+      "claim_id": "e90e3fd1-f65a-4155-847e-a20be86eb7cb",
+      "result_id": "2c0916f2-4562-4cd3-b8dc-4d34ea4dcb23"
+    },
+    {
+      "claim_id": "645ef90b-dcf1-4378-a163-2d801a5bdae5",
+      "result_id": "2c0916f2-4562-4cd3-b8dc-4d34ea4dcb23"
+    },
+    {
+      "claim_id": "c1358849-d206-4140-b953-c8dfb32d9380",
+      "result_id": "2c0916f2-4562-4cd3-b8dc-4d34ea4dcb23"
+    },
+    {
+      "claim_id": "acb2dc53-f9c2-4491-b77b-5cec43abb325",
+      "result_id": "2c0916f2-4562-4cd3-b8dc-4d34ea4dcb23"
+    },
+    {
+      "claim_id": "0708c2d8-e465-437a-bfed-ee751e2d45c5",
+      "result_id": "71192ab7-447b-45b8-a9ef-96d3110982d3"
+    },
+    {
+      "claim_id": "b3882b8c-63da-424e-bf97-b1f12f50d996",
+      "result_id": "590c0ced-1c7c-4c73-9dcd-174983a36e29"
+    },
+    {
+      "claim_id": "46d3e3c5-c0a3-4775-9039-1763925ebe56",
+      "result_id": "590c0ced-1c7c-4c73-9dcd-174983a36e29"
+    },
+    {
+      "claim_id": "1396c60f-8b57-4ff1-8906-053101819e36",
+      "result_id": "590c0ced-1c7c-4c73-9dcd-174983a36e29"
+    },
+    {
+      "claim_id": "7a58bb4f-ebb9-4b68-b70f-8a23f47538ce",
+      "result_id": "590c0ced-1c7c-4c73-9dcd-174983a36e29"
+    },
+    {
+      "claim_id": "da918ca0-d34c-4c38-8530-620eb14c1412",
+      "result_id": "19cc38ad-c843-405f-ba97-278ffeb787ab"
+    },
+    {
+      "claim_id": "c76852a9-c190-4468-b383-dc88ea0cea5a",
+      "result_id": "6d655b1f-2ec5-4a46-a4a9-42adebf7c03d"
+    },
+    {
+      "claim_id": "d485ea45-c430-42d2-b265-a2d0c30ac8a0",
+      "result_id": "6d655b1f-2ec5-4a46-a4a9-42adebf7c03d"
+    },
+    {
+      "claim_id": "50f29247-792c-44ad-b765-f0c62a6f52ca",
+      "result_id": "6d655b1f-2ec5-4a46-a4a9-42adebf7c03d"
+    },
+    {
+      "claim_id": "157fb4ac-b99e-426f-8359-187f8a1566fe",
+      "result_id": "6d655b1f-2ec5-4a46-a4a9-42adebf7c03d"
+    },
+    {
+      "claim_id": "99dd0b19-3767-452c-aa44-ec9fba9ca50b",
+      "result_id": "44cf0e66-13a5-4cad-a901-08c02cf9a0d5"
+    },
+    {
+      "claim_id": "8f15fcdf-3acf-41ff-b4af-696705c07722",
+      "result_id": "44cf0e66-13a5-4cad-a901-08c02cf9a0d5"
+    },
+    {
+      "claim_id": "1f52b900-ac93-4544-a82f-5ed00916e85f",
+      "result_id": "44cf0e66-13a5-4cad-a901-08c02cf9a0d5"
+    },
+    {
+      "claim_id": "62d09f46-2a63-48fe-8f30-49fb0489a5a4",
+      "result_id": "44cf0e66-13a5-4cad-a901-08c02cf9a0d5"
+    },
+    {
+      "claim_id": "f3a1c280-2fe4-4c1e-83a9-15d59a51381f",
+      "result_id": "10285407-4306-46c3-8c54-862e3705bc70"
+    },
+    {
+      "claim_id": "1d15b9f4-82ff-4ea8-a3e7-5f0631d0bcef",
+      "result_id": "10285407-4306-46c3-8c54-862e3705bc70"
+    },
+    {
+      "claim_id": "bdabe624-1055-4425-9784-d06c8c39d662",
+      "result_id": "10285407-4306-46c3-8c54-862e3705bc70"
+    },
+    {
+      "claim_id": "52910988-23f5-4662-9c21-5ff007ab5d43",
+      "result_id": "10285407-4306-46c3-8c54-862e3705bc70"
+    },
+    {
+      "claim_id": "4515d8cc-f3d5-4057-95a1-a36dab5f5875",
+      "result_id": "bc718965-9b26-47ff-82ad-8c6668c1689f"
+    },
+    {
+      "claim_id": "9c321aa2-7715-4800-8a6b-c02ab5687620",
+      "result_id": "bc718965-9b26-47ff-82ad-8c6668c1689f"
+    },
+    {
+      "claim_id": "807d4e66-9b65-409b-a814-f54a0dd13527",
+      "result_id": "bc718965-9b26-47ff-82ad-8c6668c1689f"
+    },
+    {
+      "claim_id": "583f86a6-f1a4-4396-a060-15a485874277",
+      "result_id": "bc718965-9b26-47ff-82ad-8c6668c1689f"
+    },
+    {
+      "claim_id": "dc15caa9-0eb9-4240-910e-340989592390",
+      "result_id": "bc718965-9b26-47ff-82ad-8c6668c1689f"
+    },
+    {
+      "claim_id": "6e13abea-b6b9-4510-b641-e758ee2140d5",
+      "result_id": "bc718965-9b26-47ff-82ad-8c6668c1689f"
+    },
+    {
+      "claim_id": "e9771443-be65-4aec-85a4-a312899ef167",
+      "result_id": "b8cb0f17-0ef7-4028-911b-de96d465b1b9"
+    },
+    {
+      "claim_id": "d1faae66-dda1-451d-8509-ddbee6dccec8",
+      "result_id": "b8cb0f17-0ef7-4028-911b-de96d465b1b9"
+    },
+    {
+      "claim_id": "cada1c49-d80e-41c5-bd7f-c852dd2ddfd8",
+      "result_id": "b8cb0f17-0ef7-4028-911b-de96d465b1b9"
+    },
+    {
+      "claim_id": "813fb384-6f7b-4178-a3e5-f59dc7b89ddf",
+      "result_id": "b8cb0f17-0ef7-4028-911b-de96d465b1b9"
+    },
+    {
+      "claim_id": "0f4b8d9b-592b-4a69-bcf7-88a24cdac4b4",
+      "result_id": "b8cb0f17-0ef7-4028-911b-de96d465b1b9"
+    },
+    {
+      "claim_id": "956a171c-0626-4ca4-963f-5966fdf48e73",
+      "result_id": "0d3842ce-e368-4cfc-9bc8-825008af1593"
+    },
+    {
+      "claim_id": "464f702f-c7c4-4277-b802-7a18c405b870",
+      "result_id": "0d3842ce-e368-4cfc-9bc8-825008af1593"
+    },
+    {
+      "claim_id": "57d206cd-b399-460f-b321-988830fc0989",
+      "result_id": "0d3842ce-e368-4cfc-9bc8-825008af1593"
+    },
+    {
+      "claim_id": "6e210909-7f02-4125-82c6-f57d34ca4e13",
+      "result_id": "0d3842ce-e368-4cfc-9bc8-825008af1593"
+    },
+    {
+      "claim_id": "9832164a-5fad-47f3-a6a8-5d844eb43fde",
+      "result_id": "0d3842ce-e368-4cfc-9bc8-825008af1593"
+    },
+    {
+      "claim_id": "256c319a-ac9a-401f-ab28-2f4e85682534",
+      "result_id": "06932815-acef-49c2-8ddb-9f13719ce336"
+    },
+    {
+      "claim_id": "b1397087-1d46-4aa0-9934-5408a81a6618",
+      "result_id": "06932815-acef-49c2-8ddb-9f13719ce336"
+    },
+    {
+      "claim_id": "d480a1c0-c4f9-4bf6-96ec-1e66ac3cadba",
+      "result_id": "06932815-acef-49c2-8ddb-9f13719ce336"
+    },
+    {
+      "claim_id": "e3e04388-9889-4b8a-a35b-f6a9aa7ea3c6",
+      "result_id": "06932815-acef-49c2-8ddb-9f13719ce336"
+    },
+    {
+      "claim_id": "e8eba9c4-ceae-48f3-a130-0b6eb76568c0",
+      "result_id": "06932815-acef-49c2-8ddb-9f13719ce336"
+    },
+    {
+      "claim_id": "00f6da5e-12cd-4db4-9b8e-6605b9ac9c17",
+      "result_id": "06932815-acef-49c2-8ddb-9f13719ce336"
+    },
+    {
+      "claim_id": "8d61d20a-956a-4248-b1a0-47c4e2464d60",
+      "result_id": "06932815-acef-49c2-8ddb-9f13719ce336"
+    },
+    {
+      "claim_id": "c2ae22ba-4527-40df-9476-54b9e440a1e8",
+      "result_id": "25246258-9a14-4d73-9ef8-08862a7445a2"
+    },
+    {
+      "claim_id": "a00a290c-0cba-4f46-b708-8bf91eac64cf",
+      "result_id": "25246258-9a14-4d73-9ef8-08862a7445a2"
+    },
+    {
+      "claim_id": "71edd5fe-cf3b-41ec-ba9f-2bff7ab2344f",
+      "result_id": "25246258-9a14-4d73-9ef8-08862a7445a2"
+    },
+    {
+      "claim_id": "f33922cc-78b1-49e4-ab11-9794c5579afb",
+      "result_id": "25246258-9a14-4d73-9ef8-08862a7445a2"
+    },
+    {
+      "claim_id": "0e0165cc-0e65-410f-ae88-bca9988d932a",
+      "result_id": "25246258-9a14-4d73-9ef8-08862a7445a2"
+    },
+    {
+      "claim_id": "0f21de7b-a318-47f9-afe0-63b38d30795f",
+      "result_id": "25246258-9a14-4d73-9ef8-08862a7445a2"
+    },
+    {
+      "claim_id": "db452dd3-6b56-4b72-91d3-71387ea1a5ef",
+      "result_id": "eb700900-bd26-45d2-b3c7-e4a618c434bb"
+    },
+    {
+      "claim_id": "18829598-931c-453b-9b4f-d8acac8f0b98",
+      "result_id": "eb700900-bd26-45d2-b3c7-e4a618c434bb"
+    },
+    {
+      "claim_id": "cd3d47f2-9f30-4925-b0c9-50fb1ee4098c",
+      "result_id": "eb700900-bd26-45d2-b3c7-e4a618c434bb"
+    },
+    {
+      "claim_id": "ee77eca5-051d-4cc7-8889-79637b60d4fe",
+      "result_id": "eb700900-bd26-45d2-b3c7-e4a618c434bb"
+    },
+    {
+      "claim_id": "ea15ce22-39ce-4f7c-a017-c5c62e0aba17",
+      "result_id": "eb700900-bd26-45d2-b3c7-e4a618c434bb"
+    },
+    {
+      "claim_id": "fd46c47e-dddf-4e4a-854d-a517b321330a",
+      "result_id": "0d61f37a-d7ec-4363-aa5c-31462b41fee7"
+    },
+    {
+      "claim_id": "58c28279-a4ce-4104-aef3-eced6fe6fcd4",
+      "result_id": "0d61f37a-d7ec-4363-aa5c-31462b41fee7"
+    },
+    {
+      "claim_id": "0537c16c-8ddc-4530-878b-fbbdecbc1133",
+      "result_id": "0d61f37a-d7ec-4363-aa5c-31462b41fee7"
+    },
+    {
+      "claim_id": "e87329b7-00b2-4d7e-aa61-33a3dad10a94",
+      "result_id": "0d61f37a-d7ec-4363-aa5c-31462b41fee7"
+    },
+    {
+      "claim_id": "ae8dc82b-eb3b-434e-a4fe-4d0223a0504c",
+      "result_id": "0d61f37a-d7ec-4363-aa5c-31462b41fee7"
+    }
+  ],
+  "comparisons": []
+}

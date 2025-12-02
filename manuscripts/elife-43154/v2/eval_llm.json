@@ -1,0 +1,188 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C22",
+      "C23",
+      "C24",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Prior studies (Malaria Genomic Epidemiology Network et al., 2014; Clarke et al., 2017) reported that G6PDd was protective against cerebral malaria (OR ~0.81-0.82) but increased risk of severe malarial anaemia (OR ~1.48-1.49) in males, based on pooled analysis of >11,000 patients. A balancing selection hypothesis was proposed based on these findings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C3, C22, C23, C69, C71 accurately cite the findings from prior studies with specific odds ratios and confidence intervals. Claims C70, C72 provide the sample sizes and breakdown of patient categories. Claim C24 correctly describes the hypothesis proposed by Clarke et al. (2017). These are well-documented citations of prior work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "The prior studies defined CM cases as patients with coma but without concomitant SMA, and SMA cases as patients with severe anaemia who were conscious, thereby excluding patients with both conditions (~12% of cases) and other severe malaria presentations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C33 accurately describe the case definitions used in the prior studies, which are critical to understanding the collider bias argument. The exclusion of patients with both SMA and CM (C30) is a logical inference from the mutually exclusive case definitions (C28, C29) and is supported by the data showing ~12% had both conditions (C39, C70, C72).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C39",
+      "C40",
+      "C77"
+    ],
+    "result": "The mutually exclusive case definitions create an artificial dependency between SMA and CM. Since G6PDd causes haemolysis and increases SMA risk, excluding patients with both SMA and CM artificially reduces G6PDd patients in the CM category, creating a spurious negative association between G6PDd and CM.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C36 present the logical argument for collider bias based on established knowledge about G6PDd's effect on haemolysis (C35). Claims C39-C40 apply this logic to the specific case definitions. Claim C77 summarizes the collider bias mechanism. The reasoning is sound and follows from the case definitions and known biological effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "A causal diagram (Figure 1) and simulation study were constructed to test whether collider bias alone could explain the observed associations. The null model assumed no direct causal link between G6PDd and CM, and no direct link between SMA and CM. The model was calibrated with marginal probabilities from prior studies and restricted to males.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C46 and C73-C76 describe the simulation methodology clearly. The causal diagram is presented in Figure 1, and the simulation parameters (C73-C75) are derived from the prior studies. The restriction to males (C46) is justified to avoid gene dose effect assumptions. The methodology is transparent and appropriate for testing the collider bias hypothesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "The simulation showed that when the OR for G6PDd in SMA cases versus controls is >1, the estimated OR for G6PDd in CM cases versus controls is biased downward (below the true value of 1). Using the reported point estimate of OR=1.48 for SMA, the simulation produced an OR of 0.87 for CM, closely matching the observed 0.82.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C52 describe the simulation results shown in Figure 2. The quantitative agreement between simulated (0.87) and observed (0.82) odds ratios for CM (C51-C52) is compelling. The simulation demonstrates that the entire observed association can be explained by collider bias when realistic values for the G6PDd-SMA association are used (C50). The results are internally consistent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C53",
+      "C54",
+      "C57"
+    ],
+    "result": "External validation from Clarke et al. (2017) showed mean G6PDd scores of 13.5% in controls, 13% in CM cases, and 16.9% in SMA cases. Independent data from Uyoga et al. (2015) reported OR=1.71 for G6PDd in SMA cases, consistent with the simulation results.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C38 cite specific data from Clarke et al. (2017) showing the pattern of G6PDd prevalence across groups. Claims C53-C54, C57 cite independent evidence from Uyoga et al. (2015) that is consistent with the simulation's required OR values. This external validation strengthens the collider bias explanation, though the Uyoga study used a different population (homozygous girls and hemizygous boys).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C25",
+      "C26",
+      "C55",
+      "C58"
+    ],
+    "result": "The main conclusion is that collider bias is sufficient to explain all of the observed protective association between G6PDd and CM, invalidating causal interpretations and the novel balancing selection hypothesis based on these associations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C6, C25, C55 state the main conclusion that collider bias explains the observed associations. The simulation results (C47-C52) demonstrate quantitative sufficiency. However, C26, C58 appropriately acknowledge that this does not prove G6PDd has no effect on CM risk, only that the observed association could arise entirely from bias. The conclusion is well-supported but appropriately cautious.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C56",
+      "C59",
+      "C60",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "The findings highlight general methodological challenges in severe malaria research: difficulty inferring causal relationships when covariates define inclusion criteria, subjective and time-varying case definitions, inability to account for illness duration and treatment-seeking behavior, and the impact of patient subgroup selection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56, C59-C60, C63-C65 describe broader methodological implications. These are reasonable generalizations from the specific collider bias example demonstrated in the paper. The limitations of observational severe malaria studies (C59-C60) are well-recognized in the field. The recommendation about pooled analyses (C63) follows logically from the demonstrated bias.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "The authors recommend that future genetic epidemiological studies use causal diagrams and publish reproducible code alongside analyses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C68 are reasonable recommendations based on the demonstrated value of causal reasoning in this re-analysis. The authors practiced what they recommend by providing their simulation code. These are forward-looking suggestions rather than empirical findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C1",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C61",
+      "C62"
+    ],
+    "result": "Background claims establish that severe malaria case fatality depends on organ dysfunction patterns, G6PDd is a common X-linked enzymopathy with unclear protective mechanisms, anaemia is inevitable in symptomatic malaria but can also result from genetic polymorphisms, and observational studies face confounding and selection bias challenges.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C7-C21, C61-C62 provide background knowledge and context. These are appropriately cited or stated as established knowledge. They set up the rationale for the study but are not novel findings. The characterization of methodological challenges (C20) is accurate and relevant to the study's focus on collider bias (C21).",
+    "result_type": "MINOR"
+  }
+]

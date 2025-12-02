@@ -1,0 +1,414 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C87"
+    ],
+    "result": "Nitric oxide synthase (NOS) is expressed in a subset of dopaminergic neurons in Drosophila, specifically in PPL1-\u03b31pedc and PAM-\u03b35 compartments. RNA-seq identified NOS1 as the most abundantly expressed functional isoform. Immunohistochemistry and expansion microscopy confirmed NOS protein localization in the axonal terminals of these DANs, consistent with NO serving as a cotransmitter.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C40 provide converging evidence from RNA-seq (C36), FISH (C38), immunohistochemistry (C39), and expansion microscopy (C40) demonstrating NOS expression and localization in specific DAN terminals. The functional isoform identification (C37) is supported by citation. The localization pattern (C87) supports the cotransmitter hypothesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "In dopamine-deficient (TH mutant) flies, optogenetic activation of DANs induces memories with inverted valence compared to wild-type flies. PPL1 cluster activation produces positive-valence memory instead of negative, while PAM cluster activation produces negative instead of positive. This valence inversion is reversible by L-DOPA feeding or cell-type-specific TH rescue.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C33 demonstrate valence inversion in TH mutants with multiple lines of evidence: behavioral data (C25-C26, C30, C32-C33), pharmacological rescue (C28, C31), and genetic rescue (C29, C31). The consistency across different DAN types and rescue conditions strongly supports the phenomenon.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "NOS activity is required for valence-inverted memory formation in TH mutants. L-NNA feeding dose-dependently reduces valence-inverted memory, and this effect is cell-type specific. Ectopic NOS expression in DANs that normally lack it (PPL1-\u03b13, PPL1-\u03b32\u03b1'1) confers the ability to form valence-inverted memories, demonstrating that NO can form associations of opposite valence to dopamine.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C47 provide strong evidence through pharmacological inhibition (C41-C43), RNAi knockdown (C44), and gain-of-function experiments (C45-C46). The cell-type specificity (C43) and ectopic expression results (C45-C46) particularly strengthen the causal link between NOS and valence inversion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C4",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "NO's effects depend on soluble guanylate cyclase (sGC) in postsynaptic Kenyon cells. RNA-seq revealed expression of sGC subunits (Gyc\u03b199B and Gyc\u03b2100B) in KCs, DANs, and MBONs. RNAi knockdown of Gyc\u03b2100B in KCs abolished valence-inverted memory in TH mutants without causing general learning defects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C52 provide converging evidence from RNA-seq (C48), protein localization (C50), and functional genetics (C51-C52). The specificity of the effect (C52) and the known NO-sGC interaction (C49) support the mechanistic model. However, the authors acknowledge that other NO targets cannot be excluded (C53).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C3",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "NO-dependent memory develops more slowly than dopamine-dependent memory. In wild-type flies, brief (10s) PPL1-\u03b31pedc activation induces immediate dopamine-dependent memory, unaffected by NOS inhibition. In TH mutants, NO-dependent memory requires longer, repetitive training and develops slowly over 10 minutes, but once formed, persists for over 6 hours.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C63 demonstrate distinct temporal dynamics through systematic behavioral experiments comparing different training protocols and time points. The data clearly show slower induction (C61-C62) but longer persistence (C63) of NO-dependent memory compared to dopamine-dependent memory.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C64",
+      "C67"
+    ],
+    "result": "NO acts antagonistically to dopamine by shortening memory retention. NOS-RNAi expression or L-NNA feeding prolonged memory retention induced by PPL1-\u03b31pedc activation or odor-shock conditioning. Spaced training with PPL1-\u03b31pedc induced 1-day memory when NOS signaling was compromised, whereas it normally fails to induce long-lasting memory.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64 and C67 provide strong evidence through both genetic (RNAi) and pharmacological (L-NNA) manipulations showing that blocking NO signaling extends memory retention. The consistency across different training paradigms strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C7",
+      "C69",
+      "C70",
+      "C71",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "NO facilitates rapid updating of memories. In wild-type flies, a single reversal conditioning trial or DAN activation alone quickly alters odor preference. When NOS is inhibited or in TH mutants, memory updating requires multiple training trials, demonstrating that NO enables flexible, rapid memory modification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C75 demonstrate through reversal learning and extinction experiments that NO facilitates memory updating. The systematic comparison across wild-type, L-NNA treated, and TH mutant conditions (C69-C71, C73-C75) provides strong evidence for NO's role in memory flexibility.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "A multiplicative model of DA and NO interactions accurately predicts memory dynamics. The model assumes DA induces synaptic depression and NO induces potentiation, with effects following w(t) \u221d (1-D(t))(1+N(t)). This model fits behavioral data for various training protocols and predicts memory decay and reversal learning dynamics, though it cannot account for enhanced persistence after 10x spaced training.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C78 show the model successfully fits multiple experimental datasets. However, C79 acknowledges a limitation where the model fails to predict long-term memory after extensive training, suggesting additional consolidation mechanisms. The model is well-supported for immediate effects but incomplete for all memory dynamics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C8",
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "The interplay of NO and dopamine enables compartment-specific memory specialization. PPL1-\u03b31pedc (NOS-expressing) induces fast, labile memory, while other compartments (\u03b13, \u03b32\u03b1'1) form slower, more stable memories. Under repeated training, parallel memory formation in multiple compartments allows flies to benefit from fast \u03b31pedc memory without sacrificing long-term retention.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C115-C118 integrate behavioral data with the compartment-specific expression of NOS to explain how parallel memory systems with different dynamics can coexist. The evidence from different training protocols and compartments supports this functional model, though it remains somewhat inferential.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C34",
+      "C35"
+    ],
+    "result": "Different DAN cell types express distinct cotransmitters. PPL1-\u03b32\u03b1'1 activation produces negative-valence memory in both wild-type and TH mutant backgrounds, suggesting a cotransmitter with the same valence as dopamine. PPL1-\u03b13 and PAM-\u03b2'1 do not induce memory in TH mutants, indicating absence of memory-inducing cotransmitters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C35 are supported by behavioral data in Figure 2 showing cell-type-specific differences in memory formation in TH mutants. However, the identity of the cotransmitter in PPL1-\u03b32\u03b1'1 remains unknown, making this result descriptive rather than mechanistic.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C54",
+      "C55"
+    ],
+    "result": "NO can act on MBONs and potentially other DANs. Optogenetic stimulation of PPL1-\u03b31pedc in TH mutants induced prolonged calcium increases in MBON-\u03b31pedc>\u03b1/\u03b2 (suppressed by L-NNA), but DANs in other compartments did not respond, suggesting limited NO diffusion range (~30 \u03bcm).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C55 are supported by calcium imaging data. However, the functional significance of NO action on MBONs versus KCs for memory formation remains unclear. The limited diffusion observation (C55) is important but based on negative results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C56",
+      "C57"
+    ],
+    "result": "NOS is dispensable for timing-dependent valence inversion (relief learning). PPL1-\u03b31pedc induces positive-valence memory when activated before odor presentation, and this effect does not require NOS, consistent with reports that timing-dependent plasticity involves different dopamine receptors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C57 are supported by behavioral data and consistent with recent literature on dopamine receptor-mediated timing effects. This negative result helps define the specific role of NO in memory formation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C58"
+    ],
+    "result": "NO-dependent memory requires scribble in Kenyon cells. RNAi knockdown of scribble, a scaffold protein involved in forgetting, impaired NO-dependent memory in TH mutants, suggesting NO regulates memory stability through scribble-dependent pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C58 is supported by RNAi data in Figure 5D. However, the mechanistic connection between NO signaling and scribble function remains unclear. This result suggests a link to active forgetting pathways but requires further investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C80",
+      "C81"
+    ],
+    "result": "Spaced training with PPL1-\u03b13 induces long-lasting memory that requires at least 3 hours to develop, consistent with reports that protein synthesis in MBON-\u03b13 during this time window is required for long-term memory formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C80 is supported by behavioral data in Figure 9A. The consistency with previous findings on protein synthesis requirements (C81) strengthens the interpretation, though the current study does not directly test the protein synthesis mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C1",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "Background on mushroom body organization and function. The MB consists of ~2000 Kenyon cells with parallel axons innervated by 20 types of DANs and 22 types of MBONs defining compartmental units. These compartments function as parallel units of associative learning with different dynamics. Dopamine signaling plays a key role in all compartments, inducing synaptic depression at KC-MBON synapses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C9-C24 summarize established knowledge about the Drosophila MB, supported by extensive citations to prior work. These provide essential context but are not novel findings of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "Background on cotransmission in dopaminergic neurons. Dopaminergic neurons in rodents and Drosophila co-release other neurotransmitters (glutamate, GABA) and neuropeptides. EM studies show co-existence of different vesicle types in Drosophila DAN terminals. Drosophila NOS is Ca2+/calmodulin regulated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C86 provide relevant background from the literature, supported by appropriate citations. These establish the context for investigating cotransmitters in Drosophila DANs but are not findings of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "Background on dopamine signaling mechanisms in Kenyon cells. During learning, coincident KC activity and dopamine receptor activation increases adenylyl cyclase and PKA activity. In contrast, DAN activation without KC activity engages Dop1R2, Rac1, and Scribble pathways that facilitate memory decay.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C92 summarize established mechanisms of dopamine signaling in the MB, supported by extensive citations. This background is essential for understanding the study but represents prior knowledge.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C94",
+      "C95"
+    ],
+    "result": "Parallel with vertebrate cerebellum. In the cerebellum, climbing fiber-induced LTD at parallel fiber-Purkinje cell synapses can coexist with NO-induced LTP. This balance was suggested to prevent memory saturation and allow reversal of motor learning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C95 draw parallels between the MB and cerebellum based on cited literature. This comparison provides interesting context but is not a finding of the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "Background on opposing cotransmitters. Opposing cotransmitters with distinct time courses are observed widely in neurons. For example, hypothalamic hypocretin-dynorphin neurons release excitatory hypocretin and inhibitory dynorphin with distinct receptor kinetics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C99 provide comparative context from other systems, supported by citations. This background helps interpret the NO-dopamine interaction but is not a novel finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "Background on memory genes and subcellular localization. Over 100 genes underlying olfactory conditioning have been identified in Drosophila. Gyc\u03b2100B was previously identified as a memory suppressor gene. The current study shows Gyc\u03b2100B is broadly distributed in KC axons, and ectopic NOS expression experiments suggest sGC is available in all MB compartments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C103 provide background, while C104 presents an inference from the ectopic expression data. The broad distribution of sGC (C103) and the inference about compartment-wide availability (C104) are supported but represent relatively minor observations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "Potential downstream effectors of cGMP in Kenyon cells. In cricket KCs, PKG mediates NO-induced Ca2+ channel augmentation, but the authors did not detect PKG expression in Drosophila KCs. Instead, cyclic nucleotide-gated channels and cGMP-specific phosphodiesterase Pde9 are expressed in KCs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C107 identify potential downstream signaling components based on RNA-seq data and comparison with other systems. However, the functional roles of these components remain untested, making this primarily descriptive.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "Potential crosstalk between cAMP and cGMP pathways. Biochemical studies show sGC activity is calcium-dependent and can be enhanced by PKA phosphorylation. sGC from rutabaga mutant flies shows lower activity than wild-type, suggesting pathway crosstalk.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C110 summarize biochemical findings from the literature suggesting potential interactions between dopamine (cAMP) and NO (cGMP) signaling. These provide mechanistic context but are not tested in the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C111",
+      "C112"
+    ],
+    "result": "Theoretical background on memory systems. Memory systems face tension between strength and longevity of memories. Theoretical studies suggest this can be resolved by heterogeneity of timescales, balancing fast, labile memory with slow consolidation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111-C112 provide theoretical context from computational neuroscience literature. This framework helps interpret the functional significance of the findings but is not a result of the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C113",
+      "C114"
+    ],
+    "result": "Background on DAN responses and learning rates. During shock conditioning, multiple DANs (PPL1-\u03b31pedc, PPL1-\u03b32\u03b1'1, PPL1-\u03b13) respond to the aversive stimulus. Optogenetic activation of these DANs individually induces negative-valence memory with distinct learning rates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113-C114 summarize prior findings on DAN activation patterns and learning rates, supported by citations to previous work. This provides context for understanding compartment-specific differences.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C27"
+    ],
+    "result": "TH mutant flies show weak positive-valence memory after odor-shock conditioning, consistent with previous reports, though the positive-valence memory observed in the current study is much stronger.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C27 references prior work showing weak positive memory in TH mutants. The current study's observation of stronger positive memory may reflect differences in training protocols or genetic backgrounds, but this is not systematically investigated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C65",
+      "C66"
+    ],
+    "result": "PPL1-\u03b31pedc fails to induce long-lasting memory even after 10x spaced training, whereas other PPL1 DANs without significant NOS expression (PPL1-\u03b13, PPL1-\u03b32\u03b1'1/\u03b1'2\u03b12) can induce 4-day memory after 10x spaced training.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C66 cite previous work showing compartment-specific differences in long-term memory formation. This provides important context for understanding the role of NOS but is not a novel finding of the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C72"
+    ],
+    "result": "Exposure to odors alone did not change existing memory in the reversal learning assay.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C72 is supported by behavioral data in Figure 7C showing no effect of odor exposure alone. This negative control is important for interpreting the reversal learning results but is a relatively minor observation.",
+    "result_type": "MINOR"
+  }
+]

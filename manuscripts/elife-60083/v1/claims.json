@@ -1,0 +1,794 @@
+[
+  {
+    "claim_id": "C1",
+    "claim": "Mycobacterium tuberculosis possesses a large number of genes of unknown or predicted function.",
+    "claim_type": "EXPLICIT",
+    "source": "Mycobacterium tuberculosis possesses a large number of genes of unknown or predicted function, undermining fundamental understanding of pathogenicity and drug susceptibility.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the abstract and supported by citations in the introduction regarding the M. tuberculosis genome containing genes of unknown or hypothetical function.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C2",
+    "claim": "An arrayed library of 276 validated CRISPRi mutants targeting essential M. smegmatis genes was constructed.",
+    "claim_type": "EXPLICIT",
+    "source": "This process yielded 276 validated CRISPRi mutants (Figure 1B, Figure 1\u2014figure supplement 1), 93% of the initial target set.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The construction and validation of the library is described in the methods and results, with supporting figures showing validation data.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C3",
+    "claim": "Approximately 90% of the strains in the library lacked whole-cell morphological characterization in either M. tuberculosis or M. smegmatis.",
+    "claim_type": "EXPLICIT",
+    "source": "According to a review of the literature (Supplementary file 3), approximately 90% of the strains in our library lacked whole-cell morphological characterization in either M. tuberculosis or M. smegmatis.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is based on a literature review documented in Supplementary file 3.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C4",
+    "claim": "Almost 40% of the targeted genes and their protein products had no biochemical or structural information.",
+    "claim_type": "EXPLICIT",
+    "source": "Furthermore, almost 40% of the targeted genes and their protein products had no biochemical or structural information (Supplementary file 3).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is based on a literature review documented in Supplementary file 3.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C5",
+    "claim": "An 18-hour ATc exposure duration was determined to be optimal for CRISPRi knockdown experiments.",
+    "claim_type": "EXPLICIT",
+    "source": "Time-lapse microscopy established that fully penetrant phenotypes were manifest at 18 hr post ATc exposure for all three genes.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This was determined through time-lapse microscopy experiments on three well-characterized essential genes (ftsZ, wag31, and guaB2).",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C6",
+    "claim": "The 18-hour timepoint represents approximately 6-7 doubling times of wild-type M. smegmatis mc2155.",
+    "claim_type": "EXPLICIT",
+    "source": "This represents approximately 6\u20137 doubling times of the wild-type M. smegmatis mc2155 parental strain (Logsdon et al., 2017), or a dilution factor of pre-existing protein of approximately 64 to 128 (26 - 27)-fold.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated with a citation to Logsdon et al., 2017 for the doubling time information.",
+    "evidence_type": [
+      "CITATION",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C7",
+    "claim": "The Averaged Neural Network classifier achieved an ROC AUC of 0.952 on the test set.",
+    "claim_type": "EXPLICIT",
+    "source": "Receiver Operator Characteristic (ROC) analysis of our classifier produced an Area Under the Curve (AUC) of 0.952 when applied to a reserved test set (Figure 2C).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This performance metric is reported from testing the trained classifier on a reserved test set.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C8",
+    "claim": "The curated dataset contains morphological descriptions for 163,559 cells across 263 imaged mutant and empty vector control strains.",
+    "claim_type": "EXPLICIT",
+    "source": "Our curated dataset contains morphological descriptions for 163559 cells across all 263 imaged mutant and empty vector control strains, with a mean of 568 cells per mutant (ranging from a minimum of 24 to a maximum of 3861 cells).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a direct report of the dataset size and composition.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C9",
+    "claim": "The imaging and analytic pipeline showed high reproducibility with r = 0.88 for mean cell lengths of replica-imaged knockdown mutants.",
+    "claim_type": "EXPLICIT",
+    "source": "Reassuringly, when comparing the mean cell lengths of the 137 replica-imaged knockdown mutants following ATc induction, the imaging and analytic pipeline showed high reproducibility (Figure 2D, r = 0.88, Pearson's).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This correlation coefficient was calculated from comparing biological replicates of 137 strains imaged on separate occasions.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C10",
+    "claim": "78% of the essential genes assayed resulted in at least one dramatically aberrant morphological feature on CRISPRi knockdown.",
+    "claim_type": "EXPLICIT",
+    "source": "In total, 206 (78%) strains returned at least one Z-score >3, or <-3.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is based on Z-score analysis of morphological features, where Z-scores >3 or <-3 indicate dramatic aberrations.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C11",
+    "claim": "Components of DNA metabolism, the divisome, and protein translation produced cellular elongation.",
+    "claim_type": "EXPLICIT",
+    "source": "In general, the responses could be broadly categorized into either elongation \u2013 occasionally with bulging and/or branching \u2013 or shortening, with a variety of alterations in cell width and roundness. For example, components of DNA metabolism (dna- prefix genes), the divisome (fts- genes), and protein translation (rpl- and rps- genes) produced cellular elongation.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is based on visual inspection and analysis of the morphological atlas generated from the imaging data.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C12",
+    "claim": "Filamentation was observed for components of the histidine biosynthesis pathway but not for other amino acid biosynthesis pathways.",
+    "claim_type": "EXPLICIT",
+    "source": "To our surprise, a filamentation response was also observed for components of the histidine biosynthesis pathway (his- genes), but not for other amino acid biosynthesis pathways.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This observation is based on morphological analysis of the imaging data and is noted as surprising by the authors.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C13",
+    "claim": "Components of cell-wall homeostasis were associated with distinctive shortening of cells, often in combination with bulging.",
+    "claim_type": "EXPLICIT",
+    "source": "In contrast, components of cell-wall homeostasis \u2013 including peptidoglycan (ponA1), arabinogalactan (aftA) and mycolic acid synthesis (inhA and mmpL3) \u2013 were associated with distinctive shortening of cells, often in combination with bulging.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is based on morphological analysis of the imaging data for cell-wall related genes.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C14",
+    "claim": "UMAP dimensionality reduction combined with hdbscan clustering produced three reproducible clusters.",
+    "claim_type": "EXPLICIT",
+    "source": "This process produced a two-dimensional UMAP space consisting of three reproducible clusters (Figure 5A).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is the result of applying unsupervised learning approaches to the multidimensional morphological dataset.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C15",
+    "claim": "Genes in verified operons were located more proximally in UMAP space than random pairs of genes.",
+    "claim_type": "EXPLICIT",
+    "source": "Consistent with our hypothesis, genes in verified operons (Martini et al., 2019) were located more proximally than random pairs of genes (Figure 5\u2014figure supplement 1).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This was tested by comparing Euclidean distances in UMAP space between operonic genes versus random gene pairs, using operon data from Martini et al., 2019.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C16",
+    "claim": "Predicted protein-protein interaction pairs were found to be non-randomly proximate in UMAP space.",
+    "claim_type": "EXPLICIT",
+    "source": "Similarly, predicted protein\u2013protein interaction pairs (Cong et al., 2019) were found to be non-randomly proximate (Figure 5\u2014figure supplement 1).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This was tested using protein-protein interaction predictions from Cong et al., 2019 and measuring distances in UMAP space.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C17",
+    "claim": "MSMEG_3213 knockdown produced a marked filamentation phenotype.",
+    "claim_type": "EXPLICIT",
+    "source": "In our imaging pipeline, MSMEG_3213 produced a marked filamentation phenotype, clustering with components of DNA replication and repair in UMAP space (Figure 7A and B).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is based on morphological analysis from the imaging pipeline.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C18",
+    "claim": "MSMEG_3213 knockdown showed a significant disturbance in normal cell-cycle progression.",
+    "claim_type": "EXPLICIT",
+    "source": "Utilizing the ParB-mCherry marker, we noted a significant disturbance in normal cell-cycle progression, consistent with the interpretation that knockdown of MSMEG_3213 disrupted DNA replication (Figure 7C).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is based on analysis of ParB-mCherry localization patterns in the knockdown mutant.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C19",
+    "claim": "The transcriptional profile of MSMEG_3213 knockdown showed marked overlap with the DNA damage (SOS) regulon.",
+    "claim_type": "EXPLICIT",
+    "source": "Notably, the whole-genome transcriptional profile on MSMEG_3213 knockdown showed marked overlap with the well-characterized DNA damage (SOS) regulon (Davis et al., 2002; Boshoff et al., 2003) induced by treatment with genotoxins such as the DNA crosslinking agent, mitomycin C (MMC, M\u00fcller et al., 2018; Figure 7E).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is based on Nanopore RNA-Seq data comparing MSMEG_3213 knockdown to mitomycin C treatment, with citations to prior work on the SOS regulon.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C20",
+    "claim": "REBASE lists MSMEG_3213 as a putative DNA methylase of a type II restriction-modification system.",
+    "claim_type": "EXPLICIT",
+    "source": "Following an extensive bioinformatic search, this conclusion gained further credence by the observation that REBASE (Roberts et al., 2015) lists MSMEG_3213 as putative DNA methylase of a type II R-M system, with MSMEG_3214 the associated restriction endonuclease (Figure 7F).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is based on bioinformatic analysis using the REBASE database.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C21",
+    "claim": "Dual silencing of MSMEG_3213 and MSMEG_3214 alleviated the lethal impact of MSMEG_3213 depletion.",
+    "claim_type": "EXPLICIT",
+    "source": "Knockdown of MSMEG_3214 alone produced no growth phenotype whereas dual silencing of MSMEG_3213 and MSMEG_3214 alleviated the lethal impact of MSMEG_3213 depletion (Figure 7G).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is based on experimental data from dual-targeting CRISPRi constructs.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C22",
+    "claim": "M. smegmatis possesses a full complement of genes for the biosynthesis of L-histidine.",
+    "claim_type": "EXPLICIT",
+    "source": "M. smegmatis possesses a full complement of genes for the biosynthesis of the essential amino acid, L-histidine (Figure 8A and B).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is stated as a known fact about M. smegmatis genetics.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C23",
+    "claim": "CRISPRi-mediated knockdown of histidine biosynthesis genes produced a filamentation phenotype that was tightly clustered in UMAP space.",
+    "claim_type": "EXPLICIT",
+    "source": "Surprisingly, CRISPRi-mediated knockdown of histidine biosynthesis genes produced a filamentation phenotype that was tightly clustered in UMAP space (Figure 8C) and, among all the amino acid knockdowns, appeared unique to histidine.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is based on morphological analysis and UMAP clustering of the histidine biosynthesis gene knockdowns.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C24",
+    "claim": "Histidine supplementation reversed the growth inhibitory phenotype for all his knockdowns except hisA and hisS.",
+    "claim_type": "EXPLICIT",
+    "source": "The reversal of the growth inhibitory phenotype verified all his knockdowns as histidine auxotrophs, with the notable exceptions of hisA and hisS.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is based on growth rescue experiments with histidine supplementation.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C25",
+    "claim": "Growth of the hisA CRISPRi mutant was rescued in medium supplemented with tryptophan.",
+    "claim_type": "EXPLICIT",
+    "source": "Previous reports indicate that hisA likely encodes a bifunctional HisA/TrpF enzyme (Due et al., 2011). Consistent with this annotation, growth of the hisA CRISPRi mutant was rescued in medium supplemented with tryptophan (Figure 8D).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is based on growth rescue experiments with tryptophan supplementation, consistent with prior literature on hisA function.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C26",
+    "claim": "Histidine supplementation reversed the filamentation phenotype for all his knockdowns other than hisS.",
+    "claim_type": "EXPLICIT",
+    "source": "Intriguingly, for all his knockdowns other than hisS (encoding the histidine tRNA synthetase), histidine supplementation reversed the filamentation phenotype (Figure 8E).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is based on morphological analysis of histidine-supplemented cultures.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C27",
+    "claim": "The filaments observed under histidine starvation display minimal branching, differing from those resulting from depletion of divisome components.",
+    "claim_type": "EXPLICIT",
+    "source": "Morphologically, the filaments observed under histidine starvation differ from those which result from depletion of components of the divisome: that is, the his mutants display minimal branching.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is based on morphological comparison of different filamentation phenotypes.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C28",
+    "claim": "Staining of peptidoglycan with NADA failed to resolve any clear septa in histidine biosynthesis mutants.",
+    "claim_type": "EXPLICIT",
+    "source": "Moreover, staining of peptidoglycan with the D-alanine analogue, NADA (Botella et al., 2017), failed to resolve any clear septa (Figure 8\u2014figure supplement 1).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is based on peptidoglycan staining experiments using NADA.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C29",
+    "claim": "The majority of genes implicated in mycolic acid synthesis clustered tightly together in 2-dimensional UMAP space.",
+    "claim_type": "EXPLICIT",
+    "source": "CRISPRi-mediated inhibition of the components of this pathway produced consistent changes in cellular morphology (Figure 9B and C), with the majority of genes implicated in mycolic acid synthesis clustering tightly together in 2-dimensional UMAP space (Figure 9B).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is based on UMAP analysis of morphological data for mycolic acid biosynthesis genes.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C30",
+    "claim": "Knockdown of components involved in early steps of mycolic acid synthesis produced similar results to inhibition of the final step involving MmpL3.",
+    "claim_type": "EXPLICIT",
+    "source": "It was also evident that knockdown of components involved in early steps produced similar results to inhibition of the final step, involving the flippase, MmpL3 (Xu et al., 2017; Su et al., 2019).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is based on morphological comparison of different steps in the mycolic acid biosynthesis pathway.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C31",
+    "claim": "Exposure to 1X MIC isoniazid triggered increases in cell width and morphological alterations closely similar to those produced by genetic silencing of inhA.",
+    "claim_type": "EXPLICIT",
+    "source": "Exposure to 1X minimum inhibitory concentration (MIC90) INH triggered increases in cell width and morphological alterations which were closely similar to those produced by genetic silencing of inhA (Figure 9C and D).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is based on morphological comparison between drug treatment and genetic knockdown.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C32",
+    "claim": "Cells exposed to bedaquiline at 2X and 4X MIC clustered tightly with components of the mycobacterial ATP synthase.",
+    "claim_type": "EXPLICIT",
+    "source": "For example, cells exposed to BDQ at 2X and 4X MIC clustered tightly with components of the mycobacterial ATP synthase and mapped to a region enriched for genes involved in energy metabolism (Figure 10A); the nearest neighbor for both 2X and 4X BDQ-treated cells was atpA (Figure 10B).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is based on UMAP analysis of morphological data from drug-treated cells compared to genetic knockdowns.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C33",
+    "claim": "Ethambutol-treated cells clustered tightly together, irrespective of applied concentration, and were positioned in lipid metabolism-enriched UMAP space.",
+    "claim_type": "EXPLICIT",
+    "source": "The cell-wall targeting compounds similarly produced closely correlating profiles: EMB-treated cells clustered tightly together, irrespective of applied concentration, and were positioned in lipid metabolism-enriched UMAP space.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is based on UMAP analysis of morphological data from ethambutol-treated cells.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C34",
+    "claim": "The nearest neighbor for ethambutol-treated cells at 2X and 4X MIC was pks16, a gene involved in mycolic acid synthesis.",
+    "claim_type": "EXPLICIT",
+    "source": "The nearest neighbor at 2X and 4X MIC was pks16, a gene involved in mycolic acid synthesis; moreover, consistent with inhibition of arabinogalactan synthesis, aftA, ubiA, dprE1, glfT2 were proximal to the EMB-exposed cells at all three applied drug concentrations.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is based on nearest neighbor analysis in UMAP space for drug-treated cells.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C35",
+    "claim": "Compounds targeting DNA replication generally produced filamentation and clustered accordingly.",
+    "claim_type": "EXPLICIT",
+    "source": "Compounds targeting DNA replication generally produced filamentation, and clustered accordingly.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is based on morphological analysis and UMAP clustering of cells treated with DNA replication inhibitors.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C36",
+    "claim": "Moxifloxacin-treated cells did not co-localize with gyrA and gyrB knockdowns in UMAP space and were instead associated with DNA metabolism.",
+    "claim_type": "EXPLICIT",
+    "source": "Notably, MOXI-treated cells did not co-localize with gyrA and gyrB knockdowns (the DNA-gyrase subunits, and targets of MOXI) in UMAP space and were instead associated with DNA metabolism, an observation common to all fluoroquinolones.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is based on UMAP analysis comparing drug-treated cells to genetic knockdowns.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C37",
+    "claim": "Novobiocin did not trigger filamentation and positioned closely with gyrA and gyrB genetic knockdowns.",
+    "claim_type": "EXPLICIT",
+    "source": "In contrast, novobiocin (NVB), a gyrase B inhibitor (Chatterji et al., 2001), did not trigger filamentation, instead positioning closely with gyrA and gyrB genetic knockdowns.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is based on morphological analysis and UMAP positioning of novobiocin-treated cells compared to genetic knockdowns.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C38",
+    "claim": "Compounds targeting peptidoglycan, including vancomycin and D-cycloserine, did not yield definitive profiles.",
+    "claim_type": "EXPLICIT",
+    "source": "In contrast, compounds targeting peptidoglycan, including vancomycin and D-cycloserine, did not yield definitive profiles (Figure 10\u2014figure supplements 1\u20133).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is based on morphological analysis of cells treated with peptidoglycan-targeting compounds.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C39",
+    "claim": "The lack of definitive profiles for peptidoglycan-targeting compounds was probably due to the induction of lysis.",
+    "claim_type": "EXPLICIT",
+    "source": "Manual inspection of the data indicated that this was probably due to the induction of lysis, highlighting a limitation inherent in applying a single, 18 hr endpoint for analysis of all drug treatments.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an interpretation based on manual inspection of the imaging data.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C40",
+    "claim": "Compounds targeting mycobacterial protein synthesis failed to produce responses analogous to their cognate gene knockdowns.",
+    "claim_type": "EXPLICIT",
+    "source": "It was noticeable, too, that compounds targeting mycobacterial protein synthesis \u2013 for example, linezolid (Leach et al., 2011), streptomycin or kanamycin (Riska et al., 2000) \u2013 similarly failed to produce responses analogous to their cognate gene knockdowns.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is based on morphological comparison between drug treatment and genetic knockdowns, with citations to prior work on drug mechanisms.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C41",
+    "claim": "CRISPRi produces polar effects on downstream genes in polycistronic operons.",
+    "claim_type": "EXPLICIT",
+    "source": "CRISPRi produces polar effects on downstream genes in polycistronic operons (Rock et al., 2017).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a known property of CRISPRi cited from Rock et al., 2017.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C42",
+    "claim": "Of the 294 targeted genes, 229 genes (~78%) were not located in identified operons.",
+    "claim_type": "EXPLICIT",
+    "source": "Of our targeted set of 294 genes, 229 genes (~78%) were not located in identified operons (Supplementary file 2).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is based on analysis of transcriptional landscape data from Martini et al., 2019.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C43",
+    "claim": "Of the 65 genes within operons, 20 possessed downstream transcriptional start sites which would be expected to abrogate polar effects.",
+    "claim_type": "EXPLICIT",
+    "source": "Of the remaining 65 genes within operons, 20 possessed downstream transcriptional start sites which would be expected to abrogate polar effects.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is based on analysis of transcriptional landscape data from Martini et al., 2019.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C44",
+    "claim": "The M. smegmatis ParB-mCherry reporter strain was chosen to enable visualization of the oriC proximate region of the chromosome.",
+    "claim_type": "EXPLICIT",
+    "source": "This strain was chosen as background to enable visualization of the oriC proximate region of the chromosome during imaging assays, thereby providing information about chromosome location dynamics and copy number as a function of essential gene knockdown.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated as the rationale for choosing this particular reporter strain.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C46",
+    "claim": "The mechanism underlying the filamentation response to histidine deficiency likely reflects translation defects resulting from uncharged tRNAs.",
+    "claim_type": "EXPLICIT",
+    "source": "The mechanism underlying the filamentation response to histidine deficiency remains unclear, but likely reflects translation defects resulting from uncharged tRNAs.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a speculative interpretation by the authors based on the observed phenotypes.",
+    "evidence_type": [
+      "SPECULATION",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C47",
+    "claim": "The fact that clustering was observed for mycolic acid synthesis genes despite their location throughout the chromosome appeared to eliminate polar effects as a potential confounder.",
+    "claim_type": "EXPLICIT",
+    "source": "Notably, the fact that clustering was observed despite the location of these genes throughout the chromosome appeared to eliminate polar effects as a potential confounder.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an inference based on the observation that genes scattered across the chromosome still cluster together morphologically.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C48",
+    "claim": "The role of mycobacterial DNA gyrase in the removal of torsional stress and the maintenance of template topology during RNA transcription is consistent with the dominant effect of gyrA and gyrB knockdown manifesting as more similar to RNA polymerase inhibition.",
+    "claim_type": "EXPLICIT",
+    "source": "While this separation in UMAP space might be deemed surprising, two factors are salient to the interpretation of this result: firstly, the role of mycobacterial DNA gyrase in the removal of torsional stress and the maintenance of template topology during RNA transcription (Ahmed et al., 2017) is consistent with the dominant effect of gyrA and gyrB knockdown manifesting as more similar to RNA polymerase inhibition (here, the close association with rpoB in the UMAP analysis is potentially telling)",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an interpretation based on known gyrase function cited from Ahmed et al., 2017 and the observed UMAP clustering.",
+    "evidence_type": [
+      "CITATION",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C49",
+    "claim": "The filamentation observed on fluoroquinolone exposure is SOS-dependent and involves the formation of lethal double-strand DNA breaks following drug-mediated trapping of the DNA-gyrase complex.",
+    "claim_type": "EXPLICIT",
+    "source": "and, secondly, the filamentation observed on fluoroquinolone exposure is SOS-dependent (Drlica et al., 2008) and involves the formation of lethal double-strand DNA breaks following drug-mediated trapping of the DNA-gyrase complex \u2013 an effect which ATc-induced CRISPRi knockdown does not produce.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated as a known mechanism of fluoroquinolone action, cited from Drlica et al., 2008.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C51",
+    "claim": "Hypomorphs provide a powerful means to identify hypersusceptibilities consequent on bacillary exposure to chemicals which inhibit the same cognate gene or pathway targeted by the knockdown system.",
+    "claim_type": "EXPLICIT",
+    "source": "In addressing this dilemma, it is important to remember that hypomorphs provide a powerful means to identify hypersusceptibilities consequent on bacillary exposure to chemicals which inhibit the same (cognate) gene or pathway targeted by the knockdown system (i.e. the genetic and antibiotic targets are identical)",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a general principle about hypomorph screens stated by the authors.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C52",
+    "claim": "Whole-cell morphotypes report on the physiological response to lethal stress induced by essential gene silencing.",
+    "claim_type": "EXPLICIT",
+    "source": "in contrast, whole-cell morphotypes report on the physiological response to (or manifestation of) lethal stress induced by essential gene silencing.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a conceptual distinction made by the authors about what morphotypes represent.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C53",
+    "claim": "A key element distinguishing antibiotic-mediated target inhibition from transcript depletion is time: antibiotic treatment inhibits active processes triggering intracellular catastrophe, whereas gene silencing is much more gradual.",
+    "claim_type": "EXPLICIT",
+    "source": "Importantly, a key element distinguishing antibiotic-mediated target inhibition or corruption from transcript depletion is time: antibiotic treatment inhibits (or corrupts) active processes, triggering intracellular catastrophe (in the case of MOXI treatment, an SOS response), whereas gene silencing is much more gradual, or ordered, avoiding the impact of instantaneous loss of function.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a conceptual explanation provided by the authors to explain differences between drug treatment and genetic knockdown.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C54",
+    "claim": "The decision to apply an 18 hr endpoint for all analyses might inadvertently have biased the 'strongest' phenotypes to genes involved in DNA replication, cell division, and cell-wall metabolism.",
+    "claim_type": "EXPLICIT",
+    "source": "Although motivated primarily by pragmatism, the decision to apply an 18 hr endpoint for all analyses might inadvertently have biased the 'strongest' phenotypes to genes involved in DNA replication, cell division, and cell-wall metabolism.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is acknowledged as a potential limitation by the authors.",
+    "evidence_type": [
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C55",
+    "claim": "Increasing drug concentration might be expected to have two principal effects: increasing the rate of cell death while retaining the primary MOA or increasing the likelihood of hitting secondary targets.",
+    "claim_type": "EXPLICIT",
+    "source": "Intuitively, increasing drug concentration might be expected to have two principal effects \u2013 increasing the rate of cell death while retaining the primary MOA (put simply, cells treated at 4X MIC will be further along the 'path to death' at 18 hr than those treated at 1X MIC) or increasing the likelihood of hitting secondary targets.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a speculative explanation provided by the authors for observed concentration-dependent effects.",
+    "evidence_type": [
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C56",
+    "claim": "Optimizing drug concentration and exposure time is critical in avoiding convergence on a common stress pathway that obscures the informative, drug-specific transcriptional signature.",
+    "claim_type": "EXPLICIT",
+    "source": "This issue has been noted previously in transcriptional profiling of the M. tuberculosis drug-exposure response (Boshoff et al., 2004) in which optimizing the drug concentration and exposure time were critical in avoiding convergence on a common stress pathway, obscuring the informative, drug-specific transcriptional signature.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated with a citation to Boshoff et al., 2004 regarding transcriptional profiling considerations.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C57",
+    "claim": "The propensity for the rate of gene-product depletion to impact qualitatively the terminal phenotype has been elegantly demonstrated in B. subtilis.",
+    "claim_type": "EXPLICIT",
+    "source": "Similarly, the propensity for the rate of gene-product depletion to impact qualitatively the terminal phenotype has been elegantly demonstrated in B. subtilis (Peters et al., 2016).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated with a citation to Peters et al., 2016 regarding phenotype dependence on depletion rate.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C58",
+    "claim": "Gene essentialities, metabolic vulnerabilities and drug susceptibilities can alter as a function of growth conditions.",
+    "claim_type": "EXPLICIT",
+    "source": "There is ample precedent in the literature indicating that gene essentialities, metabolic vulnerabilities and drug susceptibilities can alter as a function of growth conditions; therefore, the phenotypes presented here are necessarily condition-specific, and could benefit significantly from expanding these analyses to other, 'disease-relevant' culture systems.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated as a known principle in the field, acknowledged as a limitation of the current study.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C59",
+    "claim": "Morphological profiling appears to offer a rapid means of preliminary gene function assignment or compound MOA.",
+    "claim_type": "EXPLICIT",
+    "source": "Morphological profiling appears to offer a rapid means of preliminary gene function assignment or compound MOA; however, definitive validation is required \u2013 via further biochemical and/or functional analysis \u2013 to ratify the functional assignments predicted using this tool.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a conclusion drawn by the authors about the utility and limitations of the approach.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C60",
+    "claim": "All data from the screen are made available via an interactive database at https://timdewet.shinyapps.io/MorphotypicLanscape/.",
+    "claim_type": "EXPLICIT",
+    "source": "Consistent with our intention to generate a community-accessible resource, all data from the screen are made available via an interactive database (https://timdewet.shinyapps.io/MorphotypicLanscape/).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated as a resource provided by the authors.",
+    "evidence_type": [
+      "DATA"
+    ]
+  }
+]

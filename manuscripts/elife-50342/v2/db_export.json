@@ -1,0 +1,1515 @@
+{
+  "submission": {
+    "id": "b99d941f-f61f-4162-b737-6ce9cec3a35b",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T14:41:18.007230Z",
+    "updated_at": "2025-12-02T14:41:18.007230Z"
+  },
+  "content": [
+    {
+      "id": "e4c8e025-a6a8-45da-8a56-d99ec4d28577",
+      "submission_id": "b99d941f-f61f-4162-b737-6ce9cec3a35b",
+      "content_type": "manuscript",
+      "content_text": "# Receptor-based mechanism of relative sensing and cell memory in mammalian signaling networks\n\n## Authors\n\n- Eugenia Lyashenko<sup>1</sup> ([ORCID: 0000-0002-6538-9462](https://orcid.org/0000-0002-6538-9462))\n- Mario Niepel<sup>2</sup> ([ORCID: 0000-0003-1415-6295](https://orcid.org/0000-0003-1415-6295))\n- Purushottam D Dixit<sup>1</sup> ([ORCID: 0000-0003-3282-0866](https://orcid.org/0000-0003-3282-0866))\n- Sang Kyun Lim<sup>2</sup>\n- Peter K Sorger<sup>1</sup> ([ORCID: 0000-0002-3364-1838](https://orcid.org/0000-0002-3364-1838))\n- Dennis Vitkup<sup>1</sup> ([ORCID: 0000-0003-4259-8162](https://orcid.org/0000-0003-4259-8162)) \u2020\n\n### Affiliations\n\n1. Department of Systems Biology Columbia University New York United States\n2. HMS LINCS Center Laboratory of Systems Pharmacology, Department of Systems Biology Harvard Medical School Boston United States\n3. Department of Physics University of Florida Gainesville United States\n4. Center for Computational Biology and Bioinformatics Columbia University New York United States\n5. Department of Biomedical Informatics Columbia University New York United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nDetecting relative rather than absolute changes in extracellular signals enables cells to make decisions in constantly fluctuating environments. It is currently not well understood how mammalian signaling networks store the memories of past stimuli and subsequently use them to compute relative signals, that is perform fold change detection. Using the growth factor-activated PI3K-Akt signaling pathway, we develop here computational and analytical models, and experimentally validate a novel non-transcriptional mechanism of relative sensing in mammalian cells. This mechanism relies on a new form of cellular memory, where cells effectively encode past stimulation levels in the abundance of cognate receptors on the cell surface. The surface receptor abundance is regulated by background signal-dependent receptor endocytosis and down-regulation. We show the robustness and specificity of relative sensing for two physiologically important ligands, epidermal growth factor (EGF) and hepatocyte growth factor (HGF), and across wide ranges of background stimuli. Our results suggest that similar mechanisms of cell memory and fold change detection may be important in diverse signaling cascades and multiple biological contexts.\n\n## Introduction\n\nIn biological systems, concentrations of extracellular signaling molecules, such as hormones and growth factors, often vary by\u00a0orders of magnitude. Therefore, the ability to sense relative rather than absolute signals, that\u00a0is detect fold changes in extracellular cues, is critical for making accurate decisions in different biological contexts (Alon, 2019). Relative sensing requires both the ability to store memories of past environmental stimuli and the capacity to quickly and efficiently compute relative signals (Adler and Alon, 2018).\n\nRelative sensing of environmental inputs has been previosuly\u00a0investigated in bacteria, with the E. coli chemotaxis being a classic example (Mesibov et al., 1973; Barkai and Leibler, 1997; Alon et al., 1999; Shoval et al., 2010).\u00a0Studies have also explored relative sensing in a variety of eukaryotic systems. When responding to constant stimuli, experiments with the signaling proteins\u00a0ERK (Cohen-Saidon et al., 2009) and \u03b2-catenin (Goentoro and Kirschner, 2009) showed that fold changes in their nuclear activity were robust to cell-to-cell variability (Cohen-Saidon et al., 2009) and variability in signaling network parameters (Goentoro and Kirschner, 2009). These observations suggested that gene expression of target genes may respond, at the single cell level, to fold changes rather than absolute activities of\u00a0these\u00a0proteins. Later studies of the NF-\u03baB (Lee et al., 2014) and TGF-\u03b2/SMAD pathways (Frick et al., 2017) also\u00a0showed that genes directly controlled by these\u00a0proteins often\u00a0respond to their fold changes at the single cell level. Recent work has explored relative sensing at the organism level in plants, where the chlorophyll activity was found to be proportional to the fold change in external light intensity (Tendler et al., 2018).\n\nDespite the insights gained in the aforementioned studies, the molecular mechanisms allowing cells to detect fold changes in extracellular stimuli are not well understood. The key unresolved questions are: (1) where and how the memories of background extracellular stimuli are stored within the cell, (2) what makes these memories specific to particular stimuli, and (3) how the cells subsequently use the stored memories to\u00a0compute fold changes.\n\nIn this work, using the growth factor-activated PI3K/Akt signaling pathway, we describe a novel non-transcriptional\u00a0mechanism of relative sensing in mammalian cells. The mechanism operates on fast timescales of dozens minutes to hours, and across more than an order of magnitude of extracellular background stimuli. We derive key aggregate parameters of the signaling cascade that determine the accuracy and the background range of relative sensing. We also experimentally validate the accuracy of relative sensing by stimulating cells with multiple fold changes of two physiologically important ligands, EGF and HGF. Furthermore, we demonstrate that ligand relative sensing is reliably propagated to an important downstream target of the PI3K/Akt pathway.\n\n## Results\n\nStimulation of mammalian cells with growth factors elicits a variety of context-dependent, phenotypic responses, including cell migration, proliferation, and cell survival (Cantley et al., 2014). Akt serves as a central hub of multiple growth factor-activated signaling cascades (Hemmings and Restuccia, 2012). Naturally, Akt phosphorylation-dependent (pAkt) pathways are implicated in multiple human diseases, such as many types of cancers (Engelman, 2009; Hemmings and Restuccia, 2012), diabetes (Whiteman et al., 2002), and psychiatric disorders (Gilman et al., 2012; McGuire et al., 2014).\n\nTo understand how the immediate-early dynamics of the Akt pathway depend on the background level of growth factors, we used immunofluorescence to quantify the levels of pAkt in epidermal growth factor\u00a0(EGF)- stimulated human non-transformed mammary epithelial MCF10A cells (Materials and methods, Figure 1\u2014figure supplement 1). Within minutes of continuous stimulation with EGF pAkt reached maximum response,\u00a0and then decayed to low steady state levels within hours (Figure 1a). The resulting\u00a0steady state pAkt levels were approximately independent of the EGF stimulus, indicating an approximately adaptive response (Friedlander and Brenner, 2009; Shoval et al., 2010;\u00a0Figure 1\u2014figure supplement 2). In the sensitive range of EGF concentrations, maximal pAkt response was approximately proportional to the logarithm of the EGF stimulus (Figure 1b). Quantitative western blot experiments demonstrated that in this logarithmic regime, pAkt levels were approximately linearly proportional to the\u00a0phosphorylation level of EGF receptors (EGFRs) (Figure 1\u2014figure supplement 3). The logarithmic dependence of EGFR phosphorylation levels on EGF stimulation has been previously\u00a0attributed to a mixture of receptor species with varying affinities to the ligand, negative cooperativity of ligand binding to receptor dimers, and oligomeric aggregation of receptors (Kawamoto et al., 1983; Chatelier et al., 1986; Wofsy et al., 1992; Macdonald and Pike, 2008; Huang et al., 2016).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/50342/elife-50342-fig1-v2.jpg)\n\n**Figure 1.:** (a) Temporal profiles of phosphorylated Akt (pAkt) in cells exposed to increasing stimulation with extracellular EGF (see inset). (b) Maximal pAkt response as a function of EGF stimulation. (c) Steady state levels of surface EGFR (sEGFR) after 150 and 180 min of stimulation with a constant level of EGF. (d) Desensitization of the maximal pAkt response to an abrupt EGF\u00a0stimulation. MCF10A cells were pre-treated with increasing background doses of EGF (x-axis) for three hours, followed by a second abrupt stimulation with the same concentration of EGF (2 ng/ml); the inset shows a schematic illustration of the experimental protocol. In all subpanels, error bars represent the standard deviation of n\u00a0=\u00a03 technical replicates. Source data: pakt_timecourses_first_step.mat and segfr_150_180mins.doseresponse.mat\u00a0(available\u00a0in\u00a0Source code 1).\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/50342/elife-50342-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Representative immunofluorescence images of MCF10A cells used for the generation of quantitative data on Akt phosphorylation (pAkt) and cell surface EGFR (sEGFR). (left) MCF10A cells 5 min after control treatment (a), or treatment with 1 ng/ml (b) or 100 ng/ml of EGF stained for pAKT. (right) MCF 10A cells 180 min after control treatment (a), or treatment with 1 ng/ml (b) or 100 ng/ml of EGF stained for sEGFR. Pseudocolors: blue: nuclei; green: cytoplasm; red: pAKT (left panels) or sEGFR (right panels).\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/50342/elife-50342-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** The maximal (red) and the steady state (black, 180 mins) pAkt response (y-axis) following a constant EGF stimulation (x-axis). The maximal and steady state responses were obtained from experimentally measured pAkt levels in MCF10A cells exposed to a constant EGF stimulation for 5, 10, 15, 30, 45, 90, and 180 min. Error bars represent the standard deviation of n\u00a0=\u00a03 technical replicates.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/50342/elife-50342-fig1-figsupp3-v2.jpg)\n\n**Figure 1\u2014figure supplement 3.:** Cells were treated with different doses of EGF for 5 min (0.1, 0.18, 0.32, 0.56, and 1 ng/ml) and phosphorylation levels of Akt and EGFR were then\u00a0measured using quantiative Western blots (Pearson\u2019s correlation coefficient is r2\u00a0=\u00a00.95, regression p=0.004). Error bars on both axes represent the standard deviation of n\u00a0=\u00a03 technical replicates.\n\n![Figure 1\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/50342/elife-50342-fig1-figsupp4-v2.jpg)\n\n**Figure 1\u2014figure supplement 4.:** pAkt levels after 180 min of exposure to different background EGF levels (x-axis) followed by stimulation with 2.5 ng/ml EGF for 5 min (blue) or with 20 \u03bcm SC79 for 30 min (green).\u00a0The black bars represent pAkt levels after 180 min of stimulation with background EGF. Error bars represent the standard deviation of n\u00a0=\u00a03 technical replicates.\n\nContinuous stimulation with EGF resulted in the abundance of cell-surface EGF receptors (sEGFR) also decreasing proportionally to the logarithm of the background EGF level, and reaching a new steady state within hours (Figure 1c). Notably, prior exposure with EGF desensitized cells to subsequent EGF stimulations in a quantitative manner. When we first\u00a0pre-exposed cells to different levels of EGF for 3 hr and then stimulated them with the same final EGF concentration (2 ng/ml)), the maximal pAkt response decreased monotonically with increasing pre-exposure EGF levels (Figure 1d). These experiments demonstrate that the pAkt response to an abrupt\u00a0EGF stimulation is strongly affected by background EGF levels, and that this effect is likely mediated by the endocytosis-based\u00a0removal of activated EGFRs from the cell surface (Wiley et al., 1991).\n\nUsing pharmacological perturbations of the EGFR/Akt pathway, we confirmed that the desensitization of the phosphorylation response (Figure 1d) was likely due to receptor-based mechanisms upstream of Akt activation, and did not depend on its downregulation, for example, through phosphorylation-dependent Akt degradation (Wu et al., 2011). Specifically, we used SC79, a small molecule which promotes Akt phosphorylation even in the absence of extracellular ligands (Jo et al., 2012). Unlike the desensitization observed in the growth factor-induced pAkt response (Figure 1d), the pAkt response following stimulation with SC79 did not depend on the background EGF pre-exposure (Figure 1\u2014figure supplement 4). This result supports the conclusion that the EGF\u00a0desensitization mechanism was upstream of Akt.\n\nTo understand how background EGF levels affect the pAkt response to subsequent EGF stimulation we next\u00a0constructed an ordinary differential equation (ODE) model of EGF-dependent Akt phosphorylation. The model included several well-established features of the EGFR signaling cascade\u00a0(Chen et al., 2009), such as endocytosis and degradation of activated receptors (Materials and methods) (Figure 2a). We constrained the ranges of model parameters based on literature-derived estimates (Supplementary file 1a), and fitted the model using experimental\u00a0data on pAkt time courses (Figure 1a) and steady state sEGFR levels (Figure 1c) at different doses of EGF stimulations. We then\u00a0used simulated annealing to optimize model parameters (Materials and methods, Figure 2\u2014figure supplement 1), and considered multiple distinct parameter sets from the optimization runs for further computational analysis.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/50342/elife-50342-fig2-v2.jpg)\n\n**Figure 2.:** (a) Schematic of the computational model of the\u00a0EGFR signaling cascade\u00a0leading to phosphorylation of Akt. Rate constants marked\u00a0with asterisks correspond\u00a0to reactions associated with activated (phosphorylated) receptors. Only a subset of reactions in the network are shown for brevity. (b) In\u00a0silico\u00a0protocol used to explore relative sensing, showing\u00a0the temporal profiles of\u00a0EGF stimulation (top) and the corresponding profiles pAkt response (bottom). Cells were first exposed to various background EGF stimulations (blue and red) and were next subjected to the same abrupt\u00a0fold change in EGF at time t0. The resulting maximal pAkt responses were similar for the same EGF fold change independent of background EGF stimulation, indicating relative sensing. (c) The maximal pAkt response observed after exposing the ODE model in silico to different background EGF levels (x axis), followed by a 2-, 3-, 4-, or 6- fold increase (different colors) in EGF; inset shows pAkt response over a wider range of background EGF levels. (d) Maximal pAkt responses (y axis) induced by\u00a0stimulation with different EGF background levels (data points with the same shape and color) were combined and plotted as a function of the EGF\u00a0fold change (x axis). Dashed line represents log-linear fit to data (Pearson\u2019s r2\u00a0=\u00a00.96, regression p value\u00a0<\u00a010\u221215). In all subpanels, error bars represent the standard deviation of n\u00a0=\u00a010 model fits. Source code: https://github.com/dixitpd/FoldChange/.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/50342/elife-50342-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (a) Average fits of dynamical model to the pAkt\u00a0experimental data. (b) Average fits of dynamical model to the experimental\u00a0surface EGFR dose response experimental data. In both panel a) and b), solid lines represent experimental data and the dashed lines represent the\u00a0corresponding model fits. Error bars in data represent standard deviation between technical replicates. Error bars in model fits represent the\u00a0standard deviation across the top 10 model fits.\n\nUsing the fitted dynamical model (Figure 2\u2014figure supplement 1), we explored the ability of the Akt pathway to respond to relative, rather than absolute, changes in EGF levels. To that end, we simulated the pAkt response by exposing the model in silico to a range of background EGF levels followed by different abrupt\u00a0fold change increases in EGF concentration (Figure 2b). The model predicted that the maximal pAkt response indeed depends primarily on the EGF fold change relative to the background stimulation levels (Figure 2c). This relative sensing of EGF stimuli\u00a0occurred over an order of magnitude of background EGF concentrations, and the resulting pAkt response was approximately proportional to the logarithm of the EGF fold change (Figure 2d). Notably, the model predicted relative sensing exactly\u00a0in the range of EGF background concentrations where sEGFR\u00a0endocytosis was sensitive to background ligand stimulation. At low EGF background concentrations (<0.01 ng/ml), no substantial sEGFR removal was predicted at the\u00a0steady state (Figure 2\u2014figure supplement 1), and consequently there was no significant desensitization of the pAkt response. In that regime, the pAkt response to an abrupt fold change depended primarily on the absolute EGF level. In contrast, at high background EGF concentrations (>1 ng/ml), a large fraction of sEGFR was already\u00a0removed from cell surface and consequently the network responded only weakly to further EGF stimulation.\n\nNext, we experimentally tested the model-predicted relative sensing in MCF10A cells. Cells were first treated with various background EGF concentrations for three hours to ensure that sEGFR reached steady state levels (Figure 1c), and that pAkt had decayed after a transient increase (Figure 1a). As in the computational analysis (Figure 2b), cells were then exposed to different fold changes in EGF levels;\u00a0pAkt levels were measured at 2.5, 5, 10, 15, 30 and 45 min after the step increase in EGF stimulation (Figure 3\u2014figure supplement 1). Similar results were observed in two independent biological replicates (Figure 3\u2014figure supplements 1, 2 and 3), and the experiments confirmed the predictions of the computational model that maximal pAkt response depends primarily on the fold change of EGF and not its absolute concentration (Figure 3a, Figure 3\u2014figure supplement 4). Specifically, across more than an order of magnitude of EGF background concentrations (0.03\u20130.5 ng/ml) the same EGF fold change (lines with the same colors in Figure 3a) elicited similar pAkt responses. The concentration range in which we obsered\u00a0relative sensing was consistent with recent estimations of in vivo EGF levels (Pinilla-Macua et al., 2017). In close agreement with the\u00a0computational\u00a0model predictions, the maximal pAkt response was approximately proportional to the logarithm of EGF fold change (Figure 3b). Interestingly, in addition to the maximal pAkt response, approximate relative sensing was also observed for the time integral of pAkt levels (Figure 3\u2014figure supplement 5), and for the entire time course of pAkt dynamics (Figure 3\u2014figure supplement 6).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/50342/elife-50342-fig3-v2.jpg)\n\n**Figure 3.:** (a) The maximal pAkt responses after exposing cells to different background EGF levels (x axis) for 3 hr, followed by 2-, 3-, 4-, and 6-fold increases (different colors) in EGF. Inset shows experimental pAkt response over a wider range of background EGF levels. (b) Maximal pAkt responses (y axis) to fold changes in EGF depended approximately logarithmically on the fold change. Maximal pAkt responses induced by stimulation with various EGF background levels (data points with the same shape and color) were combined and plotted as a function of the EGF\u00a0fold change (x axis). Dashed line represents log-linear fit to the data (Pearson\u2019s r2\u00a0=\u00a00.93, regression p value\u00a0<\u00a010\u221211). In all subpanels, error bars represent the standard deviation of n\u00a0=\u00a03 technical replicates. Source data: expt_data.mat\u00a0(available in Source code 1).\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/50342/elife-50342-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (a) MCF10A cells pretreated with a certain level\u00a0of background EGF (shown in the top right corner of each figure) for three hours were then\u00a0subjected to an abrupt\u00a0step increases in EGF. (b) Biological replicate of panel a). Different colors represent different EGF\u00a0folds changes. In both panels, individual data points represent averages from n\u00a0=\u00a03 technical replicates and error bars represent the corresponding standard deviation.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/50342/elife-50342-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** Observed\u00a0pAkt levels induced by EGF fold\u00a0changes were highly reproducible between two biological replicates (Pearson\u2019s correlation coefficient is r2\u00a0=\u00a00.94, regression p<10\u22125). Error bars represent the standard deviation of n\u00a0=\u00a03 technical replicates.\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/50342/elife-50342-fig3-figsupp3-v2.jpg)\n\n**Figure 3\u2014figure supplement 3.:** (a) The maximum of the measured pAkt response after exposing MCF10A cells to different background doses of EGF for 180 min followed by x2, x3, x4, or x6 fold change in background EGF exposure (shown on the logarithmic x-axis). Inset shows pAkt response over a wider range of background EGF exposures. (b) Maximum pAkt responses to fold changes in EGF depend log linearly on the fold change in EGF doses. Individual data series represent the same initial EGF concentration as shown in the legend. Dashed line represents log-linear fit to data (Pearson\u2019s correlation coefficient is r2\u00a0=\u00a00.95, regression p<10\u221212). Error bars represent the standard deviation of n\u00a0=\u00a03 technical replicates.\n\n![Figure 3\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/50342/elife-50342-fig3-figsupp4-v2.jpg)\n\n**Figure 3\u2014figure supplement 4.:** Maximal Akt phosphorylation response plotted as a function of absolute level of EGF abrupt\u00a0signal across different levels of background EGF stimulation. Different colors indicate different\u00a0background EGF levels. Error bars represent the standard deviation of n\u00a0=\u00a03 technical replicates.\n\n![Figure 3\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/50342/elife-50342-fig3-figsupp5-v2.jpg)\n\n**Figure 3\u2014figure supplement 5.:** (a) The time-integral of the measured pAkt response between 2.5 and 30 min after exposing MCF10A cells to different background doses of EGF for 180 min followed by x2, x3, x4, or x6 fold change in background EGF exposure (shown on the logarithmic x-axis). Inset shows pAkt response over a wider range of background EGF exposures. (b) Time-averaged pAkt response (between 2.5 to 30 min after a fold change in EGF) depends log linearly on the fold change. Individual data series represent the same initial EGF concentration as shown in the legend. Dashed line represents log-linear fit to data (Pearson\u2019s correlation coefficient is r2\u00a0=\u00a00.94, regression p<10\u221212). (c and d) are biological repeats of a) and b) (Pearson\u2019s correlation coefficient is r2\u00a0=\u00a00.94, regression p<10\u221212). (e and f) show similar plots for integrals computed on pAkt responses simulated in silico from top 10 best fit models (Pearson\u2019s correlation coefficient is r2\u00a0=\u00a00.92, regression p<10\u221210). Error bars represent the standard deviation of n\u00a0=\u00a03 technical replicates in subpanels a to d.\n\n![Figure 3\u2014figure supplement 6.](https://cdn.elifesciences.org/articles/50342/elife-50342-fig3-figsupp6-v2.jpg)\n\n**Figure 3\u2014figure supplement 6.:** (a) The dynamic pAkt response (bold lines) averaged over multiple background EGF levels corresponding to stimulation with\u00a0the same EGF\u00a0fold change. The faint time courses of the same color represent individual pAkt responses to\u00a0the same EGF\u00a0fold change at different background stimulation\u00a0levels. Error bars represent the standard deviation across n\u00a0=\u00a05 background EGF doses for the same fold. (b) The averaged squared difference of\u00a0pAkt response timecourses calculated between multiple background stimulation levels for the same EGF\u00a0fold changes\u00a0(diagonal), and for different EGF\u00a0fold changes (off-diagonal).\n\nTo better understand the mechanism responsible for the observed relative sensing of extracellular EGF concentration, we next\u00a0constructed a simplified analytical model of the signaling network (see\u00a0Appendix). This model revealed that, across a broad range of background concentrations, the steady-state abundance of cell surface receptors $R_{T}$ decreases approximately log-linearly as a function of the background ligand (EGF) concentration $L_{0}$ (Equation 1 and Figure 4a):\n\n$$\nR_{T}~constant-a*log\u2061L_{0}\n$$\n\nand that the maximal receptor phosphorylation response $LR_{2}^{*}_{max}$ depends approximately log-linearly on the level of the subsequent stimulation $L_{1}$ and linearly on the steady-state receptor abundance $R_{T}$ (Equation 2, Figure 4b):\n\n$$\nLR_{2}^{*}_{max}~b*log\u2061L_{1}+\\frac{R_{T}}{a}+constant\n$$\n\nwhere a and b are numerical constants (Appendix). As a result of these relationships, the phosphorylation response $LR_{2}^{*}_{max}$ after an increase of ligand concentration from $L_{0}$\u00a0to $L_{1}$ depends, in agreement with computational and experimental analyses, approximately on the logarithm of the stimulation fold change $\\frac{L_{1}}{L_{0}}$:\n\n$$\n[LR_{2}^{\u2217}]_{max}\u223cb\\times(log\u2061[L]_{1}+\\frac{[R]_{T}}{a})\u223cb\\times(log\u2061[L]_{1}\u2212log\u2061[L]_{0})\u223cblog\u2061\\frac{[L]_{1}}{[L]_{0}}\n$$\n\n![Figure 4.](https://cdn.elifesciences.org/articles/50342/elife-50342-fig4-v2.jpg)\n\n**Figure 4.:** (a) Approximate log-linear dependence of the scaled steady-state surface\u00a0receptor abundance $[R]_{T}$ on the normalized background ligand concentration $u_{0}=[L]_{0}/K_{d1}$, where $K_{d1}$ is the equilibrium dissociation constant of EGF binding to EGFR. (b) Approximate log-linear dependence of the maximal phosphorylation response on the normalized ligand stimulus $u_{1}=[L]_{1}/K_{d1}$. Dashed red lines represent the exact\u00a0log-linear approximation.\n\nThe analytical model (Appendix) also revealed that the range of the background ligand concentrations where relative sensing is observed is primarily determined by two aggregate systems\u00a0parameters, which we denote $\\alpha$ and $\\beta$\u00a0(Equations 4 and 5). The parameter $\\alpha$ quantifies the ability of the signaling network to capture the input signal (EGF) and elicit a downstream phosphorylation response. The parameter $\\beta$ quantifies the ability of the network to preferentially internalize and degrade active (phosphorylated) receptors relative to inactive (non-phosphorylated) receptors. The two aggregate parameters are expressed as follows:\n\n$$\n\\alpha=\\frac{k_{p}+k_{dp}}{k_{dp}}\\times\\frac{k_{2}}{k_{-2}}\\timesR_{0}\n$$\n\nwhere $k_{p}$ is the rate of receptor phosphorylation and $k_{dp}$\u00a0is the rate of receptor de-phosphorylation, $k_{2}$ is the rate of receptor dimerization, $k_{-2}$ is the dissociation rate of receptor dimers, and $R_{0}$ is the total number of cell-surface receptors at the\u00a0steady state in the absence of extracellular stimuli\u00a0and\n\n$$\n\\beta=\\frac{k_{p}}{k_{dp}+k_{p}}\\times\\frac{k_{i}^{*}}{k_{i}}\\times\\frac{\\frac{k_{deg}^{*}}{k_{deg}^{*}+k_{rec}^{*}}}{\\frac{k_{deg}}{k_{deg+k_{rec}}}}\n$$\n\nwhere $k_{i}^{*},k_{rec}^{*},k_{deg}^{*}$ and $k_{i},k_{rec},k_{deg}$\u00a0are correspondingly the rates of internalization, recycling, and degradation of the active (phosphorylated) and non-active receptors. Notably, an increase in the value of \u03b1 increases\u00a0signal sensitivity and receptor dimerization and phosphorylation. This shifts the relative sensing range to lower ligand concentrations (Figure 5a). In turn, an increase in the value of \u03b2 increases the fraction of active receptors being internalized and degraded. This increases the range of background ligand concentrations where the relative sensing is observed (Figure 5b). Based on the best-fit ODE model parameter sets, we estimate \u03b1 ~ 15 and \u03b2 ~ 40 (Appendix). As an example, in Figure 5 we show the scaled phosphorylation response to a six-fold change in EGF concentration as a function of the scaled\u00a0background ligand\u00a0concentration u0 for different values of \u03b1 (Figure 5a) and \u03b2 (Figure 5b); the green arrows in the figure represent the predicted range of fold change detection. The model analysis showed that the relative sensing occurs across over an order of magnitude of background ligand concentrations (Appendix). Furthermore, the analytical model revealed that relative sensing does not require receptor dimerization, and similar sensing mechanisms can operate in pathways where signaling is initiated by monomeric receptors (Appendix).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/50342/elife-50342-fig5-v2.jpg)\n\n**Figure 5.:** Scaled phosphorylation response to a six-fold change in extracellular EGF concentration as a function of the scaled background ligand concentration ($u_{0}=[L]_{0}/K_{d1}$ ). (a) The phosphorylation response as a function of background ligand concentration (x-axis) is shown for different values of the parameter \u03b1 (y-axis), when the parameter \u03b2 is fixed at \u03b2=40. (b) The phosphorylation response as a function of background ligand concentration (x-axis) is shown for different values of \u03b2 (y-axis), when \u03b1 is fixed at \u03b1=15. The colors represent the scaled phosphorylation response. The green dashed lines delineate the parameter\u00a0ranges where the fold change detection is >90% accurate. The horizontal black lines correspond to\u00a0the parameter\u00a0values \u03b1=15 and \u03b2=40,\u00a0which were estimated from experimental data fits; the horizontal green double arrows represent the predicted range of relative sensing for the investigated PI3K-Akt cascade.\n\nIn addition to EGF, Akt phosphorylation can be induced by multiple other ligands, including hepatocyte growth factor (HGF) (Stuart et al., 2000) which binds to its cognate receptor cMet (Viticchi\u00e8 and Muller, 2015). Similar to EGFRs, upon ligand binding, cMet receptors dimerize (Kong-Beltran et al., 2004) and cross-phosphorylate each other; this leads\u00a0to phosphorylation of multiple\u00a0downstream targets, including Akt. To investigate the specificity of the receptor-based cell memory to past ligand exposures, we used the two ligands, EGF and HGF, which share many\u00a0signaling components downstream of their cognate receptors (Xu and Huang, 2010). We exposed\u00a0cells to background doses of either HGF or EGF for three hours, and then stimulated\u00a0cells using either the same or the other growth factor to elicit pAkt response (Figure 6a,b). Pre-exposure with HGF did not substantially downregulate EGF-induced pAkt responses, but substantially decreased HGF-induced responses (Figure 6a). Similarly, we observed a relatively small desensitization of HGF-induced responses due to pre-exposure with EGF, while there was\u00a0a significant desensitization of EGF-induced pAkt responses (Figure 6b). We further confirmed that exposure of MCF10A cells to various concentrations of HGF leads to pronounced HGF-dependent removal of cMet from the cell surface, without significant removal of sEGFR (Figure 6\u2014figure supplement 1). Similarly, the pre-exposure of cells to EGF leads to EGF-dependent removal of sEGFR without a significant change in surface cMet abundance (Figure 6\u2014figure supplement 1). These observations support the mechanism in which the relative sensing of extracellular ligands relies on the memory of their past exposures effectively\u00a0encoded in the abundances of their cognate cell-surface receptors.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/50342/elife-50342-fig6-v2.jpg)\n\n**Figure 6.:** MCF10A cells were first\u00a0exposed to various background concentrations of either HGF or EGF for three hours, and then abruptly\u00a0stimulated using either the same or the other growth factor. pAkt levels were then measured 10 min after the addition of the second stimulus. (a) EGF- (blue, 2.5 ng/ml) or HGF- (red, 4 ng/ml) induced pAkt response in cells pre-exposed with various background concentrations of HGF (x axis). (b) EGF- (blue, 2.5 ng/ml) or HGF- (red, 4 ng/ml) induced pAkt response in cells pre-exposed with various background concentrations of EGF (x axis). (c) The maximal pAkt response in MCF10A cells exposed to different background doses of HGF (x axis) for 3 hr, followed by 2-, 4-, and 8-fold increase (different colors) of HGF. Inset shows experimental pAkt response over a wider range of background HGF levels. (d) The maximal pAkt responses (y axis) to HGF fold changes depended approximately logarithmically on the fold change (x axis). Maximal pAkt responses induced\u00a0by stimulation\u00a0with various HGF background levels (data points with the same shape and color) were combined and plotted as a function of the HGF\u00a0fold change (x axis). Dashed line represents log-linear fit to data (Pearson\u2019s r2\u00a0=\u00a00.88, regression p value\u00a0<\u00a010\u22126). In all subpanels, error bars represent the standard deviation of n\u00a0=\u00a03 technical replicates. Source data: expt_data.mat\u00a0(available\u00a0in\u00a0Source code 1).\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/50342/elife-50342-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (a) Experimentally measured surface EGFR and surface cMET dose responses in MCF10A cells treated with HGF for 3 hr. (b) Experimentally measured surface EGFR and surface cMET dose responses in MCF10A cells treated with EGF for 3 hr. Error bars represent the standard deviation of n\u00a0=\u00a03 technical replicates.\n\n![Figure 6\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/50342/elife-50342-fig6-figsupp2-v2.jpg)\n\n**Figure 6\u2014figure supplement 2.:** (a) The maximal pAkt response (y-axis)\u00a0after exposing MCF10A cells to different background doses of HGF (x-axis)\u00a0for 3 hr followed by x2, x4, or x8 abrupt\u00a0fold change in HGF stimulation. Inset shows pAkt response over a wider range of background HGF exposures. (b) Maximal pAkt response to fold changes in HGF depended approximately logarithmically\u00a0on the HGF fold change. Individual data series corresponding to\u00a0the same background HGF concentration are\u00a0shown with the same color. Dashed line represents log-linear fit to data (Pearson\u2019s correlation coefficient is r2\u00a0=\u00a00.88, regression p<10\u22126). Error bars represent the standard deviation of n\u00a0=\u00a03 technical replicates.\n\nGiven the observed HGF-dependent removal of cell surface cMet receptors and the\u00a0resulting pAkt desensitization, we investigated next\u00a0whether the maximal pAkt response depends, similarly to EGF, on the relative fold changes in the level of extracellular HGF. To that end, we exposed cells to a range of different background levels of HGF, and then stimulated cells with different fold changes in HGF concentrations (Figure 6c,d and Figure 6\u2014figure supplement 2). These experiments demonstrated that HGF-induced phosphorylation of Akt also depends primarily on the fold change in extracellular HGF concentration across almost an order of magnitude of background HGF exposures (between 0.1 and 1 ng/ml HGF) (Figure 6c). Moreover, like EGF, the maximum pAkt levels depended approximately log-linearly on the HGF\u00a0fold change (Figure 6d).\n\nRelative sensing of extracellular ligands should affect important downstream biological targets of the PI3K-Akt pathway. The FoxO3 transcription factor is a key effector of the pathway, and it\u00a0is involved in diverse cellular processes including apoptosis, proliferation, and metabolism (Webb and Brunet, 2014). Akt phosphorylation of FoxO3 leads to its translocation from the nucleus to cytoplasm and subsequent transcriptional deactivation (Webb and Brunet, 2014). Notably, following Akt activation, the typical nuclear translocation timescale for FoxO family proteins is short (less than 5 min) (Gross and Rotwein, 2017). To investigate FoxO3 activation induced by EGF stimulation, we used quantitative immunofluorescence to measure its nuclear-to-cytoplasm ratio (Worster et al., 2012). We exposed cells to two different background EGF levels for three hours, and then treated them with two different abrupt\u00a0fold changes in EGF concentrations. Consistent with relative sensing by pAkt, the nuclear-to-cytoplasmic ratio of FoxO3 also\u00a0reflected the relative, rather than\u00a0the absolute changes in EGF stimulation (Figure 7 and Figure 7\u2014figure supplement 1). Thus, relative sensing of the growth factor\u00a0signal is faithfully transmitted in MCF10A cells\u00a0to at least some of the physiologically important effectors of the PI3K-Akt pathway.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/50342/elife-50342-fig7-v2.jpg)\n\n**Figure 7.:** MCF10A cells were first\u00a0exposed to two background concentrations of EGF for three hours, and then were\u00a0stimulated with 3- and 6- fold increase in EGF concentrations. The ratio of nuclear-to-cytoplasmic FoxO3 levels (y-axis) was measured using quantitative immunofluorescence (Materials\u00a0and\u00a0methods) after 15 min of the EGF fold changes.\u00a0Statistical significance was calculated using the Wilcoxon rank sum test (n\u00a0=\u00a05); * corresponds to p<0.01, and n. s. corresponds to p>0.1. Error bars represent the standard deviation of n\u00a0=\u00a05 technical replicates. Source data: expt_data.mat\u00a0(available\u00a0in Source code 1).\n\n![Figure 7\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/50342/elife-50342-fig7-figsupp1-v2.jpg)\n\n**Figure 7\u2014figure supplement 1.:** MCF10A cells were first\u00a0exposed to two background concentrations of EGF for 3 hr, and then were stimulated with 3- and 6- fold increase in EGF concentration. The ratio of nuclear to cytoplasmic FoxO3 levels (y-axis), measured 15 min after the EGF fold\u00a0changes, depended on the relative but not absolute change of EGF concentration.\u00a0Statistical significance was calculated using the Wilcoxon rank sum test (n\u00a0=\u00a05); n. s. corresponds to p>0.1, and * corresponds to p<0.01. Error bars represent the standard deviation of n\u00a0=\u00a05 technical replicates.\n\n## Discussion\n\nReceptor endocytosis and down-regulation, following ligand stimulation, has been canonically associated with signal and\u00a0circuit desensitization (Friedlander and Brenner, 2009; Sorkin and von Zastrow, 2009; Ferrell, 2016). Our study suggests an additional and more quantitative role of receptors endocytosis in mammalian cells. Specifically, receptor endocytosis may allow cells to continuously monitor signals in their environment (Becker et al., 2010; Brennan et al., 2012; Mitchell et al., 2015) by dynamically adjusting the number of ligand-cognate receptors on the cell surface. Our analysis also demonstrates that the memory of past stimuli, effectively encoded in the number of surface receptors, may be signal-specific, at least for some ligands, due to the selective removal of ligand-cognate receptors. The combination of logarithmic pAkt response, and the logarithmic dependence of the ligand-specific memory on the background signal, allows cells to respond to relative changes in environmental stimuli. We note that the described\u00a0relative sensing mechanism is not a direct consequence of either simple adaptation to various levels of background signals or logarithmic activation response (Shoval et al., 2010; Adler et al., 2017; Adler and Alon, 2018).\n\nPrevious studies (Cohen-Saidon et al., 2009; Goentoro and Kirschner, 2009; Lee et al., 2014) have demonstrated that transcriptional motifs may efficiently buffer cell-to-cell variability in signaling components when responding to a constant extracellular stimulation. In contrast, our study describes a non-transcriptional mechanism of sensing extracellular signal changes relative to past extracellular stimulation. Although the pAkt response to an abrupt stimulation is relatively fast (~5\u201315 min, Figure 1a), and therefore non-transcriptional in nature, the sustained production and delivery of cell surface receptors is essential to establishing the signal-dependent and receptor-mediated memory. Therefore,\u00a0sustained\u00a0transcription and translation of network comonents are necessary for proper functioning of\u00a0the described sensing mechanism.\n\nAlthough there are usually\u00a0~105\u2013106 EGFR receptors on mammalian cell surface (Shi et al., 2016), the downstream network response, for example Akt phosphorylation, often saturates when only a relatively small fraction (5\u201310%) of the receptors are bound to their cognate ligands (Chen et al., 2009; Shi et al., 2016). Our study suggests that one potential advantage of such a system architecture is that, beyond simple signal activation, it may endow cells with a large dynamic range of receptor abundances to memorize stimulation levels of multiple extracellular ligands (Hart et al., 2013; Nandagopal et al., 2018). Notably, signal-mediated removal has been reported for many other receptors and signaling systems, such as the G protein-coupled receptors (GPCRs) (Ferguson, 2001), involved in various sensory systems, and AMPA-type glutamate receptors (Guskjolen, 2016), implicated in synaptic plasticity. Therefore, similar relative sensing mechanisms may be important in multiple other receptor-based signaling cascades and across different biological contexts.\n\n## Materials and methods\n\n### Experimental methods\n\n#### Measurement of EGF signaling responses\n\nMCF10A cells were obtained from the ATCC and grown according to ATCC recommendations. Cell identity was confirmed by short tandem repeat (STR) profiling at the Dana-Farber Cancer Institute and cells were tested with the MycoAlert PLUS mycoplasma detection kit (Lonza) and found to be free of Mycoplasma prior to analyses. For experiments, 96 well plates (Thermo Scientific) were coated with type I collagen from rat tail (Sigma-Aldrich) by incubating plates with 65 \u00b5l of 4 mg/ml collagen I solution in PBS for 2 hr at room temperature, washed twice with PBS using a EL406 Microplate Washer Dispenser (BioTek), and then sterilized under UV light for 20 min prior to use. Cells were harvested during logarithmic growth and plated into collagen-coated 96 well plates using a EL406 Microplate Washer Dispenser. Cells were grown in 200 \u00b5l of complete medium for 24 hr, serum starved twice in starvation media (DMEM/F12 supplemented with 1% penicillin-streptomycin and 0.1% bovine serum albumin), incubated in 200 \u00b5l of starvation media for 19 hr, washed twice more, and incubated in 200 \u00b5l of starvation media for another hour. This time point constituted t\u00a0=\u00a00 for all experiments.\n\nTreatment solutions were created by manual pipetting or by dispensing the appropriate amounts of epidermal growth factor (EGF, Peprotech), hepatocyte growth factor (HGF, Peprotech), or SC-79 (Sigma) into starvation media using a D300 Digital Dispenser (Hewlett-Packard). At t\u00a0=\u00a00 cells were stimulated with 100 \u00b5l of treatment solution and then incubated for the indicated times. For experiments requiring a second stimulus, cells were treated with an additional 100 \u00b5l of treatment solution at 3 hr and incubated for the indicated times. For fixation, 100 \u00b5l of supernatant were removed from the wells, replaced by 100 \u00b5l of 12% formaldehyde solution (Sigma) in phosphate buffered saline (PBS), and incubated for 30 min at room temperature.\n\nAll subsequent washes and treatments were performed with the EL406 Microplate Washer Dispenser. Cells were washed twice in PBS and permeabilized with 0.3% Triton X-100 (Sigma-Aldrich) in PBS for 30 min at room temperature (this step was omitted for measuring the surface expression of cMET and EGFR), washed once again in PBS, and blocked in 40 \u00b5l of Odyssey blocking buffer (LI-COR Biotechnology) for 60 min at room temperature. Cells were incubated with 30 \u00b5l of anti-phospho-Akt (Cell Signaling Technologies, 4060, 1:400), FoxO3 (Cell Signaling Technologies, 2497, 1:200), anti-Met (R and D Systems, AF276, 1:150), or anti-EGFR (Thermo Fisher Scientific, MA5-13319, 1:100) over night at 4\u00b0C. Cells were washed once in PBS and three times in PBS with 0.1% Tween 20 (Sigma-Aldrich; PBS-T for 5 min each and incubated with 30 \u00b5l of a 1:1000 dilution of secondary antibodies conjugated with Alexa Fluor 647 in Odyssey blocking buffer for 60 min at room temperature. Cells were washed two times in PBS-T, once with PBS, and stained for 30 min at room temperature with whole cell stain green (Thermo Fisher Scientific) and Hoechst (Thermo Fisher Scientific). Cells were washed three times in PBS, covered in 200 \u00b5l of PBS, and sealed for microscopy. Cells were imaged using an Operetta microscope (Perkin Elmer).\n\nFor the quantitative Western blots, about 70% confluent MCF10A cells were serum starved and treated with different concentrations of EGF (1, 0.56, 0.31, 0.18, 0.1 ng/mL). Cell lysate was prepared in\u00a0Laemmili Sample Buffer (Bio-Rad) and subjected to SDS-PAGE in the 4\u201320% gradient gel (Bio-Rad). Western blots were performed using standard conditions with primary antibodies anti-phospho-EGFR (Cell Signaling\u00a0Technologies, 3777, 1:1000) and anti-phospho-Akt (Cell Signaling Technologies, 4060, 1:1000) and anti-Actin\u00a0(Santa Cruz Biotechnology,\u00a0sc-47778 HRP, 1:5000). Secondary HRP-conjugated antibodies were acquired\u00a0from Cell Signaling (7074, 1:10,000). Signals were detected with\u00a0SuperSignal West Dura Extended Duration Substrate\u00a0(Thermo Fisher Scientific) on a myECL Imager\u00a0(Thermo Fisher\u00a0Scientific) and analyzed by Image Studio Lite software (LI-COR Biosciences) by normalizing the signal from each antibody by the corresponding signal from Actin.\n\n### Image Processing\n\nImages were analyzed using the Columbus image data storage and analysis system (Perkin Elmer) to quantify single cell fluorescence measurements from each imaged well. The reported intensity values were obtained by first subtracting the background fluorescence of the well and subsequently the levels of pAKT at no stimulation at the same time. From each well we thus obtained a distribution of single cell measurements of a given target (pAkt, FoxO3, scMET or sEGFR). In each distribution we discarded the\u00a0top and bottom 5% of points to remove outliers due to imaging and detection errors. The nuclear FoxO3 to cytoplasmic FoxO3 compartmentalization ratio was determined by the mean intensity in each area after image segmentation based on Hoechst and whole cell stain green at the single cell level. After that, we calculated the average of the resulting single cell distributions. For each condition, we performed multiple technical repeats (multiple wells), and as a final result reported the average of the corresponding single cell distribution averages and the associated standard deviations.\n\n### Computational methods\n\nIn this section, we describe in detail (1) the model of the EGF/EGFR/Akt signaling pathway, (2) model assumptions, (3) model parameters and their bounds, (4) various relevant biological constraints that were imposed while fitting the model to the data, (5) the error function that was minimized in the parameter search, (6) the numerical procedure used to minimize the error function between model predictions and experimental data, and (7) in silico predictions.\n\n#### General structure of the computational model\n\nThe dynamic ODE model describing the EGF/EGFR signaling cascade leading to Akt phosphorylation (Supplementary file 1a, b, and Equations A2\u2013A20) was based on the previous work by Chen et al. (2009). We retained the components of the model relevant to EGF-dependent phosphorylation of EGFR and the subsequent cascade responsible for Akt phosphorylation. The resulting model consisted of 20 chemical species (see Supplementary file 1a) and was described by 24 parameters (20 reaction rate constants and four total species concentrations, Supplementary files 1\u20133, and Equations A2\u2013\ufeffA20).\n\nThe model included processes across three cellular compartments: cell surface (plasma membrane), cytoplasm, and endosomes. The model included interactions of the ligand with the receptors (ligand-binding and unbinding to receptor monomers and dimers) and subsequent receptor dimerization and undimerization. The model also included internalization of phosphorylated and unphosphorylated receptors, their recycling and degradation, phosphorylation and dephosphorylation by phosphatases.\n\n#### Main assumptions of the model\n\nIn agreement with available literature (Wiley and Cunningham, 1982; Herbst et al., 1994), we assumed that the rates of internalization, recycling, and degradation are different for inactive (unphosphorylated) and active (phosphorylated) receptors (Supplementary file 1a). We assumed that EGFR phosphatases in MCF10A cells are present at exceedingly high concentrations (Kleiman et al., 2011), and therefore we implemented the corresponding reaction of dephosphorylation of phosphorylated EGFRs (pEGFRs) as a first order reaction. We further assumed that activated receptors on plasma membrane and in endosomes are dephosphorylated by the phosphatase with the same rate (Kleiman et al., 2011).\n\nWe implemented PIP2 phosphorylation by pEGFR on the plasma membrane as a simplified effective first order process. Following the receptor-driven phosphorylation of PIP2 we retained the canonical signaling cascade of the PI3K/Akt activation (Figure 2a in the main text). We also implemented a first order reaction for action of the phosphatase on pAkt.\n\nWe assumed that cells are at steady state in terms of the abundances of ligand-free cell surface and endosomal receptors prior to ligand exposure. Specifically, prior to ligand exposure, the number of ligand-free EGFR monomers on cell surface and in endosomes, were derived based on the steady state condition of the corresponding equations.\n\nIn agreement with the literature (Haugh and Meyer, 2002; Park et al., 2003), we assumed that Akt can be phosphorylated only by cell-surface pEGFR, and not by endosomal pEGFR. Finally, we assumed that over the course of simulation extracellular ligand concentration remained constant, unless a step increase in EGF was applied. Here we refer to the background ligand stimulation as stimulation applied at time t\u00a0=\u00a00 to the cells that were previously not exposed to the ligand.\n\n#### Model parameters\n\nThe model parameters consisted of 4 total species abundances (PIP2, Akt, PDK1, and EGF receptors) and 20 rate constants. We collected multiple values of these parameters from literature (Supplementary file 1a). In our search for optimal rate parameters fitted to data, we allowed rate parameters to vary within half an order of magnitude from the lowest and the highest literature derived estimate (Supplementary file 1a). For parameters, for which experimental estimates were not available, we allowed up to four orders of magnitude in variation.\n\nIn addition, we allowed one and a half orders of variation in first order rate of EGF unbinding from receptors and the rate of EGFR phosphorylation in order to account for spatial organization of the receptors on the cell surface (Mayawala et al., 2006). We fixed the rate of pEGFR phosphatase according to the measurement of this constant in MCF10A cells (Kleiman et al., 2011). In accordance with literature parameter estimates (Supplementary file 1a), we constrained the rate of ligand unbinding, receptor undimerization, receptor phosphorylation, and receptor dephosphorylation to be at least 10 times faster than receptor internalization (Wiley et al., 1991; Herbst et al., 1994; Chen et al., 2009; Kleiman et al., 2011).\n\nTotal number of EGFR receptors was limited to be between 105\u2013106 molecules per cell (Niepel et al., 2013). Total protein abundance of Akt was limited to be between 105\u2013106 molecules per cell (Chen et al., 2009). The abundance of PDK1 was limited between 103\u2013106 molecules per cell (Chen et al., 2009; Wang et al., 2012). Total abundance of lipid molecule PIP2 was limited between 108.2\u2013109.2. The abundance of PIP2 was calculated based on (1) surface area of MCF10A cells (calculated using a diameter of\u00a0~66 \u03bcm [Imbalzano et al., 2009] and assuming spherical cell shape), (2) total number of lipid molecules per 1 \u03bcm2 of membrane (Alberts et al., 1994) (~5\u00d7106), and (3) the fraction of PIP2 among all plasma membrane lipids (Czech, 2000) (0.75%); this corresponded to\u00a0~5\u00d7108 molecules of PIP2 per cell.\n\n#### Additional constraints\n\nIn addition to the constraints imposed on network parameters directly through the experimentally measured data at EGF stimulations, we also required several additional constraints to better capture biology of EGFR signaling based on known literature. These constraints were either added as \u2018hard\u2019 constraints: parameter sets that did not agree with hard constraints were rejected, or as \u2018soft\u2019 constraints: parameter sets that did not agree with soft constraints were penalized using additional terms in the error function.\n\n##### Hard constraints\n\nWe constrained the total number of EGF receptors prior to EGF exposure to be between 105\u2013106 per cell, and surface EGFR to be within 105\u2013106 receptors per cell, in agreement with EGFR abundances reported for MCF10A cell lines (Niepel et al., 2013). In the model, the number of cell surface receptors was not a free parameter, but was calculated based on the steady state condition of the differential equations that describe the system.\n\n##### Soft constraint\n\nWe also implemented a \u2018soft\u2019 constraint that ensured realistic levels of phosphorylated Akt molecules. We required that at least 10% of total Akt gets phosphorylated at EGF doses close to Akt saturation, that\u00a0is in our case 3.16 ng/ml EGF (Chen et al., 2009).\n\n#### Error function\n\nThe error function quantified the disagreement between model predictions and data and the soft constraints. At a given point \u03b8 in parameter space, we solved the system of ODEs describing EGF-induced Akt phosphorylation (see below) using the MATLAB and obtained model solutions {Si} for all experimentally measured conditions. Importantly, while the model predicts protein concentrations in units of number of molecules per cell, our experiments measured protein concentration up to a scaling factor. Therefore, we rescaled the model prediction using maximum likelihood linear-regression estimate (MLE) for both pAkt and sEGFR data between the model and the data respectively. Specifically, separately for pAkt and sEGFR, we fitted a linear model between the predictions from the ordinary differential equation model and the corresponding experimental measurements across multiple EGF doses and time points. We rescaled the predictions based on the slope and the intercept of the linear model fit. The scaled predictions were used in the evaluation of the error.\n\nThe error function comprised of two different contributions. The first term was defined as the sum of the squared differences between the model predictions {Si} at parameter value \u03b8 and the corresponding experimental data D, taking into account corresponding experimental errors \u03c3 s (Equation S1a). Next, we imposed the soft constraints described above as squared error terms (Equation S1b, and Supplementary file 1b for species abbreviation). The total error function was the sum of these two contributions (Equation S1c).\n\n$$\nE^_{1}(\\theta)=\\sumk=1n\\frac{(S_{k}(\\theta)\u2212D_{k}\u00a0)^{2}}{2\\sigma_{k}^{2}}\n$$\n\n\n\n$$\nE^_{2}(\\theta)=\\frac{(f_{akt,max}\u22120.1)^{2}}{2\\times(0.004)^{2}}\u00a0if\u00a0f_{akt,max}<0.1\n$$\n\n\n\n$$\nE^(\\theta)=E^_{1}(\\theta)+E^_{2}(\\theta)\n$$\n\nwhere\n\n$$\nE^\\theta=E^_{1}\\theta+E^_{2}\\theta\n$$\n\nThe standard deviation 0.004 in Equation S1b was chosen to ensure that the maximum pAkt levels were guaranteed to be above 10% of total Akt levels. Lower values lead to a very high rejection rate in the simulated annealing procedure and higher values were likely to return parameter points that did not satisfy the constraint that maximum pAkt levels were at least 10% of total Akt levels. The active endocytosis and degradation of cell surface receptors in our system occurred mostly between EGF doses of 0 ng/ml and 3.16 ng/ml. Accordingly, we fit the model using experimental data collected in the same range of EGF stimulations.\n\nThe error function in Equation 1 a contained the following experimentally measured data points: pAkt time courses measured up to 180 min (5, 10, 15, 30, 45, 90, and 180 min) across range of EGF doses between 0.03 and 3.16 ng/ml (0.03,0.1,0.3,1,3.16 ng/ml EGF) and sEGFR levels at 2.5 and 3 hr across a range of EGF stimulation doses (0 ng/ml and 0.03\u20133.16 ng/ml).\n\nIn Equation 1 a, index k runs through all n experimentally measured data points (5 doses x 7 time points\u00a0=\u00a035 total points) and sEGFR measurements (6 doses x 2 time points\u00a0=\u00a012 total points).\n\nOverall, the error function had a total of 50 terms (35 pAkt measurements, 12 sEGFR measurements, and one soft constraint). We minimized this error by searching through the parameter space using simulated annealing (SA) described in the next section.\n\n#### Simulated Annealing optimization\n\nGiven that the mechanistic ODE models constrained by experimental measurements of several dynamical quantities are usually underdetermined (Chen et al., 2009), we used simulated annealing (SA) (Kirkpatrick et al., 1983), to numerically search the model\u2019s parameter space.\n\nThe overall error (Equation S1c) was minimized with SA in order to determine parameter sets that are most consistent with the experimental measurements. Following standard SA optimization scheme, we ran a random walk in the model\u2019s parameter space. At each point in the parameter space we accept or reject a next proposed parameter set according to the Metropolis criterion and a likelihood that is the negative exponential of the error function in Equations S1a. Following a conventional SA protocol, we used an additional parameter, temperature, which allowed steps with relatively large change in the likelihood score to explore large parameter space. The temperature was decreased gradually to find a local minimum of the likelihood function.\n\nTo find multiple parameter sets that fit the experimental data, we ran 100 independent SA chains with randomly selected starting points spread out across allowed parameter ranges. Each chain was started at high temperature and was cooled down in 12 stages to the lowest temperature (using the sequence of temperatures: 400, 200, 100, 50, 20, 10, 5, 2, 1, 0.5, 0.25, 0.1). At each temperature, 1500 steps in parameter space were performed. In each step, on an average four randomly chosen parameters (out of the 24) were changed in order to speed up the search in the parameter space.\n\n#### Predictions from SA\n\nFor individual chains, the parameter set with the lowest error was recorded. The averages of parameter values from the 10 best-fit chains are shown in Supplementary file 1a. We used these top 10 optimized parameter sets (Supplementary file 1a, Figure 2\u2014figure supplement 1) to explore phenomenon of relative sensing in silico. For each parameter set, we simulated the following. The model was first exposed to the background EGF concentration for 50 hr to ensure that all species reached a steady state. The model was subsequently exposed to a step increase in EGF concentration (2-, 3-, 4-, or 6- fold). After the step increase, EGF was kept constant as well. We noted the maximum Akt phosphorylation level at each background concentration and EGF fold-change. For each fit, we obtained a series of maximum pAkt responses across different initial EGF concentrations and for multiple fold changes as well as time integrals of pAkt responses between 0 and 30 min. We combined the predicted relative sensing dose responses at every background EGF level and at every fold by taking the average (and the corresponding standard deviation) across predictions from all 10 best parameter sets. We then plot the resulting dose response as seen in Figure 2c,d of the main text.\n\n#### Statement of source code availability\n\nAll data and source code are available\u00a0at: https://github.com/dixitpd/FoldChange\u00a0(Dixit, 2020; copy archived at https://github.com/elifesciences-publications/FoldChange).\n",
+      "created_at": "2025-12-02T14:41:18.007230Z"
+    },
+    {
+      "id": "34097878-6510-4b6b-8775-1d4178f03e70",
+      "submission_id": "b99d941f-f61f-4162-b737-6ce9cec3a35b",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Uri Alon, Weizmann Institute of Science Israel\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.50342.sa1](https://doi.org/10.7554/eLife.50342.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nAccuracy and robustness of biological signaling is an important concept in systems biology that has received significant attention over the years. In this manuscript, the authors present a novel receptor-based mechanism that is sufficient for cells to compute relative changes of growth-factor concentrations in the extracellular milieu (providing approximate fold change detection or FCD). Experimentally, the authors observe increasing pAKT signaling responses that is concomitant with depletion of surface-exposed EGF receptors in cells exposed to increasing concentrations of EGF. Using ODEs coupled with an elegant analytical model and validation experiments, the authors show that surface receptor downregulation is not only a desensitization mechanism, but also a molecular \u201creference point\u201d as part of a mechanism that compares background concentrations with future stimuli. Receptor-level relative-sensing imbues cells with a sort of molecular memory that can be used to overcome noisy biological conditions independent of transcription.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Receptor-based mechanism of relative sensing and cell memory in mammalian signaling networks\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Naama Barkai as the Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Robin E.C. Lee (Reviewer #3).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nAccuracy and robustness of biological signaling is an important concept in systems biology that has received significant attention over the years. In this manuscript, the authors present a novel receptor-based mechanism that is sufficient for cells to compute relative changes of growth-factor concentrations in the extracellular milieu (fold change detection of FCD). Experimentally, the authors observe increasing pAKT signaling responses that is concomitant with depletion of surface-exposed EGF receptors in cells exposed to increasing concentrations of EGF. Using ODEs coupled with an elegant analytical model and validation experiments, the authors show that surface receptor downregulation is not a desensitization mechanism, but a molecular \u201creference point\u201d as part of a mechanism that compares background concentrations with future stimuli. Receptor-level relative-sensing imbues cells with a sort of molecular memory that can be used to overcome noisy biological conditions independent of transcription.\n\nOverall, the work is comprehensive and highlights an important emergent property that arises through receptor endocytosis, a property that may recur in other molecular pathways. Although there is still room for improvements, a suitably revised manuscript would certainly be of interest to a broad biological readership and should be published at eLife.\n\nEssential revisions:\n\n1) Review of previous literature:\n\n1a) The Introduction should include a detailed (2-3 paragraph) discussion of fold change detection and its known mechanisms. The present model has approximate (not exact) FCD, and this should be noted.\n\n1b) EGF signaling is one of the better studied signal transduction processes, and multiple observation related to its many facets have been made before. In particular, it has been noted that EGF receptor indeed responds to the EGF dose logarithmically (see e.g., a number of studies from Steve Wiley). These studies are not discussed in the current manuscript, which is quite surprising. The interpretation provided by Wiley and others is that this logarithmic relationship is a consequence of receptors having high and low affinity binding sites, so that the binding of the ligand and the ensuing response depend on a mixture of these binding sites occupied. Needless to say, there is ample literature to support these findings and this model.\n\nWe note that a logarithmic dose response is not equivalent to FCD (since FCD is a dynamic property), and thus the present work is novel for the EDF system.\n\n2) The analytical modeling is a strong point of this paper, it has a remarkable ability to reproduce experimental findings and explains the range of molecular conditions that support relative sensing. This model should have more page space in the main text. Specifically, the motivation for the analytical modeling can be developed more, the dimensionless parameters \u03b1 and \u03b2 can be defined in the main text (they are already summarised indirectly). Figure 7\u2014figure supplement 1 presents important results that can be combined with Figure 4 and discussed in accompanying text.\n\n3) All three reviewers suggested additional experiments as described below. I suggest that the authors add any data they have or can produce in under two months. For experiment where this is not available/possible, I suggest deferring the experiments to future work.\n\nBasically, there is an analysis of wild type cells and an ODE model. The experimental analysis lacks any perturbations to the pathway to really test the ODE model in any particular way. The model analysis lacks distillation to any particular core component or network motif that could be interpreted in a more general manner. One possible experiment to do is overexpression of EGFR, which should keep the cells more sensitive to changes in EGF concentration despite pre-exposure to EGF. An inhibition or knock-down of EGFR should have the opposite effect. Perturbations timed with the fold increase in ligand would have a greater impact. Another experiment would be to pre-expose the cells to EGF for 3 hours, replace with EGF-free media, and measure the rate at which the cell's EGF sensitivity reverts back to baseline levels. According to the authors' model, we should expect to see the EGF sensitivity correlate with the rate at which EGFR is translocated to the cell surface minus the rate at which EGFR is internalized and degraded.\n\nRelated to the above, there are multiple pharmacological and genetic methods to perturb receptor trafficking, including its severe inhibition. One needs to test the effects of these perturbations in the overall signaling but also on the specific model predictions, and their validation. The activation of receptor itself upstream of Akt can also be directly tested, e.g., by detecting its phosphorylation status. A better idea of what the pre-stimulation with EGF can do to the cells, including altering the synthesis and degradation rates of the molecules involved in the analysis, and cell behavior (migration, morphology, etc.) should be provided.\n\nThe authors emphasize that the proposed relative sensing mechanism is non-transcriptional, but do not provide evidence for this claim. Although the models and experiments demonstrate sufficiency, they don't demonstrate necessity of a receptor-only mechanism in the axis of EGF/HGF-pAKT-FoxO3 signaling. Note that the timescales mentioned in the Introduction overlap with transcriptional timescales (for example, cytokine-induced transcription can be rapid with strong expression that peaks within 30 minutes \u2013 see IL-6 response in PMID: 16191192). I have 2 constructive suggestions: The first would demonstrate necessity by adding additional inhibitor studies: (i) poisoning transcription/translation to demonstrate relative sensing for pAKT/FoxO3 is unaltered; and (ii) inhibiting receptor internalization (MDC, dynasore, etc\u2026) and demonstrating predictable loss of relative sensing (using the model to make predictions). The second suggestion is that the authors can dilute the \u201cnon-transcriptional\u201d claims and acknowledge through discussion that transcriptional mechanisms may still supplement the observed non-transcriptional receptor-based mechanism (and explain how future experiments can rule them out).\n",
+      "created_at": "2025-12-02T14:41:18.007230Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T14:41:18.007230Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T14:41:18.007230Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "b116591e-3243-44d8-b4a9-e4502a62969a",
+      "content_id": "e4c8e025-a6a8-45da-8a56-d99ec4d28577",
+      "claim_id": "C1",
+      "claim": "Detecting relative rather than absolute changes in extracellular signals enables cells to make decisions in constantly fluctuating environments.",
+      "claim_type": "EXPLICIT",
+      "source": "Detecting relative rather than absolute changes in extracellular signals enables cells to make decisions in constantly fluctuating environments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about cellular signaling that draws from established scientific understanding.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:41:18.007230Z"
+    },
+    {
+      "id": "cf8ef213-d50e-4d7c-91bb-4e671735d3ec",
+      "content_id": "e4c8e025-a6a8-45da-8a56-d99ec4d28577",
+      "claim_id": "C2",
+      "claim": "Mammalian cells use a novel non-transcriptional mechanism of relative sensing based on receptor abundance.",
+      "claim_type": "EXPLICIT",
+      "source": "Using the growth factor-activated PI3K-Akt signaling pathway, we develop here computational and analytical models, and experimentally validate a novel non-transcriptional mechanism of relative sensing in mammalian cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript presents computational models and experimental validation of this mechanism.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:41:18.007230Z"
+    },
+    {
+      "id": "989f72de-bf35-408b-80e8-05b6accea795",
+      "content_id": "e4c8e025-a6a8-45da-8a56-d99ec4d28577",
+      "claim_id": "C3",
+      "claim": "Cells encode past stimulation levels in the abundance of cognate receptors on the cell surface.",
+      "claim_type": "EXPLICIT",
+      "source": "This mechanism relies on a new form of cellular memory, where cells effectively encode past stimulation levels in the abundance of cognate receptors on the cell surface.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental measurements of surface receptor abundance at different background stimulation levels.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:41:18.007230Z"
+    },
+    {
+      "id": "31e293e9-e01f-476e-90b6-395534acb95b",
+      "content_id": "e4c8e025-a6a8-45da-8a56-d99ec4d28577",
+      "claim_id": "C4",
+      "claim": "Surface receptor abundance is regulated by background signal-dependent receptor endocytosis and down-regulation.",
+      "claim_type": "EXPLICIT",
+      "source": "The surface receptor abundance is regulated by background signal-dependent receptor endocytosis and down-regulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data showing receptor abundance changes with background stimulation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:41:18.007230Z"
+    },
+    {
+      "id": "0b250d5a-c2c0-4a9b-ae6d-ca683e3f62f1",
+      "content_id": "e4c8e025-a6a8-45da-8a56-d99ec4d28577",
+      "claim_id": "C5",
+      "claim": "Relative sensing is robust and specific for EGF and HGF across wide ranges of background stimuli.",
+      "claim_type": "EXPLICIT",
+      "source": "We show the robustness and specificity of relative sensing for two physiologically important ligands, epidermal growth factor (EGF) and hepatocyte growth factor (HGF), and across wide ranges of background stimuli.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data with both ligands at multiple background concentrations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:41:18.007230Z"
+    },
+    {
+      "id": "44b40bf7-6b9a-4f29-843b-d504fe3543cb",
+      "content_id": "e4c8e025-a6a8-45da-8a56-d99ec4d28577",
+      "claim_id": "C6",
+      "claim": "E. coli chemotaxis is a classic example of relative sensing in bacteria.",
+      "claim_type": "EXPLICIT",
+      "source": "Relative sensing of environmental inputs has been previosuly investigated in bacteria, with the E. coli chemotaxis being a classic example (Mesibov et al., 1973; Barkai and Leibler, 1997; Alon et al., 1999; Shoval et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature on bacterial chemotaxis.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:41:18.007230Z"
+    },
+    {
+      "id": "18dfb9b6-8ce4-4a96-85ab-f5101a33203c",
+      "content_id": "e4c8e025-a6a8-45da-8a56-d99ec4d28577",
+      "claim_id": "C7",
+      "claim": "Fold changes in ERK nuclear activity were robust to cell-to-cell variability when responding to constant stimuli.",
+      "claim_type": "EXPLICIT",
+      "source": "When responding to constant stimuli, experiments with the signaling proteins ERK (Cohen-Saidon et al., 2009) and \u03b2-catenin (Goentoro and Kirschner, 2009) showed that fold changes in their nuclear activity were robust to cell-to-cell variability (Cohen-Saidon et al., 2009) and variability in signaling network parameters (Goentoro and Kirschner, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies on ERK signaling.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:41:18.007230Z"
+    },
+    {
+      "id": "e99d0960-0dc8-4e56-b81b-8fad231dba7d",
+      "content_id": "e4c8e025-a6a8-45da-8a56-d99ec4d28577",
+      "claim_id": "C8",
+      "claim": "Genes directly controlled by NF-\u03baB often respond to its fold changes at the single cell level.",
+      "claim_type": "EXPLICIT",
+      "source": "Later studies of the NF-\u03baB (Lee et al., 2014) and TGF-\u03b2/SMAD pathways (Frick et al., 2017) also showed that genes directly controlled by these proteins often respond to their fold changes at the single cell level.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies on NF-\u03baB signaling.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:41:18.007230Z"
+    },
+    {
+      "id": "bea97370-f9a5-45ca-9027-715a8eea1913",
+      "content_id": "e4c8e025-a6a8-45da-8a56-d99ec4d28577",
+      "claim_id": "C9",
+      "claim": "Chlorophyll activity in plants was found to be proportional to the fold change in external light intensity.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent work has explored relative sensing at the organism level in plants, where the chlorophyll activity was found to be proportional to the fold change in external light intensity (Tendler et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a previous study on plant light sensing.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:41:18.007230Z"
+    },
+    {
+      "id": "765b6a7a-b292-4968-849c-1fedba4ccfab",
+      "content_id": "e4c8e025-a6a8-45da-8a56-d99ec4d28577",
+      "claim_id": "C10",
+      "claim": "Akt serves as a central hub of multiple growth factor-activated signaling cascades.",
+      "claim_type": "EXPLICIT",
+      "source": "Akt serves as a central hub of multiple growth factor-activated signaling cascades (Hemmings and Restuccia, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous literature on Akt signaling.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:41:18.007230Z"
+    },
+    {
+      "id": "e3a1c513-f29e-4409-ae16-27cb341327ff",
+      "content_id": "e4c8e025-a6a8-45da-8a56-d99ec4d28577",
+      "claim_id": "C11",
+      "claim": "Akt phosphorylation-dependent pathways are implicated in multiple human diseases including cancers, diabetes, and psychiatric disorders.",
+      "claim_type": "EXPLICIT",
+      "source": "Naturally, Akt phosphorylation-dependent (pAkt) pathways are implicated in multiple human diseases, such as many types of cancers (Engelman, 2009; Hemmings and Restuccia, 2012), diabetes (Whiteman et al., 2002), and psychiatric disorders (Gilman et al., 2012; McGuire et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature on disease associations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:41:18.007230Z"
+    },
+    {
+      "id": "1af5e910-207c-405c-a47d-8e8627cc4b13",
+      "content_id": "e4c8e025-a6a8-45da-8a56-d99ec4d28577",
+      "claim_id": "C12",
+      "claim": "Within minutes of continuous EGF stimulation, pAkt reached maximum response and then decayed to low steady state levels within hours.",
+      "claim_type": "EXPLICIT",
+      "source": "Within minutes of continuous stimulation with EGF pAkt reached maximum response, and then decayed to low steady state levels within hours (Figure 1a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental time course data shown in Figure 1a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:41:18.007230Z"
+    },
+    {
+      "id": "c851d64a-f5d2-4b3f-b115-9f3c82403989",
+      "content_id": "e4c8e025-a6a8-45da-8a56-d99ec4d28577",
+      "claim_id": "C13",
+      "claim": "Steady state pAkt levels were approximately independent of the EGF stimulus, indicating an approximately adaptive response.",
+      "claim_type": "EXPLICIT",
+      "source": "The resulting steady state pAkt levels were approximately independent of the EGF stimulus, indicating an approximately adaptive response (Friedlander and Brenner, 2009; Shoval et al., 2010; Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data in Figure 1\u2014figure supplement 2 and citations to adaptation literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:41:18.007230Z"
+    },
+    {
+      "id": "792d5702-1a48-4fd6-9b17-2fa608b3e6e5",
+      "content_id": "e4c8e025-a6a8-45da-8a56-d99ec4d28577",
+      "claim_id": "C14",
+      "claim": "Maximal pAkt response was approximately proportional to the logarithm of the EGF stimulus in the sensitive range of EGF concentrations.",
+      "claim_type": "EXPLICIT",
+      "source": "In the sensitive range of EGF concentrations, maximal pAkt response was approximately proportional to the logarithm of the EGF stimulus (Figure 1b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental dose-response data shown in Figure 1b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:41:18.007230Z"
+    },
+    {
+      "id": "94df011b-087f-41f2-80bb-bbdfe75a866c",
+      "content_id": "e4c8e025-a6a8-45da-8a56-d99ec4d28577",
+      "claim_id": "C15",
+      "claim": "pAkt levels were approximately linearly proportional to the phosphorylation level of EGF receptors in the logarithmic regime.",
+      "claim_type": "EXPLICIT",
+      "source": "Quantitative western blot experiments demonstrated that in this logarithmic regime, pAkt levels were approximately linearly proportional to the phosphorylation level of EGF receptors (EGFRs) (Figure 1\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by quantitative Western blot data shown in Figure 1\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:41:18.007230Z"
+    },
+    {
+      "id": "621d34ca-4ae7-4a95-880f-8ec983ccb3ef",
+      "content_id": "e4c8e025-a6a8-45da-8a56-d99ec4d28577",
+      "claim_id": "C16",
+      "claim": "The logarithmic dependence of EGFR phosphorylation levels on EGF stimulation has been previously attributed to a mixture of receptor species with varying affinities, negative cooperativity, and oligomeric aggregation.",
+      "claim_type": "EXPLICIT",
+      "source": "The logarithmic dependence of EGFR phosphorylation levels on EGF stimulation has been previously attributed to a mixture of receptor species with varying affinities to the ligand, negative cooperativity of ligand binding to receptor dimers, and oligomeric aggregation of receptors (Kawamoto et al., 1983; Chatelier et al., 1986; Wofsy et al., 1992; Macdonald and Pike, 2008; Huang et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature on EGFR binding properties.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:41:18.007230Z"
+    },
+    {
+      "id": "cdd7a20d-0ce6-4b65-b4e3-55078d274f28",
+      "content_id": "e4c8e025-a6a8-45da-8a56-d99ec4d28577",
+      "claim_id": "C17",
+      "claim": "Continuous stimulation with EGF resulted in the abundance of cell-surface EGF receptors decreasing proportionally to the logarithm of the background EGF level.",
+      "claim_type": "EXPLICIT",
+      "source": "Continuous stimulation with EGF resulted in the abundance of cell-surface EGF receptors (sEGFR) also decreasing proportionally to the logarithm of the background EGF level, and reaching a new steady state within hours (Figure 1c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data on surface EGFR levels shown in Figure 1c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:41:18.007230Z"
+    },
+    {
+      "id": "af55b0bd-c8d7-42c1-b951-62bc479edad1",
+      "content_id": "e4c8e025-a6a8-45da-8a56-d99ec4d28577",
+      "claim_id": "C18",
+      "claim": "Prior exposure with EGF desensitized cells to subsequent EGF stimulations in a quantitative manner.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, prior exposure with EGF desensitized cells to subsequent EGF stimulations in a quantitative manner.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data showing reduced pAkt response after pre-exposure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:41:18.007230Z"
+    },
+    {
+      "id": "87df2f64-7730-43f8-82f1-6f2abec9614d",
+      "content_id": "e4c8e025-a6a8-45da-8a56-d99ec4d28577",
+      "claim_id": "C19",
+      "claim": "When cells were pre-exposed to different levels of EGF for 3 hr and then stimulated with the same final EGF concentration (2 ng/ml), the maximal pAkt response decreased monotonically with increasing pre-exposure EGF levels.",
+      "claim_type": "EXPLICIT",
+      "source": "When we first pre-exposed cells to different levels of EGF for 3 hr and then stimulated them with the same final EGF concentration (2 ng/ml)), the maximal pAkt response decreased monotonically with increasing pre-exposure EGF levels (Figure 1d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:41:18.007230Z"
+    },
+    {
+      "id": "07b1c6b8-2302-4853-8811-c9eb7f7b5de9",
+      "content_id": "e4c8e025-a6a8-45da-8a56-d99ec4d28577",
+      "claim_id": "C20",
+      "claim": "The pAkt response to an abrupt EGF stimulation is strongly affected by background EGF levels, likely mediated by endocytosis-based removal of activated EGFRs from the cell surface.",
+      "claim_type": "EXPLICIT",
+      "source": "These experiments demonstrate that the pAkt response to an abrupt EGF stimulation is strongly affected by background EGF levels, and that this effect is likely mediated by the endocytosis-based removal of activated EGFRs from the cell surface (Wiley et al., 1991).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data and citation to previous work on receptor endocytosis.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:41:18.007230Z"
+    },
+    {
+      "id": "ee9d8420-d394-4b3b-827d-69f13eb05b2b",
+      "content_id": "e4c8e025-a6a8-45da-8a56-d99ec4d28577",
+      "claim_id": "C21",
+      "claim": "The desensitization of the phosphorylation response was likely due to receptor-based mechanisms upstream of Akt activation.",
+      "claim_type": "EXPLICIT",
+      "source": "Using pharmacological perturbations of the EGFR/Akt pathway, we confirmed that the desensitization of the phosphorylation response (Figure 1d) was likely due to receptor-based mechanisms upstream of Akt activation, and did not depend on its downregulation, for example, through phosphorylation-dependent Akt degradation (Wu et al., 2011).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by pharmacological perturbation experiments with SC79 and citation to previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:41:18.007230Z"
+    },
+    {
+      "id": "b4a3673a-5551-4213-aef4-47e2f7897863",
+      "content_id": "e4c8e025-a6a8-45da-8a56-d99ec4d28577",
+      "claim_id": "C22",
+      "claim": "SC79 is a small molecule which promotes Akt phosphorylation even in the absence of extracellular ligands.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, we used SC79, a small molecule which promotes Akt phosphorylation even in the absence of extracellular ligands (Jo et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous literature on SC79.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:41:18.007230Z"
+    },
+    {
+      "id": "92cf83af-0c6e-4546-bdde-57162c39ea9e",
+      "content_id": "e4c8e025-a6a8-45da-8a56-d99ec4d28577",
+      "claim_id": "C23",
+      "claim": "The pAkt response following stimulation with SC79 did not depend on the background EGF pre-exposure.",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike the desensitization observed in the growth factor-induced pAkt response (Figure 1d), the pAkt response following stimulation with SC79 did not depend on the background EGF pre-exposure (Figure 1\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1\u2014figure supplement 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:41:18.007230Z"
+    },
+    {
+      "id": "1059ab61-b888-4271-9f6e-1ba9d6cbd0bc",
+      "content_id": "e4c8e025-a6a8-45da-8a56-d99ec4d28577",
+      "claim_id": "C24",
+      "claim": "The EGF desensitization mechanism was upstream of Akt.",
+      "claim_type": "EXPLICIT",
+      "source": "This result supports the conclusion that the EGF desensitization mechanism was upstream of Akt.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the SC79 experimental results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:41:18.007230Z"
+    },
+    {
+      "id": "50380d8e-0925-4f53-9566-b82f027a5e42",
+      "content_id": "e4c8e025-a6a8-45da-8a56-d99ec4d28577",
+      "claim_id": "C25",
+      "claim": "The ODE model included endocytosis and degradation of activated receptors.",
+      "claim_type": "EXPLICIT",
+      "source": "The model included several well-established features of the EGFR signaling cascade (Chen et al., 2009), such as endocytosis and degradation of activated receptors (Materials and methods) (Figure 2a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is described in the model construction and shown in Figure 2a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:41:18.007230Z"
+    },
+    {
+      "id": "e5475a98-d102-42b0-a179-7edd15664a89",
+      "content_id": "e4c8e025-a6a8-45da-8a56-d99ec4d28577",
+      "claim_id": "C26",
+      "claim": "The model predicted that the maximal pAkt response depends primarily on the EGF fold change relative to the background stimulation levels.",
+      "claim_type": "EXPLICIT",
+      "source": "The model predicted that the maximal pAkt response indeed depends primarily on the EGF fold change relative to the background stimulation levels (Figure 2c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by computational model predictions shown in Figure 2c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:41:18.007230Z"
+    },
+    {
+      "id": "601bdbb6-5f7c-4cff-846d-5c1f2e559631",
+      "content_id": "e4c8e025-a6a8-45da-8a56-d99ec4d28577",
+      "claim_id": "C27",
+      "claim": "Relative sensing of EGF stimuli occurred over an order of magnitude of background EGF concentrations.",
+      "claim_type": "EXPLICIT",
+      "source": "This relative sensing of EGF stimuli occurred over an order of magnitude of background EGF concentrations, and the resulting pAkt response was approximately proportional to the logarithm of the EGF fold change (Figure 2d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by computational model predictions shown in Figure 2d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:41:18.007230Z"
+    },
+    {
+      "id": "19987113-79f1-4a71-b355-b4f5f99cf270",
+      "content_id": "e4c8e025-a6a8-45da-8a56-d99ec4d28577",
+      "claim_id": "C28",
+      "claim": "The model predicted relative sensing exactly in the range of EGF background concentrations where sEGFR endocytosis was sensitive to background ligand stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, the model predicted relative sensing exactly in the range of EGF background concentrations where sEGFR endocytosis was sensitive to background ligand stimulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the computational model analysis.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:41:18.007230Z"
+    },
+    {
+      "id": "47e54535-e051-4067-b922-57021acced70",
+      "content_id": "e4c8e025-a6a8-45da-8a56-d99ec4d28577",
+      "claim_id": "C29",
+      "claim": "At low EGF background concentrations (<0.01 ng/ml), no substantial sEGFR removal was predicted at the steady state.",
+      "claim_type": "EXPLICIT",
+      "source": "At low EGF background concentrations (<0.01 ng/ml), no substantial sEGFR removal was predicted at the steady state (Figure 2\u2014figure supplement 1), and consequently there was no significant desensitization of the pAkt response.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by computational model predictions shown in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:41:18.007230Z"
+    },
+    {
+      "id": "0303d185-add4-4eb4-98b3-88f194db0ae9",
+      "content_id": "e4c8e025-a6a8-45da-8a56-d99ec4d28577",
+      "claim_id": "C30",
+      "claim": "At high background EGF concentrations (>1 ng/ml), a large fraction of sEGFR was already removed from cell surface and the network responded only weakly to further EGF stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, at high background EGF concentrations (>1 ng/ml), a large fraction of sEGFR was already removed from cell surface and consequently the network responded only weakly to further EGF stimulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the computational model analysis.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:41:18.007230Z"
+    },
+    {
+      "id": "a462d0d0-1d6e-4b21-afec-08dc5432a374",
+      "content_id": "e4c8e025-a6a8-45da-8a56-d99ec4d28577",
+      "claim_id": "C31",
+      "claim": "Experiments confirmed that maximal pAkt response depends primarily on the fold change of EGF and not its absolute concentration across more than an order of magnitude of EGF background concentrations (0.03\u20130.5 ng/ml).",
+      "claim_type": "EXPLICIT",
+      "source": "Similar results were observed in two independent biological replicates (Figure 3\u2014figure supplements 1, 2 and 3), and the experiments confirmed the predictions of the computational model that maximal pAkt response depends primarily on the fold change of EGF and not its absolute concentration (Figure 3a, Figure 3\u2014figure supplement 4). Specifically, across more than an order of magnitude of EGF background concentrations (0.03\u20130.5 ng/ml) the same EGF fold change (lines with the same colors in Figure 3a) elicited similar pAkt responses.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3a and supplementary figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:41:18.007230Z"
+    },
+    {
+      "id": "a30917f0-e93a-4889-a9b3-2852b5d71ba9",
+      "content_id": "e4c8e025-a6a8-45da-8a56-d99ec4d28577",
+      "claim_id": "C32",
+      "claim": "The concentration range in which relative sensing was observed was consistent with recent estimations of in vivo EGF levels.",
+      "claim_type": "EXPLICIT",
+      "source": "The concentration range in which we obsered relative sensing was consistent with recent estimations of in vivo EGF levels (Pinilla-Macua et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous literature on in vivo EGF levels.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:41:18.007230Z"
+    },
+    {
+      "id": "db66e81b-0aba-4573-9bb1-df9f7998a433",
+      "content_id": "e4c8e025-a6a8-45da-8a56-d99ec4d28577",
+      "claim_id": "C33",
+      "claim": "The maximal pAkt response was approximately proportional to the logarithm of EGF fold change.",
+      "claim_type": "EXPLICIT",
+      "source": "In close agreement with the computational model predictions, the maximal pAkt response was approximately proportional to the logarithm of EGF fold change (Figure 3b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:41:18.007230Z"
+    },
+    {
+      "id": "2aaabacc-4eaf-4043-96b1-bea58f985306",
+      "content_id": "e4c8e025-a6a8-45da-8a56-d99ec4d28577",
+      "claim_id": "C34",
+      "claim": "Approximate relative sensing was also observed for the time integral of pAkt levels.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, in addition to the maximal pAkt response, approximate relative sensing was also observed for the time integral of pAkt levels (Figure 3\u2014figure supplement 5), and for the entire time course of pAkt dynamics (Figure 3\u2014figure supplement 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3\u2014figure supplement 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:41:18.007230Z"
+    },
+    {
+      "id": "412050cb-ef67-456b-928c-1579a38fafd4",
+      "content_id": "e4c8e025-a6a8-45da-8a56-d99ec4d28577",
+      "claim_id": "C40",
+      "claim": "An increase in the value of \u03b1 increases signal sensitivity and receptor dimerization and phosphorylation, shifting the relative sensing range to lower ligand concentrations.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, an increase in the value of \u03b1 increases signal sensitivity and receptor dimerization and phosphorylation. This shifts the relative sensing range to lower ligand concentrations (Figure 5a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by analytical model predictions shown in Figure 5a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:41:18.007230Z"
+    },
+    {
+      "id": "a4207792-a631-4455-bb27-d1d1bcad9f22",
+      "content_id": "e4c8e025-a6a8-45da-8a56-d99ec4d28577",
+      "claim_id": "C41",
+      "claim": "An increase in the value of \u03b2 increases the fraction of active receptors being internalized and degraded, increasing the range of background ligand concentrations where relative sensing is observed.",
+      "claim_type": "EXPLICIT",
+      "source": "In turn, an increase in the value of \u03b2 increases the fraction of active receptors being internalized and degraded. This increases the range of background ligand concentrations where the relative sensing is observed (Figure 5b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by analytical model predictions shown in Figure 5b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:41:18.007230Z"
+    },
+    {
+      "id": "9351f6d9-4b2f-43c7-924c-a225a7158f70",
+      "content_id": "e4c8e025-a6a8-45da-8a56-d99ec4d28577",
+      "claim_id": "C42",
+      "claim": "Based on the best-fit ODE model parameter sets, \u03b1 is estimated to be approximately 15 and \u03b2 is estimated to be approximately 40.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on the best-fit ODE model parameter sets, we estimate \u03b1 ~ 15 and \u03b2 ~ 40 (Appendix).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is derived from fitting the ODE model to experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:41:18.007230Z"
+    },
+    {
+      "id": "b0ebab9c-691d-4fcb-9138-5e7770f99fe0",
+      "content_id": "e4c8e025-a6a8-45da-8a56-d99ec4d28577",
+      "claim_id": "C43",
+      "claim": "The relative sensing occurs across over an order of magnitude of background ligand concentrations.",
+      "claim_type": "EXPLICIT",
+      "source": "The model analysis showed that the relative sensing occurs across over an order of magnitude of background ligand concentrations (Appendix).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is derived from the analytical model analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:41:18.007230Z"
+    },
+    {
+      "id": "b0999d20-0231-46df-be79-87cd3c34432d",
+      "content_id": "e4c8e025-a6a8-45da-8a56-d99ec4d28577",
+      "claim_id": "C44",
+      "claim": "Relative sensing does not require receptor dimerization, and similar sensing mechanisms can operate in pathways where signaling is initiated by monomeric receptors.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the analytical model revealed that relative sensing does not require receptor dimerization, and similar sensing mechanisms can operate in pathways where signaling is initiated by monomeric receptors (Appendix).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is derived from the analytical model analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:41:18.007230Z"
+    },
+    {
+      "id": "be8c0d34-6733-453d-896d-d26ee19472db",
+      "content_id": "e4c8e025-a6a8-45da-8a56-d99ec4d28577",
+      "claim_id": "C45",
+      "claim": "Akt phosphorylation can be induced by multiple ligands including hepatocyte growth factor (HGF) which binds to its cognate receptor cMet.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to EGF, Akt phosphorylation can be induced by multiple other ligands, including hepatocyte growth factor (HGF) (Stuart et al., 2000) which binds to its cognate receptor cMet (Viticchi\u00e8 and Muller, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature on HGF/cMet signaling.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:41:18.007230Z"
+    },
+    {
+      "id": "f0e614d5-e2ef-48b2-b48e-c7745e6a96b1",
+      "content_id": "e4c8e025-a6a8-45da-8a56-d99ec4d28577",
+      "claim_id": "C46",
+      "claim": "Upon ligand binding, cMet receptors dimerize and cross-phosphorylate each other, leading to phosphorylation of multiple downstream targets including Akt.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to EGFRs, upon ligand binding, cMet receptors dimerize (Kong-Beltran et al., 2004) and cross-phosphorylate each other; this leads to phosphorylation of multiple downstream targets, including Akt.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous literature on cMet receptor activation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:41:18.007230Z"
+    },
+    {
+      "id": "944649d9-c492-44b9-ad74-8c325ad002b2",
+      "content_id": "e4c8e025-a6a8-45da-8a56-d99ec4d28577",
+      "claim_id": "C47",
+      "claim": "Pre-exposure with HGF did not substantially downregulate EGF-induced pAkt responses, but substantially decreased HGF-induced responses.",
+      "claim_type": "EXPLICIT",
+      "source": "Pre-exposure with HGF did not substantially downregulate EGF-induced pAkt responses, but substantially decreased HGF-induced responses (Figure 6a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 6a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:41:18.007230Z"
+    },
+    {
+      "id": "fdb43837-5a02-4af5-b5ed-b3131fd81e69",
+      "content_id": "e4c8e025-a6a8-45da-8a56-d99ec4d28577",
+      "claim_id": "C48",
+      "claim": "There was a relatively small desensitization of HGF-induced responses due to pre-exposure with EGF, while there was a significant desensitization of EGF-induced pAkt responses.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, we observed a relatively small desensitization of HGF-induced responses due to pre-exposure with EGF, while there was a significant desensitization of EGF-induced pAkt responses (Figure 6b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 6b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:41:18.007230Z"
+    },
+    {
+      "id": "0f1829d1-7bfc-4ec6-a463-527e48a8375b",
+      "content_id": "e4c8e025-a6a8-45da-8a56-d99ec4d28577",
+      "claim_id": "C49",
+      "claim": "Exposure of MCF10A cells to various concentrations of HGF leads to pronounced HGF-dependent removal of cMet from the cell surface, without significant removal of sEGFR.",
+      "claim_type": "EXPLICIT",
+      "source": "We further confirmed that exposure of MCF10A cells to various concentrations of HGF leads to pronounced HGF-dependent removal of cMet from the cell surface, without significant removal of sEGFR (Figure 6\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 6\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:41:18.007230Z"
+    },
+    {
+      "id": "92a8aca1-ec35-47b5-9781-7fec4309252e",
+      "content_id": "e4c8e025-a6a8-45da-8a56-d99ec4d28577",
+      "claim_id": "C50",
+      "claim": "Pre-exposure of cells to EGF leads to EGF-dependent removal of sEGFR without a significant change in surface cMet abundance.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, the pre-exposure of cells to EGF leads to EGF-dependent removal of sEGFR without a significant change in surface cMet abundance (Figure 6\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 6\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:41:18.007230Z"
+    },
+    {
+      "id": "26f81ff2-f9b9-4219-a66c-709cf7dc35e9",
+      "content_id": "e4c8e025-a6a8-45da-8a56-d99ec4d28577",
+      "claim_id": "C51",
+      "claim": "The relative sensing of extracellular ligands relies on the memory of their past exposures effectively encoded in the abundances of their cognate cell-surface receptors.",
+      "claim_type": "EXPLICIT",
+      "source": "These observations support the mechanism in which the relative sensing of extracellular ligands relies on the memory of their past exposures effectively encoded in the abundances of their cognate cell-surface receptors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the ligand-specific desensitization experiments.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:41:18.007230Z"
+    },
+    {
+      "id": "57000b74-0a35-43d8-a354-3bc4ce1be4c8",
+      "content_id": "e4c8e025-a6a8-45da-8a56-d99ec4d28577",
+      "claim_id": "C52",
+      "claim": "HGF-induced phosphorylation of Akt depends primarily on the fold change in extracellular HGF concentration across almost an order of magnitude of background HGF exposures (between 0.1 and 1 ng/ml HGF).",
+      "claim_type": "EXPLICIT",
+      "source": "These experiments demonstrated that HGF-induced phosphorylation of Akt also depends primarily on the fold change in extracellular HGF concentration across almost an order of magnitude of background HGF exposures (between 0.1 and 1 ng/ml HGF) (Figure 6c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 6c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:41:18.007230Z"
+    },
+    {
+      "id": "1e74b7b1-7a0f-4704-904d-c00ad97a67f0",
+      "content_id": "e4c8e025-a6a8-45da-8a56-d99ec4d28577",
+      "claim_id": "C53",
+      "claim": "The maximum pAkt levels depended approximately log-linearly on the HGF fold change.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, like EGF, the maximum pAkt levels depended approximately log-linearly on the HGF fold change (Figure 6d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 6d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:41:18.007230Z"
+    },
+    {
+      "id": "bb369687-aae4-408a-b420-134c00e1bac0",
+      "content_id": "e4c8e025-a6a8-45da-8a56-d99ec4d28577",
+      "claim_id": "C54",
+      "claim": "FoxO3 transcription factor is a key effector of the PI3K-Akt pathway, involved in diverse cellular processes including apoptosis, proliferation, and metabolism.",
+      "claim_type": "EXPLICIT",
+      "source": "The FoxO3 transcription factor is a key effector of the pathway, and it is involved in diverse cellular processes including apoptosis, proliferation, and metabolism (Webb and Brunet, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous literature on FoxO3.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:41:18.007230Z"
+    },
+    {
+      "id": "4db72d71-8b87-4b84-bb5e-07f6ebbb25e0",
+      "content_id": "e4c8e025-a6a8-45da-8a56-d99ec4d28577",
+      "claim_id": "C55",
+      "claim": "Akt phosphorylation of FoxO3 leads to its translocation from the nucleus to cytoplasm and subsequent transcriptional deactivation.",
+      "claim_type": "EXPLICIT",
+      "source": "Akt phosphorylation of FoxO3 leads to its translocation from the nucleus to cytoplasm and subsequent transcriptional deactivation (Webb and Brunet, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous literature on FoxO3 regulation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:41:18.007230Z"
+    },
+    {
+      "id": "d9eb7aca-3483-4284-bcd6-2d6f85cbb79f",
+      "content_id": "e4c8e025-a6a8-45da-8a56-d99ec4d28577",
+      "claim_id": "C56",
+      "claim": "Following Akt activation, the typical nuclear translocation timescale for FoxO family proteins is short (less than 5 min).",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, following Akt activation, the typical nuclear translocation timescale for FoxO family proteins is short (less than 5 min) (Gross and Rotwein, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous literature on FoxO translocation kinetics.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:41:18.007230Z"
+    },
+    {
+      "id": "44569123-e4d7-4915-80b7-ef346c7c5497",
+      "content_id": "e4c8e025-a6a8-45da-8a56-d99ec4d28577",
+      "claim_id": "C57",
+      "claim": "The nuclear-to-cytoplasmic ratio of FoxO3 reflected the relative, rather than the absolute changes in EGF stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with relative sensing by pAkt, the nuclear-to-cytoplasmic ratio of FoxO3 also reflected the relative, rather than the absolute changes in EGF stimulation (Figure 7 and Figure 7\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 7 and Figure 7\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:41:18.007230Z"
+    },
+    {
+      "id": "fbdcd49d-8a7e-42ab-8f6b-84455baa4897",
+      "content_id": "e4c8e025-a6a8-45da-8a56-d99ec4d28577",
+      "claim_id": "C58",
+      "claim": "Relative sensing of the growth factor signal is faithfully transmitted in MCF10A cells to at least some of the physiologically important effectors of the PI3K-Akt pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, relative sensing of the growth factor signal is faithfully transmitted in MCF10A cells to at least some of the physiologically important effectors of the PI3K-Akt pathway.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the FoxO3 experimental results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:41:18.007230Z"
+    },
+    {
+      "id": "10810722-0721-4d4a-b5c4-8f7a3016e204",
+      "content_id": "e4c8e025-a6a8-45da-8a56-d99ec4d28577",
+      "claim_id": "C59",
+      "claim": "Receptor endocytosis may allow cells to continuously monitor signals in their environment by dynamically adjusting the number of ligand-cognate receptors on the cell surface.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, receptor endocytosis may allow cells to continuously monitor signals in their environment (Becker et al., 2010; Brennan et al., 2012; Mitchell et al., 2015) by dynamically adjusting the number of ligand-cognate receptors on the cell surface.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature and the current study's findings.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:41:18.007230Z"
+    },
+    {
+      "id": "c4e13a9c-0f43-47db-9df8-e30aa2e81cbb",
+      "content_id": "e4c8e025-a6a8-45da-8a56-d99ec4d28577",
+      "claim_id": "C60",
+      "claim": "The memory of past stimuli, effectively encoded in the number of surface receptors, may be signal-specific, at least for some ligands, due to the selective removal of ligand-cognate receptors.",
+      "claim_type": "EXPLICIT",
+      "source": "Our analysis also demonstrates that the memory of past stimuli, effectively encoded in the number of surface receptors, may be signal-specific, at least for some ligands, due to the selective removal of ligand-cognate receptors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the experimental data on ligand-specific desensitization.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:41:18.007230Z"
+    },
+    {
+      "id": "e0cbc883-43de-4e35-a088-1664d488b1c3",
+      "content_id": "e4c8e025-a6a8-45da-8a56-d99ec4d28577",
+      "claim_id": "C61",
+      "claim": "The combination of logarithmic pAkt response and the logarithmic dependence of the ligand-specific memory on the background signal allows cells to respond to relative changes in environmental stimuli.",
+      "claim_type": "EXPLICIT",
+      "source": "The combination of logarithmic pAkt response, and the logarithmic dependence of the ligand-specific memory on the background signal, allows cells to respond to relative changes in environmental stimuli.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the combined experimental and modeling results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:41:18.007230Z"
+    },
+    {
+      "id": "e45a54cb-f2f0-464b-a279-2bd00a79b09e",
+      "content_id": "e4c8e025-a6a8-45da-8a56-d99ec4d28577",
+      "claim_id": "C62",
+      "claim": "The described relative sensing mechanism is not a direct consequence of either simple adaptation to various levels of background signals or logarithmic activation response.",
+      "claim_type": "EXPLICIT",
+      "source": "We note that the described relative sensing mechanism is not a direct consequence of either simple adaptation to various levels of background signals or logarithmic activation response (Shoval et al., 2010; Adler et al., 2017; Adler and Alon, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a clarification with citations to previous work on adaptation and logarithmic responses.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:41:18.007230Z"
+    },
+    {
+      "id": "c8fa4947-535d-4f62-adde-6071829e93e6",
+      "content_id": "e4c8e025-a6a8-45da-8a56-d99ec4d28577",
+      "claim_id": "C63",
+      "claim": "Previous studies have demonstrated that transcriptional motifs may efficiently buffer cell-to-cell variability in signaling components when responding to a constant extracellular stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies (Cohen-Saidon et al., 2009; Goentoro and Kirschner, 2009; Lee et al., 2014) have demonstrated that transcriptional motifs may efficiently buffer cell-to-cell variability in signaling components when responding to a constant extracellular stimulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature on transcriptional buffering.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:41:18.007230Z"
+    },
+    {
+      "id": "09602714-26a4-44b4-9182-176cb1a2cb49",
+      "content_id": "e4c8e025-a6a8-45da-8a56-d99ec4d28577",
+      "claim_id": "C64",
+      "claim": "The study describes a non-transcriptional mechanism of sensing extracellular signal changes relative to past extracellular stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, our study describes a non-transcriptional mechanism of sensing extracellular signal changes relative to past extracellular stimulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a contrast to previous transcriptional mechanisms.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:41:18.007230Z"
+    },
+    {
+      "id": "43308663-d6e3-470e-bab1-c93ca6e15bda",
+      "content_id": "e4c8e025-a6a8-45da-8a56-d99ec4d28577",
+      "claim_id": "C65",
+      "claim": "The pAkt response to an abrupt stimulation is relatively fast (~5\u201315 min) and therefore non-transcriptional in nature.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the pAkt response to an abrupt stimulation is relatively fast (~5\u201315 min, Figure 1a), and therefore non-transcriptional in nature, the sustained production and delivery of cell surface receptors is essential to establishing the signal-dependent and receptor-mediated memory.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the time course data in Figure 1a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:41:18.007230Z"
+    },
+    {
+      "id": "c936e7c3-7d41-48af-a081-e1bb197eae08",
+      "content_id": "e4c8e025-a6a8-45da-8a56-d99ec4d28577",
+      "claim_id": "C66",
+      "claim": "Sustained transcription and translation of network components are necessary for proper functioning of the described sensing mechanism.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, sustained transcription and translation of network comonents are necessary for proper functioning of the described sensing mechanism.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the requirement for receptor production and delivery.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:41:18.007230Z"
+    },
+    {
+      "id": "e48b1586-a0d3-40ea-8af1-89a4d34a6829",
+      "content_id": "e4c8e025-a6a8-45da-8a56-d99ec4d28577",
+      "claim_id": "C67",
+      "claim": "There are usually ~10^5\u201310^6 EGFR receptors on mammalian cell surface.",
+      "claim_type": "EXPLICIT",
+      "source": "Although there are usually ~105\u2013106 EGFR receptors on mammalian cell surface (Shi et al., 2016), the downstream network response, for example Akt phosphorylation, often saturates when only a relatively small fraction (5\u201310%) of the receptors are bound to their cognate ligands (Chen et al., 2009; Shi et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature on receptor abundance.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:41:18.007230Z"
+    },
+    {
+      "id": "c7121921-ae38-454b-9eb7-d5b840ad0011",
+      "content_id": "e4c8e025-a6a8-45da-8a56-d99ec4d28577",
+      "claim_id": "C68",
+      "claim": "The downstream network response often saturates when only a relatively small fraction (5\u201310%) of the receptors are bound to their cognate ligands.",
+      "claim_type": "EXPLICIT",
+      "source": "Although there are usually ~105\u2013106 EGFR receptors on mammalian cell surface (Shi et al., 2016), the downstream network response, for example Akt phosphorylation, often saturates when only a relatively small fraction (5\u201310%) of the receptors are bound to their cognate ligands (Chen et al., 2009; Shi et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature on receptor saturation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:41:18.007230Z"
+    },
+    {
+      "id": "d066491c-45cc-4fa1-997a-2579e3c25588",
+      "content_id": "e4c8e025-a6a8-45da-8a56-d99ec4d28577",
+      "claim_id": "C69",
+      "claim": "One potential advantage of having excess receptors is that it may endow cells with a large dynamic range of receptor abundances to memorize stimulation levels of multiple extracellular ligands.",
+      "claim_type": "EXPLICIT",
+      "source": "Our study suggests that one potential advantage of such a system architecture is that, beyond simple signal activation, it may endow cells with a large dynamic range of receptor abundances to memorize stimulation levels of multiple extracellular ligands (Hart et al., 2013; Nandagopal et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the study's findings and supported by citations to previous work.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:41:18.007230Z"
+    },
+    {
+      "id": "e98382aa-a32c-4de1-923b-1b535881e812",
+      "content_id": "e4c8e025-a6a8-45da-8a56-d99ec4d28577",
+      "claim_id": "C70",
+      "claim": "Signal-mediated removal has been reported for many other receptors and signaling systems, such as G protein-coupled receptors (GPCRs) and AMPA-type glutamate receptors.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, signal-mediated removal has been reported for many other receptors and signaling systems, such as the G protein-coupled receptors (GPCRs) (Ferguson, 2001), involved in various sensory systems, and AMPA-type glutamate receptors (Guskjolen, 2016), implicated in synaptic plasticity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature on receptor removal in other systems.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:41:18.007230Z"
+    },
+    {
+      "id": "d4890e4b-4989-4f7f-8eec-f53b6733a9fd",
+      "content_id": "e4c8e025-a6a8-45da-8a56-d99ec4d28577",
+      "claim_id": "C71",
+      "claim": "Similar relative sensing mechanisms may be important in multiple other receptor-based signaling cascades and across different biological contexts.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, similar relative sensing mechanisms may be important in multiple other receptor-based signaling cascades and across different biological contexts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculated based on the prevalence of signal-mediated receptor removal in other systems.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:41:18.007230Z"
+    },
+    {
+      "id": "92091d6d-10a0-4124-bb8a-47db23346c47",
+      "content_id": "e4c8e025-a6a8-45da-8a56-d99ec4d28577",
+      "claim_id": "C72",
+      "claim": "MCF10A cells were obtained from the ATCC and grown according to ATCC recommendations.",
+      "claim_type": "EXPLICIT",
+      "source": "MCF10A cells were obtained from the ATCC and grown according to ATCC recommendations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological statement about cell source and culture.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:41:18.007230Z"
+    },
+    {
+      "id": "99d836c8-37dd-4eba-8d36-4ddb19709425",
+      "content_id": "e4c8e025-a6a8-45da-8a56-d99ec4d28577",
+      "claim_id": "C73",
+      "claim": "Cell identity was confirmed by short tandem repeat (STR) profiling at the Dana-Farber Cancer Institute.",
+      "claim_type": "EXPLICIT",
+      "source": "Cell identity was confirmed by short tandem repeat (STR) profiling at the Dana-Farber Cancer Institute and cells were tested with the MycoAlert PLUS mycoplasma detection kit (Lonza) and found to be free of Mycoplasma prior to analyses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological statement about cell authentication.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:41:18.007230Z"
+    },
+    {
+      "id": "fff3c6e7-1ab1-41fc-9972-85e07b0b88ac",
+      "content_id": "e4c8e025-a6a8-45da-8a56-d99ec4d28577",
+      "claim_id": "C74",
+      "claim": "Cells were tested and found to be free of Mycoplasma prior to analyses.",
+      "claim_type": "EXPLICIT",
+      "source": "Cell identity was confirmed by short tandem repeat (STR) profiling at the Dana-Farber Cancer Institute and cells were tested with the MycoAlert PLUS mycoplasma detection kit (Lonza) and found to be free of Mycoplasma prior to analyses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological statement about contamination testing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:41:18.007230Z"
+    },
+    {
+      "id": "4a60ee8d-b226-4a91-939d-4fff28b2a003",
+      "content_id": "e4c8e025-a6a8-45da-8a56-d99ec4d28577",
+      "claim_id": "C75",
+      "claim": "The rates of internalization, recycling, and degradation are different for inactive (unphosphorylated) and active (phosphorylated) receptors.",
+      "claim_type": "EXPLICIT",
+      "source": "In agreement with available literature (Wiley and Cunningham, 1982; Herbst et al., 1994), we assumed that the rates of internalization, recycling, and degradation are different for inactive (unphosphorylated) and active (phosphorylated) receptors (Supplementary file 1a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a model assumption supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:41:18.007230Z"
+    },
+    {
+      "id": "24224e95-41d3-4592-9537-2c161b4b0eac",
+      "content_id": "e4c8e025-a6a8-45da-8a56-d99ec4d28577",
+      "claim_id": "C76",
+      "claim": "EGFR phosphatases in MCF10A cells are present at exceedingly high concentrations.",
+      "claim_type": "EXPLICIT",
+      "source": "We assumed that EGFR phosphatases in MCF10A cells are present at exceedingly high concentrations (Kleiman et al., 2011), and therefore we implemented the corresponding reaction of dephosphorylation of phosphorylated EGFRs (pEGFRs) as a first order reaction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a model assumption supported by citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:41:18.007230Z"
+    },
+    {
+      "id": "23d060c9-e9fc-46d7-8332-9c4133cf21a3",
+      "content_id": "e4c8e025-a6a8-45da-8a56-d99ec4d28577",
+      "claim_id": "C77",
+      "claim": "Activated receptors on plasma membrane and in endosomes are dephosphorylated by the phosphatase with the same rate.",
+      "claim_type": "EXPLICIT",
+      "source": "We further assumed that activated receptors on plasma membrane and in endosomes are dephosphorylated by the phosphatase with the same rate (Kleiman et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a model assumption supported by citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:41:18.007230Z"
+    },
+    {
+      "id": "afe70f08-b2ae-4b7a-8fa9-c6fcee85554c",
+      "content_id": "e4c8e025-a6a8-45da-8a56-d99ec4d28577",
+      "claim_id": "C78",
+      "claim": "Akt can be phosphorylated only by cell-surface pEGFR, and not by endosomal pEGFR.",
+      "claim_type": "EXPLICIT",
+      "source": "In agreement with the literature (Haugh and Meyer, 2002; Park et al., 2003), we assumed that Akt can be phosphorylated only by cell-surface pEGFR, and not by endosomal pEGFR.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a model assumption supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:41:18.007230Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "9681f48d-d8b0-4bb9-8140-82f644e9c907",
+      "content_id": "e4c8e025-a6a8-45da-8a56-d99ec4d28577",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "EGF stimulation induces transient pAkt phosphorylation that adapts to steady state, with maximal response proportional to log(EGF), and surface EGFR levels decreasing proportionally to log(background EGF).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C12-C15 and C17 are well-supported by experimental data shown in Figures 1a-c and supplementary figures. The time course, dose-response, and receptor abundance measurements provide converging evidence for the adaptive response and logarithmic relationships.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:41:18.007230Z"
+    },
+    {
+      "id": "cd7b595d-8a1a-4699-b103-a2ae9f925c3a",
+      "content_id": "e4c8e025-a6a8-45da-8a56-d99ec4d28577",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Prior EGF exposure desensitizes cells to subsequent EGF stimulation through receptor-based mechanisms upstream of Akt, mediated by endocytosis-based removal of activated EGFRs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C18-C21, C23-C24 are supported by experimental data in Figures 1d and supplementary figures, combined with pharmacological perturbation experiments using SC79 that demonstrate the desensitization mechanism is upstream of Akt activation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:41:18.007230Z"
+    },
+    {
+      "id": "ad8f619e-cad2-48d7-95db-7a09bc410864",
+      "content_id": "e4c8e025-a6a8-45da-8a56-d99ec4d28577",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "An ODE computational model predicts that maximal pAkt response depends primarily on EGF fold change relative to background levels over an order of magnitude of background concentrations, with relative sensing occurring where sEGFR endocytosis is sensitive to background stimulation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25-C30 are supported by computational modeling results shown in Figures 2a-d and supplementary figures. The model predictions are internally consistent and align with the experimental observations, though the model's predictive power depends on parameter fitting quality.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:41:18.007230Z"
+    },
+    {
+      "id": "ff21e1a5-02a8-4c8d-a88e-93f5ac3fc34a",
+      "content_id": "e4c8e025-a6a8-45da-8a56-d99ec4d28577",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Experimental validation confirms that maximal pAkt response depends primarily on EGF fold change across 0.03-0.5 ng/ml background concentrations, with log-linear dependence on fold change, consistent with in vivo EGF levels.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31-C34 are strongly supported by experimental data in Figure 3 and multiple biological replicates (Figure 3 supplements 1-6). The log-linear relationship (r\u00b2=0.93, p<10\u207b\u00b9\u00b9) and reproducibility across replicates provide robust evidence for relative sensing.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:41:18.007230Z"
+    },
+    {
+      "id": "ea700b2c-b84a-4723-b282-040bcdd7ed57",
+      "content_id": "e4c8e025-a6a8-45da-8a56-d99ec4d28577",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "An analytical model reveals that relative sensing is determined by two aggregate parameters (\u03b1 and \u03b2) that control signal sensitivity and receptor internalization, with \u03b1~15 and \u03b2~40 for the EGFR/Akt system, and that relative sensing does not require receptor dimerization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40-C44 are supported by analytical modeling shown in Figures 4-5 and described in the Appendix. The parameter estimates are derived from ODE model fits, and the analytical insights provide mechanistic understanding, though the simplified model makes assumptions that may not fully capture biological complexity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:41:18.007230Z"
+    },
+    {
+      "id": "290c7de9-a40a-47bb-b7d2-e33af0afc085",
+      "content_id": "e4c8e025-a6a8-45da-8a56-d99ec4d28577",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Pre-exposure with HGF or EGF leads to ligand-specific desensitization and receptor removal, demonstrating that cellular memory of past stimuli is encoded in cognate receptor abundances.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47-C51 are supported by cross-ligand experiments shown in Figure 6a-b and supplement 1. The ligand-specific desensitization and receptor removal patterns provide strong evidence for the receptor-based memory mechanism, though some cross-talk is observed.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:41:18.007230Z"
+    },
+    {
+      "id": "5c98a7a4-9ec1-4243-a0ac-615249b96be8",
+      "content_id": "e4c8e025-a6a8-45da-8a56-d99ec4d28577",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "HGF-induced pAkt phosphorylation depends primarily on HGF fold change across 0.1-1 ng/ml background concentrations, with log-linear dependence on fold change.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52-C53 are supported by experimental data in Figure 6c-d showing relative sensing for HGF (r\u00b2=0.88, p<10\u207b\u2076). This demonstrates that the relative sensing mechanism generalizes to another growth factor, though the concentration range is slightly narrower than for EGF.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:41:18.007230Z"
+    },
+    {
+      "id": "89993907-1a9c-4030-aee9-103c9474eff5",
+      "content_id": "e4c8e025-a6a8-45da-8a56-d99ec4d28577",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "FoxO3 nuclear-to-cytoplasmic ratio reflects relative rather than absolute EGF changes, demonstrating that relative sensing is transmitted to downstream effectors of the PI3K-Akt pathway.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57-C58 are supported by FoxO3 localization data in Figure 7 and supplement 1. The statistical analysis (Wilcoxon rank sum test, p<0.01) shows significant differences for fold changes but not absolute levels, confirming downstream transmission of relative sensing.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:41:18.007230Z"
+    },
+    {
+      "id": "be924373-95d1-4f08-93cf-b66d07d8e7ff",
+      "content_id": "e4c8e025-a6a8-45da-8a56-d99ec4d28577",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Mammalian cells use a novel non-transcriptional mechanism of relative sensing based on receptor abundance, where cells encode past stimulation in surface receptor abundance regulated by signal-dependent endocytosis, demonstrated for EGF and HGF.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2-C5 represent the main conclusion synthesized from all experimental and computational results. The mechanism is well-supported by converging evidence from multiple experiments, though the term 'novel' requires careful interpretation as receptor endocytosis itself is well-established.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:41:18.007230Z"
+    },
+    {
+      "id": "aed41589-bced-4903-a1dc-7520042937cd",
+      "content_id": "e4c8e025-a6a8-45da-8a56-d99ec4d28577",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Receptor endocytosis allows cells to monitor environmental signals by adjusting surface receptor numbers, creating signal-specific memory through selective receptor removal, enabling relative sensing through combined logarithmic response and memory.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59-C62 represent mechanistic interpretations supported by the experimental data and modeling. The logic is sound and consistent with observations, though these are higher-level interpretations rather than direct experimental findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:41:18.007230Z"
+    },
+    {
+      "id": "671daf36-da3b-49cc-ab15-9a20216763e8",
+      "content_id": "e4c8e025-a6a8-45da-8a56-d99ec4d28577",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The study describes a non-transcriptional mechanism operating on fast timescales (5-15 min), though sustained transcription and translation are necessary for receptor production to maintain the sensing mechanism.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C64-C66 are supported by the rapid pAkt response kinetics (Figure 1a) and logical inference about receptor production requirements. The distinction between non-transcriptional response and transcription-dependent receptor maintenance is clearly articulated.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:41:18.007230Z"
+    },
+    {
+      "id": "e484ec58-7887-4533-844a-0b336ba27eaf",
+      "content_id": "e4c8e025-a6a8-45da-8a56-d99ec4d28577",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Excess receptors may provide a large dynamic range for memorizing multiple ligand stimulation levels, and similar mechanisms may operate in other receptor systems including GPCRs and glutamate receptors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C69-C71 are speculative extensions supported by citations (C70) but not directly tested in this study. While the hypothesis about excess receptors (C69) is reasonable given the data, and signal-mediated removal occurs in other systems (C70), the generalization (C71) remains to be experimentally validated.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:41:18.007230Z"
+    },
+    {
+      "id": "1ca16ad2-0b5d-4ab9-9a2d-b4d5f9c110b3",
+      "content_id": "e4c8e025-a6a8-45da-8a56-d99ec4d28577",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Relative sensing enables cellular decision-making in fluctuating environments and has been previously demonstrated in bacterial chemotaxis, ERK/\u03b2-catenin signaling, NF-\u03baB/TGF-\u03b2 pathways, and plant light sensing.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C6-C9 provide background context supported by appropriate citations to prior literature. These establish the broader significance of relative sensing across biological systems, though they represent prior work rather than findings of this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:41:18.007230Z"
+    },
+    {
+      "id": "3b08fe3b-eaf0-4c1f-9cb7-77c653b5441b",
+      "content_id": "e4c8e025-a6a8-45da-8a56-d99ec4d28577",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Akt is a central hub of growth factor signaling implicated in multiple diseases, and the logarithmic EGFR phosphorylation response has been previously attributed to receptor heterogeneity and cooperativity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10-C11 and C16 provide biological context supported by appropriate citations. These establish the importance of the Akt pathway and prior mechanistic understanding of EGFR activation, serving as background for the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:41:18.007230Z"
+    },
+    {
+      "id": "cb35d5a7-20c8-42b5-af9c-24ac3cd7132a",
+      "content_id": "e4c8e025-a6a8-45da-8a56-d99ec4d28577",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Background biological knowledge about SC79, HGF/cMet signaling, FoxO3 regulation, transcriptional buffering, and EGFR abundance is established by prior literature.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22, C45-C46, C54-C56, C63, C67-C68 represent established biological knowledge supported by appropriate citations. These provide necessary context but are not findings of the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:41:18.007230Z"
+    },
+    {
+      "id": "ce735f8b-0bb3-4a07-ab69-37838a998f0a",
+      "content_id": "e4c8e025-a6a8-45da-8a56-d99ec4d28577",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "MCF10A cells were authenticated and tested for contamination, and the computational model incorporated literature-based assumptions about receptor trafficking and phosphorylation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C72-C74 describe proper experimental controls for cell authentication and quality control. Claims C75-C78 describe model assumptions based on literature. These are appropriate methodological details that support the rigor of the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:41:18.007230Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "1af5e910-207c-405c-a47d-8e8627cc4b13",
+      "result_id": "9681f48d-d8b0-4bb9-8140-82f644e9c907"
+    },
+    {
+      "claim_id": "c851d64a-f5d2-4b3f-b115-9f3c82403989",
+      "result_id": "9681f48d-d8b0-4bb9-8140-82f644e9c907"
+    },
+    {
+      "claim_id": "792d5702-1a48-4fd6-9b17-2fa608b3e6e5",
+      "result_id": "9681f48d-d8b0-4bb9-8140-82f644e9c907"
+    },
+    {
+      "claim_id": "94df011b-087f-41f2-80bb-bbdfe75a866c",
+      "result_id": "9681f48d-d8b0-4bb9-8140-82f644e9c907"
+    },
+    {
+      "claim_id": "cdd7a20d-0ce6-4b65-b4e3-55078d274f28",
+      "result_id": "9681f48d-d8b0-4bb9-8140-82f644e9c907"
+    },
+    {
+      "claim_id": "af55b0bd-c8d7-42c1-b951-62bc479edad1",
+      "result_id": "cd7b595d-8a1a-4699-b103-a2ae9f925c3a"
+    },
+    {
+      "claim_id": "87df2f64-7730-43f8-82f1-6f2abec9614d",
+      "result_id": "cd7b595d-8a1a-4699-b103-a2ae9f925c3a"
+    },
+    {
+      "claim_id": "07b1c6b8-2302-4853-8811-c9eb7f7b5de9",
+      "result_id": "cd7b595d-8a1a-4699-b103-a2ae9f925c3a"
+    },
+    {
+      "claim_id": "ee9d8420-d394-4b3b-827d-69f13eb05b2b",
+      "result_id": "cd7b595d-8a1a-4699-b103-a2ae9f925c3a"
+    },
+    {
+      "claim_id": "92cf83af-0c6e-4546-bdde-57162c39ea9e",
+      "result_id": "cd7b595d-8a1a-4699-b103-a2ae9f925c3a"
+    },
+    {
+      "claim_id": "1059ab61-b888-4271-9f6e-1ba9d6cbd0bc",
+      "result_id": "cd7b595d-8a1a-4699-b103-a2ae9f925c3a"
+    },
+    {
+      "claim_id": "50380d8e-0925-4f53-9566-b82f027a5e42",
+      "result_id": "ad8f619e-cad2-48d7-95db-7a09bc410864"
+    },
+    {
+      "claim_id": "e5475a98-d102-42b0-a179-7edd15664a89",
+      "result_id": "ad8f619e-cad2-48d7-95db-7a09bc410864"
+    },
+    {
+      "claim_id": "601bdbb6-5f7c-4cff-846d-5c1f2e559631",
+      "result_id": "ad8f619e-cad2-48d7-95db-7a09bc410864"
+    },
+    {
+      "claim_id": "19987113-79f1-4a71-b355-b4f5f99cf270",
+      "result_id": "ad8f619e-cad2-48d7-95db-7a09bc410864"
+    },
+    {
+      "claim_id": "47e54535-e051-4067-b922-57021acced70",
+      "result_id": "ad8f619e-cad2-48d7-95db-7a09bc410864"
+    },
+    {
+      "claim_id": "0303d185-add4-4eb4-98b3-88f194db0ae9",
+      "result_id": "ad8f619e-cad2-48d7-95db-7a09bc410864"
+    },
+    {
+      "claim_id": "a462d0d0-1d6e-4b21-afec-08dc5432a374",
+      "result_id": "ff21e1a5-02a8-4c8d-a88e-93f5ac3fc34a"
+    },
+    {
+      "claim_id": "a30917f0-e93a-4889-a9b3-2852b5d71ba9",
+      "result_id": "ff21e1a5-02a8-4c8d-a88e-93f5ac3fc34a"
+    },
+    {
+      "claim_id": "db66e81b-0aba-4573-9bb1-df9f7998a433",
+      "result_id": "ff21e1a5-02a8-4c8d-a88e-93f5ac3fc34a"
+    },
+    {
+      "claim_id": "2aaabacc-4eaf-4043-96b1-bea58f985306",
+      "result_id": "ff21e1a5-02a8-4c8d-a88e-93f5ac3fc34a"
+    },
+    {
+      "claim_id": "412050cb-ef67-456b-928c-1579a38fafd4",
+      "result_id": "ea700b2c-b84a-4723-b282-040bcdd7ed57"
+    },
+    {
+      "claim_id": "a4207792-a631-4455-bb27-d1d1bcad9f22",
+      "result_id": "ea700b2c-b84a-4723-b282-040bcdd7ed57"
+    },
+    {
+      "claim_id": "9351f6d9-4b2f-43c7-924c-a225a7158f70",
+      "result_id": "ea700b2c-b84a-4723-b282-040bcdd7ed57"
+    },
+    {
+      "claim_id": "b0ebab9c-691d-4fcb-9138-5e7770f99fe0",
+      "result_id": "ea700b2c-b84a-4723-b282-040bcdd7ed57"
+    },
+    {
+      "claim_id": "b0999d20-0231-46df-be79-87cd3c34432d",
+      "result_id": "ea700b2c-b84a-4723-b282-040bcdd7ed57"
+    },
+    {
+      "claim_id": "944649d9-c492-44b9-ad74-8c325ad002b2",
+      "result_id": "290c7de9-a40a-47bb-b7d2-e33af0afc085"
+    },
+    {
+      "claim_id": "fdb43837-5a02-4af5-b5ed-b3131fd81e69",
+      "result_id": "290c7de9-a40a-47bb-b7d2-e33af0afc085"
+    },
+    {
+      "claim_id": "0f1829d1-7bfc-4ec6-a463-527e48a8375b",
+      "result_id": "290c7de9-a40a-47bb-b7d2-e33af0afc085"
+    },
+    {
+      "claim_id": "92a8aca1-ec35-47b5-9781-7fec4309252e",
+      "result_id": "290c7de9-a40a-47bb-b7d2-e33af0afc085"
+    },
+    {
+      "claim_id": "26f81ff2-f9b9-4219-a66c-709cf7dc35e9",
+      "result_id": "290c7de9-a40a-47bb-b7d2-e33af0afc085"
+    },
+    {
+      "claim_id": "57000b74-0a35-43d8-a354-3bc4ce1be4c8",
+      "result_id": "5c98a7a4-9ec1-4243-a0ac-615249b96be8"
+    },
+    {
+      "claim_id": "1e74b7b1-7a0f-4704-904d-c00ad97a67f0",
+      "result_id": "5c98a7a4-9ec1-4243-a0ac-615249b96be8"
+    },
+    {
+      "claim_id": "44569123-e4d7-4915-80b7-ef346c7c5497",
+      "result_id": "89993907-1a9c-4030-aee9-103c9474eff5"
+    },
+    {
+      "claim_id": "fbdcd49d-8a7e-42ab-8f6b-84455baa4897",
+      "result_id": "89993907-1a9c-4030-aee9-103c9474eff5"
+    },
+    {
+      "claim_id": "cf8ef213-d50e-4d7c-91bb-4e671735d3ec",
+      "result_id": "be924373-95d1-4f08-93cf-b66d07d8e7ff"
+    },
+    {
+      "claim_id": "989f72de-bf35-408b-80e8-05b6accea795",
+      "result_id": "be924373-95d1-4f08-93cf-b66d07d8e7ff"
+    },
+    {
+      "claim_id": "31e293e9-e01f-476e-90b6-395534acb95b",
+      "result_id": "be924373-95d1-4f08-93cf-b66d07d8e7ff"
+    },
+    {
+      "claim_id": "0b250d5a-c2c0-4a9b-ae6d-ca683e3f62f1",
+      "result_id": "be924373-95d1-4f08-93cf-b66d07d8e7ff"
+    },
+    {
+      "claim_id": "10810722-0721-4d4a-b5c4-8f7a3016e204",
+      "result_id": "aed41589-bced-4903-a1dc-7520042937cd"
+    },
+    {
+      "claim_id": "c4e13a9c-0f43-47db-9df8-e30aa2e81cbb",
+      "result_id": "aed41589-bced-4903-a1dc-7520042937cd"
+    },
+    {
+      "claim_id": "e0cbc883-43de-4e35-a088-1664d488b1c3",
+      "result_id": "aed41589-bced-4903-a1dc-7520042937cd"
+    },
+    {
+      "claim_id": "e45a54cb-f2f0-464b-a279-2bd00a79b09e",
+      "result_id": "aed41589-bced-4903-a1dc-7520042937cd"
+    },
+    {
+      "claim_id": "09602714-26a4-44b4-9182-176cb1a2cb49",
+      "result_id": "671daf36-da3b-49cc-ab15-9a20216763e8"
+    },
+    {
+      "claim_id": "43308663-d6e3-470e-bab1-c93ca6e15bda",
+      "result_id": "671daf36-da3b-49cc-ab15-9a20216763e8"
+    },
+    {
+      "claim_id": "c936e7c3-7d41-48af-a081-e1bb197eae08",
+      "result_id": "671daf36-da3b-49cc-ab15-9a20216763e8"
+    },
+    {
+      "claim_id": "d066491c-45cc-4fa1-997a-2579e3c25588",
+      "result_id": "e484ec58-7887-4533-844a-0b336ba27eaf"
+    },
+    {
+      "claim_id": "e98382aa-a32c-4de1-923b-1b535881e812",
+      "result_id": "e484ec58-7887-4533-844a-0b336ba27eaf"
+    },
+    {
+      "claim_id": "d4890e4b-4989-4f7f-8eec-f53b6733a9fd",
+      "result_id": "e484ec58-7887-4533-844a-0b336ba27eaf"
+    },
+    {
+      "claim_id": "b116591e-3243-44d8-b4a9-e4502a62969a",
+      "result_id": "1ca16ad2-0b5d-4ab9-9a2d-b4d5f9c110b3"
+    },
+    {
+      "claim_id": "44b40bf7-6b9a-4f29-843b-d504fe3543cb",
+      "result_id": "1ca16ad2-0b5d-4ab9-9a2d-b4d5f9c110b3"
+    },
+    {
+      "claim_id": "18dfb9b6-8ce4-4a96-85ab-f5101a33203c",
+      "result_id": "1ca16ad2-0b5d-4ab9-9a2d-b4d5f9c110b3"
+    },
+    {
+      "claim_id": "e99d0960-0dc8-4e56-b81b-8fad231dba7d",
+      "result_id": "1ca16ad2-0b5d-4ab9-9a2d-b4d5f9c110b3"
+    },
+    {
+      "claim_id": "bea97370-f9a5-45ca-9027-715a8eea1913",
+      "result_id": "1ca16ad2-0b5d-4ab9-9a2d-b4d5f9c110b3"
+    },
+    {
+      "claim_id": "765b6a7a-b292-4968-849c-1fedba4ccfab",
+      "result_id": "3b08fe3b-eaf0-4c1f-9cb7-77c653b5441b"
+    },
+    {
+      "claim_id": "e3a1c513-f29e-4409-ae16-27cb341327ff",
+      "result_id": "3b08fe3b-eaf0-4c1f-9cb7-77c653b5441b"
+    },
+    {
+      "claim_id": "621d34ca-4ae7-4a95-880f-8ec983ccb3ef",
+      "result_id": "3b08fe3b-eaf0-4c1f-9cb7-77c653b5441b"
+    },
+    {
+      "claim_id": "b4a3673a-5551-4213-aef4-47e2f7897863",
+      "result_id": "cb35d5a7-20c8-42b5-af9c-24ac3cd7132a"
+    },
+    {
+      "claim_id": "be8c0d34-6733-453d-896d-d26ee19472db",
+      "result_id": "cb35d5a7-20c8-42b5-af9c-24ac3cd7132a"
+    },
+    {
+      "claim_id": "f0e614d5-e2ef-48b2-b48e-c7745e6a96b1",
+      "result_id": "cb35d5a7-20c8-42b5-af9c-24ac3cd7132a"
+    },
+    {
+      "claim_id": "bb369687-aae4-408a-b420-134c00e1bac0",
+      "result_id": "cb35d5a7-20c8-42b5-af9c-24ac3cd7132a"
+    },
+    {
+      "claim_id": "4db72d71-8b87-4b84-bb5e-07f6ebbb25e0",
+      "result_id": "cb35d5a7-20c8-42b5-af9c-24ac3cd7132a"
+    },
+    {
+      "claim_id": "d9eb7aca-3483-4284-bcd6-2d6f85cbb79f",
+      "result_id": "cb35d5a7-20c8-42b5-af9c-24ac3cd7132a"
+    },
+    {
+      "claim_id": "c8fa4947-535d-4f62-adde-6071829e93e6",
+      "result_id": "cb35d5a7-20c8-42b5-af9c-24ac3cd7132a"
+    },
+    {
+      "claim_id": "e48b1586-a0d3-40ea-8af1-89a4d34a6829",
+      "result_id": "cb35d5a7-20c8-42b5-af9c-24ac3cd7132a"
+    },
+    {
+      "claim_id": "c7121921-ae38-454b-9eb7-d5b840ad0011",
+      "result_id": "cb35d5a7-20c8-42b5-af9c-24ac3cd7132a"
+    },
+    {
+      "claim_id": "92091d6d-10a0-4124-bb8a-47db23346c47",
+      "result_id": "ce735f8b-0bb3-4a07-ab69-37838a998f0a"
+    },
+    {
+      "claim_id": "99d836c8-37dd-4eba-8d36-4ddb19709425",
+      "result_id": "ce735f8b-0bb3-4a07-ab69-37838a998f0a"
+    },
+    {
+      "claim_id": "fff3c6e7-1ab1-41fc-9972-85e07b0b88ac",
+      "result_id": "ce735f8b-0bb3-4a07-ab69-37838a998f0a"
+    },
+    {
+      "claim_id": "4a60ee8d-b226-4a91-939d-4fff28b2a003",
+      "result_id": "ce735f8b-0bb3-4a07-ab69-37838a998f0a"
+    },
+    {
+      "claim_id": "24224e95-41d3-4592-9537-2c161b4b0eac",
+      "result_id": "ce735f8b-0bb3-4a07-ab69-37838a998f0a"
+    },
+    {
+      "claim_id": "23d060c9-e9fc-46d7-8332-9c4133cf21a3",
+      "result_id": "ce735f8b-0bb3-4a07-ab69-37838a998f0a"
+    },
+    {
+      "claim_id": "afe70f08-b2ae-4b7a-8fa9-c6fcee85554c",
+      "result_id": "ce735f8b-0bb3-4a07-ab69-37838a998f0a"
+    }
+  ],
+  "comparisons": []
+}

@@ -1,0 +1,234 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C96",
+      "C97"
+    ],
+    "result": "The nferX platform integrates knowledge synthesis from over 100 million biomedical documents (including COVID-19 Open Research Dataset) with single-cell RNA-seq analysis of over 2.2 million cells from over 50 tissue types. The platform uses unsupervised neural networks to recognize 300 million searchable tokens and computes local scores (from pointwise mutual information) and global scores (from word2vec cosine similarity in 300-dimensional space) to quantify conceptual associations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C20-C26 provide consistent quantitative specifications of the platform's capabilities with explicit data sources. Claims C96-C97 describe the platform's functionality and novelty. The methodology is clearly described with appropriate technical details including the neural network approach, dimensionality, and scoring metrics. The integration of literature synthesis with scRNAseq data represents the core technical contribution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C27",
+      "C28",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C98",
+      "C99"
+    ],
+    "result": "ACE2 expression profiling across respiratory tissues identifies multiple potential SARS-CoV-2 infection sites including tongue keratinocytes, olfactory epithelial cells, club cells, ciliated cells, and type II pneumocytes. Despite generally low expression (<10% of cells in most respiratory populations), literature triangulation and correlation with surfactant protein genes support type II pneumocytes as likely targets, while club cells represent an underappreciated reservoir.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C5, C27-C28, C38-C55, C98-C99 collectively demonstrate ACE2 expression patterns across respiratory tissues using multiple modalities (scRNAseq, bulk RNA-seq, IHC, proteomics). The statistical support is strong (C44: hypergeometric p=1.1\u00d710\u207b\u00b9\u2070 for surfactant gene correlations). The integration of low scRNAseq expression data with literature associations and prior experimental evidence (C43: multiple citations) provides robust triangulation. The identification of novel sites (tongue keratinocytes, club cells) is appropriately qualified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C29",
+      "C30",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "The gut represents a putative COVID-19 hotspot where ACE2, DPP4, and ANPEP display coordinated, maturation-correlated transcriptional signatures in small intestinal enterocytes. ACE2 expression increases synchronously with enterocyte maturation, with minimal expression in stem/transit amplifying cells but robust expression (>40% of cells) in mature enterocytes. DPP4 shows the second highest correlation to ACE2 (r=0.95) among ~18,500 genes in GTEx small intestine samples.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C7, C60-C71, C105-C107 demonstrate a novel maturation-correlated expression pattern across all known coronavirus receptors in intestinal enterocytes. The finding is validated across multiple modalities: murine scRNAseq (C61-C62, C66-C67), human scRNAseq (C68), and bulk RNA-seq (C69-C70 with strong correlation r=0.95). The authors appropriately claim this as the first demonstration (C62, C71). The connection to fecal-oral transmission (C30, C107) is appropriately qualified as amplifying potential rather than proving causation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "Tongue keratinocytes show robust ACE2 expression that is underappreciated in the literature (weak local context score). This finding correlates with clinical reports of dysgeusia in COVID-19 patients. One recent study found ACE2 expression in ~0.5% of recovered tongue epithelial cells, though the dataset was not made publicly accessible.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C56-C59, C100-C104 identify tongue keratinocytes as a novel ACE2-expressing population with clinical relevance. However, the evidence is limited: weak literature association (C56-C57), only one prior report with inaccessible data showing very low expression (C104: ~0.5%), and correlation with dysgeusia is observational rather than mechanistic (C59, C100). The authors appropriately propose this as a hypothesis requiring validation (C58) rather than a definitive finding. Additional expression data from human tongue samples is explicitly needed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C108"
+    ],
+    "result": "In kidney proximal tubule epithelial cells, ACE2, DPP4, and ANPEP are robustly co-expressed and show coordinated expression patterns similar to those observed in small intestinal enterocytes. Among ~27,000 human proximal tubule cells, DPP4 and ANPEP are among the genes with most similar expression profiles to ACE2, validated by bulk RNA-seq correlations in GTEx kidney samples.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C74, C108 demonstrate transcriptional mirroring of coronavirus receptors in kidney proximal tubules using both scRNAseq (C73: ~27,000 cells with citation) and bulk RNA-seq (C74: n=85 GTEx samples). The finding parallels the intestinal results and suggests a broader transcriptional network. The evidence is appropriately qualified and supported by multiple data modalities.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Respiratory tissues consistently show lower ACE2 expression compared to digestive tract and kidney across multiple data modalities (bulk RNA-seq, proteomics, IHC). Despite this low expression, SARS-CoV-2 clearly infects and replicates in respiratory tissues based on clinical evidence, suggesting that even low ACE2 levels may be biologically relevant.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C37 establish the paradox of low respiratory ACE2 expression versus clear respiratory infection. The multi-modal validation (bulk RNA-seq, proteomics, IHC) with multiple citations (C33-C35) provides strong support for the expression pattern. The inference that low expression may still be relevant (C37) is appropriately qualified and justified by clinical evidence of respiratory transmission (C36).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C31",
+      "C32"
+    ],
+    "result": "Strong ACE2 expression in murine pancreatic polypeptide and alpha cells derives from only one murine study (Tabula Muris), while ACE2 expression is not observed in gamma or alpha cells from multiple human pancreatic islet scRNAseq studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C32 appropriately identify a species-specific discrepancy in pancreatic ACE2 expression with proper citations. The authors correctly note the limitation of single-study mouse data versus multiple human studies showing no expression. This demonstrates appropriate critical evaluation of data quality and cross-species validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Systematic profiling of coronavirus receptor expression across additional tissues reveals: minimal ACE2 in heart (\u226411% of cells), adipose, and liver; discrepant ACE2 signals in testis between scRNAseq (low) and bulk/protein data (high); tissue-specific patterns for DPP4 (T cells, pancreatic alpha cells) and ANPEP (monocytes/macrophages, liver epithelium); robust TMPRSS2 in bladder/prostate epithelium; and uniformly low expression across CNS tissues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C91 provide comprehensive tissue-by-tissue profiling with appropriate quantitative details and acknowledgment of data discrepancies (e.g., C77 for testis). The systematic coverage across multiple tissues with consistent methodology supports the validity of the findings. The authors appropriately note when findings are inconclusive (C75) or discordant across modalities (C77).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "Exploratory analyses suggest age-related differences in ACE2 expression (higher in younger individuals in colon, lower in younger individuals in esophagus) and that ACE inhibitor use is associated with higher risk of respiratory edema compared to beta blockers in adverse event databases, consistent with known ACE inhibitor effects on ACE2 expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C92-C95 present exploratory demographic and pharmacological associations. However, the authors explicitly note these patterns need rigorous testing on larger, diverse samples (C92-C93). The adverse event analysis (C94) is observational and subject to confounding. While the ACE inhibitor-ACE2 connection is established (C95), the clinical implications for COVID-19 remain speculative. These represent hypothesis-generating observations rather than definitive findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "The coordinated expression of coronavirus receptors across tissues suggests a potential transcriptional network regulating receptor expression. Additional viral entry factors beyond primary receptors (SLC6A19, CEACAM1, sialylated glycans) may contribute to the coronavirus interactome.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C109-C113 present speculative interpretations and cite relevant prior work. The transcriptional network hypothesis (C109) is appropriately qualified as a suggestion based on observed co-expression patterns. The discussion of additional entry factors (C111-C113) appropriately cites structural and functional studies but represents future directions rather than findings of the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "Background context establishes the COVID-19 pandemic status, coronavirus receptor biology, and clinical features including comorbidities, gastrointestinal involvement, and multi-organ damage patterns from prior coronavirus outbreaks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C19 provide appropriate background context with proper citations to established knowledge and epidemiological data. These are well-documented facts from prior literature and public health sources (Johns Hopkins data, WHO declarations, established receptor biology) that appropriately frame the study rationale.",
+    "result_type": "MINOR"
+  }
+]

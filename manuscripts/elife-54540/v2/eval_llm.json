@@ -1,0 +1,277 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "The authors developed a MATLAB-based toolbox with a graphical user interface for analyzing mouse string-pulling behavior. The toolbox performs whole-body assessment of position and speed, and tracks body parts (body, ears, nose, hands) to estimate kinematic parameters including body length, body angle, head roll/yaw/pitch, and hand movement paths and speeds.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C15 describe the core functionality of the developed software tool. These are straightforward descriptions of the toolbox's capabilities that are demonstrated throughout the manuscript with figures and videos showing the analysis outputs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "White mice (Swiss Webster) show significantly larger variation in body positions, larger body speed, and smaller reach-cycle time compared to Black mice (C57BL/6). Statistical analyses of spatial entropy, temporal measures, and variability descriptive statistics support these differences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C25 present a comprehensive set of statistical comparisons between the two mouse strains with reported p-values and effect sizes. The findings are internally consistent across multiple analytical approaches (spatial entropy, temporal entropy, HiFD, etc.), all pointing to greater positional variability and faster movements in White mice.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Speed analysis using optical flow reveals that White mice have significantly larger mean speed than Black mice (p=0.003, effect size=2.607), with movements more localized on their body. Temporal entropy and HiFD measures of speed were larger for White mice, while skewness and Fano factor were larger for Black mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C31 present statistical findings from optical flow analysis with appropriate p-values and effect sizes. The interpretation that White mice have faster, more localized movements is consistent with the quantitative data presented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Principal component analysis shows that Black mice have significantly larger explained variance of PC1 for image sequences (p<0.0001, effect size=6.363), while White mice have larger explained variance of PC1 for speed frames (p=0.032, effect size=1.636).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C34 report PCA results with strong statistical support. The finding that Black mice show more consistent positioning (higher explained variance in PC1 of position) while White mice show more variable speeds is consistent with earlier findings about positional variability.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C35"
+    ],
+    "result": "Independent component analysis reveals that spatial entropy and sharpness of maximum projections are larger for White mice compared to Black mice across multiple measures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C35 presents multiple statistical comparisons from ICA with reported p-values and effect sizes. The findings are consistent with the overall pattern of greater variability in White mice.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C36",
+      "C37"
+    ],
+    "result": "Analysis of body masks shows significantly higher spatial entropy for mean, standard deviation, skewness, and kurtosis frames in White mice, with larger sharpness of skewness.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C37 present statistical findings with appropriate p-values and effect sizes, supported by Figure 8C. These results are consistent with the overall finding of greater positional variability in White mice.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Detailed kinematic analysis of a Black mouse shows body length increases by ~1.5% during string-pulling, body tilt remains vertical (80-90\u00b0), head rolls at ~3 Hz, head yaw moves from left to right, head pitch stays positive, and the nose stays close to the string.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C43 describe specific kinematic measurements from a representative Black mouse, supported by Figure 9 and Video 1. These are descriptive observations of the behavior with quantitative measurements that demonstrate the software's tracking capabilities.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "Hand movement analysis shows that stroke length gradually increases, vertical hand motions alternate while horizontal motions are synchronized, vertical speed is 2-3x faster than horizontal speed, and rise/fall times differ significantly between vertical and horizontal motions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C48 describe hand kinematics with statistical support for timing differences (p<0.001 for both vertical and horizontal motion comparisons). The observations are supported by Figure 10 showing position and speed traces.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "White mice show rhythmic whole-body motion and occasionally use their mouth to hold the string. While body length parameters don't differ between strains, White mice have significantly larger body linear and angular speeds (p~0.02) and significantly smaller reach-cycle time (p=0.005, effect size=2.46).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C56 present kinematic comparisons between strains with appropriate statistical tests. The finding of faster reach cycles in White mice (C56) corroborates earlier speed findings. The observations are supported by Figure 11 and Video 2.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "The heuristic algorithms achieve ~96% overall accuracy for body part detection, with higher accuracy for fur and ears compared to nose and hands. Errors for hands can reach ~100 pixels (10 mm) in high-speed frames.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C59 present accuracy benchmarking results supported by Table 1 and Figure 12. The reported accuracies and error magnitudes provide quantitative validation of the tracking algorithms, though the authors acknowledge limitations in high-speed scenarios.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "The observed behavioral differences between White and Black mice may reflect known anatomical and motor system abnormalities in albino strains, potentially leading to compensatory whole-body movements. The string-pulling procedure successfully captures strain differences and can be used for phenotyping.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C60-C61 cite prior literature on albino abnormalities, but C62 is explicitly speculative ('it is possible to speculate'). While C63 concludes the method captures strain differences (which is supported by the data), the mechanistic interpretation linking albinism to compensatory movements remains unvalidated speculation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C65",
+      "C66"
+    ],
+    "result": "The whole-body analysis approach provides a generic method for analyzing animal behavior that eliminates the need for pose estimation or tracking of body parts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C66 describe the conceptual advantage of the whole-body approach. This is supported by the demonstration that meaningful behavioral differences can be detected using aggregate spatiotemporal measures without explicit pose estimation, as shown throughout the results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "The heuristic approach depends critically on mask quality from image segmentation. Compared to machine learning methods like DeepLabCut, the presented algorithms are simpler, require less computation, can run on standard computers, and have faster lead time without requiring neural network training.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C70 present a fair comparison with ML-based approaches, acknowledging the dependency on segmentation quality (C67) while highlighting practical advantages. The comparison is supported by citations and the demonstrated functionality of the software.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C26",
+      "C73",
+      "C74"
+    ],
+    "result": "The Combined Local-Global (CLG) optical flow algorithm faithfully captures motion dynamics and was chosen because it provides better estimates than Horn-Schunck and Temporospatial methods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26, C73-C74 describe the optical flow method selection. The choice is justified by citation to prior work (Afrashteh et al., 2017) and visual validation shown in Figure 4. The algorithm successfully produces speed estimates used throughout the analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "FastICA algorithm was used for independent component analysis, and K-means clustering with empirically determined cluster numbers (3 for body/hands, 7 for string/nose) was used for color-based image segmentation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C77 describe methodological choices with appropriate citations. The empirical determination of cluster numbers (C77) is transparent about the trial-and-error approach, which is reasonable for this application.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "String-pulling is a proto-tool behavior observed across 160+ species involving rhythmical body and skilled hand movements. The task has established uses in assessing cognitive function, motivation, and injury consequences. Current analysis relies on manual annotation, but automated analysis would enable objective kinematic assessment and has promise for phenotyping transgenic mouse models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C12 provide background context supported by multiple citations to prior work. These establish the scientific rationale for developing the automated analysis tool. The claims about current limitations (C11) and potential applications (C10, C12) are reasonable given the cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C64"
+    ],
+    "result": "String-pulling behavior is homologous across species including humans, suggesting the method can be exploited for species comparisons and developing animal models of human neurological conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C64 is supported by citations to Ryait et al., 2019 and Singh et al., 2019. This represents a reasonable inference about the translational potential of the method based on the comparative behavioral literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C71",
+      "C72"
+    ],
+    "result": "The toolbox is open source under GNU GPL v3.0, and the study used 5 male C57BL/6J and 5 male Swiss Webster mice aged 3-6 months.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C72 provide factual information about software licensing and experimental subjects. These are straightforward descriptive statements that are verifiable.",
+    "result_type": "MINOR"
+  }
+]

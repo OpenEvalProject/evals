@@ -1,0 +1,229 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C35",
+      "C44"
+    ],
+    "result": "The study demonstrates that bacteria-mediated oxygen depletion triggers motility-induced phase separation in C. elegans. When thousands of worms gather on food, bacteria accumulate within aggregates via capillary effects, depleting oxygen to below 0.1%, which suppresses animal motility and promotes aggregation. Three coupled factors\u2014bacterial accumulation, aerotaxis, and population density\u2014control the entire dynamics of pattern formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C4, C20-C28, C35, and C44 collectively provide strong experimental evidence for the core mechanism. Oxygen measurements (C26-C27), fluorescence microscopy of bacterial accumulation (C21-C22), motility suppression observations (C23), and control experiments with oxygen depletion (C31-C32) converge to support this central finding. The capillary effect explanation (C24) is physically sound and the conclusion about three coupled factors (C4, C44) is well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C43"
+    ],
+    "result": "The study characterizes oxygen-dependent motility responses V(O) for N2 and npr-1 strains, revealing that npr-1 shows sharp aerotactic response with motility suppression at 7-10% oxygen, while N2 exhibits broader oxygen preference with weaker aerotactic response. These differences originate from the sensitivity of oxygen-sensing neurons URX, AQR, and PQR, and the V(O) curve directly relates neuronal sensitivity to collective behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C41 and C43 are well-supported by velocity measurements shown in Figure 2b and Video 4. The characterization of strain-specific oxygen responses is quantitative and reproducible. The attribution to specific oxygen-sensing neurons (C39) is supported by citations to prior work. The concept of indirect density-dependent suppression (C43) is a novel insight well-supported by the data comparing on-food vs off-food responses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C45",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "A mathematical model based on Keller-Segel equations with nonlinear diffusion and chemotactic sensitivity predicts that population density and aerotactic response favor instability while dispersion opposes it. Simulations predict formation of dots, stripes, and holes depending on density, which is experimentally validated: N2 forms patterns only at high density while npr-1 forms patterns even at low density.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C51 demonstrate strong agreement between theoretical predictions and experimental observations. The instability criterion (C47) is mathematically derived, simulations (C48) show predicted patterns, and experimental validation (C50-C51) confirms the density-dependent pattern formation in both strains. The model successfully captures the key difference between N2 and npr-1 strains based on their aerotactic responses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Ambient oxygen levels control pattern formation onset at fixed population density. Aggregates respond to decreasing oxygen by increasing surface area, with internal oxygen remaining low until ambient oxygen reaches 7%. In two-dimensional parameter space (density vs. oxygen), pattern formation occurs in a zone bounded by uniform distributions, with increasing density or decreasing oxygen transforming dots to stripes to holes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C60 are well-supported by systematic oxygen manipulation experiments shown in Figure 3. The oxygen measurements (C54) are quantitative, the pattern transitions (C53, C56-C57) are documented with imaging, and the two-dimensional parameter space analysis (C59-C60) shows good agreement between simulations and experiments. The observation that N2 patterns don't change significantly (C58) is consistent with their broader oxygen preference.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C93"
+    ],
+    "result": "Pattern coarsening leads to formation of large clusters with bacterial concentration gradients. The front edge has more bacteria than the back, creating a gradient with decay length \u03bb ~2-4 mm that defines swarm width. This gradient increases animal velocity toward the back, and the balance between bacterial consumption and diffusion enables swarm motility across the lawn.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C70 and C93 are supported by time-lapse imaging, fluorescence microscopy of GFP-bacteria (C65-C66), and PIV analysis (C69). The coarsening dynamics (C61) are validated by both simulation and experiment. The saturation of cluster width (C63) differs from simulations, which the authors attribute to bacterial consumption (C64)\u2014a reasonable inference. The gradient profile measurements (C66) are quantitative and the decay length concept (C67) is physically sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C5",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C88",
+      "C94"
+    ],
+    "result": "Biofilm-forming bacterial lawns (B. subtilis and P. aeruginosa) strongly alter collective dynamics due to limited bacterial diffusibility. On B. subtilis biofilms, bacteria-depleted domains form holes that grow, while on E. coli lawns holes disappear. The physical properties of the bacterial lawn, particularly diffusibility and biofilm structure, play essential roles in pattern formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C71-C76, C88, and C94 are supported by comparative experiments on different bacterial lawns shown in Figures 5-6. The observation of persistent holes on biofilms vs. disappearing holes on E. coli (C72-C74) is well-documented. However, the mechanistic explanation (C76) is acknowledged as speculative ('na\u00efve explanation'). The overall conclusion about the importance of bacterial diffusibility (C88, C94) is well-supported by the contrasting behaviors observed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "On pathogenic P. aeruginosa PA14, N2 and npr-1 show different responses than on OP50. N2 remains active and accumulates at lawn edges where bacteria diffuse from the biofilm, while npr-1 shows narrowed slowing response and accumulation around the lawn. Worms can concentrate isolated bacteria at biofilm edges but not within the tightly-packed biofilm itself.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C87 are supported by V(O) measurements on PA14 (Figure 6a,c), behavioral observations (C78, C80), and fluorescence imaging of GFP-PA14 showing finger-like structures (C84). The hypothesis about bacterial diffusion from biofilm edges (C81) is reasonable but acknowledged as speculative ('most parsimonious hypothesis'). The differential ability to concentrate bacteria (C85-C87) is directly observed in videos. The structural differences between biofilm and edges (C82-C83) are supported by citations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "At high densities, N2 worms form large aggregates at bacterial lawn entrances that gain motility and swarm across the lawn. This swarming behavior differs from previously reported solitary behavior of N2. Multiple mutant strains and various food sources show similar collective responses, suggesting that high-density conditions broadly trigger collective behavior in C. elegans.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C19 are well-supported by experimental observations in Figure 1 and Videos 1-2. The swarming behavior is clearly documented with imaging and cryo-SEM (C14-C15). The comparison with prior literature (C16) is appropriate. Testing multiple mutants (C17) and food sources (C18) strengthens the generality of the finding. The conclusion about broad triggering (C19) is a reasonable inference from the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C6",
+      "C45"
+    ],
+    "result": "The theoretical model based on Keller-Segel equations captures behavioral differences resulting from genetic variations and oxygen sensitivity between strains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6 and C45 are supported by the mathematical model derivation and simulations that successfully predict strain-specific behaviors. The model incorporates experimentally measured V(O) curves and reproduces the observed differences between N2 and npr-1 in pattern formation across different densities and oxygen levels.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Animals experience average oxygen levels from both ambient environment and swarm liquid. Worms can access oxygen from the air via body extension on swarm surface and from lateral diffusion through wet agar. Control experiments with glass slides and Na2SO3 validate these oxygen sources, and oxygen depletion alone can initiate aggregation in bacteria-free regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C34 are supported by cryo-SEM images (C29), control experiments shown in Figure 2\u2014figure supplement 2 (C31-C32), and observations with thick bacterial lawns (C33). The physical reasoning about oxygen sources (C30) is sound. The Na2SO3 experiment (C32) provides strong evidence that oxygen depletion alone is sufficient for aggregation. The conclusion about average oxygen experience (C34) is a reasonable inference from the data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C95"
+    ],
+    "result": "The study identifies four essential factors controlling pattern formation: (1) hydrodynamic interactions initiate bacterial accumulation, (2) oxygen-dependent motility controls competition between aerotaxis and dispersion, linking neuronal sensitivity to collective response, (3) population density compensates for neuronal sensitivity to convert solitary behavior to aggregation, and (4) collective dynamics is driven by slowing-down response.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C92 and C95 represent the main conclusions synthesizing the study's findings. These are well-supported by the collective evidence from experiments and modeling. Each factor is individually validated: bacterial accumulation (C21-C25), oxygen-dependent motility (C36-C41), density effects (C50-C51), and slowing response (C23, C43). The integration of these factors into a coherent framework is a key contribution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C42"
+    ],
+    "result": "Background context establishing that animals form complex patterns through various factors, C. elegans is a suitable model organism with known collective behaviors, and oxygen sensitivity is a main source of variation in these behaviors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C7-C13, and C42 provide background context supported by citations to established literature. These claims accurately represent prior knowledge in the field and appropriately set up the motivation for the current study. The characterization of C. elegans as a model system (C8) and the role of oxygen sensitivity (C10-C11) are well-established in the literature.",
+    "result_type": "MINOR"
+  }
+]

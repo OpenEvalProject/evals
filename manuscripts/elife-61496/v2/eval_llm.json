@@ -1,0 +1,328 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C5",
+      "C27",
+      "C28",
+      "C6",
+      "C7",
+      "C33",
+      "C34",
+      "C103",
+      "C104"
+    ],
+    "result": "The authors obtained cryo-EM structures of ClpXP bound to the ssrA degron at 3.1-3.2 \u00c5 resolution, revealing two distinct conformational states: a recognition complex where the degron binds in the top of a closed ClpX channel, and an intermediate complex where the degron has moved ~25 \u00c5 (six residues) deeper into an open channel. These two complexes accounted for 92% of singly capped ClpXP particles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The cryo-EM data collection, processing, and structural determination are well-documented with appropriate resolution metrics (C27, C28). The observation of two distinct conformational states with clear side-chain density for the ssrA degron (C34) represents a significant advance over prior structures. The structural transition between closed and open channel states is quantified and supported by density maps.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C70",
+      "C94"
+    ],
+    "result": "In the recognition complex, the ssrA degron is contacted by RKH, pore-1, and pore-2 loops of ClpX, with access to the lower channel blocked by a previously unvisualized conformation of the pore-2 loop of subunit A. Only two pore-1 loops (from subunits A and B) contact the degron in this state. Specific interactions include hydrogen bonds between Thr199/Val154 and the C-terminal carboxylate, and hydrophobic contacts with the terminal alanines.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The structural observations are directly supported by cryo-EM density (C37-C43) and represent a novel finding compared to all previous AAA+ protease structures (C39). The closed-channel conformation with limited pore-loop contacts is clearly distinct from the intermediate complex and provides a structural basis for specific degron recognition.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C49",
+      "C50",
+      "C96",
+      "C97"
+    ],
+    "result": "Biochemical validation demonstrates that mutations in the C-terminal alanines of the ssrA tag increase KM for degradation without affecting Vmax, and that ClpX mutations at positions identified in the recognition complex (T199A/V, V202A, H230A) cause large increases in KM. The conservative T199S mutation increases KM only ~4-fold, supporting the importance of the hydrogen bond between Thr199 and the degron carboxylate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The biochemical data (C44, C45, C49, C50) provide strong validation of the structural observations. The mutagenesis results are consistent with the specific contacts observed in the recognition complex structure, and the differential effects of T199S vs. T199A/V support the proposed hydrogen bonding interaction. Statistical significance is reported for the peptide degradation assays.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C59",
+      "C106"
+    ],
+    "result": "In the intermediate complex, five ClpX pore-1 loops and four pore-2 loops pack against degron side chains with a periodicity of two residues, similar to previously observed translocation complexes. The specific contacts observed in the recognition complex are absent in this state, consistent with non-specific translocation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The structural features of the intermediate complex (C55) are well-supported by cryo-EM data and consistent with prior structures of ClpXP and other AAA+ machines (C56, C106). The loss of specific recognition contacts (C59) is directly observable in the structures and supports the proposed transition from specific recognition to non-specific translocation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C85"
+    ],
+    "result": "Degradation assays with GFP substrates bearing degrons of different lengths show that GFP-laa (3 residues) is not degraded, while GFP-yalaa (5 residues) and longer degron substrates are robustly degraded. Molecular modeling indicates that GFP-yalaa can dock with ClpX in the recognition complex conformation, while GFP-laa is too short to make the necessary contacts without steric clashes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The degradation data (C78, C79) are clear and reproducible with reported KM and Vmax values. The molecular modeling (C80, C81) is based on the high-resolution cryo-EM structure and provides a structural explanation for the length dependence. The conclusion that unfolding can occur directly from the recognition complex (C85) is well-supported by the combination of structural and biochemical data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "The nucleotide states differ between the two complexes: in the recognition complex, subunits ABCDE contain ATP/ATP\u03b3S and subunit F contains ADP, while in the intermediate complex, subunit A is nucleotide-free and subunits BCDEF contain ATP/ATP\u03b3S. The six-residue offset between complexes is consistent with optical-trap measurements showing 5-8 amino acid translocation steps.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The nucleotide occupancy is directly observable in the cryo-EM structures (C86, C87). The correlation with prior optical-trap data (C89) provides independent validation. The inference about ATP hydrolysis driving the transition (C88) is plausible but appropriately presented as speculative given the static nature of the structures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C69",
+      "C71",
+      "C90",
+      "C91"
+    ],
+    "result": "The authors propose a degron-length-dependent unfolding mechanism: short-degron substrates can be unfolded directly from the closed-channel recognition complex with just two pore-1 loop contacts, while long-degron substrates require progression to an open-channel engaged complex with five pore-1 loop contacts before unfolding occurs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This mechanistic model integrates the structural data (two distinct complexes), biochemical data (length-dependent degradation), and prior biophysical measurements. The model is well-supported by the observation that GFP-yalaa (5 residues) is degraded while GFP-laa (3 residues) is not, and by the structural compatibility of GFP-yalaa with the recognition complex.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C98",
+      "C101"
+    ],
+    "result": "The closed axial channel in the recognition complex, created by the blocking pore-2 loop of subunit A, prevents non-specific binding and degron-independent degradation. Only after specific recognition of the ssrA degron does the pore-2 loop move to permit deeper channel interactions with any polypeptide sequence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The structural observation of the closed channel (C61) is novel and well-supported by the cryo-EM data. The functional inference about preventing non-specific degradation (C62, C98) is logical and consistent with the known promiscuity of ClpXP for diverse sequences during translocation. This provides an elegant solution to the specificity problem.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "The recognition and intermediate complexes likely correspond to the first two of three kinetically defined substrate-bound states identified in prior single-molecule studies. Conversion between these states depends on ATP hydrolysis, as does formation of the third state (fully engaged complex).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The correlation with prior kinetic data (C63) provides independent validation of the structural findings. The inference connecting the first two kinetic states to the recognition and intermediate complexes (C64) is well-reasoned. The ATP-dependence (C65, C66) is supported by both the kinetic studies and the nucleotide states observed in the structures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C95"
+    ],
+    "result": "The recognition complex is structurally unique compared to all previously determined ClpXP structures, which have open channels and five pore-1 loop contacts with substrate. The closed channel and limited pore-loop engagement distinguish this initial recognition state from translocation states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The comparison with prior structures is well-documented and accurate (C93, C95). The uniqueness of the recognition complex (C92) is clearly established by the closed channel conformation and limited substrate contacts, representing a genuine structural advance in understanding AAA+ protease mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Prior biochemical studies showing that mutations in the ssrA tag (leucine, tyrosine) or ClpX residues (Y153A, V154F, R228A) increase KM, and that human ClpXP does not degrade ssrA-tagged substrates but gains this activity when transplanted with E. coli pore-2 and RKH loops, are rationalized by the recognition complex structure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims cite prior published work (C46-C48, C51-C54) and demonstrate that the new structural data provides a molecular explanation for previously unexplained biochemical observations. The integration of prior data with new structures strengthens both the structural interpretation and validates the earlier biochemical findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "The ClpX hexamer forms a shallow spiral that docks asymmetrically with a flat ClpP7 ring. The pore of the cis ClpP ring is open while the trans ClpP ring pore is closed in both new structures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These structural features (C29-C32) are consistent with prior high-resolution structures and are well-resolved in the current cryo-EM maps. The observations provide important context but represent confirmatory rather than novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Prior studies show that global GFP unfolding has a half-life of years and the C-terminal \u03b2-strand remains stably associated even when non-covalently attached. The inability of ClpXP to degrade GFP-laa argues against spontaneous denaturation of the C-terminal \u03b2-strand.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The cited prior work on GFP stability (C82, C83) is well-established. The inference about the degradation mechanism (C84) is logical and supported by the experimental data showing no degradation of GFP-laa despite the presence of the terminal alanines.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C102",
+      "C105"
+    ],
+    "result": "The experimental design used an ATP\u03b3S/ATP mixture to allow rapid substrate binding while slowing translocation and unfolding, taking advantage of ClpX's slower hydrolysis of ATP\u03b3S compared to ATP.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This methodological approach (C102, C105) is well-established in the field and appropriately applied here to capture intermediate states. The rationale is supported by prior work and the success in obtaining two distinct complexes validates the approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C9",
+      "C74",
+      "C75",
+      "C76",
+      "C108"
+    ],
+    "result": "The authors speculate that the multistep recognition and engagement mechanism observed for ClpXP may be employed by related AAA+ proteases and protein-remodeling motors, and that similar transitions from specific recognition to processive non-specific activity may be a general feature of molecular machines including those in transcription, translation, DNA replication, and protein secretion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These are speculative extrapolations (C9, C74, C76) beyond the experimental data. While the comparison is conceptually interesting and the mechanism may indeed be general, no direct evidence is provided for other AAA+ machines or other classes of molecular motors. The claims are appropriately presented as speculation but require experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "The manuscript provides extensive background on cellular protein quality control, the tmRNA system, ssrA tag structure and function, and ClpXP's role in degrading tagged proteins, establishing the biological context and prior knowledge about the system.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C1-C26) accurately represent established knowledge in the field and are appropriately cited. They provide essential context for understanding the significance of the structural work but do not constitute new findings from this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C58",
+      "C60",
+      "C99",
+      "C107"
+    ],
+    "result": "ClpXP can translocate diverse polypeptide sequences including homopolymeric tracts, and the structural feature of pore loops contacting every two residues is widely observed in AAA+ machines, suggesting a common translocation mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims cite prior work (C58, C107) and make reasonable inferences about mechanism (C60, C99). The observations are well-established in the field and provide important context for interpreting the non-specific binding mode in the intermediate complex.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C72",
+      "C73"
+    ],
+    "result": "Prior work shows that substrate residues in the upper part of the channel are gripped most tightly during unfolding of long-degron substrates, supporting a model where ClpX-substrate contacts near the top of the channel play key roles in both short- and long-degron unfolding mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The citation to prior biophysical work (C72) is appropriate and the inference about the importance of upper channel contacts (C73) is reasonable given both the prior data and the current structural findings. This helps unify the two proposed unfolding pathways.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C35",
+      "C36"
+    ],
+    "result": "In previous cryo-EM structures by the authors' group, uncharacterized substrates apparently copurified with ClpXP, while in structures by Ripstein et al., a specific substrate was used but no side-chain density was observed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These are reasonable inferences (C35) and accurate statements (C36) about prior structural work. The comparison highlights the advance represented by the current structures with clear side-chain density for a defined substrate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C77"
+    ],
+    "result": "Multisubunit enzymes in transcription, translation, DNA replication, and protein secretion require transitions from specific recognition to processive non-specific movement along polymeric substrates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This is established knowledge (C77) about molecular machines and provides useful conceptual context for understanding the ClpXP mechanism, though it does not constitute a finding of this study.",
+    "result_type": "MINOR"
+  }
+]

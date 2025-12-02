@@ -1,0 +1,274 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4"
+    ],
+    "result": "PACT is necessary for PKR activation and downstream signaling in high-intensity hyperosmotic stress. PACT knockdown in MEFs substantially reduced PKR phosphorylation at Ser-451 and eIF2\u03b1 phosphorylation at Ser-51 at 600 mOsm.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4 provide converging evidence from PACT knockdown experiments showing reduced PACT protein, reduced PKR activation (PKR-P451), and reduced eIF2\u03b1 phosphorylation. The western blot data in Figure 1B directly supports the biochemical cascade, and the conclusion that PACT is necessary for PKR activation is well-justified by the loss-of-function approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C7"
+    ],
+    "result": "PACT-PKR interaction is stress intensity-dependent, occurring only at high-intensity hyperosmotic stress (600 mOsm or 10% DSS) but not at low-intensity stress (500 mOsm or 5% DSS).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C7 are supported by co-immunoprecipitation data in Figure 1C showing no PACT-PKR complex at low intensity but clear complex formation at high intensity. This provides direct biochemical evidence for stress intensity-dependent binding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "PACT phosphorylation at Ser-246 and Ser-287 is required for PKR interaction and activation in hyperosmotic stress. Mutation of these sites (S246A or S287A) diminished PKR binding and prevented PKR autophosphorylation at Thr-451.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C11 are supported by mutational analysis in PACT KO MEFs reconstituted with phosphosite mutants. Co-IP data (Figure 1\u2014figure supplement 1A) and western blots (Figure 1\u2014figure supplement 1B) show reduced PKR interaction and activation with S246A/S287A mutants, establishing the functional importance of these phosphorylation sites.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "PACT has a pro-apoptotic role specifically in high-intensity hyperosmotic stress. PACT-PKR interaction and increased caspase-3 activity occur only at high intensity (600 mOsm), not at low intensity (500 mOsm).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C15 are supported by caspase-3 activity assays (Figure 1D) showing reduced apoptosis in shPACT cells at 600 mOsm but not at 500 mOsm. This correlates with the stress intensity-dependent PACT-PKR interaction data, providing functional evidence for PACT's pro-apoptotic role at high stress intensity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "Functional PACT-PKR signaling is necessary for maximal expression of proinflammatory genes (Nos2, Il6) at high-intensity stress. This requires PACT phosphorylation and PKR kinase activity but not PKR's dsRNA-binding ability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C21 are supported by RT-qPCR data showing reduced inflammatory gene expression in PACT-deficient cells (Figure 1E), PACT phosphosite mutants (Figure 1\u2014figure supplement 1C), and PKR kinase-dead mutants (Figure 1\u2014figure supplement 1D), but not in PKR dsRNA-binding mutants. This establishes the specific signaling requirements for inflammatory gene induction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "PACT depletion does not affect Slc38a2 mRNA induction at 3 hr of low-intensity stress but shows a decrease at 5 hr, which may involve post-transcriptional mechanisms. This decrease does not lead to apoptosis at low intensity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C22 is supported by RT-qPCR data at 3 hr, but C23 is speculative about post-transcriptional mechanisms without direct evidence. Claim C24 is supported by caspase-3 data. The interpretation of the 5 hr timepoint requires additional mechanistic validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "PACT depletion does not affect TonEBP nuclear localization but alters NF-\u03baB subunit distribution: increased nuclear c-Rel at low intensity and decreased nuclear p65 and p65-P(Ser-536) accumulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C68 are supported by nuclear fractionation western blots (Figure 2A). The data show similar TonEBP levels in shPACT cells at both stress intensities, but altered NF-\u03baB subunit localization, suggesting PACT regulates NF-\u03baB but not TonEBP nuclear translocation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "NF-\u03baB c-Rel has a pro-survival role in low-intensity hyperosmotic stress. c-Rel depletion increases caspase-3 activity, nuclear p65-P(Ser-536) accumulation, and iNOS mRNA levels at low intensity, suggesting c-Rel prevents inflammatory signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C74 are supported by caspase-3 assays (Figure 2B), nuclear fractionation (Figure 2C), and RT-qPCR (Figure 2D) in shc-Rel cells. The data consistently show that c-Rel loss shifts the response toward inflammation even at low stress intensity, supporting a novel pro-survival/anti-inflammatory role for c-Rel.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "NF-\u03baB c-Rel and TonEBP cooperatively regulate osmoadaptive genes SNAT2 (Slc38a2) and GADD34 (Ppp1r15a). Both transcription factors are required for full induction of these genes, their protein expression, and SNAT2 functionality (proline uptake).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C83 are supported by multiple complementary approaches: RT-qPCR in TonEBP KO and shc-Rel cells (Figures 2E-F), western blots for protein levels (Figures 2G-H), functional proline uptake assays (Figure 2I), and luciferase reporter assays (Figures 2J-K). The convergence of transcriptional, protein, and functional data strongly supports cooperative regulation by c-Rel and TonEBP.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "The c-Rel-dependent osmoadaptive response is conserved across different cell types (MEFs, RAW macrophages, primary human tracheal epithelial cells) and osmolytes (DSS, NaCl, sucrose), indicating a universal stress response program.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C91 are supported by RT-qPCR and western blot data across multiple cell types and osmolytes (Figures 3A-E). The consistent pattern of Slc38a2 and Ppp1r15a induction at low intensity and c-Rel dependence across different experimental systems provides strong evidence for conservation of this pathway.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C98",
+      "C99"
+    ],
+    "result": "RNA-seq analysis identified 3,963 genes differentially expressed between low and high-intensity stress, with osmoadaptive genes (SNAT2, GADD34) and NF-\u03baB inhibitors (I\u03baB\u03b1, A20) most significantly increased at low intensity, while ribosomal and oxidative phosphorylation genes increased at high intensity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C99 are supported by RNA-seq data presented in Figures 4A-C and Figure 4\u2014figure supplement 1. The statistical analysis with reported p-values and KEGG pathway analysis provide comprehensive transcriptomic evidence for stress intensity-dependent gene expression programs. The identification of specific genes and pathways is well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "TonEBP forms distinct complexes with different NF-\u03baB subunits to regulate different gene sets: TonEBP/c-Rel targets osmoadaptive genes (Slc38a2, Hspa1a, Mmp9, Ppp1r15a), TonEBP/p65 targets proinflammatory genes (Il6, Elf3, Irf1, Tnfrsf9), and some genes (Akr1b1, Slc6a6) are c-Rel-independent.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C107 are supported by systematic RT-qPCR analysis in TonEBP KO, c-Rel KD, and p65 KO cells (Figures 5B-D). The differential gene expression patterns in different knockout backgrounds provide strong evidence for distinct TonEBP complexes with specific target genes, suggesting competition between p65 and c-Rel for TonEBP binding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C108",
+      "C109"
+    ],
+    "result": "PACT-mediated signaling is required for expression of NF-\u03baB p65/TonEBP target genes including Il6, Elf3, Irf1, Tnfrsf9, Ccl2, Cxcl1, and Icam-1 at high-intensity stress.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C109 are supported by RT-qPCR data in shPACT cells (Figures 1E, 5F, and Figure 5\u2014figure supplement 1A) showing reduced expression of these proinflammatory genes. This connects PACT-PKR signaling to the p65/TonEBP transcriptional program.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "PACT/PKR activation promotes stress intensity-dependent remodeling of Rel-homology domain complexes: increasing stress intensity increases TonEBP/p65 complexes while decreasing c-Rel/p65 and c-Rel/TonEBP complexes. PKR inhibition or PACT phosphosite mutations prevent this remodeling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111-C118 are supported by extensive co-immunoprecipitation experiments with FLAG-tagged proteins under different conditions (Figures 6B-F). The data show stress intensity-dependent complex formation, PACT-dependence, and rescue by PKR inhibition or PACT mutations, providing strong mechanistic evidence for PACT/PKR-mediated transcription factor complex remodeling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "Nuclear translocation of NF-\u03baB p65 and c-Rel is modest in hyperosmotic stress (>75% remains cytoplasmic at high intensity), with altered distribution in c-Rel or PACT-deficient cells, suggesting NF-\u03baB may not be the major transcription factor activated by nuclear translocation in this stress.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C119-C123 are supported by quantitative nuclear/cytoplasmic fractionation data (Figure 7A). The quantification shows that most NF-\u03baB remains cytoplasmic even at high stress, which is an important observation distinguishing hyperosmotic stress from other inflammatory stimuli. However, the inference about NF-\u03baB not being a major factor (C123) should be tempered by the fact that even small amounts of nuclear NF-\u03baB can be transcriptionally active.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C124",
+      "C125"
+    ],
+    "result": "Despite limited nuclear translocation, c-Rel/TonEBP complexes are detected in the nucleus at basal and low-intensity stress conditions. PACT loss maintains these nuclear complexes even at high-intensity stress.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C124-C125 are supported by co-immunoprecipitation from nuclear fractions (Figure 7B). This demonstrates that the functionally relevant c-Rel/TonEBP complexes are indeed present in the nucleus where they can regulate transcription, and that PACT/PKR signaling disrupts these nuclear complexes at high stress intensity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133"
+    ],
+    "result": "The study establishes a stress intensity-sensing mechanism where PACT-PKR activation at high stress promotes dissociation of c-Rel from TonEBP and p65, shifting from c-Rel/TonEBP-mediated osmoadaptation (SNAT2, GADD34) to p65/TonEBP-mediated inflammation (IL6, Tnfrsf9).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C126-C133 represent the integrated model supported by the cumulative evidence from all experiments. The model is well-supported by: (1) stress intensity-dependent PACT-PKR interaction, (2) PACT/PKR-dependent complex remodeling, (3) differential gene expression in various knockouts, and (4) functional outcomes (apoptosis, proline uptake). The mechanistic model coherently explains the experimental observations.",
+    "result_type": "MAJOR"
+  }
+]

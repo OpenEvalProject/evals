@@ -1,0 +1,243 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "Zebrafish trunk tenocytes expressing scxa:mCherry undergo dramatic morphological changes during development, extending projections 70-80 \u03bcm by 48 hpf that form a dynamic network along the VMS, coinciding temporally with the onset of muscle contraction (20-48 hpf).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C11 provide comprehensive descriptive data from transgenic line imaging with quantitative measurements (cell counts, projection lengths, timing). The temporal correlation between muscle contraction onset and tenocyte projection formation is well-documented through time-lapse imaging and 3D reconstructions. Multiple developmental timepoints strengthen the observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "Cranial tenocytes show similar temporal correlation between muscle contraction onset and morphological changes, with tenocytes forming rounded clusters at attachment sites before contractions begin (48-62 hpf) and then undergoing compaction and elongation as contractions initiate at 72 hpf.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C17 demonstrate that the force-morphology correlation extends beyond trunk to cranial tendons. Double immunostaining with MHC and mCherry provides direct evidence linking muscle differentiation timing with tenocyte morphogenesis. The consistency across different anatomical regions strengthens the general principle.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "Paralysis via \u03b1Btx injection or cacnb1 mutation reduces tenocyte projection length by 13-15 \u03bcm (18%) and decreases branching complexity, effects that are rescued by electrical stimulation, demonstrating that mechanical force from muscle contraction is required for normal tenocyte morphogenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C26 provide strong evidence through multiple complementary approaches: pharmacological paralysis (\u03b1Btx), genetic paralysis (cacnb1 mutant), and rescue by electrical stimulation. The genetic control (C23) rules out off-target effects of \u03b1Btx. Quantitative measurements with appropriate statistics (n>50 data points, p<0.00001) support the conclusions. The rescue experiment (C21-C22) demonstrates causality rather than mere correlation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Mechanical force regulates tendon ECM composition, specifically controlling Tsp4b protein localization and gene expression at MTJs, while other ECM proteins (laminin, fibronectin) remain unaffected by paralysis, demonstrating selective force-dependent ECM regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C34 show force-dependent regulation of Tsp4b through multiple approaches: exogenous Tsp4b-GFP localization (C28-C29), endogenous immunostaining (C30), and gene expression analysis (C33). The specificity is demonstrated by negative controls showing no change in laminin or fibronectin (C31). The temporal specificity (force-independent at 24 hpf, force-dependent at 48 hpf) adds mechanistic insight. Rescue by electrical stimulation (C32) confirms causality.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "Tenocyte projections are composed of microtubules rather than F-actin, and pharmacological disruption of microtubules with Nocodazole causes projection fragmentation and reduced Tsp4b localization, indicating that microtubules are essential structural components for maintaining projections and ECM organization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C35-C39 identify microtubules as the cytoskeletal component through \u03b1-tubulin-GFP labeling (C35) and negative actin staining (C36). However, the Nocodazole experiment (C37-C38) has a significant caveat acknowledged by the authors (C82-C83): global MT destabilization affects all cells, not just tenocytes. The effects on Tsp4b and projections could be indirect through disruption of muscle function, neuronal activity, or other cell types. Cell-specific MT disruption would be needed to definitively establish the tenocyte-autonomous requirement.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Chemical inhibition of TGF\u03b2 signaling with SB431542 reduces tenocyte projection length by ~20 \u03bcm without affecting muscle contractility, indicating that TGF\u03b2 signaling acts downstream of muscle contraction to regulate tenocyte morphogenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C43 demonstrate TGF\u03b2 requirement through pharmacological inhibition with appropriate validation (pSMAD3 immunostaining, C40). The key observation that embryos remain motile (C42) distinguishes this from paralysis effects and supports the epistatic relationship. The similar magnitude of projection reduction (~20 \u03bcm) to paralysis experiments suggests TGF\u03b2 may be a major mediator of force effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Paralysis specifically reduces pSMAD3 levels in tenocyte nuclei but not muscle nuclei, and this reduction correlates with decreased projection length; electrical stimulation of paralyzed embryos rescues pSMAD3 localization, demonstrating that mechanical force activates TGF\u03b2 signaling specifically in tenocytes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C49 provide strong evidence for force-dependent TGF\u03b2 activation through immunostaining quantification showing cell-type-specific effects (C46). The contrast with SB431542 treatment (which affects both muscle and tenocytes) strengthens the interpretation. The rescue experiment (C49) demonstrates causality. The correlation with projection length (C47) links signaling to morphology. However, the mechanism of force-to-TGF\u03b2 conversion remains unclear.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Paralysis causes near-complete loss of tsp4b, tgfbip, and ctgfa expression while scxa remains unaffected; these changes are rescued by electrical stimulation and partially recapitulated by TGF\u03b2 inhibition or Nocodazole treatment, indicating that mechanical force regulates tendon-specific gene expression through TGF\u03b2 signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C55 demonstrate force-dependent gene regulation through qRT-PCR with appropriate validation by ddPCR (C52). The selective effect on ECM genes but not scxa (C50) indicates specificity rather than general tenocyte dysfunction. The rescue by stimulation (C51) confirms causality. The partial effects of TGF\u03b2 inhibition (C53) and Nocodazole (C54) are consistent with the proposed pathway, though the elevated scxa and ctgfa in Nocodazole-treated embryos (C54) suggests complexity not fully explained by the model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C85"
+    ],
+    "result": "Zebrafish tenocytes contain microtubule-rich projections required for maintaining projection structure and ECM organization, though global Nocodazole treatment prevents definitive cell-autonomous conclusions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "This duplicates and consolidates the microtubule result (C35-C39) with additional gene expression data (C85). The upregulation of scxa and ctgfa in MT-deficient embryos (C85) suggests dedifferentiation, but the global nature of Nocodazole treatment (C82-C83) prevents definitive conclusions about tenocyte-specific requirements. The inference about dedifferentiation is reasonable but speculative without additional markers.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C114",
+      "C115",
+      "C116",
+      "C121",
+      "C122"
+    ],
+    "result": "The authors propose a model where tenocyte projections function as force sensors that regulate ECM production through TGF\u03b2 signaling, creating a feedback mechanism by which tendons adapt to mechanical tension during development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C60 and C114-C122 synthesize the experimental findings into a coherent model. The model is well-supported by the data showing: (1) temporal correlation of projections with contraction, (2) force-dependence of projections, (3) force-dependent ECM organization, (4) force-dependent TGF\u03b2 activation, and (5) TGF\u03b2-dependent projection formation. However, the model remains correlative regarding the force-sensing mechanism\u2014no direct evidence shows projections themselves sense force rather than responding to force-activated signals from other sources.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "Axial tenocytes extend projections perpendicular to muscle contraction direction, distinct from cranial/limb tenocytes that extend parallel to force, suggesting axial tenocytes function as tension sensors while cranial tenocytes have structural roles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C89-C93 propose functional differences based on morphological orientation. While the morphological observations are well-documented (C90-C91), the functional interpretation (C92) is speculative. The perpendicular orientation could reflect developmental constraints, ECM organization, or other factors rather than force-sensing function. Direct functional tests (e.g., force measurements, mechanosensor localization) would be needed to support the tension-sensor hypothesis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C64",
+      "C66",
+      "C71",
+      "C75",
+      "C76"
+    ],
+    "result": "The establishment and adaptation of myotendinous junctions occurs in response to mechanical force from muscle contraction, involving coordinated changes in tenocyte morphogenesis and ECM production regulated by TGF\u03b2 signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C76 summarize the main conclusions, which are well-supported by the experimental data. The integration of morphological, molecular, and functional evidence provides strong support for force-dependent MTJ development. However, the term 'adaptation' implies ongoing adjustment to changing force levels, which is not directly tested\u2014the experiments show requirement for force but not dynamic adaptation to force magnitude changes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "Tenocyte projection formation correlates with ECM remodeling at MTJs, with initial force-independent Fn and Tsp4b expression at 24 hpf transitioning to force-dependent Tsp4b expression at 48 hpf, indicating temporal regulation of force-responsiveness.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C102 identify temporal specificity in force-dependence, with gene expression data (C33) showing no change at 24 hpf but significant reduction at 48 hpf. This temporal pattern aligns with the onset of muscle contraction and suggests developmental regulation of mechanosensitivity. The integration with prior ECM remodeling studies (C100) provides context, though the mechanism controlling this temporal switch remains unclear.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C109",
+      "C111"
+    ],
+    "result": "The authors propose that force transduction through ECM cues induces tenocyte projection formation, creating a feedback loop allowing tendons to adapt to changing mechanical force during development, exercise, and injury repair.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C109 and C111 propose a mechanistic model and broader implications. While the feedback concept is supported by the data (force \u2192 TGF\u03b2 \u2192 Tsp4b \u2192 ECM \u2192 potentially more force transmission), the specific mechanism of force transduction through ECM cues is not directly tested. The extension to exercise and injury repair (C111) is speculative, as the experiments only examine embryonic development. The model is plausible but requires validation in adult tendons and injury contexts.",
+    "result_type": "MINOR"
+  }
+]

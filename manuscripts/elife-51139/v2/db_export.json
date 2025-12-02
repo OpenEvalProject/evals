@@ -1,0 +1,1839 @@
+{
+  "submission": {
+    "id": "b881a007-16e7-4a19-aded-17b3aa71e0c7",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T13:56:06.824966Z",
+    "updated_at": "2025-12-02T13:56:06.824966Z"
+  },
+  "content": [
+    {
+      "id": "130000b4-815e-43ec-971c-66e3a6b41a78",
+      "submission_id": "b881a007-16e7-4a19-aded-17b3aa71e0c7",
+      "content_type": "manuscript",
+      "content_text": "# Diversification of the Caenorhabditis heat shock response by Helitron transposable elements\n\n## Authors\n\n- Jacob M Garrigues<sup>1</sup>\n- Brian V Tsu<sup>1</sup>\n- Matthew D Daugherty<sup>1</sup> ([ORCID: 0000-0002-4879-9603](https://orcid.org/0000-0002-4879-9603))\n- Amy E Pasquinelli<sup>1</sup> ([ORCID: 0000-0002-9511-0039](https://orcid.org/0000-0002-9511-0039)) \u2020\n\n### Affiliations\n\n1. Division of Biology University of California, San Diego San Diego United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nHeat Shock Factor 1 (HSF-1) is a key regulator of the heat shock response (HSR). Upon heat shock, HSF-1 binds well-conserved motifs, called Heat Shock Elements (HSEs), and drives expression of genes important for cellular protection during this stress. Remarkably, we found that substantial numbers of HSEs in multiple Caenorhabditis species reside within Helitrons, a type of DNA transposon. Consistent with Helitron-embedded HSEs being functional, upon heat shock they display increased HSF-1 and RNA polymerase II occupancy and up-regulation of nearby genes in C. elegans. Interestingly, we found that different genes appear to be incorporated into the HSR by species-specific Helitron insertions in C. elegans and C. briggsae and by strain-specific insertions among different wild isolates of C. elegans. Our studies uncover previously unidentified targets of HSF-1 and show that Helitron insertions are responsible for rewiring and diversifying the Caenorhabditis HSR.\n\n## Introduction\n\nHeat Shock Factor 1 (HSF-1) is a highly conserved transcription factor that serves as a key regulator of the heat shock response (HSR) (Vihervaara et al., 2018). In response to elevated temperatures, HSF-1 binds well-conserved motifs, termed heat shock elements (HSEs), and drives the transcription of genes important for mitigating the proteotoxic effects of heat stress. For example, HSF-1 promotes the expression of heat-shock proteins (HSPs) that act as chaperones to prevent HS-induced misfolding and aggregation of proteins (Vihervaara et al., 2018). More recently, HSF-1 has been identified as having non-canonical roles in transcriptional programs distinct from the HSR, such as during development (Li et al., 2016) and carcinogenesis (Mendillo et al., 2012), underscoring the importance of this ancient transcription factor.\n\nDue to the central role HSF-1 has in launching the HSR, much work has been done to determine direct HSF-1 targets by identifying associated genes under different conditions (Gonsalves et al., 2011; Guertin and Lis, 2010; Li et al., 2016; Mahat et al., 2016; Mendillo et al., 2012; Sol\u00eds et al., 2016). However, most of these studies have focused on HSF-1 binding sites that do not overlap with repetitive sequences such as transposons, potentially leaving a large gap in our understanding of the types of genes that are part of the HSR. Indeed, in previous work, we serendipitously discovered that HSF-1 promotes the expression of a full-length autonomous transposable element (TE) known as a Helitron during heat shock (Schreiner et al., 2019). Helitrons are a type of DNA transposon that are unique due to their replication and subsequent transposition occurring via a rolling-circle \u2018copy-and-paste\u2019 mechanism, which includes replication in place that results in a circular double-stranded DNA intermediate (Grabundzija et al., 2018; Kapitonov and Jurka, 2007). While Helitrons were initially discovered in plants and C. elegans (Kapitonov and Jurka, 2001), they have since been identified in a diverse range of species, including humans (Kojima, 2018; Thomas and Pritham, 2015).\n\nTransposable elements (TEs) are well-known agents of evolution that have the ability to rearrange genomes by moving DNA sequences from one region to another (Feschotte and Pritham, 2007). By providing regulatory sequences to regions within or near genes, these rearrangements can affect gene expression in cis (Bourque et al., 2018; Chuong et al., 2017). As a result, new genes can rapidly be incorporated into existing regulatory networks in a single event, bypassing a potentially lengthy process requiring multiple events to occur in both cis and trans (Sundaram and Wang, 2018). In the human genome, TEs have been proposed to supply a substantial number of functional transcription factor binding sites (Jiang and Upton, 2019; Jordan et al., 2003; Sundaram et al., 2014), underscoring their potential for shaping transcriptional programs. In a particularly striking example, endogenous retrovirus (ERV) TEs were found to harbor binding sites for core transcription factors in the mammalian interferon response and, in some cases, provide interferon-inducible enhancers for nearby genes (Chuong et al., 2016). Furthermore, systematic analyses of a set of primate-specific TEs revealed widespread enhancer roles in human embryonic stem cells (Fuentes et al., 2018; Pontis et al., 2019); a similar functional study of mouse TEs identified a small fraction that seem to act as enhancers in early development (Todd et al., 2019).\n\nAs TEs have a propensity to mobilize upon cellular stress (Chuong et al., 2017), this plasticity provides a potential means to increase genomic diversity and facilitate adaptation to harsh environments (McClintock, 1984). For example, in fission yeast, various stress conditions increase the mobilization of the Ty3/gypsy family retrotransposon Tf1, and new insertions affect the expression of adjacent genes that promote stress resistance (Esnault et al., 2019). Similarly, in Arabidopsis, the copia-type retrotransposon ONSEN becomes transcriptionally active during thermal stress and bestows heat-shock-responsiveness to genes near new insertions (Cavrak et al., 2014; Ito et al., 2011). Thus, TEs play diverse and widespread roles in shaping stress responses at the transcriptional level.\n\nOur finding that a Helitron TE includes HSEs bound by HSF-1 during heat shock (HS) prompted us to map previously published HSF-1 binding data to repetitive regions in the C. elegans genome. In doing so, we aimed to determine the extent of HSEs associated with Helitron elements and to obtain a more complete picture of HSF-1-mediated gene induction during heat shock in C. elegans. We found that over half of the HSEs in the C. elegans genome reside within Helitrons. Consistent with the Helitron-embedded HSEs being functional, many acquire HSF-1 and display increased RNA polymerase II (Pol II) occupancy after HS and are located near up-regulated genes. Unlike evolutionarily conserved and canonical HSR target genes (controlled by Helitron-independent HSEs or Hin-HSEs), we found that Helitron-acquired HSEs (Hac-HSEs) control expression of specific G protein-coupled receptor (GPCR) and collagen genes, revealing numerous previously unidentified HSF-1 targets in C. elegans. Moreover, we detected Hac-HSEs in all Caenorhabditis genomes analyzed. Interestingly, we found that different genes appear to be recruited into the HSR by species-specific Helitron insertions in C. elegans versus C. briggsae. Furthermore, we found variability in Helitron position and, therefore, HS inducibility of individual genes, even among wild isolates of C. elegans. These findings suggest that recent mobility of Helitrons has altered the HSF-1-driven transcriptional response within the C. elegans population. Our studies reveal that Helitrons have incorporated new genes into the HSR in numerous Caenorhabditis species and provide a striking example of the ability of transposable elements to act as agents of evolution by rewiring transcriptional responses and increasing variation within and among populations.\n\n## Results\n\n### HSF-1 binds HSEs located within Helitrons\n\nOur previous work showed that full-length copies of the DNA transposon Helitron1_CE contain HSF-1 binding motifs (termed heat shock elements, or HSEs) and are bound by HSF-1 during heat shock (Schreiner et al., 2019). Additionally, mRNA encoding the Helitron1_CE-embedded Rep-Helicase transposase was shown to be up-regulated during heat shock in an HSF-1-dependent manner (Schreiner et al., 2019), suggesting that some HSEs within Helitrons are functional and serve to promote expression of mRNAs. We therefore asked whether other types of Helitrons in the C. elegans genome associate with HSF-1 and contain HSEs. There are relatively few full-length copies of Helitrons in the genome and even fewer autonomous versions that are predicted to encode for a transposase (Hubley et al., 2016; Kapitonov and Jurka, 2001). Instead, the majority of the regions identified as Helitrons in the genome are non-autonomous and fragments of full-length versions, representing insertion events that have subsequently decayed throughout evolution. To determine if other types of Helitrons (both full-length and partial copies) associate with HSF-1 under non-heat shock (NHS) and heat shock (HS) conditions, publicly available HSF-1 ChIP-seq data (Li et al., 2016) were mapped to the C. elegans genome allowing for mapping to, but preventing pileup at, repetitive regions (see Materials and methods for details). After calling peaks and determining their summits, these regions were compared to annotated Helitrons in a genome-wide manner (UCSC Genome Browser RepeatMasker track, assembly ce11) to identify HSF-1-bound Helitrons. Similar to our observation with Helitron1_CE, four other types of Helitrons display HSF-1 binding in NHS conditions and increased binding during HS conditions: HelitronY4_CE, HelitronY1_CE, HelitronY1A_CE, and Helitron2_CE (Figure 1A).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/51139/elife-51139-fig1-v2.jpg)\n\n**Figure 1.:** (A) Number of Helitrons that overlap with 101 bp regions centered around HSF-1 peak summits (ChIP-seq data from Li et al. (2016); peaks called using MACS2, Zhang et al., 2008) in non-heat shock (NHS) and heat shock (HS) conditions. Helitron coordinates were obtained from the RepeatMasker track downloaded from the UCSC Genome Browser (genome assembly ce11, Kent et al., 2002). (B) De novo motifs extracted from 101 bp regions centered around HS HSF-1 peak summits using MEME (Bailey and Elkan, 1994). The HSE motif extracted from all repeat-masked HS HSF-1 peak summits is boxed with a solid purple line, while HSE-like motifs found within non-repeat-masked summits that overlap with Helitrons are boxed with a dashed black line. For repeat-masked HSF-1 peak summits, the displayed HSE motif is the most significant motif found. For Helitron-overlapping summits, displayed HSE-like motifs are within the top 10 significant motifs identified and are significantly similar to the HSE motif extracted from repeat-masked summits using the Tomtom motif comparison tool (q-value\u00a0<1.0e-03) (Gupta et al., 2007). (C) Pie chart displaying the proportions of all genomic Helitrons in which HSEs are present (black) or absent (gray). HSEs were identified by scanning the genome with FIMO (q-value\u00a0<0.05) (Grant et al., 2011) using MEME-derived output from repeat-masked HSF-1 peak summits. (D) Histograms displaying binned numbers of HSEs within all HSE-containing Helitrons found in the genome. Total numbers of HSEs that reside within each Helitron type are also shown. (E) Pie chart displaying the proportion of the C. elegans genome that is annotated as Helitron (red) or not (gray). (F) Pie chart displaying the number of HSEs in the C. elegans genome that reside within (red, hereafter referred to as Hac-HSEs) or outside of (gray, hereafter referred to as Hin-HSEs) annotated Helitrons. HSEs are significantly enriched within Helitron sequences (p<1.0e-15, binomial test). (G) Numbers of Hin- (gray) and Hac-HSEs (red) within 1 kb bins along the length of chromosome II (chrII). The approximate positions of full-length (FL) Helitron1_CE elements are shown using blue lines.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/51139/elife-51139-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Numbers of Hin- (gray) and Hac-HSEs (red) within 1 kb bins along the length of each C. elegans chromosome. The approximate positions of full-length (FL) Helitron1_CE elements are shown using blue lines.\n\nTo determine the sequence within Helitrons bound by HSF-1, MEME (Bailey and Elkan, 1994) was used to extract de novo motifs from the Helitron-overlapping HSF-1 peak summits observed during HS conditions (Figure 1B). For comparison, HSEs were also extracted from HSF-1 summit regions observed during HS that do not overlap with any repetitive sequences (Figure 1B). As expected, HSF-1 peak summits within Helitrons were enriched for HSE-like motifs that were determined to be significantly similar to the repeat-masked HSE motif using the motif-comparison tool Tomtom (Gupta et al., 2007) (q-value\u00a0<1.0e-03). Interestingly, the extended sequences in these HSE-like motifs are consistent with tandem HSEs overlapping with one another, suggesting they are repetitive in nature. Additionally, a comprehensive search for the presence of 130 experimentally determined C. elegans transcription factor binding motifs (Matys et al., 2006; Narasimhan et al., 2015; Weirauch et al., 2014) in Helitrons showed that the most enriched was the HSE (Supplementary file 1). Taken together, these findings reveal that Helitrons are enriched for HSEs and associate with HSF-1.\n\n### Helitrons harbor the majority of HSEs found in the C. elegans genome\n\nTo examine the occurrence of HSEs within different classes of Helitrons, the positions of HSEs throughout the genome were identified using FIMO (Grant et al., 2011) (q-value\u00a0<0.05) with the MEME-derived output from repeat-masked HSF-1 summits. Many, but not all, individual Helitrons contain HSEs, ranging from 2% of the Helitron2_CE class to 44% of the HelitronY1_CE class, yielding a total of 953 HSE-containing Helitrons (Figure 1C). While most HSE-containing Helitrons harbor between one and ten HSEs, eight copies of HelitronY4_CE possess more than 100 HSEs (Figure 1D), highlighting the potential of Helitrons to provide significant numbers of HSEs to the genome. Indeed, more than 10,000 total HSEs are found within these five Helitron classes (Figure 1D).\n\nTo determine whether Helitrons are significantly enriched for HSEs relative to the rest of the genome, the proportion of the genome annotated as Helitron was compared to the proportion of genomic HSEs found within Helitrons. As annotated Helitron positions often overlap with one another, summing these HSE numbers would inflate the actual number of Helitron-residing HSEs. After condensing any Helitrons with overlapping positions into single regions, 1.7% of the C. elegans genome (1.68/100.27 Mb) was determined to be Helitron (Figure 1E), which is consistent with the original estimate of 2% (Kapitonov and Jurka, 2001). Strikingly, we found that 61.4% (11,527/18,766) of genomic HSEs reside within Helitrons, while only 38.6% are found outside of Helitrons, resulting in a significant enrichment (p<1.0e-15, binomial test) (Figure 1F). These findings show that Helitrons provide the majority of HSEs to the C. elegans genome and, hereafter, we refer to these as Helitron-acquired HSEs (Hac-HSEs). The remaining HSEs are referred to as Helitron-independent HSEs (Hin-HSEs).\n\nThe observation that almost two-thirds of genome-wide HSEs reside within 1.7% of genomic space suggested that Hac-HSEs exist within high-density clusters. Indeed, while Hin-HSEs are evenly distributed within 1 kb bins along the length of chromosome II (chrII), high numbers of Hac-HSEs are clustered at distinct loci (Figure 1G); this pattern is consistent across all six C. elegans chromosomes (Figure 1\u2014figure supplement 1). In summary, we find that Helitrons are enriched for HSEs that are often clustered (p<1.0e-15, Fisher\u2019s exact test), and high HSE densities seem to be restricted to remnants of prior Helitron insertions.\n\n### HSF-1 bound Helitron HSEs are enriched near genes up-regulated during heat shock\n\nWe next asked whether Hac-HSEs provide nearby genes with the ability to be induced upon heat shock. First, we identified HSF-1 binding events that overlapped Hac-HSEs or Hin-HSEs, using publicly available ChIP-seq data (Li et al., 2016). Similar numbers of HSF-1 peak summits during HS conditions were observed to contain Hac-HSEs (n\u00a0=\u00a0556) and Hin-HSEs (n\u00a0=\u00a0578) (Figure 2A). For both of these types of HSEs, the levels of HSF-1, as well as RNA polymerase II (Pol II), were generally higher under HS compared to non-HS conditions (Figure 2A). These results show that, like canonical HSEs, Helitron-embedded HSEs have the potential to promote transcription in response to HS via recruitment of HSF-1 and RNA Pol II.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/51139/elife-51139-fig2-v2.jpg)\n\n**Figure 2.:** (A) Heatmap displaying normalized (see Materials and methods for details) HSF-1 and Pol II ChIP-seq reads over 2 kb regions centered on Hac-HSE- and Hin-HSE-containing HS HSF-1 peak summits. ChIP data are from Li et al. (2016). (B) Number of genes within 500 bp bins versus distance from upstream Hac- and Hin-HSEs that reside within HS HSF-1 peak summits. HS UP genes (n\u00a0=\u00a01462) are those with a fold change after HS\u00a0>2 and an adjusted p-value<0.01 determined using DESeq2 (Love et al., 2014). For Hac-HSEs, 60 HS UP (red solid line) vs. 13 background (black dashed line) genes reside within 2.5 kb, resulting in a significant enrichment (p<1.0e-15, \u03c72 test). For Hin-HSEs, 60 HS UP (gray solid line) vs. 28 background (black dashed line) genes reside within 2.5 kb, resulting in a significant enrichment (p=1.0e-09, \u03c72 test). HS UP genes that have HSEs within HSF-1 peak summits less than 2.5 kb upstream from annotated transcriptional start sites are considered to be part of the heat-shock response (HSR genes). (C) Genome browser screenshot of normalized HSF-1 (goldenrod) and Pol II (blue) ChIP-seq reads (note scale differences) in the vicinity of the Hac-HSE HSR gene col-88. The 10 Hac-HSEs located within the HelitronY1_CE sequence found in the upstream promoter region are shown. (D) Genome browser screenshot of normalized HSF-1 and Pol II ChIP-seq reads (note scale differences) in the vicinity of the Hin-HSE HSR gene hsp-70. The two Hin-HSEs located in the upstream promoter region are shown below the gene structure. (E) Notched boxplot showing distributions of the number of HSEs located within 2.5 kb upstream of Hac- (red, n\u00a0=\u00a060) or Hin-HSE (gray, n\u00a0=\u00a060) HSR genes. Notches represent 95% confidence intervals of the median. (F) Notched boxplot showing distributions of DESeq2-normalized steady-state mRNA levels during NHS and HS conditions for Hac- or Hin-HSE HSR genes. As some Hac-HSE HSR genes were undetectable under NHS conditions, a single read was added to all genes to allow for log transformation. (G) Notched boxplot showing distributions of normalized Pol II ChIP-seq reads obtained during NHS and HS conditions over Hac- or Hin-HSE HSR gene bodies. (H) Notched boxplot showing distributions of H3K27me3 ChIP-seq reads using publicly available data obtained from L3 stage worms during NHS conditions (Ho et al., 2014) over Hac- or Hin-HSE HSR gene bodies. H3K27me3 data were obtained from the modMine database (intermine.modencode.org) (Contrino et al., 2012) under accession number modEncode_5051. For panels E-H, a single asterisk represents p<1.0e-04, double asterisks represent p<1.0e-08, and triple asterisks represent p<1.0e-12 (Welch Two Sample t-test). (I) Significantly enriched gene ontology (GO) terms identified using DAVID (Huang et al., 2009a; Huang et al., 2009b) for Hac-HSE (red) and Hin-HSE (gray) HSR genes.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/51139/elife-51139-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Notched boxplot showing distributions of H3K9me3 ChIP-seq reads using publicly available data obtained from L3 stage worms during NHS conditions (Ho et al., 2014) over Hac- or Hin-HSE HSR gene bodies. H3K9me3 data were obtained from the modMine database (intermine.modencode.org) (Contrino et al., 2012) under accession number modEncode_5040. (B) Notched boxplot showing distributions of H3K4me3 ChIP-seq reads using publicly available data obtained from L3 stage worms during NHS conditions (Ho et al., 2014) over Hac- or Hin-HSE HSR gene 5\u2019 regions (1 kb windows centered on annotated transcriptional start sites). H3K4me3 data were obtained from the modMine database under accession number modEncode_3576. (C) Notched boxplot showing distributions of H3K36me3 ChIP-seq reads using publicly available data obtained from L3 stage worms during NHS conditions (Ho et al., 2014) over Hac- or Hin-HSE HSR gene bodies. H3K36me3 data were obtained from the modMine database under accession number modEncode_3563. For panels A-C, a single asterisk represents p<0.01, and double asterisks represent p<1.0e-06 (Welch Two Sample t-test).\n\nWe then examined whether protein-coding genes near HSF-1-bound Hac-HSEs are up-regulated during heat shock. Transcriptional profiling (RNA-seq) was performed in NHS- and HS-treated L2 stage worms (matched to conditions used for published HSF-1 and Pol II ChIP-seq data) (Li et al., 2016), and the positions of up-regulated genes were compared to HSF-1-bound Hac-HSEs as well as Hin-HSEs (Figure 2B). After 30 min of HS at 34\u00b0C, 1462 protein-coding genes were significantly up-regulated by at least two-fold compared to NHS conditions at 20\u00b0C (Supplementary file 2). From the list of up-regulated genes, 119 were found within 2.5 kb of sequence downstream of an HSF-1-bound HSE. Of these, 60 genes were found within 2.5 kb of sequence downstream of a Hac-HSE bound by HSF-1, resulting in a significant enrichment over the expected background (p<1.0e-15, \u03c72 test) (Figure 2B). In addition to one gene containing HSF-1 bound Hac- and Hin-HSEs, the remaining 59 genes were found proximal to Hin-HSEs, resulting in a total of 60 genes that showed a similar enrichment over the background expectation (p=1.0e-09, \u03c72 test) (Figure 2B). Taken together, these data indicate that Helitrons provide functional HSF-1 binding sites to nearby genes, poising them to respond to heat shock.\n\n### Helitron-acquired and -independent HSEs have distinct features\n\nWe next asked if different features were associated with heat shock responsive genes regulated by Hac- and Hin-HSEs. First, we compared a representative Hac-HSE gene, col-88, to a canonical heat-shock induced gene, hsp-70, which lacks a Helitron in its promoter region. Consistent with the overall trend of a high abundance of HSEs in Helitrons (Figure 1F\u2013G), the HelitronY1_CE element upstream of col-88 contains 10 HSEs (Figure 2C), whereas hsp-70 only has two HSEs in its promoter (Figure 2D). We also observed that, despite the prevalence of HSEs proximal to col-88, HSF-1 occupancy before and after heat shock is lower than that observed for hsp-70 (Figure 2C\u2013D). To determine if these differences were consistently observed between Hac-HSE and Hin-HSE HSR genes, we compared their numbers of proximal HSEs and expression levels before and after heat shock (Supplementary files 3 and 4). Reflecting the differences observed for col-88 and hsp-70, we found that Hac-HSE genes in general have significantly more HSEs within 2.5 kb upstream of their transcriptional start sites compared to Hin-HSE genes (Figure 2E). While the overall fold-induction of Hac-HSE and Hin-HSE genes in response to HS is similar, mRNA expression levels are generally lower for Hac-HSE versus Hin-HSE genes during NHS and HS conditions (Figure 2F). Consistent with this observation, Hac-HSE genes exhibit less Pol II coverage relative to Hin-HSE genes both before and during HS (Figure 2G and Supplementary files 3 and 4). To determine whether this lower overall level of expression of Hac-HSE genes might be due to repressive chromatin environments, we used publicly available data (Ho et al., 2014) to measure histone modifications associated with transcriptional repression (H3K27me3 and H3K9me3) and activation (H3K4me3 and H3K36me3) (Ahringer and Gasser, 2018). Indeed, Hac-HSE genes have significantly higher levels of the repressive and lower levels of the active histone marks when compared to Hin-HSE genes (Figure 2H and Figure 2\u2014figure supplement 1) and Supplementary files 3 and 4). This signature of histone modifications at Helitron sequences may be due to small-RNA-mediated genome-surveillance mechanisms that transcriptionally repress repeat sequences in C. elegans (Ashe et al., 2012; Lee et al., 2012; Mao et al., 2015; Shirayama et al., 2012). These differences between Hac-HSEs and Hin-HSEs in terms of number of proximal HSEs, expression levels during both NHS and HS conditions, and presence in repressive chromatin environments, support the notion that Helitron-associated genes represent a distinct class of HSR genes from the classical Helitron-independent HSR genes.\n\nPrevious studies have shown that canonical HSF-1 protein-coding gene targets have roles in mediating the effects of heat stress, as well as promoting longevity (Li et al., 2017; Li et al., 2016). Consistent with these studies, Hin-HSE genes show an enrichment of gene ontology (GO) terms related to canonical HSR targets, such as response to topologically incorrect protein, response to heat, and determination of adult lifespan (Figure 2I). In contrast, Hac-HSE genes are associated with distinct GO enrichment terms, namely collagen trimer, G protein-coupled receptor (GPCR) signaling, and sensory perception of smell (Figure 2I), possibly reflecting more recent integration into this stress response. Enrichment for the GO term \u2018DNA duplex unwinding\u2019 derives from the five full-length autonomous Helitrons identified as Hac-HSE genes and reflects the helicase function of Helitron transposases (Figure 2I). Differing enrichment of GO terms further demonstrates that Hac- and Hin-HSE genes comprise two distinct classes of HSR genes. While Hac- and Hin-HSE genes have distinct GO enrichment terms, several genes in both categories have been previously implicated in stress response pathways based on RNAi and mutant phenotypes (Supplementary files 3 and 4).\n\nWe also asked if Hac- and Hin-HSE genes might show different signatures of selection by computing Tajima\u2019s D, which is used to determine genetic variation within a population (Tajima, 1989). Using publicly available C. elegans wild isolate variation data available from the C. elegans Natural Diversity Resource (CeNDR) (Cook et al., 2017), we determined Tajima\u2019s D scores over HSF-1 peak summits that overlap HSEs upstream of Hac- and Hin-HSE genes induced by HS (Supplementary files 3 and 4). This analysis did not yield a striking overall difference in the average scores for Hac- versus Hin-HSE genes. It did, however, reveal seven Hac-HSE genes (col-162, str-30, ZK1053.1, ZK1053.2, srt-28, R02C2.6, oac-55) and three Hin-HSE genes (F57A8.1, Y38H6C.8, bath-36) that have scores below the 5% quantile of genome-wide Tajima\u2019s D scores (\u22122.27), raising the possibility of selection.\n\n### Helitrons provide substantial numbers of HSEs to other Caenorhabditis genomes\n\nOur discovery of a large number of Hac-HSEs in C. elegans raised the possibility that other species have Helitron-associated HSEs in their genomes. To investigate this, all genomes with annotated Helitrons available from the UCSC Genome Browser (Casper et al., 2018; Kent et al., 2002) were searched for HSEs, and the numbers and proportions of HSEs found within and outside of Helitrons were determined (Supplementary file 5). To prevent possible species-specific biases found in C. elegans HSEs from influencing our results, we scanned for HSEs using the canonical species-independent sequence NGAANNTCCNNGGAN and its reverse complement (Perisic et al., 1989). As a result, the total number of HSEs identified in C. elegans and the proportion that reside within Helitrons differs in this analysis from what is reported in Figure 1 (Figure 3A, Supplementary\u00a0files 5 and 6). While a variety of species across different phyla have sequences annotated as Helitron, enrichment of HSEs within Helitrons is limited to only the three Caenorhabditis species represented in this dataset (C. elegans, C. briggsae and C. brenneri) (Figure 3A). These data indicate that the association of Helitrons with large numbers of HSEs is not a universal phenomenon and may be restricted to Caenorhabditis species.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/51139/elife-51139-fig3-v2.jpg)\n\n**Figure 3.:** (A)\u00a0Phylogeny of all metazoan genomes hosted at the UCSC genome browser (genome.ucsc.edu) that have RepeatMasker-generated annotations of repetitive elements (see Supplementary file 5 for genome assembly IDs). Adjacent pie charts display the proportion of total HSEs that reside within (red) or outside of (gray) annotated Helitrons. To prevent possible species-specific biases found in HSEs from influencing our results, we scanned for HSEs using the canonical species-independent sequence NGAANNTCCNNGGAN and its reverse complement (Perisic et al., 1989). Names of species with significant HSE-Helitron overlap (cumulative binomial distribution with p-value<0.001, see Supplementary file 5) are highlighted in red. (B) Cumulative distribution analysis of the density of HSEs for the genomes shown in panel A. The number of HSEs per 1 kb window (bin) in each genome was determined. Curves are plotted as the number of bins with a value that is greater than or equal to the indicated numbers of HSEs per bin. The three Caenorhabditis genomes that show numerous 1 kb windows with large numbers of HSEs per bin are highlighted in red. (C) Phylogeny of species hosted at the Caenorhabditis Genomes Project (http://www.caenorhabditis.org) that have RepeatMasker-generated annotations of repetitive elements (see Supplementary file 6 for genome assembly IDs). Next to each species name is the statistical significance of HSE/Helitron overlap (cumulative binomial probability), proportion of total HSEs found to overlap with Helitrons, and number of 1 kb windows with greater than 10 HSEs per window. Complete data are found in Supplementary file 6.\n\nIn C. elegans, we observed that high-density clusters of HSEs exclusively reside within Helitrons (Figure 1G). To analyze the frequency of HSEs within the genomes of other species and to test whether high-density clusters of HSEs may reside outside of Helitrons in other species, we calculated the number of HSEs found within 1 kb bins in all species with annotated Helitrons available from the UCSC Genome Browser (Supplementary file 5). When plotting the number of bins with HSEs versus the number of HSEs per bin, curves associated with the three Caenorhabditis genomes stand out from all other examined species (Figure 3B). This finding suggests that the clustering of HSEs is a signature of Hac-HSEs and that high-density HSE clusters do not exist outside of Helitrons.\n\nTo determine the extent to which this Helitron-HSE association exists within the Caenorhabditis genus, we identified HSEs in 27 publicly available Caenorhabditis genomes for which Helitrons are annotated and determined the total numbers and proportions of HSEs that reside within annotated Helitrons (caenorhabditis.org) (Supplementary file 6). All examined Caenorhabditis species show significant enrichment of HSEs within Helitrons (p<1.0e-03 in all cases, binomial test), even though the percentages of HSEs located in annotated Helitrons range between 0.2% in C. monodelphis to 46.2% in C. elegans (Figure 3C). We also examined these other Caenorhabditis genomes for HSE clustering. Of the 27 species examined, nine species have at least ten 1 kb windows with more than 10 HSEs (Figure 3C and Supplementary file 6). In addition to C. elegans, the genomes of C. briggsae, C. brenneri, and C. virilis each contain more than 100 such clusters of Helitron-embedded HSEs (Figure 3C), and several genomes contain at least one cluster with more than 50 HSEs in a 1 kb window (Supplementary file 6). These results demonstrate that the strong association of HSEs with Helitrons, including high-density clustering in some species, is widespread in the Caenorhabditis genus.\n\n### Distinct genes with Helitron-provided HSEs are part of the heat shock response in C. elegans and C. briggsae\n\nOur finding that Hac-HSEs are present in all other available Caenorhabditis species suggested that Helitrons may have been co-opted to drive gene expression during HS outside of C. elegans. To test this hypothesis, transcriptional profiling was performed in L2 stage C. briggsae worms during NHS and HS conditions, and positions of significantly up-regulated genes determined using DESeq2 (Love et al., 2014) (fold change\u00a0>2, adjusted p-value<0.01) were compared to Hac-HSE locations (Supplementary files 7 and 8). Helitron positions were obtained from the RepeatMasker track at the UCSC Genome Browser (Casper et al., 2018; Kent et al., 2002) (genome build cb4), and HSEs were identified using the MEME-derived HSE sequence obtained from C. elegans ChIP-seq data shown in Figure 1B. For reference, the same analyses were performed using our C. elegans expression data from Figure 2. Notably, without the additional ChIP-seq data to identify direct HSF-1 binding, we observe many more HS up-regulated genes associated with Hin-HSEs in C. elegans (Figure 2B versus Figure 4A), suggesting this type of analysis may overestimate the true Hin-HSE targets of HSF-1 in the genome. In both C. elegans (Figure 4A) and C. briggsae (Figure 4B), we observe significant enrichment of HS up-regulated genes within 2.5 kb of Hac-HSEs compared to background levels observed by chance (C. elegans, p<1.0e-15; C. briggsae, p=1.8e-05, \u03c72 test). Similar results were obtained for Hin-HSE genes in C. elegans (Figure 4A) and C. briggsae (Figure 4B). These results suggest that Hac-HSEs contribute to the HSR in C. briggsae in addition to C. elegans.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/51139/elife-51139-fig4-v2.jpg)\n\n**Figure 4.:** (A) Number of C. elegans HS UP genes (n\u00a0=\u00a01462) within 500 bp bins vs. distance from Hac- and Hin-HSEs. HS UP genes are defined as those with a fold change after HS\u00a0>2 and an adjusted p-value<0.01 determined using DESeq2 (Love et al., 2014). Solid blue lines represent numbers of HS UP genes observed, while black dashed lines represent background numbers resulting from chance. Seventy-seven HS UP vs. 25 expected genes have Hac-HSEs within 2.5 kb upstream, resulting in significant enrichment (p<1.0e-15, \u03c72 test). Two hundred and seventy-seven HS UP vs. 213 expected genes have Hin-HSEs within 2.5 kb upstream, resulting in significant enrichment (p=4.3 e-06, \u03c72 test) (B) Number of C. briggsae HS UP genes (n\u00a0=\u00a01017) within 500 bp bins vs. distance from Hac- and Hin-HSEs. Solid orange lines represent numbers of HS UP genes observed, while dashed black lines represent background numbers resulting from chance. Thirty-nine HS UP vs. 20 background genes have Hac-HSEs within 2.5 kb upstream, resulting in significant enrichment (p=1.8e-05, \u03c72 test). Four hundred and sixty-one HS UP vs. 329 background genes have Hin-HSEs within 2.5 kb upstream, resulting in significant enrichment (p<1.0e-15, \u03c72 test). (C) Venn diagrams showing overlap of orthologous HS UP genes in C. elegans (blue) and C. briggsae (orange) that have Hac- or Hin-HSEs within 2.5 kb upstream in both species. Unique HS UP orthologs have upstream HSEs in either C. elegans or C. briggsae, while shared HS UP orthologs have upstream HSEs in both species. There is significant enrichment in the overlap of C. elegans Hin-HSE genes with C. briggsae orthologs up-regulated after HS (p=0.003, hypergeometric test). (D) Genome browser screenshots of C. elegans col-52 and its C. briggsae ortholog Cbr-col-52. C. elegans col-52 has 86 upstream Hac-HSEs supplied by a copy of HelitronY4_CE and Cbr-col-52 lacks upstream Hac-HSEs. (E) HS fold-change values for C. elegans col-52 (blue) (3.5 fold) and C. briggsae Cbr-col-52 (orange) (1.2 fold) determined using DESeq2. (F) Genome browser screenshots of C. elegans C01G6.3 and its C. briggsae ortholog CBG00919. C01G6.3 lacks upstream Hac-HSEs and CBG00919 has 12 Hac-HSEs provided by a copy of Helitron7_CB. (G) HS fold-change values for C. elegans C01G6.3 (blue) (1.1 fold) and C. briggsae CBG00919 (orange) (11 fold) determined using DESeq2. (H) Genome browser screenshots of C. elegans F33H12.6 and its C. briggsae ortholog CBG26851. F33H12.6 resides within a full-length copy of Helitron1_CE and has 14 upstream Hac-HSEs. CBG26851 has 85 upstream Hac-HSEs supplied by a copy of Helitron7_CB. (I) HS fold-change values for C. elegans F33H12.6 (blue) (21 fold) and C. briggsae CBG26851 (orange) (4.0 fold) determined using DESeq2. (J) Significantly-enriched gene ontology (GO) terms identified using DAVID (Huang et al., 2009a; Huang et al., 2009b) for unique Hac- and Hin-HSE up-regulated orthologs in C. elegans (blue) and C. briggsae (orange), as well as shared Hin-HSE up-regulated orthologs (aquamarine).\n\nC. elegans and C. briggsae are estimated to have diverged less than 30 million years ago (Cutter, 2015). If Helitron elements have propagated since this divergence, distinct genes may have been integrated into the HSR by species-specific Helitron insertions in these two species. To analyze potential differences in HSR genes in C. elegans and C. briggsae, we first identified orthologs for HSR genes between the two species using ParaSite (Howe et al., 2017; Howe et al., 2016) (genomes ce11 and cb4) (Supplementary file 8). When we compared HSR genes that have upstream Hac-HSEs with their orthologs in the other species, there was only one ortholog pair up-regulated in both C. elegans and C. briggsae that also has upstream Hac-HSEs in both species (designated as \u2018shared\u2019) and this one gene appears to encode for a full-length Helitron transposase (see below). In contrast, the remaining orthologous pairs have Hac-HSEs in one species but not the other (designated as \u2018unique\u2019) (C. elegans, n\u00a0=\u00a038; C. briggsae, n\u00a0=\u00a026) (Figure 4C). Thus, many of the genes in the unique categories of Hac-HSE-containing up-regulated orthologs in C. elegans and C. briggsae seem to be newly responsive to HS via promoter-associated Hac-HSEs. Indeed, of the 38 unique Hac-HSE-containing C. elegans orthologs, only three are also up-regulated during heat shock in C. briggsae, and one of these has upstream Hin-HSEs. Likewise, of the 26 unique C. briggsae orthologs, eight are also up-regulated during heat shock in C. elegans, and five of these have Hin-HSEs. This contrasts from up-regulated orthologs with Hin-HSEs, where 27 up-regulated genes shared between species also have Hin-HSEs in both species. In agreement with many of these shared Hin-HSE HSR orthologs being conserved HSF-1 targets, over half (15/27, or 56%) of these genes are bound by HSF-1 in C. elegans (Supplementary file 4). Thus, differences in Hac-HSEs between C. elegans and C. briggsae orthologs appear to result in species-specific gene expression upon heat shock, while Hin-HSEs drive a more conserved HSR among orthologs between the two species.\n\nTo illustrate how Hac-HSEs are associated with differences in heat shock responsiveness of otherwise orthologous genes in C. elegans and C. briggsae, we present individual cases in Figure 4D\u2013I. As an example of a unique Hac-HSE gene in C. elegans, col-52 has 86 HelitronY4_CE-provided HSEs in its upstream promoter region (Figure 4D) and is up-regulated during heat shock in C. elegans (Figure 4E). In contrast, in C. briggsae this same gene lacks Hac-HSEs (Figure 4D) and is non-responsive to HS (Figure 4E). Similarly, the C. briggsae gene CBG00919 has 12 Hac-HSEs provided by Helitron7_CB (Figure 4F) and is up-regulated during heat shock in C. briggsae (Figure 4G), while the C. elegans ortholog C01G6.3 lacks Hac-HSEs (Figure 4F) and is not up-regulated during heat shock (Figure 4G). Interestingly, the single shared up-regulated ortholog with Hac-HSEs in both C. elegans and C. briggsae seems to encode for a full-length Helitron transposase. In C. elegans, the Rep-Helicase-encoding gene F33H12.6 resides within an annotated full-length copy of Helitron1_CE, has 14 Hac-HSEs in its promoter region (Figure 4H), and is up-regulated during heat shock (Figure 4I). Likewise, the C. briggsae Rep-Helicase ortholog CBG26851 (determined using BLASTP) (Altschul et al., 1990) has 85 upstream Hac-HSEs provided by Helitron7_CB (Figure 4H) and is up-regulated during heat shock (Figure 4I). Currently, it is unclear if this one shared Hac-HSE example derived from vertical inheritance of an HSE-containing Helitron or arose from transposition of a Helitron after the divergence of C. elegans and C. briggsae. Overall, these observations are consistent with Helitrons mobilizing since the divergence of C. elegans and C. briggsae and independently incorporating genes into the HSR.\n\nIf the independent mobilization of Helitrons in C. elegans and C. briggsae has led to distinct species-specific genes being incorporated into the HSR, then the types of Hac-HSE-containing genes up-regulated during heat shock might be expected to differ between species. To test this, we performed gene ontology (GO) analysis of the \u2018unique\u2019 Hac-HSE up-regulated orthologs described in Figure 4C. Consistent with the GO analysis depicted in Figure 2I, we found that unique up-regulated Hac-HSE-containing orthologs in C. elegans are enriched for GO terms associated with collagens and GPCR signaling (Figure 4J). In contrast, unique up-regulated Hac-HSE orthologs in C. briggsae are associated with carbohydrate metabolism (Figure 4J). Although many HS-induced Hin-HSE orthologs were not shared between C. elegans and C. briggsae, the GO term associated with phosphorylation is enriched in the unique Hin-HSE genes from both species (Figure 4J). As expected, shared Hin-HSE orthologs are enriched for terms associated with canonical HSR targets, such as response to topologically incorrect protein, response to heat, and the determination of adult lifespan (Figure 4J). Overall, these results provide further evidence that the independent mobilization of Helitrons in C. elegans and C. briggsae has resulted in the incorporation of unique genes into the HSR.\n\n### HSEs provided by Helitrons diversify the heat shock response in C. elegans\n\nWe next asked if re-wiring of the HSR by Helitrons might have occurred in C. elegans at the population level. Wild isolates of C. elegans were screened for the absence of Helitrons relative to the N2 reference strain by using whole-genome sequencing (WGS) data available from CeNDR (Cook et al., 2017) in conjunction with the structural variant caller Delly (Rausch et al., 2012). From this, HSE-containing Helitrons present in the promoters of three different N2 genes were confirmed to be absent upstream of the same genes in the wild isolates QX1211 and MY16. In the N2 strain, HelitronY4_CE sequence provides 96 Hac-HSEs to nhr-247 (Figure 5A), HelitronY1A_CE provides 30 Hac-HSEs to str-96 (Figure 5B), and Helitron2_CE provides 9 Hac-HSEs to fbxa-102 (Figure 5C). All of these genes associate with HSF-1 and Pol II and increase in expression during HS in N2 (Figure 5A\u2013C and Supplementary files 2 and 3). The Hac-HSEs are the only HSEs within the putative promoter regions of these N2 HSR genes, arguing that their ability to be up-regulated during heat shock is largely dependent upon the presence of Helitrons. As Helitrons are thought to be replicated in place before transposition (Kapitonov and Jurka, 2001), loci lacking Helitrons in wild isolates likely represent the ancestral pre-transposition state. These results suggest that Helitrons have recently mobilized to new regions in C. elegans and are actively diversifying the HSR within the species.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/51139/elife-51139-fig5-v2.jpg)\n\n**Figure 5.:** (A) Genome browser screenshot depicting the region surrounding the Hac-HSE HSR gene nhr-247 showing normalized ChIP-seq signal for HSF-1 and Pol II under NHS and HS conditions (ChIP-seq data obtained from Li et al., 2016). HelitronY4_CE sequence containing 96 Hac-HSEs is located upstream of nhr-247 in the wild-type reference strain N2, but is absent in the wild isolate QX1211. (B) Genome browser screenshot depicting the region surrounding the Hac-HSE HSR gene str-96 showing normalized ChIP-seq signal for HSF-1 and Pol II under NHS and HS conditions. HelitronY1A_CE sequence containing 30 Hac-HSEs is located upstream of str-96 in the wild-type reference strain N2, but is absent in the wild isolate QX1211. (C) Genome browser screenshot depicting the region surrounding the Hac-HSE HSR gene fbxa-102 showing normalized ChIP-seq signal for HSF-1 and Pol II under NHS and HS conditions. Helitron2_CE sequence containing nine Hac-HSEs is located upstream of fbxa-102 in the wild-type reference strain N2, but is absent in the wild isolate MY16. (D) Scatterplots showing relative mRNA expression levels (-\u0394Ct) determined using RT-qPCR (gray open circles) of nhr-247 and str-96 before (NHS) and after heat shock (HS) in N2 worms that have and QX1211 worms that lack upstream Hac-HSEs. Expression levels of the Hin-HSE HSR gene hsp-70 and Helitron1_CE transposase are also shown. RT-qPCR data are normalized to the heat-shock-unchanging housekeeping gene tba-2. Data obtained from three independent biological replicates are shown, with their mean values represented using solid red lines. (E) Scatterplots showing relative mRNA expression levels (-\u0394Ct) determined using RT-qPCR (gray open circles) of fbxa-102 before (NHS) and after heat shock (HS) in N2 worms that have and MY16 worms that lack upstream Hac-HSEs. Expression levels of the Hin-HSE HSR gene hsp-70 and Helitron1_CE transposase are also shown. RT-qPCR data are normalized to the heat-shock-unchanging housekeeping gene tba-2. Data obtained from three independent biological replicates are shown, with their mean values represented using solid red lines. In N2 NHS worms, fbxa-102 was undetectable in one biological replicate. For panels D-E, a single asterisk represents p<0.05, double asterisks represent p<0.01, and triple asterisks represent p<0.001 (Welch Two Sample t-test). For all genes with the exception of Helitron1_CE transposase, one primer in each qPCR primer pair spans an exon-exon junction to ensure detection of mature mRNA levels.\n\nWe then compared the heat shock response of nhr-247, str-96, and fbxa-102 in N2 versus the wild isolates that lack Hac-HSEs associated with these genes. While these three genes were strongly up-regulated during HS versus non-HS conditions in N2 (nhr-247, 254 fold, p=0.01; str-96, 7.0 fold, p=0.006; fbxa-102, 8.3 fold, p=0.03; Welch Two Sample t-test), their induction was greatly reduced in QX1211 (nhr-247, 3.2 fold, p=0.16; str-96, 3.6 fold, p=0.07; Welch Two Sample t-test) and MY16 (fbxa-102, 0.4 fold, p=0.29; Welch Two Sample t-test) (Figure 5D\u2013E). The canonical HSR gene hsp-70 showed similar levels of HS induction in the wild isolates compared to N2, ruling out that a generally attenuated HSR is responsible for the diminished induction of nhr-247 and str-96 in QX1211 and fbxa-102 in MY16 (Figure 5D\u2013E). Additionally, the Helitron Rep-Helicase transposase genes found in full-length copies of Helitron1_CE also exhibited similar levels of HS up-regulation in the wild isolates compared to N2, showing that the Helitron HS response is intact in these strains (Figure 5D\u2013E). Altogether, these results demonstrate that Helitrons can provide functional HSEs to adjacent genes and suggest that Helitrons are active agents of evolution that alter the HSR within worm populations.\n\n## Discussion\n\nHere we show that across the genomes of multiple Caenorhabditis species, Helitrons provide substantial numbers of binding motifs (HSEs) for HSF-1, a highly conserved transcriptional regulator of the heat shock response (HSR). Remarkably, we find that almost two-thirds of C. elegans HSEs reside within Helitrons. Consistent with Helitron-embedded HSEs being functional, many are bound by HSF-1 and display increased levels of Pol II after HS in C. elegans and are enriched near HS-responsive genes in both C. elegans and C. briggsae. Comparison of Helitron positions between C. elegans and C. briggsae, as well as between wild isolates of C. elegans, showed variability in Helitron position, suggesting that Helitrons have mobilized recently and may still be active. Our work demonstrates that Helitrons have significantly shaped the HSR in C. elegans by supplying HSF-1 binding sites to dozens of genes and, hence, rewiring their responsiveness to HS.\n\n### Helitron transposons have rewired the C. elegans heat shock response\n\nHelitrons comprise\u00a0~2% of the C. elegans genome (Kapitonov and Jurka, 2001). Of these, there are six full-length autonomous (predicted to encode a transposase and likely replication competent) Helitrons and\u00a0~5000 non-autonomous elements that lack protein-coding potential; many of these non-autonomous elements are fragments of full-length autonomous versions (Hubley et al., 2016; Kapitonov and Jurka, 2001). We have found that approximately 19% of the annotated Helitrons contain at least one HSE motif and that almost two-thirds of all C. elegans HSEs reside within Helitrons, many of which exist in high-density clusters. These Helitron-acquired HSEs (Hac-HSEs) are capable of recruiting HSF-1 and promoting the expression of proximal genes in response to HS. Thus, while transposase-encoding Helitrons may have initially benefitted from HSEs in their promoter as a way to mobilize upon cellular stress, the widespread Helitron-mediated insertion of HSEs within the C. elegans genome now provides heat-shock inducibility to downstream genes. In comparison to Helitron-independent (Hin-HSEs) HSR genes, Hac-HSE associated genes tend to exhibit similar fold changes in HS induction but relatively lower levels in mRNA expression and Pol II occupancy under non-heat-shock conditions. This difference may be attributed to transposon silencing mechanisms, including the formation of repressive chromatin at and around Helitrons (Slotkin and Martienssen, 2007). Consistent with chromatin-based silencing of Helitrons affecting the expression of nearby genes, HSR genes proximal to Helitrons display higher levels of repressive histone marks during non-HS conditions compared to those more distant. It is possible that the high number of HSEs provided by Helitrons helps overcome this repressive landscape by presenting multiple opportunities for HSF-1 binding and transcriptional induction of nearby genes. The potential for Helitrons to trigger silencing of adjacent genes but also enable them to respond to HS further supports a role for these TEs in rewiring gene expression patterns in C. elegans.\n\nMobilization of TEs is inherently mutagenic and the consequence can be deleterious, beneficial, or selectively neutral depending on the insertion position and the sequence provided (Sundaram and Wang, 2018). While it remains to be determined whether Hac-HSEs provide a fitness advantage to the organism by promoting gene expression during HS, several lines of evidence suggest this is possible. Some Hac-HSE genes are associated with phenotypes indicative of roles in stress, show signatures of selection, and share specific GO terms. Importantly, we observe no overlap in the GO term enrichments for Hac-HSE HSR genes versus all Helitron-associated genes. This argues against sequence-biased mechanisms of Helitron insertion as a predominant explanation for the specific GO categories associated with HS-induced Hac-HSE genes. Specifically, genes encoding collagens and G protein-coupled receptors (GPCRs) are enriched in the Hac-HSE class. Both collagens and GPCRs are among the largest gene families in C. elegans (Johnstone, 2000; Thomas and Robertson, 2008), potentially providing a rich environment for Helitron-mediated functional divergence to occur. Consistent with roles in the HSR, collagen genes have been previously reported to be up-regulated during heat stress in chicken cells (Sun et al., 2015) and human cells (Li et al., 2018), as well as in C. elegans (Brunquell et al., 2018; Schreiner et al., 2019), suggesting that increasing collagen output is a conserved component of the HSR. Likewise, GPCRs are transmembrane receptors with roles in neuronal signaling (Thomas and Robertson, 2008), including the induction of canonical HSF-1 targets in non-neuronal tissues and, hence, thermotolerance in C. elegans (Maman et al., 2013). An alternative explanation for the enrichment of collagen and GPCR genes associated with Hac-HSEs is that Helitron promoter insertions are better tolerated for these gene families. Further studies will be needed to determine whether recruitment of these specific collagen and GPCR genes into the HSR is neutral, deleterious, or enhances the ability of C. elegans to withstand or recover from heat stress.\n\n### Helitrons have shaped the heat shock response in multiple Caenorhabditis species\n\nRoughly half of all up-regulated HSF-1 targets observed in this study have Hac-HSEs, demonstrating that Helitrons have had a significant role in shaping the C. elegans HSR. Beyond C. elegans, we observed a significant association of HSEs with Helitrons in all examined Caenorhabditis species, suggesting that this is a long-standing phenomenon. In contrast, over a broad range of bilateria species for which Helitrons have been identified, we detected no increased correlation between HSEs and Helitrons and no high-density clusters of HSEs. The presence of Hac-HSEs across Caenorhabditids led us to ask if Helitrons might be associated with differences in heat-shock-responsive genes within and between species. Similar to C. elegans, we found a number of Hac-HSEs upstream of HSR genes in C. briggsae. However, with the exception of what appears to be an incompletely annotated autonomous Helitron in C. briggsae, none of these HSR genes had upstream Hac-HSEs present in both species. Indeed, we find that in most cases, these orthologs are uniquely heat-shock responsive in the species with upstream Hac-HSEs and lack heat-shock responsiveness in the species without upstream Hac-HSEs. This difference in gene sets that respond to HS is consistent with previous studies that concluded that substantial Developmental System Drift contributes to the divergence in genetic networks associated with the phenotypically very similar C. elegans and C. briggsae (Verster et al., 2014). In some cases, the evolution of distinct functions for seemingly orthologous genes may be driven by changes in the regulation of their expression (Halfon, 2017). Indeed, it appears that with a single Helitron insertion, new genes have been incorporated into the HSR in a species-specific way. Remarkably, we find this rewiring occurs even between diverse C. elegans wild isolates, underscoring the role that TEs may play in providing variation in stress responses within different populations of a species. Intriguingly, it was recently reported that two different isolates of C. briggsae (AF16 and HK104) exhibit substantial gene expression differences in response to thermal stress (Mark et al., 2019). It will be interesting to examine if any of these differences might be associated with strain-specific Helitron insertions.\n\n### Helitrons expand the landscape of HSF-1 targets\n\nThe impact of Helitron-provided HSEs on gene expression may extend well beyond the HSR. HSF-1 has roles in counteracting other types of stress that result in protein unfolding and aggregation, such as exposure to heavy metals or azide (Labbadia and Morimoto, 2015). In addition to stress responses, HSF-1 has been shown to play essential roles in developmental processes in a variety of organisms, including mice, flies and worms (Christians et al., 2000; Jedlicka et al., 1997; Li et al., 2016; Santos and Saraiva, 2004; Takaki et al., 2006). Furthermore, HSF-1 has been found to support pro-growth transcriptional programs in yeast, worms, and human cancer cells (Li et al., 2016; Mendillo et al., 2012; Sol\u00eds et al., 2016), suggesting commonalities among non-canonical HSF-1 targets across species (Li et al., 2017). In this study, we increase the number of identified HSF-1 HS-targets from 60 to 119 by considering HSF-1 binding that overlaps with HSE-containing repetitive elements that are normally excluded. Given their prevalence in the C. elegans genome, Helitron-provided HSEs have the potential to shape gene expression programs beyond the HSR, such as during other environmental challenges as well as development.\n\nStress responses, by their nature, allow organisms to adapt to new environments. As a result, it may be evolutionarily advantageous to rapidly rewire genes into stress response pathways. Although we speculate that the HSR was initially co-opted as a selfish way to promote mobilization of parasitic Helitrons upon cellular stress, Hac-HSEs may also provide more genetic variation and opportunities for positive and negative selective pressures to alter the host response to heat shock. By leveraging HSEs found in Helitrons that litter their genomes, Caenorhabditis species might be able to harness a single TE-mediated evolutionary innovation rather than needing to evolve HSEs by multiple single-nucleotide changes. We predict that this rewiring of the genes controlled by the otherwise highly conserved heat shock response between and among different Caenorhaditis species has the potential to impact Caenorhabditis fitness and adaptation to novel stress conditions.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Genetic reagent (C. elegans)</td>\n      <td>N2</td>\n      <td></td>\n      <td></td>\n      <td>wild-type strain</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (C. elegans)</td>\n      <td>QX1211</td>\n      <td></td>\n      <td></td>\n      <td>Wild isolate</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (C. elegans)</td>\n      <td>MY16</td>\n      <td></td>\n      <td></td>\n      <td>Wild isolate</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (C. briggsae)</td>\n      <td>AF16</td>\n      <td></td>\n      <td></td>\n      <td>wild-type strain</td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>Illumina TruSeq Stranded Total RNA Library Prep Gold Kit</td>\n      <td>Illumina</td>\n      <td>Illumina: 20020598</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>FigTree v1.4.4</td>\n      <td>http://tree.bio.ed.ac.uk/software/figtree/</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Bowtie2 v2.3.3.1</td>\n      <td>Langmead and Salzberg, 2012</td>\n      <td></td>\n      <td>Sequence alignment</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>MEME v5.0.3</td>\n      <td>Bailey and Elkan, 1994</td>\n      <td></td>\n      <td>Motif finder</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Tomtom v5.0.2</td>\n      <td>Gupta et al., 2007</td>\n      <td></td>\n      <td>Motif comparison</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Cistrome</td>\n      <td>Liu et al., 2011</td>\n      <td></td>\n      <td>Generation of heat maps</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>DESeq2 v1.18.1</td>\n      <td>Love et al., 2014</td>\n      <td></td>\n      <td>Differential expression analysis of RNA-seq</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Delly v0.8.1</td>\n      <td>Rausch et al., 2012</td>\n      <td></td>\n      <td>Genome comparisons</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>bcftools v1.9</td>\n      <td>Narasimhan et al., 2016</td>\n      <td></td>\n      <td>Genome comparisons</td>\n    </tr>\n  </tbody>\n</table>\n\n### C. elegans and C. briggsae strains and culture\n\nC. elegans and C. briggsae were cultured using standard conditions at 20\u00b0C (Wood, 1988) unless otherwise noted. The Bristol N2 strain was used as the wild type laboratory strain for C. elegans and AF16 for C. briggsae. C. elegans wild isolates used are as follows:\n\n### ChIP-seq data mapping, peak calling, and normalization\n\nC. elegans HSF-1 and Pol II ChIP-seq data were obtained from Li et al. (2016) (GEO Accession Number GSE81523). Histone modification data were obtained from the modENCODE server. Sequencing reads were aligned to a non-repeat-masked version of the C. elegans N2 reference genome (ce11) using Bowtie2 v2.3.3.1 (Langmead and Salzberg, 2012) with the command bowtie2 \u2014-no-unal \u2014-very-sensitive. HSF-1 peaks present at either 20\u00b0C or 34\u00b0C and their summits were called from Bowtie2-aligned reads with the MACS2 v2.1.1 (Zhang et al., 2008) command macs2 callpeak -g ce \u2014-keep-dup auto \u2014-call-summits -q 1e-6 using combined biological replicates and the single input replicate available. To normalize HSF-1 and Pol II ChIP-seq data for comparative purposes, Bowtie2-mapped reads from combined biological replicates were filtered for duplicates using macs2 filterdup -g ce \u2014-keep-dup auto, and the condition with more mapped reads after filtering was randomly sampled down using macs2 randsample so the total number of reads considered were identical between conditions. Finally, pileup of filtered and sampled reads was performed using macs2 pileup with the \u2014-extsize parameter set to the fragment lengths predicted by MACS2 during peak-calling steps.\n\n### Motif identification and scanning\n\nMotifs enriched in 101 bp non-repeat-overlapping HSF-1 summit regions were identified using MEME v5.0.3 (Bailey and Elkan, 1994) using the command meme -mod zoops -dna -revcomp -markov_order 1. The most significant motif identified in HSF-1 peak summits closely resembles the previously-identified HSE motif using the same dataset (Li et al., 2016). To identify motifs present in HSF-1 summit regions overlapping with Helitrons, 101 bp regions centered around HSF-1 peak summits that entirely overlap with annotated Helitrons were also analyzed with MEME. All displayed HSE-like motifs found in Helitron-overlapping HSF-1 peak summits were within the top 10 motifs identified and significantly similar (q\u00a0<\u00a00.05) to the HSE motif present in non-repeat-overlapping summits determined through the use of Tomtom v5.0.2 (Gupta et al., 2007) with the command tomtom -dist pearson -thresh 0.05 -min-overlap 15. To scan entire C. elegans (ce11) and C. briggsae (cb4) genomes for HSE locations, MEME-derived output for HSEs obtained from non-repeat-overlapping C. elegans HSF-1 peak summits was used with FIMO v5.0.2 (Grant et al., 2011) and the command fimo \u2014-qv-thresh \u2014-thresh 5e-2, which reports identified HSEs with q\u00a0<\u00a00.05. In C. elegans, HSF-1-bound HSEs were defined as those that have at least 14 bp overlap with 101 bp HSF-1 summits. To determine whether the clustering of HSEs could arise by chance, a permutation scan of HSEs was performed by randomly selecting the positions of 18,766 (same number as genome HSEs) 15-mers from the genome, and then looking for pile up by counting their numbers in 1 kb bins. While there are 310 bins with greater than 10 HSEs, there are 0 bins with greater than 10 randomly sampled 15-mers. This results in a significant difference between the two (p<1.0e-15, Fisher's exact test). To identify other transcription factor (TF) binding motifs present in Helitrons, experimentally determined motifs for 129 C. elegans TFs (Narasimhan et al., 2015) as well as DAF-16 (Matys et al., 2006; Weirauch et al., 2014) were used in conjunction with FIMO to identify all genomic motifs with p<1.0e-04.\n\n### Calculation of Tajima\u2019s D scores in C. elegans and C. briggsae\n\nGenome-wide Tajima\u2019s D scores were calculated over 10 kb sliding windows with a 100 bp step size using VCF-kit (Cook and Andersen, 2017). Variation data for 330 C. elegans wild isolates were obtained from CeNDR (Cook et al., 2017), and variation data for 37 C. briggsae wild isolates were previously published (Thomas et al., 2015).\n\n### Heatmaps, gene plots, and boxplots\n\nHeatmaps were generated using the heatmap tool found at the Cistrome web server (Liu et al., 2011). Boxplots were generated using the boxplot function in R v3.5.1 with outliers removed, and notches represent 95% confidence intervals of the median (R Development Core Team, 2018). Gene plots were generated by determining the number of HSR genes present within 500 bp bins relative to annotated transcriptional start sites and Hac-HSEs. Background levels resulting from chance were determined using R to sample identical numbers of genes and determining their proximity to Hac-HSEs; this process was repeated 100 times, and average numbers were plotted.\n\n### Heat-shock assays\n\nHeat shock of staged C. elegans L2s was performed as described in Li et al. (2016) so that our HS RNA-seq experiments could be directly compared to their HSF-1 and Pol II ChIP-seq data. Briefly, starved L1s obtained from bleached embryos were placed on NGM plates and grown at 20\u00b0C for 20 hr until mid-L2 stage. Heat-shocked worms were incubated in a 34 \u00b1 0.5\u00b0C water bath while non-heat-shocked control worms were kept at 20\u00b0C for 30 min before being washed twice in M9 buffer and snap freezing in a dry ice/ethanol bath. Frozen L2 worms were stored at \u221280\u00b0C until total RNA extraction. C. briggsae worms were treated in an identical manner for all steps.\n\n### RNA-seq library preparation, sequencing, mapping, and analysis\n\nTotal RNA was extracted from frozen L2s using TRIzol reagent and standard protocols that including DNase treatment. 1 \u03bcg of extracted total RNA for heat-stressed and control worms (C. elegans and C. briggsae) was processed using the Illumina TruSeq Stranded Total RNA Library Prep Gold Kit for each sample, with three biological replicates for NHS and HS conditions. Libraries were sequenced using an Illumina HiSeq 4000 sequencer with a run type of SR75. Sequenced reads were mapped to C. elegans and C. briggsae mRNA transcriptomes using Salmon v0.13.1 (Patro et al., 2017) with default parameters and automatic library type detection enabled (\u2014libType A), which correctly determined a library type of SR. Up-regulated genes in HS-treated versus untreated samples were determined using DESeq2 v1.18.1 (Love et al., 2014) with default parameters and a parametric fit type. Significantly up-regulated genes during heat shock were defined as those with log2(fold change)>1 (fold change\u00a0>2) and an adjusted p-value<0.01.\n\n### RT-qPCR assays\n\nTotal RNA was extracted from frozen L2s using TRIzol reagent and standard protocols that included DNase treatment. 1\u20132 \u03bcg of total RNA was used to prepare cDNA using the Invitrogen cDNA prep kit. 16\u201340 ng of cDNA was used for each qPCR assay, using PowerUp SYBR Green Master Mix and a QuantStudio machine (ABI Biosystems). All qPCR experiments consisted of three technical replicates for each of three biological replicates. Experimental Ct values were normalized to those of tba-2. Sequences for qPCR primers used are as follows:\n\n### Identification and verification of Helitron position variability in C. elegans\n\nAligned whole-genome sequencing (WGS) data for N2 and wild isolates were obtained from CeNDR (release 20180527) (Cook et al., 2017), and putative deletions in each strain relative to the N2 reference genome were identified using Delly v0.8.1 (Rausch et al., 2012) in conjunction with bcftools v1.9 (Narasimhan et al., 2016). The Delly call command was used to call deletions in each strain individually, and these were merged into a unified site list using the merge command. The Delly call command was then again used to genotype the merged site list across all strains, and all genotyped strains were merged into a single BCF file using the bcftools merge function. The Delly germline filter was then applied to merged genotyped samples using the filter -f germline command. The resulting putative germline deletions were intersected with Helitron positions found in the RepeatMasker track available from the UCSC Genome Browser (genome.ucsc.edu). To verify the presence of Helitrons at specific loci in N2 worms or absence in wild isolates, PCR was performed using primers designed to flank regions of interest. Expected amplicon sizes were verified using agarose gel electrophoresis, and sequences were verified through Sanger sequencing. Sequences for genotyping primers are as follows:\n\n### Identification of Helitron and HSE loci within genomic datasets\n\nFasta-formatted genome assemblies with reported RepeatMasker files were downloaded from the UC Santa Cruz (UCSC) genome browser (genome.ucsc.edu) and the Caenorhabditis Genome Project (CGP) (v1) (http://www.caenorhabditis.org) (Fierst et al., 2015; Kanzaki et al., 2018; Mortazavi et al., 2010; Slos et al., 2017; Stevens et al., 2019). See Supplementary files 5 and 6 for genome assembly IDs. To identify Helitron genome coordinates, UCSC- and CGP-provided RepeatMasker files were downloaded and filtered for lines containing the keyword \u2018helitron\u2019. To identify HSE genome coordinates, a regular expression search was conducted using the degenerate HSE motif, NGAANNTTCNNGAAN, and its reverse complement (Perisic et al., 1989).\n\n### Significance of overlap between HSEs and Helitrons\n\nCoordinates of HSEs and Helitrons were used to identify HSEs that entirely fall within a Helitron element. A binomial probability was calculated that estimates that probability of finding a given number of HSEs within the percentage of the genome that is covered by Helitrons. Significance of deviation from that expected distribution, in which the observed number of HSEs within Helitrons exceeds the expected HSE/Helitron overlap, is represented as a p-value (p-value=1 cumulative binomial probability).\n\n### HSE pileups across each genome\n\nFor all UCSC and CGP genomes, the number of HSEs in a given region (bin) of the genome was determined using a sliding window approach (window size\u00a0=\u00a01 kb, step size\u00a0=\u00a01 kb) for all genome contigs greater than 1 kb in size. For each genome, the number of bins with an HSE count greater than or equal to integers from 1 to 100 were tallied. Data are represented as a cumulative distribution curve (Figure 3B) or in tabular form (Figure 3C, Supplementary files 5 and 6).\n\n### Phylogenetic analyses\n\nNewick-formatted phylogenetic trees were generated for UCSC and CGP genomes (see Supplementary files 5 and 6) and displayed using FigTree v1.4.4 (http://tree.bio.ed.ac.uk/software/figtree/).\n",
+      "created_at": "2025-12-02T13:56:06.824966Z"
+    },
+    {
+      "id": "d03035e4-91d1-4066-adf5-30841608fe96",
+      "submission_id": "b881a007-16e7-4a19-aded-17b3aa71e0c7",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Christian R Landry, Universit\u00e9 Laval Canada\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.51139.sa1](https://doi.org/10.7554/eLife.51139.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nHow transcriptional programs such as those involved in stress response evolve is a major question in biology. Most specifically, understanding how several genes can be recruited to be under the control of a transcription factor so they become co-regulated in response to a particular stimulus remains challenging. Here, the authors show that some transposable elements may carry specific transcription factor binding sites with them while they spread across the genome, allowing at the same time for the recruitment of new genes in heat shock response in nematodes. This is a very elegant study with profound insight on the potential adaptive roles of transposable elements and on major evolutionary changes that can occur quickly in transcriptional networks.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Rewiring of the Caenorhabditis heat shock response by helitron transposable elements\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Patricia Wittkopp as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nGarrigues and colleagues examine the relationship between the insertion of a transposable element and the heat shock transcriptional network in nematodes. They find that Helitron elements contain Heat Shock Elements that are bound by Heat Shock Factor-1. The authors argue convincingly that genes could be recruited to the heat shock response by insertions of the TE in their vicinity. The reviewers agree that the work is of considerable interest and that it can potentially make an important contribution to the field of genome biology.\n\nPlease see the consolidated list of major concerns below. One important point is whether these insertions and the recruitment of new genes under the regulation of HSF-1 could be adaptive or consistent with neutral evolution and potential insertion site biases. Trying to elucidate this aspect would significantly strengthen the manuscript. In addition to the points below, the Introduction appears to be rather short and could be extended in order to put the work in a wider and more general context, for instance the evolution of transcriptional responses, how new genes are recruited to gene expression modules and how TEs could play a role in accelerating the evolution of these networks. This would put the findings in a more generally accessible context and thus pave the way to further work addressing these issues, outside of the specific model studied here.\n\nEssential revisions:\n\n1) Additional experiments are not mandatory but the authors may have access to existing data that may answer this query. Although HSF-1 regulates several key biological functions including, lifespan (Hsu et al., 2003), proteotoxicity (Cohen et al., 2006), development (Barna et al., BMC Dev Biol 2012), and other stresses, the authors have exclusively tested responses to elevated temperatures. Do helitrons also involved in other HSF-1 functions? How Hin-HSEs and Hac-HSEs linked with these other functions? This can be easily tested by exposing N2 and QX1211 worms to the relevant experimental conditions and compare the stress resistance and lifespans of animals of the two strains.\n\n2) A more comprehensive analysis of potential sites within the TEs could be helpful. Other transcription factors such as DAF-16/FOXO are also needed for stress resistance and longevity. Do helitrons also carry DFA-16 recognition sites? This issue is particularly important as the two transcription factors show overlapping functions and both are regulated by the insulin/IGF signaling cascade.\n\n3) Surprisingly, the authors found that the Hac-HSEs regulate very different gene sets in C. elegans and in C. Briggsae (Figure 4C). This raises the question of what is the significance of the roles played by helitrons in regulating the HSR? Can the authors please comment on that point? Also, it would be good to have some statistical test for whether the overlaps are different between the two species. I understand the argument that Hin-HSE have more conserved functions but it does not seem highly enriched in these data. Likewise, what is the GO term enrichment (Figure 4J) for all Hac or Hin-HSEs vs. the unique ones.\n\n4) This is also another suggestion of experiments which are not mandatory. However, as mentioned above, such data may readily be available.\n\nAre genes that are regulated by Hac-HSE involved in stress resistance and lifespan? This can be addressed by a directed RNAi screen and functional assays. I would suggest to test at least 15 genes to get a sufficient insight.\n\nThis should be also tested in other Caenorhabditis species.\n\n5) Figure 2H provides a possible explanation to the observation that there is a lower presence of RNA Polymerase II in Hac-HSEs regulated genes (Figure 2G). Performing similar analyses using additional repression and activation epigenetic modifications would further establish this possibility.\n\n6) The authors should not use the word \"domestication\" to describe how Helitrons could be co-opted or acquired for other functions in the C. elegans genome. This word has specific meanings in the evolutionary genetics literature (e.g. a series of robust, controlled, evolutionary changes towards an often human-associated association) that are not supported here. The authors have beautiful data that do not need to use this loaded term.\n\n7) I think that the Discussion is a bit long and parts of it are redundant with or can be included in the Introduction (if necessary). Please tighten both a bit.\n\n8) The authors do a good job of explaining and defending their results in the Discussion and do not good too far in interpretations. One claim that could be softened (slightly) is that selection could be acting on the Hac-HSEs within the Caenorhabditis lineage. I agree that it could be, but it could also be drift. The differences in abundance across and within Caenorhabditis species suggests that it could be selected because different phylogenetic lineages have similar abundances (with unique complements of genes, probably) but it does not have to be selected in all cases. In C. elegans, the authors can look for signatures of selection in and around Hac-HSEs vs. Hin-HSEs (Tajima's D or the like) to look for support. Similar analyses can be done with C. briggsae using the ~40 wild isolates with sequence available. These data will support their claims of selection over drift.\n\n9) While I concur that this conclusion is true at face value, in that helitron insertions modify gene expression patterns when the animals are exposed to heat shock, it is less convincing to me that this has actually led biologically important changes in heat shock response in an adaptive way to benefit the fitness of the organisms. I certainly agree with the idea that helitron insertions (aka mutations) are likely to confer effects that manifest under heat shock; given what is known about the distribution of mutational effects in most organisms, nearly all such mutations will be deleterious or selectively neutral. The polymorphism observed among wild isolates could reflect helitron insertions that ended up being non-deleterious, or weakly deleterious but only under rare conditions of heat shock, thus allowing them to persist and not yet have been weeded out of the population by purifying selection. The fact that comparisons across species show unique effects reinforces the idea that lineage-specific rounds of helitron activity provides a mutational pressure that creates such novel elements with corresponding influence on neighboring genes, but that they usually are evolutionarily short-lived and may not confer any fitness benefit. The above \"criticism\" aside, the authors are generally quite cautious in not ascribing explicitly a fitness benefit to the helitron-mediated effects on flanking gene expression under heat shock, which I appreciate. Nonetheless, some of the language that the heat shock response is \"rewired\" leaves implicit the suggestion that this is an adaptive rewiring, which need not be the case. I think it would be valuable to make this point more explicit and more clearly articulate the mutational pressure of helitrons with respect to the potential distribution of fitness effects, with those persisting cases likely being neutral, weakly or conditionally-deleterious, or possibly beneficial; distinguishing among these possibilities would require additional study.\n\n10) It could also be interesting to relate (briefly) the polymorphism among wild isolates to the potential genetic basis to GxE interactions in phenotypes and transcriptome patterns. The enrichment of helitron insertions with specific GO categories is interesting, but could simply reflect sequence-biased mechanisms of insertion. For example, if GPCRs are enriched in certain sequence motifs that are conducive to helitron insertion, then the association of helitron with GPCR could simply be a by-product of the insertional bias. Alternatively, it could be that selection against helitron insertion is weaker for the large multigene family of GPCRs, and so it takes longer for them to be weeded out of the population to allow the helitron-GPCR association to reflect such less negative effects. These kinds of explanations for the GO enrichment analysis would be helpful so as not to mislead readers into thinking that the enrichment must reflect some adaptive story of selective retention in e.g. GPCRS.\n",
+      "created_at": "2025-12-02T13:56:06.824966Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T13:56:06.824966Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T13:56:06.824966Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "8a3b81b8-7a4e-42c4-a8b2-8465f23e7390",
+      "content_id": "130000b4-815e-43ec-971c-66e3a6b41a78",
+      "claim_id": "C1",
+      "claim": "Heat Shock Factor 1 (HSF-1) is a key regulator of the heat shock response (HSR).",
+      "claim_type": "EXPLICIT",
+      "source": "Heat Shock Factor 1 (HSF-1) is a key regulator of the heat shock response (HSR).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge in the abstract and introduction, supported by citation to Vihervaara et al., 2018.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:56:06.824966Z"
+    },
+    {
+      "id": "d57aaa27-8eca-4d40-81b9-44d1c1600975",
+      "content_id": "130000b4-815e-43ec-971c-66e3a6b41a78",
+      "claim_id": "C2",
+      "claim": "Upon heat shock, HSF-1 binds well-conserved motifs called Heat Shock Elements (HSEs).",
+      "claim_type": "EXPLICIT",
+      "source": "Upon heat shock, HSF-1 binds well-conserved motifs, called Heat Shock Elements (HSEs), and drives expression of genes important for cellular protection during this stress.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge in the abstract, supported by citation to Vihervaara et al., 2018 in the introduction.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:56:06.824966Z"
+    },
+    {
+      "id": "44716b16-1cb8-4967-ae87-acd26238e76b",
+      "content_id": "130000b4-815e-43ec-971c-66e3a6b41a78",
+      "claim_id": "C3",
+      "claim": "Substantial numbers of HSEs in multiple Caenorhabditis species reside within Helitrons.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, we found that substantial numbers of HSEs in multiple Caenorhabditis species reside within Helitrons, a type of DNA transposon.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study, supported by genome-wide analysis data presented in Figures 1 and 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:56:06.824966Z"
+    },
+    {
+      "id": "655840c5-8b42-419a-9d53-8cb556a0c0e5",
+      "content_id": "130000b4-815e-43ec-971c-66e3a6b41a78",
+      "claim_id": "C4",
+      "claim": "Helitron-embedded HSEs display increased HSF-1 occupancy upon heat shock in C. elegans.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with Helitron-embedded HSEs being functional, upon heat shock they display increased HSF-1 and RNA polymerase II occupancy and up-regulation of nearby genes in C. elegans.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by ChIP-seq data analysis shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:56:06.824966Z"
+    },
+    {
+      "id": "d7a9d22e-4548-45e2-be49-43a8973eff0e",
+      "content_id": "130000b4-815e-43ec-971c-66e3a6b41a78",
+      "claim_id": "C5",
+      "claim": "Helitron-embedded HSEs display increased RNA polymerase II occupancy upon heat shock in C. elegans.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with Helitron-embedded HSEs being functional, upon heat shock they display increased HSF-1 and RNA polymerase II occupancy and up-regulation of nearby genes in C. elegans.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by ChIP-seq data analysis shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:56:06.824966Z"
+    },
+    {
+      "id": "50a2c483-a8ef-4eb1-85b5-f56f5c3443d8",
+      "content_id": "130000b4-815e-43ec-971c-66e3a6b41a78",
+      "claim_id": "C6",
+      "claim": "Genes near Helitron-embedded HSEs are up-regulated upon heat shock in C. elegans.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with Helitron-embedded HSEs being functional, upon heat shock they display increased HSF-1 and RNA polymerase II occupancy and up-regulation of nearby genes in C. elegans.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by RNA-seq data analysis shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:56:06.824966Z"
+    },
+    {
+      "id": "d30c7531-b3cc-4380-b735-56801bbdf7a3",
+      "content_id": "130000b4-815e-43ec-971c-66e3a6b41a78",
+      "claim_id": "C7",
+      "claim": "Different genes appear to be incorporated into the HSR by species-specific Helitron insertions in C. elegans and C. briggsae.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, we found that different genes appear to be incorporated into the HSR by species-specific Helitron insertions in C. elegans and C. briggsae and by strain-specific insertions among different wild isolates of C. elegans.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by comparative analysis of Helitron positions and gene expression data between species shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:56:06.824966Z"
+    },
+    {
+      "id": "9286c587-dcba-47c7-9dde-ff8f8ea0548d",
+      "content_id": "130000b4-815e-43ec-971c-66e3a6b41a78",
+      "claim_id": "C8",
+      "claim": "Different genes appear to be incorporated into the HSR by strain-specific Helitron insertions among different wild isolates of C. elegans.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, we found that different genes appear to be incorporated into the HSR by species-specific Helitron insertions in C. elegans and C. briggsae and by strain-specific insertions among different wild isolates of C. elegans.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by analysis of wild isolates QX1211 and MY16 compared to N2 shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:56:06.824966Z"
+    },
+    {
+      "id": "48981fcd-a111-454b-9380-3a1dfffc76c9",
+      "content_id": "130000b4-815e-43ec-971c-66e3a6b41a78",
+      "claim_id": "C9",
+      "claim": "Helitron insertions are responsible for rewiring and diversifying the Caenorhabditis HSR.",
+      "claim_type": "EXPLICIT",
+      "source": "Our studies uncover previously unidentified targets of HSF-1 and show that Helitron insertions are responsible for rewiring and diversifying the Caenorhabditis HSR.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary conclusion of the study, supported by multiple lines of evidence including species and strain comparisons.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:56:06.824966Z"
+    },
+    {
+      "id": "c364cc75-0887-4dda-9e7e-cc240d98e7b9",
+      "content_id": "130000b4-815e-43ec-971c-66e3a6b41a78",
+      "claim_id": "C10",
+      "claim": "HSF-1 promotes the expression of heat-shock proteins (HSPs) that act as chaperones to prevent HS-induced misfolding and aggregation of proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, HSF-1 promotes the expression of heat-shock proteins (HSPs) that act as chaperones to prevent HS-induced misfolding and aggregation of proteins (Vihervaara et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge supported by citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:56:06.824966Z"
+    },
+    {
+      "id": "b67f5687-fb69-494d-b9d8-28aa9258cf7b",
+      "content_id": "130000b4-815e-43ec-971c-66e3a6b41a78",
+      "claim_id": "C11",
+      "claim": "HSF-1 has non-canonical roles in transcriptional programs distinct from the HSR, such as during development.",
+      "claim_type": "EXPLICIT",
+      "source": "More recently, HSF-1 has been identified as having non-canonical roles in transcriptional programs distinct from the HSR, such as during development (Li et al., 2016) and carcinogenesis (Mendillo et al., 2012), underscoring the importance of this ancient transcription factor.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:56:06.824966Z"
+    },
+    {
+      "id": "20897df9-b983-48ed-bd9d-23810bab3588",
+      "content_id": "130000b4-815e-43ec-971c-66e3a6b41a78",
+      "claim_id": "C12",
+      "claim": "HSF-1 has non-canonical roles in carcinogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "More recently, HSF-1 has been identified as having non-canonical roles in transcriptional programs distinct from the HSR, such as during development (Li et al., 2016) and carcinogenesis (Mendillo et al., 2012), underscoring the importance of this ancient transcription factor.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:56:06.824966Z"
+    },
+    {
+      "id": "7d31ce69-c0ee-46be-9675-f44549920b7c",
+      "content_id": "130000b4-815e-43ec-971c-66e3a6b41a78",
+      "claim_id": "C13",
+      "claim": "HSF-1 promotes the expression of a full-length autonomous transposable element known as a Helitron during heat shock.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, in previous work, we serendipitously discovered that HSF-1 promotes the expression of a full-length autonomous transposable element (TE) known as a Helitron during heat shock (Schreiner et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a previous finding from the authors' prior work, supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:56:06.824966Z"
+    },
+    {
+      "id": "676942bb-946b-4d14-8380-0b094e5e92d6",
+      "content_id": "130000b4-815e-43ec-971c-66e3a6b41a78",
+      "claim_id": "C14",
+      "claim": "Helitrons are a type of DNA transposon that replicate and transpose via a rolling-circle 'copy-and-paste' mechanism.",
+      "claim_type": "EXPLICIT",
+      "source": "Helitrons are a type of DNA transposon that are unique due to their replication and subsequent transposition occurring via a rolling-circle 'copy-and-paste' mechanism, which includes replication in place that results in a circular double-stranded DNA intermediate (Grabundzija et al., 2018; Kapitonov and Jurka, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:56:06.824966Z"
+    },
+    {
+      "id": "d0d054b0-8ca1-44d3-8448-302ac0c57c7d",
+      "content_id": "130000b4-815e-43ec-971c-66e3a6b41a78",
+      "claim_id": "C15",
+      "claim": "Helitrons were initially discovered in plants and C. elegans.",
+      "claim_type": "EXPLICIT",
+      "source": "While Helitrons were initially discovered in plants and C. elegans (Kapitonov and Jurka, 2001), they have since been identified in a diverse range of species, including humans (Kojima, 2018; Thomas and Pritham, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:56:06.824966Z"
+    },
+    {
+      "id": "bd448e8f-c287-4a2f-b02b-17cfbec2008b",
+      "content_id": "130000b4-815e-43ec-971c-66e3a6b41a78",
+      "claim_id": "C16",
+      "claim": "Helitrons have been identified in a diverse range of species, including humans.",
+      "claim_type": "EXPLICIT",
+      "source": "While Helitrons were initially discovered in plants and C. elegans (Kapitonov and Jurka, 2001), they have since been identified in a diverse range of species, including humans (Kojima, 2018; Thomas and Pritham, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:56:06.824966Z"
+    },
+    {
+      "id": "90e91619-a013-4aed-a189-fea3dba357bb",
+      "content_id": "130000b4-815e-43ec-971c-66e3a6b41a78",
+      "claim_id": "C17",
+      "claim": "Transposable elements can affect gene expression in cis by providing regulatory sequences to regions within or near genes.",
+      "claim_type": "EXPLICIT",
+      "source": "By providing regulatory sequences to regions within or near genes, these rearrangements can affect gene expression in cis (Bourque et al., 2018; Chuong et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:56:06.824966Z"
+    },
+    {
+      "id": "8962769c-631b-43c0-9adf-1de3aa592bef",
+      "content_id": "130000b4-815e-43ec-971c-66e3a6b41a78",
+      "claim_id": "C18",
+      "claim": "TEs have been proposed to supply a substantial number of functional transcription factor binding sites in the human genome.",
+      "claim_type": "EXPLICIT",
+      "source": "In the human genome, TEs have been proposed to supply a substantial number of functional transcription factor binding sites (Jiang and Upton, 2019; Jordan et al., 2003; Sundaram et al., 2014), underscoring their potential for shaping transcriptional programs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:56:06.824966Z"
+    },
+    {
+      "id": "26b14b4f-b697-4cf3-888a-d455294ea9d3",
+      "content_id": "130000b4-815e-43ec-971c-66e3a6b41a78",
+      "claim_id": "C19",
+      "claim": "Endogenous retrovirus (ERV) TEs harbor binding sites for core transcription factors in the mammalian interferon response.",
+      "claim_type": "EXPLICIT",
+      "source": "In a particularly striking example, endogenous retrovirus (ERV) TEs were found to harbor binding sites for core transcription factors in the mammalian interferon response and, in some cases, provide interferon-inducible enhancers for nearby genes (Chuong et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge supported by citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:56:06.824966Z"
+    },
+    {
+      "id": "ea4380b5-a933-497b-8374-979d0f90c6aa",
+      "content_id": "130000b4-815e-43ec-971c-66e3a6b41a78",
+      "claim_id": "C20",
+      "claim": "ERV TEs provide interferon-inducible enhancers for nearby genes in some cases.",
+      "claim_type": "EXPLICIT",
+      "source": "In a particularly striking example, endogenous retrovirus (ERV) TEs were found to harbor binding sites for core transcription factors in the mammalian interferon response and, in some cases, provide interferon-inducible enhancers for nearby genes (Chuong et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge supported by citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:56:06.824966Z"
+    },
+    {
+      "id": "f3ead8ab-b48b-40ec-b785-e6b78b897b86",
+      "content_id": "130000b4-815e-43ec-971c-66e3a6b41a78",
+      "claim_id": "C21",
+      "claim": "Five types of Helitrons display HSF-1 binding in non-heat shock conditions and increased binding during heat shock conditions: HelitronY4_CE, HelitronY1_CE, HelitronY1A_CE, Helitron2_CE, and Helitron1_CE.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to our observation with Helitron1_CE, four other types of Helitrons display HSF-1 binding in NHS conditions and increased binding during HS conditions: HelitronY4_CE, HelitronY1_CE, HelitronY1A_CE, and Helitron2_CE (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by ChIP-seq data analysis shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:56:06.824966Z"
+    },
+    {
+      "id": "61223cf7-882e-4bb8-b578-d2d0f9628d55",
+      "content_id": "130000b4-815e-43ec-971c-66e3a6b41a78",
+      "claim_id": "C22",
+      "claim": "HSF-1 peak summits within Helitrons are enriched for HSE-like motifs.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, HSF-1 peak summits within Helitrons were enriched for HSE-like motifs that were determined to be significantly similar to the repeat-masked HSE motif using the motif-comparison tool Tomtom (Gupta et al., 2007) (q-value <1.0e-03).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by motif analysis shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:56:06.824966Z"
+    },
+    {
+      "id": "106827ef-0562-405d-bea6-4ad7ae56b5e3",
+      "content_id": "130000b4-815e-43ec-971c-66e3a6b41a78",
+      "claim_id": "C23",
+      "claim": "The HSE is the most enriched transcription factor binding motif in Helitrons among 130 experimentally determined C. elegans transcription factor binding motifs.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, a comprehensive search for the presence of 130 experimentally determined C. elegans transcription factor binding motifs (Matys et al., 2006; Narasimhan et al., 2015; Weirauch et al., 2014) in Helitrons showed that the most enriched was the HSE (Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by comprehensive motif enrichment analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:56:06.824966Z"
+    },
+    {
+      "id": "556afe33-2bc9-4910-a4d7-d81f42c0ea63",
+      "content_id": "130000b4-815e-43ec-971c-66e3a6b41a78",
+      "claim_id": "C24",
+      "claim": "953 Helitrons in the C. elegans genome contain HSEs.",
+      "claim_type": "EXPLICIT",
+      "source": "Many, but not all, individual Helitrons contain HSEs, ranging from 2% of the Helitron2_CE class to 44% of the HelitronY1_CE class, yielding a total of 953 HSE-containing Helitrons (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by genome-wide HSE scanning analysis shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:56:06.824966Z"
+    },
+    {
+      "id": "53994ea5-6e78-4cdd-a248-2e9d44fc9cd3",
+      "content_id": "130000b4-815e-43ec-971c-66e3a6b41a78",
+      "claim_id": "C25",
+      "claim": "Eight copies of HelitronY4_CE possess more than 100 HSEs.",
+      "claim_type": "EXPLICIT",
+      "source": "While most HSE-containing Helitrons harbor between one and ten HSEs, eight copies of HelitronY4_CE possess more than 100 HSEs (Figure 1D), highlighting the potential of Helitrons to provide significant numbers of HSEs to the genome.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by analysis shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:56:06.824966Z"
+    },
+    {
+      "id": "16aa2a88-0553-41d0-8c24-3281044dd78b",
+      "content_id": "130000b4-815e-43ec-971c-66e3a6b41a78",
+      "claim_id": "C26",
+      "claim": "More than 10,000 total HSEs are found within five Helitron classes in C. elegans.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, more than 10,000 total HSEs are found within these five Helitron classes (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by analysis shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:56:06.824966Z"
+    },
+    {
+      "id": "9f2676f1-ae95-466f-8855-e5a1e1c839f8",
+      "content_id": "130000b4-815e-43ec-971c-66e3a6b41a78",
+      "claim_id": "C27",
+      "claim": "1.7% of the C. elegans genome is annotated as Helitron.",
+      "claim_type": "EXPLICIT",
+      "source": "After condensing any Helitrons with overlapping positions into single regions, 1.7% of the C. elegans genome (1.68/100.27 Mb) was determined to be Helitron (Figure 1E), which is consistent with the original estimate of 2% (Kapitonov and Jurka, 2001).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by genome annotation analysis shown in Figure 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:56:06.824966Z"
+    },
+    {
+      "id": "c248eec7-f747-4531-b398-c71a5e51953d",
+      "content_id": "130000b4-815e-43ec-971c-66e3a6b41a78",
+      "claim_id": "C28",
+      "claim": "61.4% of genomic HSEs in C. elegans reside within Helitrons.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, we found that 61.4% (11,527/18,766) of genomic HSEs reside within Helitrons, while only 38.6% are found outside of Helitrons, resulting in a significant enrichment (p<1.0e-15, binomial test) (Figure 1F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by genome-wide analysis shown in Figure 1F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:56:06.824966Z"
+    },
+    {
+      "id": "cdfdc06a-4cc3-4207-a63f-7de29c8479c1",
+      "content_id": "130000b4-815e-43ec-971c-66e3a6b41a78",
+      "claim_id": "C29",
+      "claim": "HSEs are significantly enriched within Helitron sequences in C. elegans (p<1.0e-15).",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, we found that 61.4% (11,527/18,766) of genomic HSEs reside within Helitrons, while only 38.6% are found outside of Helitrons, resulting in a significant enrichment (p<1.0e-15, binomial test) (Figure 1F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by statistical analysis of genome-wide data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:56:06.824966Z"
+    },
+    {
+      "id": "b6b48e77-3096-4310-95d4-2fcc7f9b8029",
+      "content_id": "130000b4-815e-43ec-971c-66e3a6b41a78",
+      "claim_id": "C30",
+      "claim": "Hac-HSEs exist within high-density clusters in the C. elegans genome.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, while Hin-HSEs are evenly distributed within 1 kb bins along the length of chromosome II (chrII), high numbers of Hac-HSEs are clustered at distinct loci (Figure 1G); this pattern is consistent across all six C. elegans chromosomes (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by chromosomal distribution analysis shown in Figure 1G and Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:56:06.824966Z"
+    },
+    {
+      "id": "535a8c71-591f-487a-ac9f-529bdb1c610f",
+      "content_id": "130000b4-815e-43ec-971c-66e3a6b41a78",
+      "claim_id": "C31",
+      "claim": "Helitrons are enriched for HSEs that are often clustered (p<1.0e-15).",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, we find that Helitrons are enriched for HSEs that are often clustered (p<1.0e-15, Fisher's exact test), and high HSE densities seem to be restricted to remnants of prior Helitron insertions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by statistical analysis of HSE distribution data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:56:06.824966Z"
+    },
+    {
+      "id": "5c1a2fa1-f477-4b6b-b6e9-ac2e7fe214a0",
+      "content_id": "130000b4-815e-43ec-971c-66e3a6b41a78",
+      "claim_id": "C32",
+      "claim": "Similar numbers of HSF-1 peak summits during HS conditions contain Hac-HSEs (n = 556) and Hin-HSEs (n = 578).",
+      "claim_type": "EXPLICIT",
+      "source": "Similar numbers of HSF-1 peak summits during HS conditions were observed to contain Hac-HSEs (n = 556) and Hin-HSEs (n = 578) (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by ChIP-seq data analysis shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:56:06.824966Z"
+    },
+    {
+      "id": "a2a61447-f407-434a-be6d-091b1790f072",
+      "content_id": "130000b4-815e-43ec-971c-66e3a6b41a78",
+      "claim_id": "C33",
+      "claim": "For both Hac-HSEs and Hin-HSEs, the levels of HSF-1 and RNA polymerase II are generally higher under HS compared to non-HS conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "For both of these types of HSEs, the levels of HSF-1, as well as RNA polymerase II (Pol II), were generally higher under HS compared to non-HS conditions (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by ChIP-seq data analysis shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:56:06.824966Z"
+    },
+    {
+      "id": "ed4f999d-f70e-49f4-947a-4c41d802067f",
+      "content_id": "130000b4-815e-43ec-971c-66e3a6b41a78",
+      "claim_id": "C34",
+      "claim": "1462 protein-coding genes were significantly up-regulated by at least two-fold after 30 min of HS at 34\u00b0C compared to NHS conditions at 20\u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "After 30 min of HS at 34\u00b0C, 1462 protein-coding genes were significantly up-regulated by at least two-fold compared to NHS conditions at 20\u00b0C (Supplementary file 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by RNA-seq data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:56:06.824966Z"
+    },
+    {
+      "id": "9dfdabf5-0389-4881-8643-1b1dc0cacb33",
+      "content_id": "130000b4-815e-43ec-971c-66e3a6b41a78",
+      "claim_id": "C35",
+      "claim": "60 genes were found within 2.5 kb of sequence downstream of a Hac-HSE bound by HSF-1, resulting in a significant enrichment over the expected background (p<1.0e-15).",
+      "claim_type": "EXPLICIT",
+      "source": "Of these, 60 genes were found within 2.5 kb of sequence downstream of a Hac-HSE bound by HSF-1, resulting in a significant enrichment over the expected background (p<1.0e-15, \u03c72 test) (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by statistical analysis of gene proximity data shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:56:06.824966Z"
+    },
+    {
+      "id": "cc55fc6b-5c23-4231-8791-813621ac6c9c",
+      "content_id": "130000b4-815e-43ec-971c-66e3a6b41a78",
+      "claim_id": "C36",
+      "claim": "60 genes were found proximal to Hin-HSEs, resulting in a significant enrichment over the background expectation (p=1.0e-09).",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to one gene containing HSF-1 bound Hac- and Hin-HSEs, the remaining 59 genes were found proximal to Hin-HSEs, resulting in a total of 60 genes that showed a similar enrichment over the background expectation (p=1.0e-09, \u03c72 test) (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by statistical analysis of gene proximity data shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:56:06.824966Z"
+    },
+    {
+      "id": "6b6befbc-3fa8-4c24-b48f-daf61ffcd572",
+      "content_id": "130000b4-815e-43ec-971c-66e3a6b41a78",
+      "claim_id": "C37",
+      "claim": "The HelitronY1_CE element upstream of col-88 contains 10 HSEs.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the overall trend of a high abundance of HSEs in Helitrons (Figure 1F\u2013G), the HelitronY1_CE element upstream of col-88 contains 10 HSEs (Figure 2C), whereas hsp-70 only has two HSEs in its promoter (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by genome browser visualization shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:56:06.824966Z"
+    },
+    {
+      "id": "b2c71007-ced4-4ca6-9b32-687288d878ff",
+      "content_id": "130000b4-815e-43ec-971c-66e3a6b41a78",
+      "claim_id": "C38",
+      "claim": "hsp-70 has two HSEs in its promoter.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the overall trend of a high abundance of HSEs in Helitrons (Figure 1F\u2013G), the HelitronY1_CE element upstream of col-88 contains 10 HSEs (Figure 2C), whereas hsp-70 only has two HSEs in its promoter (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by genome browser visualization shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:56:06.824966Z"
+    },
+    {
+      "id": "8315d319-8053-4f68-a703-9a5b7c0c5e08",
+      "content_id": "130000b4-815e-43ec-971c-66e3a6b41a78",
+      "claim_id": "C39",
+      "claim": "Hac-HSE genes have significantly more HSEs within 2.5 kb upstream of their transcriptional start sites compared to Hin-HSE genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Reflecting the differences observed for col-88 and hsp-70, we found that Hac-HSE genes in general have significantly more HSEs within 2.5 kb upstream of their transcriptional start sites compared to Hin-HSE genes (Figure 2E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by statistical analysis shown in Figure 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:56:06.824966Z"
+    },
+    {
+      "id": "a2ff240c-7786-46e7-bdbc-938deae4ac32",
+      "content_id": "130000b4-815e-43ec-971c-66e3a6b41a78",
+      "claim_id": "C40",
+      "claim": "mRNA expression levels are generally lower for Hac-HSE versus Hin-HSE genes during NHS and HS conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "While the overall fold-induction of Hac-HSE and Hin-HSE genes in response to HS is similar, mRNA expression levels are generally lower for Hac-HSE versus Hin-HSE genes during NHS and HS conditions (Figure 2F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by RNA-seq data analysis shown in Figure 2F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:56:06.824966Z"
+    },
+    {
+      "id": "c64bc8b1-c511-499a-8c95-adccd0156a09",
+      "content_id": "130000b4-815e-43ec-971c-66e3a6b41a78",
+      "claim_id": "C41",
+      "claim": "Hac-HSE genes exhibit less Pol II coverage relative to Hin-HSE genes both before and during HS.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this observation, Hac-HSE genes exhibit less Pol II coverage relative to Hin-HSE genes both before and during HS (Figure 2G and Supplementary files 3 and 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by ChIP-seq data analysis shown in Figure 2G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:56:06.824966Z"
+    },
+    {
+      "id": "fc8cb9e5-ff06-4019-bc17-883e5d54cecd",
+      "content_id": "130000b4-815e-43ec-971c-66e3a6b41a78",
+      "claim_id": "C42",
+      "claim": "Hac-HSE genes have significantly higher levels of repressive histone marks (H3K27me3) when compared to Hin-HSE genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, Hac-HSE genes have significantly higher levels of the repressive and lower levels of the active histone marks when compared to Hin-HSE genes (Figure 2H and Figure 2\u2014figure supplement 1) and Supplementary files 3 and 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by ChIP-seq data analysis of histone modifications shown in Figure 2H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:56:06.824966Z"
+    },
+    {
+      "id": "aa091027-6eb4-4768-a621-0530ae698efb",
+      "content_id": "130000b4-815e-43ec-971c-66e3a6b41a78",
+      "claim_id": "C43",
+      "claim": "Hac-HSE genes have significantly lower levels of active histone marks when compared to Hin-HSE genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, Hac-HSE genes have significantly higher levels of the repressive and lower levels of the active histone marks when compared to Hin-HSE genes (Figure 2H and Figure 2\u2014figure supplement 1) and Supplementary files 3 and 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by ChIP-seq data analysis of histone modifications shown in Figure 2H and Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:56:06.824966Z"
+    },
+    {
+      "id": "003d12b5-5a02-482d-a3f3-ff9929c16c0d",
+      "content_id": "130000b4-815e-43ec-971c-66e3a6b41a78",
+      "claim_id": "C44",
+      "claim": "Hin-HSE genes show an enrichment of gene ontology (GO) terms related to canonical HSR targets, such as response to topologically incorrect protein, response to heat, and determination of adult lifespan.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with these studies, Hin-HSE genes show an enrichment of gene ontology (GO) terms related to canonical HSR targets, such as response to topologically incorrect protein, response to heat, and determination of adult lifespan (Figure 2I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by GO enrichment analysis shown in Figure 2I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:56:06.824966Z"
+    },
+    {
+      "id": "4a046cf3-7fd3-4e14-8e05-79eab04942dd",
+      "content_id": "130000b4-815e-43ec-971c-66e3a6b41a78",
+      "claim_id": "C45",
+      "claim": "Hac-HSE genes are associated with GO enrichment terms for collagen trimer, G protein-coupled receptor (GPCR) signaling, and sensory perception of smell.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, Hac-HSE genes are associated with distinct GO enrichment terms, namely collagen trimer, G protein-coupled receptor (GPCR) signaling, and sensory perception of smell (Figure 2I), possibly reflecting more recent integration into this stress response.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by GO enrichment analysis shown in Figure 2I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:56:06.824966Z"
+    },
+    {
+      "id": "217b694f-7746-49ed-9d8b-5a360df2b19e",
+      "content_id": "130000b4-815e-43ec-971c-66e3a6b41a78",
+      "claim_id": "C46",
+      "claim": "Enrichment of HSEs within Helitrons is limited to only three Caenorhabditis species (C. elegans, C. briggsae and C. brenneri) among all species with annotated Helitrons.",
+      "claim_type": "EXPLICIT",
+      "source": "While a variety of species across different phyla have sequences annotated as Helitron, enrichment of HSEs within Helitrons is limited to only the three Caenorhabditis species represented in this dataset (C. elegans, C. briggsae and C. brenneri) (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by comparative genomic analysis shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:56:06.824966Z"
+    },
+    {
+      "id": "3ed27dd1-fbf7-4a50-a7ed-7c6980405c17",
+      "content_id": "130000b4-815e-43ec-971c-66e3a6b41a78",
+      "claim_id": "C47",
+      "claim": "All examined Caenorhabditis species show significant enrichment of HSEs within Helitrons (p<1.0e-03 in all cases).",
+      "claim_type": "EXPLICIT",
+      "source": "All examined Caenorhabditis species show significant enrichment of HSEs within Helitrons (p<1.0e-03 in all cases, binomial test), even though the percentages of HSEs located in annotated Helitrons range between 0.2% in C. monodelphis to 46.2% in C. elegans (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by statistical analysis of 27 Caenorhabditis genomes shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:56:06.824966Z"
+    },
+    {
+      "id": "d36af195-dcc0-4cad-93b0-f1ceab34972d",
+      "content_id": "130000b4-815e-43ec-971c-66e3a6b41a78",
+      "claim_id": "C48",
+      "claim": "The genomes of C. briggsae, C. brenneri, and C. virilis each contain more than 100 clusters of Helitron-embedded HSEs with at least ten 1 kb windows with more than 10 HSEs.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to C. elegans, the genomes of C. briggsae, C. brenneri, and C. virilis each contain more than 100 such clusters of Helitron-embedded HSEs (Figure 3C), and several genomes contain at least one cluster with more than 50 HSEs in a 1 kb window (Supplementary file 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by analysis shown in Figure 3C and Supplementary file 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:56:06.824966Z"
+    },
+    {
+      "id": "fa544bc9-4692-421f-bf18-055f63486b89",
+      "content_id": "130000b4-815e-43ec-971c-66e3a6b41a78",
+      "claim_id": "C49",
+      "claim": "In both C. elegans and C. briggsae, there is significant enrichment of HS up-regulated genes within 2.5 kb of Hac-HSEs compared to background levels.",
+      "claim_type": "EXPLICIT",
+      "source": "In both C. elegans (Figure 4A) and C. briggsae (Figure 4B), we observe significant enrichment of HS up-regulated genes within 2.5 kb of Hac-HSEs compared to background levels observed by chance (C. elegans, p<1.0e-15; C. briggsae, p=1.8e-05, \u03c72 test).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by statistical analysis of gene proximity data shown in Figure 4A and 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:56:06.824966Z"
+    },
+    {
+      "id": "cb6f2d50-85a4-477a-9e24-68d3b9910d11",
+      "content_id": "130000b4-815e-43ec-971c-66e3a6b41a78",
+      "claim_id": "C50",
+      "claim": "There is only one ortholog pair up-regulated in both C. elegans and C. briggsae that has upstream Hac-HSEs in both species, and this gene appears to encode for a full-length Helitron transposase.",
+      "claim_type": "EXPLICIT",
+      "source": "When we compared HSR genes that have upstream Hac-HSEs with their orthologs in the other species, there was only one ortholog pair up-regulated in both C. elegans and C. briggsae that also has upstream Hac-HSEs in both species (designated as 'shared') and this one gene appears to encode for a full-length Helitron transposase (see below).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by ortholog comparison analysis shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:56:06.824966Z"
+    },
+    {
+      "id": "907720b9-c2c1-4be7-9525-4b7a9b6cc975",
+      "content_id": "130000b4-815e-43ec-971c-66e3a6b41a78",
+      "claim_id": "C51",
+      "claim": "38 unique Hac-HSE-containing up-regulated orthologs exist in C. elegans.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the remaining orthologous pairs have Hac-HSEs in one species but not the other (designated as 'unique') (C. elegans, n = 38; C. briggsae, n = 26) (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by ortholog comparison analysis shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:56:06.824966Z"
+    },
+    {
+      "id": "1f0c1b10-33d8-4a95-ab8b-55b163a9ad7b",
+      "content_id": "130000b4-815e-43ec-971c-66e3a6b41a78",
+      "claim_id": "C52",
+      "claim": "26 unique Hac-HSE-containing up-regulated orthologs exist in C. briggsae.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the remaining orthologous pairs have Hac-HSEs in one species but not the other (designated as 'unique') (C. elegans, n = 38; C. briggsae, n = 26) (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by ortholog comparison analysis shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:56:06.824966Z"
+    },
+    {
+      "id": "b0b72119-f2dd-4069-b49c-ba30e9fa357e",
+      "content_id": "130000b4-815e-43ec-971c-66e3a6b41a78",
+      "claim_id": "C53",
+      "claim": "27 up-regulated genes shared between C. elegans and C. briggsae have Hin-HSEs in both species.",
+      "claim_type": "EXPLICIT",
+      "source": "This contrasts from up-regulated orthologs with Hin-HSEs, where 27 up-regulated genes shared between species also have Hin-HSEs in both species.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by ortholog comparison analysis shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:56:06.824966Z"
+    },
+    {
+      "id": "e6bae59a-8229-4c6b-a865-645fe4021527",
+      "content_id": "130000b4-815e-43ec-971c-66e3a6b41a78",
+      "claim_id": "C54",
+      "claim": "Over half (15/27, or 56%) of shared Hin-HSE HSR orthologs are bound by HSF-1 in C. elegans.",
+      "claim_type": "EXPLICIT",
+      "source": "In agreement with many of these shared Hin-HSE HSR orthologs being conserved HSF-1 targets, over half (15/27, or 56%) of these genes are bound by HSF-1 in C. elegans (Supplementary file 4).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by ChIP-seq data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:56:06.824966Z"
+    },
+    {
+      "id": "0a05c8d9-c805-4347-8505-9147cdec209a",
+      "content_id": "130000b4-815e-43ec-971c-66e3a6b41a78",
+      "claim_id": "C55",
+      "claim": "C. elegans col-52 has 86 HelitronY4_CE-provided HSEs in its upstream promoter region and is up-regulated during heat shock.",
+      "claim_type": "EXPLICIT",
+      "source": "As an example of a unique Hac-HSE gene in C. elegans, col-52 has 86 HelitronY4_CE-provided HSEs in its upstream promoter region (Figure 4D) and is up-regulated during heat shock in C. elegans (Figure 4E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by genome browser visualization and expression data shown in Figure 4D and 4E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:56:06.824966Z"
+    },
+    {
+      "id": "13311549-41a8-47cf-9688-71879aadcd0f",
+      "content_id": "130000b4-815e-43ec-971c-66e3a6b41a78",
+      "claim_id": "C56",
+      "claim": "C. briggsae Cbr-col-52 lacks Hac-HSEs and is non-responsive to HS.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, in C. briggsae this same gene lacks Hac-HSEs (Figure 4D) and is non-responsive to HS (Figure 4E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by genome browser visualization and expression data shown in Figure 4D and 4E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:56:06.824966Z"
+    },
+    {
+      "id": "596bf198-bdbe-480b-97ae-4aca0209ab9d",
+      "content_id": "130000b4-815e-43ec-971c-66e3a6b41a78",
+      "claim_id": "C57",
+      "claim": "C. briggsae CBG00919 has 12 Hac-HSEs provided by Helitron7_CB and is up-regulated during heat shock.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, the C. briggsae gene CBG00919 has 12 Hac-HSEs provided by Helitron7_CB (Figure 4F) and is up-regulated during heat shock in C. briggsae (Figure 4G), while the C. elegans ortholog C01G6.3 lacks Hac-HSEs (Figure 4F) and is not up-regulated during heat shock (Figure 4G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by genome browser visualization and expression data shown in Figure 4F and 4G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:56:06.824966Z"
+    },
+    {
+      "id": "44a21900-b9bd-4c8b-856a-6e37956a59c0",
+      "content_id": "130000b4-815e-43ec-971c-66e3a6b41a78",
+      "claim_id": "C58",
+      "claim": "C. elegans C01G6.3 lacks Hac-HSEs and is not up-regulated during heat shock.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, the C. briggsae gene CBG00919 has 12 Hac-HSEs provided by Helitron7_CB (Figure 4F) and is up-regulated during heat shock in C. briggsae (Figure 4G), while the C. elegans ortholog C01G6.3 lacks Hac-HSEs (Figure 4F) and is not up-regulated during heat shock (Figure 4G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by genome browser visualization and expression data shown in Figure 4F and 4G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:56:06.824966Z"
+    },
+    {
+      "id": "d548e3b2-a419-448a-a63b-0d34b0d712ae",
+      "content_id": "130000b4-815e-43ec-971c-66e3a6b41a78",
+      "claim_id": "C59",
+      "claim": "C. elegans F33H12.6 resides within an annotated full-length copy of Helitron1_CE, has 14 Hac-HSEs in its promoter region, and is up-regulated during heat shock.",
+      "claim_type": "EXPLICIT",
+      "source": "In C. elegans, the Rep-Helicase-encoding gene F33H12.6 resides within an annotated full-length copy of Helitron1_CE, has 14 Hac-HSEs in its promoter region (Figure 4H), and is up-regulated during heat shock (Figure 4I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by genome browser visualization and expression data shown in Figure 4H and 4I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:56:06.824966Z"
+    },
+    {
+      "id": "3f48eb1a-bf41-400f-8db4-be1d85e57482",
+      "content_id": "130000b4-815e-43ec-971c-66e3a6b41a78",
+      "claim_id": "C60",
+      "claim": "C. briggsae CBG26851 has 85 upstream Hac-HSEs provided by Helitron7_CB and is up-regulated during heat shock.",
+      "claim_type": "EXPLICIT",
+      "source": "Likewise, the C. briggsae Rep-Helicase ortholog CBG26851 (determined using BLASTP) (Altschul et al., 1990) has 85 upstream Hac-HSEs provided by Helitron7_CB (Figure 4H) and is up-regulated during heat shock (Figure 4I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by genome browser visualization and expression data shown in Figure 4H and 4I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:56:06.824966Z"
+    },
+    {
+      "id": "3d0ae741-a8e2-496e-815a-88db1838139f",
+      "content_id": "130000b4-815e-43ec-971c-66e3a6b41a78",
+      "claim_id": "C61",
+      "claim": "Unique up-regulated Hac-HSE-containing orthologs in C. elegans are enriched for GO terms associated with collagens and GPCR signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the GO analysis depicted in Figure 2I, we found that unique up-regulated Hac-HSE-containing orthologs in C. elegans are enriched for GO terms associated with collagens and GPCR signaling (Figure 4J).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by GO enrichment analysis shown in Figure 4J.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:56:06.824966Z"
+    },
+    {
+      "id": "11b42e99-cf84-4ebd-b31a-1541d8899f21",
+      "content_id": "130000b4-815e-43ec-971c-66e3a6b41a78",
+      "claim_id": "C62",
+      "claim": "Unique up-regulated Hac-HSE orthologs in C. briggsae are associated with carbohydrate metabolism.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, unique up-regulated Hac-HSE orthologs in C. briggsae are associated with carbohydrate metabolism (Figure 4J).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by GO enrichment analysis shown in Figure 4J.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:56:06.824966Z"
+    },
+    {
+      "id": "e5ca3b57-774e-4ac1-8241-e306e5ad4be6",
+      "content_id": "130000b4-815e-43ec-971c-66e3a6b41a78",
+      "claim_id": "C63",
+      "claim": "Shared Hin-HSE orthologs are enriched for terms associated with canonical HSR targets, such as response to topologically incorrect protein, response to heat, and the determination of adult lifespan.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, shared Hin-HSE orthologs are enriched for terms associated with canonical HSR targets, such as response to topologically incorrect protein, response to heat, and the determination of adult lifespan (Figure 4J).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by GO enrichment analysis shown in Figure 4J.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:56:06.824966Z"
+    },
+    {
+      "id": "285e5ec5-6111-47e8-b44b-9f77ca7926e1",
+      "content_id": "130000b4-815e-43ec-971c-66e3a6b41a78",
+      "claim_id": "C64",
+      "claim": "In the N2 strain, HelitronY4_CE sequence provides 96 Hac-HSEs to nhr-247.",
+      "claim_type": "EXPLICIT",
+      "source": "In the N2 strain, HelitronY4_CE sequence provides 96 Hac-HSEs to nhr-247 (Figure 5A), HelitronY1A_CE provides 30 Hac-HSEs to str-96 (Figure 5B), and Helitron2_CE provides 9 Hac-HSEs to fbxa-102 (Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by genome browser visualization shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:56:06.824966Z"
+    },
+    {
+      "id": "e6592769-c453-428d-b659-91e3936b98af",
+      "content_id": "130000b4-815e-43ec-971c-66e3a6b41a78",
+      "claim_id": "C65",
+      "claim": "In the N2 strain, HelitronY1A_CE provides 30 Hac-HSEs to str-96.",
+      "claim_type": "EXPLICIT",
+      "source": "In the N2 strain, HelitronY4_CE sequence provides 96 Hac-HSEs to nhr-247 (Figure 5A), HelitronY1A_CE provides 30 Hac-HSEs to str-96 (Figure 5B), and Helitron2_CE provides 9 Hac-HSEs to fbxa-102 (Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by genome browser visualization shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:56:06.824966Z"
+    },
+    {
+      "id": "a45017a9-b0a5-4dea-80f1-d28cf265ad00",
+      "content_id": "130000b4-815e-43ec-971c-66e3a6b41a78",
+      "claim_id": "C66",
+      "claim": "In the N2 strain, Helitron2_CE provides 9 Hac-HSEs to fbxa-102.",
+      "claim_type": "EXPLICIT",
+      "source": "In the N2 strain, HelitronY4_CE sequence provides 96 Hac-HSEs to nhr-247 (Figure 5A), HelitronY1A_CE provides 30 Hac-HSEs to str-96 (Figure 5B), and Helitron2_CE provides 9 Hac-HSEs to fbxa-102 (Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by genome browser visualization shown in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:56:06.824966Z"
+    },
+    {
+      "id": "3e8f5e9c-db9e-4f17-abce-cecefca8e493",
+      "content_id": "130000b4-815e-43ec-971c-66e3a6b41a78",
+      "claim_id": "C67",
+      "claim": "nhr-247, str-96, and fbxa-102 associate with HSF-1 and Pol II and increase in expression during HS in N2.",
+      "claim_type": "EXPLICIT",
+      "source": "All of these genes associate with HSF-1 and Pol II and increase in expression during HS in N2 (Figure 5A\u2013C and Supplementary files 2 and 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by ChIP-seq and RNA-seq data shown in Figure 5A-C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:56:06.824966Z"
+    },
+    {
+      "id": "65b9f26c-37a1-4714-a1e6-e1aebf9253ec",
+      "content_id": "130000b4-815e-43ec-971c-66e3a6b41a78",
+      "claim_id": "C68",
+      "claim": "nhr-247 was up-regulated 254 fold during HS versus non-HS conditions in N2 (p=0.01).",
+      "claim_type": "EXPLICIT",
+      "source": "While these three genes were strongly up-regulated during HS versus non-HS conditions in N2 (nhr-247, 254 fold, p=0.01; str-96, 7.0 fold, p=0.006; fbxa-102, 8.3 fold, p=0.03; Welch Two Sample t-test), their induction was greatly reduced in QX1211 (nhr-247, 3.2 fold, p=0.16; str-96, 3.6 fold, p=0.07; Welch Two Sample t-test) and MY16 (fbxa-102, 0.4 fold, p=0.29; Welch Two Sample t-test) (Figure 5D\u2013E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by RT-qPCR data shown in Figure 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:56:06.824966Z"
+    },
+    {
+      "id": "61022584-8f29-47c1-a1ab-1c77fb39544b",
+      "content_id": "130000b4-815e-43ec-971c-66e3a6b41a78",
+      "claim_id": "C69",
+      "claim": "str-96 was up-regulated 7.0 fold during HS versus non-HS conditions in N2 (p=0.006).",
+      "claim_type": "EXPLICIT",
+      "source": "While these three genes were strongly up-regulated during HS versus non-HS conditions in N2 (nhr-247, 254 fold, p=0.01; str-96, 7.0 fold, p=0.006; fbxa-102, 8.3 fold, p=0.03; Welch Two Sample t-test), their induction was greatly reduced in QX1211 (nhr-247, 3.2 fold, p=0.16; str-96, 3.6 fold, p=0.07; Welch Two Sample t-test) and MY16 (fbxa-102, 0.4 fold, p=0.29; Welch Two Sample t-test) (Figure 5D\u2013E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by RT-qPCR data shown in Figure 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:56:06.824966Z"
+    },
+    {
+      "id": "8fdbea84-daed-45e5-a682-c943e18dc2ea",
+      "content_id": "130000b4-815e-43ec-971c-66e3a6b41a78",
+      "claim_id": "C70",
+      "claim": "fbxa-102 was up-regulated 8.3 fold during HS versus non-HS conditions in N2 (p=0.03).",
+      "claim_type": "EXPLICIT",
+      "source": "While these three genes were strongly up-regulated during HS versus non-HS conditions in N2 (nhr-247, 254 fold, p=0.01; str-96, 7.0 fold, p=0.006; fbxa-102, 8.3 fold, p=0.03; Welch Two Sample t-test), their induction was greatly reduced in QX1211 (nhr-247, 3.2 fold, p=0.16; str-96, 3.6 fold, p=0.07; Welch Two Sample t-test) and MY16 (fbxa-102, 0.4 fold, p=0.29; Welch Two Sample t-test) (Figure 5D\u2013E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by RT-qPCR data shown in Figure 5E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:56:06.824966Z"
+    },
+    {
+      "id": "6d23a07b-ee1d-4ede-818f-98f33fc98286",
+      "content_id": "130000b4-815e-43ec-971c-66e3a6b41a78",
+      "claim_id": "C71",
+      "claim": "nhr-247 induction was greatly reduced in QX1211 (3.2 fold, p=0.16).",
+      "claim_type": "EXPLICIT",
+      "source": "While these three genes were strongly up-regulated during HS versus non-HS conditions in N2 (nhr-247, 254 fold, p=0.01; str-96, 7.0 fold, p=0.006; fbxa-102, 8.3 fold, p=0.03; Welch Two Sample t-test), their induction was greatly reduced in QX1211 (nhr-247, 3.2 fold, p=0.16; str-96, 3.6 fold, p=0.07; Welch Two Sample t-test) and MY16 (fbxa-102, 0.4 fold, p=0.29; Welch Two Sample t-test) (Figure 5D\u2013E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by RT-qPCR data shown in Figure 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:56:06.824966Z"
+    },
+    {
+      "id": "1d35632b-1e40-43dc-8723-b8b9fc8faad9",
+      "content_id": "130000b4-815e-43ec-971c-66e3a6b41a78",
+      "claim_id": "C72",
+      "claim": "str-96 induction was greatly reduced in QX1211 (3.6 fold, p=0.07).",
+      "claim_type": "EXPLICIT",
+      "source": "While these three genes were strongly up-regulated during HS versus non-HS conditions in N2 (nhr-247, 254 fold, p=0.01; str-96, 7.0 fold, p=0.006; fbxa-102, 8.3 fold, p=0.03; Welch Two Sample t-test), their induction was greatly reduced in QX1211 (nhr-247, 3.2 fold, p=0.16; str-96, 3.6 fold, p=0.07; Welch Two Sample t-test) and MY16 (fbxa-102, 0.4 fold, p=0.29; Welch Two Sample t-test) (Figure 5D\u2013E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by RT-qPCR data shown in Figure 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:56:06.824966Z"
+    },
+    {
+      "id": "efc41321-71d3-494c-8e46-b7c383607218",
+      "content_id": "130000b4-815e-43ec-971c-66e3a6b41a78",
+      "claim_id": "C73",
+      "claim": "fbxa-102 induction was greatly reduced in MY16 (0.4 fold, p=0.29).",
+      "claim_type": "EXPLICIT",
+      "source": "While these three genes were strongly up-regulated during HS versus non-HS conditions in N2 (nhr-247, 254 fold, p=0.01; str-96, 7.0 fold, p=0.006; fbxa-102, 8.3 fold, p=0.03; Welch Two Sample t-test), their induction was greatly reduced in QX1211 (nhr-247, 3.2 fold, p=0.16; str-96, 3.6 fold, p=0.07; Welch Two Sample t-test) and MY16 (fbxa-102, 0.4 fold, p=0.29; Welch Two Sample t-test) (Figure 5D\u2013E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by RT-qPCR data shown in Figure 5E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:56:06.824966Z"
+    },
+    {
+      "id": "ec41be3f-009c-47bb-b132-04a1d9fd43db",
+      "content_id": "130000b4-815e-43ec-971c-66e3a6b41a78",
+      "claim_id": "C74",
+      "claim": "The canonical HSR gene hsp-70 showed similar levels of HS induction in the wild isolates compared to N2.",
+      "claim_type": "EXPLICIT",
+      "source": "The canonical HSR gene hsp-70 showed similar levels of HS induction in the wild isolates compared to N2, ruling out that a generally attenuated HSR is responsible for the diminished induction of nhr-247 and str-96 in QX1211 and fbxa-102 in MY16 (Figure 5D\u2013E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by RT-qPCR data shown in Figure 5D-E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:56:06.824966Z"
+    },
+    {
+      "id": "19884be9-de22-4f65-9525-5dea5aa7ec54",
+      "content_id": "130000b4-815e-43ec-971c-66e3a6b41a78",
+      "claim_id": "C75",
+      "claim": "The Helitron Rep-Helicase transposase genes found in full-length copies of Helitron1_CE exhibited similar levels of HS up-regulation in the wild isolates compared to N2.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, the Helitron Rep-Helicase transposase genes found in full-length copies of Helitron1_CE also exhibited similar levels of HS up-regulation in the wild isolates compared to N2, showing that the Helitron HS response is intact in these strains (Figure 5D\u2013E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by RT-qPCR data shown in Figure 5D-E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:56:06.824966Z"
+    },
+    {
+      "id": "ca6f1c9f-4456-4489-ba45-0cfcf150f17f",
+      "content_id": "130000b4-815e-43ec-971c-66e3a6b41a78",
+      "claim_id": "C76",
+      "claim": "Almost two-thirds of C. elegans HSEs reside within Helitrons.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we show that across the genomes of multiple Caenorhabditis species, Helitrons provide substantial numbers of binding motifs (HSEs) for HSF-1, a highly conserved transcriptional regulator of the heat shock response (HSR). Remarkably, we find that almost two-thirds of C. elegans HSEs reside within Helitrons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study, supported by genome-wide analysis data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:56:06.824966Z"
+    },
+    {
+      "id": "24af3e03-0654-470c-8103-ca170ef46a1f",
+      "content_id": "130000b4-815e-43ec-971c-66e3a6b41a78",
+      "claim_id": "C77",
+      "claim": "Helitrons comprise ~2% of the C. elegans genome.",
+      "claim_type": "EXPLICIT",
+      "source": "Helitrons comprise ~2% of the C. elegans genome (Kapitonov and Jurka, 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge supported by citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:56:06.824966Z"
+    },
+    {
+      "id": "89cf86c1-89dd-4841-9b9d-ccb7a1fff9d9",
+      "content_id": "130000b4-815e-43ec-971c-66e3a6b41a78",
+      "claim_id": "C78",
+      "claim": "There are six full-length autonomous Helitrons in the C. elegans genome.",
+      "claim_type": "EXPLICIT",
+      "source": "Of these, there are six full-length autonomous (predicted to encode a transposase and likely replication competent) Helitrons and ~5000 non-autonomous elements that lack protein-coding potential; many of these non-autonomous elements are fragments of full-length autonomous versions (Hubley et al., 2016; Kapitonov and Jurka, 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:56:06.824966Z"
+    },
+    {
+      "id": "f57b7a18-ab35-497d-8993-0605d1b333ea",
+      "content_id": "130000b4-815e-43ec-971c-66e3a6b41a78",
+      "claim_id": "C79",
+      "claim": "There are ~5000 non-autonomous Helitron elements in the C. elegans genome that lack protein-coding potential.",
+      "claim_type": "EXPLICIT",
+      "source": "Of these, there are six full-length autonomous (predicted to encode a transposase and likely replication competent) Helitrons and ~5000 non-autonomous elements that lack protein-coding potential; many of these non-autonomous elements are fragments of full-length autonomous versions (Hubley et al., 2016; Kapitonov and Jurka, 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:56:06.824966Z"
+    },
+    {
+      "id": "c6f38180-92bc-4bda-95f6-9811a7d06392",
+      "content_id": "130000b4-815e-43ec-971c-66e3a6b41a78",
+      "claim_id": "C80",
+      "claim": "Approximately 19% of the annotated Helitrons contain at least one HSE motif.",
+      "claim_type": "EXPLICIT",
+      "source": "We have found that approximately 19% of the annotated Helitrons contain at least one HSE motif and that almost two-thirds of all C. elegans HSEs reside within Helitrons, many of which exist in high-density clusters.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding of the study, supported by genome-wide analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:56:06.824966Z"
+    },
+    {
+      "id": "044bdf6c-fb07-4d9a-9d4e-beac2a2ea342",
+      "content_id": "130000b4-815e-43ec-971c-66e3a6b41a78",
+      "claim_id": "C81",
+      "claim": "Hac-HSE associated genes tend to exhibit similar fold changes in HS induction but relatively lower levels in mRNA expression and Pol II occupancy under non-heat-shock conditions compared to Hin-HSE genes.",
+      "claim_type": "EXPLICIT",
+      "source": "In comparison to Helitron-independent (Hin-HSEs) HSR genes, Hac-HSE associated genes tend to exhibit similar fold changes in HS induction but relatively lower levels in mRNA expression and Pol II occupancy under non-heat-shock conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding of the study, supported by RNA-seq and ChIP-seq data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:56:06.824966Z"
+    },
+    {
+      "id": "cd6c8b07-e395-40cb-a7ed-6eb33b90f6aa",
+      "content_id": "130000b4-815e-43ec-971c-66e3a6b41a78",
+      "claim_id": "C82",
+      "claim": "HSR genes proximal to Helitrons display higher levels of repressive histone marks during non-HS conditions compared to those more distant.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with chromatin-based silencing of Helitrons affecting the expression of nearby genes, HSR genes proximal to Helitrons display higher levels of repressive histone marks during non-HS conditions compared to those more distant.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding of the study, supported by histone modification ChIP-seq data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:56:06.824966Z"
+    },
+    {
+      "id": "4df742b3-dd79-47b4-9ff2-24808a1088cb",
+      "content_id": "130000b4-815e-43ec-971c-66e3a6b41a78",
+      "claim_id": "C83",
+      "claim": "Collagen genes have been previously reported to be up-regulated during heat stress in chicken cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with roles in the HSR, collagen genes have been previously reported to be up-regulated during heat stress in chicken cells (Sun et al., 2015) and human cells (Li et al., 2018), as well as in C. elegans (Brunquell et al., 2018; Schreiner et al., 2019), suggesting that increasing collagen output is a conserved component of the HSR.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge supported by citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:56:06.824966Z"
+    },
+    {
+      "id": "34c12bc1-eb41-4b5f-badb-bb9ba20bd6ee",
+      "content_id": "130000b4-815e-43ec-971c-66e3a6b41a78",
+      "claim_id": "C84",
+      "claim": "Collagen genes have been previously reported to be up-regulated during heat stress in human cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with roles in the HSR, collagen genes have been previously reported to be up-regulated during heat stress in chicken cells (Sun et al., 2015) and human cells (Li et al., 2018), as well as in C. elegans (Brunquell et al., 2018; Schreiner et al., 2019), suggesting that increasing collagen output is a conserved component of the HSR.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge supported by citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:56:06.824966Z"
+    },
+    {
+      "id": "54a78666-8613-48f9-bfc8-6a97139da1f7",
+      "content_id": "130000b4-815e-43ec-971c-66e3a6b41a78",
+      "claim_id": "C85",
+      "claim": "Collagen genes have been previously reported to be up-regulated during heat stress in C. elegans.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with roles in the HSR, collagen genes have been previously reported to be up-regulated during heat stress in chicken cells (Sun et al., 2015) and human cells (Li et al., 2018), as well as in C. elegans (Brunquell et al., 2018; Schreiner et al., 2019), suggesting that increasing collagen output is a conserved component of the HSR.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:56:06.824966Z"
+    },
+    {
+      "id": "2b11044d-188c-4558-8f95-ec7d200d2a07",
+      "content_id": "130000b4-815e-43ec-971c-66e3a6b41a78",
+      "claim_id": "C86",
+      "claim": "GPCRs have roles in neuronal signaling, including the induction of canonical HSF-1 targets in non-neuronal tissues and thermotolerance in C. elegans.",
+      "claim_type": "EXPLICIT",
+      "source": "Likewise, GPCRs are transmembrane receptors with roles in neuronal signaling (Thomas and Robertson, 2008), including the induction of canonical HSF-1 targets in non-neuronal tissues and, hence, thermotolerance in C. elegans (Maman et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:56:06.824966Z"
+    },
+    {
+      "id": "987c6b22-eeca-4abc-812b-556b8146ae3b",
+      "content_id": "130000b4-815e-43ec-971c-66e3a6b41a78",
+      "claim_id": "C87",
+      "claim": "Roughly half of all up-regulated HSF-1 targets observed in this study have Hac-HSEs.",
+      "claim_type": "EXPLICIT",
+      "source": "Roughly half of all up-regulated HSF-1 targets observed in this study have Hac-HSEs, demonstrating that Helitrons have had a significant role in shaping the C. elegans HSR.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding of the study, supported by RNA-seq and ChIP-seq data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:56:06.824966Z"
+    },
+    {
+      "id": "00b6e6de-3a58-4415-9c72-692bedfc96d4",
+      "content_id": "130000b4-815e-43ec-971c-66e3a6b41a78",
+      "claim_id": "C88",
+      "claim": "Substantial Developmental System Drift contributes to the divergence in genetic networks associated with the phenotypically very similar C. elegans and C. briggsae.",
+      "claim_type": "EXPLICIT",
+      "source": "This difference in gene sets that respond to HS is consistent with previous studies that concluded that substantial Developmental System Drift contributes to the divergence in genetic networks associated with the phenotypically very similar C. elegans and C. briggsae (Verster et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge supported by citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:56:06.824966Z"
+    },
+    {
+      "id": "26d7f67e-50bc-40d7-a7e7-1a674b6962f5",
+      "content_id": "130000b4-815e-43ec-971c-66e3a6b41a78",
+      "claim_id": "C89",
+      "claim": "Two different isolates of C. briggsae (AF16 and HK104) exhibit substantial gene expression differences in response to thermal stress.",
+      "claim_type": "EXPLICIT",
+      "source": "Intriguingly, it was recently reported that two different isolates of C. briggsae (AF16 and HK104) exhibit substantial gene expression differences in response to thermal stress (Mark et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge supported by citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:56:06.824966Z"
+    },
+    {
+      "id": "da43bd3a-b9e4-4a41-827c-1ab107fda44c",
+      "content_id": "130000b4-815e-43ec-971c-66e3a6b41a78",
+      "claim_id": "C90",
+      "claim": "HSF-1 has roles in counteracting other types of stress that result in protein unfolding and aggregation, such as exposure to heavy metals or azide.",
+      "claim_type": "EXPLICIT",
+      "source": "The impact of Helitron-provided HSEs on gene expression may extend well beyond the HSR. HSF-1 has roles in counteracting other types of stress that result in protein unfolding and aggregation, such as exposure to heavy metals or azide (Labbadia and Morimoto, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge supported by citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:56:06.824966Z"
+    },
+    {
+      "id": "d4a001af-d7bf-459a-b03b-b1f14cabc821",
+      "content_id": "130000b4-815e-43ec-971c-66e3a6b41a78",
+      "claim_id": "C91",
+      "claim": "HSF-1 plays essential roles in developmental processes in mice, flies and worms.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to stress responses, HSF-1 has been shown to play essential roles in developmental processes in a variety of organisms, including mice, flies and worms (Christians et al., 2000; Jedlicka et al., 1997; Li et al., 2016; Santos and Saraiva, 2004; Takaki et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:56:06.824966Z"
+    },
+    {
+      "id": "bf1bb924-7095-4afe-b3a5-7ad374cd7dcd",
+      "content_id": "130000b4-815e-43ec-971c-66e3a6b41a78",
+      "claim_id": "C92",
+      "claim": "HSF-1 has been found to support pro-growth transcriptional programs in yeast, worms, and human cancer cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, HSF-1 has been found to support pro-growth transcriptional programs in yeast, worms, and human cancer cells (Li et al., 2016; Mendillo et al., 2012; Sol\u00eds et al., 2016), suggesting commonalities among non-canonical HSF-1 targets across species (Li et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:56:06.824966Z"
+    },
+    {
+      "id": "693e3f7d-a8e6-49fc-aa4f-3c33a25931bb",
+      "content_id": "130000b4-815e-43ec-971c-66e3a6b41a78",
+      "claim_id": "C93",
+      "claim": "This study increases the number of identified HSF-1 HS-targets from 60 to 119 by considering HSF-1 binding that overlaps with HSE-containing repetitive elements.",
+      "claim_type": "EXPLICIT",
+      "source": "In this study, we increase the number of identified HSF-1 HS-targets from 60 to 119 by considering HSF-1 binding that overlaps with HSE-containing repetitive elements that are normally excluded.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding of the study, supported by ChIP-seq and RNA-seq data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:56:06.824966Z"
+    },
+    {
+      "id": "721e513f-404f-4b0c-874c-8d292c3d8472",
+      "content_id": "130000b4-815e-43ec-971c-66e3a6b41a78",
+      "claim_id": "C94",
+      "claim": "The high number of HSEs provided by Helitrons may help overcome repressive chromatin landscapes by presenting multiple opportunities for HSF-1 binding.",
+      "claim_type": "IMPLICIT",
+      "source": "It is possible that the high number of HSEs provided by Helitrons helps overcome this repressive landscape by presenting multiple opportunities for HSF-1 binding and transcriptional induction of nearby genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculative reasoning based on the observed data about HSE numbers and chromatin states.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:56:06.824966Z"
+    },
+    {
+      "id": "844bf941-fe1b-4227-b6c5-9bcadb6764ec",
+      "content_id": "130000b4-815e-43ec-971c-66e3a6b41a78",
+      "claim_id": "C95",
+      "claim": "Helitrons may trigger silencing of adjacent genes but also enable them to respond to HS.",
+      "claim_type": "IMPLICIT",
+      "source": "The potential for Helitrons to trigger silencing of adjacent genes but also enable them to respond to HS further supports a role for these TEs in rewiring gene expression patterns in C. elegans.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observed dual effects of Helitrons on gene expression.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:56:06.824966Z"
+    },
+    {
+      "id": "781b3443-0b80-4495-be32-143027949aa6",
+      "content_id": "130000b4-815e-43ec-971c-66e3a6b41a78",
+      "claim_id": "C96",
+      "claim": "Loci lacking Helitrons in wild isolates likely represent the ancestral pre-transposition state.",
+      "claim_type": "IMPLICIT",
+      "source": "As Helitrons are thought to be replicated in place before transposition (Kapitonov and Jurka, 2001), loci lacking Helitrons in wild isolates likely represent the ancestral pre-transposition state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the known mechanism of Helitron transposition and the observation of presence/absence variation.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:56:06.824966Z"
+    },
+    {
+      "id": "b706e1e1-838c-45b7-83c1-6f6a7f4aa390",
+      "content_id": "130000b4-815e-43ec-971c-66e3a6b41a78",
+      "claim_id": "C97",
+      "claim": "Helitrons have recently mobilized to new regions in C. elegans and are actively diversifying the HSR within the species.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that Helitrons have recently mobilized to new regions in C. elegans and are actively diversifying the HSR within the species.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the observed variation in Helitron positions among wild isolates.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:56:06.824966Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "858156f7-bdf1-4c4f-afd6-ff68537bd7fb",
+      "content_id": "130000b4-815e-43ec-971c-66e3a6b41a78",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Substantial numbers of HSEs in C. elegans reside within Helitrons, with 61.4% of genomic HSEs (11,527/18,766) found within Helitron sequences, which comprise only 1.7% of the genome. Five types of Helitrons (HelitronY4_CE, HelitronY1_CE, HelitronY1A_CE, Helitron2_CE, and Helitron1_CE) display HSF-1 binding, and HSEs within Helitrons are significantly enriched (p<1.0e-15) and often exist in high-density clusters.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C21-C31, C76, and C80 are well-supported by genome-wide ChIP-seq analysis (Figure 1), motif enrichment analysis, and statistical testing showing significant enrichment of HSEs within Helitrons. The data demonstrate both the prevalence and clustering of Hac-HSEs with appropriate statistical validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:56:06.824966Z"
+    },
+    {
+      "id": "9e40322f-62b1-453c-9dd0-f43971da810e",
+      "content_id": "130000b4-815e-43ec-971c-66e3a6b41a78",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Helitron-embedded HSEs are functional, displaying increased HSF-1 and RNA polymerase II occupancy upon heat shock in C. elegans. Similar numbers of HSF-1 peak summits contain Hac-HSEs (n=556) and Hin-HSEs (n=578), and 60 genes near Hac-HSEs bound by HSF-1 are significantly up-regulated during heat shock (p<1.0e-15). Hac-HSE genes have significantly more HSEs in their promoters compared to Hin-HSE genes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4-C6 and C32-C39 are supported by ChIP-seq data (Figure 2A), RNA-seq analysis (Figure 2B), and statistical testing showing significant enrichment of heat-shock-responsive genes near Hac-HSEs. The comparison between col-88 and hsp-70 provides specific examples supporting the general trend.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:56:06.824966Z"
+    },
+    {
+      "id": "aac0c73c-bb18-4591-92cf-3892e8a1a8d1",
+      "content_id": "130000b4-815e-43ec-971c-66e3a6b41a78",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Hac-HSE genes exhibit distinct expression characteristics compared to Hin-HSE genes: they show similar fold-induction during heat shock but lower baseline mRNA expression, lower Pol II occupancy, and significantly higher levels of repressive histone marks (H3K27me3) and lower levels of active histone marks during non-heat-shock conditions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40-C43, C81-C82 are supported by RNA-seq data (Figure 2F), ChIP-seq analysis of Pol II (Figure 2G), and histone modification ChIP-seq data (Figure 2H, Figure 2\u2014figure supplement 1). Statistical significance is demonstrated for differences in histone marks, consistent with chromatin-based silencing of Helitrons.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:56:06.824966Z"
+    },
+    {
+      "id": "5ec53490-5355-4cf5-8970-d7fccccd618d",
+      "content_id": "130000b4-815e-43ec-971c-66e3a6b41a78",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Hac-HSE and Hin-HSE genes are associated with distinct gene ontology (GO) terms. Hin-HSE genes are enriched for canonical HSR targets (response to topologically incorrect protein, response to heat, determination of adult lifespan), while Hac-HSE genes are enriched for collagen trimer, GPCR signaling, and sensory perception of smell in C. elegans. Species-specific differences exist, with C. briggsae unique Hac-HSE genes associated with carbohydrate metabolism.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44-C45 and C61-C63 are supported by GO enrichment analysis (Figures 2I and 4J) using DAVID. The distinct GO terms for Hac-HSE versus Hin-HSE genes provide functional context for the different classes of heat-shock-responsive genes.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:56:06.824966Z"
+    },
+    {
+      "id": "c7e83339-9f4c-4881-8a3f-0907e25c98c1",
+      "content_id": "130000b4-815e-43ec-971c-66e3a6b41a78",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "HSE enrichment within Helitrons is widespread across Caenorhabditis species but limited to this genus among all examined species with annotated Helitrons. All 27 examined Caenorhabditis species show significant enrichment of HSEs within Helitrons (p<1.0e-03), and several species (C. elegans, C. briggsae, C. brenneri, C. virilis) contain more than 100 clusters of Helitron-embedded HSEs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46-C48 are supported by comparative genomic analysis across multiple species (Figure 3A-C, Supplementary files 5-6). Statistical testing confirms significant enrichment in all Caenorhabditis species examined, while other metazoan species with Helitrons show no such enrichment.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:56:06.824966Z"
+    },
+    {
+      "id": "51236fa3-9fc0-43ad-a3c0-a251ffe98c21",
+      "content_id": "130000b4-815e-43ec-971c-66e3a6b41a78",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Different genes are incorporated into the HSR by species-specific Helitron insertions in C. elegans and C. briggsae. Only one ortholog pair (encoding a Helitron transposase) has upstream Hac-HSEs in both species, while 38 unique Hac-HSE orthologs exist in C. elegans and 26 in C. briggsae. In contrast, 27 up-regulated orthologs with Hin-HSEs are shared between species, with 56% bound by HSF-1 in C. elegans.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7 and C49-C60 are supported by comparative RNA-seq analysis in both species (Figure 4A-I), ortholog identification, and specific examples (col-52, CBG00919, F33H12.6, CBG26851) showing species-specific heat shock responsiveness correlating with presence/absence of Hac-HSEs. The contrast with conserved Hin-HSE genes strengthens the conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:56:06.824966Z"
+    },
+    {
+      "id": "5b7210d6-bc8e-4a89-be37-2fb46b07faab",
+      "content_id": "130000b4-815e-43ec-971c-66e3a6b41a78",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Strain-specific Helitron insertions diversify the HSR among C. elegans wild isolates. Three genes (nhr-247, str-96, fbxa-102) with Hac-HSEs in N2 show strong heat shock induction (254-fold, 7.0-fold, and 8.3-fold respectively, p<0.05), but this induction is greatly reduced in wild isolates QX1211 and MY16 that lack these Helitrons. The canonical HSR gene hsp-70 shows similar induction across strains, ruling out general HSR attenuation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8 and C64-C75, C97 are supported by genome browser visualization (Figure 5A-C), RT-qPCR data (Figure 5D-E), and structural variant analysis confirming Helitron absence in wild isolates. The control experiments with hsp-70 and Helitron1_CE transposase demonstrate specificity of the effect.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:56:06.824966Z"
+    },
+    {
+      "id": "7e1586db-f9a8-46fa-95f3-6b5075448db8",
+      "content_id": "130000b4-815e-43ec-971c-66e3a6b41a78",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Helitron insertions are responsible for rewiring and diversifying the Caenorhabditis HSR. Roughly half of all up-regulated HSF-1 targets have Hac-HSEs, and the study increases identified HSF-1 HS-targets from 60 to 119 by considering HSF-1 binding overlapping with HSE-containing repetitive elements. Helitrons may trigger silencing of adjacent genes but also enable them to respond to heat shock.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9, C87, C93, and C95 represent the main conclusions of the study, supported by the collective evidence from species comparisons, strain comparisons, and functional characterization. The dual role of Helitrons in silencing and heat shock responsiveness is supported by histone modification data and expression analysis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:56:06.824966Z"
+    },
+    {
+      "id": "ffd7e004-0a04-4161-b846-628bc9e8677b",
+      "content_id": "130000b4-815e-43ec-971c-66e3a6b41a78",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The high number of HSEs provided by Helitrons may help overcome repressive chromatin landscapes by presenting multiple opportunities for HSF-1 binding, and loci lacking Helitrons in wild isolates likely represent the ancestral pre-transposition state.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C94 and C96 are speculative interpretations based on observed data. While C94 is a reasonable mechanistic hypothesis given the observed HSE numbers and chromatin states, it lacks direct experimental validation. C96 is an inference based on Helitron biology but cannot be definitively confirmed without additional evolutionary analysis.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:56:06.824966Z"
+    },
+    {
+      "id": "f5c2e010-9cbb-4224-a2cb-6d8ad54f7529",
+      "content_id": "130000b4-815e-43ec-971c-66e3a6b41a78",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Background knowledge claims about HSF-1, HSR, Helitrons, transposable elements, and related biological processes are established in the literature and provide context for the current study.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C2, C10-C20, C77-C79, C83-C86, C88-C92 represent established knowledge supported by appropriate citations. These claims provide necessary background and context but are not novel findings of this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:56:06.824966Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "44716b16-1cb8-4967-ae87-acd26238e76b",
+      "result_id": "858156f7-bdf1-4c4f-afd6-ff68537bd7fb"
+    },
+    {
+      "claim_id": "f3ead8ab-b48b-40ec-b785-e6b78b897b86",
+      "result_id": "858156f7-bdf1-4c4f-afd6-ff68537bd7fb"
+    },
+    {
+      "claim_id": "61223cf7-882e-4bb8-b578-d2d0f9628d55",
+      "result_id": "858156f7-bdf1-4c4f-afd6-ff68537bd7fb"
+    },
+    {
+      "claim_id": "106827ef-0562-405d-bea6-4ad7ae56b5e3",
+      "result_id": "858156f7-bdf1-4c4f-afd6-ff68537bd7fb"
+    },
+    {
+      "claim_id": "556afe33-2bc9-4910-a4d7-d81f42c0ea63",
+      "result_id": "858156f7-bdf1-4c4f-afd6-ff68537bd7fb"
+    },
+    {
+      "claim_id": "53994ea5-6e78-4cdd-a248-2e9d44fc9cd3",
+      "result_id": "858156f7-bdf1-4c4f-afd6-ff68537bd7fb"
+    },
+    {
+      "claim_id": "16aa2a88-0553-41d0-8c24-3281044dd78b",
+      "result_id": "858156f7-bdf1-4c4f-afd6-ff68537bd7fb"
+    },
+    {
+      "claim_id": "9f2676f1-ae95-466f-8855-e5a1e1c839f8",
+      "result_id": "858156f7-bdf1-4c4f-afd6-ff68537bd7fb"
+    },
+    {
+      "claim_id": "c248eec7-f747-4531-b398-c71a5e51953d",
+      "result_id": "858156f7-bdf1-4c4f-afd6-ff68537bd7fb"
+    },
+    {
+      "claim_id": "cdfdc06a-4cc3-4207-a63f-7de29c8479c1",
+      "result_id": "858156f7-bdf1-4c4f-afd6-ff68537bd7fb"
+    },
+    {
+      "claim_id": "b6b48e77-3096-4310-95d4-2fcc7f9b8029",
+      "result_id": "858156f7-bdf1-4c4f-afd6-ff68537bd7fb"
+    },
+    {
+      "claim_id": "535a8c71-591f-487a-ac9f-529bdb1c610f",
+      "result_id": "858156f7-bdf1-4c4f-afd6-ff68537bd7fb"
+    },
+    {
+      "claim_id": "ca6f1c9f-4456-4489-ba45-0cfcf150f17f",
+      "result_id": "858156f7-bdf1-4c4f-afd6-ff68537bd7fb"
+    },
+    {
+      "claim_id": "c6f38180-92bc-4bda-95f6-9811a7d06392",
+      "result_id": "858156f7-bdf1-4c4f-afd6-ff68537bd7fb"
+    },
+    {
+      "claim_id": "655840c5-8b42-419a-9d53-8cb556a0c0e5",
+      "result_id": "9e40322f-62b1-453c-9dd0-f43971da810e"
+    },
+    {
+      "claim_id": "d7a9d22e-4548-45e2-be49-43a8973eff0e",
+      "result_id": "9e40322f-62b1-453c-9dd0-f43971da810e"
+    },
+    {
+      "claim_id": "50a2c483-a8ef-4eb1-85b5-f56f5c3443d8",
+      "result_id": "9e40322f-62b1-453c-9dd0-f43971da810e"
+    },
+    {
+      "claim_id": "5c1a2fa1-f477-4b6b-b6e9-ac2e7fe214a0",
+      "result_id": "9e40322f-62b1-453c-9dd0-f43971da810e"
+    },
+    {
+      "claim_id": "a2a61447-f407-434a-be6d-091b1790f072",
+      "result_id": "9e40322f-62b1-453c-9dd0-f43971da810e"
+    },
+    {
+      "claim_id": "ed4f999d-f70e-49f4-947a-4c41d802067f",
+      "result_id": "9e40322f-62b1-453c-9dd0-f43971da810e"
+    },
+    {
+      "claim_id": "9dfdabf5-0389-4881-8643-1b1dc0cacb33",
+      "result_id": "9e40322f-62b1-453c-9dd0-f43971da810e"
+    },
+    {
+      "claim_id": "cc55fc6b-5c23-4231-8791-813621ac6c9c",
+      "result_id": "9e40322f-62b1-453c-9dd0-f43971da810e"
+    },
+    {
+      "claim_id": "6b6befbc-3fa8-4c24-b48f-daf61ffcd572",
+      "result_id": "9e40322f-62b1-453c-9dd0-f43971da810e"
+    },
+    {
+      "claim_id": "b2c71007-ced4-4ca6-9b32-687288d878ff",
+      "result_id": "9e40322f-62b1-453c-9dd0-f43971da810e"
+    },
+    {
+      "claim_id": "8315d319-8053-4f68-a703-9a5b7c0c5e08",
+      "result_id": "9e40322f-62b1-453c-9dd0-f43971da810e"
+    },
+    {
+      "claim_id": "a2ff240c-7786-46e7-bdbc-938deae4ac32",
+      "result_id": "aac0c73c-bb18-4591-92cf-3892e8a1a8d1"
+    },
+    {
+      "claim_id": "c64bc8b1-c511-499a-8c95-adccd0156a09",
+      "result_id": "aac0c73c-bb18-4591-92cf-3892e8a1a8d1"
+    },
+    {
+      "claim_id": "fc8cb9e5-ff06-4019-bc17-883e5d54cecd",
+      "result_id": "aac0c73c-bb18-4591-92cf-3892e8a1a8d1"
+    },
+    {
+      "claim_id": "aa091027-6eb4-4768-a621-0530ae698efb",
+      "result_id": "aac0c73c-bb18-4591-92cf-3892e8a1a8d1"
+    },
+    {
+      "claim_id": "044bdf6c-fb07-4d9a-9d4e-beac2a2ea342",
+      "result_id": "aac0c73c-bb18-4591-92cf-3892e8a1a8d1"
+    },
+    {
+      "claim_id": "cd6c8b07-e395-40cb-a7ed-6eb33b90f6aa",
+      "result_id": "aac0c73c-bb18-4591-92cf-3892e8a1a8d1"
+    },
+    {
+      "claim_id": "003d12b5-5a02-482d-a3f3-ff9929c16c0d",
+      "result_id": "5ec53490-5355-4cf5-8970-d7fccccd618d"
+    },
+    {
+      "claim_id": "4a046cf3-7fd3-4e14-8e05-79eab04942dd",
+      "result_id": "5ec53490-5355-4cf5-8970-d7fccccd618d"
+    },
+    {
+      "claim_id": "3d0ae741-a8e2-496e-815a-88db1838139f",
+      "result_id": "5ec53490-5355-4cf5-8970-d7fccccd618d"
+    },
+    {
+      "claim_id": "11b42e99-cf84-4ebd-b31a-1541d8899f21",
+      "result_id": "5ec53490-5355-4cf5-8970-d7fccccd618d"
+    },
+    {
+      "claim_id": "e5ca3b57-774e-4ac1-8241-e306e5ad4be6",
+      "result_id": "5ec53490-5355-4cf5-8970-d7fccccd618d"
+    },
+    {
+      "claim_id": "217b694f-7746-49ed-9d8b-5a360df2b19e",
+      "result_id": "c7e83339-9f4c-4881-8a3f-0907e25c98c1"
+    },
+    {
+      "claim_id": "3ed27dd1-fbf7-4a50-a7ed-7c6980405c17",
+      "result_id": "c7e83339-9f4c-4881-8a3f-0907e25c98c1"
+    },
+    {
+      "claim_id": "d36af195-dcc0-4cad-93b0-f1ceab34972d",
+      "result_id": "c7e83339-9f4c-4881-8a3f-0907e25c98c1"
+    },
+    {
+      "claim_id": "d30c7531-b3cc-4380-b735-56801bbdf7a3",
+      "result_id": "51236fa3-9fc0-43ad-a3c0-a251ffe98c21"
+    },
+    {
+      "claim_id": "fa544bc9-4692-421f-bf18-055f63486b89",
+      "result_id": "51236fa3-9fc0-43ad-a3c0-a251ffe98c21"
+    },
+    {
+      "claim_id": "cb6f2d50-85a4-477a-9e24-68d3b9910d11",
+      "result_id": "51236fa3-9fc0-43ad-a3c0-a251ffe98c21"
+    },
+    {
+      "claim_id": "907720b9-c2c1-4be7-9525-4b7a9b6cc975",
+      "result_id": "51236fa3-9fc0-43ad-a3c0-a251ffe98c21"
+    },
+    {
+      "claim_id": "1f0c1b10-33d8-4a95-ab8b-55b163a9ad7b",
+      "result_id": "51236fa3-9fc0-43ad-a3c0-a251ffe98c21"
+    },
+    {
+      "claim_id": "b0b72119-f2dd-4069-b49c-ba30e9fa357e",
+      "result_id": "51236fa3-9fc0-43ad-a3c0-a251ffe98c21"
+    },
+    {
+      "claim_id": "e6bae59a-8229-4c6b-a865-645fe4021527",
+      "result_id": "51236fa3-9fc0-43ad-a3c0-a251ffe98c21"
+    },
+    {
+      "claim_id": "0a05c8d9-c805-4347-8505-9147cdec209a",
+      "result_id": "51236fa3-9fc0-43ad-a3c0-a251ffe98c21"
+    },
+    {
+      "claim_id": "13311549-41a8-47cf-9688-71879aadcd0f",
+      "result_id": "51236fa3-9fc0-43ad-a3c0-a251ffe98c21"
+    },
+    {
+      "claim_id": "596bf198-bdbe-480b-97ae-4aca0209ab9d",
+      "result_id": "51236fa3-9fc0-43ad-a3c0-a251ffe98c21"
+    },
+    {
+      "claim_id": "44a21900-b9bd-4c8b-856a-6e37956a59c0",
+      "result_id": "51236fa3-9fc0-43ad-a3c0-a251ffe98c21"
+    },
+    {
+      "claim_id": "d548e3b2-a419-448a-a63b-0d34b0d712ae",
+      "result_id": "51236fa3-9fc0-43ad-a3c0-a251ffe98c21"
+    },
+    {
+      "claim_id": "3f48eb1a-bf41-400f-8db4-be1d85e57482",
+      "result_id": "51236fa3-9fc0-43ad-a3c0-a251ffe98c21"
+    },
+    {
+      "claim_id": "9286c587-dcba-47c7-9dde-ff8f8ea0548d",
+      "result_id": "5b7210d6-bc8e-4a89-be37-2fb46b07faab"
+    },
+    {
+      "claim_id": "285e5ec5-6111-47e8-b44b-9f77ca7926e1",
+      "result_id": "5b7210d6-bc8e-4a89-be37-2fb46b07faab"
+    },
+    {
+      "claim_id": "e6592769-c453-428d-b659-91e3936b98af",
+      "result_id": "5b7210d6-bc8e-4a89-be37-2fb46b07faab"
+    },
+    {
+      "claim_id": "a45017a9-b0a5-4dea-80f1-d28cf265ad00",
+      "result_id": "5b7210d6-bc8e-4a89-be37-2fb46b07faab"
+    },
+    {
+      "claim_id": "3e8f5e9c-db9e-4f17-abce-cecefca8e493",
+      "result_id": "5b7210d6-bc8e-4a89-be37-2fb46b07faab"
+    },
+    {
+      "claim_id": "65b9f26c-37a1-4714-a1e6-e1aebf9253ec",
+      "result_id": "5b7210d6-bc8e-4a89-be37-2fb46b07faab"
+    },
+    {
+      "claim_id": "61022584-8f29-47c1-a1ab-1c77fb39544b",
+      "result_id": "5b7210d6-bc8e-4a89-be37-2fb46b07faab"
+    },
+    {
+      "claim_id": "8fdbea84-daed-45e5-a682-c943e18dc2ea",
+      "result_id": "5b7210d6-bc8e-4a89-be37-2fb46b07faab"
+    },
+    {
+      "claim_id": "6d23a07b-ee1d-4ede-818f-98f33fc98286",
+      "result_id": "5b7210d6-bc8e-4a89-be37-2fb46b07faab"
+    },
+    {
+      "claim_id": "1d35632b-1e40-43dc-8723-b8b9fc8faad9",
+      "result_id": "5b7210d6-bc8e-4a89-be37-2fb46b07faab"
+    },
+    {
+      "claim_id": "efc41321-71d3-494c-8e46-b7c383607218",
+      "result_id": "5b7210d6-bc8e-4a89-be37-2fb46b07faab"
+    },
+    {
+      "claim_id": "ec41be3f-009c-47bb-b132-04a1d9fd43db",
+      "result_id": "5b7210d6-bc8e-4a89-be37-2fb46b07faab"
+    },
+    {
+      "claim_id": "19884be9-de22-4f65-9525-5dea5aa7ec54",
+      "result_id": "5b7210d6-bc8e-4a89-be37-2fb46b07faab"
+    },
+    {
+      "claim_id": "b706e1e1-838c-45b7-83c1-6f6a7f4aa390",
+      "result_id": "5b7210d6-bc8e-4a89-be37-2fb46b07faab"
+    },
+    {
+      "claim_id": "48981fcd-a111-454b-9380-3a1dfffc76c9",
+      "result_id": "7e1586db-f9a8-46fa-95f3-6b5075448db8"
+    },
+    {
+      "claim_id": "987c6b22-eeca-4abc-812b-556b8146ae3b",
+      "result_id": "7e1586db-f9a8-46fa-95f3-6b5075448db8"
+    },
+    {
+      "claim_id": "693e3f7d-a8e6-49fc-aa4f-3c33a25931bb",
+      "result_id": "7e1586db-f9a8-46fa-95f3-6b5075448db8"
+    },
+    {
+      "claim_id": "844bf941-fe1b-4227-b6c5-9bcadb6764ec",
+      "result_id": "7e1586db-f9a8-46fa-95f3-6b5075448db8"
+    },
+    {
+      "claim_id": "721e513f-404f-4b0c-874c-8d292c3d8472",
+      "result_id": "ffd7e004-0a04-4161-b846-628bc9e8677b"
+    },
+    {
+      "claim_id": "781b3443-0b80-4495-be32-143027949aa6",
+      "result_id": "ffd7e004-0a04-4161-b846-628bc9e8677b"
+    },
+    {
+      "claim_id": "8a3b81b8-7a4e-42c4-a8b2-8465f23e7390",
+      "result_id": "f5c2e010-9cbb-4224-a2cb-6d8ad54f7529"
+    },
+    {
+      "claim_id": "d57aaa27-8eca-4d40-81b9-44d1c1600975",
+      "result_id": "f5c2e010-9cbb-4224-a2cb-6d8ad54f7529"
+    },
+    {
+      "claim_id": "c364cc75-0887-4dda-9e7e-cc240d98e7b9",
+      "result_id": "f5c2e010-9cbb-4224-a2cb-6d8ad54f7529"
+    },
+    {
+      "claim_id": "b67f5687-fb69-494d-b9d8-28aa9258cf7b",
+      "result_id": "f5c2e010-9cbb-4224-a2cb-6d8ad54f7529"
+    },
+    {
+      "claim_id": "20897df9-b983-48ed-bd9d-23810bab3588",
+      "result_id": "f5c2e010-9cbb-4224-a2cb-6d8ad54f7529"
+    },
+    {
+      "claim_id": "7d31ce69-c0ee-46be-9675-f44549920b7c",
+      "result_id": "f5c2e010-9cbb-4224-a2cb-6d8ad54f7529"
+    },
+    {
+      "claim_id": "676942bb-946b-4d14-8380-0b094e5e92d6",
+      "result_id": "f5c2e010-9cbb-4224-a2cb-6d8ad54f7529"
+    },
+    {
+      "claim_id": "d0d054b0-8ca1-44d3-8448-302ac0c57c7d",
+      "result_id": "f5c2e010-9cbb-4224-a2cb-6d8ad54f7529"
+    },
+    {
+      "claim_id": "bd448e8f-c287-4a2f-b02b-17cfbec2008b",
+      "result_id": "f5c2e010-9cbb-4224-a2cb-6d8ad54f7529"
+    },
+    {
+      "claim_id": "90e91619-a013-4aed-a189-fea3dba357bb",
+      "result_id": "f5c2e010-9cbb-4224-a2cb-6d8ad54f7529"
+    },
+    {
+      "claim_id": "8962769c-631b-43c0-9adf-1de3aa592bef",
+      "result_id": "f5c2e010-9cbb-4224-a2cb-6d8ad54f7529"
+    },
+    {
+      "claim_id": "26b14b4f-b697-4cf3-888a-d455294ea9d3",
+      "result_id": "f5c2e010-9cbb-4224-a2cb-6d8ad54f7529"
+    },
+    {
+      "claim_id": "ea4380b5-a933-497b-8374-979d0f90c6aa",
+      "result_id": "f5c2e010-9cbb-4224-a2cb-6d8ad54f7529"
+    },
+    {
+      "claim_id": "24af3e03-0654-470c-8103-ca170ef46a1f",
+      "result_id": "f5c2e010-9cbb-4224-a2cb-6d8ad54f7529"
+    },
+    {
+      "claim_id": "89cf86c1-89dd-4841-9b9d-ccb7a1fff9d9",
+      "result_id": "f5c2e010-9cbb-4224-a2cb-6d8ad54f7529"
+    },
+    {
+      "claim_id": "f57b7a18-ab35-497d-8993-0605d1b333ea",
+      "result_id": "f5c2e010-9cbb-4224-a2cb-6d8ad54f7529"
+    },
+    {
+      "claim_id": "4df742b3-dd79-47b4-9ff2-24808a1088cb",
+      "result_id": "f5c2e010-9cbb-4224-a2cb-6d8ad54f7529"
+    },
+    {
+      "claim_id": "34c12bc1-eb41-4b5f-badb-bb9ba20bd6ee",
+      "result_id": "f5c2e010-9cbb-4224-a2cb-6d8ad54f7529"
+    },
+    {
+      "claim_id": "54a78666-8613-48f9-bfc8-6a97139da1f7",
+      "result_id": "f5c2e010-9cbb-4224-a2cb-6d8ad54f7529"
+    },
+    {
+      "claim_id": "2b11044d-188c-4558-8f95-ec7d200d2a07",
+      "result_id": "f5c2e010-9cbb-4224-a2cb-6d8ad54f7529"
+    },
+    {
+      "claim_id": "00b6e6de-3a58-4415-9c72-692bedfc96d4",
+      "result_id": "f5c2e010-9cbb-4224-a2cb-6d8ad54f7529"
+    },
+    {
+      "claim_id": "26d7f67e-50bc-40d7-a7e7-1a674b6962f5",
+      "result_id": "f5c2e010-9cbb-4224-a2cb-6d8ad54f7529"
+    },
+    {
+      "claim_id": "da43bd3a-b9e4-4a41-827c-1ab107fda44c",
+      "result_id": "f5c2e010-9cbb-4224-a2cb-6d8ad54f7529"
+    },
+    {
+      "claim_id": "d4a001af-d7bf-459a-b03b-b1f14cabc821",
+      "result_id": "f5c2e010-9cbb-4224-a2cb-6d8ad54f7529"
+    },
+    {
+      "claim_id": "bf1bb924-7095-4afe-b3a5-7ad374cd7dcd",
+      "result_id": "f5c2e010-9cbb-4224-a2cb-6d8ad54f7529"
+    }
+  ],
+  "comparisons": []
+}

@@ -1,0 +1,276 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C25",
+      "C26",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C93",
+      "C94"
+    ],
+    "result": "C. elegans npr-1 mutants exhibit dynamic swarming behavior characterized by collective movement of coherent worm clusters across bacterial lawns on a timescale of hours. Clusters form, move persistently but not necessarily directionally at steady speeds, and the onset of collective movement coincides with local food depletion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C5, C25, C26, C31-C38, C93-C94 collectively provide strong experimental evidence from time-lapse imaging and tracking data showing that npr-1 mutants form moving clusters on food over hours. The temporal dynamics, movement patterns, and relationship to food depletion are well-documented through multiple experimental approaches including bright field and fluorescence imaging.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C39"
+    ],
+    "result": "N2 worms do not swarm under the standard experimental conditions used in this study, but can swarm under specific conditions such as near-complete food depletion or on unpalatable bacterial lawns, indicating that swarming does not require loss of npr-1 function in all environments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C30, C39 are supported by experimental observations (C27, C39) and citations to prior work (C28, C29). The conclusion that swarming is not strictly dependent on npr-1 loss-of-function (C30) is a reasonable inference from the observation that N2 can swarm under certain conditions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C41",
+      "C42"
+    ],
+    "result": "Fluorescence imaging with GFP-labeled pharynx and RFP-labeled body wall muscle enables tracking of individual worms inside dense clusters, allowing quantification of individual dynamics and longer trajectories.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C42 describe methodological advances that are well-supported by the experimental design and tracking data shown in figures. The two-color imaging approach is clearly demonstrated to overcome the challenge of tracking overlapping worms in clusters.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "Ascarosides are unlikely to explain the difference in aggregation propensity between N2 and npr-1 mutants, as daf-22;npr-1 double mutants (which cannot produce ascarosides) aggregate similarly to npr-1 single mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43, C45 are supported by experimental data showing similar aggregation in daf-22;npr-1 and npr-1 mutants. Claims C44, C87-C89 provide supporting context from prior work. The conclusion that ascarosides don't explain aggregation differences (C45) is a reasonable inference from the genetic experiment, though alternative explanations involving other chemical signals cannot be completely ruled out.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C90",
+      "C91"
+    ],
+    "result": "npr-1 mutants show density-dependent increases in reversal rates and speed changes that are more pronounced than in N2 worms. Speed changes occur prior to cluster entry/exit events and are neither purely mechanical nor deterministic, suggesting probabilistic switching between speeds. Postural changes are not a main driver of aggregation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C53, C90-C91 are well-supported by quantitative tracking data and analysis shown in Figure 3. The density-dependent behavioral differences between strains are clearly demonstrated through k-nearest neighbor density estimation, speed distributions, and individual trajectory analysis. The inference that speed switching is probabilistic (C52-C53) is reasonable given the observation of speed changes before entry/exit events.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C54",
+      "C55"
+    ],
+    "result": "npr-1 animals show quantifiably higher levels of aggregation than N2 at spatial scales up to 1-2 mm, with positions that are less spread-out and more heavy-tailed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C55 are supported by spatial statistics (pair-correlation function, hierarchical clustering, standard deviation, and kurtosis) calculated from tracking data and shown in Figure 4. These provide rigorous quantitative measures of the aggregation differences between strains.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "An agent-based model with density-dependent reversals and speed switching can capture different aggregation phenotypes by varying two parameters, with both behaviors being important for aggregation. However, the model without taxis shows incomplete quantitative agreement with experimental data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C58 are supported by simulation results shown in Figure 5. The phase diagram demonstrates the model's ability to produce different phenotypes, and quantitative comparison with experiments reveals the limitations of the two-parameter model, motivating the addition of taxis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C6",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Three key behavioral rules underlie C. elegans aggregation: cluster-edge reversals, density-dependent speed switching, and taxis towards neighboring worms. All three behaviors are necessary to quantitatively match aggregation in npr-1 mutants, with the extended model including taxis showing markedly improved agreement with experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C59-C64 are strongly supported by the agent-based modeling results, Bayesian parameter inference (Figure 6), and perturbation simulations (Figure 6\u2014figure supplement 2). The necessity of all three behaviors is demonstrated through systematic removal experiments. The approximate Bayesian inference provides rigorous quantification of parameter values and uncertainties.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C95",
+      "C96"
+    ],
+    "result": "The correlation between worm velocity and the vector towards nearby worms is nearly zero in both experiments and simulations, but a taxis behavior similar to simulations may still be present in experiments despite being difficult to detect with correlation analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C95 is supported by correlation analysis of tracking data. However, claim C96 acknowledges that the taxis behavior inferred from modeling cannot be directly confirmed experimentally due to methodological limitations (tracking only pharynx, not full body). This represents an important limitation where the model predicts a behavior that cannot be fully validated experimentally.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C7",
+      "C40",
+      "C65",
+      "C66",
+      "C92"
+    ],
+    "result": "Swarming is driven by local food depletion but employs the same behavioral mechanisms as initial aggregation. Simulations with food depletion produce long-time dynamics qualitatively representative of experimentally observed swarming, indicating that swarming is an emergent phenomenon resulting from individual locomotion coupled with food depletion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C40, C65-C66, C92 are supported by simulation results with food depletion (Figure 7) that qualitatively reproduce experimental swarming behavior. The cluster speeds in simulations are comparable to experimental values. However, the claim is based primarily on qualitative agreement and simulation results rather than direct experimental manipulation of the proposed mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "While oxygen has been proposed as a sensory cue for aggregation, reaction-diffusion calculations suggest that strong oxygen gradients (to near 7%) inside aggregates are unlikely. However, worms may still respond to shallower oxygen gradients.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C71 combine prior work (C67-C69, C71) with new calculations (C70) presented in Appendix 2. The reaction-diffusion analysis provides a quantitative challenge to previous reports of steep oxygen gradients, though the authors appropriately note that shallow gradients could still play a role. This represents a critical evaluation of a proposed mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Collective behavior of C. elegans at the mesoscale draws from both microscale (bacterial) and macroscale (animal) systems. Key behavioral rules like reversals and speed changes have been observed at other scales, but C. elegans aggregation occurs at lower densities and involves more complex sensory processing than bacterial systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C76 synthesize the current findings with prior work on collective behavior at different scales. The comparisons are well-supported by citations and quantitative differences (e.g., density, area fraction) between C. elegans and typical active matter systems. This represents a thoughtful contextualization of the results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C97",
+      "C98"
+    ],
+    "result": "Model-inferred reversal rates show similar density-dependence to experiments, with greater increases for npr-1 than N2. However, aggregation in the model is not sensitive to speed switching rates, as shown by broad posterior distributions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C98 are supported by comparison between model predictions and experimental measurements (Figure 6\u2014figure supplement 4). The broad posterior distributions for speed switching parameters indicate model insensitivity, which is an important finding about which parameters matter most for aggregation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "The study addresses collective behavior at the mesoscopic scale in C. elegans, which is less understood than microscale (cellular) or macroscale (animal) collective behavior. Previous work has focused on genetics and neural circuits rather than detailed behavioral mechanisms, leaving open questions about whether candidate behavioral motifs are sufficient for aggregation and whether aggregation and swarming are distinct or related phenomena.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3, C8-C24 establish the conceptual framework and knowledge gaps that motivate the study. These are well-supported by citations to prior work and represent accurate characterizations of the field. The identification of specific open questions (C23-C24) that the study addresses is appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "Inferring model parameters for multiple wild C. elegans strains could produce behavioral parameterizations that might serve as traits for finding behavior-modifying loci, as even small increases in phenotypic dimensionality can reveal independent loci.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C77-C78 are supported by citations to prior work. However, claim C79 is speculative about future applications of the modeling approach. While the proposal is reasonable given the precedent cited in C78, it represents a suggested future direction rather than a demonstrated result.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "The functional significance of aggregation and swarming in C. elegans remains uncertain. Aggregation may protect against desiccation or UV radiation, or facilitate predation on unpalatable bacteria. The relationship between aggregation and fitness in different environments is unresolved.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C84 appropriately characterize the uncertainty about the ecological function of aggregation/swarming. These claims are supported by citations to prior work and acknowledge conflicting evidence about fitness effects. The speculative nature of functional hypotheses (C80-C81) is appropriately indicated.",
+    "result_type": "MINOR"
+  }
+]

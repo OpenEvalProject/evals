@@ -1,0 +1,270 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "Yap1 deletion causes massive, caspase-dependent cell death specifically during ESC differentiation but not during self-renewal. Multiple Yap1 KO clones across different ESC lines (J1, CJ7, E14) showed 70-80% cell death during differentiation compared to ~30% in WT, while undifferentiated cells showed minimal death regardless of genotype. This phenotype was dose-dependent with shRNA knockdown and could be rescued by caspase inhibition or Yap1 overexpression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C3, C19-C26 provide strong, converging evidence from multiple independent KO clones, different ESC lines, dose-response with knockdown, rescue with overexpression, and pharmacological validation with caspase inhibitors. The context-specificity (differentiation vs. self-renewal) is clearly demonstrated across all experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "Yap1 KO cells exhibit hyperactivation of the caspase cascade during differentiation, particularly through Casp9. Flow cytometry, immunoblots, and luminescent assays showed 2-fold higher caspase activity in Yap1 KO cells by 60 hr post-LIF withdrawal. Casp9 knockdown rescued cell death in Yap1 KO cells to WT levels, while caspase mRNA and Casp3 protein levels were similar between genotypes, suggesting post-translational regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C36 demonstrate caspase hyperactivation through multiple orthogonal methods (flow cytometry, immunoblots, activity assays). The rescue experiment with Casp9 knockdown (C32) provides strong functional validation. The observation that mRNA levels are unchanged (C34) appropriately rules out transcriptional regulation of caspases themselves.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Yap1's pro-survival function during differentiation is independent of lineage fate and acts specifically during the early exit from self-renewal. Yap1 KO cells showed increased cell death across multiple differentiation protocols (neural ectoderm, definitive endoderm, EpiLC), all rescuable by caspase inhibition. Verteporfin treatment phenocopied Yap1 KO only when applied before differentiation, not during late differentiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C42 demonstrate generalizability across differentiation conditions and temporal specificity through verteporfin timing experiments. The consistency across multiple lineage-specific protocols (C37-C39) and the temporal window identified by verteporfin treatment (C40-C41) provide strong support for the context-dependent role of Yap1.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C56",
+      "C57"
+    ],
+    "result": "Yap1 regulates the expression of apoptosis-related genes during differentiation, strongly upregulating anti-apoptotic genes (particularly Bcl2, which increases 80-100-fold in WT) and mildly suppressing pro-apoptotic genes. Yap1 KO cells showed deficient expression of Bcl-2, Bcl-xL, and Mcl-1 at both protein and mRNA levels, with defects worsening over time during differentiation. This pattern was consistent across multiple differentiation conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C54, C56-C57 provide comprehensive evidence from protein (immunoblot, immunocytochemistry) and mRNA (RT-qPCR, RNA-seq) analyses across multiple timepoints and differentiation conditions. The dramatic 80-100-fold upregulation of Bcl2 in WT (C52) and its deficiency in KO cells provides a clear mechanistic link. Transient overexpression experiments (C53) provide additional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Yap1 directly regulates apoptosis-related genes through binding to cis-regulatory elements in complex with Tead factors and p300. ChIP-seq identified 8453 Yap1 peaks during differentiation, enriched for Tead motifs and correlated with p300 occupancy and H3K27ac. Dual luciferase assays demonstrated that Yap1 activates anti-apoptotic gene enhancers and represses pro-apoptotic gene enhancers, with activity dependent on Tead binding sites and the Yap1-Tead interaction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C73 provide strong mechanistic evidence through ChIP-seq, co-IP, motif analysis, and functional validation with luciferase assays. The requirement for Tead binding sites (C73) and the failure of the S79A mutant to rescue enhancer activity (C72) demonstrate specificity. The correlation with p300 and H3K27ac (C62, C66) supports a transcriptional activation mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C106"
+    ],
+    "result": "Yap1 occupancy on apoptosis-related genes is conserved across human cancer cell types (r\u22480.5) and correlates with Tead factor binding in mouse cell types. This conservation suggests the regulatory mechanism may be broadly applicable to cancer contexts where Yap1 promotes tumorigenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C75, C106 demonstrate conservation through correlation analysis of public ChIP-seq datasets. While the correlation coefficient of ~0.5 indicates moderate conservation, this is reasonable given different cellular contexts. The analysis appropriately uses multiple cell types and is supported by citation to prior work (C106).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "Loss of Yap1 increases mitochondrial priming during differentiation, sensitizing cells to apoptotic activation. JC-10 assays showed greater loss of mitochondrial membrane potential in Yap1 KO cells across all differentiation conditions but not during self-renewal. BH3 mimetic treatment revealed enhanced addiction to anti-apoptotic proteins (particularly Mcl-1 and Bcl-xL) specifically in differentiating Yap1 KO cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C83 demonstrate increased mitochondrial priming through direct measurement (JC-10 assay) and functional validation (BH3 mimetic sensitivity). The context-specificity (differentiation vs. self-renewal) is maintained (C76, C79), and the 2-3x greater sensitivity to Mcl-1 and Bcl-xL inhibition (C82) provides quantitative support for enhanced addiction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "Pro-apoptotic BH3-only proteins (Bmf and Puma) contribute modestly to enhanced cell death in Yap1 KO cells during differentiation. Knockdown of Bmf or Puma mildly reduced cell death in Yap1 KO cells, while overexpression accelerated apoptosis, with Puma having stronger effects than Bmf, consistent with their differential binding specificities to anti-apoptotic proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C89 demonstrate a modest but significant role for pro-apoptotic proteins through both loss- and gain-of-function experiments. The differential effects of Puma vs. Bmf (C86) are appropriately explained by their binding specificities (C87). The conclusion that Yap1's pro-survival function is primarily through anti-apoptotic activation (C88) is supported by the modest effects compared to anti-apoptotic protein modulation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "Mcl-1 deficiency occurs early during differentiation (28 hr post-LIF withdrawal) in Yap1 KO cells and contributes to heightened apoptotic sensitivity before Bcl-2 differences become apparent. Yap1 KO cells showed acute sensitivity to Mcl-1 or Bcl-2/Bcl-xL/Bcl-w inhibition at this early timepoint.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C92 identify temporal dynamics of anti-apoptotic protein expression and provide mechanistic insight into early apoptotic priming. The acute sensitivity to BH3 mimetics at 28 hr (C91) functionally validates the importance of early Mcl-1 deficiency. The inference about Mcl-1's role (C92) is reasonable given its higher expression levels.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C100",
+      "C101"
+    ],
+    "result": "Individual modulation of anti-apoptotic factors (Bcl-2, Bcl-xL, Mcl-1) is sufficient to control cell death during ESC differentiation. Overexpression of Bcl-2 or Bcl-xL in Yap1 KO cells rescued cell death to WT levels, while knockdown of these factors in WT cells increased death 1.5-2-fold. Taz overexpression also reduced cell death, possibly through Bcl-xL upregulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C96, C100-C101 provide strong functional validation through both rescue and phenocopy experiments. The bidirectional manipulation (overexpression and knockdown) demonstrates sufficiency of individual factors. The Taz rescue (C95) provides additional support for the Tead-dependent mechanism, though the mechanism is speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C102",
+      "C104",
+      "C105"
+    ],
+    "result": "Bcl-2, but not Bcl-xL or Mcl-1, has previously unknown roles in ESC lineage specification. Bcl-2 overexpression increased induction of trophectoderm and mesoderm markers, while Bcl-2 knockdown reduced lineage marker induction. This effect was specific to Bcl-2 and not observed with Bcl-xL or Mcl-1 modulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C99, C102, C104-C105 identify a novel, specific role for Bcl-2 in lineage specification through both gain- and loss-of-function experiments. The specificity to Bcl-2 (C99) strengthens the finding. However, the mechanism is unexplored and requires future investigation. The claim of 'previously unknown' (C102) is supported by citation showing only self-renewal roles were previously characterized.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C103"
+    ],
+    "result": "Caspase-3 activation during ESC differentiation is extremely heterogeneous at the single-cell level, with many cells changing morphology without detectable caspase activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C103 is supported by live imaging data (Figure 1D) showing heterogeneous Casp3 activation. This observation is descriptive and well-documented by the imaging evidence. The heterogeneity has implications for understanding cell fate decisions during differentiation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C1",
+      "C14",
+      "C15"
+    ],
+    "result": "Approximately 30% of ESCs die after exiting self-renewal, a phenomenon observed in both mouse and human ESCs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C14-C15 establish the baseline rate of cell death during ESC differentiation through citations to prior work (Bashamboo et al., 2006; Duval et al., 2000; Dravid et al., 2005). This provides important context for the study but represents prior knowledge rather than new findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "Background on Yap1 regulation and function: Yap1 is regulated by Hippo signaling through Lats1/2 phosphorylation and cytoplasmic sequestration. When active, Yap1 translocates to the nucleus and regulates target genes with Tead factors. Previous work showed Yap1 nuclear translocation after LIF withdrawal affects ESC differentiation, and Yap1 deletion causes embryonic lethality. Apoptosis during differentiation occurs in multiple cell types including ESCs, neural progenitors, and lymphocytes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C13, C16-C18 summarize established knowledge from prior work, appropriately cited. These provide necessary background but do not represent new findings from this study. The citations appear accurate based on the references provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C107",
+      "C108"
+    ],
+    "result": "The study demonstrates that Yap1 robustly promotes ESC survival during differentiation through direct transcriptional regulation of apoptotic genes. This mechanism may be broadly applicable to cancer contexts where addiction to anti-apoptotic factors is a defining characteristic.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C108 represent the main conclusions synthesized from all experimental data. C107 is established knowledge about cancer cells, while C108 summarizes the key finding. The broad applicability to cancer is speculative but reasonable given the conservation data (C74, C106).",
+    "result_type": "MAJOR"
+  }
+]

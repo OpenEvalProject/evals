@@ -1,0 +1,214 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C77"
+    ],
+    "result": "Pioneer metastatic melanoma cells physically interact with Siglec1-expressing SCS macrophages upon arrival in lymph nodes, forming metastatic foci that eventually disrupt the SCS lining. This interaction mechanism appears conserved across tumor types including breast cancer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C19-C26, and C77 collectively demonstrate through microscopy data (confocal imaging, time-course analysis) that metastatic cells arrive in the SCS by day 14, make physical contact with Siglec1+ SCS macrophages, form growing foci, and eventually breach the SCS barrier. The generalizability is supported by 4T1 breast cancer cell data (C25). The temporal progression and spatial relationships are well-documented with appropriate imaging controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Melanoma cells exhibit hypersialylation (>10-fold increase in \u03b12,3- and \u03b12,6-linked sialylation) compared to normal melanocytes, and Siglec1 binds preferentially to \u03b12,3-sialylated proteins on cancer cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C33 are supported by lectin staining (MAL II and SNA), flow cytometry, and sialidase treatment experiments. The preferential binding to \u03b12,3-sialylation (C33) is inferred from the observation that complete removal of \u03b12,3-sialylation abolished Siglec1 binding while only partial removal of \u03b12,6-sialylation occurred. The quantitative measurements and controls are appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C74"
+    ],
+    "result": "Pioneer metastatic cells arrive in a non-proliferative, non-apoptotic state and resume proliferation upon contact with SCS macrophages. Siglec1 interaction drives this proliferation through direct cell-cell contact rather than secreted factors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C38 and C74 are supported by Ki67 and cleaved caspase-3 staining in vivo, and in vitro co-culture experiments with HEKSiglec1 cells. The conditioned media control (C37) appropriately rules out paracrine signaling. The non-adherent culture control (C74) validates the model system. Multiple independent experimental approaches converge on the same conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Siglec1 knockdown in macrophages reduces cancer cell proliferation, increases apoptosis, and decreases AKT and ERK1/2 phosphorylation in co-cultured cancer cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C43 are supported by siRNA knockdown experiments in J774A.1 macrophages with appropriate controls. The loss-of-function approach complements the gain-of-function experiments with HEKSiglec1 cells. Phosflow analysis demonstrates reduced activation of pro-survival pathways. The consistency between gain- and loss-of-function experiments strengthens the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C83"
+    ],
+    "result": "Siglec1-interacting cancer cells show transcriptional upregulation of cell cycle and DNA replication genes (68 upregulated genes including PLK1 and Ki67) and downregulation of apoptosis and tumor suppressor genes (171 downregulated genes).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C50 and C83 are supported by RNA sequencing data with appropriate statistical thresholds (FC>1.5, P<0.05), KEGG pathway analysis, and gene ontology analysis. The transcriptional changes are consistent with the observed phenotypic effects on proliferation and apoptosis. However, the manuscript does not report validation of key differentially expressed genes by qPCR or other methods, which would strengthen confidence in the RNA-seq results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C76"
+    ],
+    "result": "PLK1, a master cell cycle regulator, shows increased expression and phosphorylation (1.8-fold higher in LN metastases vs. primary tumors) in Siglec1-interacting cancer cells, indicating enhanced mitotic commitment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C53 and C76 are supported by RNA-seq data, Phosflow analysis comparing primary tumor and LN metastatic cells, and siRNA knockdown experiments. The T210 phosphorylation site is established as a mitosis-specific marker (C76, supported by citation). The convergence of transcriptional and post-translational data strengthens the conclusion about PLK1's role.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "CRISPR knockout of St3gal3 sialyltransferase reduces \u03b12,3-sialylation by 20%, decreases Siglec1 binding by 70%, and severely reduces LN metastasis burden without affecting in vitro proliferation, adhesion, migration, or primary tumor growth.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C62 are supported by CRISPR-mediated knockout with DNA sequencing confirmation, lectin staining, Siglec1 binding assays, and in vivo metastasis quantification. The controls demonstrating no effect on intrinsic cellular properties (C58-C60) are critical for establishing that the metastatic defect is specifically due to impaired SCS macrophage interaction rather than general cellular dysfunction. The 20% reduction in sialylation causing 70% reduction in Siglec1 binding suggests \u03b12,3-sialylation is the primary Siglec1 ligand.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "St3gal3 knockout cells reach the LN SCS but fail to form tight foci with SCS macrophages, show reduced proliferation and survival, and form only small clusters that cross the SCS without expanding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C68 are supported by immunohistochemistry at multiple time points (days 17 and 21) with Ki67 and cleaved caspase-3 staining. The control showing no Siglec1 on primary tumor lymphatics (C63) rules out effects on tumor cell egress. The microscopy data clearly demonstrate the phenotypic differences between WT and KO cells in the SCS microenvironment, supporting the model that Siglec1-sialylation interactions are required for efficient colonization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C69",
+      "C78",
+      "C79",
+      "C82"
+    ],
+    "result": "The authors propose that Siglec1+ SCS macrophages provide a permissive 'soil' for metastatic colonization by providing anchorage and promoting cell cycle progression in pioneer metastatic cells, and that disrupting this interaction slows metastatic colonization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69, C78, C79, and C82 represent the integrated model supported by the collective experimental findings. The model is well-supported by convergent evidence from microscopy, in vitro co-culture, transcriptomics, signaling pathway analysis, and genetic knockout experiments. The conclusion that abrogation of SCS macrophage-tumor cell binding slows colonization is directly demonstrated by the St3gal3 knockout experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C70",
+      "C71",
+      "C80",
+      "C81"
+    ],
+    "result": "The manuscript contextualizes the findings within established knowledge about LN metastasis, melanoma biology, the seed-and-soil hypothesis, metastatic inefficiency, and prior observations of SCS colonization patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C8-C18, C70-C71, C80-C81 are primarily background knowledge supported by appropriate citations to prior literature. These claims establish the scientific context and rationale for the study. The authors appropriately cite prior work and their model is stated to be consistent with previous observations by Das et al. and Jeong et al. (C81).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C72",
+      "C73"
+    ],
+    "result": "The authors conclude that reduced sialylation decreases metastatic efficiency and suggest that countering hypersialylation may be therapeutically beneficial for preventing LN metastasis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C72 is directly supported by the St3gal3 knockout experiments showing reduced metastasis. Claim C73 is a speculative therapeutic implication that is reasonable given the data but represents future work rather than demonstrated efficacy. The evaluation is SUPPORTED because C72 is data-driven, though C73 is appropriately cautious speculation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C75"
+    ],
+    "result": "Siglec1 expression does not affect the proliferation of HEK293T cells used in co-culture experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C75 is supported by Ki67 staining data and serves as an important control to ensure that observed effects on cancer cells are not due to altered HEK293T cell behavior. This control validates the experimental system.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,240 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C24",
+      "C58",
+      "C63"
+    ],
+    "result": "Information-theoretic methods, specifically transfer entropy applied to multiple symbolic representations of behavioral data, can reveal complex communication protocols in animal social interactions. Transfer entropy naturally incorporates temporal ordering, accounts for autocorrelations, and by applying it to different symbolic representations (rotation and pausing patterns), parallel information flows can be uncovered within the same behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C18, C24, C58, and C63 collectively establish the methodological approach and its capabilities, supported by the empirical analyses throughout the manuscript (Figures 2-4, Tables 2-3). Claims C20-C22 provide the theoretical foundation from information theory. The method is demonstrated to work across three species with different communication protocols, validating its generalizability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C25",
+      "C32",
+      "C42",
+      "C46"
+    ],
+    "result": "Ants (T. rugatulus) and termites (C. formosanus and R. speratus) use different communication protocols during tandem running. In all three species, leaders better predict follower direction (rotation pattern), but only in ants do followers better predict leader pausing behavior, indicating bidirectional information flow in ants versus unidirectional flow in termites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C5, C25, C32, and C46 are directly supported by transfer entropy measurements shown in Figure 2A and Tables 2-3, with statistical validation in Table 3 (C80, C81). The bidirectional flow in ants (follower-to-leader for pausing, leader-to-follower for rotation) versus unidirectional flow in termites (leader-to-follower for both) is consistently demonstrated across multiple analyses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "In ants, leader and follower repeatedly switch between two information regimes based on their distance: at close distances (up to two body lengths), the leader's rotation pattern dominates (cohesion-seeking), while at larger distances, the follower becomes more informative, predicting pauses in leader motion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C35 are supported by local transfer entropy analysis shown in Figure 3B and C, which demonstrates distance-dependent switching between rotation and pausing regimes. The analysis shows clear transitions in predictive information as a function of inter-individual distance, with follower control emerging at larger separations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C41"
+    ],
+    "result": "In termites, the leader dominates both rotation and pausing regimes of predictive information, with these regimes inverted relative to ants (rotation at larger distances, pausing at shorter distances). Distance oscillations have higher frequency but lower amplitude than in ants, and there is no evidence that pauses facilitate follower control.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C39 and C41 are supported by analyses in Figure 4 (and Figure 4\u2014figure supplement 1 for R. speratus), showing leader dominance across all distance regimes and distinct spatiotemporal dynamics compared to ants. The negative finding in C41 is appropriately stated as absence of evidence rather than evidence of absence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C15",
+      "C16"
+    ],
+    "result": "At short time scales, tandem running appears similar across ants and termites with comparable signaling mechanisms (pheromone attraction, antennal tapping, leader pausing upon follower removal), but these short-term mechanisms cannot explain functional differences. The differences are hypothesized to be encoded at intermediate time scales where communication protocols can be detected.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C11 are supported by citations to established literature. Claims C15-C16 provide the key motivation for the study's approach, which is then validated by the empirical findings showing distinct intermediate-scale protocols (C4, C5, C46) despite similar short-term mechanisms. The hypothesis in C16 is confirmed by subsequent results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C26",
+      "C27"
+    ],
+    "result": "Ants use tandem running for recruitment and route learning, allowing followers to acquire navigational information to later repeat journeys independently. Termites use tandem running primarily during mating for spatial cohesion while searching for a new home, with no route retracing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C14 and C26-C27 describe established functional differences between ant and termite tandem running, supported by multiple citations to prior literature. These functional differences provide the biological context that motivates the search for different communication protocols at intermediate time scales.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C44",
+      "C45"
+    ],
+    "result": "In termites, followers transfer information only when establishing initial contact and sporadically after accidental breaks. Once contact is established and the run proceeds steadily, followers cease transferring information and leaders control both direction and speed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C45 are supported by transfer entropy analyses shown in Figures 2 and 4, demonstrating the predominantly unidirectional (leader-to-follower) information flow during sustained tandem running in termites, contrasting with the bidirectional flow in ants.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "The bidirectional communication protocol in ants is analogous to acknowledgment signals in computer networks and may represent an underappreciated requirement of teaching. The frequency of acknowledgments can be understood through communication theory in terms of receiver capacity and information complexity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C51 provide interpretive frameworks for the empirical findings. C50 is supported by citations to prior work on teaching in ants. C51 is a reasonable inference from the demonstrated bidirectional information flow (C5, C32, C46). The analogies (C48-C49) are appropriate interpretive tools supported by citation to communication theory.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C53",
+      "C64",
+      "C65"
+    ],
+    "result": "This study is the first to reveal a protocol for stereotyped signals controlling information flow (a non-physical quantity) in non-human organisms. The methodology is sufficiently generic to enable discovery of cryptic signaling in other taxa and extends information-theoretic analysis toward cross-taxonomic comparisons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53, C64, and C65 are supported by the successful demonstration of the method across three species with different protocols. The novelty claim (C53) is reasonable given the distinction from prior work on physical quantities (C52). The generalizability claims (C64-C65) are supported by the comparative analysis and citations to other potential applications.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C23",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Previous applications of transfer entropy in animal behavior have focused on revealing leader-follower relationships based on single symbolic representations of data and cannot disentangle complex information flows when different aspects of interaction carry different information in different directions at different time scales.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23, C60-C62 provide an accurate characterization of prior work, supported by multiple citations. The limitation identified in C62 is addressed by the current study's innovation (C24, C63), establishing the novelty and contribution of the methodological approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "The study used 20 tandem runs from 6 ant colonies (T. rugatulus, body size 2.34\u00b10.3 mm), 17 experiments with C. formosanus (8.89\u00b10.42 mm), and 20 experiments with R. speratus (5.5\u00b10.3 mm). Motion trajectories were extracted using UMATracker software from video recordings of runs lasting >15 minutes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C75 describe the experimental materials and methods with specific sample sizes, body measurements, and data extraction procedures. These are straightforward methodological descriptions supported by appropriate citations (C70, C72) and represent standard reporting of experimental details.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C80",
+      "C81"
+    ],
+    "result": "The 10th percentile of step size distribution was used to distinguish motion from pauses. Transfer entropy was estimated from all trials together for each species. Validation against surrogate datasets showed experimental transfer entropy significantly greater than surrogate in all but four tests, and all leader-follower interactions in Figure 2A were statistically confirmed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C78 describe the analytical methods. Claims C80-C81 report statistical validation results from Table 3, confirming the significance of the measured information flows. The validation approach (C78) using surrogate datasets is appropriate for ensuring results are not artifacts of finite sampling.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C56",
+      "C57"
+    ],
+    "result": "Behavioral correlations over time are essential but often neglected in animal interactions. Current methods lack effective means to analyze complex interaction series, and direct manipulation at intermediate time scales interferes with normal behavior. Quantitative non-interventional methods are underdeveloped in behavioral ecology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2 and C56-C57 provide the problem statement motivating the study. These are reasonable assessments of the field based on established understanding (C1, C56) and critical evaluation of methodological limitations (C2, C17, C57). The study then addresses these limitations with its information-theoretic approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "During tandem running interruptions, followers break contact and leaders pause while followers search locally. When contact resumes, leaders resume motion. In ants, interruptions are believed to regulate speed for route learning; in termites, they may represent accidental separations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C30 describe established behaviors supported by citations. Claim C31 is appropriately stated as a hypothesis ('may be') based on functional differences. These claims provide behavioral context for interpreting the information flow patterns discovered in the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C40",
+      "C47",
+      "C54",
+      "C55",
+      "C66"
+    ],
+    "result": "Leader-initiated pauses in termites might serve unknown functions like motor planning. Tandem running has evolved multiple times in ants with varying requirements for acknowledgment signals. Comparing across taxa may reveal ecological contexts for signal evolution, and a common information-processing language can enable new evolutionary questions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C40, C54, C55, and C66 are speculative statements about future research directions and evolutionary implications. While C40 and C54 are supported by citations, these claims represent hypotheses and suggestions rather than demonstrated findings. They are appropriately qualified with terms like 'might' and 'may.'",
+    "result_type": "MINOR"
+  }
+]

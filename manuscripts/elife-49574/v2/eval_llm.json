@@ -1,0 +1,319 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Inhibiting NPF neurons using temperature-sensitive Shibirets, Kir2.1, or DTI increases male courtship toward females and males at restrictive temperatures, while activating NPF neurons with NaChBac or npf overexpression elevates aggression and reduces courtship. These effects are specific to NPF neuron manipulation and not due to temperature alone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple independent methods (Shits, Kir2.1, DTI) consistently show increased courtship when NPF neurons are inhibited (C26-C34), with appropriate temperature controls (C28). Gain-of-function experiments (C35-C37) show opposite effects. The convergence of loss- and gain-of-function approaches with multiple tools provides strong support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "npf null mutants (npf1 and npfLexA) exhibit hypersexual behavior, courting inappropriate targets including D. simulans females, males, newly-eclosed females, and decapitated females, while maintaining normal sex discrimination. This phenotype is rescued by a wild-type npf genomic transgene, confirming that loss of npf function causes resistance to sexual satiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Two independent null alleles (C39-C40) show consistent hypersexual phenotypes across multiple target types (C42-C43, C46, C48), with appropriate controls demonstrating intact sex discrimination (C44-C45) and ruling out pheromone hypersensitivity (C46-C47). Genetic rescue (C49-C50) confirms specificity. The comprehensive behavioral characterization strongly supports the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "NPFM neurons comprise a bilaterally symmetrical, male-specific cluster of 3-5 neurons located dorso-lateral to the antennal lobes that express NPF and FruM but not DsxM. These neurons arborize extensively in the superior brain and their specification depends on FruM, as demonstrated by loss of NPFM staining in fruFLP mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Anatomical characterization using reporter lines and immunostaining (C52-C55) clearly identifies NPFM neurons with consistent sexual dimorphism (C61). Molecular characterization shows FruM expression (C56) and DsxM absence (C57). The genetic requirement for FruM is demonstrated by loss of NPFM in fruFLP mutants (C58-C59). Multiple complementary approaches provide strong support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "NPFM neurons are the specific subset of NPF neurons required for suppressing male courtship. Silencing NPFM neurons with Shits elevates courtship (C62), while silencing all NPF neurons except NPFM has no effect (C63). Cell-specific npf RNAi knockdown in NPFM neurons increases courtship (C68), while knockdown in fru-negative NPF neurons does not (C69).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The FlpOut approach provides cell-type specificity, with complementary experiments showing that NPFM neurons are both necessary (C62, C68) and sufficient (C63, C69) to account for NPF's role in courtship suppression. The RNAi validation (C66) confirms knockdown efficacy. However, the TRPA1 activation experiment (C64-C65) shows suppression but not below control levels, which weakens the sufficiency claim slightly.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "NPFM and P1 neurons make close anatomical contacts in the lateral protocerebral complex (LPC), specifically in the lateral junction and SMPr arch regions. GRASP analysis shows strong reconstituted GFP signals in male brains but not female brains or controls lacking appropriate drivers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "GRASP experiments (C72-C74, C81-C82) demonstrate male-specific close apposition between NPFM and P1 neurons in the LPC (C75). Dual-labeling confirms extensive overlap of projections (C80). Appropriate negative controls (female brains, missing drivers) strengthen the conclusion. However, GRASP indicates proximity but not necessarily functional synapses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "Synaptic polarity analysis using DenMark and Syt::eGFP reveals that P1 neurons are presynaptic and NPFM neurons are postsynaptic in the LPC region. NPFM neuron output sites are located in the medial anterior brain, outside the LPC, indicating that NPFM neurons receive input from P1 but do not directly signal back to P1 neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Synaptic marker analysis (C83-C84) clearly distinguishes pre- and postsynaptic compartments. The localization of NPFM output boutons outside the LPC (C86-C87) provides strong evidence against direct NPFM\u2192P1 signaling. The conclusion (C88-C89) logically follows from the anatomical data. This is critical for distinguishing between circuit models.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "Chemogenetic activation of P1 neurons using ATP-gated P2X2 channels induces robust calcium responses in NPFM neurons, as measured by GCaMP3 imaging. This demonstrates that P1 neurons functionally activate NPFM neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Calcium imaging experiments (C90-C91) using two complementary binary systems show consistent P1\u2192NPFM activation. The use of split-P1-Gal4 to restrict P2X2 expression specifically to P1 neurons (mentioned in text) strengthens the conclusion. Appropriate controls and quantification support functional connectivity. This is a key result establishing circuit directionality.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C93"
+    ],
+    "result": "Simultaneous silencing of both NPF and P1 neurons eliminates the courtship elevation caused by NPF neuron inhibition alone, suggesting that NPFM neurons act through or in parallel with P1 neurons to regulate courtship.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The epistasis experiment (C93) shows that P1 neuron activity is required for the hypersexual phenotype caused by NPF neuron inhibition. This is consistent with either a feedback model or a parallel feedforward model. The result is clear but does not definitively distinguish between circuit architectures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "NPF receptor (NPFR) is required for normal courtship regulation. npfrLexA mutants and npfrLexA/npfrc01896 trans-heterozygotes show elevated male-male courtship. Pan-neuronal npfr knockdown increases courtship, but P1-specific knockdown has no effect. P1 neurons do not express npfr.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple npfr mutant alleles (C95-C96) show consistent hypersexual phenotypes. RNAi experiments (C97-C98) demonstrate that npfr is required outside P1 neurons. Anatomical analysis (C94) confirms P1 neurons are not NPFR-expressing. This establishes that NPF acts through NPFR neurons distinct from P1 to regulate courtship.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "A subset of NPFR neurons makes anatomical contacts with P1 neurons in the lateral crescent of the LPC, as shown by GRASP. Chemogenetic activation of NPFR neurons induces calcium responses in P1 neurons, indicating functional connectivity from NPFR to P1 neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "GRASP analysis (C99-C100) shows male-specific NPFR-P1 contacts in the lateral crescent. Calcium imaging (C101-C102) demonstrates functional activation of P1 by NPFR neurons. Together, these provide evidence for NPFR\u2192P1 connectivity. However, the NPFR population is heterogeneous, and it's unclear if the same NPFR neurons receive NPFM input and activate P1.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C104",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "The authors propose a recurrent inhibitory circuit model where P1 neurons activate NPFM neurons, which release NPF to inhibit NPFR neurons (via Gi-coupled receptors), which in turn reduce P1 activity. This feedback loop would maintain appropriate P1 activity levels according to sexual satiation state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The proposed model (C117-C122) is consistent with the anatomical and functional data but remains speculative. Key uncertainties include: (1) whether the NPFR neurons that receive NPFM input are the same ones that activate P1, (2) the sign of NPFR\u2192P1 signaling (the model assumes excitatory but this isn't directly tested), and (3) whether NPF inhibits or activates NPFR neurons (Gi-coupling suggests inhibition but functional effects aren't shown). The model is plausible but requires additional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "NPFM neurons function antagonistically to dopaminergic neurons by suppressing courtship in response to sexual satiation. Disruption of NPFM neurons causes dis-inhibition of courtship in satiated males, and the internal drive state is encoded by opposing excitatory and inhibitory inputs to the courtship circuit.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The conclusion (C106-C108) is well-supported by the behavioral data showing that NPF disruption overcomes sexual satiation (C109-C111). The antagonistic relationship with dopamine neurons is supported by comparison to prior work (C105). This represents a major conceptual advance in understanding how internal state modulates courtship.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "The authors propose that NPF activity level determines the threshold for P1 activation, with loss of NPF lowering the threshold (allowing sub-optimal stimuli to trigger courtship) and excess NPF raising the threshold (favoring aggression over courtship). This is consistent with prior findings that weaker P1 activation favors aggression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The proposed mechanism (C112-C113, C115) is speculative and not directly tested. The observation that NPF overactivation increases aggression (C114) is consistent with the model, as is the relationship to prior work (C116). However, P1 activity was not directly measured in npf mutants or NPF overexpression conditions, so the threshold model remains a hypothesis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "The proposed recurrent inhibitory motif in the Drosophila courtship circuit is analogous to recurrent inhibitory circuits in mammalian motor control (Renshaw cells) and hippocampus/entorhinal cortex, which serve to restrict excessive activation and maintain appropriate activity levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The comparison to established recurrent inhibitory circuits in mammals (C124-C127) is appropriate and well-supported by citations. The functional parallel\u2014restricting excessive activation to ensure appropriate behavioral output (C123)\u2014is conceptually sound. This contextualizes the findings within broader neuroscience principles.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C128"
+    ],
+    "result": "While NPFM, P1, and NPFR neurons are essential for regulating courtship in response to mating experience, the data do not exclude alternative circuit models beyond the recurrent inhibitory loop, such as a feedforward parallel model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The authors appropriately acknowledge (C128) that their data are consistent with multiple circuit architectures. The epistasis experiment (C93) and anatomical data constrain but do not uniquely determine the circuit model. This honest assessment of limitations is scientifically appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C1",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Background claims establishing that NPF is the Drosophila homolog of mammalian NPY, that courtship intensity is controlled by internal drive state influenced by sexual satiation/deprivation, that P1 neurons comprise the courtship decision center, and that NPF circuitry and expression are modulated by mating status.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These are established facts from prior literature (C1, C7, C11-C25), appropriately cited and providing necessary context for the current study. The claims accurately represent the state of knowledge and motivate the investigation of NPF's role in courtship regulation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "The lateral protocerebral complex (LPC) is a male-specific brain structure formed by P1 neuron projections that functions as the courtship decision center. NPF neuron projections overlap with the LPC in males but females lack an LPC structure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C76-C79) accurately describe established anatomical features from prior work and are confirmed by the current imaging data. The sexual dimorphism of the LPC and its role in courtship are well-established. This provides essential anatomical context for interpreting the NPFM-P1 connectivity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C105",
+      "C129"
+    ],
+    "result": "Prior work identified dopaminergic neurons that promote courtship by activating P1 neurons in proportion to mating drive. In mammals, sexually dimorphic NPY neurons innervate brain regions associated with sexual orientation and gender identity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These contextual claims (C105, C129) accurately cite prior work and are relevant for framing the current findings. C105 establishes the antagonistic relationship between dopamine and NPF systems. C129 raises interesting questions about evolutionary conservation but is speculative regarding functional parallels.",
+    "result_type": "MINOR"
+  }
+]

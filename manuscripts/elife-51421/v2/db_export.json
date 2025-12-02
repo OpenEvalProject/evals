@@ -1,0 +1,1926 @@
+{
+  "submission": {
+    "id": "16bc6c81-e486-41a4-beab-f7e95f25d98e",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T12:45:51.512427Z",
+    "updated_at": "2025-12-02T12:45:51.512427Z"
+  },
+  "content": [
+    {
+      "id": "13720f7c-2ea9-4422-8ace-cadffff224f1",
+      "submission_id": "16bc6c81-e486-41a4-beab-f7e95f25d98e",
+      "content_type": "manuscript",
+      "content_text": "# Epigenetic memory independent of symmetric histone inheritance\n\n## Authors\n\n- Daniel S Saxton<sup>1</sup> ([ORCID: 0000-0001-7152-7780](https://orcid.org/0000-0001-7152-7780))\n- Jasper Rine<sup>1</sup> ([ORCID: 0000-0003-2297-9814](https://orcid.org/0000-0003-2297-9814)) \u2020\n\n### Affiliations\n\n1. Department of Molecular and Cell Biology University of California, Berkeley Berkeley United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nHeterochromatic gene silencing is an important form of gene regulation that usually requires specific histone modifications. A popular model posits that inheritance of modified histones, especially in the form of H3-H4 tetramers, underlies inheritance of heterochromatin. Because H3-H4 tetramers are randomly distributed between daughter chromatids during DNA replication, rare occurrences of asymmetric tetramer inheritance within a heterochromatic domain would have the potential to destabilize heterochromatin. This model makes a prediction that shorter heterochromatic domains would experience unbalanced tetramer inheritance more frequently, and thereby be less stable. In contrast to this prediction, we found that shortening a heterochromatic domain in Saccharomyces had no impact on the strength of silencing nor its heritability. Additionally, we found that replisome mutations that disrupt inheritance of H3-H4 tetramers had only minor effects on heterochromatin stability. These findings suggest that histones carry little or no memory of the heterochromatin state through DNA replication.\n\n## Introduction\n\nA central question in biology is how cells with identical genotypes can exhibit different, heritable phenotypes. By definition, these phenotypes are determined by information that is epigenetic, or \u2018above the genome.\u2019 Just as genetic inheritance requires faithful replication of DNA, epigenetic inheritance requires replication of information that is transmitted to both daughter cells during division. Faithful transmission of epigenetic information is crucial for multiple heterochromatin-based processes such as X-chromosome inactivation in mammals and cold-induced gene silencing in Arabidopsis. In these cases and others, the epigenetic inheritance of heterochromatin indicates that some components of heterochromatin behave as heritable units. Surprisingly, the identity of this epigenetic information remains unclear and heavily debated.\n\nThe histone subunits of nucleosomes, especially histones H3 and H4, are marked by a variety of covalent modifications that are integral to heterochromatin function. During DNA replication, nucleosomes are partially disrupted and marked parental H3-H4 tetramers are locally inherited to daughter chromatids. As these tetramers are inherited, they are reassembled into nucleosomes that are interspersed with nucleosomes containing newly synthesized H3-H4 tetramers (Prior et al., 1980; Jackson, 1988; Schlissel and Rine, 2019). One model for epigenetic inheritance posits that marked parental histones inherited through DNA replication recruit histone modifiers to deposit similar marks on new adjacent nucleosomes, thereby reestablishing the previous local landscape of histone modifications (Hecht et al., 1995; Hoppe et al., 2002; Gaydos et al., 2014). In support of this model, the H3K27 methyltransferase PRC2 binds preferentially to H3K27me3 in vitro (Hansen et al., 2008) and some other modifying enzymes show a similar ability to bind their histone modifications (Zhang et al., 2008; Hecht et al., 1995; Imai et al., 2000). If this model is correct, modified H3-H4 tetramers would constitute heritable units that drive epigenetic memory of chromatin states.\n\nStudies have come to different conclusions regarding whether histones can carry epigenetic memory. In S. pombe, localized methylation of H3K9 can silence a reporter gene, and this silenced state is heritable in the presence of the H3K9 methyltransferase Clr4p as long as the demethylase Epe1p is absent (Audergon et al., 2015; Ragunathan et al., 2015). These studies suggest that histone modifications can facilitate epigenetic inheritance, and caution that such a mechanism is normally obscured by H3K9 demethylation activity. Conversely, induced removal of silencer elements from silenced chromatin in S. cerevisiae causes almost all cells to lose silencing of adjacent genes after just one round of DNA replication (Holmes and Broach, 1996). Similar results are found when silencers are removed from Drosophila chromatin silenced by the Polycomb complex (Laprell et al., 2017). These silencer-removal experiments suggest that modified histones are not sufficient to propagate the silenced chromatin state through DNA replication.\n\nThe model in which histones carry epigenetic memory makes a testable prediction: since parental H3-H4 tetramers have long been thought to be randomly partitioned between daughter chromatids (Sogo et al., 1986; Cusick et al., 1984), rare events could occur in which most or all marked parental H3-H4 tetramers within a domain segregate asymmetrically to one daughter chromatid, causing the other to inherit primarily newly synthesized histones. A chromatin domain with an insufficient number of marked parental tetramers would be expected to experience a loss-of-chromatin-state event. In this view, a smaller chromatin domain would correspond to fewer marked nucleosomes and yield more frequent events in which parental H3-H4 tetramers segregate asymmetrically and the chromatin state is lost. This potential use of domain size for protection against epimutation is widely conjectured (Dodd et al., 2007; Kaufman and Rando, 2010; Moazed, 2011; Ramachandran and Henikoff, 2015), and may explain why chromatin domains subject to stable epigenetic inheritance are often many kilobases long. For example, chromatin domains silenced by Polycomb Responsive Elements (PREs) in Drosophila usually extend beyond 10 kb (Schwartz et al., 2006). In contrast, one study in A. thaliana found that a chromatin domain containing only three H3K27me3-marked nucleosomes is inherited more frequently than would be predicted if random segregation of tetramers caused loss events (Yang et al., 2017). However, no study to our knowledge has systematically tested this prediction.\n\nTo test directly whether inheritance of a chromatin state is affected by chromatin\u00a0domain size, we focused on the heterochromatin domains at the HMR and HML loci in S. cerevisiae. These loci contain copies of mating-type genes that are silenced by the activity of Sir proteins. Specifically, the E and I silencers flanking HMR and HML are occupied by the DNA-binding proteins Rap1, Abf1, and ORC, that collectively recruit Sir proteins; Sir1 is present only at silencers, whereas Sir2/3/4 complexes bind to silencers and spread across the locus in a process that requires deacetylation of H4K16 (Rusch\u00e9 et al., 2002; Thurtle and Rine, 2014). Notably, DNA methylation and RNA interference do not exist in S. cerevisiae.\n\nUnder normal conditions, HMR and HML are constitutively silenced. Rare and transient loss-of-silencing events can be measured by a sensitive assay that uses the cre recombinase under control of the HML\u03b12 promoter to convert transient transcriptional events into permanent, heritable changes in fluorescence phenotypes (Dodson and Rine, 2015). In contrast, deletion of SIR1 causes genetically identical cells to be in either of two states at HMR and HML: either fully silenced or fully expressed (Pillus and Rine, 1989; Xu et al., 2006; Dodson and Rine, 2015). These different transcriptional states are mitotically heritable and cells switch between states at a low frequency. This study addresses three questions regarding the inheritance of heterochromatin in Saccharomyces: 1) Does the size of a silenced domain determine the fidelity of inheritance? 2) Does removal of Sir1, a protein that facilitates recruitment of silencing machinery to silencers, uncover an effect of chromatin domain size on heritability of transcriptional states? 3) Do replisome components that facilitate symmetric inheritance of parental H3-H4 tetramers also promote inheritance of transcriptional states?\n\n## Results\n\nLocal inheritance of histones and their locus-specific modifications are thought to facilitate inheritance of chromatin states. According to this view, if parental H3-H4 tetramers were randomly partitioned between the two daughter chromatids during replication, one would expect a chromatin state to be lost if, by chance, one of the daughter chromatids failed to receive enough parental H3-H4 tetramers to support the propagation of that state. By this model, the number of nucleosomes in the chromatin domain would influence the fidelity of chromatin-state inheritance.\n\n### Nucleosome number did not determine the rate of silencing loss\n\nTo test if nucleosome number affected the stable inheritance of a chromatin state, we used the Cre-Reported Altered States of Heterochromatin (CRASH) assay (Dodson and Rine, 2015) (Figure 1A). In this assay, cre replaces the \u03b12 coding sequence in HMR\u03b1, and a lox cassette containing fluorescent reporters separated by loxP sites is located on a separate chromosome. Though HMR\u03b1 is transcriptionally repressed, rare loss-of-silencing events cause transient expression of cre. These events lead to excision of RFP from the lox cassette, and a switch from RFP to GFP expression. Because this change is heritable, loss-of-silencing events during colony growth lead to formation of sectors of cells expressing GFP, appearing green on an otherwise red background. The number of sectors in a colony reflects the frequency at which HMR\u03b1 transiently loses silencing: more sectors indicate less stable silencing.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/51421/elife-51421-fig1-v2.jpg)\n\n**Figure 1.:** (A) Schematic of the Cre-Reported Altered States of Heterochromatin (CRASH) assay (Dodson and Rine, 2015). HMR\u03b1::cre contains the E and I silencers, the \u03b11 gene, and a cre transgene. Transient loss of silencing at HMR\u03b1::cre causes Cre-mediated recombination of loxP sites in a RFP-GFP cassette. This process creates a permanent, heritable switch from RFP to GFP expression. (B) Diagram of nucleosomes in HMR\u03b1::cre. Fourteen nucleosomes were present in full-length HMR\u03b1::cre, which we term Strain N14 (JRY11471). Combinations of nucleosomal DNA were deleted to change the size of HMR\u03b1::cre; the smallest allele contained seven nucleosomes (Strain N7) (JRY11540). Nucleosome positions were determined by MNase-Seq as shown in Figure 1\u2014figure supplement 1. (C) Schematic of how random segregation of parental H3-H4 tetramers to daughter chromatids could cause silencing loss. Under the model that inheritance of a single marked H3-H4 tetramer to a daughter chromatid would be sufficient to propagate the silenced state, the chance that a daughter chromatid inherits no parental tetramers and loses the silenced state would be 0.5\u00a0^\u00a0(the number of nucleosomes in the chromatin domain). Parental nucleosomes contain inherited H3-H4 tetramers, whereas new nucleosomes contain newly synthesized H3-H4 tetramers. Hypothetical chromatin domains of different sizes are provided for comparison. (D) Expected loss-of-silencing rates for different sizes of HMR\u03b1::cre. (E) Representative CRASH colonies for Strains N14 through N7. Because loss of silencing leads to a heritable switch from RFP to GFP expression, progeny of a cell that loses silencing will form a GFP sector; the frequency of sectors in a colony represents the frequency at which that strain loses silencing. Scale bar, 2 mm. (F) Quantification of apparent silencing-loss rates, as described in Materials and methods. Data are means\u00a0\u00b1\u00a0SD (n\u00a0=\u00a06 independent cultures). ANOVA and Tukey tests were used to test statistical significance. Only strains N10 and N7 were significantly different (p<0.05) than N14. Data are presented as a scatter plot in Figure 1\u2014figure supplement 2.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/51421/elife-51421-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** MNase-Seq was performed on strains with different sizes of HMR\u03b1::cre. Midpoints of nucleosome-sized fragments were calculated, plotted, and smoothed.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/51421/elife-51421-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** Data represent means of apparent silencing-loss rates (n\u00a0=\u00a06 independent cultures) from Figure 1F, presented as a scatter plot.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/51421/elife-51421-fig1-figsupp3-v2.jpg)\n\n**Figure 1\u2014figure supplement 3.:** MNase-Seq was performed on the strain with full-length HML\u03b1::cre (JRY11259). Midpoints of nucleosome-sized fragments were calculated, plotted, and smoothed.\n\n![Figure 1\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/51421/elife-51421-fig1-figsupp4-v2.jpg)\n\n**Figure 1\u2014figure supplement 4.:** (A) Diagram of nucleosomes in full-length HML\u03b1::cre (N22) (JRY11259) and strains with deletions of nucleosomal DNA. The smallest allele of HML\u03b1::cre had seven nucleosomes (N7) (JRY11292). (B) Representative CRASH colonies for Strains N22 (JRY11259) through N7 (JRY11292). Scale bar, 2 mm.\n\n![Figure 1\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/51421/elife-51421-fig1-figsupp5-v2.jpg)\n\n**Figure 1\u2014figure supplement 5.:** (A) Diagram of nucleosomes in HML\u03b1::cre, as shown in Figure 1\u2014figure supplement 3. (B) Quantification of apparent silencing-loss rates, as described in Materials and methods. Data are means\u00a0\u00b1\u00a0SD (n\u00a0=\u00a06 independent cultures). ANOVA and Tukey tests were used to test for statistical significance. Only strains N13c and N7 were significantly different (p<0.05) than N22. (C) Data from (B), with means of apparent silencing-loss rates presented on a scatter plot.\n\nHMR\u03b1::cre contained fourteen well-positioned nucleosomes between the E and I silencers (Figure 1\u2014figure supplement 1). To change nucleosome number within the locus, we deleted DNA corresponding to different sets of nucleosomes (Figure 1B). Notably, removing DNA corresponding to different combinations of well-positioned nucleosomes allowed us to discern whether any effects on silencing stability were due to nucleosome number or to removal of specific DNA sequences. These deletions did not affect the local positions of the remaining nucleosomes as measured by MNase-Seq (Figure 1\u2014figure supplement 1).\n\nAt the limit of models by which nucleosomes transmit memory of transcriptional states, inheritance of a single parental H3-H4 tetramer to a daughter chromatid would be sufficient to template the silenced state. The expected loss-of-silencing rate would thereby reflect the frequency at which a chromatid inherits no marked parental H3-H4 tetramers due to random segregation of these tetramers during replication. For example, considering a hypothetical chromatin domain that has three nucleosomes, one would expect that a given daughter chromatid would have a one-in-eight chance of inheriting no parental tetramers during replication. Therefore, one in eight daughter cells would be expected to lose silencing. This rate would increase exponentially with shorter chromatin domains as the probability of inheriting at least one parental tetramer decreases (Figure 1C). Additionally, if inheritance of two or more parental H3-H4 tetramers was necessary to template the silenced state, the expected loss-of-silencing rate would be even higher.\n\nThe silencing-loss rate predicted by random segregation of H3-H4 tetramers would be approximately 0.006% of cell divisions for full-length HMR\u03b1::cre (Strain N14) (Figure 1D). Previous studies demonstrate that this strain loses silencing in approximately 0.1% of cell divisions (Dodson and Rine, 2015). This difference between expected and observed values could be explained by the existence of other processes besides histone inheritance that potentially destabilize silencing and thereby contribute to the overall silencing-loss rate. In contrast to the full size HMR\u03b1::cre, the smallest allele of HMR\u03b1::cre (Strain N7) would be expected to lose silencing in approximately 1% of cell divisions (Figure 1D). Therefore, if this model were correct, we would expect to see increased sectoring rates in strains with shorter alleles of HMR\u03b1::cre. Surprisingly, decreasing nucleosome number at HMR\u03b1::cre led to a slight decrease in silencing loss as measured by sector frequency (Figure 1E).\n\nTo provide an independent measurement of the silencing-loss rate, we also measured fluorescence profiles of single cells. Cells that have recently lost silencing of cre at HMR\u03b1 contain both RFP and GFP due to GFP expression and the persistence of RFP prior to its degradation and dilution. Using flow cytometry to measure the frequency of cells that contain both RFP and GFP, we confirmed that nucleosome number did not strongly affect silencing-loss rates, and that reduction of nucleosomes might have a slight stabilizing effect on silencing (Figure 1F, Figure 1\u2014figure supplement 2). Thus, the size of HMR\u03b1::cre did not dramatically influence inheritance of the silenced state, in contrast to the expectation from models in which H3-H4 tetramers carry memory of chromatin states through cell divisions. Additionally, we found that changing nucleosome number at HML\u03b1::cre led to only\u00a0a small increase in silencing loss, and that these effects were not due strictly to domain size (Figure 1\u2014figure supplements 3\u20135). Since studies at HML\u03b1 are potentially complicated by its proximity to a telomere, which is also bound by Sir proteins, further studies were performed only at HMR\u03b1.\n\n### Nucleosome number did not affect transmission of epigenetic states in sir1\u2206\n\nThe silencers flanking HMR\u03b1 are bound by three different proteins that collaborate to recruit Sir proteins (Rusche et al., 2003). One possibility for the apparent insensitivity of silencing inheritance to nucleosome number was that the constant recruitment of Sir proteins to these sites was efficient enough to mask a contribution of histone inheritance to inheritance of chromatin states. In this scenario, silencers would be capable of recruiting enough Sir proteins to keep the locus silenced during DNA replication, regardless of histone segregation patterns. Sir1 binds to silencers, and deletion of SIR1 partially disrupts silencer activity, as measured by defects in silencing establishment and silencing heritability (Pillus and Rine, 1989; Dodson and Rine, 2015). We therefore tested if parental H3-H4 tetramer inheritance contributed to transmission of the silenced state when silencer-based recruitment of Sir proteins was impaired by the sir1\u2206 mutation.\n\nWithin individual cells in a population of sir1\u2206 cells, HMR is either transcriptionally silenced or fully expressed. These different states are mitotically heritable: a cell in one state usually gives rise to more cells of that state. To observe this epigenetic phenomenon, we placed the GFP coding sequence into HMR\u03b1, such that it was expressed under control of the \u03b12 promoter. Silencing was monitored by GFP expression at the single-cell level using fluorescence microscopy and flow cytometry. In comparison to control strains in which HMR\u03b1 was fully silenced (SIR+) or expressed (sir4\u2206), HMR\u03b1 was silenced in roughly 99% of sir1\u2206 cells and was expressed in the remaining cells (Figure 2\u2014figure supplements 1 and 2). We also observed different epigenetic states for HML\u03b1::RFP. We used live-cell imaging to monitor divisions of sir1\u2206 cells to identify cells in which silencing of HMR was lost, and other cases in which it was gained (Figure 2A, Video 1). Thus HMR\u03b1::GFP could be used to measure the efficiency of epigenetic inheritance in sir1\u2206, similarly to previous studies (Xu et al., 2006). For simplicity, we named measurements of epigenetic inheritance in sir1\u2206 as the FLuorescent Analysis of Metastable Expression (FLAME) assay, which is commonly implemented by live cell microscopy but is also adapted to flow cytometry as noted in individual experiments.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/51421/elife-51421-fig2-v2.jpg)\n\n**Figure 2.:** (A) Diagram of the FLuorescent Analysis of Metastable Expression (FLAME) assay. In a sir1\u2206 background, GFP replaced the \u03b12 gene so that transcriptional activity of HMR\u03b1::GFP could be monitored at the single-cell level (JRY11478). Loss-of-silencing events were observed in dividing cells by using time-lapse microscopy. Scale bar, 5 \u00b5m. Establishment-of-silencing events were also observed (see Video 1). Silencing defects in different sir mutants are shown by microscopy in Figure 2\u2014figure supplement 1 and by flow cytometry in Figure 2\u2014figure supplement 2. (B) Diagram of nucleosomes in HMR\u03b1::GFP as defined by MNase-Seq (Figure 2\u2014figure supplement 3). Twelve nucleosomes were present in full-length HMR\u03b1::GFP (Strain sN12) (JRY11478). Combinations of nucleosomal DNA were deleted to change the size of the HMR\u03b1::GFP locus; the smallest allele contained six nucleosomes (Strain sN6) (JRY11547). (C) Expected loss-of-silencing rate from random segregation of H3-H4 tetramers to daughter chromatids. See the legend of Figure 1 for a description of how these expected rates were calculated. (D) Observed loss-of-silencing rates using the FLAME assay. Cell divisions were monitored by time-lapse microscopy (n\u00a0>\u00a0900 cell divisions per genotype). Silencing-loss rates were not significantly different (Yates chi-square test, p>0.05 for all pairwise comparisons). (E) Observed establishment-of-silencing rates using the FLAME assay (n\u00a0>\u00a0110 cell divisions per genotype). Silencing establishment rates were not significantly different (Yates chi-square test, p>0.05 for all pairwise comparisons). These strains showed similar frequencies of silenced and expressed cells as measured by flow cytometry in Figure 2\u2014figure supplement 4. Error bars represent 95% confidence intervals.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/51421/elife-51421-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Fluorescence images of HMR\u03b1::GFP strains that were SIR+ (JRY11474), sir4\u2206 (JRY11496), or sir1\u2206 (JRY11478). Cells were grown to log-phase before imaging. Scale bar, 5 \u00b5m.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/51421/elife-51421-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** Distribution of fluorescence intensity per cell as measured by flow cytometry after 24 hr of log-phase growth. (A) HML\u03b1::RFP expression was measured in SIR+ (JRY11472), sir4\u2206 (JRY11494), or sir1\u2206 (JRY11476). (B) HMR\u03b1::GFP expression was measured in SIR+ (JRY11474), sir4\u2206 (JRY11496), or sir1\u2206 (JRY11478). Because very few cells expressed HMR\u03b1::GFP in sir1\u2206, zoomed profiles are provided in (C). At least 50,000 cells were analyzed for each strain.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/51421/elife-51421-fig2-figsupp3-v2.jpg)\n\n**Figure 2\u2014figure supplement 3.:** MNase-Seq was performed on the strain with full-length HMR\u03b1::GFP in sir1\u2206 (JRY11478). Midpoints of nucleosome-sized fragments were calculated, plotted, and smoothed.\n\n![Figure 2\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/51421/elife-51421-fig2-figsupp4-v2.jpg)\n\n**Figure 2\u2014figure supplement 4.:** Distribution of fluorescence intensity per cell as measured by flow cytometry after 24 hr of log-phase growth. (A) HMR\u03b1::GFP expression was measured in Strains sN12 (JRY11478) through sN6 (JRY11547). (B) Zoomed profiles of flow cytometry profiles in (A). The dashed line indicates the mean fluorescence intensity of expressed cells in sN12, for comparison to the mean-fluorescence-intensity values of other strains. (C) Distribution of fluorescence intensity per cell for cells grown at log for 12 hr in 5 mM Nicotinamide (NAM). NAM inhibits Sir2 activity and causes cells to be fully expressed at HMR. Strains sN12 through sN6 were analyzed. The dashed line indicates the mean fluorescence intensity of expressed cells in sN12, for comparison to other strains. Because the smaller peaks at lower fluorescence intensities were not visible in sir4\u2206 (see Figure 2\u2014figure supplement 2), we considered them an artifact of NAM treatment. At least 50,000 cells were analyzed for each strain.\n\n![Video 1.](https://cdn.elifesciences.org/articles/51421/elife-51421-video1.mp4.jpg)\n\n**Video 1.:** HMR\u03b1::GFP sir1\u2206 (JRY11478) cells were grown to log-phase in liquid medium and subsequently imaged by time-lapse microscopy. A loss-of-silencing event is visible near the center of the field of view at 4 hr, and an establishment-of-silencing event is visible near the upper-left corner at 5 hr.\n\nTo test the prediction that chromatin domain size affects silencing heritability with the FLAME assay, we removed DNA corresponding to sets of nucleosomes in the HMR\u03b1::GFP locus (Figure 2B, Figure 2\u2014figure supplements 3 and 4). As before, models in which nucleosomes were carriers of epigenetic memory predicted that shorter chromatin domains would have a higher rate of silencing loss (Figure 2C). Using time-lapse fluorescence microscopy to monitor transcriptional states in individual cells and their descendants as they divided, we found that nucleosome number did not affect the frequency of silencing loss (Figure 2D). Because the expressed state is also heritable, with occasional switches to the silenced state, we also asked if the heritability of the expressed state was influenced by the number of nucleosomes in the locus. The frequency of silencing establishment was similar between strains with different numbers of nucleosomes at HMR\u03b1::GFP (Figure 2E). Therefore, even in a background with defective silencer activity, chromatin-domain size did not strongly influence silencing dynamics. These findings argued against models in which parental H3-H4 tetramers and their modifications are required for the epigenetic inheritance of gene expression states in Saccharomyces.\n\n### Replisome defects affected epigenetic inheritance\n\nAn orthogonal approach to test the role of histones in carrying epigenetic memory would be to consistently bias parental H3-H4 tetramer inheritance to one daughter chromatid, leaving the other daughter chromatid with fewer parental H3-H4 tetramers. Recent reports demonstrate conserved roles of two replisome components, Dpb3 and Mcm2, in producing a more symmetric distribution of parental H3-H4 tetramers between the leading and lagging strands. Specifically, dpb3\u2206 causes biased parental H3-H4 tetramer inheritance to the lagging strand (Yu et al., 2018) and a set of point mutations in MCM2 (mcm2-3A) causes biased parental H3-H4 tetramer inheritance to the leading strand (Petryk et al., 2018; Gan et al., 2018).\u00a0A complementary study found that local histone H4 inheritance in a small chromatin domain was moderately reduced in both the dpb3\u2206 and mcm2-3A single mutants, and severely reduced in the dpb3\u2206 mcm2-3A double mutant (Schlissel and Rine, 2019). Together, these studies demonstrate that Dpb3 and Mcm2 are necessary for efficient inheritance of parental H3-H4 tetramers to both daughter chromatids during DNA replication.\n\nIf parental H3-H4 tetramer inheritance contributes to transmission of chromatin states, we would predict more loss-of-silencing events in strains with defects in tetramer inheritance. To test this idea, we measured silencing loss in replisome mutants using the CRASH assay (Figure 3A). The dpb3\u2206 and mcm2-3A single mutants exhibited higher silencing-loss rates, consistent with previous studies done at HML (Yu et al., 2018; Gan et al., 2018), and the dpb3\u2206 mcm2-3A double mutant lost silencing more frequently than either single mutant. Similar results were obtained by using flow cytometry to measure silencing-loss rates (Figure 3B). These data were consistent with a model in which inheritance of parental H3-H4 tetramers could contribute to inheritance of the silenced state at HMR. However, the data were also compatible with the possibility that heterochromatin assembled in such mutants was simply unstable for reasons independent of defects in its inheritance. Additionally, since previous studies did not specifically test the effects of Dpb3 and Mcm2 on histone inheritance within heterochromatin, any interpretations of silencing defects operated under the assumption that these replisome components act similarly between heterochromatin and euchromatin.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/51421/elife-51421-fig3-v2.jpg)\n\n**Figure 3.:** (A) Representative CRASH colonies for DPB3 MCM2 (JRY11471), dpb3\u2206 MCM2 (JRY11562), DPB3 mcm2-3A (JRY11591), and dpb3\u2206 mcm2-3A (JRY11592). Scale bar, 1 mm. (B) Quantification of apparent silencing-loss rates of strains in (A), as described in Materials and methods. Data are means\u00a0\u00b1\u00a0SD (n\u00a0=\u00a06 independent cultures). ANOVA and Tukey tests were used to test statistical significance. DPB3 MCM2 was significantly different than dpb3\u2206 MCM2 and DPB3 mcm2-3A (p<0.05 each), and dpb3\u2206 mcm2-3A was significantly different than dpb3\u2206 MCM2 and DPB3 mcm2-3A (p<0.05 each).\n\nIt is possible that parental H3-H4 tetramer inheritance affects both transient loss-of-silencing events, as detected by the CRASH assay, and heritability of epigenetic states. Testing this possibility was important because the currently unidentified epigenetic information that determines expression states in sir1\u2206 is transmitted locally at HML and HMR, respectively, rather than being transmitted in trans from processes elsewhere in the cell (Xu et al., 2006). If parental H3-H4 tetramers were the crucial local factors that transmitted this information, we would predict that disrupted tetramer inheritance would cause more loss-of-silencing events in sir1\u2206. To test this possibility, we generated replisome mutant strains in combination with sir1\u2206 and evaluated the inheritance of transcriptional states using two different FLAME assay measurements: Fluorescence-Activated Cell Sorting (FACS) and live-cell microscopy.\n\nPopulations of dpb3\u2206, mcm2-3A, and dpb3\u2206 mcm2-3A mutants all showed a mix of cells that were silenced or expressed at HMR\u03b1::GFP; all three mutant strains also showed a higher frequency of expressed cells than wild\u00a0type (Figure 4\u2014figure supplement 1, Table 1). Because silencing-loss rates and silencing-establishment rates both affect the frequency of cells in which HMR is silenced or expressed, one or both of these rates were presumably different in replisome mutants. To measure these rates, we used FACS to sort cells from each strain into two separate populations of HMR-silenced and HMR-expressed cells, and used flow cytometry to monitor the rates at which these initial sorted populations relaxed back to a mixed population of silenced and expressed cells (Figure 4A). These relaxation rates, and the frequency of silenced cells at equilibrium, were products of competing silencing-loss and silencing-establishment rates. By using these relaxation rates to calculate silencing-loss rates (Figure 4B, Figure 4\u2014figure supplement 2), we observed that dpb3\u2206 and mcm2-3A had higher loss-of-silencing rates than wild\u00a0type (Figure 4C). The dpb3\u2206 mcm2-3A double mutant had a higher loss rate than the single mutants. Similar loss trends were observed using time-lapse fluorescence microscopy (Figure 4D), albeit with overall higher loss rates than those seen with FACS. Together, these data suggested that faithful inheritance of parental H3-H4 tetramers helped transmit the silenced state of HMR. However, we also noted that the vast majority of silenced cells still faithfully transmitted the silenced state in the replisome mutant backgrounds.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/51421/elife-51421-fig4-v2.jpg)\n\n**Figure 4.:** (A) FACS-based approach to measure switching rates of HMR\u03b1::GFP in sir1\u2206. Populations of silenced cells were isolated and allowed to divide; as silencing loss occurred, the percentage of expressed cells in the population increased. The distributions of fluorescence intensity per cell at equilibrium are shown in Figure 4\u2014figure supplement 1. (B) For DPB3 MCM2 (blue) (JRY11471), dpb3\u2206 MCM2 (black) (JRY11550), DPB3 mcm2-3A (green) (JRY11589), and dpb3\u2206 mcm2-3A (red) (JRY11590), silenced cells were isolated at t\u00a0=\u00a00 hr, allocated into three separate populations each, and monitored over time. At each time-point, the percentage of expressed cells in each population was determined by flow cytometry (for an example, see Figure 4\u2014figure supplement 2). (C) Silencing-loss rates calculated from (B), as explained in Materials and methods. (D) Silencing-loss rates calculated by monitoring dividing cells with time-lapse microscopy (n\u00a0>\u00a0550 cell divisions per genotype). (E) Similar to (B), except expressed cells were sorted and monitored over time. (F) Silencing-establishment rates calculated from (E), as explained in Materials and methods. (G) Silencing-establishment rates calculated by monitoring dividing cells with time-lapse microscopy (n\u00a0>\u00a0100 cell divisions per genotype). GFP expression levels in expressed cells were calculated by flow cytometry and shown in Figure 4\u2014figure supplement 3. Error bars represent 95% confidence intervals. Two-tailed t-tests were used in statistical analysis of switching rates by sorting, and Yates chi-square tests were used for microscopy (*p<0.05).\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/51421/elife-51421-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Distribution of fluorescence intensity per cell as measured by flow cytometry after 24 hr of log-phase growth. HMR\u03b1::GFP expression was measured in DPB3 MCM2 (JRY11471), dpb3\u2206 MCM2 (JRY11550), DPB3 mcm2-3A (JRY11589), and dpb3\u2206 mcm2-3A (JRY11590). At least 50,000 cells were analyzed for each strain.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/51421/elife-51421-fig4-figsupp2-v2.jpg)\n\n**Figure 4\u2014figure supplement 2.:** Silenced and expressed cells were sorted at t\u00a0=\u00a00 hr and allowed to divide at log-phase. Samples were taken at different time-points and analyzed by flow cytometry. These data correspond to experiments shown in Figure 4B and E. At least 700 cells were analyzed for each time-point.\n\n![Figure 4\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/51421/elife-51421-fig4-figsupp3-v2.jpg)\n\n**Figure 4\u2014figure supplement 3.:** DPB3 MCM2 (JRY11478), dpb3\u2206 MCM2 (JRY11550), DPB3 mcm2-3A (JRY11589), and dpb3\u2206 mcm2-3A (JRY11590) were grown at log phase for 12 hr in 5 mM Nicotinamide (NAM) and HMR\u03b1::GFP expression was measured with flow cytometry. The geometric mean intensity of GFP for each strain was calculated using FlowJo software. Data are means\u00a0\u00b1\u00a0SD (n\u00a0=\u00a03 independent cultures). ANOVA and Tukey tests showed GFP expression levels in DPB3 MCM2 were significantly different than those seen in dpb3\u2206 MCM2, DPB3 mcm2-3A, and dpb3\u2206 mcm2-3A (p<0.05 each). GFP expression in dpb3\u2206 MCM2 was not significantly different than dpb3\u2206 mcm2-3A (p>0.05).\n\n**Table 1.**\n Comparison of epigenetic switching rates and proportion of silenced cells at equilibrium.Data for DPB3 MCM2 (JRY11471), dpb3\u2206 MCM2 (JRY11550), DPB3 mcm2-3A (JRY11589), and dpb3\u2206 mcm2-3A (JRY11590) in the FLAME assay was extracted from Figure 4. The percentages of Silenced (S) and Expressed (E) cells at equilibrium were determined from Figure 4B. Silencing-loss rates (kon, gen\u22121) correspond to data from Figure 4C and silencing-establishment rates (koff, gen\u22121) correspond to data from Figure 4F.\u00a0If\u00a0kon\u00a0and\u00a0koff rates accurately predict the percentages of silenced and expressed cells at equilibrium, then E/S should be similar to kon/koff.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Genotype</th>\n      <th>Silenced (S)</th>\n      <th>Expressed (E)</th>\n      <th>S \u2192 E (kon, gen\u22121)</th>\n      <th>E \u2192 S (koff, gen\u22121)</th>\n      <th>E/S</th>\n      <th>kon/koff</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>DPB3 MCM2</td>\n      <td>99</td>\n      <td>1</td>\n      <td>0.003</td>\n      <td>0.11</td>\n      <td>0.01</td>\n      <td>0.031</td>\n    </tr>\n    <tr>\n      <td>dpb3\u2206 MCM2</td>\n      <td>96</td>\n      <td>4</td>\n      <td>0.014</td>\n      <td>0.78</td>\n      <td>0.042</td>\n      <td>0.019</td>\n    </tr>\n    <tr>\n      <td>DPB3 mcm2-3A</td>\n      <td>91</td>\n      <td>9</td>\n      <td>0.018</td>\n      <td>0.17</td>\n      <td>0.094</td>\n      <td>0.107</td>\n    </tr>\n    <tr>\n      <td>dpb3\u2206 mcm2-3A</td>\n      <td>90</td>\n      <td>10</td>\n      <td>0.033</td>\n      <td>0.5</td>\n      <td>0.115</td>\n      <td>0.066</td>\n    </tr>\n  </tbody>\n</table>\n\nWe also asked if replisome mutants had differences in the frequency of silencing-establishment events. Curiously, any strain containing dpb3\u2206 had an increased establishment rate, whereas mcm2-3A had minimal, if any, effects on establishment rate (Figure 4E\u2013G). Additionally, any strain containing dpb3\u2206 showed elevated levels of HMR\u03b1::GFP expression in unsilenced cells, as measured by flow cytometry (Figure 4\u2014figure supplement 3). Because dpb3\u2206 cells more readily established silencing, we inferred that the expressed state was less efficiently inherited. Therefore, Dpb3 contributed to the inheritance of the expressed state of HMR as well as to the silenced state.\n\n### Variations in nucleosome number in replisome mutant backgrounds\n\nThough the rate of silencing loss increased in replisome mutant backgrounds, the large majority of silenced cells still faithfully transmitted the silenced state through cell divisions. Indeed, though dpb3\u2206 and mcm2-3A single mutants exhibit asymmetric parental H3-H4 tetramer inheritance (Yu et al., 2018; Petryk et al., 2018), it is likely that this asymmetry is not complete and some parental H3-H4 tetramers are still stochastically transmitted to each daughter chromatid during DNA replication. Similarly, the dpb3\u2206 mcm2-3A double mutant exhibits residual local inheritance of histone H4 (Schlissel and Rine, 2019). We reasoned that, if a daughter chromatid consistently inherits fewer parental H3-H4 tetramers and thereby loses the silenced state more frequently, an additional reduction in the size of a chromatin domain would cause that daughter chromatid to inherit even fewer marked parental H3-H4 tetramers and experience loss-of-silencing events even more frequently. Therefore, if parental H3-H4 tetramers carry epigenetic memory, we would expect loci with fewer nucleosomes to exhibit more loss-of-silencing events in replisome mutant backgrounds. To test this idea, we used the FLAME assay on nucleosome-number mutants in dpb3\u2206 and dpb3\u2206 mcm2-3A strains (Figure 5A, Figure 5\u2014figure supplement 1). There was no clear correlation between silencing-loss rates and nucleosome number in these sensitized backgrounds (Figure 5B). Establishment-of-silencing rates were also not strongly affected, though there was a small increase in the establishment rate with fewer nucleosomes in dpb3\u2206 mcm2-3A (Figure 5C). Therefore, even when parental H3-H4 tetramer inheritance was disrupted and the number of parental H3-H4 tetramers available for inheritance at HMR was decreased, cells faithfully transmitted epigenetic transcriptional states.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/51421/elife-51421-fig5-v2.jpg)\n\n**Figure 5.:** (A) Diagram of nucleosomes in HMR\u03b1::GFP, as seen in Figure 2B. As before, combinations of nucleosomal DNA were deleted to change the size of HMR\u03b1::GFP; the largest allele contained twelve nucleosomes (Strain sN12) (JRY11478) and the smallest allele contained six nucleosomes (Strain sN6) (JRY11547). Frequencies of silenced and expressed cells in these strains were measured by flow cytometry and shown in Figure 5\u2014figure supplement 1. (B) Loss-of-silencing rates in the FLAME assay. Replisome mutant strains DPB3 MCM2 (JRY11478) (white), dpb3\u2206 MCM2 (JRY11550) (gray), and dpb3\u2206 mcm2-3A (JRY11590) (dark gray) with different numbers of nucleosomes at HMR\u03b1::GFP were analyzed by time-lapse microscopy (n\u00a0>\u00a0300 cell divisions for each genotype). (C) Establishment-of-silencing rates for the same strains as in (B), calculated by time-lapse microscopy (n\u00a0>\u00a080 cell divisions per genotype). Loss and establishment rates of DPB3 MCM2 (JRY11478) are identical to those in Figure 2D,E and shown here for convenience. Error bars represent 95% confidence intervals.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/51421/elife-51421-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** Distribution of fluorescence intensity per cell as measured by flow cytometry after 24 hr of log-phase growth. This analysis was performed on DPB3 MCM2 (JRY11478) (A), dpb3\u2206 MCM2 (JRY11550) (B), and dpb3\u2206 mcm2-3A (JRY11590) (C) with different numbers of nucleosomes at HMR\u03b1::GFP. At least 50,000 cells were analyzed for each strain. Data in (A) corresponds to data in Figure 2\u2014figure supplement 4A.\n\n## Discussion\n\nHeterochromatin is frequently characterized by specific histone modifications bound by silencing proteins; these components are critical to mechanisms of silencing and have long been considered as mediators of epigenetic inheritance. A popular model is that modified H3-H4 tetramers are heritable units of epigenetic information that are randomly segregated between daughter chromatids during DNA replication (Ramachandran and Henikoff, 2015). Models founded on random segregation of parental H3-H4 tetramers predict that shorter chromatin domains would decrease the heritability of chromatin states in those domains. Contrary to the prediction, we found that shortening the silenced chromatin domain at HMR had no significant effects on silencing-loss rate as measured by the CRASH and FLAME assays, even in mutants lacking a component of the silencer-binding complex and in mutants with defective versions of two different regulators of parental H3-H4 tetramer segregation.\n\n### Evidence that H3-H4 tetramers did not carry epigenetic memory\n\nRemoval of silencers from heterochromatin via induced recombination demonstrates that silencers are necessary for maintenance of the silenced state. Specifically, induced silencer excision from HMR causes rapid loss of silencing in arrested cells (Cheng and Gartenberg, 2000). Studies at other loci in S. cerevisiae and Drosophila show that removal of silencers permits maintenance of silencing in arrested cells, but causes loss of silencing once the same cells subsequently complete one or two rounds of DNA replication (Holmes and Broach, 1996; Laprell et al., 2017). Therefore, the presence of modified histones is not sufficient for silencing maintenance or heritability, depending on the example under consideration. Indeed, given that silencers are constantly recruiting Sir proteins to these loci, any role of H3-H4 tetramers in transmission of epigenetic information might be hard to detect.\n\nWe considered the possibility that silencer activity masks an underlying contribution of H3-H4 tetramer inheritance to silencing inheritance. However, the weakened silencer activity in sir1\u2206 mutants did not reveal a sensitivity of silencing inheritance to the size of the silenced domain at HMR. Importantly, epigenetic states of HML and HMR in sir1\u2206 are a property of the locus rather than the cell, demonstrating that factors that determine these epigenetic states are inherited locally at HML and HMR respectively (Xu et al., 2006). Similar studies of an epigenetically-inherited heterochromatin state in Arabidopsis also demonstrate that the relevant epigenetic information is carried in cis (Berry et al., 2015). Additionally, epigenetic inheritance of transcriptional states in heterochromatin is commonly accompanied by the ability to switch stochastically between states, a feature that implies the existence of imperfectly heritable epigenetic information. Though modified H3-H4 tetramers could theoretically be cis-acting, imperfectly heritable units of information, our evidence to the contrary suggests that other cis-acting factors determine the epigenetic state of HMR in sir1\u2206. Given the importance of silencers in inheritance of the silenced chromatin state, one possibility is that the silencer complex self-templates by cooperative oligomerization of silencing factors, and that stochastic changes in epigenetic states reflect the formation or dissolution of such a silencer complex.\n\n### Addressing the possibility that tetramer inheritance is not random\n\nClassic studies of chromatin replication indicate that parental H3-H4 tetramers are randomly segregated between daughter chromatids during DNA replication. For example, chromatin replicated in the presence of cycloheximide, which blocks the synthesis of new histones, produces daughter chromatids with roughly half the number of nucleosomes, and these nucleosomes appear randomly dispersed along both daughter chromatids (Sogo et al., 1986; Cusick et al., 1984). Though our experiments built on these classic findings, it is also possible that parental H3-H4 tetramers may not be randomly segregated genome wide, or at HMR in particular. For example, it was possible that heterochromatin contained factors that facilitated alternating inheritance of tetramers between the leading and lagging strands. In this case, even if H3-H4 tetramers were to act as the sole units of epigenetic information, decreasing chromatin domain size might not affect the rate of silencing loss at HMR.\n\nIf H3-H4 tetramers carry epigenetic information through DNA replication, mutations that reduce tetramer inheritance would be expected to increase the frequency of silencing loss. Studies describe roles of Dpb3 and Mcm2 in heterochromatic silencing at HML (Yu et al., 2018; Gan et al., 2018), and inheritance of epigenetic states at a synthetic telomere (Iida and Araki, 2004; Foltman et al., 2013). Using the CRASH and FLAME assays, we found mild but significant increases in HMR silencing-loss rates in both dpb3\u2206 and mcm2-3A single mutants. Additionally, the dpb3\u2206 mcm2-3A double mutant exhibited higher silencing-loss rates than either of the single mutants. Together, these effects suggested that reduced tetramer inheritance caused mild defects in silencing heritability. Though deacetylated H4K16 is crucial for silencing, other modifications such as H3K56 acetylation also affect silencing (Hyland et al., 2005; Xu et al., 2007) and reduced inheritance of these modifications may hinder their functions. Considering the variety of histone modifications that parental H3-H4 tetramers can carry through DNA replication, it was striking that cells with moderate or severe reductions in inheritance of parental H3-H4 tetramers still exhibited efficient inheritance of the silenced state.\n\nThough replisome mutants exhibit defects in parental H3-H4 tetramer inheritance, some tetramers are still transmitted to both daughter chromatids in replisome mutant backgrounds (Yu et al., 2018; Gan et al., 2018; Schlissel and Rine, 2019). Therefore, there are still parental tetramers that are theoretically capable of carrying epigenetic information to both daughter chromatids in the dpb3\u2206, mcm2-3A, and dpb3\u2206 mcm2-3A mutants. Given that all replisome mutants tested showed increased silencing-loss rates, further reduction in the number of parental H3-H4 tetramers available for transmission to daughter chromatids should cause even higher rates of silencing loss. However, we saw no significant effects of HMR size on the silencing-loss rate in replisome mutant backgrounds. Therefore, cells with both reduced parental H3-H4 tetramer inheritance and a reduction in the number of tetramers available for inheritance at HMR exhibited a surprisingly robust ability to transmit the silenced state. These data strongly suggested that inheritance of parental H3-H4 tetramers has little or no impact on epigenetic inheritance of the silenced state of HMR.\n\n### Epigenetic inheritance of the expressed state\n\nThe expressed state of HMR in sir1\u2206 cells is formally an epigenetic state: it is heritable through cell divisions and can stochastically switch to the silenced state. One possibility is that the expressed state of HMR depends on the existence of heritable information, similarly to the silenced state. Histone modifications associated with active transcription can be transmitted through DNA replication (Alabert et al., 2015; Rever\u00f3n-G\u00f3mez et al., 2018) and multiple transcription factors can bind to the histone modifications they generate (Jacobson et al., 2000; Owen et al., 2000). Therefore, histone modifications may form positive feedback loops with both silencing machinery and transcription factors. Indeed, a model that incorporates these positive feedback loops and parental H3-H4 tetramer inheritance generates robust bistable chromatin states (Dodd et al., 2007). This model also predicts that random segregation of parental H3-H4 tetramers would lead to loss-of-chromatin-state events, and that decreasing chromatin domain size would also decrease the heritability of both the expressed and silenced states. However, we found that shorter versions of HMR did not strongly affect inheritance of the expressed state of HMR.\n\nAlternatively, if parental H3-H4 tetramers carry memory of the expressed state, mutations that disrupt parental H3-H4 tetramer inheritance would be expected to increase the rate of silencing establishment. Curiously, dpb3\u2206 exhibited a\u00a0~3-fold increase in the rate of silencing establishment and mcm2-3A had no observable effect\u00a0(see\u00a0Figure 4G). These data may suggest that parental tetramer inheritance facilitates heritability of the expressed state, though such an explanation could not account for the mcm2-3A phenotype. Alternatively, these data may suggest that inheritance of the expressed state is influenced by a function of Dpb3 that is separate from its role in tetramer inheritance. It is also important to note that dpb3\u2206 but not mcm2-3A led to elevated levels of GFP expression when HMR\u03b1::GFP was fully expressed. This finding is paradoxical, as one would expect elevated transcription to inhibit silencing establishment, rather than facilitate it. However, recruitment of the transcriptional activator Ppr1 to HMR causes both increased transcription in expressed cells and an increased establishment rate in sir1\u2206 (Xu et al., 2006).\n\nTogether, our results suggested that the fidelity of H3-H4 tetramer inheritance has minimal consequences for heritability of the silenced state and may affect heritability of the expressed state in some contexts. These findings raised doubts regarding the model in which histones are significant carriers of epigenetic memory in S. cerevisiae. As such, future studies that continue to examine histone-based memory models will be complemented by studies on other possible mechanisms of transcriptional memory.\n\n## Materials and methods\n\n### Yeast strains\n\nThe strains and oligonucleotides used in this study are listed in Supplementary files 1 and 2, respectively. All strains were derived from the W303 background. CRASH assay strains, which contained HMR\u03b1, hmr\u03b12\u2206::cre, ura3\u2206::loxP::yEmRFP:tCYC1:KanMX:loxP:yEGFP:tADH1 or hml\u03b12\u2206::cre, ura3\u2206::loxP::yEmRFP:tCYC1:HygMX:loxP:yEGFP:tADH1 were generated as described previously (Dodson and Rine, 2015). FLAME assay strains were generated with the following approach. To generate hml\u03b12\u2206::yEmRFP, a K. lactis URA3 swap was performed to replace the \u03b12 coding sequence with yEmRFP coding sequence. The hml\u03b12\u2206::yEmRFP fwd/rev primers were used for integration of yEmRFP in the final step. To generate HMR\u03b1, hmr\u03b12\u2206::yEGFP, a fragment spanning a\u00a0portion of hml\u03b12\u2206::yEGFP was amplified using hml\u03b12\u2206::yEGFP fwd/rev primers and swapped into HMRa.\n\nTo delete DNA corresponding to nucleosomes at HMR\u03b1 and HML\u03b1, CRISPR/Cas9 was employed as previously described (Lee et al., 2015). Each deletion or repair fwd/rev primer set contained two partially overlapping primers that were amplified by PCR prior to use. The HMR-E-proximal sgRNA was used to induce Cas9 cutting between the HMR-E silencer and cre, and N14 to N12 deletion fwd/rev was used to delete DNA corresponding to two nucleosomes in this region. This sgRNA and oligo set was also used to convert sN12 to sN10 in the FLAME strain background. The HMR-I-proximal sgRNA, which cuts between the HMR-I silencer and cre, was used with N14 to N10 deletion fwd/rev (to convert N14 to N10, and sN12 to sN8) or with N14 to N9 deletion fwd/rev (to convert N14 to N9). For HML\u03b1, the HML-E-proximal sgRNA was used to induce Cas9 cutting between the HML-I silencer and cre, and used with N22 to N19a deletion fwd/rev (to convert N22 to N19a) or N22 to N16a deletion fwd/rev (to convert N22 to N16a). The HML-I-proximal sgRNA was used to induce Cas9 cutting between the HML-E silencer and cre, and was used with N22 to N19b deletion fwd/rev (to convert N22 to N19b) or N22 to N16c deletion fwd/rev (to convert N22 to N16c) or N22 to N13c deletion fwd/rev (to convert N22 to N13c). Deletions were confirmed by junction primers and sequencing. To generate mutants with combinations of nucleosome set deletions, CRISPR/Cas9 technology was applied (as described above) to strains with one nucleosome set deletion already made.\n\nTo generate dpb3\u2206, the DPB3 sgRNA was used with Cas9 to cut within DPB3 and DPB3 deletion fwd/rev was used to delete the coding sequence. To generate mcm2-3A, the MCM2 sgRNA was used with Cas9 to cut 244 bp into the MCM2 coding sequence and mcm2-3A repair fwd/rev was used to generate the appropriate point mutations (Y79A Y82A Y91A). Mutations were confirmed by sequencing.\n\n### Colony growth and imaging\n\nTo generate colonies for analysis by the CRASH assay, RFP-expressing cells were diluted and plated at a density of\u00a0~10 cells/plate (CSM-Trp (Sunrise Science Products, San Diego, CA), 1% agar). After 5 days of growth, colonies were imaged using a Leica M205 FA fluorescence stereomicroscope (Leica Camera AG, Wetzlar, Germany) equipped with a Leica DFC3000G CCD camera, a Leica PLANAPO 0.63x objective, ET RFP filter (Leica 10450224), ET GFP filter (Leica 10447408), and Leica Application Suite X (LAS X) imaging software. At least ten colonies were imaged per genotype.\n\n### Live-cell imaging\n\nCells were grown to saturation in CSM (Sunrise Science Products) at 30\u00b0C overnight. These cells were then back-diluted in 5 ml CSM and grown to mid-log phase over 6 hr. 500 \u00b5l was transferred to a microfuge tube and sonicated at 20% for 15 s (Branson Ultrasonics Digital Sonifier 100-132-888R with Sonicator Tip 101-135-066R) (Branson Ultrasonics, Fremont, CA) to break up clumps of cells. 5 \u00b5l of sonicated cells were spotted onto a CSM plate (1% agar) and allowed to soak into the agar. When dry, a sterile spatula was used to cut a 1 cm\u00a0\u00d71 cm agar square surrounding the cell patch. The square was lifted out of the plate, inverted, and placed in a 35 mm glass bottom dish (Thermo Scientific 150682) (Thermo Fisher Scientific, Waltham, MA). Cells were imaged using a Zeiss Z1 inverted fluorescence microscope with a Prime 95B sCMOS camera (Teledyne Photometrics, Tucson, AZ), Plan-Apochromat 63x/1.40 oil immersion objective (Zeiss, Oberkochen, Germany), filters, MS-2000 XYZ automated stage (Applied Scientific Instrumentation, Inc, Eugene, OR), and Micro-Manager imaging software (Open Imaging, San Fransisco, CA). Given that cells were pressed between the agar and glass, the cells were all in the same focal plane and Z-stacks were not used.\n\nFor time-lapse microscopy (i.e. Figure 2D), samples were kept at 30\u00b0C and humidified with a P-Set 2000 Heated Incubation Insert (PeCon, Erbach, Germany). Time-lapse experiments involved brightfield and fluorescence imaging of 16 different fields per sample, and images were taken every 10 min for 10 hr. Subsequent analysis of cell divisions was done in ImageJ (NIH, Bethesda, MD). To measure epigenetic switching rates in the FLAME assay, cell divisions and switching events were manually counted and the counter was blind to the genotype (single-blind study). This counting was performed only on cells that could be clearly distinguished from each other. If a mother and daughter cell pair switched simultaneously, we counted this as one switching event that probably appeared as two events due to the lag time in yEGFP expression or degradation.\n\n### Flow cytometry\n\nTo measure fluorescence intensities per cell in the CRASH and FLAME assays, a BD LSR Fortessa cell analyzer (BD Biosciences, San Jose, CA) with a FITC filter (for GFP) and a PE-TexasRed filter (for RFP) was used. Subsequent analysis was performed with FlowJo software.\n\nFor quantification of silencing-loss rates in the CRASH assay (Figure 1F; Figure 3B),\u00a0cells were first streaked out to form single colonies. Six colonies per genotype were added to CSM-Trp media (Sunrise Science Products) in a 96-well plate (Corning CLS3788) (Corning Inc, Corning, NY) and grown to saturation overnight in an incubating microplate shaker (VWR 12620\u2013930) (VWR International, Radnor, PA) at 30\u00b0C. These samples were then back-diluted and grown to mid-log phase over 6 hr. GFP and RFP expression were then analyzed by flow cytometry (n\u00a0>\u00a04000 cells per sample). Distinct populations of RFP+ GFP- (which had not lost silencing), RFP+ GFP+ (which had recently lost silencing), and RFP- GFP+ (which had lost silencing less recently) were observed. The apparent silencing-loss rate was calculated as the number of RFP+ GFP+ cells divided by the number of RFP+ GFP+ cells and RFP+ GFP- cells. Measurements from independent cultures were considered as biological replicates.\n\nFor calculating the frequency of silenced and expressed cells at equilibrium in the FLAME assay, cells were first streaked out to generate single colonies. Three colonies per genotype were added to CSM media in a 96-well plate and grown to saturation overnight. These samples were then serially back-diluted in CSM media in 96-well plates and grown at 30\u00b0C. After twelve hours, the serial dilutions had a range of cell densities; the dilution that was closest to\u00a0~1 O.D. was again back-diluted in CSM media and grown at 30\u00b0C for another 12 hr. At this point, wells close to\u00a0~1 O.D. contained cells that had been growing at log-phase for approximately 24 hr. These cells were analyzed by flow cytometry. Because three populations were analyzed per genotype, the most representative profiles of silenced and expressed cells were used for figures. We considered these populations as biological replicates.\n\nTo calculate GFP expression levels in expressed cells in the FLAME assay, cells were streaked out for single colonies and three colonies per genotype were grown overnight in CSM + 5 mM Nicotinamide (NAM) (Sigma-Aldrich, St. Louis, MO). These samples were then back-diluted in CSM + 5 mM NAM and grown at 30\u00b0C for 12 hr. Samples at\u00a0~1 O.D. were analyzed by flow cytometry. For Figure 2\u2014figure supplement 4,\u00a0the most representative profiles of the three profiles generated per strain were shown. For Figure 4\u2014figure supplement 3, the geometric mean intensity of GFP per cell (excluding cells that formed a smaller, artifactual peak at a lower GFP intensity) was calculated for each population using FlowJo software. Independent cultures were considered as biological replicates.\n\nFACS was utilized in the FLAME assay to calculate switching rates between epigenetic states in Figure 4. To perform this experiment, cells from each genotype were serially diluted in CSM media and grown at 30\u00b0C. After 12 hr, dilutions closest to\u00a0~1 O.D. were sorted into GFP- and GFP+ populations using a BD FACSAria Fusion cell sorter (BD Biosciences) equipped with a FITC filter for GFP. Gates were calibrated from SIR+ (JRY11474) and sir4\u2206 (JRY11496) cells. For each sample, 150,000 GFP- cells were sorted into one tube and 30,000 GFP+ cells were sorted into another. Each sorted population was divided evenly into three populations and grown in CSM in a 96-well plate at 30\u00b0C. Serial back-dilutions were used to maintain constant log-phase growth over two days. Time-points were taken by removing a fraction of cells from each population and fixing them in a 4% paraformaldehyde solution (4% Paraformaldehyde, 3.4% Sucrose) for 15 min at room temperature. Fixed cells were resuspended in GFP fix buffer (100 mM KPO4 pH 7.4, 1.2 M Sorbitol) and kept at 4\u00b0C. Once the experiment was complete, fixed cells from different time-points were analyzed by flow cytometry (n\u00a0>\u00a0500 cells per sample) and FlowJo software. The percent of GFP+ cells for each sample over time is shown in Figure 4B and E. Because the initial sorting event required\u00a0~20 min per sample, the time of initial sorting (t\u00a0=\u00a00 hr) was different between samples; this made the time points between samples slightly staggered as seen in Figure 4B and E. Because cells were divided into subpopulations after the initial sorting, these subpopulations were considered as technical replicates.\n\n### Switching rate calculation from cell sorting\n\nThe following equations were used to model the dynamics of switching rates between epigenetic states in sir1\u2206. We considered the balance of GFP+ and GFP- cells over time, and assumed that the birth and death rates of the two populations are similar. Combining the balances and introducing the ratio variable $x$, we can derive the following equation that describes how a population of GFP+ cells and GFP- cells would move towards equilibrium over time:\n\n$$\n\\frac{1}{k_{ON}+k_{OFF}}\\frac{dx_{ON}}{dt}+x_{ON}=\\frac{k_{ON}}{k_{ON}+k_{OFF}}\n$$\n\n$k_{ON}$ is the loss rate per hour, $k_{OFF}$ is the establishment rate per hour, $x_{ON}$ is the fraction of GFP+ cells at a given time, and $t$ is time. Solving the differential equation for $x_{ON}$ yields:\n\n$$\nx_{ON}=\\frac{k_{ON}}{k_{ON}+k_{OFF}}(1\u2212e^{\u2212\\frac{t}{k_{ON}+k_{OFF}}})\u00a0orifx_{ON}=0att=0x_{ON}=\\frac{k_{ON}}{k_{ON}+k_{OFF}}(1\u2212e^{\u2212\\frac{t}{k_{ON}+k_{OFF}}})+e^{\u2212\\frac{t}{k_{ON}+k_{OFF}}}ifx_{ON}=1att=0\n$$\n\nTherefore, the following equations were used to model switching rates between epigenetic states from data in Figure 4B and E.\n\nSorting silenced cells (Figure 4B):\n\n$$\nx_{ON}=\\frac{k_{ON}}{k_{ON}+k_{Off}}(1\u2212e^{\u2212\\frac{t}{k_{ON}+k_{OFF}}})\n$$\n\nSorting expressed cells (Figure 4E):\n\n$$\nx_{ON}=\\frac{k_{ON}}{k_{ON}+k_{Off}}(1\u2212e^{\u2212\\frac{t}{k_{ON}+k_{OFF}}})+e^{\u2212\\frac{t}{k_{ON}+k_{OFF}}}\n$$\n\nThe nls() function in R was used to provide a nonlinear least squares estimate of the unknown variables $k_{ON}$ and $k_{OFF}$ for each genotype, and 95% confidence intervals for estimates. With this approach, each genotype had an estimated $k_{ON}$ and $k_{OFF}$ from sorting silenced cells and an estimated $k_{ON}$ and $k_{OFF}$ from sorting expressed cells. Since sorting silenced cells subsequently allowed for observation of more loss-of-silencing events, the $k_{ON}$ rates from those data were considered more accurate and used in Figure 4C. Similarly, the $k_{OFF}$ rates calculated from sorting expressed cells were used in Figure 4F.\n\nBecause each population of sorted cells was evenly divided into three subpopulations, each genotype has three calculated values for the percent of GFP+ cells at each given time point after sorting. The nonlinear least squares estimate was made by drawing a best fit line through all data points for a given genotype, effectively combining the values of all subpopulations. The quality of the fit was calculated using the confint2() function and represented as 95% confidence intervals for $k_{ON}$ values in Figure 4C and $k_{OFF}$ values in Figure 4F. An alternative approach involved drawing a best fit line for each individual subpopulation to give three $k_{ON}$ values and three $k_{OFF}$ values for each genotype and averaging these values to get a single $k_{ON}$ value and $k_{OFF}$ value for each genotype, with error bars representing a standard deviation. Though we also performed this latter analysis method, we favor the former analysis method because it incorporates how well the data fit the nonlinear least squares estimate. Notably, both analysis methods gave similar $k_{ON}$ and $k_{OFF}$ values.\n\nThe generation time of DPB3 MCM2 (JRY11471) was 1.96 hours in CSM media at 30\u00b0C. To convert $k_{ON}$ and $k_{OFF}$ as rates per hour to rates per generation, we multiplied these variables by the generation time. Similar generation times were observed for all replisome mutants.\n\n### MNase-Seq\n\nCells were grown to saturation overnight in 5 mL CSM at 30\u00b0C. The following day, these cells were back-diluted to\u00a0~0.1 O.D. in 50 ml CSM and grown at 30\u00b0C for 5 hr. Cells were then centrifuged and washed twice in 500 \u00b5l SKC buffer (1.2 M Sorbitol, 100 mM KH2PO4, 0.5 mM CaCl2, 7 mM \u03b2-mercaptoethanol) and then resuspended in 100 \u00b5l SKC buffer. Cells were incubated at 37\u00b0C for 15 min, then 30 \u00b5l of 1 mg/mL Zymolyase-100T (MP Biomedicals, LLC, Solon, OH) was added for a final concentration of 0.23 mg/ml Zymolyase-100T and incubated at 37\u00b0C for 15 min. All subsequent steps were performed on ice and subsequent centrifugations performed with an accuSpin Micro 17R (Fischer Scientific, Hampton, NH). Once spheroplasting was complete, cells were spun at 3 k RPM for 3 min at 4\u00b0C. Cells were washed twice in 500 \u00b5l SPC buffer (1 M Sorbitol, 20 mM PIPES pH 6.3, 0.1 mM CaCl2, with Roche cOmplete protease inhibitors (Sigma)) and spun at 2 k RPM for 3 min at 4\u00b0C between washes. Cells were resuspended in 250 \u00b5l SPC buffer, and this solution was gently mixed with 250 \u00b5l freshly prepared Ficoll buffer (9% Ficoll, 20 mM PIPES pH 6.3, 0.5 mM CaCl2) to lyse the cell membranes.\n\nNuclei were then pelleted by centrifugation at 10 k RPM for 20 min at 4\u00b0C. Nuclei were washed twice in 500 \u00b5l SPC and spun at 8 k RPM for 3 min at 4\u00b0C between washes. Washed nuclei were subsequently resuspended in 250 \u00b5l SPC and CaCl2 was added to a final concentration of 2 mM CaCl2. Nuclei were incubated for 5 min at 37\u00b0C, then 20 units of Worthington MNase was added (Worthington Biochemical Corporation, Lakewood, NJ). Nuclei were incubated for 15 min at 37\u00b0C. MNase activity was quenched by addition of EDTA to a final concentration of 10 mM EDTA. Nuclei were centrifuged at 3.7 k RPM for 5 min at 4\u00b0C. The nucleosome-containing supernatant was subsequently removed and DNA and RNA were purified using a Qiagen spin column. RNase A (Sigma) was added to a final concentration of 1 mg/ml RNase A and incubated for 2 hr at 37\u00b0C. DNA was then purified using a Qiagen spin column. MNase libraries were constructed with NEBnextUltra II library preparation kit (New England Biolabs, Ipswich, MA) and sequenced on an Illumina HiSeq4000 (Illumina, San Diego, CA) as 100 bp paired-end reads.\n\nReads were mapped to the Saccharomyces cerevisiae S288C genome (GenBank accession number GCA_000146045.2) using Bowtie2 (Langmead and Salzberg, 2012). Mapped reads between 140 bp and 180 bp in length were used in all further analysis to ensure mononucleosome resolution. The midpoint for each read was calculated and midpoints were stacked in a histogram. Finally, a 25 bp rolling mean was used to smooth out the resulting nucleosome peaks. All sequences and processed data files have been deposited in the NCBI Gene Expression Omnibus archive under accession number GSE136897.\n",
+      "created_at": "2025-12-02T12:45:51.512427Z"
+    },
+    {
+      "id": "6e526328-3629-47f7-a03c-7ee07e6dc2a6",
+      "submission_id": "16bc6c81-e486-41a4-beab-f7e95f25d98e",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Tim Formosa, University of Utah School of Medicine United States\n\nReviewers:\n- Tim Formosa, University of Utah School of Medicine United States\n- Marc Gartenberg\n\n## Review text\n\nDOI: [10.7554/eLife.51421.029](https://doi.org/10.7554/eLife.51421.029)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Epigenetic memory independent of symmetric histone inheritance\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, including Tim Formosa as the Reviewing Editor and Reviewer #1, and the evaluation has been overseen by Kevin Struhl as the Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Marc Gartenberg (Reviewer #2).\n\nThe reviewers have discussed the reviews with one another, and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nIn this manuscript, Saxton and Rine test the idea that epigenetic inheritance of silencing in Saccharomyces cerevisiae is mediated by segregation of histone H3-H4 tetramers. Specifically, they test the prediction that if inheritance of a single parental H3-H4 tetramer in a silenced region is adequate to regenerate the silent state in the daughter, loss of silencing will occur more frequently if the number of nucleosomes in the silenced array is reduced as this will increase the frequency of inheriting no parental H3-H4 tetramers. The results do not support this model, challenging the idea that modifications of H3-H4 provide the core information for epigenetic inheritance of silencing. Potential confounding effects of Sir1 are examined and discarded, and mutations that affect the segregation bias of H3-H4 to leading and lagging strands during replication are also tested. The latter show some effects on silencing, as expected from previous work, but do not provide support for the model that H3-H4 tetramers carry the information to determine expression state in daughters. The key impacts of the work are therefore failure to find support for a commonly discussed feature of epigenetic inheritance models, and the development or improvement of important tools for examining inheritance of silencing in the CRASH and FLAME assays. The presentation is clear, and the data presented are of high quality and are interpreted appropriately. While no new experiments are proposed by the reviewers, several issues were encountered regarding the presentation, as outlined below.\n\nEssential revisions:\n\n1) The precise model being tested and the logic behind the prediction that reducing the number of nucleosomes in the silenced region would lead to increased loss of silencing was not immediately apparent to all reviewers. The authors should highlight the discussion in the Ramachandran and Henikoff reference more prominently and might consider adding a panel to the first figure to illustrate the model. An array of 14 nucleosomes with random distribution predicts only one in 16,000 cells will fail to inherit any parental H3-H4 tetramers, while this should occur once in 128 cells with 7 nucleosomes, so a panel showing these outcomes might make the model more accessible. This raises another issue the authors should address explicitly: the derepression rate with 14 nucleosomes is about 0.1% but the model above predicts it should be 0.006%. Some comment on a mechanism that might account for this 20-fold discrepancy between expectation and the observed values in Figure 1C and Figure 2C should be provided.\n\nA related issue is found in subsection \u201cNucleosome number did not determine the rate of silencing loss\u201d. The expected loss rates for N14 to N7 span from 0.006% and 0.8%, or 100-fold. This point is made in Figure 1C and Figure 2C but not explicitly mentioned in the text. Instead, the text juxtaposes the expectation for N7 (~1%) with the actual value for wt (0.1%). This unintended comparison, as written, may mislead the casual reader.\n\n2) While DPB3 and MCM2 have been shown to control histone segregation near replication origins, it has not been shown that they act similarly in heterochromatic regions. To do so at HMR might be feasible, but would be well beyond the scope of this study. However, the authors must acknowledge that this assumption has been made in interpreting their results.\n\n3) The authors need to explain how the nucleosome number in the FLAME constructs is determined. For the CRASH assay, the number of nucleosomes in the parental and key derivative strains is validated by MNase-seq, but similar data are not provided here for the FLAME constructs. It may not be necessary to provide MNase-seq data, but the authors should explain where the numbers come from and their reasoning for not presenting this validation.\n\n4) The authors acknowledge that the biases incurred by DPB3 and MCM2 are not likely to be absolute. It might be interesting to plug some numbers based on estimates of Yu et al., 2018. For example, if dpb3 causes a two-fold bias at each of the 14 nucleosomes of HMR, there would be a 50-fold greater probability of derepression. This clearly isn't seen in the experiments, so it might be helpful to comment on this.\n",
+      "created_at": "2025-12-02T12:45:51.512427Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T12:45:51.512427Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T12:45:51.512427Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "2596d513-733f-47c9-a37d-cd1e2bb9bfbb",
+      "content_id": "13720f7c-2ea9-4422-8ace-cadffff224f1",
+      "claim_id": "C1",
+      "claim": "Heterochromatic gene silencing usually requires specific histone modifications.",
+      "claim_type": "EXPLICIT",
+      "source": "Heterochromatic gene silencing is an important form of gene regulation that usually requires specific histone modifications.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge in the abstract without specific experimental support in this manuscript.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:45:51.512427Z"
+    },
+    {
+      "id": "efadf5ab-5cf1-431e-831f-15f909bb6cf8",
+      "content_id": "13720f7c-2ea9-4422-8ace-cadffff224f1",
+      "claim_id": "C2",
+      "claim": "A popular model posits that inheritance of modified histones, especially in the form of H3-H4 tetramers, underlies inheritance of heterochromatin.",
+      "claim_type": "EXPLICIT",
+      "source": "A popular model posits that inheritance of modified histones, especially in the form of H3-H4 tetramers, underlies inheritance of heterochromatin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes an existing model in the field, supported by citations elsewhere in the manuscript.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:45:51.512427Z"
+    },
+    {
+      "id": "4baddb5c-8811-4d27-a786-e8582ec7b457",
+      "content_id": "13720f7c-2ea9-4422-8ace-cadffff224f1",
+      "claim_id": "C3",
+      "claim": "H3-H4 tetramers are randomly distributed between daughter chromatids during DNA replication.",
+      "claim_type": "EXPLICIT",
+      "source": "Because H3-H4 tetramers are randomly distributed between daughter chromatids during DNA replication, rare occurrences of asymmetric tetramer inheritance within a heterochromatic domain would have the potential to destabilize heterochromatin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge and is supported by citations to classic studies (Sogo et al., 1986; Cusick et al., 1984) in the manuscript.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:45:51.512427Z"
+    },
+    {
+      "id": "69675817-5fb9-4988-aff0-dd7f9826105a",
+      "content_id": "13720f7c-2ea9-4422-8ace-cadffff224f1",
+      "claim_id": "C4",
+      "claim": "Rare occurrences of asymmetric tetramer inheritance within a heterochromatic domain would have the potential to destabilize heterochromatin.",
+      "claim_type": "EXPLICIT",
+      "source": "Because H3-H4 tetramers are randomly distributed between daughter chromatids during DNA replication, rare occurrences of asymmetric tetramer inheritance within a heterochromatic domain would have the potential to destabilize heterochromatin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference from the model that histones carry epigenetic memory.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:45:51.512427Z"
+    },
+    {
+      "id": "085fe087-a71d-4647-b127-d145986eaefa",
+      "content_id": "13720f7c-2ea9-4422-8ace-cadffff224f1",
+      "claim_id": "C5",
+      "claim": "The model predicts that shorter heterochromatic domains would experience unbalanced tetramer inheritance more frequently, and thereby be less stable.",
+      "claim_type": "EXPLICIT",
+      "source": "This model makes a prediction that shorter heterochromatic domains would experience unbalanced tetramer inheritance more frequently, and thereby be less stable.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prediction derived from the histone inheritance model through logical inference.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:45:51.512427Z"
+    },
+    {
+      "id": "871b5f7c-af55-4263-a856-291d4f10423e",
+      "content_id": "13720f7c-2ea9-4422-8ace-cadffff224f1",
+      "claim_id": "C6",
+      "claim": "Shortening a heterochromatic domain in Saccharomyces had no impact on the strength of silencing nor its heritability.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to this prediction, we found that shortening a heterochromatic domain in Saccharomyces had no impact on the strength of silencing nor its heritability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding supported by experimental data shown in Figures 1 and 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:45:51.512427Z"
+    },
+    {
+      "id": "60405baf-fa85-4d18-829e-3e145bf4aa3b",
+      "content_id": "13720f7c-2ea9-4422-8ace-cadffff224f1",
+      "claim_id": "C7",
+      "claim": "Replisome mutations that disrupt inheritance of H3-H4 tetramers had only minor effects on heterochromatin stability.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, we found that replisome mutations that disrupt inheritance of H3-H4 tetramers had only minor effects on heterochromatin stability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding supported by experimental data shown in Figures 3, 4, and 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:45:51.512427Z"
+    },
+    {
+      "id": "19b1c397-7d5f-4019-a587-d2e5d7d922cf",
+      "content_id": "13720f7c-2ea9-4422-8ace-cadffff224f1",
+      "claim_id": "C8",
+      "claim": "Histones carry little or no memory of the heterochromatin state through DNA replication.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings suggest that histones carry little or no memory of the heterochromatin state through DNA replication.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion inferred from the experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:45:51.512427Z"
+    },
+    {
+      "id": "e4fd240b-f4d8-46dc-8ba1-f34cafd6bb39",
+      "content_id": "13720f7c-2ea9-4422-8ace-cadffff224f1",
+      "claim_id": "C9",
+      "claim": "Faithful transmission of epigenetic information is crucial for multiple heterochromatin-based processes such as X-chromosome inactivation in mammals and cold-induced gene silencing in Arabidopsis.",
+      "claim_type": "EXPLICIT",
+      "source": "Faithful transmission of epigenetic information is crucial for multiple heterochromatin-based processes such as X-chromosome inactivation in mammals and cold-induced gene silencing in Arabidopsis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:45:51.512427Z"
+    },
+    {
+      "id": "cf74ce0a-19cb-4271-8d78-3591b549785d",
+      "content_id": "13720f7c-2ea9-4422-8ace-cadffff224f1",
+      "claim_id": "C10",
+      "claim": "The identity of epigenetic information remains unclear and heavily debated.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, the identity of this epigenetic information remains unclear and heavily debated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This characterizes the current state of the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:45:51.512427Z"
+    },
+    {
+      "id": "e90003f8-c9ac-4046-bcfa-76ee8eae4cd4",
+      "content_id": "13720f7c-2ea9-4422-8ace-cadffff224f1",
+      "claim_id": "C11",
+      "claim": "Histone subunits H3 and H4 are marked by a variety of covalent modifications that are integral to heterochromatin function.",
+      "claim_type": "EXPLICIT",
+      "source": "The histone subunits of nucleosomes, especially histones H3 and H4, are marked by a variety of covalent modifications that are integral to heterochromatin function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:45:51.512427Z"
+    },
+    {
+      "id": "4a4034b9-6dbf-4434-b18a-dfbba45fea83",
+      "content_id": "13720f7c-2ea9-4422-8ace-cadffff224f1",
+      "claim_id": "C12",
+      "claim": "During DNA replication, nucleosomes are partially disrupted and marked parental H3-H4 tetramers are locally inherited to daughter chromatids.",
+      "claim_type": "EXPLICIT",
+      "source": "During DNA replication, nucleosomes are partially disrupted and marked parental H3-H4 tetramers are locally inherited to daughter chromatids.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Prior et al., 1980; Jackson, 1988; Schlissel and Rine, 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:45:51.512427Z"
+    },
+    {
+      "id": "6cf52ee8-c03d-4531-8269-019597d29b5b",
+      "content_id": "13720f7c-2ea9-4422-8ace-cadffff224f1",
+      "claim_id": "C13",
+      "claim": "Parental H3-H4 tetramers are reassembled into nucleosomes that are interspersed with nucleosomes containing newly synthesized H3-H4 tetramers.",
+      "claim_type": "EXPLICIT",
+      "source": "As these tetramers are inherited, they are reassembled into nucleosomes that are interspersed with nucleosomes containing newly synthesized H3-H4 tetramers (Prior et al., 1980; Jackson, 1988; Schlissel and Rine, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Prior et al., 1980; Jackson, 1988; Schlissel and Rine, 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:45:51.512427Z"
+    },
+    {
+      "id": "74f67d9e-afc1-49bd-a692-ef56ded37204",
+      "content_id": "13720f7c-2ea9-4422-8ace-cadffff224f1",
+      "claim_id": "C14",
+      "claim": "One model for epigenetic inheritance posits that marked parental histones inherited through DNA replication recruit histone modifiers to deposit similar marks on new adjacent nucleosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "One model for epigenetic inheritance posits that marked parental histones inherited through DNA replication recruit histone modifiers to deposit similar marks on new adjacent nucleosomes, thereby reestablishing the previous local landscape of histone modifications (Hecht et al., 1995; Hoppe et al., 2002; Gaydos et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a model supported by citations to Hecht et al., 1995; Hoppe et al., 2002; Gaydos et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:45:51.512427Z"
+    },
+    {
+      "id": "e63d9e40-3277-4f12-ad5d-530fce7aa43f",
+      "content_id": "13720f7c-2ea9-4422-8ace-cadffff224f1",
+      "claim_id": "C15",
+      "claim": "The H3K27 methyltransferase PRC2 binds preferentially to H3K27me3 in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "In support of this model, the H3K27 methyltransferase PRC2 binds preferentially to H3K27me3 in vitro (Hansen et al., 2008) and some other modifying enzymes show a similar ability to bind their histone modifications (Zhang et al., 2008; Hecht et al., 1995; Imai et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Hansen et al., 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:45:51.512427Z"
+    },
+    {
+      "id": "91ec586b-84c4-4838-8d5f-cca8991d6a7e",
+      "content_id": "13720f7c-2ea9-4422-8ace-cadffff224f1",
+      "claim_id": "C16",
+      "claim": "Some histone modifying enzymes show an ability to bind their histone modifications.",
+      "claim_type": "EXPLICIT",
+      "source": "In support of this model, the H3K27 methyltransferase PRC2 binds preferentially to H3K27me3 in vitro (Hansen et al., 2008) and some other modifying enzymes show a similar ability to bind their histone modifications (Zhang et al., 2008; Hecht et al., 1995; Imai et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Zhang et al., 2008; Hecht et al., 1995; Imai et al., 2000.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:45:51.512427Z"
+    },
+    {
+      "id": "5a249abd-803d-4c88-b243-b1c7f19b7cc3",
+      "content_id": "13720f7c-2ea9-4422-8ace-cadffff224f1",
+      "claim_id": "C17",
+      "claim": "In S. pombe, localized methylation of H3K9 can silence a reporter gene, and this silenced state is heritable in the presence of the H3K9 methyltransferase Clr4p as long as the demethylase Epe1p is absent.",
+      "claim_type": "EXPLICIT",
+      "source": "In S. pombe, localized methylation of H3K9 can silence a reporter gene, and this silenced state is heritable in the presence of the H3K9 methyltransferase Clr4p as long as the demethylase Epe1p is absent (Audergon et al., 2015; Ragunathan et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Audergon et al., 2015; Ragunathan et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:45:51.512427Z"
+    },
+    {
+      "id": "00b9f96f-7f12-494d-997b-924ff66f21ac",
+      "content_id": "13720f7c-2ea9-4422-8ace-cadffff224f1",
+      "claim_id": "C18",
+      "claim": "Induced removal of silencer elements from silenced chromatin in S. cerevisiae causes almost all cells to lose silencing of adjacent genes after just one round of DNA replication.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, induced removal of silencer elements from silenced chromatin in S. cerevisiae causes almost all cells to lose silencing of adjacent genes after just one round of DNA replication (Holmes and Broach, 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Holmes and Broach, 1996.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:45:51.512427Z"
+    },
+    {
+      "id": "b66b00ea-0d6f-4060-b2ac-c2004f849faf",
+      "content_id": "13720f7c-2ea9-4422-8ace-cadffff224f1",
+      "claim_id": "C19",
+      "claim": "Removal of silencers from Drosophila chromatin silenced by the Polycomb complex causes loss of silencing after DNA replication.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar results are found when silencers are removed from Drosophila chromatin silenced by the Polycomb complex (Laprell et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Laprell et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:45:51.512427Z"
+    },
+    {
+      "id": "214ca90c-f884-44dc-b38a-627b68b8ada1",
+      "content_id": "13720f7c-2ea9-4422-8ace-cadffff224f1",
+      "claim_id": "C20",
+      "claim": "Parental H3-H4 tetramers have long been thought to be randomly partitioned between daughter chromatids.",
+      "claim_type": "EXPLICIT",
+      "source": "The model in which histones carry epigenetic memory makes a testable prediction: since parental H3-H4 tetramers have long been thought to be randomly partitioned between daughter chromatids (Sogo et al., 1986; Cusick et al., 1984), rare events could occur in which most or all marked parental H3-H4 tetramers within a domain segregate asymmetrically to one daughter chromatid, causing the other to inherit primarily newly synthesized histones.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Sogo et al., 1986; Cusick et al., 1984.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:45:51.512427Z"
+    },
+    {
+      "id": "1dc92205-d6a1-48a5-8a5f-87ee7af19455",
+      "content_id": "13720f7c-2ea9-4422-8ace-cadffff224f1",
+      "claim_id": "C21",
+      "claim": "A chromatin domain with an insufficient number of marked parental tetramers would be expected to experience a loss-of-chromatin-state event.",
+      "claim_type": "EXPLICIT",
+      "source": "A chromatin domain with an insufficient number of marked parental tetramers would be expected to experience a loss-of-chromatin-state event.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference from the histone inheritance model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:45:51.512427Z"
+    },
+    {
+      "id": "eda9ebe3-b75d-47cd-8c37-86d8be99e922",
+      "content_id": "13720f7c-2ea9-4422-8ace-cadffff224f1",
+      "claim_id": "C22",
+      "claim": "A smaller chromatin domain would correspond to fewer marked nucleosomes and yield more frequent events in which parental H3-H4 tetramers segregate asymmetrically and the chromatin state is lost.",
+      "claim_type": "EXPLICIT",
+      "source": "In this view, a smaller chromatin domain would correspond to fewer marked nucleosomes and yield more frequent events in which parental H3-H4 tetramers segregate asymmetrically and the chromatin state is lost.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference from the histone inheritance model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:45:51.512427Z"
+    },
+    {
+      "id": "176b43e8-6f4e-4be4-8a28-91ef674a137e",
+      "content_id": "13720f7c-2ea9-4422-8ace-cadffff224f1",
+      "claim_id": "C23",
+      "claim": "The potential use of domain size for protection against epimutation is widely conjectured.",
+      "claim_type": "EXPLICIT",
+      "source": "This potential use of domain size for protection against epimutation is widely conjectured (Dodd et al., 2007; Kaufman and Rando, 2010; Moazed, 2011; Ramachandran and Henikoff, 2015), and may explain why chromatin domains subject to stable epigenetic inheritance are often many kilobases long.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Dodd et al., 2007; Kaufman and Rando, 2010; Moazed, 2011; Ramachandran and Henikoff, 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:45:51.512427Z"
+    },
+    {
+      "id": "f334577e-cf82-4d6a-a82b-479a99c4d0df",
+      "content_id": "13720f7c-2ea9-4422-8ace-cadffff224f1",
+      "claim_id": "C24",
+      "claim": "Chromatin domains silenced by Polycomb Responsive Elements (PREs) in Drosophila usually extend beyond 10 kb.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, chromatin domains silenced by Polycomb Responsive Elements (PREs) in Drosophila usually extend beyond 10 kb (Schwartz et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Schwartz et al., 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:45:51.512427Z"
+    },
+    {
+      "id": "1016ae23-82d2-4326-880f-c534311f2a44",
+      "content_id": "13720f7c-2ea9-4422-8ace-cadffff224f1",
+      "claim_id": "C25",
+      "claim": "A chromatin domain containing only three H3K27me3-marked nucleosomes in A. thaliana is inherited more frequently than would be predicted if random segregation of tetramers caused loss events.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, one study in A. thaliana found that a chromatin domain containing only three H3K27me3-marked nucleosomes is inherited more frequently than would be predicted if random segregation of tetramers caused loss events (Yang et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Yang et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:45:51.512427Z"
+    },
+    {
+      "id": "4cf1e840-b637-402d-bc31-ee4ae054bff7",
+      "content_id": "13720f7c-2ea9-4422-8ace-cadffff224f1",
+      "claim_id": "C26",
+      "claim": "The E and I silencers flanking HMR and HML are occupied by the DNA-binding proteins Rap1, Abf1, and ORC, that collectively recruit Sir proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, the E and I silencers flanking HMR and HML are occupied by the DNA-binding proteins Rap1, Abf1, and ORC, that collectively recruit Sir proteins; Sir1 is present only at silencers, whereas Sir2/3/4 complexes bind to silencers and spread across the locus in a process that requires deacetylation of H4K16 (Rusch\u00e9 et al., 2002; Thurtle and Rine, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Rusch\u00e9 et al., 2002; Thurtle and Rine, 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:45:51.512427Z"
+    },
+    {
+      "id": "5a3ae455-fb82-4b72-bd00-76662e70856c",
+      "content_id": "13720f7c-2ea9-4422-8ace-cadffff224f1",
+      "claim_id": "C27",
+      "claim": "Sir1 is present only at silencers, whereas Sir2/3/4 complexes bind to silencers and spread across the locus in a process that requires deacetylation of H4K16.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, the E and I silencers flanking HMR and HML are occupied by the DNA-binding proteins Rap1, Abf1, and ORC, that collectively recruit Sir proteins; Sir1 is present only at silencers, whereas Sir2/3/4 complexes bind to silencers and spread across the locus in a process that requires deacetylation of H4K16 (Rusch\u00e9 et al., 2002; Thurtle and Rine, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Rusch\u00e9 et al., 2002; Thurtle and Rine, 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:45:51.512427Z"
+    },
+    {
+      "id": "422df0a5-7d57-4d15-957e-8bccfe80f560",
+      "content_id": "13720f7c-2ea9-4422-8ace-cadffff224f1",
+      "claim_id": "C28",
+      "claim": "DNA methylation and RNA interference do not exist in S. cerevisiae.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, DNA methylation and RNA interference do not exist in S. cerevisiae.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about S. cerevisiae.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:45:51.512427Z"
+    },
+    {
+      "id": "0d676f0f-09ef-4c46-9f03-db8b18360330",
+      "content_id": "13720f7c-2ea9-4422-8ace-cadffff224f1",
+      "claim_id": "C29",
+      "claim": "Under normal conditions, HMR and HML are constitutively silenced.",
+      "claim_type": "EXPLICIT",
+      "source": "Under normal conditions, HMR and HML are constitutively silenced.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about these loci in S. cerevisiae.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:45:51.512427Z"
+    },
+    {
+      "id": "ddddf08c-444c-474c-920f-e239540388d7",
+      "content_id": "13720f7c-2ea9-4422-8ace-cadffff224f1",
+      "claim_id": "C30",
+      "claim": "Rare and transient loss-of-silencing events at HMR and HML can be measured by a sensitive assay that uses the cre recombinase under control of the HML\u03b12 promoter to convert transient transcriptional events into permanent, heritable changes in fluorescence phenotypes.",
+      "claim_type": "EXPLICIT",
+      "source": "Rare and transient loss-of-silencing events can be measured by a sensitive assay that uses the cre recombinase under control of the HML\u03b12 promoter to convert transient transcriptional events into permanent, heritable changes in fluorescence phenotypes (Dodson and Rine, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the CRASH assay, supported by citation to Dodson and Rine, 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:45:51.512427Z"
+    },
+    {
+      "id": "ee271ea1-88d0-428e-b153-9d61678004fb",
+      "content_id": "13720f7c-2ea9-4422-8ace-cadffff224f1",
+      "claim_id": "C31",
+      "claim": "Deletion of SIR1 causes genetically identical cells to be in either of two states at HMR and HML: either fully silenced or fully expressed.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, deletion of SIR1 causes genetically identical cells to be in either of two states at HMR and HML: either fully silenced or fully expressed (Pillus and Rine, 1989; Xu et al., 2006; Dodson and Rine, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Pillus and Rine, 1989; Xu et al., 2006; Dodson and Rine, 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:45:51.512427Z"
+    },
+    {
+      "id": "a598a124-bdf5-4ffc-ace0-8f751cced8c9",
+      "content_id": "13720f7c-2ea9-4422-8ace-cadffff224f1",
+      "claim_id": "C32",
+      "claim": "Different transcriptional states at HMR and HML in sir1\u2206 cells are mitotically heritable and cells switch between states at a low frequency.",
+      "claim_type": "EXPLICIT",
+      "source": "These different transcriptional states are mitotically heritable and cells switch between states at a low frequency.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about sir1\u2206 cells, supported by prior citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:45:51.512427Z"
+    },
+    {
+      "id": "55ef94d8-dc91-4922-9491-821467517b63",
+      "content_id": "13720f7c-2ea9-4422-8ace-cadffff224f1",
+      "claim_id": "C33",
+      "claim": "Full-length HMR\u03b1::cre contained fourteen well-positioned nucleosomes between the E and I silencers.",
+      "claim_type": "EXPLICIT",
+      "source": "HMR\u03b1::cre contained fourteen well-positioned nucleosomes between the E and I silencers (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by MNase-Seq data shown in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:45:51.512427Z"
+    },
+    {
+      "id": "ea3530a0-e92d-4197-9685-d49b96611b40",
+      "content_id": "13720f7c-2ea9-4422-8ace-cadffff224f1",
+      "claim_id": "C34",
+      "claim": "Deletions of DNA corresponding to different sets of nucleosomes at HMR\u03b1::cre did not affect the local positions of the remaining nucleosomes as measured by MNase-Seq.",
+      "claim_type": "EXPLICIT",
+      "source": "These deletions did not affect the local positions of the remaining nucleosomes as measured by MNase-Seq (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by MNase-Seq data shown in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:45:51.512427Z"
+    },
+    {
+      "id": "355c390b-5dcd-422b-a3c6-42e079f346a5",
+      "content_id": "13720f7c-2ea9-4422-8ace-cadffff224f1",
+      "claim_id": "C35",
+      "claim": "The silencing-loss rate predicted by random segregation of H3-H4 tetramers would be approximately 0.006% of cell divisions for full-length HMR\u03b1::cre (Strain N14).",
+      "claim_type": "EXPLICIT",
+      "source": "The silencing-loss rate predicted by random segregation of H3-H4 tetramers would be approximately 0.006% of cell divisions for full-length HMR\u03b1::cre (Strain N14) (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a calculated prediction based on the model, shown in Figure 1D.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:45:51.512427Z"
+    },
+    {
+      "id": "52513d9f-cf58-4f47-b4bc-daa2713a13a4",
+      "content_id": "13720f7c-2ea9-4422-8ace-cadffff224f1",
+      "claim_id": "C36",
+      "claim": "Full-length HMR\u03b1::cre loses silencing in approximately 0.1% of cell divisions.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies demonstrate that this strain loses silencing in approximately 0.1% of cell divisions (Dodson and Rine, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Dodson and Rine, 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:45:51.512427Z"
+    },
+    {
+      "id": "1a1988ee-39aa-4202-88a5-c6e7e047c1a4",
+      "content_id": "13720f7c-2ea9-4422-8ace-cadffff224f1",
+      "claim_id": "C37",
+      "claim": "The smallest allele of HMR\u03b1::cre (Strain N7) would be expected to lose silencing in approximately 1% of cell divisions based on random segregation of H3-H4 tetramers.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to the full size HMR\u03b1::cre, the smallest allele of HMR\u03b1::cre (Strain N7) would be expected to lose silencing in approximately 1% of cell divisions (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a calculated prediction based on the model, shown in Figure 1D.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:45:51.512427Z"
+    },
+    {
+      "id": "4a01a3a3-17a6-4c8f-be70-890cba4140bc",
+      "content_id": "13720f7c-2ea9-4422-8ace-cadffff224f1",
+      "claim_id": "C38",
+      "claim": "Decreasing nucleosome number at HMR\u03b1::cre led to a slight decrease in silencing loss as measured by sector frequency.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, decreasing nucleosome number at HMR\u03b1::cre led to a slight decrease in silencing loss as measured by sector frequency (Figure 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:45:51.512427Z"
+    },
+    {
+      "id": "07fa847d-7df5-4034-9421-e8aec8faec9c",
+      "content_id": "13720f7c-2ea9-4422-8ace-cadffff224f1",
+      "claim_id": "C39",
+      "claim": "Flow cytometry measurements confirmed that nucleosome number did not strongly affect silencing-loss rates at HMR\u03b1::cre, and that reduction of nucleosomes might have a slight stabilizing effect on silencing.",
+      "claim_type": "EXPLICIT",
+      "source": "Using flow cytometry to measure the frequency of cells that contain both RFP and GFP, we confirmed that nucleosome number did not strongly affect silencing-loss rates, and that reduction of nucleosomes might have a slight stabilizing effect on silencing (Figure 1F, Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by flow cytometry data shown in Figure 1F and Figure 1\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:45:51.512427Z"
+    },
+    {
+      "id": "daf46aa6-3e59-40ba-8d59-d8b42cebf18a",
+      "content_id": "13720f7c-2ea9-4422-8ace-cadffff224f1",
+      "claim_id": "C40",
+      "claim": "Changing nucleosome number at HML\u03b1::cre led to only a small increase in silencing loss, and these effects were not due strictly to domain size.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, we found that changing nucleosome number at HML\u03b1::cre led to only a small increase in silencing loss, and that these effects were not due strictly to domain size (Figure 1\u2014figure supplements 3\u20135).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1\u2014figure supplements 3\u20135.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:45:51.512427Z"
+    },
+    {
+      "id": "69b631df-43e7-44d9-9bcb-6c48d8070512",
+      "content_id": "13720f7c-2ea9-4422-8ace-cadffff224f1",
+      "claim_id": "C41",
+      "claim": "The silencers flanking HMR\u03b1 are bound by three different proteins that collaborate to recruit Sir proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "The silencers flanking HMR\u03b1 are bound by three different proteins that collaborate to recruit Sir proteins (Rusche et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Rusche et al., 2003.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:45:51.512427Z"
+    },
+    {
+      "id": "bdbd1577-d77c-479a-b6c0-72681c515ddd",
+      "content_id": "13720f7c-2ea9-4422-8ace-cadffff224f1",
+      "claim_id": "C42",
+      "claim": "Sir1 binds to silencers, and deletion of SIR1 partially disrupts silencer activity, as measured by defects in silencing establishment and silencing heritability.",
+      "claim_type": "EXPLICIT",
+      "source": "Sir1 binds to silencers, and deletion of SIR1 partially disrupts silencer activity, as measured by defects in silencing establishment and silencing heritability (Pillus and Rine, 1989; Dodson and Rine, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Pillus and Rine, 1989; Dodson and Rine, 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:45:51.512427Z"
+    },
+    {
+      "id": "cf90a526-6f86-4f87-9e1b-c22587328a86",
+      "content_id": "13720f7c-2ea9-4422-8ace-cadffff224f1",
+      "claim_id": "C43",
+      "claim": "Within individual cells in a population of sir1\u2206 cells, HMR is either transcriptionally silenced or fully expressed.",
+      "claim_type": "EXPLICIT",
+      "source": "Within individual cells in a population of sir1\u2206 cells, HMR is either transcriptionally silenced or fully expressed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental observations described in the text and shown in figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:45:51.512427Z"
+    },
+    {
+      "id": "e9014cbf-b934-4582-9a4f-e5b25c8fd8b3",
+      "content_id": "13720f7c-2ea9-4422-8ace-cadffff224f1",
+      "claim_id": "C44",
+      "claim": "In sir1\u2206 cells, HMR\u03b1 was silenced in roughly 99% of cells and was expressed in the remaining cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In comparison to control strains in which HMR\u03b1 was fully silenced (SIR+) or expressed (sir4\u2206), HMR\u03b1 was silenced in roughly 99% of sir1\u2206 cells and was expressed in the remaining cells (Figure 2\u2014figure supplements 1 and 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by microscopy and flow cytometry data shown in Figure 2\u2014figure supplements 1 and 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:45:51.512427Z"
+    },
+    {
+      "id": "277ccc0a-8c78-4c8a-ae54-39115c2b114d",
+      "content_id": "13720f7c-2ea9-4422-8ace-cadffff224f1",
+      "claim_id": "C45",
+      "claim": "Live-cell imaging of sir1\u2206 cells revealed cells in which silencing of HMR was lost, and other cases in which it was gained.",
+      "claim_type": "EXPLICIT",
+      "source": "We used live-cell imaging to monitor divisions of sir1\u2206 cells to identify cells in which silencing of HMR was lost, and other cases in which it was gained (Figure 2A, Video 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by live-cell imaging data shown in Figure 2A and Video 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:45:51.512427Z"
+    },
+    {
+      "id": "e38dc4d1-1aa5-4cd6-a77d-f70af0ac522a",
+      "content_id": "13720f7c-2ea9-4422-8ace-cadffff224f1",
+      "claim_id": "C46",
+      "claim": "Full-length HMR\u03b1::GFP in sir1\u2206 contained twelve nucleosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Twelve nucleosomes were present in full-length HMR\u03b1::GFP (Strain sN12) (JRY11478).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by MNase-Seq data shown in Figure 2\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:45:51.512427Z"
+    },
+    {
+      "id": "7ff98828-2758-4641-9231-189ec7683edc",
+      "content_id": "13720f7c-2ea9-4422-8ace-cadffff224f1",
+      "claim_id": "C47",
+      "claim": "Nucleosome number did not affect the frequency of silencing loss at HMR\u03b1::GFP in sir1\u2206 as measured by time-lapse microscopy.",
+      "claim_type": "EXPLICIT",
+      "source": "Using time-lapse fluorescence microscopy to monitor transcriptional states in individual cells and their descendants as they divided, we found that nucleosome number did not affect the frequency of silencing loss (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by time-lapse microscopy data shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:45:51.512427Z"
+    },
+    {
+      "id": "787ea239-abac-497e-9caf-a9d341f1a769",
+      "content_id": "13720f7c-2ea9-4422-8ace-cadffff224f1",
+      "claim_id": "C48",
+      "claim": "The frequency of silencing establishment at HMR\u03b1::GFP in sir1\u2206 was similar between strains with different numbers of nucleosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "The frequency of silencing establishment was similar between strains with different numbers of nucleosomes at HMR\u03b1::GFP (Figure 2E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by time-lapse microscopy data shown in Figure 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:45:51.512427Z"
+    },
+    {
+      "id": "2ab115c1-bccb-4ccb-9633-ebe774495878",
+      "content_id": "13720f7c-2ea9-4422-8ace-cadffff224f1",
+      "claim_id": "C49",
+      "claim": "dpb3\u2206 causes biased parental H3-H4 tetramer inheritance to the lagging strand.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, dpb3\u2206 causes biased parental H3-H4 tetramer inheritance to the lagging strand (Yu et al., 2018) and a set of point mutations in MCM2 (mcm2-3A) causes biased parental H3-H4 tetramer inheritance to the leading strand (Petryk et al., 2018; Gan et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Yu et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:45:51.512427Z"
+    },
+    {
+      "id": "7c3637b3-18b1-45fd-a9f6-05bf78af441f",
+      "content_id": "13720f7c-2ea9-4422-8ace-cadffff224f1",
+      "claim_id": "C50",
+      "claim": "mcm2-3A causes biased parental H3-H4 tetramer inheritance to the leading strand.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, dpb3\u2206 causes biased parental H3-H4 tetramer inheritance to the lagging strand (Yu et al., 2018) and a set of point mutations in MCM2 (mcm2-3A) causes biased parental H3-H4 tetramer inheritance to the leading strand (Petryk et al., 2018; Gan et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Petryk et al., 2018; Gan et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:45:51.512427Z"
+    },
+    {
+      "id": "954bf2a5-b5c3-4f22-b1a9-8e357fae76ad",
+      "content_id": "13720f7c-2ea9-4422-8ace-cadffff224f1",
+      "claim_id": "C51",
+      "claim": "Local histone H4 inheritance in a small chromatin domain was moderately reduced in both the dpb3\u2206 and mcm2-3A single mutants, and severely reduced in the dpb3\u2206 mcm2-3A double mutant.",
+      "claim_type": "EXPLICIT",
+      "source": "A complementary study found that local histone H4 inheritance in a small chromatin domain was moderately reduced in both the dpb3\u2206 and mcm2-3A single mutants, and severely reduced in the dpb3\u2206 mcm2-3A double mutant (Schlissel and Rine, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Schlissel and Rine, 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:45:51.512427Z"
+    },
+    {
+      "id": "e6b6370d-b615-421f-b7a7-73b4f26a5449",
+      "content_id": "13720f7c-2ea9-4422-8ace-cadffff224f1",
+      "claim_id": "C52",
+      "claim": "Dpb3 and Mcm2 are necessary for efficient inheritance of parental H3-H4 tetramers to both daughter chromatids during DNA replication.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these studies demonstrate that Dpb3 and Mcm2 are necessary for efficient inheritance of parental H3-H4 tetramers to both daughter chromatids during DNA replication.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the cited studies.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:45:51.512427Z"
+    },
+    {
+      "id": "784b1b1b-f6bc-4ac6-8b98-3388dd831cb3",
+      "content_id": "13720f7c-2ea9-4422-8ace-cadffff224f1",
+      "claim_id": "C53",
+      "claim": "The dpb3\u2206 and mcm2-3A single mutants exhibited higher silencing-loss rates at HMR\u03b1::cre than wild type.",
+      "claim_type": "EXPLICIT",
+      "source": "The dpb3\u2206 and mcm2-3A single mutants exhibited higher silencing-loss rates, consistent with previous studies done at HML (Yu et al., 2018; Gan et al., 2018), and the dpb3\u2206 mcm2-3A double mutant lost silencing more frequently than either single mutant.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:45:51.512427Z"
+    },
+    {
+      "id": "97400ffc-96fe-4186-b878-98379d933a45",
+      "content_id": "13720f7c-2ea9-4422-8ace-cadffff224f1",
+      "claim_id": "C54",
+      "claim": "The dpb3\u2206 mcm2-3A double mutant lost silencing at HMR\u03b1::cre more frequently than either single mutant.",
+      "claim_type": "EXPLICIT",
+      "source": "The dpb3\u2206 and mcm2-3A single mutants exhibited higher silencing-loss rates, consistent with previous studies done at HML (Yu et al., 2018; Gan et al., 2018), and the dpb3\u2206 mcm2-3A double mutant lost silencing more frequently than either single mutant.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:45:51.512427Z"
+    },
+    {
+      "id": "9f598343-79e9-4c08-b438-619acaf10e2f",
+      "content_id": "13720f7c-2ea9-4422-8ace-cadffff224f1",
+      "claim_id": "C55",
+      "claim": "Flow cytometry measurements confirmed that dpb3\u2206 and mcm2-3A mutants had higher silencing-loss rates at HMR\u03b1::cre.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar results were obtained by using flow cytometry to measure silencing-loss rates (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by flow cytometry data shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:45:51.512427Z"
+    },
+    {
+      "id": "07ac7c30-b674-427c-a38f-b593f1024799",
+      "content_id": "13720f7c-2ea9-4422-8ace-cadffff224f1",
+      "claim_id": "C56",
+      "claim": "Epigenetic information that determines expression states in sir1\u2206 is transmitted locally at HML and HMR, respectively, rather than being transmitted in trans from processes elsewhere in the cell.",
+      "claim_type": "EXPLICIT",
+      "source": "Testing this possibility was important because the currently unidentified epigenetic information that determines expression states in sir1\u2206 is transmitted locally at HML and HMR, respectively, rather than being transmitted in trans from processes elsewhere in the cell (Xu et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Xu et al., 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:45:51.512427Z"
+    },
+    {
+      "id": "34c3cb5b-838a-4adb-ae25-a2f85ddbcafc",
+      "content_id": "13720f7c-2ea9-4422-8ace-cadffff224f1",
+      "claim_id": "C57",
+      "claim": "Populations of dpb3\u2206, mcm2-3A, and dpb3\u2206 mcm2-3A mutants in sir1\u2206 background all showed a mix of cells that were silenced or expressed at HMR\u03b1::GFP.",
+      "claim_type": "EXPLICIT",
+      "source": "Populations of dpb3\u2206, mcm2-3A, and dpb3\u2206 mcm2-3A mutants all showed a mix of cells that were silenced or expressed at HMR\u03b1::GFP; all three mutant strains also showed a higher frequency of expressed cells than wild type (Figure 4\u2014figure supplement 1, Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by flow cytometry data shown in Figure 4\u2014figure supplement 1 and Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:45:51.512427Z"
+    },
+    {
+      "id": "c23a17d0-3fb9-4d74-9169-db0f66571631",
+      "content_id": "13720f7c-2ea9-4422-8ace-cadffff224f1",
+      "claim_id": "C58",
+      "claim": "All three replisome mutant strains (dpb3\u2206, mcm2-3A, and dpb3\u2206 mcm2-3A) in sir1\u2206 background showed a higher frequency of expressed cells at HMR\u03b1::GFP than wild type.",
+      "claim_type": "EXPLICIT",
+      "source": "Populations of dpb3\u2206, mcm2-3A, and dpb3\u2206 mcm2-3A mutants all showed a mix of cells that were silenced or expressed at HMR\u03b1::GFP; all three mutant strains also showed a higher frequency of expressed cells than wild type (Figure 4\u2014figure supplement 1, Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by flow cytometry data shown in Figure 4\u2014figure supplement 1 and Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:45:51.512427Z"
+    },
+    {
+      "id": "2f200d74-74a8-4f51-b7be-26ebbe033893",
+      "content_id": "13720f7c-2ea9-4422-8ace-cadffff224f1",
+      "claim_id": "C59",
+      "claim": "dpb3\u2206 and mcm2-3A in sir1\u2206 background had higher loss-of-silencing rates at HMR\u03b1::GFP than wild type as measured by FACS.",
+      "claim_type": "EXPLICIT",
+      "source": "By using these relaxation rates to calculate silencing-loss rates (Figure 4B, Figure 4\u2014figure supplement 2), we observed that dpb3\u2206 and mcm2-3A had higher loss-of-silencing rates than wild type (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by FACS data shown in Figure 4B, Figure 4\u2014figure supplement 2, and Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:45:51.512427Z"
+    },
+    {
+      "id": "893d39a6-d945-4d51-a5e8-874b224af139",
+      "content_id": "13720f7c-2ea9-4422-8ace-cadffff224f1",
+      "claim_id": "C60",
+      "claim": "The dpb3\u2206 mcm2-3A double mutant in sir1\u2206 background had a higher loss-of-silencing rate at HMR\u03b1::GFP than the single mutants as measured by FACS.",
+      "claim_type": "EXPLICIT",
+      "source": "The dpb3\u2206 mcm2-3A double mutant had a higher loss rate than the single mutants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by FACS data shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:45:51.512427Z"
+    },
+    {
+      "id": "19838359-0687-45b6-acb9-5e89fc4c098f",
+      "content_id": "13720f7c-2ea9-4422-8ace-cadffff224f1",
+      "claim_id": "C61",
+      "claim": "Similar loss-of-silencing trends were observed using time-lapse fluorescence microscopy, albeit with overall higher loss rates than those seen with FACS.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar loss trends were observed using time-lapse fluorescence microscopy (Figure 4D), albeit with overall higher loss rates than those seen with FACS.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by time-lapse microscopy data shown in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:45:51.512427Z"
+    },
+    {
+      "id": "b6a40b9b-1647-4a2a-9cb5-3ebf6d958564",
+      "content_id": "13720f7c-2ea9-4422-8ace-cadffff224f1",
+      "claim_id": "C62",
+      "claim": "The vast majority of silenced cells in replisome mutant backgrounds still faithfully transmitted the silenced state.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we also noted that the vast majority of silenced cells still faithfully transmitted the silenced state in the replisome mutant backgrounds.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:45:51.512427Z"
+    },
+    {
+      "id": "3de358f6-f376-47c8-8e62-8ae54016113c",
+      "content_id": "13720f7c-2ea9-4422-8ace-cadffff224f1",
+      "claim_id": "C63",
+      "claim": "Any strain containing dpb3\u2206 in sir1\u2206 background had an increased establishment rate at HMR\u03b1::GFP.",
+      "claim_type": "EXPLICIT",
+      "source": "Curiously, any strain containing dpb3\u2206 had an increased establishment rate, whereas mcm2-3A had minimal, if any, effects on establishment rate (Figure 4E\u2013G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4E\u2013G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:45:51.512427Z"
+    },
+    {
+      "id": "63b05cd6-771f-49be-91d1-6f52be0b1fe9",
+      "content_id": "13720f7c-2ea9-4422-8ace-cadffff224f1",
+      "claim_id": "C64",
+      "claim": "mcm2-3A in sir1\u2206 background had minimal, if any, effects on establishment rate at HMR\u03b1::GFP.",
+      "claim_type": "EXPLICIT",
+      "source": "Curiously, any strain containing dpb3\u2206 had an increased establishment rate, whereas mcm2-3A had minimal, if any, effects on establishment rate (Figure 4E\u2013G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4E\u2013G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:45:51.512427Z"
+    },
+    {
+      "id": "2a22a4b6-59f7-4f32-93b3-8b5a8192e089",
+      "content_id": "13720f7c-2ea9-4422-8ace-cadffff224f1",
+      "claim_id": "C65",
+      "claim": "Any strain containing dpb3\u2206 in sir1\u2206 background showed elevated levels of HMR\u03b1::GFP expression in unsilenced cells, as measured by flow cytometry.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, any strain containing dpb3\u2206 showed elevated levels of HMR\u03b1::GFP expression in unsilenced cells, as measured by flow cytometry (Figure 4\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by flow cytometry data shown in Figure 4\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:45:51.512427Z"
+    },
+    {
+      "id": "3d3d074d-bf90-4f15-8dbf-010b3f63f2f0",
+      "content_id": "13720f7c-2ea9-4422-8ace-cadffff224f1",
+      "claim_id": "C66",
+      "claim": "dpb3\u2206 and mcm2-3A single mutants exhibit asymmetric parental H3-H4 tetramer inheritance.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, though dpb3\u2206 and mcm2-3A single mutants exhibit asymmetric parental H3-H4 tetramer inheritance (Yu et al., 2018; Petryk et al., 2018), it is likely that this asymmetry is not complete and some parental H3-H4 tetramers are still stochastically transmitted to each daughter chromatid during DNA replication.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Yu et al., 2018; Petryk et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:45:51.512427Z"
+    },
+    {
+      "id": "76ae97ea-2ed5-4cd1-b438-03e04c09fd49",
+      "content_id": "13720f7c-2ea9-4422-8ace-cadffff224f1",
+      "claim_id": "C67",
+      "claim": "The dpb3\u2206 mcm2-3A double mutant exhibits residual local inheritance of histone H4.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, the dpb3\u2206 mcm2-3A double mutant exhibits residual local inheritance of histone H4 (Schlissel and Rine, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Schlissel and Rine, 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:45:51.512427Z"
+    },
+    {
+      "id": "c213ec54-6c79-44ed-9899-8e137f6197cc",
+      "content_id": "13720f7c-2ea9-4422-8ace-cadffff224f1",
+      "claim_id": "C68",
+      "claim": "There was no clear correlation between silencing-loss rates and nucleosome number at HMR\u03b1::GFP in dpb3\u2206 and dpb3\u2206 mcm2-3A backgrounds in sir1\u2206.",
+      "claim_type": "EXPLICIT",
+      "source": "There was no clear correlation between silencing-loss rates and nucleosome number in these sensitized backgrounds (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by time-lapse microscopy data shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:45:51.512427Z"
+    },
+    {
+      "id": "a8ef168c-8bbd-4169-b68f-e82cdb68ce8e",
+      "content_id": "13720f7c-2ea9-4422-8ace-cadffff224f1",
+      "claim_id": "C69",
+      "claim": "Establishment-of-silencing rates at HMR\u03b1::GFP in replisome mutant backgrounds in sir1\u2206 were not strongly affected by nucleosome number, though there was a small increase in the establishment rate with fewer nucleosomes in dpb3\u2206 mcm2-3A.",
+      "claim_type": "EXPLICIT",
+      "source": "Establishment-of-silencing rates were also not strongly affected, though there was a small increase in the establishment rate with fewer nucleosomes in dpb3\u2206 mcm2-3A (Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by time-lapse microscopy data shown in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:45:51.512427Z"
+    },
+    {
+      "id": "6a07a886-88e4-4839-b011-eca8714b456f",
+      "content_id": "13720f7c-2ea9-4422-8ace-cadffff224f1",
+      "claim_id": "C70",
+      "claim": "Even when parental H3-H4 tetramer inheritance was disrupted and the number of parental H3-H4 tetramers available for inheritance at HMR was decreased, cells faithfully transmitted epigenetic transcriptional states.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, even when parental H3-H4 tetramer inheritance was disrupted and the number of parental H3-H4 tetramers available for inheritance at HMR was decreased, cells faithfully transmitted epigenetic transcriptional states.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data in Figure 5.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:45:51.512427Z"
+    },
+    {
+      "id": "87e2168a-d8e2-45e6-ab61-2960ca5c1200",
+      "content_id": "13720f7c-2ea9-4422-8ace-cadffff224f1",
+      "claim_id": "C71",
+      "claim": "Removal of silencers from heterochromatin via induced recombination demonstrates that silencers are necessary for maintenance of the silenced state.",
+      "claim_type": "EXPLICIT",
+      "source": "Removal of silencers from heterochromatin via induced recombination demonstrates that silencers are necessary for maintenance of the silenced state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge from prior studies.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:45:51.512427Z"
+    },
+    {
+      "id": "51c08231-d8d7-4edd-94fd-4517e3b47f9b",
+      "content_id": "13720f7c-2ea9-4422-8ace-cadffff224f1",
+      "claim_id": "C72",
+      "claim": "Induced silencer excision from HMR causes rapid loss of silencing in arrested cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, induced silencer excision from HMR causes rapid loss of silencing in arrested cells (Cheng and Gartenberg, 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Cheng and Gartenberg, 2000.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:45:51.512427Z"
+    },
+    {
+      "id": "02d73f90-5565-416b-90e4-1e74091ee067",
+      "content_id": "13720f7c-2ea9-4422-8ace-cadffff224f1",
+      "claim_id": "C73",
+      "claim": "Removal of silencers from chromatin in S. cerevisiae and Drosophila permits maintenance of silencing in arrested cells, but causes loss of silencing once the same cells subsequently complete one or two rounds of DNA replication.",
+      "claim_type": "EXPLICIT",
+      "source": "Studies at other loci in S. cerevisiae and Drosophila show that removal of silencers permits maintenance of silencing in arrested cells, but causes loss of silencing once the same cells subsequently complete one or two rounds of DNA replication (Holmes and Broach, 1996; Laprell et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Holmes and Broach, 1996; Laprell et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:45:51.512427Z"
+    },
+    {
+      "id": "3829a334-4105-4337-92d7-4cdc871f4a0d",
+      "content_id": "13720f7c-2ea9-4422-8ace-cadffff224f1",
+      "claim_id": "C74",
+      "claim": "The presence of modified histones is not sufficient for silencing maintenance or heritability, depending on the example under consideration.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, the presence of modified histones is not sufficient for silencing maintenance or heritability, depending on the example under consideration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the cited silencer-removal studies.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:45:51.512427Z"
+    },
+    {
+      "id": "6cdcd9cd-ba42-4ae8-a648-a13c53d4c9d7",
+      "content_id": "13720f7c-2ea9-4422-8ace-cadffff224f1",
+      "claim_id": "C75",
+      "claim": "Epigenetic states of HML and HMR in sir1\u2206 are a property of the locus rather than the cell, demonstrating that factors that determine these epigenetic states are inherited locally at HML and HMR respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, epigenetic states of HML and HMR in sir1\u2206 are a property of the locus rather than the cell, demonstrating that factors that determine these epigenetic states are inherited locally at HML and HMR respectively (Xu et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Xu et al., 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:45:51.512427Z"
+    },
+    {
+      "id": "80a11c92-ca76-4b52-aad7-a2bd4db434d1",
+      "content_id": "13720f7c-2ea9-4422-8ace-cadffff224f1",
+      "claim_id": "C76",
+      "claim": "Epigenetic inheritance of transcriptional states in heterochromatin in Arabidopsis demonstrates that the relevant epigenetic information is carried in cis.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar studies of an epigenetically-inherited heterochromatin state in Arabidopsis also demonstrate that the relevant epigenetic information is carried in cis (Berry et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Berry et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:45:51.512427Z"
+    },
+    {
+      "id": "d5b58064-194f-437a-b4de-3c30937bf5f7",
+      "content_id": "13720f7c-2ea9-4422-8ace-cadffff224f1",
+      "claim_id": "C77",
+      "claim": "Epigenetic inheritance of transcriptional states in heterochromatin is commonly accompanied by the ability to switch stochastically between states, a feature that implies the existence of imperfectly heritable epigenetic information.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, epigenetic inheritance of transcriptional states in heterochromatin is commonly accompanied by the ability to switch stochastically between states, a feature that implies the existence of imperfectly heritable epigenetic information.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a general observation about epigenetic systems.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:45:51.512427Z"
+    },
+    {
+      "id": "b0df133b-a6d5-4851-90f3-2112c81bbdd4",
+      "content_id": "13720f7c-2ea9-4422-8ace-cadffff224f1",
+      "claim_id": "C78",
+      "claim": "Other cis-acting factors besides modified H3-H4 tetramers determine the epigenetic state of HMR in sir1\u2206.",
+      "claim_type": "IMPLICIT",
+      "source": "Though modified H3-H4 tetramers could theoretically be cis-acting, imperfectly heritable units of information, our evidence to the contrary suggests that other cis-acting factors determine the epigenetic state of HMR in sir1\u2206.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion inferred from the experimental results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:45:51.512427Z"
+    },
+    {
+      "id": "8872f5d9-3183-4635-9b09-f3de85407d13",
+      "content_id": "13720f7c-2ea9-4422-8ace-cadffff224f1",
+      "claim_id": "C79",
+      "claim": "One possibility is that the silencer complex self-templates by cooperative oligomerization of silencing factors, and that stochastic changes in epigenetic states reflect the formation or dissolution of such a silencer complex.",
+      "claim_type": "EXPLICIT",
+      "source": "Given the importance of silencers in inheritance of the silenced chromatin state, one possibility is that the silencer complex self-templates by cooperative oligomerization of silencing factors, and that stochastic changes in epigenetic states reflect the formation or dissolution of such a silencer complex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative hypothesis proposed by the authors.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:45:51.512427Z"
+    },
+    {
+      "id": "9708d3d3-61dc-438f-a6c5-6635719a6003",
+      "content_id": "13720f7c-2ea9-4422-8ace-cadffff224f1",
+      "claim_id": "C80",
+      "claim": "Chromatin replicated in the presence of cycloheximide, which blocks the synthesis of new histones, produces daughter chromatids with roughly half the number of nucleosomes, and these nucleosomes appear randomly dispersed along both daughter chromatids.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, chromatin replicated in the presence of cycloheximide, which blocks the synthesis of new histones, produces daughter chromatids with roughly half the number of nucleosomes, and these nucleosomes appear randomly dispersed along both daughter chromatids (Sogo et al., 1986; Cusick et al., 1984).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Sogo et al., 1986; Cusick et al., 1984.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:45:51.512427Z"
+    },
+    {
+      "id": "4a948c8c-11a8-4e3f-9ccb-54d7bc278648",
+      "content_id": "13720f7c-2ea9-4422-8ace-cadffff224f1",
+      "claim_id": "C81",
+      "claim": "Mutations that reduce tetramer inheritance (dpb3\u2206 and mcm2-3A) increase the frequency of silencing loss at HMR.",
+      "claim_type": "EXPLICIT",
+      "source": "Using the CRASH and FLAME assays, we found mild but significant increases in HMR silencing-loss rates in both dpb3\u2206 and mcm2-3A single mutants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figures 3 and 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:45:51.512427Z"
+    },
+    {
+      "id": "f7e96418-2a87-458b-84a2-5e0385b12e37",
+      "content_id": "13720f7c-2ea9-4422-8ace-cadffff224f1",
+      "claim_id": "C82",
+      "claim": "The dpb3\u2206 mcm2-3A double mutant exhibited higher silencing-loss rates at HMR than either of the single mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, the dpb3\u2206 mcm2-3A double mutant exhibited higher silencing-loss rates than either of the single mutants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figures 3 and 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:45:51.512427Z"
+    },
+    {
+      "id": "54393651-022a-4fab-8c5e-0eb251258c02",
+      "content_id": "13720f7c-2ea9-4422-8ace-cadffff224f1",
+      "claim_id": "C83",
+      "claim": "Cells with moderate or severe reductions in inheritance of parental H3-H4 tetramers still exhibited efficient inheritance of the silenced state.",
+      "claim_type": "EXPLICIT",
+      "source": "Considering the variety of histone modifications that parental H3-H4 tetramers can carry through DNA replication, it was striking that cells with moderate or severe reductions in inheritance of parental H3-H4 tetramers still exhibited efficient inheritance of the silenced state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:45:51.512427Z"
+    },
+    {
+      "id": "b6302ff2-112d-4434-a8d3-8bcfd405e842",
+      "content_id": "13720f7c-2ea9-4422-8ace-cadffff224f1",
+      "claim_id": "C84",
+      "claim": "Some parental H3-H4 tetramers are still transmitted to both daughter chromatids in replisome mutant backgrounds.",
+      "claim_type": "EXPLICIT",
+      "source": "Though replisome mutants exhibit defects in parental H3-H4 tetramer inheritance, some tetramers are still transmitted to both daughter chromatids in replisome mutant backgrounds (Yu et al., 2018; Gan et al., 2018; Schlissel and Rine, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Yu et al., 2018; Gan et al., 2018; Schlissel and Rine, 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:45:51.512427Z"
+    },
+    {
+      "id": "85b59c47-abe2-4dd0-bfef-1380e9a8a4bb",
+      "content_id": "13720f7c-2ea9-4422-8ace-cadffff224f1",
+      "claim_id": "C85",
+      "claim": "Cells with both reduced parental H3-H4 tetramer inheritance and a reduction in the number of tetramers available for inheritance at HMR exhibited a surprisingly robust ability to transmit the silenced state.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, cells with both reduced parental H3-H4 tetramer inheritance and a reduction in the number of tetramers available for inheritance at HMR exhibited a surprisingly robust ability to transmit the silenced state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data in Figure 5.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:45:51.512427Z"
+    },
+    {
+      "id": "1686df4b-ceb6-4434-847d-fdc2caed72c3",
+      "content_id": "13720f7c-2ea9-4422-8ace-cadffff224f1",
+      "claim_id": "C86",
+      "claim": "Inheritance of parental H3-H4 tetramers has little or no impact on epigenetic inheritance of the silenced state of HMR.",
+      "claim_type": "EXPLICIT",
+      "source": "These data strongly suggested that inheritance of parental H3-H4 tetramers has little or no impact on epigenetic inheritance of the silenced state of HMR.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion inferred from all the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:45:51.512427Z"
+    },
+    {
+      "id": "47d968f3-8199-4f6f-8ac0-60923b551e73",
+      "content_id": "13720f7c-2ea9-4422-8ace-cadffff224f1",
+      "claim_id": "C87",
+      "claim": "The expressed state of HMR in sir1\u2206 cells is formally an epigenetic state: it is heritable through cell divisions and can stochastically switch to the silenced state.",
+      "claim_type": "EXPLICIT",
+      "source": "The expressed state of HMR in sir1\u2206 cells is formally an epigenetic state: it is heritable through cell divisions and can stochastically switch to the silenced state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:45:51.512427Z"
+    },
+    {
+      "id": "2fa48947-d045-40ec-b112-213ad97e30b4",
+      "content_id": "13720f7c-2ea9-4422-8ace-cadffff224f1",
+      "claim_id": "C88",
+      "claim": "Histone modifications associated with active transcription can be transmitted through DNA replication.",
+      "claim_type": "EXPLICIT",
+      "source": "Histone modifications associated with active transcription can be transmitted through DNA replication (Alabert et al., 2015; Rever\u00f3n-G\u00f3mez et al., 2018) and multiple transcription factors can bind to the histone modifications they generate (Jacobson et al., 2000; Owen et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Alabert et al., 2015; Rever\u00f3n-G\u00f3mez et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:45:51.512427Z"
+    },
+    {
+      "id": "ed1b50a0-ffbf-4191-a6d6-ec8df540957c",
+      "content_id": "13720f7c-2ea9-4422-8ace-cadffff224f1",
+      "claim_id": "C89",
+      "claim": "Multiple transcription factors can bind to the histone modifications they generate.",
+      "claim_type": "EXPLICIT",
+      "source": "Histone modifications associated with active transcription can be transmitted through DNA replication (Alabert et al., 2015; Rever\u00f3n-G\u00f3mez et al., 2018) and multiple transcription factors can bind to the histone modifications they generate (Jacobson et al., 2000; Owen et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Jacobson et al., 2000; Owen et al., 2000.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:45:51.512427Z"
+    },
+    {
+      "id": "11208a4f-3204-40f7-8f91-b451fdb7201b",
+      "content_id": "13720f7c-2ea9-4422-8ace-cadffff224f1",
+      "claim_id": "C90",
+      "claim": "A model that incorporates positive feedback loops between histone modifications and both silencing machinery and transcription factors, along with parental H3-H4 tetramer inheritance, generates robust bistable chromatin states.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, a model that incorporates these positive feedback loops and parental H3-H4 tetramer inheritance generates robust bistable chromatin states (Dodd et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Dodd et al., 2007.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:45:51.512427Z"
+    },
+    {
+      "id": "d878b384-71d4-4411-a129-b1ea8756fdd0",
+      "content_id": "13720f7c-2ea9-4422-8ace-cadffff224f1",
+      "claim_id": "C91",
+      "claim": "A model incorporating positive feedback loops and parental H3-H4 tetramer inheritance predicts that random segregation of parental H3-H4 tetramers would lead to loss-of-chromatin-state events, and that decreasing chromatin domain size would also decrease the heritability of both the expressed and silenced states.",
+      "claim_type": "EXPLICIT",
+      "source": "This model also predicts that random segregation of parental H3-H4 tetramers would lead to loss-of-chromatin-state events, and that decreasing chromatin domain size would also decrease the heritability of both the expressed and silenced states.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prediction from the model described in Dodd et al., 2007.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:45:51.512427Z"
+    },
+    {
+      "id": "b03b34c5-8622-4845-86ce-77efb0cd4ab5",
+      "content_id": "13720f7c-2ea9-4422-8ace-cadffff224f1",
+      "claim_id": "C92",
+      "claim": "Shorter versions of HMR did not strongly affect inheritance of the expressed state of HMR.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we found that shorter versions of HMR did not strongly affect inheritance of the expressed state of HMR.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:45:51.512427Z"
+    },
+    {
+      "id": "36b014a0-03ee-457e-bbbc-513071e7d97a",
+      "content_id": "13720f7c-2ea9-4422-8ace-cadffff224f1",
+      "claim_id": "C93",
+      "claim": "dpb3\u2206 exhibited a ~3-fold increase in the rate of silencing establishment at HMR\u03b1::GFP in sir1\u2206.",
+      "claim_type": "EXPLICIT",
+      "source": "Curiously, dpb3\u2206 exhibited a ~3-fold increase in the rate of silencing establishment and mcm2-3A had no observable effect (see Figure 4G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:45:51.512427Z"
+    },
+    {
+      "id": "bcd6f61a-1efe-4998-96d2-b793107fa630",
+      "content_id": "13720f7c-2ea9-4422-8ace-cadffff224f1",
+      "claim_id": "C94",
+      "claim": "mcm2-3A had no observable effect on the rate of silencing establishment at HMR\u03b1::GFP in sir1\u2206.",
+      "claim_type": "EXPLICIT",
+      "source": "Curiously, dpb3\u2206 exhibited a ~3-fold increase in the rate of silencing establishment and mcm2-3A had no observable effect (see Figure 4G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:45:51.512427Z"
+    },
+    {
+      "id": "ba03c536-6f98-443e-b48b-3094ecbdee69",
+      "content_id": "13720f7c-2ea9-4422-8ace-cadffff224f1",
+      "claim_id": "C95",
+      "claim": "dpb3\u2206 but not mcm2-3A led to elevated levels of GFP expression when HMR\u03b1::GFP was fully expressed.",
+      "claim_type": "EXPLICIT",
+      "source": "It is also important to note that dpb3\u2206 but not mcm2-3A led to elevated levels of GFP expression when HMR\u03b1::GFP was fully expressed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:45:51.512427Z"
+    },
+    {
+      "id": "9ac6d8e1-206e-42cb-ace2-51e64d4ef5e5",
+      "content_id": "13720f7c-2ea9-4422-8ace-cadffff224f1",
+      "claim_id": "C96",
+      "claim": "Recruitment of the transcriptional activator Ppr1 to HMR causes both increased transcription in expressed cells and an increased establishment rate in sir1\u2206.",
+      "claim_type": "EXPLICIT",
+      "source": "However, recruitment of the transcriptional activator Ppr1 to HMR causes both increased transcription in expressed cells and an increased establishment rate in sir1\u2206 (Xu et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Xu et al., 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:45:51.512427Z"
+    },
+    {
+      "id": "9d841e91-d38a-4302-b3b6-5727a66bdaed",
+      "content_id": "13720f7c-2ea9-4422-8ace-cadffff224f1",
+      "claim_id": "C97",
+      "claim": "The fidelity of H3-H4 tetramer inheritance has minimal consequences for heritability of the silenced state.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, our results suggested that the fidelity of H3-H4 tetramer inheritance has minimal consequences for heritability of the silenced state and may affect heritability of the expressed state in some contexts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from all the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:45:51.512427Z"
+    },
+    {
+      "id": "e81a93a1-0390-4124-aac1-6f5a8e73b42a",
+      "content_id": "13720f7c-2ea9-4422-8ace-cadffff224f1",
+      "claim_id": "C98",
+      "claim": "The fidelity of H3-H4 tetramer inheritance may affect heritability of the expressed state in some contexts.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, our results suggested that the fidelity of H3-H4 tetramer inheritance has minimal consequences for heritability of the silenced state and may affect heritability of the expressed state in some contexts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data, particularly regarding dpb3\u2206.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:45:51.512427Z"
+    },
+    {
+      "id": "af298c8f-fb16-4f8a-b675-1dfd215afcc5",
+      "content_id": "13720f7c-2ea9-4422-8ace-cadffff224f1",
+      "claim_id": "C99",
+      "claim": "The findings raise doubts regarding the model in which histones are significant carriers of epigenetic memory in S. cerevisiae.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings raised doubts regarding the model in which histones are significant carriers of epigenetic memory in S. cerevisiae.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion of the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:45:51.512427Z"
+    },
+    {
+      "id": "48d8c4cf-4272-4a43-badd-16fb236d4ef2",
+      "content_id": "13720f7c-2ea9-4422-8ace-cadffff224f1",
+      "claim_id": "C100",
+      "claim": "All strains used in this study were derived from the W303 background.",
+      "claim_type": "EXPLICIT",
+      "source": "All strains were derived from the W303 background.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:45:51.512427Z"
+    },
+    {
+      "id": "af8f8ca3-c1d9-4d13-9c00-bda44815f1fa",
+      "content_id": "13720f7c-2ea9-4422-8ace-cadffff224f1",
+      "claim_id": "C101",
+      "claim": "The generation time of DPB3 MCM2 (JRY11471) was 1.96 hours in CSM media at 30\u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "The generation time of DPB3 MCM2 (JRY11471) was 1.96 hours in CSM media at 30\u00b0C.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a measured experimental parameter.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:45:51.512427Z"
+    },
+    {
+      "id": "782ac07c-7d8a-446f-b8ff-79161b28734e",
+      "content_id": "13720f7c-2ea9-4422-8ace-cadffff224f1",
+      "claim_id": "C102",
+      "claim": "Similar generation times were observed for all replisome mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar generation times were observed for all replisome mutants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an experimental observation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:45:51.512427Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "ef2511fd-d5b1-448a-81b5-cd6fa369c313",
+      "content_id": "13720f7c-2ea9-4422-8ace-cadffff224f1",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The manuscript describes a widely accepted model in which H3-H4 tetramers carry epigenetic memory through DNA replication. According to this model, random segregation of tetramers during replication predicts that shorter heterochromatic domains would be less stable due to increased probability of asymmetric tetramer inheritance.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C5 accurately describe established knowledge and theoretical predictions from the histone inheritance model. These claims are well-supported by citations to prior literature (C3, C20) and represent logical inferences from the model (C4, C5). This provides the necessary background for testing the model's predictions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:45:51.512427Z"
+    },
+    {
+      "id": "eb404d23-b08b-4400-a6ed-08df29cd1923",
+      "content_id": "13720f7c-2ea9-4422-8ace-cadffff224f1",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Shortening the heterochromatic domain at HMR by deleting nucleosomes (from 14 to 7 nucleosomes) had no significant impact on silencing-loss rates, contrary to predictions from the histone inheritance model. The observed silencing-loss rate remained approximately 0.1% of cell divisions regardless of domain size, while the model predicted rates increasing from 0.006% to 1% as nucleosome number decreased.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C38-C40 are supported by experimental data from the CRASH assay (Figures 1E-F) and flow cytometry measurements. MNase-Seq data (C33-C34) confirms nucleosome positions were maintained after deletions. The discrepancy between predicted (C35, C37) and observed (C36, C38-C39) silencing-loss rates provides strong evidence against the histone inheritance model. Statistical analysis shows only minor differences between strains.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:45:51.512427Z"
+    },
+    {
+      "id": "ee95c2b3-e9dc-4a43-bd8e-70d798f70e21",
+      "content_id": "13720f7c-2ea9-4422-8ace-cadffff224f1",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "In sir1\u0394 mutants with weakened silencer activity, HMR exists in bistable epigenetic states (silenced or expressed) that are mitotically heritable. Reducing nucleosome number at HMR (from 12 to 6 nucleosomes) did not significantly affect the rates of silencing loss or establishment, nor did it affect inheritance of the expressed state.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C48 are supported by live-cell imaging (Figure 2A, Video 1), time-lapse microscopy (Figure 2D-E), and flow cytometry data (Figure 2\u2014figure supplements 1-2). MNase-Seq confirms nucleosome positions (C46). The lack of effect of domain size on epigenetic switching rates in a sensitized background (weakened silencer activity) provides additional evidence against histone-based memory. Statistical analysis shows no significant differences between strains with different nucleosome numbers.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:45:51.512427Z"
+    },
+    {
+      "id": "69dd22de-3f29-4a16-aa40-499366cccbcb",
+      "content_id": "13720f7c-2ea9-4422-8ace-cadffff224f1",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Replisome mutations that disrupt symmetric H3-H4 tetramer inheritance (dpb3\u0394 and mcm2-3A) caused mild but significant increases in silencing-loss rates at HMR. The dpb3\u0394 mcm2-3A double mutant showed higher silencing-loss rates than either single mutant.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53-C55, C81-C82 are supported by CRASH assay data (Figure 3A-B) showing statistically significant increases in silencing loss. Prior work (C49-C52, cited studies) establishes that these mutations disrupt tetramer inheritance. However, the magnitude of the effect is modest, and the vast majority of cells still maintain silencing (C62, C83), suggesting histones play a minor role in epigenetic inheritance.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:45:51.512427Z"
+    },
+    {
+      "id": "bfd20572-1980-489a-8b8b-d234c582602e",
+      "content_id": "13720f7c-2ea9-4422-8ace-cadffff224f1",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "In sir1\u0394 background, replisome mutants (dpb3\u0394, mcm2-3A, dpb3\u0394 mcm2-3A) showed increased frequencies of expressed cells and higher silencing-loss rates compared to wild type, as measured by FACS and time-lapse microscopy. However, the vast majority of silenced cells still faithfully transmitted the silenced state. Strains containing dpb3\u0394 showed increased silencing establishment rates and elevated GFP expression in unsilenced cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57-C65 are supported by flow cytometry (Figure 4\u2014figure supplement 1, Table 1), FACS-based switching rate measurements (Figure 4B-C, E-F), and time-lapse microscopy (Figure 4D, G). The mathematical modeling of switching rates appears sound. The dpb3\u0394-specific effects on establishment (C63) and expression levels (C65) are intriguing but complicate interpretation. The key observation is that despite disrupted tetramer inheritance, most cells maintain epigenetic states (C62).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:45:51.512427Z"
+    },
+    {
+      "id": "f9032676-2c5a-408c-8314-620b31f562aa",
+      "content_id": "13720f7c-2ea9-4422-8ace-cadffff224f1",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Combining replisome mutations that disrupt tetramer inheritance (dpb3\u0394 and/or mcm2-3A) with reduced nucleosome number at HMR showed no clear correlation between nucleosome number and silencing-loss rates. Even with both reduced tetramer inheritance and fewer nucleosomes available for inheritance, cells exhibited robust transmission of epigenetic states.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C68-C70, C85 are supported by time-lapse microscopy data (Figure 5B-C) showing no correlation between nucleosome number and switching rates in replisome mutant backgrounds. Prior work (C66-C67, C84) establishes that these mutants retain some residual tetramer inheritance. This double perturbation experiment provides the strongest evidence against histone-based epigenetic memory, as even the combination of reduced tetramer inheritance and fewer nucleosomes does not dramatically destabilize silencing.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:45:51.512427Z"
+    },
+    {
+      "id": "4fa8ece6-50eb-46de-95b2-5bcb8b0b3a3b",
+      "content_id": "13720f7c-2ea9-4422-8ace-cadffff224f1",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The authors conclude that histones carry little or no memory of the heterochromatin state through DNA replication in S. cerevisiae, and that the fidelity of H3-H4 tetramer inheritance has minimal consequences for heritability of the silenced state. These findings raise doubts about the model in which histones are significant carriers of epigenetic memory.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The main conclusions (C8, C86, C97, C99) are well-supported by the collective experimental evidence: (1) domain size does not affect silencing stability in wild-type or sir1\u0394 backgrounds; (2) replisome mutations that disrupt tetramer inheritance cause only modest increases in silencing loss; (3) combining reduced tetramer inheritance with reduced nucleosome number does not dramatically destabilize silencing. These findings consistently contradict predictions from the histone inheritance model. The conclusions are appropriately cautious, acknowledging that histones may play a minor role (C97) while arguing against histones as the primary carriers of epigenetic memory.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:45:51.512427Z"
+    },
+    {
+      "id": "6b8f82c8-71b6-4732-b7e1-fac96602911e",
+      "content_id": "13720f7c-2ea9-4422-8ace-cadffff224f1",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The authors discuss prior evidence that silencers are necessary for heterochromatin maintenance and that epigenetic information is transmitted locally in cis. They propose that other cis-acting factors besides modified H3-H4 tetramers determine epigenetic states, potentially through self-templating of silencer complexes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C71-C77 accurately cite prior literature on silencer removal experiments and cis-acting epigenetic inheritance. The inference that other cis-acting factors determine epigenetic states (C78) is reasonable given the experimental results. The hypothesis about silencer complex self-templating (C79) is appropriately presented as speculation. This discussion provides important context for interpreting the negative results regarding histone-based memory.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:45:51.512427Z"
+    },
+    {
+      "id": "16ced718-4a31-48a5-a272-02e89030e272",
+      "content_id": "13720f7c-2ea9-4422-8ace-cadffff224f1",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The expressed state of HMR in sir1\u0394 is also an epigenetic state. The authors discuss models incorporating positive feedback loops between histone modifications and transcription factors, which predict that domain size should affect heritability of both silenced and expressed states. The dpb3\u0394 mutation specifically increased silencing establishment rates and GFP expression levels, suggesting it may affect inheritance of the expressed state.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C87 is supported by experimental observations. Claims C88-C91 accurately describe prior models. However, the interpretation of dpb3\u0394-specific effects (C93-C95, C98) is complicated by the paradoxical observation that increased transcription correlates with increased establishment rather than decreased establishment. The authors acknowledge this paradox (C96) but the mechanism remains unclear. The conclusion that tetramer inheritance may affect the expressed state (C98) is tentative and requires further investigation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:45:51.512427Z"
+    },
+    {
+      "id": "85ec769e-c6a8-4124-8ed8-835bc17e57d3",
+      "content_id": "13720f7c-2ea9-4422-8ace-cadffff224f1",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The manuscript provides extensive background on epigenetic inheritance, histone modifications, nucleosome dynamics during replication, and the Sir-mediated silencing system in S. cerevisiae. This includes descriptions of prior studies supporting and challenging the histone inheritance model.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9-C30, C41, C80 accurately describe established knowledge in the field, supported by appropriate citations. These claims provide essential context for understanding the experimental design and interpreting the results. The authors present a balanced view of prior evidence both supporting (C15-C17) and challenging (C18-C19, C25) the histone inheritance model.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:45:51.512427Z"
+    },
+    {
+      "id": "0cf664e1-b776-43b9-addd-62b3c7e9b301",
+      "content_id": "13720f7c-2ea9-4422-8ace-cadffff224f1",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "All strains were derived from the W303 background, and replisome mutants showed similar generation times to wild type (approximately 1.96 hours in CSM media at 30\u00b0C).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These methodological details (C100-C102) are clearly stated and important for reproducibility. The similar generation times across genotypes indicate that the replisome mutations do not cause gross growth defects that might confound interpretation of silencing phenotypes.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:45:51.512427Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "2596d513-733f-47c9-a37d-cd1e2bb9bfbb",
+      "result_id": "ef2511fd-d5b1-448a-81b5-cd6fa369c313"
+    },
+    {
+      "claim_id": "efadf5ab-5cf1-431e-831f-15f909bb6cf8",
+      "result_id": "ef2511fd-d5b1-448a-81b5-cd6fa369c313"
+    },
+    {
+      "claim_id": "4baddb5c-8811-4d27-a786-e8582ec7b457",
+      "result_id": "ef2511fd-d5b1-448a-81b5-cd6fa369c313"
+    },
+    {
+      "claim_id": "69675817-5fb9-4988-aff0-dd7f9826105a",
+      "result_id": "ef2511fd-d5b1-448a-81b5-cd6fa369c313"
+    },
+    {
+      "claim_id": "085fe087-a71d-4647-b127-d145986eaefa",
+      "result_id": "ef2511fd-d5b1-448a-81b5-cd6fa369c313"
+    },
+    {
+      "claim_id": "871b5f7c-af55-4263-a856-291d4f10423e",
+      "result_id": "eb404d23-b08b-4400-a6ed-08df29cd1923"
+    },
+    {
+      "claim_id": "55ef94d8-dc91-4922-9491-821467517b63",
+      "result_id": "eb404d23-b08b-4400-a6ed-08df29cd1923"
+    },
+    {
+      "claim_id": "ea3530a0-e92d-4197-9685-d49b96611b40",
+      "result_id": "eb404d23-b08b-4400-a6ed-08df29cd1923"
+    },
+    {
+      "claim_id": "355c390b-5dcd-422b-a3c6-42e079f346a5",
+      "result_id": "eb404d23-b08b-4400-a6ed-08df29cd1923"
+    },
+    {
+      "claim_id": "52513d9f-cf58-4f47-b4bc-daa2713a13a4",
+      "result_id": "eb404d23-b08b-4400-a6ed-08df29cd1923"
+    },
+    {
+      "claim_id": "1a1988ee-39aa-4202-88a5-c6e7e047c1a4",
+      "result_id": "eb404d23-b08b-4400-a6ed-08df29cd1923"
+    },
+    {
+      "claim_id": "4a01a3a3-17a6-4c8f-be70-890cba4140bc",
+      "result_id": "eb404d23-b08b-4400-a6ed-08df29cd1923"
+    },
+    {
+      "claim_id": "07fa847d-7df5-4034-9421-e8aec8faec9c",
+      "result_id": "eb404d23-b08b-4400-a6ed-08df29cd1923"
+    },
+    {
+      "claim_id": "daf46aa6-3e59-40ba-8d59-d8b42cebf18a",
+      "result_id": "eb404d23-b08b-4400-a6ed-08df29cd1923"
+    },
+    {
+      "claim_id": "ee271ea1-88d0-428e-b153-9d61678004fb",
+      "result_id": "ee95c2b3-e9dc-4a43-bd8e-70d798f70e21"
+    },
+    {
+      "claim_id": "a598a124-bdf5-4ffc-ace0-8f751cced8c9",
+      "result_id": "ee95c2b3-e9dc-4a43-bd8e-70d798f70e21"
+    },
+    {
+      "claim_id": "bdbd1577-d77c-479a-b6c0-72681c515ddd",
+      "result_id": "ee95c2b3-e9dc-4a43-bd8e-70d798f70e21"
+    },
+    {
+      "claim_id": "cf90a526-6f86-4f87-9e1b-c22587328a86",
+      "result_id": "ee95c2b3-e9dc-4a43-bd8e-70d798f70e21"
+    },
+    {
+      "claim_id": "e9014cbf-b934-4582-9a4f-e5b25c8fd8b3",
+      "result_id": "ee95c2b3-e9dc-4a43-bd8e-70d798f70e21"
+    },
+    {
+      "claim_id": "277ccc0a-8c78-4c8a-ae54-39115c2b114d",
+      "result_id": "ee95c2b3-e9dc-4a43-bd8e-70d798f70e21"
+    },
+    {
+      "claim_id": "e38dc4d1-1aa5-4cd6-a77d-f70af0ac522a",
+      "result_id": "ee95c2b3-e9dc-4a43-bd8e-70d798f70e21"
+    },
+    {
+      "claim_id": "7ff98828-2758-4641-9231-189ec7683edc",
+      "result_id": "ee95c2b3-e9dc-4a43-bd8e-70d798f70e21"
+    },
+    {
+      "claim_id": "787ea239-abac-497e-9caf-a9d341f1a769",
+      "result_id": "ee95c2b3-e9dc-4a43-bd8e-70d798f70e21"
+    },
+    {
+      "claim_id": "b03b34c5-8622-4845-86ce-77efb0cd4ab5",
+      "result_id": "ee95c2b3-e9dc-4a43-bd8e-70d798f70e21"
+    },
+    {
+      "claim_id": "2ab115c1-bccb-4ccb-9633-ebe774495878",
+      "result_id": "69dd22de-3f29-4a16-aa40-499366cccbcb"
+    },
+    {
+      "claim_id": "7c3637b3-18b1-45fd-a9f6-05bf78af441f",
+      "result_id": "69dd22de-3f29-4a16-aa40-499366cccbcb"
+    },
+    {
+      "claim_id": "954bf2a5-b5c3-4f22-b1a9-8e357fae76ad",
+      "result_id": "69dd22de-3f29-4a16-aa40-499366cccbcb"
+    },
+    {
+      "claim_id": "e6b6370d-b615-421f-b7a7-73b4f26a5449",
+      "result_id": "69dd22de-3f29-4a16-aa40-499366cccbcb"
+    },
+    {
+      "claim_id": "784b1b1b-f6bc-4ac6-8b98-3388dd831cb3",
+      "result_id": "69dd22de-3f29-4a16-aa40-499366cccbcb"
+    },
+    {
+      "claim_id": "97400ffc-96fe-4186-b878-98379d933a45",
+      "result_id": "69dd22de-3f29-4a16-aa40-499366cccbcb"
+    },
+    {
+      "claim_id": "9f598343-79e9-4c08-b438-619acaf10e2f",
+      "result_id": "69dd22de-3f29-4a16-aa40-499366cccbcb"
+    },
+    {
+      "claim_id": "4a948c8c-11a8-4e3f-9ccb-54d7bc278648",
+      "result_id": "69dd22de-3f29-4a16-aa40-499366cccbcb"
+    },
+    {
+      "claim_id": "f7e96418-2a87-458b-84a2-5e0385b12e37",
+      "result_id": "69dd22de-3f29-4a16-aa40-499366cccbcb"
+    },
+    {
+      "claim_id": "34c3cb5b-838a-4adb-ae25-a2f85ddbcafc",
+      "result_id": "bfd20572-1980-489a-8b8b-d234c582602e"
+    },
+    {
+      "claim_id": "c23a17d0-3fb9-4d74-9169-db0f66571631",
+      "result_id": "bfd20572-1980-489a-8b8b-d234c582602e"
+    },
+    {
+      "claim_id": "2f200d74-74a8-4f51-b7be-26ebbe033893",
+      "result_id": "bfd20572-1980-489a-8b8b-d234c582602e"
+    },
+    {
+      "claim_id": "893d39a6-d945-4d51-a5e8-874b224af139",
+      "result_id": "bfd20572-1980-489a-8b8b-d234c582602e"
+    },
+    {
+      "claim_id": "19838359-0687-45b6-acb9-5e89fc4c098f",
+      "result_id": "bfd20572-1980-489a-8b8b-d234c582602e"
+    },
+    {
+      "claim_id": "b6a40b9b-1647-4a2a-9cb5-3ebf6d958564",
+      "result_id": "bfd20572-1980-489a-8b8b-d234c582602e"
+    },
+    {
+      "claim_id": "3de358f6-f376-47c8-8e62-8ae54016113c",
+      "result_id": "bfd20572-1980-489a-8b8b-d234c582602e"
+    },
+    {
+      "claim_id": "63b05cd6-771f-49be-91d1-6f52be0b1fe9",
+      "result_id": "bfd20572-1980-489a-8b8b-d234c582602e"
+    },
+    {
+      "claim_id": "2a22a4b6-59f7-4f32-93b3-8b5a8192e089",
+      "result_id": "bfd20572-1980-489a-8b8b-d234c582602e"
+    },
+    {
+      "claim_id": "3d3d074d-bf90-4f15-8dbf-010b3f63f2f0",
+      "result_id": "f9032676-2c5a-408c-8314-620b31f562aa"
+    },
+    {
+      "claim_id": "76ae97ea-2ed5-4cd1-b438-03e04c09fd49",
+      "result_id": "f9032676-2c5a-408c-8314-620b31f562aa"
+    },
+    {
+      "claim_id": "c213ec54-6c79-44ed-9899-8e137f6197cc",
+      "result_id": "f9032676-2c5a-408c-8314-620b31f562aa"
+    },
+    {
+      "claim_id": "a8ef168c-8bbd-4169-b68f-e82cdb68ce8e",
+      "result_id": "f9032676-2c5a-408c-8314-620b31f562aa"
+    },
+    {
+      "claim_id": "6a07a886-88e4-4839-b011-eca8714b456f",
+      "result_id": "f9032676-2c5a-408c-8314-620b31f562aa"
+    },
+    {
+      "claim_id": "b6302ff2-112d-4434-a8d3-8bcfd405e842",
+      "result_id": "f9032676-2c5a-408c-8314-620b31f562aa"
+    },
+    {
+      "claim_id": "85b59c47-abe2-4dd0-bfef-1380e9a8a4bb",
+      "result_id": "f9032676-2c5a-408c-8314-620b31f562aa"
+    },
+    {
+      "claim_id": "19b1c397-7d5f-4019-a587-d2e5d7d922cf",
+      "result_id": "4fa8ece6-50eb-46de-95b2-5bcb8b0b3a3b"
+    },
+    {
+      "claim_id": "1686df4b-ceb6-4434-847d-fdc2caed72c3",
+      "result_id": "4fa8ece6-50eb-46de-95b2-5bcb8b0b3a3b"
+    },
+    {
+      "claim_id": "9d841e91-d38a-4302-b3b6-5727a66bdaed",
+      "result_id": "4fa8ece6-50eb-46de-95b2-5bcb8b0b3a3b"
+    },
+    {
+      "claim_id": "af298c8f-fb16-4f8a-b675-1dfd215afcc5",
+      "result_id": "4fa8ece6-50eb-46de-95b2-5bcb8b0b3a3b"
+    },
+    {
+      "claim_id": "87e2168a-d8e2-45e6-ab61-2960ca5c1200",
+      "result_id": "6b8f82c8-71b6-4732-b7e1-fac96602911e"
+    },
+    {
+      "claim_id": "51c08231-d8d7-4edd-94fd-4517e3b47f9b",
+      "result_id": "6b8f82c8-71b6-4732-b7e1-fac96602911e"
+    },
+    {
+      "claim_id": "02d73f90-5565-416b-90e4-1e74091ee067",
+      "result_id": "6b8f82c8-71b6-4732-b7e1-fac96602911e"
+    },
+    {
+      "claim_id": "3829a334-4105-4337-92d7-4cdc871f4a0d",
+      "result_id": "6b8f82c8-71b6-4732-b7e1-fac96602911e"
+    },
+    {
+      "claim_id": "6cdcd9cd-ba42-4ae8-a648-a13c53d4c9d7",
+      "result_id": "6b8f82c8-71b6-4732-b7e1-fac96602911e"
+    },
+    {
+      "claim_id": "80a11c92-ca76-4b52-aad7-a2bd4db434d1",
+      "result_id": "6b8f82c8-71b6-4732-b7e1-fac96602911e"
+    },
+    {
+      "claim_id": "d5b58064-194f-437a-b4de-3c30937bf5f7",
+      "result_id": "6b8f82c8-71b6-4732-b7e1-fac96602911e"
+    },
+    {
+      "claim_id": "b0df133b-a6d5-4851-90f3-2112c81bbdd4",
+      "result_id": "6b8f82c8-71b6-4732-b7e1-fac96602911e"
+    },
+    {
+      "claim_id": "8872f5d9-3183-4635-9b09-f3de85407d13",
+      "result_id": "6b8f82c8-71b6-4732-b7e1-fac96602911e"
+    },
+    {
+      "claim_id": "47d968f3-8199-4f6f-8ac0-60923b551e73",
+      "result_id": "16ced718-4a31-48a5-a272-02e89030e272"
+    },
+    {
+      "claim_id": "2fa48947-d045-40ec-b112-213ad97e30b4",
+      "result_id": "16ced718-4a31-48a5-a272-02e89030e272"
+    },
+    {
+      "claim_id": "ed1b50a0-ffbf-4191-a6d6-ec8df540957c",
+      "result_id": "16ced718-4a31-48a5-a272-02e89030e272"
+    },
+    {
+      "claim_id": "11208a4f-3204-40f7-8f91-b451fdb7201b",
+      "result_id": "16ced718-4a31-48a5-a272-02e89030e272"
+    },
+    {
+      "claim_id": "d878b384-71d4-4411-a129-b1ea8756fdd0",
+      "result_id": "16ced718-4a31-48a5-a272-02e89030e272"
+    },
+    {
+      "claim_id": "36b014a0-03ee-457e-bbbc-513071e7d97a",
+      "result_id": "16ced718-4a31-48a5-a272-02e89030e272"
+    },
+    {
+      "claim_id": "bcd6f61a-1efe-4998-96d2-b793107fa630",
+      "result_id": "16ced718-4a31-48a5-a272-02e89030e272"
+    },
+    {
+      "claim_id": "ba03c536-6f98-443e-b48b-3094ecbdee69",
+      "result_id": "16ced718-4a31-48a5-a272-02e89030e272"
+    },
+    {
+      "claim_id": "9ac6d8e1-206e-42cb-ace2-51e64d4ef5e5",
+      "result_id": "16ced718-4a31-48a5-a272-02e89030e272"
+    },
+    {
+      "claim_id": "e81a93a1-0390-4124-aac1-6f5a8e73b42a",
+      "result_id": "16ced718-4a31-48a5-a272-02e89030e272"
+    },
+    {
+      "claim_id": "e4fd240b-f4d8-46dc-8ba1-f34cafd6bb39",
+      "result_id": "85ec769e-c6a8-4124-8ed8-835bc17e57d3"
+    },
+    {
+      "claim_id": "cf74ce0a-19cb-4271-8d78-3591b549785d",
+      "result_id": "85ec769e-c6a8-4124-8ed8-835bc17e57d3"
+    },
+    {
+      "claim_id": "e90003f8-c9ac-4046-bcfa-76ee8eae4cd4",
+      "result_id": "85ec769e-c6a8-4124-8ed8-835bc17e57d3"
+    },
+    {
+      "claim_id": "4a4034b9-6dbf-4434-b18a-dfbba45fea83",
+      "result_id": "85ec769e-c6a8-4124-8ed8-835bc17e57d3"
+    },
+    {
+      "claim_id": "6cf52ee8-c03d-4531-8269-019597d29b5b",
+      "result_id": "85ec769e-c6a8-4124-8ed8-835bc17e57d3"
+    },
+    {
+      "claim_id": "74f67d9e-afc1-49bd-a692-ef56ded37204",
+      "result_id": "85ec769e-c6a8-4124-8ed8-835bc17e57d3"
+    },
+    {
+      "claim_id": "e63d9e40-3277-4f12-ad5d-530fce7aa43f",
+      "result_id": "85ec769e-c6a8-4124-8ed8-835bc17e57d3"
+    },
+    {
+      "claim_id": "91ec586b-84c4-4838-8d5f-cca8991d6a7e",
+      "result_id": "85ec769e-c6a8-4124-8ed8-835bc17e57d3"
+    },
+    {
+      "claim_id": "5a249abd-803d-4c88-b243-b1c7f19b7cc3",
+      "result_id": "85ec769e-c6a8-4124-8ed8-835bc17e57d3"
+    },
+    {
+      "claim_id": "00b9f96f-7f12-494d-997b-924ff66f21ac",
+      "result_id": "85ec769e-c6a8-4124-8ed8-835bc17e57d3"
+    },
+    {
+      "claim_id": "b66b00ea-0d6f-4060-b2ac-c2004f849faf",
+      "result_id": "85ec769e-c6a8-4124-8ed8-835bc17e57d3"
+    },
+    {
+      "claim_id": "214ca90c-f884-44dc-b38a-627b68b8ada1",
+      "result_id": "85ec769e-c6a8-4124-8ed8-835bc17e57d3"
+    },
+    {
+      "claim_id": "1dc92205-d6a1-48a5-8a5f-87ee7af19455",
+      "result_id": "85ec769e-c6a8-4124-8ed8-835bc17e57d3"
+    },
+    {
+      "claim_id": "eda9ebe3-b75d-47cd-8c37-86d8be99e922",
+      "result_id": "85ec769e-c6a8-4124-8ed8-835bc17e57d3"
+    },
+    {
+      "claim_id": "176b43e8-6f4e-4be4-8a28-91ef674a137e",
+      "result_id": "85ec769e-c6a8-4124-8ed8-835bc17e57d3"
+    },
+    {
+      "claim_id": "f334577e-cf82-4d6a-a82b-479a99c4d0df",
+      "result_id": "85ec769e-c6a8-4124-8ed8-835bc17e57d3"
+    },
+    {
+      "claim_id": "1016ae23-82d2-4326-880f-c534311f2a44",
+      "result_id": "85ec769e-c6a8-4124-8ed8-835bc17e57d3"
+    },
+    {
+      "claim_id": "4cf1e840-b637-402d-bc31-ee4ae054bff7",
+      "result_id": "85ec769e-c6a8-4124-8ed8-835bc17e57d3"
+    },
+    {
+      "claim_id": "5a3ae455-fb82-4b72-bd00-76662e70856c",
+      "result_id": "85ec769e-c6a8-4124-8ed8-835bc17e57d3"
+    },
+    {
+      "claim_id": "422df0a5-7d57-4d15-957e-8bccfe80f560",
+      "result_id": "85ec769e-c6a8-4124-8ed8-835bc17e57d3"
+    },
+    {
+      "claim_id": "0d676f0f-09ef-4c46-9f03-db8b18360330",
+      "result_id": "85ec769e-c6a8-4124-8ed8-835bc17e57d3"
+    },
+    {
+      "claim_id": "ddddf08c-444c-474c-920f-e239540388d7",
+      "result_id": "85ec769e-c6a8-4124-8ed8-835bc17e57d3"
+    },
+    {
+      "claim_id": "69b631df-43e7-44d9-9bcb-6c48d8070512",
+      "result_id": "85ec769e-c6a8-4124-8ed8-835bc17e57d3"
+    },
+    {
+      "claim_id": "9708d3d3-61dc-438f-a6c5-6635719a6003",
+      "result_id": "85ec769e-c6a8-4124-8ed8-835bc17e57d3"
+    },
+    {
+      "claim_id": "48d8c4cf-4272-4a43-badd-16fb236d4ef2",
+      "result_id": "0cf664e1-b776-43b9-addd-62b3c7e9b301"
+    },
+    {
+      "claim_id": "af8f8ca3-c1d9-4d13-9c00-bda44815f1fa",
+      "result_id": "0cf664e1-b776-43b9-addd-62b3c7e9b301"
+    },
+    {
+      "claim_id": "782ac07c-7d8a-446f-b8ff-79161b28734e",
+      "result_id": "0cf664e1-b776-43b9-addd-62b3c7e9b301"
+    }
+  ],
+  "comparisons": []
+}

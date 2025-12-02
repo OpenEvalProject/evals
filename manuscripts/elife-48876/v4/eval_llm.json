@@ -1,0 +1,337 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "A structure-based computational workflow was developed using the FOXO3-DBD crystal structure (PDB 2UZK) to identify small molecule inhibitors. Six pharmacophore models were generated and used for virtual screening of compound databases, resulting in 76 compounds selected for experimental testing, including compound S9.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C31 describe a systematic computational drug discovery workflow that is well-documented with appropriate citations and methodological details. The workflow from structure-based modeling through virtual screening to compound selection is clearly described and represents standard practice in structure-based drug design.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "Compound S9 and its oxalate salt S9OX physically interact with FOXO3-DBD as demonstrated by fluorescence polarization assays (FPA) showing dose-dependent displacement of DNA oligonucleotides and by saturation transfer difference (STD) NMR showing direct binding involving both aromatic and aliphatic portions of S9. Both compounds enter living cells and modulate FOXO3 function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C32-C36 are well-supported by multiple orthogonal biophysical methods (FPA in Figure 1f, STD NMR in Figure 2a). The dose-dependent effects in FPA and detection of STD signals for multiple protons provide strong evidence for direct physical interaction. Cell permeability is inferred from functional effects in cell-based assays (C33-C34), which is reasonable but indirect evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "NMR chemical shift perturbation (CSP) analysis and molecular docking identified the S9 binding site on FOXO3-DBD. S9 binds with moderate affinity to a groove formed by the C-terminus of \u03b1-helix H3 (including Arg211, His212, Ser215) and the N-terminus of \u03b2-strand S2 (Met221, Arg222), which is the DNA recognition region responsible for direct base contacts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C43 are supported by quantitative NMR CSP data (Figure 2b-c) identifying affected residues and molecular docking validated against experimental NMR data. The identification of H3 and S2 regions as the binding site is consistent with both STD and HSQC experiments. The inference that S9 blocks DNA binding (C43) is logical given the binding site overlaps with the DNA recognition helix.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Genome-wide microarray analysis showed that activation of ectopic FOXO3 induced 1262 probesets and repressed 889 probesets. When combined with S9, only 208 probesets were upregulated (35 common with FOXO3 alone), and S9 reversed or inhibited 77% of FOXO3-induced genes (15% statistically significant).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C49 are supported by microarray data shown in Figure 3a-c with appropriate statistical analysis. The genome-wide transcriptional profiling provides strong evidence for S9's inhibitory effect on FOXO3-mediated gene expression. The quantification of overlap and reversal of gene expression changes is clearly documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "S9 and S9OX inhibit FOXO3-mediated induction of target genes (BIM, NOXA, SESN3, DEPP1) at both mRNA and protein levels. FOXO3 activation significantly induced these targets, while S9/S9OX alone had no effect but significantly counteracted FOXO3-mediated induction when combined with FOXO3 activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C55 are well-supported by qRT-PCR data (Figure 3d-g) and immunoblot analyses (Figure 4a-d) showing consistent effects at both mRNA and protein levels. The specificity is demonstrated by lack of effect of compounds alone (C51) and significant inhibition only when combined with FOXO3 activation (C52, C54-C55). Statistical significance is appropriately reported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C3",
+      "C23",
+      "C56",
+      "C57"
+    ],
+    "result": "S9 inhibits FOXO3 binding to target promoters in living cells. ChIP analysis showed that FOXO3 activation significantly increased binding to BIM, NOXA, SESN3, and DEPP1 promoters, and S9 treatment almost completely reduced this binding to control levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C23, C56-C57 are supported by ChIP data in Figure 4e demonstrating reduced FOXO3 occupancy at endogenous target promoters in the presence of S9. This provides direct evidence that S9 interferes with FOXO3-DNA interactions in the cellular context, consistent with the in vitro biophysical data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C58"
+    ],
+    "result": "S9 inhibits FOXO3-mediated promoter transactivation in a dose-dependent manner, with approximately 50% reduction in luciferase activity driven by a DEPP1 promoter fragment at 12.5 \u03bcM S9.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C58 is supported by luciferase reporter assay data in Figure 4f showing dose-dependent inhibition. This functional assay complements the ChIP data and provides evidence that reduced promoter binding translates to reduced transcriptional activity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "The H212R mutation in FOXO3 reduces apoptosis induction compared to wild-type FOXO3, and S9 does not affect apoptosis induced by the FOXO3-H212R mutant, suggesting that H212 is critical for S9's inhibitory effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C61 are supported by cell death data in Figure 5a. The loss of S9 effect on the H212R mutant provides strong evidence for specificity, as H212 was identified by NMR as one of the most affected residues (C38). This validates the binding site identified by structural studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "S9 inhibits endogenous FOXO3 activity in response to etoposide treatment. Etoposide increased BIM and DEPP1 promoter activity 2-3 fold, which was completely prevented by S9. FOXO3 knockout abrogated both etoposide effects and S9 inhibition, demonstrating that S9's effects depend on endogenous FOXO3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C65 are supported by luciferase reporter data in Figure 5b-c and qRT-PCR data in Figure 5d-f using CRISPR/Cas9 FOXO3 knockout cells. The knockout experiments provide critical specificity controls demonstrating that S9 effects require FOXO3 and are not due to off-target effects on transcription.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C70"
+    ],
+    "result": "S9 shows selectivity among FOXO family members and other forkhead proteins. At 250 nM, S9 most efficiently displaced DNA from FOXO3-DBD and FOXO4-DBD, had less effect on FOXO1-DBD, no effect on FOXO6-DBD, and no effect on FOXM1-DBD at 500 nM.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C68, C70 are supported by FPA data in Figure 1\u2014figure supplement 2a-b. The differential effects on FOXO family members despite high sequence homology is explained by structural differences (C69). Testing against FOXM1 provides important specificity control showing S9 does not broadly inhibit all forkhead proteins.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C71"
+    ],
+    "result": "NMR spectroscopy demonstrated differential binding of S9OX to FOXO1-DBD, FOXO3-DBD, and FOXO4-DBD, with different patterns of chemical shift perturbations observed for each protein.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C71 is supported by NMR data in Figure 2\u2014figure supplement 2. This complements the FPA selectivity data (C66-C68) with direct binding measurements, providing orthogonal evidence for differential binding to FOXO family members.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "S9 and S9OX prevent FOXO3-induced ROS accumulation. Both 4OHT-mediated activation of ectopic FOXO3 and etoposide treatment caused significant cellular ROS accumulation, which was completely prevented by S9 and S9OX treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C74 are supported by live-cell fluorescence microscopy data using MitoTracker Red in Figure 6a-b. The prevention of ROS accumulation is consistent with S9 inhibiting FOXO3 transcriptional activity and provides functional validation of the compound's effects on a FOXO3-dependent cellular phenotype.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C75",
+      "C76"
+    ],
+    "result": "S9 and S9OX prevent FOXO3-induced cell death in 3D tumor spheroids at 5 \u03bcM after single administration. Both compounds preserved spheroid viability as measured by ATP content and resazurin reduction, and strongly inhibited FOXO3-induced apoptosis in this 3D model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C76 are supported by 3D spheroid data in Figure 6c-g including microscopy, ATP measurements, and resazurin reduction assays. The 3D spheroid model provides more physiologically relevant validation than 2D culture and demonstrates efficacy at lower concentrations (5 \u03bcM) with sustained effects after single administration.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C4",
+      "C24"
+    ],
+    "result": "S9 and S9OX modulate the FOXO3 transcriptional program, affecting genome-wide gene expression as demonstrated by microarray analysis showing altered expression of FOXO3-regulated genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4 and C24 are supported by comprehensive microarray data in Figure 3 showing genome-wide transcriptional changes. This is a summary claim that integrates the more detailed findings about specific gene sets (C44-C49) and individual target genes (C50-C52).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C25",
+      "C26"
+    ],
+    "result": "S9 affects FOXO3-dependent cellular phenotypes including ROS production and cell growth/death in both 2D and 3D cell culture systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C26 are supported by ROS measurements (Figure 6a-b), cell death assays (Figure 1g), and 3D spheroid experiments (Figure 6c-g). These functional assays demonstrate that S9's effects on FOXO3-DNA binding translate to modulation of FOXO3-dependent cellular processes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C5",
+      "C22"
+    ],
+    "result": "The FOXO-DBD is druggable, as demonstrated by the identification of S9 as the first small molecule that directly physically interacts with the DBD of FOXO proteins to regulate their transcriptional activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5 and C22 are supported by the collective evidence from this study showing that a small molecule can bind to FOXO3-DBD and modulate its function. However, this represents proof-of-concept rather than a fully optimized drug. The claim of druggability is reasonable but should be interpreted as demonstrating feasibility rather than clinical viability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C27"
+    ],
+    "result": "S9 directly interacts with FOXO3-DBD and the mode of binding was elucidated by NMR spectroscopy, revealing how the molecule structurally interferes with FOXO3 transcriptional activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C27 is a summary statement supported by the detailed NMR structural characterization (C35-C43) and molecular docking studies. The combined STD NMR, HSQC CSP analysis, and docking provide comprehensive structural information about the S9-FOXO3-DBD interaction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C77"
+    ],
+    "result": "S9 and S9OX physically interact with FOXO3-DBD, inhibit the FOXO3 transcriptional program, and modulate FOXO3 physiologic function in the low micromolar range in living cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C77 is a comprehensive summary statement integrating multiple lines of evidence from biophysical binding studies (C2, C32, C35-C40), transcriptional analyses (C44-C58), and functional cellular assays (C72-C76). The low micromolar potency is demonstrated across multiple assays including 3D spheroids at 5 \u03bcM (C75).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C79",
+      "C80"
+    ],
+    "result": "The FPA assay for FOXO3-DBD has a Z\u2032 factor of 0.6499, which proves the assay is reliable for high-throughput screening (Z\u2032 > 0.5).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C80 are supported by Z\u2032 factor calculation shown in Figure 1\u2014figure supplement 2d. The Z\u2032 factor of 0.6499 exceeds the standard threshold of 0.5 for high-throughput screening assays, validating the assay quality. This is established knowledge in assay development (C80).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C1",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C19",
+      "C20",
+      "C21",
+      "C78",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "Background claims about FOXO3 biology, regulation, and prior work on transcription factor druggability establish the context and rationale for the study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C6-C21, C78, C83-C86 are background statements supported by citations to prior literature or represent established knowledge in the field. These provide appropriate context for the study but are not novel findings from this work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C18",
+      "C81",
+      "C87",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "Speculative and discussion claims about potential therapeutic applications, protein-protein interaction effects, and advantages of small molecule approaches.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C18, C81, C87, C91-C93 are speculative statements about potential applications or mechanisms that are not directly tested in this study. While these are reasonable hypotheses based on the data, they represent future directions rather than demonstrated findings. C81 and C91 about potential effects on protein-protein interactions are plausible given the binding site but lack experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C69",
+      "C82",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "Supporting claims from prior literature about FOXO-DBD structural differences, gene-dosage effects, and FOXO-TP53 interactions that provide context for interpreting the current findings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69, C82, C88-C90 are supported by appropriate citations to prior literature and provide important context for understanding S9 selectivity (C69) and the complexity of FOXO biology (C82, C88-C90).",
+    "result_type": "MINOR"
+  }
+]

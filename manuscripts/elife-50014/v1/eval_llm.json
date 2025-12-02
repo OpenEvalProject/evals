@@ -1,0 +1,300 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "Transcriptional adaptation occurs in C. elegans act-5 mutants. The act-5(ptc) allele exhibits reduced act-5 mRNA levels (likely due to nonsense-mediated decay from a premature termination codon) but shows upregulation of act-3 mRNA and pre-mRNA, despite having no obvious phenotype.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C17 provide qPCR data showing reduced act-5 mRNA and increased act-3 mRNA/pre-mRNA in act-5(ptc) mutants (Figures 1A, 1B). The lack of phenotype (C15) despite reduced mutant mRNA supports transcriptional adaptation. The data are internally consistent and statistically significant (p<0.0005).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "Deletion alleles of act-5 that do not trigger mRNA decay do not show transcriptional adaptation. The act-5(\u03941) and act-5(\u03942) deletion alleles show no significant changes in act-5 or act-3 mRNA levels compared to wild type.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C23 demonstrate that deletion alleles lacking proper mRNA decay (C18-C19 for \u03941, C22-C23 for \u03942) do not trigger act-3 upregulation, supported by qPCR data in Figure 1. This negative control strengthens the conclusion that mutant mRNA, not loss of protein function, triggers adaptation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "The act-3 promoter is ectopically activated in intestinal tissue in act-5(ptc) mutants, demonstrating cell-autonomous transcriptional adaptation. An extrachromosomal act-3p::rfp reporter normally expressed only in the pharynx is also expressed in the intestine (where act-5 is normally expressed) in act-5(ptc) mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C29 provide confocal microscopy data (Figure 2) showing tissue-specific reporter expression. The ectopic intestinal expression of act-3p::rfp in act-5(ptc) mutants (C29) supports cell-autonomous triggering (C30). Quantitative data are provided (C95-C98) showing expression in specific numbers of animals.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Three unc-89 premature termination codon alleles exhibit reduced mutant mRNA levels and upregulation of sax-3 at both mRNA and pre-mRNA levels, yet lack obvious phenotypes, representing a second example of transcriptional adaptation in C. elegans.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C35 are supported by qPCR data in Figure 3A-B showing reduced unc-89 mRNA and increased sax-3 mRNA/pre-mRNA across three independent alleles. The consistency across multiple alleles and measurement of both mRNA and pre-mRNA strengthens the conclusion of transcriptional upregulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "The unc-89 deletion allele that lacks mutant mRNA does not show sax-3 upregulation and exhibits severe phenotypes, demonstrating that mutant mRNA presence, not loss of protein function, is required for transcriptional adaptation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C40 show that the unc-89(\u0394) deletion lacks most transcripts and sax-3 upregulation (Figure 3B), while exhibiting sterility and growth defects (C38-C39). This negative control (C40-C42) demonstrates the requirement for mutant mRNA, paralleling the act-5 deletion results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C52",
+      "C72",
+      "C73"
+    ],
+    "result": "Different nonsense-mediated decay factors are differentially required for transcriptional adaptation in different gene models. SMG-6 is required for act-5(ptc) but not unc-89(ptc) adaptation, while SMG-2 and SMG-4 are required for unc-89(ptc) but not act-5(ptc) adaptation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C45 are supported by RNAi data in Figure 4 showing differential effects of smg knockdowns. The gene-specific requirements (C52, C72-C73) are confirmed by double mutant analysis (C47-C51) in Figure 5, providing independent validation of the RNAi results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Double mutant analysis confirms the differential requirements for NMD factors in transcriptional adaptation. The smg-4; unc-89(ptc) double mutants show blocked adaptation and phenotypic defects, while smg-2 and smg-4 are not required in the act-5 model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C51 provide genetic confirmation of RNAi results through double mutant analysis (Figure 5). The phenotypic observations in smg-4; unc-89(ptc) animals (C49, C107-C108) and lethality of smg-6; act-5(ptc) (C50) provide functional validation of the molecular data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Exonucleases xrn-1 and paxt-1 are required for transcriptional adaptation. Knockdown of either gene restores mutant mRNA to wild-type levels and blocks the transcriptional adaptation response, indicating that degradation and processing of mutant transcripts is important.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C57 are supported by RNAi data in Figure 4 showing that xrn-1 and paxt-1 knockdown blocks adaptation in both models. The inference (C58) that degradation/processing is important is reasonable given the upstream position of these factors in the pathway.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "The SR-protein kinase spk-1 is required for transcriptional adaptation in both act-5 and unc-89 models, while the SR protein rsp-6 is specifically required in the act-5 model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C61 are supported by RNAi data in Figure 4\u2014figure supplement 2 showing spk-1 knockdown blocks adaptation in both models. Claim C62 is supported by data in Figure 4\u2014source data 1 showing rsp-6 specificity for the act-5 model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C69"
+    ],
+    "result": "Small RNA biogenesis and transport factors (ERGO-1, NRDE-3, RRF-3, DCR-1) regulate transcriptional adaptation downstream of mRNA decay. Knockdown of these factors maintains mutant mRNA degradation but blocks adapting gene upregulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C66 are supported by RNAi data in Figure 4 and Figure 4\u2014figure supplement 3 showing these factors act downstream of decay. The conclusion (C69) is validated by double mutant analysis (C109-C111) showing severe phenotypes when these pathways are disrupted.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "Disruption of small RNA pathways blocks transcriptional adaptation and causes severe phenotypes. Double mutants with ergo-1, nrde-3, or rrf-3 show phenotypes comparable to deletion alleles, and act-5(ptc) mutants do not survive when adaptation is disrupted.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C87 and C109-C112 are supported by double mutant analysis in Figure 5 showing blocked adaptation and severe phenotypes (larval lethality, slow growth, uncoordinated movements). This demonstrates functional importance of transcriptional adaptation for organismal fitness.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "The gene expression changes in transcriptional adaptation are specific. Unrelated gene pairs (unc-89/sax-3 in act-5 mutants, act-5/act-3 in unc-89 mutants) show no significant expression changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C104 are supported by qPCR data in Figure 3\u2014figure supplement 3 showing no cross-effects between the two gene models. This negative control demonstrates specificity of the transcriptional adaptation response.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C105"
+    ],
+    "result": "The miRNA biogenesis factor drsh-1 is not involved in transcriptional adaptation, as its knockdown does not affect mutant or adapting gene expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C105 is supported by qPCR data in Figure 4\u2014figure supplement 1 showing no effect of drsh-1 knockdown. This negative control helps define the specificity of the small RNA pathways involved.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C70",
+      "C71"
+    ],
+    "result": "The authors hypothesize that transcriptional adaptation consists of three critical processes: mutant mRNA decay, sRNA maturation, and sRNA transport, with gene-specific machinery for mRNA decay.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C71 represent a synthesis of the experimental findings. The hypothesis (C70) is well-supported by the collective data showing requirements for decay factors, small RNA biogenesis factors, and nuclear transport factors. The gene-specificity (C71) is demonstrated by differential NMD factor requirements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C113"
+    ],
+    "result": "ACT-3 and/or other proteins can functionally compensate for loss of ACT-5 when transcriptional adaptation is intact.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C113 is a reasonable inference based on the lack of phenotype in act-5(ptc) mutants (C15) combined with act-3 upregulation (C16-C17) and lethality when adaptation is blocked (C112). However, direct functional evidence for ACT-3 compensation is not provided.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C91"
+    ],
+    "result": "C. elegans is established as a genetic model system for studying transcriptional adaptation through unbiased screens.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C91 is supported by the successful demonstration of transcriptional adaptation in two independent gene models (act-5/act-3 and unc-89/sax-3) and the identification of multiple regulatory factors through candidate screening. The genetic tractability is demonstrated throughout the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C68"
+    ],
+    "result": "26G RNAs could play a role in transcriptional adaptation based on the involvement of ERGO-1, NRDE-3, RRF-3, and DCR-1 in both 26G RNA biogenesis and transcriptional adaptation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C68 is speculative (acknowledged in the claim itself). While the factors involved are known to participate in 26G RNA biogenesis (C67), direct evidence that 26G RNAs mediate transcriptional adaptation is not provided. This remains a hypothesis requiring further testing.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C77"
+    ],
+    "result": "SMG6 could function as a decay factor independent of NMD, based on reports of NMD-independent cleavage activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C77 is speculative and based on prior literature rather than data in this study. The authors acknowledge they cannot exclude this possibility, but provide no direct evidence for or against NMD-independent SMG6 function in their system.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "The position of premature termination codons relative to exon-intron junctions and stop codons is documented for the act-5 alleles, with predictions about NMD triggering.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C94 provide structural information from Figure 1\u2014figure supplement 1. The prediction that the dt2017 PTC in the last exon will not trigger NMD (C94) is based on established NMD rules and supported by citations, though not directly tested experimentally.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "Quantitative reporter expression data show tissue-specific patterns: act-5p::rfp is expressed in intestine in wild-type and mutant animals, while act-3p::rfp is expressed in pharynx in wild-type but in both pharynx and intestine in act-5(ptc) mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C98 provide quantitative data for the reporter experiments shown in Figures 2A-C and Figure 2\u2014figure supplement 1. The numbers of animals showing expression patterns support the qualitative observations and demonstrate reproducibility.",
+    "result_type": "MINOR"
+  }
+]

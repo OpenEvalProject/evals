@@ -1,0 +1,2076 @@
+{
+  "submission": {
+    "id": "4b8ee536-1a9e-40eb-ad17-94a618888745",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T07:04:02.823706Z",
+    "updated_at": "2025-12-02T07:04:02.823706Z"
+  },
+  "content": [
+    {
+      "id": "801536a9-bb86-4d09-b8c1-1f6934a4e51e",
+      "submission_id": "4b8ee536-1a9e-40eb-ad17-94a618888745",
+      "content_type": "manuscript",
+      "content_text": "# Meta-analysis challenges a textbook example of status signalling and demonstrates publication bias\n\n## Authors\n\n- Alfredo S\u00e1nchez-T\u00f3jar<sup>1</sup> ([ORCID: 0000-0002-2886-0649](https://orcid.org/0000-0002-2886-0649)) \u2020\n- Shinichi Nakagawa<sup>3</sup> ([ORCID: 0000-0002-7765-5182](https://orcid.org/0000-0002-7765-5182))\n- Mois\u00e8s S\u00e1nchez-Fort\u00fan<sup>1</sup>\n- Dominic A Martin<sup>2</sup> ([ORCID: 0000-0001-7197-2278](https://orcid.org/0000-0001-7197-2278))\n- Sukanya Ramani<sup>1</sup>\n- Antje Girndt<sup>1</sup> ([ORCID: 0000-0002-9558-1201](https://orcid.org/0000-0002-9558-1201))\n- Veronika B\u00f3kony<sup>6</sup> ([ORCID: 0000-0002-2136-5346](https://orcid.org/0000-0002-2136-5346))\n- Bart Kempenaers<sup>7</sup> ([ORCID: 0000-0002-7505-5458](https://orcid.org/0000-0002-7505-5458))\n- Andr\u00e1s Liker<sup>8</sup>\n- David F Westneat<sup>9</sup> ([ORCID: 0000-0001-5163-8096](https://orcid.org/0000-0001-5163-8096))\n- Terry Burke<sup>4</sup> ([ORCID: 0000-0003-3848-1244](https://orcid.org/0000-0003-3848-1244))\n- Julia Schroeder<sup>1</sup>\n\n### Affiliations\n\n1. Evolutionary Biology Group Max Planck Institute for Ornithology Seewiesen Germany\n2. Department of Life Sciences Imperial College London Ascot United Kingdom\n3. School of Biological, Earth and Environmental Sciences University of New South Wales Sidney Australia\n4. Department of Animal and Plant Sciences University of Sheffield Sheffield United Kingdom\n5. Department of Animal Behaviour Bielefeld University Bielefeld Germany\n6. Lend\u00fclet Evolutionary Ecology Research Group, Plant Protection Institute, Centre for Agricultural Research Hungarian Academy of Sciences Budapest Hungary\n7. Department of Behavioural Ecology and Evolutionary Genetics Max Planck Institute for Ornithology Seewiesen Germany\n8. MTA-PE Evolutionary Ecology Research Group University of Pannonia Veszpr\u00e9m Hungary\n9. Department of Biology University of Kentucky Lexington United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe status signalling hypothesis aims to explain within-species variation in ornamentation by suggesting that some ornaments signal dominance status. Here, we use multilevel meta-analytic models to challenge the textbook example of this hypothesis, the black bib of male house sparrows (Passer domesticus). We conducted a systematic review, and obtained primary data from published and unpublished studies to test whether dominance rank is positively associated with bib size across studies. Contrary to previous studies, the overall effect size (i.e. meta-analytic mean) was small and uncertain. Furthermore, we found several biases in the literature that further question the support available for the status signalling hypothesis. We discuss several explanations including pleiotropic, population- and context-dependent effects. Our findings call for reconsidering this established textbook example in evolutionary and behavioural ecology, and should stimulate renewed interest in understanding within-species variation in ornamental traits.\n\n## Introduction\n\nPlumage ornamentation is a striking example of colour and pattern diversity in the animal kingdom and has attracted considerable research (Hill, 2002). Most studies have focused on sexual selection as the key mechanism to explain this diversity in ornamentation (Andersson, 1994; Dale et al., 2015). The status signalling hypothesis explains within-species variation in ornaments by suggesting that these ornaments\u00a0signal individual dominance status or fighting ability (Rohwer, 1975). Aggressive contests are costly in terms of energy use, and risk of injuries and predation (Jakobsson et al., 1995; Kelly and Godin, 2001; Neat et al., 1998; Prenter et al., 2006; Sneddon et al., 1998). These costs could be reduced if individuals can predict the outcome of such contests beforehand using so-called \u2018badges of status\u2019 \u2013 that\u00a0is, two potential competitors could decide whether to avoid or engage in aggressive interactions based on the message provided by their opponent\u2019s signals (Rohwer, 1975).\n\nPatches of ornamentation have been suggested to function as badges of status in a wide range of taxa, including insects (Tibbetts and Dale, 2004), reptiles (Whiting et al., 2003) and birds (Senar, 2006). The status signalling hypothesis was originally proposed to explain variation in the size of mountain sheep horns (Beninde, 1937; Geist, 1966), but the hypothesis has become increasingly important in the study of variability in plumage ornamentation in birds (Rohwer, 1975; Senar, 2006). Among the many bird species studied (Santos et al., 2011), the house sparrow (Passer domesticus) has become the classic textbook example of status signalling (Andersson, 1994; Searcy and Nowicki, 2005; Senar, 2006; Davies et al., 2012). The house sparrow is a sexually dimorphic passerine, in which the main difference between the sexes is a prominent black patch on the male\u2019s throat and chest (hereafter \u2018bib\u2019). Many studies have suggested that bib size serves as a badge of status, but most studies are based on limited sample sizes, and have used inconsistent methodologies for measuring bib and dominance status (Nakagawa and Cuthill, 2007; Santos et al., 2011).\n\nMeta-analysis is a powerful tool to quantitatively test the overall (across-study) effect size (i.e. the \u2018meta-analytic mean\u2019) for a specific hypothesis. Meta-analyses are therefore able to provide more robust conclusions than single studies and are increasingly used in evolutionary ecology (Gurevitch et al., 2018; Nakagawa and Poulin, 2012a; Nakagawa and Santos, 2012b; Senior et al., 2016). Traditional meta-analyses combine summary data across different studies, where design and methodology are study-specific (e.g. effect sizes among studies are typically adjusted for different fixed effects). These differences among studies are expected to increase heterogeneity, and therefore, the uncertainty of the meta-analytic mean (Mengersen et al., 2013). Meta-analysis of primary or raw data is a specific type of meta-analysis where studies are analysed in a consistent manner (Mengersen et al., 2013). This type of meta-analysis allows methodology to be standardized so that comparable effect sizes can be obtained across studies and is, therefore, considered the gold standard in disciplines such as medicine (Simmonds et al., 2005). Unfortunately, meta-analysis of primary data is still rarely used in evolutionary ecology (but see Barrowman et al., 2003; Richards and Bass, 2005; Krasnov et al., 2009), perhaps due to the difficulty of obtaining the primary data of previously published studies until recently (Culina et al., 2018; Schmid et al., 2003).\n\nAn important feature of any meta-analysis is to identify the existence of bias in the literature (Nakagawa and Santos, 2012b; Jennions et al., 2013). For example, publication bias occurs whenever particular effect sizes (e.g. larger ones) are more likely found in the literature than others (e.g. smaller ones). This tends to be the case when statistical significance and/or direction of effect sizes determines whether results were submitted or accepted for publication (Jennions et al., 2013). Thus, publication bias can strongly affect the estimation of the meta-analytic mean, and distort the interpretation of the hypothesis (Rothstein et al., 2005). Several methods have been developed to identify this and other biases (Nakagawa and Santos, 2012b; Jennions et al., 2013); however, such methods are imperfect and dependent on the number of effect sizes available, and therefore should be considered as types of sensitivity analysis (Nakagawa et al., 2017; Nakagawa and Santos, 2012b).\n\nHere, we meta-analytically assessed the textbook example of the status signalling hypothesis in the house sparrow. Specifically, we combined summary and primary data from published and unpublished studies to test the prediction that dominance rank is positively associated with bib size across studies. We found that the meta-analytic mean was small, uncertain and overlapped zero. Hence, our results challenge the status signalling function of the male house sparrow\u2019s bib. Also, we identified several biases in the published literature. Finally, we discuss potential biological explanations for our results, and provide advice for future studies testing the status signalling hypothesis.\n\n## Results\n\nOverall, we obtained the primary data for seven of 13 (54%) published studies, and we provided data for six additional unpublished studies (Table 1\u2014Appendix 1).\n\n**Table 1.**\n Studies used in the meta-analyses and meta-regressions testing the across-study relationship between dominance rank and bib size in male house sparrows.More information is available in the data files provided (S\u00e1nchez-T\u00f3jar et al., 2018a).\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Study ID</th>\n      <th>Reference</th>\n      <th>Population ID</th>\n      <th>Primary data?</th>\n      <th>Number of groups*</th>\n      <th>Total number of males\u2020</th>\n      <th>Comments</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>1</td>\n      <td>Ritchison, 1985</td>\n      <td>Kentucky (captivity)</td>\n      <td>No</td>\n      <td>3</td>\n      <td>35</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>2</td>\n      <td>M\u00f8ller, 1987</td>\n      <td>Denmark (wild)</td>\n      <td>Yes</td>\n      <td>3</td>\n      <td>37</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>3</td>\n      <td>Andersson and \u00c5hlund, 1991</td>\n      <td>Sweden (captivity)</td>\n      <td>No</td>\n      <td>10</td>\n      <td>20</td>\n      <td>Estimate originally reported as statistically non-significant.</td>\n    </tr>\n    <tr>\n      <td>4</td>\n      <td>Solberg and Ringsby, 1997</td>\n      <td>Norway (captivity)</td>\n      <td>Yes</td>\n      <td>5</td>\n      <td>44</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>5</td>\n      <td>Liker and Barta, 2001</td>\n      <td>Hungary (captivity)</td>\n      <td>Yes</td>\n      <td>1</td>\n      <td>10</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>6</td>\n      <td>Gonzalez et al., 2002</td>\n      <td>Spain (captivity)</td>\n      <td>No</td>\n      <td>8</td>\n      <td>41</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>7</td>\n      <td>Hein et al., 2003</td>\n      <td>Kentucky (wild)</td>\n      <td>Yes</td>\n      <td>4</td>\n      <td>39</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>8</td>\n      <td>Riters et al., 2004</td>\n      <td>Wisconsin (captivity)</td>\n      <td>No</td>\n      <td>4</td>\n      <td>20</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>9</td>\n      <td>Lindstr\u00f6m et al., 2005</td>\n      <td>New Jersey (captivity)</td>\n      <td>No</td>\n      <td>4</td>\n      <td>28</td>\n      <td>Author shared processed data, but group ID was unavailable, so data were not re-analysed.</td>\n    </tr>\n    <tr>\n      <td>10</td>\n      <td>B\u00f3kony et al., 2006</td>\n      <td>Hungary (captivity)</td>\n      <td>Yes</td>\n      <td>2</td>\n      <td>19</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>11</td>\n      <td>Buchanan et al., 2010</td>\n      <td>Scotland (captivity)</td>\n      <td>No</td>\n      <td>14 5</td>\n      <td>56 20</td>\n      <td>Groups were tested twice. Post-breeding estimates originally reported as statistically non-significant.</td>\n    </tr>\n    <tr>\n      <td>12</td>\n      <td>Dolnik and Hoi, 2010</td>\n      <td>Austria (captivity)</td>\n      <td>No</td>\n      <td>4 4</td>\n      <td>31 31</td>\n      <td>Groups were tested twice. Pre-infection estimates originally reported as statistically non-significant.</td>\n    </tr>\n    <tr>\n      <td>13</td>\n      <td>Rojas Mora et al., 2016</td>\n      <td>Switzerland (captivity)</td>\n      <td>Yes</td>\n      <td>14</td>\n      <td>56</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>14</td>\n      <td>Lendvai et al.</td>\n      <td>Hungary (captivity)</td>\n      <td>Yes3</td>\n      <td>4</td>\n      <td>46</td>\n      <td>Unpublished data part of: Lendvai et al., 2004; B\u00f3kony et al., 2012</td>\n    </tr>\n    <tr>\n      <td>15</td>\n      <td>T\u00f3th et al.</td>\n      <td>Hungary (captivity)</td>\n      <td>Yes3</td>\n      <td>3</td>\n      <td>35</td>\n      <td>Unpublished data part of: T\u00f3th et al., 2009; B\u00f3kony et al., 2012</td>\n    </tr>\n    <tr>\n      <td>16</td>\n      <td>B\u00f3kony et al.</td>\n      <td>Hungary (captivity)</td>\n      <td>Yes3</td>\n      <td>4</td>\n      <td>26</td>\n      <td>Unpublished data part of: B\u00f3kony et al., 2010; B\u00f3kony et al., 2012</td>\n    </tr>\n    <tr>\n      <td>17</td>\n      <td>S\u00e1nchez-T\u00f3jar et al.</td>\n      <td>Germany (captivity)</td>\n      <td>Yes3</td>\n      <td>4</td>\n      <td>95</td>\n      <td>Unpublished study conducted in 2014.</td>\n    </tr>\n    <tr>\n      <td>18</td>\n      <td>S\u00e1nchez-T\u00f3jar et al.</td>\n      <td>Lundy Island (wild)</td>\n      <td>Yes3</td>\n      <td>7</td>\n      <td>172</td>\n      <td>Unpublished study conducted from 2013 to 2016.</td>\n    </tr>\n    <tr>\n      <td>19</td>\n      <td>Westneat</td>\n      <td>Kentucky (captivity)</td>\n      <td>Yes3</td>\n      <td>10</td>\n      <td>40</td>\n      <td>Unpublished study conducted in 2005.</td>\n    </tr>\n  </tbody>\n</table>\n\n_*for primary data\u00a0=\u00a0yes, groups of birds containing less than four individuals were not included (see Materials and methods).\u2020Note: since most studies analysed more than one group of birds, the total number of males is different from group size in most cases (see below).\u2021Information for the unpublished datasets is available in Appendix 1\u2014table 5._\n\n### Dominance hierarchies\n\nMean sampling effort was 36 interactions/individual (SD\u00a0=\u00a024), which highlights that, overall, dominance hierarchies were inferred reliably across groups (S\u00e1nchez-T\u00f3jar et al., 2018b). The mean Elo-rating repeatability was 0.92 (SD\u00a0=\u00a00.07) and the mean triangle transitivity was 0.63 (SD\u00a0=\u00a00.28). Thus, the dominance hierarchies observed across groups of house sparrows were medium in both steepness and transitivity.\n\n### Meta-analytic mean\n\nOur meta-analyses revealed a small overall effect size with large 95% credible intervals that overlapped zero (Table 2; Figure 1). Additionally, the overall heterogeneity (I2overall) was moderate (53%; Table 2). Thus, our results suggested that generally, bib size is at best a weak and unreliable signal of dominance status in male house sparrows.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/37385/elife-37385-fig1-v1.jpg)\n\n**Figure 1.:** Both meta 1 and meta 2 include published and unpublished estimates, with meta 2 including two non-reported estimates assumed to be zero (see section \u2018Meta-analyses\u2019). We show posterior means and 95% credible intervals from multilevel meta-analyses. Estimates are presented as standardized effect sizes using Fisher\u2019s transformation (Zr). Light, medium and dark grey show small, medium and large effect sizes, respectively (Cohen, 1988). k is the number of estimates.\n\n**Table 2.**\n Results of the multilevel meta-analyses on the relationship between dominance rank and bib size in male house sparrows.Additionally, the results of the Egger\u2019s regression tests are shown. Estimates are presented as standardized effect sizes using Fisher\u2019s transformation (Zr). Both meta 1 and meta 2 include published and unpublished estimates, with meta 2 including two non-reported estimates assumed to be zero (see section \u2018Meta-analyses\u2019).\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Meta-analysis</th>\n      <th>K</th>\n      <th>Meta-analytic mean [95% CrI]</th>\n      <th>I2population ID [95% CrI] (%)</th>\n      <th>I2study ID [95% CrI] (%)</th>\n      <th>I2overall [95% CrI] (%)</th>\n      <th>Egger\u2019s regression [95% CrI]</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>meta 1</td>\n      <td>85</td>\n      <td>0.23 [\u22120.01,0.45]</td>\n      <td>16 [0,48]</td>\n      <td>21 [0,51]</td>\n      <td>53 [33,73]</td>\n      <td>\u22120.13 [\u22120.59,0.27]</td>\n    </tr>\n    <tr>\n      <td>meta 2</td>\n      <td>87</td>\n      <td>0.20 [\u22120.01,0.40]</td>\n      <td>15 [0,46]</td>\n      <td>20 [0,49]</td>\n      <td>53 [34,74]</td>\n      <td>\u22120.12 [\u22120.55,0.28]</td>\n    </tr>\n  </tbody>\n</table>\n\n_k\u00a0=\u00a0number of estimates; CrI\u00a0=\u00a0credible intervals; I2\u00a0=\u00a0heterogeneity._\n\n### Moderators of the relationship between dominance rank and bib size\n\nNone of the three biological moderators studied (season, group composition and type of interactions) explained differences among studies (Table 3). Sampling effort (i.e. the ratio of interactions to individuals recorded) also was not an important moderator (Table 3).\n\n**Table 3.**\n Results of the multilevel meta-regressions testing the effect of several moderators on the relationship between dominance rank and bib size in male house sparrows.Estimates are presented as standardized effect sizes using Fisher\u2019s transformation (Zr).\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Meta-regression</th>\n      <th>Estimates</th>\n      <th>Mean [95% CrI]</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>meta 1</td>\n      <td>intercept</td>\n      <td>0.17 [-0.11,0.46]</td>\n    </tr>\n    <tr>\n      <td>(k\u00a0=\u00a085)</td>\n      <td>season</td>\n      <td>\u22120.11 [-0.41,0.21]</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>group composition</td>\n      <td>0.14 [-0.34,0.59]</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>type of interactions</td>\n      <td>0.33 [-0.17,0.91]</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>R2marginal=</td>\n      <td>23 [2,48]</td>\n    </tr>\n    <tr>\n      <td>meta 2</td>\n      <td>intercept</td>\n      <td>0.15 [-0.10,0.45]</td>\n    </tr>\n    <tr>\n      <td>(k\u00a0=\u00a087)</td>\n      <td>season</td>\n      <td>\u22120.08 [-0.42,0.22]</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>group composition</td>\n      <td>0.12 [-0.32,0.62]</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>type of interactions</td>\n      <td>0.27 [-0.17,0.85]</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>R2marginal=</td>\n      <td>20 [0,45]</td>\n    </tr>\n    <tr>\n      <td>sampling effort</td>\n      <td>intercept</td>\n      <td>0.24 [-0.15,0.55]</td>\n    </tr>\n    <tr>\n      <td>(k\u00a0=\u00a061)</td>\n      <td>sampling effort</td>\n      <td>0.11 [-0.49,0.74]</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>sampling effort2</td>\n      <td>\u22120.14 [-0.77,0.43]</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>R2marginal=</td>\n      <td>8 [0,24]</td>\n    </tr>\n  </tbody>\n</table>\n\n_k\u00a0=\u00a0number of estimates; CrI\u00a0=\u00a0credible intervals; R2marginal\u00a0=\u00a0percentage of variance explained by the moderators. The factors season (non-breeding: 0, breeding: 1), group composition (mixed-sex: 0, male-only: 1), and type of interactions (all: 0, aggressive-only: 1) were mean-centred, and the covariates \u2018sampling effort\u2019 and its squared term were z-transformed._\n\n### Detection of publication bias\n\nThere was no clear asymmetry in the funnel plots (Figure 2). Also, Egger\u2019s regression tests did not show evidence of funnel plot asymmetry in any of the meta-analyses (Table 2). However, published effect sizes were larger than unpublished ones, and the latter were not different from zero (Table 4; Figure 3). Additionally, we found that the overall effect size decreased over time and approached zero (Table 4; Figure 4).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/37385/elife-37385-fig2-v1.jpg)\n\n**Figure 2.:** Both meta 1 and meta 2 include published (blue) and unpublished (orange) estimates, with meta 2 including two additional non-reported estimates (grey; see section \u2018Meta-analyses\u2019). Estimates are presented as standardized effect sizes using Fisher\u2019s transformation (Zr). Precision\u00a0=\u00a0square root of the inverse of the variance.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/37385/elife-37385-fig3-v1.jpg)\n\n**Figure 3.:** We show posterior means and 95% credible intervals from a multilevel meta-regression. Estimates are presented as standardized effect sizes using Fisher\u2019s transformation (Zr). Light, medium and dark grey show small, medium and large effects sizes, respectively (Cohen, 1988). k is the number of estimates.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/37385/elife-37385-fig4-v1.jpg)\n\n**Figure 4.:** The solid blue line represents the model estimate, and the shading shows the 95% credible intervals of a multilevel meta-regression based on published studies (see section \u2018Detection of publication bias\u2019). Estimates are presented as standardized effect sizes using Fisher\u2019s transformation (Zr). Circle area represents the size of the group of birds tested to obtain each estimate, where light blue denotes estimates for which group size is inflated due to birds from different groups being pooled, as opposed to dark blue where group size is accurate.\n\n**Table 4.**\n Results of the multilevel meta-regressions testing for time-lag and publication bias in the literature on status signalling in male house sparrows.Estimates are presented as standardized effect sizes using Fisher\u2019s transformation (Zr). Credible intervals not overlapping zero are highlighted in bold.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Meta-regression</th>\n      <th>Estimates</th>\n      <th>Mean [95% CrI]</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>time-lag bias</td>\n      <td>intercept</td>\n      <td>0.26 [0.03,0.57]</td>\n    </tr>\n    <tr>\n      <td>(k\u00a0=\u00a053)</td>\n      <td>year of publication</td>\n      <td>\u22120.21 [-0.41,\u20130.01]</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>R2marginal=</td>\n      <td>29 [0,66]</td>\n    </tr>\n    <tr>\n      <td>published vs.</td>\n      <td>intercept</td>\n      <td>\u22120.09 [-0.37,0.18]</td>\n    </tr>\n    <tr>\n      <td>unpublished (k\u00a0=\u00a085)</td>\n      <td>publisheda</td>\n      <td>0.50 [0.19,0.81]</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>R2marginal=</td>\n      <td>38 [0,68]</td>\n    </tr>\n  </tbody>\n</table>\n\n_k\u00a0=\u00a0number of estimates; CrI\u00a0=\u00a0credible intervals; R2marginal\u00a0=\u00a0percentage of variance explained by the moderators; a relative to unpublished. Year of publication was z-transformed._\n\n## Discussion\n\nThe male house sparrow\u2019s bib is not the strong across-study predictor of dominance status once believed. In contrast to the medium-to-large effect found in the previous meta-analysis (Nakagawa et al., 2007), our updated meta-analytic mean was small, uncertain and overlapped zero. Thus, the male house sparrow\u2019s bib should not be unambiguously considered or called a badge of status. Furthermore, we found evidence for the existence of bias in the published literature that further undermines the validity of the available support for the status signalling hypothesis. First, the meta-analytic mean of unpublished studies was essentially zero, compared to the medium effect size detected in published studies. Second, we found that the effect size estimated in published studies has been decreasing over time, and recently published effects were on average no longer distinguishable from zero. Our findings call for reconsidering this textbook example in evolutionary and behavioural ecology, and should stimulate renewed attention to hypotheses explaining within-species variation in ornamentation.\n\nThe status signalling hypothesis (Rohwer, 1975) has been extensively tested to try and explain within-species trait variation (e.g. reptiles: Whiting et al., 2003; insects: Tibbetts and Dale, 2004; humans: Dixson and Vasey, 2012), particularly plumage variation (Santos et al., 2011). Soon after the first empirical tests on birds, the black bib of male\u00a0house sparrows became a textbook example of the status signalling hypothesis (Andersson, 1994; Searcy and Nowicki, 2005; Senar, 2006; Davies et al., 2012), an idea that was later confirmed meta-analytically (Nakagawa et al., 2007). However, Nakagawa et al., 2007 meta-analytic mean was over-estimated because only nine low-powered studies were available (more in Button et al., 2013). Here, we updated that meta-analysis with newly published and unpublished data. Our results showed that the overall effect size is much smaller and much more uncertain than previously thought. The status signalling hypothesis is thus no longer a compelling explanation for the evolution of bib size across populations of house sparrows.\n\nSimilar contradicting conclusions have been reported for other model species. An exhaustive review and meta-analysis on plumage coloration of blue tits (Cyanistes caeruleus) revealed that, after dozens of publications studying the function of plumage ornamentation in this species, the only robust conclusion is that females\u2019 plumage differs from that of males (Parker, 2013). Another example is the long-believed effect of leg bands of particular colours on the perceived attractiveness of male zebra finches (Taeniopygia guttata), which has been also experimentally and meta-analytically refuted (Seguin and Forstmeier, 2012; Wang et al., 2018). Finally, the existence of a badge of status in a non-bird model species, the paper wasp (Polistes dominulus; Tibbetts and Dale, 2004) has also been challenged multiple times (e.g. Cervo et al., 2008; Green and Field, 2011; Green et al., 2013), generating doubts about its generality. Our findings corroborate studies showing that abundant replication is needed before any strong or general conclusion can be drawn (Aarts et al., 2015), and highlight the existence of important impediments (e.g. publication bias) to scientific progress in evolutionary ecology (Forstmeier et al., 2017; Fraser et al., 2018).\n\nIndeed, our results showed that the published literature on status signalling in house sparrows is likely a biased subsample. The main evidence for this is that the mean effect size of unpublished studies was essentially zero and clearly different from the mean effect size based on published studies, which was of medium size. Furthermore, this moderator (i.e. unpublished vs. published) explained a large percentage of the model\u2019s variance. In some of our own unpublished datasets, the relationship between dominance rank and bib size was never formally tested (D.F. Westneat and V. B\u00f3kony, personal communication, February, 2018), that is, our unpublished datasets are not all examples of the \u2018file drawer problem\u2019 (sensu Rosenthal, 1979). Egger\u2019s regression tests failed to detect any funnel plot asymmetry, even in the meta-analyses based on published effect sizes only (Appendix 2\u2014table 1). However, because unpublished data indeed existed (i.e. those obtained for this study), the detection failure was likely the consequence of the limited number of effect sizes available (i.e. low power) and the moderate level of heterogeneity found in this study (Moreno et al., 2009; Sterne and Egger, 2005).\n\nAn additional type of publication bias is time-lag bias, where early studies report larger effect sizes than later studies (Trikalinos and Ioannidis, 2005). We detected evidence for such bias because the correlation between dominance rank and bib size in published studies has decreased over time and approached zero. Year of publication explained a large percentage of the\u00a0model's\u00a0variance, and accounting for year of publication resulted in a strong reduction of the mean effect size across published studies (Table 4 vs. Appendix 2\u2014table 1). Time-lag bias has been detected in other ecological studies (Poulin, 2000); Jennions and Moller, 2002b), including a meta-analysis on status signalling across bird species (Santos et al., 2011). In the latter study, a positive overall (across-species) effect size persisted regardless of the time-lag bias, and no strong evidence for other types of biases was found (Santos et al., 2011). However, Santos et al., 2011 did not attempt to analyse unpublished data, so additional evidence is needed to determine the effect that unpublished data may have on the overall validity of the status signalling hypothesis across bird species. If effect sizes based on unpublished data for other species were of similar magnitude to those obtained for house sparrows, the validity of the status signalling hypothesis across species would need reconsideration. The existence of publication bias in ecology has long been recognized (Cassey et al., 2004;\u00a0Jennions and Moller, 2002b;\u00a0Palmer, 2000). Publication bias leads to false conclusions if not accounted for (Rothstein et al., 2005), and is, thus, a serious impediment to scientific progress.\n\nIn addition to estimating the overall effect size for a hypothesis, meta-analyses are also used to assess heterogeneity among estimates (Higgins and Thompson, 2002; Higgins et al., 2003). Understanding the sources of heterogeneity is an important step towards the correct interpretation of a meta-analytic mean, and can be done using meta-regressions (Nakagawa and Santos, 2012b). Here, we found that the percentage of variance that was not attributable to sampling error (i.e. heterogeneity) was moderate. This value is below the average calculated across ecological and evolutionary meta-analyses (Senior et al., 2016), and indicates that we accounted for large differences among estimates. Our meta-regressions based on biological moderators explained 20\u201323% of the variance (Table 3). However, none of the biological moderators that we tested strongly influenced the overall effect size, possibly because of limited sample sizes.\n\nThe badge of status idea is more complex than typically portrayed (reviewed by Diep and Westneat, 2013). Badges of status are expected to be particularly important in large and unstable groups of individuals where individual recognition would otherwise be difficult (Rohwer, 1975). While the evolution of badges of status in New and Old World sparrows has been related to sociality (i.e. flocking) during the non-breeding season (Tibbetts and Safran, 2009), additional factors need to be involved if the signal is to function in reducing aggression but retaining honesty (Diep and Westneat, 2013). Our results, however, did not show any evidence for a season-dependent effect as the moderator \u2018season\u2019 (breeding vs. non-breeding) was not a strong predictor in our models. Badges of status are expected to function both within and between sexes (Rohwer, 1975; Senar, 2006). Indeed, we found little evidence that the status signalling function of bib size differed between male-only and mixed-sex flocks. Interestingly, when competing for resources, possessing a badge of status would be beneficial for both males and females. However, male but not female house sparrows have a bib. This sexual dimorphism suggests that the bib\u2019s function is likely more important when competing for resources other than essential, a priori non-sex-specific resources such as food, water, sand baths and roosting sites. M\u00f8ller, 1988\u00a0and Pape Moller, 1989\u00a0reported that female house sparrows preferentially choose males with large bibs (but see Kimball, 1996), and bib size has been positively correlated with sexual behaviour (Veiga, 1996; M\u00f8ller, 1990), which suggests that the bib may play a role in mate choice. Furthermore, the original status signalling hypothesis posits that the main benefit of using badges of status would be to avoid fights, which should be particularly important when interacting with unfamiliar individuals (Rohwer, 1975; Senar, 2006). Although we did not have data to test whether unfamiliarity among contestants is an important pre-requisite for the status signalling hypothesis, we found no change in mean effect size when only obviously aggressive interactions were studied. In practice, testing whether the bib is important in mediating aggression among unfamiliar individuals is difficult because the certainty of the\u00a0estimates of individual dominance increases over time as more contests are recorded, but so does familiarity among contestants.\n\nThere are some additional explanations for the small and uncertain effect detected by our meta-analyses. First, different populations might be under different selective pressures regarding status signalling. Indeed, the population-specific heterogeneity (I2population ID) estimated in our meta-analyses was 15\u201316%, suggesting that population-dependent effects might exist. Second, although none of the moderators had a strong influence on the overall effect size, the study-specific heterogeneity estimated in our meta-analyses (I2study ID = 20\u201321%) suggests that the uncertainty observed could still be explained by the status signal being context-dependent. However, context-dependence is often invoked post\u00a0hoc to explain variation among studies, but strong evidence for it is lacking in most cases. Last, most studies testing the status signalling hypothesis in house sparrows are observational (Table 1), and the only two experimental studies conducted so far were inconclusive (Diep, 2012; Gonzalez et al., 2002). Thus, it cannot be ruled out that the weak correlation observed between dominance status and bib size is driven by a third, unknown variable. In this respect, it has been proposed that the association between melanin-based coloration (such as the bib; e.g. Galv\u00e1n et al., 2015; Galv\u00e1n and Alonso-Alvarez, 2017) and aggression is due to pleiotropic effects of the genes involved in regulating the synthesis of melanin (reviewed by Ducrest et al., 2008). Furthermore, bib size has been shown to correlate with testosterone, a hormone often involved in aggressive behaviour (Gonzalez et al., 2001) but this relationship has not been consistently observed (Laucht et al., 2010). Future studies should shift the focus towards understanding the function of bib size in wild populations and increase considerably the number of birds studied per group. The latter is essential because the statistical power of published tests of the status signalling hypothesis in house sparrows is alarmingly low (power\u00a0=\u00a08.5% for r\u00a0=\u00a00.20, Appendix 3) and lower than the average in behavioural ecology (Jennions, 2003).\n\nOur analyses have several potential limitations. First, although the number of studies included in this meta-analysis is more than double that of the previous meta-analysis (Nakagawa et al., 2007), it is still limited. Also, it is likely (see above) that additional unpublished data are stored in \u2018file drawers\u2019 (sensu Rosenthal, 1979). Second, most tests included in this study were still low-powered in terms of group size (median\u00a0=\u00a06 individuals/estimate, range\u00a0=\u00a04\u201341), and the sample size is inflated because some of the published studies pooled individuals from different groups (Figure 4). Third, although our results showed little evidence of an effect of sampling effort on the overall effect size, the quality of the data on dominance and bib size may still be a potential factor explaining differences among studies. Fourth, experiments will normally yield larger effect sizes than observational studies because effects of confounding factors can be reduced (Palmer, 2000). Nonetheless, our systematic review only identified two studies where the status signalling hypothesis was tested experimentally in house sparrows (Gonzalez et al., 2002; Diep, 2012), preventing us from estimating the meta-analytic mean for experimental studies. Note, however, that the results of those experiments were inconclusive, and potentially affected by regression to the mean (Forstmeier et al., 2017).\n\nIn conclusion, our results challenge an established textbook example of the status\u00a0signalling hypothesis,\u00a0which\u00a0aims to explain within-species variation in ornament size. In house sparrows, we find no evidence that bib size consistently acts as a badge of status across studies and populations, and thus, bib\u00a0size\u00a0can no longer be considered a textbook example of the status signalling hypothesis. Furthermore, our analyses highlight the existence of publication biases in the literature, further undermining the validity of past conclusions. Bias against the publication of small (\u2018non-significant\u2019) effects hinders scientific progress. We thus join the call for a change in incentives and scientific culture in ecology and evolution (Forstmeier et al., 2017; Ihle et al., 2017; Nakagawa and Parker, 2015; Parker et al., 2016).\n\n## Materials and methods\n\n### Systematic review\n\nWe used several approaches to maximize the identification of relevant studies. First, we included all studies reported in a previous meta-analysis that tested the relationship between dominance rank and bib size in house sparrows (Nakagawa et al., 2007). Second, we conducted a keyword search on Web of Science, PubMed and Scopus from 2006 to June 2017 to find studies published after Nakagawa et al., 2007, using the combination of keywords [\u2018bib/badge\u2019, \u2018sparrow\u2019, \u2018dominance/status/fighting\u2019]. Third, we screened all studies on house sparrows used in a meta-analysis that tested the relationship between dominance and plumage ornamentation across species (Santos et al., 2011) to identify additional studies that we may have missed in our keyword search. We screened titles and abstracts of all articles and removed the irrelevant articles before examining the full texts (Supplementary file 1). We followed the preferred reporting items for systematic reviews and meta-analyses (PRISMA: Moher et al., 2009); see \u2018Reporting Standards Documents\u2019). We only included articles in which dominance was directly inferred from agonistic dyadic interactions over resources such as food, water, sand baths or roosting sites (Appendix 1\u2014table 1).\n\n### Summary data extraction\n\nSome studies had more than one effect size estimate per group of birds studied. When the presence of multiple estimates was due to the use of different statistical analyses on the same data, we chose a single estimate based on the following order of preference: (1) direct reports of effect size per group of birds studied (e.g. correlation coefficient), (2) inferential statistics (e.g. t, F and \u03c72 statistics) from analyses where group ID was accounted for and no other fixed effects were included, (3) direct reports of effect size where individuals from different groups where pooled together, (4) inferential statistics from models including other fixed effects. When the presence of multiple estimates was due to the use of different methods to estimate bib size and dominance rank on the same data, we chose a single estimate per group of birds or study based on the order of preference shown in Appendix 1\u2014tables 1\u20133. In each case, the order of preference was determined prior to conducting any statistical analysis, and thus, method selection was blind to the outcome of the analyses (more details in Appendix 1).\n\n### Primary data acquisition\n\nWe requested primary data (i.e. agonistic dyadic interactions and bib size measures) of all relevant studies identified by our systematic review. Additionally, we asked authors to share, if available, any unpublished data that could be used to test the relationship between dominance rank and bib size in house sparrows. We emailed the corresponding author, but if no reply was received, we tried contacting all the other authors listed. One study (M\u00f8ller, 1987) provided all primary data in the original publication and, therefore, its author was not contacted. Last, we included our own unpublished data (Appendix 1\u2014table 5).\n\nMost studies recorded data from more than one group of birds (Table 1). For each primary dataset obtained, we inferred the dominance hierarchy of each group of birds from the observed agonistic dyadic interactions (wins and losses) among individuals using the randomized Elo-rating method, which estimates dominance hierarchies more precisely than other methods (S\u00e1nchez-T\u00f3jar et al., 2018b). We then used the provided measures of individual bib size (e.g. area outlined from pictures) or, if possible, calculated bib area from length and width measures following (M\u00f8ller, 1987). Subsequently, we estimated the Spearman\u2019s rho rank correlation (\u03c1) between individual rank and bib size for each group of birds. For one study (Buchanan et al., 2010), we received the already inferred dominance hierarchies for each group of birds, which we then correlated with bib size to obtain \u03c1.\n\n### Effect size coding\n\nRegardless of their source (primary or summary data), we transformed all estimates (e.g. \u03c1, F statistics, etc) into Pearson\u2019s correlation coefficients (r), and then into standardized effect sizes using Fisher\u2019s transformation (Zr) for among-study comparison. We used the equations from Nakagawa et al., 2007 and Lajeunesse, 2013. Since log(0) is undefined, r values equal to 1.00 and \u22121.00 were transformed to 0.975 and \u22120.975, respectively, before calculating Zr. Zr values of 0.100, 0.310 and 0.549 were considered small, medium and large effect sizes, respectively (equivalent benchmarks from Cohen, 1988). When not reported directly, the number of individuals (n) was estimated from the degrees of freedom. The variance in Zr was calculated as: VZr\u00a0=\u00a01/(n-3). Estimates (k) based on less than four individuals were discarded (k\u00a0=\u00a033 estimates discarded).\n\n### Meta-analyses\n\nWe ran two multilevel meta-analyses to test whether dominance rank and bib size were positively correlated across studies. The first meta-analysis, in\u00a0other\u00a0words \u2018meta 1\u2019, included published and unpublished (re-)analysed effect sizes (i.e. effect sizes estimated from the studies we obtained primary data from), plus the remaining published effect sizes obtained from summary data (i.e. effect sizes for which primary data were unavailable).\n\nThe second meta-analysis, in other words \u2018meta 2\u2019, tested the robustness of the results of meta 1 to the inclusion of non-reported estimates from studies that reported \u2018statistically non-significant\u2019 results without showing either the magnitude or the direction of the estimates (Table 1). Receipt of primary data allowed us to recover some but not all the originally non-reported estimates. Two \u2018non-significant\u2019 estimates were still missing. Thus, meta 2 was like meta 1 but included the two non-significant non-reported estimates, which were assumed to be zero (see Booksmythe et al., 2017 for a similar approach). Note that non-significant estimates can be either negative or positive, and thus, assuming that they were zero may have either underestimated or overestimated them, something we cannot know from non-reported estimates. Meta-analyses based on published studies only are shown in Appendix 2.\n\nWe investigated inconsistency across studies by estimating the heterogeneity (I2) from our meta-analyses following Nakagawa and Santos, 2012b. I2 values around 25, 50% and 75% are considered as low, moderate and high levels of heterogeneity, respectively (Higgins et al., 2003).\n\n### Meta-regressions\n\nWe tested if season, group composition and/or the type of interactions recorded had an effect on the meta-analytic mean. For that, we ran two multilevel meta-regressions that included the following moderators (hereafter \u2018biological moderators\u2019): (1) \u2018season\u2019, referring to whether the study was conducted during the non-breeding (September-February) or the breeding season (March-August); (2) \u2018group composition\u2019, referring to whether birds were kept in male-only or in mixed-sex groups; and, (3) \u2018type of interactions\u2019, referring to whether the dyadic interactions recorded were only aggressive (e.g. threats and pecks), or also included interactions that were not obviously aggressive (e.g. displacements). Because only three of 19 studies were conducted in the wild (k\u00a0=\u00a012 estimates; Table 1), we did not include a moderator testing for captive versus wild environments. The three biological moderators were mean-centred following Schielzeth, 2010 to aid interpretation.\n\nThe ratio of agonistic dyadic interactions recorded to the total number of interacting individuals observed (hereafter \u2018sampling effort\u2019) is a measure of sampling effort that correlates positively and logarithmically with the ability to infer the latent dominance hierarchy (S\u00e1nchez-T\u00f3jar et al., 2018b). The higher this ratio, the more precisely the latent hierarchy can be inferred (S\u00e1nchez-T\u00f3jar et al., 2018b). For the subset of studies for which the primary data of the agonistic dyadic interactions were available (12 out of 19 studies; Table 1), we ran a multilevel meta-regression including sampling effort and its squared term as z-transformed moderators (Schielzeth, 2010). The squared term was included because of the observed logarithmic relationship between sampling effort and the method\u2019s performance (S\u00e1nchez-T\u00f3jar et al., 2018b). This meta-regression tested whether sampling effort had an effect on the meta-analytic mean: (i) a positive estimate would indicate that the meta-analytic mean may have been affected by the inclusion of studies with unreliable estimates of dominance rank. In contrast, (ii) a negative estimate would indicate that effect sizes were larger when based on unreliable estimates of dominance rank and hence provide evidence for the existence of publication bias.\n\nFor all meta-regressions, we estimated the percentage of variance explained by the moderators (R2marginal) following (Nakagawa and Schielzeth, 2013).\n\n### Random effects\n\nAll meta-analyses and meta-regressions included the two random effects \u2018population ID\u2019 and \u2018study ID\u2019. Population ID was related to the geographical location of the population of birds studied. We used Google maps to estimate the distance over land (i.e. avoiding large water bodies) among populations, and assumed the same population ID when the distance was below 50 km (13 populations; Table 1). Study ID encompassed those estimates obtained within each specific study (19 studies). Two studies tested the prediction twice for the same groups of birds (Table 1) and, within each population, some individuals may have been sampled more than once. However, we could not include \u2018group ID\u2019 and/or \u2018individual ID\u2019 as additional random effects due to either limited sample size or because the relevant data were not available.\n\n### Detection of publication bias\n\nFor the meta-analyses, we assessed publication bias using two methods that are based on the assumption that funnel plots should be symmetrical. First, we visually inspected asymmetry in funnel plots of meta-analytic residuals against the inverse of their precision (defined as the square root of the inverse of VZr) for each meta-analysis. Funnel plots based on meta-analytic residuals (the sum of effect-size-level effects and sampling-variance effects) are more appropriate than those based on effect sizes when multilevel models are used (Nakagawa and Santos, 2012b). Second, we ran Egger\u2019s regressions using the meta-analytic residuals as the response variable, and the precision (see above) as the moderator (Nakagawa and Santos, 2012b) for each meta-analysis. If the intercept of such a regression does not overlap zero, estimates from the opposite direction to the meta-analytic mean might be missing and hence we consider this evidence of publication bias (Nakagawa and Santos, 2012b). Further, we tested whether published estimates differed from unpublished estimates. For that, we ran a multilevel meta-regression that included population ID and study ID as random effects, and \u2018unpublished\u2019 (two levels: yes (0), no (1)) as a moderator. This meta-regression was based on meta 1 (i.e. it did not include the two non-reported estimates). We did not use the trim-and-fill method (Duval and Tweedie, 2000a; Duval and Tweedie, 2000b) because this method has been advised against when significant heterogeneity is present (Moreno et al., 2009; Jennions et al., 2013), as it was the case in our meta-analyses (see section\u00a0'Results\u2019).\n\nFinally, we analysed temporal trends in effect sizes that could indicate \u2018time-lag bias\u2019. Time-lag bias is common in the literature (Jennions and Moller, 2002b; Poulin, 2000), and occurs when the effect sizes of a specific hypothesis are negatively correlated with publication date (i.e. effect sizes decrease over time; Trikalinos and Ioannidis, 2005). A decrease in effect size over time can have multiple causes. For example, initial effect sizes might be inflated due to low statistical power (\u2018winner\u2019s curse\u2019) but published more easily and/or earlier due to positive selection of statistically significant results (reviewed by Koricheva et al., 2013). We ran a multilevel meta-regression based on published effect sizes only, where \u2018year of publication\u2019 was included as a z-transformed moderator (Nakagawa and Santos, 2012b).\n\nAll analyses were run in R v. 3.4.0 (R Core Team, 2017). We inferred individual dominance ranks from agonistic dyadic interactions using the randomized Elo-rating method from the R package \u2018aniDom\u2019 v. 0.1.3 (Farine and S\u00e1nchez-T\u00f3jar, 2017; S\u00e1nchez-T\u00f3jar et al., 2018b). Additionally, we described the dominance hierarchies observed in the groups of house sparrows for which primary data was available. For that we estimated the uncertainty of the dominance hierarchies using the R package \u2018aniDom\u2019 v. 0.1.3 (Farine and S\u00e1nchez-T\u00f3jar, 2017; S\u00e1nchez-T\u00f3jar et al., 2018b) and the triangle transitivity (McDonald and Shizuka, 2013) using the R package \u2018compete\u2019 3.1.0 (Curley, 2016). We used the R package \u2018MCMCglmm\u2019 v. 2.24 (Hadfield, 2010) to run the multilevel meta-analytic (meta-regression) models (Hadfield and Nakagawa, 2010). For each meta-analysis and meta-regression, we ran three independent MCMC chains for 2 million iterations (thinning\u00a0=\u00a01,800, burn-in\u00a0=\u00a0200,000) using inverse-Gamma priors (V\u00a0=\u00a01, nu\u00a0=\u00a00.002). Model chains were checked for convergence and mixing using the Gelman-Rubin statistic. The auto-correlation within the chains was\u00a0<0.1 in all cases. For each meta-analysis and meta-regression, we chose the model with the lowest DIC value to extract the posterior mean and its 95% highest posterior density intervals (hereafter 95% credible interval). We report all data exclusion criteria applied and the results of all analyses conducted in our study.\n\n### Data and code availability\n\nWe provide all of the R code and data used for our analyses (S\u00e1nchez-T\u00f3jar et al., 2018a).\n",
+      "created_at": "2025-12-02T07:04:02.823706Z"
+    },
+    {
+      "id": "a4cb9cbe-1c24-4bbd-8cb1-31ea23e10b30",
+      "submission_id": "4b8ee536-1a9e-40eb-ad17-94a618888745",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Diethard Tautz, Max-Planck Institute for Evolutionary Biology Germany\n\nReviewers:\n- Tim Parker, Whitman College United States\n\n## Review text\n\nDOI: [10.7554/eLife.37385.028](https://doi.org/10.7554/eLife.37385.028)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Meta-analysis challenges a textbook example of status signalling and demonstrates publication bias\" for consideration by eLife. Your article has been reviewed by two peer reviewers, and the evaluation has been overseen by Diethard Tautz as the Senior and Reviewing Editor.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThis study updates a previous meta-analysis of the correlation between a plumage ornament (bib size) and dominance status in house sparrows, using meta-analysis of the primary data from a larger sample of published and unpublished studies. House sparrows have been considered an exemplar for the 'badge of status' hypothesis to explain the evolution of male ornaments, and so this is a particularly important analysis. The present analyses find a small mean effect size with 95% credible intervals overlapping zero, indicating there is no association between bib size and dominance status across studies. They also find that the mean effect size among published studies is significantly larger than among unpublished studies, and that the mean effect size declines over time, both suggesting potential publication biases.\n\nThese results are quite a striking refutation of a previously well-accepted hypothesis, and provide clear indication that a range of biases in the publication process may lend unwarranted support to many hypotheses circulating in the literature.\n\nThe study appears thorough and well implemented. Further, the authors show a commendable degree of transparency regarding their process.\n\nHowever, there are a number of points that need attention and better description before the paper can be published.\n\nEssential revisions:\n\n1) How did the authors choose which relationships to include in their analyses? It is not adequately clear that the authors took sufficient steps to avoid bias in which effect sizes they chose to include. Thus, we recommend that they include more explanation of how they avoided this bias, or, if the risk of bias is plausible, then a re-analysis designed to avoid bias is required.\n\n2) Please consider the following concerns about assessment of publication bias.a) To what extent might your re-analysis of raw data have concealed publication bias? Were you using your re-analyzed data for the funnel plots and Egger regression? This was not clear from the methods.\n\nb) On a related note, using meta-analytic residuals to test for publication bias assumes that none of the modeled variables correlate with publication bias. Is that reasonable in this case?\n\nc) If publication bias towards strong effects were at work, we would expect to observe the strongest effects from those studies with greater sampling error (those with lower sampling effort). The observed absence of this result is what we would expect with little or weak publication bias. This should be acknowledged (though see points a) and b) above). In contrast, there is insufficient explanation of why the results in Figure 4 (the change in published effects over time) are strong evidence of publication bias.\n\n3) Please state also the effect of using meta-analysis of the raw data, reanalysed in a consistent way, compared to using calculated effect sizes or summary statistics available in the published studies. While use of raw data does seem like a desirable standard to strive for in meta-analysis, it doesn't seem to make that big of a difference when comparing the results of 'published 1' and 'published 2' in Appendix\u2014Table 6. Please comment whether you see this as a priority in a list of recommendations for best practice in meta-analysis (or best practice in the production of primary studies that can be effectively included in meta-analyses) or do the many other potential sources of bias have stronger effects on the confidence in/conclusions that can be drawn from meta-analytic estimates?\n\n4) It is necessary to add a statement (and explanatory text \u2013 compare https://osf.io/hadz3/) to the paper confirming whether, for all questions, you have reported all measures, conditions, data exclusions, and how you determined sample sizes.\n\n5) Please also address the following editorial point:\n\nThe Abstract contains a statement about \"the validity of the current scientific publishing culture\". Similar statements are made in the main text (Introduction, last paragraph, Discussion, first and last paragraphs), but the manuscript never goes into detail about these matters.\n\nPlease, therefore, delete the following passage from the Abstract: \"raise important concerns about the validity of the current scientific publishing culture\". Please also delete the corresponding statements in the last paragraph of the Introduction and the first paragraph of the Discussion. It is fine to keep the statement in the last paragraph of the Discussion.\n",
+      "created_at": "2025-12-02T07:04:02.823706Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T07:04:02.823706Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T07:04:02.823706Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "fa0f83b0-9126-412d-9e21-2180bac5c132",
+      "content_id": "801536a9-bb86-4d09-b8c1-1f6934a4e51e",
+      "claim_id": "C1",
+      "claim": "The status signalling hypothesis aims to explain within-species variation in ornamentation by suggesting that some ornaments signal dominance status.",
+      "claim_type": "EXPLICIT",
+      "source": "The status signalling hypothesis aims to explain within-species variation in ornamentation by suggesting that some ornaments signal dominance status.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definitional statement about the status signalling hypothesis, drawing from established scientific knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:04:02.823706Z"
+    },
+    {
+      "id": "91e973d6-6c35-41ce-8c22-6ae90bb1e562",
+      "content_id": "801536a9-bb86-4d09-b8c1-1f6934a4e51e",
+      "claim_id": "C2",
+      "claim": "The black bib of male house sparrows (Passer domesticus) has been considered a textbook example of the status signalling hypothesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we use multilevel meta-analytic models to challenge the textbook example of this hypothesis, the black bib of male house sparrows (Passer domesticus).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to textbooks and previous literature throughout the manuscript.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:04:02.823706Z"
+    },
+    {
+      "id": "d426506d-810d-479e-a391-c83436af9677",
+      "content_id": "801536a9-bb86-4d09-b8c1-1f6934a4e51e",
+      "claim_id": "C3",
+      "claim": "The overall effect size (meta-analytic mean) for the relationship between dominance rank and bib size in male house sparrows was small and uncertain.",
+      "claim_type": "EXPLICIT",
+      "source": "Contrary to previous studies, the overall effect size (i.e. meta-analytic mean) was small and uncertain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is directly supported by the meta-analysis results presented in Table 2 and Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:04:02.823706Z"
+    },
+    {
+      "id": "c0fa1483-3d93-4389-b695-55569ca21b97",
+      "content_id": "801536a9-bb86-4d09-b8c1-1f6934a4e51e",
+      "claim_id": "C4",
+      "claim": "Several biases exist in the literature on status signalling in house sparrows.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, we found several biases in the literature that further question the support available for the status signalling hypothesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the publication bias analyses presented in the Results section, including comparisons of published vs. unpublished studies and time-lag bias analyses.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:04:02.823706Z"
+    },
+    {
+      "id": "81e9f028-5191-4d8c-9061-50738c1c20a5",
+      "content_id": "801536a9-bb86-4d09-b8c1-1f6934a4e51e",
+      "claim_id": "C5",
+      "claim": "Aggressive contests are costly in terms of energy use, and risk of injuries and predation.",
+      "claim_type": "EXPLICIT",
+      "source": "Aggressive contests are costly in terms of energy use, and risk of injuries and predation (Jakobsson et al., 1995; Kelly and Godin, 2001; Neat et al., 1998; Prenter et al., 2006; Sneddon et al., 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:04:02.823706Z"
+    },
+    {
+      "id": "df2142b7-36b9-4f1a-bfc1-5409d98c0607",
+      "content_id": "801536a9-bb86-4d09-b8c1-1f6934a4e51e",
+      "claim_id": "C6",
+      "claim": "Badges of status could reduce the costs of aggressive contests by allowing individuals to predict contest outcomes beforehand.",
+      "claim_type": "EXPLICIT",
+      "source": "These costs could be reduced if individuals can predict the outcome of such contests beforehand using so-called 'badges of status' \u2013 that is, two potential competitors could decide whether to avoid or engage in aggressive interactions based on the message provided by their opponent's signals (Rohwer, 1975).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on the theoretical framework of the status signalling hypothesis, supported by citation.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:04:02.823706Z"
+    },
+    {
+      "id": "d982e7f1-25fa-44da-892f-bff0f6365b67",
+      "content_id": "801536a9-bb86-4d09-b8c1-1f6934a4e51e",
+      "claim_id": "C7",
+      "claim": "Patches of ornamentation have been suggested to function as badges of status in insects, reptiles, and birds.",
+      "claim_type": "EXPLICIT",
+      "source": "Patches of ornamentation have been suggested to function as badges of status in a wide range of taxa, including insects (Tibbetts and Dale, 2004), reptiles (Whiting et al., 2003) and birds (Senar, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous research across multiple taxa.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:04:02.823706Z"
+    },
+    {
+      "id": "982595b1-0fbd-462c-8979-f4d11497e050",
+      "content_id": "801536a9-bb86-4d09-b8c1-1f6934a4e51e",
+      "claim_id": "C8",
+      "claim": "The status signalling hypothesis was originally proposed to explain variation in the size of mountain sheep horns.",
+      "claim_type": "EXPLICIT",
+      "source": "The status signalling hypothesis was originally proposed to explain variation in the size of mountain sheep horns (Beninde, 1937; Geist, 1966), but the hypothesis has become increasingly important in the study of variability in plumage ornamentation in birds (Rohwer, 1975; Senar, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to the original historical sources.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:04:02.823706Z"
+    },
+    {
+      "id": "5f356dfe-97ee-4a43-b895-7f71951c7c7b",
+      "content_id": "801536a9-bb86-4d09-b8c1-1f6934a4e51e",
+      "claim_id": "C9",
+      "claim": "The house sparrow has become the classic textbook example of status signalling.",
+      "claim_type": "EXPLICIT",
+      "source": "Among the many bird species studied (Santos et al., 2011), the house sparrow (Passer domesticus) has become the classic textbook example of status signalling (Andersson, 1994; Searcy and Nowicki, 2005; Senar, 2006; Davies et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to multiple textbooks and review articles.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:04:02.823706Z"
+    },
+    {
+      "id": "fe1b9636-00e9-417a-8ed9-7eeaa870560f",
+      "content_id": "801536a9-bb86-4d09-b8c1-1f6934a4e51e",
+      "claim_id": "C10",
+      "claim": "The house sparrow is a sexually dimorphic passerine in which the main difference between the sexes is a prominent black patch on the male's throat and chest.",
+      "claim_type": "EXPLICIT",
+      "source": "The house sparrow is a sexually dimorphic passerine, in which the main difference between the sexes is a prominent black patch on the male's throat and chest (hereafter 'bib').",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a descriptive statement about the morphology of house sparrows, based on established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:04:02.823706Z"
+    },
+    {
+      "id": "5e8bc169-9e67-403b-96fc-758edb0ab3e4",
+      "content_id": "801536a9-bb86-4d09-b8c1-1f6934a4e51e",
+      "claim_id": "C11",
+      "claim": "Many studies have suggested that bib size serves as a badge of status in house sparrows.",
+      "claim_type": "EXPLICIT",
+      "source": "Many studies have suggested that bib size serves as a badge of status, but most studies are based on limited sample sizes, and have used inconsistent methodologies for measuring bib and dominance status (Nakagawa and Cuthill, 2007; Santos et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous reviews of the literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:04:02.823706Z"
+    },
+    {
+      "id": "1ff5baaa-298f-432d-a345-a984b6cfa848",
+      "content_id": "801536a9-bb86-4d09-b8c1-1f6934a4e51e",
+      "claim_id": "C12",
+      "claim": "Most studies testing the status signalling hypothesis in house sparrows are based on limited sample sizes and have used inconsistent methodologies.",
+      "claim_type": "EXPLICIT",
+      "source": "Many studies have suggested that bib size serves as a badge of status, but most studies are based on limited sample sizes, and have used inconsistent methodologies for measuring bib and dominance status (Nakagawa and Cuthill, 2007; Santos et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous reviews and is also supported by the data presented in Table 1.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:04:02.823706Z"
+    },
+    {
+      "id": "34206b78-84bd-43f2-9a10-e8a758625a0f",
+      "content_id": "801536a9-bb86-4d09-b8c1-1f6934a4e51e",
+      "claim_id": "C13",
+      "claim": "Meta-analysis is a powerful tool to quantitatively test the overall effect size for a specific hypothesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Meta-analysis is a powerful tool to quantitatively test the overall (across-study) effect size (i.e. the 'meta-analytic mean') for a specific hypothesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the utility of meta-analysis as a research method, based on established methodological knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:04:02.823706Z"
+    },
+    {
+      "id": "89b9ebc9-a4c3-4357-97a6-dd0a27ff2ed0",
+      "content_id": "801536a9-bb86-4d09-b8c1-1f6934a4e51e",
+      "claim_id": "C14",
+      "claim": "Meta-analyses are able to provide more robust conclusions than single studies.",
+      "claim_type": "EXPLICIT",
+      "source": "Meta-analyses are therefore able to provide more robust conclusions than single studies and are increasingly used in evolutionary ecology (Gurevitch et al., 2018; Nakagawa and Poulin, 2012a; Nakagawa and Santos, 2012b; Senior et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to methodological literature on meta-analysis.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:04:02.823706Z"
+    },
+    {
+      "id": "117cf9e1-a78c-47a6-ab22-1da61a436de0",
+      "content_id": "801536a9-bb86-4d09-b8c1-1f6934a4e51e",
+      "claim_id": "C15",
+      "claim": "Meta-analysis of primary data allows methodology to be standardized so that comparable effect sizes can be obtained across studies.",
+      "claim_type": "EXPLICIT",
+      "source": "This type of meta-analysis allows methodology to be standardized so that comparable effect sizes can be obtained across studies and is, therefore, considered the gold standard in disciplines such as medicine (Simmonds et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to methodological literature and represents established methodological knowledge.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:04:02.823706Z"
+    },
+    {
+      "id": "fcc92da3-847e-4443-ae20-e3c714e56e2f",
+      "content_id": "801536a9-bb86-4d09-b8c1-1f6934a4e51e",
+      "claim_id": "C16",
+      "claim": "Meta-analysis of primary data is considered the gold standard in disciplines such as medicine.",
+      "claim_type": "EXPLICIT",
+      "source": "This type of meta-analysis allows methodology to be standardized so that comparable effect sizes can be obtained across studies and is, therefore, considered the gold standard in disciplines such as medicine (Simmonds et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to methodological literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:04:02.823706Z"
+    },
+    {
+      "id": "e4cbd963-901b-46df-a260-3785e40e9fcb",
+      "content_id": "801536a9-bb86-4d09-b8c1-1f6934a4e51e",
+      "claim_id": "C17",
+      "claim": "Meta-analysis of primary data is still rarely used in evolutionary ecology.",
+      "claim_type": "EXPLICIT",
+      "source": "Unfortunately, meta-analysis of primary data is still rarely used in evolutionary ecology (but see Barrowman et al., 2003; Richards and Bass, 2005; Krasnov et al., 2009), perhaps due to the difficulty of obtaining the primary data of previously published studies until recently (Culina et al., 2018; Schmid et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations showing limited examples of this approach in the field.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:04:02.823706Z"
+    },
+    {
+      "id": "71d3b605-bdc7-4df5-a87e-7a4cd76b842d",
+      "content_id": "801536a9-bb86-4d09-b8c1-1f6934a4e51e",
+      "claim_id": "C18",
+      "claim": "Publication bias occurs whenever particular effect sizes are more likely found in the literature than others.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, publication bias occurs whenever particular effect sizes (e.g. larger ones) are more likely found in the literature than others (e.g. smaller ones).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definitional statement about publication bias, based on established methodological knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:04:02.823706Z"
+    },
+    {
+      "id": "7ad5313f-244c-48af-9567-5c177358799b",
+      "content_id": "801536a9-bb86-4d09-b8c1-1f6934a4e51e",
+      "claim_id": "C19",
+      "claim": "Publication bias tends to occur when statistical significance and/or direction of effect sizes determines whether results were submitted or accepted for publication.",
+      "claim_type": "EXPLICIT",
+      "source": "This tends to be the case when statistical significance and/or direction of effect sizes determines whether results were submitted or accepted for publication (Jennions et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to methodological literature on publication bias.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:04:02.823706Z"
+    },
+    {
+      "id": "fafcaafb-b530-4d69-af07-69acfd38675a",
+      "content_id": "801536a9-bb86-4d09-b8c1-1f6934a4e51e",
+      "claim_id": "C20",
+      "claim": "Publication bias can strongly affect the estimation of the meta-analytic mean and distort the interpretation of the hypothesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, publication bias can strongly affect the estimation of the meta-analytic mean, and distort the interpretation of the hypothesis (Rothstein et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to methodological literature on publication bias.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:04:02.823706Z"
+    },
+    {
+      "id": "03fae732-e5fd-4197-87f8-1c981050da0e",
+      "content_id": "801536a9-bb86-4d09-b8c1-1f6934a4e51e",
+      "claim_id": "C21",
+      "claim": "The authors obtained primary data for seven of 13 (54%) published studies.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, we obtained the primary data for seven of 13 (54%) published studies, and we provided data for six additional unpublished studies (Table 1\u2014Appendix 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is directly supported by the data presented in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:04:02.823706Z"
+    },
+    {
+      "id": "5fd1bdd0-1890-46e3-8bac-6ac6fd43471d",
+      "content_id": "801536a9-bb86-4d09-b8c1-1f6934a4e51e",
+      "claim_id": "C22",
+      "claim": "The authors provided data for six additional unpublished studies.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, we obtained the primary data for seven of 13 (54%) published studies, and we provided data for six additional unpublished studies (Table 1\u2014Appendix 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is directly supported by the data presented in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:04:02.823706Z"
+    },
+    {
+      "id": "68aee373-603e-4ee3-acb0-71137a0ea322",
+      "content_id": "801536a9-bb86-4d09-b8c1-1f6934a4e51e",
+      "claim_id": "C23",
+      "claim": "Mean sampling effort was 36 interactions per individual (SD = 24).",
+      "claim_type": "EXPLICIT",
+      "source": "Mean sampling effort was 36 interactions/individual (SD = 24), which highlights that, overall, dominance hierarchies were inferred reliably across groups (S\u00e1nchez-T\u00f3jar et al., 2018b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a descriptive statistic calculated from the primary data analyzed in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:04:02.823706Z"
+    },
+    {
+      "id": "2e123c88-89df-49bf-9373-852149684dff",
+      "content_id": "801536a9-bb86-4d09-b8c1-1f6934a4e51e",
+      "claim_id": "C24",
+      "claim": "Dominance hierarchies were inferred reliably across groups of house sparrows.",
+      "claim_type": "EXPLICIT",
+      "source": "Mean sampling effort was 36 interactions/individual (SD = 24), which highlights that, overall, dominance hierarchies were inferred reliably across groups (S\u00e1nchez-T\u00f3jar et al., 2018b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on the sampling effort data and is supported by citation to methodological work on dominance hierarchy inference.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:04:02.823706Z"
+    },
+    {
+      "id": "7768fc37-179a-4229-96db-58b47412a436",
+      "content_id": "801536a9-bb86-4d09-b8c1-1f6934a4e51e",
+      "claim_id": "C25",
+      "claim": "The mean Elo-rating repeatability was 0.92 (SD = 0.07).",
+      "claim_type": "EXPLICIT",
+      "source": "The mean Elo-rating repeatability was 0.92 (SD = 0.07) and the mean triangle transitivity was 0.63 (SD = 0.28).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a descriptive statistic calculated from the primary data analyzed in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:04:02.823706Z"
+    },
+    {
+      "id": "ed819bfe-ab8e-4bfb-9551-5dbb694c810e",
+      "content_id": "801536a9-bb86-4d09-b8c1-1f6934a4e51e",
+      "claim_id": "C26",
+      "claim": "The mean triangle transitivity was 0.63 (SD = 0.28).",
+      "claim_type": "EXPLICIT",
+      "source": "The mean Elo-rating repeatability was 0.92 (SD = 0.07) and the mean triangle transitivity was 0.63 (SD = 0.28).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a descriptive statistic calculated from the primary data analyzed in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:04:02.823706Z"
+    },
+    {
+      "id": "025ee6ec-8283-49b6-afae-24af33b40c15",
+      "content_id": "801536a9-bb86-4d09-b8c1-1f6934a4e51e",
+      "claim_id": "C27",
+      "claim": "The dominance hierarchies observed across groups of house sparrows were medium in both steepness and transitivity.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the dominance hierarchies observed across groups of house sparrows were medium in both steepness and transitivity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is an interpretation of the Elo-rating repeatability and triangle transitivity statistics presented.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:04:02.823706Z"
+    },
+    {
+      "id": "6e3011aa-b584-4e44-8098-302ef7883277",
+      "content_id": "801536a9-bb86-4d09-b8c1-1f6934a4e51e",
+      "claim_id": "C28",
+      "claim": "The meta-analyses revealed a small overall effect size with large 95% credible intervals that overlapped zero.",
+      "claim_type": "EXPLICIT",
+      "source": "Our meta-analyses revealed a small overall effect size with large 95% credible intervals that overlapped zero (Table 2; Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is directly supported by the meta-analysis results shown in Table 2 and Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:04:02.823706Z"
+    },
+    {
+      "id": "f6c78028-c2b0-4ca1-9f27-06cf9c662dbd",
+      "content_id": "801536a9-bb86-4d09-b8c1-1f6934a4e51e",
+      "claim_id": "C29",
+      "claim": "The overall heterogeneity (I2overall) was moderate at 53%.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, the overall heterogeneity (I2overall) was moderate (53%; Table 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is directly supported by the heterogeneity statistics presented in Table 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:04:02.823706Z"
+    },
+    {
+      "id": "1fa5265d-f30e-4907-981b-a94fff3e77d4",
+      "content_id": "801536a9-bb86-4d09-b8c1-1f6934a4e51e",
+      "claim_id": "C30",
+      "claim": "Bib size is at best a weak and unreliable signal of dominance status in male house sparrows.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, our results suggested that generally, bib size is at best a weak and unreliable signal of dominance status in male house sparrows.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the meta-analysis results showing small effect sizes with credible intervals overlapping zero.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:04:02.823706Z"
+    },
+    {
+      "id": "cc5ca859-c9e5-44bb-adf7-ed28c3d2ecaf",
+      "content_id": "801536a9-bb86-4d09-b8c1-1f6934a4e51e",
+      "claim_id": "C31",
+      "claim": "None of the three biological moderators studied (season, group composition and type of interactions) explained differences among studies.",
+      "claim_type": "EXPLICIT",
+      "source": "None of the three biological moderators studied (season, group composition and type of interactions) explained differences among studies (Table 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is directly supported by the meta-regression results presented in Table 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:04:02.823706Z"
+    },
+    {
+      "id": "ac54b6c2-32eb-4e0b-a5bc-664ba5d51b6b",
+      "content_id": "801536a9-bb86-4d09-b8c1-1f6934a4e51e",
+      "claim_id": "C32",
+      "claim": "Sampling effort was not an important moderator of the relationship between dominance rank and bib size.",
+      "claim_type": "EXPLICIT",
+      "source": "Sampling effort (i.e. the ratio of interactions to individuals recorded) also was not an important moderator (Table 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is directly supported by the meta-regression results presented in Table 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:04:02.823706Z"
+    },
+    {
+      "id": "c60e3a5a-b1db-44ef-b0ea-20a2c3ed0cba",
+      "content_id": "801536a9-bb86-4d09-b8c1-1f6934a4e51e",
+      "claim_id": "C33",
+      "claim": "There was no clear asymmetry in the funnel plots.",
+      "claim_type": "EXPLICIT",
+      "source": "There was no clear asymmetry in the funnel plots (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on visual inspection of the funnel plots shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:04:02.823706Z"
+    },
+    {
+      "id": "3a20305c-35f8-40a7-8336-8eac4c0844c4",
+      "content_id": "801536a9-bb86-4d09-b8c1-1f6934a4e51e",
+      "claim_id": "C34",
+      "claim": "Egger's regression tests did not show evidence of funnel plot asymmetry in any of the meta-analyses.",
+      "claim_type": "EXPLICIT",
+      "source": "Also, Egger's regression tests did not show evidence of funnel plot asymmetry in any of the meta-analyses (Table 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is directly supported by the Egger's regression results presented in Table 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:04:02.823706Z"
+    },
+    {
+      "id": "780a4d5a-6895-4e83-95f2-75147d60f488",
+      "content_id": "801536a9-bb86-4d09-b8c1-1f6934a4e51e",
+      "claim_id": "C35",
+      "claim": "Published effect sizes were larger than unpublished ones.",
+      "claim_type": "EXPLICIT",
+      "source": "However, published effect sizes were larger than unpublished ones, and the latter were not different from zero (Table 4; Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is directly supported by the meta-regression results comparing published and unpublished studies shown in Table 4 and Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:04:02.823706Z"
+    },
+    {
+      "id": "1668369d-247f-4183-929a-12396383f1cc",
+      "content_id": "801536a9-bb86-4d09-b8c1-1f6934a4e51e",
+      "claim_id": "C36",
+      "claim": "Unpublished effect sizes were not different from zero.",
+      "claim_type": "EXPLICIT",
+      "source": "However, published effect sizes were larger than unpublished ones, and the latter were not different from zero (Table 4; Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is directly supported by the meta-regression results shown in Table 4 and Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:04:02.823706Z"
+    },
+    {
+      "id": "f73c70f4-7587-4b8a-b3d4-bdfd47391ee2",
+      "content_id": "801536a9-bb86-4d09-b8c1-1f6934a4e51e",
+      "claim_id": "C37",
+      "claim": "The overall effect size decreased over time and approached zero.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, we found that the overall effect size decreased over time and approached zero (Table 4; Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is directly supported by the time-lag bias analysis results shown in Table 4 and Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:04:02.823706Z"
+    },
+    {
+      "id": "869bb183-c8d3-4040-be0c-4ad7d3c2e3cb",
+      "content_id": "801536a9-bb86-4d09-b8c1-1f6934a4e51e",
+      "claim_id": "C38",
+      "claim": "The male house sparrow's bib is not the strong across-study predictor of dominance status once believed.",
+      "claim_type": "EXPLICIT",
+      "source": "The male house sparrow's bib is not the strong across-study predictor of dominance status once believed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion of the study, based on the meta-analysis results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:04:02.823706Z"
+    },
+    {
+      "id": "1b834df9-c7fc-41a6-8176-87613935dc3b",
+      "content_id": "801536a9-bb86-4d09-b8c1-1f6934a4e51e",
+      "claim_id": "C39",
+      "claim": "The previous meta-analysis found a medium-to-large effect for the relationship between dominance rank and bib size.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to the medium-to-large effect found in the previous meta-analysis (Nakagawa et al., 2007), our updated meta-analytic mean was small, uncertain and overlapped zero.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to the previous meta-analysis.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:04:02.823706Z"
+    },
+    {
+      "id": "34ceb696-8d98-43f4-87ce-d6e646b01903",
+      "content_id": "801536a9-bb86-4d09-b8c1-1f6934a4e51e",
+      "claim_id": "C40",
+      "claim": "The male house sparrow's bib should not be unambiguously considered or called a badge of status.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the male house sparrow's bib should not be unambiguously considered or called a badge of status.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the meta-analysis results showing small and uncertain effect sizes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:04:02.823706Z"
+    },
+    {
+      "id": "5e464818-ffad-4a1e-ba67-5ebf26aeaae6",
+      "content_id": "801536a9-bb86-4d09-b8c1-1f6934a4e51e",
+      "claim_id": "C41",
+      "claim": "The meta-analytic mean of unpublished studies was essentially zero.",
+      "claim_type": "EXPLICIT",
+      "source": "First, the meta-analytic mean of unpublished studies was essentially zero, compared to the medium effect size detected in published studies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the meta-regression results comparing published and unpublished studies.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:04:02.823706Z"
+    },
+    {
+      "id": "15f3374d-a619-4e94-a3fe-f913d241719e",
+      "content_id": "801536a9-bb86-4d09-b8c1-1f6934a4e51e",
+      "claim_id": "C42",
+      "claim": "The meta-analytic mean of published studies showed a medium effect size.",
+      "claim_type": "EXPLICIT",
+      "source": "First, the meta-analytic mean of unpublished studies was essentially zero, compared to the medium effect size detected in published studies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the meta-regression results comparing published and unpublished studies.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:04:02.823706Z"
+    },
+    {
+      "id": "868fd283-471a-4c2b-9a69-d1c521689720",
+      "content_id": "801536a9-bb86-4d09-b8c1-1f6934a4e51e",
+      "claim_id": "C43",
+      "claim": "The effect size estimated in published studies has been decreasing over time.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, we found that the effect size estimated in published studies has been decreasing over time, and recently published effects were on average no longer distinguishable from zero.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the time-lag bias analysis results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:04:02.823706Z"
+    },
+    {
+      "id": "ade8cb57-50bb-42f5-b283-9b0be6cb5c23",
+      "content_id": "801536a9-bb86-4d09-b8c1-1f6934a4e51e",
+      "claim_id": "C44",
+      "claim": "Recently published effects were on average no longer distinguishable from zero.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, we found that the effect size estimated in published studies has been decreasing over time, and recently published effects were on average no longer distinguishable from zero.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the time-lag bias analysis results shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:04:02.823706Z"
+    },
+    {
+      "id": "03278009-4c19-48fd-8306-f07392092c6f",
+      "content_id": "801536a9-bb86-4d09-b8c1-1f6934a4e51e",
+      "claim_id": "C45",
+      "claim": "An exhaustive review and meta-analysis on plumage coloration of blue tits revealed that the only robust conclusion is that females' plumage differs from that of males.",
+      "claim_type": "EXPLICIT",
+      "source": "An exhaustive review and meta-analysis on plumage coloration of blue tits (Cyanistes caeruleus) revealed that, after dozens of publications studying the function of plumage ornamentation in this species, the only robust conclusion is that females' plumage differs from that of males (Parker, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Parker's review and meta-analysis.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:04:02.823706Z"
+    },
+    {
+      "id": "e7614746-9e42-4380-88ca-3443e6e09a3c",
+      "content_id": "801536a9-bb86-4d09-b8c1-1f6934a4e51e",
+      "claim_id": "C46",
+      "claim": "The long-believed effect of leg bands of particular colours on the perceived attractiveness of male zebra finches has been experimentally and meta-analytically refuted.",
+      "claim_type": "EXPLICIT",
+      "source": "Another example is the long-believed effect of leg bands of particular colours on the perceived attractiveness of male zebra finches (Taeniopygia guttata), which has been also experimentally and meta-analytically refuted (Seguin and Forstmeier, 2012; Wang et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to experimental and meta-analytic studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:04:02.823706Z"
+    },
+    {
+      "id": "e80240ad-dff3-4e31-a4de-af242bb01c7f",
+      "content_id": "801536a9-bb86-4d09-b8c1-1f6934a4e51e",
+      "claim_id": "C47",
+      "claim": "The existence of a badge of status in the paper wasp (Polistes dominulus) has been challenged multiple times.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, the existence of a badge of status in a non-bird model species, the paper wasp (Polistes dominulus; Tibbetts and Dale, 2004) has also been challenged multiple times (e.g. Cervo et al., 2008; Green and Field, 2011; Green et al., 2013), generating doubts about its generality.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to multiple studies challenging the badge of status in paper wasps.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:04:02.823706Z"
+    },
+    {
+      "id": "a4d7dde1-c8a9-4306-9476-da646ad60b3c",
+      "content_id": "801536a9-bb86-4d09-b8c1-1f6934a4e51e",
+      "claim_id": "C48",
+      "claim": "Abundant replication is needed before any strong or general conclusion can be drawn.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings corroborate studies showing that abundant replication is needed before any strong or general conclusion can be drawn (Aarts et al., 2015), and highlight the existence of important impediments (e.g. publication bias) to scientific progress in evolutionary ecology (Forstmeier et al., 2017; Fraser et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to studies on replication in science.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:04:02.823706Z"
+    },
+    {
+      "id": "936c7629-093d-4c68-a495-cce6e0fb0913",
+      "content_id": "801536a9-bb86-4d09-b8c1-1f6934a4e51e",
+      "claim_id": "C49",
+      "claim": "The published literature on status signalling in house sparrows is likely a biased subsample.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, our results showed that the published literature on status signalling in house sparrows is likely a biased subsample.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on the finding that published and unpublished effect sizes differ significantly.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:04:02.823706Z"
+    },
+    {
+      "id": "5ef3d7bc-9e5d-42bc-a68a-5c57989a2985",
+      "content_id": "801536a9-bb86-4d09-b8c1-1f6934a4e51e",
+      "claim_id": "C50",
+      "claim": "Some of the unpublished datasets are not examples of the 'file drawer problem' because the relationship between dominance rank and bib size was never formally tested.",
+      "claim_type": "EXPLICIT",
+      "source": "In some of our own unpublished datasets, the relationship between dominance rank and bib size was never formally tested (D.F. Westneat and V. B\u00f3kony, personal communication, February, 2018), that is, our unpublished datasets are not all examples of the 'file drawer problem' (sensu Rosenthal, 1979).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on personal communications with data contributors.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:04:02.823706Z"
+    },
+    {
+      "id": "c7bac8ed-4dcd-4ebf-add9-0552d1dc18c0",
+      "content_id": "801536a9-bb86-4d09-b8c1-1f6934a4e51e",
+      "claim_id": "C51",
+      "claim": "The failure of Egger's regression tests to detect funnel plot asymmetry was likely due to the limited number of effect sizes available and the moderate level of heterogeneity.",
+      "claim_type": "EXPLICIT",
+      "source": "However, because unpublished data indeed existed (i.e. those obtained for this study), the detection failure was likely the consequence of the limited number of effect sizes available (i.e. low power) and the moderate level of heterogeneity found in this study (Moreno et al., 2009; Sterne and Egger, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is an inference based on methodological literature about the limitations of Egger's regression test.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:04:02.823706Z"
+    },
+    {
+      "id": "9aae3faa-4b83-424e-8963-95e5cad667a5",
+      "content_id": "801536a9-bb86-4d09-b8c1-1f6934a4e51e",
+      "claim_id": "C52",
+      "claim": "Time-lag bias occurs when early studies report larger effect sizes than later studies.",
+      "claim_type": "EXPLICIT",
+      "source": "An additional type of publication bias is time-lag bias, where early studies report larger effect sizes than later studies (Trikalinos and Ioannidis, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definitional statement about time-lag bias, supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:04:02.823706Z"
+    },
+    {
+      "id": "dfea687b-5601-4679-aa53-484e1e6bbc16",
+      "content_id": "801536a9-bb86-4d09-b8c1-1f6934a4e51e",
+      "claim_id": "C53",
+      "claim": "The correlation between dominance rank and bib size in published studies has decreased over time and approached zero.",
+      "claim_type": "EXPLICIT",
+      "source": "We detected evidence for such bias because the correlation between dominance rank and bib size in published studies has decreased over time and approached zero.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is directly supported by the time-lag bias analysis results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:04:02.823706Z"
+    },
+    {
+      "id": "cf885b3f-e7e2-4d79-bae2-5f2b562f5b5f",
+      "content_id": "801536a9-bb86-4d09-b8c1-1f6934a4e51e",
+      "claim_id": "C54",
+      "claim": "Year of publication explained a large percentage of the model's variance in the time-lag bias analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Year of publication explained a large percentage of the model's variance, and accounting for year of publication resulted in a strong reduction of the mean effect size across published studies (Table 4 vs. Appendix 2\u2014table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is directly supported by the R\u00b2marginal values presented in Table 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:04:02.823706Z"
+    },
+    {
+      "id": "f85af0ae-b333-4e37-8642-0c6a06ed1d31",
+      "content_id": "801536a9-bb86-4d09-b8c1-1f6934a4e51e",
+      "claim_id": "C55",
+      "claim": "Time-lag bias has been detected in other ecological studies.",
+      "claim_type": "EXPLICIT",
+      "source": "Time-lag bias has been detected in other ecological studies (Poulin, 2000); Jennions and Moller, 2002b), including a meta-analysis on status signalling across bird species (Santos et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies detecting time-lag bias.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:04:02.823706Z"
+    },
+    {
+      "id": "101c56ee-7ab1-4812-983e-594a889c78de",
+      "content_id": "801536a9-bb86-4d09-b8c1-1f6934a4e51e",
+      "claim_id": "C56",
+      "claim": "Santos et al., 2011 found a positive overall (across-species) effect size that persisted regardless of time-lag bias.",
+      "claim_type": "EXPLICIT",
+      "source": "In the latter study, a positive overall (across-species) effect size persisted regardless of the time-lag bias, and no strong evidence for other types of biases was found (Santos et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Santos et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:04:02.823706Z"
+    },
+    {
+      "id": "8f8b84b0-bd52-4353-8226-33532bd9f3ad",
+      "content_id": "801536a9-bb86-4d09-b8c1-1f6934a4e51e",
+      "claim_id": "C57",
+      "claim": "Santos et al., 2011 did not attempt to analyse unpublished data.",
+      "claim_type": "EXPLICIT",
+      "source": "However, Santos et al., 2011 did not attempt to analyse unpublished data, so additional evidence is needed to determine the effect that unpublished data may have on the overall validity of the status signalling hypothesis across bird species.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on the methods described in Santos et al., 2011.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:04:02.823706Z"
+    },
+    {
+      "id": "2307ab34-7d07-4430-83b5-9e2c127fac99",
+      "content_id": "801536a9-bb86-4d09-b8c1-1f6934a4e51e",
+      "claim_id": "C58",
+      "claim": "If effect sizes based on unpublished data for other species were of similar magnitude to those obtained for house sparrows, the validity of the status signalling hypothesis across species would need reconsideration.",
+      "claim_type": "EXPLICIT",
+      "source": "If effect sizes based on unpublished data for other species were of similar magnitude to those obtained for house sparrows, the validity of the status signalling hypothesis across species would need reconsideration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about the potential implications of the findings for other species.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:04:02.823706Z"
+    },
+    {
+      "id": "6a7abd3e-8fbe-441a-a84e-173fa2863c28",
+      "content_id": "801536a9-bb86-4d09-b8c1-1f6934a4e51e",
+      "claim_id": "C59",
+      "claim": "The existence of publication bias in ecology has long been recognized.",
+      "claim_type": "EXPLICIT",
+      "source": "The existence of publication bias in ecology has long been recognized (Cassey et al., 2004; Jennions and Moller, 2002b; Palmer, 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies on publication bias in ecology.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:04:02.823706Z"
+    },
+    {
+      "id": "feb285e3-93e4-4c34-870a-05da58673df9",
+      "content_id": "801536a9-bb86-4d09-b8c1-1f6934a4e51e",
+      "claim_id": "C60",
+      "claim": "Publication bias leads to false conclusions if not accounted for.",
+      "claim_type": "EXPLICIT",
+      "source": "Publication bias leads to false conclusions if not accounted for (Rothstein et al., 2005), and is, thus, a serious impediment to scientific progress.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to methodological literature on publication bias.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:04:02.823706Z"
+    },
+    {
+      "id": "2e404f46-31aa-4ac8-80e5-90a8cf57c763",
+      "content_id": "801536a9-bb86-4d09-b8c1-1f6934a4e51e",
+      "claim_id": "C61",
+      "claim": "The percentage of variance not attributable to sampling error (heterogeneity) was moderate.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we found that the percentage of variance that was not attributable to sampling error (i.e. heterogeneity) was moderate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on the I\u00b2 values reported in the meta-analysis results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:04:02.823706Z"
+    },
+    {
+      "id": "c098370c-2828-4b99-b4a0-1e53bd8ddcd6",
+      "content_id": "801536a9-bb86-4d09-b8c1-1f6934a4e51e",
+      "claim_id": "C62",
+      "claim": "The heterogeneity value is below the average calculated across ecological and evolutionary meta-analyses.",
+      "claim_type": "EXPLICIT",
+      "source": "This value is below the average calculated across ecological and evolutionary meta-analyses (Senior et al., 2016), and indicates that we accounted for large differences among estimates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Senior et al., 2016 and comparison of the observed heterogeneity to published averages.",
+      "evidence_type": "[\"CITATION\", \"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:04:02.823706Z"
+    },
+    {
+      "id": "666684af-1b24-41e1-838b-e8910bae245c",
+      "content_id": "801536a9-bb86-4d09-b8c1-1f6934a4e51e",
+      "claim_id": "C63",
+      "claim": "The meta-regressions based on biological moderators explained 20\u201323% of the variance.",
+      "claim_type": "EXPLICIT",
+      "source": "Our meta-regressions based on biological moderators explained 20\u201323% of the variance (Table 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is directly supported by the R\u00b2marginal values presented in Table 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:04:02.823706Z"
+    },
+    {
+      "id": "c5a23582-2bc3-48c5-bb54-d181cb81bcc0",
+      "content_id": "801536a9-bb86-4d09-b8c1-1f6934a4e51e",
+      "claim_id": "C64",
+      "claim": "None of the biological moderators tested strongly influenced the overall effect size.",
+      "claim_type": "EXPLICIT",
+      "source": "However, none of the biological moderators that we tested strongly influenced the overall effect size, possibly because of limited sample sizes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on the meta-regression results showing that credible intervals for moderator effects overlapped zero.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:04:02.823706Z"
+    },
+    {
+      "id": "060ecf91-33c0-4857-afce-5f90d599252b",
+      "content_id": "801536a9-bb86-4d09-b8c1-1f6934a4e51e",
+      "claim_id": "C65",
+      "claim": "Badges of status are expected to be particularly important in large and unstable groups of individuals where individual recognition would otherwise be difficult.",
+      "claim_type": "EXPLICIT",
+      "source": "Badges of status are expected to be particularly important in large and unstable groups of individuals where individual recognition would otherwise be difficult (Rohwer, 1975).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on the theoretical framework of the status signalling hypothesis, supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:04:02.823706Z"
+    },
+    {
+      "id": "63f21830-170b-4915-a038-ba85ba9baee4",
+      "content_id": "801536a9-bb86-4d09-b8c1-1f6934a4e51e",
+      "claim_id": "C66",
+      "claim": "The evolution of badges of status in New and Old World sparrows has been related to sociality during the non-breeding season.",
+      "claim_type": "EXPLICIT",
+      "source": "While the evolution of badges of status in New and Old World sparrows has been related to sociality (i.e. flocking) during the non-breeding season (Tibbetts and Safran, 2009), additional factors need to be involved if the signal is to function in reducing aggression but retaining honesty (Diep and Westneat, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous theoretical and empirical work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:04:02.823706Z"
+    },
+    {
+      "id": "a9950549-0621-4458-a1a0-775a844a8251",
+      "content_id": "801536a9-bb86-4d09-b8c1-1f6934a4e51e",
+      "claim_id": "C67",
+      "claim": "The moderator 'season' (breeding vs. non-breeding) was not a strong predictor in the models.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results, however, did not show any evidence for a season-dependent effect as the moderator 'season' (breeding vs. non-breeding) was not a strong predictor in our models.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on the meta-regression results showing that the season moderator's credible intervals overlapped zero.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:04:02.823706Z"
+    },
+    {
+      "id": "25b9e076-e95d-4b20-8797-5518a6e734aa",
+      "content_id": "801536a9-bb86-4d09-b8c1-1f6934a4e51e",
+      "claim_id": "C68",
+      "claim": "Badges of status are expected to function both within and between sexes.",
+      "claim_type": "EXPLICIT",
+      "source": "Badges of status are expected to function both within and between sexes (Rohwer, 1975; Senar, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on the theoretical framework of the status signalling hypothesis, supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:04:02.823706Z"
+    },
+    {
+      "id": "3ae628dd-79e0-48c4-a877-d8af5a751202",
+      "content_id": "801536a9-bb86-4d09-b8c1-1f6934a4e51e",
+      "claim_id": "C69",
+      "claim": "There was little evidence that the status signalling function of bib size differed between male-only and mixed-sex flocks.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, we found little evidence that the status signalling function of bib size differed between male-only and mixed-sex flocks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on the meta-regression results showing that the group composition moderator was not a strong predictor.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:04:02.823706Z"
+    },
+    {
+      "id": "c813fda4-bc30-4116-99a2-38113bb0f739",
+      "content_id": "801536a9-bb86-4d09-b8c1-1f6934a4e51e",
+      "claim_id": "C70",
+      "claim": "Male but not female house sparrows have a bib.",
+      "claim_type": "EXPLICIT",
+      "source": "However, male but not female house sparrows have a bib.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a descriptive statement about the morphology of house sparrows, based on established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:04:02.823706Z"
+    },
+    {
+      "id": "ce8c1b86-81d8-48db-89ef-70e9087652ab",
+      "content_id": "801536a9-bb86-4d09-b8c1-1f6934a4e51e",
+      "claim_id": "C71",
+      "claim": "The sexual dimorphism in bib presence suggests that the bib's function is likely more important when competing for resources other than essential, a priori non-sex-specific resources.",
+      "claim_type": "EXPLICIT",
+      "source": "This sexual dimorphism suggests that the bib's function is likely more important when competing for resources other than essential, a priori non-sex-specific resources such as food, water, sand baths and roosting sites.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the observation of sexual dimorphism in bib presence.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:04:02.823706Z"
+    },
+    {
+      "id": "6fcc6a33-dac5-4ba5-8c28-a0bc0e1bb8e9",
+      "content_id": "801536a9-bb86-4d09-b8c1-1f6934a4e51e",
+      "claim_id": "C72",
+      "claim": "M\u00f8ller, 1988 and Pape Moller, 1989 reported that female house sparrows preferentially choose males with large bibs.",
+      "claim_type": "EXPLICIT",
+      "source": "M\u00f8ller, 1988 and Pape Moller, 1989 reported that female house sparrows preferentially choose males with large bibs (but see Kimball, 1996), and bib size has been positively correlated with sexual behaviour (Veiga, 1996; M\u00f8ller, 1990), which suggests that the bib may play a role in mate choice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies on mate choice in house sparrows.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:04:02.823706Z"
+    },
+    {
+      "id": "eb2a101e-c010-4753-b07b-70f82aa198c7",
+      "content_id": "801536a9-bb86-4d09-b8c1-1f6934a4e51e",
+      "claim_id": "C73",
+      "claim": "Bib size has been positively correlated with sexual behaviour.",
+      "claim_type": "EXPLICIT",
+      "source": "M\u00f8ller, 1988 and Pape Moller, 1989 reported that female house sparrows preferentially choose males with large bibs (but see Kimball, 1996), and bib size has been positively correlated with sexual behaviour (Veiga, 1996; M\u00f8ller, 1990), which suggests that the bib may play a role in mate choice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:04:02.823706Z"
+    },
+    {
+      "id": "0d2879ea-9d58-404b-8eb0-86fae461e4b7",
+      "content_id": "801536a9-bb86-4d09-b8c1-1f6934a4e51e",
+      "claim_id": "C74",
+      "claim": "The bib may play a role in mate choice.",
+      "claim_type": "EXPLICIT",
+      "source": "M\u00f8ller, 1988 and Pape Moller, 1989 reported that female house sparrows preferentially choose males with large bibs (but see Kimball, 1996), and bib size has been positively correlated with sexual behaviour (Veiga, 1996; M\u00f8ller, 1990), which suggests that the bib may play a role in mate choice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the cited studies showing correlations between bib size and mate choice/sexual behaviour.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:04:02.823706Z"
+    },
+    {
+      "id": "99eb1646-be6f-43af-bd08-68b761f2b992",
+      "content_id": "801536a9-bb86-4d09-b8c1-1f6934a4e51e",
+      "claim_id": "C75",
+      "claim": "The main benefit of using badges of status would be to avoid fights, which should be particularly important when interacting with unfamiliar individuals.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the original status signalling hypothesis posits that the main benefit of using badges of status would be to avoid fights, which should be particularly important when interacting with unfamiliar individuals (Rohwer, 1975; Senar, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on the theoretical framework of the status signalling hypothesis, supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:04:02.823706Z"
+    },
+    {
+      "id": "15a99667-1dc1-4686-b0b7-cf5aee6c8665",
+      "content_id": "801536a9-bb86-4d09-b8c1-1f6934a4e51e",
+      "claim_id": "C76",
+      "claim": "There was no change in mean effect size when only obviously aggressive interactions were studied.",
+      "claim_type": "EXPLICIT",
+      "source": "Although we did not have data to test whether unfamiliarity among contestants is an important pre-requisite for the status signalling hypothesis, we found no change in mean effect size when only obviously aggressive interactions were studied.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on the meta-regression results showing that the type of interactions moderator was not a strong predictor.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:04:02.823706Z"
+    },
+    {
+      "id": "46cbed15-aa2c-429a-980d-4a9177ff8881",
+      "content_id": "801536a9-bb86-4d09-b8c1-1f6934a4e51e",
+      "claim_id": "C77",
+      "claim": "Different populations might be under different selective pressures regarding status signalling.",
+      "claim_type": "EXPLICIT",
+      "source": "First, different populations might be under different selective pressures regarding status signalling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative explanation for the observed heterogeneity.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:04:02.823706Z"
+    },
+    {
+      "id": "c286f88a-071a-4254-a9e7-edeff9bd9daf",
+      "content_id": "801536a9-bb86-4d09-b8c1-1f6934a4e51e",
+      "claim_id": "C78",
+      "claim": "The population-specific heterogeneity (I2population ID) estimated in the meta-analyses was 15\u201316%.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, the population-specific heterogeneity (I2population ID) estimated in our meta-analyses was 15\u201316%, suggesting that population-dependent effects might exist.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is directly supported by the heterogeneity statistics presented in Table 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:04:02.823706Z"
+    },
+    {
+      "id": "b4a4ec1c-4b84-4f97-a157-33a3695176ec",
+      "content_id": "801536a9-bb86-4d09-b8c1-1f6934a4e51e",
+      "claim_id": "C79",
+      "claim": "Population-dependent effects might exist.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, the population-specific heterogeneity (I2population ID) estimated in our meta-analyses was 15\u201316%, suggesting that population-dependent effects might exist.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the observed population-specific heterogeneity.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:04:02.823706Z"
+    },
+    {
+      "id": "380b7c4e-28bd-46e0-bb8b-83f938847b48",
+      "content_id": "801536a9-bb86-4d09-b8c1-1f6934a4e51e",
+      "claim_id": "C80",
+      "claim": "The study-specific heterogeneity (I2study ID) was 20\u201321%.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, although none of the moderators had a strong influence on the overall effect size, the study-specific heterogeneity estimated in our meta-analyses (I2study ID = 20\u201321%) suggests that the uncertainty observed could still be explained by the status signal being context-dependent.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is directly supported by the heterogeneity statistics presented in Table 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:04:02.823706Z"
+    },
+    {
+      "id": "34fc798a-b007-4203-b84a-eadff3512a80",
+      "content_id": "801536a9-bb86-4d09-b8c1-1f6934a4e51e",
+      "claim_id": "C81",
+      "claim": "The uncertainty observed could be explained by the status signal being context-dependent.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, although none of the moderators had a strong influence on the overall effect size, the study-specific heterogeneity estimated in our meta-analyses (I2study ID = 20\u201321%) suggests that the uncertainty observed could still be explained by the status signal being context-dependent.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative explanation based on the observed study-specific heterogeneity.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:04:02.823706Z"
+    },
+    {
+      "id": "25b89b02-8d69-4618-af7b-6f21266b3c25",
+      "content_id": "801536a9-bb86-4d09-b8c1-1f6934a4e51e",
+      "claim_id": "C82",
+      "claim": "Context-dependence is often invoked post hoc to explain variation among studies, but strong evidence for it is lacking in most cases.",
+      "claim_type": "EXPLICIT",
+      "source": "However, context-dependence is often invoked post hoc to explain variation among studies, but strong evidence for it is lacking in most cases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about the use of context-dependence as an explanation in the literature.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:04:02.823706Z"
+    },
+    {
+      "id": "4a8468e4-90fb-46d0-914e-d1bf08885789",
+      "content_id": "801536a9-bb86-4d09-b8c1-1f6934a4e51e",
+      "claim_id": "C83",
+      "claim": "Most studies testing the status signalling hypothesis in house sparrows are observational.",
+      "claim_type": "EXPLICIT",
+      "source": "Last, most studies testing the status signalling hypothesis in house sparrows are observational (Table 1), and the only two experimental studies conducted so far were inconclusive (Diep, 2012; Gonzalez et al., 2002).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the data presented in Table 1 and citations to the experimental studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:04:02.823706Z"
+    },
+    {
+      "id": "bdc295f1-3f71-4e94-b85d-b49603e0fc8d",
+      "content_id": "801536a9-bb86-4d09-b8c1-1f6934a4e51e",
+      "claim_id": "C84",
+      "claim": "The only two experimental studies testing the status signalling hypothesis in house sparrows were inconclusive.",
+      "claim_type": "EXPLICIT",
+      "source": "Last, most studies testing the status signalling hypothesis in house sparrows are observational (Table 1), and the only two experimental studies conducted so far were inconclusive (Diep, 2012; Gonzalez et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to the experimental studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:04:02.823706Z"
+    },
+    {
+      "id": "005f4d65-347b-4d72-ab21-f6dd38f55300",
+      "content_id": "801536a9-bb86-4d09-b8c1-1f6934a4e51e",
+      "claim_id": "C85",
+      "claim": "It cannot be ruled out that the weak correlation observed between dominance status and bib size is driven by a third, unknown variable.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, it cannot be ruled out that the weak correlation observed between dominance status and bib size is driven by a third, unknown variable.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about potential confounding variables in observational studies.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:04:02.823706Z"
+    },
+    {
+      "id": "4639588f-3023-42e7-bafa-48a1bdb76069",
+      "content_id": "801536a9-bb86-4d09-b8c1-1f6934a4e51e",
+      "claim_id": "C86",
+      "claim": "It has been proposed that the association between melanin-based coloration and aggression is due to pleiotropic effects of the genes involved in regulating the synthesis of melanin.",
+      "claim_type": "EXPLICIT",
+      "source": "In this respect, it has been proposed that the association between melanin-based coloration (such as the bib; e.g. Galv\u00e1n et al., 2015; Galv\u00e1n and Alonso-Alvarez, 2017) and aggression is due to pleiotropic effects of the genes involved in regulating the synthesis of melanin (reviewed by Ducrest et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous theoretical and empirical work on melanin-based coloration.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:04:02.823706Z"
+    },
+    {
+      "id": "39b9ec78-bf9b-4179-b754-ee9c61cb82ee",
+      "content_id": "801536a9-bb86-4d09-b8c1-1f6934a4e51e",
+      "claim_id": "C87",
+      "claim": "Bib size has been shown to correlate with testosterone.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, bib size has been shown to correlate with testosterone, a hormone often involved in aggressive behaviour (Gonzalez et al., 2001) but this relationship has not been consistently observed (Laucht et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies on the relationship between bib size and testosterone.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:04:02.823706Z"
+    },
+    {
+      "id": "e7b1d050-5f8f-446a-937e-848b5d76c525",
+      "content_id": "801536a9-bb86-4d09-b8c1-1f6934a4e51e",
+      "claim_id": "C88",
+      "claim": "The relationship between bib size and testosterone has not been consistently observed.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, bib size has been shown to correlate with testosterone, a hormone often involved in aggressive behaviour (Gonzalez et al., 2001) but this relationship has not been consistently observed (Laucht et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to a study showing inconsistent results.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:04:02.823706Z"
+    },
+    {
+      "id": "80ea27da-33cc-4da2-ab9d-d881ce6f70d2",
+      "content_id": "801536a9-bb86-4d09-b8c1-1f6934a4e51e",
+      "claim_id": "C89",
+      "claim": "The statistical power of published tests of the status signalling hypothesis in house sparrows is alarmingly low (power = 8.5% for r = 0.20).",
+      "claim_type": "EXPLICIT",
+      "source": "The latter is essential because the statistical power of published tests of the status signalling hypothesis in house sparrows is alarmingly low (power = 8.5% for r = 0.20, Appendix 3) and lower than the average in behavioural ecology (Jennions, 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by power calculations presented in Appendix 3 and comparison to published averages.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:04:02.823706Z"
+    },
+    {
+      "id": "749ffbca-cd19-43c9-b302-86298ddb53f7",
+      "content_id": "801536a9-bb86-4d09-b8c1-1f6934a4e51e",
+      "claim_id": "C90",
+      "claim": "The statistical power of published tests is lower than the average in behavioural ecology.",
+      "claim_type": "EXPLICIT",
+      "source": "The latter is essential because the statistical power of published tests of the status signalling hypothesis in house sparrows is alarmingly low (power = 8.5% for r = 0.20, Appendix 3) and lower than the average in behavioural ecology (Jennions, 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by comparison to published averages, with citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:04:02.823706Z"
+    },
+    {
+      "id": "40571d17-a429-4365-b401-badc64477092",
+      "content_id": "801536a9-bb86-4d09-b8c1-1f6934a4e51e",
+      "claim_id": "C91",
+      "claim": "The number of studies included in this meta-analysis is more than double that of the previous meta-analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "First, although the number of studies included in this meta-analysis is more than double that of the previous meta-analysis (Nakagawa et al., 2007), it is still limited.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on comparison of the number of studies in the current vs. previous meta-analysis.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:04:02.823706Z"
+    },
+    {
+      "id": "5c7f4730-32f6-4eb1-a36b-472c72d6096d",
+      "content_id": "801536a9-bb86-4d09-b8c1-1f6934a4e51e",
+      "claim_id": "C92",
+      "claim": "It is likely that additional unpublished data are stored in 'file drawers'.",
+      "claim_type": "EXPLICIT",
+      "source": "Also, it is likely (see above) that additional unpublished data are stored in 'file drawers' (sensu Rosenthal, 1979).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement based on the known existence of the file drawer problem in science.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:04:02.823706Z"
+    },
+    {
+      "id": "0ed16d92-8fa9-4293-9d13-6da205f220fd",
+      "content_id": "801536a9-bb86-4d09-b8c1-1f6934a4e51e",
+      "claim_id": "C93",
+      "claim": "Most tests included in this study were still low-powered in terms of group size (median = 6 individuals/estimate, range = 4\u201341).",
+      "claim_type": "EXPLICIT",
+      "source": "Second, most tests included in this study were still low-powered in terms of group size (median = 6 individuals/estimate, range = 4\u201341), and the sample size is inflated because some of the published studies pooled individuals from different groups (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on descriptive statistics of the group sizes in the included studies.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:04:02.823706Z"
+    },
+    {
+      "id": "f457fe9a-ce84-4c28-a6b6-27b415c20b7b",
+      "content_id": "801536a9-bb86-4d09-b8c1-1f6934a4e51e",
+      "claim_id": "C94",
+      "claim": "The sample size is inflated because some of the published studies pooled individuals from different groups.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, most tests included in this study were still low-powered in terms of group size (median = 6 individuals/estimate, range = 4\u201341), and the sample size is inflated because some of the published studies pooled individuals from different groups (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on information about study methods shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:04:02.823706Z"
+    },
+    {
+      "id": "7de6b7f2-79b7-4e71-ae8d-43876187acd0",
+      "content_id": "801536a9-bb86-4d09-b8c1-1f6934a4e51e",
+      "claim_id": "C95",
+      "claim": "Experiments will normally yield larger effect sizes than observational studies because effects of confounding factors can be reduced.",
+      "claim_type": "EXPLICIT",
+      "source": "Fourth, experiments will normally yield larger effect sizes than observational studies because effects of confounding factors can be reduced (Palmer, 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to methodological literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:04:02.823706Z"
+    },
+    {
+      "id": "47a8f375-86a2-4fd5-bf2c-7ac135fac161",
+      "content_id": "801536a9-bb86-4d09-b8c1-1f6934a4e51e",
+      "claim_id": "C96",
+      "claim": "The systematic review only identified two studies where the status signalling hypothesis was tested experimentally in house sparrows.",
+      "claim_type": "EXPLICIT",
+      "source": "Nonetheless, our systematic review only identified two studies where the status signalling hypothesis was tested experimentally in house sparrows (Gonzalez et al., 2002; Diep, 2012), preventing us from estimating the meta-analytic mean for experimental studies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on the results of the systematic review.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:04:02.823706Z"
+    },
+    {
+      "id": "a1db4fb3-e93a-4fcd-8ead-9e9ca8b00466",
+      "content_id": "801536a9-bb86-4d09-b8c1-1f6934a4e51e",
+      "claim_id": "C97",
+      "claim": "The results of the two experimental studies were inconclusive and potentially affected by regression to the mean.",
+      "claim_type": "EXPLICIT",
+      "source": "Note, however, that the results of those experiments were inconclusive, and potentially affected by regression to the mean (Forstmeier et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on evaluation of the experimental studies with reference to methodological concerns.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:04:02.823706Z"
+    },
+    {
+      "id": "c3202e05-db0b-40ef-b882-ffe2018fe051",
+      "content_id": "801536a9-bb86-4d09-b8c1-1f6934a4e51e",
+      "claim_id": "C98",
+      "claim": "There is no evidence that bib size consistently acts as a badge of status across studies and populations in house sparrows.",
+      "claim_type": "EXPLICIT",
+      "source": "In house sparrows, we find no evidence that bib size consistently acts as a badge of status across studies and populations, and thus, bib size can no longer be considered a textbook example of the status signalling hypothesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion of the study, based on the meta-analysis results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:04:02.823706Z"
+    },
+    {
+      "id": "e2ee87e3-1733-48d6-a239-402b7147b6fc",
+      "content_id": "801536a9-bb86-4d09-b8c1-1f6934a4e51e",
+      "claim_id": "C99",
+      "claim": "Bib size can no longer be considered a textbook example of the status signalling hypothesis.",
+      "claim_type": "EXPLICIT",
+      "source": "In house sparrows, we find no evidence that bib size consistently acts as a badge of status across studies and populations, and thus, bib size can no longer be considered a textbook example of the status signalling hypothesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion of the study, based on the meta-analysis results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:04:02.823706Z"
+    },
+    {
+      "id": "4b21a7cf-327c-406d-831c-a0db5d8b5aeb",
+      "content_id": "801536a9-bb86-4d09-b8c1-1f6934a4e51e",
+      "claim_id": "C100",
+      "claim": "Bias against the publication of small ('non-significant') effects hinders scientific progress.",
+      "claim_type": "EXPLICIT",
+      "source": "Bias against the publication of small ('non-significant') effects hinders scientific progress.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about the impact of publication bias on science, based on established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:04:02.823706Z"
+    },
+    {
+      "id": "dd4fc735-6a49-43fa-b7a2-30977d4d3caf",
+      "content_id": "801536a9-bb86-4d09-b8c1-1f6934a4e51e",
+      "claim_id": "C101",
+      "claim": "The randomized Elo-rating method estimates dominance hierarchies more precisely than other methods.",
+      "claim_type": "EXPLICIT",
+      "source": "For each primary dataset obtained, we inferred the dominance hierarchy of each group of birds from the observed agonistic dyadic interactions (wins and losses) among individuals using the randomized Elo-rating method, which estimates dominance hierarchies more precisely than other methods (S\u00e1nchez-T\u00f3jar et al., 2018b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to methodological work on dominance hierarchy inference.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:04:02.823706Z"
+    },
+    {
+      "id": "711de6e1-49c7-4287-a634-45434e541c3b",
+      "content_id": "801536a9-bb86-4d09-b8c1-1f6934a4e51e",
+      "claim_id": "C102",
+      "claim": "Meta-analysis of primary data is considered the gold standard in medicine.",
+      "claim_type": "EXPLICIT",
+      "source": "This type of meta-analysis allows methodology to be standardized so that comparable effect sizes can be obtained across studies and is, therefore, considered the gold standard in disciplines such as medicine (Simmonds et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to methodological literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:04:02.823706Z"
+    },
+    {
+      "id": "12f361bb-72aa-455b-ae6f-824d775ea893",
+      "content_id": "801536a9-bb86-4d09-b8c1-1f6934a4e51e",
+      "claim_id": "C103",
+      "claim": "Zr values of 0.100, 0.310 and 0.549 were considered small, medium and large effect sizes, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "Zr values of 0.100, 0.310 and 0.549 were considered small, medium and large effect sizes, respectively (equivalent benchmarks from Cohen, 1988).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological statement about effect size interpretation, supported by citation to Cohen's benchmarks.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:04:02.823706Z"
+    },
+    {
+      "id": "995b8815-df26-45f6-8d6a-8a8622593678",
+      "content_id": "801536a9-bb86-4d09-b8c1-1f6934a4e51e",
+      "claim_id": "C104",
+      "claim": "I2 values around 25, 50% and 75% are considered as low, moderate and high levels of heterogeneity, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "I2 values around 25, 50% and 75% are considered as low, moderate and high levels of heterogeneity, respectively (Higgins et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological statement about heterogeneity interpretation, supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:04:02.823706Z"
+    },
+    {
+      "id": "6df6c09d-8b5f-4f50-90d3-3bb16fbe5135",
+      "content_id": "801536a9-bb86-4d09-b8c1-1f6934a4e51e",
+      "claim_id": "C105",
+      "claim": "Only three of 19 studies were conducted in the wild.",
+      "claim_type": "EXPLICIT",
+      "source": "Because only three of 19 studies were conducted in the wild (k = 12 estimates; Table 1), we did not include a moderator testing for captive versus wild environments.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is directly supported by the data presented in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:04:02.823706Z"
+    },
+    {
+      "id": "6a484155-0a35-4899-9a5d-1e9d08ac1ab4",
+      "content_id": "801536a9-bb86-4d09-b8c1-1f6934a4e51e",
+      "claim_id": "C106",
+      "claim": "The ratio of agonistic dyadic interactions recorded to the total number of interacting individuals observed correlates positively and logarithmically with the ability to infer the latent dominance hierarchy.",
+      "claim_type": "EXPLICIT",
+      "source": "The ratio of agonistic dyadic interactions recorded to the total number of interacting individuals observed (hereafter 'sampling effort') is a measure of sampling effort that correlates positively and logarithmically with the ability to infer the latent dominance hierarchy (S\u00e1nchez-T\u00f3jar et al., 2018b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to methodological work on dominance hierarchy inference.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:04:02.823706Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "0e5d5ae3-8260-4845-86bc-9049d53d32bf",
+      "content_id": "801536a9-bb86-4d09-b8c1-1f6934a4e51e",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The meta-analysis reveals that the relationship between bib size and dominance rank in male house sparrows is small and uncertain, with effect sizes overlapping zero and moderate heterogeneity (I\u00b2=53%). This challenges the textbook status of the house sparrow bib as a badge of status.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C28, C29 are directly supported by quantitative results in Table 2 and Figure 1, showing Zr effect sizes with 95% credible intervals overlapping zero. The moderate heterogeneity (53%) is appropriately characterized. The conclusions (C30, C38, C40, C98, C99) logically follow from these data. The meta-analytic approach using primary data with standardized methodology (randomized Elo-rating) strengthens these findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:04:02.823706Z"
+    },
+    {
+      "id": "6d8ed9b4-68df-4d5e-883c-799ae947a79a",
+      "content_id": "801536a9-bb86-4d09-b8c1-1f6934a4e51e",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The authors obtained primary data from 7 of 13 published studies (54%) plus 6 unpublished studies, and reliably inferred dominance hierarchies using the randomized Elo-rating method with mean sampling effort of 36 interactions/individual, Elo-rating repeatability of 0.92, and triangle transitivity of 0.63.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21-C22 are directly verifiable from Table 1. The sampling effort statistics (C23, C25, C26) are descriptive statistics from the analyzed data. The inference of reliable dominance hierarchies (C24, C27) is appropriately supported by the high repeatability values and citation to methodological validation (S\u00e1nchez-T\u00f3jar et al., 2018b). These metrics provide strong evidence for data quality.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:04:02.823706Z"
+    },
+    {
+      "id": "c04c27d5-0425-48f6-afb8-64e9a9f0b2ea",
+      "content_id": "801536a9-bb86-4d09-b8c1-1f6934a4e51e",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Meta-regressions testing biological moderators (season, group composition, type of interactions) and sampling effort explained 20-23% of variance but none strongly influenced the overall effect size, with all moderator credible intervals overlapping zero.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims are directly supported by Table 3 showing credible intervals for all moderators overlapping zero. The R\u00b2marginal values (20-23%) are reported. However, the authors appropriately acknowledge limited sample sizes may affect power to detect moderator effects (C64). The lack of significant moderators is properly interpreted as absence of strong evidence rather than evidence of absence.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:04:02.823706Z"
+    },
+    {
+      "id": "47583a51-dda7-412f-88fc-41338dc093df",
+      "content_id": "801536a9-bb86-4d09-b8c1-1f6934a4e51e",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Published effect sizes (medium, Zr\u22480.26-0.50) were significantly larger than unpublished effect sizes (essentially zero, Zr\u2248-0.09), indicating publication bias in the literature on status signalling in house sparrows.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35, C36, C41, C42 are directly supported by Table 4 and Figure 3, showing the moderator 'published' with credible intervals [0.19, 0.81] not overlapping zero, and explaining 38% of variance. The intercept for unpublished studies has credible intervals [-0.37, 0.18] overlapping zero. This provides strong quantitative evidence for publication bias. The conclusion (C49) appropriately follows from these data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:04:02.823706Z"
+    },
+    {
+      "id": "e8b255b5-9759-4243-a64f-79be848787a2",
+      "content_id": "801536a9-bb86-4d09-b8c1-1f6934a4e51e",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Time-lag bias analysis reveals that effect sizes in published studies decreased over time and approached zero, with year of publication explaining 29% of model variance and showing a negative relationship (credible interval [-0.41, -0.01]).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims are directly supported by Table 4 and Figure 4. The year of publication moderator shows credible intervals not overlapping zero [-0.41, -0.01], and R\u00b2marginal of 29%. Figure 4 visually demonstrates the temporal decline. This provides strong evidence for time-lag bias, though the authors appropriately note this could reflect multiple mechanisms including winner's curse and selective publication.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:04:02.823706Z"
+    },
+    {
+      "id": "f3dec8f7-1c01-4ebd-bc80-8c3772be52dd",
+      "content_id": "801536a9-bb86-4d09-b8c1-1f6934a4e51e",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Egger's regression tests did not detect funnel plot asymmetry (credible intervals overlapping zero in Table 2), though the authors attribute this to limited sample size and moderate heterogeneity rather than absence of publication bias.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-C34 are supported by Table 2 and Figure 2. The interpretation (C51) appropriately cites methodological literature (Moreno et al., 2009; Sterne and Egger, 2005) explaining why Egger's test may fail with limited samples and heterogeneity. The authors correctly do not interpret negative Egger's test as evidence against publication bias, especially given the positive findings from other bias detection methods.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:04:02.823706Z"
+    },
+    {
+      "id": "44612d3c-e3bc-4963-8f59-cf839e987151",
+      "content_id": "801536a9-bb86-4d09-b8c1-1f6934a4e51e",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Moderate overall heterogeneity (I\u00b2overall=53%) was partitioned into population-specific (15-16%) and study-specific (20-21%) components, suggesting potential population-dependent or context-dependent effects that remain unexplained by tested moderators.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Heterogeneity statistics (C61, C78, C80) are directly reported in Table 2. The comparison to published averages (C62) is appropriately cited (Senior et al., 2016). However, the inferences about population-dependent (C79) and context-dependent (C81) effects are speculative. The authors appropriately acknowledge this speculation and note that context-dependence is often invoked post hoc without strong evidence (C82).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:04:02.823706Z"
+    },
+    {
+      "id": "a1d91884-1763-4752-8278-a7a73395a5ba",
+      "content_id": "801536a9-bb86-4d09-b8c1-1f6934a4e51e",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Statistical power of published tests was alarmingly low (8.5% for r=0.20), below the average in behavioral ecology, with most tests based on small group sizes (median=6 individuals, range=4-41), and some studies inflating sample sizes by pooling individuals from different groups.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Power calculations (C89) are supported by Appendix 3 and comparison to field averages (C90) is cited (Jennions, 2003). Group size statistics (C93) are verifiable from the data. The concern about pooling (C94) is supported by Figure 4. These claims appropriately highlight serious methodological limitations in the primary literature that affect interpretation of the meta-analytic findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:04:02.823706Z"
+    },
+    {
+      "id": "8bdfb347-fbb1-4fa4-8f0c-0aca70f3b332",
+      "content_id": "801536a9-bb86-4d09-b8c1-1f6934a4e51e",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The current meta-analysis includes more than double the studies of the previous meta-analysis (Nakagawa et al., 2007) but finds a small and uncertain effect compared to the previously reported medium-to-large effect.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C91 is verifiable by comparing study counts (19 vs. ~9 studies). The contrast with previous findings (C39) is appropriately cited. This demonstrates how increased sample size and inclusion of unpublished data can substantially alter meta-analytic conclusions, supporting the broader argument about publication bias effects.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:04:02.823706Z"
+    },
+    {
+      "id": "5192a318-2029-4d7f-99ea-2409347570d9",
+      "content_id": "801536a9-bb86-4d09-b8c1-1f6934a4e51e",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Most studies testing the status signalling hypothesis in house sparrows are observational, with only two experimental studies identified, both of which were inconclusive and potentially affected by regression to the mean.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C83 and C96 are directly verifiable from Table 1 showing study designs. The characterization of experimental studies as inconclusive (C84, C97) is supported by citations (Diep, 2012; Gonzalez et al., 2002) and methodological concerns (Forstmeier et al., 2017). This appropriately highlights the limitation that most evidence is correlational, preventing strong causal inference.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:04:02.823706Z"
+    },
+    {
+      "id": "48da6220-9b7b-44f5-8389-343e19312ccd",
+      "content_id": "801536a9-bb86-4d09-b8c1-1f6934a4e51e",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Some unpublished datasets are not examples of the file drawer problem because the relationship between dominance rank and bib size was never formally tested, though additional unpublished data likely exist in file drawers.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C50 is based on personal communications, which are not independently verifiable. Claim C92 is speculative. While the file drawer problem is well-established in science, the specific claim about additional unpublished house sparrow data is conjecture. These claims provide context but do not constitute strong evidence.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:04:02.823706Z"
+    },
+    {
+      "id": "b74653bc-c773-4962-97ec-6e681563f740",
+      "content_id": "801536a9-bb86-4d09-b8c1-1f6934a4e51e",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Only three of 19 studies were conducted in the wild (k=12 estimates), preventing inclusion of a captive versus wild environment moderator in the analysis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This claim is directly verifiable from Table 1. The decision not to include this moderator is methodologically sound given the severe imbalance. However, this represents a significant limitation as captive conditions may not reflect natural selective pressures, potentially affecting generalizability of findings to wild populations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:04:02.823706Z"
+    },
+    {
+      "id": "d889b827-cf76-4490-9f22-cb4d07eb8239",
+      "content_id": "801536a9-bb86-4d09-b8c1-1f6934a4e51e",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Background claims establish that the status signalling hypothesis explains within-species ornament variation through dominance signalling, that aggressive contests are costly, and that the house sparrow bib has been considered a textbook example despite methodological inconsistencies in the literature.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These background claims (C1-C12) are appropriately supported by citations to established literature and textbooks. They accurately represent the theoretical framework and prior state of knowledge. The characterization of methodological inconsistencies (C12) is supported by previous reviews (Nakagawa and Cuthill, 2007; Santos et al., 2011) and verified by the current study's data compilation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:04:02.823706Z"
+    },
+    {
+      "id": "f27d60fd-c50e-488d-bfb8-2b623f70ee06",
+      "content_id": "801536a9-bb86-4d09-b8c1-1f6934a4e51e",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Methodological claims establish that meta-analysis of primary data is the gold standard allowing standardized methodology, that publication bias distorts meta-analytic means, and that the randomized Elo-rating method precisely estimates dominance hierarchies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These methodological claims are appropriately supported by citations to established methodological literature (Simmonds et al., 2005; Rothstein et al., 2005; Cohen, 1988; Higgins et al., 2003; S\u00e1nchez-T\u00f3jar et al., 2018b). They accurately represent accepted methodological principles and provide appropriate context for interpreting the study's approach and findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:04:02.823706Z"
+    },
+    {
+      "id": "11b7f354-1156-4abc-9649-1d45b87131db",
+      "content_id": "801536a9-bb86-4d09-b8c1-1f6934a4e51e",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Comparative and contextual claims establish that similar challenges to established examples exist in other species (blue tits, zebra finches, paper wasps), that publication bias is recognized in ecology, and that abundant replication is needed before drawing strong conclusions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims are appropriately supported by citations to relevant literature (Parker, 2013; Seguin and Forstmeier, 2012; Wang et al., 2018; Cervo et al., 2008; Santos et al., 2011; Aarts et al., 2015). They provide important context showing the current findings are part of a broader pattern in the field. Claim C58 is appropriately speculative about implications for other species.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:04:02.823706Z"
+    },
+    {
+      "id": "7a6f65ff-46a4-4671-a2ed-7803acbefc9c",
+      "content_id": "801536a9-bb86-4d09-b8c1-1f6934a4e51e",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Discussion claims explore theoretical expectations (badges important in large unstable groups, functioning within/between sexes), alternative explanations (pleiotropic effects, testosterone correlations, mate choice), and methodological considerations (experiments vs. observational studies, context-dependence, confounding variables).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "These claims mix well-supported theoretical expectations (C65, C68, C75 with appropriate citations) with speculative explanations (C71, C77, C81, C85). Some empirical claims about testosterone (C87, C88) and mate choice (C72, C73) are cited but noted as inconsistent. The discussion appropriately explores alternative explanations but acknowledges uncertainty. Many claims are speculative or represent possibilities rather than demonstrated facts.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:04:02.823706Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "d426506d-810d-479e-a391-c83436af9677",
+      "result_id": "0e5d5ae3-8260-4845-86bc-9049d53d32bf"
+    },
+    {
+      "claim_id": "6e3011aa-b584-4e44-8098-302ef7883277",
+      "result_id": "0e5d5ae3-8260-4845-86bc-9049d53d32bf"
+    },
+    {
+      "claim_id": "f6c78028-c2b0-4ca1-9f27-06cf9c662dbd",
+      "result_id": "0e5d5ae3-8260-4845-86bc-9049d53d32bf"
+    },
+    {
+      "claim_id": "1fa5265d-f30e-4907-981b-a94fff3e77d4",
+      "result_id": "0e5d5ae3-8260-4845-86bc-9049d53d32bf"
+    },
+    {
+      "claim_id": "869bb183-c8d3-4040-be0c-4ad7d3c2e3cb",
+      "result_id": "0e5d5ae3-8260-4845-86bc-9049d53d32bf"
+    },
+    {
+      "claim_id": "34ceb696-8d98-43f4-87ce-d6e646b01903",
+      "result_id": "0e5d5ae3-8260-4845-86bc-9049d53d32bf"
+    },
+    {
+      "claim_id": "c3202e05-db0b-40ef-b882-ffe2018fe051",
+      "result_id": "0e5d5ae3-8260-4845-86bc-9049d53d32bf"
+    },
+    {
+      "claim_id": "e2ee87e3-1733-48d6-a239-402b7147b6fc",
+      "result_id": "0e5d5ae3-8260-4845-86bc-9049d53d32bf"
+    },
+    {
+      "claim_id": "03fae732-e5fd-4197-87f8-1c981050da0e",
+      "result_id": "6d8ed9b4-68df-4d5e-883c-799ae947a79a"
+    },
+    {
+      "claim_id": "5fd1bdd0-1890-46e3-8bac-6ac6fd43471d",
+      "result_id": "6d8ed9b4-68df-4d5e-883c-799ae947a79a"
+    },
+    {
+      "claim_id": "68aee373-603e-4ee3-acb0-71137a0ea322",
+      "result_id": "6d8ed9b4-68df-4d5e-883c-799ae947a79a"
+    },
+    {
+      "claim_id": "2e123c88-89df-49bf-9373-852149684dff",
+      "result_id": "6d8ed9b4-68df-4d5e-883c-799ae947a79a"
+    },
+    {
+      "claim_id": "7768fc37-179a-4229-96db-58b47412a436",
+      "result_id": "6d8ed9b4-68df-4d5e-883c-799ae947a79a"
+    },
+    {
+      "claim_id": "ed819bfe-ab8e-4bfb-9551-5dbb694c810e",
+      "result_id": "6d8ed9b4-68df-4d5e-883c-799ae947a79a"
+    },
+    {
+      "claim_id": "025ee6ec-8283-49b6-afae-24af33b40c15",
+      "result_id": "6d8ed9b4-68df-4d5e-883c-799ae947a79a"
+    },
+    {
+      "claim_id": "cc5ca859-c9e5-44bb-adf7-ed28c3d2ecaf",
+      "result_id": "c04c27d5-0425-48f6-afb8-64e9a9f0b2ea"
+    },
+    {
+      "claim_id": "ac54b6c2-32eb-4e0b-a5bc-664ba5d51b6b",
+      "result_id": "c04c27d5-0425-48f6-afb8-64e9a9f0b2ea"
+    },
+    {
+      "claim_id": "666684af-1b24-41e1-838b-e8910bae245c",
+      "result_id": "c04c27d5-0425-48f6-afb8-64e9a9f0b2ea"
+    },
+    {
+      "claim_id": "c5a23582-2bc3-48c5-bb54-d181cb81bcc0",
+      "result_id": "c04c27d5-0425-48f6-afb8-64e9a9f0b2ea"
+    },
+    {
+      "claim_id": "a9950549-0621-4458-a1a0-775a844a8251",
+      "result_id": "c04c27d5-0425-48f6-afb8-64e9a9f0b2ea"
+    },
+    {
+      "claim_id": "3ae628dd-79e0-48c4-a877-d8af5a751202",
+      "result_id": "c04c27d5-0425-48f6-afb8-64e9a9f0b2ea"
+    },
+    {
+      "claim_id": "15a99667-1dc1-4686-b0b7-cf5aee6c8665",
+      "result_id": "c04c27d5-0425-48f6-afb8-64e9a9f0b2ea"
+    },
+    {
+      "claim_id": "c0fa1483-3d93-4389-b695-55569ca21b97",
+      "result_id": "47583a51-dda7-412f-88fc-41338dc093df"
+    },
+    {
+      "claim_id": "780a4d5a-6895-4e83-95f2-75147d60f488",
+      "result_id": "47583a51-dda7-412f-88fc-41338dc093df"
+    },
+    {
+      "claim_id": "1668369d-247f-4183-929a-12396383f1cc",
+      "result_id": "47583a51-dda7-412f-88fc-41338dc093df"
+    },
+    {
+      "claim_id": "5e464818-ffad-4a1e-ba67-5ebf26aeaae6",
+      "result_id": "47583a51-dda7-412f-88fc-41338dc093df"
+    },
+    {
+      "claim_id": "15f3374d-a619-4e94-a3fe-f913d241719e",
+      "result_id": "47583a51-dda7-412f-88fc-41338dc093df"
+    },
+    {
+      "claim_id": "936c7629-093d-4c68-a495-cce6e0fb0913",
+      "result_id": "47583a51-dda7-412f-88fc-41338dc093df"
+    },
+    {
+      "claim_id": "f73c70f4-7587-4b8a-b3d4-bdfd47391ee2",
+      "result_id": "e8b255b5-9759-4243-a64f-79be848787a2"
+    },
+    {
+      "claim_id": "868fd283-471a-4c2b-9a69-d1c521689720",
+      "result_id": "e8b255b5-9759-4243-a64f-79be848787a2"
+    },
+    {
+      "claim_id": "ade8cb57-50bb-42f5-b283-9b0be6cb5c23",
+      "result_id": "e8b255b5-9759-4243-a64f-79be848787a2"
+    },
+    {
+      "claim_id": "dfea687b-5601-4679-aa53-484e1e6bbc16",
+      "result_id": "e8b255b5-9759-4243-a64f-79be848787a2"
+    },
+    {
+      "claim_id": "cf885b3f-e7e2-4d79-bae2-5f2b562f5b5f",
+      "result_id": "e8b255b5-9759-4243-a64f-79be848787a2"
+    },
+    {
+      "claim_id": "c60e3a5a-b1db-44ef-b0ea-20a2c3ed0cba",
+      "result_id": "f3dec8f7-1c01-4ebd-bc80-8c3772be52dd"
+    },
+    {
+      "claim_id": "3a20305c-35f8-40a7-8336-8eac4c0844c4",
+      "result_id": "f3dec8f7-1c01-4ebd-bc80-8c3772be52dd"
+    },
+    {
+      "claim_id": "c7bac8ed-4dcd-4ebf-add9-0552d1dc18c0",
+      "result_id": "f3dec8f7-1c01-4ebd-bc80-8c3772be52dd"
+    },
+    {
+      "claim_id": "2e404f46-31aa-4ac8-80e5-90a8cf57c763",
+      "result_id": "44612d3c-e3bc-4963-8f59-cf839e987151"
+    },
+    {
+      "claim_id": "c098370c-2828-4b99-b4a0-1e53bd8ddcd6",
+      "result_id": "44612d3c-e3bc-4963-8f59-cf839e987151"
+    },
+    {
+      "claim_id": "c286f88a-071a-4254-a9e7-edeff9bd9daf",
+      "result_id": "44612d3c-e3bc-4963-8f59-cf839e987151"
+    },
+    {
+      "claim_id": "b4a4ec1c-4b84-4f97-a157-33a3695176ec",
+      "result_id": "44612d3c-e3bc-4963-8f59-cf839e987151"
+    },
+    {
+      "claim_id": "380b7c4e-28bd-46e0-bb8b-83f938847b48",
+      "result_id": "44612d3c-e3bc-4963-8f59-cf839e987151"
+    },
+    {
+      "claim_id": "34fc798a-b007-4203-b84a-eadff3512a80",
+      "result_id": "44612d3c-e3bc-4963-8f59-cf839e987151"
+    },
+    {
+      "claim_id": "80ea27da-33cc-4da2-ab9d-d881ce6f70d2",
+      "result_id": "a1d91884-1763-4752-8278-a7a73395a5ba"
+    },
+    {
+      "claim_id": "749ffbca-cd19-43c9-b302-86298ddb53f7",
+      "result_id": "a1d91884-1763-4752-8278-a7a73395a5ba"
+    },
+    {
+      "claim_id": "0ed16d92-8fa9-4293-9d13-6da205f220fd",
+      "result_id": "a1d91884-1763-4752-8278-a7a73395a5ba"
+    },
+    {
+      "claim_id": "f457fe9a-ce84-4c28-a6b6-27b415c20b7b",
+      "result_id": "a1d91884-1763-4752-8278-a7a73395a5ba"
+    },
+    {
+      "claim_id": "1b834df9-c7fc-41a6-8176-87613935dc3b",
+      "result_id": "8bdfb347-fbb1-4fa4-8f0c-0aca70f3b332"
+    },
+    {
+      "claim_id": "40571d17-a429-4365-b401-badc64477092",
+      "result_id": "8bdfb347-fbb1-4fa4-8f0c-0aca70f3b332"
+    },
+    {
+      "claim_id": "4a8468e4-90fb-46d0-914e-d1bf08885789",
+      "result_id": "5192a318-2029-4d7f-99ea-2409347570d9"
+    },
+    {
+      "claim_id": "bdc295f1-3f71-4e94-b85d-b49603e0fc8d",
+      "result_id": "5192a318-2029-4d7f-99ea-2409347570d9"
+    },
+    {
+      "claim_id": "47a8f375-86a2-4fd5-bf2c-7ac135fac161",
+      "result_id": "5192a318-2029-4d7f-99ea-2409347570d9"
+    },
+    {
+      "claim_id": "a1db4fb3-e93a-4fcd-8ead-9e9ca8b00466",
+      "result_id": "5192a318-2029-4d7f-99ea-2409347570d9"
+    },
+    {
+      "claim_id": "5ef3d7bc-9e5d-42bc-a68a-5c57989a2985",
+      "result_id": "48da6220-9b7b-44f5-8389-343e19312ccd"
+    },
+    {
+      "claim_id": "5c7f4730-32f6-4eb1-a36b-472c72d6096d",
+      "result_id": "48da6220-9b7b-44f5-8389-343e19312ccd"
+    },
+    {
+      "claim_id": "6df6c09d-8b5f-4f50-90d3-3bb16fbe5135",
+      "result_id": "b74653bc-c773-4962-97ec-6e681563f740"
+    },
+    {
+      "claim_id": "fa0f83b0-9126-412d-9e21-2180bac5c132",
+      "result_id": "d889b827-cf76-4490-9f22-cb4d07eb8239"
+    },
+    {
+      "claim_id": "91e973d6-6c35-41ce-8c22-6ae90bb1e562",
+      "result_id": "d889b827-cf76-4490-9f22-cb4d07eb8239"
+    },
+    {
+      "claim_id": "81e9f028-5191-4d8c-9061-50738c1c20a5",
+      "result_id": "d889b827-cf76-4490-9f22-cb4d07eb8239"
+    },
+    {
+      "claim_id": "df2142b7-36b9-4f1a-bfc1-5409d98c0607",
+      "result_id": "d889b827-cf76-4490-9f22-cb4d07eb8239"
+    },
+    {
+      "claim_id": "d982e7f1-25fa-44da-892f-bff0f6365b67",
+      "result_id": "d889b827-cf76-4490-9f22-cb4d07eb8239"
+    },
+    {
+      "claim_id": "982595b1-0fbd-462c-8979-f4d11497e050",
+      "result_id": "d889b827-cf76-4490-9f22-cb4d07eb8239"
+    },
+    {
+      "claim_id": "5f356dfe-97ee-4a43-b895-7f71951c7c7b",
+      "result_id": "d889b827-cf76-4490-9f22-cb4d07eb8239"
+    },
+    {
+      "claim_id": "fe1b9636-00e9-417a-8ed9-7eeaa870560f",
+      "result_id": "d889b827-cf76-4490-9f22-cb4d07eb8239"
+    },
+    {
+      "claim_id": "5e8bc169-9e67-403b-96fc-758edb0ab3e4",
+      "result_id": "d889b827-cf76-4490-9f22-cb4d07eb8239"
+    },
+    {
+      "claim_id": "1ff5baaa-298f-432d-a345-a984b6cfa848",
+      "result_id": "d889b827-cf76-4490-9f22-cb4d07eb8239"
+    },
+    {
+      "claim_id": "34206b78-84bd-43f2-9a10-e8a758625a0f",
+      "result_id": "f27d60fd-c50e-488d-bfb8-2b623f70ee06"
+    },
+    {
+      "claim_id": "89b9ebc9-a4c3-4357-97a6-dd0a27ff2ed0",
+      "result_id": "f27d60fd-c50e-488d-bfb8-2b623f70ee06"
+    },
+    {
+      "claim_id": "117cf9e1-a78c-47a6-ab22-1da61a436de0",
+      "result_id": "f27d60fd-c50e-488d-bfb8-2b623f70ee06"
+    },
+    {
+      "claim_id": "fcc92da3-847e-4443-ae20-e3c714e56e2f",
+      "result_id": "f27d60fd-c50e-488d-bfb8-2b623f70ee06"
+    },
+    {
+      "claim_id": "e4cbd963-901b-46df-a260-3785e40e9fcb",
+      "result_id": "f27d60fd-c50e-488d-bfb8-2b623f70ee06"
+    },
+    {
+      "claim_id": "71d3b605-bdc7-4df5-a87e-7a4cd76b842d",
+      "result_id": "f27d60fd-c50e-488d-bfb8-2b623f70ee06"
+    },
+    {
+      "claim_id": "7ad5313f-244c-48af-9567-5c177358799b",
+      "result_id": "f27d60fd-c50e-488d-bfb8-2b623f70ee06"
+    },
+    {
+      "claim_id": "fafcaafb-b530-4d69-af07-69acfd38675a",
+      "result_id": "f27d60fd-c50e-488d-bfb8-2b623f70ee06"
+    },
+    {
+      "claim_id": "9aae3faa-4b83-424e-8963-95e5cad667a5",
+      "result_id": "f27d60fd-c50e-488d-bfb8-2b623f70ee06"
+    },
+    {
+      "claim_id": "dd4fc735-6a49-43fa-b7a2-30977d4d3caf",
+      "result_id": "f27d60fd-c50e-488d-bfb8-2b623f70ee06"
+    },
+    {
+      "claim_id": "711de6e1-49c7-4287-a634-45434e541c3b",
+      "result_id": "f27d60fd-c50e-488d-bfb8-2b623f70ee06"
+    },
+    {
+      "claim_id": "12f361bb-72aa-455b-ae6f-824d775ea893",
+      "result_id": "f27d60fd-c50e-488d-bfb8-2b623f70ee06"
+    },
+    {
+      "claim_id": "995b8815-df26-45f6-8d6a-8a8622593678",
+      "result_id": "f27d60fd-c50e-488d-bfb8-2b623f70ee06"
+    },
+    {
+      "claim_id": "6a484155-0a35-4899-9a5d-1e9d08ac1ab4",
+      "result_id": "f27d60fd-c50e-488d-bfb8-2b623f70ee06"
+    },
+    {
+      "claim_id": "03278009-4c19-48fd-8306-f07392092c6f",
+      "result_id": "11b7f354-1156-4abc-9649-1d45b87131db"
+    },
+    {
+      "claim_id": "e7614746-9e42-4380-88ca-3443e6e09a3c",
+      "result_id": "11b7f354-1156-4abc-9649-1d45b87131db"
+    },
+    {
+      "claim_id": "e80240ad-dff3-4e31-a4de-af242bb01c7f",
+      "result_id": "11b7f354-1156-4abc-9649-1d45b87131db"
+    },
+    {
+      "claim_id": "a4d7dde1-c8a9-4306-9476-da646ad60b3c",
+      "result_id": "11b7f354-1156-4abc-9649-1d45b87131db"
+    },
+    {
+      "claim_id": "f85af0ae-b333-4e37-8642-0c6a06ed1d31",
+      "result_id": "11b7f354-1156-4abc-9649-1d45b87131db"
+    },
+    {
+      "claim_id": "101c56ee-7ab1-4812-983e-594a889c78de",
+      "result_id": "11b7f354-1156-4abc-9649-1d45b87131db"
+    },
+    {
+      "claim_id": "8f8b84b0-bd52-4353-8226-33532bd9f3ad",
+      "result_id": "11b7f354-1156-4abc-9649-1d45b87131db"
+    },
+    {
+      "claim_id": "2307ab34-7d07-4430-83b5-9e2c127fac99",
+      "result_id": "11b7f354-1156-4abc-9649-1d45b87131db"
+    },
+    {
+      "claim_id": "6a7abd3e-8fbe-441a-a84e-173fa2863c28",
+      "result_id": "11b7f354-1156-4abc-9649-1d45b87131db"
+    },
+    {
+      "claim_id": "feb285e3-93e4-4c34-870a-05da58673df9",
+      "result_id": "11b7f354-1156-4abc-9649-1d45b87131db"
+    },
+    {
+      "claim_id": "4b21a7cf-327c-406d-831c-a0db5d8b5aeb",
+      "result_id": "11b7f354-1156-4abc-9649-1d45b87131db"
+    },
+    {
+      "claim_id": "060ecf91-33c0-4857-afce-5f90d599252b",
+      "result_id": "7a6f65ff-46a4-4671-a2ed-7803acbefc9c"
+    },
+    {
+      "claim_id": "63f21830-170b-4915-a038-ba85ba9baee4",
+      "result_id": "7a6f65ff-46a4-4671-a2ed-7803acbefc9c"
+    },
+    {
+      "claim_id": "25b9e076-e95d-4b20-8797-5518a6e734aa",
+      "result_id": "7a6f65ff-46a4-4671-a2ed-7803acbefc9c"
+    },
+    {
+      "claim_id": "c813fda4-bc30-4116-99a2-38113bb0f739",
+      "result_id": "7a6f65ff-46a4-4671-a2ed-7803acbefc9c"
+    },
+    {
+      "claim_id": "ce8c1b86-81d8-48db-89ef-70e9087652ab",
+      "result_id": "7a6f65ff-46a4-4671-a2ed-7803acbefc9c"
+    },
+    {
+      "claim_id": "6fcc6a33-dac5-4ba5-8c28-a0bc0e1bb8e9",
+      "result_id": "7a6f65ff-46a4-4671-a2ed-7803acbefc9c"
+    },
+    {
+      "claim_id": "eb2a101e-c010-4753-b07b-70f82aa198c7",
+      "result_id": "7a6f65ff-46a4-4671-a2ed-7803acbefc9c"
+    },
+    {
+      "claim_id": "0d2879ea-9d58-404b-8eb0-86fae461e4b7",
+      "result_id": "7a6f65ff-46a4-4671-a2ed-7803acbefc9c"
+    },
+    {
+      "claim_id": "99eb1646-be6f-43af-bd08-68b761f2b992",
+      "result_id": "7a6f65ff-46a4-4671-a2ed-7803acbefc9c"
+    },
+    {
+      "claim_id": "46cbed15-aa2c-429a-980d-4a9177ff8881",
+      "result_id": "7a6f65ff-46a4-4671-a2ed-7803acbefc9c"
+    },
+    {
+      "claim_id": "25b89b02-8d69-4618-af7b-6f21266b3c25",
+      "result_id": "7a6f65ff-46a4-4671-a2ed-7803acbefc9c"
+    },
+    {
+      "claim_id": "005f4d65-347b-4d72-ab21-f6dd38f55300",
+      "result_id": "7a6f65ff-46a4-4671-a2ed-7803acbefc9c"
+    },
+    {
+      "claim_id": "4639588f-3023-42e7-bafa-48a1bdb76069",
+      "result_id": "7a6f65ff-46a4-4671-a2ed-7803acbefc9c"
+    },
+    {
+      "claim_id": "39b9ec78-bf9b-4179-b754-ee9c61cb82ee",
+      "result_id": "7a6f65ff-46a4-4671-a2ed-7803acbefc9c"
+    },
+    {
+      "claim_id": "e7b1d050-5f8f-446a-937e-848b5d76c525",
+      "result_id": "7a6f65ff-46a4-4671-a2ed-7803acbefc9c"
+    },
+    {
+      "claim_id": "7de6b7f2-79b7-4e71-ae8d-43876187acd0",
+      "result_id": "7a6f65ff-46a4-4671-a2ed-7803acbefc9c"
+    }
+  ],
+  "comparisons": []
+}

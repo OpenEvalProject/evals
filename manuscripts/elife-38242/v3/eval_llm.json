@@ -1,0 +1,237 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6"
+    ],
+    "result": "Prior work has established that CNNs reflect hierarchical visual processing similar to the ventral stream, with early layers showing V1-like selectivity and deeper layers showing increasingly complex, categorical selectivity similar to IT.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C6 are all supported by citations to established prior work (Hubel and Wiesel, 1962; LeCun et al., 2015; Krizhevsky et al., 2012; Zeiler and Fergus, 2013; Mahendran and Vedaldi, 2014; G\u00fc\u00e7l\u00fc and van Gerven, 2015; Yamins et al., 2014; Khaligh-Razavi and Kriegeskorte, 2014; Kriegeskorte, 2015). These claims establish the context and motivation for the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C7",
+      "C8"
+    ],
+    "result": "V4 is a primary input to IT and many V4 neurons are selective for boundary curvature at particular angular positions around the center of an object.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7 and C8 are supported by citations to established neurophysiological work (Felleman and Van Essen, 1991; Pasupathy and Connor, 1999; Pasupathy and Connor, 2001; Cadieu et al., 2007). These claims establish the known properties of V4 that the study aims to find in CNNs.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "AlexNet contains over 1.5 million units organized in eight major layers, with 96 distinct kernels in Conv1, and 22,096 unique units were analyzed in this study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C15 are factual descriptions of the AlexNet architecture supported by Figure 2 and established knowledge about the network. These are straightforward architectural facts that are well-documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "Shape stimuli evoked response ranges similar to or larger than ImageNet images in convolutional layers, but natural images drove larger ranges in fully-connected layers, possibly reflecting sensitivity to category-relevant conjunctions of image statistics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16 and C17 are supported by data in Figure 4. Claim C18 is speculative but reasonable given the observed pattern. The data clearly show the differential response patterns across layers, though the interpretation in C18 remains tentative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C19",
+      "C20"
+    ],
+    "result": "13% of units had zero responses to all shape stimuli and 7% had non-zero response to only one stimulus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19 and C20 are quantitative findings from the response sparseness analysis. These are straightforward descriptive statistics that characterize the response properties of the network units.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C21",
+      "C23",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Many CNN units were fit well by the APC model, with deeper layers showing modestly better fits on average. CNN median r-values for Conv2-FC8 were somewhat higher than V4, but the best V4 unit exceeded any CNN unit. Noise-corrected V4 r-values had a higher median than any CNN layer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21, C23, C25-C28 are supported by data in Figure 5 and quantitative APC model fitting results. The comparisons between CNN and V4 are based on the same stimulus set and fitting procedure. The noise correction analysis (C28) appropriately addresses the confound of trial-to-trial variability in V4 data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C30",
+      "C32"
+    ],
+    "result": "Training is important for achieving an APC r-value distribution consistent with V4, and the APC model reflects specific patterns of responses rather than an ability to fit random data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C30 is supported by comparison between trained and untrained networks (Figure 5H). Claim C32 is supported by the shuffling control analysis showing that fit quality deteriorates substantially when responses are shuffled. These controls strengthen the interpretation that the observed APC-like tuning is meaningful.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "Translation invariance increases with layer depth in CNNs, with only the deepest four layers (Conv5-FC8) having median TI values approximating or exceeding V4.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C36 are supported by translation invariance analysis and data in Figures 6 and 7A. The TI metric is clearly defined and systematically applied across layers and compared to V4 data. The finding that TI increases with depth is consistent with the hierarchical architecture.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Training dramatically increased translation invariance, particularly in FC layers. High TI for single unit responses is only achieved with correct weights, not from CNN architecture alone. Translation invariance at the single-unit level is crucial for modeling V4 form selectivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37, C38, C62-C64 are supported by comparison between trained and untrained networks (Figure 7B). The dramatic degradation of TI in untrained networks demonstrates that architecture alone is insufficient. This is an important finding that challenges the notion that TI is simply a result of convolutional architecture.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C40",
+      "C41"
+    ],
+    "result": "Noise correction of V4 TI values does not change the conclusion that only deep CNN layers match V4, and TI measured for horizontal and vertical shifts are highly correlated (r=0.79).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C40 is an inference supported by the noise-correction analysis. Claim C41 is supported by data in Figure 7\u2014figure supplement 1. The high correlation between horizontal and vertical TI validates the use of horizontal shifts as a proxy for general translation invariance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "Visualization of APC-like units revealed that Conv2 units showed selectivity for orientations and textures, Conv3-5 units were more consistent with encoding object boundaries, and FC layer units fell into 'balls' and 'wolf-ears' categories.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C48 are qualitative findings from visualization analysis supported by Figures 9-12. The visualizations provide interpretable evidence about what features drive the units. However, the qualitative nature of this analysis means it is more subjective than the quantitative APC and TI metrics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Natural images drove responses 2x higher than shapes for Conv2-4, 4-5x higher for FC6-7, and >8x higher for FC8. Only two APC-like units responded better to shapes than natural images.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C52 are quantitative findings supported by Figure 13. These results demonstrate that while APC-like units respond systematically to simple shapes, they are driven much more strongly by natural images, particularly in deeper layers. This suggests shape tuning is one component among many features these units encode.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C57",
+      "C58"
+    ],
+    "result": "Neither the APC model nor CNN units were clearly better on average at fitting V4 responses. The APC model and CNN explain similar features of V4 responses for most neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C55, C57-C58 are supported by cross-validated comparison analysis in Figure 14. The use of cross-validation appropriately addresses concerns about overfitting. The finding that APC model and CNN explain similar variance (C57) suggests they capture overlapping aspects of V4 representation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C59",
+      "C60"
+    ],
+    "result": "Many AlexNet units exhibit translation-invariant boundary curvature selectivity approaching V4 neurons. For some V4-like units in middle layers, natural images driving them were consistent with object boundary selectivity. This identifies a novel image-computable model for V4 boundary curvature selectivity and suggests such representation may emerge in networks trained for image categorization without explicit boundary information.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C12, C59-C60 represent the main conclusions of the study. They are supported by the combined quantitative evidence (APC fits, TI metrics, cross-validated comparisons to V4) and qualitative evidence (visualizations). The claim that this is a 'novel image-computable model' (C11, C60) is justified given the quantitative match to V4 and the ability to process natural images. However, the suggestion that boundary representation 'may begin to emerge' (C12) is appropriately tentative given the complexity of the system.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C61",
+      "C68"
+    ],
+    "result": "Image statistics related to object boundaries may generalize across inputs and tasks, and the findings support the hypothesis that boundary curvature encoding may be generally important for object representation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C61 and C68 are speculative interpretations of the findings. While the emergence of APC-like tuning in AlexNet is consistent with these hypotheses, the study does not directly test whether boundary statistics generalize or whether boundary curvature is necessary for object representation. These remain plausible but unproven hypotheses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "This work is the first to quantitatively compare single-unit representation in a CNN to a mid-level visual cortical area. Some V4 neurons were better fit by CNN units than the APC model. Finding matches between brain and artificial networks provides a method for validating electrophysiological findings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C65 is supported by comparison to prior work which focused on population-level representations or IT rather than single-unit V4 properties. Claim C66 is supported by the cross-validation analysis (Figure 14). Claim C67 is speculative but reasonable given the demonstrated matches between CNN and V4 selectivity.",
+    "result_type": "MINOR"
+  }
+]

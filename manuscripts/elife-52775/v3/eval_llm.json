@@ -1,0 +1,186 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C34",
+      "C72"
+    ],
+    "result": "The authors developed a FRET-based patch-clamp fluorometry (PCF) method using ANAP labeling at position 311 of Kir6.2 to simultaneously measure nucleotide binding and channel currents in KATP channels. The ANAP-labeled construct (Kir6.2*-GFP) exhibited similar functional properties to wild-type channels and successfully trafficked to the membrane only when co-expressed with SUR1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C34 and C72 collectively demonstrate successful development and validation of the PCF method. The FRET efficiency calculations (C23, C24), functional validation showing similar ATP sensitivity (C26, C27), tolbutamide sensitivity confirming SUR1 co-assembly (C30, C31), and FRET measurements showing specific binding (C32, C34) provide converging evidence that the method works as intended.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C40",
+      "C5"
+    ],
+    "result": "Using PCF, the authors found that current inhibition occurred at lower TNP-ATP concentrations than nucleotide binding, with apparent IC50 of 6.2 \u00b5M for inhibition versus EC50 of 25.6-77.7 \u00b5M for binding. MWC-type model fits to the combined data suggest that KATP closes with only one nucleotide molecule bound.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C40 and C5 are well-supported by the simultaneous binding and current measurements shown in Figure 2. The separation between binding and inhibition curves (C38) is clearly demonstrated, and the MWC-type model provides good fits to the data (C40). The very low D value (0.04) from the model supports the conclusion that single nucleotide binding is sufficient for channel closure (C5).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C6",
+      "C47",
+      "C48",
+      "C50",
+      "C52",
+      "C55",
+      "C56",
+      "C87"
+    ],
+    "result": "The C166S mutation in Kir6.2 did not affect nucleotide binding affinity but greatly impaired the ability of bound nucleotide to close the channel, as evidenced by unchanged EC50 for binding but dramatically increased IC50 for current inhibition and incomplete inhibition at high nucleotide concentrations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C50, C52, C55, and C87 are strongly supported by the PCF data in Figure 3. The similar binding curves but rightward-shifted inhibition curves, combined with model fits showing increased D parameter while KA remained unchanged, provide clear evidence that C166S affects gating rather than binding. The partial inhibition at 10 mM ATP (C55) further supports this interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C71",
+      "C90"
+    ],
+    "result": "Mutations at SUR1-K205 (K205A and K205E) affected both nucleotide binding affinity and the ability of bound nucleotide to close the channel, demonstrating a dual role for SUR1 in KATP inhibition: directly contributing to nucleotide binding at Kir6.2 and stabilizing the nucleotide-bound closed state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C8, C66-C68, C71, and C90 are well-supported by the PCF data in Figure 4. The overlapping binding and inhibition curves for both K205 mutants (C66, C67), combined with model fits showing changes in both KA (decreased binding affinity, C68) and D (reduced coupling to closure, C71), provide strong evidence for the dual role of SUR1 (C8, C90). The structural context (C61-C65) supports the mechanistic interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C35",
+      "C86"
+    ],
+    "result": "The G334D mutation causes neonatal diabetes by preventing nucleotide binding to Kir6.2, as evidenced by drastically reduced ANAP quenching (Emax = 0.08) compared to wild-type (Emax = 0.93).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35 and C86 are supported by the binding data in Figure 1H showing minimal FRET signal for the G334D mutant. The very low Emax value and high EC50 (493 \u00b5M vs 25.6 \u00b5M for wild-type) provide strong evidence that this mutation disrupts nucleotide binding. This corroborates prior hypotheses (C86) with direct binding measurements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C73",
+      "C74"
+    ],
+    "result": "Simultaneous measurement of binding and current by PCF provides insights into nucleotide regulation of KATP that would not be possible from isolated measurements of currents or binding alone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73 and C74 are supported by the entire body of work, particularly the ability to distinguish binding from gating effects (as shown with C166S) and to constrain model parameters that would be poorly determined from either measurement alone. The separation of binding and inhibition curves and the ability to extract both KA and D parameters demonstrate the unique advantages of the method.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Thermodynamic calculations show that saturating TNP-ATP stabilizes the closed state by -7.9 kcal/mol while saturating MgTNP-ADP stabilizes the open state by -1.9 kcal/mol, indicating that inhibition dominates when all binding sites are occupied, consistent with published measurements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C80 are supported by calculations based on the D and E parameters derived from model fits. The comparison to prior work (C80) provides additional validation. However, these calculations rely on the assumption that activation and inhibition processes are independent (C79), which may be an oversimplification.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C82",
+      "C83"
+    ],
+    "result": "Higher affinity binding of MgADP to the stimulatory site on SUR1 compared to the inhibitory site on Kir6.2 may explain the ability of MgADP to increase KATP currents in the presence of ATP and the bell-shaped MgADP concentration-response curve.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C82 and C83 are speculative interpretations based on comparing KA values from different experiments with different nucleotides (MgTNP-ADP vs TNP-ATP). While the hypothesis is reasonable, it lacks direct experimental support in this manuscript. The authors appropriately use cautious language ('may explain'), but additional experiments would be needed to test this hypothesis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "The PCF approach and modeling framework developed in this study can be used to mechanistically assess disease-causing mutations in KATP and should be adaptable to other nucleotide-gated channels including CFTR and P2X receptors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C91-C93 are forward-looking statements about potential applications. While the successful application to C166S and K205 mutations (C92) provides some support, the broader applicability to other mutations (C91) and other channel types (C93) remains to be demonstrated. These are reasonable predictions but require future validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C15",
+      "C16",
+      "C17",
+      "C20",
+      "C21",
+      "C47",
+      "C48",
+      "C58",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C84"
+    ],
+    "result": "Background knowledge about KATP channel structure, function, nucleotide regulation, and disease-causing mutations is established through citations to prior literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4, C9-C13, C15-C17, C20-C21, C47-C48, C58, C60-C65, and C84 represent established knowledge from the literature, appropriately cited throughout the manuscript. These provide the necessary context for interpreting the novel findings. The accuracy of these citations is assumed based on the references provided.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,332 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "The authors determined crystal structures of E. coli MlaFB in two oligomeric states: MlaF1B1 at 2.60 \u00c5 resolution (no nucleotide) and MlaF2B2 at 2.90 \u00c5 resolution (ADP-bound), with PDB codes 6XGZ and 6XGY respectively.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C40-C42 provide clear structural data with specific resolutions and PDB codes. The manuscript describes appropriate crystallographic methods, data collection, and structure determination. The structures were solved using molecular replacement and refined to reasonable statistics as shown in Supplementary file 3.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C54"
+    ],
+    "result": "MlaF adopts a canonical ABC ATPase fold with head-to-tail dimer arrangement, two ADP molecules bound at the interface representing a post-powerstroke state, and exhibits an open conformation with 13.9 \u00c5 separation between key catalytic motifs. The structure shows ~10\u00b0 rotation of the helical subdomain between MlaF1B1 and MlaF2B2 states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C54 describe well-resolved structural features directly observable in the crystal structures (Figures 2A-C). The measurements (13.9 \u00c5 separation, ~10\u00b0 rotation) are quantitative and verifiable from coordinates. The assignment of the post-powerstroke state based on ADP+Mg is reasonable and consistent with ABC transporter mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "MlaF contains an unusual LSGGM signature motif (instead of consensus LSGGQ), with methionine at position 149 that cannot hydrogen bond like glutamine. This substitution is rare in ABC transporters (5/191 structures) but conserved in Mla- and TGD-like MCE systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C58 are supported by sequence analysis (Figure 2\u2014figure supplement 2) and structural modeling (Figure 2E). The bioinformatic analysis of 191 ABC structures provides quantitative support. However, the functional significance remains speculative (C56 uses 'may impair'), which is appropriately acknowledged by the authors.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "MlaF possesses a unique ~25 amino acid C-terminal extension (CTE) that forms a domain-swapped reciprocal 'handshake' between MlaF subunits, with three hydrophobic residues (Tyr261, Leu265, Leu266) inserting into a groove at the MlaF-MlaB interface. This CTE is unique among 379 structurally characterized ABC transporters analyzed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C69 describe a novel structural feature clearly visible in both crystal forms (Figures 3A-B). The CTE is observed in different crystal packing environments (P212121 vs P3221), arguing against crystal artifacts (C64-C65). The comprehensive PDB analysis (379 structures) supports the uniqueness claim (C66-C69), though the comparison methodology could be more detailed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "The MlaF C-terminal extension is essential for function in E. coli. Catalytically dead mutants (K47A, E170Q) and complete CTE deletion (\u0394CTE) failed to complement the mlaF deletion strain. Single point mutations (Y261A, L265A, L266A) had no effect, but the triple mutant partially restored growth.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C75 are supported by cellular complementation assays (Figure 4B) with appropriate controls including wild-type, catalytic mutants, and CTE variants. The graded phenotypes (single mutants functional, triple mutant partial, deletion non-functional) provide strong evidence for CTE importance. Results are stated as representative of \u22653 biological replicates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "MlaF-MlaB interaction is not dependent on nucleotide binding/hydrolysis, as Walker A and B mutants still bind MlaB. Surprisingly, CTE mutations including complete deletion had no detectable effect on MlaF-MlaB interaction in pull-down assays.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C78 are supported by pull-down experiments (Figure 4C) showing MlaB co-purifies with wild-type and mutant MlaF. The finding that CTE deletion doesn't affect MlaF-MlaB binding (C78) is unexpected but clearly shown in the data, distinguishing the CTE's role in complex assembly from its role in MlaB binding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C7",
+      "C9",
+      "C79",
+      "C80"
+    ],
+    "result": "Deletion of the MlaF C-terminal extension prevents stable association of MlaF and MlaB with the MlaFEDB complex. When MlaF\u0394CTE was co-expressed with MlaEDB, purification via His-MlaD yielded only MlaE and MlaD, with both MlaF and MlaB absent.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C9, C79-C80 are supported by purification experiments (Figure 4E) showing clear loss of MlaF and MlaB bands in the \u0394CTE mutant while MlaE and MlaD remain. This is consistent with cellular assays showing loss of function. The interpretation that CTE is required for complex assembly is well-supported, though the mechanism remains partially unclear.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C82",
+      "C122",
+      "C83",
+      "C123"
+    ],
+    "result": "Artificial dimerization using GCN4 can largely restore function to MlaF\u0394CTE, suggesting the normal function of the CTE is to stabilize the MlaF dimer via the reciprocal handshake, which promotes NBD dimerization and increases effective affinity for MlaE.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82, C122-C123 are supported by rescue experiments (Figure 4G) showing GCN4-fused MlaF\u0394CTE partially restores growth. Multiple linker lengths were tested to avoid conformational constraints. The rescue supports the dimerization hypothesis (C83, C123), though the restoration is partial, not complete, suggesting additional CTE functions may exist.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C84",
+      "C85"
+    ],
+    "result": "MlaB consists of a single STAS-like domain with a 4-stranded \u03b2-sheet packed against 3 \u03b1-helices, representing a minimalist member of the STAS family, structurally similar to smaller STAS domains from SLC26/SulP transporters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C85 are supported by the crystal structure (Figures 5A-B) and structural comparisons with other STAS domains (Figures 5C-F). The classification as 'minimalist' is justified by the absence of the fifth \u03b2-strand and additional helix present in canonical STAS domains like SpoIIAA. Citations support the structural comparisons.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C97"
+    ],
+    "result": "MlaB binds to a previously undescribed site on ABC transporters, centered on the helical subdomain of MlaF, ~30 \u00c5 from the ATP binding site. The binding site involves contributions from both MlaF subunits in the dimer, with Thr52 of MlaB positioned at the center of the interface.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C89, C97 describe the MlaF-MlaB interface clearly visible in the structure (Figures 5G-J). The distance measurement (30 \u00c5) is verifiable. The PDB analysis showing no other examples of this binding mode supports the novelty claim (C97), though the search methodology could be more rigorous. The interface is well-defined with specific residues identified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "Thr52 on MlaB is a site of phosphoregulation in other STAS proteins. A phosphomimetic T52E mutation substantially reduced MlaF-MlaB interaction in pull-down assays, though a previous T52A mutation remained bound to MlaF despite being non-functional.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C90 is supported by citations for other STAS proteins, but there's no direct evidence of MlaB phosphorylation. The T52E pull-down data (C91, Figure 5K) shows reduced binding, but the T52A data from prior work (C92) complicates interpretation\u2014if T52A binds MlaB but is non-functional, the role of this residue may be more complex than simple phosphoregulation. The conflicting data warrant caution.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "The E. coli MlaFB structure differs substantially from the A. baumannii model, with MlaB rotated ~120\u00b0 relative to MlaF. While MlaF subunits are well-conserved (~59% identical), MlaB subunits are highly divergent (<20% identical) between species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C96 compare the E. coli structure to the A. baumannii EM model (Figure 5\u2014figure supplement 1). The sequence identity calculations are data-based. However, the authors appropriately note the A. baumannii model was based on low-resolution EM (8.7 \u00c5) where MlaB orientation may not have been reliably determined. The comparison is valid but the discrepancy may reflect modeling limitations rather than true species differences.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C5",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "MlaB is required for MlaF stability and association with the MlaED complex. MlaF alone cannot be expressed and purified, but co-expression with MlaB enables purification. When MlaFED is expressed without MlaB, only MlaE and MlaD are recovered, indicating MlaF does not stably associate without MlaB.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C98-C105 are supported by multiple purification experiments (Figures 5L, 5\u2014figure supplement 2). The inability to purify MlaF alone (C103) but successful purification with MlaB (C104) strongly supports the stabilization role. The MlaFED purification yielding only MlaED (C98-C99, Figure 5L) provides compelling evidence that MlaB is required for MlaF association with the complex.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C8",
+      "C10",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "Overexpression of MlaF can fully suppress the mlaB knockout phenotype, suggesting MlaB may have no essential function in lipid transport beyond promoting MlaF stability and association with the complex. MlaB may regulate transporter activity indirectly by modulating MlaF levels available for transport.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C10, C106-C108 are supported by complementation experiments (Figure 5M) showing both mlaB and mlaF plasmids rescue the mlaB knockout. The ability of MlaF overexpression to bypass MlaB requirement (C106) is strong evidence that MlaB's primary role is MlaF stabilization. However, the regulatory model (C108) remains somewhat speculative\u2014alternative explanations exist.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "In-frame deletion of mlaF or disruption of mlaB from the E. coli chromosome compromises outer membrane integrity, causing poor growth on LB agar with SDS and EDTA. The mlaB phenotype is slightly milder than mlaF.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C37 are supported by cellular assays (Figure 1B) with appropriate controls. The authors carefully optimized SDS/EDTA concentrations for different LB agar sources (Figure 1\u2014figure supplement 1), addressing reproducibility concerns. The phenotypic difference between mlaF and mlaB knockouts (C37) is observable in the data and consistent with MlaB's role in MlaF stability.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C38",
+      "C39"
+    ],
+    "result": "MlaF and MlaB co-elute by size exclusion chromatography with apparent molecular weight ~40 kDa, consistent with a 1:1 MlaFB heterodimeric complex (expected 41.4 kDa).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C39 are supported by SEC data (Figures 1D-E). The observed molecular weight matches the expected value for a 1:1 complex. However, SEC molecular weight estimation can be imprecurate due to shape effects. The 1:1 stoichiometry is better supported by the crystal structure showing this arrangement.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111",
+      "C119",
+      "C121",
+      "C124",
+      "C125"
+    ],
+    "result": "The authors propose a regulatory model where MlaB levels modulate Mla transport activity by controlling MlaF stability and dimerization. Under high transport demand, MlaB expression stabilizes MlaF for complex assembly; under low demand, reduced MlaB leaves MlaF susceptible to degradation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C109-C111, C119, C121, C124-C125 present a speculative regulatory model (Figure 6) based on the experimental findings. While the model is logical and consistent with the data, it lacks direct experimental validation. No evidence is provided for: (1) MlaB levels changing with growth conditions, (2) MlaF degradation in the absence of MlaB in cells, (3) phosphoregulation of MlaB (C119), or (4) metabolite binding to MlaB (C121). The model is reasonable but requires further testing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C1",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Background context on ABC transporters, their substrates, regulation mechanisms, and the Mla pathway's role in outer membrane integrity and phospholipid transport in Gram-negative bacteria.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C11-C34 provide background information supported by appropriate citations to established literature. These claims set the context for the study but do not represent novel findings. The direction of Mla-mediated lipid transport remains debated (C32-C34), which the authors appropriately acknowledge.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C53",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C120"
+    ],
+    "result": "Background on ABC transporter conformational changes, STAS domain regulation by phosphorylation in other systems, and potential regulatory mechanisms that may apply to MlaB.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53, C112-C118, C120 provide relevant background supported by citations. These establish precedent for the types of regulatory mechanisms the authors propose for MlaB, particularly phosphoregulation of STAS domains. However, these are not novel findings from this study.",
+    "result_type": "MINOR"
+  }
+]

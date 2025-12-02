@@ -1,0 +1,314 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "Two laboratory lineages of C. elegans (N2 and LSJ2) descended from a single hermaphrodite isolated in 1951, split between 1957-1958, and evolved in different laboratory environments for 300-2000 generations, accumulating ~300 fixed mutations and substantial phenotypic divergence. Five de novo causal genetic variants have been identified in these lineages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C8 are well-supported by citations to prior work (McGrath et al., 2009, 2011; Sterken et al., 2015) that established the history and genetic characterization of these strains. The historical context is clearly documented and provides essential background for understanding the experimental evolution framework used in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "An N2-derived SNV in the second intron of nurf-1 increases fitness and brood size in laboratory conditions. The LSJ2 allele contains a 60 bp deletion, while the N2 allele contains an intronic SNV. Both mutations are beneficial in their respective environments, with the N2 intron SNV reducing brood size by ~30 offspring and significantly reducing fitness when replaced with the LSJ2 allele.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C26 are supported by CRISPR-based allelic replacement experiments (C21, C24) and fitness competition assays (C23, C24) with appropriate statistical testing (Figure 1D shows significance markers). The use of isogenic strains with defined genetic differences and digital droplet PCR for quantification provides rigorous evidence. However, the molecular mechanism by which the intronic SNV acts remains unclear (C35), which is acknowledged by the authors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C27",
+      "C28"
+    ],
+    "result": "A large number of genes (3384 vs. 25) are differentially expressed between N2 and ARL(intron,LSJ2>N2) strains specifically during the 52 hr timepoint (L4 stage during spermatogenesis) but not at 60 hr (young adults during oogenesis). Gene ontology analysis suggests nurf-1 regulates cuticle development and innate immune responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C28 are supported by RNA-seq data with appropriate statistical analysis (adjusted p-value <0.05 per methods) and visualization (Figure 1F, Figure 1\u2014figure supplement 2). The temporal specificity of differential expression is striking and well-documented. Gene ontology analysis is consistent with known functions of BPTF orthologs in other species (C28 cites Kwon et al., 2008; Landry et al., 2011; Koludrovic et al., 2015; Wu et al., 2016).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C9",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Five major nurf-1 transcripts were identified (nurf-1.a, b, d, f, and q) using Oxford Nanopore long-read and Illumina short-read RNA sequencing. The newly identified nurf-1.q transcript is most highly expressed, followed by nurf-1.b. Immunoblot analysis confirmed expression of B, D, and F isoforms but not A or Q isoforms. No significant expression differences were detected between N2 and ARL(intron,LSJ2>N2) strains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C35 are well-supported by multiple lines of evidence: RNA-seq data (both long and short reads), transcript quantification using kallisto, and immunoblot analysis with epitope-tagged strains (C34, Figure 2D). The discrepancy between high nurf-1.q transcript levels (C33) and lack of protein detection (C34) is noted and suggests either lack of translation or rapid degradation (C83), which is appropriately acknowledged as uncertain.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C78"
+    ],
+    "result": "Multiple BPTF protein species (150-250 kD) were detected in human cancer cell lines by western blotting and confirmed by mass spectrometry. Despite these additional bands, the full-length BPTF isoform is most highly expressed in human cancer cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C38 and C78 are supported by western blot data from multiple cancer cell lines and mass spectrometry confirmation (Figure 2\u2014figure supplement 4). The use of validated antibodies and orthogonal confirmation by mass spectrometry provides strong evidence. However, the functional significance of these additional isoforms is speculative and appropriately presented as such.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "CRISPR-engineered stop codons in different exons of nurf-1 revealed that stop codons in exons 1, 2, and 7 cause sterility or mortal germline phenotypes, while stop codons in exons 18 and 19 also cause mortal germline phenotypes. Stop codons in the 23rd exon (F isoform-specific) had no effect. The ability of NURF-1 to bind modified histones via PHD and bromodomains is not required for its function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C46 are supported by systematic CRISPR-based mutagenesis with clear phenotypic readouts (Figure 3B, C). The use of multiple independent alleles, compound heterozygote analysis (C44), and domain-specific mutations (Figure 3\u2014figure supplement 1) provides rigorous genetic evidence. The conclusion that histone-binding domains are dispensable (C46) is well-supported by mutations in conserved residues that abolish histone binding in other species.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Compound heterozygote analysis demonstrated that the D isoform is required for reproduction and wild-type growth rate, while the A isoform is dispensable. Both the B and D isoforms are essential for reproduction. Animals lacking only the A isoform (kah106/kah96 compound heterozygotes) were indistinguishable from wild-type, while those lacking the D isoform (kah93/kah96) were essentially sterile.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C51 are strongly supported by systematic compound heterozygote analysis (Figure 4B) with clear genetic logic. The experimental design elegantly distinguishes between isoform requirements by creating genotypes that selectively lack specific isoforms. Sample sizes appear adequate (multiple replicates shown in Figure 4B), and statistical significance is indicated. The genetic reasoning is sound and well-explained.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C52"
+    ],
+    "result": "A transgenic strain containing an integrated nurf-1.d cDNA driven by its endogenous promoter fully rescued the fecundity phenotype of the kah96 allele and partially rescued the kah93 allele.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C52 is supported by transgenic rescue experiments (Figure 4C) using MosSCI integration for stable, single-copy transgene insertion. The full rescue of kah96 and partial rescue of kah93 is consistent with the genetic model that D isoform is essential and B isoform truncation in kah93 causes additional defects. This provides strong functional validation of the isoform-specific requirements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "The F isoform is specifically upregulated in response to heat shock at both transcript and protein levels, and plays a modulatory role in determining the long-term transcriptional response to heat shock. The F isoform does not affect normally developing animals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C56 are supported by RNA-seq analysis of published heat shock datasets (Brunquell et al., 2016; Li et al., 2016), western blot confirmation of protein upregulation (Figure 4\u2014figure supplement 2C, D), and transcriptional profiling of F isoform deletion strains (Figure 4\u2014figure supplement 2E-G). The conclusion that F isoform modulates long-term but not initial heat shock response is appropriately nuanced and supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "The B and D isoforms have opposite effects on gamete differentiation. Animals lacking the B isoform (kah106) produce ~60 sperm (vs. ~300 in wild-type) and normal oocytes, spending less time in spermatogenesis. Animals lacking the D isoform (kah96) produce ~500 sperm and almost no oocytes, unable to transition from spermatogenesis to oogenesis. kah93 mutants show an intermediate phenotype.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C62 are strongly supported by quantitative DAPI staining and counting of sperm and oocytes (Figure 5C-E) with clear statistical significance. The opposing phenotypes provide compelling evidence for antagonistic functions of B and D isoforms. Sample sizes appear adequate (multiple animals counted per genotype), and the intermediate phenotype of kah93 (which has truncated B and lacks D) supports the model of opposing activities.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C63"
+    ],
+    "result": "Both the N2 and LSJ2-derived alleles in nurf-1 regulate the activity of a common molecular target, likely the NURF complex, as evidenced by positive correlation between transcriptional changes caused by the two mutations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C63 is supported by RNA-seq analysis showing positive correlation (R\u00b2 = 0.63) between transcriptional changes caused by the 60 bp deletion and the intron SNV (Figure 5\u2014figure supplement 1B). This correlation suggests both mutations affect a common pathway. However, the conclusion that this target is the NURF complex, while reasonable, is somewhat speculative as direct biochemical evidence for NURF complex activity is not provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "In C. briggsae and related species in the brenneri/tribulationis clade, the shared exons of nurf-1.b and nurf-1.d have duplicated, resulting in separation into two distinct genes (nurf-1-1 and nurf-1-2). These species have lost expression of nurf-1.a and nurf-1.q transcripts. Phylogenetic analysis indicates this duplication occurred once in the common ancestor of this clade.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C70 are well-supported by comparative genomics, transcriptomics (RNA-seq from 22 species), and phylogenetic analysis (Figure 6, Figure 6\u2014figure supplements 1-4). The use of BLAST, multiple sequence alignment, and phylogenetic tree construction with bootstrap support provides rigorous evidence. The AU test (Figure 6\u2014figure supplement 4) statistically supports the single duplication model over alternatives.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C71",
+      "C72"
+    ],
+    "result": "The rate of amino acid substitution in the duplicated region was accelerated in nurf-1-1 relative to nurf-1-2 (p<0.001), suggesting positive selection and/or relaxed selection. Analysis of dN/dS ratios in three closely-related species pairs was consistent with increased protein evolution in the duplicated region following gene separation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C72 are supported by statistical analysis of substitution rates (Welch's t-test, p<0.001) and dN/dS ratio calculations (Table 3). The increased dN/dS ratios in the duplicated region (ranging from 2.4 to 5.8) compared to non-duplicated regions provide strong evidence for accelerated evolution. The statistical approach is appropriate and the conclusion is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "In C. elegans, nurf-1 has split into two largely non-overlapping isoforms (NURF-1.D/Yin and NURF-1.B/Yang) that share only two of 26 exons. Both isoforms are essential for normal gametogenesis but have opposite effects on male/female gamete differentiation. Reproduction in hermaphrodites requires a balance of these opposing isoforms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C13 synthesize findings from multiple experiments (CRISPR mutagenesis, compound heterozygote analysis, sperm/oocyte counting) into a coherent model. The evidence strongly supports that B and D isoforms are both essential (C51) and have opposite effects on gametogenesis (C57-C62). The 'Yin and Yang' metaphor is apt given the antagonistic functions. This represents a major conceptual advance in understanding nurf-1 function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "In a related clade of Caenorhabditis nematodes, the shared exons have duplicated, resulting in the split of Yin and Yang isoforms into separate genes. The duplicated sequence (~200 amino acids) has undergone accelerated protein evolution. Associated with this duplication is the loss of two additional nurf-1 transcripts (nurf-1.a and nurf-1.q).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C16 are supported by comparative genomics (C64-C70), evolutionary rate analysis (C71-C72), and transcriptomics showing loss of nurf-1.a and nurf-1.q in species with duplicated genes (C66, C68). The integration of structural, evolutionary, and expression data provides strong support for this evolutionary transition. This represents a major finding linking isoform evolution to gene duplication.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C17",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "The authors propose that the lost transcripts (nurf-1.a and nurf-1.q) are non-functional side products necessary to transcribe the Yin and Yang transcripts in the same cells. Evidence includes: (1) nurf-1.q transcript is highly expressed but protein is not detected, suggesting it is not translated or rapidly degraded; (2) production of these transcripts could come at an energetic cost; (3) these transcripts are lost in species where Yin and Yang split into separate genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C17, C81-C83 represent a speculative model that is clearly labeled as such ('we propose', 'suggesting', 'potentially'). While the model is creative and consistent with available data (high nurf-1.q expression without protein detection, loss of these transcripts in species with gene duplication), direct experimental evidence for the 'molecular conflict' hypothesis is lacking. The model makes testable predictions but requires additional experiments to validate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C18"
+    ],
+    "result": "Gene sharing, through the production of multiple isoforms, can precede the creation of new, independent genes. This work demonstrates how isoform evolution can lead to gene duplication and functional diversification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C18 is supported by the integration of functional data in C. elegans (showing distinct, essential functions of B and D isoforms) with comparative evolutionary data (showing these isoforms split into separate genes in related species). This represents a significant conceptual contribution to understanding mechanisms of gene birth. The evidence is strong, though the generalizability to other genes remains to be determined.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "nurf-1 is a genetic target for adaptation to extreme environmental changes in laboratory growth. The LSJ2-derived deletion modified life history tradeoffs to prioritize individual survival over reproduction, while the N2 mutation favors reproduction over survival.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C75 are supported by the identification of independent beneficial mutations in both lineages (C25) and previous work showing environment-specific fitness effects (Large et al., 2016). The interpretation regarding life history tradeoffs is consistent with the phenotypic data (reduced reproduction in LSJ2, increased reproduction in N2) and the known role of BPTF orthologs in regulating differentiation and homeostasis (C89-C90). However, direct measurement of survival vs. reproduction tradeoffs would strengthen this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "BPTF/NURF-1 orthologs have conserved roles across species. In mammals, BPTF regulates cellular differentiation and homeostasis of specific cell types and tissues. In Drosophila, NURF301 regulates heat shock response, pupation, spermatogenesis, and innate immunity. In humans, genetic alterations in BPTF are reported in cancers, and BPTF is required for c-MYC transcriptional activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C77 and C89-C92 are well-supported by citations to published literature. These claims provide important context for interpreting the C. elegans findings and demonstrate evolutionary conservation of BPTF/NURF-1 function. The citations appear appropriate and the claims accurately represent the cited work based on the descriptions provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "The authors discuss alternative evolutionary scenarios for the gene duplication event, including developmental system drift (neutral process) and adaptive scenarios involving escape from adaptive conflict. They note that the most rapidly evolving portion of the protein is within exons 14-15, suggesting positive selection potentially changing transcription factor binding specificity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C80 and C84-C88 represent appropriate discussion of alternative hypotheses and evolutionary mechanisms. The identification of rapid evolution in exons 14-15 (C86) is supported by the data (C71-C72). The discussion appropriately distinguishes between speculation (C79-C80, C84) and data-supported conclusions (C86-C88). The 'escape from adaptive conflict' model (C85) is properly cited and provides a useful framework for interpretation.",
+    "result_type": "MINOR"
+  }
+]

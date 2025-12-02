@@ -1,0 +1,198 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C11",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "Using the ISD (intercalation-induced supercoiling of DNA) assay, the authors demonstrate that plectonemes form at specific positions along DNA molecules and that this positioning is sequence-dependent. Plectonemes appear as dynamic fluorescent spots that disappear upon torsional relaxation, and time-averaged fluorescence shows inhomogeneous distribution along supercoiled DNA but not relaxed DNA. The system is at equilibrium as nucleation and termination events are balanced at each position.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C21 collectively establish the experimental foundation showing sequence-dependent plectoneme positioning. The ISD assay provides direct visualization (C11, C15), appropriate controls distinguish supercoiled from relaxed DNA (C16-C17, C19), comparison of two different templates demonstrates sequence dependence (C18), and equilibrium is confirmed by balanced kinetics (C20-C21). The experimental design is sound with proper controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Through systematic mutagenesis experiments, the authors demonstrate that plectoneme pinning correlates weakly with AT-content (R=0.33) but cannot be attributed solely to AT-content, poly(A)-tracts, or poly(A/T)-tracts. Instead, plectoneme pinning depends on a local mechanical property arising from the combined effect of base sequences over distances greater than tens of nucleotides, with the specific spatial arrangement of sequences being critical.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C31 present a comprehensive systematic exploration ruling out simple sequence features. The experiments are well-designed with appropriate sequence manipulations (insertions, deletions, shuffling, mutations) that test specific hypotheses. The logic is sound: showing that AT-content correlates but is insufficient (C22-C25), that poly(A)-tracts are not required (C26-C27), and that spatial arrangement matters (C28-C29) collectively supports the conclusion about local mechanical properties (C30-C31).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C79"
+    ],
+    "result": "The authors develop a physical model based on intrinsic DNA curvature and flexibility to predict plectoneme positioning. The model estimates that bending a 73 bp tip region by 240\u00b0 requires ~18 kBT, which can be reduced by ~8 kBT with 60\u00b0 intrinsic curvature. The model predicts that intrinsic curvature (not flexibility) is the dominant factor and shows generally very good qualitative agreement with experimental data, though it occasionally produces false negatives, possibly due to limitations in dinucleotide parameters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C40, C79 describe a physically motivated model with no free parameters that achieves good qualitative agreement with experiments. The model's predictions match most experimental data (C37-C38), and the authors appropriately acknowledge limitations (C39-C40). The physical reasoning about bending energetics is sound (C32-C34), and the model's prediction that curvature dominates over flexibility (C36) is testable and supported by data. The lack of fitting parameters strengthens confidence in the model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "The authors validate their model's predictive power by designing and testing synthetic sequences. A 250 bp curved sequence shows strong plectoneme pinning while a 500 bp flat sequence does not. Remarkably, even a 75 bp highly curved sequence pins plectonemes (consistent with the ~73 bp tip size), while a 75 bp flat sequence does not. GC-rich curved sequences also pin plectonemes, confirming that intrinsic curvature, not AT/GC content, is the major determinant.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C46 provide strong prospective validation of the model through designed sequences. The experiments test specific predictions a priori (C41-C42), demonstrate the minimal length scale (C43-C44), and definitively separate curvature from AT-content effects using GC-rich sequences (C45-C46). This prospective validation is particularly compelling evidence for the model's validity and represents rigorous hypothesis testing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C56",
+      "C63"
+    ],
+    "result": "Genome-wide analysis reveals that plectonemic hot spots in E. coli and other prokaryotes localize ~100 nucleotides upstream of transcription start sites (TSS). This pattern varies in strength across species and is absent in C. crescentus. Two predicted E. coli promoter sequences (TSS-rrsB and TSS-polA) show strong experimental pinning, confirming that promoter sequences have evolved to position plectonemes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C52, C56, C63 demonstrate biological relevance through genome analysis and experimental validation. The computational predictions are tested experimentally (C52), showing the model has predictive power for genomic sequences. The variation across species (C50-C51) suggests functional significance. However, the evolutionary claim (C63) is somewhat speculative as it infers selection without direct evidence, though the pattern is consistent with this interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C68",
+      "C69"
+    ],
+    "result": "Analysis of eukaryotic genomes shows diverse plectoneme positioning patterns around promoters, with most organisms showing both enrichment and depletion at different regions. The features show weak periodicity consistent with nucleosome repeat lengths (~150-260 bp), suggesting plectonemes may play a role in nucleosome positioning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C53-C54, C68-C69 present intriguing patterns in eukaryotic genomes, but the evidence is weaker than for prokaryotes. The periodicity is described as 'weak' (C54), one organism shows no signal, and the connection to nucleosomes is speculative (C68-C69). No experimental validation of eukaryotic sequences is provided, unlike the prokaryotic analysis. The claims are plausible but require additional experimental support.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C55",
+      "C57",
+      "C59",
+      "C72",
+      "C73"
+    ],
+    "result": "The authors conclude that intrinsic curvature over ~70 bp is the primary determinant of plectoneme pinning in positive supercoiling, revealing a 'hidden code' that governs plectoneme localization and three-dimensional genome organization. Flexibility variations in duplex DNA produce only minor changes in pinning probability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55, C57, C59, C72-C73 synthesize the major findings into overarching conclusions. These are well-supported by the experimental data (sequence manipulations), physical modeling (showing curvature dominates), and prospective validation (designed sequences). The claim about flexibility being unimportant (C59) is directly tested in the model (C36). The 'hidden code' language is somewhat promotional but accurately reflects that this sequence-structure relationship was not previously well-characterized.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "The authors propose multiple mechanisms by which plectonemes at promoters could regulate gene expression: facilitating RNA polymerase binding, exposing DNA to the nucleoid edge, contributing to transcriptional bursting dynamics, mediating promoter-enhancer interactions, and assisting open complex formation. These proposals are supported by prior literature showing curved DNA affects gene expression and RNAP binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C60-C67 are largely speculative about biological mechanisms, as indicated by the 'may' language and speculation evidence type. While C60-C61 cite prior work showing curved DNA affects expression and RNAP binding, the specific mechanisms proposed (C62, C64-C67) are hypotheses that require experimental testing. These are reasonable interpretations but represent future work rather than demonstrated results from this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C70",
+      "C71"
+    ],
+    "result": "The authors discuss that for negative supercoils, plectoneme pinning can be influenced by both curvature and local melting, which are difficult to disentangle. They expect their model to capture curvature-dependent effects on negative plectonemes as well, since dinucleotide curvature parameters are not strongly perturbed at these torques.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C70-C71 discuss applicability to negative supercoiling but provide no experimental data for this regime. The reasoning is plausible (C71) but remains untested. This represents a limitation of the current work and a direction for future investigation rather than a supported result.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Control experiments establish that the intercalating dye SxO does not affect DNA mechanical properties under experimental conditions, binds approximately every 26 bp, and that plectoneme density is independent of ionic strength (20 mM vs 150 mM NaCl).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C77 describe important methodological controls. C74 is supported by prior work, C75 is a reasonable estimate based on prior work and assumptions, and C76-C77 are directly tested experimentally. These controls are essential for validating that the observed sequence dependence is not an artifact of dye binding or ionic conditions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C47",
+      "C48",
+      "C58"
+    ],
+    "result": "The introduction establishes prior knowledge about DNA supercoiling: that it plays important roles in gene regulation in prokaryotes and eukaryotes, that chromatin is organized into topological domains with varying torsional strain, that DNA sequence influences mechanical properties affecting plectoneme formation, and that curved DNA localizes near transcription start sites in prokaryotes and nucleosome positioning sequences in eukaryotes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C10, C47-C48, C58 summarize established prior work, all supported by appropriate citations. These provide context for the current study and are not results of this work. The authors accurately represent prior knowledge, though the accuracy of these citations would need to be verified against the original sources.",
+    "result_type": "MINOR"
+  }
+]

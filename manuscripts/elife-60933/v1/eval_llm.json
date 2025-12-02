@@ -1,0 +1,285 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C23"
+    ],
+    "result": "PP-SLIDE correctly identifies the unstimulated precursor of reactivated J-Lat 6.3 cells 99.2% of the time in an in vitro validation experiment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C23 is directly supported by experimental data from the J-Lat validation experiment shown in Figure 1B, demonstrating a 0.8% error rate. This provides strong validation of the PP-SLIDE method's accuracy in tracing reactivated cells back to their latent state.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C25",
+      "C26"
+    ],
+    "result": "The HIV reservoir is non-randomly distributed among memory CD4+ T cell subsets, with enrichment in effector memory (Tem) cells and confirmed by statistical testing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C25, and C26 are supported by FlowSOM clustering analysis showing non-random distribution (chi-squared test p<0.01 for all four donors) and data demonstrating Tem over-representation among kNN latent cells in all four donors. The statistical validation and consistency across donors strengthen this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "The HIV reservoir exhibits conserved phenotypic features between individuals, with consistent expression patterns of specific markers including PD1, CTLA4, CCR5, CXCR4, Ox40, and ICOS, though intra-individual variability is less than inter-individual variability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4 and C35-C40 are supported by tSNE visualization showing kNN latent cells from different donors residing in similar regions, marker expression data in Figure 3B with statistical significance (p<0.05 to p<0.01), and Euclidean distance calculations demonstrating lower median distances within donors than between donors. The consistency of marker expression across donors provides strong evidence for reservoir conservation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C5",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Reservoir composition differs between tissues and blood, with distinct marker expression patterns in lymph nodes (FNA) and gut compared to blood, though some markers like PD1 and CD69 are shared across tissue sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5 and C43-C51 are supported by CyTOF data showing differential marker expression patterns (Figures 4D and 4\u2014figure supplement 1), tSNE visualization, and Euclidean distance calculations demonstrating that FNA and gut kNN latent cells cluster together away from blood. The data consistently show tissue-specific differences while identifying shared features.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C6",
+      "C41",
+      "C42"
+    ],
+    "result": "Different latency reversing agents reactivate different subsets of latent cells, with Romidepsin/PEP005 reactivating only a subset of cells reactivatable by PMA/ionomycin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C41, and C42 are supported by Euclidean distance calculations and tSNE visualization showing that PMA/ionomycin-reactivatable cells from different time points are more similar to each other than to anti-CD3/CD28 or Romidepsin/PEP005-reactivatable cells from the same time point. However, the authors note this should be confirmed with additional donors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Sorting strategies using 8-10 CyTOF markers can isolate populations highly enriched for replication-competent HIV, with enriched populations showing robust viral outgrowth while disenriched populations show minimal to no outgrowth.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C8, and C52-C54 are strongly supported by viral outgrowth assay data (Figure 6A) showing robust outgrowth in enriched populations across all four donors, with most disenriched populations showing no outgrowth even at 200,000 cells/well. The enriched populations also showed more outgrowth than total memory CD4+ T cells (Figure 6\u2014figure supplement 2).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C9",
+      "C56",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Enriched populations harbor significantly higher frequencies of intact provirus compared to disenriched populations, with one donor (PID5003) showing 65.2% fully intact proviruses in the enriched population versus 0.9% in the disenriched population.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9 and C56-C60 are supported by FLIPS data (Figures 6C-D) showing enriched populations harbored higher frequencies of intact p24 sequences. The PID5003 data is particularly striking, with 65.2% fully intact proviruses in the enriched population (214 per million cells) versus 0.9% in the disenriched population (2 per million cells), and 95.5% of disenriched proviruses harboring large internal deletions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C10",
+      "C55"
+    ],
+    "result": "Enriched populations show higher levels of HIV transcription initiation compared to disenriched populations in the absence of stimulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10 and C55 are supported by HIV transcriptional profiling data (Figure 6B) showing that in 7/8 cases, enriched populations initiated more HIV transcription than disenriched populations. This suggests the transcriptionally active reservoir associates with the replication-competent reservoir.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C11",
+      "C57",
+      "C61",
+      "C62"
+    ],
+    "result": "Enriched populations display clonal expansion with higher proportions of expanded identical sequences (EIS) containing intact p24, including two major expansions of fully-intact proviruses in PID5003.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11 and C57-C62 are supported by FLIPS data showing EIS with intact p24 were preferentially present in enriched populations (Figure 6\u2014figure supplement 3). In PID5003, 66.7% of EIS in the enriched population were fully intact versus 0% in the disenriched population, with phylogenetic analysis revealing two major clonal expansions (Figure 6E).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C63",
+      "C64"
+    ],
+    "result": "A universal sorting panel enriches for the replication-competent reservoir in untested donors, validating that TIGIT is not a universally shared marker of latent cells across donors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63 and C64 are supported by viral outgrowth assay data from four new donors (Figure 6F) showing robust outgrowth in enriched but not disenriched populations. The variable enrichment in TIGIThigh versus TIGITmed/low populations across donors validates that TIGIT is not a universal marker.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C1",
+      "C12",
+      "C13"
+    ],
+    "result": "The latent HIV reservoir is a major barrier to cure, persists for decades in CD4+ T cells despite ART suppression, and cannot be eliminated by current antiretroviral therapy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C12, and C13 represent well-established knowledge in HIV research supported by foundational citations (Chun et al., 1997; Finzi et al., 1997; Wong et al., 1997). These are background claims establishing the scientific context for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C2",
+      "C14",
+      "C22"
+    ],
+    "result": "Current limitations in the field include the inability to directly phenotype latently infected cells due to the lack of a universal surface biomarker and the absence of methodology to assess phenotypes of individual latent cells in their dormant state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C14, and C22 accurately describe the current state of the field and the gap that this study addresses. These are well-established limitations supported by the literature and provide justification for the PP-SLIDE approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "Prior studies have established that most infected cells harbor defective genomes, qVOA has not found significant differences in replication-competent HIV among Tcm/Tem/Ttm subsets, but proviral sequencing has identified Th1 and Tem (especially HLADR+) as preferentially harboring intact genomes, with clonal expansion playing a major role in reservoir maintenance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C19 accurately summarize prior work in the field, supported by appropriate citations. These claims establish the scientific context and prior knowledge that motivates the current study's approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C20",
+      "C21"
+    ],
+    "result": "Current methods for phenotyping reservoir cells require ex vivo stimulation, which induces phenotypic changes associated with T cell activation and HIV-mediated cell remodeling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20 and C21 accurately describe limitations of current methods, supported by citations (Baxter et al., 2016; Cohn et al., 2018; Pardons et al., 2019; Cavrois et al., 2017; Ma et al., 2020). This establishes the rationale for developing PP-SLIDE.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C24"
+    ],
+    "result": "The mean frequency of reactivated cells in the four blood specimens analyzed was 11.3 per million memory CD4+ T cells (range 5.6-17.6).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C24 is a direct measurement from CyTOF data reported in the text and Figure 2B. This is a straightforward descriptive statistic of the experimental results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C65",
+      "C66"
+    ],
+    "result": "On average only 2-3% of sequences from chronically infected individuals on ART are intact, and the frequency of intact provirus in Tem ranges from 1-26 per million (median 13 per million).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65 and C66 cite prior proviral sequencing studies (Bruner et al., 2016; Hiener et al., 2017) to provide context for the remarkably high frequencies observed in the enriched PID5003 population (214 per million). These are accurate citations of prior work used for comparison.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C67"
+    ],
+    "result": "Blood, lymph nodes, and gut are the major sources of HIV dissemination in ART-suppressed individuals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C67 cites a recent study (Chaillon et al., 2020) to support the relevance of the compartments analyzed in this study. This is an accurate citation used to justify the study's focus on these anatomical sites.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C68"
+    ],
+    "result": "The IUPM from gut specimen PID1223 was 0.265 (95% CI: 0.0216-1.400) as measured by DEVO assay.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C68 reports a direct measurement from the DEVO assay conducted on one gut specimen. This is a straightforward descriptive result demonstrating the presence of replication-competent virus in gut tissue.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C69",
+      "C70"
+    ],
+    "result": "PMA/ionomycin stimulation of T cells for 2 days does not induce proliferation, with proliferation beginning on day 3 post-stimulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69 and C70 are supported by CFSE dilution assay data (Figure 2\u2014figure supplement 2B). This validates the 40-hour stimulation protocol used in the study, ensuring that observed effects are not confounded by cellular proliferation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C71"
+    ],
+    "result": "A combination cocktail of ART fully suppresses HIV infection in vitro.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C71 is supported by in vitro infection assay data (Figure 2\u2014figure supplement 2A). This validates that the ART cocktail used during stimulation experiments effectively prevents viral spreading, ensuring that observed reactivation events represent true latent cell reactivation.",
+    "result_type": "MINOR"
+  }
+]

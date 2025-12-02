@@ -1,0 +1,311 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C8",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C138",
+      "C139",
+      "C140"
+    ],
+    "result": "The authors established and extended a long-term RNA replication experiment using an artificial host RNA and reconstituted E. coli translation system in water-in-oil droplets. The system was run for 120 rounds (600 hr) total, starting from a previous 43-round experiment, with parasitic RNAs spontaneously emerging through deletion of the replicase gene. The experimental setup involved ~2\u00d710^9 droplets of ~2 \u03bcm diameter per round, with error-prone Q\u03b2 replicase (mutation rate ~1.0\u00d710^-5 per base) driving evolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C30 and C138-C140 collectively describe a well-documented experimental system with clear methodology, appropriate controls, and reproducible conditions. The extension from 43 to 120 rounds is explicitly stated, the system components are well-characterized from prior work, and key parameters (droplet size, number, mutation rate) are quantified with appropriate citations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Population dynamics showed three distinct phases: early regular oscillations (rounds 1-35) with parasite-\u03b1 dominance, middle stage (rounds 35-75) with increased host concentration and irregular oscillations attributed to evolved resistance mutations, and later stage (rounds 95-116) with appearance of new parasite classes (parasite-\u03b2 and parasite-\u03b3). Host RNA was quantified by RT-qPCR while parasitic RNAs were measured by gel electrophoresis band intensity, with some rounds showing parasite concentrations below detection limits (~30 nM).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C44 describe population dynamics supported by appropriate measurement methods (RT-qPCR for host, gel electrophoresis for parasites) with acknowledged detection limits. The three-phase pattern is clearly documented in Figure 2A, and the mechanistic interpretations (C38, C39, C40) are supported by previous experimental work (Bansho et al., 2016). The methodological limitation (C33) regarding RT-qPCR specificity is appropriately acknowledged.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Deep sequencing of 17 timepoints revealed four major RNA classes with distinct sizes: host (~2040 nt), parasite-\u03b1 (~220 nt), parasite-\u03b2 (~1070 nt), and parasite-\u03b3 (~510 nt). All parasitic classes shared high similarity with host RNA but lacked portions of the replicase gene, with parasite-\u03b2 and parasite-\u03b3 retaining part of the M-site recognition sequence. Analysis identified 74 dominant mutations (60 substitutions, 4 insertions, 10 deletions) present in >10% of populations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C55 describe comprehensive sequencing analysis with appropriate depth (365-4143 PacBio reads, ~5000 MiSeq reads per round). The structural characterization of RNA classes is consistent with gel electrophoresis data (Figure 2\u2014figure supplement 1), and the retention of M-site sequences in parasite-\u03b2 and parasite-\u03b3 is supported by established knowledge of Q\u03b2 replicase recognition sites (Meyer et al., 1981; Schuppli et al., 1998). The 10% frequency threshold for dominant mutations is reasonable for population-level analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Host RNA genotypes progressively diverged from the original Host-0, showing initial diversification (rounds 0-43), movement toward upper-right branches (until round 72), shift to left branch (round 86-99), and return to right branch (round 104-115). Parasite-\u03b1 formed a distinct cluster with 18 unique mutations not found in host sequences, maintained its own lineage throughout the experiment, and showed no clear directional evolution, though some new parasite-\u03b1 genotypes arose from evolved hosts via deletion events.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C68 describe evolutionary trajectories supported by principal coordinate analysis (Figures 2C-D, Figure 3) and phylogenetic analysis (Figure 2\u2014figure supplement 4). The identification of 18 unique parasite-\u03b1 mutations (C65) is documented in Figure 2\u2014figure supplement 3, and the inference of independent parasite-\u03b1 evolution (C66, C67) is well-supported by the persistence of these unique mutations and distinct clustering patterns. The example of de novo parasite-\u03b1 generation in round 94 (C68) provides direct evidence for ongoing deletion events.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Parasite-\u03b2 and parasite-\u03b3 formed distinct clusters with genotypes closely related within each class (one Hamming distance apart). Sequences of some parasite-\u03b2 and parasite-\u03b3 perfectly matched coexisting host RNAs, suggesting origin from hosts, with only 2 and 1 unique mutations respectively. Phylogenetic analysis revealed two major branches: branch P (most parasite-\u03b1) and branch H (all other RNAs), with branch H subdividing into H1 (parasite-\u03b2 and Host-99 lineage) and H2 (parasite-\u03b3 and Host-115 lineage). Early parasite-\u03b1 (round 13) were already distributed across sub-branches, indicating rapid early fixation of characteristic mutations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C78 describe phylogenetic relationships supported by maximum likelihood analysis (Figure 2\u2014figure supplement 4) and sequence matching data (Figure 2E). The perfect sequence matches between some parasites and hosts (C71) provide direct evidence for recent origin from evolved hosts, contrasting with parasite-\u03b1's independent evolution. The phylogenetic structure clearly supports two host lineages (C76), and the early distribution of parasite-\u03b1 across sub-branches (C77, C78) is consistent with rapid early adaptation followed by neutral drift.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Competitive replication assays using representative clones (Host-0, Host-99, Host-115 and Parasite-\u03b113, Parasite-\u03b299, Parasite-\u03b3115) demonstrated successive counter-adaptive evolution. Host-0 was severely inhibited by Parasite-\u03b113 (~200-fold parasite replication vs <2-fold host), while Host-99 showed resistance to Parasite-\u03b113 (~700-fold host replication, negligible parasite). Parasite-\u03b299 acquired ability to co-replicate with Host-99 (~20-fold), but Host-115 suppressed Parasite-\u03b299 (<2-fold) while allowing Parasite-\u03b3115 co-replication (~20-fold). Parasite-\u03b2 and parasite-\u03b3 showed host-specific parasitism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C91 describe competitive replication assays with clear quantitative results (Figure 4A) showing evolutionary arms-race dynamics. The experimental design appropriately tests sequential host-parasite pairs in order of appearance, with sequence-specific RT-qPCR enabling accurate quantification. The pattern of alternating resistance and susceptibility (C89) is well-supported by the data, and the host-specificity of parasite-\u03b2 and parasite-\u03b3 (C91) is confirmed by additional control experiments (Figure 4\u2014figure supplement 1). Error bars indicate appropriate replication (n=3).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145"
+    ],
+    "result": "The study demonstrated emergence of a host-parasite ecosystem from a single clonal host RNA population, with host and parasitic RNAs diversifying into at least two and three lineages respectively and exhibiting evolutionary arms-race dynamics. Host RNA showed continuous evolution and divergence into distinct branches, contrasting with previous unidirectional evolution without parasites. Parasitic RNAs accumulated unique mutations, adding genetic variation to the ensemble. The diverged hosts (Host-99 and Host-115) had very different mutational patterns, suggesting parasites with different phenotypes promoted evolution of different host strategies. The authors claim this provides first experimental evidence for host-parasite coevolution driving diversity and complexity in prebiotic molecular evolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C100 and C141-C145 synthesize the major findings, which are well-supported by the population dynamics (C35-C44), sequence analysis (C56-C78), and competitive assays (C79-C91). The diversification into multiple lineages is clearly documented, and the arms-race dynamics are experimentally validated. The contrast with previous work (C95) is appropriately cited. However, the extension to 'prebiotic molecular evolution' (C101, C145) is speculative, as this is an artificial system with modern biochemical components. The claim of 'first experimental evidence' (C145) may be overstated given prior in vitro evolution studies, though this may be the first with such detailed coevolutionary tracking.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "Detailed mutational dynamics revealed parasite-\u03b1 rapidly accumulated 7 mutations by round 13 (6 unique, 5 persisting to round 115), while host adaptive evolution first appeared in round 39 with resistance mutations (Lys208Asp, Leu448Arg, Gln459Arg). Between rounds 50-72, both host and parasitic RNAs showed fluctuating mutations suggesting coevolutionary events. From round 86, host accumulated 11 mutations converging toward Host-99 lineage, but these disappeared by round 104 coincident with parasite-\u03b2 rise, replaced by 8 new mutations moving toward Host-115 lineage. Parasite-\u03b1 genotype also changed drastically in round 104, and new mutations appeared/disappeared upon parasite-\u03b3 invasion in round 115.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C115 describe detailed mutational dynamics supported by comprehensive sequence data (Figure 2\u2014figure supplement 3, Figure 3). The early fixation of parasite-\u03b1 mutations (C102, C103) is well-documented, and the timing of host adaptive evolution (C105) correlates with population dynamics (Figure 2A). The previously characterized resistance mutations (C106) are appropriately cited (Bansho et al., 2016). The rapid shifts in dominant mutations (C110-C114) are clearly visible in the sequence data and correlate with parasite class transitions, supporting the coevolutionary interpretation (C115).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C116"
+    ],
+    "result": "No recombination signal was detected in host and parasite sequences throughout the replication experiment using the RDP4 program.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C116 reports a negative result from recombination analysis using an appropriate computational tool (RDP4, Martin et al., 2015). This is an important control given that recombination could be an alternative explanation for some observed sequence patterns. The negative result suggests that the observed evolutionary dynamics are primarily driven by point mutations and deletions rather than recombination, though the sensitivity of the analysis is not discussed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C117",
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "Parasite-\u03b1 accumulated 9 dominant mutations in the 3'-UTR region where host RNA never accumulated dominant mutations, suggesting severe mutational constraints on host 3'-UTR (likely due to translation efficiency requirements). This pattern suggests parasites with fewer mutational constraints may add genetic novelties to the molecular ensemble and potentially contribute to evolution of complexity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C117-C120 describe an interesting pattern of differential mutational constraints supported by sequence data (Figure 2\u2014figure supplement 3). The observation that parasite-\u03b1 accumulated mutations in regions where host RNA did not (C118) is well-documented. The interpretation of translational constraints on host 3'-UTR (C119) is reasonable given the requirement for efficient translation. However, the speculation about parasites contributing to complexity evolution (C120) is more tentative, though it is appropriately framed as speculative and supported by citation (Adami et al., 2000).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129"
+    ],
+    "result": "Longer parasites (parasite-\u03b2 ~1000 nt, parasite-\u03b3 ~500 nt) appeared after 94 rounds, contrasting with previous in vitro evolution experiments that favored genome reduction. These longer parasites retained part of the M-site recognition sequence absent in parasite-\u03b1. The authors propose a scenario where: (1) parasite-\u03b1 first invaded via short genome advantage, (2) host evolved replicase specificity to host sequences including M-site, and (3) new parasites invaded by retaining evolved M-sites, effectively expanding genomic information to cope with evolved host strategy. This may be consistent with theoretical predictions that host-parasite coevolution increases individual complexity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C121-C129 describe an interesting phenomenon (appearance of longer parasites) supported by sequence data (C125, C126). The retention of M-site sequences (C126) is well-documented and mechanistically plausible. However, the proposed three-step scenario (C127) is speculative and not directly tested. The scenario requires that host evolved M-site specificity (step 2), but this is inferred rather than demonstrated experimentally. The claim that parasites are 'expanding genomic information' (C128) is interpretive. While the pattern is consistent with theoretical predictions (C129), alternative explanations (e.g., M-site retention is simply necessary for any parasite to replicate with evolved hosts) are not excluded. Direct experimental validation of the proposed mechanism would strengthen this result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135"
+    ],
+    "result": "The host-parasite RNA population exhibited Red Queen dynamics with damping fluctuations. Two possible explanations are proposed: (1) elevation of average parasite resistance in evolved host population, partly supported by weakened inhibition in later rounds, or (2) increased diversity allowing competition among various types to average population dynamics. These explanations are consistent with observations in natural systems (Daphnia-parasite) and theoretical predictions regarding phenotypic divergence and mutation rate effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C130-C135 describe Red Queen dynamics with damping, which is clearly visible in Figure 2A. The two proposed explanations (C132, C133) are both plausible and not mutually exclusive. The first explanation is partially supported by competitive assay data (Figure 4) showing evolved resistance, though 'average parasite resistance' across the population is not directly measured. The second explanation regarding diversity is supported by the documented increase in genotypic diversity (Figures 2C-E, Figure 3). The comparison with natural systems (C134) and theoretical predictions (C135) appropriately contextualizes the findings, though these remain correlative rather than mechanistic explanations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "The introduction establishes that host-parasite coevolution is central to biological evolution, with parasitic replicators being highly prosperous entities that have driven development of adaptive immunity and likely functioned as evolutionary drivers since prebiotic times. Parasites inevitably appear in simple replication systems and threaten sustainability, but compartmentalization strategies allow host survival by limiting parasite propagation, as demonstrated by theoretical and experimental studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C7 provide background context supported by extensive citations to established literature. These claims accurately represent current understanding in the field, with appropriate citations for each assertion. The claims about prebiotic evolution (C4) are appropriately qualified as 'probably' and supported by relevant theoretical work. The progression from theoretical predictions (C6) to experimental validation (C7) is well-documented in the cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "Previous work established that parasitic RNA spontaneously appears during replication and that host and parasitic RNAs showed oscillating population dynamics with host acquiring parasite-resistance by round 43, but counter-adaptive evolution of parasitic RNA was not observed in that 43-round experiment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C12 accurately describe previous experimental findings from the authors' prior work, providing appropriate context for the current extended study. The absence of observed counter-adaptive parasite evolution (C12) in the shorter experiment motivates the current 120-round extension. These claims are appropriately supported by citations to the authors' previous publications.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C136",
+      "C137"
+    ],
+    "result": "The authors suggest their host-parasite RNA replication system may offer a useful platform to investigate ecological and evolutionary dynamics and pursue evolution scenarios such as emergence of cooperation between host-parasite replicators.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C136-C137 are forward-looking statements about potential applications of the system. These are appropriately framed as speculative ('may offer') and represent reasonable extensions of the demonstrated capabilities. The system has indeed proven capable of tracking complex evolutionary dynamics, supporting its potential utility for future studies. However, these are prospective claims rather than demonstrated results.",
+    "result_type": "MINOR"
+  }
+]

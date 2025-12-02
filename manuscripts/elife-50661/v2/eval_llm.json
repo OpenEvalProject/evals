@@ -1,0 +1,273 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "The manuscript provides background on RCK domains as regulatory domains of K+ channels and transporters in eukaryotes and prokaryotes. While mechanisms of Ca2+-dependent activation in BK and MthK channels are well understood, the molecular details of nucleotide-dependent RCK domain activation remain unclear, establishing the knowledge gap this study addresses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C33 establish well-documented background knowledge about RCK domains, supported by extensive citations to prior literature. The claims accurately describe the state of knowledge regarding cation-dependent RCK domains (particularly BK and MthK) while identifying the gap in understanding nucleotide-dependent mechanisms, which provides appropriate context for the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "ATP binding to KtrA induces a square conformation of the octameric ring with increased K+ flux, while ADP binding results in a non-square conformation with decreased flux. This conformational change involves alterations in the intra-dimer hinge angle that brings nucleotide-binding sites closer together, though the precise mechanism of ATP-induced activation remained unclear prior to this study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C43 describe established structural and functional properties of KtrA from prior work (supported by citations and Figure 1), providing the foundation for investigating the activation mechanism. The structural observations of conformational changes and the hypothesis about R16's role (C43) set up the experimental questions addressed in subsequent results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Complementation assays in E. coli TK2420 demonstrate that wild-type KtrAB rescues growth at 1 mM K+, while mutations A80P and E125Q abolish this rescue despite maintaining octamer assembly and KtrB binding. Surprisingly, R16 mutations (R16K, R16A) had no impact on the growth phenotype, contradicting predictions about R16's role in activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C50 present functional data from complementation assays (Figure 2) and biochemical characterization (Figure 2\u2014figure supplement 1). The data clearly show differential effects of mutations, with appropriate controls (empty vector, wild-type). The unexpected result regarding R16 mutations is particularly important as it refutes the prior hypothesis (C43) and redirects focus to E125 and A80.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Crystal structures reveal that functional KtrA mutants (R16K, R16A) with ATP adopt square conformations similar to wild-type, while non-functional mutants (A80P, E125Q) fail to adopt square conformations with ATP. This establishes that KtrAB activation requires adoption of a stable square conformation and identifies A80 and E125 as crucial residues for this conformational change.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C59 present structural data from multiple crystal structures (Table 1, Figure 3) showing clear correlation between square conformation adoption and functional activity. The L1/L2 distance measurements provide quantitative support. The structures are at reasonable resolutions (2.7-4.3 \u00c5) and the conclusions about structure-function relationships are well-supported by the combined structural and functional data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C60"
+    ],
+    "result": "The A80P mutation causes main-chain distortion that alters ATP position, preventing adoption of the square conformation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C60 is supported by electron density analysis (Figure 4) showing P80 positioned outside the density maps in all eight subunits. While the low resolution limits detailed interpretation, the consistent observation across all subunits and the clear steric conflict with ATP provide reasonable support for this mechanistic explanation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Crystal structures reveal a magnesium ion at the intra-dimer interface of ATP-bound KtrA, coordinated by E125 residues and \u03b3-phosphates from both ATP molecules in octahedral geometry. This divalent cation bridges the two ATP molecules, stabilizing the square conformation. The E125Q mutation likely disrupts this coordination, explaining the loss of function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C73 present the key structural discovery supported by high-quality crystallographic data (2.7 \u00c5 R16K structure, Figure 5). The octahedral coordination geometry and distances are consistent with Mg2+ binding. Re-analysis of the wild-type structure (PDB: 4J90) provides independent validation. The coordination chemistry is well-characterized, though some distances are longer than ideal for Mg2+. The mechanistic interpretation linking cation binding to conformational stabilization is reasonable given the structural arrangement.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Functional flux assays demonstrate that Mg2+ increases KtrAB-ATP flux rate ~10-fold compared to conditions without added divalent cation. Flux is 14-24 fold slower for KtrAB-ADP and KtrAE125QB-ATP compared to KtrAB-ATP with Mg2+, and the R16A mutant retains Mg2+-dependent activation. However, KtrAB-ATP shows residual activity without added Mg2+.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C78 present functional data from ACMA-liposome flux assays (Figure 6) with appropriate controls and replicates. The quantitative rate constants support the conclusions. The residual activity without added Mg2+ (C78) is acknowledged and later explained by K+ activation from the liposome lumen. The functional data strongly support the structural findings about the Mg2+ binding site.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "Both Ca2+ and Mg2+ activate KtrAB-ATP, with 2 mM concentrations producing similar rate constants. However, 5 mM Ca2+ causes 9-fold rate decrease, suggesting channel blocking. Crystal structure of KtrA-ATP with Ca2+ shows square conformation with calcium coordinated by E125 and ATP \u03b3-phosphates, confirming the intra-dimer site binds both divalent cations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C86 combine functional data (Figure 7a,b) with structural validation (Figure 7c,d, 3.0 \u00c5 structure). The functional data clearly show Ca2+ activation at lower concentrations and inhibition at high concentrations. The structural data confirm Ca2+ binding at the same site as Mg2+, though with unusual coordination number (4 ligands). The combined evidence strongly supports the conclusion that the site binds both divalent cations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "The monovalent cation choline activates KtrAB-ATP to levels comparable to Mg2+-activated conditions. This activation requires ATP and an intact E125 site, as KtrAE125QB-ATP and KtrAB-ADP show minimal activity with choline. Contaminating Mg2+ levels are undetectable (<2 \u03bcM), ruling out Mg2+ contamination as the explanation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C93 present surprising functional data (Figure 8) showing choline activation. The controls (E125Q mutant, ADP, KtrB alone, R16A mutant) appropriately test whether the effect is mediated through the same intra-dimer interface site. The flame ionization spectroscopy measurement (C92) rules out Mg2+ contamination. The inference that choline acts through the same site (C93) is well-supported by the mutant data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "Lithium ions also activate KtrAB-ATP in a concentration-dependent manner, with 5-20 mM Li+ increasing flux 2-5 fold over sorbitol alone. The effect is mediated by the RCK domain, as KtrAE125QB-ATP and KtrB-ATP show 12-15 fold lower rates. This suggests monovalent cations (Li+ and choline) activate KtrAB through the intra-dimer interface.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C98 extend the monovalent cation activation findings to Li+ (Figure 9). The concentration-dependence and mutant controls parallel the choline experiments. The inference that both monovalent cations act through the intra-dimer interface (C98) is reasonable given the consistent pattern with E125Q mutation abolishing activation for both cations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "Titration experiments reveal K1/2 values of 155 \u00b1 17 \u03bcM for Mg2+ (Hill coefficient 1.8) and 25 \u00b1 2 mM for choline (Hill coefficient 1.9), demonstrating that KtrAB activation is ~160-fold more sensitive to Mg2+ than choline.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C101 present quantitative binding/activation parameters from titration experiments (Figure 10). The Hill coefficients near 2 suggest cooperative binding, consistent with the dimeric binding site. The K1/2 values are well-determined with error estimates. The 160-fold difference in sensitivity is a straightforward calculation from the K1/2 values and is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "Sequence and structural analysis across multiple nucleotide-dependent RCK domain families (KtrA, TrkA, KefC, YbaL) reveals striking conservation of glutamate residues at positions equivalent to E125 in KtrA. In KtrA orthologs, 87% have the conserved glutamate with a PE motif. TrkA RCK1 shows 80% conservation of the PE motif, while KefC and YbaL show 100% conservation with RE/TE and GE motifs respectively. This suggests the cation-binding site is present in many nucleotide-dependent RCK domains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C118 present comprehensive sequence and structural conservation analysis (Figure 11 and supplements). The structural comparisons show glutamates in equivalent positions across different RCK families. The sequence alignments are appropriately curated (selecting sequences with nucleotide-binding motifs) and show high conservation percentages. The inference that this indicates a conserved cation-binding mechanism (C118) is reasonable but would benefit from functional validation in other systems.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C119",
+      "C120"
+    ],
+    "result": "In bacterial cells, the active KtrAB conformation likely involves Mg2+ rather than Ca2+ as the cofactor, given that free Mg2+ concentration (~2 mM) is 13-fold higher than the K1/2 for activation, while free Ca2+ is only 100-300 nM. Additionally, cytosolic K+ concentrations (300-700 mM in B. subtilis) are sufficient to contribute to KtrAB activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C119-C120 make reasonable physiological inferences based on known intracellular ion concentrations (supported by citations) and the measured K1/2 values. The logic is sound: Mg2+ is abundant and above the activation threshold, while Ca2+ is too low. The inference about K+ contribution is reasonable given the high intracellular concentrations, though the K1/2 for K+ was not directly measured.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C121",
+      "C122"
+    ],
+    "result": "Comparison of multiple KtrA structures reveals a single well-defined square/active conformation with low structural variability (RMSD 0.56-0.83 \u00c5), while non-square conformations show high structural variability, suggesting the inactive ring is more flexible.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C121-C122 are supported by structural comparisons across multiple crystal structures (Figure 3\u2014figure supplement 1, Supplementary files 2-3). The low RMSD values for square conformations and the clustering of non-square conformations into four different groups provide quantitative support. The inference about flexibility is reasonable given the structural variability, though direct dynamics measurements would strengthen this conclusion.",
+    "result_type": "MINOR"
+  }
+]

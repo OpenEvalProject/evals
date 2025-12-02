@@ -1,0 +1,289 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C62",
+      "C63"
+    ],
+    "result": "RBM can efficiently model protein families from sequence information, as demonstrated by application to 20 protein families with dReLU potentials outperforming quadratic and Bernoulli potentials in cross-validation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1 and C2 establish the scope of the study across 20 families. C62 describes proper cross-validation methodology (80/20 train/test split), and C63 demonstrates that dReLU potentials consistently outperform alternatives. Together, these claims provide strong evidence for the modeling capability of RBM.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "RBM infers biologically interpretable structural features for the Kunitz domain, including tertiary contacts and functional motifs related to protease inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "C3 makes the general claim about structural features. C20 interprets hidden unit 4 as separating trypsin inhibitory activity, supported by C21 (cited experimental mutation data) and C22 (phylogenetic clustering of Bikunin sequences). The combination of computational inference and literature validation provides strong support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C26",
+      "C30"
+    ],
+    "result": "RBM identifies functional features in the WW domain related to ligand binding specificity, distinguishing Type I, II/III, and IV domains based on binding preferences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "C4 claims functional interpretation capability. C26 establishes the known classification of WW domains by binding specificity. C30 notes that Type II and III are not clearly distinguished by RBM, which is an honest limitation. The results show RBM can capture known functional distinctions, though not perfectly.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "RBM captures functionally important structural variation in Hsp70 loop length that distinguishes prokaryotic DNaK from eukaryotic Hsp70 and HscA, consistent with known differences in nucleotide exchange factor specificity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "C37 and C38 describe the RBM finding of loop length variation. C39 connects this to previously reported structural differences with functional importance, supported by citations. The convergence of RBM inference with established literature provides strong validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C44"
+    ],
+    "result": "RBM extracts inter-domain collective modes in Hsp70 that capture allosteric coupling between domains, with seven positions in Weight 3 matching previously identified allosteric sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "C41 and C42 describe inter-domain coevolution patterns captured by RBM. C44 provides experimental validation by showing overlap with 7 of 21 previously identified allosteric sites. The partial overlap (7/21) is reasonable given the complexity of allostery and provides meaningful validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C5",
+      "C46",
+      "C48",
+      "C50",
+      "C51"
+    ],
+    "result": "RBM can design novel protein sequences with desired properties through conditional sampling, including combinations of features not found in natural sequences, with designed sequences having comparable or higher probabilities than natural sequences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C5, C46, C48, C50, and C51 describe the sequence design capability and show computational evidence (probabilities, distances). However, C95 explicitly acknowledges that experimental validation is needed. Without experimental testing of designed sequences, the functional capability remains unvalidated despite promising computational metrics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C55"
+    ],
+    "result": "RBM-derived effective pairwise interactions enable contact prediction with quality comparable to state-of-the-art direct coupling methods, though at substantially higher computational cost.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "C52 describes the method for deriving contacts from RBM. C53 shows comparable performance to direct coupling methods for Kunitz and WW domains (Figure 6B,C). C55 honestly reports the computational cost disadvantage. The claims are well-supported by comparative data, though the higher cost is a significant limitation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "RBM successfully models lattice proteins, capturing structural features including negative-design modes, with contact prediction performance comparable to state-of-the-art methods and ability to design diverse sequences with high fitness.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59, C60, and C61 describe RBM performance on lattice proteins where ground truth is known. This provides important benchmarking evidence. The lattice protein system allows exact fitness calculation (C61), providing validation that is not possible for real proteins. This strengthens confidence in the method.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C68",
+      "C77"
+    ],
+    "result": "Sparsity regularization drives RBM into a compositional representation regime that facilitates biological interpretation of weights.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "C68 describes the compositional regime with citation to prior work (Tubiana and Monasson, 2017). C77 states that sparsity facilitates interpretation. Figure 8 provides visual evidence of the effect of regularization strength. The claims are supported by both theoretical framework and empirical demonstration.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "RBM weights encode diverse structural and non-structural properties across 16 protein families, including pairwise contacts, secondary structure motifs, and phylogenetic clustering.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69, C70, and C71 describe the variety of features captured by RBM across multiple families. Figures 9 and 10 provide extensive visual evidence across 16 families. The breadth of examples across different protein families strengthens the generalizability of the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "RBM extends direct-coupling approaches with a simple two-layer architecture requiring 10-50 times fewer hidden units than VAE approaches, while inferring interpretable weights and enabling sequence design across proteins ranging from tens to hundreds of residues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C85 collectively describe the advantages of RBM over alternative approaches. C81 provides quantitative comparison with VAE (10-50x fewer units). C85 demonstrates scalability from WW domain (31 sites) to Hsp70 (675 sites). The claims are supported by comparative analysis and demonstrated applications.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "RBM unifies and extends previous coevolutionary analysis approaches by extracting collective modes similar to sectors from statistical coupling analysis, but with the key difference that sites can participate in multiple features depending on residue identity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "C87 makes the unification claim. C88 draws comparison to sectors with citation (Halabi et al., 2009). C89 highlights a key conceptual difference (non-disjoint modes). The claims position RBM within the existing methodological landscape and identify a specific conceptual advance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C91",
+      "C92"
+    ],
+    "result": "RBM with high-order interactions outperforms pairwise models (Hopfield-Potts framework) in describing gap modes, long-range couplings, and outlier sequences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "C91 describes advantages over pairwise models with citation and reference to supplementary data. C92 claims superiority over Hopfield-Potts with citation and supplementary evidence. The claims are supported by comparative analysis, though the supplementary data is not fully visible in the main text.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C93"
+    ],
+    "result": "The inferred RBM weights are stable with respect to subsampling of the training data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "C93 claims stability with reference to Appendix 1-figure 13. This is an important validation of the robustness of the inferred features. The claim is supported by supplementary analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C94",
+      "C95"
+    ],
+    "result": "Some inferred features lack clear biological interpretation and the sequence design capability requires experimental validation beyond computational benchmarking.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "C94 and C95 honestly acknowledge limitations of the work. C94 notes unclear biological significance of some features. C95 explicitly states need for experimental validation of designed sequences. These are appropriate acknowledgments of the boundaries of the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "RBM innovates over traditional protein design by learning non-contiguous sequence parts rather than cutting at fixed positions, with potential to guide computational modeling methods like Rosetta.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "C96 describes traditional approaches with citations. C97 highlights the RBM innovation. C98 speculates about future integration with Rosetta. While the conceptual innovation is clear, C98 is explicitly speculative and lacks supporting evidence. The potential remains undemonstrated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "Background context on protein sequence databases, evolutionary relationships, and existing coevolutionary methods including maximum-entropy approaches and RBM properties.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C10 provide background knowledge and context, all supported by appropriate citations. These establish the scientific foundation and motivation for the work. The claims accurately represent the state of the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C11",
+      "C13",
+      "C14",
+      "C23",
+      "C25",
+      "C26",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Background biological information on the Kunitz domain, WW domain, and Hsp70 protein families studied in this work.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11, C13, C14, C23, C25, C26, C31-C34 provide established biological knowledge about the protein families studied, supported by citations and general knowledge. These claims accurately describe the biological systems and provide necessary context for interpreting results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C79"
+    ],
+    "result": "Training RBM requires intensive sampling despite algorithmic improvements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "C79 acknowledges a computational limitation of the method. This is an honest assessment of the practical challenges. The claim is consistent with C55 which notes substantially higher computational cost than plmDCA.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C101"
+    ],
+    "result": "Python 2.7 code for training and visualizing RBMs is publicly available on GitHub.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "C101 provides specific information about code availability with URL. This supports reproducibility of the work. The claim is verifiable and represents good scientific practice.",
+    "result_type": "MINOR"
+  }
+]

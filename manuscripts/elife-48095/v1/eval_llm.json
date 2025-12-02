@@ -1,0 +1,247 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C95"
+    ],
+    "result": "The 3D spheroid model with VEGF-A stimulation for 18 hours induces a tip cell phenotype in endothelial cells, characterized by upregulation of tip markers, downregulation of stalk markers, and enrichment of pathways related to migration and extracellular matrix remodeling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C29 and C95 collectively demonstrate that the spheroid model successfully recapitulates tip cell specification. The data show differential gene expression (C21), validation of VEGFR2 upregulation (C22), tip/stalk marker expression patterns (C23), immunofluorescence confirmation (C24), Notch pathway manipulation effects (C25-C26), and GSEA enrichment of relevant pathways (C27-C29). The model's specificity for the early phase of VEGF-A response is appropriately acknowledged (C95).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "In the 3D spheroid model, early VEGF-A response (18 hours) does not activate cell proliferation but instead promotes cell migration, as evidenced by downregulation of cell cycle genes, reduced nucleotide synthesis enzyme activity, and lack of EdU incorporation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C45 provide converging evidence that VEGF-A in 3D conditions primarily drives migration rather than proliferation. Multiple independent measures support this: GSEA showing negative enrichment of cell cycle genes (C30), differential expression analysis (C31-C33), nucleotide metabolism pathway analysis (C34-C36), PCR validation (C37-C38), enzymatic activity measurements (C39-C40), EdU incorporation assays (C41-C42), and mitomycin C experiments (C44). The contrast with 2D culture (C40, C43) strengthens the context-dependency argument.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "A global post-transcriptional regulatory network was constructed comprising 149 miRNAs and 717 protein-coding genes with 1713 edges, organized into two major components with opposite regulatory patterns (upregulated miRNAs with downregulated targets and vice versa).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C52 describe the network construction and validation. The enrichment of negative correlations for conserved miRNA-target interactions (C47) provides biological validation, while the power-law degree distribution (C52) confirms scale-free network properties typical of biological systems. The bioinformatics pipeline integrating expression correlation with target prediction is methodologically sound, and the identification of two distinct regulatory modules (C51) is clearly demonstrated in Figure 4.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "The ERK signaling module (RAF1, MAP2K1, MAPK1) is coordinately downregulated by multiple miRNAs during sprouting angiogenesis, resulting in decreased ERK activity, while p38MAPK activity is required for sprouting.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C60 demonstrate miRNA-mediated regulation of MAPK signaling. The MAPK sub-network analysis (C53-C55), PCR validation (C56-C57), and direct ERK activity measurements (C58) provide strong evidence. The pharmacological inhibitor experiments (C59-C60) functionally validate that ERK activity is dispensable while p38MAPK is essential for sprouting, consistent with the tip cell phenotype lacking proliferation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "DICER knockdown rescues VEGF-A-induced proliferation in 3D spheroids by upregulating MAPK pathway genes and increasing ERK activity, demonstrating that miRNAs suppress the proliferative response to VEGF-A in the 3D context.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C67 provide system-level validation of miRNA function. DICER knockdown reduces sprouting (C61), upregulates MAPK genes (C62), increases P-ERK (C63), sensitizes cells to ERK inhibition (C64), increases cell cycle gene expression (C65), and restores proliferation (C66). The context-dependency is demonstrated by opposite effects in 2D culture (C67). This loss-of-function approach complements the network predictions and validates the global regulatory role of miRNAs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C86",
+      "C87"
+    ],
+    "result": "miR-424-5p and miR-29a-3p function as hub miRNAs in the sprouting angiogenesis network, with miR-424-5p targeting cell cycle and MAPK pathway genes and miR-29a-3p targeting extracellular matrix remodeling genes; both gain- and loss-of-function impair sprouting.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C82, C86-C87 validate two hub miRNAs through multiple approaches. Network analysis identifies their targets (C68-C69), which are validated against experimental databases (C70-C71) and by PCR (C72). Notch pathway manipulation appropriately modulates their expression (C73-C76). The non-linear dose-response (both overexpression and inhibition impair sprouting, C77-C78) suggests optimal expression levels are required. Negative control with miR-16-5p (C79) and target gene validation (C86-C87) strengthen specificity. The P-ERK modulation by miR-424-5p but not miR-29a-3p (C81-C82) is consistent with network predictions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "In 2D culture, miR-424-5p mimic reduces proliferation and promotes migration, while miR-29a-3p mimic inhibits migration, demonstrating context-dependent and pathway-specific effects of these miRNAs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C85 demonstrate that miRNA functions differ between 2D and 3D contexts. The 2D proliferation assay (C83) and migration assays (C84-C85) show pathway-specific effects consistent with the predicted target genes. However, the asymmetric effects of mimics versus inhibitors noted in the manuscript suggest additional complexity in the regulatory network.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C109",
+      "C110"
+    ],
+    "result": "Perturbation of hub miRNAs miR-424-5p and miR-29a-3p causes widespread network rewiring, with 76 miRNAs showing altered expression, including 27 miRNAs that share target genes with the perturbed miRNAs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C89 and C109-C110 demonstrate higher-order network effects using TaqMan array profiling. The observation that modulating single miRNAs affects many other miRNAs (C88-C89, C109) explains the asymmetric effects of mimics versus inhibitors and supports the concept of network robustness through redundancy (C110). This provides mechanistic insight into why single miRNA inhibition may not fully de-repress all predicted targets.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "The upregulated gene module from the sprouting angiogenesis network, including miR-29a-3p targets, correlates with endothelial score in colorectal cancer samples and identifies a 58-gene core signature that predicts bevacizumab response.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C94 translate in vitro findings to clinical relevance. GSEA analysis shows enrichment of miR-29a-3p targets (C90) and the upregulated module (C92) in high-angiogenesis CRC samples, with significant correlation (C91). The identification of a 58-gene core signature (C93) that predicts bevacizumab response (C94) provides potential clinical utility. However, the analysis is correlative and would benefit from validation in independent cohorts and mechanistic studies linking the signature to anti-angiogenic response.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C97",
+      "C98",
+      "C113"
+    ],
+    "result": "A miRNA regulatory network coordinates the temporal separation of endothelial cell migration and proliferation during sprouting angiogenesis by suppressing cell cycle genes while de-repressing migration and extracellular matrix remodeling genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C5 and C97-C98, C113 represent the overarching conclusions of the study. The network analysis (C2-C3) and functional validation (C4) support the model that miRNAs coordinate the tip cell phenotype (C97-C98). The clinical relevance (C5) adds translational value. These summary claims are well-supported by the comprehensive experimental evidence presented throughout the manuscript, integrating transcriptomics, network analysis, functional validation, and clinical correlation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C96",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C111",
+      "C112"
+    ],
+    "result": "Background knowledge claims about angiogenesis, miRNA biology, and prior studies establish the context for the current work.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C19, C96, C99-C107, C111-C112 represent established knowledge from the literature, appropriately cited. These provide necessary context for interpreting the novel findings. The citations appear accurate and relevant to the claims made.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C103",
+      "C108"
+    ],
+    "result": "The study demonstrates that miRNA-mediated inhibition of cell proliferation benefits tip cell selection and migration in 3D culture, contrasting with 2D culture effects, and that single miRNAs can target multiple genes in the same pathway to reinforce biological effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103 and C108 represent important mechanistic insights. The comparison between 2D and 3D DICER knockdown effects (C103) demonstrates context-dependency of miRNA function. The observation that single miRNAs target multiple pathway components (C108) is supported by the network analysis showing convergent regulation. These claims integrate multiple experimental observations into coherent mechanistic models.",
+    "result_type": "MAJOR"
+  }
+]

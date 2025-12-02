@@ -1,0 +1,327 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C29",
+      "C91",
+      "C92"
+    ],
+    "result": "The LP neuron burst phase is relatively constant across a >2-fold variation in network period, but falls between constant phase and constant latency when period is manipulated experimentally. The measured LP phase was \u03c6LP=0.34 \u00b1 0.03 (N=9), and when period was changed by voltage-clamping pacemakers, phase maintenance was not perfect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C29, C91, and C92 provide converging experimental evidence from Figure 1 showing that LP phase is relatively stable but not perfectly maintained when period changes. The quantitative measurement (C29) and experimental observations (C91, C92) are consistent with the main claim (C3).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C79"
+    ],
+    "result": "Noise current injection experiments revealed that LP neuron burst timing depends strongly on input timing characteristics. Larger inter-burst intervals (IBIs) corresponded to larger peak current amplitudes (p<0.001), more advanced peak phase (p<0.001), and decreased upslope (p<0.001), with all parameters showing significant effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C37 provide detailed statistical evidence from burst-triggered averaging experiments (Figure 2) with appropriate p-values and effect sizes. Claim C79 summarizes the overall conclusion. The experimental design and statistical analysis appear sound with N=23 preparations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Dynamic clamp experiments with realistic synaptic waveforms showed that for fixed gmax, LP phase decreased with increasing period (phase advanced in slower rhythms), while for fixed period, phase increased sublinearly with gmax. LP intrinsic properties alone do not produce phase constancy, but phase could be maintained if gmax increases with period.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C44 describe systematic dynamic clamp experiments (Figure 3) with clear experimental observations and logical inferences. The conclusion that intrinsic properties alone are insufficient (C43) is well-supported by the data showing phase decreases with period at constant gmax (C40).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C4",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Phase constancy across periods required proportional increase of synaptic duration with period. When gmax and \u0394peak were constant, \u03c6LP decreased significantly with period for both constant duration (C-Dur: p<0.001, F=466.424) and constant duty cycle (C-DC: p<0.001, F=100.677) conditions, with larger decreases in C-Dur. \u03c6LP changed substantially with period for constant duration inputs but much less for constant duty cycle inputs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C46-C49, C80-C82 provide converging evidence from systematic dynamic clamp experiments (Figure 6) with appropriate statistical tests (three-way ANOVA). The comparison between C-Dur and C-DC conditions is well-controlled and the statistical significance is clearly reported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C5",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C84",
+      "C85"
+    ],
+    "result": "Phase maintenance was promoted by increases in synaptic amplitude (gmax) and peak phase (\u0394peak) with period. Increasing gmax produced significant but small to moderate increases in \u03c6LP (p<0.001, F=10.798), while increasing \u0394peak produced small but significant increases (p<0.001, F=17.172). All three parameters (P, gmax, \u0394peak) influence \u03c6LP, with period having the strongest effect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C50-C55, C84-C85 describe systematic exploration of synaptic parameters (Figure 6) with appropriate statistical analysis. The relative magnitudes of effects are clearly characterized, with period having the dominant effect while gmax and \u0394peak have modest positive effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Sensitivity analysis revealed that \u03c6LP had similar positive sensitivity to both gmax and \u0394peak, with larger sensitivity at lower period values (p<0.001, F=16.054). The sensitivity was largest when both parameters increased together (p<0.001 for both C-DC and C-Dur), enabling phase constancy over a wide range of periods by coordinated increases in both parameters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C59, C86-C88 describe sensitivity analysis (Figure 7) with appropriate statistical tests. The finding that combined changes in gmax and \u0394peak have the largest effect is well-supported by the data and represents a key mechanistic insight.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "The LP neuron could not achieve phases below 0.3 in the C-DC case because it never fired during inhibition (duty cycle = 0.3). The range of periods for which phase could be maintained by varying gmax and \u0394peak was much larger for C-DC compared to C-Dur inputs for phase values between 0.31 and 0.54.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C62 describe level set analysis (Figure 8) with clear mechanistic explanation for the lower phase limit in C-DC. The comparison between C-DC and C-Dur conditions is well-supported by the data and represents an important finding about the conditions favoring phase maintenance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C6",
+      "C63",
+      "C64",
+      "C65",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "Mathematical analysis (Equations 7-8) showed that in C-Dur, \u03c6LP decays like 1/P, while in C-DC, \u03c6LP approaches \u0394peak\u00b7DC. Phase constancy can be achieved by varying either gmax or \u0394peak, but coordinated increases in both (as occurs with short-term synaptic depression) greatly expand the range of periods for phase constancy. The model provides mechanistic explanations and quantitative predictions matching experimental results.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C63-C65, C67-C70, C98-C102 describe mathematical modeling (Figure 9, Equations 7-16) that provides mechanistic insight. The model predictions match experimental observations (C100) and the mathematical derivations appear sound. The key insight about coordinated changes is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C26",
+      "C66",
+      "C89"
+    ],
+    "result": "Prior theoretical studies predicted that short-term synaptic depression promotes phase maintenance by increasing inhibition strength with period, particularly with A-type potassium currents. These predictions remained experimentally untested. The current findings that gmax increases with period promote phase constancy are biologically relevant because short-term depression in pyloric synapses causes synaptic strength to increase with period.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C24, C26, C66, C89 connect prior theoretical predictions to current experimental findings. The gap in knowledge (C26) is clearly stated, and the biological relevance (C89) is well-supported by citations to prior work on synaptic depression in this system.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C90",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "Surprisingly, \u0394peak in LP actually decreases with period in prior studies, contrary to what would promote phase maintenance. When period is changed by manipulating pacemakers, neurons do not maintain phase well, and phases change with cycle-to-cycle variability. However, \u0394peak may play important roles when period differs due to temperature, neuromodulation, or inter-individual variability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C90, C93-C94 are supported by citations to prior work, but claim C95 is speculative about potential roles of \u0394peak under different conditions. The apparent contradiction between what promotes phase maintenance experimentally (increasing \u0394peak) and what occurs biologically (decreasing \u0394peak) is noted but not fully resolved.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "When temperature was changed between 7-23\u00b0C, causing a fourfold decrease in period, pyloric phases remained constant. Under temperature changes, the relationships between P, gmax, and \u0394peak were fundamentally different from constant temperature: presynaptic trajectories scaled with period, \u0394peak was independent of period, and synaptic potential amplitudes did not change despite current amplitude increases, suggesting different compensatory mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C113 describe findings from Tang et al. (2012) and draw inferences about different mechanisms. The observations are well-cited and the inference about different compensatory mechanisms (C113) is reasonable given the contrasting parameter relationships.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "Post-inhibitory spiking timing in LP neurons was relatively stable across preparations, suggesting intrinsic properties contribute relatively little to LP burst onset timing. However, other follower neurons (VD, PY) have much higher IA levels, which has larger effects on post-inhibitory spiking timing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C103-C104 describe unpublished observations not shown in the manuscript, making independent evaluation difficult. Claims C105-C106 about other neurons are stated as knowledge but provide context. The inference about small contribution of intrinsic properties (C104) is reasonable but based on data not presented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "In oscillatory systems, neuronal activity phase is often independent of network frequency, requiring adjustment of synaptic input with frequency. This occurs in both brain rhythms and motor CPG circuits. Phase maintenance arises from central coordinating mechanisms, but the underlying cellular and circuit mechanisms are not well understood, including the role of intrinsic and synaptic dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C7-C15 provide background context supported by extensive citations. These establish the biological importance and knowledge gaps that motivate the current study. The claims accurately represent prior knowledge in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C25",
+      "C27",
+      "C28"
+    ],
+    "result": "The pyloric circuit generates triphasic patterns with stable phase relationships over wide period ranges. Synapses use graded and spike-mediated transmission, follower neurons burst in rebound from pacemaker inhibition, and rebound delay scales with hyperpolarization period. Short-term depression accumulates over cycles, increasing effective synaptic strength with period. If amplitude, duration, and trajectory determine rebound delay, phase maintenance requires coordinated changes in all three parameters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C22, C25, C27-C28 provide background on the pyloric system supported by citations. Claim C28 is a logical inference that motivates the experimental approach. These claims accurately represent established knowledge about the system.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Different neuron types maintain coherent activity phases across wide frequency variations in brain oscillations (gamma, theta, ripples) and motor circuits. Phase-specific activity is important for rhythm generation, proper circuit output, and behavior. In motor systems, phase maintenance translates directly to whether movement patterns change with speed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C78 provide discussion context about the functional importance of phase maintenance, supported by appropriate citations. These claims accurately represent the broader significance of the findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C83",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "Constant duty cycle inputs alone are insufficient for phase constancy. Phase maintenance requires appropriate short-term dynamics of synaptic and intrinsic properties. Across individuals, characteristic phase relationships are observed despite substantial period variability in various systems. In the pyloric rhythm, phase constancy occurs despite inter-individual variability in ionic currents and is considered a target of homeostatic plasticity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83, C114-C123 discuss implications and broader context, supported by experimental findings (C83) and citations to prior work. The connection to homeostatic plasticity and inter-individual variability is well-supported by literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130"
+    ],
+    "result": "Changes in phase relationships are functionally important for producing different motor outputs (e.g., gaits). Neural circuit flexibility is provided by neuromodulators that alter synaptic and intrinsic properties. The pyloric circuit is sensitive to many neuromodulators affecting frequency and phase. Neuromodulators could alter P, duration, duty cycle, gmax, and \u0394peak presynaptically, or postsynaptic sensitivity, providing a framework for testing how synaptic dynamics contribute to phase changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C124-C127 are well-supported by citations. Claims C128-C130 are speculative about future applications but represent reasonable extensions of the findings. The speculation is appropriately qualified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C96",
+      "C97"
+    ],
+    "result": "Short-term synaptic plasticity acts as frequency-dependent gain control for spike-mediated synapses. In bursting neurons, combinations of depression and facilitation could change peak phase of summated synaptic current as a function of burst frequency, duration, and intra-burst spike rate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C97 discuss generality of findings beyond graded synapses. C96 is stated as established knowledge, while C97 is supported by citation and represents a reasonable inference about spike-mediated synapses.",
+    "result_type": "MINOR"
+  }
+]

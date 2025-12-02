@@ -1,0 +1,254 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C32",
+      "C33",
+      "C39",
+      "C40",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C104"
+    ],
+    "result": "The authors generated and validated a HOXA9P2A-mCherry knock-in reporter cell line in MLLr leukemia cells (SEM and OCI-AML2) that faithfully recapitulates endogenous HOXA9 transcription without affecting adjacent HOXA gene expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C32-C33, C39-C46, and C104 collectively demonstrate successful generation and comprehensive validation of the reporter system through multiple orthogonal approaches including FISH (C43), RNA-seq (C44-C46), and functional validation with known regulators DOT1L and ENL (C48-C51). The data show the reporter accurately reflects endogenous HOXA9 regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "The HOXA9P2A-mCherry reporter responds appropriately to known HOXA9 regulators DOT1L and ENL, with mCherry expression correlating strongly with HOXA9 mRNA levels (Pearson's r = 0.90-0.99, p<0.001).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C51 demonstrate that the reporter system accurately reflects HOXA9 regulation through genetic (sgRNA) and pharmacological (SGC0946) perturbations of known regulators. The strong correlation between mCherry and HOXA9 expression validates the reporter's utility for screening applications.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C34",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "A CRISPR/Cas9 screen targeting 1639 human transcription factors identified USF2 as a novel regulator of HOXA9 expression, with the screen successfully re-identifying known regulators (HOXA9, DOT1L, KMT2A) as positive controls.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C6, C34, C52-C56, C60-C63 describe a well-designed CRISPR screen with appropriate controls (7 sgRNAs per gene, 100 non-targeting controls, positive controls DOT1L/HOXA9). The identification of known regulators validates the screen, and USF2 emerged as a top hit in both standard and HOXA9-MEIS1 rescue screens, supporting its role as a novel regulator.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "The HOXA9-MEIS1 rescue screen identified additional survival-essential regulators including KMT2A and HBO1 complex members that were missed in the standard screen.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C59 demonstrate that the rescue screen strategy successfully identified regulators that would otherwise be lost due to cell death. The identification of KMT2A (the MLL translocation partner) and HBO1 complex members (known leukemia stem cell regulators) validates this approach and provides biological insight.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C35",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "CTCF is not required for HOXA9 expression in MLLr B-ALL SEM cells, contrasting with prior reports in MOLM13 cells, suggesting cell-type-specific regulation of HOXA9 by CTCF.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35, C64-C75 provide comprehensive evidence through multiple orthogonal approaches (CRISPR screen, auxin-inducible degron, siRNA knockdown) that CTCF depletion does not reduce HOXA9 expression in SEM cells, despite confirmed loss of CTCF occupancy at the HOXA9 locus. The contrasting result in HCT116 cells (C73) supports the cell-type-specific interpretation. This contradicts prior work by Luo et al. in MOLM13 cells but is rigorously demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "USF2 directly regulates HOXA9 expression through binding to E-box elements at the HOXA9 promoter and other HOXA cluster genes, as demonstrated by sgRNA knockdown and Cut&Run analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C83 demonstrate that USF2 depletion reduces HOXA9 expression (C76-C77) and that USF2 directly binds to HOXA9 and other HOXA genes (C81-C82) as shown by Cut&Run. The binding is consistent with known USF2 E-box binding specificity (C79-C80). The data support direct transcriptional regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C7",
+      "C36",
+      "C37",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "USF2 depletion impairs MLLr leukemia cell proliferation, with USF2 ranking as the 24th most essential gene in a dropout CRISPR screen of SEM cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C36-C37, C84-C87 demonstrate that USF2 loss impairs cell proliferation through competitive proliferation assays and dropout screening. The identification of known essential genes (PAX5, DOT1L, MYC, KMT2A) in the dropout screen validates the approach. The proliferation defect is consistently observed across multiple sgRNAs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C8",
+      "C38",
+      "C88",
+      "C89"
+    ],
+    "result": "Ectopic expression of HOXA9 rescues the proliferation defect caused by USF2 depletion, demonstrating that HOXA9 is a functional downstream target of USF2 in leukemia cell maintenance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C38, C88-C89 provide genetic epistasis evidence that HOXA9 acts downstream of USF2. The rescue experiment (C88) is a critical control demonstrating that the proliferation defect from USF2 loss is specifically due to reduced HOXA9 expression, not off-target effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "USF1 and USF2 synergistically regulate HOXA9 expression in MLLr leukemia cells, with double knockout showing stronger effects than single knockouts, suggesting compensatory regulation between the two family members.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C99 demonstrate synergistic regulation by USF1 and USF2 across multiple MLLr cell lines (SEM, OCI-AML2, NOMO-1, MOLM13). The observation that single knockouts have variable effects while double knockouts consistently suppress HOXA9 (C93-C94, C97-C99) supports compensatory regulation. This is consistent with known USF1/USF2 heterodimerization (C91).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C100",
+      "C101"
+    ],
+    "result": "USF2 regulation of HOXA9 is specific to MLLr leukemias, as USF2 depletion does not affect HOXA9 expression in non-MLLr cell lines (OCI-AML3, U937).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C101 demonstrate MLLr-specificity through experiments in non-MLLr cell lines showing no effect of USF2 depletion on HOXA9 expression. This specificity is important for understanding the regulatory mechanism and potential therapeutic targeting, though the molecular basis for this specificity is not explored.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C102",
+      "C103"
+    ],
+    "result": "USF2 expression significantly correlates with HOXA9 expression in MLLr B-ALL patients (N=136), suggesting clinical relevance of the USF2-HOXA9 regulatory axis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C103 show significant correlation in patient samples from a large cohort (N=1988 total, N=136 MLLr). However, C103 is speculative about clinical relevance - correlation does not establish causation or therapeutic potential. The correlation supports the biological relevance of the findings but functional validation in primary patient samples or in vivo models would strengthen clinical relevance claims.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Background claims establishing HOXA9's role in leukemia, its regulation by various genetic alterations, and the current state of knowledge regarding HOXA9 regulators.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3, C10-C31 provide literature-based background supported by appropriate citations. These establish the rationale for the study but are not novel findings. The claims accurately represent prior work on HOXA9 in leukemia, its regulation by epigenetic modifiers, and the limited knowledge of transcriptional regulators.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C41",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C110",
+      "C111"
+    ],
+    "result": "Discussion and speculation about the reporter system's potential applications, technical considerations, and future research directions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C41, C105-C108, C110-C111 are largely speculative or discuss technical aspects. C41 is a mechanistic description of P2A function (supported by citation). C105 speculates about broad applicability without demonstration. C106-C108 discuss technical limitations of chromatin studies. C110-C111 acknowledge limitations and speculate about future applications. These are appropriate discussion points but not experimental results.",
+    "result_type": "MINOR"
+  }
+]

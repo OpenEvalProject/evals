@@ -1,0 +1,957 @@
+{
+  "submission": {
+    "id": "cd8b3ba2-8059-41c7-843e-d5f3a928cbaa",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T11:46:17.937749Z",
+    "updated_at": "2025-12-02T11:46:17.937749Z"
+  },
+  "content": [
+    {
+      "id": "cb08eab6-93db-46c0-b16f-e33e681f562e",
+      "submission_id": "cd8b3ba2-8059-41c7-843e-d5f3a928cbaa",
+      "content_type": "manuscript",
+      "content_text": "# An engineered monomer binding-protein for \u03b1-synuclein efficiently inhibits the proliferation of amyloid fibrils\n\n## Authors\n\n- Emil Dandanell Agerschou<sup>1</sup>\n- Patrick Flagmeier<sup>2</sup> ([ORCID: 0000-0002-1204-5340](https://orcid.org/0000-0002-1204-5340))\n- Theodora Saridaki<sup>4</sup>\n- C\u00e9line Galvagnion<sup>5</sup>\n- Daniel Komnig<sup>4</sup> ([ORCID: 0000-0002-6312-5236](https://orcid.org/0000-0002-6312-5236))\n- Laetitia Heid<sup>1</sup>\n- Vibha Prasad<sup>4</sup>\n- Hamed Shaykhalishahi<sup>1</sup>\n- Dieter Willbold<sup>1</sup> ([ORCID: 0000-0002-0065-7366](https://orcid.org/0000-0002-0065-7366))\n- Christopher M Dobson<sup>2</sup>\n- Aaron Voigt<sup>4</sup> ([ORCID: 0000-0002-0428-7462](https://orcid.org/0000-0002-0428-7462))\n- Bjoern Falkenburger<sup>4</sup> ([ORCID: 0000-0002-2387-526X](https://orcid.org/0000-0002-2387-526X)) \u2020\n- Wolfgang Hoyer<sup>1</sup> ([ORCID: 0000-0003-4301-5416](https://orcid.org/0000-0003-4301-5416)) \u2020\n- Alexander K Buell<sup>1</sup> ([ORCID: 0000-0003-1161-3622](https://orcid.org/0000-0003-1161-3622)) \u2020\n\n### Affiliations\n\n1. Institut f\u00fcr Physikalische Biologie Heinrich Heine University D\u00fcsseldorf D\u00fcsseldorf Germany\n2. Department of Chemistry University of Cambridge Cambridge United Kingdom\n3. Centre for Misfolding Diseases University of Cambridge Cambridge United Kingdom\n4. Department of Neurology RWTH Aachen University Aachen Germany\n5. RG Mechanisms of Neuroprotection German Centre for Neurodegenerative Diseases (DZNE) Bonn Germany\n6. Department of Pharmacology and Drug Design University of Copenhagen Copenhagen Denmark\n7. Institute of Complex Systems (ICS-6), Structural Biochemistry Forschungszentrum J\u00fclich J\u00fclich Germany\n8. Department of Neurology Dresden University Medical Center Dresden Germany\n9. JARA BRAIN Institute II Julich and Aachen Germany\n10. Department of Biotechnology and Biomedicine Technical University of Denmark Kgs. Lyngby Denmark\n\n\u2020 Corresponding author\n\n## Abstract\n\nRemoving or preventing the formation of \u03b1-synuclein aggregates is a plausible strategy against Parkinson\u2019s disease. To this end, we have engineered the \u03b2-wrapin AS69 to bind monomeric \u03b1-synuclein with high affinity. In cultured cells, AS69 reduced the self-interaction of \u03b1-synuclein and formation of visible \u03b1-synuclein aggregates. In flies, AS69 reduced \u03b1-synuclein aggregates and the locomotor deficit resulting from \u03b1-synuclein expression in neuronal cells. In biophysical experiments in vitro, AS69 highly sub-stoichiometrically inhibited both primary and autocatalytic secondary nucleation processes, even in the presence of a large excess of monomer. We present evidence that the AS69-\u03b1-synuclein complex, rather than the free AS69, is the inhibitory species responsible for sub-stoichiometric inhibition of secondary nucleation. These results represent a new paradigm that high affinity monomer binders can lead to strongly sub-stoichiometric inhibition of nucleation processes.\n\n## Introduction\n\nCytoplasmic aggregates of the protein $\\alpha$-synuclein are the pathological hallmark of Parkinson\u2019s disease (PD) and other synucleinopathies (Spillantini et al., 1997). Point mutations in the $\\alpha$-synuclein gene or triplication of the $\\alpha$-synuclein locus are associated with familial forms of PD, and the $\\alpha$-synuclein locus is a genetic risk factor for sporadic PD (Obeso et al., 2017). $\\alpha$-synuclein aggregate pathology was demonstrated to propagate from neuron to neuron (Desplats et al., 2009),\u00a0and\u00a0recent work has focused on understanding the cellular and molecular events in this process. From a therapeutic perspective, $\\alpha$-synuclein aggregation is thought to be the underlying cause of PD and remains the focus of causal therapeutic strategies. The link between $\\alpha$-synuclein aggregation and PD has been known for two decades (Spillantini et al., 1997; Conway et al., 1998); however, translation of this scientific discovery into a therapy has proven challenging. From the first description of small molecules that inhibit $\\alpha$-synuclein aggregation\u00a0in\u00a02006 (Masuda et al., 2006), the search for promising compounds\u00a0has continued (Wagner et al., 2013; T\u00f3th et al., 2014; Wrasidlo et al., 2016; Perni et al., 2017; Kurnik et al., 2018). While the first small molecules also inhibited the aggregation of tau and amyloid-$\\beta$, more recent compounds bind $\\alpha$-synuclein more selectively and show reduced $\\alpha$-synuclein toxicity in mouse models of PD (Wrasidlo et al., 2016). We have taken a different strategy by engineering a protein, the $\\beta$-wrapin AS69, to induce formation of a $\\beta$-hairpin in monomeric $\\alpha$-synuclein upon binding (Figure 1a) (Mirecka et al., 2014). AS69 was selected by phage display (Mirecka et al., 2014) from protein libraries based on ZA$\\beta$3, an affibody against the amyloid-$\\beta$ peptide (Hoyer et al., 2008; Hoyer and H\u00e4rd, 2008; Luheshi et al., 2010). AS69 thus not only binds $\\alpha$-synuclein with high and approximately constant affinity throughout the pH range most relevant for $\\alpha$-synuclein aggregation (Buell et al., 2014a; Figure 1b,c), but\u00a0also induces a specific conformational change - akin to molecular chaperones (Muchowski and Wacker, 2005).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/46112/elife-46112-fig1-v4.jpg)\n\n**Figure 1.:** AS69 binds to monomeric $\\alpha$-synuclein, inducing local folding of the region comprising residues 37\u201354 into a $\\beta$-hairpin conformation.(a) Structural model of the AS69:$\\alpha$-synuclein complex based on NMR (pdb entry 4BXL) (Mirecka et al., 2014), generated with PyMOL (The PyMOL Molecular Graphics System, 1.2; Schr\u00f6dinger, LLC.). AS69 (grey) is a disulfide-linked homodimer. $\\alpha$-Synuclein (orange) locally adopts $\\beta$-hairpin conformation, while the remainder of the molecule, including the hydrophobic NAC segment (green), remains intrinsically disordered (Mirecka et al., 2014). Positions at which disease-related mutations have been identified are given in magenta. (b,c) The affinity of AS69 to $\\alpha$-synuclein at pH 7.4 (b) and pH 5.0 (c) analyzed by isothermal titration calorimetry (ITC) experiments. Titration of 420 \u03bcM $\\alpha$-synuclein into 47 \u03bcM AS69 in 20 mM sodium phosphate, 50 mM NaCl, pH 7.4 (b), or 320 \u03bcM $\\alpha$-synuclein into 32 \u03bcM AS69 in 20 mM sodium acetate, pH 5.0 (c), at 30 \u00b0C. The upper panels show the baseline-corrected instrumental response. The lower panels show the integrated data (filled squares) and the fit to a 1:1 binding model (continuous line).\n\nAS69 induces local folding of the region comprising residues 37\u201354 into a $\\beta$-hairpin conformation in the otherwise intrinsically disordered, monomeric $\\alpha$-synuclein (Figure 1a). The critical role of this region for $\\alpha$-synuclein aggregation is indicated by the cluster of disease-related mutation sites (Figure 1a). Accordingly, modification of the local conformation by, for\u00a0example, introduction of a disulfide bond strongly modulates aggregation (Shaykhalishahi et al., 2015). Sequestration of residues 37\u201354 of monomeric $\\alpha$-synuclein by AS69 inhibits the amyloid fibril formation of $\\alpha$-synuclein under conditions of vigorous shaking of the solution even at highly sub-stoichiometric ratios (Mirecka et al., 2014). Amyloid fibril formation, however, is not a one-step process but can be decomposed into different individual steps, including primary and secondary nucleation and fibril elongation. With vigorous shaking, for instance, primary nucleation can occur readily at the air-water interface (Campioni et al., 2014) and fibril fragmentation induced by the shaking amplifies the number of growth-competent fibril ends (Xue et al., 2009). To validate AS69 as a potential therapeutic agent, we therefore tested its biological effects in cellular and animal models, and found it to be a highly efficient inhibitor of $\\alpha$-synuclein aggregation and associated toxicity. In addition, we designed a set of experimental conditions to measure selectively the effect of AS69 on specific steps of $\\alpha$-synuclein aggregation. We found that AS69 is able to efficiently interfere with both the lipid-induced formation and the auto-catalytic amplification of $\\alpha$-synuclein amyloid fibril formation. These inhibitory effects on nucleation are observed even in the presence of a large excess of $\\alpha$-synuclein monomer, which is expected to sequester AS69 into inhibitor-monomer complexes. We show evidence that the secondary nucleation of $\\alpha$-synuclein can be inhibited by the $\\alpha$-synuclein-AS69 complex and, therefore the inhibitory effect of AS69 on this crucial step of aggregate amplification is unaffected by even large excess concentrations of free $\\alpha$-synuclein monomer.\n\n## Results\n\n### Co-expression of AS69 reduces visible \u03b1-synuclein aggregates in cell culture\n\nFirst, we explored the effect of the expression of AS69 on the viability of living cells and the association of $\\alpha$-synuclein in a cellular environment. In these model systems we not only expressed WT $\\alpha$-synuclein but also the A53T variant, which has been associated with familial PD and which produces aggregates more quickly than the WT protein (Conway et al., 1998; Flagmeier et al., 2016). We first used bimolecular fluorescence complementation (BiFC) to probe whether AS69 can interfere with formation of oligomeric $\\alpha$-synuclein species in living HEK293T cells (Falkenburger et al., 2016). Constructs of WT and A53T $\\alpha$-synuclein were tagged with the C-terminal segment of the fluorescent protein Venus (synuclein-VC) or with the complementary N-terminal segment of this protein (VN-synuclein) (Figure 2a). Neither of the two Venus fragments shows significant fluorescence by itself, but together they can generate a functional fluorescent protein (Bae et al., 2014) and hence function as a reporter for protein-protein interaction. We then transfected HEK293T cells with both synuclein-VC and VN-synuclein, in addition to AS69 (or LacZ as a control) and determined by flow cytometry the fraction of cells that displayed Venus fluorescence (Figure 2b, the raw data can be found in the table in Figure 2\u2014source data 1). In the absence of AS69, the fraction of fluorescent cells was larger with the expression of A53T-$\\alpha$-synuclein than WT-$\\alpha$-synuclein (Figure 2b, p<0.05, two-way ANOVA). Co-expression of AS69 with both variants reduced the number and fraction of fluorescent cells (Figure 2b, p<0.05 for WT and p<0.01 for A53T, two-way ANOVA). AS69 did not, however, significantly affect the total quantity of $\\alpha$-synuclein in the cells, as determined from immunoblots (Figure 2c and d). This finding is consistent with the hypothesis that the effects of AS69 in this cellular model system result from inhibition of a direct interaction between $\\alpha$-synuclein molecules, and not from an enhanced clearance of $\\alpha$-synuclein. Despite the enhanced affinity for self-interaction which the fluorescence complementation tag might convey to $\\alpha$-synuclein compared to the untagged protein, the affinity for AS69 is high enough to sequester a significant proportion of the $\\alpha$-synuclein in living cells.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/46112/elife-46112-fig2-v4.jpg)\n\n**Figure 2.:** AS69 reduces aggregation of $\\alpha$-synuclein in cellular models.(a) Schematic representation of bimolecular fluorescence complementation where $\\alpha$-synuclein is tagged by either the C-terminal (VC) or the N-terminal (VN) fragment of the Venus protein. In dimers or larger oligomers of $\\alpha$-synuclein, the two Venus fragments can form a functional fluorescent protein. (b) The percentage of cells with BiFC fluorescence as determined by flow cytometry. HEK293T cells were transfected with $\\alpha$-synuclein (WT or A53T), fused to the VN or VC fragment and either LacZ (control) or AS69. Displayed are the results of n\u00a0=\u00a03 independent experiments and mean \u00b1\u00a0SEM. In each experiment, 75,000 cells were analyzed per group. Results were compared by one-way ANOVA, results of Sidak\u2019s posthoc test depicted. (c) Immunoblot of lysates of cells transfected with EGFP-tagged $\\alpha$-synuclein and, in addition, AS69 or LacZ (control), developed with antibodies against $\\alpha$-synuclein (band just below 20 kDa, note that only the upper band reports $\\alpha$-synuclein, Dinter et al., 2016) and $\\beta$-tubulin (band just below 50 kDa), the latter as a loading control. (d) Quantification of n\u00a0=\u00a04 independent blots as described in (c). Results were compared by t-test. (e) HEK293T cells were transfected with EGFP-tagged $\\alpha$-synuclein and the distribution of fluorescence was classified into the depicted groups. (f) Summarized results of n\u00a0=\u00a03 independent experiments with n\u00a0=\u00a0300 cells classified per group in each experiment (mean \u00b1 SEM). Results were compared by two-way ANOVA and Sidak\u2019s posthoc test.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/46112/elife-46112-fig2-figsupp1-v4.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Complete Western blot (Figure 2c) from cell culture lysates showing the loading control with $\\beta$-tubulin at 50 kD, two nonspecific bands visible also in mock transfected cells, that is without $\\alpha$-synuclein expression, and one specific band just below 20 kD (*).\n\nHaving established that $\\alpha$-synuclein and AS69 can interact in cells, we next probed the\u00a0effects of AS69\u00a0on the formation of larger, optically visible aggregates of $\\alpha$-synuclein by transfecting HEK293T cells with A53T-$\\alpha$-synuclein tagged with enhanced green fluorescent protein (EGFP) as previously described (Opazo et al., 2008; Karpinar et al., 2009; Dinter et al., 2016; Figure 2e). The distribution of EGFP within transfected cells was classified as 'homogenous', 'containing particles' or 'unhealthy' (rounded cells that in time-lapse microscopy were observed to subsequently undergo apoptosis). Co-expression of AS69 with A53T $\\alpha$-synuclein led to an increase in the fraction of cells with a 'homogenous' distribution of EGFP and fewer cells showed $\\alpha$-synuclein particles relative to those cells without AS69 (Figure 2f). These findings indicate that the co-expression of AS69 reduces formation of visible aggregates in cultured human cells.\n\n### Co-expression of AS69 rescues A53T \u03b1-synuclein-dependent phenotype in Drosophila melanogaster\n\nSubsequently, we tested the effects AS69 has in Drosophila melanogaster (fruit flies) expressing untagged A53T-$\\alpha$-synuclein in neurons (Figure 3). In the absence of AS69, these flies show a progressive reduction in the spontaneous climbing (i.e. neuronal impairment) between 15 and 25 days of age (Butler et al., 2012; Dinter et al., 2016;\u00a0illustrated in Figure 3a). We then generated flies co-expressing either AS69 or GFP (as a control) with A53T $\\alpha$-synuclein in neurons. Flies expressing AS69 and A53T $\\alpha$-synuclein showed preserved climbing behaviour (Figure 3b, two-way ANOVA), demonstrating that neuronal expression of AS69 reduces the phenotype in this fly model of A53T $\\alpha$-synuclein toxicity. We further went on to determine whether or not the observed effect of AS69 on climbing behaviour could result from a reduction in the number of $\\alpha$-synuclein aggregates and used flies expressing in all neurons one copy of A53T-$\\alpha$-synuclein fused to VC, one copy of A53T-$\\alpha$-synuclein fused VN (Prasad et al., 2019), and, in addition, AS69 or 'always early RNAi' (see Materials\u00a0and\u00a0methods section) as a control. Aggregates of $\\alpha$-synuclein were quantified by a filter trap assay in which urea-treated lysates of fly heads were passed through a membrane and the quantity of $\\alpha$-synuclein aggregates retained in the membrane was detected by antibodies raised against $\\alpha$-synuclein (illustrated in Figure 3c). We found that the quantity of aggregates retained in the filter was significantly smaller in lysates from flies co-expressing AS69 and A53T-$\\alpha$-synuclein than in lysates from flies only expressing VN- and VC-tagged A53T-$\\alpha$-synuclein (Figure 3d and e). These findings confirm that AS69 reduces high molecular weight aggregates of $\\alpha$-synuclein in neuronal cells of Drosophila melanogaster.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/46112/elife-46112-fig3-v4.jpg)\n\n**Figure 3.:** AS69 rescues the motor phenotype and reduces $\\alpha$-synuclein aggregation in Drosophila melanogaster.(a) Schematic representation of the climbing assay. The vials are tapped to move the flies to the base of the vial, and thereafter the flies climb towards the top of the vial; in this experiment the number of flies climbing 8 cm in 10 s was determined. (b) Performance in the climbing assay of Drosophila melanogaster expressing A53T-$\\alpha$-synuclein and either AS69 or GFP in neurons. At each time point, n\u00a0=\u00a030 flies were assayed per genotype; similar findings were observed for eight different lines expressing AS69. Results were compared by two-way ANOVA and Sidak\u2019s posthoc test. (c) Schematic representation of the filter trap assay in which aggregates in the protein lysate are retained by a membrane, which is subsequently developed in the same manner as an immunoblot. (d) Results of the filter trap assay from lysates of control flies and flies expressing AS69 in addition to A53T-$\\alpha$-synuclein in all neurons. Two different quantities of the protein lysate were applied in each case, 5 and 25 \u03bcg. (e) Summary of the quantification of n\u00a0=\u00a03 dot blots as in (d). Only the 25 \u03bcg band was quantified. Results were compared by t-test.\n\n### AS69 stoichiometrically inhibits the elongation of\u00a0\u03b1-synuclein fibrils\n\nWe next set out to elucidate the origin of the remarkable ability of AS69 to inhibit $\\alpha$-synuclein aggregate formation in cells and in vivo (Figure 2, Figure 3), and amyloid fibril formation in vitro (Mirecka et al., 2014). To this end, we performed a detailed mechanistic analysis, where we examined the effect of AS69 on the growth (Buell et al., 2014a), autocatalytic amplification (Buell et al., 2014a; Flagmeier et al., 2016) and lipid-induced formation (Galvagnion et al., 2015) of $\\alpha$-synuclein amyloid fibrils. We first carried out experiments in the presence of micromolar concentrations (in monomer equivalents) of pre-formed seed fibrils of $\\alpha$-synuclein at neutral pH under quiescent conditions (Figure 4a,b). We have shown previously that under these conditions only fibril elongation through addition of monomeric $\\alpha$-synuclein to fibril ends occurs at detectable rates (Buell et al., 2014a), and that the rate of de novo formation of fibrils is negligible. We therefore examined the effects of AS69 on fibril elongation and analyzed these data by fitting linear functions to the early stages of the aggregation time courses (see Appendix 1 for details of the analysis). The results indicate that fibril elongation is indeed inhibited by AS69 in a stoichiometric concentration-dependent manner (Figure 4c). In this experiment, both the seed fibrils and the AS69 compete for the monomeric $\\alpha$-synuclein and the relative affinities determine the kinetics and thermodynamics of the system.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/46112/elife-46112-fig4-v4.jpg)\n\n**Figure 4.:** AS69 inhibits $\\alpha$-synuclein fibril elongation.(a) Schematic representations of fibril elongation.\u00a0(b) Change in ThT fluorescence when a 30 \u03bcM solution of monomeric $\\alpha$-synuclein was incubated in the presence of 5 \u03bcM pre-formed fibrils under quiescent conditions with increasing concentrations of AS69. (c) Relative rates of fibril elongation with increasing concentrations of AS69. The solid line corresponds to a prediction based on the affinity of AS69 for monomeric $\\alpha$-synuclein (240 nM, Figure 1b [Mirecka et al., 2014], see Appendix 1 for details).\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/46112/elife-46112-fig4-figsupp1-v4.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Characterisation of $\\alpha$-synuclein fibrils formed in the presence and absence of AS69 by AFM.AFM images of 30 \u03bcM monomeric $\\alpha$-synuclein incubated with 5 \u03bcM pre-formed fibrils, (a) in the absence\u00a0or (b) presence of 3 \u03bcM AS69, or (c) 30 \u03bcM AS69 in 20 mM phosphate buffer at pH 6.5 under quiescent conditions at 37\u00b0C for 24 h.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/46112/elife-46112-fig4-figsupp2-v4.jpg)\n\n**Figure 4\u2014figure supplement 2.:** The fibril elongation assay was repeated for ZA$\\beta_{3}$W, a binding protein for amyloid-$\\beta$ peptide (Gr\u00fcning et al., 2013) that is a significantly weaker $\\alpha$-synuclein binder than AS69. The absence of detectable heat of binding in ITC allows only an estimate to be made for a minimal Kd of the ZA$\\beta_{3}$W-$\\alpha$-synuclein interaction in the order of 10 \u03bcM (Mirecka et al., 2014). (a) Change in ThT fluorescence when a 30 \u03bcM solution of monomeric $\\alpha$-synuclein was incubated in the presence of 5 \u03bcM pre-formed fibrils under quiescent conditions with increasing concentrations of ZA$\\beta_{3}$W. (b) Relative rates of fibril elongation with increasing concentrations of ZA$\\beta_{3}$W. For comparison to AS69, the dotted line corresponds to the solid line in Figure 4c.\n\nTo obtain an estimate of the affinity of monomeric $\\alpha$-synuclein for the ends of fibrils, we performed elongation experiments at low monomer concentrations in the absence of AS69. We found evidence that the fibrils are able to elongate in the presence of 0.5 \u03bcM monomeric $\\alpha$-synuclein (see Appendix 1), providing an upper bound of the critical concentration (which is formally equivalent to a dissociation constant, see Appendix 1). Despite the similar affinity of monomeric $\\alpha$-synuclein for both fibril ends and AS69, the timescales of the two types of interactions are very different; monomeric $\\alpha$-synuclein was found to interact on a timescale of seconds with AS69, as seen by isothermal titration calorimetry (ITC) experiments (Mirecka et al., 2014 and Figure 1b and c), but to incorporate on a timescale of minutes to hours into free fibril ends (see Figure 4b and Buell et al., 2014a; W\u00f6rdehoff et al., 2015). The slow kinetics of the latter process is partly because the number of fibril ends is much smaller than the number of monomers (Buell et al., 2014a), such that each fibril sequentially recruits many $\\alpha$-synuclein molecules. Therefore, the equilibrium between AS69 and $\\alpha$-synuclein should be rapidly established and perturbed only very slowly by the presence of the fibrils.\n\n### Inhibition of fibril elongation is caused\u00a0by monomer sequestration\n\nThe initial fibril elongation rate as a function of AS69 concentration was found to follow closely the predicted concentration of unbound $\\alpha$-synuclein across the entire range of concentrations of AS69 used in this study, as shown in Figure 4c, where the solid line corresponds to the predicted elongation rate, assuming fibrils can only be elongated by unbound $\\alpha$-synuclein. The inhibition of fibril elongation can therefore be explained quantitatively by the sequestration of monomeric $\\alpha$-synuclein by AS69 and the assumption that the AS69:$\\alpha$-synuclein complex cannot be incorporated into the growing fibril. This conclusion is supported by the finding that the fibrils formed in the presence of increasing concentrations of AS69 are morphologically indistinguishable from the fibrils formed in the absence of AS69 (as judged from AFM images, see Figure 4\u2014figure supplement 1). Our kinetic analysis of fibril elongation in the presence of AS69 does not, however, suggest a preferential interaction with fibril ends, as such an interaction can be expected to lead to a sub-stoichiometric inhibition of fibril elongation, which is not observed in our experiments. Indeed, the finding that the effect on elongation can be quantitatively described by considering only the interaction of AS69 with monomeric $\\alpha$-synuclein (Appendix 1) suggests a weak, if any, interaction of AS69 with fibrils. Furthermore, density gradient centrifugation (DGC) of samples containing only seeds and AS69 (Figure 5a and b) did not show AS69 to co-migrate with large species to any significant extent under conditions that favour elongation. In agreement with inhibition of fibril elongation by monomer sequestration, ZA$\\beta_{3}$W, a binding protein for amyloid-$\\beta$ peptide (Gr\u00fcning et al., 2013), which is a significantly weaker $\\alpha$-synuclein binder than AS69, correspondingly showed a considerably weaker inhibitory effect on $\\alpha$-synuclein fibril elongation (Figure 4\u2014figure supplement 2).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/46112/elife-46112-fig5-v4.jpg)\n\n**Figure 5.:** SDS-PAGE of density gradient centrifugation (DGC) experiments to probe the binding of AS69 to $\\alpha$-synuclein fibrils at pH 7.4 after elongation experiments.(a)\u00a025\u00a0\u03bcM seeds, (b)\u00a025\u00a0\u03bcM AS69 and 25\u00a0\u03bcM seeds, (c)\u00a016.7\u00a0\u03bcM AS69fusASN, (d)\u00a025\u00a0\u03bcM AS69fusASN and 25\u00a0\u03bcM seeds.\n\n### AS69 sub-stoichiometrically inhibits amplification of \u03b1-synuclein fibrils\n\nThese findings clearly demonstrate that AS69 inhibits fibril elongation in a stoichiometric manner through monomer sequestration. Consequently, inhibition of fibril elongation cannot explain the previously observed sub-stoichiometric inhibition of $\\alpha$-synuclein fibril formation by AS69 (Mirecka et al., 2014). We therefore performed seeded experiments under mildly acidic solution conditions in the presence of very low concentrations of pre-formed fibrils (nM monomer equivalents) under quiescent conditions (Figure 6a,b) (Buell et al., 2014a; Gaspar et al., 2017). Under those solution conditions, seeded aggregation has been shown to consist of two processes in addition to fibril elongation, namely secondary nucleation, which increases the number of growth competent fibril ends, and higher order assembly ('flocculation', Figure 6\u2014figure supplement 1b,c), which decreases the overall aggregation rate by reducing the number of accessible fibrils through their burial within higher order aggregates (Buell et al., 2014a). The de novo formation of amyloid fibrils through primary nucleation is suppressed if the solution is not agitated and if non-binding surfaces are used (Figure 6\u2014figure supplement 1a). We find that under these solution conditions, where only growth and secondary nucleation contribute to the increase in fibril mass and number, respectively, the seeded aggregation is inhibited in a strongly sub-stoichiometric manner (Figure 6b,c). We analysed these data to determine the maximum rate of aggregation (see Appendix 2 for details) using the framework from Cohen et al. (2011) (Figure 6c). Based on recent results on the concentration-dependence of autocatalytic secondary nucleation of $\\alpha$-synuclein amyloid fibrils (Gaspar et al., 2017), we have calculated the predicted inhibitory effect from monomer sequestration by AS69 in Figure 6c (see Figure 6\u2014figure supplement 2 and Appendix 2 for details). We find that, unlike the case of fibril elongation, monomer sequestration cannot explain the extent of inhibition, even by assuming a very high reaction order of 5 (i.e. a dependence of the rate of secondary nucleation on the 5th power of the free monomer concentration; $\\frac{d\u2062P\u2062(t)}{d\u2062t}\u221dm\u2062(t)^{5}$) which is not compatible with recent results, showing that secondary nucleation of $\\alpha$-synuclein amylid fibrils depends only weakly on the concentration of free monomer (Gaspar et al., 2017). However, even in this unlikely scenario, the very strong inhibitory effect of low AS69 concentrations cannot be explained by monomer depletion.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/46112/elife-46112-fig6-v4.jpg)\n\n**Figure 6.:** AS69 inhibits $\\alpha$-synuclein fibril amplification.(a) Schematic representation of fibril amplification through secondary nucleation Buell et al. (2014a). (b) Change in ThT fluorescence intensity when a 70 \u03bcM solution of monomeric $\\alpha$-synuclein was incubated with increasing concentrations of AS69 in acetate buffer (pH 5.0) under quiescent conditions and weak seeding. (c) Relative rate of fibril amplification as a function of the concentration of AS69. The solid lines correspond to simulations based on the assumption that AS69 acts only through monomer sequestration, for different values of the monomer dependence (reaction order) of secondary nucleation (see Appendix 2 for details).\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/46112/elife-46112-fig6-figsupp1-v4.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (a) Change in ThT fluorescence intensity when a 70 \u03bcM solution of monomeric $\\alpha$-synuclein was incubated either with or without pre-formed seeds, and with or without AS69 in acetate buffer (pH 5.0) under quiescent conditions. The inset shows the initial fluorescence intensity values. (b) AFM image of the seeds that were used for the experiment shown in (a), note the inhomogeneity in the dispersion of the fibrils, caused\u00a0by the solution conditions that favour higher order assembly. The white square shows the approximate area of the zoom-in shown in (c).\n\n![Figure 6\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/46112/elife-46112-fig6-figsupp2-v4.jpg)\n\n**Figure 6\u2014figure supplement 2.:** (a) Concentration of monomer left in solution after the weakly seeded experiments, as determined by the method described in Galvagnion et al. (2015). (b) The numerically computed first derivatives (using a ten point rolling average) of the weakly seeded kinetic time courses shown in Figure 6.\n\n![Figure 6\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/46112/elife-46112-fig6-figsupp3-v4.jpg)\n\n**Figure 6\u2014figure supplement 3.:** AS69 interacts with two distinct $\\alpha$-synuclein species.Binding of AS69 to monomeric (a) and oligomeric (Lorenzen et al., 2014) (b)\u00a0$\\alpha$-synuclein was quantified by microscale thermophoresis (MST) measurements (Wolff et al., 2016) in 20 mM phosphate buffer pH 7.4 and 50 mM NaCl. The oligomers used in this assay are kinetically stable and can be purified and studied in isolation (Lorenzen et al., 2014; Wolff et al., 2016). The preparation of labelled monomeric and oligomeric $\\alpha$-synuclein is described in detail in the Materials\u00a0and\u00a0methods section.\n\n### Sub-stoichiometric inhibition of fibril amplification is not caused\u00a0by interaction with the fibril surface\n\nWe have previously been able to rationalise inhibition of the secondary nucleation of $\\alpha$-synuclein by the homologous protein $\\beta$-synuclein through competition for binding sites on the surface of the fibrils (Brown et al., 2016). Here we find that AS69 is a significantly more efficient inhibitor of the autocatalytic amplification of $\\alpha$-synuclein amyloid fibrils than $\\beta$-synuclein (a similar degree of inhibition is achieved with a 10-fold lower concentration ratio). This result is particularly interesting in the light of the fact that AS69 binds efficiently to monomeric $\\alpha$-synuclein under both neutral and mildly acidic solution conditions (Figure 1b,c), whereas we found no evidence for a relevant direct interaction between the monomeric forms of $\\alpha$- and $\\beta$-synuclein, given the complete absence of any inhibitory effect of $\\beta$-synuclein on the elongation of $\\alpha$-synuclein fibrils (Brown et al., 2016). Therefore, despite the vast majority of the AS69 being\u00a0bound within a complex with monomeric $\\alpha$-synuclein, AS69 is an efficient sub-stoichiometric inhibitor of the secondary nucleation of $\\alpha$-synuclein. This finding suggests that in addition to inhibiting through competition for nucleation sites on the fibril surface, AS69 or its complex with $\\alpha$-synuclein could interact directly with intermediates of the secondary nucleation process. To investigate whether AS69 binds to the fibril surface under these secondary nucleation-inducing solution conditions, we performed additional DGC experiments. Co-migration in the density gradient of AS69 with fibrils, which would imply direct interactions between these species, was undetectable (Figure 7a\u2013c). If AS69 was able to inhibit secondary nucleation through binding to the fibril surface in the presence of a large excess of monomer, its affinity to fibril surfaces would need to be much higher than to monomeric $\\alpha$-synuclein. This implies that under the conditions of the DGC experiments which were performed in the absence of monomeric $\\alpha$-synuclein, all binding sites on the fibrils should be occupied. Therefore, the absence of detectable binding implies either a weak affinity for fibrils or a very low stoichiometry, that\u00a0is a very low density of binding sites for AS69 on the fibril surface.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/46112/elife-46112-fig7-v4.jpg)\n\n**Figure 7.:** (a) 12.5 \u03bcM seeds, (b) 12.5 \u03bcM AS69 and 12.5 \u03bcM seeds, (c) 12.5 \u03bcM AS69, 12.5 \u03bcM seeds and 12.5 \u03bcM monomer, and (d) 12.5 \u03bcM AS69fusASN and 12.5 \u03bcM seeds.\n\n### AS69 binds to stable \u03b1-synuclein oligomers with comparable affinity as to monomers\n\nWe next tested whether binding of AS69 to oligomeric states of $\\alpha$-synuclein could explain the efficient inhibition of secondary nucleation. The heterogeneous and often transient nature of oligomeric intermediates on the pathway to formation of amyloid fibrils makes any interaction between such species and AS69 difficult to probe. However, monomeric $\\alpha$-synuclein can be converted into kinetically stable oligomers that can be studied in isolation, because they do not readily convert into amyloid fibrils (Lorenzen et al., 2014). Despite it not being likely that these species are fibril precursors, they are intermediate in size and structure between monomeric and fibrillar $\\alpha$-synuclein and hence can serve as a model for AS69 binding to $\\alpha$-synuclein oligomers. Using microscale thermophoresis (MST, Wolff et al., 2016) at neutral pH, we were able to confirm the binding of AS69 to both monomeric (Figure 6\u2014figure supplement 3a) and oligomeric $\\alpha$-synuclein (Figure 6\u2014figure supplement 3b) and provide estimates of the respective binding affinities (ca. 300 nM for monomeric and ca. 30 nM for oligomeric $\\alpha$-synuclein). The former value is in good agreement with results from ITC experiments under the same solution conditions (Figure 1b and Mirecka et al., 2014), whereas the affinity of AS69 to oligomeric $\\alpha$-synuclein has not previously been determined. The finding that AS69 is able to inhibit secondary nucleation in a highly sub-stoichiometric manner in the presence of a large excess of free monomer, to which it binds with high affinity, necessitates that the interactions of AS69 with aggregation intermediates must be of significantly higher affinity, if they are to explain the inhibition. Otherwise the monomer would out-compete the aggregation intermediate for AS69 binding, because\u00a0of the much lower concentration of the latter. An estimate (see Appendix 2 for details) suggests that the affinity of AS69 for aggregation intermediates would need to be several orders of magnitude higher than to $\\alpha$-synuclein monomer to explain an inhibitory effect of the observed magnitude. This required affinity is indeed much higher than the affinity we have determined here for an oligomeric state of $\\alpha$-synuclein.\n\n### A covalent complex of AS69 and \u03b1-synuclein efficiently inhibits secondary nucleation\n\nThe analysis described in the previous section suggests, therefore, that the $\\alpha$-synuclein:AS69 complex itself could be the inhibitory species. The population of this complex is sufficiently high, even at low ratios of AS69:$\\alpha$-synuclein, to interact with a considerable fraction of aggregation intermediates. It is possible, therefore, that while the AS69:$\\alpha$-synuclein complex is unable to incorporate into a fibril end (see section above on the stoichiometric inhibition of fibril elongation), it can interact with oligomeric fibril precursors and block their conversion into fibrils. We tested this hypothesis by producing a molecular construct whereby $\\alpha$-synuclein and AS69 are linked together with a flexible glycine tether that allows formation of an intramolecular complex (AS69fusASN). The formation of the intramolecular complex was verified by performing CD spectroscopy at 222 nm over the temperature range from 10 to 90\u00b0C and fitting the data to a two-state model (Pace et al., 1998) (see Figure 8\u2014figure supplement 1). Both at neutral and mildly acidic pH, the fusion construct AS69fusASN has a higher thermal stability than the free AS69 and, indeed, as the stoichiometric mixture of AS69 and $\\alpha$-synuclein (Table 1). The difference in melting temperatures between the covalent and non-covalent complex can be explained by the differences in the entropy of binding, which is more unfavourable in the case of the non-covalent complex, given the loss of three degrees of freedom of translational motion upon binding.\n\n**Table 1.**\n Melting temperatures, Tm, obtained from fitting of CD melting curves in Figure 8\u2014figure supplement 1.*Data from Gauhar et al. (2014) was refitted to obtain the numerical values listed in the table.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Construct</th>\n      <th>TM [\u00b0C] at pH 7.4</th>\n      <th>TM [\u00b0C] at pH 5</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>AS69</td>\n      <td>37.5(\u00b1\u00a01.6)*</td>\n      <td>*36.5(\u00b1\u00a01.8)</td>\n    </tr>\n    <tr>\n      <td>AS69 + \u03b1-synuclein</td>\n      <td>51.0(\u00b1\u00a00.6)*</td>\n      <td>55.8(\u00b1\u00a00.2)</td>\n    </tr>\n    <tr>\n      <td>AS69fusASN</td>\n      <td>66.5(\u00b1\u00a00.3)</td>\n      <td>66.1 (\u00b1\u00a00.2)</td>\n    </tr>\n  </tbody>\n</table>\n\nWe performed weakly seeded aggregation experiments under conditions where secondary nucleation leads to the amplification of the added seed fibrils (see above) at different concentrations of AS69 (Figure 8a,c), as well as AS69-$\\alpha$-syn complex (Figure 8b,d) We found that the pre-formed complex is a similarly efficient inhibitor as the free AS69 under secondary nucleation conditions (Figure 8e). These results provide strong support for\u00a0our hypothesis that the AS69-$\\alpha$-synuclein complex, covalent or non-covalent, is the species that is responsible for the sub-stoichiometric inhibition of secondary nucleation. Therefore, we propose a model whereby rather than requiring the binding of free AS69 to an aggregation intermediate, the AS69:$\\alpha$-synuclein complex is able to incorporate into a fibril precursor and efficiently prevent it from undergoing the structural rearrangement required to transform into a growth-competent amyloid fibril.\n\n![Figure 8.](https://cdn.elifesciences.org/articles/46112/elife-46112-fig8-v4.jpg)\n\n**Figure 8.:** AS69 and AS69fusASN inhibit $\\alpha$-synuclein fibril amplification to similar extent.(a) and (b) Schematic representations of AS69 and AS69fusASN, respectively.\u00a0(c), (d) Change in ThT fluorescence when a 70 \u03bcM solution of monomeric $\\alpha$-synuclein was incubated with increasing concentrations of AS69 or AS69fusASN, respectively, in sodium acetate buffer (pH 5.0) under quiescent conditions. (e) Relative maximum rate of aggregation as a function of the concentration of AS69 (closed circles) and AS69fusASN (open circles). The solid lines correspond to simulations based on the assumption that AS69 acts only through monomer sequestration, for different values of the monomer dependence (reaction order) of secondary nucleation (see Appendix 2 for details).\n\n![Figure 8\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/46112/elife-46112-fig8-figsupp1-v4.jpg)\n\n**Figure 8\u2014figure supplement 1.:** (a) Melting curves of 25 \u03bcM AS69, 25 \u03bcM\u00a0AS69 + 25 \u03bcM $\\alpha$-synuclein in 20 mM sodium acetate pH 5.0, and 25 \u03bcM AS69fusASN 20 mM sodium acetate pH 5.0, 17.5 \u03bcM AS69fusASN 20 mM phosphate buffer 50 mM NaCl pH 7.4.\n\n![Figure 8\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/46112/elife-46112-fig8-figsupp2-v4.jpg)\n\n**Figure 8\u2014figure supplement 2.:** (a) The numerically computed first derivatives (using a 10-point rolling average) of the weakly seeded kinetic time courses shown in Figure 8c. (b) the numerically computed first derivatives (using a ten point rolling average) of the weakly seeded kinetic time courses shown in Figure 8d.\n\n### AS69 inhibits lipid-induced aggregation of \u03b1-synuclein\n\nHaving established and rationalised the high efficiency of AS69 to inhibit autocatalytic amplification of $\\alpha$-synuclein amyloid fibrils through secondary nucleation, we next investigated whether the de novo formation of $\\alpha$-synuclein amyloid fibrils is also efficiently inhibited. As experimental setup, we chose a recently developed paradigm of lipid-induced aggregation (Galvagnion et al., 2015), which allows analysis\u00a0of the resulting kinetic data in a more quantitative manner compared to the widely employed conditions of strong mechanical agitation and high affinity multiwell plate surfaces. In the latter conditions, the dominant role of the air-water interface (Campioni et al., 2014) as well as of fragmentation have rendered\u00a0challenging quantitative analysis of the resulting data. In the lipid-induced aggregation, under quiescent conditions and in non-binding plates, the nucleation on the lipid vesicles is the dominant source of new $\\alpha$-synuclein amyloid fibrils. We therefore probed the inhibitory effect of AS69 on lipid vesicle (DMPS-SUV)-induced aggregation of $\\alpha$-synuclein (Figure 9a,b). We then analysed the early times of the kinetic traces using a single-step nucleation model (Figure 9c) that includes only primary nucleation and fibril elongation (see Appendix 3). The results reveal that AS69 inhibits lipid-induced aggregation at sub-stoichiometric concentrations to $\\alpha$-synuclein in a concentration-dependent manner (Figure 9c). To characterise the system $\\alpha$-synuclein-AS69-DMPS-SUV in more detail, we performed titration experiments where we varied the concentration of SUVs at constant $\\alpha$-synuclein:AS69 ratios of 10:1 and 1:1. We monitored the formation of $\\alpha$-helical structure, induced by binding of $\\alpha$-synuclein to the DMPS-SUV by circular dichroism (CD) spectroscopy (Figure 9\u2014figure supplement 1a\u2013c). We find that the system is well-described as a competition between the AS69 and the lipid vesicles for the monomeric $\\alpha$-synuclein (Figure 9\u2014figure supplement 1d and see Materials\u00a0and\u00a0methods section for details of the mathematical analysis). We simulated the effects that AS69 has on the aggregation process of $\\alpha$-synuclein in the presence of lipids, assuming that sequestration of free monomer is the only mechanism through which AS69 inhibits the aggregation reaction (Figure 9c). The results show that the lipid-induced aggregation of $\\alpha$-synuclein is inhibited by AS69 significantly more strongly than predicted by monomer sequestration alone. However, before being able to conclude that AS69 inhibits the lipid-induced aggregation of $\\alpha$-synuclein through a mechanism similar to that defined above for secondary nucleation, it needs to be established whether or not AS69 can directly interact with the lipid vesicles and exert an inhibitory effect through this interaction. We have previously reported that this type of inhibition is displayed by $\\beta$-synuclein, a homologous protein which directly competes with $\\alpha$-synuclein for binding sites on the lipid vesicles (Brown et al., 2016). To test for a direct interaction between AS69 and the DMPS-SUV, we performed both isothermal titration and differential scanning calorimetry (ITC and DSC, Figure 9\u2014figure supplement 2). We find that the melting temperature of DMPS vesicles is decreased in the presence of AS69 (Figure 9\u2014figure supplement 2a,b) and, furthermore, titration of AS69 into DMPS-SUV reveals a complex signature of heat release and consumption (Figure 9\u2014figure supplement 2c,d). While a detailed analysis of this interaction behaviour is beyond the scope of the present study, taken together these calorimetric experiments suggest indeed a direct interaction between AS69 and DMPS-SUV. Therefore, despite AS69 appearing to be a more potent inhibitor of lipid-induced aggregation than $\\beta$-synuclein, with similar inhibitory effects for very different ratios of inhibitor to $\\alpha$-synuclein of 5:1 ($\\beta$-synuclein) and 1:10 (AS69), it cannot be excluded that the same mechanism of inhibition contributes significantly to the overall inhibitory effect in lipid-induced aggregation.\n\n![Figure 9.](https://cdn.elifesciences.org/articles/46112/elife-46112-fig9-v4.jpg)\n\n**Figure 9.:** (a) Schematic representation of lipid-induced aggregation (Galvagnion et al., 2015).\u00a0(b) Change in ThT fluorescence intensity when a 70 \u03bcM solution of monomeric $\\alpha$-synuclein was incubated with 100 \u03bcM DMPS-SUVs and increasing concentrations of AS69 in 20 mM phosphate buffer (pH 6.5) under quiescent conditions. (c) Relative rate of lipid-induced formation of $\\alpha$-synuclein amyloid fibrils as a function of the concentration of AS69. The solid line corresponds to a simulation based on the assumption that AS69 acts only through monomer sequestration (see Appendix 3 for details).\n\n![Figure 9\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/46112/elife-46112-fig9-figsupp1-v4.jpg)\n\n**Figure 9\u2014figure supplement 1.:** Influence of AS69 on the lipid-binding of $\\alpha$-synuclein monitored using circular dichroism.(a),\u00a0(b) CD spectra of $\\alpha$-synuclein (20 \u03bcM) in the presence of increasing concentrations of DMPS and 2 (a) or 20 (b)\u00a0\u03bcM AS69. (c) Change in the CD signal of $\\alpha$-synuclein measured at 222 nm when the protein was incubated in the presence of 2 (black dots) or 20 (blue dots) \u03bcM AS69 and increasing concentrations of DMPS. (d) Change in the fraction of $\\alpha$-synuclein bound to DMPS vesicles in the presence of 2 (black dots) or 20 (blue dots) \u03bcM AS69. The solid lines correspond to predictions of the fraction of bound protein calculated using a competitive binding model with the binding constants previously determined for the systems DMPS:$\\alpha$-synuclein (Galvagnion et al., 2015) and AS69:$\\alpha$-synuclein (Mirecka et al., 2014).\n\n![Figure 9\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/46112/elife-46112-fig9-figsupp2-v4.jpg)\n\n**Figure 9\u2014figure supplement 2.:** Calorimetric experiments designed to elucidate the molecular mechanism of inhibition of lipid-induced aggregation of $\\alpha$-synuclein by AS69.(a) DSC thermographs of 1 mM DMPS incubated in the absence (black) and the presence of 50 \u03bcM $\\alpha$-synuclein (blue), 50 \u03bcM AS69 (orange) or 50 \u03bcM $\\alpha$-synuclein and 50 \u03bcM AS69 (red). (b) Differential scanning calorimetry (DSC) thermographs of 1 mM DMPS incubated in the absence (black) or the presence of 33 \u03bcM $\\alpha$-synuclein (blue), 33 \u03bcM $\\alpha$-synuclein and 3.3 \u03bcM AS69 (purple), 33 \u03bcM $\\alpha$-synuclein and 33 \u03bcM AS69 (red) or 3.3 \u03bcM AS69 (orange). The green curve corresponds to the DSC thermograph of the mixture 33 \u03bcM $\\alpha$-synuclein and 33 \u03bcM AS69 (red). (c),\u00a0(d) Isothermal titration calorimetry (ITC) experiments, in which a solution of 0.47 mM AS69 was titrated into 0.5 mM DMPS in 20 mM phosphate buffer pH 6.5 at 30\u00b0C, corresponding to the conditions under which the lipid-induced aggregation of $\\alpha$-synuclein had been studied. These ITC experiments provide a direct confirmation of the binding of AS69 to lipid vesicles. The binding behaviour is complex and corresponds to more than one type of interaction. Therefore it is not straightforward to determine the binding affinity from these data.\n\n## Discussion\n\nThe $\\beta$-wrapin AS69 is a small engineered monomer binding protein that upon coupled folding-binding induces a local $\\beta$-hairpin conformation in the region comprising amino acid residues 37\u201354 of otherwise intrinsically disordered monomeric $\\alpha$-synuclein (Figure 1). AS69 shows strongly sub-stoichiometric inhibition of $\\alpha$-synuclein aggregation in vitro, which is remarkable for a monomer binding-protein (Mirecka et al., 2014). Here, we show that potent aggregation inhibition of AS69 can be recapitulated in cell culture as well as an animal model. In cell culture, AS69 interfered with the interaction between tagged $\\alpha$-synuclein molecules as judged by a fluorescence complementation assay and reduced the formation of visible aggregate particles of GFP-tagged $\\alpha$-synuclein (Figure 2). In fruit flies, co-expression of AS69 led to reduced abundance of large molecular weight aggregates of tagged $\\alpha$-synuclein and rescue of the motor phenotype resulting from neuronal expression of untagged A53T-$\\alpha$-synuclein (Figure 3). While the nature of the $\\alpha$-synuclein aggregates formed inside the cells and fly neurons remains elusive, these results show that AS69 is able to interact with different constructs and forms of $\\alpha$-synuclein in vivo, and hence its inhibition of $\\alpha$-synuclein amyloid fibril formation observed in vitro (Mirecka et al., 2014) warrants further in-depth analysis. Our detailed biophysical in vitro aggregation experiments under well-defined conditions enabled us to reveal several distinct modes of inhibition of $\\alpha$-synuclein amyloid fibril formation by AS69, as\u00a0summarised in Figure 10. First, as expected for a monomer-binding species, AS69 inhibits fibril growth in a strictly stoichiometric manner, suggesting that the non-covalent AS69-$\\alpha$-synuclein complex is unable to add onto a fibril end and elongate the fibril. This is consistent with our results from DGC\u00a0regarding the lack of a detectable interaction between AS69 and fibrils. Second, AS69 is found to be a very efficient inhibitor of secondary nucleation at highly sub-stoichiometric ratios. The overall result of our experimental and theoretical analysis is that this inhibitory effect is unlikely to stem from a direct interaction between the AS69 and either fibril surfaces or secondary nucleation intermediates. Such an interaction would need to be of an unrealistically higher affinity than the interaction between AS69 and $\\alpha$-synuclein monomer. A possible solution to this conundrum is presented by the hypothesis that the AS69-$\\alpha$-synuclein complex is the inhibitory species. This hypothesis gains strong support from our finding that a covalently linked complex is equally as efficient an inhibitor of secondary nucleation as the free AS69 molecule. It is important to note here that this proposed mode of action is very distinct from other types of inhibitory behavior reported previously. For example in the case of nanobodies raised against monomeric $\\alpha$-synuclein, at least stoichiometric amounts of the nanobodies are needed to interfere significantly with unseeded aggregation (Iljina et al., 2017). In the case of molecular chaperones, on the other hand, sub-stoichiometric inhibitory behaviour has been reported previously (Waudby et al., 2010; M\u00e5nsson et al., 2014), but it is usually found that these molecules do not interact significantly with the monomer, but rather bind specifically to aggregated states of the protein. Therefore, the AS69 affibody represents a new paradigm in the inhibition of amyloid fibril formation: strongly sub-stoichiometric inhibition by a tight monomer-binding species. In this scenario, it\u00a0is\u00a0not the inhibitor itself that\u00a0plays the role of a molecular chaperone, that\u00a0is interacting with an on-pathway species and interfering with its further evolution, but rather the monomer-inhibitor complex acts as a chaperone. This mode of action represents a range of significant advantages over the other previously described modes of action (i.e. monomer sequestration and direct interaction with aggregation intermediates). First, it is rather straightforward to develop further molecules that bind to the monomeric forms of proteins, given that the latter are well-defined, reproducible and easy to handle. This simplicity is in contrast to the difficulty presented by targeting on-pathway aggregation intermediates which are difficult to isolate for the development of inhibitors. Second, binders of oligomeric aggregation intermediates can be expected to be less specific compared to binders of a well-defined monomeric state, as suggested by the existence of antibodies that interact with protofibrillar species independently of the protein from which they have formed (Kayed et al., 2003). This lack of specificity can potentially lead to cross-reactivity and side effects. And third, the mode of inhibition presented here avoids the need for stoichiometric amounts of inhibitors that are usually required in the case of monomer-sequestering species, resulting in a more efficient inhibition. Interestingly, we find that AS69 is a similarly potent inhibitor in a lipid-induced aggregation paradigm, whereby heterogeneous primary, rather than secondary, nucleation is the dominant source of new aggregates. However, we found the inhibitory effect in this case possibly also stemmed from a direct interaction between AS69 and the lipid vesicles. It is therefore not straightforward to decide whether the dominant mechanism of inhibition by AS69 in heterogeneous primary and secondary nucleation is closely related.\n\n![Figure 10.](https://cdn.elifesciences.org/articles/46112/elife-46112-fig10-v4.jpg)\n\n**Figure 10.:** Summary of mechanisms by which AS69 inhibits amyloid fibril formation of $\\alpha$-synuclein in vitro.\n\nAn inhibitor functioning according to this dual mode, that\u00a0is being active both as\u00a0a free molecule and as a complex with monomeric $\\alpha$-synuclein, is expected to efficiently reduce $\\alpha$-synuclein aggregation in vivo. This is in agreement with the cell culture and fly data we present in this manuscript. Further steps will be to test the effects of AS69 in cell-based fibril seeding assays, in mammalian dopaminergic neurons, and in PD models where synuclein aggregates are formed from endogenous $\\alpha$-synuclein.\n\nIn conclusion, high affinity monomer binders displaying strong sub-stoichiometric inhibition of fibril formation represent attractive agents to interfere with pathological protein aggregation, as a result of their multiple inhibitory action.\n\n## Materials and methods\n\n### Reagents\n\nThioflavin T UltraPure Grade (ThT\u00a0>\u00a095%) was purchased from Eurogentec Ltd (Belgium). Sodium phosphate monobasic (NaH2PO4, BioPerformance Certified\u00a0>99.0%), sodium phosphate dibasic (Na2HPO4, ReagentPlus,\u00a0>99.0%) and sodium azide (NaN3, ReagentPlus,\u00a0>99.5%) were purchased from Sigma Aldrich, UK. 1,2-Dimyristoyl-sn-glycero-3-phospho-L-serine, sodium salt (DMPS) was purchased from Avanti Polar Lipids, Inc, USA.\n\n### Protein preparation\n\n$\\alpha$-synuclein was expressed and purified as described previously (Hoyer et al., 2002; Buell et al., 2014a). To determine the concentrations in solution, we used the absorbance value of the protein measured at 275 nm and an extinction coefficient of 5600 M\u22121cm\u22121. The protein solutions were divided into aliquots, flash-frozen in liquid N2 and stored at \u221280\u00b0C, until used. A pET302/NT-His plasmid carrying AS69 with a N-terminal hexahistag (on each monomer) was expressed and purified as previously described (Mirecka et al., 2014) in E. coli JM109(DE3) with small modifications. Briefly, 20 \u03bcl cell culture from a glycerol stock was used to inoculate 50 ml 2YT (PanReac AppliChem) with 100 \u03bcg / ml ampicillin overnight culture, from which 5 ml was added per 500 ml 2YT medium with 100 \u03bcg / ml ampicillin. Expression was induced when OD600 reached 0.6, using IPTG to a final concentration of 1 mM, after which the cells were grown for an additional 4 h; the temperature of growth and expression was 37\u00b0C and shaking was 110 RPM. Cells were harvested by centrifugation at 5000 g for 20 min at 4\u00b0C, after which the cell pellets were resuspended in 50 mM Tris:Cl pH 8, 500 mM NaCl, 20 mM imidazole, and one protease inhibitor cocktail tablet (Roche) before being placed at \u221220\u00b0C. Cells were thawed and lysed using a probe sonicator (Bandelin, Sonopuls UW 3200, Berlin, Germany) with a MS72 sonotrode, with pulses of 3 s with pauses of 5 s in between for a total of 5 min using 35% maximum power. Cell debris was removed by centrifugation at 13500 g for 20 min, before the supernatant was loaded on a 5 ml Histrap FF (GE Healtcare). A 50 mM imidazole-containing buffer (as opposed to 20 mM; see above) was loaded to remove unspecifically bound material before elution was performed using 250 mM imidazole. The eluate was placed on ice overnight before it was concentrated to a volume < 2.5 ml and then loaded onto a Hiload 16/600 Superdex 75 pg column, that had been equilibrated in 20 mM NaPi, pH 7.4, 50 mM NaCl, for collection of the dimer peak. Protein concentration was measured at 275 nm with an extinction coefficient of 2800 M\u22121\u00a0cm\u22121\u00a0, protein solutions were aliquoted, flash-frozen in in liquid N2 and stored at \u221280\u00b0C. AS69fusASN with a C-terminal hexahistag was expressed from a pET302/CT-His plasmid and purified identically to AS69 with the only exception that an anion exchange chromatography step was included (identical to the one used for $\\alpha$-synuclein). Protein concentration was measured at 275 nm with an extinction coefficient of 8400 M\u22121\u00a0cm\u22121, protein solutions were aliquoted, flash-frozen in in liquid N2 and stored at \u221280\u00b0C.\n\n### Seed fibril formation\n\nSeed fibrils were produced under different solution conditions, depending on\u00a0which type of experiments they were needed\u00a0for (see section on ThT experiments below).\n\n#### Elongation assays\n\nSeed fibrils were produced as described previously (Buell et al., 2014a). 500 \u03bcl samples of $\\alpha$-synuclein at concentrations from 500 to 800 \u03bcM were incubated in 20 mM phosphate buffer (pH 6.5) for 48\u201372 h at ca. 40\u00b0C and stirred at 1500 rpm with a Teflon bar on an RCT Basic Heat Plate (IKA, Staufen, Germany). Fibrils were diluted to a monomer equivalent concentration of 200 \u03bcM, divided into aliquots, flash-frozen in liquid N2 and stored at \u221280\u00b0C. For experiments at pH 6.5 and 5 \u03bcM fibril concentrations, the 200 \u03bcM fibril stock was sonicated between 30 s and 1 min using a probe sonicator (Bandelin, Sonopuls HD 2070, Berlin, Germany), using 10% maximum power and a 50% cycle.\n\n#### Secondary nucleation assays\n\nSeed fibrils were produced in 10 mM acetate buffer at pH 5.0. A\u00a01.2 ml sample of $\\alpha$-synuclein at a concentration of 25 \u03bcM was prepared and aliquoted into 12 wells of a 96-well Half Area Black Flat Bottom Polystyrene NBS Microplate\u00a0(Corning), where a single glass bead of 2.85\u20133.45 mm diameter (Carl Roth) had been added. The\u00a0plate was incubated at 37\u00b0C for 48\u201372 h at 500 RPM. Sonication was performed using a probe sonicator (Bandelin, Sonopuls UW 3200, Berlin, Germany) with a MS72 sonotrode five times for 1 s using 10% maximum power.\n\n### Lipid vesicle preparation\n\nDMPS lipid powder was dissolved in 20 mM phosphate buffer (NaH2PO4/Na2HPO4), pH 6.5, 0.01% NaN3 and stirred at 45\u00b0C for at least 2 h. The solutions were then frozen and thawed five times using dry ice and a water bath at 45\u00b0C. Lipid vesicles were prepared by sonication (Bandelin, Sonopuls HD 2070, 3 \u00d7 5 min, 50% cycle, 10% maximum power) and centrifuged at 15000 rpm for 30 min at 25\u00b0C. The average size of the vesicles was verified by dynamic light scattering (Zetasizer Nano ZSP, Malvern Instruments, Malvern, UK) to ensure a distribution centred at a diameter of 20 nm.\n\n### Circular dichroism (CD) measurements and data analysis of \u03b1-synuclein - lipid interactions in the presence of AS69\n\nSamples were prepared as described before (Galvagnion et al., 2015) by incubating 20 \u03bcM $\\alpha$-synuclein with 2 or 20 \u03bcM AS69 and DMPS concentrations ranging from 0 to 1.2 mM in 20 mM phosphate buffer, pH 6.5, 0.01% NaN3. Far-UV CD spectra were recorded on a JASCO J-810 instrument (Tokyo, Japan) equipped with a Peltier thermally controlled cuvette holder at 30 \u00b0C. Quartz cuvettes with path lengths of 1 mm were used, and the CD signal was measured at 222 nm by averaging 60 individual measurements with a bandwidth of 1 nm, a data pitch of 0.2 nm, a scanning speed of 50 nm/min and a response time of 1 s. The signal of the buffer containing DMPS and different concentrations of AS69 was subtracted from that of the protein. The data were then analysed as described previously (Galvagnion et al., 2015; Brown et al., 2016). First the fraction of protein bound to DMPS for the different [$\\alpha$-synuclein], [DMPS] and [AS69] used in our study was determined using the following equation:\n\n$$\nx_{b}=\\frac{CD_{mes}-CD_{free}}{CD_{bound}-CD_{free}}\n$$\n\nwhere $CD_{free}$ is the signal of $\\alpha$-synuclein measured in the absence of both DMPS and AS69, $CD_{bound}$ is the signal of the $\\alpha$-synuclein measured in the presence of DMPS only under saturating conditions and $CD_{mes}$ is the signal of the $\\alpha$-synuclein measured at a given [DMPS] and [AS69].\n\nThe values of $x_{b}$ obtained from our CD measurements were then compared to those estimated from a competitive binding model where both AS69 and DMPS compete for the binding to $\\alpha$-synuclein molecules using the binding constants of the systems AS69:$\\alpha$-synuclein and DMPS:$\\alpha$-synuclein, determined from previous studies (Mirecka et al., 2014; Galvagnion et al., 2015). We considered the following two equilibria:\n\n$$\n\\alpha+(DMPS)_{L}\u21cc\\alpha(DMPS)_{L}\n$$\n\n\n\n$$\n\\alpha\u00a0+AS69\u21cc\\alpha\u00a0AS69\n$$\n\nthat are described by the following equations:\n\n$$\nK_{D,\\alpha-D\u2062M\u2062P\u2062S}=\\frac{[DMPS_{f}]\u2062[\\alpha_{f}]}{L_{\\alpha}\u2062[\\alpha_{b}]}\n$$\n\n\n\n$$\nK_{D,\\alpha-A\u2062S\u206269}=\\frac{[\\alpha_{f}]\u2062[AS69_{f}]}{[AS69_{b}]}\n$$\n\nwith\n\n$$\n[\\alpha]=[\\alpha_{f}]+[\\alpha_{b}]+[AS69_{b}]\n$$\n\n\n\n$$\n[DMPS]=[DMPS_{f}]+L_{\\alpha}\u2062[\\alpha_{b}]\n$$\n\n\n\n$$\n[AS69]=[AS69_{f}]+[AS69_{b}]\n$$\n\nwhere $K_{D,\\alpha-D\u2062M\u2062P\u2062S}$, $K_{D,\\alpha-A\u2062S\u206269}$ are the binding constants of the system DMPS:$\\alpha$-synuclein and AS69:$\\alpha$-synuclein, respectively; $L_{\\alpha}$ is the stoichiometry in which DMPS binds to $\\alpha$-synuclein, that\u00a0is the number of DMPS molecules interacting with one molecule of $\\alpha$-synuclein; [$\\alpha$ ],[$\\alpha_{f}$], [$\\alpha_{b}$] are the concentrations of total, free and DMPS-bound $\\alpha$-synuclein; [AS69], [AS69f], [AS69b] are the concentrations of total, free and $\\alpha$-synuclein-bound AS69; and [DMPS] and [DMPSf] are the concentrations of total and free $\\alpha$-synuclein. The change in the fraction of protein bound with increasing concentration of DMPS can be described using the standard solution of the cubic equation:\n\n$$\nK_{D,\\alpha-D\u2062M\u2062P\u2062S}=\\frac{([D\u2062M\u2062P\u2062S]-L_{\\alpha}\u2062[\\alpha_{b}])\u2062([\\alpha]-[\\alpha_{b}]-[A\u2062S\u206269_{b}])}{[\\alpha_{b}]\u2062L_{\\alpha}}\n$$\n\n\n\n$$\n[A\u2062S\u206269_{b}]=\\frac{[A\u2062S\u206269]-[\\alpha_{b}]+[\\alpha]+K_{D,\\alpha-A\u2062S\u206269}-\\sqrt{4\u2062([\\alpha_{b}]\u2062[A\u2062S\u206269]-[A\u2062S\u206269]\u2062[\\alpha])+([A\u2062S\u206269]-[\\alpha_{b}]+[\\alpha]+K_{D,\\alpha-A\u2062S\u206269})^{2}}}{2\u2062[\\alpha]}\n$$\n\nIts solution is not shown here because\u00a0of its length. For each data point, the concentrations [$\\alpha_{b}$], [AS] and [DMPS] are known and the equilibrium constants and stoichiometry for the $\\alpha$-synuclein:DMPS and $\\alpha$-synuclein:AS69 systems were set to the values determined previously (Galvagnion et al., 2015; Mirecka et al., 2014).\n\n### DSC and ITC measurements\n\nDSC experiments with lipid vesicles, $\\alpha$-synuclein and AS69 (Figure 9\u2014figure supplement 2a and b) were performed as described previously (Galvagnion et al., 2016). We used a VP-DSC calorimeter (Malvern Instruments, Malvern, UK) at a scan rate of 1\u00b0C\u00a0per minute. The lipid concentration was 1 mM and the protein concentrations are indicated in the figure legend.\n\nITC binding experiments between AS69 and $\\alpha$-synuclein were performed on a Microcal iTC200 calorimeter (GE Healthcare) at 30\u00b0C. The buffer was either 20 mM sodium phosphate, 50 mM NaCl, pH 7.4, or 20 mM sodium acetate, pH 5.0. AS69 was used as titrant in the cell at a concentration of\u00a0approximately 40 \u03bcM, and $\\alpha$-synuclein at approximately 10-fold higher concentration as titrant in the syringe. The heat of post-saturation injections was averaged and subtracted from each injection to correct for heats of dilution and mixing. Data were processed using MicroCal Origin software provided with the calorimeter. Dissociation constants were obtained from a nonlinear least-squares fit to a 1:1 binding model.\n\nITC binding experiments between SUVs made from DMPS and AS69 ( Figure 9\u2014figure supplement 2c and d) were performed using an ITC200 instrument (Malvern Instruments, Malvern, UK). A solution of 0.47 mM AS69 was titrated into 0.5 mM DMPS in 20 mM phosphate buffer pH 6.5 at 30\u00b0C, corresponding to the conditions under which the lipid-induced aggregation of $\\alpha$-synuclein had been studied. An interaction between AS69 and DMPS vesicles can be clearly detected, and the binding behaviour is complex, with an initially exothermic interaction at low protein to lipid ratios, followed by an endothermic interaction at molar ratios higher than 0.05. Because\u00a0of the complex binding signature, it is not straightforward to fit the data and extract a binding affinity but it can be estimated that the binding affinity is in the sub-micromolar range, comparable to that of $\\alpha$-synuclein to the same lipid vesicles (Galvagnion et al., 2015).\n\n### Thioflavin-T (ThT) fluorescence assays of amyloid formation kinetics\n\nThe ThT experiments were performed under two distinct sets of solution conditions. Firstly, we used phosphate buffer (PB) at pH 6.5, where we have previously shown that highly quantitative kinetic data of amyloid fibril growth can be obtained, and where under strongly seeded and quiescent conditions, all nucleation processes can be neglected (Buell et al., 2014a). Furthermore, we also employed mildly acidic solution conditions (acetate buffer at pH 5.0), where secondary nucleation is strongly enhanced and can be conveniently studied (Buell et al., 2014a; Gaspar et al., 2017). In most of the ThT experiments, samples of 100 \u03bcl were loaded into a 96-well Half Area Black Flat Bottom Polystyrene NBS Microplate (Corning, product number 3881). 150 \u03bcl of\u00a0water was added into the wells directly surrounding the wells containing sample, and the outer most wells were not used for experimental measurements. These measures minimise sample evaporation during prolonged kinetic experiments. The plate was sealed using clear sealing tape (Polyolefin Acrylate, Thermo Scientific) and placed inside a platereader (CLARIOStar or FLUOStar Omega, BMG LABTECH, Germany) that had been equilibrated to 37\u00b0C. Data points were obtained every 120\u2013360 s, depending on the duration of the experiment. In some experiments, the fluorescence was read by averaging 12\u201320 points, measured in a ring with a diameter of 3 mm (orbital averaging mode). Excitation and emission in the CLARIOStar (monochromator) was 440 nm (15 nm bandwidth) and 485 nm (20 nm bandwidth), respectively. Excitation and emission in the FLUOStar Omega (filter) was 448 nm (10 nm bandwidth) and 482 nm (10 nm bandwidth), respectively. In addition to the proteins of interest and buffer, all samples contained 0.04% (w/v) NaN3 and 40 or 50 \u03bcM ThT.\n\n### Preparation of fluorescently labelled oligomers\n\nFluorescently labelled $\\alpha$-synuclein oligomers were prepared as described previously (Pinotsi et al., 2014; Wolff et al., 2016). In brief, we produced fluorescently labelled $\\alpha$-synuclein monomer by expressing and purifying the N122C cystein variant of $\\alpha$-synuclein, which was then labelled through an incubation with a 10-fold excess of Alexa 647 maleimide (Thermo Fisher Scientific, Loughborough, UK), followed by removal of the excess dye with a Superdex 200 10/300 Increase gel filtration column (GE Healthcare, Amersham, UK). Wild-type and fluorescently labeled N122C variant $\\alpha$-synuclein were combined at a ratio of 30:1, corresponding approximately to the stoichiometry of the oligomers (Lorenzen et al., 2014), at a total concentration of ca. 200 \u03bcM, dialysed against distilled water for 24 h and lyophilised. The dry protein was redissolved in PBS at concentrations between 500 and 800 \u03bcM and incubated at RT overnight under quiescent conditions. The oligomers were then separated from the monomeric protein and larger aggregates using a Superdex 200 10/300 Increase column that had been equilibrated with 20 mM phosphate buffer pH 7.4 and 50 mM NaCl, collecting fractions of 500 \u03bcl. The exact concentrations of the oligomer fractions are difficult to determine, because\u00a0of the weak absorption signal. However, based on the absorptions at 275 nm and 647 nm, we estimated the oligomer concentration to be 3\u20136 \u03bcM in monomer equivalents, corresponding to an oligomer number concentration of 100\u2013200 nM, which also corresponds roughly to the concentration of Alexa label.\n\n### AFM images\n\n#### pH 6.5\n\nAtomic force microscopy images were taken with a Nanowizard II atomic force microscope (JPK, Berlin, Germany) using tapping mode in air. Solutions containing fibrils were diluted to a concentration of 1 \u03bcM (in monomer equivalents) in water and 10 \u03bcl samples of the diluted solution were deposited on freshly cleaved mica and left to dry for at least 30 min. The samples were carefully washed with ~50 \u03bcl of water and then dried again before imaging.\n\n#### pH 5\n\nAtomic force microscopy images were taken with a Bruker Mulitmode 8 (Billerica, Massachusetts, USA) using ScanAsyst-Air cantilvers (Camarillo,\u00a0California,\u00a0USA) using the ScanAsyst PeakForce tapping in air. 15 \u03bcl of a 0.7 \u03bcM fibril-containing solution was deposited on freshly cleaved mica and incubated for 10 min before the sample was carefully rinsed by applying and removing 100 \u03bcl water three times before the sample was dried under a gentle stream of nitrogen.\n\n### DGC\n\nThe DGC experiments were performed as previously described (R\u00f6sener et al., 2018). We performed DGC experiments both under conditions of neutral pH (pH 7.4), where the reaction is elongation dominated, and under mildly acidic conditions (pH 5.0,) where secondary nucleation strongly contributes to the reaction. We find that under both sets of conditions there is no detectable binding between amyloid fibrils and AS69.\n\n### Thermophoresis experiments\n\nThe thermophoresis experiments with fluorescently labeled monomeric and oligomeric $\\alpha$-synuclein were performed as described previously (Wolff et al., 2016), using a Monolith instrument (Nanotemper, Munich, Germany) and glass capillaries (Nanotemper, Munich, Germany) with hydrophobic coating (oligomeric $\\alpha$-synuclein) or uncoated (monomeric $\\alpha$-synuclein). A two-fold dilution series of AS69 in 20 mM phosphate buffer pH 7.4 with 50 mM NaCl was prepared and then either 10 \u03bcl of 5x diluted oligomers (corresponding to 0.6\u20131.2 \u03bcM) or 1 \u03bcM labelled monomer was added to each sample of the dilution series. We performed the binding experiments under these\u00a0buffer conditions for optimal comparability with previous ITC experiments of AS69 binding to monomeric $\\alpha$-synuclein (Mirecka et al., 2014).\n\nMST experiments were performed at 40% laser power and 75% LED power (oligomers) or 60% laser power and 20% LED power (monomers). For calculation of the relative change in fluorescence from thermophoresis, the cursors were set before the temperature jump followed by 5 s after the temperature jump (oligomers) and 45 s after the temperature jump (monomers).\n\n### CD melting curves\n\nCD melting curves were obtained as described in Gauhar et al. (2014), with the sole difference that slightly higher concentrations of protein were used, and the samples were heated to 90\u00b0C rather than 80\u00b0C. The CD data were fitted directly using a two-state model to obtain the melting temperature, $T_{m}$, as described in Pace et al. (1998):\n\n$$\ny=\\frac{(y_{f}+m_{f}\u2062T)+(y_{u}+m_{u}\u2062T)\u22c5exp\u2061(\\frac{\u0394\u2062H_{m}}{R\u2062T}\u22c5\\frac{T-T_{m}}{T_{m}})}{1+exp\u2061(\\frac{\u0394\u2062H_{m}}{R\u2062T}\u22c5\\frac{T-T_{m}}{T_{m}})}\n$$\n\nusing least-square fitting from the Python packages scipy.optimize.curve_fit. $y$ is the CD signal in mdeg, $y_{f}+m_{f}\u2062T$ and $y_{u}+m_{u}\u2062T$ describes linear change in CD signal of the folded and unfolded state with respect to temperature, respectively, $T$ is the temperature in Kelvin, $R$ is the ideal constant constant, and $\u0394\u2062H_{m}$ is the change in enthalpy at $T_{m}$.\n\n### Cell culture and transfections\n\nHEK293 cells (RRID CVCL0063) were obtained from the Department of Biochemistry, RWTH Aachen University, Aachen, Germany, and were cultured and transfected using Metafectene as previously described (Dinter et al., 2016). Cell line authentication was performed by Eurofins Forensik, using PCR-single-locus-technology. Cell lines were tested for mycoplasma contamination. HEK293T cells were used because they are the established cell line for our protocol. A53T-$\\alpha$-synuclein flexibly tagged with EGFP by the interaction of a PDZ domain with its binding motif was previously described (Opazo et al., 2008; Dinter et al., 2016). WT and A53T-$\\alpha$-synuclein tagged by the C-terminal and N-terminal half of Venus was obtained from Prof. Tiago Outeiro (University of Goettingen, Germany).\n\n### Immunoblots\n\nImmunoblots were carried out 24 h after transfection as previously described (Dinter et al., 2016) using NP40 lysis buffer containing protease inhibitors (Pierce, Thermo Fisher Scientific) and the following primary antibodies: rabbit anti-$\\alpha$-synuclein (1:500, No. 2642, Cell Signalling Technology, Danvers, USA), mouse anti-beta-tubulin (1:1000, E7, Developmental Studies Hybridoma Bank, Iowa, USA). Secondary antibodies were anti-mouse IgG (NXA931) and anti-rabbit IgG (NA934V) from GE Healthcare Life Sciences (1:10000). These antibodies produce several nonspecific bands that are also visible in cells not expressing $\\alpha$-synuclein. Among the bands around 20 kDa observed with the $\\alpha$-synuclein antibody, only the upper band is considered specific and was used for quantification (see Dinter et al., 2016 for details).\n\n### Flow cytometry\n\nCells were grown in six-well plates and used 24 h after transfection. Adherent cells were washed with phosphate buffer saline (PBS) three times and detached with trypsin. Subsequently, cells were collected in FACS tubes, centrifuged for 5 min at 2000 rpm and washed again with PBS. Cell pellets were finally resuspended in 200 \u03bcl of PBS. Flow cytometry was carried out by a FACSCalibur (BD Biosciences) using forward and sideward scatter to gate cells and a fluorescence threshold of 300 AFU to detect cells with Venus (YFP) fluorescence. This threshold was determined from measurements with untransfected cells and cells expressing either the N-terminal or the C-terminal half of Venus only.\n\n### Microscopy\n\nFor classification of EGFP distribution patterns, cells were grown on coverslips and fixed 24 h after transfection. The distribution of EGFP fluorescence was classified manually by a blinded observer into the categories 'homogenous distribution', 'containing particles' and 'unhealthy' (round, condensed cells) using an Olympus IX81 fluorescence microscope (60x oil objective, NA 1.35). At least 100 cells per coverslip were classified. In each experiment, three coverslips were evaluated per group and the results averaged.\n\n### Drosophila stocks\n\nFlies expressing A53T-$\\alpha$-synuclein in neurons, $w[*];;P{w[+mC]=GAL4-elav.L}$, $P{w[+mC]=UAS-HsapSNCA.A53T}$ and flies expressing GFP under control of GAL4 $w[*];P(acman){w[+]=UAS-GFP}5$ were previously described (Dinter et al., 2016). Flies expressing AS69 under control of GAL4, $w[118];;P{w[+]=UAS-AS69}$, were generated using standard P-element transformation (BestGene Inc). Expression of A53T-$\\alpha$-synuclein fused to VN and VC in neurons was achieved by genetically crossing and recombining flies carrying GAL4 under the elav promoter and VN and VC tagged A53T-$\\alpha$-synuclein under the UAS promoter. The resulting genotype of these flies is $P{w[+mW.hs]=GawB}elav[C155];P[w[+]=UAS-HsapSNCA[A53T]:VC]$, $P\u2062B\u2062a\u2062c\u2062{a\u2062t\u2062t\u2062B\u2062[+m\u2062C]=U\u2062A\u2062S-V\u2062N:H\u2062s\u2062a\u2062p\u2062S\u2062N\u2062C\u2062A\u2062[A\u206253\u2062T]}/C\u2062y\u2062o$. Flies expressing 'always early RNAi', w[1118]; P${G\u2062D\u20624261}$v13673, were used as control in experiments conducted with the A53T-$\\alpha$-synuclein VN/VC expressing flies. These flies have been shown to have no effect in genetic screens for modifiers in neurodegenerative disease models. Flies were raised and maintained at 25\u00b0C under a 12 h dark/light cycle.\n\n### Climbing assay and fly head immunoblot\n\nVirgins of the stock $w[\u2217];;P{w[+mC]=GAL4\u2212elav.L}$, $P{w[+mC]=UAS-HsapSNCA.A53T}$ were either crossed to males $w[118];;P{w[+]=UAS\u2212AS69}$, or $w[*];P(acman)]{w[+]=UAS-GFP}$5 (control). In the F1-progeny we selected for males with pan neural [A53T]$\\alpha$-synuclein and either AS69 or GFP concomitant expression. Climbing analysis was performed 5, 15 and 25 days post eclosion as previously described (Dinter et al., 2016). For each time point and per genotype 10 flies were analyzed in 10 tapping experiments with 60 s resting interval and the results averaged. The crosses were repeated n\u00a0=\u00a03 times.\n\nIn parallel, 10 fly heads from the F1-progeny and also from male w[*]; P(acman)w[+]=UAS GFP flies were homogenized in 100 \u03bcl RIPA buffer using the Speedmil P12 (Analytik Jena AG). The lysates were centrifuged at 12000 rpm for 10 min and the supernatant collected and used for immunoblot analysis. The following primary antibodies were used: mouse anti-$\\alpha$-synuclein (1:500, syn204, ab3309, Abcam) and mouse anti-syntaxin (1:500, 8C3, Developmental Studies Hybridoma Bank, Iowa, USA). Secondary antibody was anti-mouse IgG (NXA931) from GE Healthcare Life Sciences (1:5000).\n\n### Fly head filter trap assay\n\nVirgins of the stock $P{w[+mW.hs]=GawB}elav[C155]$, PBac${a\u2062t\u2062t\u2062B\u2062[+m\u2062C]=U\u2062A\u2062S-V\u2062N:H\u2062s\u2062a\u2062p\u2062S\u2062N\u2062C\u2062A\u2062[A\u206253\u2062T]}/C\u2062y\u2062o$ were either crossed to $w[118];;P{w[+]=UAS\u2212AS69}$ or $w[1118];P{GD4261}v13673$ (control) males. In the F1-progeny we selected for males with pan neural [A53T]$\\alpha$-synuclein and either AS69 or 'always early RNAi' concomitant expression. 10 fly heads were homogenized in 100 \u03bcl RIPA buffer using the Speedmill P12. The lysates were centrifuged at 12000 rpm for 10 min at 4\u00b0C and the supernatant collected. For the filter trap assay, equal protein amounts of RIPA fly head lysates (30 \u03bcg) were adjusted to equal volumes. An equal volume of urea buffer (8 M) was subsequently added, samples were incubated rolling at 4\u00b0C for 1 h and sonicated in a water bath for 10 min. SDS and DTT were added to a final concentration of 2% and 50 mM. Using a dot blot filtration unit, the resulting solutions were filtered through a 0.2 \u03bcm nitrocellulose membrane (Whatman) previously equilibrated with 0.1% SDS in TBS and afterwards washed in TBS-T. Membranes were further treated as an immunoblot described previously.\n",
+      "created_at": "2025-12-02T11:46:17.937749Z"
+    },
+    {
+      "id": "b5093239-034e-45a3-9111-ed261c725af3",
+      "submission_id": "cd8b3ba2-8059-41c7-843e-d5f3a928cbaa",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Andrew B West, Duke University United States\n\nReviewers:\n- Andrew B West, Duke University United States\n- Laura A Volpicelli-Daley, University of Alabama at Birmingham United States\n\n## Review text\n\nDOI: [10.7554/eLife.46112.sa1](https://doi.org/10.7554/eLife.46112.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nThank you for submitting your article \"An engineered monomer binding-protein for \u03b1-synuclein efficiently inhibits the proliferation of amyloid fibrils\" for consideration by eLife. Your article has been reviewed by three peer reviewers, including Andrew B West as the Reviewing Editor and Reviewer #1, and the evaluation has been overseen by Huda Zoghbi as the Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Laura A Volpicelli-Daley (Reviewer #2).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nThe work by Buell et al., follows on from earlier work that further characterizes a binding partner of \u03b1-synuclein that can mitigate toxic conversion, especially to fibrillar assemblies. The authors show in vitro and in simple models that AS69 inhibits fibril elongation and fibril secondary nucleation. Interestingly the inhibition of secondary nucleation by AS69 can occur in the presence of excess monomer. These experiments may well extend to other proteins with amyloidogenic properties linked to disease.\n\nEssential revisions:\n\n1) The BiFC assays are over-interpreted and not convincing. \u03b1-synuclein can form native oligomers that are normal and functional (Dettmer et al., 2015), or oligomers that are \u03b2-sheet and toxic/pathogenic (Chen et al., 2003). Using the BiFC assay, can a PMCA assay using lysates from these cells be performed to show that the aggregates formed in the HEK293 can seed fibril formation? Are the aggregates insoluble in nonionic detergents? Do the aggregates produce 10-15 nm filaments in electron microscopy as shown in Parkinson's disease brains? Alternatively, more advanced HEK-fibril-seeding cell-based assays (also involving HEK-cells over-expressing \u03b1-synuclein) are now widely in use that provide more specific endpoints and quantifiable features specific to fibril formation. Some reviewers feel it is imperative to study \u03b1-synuclein oligomerization without the use of tags that alter the kinetics and binding.\n\n2) For the fly model, it is not clear that this experiment has all the necessary controls. What about flies with no GFP or AS69? Or flies with AS69+GFP? The dot blot of \"aggregated synuclein\" is not sufficient: common in analysis is sequential extraction of \u03b1-synuclein extraction in RIPA, followed by extraction of the pellet in 2% SDS, then extraction of any remaining pellet in Urea. Does AS69 prevent \u03b1-synuclein from forming insoluble aggregates? (see Davis et al., 2016, Figure 4 and Figure 5 as examples). For these data, it is important to show the entire blot instead of blots cropped at 15 kDa to determine if higher molecular weight synuclein is formed. Do the flies show loss of dopamine neurons that are rescued by AS69?\n\n3) A critical missing piece from the in vitro assay set is the effect of substrate binding on spontaneous fibril formation, which is different from low-concentration seeding assays. Acknowledging increased variability associated with spontaneous fibril formation, assays could still be devised (and have been done in past studies) in normalized way that would lead to new conclusions that would either support or refute the present hypothesis from seeded-based in vitro assays. Further, AS69 should be demonstrated to interact with monomer and not fibril in a density gradient run. Right now, the monomer control interacting with AS69 under centrifugation conditions is missing.\n\n4) Further information is needed on AS69 purification, all blots should be presented in full form, and full methods in place. There are no space limitations that should affect the way data are presented, no reason to significantly cross-reference other studies for methods and tools, and experiments need to be completed with full controls.\n",
+      "created_at": "2025-12-02T11:46:17.937749Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T11:46:17.937749Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T11:46:17.937749Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "bc477adb-f627-44a4-b691-e1f678a33378",
+      "content_id": "cb08eab6-93db-46c0-b16f-e33e681f562e",
+      "claim_id": "C1",
+      "claim": "AS69 is a \u03b2-wrapin engineered to bind monomeric \u03b1-synuclein with high affinity.",
+      "claim_type": "EXPLICIT",
+      "source": "To this end, we have engineered the \u03b2-wrapin AS69 to bind monomeric \u03b1-synuclein with high affinity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the abstract and supported by the structural model and binding data presented in Figure 1.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:46:17.937749Z"
+    },
+    {
+      "id": "9481a789-f32f-4301-8cea-5b8eab51f3e0",
+      "content_id": "cb08eab6-93db-46c0-b16f-e33e681f562e",
+      "claim_id": "C2",
+      "claim": "AS69 reduced the self-interaction of \u03b1-synuclein in cultured cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In cultured cells, AS69 reduced the self-interaction of \u03b1-synuclein and formation of visible \u03b1-synuclein aggregates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the bimolecular fluorescence complementation (BiFC) assay data shown in Figure 2b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:46:17.937749Z"
+    },
+    {
+      "id": "33b230ca-c5a8-4f7c-8a9b-76f352672e84",
+      "content_id": "cb08eab6-93db-46c0-b16f-e33e681f562e",
+      "claim_id": "C3",
+      "claim": "AS69 reduced formation of visible \u03b1-synuclein aggregates in cultured cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In cultured cells, AS69 reduced the self-interaction of \u03b1-synuclein and formation of visible \u03b1-synuclein aggregates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by the microscopy data showing reduced particle formation in cells expressing AS69 (Figure 2e,f).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:46:17.937749Z"
+    },
+    {
+      "id": "b74da97a-3019-497d-8e0b-d0f2b4dd0041",
+      "content_id": "cb08eab6-93db-46c0-b16f-e33e681f562e",
+      "claim_id": "C4",
+      "claim": "AS69 reduced \u03b1-synuclein aggregates in flies.",
+      "claim_type": "EXPLICIT",
+      "source": "In flies, AS69 reduced \u03b1-synuclein aggregates and the locomotor deficit resulting from \u03b1-synuclein expression in neuronal cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the filter trap assay data from Drosophila melanogaster shown in Figure 3d,e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:46:17.937749Z"
+    },
+    {
+      "id": "a91a09c6-bbf7-4b60-806b-73a06b13430c",
+      "content_id": "cb08eab6-93db-46c0-b16f-e33e681f562e",
+      "claim_id": "C5",
+      "claim": "AS69 reduced the locomotor deficit resulting from \u03b1-synuclein expression in neuronal cells in flies.",
+      "claim_type": "EXPLICIT",
+      "source": "In flies, AS69 reduced \u03b1-synuclein aggregates and the locomotor deficit resulting from \u03b1-synuclein expression in neuronal cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by the climbing assay data in Drosophila melanogaster shown in Figure 3b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:46:17.937749Z"
+    },
+    {
+      "id": "d90741bc-f9dd-4ab3-856a-8b77dace5a58",
+      "content_id": "cb08eab6-93db-46c0-b16f-e33e681f562e",
+      "claim_id": "C6",
+      "claim": "AS69 highly sub-stoichiometrically inhibited both primary and autocatalytic secondary nucleation processes in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "In biophysical experiments in vitro, AS69 highly sub-stoichiometrically inhibited both primary and autocatalytic secondary nucleation processes, even in the presence of a large excess of monomer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the kinetic data shown in Figures 6 and 9.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:46:17.937749Z"
+    },
+    {
+      "id": "e53fbd3c-c566-4514-9512-e4f8bc1a04dd",
+      "content_id": "cb08eab6-93db-46c0-b16f-e33e681f562e",
+      "claim_id": "C7",
+      "claim": "AS69 inhibited nucleation processes even in the presence of a large excess of monomer.",
+      "claim_type": "EXPLICIT",
+      "source": "In biophysical experiments in vitro, AS69 highly sub-stoichiometrically inhibited both primary and autocatalytic secondary nucleation processes, even in the presence of a large excess of monomer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by experiments with high monomer:AS69 ratios shown in Figures 6 and 9.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:46:17.937749Z"
+    },
+    {
+      "id": "e081a71f-1a1b-4c38-8e1a-993a482d1762",
+      "content_id": "cb08eab6-93db-46c0-b16f-e33e681f562e",
+      "claim_id": "C8",
+      "claim": "The AS69-\u03b1-synuclein complex, rather than the free AS69, is the inhibitory species responsible for sub-stoichiometric inhibition of secondary nucleation.",
+      "claim_type": "EXPLICIT",
+      "source": "We present evidence that the AS69-\u03b1-synuclein complex, rather than the free AS69, is the inhibitory species responsible for sub-stoichiometric inhibition of secondary nucleation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the data showing that the covalent AS69fusASN complex is equally effective as free AS69 (Figure 8).",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:46:17.937749Z"
+    },
+    {
+      "id": "1628d82a-3fac-4aa9-9e11-82c5d83bec11",
+      "content_id": "cb08eab6-93db-46c0-b16f-e33e681f562e",
+      "claim_id": "C9",
+      "claim": "High affinity monomer binders can lead to strongly sub-stoichiometric inhibition of nucleation processes.",
+      "claim_type": "EXPLICIT",
+      "source": "These results represent a new paradigm that high affinity monomer binders can lead to strongly sub-stoichiometric inhibition of nucleation processes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental results showing sub-stoichiometric inhibition by AS69.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:46:17.937749Z"
+    },
+    {
+      "id": "f87c3325-88e0-4b14-82b2-12fe972203c3",
+      "content_id": "cb08eab6-93db-46c0-b16f-e33e681f562e",
+      "claim_id": "C20",
+      "claim": "Introduction of a disulfide bond in the region comprising residues 37\u201354 strongly modulates \u03b1-synuclein aggregation.",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, modification of the local conformation by, for example, introduction of a disulfide bond strongly modulates aggregation (Shaykhalishahi et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the citation to Shaykhalishahi et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:46:17.937749Z"
+    },
+    {
+      "id": "85a62b74-2403-4b89-af0b-1ca7488e02de",
+      "content_id": "cb08eab6-93db-46c0-b16f-e33e681f562e",
+      "claim_id": "C22",
+      "claim": "Co-expression of AS69 with both WT and A53T \u03b1-synuclein reduced the number and fraction of fluorescent cells in the BiFC assay.",
+      "claim_type": "EXPLICIT",
+      "source": "Co-expression of AS69 with both variants reduced the number and fraction of fluorescent cells (Figure 2b, p<0.05 for WT and p<0.01 for A53T, two-way ANOVA).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the flow cytometry data shown in Figure 2b with statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:46:17.937749Z"
+    },
+    {
+      "id": "5abafbad-d0e9-4e04-9950-e8c30127b2cf",
+      "content_id": "cb08eab6-93db-46c0-b16f-e33e681f562e",
+      "claim_id": "C29",
+      "claim": "Fibril elongation is inhibited by AS69 in a stoichiometric concentration-dependent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "The results indicate that fibril elongation is indeed inhibited by AS69 in a stoichiometric concentration-dependent manner (Figure 4c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the kinetic data and analysis shown in Figure 4c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:46:17.937749Z"
+    },
+    {
+      "id": "6a6766b4-af17-4185-b921-c528d5066f36",
+      "content_id": "cb08eab6-93db-46c0-b16f-e33e681f562e",
+      "claim_id": "C32",
+      "claim": "Fibrils formed in the presence of increasing concentrations of AS69 are morphologically indistinguishable from the fibrils formed in the absence of AS69.",
+      "claim_type": "EXPLICIT",
+      "source": "This conclusion is supported by the finding that the fibrils formed in the presence of increasing concentrations of AS69 are morphologically indistinguishable from the fibrils formed in the absence of AS69 (as judged from AFM images, see Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the AFM images shown in Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:46:17.937749Z"
+    },
+    {
+      "id": "2ba49861-7080-4fc6-8e95-0d7611cd0313",
+      "content_id": "cb08eab6-93db-46c0-b16f-e33e681f562e",
+      "claim_id": "C33",
+      "claim": "AS69 does not show a preferential interaction with fibril ends.",
+      "claim_type": "EXPLICIT",
+      "source": "Our kinetic analysis of fibril elongation in the presence of AS69 does not, however, suggest a preferential interaction with fibril ends, as such an interaction can be expected to lead to a sub-stoichiometric inhibition of fibril elongation, which is not observed in our experiments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the stoichiometric nature of the inhibition observed in the elongation experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:46:17.937749Z"
+    },
+    {
+      "id": "421da49c-8a3b-4c4e-a932-93ebc669ef05",
+      "content_id": "cb08eab6-93db-46c0-b16f-e33e681f562e",
+      "claim_id": "C35",
+      "claim": "Density gradient centrifugation of samples containing only seeds and AS69 did not show AS69 to co-migrate with large species to any significant extent under conditions that favour elongation.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, density gradient centrifugation (DGC) of samples containing only seeds and AS69 (Figure 5a and b) did not show AS69 to co-migrate with large species to any significant extent under conditions that favour elongation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the DGC data shown in Figure 5a,b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:46:17.937749Z"
+    },
+    {
+      "id": "e6d9a7a5-0482-465c-bc45-248c3f613fbb",
+      "content_id": "cb08eab6-93db-46c0-b16f-e33e681f562e",
+      "claim_id": "C37",
+      "claim": "Under mildly acidic solution conditions with very low concentrations of pre-formed fibrils under quiescent conditions, seeded aggregation is inhibited by AS69 in a strongly sub-stoichiometric manner.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that under these solution conditions, where only growth and secondary nucleation contribute to the increase in fibril mass and number, respectively, the seeded aggregation is inhibited in a strongly sub-stoichiometric manner (Figure 6b,c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the kinetic data shown in Figure 6b,c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:46:17.937749Z"
+    },
+    {
+      "id": "fd48ba57-b25d-41f5-9810-10abdac22731",
+      "content_id": "cb08eab6-93db-46c0-b16f-e33e681f562e",
+      "claim_id": "C41",
+      "claim": "Co-migration in the density gradient of AS69 with fibrils was undetectable under secondary nucleation-inducing solution conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "To investigate whether AS69 binds to the fibril surface under these secondary nucleation-inducing solution conditions, we performed additional DGC experiments. Co-migration in the density gradient of AS69 with fibrils, which would imply direct interactions between these species, was undetectable (Figure 7a\u2013c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the DGC data shown in Figure 7a-c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:46:17.937749Z"
+    },
+    {
+      "id": "c46e3376-3b7f-4c4a-9b91-ea52279a6152",
+      "content_id": "cb08eab6-93db-46c0-b16f-e33e681f562e",
+      "claim_id": "C45",
+      "claim": "The pre-formed AS69-\u03b1-synuclein complex is a similarly efficient inhibitor as the free AS69 under secondary nucleation conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the pre-formed complex is a similarly efficient inhibitor as the free AS69 under secondary nucleation conditions (Figure 8e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the kinetic data shown in Figure 8e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:46:17.937749Z"
+    },
+    {
+      "id": "4d81cb0e-7dd9-4c6c-9397-f98ab7833574",
+      "content_id": "cb08eab6-93db-46c0-b16f-e33e681f562e",
+      "claim_id": "C49",
+      "claim": "The melting temperature of DMPS vesicles is decreased in the presence of AS69.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that the melting temperature of DMPS vesicles is decreased in the presence of AS69 (Figure 9\u2014figure supplement 2a,b) and, furthermore, titration of AS69 into DMPS-SUV reveals a complex signature of heat release and consumption (Figure 9\u2014figure supplement 2c,d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the DSC data shown in Figure 9\u2014figure supplement 2a,b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:46:17.937749Z"
+    },
+    {
+      "id": "4ebbba2d-d365-4b9f-a99c-9c0c7bc607db",
+      "content_id": "cb08eab6-93db-46c0-b16f-e33e681f562e",
+      "claim_id": "C50",
+      "claim": "Titration of AS69 into DMPS-SUV reveals a complex signature of heat release and consumption.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that the melting temperature of DMPS vesicles is decreased in the presence of AS69 (Figure 9\u2014figure supplement 2a,b) and, furthermore, titration of AS69 into DMPS-SUV reveals a complex signature of heat release and consumption (Figure 9\u2014figure supplement 2c,d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the ITC data shown in Figure 9\u2014figure supplement 2c,d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:46:17.937749Z"
+    },
+    {
+      "id": "88dca112-f47e-4ac6-921d-4960c3449a8a",
+      "content_id": "cb08eab6-93db-46c0-b16f-e33e681f562e",
+      "claim_id": "C51",
+      "claim": "There is a direct interaction between AS69 and DMPS-SUV.",
+      "claim_type": "EXPLICIT",
+      "source": "While a detailed analysis of this interaction behaviour is beyond the scope of the present study, taken together these calorimetric experiments suggest indeed a direct interaction between AS69 and DMPS-SUV.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the DSC and ITC data shown in Figure 9\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:46:17.937749Z"
+    },
+    {
+      "id": "3815fe69-eb24-4488-8d83-8d2ec1a15038",
+      "content_id": "cb08eab6-93db-46c0-b16f-e33e681f562e",
+      "claim_id": "C52",
+      "claim": "AS69 represents a new paradigm in the inhibition of amyloid fibril formation: strongly sub-stoichiometric inhibition by a tight monomer-binding species.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, the AS69 affibody represents a new paradigm in the inhibition of amyloid fibril formation: strongly sub-stoichiometric inhibition by a tight monomer-binding species.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental results showing the unique mode of action of AS69.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:46:17.937749Z"
+    },
+    {
+      "id": "d16e56f3-656d-4f41-97ef-e105b8d0f639",
+      "content_id": "cb08eab6-93db-46c0-b16f-e33e681f562e",
+      "claim_id": "C53",
+      "claim": "In the AS69 mode of action, it is not the inhibitor itself that plays the role of a molecular chaperone, but rather the monomer-inhibitor complex acts as a chaperone.",
+      "claim_type": "EXPLICIT",
+      "source": "In this scenario, it is not the inhibitor itself that plays the role of a molecular chaperone, that is interacting with an on-pathway species and interfering with its further evolution, but rather the monomer-inhibitor complex acts as a chaperone.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mechanistic interpretation based on the experimental data showing that the AS69-\u03b1-synuclein complex is the inhibitory species.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:46:17.937749Z"
+    },
+    {
+      "id": "0b2b4638-4f1a-44ed-b813-1dc4517b9013",
+      "content_id": "cb08eab6-93db-46c0-b16f-e33e681f562e",
+      "claim_id": "C62",
+      "claim": "Under mildly acidic solution conditions with very low concentrations of pre-formed fibrils under quiescent conditions, seeded aggregation consists of fibril elongation, secondary nucleation, and higher order assembly.",
+      "claim_type": "EXPLICIT",
+      "source": "Under those solution conditions, seeded aggregation has been shown to consist of two processes in addition to fibril elongation, namely secondary nucleation, which increases the number of growth competent fibril ends, and higher order assembly ('flocculation', Figure 6\u2014figure supplement 1b,c), which decreases the overall aggregation rate by reducing the number of accessible fibrils through their burial within higher order aggregates (Buell et al., 2014a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the citation to Buell et al., 2014a.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:46:17.937749Z"
+    },
+    {
+      "id": "c852abf8-8fe8-4db0-bee1-847d73a6cfac",
+      "content_id": "cb08eab6-93db-46c0-b16f-e33e681f562e",
+      "claim_id": "C63",
+      "claim": "Secondary nucleation increases the number of growth competent fibril ends.",
+      "claim_type": "EXPLICIT",
+      "source": "Under those solution conditions, seeded aggregation has been shown to consist of two processes in addition to fibril elongation, namely secondary nucleation, which increases the number of growth competent fibril ends, and higher order assembly ('flocculation', Figure 6\u2014figure supplement 1b,c), which decreases the overall aggregation rate by reducing the number of accessible fibrils through their burial within higher order aggregates (Buell et al., 2014a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mechanistic description supported by the citation to Buell et al., 2014a.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:46:17.937749Z"
+    },
+    {
+      "id": "20d8f665-9e1f-4eb0-9822-7108dd01d8f0",
+      "content_id": "cb08eab6-93db-46c0-b16f-e33e681f562e",
+      "claim_id": "C64",
+      "claim": "Higher order assembly decreases the overall aggregation rate by reducing the number of accessible fibrils through their burial within higher order aggregates.",
+      "claim_type": "EXPLICIT",
+      "source": "Under those solution conditions, seeded aggregation has been shown to consist of two processes in addition to fibril elongation, namely secondary nucleation, which increases the number of growth competent fibril ends, and higher order assembly ('flocculation', Figure 6\u2014figure supplement 1b,c), which decreases the overall aggregation rate by reducing the number of accessible fibrils through their burial within higher order aggregates (Buell et al., 2014a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mechanistic description supported by the citation to Buell et al., 2014a.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:46:17.937749Z"
+    },
+    {
+      "id": "3cd3e7ee-9853-47c8-b357-c696f40fba1e",
+      "content_id": "cb08eab6-93db-46c0-b16f-e33e681f562e",
+      "claim_id": "C65",
+      "claim": "The de novo formation of amyloid fibrils through primary nucleation is suppressed if the solution is not agitated and if non-binding surfaces are used.",
+      "claim_type": "EXPLICIT",
+      "source": "The de novo formation of amyloid fibrils through primary nucleation is suppressed if the solution is not agitated and if non-binding surfaces are used (Figure 6\u2014figure supplement 1a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the data shown in Figure 6\u2014figure supplement 1a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:46:17.937749Z"
+    },
+    {
+      "id": "47e259cb-a742-4462-9a10-3472904e6057",
+      "content_id": "cb08eab6-93db-46c0-b16f-e33e681f562e",
+      "claim_id": "C68",
+      "claim": "The absence of detectable binding of AS69 to fibrils in DGC experiments implies either a weak affinity for fibrils or a very low stoichiometry.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, the absence of detectable binding implies either a weak affinity for fibrils or a very low stoichiometry, that is a very low density of binding sites for AS69 on the fibril surface.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the DGC data shown in Figure 7.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:46:17.937749Z"
+    },
+    {
+      "id": "7b6ea6f9-c723-4747-901d-130b9dbc7fa8",
+      "content_id": "cb08eab6-93db-46c0-b16f-e33e681f562e",
+      "claim_id": "C72",
+      "claim": "The difference in melting temperatures between the covalent and non-covalent AS69-\u03b1-synuclein complex can be explained by the differences in the entropy of binding.",
+      "claim_type": "EXPLICIT",
+      "source": "The difference in melting temperatures between the covalent and non-covalent complex can be explained by the differences in the entropy of binding, which is more unfavourable in the case of the non-covalent complex, given the loss of three degrees of freedom of translational motion upon binding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a thermodynamic interpretation of the observed difference in melting temperatures.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:46:17.937749Z"
+    },
+    {
+      "id": "b852b6a4-b696-4577-b02e-884dc5db553d",
+      "content_id": "cb08eab6-93db-46c0-b16f-e33e681f562e",
+      "claim_id": "C79",
+      "claim": "AS69 is a very efficient inhibitor of secondary nucleation at highly sub-stoichiometric ratios.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, AS69 is found to be a very efficient inhibitor of secondary nucleation at highly sub-stoichiometric ratios.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the secondary nucleation data shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:46:17.937749Z"
+    },
+    {
+      "id": "93481f04-c25a-4ea3-8ca2-d8c09983caa9",
+      "content_id": "cb08eab6-93db-46c0-b16f-e33e681f562e",
+      "claim_id": "C80",
+      "claim": "The inhibitory effect of AS69 on secondary nucleation is unlikely to stem from a direct interaction between the AS69 and either fibril surfaces or secondary nucleation intermediates.",
+      "claim_type": "EXPLICIT",
+      "source": "The overall result of our experimental and theoretical analysis is that this inhibitory effect is unlikely to stem from a direct interaction between the AS69 and either fibril surfaces or secondary nucleation intermediates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the DGC data, MST data, and theoretical analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:46:17.937749Z"
+    },
+    {
+      "id": "5cc5df26-35d0-49b1-97f5-7a5c20492af8",
+      "content_id": "cb08eab6-93db-46c0-b16f-e33e681f562e",
+      "claim_id": "C81",
+      "claim": "The AS69 affibody represents a new paradigm: strongly sub-stoichiometric inhibition by a tight monomer-binding species.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, the AS69 affibody represents a new paradigm in the inhibition of amyloid fibril formation: strongly sub-stoichiometric inhibition by a tight monomer-binding species.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the unique mode of action demonstrated by the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:46:17.937749Z"
+    },
+    {
+      "id": "068901e0-35ca-407d-a4d8-ae894c7364a9",
+      "content_id": "cb08eab6-93db-46c0-b16f-e33e681f562e",
+      "claim_id": "C83",
+      "claim": "Molecular chaperones exhibit sub-stoichiometric inhibitory behaviour but do not interact significantly with the monomer.",
+      "claim_type": "EXPLICIT",
+      "source": "In the case of molecular chaperones, on the other hand, sub-stoichiometric inhibitory behaviour has been reported previously (Waudby et al., 2010; M\u00e5nsson et al., 2014), but it is usually found that these molecules do not interact significantly with the monomer, but rather bind specifically to aggregated states of the protein.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the citations to Waudby et al., 2010 and M\u00e5nsson et al., 2014.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:46:17.937749Z"
+    },
+    {
+      "id": "c835ca98-03d1-4a8f-8691-a60d93013ff9",
+      "content_id": "cb08eab6-93db-46c0-b16f-e33e681f562e",
+      "claim_id": "C84",
+      "claim": "It is straightforward to develop molecules that bind to the monomeric forms of proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "First, it is rather straightforward to develop further molecules that bind to the monomeric forms of proteins, given that the latter are well-defined, reproducible and easy to handle.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about protein engineering based on established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:46:17.937749Z"
+    },
+    {
+      "id": "92541b08-127b-433e-8636-1c79dadf6aac",
+      "content_id": "cb08eab6-93db-46c0-b16f-e33e681f562e",
+      "claim_id": "C85",
+      "claim": "Targeting on-pathway aggregation intermediates is difficult because they are difficult to isolate for the development of inhibitors.",
+      "claim_type": "EXPLICIT",
+      "source": "This simplicity is in contrast to the difficulty presented by targeting on-pathway aggregation intermediates which are difficult to isolate for the development of inhibitors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about the challenges in targeting aggregation intermediates based on established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:46:17.937749Z"
+    },
+    {
+      "id": "2e95c651-b709-4d9c-a819-0656fc705ac2",
+      "content_id": "cb08eab6-93db-46c0-b16f-e33e681f562e",
+      "claim_id": "C86",
+      "claim": "Binders of oligomeric aggregation intermediates can be expected to be less specific compared to binders of a well-defined monomeric state.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, binders of oligomeric aggregation intermediates can be expected to be less specific compared to binders of a well-defined monomeric state, as suggested by the existence of antibodies that interact with protofibrillar species independently of the protein from which they have formed (Kayed et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the citation to Kayed et al., 2003.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:46:17.937749Z"
+    },
+    {
+      "id": "d9a864d1-7f86-4388-ba73-966d56e4e08b",
+      "content_id": "cb08eab6-93db-46c0-b16f-e33e681f562e",
+      "claim_id": "C87",
+      "claim": "The mode of inhibition presented by AS69 avoids the need for stoichiometric amounts of inhibitors that are usually required in the case of monomer-sequestering species.",
+      "claim_type": "EXPLICIT",
+      "source": "And third, the mode of inhibition presented here avoids the need for stoichiometric amounts of inhibitors that are usually required in the case of monomer-sequestering species, resulting in a more efficient inhibition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the sub-stoichiometric inhibition data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:46:17.937749Z"
+    },
+    {
+      "id": "ed009f83-967a-4fb8-be4f-718d1e52522f",
+      "content_id": "cb08eab6-93db-46c0-b16f-e33e681f562e",
+      "claim_id": "C89",
+      "claim": "High affinity monomer binders displaying strong sub-stoichiometric inhibition of fibril formation represent attractive agents to interfere with pathological protein aggregation.",
+      "claim_type": "EXPLICIT",
+      "source": "In conclusion, high affinity monomer binders displaying strong sub-stoichiometric inhibition of fibril formation represent attractive agents to interfere with pathological protein aggregation, as a result of their multiple inhibitory action.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the overall findings of the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:46:17.937749Z"
+    },
+    {
+      "id": "eab1d3c2-d5d2-4f06-9f96-318a381d6ec7",
+      "content_id": "cb08eab6-93db-46c0-b16f-e33e681f562e",
+      "claim_id": "C90",
+      "claim": "AS69 is a disulfide-linked homodimer.",
+      "claim_type": "EXPLICIT",
+      "source": "AS69 (grey) is a disulfide-linked homodimer.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the figure legend for Figure 1a and shown in the structural model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:46:17.937749Z"
+    },
+    {
+      "id": "0714a2d7-e0a0-4ee1-8319-dde858d6712d",
+      "content_id": "cb08eab6-93db-46c0-b16f-e33e681f562e",
+      "claim_id": "C94",
+      "claim": "Under conditions of vigorous shaking, primary nucleation can occur readily at the air-water interface.",
+      "claim_type": "EXPLICIT",
+      "source": "With vigorous shaking, for instance, primary nucleation can occur readily at the air-water interface (Campioni et al., 2014) and fibril fragmentation induced by the shaking amplifies the number of growth-competent fibril ends (Xue et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the citation to Campioni et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:46:17.937749Z"
+    },
+    {
+      "id": "9e5217ad-674a-418f-b7d1-9575112fd337",
+      "content_id": "cb08eab6-93db-46c0-b16f-e33e681f562e",
+      "claim_id": "C95",
+      "claim": "Fibril fragmentation induced by shaking amplifies the number of growth-competent fibril ends.",
+      "claim_type": "EXPLICIT",
+      "source": "With vigorous shaking, for instance, primary nucleation can occur readily at the air-water interface (Campioni et al., 2014) and fibril fragmentation induced by the shaking amplifies the number of growth-competent fibril ends (Xue et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the citation to Xue et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:46:17.937749Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "958b34ea-59ab-4fda-82a0-b785c2701571",
+      "content_id": "cb08eab6-93db-46c0-b16f-e33e681f562e",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "AS69 is a disulfide-linked homodimeric \u03b2-wrapin engineered to bind monomeric \u03b1-synuclein with high affinity (Kd ~240 nM at pH 7.4 and ~116 nM at pH 5.0), inducing a \u03b2-hairpin conformation in residues 37-54 of \u03b1-synuclein.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1 and C90 are well-supported by structural modeling (Figure 1a), ITC binding data at both pH 7.4 and pH 5.0 (Figure 1b,c), and prior characterization (Mirecka et al., 2014). The binding affinity is quantitatively determined with appropriate controls and replicates.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:46:17.937749Z"
+    },
+    {
+      "id": "13755986-bbe3-4bcf-9826-9c89816cc160",
+      "content_id": "cb08eab6-93db-46c0-b16f-e33e681f562e",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "AS69 reduces \u03b1-synuclein self-interaction and visible aggregate formation in cultured HEK293T cells, as demonstrated by BiFC assays showing reduced fluorescent cells (p<0.05 for WT, p<0.01 for A53T) and microscopy showing fewer cells with visible particles.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C3, and C22 are supported by flow cytometry data (Figure 2b) with appropriate statistical analysis (two-way ANOVA) and microscopy quantification (Figure 2e,f). The BiFC assay provides a functional readout of protein-protein interaction, and the reduction in fluorescent cells is statistically significant. AS69 does not affect total \u03b1-synuclein levels (Figure 2c,d), supporting the interpretation that effects are due to inhibition of aggregation rather than enhanced clearance.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:46:17.937749Z"
+    },
+    {
+      "id": "a025c460-cd29-419d-b910-c320f0b89b77",
+      "content_id": "cb08eab6-93db-46c0-b16f-e33e681f562e",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "AS69 reduces \u03b1-synuclein aggregates and rescues locomotor deficits in Drosophila melanogaster expressing A53T \u03b1-synuclein in neurons, as shown by filter trap assays and climbing assays.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4 and C5 are supported by filter trap assay data (Figure 3d,e) showing reduced high molecular weight aggregates and climbing assay data (Figure 3b) showing preserved motor function at 25 days (p<0.001, two-way ANOVA). The in vivo validation in a well-established Drosophila model strengthens the biological relevance of AS69's inhibitory effects.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:46:17.937749Z"
+    },
+    {
+      "id": "c699751f-b84f-4417-9fc3-6e20210623c1",
+      "content_id": "cb08eab6-93db-46c0-b16f-e33e681f562e",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "AS69 inhibits \u03b1-synuclein fibril elongation in a stoichiometric concentration-dependent manner through monomer sequestration, without preferential interaction with fibril ends or surfaces, as evidenced by kinetic analysis and density gradient centrifugation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29, C32, C33, and C35 are well-supported by kinetic data (Figure 4b,c) showing that elongation rates follow predicted free monomer concentrations, AFM images (Figure 4\u2014figure supplement 1) showing morphologically identical fibrils, and DGC data (Figure 5a,b) showing no co-migration of AS69 with fibrils. The quantitative agreement between observed and predicted elongation rates based on monomer sequestration (Appendix 1) provides strong mechanistic support.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:46:17.937749Z"
+    },
+    {
+      "id": "d4b41326-bafd-4e96-8ad0-20bf66a0972c",
+      "content_id": "cb08eab6-93db-46c0-b16f-e33e681f562e",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "AS69 highly sub-stoichiometrically inhibits secondary nucleation of \u03b1-synuclein even in the presence of large excess monomer, with inhibition observed at ratios as low as 1:1000 (AS69:\u03b1-synuclein).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C7, C37, and C79 are supported by kinetic data under secondary nucleation conditions (Figure 6b,c) showing strong inhibition that cannot be explained by monomer sequestration alone, even assuming high reaction orders (n2=5). The sub-stoichiometric nature is demonstrated across a wide range of AS69 concentrations, and the effect persists in the presence of large monomer excess.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:46:17.937749Z"
+    },
+    {
+      "id": "e7f92d4e-4271-402d-b9c2-92ab94334eb3",
+      "content_id": "cb08eab6-93db-46c0-b16f-e33e681f562e",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The AS69-\u03b1-synuclein complex, rather than free AS69, is the inhibitory species responsible for sub-stoichiometric inhibition of secondary nucleation, as demonstrated by the covalent AS69fusASN fusion construct showing equivalent inhibitory potency.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8, C45, C53, and C80 are supported by kinetic data (Figure 8e) showing that AS69fusASN inhibits secondary nucleation with similar efficiency as free AS69, DGC data (Figure 7a-c) showing no detectable AS69-fibril interaction, and thermodynamic analysis indicating that direct AS69-intermediate binding would require unrealistically high affinity. The CD melting data (Figure 8\u2014figure supplement 1, Table 1) confirms complex formation. This represents a novel mechanistic insight.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:46:17.937749Z"
+    },
+    {
+      "id": "2a20990f-d859-42c0-9055-8dcdb13b3fa3",
+      "content_id": "cb08eab6-93db-46c0-b16f-e33e681f562e",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "AS69 represents a new paradigm where high affinity monomer binders can lead to strongly sub-stoichiometric inhibition of nucleation processes, with the monomer-inhibitor complex acting as a chaperone rather than the inhibitor alone.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9, C52, C81, and C89 are supported by the collective experimental evidence showing sub-stoichiometric inhibition of both secondary and primary nucleation, the demonstration that the AS69-\u03b1-synuclein complex is the active inhibitory species, and the distinction from traditional molecular chaperones (C83) that bind aggregated states. This conclusion is well-justified by the mechanistic data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:46:17.937749Z"
+    },
+    {
+      "id": "3cbaa1bb-ea4f-4afe-971b-af7c617f408e",
+      "content_id": "cb08eab6-93db-46c0-b16f-e33e681f562e",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "AS69 does not detectably bind to \u03b1-synuclein fibrils under secondary nucleation conditions, implying either weak affinity or very low stoichiometry of binding sites.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41 and C68 are supported by DGC experiments (Figure 7a-c) showing no co-migration of AS69 with fibrils under conditions where secondary nucleation occurs. The interpretation that this implies weak affinity or low stoichiometry is reasonable given the experimental sensitivity and the context of the inhibition mechanism.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:46:17.937749Z"
+    },
+    {
+      "id": "baa86c93-2707-49a8-a197-42c9c0fdeefa",
+      "content_id": "cb08eab6-93db-46c0-b16f-e33e681f562e",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "AS69 directly interacts with DMPS vesicles, as evidenced by decreased melting temperature of vesicles and complex heat signatures in calorimetric experiments.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49, C50, and C51 are supported by DSC data (Figure 9\u2014figure supplement 2a,b) showing decreased Tm and ITC data (Figure 9\u2014figure supplement 2c,d) showing complex binding signatures. While the authors acknowledge that detailed analysis is beyond the scope, the calorimetric evidence clearly indicates direct AS69-lipid interaction.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:46:17.937749Z"
+    },
+    {
+      "id": "18cc395e-fa48-45d1-957c-0cfdf111c2db",
+      "content_id": "cb08eab6-93db-46c0-b16f-e33e681f562e",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The difference in melting temperatures between covalent AS69fusASN and non-covalent AS69-\u03b1-synuclein complex can be explained by differences in binding entropy.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C72 is supported by CD melting data (Figure 8\u2014figure supplement 1, Table 1) showing higher Tm for AS69fusASN (~66\u00b0C) compared to AS69+\u03b1-synuclein (~51-56\u00b0C). The thermodynamic interpretation invoking entropic differences due to loss of translational degrees of freedom is reasonable and consistent with established principles.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:46:17.937749Z"
+    },
+    {
+      "id": "8ce7508a-3a48-420d-9a14-b5fa5284453d",
+      "content_id": "cb08eab6-93db-46c0-b16f-e33e681f562e",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Introduction of a disulfide bond in \u03b1-synuclein residues 37-54 strongly modulates aggregation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C20 is supported by citation to Shaykhalishahi et al., 2015. This is prior work correctly attributed and provides context for the importance of the 37-54 region targeted by AS69.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:46:17.937749Z"
+    },
+    {
+      "id": "810a0122-2188-47b8-83fb-edbe03de9364",
+      "content_id": "cb08eab6-93db-46c0-b16f-e33e681f562e",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Under mildly acidic quiescent conditions with low seed concentrations, \u03b1-synuclein aggregation involves fibril elongation, secondary nucleation (increasing fibril ends), and higher order assembly (decreasing accessible fibrils), while primary nucleation is suppressed without agitation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C62, C63, C64, and C65 are supported by citation to Buell et al., 2014a and experimental data (Figure 6\u2014figure supplement 1a) showing suppression of unseeded aggregation. These claims describe established mechanistic understanding of the system and provide necessary context for interpreting AS69's effects.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:46:17.937749Z"
+    },
+    {
+      "id": "0764dbe2-de54-49c2-8196-8d8e14164e6c",
+      "content_id": "cb08eab6-93db-46c0-b16f-e33e681f562e",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Molecular chaperones exhibit sub-stoichiometric inhibitory behavior but do not interact significantly with monomers, instead binding aggregated states.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C83 is supported by citations to Waudby et al., 2010 and M\u00e5nsson et al., 2014. This accurately describes prior work on molecular chaperones and provides important context for distinguishing AS69's novel mechanism.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:46:17.937749Z"
+    },
+    {
+      "id": "9a533f76-5aa4-4f41-b650-300710f9e057",
+      "content_id": "cb08eab6-93db-46c0-b16f-e33e681f562e",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Targeting monomeric protein forms is more straightforward and specific than targeting aggregation intermediates, and AS69's mode of action avoids the need for stoichiometric inhibitor amounts.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C84, C85, C86, and C87 represent reasonable inferences based on established knowledge of protein engineering and the experimental data showing sub-stoichiometric inhibition. The citation to Kayed et al., 2003 regarding non-specific oligomer-binding antibodies supports C86. These are well-justified discussion points about the advantages of the AS69 approach.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:46:17.937749Z"
+    },
+    {
+      "id": "dadfc296-bb9d-4a3e-a44d-5e31f62a7877",
+      "content_id": "cb08eab6-93db-46c0-b16f-e33e681f562e",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Under vigorous shaking conditions, primary nucleation occurs at the air-water interface and fibril fragmentation amplifies growth-competent fibril ends.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C94 and C95 are supported by citations to Campioni et al., 2014 and Xue et al., 2009. These accurately describe prior work and provide context for why the authors chose specific experimental conditions to isolate individual aggregation processes.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:46:17.937749Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "bc477adb-f627-44a4-b691-e1f678a33378",
+      "result_id": "958b34ea-59ab-4fda-82a0-b785c2701571"
+    },
+    {
+      "claim_id": "eab1d3c2-d5d2-4f06-9f96-318a381d6ec7",
+      "result_id": "958b34ea-59ab-4fda-82a0-b785c2701571"
+    },
+    {
+      "claim_id": "9481a789-f32f-4301-8cea-5b8eab51f3e0",
+      "result_id": "13755986-bbe3-4bcf-9826-9c89816cc160"
+    },
+    {
+      "claim_id": "33b230ca-c5a8-4f7c-8a9b-76f352672e84",
+      "result_id": "13755986-bbe3-4bcf-9826-9c89816cc160"
+    },
+    {
+      "claim_id": "85a62b74-2403-4b89-af0b-1ca7488e02de",
+      "result_id": "13755986-bbe3-4bcf-9826-9c89816cc160"
+    },
+    {
+      "claim_id": "b74da97a-3019-497d-8e0b-d0f2b4dd0041",
+      "result_id": "a025c460-cd29-419d-b910-c320f0b89b77"
+    },
+    {
+      "claim_id": "a91a09c6-bbf7-4b60-806b-73a06b13430c",
+      "result_id": "a025c460-cd29-419d-b910-c320f0b89b77"
+    },
+    {
+      "claim_id": "5abafbad-d0e9-4e04-9950-e8c30127b2cf",
+      "result_id": "c699751f-b84f-4417-9fc3-6e20210623c1"
+    },
+    {
+      "claim_id": "6a6766b4-af17-4185-b921-c528d5066f36",
+      "result_id": "c699751f-b84f-4417-9fc3-6e20210623c1"
+    },
+    {
+      "claim_id": "2ba49861-7080-4fc6-8e95-0d7611cd0313",
+      "result_id": "c699751f-b84f-4417-9fc3-6e20210623c1"
+    },
+    {
+      "claim_id": "421da49c-8a3b-4c4e-a932-93ebc669ef05",
+      "result_id": "c699751f-b84f-4417-9fc3-6e20210623c1"
+    },
+    {
+      "claim_id": "d90741bc-f9dd-4ab3-856a-8b77dace5a58",
+      "result_id": "d4b41326-bafd-4e96-8ad0-20bf66a0972c"
+    },
+    {
+      "claim_id": "e53fbd3c-c566-4514-9512-e4f8bc1a04dd",
+      "result_id": "d4b41326-bafd-4e96-8ad0-20bf66a0972c"
+    },
+    {
+      "claim_id": "e6d9a7a5-0482-465c-bc45-248c3f613fbb",
+      "result_id": "d4b41326-bafd-4e96-8ad0-20bf66a0972c"
+    },
+    {
+      "claim_id": "b852b6a4-b696-4577-b02e-884dc5db553d",
+      "result_id": "d4b41326-bafd-4e96-8ad0-20bf66a0972c"
+    },
+    {
+      "claim_id": "e081a71f-1a1b-4c38-8e1a-993a482d1762",
+      "result_id": "e7f92d4e-4271-402d-b9c2-92ab94334eb3"
+    },
+    {
+      "claim_id": "c46e3376-3b7f-4c4a-9b91-ea52279a6152",
+      "result_id": "e7f92d4e-4271-402d-b9c2-92ab94334eb3"
+    },
+    {
+      "claim_id": "d16e56f3-656d-4f41-97ef-e105b8d0f639",
+      "result_id": "e7f92d4e-4271-402d-b9c2-92ab94334eb3"
+    },
+    {
+      "claim_id": "93481f04-c25a-4ea3-8ca2-d8c09983caa9",
+      "result_id": "e7f92d4e-4271-402d-b9c2-92ab94334eb3"
+    },
+    {
+      "claim_id": "1628d82a-3fac-4aa9-9e11-82c5d83bec11",
+      "result_id": "2a20990f-d859-42c0-9055-8dcdb13b3fa3"
+    },
+    {
+      "claim_id": "3815fe69-eb24-4488-8d83-8d2ec1a15038",
+      "result_id": "2a20990f-d859-42c0-9055-8dcdb13b3fa3"
+    },
+    {
+      "claim_id": "5cc5df26-35d0-49b1-97f5-7a5c20492af8",
+      "result_id": "2a20990f-d859-42c0-9055-8dcdb13b3fa3"
+    },
+    {
+      "claim_id": "ed009f83-967a-4fb8-be4f-718d1e52522f",
+      "result_id": "2a20990f-d859-42c0-9055-8dcdb13b3fa3"
+    },
+    {
+      "claim_id": "fd48ba57-b25d-41f5-9810-10abdac22731",
+      "result_id": "3cbaa1bb-ea4f-4afe-971b-af7c617f408e"
+    },
+    {
+      "claim_id": "47e259cb-a742-4462-9a10-3472904e6057",
+      "result_id": "3cbaa1bb-ea4f-4afe-971b-af7c617f408e"
+    },
+    {
+      "claim_id": "4d81cb0e-7dd9-4c6c-9397-f98ab7833574",
+      "result_id": "baa86c93-2707-49a8-a197-42c9c0fdeefa"
+    },
+    {
+      "claim_id": "4ebbba2d-d365-4b9f-a99c-9c0c7bc607db",
+      "result_id": "baa86c93-2707-49a8-a197-42c9c0fdeefa"
+    },
+    {
+      "claim_id": "88dca112-f47e-4ac6-921d-4960c3449a8a",
+      "result_id": "baa86c93-2707-49a8-a197-42c9c0fdeefa"
+    },
+    {
+      "claim_id": "7b6ea6f9-c723-4747-901d-130b9dbc7fa8",
+      "result_id": "18cc395e-fa48-45d1-957c-0cfdf111c2db"
+    },
+    {
+      "claim_id": "f87c3325-88e0-4b14-82b2-12fe972203c3",
+      "result_id": "8ce7508a-3a48-420d-9a14-b5fa5284453d"
+    },
+    {
+      "claim_id": "0b2b4638-4f1a-44ed-b813-1dc4517b9013",
+      "result_id": "810a0122-2188-47b8-83fb-edbe03de9364"
+    },
+    {
+      "claim_id": "c852abf8-8fe8-4db0-bee1-847d73a6cfac",
+      "result_id": "810a0122-2188-47b8-83fb-edbe03de9364"
+    },
+    {
+      "claim_id": "20d8f665-9e1f-4eb0-9822-7108dd01d8f0",
+      "result_id": "810a0122-2188-47b8-83fb-edbe03de9364"
+    },
+    {
+      "claim_id": "3cd3e7ee-9853-47c8-b357-c696f40fba1e",
+      "result_id": "810a0122-2188-47b8-83fb-edbe03de9364"
+    },
+    {
+      "claim_id": "068901e0-35ca-407d-a4d8-ae894c7364a9",
+      "result_id": "0764dbe2-de54-49c2-8196-8d8e14164e6c"
+    },
+    {
+      "claim_id": "c835ca98-03d1-4a8f-8691-a60d93013ff9",
+      "result_id": "9a533f76-5aa4-4f41-b650-300710f9e057"
+    },
+    {
+      "claim_id": "92541b08-127b-433e-8636-1c79dadf6aac",
+      "result_id": "9a533f76-5aa4-4f41-b650-300710f9e057"
+    },
+    {
+      "claim_id": "2e95c651-b709-4d9c-a819-0656fc705ac2",
+      "result_id": "9a533f76-5aa4-4f41-b650-300710f9e057"
+    },
+    {
+      "claim_id": "d9a864d1-7f86-4388-ba73-966d56e4e08b",
+      "result_id": "9a533f76-5aa4-4f41-b650-300710f9e057"
+    },
+    {
+      "claim_id": "0714a2d7-e0a0-4ee1-8319-dde858d6712d",
+      "result_id": "dadfc296-bb9d-4a3e-a44d-5e31f62a7877"
+    },
+    {
+      "claim_id": "9e5217ad-674a-418f-b7d1-9575112fd337",
+      "result_id": "dadfc296-bb9d-4a3e-a44d-5e31f62a7877"
+    }
+  ],
+  "comparisons": []
+}

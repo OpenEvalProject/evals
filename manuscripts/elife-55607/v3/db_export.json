@@ -1,0 +1,1737 @@
+{
+  "submission": {
+    "id": "42dce34c-21b9-45fa-b46d-22439ba7dc3b",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T16:40:39.059015Z",
+    "updated_at": "2025-12-02T16:40:39.059015Z"
+  },
+  "content": [
+    {
+      "id": "f3e95110-c2bc-4de0-b3a0-7a4f559787f0",
+      "submission_id": "42dce34c-21b9-45fa-b46d-22439ba7dc3b",
+      "content_type": "manuscript",
+      "content_text": "# Multi-state recognition pathway of the intrinsically disordered protein kinase inhibitor by protein kinase A\n\n## Authors\n\n- Cristina Olivieri<sup>1</sup> ([ORCID: 0000-0001-6957-6743](https://orcid.org/0000-0001-6957-6743))\n- Yingjie Wang<sup>2</sup>\n- Geoffrey C Li<sup>2</sup> ([ORCID: 0000-0001-5035-5916](https://orcid.org/0000-0001-5035-5916))\n- Manu V S<sup>1</sup>\n- Jonggul Kim<sup>2</sup> ([ORCID: 0000-0002-4624-7848](https://orcid.org/0000-0002-4624-7848))\n- Benjamin R Stultz<sup>4</sup>\n- Matthew Neibergall<sup>4</sup>\n- Fernando Porcelli<sup>5</sup> ([ORCID: 0000-0003-3209-0074](https://orcid.org/0000-0003-3209-0074))\n- Joseph M Muretta<sup>1</sup>\n- David DT Thomas<sup>1</sup> ([ORCID: 0000-0002-8822-2040](https://orcid.org/0000-0002-8822-2040))\n- Jiali Gao<sup>2</sup>\n- Donald K Blumenthal<sup>7</sup>\n- Susan S Taylor<sup>8</sup> ([ORCID: 0000-0002-7702-6108](https://orcid.org/0000-0002-7702-6108))\n- Gianluigi Veglia<sup>1</sup> ([ORCID: 0000-0002-2795-6964](https://orcid.org/0000-0002-2795-6964)) \u2020\n\n### Affiliations\n\n1. Department of Biochemistry, Molecular Biology, and Biophysics, University of Minnesota Minneapolis United States\n2. Department of Chemistry and Supercomputing Institute, University of Minnesota Minneapolis United States\n3. Shenzhen Bay Laboratory Shenzhen China\n4. Department of Chemistry, Bethel University Saint Paul United States\n5. DIBAF, University of Tuscia, Largo dell' Universit\u00e0 Viterbo Italy\n6. Laboratory of Computational Chemistry and Drug Design, Peking University Shenzhen Graduate School Shenzhen China\n7. Department of Pharmacology and Toxicology, University of Utah Salt Lake City United States\n8. Department of Chemistry and Biochemistry and Pharmacology, University of California, San Diego La Jolla United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nIn the nucleus, the spatiotemporal regulation of the catalytic subunit of cAMP-dependent protein kinase A (PKA-C) is orchestrated by an intrinsically disordered protein kinase inhibitor, PKI, which recruits the CRM1/RanGTP nuclear exporting complex. How the PKA-C/PKI complex assembles and recognizes CRM1/RanGTP is not well understood. Using NMR, SAXS, fluorescence, metadynamics, and Markov model analysis, we determined the multi-state recognition pathway for PKI. After a fast binding step in which PKA-C selects PKI\u2019s most competent conformations, PKI folds upon binding through a slow conformational rearrangement within the enzyme\u2019s binding pocket. The high-affinity and pseudo-substrate regions of PKI become more structured and the transient interactions with the kinase augment the helical content of the nuclear export sequence, which is then poised to recruit the CRM1/RanGTP complex for nuclear translocation. The multistate binding mechanism featured by PKA-C/PKI complex represents a paradigm on how disordered, ancillary proteins (or protein domains) are able to operate multiple functions such as inhibiting the kinase while recruiting other regulatory proteins for nuclear export.\n\n## Introduction\n\nThe cAMP-dependent protein kinase A (PKA) is a ubiquitous phosphoryl transferase that regulates numerous cellular signaling pathways (Taylor et al., 2012). As for other eukaryotic protein kinases, PKA regulatome comprises globular domains as well as extensive disordered regions, which are essential for protein-protein interactions and signaling (Akimoto et al., 2013; G\u00f3gl et al., 2019; Pellicena and Kuriyan, 2006). In fact, the activity and localization of PKA-C within different cellular compartments are finely regulated by ancillary proteins such as the regulatory subunits (R), A-kinase-anchoring proteins (AKAPs) (Bauman and Scott, 2002; Johnson and Lewis, 2001), and the heat-stable protein kinase A inhibitor (PKI) (Dalton and Dewey, 2006). While R-subunits are primarily responsible for the regulation and localization of PKA-C in the cytoplasm through interaction with AKAPs (Taylor et al., 2012), PKI plays a key role in transcriptional regulation and the export of the enzyme from the nucleus to the cytoplasm (Fantozzi et al., 1992; Wiley et al., 1999).\n\nPKI is expressed in different isoforms of 70\u201375 amino acids in length, which were first identified in skeletal muscle extracts (Dalton and Dewey, 2006). PKI isoforms contain several functional motifs: a high affinity region (HAR, residues 1\u201314), a pseudo-substrate recognition sequence (PSS, residues 15\u201322), a nuclear export signal (NES, residues 37\u201346), and a disordered C-terminal tail (residues 47\u201375) (Figure 1A;\u00a0Johnson et al., 2001). The HAR is an accessory domain that increases the affinity of PKI for the enzyme, the PSS mimics the consensus sequence for the enzyme; while the NES motif mediates the recruitment by the CRM1/RanGTP complex for PKA-C translocation from the nucleus to the cytoplasm (Figure 1D;\u00a0Wen et al., 1995). PKI binds PKA-C with nanomolar affinity (Whitehouse and Walsh, 1982), which is matched only by that of the R-subunits with whom it shares the same recognition/inhibitory sequence (Figure 1C;\u00a0Hofmann, 1980). Unlike the R-subunits, PKI lacks any cAMP binding sites and its regulation of PKA-C is independent of the cyclic nucleotide-mediated signaling (Dalton and Dewey, 2006).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/55607/elife-55607-fig1-v3.jpg)\n\n**Figure 1.:** (A)\u00a0Primary sequence of PKI\u03b1, featuring the high affinity region (HAR), the pseudo-substrate region (PSS), and the nuclear export signal (NES). (B) X-ray structure of the PKA-C/ATP/PKI5-24 ternary complex featuring only part of the HAR sequence and the PSS motif (PDB ID: 1ATP; Knighton et al., 1991a). PKA-C secondary structure elements are color-coded using Hanks and Hunter definition (Hanks et al., 1988). (C) Comparison of the substrate recognition sequences (SRS) for different PKA-C substrates, including PKI\u03b1, Kemptide, phospholamban (PLN), and the regulatory subunit RI\u03b1 and RII\u03b2. D. NES sequences from different proteins (Fung et al., 2015; Fung et al., 2017).\n\nIn humans, three different genes encode the corresponding PKI isoforms, PKI\u03b1, PKI\u03b2, PKI\u03b3 (Dalton and Dewey, 2006). Among those, the alpha isoform (PKI\u03b1) has the highest level of expression in various tissues and the highest inhibitory potency [Ki\u00a0~0.22 nM, (Collins and Uhler, 1997; Gamm and Uhler, 1995). The initial crystal structures of PKA-C were obtained with truncated variants of PKI\u03b1, encompassing either residues 5\u201322 or 5\u201324 with part of the HAR and PSS sequences, lacking the NES as well as the C-terminal regions. (Figure 1B;\u00a0Knighton et al., 1991a; Knighton et al., 1991b). More importantly, there are no reports on how PKI is recognized by the kinase and its binding mechanism.\n\nUsing a combination of NMR spectroscopy, small angle X-ray scattering (SAXS), stopped-flow fluorescence, replica-averaged metadynamics (RAM), and Markov model analysis, here we provide a comprehensive view of the molecular mechanism for recognition of PKI\u03b1 by PKA-C. We found that free PKI\u03b1 is intrinsically disordered, with incipient \u03b1-helical segments spanning the HAR and NES regions. PKA-C recognizes and binds extended PKI\u03b1 conformations, rigidifying the PSS region and increasing the helicity of the HAR and NES motifs. Transient binding kinetics show that the recognition occurs via a multi-state pathway, with an initial fast binding step followed by a slow phase in which PKI\u03b1 undergoes a conformational rearrangement within the binding site. Although the C-terminal tail of PKI\u03b1 interacts transiently with the kinase\u2019s C-lobe, it remains essentially disordered facilitating the recruitment by the CRM1/RanGTP complex for nuclear export. We propose that the multistate pathway for PKI\u03b1 recognition by PKA-C is preparatory for the recruitment by CRM1/RanGTP for nuclear export and regulation of gene expression.\n\n## Results\n\n### PKI\u03b1 is an intrinsically disordered protein with transient secondary and short-lived tertiary interactions\n\nIn agreement with Hauer et al. (Hauer et al., 1999a; Thomas et al., 1991), we found that the dichroic profile, the NMR fingerprint, and the dynamic NMR parameters display the typical signature of mixed \u03b1-helix and random-coil structure for PKI\u03b1 (Figure 2, Figure 2\u2014figure supplement 1A). Addition of urea to PKI\u03b1 only slightly changes the chemical shift of the amides, confirming the disordered nature of the protein and suggesting the presence of only transient secondary structures (Figure 2\u2014figure supplement 1B;\u00a0Felitsky et al., 2008; Marsh et al., 2007). We also probed the presence of long-range contacts using 1HN paramagnetic relaxation enhancement (1HN PRE-\u03932) experiments (Clore and Iwahara, 2009;\u00a0Figure 2E\u2013G). For these experiments, we conjugated a nitroxide spin label (MTSL) on engineered cysteine residues at three different positions: PKI\u03b1V3C, PKI\u03b1S28C, and PKI\u03b1S59C in analogy to earlier fluorescence studies (Hauer et al., 1999b). We then measured the peak intensities in the presence of paramagnetic (Ipara) and diamagnetic (Idia) labels to estimate the \u03932 relaxation rates (Clore and Iwahara, 2009). When the spin label was engineered at the N-terminus (PKI\u03b1V3C), we observed a reduction of the resonance intensities near the N-terminal region and gradual effects that culminate in the middle of the linker between the PSS and NES motifs and decrease toward the C-terminus (PRE values less than two standard deviations, 2\u03c3). The C-terminal residues remained essentially unperturbed (Figure 2E). On the other hand, when the spin label was positioned between the PSS and NES motifs (PKI\u03b1S28C), we detected strong PREs near the spin label position (PRE greater than 3\u03c3), at the N-terminus, and within the NES motif (Figure 2F). Finally, for the spin label at position 59, we found that approximately 75% of the residues display a reduced signal intensity, with marked effects in the PSS, linker region, NES, and C-terminus. In this case, we observed only marginal effects for the N-terminal residues (Figure 2G). Altogether, the CD and NMR data reveal that in absence of a binding partner PKI\u03b1 samples transient secondary structures encompassing the HAR and NES motifs with short-lived tertiary conformations.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/55607/elife-55607-fig2-v3.jpg)\n\n**Figure 2.:** (A)\u00a0Far-UV circular dichroism (CD) spectrum of PKI\u03b1 acquired at 25\u00b0C in native condition showing the typical CD profile for IDPs, with a minimum around 208 nm (Wicky et al., 2017; Chemes et al., 2012; Silvers et al., 2012). (B) Secondary structure content for free PKI\u03b1 as determined from NMR chemical shifts using \u03b42D program (Camilloni et al., 2012). Note that the program neglects to calculate values for the first and last residues. (C) Plots of the [1H,1H] NOEs derived from the analysis of [1H,15N] NOESY-HSQC experiment. (E)\u00a0Residual dipolar couplings (RDCs) for PKI\u03b1 aligned in stretched polyacrylamide gels and 5% bicelles (q\u00a0=\u00a03.5). The oscillations around zero of the 1DNH values confirm the absence of a defined structure. (E-F)\u00a0Intra-molecular 1H- \u03932-PRE measurements of the three cysteine mutants of PKI\u03b1 (Iwahara et al., 2007). For these experiments, a delay of 10 ms was used to calculate the intra-molecular 1H- \u03932-PRE effects. The yellow spheres on the schematic of PKI\u03b1 (B panel) indicate the location of the cysteine mutations. The yellow dots in each graph indicate those residues broadened beyond detection. The horizontal lines indicate one (blue), two (green), and three (red) standard deviations (\u03c3) from the mean PRE.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/55607/elife-55607-fig2-figsupp1-v3.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A)\u00a0[1H,15N]-Heteronuclear single quantum correlation (HSQC) spectrum of PKI\u03b1 free form with resonance assignment. The protein fingerprint features a poor resonance dispersion clustered around eight ppm in the 1H dimension, typical of intrinsically disordered proteins (Dyson and Wright, 2004; Mittag et al., 2010). (B) [1H,15N]-HSQC spectra of PKI\u03b1 in native (red) and denatured (green) conditions. Addition of 8 M urea to the NMR sample did not cause substantial chemical shift perturbations (CSP) with the exception of a few resonances in the N-terminal moiety and the NES motif, confirming the presence of only weak secondary structural elements. The experiments were performed using a 600 MHz Avance-Neo Bruker spectrometer equipped with a TCI probe on a 0.2 mM U-15N-PKI\u03b1 sample. All the experiments were acquire using 32 scans, 1024 (1H) and 64 (15N) complex points.\n\n### PKA-C binding rigidifies the PSS motif and stabilizes HAR and NES helices of PKI\u03b1\n\nTo map the fingerprints of both PKA-C and PKI\u03b1 in the PKA-C/ATP\u03b3N/PKI\u03b1 complex, we used our previously developed method in which we combine asymmetric isotopic labeling for each binding partner with a spin-echo filter for 13C-linked amide protons in the heteronuclear single quantum coherence experiment (HSQC), [1H,15N]-carbonyl carbon label selective-HSQC or [1H, 15N]-CCLS-HSQC (Tonelli et al., 2007; Larsen et al., 2018;\u00a0Figure 3\u2014figure supplement 1). This method makes it possible to monitor the fingerprints of two interacting proteins simultaneously using only one sample preparation. Upon binding to PKA-C, most of the PKI\u03b1 resonances in the [1H,15N]-HQSC spectrum show only minimal changes (Figure 3\u2014figure supplement 1C).\n\nHowever, the HAR and PSS resonances display significant chemical shift changes (Figure 3A,B,E), suggesting that these regions of PKI undergo drastic structural rearrangements upon binding the kinase. This finding is also supported by the \u03b4D2 analysis (Camilloni et al., 2012) of the C\u03b1 and C\u03b2 chemical shifts showing an increase in helical content of the HAR and rigidification of the PSS motif; while the rest of the peptide remain unaffected by the interaction with PKA-C (Figure 3B, Figure 3\u2014figure supplement 2A). The analysis of the chemical shift difference between the ATP\u03b3N-bound form and the ternary complex mapped on PKA-C are reported in Figure 3 (panel C-D). As previously reported (Masterson et al., 2010; Masterson et al., 2008), the amide fingerprint of the kinase changes significantly upon nucleotide binding (Figure 3C). Additional changes are observed upon binding PKI\u03b1, especially for \u03b1C, \u03b1F, \u03b1G helices as well as \u03b26 loop. The map of the chemical shift changes on the PKA-C/ATP\u03b3N/PKI\u03b1 complex for the two proteins is reported in Figure 3E. Interestingly, smaller changes are present for the NES region of PKI\u03b1, which are mirrored by higher values of heteronuclear nuclear Overhauser effects (NOE), indicating reduced motions of the backbone amides in the pico-to-nanosecond time scale (Figure 4A, Figure 3\u2014figure supplement 2B;\u00a0Dyson and Wright, 2004; Bah et al., 2015). The formation of the PKA-C/ATP\u03b3N/PKI\u03b1 (ternary) complex is also reflected by the differences of longitudinal and transverse relaxation rates (\u0394R1 and \u0394R2) for both the HAR and PSS motifs upon forming the complex, which define a local rigidification of the PKI\u03b1 backbone upon binding PKA-C, with the C-terminal portion (residues 47\u201375) remaining essentially unstructured (Figure 4B,C).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/55607/elife-55607-fig3-v3.jpg)\n\n**Figure 3.:** (A)\u00a0Chemical shift perturbation (CSP) of the amide fingerprint of PKI\u03b1 upon binding PKA-C/ATP\u03b3N binary complex calculated using equation 1 (Williamson, 2013). The residues of PKI\u03b1 that undergo significant CSPs are localized in the HAR and PSS, which are involved in strong electrostatic interaction within the binding site of PKA-C. (B) Chemical shift index (CSI) for C\u03b1 and C\u03b2 of free (red) and bound (blue) PKI\u03b1. The PSS motif becomes more rigid upon interaction with PKA-C. The HAR and the NES adopt a transient \u03b1-helical conformation, which is enhanced upon binding the kinase. (C) CSP of PKA-C amide fingerprint upon binding ATP\u03b3N. (D) CSP of the PKA-C/ATP\u03b3N binary complex upon binding PKI\u03b1. The red lines in the histograms indicate one standard deviation from the average CSP: 0.38 ppm, 0.11 ppm, and 0.10 ppm for (A), (C and D), respectively. (E) CSPs for PKA-C and PKI\u03b1 amide resonances mapped onto a selected conformer from the ensemble of the PKA-C/ATP/PKI\u03b1 structures calculated from MD simulations (see Materials and methods).\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/55607/elife-55607-fig3-figsupp1-v3.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A)\u00a0reference spectrum of the PKA-C/ATP\u03b3N/PKI\u03b1 complex with overlaid fingerprints of U-15N PKA-C and U-13C/15N PKI\u03b1. (B) Suppression spectrum showing only the PKA-C fingerprint. The suppression spectrum is obtained by filtering the amides linked to 13C labeled PKI\u03b1.\u00a0(C) Subtraction spectrum showing the amide fingerprint of only PKI\u03b1. This spectrum is obtained from the subtraction of the reference spectrum (A) minus the suppression spectrum (B) The intensities of the amide resonances in the small squares are multiplied by a factor of 9 and correspond to the PSS region that broadens upon interactions with PKA-C. The spectra [1H,15N] CCLS-HSQC were acquired using the pulse sequence in Tonelli et al. (2007) using 128 scans, 1024 (1H) and 64 (15N) complex points.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/55607/elife-55607-fig3-figsupp2-v3.jpg)\n\n**Figure 3\u2014figure supplement 2.:** (A)\u00a0Secondary structure content for PKI\u03b1 in complex with PKA-C/ATP\u03b3N calculated from the NMR chemical shifts using the \u03b42D program (Camilloni et al., 2012). (B) [1H-15N] \u0394HX-NOE values for PKI\u03b1 in free form (red) and bound to PKA-C/ATP\u03b3N (blue). (C) Ratios of longitudinal and transverse relaxation times (T1/T2) for free (red) and PKA-C bound (blue) PKI\u03b1. (D) Rex measured for PKI\u03b1 free (red) and bound (blue) forms. These values were calculated using: Rex\u00a0= R2,eff- R2,0.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/55607/elife-55607-fig4-v3.jpg)\n\n**Figure 4.:** (A)\u00a0Histogram of the changes in heteronuclear NOE (\u0394HX-NOE) values of PKI\u03b1 free and bound and map of the \u0394HX-NOE values onto a selected conformer from the ensemble of the PKA-C/ATP/PKI\u03b1 structures calculated from MD simulations (see Materials and methods). (B-D)\u00a0Corresponding \u0394R1, \u0394R2, and \u0394Rex plots for PKI\u03b1 free and bound forms. The sample concentration for free form of 2H/15N PKI\u03b1 was 0.2 mM; while for PKI\u03b1 bound to PKA-C/ATP\u03b3N was 0.3 mM. All the experiments were recorded at 27\u00b0C.\n\nThe T1/T2 ratios can be used as an estimate of the global correlation time for the PKA-C/PKI complex\u00a0(Kay et al., 1989; Cavanagh et al., 2007a; Cavanagh et al., 2007b; Gaspari and Perczel, 2010). The PSS and HAR regions of PKI\u03b1, which show the most prominent chemical shift changes, adopt the overall correlation time of the kinase in agreement with previous fluorescence anisotropy measurements (Figure 3\u2014figure supplement 2C;\u00a0Hauer et al., 1999b). Interestingly, the \u0394Rex values obtained from the Carr-Purcell-Meiboom-Gill (CPMG) relaxation dispersion experiments show the presence of \u03bcs-ms motions for residues in the HAR and PSS motifs, which gradually decrease toward the NES motif, suggesting the presence of conformational interconversion of these regions upon binding (Figure 4D, Figure 3\u2014figure supplement 2D). Next, we analyzed the large amplitude motions of the kinase-bound PKI\u03b1 by conjugating MTSL to cysteine 59 in the C-terminal region (PKI\u03b1S59C) and used the [1H,15N]-CCLS pulse sequence to simultaneously measure the PREs on both PKI\u03b1 and PKA-C (Olivieri et al., 2018;\u00a0Figure 5A,B). The most significant PREs for PKI\u03b1 were detected for resonances of residues proximal to the MTSL label, with a gradual reduction moving away from residue 59. Interestingly, we detected some long-range effects for specific residues located in the HAR and PSS motifs and the intervening linker. This implies that the C-terminal domain of PKI\u03b1 undergoes large amplitude motions and transiently interacts with the N-terminus, N-lobe (\u03b21-\u03b22 loop), C- lobe (G-, and H- helices) as well as the peptide-positioning loop of PKA-C. Taken together, the relaxation data show that PKA-C binding to PKI\u03b1 causes differential effects on the various regions of the inhibitor. While disorder-to-order transitions occur for the HAR, PSS, and NES motifs, the C-terminal tail of the PKI\u03b1 remains disordered. (Figure 5C).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/55607/elife-55607-fig5-v3.jpg)\n\n**Figure 5.:** (A)\u00a0Intermolecular 1HN PRE measurements between U-2H/13C/15N PKI\u03b1S59C and U-2H/15N PKA-C/ATP\u03b3N. (B) Intermolecular PRE effects detected on PKA-C. (C) Intra- and inter-molecular PRE effects mapped onto the a selected conformer from the ensemble of the PKA-C/ATP/PKI\u03b1 structures calculated from MD simulations. The yellow sphere illustrates where the spin label is attached. The black dots on both panel A and B indicate those resonances that broaden out beyond detection mainly in the sample with the spin-label active (paramagnetic sample). The horizontal lines indicate one (blue), two (green), and three (red) standard deviations from the mean (\u03c3) of the observed PRE values. We refer as strong PRE effects values greater than 3\u03c3, medium between 1 and 2\u03c3, and weak less than 1\u03c3.\n\n### The PKA-C/PKI\u03b1 complex relaxes through two structurally and kinetically distinct states to form the complex\n\nTo determine the mechanism of binding PKA-C and PKI\u03b1, we utilized stopped-flow rapid mixing fluorescence resonance energy transfer (FRET) and analyzed transient and total changes in donor fluorescence during the binding reaction. This procedure enables the interpretation of the kinetic mechanism and structural changes occurring during a binding reaction (Muretta et al., 2015; Nesmelov et al., 2011). To determine the kinetics of binding, we engineered a double mutant of PKA-C (PKA-CC199A,S325C) and labeled the single reactive S325C with Alexa Fluor 488 (PKA-CDONOR). We also expressed and purified three different mutants of PKI\u03b1 (PKIV3C, PKIS28C, and PKIS59C) and labeled each cysteine with tetramethylrhodamine-5-maleimide (PKIACCEPTOR-3, PKIACCEPTOR-28, and PKIACCEPTOR-59). For the first set of experiments, we mixed PKA-CDONOR with increasing concentrations of each acceptor (PKIACCEPTOR-3, PKIACCEPTOR-28, PKIACCEPTOR-59, (Figure 6A\u2013D). As expected for the formation of the PKA-C/PKI\u03b1 complex, we observed a gradual decrease in the total fluorescence of the donor probe. In a second set of experiments, we tested the time-dependence of long-range rearrangements of PKI\u03b1 as suggested by PRE measurements (Figure 6A, Figure 6\u2014figure supplement 1A). To this extent, we utilized the PKA-CC199A,S325C mutant without fluorescent label and engineered a double mutant of PKI\u03b1 with two cysteines at residue 3 and 59 (PKIV3C,S59C). the PKIV3C,S59C mutant was then labeled with both Alexa-488 (donor) and TMR (acceptor) at positions 3 and 59, respectively (PKIDONOR-ACCEPTOR). When a fixed concentration of PKIDONOR-ACCEPTOR was titrated with increasing concentrations of unlabeled PKA-CC199A,S325C, we detected an increase of the total fluorescence (Figure 6E, Figure 6\u2014figure supplement 1B), indicating that the distance between the two probes of PKI\u03b1 increases upon formation of the complex, that\u00a0is the conformational ensemble of PKI\u03b1 becomes on average more extended during the binding reaction in agreement with the PRE data. From an initial analysis of the binding curve, we found that the total fluorescence of the Alexa-488 donor emission from the PKA-CDONOR/PKIACCEPTOR changed bi-exponentially through the course of the binding reactions (Figure 6A\u2013D). The bi-exponential behavior suggests the presence of an initial fast binding step followed by a slow structural rearrangement (Table 1;\u00a0Gianni et al., 2014).\n\n**Table 1.**\n Rate constants obtained from the fluorescence decay of PKIACCEPTOR-3, PKIACCEPTOR-28, and PKIACCEPTOR-59upon mixing with Alexa-labeled PKA-CC199A,S325C or the fluorescence buildup of PKIDONOR-ACCEPTOR upon mixing with unlabeled PKA-CC199A,S325C at 25\u00b0C.\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th>PKIACCEPTOR3</th>\n      <th>PKIACCEPTOR28</th>\n      <th>PKIACCEPTOR59</th>\n      <th>PKIDONOR-ACCEPTOR</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Fast phase</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>kon (M\u22121 s\u22121)</td>\n      <td>1.88\u00a0\u00b1\u00a00.03\u00d7107</td>\n      <td>1.40\u00a0\u00b1\u00a00.02\u00d7107</td>\n      <td>1.62\u00a0\u00b1\u00a00.11\u00d7107</td>\n      <td>0.85\u00a0\u00b1\u00a00.04\u00d7107</td>\n    </tr>\n    <tr>\n      <td>koff (s\u22121)</td>\n      <td>13\u00a0\u00b1\u00a03</td>\n      <td>5\u00a0\u00b1\u00a01</td>\n      <td>2\u00a0\u00b1\u00a010</td>\n      <td>6\u00a0\u00b1\u00a07</td>\n    </tr>\n    <tr>\n      <td>Kdapp (nM)</td>\n      <td>700\u00a0\u00b1\u00a0170</td>\n      <td>390\u00a0\u00b1\u00a0110</td>\n      <td>150\u00a0\u00b1\u00a0620</td>\n      <td>700\u00a0\u00b1\u00a0800</td>\n    </tr>\n    <tr>\n      <td>Slow phase</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>kslow (s\u22121)</td>\n      <td>24\u00a0\u00b1\u00a02</td>\n      <td>ND</td>\n      <td>ND</td>\n      <td>37\u00a0\u00b1\u00a02</td>\n    </tr>\n    <tr>\n      <td>K0.5 (\u00b5M)</td>\n      <td>2.4\u00a0\u00b1\u00a00.4</td>\n      <td>3.0\u00a0\u00b1\u00a00.4</td>\n      <td>3.8\u00a0\u00b1\u00a00.5</td>\n      <td>17\u00a0\u00b1\u00a03</td>\n    </tr>\n  </tbody>\n</table>\n\n_ND: Non determined._\n\n![Figure 6.](https://cdn.elifesciences.org/articles/55607/elife-55607-fig6-v3.jpg)\n\n**Figure 6.:** (A)\u00a0Total fluorescence of Alexa-488 labeled PKA-CC199A,S325C (100 nM) monitored at 520\u00a0\u00b1\u00a010 nm, mixed with varied concentrations of TMR labeled PKI\u03b1V3C, ranging from 0 to 400 times the concentration of the enzyme. (B-C) Dependence of the fast and slow rate constants on the concentration of PKI\u03b1. (D) Relative pre-exponential amplitude obtained by fitting each transient to a bi-exponential function A1*Exp(-t*kobs1) + A2*Exp(-t*kobs2). (E) Total fluorescence of double-labeled PKI\u03b1V3C, S59C (Alexa-488, TMR) (100 nM) monitored at 520\u00a0\u00b1\u00a010 nm mixed at different concentrations of non-labeled PKA-CC199A, S325C. (F-G) Dependence of the fast and slow rate constants on PKA-C concentration. (H) Relative pre-exponential amplitude obtained by fitting each transient to a bi-exponential function. Representative data from N\u00a0=\u00a03 experiments for each condition were repeated three times per experiment.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/55607/elife-55607-fig6-figsupp1-v3.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (A)\u00a0Total fluorescence of Alexa-488 labeled PKA-CC199A, S325C (100 nM) monitored at 520\u00a0\u00b1\u00a010 nm, mixed with varied concentrations of TMR labeled PKI\u03b1V3C, PKI\u03b1S28C or PKI\u03b1S59C, from 0 to 800 times the concentration of the enzyme. (B) Total fluorescence of double-labeled PKI\u03b1V3C,S59C (Alexa-488, TMR) monitored at 520\u00a0\u00b1\u00a010 nm mixed with varied concentrations of non-labeled PKA-CC199A,S325C. On the right side of panel B are listed and color-coded the different molar ratios used for the experiments in panels A and B.\n\nThese two phases can be identified for all the PKI labeled species, irrespective of the fluorescence acceptor position. The rate constants for the fast phase increases linearly with PKI\u03b1 concentration, with an average second-order rate constant of 1.63 \u00d7 107 M\u22121 s\u22121 and an extrapolated average dissociation rate constant of 7.0 s\u22121. Comparatively, the observed rate constant for the slow phase increased hyperbolically with an average K0.5 of 3.1 \u00b5M and a maximum value (kslow) of 24\u00a0\u00b1\u00a01.8 s\u22121.\n\nWe also observed two distinct binding phases for the second set of experiments with unlabeled PKA-CC199A,S325C and PKIDONOR-ACCEPTOR. Indeed, the kinetic constants obtained for these experiments are very similar to those found in the first set of the experiments, underscoring the same binding mechanisms. The pre-exponential amplitudes for the fast phases increased hyperbolically, while the slow phase decreased hyperbolically (Figure 6D\u2013H). Taken together, the behavior of the rate constants and the pre-exponential amplitudes for the fast and slow phases are consistent with a multi-pathway mechanism in which there is a fast binding phase of PKI\u03b1 ensembles competent for binding and a subsequent structural rearrangement of these conformers upon binding (Dogan et al., 2014; Gianni et al., 2014).\n\n### Conformational landscape and kinetics of conformational transitions of PKI\u03b1\n\nUsing chemical shift (CS) and residual dipolar couplings (RDC) (Figure 2D) as structural restraints, we performed replica-averaged metadynamics (RAM) to define the energy landscapes of free and kinase-bound PKI\u03b1. During the simulations, the HAR and NES motifs of free PKI\u03b1 undergo multiple coil-to-helix transitions (Figure 8). We identified two major basins, featuring a compact ensemble (Rg\u00a0<1.5 nm), with three relative minima with helical structures for the HAR and NES motifs; and a more extended ensemble (Rg\u00a0>3.0 nm), where the protein is essentially disordered. The HAR motif populates mostly a random coil conformation, with a sparsely populated helical conformation, whereas the NES motif populates both helical and coil conformations (Figure 7A,B). To validate the RAM-generated ensembles, we carried out small angle X-ray scattering (SAXS) experiments and back-calculated the SAXS profiles from the conformers sampled in the RAM trajectories. Figure 7C shows the scattering intensity plots (log I(q) vs q) and the corresponding Kratky plot for free PKI\u03b1. These profiles show the typical signatures of intrinsically disordered proteins, with the Kratky plot featuring a plateau at high q values as well as the absence of a bell-shaped curve (Figure 7C, bottom panel). In addition, the P(r) curve shows that PKI\u03b1 adopts a highly extended conformational ensemble, with an abnormally large Dmax (~110 \u00c5) and Rg (~30 \u00c5) values for a protein of its size, both parameters are indicative of an extended, intrinsically disordered protein (Kikhney and Svergun, 2015;\u00a0Figure 8D). In fact, the back-calculated SAXS profiles from the RAM-generated ensembles are in excellent agreement with the experimental SAXS scattering profiles (\u03c7\u00a0=\u00a00.86 for q\u00a0<\u00a00.2) (Figure 7C). In the bound state, the HAR motif of PKI\u03b1 is more ordered and adopts a more stable helical conformation; whereas the NES motif is considerably more dynamic and adopts a transient helical conformation (Figure 7E).\n\n![Figure 7.](https://cdn.elifesciences.org/articles/55607/elife-55607-fig7-v3.jpg)\n\n**Figure 7.:** (A-B)\u00a0Distribution of helical populations for the HAR and NES regions in the free (A) and bound (B) PKI\u03b1 ensembles. (C) SAXS data obtained with PKI\u03b1 free and the PKA-C/PKI\u03b1 complex in the presence of ATP\u03b3N. The top panel shows the scattering intensity, I(q), as a function of q and the bottom panel the Kratky plot. The blue (complex) and red (free PKI\u03b1) traces are the best-fit curves obtained by fitting predicted scattering data from the conformation ensembles from RAM simulations. (D) Conformational ensemble of free PKI\u03b1 that best fits the SAXS profile. E. PKI\u03b1 ensemble bound to PKA-C that best fits the SAXS profile.\n\n![Figure 8.](https://cdn.elifesciences.org/articles/55607/elife-55607-fig8-v3.jpg)\n\n**Figure 8.:** (A) Schematic illustration of the transition kinetics between different conformational ensembles of PKI\u03b1 in the free form. (B) Corresponding scheme for the bound ensembles. The population of each state is indicated as percentage. The kinetic constants expressed in microseconds are indicated on the arrows. (C) 2D free energy landscape for PKI\u03b1 in the free form projected along the first two tICs (D) Corresponding free energy landscape for PKI\u03b1 in the bound forms. The major conformational ensembles of free PKI\u03b1 in the free form can be categorized into four states, featuring different combination of helix/coil/loop for the HAR, PSS and NES motifs.\n\n![Figure 8\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/55607/elife-55607-fig8-figsupp1-v3.jpg)\n\n**Figure 8\u2014figure supplement 1.:** (A)\u00a0Helical content of the HAR motif. (B) Helical content of the NES motif. (C) The radius of gyration (Rg). The conformational space can be divided into four major ensembles based on the secondary structure content in the HAR and NES motifs. The helical content of NES is highly correlated with Rg.\n\nIn this case, the SAXS data are less informative as the Kratky plot for the PKA-C/ATP\u03b3N/PKI\u03b1 complex is dominated by the bell-shaped curve of the globular enzyme, with a well-defined maximum in the low q region (~0.08 \u00c5\u22121) that decays to near zero at high q values. To determine the rates of conformational exchange and the populations of PKI\u03b1 free and bound, we performed unbiased molecular dynamics (MD) simulations and analyzed the conformational transitions building a Markov model. To simplify and visualize the conformational space of PKI\u03b1, we reduced the high-dimensionality space of the residue-residue contacts into a 6-dimensional space using time-lagged independent component analysis (tICA). We then projected the free energy landscape along the main components, tlC1 and tlC2. In this reference frame, free PKI\u03b1 occupies six local minima (\u0394\u0394G\u00a0<\u00a01 kcal/mol) and a higher energy state (\u0394\u0394G\u00a0~\u00a02.5 kcal/mol) (Figure 8). We then clustered the conformers into four major ensembles based on the secondary structure content of the HAR, PSS, and NES motifs: HLH (helix-loop-helix), CLC (coil-loop-coil), HLC (helix-loop-coil), and CLH (coil-loop-helix) (Figure 8\u2014figure supplement 1). For free PKI\u03b1, the CLH ensemble is dominant, with a mean population of 51%, followed by CLC (32%), HLC (15%), and HLH (~2%) (Figure 8A). The kinetics of the conformational transitions were calculated using the mean-first-passage-time (MFPT) among these states. We found that all the conformational transitions take place on a \u03bcs time scale, with the slowest transitions from the HLC, CLH, and CLC ensembles to the HLH ensemble; while the transitions from CLC, HLH, and HLC to the CLH ensemble are more rapid (Figure 8, Figure 8\u2014figure supplement 1). For PKI\u03b1 bound to PKA-C, the conformational space spanned becomes more restricted (Figure 8D). Specifically, the HLC, CLC, and HLH minima become more populated, with 72, 22, and 6% (Figure 8B). In addition, the transition kinetics from CLC and HLC to the HLH ensemble is estimated to occur approximately 10 times faster (Figure 8, Figure 8\u2014figure supplement 1).\n\n### Proposed mechanistic model\n\nBased on NMR, SAXS, fluorescence, RAM simulations as well as Markov model analysis, we propose that PKI\u03b1 binding to PKA-C occurs via a multistate recognition pathway. We envision that free PKI\u03b1 spans a broad conformational space with incipient helical elements for the HAR and NES motifs. These conformations are in fast exchange in the NMR time scale. We propose that the initial step (fast) of recognition by PKA-C is driven by electrostatic interactions between the conformations of PKI\u03b1 featuring an exposed PSS motif (CLC and HLC) and PKA-C (Tsigelny et al., 1996). These encounter complexes undergo slower conformational rearrangements in which a) the HAR motif folds upon binding in a helical conformation, b) the PSS motif binds within the active cleft in an extended conformation, and c) the transient helix of the NES motif adopts a more defined conformation. To validate our hypothesized mechanism, we fitted the fluorescence curves using a set of equations detailed in the supporting information (Scheme 1 and Scheme 2). Under these constraints, we obtained a kinetic constant of 1.5 \u00d7 107 M\u22121s\u22121 for the formation of the PKA-C*/PKI* encounter complex and a slow relaxation of the complex with a constant of 2400 s\u22121. These kinetics parameters are in the same order of magnitude of the association rates measured for binding of other intrinsically disordered proteins (Mollica et al., 2016).\n\n![Scheme 1.](https://cdn.elifesciences.org/articles/55607/elife-55607-fig11-v3.jpg)\n\n**Scheme 1.:** Highlighted pathway is used in the numerical fitting of Stopped Flow rapid mixing FRET data using MATLAB.\n\n![Scheme 2.](https://cdn.elifesciences.org/articles/55607/elife-55607-fig12-v3.jpg)\n\n## Discussion\n\nWhen unleashed from the R-subunit, the C-subunit of PKA is in a constitutively active state, where binding of nucleotide engages the N- and C-lobes priming the kinase for substrate recognition and catalysis. R-subunits and PKI share small linear motifs (SLiMs) that bind the substrate binding site with high affinity and trap PKA-C in an inactive state. SLiMs are intrinsically disordered regions that are part of the allosteric machinery of kinases and control the cross-talk between different kinase signaling pathways (Akimoto et al., 2014; Akimoto et al., 2013; Delaforge et al., 2018; G\u00f3gl et al., 2019; Kragelj et al., 2015; Wang et al., 2011; Wright and Dyson, 2015; Guiley et al., 2019). PKI can be portrayed as a prototypical SLiM that is able to bind and inhibit the kinase and recruit the CRM1/RanGTP complex to export the enzyme out of the nucleus, thereby regulating cell proliferation. Previous structural studies focused on the 5\u201324 region of PKI\u03b1 that encompasses both the HAR and PSS motifs, which has been instrumental in trapping the ternary complex of the kinase and obtain the first crystal structure of a kinase (Knighton et al., 1991a). Subsequent spectroscopic studies provided evidence for the dynamic nature of the PKI\u03b1 peptide, suggesting the presence of minimal secondary structural elements such as the HAR and NES regions, with a C-terminal tail completely disordered (Padilla et al., 1997; Hauer et al., 1999a). The HAR is extremely important for binding/anchoring to the catalytic subunit as well as positioning the PSS within the catalytic cleft of the enzyme (Walsh et al., 1971; Cheng et al., 1986). However, most PKA target substrates do not possess this motif and the only substrate recognition requirement is the highly positively charged consensus sequence in the linear PSS motif. In fact, in most cases this recognition motif is located in highly dynamic or intrinsically disordered regions as it molds into the binding groove of the kinase situated at the interface between the small and large lobes. Our studies bring new insights into the dynamic nature of the PKI\u03b1 recognition mechanism. After the initial binding of ATP in the pocket between the two lobes that primes the substrate binding site (Chu et al., 2017; Hyeon et al., 2009; Masterson et al., 2010), this highly disordered polypeptide, with incipient helices at both the HAR and NES motifs, is driven toward the kinase via positively charged Arg residues in the PSS sequence. Deletion of one of the Arg residues in the PSS provokes a dramatic reduction of the phosphorylation kinetics and has been linked to the progression of dilated cardiomyopathy (Kim et al., 2015; Haghighi et al., 2006). On the other hand, mutations in the active site of the kinase that change electrostatic interactions such as L205R dramatically influence the thermodynamics and kinetics of substrate binding, leading to the development of adrenocortical adenomas and the resultant Cushing\u2019s syndrome (Calebiro et al., 2014; Cheung et al., 2015; Walker et al., 2019). More importantly, our studies reveal a significant ordering of the PKI\u03b1 structure upon interaction with the kinase, particularly for the HAR, PSS, and NES motifs. This ordering occurs in the second, slower binding step as revealed by FRET measurements, while the C-terminal tail of PKI\u03b1 remains essentially disordered, undergoing large amplitude motions with transient interactions with the C-lobe of the kinase. Interestingly, when PKI\u03b1 is bound to PKA-C, the NES region undergoes a structural rearrangement, showing a higher degree of helicity as supported by NMR and MD simulations. The NES motif comprises Leu 37, Leu 41, and Leu 44 that are essential for high binding affinity to the nuclear export machinery CRM1/RanGTP (G\u00fcttler et al., 2010; Fu et al., 2018). The CRM1 binding pocket is a relatively rigid cavity and NES sequences must possess significant plasticity to mold into the binding pocket (G\u00fcttler et al., 2010; Fu et al., 2018). This observation could explain why the NES assumes a defined conformation only upon interaction with CRM1. Based on our data, it is possible to speculate that the interactions of PKI\u03b1 with PKA-C preambles the formation of the complex and that the helix-coil equilibrium of the NES domain is critical for recruiting the CRM1/RanGTP nuclear export complex (Fu et al., 2018; Fung et al., 2017; G\u00fcttler et al., 2010). This complex binding mechanism shows how SLiMs can orchestrate multiple functions and regulate kinases through disordered ancillary proteins or protein domains.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Gene (Oryctolagus cuniculus )</td>\n      <td>PKIA or PKI\u03b1</td>\n      <td></td>\n      <td></td>\n      <td>Uniprot ID P61926</td>\n    </tr>\n    <tr>\n      <td>Gene (Mus musculus)</td>\n      <td>PKA-CA or PKA-C</td>\n      <td></td>\n      <td></td>\n      <td>Uniprot ID: Q9DBC7</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Escherichia coli)</td>\n      <td>BL21(DE3)</td>\n      <td>New England Biotech (NEB)</td>\n      <td>C2527I</td>\n      <td>Chemically competent cells</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pT7-7 PKI\u03b1</td>\n      <td>Dr. Herberg (Universit\u00e4t Kassel, Germany)</td>\n      <td></td>\n      <td>DOI: 10.1042/BJ20071665</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>PKI\u03b1V3C</td>\n      <td>This study</td>\n      <td></td>\n      <td>Single Cys mutant of PKI\u03b1</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>PKI\u03b1S28C</td>\n      <td>This study</td>\n      <td></td>\n      <td>Single Cys mutant of PKI\u03b1</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>PKI\u03b1S59C</td>\n      <td>This study</td>\n      <td></td>\n      <td>Single Cys mutant of PKI\u03b1</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>PKI\u03b1V3C, S59C</td>\n      <td>This study</td>\n      <td></td>\n      <td>Double Cys mutant of PKI\u03b1</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>PKA-C\u03b1</td>\n      <td>Prof. Taylor S.S. (USCD, CA, USA)</td>\n      <td></td>\n      <td>(Hemmer et al., 1997) DOI: 10.1006/abio.1996.9952</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>(His6X)-PKA-RII\u03b1R213K</td>\n      <td>Prof. Taylor S.S. (USCD, CA, USA)</td>\n      <td></td>\n      <td>(Hemmer et al., 1997) DOI: 10.1006/abio.1996.9952</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>PKI\u03b1V3C</td>\n      <td>This study</td>\n      <td></td>\n      <td>PCR primer(Forward): aaggagatatacatatgggaactgattgcgaaactacttatgccgatttta</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>PKI\u03b1S28C</td>\n      <td>This study</td>\n      <td></td>\n      <td>PCR primer (Forward): ccatccacgatatcctggtctgcagtgcttccgg</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>PKI\u03b1S59C</td>\n      <td>This study</td>\n      <td></td>\n      <td>PCR primer (Forward): aggaagatgctcaaagatcttgcactgaacaatccggagaag</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>PKI\u03b1V3C, S59C</td>\n      <td>This study</td>\n      <td></td>\n      <td>PCR primer (Forward): 1)aaggagatatacatatgggaactgattgcgaaactacttatgccgatttta 2)aggaagatgctcaaagatcttgcactgaacaatccggagaag</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>MTSL</td>\n      <td>Toronto Research Chemical</td>\n      <td>O875000</td>\n      <td>Spin label</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>dMTSL</td>\n      <td>Toronto Research Chemical</td>\n      <td>A188600</td>\n      <td>Spin label</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Alexa Fluor 488 C5 Meleimide</td>\n      <td>Thermo Fisher Scientific</td>\n      <td>A10254</td>\n      <td>FRET acceptor</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Tetramethylrhodamine-5-maleimide (TMR)</td>\n      <td>Life Technologies</td>\n      <td>T6027</td>\n      <td>FRET donor</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>AMP-PNP or ATP\u03b3N</td>\n      <td>Roche Applied Science</td>\n      <td>10102547001</td>\n      <td>ATP analogous</td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>QuikChange Lightning Multi Mutagenesis Kit</td>\n      <td>Agilent genomics</td>\n      <td>210519</td>\n      <td>Commercial mutagenesis kit</td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>PepTag Assay, Non-Radioactive Detection of PKA</td>\n      <td>Promega</td>\n      <td>V5340</td>\n      <td>Commercial assay kit</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>TopSpin 3.0</td>\n      <td>Bruker Inc</td>\n      <td></td>\n      <td>https://www.bruker.com/</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>NMRFAM-Sparky</td>\n      <td>NMRFam</td>\n      <td></td>\n      <td>https://nmrfam.wisc.edu/nmrfam-sparky-distribution/</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>NMRPipe</td>\n      <td>Delaglio F, NIH\u00a0(Delaglio et al., 1995)</td>\n      <td></td>\n      <td>https://www.ibbr.umd.edu/nmrpipe/install.html</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>PyMol</td>\n      <td>Schr\u00f6dinger, LLC</td>\n      <td></td>\n      <td>https://pymol.org</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>MatLab2019b</td>\n      <td>MathWorks</td>\n      <td></td>\n      <td>https://www.mathworks.com/products/matlab.html</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>GraphPad Prism 8</td>\n      <td>GraphPad Software Inc</td>\n      <td></td>\n      <td>https://www.graphpad.com/</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Origin 8</td>\n      <td>OriginLab</td>\n      <td></td>\n      <td>https://www.originlab.com/</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>SAXSQuant software suit</td>\n      <td>Anton Paar</td>\n      <td></td>\n      <td>N/A</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Primus</td>\n      <td>ATSAS 2.8.3 software</td>\n      <td></td>\n      <td>https://www.embl-hamburg.de/biosaxs/download.html</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>MultiFoXS server</td>\n      <td>(Schneidman-Duhovny et al., 2013).</td>\n      <td></td>\n      <td>https://modbase.compbio.ucsf.edu/multifoxs/ DOI: 10.1016/j.bpj.2013.07.020</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>GROMACS 4.6</td>\n      <td>(Hess et al., 2008)</td>\n      <td></td>\n      <td>http://www.gromacs.org/</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>PLUMED 2.1</td>\n      <td>(Bonomi et al., 2009)</td>\n      <td></td>\n      <td>https://www.plumed.org/doc-v2.5/user-doc/html/_c_h_a_n_g_e_s-2-1.html</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>ALMOST 2.1</td>\n      <td>(Fu et al., 2014)</td>\n      <td></td>\n      <td>https://sourceforge.net/projects/almost/</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>MSMBuilder 3.5</td>\n      <td>(Harrigan et al., 2017)</td>\n      <td></td>\n      <td>http://msmbuilder.org/3.5.0/index.html</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>\u03b42D</td>\n      <td>(Camilloni et al., 2012)</td>\n      <td></td>\n      <td>http://www-mvsoftware.ch.cam.ac.uk/index.php/d2D</td>\n    </tr>\n  </tbody>\n</table>\n\n### Expression and purification of Full-length PKI\u03b1\n\nGene coding for full-length PKI\u03b1 (Oryctolagus cuniculus, PKIA PRKACN1) subcloned into pT7-7 vector was a gift to us by Dr. Friedrich Herberg (Universit\u00e4t Kassel, Germany). For the fluorescence and PRE-experiments, three different single-site (PKI\u03b1V3C, PKI\u03b1S28C and PKI\u03b1S59C) and a double-site (PKI\u03b1V3C, S59C) mutants were generated by QuikChange Lightning mutagenesis kit (Agilent genomics) using PKI\u03b1 as template. The choice of the sites of mutation was based on previous work (Hauer et al., 1999b). Recombinant full-length PKI\u03b1 was expressed in E. coli BL21 (DE3) cells at 30\u00b0C and the purification was performed as previously reported (Hauer et al., 1999a). Briefly, transformed cells were grown in Luria-Bertani (LB) medium for fluorescence while uniformly labeled 15N, 13C/15N, and 2H/13C/15N PKI\u03b1 was expressed in minimal medium (M9) for NMR experiments. Protein expression was induced by the addition of 0.4 mM of IPTG to a culture with optical density of\u00a0~1.3\u20131.4 at 30\u00b0C and was performed for 5 hr. The cell pellet was resuspended in 20 mM MOPS (pH 7.5) and lysed through sonication. The lysate was then centrifuged at 20,000 rpm for 30 min. The supernatant was then heated in a boiling water bath at 95\u00b0C for 5 min to precipitate out most of the undesired proteins. The protein suspension was centrifuged a second time at 20,000 rpm for 30 min. The resulting supernatant was dialyzed against 20 mM TRIS-HCl (pH 7.0) buffer overnight. A second purification step with anion exchange chromatography was carried out using HiTrap Q HP column (GE Healthcare Biosciences Corp) in 20 mM TRIS at pH 7.0 where a NaCl gradient was used to elute the protein. A reversed phase HPLC purification step was also performed to obtain a higher grade of purity using C18 column (HiCHROM, UK) using water as buffer A and isopropanol as buffer B with 0.1% trifluoroacetic acid in both buffers. The purified peptide was concentrated, lyophilized, and stored at \u221220\u00b0C. The final product was accessed using SDS-PAGE with a final purity of\u00a0>97%. The molecular weight and the quantity of the peptide were verified by amino acid analysis (Protein chemistry laboratory at Texas A and M University, TX, USA). All the cysteine mutants of PKI\u03b1 were purified following the same protocol used for the wild-type protein with additional supplement of reducing agent (5 mM \u03b2-mercaptoethanol) in all the dialysis buffers.\n\n### Expression and purification of PKA-C\n\nRecombinant catalytic subunit of PKA-C (Mus musculus gene) was expressed in E. coli BL21 (DE3) cells at 24\u00b0C in M9 minimal medium. The purification was performed using the His6-RIIa(R213K) subunit as described previously (Hemmer et al., 1997). A subsequent second purification step was performed using a HiTrap SP HP cation exchange column (GE Healthcare Biosciences Corp) to separate out the three isoforms of PKA-C that differ in their phosphorylation profiles (Yonemoto et al., 1993). The purified protein was then stored in phosphate buffer supplied of 10 mM DTT, 10 mM MgCl2, and 1.0 mM NaN3, at 4\u00b0C. For isotopically 2H-labeled protein, the cells were growth 80% D2O M9 minimal medium in a bench fermenter (2.0 L). The most abundant isoform of PKA-C, corresponding to phosphorylation at S338, T197, and S10 residues (isoform II) (Walsh and Ashby, 1973), was used for all experiments. The purity was assessed using SDS-PAGE electrophoresis and the final purity was\u00a0>97%. The kinase activity was tested with a gel-shift assay from Promega (Fitchburg, Wisconsin) and quantified using A280\u00a0=\u00a052,060 M\u22121 cm\u22121.\n\nThe C199A S325C mutant of the catalytic subunit of PKA (PKA-CC199A, S325C) was recombinantly expressed by growing transformed E. coli BL21(DE3) cells in LB medium and induced by addition of IPTG at 24\u00b0C as described previously. The mutant PKA-C was purified using the previously described protocol (Masterson et al., 2009). Briefly, cells were resuspended in lysis buffer (30 mM MES, 1 mM EDTA, 50 mM KCl, 5 mM \u03b2-mercaptoethanol, 0.15 mg/mL lysozyme, 1 mM PMSF, pH 6.5), and lysed using French press at 1000 psi. The supernatant after pelleting the cell debris was batch-bound with P11 phosphocellulose resin in lysis buffer at pH 6.5. PKA-C was purified by eluting over a gradient of 0\u2013500 mM KH2PO4. The different isoforms of PKA-C were further separated by cation exchange chromatography with a HiTrap SP column using a KCl gradient in 20 mM KH2PO4 at pH 6.5. Upon purification, wild-type or mutant proteins were supplied with 10 mM MgCl2, 10 mM DTT and 1 mM NaN3 and stored at 4\u00b0C.\n\n### Spin labeling of proteins\n\nLyophilized single site 15N PKI\u03b1 mutants were first dissolved in 1 mL of buffer containing 20 mM KH2PO4, pH 7.0, and incubated for about an hour in the presence of 1 mM TCEP. The sample was concentrated to 0.6 mM. The protein solution was then buffer exchanged into 20 mM KH2PO4, 90 mM KCl, 10 mM MgCl2, 1 mM NaN3 pH 7.0. The sample was concentrated and divided into two equal aliquots to perform two separate spin labeling reactions in parallel: one using the paramagnetic spin label MTSL (1-oxyl-2,2,5,5-tetramethyl- \u03b4\u22123-pyrroline-3-methyl)methanethiosulfonate, Toronto Research Chemicals, Inc), and the second using the diamagnetic form, dMTSL (1-acetyl-2,2,5,5-tetramethyl-\u03b4\u22123-pyrroline-3-methyl)methanethiosulfonate, Toronto Research Chemicals, Inc). The reactions were carried out at 4\u00b0C overnight with ten-fold excess of labeling compounds that was then removed by passing the reaction solution through a 5 mL HiTrap Desalting column (GE Healthcare Biosciences Corp.) equilibrated with 20 mM KH2PO4, 90 mM KCl, 10 mM MgCl2, 1 mM NaN3, pH 6.5. The extent of labeling was assessed by ESI TOF mass spectrometry (Mass Spectrometry Laboratory, Department of Chemistry, University of Minnesota), and was found to be\u00a0>99%.\n\n### NMR sample preparation\n\nThe NMR samples used to study the free form of PKI\u03b1 were composed primarily by 15N and 13C/15N labeled protein expressed in M9 media. The final concentration of samples ranged from 0.5 mM to 0.8 mM in 20 mM KH2PO4, 90 mM KCl, 10 mM DTT, 10 mM MgCl2, 1 mM NaN3 at pH 6.5. Samples for the assignment of the PKI\u03b1 in complex with PKA-C were performed using uniformly 2H/13C/15N and 2H/15N labeled PKI\u03b1 and uniformly 2H/15N PKA-C. The ternary complex between PKI\u03b1 and PKA-C and ATP-analogues (AMP-PNP) were reconstituted in 20 mM KH2PO4, 90 mM KCl, 12 mM of ATP\u03b3N, 10 mM DTT, 10 mM MgCl2, 1 mM NaN3 at pH 6.5. A molar ratio of 1:1.2 (PKI\u03b1:PKA-C) to saturate the complex with a concentration of 0.150 mM of PKI\u03b1. All experiments were performed at 27\u00b0C. The denaturation experiments were carried out on 0.3 mM sample of uniformly 15N PKI\u03b1 resuspended in 20 mM KH2PO4, 90 mM KCl, 10 mM DTT, 10 mM MgCl2, 1 mM NaN3, 8 M Urea at pH 6.5. The 1HN-\u03932 relaxation experiments were performed on 0.25 mM 15N labeled single mutants of PKI\u03b1 for the free form and uniformly 2H/13C/15N protein for the bound form. In both preparations the buffer used for the analysis was 20 mM KH2PO4, 90 mM KCl, 10 mM MgCl2, 1 mM NaN3 at pH 6.5. For all the NMR experiment carried out on the PKA-C/ATP\u03b3/PKI\u03b1 complex, a low protein concentration sample was prepared to due to the high tendency to aggregate.\n\n### Preparation of fluorescent labeled proteins\n\nLyophilized single-site PKI\u03b1 mutants were first dissolved in 1 mL of buffer containing 20 mM KH2PO4, pH 7.0, and incubated for about an hour in the presence of 1 mM TCEP. About four-fold excess of fluorescent dye (tetramethylrhodamine-5-maleimide, TMR) was added to the sample and incubated for about an hour at room temperature with stirring and protected from light. The reaction mixture was then passed through two 5 mL HiTrap Desalting columns (GE Healthcare Biosciences Corp.) equilibrated with 20 mM KH2PO4, 90 mM KCl, 10 mM MgCl2, 1 mM NaN3 pH 6.5 to remove the unreacted dye. The extent of labeling was also verified using mass spectrometry. For the double-mutant PKI\u03b1, the procedure described above was used. In this case, Alexa-488 was added to the solution in 1:1 stoichiometric ratio with PKI\u03b1 and the reaction was allowed to proceed for one hour at room temperature with stirring and protected from light. Since Alexa Fluor 488 carries a charge, the single-labeled PKI\u03b1 was separated using anion exchange chromatography with HiTrap Q HP column using an NaCl gradient in 20 mM TRIS pH 7.0. The fraction containing the single Alexa-labeled PKI\u03b1 was buffer exchanged using a PD-10 MidiTrap column equilibrated with 20 mM KH2PO4, 90 mM KCl, 10 mM MgCl2, 1 mM NaN3, pH 7.0. Five-fold excess of tetramethylrhodamine-5-maleimide (TMR) was added and the reaction mixture was incubated for about an hour with stirring and protected from light. The asymmetrically double-labeled PKI\u03b1 was separated from the unreacted dye by passing the reaction through two 5 mL HiTrap Desalting columns (GE Healthcare Biosciences Corp.) equilibrated with 20 mM KH2PO4, 90 mM KCl, 10 mM MgCl2, 1 mM NaN3 pH 6.5. The extent of labeling in each step was determined using mass spectrometry. For the labeling of PKA-CC199A, S325C mutant, the protein was buffer-exchanged by passing through a PD-10 MidiTrap column (GE Healthcare Bio-Sciences Corp.) equilibrated with 20 mM KH2PO4, 90 mM KCl, 10 mM MgCl2, 1 mM NaN3, pH 7.0 at room temperature. The fractions containing PKA-C were pooled and the concentration was adjusted to\u00a0~5\u20136 \u03bcM. ATP at a final concentration of 8 mM was added to protect the C343 site from being labeled as shown previously (Nelson and Taylor, 1981). The reaction was initiated by adding a five-fold molar excess of Alexa Fluor 488 and allowed to proceed for about one hour at room temperature with stirring and protected from light. The sample was then buffer-exchanged with the same buffer composition as before, but with 10 mM DTT and pH 6.5. The extent of labeling was assessed using mass spectrometry. The protein sample was then concentrated to\u00a0~20 \u03bcM.\n\n### NMR experiments\n\nBackbone resonance assignment of PKI\u03b1 bound to PKA-C was achieved using standard triple-resonance 3D NMR experiments (Ikura et al., 1990; Kay et al., 2011). For the assignment of the free form, all the NMR experiments were acquired on a Varian Inova 600 MHz spectrometer equipped with an HCN Cold Probe and on a Bruker 700-MHz Avance spectrometer equipped with a 5 mm triple resonance cryoprobe. The 1H-15N HSQC (Bodenhausen and Ruben, 1980) experiments were acquired with 16 scans, 2048 (1H) and 100 (15N) complex points, before and after each triple-resonance experiment. The HNCACB and CBCA(CO)NH (Grzesiek and Bax, 1992) experiments were collected with 64 scans, 1643 (1H), 108 (15N), and 128 (13C) complex points. The HNCO (Kay et al., 2011; Yang and Kay, 1999) experiments were acquired with 32 scans, 1024 (1H), 40 (15N), and 54 (13C) complex points. Standard 15N-edited TOCSY-HSQC and NOESY-HSQC (Marion et al., 1989) experiments were acquired with 64 scans, 1024 (1H) and 120 (15N) complex points. The CC(CO)NH-TOCSY (Cavanagh et al., 2011) experiment was recorded with 1024 (1H), 30 (15N), and 70 (13C) complex points, with 32 scans on a Bruker 700 MHz Advance III spectrometer equipped with a 1.7 mm TCI MicroCryoProbe. All data was processed using NMRPipe (Delaglio et al., 1995) and visualized using NMRFAM-Sparky (Goddard and Kneller, 2004; Lee et al., 2015).\n\nAll experiments for the backbone assignment of the PKA-C/ATP\u03b3N/PKI\u03b1 ternary complex were performed on a Bruker Avance III 850 MHz spectrometer with a TCI cryoprobe. TROSY-based (Salzmann et al., 1998; Salzmann et al., 1999) HNCA and HN(CO)CA (Kay et al., 2011) experiments were collected with a minimum of 32 scans, 1024 (1H), 32 (15N), and 64 (13C) complex points. The TROSY-based HNCACB experiment was collected with 32 scans, 1024 (1H), 35 (15N) and 50 (13C) complex points were performed to measure the 13C\u03b1 and 13C\u03b2 correlations. The HNCO experiments were acquired with a minimum of 16 scans, 1024 (1H), 30 (15N), and 40 (13C) complex points. Before and after each triple resonance experiments a 1H-15N CLEAN-TROSY-HSQC (Schulte-Herbr\u00fcggen and Sorensen, 2000) spectrum was acquired with 1024 (1H) and a minimum of 64 (15N) complex points. All data were processed using NMRPipe (Delaglio et al., 1995) and visualized using Sparky (Lee et al., 2015; Goddard and Kneller, 2004). The CSI for C\u03b1, C\u03b2, C\u2019 and H\u03b1 were derived with respect to the reference calculated by Schwarzinger et al. (Schwarzinger et al., 2000; Schwarzinger et al., 2001) and plotted using the GraphPad Prism six software package (GraphPad Software, Inc). The CSP plot (Williamson, 2013) was calculated using the amide chemical shifts according to the following equation:\n\n$$\n\u0394\\delta=\\sqrt{\u0394\\delta_{HN}^{2}+(0.154\u0394\\delta_{N})^{2}}\n$$\n\nWhere \u0394\u03b4 is the compounded chemical shift perturbation, \u0394\u03b4 HN is the chemical shift perturbation of the amide proton, \u0394\u03b4 N is the chemical shift perturbation of nitrogen, and 0.154 is the scaling factor for nitrogen\u00a0(Mulder et al., 1999).\n\n#### NMR relaxation experiments\n\nThe heteronuclear [1H,15N]-NOE spectra were acquired using standard pulse sequences (Farrow et al., 1994a) on a Bruker 850 MHz and 900 MHz Advance spectrometer III equipped with TCI cryoprobes at 27\u00b0C. The heteronuclear [1H,15N]-NOE values were calculated from the ratio of the peak intensities with and without proton saturation. The errors were estimated by evaluating the standard deviation of the NOE values (\u03c3NOE):\n\n$$\n\\frac{\\sigma_{NOE}}{NOE}\\sqrt{\\frac{\\sigma_{I_{sat}}}{I_{sat}}^{2}+\\frac{\\sigma_{I_{unsat}}}{I_{unsat}}^{2}}\n$$\n\nwhere \u03c3Isat and \u03c3Iunsat are the root-mean-square noise of the spectra and Isat and Iunsat are the intensities of the resonance with and without proton saturation (Farrow et al., 1994b).\n\nThe 15N spin relaxation rates (T1 and T2) for PKI\u03b1 free and bound to PKA-C/ATP\u03b3N complex were measured as reported by Barbato et al. (1992) by acquiring a series of 2D [1H,15N]-HQCS spectra at different relaxation delays. The relaxation rates for each resided were obtained by fitting the intensities of each peaks with an exponential decay function. 16 scans, 1024 (1H), 60 (15N) complex points were used to record T1-relaxation experiment. The T2 measurements were recorded using 32 scans, 1024 (1H), 64 (15N) complex points for both PKI\u03b1 free and bound. For T1, the relaxation delays were: (20), 100, 200, 300, 400, 600, 800, and 1000 ms. For T2, the relaxation delays were (16.6), 83.1, 166, 249, (332), 498, 664, 830 ms. The numbers in parenthesis indicate the experiments that were repeated for error estimation. All the experiments were recorded using a Bruker 900 MHz Advance spectrometer III equipped with TCI cryoprobes at 27\u00b0C. All experiments on the free form of PKI\u03b1 was performed using a 0.2 mM sample of uniformly 2H/15N labeled protein. To measure PKI\u03b1 relaxation in the ternary complex, the final sample concentration was 0.180 mM 2H/15N labeled PKI\u03b1 and 0.220 mM of U-2H labeled PKA-C. All samples were prepared in aqueous buffer consisting of 20 mM KH2PO4, 90 mM KCl, 60 mM MgCl2, 10 mM DTT, and 1 mM NaN3 at pH 6.5.\n\nThe \u03bcs-ms timescale conformational dynamics of backbone amides in PKI\u03b1 free form and the PKA-C/ATP\u03b3N/PKI\u03b1 complex were measured using the relaxation-compensated version of the Carr-Purcell-Meiboom Gill (CPMG) relaxation dispersion experiments (Baldwin and Kay, 2009; Long et al., 2008; Palmer et al., 2001). The experiments were performed in an interleaved mode with a \u03bdCPMG values of 0, 12.5 and 1000 Hz. Effective transverse relaxation rate constant, $R_{2,eff}$, were determined at each \u03bdCPMG value using the peak intensities with and without relaxation period according to the equation (Mulder et al., 2001):\n\n$$\nR_{2,eff}=\\frac{ln\u2061\\frac{I_{0}}{I}}{T}\n$$\n\nwhere I0 and I are the peak intensities of the resonances in the 2D spectra acquired in the absence and presence of a relaxation period, respectively, and T is the total CPMG time\u00a0(Mulder et al., 2001) which was 40 ms. All the experiments were acquired on Bruker 900 MHz spectrometer using 16 scans with 1024 (1H) and 64 (15N) complex points with a recycle delay of 4.5 seconds.\n\nAll the spectra were processed using NMRPipe (Delaglio et al., 1995) and visualized using NMRFAM-Sparky (Goddard and Kneller, 2004; Lee et al., 2015). (T.D. Goddard and D.G. Kneller, UCSF).\n\n#### Paramagnetic relaxation measurements\n\nThe intra-molecular 1H PRE-\u03932 relaxation measurements on the free form of PKI\u03b1 mutants were carried out using the pulse sequence by Iwahara et al. (2007) on a Bruker Advance 700 MHz spectrometer at 27\u00b0C. All experiments were performed using 160 scans with 2048 (1H) and 128 (15N) complex points. A two-time point measurement was performed using a relaxation time of 4 and 14 ms in an interleaved fashion. The 1H PRE-\u03932 values were calculated using the equation (Iwahara et al., 2007):\n\n$$\n\u0393_{2}=\\frac{1}{T_{b}-T_{a}}ln\u2061\\frac{I_{dia}T_{b}I_{para}T_{a}}{I_{dia}T_{a}I_{para}T_{b}}\n$$\n\nwhere \u03932 is the PRE-relaxation rate, the time points are Ta and Tb, Ipara is the corresponding intensity with a spin label and Idia is the corresponding intensity with a reduced spin label:\n\n$$\n\\sigma\u0393_{2}=\\frac{1}{T_{b}-T_{a}}\\sqrt{\\frac{\\sigma_{dia}T_{a}}{I_{dia}T_{a}}^{2}+\\frac{\\sigma_{dia}T_{b}}{I_{dia}T_{b}}^{2}+\\frac{\\sigma_{para}T_{a}}{I_{para}T_{a}}^{2}+\\frac{\\sigma_{para}T_{b}}{I_{para}T_{b}}^{2}}\n$$\n\nWhere \u03c3dia and \u03c3para are the roots mean square noise of the respective spectra. For the simultaneous detection of inter- and intra-molecular PREs of PKI\u03b1 bound to PKA-C/ATP\u03b3N, we used a TROSY-based CCLS variation of the standard PRE pulse sequence (Olivieri et al., 2018). For both paramagnetic and diamagnetic experiment, the complex sample was prepared with a total protein concentration of 140 \u03bcM using a 1:1 PKA-C/PKI\u03b1 molar ratio.\n\n#### Residual dipolar coupling measurements\n\nBackbone amide 1DNH RDCs of 15N PKI\u03b1 were measured at 27\u00b0C by taking the difference in 1JNH scalar coupling in aligned and isotropic media (Tjandra and Bax, 1997). The aligned medium was constituted by DMPC/D7PC bicelles (q\u00a0=\u00a03.5) and 1JNH couplings were measured using the in-phase anti-phase [1H-15N] HSQC sequence (Ottiger et al., 1998). To get an orthogonal set of 1DNH RDCs values, we used stretched polyacrylamide gel (Ishii et al., 2001). All the experiments were carried out on a Bruker 850 MHz Avance III spectrometer equipped with a 5 mm triple resonance cryoprobe, using 320 scans with 1024 (1H dimension) and 60 (15N dimension) complex points.\n\n### Circular dichroism (CD) spectra acquisition and data analysis\n\nThe CD spectra in the far-UV of free PKI\u03b1 in native conditions were recorded using a JASCO J-815 spectropolarimeter (Chemes et al., 2012). The spectra were acquired at 25\u00b0C scanning from 180 to 260 nm and recording at 20 nm/min scan speed with a bandwidth of 5 nm and a pitch of 0.1 nm. 100 \u03bcM PK\u0399\u03b1 was solubilized in 20 mM PIPES buffer (pH 7.0) with 150 mM NaCl. To record the baseline, a blank sample with buffer alone was used. The data were analyzed using the BeSTSel web server (http://bestsel.elte.hu/; Micsonai et al., 2018).\n\n### Small angle X-ray scattering (SAXS) experiment and data analysis\n\nSAXS data were collected at the University of Utah using an Anton Paar SAXess instrument with line collimation and solid-state detector. In both PKI\u03b1 free and the PKA-C/PKI\u03b1 complex, the proteins were equilibrated by dialysis in buffer containing 20 mM MOPS, 90 mM KCl, 60 mM MgCl2, 10 mM DTT, 1 mM NaN3 (pH 6.5), and 12 mM of ATP\u03b3N. For measurements of the PKI\u03b1 free form, a protein concentration of 1 mM was used, and for the PKA-C/PKI\u03b1 complex sample, a final protein concentration 0.2 mM protein with PKA-C/PKI\u03b1 in 1:1 molar ratio. SAXS data were reduced and desmeared using the SAXSQuant (Anton Paar) software suite and further analyzed using PRIMUS in the ATSAS 2.8.3 software suite (Franke et al., 2017). The fitting of the MD structural ensembles to the experimental scattering data was performed using the MultiFoXS server (Schneidman-Duhovny et al., 2013). 100 random snapshots from MD simulations with different radius of gyration (Rg) were chosen as the conformational ensembles, and the fitting was done for the q range (0.01 to approximately 0.18 \u00c5\u22121). The top 10 structures with the lowest \u03c7 values were selected as the final structure ensembles.\n\n### Modeling of PKI\u03b1 ensembles using replica-averaged metadynamics (RAM) simulations\n\nFor the free form, we used the extended conformation of the full-length PKI\u03b1 as a template. The protein was solvated in a rhombic dodecahedron solvent box with TIP3P water molecule layer extended approximately 10 \u00c5 away from the protein\u2019s surface. Counter ions (K+ and Cl-) were added to ensure electrostatic neutrality corresponding to an ionic concentration of\u00a0~150 mM. All protein covalent bonds were constrained with the LINCS (Hess et al., 1997) algorithm and long-range electrostatic interactions were calculated using the particle-mesh Ewald method with a real-space cutoff of 10 \u00c5 (Best et al., 2012; Darden et al., 1993). Parallel simulations of 130 ns were performed simultaneously using GROMACS 4.6 (Hess et al., 2008) with CHARMM36a1 force field (Best et al., 2012). As a starting configuration for the bound form, we used the ternary complex of PKA-C/ATP/PKI5-24 (PDB: 1ATP) and built the reminder amino acids of PKI\u03b1 using PyMOL (pymol.com). The remaining parameters were set using the same protocol for the free form.\n\nThe subsequent RAM simulations were started from the random snapshots of the production trajectory (the last 100 ns). As for previous RAM simulations (Roux and Weare, 2013), we chose 10 replicas: five replicas initiated from partially folded conformers, and the others from extended conformers. We set two protocols imposing different restraints: a) RAM with CS restraints (RAM_CS) for both free and bound forms in which the predicted backbone chemical shifts were back-calculated by Camshift method implemented in ALMOST 2.1\u00a0(Fu et al., 2014); and b) RAM with CS and RDC restraints (RAM_CSRDC) for the free form only in which the predicted RDCs were back-calculated using the tensor-free method (Camilloni and Vendruscolo, 2015) implemented in PLUMED 2.1 (Bonomi et al., 2009). Four collective variables (CVs) were chosen to monitor the conformational plasticity and secondary structure of PKI\u03b1: a) psi angles for all residues (backbone and dihedral); b) radius of gyration for all backbone C\u03b1 atoms (radius of gyration); c) helical content of residues 4\u201322 (helical content of the N-terminus); and d) helical content of residue 32\u201350 (helical content of the NES motif). Gaussian deposition rate was performed with an initial rate of 0.125 kJ/mol/ps, where the \u03c3 values were set to 0.5, 0.02 nm, 0.1, and 0.1 for the four CVs. Of the 10 replicas, each of the four CVs were imposed on two replicas, and the remaining two replicas were left neutral. The RAM simulations were carried out using GROMACS 4.6 in conjunction with PLUMED 2.1 (Bonomi et al., 2009) and ALMOST 2.1 (Fu et al., 2014), and continued for\u00a0~250 ns for each replica with exchange trails every 0.5 ps. The free energy along the four CVs converged after 150 ns, with the standard deviation below one kcal/mol. The last 100 ns of each replica constituted the production trajectory for a total simulation time of 1.0 \u03bcs and used for analysis.\n\n### Adaptive sampling of pki\u03b1 in free and bound forms and Markov model analysis\n\nFor the free form, the adaptive sampling was started from randomly chosen 320 snapshots of PKI\u03b1 from the RAM simulations. The initial velocities were randomly generated to satisfy the Maxwell distribution at 300K. A\u00a0~\u00a0200 ns simulation was initiated from each starting configuration. Therefore, a total of 60 \u00b5s trajectories and 240,000 snapshots (250 ps per frame) were collected for subsequent analysis. For the bound form, the adaptive sampling was started from 50 snapshots of the RAM simulations, and\u00a0~20 \u00b5s trajectories have been collected. More samplings are undertaken.\n\n#### Markov model and time-lagged independent component analyses (tICA)\n\nThe Markov model analysis was carried out using MSMBuilder 3.5 (Harrigan et al., 2017). The contact distances between residue pairs that are separated by at least four residues, were chosen as the metrics to characterize the conformational transition of PKI\u03b1. The representation in this metric space was further reduced to 6-dimension vectors using time-lagged independent component analysis (tICA) at a lag time of 15 ns. The 240000 snapshots were clustered into 50 microstates with mini-batch K-Mean clustering and Markov model was built upon the transition counts between these microstates. The same tICA analysis was applied to both free and bound forms.\n\n#### Statistical analysis of equilibrium population and MFPT\n\nTo obtain the statistical distribution and errors on the equilibrium population and MFPT along the given tICA projections, 150 rounds of bootstrapping with replacement were performed. Specifically, for each round, new clustering and Markov model is built, and the microstates are categorized into four major states based on the tICA projections. The equilibrium population and MFPT are subsequently computed. The same MFPT analysis was applied to both free and bound forms.\n\n### Stopped-flow TR-FRET experiments and kinetic binding model\n\nThe kinetics of binding between PKA-C and PKI\u03b1 were measured using home-built stopped-flow spectrofluorometer (Muretta et al., 2015). Equal volumes of each component were mixed, the samples were then excited at 475 nm, and fluorescence emission was measured using a 520 nm filter. For Alexa-labeled PKA-CC199A, S325C and TMR-labeled PKI\u03b1, the final concentration of the kinase was fixed at 100 nM, while the concentration of PKI\u03b1 was varied from 0 to 250 times the concentration of PKA-C. For the doubly-labeled PKI\u03b1V3C, S59C and unlabeled PKA-C, the concentration of the peptide was fixed at 100 nM final concentration while the concentration of the kinase was varied from 0 to 800 times the concentration of PKI\u03b1V3C, S59C. The buffer used in both setups contains 20 mM KH2PO4, 90 mM KCl, 10 mM MgCl2, 16 mM ATP, 10 mM DTT, 1 mM NaN3, pH 6.5 at 25\u00b0C. The total fluorescence was fit into equations describing either single, double or triple exponential decays. Data analyses were done using Origin (OriginLab) software.\n\nSince we saturated PKA-C with an excess of nucleotide, we neglected the equilibrium between open (apo PKA-C) and intermediate (ATP-bound, PKA-C*) state in the fitting procedure. In the model, PKI* represents the ensemble of conformations that is recognized by PKA-C*. The proposed model of binding is reported in Scheme 1.\n\nThe differential equations describing the kinetic model of Scheme 1 are:\n\n$$\n\\frac{d[P^{*}]}{dt}=+k_{-b}P^{*}I^{*}-k_{b}P^{*}I^{*}\n$$\n\n\n\n$$\n\\frac{d[I]}{dt}=k_{-1}I^{*}-k_{1}I\n$$\n\n\n\n$$\n\\frac{dI^{*}}{dt}=k_{1}I-k_{-1}I^{*}+k_{-b}P^{*}I^{*}-k_{b}P^{*}I^{*}\n$$\n\n\n\n$$\n\\frac{dP^{*}I^{*}}{dt}=+k_{b}P^{*}I^{*}-k_{-b}P^{*}I^{*}-k_{r}P^{*}I^{*}+k_{-r}(PI)^{*}\n$$\n\n\n\n$$\n\\frac{d[(PI)^{*}]}{dt}=+k_{r}P^{*}I^{*}-k_{-r}(PI)^{*}\n$$\n\nFor simplicity, PKA-C is denoted as P and PKI as I. The instantaneous fluorescence intensity FI was calculated using the formula,\n\n$$\nFI=\\frac{c[PKAC^{*}PKI^{*}]+c^{*}[(PKACPKI)^{*}]}{c[PKAC^{*}PKI^{*}]eq+c^{*}[(PKACPKI)^{*}]eq}\\timesSC+Baseline\n$$\n\nWhere $\\frac{c[PKAC^{*}PKI^{*}]+c^{*}[(PKACPKI)^{*}]}{c[PKAC^{*}PKI^{*}]eq+c^{*}[(PKACPKI)^{*}]eq}$ is the normalized intensity, \u2018SC\u2019 is a scaling factor, \u2018Baseline\u2019 is the basal fluorescence, c and c* are the FRET efficiency parameters. The differential equations 1-5 were solved numerically using MATLAB ode solver \u2018ode23s\u2019, which was incorporated in an optimization protocol to evaluate the kinetic parameters. The optimization protocol included an initial minimization using MATLAB\u2019s nonlinear programming solver (fminsearch), which was ran for 104 steps and followed by Genetic Algorithm optimization with a population size of 50 and 104 generations. All the six rate constants (k1, k-1, kb, k-b, kr, k-r) were collectively fit for all data points. The FRET efficiency parameters (c and c*) were fit for each specific labelling scheme. The parameters \u2018SC\u2019 and \u2018Baseline\u2019 were fit for each FRET experiment to correct for the experimental errors.\n\nThe fitting resulted in an on rate binding constant (kb) of 1.5 \u00d7 107 M\u22121s\u22121 and a dissociation rate constant (k-b) of 0.5 s\u22121. For the slow phase, we found a forward rate of 2400 s\u22121 and reverse rate of 720 s\u22121. The \u2018on\u2019 and \u2018off\u2019 conformational exchange rates (k1 and k-1) of free PKI\u03b1 were 1.9 \u00d7 104 s\u22121 and 1.5 \u00d7 104 s\u22121.\n",
+      "created_at": "2025-12-02T16:40:39.059015Z"
+    },
+    {
+      "id": "a9135773-a302-48e5-8f3f-d1b2c608b69d",
+      "submission_id": "42dce34c-21b9-45fa-b46d-22439ba7dc3b",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Lewis E Kay, University of Toronto Canada\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.55607.sa1](https://doi.org/10.7554/eLife.55607.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nThank you for submitting your article \"Multi-state recognition pathway of the intrinsically disordered protein kinase inhibitor by protein kinase A\" for consideration by eLife. Your article has been reviewed by two peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Jos\u00e9 Faraldo-G\u00f3mez as the Senior Editor.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThank you for submitting this excellent work for consideration at eLife. The reviewers were effusive in their praise of the work with some of the comments indicated below:\n\n\u2013 \"The article by Olivieri et al. reports an exceptional analysis of the mechanism of binding and biological activation of a key complex by the cAMP-dependent protein and its inhibitor PKI to recruit CRM1/RanGTP\u2026\"\n\n\u2013 \"The work analyzes at high resolution the structural, kinetic and mechanistic properties of the interaction between the kinase and its inhibitor to achieve a conclusive biochemical model\u2026\"\n\n\u2013 \"This is extremely well performed research that spans a large set of biophysical experiments and computations to obtain a cutting-edge characterisation of an important biological mechanism. The work is also very well written.\"\n\n\u2013 \"Overall, I find this manuscript suitable for publication here given the benefit of extending long-standing PKA/PKI complex information to include additional portions required for function.\"\n\nAs you can see both reviewers feel that this paper will be suitable for publication, but they also agree that the work would benefit from additional details concerning the methods. It is also suggested that you try to underscore the functional importance more clearly at the outset of the manuscript \u2013 aspects of it seemed better described elsewhere, but the motivation for the work (and in turn, the gaps in knowledge that it addresses) would be better emphasized early on. Importantly, no further experiments are required.\n\nEssential revisions:\n\n1) NMR analysis of the complex\n\nThe study of the complex PKA-C/ATPgN/PKI\u03b1 employed a large set of NMR experiments, performed with the highest standards and using a careful choice of the experimental conditions and analyses. The data from 15N relaxation (T1, T2, and hetNOE), CPMG, CSP and PREs show conclusively that PKI has a structural rearrangement upon binding, with the HAR and PSS motifs experiencing a disorder-to-order transition. Additional conformational transitions were also found in various regions of PKA upon binding.\n\nThe presentation of the results is very detailed, however, the readability for a non NMR-expert audience can be improved. For example, in subsection \u201cPKA-C binding rigidifies the PSS motif and stabilizes HAR and NES helices of PKI\u03b1\u201d:\n\n\u2013 \"Also, using the [1H,15N]-CCLS-HSQC experiment\u2026we were able to map\u2026\"; please explain how the CCLS enables to map the fingerprints of PKA-C and PKI in the complex simultaneously.\n\n\u2013 \"where both the HAR and PSS motifs show an increase in longitudinal relaxation and a concomitant decrease in the transverse relaxation rates\"; please explain for a non-expert audience what is the structural and molecular interpretation of these spectral properties.\n\n\u2013 The rigidification of the PSS motif and the increase in helical content of the HAR are clear from the CS analysis, however, the wider audience (non-NMR-experts) may not fully appreciate this from the plots reported in Figures 2A and 2B. One possibility may be to present the results in a different manner, e.g. using RCI (Wishart) to provide a more direct representation of the dynamic content of the protein via an elaboration of the CS data, or delta2D (Vendruscolo) to directly show the content of secondary structure from CS. This reviewer, however, appreciate the approach of the authors in showing raw data rather than fitted data from the NMR observables.\n\n\u2013 \"suggesting that the peptide does not experience\". Is this a typo with the correct sentence \"suggesting that the peptide does experience\"?\n\n2) MD restraints\n\nReplica averaged metadynamics simulations were run on the free and kinase bound PKI\u03b1. These simulations are not standard, although have now become quite used in the community, and therefore require a very detailed level of description in the Materials and methods section.\n\nFor example, the ALMOST 2.1 algorithm is cited for CS and RDC restraints, however, the associated reference (Kohlhoff et al., 2009) refers to an evolution of ALMOST, namely camshift, which is a method to predict chemical shifts from interatomic distances that can be used as a restrain in MD simulations. Moreover, the Kohlhoff et al. reference does not cover the RDCs, which were also used in the present restrained simulations. It is important to describe the way by which RDCs are modelled (e.g. SVD vs ab initio prediction of the alignment tensor) as this can make a significant difference in the effect of RDC restraints in the resulting concerted motions of proteins (see JCTC 2011 7:4189-419).\n\nAdditional elements of description:\n\n\u2013 the methods report that \"CS restraints were imposed as averaged over the 10 replicas\" but do not say how were RDC restrained?\n\n\u2013 Can the authors justify the choice of 10 replicas? Number of replicas is an essential choice in ensemble averaged NMR restraints to avoid over-fitting or over-restraining.\n\n3) Convergence of the simulations\n\nThe quality of RAM simulations (as essentially in all biomolecular simulations) is crucially dependent on the convergence, however, this aspect doesn't seem to be described in the manuscript. Could the authors add a description of the convergence criteria employed?\n\nIntroduction, third paragraph: \"More importantly, the mechanism of PKI recognition and binding is essentially unknown.\" Seemingly at odds with existence of many structures and corresponding biochemistry, please be more specific.\n\nSubsection \u201cPKI\u03b1 is an intrinsically disordered protein with transient secondary and short-lived tertiary interactions\u201d/Figure S2B-D: it is unclear how residues were determined to have a \"strong\" or \"marked\" PRE, please comment further. Also clarify the meaning of yellow dots in Figure S2B-D, which presumably indicate residues with no signal detected.\n\nFigure 2C-E: what do colored horizontal lines represent in Figure 2C, D? Presumably something with respect to significance, as in Figure 2A, but not stated. Also, not entirely clear where the complex structure shown in Figure 2E (and again, in several figures afterwards) comes from \u2013 although a comment in Figure 4 legend suggests that this is a model starting from Knighton et al., 1991a. Please cite, and comment explicitly about the fact that a single conformation is shown for the C-term of PKI (which is later shown to be quite flexible).\n\nFigure 4C and commentary in text (\"PKI\u03b1 undergoes large amplitude motions, featuring an equilibrium between elongated and more folded conformations that transiently interact\u2026\") is not really well linked to presented data, please clarify. Assuming that this implies that PKI\u03b1 elongated in apo- form \u2013 moderately well shown by PRE, but is this rigorous enough to rule out partially-collapsed state? \u2013 and kinase-bound in different conformation. Seems better justified after FRET data shown subsequently. Also please explicitly mark PKI position 59 in Figure 4C to highlight MTSL labeling location.\n\nFigure 6\u2014figure supplement 1: list concentration range depicted by different colored lines, please.\n",
+      "created_at": "2025-12-02T16:40:39.059015Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T16:40:39.059015Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T16:40:39.059015Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "120f0791-67f1-4ea4-b9a9-e89f6f157c18",
+      "content_id": "f3e95110-c2bc-4de0-b3a0-7a4f559787f0",
+      "claim_id": "C1",
+      "claim": "PKA-C is a ubiquitous phosphoryl transferase that regulates numerous cellular signaling pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "The cAMP-dependent protein kinase A (PKA) is a ubiquitous phosphoryl transferase that regulates numerous cellular signaling pathways (Taylor et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Taylor et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:40:39.059015Z"
+    },
+    {
+      "id": "d2360f83-6a6e-4afd-8efa-db388d7b786e",
+      "content_id": "f3e95110-c2bc-4de0-b3a0-7a4f559787f0",
+      "claim_id": "C2",
+      "claim": "PKA regulatome comprises globular domains as well as extensive disordered regions, which are essential for protein-protein interactions and signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "As for other eukaryotic protein kinases, PKA regulatome comprises globular domains as well as extensive disordered regions, which are essential for protein-protein interactions and signaling (Akimoto et al., 2013; G\u00f3gl et al., 2019; Pellicena and Kuriyan, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Akimoto et al., 2013; G\u00f3gl et al., 2019; Pellicena and Kuriyan, 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:40:39.059015Z"
+    },
+    {
+      "id": "88f1d68e-a99b-4779-b337-fab1d591a6f9",
+      "content_id": "f3e95110-c2bc-4de0-b3a0-7a4f559787f0",
+      "claim_id": "C3",
+      "claim": "The activity and localization of PKA-C within different cellular compartments are finely regulated by ancillary proteins such as the regulatory subunits (R), A-kinase-anchoring proteins (AKAPs), and the heat-stable protein kinase A inhibitor (PKI).",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, the activity and localization of PKA-C within different cellular compartments are finely regulated by ancillary proteins such as the regulatory subunits (R), A-kinase-anchoring proteins (AKAPs) (Bauman and Scott, 2002; Johnson and Lewis, 2001), and the heat-stable protein kinase A inhibitor (PKI) (Dalton and Dewey, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Bauman and Scott, 2002; Johnson and Lewis, 2001; Dalton and Dewey, 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:40:39.059015Z"
+    },
+    {
+      "id": "a591242c-120f-4df9-9522-d4cd352adb01",
+      "content_id": "f3e95110-c2bc-4de0-b3a0-7a4f559787f0",
+      "claim_id": "C4",
+      "claim": "R-subunits are primarily responsible for the regulation and localization of PKA-C in the cytoplasm through interaction with AKAPs.",
+      "claim_type": "EXPLICIT",
+      "source": "While R-subunits are primarily responsible for the regulation and localization of PKA-C in the cytoplasm through interaction with AKAPs (Taylor et al., 2012), PKI plays a key role in transcriptional regulation and the export of the enzyme from the nucleus to the cytoplasm (Fantozzi et al., 1992; Wiley et al., 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Taylor et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:40:39.059015Z"
+    },
+    {
+      "id": "180a35c0-1742-4849-a7c5-3d0cafad6308",
+      "content_id": "f3e95110-c2bc-4de0-b3a0-7a4f559787f0",
+      "claim_id": "C5",
+      "claim": "PKI plays a key role in transcriptional regulation and the export of the enzyme from the nucleus to the cytoplasm.",
+      "claim_type": "EXPLICIT",
+      "source": "While R-subunits are primarily responsible for the regulation and localization of PKA-C in the cytoplasm through interaction with AKAPs (Taylor et al., 2012), PKI plays a key role in transcriptional regulation and the export of the enzyme from the nucleus to the cytoplasm (Fantozzi et al., 1992; Wiley et al., 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Fantozzi et al., 1992; Wiley et al., 1999.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:40:39.059015Z"
+    },
+    {
+      "id": "fe3ae716-64cf-4164-afbc-55d474fe2144",
+      "content_id": "f3e95110-c2bc-4de0-b3a0-7a4f559787f0",
+      "claim_id": "C6",
+      "claim": "PKI isoforms were first identified in skeletal muscle extracts.",
+      "claim_type": "EXPLICIT",
+      "source": "PKI is expressed in different isoforms of 70\u201375 amino acids in length, which were first identified in skeletal muscle extracts (Dalton and Dewey, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Dalton and Dewey, 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:40:39.059015Z"
+    },
+    {
+      "id": "386051ef-f821-4b30-8ad6-dbebb9bb6d1c",
+      "content_id": "f3e95110-c2bc-4de0-b3a0-7a4f559787f0",
+      "claim_id": "C7",
+      "claim": "PKI isoforms are 70\u201375 amino acids in length.",
+      "claim_type": "EXPLICIT",
+      "source": "PKI is expressed in different isoforms of 70\u201375 amino acids in length, which were first identified in skeletal muscle extracts (Dalton and Dewey, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Dalton and Dewey, 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:40:39.059015Z"
+    },
+    {
+      "id": "97ee7239-a764-4a6a-8e9d-98f2c6b3cb6c",
+      "content_id": "f3e95110-c2bc-4de0-b3a0-7a4f559787f0",
+      "claim_id": "C8",
+      "claim": "PKI isoforms contain several functional motifs: a high affinity region (HAR, residues 1\u201314), a pseudo-substrate recognition sequence (PSS, residues 15\u201322), a nuclear export signal (NES, residues 37\u201346), and a disordered C-terminal tail (residues 47\u201375).",
+      "claim_type": "EXPLICIT",
+      "source": "PKI isoforms contain several functional motifs: a high affinity region (HAR, residues 1\u201314), a pseudo-substrate recognition sequence (PSS, residues 15\u201322), a nuclear export signal (NES, residues 37\u201346), and a disordered C-terminal tail (residues 47\u201375) (Figure 1A; Johnson et al., 2001).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by a citation to Johnson et al., 2001 and reference to Figure 1A.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:40:39.059015Z"
+    },
+    {
+      "id": "818c81a9-2a71-4e32-bd9a-73b67a4b45d0",
+      "content_id": "f3e95110-c2bc-4de0-b3a0-7a4f559787f0",
+      "claim_id": "C9",
+      "claim": "The HAR is an accessory domain that increases the affinity of PKI for the enzyme.",
+      "claim_type": "EXPLICIT",
+      "source": "The HAR is an accessory domain that increases the affinity of PKI for the enzyme, the PSS mimics the consensus sequence for the enzyme; while the NES motif mediates the recruitment by the CRM1/RanGTP complex for PKA-C translocation from the nucleus to the cytoplasm (Figure 1D; Wen et al., 1995).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by a citation to Wen et al., 1995 and reference to Figure 1D.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:40:39.059015Z"
+    },
+    {
+      "id": "747722cf-70f6-4935-a6b4-467199a091ec",
+      "content_id": "f3e95110-c2bc-4de0-b3a0-7a4f559787f0",
+      "claim_id": "C10",
+      "claim": "The PSS mimics the consensus sequence for the enzyme.",
+      "claim_type": "EXPLICIT",
+      "source": "The HAR is an accessory domain that increases the affinity of PKI for the enzyme, the PSS mimics the consensus sequence for the enzyme; while the NES motif mediates the recruitment by the CRM1/RanGTP complex for PKA-C translocation from the nucleus to the cytoplasm (Figure 1D; Wen et al., 1995).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by a citation to Wen et al., 1995 and reference to Figure 1D.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:40:39.059015Z"
+    },
+    {
+      "id": "22dd00f1-4287-4dd6-8285-a90dc3a63b2e",
+      "content_id": "f3e95110-c2bc-4de0-b3a0-7a4f559787f0",
+      "claim_id": "C11",
+      "claim": "The NES motif mediates the recruitment by the CRM1/RanGTP complex for PKA-C translocation from the nucleus to the cytoplasm.",
+      "claim_type": "EXPLICIT",
+      "source": "The HAR is an accessory domain that increases the affinity of PKI for the enzyme, the PSS mimics the consensus sequence for the enzyme; while the NES motif mediates the recruitment by the CRM1/RanGTP complex for PKA-C translocation from the nucleus to the cytoplasm (Figure 1D; Wen et al., 1995).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by a citation to Wen et al., 1995 and reference to Figure 1D.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:40:39.059015Z"
+    },
+    {
+      "id": "de5ab3ee-2cfa-4c20-b511-24ea16e1cde8",
+      "content_id": "f3e95110-c2bc-4de0-b3a0-7a4f559787f0",
+      "claim_id": "C12",
+      "claim": "PKI binds PKA-C with nanomolar affinity.",
+      "claim_type": "EXPLICIT",
+      "source": "PKI binds PKA-C with nanomolar affinity (Whitehouse and Walsh, 1982), which is matched only by that of the R-subunits with whom it shares the same recognition/inhibitory sequence (Figure 1C; Hofmann, 1980).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by a citation to Whitehouse and Walsh, 1982.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:40:39.059015Z"
+    },
+    {
+      "id": "d4690745-8921-47b1-9916-6f755abacc2c",
+      "content_id": "f3e95110-c2bc-4de0-b3a0-7a4f559787f0",
+      "claim_id": "C13",
+      "claim": "PKI's affinity for PKA-C is matched only by that of the R-subunits with whom it shares the same recognition/inhibitory sequence.",
+      "claim_type": "EXPLICIT",
+      "source": "PKI binds PKA-C with nanomolar affinity (Whitehouse and Walsh, 1982), which is matched only by that of the R-subunits with whom it shares the same recognition/inhibitory sequence (Figure 1C; Hofmann, 1980).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by citations to Whitehouse and Walsh, 1982; Hofmann, 1980 and reference to Figure 1C.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:40:39.059015Z"
+    },
+    {
+      "id": "d887f91a-31cc-478f-889c-29c7a0344ad5",
+      "content_id": "f3e95110-c2bc-4de0-b3a0-7a4f559787f0",
+      "claim_id": "C14",
+      "claim": "Unlike the R-subunits, PKI lacks any cAMP binding sites.",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike the R-subunits, PKI lacks any cAMP binding sites and its regulation of PKA-C is independent of the cyclic nucleotide-mediated signaling (Dalton and Dewey, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Dalton and Dewey, 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:40:39.059015Z"
+    },
+    {
+      "id": "0f0f49d7-a074-46bb-8f34-642c394c0ef7",
+      "content_id": "f3e95110-c2bc-4de0-b3a0-7a4f559787f0",
+      "claim_id": "C15",
+      "claim": "PKI's regulation of PKA-C is independent of the cyclic nucleotide-mediated signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike the R-subunits, PKI lacks any cAMP binding sites and its regulation of PKA-C is independent of the cyclic nucleotide-mediated signaling (Dalton and Dewey, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Dalton and Dewey, 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:40:39.059015Z"
+    },
+    {
+      "id": "097f6c50-15ff-4ad6-85c7-2998337062da",
+      "content_id": "f3e95110-c2bc-4de0-b3a0-7a4f559787f0",
+      "claim_id": "C16",
+      "claim": "In humans, three different genes encode the corresponding PKI isoforms, PKI\u03b1, PKI\u03b2, PKI\u03b3.",
+      "claim_type": "EXPLICIT",
+      "source": "In humans, three different genes encode the corresponding PKI isoforms, PKI\u03b1, PKI\u03b2, PKI\u03b3 (Dalton and Dewey, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Dalton and Dewey, 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:40:39.059015Z"
+    },
+    {
+      "id": "b03957ee-f096-4e25-8ee4-1ce92628fa51",
+      "content_id": "f3e95110-c2bc-4de0-b3a0-7a4f559787f0",
+      "claim_id": "C17",
+      "claim": "PKI\u03b1 has the highest level of expression in various tissues among PKI isoforms.",
+      "claim_type": "EXPLICIT",
+      "source": "Among those, the alpha isoform (PKI\u03b1) has the highest level of expression in various tissues and the highest inhibitory potency [Ki ~0.22 nM, (Collins and Uhler, 1997; Gamm and Uhler, 1995).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Collins and Uhler, 1997; Gamm and Uhler, 1995.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:40:39.059015Z"
+    },
+    {
+      "id": "f8417d5d-eac7-4171-a9b3-dd367ff84e0e",
+      "content_id": "f3e95110-c2bc-4de0-b3a0-7a4f559787f0",
+      "claim_id": "C18",
+      "claim": "PKI\u03b1 has the highest inhibitory potency among PKI isoforms with Ki ~0.22 nM.",
+      "claim_type": "EXPLICIT",
+      "source": "Among those, the alpha isoform (PKI\u03b1) has the highest level of expression in various tissues and the highest inhibitory potency [Ki ~0.22 nM, (Collins and Uhler, 1997; Gamm and Uhler, 1995).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Collins and Uhler, 1997; Gamm and Uhler, 1995.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:40:39.059015Z"
+    },
+    {
+      "id": "257bc995-aef0-4920-b814-d7e4b6f49695",
+      "content_id": "f3e95110-c2bc-4de0-b3a0-7a4f559787f0",
+      "claim_id": "C19",
+      "claim": "The initial crystal structures of PKA-C were obtained with truncated variants of PKI\u03b1, encompassing either residues 5\u201322 or 5\u201324 with part of the HAR and PSS sequences, lacking the NES as well as the C-terminal regions.",
+      "claim_type": "EXPLICIT",
+      "source": "The initial crystal structures of PKA-C were obtained with truncated variants of PKI\u03b1, encompassing either residues 5\u201322 or 5\u201324 with part of the HAR and PSS sequences, lacking the NES as well as the C-terminal regions. (Figure 1B; Knighton et al., 1991a; Knighton et al., 1991b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by citations to Knighton et al., 1991a; Knighton et al., 1991b and reference to Figure 1B.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:40:39.059015Z"
+    },
+    {
+      "id": "aa08b13a-dfc3-4b35-b733-50c45eb94ec2",
+      "content_id": "f3e95110-c2bc-4de0-b3a0-7a4f559787f0",
+      "claim_id": "C20",
+      "claim": "There are no reports on how PKI is recognized by the kinase and its binding mechanism.",
+      "claim_type": "EXPLICIT",
+      "source": "More importantly, there are no reports on how PKI is recognized by the kinase and its binding mechanism.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the absence of prior research, which is a form of citation-based evidence.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:40:39.059015Z"
+    },
+    {
+      "id": "4a5e9728-5adc-4ca6-82ad-a14ccf4a411f",
+      "content_id": "f3e95110-c2bc-4de0-b3a0-7a4f559787f0",
+      "claim_id": "C21",
+      "claim": "Free PKI\u03b1 is intrinsically disordered, with incipient \u03b1-helical segments spanning the HAR and NES regions.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that free PKI\u03b1 is intrinsically disordered, with incipient \u03b1-helical segments spanning the HAR and NES regions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data from NMR, CD, and other techniques presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:40:39.059015Z"
+    },
+    {
+      "id": "c01f8aa8-ce29-4af3-94cd-030436e09311",
+      "content_id": "f3e95110-c2bc-4de0-b3a0-7a4f559787f0",
+      "claim_id": "C22",
+      "claim": "PKA-C recognizes and binds extended PKI\u03b1 conformations, rigidifying the PSS region and increasing the helicity of the HAR and NES motifs.",
+      "claim_type": "EXPLICIT",
+      "source": "PKA-C recognizes and binds extended PKI\u03b1 conformations, rigidifying the PSS region and increasing the helicity of the HAR and NES motifs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data from NMR and other techniques presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:40:39.059015Z"
+    },
+    {
+      "id": "bb2c1591-d245-4369-959e-355cc19cdd2a",
+      "content_id": "f3e95110-c2bc-4de0-b3a0-7a4f559787f0",
+      "claim_id": "C23",
+      "claim": "The recognition of PKI\u03b1 by PKA-C occurs via a multi-state pathway, with an initial fast binding step followed by a slow phase in which PKI\u03b1 undergoes a conformational rearrangement within the binding site.",
+      "claim_type": "EXPLICIT",
+      "source": "Transient binding kinetics show that the recognition occurs via a multi-state pathway, with an initial fast binding step followed by a slow phase in which PKI\u03b1 undergoes a conformational rearrangement within the binding site.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data from stopped-flow fluorescence measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:40:39.059015Z"
+    },
+    {
+      "id": "a7967fba-6b50-45d7-b91b-c0c923375dd6",
+      "content_id": "f3e95110-c2bc-4de0-b3a0-7a4f559787f0",
+      "claim_id": "C24",
+      "claim": "The C-terminal tail of PKI\u03b1 interacts transiently with the kinase's C-lobe but remains essentially disordered.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the C-terminal tail of PKI\u03b1 interacts transiently with the kinase's C-lobe, it remains essentially disordered facilitating the recruitment by the CRM1/RanGTP complex for nuclear export.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data from NMR and PRE measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:40:39.059015Z"
+    },
+    {
+      "id": "a9aae171-2fd2-48b8-a944-81dd573090e7",
+      "content_id": "f3e95110-c2bc-4de0-b3a0-7a4f559787f0",
+      "claim_id": "C25",
+      "claim": "The C-terminal tail of PKI\u03b1 remaining disordered facilitates the recruitment by the CRM1/RanGTP complex for nuclear export.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the C-terminal tail of PKI\u03b1 interacts transiently with the kinase's C-lobe, it remains essentially disordered facilitating the recruitment by the CRM1/RanGTP complex for nuclear export.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the structural data and known function of the NES motif.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:40:39.059015Z"
+    },
+    {
+      "id": "108d00a9-0573-47e2-a211-a66a66686801",
+      "content_id": "f3e95110-c2bc-4de0-b3a0-7a4f559787f0",
+      "claim_id": "C26",
+      "claim": "The dichroic profile, the NMR fingerprint, and the dynamic NMR parameters display the typical signature of mixed \u03b1-helix and random-coil structure for PKI\u03b1.",
+      "claim_type": "EXPLICIT",
+      "source": "In agreement with Hauer et al. (Hauer et al., 1999a; Thomas et al., 1991), we found that the dichroic profile, the NMR fingerprint, and the dynamic NMR parameters display the typical signature of mixed \u03b1-helix and random-coil structure for PKI\u03b1 (Figure 2, Figure 2\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data from CD and NMR, and citations to Hauer et al., 1999a; Thomas et al., 1991.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:40:39.059015Z"
+    },
+    {
+      "id": "4390ff25-7b94-4b73-b53a-3856c663e2d2",
+      "content_id": "f3e95110-c2bc-4de0-b3a0-7a4f559787f0",
+      "claim_id": "C27",
+      "claim": "Addition of urea to PKI\u03b1 only slightly changes the chemical shift of the amides, confirming the disordered nature of the protein and suggesting the presence of only transient secondary structures.",
+      "claim_type": "EXPLICIT",
+      "source": "Addition of urea to PKI\u03b1 only slightly changes the chemical shift of the amides, confirming the disordered nature of the protein and suggesting the presence of only transient secondary structures (Figure 2\u2014figure supplement 1B; Felitsky et al., 2008; Marsh et al., 2007).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data from NMR and citations to Felitsky et al., 2008; Marsh et al., 2007.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:40:39.059015Z"
+    },
+    {
+      "id": "ed9c3713-a092-4ba0-b36c-e0e2a4a085e5",
+      "content_id": "f3e95110-c2bc-4de0-b3a0-7a4f559787f0",
+      "claim_id": "C28",
+      "claim": "When the spin label was engineered at the N-terminus (PKI\u03b1V3C), a reduction of the resonance intensities near the N-terminal region was observed with gradual effects that culminate in the middle of the linker between the PSS and NES motifs and decrease toward the C-terminus.",
+      "claim_type": "EXPLICIT",
+      "source": "When the spin label was engineered at the N-terminus (PKI\u03b1V3C), we observed a reduction of the resonance intensities near the N-terminal region and gradual effects that culminate in the middle of the linker between the PSS and NES motifs and decrease toward the C-terminus (PRE values less than two standard deviations, 2\u03c3). The C-terminal residues remained essentially unperturbed (Figure 2E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data from PRE measurements shown in Figure 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:40:39.059015Z"
+    },
+    {
+      "id": "c8a496b4-678c-407e-81e4-ca28d42c677e",
+      "content_id": "f3e95110-c2bc-4de0-b3a0-7a4f559787f0",
+      "claim_id": "C29",
+      "claim": "When the spin label was positioned between the PSS and NES motifs (PKI\u03b1S28C), strong PREs were detected near the spin label position, at the N-terminus, and within the NES motif.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, when the spin label was positioned between the PSS and NES motifs (PKI\u03b1S28C), we detected strong PREs near the spin label position (PRE greater than 3\u03c3), at the N-terminus, and within the NES motif (Figure 2F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data from PRE measurements shown in Figure 2F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:40:39.059015Z"
+    },
+    {
+      "id": "b47e2a5f-59aa-4da5-a850-bb6405e4c908",
+      "content_id": "f3e95110-c2bc-4de0-b3a0-7a4f559787f0",
+      "claim_id": "C30",
+      "claim": "For the spin label at position 59, approximately 75% of the residues display a reduced signal intensity, with marked effects in the PSS, linker region, NES, and C-terminus, with only marginal effects for the N-terminal residues.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, for the spin label at position 59, we found that approximately 75% of the residues display a reduced signal intensity, with marked effects in the PSS, linker region, NES, and C-terminus. In this case, we observed only marginal effects for the N-terminal residues (Figure 2G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data from PRE measurements shown in Figure 2G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:40:39.059015Z"
+    },
+    {
+      "id": "656cbb61-93bf-4cc3-a4f0-2292c4f48c4b",
+      "content_id": "f3e95110-c2bc-4de0-b3a0-7a4f559787f0",
+      "claim_id": "C31",
+      "claim": "In absence of a binding partner PKI\u03b1 samples transient secondary structures encompassing the HAR and NES motifs with short-lived tertiary conformations.",
+      "claim_type": "EXPLICIT",
+      "source": "Altogether, the CD and NMR data reveal that in absence of a binding partner PKI\u03b1 samples transient secondary structures encompassing the HAR and NES motifs with short-lived tertiary conformations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data from CD and NMR measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:40:39.059015Z"
+    },
+    {
+      "id": "d9c6e172-7d40-449e-a45c-6377dd019411",
+      "content_id": "f3e95110-c2bc-4de0-b3a0-7a4f559787f0",
+      "claim_id": "C32",
+      "claim": "Upon binding to PKA-C, most of the PKI\u03b1 resonances in the [1H,15N]-HQSC spectrum show only minimal changes.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon binding to PKA-C, most of the PKI\u03b1 resonances in the [1H,15N]-HQSC spectrum show only minimal changes (Figure 3\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data from NMR shown in Figure 3\u2014figure supplement 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:40:39.059015Z"
+    },
+    {
+      "id": "39965216-72b1-4274-9702-a3cac8fed79d",
+      "content_id": "f3e95110-c2bc-4de0-b3a0-7a4f559787f0",
+      "claim_id": "C33",
+      "claim": "The HAR and PSS resonances display significant chemical shift changes upon binding to PKA-C, suggesting that these regions of PKI undergo drastic structural rearrangements upon binding the kinase.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the HAR and PSS resonances display significant chemical shift changes (Figure 3A,B,E), suggesting that these regions of PKI undergo drastic structural rearrangements upon binding the kinase.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data from NMR shown in Figure 3A,B,E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:40:39.059015Z"
+    },
+    {
+      "id": "d56e3ae0-6511-4af7-838c-20322d7e0fc5",
+      "content_id": "f3e95110-c2bc-4de0-b3a0-7a4f559787f0",
+      "claim_id": "C34",
+      "claim": "The \u03b4D2 analysis of the C\u03b1 and C\u03b2 chemical shifts shows an increase in helical content of the HAR and rigidification of the PSS motif upon binding PKA-C, while the rest of the peptide remain unaffected by the interaction with PKA-C.",
+      "claim_type": "EXPLICIT",
+      "source": "This finding is also supported by the \u03b4D2 analysis (Camilloni et al., 2012) of the C\u03b1 and C\u03b2 chemical shifts showing an increase in helical content of the HAR and rigidification of the PSS motif; while the rest of the peptide remain unaffected by the interaction with PKA-C (Figure 3B, Figure 3\u2014figure supplement 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data from NMR and citation to Camilloni et al., 2012.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:40:39.059015Z"
+    },
+    {
+      "id": "a0587f34-861f-457a-a7f4-b95f22bd49be",
+      "content_id": "f3e95110-c2bc-4de0-b3a0-7a4f559787f0",
+      "claim_id": "C35",
+      "claim": "The amide fingerprint of the kinase changes significantly upon nucleotide binding.",
+      "claim_type": "EXPLICIT",
+      "source": "As previously reported (Masterson et al., 2010; Masterson et al., 2008), the amide fingerprint of the kinase changes significantly upon nucleotide binding (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data from NMR and citations to Masterson et al., 2010; Masterson et al., 2008.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:40:39.059015Z"
+    },
+    {
+      "id": "fdab112c-188d-4503-b3fa-58803e4b4c32",
+      "content_id": "f3e95110-c2bc-4de0-b3a0-7a4f559787f0",
+      "claim_id": "C36",
+      "claim": "Additional changes are observed upon binding PKI\u03b1, especially for \u03b1C, \u03b1F, \u03b1G helices as well as \u03b26 loop.",
+      "claim_type": "EXPLICIT",
+      "source": "Additional changes are observed upon binding PKI\u03b1, especially for \u03b1C, \u03b1F, \u03b1G helices as well as \u03b26 loop.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data from NMR.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:40:39.059015Z"
+    },
+    {
+      "id": "6a9475bc-9a3e-43da-b0f8-e12353c2b16f",
+      "content_id": "f3e95110-c2bc-4de0-b3a0-7a4f559787f0",
+      "claim_id": "C37",
+      "claim": "Smaller changes are present for the NES region of PKI\u03b1, which are mirrored by higher values of heteronuclear nuclear Overhauser effects (NOE), indicating reduced motions of the backbone amides in the pico-to-nanosecond time scale.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, smaller changes are present for the NES region of PKI\u03b1, which are mirrored by higher values of heteronuclear nuclear Overhauser effects (NOE), indicating reduced motions of the backbone amides in the pico-to-nanosecond time scale (Figure 4A, Figure 3\u2014figure supplement 2B; Dyson and Wright, 2004; Bah et al., 2015).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data from NMR and citations to Dyson and Wright, 2004; Bah et al., 2015.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:40:39.059015Z"
+    },
+    {
+      "id": "5c73481d-9efa-423a-a35d-c2d7668c1348",
+      "content_id": "f3e95110-c2bc-4de0-b3a0-7a4f559787f0",
+      "claim_id": "C38",
+      "claim": "The formation of the PKA-C/ATP\u03b3N/PKI\u03b1 (ternary) complex is reflected by the differences of longitudinal and transverse relaxation rates (\u0394R1 and \u0394R2) for both the HAR and PSS motifs upon forming the complex, which define a local rigidification of the PKI\u03b1 backbone upon binding PKA-C, with the C-terminal portion (residues 47\u201375) remaining essentially unstructured.",
+      "claim_type": "EXPLICIT",
+      "source": "The formation of the PKA-C/ATP\u03b3N/PKI\u03b1 (ternary) complex is also reflected by the differences of longitudinal and transverse relaxation rates (\u0394R1 and \u0394R2) for both the HAR and PSS motifs upon forming the complex, which define a local rigidification of the PKI\u03b1 backbone upon binding PKA-C, with the C-terminal portion (residues 47\u201375) remaining essentially unstructured (Figure 4B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data from NMR shown in Figure 4B,C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:40:39.059015Z"
+    },
+    {
+      "id": "ae3252aa-9e74-4829-bfb1-22546a1a35e7",
+      "content_id": "f3e95110-c2bc-4de0-b3a0-7a4f559787f0",
+      "claim_id": "C39",
+      "claim": "The PSS and HAR regions of PKI\u03b1 adopt the overall correlation time of the kinase upon binding.",
+      "claim_type": "EXPLICIT",
+      "source": "The PSS and HAR regions of PKI\u03b1, which show the most prominent chemical shift changes, adopt the overall correlation time of the kinase in agreement with previous fluorescence anisotropy measurements (Figure 3\u2014figure supplement 2C; Hauer et al., 1999b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data from NMR and citation to Hauer et al., 1999b.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:40:39.059015Z"
+    },
+    {
+      "id": "57d3de95-317f-49f2-a509-f814731ae360",
+      "content_id": "f3e95110-c2bc-4de0-b3a0-7a4f559787f0",
+      "claim_id": "C40",
+      "claim": "The \u0394Rex values obtained from the CPMG relaxation dispersion experiments show the presence of \u03bcs-ms motions for residues in the HAR and PSS motifs, which gradually decrease toward the NES motif, suggesting the presence of conformational interconversion of these regions upon binding.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the \u0394Rex values obtained from the Carr-Purcell-Meiboom-Gill (CPMG) relaxation dispersion experiments show the presence of \u03bcs-ms motions for residues in the HAR and PSS motifs, which gradually decrease toward the NES motif, suggesting the presence of conformational interconversion of these regions upon binding (Figure 4D, Figure 3\u2014figure supplement 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data from NMR shown in Figure 4D, Figure 3\u2014figure supplement 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:40:39.059015Z"
+    },
+    {
+      "id": "7cedec28-6fe9-4636-b170-faefb737836d",
+      "content_id": "f3e95110-c2bc-4de0-b3a0-7a4f559787f0",
+      "claim_id": "C41",
+      "claim": "The most significant PREs for PKI\u03b1 were detected for resonances of residues proximal to the MTSL label, with a gradual reduction moving away from residue 59.",
+      "claim_type": "EXPLICIT",
+      "source": "The most significant PREs for PKI\u03b1 were detected for resonances of residues proximal to the MTSL label, with a gradual reduction moving away from residue 59.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data from PRE measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:40:39.059015Z"
+    },
+    {
+      "id": "3e6d1756-b8ef-47ff-863b-3772b9da754b",
+      "content_id": "f3e95110-c2bc-4de0-b3a0-7a4f559787f0",
+      "claim_id": "C42",
+      "claim": "Long-range effects were detected for specific residues located in the HAR and PSS motifs and the intervening linker, implying that the C-terminal domain of PKI\u03b1 undergoes large amplitude motions and transiently interacts with the N-terminus, N-lobe (\u03b21-\u03b22 loop), C- lobe (G-, and H- helices) as well as the peptide-positioning loop of PKA-C.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, we detected some long-range effects for specific residues located in the HAR and PSS motifs and the intervening linker. This implies that the C-terminal domain of PKI\u03b1 undergoes large amplitude motions and transiently interacts with the N-terminus, N-lobe (\u03b21-\u03b22 loop), C- lobe (G-, and H- helices) as well as the peptide-positioning loop of PKA-C.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data from PRE measurements and inference from the data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:40:39.059015Z"
+    },
+    {
+      "id": "8499655c-da67-4ec7-8828-2a57c46b59f2",
+      "content_id": "f3e95110-c2bc-4de0-b3a0-7a4f559787f0",
+      "claim_id": "C43",
+      "claim": "PKA-C binding to PKI\u03b1 causes differential effects on the various regions of the inhibitor: disorder-to-order transitions occur for the HAR, PSS, and NES motifs, while the C-terminal tail of the PKI\u03b1 remains disordered.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, the relaxation data show that PKA-C binding to PKI\u03b1 causes differential effects on the various regions of the inhibitor. While disorder-to-order transitions occur for the HAR, PSS, and NES motifs, the C-terminal tail of the PKI\u03b1 remains disordered. (Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data from NMR relaxation measurements shown in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:40:39.059015Z"
+    },
+    {
+      "id": "f8722566-ba41-47c8-802e-8e834afb314f",
+      "content_id": "f3e95110-c2bc-4de0-b3a0-7a4f559787f0",
+      "claim_id": "C44",
+      "claim": "As expected for the formation of the PKA-C/PKI\u03b1 complex, a gradual decrease in the total fluorescence of the donor probe was observed when PKA-CDONOR was mixed with increasing concentrations of each acceptor.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected for the formation of the PKA-C/PKI\u03b1 complex, we observed a gradual decrease in the total fluorescence of the donor probe.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data from stopped-flow fluorescence measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:40:39.059015Z"
+    },
+    {
+      "id": "cdde0eab-707a-4109-8582-b7af29176f52",
+      "content_id": "f3e95110-c2bc-4de0-b3a0-7a4f559787f0",
+      "claim_id": "C45",
+      "claim": "When a fixed concentration of PKIDONOR-ACCEPTOR was titrated with increasing concentrations of unlabeled PKA-CC199A,S325C, an increase of the total fluorescence was detected, indicating that the distance between the two probes of PKI\u03b1 increases upon formation of the complex.",
+      "claim_type": "EXPLICIT",
+      "source": "When a fixed concentration of PKIDONOR-ACCEPTOR was titrated with increasing concentrations of unlabeled PKA-CC199A,S325C, we detected an increase of the total fluorescence (Figure 6E, Figure 6\u2014figure supplement 1B), indicating that the distance between the two probes of PKI\u03b1 increases upon formation of the complex, that is the conformational ensemble of PKI\u03b1 becomes on average more extended during the binding reaction in agreement with the PRE data.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data from stopped-flow fluorescence measurements shown in Figure 6E, Figure 6\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:40:39.059015Z"
+    },
+    {
+      "id": "0bf93ba7-db35-452d-ad14-7ecc03bfcb8e",
+      "content_id": "f3e95110-c2bc-4de0-b3a0-7a4f559787f0",
+      "claim_id": "C46",
+      "claim": "The conformational ensemble of PKI\u03b1 becomes on average more extended during the binding reaction in agreement with the PRE data.",
+      "claim_type": "EXPLICIT",
+      "source": "When a fixed concentration of PKIDONOR-ACCEPTOR was titrated with increasing concentrations of unlabeled PKA-CC199A,S325C, we detected an increase of the total fluorescence (Figure 6E, Figure 6\u2014figure supplement 1B), indicating that the distance between the two probes of PKI\u03b1 increases upon formation of the complex, that is the conformational ensemble of PKI\u03b1 becomes on average more extended during the binding reaction in agreement with the PRE data.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data from stopped-flow fluorescence and PRE measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:40:39.059015Z"
+    },
+    {
+      "id": "e00419ed-c34c-4f69-a8da-ebefce2f7d73",
+      "content_id": "f3e95110-c2bc-4de0-b3a0-7a4f559787f0",
+      "claim_id": "C47",
+      "claim": "The total fluorescence of the Alexa-488 donor emission from the PKA-CDONOR/PKIACCEPTOR changed bi-exponentially through the course of the binding reactions.",
+      "claim_type": "EXPLICIT",
+      "source": "From an initial analysis of the binding curve, we found that the total fluorescence of the Alexa-488 donor emission from the PKA-CDONOR/PKIACCEPTOR changed bi-exponentially through the course of the binding reactions (Figure 6A\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data from stopped-flow fluorescence measurements shown in Figure 6A\u2013D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:40:39.059015Z"
+    },
+    {
+      "id": "ab476d82-409e-4e95-b868-d94481786163",
+      "content_id": "f3e95110-c2bc-4de0-b3a0-7a4f559787f0",
+      "claim_id": "C48",
+      "claim": "The bi-exponential behavior suggests the presence of an initial fast binding step followed by a slow structural rearrangement.",
+      "claim_type": "EXPLICIT",
+      "source": "The bi-exponential behavior suggests the presence of an initial fast binding step followed by a slow structural rearrangement (Table 1; Gianni et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data from stopped-flow fluorescence measurements and citation to Gianni et al., 2014.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:40:39.059015Z"
+    },
+    {
+      "id": "42575e1b-728c-4059-ade1-2bc552717277",
+      "content_id": "f3e95110-c2bc-4de0-b3a0-7a4f559787f0",
+      "claim_id": "C49",
+      "claim": "The rate constants for the fast phase increases linearly with PKI\u03b1 concentration, with an average second-order rate constant of 1.63 \u00d7 107 M\u22121 s\u22121 and an extrapolated average dissociation rate constant of 7.0 s\u22121.",
+      "claim_type": "EXPLICIT",
+      "source": "The rate constants for the fast phase increases linearly with PKI\u03b1 concentration, with an average second-order rate constant of 1.63 \u00d7 107 M\u22121 s\u22121 and an extrapolated average dissociation rate constant of 7.0 s\u22121.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data from stopped-flow fluorescence measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:40:39.059015Z"
+    },
+    {
+      "id": "4720b2ff-ef96-4945-a202-0c1d8e3e67ca",
+      "content_id": "f3e95110-c2bc-4de0-b3a0-7a4f559787f0",
+      "claim_id": "C50",
+      "claim": "The observed rate constant for the slow phase increased hyperbolically with an average K0.5 of 3.1 \u00b5M and a maximum value (kslow) of 24 \u00b1 1.8 s\u22121.",
+      "claim_type": "EXPLICIT",
+      "source": "Comparatively, the observed rate constant for the slow phase increased hyperbolically with an average K0.5 of 3.1 \u00b5M and a maximum value (kslow) of 24 \u00b1 1.8 s\u22121.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data from stopped-flow fluorescence measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:40:39.059015Z"
+    },
+    {
+      "id": "9ce9faf6-1ef0-4e9e-812d-17b350280cf3",
+      "content_id": "f3e95110-c2bc-4de0-b3a0-7a4f559787f0",
+      "claim_id": "C51",
+      "claim": "Two distinct binding phases were observed for the second set of experiments with unlabeled PKA-CC199A,S325C and PKIDONOR-ACCEPTOR.",
+      "claim_type": "EXPLICIT",
+      "source": "We also observed two distinct binding phases for the second set of experiments with unlabeled PKA-CC199A,S325C and PKIDONOR-ACCEPTOR.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data from stopped-flow fluorescence measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:40:39.059015Z"
+    },
+    {
+      "id": "b4d9dbc7-f76e-4e2e-8d5e-2b6ebeaf7311",
+      "content_id": "f3e95110-c2bc-4de0-b3a0-7a4f559787f0",
+      "claim_id": "C52",
+      "claim": "The kinetic constants obtained for experiments with unlabeled PKA-CC199A,S325C and PKIDONOR-ACCEPTOR are very similar to those found in the first set of the experiments, underscoring the same binding mechanisms.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, the kinetic constants obtained for these experiments are very similar to those found in the first set of the experiments, underscoring the same binding mechanisms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data from stopped-flow fluorescence measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:40:39.059015Z"
+    },
+    {
+      "id": "4a920dae-da5b-40c8-8261-685424b244a0",
+      "content_id": "f3e95110-c2bc-4de0-b3a0-7a4f559787f0",
+      "claim_id": "C53",
+      "claim": "The pre-exponential amplitudes for the fast phases increased hyperbolically, while the slow phase decreased hyperbolically.",
+      "claim_type": "EXPLICIT",
+      "source": "The pre-exponential amplitudes for the fast phases increased hyperbolically, while the slow phase decreased hyperbolically (Figure 6D\u2013H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data from stopped-flow fluorescence measurements shown in Figure 6D\u2013H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:40:39.059015Z"
+    },
+    {
+      "id": "762f2fd9-ce93-46fc-9ab5-2d84f559f21e",
+      "content_id": "f3e95110-c2bc-4de0-b3a0-7a4f559787f0",
+      "claim_id": "C54",
+      "claim": "The behavior of the rate constants and the pre-exponential amplitudes for the fast and slow phases are consistent with a multi-pathway mechanism in which there is a fast binding phase of PKI\u03b1 ensembles competent for binding and a subsequent structural rearrangement of these conformers upon binding.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, the behavior of the rate constants and the pre-exponential amplitudes for the fast and slow phases are consistent with a multi-pathway mechanism in which there is a fast binding phase of PKI\u03b1 ensembles competent for binding and a subsequent structural rearrangement of these conformers upon binding (Dogan et al., 2014; Gianni et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data from stopped-flow fluorescence measurements and citations to Dogan et al., 2014; Gianni et al., 2014.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:40:39.059015Z"
+    },
+    {
+      "id": "0da3f7ab-9bbc-4f27-872f-354bf553d6e7",
+      "content_id": "f3e95110-c2bc-4de0-b3a0-7a4f559787f0",
+      "claim_id": "C55",
+      "claim": "During the RAM simulations, the HAR and NES motifs of free PKI\u03b1 undergo multiple coil-to-helix transitions.",
+      "claim_type": "EXPLICIT",
+      "source": "During the simulations, the HAR and NES motifs of free PKI\u03b1 undergo multiple coil-to-helix transitions (Figure 8).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by computational data from RAM simulations shown in Figure 8.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:40:39.059015Z"
+    },
+    {
+      "id": "ccf92f0e-fb6f-42aa-b84e-670270fc41da",
+      "content_id": "f3e95110-c2bc-4de0-b3a0-7a4f559787f0",
+      "claim_id": "C56",
+      "claim": "Two major basins were identified for free PKI\u03b1: a compact ensemble (Rg <1.5 nm), with three relative minima with helical structures for the HAR and NES motifs; and a more extended ensemble (Rg >3.0 nm), where the protein is essentially disordered.",
+      "claim_type": "EXPLICIT",
+      "source": "We identified two major basins, featuring a compact ensemble (Rg <1.5 nm), with three relative minima with helical structures for the HAR and NES motifs; and a more extended ensemble (Rg >3.0 nm), where the protein is essentially disordered.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by computational data from RAM simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:40:39.059015Z"
+    },
+    {
+      "id": "35f4d775-82ef-43d9-ba81-4fb21425aaee",
+      "content_id": "f3e95110-c2bc-4de0-b3a0-7a4f559787f0",
+      "claim_id": "C57",
+      "claim": "The HAR motif of free PKI\u03b1 populates mostly a random coil conformation, with a sparsely populated helical conformation, whereas the NES motif populates both helical and coil conformations.",
+      "claim_type": "EXPLICIT",
+      "source": "The HAR motif populates mostly a random coil conformation, with a sparsely populated helical conformation, whereas the NES motif populates both helical and coil conformations (Figure 7A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by computational data from RAM simulations shown in Figure 7A,B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:40:39.059015Z"
+    },
+    {
+      "id": "35af9a2f-c79d-4d46-9ce7-87d083983572",
+      "content_id": "f3e95110-c2bc-4de0-b3a0-7a4f559787f0",
+      "claim_id": "C58",
+      "claim": "The SAXS profiles show the typical signatures of intrinsically disordered proteins, with the Kratky plot featuring a plateau at high q values as well as the absence of a bell-shaped curve.",
+      "claim_type": "EXPLICIT",
+      "source": "These profiles show the typical signatures of intrinsically disordered proteins, with the Kratky plot featuring a plateau at high q values as well as the absence of a bell-shaped curve (Figure 7C, bottom panel).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data from SAXS shown in Figure 7C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:40:39.059015Z"
+    },
+    {
+      "id": "b5031007-467f-4dff-a053-f5fb9ac167fb",
+      "content_id": "f3e95110-c2bc-4de0-b3a0-7a4f559787f0",
+      "claim_id": "C59",
+      "claim": "The P(r) curve shows that PKI\u03b1 adopts a highly extended conformational ensemble, with an abnormally large Dmax (~110 \u00c5) and Rg (~30 \u00c5) values for a protein of its size, both parameters are indicative of an extended, intrinsically disordered protein.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the P(r) curve shows that PKI\u03b1 adopts a highly extended conformational ensemble, with an abnormally large Dmax (~110 \u00c5) and Rg (~30 \u00c5) values for a protein of its size, both parameters are indicative of an extended, intrinsically disordered protein (Kikhney and Svergun, 2015; Figure 8D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data from SAXS and citation to Kikhney and Svergun, 2015.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:40:39.059015Z"
+    },
+    {
+      "id": "69f6c8a0-e2fe-4066-8575-f0aac5bd1367",
+      "content_id": "f3e95110-c2bc-4de0-b3a0-7a4f559787f0",
+      "claim_id": "C60",
+      "claim": "The back-calculated SAXS profiles from the RAM-generated ensembles are in excellent agreement with the experimental SAXS scattering profiles (\u03c7 = 0.86 for q < 0.2).",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, the back-calculated SAXS profiles from the RAM-generated ensembles are in excellent agreement with the experimental SAXS scattering profiles (\u03c7 = 0.86 for q < 0.2) (Figure 7C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by computational and experimental data from RAM simulations and SAXS shown in Figure 7C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:40:39.059015Z"
+    },
+    {
+      "id": "3be974af-d3a5-4831-b859-b5d465d926e2",
+      "content_id": "f3e95110-c2bc-4de0-b3a0-7a4f559787f0",
+      "claim_id": "C61",
+      "claim": "In the bound state, the HAR motif of PKI\u03b1 is more ordered and adopts a more stable helical conformation; whereas the NES motif is considerably more dynamic and adopts a transient helical conformation.",
+      "claim_type": "EXPLICIT",
+      "source": "In the bound state, the HAR motif of PKI\u03b1 is more ordered and adopts a more stable helical conformation; whereas the NES motif is considerably more dynamic and adopts a transient helical conformation (Figure 7E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by computational data from RAM simulations shown in Figure 7E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:40:39.059015Z"
+    },
+    {
+      "id": "7da7e661-f0d0-4f32-be4c-085f17a7021e",
+      "content_id": "f3e95110-c2bc-4de0-b3a0-7a4f559787f0",
+      "claim_id": "C62",
+      "claim": "For free PKI\u03b1, the CLH ensemble is dominant, with a mean population of 51%, followed by CLC (32%), HLC (15%), and HLH (~2%).",
+      "claim_type": "EXPLICIT",
+      "source": "For free PKI\u03b1, the CLH ensemble is dominant, with a mean population of 51%, followed by CLC (32%), HLC (15%), and HLH (~2%) (Figure 8A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by computational data from Markov model analysis shown in Figure 8A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:40:39.059015Z"
+    },
+    {
+      "id": "e396ef12-9cd1-4542-906c-ff0d00c82c4d",
+      "content_id": "f3e95110-c2bc-4de0-b3a0-7a4f559787f0",
+      "claim_id": "C63",
+      "claim": "All the conformational transitions of free PKI\u03b1 take place on a \u03bcs time scale, with the slowest transitions from the HLC, CLH, and CLC ensembles to the HLH ensemble; while the transitions from CLC, HLH, and HLC to the CLH ensemble are more rapid.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that all the conformational transitions take place on a \u03bcs time scale, with the slowest transitions from the HLC, CLH, and CLC ensembles to the HLH ensemble; while the transitions from CLC, HLH, and HLC to the CLH ensemble are more rapid (Figure 8, Figure 8\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by computational data from Markov model analysis shown in Figure 8, Figure 8\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:40:39.059015Z"
+    },
+    {
+      "id": "533cc2b0-c907-40f0-99cb-3ecfc8f156f7",
+      "content_id": "f3e95110-c2bc-4de0-b3a0-7a4f559787f0",
+      "claim_id": "C64",
+      "claim": "For PKI\u03b1 bound to PKA-C, the conformational space spanned becomes more restricted.",
+      "claim_type": "EXPLICIT",
+      "source": "For PKI\u03b1 bound to PKA-C, the conformational space spanned becomes more restricted (Figure 8D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by computational data from Markov model analysis shown in Figure 8D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:40:39.059015Z"
+    },
+    {
+      "id": "beb8e0a7-e1d1-4d50-b525-e6006e4ce35e",
+      "content_id": "f3e95110-c2bc-4de0-b3a0-7a4f559787f0",
+      "claim_id": "C65",
+      "claim": "For PKI\u03b1 bound to PKA-C, the HLC, CLC, and HLH minima become more populated, with 72, 22, and 6%.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, the HLC, CLC, and HLH minima become more populated, with 72, 22, and 6% (Figure 8B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by computational data from Markov model analysis shown in Figure 8B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:40:39.059015Z"
+    },
+    {
+      "id": "a500aa45-da72-4564-bf01-08bd52ea7248",
+      "content_id": "f3e95110-c2bc-4de0-b3a0-7a4f559787f0",
+      "claim_id": "C66",
+      "claim": "The transition kinetics from CLC and HLC to the HLH ensemble is estimated to occur approximately 10 times faster for PKI\u03b1 bound to PKA-C.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the transition kinetics from CLC and HLC to the HLH ensemble is estimated to occur approximately 10 times faster (Figure 8, Figure 8\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by computational data from Markov model analysis shown in Figure 8, Figure 8\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:40:39.059015Z"
+    },
+    {
+      "id": "2d2e705d-712b-4801-8d0b-87c758d86b43",
+      "content_id": "f3e95110-c2bc-4de0-b3a0-7a4f559787f0",
+      "claim_id": "C67",
+      "claim": "Free PKI\u03b1 spans a broad conformational space with incipient helical elements for the HAR and NES motifs.",
+      "claim_type": "EXPLICIT",
+      "source": "We envision that free PKI\u03b1 spans a broad conformational space with incipient helical elements for the HAR and NES motifs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental and computational data from NMR, SAXS, and MD simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:40:39.059015Z"
+    },
+    {
+      "id": "f693064e-1c86-48b2-9071-52e45d81680d",
+      "content_id": "f3e95110-c2bc-4de0-b3a0-7a4f559787f0",
+      "claim_id": "C68",
+      "claim": "These conformations are in fast exchange in the NMR time scale.",
+      "claim_type": "EXPLICIT",
+      "source": "These conformations are in fast exchange in the NMR time scale.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data from NMR.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:40:39.059015Z"
+    },
+    {
+      "id": "429b25cc-54db-4145-b605-b8c52616a067",
+      "content_id": "f3e95110-c2bc-4de0-b3a0-7a4f559787f0",
+      "claim_id": "C69",
+      "claim": "The initial step (fast) of recognition by PKA-C is driven by electrostatic interactions between the conformations of PKI\u03b1 featuring an exposed PSS motif (CLC and HLC) and PKA-C.",
+      "claim_type": "EXPLICIT",
+      "source": "We propose that the initial step (fast) of recognition by PKA-C is driven by electrostatic interactions between the conformations of PKI\u03b1 featuring an exposed PSS motif (CLC and HLC) and PKA-C (Tsigelny et al., 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental and computational data and citation to Tsigelny et al., 1996.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:40:39.059015Z"
+    },
+    {
+      "id": "61ceb497-6573-41a5-87e5-061326ea9b5e",
+      "content_id": "f3e95110-c2bc-4de0-b3a0-7a4f559787f0",
+      "claim_id": "C70",
+      "claim": "These encounter complexes undergo slower conformational rearrangements in which a) the HAR motif folds upon binding in a helical conformation, b) the PSS motif binds within the active cleft in an extended conformation, and c) the transient helix of the NES motif adopts a more defined conformation.",
+      "claim_type": "EXPLICIT",
+      "source": "These encounter complexes undergo slower conformational rearrangements in which a) the HAR motif folds upon binding in a helical conformation, b) the PSS motif binds within the active cleft in an extended conformation, and c) the transient helix of the NES motif adopts a more defined conformation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental and computational data from NMR, fluorescence, and MD simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:40:39.059015Z"
+    },
+    {
+      "id": "6cbde9aa-5e86-4723-848b-799785695be8",
+      "content_id": "f3e95110-c2bc-4de0-b3a0-7a4f559787f0",
+      "claim_id": "C71",
+      "claim": "A kinetic constant of 1.5 \u00d7 107 M\u22121s\u22121 was obtained for the formation of the PKA-C*/PKI* encounter complex.",
+      "claim_type": "EXPLICIT",
+      "source": "Under these constraints, we obtained a kinetic constant of 1.5 \u00d7 107 M\u22121s\u22121 for the formation of the PKA-C*/PKI* encounter complex and a slow relaxation of the complex with a constant of 2400 s\u22121.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data from stopped-flow fluorescence measurements and kinetic modeling.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:40:39.059015Z"
+    },
+    {
+      "id": "8ae75149-0108-4d9d-8f74-e23dc4288953",
+      "content_id": "f3e95110-c2bc-4de0-b3a0-7a4f559787f0",
+      "claim_id": "C72",
+      "claim": "A slow relaxation of the complex with a constant of 2400 s\u22121 was obtained.",
+      "claim_type": "EXPLICIT",
+      "source": "Under these constraints, we obtained a kinetic constant of 1.5 \u00d7 107 M\u22121s\u22121 for the formation of the PKA-C*/PKI* encounter complex and a slow relaxation of the complex with a constant of 2400 s\u22121.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data from stopped-flow fluorescence measurements and kinetic modeling.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:40:39.059015Z"
+    },
+    {
+      "id": "2727a2ca-f596-4c8b-abd4-7f85b5efa8c9",
+      "content_id": "f3e95110-c2bc-4de0-b3a0-7a4f559787f0",
+      "claim_id": "C73",
+      "claim": "These kinetics parameters are in the same order of magnitude of the association rates measured for binding of other intrinsically disordered proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "These kinetics parameters are in the same order of magnitude of the association rates measured for binding of other intrinsically disordered proteins (Mollica et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Mollica et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:40:39.059015Z"
+    },
+    {
+      "id": "c781d66e-eadb-47d1-bd9f-99ed19e5fd6d",
+      "content_id": "f3e95110-c2bc-4de0-b3a0-7a4f559787f0",
+      "claim_id": "C74",
+      "claim": "SLiMs are intrinsically disordered regions that are part of the allosteric machinery of kinases and control the cross-talk between different kinase signaling pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "SLiMs are intrinsically disordered regions that are part of the allosteric machinery of kinases and control the cross-talk between different kinase signaling pathways (Akimoto et al., 2014; Akimoto et al., 2013; Delaforge et al., 2018; G\u00f3gl et al., 2019; Kragelj et al., 2015; Wang et al., 2011; Wright and Dyson, 2015; Guiley et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to multiple studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:40:39.059015Z"
+    },
+    {
+      "id": "2a879d8a-d045-4ecc-92a1-3c40f775e49c",
+      "content_id": "f3e95110-c2bc-4de0-b3a0-7a4f559787f0",
+      "claim_id": "C75",
+      "claim": "PKI can be portrayed as a prototypical SLiM that is able to bind and inhibit the kinase and recruit the CRM1/RanGTP complex to export the enzyme out of the nucleus, thereby regulating cell proliferation.",
+      "claim_type": "EXPLICIT",
+      "source": "PKI can be portrayed as a prototypical SLiM that is able to bind and inhibit the kinase and recruit the CRM1/RanGTP complex to export the enzyme out of the nucleus, thereby regulating cell proliferation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the structural and functional data presented in the manuscript.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:40:39.059015Z"
+    },
+    {
+      "id": "445baa5e-5c11-4324-b33f-3bc41a957739",
+      "content_id": "f3e95110-c2bc-4de0-b3a0-7a4f559787f0",
+      "claim_id": "C76",
+      "claim": "Previous spectroscopic studies provided evidence for the dynamic nature of the PKI\u03b1 peptide, suggesting the presence of minimal secondary structural elements such as the HAR and NES regions, with a C-terminal tail completely disordered.",
+      "claim_type": "EXPLICIT",
+      "source": "Subsequent spectroscopic studies provided evidence for the dynamic nature of the PKI\u03b1 peptide, suggesting the presence of minimal secondary structural elements such as the HAR and NES regions, with a C-terminal tail completely disordered (Padilla et al., 1997; Hauer et al., 1999a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Padilla et al., 1997; Hauer et al., 1999a.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:40:39.059015Z"
+    },
+    {
+      "id": "c9b2efbb-8e7b-48a2-a82f-c1431c0b83e1",
+      "content_id": "f3e95110-c2bc-4de0-b3a0-7a4f559787f0",
+      "claim_id": "C77",
+      "claim": "The HAR is extremely important for binding/anchoring to the catalytic subunit as well as positioning the PSS within the catalytic cleft of the enzyme.",
+      "claim_type": "EXPLICIT",
+      "source": "The HAR is extremely important for binding/anchoring to the catalytic subunit as well as positioning the PSS within the catalytic cleft of the enzyme (Walsh et al., 1971; Cheng et al., 1986).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Walsh et al., 1971; Cheng et al., 1986.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:40:39.059015Z"
+    },
+    {
+      "id": "1df531e2-00cf-42ea-a0a5-5798da4413ae",
+      "content_id": "f3e95110-c2bc-4de0-b3a0-7a4f559787f0",
+      "claim_id": "C78",
+      "claim": "Most PKA target substrates do not possess the HAR motif and the only substrate recognition requirement is the highly positively charged consensus sequence in the linear PSS motif.",
+      "claim_type": "EXPLICIT",
+      "source": "However, most PKA target substrates do not possess this motif and the only substrate recognition requirement is the highly positively charged consensus sequence in the linear PSS motif.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge about PKA substrate recognition.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:40:39.059015Z"
+    },
+    {
+      "id": "d668420c-af39-4198-bca8-259f8ee6b90d",
+      "content_id": "f3e95110-c2bc-4de0-b3a0-7a4f559787f0",
+      "claim_id": "C79",
+      "claim": "In most cases the recognition motif is located in highly dynamic or intrinsically disordered regions as it molds into the binding groove of the kinase situated at the interface between the small and large lobes.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, in most cases this recognition motif is located in highly dynamic or intrinsically disordered regions as it molds into the binding groove of the kinase situated at the interface between the small and large lobes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge about kinase substrate recognition.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:40:39.059015Z"
+    },
+    {
+      "id": "8b1c087e-c791-46ef-9c68-845f40274226",
+      "content_id": "f3e95110-c2bc-4de0-b3a0-7a4f559787f0",
+      "claim_id": "C80",
+      "claim": "After the initial binding of ATP in the pocket between the two lobes that primes the substrate binding site, PKI\u03b1 is driven toward the kinase via positively charged Arg residues in the PSS sequence.",
+      "claim_type": "EXPLICIT",
+      "source": "After the initial binding of ATP in the pocket between the two lobes that primes the substrate binding site (Chu et al., 2017; Hyeon et al., 2009; Masterson et al., 2010), this highly disordered polypeptide, with incipient helices at both the HAR and NES motifs, is driven toward the kinase via positively charged Arg residues in the PSS sequence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data and citations to Chu et al., 2017; Hyeon et al., 2009; Masterson et al., 2010.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:40:39.059015Z"
+    },
+    {
+      "id": "cd7286b0-674d-4184-82af-f8b9701a8caf",
+      "content_id": "f3e95110-c2bc-4de0-b3a0-7a4f559787f0",
+      "claim_id": "C81",
+      "claim": "Deletion of one of the Arg residues in the PSS provokes a dramatic reduction of the phosphorylation kinetics and has been linked to the progression of dilated cardiomyopathy.",
+      "claim_type": "EXPLICIT",
+      "source": "Deletion of one of the Arg residues in the PSS provokes a dramatic reduction of the phosphorylation kinetics and has been linked to the progression of dilated cardiomyopathy (Kim et al., 2015; Haghighi et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Kim et al., 2015; Haghighi et al., 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:40:39.059015Z"
+    },
+    {
+      "id": "0d1b0724-f4c6-49f2-a7ea-04e30ef166c2",
+      "content_id": "f3e95110-c2bc-4de0-b3a0-7a4f559787f0",
+      "claim_id": "C82",
+      "claim": "Mutations in the active site of the kinase that change electrostatic interactions such as L205R dramatically influence the thermodynamics and kinetics of substrate binding, leading to the development of adrenocortical adenomas and the resultant Cushing's syndrome.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, mutations in the active site of the kinase that change electrostatic interactions such as L205R dramatically influence the thermodynamics and kinetics of substrate binding, leading to the development of adrenocortical adenomas and the resultant Cushing's syndrome (Calebiro et al., 2014; Cheung et al., 2015; Walker et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Calebiro et al., 2014; Cheung et al., 2015; Walker et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:40:39.059015Z"
+    },
+    {
+      "id": "0b6e4657-8957-4b0e-a5a0-4066a403c8b6",
+      "content_id": "f3e95110-c2bc-4de0-b3a0-7a4f559787f0",
+      "claim_id": "C83",
+      "claim": "The studies reveal a significant ordering of the PKI\u03b1 structure upon interaction with the kinase, particularly for the HAR, PSS, and NES motifs.",
+      "claim_type": "EXPLICIT",
+      "source": "More importantly, our studies reveal a significant ordering of the PKI\u03b1 structure upon interaction with the kinase, particularly for the HAR, PSS, and NES motifs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data from NMR and other techniques.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:40:39.059015Z"
+    },
+    {
+      "id": "5c04e93d-2aa7-45cd-89dd-eff65936531f",
+      "content_id": "f3e95110-c2bc-4de0-b3a0-7a4f559787f0",
+      "claim_id": "C84",
+      "claim": "This ordering occurs in the second, slower binding step as revealed by FRET measurements.",
+      "claim_type": "EXPLICIT",
+      "source": "This ordering occurs in the second, slower binding step as revealed by FRET measurements, while the C-terminal tail of PKI\u03b1 remains essentially disordered, undergoing large amplitude motions with transient interactions with the C-lobe of the kinase.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data from FRET measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:40:39.059015Z"
+    },
+    {
+      "id": "e60cf2b8-c92c-46ad-9b3e-a01fc1865abc",
+      "content_id": "f3e95110-c2bc-4de0-b3a0-7a4f559787f0",
+      "claim_id": "C85",
+      "claim": "When PKI\u03b1 is bound to PKA-C, the NES region undergoes a structural rearrangement, showing a higher degree of helicity as supported by NMR and MD simulations.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, when PKI\u03b1 is bound to PKA-C, the NES region undergoes a structural rearrangement, showing a higher degree of helicity as supported by NMR and MD simulations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data from NMR and computational data from MD simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:40:39.059015Z"
+    },
+    {
+      "id": "d5e5d641-95b5-430d-a9f8-d3abac729838",
+      "content_id": "f3e95110-c2bc-4de0-b3a0-7a4f559787f0",
+      "claim_id": "C86",
+      "claim": "The NES motif comprises Leu 37, Leu 41, and Leu 44 that are essential for high binding affinity to the nuclear export machinery CRM1/RanGTP.",
+      "claim_type": "EXPLICIT",
+      "source": "The NES motif comprises Leu 37, Leu 41, and Leu 44 that are essential for high binding affinity to the nuclear export machinery CRM1/RanGTP (G\u00fcttler et al., 2010; Fu et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to G\u00fcttler et al., 2010; Fu et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:40:39.059015Z"
+    },
+    {
+      "id": "50ea9d19-fb60-40b5-a40b-b747173d2a4b",
+      "content_id": "f3e95110-c2bc-4de0-b3a0-7a4f559787f0",
+      "claim_id": "C87",
+      "claim": "The CRM1 binding pocket is a relatively rigid cavity and NES sequences must possess significant plasticity to mold into the binding pocket.",
+      "claim_type": "EXPLICIT",
+      "source": "The CRM1 binding pocket is a relatively rigid cavity and NES sequences must possess significant plasticity to mold into the binding pocket (G\u00fcttler et al., 2010; Fu et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to G\u00fcttler et al., 2010; Fu et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:40:39.059015Z"
+    },
+    {
+      "id": "dd6462c2-5ac7-4f01-ae36-34b388b775cf",
+      "content_id": "f3e95110-c2bc-4de0-b3a0-7a4f559787f0",
+      "claim_id": "C88",
+      "claim": "The NES assumes a defined conformation only upon interaction with CRM1.",
+      "claim_type": "EXPLICIT",
+      "source": "This observation could explain why the NES assumes a defined conformation only upon interaction with CRM1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the structural data and known properties of NES-CRM1 interactions.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:40:39.059015Z"
+    },
+    {
+      "id": "be9c5b2f-86b7-4a39-b00f-ed44024a7021",
+      "content_id": "f3e95110-c2bc-4de0-b3a0-7a4f559787f0",
+      "claim_id": "C89",
+      "claim": "The interactions of PKI\u03b1 with PKA-C preambles the formation of the complex and the helix-coil equilibrium of the NES domain is critical for recruiting the CRM1/RanGTP nuclear export complex.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on our data, it is possible to speculate that the interactions of PKI\u03b1 with PKA-C preambles the formation of the complex and that the helix-coil equilibrium of the NES domain is critical for recruiting the CRM1/RanGTP nuclear export complex (Fu et al., 2018; Fung et al., 2017; G\u00fcttler et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on the experimental data and citations to Fu et al., 2018; Fung et al., 2017; G\u00fcttler et al., 2010.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:40:39.059015Z"
+    },
+    {
+      "id": "fe93f9fe-aee3-4fa7-a22b-37eb1d24d371",
+      "content_id": "f3e95110-c2bc-4de0-b3a0-7a4f559787f0",
+      "claim_id": "C90",
+      "claim": "This complex binding mechanism shows how SLiMs can orchestrate multiple functions and regulate kinases through disordered ancillary proteins or protein domains.",
+      "claim_type": "EXPLICIT",
+      "source": "This complex binding mechanism shows how SLiMs can orchestrate multiple functions and regulate kinases through disordered ancillary proteins or protein domains.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the experimental and computational data presented in the manuscript.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:40:39.059015Z"
+    },
+    {
+      "id": "99af83c8-3fd4-4ef8-833c-0b1957b7fe2e",
+      "content_id": "f3e95110-c2bc-4de0-b3a0-7a4f559787f0",
+      "claim_id": "C91",
+      "claim": "The multistate binding mechanism featured by PKA-C/PKI complex represents a paradigm on how disordered, ancillary proteins (or protein domains) are able to operate multiple functions such as inhibiting the kinase while recruiting other regulatory proteins for nuclear export.",
+      "claim_type": "EXPLICIT",
+      "source": "The multistate binding mechanism featured by PKA-C/PKI complex represents a paradigm on how disordered, ancillary proteins (or protein domains) are able to operate multiple functions such as inhibiting the kinase while recruiting other regulatory proteins for nuclear export.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the experimental and computational data presented in the manuscript.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:40:39.059015Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "509e7128-3a71-4f19-b546-5b54330ee9f9",
+      "content_id": "f3e95110-c2bc-4de0-b3a0-7a4f559787f0",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The manuscript provides background on PKA-C regulation by PKI, describing PKI's structure, functional motifs (HAR, PSS, NES), high-affinity binding to PKA-C, and role in nuclear export. These claims establish the biological context and prior knowledge about PKI isoforms and their regulatory functions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C20 and C74-C79 are well-supported by citations to prior literature and represent established knowledge about PKA-C, PKI structure, and function. These background claims provide appropriate context for the study and are consistently referenced to peer-reviewed sources.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:40:39.059015Z"
+    },
+    {
+      "id": "d8891b60-38cd-470f-9d63-49c6ec2b1b1f",
+      "content_id": "f3e95110-c2bc-4de0-b3a0-7a4f559787f0",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Free PKI\u03b1 is intrinsically disordered with transient \u03b1-helical segments in the HAR and NES regions and short-lived tertiary conformations. This is demonstrated through CD, NMR fingerprinting, chemical shift analysis, urea denaturation, and PRE measurements at three positions (V3C, S28C, S59C).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21, C26-C31 are strongly supported by multiple complementary experimental techniques (CD, NMR, PRE) shown in Figure 2. The PRE data from three different spin-label positions provide converging evidence for the disordered nature and transient structural elements of free PKI\u03b1. The agreement with prior work (Hauer et al.) strengthens the findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:40:39.059015Z"
+    },
+    {
+      "id": "ac94ca98-3eff-4236-85ef-982ab27010ce",
+      "content_id": "f3e95110-c2bc-4de0-b3a0-7a4f559787f0",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Upon binding PKA-C, PKI\u03b1 undergoes differential structural changes: the HAR and PSS regions become ordered and rigidified, the NES motif shows increased helicity with reduced backbone motions, while the C-terminal tail remains disordered. These changes are characterized by chemical shift perturbations, secondary structure analysis, and NMR relaxation measurements.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22, C32-C40, C43, and C83 are well-supported by comprehensive NMR data (Figures 3-4) including chemical shift perturbations, \u03b4D2 analysis, NOE measurements, and relaxation rates (R1, R2, Rex). The use of CCLS-HSQC to simultaneously monitor both PKI\u03b1 and PKA-C is methodologically sound. The differential effects on different PKI\u03b1 regions are consistently demonstrated across multiple NMR parameters.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:40:39.059015Z"
+    },
+    {
+      "id": "27908fff-914b-47db-9f5e-2d8bfd826658",
+      "content_id": "f3e95110-c2bc-4de0-b3a0-7a4f559787f0",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The C-terminal tail of PKI\u03b1 (residues 47-75) undergoes large amplitude motions and transiently interacts with multiple regions of PKA-C (N-terminus, N-lobe, C-lobe, peptide-positioning loop) while remaining essentially disordered in the bound state.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41-C42 and C24 are supported by PRE measurements using spin-labeled PKI\u03b1 at position S59C (Figure 5). The PRE data show long-range effects on both PKI\u03b1 and PKA-C, indicating transient interactions. However, the interpretation of specific interaction sites relies on inference from PRE patterns rather than direct structural determination. The conclusion that the tail remains disordered is consistent with relaxation data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:40:39.059015Z"
+    },
+    {
+      "id": "b3fe121f-688e-4b0d-bd6d-0c7adc137a02",
+      "content_id": "f3e95110-c2bc-4de0-b3a0-7a4f559787f0",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "PKI\u03b1 binding to PKA-C occurs via a multi-state pathway with two kinetically distinct phases: a fast binding step (kon ~1.63 \u00d7 10^7 M^-1 s^-1) followed by a slow conformational rearrangement (kslow ~24 s^-1). The conformational ensemble of PKI\u03b1 becomes more extended during binding.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C23, C44-C54 are supported by stopped-flow FRET experiments (Figure 6, Table 1) using multiple labeling schemes. The bi-exponential kinetics are consistently observed across different PKI\u03b1 mutants (V3C, S28C, S59C) and with double-labeled PKI\u03b1. The kinetic parameters are well-determined with appropriate error estimates. The interpretation of a multi-state binding mechanism is consistent with the data and supported by citations to similar IDP binding studies.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:40:39.059015Z"
+    },
+    {
+      "id": "a9f2a7e8-19ae-48e5-8ff5-3e402ea1c439",
+      "content_id": "f3e95110-c2bc-4de0-b3a0-7a4f559787f0",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Replica-averaged metadynamics (RAM) simulations reveal that free PKI\u03b1 samples two major conformational basins (compact and extended) with transient helical structures in HAR and NES regions. The RAM-generated ensembles are validated by excellent agreement with experimental SAXS data (\u03c7 = 0.86).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55-C61 are supported by RAM simulations using NMR chemical shifts and RDCs as restraints, with validation by SAXS (Figure 7). The agreement between back-calculated and experimental SAXS profiles (\u03c7 = 0.86) provides strong validation. The Kratky plot and P(r) analysis are appropriate for characterizing IDPs. However, the \u03c7 value of 0.86 is moderate, and the simulations rely on the accuracy of force fields for disordered proteins.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:40:39.059015Z"
+    },
+    {
+      "id": "f6e9f9c3-3ccc-448c-ad19-9399d648af9c",
+      "content_id": "f3e95110-c2bc-4de0-b3a0-7a4f559787f0",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Markov model analysis of unbiased MD simulations reveals four major conformational states (CLH, CLC, HLC, HLH) for PKI\u03b1. In the free form, CLH dominates (51%), while upon binding PKA-C, HLC becomes dominant (72%) with ~10-fold faster transition kinetics to the HLH state.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C62-C66 are supported by Markov model analysis of extensive MD simulations (60 \u03bcs for free, 20 \u03bcs for bound) using tICA dimensionality reduction (Figure 8). The methodology is appropriate and the use of bootstrapping for error estimation is rigorous. However, the bound state simulations (20 \u03bcs) are less extensive than the free state (60 \u03bcs), which may affect the precision of population estimates. The ~10-fold faster kinetics claim is based on computational estimates that would benefit from experimental validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:40:39.059015Z"
+    },
+    {
+      "id": "731f1405-b00c-4322-ba55-073793cbd5f9",
+      "content_id": "f3e95110-c2bc-4de0-b3a0-7a4f559787f0",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The proposed binding mechanism involves PKI\u03b1 sampling a broad conformational space in fast exchange, with initial fast recognition driven by electrostatic interactions between extended PKI\u03b1 conformations (CLC, HLC) and PKA-C (kon = 1.5 \u00d7 10^7 M^-1 s^-1), followed by slower conformational rearrangements (kr = 2400 s^-1) involving HAR folding, PSS rigidification, and NES helix stabilization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C67-C73 integrate experimental and computational data to propose a mechanistic model. The kinetic parameters (C71-C72) are derived from fitting stopped-flow data to a specific kinetic scheme (Schemes 1-2), which is appropriate. The proposed mechanism is consistent with the NMR, FRET, and MD simulation data. However, the specific conformational states (CLC, HLC) proposed for initial recognition are inferred from simulations rather than directly observed. The comparison to other IDP binding rates (C73) provides appropriate context.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:40:39.059015Z"
+    },
+    {
+      "id": "bd2b4a57-c1a1-4acd-945d-b0b51cdb51c5",
+      "content_id": "f3e95110-c2bc-4de0-b3a0-7a4f559787f0",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The NES region of PKI\u03b1 adopts increased helicity upon PKA-C binding while remaining dynamic, which is proposed to facilitate subsequent recruitment of the CRM1/RanGTP nuclear export complex. The helix-coil equilibrium of the NES is suggested to be critical for CRM1 binding.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C25, C85-C89 combine experimental observations (NES helicity increase from NMR and MD) with speculation about functional consequences for CRM1 recruitment. While the structural changes in the NES are well-documented (C85), the functional implications (C25, C88, C89) are speculative and not directly tested. No experiments with CRM1/RanGTP are presented. The speculation is reasonable based on cited literature about NES-CRM1 interactions, but remains unvalidated in this study.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:40:39.059015Z"
+    },
+    {
+      "id": "7b791346-45b8-4ce2-a0f6-61457be9694b",
+      "content_id": "f3e95110-c2bc-4de0-b3a0-7a4f559787f0",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The study discusses the broader implications of the PKI\u03b1 binding mechanism for understanding substrate recognition by PKA-C, disease-related mutations, and the general paradigm of how disordered regulatory proteins can orchestrate multiple functions through SLiMs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C80-C82, C84, C90-C91 are appropriately supported by citations to relevant literature on PKA substrate recognition, disease mutations, and IDP function. These discussion points connect the specific findings to broader biological contexts. The claims about disease relevance (C81-C82) are based on cited work rather than new data. The paradigm statements (C90-C91) are reasonable interpretations of the findings but represent broader conceptual claims rather than specific experimental results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:40:39.059015Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "120f0791-67f1-4ea4-b9a9-e89f6f157c18",
+      "result_id": "509e7128-3a71-4f19-b546-5b54330ee9f9"
+    },
+    {
+      "claim_id": "d2360f83-6a6e-4afd-8efa-db388d7b786e",
+      "result_id": "509e7128-3a71-4f19-b546-5b54330ee9f9"
+    },
+    {
+      "claim_id": "88f1d68e-a99b-4779-b337-fab1d591a6f9",
+      "result_id": "509e7128-3a71-4f19-b546-5b54330ee9f9"
+    },
+    {
+      "claim_id": "a591242c-120f-4df9-9522-d4cd352adb01",
+      "result_id": "509e7128-3a71-4f19-b546-5b54330ee9f9"
+    },
+    {
+      "claim_id": "180a35c0-1742-4849-a7c5-3d0cafad6308",
+      "result_id": "509e7128-3a71-4f19-b546-5b54330ee9f9"
+    },
+    {
+      "claim_id": "fe3ae716-64cf-4164-afbc-55d474fe2144",
+      "result_id": "509e7128-3a71-4f19-b546-5b54330ee9f9"
+    },
+    {
+      "claim_id": "386051ef-f821-4b30-8ad6-dbebb9bb6d1c",
+      "result_id": "509e7128-3a71-4f19-b546-5b54330ee9f9"
+    },
+    {
+      "claim_id": "97ee7239-a764-4a6a-8e9d-98f2c6b3cb6c",
+      "result_id": "509e7128-3a71-4f19-b546-5b54330ee9f9"
+    },
+    {
+      "claim_id": "818c81a9-2a71-4e32-bd9a-73b67a4b45d0",
+      "result_id": "509e7128-3a71-4f19-b546-5b54330ee9f9"
+    },
+    {
+      "claim_id": "747722cf-70f6-4935-a6b4-467199a091ec",
+      "result_id": "509e7128-3a71-4f19-b546-5b54330ee9f9"
+    },
+    {
+      "claim_id": "22dd00f1-4287-4dd6-8285-a90dc3a63b2e",
+      "result_id": "509e7128-3a71-4f19-b546-5b54330ee9f9"
+    },
+    {
+      "claim_id": "de5ab3ee-2cfa-4c20-b511-24ea16e1cde8",
+      "result_id": "509e7128-3a71-4f19-b546-5b54330ee9f9"
+    },
+    {
+      "claim_id": "d4690745-8921-47b1-9916-6f755abacc2c",
+      "result_id": "509e7128-3a71-4f19-b546-5b54330ee9f9"
+    },
+    {
+      "claim_id": "d887f91a-31cc-478f-889c-29c7a0344ad5",
+      "result_id": "509e7128-3a71-4f19-b546-5b54330ee9f9"
+    },
+    {
+      "claim_id": "0f0f49d7-a074-46bb-8f34-642c394c0ef7",
+      "result_id": "509e7128-3a71-4f19-b546-5b54330ee9f9"
+    },
+    {
+      "claim_id": "097f6c50-15ff-4ad6-85c7-2998337062da",
+      "result_id": "509e7128-3a71-4f19-b546-5b54330ee9f9"
+    },
+    {
+      "claim_id": "b03957ee-f096-4e25-8ee4-1ce92628fa51",
+      "result_id": "509e7128-3a71-4f19-b546-5b54330ee9f9"
+    },
+    {
+      "claim_id": "f8417d5d-eac7-4171-a9b3-dd367ff84e0e",
+      "result_id": "509e7128-3a71-4f19-b546-5b54330ee9f9"
+    },
+    {
+      "claim_id": "257bc995-aef0-4920-b814-d7e4b6f49695",
+      "result_id": "509e7128-3a71-4f19-b546-5b54330ee9f9"
+    },
+    {
+      "claim_id": "aa08b13a-dfc3-4b35-b733-50c45eb94ec2",
+      "result_id": "509e7128-3a71-4f19-b546-5b54330ee9f9"
+    },
+    {
+      "claim_id": "c781d66e-eadb-47d1-bd9f-99ed19e5fd6d",
+      "result_id": "509e7128-3a71-4f19-b546-5b54330ee9f9"
+    },
+    {
+      "claim_id": "2a879d8a-d045-4ecc-92a1-3c40f775e49c",
+      "result_id": "509e7128-3a71-4f19-b546-5b54330ee9f9"
+    },
+    {
+      "claim_id": "445baa5e-5c11-4324-b33f-3bc41a957739",
+      "result_id": "509e7128-3a71-4f19-b546-5b54330ee9f9"
+    },
+    {
+      "claim_id": "c9b2efbb-8e7b-48a2-a82f-c1431c0b83e1",
+      "result_id": "509e7128-3a71-4f19-b546-5b54330ee9f9"
+    },
+    {
+      "claim_id": "1df531e2-00cf-42ea-a0a5-5798da4413ae",
+      "result_id": "509e7128-3a71-4f19-b546-5b54330ee9f9"
+    },
+    {
+      "claim_id": "d668420c-af39-4198-bca8-259f8ee6b90d",
+      "result_id": "509e7128-3a71-4f19-b546-5b54330ee9f9"
+    },
+    {
+      "claim_id": "4a5e9728-5adc-4ca6-82ad-a14ccf4a411f",
+      "result_id": "d8891b60-38cd-470f-9d63-49c6ec2b1b1f"
+    },
+    {
+      "claim_id": "108d00a9-0573-47e2-a211-a66a66686801",
+      "result_id": "d8891b60-38cd-470f-9d63-49c6ec2b1b1f"
+    },
+    {
+      "claim_id": "4390ff25-7b94-4b73-b53a-3856c663e2d2",
+      "result_id": "d8891b60-38cd-470f-9d63-49c6ec2b1b1f"
+    },
+    {
+      "claim_id": "ed9c3713-a092-4ba0-b36c-e0e2a4a085e5",
+      "result_id": "d8891b60-38cd-470f-9d63-49c6ec2b1b1f"
+    },
+    {
+      "claim_id": "c8a496b4-678c-407e-81e4-ca28d42c677e",
+      "result_id": "d8891b60-38cd-470f-9d63-49c6ec2b1b1f"
+    },
+    {
+      "claim_id": "b47e2a5f-59aa-4da5-a850-bb6405e4c908",
+      "result_id": "d8891b60-38cd-470f-9d63-49c6ec2b1b1f"
+    },
+    {
+      "claim_id": "656cbb61-93bf-4cc3-a4f0-2292c4f48c4b",
+      "result_id": "d8891b60-38cd-470f-9d63-49c6ec2b1b1f"
+    },
+    {
+      "claim_id": "c01f8aa8-ce29-4af3-94cd-030436e09311",
+      "result_id": "ac94ca98-3eff-4236-85ef-982ab27010ce"
+    },
+    {
+      "claim_id": "d9c6e172-7d40-449e-a45c-6377dd019411",
+      "result_id": "ac94ca98-3eff-4236-85ef-982ab27010ce"
+    },
+    {
+      "claim_id": "39965216-72b1-4274-9702-a3cac8fed79d",
+      "result_id": "ac94ca98-3eff-4236-85ef-982ab27010ce"
+    },
+    {
+      "claim_id": "d56e3ae0-6511-4af7-838c-20322d7e0fc5",
+      "result_id": "ac94ca98-3eff-4236-85ef-982ab27010ce"
+    },
+    {
+      "claim_id": "a0587f34-861f-457a-a7f4-b95f22bd49be",
+      "result_id": "ac94ca98-3eff-4236-85ef-982ab27010ce"
+    },
+    {
+      "claim_id": "fdab112c-188d-4503-b3fa-58803e4b4c32",
+      "result_id": "ac94ca98-3eff-4236-85ef-982ab27010ce"
+    },
+    {
+      "claim_id": "6a9475bc-9a3e-43da-b0f8-e12353c2b16f",
+      "result_id": "ac94ca98-3eff-4236-85ef-982ab27010ce"
+    },
+    {
+      "claim_id": "5c73481d-9efa-423a-a35d-c2d7668c1348",
+      "result_id": "ac94ca98-3eff-4236-85ef-982ab27010ce"
+    },
+    {
+      "claim_id": "ae3252aa-9e74-4829-bfb1-22546a1a35e7",
+      "result_id": "ac94ca98-3eff-4236-85ef-982ab27010ce"
+    },
+    {
+      "claim_id": "57d3de95-317f-49f2-a509-f814731ae360",
+      "result_id": "ac94ca98-3eff-4236-85ef-982ab27010ce"
+    },
+    {
+      "claim_id": "8499655c-da67-4ec7-8828-2a57c46b59f2",
+      "result_id": "ac94ca98-3eff-4236-85ef-982ab27010ce"
+    },
+    {
+      "claim_id": "0b6e4657-8957-4b0e-a5a0-4066a403c8b6",
+      "result_id": "ac94ca98-3eff-4236-85ef-982ab27010ce"
+    },
+    {
+      "claim_id": "7cedec28-6fe9-4636-b170-faefb737836d",
+      "result_id": "27908fff-914b-47db-9f5e-2d8bfd826658"
+    },
+    {
+      "claim_id": "3e6d1756-b8ef-47ff-863b-3772b9da754b",
+      "result_id": "27908fff-914b-47db-9f5e-2d8bfd826658"
+    },
+    {
+      "claim_id": "a7967fba-6b50-45d7-b91b-c0c923375dd6",
+      "result_id": "27908fff-914b-47db-9f5e-2d8bfd826658"
+    },
+    {
+      "claim_id": "bb2c1591-d245-4369-959e-355cc19cdd2a",
+      "result_id": "b3fe121f-688e-4b0d-bd6d-0c7adc137a02"
+    },
+    {
+      "claim_id": "f8722566-ba41-47c8-802e-8e834afb314f",
+      "result_id": "b3fe121f-688e-4b0d-bd6d-0c7adc137a02"
+    },
+    {
+      "claim_id": "cdde0eab-707a-4109-8582-b7af29176f52",
+      "result_id": "b3fe121f-688e-4b0d-bd6d-0c7adc137a02"
+    },
+    {
+      "claim_id": "0bf93ba7-db35-452d-ad14-7ecc03bfcb8e",
+      "result_id": "b3fe121f-688e-4b0d-bd6d-0c7adc137a02"
+    },
+    {
+      "claim_id": "e00419ed-c34c-4f69-a8da-ebefce2f7d73",
+      "result_id": "b3fe121f-688e-4b0d-bd6d-0c7adc137a02"
+    },
+    {
+      "claim_id": "ab476d82-409e-4e95-b868-d94481786163",
+      "result_id": "b3fe121f-688e-4b0d-bd6d-0c7adc137a02"
+    },
+    {
+      "claim_id": "42575e1b-728c-4059-ade1-2bc552717277",
+      "result_id": "b3fe121f-688e-4b0d-bd6d-0c7adc137a02"
+    },
+    {
+      "claim_id": "4720b2ff-ef96-4945-a202-0c1d8e3e67ca",
+      "result_id": "b3fe121f-688e-4b0d-bd6d-0c7adc137a02"
+    },
+    {
+      "claim_id": "9ce9faf6-1ef0-4e9e-812d-17b350280cf3",
+      "result_id": "b3fe121f-688e-4b0d-bd6d-0c7adc137a02"
+    },
+    {
+      "claim_id": "b4d9dbc7-f76e-4e2e-8d5e-2b6ebeaf7311",
+      "result_id": "b3fe121f-688e-4b0d-bd6d-0c7adc137a02"
+    },
+    {
+      "claim_id": "4a920dae-da5b-40c8-8261-685424b244a0",
+      "result_id": "b3fe121f-688e-4b0d-bd6d-0c7adc137a02"
+    },
+    {
+      "claim_id": "762f2fd9-ce93-46fc-9ab5-2d84f559f21e",
+      "result_id": "b3fe121f-688e-4b0d-bd6d-0c7adc137a02"
+    },
+    {
+      "claim_id": "0da3f7ab-9bbc-4f27-872f-354bf553d6e7",
+      "result_id": "a9f2a7e8-19ae-48e5-8ff5-3e402ea1c439"
+    },
+    {
+      "claim_id": "ccf92f0e-fb6f-42aa-b84e-670270fc41da",
+      "result_id": "a9f2a7e8-19ae-48e5-8ff5-3e402ea1c439"
+    },
+    {
+      "claim_id": "35f4d775-82ef-43d9-ba81-4fb21425aaee",
+      "result_id": "a9f2a7e8-19ae-48e5-8ff5-3e402ea1c439"
+    },
+    {
+      "claim_id": "35af9a2f-c79d-4d46-9ce7-87d083983572",
+      "result_id": "a9f2a7e8-19ae-48e5-8ff5-3e402ea1c439"
+    },
+    {
+      "claim_id": "b5031007-467f-4dff-a053-f5fb9ac167fb",
+      "result_id": "a9f2a7e8-19ae-48e5-8ff5-3e402ea1c439"
+    },
+    {
+      "claim_id": "69f6c8a0-e2fe-4066-8575-f0aac5bd1367",
+      "result_id": "a9f2a7e8-19ae-48e5-8ff5-3e402ea1c439"
+    },
+    {
+      "claim_id": "3be974af-d3a5-4831-b859-b5d465d926e2",
+      "result_id": "a9f2a7e8-19ae-48e5-8ff5-3e402ea1c439"
+    },
+    {
+      "claim_id": "7da7e661-f0d0-4f32-be4c-085f17a7021e",
+      "result_id": "f6e9f9c3-3ccc-448c-ad19-9399d648af9c"
+    },
+    {
+      "claim_id": "e396ef12-9cd1-4542-906c-ff0d00c82c4d",
+      "result_id": "f6e9f9c3-3ccc-448c-ad19-9399d648af9c"
+    },
+    {
+      "claim_id": "533cc2b0-c907-40f0-99cb-3ecfc8f156f7",
+      "result_id": "f6e9f9c3-3ccc-448c-ad19-9399d648af9c"
+    },
+    {
+      "claim_id": "beb8e0a7-e1d1-4d50-b525-e6006e4ce35e",
+      "result_id": "f6e9f9c3-3ccc-448c-ad19-9399d648af9c"
+    },
+    {
+      "claim_id": "a500aa45-da72-4564-bf01-08bd52ea7248",
+      "result_id": "f6e9f9c3-3ccc-448c-ad19-9399d648af9c"
+    },
+    {
+      "claim_id": "2d2e705d-712b-4801-8d0b-87c758d86b43",
+      "result_id": "731f1405-b00c-4322-ba55-073793cbd5f9"
+    },
+    {
+      "claim_id": "f693064e-1c86-48b2-9071-52e45d81680d",
+      "result_id": "731f1405-b00c-4322-ba55-073793cbd5f9"
+    },
+    {
+      "claim_id": "429b25cc-54db-4145-b605-b8c52616a067",
+      "result_id": "731f1405-b00c-4322-ba55-073793cbd5f9"
+    },
+    {
+      "claim_id": "61ceb497-6573-41a5-87e5-061326ea9b5e",
+      "result_id": "731f1405-b00c-4322-ba55-073793cbd5f9"
+    },
+    {
+      "claim_id": "6cbde9aa-5e86-4723-848b-799785695be8",
+      "result_id": "731f1405-b00c-4322-ba55-073793cbd5f9"
+    },
+    {
+      "claim_id": "8ae75149-0108-4d9d-8f74-e23dc4288953",
+      "result_id": "731f1405-b00c-4322-ba55-073793cbd5f9"
+    },
+    {
+      "claim_id": "2727a2ca-f596-4c8b-abd4-7f85b5efa8c9",
+      "result_id": "731f1405-b00c-4322-ba55-073793cbd5f9"
+    },
+    {
+      "claim_id": "a9aae171-2fd2-48b8-a944-81dd573090e7",
+      "result_id": "bd2b4a57-c1a1-4acd-945d-b0b51cdb51c5"
+    },
+    {
+      "claim_id": "e60cf2b8-c92c-46ad-9b3e-a01fc1865abc",
+      "result_id": "bd2b4a57-c1a1-4acd-945d-b0b51cdb51c5"
+    },
+    {
+      "claim_id": "d5e5d641-95b5-430d-a9f8-d3abac729838",
+      "result_id": "bd2b4a57-c1a1-4acd-945d-b0b51cdb51c5"
+    },
+    {
+      "claim_id": "50ea9d19-fb60-40b5-a40b-b747173d2a4b",
+      "result_id": "bd2b4a57-c1a1-4acd-945d-b0b51cdb51c5"
+    },
+    {
+      "claim_id": "dd6462c2-5ac7-4f01-ae36-34b388b775cf",
+      "result_id": "bd2b4a57-c1a1-4acd-945d-b0b51cdb51c5"
+    },
+    {
+      "claim_id": "be9c5b2f-86b7-4a39-b00f-ed44024a7021",
+      "result_id": "bd2b4a57-c1a1-4acd-945d-b0b51cdb51c5"
+    },
+    {
+      "claim_id": "8b1c087e-c791-46ef-9c68-845f40274226",
+      "result_id": "7b791346-45b8-4ce2-a0f6-61457be9694b"
+    },
+    {
+      "claim_id": "cd7286b0-674d-4184-82af-f8b9701a8caf",
+      "result_id": "7b791346-45b8-4ce2-a0f6-61457be9694b"
+    },
+    {
+      "claim_id": "0d1b0724-f4c6-49f2-a7ea-04e30ef166c2",
+      "result_id": "7b791346-45b8-4ce2-a0f6-61457be9694b"
+    },
+    {
+      "claim_id": "5c04e93d-2aa7-45cd-89dd-eff65936531f",
+      "result_id": "7b791346-45b8-4ce2-a0f6-61457be9694b"
+    },
+    {
+      "claim_id": "fe93f9fe-aee3-4fa7-a22b-37eb1d24d371",
+      "result_id": "7b791346-45b8-4ce2-a0f6-61457be9694b"
+    },
+    {
+      "claim_id": "99af83c8-3fd4-4ef8-833c-0b1957b7fe2e",
+      "result_id": "7b791346-45b8-4ce2-a0f6-61457be9694b"
+    }
+  ],
+  "comparisons": []
+}

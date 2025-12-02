@@ -1,0 +1,306 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C14",
+      "C15",
+      "C16",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "Flura-seq utilizes cytosine deaminase (CD) to convert 5-fluorocytosine (5-FC) to 5-fluorouracil (5-FU), which is incorporated into nascent RNA and can be detected using anti-BrdU antibodies. CD is absent in mammalian cells but present in fungi and prokaryotes, and the anti-BrdU antibody specifically recognizes 5-FU derivatives but not 5-FC derivatives.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C14-C16, C20-C22 collectively establish the biochemical basis of Flura-seq. The mechanism is supported by known biochemistry (C14-C16), demonstrated experimentally through immunofluorescence (C21-C22), and validated by the specificity of anti-BrdU antibody cross-reactivity with halogenated uridines (C20). The experimental data in Figure 1 and Figure 1\u2014figure supplement 1A provide direct evidence for the method's functionality.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C30"
+    ],
+    "result": "5-FU tagging enables highly specific enrichment of RNA from rare cell populations, with 2-3 orders of magnitude enrichment in vitro and >10-fold enrichment when target cells comprise only 0.01-0.1% of the total population.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C24 and C30 demonstrate the sensitivity and specificity of 5-FU tagging through qRT-PCR data (Figure 1C and 1F). The time-course experiment (C23-C24) shows progressive enrichment over 24 hours, and the co-culture experiment (C30) demonstrates detection of rare populations. The data are internally consistent and support the claimed enrichment levels.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "Co-expression of UPRT and addition of thymine prevents diffusion of 5-FU to neighboring cells, restricting RNA labeling to CD-expressing cells only.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C29 describe a technical solution to prevent off-target labeling. The problem (C25-C26) is demonstrated experimentally, and the dual strategy solution (C27-C29) is validated by immunofluorescence (Figure 1E). The biochemical rationale is sound: UPRT converts 5-FU to membrane-impermeable F-UMP (C27), and thymine competitively inhibits 5-FU uptake (C28). The experimental validation (C29) confirms cell-specific labeling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C31"
+    ],
+    "result": "Flura-tagging with 50 \u00b5M or 250 \u00b5M 5-FC introduces minimal transcriptional alterations, with over 99% of ~20,000 genes showing statistically similar expression compared to untreated cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C31 is supported by RNA-seq analysis comparing treated and untreated cells. The high percentage (>99%) of unaffected genes provides strong evidence that the method does not substantially perturb the transcriptome. However, the manuscript acknowledges this as a potential limitation (C85) and recommends validation with orthogonal methods.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Flura-seq captures signal-induced transcriptional responses with high fidelity and enhanced sensitivity compared to standard RNA-seq, detecting newly synthesized transcripts that may be diluted in total RNA measurements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C35 demonstrate Flura-seq's ability to capture TGF-\u03b2-induced transcriptional changes. The method shows high concordance with RNA-seq (C32) but with enhanced fold-changes (C33), which is explained by selective detection of nascent transcripts (C34). The comparison with published data (C35) validates early detection of TGF-\u03b2-responsive genes. The data in Figure 2A-D provide strong support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "Flura-seq enables in vivo transcriptomic analysis of rare metastatic cells comprising as few as 0.003% of total lung cells (~5000 cells per lung), with >10,000-fold enrichment of human mRNAs over mouse mRNAs, substantially outperforming TU-tagging (~10-fold enrichment).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C39 establish the in vivo sensitivity of Flura-seq. Flow cytometry data (C36, Figure 3\u2014figure supplement 1D) quantifies the rare cell population, and the calculation (C37) estimates detection limits. The >10,000-fold enrichment (C38) is demonstrated by qRT-PCR (Figure 3B), and direct comparison with TU-tagging (C39) shows superior performance. The evidence is internally consistent and well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Flura-seq RNA-sequencing from mouse lungs with rare human micrometastases shows time-dependent enrichment of human reads (53% at 4 hr, 74% at 12 hr), with minimal mouse contamination that can be eliminated by applying enrichment cutoffs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C44 demonstrate the specificity of Flura-seq through RNA-seq analysis. The time-dependent increase in human read mapping (C40-C41) indicates progressive labeling. The low background in input samples (C42) confirms specificity. The enrichment cutoff analysis (C43-C44) shows that human gene detection is robust while mouse genes are eliminated at higher cutoffs, validating the method's ability to distinguish target from background transcripts.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Micrometastases exhibit highly divergent organ-specific transcriptomes in situ (thousands of differentially expressed genes), but these differences are largely lost upon in vitro culture (only hundreds of genes), indicating dynamic transcriptional plasticity in response to microenvironmental cues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C49 describe a major finding about micrometastatic transcriptional plasticity. PCA analysis (C45-C46, Figure 4B) shows clear separation in vivo but convergence in vitro. The quantitative comparison (C47, Figure 4C) demonstrates the magnitude of difference. The interpretation (C48-C49) is well-supported by the data, though it remains an inference about mechanism. The evidence strongly supports the conclusion of microenvironment-dependent gene expression.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Lung micrometastases exhibit unique upregulation of mitochondrial Complex I genes compared to brain micrometastases and mammary tumors, and this upregulation is dependent on the lung microenvironment as it is lost upon in vitro culture.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C54 identify Complex I upregulation as a lung-specific adaptation. GO analysis (C51, Figure 5A) and GSEA (C52, Figure 5B) provide convergent evidence. The microenvironment-dependence is demonstrated by loss of enrichment in cultured cells (C53-C54, Figure 5\u2014figure supplement 1B). The data are internally consistent and support the conclusion of lung-specific, microenvironment-driven Complex I expression.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Lung micrometastases experience elevated oxidative stress (marked by 4-HNE) and upregulate compensatory antioxidant programs, including specific antioxidant genes and GPX1, compared to brain micrometastases and mammary tumors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C5 and C55-C60 establish the oxidative stress phenotype in lung micrometastases. The biochemical link between Complex I and ROS (C55) is well-established. 4-HNE immunohistochemistry (C57, Figure 5C) demonstrates oxidative stress, and analysis of antioxidant genes (C58, Figure 5D) shows compensatory upregulation. GPX1 validation (C59, Figure 5E) and confirmation in HCC1954 cells (C60) strengthen the findings. The evidence is robust and internally consistent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Lung micrometastases show elevated NRF2 protein levels and enrichment of NRF2 transcriptional signature compared to brain micrometastases and mammary tumors, and this enrichment is lost upon in vitro culture.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C63 demonstrate NRF2 activation in lung micrometastases. Immunohistochemistry (C61, Figure 5F) shows elevated protein, GSEA (C62, Figure 5G) confirms transcriptional signature enrichment, and loss in culture (C63) demonstrates microenvironment-dependence. The data are consistent with the oxidative stress findings and support NRF2 as a key adaptive response.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C6",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Clinical validation in breast cancer patients confirms lung metastasis-specific upregulation of Complex I genes, antioxidant genes, and NRF2 signature, with strong association between Complex I expression and antioxidant programs, and elevated oxidative stress (4-HNE) and NRF2 protein in lung versus brain metastases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6 and C64-C72 provide clinical validation of the mouse findings. RNA-seq analysis of patient samples (C64-C69) shows Complex I upregulation in 73% of patients (C65) with 100% concordance with antioxidant genes (C66) and 88% with NRF2 signature (C67). Tissue microarray analysis (C70-C72) confirms elevated 4-HNE (93% vs 16%) and NRF2 (78% vs 30%) in lung versus brain metastases. The convergence of mouse and human data strongly supports the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C73",
+      "C74"
+    ],
+    "result": "NRF2 signature expression is associated with lung metastasis-free survival but not brain or bone metastasis-free survival, indicating organ-specific prognostic significance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C74 demonstrate clinical relevance through survival analysis. The Hazard ratio analysis (Figure 6H) shows significant association with lung metastasis but not brain or bone metastasis. While the interpretation (C74) is reasonable, the analysis is based on gene signatures rather than direct functional studies, so causality cannot be definitively established. The data support organ-specific prognostic value.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Flura-seq can detect transcriptomes from rare cell populations representing >0.003% of an organ, selectively identifies newly synthesized transcripts, and may achieve superior sensitivity compared to TU-tagging and EC-tagging by eliminating biotinylation steps.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82 and C84 are well-supported by experimental data showing detection at 0.003% (C36-C37) and selective labeling of nascent transcripts (demonstrated in TGF-\u03b2 experiments, C32-C35). Claim C83 is speculative about the mechanism of superior performance but is reasonable given the methodological differences. The sensitivity claims are strongly supported, while the mechanistic explanation remains a hypothesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "Background on metastasis biology: metastasis is a multi-step process involving dissemination, host microenvironment selection, and progression from micro- to macrometastases with accumulation of genetic/epigenetic alterations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C10 provide established background knowledge supported by appropriate citations. These are not novel findings but rather context-setting statements that accurately represent the current understanding of metastasis biology.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "Existing methods for rare cell transcriptomics have significant limitations: scRNA-seq captures only 10-20% of transcripts, TRAP-Seq is unsuitable for <1% populations, and TU-tagging has a 5% sensitivity limit.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C13 accurately cite limitations of existing methods from the literature. These claims establish the need for Flura-seq and are supported by appropriate citations. They represent accurate reporting of prior work rather than new findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "While 5-FU and CD/5-FC can be cytotoxic, toxicity requires >7 days of treatment, suggesting that short-term treatment may minimize transcriptional distortion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C18 are supported by citations to prior literature. Claim C19 is a hypothesis that is subsequently tested in the manuscript (C31 shows minimal transcriptional changes). The reasoning is sound and the hypothesis is validated experimentally.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Discussion of potential mechanisms: lung tissue has higher oxygen exposure which can cause oxidative stress, and prior studies have shown oxidative stress in circulating cancer cells and the pro-oxidant lung environment, with antioxidants promoting lung metastasis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C76 and C78-C80 cite established knowledge from the literature. Claim C77 is speculation about mechanism. These claims provide context and potential explanations for the findings but do not constitute new experimental results. The citations are appropriate and the speculation is reasonable.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C81"
+    ],
+    "result": "Brain metastases experience low levels of oxidative stress and antioxidative response compared to lung metastases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C81 is supported by the immunohistochemistry data comparing lung and brain metastases (Figures 5C, 5E, 5F, 6E, 6F). This is a direct observation from the data rather than a primary mechanistic finding, serving as a comparative baseline for the lung metastasis findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C85"
+    ],
+    "result": "Flura-seq involves expression of exogenous enzymes and 5-FC treatment which may alter transcript levels, requiring validation with alternative methods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C85 is an acknowledgment of a potential limitation. The authors appropriately note this caveat and demonstrate validation through immunostaining throughout the manuscript. This represents good scientific practice in acknowledging methodological limitations.",
+    "result_type": "MINOR"
+  }
+]

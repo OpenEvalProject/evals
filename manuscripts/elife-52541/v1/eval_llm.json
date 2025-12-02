@@ -1,0 +1,252 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C23",
+      "C24",
+      "C31",
+      "C32",
+      "C33",
+      "C69",
+      "C70"
+    ],
+    "result": "Co-cultivation of A. fumigatus ATCC 46645 with S. rapamycinicus activates a silent gene cluster and induces production of the novel metabolite fumigermin. The fgn cluster genes are upregulated during co-culture (C31), fumigermin is detected in co-culture but not in axenic fungal culture or with bacterial supernatant alone (C23, C69, C70), and deletion of fgnA abolishes fumigermin production while overexpression induces it without bacteria (C32, C33).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple lines of evidence converge: LC-MS detection (C23, C69, C70), qRT-PCR showing gene upregulation (C31), genetic deletion abolishing production (C32), and inducible overexpression restoring production (C33). The requirement for physical contact rather than supernatant (C23) strengthens the specificity of the interaction. Controls are appropriate and data are consistent across experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "The polyketide synthase FgnA is necessary and sufficient for fumigermin biosynthesis. Deletion of fgnA abolishes fumigermin production (C32), overexpression of fgnA alone in A. nidulans produces fumigermin (C34), and expression of the entire cluster produces only fumigermin with no additional compounds (C36, C37), indicating that other cluster enzymes do not modify the FgnA product.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The genetic evidence is strong: deletion eliminates production (C32), heterologous expression of fgnA alone is sufficient (C34), and expression of all cluster genes produces no additional products (C36). The proteomic confirmation that all cluster proteins are produced (C36) yet no modifications occur strengthens the conclusion that FgnA alone is sufficient. The logic is sound and controls are appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "Fumigermin is a novel \u03b1-pyrone with molecular formula C11H14O3 (m/z 194 amu) that is structurally similar to other microbial \u03b1-pyrones including nectriapyrone, gibepyrone, and bacterial germicidins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The structural characterization is supported by multiple analytical techniques: mass spectrometry for molecular weight and formula (C25, C26), NMR for structure elucidation (C27), and structural comparison to known compounds (C28-C30). The NMR data shown in supplementary figures provide detailed structural information consistent with the \u03b1-pyrone classification.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "FgnA is a partially reducing type I PKS containing KS, AT, DH, MT, KR, and ACP domains. Isotope labeling studies demonstrate that fumigermin is synthesized from one acetyl-CoA and three malonyl-CoA units, with three methyl groups derived from S-adenosyl methionine.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Domain analysis by CD-search (C38, C39) is a standard bioinformatic approach. The isotope labeling experiments (C40, C41) provide direct evidence for the biosynthetic precursors, with data shown in Figure 1\u2014figure supplement 4. The results are consistent with the predicted domain architecture, particularly the MT domain explaining SAM-derived methylations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C6",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Fumigermin reversibly inhibits germination of S. rapamycinicus spores in a dose-dependent manner. The inhibition is reversible\u2014spores regain germination ability after washing (C58)\u2014and fumigermin can be recovered and reused (C61, C62), indicating high compound stability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The germination inhibition is demonstrated through multiple assays: dose-response in liquid culture (C55), comparison with germicidin B showing equivalent activity (C56), inhibition on solid medium (C57), and reversibility experiments (C58, C61). The experimental design includes appropriate controls and replicates. The stability claim (C62) is supported by the recovery and reuse experiments (C61).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C7",
+      "C72",
+      "C73",
+      "C83"
+    ],
+    "result": "Fumigermin functions ecologically to help A. fumigatus defend resources in its shared habitat against bacterial competitors. The reversible nature of inhibition suggests the fungus does not intend to kill the bacterium but rather to maintain spores in a dormant state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the germination inhibition data are solid (C6, C55-C62), the ecological interpretation (C7, C72) is largely inferential. The reversibility observation (C73) is factual but the interpretation about fungal 'intent' is speculative. No direct ecological experiments (e.g., competition assays, fitness measurements in co-culture, resource utilization studies) are presented to test whether fumigermin actually provides a competitive advantage. The reasoning is plausible but requires additional experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Among Aspergillus species, the fgn cluster is unique to A. fumigatus and A. novofumigatus, and is rarely found in sequenced A. fumigatus genomes. Only strain ATCC 46645 produces functional fumigermin; other strains (Af293, A1163, IBT 16806) harbor non-functional fgnA genes due to SNPs or chromosomal breakage. Repair of the A1163 fgnA gene restores fumigermin production.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The genomic analysis (C42, C43) is supported by database searches and prior literature (C43). LC-MS data confirm that only ATCC 46645 produces fumigermin (C44, C45). DNA sequencing identifies specific mutations in non-producing strains (C46-C48), and heterologous expression experiments confirm these genes are non-functional (C49). The gene repair experiment (C50) provides strong evidence that the identified mutations are causative. The logic is sound and experimental controls are appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C51",
+      "C52"
+    ],
+    "result": "Orthologs of the fgn cluster are found in distantly related fungi from different classes (Dothideomycetes, Leotiomycetes, Sordariomycetes), suggesting possible horizontal gene transfer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The phylogenetic distribution data (C51) are supported by database searches and citations. However, the horizontal gene transfer hypothesis (C52) is explicitly speculative ('it is conceivable'). While the distribution across distant fungal classes is consistent with HGT, alternative explanations (e.g., ancient origin with differential loss, convergent evolution) are not rigorously excluded. Phylogenetic analysis of the cluster genes compared to species phylogeny would be needed to support HGT more strongly.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "Despite structural similarity between fumigermin and nectriapyrone/gibepyrone, their biosynthetic enzymes (FgnA, Nec1, Gpy1) are not orthologs and show low sequence similarity. Fumigermin is synthesized by a fungal type I PKS while germicidins are produced by a bacterial type II FAS/type III PKS system, suggesting convergent evolution rather than horizontal gene transfer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The sequence analysis showing lack of orthology between FgnA and Nec1/Gpy1 (C53, C54) is supported by bioinformatic data. The different biosynthetic pathways are well-documented: type I PKS for fumigermin (C85) versus type II FAS/type III PKS for germicidins (C84), with appropriate citations. The inference against HGT (C86) is logical given the fundamentally different enzymatic systems. However, the convergent evolution hypothesis (C87) remains somewhat speculative, though it is the most parsimonious explanation given the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "S. coelicolor and S. lividans show reduced susceptibility to fumigermin compared to S. rapamycinicus, likely due to an intrinsic resistance mechanism. These species are known producers of structurally related germicidins and may harbor resistance mechanisms against \u03b1-pyrone germination inhibitors. LC-MS analysis shows that Streptomyces species do not degrade fumigermin, unlike P. aeruginosa.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The differential susceptibility is demonstrated experimentally (C63, C64, C78) with appropriate data in supplementary figures. The observation that S. coelicolor and S. lividans produce germicidins (C79) is supported by citations. The LC-MS degradation experiments (C66, C67) provide clear evidence that Streptomyces do not degrade fumigermin while P. aeruginosa does. However, the resistance mechanism hypothesis (C80) is speculative\u2014no direct evidence for the mechanism is provided. The overall result is supported but the mechanistic interpretation requires further investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Multiple Streptomyces species induce fumigermin biosynthesis, with phylogenetically closer relatives (S. iranensis) inducing higher levels than distant relatives (S. coelicolor, S. lividans). Fumigermin activity correlates with phylogenetic relatedness and induction levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The induction by multiple Streptomyces species is shown by LC-MS (C74, Figure 1A). The phylogenetic relationships (C75, C76) are supported by appropriate citations. The correlation between phylogenetic distance, induction levels, and susceptibility (C77, C78) is logical and supported by the data, though C77 notes 'data not shown' which weakens the evidence slightly. Overall, the pattern is clear and well-supported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "The fgn cluster in A. fumigatus is prone to rearrangements and loss, possibly due to flanking transposons and subtelomeric location. In strain ATCC 46645, the cluster is maintained despite non-functional tailoring enzymes, likely because fumigermin production provides a selective advantage in interactions with Streptomyces.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The genomic instability of the locus (C89) is supported by data in Figure 1C and Supplementary file 1. The cluster mobility (C90) and tendency for loss near telomeres (C91) are supported by appropriate citations. However, the claims about originally functional tailoring enzymes (C88), maintenance in ATCC 46645 (C92), and selective advantage (C93) are explicitly speculative. No direct evidence for selective advantage (e.g., competition experiments, fitness assays) is provided. The reasoning is plausible but requires experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "Background and context: Microorganisms produce diverse secondary metabolites for communication and interaction. Many SM gene clusters are silent in laboratory conditions and require ecological context for activation. Co-culturing has proven successful for SM discovery, particularly for inter-kingdom interactions. Previous work established that S. rapamycinicus activates silent clusters in A. nidulans and A. fumigatus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims provide established background knowledge supported by multiple citations to prior literature (C1-C22). The authors' previous work (C20-C22) is appropriately cited and provides the foundation for the current study. This is standard contextual information that is well-supported by the literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C68",
+      "C71",
+      "C81",
+      "C82",
+      "C94"
+    ],
+    "result": "Additional observations: Fumigermin has no obvious effect on A. fumigatus fitness in monoculture (C68), A. fumigatus and Streptomyces co-occur in soil (C71), germicidins are autoregulatory inhibitors that block Ca2+-ATPase activity (C81, C82), and fumigermin shows modest activity against MRSA but no other remarkable antimicrobial effects (C94).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Several of these claims note 'data not shown' (C68, C77, C94), which significantly weakens the evidence. The co-occurrence in soil (C71) and germicidin mechanism (C81, C82) are supported by citations. While these observations provide useful context, the lack of presented data for key claims (C68, C94) makes full evaluation impossible. These appear to be preliminary observations that would benefit from more rigorous documentation.",
+    "result_type": "MINOR"
+  }
+]

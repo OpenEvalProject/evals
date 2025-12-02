@@ -1,0 +1,428 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C9",
+      "C10"
+    ],
+    "result": "ChR-assisted photoinhibition is more effective than direct photoinhibition using light-gated ion pumps (Arch and Jaws), achieving >80% spike rate reduction at lower laser powers (0.5-1.5 mW vs ~10-fold higher power).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C9, and C10 collectively demonstrate that ChR-assisted photoinhibition requires significantly lower laser powers than Arch and Jaws to achieve similar levels of neuronal silencing. The experimental data from silicon probe recordings across multiple transgenic mouse lines (Figure 1E) provide strong quantitative evidence for this comparison.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "GtACR1 produces the most potent photoinhibition among tested methods, achieving >80% spike silencing at 0.1 mW with minimal excitation below 0.2 mW, though transient axonal excitation occurs at higher powers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C12, C13, and C14 are well-supported by experimental data showing GtACR1's superior sensitivity (Figure 2C-D). The characterization of power-dependent effects, including the identification of an optimal power range (0.05-0.3 mW) that avoids axonal excitation, provides comprehensive evidence for GtACR1's effectiveness and limitations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "Blue light (473 nm) is highly confined in cortical tissue with intensity dropping to <20% at 500 \u00b5m depth and 50% at 135 \u00b5m laterally, while orange light (594 nm) penetrates much further (depth at half max 846 \u00b5m), illuminating 28 times larger volume.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C7, and C8 are supported by direct photobleaching measurements in transgenic mice expressing fluorescent proteins in neuronal nuclei (Figure 3). The quantitative characterization of wavelength-dependent light propagation provides essential baseline data for interpreting optogenetic effects, though the authors acknowledge the measurements have limited dynamic range and may miss long tails in light intensity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C3",
+      "C26",
+      "C27",
+      "C33",
+      "C38",
+      "C68"
+    ],
+    "result": "Photoinhibition spreads substantially beyond the photostimulation light (approximately 1 mm spatial resolution), extending beyond typical dendritic and axonal arbor sizes, with the fractional spike rate reduction near the laser center predicting lateral spread across methods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C26, C27, C33, C38, and C68 are well-supported by extensive experimental data showing photoinhibition extending 1 mm beyond FS neuron activation profiles (Figures 5-8). The consistency of this finding across multiple optogenetic methods, brain regions, and wavelengths provides strong evidence for a fundamental spatial resolution limit of approximately 1 mm in cortical optogenetic inactivation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C34",
+      "C35"
+    ],
+    "result": "GtACR1-mediated photoinhibition produces smaller spatial spread than other methods, with half-max radius of 0.8 mm at 90% spike rate reduction compared to >1 mm for other methods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34 and C35 are supported by experimental data comparing GtACR1 spatial spread across three cortical regions with other photoinhibition methods (Figure 6). The quantitative comparison demonstrates GtACR1's superior spatial resolution, though the spread still extends substantially beyond the light profile, indicating circuit-mediated effects remain important.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C73",
+      "C74"
+    ],
+    "result": "Local viral expression of ChR2 in PV neurons produces the smallest lateral spread of photoinhibition (radius approximately 0.5 mm at 90% reduction), limiting FS neuron excitation to ~200 \u00b5m radius while photoinhibition extends to 800 \u00b5m.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36, C37, C73, and C74 are supported by experimental data from virus injection experiments (Figure 7). The demonstration that limiting the spatial extent of interneuron expression reduces but does not eliminate photoinhibition spread provides important evidence for circuit-mediated effects and offers a practical approach to improve spatial resolution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C69"
+    ],
+    "result": "In regions surrounding photostimulation, both FS and pyramidal neurons show concurrent proportional decreases in activity, indicating strong coupling within cortical circuits where loss of activity in a focal region withdraws input to surrounding regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39, C40, and C69 are supported by experimental data showing parallel decreases in FS and pyramidal neuron activity in the surround (Figure 9) and are consistent with predictions from inhibition-stabilized network models. The proportional decrease in both cell types provides strong evidence for circuit-mediated spread of inactivation rather than direct optical effects alone.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C4",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "Over a range of light intensities, optogenetic excitation of PV neurons produces a 'paradoxical effect' where FS neurons decrease activity despite being excited, together with pyramidal neurons, consistent with inhibition-stabilized network predictions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C41-C47, and C81-C83 are well-supported by experimental data showing concurrent decreases in FS and pyramidal neuron activity during weak PV neuron photostimulation (Figure 10). The dose-dependent relationship and transition out of the paradoxical regime at high light intensities are consistent with theoretical predictions, though the detailed quantitative relationship remains to be fully explained.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C19",
+      "C22"
+    ],
+    "result": "ChR-assisted photoinhibition produces nearly uniform inhibition of pyramidal neurons across cortical layers (>80% spike reduction at 1.5-14 mW), with remarkably similar profiles for blue and orange light despite different light propagation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15, C16, C19, and C22 are supported by silicon probe recordings showing uniform photoinhibition across cortical depth (Figure 4). The similarity of inhibition profiles despite wavelength-dependent differences in light penetration provides strong evidence for circuit-mediated effects, though the mechanisms underlying uniform inhibition across layers require further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C5",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C66",
+      "C67",
+      "C104"
+    ],
+    "result": "Photoinhibition offset is followed by rebound excitation that depends on both photostimulus duration and intensity, limiting temporal resolution, though rebound can be reduced by gradually attenuating the photostimulus or reducing duration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C60-C64, C66, C67, and C104 are well-supported by experimental data showing dose-dependent rebound activity (Figure 12). The characterization of rebound activity across different photostimulation parameters and methods provides important practical guidance, though the underlying mechanisms remain incompletely understood.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "The kinetics of channelrhodopsin variants determine interneuron dynamics (ChR2 produces time-locked activity, ReaChR shows attenuation), but pyramidal neuron photoinhibition is similar despite different interneuron dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C51 are supported by experimental data comparing temporal dynamics of ChR2 and ReaChR in FS neurons and resulting pyramidal neuron inhibition (Figure 11A). The finding that different interneuron dynamics produce similar pyramidal neuron inhibition suggests network-level compensation, though the mechanisms require further investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "ChR-assisted photoinhibition onset is rapid (photoinhibition detectable at 4.0\u00b11.7 ms, maximum at 18.4\u00b11.6 ms), with ChR2 slightly faster than ReaChR (14.6 vs 18.8 ms), while direct Arch-mediated photoinhibition is fastest (5 ms).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C56 are supported by quantitative analysis of PSTH data (Figure 11C). The characterization of onset kinetics across different methods provides important practical information for experimental design, with appropriate statistical analysis supporting the comparison between ChR2 and ReaChR.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Photoinhibition onset is progressively delayed with increasing distance from the laser center (10 ms lag at 2 mm), suggesting gradual spread consistent with coupling between cortical neurons mediating spatial spread.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C59 are supported by experimental data showing distance-dependent delays in photoinhibition onset (Figure 11E). The progressive delay provides additional evidence for circuit-mediated spread of inactivation, though alternative explanations related to light propagation dynamics are not fully excluded.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C17",
+      "C18"
+    ],
+    "result": "At low laser powers (0.5 mW) in Sst-IRES-Cre x Ai32 mice, selective excitation of Sst neurons produces disinhibition of excitatory neurons around layer 4, likely mediated by Sst neurons inhibiting PV neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17 and C18 are supported by experimental data showing increased relative spike rate in layer 4 at low power (Figure 4A) and inference based on known circuit connectivity. This finding highlights the complexity of optogenetic manipulations in actual neural networks, though the proposed mechanism requires direct validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C76"
+    ],
+    "result": "At moderate laser power (1.5 mW), blue light excites FS neurons mainly in superficial layers, yet loss of activity is present in both superficial and deep layers, suggesting circuit-mediated effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20, C21, and C76 are supported by comparison of FS neuron excitation profiles (Figure 4C) with pyramidal neuron inhibition across layers (Figure 4A) and light penetration data (Figure 3). The mismatch between direct optical effects and functional inhibition provides evidence for circuit-mediated spread, though the specific mechanisms require further investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C11"
+    ],
+    "result": "For Arch-mediated photoinhibition, temporally-modulated photostimuli (40 Hz sinusoid) are more effective in silencing activity than constant photostimuli at the same average power.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C11 is supported by experimental data comparing different photostimulus profiles (Figure 1F). This finding provides practical guidance for optimizing Arch-mediated photoinhibition, though the underlying mechanisms are not explored.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "FS neuron activation in VGAT-ChR2-EYFP mice is dose-dependent with lateral spread dependent on laser power (half-max width 0.15 mm at 0.5 mW, 1.5 mm at 14 mW), indicating long tails in light intensity can activate channels >1 mm from laser center.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C25 are supported by experimental data showing power-dependent FS neuron excitation profiles (Figure 5B). The finding that FS neurons can be activated at distances exceeding predictions from photobleaching measurements highlights limitations of the photobleaching assay and importance of direct functional measurements.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Photoinhibition profiles are similarly broad across different methods (selective PV or Sst neuron excitation, direct photoinhibition with Arch/Jaws, different brain regions) regardless of the specific approach used.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C32 are supported by experimental data comparing photoinhibition profiles across multiple methods and brain regions (Figure 5C-I). The consistency of broad spatial spread across diverse approaches provides strong evidence for circuit-mediated effects as a fundamental property of cortical photoinhibition.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C52"
+    ],
+    "result": "Prolonged photostimulation (>20 ms) triggers spikes in a subset of FS interneurons, which in turn reduces activity in other FS neurons and pyramidal neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C52 is an inference based on experimental data showing different FS neuron responses at different epochs (Figure 11B). While the data show heterogeneous FS neuron responses, the proposed mechanism of subset-mediated inhibition is speculative and requires direct validation through simultaneous recordings or other approaches.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C65"
+    ],
+    "result": "Rebound activity could be caused by recovery from synaptic depression in silenced excitatory neurons, synaptic depression in activated FS neurons, or perturbed intracellular ion concentrations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C65 is speculation about possible mechanisms supported by citations to relevant literature. While the proposed mechanisms are plausible, no direct experimental evidence is provided to distinguish between these alternatives or confirm any specific mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C75"
+    ],
+    "result": "Withdrawal of input could potentially explain uniform photoinhibition across layers, particularly for blue light mediated ChR-assisted photoinhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C75 is speculation about mechanism supported by citations and reference to experimental data (Figure 4A). While the proposed mechanism is consistent with the data, it remains speculative without direct experimental validation of input withdrawal and its layer-specific effects.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Cortical neurons require thalamic drive to maintain activity, and silencing cortex reduces thalamic activity, suggesting intracortical connections might also be required to maintain cortical activity in addition to thalamocortical input.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C77-C80 combine cited prior work with inferences about the current data. While the citations support the importance of thalamocortical interactions, the inference about intracortical connections' role is speculative and requires direct experimental validation through simultaneous cortical and thalamic recordings during photoinhibition.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "Previous studies did not find the paradoxical effect, possibly because they manipulated only subsets of PV neurons using viral expression, whereas this study weakly photostimulated nearly all PV neurons in superficial layers, and the effect requires exciting a large proportion of interneurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C84-C89 compare current results with previous studies and propose explanations for discrepancies. While the comparison is informative and the proposed explanations are plausible based on theoretical predictions, direct experimental validation comparing subset vs. population-wide manipulation in the same preparation would be needed to definitively establish this explanation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "At moderate laser powers (1.5 mW), photoinhibition in ChR2-EYFP mice is limited to cortex with no obvious subcortical silencing, but higher powers can cause photoinhibition in hippocampus and striatum; red light is more likely to cause widespread direct effects due to deeper penetration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C72 combine inference from light intensity distribution with citations to prior studies. The inference about moderate power effects is supported by light penetration data (Figure 3) and citation to Guo et al., 2014b, while the statement about higher powers is supported by citation to Babl et al., 2019. The inference about red light is logical given the penetration data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C90"
+    ],
+    "result": "Data were collected under awake non-behaving conditions, but previous studies found little difference in photoinhibition strength across behavioral conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C90 describes experimental conditions and cites previous studies showing consistency across behavioral states. This provides important context for interpreting the results and their generalizability, supported by appropriate citations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "ChR-assisted and GtACR1-mediated photoinhibition produce complete silencing near the laser center across a large power range (1.5-10 mW), but spatial spread differs substantially with power, producing graded loss-of-function manipulations that correlate with behavioral effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C95 are supported by experimental data showing power-dependent spatial spread (Figures 5-6) and citation to behavioral study (Guo et al., 2014b). The characterization of power-dependent effects provides important practical guidance for experimental design, linking spatial spread to functional consequences.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "The 1 mm spatial resolution of photoinhibition poses a limit on loss-of-function manipulations in neocortex, requiring interpretation that accounts for spatial spread; systematic mapping and deconvolution could help recover the underlying region involved in behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C99 draw practical implications from the spatial spread findings and propose experimental approaches. The inferences about limitations and false-positives are logical consequences of the data, and the proposed deconvolution approach is supported by citation to Li et al., 2016.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "Sub-millimeter resolution might be achievable with more sensitive effectors and patterned illumination; spatial resolution could differ across brain regions due to differences in GABAergic projections and recurrent excitation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C100-C103 are speculation about future possibilities and regional differences. While the speculations are reasonable based on known circuit differences, they lack direct experimental support and represent hypotheses for future testing rather than established findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "Rebound activity can be partially alleviated by changes in photostimulus parameters; cell-type-specific manipulations produce multi-phasic network responses over hundreds of milliseconds, highlighting the need to measure effects on both local and downstream circuits in behaving animals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C107 combine experimental findings with citations to previous studies and draw practical implications. The statement about parameter optimization is supported by experimental data (Figure 12C) and citation, while the broader implications are supported by citations to studies examining downstream effects.",
+    "result_type": "MINOR"
+  }
+]

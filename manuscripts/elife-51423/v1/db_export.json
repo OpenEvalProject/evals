@@ -1,0 +1,1602 @@
+{
+  "submission": {
+    "id": "8ffb4efe-d808-418f-ae5b-fe8d31f1e1e4",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T13:57:17.026776Z",
+    "updated_at": "2025-12-02T13:57:17.026776Z"
+  },
+  "content": [
+    {
+      "id": "8155b8bf-3abd-4c70-a6c5-8e969e994c31",
+      "submission_id": "8ffb4efe-d808-418f-ae5b-fe8d31f1e1e4",
+      "content_type": "manuscript",
+      "content_text": "# Agonist-specific voltage-dependent gating of lysosomal two-pore Na+ channels\n\n## Authors\n\n- Xiaoli Zhang<sup>1</sup> ([ORCID: 0000-0002-0507-6317](https://orcid.org/0000-0002-0507-6317)) \u2020\n- Wei Chen<sup>1</sup> ([ORCID: 0000-0002-2794-2407](https://orcid.org/0000-0002-2794-2407))\n- Ping Li<sup>1</sup>\n- Raul Calvo<sup>3</sup>\n- Noel Southall<sup>3</sup> ([ORCID: 0000-0003-4500-880X](https://orcid.org/0000-0003-4500-880X))\n- Xin Hu<sup>3</sup>\n- Melanie Bryant-Genevier<sup>3</sup>\n- Xinghua Feng<sup>2</sup>\n- Qi Geng<sup>1</sup>\n- Chenlang Gao<sup>1</sup>\n- Meimei Yang<sup>1</sup>\n- Kaiyuan Tang<sup>1</sup>\n- Marc Ferrer<sup>3</sup>\n- Juan Jose Marugan<sup>3</sup> ([ORCID: 0000-0002-3951-7061](https://orcid.org/0000-0002-3951-7061))\n- Haoxing Xu<sup>1</sup> ([ORCID: 0000-0003-3561-4654](https://orcid.org/0000-0003-3561-4654)) \u2020\n\n### Affiliations\n\n1. Department of Molecular, Cellular, and Developmental Biology University of Michigan Ann Arbor United States\n2. Collaborative Innovation Center of Yangtze River Delta Region Green Pharmaceuticals Zhejiang University of Technology Hangzhou China\n3. National Center for Advancing Translational Sciences (NCATS) Medical Center Drive Rockville United States\n4. Department of Neurology The Fourth Hospital of Harbin Medical University Harbin China\n\n\u2020 Corresponding author\n\n## Abstract\n\nMammalian two-pore-channels (TPC1, 2; TPCN1, TPCN2) are ubiquitously- expressed, PI(3,5)P2-activated, Na+-selective channels in the endosomes and lysosomes that regulate luminal pH homeostasis, membrane trafficking, and Ebola viral infection. Whereas the channel activity of TPC1 is strongly dependent on membrane voltage, TPC2 lacks such voltage dependence despite the presence of the presumed \u2018S4 voltage-sensing\u2019 domains. By performing high-throughput screening followed by lysosomal electrophysiology, here we identified a class of tricyclic anti-depressants (TCAs) as small-molecule agonists of TPC channels. TCAs activate both TPC1 and TPC2 in a voltage-dependent manner, referred to as Lysosomal Na+ channel Voltage-dependent Activators (LyNa-VAs). We also identified another compound which, like PI(3,5)P2, activates TPC2 independent of voltage, suggesting the existence of agonist-specific gating mechanisms. Our identification of small-molecule TPC agonists should facilitate the studies of the cell biological roles of TPCs and can also readily explain the reported effects of TCAs in the modulation of autophagy and lysosomal functions.\n\n## Introduction\n\nLysosomes are the cell\u2019s recycling center equipped with the most important nutrient-sensing machinery in the cell (Lawrence and Zoncu, 2019; Li et al., 2019). Ion channels in the lysosome play essential roles in the regulation of various lysosomal functions, including cargo import, lysosomal degradation, and catabolite export (Li et al., 2019; Xiong and Zhu, 2016). Patch-clamp studies of isolated lysosomal membranes have recently discovered multiple lysosomal channels that are selective for Na+, K+, Ca2+, and Cl- (Cang et al., 2015; Cang et al., 2013; Cao et al., 2015; Dong et al., 2010; Li et al., 2019; Wang et al., 2012; Xiong and Zhu, 2016). How these lysosomal channels are activated by endogenous nutrient-dependent signals remain largely unknown (Li et al., 2019). On the other hand, membrane-permeable small-molecule modulators, that\u00a0is synthetic agonists and inhibitors, have proved extremely helpful in probing the cell biological functions of intracellular channels, including lysosomal channels (Cao et al., 2015; Dong et al., 2010; Li et al., 2019; Wang et al., 2012; Xiong and Zhu, 2016). For example, small-molecule synthetic agonists of Mucolipin TRP channels (TRPMLs), that\u00a0is ML-SAs, have been instrumental in revealing the functions of these Ca2+ release channels in lysosomal exocytosis, mobility, and biogenesis (Li et al., 2016; Shen et al., 2012; Zhang et al., 2016). However, such chemical tools are still lacking for most other lysosomal channels.\n\nTwo-pore channel proteins (TPC1, 2; TPCN1, TPCN2) are ubiquitously expressed, dimeric, two-repeat (2 \u00d7 6 TM) cation channels that are localized exclusively in the intracellular endosomes and lysosomes (Calcraft et al., 2009; Grimm et al., 2017; Morgan et al., 2011). At the cellular level, TPCs regulate organellar membrane excitability, membrane trafficking, and pH homeostasis; at the organismal level, TPCs regulate various physiological and pathological processes, including hair pigmentation, Ebola viral infection, and cancer growth (Ambrosio et al., 2016; Nguyen et al., 2017; Sakurai et al., 2015). Early works from several laboratories suggested that TPCs play an essential role in mediating Ca2+ release from endolysosomes in response to cytosolic increases of nicotinic acid adenine dinucleotide phosphate (NAADP) (Brailoiu et al., 2009; Calcraft et al., 2009; Ruas et al., 2010; Zong et al., 2009). However, it remains controversial whether TPCs are the bona fide NAADP receptor (Lin-Moshier et al., 2012; Morgan et al., 2015; Walseth et al., 2012). Indeed, several recent endolysosomal patch-clamp studies have demonstrated that TPCs are Na+-selective channels activated by PI(3,5)P2 (Bellono et al., 2016; Cang et al., 2014; Cang et al., 2013; Guo et al., 2017; Jha et al., 2014; Kirsch et al., 2018; She et al., 2019; Wang et al., 2012), a late endosome and lysosome-specific phosphoinositide that is known to regulate many aspects of lysosome function (McCartney et al., 2014). Recent high-resolution structural studies revealed that several amino acid (AA) residues in the selectivity filter of TPCs confer the selectivity of Na+ over K+ or Ca2+ (Guo et al., 2016; Guo et al., 2017), and that PI(3,5)P2 binds directly to several positively\u00a0charged AA residues in the S4-S5 linker to induce channel opening (Kirsch et al., 2018; She et al., 2018; She et al., 2019). Sphingosines also reportedly induce TPC1-mediated Ca2+ release from the lysosomes (H\u00f6glinger et al., 2015), but direct activation of TPCs by sphingosines was not confirmed in the lysosomal electrophysiological assays (unpublished data in the Xu laboratory) (Li et al., 2019).\n\nLysosomal membrane potential (\u0394\u03c8) has been proposed to regulate an array of lysosomal functions, including metabolite transport and membrane trafficking, but the underlying mechanisms are poorly understood (Li et al., 2019; Xu and Ren, 2015). Na+ flux mediated by TPCs may cause rapid changes of lysosomal \u0394\u03c8 , which may in turn modulate the functions of TPCs and other lysosomal channels (Cang et al., 2014). Like canonical voltage-gated cation channels, TPCs contain multiple positively-charged AA residues in their voltage sensor domains (S4), which are believed to confer voltage-dependent activation of plant and animal TPC1 channels (Cang et al., 2014; She et al., 2019). In a sharp contrast, TPC2 activation is completely voltage-independent, despite the presence of multiple Arginine/Lysine residues in their S4 helices (Cang et al., 2014; Cang et al., 2013; Wang et al., 2012). In the current study, we identified seven small molecules known to act as tri-cyclic anti-depressants (TCAs) that activate both TPC1 and TPC2 in a voltage-dependent manner.\n\n## Results\n\n### High-throughput screening of small-molecule agonists of TPC2 channels\n\nWe recently used a Ca2+-imaging-based high-throughput screening (HTS) method to identify small-molecule agonists for lysosomal TRPML1 channels (Wang et al., 2015). Although TPCs are Na+-selective channels with limited Ca2+ permeability (Cang et al., 2014; Guo et al., 2017; Li et al., 2019; Wang et al., 2012), in a number of cell-based studies, TPCs reportedly mediate Ca2+ release from lysosomes (Brailoiu et al., 2009; Calcraft et al., 2009; Jha et al., 2014; Morgan et al., 2015; Patel, 2015; Ruas et al., 2015; Zong et al., 2009), and it is conceivable that the small Ca2+-permeability of TPCs, or activation of Na+-dependent Ca2+ flux mechanisms (e.g., Na+-Ca2+ exchanger) secondary to Na+ flux may be sufficient to elevate intracellular Ca2+. We thus screened HEK293 cells stably\u00a0expressing human TPC2 (hTPC2) channels with the Library of Pharmacologically Active Compounds (LOPAC) (Liu et al., 2010), the same library of chemicals that were previously tested on TRPML1 channels. Among the positive hits, 23 compounds induced Ca2+ increases in TPC2 stable cells (Figure 1A and B and Figure 1\u2014figure supplement 1A), but not in cells stably expressing TRPML14A (a surface-expressing mutant TRPML1 [Shen et al., 2012]) channels (data not shown).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/51423/elife-51423-fig1-v1.jpg)\n\n**Figure 1.:** (A) High-throughput screening of the LOPAC library with Fluo-4 Ca2+ imaging in HEK293 cells stably expressing hTPC2 (Dryad,\u00a0http://doi.org/10.5061/dryad.s5f6j9h). Each trace represented the average Ca2+ response to individual LOPAC compound. Only positive hits confirmed with electrophysiology were color-coded. (B) An example of a positive responder (chlorpromazine, CPZ), which elevated intracellular Ca2+ levels at the concentration of 46 \u00b5M. Note a similar response was seen with a repeated (re) drug application. (C) Representative whole-cell currents in a HEK293 cell upon bath application of clomipramine (100 \u00b5M). Both pipette and bath solutions contained symmetric 150 mM Na+. Currents were elicited by repeated voltage ramps (\u2212140 to +100 mV; 200 ms) with a 4 s inter-step interval. Holding potential (HP)\u00a0=\u00a00 mV. (D) Representative TPC2-mediated currents (ITPC2) activated by clomipramine (100 \u00b5M; LyNa-VA1.1) in a HEK293 cell transfected with a surface-expressing mutant TPC2 channel (EGFP-TPC2LL/AA;\u00a0Wang et al., 2012). (E) Dose-dependent activation of TPC2 by Lysosomal Na+ channel Voltage-dependent Activators (LyNa-VAs). (F) The effect of clomipramine (100 \u00b5M) on surface-expressing mutant TRPML1 channels (TRPML14A;\u00a0Shen et al., 2012). (G) Summary of clomipramine effects on whole-cell ITPC2-LL/AA and ITRPML1-4A. Individual data and Mean\u00a0\u00b1\u00a0S.E.M are presented. **, p<0.01. (H) Activation of ITPC2 by LyNa-VA1.2 and Lysosomal Na+ channel Agonist 1 (LyNA1; see Figure 1\u2014figure supplement 2). Individual data for (A), (E) and (G) are presented in Figure 1\u2014source data 1.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/51423/elife-51423-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) An example of a negative responder (MDL) in high- throughput screening of the LOPAC library with Fluo-4 Ca2+ imaging in HEK293 cells stably expressing hTPC2. (B, C, D) Representative whole-cell ITPC2 was evoked by chlorpromazine (100 \u00b5M, (B), amitriptyline (100 \u00b5M, (C), and desipramine (100 \u00b5M, (D) and, but not by carbamazepine (100 \u00b5M, (D).\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/51423/elife-51423-fig1-figsupp2-v1.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A) Representative ITPC2 evoked by LyNa-VA1.2 (200 \u00b5M) in an inside-out patch from TPC2LL/AA-transfected cells. (B) Representative time course of LyNa-VA1.2- induced TPC2 activation under whole-cell (WC), inside-out (I/O), and whole-endolysosomal (EL) configurations. (C, D) Comparison of latency (C) and time constant (\u03c4, D) of LyNa-VA1.2 (200 \u00b5M)-induced TPC2 activation in whole-cell (latency\u00a0=\u00a015\u00a0\u00b1\u00a02 s, \u03c4\u00a0=\u00a043\u00a0\u00b1\u00a05 s, n\u00a0=\u00a04), inside-out (latency\u00a0=\u00a012\u00a0\u00b1\u00a01 s, \u03c4\u00a0=\u00a017\u00a0\u00b1\u00a02 s, n\u00a0=\u00a04), and whole-endolysosome (latency\u00a0=\u00a07\u00a0\u00b1\u00a01 s, n\u00a0=\u00a05; \u03c4\u00a0=\u00a08\u00a0\u00b1\u00a02 s, n\u00a0=\u00a04) recordings. Both individual data points and Mean\u00a0\u00b1\u00a0S.E.M are presented. **, p<0.01; ***, p<0.001. Individual data for (B\u2013D) are presented in Figure 1\u2014figure supplement 2\u2014source data 1.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/51423/elife-51423-fig1-figsupp3-v1.jpg)\n\n**Figure 1\u2014figure supplement 3.:** (A) Chemical structure of LyNA1. (B) The effects of LyNa-VA1.2 and LyNA1 on whole-cell ITPC2 under the recording conditions of extracellular 150 mM Na+ and cytosolic 150 mM K+.\n\n### Tri-cyclic anti-depressants (TCAs) as TPC2 agonists\n\nTo our surprise, 5 out of the 23 compounds are well characterized as tri-cyclic anti-depressants (TCAs), which are believed to act on neurotransmitter transporters or voltage-gated Na+ channels (Cheng and Bahar, 2019; Pancrazio et al., 1998). We therefore characterized the responses of TPC2 channels to TCAs in detail using electrophysiological methods. We first performed whole-cell recordings in HEK293 cells that were transfected with surface-expressed TPC2 mutant channels (TPC2-L11L12-AA; abbreviated as TPC2LL/AA hereafter). No functional difference was noted between wild-type (WT) TPC2 and TPC2LL/AA channels in terms of channel permeation and gating properties (Wang et al., 2012). To facilitate the detection of TPC2-specific currents, we used symmetric Na+ solutions in the bath (extracellular) and pipette (cytosolic) solutions (Wang et al., 2012). All five TCAs robustly and rapidly activated whole-cell currents in TPC2LL/AA-expressing cells (Wang et al., 2012), but not in non-transfected HEK293 cells (Figure 1C and D, Figure 1\u2014figure supplement 1B\u2013D, Table 1, and Table 1\u2014source data 1).\n\n**Table 1.**\n Summary of electrophysiology-based screening of TPC agonists.Based on chemical structures, LyNa-VAs were divided into two groups: LyNa-VA1.x and LyNa-VA2.x. EC50 and the average TPC2 currents (ITPC2) were calculated based on 3\u20135 whole-cell or whole-endolysosome recordings (see individual data in Table 1\u2014source data 1) for each LyNa-VA, respectively.Table 1\u2014source data 1.Electrophysiology-based screening of TPC agonists.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>LyNa-VAs</th>\n      <th>Chemical name</th>\n      <th>Structure</th>\n      <th>EC50 (\u03bcM)*</th>\n      <th>ITPC2\u00a0(pA)**</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>LyNa-VA1.1</td>\n      <td>Clomipramine</td>\n      <td></td>\n      <td>43\u00a0\u00b1\u00a02</td>\n      <td>945\u00a0\u00b1\u00a0111</td>\n    </tr>\n    <tr>\n      <td>LyNa-VA1.2</td>\n      <td>Desipramine</td>\n      <td></td>\n      <td>87\u00a0\u00b1\u00a08</td>\n      <td>1120\u00a0\u00b1\u00a094</td>\n    </tr>\n    <tr>\n      <td>LyNa-VA1.3</td>\n      <td>Imipramine</td>\n      <td></td>\n      <td>112\u00a0\u00b1\u00a01</td>\n      <td>433\u00a0\u00b1\u00a094</td>\n    </tr>\n    <tr>\n      <td>LyNa-VA1.4</td>\n      <td>Amitriptyline</td>\n      <td></td>\n      <td>102\u00a0\u00b1\u00a03</td>\n      <td>876\u00a0\u00b1\u00a0196</td>\n    </tr>\n    <tr>\n      <td>LyNa-VA1.5</td>\n      <td>Nortriptyline</td>\n      <td></td>\n      <td>52\u00a0\u00b1\u00a010</td>\n      <td>1916\u00a0\u00b1\u00a0361</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>Carbamazepine</td>\n      <td></td>\n      <td>No activation</td>\n      <td>No activation</td>\n    </tr>\n    <tr>\n      <td>LyNa-VA2.1</td>\n      <td>Chlorpromazine</td>\n      <td></td>\n      <td>60\u00a0\u00b1\u00a02</td>\n      <td>1101\u00a0\u00b1\u00a0508</td>\n    </tr>\n    <tr>\n      <td>LyNa-VA2.2</td>\n      <td>Triflupromazine</td>\n      <td></td>\n      <td>63\u00a0\u00b1\u00a02</td>\n      <td>984\u00a0\u00b1\u00a0294</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>Phenothiazine</td>\n      <td></td>\n      <td>No activation</td>\n      <td>No activation</td>\n    </tr>\n  </tbody>\n</table>\n\n_*Data were obtained from whole-cell recordings at \u2212140 mV.**Data were obtained from whole endolysosome recordings with 100 \u00b5M of LyNa-VAs at \u2212120 mV._\n\nWe then extended detailed analyses to other known TCAs (Table 1). Of them, Clomipramine\u00a0activated whole-cell TPC2LL/AA-mediated strongly rectifying currents (ITPC2-LL/AA) with an EC50 of 43\u00a0\u00b1\u00a02 \u03bcM (n\u00a0=\u00a04 patches) (Figure 1D and E, and Table 1). Given the apparent voltage-dependent gating described below, we referred to Clomipramine as Lysosomal Na+ channel Voltage-dependent Activator 1.1 (LyNa-VA1.1). Another structurally different TCA, Chlorpromazine, had an EC50 of 60\u00a0\u00b1\u00a02 \u03bcM (n\u00a0=\u00a04 patches), and was referred to as LyNa-VA2.1 (Figure 1E, Table 1, and Figure 1\u2014figure supplement 1B). Other TPC-activating TCAs were referred to as LyNa-VA1.x or LyNa-VA2.x, respectively, based on the structural similarity (Table 1). In contrast, no significant activation was seen with Carbamazepine or Phenothiazine, tricyclic drugs without the aliphatic chain (Table 1 and Figure 1\u2014figure supplement 1D). All TCA-induced currents exhibited strong voltage-dependence and inward rectification, which resembled TRPML1-mediated currents (ITRPML1) (Shen et al., 2012). However, none of the TCAs had any activation effect on ITRPML1 (Figure 1F and G). Taken together, these results suggested that TCAs may function as small-molecule agonists of TPC2 channels.\n\nIn a separate screen, we identified another compound (Riluzole, see Figure 1\u2014figure supplement 3A) that showed striking differences from the responses elicited by TCAs. Riluzole, an FDA-approved amyotrophic lateral sclerosis drug that is known to modulate voltage-gated Na+ channels (Liu and Wang, 2018), activated large and linear whole-cell currents in TPC2LL/AA-expressing HEK293 cells (Figure 1H and Figure 1\u2014figure supplement 3), but not in non-transfected HEK293 cells. Given its lack of the voltage-dependence, Riluzole was referred to as Lysosomal Na+ channel Agonist 1 (LyNA1). Hence, more than one agonist-specific gating (voltage-dependent and voltage-independent) mechanism may co-exist within one channel protein.\n\n### TCAs activate lysosomal TPC2 channels\n\nTCAs, with a general structure of an aromatic greasy core and an aliphatic chain containing a terminal amine, are lysosomotropic compounds that are known to be highly accumulating in the lysosomes due to proton trapping (Beckmann et al., 2014). We next tested the effects of LyNa-VAs in hTPC2-transfected Cos1 and HEK293 cells using whole-endolyosome patch-clamp. Cells were pretreated with vacuolin-1 (1 \u00b5M) that can selectively increase the size of late endosomes and lysosomes (LELs) up to 5 \u03bcm (Dong et al., 2010). The enlarged endolysosomes were manually isolated and then patch clamped in the whole-endolysosome configuration (Dong et al., 2010). In TPC2-positive enlarged LELs isolated from transfected Cos1 cells, little or no basal whole-endolysosome currents were seen under symmetric (pipette/luminal and bath/cytosolic) Na+ solutions (Figure 2A). Consistent with our previous studies, bath application of PI(3,5)P2, the endogenous agonist of TPCs (Wang et al., 2012), activated a large whole-endolysosome ITPC2 with linear I-V (Figure 2B and E). Both LyNa-VAs and LyNA1 readily activated ITPC2, although the I-Vs were dramatically different (Figure 2C, D and E, and Figure 2\u2014figure supplements 1 and 2). In contrast, no current activation was seen for LyNa-VAs or LyNA1 in TRPML1-transfected cells (Figure 2\u2014figure supplement 1C). Both LyNa-VAs and LyNA1 activated whole-endolysosome ITPC in WT HAP1 cells, but not HAP1 cells lacking TPC1 or TPC2 (TPC1\u2212/\u2212/TPC2\u2212/\u2212, TPC1/2 DKO; Figure 2\u2014figure supplement 1), suggesting that the activation effects of both TCAs and LyNA1 on TPCs are specific. In addition, robust activation of ITPC2 in the whole-cell configuration with agonists being applied from the extracellular side (analogous to the luminal side in the lysosome), as well as in the inside-out (Figure 1\u2014figure supplement 2A) and whole-endolysosome configurations with agonists being applied from the cytosolic side, suggests that LyNa-VAs and LyNA1 are likely to be membrane permeable, activating TPC2 via direct agonist binding. As the channel activation in the whole-cell recordings was significantly slower, that\u00a0is longer latency and time course of activation, compared to the inside-out and whole-endolysosome recordings (see Figure 1\u2014figure supplement 2), the action site of LyNa-VAs is likely to be either intracellular or more accessible from the intracellular side.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/51423/elife-51423-fig2-v1.jpg)\n\n**Figure 2.:** (A) Representative basal ITPC2 step currents elicited by a voltage step protocol in the whole-endolysosome (EL) configuration. Voltage steps from \u2212140 to 100 mV with a voltage increment (\u2206V) of 20 mV for 0.5 s were used to elicit ITPC2 in A-D. HP\u00a0=\u00a00 mV. Unless otherwise indicated, symmetric (bath/cytosol vs pipette/lumen) Na+ (150 mM) solutions were used for all whole-endolysosome recordings, and PI(3,5)P2 (0.3 \u00b5M), LyNa-VA1.2 (100 \u00b5M), and LyNA1 (300 \u00b5M) were bath- applied to induce ITPC2. (B\u2013D) Representative ITPC2 step currents activated by PI(3,5)P2 (B), LyNa-VA1.2 (C), and LyNA1 (D). (E) Representative normalized I-V plots based on the instantaneous currents activated by various agonists. (F) Rectification index, calculated as the ratio of the current amplitudes between +80 and \u221280 mV, of PI(3,5)P2-, LyNa-VA1.2-, and LyNA1- activated ITPC2. (G) The inactivation of ITPC2 at \u2212120 mV was quantified as the ratio of current amplitudes at 10 vs. 500 ms, based on step currents in B, (C) and D. (H) Voltage steps from \u2212120 to 100 mV (\u2206V\u00a0=\u00a020 mV) for 1 s were used to elicit tail currents at \u2212120 mV shown in (I) and (J). (I) The tail currents of PI(3,5)P2- evoked whole-endolysosome ITPC2. (J) The tail currents of LyNa-VA1.2- activated whole-endolysosome ITPC2. Arrows in (I) and (J) indicate where the currents were measured to calculate the channel conductance (G\u00a0=\u00a0I/V). (K) Normalized G-V curves of PI(3,5)P2- and LyNa-VA1.2- activated ITPC2. LyNa-VA1.2 activated ITPC2 in a voltage dependent manner with a V1/2\u00a0=\u00a0\u221220.3\u00a0\u00b1\u00a03.5 mV (n\u00a0=\u00a05 patches). For panels F and G, individual data and Mean\u00a0\u00b1\u00a0S.E.M. are presented. ***, p<0.001. Individual data for (F) and (G) are presented in Figure 2\u2014source data 1.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/51423/elife-51423-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Time course of dose-dependent activation of whole-endolysosome ITPC2 by LyNA1. (B) Representative traces of ITPC2 evoked by 100 \u00b5M and 300 \u00b5M LyNA1 at the time points indicated in (A). (C) The lack of the activation effects of LyNA1 on whole-endolysosome ITRPML1. (D, E) LyNA1 (300 \u00b5M) activated whole-endolysosome ITPC in WT (D) but not TPC1/2 double KO HAP1 cells (E). Instead, ML-SA1, a TRPML-specific synthetic agonist, readily activated ITRPML1 in TPC1/2 DKO cells.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/51423/elife-51423-fig2-figsupp2-v1.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A, B) Whole-cell ITPC2 elicited by voltage steps from \u2212140 to 80 mV (\u2206V\u00a0=\u00a020 mV; see the voltage protocol in the left panel) in the presence of LyNa-VA1.2 (A) or LyNA1 (B). (C) Agonist-specific voltage-dependent inactivation of ITPC2 induced by LyNa-VA1.2 and LyNA1 (see individual data in Figure 2\u2014figure supplement 2\u2014source data 1). ***, p<0.001.\n\n### Activation of TPCs by LyNa-VAs shows strong voltage dependence\n\nDespite the fact that TPCs have two S4 domains that act as voltage sensors in many voltage gated channels (She et al., 2018), the responses of TPC2 to PI(3,5)P2 and LyNA1 were voltage independent, with large currents at both positive and negative voltages (Figure 2B, D and E). In contrast, TPC2 currents activated by TCAs were strongly voltage-dependent, in both whole-cell and whole-endolysosome recordings, no matter whether the currents were elicited by a voltage ramp or a series of voltage steps (see Figure 2C and E and Figure 2\u2014figure supplement 2). In both whole-cell and whole-endolysosome configurations, TCA-activated step currents displayed prominent inactivation and strong inward rectification (Figure 2C, E and F and Figure 2\u2014figure supplement 2), suggesting the existence of voltage-dependent activation and/or inactivation gating processes. The steady-state voltage dependence of the responses to all 7 TCAs were qualitatively similar. A convenient way to quantitatively summarize the voltage dependence of the TCA responses was to calculate the rectification ratio ($\\frac{I@+80mV}{I@\u221280mV}$ ), which was 1.00\u00a0\u00b1\u00a00.06 (n\u00a0=\u00a04 patches) for activation by PI(3,5P)2, 0.93\u00a0\u00b1\u00a00.03 for LyNA1 (n\u00a0=\u00a04), but only 0.10\u00a0\u00b1\u00a00.03 for LyNa-VA1.2 (n\u00a0=\u00a06, Figure 2F).\n\nUnder the voltage-step protocols, LyNa-VA-activated ITPC2 exhibited substantial time-dependent inactivation at negative voltages (Figure 2C and G and Figure 2\u2014figure supplement 2A). This could be conveniently characterized by two parameters: the amount of current decline at steady state ($\\frac{I@500ms}{I@10ms}$) and the time constant (\u03c4) of the decay of current. There was no inactivation with ratio near 1.0 at all potentials when the agonist was PI(3,5)P2 or LyNA1, but the ratio was 0.6 or less for all the active TCAs tested at \u2212120 mV; the time constant of inactivation was approximately 300 ms at \u2212120 mV (Figure 2J and Figure 2\u2014figure supplement 2).\n\nWhen we used a tail-current protocol to study the voltage-dependent activation, the activation by LyNa-VA1.2 was strongly dependent on voltage, with a half-maximal activation voltage (V1/2) of \u221220 mV at the concentration of 100 \u03bcM (Figure 2J and K). In contrast, no apparent voltage-dependent activation was seen when whole-endolysosome ITPC2 was activated by PI(3,5)P2 (Figure 2I and K) or LyNA1. Collectively, LyNa-VAs have manifested multiple aspects of voltage-dependent gating of TPC2 channels.\n\n### Synergistic activation of TPC2 by PI(3,5)P2 and TCAs\n\nPI(3,5)P2 reportedly binds to Lys204 and adjacent AA residues to activate TPC2 (She et al., 2019). In the cells that were transfected with a PI(3,5)P2-insensitive mutant TPC2 channel (K204A) (She et al., 2019), LyNa-VA and LyNA1 still robustly activated whole-endolysosome ITPC2 (Figure 3A and B and Figure 3\u2014figure supplement 1A and B). Lysosomal PI(3,5)P2 may play a permissive role in TPC activation in intact cells (Ruas et al., 2015). Much dramatic LyNa-VA activation was seen in the presence of a low concentration of PI(3,5)P2 (50 nM; Figure 3C and D and Figure 3\u2014figure supplement 1C), and this synergism was nearly abolished in TPC2K204A mutant channels (Figure 3C and D). In contrast, an additive but not synergistic activation was observed between LyNA1 and PI(3,5)P2 (Figure 3\u2014figure supplement 1D and E).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/51423/elife-51423-fig3-v1.jpg)\n\n**Figure 3.:** (A) The effects of PI(3,5)P2 (0.3 \u00b5M) and LyNa-VA1.2 (100 \u00b5M) on whole-endolysosome ITPC2-K204A in TPC2K204A-transfected HEK293 cells (She et al., 2019). (B) Comparison effects of LyNa-VA1.2 and PI(3,5)P2 on WT and PI(3,5)P2-insensitive K204A (She et al., 2019) mutant TPC2 channels (also see Figure 3\u2014figure supplement 1). (C) The synergistic effects of PI(3,5)P2 (50 nM) and LyNa-VA1.1 on whole-endolysosome ITPC2 and ITPC2-K204A currents. Data are presented as Mean\u00a0\u00b1\u00a0S.E.M (n\u00a0=\u00a03 patches). (D) The summary of EC50 of LyNa-VA1.1 with or without PI(3,5)P2 for WT and K204A mutant TPC2 channels. (E, F) Co-application of PI(3,5)P2 (0.3 \u00b5M) and LyNa-VA1.1 (50 \u00b5M) activated whole-endolysome ITPC in WT (E) but not TPC1/2 DKO (F) HAP1 cells. Note that the endogenous TPCs were more difficult to activate compared to overexpressed TPCs. (G) Summary of LyNa-VA1.1 effects on whole-endolysome ITPC in WT and TPC1/2 DKO cells. For panels B, D and F, individual data and Mean\u00a0\u00b1\u00a0S.E.M are presented. *, p<0.05; **, p<0.01; ***, p<0.001; N.S., no significance. Individual data for (B\u2013D) and (G) are presented in Figure 3\u2014source data 1.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/51423/elife-51423-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) The effects of PI(3,5)P2 (0.3 \u00b5M) and LyNa-VA1.2 (100 \u00b5M) on whole-endolysosome ITPC2 in TPC2-transfected Cos1 cells. (B) Whole-cell ITPC2-K204A activated by LyNa-VA1.2 and LyNA1 in TPC2K204A-transfected HEK293 cells. (C) Synergetic effects of PI(3,5)P2 (50 nM) and LyNa-VA1.1 (30 \u00b5M) on whole-endolysosome ITPC2. (D) Additive effects of PI(3,5)P2 (50 nM) and LyNA1 (150 \u00b5M) on whole-endolysosome ITPC2. (E) Dose-dependent activation of TPC2 by LyNA1 in the presence or absence of PI(3,5)P2 (10 nM). Both individual data points and Mean\u00a0\u00b1\u00a0S.E.M are presented (n\u00a0\u2265\u00a03 patches; also see individual data in Figure 3\u2014figure supplement 1\u2014source data 1).\n\nAlthough LyNa-VAs weakly activated endogenous TPC currents, in the presence of PI(3,5)P2, more robust activation was seen (Figure 3E and G). In contrast, no measurable whole-endososome ITPC was seen in TPC1/2 DKO HAP1 cells even in the presence of both PI(3,5)P2 and LyNa-VAs (Figure 3F and G). Collectively, these results suggested that LyNa-VAs activated or modulated TPC2 via a unique, PI(3,5)P2-independent but voltage-dependent mechanism.\n\n### Voltage-dependent activation of TPC1 by TCAs\n\nIn contrast to TPC2, which produces little or no current at any potential under basal conditions, yet a large, voltage-independent conductance increases in the presence of PI(3,5)P2, TPC1 shows substantial voltage-dependent currents in the absence of any exogenous agonist (Cang et al., 2014; Guo et al., 2016). It was therefore of interest to explore whether TCAs/LyNa-VAs could also act on TPC1. To investigate this, we used two different voltage paradigms. First, when membrane voltage was stepped to various test potentials after a prolonged pre-pulse to +80 mV and the currents were compared to the basal currents, LyNa-VA1.1 produced a profound suppression of outward currents at potentials positive to Erev (~0 mV), and a substantial enhancement of inward currents negative to Erev (Figure 4A and B). Hence, upon LyNa-VA1 activation, the I-V of TPC1 completely reversed from strong outward rectification to strong inward rectification (Figure 4B and C). Intriguingly, unlike LyNa-VA1.1 and LyNa-VA1.2, which activated inward ITPC2 with EC50s within micromolar ranges, both LyNa-VA2.1 and LyNA1 inhibited ITPC1 (Figure 4D and Figure 4\u2014figure supplement 1C). Second, we used a tail current paradigm to measure the amplitude of the peak inward current at \u2212120 mV following prolonged steps to various potentials (Figure 4E). The effect of LyNa-VA1.1 was to shift the midpoint of activation voltage (V1/2) by \u221265 mV as compared to the basal condition, and to slow down the deactivation time course (Figure 4E\u2013F).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/51423/elife-51423-fig4-v1.jpg)\n\n**Figure 4.:** (A) Whole-endolysosome TPC1 current (ITPC1) was activated by LyNa-VA1.1 (right) and elicited by a voltage step protocol (left), in which a preconditioning voltage (80 mV, 0.3 s) was applied before voltage steps starting from \u2212140 to 100 mV (0.8 s, \u2206V\u00a0=\u00a020 mV). HP\u00a0=\u00a00 mV. Unless otherwise indicated, symmetric 150 mM Na+ solutions were used for all whole-endolysosome recordings, and LyNa-VA1.1 (100 \u00b5M) was bath-applied. (B) I-V plots of basal- and LyNa-VA1.1-induced ITPC1, which were recorded from the same vacuole. Dotted lines in A indicate where the currents were measured. (C) Summary of rectification index of basal and LyNa-VA1.1-induced ITPC1. Individual data and Mean\u00a0\u00b1\u00a0S.E.M are presented. ***, p<0.001. (D) Does-dependent activation or inhibition of TPC1 by LyNa-VA1.1, LyNa-VA1.2, and LyNa-VA2.1. Data are presented as Mean\u00a0\u00b1\u00a0S.E.M (n\u00a0=\u00a03 patches). (E) The effects of LyNa-VA1.1 on ITPC1 tail currents at \u2212120 mV. The voltage protocol that elicited ITPC1 tail currents was shown in Figure 4\u2014figure supplement 1A. (F) The effects of LyNa-VA1.1 on the G-V curves of ITPC1 (n\u00a0=\u00a04\u20135 patches). (G) Normalized I-V plots of basal voltage-dependent currents in WT TPC1- and TPC1R540I-transfected cells. (H) The basal and LyNa-VA1.1-activated ITPC1-R540I step currents, which were recorded from the same vacuole. Individual data for (C), (D) and (F) are also presented in Figure 4\u2014source data 1.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/51423/elife-51423-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) A voltage protocol that elicited ITPC1 tail currents as shown in Figure 4E (from \u2212140 to 100 mV with a \u2206V\u00a0=\u00a020 mV, 1 s with a 10 s inter-step interval). Arrows indicate where tail currents were measured. (B) A voltage protocol that elicited ITPC1 tail currents as shown in C.\u00a0A preconditioning voltage (+80 mV, 0.2 s) was applied before voltage steps starting from \u2212140 to 100 mV (1.3 s, \u2206V\u00a0=\u00a020 mV). HP\u00a0=\u00a00 mV. (C) In comparison to the basal ITPC1 (right), LyNA1 (150 \u00b5M) inhibited (left) ITPC1.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/51423/elife-51423-fig4-figsupp2-v1.jpg)\n\n**Figure 4\u2014figure supplement 2.:** (A) Basal whole-endolysosome ITPC1 (left) or ITPC1-R540I (right) was elicited by voltage steps (\u2212140 to +100 mV with \u0394V\u00a0=\u00a020 mV) in the absence of PI(3,5)P2 in TPC1-transfected Cos1 cells (She et al., 2019). Tail currents were elicited at \u2212120 mV. (B) The effects of PI(3,5)P2 (0.3 \u00b5M) on ITPC1 (left) and ITPC1-R540I (right) step currents. (C) I-V plots of steady-state ITPC1 and ITPC1-R540I step currents shown in B. (D) LyNa-VA1.2-induced whole-endolysosome ITPC2-I551R was evoked by a voltage ramp from \u2212120 to +120 mV (duration\u00a0=\u00a0200 ms). (E) The basal (right), LyNa-VA1.2 (200 \u00b5M)- (middle) and PI(3,5)P2 (0.3 \u00b5M)- (left) activated lysosomal ITPC1-I551R were recorded from the same vacuole. A preconditioning voltage (+80 mV, 0.1 s) was applied before voltage steps starting from \u2212140 to 100 mV (0.5 s, \u2206V\u00a0=\u00a020 mV). HP\u00a0=\u00a00 mV.\n\nThe S4 segments of TPC1 and TPC2 contain several positively-charged AA residues, which were believed to serve as voltage sensors in mediating TPC1- but not TPC2-specific activation (She et al., 2018). It was recently reported that the R540I mutation, which removes a positive charge in the second putative voltage-sensing \u2018S4-type\u2019 helix, abolished TPC1 activation by membrane depolarization (She et al., 2018). However, in our hands, depolarization still robustly activated voltage-dependent currents in the whole-endolysosomes of hTPC1R540I -expressing cells (Figure 4G and H). When LyNa-VA1.1 was tested on endolysosomes overexpressing TPC1R540I, there was also a dramatic enhancement of inward currents at negative potentials indicative of a substantial negative shift in the V1/2 of voltage activation (Figure 4H). Finally, when exposed to PI(3,5)P2, ITPC1 showed a large enhancement at negative potentials indicative of a negative shift in the V1/2 of activation, while TPC1R540I -positive endolysosomes showed large currents at all potentials (Figure 4\u2014figure supplement 2A, B and C). The charge-introducing mutation at Ile551 of TPC2 (She et al., 2019), the equivalent site of TPC1R540, conferred a voltage-dependence to the mutant channel but failed to affect LyNa-VA1.2 activation (Figure 4\u2014figure supplement 2D and E). Put together, these results suggested that whereas the S4 voltage-sensing domains may play a modulatory role, there exist intrinsic or extrinsic voltage-sensing mechanisms elsewhere responsible for the voltage-dependent gating of TPCs.\n\n### Cationic ion selectivity of TPC2 is not altered by LyNa-VAs and LyNA1\n\nThe selectivity filter region in an ion channel is responsible for the selective permeability to one or more ions (Yu and Catterall, 2004). However, it was recently reported that AA residues below the selectivity filter may mediate activation gating of multiple K+ channels by small-molecule agonists (Schewe et al., 2019). In addition, some voltage sensitivity can be conferred when the permeable ions move through the selectivity filter (Schewe et al., 2016). We therefore tested whether TCAs/LyNa-VAs bind to the selectivity filer. Like PI(3,5)P2-activated ITPC2 (Figure 5A\u2013C and K), LyNa-VA1.2- and LyNA1-induced whole-endolysosome ITPC2 was highly selective for Na+ over K+, as substitution of bath/cytoplasmic Na+ with K+ significantly shifted Erev to more positive values (Figures 1H, 5D\u2013F and K and Figure 2\u2014figure supplement 1B). Meanwhile, LyNa-VA1.2- and LyNA1-activated ITPC2 still exhibited low Ca2+ permeability (Figure 5G and K and Figure 5\u2014figure supplement 1A), and the PCa/PNa values were similar to those for PI(3,5)P2-activated ITPC2 (Wang et al., 2012) (Figure 5K and Figure 5\u2014figure supplement 1B). Finally, the N653G mutation, which is known to significantly increase the relative K+ permeability of the TPC2 channel (Guo et al., 2017), did not alter the ability of LyNa-VA1.2 to enhance channel activation, but did result in currents elicited by LyNa-VA1.2 that had a much increased relative permeability to K+ (Figure 5I\u2013K). Taken together, these results indicate that the selectivity filter region does not mediate the action of TCAs.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/51423/elife-51423-fig5-v1.jpg)\n\n**Figure 5.:** (A) Representative PI(3,5)P2-evoked whole-endolysosome ITPC2 elicited by a voltage ramp from \u2212120 to 120 mV. The recordings were performed under a bi-ionic condition with 150 (in mM) Na+ in the pipette solution and 150 Na+ or 150 K+ in the bath solution. PI(3,5)P2 (0.3 \u00b5M) was bath-applied. (B, C) Representative PI(3,5)P2- evoked ITPC2 elicited with voltage steps (\u2212140 mV to 100 mV with a \u2206V\u00a0=\u00a020 mV, 0.5 s) with 150 mM Na+ (B) or K+(C) in the bath solution. (D, E) Representative LyNa-VA1.2-activated ITPC2 step currents. (F) Representative I-V plots of LyNa-VA1.2- activated ITPC2 measured from the instantaneous currents in (D) and (E). Note the reversal potentials (Erev) of LyNa-VA1.2- activated ITPC2 in the presence of Na+ or K+ bath solution. (G) LyNa-VA1.2- activated ITPC2 under the bi-ionic conditions of bath/cytosolic Na+ and pipette/luminal Ca2+. 150 Na+ solution contained (in mM) 145 NaCl, 5 NaOH, 20 HEPES, (pH 7.2); isotonic (105 mM) Ca2+ solution contained (in mM) 100 CaCl2, 5 Ca(OH)2, 20 HEPES (pH 7.2). Right panel zoom-in micrograph shows the Erev of LyNa-VA1.2- activated ITPC2. (H\u2013J) Representative I-V plots of LyNa-VA1.2- evoked ITPC2-N653G (J) measured from Na+ (H) and K+ (I) bath solution. (K) Summary of Na+ vs. K+ /Ca2+ selectivity of WT TPC2 and TPC2N653G channels. Individual data and Mean\u00a0\u00b1\u00a0S.E.M are presented (also see Figure 5\u2014source data 1). N.S., no significance.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/51423/elife-51423-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) LyNA1 (300 \u00b5M)- activated whole-cell ITPC2-LL/AA under the bi-ionic conditions (in mM), that\u00a0is\u00a0pipette/cytosolic 150 Na+ and bath/extracellular 150 Na+, 150 K+ or 105 Ca2+. Right panel: zoom-in micrograph shows the Erev changes of ITPC2 with different bath solutions. (B) Summary of cationic selectivity values for LyNA1-induced ITPC2. Both individual data points and Mean\u00a0\u00b1\u00a0S.E.M are presented (see individual data in Figure 5\u2014figure supplement 1\u2014source data 1).\n\n## Discussion\n\nIn this study, we report that the voltage dependence, generally thought to be an intrinsic property of an ion channel (Catterall, 2010; Yu and Catterall, 2004), can be conferred or unmasked by extrinsic agonists in lysosomal TPC channels. What is the origin of agonist-conferred voltage-dependence in the otherwise voltage-independent TPC2 channel? It is possible that the S4 voltage sensors, which are operational in TPC1, might be \u2018exposed\u2019 upon agonist binding. Alternatively, another unidentified \u2018hidden\u2019 intrinsic voltage sensor might be revealed upon agonist binding, a possibility that was supported by the negative results in our targeted mutational analyses of the S4 regions. Additionally, it is recently reported that permeant ions may contribute to the channel\u2019s voltage-dependence (Schewe et al., 2019). Hence, it is an attractive hypothesis that a gate at the selectivity filter is the molecular target of TCAs to mediate the observed voltage-dependence. However, it remains unknown whether such a \u2018selectivity filter gate\u2019, extensively studied in several other ion channels including CNG channels (Contreras et al., 2008), does exist in TPC channels. Nevertheless, although mutational analyses in the selectivity filter or the \u2018S6 gate\u2019 (data not shown) do not seem to affect LyNa-VA activation, given the limitations of targeted mutations, future high-resolution structural studies may be necessary to reveal the TCA-binding sites in the TPC channels, explaining the conferred voltage dependence by TCAs. In addition, the differential effects of LyNa-VAs on TPC1 and TPC2 may also help design future structural-functional studies to reveal the action site of TCAs on TPCs.\n\nDiverse functions have been associated with TPC channels, largely based on genetic manipulations (e.g. KO, knockdown, overexpression) (Grimm et al., 2017; Xu and Ren, 2015). However, the roles of TPCs in some of the proposed functions might be indirect based on the following reasons. First, lysosomal membrane trafficking, for\u00a0example fusion and fission, has been difficult to study as these functions are interconnected. For instance, a block in membrane fusion may often indirectly affect membrane fission, and vice\u00a0versa (Xu and Ren, 2015). In addition, defects in lysosomal membrane trafficking may also affect lysosomal degradation, and degradation products may in turn regulate membrane trafficking (Xu and Ren, 2015). Second, compensatory changes occur commonly in the genetically-manipulated cells, for\u00a0example KO or lysosome storage disease (LSD) cells. Hence, it is necessary to develop methods to acutely activate and inhibit lysosomal channels, so that immediate cellular actions of TPC activation can be revealed. Notably, precisely defining TPC\u2019s roles in lysosomal \u0394\u03c8 regulation may require real-time monitoring of lysosomal \u0394\u03c8 while acutely activating or inhibiting lysosomal K+ and Na+ channels (Li et al., 2019). The identification of membrane-permeable small-molecule TPC agonists has made it feasible for such studies.\n\nTCAs are known to regulate autophagy and lysosome function, but underlying mechanisms are not clear (Tsvetkov et al., 2010). For example, in a neuronal model of Huntington disease (HD), TCAs were shown to be neuroprotective by inducing the clearance of misfolded protein aggregates (Tsvetkov et al., 2010). Given the proposed roles of TPCs in autophagy and lysosomal membrane trafficking (Grimm et al., 2017; Li et al., 2019), it is likely some of the effects associated with TCAs are mediated by TPCs. The concentrations of TCAs that activate autophagy are lower than those activating TPC channels in the current study (Beckmann et al., 2014; Cheng and Bahar, 2019). However, TCAs, as lysosomotropic compounds, are known to accumulate at high concentrations in the lysosomes (Beckmann et al., 2014). In addition, the synergistic effects of TCAs with endogenous ligand, for\u00a0example PI(3,5)P2, suggest that the exposure level of TCAs in the brain might be sufficient to cause robust pharmacological actions, much more potently than the efficacies defined in our channel assays. Future cell biological studies utilizing TCAs with TPC KO as negative controls may confirm whether TCAs modulate autophagy and lysosome function through activation of TPCs.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Cell line (Homo sapiens)</td>\n      <td>HEK293</td>\n      <td>ATCC</td>\n      <td>RRID:CVCL_0045</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cell line (Homo sapiens)</td>\n      <td>HAP1</td>\n      <td>Horizon Discovery</td>\n      <td>Cat. #: C631</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cell line (Chlorocebus aethiops)</td>\n      <td>Cos1</td>\n      <td>ATCC</td>\n      <td>RRID:CVCL_0223</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pEGFP-C2-TPC2 (plasmid)</td>\n      <td>Wang et al., 2012</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pEGFP-C2-TPC1 (plasmid)</td>\n      <td>Wang et al., 2012</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>TPC1-sgRNA</td>\n      <td>This paper</td>\n      <td>sgRNA</td>\n      <td>CTTGCAGTACTTCAGCACCC</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>TPC2-sgRNA</td>\n      <td>This paper</td>\n      <td>sgRNA</td>\n      <td>CCCCAGCGTCGGGCTGCTGC</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>TPC1-fw</td>\n      <td>This paper</td>\n      <td>PCR primers</td>\n      <td>ATGGCCCAGACATGTGACTC</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>TPC1-re</td>\n      <td>This paper</td>\n      <td>PCR primers</td>\n      <td>TGCCTGTCTCCATCCTCTCA</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>TPC2-fw</td>\n      <td>This paper</td>\n      <td>PCR primers</td>\n      <td>TGAGCTGAGCATGAGGCAAG</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>TPC2-re</td>\n      <td>This paper</td>\n      <td>PCR primers</td>\n      <td>AAAGGACAAGTGGCCCTGAG</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Desipramin hydrochloride</td>\n      <td>Sigma</td>\n      <td>Cat. #: D3900</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Carbamazepine</td>\n      <td>Sigma</td>\n      <td>Cat. #: C4024</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>monensin</td>\n      <td>Sigma</td>\n      <td>Cat. #: M5273</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>ionomycin</td>\n      <td>Sigma</td>\n      <td>Cat. #: I0634</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Clomipramine</td>\n      <td>Cayman Chemical</td>\n      <td>Cat. #: 15884</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Imipramine</td>\n      <td>Cayman Chemical</td>\n      <td>Cat. #: 15890</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Amitriptyline</td>\n      <td>Cayman Chemical</td>\n      <td>Cat. #: 15881</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Nortriptyline</td>\n      <td>Cayman Chemical</td>\n      <td>Cat. #: 15904</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Phenothiazine</td>\n      <td>NCATS</td>\n      <td>CAS: 92-84-2</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Triflupromazine</td>\n      <td>NCATS</td>\n      <td>CAS: 146-54-3</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Chlorpromazine</td>\n      <td>Cayman Chemical</td>\n      <td>Cat. #: 16129</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>ML-SA1</td>\n      <td>Princeton BioMolecular Research Inc</td>\n      <td>Cat. #: OSSK_389119</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>PI(3,5)P2</td>\n      <td>Echelon Biosciences</td>\n      <td>Cat. #: P-3508</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>vacuolin-1</td>\n      <td>Calbiochem</td>\n      <td>Cat. #: 673000</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>pClamp</td>\n      <td>pClamp</td>\n      <td>RRID:SCR_011323</td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### Molecular biology\n\nAll TPC1 and TPC2 mutants were generated with a site-directed mutagenesis kit (Qiagen) using EGFP- human TPC1 and TPC2 as the templates. All constructs were confirmed by DNA sequencing.\n\n### Mammalian cell lines\n\nCos1 (ATCC, CRL-1650, passage number 8\u201315) and HEK293 (ATCC, CRL-1573, passage number 8\u201315) cells were cultured in DMEM with 10% fetal bovine serum (FBS). HAP1 (Horizon Discovery, human HAP1 parental cell line, passage number 5\u201315) cells were maintained in IMDM with 10% FBS. Immortalized cell lines (Cos1, HEK293 and HAP1) were cultured following standard tissue culture protocols, and were tested negative for mycoplasma contamination using MycoAlert Mycoplasma Detection Kit Assay (Lonza). HEK293 cells are on the list of frequently misidentified or cross-contaminated cell lines, but were only used for the overexpression experiments. Cells were transfected with Lipofectamine 2000 (Invitrogen). After culture media were refreshed 18\u201324 hr post-transfection, cells were used for the electrophysiological assays 24\u201336 hr post-transfection.\n\n### TPC1/TPC2 DKO HAP1 cells\n\nTPC1 and TPC2 CRISPR KO cells were generated in HAP1 cells using the CRISPR/Cas9 system. The TPC1 sequence (5'cttgcagtacttcagcaccc3', TPC1-sgRNA) and TPC2 sequence (5'ccccagcgtcgggctgctgc3', TPC2-sgRNA) were targeted with pSpCas9 (BB)\u22122A-puro vector (Addgene). HAP1 cells were co-transfected with TPC1 and TPC2-sgRNA expressing vector in the presence of Lipofectamine 2000 (In\u00a0vitrogen) and selected with 2 \u03bcg/ml puromycin for 48 hr. The remaining cells were trypsinized and seeded into 96-well plate after a limiting dilution. When single cell clones were established, their genomic DNAs were extracted and amplified with following primers: TPC1-fw: 5\u2019atggcccagacatgtgactc3\u2019, TPC1-re: 5\u2019 tgcctgtctccatcctctca3\u2019; TPC2-fw: 5\u2019tgagctgagcatgaggcaag3\u2019, TPC2-re: 5\u2019 aaaggacaagtggccctgag3\u2019. The PCR amplicons were then sequenced to confirm the intended genetic disruption. The TPC1/TPC2 DKO cells harboring an insert of one nucleotide (A) in the TPC1 sequence and a deletion of ten nucleotides in the TPC2 sequence, respectively, were used in the present study.\n\n### LOPAC high-throughput screening\n\nCa2+ imaging-based HTS using the Library of Pharmacologically Active Compounds (LOPAC)1280 collection (Sigma) was conducted as described previously (Liu et al., 2010). Briefly, HEK293 cells stably expressing TPC2 and TRPML1 were loaded with a Ca2+ detection dye (Fluo-4). The kinetic of Ca2+ flux was measured using a kinetic plate reader FDSS-7000 (Liu et al., 2010). The FDSS-7000 had an on-board 1536 pintool that was used to transfer 23 nl of a compound to the assay plate (Liu et al., 2010). All of the compounds were dissolved in 100% DMSO. Hence, transferring 23 nl of a compound to a well containing 5 \u03bcl of the culture medium would result in a final concentration of DMSO of\u00a0~0.5%. The final concentrations of the LOPAC compounds in each were 0.003, 0.015, 0.074, 0.37, 1.84, 9.2, and 46 \u03bcM, respectively. Compounds that were positive in the TPC2 assay, but not in the TRPML1 assay, were considered to be positive hits for potential TPC2 agonists.\n\n### Whole-cell electrophysiology\n\nWhole-cell recordings were performed using pipette electrodes with resistance of 3\u20135 M\u03a9. Unless otherwise stated, both pipette and bath solutions contained (in mM): 145 NaOH, 5 NaCl, 20 HEPES, pH 7.2 (adjusted with methanesulfonic acid). All bath solutions were applied via a perfusion system that allowed complete solution exchange within a few seconds. Data were collected using an Axopatch 200A patch clamp amplifier, Digidata 1440, and pClamp 10.2 software (Axon Instruments). Whole-cell currents were digitized at 10 kHz and filtered at 2 kHz. All experiments were conducted at room temperature (21\u201323\u00b0C), and all recordings were analyzed with pClamp 10.2, and Origin 8.0 (OriginLab, Northampton, MA).\n\n### Whole-endolysosome electrophysiology\n\nEndolysosomal electrophysiology was performed in isolated enlarged endolysosomes using a modified patch-clamp method (Dong et al., 2010). Cells were treated with 1 \u03bcM vacuolin-1, a lipid-soluble polycyclic triazine that can selectively increase the size of endosomes and lysosomes (Huynh and Andrews, 2005), for at least 1 hr and up to 12 hr. Whole-endolysosome recordings were performed on manually isolated enlarged endolysosomes (Wang et al., 2012). In brief, a patch pipette was pressed against a cell and quickly pulled away to slice the cell membrane. Enlarged endolysosomes were released into a dish and identified by monitoring EGFP-TPC1/2 or the mCherry-TPC1/2 fluorescence. After formation of a gigaseal between the patch pipette and the enlarged endolysosome, capacitance transients were compensated. Voltage steps of several hundred mVs with millisecond duration were then applied to break into the vacuolar membrane. The whole-endolysosome configuration was verified by the re-appearance of capacitance transients after break-in.\n\nUnless otherwise stated, both bath (internal/cytoplasmic) and pipette solutions contained (in mM): 145 NaOH, 5 NaCl, 20 HEPES, pH 7.2 (adjusted with methanesulfonic acid). 150 K+ solution contained (in mM): 145 KOH, 5 KCl, 20 HEPES, pH 7.2 (adjusted with methanesulfonic acid). Data were collected using an Axopatch 200A patch clamp amplifier, Digidata 1440, and pClamp 10.2 software (Axon Instruments). Whole-endolysosome currents were digitized at 10 kHz and filtered at 2 kHz. All experiments were conducted at room temperature (21\u201323\u00b0C), and all recordings were analyzed with pClamp 10.2, and Origin 8.0 (OriginLab, Northampton, MA). The permeability to cations (relative to PNa) was estimated based on following equations (Lewis, 1979) and Erev measurement under bi-ionic conditions:\n\n$$\nP_{X}/P_{Na}=\\gamma_{Na}/\\gamma_{X}{[Na^{+}]_{Luminal}/[X^{+}]_{Cytoplasmic}}{exp(R_{rev}F/RT)}\n$$\n\n\n\n$$\nP_{Ca}/P_{Na}=\\gamma_{Na}/\\gamma_{Ca}{[Na^{+}]_{Cytoplasmic}/[4[Ca^{2+}]_{Luminal}}{exp(E_{rev}F/RT)}{1+exp(E_{rev}F/RT)}\n$$\n\nwhere R, T, F, Erev, and \u03b3 are, respectively, the gas constant, absolute temperature, Faraday constant, reversal potential, and activity coefficient. The liquid junction potentials were measured and corrected as described (Neher, 1992).\n\n### Data analysis\n\nData are presented as the mean\u00a0\u00b1\u00a0standard error of the mean (S.E.M). Statistical comparisons were made using analysis of variance (ANOVA). A p value\u00a0<\u00a00.05 was considered statistically significant.\n",
+      "created_at": "2025-12-02T13:57:17.026776Z"
+    },
+    {
+      "id": "3092e374-11b7-456a-b4f8-81e2b4d465e1",
+      "submission_id": "8ffb4efe-d808-418f-ae5b-fe8d31f1e1e4",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Leon D Islas, Universidad Nacional Aut\u00f3noma de M\u00e9xico Mexico\n\nReviewers:\n- Leon D Islas, Universidad Nacional Aut\u00f3noma de M\u00e9xico Mexico\n- Shmuel Muallem\n- Tinatin Brelidze, Georgetown University Medical Center United States\n\n## Review text\n\nDOI: [10.7554/eLife.51423.sa1](https://doi.org/10.7554/eLife.51423.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nThe function of lysosomes is more and more being linked to several important normal and pathological physiological states. Several of these functions are linked to ion transport mechanisms mediated by ion channels that are not completely understood. In this manuscript, the authors have identified small-molecule agonist for the lysosomal two-pore channels, TPC1 and TPC2. Strikingly these agonist are tricyclic compounds that have traditionally been used as antidepressants. This is a clear example of re-purposing of clinically-relevant compounds and it also open the window to understanding secondary effects of these drugs that cannot be explained by their classically described actions. Lysosomal ion channels are notoriously difficult to study, given their location and poorly characterized biophysical properties. The findings in this manuscript also suggest that these compounds could help identify drug-specific modes of activation in two-pore channels. Given the growing recognition of the importance of lysosomes in several diseases, this findings are of general interest to clinicians and basic scientist alike. The compounds identified and initially characterized here should make the task of understanding the physiology of TPC1 and TPC2 channels a little easier.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Agonist-specific voltage-dependent gating of lysosomal two-pore Na+ channels\" for consideration by eLife. Your article has been reviewed by three peer reviewers, including Leon D Islas as the Reviewing Editor and Reviewer #1, and the evaluation has been overseen by Richard Aldrich as the Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Shmuel Muallem (Reviewer #2); Tinatin Brelidze (Reviewer #3).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThe paper by the Xu group describes the novel finding that tricyclic anti-depressants, a major class of clinically relevant drugs, also behave as activators of the two-pore, Na-selective lysosomal ion channels TPC1 and TPC2. The authors show that these drugs induce voltage-dependent and voltage-independent modes of activation of these channels. These findings are relevant because they provide a possible new framework for the development of new TPC-selective activators (and possibly, inhibitors) with increased potency. These drugs offer the possibility of having an increased toolset for the study of these class of channels and open the door for understanding side effects and off-target effects of tricyclic anti-depressants. The reviewers are very enthusiastic about the manuscript and offer the following comments that the authors should attend.\n\nMajor comments:\n\n1) While the authors showed that the effect is specific to TPC channels the effect may not be direct and might be mediated by a signaling cascade. This could be determined by recording currents from excised patches in the absence and presence of the agonists. In addition, the comparison of the time-course of activation for inside-out and whole cell or outside-out patches may suggest if the agonist binding site is extracellular or intracellular.\n\n2) For pharmacological comparisons it would be useful to determine the EC50 for TPC1 and at least a few of the identified agonists.\n\n3) Figure 3C could be strengthened by including dose-response data for K204 mutant. It is conceivable that the agonists might activate or expose additional PIP2 sites, distinct from the one destabilized by the K204A mutation. The dose-response experiments might reveal this possibility.\n\n4) The effect of Riluzole is also very interesting and could be considered in more depth. The authors have not described the effect of Riluzole on TPC1 channels. Is it still voltage-independent? It is important to know if the mechanism of this agonist action is similar in the two channels, as it might help in identifying the molecular determinants of the effect. It also would be of interest to investigate the effect of Riluzole on TPC2 and R540I TPC1 mutant channels in the presence of PIP2. Both agonists show linear activation with voltage and therefore there is a possibility that they might be competitive.\n\n5) Since the hTPC2 currents activated by TCAs are so different (Figure 2C), the possibility exists that channels other than TPC2 mediate these currents. The authors should endeavor to show that an hTPC2-specific blocker also blocks TCA-activated currents.\n\n6) In the subsection \u201cCationic ion selectivity of TPC2 is not altered by LyNa-Vas\u201d, the authors make the argument that to probe if TCAs bind to the selectivity filter, they investigate possible changes in ion selectivity. They find that there are no changes in selectivity in the presence of TCAs and therefore these drugs do not bind at the selectivity filter. This argument is flawed; there is no reason to think that a drug binding in or near the selectivity filter necessarily alters the selectivity to ions.\n\n7) Further, the authors mention a \"selectivity gate\" do they mean \"gate at the selectivity filter\"? If so, there is no evidence that TPC channel's gating occurs at the selectivity filter, like in CNG cation channels. It is sometimes wrongly assumed that all ions have gating at a bundle crossing (S6 gate) and at the selectivity filter.\n\n8) The last paragraph of the Discussion presents some discussion of the possible consequences of this newly described interaction between TCAs and lysosomal cation channels, however, there is no discussion of the possible mechanism of voltage-dependent gating induced in TPC channels and this is a major point of the manuscript.\n\n9) In Figure 1E, it is surprising that the magnitude of the currents is so similar between cells to have the size of errors presented. Surely there should be a large variability in the levels of expression. Please present all comparisons between currents as normalized current density (current/capacitance).\n",
+      "created_at": "2025-12-02T13:57:17.026776Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T13:57:17.026776Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T13:57:17.026776Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "b886797b-e27e-4388-8d70-5d63fb424baf",
+      "content_id": "8155b8bf-3abd-4c70-a6c5-8e969e994c31",
+      "claim_id": "C1",
+      "claim": "Mammalian two-pore-channels (TPC1, 2; TPCN1, TPCN2) are ubiquitously-expressed, PI(3,5)P2-activated, Na+-selective channels in the endosomes and lysosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Mammalian two-pore-channels (TPC1, 2; TPCN1, TPCN2) are ubiquitously- expressed, PI(3,5)P2-activated, Na+-selective channels in the endosomes and lysosomes that regulate luminal pH homeostasis, membrane trafficking, and Ebola viral infection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a well-established characterization of TPC channels supported by prior research and citations throughout the manuscript.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:57:17.026776Z"
+    },
+    {
+      "id": "ae688f0f-7fef-489a-8a97-11008ed4914e",
+      "content_id": "8155b8bf-3abd-4c70-a6c5-8e969e994c31",
+      "claim_id": "C2",
+      "claim": "TPC channels regulate luminal pH homeostasis, membrane trafficking, and Ebola viral infection.",
+      "claim_type": "EXPLICIT",
+      "source": "Mammalian two-pore-channels (TPC1, 2; TPCN1, TPCN2) are ubiquitously- expressed, PI(3,5)P2-activated, Na+-selective channels in the endosomes and lysosomes that regulate luminal pH homeostasis, membrane trafficking, and Ebola viral infection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "These functional roles are stated as established knowledge about TPC channels.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:57:17.026776Z"
+    },
+    {
+      "id": "59592336-dfc2-4273-9ea8-58f224078cf4",
+      "content_id": "8155b8bf-3abd-4c70-a6c5-8e969e994c31",
+      "claim_id": "C3",
+      "claim": "The channel activity of TPC1 is strongly dependent on membrane voltage.",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas the channel activity of TPC1 is strongly dependent on membrane voltage, TPC2 lacks such voltage dependence despite the presence of the presumed 'S4 voltage-sensing' domains.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an established characteristic of TPC1 and is supported by experimental data shown in Figure 4.",
+      "evidence_type": "[\"KNOWLEDGE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:57:17.026776Z"
+    },
+    {
+      "id": "3cf3fd4e-2f56-4dd7-8fa5-5d7635294a2f",
+      "content_id": "8155b8bf-3abd-4c70-a6c5-8e969e994c31",
+      "claim_id": "C4",
+      "claim": "TPC2 lacks voltage dependence despite the presence of the presumed 'S4 voltage-sensing' domains.",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas the channel activity of TPC1 is strongly dependent on membrane voltage, TPC2 lacks such voltage dependence despite the presence of the presumed 'S4 voltage-sensing' domains.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an established characteristic of TPC2 and is supported by experimental data shown in Figure 2.",
+      "evidence_type": "[\"KNOWLEDGE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:57:17.026776Z"
+    },
+    {
+      "id": "93cdbc09-73eb-4f7a-8781-29f3d512b744",
+      "content_id": "8155b8bf-3abd-4c70-a6c5-8e969e994c31",
+      "claim_id": "C5",
+      "claim": "Tricyclic anti-depressants (TCAs) are small-molecule agonists of TPC channels.",
+      "claim_type": "EXPLICIT",
+      "source": "By performing high-throughput screening followed by lysosomal electrophysiology, here we identified a class of tricyclic anti-depressants (TCAs) as small-molecule agonists of TPC channels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the primary finding of the study, supported by extensive electrophysiological data in Figures 1-3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:57:17.026776Z"
+    },
+    {
+      "id": "5f0b2b6a-aa70-4e53-a6ea-1f384e6e22af",
+      "content_id": "8155b8bf-3abd-4c70-a6c5-8e969e994c31",
+      "claim_id": "C6",
+      "claim": "TCAs activate both TPC1 and TPC2 in a voltage-dependent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "TCAs activate both TPC1 and TPC2 in a voltage-dependent manner, referred to as Lysosomal Na+ channel Voltage-dependent Activators (LyNa-VAs).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by electrophysiological recordings shown in Figures 2 and 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:57:17.026776Z"
+    },
+    {
+      "id": "86c4f13d-2efd-4f68-9114-dacabc41426f",
+      "content_id": "8155b8bf-3abd-4c70-a6c5-8e969e994c31",
+      "claim_id": "C7",
+      "claim": "TCAs are referred to as Lysosomal Na+ channel Voltage-dependent Activators (LyNa-VAs).",
+      "claim_type": "EXPLICIT",
+      "source": "TCAs activate both TPC1 and TPC2 in a voltage-dependent manner, referred to as Lysosomal Na+ channel Voltage-dependent Activators (LyNa-VAs).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the nomenclature introduced by the authors for TCAs that activate TPC channels.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:57:17.026776Z"
+    },
+    {
+      "id": "ec240768-117a-431e-85ef-ecb3d00112c2",
+      "content_id": "8155b8bf-3abd-4c70-a6c5-8e969e994c31",
+      "claim_id": "C8",
+      "claim": "Another compound (Riluzole/LyNA1) activates TPC2 independent of voltage, like PI(3,5)P2.",
+      "claim_type": "EXPLICIT",
+      "source": "We also identified another compound which, like PI(3,5)P2, activates TPC2 independent of voltage, suggesting the existence of agonist-specific gating mechanisms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by electrophysiological data in Figure 1H and Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:57:17.026776Z"
+    },
+    {
+      "id": "1036b986-8098-4be1-bb4f-bfd2192410b3",
+      "content_id": "8155b8bf-3abd-4c70-a6c5-8e969e994c31",
+      "claim_id": "C9",
+      "claim": "Agonist-specific gating mechanisms exist in TPC channels.",
+      "claim_type": "EXPLICIT",
+      "source": "We also identified another compound which, like PI(3,5)P2, activates TPC2 independent of voltage, suggesting the existence of agonist-specific gating mechanisms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the differential voltage-dependence observed with different agonists (TCAs vs. PI(3,5)P2 vs. LyNA1).",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:57:17.026776Z"
+    },
+    {
+      "id": "e5e0b16c-88cc-4f73-a96e-bd0c9842298c",
+      "content_id": "8155b8bf-3abd-4c70-a6c5-8e969e994c31",
+      "claim_id": "C10",
+      "claim": "Small-molecule TPC agonists can facilitate studies of the cell biological roles of TPCs.",
+      "claim_type": "EXPLICIT",
+      "source": "Our identification of small-molecule TPC agonists should facilitate the studies of the cell biological roles of TPCs and can also readily explain the reported effects of TCAs in the modulation of autophagy and lysosomal functions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prospective statement about the utility of the identified compounds.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:57:17.026776Z"
+    },
+    {
+      "id": "3484c038-b819-4077-bb72-d22b09f008b5",
+      "content_id": "8155b8bf-3abd-4c70-a6c5-8e969e994c31",
+      "claim_id": "C11",
+      "claim": "The identified TPC agonists can explain the reported effects of TCAs in the modulation of autophagy and lysosomal functions.",
+      "claim_type": "EXPLICIT",
+      "source": "Our identification of small-molecule TPC agonists should facilitate the studies of the cell biological roles of TPCs and can also readily explain the reported effects of TCAs in the modulation of autophagy and lysosomal functions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative connection between the findings and previously reported TCA effects.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:57:17.026776Z"
+    },
+    {
+      "id": "9cff9aab-94b7-4ebc-9e75-4004159ba27d",
+      "content_id": "8155b8bf-3abd-4c70-a6c5-8e969e994c31",
+      "claim_id": "C12",
+      "claim": "Patch-clamp studies of isolated lysosomal membranes have discovered multiple lysosomal channels that are selective for Na+, K+, Ca2+, and Cl-.",
+      "claim_type": "EXPLICIT",
+      "source": "Patch-clamp studies of isolated lysosomal membranes have recently discovered multiple lysosomal channels that are selective for Na+, K+, Ca2+, and Cl- (Cang et al., 2015; Cang et al., 2013; Cao et al., 2015; Dong et al., 2010; Li et al., 2019; Wang et al., 2012; Xiong and Zhu, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:57:17.026776Z"
+    },
+    {
+      "id": "4711ce39-fb5f-426c-a304-0e0b8daa99db",
+      "content_id": "8155b8bf-3abd-4c70-a6c5-8e969e994c31",
+      "claim_id": "C13",
+      "claim": "Small-molecule synthetic agonists of Mucolipin TRP channels (ML-SAs) have been instrumental in revealing the functions of these Ca2+ release channels in lysosomal exocytosis, mobility, and biogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, small-molecule synthetic agonists of Mucolipin TRP channels (TRPMLs), that is ML-SAs, have been instrumental in revealing the functions of these Ca2+ release channels in lysosomal exocytosis, mobility, and biogenesis (Li et al., 2016; Shen et al., 2012; Zhang et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research demonstrating the utility of ML-SAs.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:57:17.026776Z"
+    },
+    {
+      "id": "66107183-a2fd-45f4-9cec-f5e783172ffa",
+      "content_id": "8155b8bf-3abd-4c70-a6c5-8e969e994c31",
+      "claim_id": "C14",
+      "claim": "TPC proteins are ubiquitously expressed, dimeric, two-repeat (2 \u00d7 6 TM) cation channels localized exclusively in the intracellular endosomes and lysosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Two-pore channel proteins (TPC1, 2; TPCN1, TPCN2) are ubiquitously expressed, dimeric, two-repeat (2 \u00d7 6 TM) cation channels that are localized exclusively in the intracellular endosomes and lysosomes (Calcraft et al., 2009; Grimm et al., 2017; Morgan et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a structural and localization characterization supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:57:17.026776Z"
+    },
+    {
+      "id": "248b60e8-e30f-4315-900c-20383945c599",
+      "content_id": "8155b8bf-3abd-4c70-a6c5-8e969e994c31",
+      "claim_id": "C15",
+      "claim": "TPCs regulate organellar membrane excitability, membrane trafficking, and pH homeostasis at the cellular level.",
+      "claim_type": "EXPLICIT",
+      "source": "At the cellular level, TPCs regulate organellar membrane excitability, membrane trafficking, and pH homeostasis; at the organismal level, TPCs regulate various physiological and pathological processes, including hair pigmentation, Ebola viral infection, and cancer growth (Ambrosio et al., 2016; Nguyen et al., 2017; Sakurai et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:57:17.026776Z"
+    },
+    {
+      "id": "042139f0-6598-4b5b-b2fd-c648604fda79",
+      "content_id": "8155b8bf-3abd-4c70-a6c5-8e969e994c31",
+      "claim_id": "C16",
+      "claim": "TPCs regulate hair pigmentation, Ebola viral infection, and cancer growth at the organismal level.",
+      "claim_type": "EXPLICIT",
+      "source": "At the cellular level, TPCs regulate organellar membrane excitability, membrane trafficking, and pH homeostasis; at the organismal level, TPCs regulate various physiological and pathological processes, including hair pigmentation, Ebola viral infection, and cancer growth (Ambrosio et al., 2016; Nguyen et al., 2017; Sakurai et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:57:17.026776Z"
+    },
+    {
+      "id": "d0cfedc5-4c9b-4b58-b7c3-8b396fe22ec5",
+      "content_id": "8155b8bf-3abd-4c70-a6c5-8e969e994c31",
+      "claim_id": "C17",
+      "claim": "It remains controversial whether TPCs are the bona fide NAADP receptor.",
+      "claim_type": "EXPLICIT",
+      "source": "However, it remains controversial whether TPCs are the bona fide NAADP receptor (Lin-Moshier et al., 2012; Morgan et al., 2015; Walseth et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to conflicting research findings.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:57:17.026776Z"
+    },
+    {
+      "id": "df4dc92c-3cab-451b-9222-69f2c82321f1",
+      "content_id": "8155b8bf-3abd-4c70-a6c5-8e969e994c31",
+      "claim_id": "C18",
+      "claim": "Several recent endolysosomal patch-clamp studies have demonstrated that TPCs are Na+-selective channels activated by PI(3,5)P2.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, several recent endolysosomal patch-clamp studies have demonstrated that TPCs are Na+-selective channels activated by PI(3,5)P2 (Bellono et al., 2016; Cang et al., 2014; Cang et al., 2013; Guo et al., 2017; Jha et al., 2014; Kirsch et al., 2018; She et al., 2019; Wang et al., 2012), a late endosome and lysosome-specific phosphoinositide that is known to regulate many aspects of lysosome function (McCartney et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to recent patch-clamp studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:57:17.026776Z"
+    },
+    {
+      "id": "93f3deb1-753c-435c-9293-71f003a6b839",
+      "content_id": "8155b8bf-3abd-4c70-a6c5-8e969e994c31",
+      "claim_id": "C19",
+      "claim": "PI(3,5)P2 is a late endosome and lysosome-specific phosphoinositide that regulates many aspects of lysosome function.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, several recent endolysosomal patch-clamp studies have demonstrated that TPCs are Na+-selective channels activated by PI(3,5)P2 (Bellono et al., 2016; Cang et al., 2014; Cang et al., 2013; Guo et al., 2017; Jha et al., 2014; Kirsch et al., 2018; She et al., 2019; Wang et al., 2012), a late endosome and lysosome-specific phosphoinositide that is known to regulate many aspects of lysosome function (McCartney et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:57:17.026776Z"
+    },
+    {
+      "id": "b124d95f-5948-4b9d-9e32-36ec1fb7008f",
+      "content_id": "8155b8bf-3abd-4c70-a6c5-8e969e994c31",
+      "claim_id": "C20",
+      "claim": "Several amino acid residues in the selectivity filter of TPCs confer the selectivity of Na+ over K+ or Ca2+.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent high-resolution structural studies revealed that several amino acid (AA) residues in the selectivity filter of TPCs confer the selectivity of Na+ over K+ or Ca2+ (Guo et al., 2016; Guo et al., 2017), and that PI(3,5)P2 binds directly to several positively charged AA residues in the S4-S5 linker to induce channel opening (Kirsch et al., 2018; She et al., 2018; She et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to structural studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:57:17.026776Z"
+    },
+    {
+      "id": "af1dd996-0eda-4535-9c4d-53c6cba9169c",
+      "content_id": "8155b8bf-3abd-4c70-a6c5-8e969e994c31",
+      "claim_id": "C21",
+      "claim": "PI(3,5)P2 binds directly to several positively charged AA residues in the S4-S5 linker to induce channel opening.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent high-resolution structural studies revealed that several amino acid (AA) residues in the selectivity filter of TPCs confer the selectivity of Na+ over K+ or Ca2+ (Guo et al., 2016; Guo et al., 2017), and that PI(3,5)P2 binds directly to several positively charged AA residues in the S4-S5 linker to induce channel opening (Kirsch et al., 2018; She et al., 2018; She et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to structural studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:57:17.026776Z"
+    },
+    {
+      "id": "006e8fab-7861-4f35-a5fe-11f2fb21518e",
+      "content_id": "8155b8bf-3abd-4c70-a6c5-8e969e994c31",
+      "claim_id": "C22",
+      "claim": "Direct activation of TPCs by sphingosines was not confirmed in lysosomal electrophysiological assays.",
+      "claim_type": "EXPLICIT",
+      "source": "Sphingosines also reportedly induce TPC1-mediated Ca2+ release from the lysosomes (H\u00f6glinger et al., 2015), but direct activation of TPCs by sphingosines was not confirmed in the lysosomal electrophysiological assays (unpublished data in the Xu laboratory) (Li et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on unpublished data from the authors' laboratory.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:57:17.026776Z"
+    },
+    {
+      "id": "293b88cd-b638-4718-8300-fa40669bf651",
+      "content_id": "8155b8bf-3abd-4c70-a6c5-8e969e994c31",
+      "claim_id": "C23",
+      "claim": "TPCs contain multiple positively-charged AA residues in their voltage sensor domains (S4), which are believed to confer voltage-dependent activation of plant and animal TPC1 channels.",
+      "claim_type": "EXPLICIT",
+      "source": "Like canonical voltage-gated cation channels, TPCs contain multiple positively-charged AA residues in their voltage sensor domains (S4), which are believed to confer voltage-dependent activation of plant and animal TPC1 channels (Cang et al., 2014; She et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:57:17.026776Z"
+    },
+    {
+      "id": "a6c1e939-5e33-4881-a125-12649c7bc694",
+      "content_id": "8155b8bf-3abd-4c70-a6c5-8e969e994c31",
+      "claim_id": "C24",
+      "claim": "TPC2 activation is completely voltage-independent, despite the presence of multiple Arginine/Lysine residues in their S4 helices.",
+      "claim_type": "EXPLICIT",
+      "source": "In a sharp contrast, TPC2 activation is completely voltage-independent, despite the presence of multiple Arginine/Lysine residues in their S4 helices (Cang et al., 2014; Cang et al., 2013; Wang et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:57:17.026776Z"
+    },
+    {
+      "id": "c03c3c3d-0bea-412d-ac44-0c445f1b0343",
+      "content_id": "8155b8bf-3abd-4c70-a6c5-8e969e994c31",
+      "claim_id": "C25",
+      "claim": "23 compounds from the LOPAC library induced Ca2+ increases in TPC2 stable cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Among the positive hits, 23 compounds induced Ca2+ increases in TPC2 stable cells (Figure 1A and B and Figure 1\u2014figure supplement 1A), but not in cells stably expressing TRPML14A (a surface-expressing mutant TRPML1 [Shen et al., 2012]) channels (data not shown).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 1A and B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:57:17.026776Z"
+    },
+    {
+      "id": "6eff87e3-bc4f-49ab-8851-72f11597dbe5",
+      "content_id": "8155b8bf-3abd-4c70-a6c5-8e969e994c31",
+      "claim_id": "C26",
+      "claim": "The 23 compounds that induced Ca2+ increases in TPC2 stable cells did not induce Ca2+ increases in cells stably expressing TRPML14A channels.",
+      "claim_type": "EXPLICIT",
+      "source": "Among the positive hits, 23 compounds induced Ca2+ increases in TPC2 stable cells (Figure 1A and B and Figure 1\u2014figure supplement 1A), but not in cells stably expressing TRPML14A (a surface-expressing mutant TRPML1 [Shen et al., 2012]) channels (data not shown).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a negative result to demonstrate specificity.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:57:17.026776Z"
+    },
+    {
+      "id": "537b756c-dca3-49ac-b7c8-506b89cc8f55",
+      "content_id": "8155b8bf-3abd-4c70-a6c5-8e969e994c31",
+      "claim_id": "C27",
+      "claim": "5 out of the 23 compounds are well characterized as tri-cyclic anti-depressants (TCAs).",
+      "claim_type": "EXPLICIT",
+      "source": "To our surprise, 5 out of the 23 compounds are well characterized as tri-cyclic anti-depressants (TCAs), which are believed to act on neurotransmitter transporters or voltage-gated Na+ channels (Cheng and Bahar, 2019; Pancrazio et al., 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research on TCAs.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:57:17.026776Z"
+    },
+    {
+      "id": "c51c0a7c-07f0-40dc-8454-db01693bf12e",
+      "content_id": "8155b8bf-3abd-4c70-a6c5-8e969e994c31",
+      "claim_id": "C28",
+      "claim": "TCAs are believed to act on neurotransmitter transporters or voltage-gated Na+ channels.",
+      "claim_type": "EXPLICIT",
+      "source": "To our surprise, 5 out of the 23 compounds are well characterized as tri-cyclic anti-depressants (TCAs), which are believed to act on neurotransmitter transporters or voltage-gated Na+ channels (Cheng and Bahar, 2019; Pancrazio et al., 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research on TCAs.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:57:17.026776Z"
+    },
+    {
+      "id": "64b42016-2044-40e3-adf6-3fa83640576b",
+      "content_id": "8155b8bf-3abd-4c70-a6c5-8e969e994c31",
+      "claim_id": "C29",
+      "claim": "All five TCAs robustly and rapidly activated whole-cell currents in TPC2LL/AA-expressing cells.",
+      "claim_type": "EXPLICIT",
+      "source": "All five TCAs robustly and rapidly activated whole-cell currents in TPC2LL/AA-expressing cells (Wang et al., 2012), but not in non-transfected HEK293 cells (Figure 1C and D, Figure 1\u2014figure supplement 1B\u2013D, Table 1, and Table 1\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by electrophysiological data shown in Figure 1C and D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:57:17.026776Z"
+    },
+    {
+      "id": "4ce5bcc3-3dc8-45d7-a5ae-235b4dff92b9",
+      "content_id": "8155b8bf-3abd-4c70-a6c5-8e969e994c31",
+      "claim_id": "C30",
+      "claim": "TCAs did not activate whole-cell currents in non-transfected HEK293 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "All five TCAs robustly and rapidly activated whole-cell currents in TPC2LL/AA-expressing cells (Wang et al., 2012), but not in non-transfected HEK293 cells (Figure 1C and D, Figure 1\u2014figure supplement 1B\u2013D, Table 1, and Table 1\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a negative control demonstrating specificity of TCA effects to TPC2-expressing cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:57:17.026776Z"
+    },
+    {
+      "id": "a37ac14d-c139-4394-a720-193a39a6847c",
+      "content_id": "8155b8bf-3abd-4c70-a6c5-8e969e994c31",
+      "claim_id": "C31",
+      "claim": "Clomipramine activated whole-cell TPC2LL/AA-mediated strongly rectifying currents with an EC50 of 43 \u00b1 2 \u03bcM.",
+      "claim_type": "EXPLICIT",
+      "source": "Of them, Clomipramine activated whole-cell TPC2LL/AA-mediated strongly rectifying currents (ITPC2-LL/AA) with an EC50 of 43 \u00b1 2 \u03bcM (n = 4 patches) (Figure 1D and E, and Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by dose-response data shown in Figure 1E and Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:57:17.026776Z"
+    },
+    {
+      "id": "41c9ab1d-695e-4941-a523-e12332b208dd",
+      "content_id": "8155b8bf-3abd-4c70-a6c5-8e969e994c31",
+      "claim_id": "C32",
+      "claim": "Chlorpromazine had an EC50 of 60 \u00b1 2 \u03bcM for TPC2 activation.",
+      "claim_type": "EXPLICIT",
+      "source": "Another structurally different TCA, Chlorpromazine, had an EC50 of 60 \u00b1 2 \u03bcM (n = 4 patches), and was referred to as LyNa-VA2.1 (Figure 1E, Table 1, and Figure 1\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by dose-response data shown in Figure 1E and Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:57:17.026776Z"
+    },
+    {
+      "id": "32c2dd5a-9b5e-4638-8aae-d03f129c25a5",
+      "content_id": "8155b8bf-3abd-4c70-a6c5-8e969e994c31",
+      "claim_id": "C33",
+      "claim": "All TCA-induced currents exhibited strong voltage-dependence and inward rectification.",
+      "claim_type": "EXPLICIT",
+      "source": "All TCA-induced currents exhibited strong voltage-dependence and inward rectification, which resembled TRPML1-mediated currents (ITRPML1) (Shen et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by electrophysiological data shown in Figures 1 and 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:57:17.026776Z"
+    },
+    {
+      "id": "2c72223e-345a-4c99-8e5e-869bed56cdf7",
+      "content_id": "8155b8bf-3abd-4c70-a6c5-8e969e994c31",
+      "claim_id": "C34",
+      "claim": "None of the TCAs had any activation effect on ITRPML1.",
+      "claim_type": "EXPLICIT",
+      "source": "However, none of the TCAs had any activation effect on ITRPML1 (Figure 1F and G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 1F and G demonstrating specificity.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:57:17.026776Z"
+    },
+    {
+      "id": "a32e9afc-b544-48e6-a726-599d087dd035",
+      "content_id": "8155b8bf-3abd-4c70-a6c5-8e969e994c31",
+      "claim_id": "C35",
+      "claim": "Riluzole is an FDA-approved amyotrophic lateral sclerosis drug that is known to modulate voltage-gated Na+ channels.",
+      "claim_type": "EXPLICIT",
+      "source": "Riluzole, an FDA-approved amyotrophic lateral sclerosis drug that is known to modulate voltage-gated Na+ channels (Liu and Wang, 2018), activated large and linear whole-cell currents in TPC2LL/AA-expressing HEK293 cells (Figure 1H and Figure 1\u2014figure supplement 3), but not in non-transfected HEK293 cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior research on Riluzole.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:57:17.026776Z"
+    },
+    {
+      "id": "89d0a3c9-bbe5-4415-bd6c-51ce9e96a8b8",
+      "content_id": "8155b8bf-3abd-4c70-a6c5-8e969e994c31",
+      "claim_id": "C36",
+      "claim": "Riluzole activated large and linear whole-cell currents in TPC2LL/AA-expressing HEK293 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Riluzole, an FDA-approved amyotrophic lateral sclerosis drug that is known to modulate voltage-gated Na+ channels (Liu and Wang, 2018), activated large and linear whole-cell currents in TPC2LL/AA-expressing HEK293 cells (Figure 1H and Figure 1\u2014figure supplement 3), but not in non-transfected HEK293 cells.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by electrophysiological data shown in Figure 1H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:57:17.026776Z"
+    },
+    {
+      "id": "0e11fe91-14e3-46e4-91b2-d022535edad1",
+      "content_id": "8155b8bf-3abd-4c70-a6c5-8e969e994c31",
+      "claim_id": "C37",
+      "claim": "Riluzole did not activate currents in non-transfected HEK293 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Riluzole, an FDA-approved amyotrophic lateral sclerosis drug that is known to modulate voltage-gated Na+ channels (Liu and Wang, 2018), activated large and linear whole-cell currents in TPC2LL/AA-expressing HEK293 cells (Figure 1H and Figure 1\u2014figure supplement 3), but not in non-transfected HEK293 cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a negative control demonstrating specificity.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:57:17.026776Z"
+    },
+    {
+      "id": "c4312462-6028-46ea-8794-0dbdf33c38b1",
+      "content_id": "8155b8bf-3abd-4c70-a6c5-8e969e994c31",
+      "claim_id": "C38",
+      "claim": "More than one agonist-specific gating mechanism (voltage-dependent and voltage-independent) may co-exist within one channel protein.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, more than one agonist-specific gating (voltage-dependent and voltage-independent) mechanism may co-exist within one channel protein.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the differential voltage-dependence observed with different agonists.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:57:17.026776Z"
+    },
+    {
+      "id": "b0ed1c4b-6942-40fb-9fba-ba57f677f349",
+      "content_id": "8155b8bf-3abd-4c70-a6c5-8e969e994c31",
+      "claim_id": "C39",
+      "claim": "TCAs are lysosomotropic compounds that are known to be highly accumulating in the lysosomes due to proton trapping.",
+      "claim_type": "EXPLICIT",
+      "source": "TCAs, with a general structure of an aromatic greasy core and an aliphatic chain containing a terminal amine, are lysosomotropic compounds that are known to be highly accumulating in the lysosomes due to proton trapping (Beckmann et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior research on TCA properties.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:57:17.026776Z"
+    },
+    {
+      "id": "adc3de75-5fb2-47e1-a7f8-f3f4c48ad1b4",
+      "content_id": "8155b8bf-3abd-4c70-a6c5-8e969e994c31",
+      "claim_id": "C40",
+      "claim": "Both LyNa-VAs and LyNA1 readily activated ITPC2 in TPC2-positive enlarged LELs isolated from transfected Cos1 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In TPC2-positive enlarged LELs isolated from transfected Cos1 cells, little or no basal whole-endolysosome currents were seen under symmetric (pipette/luminal and bath/cytosolic) Na+ solutions (Figure 2A). Consistent with our previous studies, bath application of PI(3,5)P2, the endogenous agonist of TPCs (Wang et al., 2012), activated a large whole-endolysosome ITPC2 with linear I-V (Figure 2B and E). Both LyNa-VAs and LyNA1 readily activated ITPC2, although the I-Vs were dramatically different (Figure 2C, D and E, and Figure 2\u2014figure supplements 1 and 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by whole-endolysosome recordings shown in Figure 2C and D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:57:17.026776Z"
+    },
+    {
+      "id": "4a9f4868-1623-4a14-9d34-a138fecb054f",
+      "content_id": "8155b8bf-3abd-4c70-a6c5-8e969e994c31",
+      "claim_id": "C41",
+      "claim": "No current activation was seen for LyNa-VAs or LyNA1 in TRPML1-transfected cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, no current activation was seen for LyNa-VAs or LyNA1 in TRPML1-transfected cells (Figure 2\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a negative control demonstrating specificity shown in Figure 2\u2014figure supplement 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:57:17.026776Z"
+    },
+    {
+      "id": "a12f7d3c-d6cc-4cfd-aa55-f4b8ed41db3e",
+      "content_id": "8155b8bf-3abd-4c70-a6c5-8e969e994c31",
+      "claim_id": "C42",
+      "claim": "Both LyNa-VAs and LyNA1 activated whole-endolysosome ITPC in WT HAP1 cells, but not HAP1 cells lacking TPC1 or TPC2.",
+      "claim_type": "EXPLICIT",
+      "source": "Both LyNa-VAs and LyNA1 activated whole-endolysosome ITPC in WT HAP1 cells, but not HAP1 cells lacking TPC1 or TPC2 (TPC1\u2212/\u2212/TPC2\u2212/\u2212, TPC1/2 DKO; Figure 2\u2014figure supplement 1), suggesting that the activation effects of both TCAs and LyNA1 on TPCs are specific.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 2\u2014figure supplement 1 using knockout cells as negative controls.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:57:17.026776Z"
+    },
+    {
+      "id": "6f8a8843-9fad-4925-8473-83d6f0f28a85",
+      "content_id": "8155b8bf-3abd-4c70-a6c5-8e969e994c31",
+      "claim_id": "C43",
+      "claim": "The activation effects of both TCAs and LyNA1 on TPCs are specific.",
+      "claim_type": "EXPLICIT",
+      "source": "Both LyNa-VAs and LyNA1 activated whole-endolysosome ITPC in WT HAP1 cells, but not HAP1 cells lacking TPC1 or TPC2 (TPC1\u2212/\u2212/TPC2\u2212/\u2212, TPC1/2 DKO; Figure 2\u2014figure supplement 1), suggesting that the activation effects of both TCAs and LyNA1 on TPCs are specific.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the lack of activation in TPC1/2 DKO cells.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:57:17.026776Z"
+    },
+    {
+      "id": "1710c171-9515-43df-a59d-19645c70d026",
+      "content_id": "8155b8bf-3abd-4c70-a6c5-8e969e994c31",
+      "claim_id": "C44",
+      "claim": "LyNa-VAs and LyNA1 are likely to be membrane permeable, activating TPC2 via direct agonist binding.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, robust activation of ITPC2 in the whole-cell configuration with agonists being applied from the extracellular side (analogous to the luminal side in the lysosome), as well as in the inside-out (Figure 1\u2014figure supplement 2A) and whole-endolysosome configurations with agonists being applied from the cytosolic side, suggests that LyNa-VAs and LyNA1 are likely to be membrane permeable, activating TPC2 via direct agonist binding.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the ability of agonists to activate channels when applied from different sides of the membrane.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:57:17.026776Z"
+    },
+    {
+      "id": "c6d9e0e5-1b14-408f-bbbf-f126d4ca533d",
+      "content_id": "8155b8bf-3abd-4c70-a6c5-8e969e994c31",
+      "claim_id": "C45",
+      "claim": "The action site of LyNa-VAs is likely to be either intracellular or more accessible from the intracellular side.",
+      "claim_type": "EXPLICIT",
+      "source": "As the channel activation in the whole-cell recordings was significantly slower, that is longer latency and time course of activation, compared to the inside-out and whole-endolysosome recordings (see Figure 1\u2014figure supplement 2), the action site of LyNa-VAs is likely to be either intracellular or more accessible from the intracellular side.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the kinetic differences in activation shown in Figure 1\u2014figure supplement 2.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:57:17.026776Z"
+    },
+    {
+      "id": "7bc1a66e-7914-44e7-9f00-272340e2ed3b",
+      "content_id": "8155b8bf-3abd-4c70-a6c5-8e969e994c31",
+      "claim_id": "C46",
+      "claim": "TPC2 currents activated by TCAs were strongly voltage-dependent in both whole-cell and whole-endolysosome recordings.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, TPC2 currents activated by TCAs were strongly voltage-dependent, in both whole-cell and whole-endolysosome recordings, no matter whether the currents were elicited by a voltage ramp or a series of voltage steps (see Figure 2C and E and Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by electrophysiological data shown in Figure 2C and E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:57:17.026776Z"
+    },
+    {
+      "id": "35cb39ac-7872-43a2-b98c-0f5962e6e32f",
+      "content_id": "8155b8bf-3abd-4c70-a6c5-8e969e994c31",
+      "claim_id": "C47",
+      "claim": "TCA-activated step currents displayed prominent inactivation and strong inward rectification.",
+      "claim_type": "EXPLICIT",
+      "source": "In both whole-cell and whole-endolysosome configurations, TCA-activated step currents displayed prominent inactivation and strong inward rectification (Figure 2C, E and F and Figure 2\u2014figure supplement 2), suggesting the existence of voltage-dependent activation and/or inactivation gating processes.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by electrophysiological data shown in Figure 2C, E and F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:57:17.026776Z"
+    },
+    {
+      "id": "c018d63f-e12c-4778-9ed0-da5d029cfc01",
+      "content_id": "8155b8bf-3abd-4c70-a6c5-8e969e994c31",
+      "claim_id": "C51",
+      "claim": "LyNa-VA-activated ITPC2 exhibited substantial time-dependent inactivation at negative voltages.",
+      "claim_type": "EXPLICIT",
+      "source": "Under the voltage-step protocols, LyNa-VA-activated ITPC2 exhibited substantial time-dependent inactivation at negative voltages (Figure 2C and G and Figure 2\u2014figure supplement 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by electrophysiological data shown in Figure 2C and G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:57:17.026776Z"
+    },
+    {
+      "id": "b07f0c49-7c63-4a07-8dc4-34ba611cff8c",
+      "content_id": "8155b8bf-3abd-4c70-a6c5-8e969e994c31",
+      "claim_id": "C52",
+      "claim": "The activation by LyNa-VA1.2 was strongly dependent on voltage, with a half-maximal activation voltage (V1/2) of \u221220 mV at the concentration of 100 \u03bcM.",
+      "claim_type": "EXPLICIT",
+      "source": "When we used a tail-current protocol to study the voltage-dependent activation, the activation by LyNa-VA1.2 was strongly dependent on voltage, with a half-maximal activation voltage (V1/2) of \u221220 mV at the concentration of 100 \u03bcM (Figure 2J and K).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by tail-current analysis shown in Figure 2J and K.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:57:17.026776Z"
+    },
+    {
+      "id": "c04552ff-3cd5-44b8-b455-be46ced54af6",
+      "content_id": "8155b8bf-3abd-4c70-a6c5-8e969e994c31",
+      "claim_id": "C53",
+      "claim": "No apparent voltage-dependent activation was seen when whole-endolysosome ITPC2 was activated by PI(3,5)P2 or LyNA1.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, no apparent voltage-dependent activation was seen when whole-endolysosome ITPC2 was activated by PI(3,5)P2 (Figure 2I and K) or LyNA1.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by tail-current analysis shown in Figure 2I and K.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:57:17.026776Z"
+    },
+    {
+      "id": "2f9d853b-3d88-42be-aaf0-1913fe4f8883",
+      "content_id": "8155b8bf-3abd-4c70-a6c5-8e969e994c31",
+      "claim_id": "C54",
+      "claim": "PI(3,5)P2 reportedly binds to Lys204 and adjacent AA residues to activate TPC2.",
+      "claim_type": "EXPLICIT",
+      "source": "PI(3,5)P2 reportedly binds to Lys204 and adjacent AA residues to activate TPC2 (She et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior structural research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:57:17.026776Z"
+    },
+    {
+      "id": "83d9c281-8713-493d-aa30-6112785c9695",
+      "content_id": "8155b8bf-3abd-4c70-a6c5-8e969e994c31",
+      "claim_id": "C55",
+      "claim": "LyNa-VA and LyNA1 still robustly activated whole-endolysosome ITPC2 in cells transfected with a PI(3,5)P2-insensitive mutant TPC2 channel (K204A).",
+      "claim_type": "EXPLICIT",
+      "source": "In the cells that were transfected with a PI(3,5)P2-insensitive mutant TPC2 channel (K204A) (She et al., 2019), LyNa-VA and LyNA1 still robustly activated whole-endolysosome ITPC2 (Figure 3A and B and Figure 3\u2014figure supplement 1A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by electrophysiological data shown in Figure 3A and B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:57:17.026776Z"
+    },
+    {
+      "id": "163f3033-60a5-4717-9a9d-16c062607580",
+      "content_id": "8155b8bf-3abd-4c70-a6c5-8e969e994c31",
+      "claim_id": "C56",
+      "claim": "Much dramatic LyNa-VA activation was seen in the presence of a low concentration of PI(3,5)P2 (50 nM).",
+      "claim_type": "EXPLICIT",
+      "source": "Much dramatic LyNa-VA activation was seen in the presence of a low concentration of PI(3,5)P2 (50 nM; Figure 3C and D and Figure 3\u2014figure supplement 1C), and this synergism was nearly abolished in TPC2K204A mutant channels (Figure 3C and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 3C and D demonstrating synergistic effects.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:57:17.026776Z"
+    },
+    {
+      "id": "fad40c21-5c12-49a8-a04c-0594fa3d42f0",
+      "content_id": "8155b8bf-3abd-4c70-a6c5-8e969e994c31",
+      "claim_id": "C57",
+      "claim": "The synergism between LyNa-VA and PI(3,5)P2 was nearly abolished in TPC2K204A mutant channels.",
+      "claim_type": "EXPLICIT",
+      "source": "Much dramatic LyNa-VA activation was seen in the presence of a low concentration of PI(3,5)P2 (50 nM; Figure 3C and D and Figure 3\u2014figure supplement 1C), and this synergism was nearly abolished in TPC2K204A mutant channels (Figure 3C and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 3C and D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:57:17.026776Z"
+    },
+    {
+      "id": "c5d828d9-f8ec-4622-8d8a-afae2708f5e6",
+      "content_id": "8155b8bf-3abd-4c70-a6c5-8e969e994c31",
+      "claim_id": "C58",
+      "claim": "An additive but not synergistic activation was observed between LyNA1 and PI(3,5)P2.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, an additive but not synergistic activation was observed between LyNA1 and PI(3,5)P2 (Figure 3\u2014figure supplement 1D and E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 3\u2014figure supplement 1D and E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:57:17.026776Z"
+    },
+    {
+      "id": "e349e680-d902-42c1-a7ad-4db3d2784779",
+      "content_id": "8155b8bf-3abd-4c70-a6c5-8e969e994c31",
+      "claim_id": "C59",
+      "claim": "LyNa-VAs activated or modulated TPC2 via a unique, PI(3,5)P2-independent but voltage-dependent mechanism.",
+      "claim_type": "EXPLICIT",
+      "source": "Collectively, these results suggested that LyNa-VAs activated or modulated TPC2 via a unique, PI(3,5)P2-independent but voltage-dependent mechanism.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the ability of LyNa-VAs to activate the K204A mutant and the synergistic effects with PI(3,5)P2.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:57:17.026776Z"
+    },
+    {
+      "id": "8a332af2-9974-4fb3-8def-029b9eff85e5",
+      "content_id": "8155b8bf-3abd-4c70-a6c5-8e969e994c31",
+      "claim_id": "C60",
+      "claim": "TPC1 shows substantial voltage-dependent currents in the absence of any exogenous agonist.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to TPC2, which produces little or no current at any potential under basal conditions, yet a large, voltage-independent conductance increases in the presence of PI(3,5)P2, TPC1 shows substantial voltage-dependent currents in the absence of any exogenous agonist (Cang et al., 2014; Guo et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:57:17.026776Z"
+    },
+    {
+      "id": "fa07e81b-dc8d-403f-a4fc-3755c3783810",
+      "content_id": "8155b8bf-3abd-4c70-a6c5-8e969e994c31",
+      "claim_id": "C61",
+      "claim": "LyNa-VA1.1 produced a profound suppression of outward currents at potentials positive to Erev and a substantial enhancement of inward currents negative to Erev in TPC1.",
+      "claim_type": "EXPLICIT",
+      "source": "First, when membrane voltage was stepped to various test potentials after a prolonged pre-pulse to +80 mV and the currents were compared to the basal currents, LyNa-VA1.1 produced a profound suppression of outward currents at potentials positive to Erev (~0 mV), and a substantial enhancement of inward currents negative to Erev (Figure 4A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by electrophysiological data shown in Figure 4A and B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:57:17.026776Z"
+    },
+    {
+      "id": "5ef0d36d-33b9-4403-99e5-1d56dbd1112e",
+      "content_id": "8155b8bf-3abd-4c70-a6c5-8e969e994c31",
+      "claim_id": "C62",
+      "claim": "Upon LyNa-VA1 activation, the I-V of TPC1 completely reversed from strong outward rectification to strong inward rectification.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, upon LyNa-VA1 activation, the I-V of TPC1 completely reversed from strong outward rectification to strong inward rectification (Figure 4B and C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by I-V plots shown in Figure 4B and C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:57:17.026776Z"
+    },
+    {
+      "id": "61475b1c-9416-47a9-b688-097014370554",
+      "content_id": "8155b8bf-3abd-4c70-a6c5-8e969e994c31",
+      "claim_id": "C63",
+      "claim": "Both LyNa-VA2.1 and LyNA1 inhibited ITPC1.",
+      "claim_type": "EXPLICIT",
+      "source": "Intriguingly, unlike LyNa-VA1.1 and LyNa-VA1.2, which activated inward ITPC2 with EC50s within micromolar ranges, both LyNa-VA2.1 and LyNA1 inhibited ITPC1 (Figure 4D and Figure 4\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:57:17.026776Z"
+    },
+    {
+      "id": "b65bfcb8-ffe2-4552-9c1c-e4ff841452c1",
+      "content_id": "8155b8bf-3abd-4c70-a6c5-8e969e994c31",
+      "claim_id": "C64",
+      "claim": "The effect of LyNa-VA1.1 was to shift the midpoint of activation voltage (V1/2) by \u221265 mV as compared to the basal condition in TPC1.",
+      "claim_type": "EXPLICIT",
+      "source": "The effect of LyNa-VA1.1 was to shift the midpoint of activation voltage (V1/2) by \u221265 mV as compared to the basal condition, and to slow down the deactivation time course (Figure 4E\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by tail-current analysis shown in Figure 4E-F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:57:17.026776Z"
+    },
+    {
+      "id": "76d10cdd-f618-43f7-992d-03bacd633c66",
+      "content_id": "8155b8bf-3abd-4c70-a6c5-8e969e994c31",
+      "claim_id": "C65",
+      "claim": "LyNa-VA1.1 slowed down the deactivation time course of TPC1.",
+      "claim_type": "EXPLICIT",
+      "source": "The effect of LyNa-VA1.1 was to shift the midpoint of activation voltage (V1/2) by \u221265 mV as compared to the basal condition, and to slow down the deactivation time course (Figure 4E\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by tail-current analysis shown in Figure 4E-F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:57:17.026776Z"
+    },
+    {
+      "id": "fcd3c00e-a3e1-4f79-94c0-901575b385c3",
+      "content_id": "8155b8bf-3abd-4c70-a6c5-8e969e994c31",
+      "claim_id": "C66",
+      "claim": "The R540I mutation was reported to abolish TPC1 activation by membrane depolarization.",
+      "claim_type": "EXPLICIT",
+      "source": "It was recently reported that the R540I mutation, which removes a positive charge in the second putative voltage-sensing 'S4-type' helix, abolished TPC1 activation by membrane depolarization (She et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:57:17.026776Z"
+    },
+    {
+      "id": "fde1ec55-1cd5-41d8-b8af-4832ac029273",
+      "content_id": "8155b8bf-3abd-4c70-a6c5-8e969e994c31",
+      "claim_id": "C67",
+      "claim": "In the authors' hands, depolarization still robustly activated voltage-dependent currents in the whole-endolysosomes of hTPC1R540I-expressing cells.",
+      "claim_type": "EXPLICIT",
+      "source": "However, in our hands, depolarization still robustly activated voltage-dependent currents in the whole-endolysosomes of hTPC1R540I -expressing cells (Figure 4G and H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by electrophysiological data shown in Figure 4G and H, contradicting prior reports.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:57:17.026776Z"
+    },
+    {
+      "id": "78316cda-13e5-4f56-8297-045446413a55",
+      "content_id": "8155b8bf-3abd-4c70-a6c5-8e969e994c31",
+      "claim_id": "C68",
+      "claim": "LyNa-VA1.1 produced a dramatic enhancement of inward currents at negative potentials in TPC1R540I, indicative of a substantial negative shift in the V1/2 of voltage activation.",
+      "claim_type": "EXPLICIT",
+      "source": "When LyNa-VA1.1 was tested on endolysosomes overexpressing TPC1R540I, there was also a dramatic enhancement of inward currents at negative potentials indicative of a substantial negative shift in the V1/2 of voltage activation (Figure 4H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by electrophysiological data shown in Figure 4H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:57:17.026776Z"
+    },
+    {
+      "id": "7bfa3a8a-877d-427a-bf84-ded37acf6b7f",
+      "content_id": "8155b8bf-3abd-4c70-a6c5-8e969e994c31",
+      "claim_id": "C69",
+      "claim": "When exposed to PI(3,5)P2, ITPC1 showed a large enhancement at negative potentials indicative of a negative shift in the V1/2 of activation.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, when exposed to PI(3,5)P2, ITPC1 showed a large enhancement at negative potentials indicative of a negative shift in the V1/2 of activation, while TPC1R540I -positive endolysosomes showed large currents at all potentials (Figure 4\u2014figure supplement 2A, B and C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 4\u2014figure supplement 2A, B and C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:57:17.026776Z"
+    },
+    {
+      "id": "1754d833-1220-484e-9f68-a89487b103fe",
+      "content_id": "8155b8bf-3abd-4c70-a6c5-8e969e994c31",
+      "claim_id": "C70",
+      "claim": "TPC1R540I-positive endolysosomes showed large currents at all potentials when exposed to PI(3,5)P2.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, when exposed to PI(3,5)P2, ITPC1 showed a large enhancement at negative potentials indicative of a negative shift in the V1/2 of activation, while TPC1R540I -positive endolysosomes showed large currents at all potentials (Figure 4\u2014figure supplement 2A, B and C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 4\u2014figure supplement 2A, B and C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:57:17.026776Z"
+    },
+    {
+      "id": "bb8c2c20-e4a3-49bb-aace-924048fde4e7",
+      "content_id": "8155b8bf-3abd-4c70-a6c5-8e969e994c31",
+      "claim_id": "C71",
+      "claim": "The charge-introducing mutation at Ile551 of TPC2 conferred a voltage-dependence to the mutant channel but failed to affect LyNa-VA1.2 activation.",
+      "claim_type": "EXPLICIT",
+      "source": "The charge-introducing mutation at Ile551 of TPC2 (She et al., 2019), the equivalent site of TPC1R540, conferred a voltage-dependence to the mutant channel but failed to affect LyNa-VA1.2 activation (Figure 4\u2014figure supplement 2D and E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 4\u2014figure supplement 2D and E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:57:17.026776Z"
+    },
+    {
+      "id": "9a1c5313-318e-48a9-ae5b-49ee0b958f22",
+      "content_id": "8155b8bf-3abd-4c70-a6c5-8e969e994c31",
+      "claim_id": "C72",
+      "claim": "The S4 voltage-sensing domains may play a modulatory role, but there exist intrinsic or extrinsic voltage-sensing mechanisms elsewhere responsible for the voltage-dependent gating of TPCs.",
+      "claim_type": "EXPLICIT",
+      "source": "Put together, these results suggested that whereas the S4 voltage-sensing domains may play a modulatory role, there exist intrinsic or extrinsic voltage-sensing mechanisms elsewhere responsible for the voltage-dependent gating of TPCs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the mutational analyses showing that S4 mutations do not fully explain voltage-dependence.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:57:17.026776Z"
+    },
+    {
+      "id": "f818f6ab-1df2-4549-80bb-8091f756371c",
+      "content_id": "8155b8bf-3abd-4c70-a6c5-8e969e994c31",
+      "claim_id": "C73",
+      "claim": "LyNa-VA1.2- and LyNA1-induced whole-endolysosome ITPC2 was highly selective for Na+ over K+.",
+      "claim_type": "EXPLICIT",
+      "source": "Like PI(3,5)P2-activated ITPC2 (Figure 5A\u2013C and K), LyNa-VA1.2- and LyNA1-induced whole-endolysosome ITPC2 was highly selective for Na+ over K+, as substitution of bath/cytoplasmic Na+ with K+ significantly shifted Erev to more positive values (Figures 1H, 5D\u2013F and K and Figure 2\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by ion substitution experiments shown in Figure 5D-F and K.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:57:17.026776Z"
+    },
+    {
+      "id": "64cd85fa-1fb5-4bed-b140-c860aab89b05",
+      "content_id": "8155b8bf-3abd-4c70-a6c5-8e969e994c31",
+      "claim_id": "C74",
+      "claim": "LyNa-VA1.2- and LyNA1-activated ITPC2 exhibited low Ca2+ permeability.",
+      "claim_type": "EXPLICIT",
+      "source": "Meanwhile, LyNa-VA1.2- and LyNA1-activated ITPC2 still exhibited low Ca2+ permeability (Figure 5G and K and Figure 5\u2014figure supplement 1A), and the PCa/PNa values were similar to those for PI(3,5)P2-activated ITPC2 (Wang et al., 2012) (Figure 5K and Figure 5\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by ion substitution experiments shown in Figure 5G and K.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:57:17.026776Z"
+    },
+    {
+      "id": "cf93c501-5944-4fa3-9926-f6c8a1ede8b1",
+      "content_id": "8155b8bf-3abd-4c70-a6c5-8e969e994c31",
+      "claim_id": "C75",
+      "claim": "The PCa/PNa values for LyNa-VA1.2- and LyNA1-activated ITPC2 were similar to those for PI(3,5)P2-activated ITPC2.",
+      "claim_type": "EXPLICIT",
+      "source": "Meanwhile, LyNa-VA1.2- and LyNA1-activated ITPC2 still exhibited low Ca2+ permeability (Figure 5G and K and Figure 5\u2014figure supplement 1A), and the PCa/PNa values were similar to those for PI(3,5)P2-activated ITPC2 (Wang et al., 2012) (Figure 5K and Figure 5\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by quantitative permeability measurements shown in Figure 5K.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:57:17.026776Z"
+    },
+    {
+      "id": "5f793881-3434-49d4-8927-84e2342f7b3c",
+      "content_id": "8155b8bf-3abd-4c70-a6c5-8e969e994c31",
+      "claim_id": "C76",
+      "claim": "The N653G mutation significantly increases the relative K+ permeability of the TPC2 channel.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, the N653G mutation, which is known to significantly increase the relative K+ permeability of the TPC2 channel (Guo et al., 2017), did not alter the ability of LyNa-VA1.2 to enhance channel activation, but did result in currents elicited by LyNa-VA1.2 that had a much increased relative permeability to K+ (Figure 5I\u2013K).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:57:17.026776Z"
+    },
+    {
+      "id": "2ae7223d-de2e-40bd-a030-244117a95b16",
+      "content_id": "8155b8bf-3abd-4c70-a6c5-8e969e994c31",
+      "claim_id": "C77",
+      "claim": "The N653G mutation did not alter the ability of LyNa-VA1.2 to enhance channel activation.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, the N653G mutation, which is known to significantly increase the relative K+ permeability of the TPC2 channel (Guo et al., 2017), did not alter the ability of LyNa-VA1.2 to enhance channel activation, but did result in currents elicited by LyNa-VA1.2 that had a much increased relative permeability to K+ (Figure 5I\u2013K).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 5I-K.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:57:17.026776Z"
+    },
+    {
+      "id": "748de9d3-9986-4b8e-9e58-391b0f311848",
+      "content_id": "8155b8bf-3abd-4c70-a6c5-8e969e994c31",
+      "claim_id": "C78",
+      "claim": "The N653G mutation resulted in currents elicited by LyNa-VA1.2 that had a much increased relative permeability to K+.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, the N653G mutation, which is known to significantly increase the relative K+ permeability of the TPC2 channel (Guo et al., 2017), did not alter the ability of LyNa-VA1.2 to enhance channel activation, but did result in currents elicited by LyNa-VA1.2 that had a much increased relative permeability to K+ (Figure 5I\u2013K).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 5I-K.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:57:17.026776Z"
+    },
+    {
+      "id": "63963a2a-ad7d-458a-80ce-5b1fe4325c9e",
+      "content_id": "8155b8bf-3abd-4c70-a6c5-8e969e994c31",
+      "claim_id": "C79",
+      "claim": "The selectivity filter region does not mediate the action of TCAs.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these results indicate that the selectivity filter region does not mediate the action of TCAs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the fact that TCAs do not alter ion selectivity properties.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:57:17.026776Z"
+    },
+    {
+      "id": "4030aaff-1c62-4352-87f6-b83fd399b3dc",
+      "content_id": "8155b8bf-3abd-4c70-a6c5-8e969e994c31",
+      "claim_id": "C80",
+      "claim": "Voltage dependence can be conferred or unmasked by extrinsic agonists in lysosomal TPC channels.",
+      "claim_type": "EXPLICIT",
+      "source": "In this study, we report that the voltage dependence, generally thought to be an intrinsic property of an ion channel (Catterall, 2010; Yu and Catterall, 2004), can be conferred or unmasked by extrinsic agonists in lysosomal TPC channels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion of the study, supported by the differential voltage-dependence observed with different agonists.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:57:17.026776Z"
+    },
+    {
+      "id": "c59578a6-d684-4b88-aed0-1ce51fe4d125",
+      "content_id": "8155b8bf-3abd-4c70-a6c5-8e969e994c31",
+      "claim_id": "C81",
+      "claim": "TCAs are known to regulate autophagy and lysosome function, but underlying mechanisms are not clear.",
+      "claim_type": "EXPLICIT",
+      "source": "TCAs are known to regulate autophagy and lysosome function, but underlying mechanisms are not clear (Tsvetkov et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:57:17.026776Z"
+    },
+    {
+      "id": "01b177ff-49e8-45c8-a671-2c4cc1cc87f4",
+      "content_id": "8155b8bf-3abd-4c70-a6c5-8e969e994c31",
+      "claim_id": "C82",
+      "claim": "In a neuronal model of Huntington disease (HD), TCAs were shown to be neuroprotective by inducing the clearance of misfolded protein aggregates.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, in a neuronal model of Huntington disease (HD), TCAs were shown to be neuroprotective by inducing the clearance of misfolded protein aggregates (Tsvetkov et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:57:17.026776Z"
+    },
+    {
+      "id": "2b3cdd1b-cfe1-4502-abce-5fc0744ad09a",
+      "content_id": "8155b8bf-3abd-4c70-a6c5-8e969e994c31",
+      "claim_id": "C83",
+      "claim": "It is likely some of the effects associated with TCAs are mediated by TPCs.",
+      "claim_type": "EXPLICIT",
+      "source": "Given the proposed roles of TPCs in autophagy and lysosomal membrane trafficking (Grimm et al., 2017; Li et al., 2019), it is likely some of the effects associated with TCAs are mediated by TPCs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative connection between TCA effects and TPC function.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:57:17.026776Z"
+    },
+    {
+      "id": "b405e873-2d9c-49e0-9222-c9e43143d3e7",
+      "content_id": "8155b8bf-3abd-4c70-a6c5-8e969e994c31",
+      "claim_id": "C84",
+      "claim": "TCAs accumulate at high concentrations in the lysosomes as lysosomotropic compounds.",
+      "claim_type": "EXPLICIT",
+      "source": "However, TCAs, as lysosomotropic compounds, are known to accumulate at high concentrations in the lysosomes (Beckmann et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior research on TCA properties.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:57:17.026776Z"
+    },
+    {
+      "id": "74567b67-b303-4417-9565-3f6a29aa398a",
+      "content_id": "8155b8bf-3abd-4c70-a6c5-8e969e994c31",
+      "claim_id": "C85",
+      "claim": "The synergistic effects of TCAs with endogenous ligand PI(3,5)P2 suggest that the exposure level of TCAs in the brain might be sufficient to cause robust pharmacological actions.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the synergistic effects of TCAs with endogenous ligand, for example PI(3,5)P2, suggest that the exposure level of TCAs in the brain might be sufficient to cause robust pharmacological actions, much more potently than the efficacies defined in our channel assays.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the synergistic effects observed in the experiments.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:57:17.026776Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "b475e9fa-8d0e-4fbb-b802-d35c4d2b575b",
+      "content_id": "8155b8bf-3abd-4c70-a6c5-8e969e994c31",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "High-throughput screening identified tricyclic antidepressants (TCAs) as small-molecule agonists of TPC channels. Five TCAs from the LOPAC library induced Ca2+ increases in TPC2-expressing cells but not in TRPML1-expressing cells, and robustly activated TPC2 currents in whole-cell recordings with EC50 values in the micromolar range (43-112 \u03bcM). These compounds were designated as Lysosomal Na+ channel Voltage-dependent Activators (LyNa-VAs).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5-C34 provide converging evidence from HTS screening (C25-C27), specificity controls (C26, C30, C34), dose-response characterization (C31-C32), and electrophysiological validation (C29-C33) that TCAs activate TPC2 channels. The use of negative controls (non-transfected cells, TRPML1-expressing cells) strengthens the specificity of the findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:57:17.026776Z"
+    },
+    {
+      "id": "2bcf0a55-e556-454b-b62b-9947c11302c8",
+      "content_id": "8155b8bf-3abd-4c70-a6c5-8e969e994c31",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Riluzole (LyNA1) was identified as a TPC2 agonist that activates the channel independent of voltage, unlike TCAs. This compound activated large linear currents in TPC2-expressing cells but not in non-transfected cells, suggesting the existence of agonist-specific gating mechanisms within TPC channels.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8 and C36-C38 demonstrate voltage-independent activation by Riluzole with appropriate negative controls (C37). The inference of agonist-specific gating mechanisms (C38) is well-supported by the contrasting voltage-dependence profiles of TCAs versus Riluzole/PI(3,5)P2 shown throughout the manuscript.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:57:17.026776Z"
+    },
+    {
+      "id": "f062c4ee-be68-4e7d-ad5a-f72ac9ac7831",
+      "content_id": "8155b8bf-3abd-4c70-a6c5-8e969e994c31",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Both LyNa-VAs and LyNA1 activated TPC2 in isolated endolysosomes from transfected cells and wild-type HAP1 cells, but not in TRPML1-transfected cells or TPC1/2 double knockout cells. The compounds are membrane permeable and likely act via direct agonist binding, with an intracellular or intracellularly-accessible action site.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40-C45 provide strong evidence for specificity using multiple negative controls (TRPML1-transfected, TPC1/2 DKO cells). The inference of membrane permeability and intracellular action site (C44-C45) is supported by activation kinetics across different recording configurations, though the exact binding site remains unidentified.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:57:17.026776Z"
+    },
+    {
+      "id": "3fb7bc55-2d40-4e0a-85a8-e8e8c64a24f7",
+      "content_id": "8155b8bf-3abd-4c70-a6c5-8e969e994c31",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "TCA-activated TPC2 currents exhibited strong voltage-dependence with prominent inactivation and inward rectification. LyNa-VA1.2 activation showed a V1/2 of -20 mV, while PI(3,5)P2 and LyNA1 activation showed no apparent voltage-dependent activation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46-C53 are well-supported by comprehensive electrophysiological characterization including voltage ramps, step protocols, and tail-current analysis shown in Figure 2. The quantitative measurements of voltage-dependence (V1/2, rectification ratios, inactivation kinetics) provide robust evidence for agonist-specific voltage gating.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:57:17.026776Z"
+    },
+    {
+      "id": "16ae79cd-d202-4333-960a-83804092bcbd",
+      "content_id": "8155b8bf-3abd-4c70-a6c5-8e969e994c31",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "LyNa-VAs activate TPC2 via a PI(3,5)P2-independent mechanism. LyNa-VAs robustly activated the PI(3,5)P2-insensitive K204A mutant and showed synergistic effects with low concentrations of PI(3,5)P2 in wild-type channels, while LyNA1 showed only additive effects with PI(3,5)P2.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54-C59 demonstrate independence from the PI(3,5)P2 binding site through mutational analysis (C55) and synergy experiments (C56-C58). The differential synergy between LyNa-VAs and LyNA1 with PI(3,5)P2 (C56-C58) supports distinct activation mechanisms. The conclusion (C59) is well-justified by the experimental evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:57:17.026776Z"
+    },
+    {
+      "id": "e29bc1ad-6151-4271-a66c-ef53c3fc87d5",
+      "content_id": "8155b8bf-3abd-4c70-a6c5-8e969e994c31",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "LyNa-VAs modulate TPC1 channels differently than TPC2. LyNa-VA1.1 shifted TPC1's I-V from outward to inward rectification, shifted the V1/2 by -65 mV, and slowed deactivation kinetics. LyNa-VA2.1 and LyNA1 inhibited TPC1 currents.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C60-C65 are supported by detailed electrophysiological characterization in Figure 4. The differential effects of different LyNa-VA subtypes on TPC1 (activation vs. inhibition) are clearly demonstrated. The quantitative measurements of voltage-shift and kinetic changes provide robust evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:57:17.026776Z"
+    },
+    {
+      "id": "0d1af453-b525-490e-b60f-442ec0568806",
+      "content_id": "8155b8bf-3abd-4c70-a6c5-8e969e994c31",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The S4 voltage-sensing domains play a modulatory but not essential role in voltage-dependent gating of TPCs. The R540I mutation in TPC1 (reported to abolish voltage-dependent activation) still showed robust voltage-dependent currents in the authors' experiments, and LyNa-VA1.1 still produced voltage-dependent effects in this mutant. Similarly, the I551R mutation in TPC2 conferred voltage-dependence but did not affect LyNa-VA activation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C66-C72 present contradictory findings to prior published work (C66 vs. C67). While the authors provide experimental data supporting their observations (C67-C71), the discrepancy with She et al. 2018 is not explained. The conclusion that S4 domains are modulatory (C72) is reasonable given the data, but the reproducibility concerns and lack of explanation for the discrepancy weaken confidence in this result. Additional validation or explanation would strengthen this finding.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:57:17.026776Z"
+    },
+    {
+      "id": "ac1bb1e0-959d-40b5-93c0-d8e8296f35c4",
+      "content_id": "8155b8bf-3abd-4c70-a6c5-8e969e994c31",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "LyNa-VAs and LyNA1 do not alter the ion selectivity properties of TPC2. Both agonists maintained high Na+ selectivity over K+ and low Ca2+ permeability similar to PI(3,5)P2-activated channels. The N653G selectivity filter mutant retained altered K+ permeability when activated by LyNa-VAs, indicating the selectivity filter does not mediate TCA action.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C73-C79 are well-supported by systematic ion substitution experiments shown in Figure 5. The use of the N653G selectivity filter mutant (C76-C78) provides strong evidence that TCAs do not act through the selectivity filter. The conclusion (C79) is appropriately conservative and well-justified by the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:57:17.026776Z"
+    },
+    {
+      "id": "0223c3cb-3bd9-485e-ac7e-f3d552a2a632",
+      "content_id": "8155b8bf-3abd-4c70-a6c5-8e969e994c31",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The main conclusion of the study is that voltage dependence can be conferred or unmasked by extrinsic agonists in TPC channels, demonstrating the existence of agonist-specific gating mechanisms.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C80, C9, and C38 represent the central conclusion supported by the differential voltage-dependence observed with TCAs versus PI(3,5)P2/LyNA1 throughout the manuscript. The extensive electrophysiological characterization across multiple experimental paradigms provides strong support for this novel finding.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:57:17.026776Z"
+    },
+    {
+      "id": "fd3f7b8f-65c6-4fca-b495-e83dd0987144",
+      "content_id": "8155b8bf-3abd-4c70-a6c5-8e969e994c31",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The identified TPC agonists may explain previously reported effects of TCAs on autophagy and lysosomal function. TCAs accumulate in lysosomes and show synergistic effects with endogenous PI(3,5)P2, suggesting physiologically relevant concentrations may be achieved in vivo.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C10-C11 and C81-C85 are largely speculative (C10, C11, C83, C85) or cite prior work (C81-C82, C84). While the speculation is reasonable given the known roles of TPCs and the lysosomotropic properties of TCAs, no direct experimental evidence linking TCA effects on autophagy to TPC activation is provided. This represents a plausible hypothesis for future work rather than a demonstrated result.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:57:17.026776Z"
+    },
+    {
+      "id": "193ea6d8-c925-40a4-90c0-be62f81feac6",
+      "content_id": "8155b8bf-3abd-4c70-a6c5-8e969e994c31",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Background information on TPC channels and lysosomal biology, including their structure, localization, ion selectivity, regulation by PI(3,5)P2, functional roles, and voltage-dependence properties.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C4, C12-C24, and C39 represent established background knowledge supported by extensive citations to prior literature. These claims provide context for the current study and are appropriately referenced. C22 represents unpublished negative data from the authors' laboratory.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:57:17.026776Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "93cdbc09-73eb-4f7a-8781-29f3d512b744",
+      "result_id": "b475e9fa-8d0e-4fbb-b802-d35c4d2b575b"
+    },
+    {
+      "claim_id": "5f0b2b6a-aa70-4e53-a6ea-1f384e6e22af",
+      "result_id": "b475e9fa-8d0e-4fbb-b802-d35c4d2b575b"
+    },
+    {
+      "claim_id": "86c4f13d-2efd-4f68-9114-dacabc41426f",
+      "result_id": "b475e9fa-8d0e-4fbb-b802-d35c4d2b575b"
+    },
+    {
+      "claim_id": "c03c3c3d-0bea-412d-ac44-0c445f1b0343",
+      "result_id": "b475e9fa-8d0e-4fbb-b802-d35c4d2b575b"
+    },
+    {
+      "claim_id": "6eff87e3-bc4f-49ab-8851-72f11597dbe5",
+      "result_id": "b475e9fa-8d0e-4fbb-b802-d35c4d2b575b"
+    },
+    {
+      "claim_id": "537b756c-dca3-49ac-b7c8-506b89cc8f55",
+      "result_id": "b475e9fa-8d0e-4fbb-b802-d35c4d2b575b"
+    },
+    {
+      "claim_id": "c51c0a7c-07f0-40dc-8454-db01693bf12e",
+      "result_id": "b475e9fa-8d0e-4fbb-b802-d35c4d2b575b"
+    },
+    {
+      "claim_id": "64b42016-2044-40e3-adf6-3fa83640576b",
+      "result_id": "b475e9fa-8d0e-4fbb-b802-d35c4d2b575b"
+    },
+    {
+      "claim_id": "4ce5bcc3-3dc8-45d7-a5ae-235b4dff92b9",
+      "result_id": "b475e9fa-8d0e-4fbb-b802-d35c4d2b575b"
+    },
+    {
+      "claim_id": "a37ac14d-c139-4394-a720-193a39a6847c",
+      "result_id": "b475e9fa-8d0e-4fbb-b802-d35c4d2b575b"
+    },
+    {
+      "claim_id": "41c9ab1d-695e-4941-a523-e12332b208dd",
+      "result_id": "b475e9fa-8d0e-4fbb-b802-d35c4d2b575b"
+    },
+    {
+      "claim_id": "32c2dd5a-9b5e-4638-8aae-d03f129c25a5",
+      "result_id": "b475e9fa-8d0e-4fbb-b802-d35c4d2b575b"
+    },
+    {
+      "claim_id": "2c72223e-345a-4c99-8e5e-869bed56cdf7",
+      "result_id": "b475e9fa-8d0e-4fbb-b802-d35c4d2b575b"
+    },
+    {
+      "claim_id": "ec240768-117a-431e-85ef-ecb3d00112c2",
+      "result_id": "2bcf0a55-e556-454b-b62b-9947c11302c8"
+    },
+    {
+      "claim_id": "a32e9afc-b544-48e6-a726-599d087dd035",
+      "result_id": "2bcf0a55-e556-454b-b62b-9947c11302c8"
+    },
+    {
+      "claim_id": "89d0a3c9-bbe5-4415-bd6c-51ce9e96a8b8",
+      "result_id": "2bcf0a55-e556-454b-b62b-9947c11302c8"
+    },
+    {
+      "claim_id": "0e11fe91-14e3-46e4-91b2-d022535edad1",
+      "result_id": "2bcf0a55-e556-454b-b62b-9947c11302c8"
+    },
+    {
+      "claim_id": "c4312462-6028-46ea-8794-0dbdf33c38b1",
+      "result_id": "2bcf0a55-e556-454b-b62b-9947c11302c8"
+    },
+    {
+      "claim_id": "adc3de75-5fb2-47e1-a7f8-f3f4c48ad1b4",
+      "result_id": "f062c4ee-be68-4e7d-ad5a-f72ac9ac7831"
+    },
+    {
+      "claim_id": "4a9f4868-1623-4a14-9d34-a138fecb054f",
+      "result_id": "f062c4ee-be68-4e7d-ad5a-f72ac9ac7831"
+    },
+    {
+      "claim_id": "a12f7d3c-d6cc-4cfd-aa55-f4b8ed41db3e",
+      "result_id": "f062c4ee-be68-4e7d-ad5a-f72ac9ac7831"
+    },
+    {
+      "claim_id": "6f8a8843-9fad-4925-8473-83d6f0f28a85",
+      "result_id": "f062c4ee-be68-4e7d-ad5a-f72ac9ac7831"
+    },
+    {
+      "claim_id": "1710c171-9515-43df-a59d-19645c70d026",
+      "result_id": "f062c4ee-be68-4e7d-ad5a-f72ac9ac7831"
+    },
+    {
+      "claim_id": "c6d9e0e5-1b14-408f-bbbf-f126d4ca533d",
+      "result_id": "f062c4ee-be68-4e7d-ad5a-f72ac9ac7831"
+    },
+    {
+      "claim_id": "7bc1a66e-7914-44e7-9f00-272340e2ed3b",
+      "result_id": "3fb7bc55-2d40-4e0a-85a8-e8e8c64a24f7"
+    },
+    {
+      "claim_id": "35cb39ac-7872-43a2-b98c-0f5962e6e32f",
+      "result_id": "3fb7bc55-2d40-4e0a-85a8-e8e8c64a24f7"
+    },
+    {
+      "claim_id": "c018d63f-e12c-4778-9ed0-da5d029cfc01",
+      "result_id": "3fb7bc55-2d40-4e0a-85a8-e8e8c64a24f7"
+    },
+    {
+      "claim_id": "b07f0c49-7c63-4a07-8dc4-34ba611cff8c",
+      "result_id": "3fb7bc55-2d40-4e0a-85a8-e8e8c64a24f7"
+    },
+    {
+      "claim_id": "c04552ff-3cd5-44b8-b455-be46ced54af6",
+      "result_id": "3fb7bc55-2d40-4e0a-85a8-e8e8c64a24f7"
+    },
+    {
+      "claim_id": "2f9d853b-3d88-42be-aaf0-1913fe4f8883",
+      "result_id": "16ae79cd-d202-4333-960a-83804092bcbd"
+    },
+    {
+      "claim_id": "83d9c281-8713-493d-aa30-6112785c9695",
+      "result_id": "16ae79cd-d202-4333-960a-83804092bcbd"
+    },
+    {
+      "claim_id": "163f3033-60a5-4717-9a9d-16c062607580",
+      "result_id": "16ae79cd-d202-4333-960a-83804092bcbd"
+    },
+    {
+      "claim_id": "fad40c21-5c12-49a8-a04c-0594fa3d42f0",
+      "result_id": "16ae79cd-d202-4333-960a-83804092bcbd"
+    },
+    {
+      "claim_id": "c5d828d9-f8ec-4622-8d8a-afae2708f5e6",
+      "result_id": "16ae79cd-d202-4333-960a-83804092bcbd"
+    },
+    {
+      "claim_id": "e349e680-d902-42c1-a7ad-4db3d2784779",
+      "result_id": "16ae79cd-d202-4333-960a-83804092bcbd"
+    },
+    {
+      "claim_id": "8a332af2-9974-4fb3-8def-029b9eff85e5",
+      "result_id": "e29bc1ad-6151-4271-a66c-ef53c3fc87d5"
+    },
+    {
+      "claim_id": "fa07e81b-dc8d-403f-a4fc-3755c3783810",
+      "result_id": "e29bc1ad-6151-4271-a66c-ef53c3fc87d5"
+    },
+    {
+      "claim_id": "5ef0d36d-33b9-4403-99e5-1d56dbd1112e",
+      "result_id": "e29bc1ad-6151-4271-a66c-ef53c3fc87d5"
+    },
+    {
+      "claim_id": "61475b1c-9416-47a9-b688-097014370554",
+      "result_id": "e29bc1ad-6151-4271-a66c-ef53c3fc87d5"
+    },
+    {
+      "claim_id": "b65bfcb8-ffe2-4552-9c1c-e4ff841452c1",
+      "result_id": "e29bc1ad-6151-4271-a66c-ef53c3fc87d5"
+    },
+    {
+      "claim_id": "76d10cdd-f618-43f7-992d-03bacd633c66",
+      "result_id": "e29bc1ad-6151-4271-a66c-ef53c3fc87d5"
+    },
+    {
+      "claim_id": "fcd3c00e-a3e1-4f79-94c0-901575b385c3",
+      "result_id": "0d1af453-b525-490e-b60f-442ec0568806"
+    },
+    {
+      "claim_id": "fde1ec55-1cd5-41d8-b8af-4832ac029273",
+      "result_id": "0d1af453-b525-490e-b60f-442ec0568806"
+    },
+    {
+      "claim_id": "78316cda-13e5-4f56-8297-045446413a55",
+      "result_id": "0d1af453-b525-490e-b60f-442ec0568806"
+    },
+    {
+      "claim_id": "7bfa3a8a-877d-427a-bf84-ded37acf6b7f",
+      "result_id": "0d1af453-b525-490e-b60f-442ec0568806"
+    },
+    {
+      "claim_id": "1754d833-1220-484e-9f68-a89487b103fe",
+      "result_id": "0d1af453-b525-490e-b60f-442ec0568806"
+    },
+    {
+      "claim_id": "bb8c2c20-e4a3-49bb-aace-924048fde4e7",
+      "result_id": "0d1af453-b525-490e-b60f-442ec0568806"
+    },
+    {
+      "claim_id": "9a1c5313-318e-48a9-ae5b-49ee0b958f22",
+      "result_id": "0d1af453-b525-490e-b60f-442ec0568806"
+    },
+    {
+      "claim_id": "f818f6ab-1df2-4549-80bb-8091f756371c",
+      "result_id": "ac1bb1e0-959d-40b5-93c0-d8e8296f35c4"
+    },
+    {
+      "claim_id": "64cd85fa-1fb5-4bed-b140-c860aab89b05",
+      "result_id": "ac1bb1e0-959d-40b5-93c0-d8e8296f35c4"
+    },
+    {
+      "claim_id": "cf93c501-5944-4fa3-9926-f6c8a1ede8b1",
+      "result_id": "ac1bb1e0-959d-40b5-93c0-d8e8296f35c4"
+    },
+    {
+      "claim_id": "5f793881-3434-49d4-8927-84e2342f7b3c",
+      "result_id": "ac1bb1e0-959d-40b5-93c0-d8e8296f35c4"
+    },
+    {
+      "claim_id": "2ae7223d-de2e-40bd-a030-244117a95b16",
+      "result_id": "ac1bb1e0-959d-40b5-93c0-d8e8296f35c4"
+    },
+    {
+      "claim_id": "748de9d3-9986-4b8e-9e58-391b0f311848",
+      "result_id": "ac1bb1e0-959d-40b5-93c0-d8e8296f35c4"
+    },
+    {
+      "claim_id": "63963a2a-ad7d-458a-80ce-5b1fe4325c9e",
+      "result_id": "ac1bb1e0-959d-40b5-93c0-d8e8296f35c4"
+    },
+    {
+      "claim_id": "4030aaff-1c62-4352-87f6-b83fd399b3dc",
+      "result_id": "0223c3cb-3bd9-485e-ac7e-f3d552a2a632"
+    },
+    {
+      "claim_id": "1036b986-8098-4be1-bb4f-bfd2192410b3",
+      "result_id": "0223c3cb-3bd9-485e-ac7e-f3d552a2a632"
+    },
+    {
+      "claim_id": "c4312462-6028-46ea-8794-0dbdf33c38b1",
+      "result_id": "0223c3cb-3bd9-485e-ac7e-f3d552a2a632"
+    },
+    {
+      "claim_id": "e5e0b16c-88cc-4f73-a96e-bd0c9842298c",
+      "result_id": "fd3f7b8f-65c6-4fca-b495-e83dd0987144"
+    },
+    {
+      "claim_id": "3484c038-b819-4077-bb72-d22b09f008b5",
+      "result_id": "fd3f7b8f-65c6-4fca-b495-e83dd0987144"
+    },
+    {
+      "claim_id": "c59578a6-d684-4b88-aed0-1ce51fe4d125",
+      "result_id": "fd3f7b8f-65c6-4fca-b495-e83dd0987144"
+    },
+    {
+      "claim_id": "01b177ff-49e8-45c8-a671-2c4cc1cc87f4",
+      "result_id": "fd3f7b8f-65c6-4fca-b495-e83dd0987144"
+    },
+    {
+      "claim_id": "2b3cdd1b-cfe1-4502-abce-5fc0744ad09a",
+      "result_id": "fd3f7b8f-65c6-4fca-b495-e83dd0987144"
+    },
+    {
+      "claim_id": "b405e873-2d9c-49e0-9222-c9e43143d3e7",
+      "result_id": "fd3f7b8f-65c6-4fca-b495-e83dd0987144"
+    },
+    {
+      "claim_id": "74567b67-b303-4417-9565-3f6a29aa398a",
+      "result_id": "fd3f7b8f-65c6-4fca-b495-e83dd0987144"
+    },
+    {
+      "claim_id": "b886797b-e27e-4388-8d70-5d63fb424baf",
+      "result_id": "193ea6d8-c925-40a4-90c0-be62f81feac6"
+    },
+    {
+      "claim_id": "ae688f0f-7fef-489a-8a97-11008ed4914e",
+      "result_id": "193ea6d8-c925-40a4-90c0-be62f81feac6"
+    },
+    {
+      "claim_id": "59592336-dfc2-4273-9ea8-58f224078cf4",
+      "result_id": "193ea6d8-c925-40a4-90c0-be62f81feac6"
+    },
+    {
+      "claim_id": "3cf3fd4e-2f56-4dd7-8fa5-5d7635294a2f",
+      "result_id": "193ea6d8-c925-40a4-90c0-be62f81feac6"
+    },
+    {
+      "claim_id": "9cff9aab-94b7-4ebc-9e75-4004159ba27d",
+      "result_id": "193ea6d8-c925-40a4-90c0-be62f81feac6"
+    },
+    {
+      "claim_id": "4711ce39-fb5f-426c-a304-0e0b8daa99db",
+      "result_id": "193ea6d8-c925-40a4-90c0-be62f81feac6"
+    },
+    {
+      "claim_id": "66107183-a2fd-45f4-9cec-f5e783172ffa",
+      "result_id": "193ea6d8-c925-40a4-90c0-be62f81feac6"
+    },
+    {
+      "claim_id": "248b60e8-e30f-4315-900c-20383945c599",
+      "result_id": "193ea6d8-c925-40a4-90c0-be62f81feac6"
+    },
+    {
+      "claim_id": "042139f0-6598-4b5b-b2fd-c648604fda79",
+      "result_id": "193ea6d8-c925-40a4-90c0-be62f81feac6"
+    },
+    {
+      "claim_id": "d0cfedc5-4c9b-4b58-b7c3-8b396fe22ec5",
+      "result_id": "193ea6d8-c925-40a4-90c0-be62f81feac6"
+    },
+    {
+      "claim_id": "df4dc92c-3cab-451b-9222-69f2c82321f1",
+      "result_id": "193ea6d8-c925-40a4-90c0-be62f81feac6"
+    },
+    {
+      "claim_id": "93f3deb1-753c-435c-9293-71f003a6b839",
+      "result_id": "193ea6d8-c925-40a4-90c0-be62f81feac6"
+    },
+    {
+      "claim_id": "b124d95f-5948-4b9d-9e32-36ec1fb7008f",
+      "result_id": "193ea6d8-c925-40a4-90c0-be62f81feac6"
+    },
+    {
+      "claim_id": "af1dd996-0eda-4535-9c4d-53c6cba9169c",
+      "result_id": "193ea6d8-c925-40a4-90c0-be62f81feac6"
+    },
+    {
+      "claim_id": "006e8fab-7861-4f35-a5fe-11f2fb21518e",
+      "result_id": "193ea6d8-c925-40a4-90c0-be62f81feac6"
+    },
+    {
+      "claim_id": "293b88cd-b638-4718-8300-fa40669bf651",
+      "result_id": "193ea6d8-c925-40a4-90c0-be62f81feac6"
+    },
+    {
+      "claim_id": "a6c1e939-5e33-4881-a125-12649c7bc694",
+      "result_id": "193ea6d8-c925-40a4-90c0-be62f81feac6"
+    },
+    {
+      "claim_id": "b0ed1c4b-6942-40fb-9fba-ba57f677f349",
+      "result_id": "193ea6d8-c925-40a4-90c0-be62f81feac6"
+    }
+  ],
+  "comparisons": []
+}

@@ -1,0 +1,1685 @@
+{
+  "submission": {
+    "id": "260026dc-fce3-4c56-a17c-666178c1e1a7",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T08:52:58.678421Z",
+    "updated_at": "2025-12-02T08:52:58.678421Z"
+  },
+  "content": [
+    {
+      "id": "06b4bfb3-a538-46ac-8604-ce596986e484",
+      "submission_id": "260026dc-fce3-4c56-a17c-666178c1e1a7",
+      "content_type": "manuscript",
+      "content_text": "# The molecular basis for an allosteric inhibition of K+-flux gating in K2P channels\n\n## Authors\n\n- Susanne Rinn\u00e9<sup>1</sup>\n- Aytug K Kiper<sup>1</sup> ([ORCID: 0000-0003-2850-2523](https://orcid.org/0000-0003-2850-2523))\n- Kirsty S Vowinkel<sup>1</sup>\n- David Ram\u00edrez<sup>2</sup>\n- Marcus Schewe<sup>4</sup> ([ORCID: 0000-0002-6192-5651](https://orcid.org/0000-0002-6192-5651))\n- Mauricio Bedoya<sup>2</sup>\n- Diana Aser<sup>1</sup>\n- Isabella Gensler<sup>1</sup>\n- Michael F Netter<sup>1</sup>\n- Phillip J Stansfeld<sup>5</sup>\n- Thomas Baukrowitz<sup>4</sup>\n- Wendy Gonzalez<sup>2</sup>\n- Niels Decher<sup>1</sup> ([ORCID: 0000-0001-8892-1231](https://orcid.org/0000-0001-8892-1231)) \u2020\n\n### Affiliations\n\n1. Institute for Physiology and Pathophysiology, Vegetative Physiology University of Marburg Marburg Germany\n2. Centro de Bioinform\u00e1tica y Simulaci\u00f3n Molecular Universidad de Talca Talca Chile\n3. Instituto de Ciencias Biom\u00e9dicas Universidad Aut\u00f3noma de Chile Talca Chile\n4. Institute of Physiology University of Kiel Kiel Germany\n5. Structural Bioinformatics and Computational Biochemistry Unit, Department of Biochemistry University of Oxford Oxford United Kingdom\n6. Millennium Nucleus of Ion Channels-Associated Diseases (MiNICAD) Universidad de Talca Talca Chile\n\n\u2020 Corresponding author\n\n## Abstract\n\nTwo-pore-domain potassium (K2P) channels are key regulators of many physiological and pathophysiological processes and thus emerged as promising drug targets. As for other potassium channels, there is a lack of selective blockers, since drugs preferentially bind to a conserved binding site located in the central cavity. Thus, there is a high medical need to identify novel drug-binding sites outside the conserved lipophilic central cavity and to identify new allosteric mechanisms of channel inhibition. Here, we identified a novel binding site and allosteric inhibition mechanism, disrupting the recently proposed K+-flux gating mechanism of K2P channels, which results in an unusual voltage-dependent block of leak channels belonging to the TASK subfamily. The new binding site and allosteric mechanism of inhibition provide structural and mechanistic insights into the gating of TASK channels and the basis for the drug design of a new class of potent blockers targeting specific types of K2P channels.\n\n## Introduction\n\nTwo-pore-domain potassium (K2P) channels are characterized by a unique structure and pharmacology. Crystallographic K2P channel structures revealed that the extracellular M1-P1 linkers of the dimeric channels form a large extracellular 'cap' (Brohawn et al., 2012; Miller and Long, 2012). TWIK-related acid-sensitive K+ (TASK) channels sense pH-variations in the physiological range and are modulated by volatile and intravenous anesthetics. TASK-like currents are found in various tissues and TASK channels are drug targets for many diseases, including diabetes (Pisani et al., 2016), obstructive sleep apnea (Kiper et al., 2015), pulmonary hypertension (Bohnen et al., 2017), and arrhythmias, like atrial fibrillation (Kiper et al., 2015; Liang et al., 2014; Limberg et al., 2011) or conduction disorders (Decher et al., 2011; Friedrich et al., 2014). As in other K+ channels, there is a lack of selective K2P channel blockers, since drugs preferentially bind to a conserved binding site located in the central cavity of potassium channels (Decher et al., 2004; Marzian et al., 2013). Thus, for the future rational drug design of specific K2P channel blockers it is crucial to identify binding sites outside the conserved water filled lipophilic central cavity and new allosteric -non pore plugging- mechanisms of channel inhibition like recently described for TREK channel blockers binding to the unique cap structure (Luo et al., 2017). Strikingly, the recently reported K2P channel crystal structures revealed putative binding sites outside the central cavity, the 'side fenestrations', which are openings towards the lipid bilayer of the membrane (Brohawn et al., 2012; Miller and Long, 2012). Accordingly, it was suggested that drugs and cellular lipids could bind to these locations (Miller and Long, 2012). In fact, norfluoxetine, the active metabolite of the antidepressant drug fluoxetine (Prozac), which blocks TREK channels, binds to these lateral fenestrations of TREK-2 (Dong et al., 2015). Despite recent advances in the understanding of the molecular pharmacology of TREK channel blockers (Dong et al., 2015; Luo et al., 2017) and activators (Lolicato et al., 2017), little is currently known about allosteric K2P channel block mechanisms.\n\nK2P channels were crystallized in two different states, the so called 'up' and 'down' state (Brohawn et al., 2014). The 'up' state is primarily achieved by a lateral movement of the M4 segments, resulting in the closure of the side fenestrations. Brohawn et al. proposed that the 'up' state reflects the conductive state of the channels (Brohawn et al., 2014). However, the fact that K2P channels were crystallized in both conformations, each with different potassium occupancies in the selectivity filter, suggested that there is not a tight coupling between the movement of the inner helices and the selectivity filter gate and that the channels can open from both conformations. Consistently, recent studies propose a gating model for TREK channels in which the channels can in fact open from the 'down' state, albeit opening preferentially occurs from the 'up' state (Brennecke and de Groot, 2018; McClenaghan et al., 2016). The gating at the selectivity filter itself occurs in a voltage-dependent manner with potassium ions as the voltage-sensing particles, resulting in increased outward currents upon depolarization (Schewe et al., 2016).\n\nIn our current study, we found that the local anesthetic bupivacaine blocks TASK-1 in a voltage-dependent manner, which is a very unusual feature for a 'leak' channel blocker. Using functional mutagenesis screens, in\u00a0silico drug dockings and molecular dynamics (MD) simulations, we identified the binding site of this unusual K2P channel blocker, which is located in the side fenestrations of TASK-1, underneath the second pore helices. Strikingly, the drug is positioned so far laterally in the fenestrations that it does not cause a classical pore occlusion. Here we describe a novel allosteric block mechanism disrupting the K+-flux gating at the selectivity filter which results in TASK-1 channels with an unusual inward-rectification and accordingly a voltage-dependent inhibition. The newly identified binding site and allosteric mechanism of K+-flux gating inhibition described here will allow the rational drug design of potent and K2P subfamily specific blockers with specific kinetic features of inhibition.\n\n## Results\n\n### Voltage-dependent block of TASK-1 by impaired outward K+-flux gating\n\nInitially we aimed to investigate the differences between potent TASK-1 blockers such as A1899 or A293 and the less potent local anesthetic bupivacaine. As a first step, we tested whether bupivacaine causes a stereoselective block of TASK-1. Using the Xenopus oocyte expression system both bupivacaine enantiomers and the racemic drug blocked TASK-1 outward currents with equal potencies (Figure 1\u2014figure supplement 1a,b), similar to that previously described for the racemic drug (Leonoudakis et al., 1998) and the rate of inhibition was not significantly different for the enantiomers (Figure 1\u2014figure supplement 1c). As there is no enantioselectivity for TASK-1 inhibition, the subsequent experiments were carried out with the racemic drug that is most commonly used. To test for a voltage-dependence of TASK-1 inhibition of the different compounds, we performed voltage-clamp experiments under symmetrical potassium concentrations. Surprisingly, bupivacaine preferentially blocks outward currents (Figure 1a\u2013c), converting the linear current-voltage relationship of TASK-1 into an inwardly rectifying channel behavior (Figure 1a,b). This effect is caused by a voltage-dependent inhibition of TASK-1 (Figure 1c,d), a feature which has never been reported before for a K2P channel blocker. This blocking characteristic was not present for previously described TASK-1 channel blockers, such as A1899 (Figure 1f\u2013i) and A293 (Figure 1k\u2013n). Moreover, the voltage-dependence of block is only present for TASK-1 and TASK-3 channels (Figure 1p), but not for other K2P channels like TREK-1, TREK-2, TRAAK, TRESK or TASK-2 (Figure 1p and Figure 1\u2014figure supplement 2). These data argue against a sole contribution of the protonation state and that only charged molecules cause the voltage-dependent inhibition. In addition, varying the intracellular pH in inside-out patches did not alter the TASK-3 sensitivity for bupivacaine, which further supports that the voltage-dependence of TASK-1 and TASK-3 inhibition is most likely not caused by charged bupivacaine molecules (Figure 1q,r).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/39476/elife-39476-fig1-v1.jpg)\n\n**Figure 1.:** (a) Representative current traces of TASK-1 injected oocytes before (black) and after (purple) application of 500 \u00b5M bupivacaine, recorded in a symmetrical potassium solution (KD96) at potentials ranging from \u221270 mV to\u00a0+70 mV. (b) Average IV-relationships recorded before and after drug application. (c) Analyses of the inhibition by bupivacaine at different voltages. (d) Relative block by bupivacaine comparing the inhibition at \u221270 and\u00a0+70 mV, recorded under symmetrical potassium concentrations. (e) Mean current kinetics before (left) and after (right) application of 500 \u00b5M bupivacaine, illustrating the instantaneous (Iinstant) and K+-flux gated (IK+-flux) current component of the TASK current. Note, the lack of a K+-flux gated component after application of bupivacaine. (f\u2013j) As in (a\u2013e), but for A1899 or (k\u2013o) for A293. (p) Relative block by bupivacaine comparing the inhibition of different K2P channels at \u221270 mV and\u00a0+70 mV, recorded under symmetrical potassium concentrations. (q) Representative measurements of TASK-3 channels from inside-out macropatches showing the inhibition by increasing concentrations of bupivacaine at pH 5.0 (left) and pH 8.0 (right), recorded at a constant potential of\u00a0+60 mV. (r) IC50 values of TASK-3 inhibition by bupivacaine at various intracellular pH levels. Data are represented as mean\u00a0\u00b1\u00a0S.E.M.. The numbers of experiments (n) are indicated within brackets or as small insets in the respective bars.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/39476/elife-39476-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (a) Inhibition of TASK-1 by bupivacaine R/S (purple), bupivacaine R (blue) and bupivacaine S (red) analyzed at\u00a0+40 mV and (b) the respective dose-response curves. (c) Wash-in and onset of TASK-1 inhibition by 500 \u00b5M of the two enantiomers or the racemic drug (n\u00a0=\u00a04\u20139). Data are presented as mean\u00a0\u00b1\u00a0S.E.M.. The numbers of experiments (n) are indicated within the respective bars or in brackets.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/39476/elife-39476-fig1-figsupp2-v1.jpg)\n\n**Figure 1\u2014figure supplement 2.:** Percentage of block for different K2P channels by 1 or 0.5 mM bupivacaine recorded at\u00a0+70 mV in KD96 solution. Data are presented as mean\u00a0\u00b1\u00a0S.E.M.. The numbers of experiments (n) are indicated within the respective brackets.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/39476/elife-39476-fig1-figsupp3-v1.jpg)\n\n**Figure 1\u2014figure supplement 3.:** K+-flux gated components of the currents at\u00a0+70 mV were analyzed before and after drug application. Note that only significant change to K+-flux gated component of the currents happens after bupivacaine application. Data are presented as mean\u00a0\u00b1\u00a0S.E.M.. The numbers of experiments (n) are indicated within the respective brackets. n.s. stands for \u2018not significant\u2019, ***, indicates p\u00a0<\u00a00.001 using a paired Student's t-test.\n\n![Figure 1\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/39476/elife-39476-fig1-figsupp4-v1.jpg)\n\n**Figure 1\u2014figure supplement 4.:** (a) Block of TASK-1 by 500 \u00b5M bupivacaine is not altered by increased external potassium concentration. Representative current traces from voltage steps to\u00a0+40 mV and (b) the analysis of block at different extracellular potassium concentrations (2 to 96 mM). (c) Inhibition of TASK-1 by 400 nM of the open channel blocker A1899 depends on the extracellular potassium concentration, as previously described (Streit et al., 2011). Representative currents recorded from voltage steps to\u00a0+40 mV and (d) the analysis of block at different extracellular potassium concentrations (2 to 96 mM). Here gradually increasing the extracellular potassium concentration decreased TASK-1 inhibition by A1899. Data are presented as mean\u00a0\u00b1\u00a0S.E.M.. The numbers of experiments (n) are indicated within the respective bars. **, indicates p\u00a0<\u00a00.01 using an unpaired Student's t-test.\n\nTASK-1 channels conduct with an instantaneous current component and a time-dependent activating component, most likely reflecting increased currents due to the K+-flux gating process at the selectivity filter (Figure 1e). Most\u00a0importantly, in addition to the preferential block of outward currents by bupivacaine, the drug also significantly abrogates the time-dependent K+-flux-gated outward current component of TASK-1 (Figure 1e and Figure 1\u2014figure supplement 3). This kinetic of inhibition of the outward currents is very unusual for K2P channel blockers, which normally just cause a 'shrinking' of the overall current amplitude without affecting channel kinetics (Putzke et al., 2007; Streit et al., 2011). Accordingly, this effect was not present for the TASK-1 blockers A1899 or A293 (Figure 1j,o and Figure 1\u2014figure supplement 3). We have previously reported that TASK-1 inhibition by the open channel blocker A1899 is attenuated by extracellular potassium (Streit et al., 2011). In\u00a0contrast, while increasing extracellular potassium concentration gradually decreased TASK-1 block by A1899, the inhibition of TASK-1 by bupivacaine was not affected (Figure 1\u2014figure supplement 4). Summarizing, our data indicate that bupivacaine does not act as a classical open channel blocker and is utilizing a novel K2P channel inhibiting mechanism impairing voltage-dependent K+-flux gating. Thus, the binding site of bupivacaine is most likely different to that of TASK-1 open channel blockers, such as A1899.\n\n### Bupivacaine utilizes a novel binding site in TASK-1\n\nWe have previously described the drug-binding site for A1899, the first highly potent blocker of TASK-1 channels. A1899 binds from the intracellular side to the central cavity of TASK-1 by interacting with several residues of the pore lining M2 and M4 segments and residues of the K+ channel signature sequence near the selectivity filter, ultimately resulting in a pore occlusion. In order to map the binding site of bupivacaine in TASK-1, we first performed a systematic alanine mutagenesis screen of the M2 and M4 segments and the threonine residues of the P1 and P2 loops, determining the inhibition by bupivacaine in the oocyte expression system (Figure 2). We identified several residues for which the bupivacaine sensitivity was diminished by mutations at the binding site that was previously identified for A1899, including I118 in M2 and I235, G236, L239 and N240 in M4 (classic 'hits') (Figure 2a\u2013c). However, we also identified novel 'hits' including C110A, M111A, A114V, Q126A and S127A in the M2 segment, as well as V234A and F238A in the M4 segment (Figure 2a\u2013c). In the pore signature sequence, we identified T198 of the second pore loop (P2) to be relevant for drug block, while the homologous mutation (T92A) in the first pore loop did not affect bupivacaine sensitivity (Figure 2b,c). Next, we used a TASK-1 homology model based on the down state of TRAAK to make further predictions and to illustrate the residues of the bupivacaine\u00a0binding site (Figure 2d) which is clearly different to that of A1899 (Figure 2e). The bupivacaine\u00a0binding site is more 'V'-like shaped, as the compound appears to interact with residues that are in the upper sideward part of the cavity, such as C110, M111 and A114 (Figure 2d). These data suggest that bupivacaine might be located laterally underneath the pore helices, in the side fenestrations that were previously described for other K2P channels. Therefore we alanine scanned the M1-P1 and the M3-P2 pore helices and the M3 segment, which are, according to the crystal structures of other K2P channels, located at the outer entry to the lateral fenestrations. Here we identified a strong reduction of the bupivacaine sensitivity by mutations of the second threonines of the pore signature sequence (T93C, T199C) in P1 and P2 (Figure 2f), residues previously described to alter the K+-flux gating of K2P channels (Schewe et al., 2016). Given the two-fold rhomboid symmetry of K2P channels, only the second pore helices are expected to be located above the side fenestrations (Figure 3\u2014figure supplement 1). Strikingly, we only identified strong sensitivity changes for mutations located in the P2 pore helix (F194A, T198C) (Figure 2f). In addition, we also observed weak but significant reduction of the bupivacaine sensitivity for the L171V mutant in the M3 segment (Figure 2f), which is expected to be located at the entry to the lateral fenestrations.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/39476/elife-39476-fig2-v1.jpg)\n\n**Figure 2.:** (a) Representative current traces of wild-type TASK-1 (WT) and mutant channels expressed in oocytes before (black) and after (purple) application of 500 \u00b5M bupivacaine. (b) Percentage of inhibition by 500 \u00b5M bupivacaine of wild-type TASK-1 and alanine mutants of the P1 signature sequence, the M2 segment and (c) the P2 signature sequence and the M4 segment. Residues identified as drug-binding sites ('hits'), which were previously also reported for the binding site of the open channel blocker A1899 ('classical'), are illustrated as striated bars and the 'hits' of the novel bupivacaine\u00a0binding site are depicted as filled bars ('novel'). (d) Amino acids involved in binding of bupivacaine and (e) the respective A1899 binding mode, according to Ram\u00edrez et al. (2017), both illustrated in a TRAAK-OO (PDB ID: 3UM7) based TASK-1 homology model. SF indicates the selectivity filter. (f) Analyses of the percentage of inhibition by 500 \u00b5M bupivacaine for TASK-1 alanine mutants of the M1-P1, M3 and M3-P2 segments. ne, not expressed. Data are represented as mean\u00a0\u00b1\u00a0S.E.M.. The numbers of experiments (n) are indicated within the respective bars.\n\n### TASK-1 channels are fenestrated providing the bupivacaine\u00a0binding site\n\nAs there is no crystal structure of TASK-1 reported so far, we generated different TASK-1 homology models based on the available crystal structures, namely TREK-2 with both fenestrations closed (TREK-2-CC), TRAAK with both (TRAAK-OO) and one fenestration open (TRAAK-CO), TREK-2 with both fenestrations opened (TREK-2-OO), as well as TWIK-1 that has two wide side fenestrations (TWIK-1-OO). Next, we docked bupivacaine into the different models and analyzed the docking solutions towards the interaction with the residues we identified in our alanine mutagenesis screen. Here we noted that the best overlap with our functional data is given for docking solutions with bupivacaine located in the side fenestrations of the different TASK-1 homology models. Here, we noted that with gradually increasing the diameter of the side fenestration (Figure 3a\u2013e) the number of bupivacaine docking solutions (conformers) in the fenestrations and the number of clusters in the fenestrations strongly increased (Figure 3a\u2013e). Genes encoding the crystallized TWIK and TREK/TRAAK channels are paralogs of KCNK3 encoding TASK-1 and within these channels TWIK-1 is the closest relative to TASK-1 with a sequence identity of 26.1%. These genetic lines of evidence are further supported by the fact that TWIK-1 and TASK-1 share functional similarities, that\u00a0is they change their permeability upon extracellular acidification and they form heterodimeric channels (Ma et al., 2012; Plant et al., 2012). Strikingly, the TWIK-1 based homology model showed by far the most significant clusters (15) and conformers (1420) in the side fenestrations (Figure 3e). In addition, analyzing the free energy of the docking solutions (MM-GBSA) (Ram\u00edrez et al., 2017) that fit the best to our functional data, revealed that the most stable docking solutions are generated using the TWIK-based TASK-1 homology model. Thus, we propose that TASK-1 channels are likely to exhibit large side fenestrations similar as other K2P channels. Analyzing the TWIK-1 based TASK-1 homology model that lead to the best docking solutions, the residues we identified in the alanine scan line the side fenestrations (Figure 3f). In the best docking solution, bupivacaine is located in the side fenestrations (Figure 3g) located underneath the M3-P2 pore helices (Figure 3h and Figure 3\u2014figure supplement 1). The 'classical' drug-binding site residues I118 of the M2 segment and I235 of the M4 segment have an intermediate location between the central cavity and the side fenestrations and also interact with bupivacaine (Figure 3g\u2013h). Remarkably, the 'atypical' and novel residues identified, with C110, M111 and A114 of M2, F194, T198 and T199 of the M3-P2 linker and V234 and F238 of M4, face towards the side fenestrations and the drug (Figure 3g,h). The drug is located in a thin sewer connecting the side fenestration with the central cavity, explaining the preferential interaction with the second of the two pore helices, as this is positioned directly above the drug (Figure 3i and Figure 3\u2014figure supplement 1).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/39476/elife-39476-fig3-v1.jpg)\n\n**Figure 3.:** (a\u2013e) Hole analyses illustrating the diameter of the side fenestrations in different TASK-1 homology models together with the number of docking solutions (conformers) located in the fenestrations and the number of significant clusters formed by the different conformers. 'C' indicates a closed and 'O' an open fenestration. The TASK-1 homology models were based (a) on TREK-2-CC (PDB ID: 4BW5), (b) TRAAK-OO (PDB ID: 3UM7), (c) TRAAK-CO (PDB ID: 4I9W), (d) TREK-2-OO (PDB ID: 4XDK), and (e) TWIK-1-OO (PDB ID: 3UMK). (f) TASK-1 homology model based on TWIK-1 illustrating the amino acid 'hits' in the M2 and M4 segments identified by alanine scanning. Note that the 'hits' primarily line the side fenestrations. (g) Enlargement of (f) with bupivacaine located in the side fenestrations illustrating the involvement of the M2 and M4 hits. (h) View showing the localization of bupivacaine under the second pore helix together with the respective M2 and M4 'hits'. (i) Cross section view from the bottom of the TASK-1 model visualizing the two side fenestrations and the localization of bupivacaine together with the 'hit' residues of the pore helices. (j) IC50 of bupivacaine on TASK-3 channels recorded in inside-out macropatch clamp experiments alone or in the presence of TEA or TPA. (k) Binding mode of bupivacaine together with that of TEA and (l) TPA, respectively. (m) Ion solvation free energy profile for potassium ions in the TWIK-1 based TASK-1 pore homology model alone (control), in the presence of neutral or charged bupivacaine or TPA.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/39476/elife-39476-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (a) Side-view on a TASK-1 homology model (based on TWIK-1) illustrating the positioning of bupivacaine in the side fenestrations underneath the second pore helices and (b) the respective view from the top. Note that only the second pore loops are located above the fenestrations.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/39476/elife-39476-fig3-figsupp2-v1.jpg)\n\n**Figure 3\u2014figure supplement 2.:** (a) Partial amino acid alignment illustrating the conserved bupivacaine-binding site in TASK-1 and TASK-3. Residues of the bupivacaine-binding site that were validated after 100 ns MD simulations are highlighted in gray, including residues of the pore helices the M2, M3 and M4 segments. (b) Block of TASK-1 and TASK-3 channels by 500 \u00b5M racemic bupivacaine. (c) Dose-response curves of racemic bupivacaine for TASK-1 and TASK-3. (d) Wash-in and onset of TASK-1 and TASK-3 inhibition by 500 \u00b5M bupivacaine (n\u00a0=\u00a03). Data are presented as mean\u00a0\u00b1\u00a0S.E.M.. The numbers of experiments (n) are indicated within the bar graphs.\n\n### Bupivacaine causes an allosteric TASK channel inhibition\n\nTASK-3 channels are blocked by bupivacaine with the similar mechanism (Figure 1p) and sensitivity (Figure 3\u2014figure supplement 2) as TASK-1 channels, which is in line with our observation that the binding site is fully conserved between these two closely related channels (Figure 3\u2014figure supplement 2a). As TASK-3 channels show a very pronounced functional expression (Rinn\u00e9 et al., 2015), we performed inside-out macropatch clamp experiments using this channel. Here we probed for a competition of bupivacaine, which is located in the side fenestrations, with the pore blocking quaternary ammonium compounds TEA and TPA (Piechotta et al., 2011). Consistent with the binding site of bupivacaine we have proposed here, the smaller TEA causes a less pronounced competition and increase in IC50 than TPA, as the binding sites only partially overlap (Figure 3j,k), while TPA is larger and protrudes up to the entry of the side fenestrations (Figure 3j,l). This data is in line with our final docking solution of bupivacaine located in the side fenestrations, at a position that does not allow a physical occlusion of the selectivity filter or prevention of the passage of potassium ions through the inner cavity. Quaternary ammonium compounds do however, in addition to a spatial pore plugging mechanism, also disturb the ion passage by an electrostatic interaction with the permeating ion (Faraldo-G\u00f3mez et al., 2007; Kutluay et al., 2005). Here we calculated the ion solvation free energy profiles which show that TPA induces an ion solvation free energy barrier due to its charge, an effect that was however not present for neutral and charged bupivacaine (Figure 3m). These data indicate that bupivacaine does not disrupt K+ conductance due to an electrostatic repulsion effect. In addition, it supports our hypothesis that it is not the charged bupivacaine causing the voltage-dependence of block and that an allosteric inhibition mechanism causes the untypical K2P channel inhibition.\n\n### MD simulations - binding in the fenestrations prevents fenestration closure\n\nNext, we performed 100 ns of MD simulations with bupivacaine located in the binding site of the side fenestration, analyzing the number of contacts with the key residues identified in our alanine scanning approach. These simulations revealed a stable binding of bupivacaine to the side fenestration and confirmed almost all interactions with the residues that we identified in our functional screen. Only for the residues C110 in the upper and S127 in the lower M2 segment, we observed no contacts with the drug during the MD simulations, as these were not perfectly facing towards the bupivacaine-binding site. These 'hits' were considered as false positives that might have allosterically influenced drug binding or inhibition, as they are in close proximity to the compound and yet do not have direct contact. Notably, we found a high number of contacts with F194, T198 and T199 that are located in the second pore helix (Figure 4a\u2013c). As T199 determines the ion occupancy of the selectivity filter in K2P channels (Schewe et al., 2016), an interaction with this residue and the second pore helix might allosterically interfere with K+ occupancy and conductance of the selectivity filter. In addition, we also observed contacts during the MD simulations with residues of the M3 segment, including S166, C167, T170 and L171 (Figure 4b,c), which is consistent with the significant changes in sensitivity we observed for the M3 mutations C167D,\u00a0L171V\u00a0and the S116A/C167A/T170A triple mutation (Figure 2f and Figure 4\u2014figure supplement 1). The data further support that bupivacaine is not occluding the central cavity and is located in the side fenestrations, interacting with residues of the second pore helix and that bupivacaine is positioned so far laterally that it is able to form weak contacts with residues of the M3 segment.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/39476/elife-39476-fig4-v1.jpg)\n\n**Figure 4.:** (a) Side view on a TWIK-1 based TASK-1 homology model with bupivacaine located in the side fenestrations after 100 ns MD simulations. (b\u2013c) Zoom-ins illustrating 'hit' residues of the alanine scan, which were confirmed in the MD simulations to have contacts with bupivacaine. (d) TASK-1 homology model based on TWIK-1 depicting bupivacaine within the two side fenestrations. (e) Hole analysis before (light gray) and after (gray) 100 ns MD simulations revealing a collapse of the side fenestrations when the channels move to the 'up' state. (f) Hole analysis as in (e), but in the presence of bupivacaine (purple), which prevents the movement to the 'up' state and the concomitant collapse of the fenestrations. (g) TASK-1 homology model in the absence of bupivacaine before (gray) and after 100 ns of MD simulations (black). Green arrows indicate the movement of the M2, M3 and M4 segments causing the 'down' to 'up' transition. (h) TASK-1 homology model in the presence of bupivacaine (green) before (gray) and after (purple) 100 ns, illustrating the lack of the M2, M3 and M4 movements. (i) Root-mean-square fluctuations (RMSF) calculated for the alpha carbons of the M2, M3, P2 and M4 segments in the absence and presence of bupivacaine. (j) Quantitative analysis of the bottleneck radius of the side fenestrations over the time course of 100 ns MD simulations (n\u00a0=\u00a04) in the absence (gray) and presence (purple) of bupivacaine. Data are represented as mean\u00a0\u00b1\u00a0S.E.M.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/39476/elife-39476-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Block by 500 \u00b5M bupivacaine, analyzed for additional mutants of the M3 segment that were generated since the MD simulations predicted contacts with those residues. Inhibition was analyzed at\u00a0+40 mV. Data are presented as mean\u00a0\u00b1\u00a0S.E.M.. The numbers of experiments (n) are indicated within the bar graph.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/39476/elife-39476-fig4-figsupp2-v1.jpg)\n\n**Figure 4\u2014figure supplement 2.:** (a) For each of the four different homology models a total of 20 structures (seeds) were generated by MDs taking a frame every 0.5 ns. Induced fit dockings were performed at the 20 structures per model with 40 or 20 open fenestrations if only one fenestration is in the open state. Only in the TASK-1 model based on TWIK-1 (OO), induced fit dockings identified poses for each structure and for each fenestration (40/40; 100%). (b) Top view of the docking solution in a TWIK-1 (OO) based TASK-1 homology model with the lowest induced fit docking energy, while being compatible with the TEA versus TPA competition experiments. (c) Zoom-in of the top view from (b): induced fit dockings predict a binding model (green) similar to that proposed by classical docking experiments and MD simulations (purple) (Figure 4a\u2013c).\n\n![Figure 4\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/39476/elife-39476-fig4-figsupp3-v1.jpg)\n\n**Figure 4\u2014figure supplement 3.:** (a) Hole analysis of TWIK-1 based TASK-1 homology model before (light gray) and after (gray) 100 ns MD simulation, revealing a collapse of the side fenestrations when the channels move to the 'up' state. (b) Hole analysis as in (a), but in the presence of neutral or (c) charged bupivacaine, which prevents the movement to the 'up' state and the concomitant collapse of the fenestrations.\n\nNext, we used a complementary approach utilizing induced fit docking experiments with four different TASK-1 homology models (Material and methods and Figure 4\u2014figure supplement 2). Here, the highest success rate of the induced fit dockings were again obtained in a TASK-1 model based on TWIK-1-OO (Figure 4\u2014figure supplement 2a). Given the highest success rate in the TWIK-1-based homology model and that TWIK-1 is the closest relative of the crystallized K2P channels, we selected the pose with the lowest IFD energy that is, as described above, also consistent with the TEA versus TPA competition experiments. The induced fit docking solution in the TWIK-OO based TASK-1 homology model is very similar to the one obtained by our classical docking approach (Figure 4\u2014figure supplement 2b\u2013c), confirming the binding site we have proposed above.\n\nSimilar as previously described for TWIK-1 (Jorgensen et al., 2016), TASK-1 channels converted into the 'up' state during MD simulations (100 ns), resulting in a closure of the side fenestrations (Figure 4e,j). Strikingly, this conversion to the 'up' state was prevented during four replicates of 100 ns MD simulations, when charged or uncharged bupivacaine was located in the binding site of the fenestrations (Figure 4d,f,j and Figure 4\u2014figure supplement 3). This transition of the channel from the 'down' to 'up' state, which exclusively occurs in the absence of bupivacaine, is caused by a coordinated movement of the M2, M3 and M4 segments (Figure 4g,h and Video 1), similar as previously reported for 100 ns MD\u00a0simulations of TREK-2 channels (Dong et al., 2015). These movements in the absence of bupivacaine are also reflected by an analysis of the root-mean-square fluctuations (RMSF) (Figure 4i), revealing that the M2-M3 linker and the M4 segment are much more flexible during MD simulations in the absence of bupivacaine. As these movements are expected to concomitantly close the side fenestrations, we have quantitatively analyzed this transition, monitoring the bottleneck diameter of the fenestration in MD simulations over time (Figure 4j). Here the bottleneck radius of the fenestrations quickly and significantly decreases in the absence of bupivacaine, while bupivacaine stabilizes the bottleneck radius of the side fenestrations to remain at about 3 \u00c5 over the whole time period of the 100 ns MD simulations (Figure 4j). Thus, bupivacaine prevents closure of the side fenestrations and the conversion of the channel to the 'up' state. However, whether TASK-1 channels gate in a similar way as TREK-1 channels and whether they physiologically convert into an 'up'-state-like conformation currently remains unknown. Thus, it also remains an open question whether effects of bupivacaine on the architecture of the fenestrations contribute to the allosteric mechanism of inhibition.\n\n![Video 1.](https://cdn.elifesciences.org/articles/39476/elife-39476-video1.mp4.jpg)\n\n**Video 1.:** TASK-1 homology model in the absence (left) and the presence (right) of bupivacaine during 100 ns of MD simulations. Note the lack of major M2, M3 and M4 re-arrangements in the presence of bupivacaine (right).\n\n### Bupivacaine stabilizes the closed state of TASK channels\n\nNext, we performed inside-out single channel measurements of TASK-3 to support the inhibition mechanism proposed above. TASK-3 has longer open times and a higher single channel conductance than TASK-1 and thus is more suitable for an analyses of the inhibition mechanism on a single channel level. Similar as in the whole-cell recordings, bupivacaine caused a preferential inhibition of outwardly-directed single channel events when applied form the intracellular side of the membrane (Figure 5a). In a concentration that reduced the open probability by approximately fifty percent (Figure 5c), bupivacaine did not alter the single channel conductance (Figure 5b) and did not shorten the mean open time (Figure 5d,e) or burst duration (Figure 5\u2014figure supplement 1), effects that are typically observed for open channel blockers. In contrast, bupivacaine stabilized the closed state of the channel resulting in longer closed times (Figure 5f,g). In contrast, TEA, which is a classical voltage-dependent blocker of Kv channels and an open channel blocker of K2P channels (Piechotta et al., 2011), reduced the open times of TASK-3 (Figure 5h\u2013j) and also caused a mild reduction in conductivity of the channels (Figure 5k,l). Thus, the mechanism of bupivacaine inhibition is clearly different to that of a classical open channel blocker, as the drug causes an isolated stabilization of the closed state, consistent with a prevention of voltage-dependent K+-flux gating, which would normally allow a higher conductivity at depolarized membrane potentials.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/39476/elife-39476-fig5-v1.jpg)\n\n**Figure 5.:** (a) Representative inside-out single channel recordings of TASK-3 at\u00a0+140 and \u2212140 mV before (left, black) and after (right, purple) application of 100 \u00b5M bupivacaine and (b) amplitude histogram of the events recorded at\u00a0+140 mV (n\u00a0=\u00a04). (c) Change in relative open probability (NPo) by 100 \u00b5M bupivacaine. (d) Graphical illustration of the open times before and (e) after drug application (n\u00a0=\u00a04). (f) Analyses of the closed time before and (g) after application of 100 \u00b5M bupivacaine (n\u00a0=\u00a04). (h) Representative inside-out single channel recordings of TASK-3 at\u00a0+140 mV before (up, black) and after (down, light pink) application of 100 mM TEA and (i) representative illustration of the open times of a TASK-3 containing patch before and after drug application. (j) Relative change in open times by 100 mM TEA (n\u00a0=\u00a03). (k) Amplitude histogram of the events recorded at\u00a0+140 mV (n\u00a0=\u00a03) and (l) the respective analyses of the relative change in single channel amplitude before (black) and after (light pink) application of 100 mM TEA. Data are represented as mean\u00a0\u00b1\u00a0S.E.M.. The numbers of experiments (n) are indicated within the respective bars.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/39476/elife-39476-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** TASK-3 single channel burst kinetics analyzed after application of 100 \u00b5M bupivacaine to the cytosolic phase of inside-out patches. Data are presented as mean\u00a0\u00b1\u00a0S.E.M.. The numbers of experiments (n) are indicated within the bar graphs.\n\n### A novel allosteric inhibition mechanism interferes with the voltage-dependent activation of TASK channels\n\nThe binding site and inhibition mechanism of bupivacaine is different to that of pore plugging compounds. Bupivacaine is located laterally in the side fenestrations of TASK-1 channels and interacts with residues of the pore helix, the M2, M3 and M4 segments, while pore blockers such as A1899 are located in the central cavity to prevent K+ permeation (Figure 6a,b). As bupivacaine located in the side fenestration interferes with the voltage-dependent K+-flux gating, the increased outward currents that are physiologically present upon depolarization are impaired, resulting in a lack of outward rectification and a preferential inhibition of outward currents (Figure 6c). In conclusion, the weak voltage-dependent inhibition of TASK channels that we describe here, results from a new allosteric inhibition mechanism, which operates by preventing the voltage-dependent K+-flux gating.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/39476/elife-39476-fig6-v1.jpg)\n\n**Figure 6.:** (a) Illustration of the bupivacaine binding mode in the side fenestrations (left), preventing K+-flux gating, which requires a K+ filled selectivity filter (right cartoon). The closed state or collapsed selectivity filter is indicated by one potassium ion (black dot). (b) A1899 located in the central cavity (left) is binding in an 'anchor'-shaped like structure which occludes the pore and thus prevents K+ permeation (right cartoon). Here the K+ occupancy of the selectivity filter is not disturbed (illustrated by two black dots in the selectivity filter). (c) Schematic illustration of the proposed gating model of TASK-1. The upper panel illustrates the selectivity filter in the open state and the lower panel the TASK channel. 'C' indicates the closed state conformation of the selectivity filter (one potassium ion located before the collapsed filter) and 'O' indicates the open state with a K+ filled selectivity filter (here two potassium ions illustrated). SF indicates the selectivity filter and F the side fenestrations. The voltage-dependent (\u0394V) opening of the selectivity filter gate (K+-flux gating) preferentially results in the typical outwardly rectifying K+ currents. The presence of bupivacaine in the side fenestrations prevents the voltage-dependent K+-flux gating, resulting in reduced outward currents at depolarized potentials and thus a voltage-dependent inhibition.\n\n## Discussion\n\nUtilizing systematic alanine scanning mutagenesis, in\u00a0silico\u00a0docking experiments and MD\u00a0simulations, combined with voltage-clamp and single channel measurements, we identified the molecular basis for a novel inhibition mechanism for K2P channels, which functions in an allosteric and voltage-dependent manner. While for TASK channels no crystallographic structures have been reported so far, the data describing the bupivacaine\u00a0binding site, together with the allosteric inhibition mechanism we present here, allows valuable predictions regarding the structure of these channels. We propose that TASK-1 channels must have lateral fenestrations large enough to accommodate drugs and that binding of bupivacaine in the fenestrations allosterically prevents the voltage-dependent K+ flux gating.\n\nWhile we identified specific residues to exclusively affect block by bupivacaine and not A1899, there is still a partial overlap to the binding site of the open channel blocker A1899 (i.e. residues I118, I235, G236, L239 and N240). This apparent discrepancy can be explained by the fact that many of the A1899 binding residues (Streit et al., 2011) are not strictly 'pore facing' and are likely to be also accessible from the side fenestrations (Ram\u00edrez et al., 2017). In general, one has to consider that reduced inhibition of a mutant does not necessarily imply binding at the respective site, as it is conceivable that the mutation affects the block allosterically. This caveat has to be specifically considered when studying mutations that might simultaneously interfere with drug binding and the gating mechanism, like in the case of T199C (Schewe et al., 2016). However, the fact that we conclusively mapped a binding site that includes a large set of residues and that this site was confirmed by in\u00a0silico\u00a0dockings, MD simulations and TEA/TPA competition experiments, must lead to the conclusion that we have identified the most likely binding mode for bupivacaine.\n\nTASK channels provide two side fenestrations as putative allosteric binding sites for the most likely channel inhibition we describe here. The slope factor of the bupivacaine dose-response curve does not indicate a cooperativity of inhibition, suggesting that binding in one of the fenestrations does not facilitate the binding in the second. Thus, it is possible that binding to one of the fenestrations is sufficient to cause channel inhibition or that both sites are occupied by the drug, but channel inhibition is achieved in an additive and non-cooperative manner.\n\nBupivacaine located in the side fenestrations interacts with residues of the second pore helix. Noteworthy, mutations homologous to T199C of P2 were reported to alter K+-flux gating of K2P channels by changing the ion occupancy in the selectivity filter (Schewe et al., 2016). Thus, bupivacaine interacting with residues of the second pore helix (F194, T198 and T199) might interfere with the K+-flux gating by disturbing the initiation of the proper K+ occupancy in the selectivity filter. In this context, it might be possible that the ability of bupivacaine to selectively induce a voltage-dependent inhibition of TASK-1 and TASK-3 reflects that channels of this K2P channel subfamily seem to undergo a distinct gating mechanism, which is disrupted by the drug. This is supported by the fact that TASK-1/-3 channels do not show the typical Rb+-dependent gating, with strongly increased conductivity by Rb+, as the other K+-flux gated K2P channels (Schewe et al., 2016).\n\nThe local anesthetic bupivacaine is a low potent multi-channel blocking drug, affecting sodium and potassium channels. However, utilizing this compound we were able to identify a novel drug-binding site and allosteric inhibition mechanism, providing the molecular basis for the rational drug design of potent K2P channel modulators with distinct biophysical features. The binding site in the side fenestration is fully conserved for TASK-1 and TASK-3, while it is distinct to that of other K2P channels. Thus, the fenestrations provide the molecular basis for novel K2P channel subtype specific blockers and a new principle of action that might be beneficial for future drugs targeting diseases of excitable tissue, like in arrhythmias, epilepsies and diabetes.\n\n## Materials and methods\n\n### Oocyte preparation, cRNA synthesis and cRNA injection\n\nOocytes were obtained from anesthetized Xenopus laevis frogs as described previously (Streit et al., 2011) and incubated in OR2 solution containing (in mM): NaCl 82.5, KCl 2, MgCl2 1, HEPES 5 (pH 7.5), supplemented with 2 mg/ml collagenase II (Sigma) to remove residual connective tissue. Subsequently, oocytes were stored at 18\u00b0C in ND96 solution containing (in mM): NaCl 96, KCl 2, CaCl2 1.8, MgCl2 1, HEPES 5 (pH 7.5), supplemented with 50 mg/l gentamycine, 274 mg/l sodium pyruvate and 88 mg/l theophylline. Human TASK-1 channels were subcloned into a pSGEM or pBF1 vector and point mutations were introduced using the QuikChange site-directed mutagenesis kit (Stratagene). Human TASK-3, TREK-2, TRAAK, TRESK, TASK-2 and TREK-1 channel constructs were used in an oocyte expression vector (pSGEM or pBF1). cDNA was linearized with NheI or MluI and cRNA was synthesized with mMESSAGE mMACHINE-Kit (Ambion). The quality of cRNA was tested using gel electrophoresis and cRNA was quantified with the NanoDrop 2000 UV-Vis spectrophotometer (Thermo Scientific). Oocytes were each injected with 50 nl of cRNA.\n\n### TEVC recordings\n\nAll TEVC recordings were performed at room temperature (20\u201322\u00b0C) with a TurboTEC 10 CD (npi) amplifier and a Digidata 1200 Series (Axon Instruments) as A/D converter. Micropipettes were made from borosilicate glass capillaries GB 150TF-8P (Science Products) and pulled with a DMZ-Universal Puller (Zeitz). Recording pipettes had a resistance of 0.5\u20131.2 M\u03a9 and were filled with 3 M KCl solution. ND96 or KD96 were used as recording solutions. KD96 solution contained (in mM): NaCl 2, KCl 96, CaCl2 1.8, MgCl2 1, HEPES 5 (pH 7.5). Block was analyzed with voltage steps from a holding potential of \u221280 mV. A first test pulse to 0 mV of 1 s duration was followed by a repolarizing step to \u221280 mV for 1 s, directly followed by another 1 s test pulse to\u00a0+40 mV. The sweep time interval was 10 s. The IV relationships in ND96 solution were measured from a holding potential of \u221280 mV (in KD96 from a holding potential of 0 mV) with voltage steps ranging from \u221270 to\u00a0+70 mV with 10 mV increments for 200 ms. Data were acquired with Clampex 10 (Molecular Devices), analyzed with Clampfit 10 (Molecular Devices) and Origin 2016 (OriginLab Corporation).\n\n### Inside-out macropatch clamp recordings\n\nMacropatch recordings from Xenopus laevis oocytes in inside-out configuration under voltage-clamp conditions were made at room temperature 72\u2013120 hr after injection of 50 nl channel specific cRNA. Thick-walled borosilicate glass pipettes had resistances of 0.3\u20130.9 M\u03a9 (tip diameter of 5\u201315 \u00b5m) and were filled with extracellular solution containing (in mM): KCl 4, NMDG 116, HEPES 10 and CaCl2 3.6 (pH was adjusted to 7.4 with KOH/HCl). Bath solution was applied to the cytoplasmic side of excised macropatches via a gravity flow multi-barrel application system and had the following composition (in mM): KCl 120, HEPES 10, EGTA 2 and Pyrophosphate 1. The various appropriate pH levels (pH 5.0, pH 9.0) were adjusted with KOH/HCl. Macroscopic currents from hTASK-3 channels (NM_001282534) were acquired with an EPC10 amplifier (HEKA electronics, Lamprecht, Germany) at a continuous voltage of\u00a0+60 mV, sampled at 10 kHz and filtered analogue to 3 kHz (\u22123 dB). Tetrapentylammonium chloride (TPA-Cl) and bupivacaine hydrochloride monohydrate were purchased from Sigma-Aldrich and stored as stock solutions (100 mM) at \u221220\u00b0C. The drugs were diluted in intracellular bath solution to final concentrations prior to each measurement. For data analysis Igor pro (WaveMetrics Inc, Portland, USA) software was used. The relative steady-state level of blockage for bupivacaine was fitted with the Hill equation: base + (max - base)/[xhalf/x)H], where base\u00a0=\u00a0inhibited (zero) current, max\u00a0=\u00a0maximum current, x\u00a0=\u00a0ligand concentration, xhalf\u00a0=\u00a0value of concentration for half-maximal occupancy of the ligand binding site and H\u00a0=\u00a0Hill coefficient.\n\n### Inside-out single channel patch clamp recordings\n\nSingle channel patch clamp recordings in the inside-out configuration using Xenopus oocytes were performed similar as previously described (Rinn\u00e9 et al., 2015). Therefore, the vitelline membranes were manually removed from the oocytes after shrinkage by adding mannitol to the bath solution. All experiments were conducted at room temperature 24\u201348 hr after cRNA (0.005 ng hTASK-3 per oocyte) injection. Borosilicate glass capillaries GB 150TF-8P (Science Products) were pulled with a DMZ-Universal Puller (Zeitz) and had resistances of 4\u20136 M\u03a9. Capillaries were filled with bath solution containing (in mM): KCl 140, HEPES 5, EGTA 1 (pH 7.4 adjusted with KOH/HCl). Bupivacaine and tetraethylammonium chloride (TEA-Cl) were added to the bath solution before each measurement, having final concentrations of 100 \u00b5M and 100 mM, respectively. Single channel currents were recorded with an Axopatch 200B amplifier (Axon Instruments), a Digidata 1550B A/D converter (Axon Instruments) and pClamp10 software (Axon Instruments) and were sampled at 15 kHz with the analog filter set to 2 kHz. Voltage pulses were applied from 0 mV (holding potential) to\u00a0+140 mV and/or \u2212140 mV for 1 s with an interpulse interval of 8 s. Data were analyzed with ClampFit10 and Origin 2016 (OriginLab Corporation).\n\n### Drugs and IC50 values\n\nAll drugs were dissolved in DMSO, aliquoted, stored at \u221220\u00b0C or room temperature and added to the external solution (ND96 or KD96) just before the recordings. Stock solutions had a concentration of 125 mM (R/S-bupivacaine), 125 mM (R-bupivacaine), 125 mM (S-bupivacaine), 10 mM (A293) and 10 mM (A1899). The IC50 was determined from Hill plots using four concentrations for each construct. Final DMSO concentration did not exceed 0.001%.\n\n### Molecular modeling\n\nAs previously described (Ram\u00edrez et al., 2017) five different homology models were generated for human TASK-1 (UniProtKB accession number: O14649) based on TREK-2 with the two fenestrations closed (TREK-2-CC, PDB ID: 4BW5), TREK-2 with both fenestrations opened (TREK-2-OO, PDB ID: 4XDK), TRAAK with two fenestrations opened (TRAAK-OO, PDB ID: 3UM7), TRAAK with one fenestration closed and the other open (TRAAK-CO, PDB ID: 4I9W) and TWIK-1 with two fenestrations opened (TWIK-1-OO, PDB ID: 3UMK). Side chain modeling was performed with the Biased Probability Monte Carlo (BPMC) method (Abagyan and Totrov, 1994). The models were embedded into a pre-equilibrated membrane in a periodic boundary condition box with water molecules and ions. Each system was subjected to minimization and 10 ns molecular dynamics (MD) simulation, as previously described (Ram\u00edrez et al., 2017). To resolve the fenestrations dimensions of the TASK-1 structures HOLE (Smart et al., 1996) was used in the last frame of the MD\u00a0simulations. For each MD\u00a0simulation, a total of 20 structures were saved (one snapshot each 0.5 ns) to perform the docking using the Glide v.7.4 module of the Schr\u00f6dinger suite (Friesner et al., 2004).\n\n### Classical and Induced Fit Docking experiments\n\nAll TASK-1 models were selected as docking targets. Ten conformers of bupivacaine were generated using ConfGen (Watts et al., 2010) to enhance the sampling of the ligand. One grid was generated in each fenestration, another grid in the central cavity and a fourth grid that includes the two fenestrations and the central cavity. Standard precision mode (SP) of Glide was used for docking and 8000 bupivacaine poses per TASK-1 model were obtained (100 poses per grid in each frame, 20 frames per model), except for TASK-1 based on TREK-2-CC, where only 2000 poses were obtained because fenestrations are closed. The Conformer Cluster script (available in www.schrodinger.com/scriptcenter/) was used to process and to organize the poses. The clustering was done by RMSD (\u22642 \u00c5) considering only the heavy atoms of the bupivacaine. Poses within significant clusters (Bottegoni et al., 2006) were chosen for calculation of the experimental interaction score (EIS), for which a score for each interaction between bupivacaine and the residues of the binding site for each pose was assigned, as previously described (Ram\u00edrez et al., 2017). For TPA and TEA molecular docking, a TASK-1 model based on TWIK-1 was aligned with the KcsA crystal structure (PDB ID: 1J95) (Zhou et al., 2001) and a docking procedure similar to that reported for channel TREK-1 was performed (Piechotta et al., 2011). Schr\u00f6dinger\u2019s Induced Fit Docking (IFD) (Sherman et al., 2006) was performed using Glide v.7.4 (Friesner et al., 2004) with the standard precision mode. Here,\u00a0for each pose, a Prime structure prediction adjusts the ligand by reorienting nearby side chains. First we generated 20 different starting structures (seeds) for each homology model, by taking a frame from an MD simulation every 0.5 ns. We performed induced fit dockings using the 20 different starting structures for each homology model. This reflects 40 or only 20 induced fit dockings per homology model if only one fenestration is in the open state. For the initial ligand sampling, docking grid was centered on a selection of the experimental hits residues of each fenestration. A van der Waals radii of 0.5 \u00c5 for protein and ligand was used and 20 poses were generated for each structure per opened fenestration. Residues within 5 \u00c5 of each docking solution were minimized using Prime module of Schr\u00f6dinger suite (Prime, version 4.7, Schr\u00f6dinger, LLC, New York, NY, 2017). Subsequently, using the poses that survived this first round of induced fit dockings, a redocking without vdW scaling was carried out and the best structure according to the induced fit docking score was generated.\n\n### Molecular Dynamics simulations and RMSF calculation\n\nTASK-1 models based on TWIK-1 alone and in complex with the bupivacaine best docking solution were subjected to a conjugate gradient energy minimization and MD\u00a0simulations in Desmond v3.0 using OPLS-2005 (Jorgensen et al., 2016; Kaminski et al., 2001) force field. The TASK-1 channels, as well as the channel-ligand complex, were embedded into a POPC lipid bilayer and were solvated by an orthorhombic box of SPC water model, covering the whole surface of each system. Cl- were used as counter ions in order to neutralize the systems and 0.096 M KCl was added to match the concentration used in electrophysiological measurements. The temperature was maintained at 300 K, while pressure was kept at one atm, employing the Nose-Hoover thermostat method with a relaxation time of 1 ps using the MTK algorithm (Martyna et al., 1994). Each simulation was conducted with 2.5 fs time steps. Two MD\u00a0simulations for each system were performed; the first 40 ns were executed applying a restraint spring constant of 0.5 kcal\u00a0\u00d7\u00a0mol\u22121 \u00d7 \u00c5\u22122 to the secondary structure of the receptor, then, the last frame was taken and a second non-restricted 100\u00a0ns\u2013MD\u00a0simulation was performed. Data for docking simulations and HOLE analysis were collected every 0.5 ns in the last 100\u00a0ns-MD\u00a0simulation. To characterize local changes along TASK1, the Root Mean Square Fluctuation (RMSF) was calculated over the trajectory using the following equation:\n\n$$\nRMSF_{i}=\u00a0\\sqrt{\\frac{1}{T}\\sumt=1T\u27e8r_{i}^{\u2032}(t)\u2212r_{i}(t_{ref})\u27e9^{2}}\n$$\n\nWhere $T$\u00a0is the trajectory time over which the RMSF is calculated, $t$\u00a0is the reference time (the beginning of the MD simulation), $r$\u00a0is the position of residue\u00a0$i$; $r^{i}$\u00a0is the position of atoms in residue $i$\u00a0after superposition on the reference, and the angle brackets indicate that the average of the square distance is taken over the selection of atoms in the residue.\n\n### Ion solvation energy calculations\n\nIon solvation energy was calculated using the Adaptive Poisson-Boltzmann Solver (APBS) software (Callenberg et al., 2010) to calculate the Poisson-Boltzmann equation in an APBSmem interface (Baker et al., 2001). A TASK-1 model based on TWIK-1 was used for the continuum electrostatic calculations. The selectivity filter of the channel was aligned to the Z axis. The parameters used are summarized in Supplementary file 1.\n\n### Quantification and statistical analysis\n\nEvery dataset was tested with a Shapiro-Wilk test for normality. Equality of variances was tested using either a parametric or non-parametric Levene's test. In case of similar variances, significance was probed using either a paired or unpaired Student's t-test and for not normally distributed data, a non-parametric Mann-Whitney U-test and a Wilcoxon signed-rank test for paired analyses was used, respectively. If the variances of the groups were different, significance was probed using either Welch\u2019s t-test and for not normally distributed data Mood\u2019s median test was used. Experiments were non-randomized and non-blinded and no pre-specified sample size was estimated. All data are presented as mean\u00a0\u00b1\u00a0S.E.M. and all experiments were repeated from N\u00a0=\u00a02\u20135 different batches (biological replicates). The number of experiments (n) as technical replicates are indicated in the subpanels of the Figures. Significances are indicated with *, p\u00a0<\u00a00.05; **, p\u00a0<\u00a00.01; ***, p\u00a0<\u00a00.001 in the Figures and the statistical method applied is provided in the respective Figure legend.\n",
+      "created_at": "2025-12-02T08:52:58.678421Z"
+    },
+    {
+      "id": "efc5ab22-d4fe-4619-b742-9eb24e9560cb",
+      "submission_id": "260026dc-fce3-4c56-a17c-666178c1e1a7",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Baron Chanda, University of Wisconsin-Madison United States\n\nReviewers:\n- Vincenzo Carnevale, Temple University United States\n\n## Review text\n\nDOI: [10.7554/eLife.39476.022](https://doi.org/10.7554/eLife.39476.022)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for sending your article entitled \"The molecular basis for an allosteric inhibition of K+-flux gating in K2P channels\" for peer review at eLife. Your article is being evaluated by two peer reviewers, and the evaluation is being overseen by a Reviewing Editor and Richard Aldrich as the Senior Editor.\n\nGiven the list of essential revisions, including new experiments, the editors and reviewers invite you to respond within the next two weeks with an action plan and timetable for the completion of the additional work. We plan to share your responses with the reviewers and then issue a binding recommendation.\n\nReviewer #1:\n\nThe manuscript by Rinn\u00e9 et al. reports the discovery of the binding site of the local anesthetics bupivacaine to the two-pore-domain potassium channel TASK-1. A combination of electrophysiology and molecular modeling is used to characterize inhibition and to infer the structure of the drug-channel complex. The major finding of the paper is that bupivacaine binds to the \"fenestrations\", protein cavities whose volume decreases dramatically on transitioning from the \"down\" to the \"up\" state. The hypothesized selective affinity for the \"down\" state then rationalizes the inhibitory effect, since voltage-dependent opening of the channel preferentially occurs from the \"up\" state. The paper is well written and overall compelling. The conclusions are supported by a careful combination of experiments and calculations. Concerning the molecular modeling component, the calculations have been competently performed and rigorously analyzed. I recommend publication of this manuscript after the authors have addressed the following concerns.\n\n1) the comparative homology modeling component is clearly crucial for the subsequent docking calculations. Especially in light of this relevance, the information about the modeling protocol provided in this manuscript is too scant. There are several aspects that need to be extensively described:\n\na) Choice of the template: several experimental structures have been preliminary explored, what is the phylogenetic relationship of all these genes with TASK-1? Are these all paralogs? Which one is the closest relative?\n\nb) Side chain modeling: how was this done? This is a clearly relevant issue for subsequent docking and it is absolutely necessary for the reader to know what method was used and if more than one of the state of the art methods (e.g SCWRL) was compared.\n\n2) Somewhat connected to the previous point is the docking protocol: given the degree of uncertainty about the side chains, it might be advisable to attempt some Induced Fit Docking, since in this approach side chains are reconstructed from scratch after the optimal docking pose has been found. This could eliminate some dependency on the initial model.\n\n3) A crucial point supporting the allosteric mechanism is the observation from MD simulations that, without the drug, a channel starting in the \"down\" state transitions quickly top the \"up\" one (while this does not happen in presence of the drug). While I find the idea intriguing, there is little information in the manuscript about this conformational transition. A more descriptive and quantitative presentation of this result is necessary. In particular, the authors should describe the motion of the major structural elements of the channel in time to rationalize this \"down\" to \"up\" transition and compare the two cases, with and without the drug.\n\nReviewer #2:\n\nThis manuscript addresses the mechanism of action of a local anesthetic sodium channel blocker bupivacaine on TASK1/3 channels. The paper shows that the block differs in subtle but perhaps important ways from other recognized pore blockers, and the argument is made that the insights gained may lead to development of specific TASK blockers. Unfortunately, efforts to 'sell' the paper make it difficult to read, but also highlight logical weaknesses that seriously undermine the story.\n\n1) In general, the writing style leads to some important misleads. In part, this may be a problem of literal translation from German to English (e.g. first paragraph of the Results section should be \"Initially we aimed to investigate.\u2026 such as A21899.\u2026\", not as written. In the third sentence 'Speed' refers to distance travelled over time. You mean rate), but it also reflects an attempt to oversell the story, and to casually move from suggestion to acceptance. This is a problem throughout.\n\n2) The authors stress an apparently different mechanism of action for bup vs the other blockers, but this seems a bit of a stretch. First, the voltage-dependence of block (Figure 1C) is extremely shallow \u2013 too shallow to calculate apparently, and there is a hint of voltage-dependence in the A1899 and A293 records, which could be more apparent at higher concentrations, or more negative voltages. Second, while pointing out novel residues identified as affecting block, the authors seem to ignore the relevance of key residues involved in A1899/A293 block (i.e. res 118, 235, 239 and 240) also being key to bup block. The authors also uncritically assume that these residues are directly involved in blocker binding, but the old saw remains true \u2013 action does not imply binding. It is conceivable that additional residues affect the block allosterically. Somewhere it would be beneficial to see the structures of each of the blockers. Finally, the authors highlight the apparent preferential inhibition of the 'activating' fraction of the current at positive voltages by bup, but not the other blockers. This fraction appears to be ~20% of the control current at +70mV, but this fraction seems not only to be lost for 500 \u03bcM bup, but also seems to be reduced by much lower concentrations of A1899 and A293.\n\n3) In the process of explaining the results the authors make 2 novel suggestions: (1) that voltage dependent gating of TASK channels involves \"down\"-to-\"up\" conformational changes and closing of the fenestrations; and (2) that bupi binds within the fenestrations to exert its effect. The authors use alanine-scanning mutagenesis to probe the binding site for bup. Later, they propose that bup may prevent voltage-activation by binding within the fenestrations and preventing the down-to-up conformational changes involved in voltage-dependent activation of TASK channels (a new concept). In this model, bup binding must be state-dependent. So, any of the mutations identified as hits from the alanine scan could easily decrease drug sensitivity by shifting the conformational equilibrium or channel gating behaviour. In this regard it would be important to demonstrate that the most important/impactful mutations do not significantly alter intrinsic channel behavior. This idea is clearly illustrated in the data: Mutation of the pore helix residue T199 reduces inhibition. But if inhibition preferentially blocks voltage-dependent gating, and mutation of T199 abolishes voltage-dependent gating \u2013 then it follows that block will be affected, and interaction with this site is not proven.\n\nIn subsection \u201cTASK-1 channels are fenestrated providing the bupivacaine binding site\u201d they state \"Here we noted that the best overlap with our functional data is given for docking solutions with bupivacaine located in the side fenestrations\u2026\". This approach seems biased. Rather than performing unbiased docking and then taking the most likely poses for testing, they have selected docking results to fit the previous data \u2013 how was \"best overlap\" determined? They also state that docking solutions increase as the size of the fenestration increases \u2013 this seems like a tautology. Nothing will bind if there is no room? Support for the fenestration binding site would be provided by showing the drug acts in a state-dependent manner on other K2P channels, e.g. what effect does mechanoactivation of TRAAK/TREK channels have on the voltage-independent inhibition by bup?\n\nIn Results paragraph one the authors state that \"varying the intracellular pH\u2026did not alter the TASK-2 affinity\". Use of \"affinity\" should be avoided for referred measures of effect, better to use \"apparent affinity\" or \"sensitivity\". More importantly, pHi does induce a significant shift in sensitivity. This is of course hidden somewhat by the log plot of IC50 in Figure 1R, but there is ~ 3 fold decrease in IC50 from neutral to pH 9, right around the predicted pKa8.1 of bup (https://pubchem.ncbi.nlm.nih.gov/compound/bupivacaine), although within the confines of the channel pore, free solution estimates may not be relevant anyway.\n\nThe authors present a model wherein voltage-dependent conformational changes move channels into the up state, and bup binding prevents this conformational change. If correct, then voltage-activation should decrease accessibility of the fenestration binding site for bup, and thereby decrease drug sensitivity. However, there is scant evidence to support the model that voltage-gating involves down-to-up transitions, and as the model for bup inhibition relies on this premise, the proposed paradigm breaks down: The authors draw analogies to TREK/TRAAK channels and suggest that bup may bind and prevent voltage-dependent gating by preventing down-to-up conformational changes (subsection \u201cMD simulations \u2013 binding in the fenestrations prevents fenestration gating\u201d and \u201cBupivacaine stabilizes the closed state of TASK channels\u201d). However, for TREK-2, voltage-dependent activation, has no major effect on state-dependent inhibition by norfluoxetine \u2013 suggesting that voltage-dependent gating does not involve down-to-up transitions (McClenaghan et al., 2016). Furthermore, Schewe and colleagues previously showed that AA and stretch activation (which provoke down-to-up transitions: Aryal et al. 2017, McClenaghan et al., 2016, Brennecke et al., 2018) converts channels into non-voltage dependent, constitutively open states. Taken together, this suggests that up-to-down transition gating and voltage-dependent gating may be structurally distinct. Therefore it is not logically clear why bup binding and prevention of down-to-up transition would specifically affect voltage-dependent gating.\n\n4) The above are concerns with the results and interpretations themselves. In the text describing them, there are many somewhat rhetorical, but potentially misleading statements that are apparently there to guide the reader to the authors' desired interpretation. For instance \"These data argue against a contribution of the biophysical features, like the charge of the compound, to the voltage-dependent inhibition\". First, the data being described don't fit \u2013 for TREK1, TRAAK and TASK2 the trend is also towards a qualitatively similar (if even weaker) voltage-dependence (Figure 1P). Second, it is not clear how the biophysical features, including the charge of the compound, could NOT contribute to the voltage-dependence? The authors state that \"TASK1.\u2026 most likely reflecting increased currents due to the K flux gating at the selectivity filter..\" and that \".. K2P channels operate as a one-way check valve..\". This is not the case \u2013 the current is for the most part linear around the reversal potential. And \"..time-dependent current 'inactivation'\" is not at all visible in Figure 1A. Then the authors conclude the first section with \"Our data indicate that bupivacaine does not act as a classical open channel blocker\", and \"is utilizing a novel K2P channel inhibiting mechanism impairing voltage-dependent K flux gating\". At least the first point seems incorrect \u2013 everything points to a very weakly voltage-dependent block from somewhere below the selectivity filter \u2013 classical pore blocking. In this regard, 'trans knock-off' experiments assessing the ability of external [K] to influence the block would be informative.\n\n5) In the Discussion there are many grammatical and rhetorical missteps, some of which really detract from the underlying potential, and should be carefully revised. e.g:\n\nSentence two should be \"no crystallographic structures have been reported so far\u2026\" and \"valuable predictions regarding the structure\"\n\nSentence four:.\"Currently, the most likely model is..\" is oxymoronic and a biased statement. 'Likely' means likely to be correct, but a model is never correct. Should read something like \"A likely model is\" or to be rally agnostic \"One model is\"\n\nDiscussion paragraph two: \"TASK channels provide two side fenestrations as allosteric binding sites for the channel inhibition we describe here\", and paragraph three \"Bupivacaine located in the side fenestrations interacts with residues of the second pore helix. These sentences mix up so many interpretations, hopes, and potential falsehoods \u2013 all as fact, that I am not sure where to begin to parse them out.\n\nParagraph four: Finally \"These drugs would have little or no effect on the membrane potential\u2026\" seems to indicate a lack of understanding. We are talking about K channels, and blocking them will affect the membrane potential. The voltage-dependence of the block itself is not the relevant issue.\n\n[Editors' note: further revisions were requested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \"The molecular basis for an allosteric inhibition of K+-flux gating in K2P channels\" for further consideration at eLife. Your revised article has been favorably evaluated by Richard Aldrich (Senior Editor), a Reviewing Editor, and two reviewers.\n\nThe authors have done a good job of addressing the major concerns of the reviewers and making it more readable. The manuscript has certainly improved a lot but there are some remaining issues that need to be addressed before acceptance, as outlined below:\n\n1) The clarifications regarding the proposed model not claiming that the 'down' to 'up' transition is intrinsically voltage-dependent, that the authors conclude that bup prevents transition from 'down' to 'up' conformations, and that voltage-dependent gating preferentially occurs from the 'up' state, are appreciated. However, there is still some concern that the model is built upon a flawed premise. The authors are correct in saying that the Aryal et al., Brennecke and de Groot, and McClenaghan et al., papers suggest that the related TREK/TRAAK channels preferentially open from the up state (as stated in the Introduction and Discussion first paragraph), but these studies do not support the proposal that voltage-dependent activation preferentially occurs from the up-state. On the contrary, in TREK/TRAAK channels, mechanical activation involves down-to-up transitions, which Schewe et al., show involves conversion to the non-voltage-dependent \"leak-mode\". Therefore, the 'up' conformation will be less voltage-sensitive in TREK/TRAAK channels, which does not provide support for voltage-dependent activation of K2P channels in general occurring preferentially from the up-state as proposed in the Introduction and Discussion paragraph one. Since some of the present authors are also key authors on the Cell 'leak-mode' paper, perhaps they can clarify this apparent contradiction.\n\n2) Furthermore, the present model relies on TASK channels interconverting between down and up conformations, which in itself is still a novel idea and cannot be assumed to occur by simple analogy with related TREK/TRAAK channels. The MD simulations provide the only hint that such conformation changes occur, and there does not appear to be any experimental evidence. What do the authors propose controls this interconversion? Is this involved in normal channel gating/regulation? Interestingly, the authors state that a leak mode has never been reported for the TASK channels. Could this be because they never adopt an 'up' conformation?\n\n3) In the absence of experimental evidence for 'down' to 'up' conformational changes (MD simulations aside), and the questionable logic that voltage-dependent gating occurs preferentially from the up state, the proposed model still falters. Accepting the extensive mutagenesis, docking, and new K+ knock-off experiments (a welcome addition), which do support the idea that bup binds within the fenestrations, is it not equally plausible (and applying Occam's razor, more so), that bup binding is more likely to allosterically prevent voltage-dependent selectivity filter gating (flux gating) without any need to invoke down-to-up conformational changes \u2013 as is actually suggested in Discussion paragraph four?\n",
+      "created_at": "2025-12-02T08:52:58.678421Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T08:52:58.678421Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T08:52:58.678421Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "3f1f8ca7-d838-42ff-8cea-b83cf5b65f25",
+      "content_id": "06b4bfb3-a538-46ac-8604-ce596986e484",
+      "claim_id": "C1",
+      "claim": "K2P channels are key regulators of many physiological and pathophysiological processes and thus emerged as promising drug targets.",
+      "claim_type": "EXPLICIT",
+      "source": "Two-pore-domain potassium (K2P) channels are key regulators of many physiological and pathophysiological processes and thus emerged as promising drug targets.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about K2P channels that draws from established scientific consensus about their physiological importance and therapeutic potential.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:52:58.678421Z"
+    },
+    {
+      "id": "dfe7bb2d-cf37-4b84-9e79-00d7e8ef4d9b",
+      "content_id": "06b4bfb3-a538-46ac-8604-ce596986e484",
+      "claim_id": "C2",
+      "claim": "There is a lack of selective blockers for K2P channels, since drugs preferentially bind to a conserved binding site located in the central cavity.",
+      "claim_type": "EXPLICIT",
+      "source": "As for other potassium channels, there is a lack of selective blockers, since drugs preferentially bind to a conserved binding site located in the central cavity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous work in the manuscript and represents established knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:52:58.678421Z"
+    },
+    {
+      "id": "8eca009a-1a27-4f41-b124-1e991d4e3e21",
+      "content_id": "06b4bfb3-a538-46ac-8604-ce596986e484",
+      "claim_id": "C3",
+      "claim": "A novel binding site and allosteric inhibition mechanism was identified that disrupts the K+-flux gating mechanism of K2P channels.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we identified a novel binding site and allosteric inhibition mechanism, disrupting the recently proposed K+-flux gating mechanism of K2P channels, which results in an unusual voltage-dependent block of leak channels belonging to the TASK subfamily.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main finding of the study, supported by experimental data presented throughout the manuscript including mutagenesis, docking, and electrophysiology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:52:58.678421Z"
+    },
+    {
+      "id": "1754d77c-fe03-4993-a31e-3a2fdb451037",
+      "content_id": "06b4bfb3-a538-46ac-8604-ce596986e484",
+      "claim_id": "C4",
+      "claim": "Crystallographic K2P channel structures revealed that the extracellular M1-P1 linkers of the dimeric channels form a large extracellular 'cap'.",
+      "claim_type": "EXPLICIT",
+      "source": "Crystallographic K2P channel structures revealed that the extracellular M1-P1 linkers of the dimeric channels form a large extracellular 'cap' (Brohawn et al., 2012; Miller and Long, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous crystallographic studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:52:58.678421Z"
+    },
+    {
+      "id": "a2a4be6b-17bf-4a42-9dd7-89b7a0d8c276",
+      "content_id": "06b4bfb3-a538-46ac-8604-ce596986e484",
+      "claim_id": "C5",
+      "claim": "TASK channels sense pH-variations in the physiological range and are modulated by volatile and intravenous anesthetics.",
+      "claim_type": "EXPLICIT",
+      "source": "TWIK-related acid-sensitive K+ (TASK) channels sense pH-variations in the physiological range and are modulated by volatile and intravenous anesthetics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about TASK channel properties.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:52:58.678421Z"
+    },
+    {
+      "id": "2bacf545-38d2-4a1c-81c1-365145194a6c",
+      "content_id": "06b4bfb3-a538-46ac-8604-ce596986e484",
+      "claim_id": "C6",
+      "claim": "TASK-like currents are found in various tissues and TASK channels are drug targets for many diseases, including diabetes.",
+      "claim_type": "EXPLICIT",
+      "source": "TASK-like currents are found in various tissues and TASK channels are drug targets for many diseases, including diabetes (Pisani et al., 2016), obstructive sleep apnea (Kiper et al., 2015), pulmonary hypertension (Bohnen et al., 2017), and arrhythmias, like atrial fibrillation (Kiper et al., 2015; Liang et al., 2014; Limberg et al., 2011) or conduction disorders (Decher et al., 2011; Friedrich et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:52:58.678421Z"
+    },
+    {
+      "id": "a918d120-d3f6-4c33-9fe8-5ca96b904795",
+      "content_id": "06b4bfb3-a538-46ac-8604-ce596986e484",
+      "claim_id": "C7",
+      "claim": "There is a lack of selective K2P channel blockers, since drugs preferentially bind to a conserved binding site located in the central cavity of potassium channels.",
+      "claim_type": "EXPLICIT",
+      "source": "As in other K+ channels, there is a lack of selective K2P channel blockers, since drugs preferentially bind to a conserved binding site located in the central cavity of potassium channels (Decher et al., 2004; Marzian et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:52:58.678421Z"
+    },
+    {
+      "id": "6e4070e9-2e1a-4bc8-8d8d-983aa130405e",
+      "content_id": "06b4bfb3-a538-46ac-8604-ce596986e484",
+      "claim_id": "C8",
+      "claim": "K2P channel crystal structures revealed putative binding sites outside the central cavity, the 'side fenestrations', which are openings towards the lipid bilayer of the membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, the recently reported K2P channel crystal structures revealed putative binding sites outside the central cavity, the 'side fenestrations', which are openings towards the lipid bilayer of the membrane (Brohawn et al., 2012; Miller and Long, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to crystallographic studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:52:58.678421Z"
+    },
+    {
+      "id": "32fb50d2-8455-49d9-8c1f-53fd4b0ba796",
+      "content_id": "06b4bfb3-a538-46ac-8604-ce596986e484",
+      "claim_id": "C9",
+      "claim": "It was suggested that drugs and cellular lipids could bind to the side fenestrations.",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, it was suggested that drugs and cellular lipids could bind to these locations (Miller and Long, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation from previous work, supported by citation.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:52:58.678421Z"
+    },
+    {
+      "id": "2faf1c24-ad07-4524-ac1f-b36a5b35ceae",
+      "content_id": "06b4bfb3-a538-46ac-8604-ce596986e484",
+      "claim_id": "C10",
+      "claim": "Norfluoxetine, the active metabolite of the antidepressant drug fluoxetine (Prozac), which blocks TREK channels, binds to the lateral fenestrations of TREK-2.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, norfluoxetine, the active metabolite of the antidepressant drug fluoxetine (Prozac), which blocks TREK channels, binds to these lateral fenestrations of TREK-2 (Dong et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:52:58.678421Z"
+    },
+    {
+      "id": "e61b37a5-97d1-4c22-8b17-c24ad35fe608",
+      "content_id": "06b4bfb3-a538-46ac-8604-ce596986e484",
+      "claim_id": "C11",
+      "claim": "Little is currently known about allosteric K2P channel block mechanisms.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite recent advances in the understanding of the molecular pharmacology of TREK channel blockers (Dong et al., 2015; Luo et al., 2017) and activators (Lolicato et al., 2017), little is currently known about allosteric K2P channel block mechanisms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a knowledge gap statement supported by citations to recent work.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:52:58.678421Z"
+    },
+    {
+      "id": "4f1d59f3-e1dd-48bc-a301-eff63e5713b0",
+      "content_id": "06b4bfb3-a538-46ac-8604-ce596986e484",
+      "claim_id": "C12",
+      "claim": "K2P channels were crystallized in two different states, the so called 'up' and 'down' state.",
+      "claim_type": "EXPLICIT",
+      "source": "K2P channels were crystallized in two different states, the so called 'up' and 'down' state (Brohawn et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to a crystallographic study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:52:58.678421Z"
+    },
+    {
+      "id": "3ad5f370-c6e4-4b5d-880c-56e1a5350708",
+      "content_id": "06b4bfb3-a538-46ac-8604-ce596986e484",
+      "claim_id": "C13",
+      "claim": "The 'up' state is primarily achieved by a lateral movement of the M4 segments, resulting in the closure of the side fenestrations.",
+      "claim_type": "EXPLICIT",
+      "source": "The 'up' state is primarily achieved by a lateral movement of the M4 segments, resulting in the closure of the side fenestrations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge from structural studies.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:52:58.678421Z"
+    },
+    {
+      "id": "391dd22a-c086-4885-b170-ff24bf0bcfff",
+      "content_id": "06b4bfb3-a538-46ac-8604-ce596986e484",
+      "claim_id": "C14",
+      "claim": "Brohawn et al. proposed that the 'up' state reflects the conductive state of the channels.",
+      "claim_type": "EXPLICIT",
+      "source": "Brohawn et al. proposed that the 'up' state reflects the conductive state of the channels (Brohawn et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:52:58.678421Z"
+    },
+    {
+      "id": "5075b761-ec3f-4790-8332-fda9bd227d1a",
+      "content_id": "06b4bfb3-a538-46ac-8604-ce596986e484",
+      "claim_id": "C15",
+      "claim": "Recent studies propose a gating model for TREK channels in which the channels can in fact open from the 'down' state, albeit opening preferentially occurs from the 'up' state.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistently, recent studies propose a gating model for TREK channels in which the channels can in fact open from the 'down' state, albeit opening preferentially occurs from the 'up' state (Brennecke and de Groot, 2018; McClenaghan et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to recent studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:52:58.678421Z"
+    },
+    {
+      "id": "d79f8721-e6d5-4faa-b281-d1da489308db",
+      "content_id": "06b4bfb3-a538-46ac-8604-ce596986e484",
+      "claim_id": "C16",
+      "claim": "The gating at the selectivity filter itself occurs in a voltage-dependent manner with potassium ions as the voltage-sensing particles, resulting in increased outward currents upon depolarization.",
+      "claim_type": "EXPLICIT",
+      "source": "The gating at the selectivity filter itself occurs in a voltage-dependent manner with potassium ions as the voltage-sensing particles, resulting in increased outward currents upon depolarization (Schewe et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:52:58.678421Z"
+    },
+    {
+      "id": "f6c448a5-742c-4ea4-a9a1-c1c99383fcc3",
+      "content_id": "06b4bfb3-a538-46ac-8604-ce596986e484",
+      "claim_id": "C17",
+      "claim": "The local anesthetic bupivacaine blocks TASK-1 in a voltage-dependent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "In our current study, we found that the local anesthetic bupivacaine blocks TASK-1 in a voltage-dependent manner, which is a very unusual feature for a 'leak' channel blocker.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study, supported by experimental data shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:52:58.678421Z"
+    },
+    {
+      "id": "7ca43651-0477-4a48-8b03-b5915b80f6b5",
+      "content_id": "06b4bfb3-a538-46ac-8604-ce596986e484",
+      "claim_id": "C18",
+      "claim": "The binding site of bupivacaine is located in the side fenestrations of TASK-1, underneath the second pore helices.",
+      "claim_type": "EXPLICIT",
+      "source": "Using functional mutagenesis screens, in silico drug dockings and molecular dynamics (MD) simulations, we identified the binding site of this unusual K2P channel blocker, which is located in the side fenestrations of TASK-1, underneath the second pore helices.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding supported by mutagenesis data (Figure 2), docking studies (Figure 3), and MD simulations (Figure 4).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:52:58.678421Z"
+    },
+    {
+      "id": "d64bd215-d878-4018-950f-62dd0a8e84f9",
+      "content_id": "06b4bfb3-a538-46ac-8604-ce596986e484",
+      "claim_id": "C19",
+      "claim": "The drug is positioned so far laterally in the fenestrations that it does not cause a classical pore occlusion.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, the drug is positioned so far laterally in the fenestrations that it does not cause a classical pore occlusion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by structural modeling data (Figure 3) and functional data showing different mechanism than pore blockers (Figure 5).",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:52:58.678421Z"
+    },
+    {
+      "id": "ffec2021-ed0f-4f1c-8c38-998fb8c3bcd3",
+      "content_id": "06b4bfb3-a538-46ac-8604-ce596986e484",
+      "claim_id": "C20",
+      "claim": "Bupivacaine causes a novel allosteric block mechanism disrupting the K+-flux gating at the selectivity filter which results in TASK-1 channels with an unusual inward-rectification and accordingly a voltage-dependent inhibition.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we describe a novel allosteric block mechanism disrupting the K+-flux gating at the selectivity filter which results in TASK-1 channels with an unusual inward-rectification and accordingly a voltage-dependent inhibition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main mechanistic finding of the study, supported by electrophysiological data (Figures 1, 5) and structural data (Figures 3, 4).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:52:58.678421Z"
+    },
+    {
+      "id": "74254d3d-1286-4404-8289-8bc2f4dc66d3",
+      "content_id": "06b4bfb3-a538-46ac-8604-ce596986e484",
+      "claim_id": "C21",
+      "claim": "Both bupivacaine enantiomers and the racemic drug blocked TASK-1 outward currents with equal potencies.",
+      "claim_type": "EXPLICIT",
+      "source": "Using the Xenopus oocyte expression system both bupivacaine enantiomers and the racemic drug blocked TASK-1 outward currents with equal potencies (Figure 1\u2014figure supplement 1a,b), similar to that previously described for the racemic drug (Leonoudakis et al., 1998)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1\u2014figure supplement 1a,b and citation to previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:52:58.678421Z"
+    },
+    {
+      "id": "2d34465c-fa1f-44a5-8caa-373a6262ebe5",
+      "content_id": "06b4bfb3-a538-46ac-8604-ce596986e484",
+      "claim_id": "C22",
+      "claim": "The rate of inhibition was not significantly different for the bupivacaine enantiomers.",
+      "claim_type": "EXPLICIT",
+      "source": "and the rate of inhibition was not significantly different for the enantiomers (Figure 1\u2014figure supplement 1c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1\u2014figure supplement 1c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:52:58.678421Z"
+    },
+    {
+      "id": "dcb267b4-d640-4e20-896b-b13e0c051fa7",
+      "content_id": "06b4bfb3-a538-46ac-8604-ce596986e484",
+      "claim_id": "C23",
+      "claim": "Bupivacaine preferentially blocks outward currents, converting the linear current-voltage relationship of TASK-1 into an inwardly rectifying channel behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, bupivacaine preferentially blocks outward currents (Figure 1a\u2013c), converting the linear current-voltage relationship of TASK-1 into an inwardly rectifying channel behavior (Figure 1a,b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1a-c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:52:58.678421Z"
+    },
+    {
+      "id": "62f9b61e-2a6e-40de-8513-ed83920a0f8b",
+      "content_id": "06b4bfb3-a538-46ac-8604-ce596986e484",
+      "claim_id": "C24",
+      "claim": "This effect is caused by a voltage-dependent inhibition of TASK-1, a feature which has never been reported before for a K2P channel blocker.",
+      "claim_type": "EXPLICIT",
+      "source": "This effect is caused by a voltage-dependent inhibition of TASK-1 (Figure 1c,d), a feature which has never been reported before for a K2P channel blocker.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1c,d and represents a novel finding.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:52:58.678421Z"
+    },
+    {
+      "id": "526c4279-ad40-4f52-af57-934ad52e8640",
+      "content_id": "06b4bfb3-a538-46ac-8604-ce596986e484",
+      "claim_id": "C25",
+      "claim": "The voltage-dependence of block is only present for TASK-1 and TASK-3 channels, but not for other K2P channels like TREK-1, TREK-2, TRAAK, TRESK or TASK-2.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the voltage-dependence of block is only present for TASK-1 and TASK-3 channels (Figure 1p), but not for other K2P channels like TREK-1, TREK-2, TRAAK, TRESK or TASK-2 (Figure 1p and Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1p and Figure 1\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:52:58.678421Z"
+    },
+    {
+      "id": "57e59f64-0abd-4648-abc7-dc8f901412df",
+      "content_id": "06b4bfb3-a538-46ac-8604-ce596986e484",
+      "claim_id": "C26",
+      "claim": "Varying the intracellular pH in inside-out patches did not alter the TASK-3 sensitivity for bupivacaine.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, varying the intracellular pH in inside-out patches did not alter the TASK-3 sensitivity for bupivacaine, which further supports that the voltage-dependence of TASK-1 and TASK-3 inhibition is most likely not caused by charged bupivacaine molecules (Figure 1q,r).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1q,r.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:52:58.678421Z"
+    },
+    {
+      "id": "849771e6-de51-4059-b63f-281f851031ce",
+      "content_id": "06b4bfb3-a538-46ac-8604-ce596986e484",
+      "claim_id": "C27",
+      "claim": "Bupivacaine significantly abrogates the time-dependent K+-flux-gated outward current component of TASK-1.",
+      "claim_type": "EXPLICIT",
+      "source": "Most importantly, in addition to the preferential block of outward currents by bupivacaine, the drug also significantly abrogates the time-dependent K+-flux-gated outward current component of TASK-1 (Figure 1e and Figure 1\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1e and Figure 1\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:52:58.678421Z"
+    },
+    {
+      "id": "189a4800-55f1-460d-90e4-ba52d862e3be",
+      "content_id": "06b4bfb3-a538-46ac-8604-ce596986e484",
+      "claim_id": "C28",
+      "claim": "This kinetic of inhibition of the outward currents is very unusual for K2P channel blockers, which normally just cause a 'shrinking' of the overall current amplitude without affecting channel kinetics.",
+      "claim_type": "EXPLICIT",
+      "source": "This kinetic of inhibition of the outward currents is very unusual for K2P channel blockers, which normally just cause a 'shrinking' of the overall current amplitude without affecting channel kinetics (Putzke et al., 2007; Streit et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous work and comparison with experimental data.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:52:58.678421Z"
+    },
+    {
+      "id": "2ae240d2-05c5-4134-a4d3-e9816d975585",
+      "content_id": "06b4bfb3-a538-46ac-8604-ce596986e484",
+      "claim_id": "C29",
+      "claim": "While increasing extracellular potassium concentration gradually decreased TASK-1 block by A1899, the inhibition of TASK-1 by bupivacaine was not affected.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, while increasing extracellular potassium concentration gradually decreased TASK-1 block by A1899, the inhibition of TASK-1 by bupivacaine was not affected (Figure 1\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1\u2014figure supplement 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:52:58.678421Z"
+    },
+    {
+      "id": "1a1eaab9-b18b-4beb-a571-92332f648934",
+      "content_id": "06b4bfb3-a538-46ac-8604-ce596986e484",
+      "claim_id": "C30",
+      "claim": "Bupivacaine does not act as a classical open channel blocker and is utilizing a novel K2P channel inhibiting mechanism impairing voltage-dependent K+-flux gating.",
+      "claim_type": "EXPLICIT",
+      "source": "Summarizing, our data indicate that bupivacaine does not act as a classical open channel blocker and is utilizing a novel K2P channel inhibiting mechanism impairing voltage-dependent K+-flux gating.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from multiple experimental observations presented in Figure 1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:52:58.678421Z"
+    },
+    {
+      "id": "12748354-a58f-44ce-b071-c06665ec7630",
+      "content_id": "06b4bfb3-a538-46ac-8604-ce596986e484",
+      "claim_id": "C31",
+      "claim": "The binding site of bupivacaine is most likely different to that of TASK-1 open channel blockers, such as A1899.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the binding site of bupivacaine is most likely different to that of TASK-1 open channel blockers, such as A1899.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the different mechanisms of action observed experimentally.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:52:58.678421Z"
+    },
+    {
+      "id": "ff923b8e-5897-415d-b938-40ce436d7606",
+      "content_id": "06b4bfb3-a538-46ac-8604-ce596986e484",
+      "claim_id": "C32",
+      "claim": "A1899 binds from the intracellular side to the central cavity of TASK-1 by interacting with several residues of the pore lining M2 and M4 segments and residues of the K+ channel signature sequence near the selectivity filter, ultimately resulting in a pore occlusion.",
+      "claim_type": "EXPLICIT",
+      "source": "A1899 binds from the intracellular side to the central cavity of TASK-1 by interacting with several residues of the pore lining M2 and M4 segments and residues of the K+ channel signature sequence near the selectivity filter, ultimately resulting in a pore occlusion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge from previous work by the authors.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:52:58.678421Z"
+    },
+    {
+      "id": "b616c04f-0408-48f9-9b32-93ffde9bddee",
+      "content_id": "06b4bfb3-a538-46ac-8604-ce596986e484",
+      "claim_id": "C33",
+      "claim": "Several residues were identified for which the bupivacaine sensitivity was diminished by mutations at the binding site that was previously identified for A1899, including I118 in M2 and I235, G236, L239 and N240 in M4.",
+      "claim_type": "EXPLICIT",
+      "source": "We identified several residues for which the bupivacaine sensitivity was diminished by mutations at the binding site that was previously identified for A1899, including I118 in M2 and I235, G236, L239 and N240 in M4 (classic 'hits') (Figure 2a\u2013c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by mutagenesis data shown in Figure 2a-c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:52:58.678421Z"
+    },
+    {
+      "id": "71386a5e-d061-43d5-a9ef-5ad74c6ac93b",
+      "content_id": "06b4bfb3-a538-46ac-8604-ce596986e484",
+      "claim_id": "C34",
+      "claim": "Novel 'hits' were identified including C110A, M111A, A114V, Q126A and S127A in the M2 segment, as well as V234A and F238A in the M4 segment.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we also identified novel 'hits' including C110A, M111A, A114V, Q126A and S127A in the M2 segment, as well as V234A and F238A in the M4 segment (Figure 2a\u2013c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by mutagenesis data shown in Figure 2a-c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:52:58.678421Z"
+    },
+    {
+      "id": "04f9cb2a-ad0d-467b-b8ef-e03447f978d8",
+      "content_id": "06b4bfb3-a538-46ac-8604-ce596986e484",
+      "claim_id": "C35",
+      "claim": "T198 of the second pore loop (P2) was identified to be relevant for drug block, while the homologous mutation (T92A) in the first pore loop did not affect bupivacaine sensitivity.",
+      "claim_type": "EXPLICIT",
+      "source": "In the pore signature sequence, we identified T198 of the second pore loop (P2) to be relevant for drug block, while the homologous mutation (T92A) in the first pore loop did not affect bupivacaine sensitivity (Figure 2b,c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by mutagenesis data shown in Figure 2b,c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:52:58.678421Z"
+    },
+    {
+      "id": "cef6148d-71c0-4b09-b875-aa233e31ccb0",
+      "content_id": "06b4bfb3-a538-46ac-8604-ce596986e484",
+      "claim_id": "C36",
+      "claim": "The bupivacaine binding site is clearly different to that of A1899.",
+      "claim_type": "EXPLICIT",
+      "source": "Next, we used a TASK-1 homology model based on the down state of TRAAK to make further predictions and to illustrate the residues of the bupivacaine binding site (Figure 2d) which is clearly different to that of A1899 (Figure 2e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by structural modeling shown in Figure 2d,e and mutagenesis data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:52:58.678421Z"
+    },
+    {
+      "id": "064feb30-19b6-4cb6-a6c4-3a1a9b245324",
+      "content_id": "06b4bfb3-a538-46ac-8604-ce596986e484",
+      "claim_id": "C37",
+      "claim": "The bupivacaine binding site is more 'V'-like shaped, as the compound appears to interact with residues that are in the upper sideward part of the cavity, such as C110, M111 and A114.",
+      "claim_type": "EXPLICIT",
+      "source": "The bupivacaine binding site is more 'V'-like shaped, as the compound appears to interact with residues that are in the upper sideward part of the cavity, such as C110, M111 and A114 (Figure 2d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by structural modeling shown in Figure 2d.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:52:58.678421Z"
+    },
+    {
+      "id": "d2ce607a-6e78-4f72-a7c7-9fbc6cf3fc26",
+      "content_id": "06b4bfb3-a538-46ac-8604-ce596986e484",
+      "claim_id": "C38",
+      "claim": "Bupivacaine might be located laterally underneath the pore helices, in the side fenestrations that were previously described for other K2P channels.",
+      "claim_type": "EXPLICIT",
+      "source": "These data suggest that bupivacaine might be located laterally underneath the pore helices, in the side fenestrations that were previously described for other K2P channels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on mutagenesis data and structural modeling.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:52:58.678421Z"
+    },
+    {
+      "id": "bc3096a7-c413-4322-8ebd-815815c048ba",
+      "content_id": "06b4bfb3-a538-46ac-8604-ce596986e484",
+      "claim_id": "C39",
+      "claim": "A strong reduction of the bupivacaine sensitivity was observed by mutations of the second threonines of the pore signature sequence (T93C, T199C) in P1 and P2.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we identified a strong reduction of the bupivacaine sensitivity by mutations of the second threonines of the pore signature sequence (T93C, T199C) in P1 and P2 (Figure 2f), residues previously described to alter the K+-flux gating of K2P channels (Schewe et al., 2016).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by mutagenesis data shown in Figure 2f and citation to previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:52:58.678421Z"
+    },
+    {
+      "id": "94107566-8f1a-43ac-ade6-ad7867679650",
+      "content_id": "06b4bfb3-a538-46ac-8604-ce596986e484",
+      "claim_id": "C40",
+      "claim": "Only the second pore helices are expected to be located above the side fenestrations.",
+      "claim_type": "EXPLICIT",
+      "source": "Given the two-fold rhomboid symmetry of K2P channels, only the second pore helices are expected to be located above the side fenestrations (Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on structural knowledge of K2P channels.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:52:58.678421Z"
+    },
+    {
+      "id": "0f4e06a2-b27e-4271-ba3e-0a1b7bdd7ddf",
+      "content_id": "06b4bfb3-a538-46ac-8604-ce596986e484",
+      "claim_id": "C41",
+      "claim": "Only strong sensitivity changes were identified for mutations located in the P2 pore helix (F194A, T198C).",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, we only identified strong sensitivity changes for mutations located in the P2 pore helix (F194A, T198C) (Figure 2f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by mutagenesis data shown in Figure 2f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:52:58.678421Z"
+    },
+    {
+      "id": "a7078d49-5fef-462a-b43d-02a16927b174",
+      "content_id": "06b4bfb3-a538-46ac-8604-ce596986e484",
+      "claim_id": "C42",
+      "claim": "A weak but significant reduction of the bupivacaine sensitivity was observed for the L171V mutant in the M3 segment.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, we also observed weak but significant reduction of the bupivacaine sensitivity for the L171V mutant in the M3 segment (Figure 2f), which is expected to be located at the entry to the lateral fenestrations.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by mutagenesis data shown in Figure 2f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:52:58.678421Z"
+    },
+    {
+      "id": "d96d058d-17d2-403b-8fa6-f7c0dd1943a6",
+      "content_id": "06b4bfb3-a538-46ac-8604-ce596986e484",
+      "claim_id": "C43",
+      "claim": "With gradually increasing the diameter of the side fenestration, the number of bupivacaine docking solutions (conformers) in the fenestrations and the number of clusters in the fenestrations strongly increased.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we noted that with gradually increasing the diameter of the side fenestration (Figure 3a\u2013e) the number of bupivacaine docking solutions (conformers) in the fenestrations and the number of clusters in the fenestrations strongly increased (Figure 3a\u2013e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by docking data shown in Figure 3a-e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:52:58.678421Z"
+    },
+    {
+      "id": "2cc5f51f-3b04-4e07-890b-1e4e98912717",
+      "content_id": "06b4bfb3-a538-46ac-8604-ce596986e484",
+      "claim_id": "C44",
+      "claim": "TWIK-1 is the closest relative to TASK-1 with a sequence identity of 26.1%.",
+      "claim_type": "EXPLICIT",
+      "source": "Genes encoding the crystallized TWIK and TREK/TRAAK channels are paralogs of KCNK3 encoding TASK-1 and within these channels TWIK-1 is the closest relative to TASK-1 with a sequence identity of 26.1%.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement about sequence identity that can be verified through sequence analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:52:58.678421Z"
+    },
+    {
+      "id": "993b5497-23fe-41ee-8cba-dfba9ffb010c",
+      "content_id": "06b4bfb3-a538-46ac-8604-ce596986e484",
+      "claim_id": "C45",
+      "claim": "TWIK-1 and TASK-1 share functional similarities, that is they change their permeability upon extracellular acidification and they form heterodimeric channels.",
+      "claim_type": "EXPLICIT",
+      "source": "These genetic lines of evidence are further supported by the fact that TWIK-1 and TASK-1 share functional similarities, that is they change their permeability upon extracellular acidification and they form heterodimeric channels (Ma et al., 2012; Plant et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:52:58.678421Z"
+    },
+    {
+      "id": "d1a5324d-8532-455f-b55a-24c9c94961a6",
+      "content_id": "06b4bfb3-a538-46ac-8604-ce596986e484",
+      "claim_id": "C46",
+      "claim": "The TWIK-1 based homology model showed by far the most significant clusters (15) and conformers (1420) in the side fenestrations.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, the TWIK-1 based homology model showed by far the most significant clusters (15) and conformers (1420) in the side fenestrations (Figure 3e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by docking data shown in Figure 3e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:52:58.678421Z"
+    },
+    {
+      "id": "b8aef39b-8cf9-443b-930e-835fc4caeb6f",
+      "content_id": "06b4bfb3-a538-46ac-8604-ce596986e484",
+      "claim_id": "C47",
+      "claim": "Analyzing the free energy of the docking solutions (MM-GBSA) that fit the best to functional data revealed that the most stable docking solutions are generated using the TWIK-based TASK-1 homology model.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, analyzing the free energy of the docking solutions (MM-GBSA) (Ram\u00edrez et al., 2017) that fit the best to our functional data, revealed that the most stable docking solutions are generated using the TWIK-based TASK-1 homology model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by computational analysis of docking energies.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:52:58.678421Z"
+    },
+    {
+      "id": "4f4662d5-101f-4f6e-af5f-080f1b9fa1ae",
+      "content_id": "06b4bfb3-a538-46ac-8604-ce596986e484",
+      "claim_id": "C48",
+      "claim": "TASK-1 channels are likely to exhibit large side fenestrations similar as other K2P channels.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, we propose that TASK-1 channels are likely to exhibit large side fenestrations similar as other K2P channels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion inferred from docking studies and structural modeling.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:52:58.678421Z"
+    },
+    {
+      "id": "bd5efeb6-7ff1-46a3-87f2-8d740c3a7722",
+      "content_id": "06b4bfb3-a538-46ac-8604-ce596986e484",
+      "claim_id": "C49",
+      "claim": "In the best docking solution, bupivacaine is located in the side fenestrations underneath the M3-P2 pore helices.",
+      "claim_type": "EXPLICIT",
+      "source": "In the best docking solution, bupivacaine is located in the side fenestrations (Figure 3g) located underneath the M3-P2 pore helices (Figure 3h and Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by docking data shown in Figure 3g,h and Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:52:58.678421Z"
+    },
+    {
+      "id": "c13d480f-8a37-41e1-bf2a-359982302e63",
+      "content_id": "06b4bfb3-a538-46ac-8604-ce596986e484",
+      "claim_id": "C50",
+      "claim": "The 'classical' drug-binding site residues I118 of the M2 segment and I235 of the M4 segment have an intermediate location between the central cavity and the side fenestrations and also interact with bupivacaine.",
+      "claim_type": "EXPLICIT",
+      "source": "The 'classical' drug-binding site residues I118 of the M2 segment and I235 of the M4 segment have an intermediate location between the central cavity and the side fenestrations and also interact with bupivacaine (Figure 3g\u2013h).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by structural modeling shown in Figure 3g-h.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:52:58.678421Z"
+    },
+    {
+      "id": "17e1af9c-31e9-4a7b-8855-23662153de7f",
+      "content_id": "06b4bfb3-a538-46ac-8604-ce596986e484",
+      "claim_id": "C51",
+      "claim": "The 'atypical' and novel residues identified, with C110, M111 and A114 of M2, F194, T198 and T199 of the M3-P2 linker and V234 and F238 of M4, face towards the side fenestrations and the drug.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, the 'atypical' and novel residues identified, with C110, M111 and A114 of M2, F194, T198 and T199 of the M3-P2 linker and V234 and F238 of M4, face towards the side fenestrations and the drug (Figure 3g,h).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by structural modeling shown in Figure 3g,h.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:52:58.678421Z"
+    },
+    {
+      "id": "74767d1a-06fd-487a-b7d0-dd804dab38fc",
+      "content_id": "06b4bfb3-a538-46ac-8604-ce596986e484",
+      "claim_id": "C52",
+      "claim": "The drug is located in a thin sewer connecting the side fenestration with the central cavity, explaining the preferential interaction with the second of the two pore helices.",
+      "claim_type": "EXPLICIT",
+      "source": "The drug is located in a thin sewer connecting the side fenestration with the central cavity, explaining the preferential interaction with the second of the two pore helices, as this is positioned directly above the drug (Figure 3i and Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by structural modeling shown in Figure 3i and Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:52:58.678421Z"
+    },
+    {
+      "id": "25ba4e89-6b82-4a57-8229-02867f89b4bb",
+      "content_id": "06b4bfb3-a538-46ac-8604-ce596986e484",
+      "claim_id": "C53",
+      "claim": "TASK-1 channels converted into the 'up' state during MD simulations (100 ns), resulting in a closure of the side fenestrations.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar as previously described for TWIK-1 (Jorgensen et al., 2016), TASK-1 channels converted into the 'up' state during MD simulations (100 ns), resulting in a closure of the side fenestrations (Figure 4e,j).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by MD simulation data shown in Figure 4e,j and citation to previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:52:58.678421Z"
+    },
+    {
+      "id": "e5c34742-06f9-4a35-b23f-e525dee3d85d",
+      "content_id": "06b4bfb3-a538-46ac-8604-ce596986e484",
+      "claim_id": "C54",
+      "claim": "This conversion to the 'up' state was prevented during four replicates of 100 ns MD simulations, when charged or uncharged bupivacaine was located in the binding site of the fenestrations.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, this conversion to the 'up' state was prevented during four replicates of 100 ns MD simulations, when charged or uncharged bupivacaine was located in the binding site of the fenestrations (Figure 4d,f,j and Figure 4\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by MD simulation data shown in Figure 4d,f,j and Figure 4\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:52:58.678421Z"
+    },
+    {
+      "id": "eb051f47-b3c5-4179-bf32-fe66aeea867b",
+      "content_id": "06b4bfb3-a538-46ac-8604-ce596986e484",
+      "claim_id": "C55",
+      "claim": "The transition of the channel from the 'down' to 'up' state is caused by a coordinated movement of the M2, M3 and M4 segments.",
+      "claim_type": "EXPLICIT",
+      "source": "This transition of the channel from the 'down' to 'up' state, which exclusively occurs in the absence of bupivacaine, is caused by a coordinated movement of the M2, M3 and M4 segments (Figure 4g,h and Video 1), similar as previously reported for 100 ns MD simulations of TREK-2 channels (Dong et al., 2015).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by MD simulation data shown in Figure 4g,h and Video 1, and citation to previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:52:58.678421Z"
+    },
+    {
+      "id": "e1f436fb-6689-441e-8b60-978538240b6c",
+      "content_id": "06b4bfb3-a538-46ac-8604-ce596986e484",
+      "claim_id": "C56",
+      "claim": "The M2-M3 linker and the M4 segment are much more flexible during MD simulations in the absence of bupivacaine.",
+      "claim_type": "EXPLICIT",
+      "source": "These movements in the absence of bupivacaine are also reflected by an analysis of the root-mean-square fluctuations (RMSF) (Figure 4i), revealing that the M2-M3 linker and the M4 segment are much more flexible during MD simulations in the absence of bupivacaine.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by RMSF analysis shown in Figure 4i.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:52:58.678421Z"
+    },
+    {
+      "id": "03be9cec-9d84-4497-95b1-ab1a141a87a2",
+      "content_id": "06b4bfb3-a538-46ac-8604-ce596986e484",
+      "claim_id": "C57",
+      "claim": "The bottleneck radius of the fenestrations quickly and significantly decreases in the absence of bupivacaine, while bupivacaine stabilizes the bottleneck radius of the side fenestrations to remain at about 3 \u00c5 over the whole time period of the 100 ns MD simulations.",
+      "claim_type": "EXPLICIT",
+      "source": "Here the bottleneck radius of the fenestrations quickly and significantly decreases in the absence of bupivacaine, while bupivacaine stabilizes the bottleneck radius of the side fenestrations to remain at about 3 \u00c5 over the whole time period of the 100 ns MD simulations (Figure 4j).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by quantitative analysis of MD simulations shown in Figure 4j.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:52:58.678421Z"
+    },
+    {
+      "id": "60110ea1-beb1-45d3-9085-bd0a53725fb0",
+      "content_id": "06b4bfb3-a538-46ac-8604-ce596986e484",
+      "claim_id": "C58",
+      "claim": "Bupivacaine prevents closure of the side fenestrations and the conversion of the channel to the 'up' state.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, bupivacaine prevents closure of the side fenestrations and the conversion of the channel to the 'up' state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from MD simulation data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:52:58.678421Z"
+    },
+    {
+      "id": "163aedf2-c20a-404e-af70-6e733b39cb9f",
+      "content_id": "06b4bfb3-a538-46ac-8604-ce596986e484",
+      "claim_id": "C59",
+      "claim": "TASK-3 has longer open times and a higher single channel conductance than TASK-1 and thus is more suitable for an analyses of the inhibition mechanism on a single channel level.",
+      "claim_type": "EXPLICIT",
+      "source": "TASK-3 has longer open times and a higher single channel conductance than TASK-1 and thus is more suitable for an analyses of the inhibition mechanism on a single channel level.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the biophysical properties of these channels.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:52:58.678421Z"
+    },
+    {
+      "id": "33656cb4-e166-4703-b958-fa2902d07def",
+      "content_id": "06b4bfb3-a538-46ac-8604-ce596986e484",
+      "claim_id": "C60",
+      "claim": "Bupivacaine caused a preferential inhibition of outwardly-directed single channel events when applied form the intracellular side of the membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar as in the whole-cell recordings, bupivacaine caused a preferential inhibition of outwardly-directed single channel events when applied form the intracellular side of the membrane (Figure 5a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by single channel data shown in Figure 5a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:52:58.678421Z"
+    },
+    {
+      "id": "480e15f8-59ca-4b07-b8bb-cbfc481ea405",
+      "content_id": "06b4bfb3-a538-46ac-8604-ce596986e484",
+      "claim_id": "C61",
+      "claim": "In a concentration that reduced the open probability by approximately fifty percent, bupivacaine did not alter the single channel conductance.",
+      "claim_type": "EXPLICIT",
+      "source": "In a concentration that reduced the open probability by approximately fifty percent (Figure 5c), bupivacaine did not alter the single channel conductance (Figure 5b)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by single channel data shown in Figure 5b,c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:52:58.678421Z"
+    },
+    {
+      "id": "d5304522-5b0a-47e3-bf80-39c82021ecb9",
+      "content_id": "06b4bfb3-a538-46ac-8604-ce596986e484",
+      "claim_id": "C62",
+      "claim": "Bupivacaine did not shorten the mean open time or burst duration.",
+      "claim_type": "EXPLICIT",
+      "source": "and did not shorten the mean open time (Figure 5d,e) or burst duration (Figure 5\u2014figure supplement 1), effects that are typically observed for open channel blockers.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by single channel data shown in Figure 5d,e and Figure 5\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:52:58.678421Z"
+    },
+    {
+      "id": "7971edb3-9d2e-44e7-87c1-8a16fb1f4f1a",
+      "content_id": "06b4bfb3-a538-46ac-8604-ce596986e484",
+      "claim_id": "C63",
+      "claim": "Bupivacaine stabilized the closed state of the channel resulting in longer closed times.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, bupivacaine stabilized the closed state of the channel resulting in longer closed times (Figure 5f,g).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by single channel data shown in Figure 5f,g.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:52:58.678421Z"
+    },
+    {
+      "id": "0330927c-ec5b-48ae-a306-f3e79aae47e7",
+      "content_id": "06b4bfb3-a538-46ac-8604-ce596986e484",
+      "claim_id": "C64",
+      "claim": "TEA reduced the open times of TASK-3 and also caused a mild reduction in conductivity of the channels.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, TEA, which is a classical voltage-dependent blocker of Kv channels and an open channel blocker of K2P channels (Piechotta et al., 2011), reduced the open times of TASK-3 (Figure 5h\u2013j) and also caused a mild reduction in conductivity of the channels (Figure 5k,l).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by single channel data shown in Figure 5h-l and citation to previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:52:58.678421Z"
+    },
+    {
+      "id": "5533d7aa-8fac-4809-821e-69943bf391f3",
+      "content_id": "06b4bfb3-a538-46ac-8604-ce596986e484",
+      "claim_id": "C65",
+      "claim": "The mechanism of bupivacaine inhibition is clearly different to that of a classical open channel blocker, as the drug causes an isolated stabilization of the closed state, consistent with a prevention of voltage-dependent K+-flux gating.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the mechanism of bupivacaine inhibition is clearly different to that of a classical open channel blocker, as the drug causes an isolated stabilization of the closed state, consistent with a prevention of voltage-dependent K+-flux gating, which would normally allow a higher conductivity at depolarized membrane potentials.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from single channel data comparing bupivacaine to TEA.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:52:58.678421Z"
+    },
+    {
+      "id": "95a09cd6-4559-4623-8344-179b7187c23a",
+      "content_id": "06b4bfb3-a538-46ac-8604-ce596986e484",
+      "claim_id": "C66",
+      "claim": "The binding site and inhibition mechanism of bupivacaine is different to that of pore plugging compounds.",
+      "claim_type": "EXPLICIT",
+      "source": "The binding site and inhibition mechanism of bupivacaine is different to that of pore plugging compounds.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion based on all the experimental data presented.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:52:58.678421Z"
+    },
+    {
+      "id": "7f26406a-7510-47c5-bd8d-456e12c6eb7c",
+      "content_id": "06b4bfb3-a538-46ac-8604-ce596986e484",
+      "claim_id": "C67",
+      "claim": "Bupivacaine is located laterally in the side fenestrations of TASK-1 channels and interacts with residues of the pore helix, the M2, M3 and M4 segments.",
+      "claim_type": "EXPLICIT",
+      "source": "Bupivacaine is located laterally in the side fenestrations of TASK-1 channels and interacts with residues of the pore helix, the M2, M3 and M4 segments, while pore blockers such as A1899 are located in the central cavity to prevent K+ permeation (Figure 6a,b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a summary of findings supported by mutagenesis, docking, and MD simulation data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:52:58.678421Z"
+    },
+    {
+      "id": "d864c6e4-1433-4cb8-b1b0-80aa3c6aecd9",
+      "content_id": "06b4bfb3-a538-46ac-8604-ce596986e484",
+      "claim_id": "C68",
+      "claim": "As bupivacaine located in the side fenestration interferes with the voltage-dependent K+-flux gating, the increased outward currents that are physiologically present upon depolarization are impaired, resulting in a lack of outward rectification and a preferential inhibition of outward currents.",
+      "claim_type": "EXPLICIT",
+      "source": "As bupivacaine located in the side fenestration interferes with the voltage-dependent K+-flux gating, the increased outward currents that are physiologically present upon depolarization are impaired, resulting in a lack of outward rectification and a preferential inhibition of outward currents (Figure 6c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a mechanistic conclusion based on all experimental data, illustrated in Figure 6c.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:52:58.678421Z"
+    },
+    {
+      "id": "08810844-bd26-4469-b6f3-4a4b5563175f",
+      "content_id": "06b4bfb3-a538-46ac-8604-ce596986e484",
+      "claim_id": "C69",
+      "claim": "The weak voltage-dependent inhibition of TASK channels results from a new allosteric inhibition mechanism, which operates by preventing the voltage-dependent K+-flux gating.",
+      "claim_type": "EXPLICIT",
+      "source": "In conclusion, the weak voltage-dependent inhibition of TASK channels that we describe here, results from a new allosteric inhibition mechanism, which operates by preventing the voltage-dependent K+-flux gating.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion of the study, supported by all experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:52:58.678421Z"
+    },
+    {
+      "id": "b0d2dba8-9e0a-47df-80f5-c815eb48c8c9",
+      "content_id": "06b4bfb3-a538-46ac-8604-ce596986e484",
+      "claim_id": "C70",
+      "claim": "The smaller TEA causes a less pronounced competition and increase in IC50 than TPA, as the binding sites only partially overlap.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the binding site of bupivacaine we have proposed here, the smaller TEA causes a less pronounced competition and increase in IC50 than TPA, as the binding sites only partially overlap (Figure 3j,k)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by competition experiments shown in Figure 3j,k.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:52:58.678421Z"
+    },
+    {
+      "id": "4ab28018-56b3-4f0f-a8b3-d0f684e179dd",
+      "content_id": "06b4bfb3-a538-46ac-8604-ce596986e484",
+      "claim_id": "C71",
+      "claim": "TPA is larger and protrudes up to the entry of the side fenestrations.",
+      "claim_type": "EXPLICIT",
+      "source": "while TPA is larger and protrudes up to the entry of the side fenestrations (Figure 3j,l).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by structural modeling shown in Figure 3j,l.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:52:58.678421Z"
+    },
+    {
+      "id": "c332a1b4-f0ca-43e7-88d0-e182aaa8e590",
+      "content_id": "06b4bfb3-a538-46ac-8604-ce596986e484",
+      "claim_id": "C72",
+      "claim": "TPA induces an ion solvation free energy barrier due to its charge, an effect that was however not present for neutral and charged bupivacaine.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we calculated the ion solvation free energy profiles which show that TPA induces an ion solvation free energy barrier due to its charge, an effect that was however not present for neutral and charged bupivacaine (Figure 3m).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by computational analysis shown in Figure 3m.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:52:58.678421Z"
+    },
+    {
+      "id": "cd9fd236-fff3-4a7a-8722-ee27a2c6786f",
+      "content_id": "06b4bfb3-a538-46ac-8604-ce596986e484",
+      "claim_id": "C73",
+      "claim": "Bupivacaine does not disrupt K+ conductance due to an electrostatic repulsion effect.",
+      "claim_type": "EXPLICIT",
+      "source": "These data indicate that bupivacaine does not disrupt K+ conductance due to an electrostatic repulsion effect.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from ion solvation energy calculations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:52:58.678421Z"
+    },
+    {
+      "id": "f16262c0-8bcb-44c1-881a-96c0dbd664ed",
+      "content_id": "06b4bfb3-a538-46ac-8604-ce596986e484",
+      "claim_id": "C74",
+      "claim": "100 ns of MD simulations with bupivacaine located in the binding site of the side fenestration revealed a stable binding of bupivacaine to the side fenestration and confirmed almost all interactions with the residues that were identified in the functional screen.",
+      "claim_type": "EXPLICIT",
+      "source": "Next, we performed 100 ns of MD simulations with bupivacaine located in the binding site of the side fenestration, analyzing the number of contacts with the key residues identified in our alanine scanning approach. These simulations revealed a stable binding of bupivacaine to the side fenestration and confirmed almost all interactions with the residues that we identified in our functional screen.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by MD simulation data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:52:58.678421Z"
+    },
+    {
+      "id": "412328b3-7ea4-4753-9a60-6d2ec001cd1c",
+      "content_id": "06b4bfb3-a538-46ac-8604-ce596986e484",
+      "claim_id": "C75",
+      "claim": "For the residues C110 in the upper and S127 in the lower M2 segment, no contacts with the drug were observed during the MD simulations, as these were not perfectly facing towards the bupivacaine-binding site.",
+      "claim_type": "EXPLICIT",
+      "source": "Only for the residues C110 in the upper and S127 in the lower M2 segment, we observed no contacts with the drug during the MD simulations, as these were not perfectly facing towards the bupivacaine-binding site.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by MD simulation data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:52:58.678421Z"
+    },
+    {
+      "id": "66dd80e3-d310-4901-9b10-68374de3478a",
+      "content_id": "06b4bfb3-a538-46ac-8604-ce596986e484",
+      "claim_id": "C76",
+      "claim": "A high number of contacts with F194, T198 and T199 that are located in the second pore helix were found during MD simulations.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, we found a high number of contacts with F194, T198 and T199 that are located in the second pore helix (Figure 4a\u2013c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by MD simulation data shown in Figure 4a-c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:52:58.678421Z"
+    },
+    {
+      "id": "f34db4d4-f898-43f4-8369-62a3875bf35b",
+      "content_id": "06b4bfb3-a538-46ac-8604-ce596986e484",
+      "claim_id": "C77",
+      "claim": "Contacts during the MD simulations were observed with residues of the M3 segment, including S166, C167, T170 and L171.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, we also observed contacts during the MD simulations with residues of the M3 segment, including S166, C167, T170 and L171 (Figure 4b,c)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by MD simulation data shown in Figure 4b,c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:52:58.678421Z"
+    },
+    {
+      "id": "0af37a98-33c5-41f8-a7f7-e39e6dbbbe79",
+      "content_id": "06b4bfb3-a538-46ac-8604-ce596986e484",
+      "claim_id": "C78",
+      "claim": "The highest success rate of the induced fit dockings were obtained in a TASK-1 model based on TWIK-1-OO.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, the highest success rate of the induced fit dockings were again obtained in a TASK-1 model based on TWIK-1-OO (Figure 4\u2014figure supplement 2a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by induced fit docking data shown in Figure 4\u2014figure supplement 2a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:52:58.678421Z"
+    },
+    {
+      "id": "03888327-97fa-4bed-8233-2be6944d3413",
+      "content_id": "06b4bfb3-a538-46ac-8604-ce596986e484",
+      "claim_id": "C79",
+      "claim": "The induced fit docking solution in the TWIK-OO based TASK-1 homology model is very similar to the one obtained by classical docking approach.",
+      "claim_type": "EXPLICIT",
+      "source": "The induced fit docking solution in the TWIK-OO based TASK-1 homology model is very similar to the one obtained by our classical docking approach (Figure 4\u2014figure supplement 2b\u2013c), confirming the binding site we have proposed above.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by comparison of docking methods shown in Figure 4\u2014figure supplement 2b-c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:52:58.678421Z"
+    },
+    {
+      "id": "8e5b9f69-0274-4c75-8279-69c0509f9ca1",
+      "content_id": "06b4bfb3-a538-46ac-8604-ce596986e484",
+      "claim_id": "C80",
+      "claim": "TASK-3 channels are blocked by bupivacaine with the similar mechanism and sensitivity as TASK-1 channels.",
+      "claim_type": "EXPLICIT",
+      "source": "TASK-3 channels are blocked by bupivacaine with the similar mechanism (Figure 1p) and sensitivity (Figure 3\u2014figure supplement 2) as TASK-1 channels",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1p and Figure 3\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:52:58.678421Z"
+    },
+    {
+      "id": "a15a6c61-892b-4568-86e5-d32d1a3cfcff",
+      "content_id": "06b4bfb3-a538-46ac-8604-ce596986e484",
+      "claim_id": "C81",
+      "claim": "The binding site is fully conserved between TASK-1 and TASK-3.",
+      "claim_type": "EXPLICIT",
+      "source": "which is in line with our observation that the binding site is fully conserved between these two closely related channels (Figure 3\u2014figure supplement 2a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by sequence alignment shown in Figure 3\u2014figure supplement 2a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:52:58.678421Z"
+    },
+    {
+      "id": "16c6c892-8d42-4430-8d19-d530726d0a35",
+      "content_id": "06b4bfb3-a538-46ac-8604-ce596986e484",
+      "claim_id": "C82",
+      "claim": "The binding site in the side fenestration is fully conserved for TASK-1 and TASK-3, while it is distinct to that of other K2P channels.",
+      "claim_type": "EXPLICIT",
+      "source": "The binding site in the side fenestration is fully conserved for TASK-1 and TASK-3, while it is distinct to that of other K2P channels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on sequence analysis and functional data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:52:58.678421Z"
+    },
+    {
+      "id": "0d80acd6-3c00-4f4d-90bd-4fa5afa8d791",
+      "content_id": "06b4bfb3-a538-46ac-8604-ce596986e484",
+      "claim_id": "C83",
+      "claim": "The fenestrations provide the molecular basis for novel K2P channel subtype specific blockers and a new principle of action that might be beneficial for future drugs targeting diseases of excitable tissue, like in arrhythmias, epilepsies and diabetes.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the fenestrations provide the molecular basis for novel K2P channel subtype specific blockers and a new principle of action that might be beneficial for future drugs targeting diseases of excitable tissue, like in arrhythmias, epilepsies and diabetes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about future drug development based on the findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:52:58.678421Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "69340c61-cba6-4a25-8d61-fcc237b1acec",
+      "content_id": "06b4bfb3-a538-46ac-8604-ce596986e484",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Bupivacaine blocks TASK-1 and TASK-3 channels in a voltage-dependent manner, preferentially inhibiting outward currents and converting the linear current-voltage relationship into an inwardly rectifying behavior. This voltage-dependent block is specific to TASK-1 and TASK-3 channels and is not observed in other K2P channels (TREK-1, TREK-2, TRAAK, TRESK, TASK-2). The voltage-dependence is not caused by charged bupivacaine molecules, as varying intracellular pH did not alter TASK-3 sensitivity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C17, C23-C26 are well-supported by comprehensive electrophysiological data shown in Figure 1. The voltage-clamp experiments under symmetrical potassium conditions clearly demonstrate the voltage-dependent block and specificity to TASK-1/3. The pH experiments (C26) provide strong evidence against a charge-dependent mechanism. The data are internally consistent and appropriately controlled.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:52:58.678421Z"
+    },
+    {
+      "id": "f7503583-95fc-4af6-809e-965ea4b0faaa",
+      "content_id": "06b4bfb3-a538-46ac-8604-ce596986e484",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Bupivacaine significantly abrogates the time-dependent K+-flux-gated outward current component of TASK-1, which is unusual for K2P channel blockers that typically only reduce overall current amplitude without affecting kinetics. Unlike the open channel blocker A1899, whose inhibition is reduced by increasing extracellular potassium, bupivacaine inhibition is unaffected by extracellular K+ concentration. These findings indicate bupivacaine utilizes a novel inhibition mechanism distinct from classical open channel blockers.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C31 are supported by data in Figure 1e, Figure 1\u2014figure supplement 3, and Figure 1\u2014figure supplement 4. The comparison with A1899 and A293 provides appropriate controls demonstrating the unique mechanism. The extracellular K+ competition experiments effectively distinguish bupivacaine from classical pore blockers. The conclusion that bupivacaine has a different binding site (C31) is a reasonable inference from the mechanistic differences.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:52:58.678421Z"
+    },
+    {
+      "id": "0cad0e59-7f2f-472c-a328-cfe538501e5e",
+      "content_id": "06b4bfb3-a538-46ac-8604-ce596986e484",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Systematic alanine mutagenesis identified residues critical for bupivacaine binding, including both 'classical' residues (I118, I235, G236, L239, N240) shared with the A1899 binding site and novel residues (C110A, M111A, A114V, Q126A, S127A, V234A, F238A) in M2 and M4 segments. Importantly, only T198 in the second pore loop (P2), not the homologous T92A in P1, affected bupivacaine sensitivity. The binding site is V-shaped and located laterally underneath the pore helices in the side fenestrations, distinct from the A1899 binding site.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-C42 are well-supported by comprehensive mutagenesis data in Figure 2. The systematic alanine scanning approach is rigorous, and the identification of both overlapping and distinct residues compared to A1899 is convincing. The asymmetry between P1 and P2 (C35, C40-C41) is particularly informative for localizing the binding site. The structural modeling (C36-C37) appropriately integrates the mutagenesis data, though it relies on homology models rather than direct TASK-1 structures.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:52:58.678421Z"
+    },
+    {
+      "id": "bad2464a-d962-4bba-8f9a-6c5f4f7ddc64",
+      "content_id": "06b4bfb3-a538-46ac-8604-ce596986e484",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Computational docking studies using multiple TASK-1 homology models revealed that the number of successful bupivacaine docking solutions in the side fenestrations increased with fenestration diameter. The TWIK-1-based homology model (26.1% sequence identity to TASK-1) showed the most significant clusters (15) and conformers (1420) and generated the most stable docking solutions by MM-GBSA analysis. In the best docking solution, bupivacaine is located in the side fenestrations underneath the M3-P2 pore helices, in a thin sewer connecting the fenestration with the central cavity, explaining the preferential interaction with the second pore helix.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C52 are supported by extensive computational data in Figure 3. The systematic comparison of different homology models (C43) is methodologically sound. The selection of TWIK-1 as the best template is justified by multiple criteria: sequence identity (C44), functional similarities (C45), docking success (C46), and energetic stability (C47). The docking poses are consistent with the mutagenesis data (C49-C52). However, the reliance on homology modeling introduces uncertainty, as TASK-1 has not been crystallized. The conclusion that TASK-1 has large fenestrations (C48) is an inference rather than direct observation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:52:58.678421Z"
+    },
+    {
+      "id": "0a1c937d-1670-4716-9121-62e397687658",
+      "content_id": "06b4bfb3-a538-46ac-8604-ce596986e484",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Competition experiments with quaternary ammonium compounds showed that TEA causes less pronounced competition with bupivacaine than TPA, consistent with partial overlap of binding sites. TPA is larger and protrudes to the entry of side fenestrations. Ion solvation free energy calculations revealed that TPA induces an energy barrier due to its charge, but neutral and charged bupivacaine do not, indicating bupivacaine does not disrupt K+ conductance through electrostatic repulsion.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C70-C73 are supported by competition experiments (Figure 3j-l) and computational analysis (Figure 3m). The differential competition between TEA and TPA (C70-C71) provides orthogonal validation of the proposed binding site. The ion solvation energy calculations (C72-C73) are appropriate for testing the electrostatic mechanism and support the allosteric rather than electrostatic inhibition model. The integration of experimental and computational approaches strengthens these conclusions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:52:58.678421Z"
+    },
+    {
+      "id": "fb9816e3-52b9-46cf-933d-35aad9ae476c",
+      "content_id": "06b4bfb3-a538-46ac-8604-ce596986e484",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "100 ns molecular dynamics simulations with bupivacaine in the side fenestration binding site revealed stable binding and confirmed interactions with most residues identified by mutagenesis, including high numbers of contacts with F194, T198, and T199 in the second pore helix and residues S166, C167, T170, L171 in the M3 segment. Only C110 and S127 showed no contacts during MD simulations. Induced fit docking experiments confirmed the binding site, with the highest success rate (100%) obtained using the TWIK-1-based model.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C74-C79 are supported by MD simulation data (Figure 4a-c) and induced fit docking (Figure 4\u2014figure supplement 2). The MD simulations provide dynamic validation of the static docking poses and confirm most mutagenesis hits. The identification of false positives (C75) demonstrates critical evaluation of the data. The induced fit docking (C78-C79) provides complementary validation using a different computational approach. The convergence of multiple computational methods with experimental mutagenesis data is convincing.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:52:58.678421Z"
+    },
+    {
+      "id": "14bd167c-52db-4097-8e5c-57bcbc75ea1e",
+      "content_id": "06b4bfb3-a538-46ac-8604-ce596986e484",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "MD simulations showed that TASK-1 channels converted from the 'down' to 'up' state over 100 ns, resulting in closure of side fenestrations through coordinated movement of M2, M3, and M4 segments. Bupivacaine binding prevented this conversion in four replicate simulations, stabilizing the bottleneck radius at ~3 \u00c5. RMSF analysis revealed that the M2-M3 linker and M4 segment are more flexible in the absence of bupivacaine.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53-C58 are supported by MD simulation data (Figure 4d-j, Video 1). The observation that bupivacaine prevents the down-to-up transition is consistent across four replicates (C54), providing statistical support. The quantitative analysis of bottleneck radius (C57) and RMSF (C56) strengthens the conclusions. However, the functional relevance of the up/down transition for TASK-1 gating remains uncertain, as acknowledged by the authors. The 100 ns timescale may not capture all relevant conformational changes.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:52:58.678421Z"
+    },
+    {
+      "id": "81cb7ef8-0dbe-4b34-b646-52c7daa6ec55",
+      "content_id": "06b4bfb3-a538-46ac-8604-ce596986e484",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Single-channel recordings of TASK-3 showed that bupivacaine preferentially inhibits outward-directed events without altering single channel conductance, mean open time, or burst duration. Instead, bupivacaine stabilizes the closed state, resulting in longer closed times. In contrast, TEA (a classical open channel blocker) reduced open times and caused mild reduction in conductivity. This demonstrates bupivacaine's mechanism is distinct from classical open channel blockers and consistent with prevention of voltage-dependent K+-flux gating.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C60-C65 are well-supported by single-channel data in Figure 5. The comparison with TEA (C64) provides an appropriate control demonstrating classical open channel block. The finding that bupivacaine affects closed times but not open times or conductance (C61-C63) is mechanistically informative and distinguishes it from pore blockers. The data directly support the allosteric mechanism proposed. The use of TASK-3 instead of TASK-1 is justified (C59) and does not compromise the conclusions given the conserved binding site.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:52:58.678421Z"
+    },
+    {
+      "id": "58192ad5-7870-4a6b-9fef-478f5004e29a",
+      "content_id": "06b4bfb3-a538-46ac-8604-ce596986e484",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The study identifies a novel allosteric inhibition mechanism for K2P channels in which bupivacaine binds to the side fenestrations underneath the second pore helices, positioned laterally such that it does not cause classical pore occlusion. Instead, bupivacaine disrupts the K+-flux gating mechanism at the selectivity filter, resulting in unusual voltage-dependent block and inward rectification of TASK-1 channels. This represents a fundamentally new mechanism of K2P channel inhibition distinct from pore-blocking compounds.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C18-C20, C66-C69 represent the main conclusions of the study and are well-supported by the convergence of multiple lines of evidence: electrophysiology (voltage-dependence, kinetics), mutagenesis (binding site mapping), computational modeling (docking, MD simulations), and single-channel analysis (mechanism). The allosteric mechanism is distinguished from classical pore block through multiple experiments (K+ competition, single-channel kinetics, TEA comparison). The integration of structural and functional data is rigorous and the conclusions are appropriately supported.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:52:58.678421Z"
+    },
+    {
+      "id": "e55f4ee9-1b29-4978-8c1b-7d6f6ed99a84",
+      "content_id": "06b4bfb3-a538-46ac-8604-ce596986e484",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Both bupivacaine enantiomers (R and S) and the racemic drug blocked TASK-1 outward currents with equal potencies, and the rate of inhibition was not significantly different between enantiomers.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21-C22 are supported by data in Figure 1\u2014figure supplement 1. The lack of stereoselectivity is clearly demonstrated and appropriately controls for potential enantioselective effects. This finding justifies the use of racemic bupivacaine in subsequent experiments. The data are consistent with previous reports cited by the authors.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:52:58.678421Z"
+    },
+    {
+      "id": "10d8e394-a6a1-4546-b1ec-ceafbfb77101",
+      "content_id": "06b4bfb3-a538-46ac-8604-ce596986e484",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "TASK-3 channels are blocked by bupivacaine with similar mechanism and sensitivity as TASK-1 channels, consistent with the binding site being fully conserved between these two closely related channels. The binding site in the side fenestration is conserved for TASK-1 and TASK-3 but distinct from other K2P channels.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C80-C82 are supported by experimental data (Figure 1p, Figure 3\u2014figure supplement 2) and sequence alignment. The conservation between TASK-1 and TASK-3 (C81) is directly demonstrated by sequence analysis. The functional similarity (C80) validates the use of TASK-3 for single-channel studies. The distinction from other K2P channels (C82) is supported by both sequence and functional data (Figure 1p).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:52:58.678421Z"
+    },
+    {
+      "id": "a7bac3ad-b082-4e91-b54a-2d172ded6ef6",
+      "content_id": "06b4bfb3-a538-46ac-8604-ce596986e484",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Background claims establishing the physiological importance of K2P and TASK channels, the lack of selective blockers due to conserved central cavity binding sites, the existence of side fenestrations in K2P channel structures, and the knowledge gap regarding allosteric K2P channel block mechanisms.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C11 represent established knowledge and literature context, appropriately cited throughout. These claims provide necessary background but are not novel findings of this study. The citations appear appropriate and the characterization of the knowledge gap (C11) is reasonable.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:52:58.678421Z"
+    },
+    {
+      "id": "851dff1a-3384-4fe3-9f10-b568fb9993d9",
+      "content_id": "06b4bfb3-a538-46ac-8604-ce596986e484",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Background claims about K2P channel structural states ('up' and 'down'), the relationship between these states and fenestration closure, and the voltage-dependent K+-flux gating mechanism at the selectivity filter.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C12-C16 represent established structural and mechanistic knowledge from prior crystallographic and functional studies, appropriately cited. These provide essential context for interpreting the current findings but are not novel results of this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:52:58.678421Z"
+    },
+    {
+      "id": "c5376235-5768-49f4-ad6e-b4d8023cb808",
+      "content_id": "06b4bfb3-a538-46ac-8604-ce596986e484",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "A1899 binds from the intracellular side to the central cavity of TASK-1 by interacting with residues of the M2 and M4 segments and the K+ channel signature sequence, resulting in pore occlusion.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C32 represents prior work by the authors, appropriately cited as established knowledge. This provides necessary context for comparing the bupivacaine binding site but is not a novel finding of the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:52:58.678421Z"
+    },
+    {
+      "id": "70a959b1-06fe-4874-9f81-71638cd3c5c4",
+      "content_id": "06b4bfb3-a538-46ac-8604-ce596986e484",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "TASK-3 has longer open times and higher single channel conductance than TASK-1, making it more suitable for single channel analysis of the inhibition mechanism.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C59 represents established biophysical knowledge about these channels and provides methodological justification for using TASK-3 in single-channel experiments. This is a minor methodological point rather than a result.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:52:58.678421Z"
+    },
+    {
+      "id": "5aaef621-5c23-4105-92f6-3cbd322c48e4",
+      "content_id": "06b4bfb3-a538-46ac-8604-ce596986e484",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The fenestrations provide the molecular basis for novel K2P channel subtype-specific blockers and a new principle of action that might be beneficial for future drugs targeting diseases of excitable tissue.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C83 is explicitly speculative about future drug development. While the identification of the binding site and mechanism provides a foundation for drug design, no actual drug development or validation of therapeutic potential is presented. This represents a reasonable speculation based on the findings but is not a supported result of the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:52:58.678421Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "f6c448a5-742c-4ea4-a9a1-c1c99383fcc3",
+      "result_id": "69340c61-cba6-4a25-8d61-fcc237b1acec"
+    },
+    {
+      "claim_id": "dcb267b4-d640-4e20-896b-b13e0c051fa7",
+      "result_id": "69340c61-cba6-4a25-8d61-fcc237b1acec"
+    },
+    {
+      "claim_id": "62f9b61e-2a6e-40de-8513-ed83920a0f8b",
+      "result_id": "69340c61-cba6-4a25-8d61-fcc237b1acec"
+    },
+    {
+      "claim_id": "526c4279-ad40-4f52-af57-934ad52e8640",
+      "result_id": "69340c61-cba6-4a25-8d61-fcc237b1acec"
+    },
+    {
+      "claim_id": "57e59f64-0abd-4648-abc7-dc8f901412df",
+      "result_id": "69340c61-cba6-4a25-8d61-fcc237b1acec"
+    },
+    {
+      "claim_id": "849771e6-de51-4059-b63f-281f851031ce",
+      "result_id": "f7503583-95fc-4af6-809e-965ea4b0faaa"
+    },
+    {
+      "claim_id": "189a4800-55f1-460d-90e4-ba52d862e3be",
+      "result_id": "f7503583-95fc-4af6-809e-965ea4b0faaa"
+    },
+    {
+      "claim_id": "2ae240d2-05c5-4134-a4d3-e9816d975585",
+      "result_id": "f7503583-95fc-4af6-809e-965ea4b0faaa"
+    },
+    {
+      "claim_id": "1a1eaab9-b18b-4beb-a571-92332f648934",
+      "result_id": "f7503583-95fc-4af6-809e-965ea4b0faaa"
+    },
+    {
+      "claim_id": "12748354-a58f-44ce-b071-c06665ec7630",
+      "result_id": "f7503583-95fc-4af6-809e-965ea4b0faaa"
+    },
+    {
+      "claim_id": "b616c04f-0408-48f9-9b32-93ffde9bddee",
+      "result_id": "0cad0e59-7f2f-472c-a328-cfe538501e5e"
+    },
+    {
+      "claim_id": "71386a5e-d061-43d5-a9ef-5ad74c6ac93b",
+      "result_id": "0cad0e59-7f2f-472c-a328-cfe538501e5e"
+    },
+    {
+      "claim_id": "04f9cb2a-ad0d-467b-b8ef-e03447f978d8",
+      "result_id": "0cad0e59-7f2f-472c-a328-cfe538501e5e"
+    },
+    {
+      "claim_id": "cef6148d-71c0-4b09-b875-aa233e31ccb0",
+      "result_id": "0cad0e59-7f2f-472c-a328-cfe538501e5e"
+    },
+    {
+      "claim_id": "064feb30-19b6-4cb6-a6c4-3a1a9b245324",
+      "result_id": "0cad0e59-7f2f-472c-a328-cfe538501e5e"
+    },
+    {
+      "claim_id": "d2ce607a-6e78-4f72-a7c7-9fbc6cf3fc26",
+      "result_id": "0cad0e59-7f2f-472c-a328-cfe538501e5e"
+    },
+    {
+      "claim_id": "bc3096a7-c413-4322-8ebd-815815c048ba",
+      "result_id": "0cad0e59-7f2f-472c-a328-cfe538501e5e"
+    },
+    {
+      "claim_id": "94107566-8f1a-43ac-ade6-ad7867679650",
+      "result_id": "0cad0e59-7f2f-472c-a328-cfe538501e5e"
+    },
+    {
+      "claim_id": "0f4e06a2-b27e-4271-ba3e-0a1b7bdd7ddf",
+      "result_id": "0cad0e59-7f2f-472c-a328-cfe538501e5e"
+    },
+    {
+      "claim_id": "a7078d49-5fef-462a-b43d-02a16927b174",
+      "result_id": "0cad0e59-7f2f-472c-a328-cfe538501e5e"
+    },
+    {
+      "claim_id": "d96d058d-17d2-403b-8fa6-f7c0dd1943a6",
+      "result_id": "bad2464a-d962-4bba-8f9a-6c5f4f7ddc64"
+    },
+    {
+      "claim_id": "2cc5f51f-3b04-4e07-890b-1e4e98912717",
+      "result_id": "bad2464a-d962-4bba-8f9a-6c5f4f7ddc64"
+    },
+    {
+      "claim_id": "993b5497-23fe-41ee-8cba-dfba9ffb010c",
+      "result_id": "bad2464a-d962-4bba-8f9a-6c5f4f7ddc64"
+    },
+    {
+      "claim_id": "d1a5324d-8532-455f-b55a-24c9c94961a6",
+      "result_id": "bad2464a-d962-4bba-8f9a-6c5f4f7ddc64"
+    },
+    {
+      "claim_id": "b8aef39b-8cf9-443b-930e-835fc4caeb6f",
+      "result_id": "bad2464a-d962-4bba-8f9a-6c5f4f7ddc64"
+    },
+    {
+      "claim_id": "4f4662d5-101f-4f6e-af5f-080f1b9fa1ae",
+      "result_id": "bad2464a-d962-4bba-8f9a-6c5f4f7ddc64"
+    },
+    {
+      "claim_id": "bd5efeb6-7ff1-46a3-87f2-8d740c3a7722",
+      "result_id": "bad2464a-d962-4bba-8f9a-6c5f4f7ddc64"
+    },
+    {
+      "claim_id": "c13d480f-8a37-41e1-bf2a-359982302e63",
+      "result_id": "bad2464a-d962-4bba-8f9a-6c5f4f7ddc64"
+    },
+    {
+      "claim_id": "17e1af9c-31e9-4a7b-8855-23662153de7f",
+      "result_id": "bad2464a-d962-4bba-8f9a-6c5f4f7ddc64"
+    },
+    {
+      "claim_id": "74767d1a-06fd-487a-b7d0-dd804dab38fc",
+      "result_id": "bad2464a-d962-4bba-8f9a-6c5f4f7ddc64"
+    },
+    {
+      "claim_id": "b0d2dba8-9e0a-47df-80f5-c815eb48c8c9",
+      "result_id": "0a1c937d-1670-4716-9121-62e397687658"
+    },
+    {
+      "claim_id": "4ab28018-56b3-4f0f-a8b3-d0f684e179dd",
+      "result_id": "0a1c937d-1670-4716-9121-62e397687658"
+    },
+    {
+      "claim_id": "c332a1b4-f0ca-43e7-88d0-e182aaa8e590",
+      "result_id": "0a1c937d-1670-4716-9121-62e397687658"
+    },
+    {
+      "claim_id": "cd9fd236-fff3-4a7a-8722-ee27a2c6786f",
+      "result_id": "0a1c937d-1670-4716-9121-62e397687658"
+    },
+    {
+      "claim_id": "f16262c0-8bcb-44c1-881a-96c0dbd664ed",
+      "result_id": "fb9816e3-52b9-46cf-933d-35aad9ae476c"
+    },
+    {
+      "claim_id": "412328b3-7ea4-4753-9a60-6d2ec001cd1c",
+      "result_id": "fb9816e3-52b9-46cf-933d-35aad9ae476c"
+    },
+    {
+      "claim_id": "66dd80e3-d310-4901-9b10-68374de3478a",
+      "result_id": "fb9816e3-52b9-46cf-933d-35aad9ae476c"
+    },
+    {
+      "claim_id": "f34db4d4-f898-43f4-8369-62a3875bf35b",
+      "result_id": "fb9816e3-52b9-46cf-933d-35aad9ae476c"
+    },
+    {
+      "claim_id": "0af37a98-33c5-41f8-a7f7-e39e6dbbbe79",
+      "result_id": "fb9816e3-52b9-46cf-933d-35aad9ae476c"
+    },
+    {
+      "claim_id": "03888327-97fa-4bed-8233-2be6944d3413",
+      "result_id": "fb9816e3-52b9-46cf-933d-35aad9ae476c"
+    },
+    {
+      "claim_id": "25ba4e89-6b82-4a57-8229-02867f89b4bb",
+      "result_id": "14bd167c-52db-4097-8e5c-57bcbc75ea1e"
+    },
+    {
+      "claim_id": "e5c34742-06f9-4a35-b23f-e525dee3d85d",
+      "result_id": "14bd167c-52db-4097-8e5c-57bcbc75ea1e"
+    },
+    {
+      "claim_id": "eb051f47-b3c5-4179-bf32-fe66aeea867b",
+      "result_id": "14bd167c-52db-4097-8e5c-57bcbc75ea1e"
+    },
+    {
+      "claim_id": "e1f436fb-6689-441e-8b60-978538240b6c",
+      "result_id": "14bd167c-52db-4097-8e5c-57bcbc75ea1e"
+    },
+    {
+      "claim_id": "03be9cec-9d84-4497-95b1-ab1a141a87a2",
+      "result_id": "14bd167c-52db-4097-8e5c-57bcbc75ea1e"
+    },
+    {
+      "claim_id": "60110ea1-beb1-45d3-9085-bd0a53725fb0",
+      "result_id": "14bd167c-52db-4097-8e5c-57bcbc75ea1e"
+    },
+    {
+      "claim_id": "33656cb4-e166-4703-b958-fa2902d07def",
+      "result_id": "81cb7ef8-0dbe-4b34-b646-52c7daa6ec55"
+    },
+    {
+      "claim_id": "480e15f8-59ca-4b07-b8bb-cbfc481ea405",
+      "result_id": "81cb7ef8-0dbe-4b34-b646-52c7daa6ec55"
+    },
+    {
+      "claim_id": "d5304522-5b0a-47e3-bf80-39c82021ecb9",
+      "result_id": "81cb7ef8-0dbe-4b34-b646-52c7daa6ec55"
+    },
+    {
+      "claim_id": "7971edb3-9d2e-44e7-87c1-8a16fb1f4f1a",
+      "result_id": "81cb7ef8-0dbe-4b34-b646-52c7daa6ec55"
+    },
+    {
+      "claim_id": "0330927c-ec5b-48ae-a306-f3e79aae47e7",
+      "result_id": "81cb7ef8-0dbe-4b34-b646-52c7daa6ec55"
+    },
+    {
+      "claim_id": "5533d7aa-8fac-4809-821e-69943bf391f3",
+      "result_id": "81cb7ef8-0dbe-4b34-b646-52c7daa6ec55"
+    },
+    {
+      "claim_id": "8eca009a-1a27-4f41-b124-1e991d4e3e21",
+      "result_id": "58192ad5-7870-4a6b-9fef-478f5004e29a"
+    },
+    {
+      "claim_id": "7ca43651-0477-4a48-8b03-b5915b80f6b5",
+      "result_id": "58192ad5-7870-4a6b-9fef-478f5004e29a"
+    },
+    {
+      "claim_id": "d64bd215-d878-4018-950f-62dd0a8e84f9",
+      "result_id": "58192ad5-7870-4a6b-9fef-478f5004e29a"
+    },
+    {
+      "claim_id": "ffec2021-ed0f-4f1c-8c38-998fb8c3bcd3",
+      "result_id": "58192ad5-7870-4a6b-9fef-478f5004e29a"
+    },
+    {
+      "claim_id": "95a09cd6-4559-4623-8344-179b7187c23a",
+      "result_id": "58192ad5-7870-4a6b-9fef-478f5004e29a"
+    },
+    {
+      "claim_id": "7f26406a-7510-47c5-bd8d-456e12c6eb7c",
+      "result_id": "58192ad5-7870-4a6b-9fef-478f5004e29a"
+    },
+    {
+      "claim_id": "d864c6e4-1433-4cb8-b1b0-80aa3c6aecd9",
+      "result_id": "58192ad5-7870-4a6b-9fef-478f5004e29a"
+    },
+    {
+      "claim_id": "08810844-bd26-4469-b6f3-4a4b5563175f",
+      "result_id": "58192ad5-7870-4a6b-9fef-478f5004e29a"
+    },
+    {
+      "claim_id": "74254d3d-1286-4404-8289-8bc2f4dc66d3",
+      "result_id": "e55f4ee9-1b29-4978-8c1b-7d6f6ed99a84"
+    },
+    {
+      "claim_id": "2d34465c-fa1f-44a5-8caa-373a6262ebe5",
+      "result_id": "e55f4ee9-1b29-4978-8c1b-7d6f6ed99a84"
+    },
+    {
+      "claim_id": "8e5b9f69-0274-4c75-8279-69c0509f9ca1",
+      "result_id": "10d8e394-a6a1-4546-b1ec-ceafbfb77101"
+    },
+    {
+      "claim_id": "a15a6c61-892b-4568-86e5-d32d1a3cfcff",
+      "result_id": "10d8e394-a6a1-4546-b1ec-ceafbfb77101"
+    },
+    {
+      "claim_id": "16c6c892-8d42-4430-8d19-d530726d0a35",
+      "result_id": "10d8e394-a6a1-4546-b1ec-ceafbfb77101"
+    },
+    {
+      "claim_id": "3f1f8ca7-d838-42ff-8cea-b83cf5b65f25",
+      "result_id": "a7bac3ad-b082-4e91-b54a-2d172ded6ef6"
+    },
+    {
+      "claim_id": "dfe7bb2d-cf37-4b84-9e79-00d7e8ef4d9b",
+      "result_id": "a7bac3ad-b082-4e91-b54a-2d172ded6ef6"
+    },
+    {
+      "claim_id": "1754d77c-fe03-4993-a31e-3a2fdb451037",
+      "result_id": "a7bac3ad-b082-4e91-b54a-2d172ded6ef6"
+    },
+    {
+      "claim_id": "a2a4be6b-17bf-4a42-9dd7-89b7a0d8c276",
+      "result_id": "a7bac3ad-b082-4e91-b54a-2d172ded6ef6"
+    },
+    {
+      "claim_id": "2bacf545-38d2-4a1c-81c1-365145194a6c",
+      "result_id": "a7bac3ad-b082-4e91-b54a-2d172ded6ef6"
+    },
+    {
+      "claim_id": "a918d120-d3f6-4c33-9fe8-5ca96b904795",
+      "result_id": "a7bac3ad-b082-4e91-b54a-2d172ded6ef6"
+    },
+    {
+      "claim_id": "6e4070e9-2e1a-4bc8-8d8d-983aa130405e",
+      "result_id": "a7bac3ad-b082-4e91-b54a-2d172ded6ef6"
+    },
+    {
+      "claim_id": "32fb50d2-8455-49d9-8c1f-53fd4b0ba796",
+      "result_id": "a7bac3ad-b082-4e91-b54a-2d172ded6ef6"
+    },
+    {
+      "claim_id": "2faf1c24-ad07-4524-ac1f-b36a5b35ceae",
+      "result_id": "a7bac3ad-b082-4e91-b54a-2d172ded6ef6"
+    },
+    {
+      "claim_id": "e61b37a5-97d1-4c22-8b17-c24ad35fe608",
+      "result_id": "a7bac3ad-b082-4e91-b54a-2d172ded6ef6"
+    },
+    {
+      "claim_id": "4f1d59f3-e1dd-48bc-a301-eff63e5713b0",
+      "result_id": "851dff1a-3384-4fe3-9f10-b568fb9993d9"
+    },
+    {
+      "claim_id": "3ad5f370-c6e4-4b5d-880c-56e1a5350708",
+      "result_id": "851dff1a-3384-4fe3-9f10-b568fb9993d9"
+    },
+    {
+      "claim_id": "391dd22a-c086-4885-b170-ff24bf0bcfff",
+      "result_id": "851dff1a-3384-4fe3-9f10-b568fb9993d9"
+    },
+    {
+      "claim_id": "5075b761-ec3f-4790-8332-fda9bd227d1a",
+      "result_id": "851dff1a-3384-4fe3-9f10-b568fb9993d9"
+    },
+    {
+      "claim_id": "d79f8721-e6d5-4faa-b281-d1da489308db",
+      "result_id": "851dff1a-3384-4fe3-9f10-b568fb9993d9"
+    },
+    {
+      "claim_id": "ff923b8e-5897-415d-b938-40ce436d7606",
+      "result_id": "c5376235-5768-49f4-ad6e-b4d8023cb808"
+    },
+    {
+      "claim_id": "163aedf2-c20a-404e-af70-6e733b39cb9f",
+      "result_id": "70a959b1-06fe-4874-9f81-71638cd3c5c4"
+    },
+    {
+      "claim_id": "0d80acd6-3c00-4f4d-90bd-4fa5afa8d791",
+      "result_id": "5aaef621-5c23-4105-92f6-3cbd322c48e4"
+    }
+  ],
+  "comparisons": []
+}

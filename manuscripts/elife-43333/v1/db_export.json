@@ -1,0 +1,1578 @@
+{
+  "submission": {
+    "id": "bb51f2f2-768f-41f5-99fc-3477020de862",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T09:16:33.994668Z",
+    "updated_at": "2025-12-02T09:16:33.994668Z"
+  },
+  "content": [
+    {
+      "id": "362310de-e79a-4637-b56a-2ae52e4b3943",
+      "submission_id": "bb51f2f2-768f-41f5-99fc-3477020de862",
+      "content_type": "manuscript",
+      "content_text": "# Werner syndrome helicase is a selective vulnerability of microsatellite instability-high tumor cells\n\n## Authors\n\n- Simone Lieb<sup>1</sup>\n- Silvia Blaha-Ostermann<sup>1</sup>\n- Elisabeth Kamper<sup>1</sup>\n- Janine Rippka<sup>1</sup>\n- Cornelia Schwarz<sup>1</sup>\n- Katharina Ehrenh\u00f6fer-W\u00f6lfer<sup>1</sup>\n- Andreas Schlattl<sup>1</sup>\n- Andreas Wernitznig<sup>1</sup>\n- Jesse J Lipp<sup>1</sup>\n- Kota Nagasaka<sup>2</sup> ([ORCID: 0000-0003-0765-638X](https://orcid.org/0000-0003-0765-638X))\n- Petra van der Lelij<sup>2</sup>\n- Gerd Bader<sup>1</sup> ([ORCID: 0000-0002-8410-3415](https://orcid.org/0000-0002-8410-3415))\n- Minoru Koi<sup>3</sup>\n- Ajay Goel<sup>4</sup>\n- Ralph A Neum\u00fcller<sup>1</sup>\n- Jan-Michael Peters<sup>2</sup> ([ORCID: 0000-0003-2820-3195](https://orcid.org/0000-0003-2820-3195))\n- Norbert Kraut<sup>1</sup>\n- Mark A Pearson<sup>1</sup>\n- Mark Petronczki<sup>1</sup> ([ORCID: 0000-0003-0139-5692](https://orcid.org/0000-0003-0139-5692)) \u2020\n- Simon W\u00f6hrle<sup>1</sup> ([ORCID: 0000-0002-2478-7333](https://orcid.org/0000-0002-2478-7333)) \u2020\n\n### Affiliations\n\n1. Boehringer Ingelheim RCV GmbH & Co KG Vienna Austria\n2. Research Institute of Molecular Pathology Vienna Austria\n3. Division of Gastroenterology, Department of Internal Medicine, Comprehensive Cancer Center University of Michigan Ann Arbor United States\n4. Center for Gastrointestinal Research, Baylor Scott & White Research Institute and Charles A. Sammons Cancer Center Baylor University Medical Center Dallas United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nTargeted cancer therapy is based on exploiting selective dependencies of tumor cells. By leveraging recent functional screening data of cancer cell lines we identify Werner syndrome helicase (WRN) as a novel specific vulnerability of microsatellite instability-high (MSI-H) cancer cells. MSI, caused by defective mismatch repair (MMR), occurs frequently in colorectal, endometrial and gastric cancers. We demonstrate that WRN inactivation selectively impairs the viability of MSI-H but not microsatellite stable (MSS) colorectal and endometrial cancer cell lines. In MSI-H cells, WRN loss results in severe genome integrity defects. ATP-binding deficient variants of WRN fail to rescue the viability phenotype of WRN-depleted MSI-H cancer cells. Reconstitution and depletion studies indicate that WRN dependence is not attributable to acute loss of MMR gene function but might arise during sustained MMR-deficiency. Our study suggests that pharmacological inhibition of WRN helicase function represents an opportunity to develop a novel targeted therapy for MSI-H cancers.\n\n## Introduction\n\nDefects in components of the DNA repair machinery, such as BRCA1/2 mutations or impaired DNA mismatch repair (MMR), are a common characteristic of tumor cells, accelerating the accumulation of DNA mutations or chromosomal aberrations that are required for neoplastic growth and transformation (Kinzler and Vogelstein, 1997). Plasticity of genome stability pathways permits tumor cells to tolerate the loss of individual DNA repair genes and leads to synthetic lethality (SL) upon targeting the compensating repair mechanism (Nickoloff et al., 2017). The first clinically approved drugs exploiting such a SL interaction are Poly(ADP-Ribose) Polymerase (PARP) inhibitors for therapy of BRCA1/BRCA2-deficient tumors (Kaufman et al., 2015; Lord and Ashworth, 2017).\n\nMMR deficiency is caused by inactivation of genes of the DNA repair machinery involved in the resolution of nucleotide base-base mismatches during DNA replication (Jiricny, 2006; Kunkel and Erie, 2015). MMR defects lead to characteristic variations in the length of tandem nucleotide repeats across the genome, known as microsatellite instability (MSI) (Ellegren, 2004). Germline mutations in MMR genes, most commonly MLH1, MSH2, MSH6 and PMS2, are causative for Lynch syndrome, a cancer predisposition condition associated with increased lifetime risk to develop colorectal cancer (CRC) or other tumor types including endometrial and gastric carcinoma (Hampel et al., 2005; Lynch and Krush, 1971; Lynch et al., 2015). In sporadic, nonhereditary CRC, MSI is frequently observed due to epigenetic silencing of MLH1 (Cunningham et al., 1998; Herman et al., 1998; Kane et al., 1997; Kuismanen et al., 2000).\u00a0MSI-high (MSI-H) tumors display a hypermutator phenotype (Cancer Genome Atlas Network, 2012), which entails increased immunogenicity, amendable to therapy with immune checkpoint inhibitors (Le et al., 2015). However, targeted therapies directly exploiting the MMR-deficient status of tumor cells do not exist.\n\nWerner syndrome helicase (WRN) is a member of the RecQ DNA helicase subfamily (Croteau et al., 2014; Yu et al., 1996). RecQ helicases are involved in multiple DNA processing steps including DNA replication, double-strand break repair, transcription and telomere maintenance and are therefore considered to serve as \u2018genome caretakers\u2019 (Chu and Hickson, 2009; Croteau et al., 2014). The critical function of this protein family in genome maintenance is underscored by the fact that defects in three of the five family members \u2013 WRN, Bloom Syndrome RecQ Like Helicase (BLM) and RecQ Like Helicase 4 (RECQL4) \u2013 give rise to human disease syndromes associated with developmental defects and cancer predisposition (Brosh, 2013; Oshima et al., 2017). Specifically, patients with Werner syndrome display a premature ageing phenotype including arteriosclerosis, type II diabetes and osteoporosis and are prone to develop tumors of mesenchymal origin, such as soft tissue sarcoma or osteosarcoma (Goto et al., 2013; Hickson, 2003; Lauper et al., 2013). WRN is unique among RecQ family helicases in possessing 3\u2019\u22125\u2019 exonuclease activity (Huang et al., 1998; Kamath-Loeb et al., 1998; Shen et al., 1998).\n\nIn contrast to the previously described tumor-suppressive role of WRN, we demonstrate in this study that WRN possesses a context-dependent critical pro-survival function for cancer cells. By leveraging a recently defined map of cancer cell specific vulnerabilities (McDonald et al., 2017) and a comprehensive molecular characterization of cancer cell models (Barretina et al., 2012; Streit et al., 2019) we identify WRN helicase as a selective dependency in MSI-H cancer cell lines.\n\n## Results\n\n### WRN dependency is associated with MSI-H status of cancer cells\n\nWRN was identified as a potential selective dependency in a subset of 398 cancer cell models in a recent pooled shRNA viability screen covering approximately 8000 genes (Project DRIVE) (https://oncologynibr.shinyapps.io/drive/;\u00a0McDonald et al., 2017). A genomic or expression-based biomarker predictive for WRN dependency was unknown. Depletion of WRN exclusively affects viability of a subset of CRC, gastric and endometrial cancer cell models reflected by RSA (redundant siRNA activity) sensitivity scores \u2264\u22123, indicative of cell essentiality (Figure 1A). Intriguingly, CRC, gastric and endometrial cancers are the three human malignancies with the highest frequency of MSI-H status (Cortes-Ciriano et al., 2017). This raised the possibility that WRN represents a selective dependency in MSI-H cell lines.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/43333/elife-43333-fig1-v1.jpg)\n\n**Figure 1.:** (A) WRN shRNA activity by RSA score in pooled shRNA depletion screens from Project DRIVE (McDonald et al., 2017).\u00a0Cell lines were binned according to tumor type. (B) MSS/MSI-H status and WRN RSA of CRC, endometrial and gastric cancer models from Project DRIVE.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/43333/elife-43333-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Receiver operating characteristic curve and variable importance plot for Random Forest model.\u00a0Note:\u00a0<gene\u00a0>_st denotes the mutational status of respective gene whereas <gene > denotes the expression of the respective gene in the variable importance plot. (B) MLH1 mRNA TPM and WRN RSA of cancer models from Project DRIVE. Genes involved in MMR are indicated in red font. Data information: Cell line mutation and expression data were derived from the Ordino database (Streit et al., 2019).\n\nIn order to explore this hypothesis we developed a Random Forest model using an MSI feature list defined by Boland and Goel (Boland and Goel, 2010). This model classifies WRN sensitive and insensitive cell lines with an accuracy of 0.89 and a recall rate for sensitive lines of 0.69. Importantly, no true insensitive cell lines are classified as sensitive (Figure 1\u2014figure supplement 1A). An analysis of variable importance revealed MLH1 expression as the feature most highly associated with the classification outcome, in line with the frequent inactivation of the MLH1 gene in MSI-H CRC (Cunningham et al., 1998; Herman et al., 1998; Kane et al., 1997; Kuismanen et al., 2000) (Figure 1\u2014figure supplement 1A). Consistently, WRN dependency anti-correlates with MLH1 mRNA expression levels among the cell models used in Project DRIVE (Figure 1\u2014figure supplement 1B; p=1.02*10\u22124, Fisher\u2019s exact test,\u00a0stratification of MLH1-low and -high expressing cell models according to median MLH1 expression [TPM 37.44]).\n\nNext, we wanted to experimentally validate the MSI status in a select set of cell lines. To this end, we used a fluorescent PCR-based analysis of five mononucleotide microsatellite markers to determine the MSS/MSI-H status of a subset of CRC, gastric and endometrial cancer cell models (Supplementary file 1). In addition, we utilized a comprehensive MSS/MSI-H status annotation of CRC cell models reported by Medico and colleagues (Medico et al., 2015). Analysis of gene dependency and MSS/MSI-H status data revealed that WRN dependency was strongly associated with MSI-H status across CRC, gastric and endometrial models (p=4.91*10\u22128, Fisher\u2019s exact test). Of the 18 cell lines classified as MSI-H, 15 cell lines (83%) were sensitive to WRN depletion using an RSA value of \u2264\u22123 to define WRN dependency (Figure 1B). In contrast, WRN is dispensable for viability in all MSS cell models (Figure 1B). Our analysis suggests that MSI-H status is a strong predictor for WRN sensitivity of cancer cells.\n\n### WRN depletion by siRNA selectively impairs viability of MSI-H CRC and endometrial cancer cell lines\n\nTo experimentally corroborate the WRN dependency of MSI-H cancer cells, we applied short-interfering RNA (siRNA)-mediated knock-down of WRN in a panel of three MSS (SK-CO-1, CaCo-2, SW480) and three MSI-H (HCT 116, RKO, SNU-C4) CRC cell lines. In agreement with the results from Project DRIVE, WRN depletion using a mixture of four siRNA duplexes (Pool) or an individual siRNA (#1) targeting WRN profoundly affected viability in MSI-H, but not in MSS CRC models (Figure 2A). In contrast, depletion of the known essential mitotic kinase PLK1, had a detrimental effect on viability of both MSS and MSI-H cell lines. Efficient depletion of WRN protein following siRNA transfection was confirmed by immunoblotting (Figure 2A). The selective dependency on WRN was mirrored in colony formation assays with two MSS (LS1034, SK-CO-1) and two MSI-H cell lines (HCT 116, RKO) (Figure 2B). Likewise, we observed that WRN knock-down impaired viability of three MSI-H endometrial carcinoma cells lines (HEC-265, ISHIKAWA, HEC-6), but not the MSS cell line MFE-280 (Figure 2C). WRN mRNA levels were similarly reduced upon transfection of pooled or individual WRN-targeting siRNAs in all four endometrial carcinoma models (Figure 2\u2014figure supplement 1A).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/43333/elife-43333-fig2-v1.jpg)\n\n**Figure 2.:** (A) MSS and MSI-H CRC cell lines were transfected with the indicated siRNAs.\u00a0Cell viability was determined 7 days after transfection and is shown relative to non-targeting control (NTC) siRNA. WRN siRNA knock-down efficacy was analyzed by immunoblotting. Protein lysates were prepared 72 hr after transfection. GAPDH expression was used to monitor equal loading. (B) Crystal violet staining of MSS and MSI-H CRC lines treated as in panel A. (C) Cell viability analysis of MSS and MSI-H endometrial cell lines treated as in panel A. Data information: In (A and C), data are presented as mean\u00a0\u00b1\u00a0SD of three independent experiments.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/43333/elife-43333-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) WRN siRNA knock-down efficacy in endometrial carcinoma cell models was analyzed by qRT-PCR.\u00a0RNA lysates were prepared 72 hr after transfection. WRN mRNA expression is normalized to 18S rRNA levels (n\u00a0=\u00a01 experimental replicate). (B) Non-transformed hTERT RPE-1 and HCT 116 cells were transfected with the indicated siRNAs. Cell viability was determined 7 days after transfection and is shown relative to NTC siRNA. WRN siRNA knock-down efficacy was analyzed by immunoblotting. Protein lysates were prepared 72 hr after transfection. GAPDH expression was used to monitor equal loading. (C) TP53-wild-type CRC cell lines SK-CO-1 and HCT 116 cells were transfected with the indicated siRNAs. Cell viability and WRN siRNA knock-down efficacy was analyzed as in panel B. Data information: In (B and C) data are presented as mean\u00a0\u00b1\u00a0SD of two independent experiments.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/43333/elife-43333-fig2-figsupp2-v1.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A) HCT 116 cell lines were transfected with the indicated siRNAs.\u00a0Cell viability was determined 7 days after transfection and is shown relative to non-targeting control (NTC) siRNA. (B) WRN siRNA knock-down efficacy was analyzed by qRT-PCR. RNA lysates were prepared 48 hr after transfection. WRN mRNA expression is normalized to 18S rRNA levels. (C) Reconstitution of MLH1 and MSH3 was determined by immunoblot, Actin expression was used to monitor equal loading. Data information: In (A), data are presented as mean\u00a0\u00b1\u00a0SD of three to six independent experiments. In (B), data are presented as mean\u00a0\u00b1\u00a0SD of two independent experiments.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/43333/elife-43333-fig2-figsupp3-v1.jpg)\n\n**Figure 2\u2014figure supplement 3.:** (A) SW480 monoclonal cell lines were transfected with the indicated siRNAs.\u00a0Cell viability was determined 7 days after transfection and is shown relative to non-targeting control (NTC) siRNA. Knock-out of WRN was confirmed by immunoblot, Actin expression was used to monitor equal loading. (B) MLH1 and MSH3 siRNA knock-down efficacy was analyzed by qRT-PCR. RNA lysates were prepared 48 hr after transfection. MLH1 and MSH3 mRNA expression is normalized to 18S rRNA levels. Data information: In (A), data are presented as mean\u00a0\u00b1\u00a0SD of three independent experiments. In (B), data are presented as mean\u00a0\u00b1\u00a0SD of two independent experiments.\n\nSimilar to MSS cancer models, non-transformed telomerase-immortalized human retinal pigment epithelial cells (hTERT RPE-1) did not display sensitivity to knock-down of WRN\u00a0(Figure 2\u2014figure supplement 1B). It is noteworthy, that the depletion of the related RecQ helicase BLM significantly impaired viability of hTERT RPE-1, but not HCT 116 cells.\u00a0These RNAi experiments demonstrate that depletion of WRN abrogates viability in MSI-H but not MSS or non-transformed cells.\u00a0To assess a potential mechanism to bypass WRN dependence in MSI-H cancer cells, we tested whether co-depletion of p53 and WRN in the TP53-wild-type MSI-H CRC line HCT 116 would reverse the sensitivity to WRN knock-down. However, WRN/p53 co-depletion exacerbated the reduction in viability compared to WRN knock-down alone (Figure 2\u2014figure supplement 1C). TP53-wild-type MSS CRC SK-CO-1 cells were affected neither by individual or dual knock-down of WRN and p53. Interestingly, in both cell lines we observed a slight elevation of p53 protein levels upon WRN depletion (Figure 2\u2014figure supplement 1C).\n\nTo determine whether reconstitution of MLH1 and MSH3 in the MSI-H CRC line HCT 116 would revert WRN dependence, we utilized variants of HCT 116 harboring copies of human chromosome 2 (+ch2, control line), chromosome 3 (+ch3, MLH1 reconstitution) or chromosome 3 and 5 (+ch3+ch5, MLH1 and MSH3 reconstitution) derived from normal fibroblasts (Haugen et al., 2008; Koi et al., 1994). In both HCT 116\u00a0+ch3 and HCT 116\u00a0+ch3+ch5 cell lines, we noticed only a modest increase of viability upon WRN knock-down compared to the parental cells or the HCT 116\u00a0+ch2 control line (Figure 2\u2014figure supplement 2A) despite equally potent WRN knock-down in all models (Figure 2\u2014figure supplement 2B). Reconstitution of MLH1 and MSH3 expression in HCT 116\u00a0+ch3 and HCT 116\u00a0+ch3+ch5 was confirmed by immunoblotting (Figure 2\u2014figure supplement 2C). In a reciprocal approach, we monitored whether individual or combined knock-down of MLH1 and MSH3 would elicit differential effects on the viability of WRN-proficient versus WRN-knock-out cell models. To this end, using CRISPR-Cas9 we generated two WRN knock-out SW480 monoclonal lines (WRN KO #1 and #2) and a non-edited, WRN-proficient SW480 monoclonal control line (parental). Loss of WRN protein in the two knock-out lines was confirmed using immunoblot assays (Figure 2\u2014figure supplement 3A). We did not observe an effect of either single or concomitant knockdown of MLH1 and MSH3 on cell viability of the WRN-deficient SW480 cell lines (Figure 2\u2014figure supplement 3A), despite efficacious depletion of the mRNAs encoding MLH1 and MSH3 (Figure 2\u2014figure supplement 3B). These results suggest that WRN dependence of MSI-H cancer cell lines might not be attributable to an acute and hard-wired synthetic lethal interaction between WRN and MLH1/MSH3.\n\n### CRISPR-Cas9-mediated inactivation of WRN confirms the selective dependency of MSI-H CRC models on WRN\n\nWe carried out CRISPR-Cas9 depletion assays in MSS and MSI-H CRC models to independently confirm the selective WRN dependencies observed in shRNA/siRNA studies. Cell lines were stably transduced with Cas9 followed by transduction of lentiviral particles co-expressing GFP and single guide RNAs (sgRNAs) targeting WRN or the essential replication factor RPA3 (Figure 3A). To investigate the relevance of the different protein domains in WRN by CRISPR scanning (Shi et al., 2015), domain specific sgRNAs were used to target the exonuclease, helicase, RecQ helicase family DNA-binding (RQC) and Helicase and RNase D C-terminal (HRDC) domains and the C-terminal helix-turn-helix (HTH) motif. Negative selection of sgRNA expressing cells was monitored over 14 days via flow cytometry-based quantification of GFP expressing cells, and normalized to the effect of the RPA3 positive control sgRNA (Figure 3B). We did not observe depletion of cells harboring WRN targeting sgRNAs in the MSS CRC cell line HT-29. In contrast, MSI-H HCT 116 cells expressing WRN sgRNAs depleted to a similar level as observed for the RPA3 positive control. sgRNAs directed against the exonuclease, helicase and RQC domains were most effective, implying a functional or structural requirement of both these domains in the context of WRN dependency. Interestingly, strong depletion effects were also observed for sgRNAs targeting the C-terminal HTH motif (Figure 3B). A similar WRN sgRNA depletion pattern was observed in the MSI-H CRC cell line RKO, while we found far less pronounced depletion effects in the MSS CRC model SK-CO-1 (Figure 3\u2014figure supplement 1). In agreement with the RNAi studies, our CRISPR-Cas9 experiments suggest that WRN provides an essential gene function in two MSI-H CRC cell lines but not in two MSS CRC lines.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/43333/elife-43333-fig3-v1.jpg)\n\n**Figure 3.:** (A) Schematic representation of CRISPR-Cas9 depletion assays.\u00a0Cas9 expressing cells were transduced with a lentivirus encoding GFP and sgRNAs. The percentage of GFP-positive cells was determined over time by flow cytometry. (B) Cas9 expressing MSS or MSI-H CRC cells were transduced with a lentivirus encoding GFP and sgRNAs targeting multiple domains in WRN as indicated. The percentage of GFP-positive cells was determined 14 days post-transduction and normalized to the fraction of GFP-positive cells at the first measurement. Depletion ratios are shown relative to the positive control RPA3 (n\u00a0=\u00a01 experimental replicate). Domains are annotated according to PFAM entry Q14191. RQC, RecQ helicase family DNA-binding domain; HRDC, Helicase and RNase D C-terminal, HTH, helix-turn-helix motif.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/43333/elife-43333-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Cas9-GFP expressing MSS or MSI-H CRC cells were transduced with a lentivirus encoding GFP and sgRNAs targeting multiple domains in WRN as indicated.\u00a0The percentage of GFP-positive cells was determined 14 days post-transduction and\u00a0normalized to the fraction of GFP-positive cells at the first measurement. Depletion ratios are shown relative to the pan-essential\u00a0positive control RPA3 (n\u00a0=\u00a01 experimental replicate). Domains are annotated according to PFAM entry Q14191. RQC, RecQ helicase family DNA-binding domain; HRDC, Helicase and RNase D C-terminal, HTH, helix-turn-helix motif.\n\n### WRN dependency in MSI-H CRC is linked to its helicase function\n\nTo further dissect the relevance of WRN exonuclease and helicase function in WRN-dependent cell models, we generated FLAG-tagged, siRNA-resistant WRN (WRNr) expression constructs harboring loss-of-function mutations within the exonuclease- (E84A, Nuclease-dead) and helicase-domain (K577M, ATP-binding deficient), or both domains (E84A/K577M, Double-mutant) (Gray et al., 1997; Huang et al., 1998) (Figure 4A). Wild-type and mutant forms of WRNr were transduced in HCT 116 cells and monoclonal lines with matched stable WRNr expression were generated. Expression and nuclear accumulation of transgenic WRNr variants among the cell lines was confirmed using immunofluorescence analysis (Figure 4B). Immunoblotting revealed that transgenic WRNr wild-type as well as the mutant WRN proteins were expressed at levels higher than the endogenous WRN counterpart (Figure 4B). Two wild-type WRNr expressing clones were selected based on the respective high and low expression of the transgene in order to cover the range of mutant WRNr variant expression observed in the selected panel of clones. As expected, viability of empty vector control-transduced cells was strongly reduced upon depletion of WRN (Figure 4C). Importantly, both the high and low expression level of wild-type WRNr was sufficient to render HCT 116 cells inert to knock-down of endogenous WRN (Figure 4C). This demonstrates the on-target effect of the WRN siRNA duplex and indicates that the transgene-mediated rescue of WRN function is not protein level sensitive. Exogenous expression of the nuclease-dead form of WRNr almost completely rescued the effect of endogenous WRN depletion. In stark contrast, although expressed at similar or higher levels than WRNr wild-type, both the ATP-binding deficient and double-mutant form of WRNr were unable to restore viability following depletion of endogenous WRN (Figure 4C). In RKO cells expressing WRNr variants, we observed a slightly stronger dependency on WRN helicase ATP-binding function compared to exonuclease activity upon knock-down of endogenous WRN (Figure 4\u2014figure supplement 1A and B), while WRNr-expressing monoclonal lines generated from the MSI endometrial carcinoma model HEC-265 showed an exclusive dependency on WRN helicase function\u00a0(Figure 4\u2014figure supplement 1C), similar to HCT 116 cells. In summary, these results indicate that the ATP-binding activity of WRN and possibly its helicase function are crucial for the survival of MSI-H CRC cells.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/43333/elife-43333-fig4-v1.jpg)\n\n**Figure 4.:** (A) Schematic representation of WRN domain structure.\u00a0Location of nuclease- and ATPase-inactivating mutations in siRNA-resistant WRN (WRNr) expression constructs is indicated. (B) MSI-H CRC HCT 116 cells were stably transduced with FLAG-tagged wild-type or mutant forms of WRNr and monoclonal lines with similar WRNr expression levels were isolated. For WRNr wild-type, two clones with high and low transgene expression were selected to cover the expression range of WRNr variants. Anti-FLAG immunofluorescence analysis was performed to monitor homogenous expression of WRNr. Expression of WRNr wild-type and mutant forms and endogenous protein levels were determined using immunoblotting with anti-FLAG and anti-WRN antibodies. GAPDH expression was used to monitor equal loading. Scale bar, 20 \u00b5M. (C) WRNr-expressing HCT 116 cells were transfected with the indicated siRNAs. Cell viability was determined 7 days after transfection and is shown relative to NTC siRNA. Data information: In (C), data are presented as mean\u00a0\u00b1\u00a0SD of three independent experiments.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/43333/elife-43333-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) MSI-H CRC RKO cells were stably transduced with FLAG-tagged wild-type or mutant forms of WRNr.\u00a0Anti-FLAG immunofluorescence analysis was performed to monitor homogenous expression of WRNr. Overexpression of WRNr wild-type and mutant forms compared to endogenous protein levels was determined using immunoblotting with anti-FLAG and anti-WRN antibodies. GAPDH expression was used to monitor equal loading. Scale bar, 20 \u00b5M. (B) WRNr-expressing RKO cells were transfected with the indicated siRNAs. Cell viability was determined 7 days after transfection and is shown relative to NTC siRNA. (C) MSI-H endometrial carcinoma HEC-265 cells were stably transduced with FLAG-tagged wild-type or mutant forms of WRNr. WRNr-expressing HEC-265 cells were transfected with the indicated siRNAs. Cell viability was determined 7 days after transfection and is shown relative to NTC siRNA. Overexpression of WRNr wild-type and mutant forms compared to endogenous protein levels was determined using immunoblotting with anti-FLAG and anti-WRN antibodies. Actin expression was used to monitor equal loading. Data information: In (B) and C), data are presented as mean\u00a0\u00b1\u00a0SD of three independent experiments.\n\n### Loss of WRN causes mitotic defects and nuclear abnormalities in MSI-H cells\n\nIn order to investigate the cellular basis for the viability reduction of MSI-H cancer cells upon WRN depletion, we monitored the consequences of WRN loss-of-function using immunofluorescence analysis of the nuclear membrane protein LAP2\u03b2 and Hoechst DNA staining in MSS and MSI-H CRC cell lines. SW480 did not display any phenotypic differences upon transfection with NTC and WRN-targeting siRNAs (Figure 5A). Strikingly, in HCT 116 and RKO cells we observed formation of chromatin bridges and micronuclei upon WRN knock-down, both potential consequences of failed sister genome partitioning during mitosis (Figure 5A). Enlarged nuclei, indicative of failed mitosis, were additionally observed upon WRN knock-down in HCT 116 cells. Quantification of the frequency of chromatin bridges and micronuclei revealed that WRN depletion did not affect baseline levels of these aberrant nuclear morphologies in the MSS CRC cancer models SK-CO-1 and SW480, while the frequency of both chromatin bridges and micronuclei was strongly increased upon WRN knock-down in the MSI-H CRC cell lines HCT 116 and RKO (Figure 5B and C). In non-transformed hTERT RPE-1 cells, WRN depletion led to a slight increase of chromatin bridge and micronucleus formation, although far less pronounced compared to the MSI-H CRC models (Figure 5B and C). Supportive of the immunofluorescence studies, live cell imaging revealed a strong increase of the incidence of lagging chromosomes and chromosome bridges during mitosis in WRN-depleted MSI-H CRC cell lines HCT 116 and RKO, but not in\u00a0MSS SW480 cells (Figure 6). We conclude that WRN depletion in MSI-H cells results in nuclear morphology and integrity aberrations that are manifested during cell division. The correlation of these defects with the observed cell viability reduction in MSI-H models suggests that nuclear abnormalities are causally linked to the anti-proliferative effect of WRN loss.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/43333/elife-43333-fig5-v1.jpg)\n\n**Figure 5.:** (A) MSS and MSI-H CRC cell lines were transfected with the indicated siRNAs.\u00a0Immunofluorescence analysis was performed 96 hr after transfection to determine the fraction of cells with chromosomal bridges and micronuclei. Examples with enhanced brightness are shown as insets. LAP2\u03b2 signal intensity was adjusted in a subset of samples for uniform representation. Scale bar, 10 \u00b5m. (B) Statistical analysis of chromosomal bridge phenotypes observed in siRNA knock-down studies in MSS and MSI-H CRC lines and hTERT RPE-1 non-transformed cells. (C) Statistical analysis of micronuclei phenotypes observed in siRNA knock-down studies in MSS and MSI-H CRC lines and hTERT RPE-1 non-transformed cells. Data information: In (B and C), data are presented as mean\u00a0\u00b1\u00a0SD of two or three independent experiments (n\u00a0\u2265\u00a0410 cells).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/43333/elife-43333-fig6-v1.jpg)\n\n**Figure 6.:** Mitotic live cell imaging in WRN-depleted MSS and MSI-H CRC cell lines.\u00a0Cells were transfected with WRN siRNA #1. Cells were stained with SiR-Hoechst dye and were analyzed 24 hr post siRNA transfection. Exemplary lagging chromosomes (arrowhead) and a chromatin bridge (asterisk) are designated. Duration of time-lapse is indicated in minutes. Scale bar, 5 \u00b5M.\n\n### Structural chromosome aberrations in MSI-H cells after WRN loss-of-function\n\nThe observed nuclear integrity and mitotic defects caused by WRN depletion in MSI-H cells could be the consequence of preceding genome maintenance aberrations. This hypothesis is reinforced by the important role of RECQ family helicases, including WRN, in genome integrity (Chu and Hickson, 2009). To interrogate genome integrity, we performed mitotic chromosome spread analysis in MSI-H, MSS and non-transformed cells after depletion of WRN. To overcome the low abundance of mitotic cells in WRN-depleted MSI-H cell lines, caffeine was added to cultured cells to bypass the G2/M checkpoint. Strikingly, WRN loss elicited structural chromosome aberrations, such as chromosome breaks and non-homologous radial formations, in the MSI-H CRC cell lines HCT 116 and RKO (Figure 7A). Quantification of the number of chromatin breaks per karyotype demonstrated a strong increase in the fraction of cells harboring 1\u20135 or\u00a0>5 chromosome breaks in the two MSI-H CRC models upon WRN depletion (Figure 7B). In the MSS CRC model SW480 and hTERT RPE-1 non-transformed cells only a minor increase of karyotypes with chromosome breaks was detected (Figure 7B).\n\n![Figure 7.](https://cdn.elifesciences.org/articles/43333/elife-43333-fig7-v1.jpg)\n\n**Figure 7.:** (A) MSS and MSI-H CRC cell lines were transfected with the indicated siRNAs.\u00a0Mitotic chromosome spreads were prepared 72 hr after transfection and visualized by microscopy. Non-homologous radial formations are designated by arrows, breaks are labeled with asterisks. (B) Quantification of chromosomal defects observed in siRNA knock-down studies in MSS and MSI-H CRC lines and hTERT RPE-1 non-transformed cells. The status of chromosomal breaks of individual metaphase spreads was categorized into normal, 1\u20135 breaks or more than five breaks (n\u00a0\u2265\u00a028 spreads of two independently analyzed slides). Non-homologous radial formation was counted as two breaks.\n\n![Figure 7\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/43333/elife-43333-fig7-figsupp1-v1.jpg)\n\n**Figure 7\u2014figure supplement 1.:** (A) MSS and MSI-H CRC cell lines were transfected with the indicated siRNAs or treated with 5 \u00b5M etoposide.\u00a0Immunofluorescence analysis was performed 72 hr after transfection or 24 hr post etoposide treatment. (B) Quantitative analysis of \u03b3-H2AX mean nuclear intensities upon siRNA-mediated knock-down of WRN or etoposide treatment in MSS and MSI-H CRC lines and hTERT RPE-1 non-transformed cells. Data information: In (B), individual values and mean of two independent experiments (n\u00a0\u2265\u00a0140 cells) are presented.\n\nTo test whether signs of DNA damage can already be detected in WRN-depleted interphase cells, we analyzed the intensity of nuclear \u03b3-H2AX signals. We observed a strong induction of \u03b3-H2AX upon siRNA-mediated depletion of WRN in MSI-H, but not MSS, CRC cancer cell lines (Figure 7\u2014figure supplement 1). Strikingly, in both HCT 116 and RKO MSI-H CRC lines, WRN depletion led to an increase in nuclear \u03b3-H2AX signal similar to or higher than upon treatment of cells with the DNA double-strand break-inducing agent etoposide (Figure 7\u2014figure supplement 1A and B). Importantly, nuclear \u03b3-H2AX levels in non-transformed and MSS hTERT RPE-1 cells were strongly increased by treatment with etoposide, while loss of WRN had no effect in this model (Figure 7\u2014figure supplement 1B).\n\nOur analyses suggest that WRN helicase is essential for maintaining genome integrity in MSI-H cells by preventing chromosome breaks and erroneous chromosome fusions. The observed mitotic chromosome aberrations in WRN-depleted MSI-H cells can also explain the aforementioned nuclear morphology and mitotic defects, including micronuclei, lagging chromosomes and chromatin bridges. The detection of DNA damage markers in interphase nuclei of WRN-depleted MSI-H cells suggests that the\u00a0aforementioned mitotic and post-mitotic aberrations originate from genome integrity defects in interphase. The correlation of chromosome aberrations and nuclear abnormalities with MSI-H status following loss of WRN function indicate that genome integrity defects are responsible for the profound reduction in viability of MSI-H cancer cells.\n\n## Discussion\n\nTreatment paradigms for MSI-H tumors have recently shifted with the approval of the immune checkpoint agents pembrolizumab, nivolumab and ipilimumab, targeting programmed cell death 1 (PD-1) and cytotoxic T-lymphocyte-associated Protein 4 (CTLA-4) in this patient segment (Le et al., 2017; Le et al., 2015; Overman et al., 2018). Pembrolizumab constitutes the first cancer therapy approval based on a patient selection biomarker irrespective of the tumor type, highlighting MSI-H status as a therapeutically trackable and clinically implemented feature of tumor cells (Goswami and Sharma, 2017). While responses to immune checkpoint blockade in MSI-H cancer are often durable, intrinsic and acquired resistance to immunotherapy represents a continuous medical need in MSI-H cancer.\n\nThe highest prevalence of MMR-deficiency/MSI-H status is observed among CRC, gastric and endometrial cancers (Cortes-Ciriano et al., 2017). Recent genomic analyses have outlined a detailed landscape of genomic alterations in MSI-H tumors (Cancer Genome Atlas Network, 2012; Knijnenburg et al., 2018). However, while MSI-H status is linked to a CpG island methylator (CIMP) phenotype and an increased mutational burden, a functional dependency enabling selective targeting of MSI-H cancer cells remains elusive. The results of this study uncover a novel vulnerability of MSI-H tumor cell models and indicate that pharmacological inhibition of WRN ATPase/helicase function might serve as an attractive targeted therapeutic strategy in MSI-H cancer.\n\nOur data suggest that similar to the tumor agnostic activity of checkpoint blockade, MMR deficiency and MSI-H status represent a genetic determinant for WRN dependency regardless of tumor type. As indicated by the MLH1/MSH3 reconstitution and depletion studies, the genetic interaction of WRN and MMR genes cannot readily be recapitulated using isogenic cell models and thus seems to be distinct from acute and hard-wired synthetic lethal interactions, such as described in cancer cells for the alternate BAF complex ATPases SMARCA2/SMARCA4 or the cohesin subunits STAG1/STAG2 (Oike et al., 2013; van der Lelij et al., 2017;\u00a0Benedetti et al., 2017). In the Random Forest model (see Figure 1\u2014figure supplement 1A), loss of MLH1 expression was the feature most strongly associated with WRN dependency. However, we cannot rule out that alterations frequently co-occurring with MMR-deficiency or MSI-H status (Boland and Goel, 2010; Knijnenburg et al., 2018) alone or in combination contribute to the context-dependent requirement on WRN function in MSI-H cancer cell lines. Further work is required to decipher which specific or cumulative genetic alterations elicit WRN dependency in MMR-deficient and MSI-H cells.\n\nUpon WRN loss-of-function we observe a strong and rapid decrease in the viability of MSI-H cell models that is accompanied by nuclear abnormalities and cell division defects. In particular, we find that WRN-depleted MSI-H cancer cells display chromosome breaks, chromatin bridges and micronuclei indicative of genome instability that is highlighted during cell division. The strong induction of \u03b3-H2AX in WRN-depleted MSI-H interphase cells suggest that pervasive DNA damage, e. g. DNA double strand breaks, accumulate already in interphase prior to entry into mitosis. The occurrence of these defects and phenomena in MSI-H but not MSS cells upon WRN inactivation suggests that these aberrations might be causally linked to the selective reduction in viability in MSI-H cells. While rescue studies using WRN variants clearly indicate WRN helicase function as the critical enzymatic activity in MSI-H cell models, CRISPR domain scanning indicates a potential structural requirement of the exonuclease domain and the HTH loop of WRN.\n\nWRN is a member of the RecQ helicase family which fulfils pleiotropic functions in DNA repair (Chu and Hickson, 2009). MMR activity is required for activation of the G2/M checkpoint in response to DNA damage prior to entry into mitosis (O'Brien and Brown, 2006). WRN function in MSI-H cells might therefore be critical for the resolution of DNA damage events and to prevent premature entry into mitosis. Of note, cell lines derived from Werner syndrome patients display defective mitotic recombination and are susceptible to genome instability (Prince et al., 2001). However, in MSS cancer and non-transformed cells WRN depletion had no or very mild effects on viability, suggesting that pharmacological inhibition of WRN might allow for an MSI-H cancer-directed therapy that spares normal cells and tissues.\n\nThe chromosome breaks and radial chromosomes observed in MSI-H cells upon WRN depletion indicate the generation and/or persistence of DNA double strand breaks. Future research is required to dissect the molecular basis for this effect. It is conceivable that WRN is required to process and resolve DNA repair or replication intermediates that arise in MMR-deficient cells or that MMR is required to cope with intermediates emerging upon compromised WRN function. The identification of the molecular basis of the WRN-MSI-H relationship will also help to understand why some rare outlier MSI-H cell lines (see Figure 1B) do not respond to WRN inactivation.\n\nWerner syndrome patients show an increased lifetime risk to develop tumors, pointing to a tumor-suppressive function of WRN (Goto et al., 2013). Interestingly, homozygous Wrn-null mice display no overt phenotype and do not recapitulate the premature ageing or cancer predisposition conditions of Werner syndrome, unless crossed into a Terc-null background (Chang et al., 2004; Lebel and Leder, 1998; Lombard et al., 2000). Mutations in Werner syndrome are almost exclusively truncating nonsense, splicing or frameshift mutations affecting WRN nuclear localization, suggesting that concomitant loss of WRN helicase and exonuclease function might be required for the onset of Werner syndrome (Fu et al., 2017; Huang et al., 2006; Matsumoto et al., 1997; Yokote et al., 2017). This indicates that inhibition of WRN helicase function might have a therapeutic index for the treatment of MSI-H cancer without inducing Werner syndrome related phenotypes.\n\nOur study highlights the power of combining deep functional genomic screening data with tumor cell line profiling to identify new targets with an associated predictive biomarker in oncology. Given the possibility to develop potent and selective small molecule inhibitors of WRN helicase (Aggarwal et al., 2013; Aggarwal et al., 2011; Rosenthal et al., 2010), our findings outline a novel strategy for the treatment of a clinically defined subset of patients harboring MSI-H/MMR-deficient tumors. Since genome instability can elicit cytoplasmic nucleic acid sensor pathways and innate immune responses (Mackenzie et al., 2017), the induction of cancer cell selective nuclear aberrations by WRN inactivation could provide a synergistic combination option with the approved immunotherapy agents for the benefit of MSI-H cancer patients.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Gene (Homo sapiens)</td>\n      <td>Werner Syndrome RecQ Like Helicase (WRN)</td>\n      <td>N/A</td>\n      <td>Entrez Gene: 7486</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (Homo sapiens)</td>\n      <td>NTC siRNA</td>\n      <td>Dharmacon</td>\n      <td>D-001810\u201310</td>\n      <td>non-targeting siRNA pool</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (Homo sapiens)</td>\n      <td>WRN siRNA pool</td>\n      <td>Dharmacon</td>\n      <td>L-010378\u201300</td>\n      <td>WRN-targeting siRNA pool</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (Homo sapiens)</td>\n      <td>WRN siRNA</td>\n      <td>Dharmacon</td>\n      <td>J-010378\u201305</td>\n      <td>WRN-targeting siRNA</td>\n    </tr>\n    <tr>\n      <td>Cell line (Homo sapiens)</td>\n      <td>HCT 116</td>\n      <td>ATCC</td>\n      <td>RRID:CVCL_0291</td>\n      <td>MSI-H CRC cell line</td>\n    </tr>\n    <tr>\n      <td>Cell line (Homo sapiens)</td>\n      <td>RKO</td>\n      <td>ATCC</td>\n      <td>RRID:CVCL_0504</td>\n      <td>MSI-H CRC cell line</td>\n    </tr>\n    <tr>\n      <td>Cell line (Homo sapiens)</td>\n      <td>SW480</td>\n      <td>ATCC</td>\n      <td>RRID:CVCL_0546</td>\n      <td>MSS CRC cell line</td>\n    </tr>\n    <tr>\n      <td>Cell line (Homo sapiens)</td>\n      <td>SK-CO-1</td>\n      <td>ATCC</td>\n      <td>RRID:CVCL_0626</td>\n      <td>MSS CRC cell line</td>\n    </tr>\n    <tr>\n      <td>Cell line (Homo sapiens)</td>\n      <td>hTERT RPE-1</td>\n      <td>ATCC</td>\n      <td>RRID:CVCL_4388</td>\n      <td>Non-transformed telomerase immortalized cell line</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>mouse anti-WRN</td>\n      <td>Cell Signaling</td>\n      <td>RRID:AB_10692114</td>\n      <td>1/1000 dilution for immunoblot</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>mouse anti-GAPDH</td>\n      <td>Abcam</td>\n      <td>RRID:AB_2107448</td>\n      <td>1/30000 dilution for immunoblot</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>mouse anti-FLAG</td>\n      <td>SIGMA</td>\n      <td>RRID:AB_262044</td>\n      <td>1/1000 dilution for immunoblot</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>mouse anti-LAP2\u00df</td>\n      <td>BD Transduction Laboratories</td>\n      <td>RRID:AB_398313</td>\n      <td>1/100 for immunofluorescence analysis</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pLVX-WRN-3x FLAG-IRES-Puro</td>\n      <td>This study</td>\n      <td></td>\n      <td>Lentiviral vector for stable expression of WRN wild-type</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pLVX-WRN-3x FLAG-IRES-Puro E84A</td>\n      <td>This study</td>\n      <td></td>\n      <td>Lentiviral vector for stable expression of WRN E84A mutant</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pLVX-WRN-3x FLAG-IRES-Puro K577M</td>\n      <td>This study</td>\n      <td></td>\n      <td>Lentiviral vector for stable expression of WRN K577M mutant</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pLVX-WRN-3x FLAG-IRES-Puro E84A _K577M</td>\n      <td>This study</td>\n      <td></td>\n      <td>Lentiviral vector for stable expression of WRN E84A/K577M double mutant</td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>Drive database</td>\n      <td>PMID 28753431</td>\n      <td></td>\n      <td>Functional genomics database on cancer cell line dependencies</td>\n    </tr>\n  </tbody>\n</table>\n\n### Random Forest model\n\nTo explore the hypothesis that WRN sensitivity is associated with MSI, we employed an exploratory machine learning approach (Qi, 2012). We first divided the DRIVE WRN cell line sensitivity data (McDonald et al., 2017) into four distinct groups, using a k-means clustering algorithm. We chose four clusters to model insensitive (cluster 1), moderate insensitive (cluster 2), moderate sensitive (cluster 3) and sensitive (cluster 4) cell lines. We subsequently denoted clusters 1 and 2 as insensitive and clusters 3 and 4 as sensitive and chose an RSA score\u00a0<\u22121.37 (maximum value of cluster 3) as a cutoff between sensitive and insensitive lines. Only a small fraction of cell lines, 30 out of 371 cell lines (8%), is sensitive in the entire data set, suggesting a pronounced class imbalance between sensitive and insensitive cell lines. To address this class imbalance, we focused our subsequent analysis on cell lines originating from CRC, as i) most sensitive cell lines are from this indication and ii) MSI has been extensively characterized in this indication (Boland and Goel, 2010; Medico et al., 2015). 36% (13 out of 36) of colon cancer cell lines are sensitive to WRN loss of function according to our k-means clustering based approach.\n\nWe next assembled a MSI feature list. We used cell line gene expression and mutation data for the cell lines from a set of genes, i) involved in MMR (EXO1, MLH1, MLH3, MSH2, MSH3, MSH6) and ii) genetic target genes of MSI in CRC (Boland and Goel, 2010). We next trained a Random Forest model based on 50% of the data. On the full dataset, the model classifies WRN sensitive and insensitive cell lines with an accuracy of 0.89 and a recall rate for sensitive lines of 0.69.\n\n### MSI analysis\n\nGenomic DNA was isolated using QIAampDNA mini kit (Qiagen, Hilden, Germany). Per reaction 2 ng of genomic DNA was used for fluorescent PCR-based analysis of the mononucleotide microsatellite marker length using the Promega MSI Analysis System, Version 1.2 kit. Microsatellite fragment length of a standard panel of markers (NR-21, BAT-26, BAT-25, NR-24 and MONO-27) according to the \u2018Revised Bethesda Guidelines for Hereditary Nonpolyposis Colorectal Cancer (Lynch Syndrome) and Microsatellite Instability\u2019 (Umar et al., 2004) was analyzed using capillary electrophoreses (Applied Biosystems 3130xl Genetic Analyzer, 16-capillary electrophoresis instrument) and evaluated with GeneMapper Software 5 (Applied Biosystems).\n\n### Cell culture and lentiviral transduction\n\nHCT 116 cells were cultured in McCoy\u2019s 5A medium (GIBCO, 36600\u2013021) with glutamax supplemented with 10% fetal calf serum (FCS), hTERT RPE-1 cells were cultured in DMEM:F12 (ATCC, 30\u20132006) supplemented with 10% FCS and 0.01 mg/ml Hygromycin B. RKO, SW480, CaCo-2 and SK-CO-1 cells were cultured in EMEM (SIGMA, M5650) with glutamax supplemented with 10% FCS and Na-Pyruvate. SNU-C4 cells were cultured in RPMI1640 medium (ATCC, 30\u20132001) with glutamax, supplemented with 10% FCS, 25 mM HEPES and 25 mM NaHCO3. LS1034 cells were cultured in RPMI-1640 (ATCC, 30\u20132001) supplemented with 10% FCS. MFE-280 cells were cultured in 40% RPMI 1640 (GIBCO,\u00a061870-010), 40% DMEM (SIGMA, D6429) supplemented with 20% FCS and 1X insulin-transferrin-sodium selenite (GIBCO, 41400\u2013045). HEC-265 cells were cultured in EMEM (SIGMA, M5650) with glutamax supplemented with 15% FCS. ISHIKAWA cells were cultured in EMEM (SIGMA, M5650) with\u00a0glutamax medium supplemented with 5% FCS and NEAA. HEC-6 cells were cultured in EMEM (SIGMA, M5650) with glutamax supplemented with 15% FCS, NEAA and Na-Pyruvate. HT-29_CRISPR-Cas9 cells were cultured in McCoy\u2019s 5A (GIBCO, 36600\u2013021) with glutamax supplemented with 10% FCS and 10 \u00b5g/ml Blasticidin (Invitrogen, R210-01). HCT 116_CRISPR-Cas9 cells were cultured like the parental cell line but supplemented with 2 \u00b5g/ml Puromycin. All supplements were obtained from GIBCO, FCS (SH30071.03) from GE Healthcare Life Sciences and Puromycin from SIGMA (P9620). Lentiviral particles were produced using the Lenti-X Single Shot system (Clontech, Mountain View, CA, US). Following lentiviral infection, stably transduced pools were generated using Puromycin selection (HCT 116: 2 \u00b5g/ml, RKO: 0.5 \u00b5g/ml, SK-CO-1: 1 \u00b5g/ml) or Blasticidin (HT-29: 10 \u00b5g/ml). Sources, MSI status and authentication information (STR fingerprinting at Eurofins Genomics, Germany) of cell lines used in this study are provided in Supplementary file 2. All cell lines were tested negatively for mycoplasma contamination and have been authenticated by STR fingerprinting (HCT 116\u00a0+\u00a0ch2, HCT 116\u00a0+\u00a0ch3, HCT 116\u00a0+\u00a0ch3+ch5 and subclones generated from SW480 were not analyzed by STR fingerprinting).\n\n### siRNA transfection and cell viability\n\nFor knock-down experiments, cells were transfected with ON-TARGETplus SMARTpool siRNA duplexes (Dharmacon, Lafayette, CO, US) targeting WRN (L-010378\u201300), MLH1 (L-003906\u201300) or MSH3 (L-019665\u201300) using Lipofectamine RNAiMAX reagent according to the manufacturer\u2019s instructions (Invitrogen, Waltham, MA, US). For WRN knock-down, additionally an individual siRNA was used (J-010378\u201305). Chromosome spreads, immunoblotting, immunofluorescence and live cell imaging experiments were performed using a final siRNA concentration of 20 nM. Cell viability assays were performed using 10 nM siRNA in 96-well plates in a total volume of 100 \u00b5l per well. Viability was determined using CellTiter-Glo (Promega, Madison, WI, US). Seven days post-transfection, 100 \u00b5l CellTiter-Glo solution was added directly to the cell medium, mixed and incubated for 10 min prior to determination of the luminescence signal. Crystal violet staining was performed in 24-well format using a total volume of 1000 \u00b5l per well. Seven days post-transfection, cells were fixed with 4% formaldehyde in PBS and stained twice for 30 min with crystal violet (SIGMA,\u00a0HT901). For co-depletion of p53 and WRN 10 nM of the respective siRNA duplexes each were used for immunoblot and viability assay.\n\n### Cell extracts for immunoblotting\n\nCell pellets were resuspended in extraction buffer (50 mM Tris-HCl pH 8.0, 150 mM NaCl, 1% Nonidet P-40 supplemented with Complete protease inhibitor mix [Roche, Switzerland] and Phosphatase inhibitor cocktails [SIGMA, P5726 and P0044]).\n\n### Antibodies\n\nThe following antibodies were used: WRN (8H3) mouse mAb (Cell Signaling, 4666, 1/1000 dilution), mouse anti-GAPDH (Abcam, ab8245, 1/30000 dilution), mouse anti-FLAG (SIGMA, F1804, 1/1000 [immunoblot] or 1/500 [immunofluorescence] dilution), mouse anti-LAP2\u00df (BD Transduction Laboratories #611000, 1/100 dilution), mouse anti-p53 (Calbiochem, OP43, 1/1000 dilution), rabbit anti-Actin (SIGMA, A2066, 1/4000) dilution), mouse anti-MLH1 (Cell Signaling, 3515, 1/1000 dilution), rabbit anti phospho-Histone H2A.X (Ser139) (Cell Signaling, 2577, 1/800 dilution) a rabbit anti-MSH3 (Santa Cruz, sc-11441, 1/500 dilution) and secondary rabbit (Dako, P0448, 1/1000 dilution), mouse anti-IgG-HRP\u00a0(Dako, P0161, 1/1000 dilution) and mouse Alexa Fluor 488 (Molecular Probes, Eugene, OR, US, 1/1000 dilution).\n\n### Quantitative reverse transcription PCR (qRT-PCR)\n\nRNA was isolated 472 hr post-transfection and reversely transcribed using SuperScript VILO kit (Thermo Scientific). All qPCR analyses were performed with the QuantiTect Multiplex PCR kit (Qiagen, Hilden, Germany) on a StepOne Real-Time PCR Sytem (Applied Biosytems) with a total of 45 cycles. Constitutive maintenance gene 18S rRNA (Applied Biosystems, Quencher VIC/MGB, 4319413E) and human WRN (Applied Biosystems, Quencher FAM/MGB-NFQ, 4331182), human MLH1 (Applied Biosystems, Quencher FAM/MGB-NFQ, 4453320) and human MSH3 (Applied Biosystems, Quencher FAM/MGB-NFQ, 4448892) TaqMan probes were used. WRN expression was normalized to 18S rRNA expression levels and is indicated relative to the NTC control.\n\n### CRISPR-Cas9-mediated gene knock-out\n\nTo introduce mutations in WRN in SW480, the following sgRNA sequences were cloned into pSpCas9 BB-2A-GFP pX458 (GenScript, China): GGCCACCATTATACAATAGA (EN-domain_01), GCAGTTAAAAAGGCAGGTGT (EN-domain_02) and GTCTTGCCGATCAATATCGC (RQ-domain_01). Cells were transfected with X-tremeGENE 9 DNA Transfection Reagent (SIGMA, 6365779001), sorted after 48 hr for GFP positive cells and diluted to obtain single cell clones. WRN knock-out was monitored by immunoblotting.\n\n### CRISPR depletion assays\n\nStable Cas9 expressing cell lines, using either Blasticidin or Puromycin as selection markers, were transduced with vectors encoding GFP and sgRNAs targeting different domains of WRN (Supplementary file 3). On day three post-transfection the fraction of GFP positive cells, measured via flow cytometry analysis, was set to 100%. All values were normalized to the control RPA3_1.3 for relative depletion ratio.\n\n### cDNA transgene vectors\n\npLVX-WRN-3xFLAG-IRES-Puro, pLVX-WRN-3xFLAG-IRES-Puro K577M, pLVX-WRN-3xFLAG-IRES-Puro E84A and pLVX-WRN-3xFLAG-IRES-Puro E84A _K577M for siRNA-resistant transgene expression were generated by gene synthesis (GenScript, China) based on the WRN cDNA sequence NCBI NM_000553.5 followed by cloning into the parental pLVX vector (Clontech, Mountain View, CA, US). Codon optimization changes were introduced into WRN coding sequences to render the transgenes siRNA-resistant.\n\n### Immunofluorescence\n\nFor immunofluorescence, 72 hr post siRNA transfection cells were fixed with 4% paraformaldehyde for 15 min, permeabilized with 0.2% Triton X-100 in PBS for 10 min and blocked with 3% BSA in PBS containing 0.01% Triton X-100. Cells were incubated with primary LAP2\u00df or phospho-Histone H2A.X (Ser139) and secondary antibody (Alexa 488, Molecular Probes, Eugene, OR, US), DNA was counterstained with Hoechst 33342 (Molecular Probes, Eugene, OR, US; H3570). Coverslips and chambers were mounted with ProLong Gold (Molecular Probes, Eugene, OR, US). Images were taken with an Axio Plan2/AxioCam microscope and processed with MrC5/Axiovision software (Zeiss, Germany). For quantification of \u03b3-H2AX immunofluorescence, nuclei were identified based on Hoechst staining using segmentation in ImageJ 1.52a and corresponding \u03b3-H2AX mean intensities of nuclei were determined.\n\n#### Chromosome\u00a0spreads and live-cell imaging\n\nFor chromosome spread analysis, Nocodazole (1.5 \u00b5M final concentration) and 2 mM caffeine was added to the medium for 6 hr. Cells were harvested and hypotonically swollen in 40% medium/60% tap water for 5 min at room temperature. Cells were fixed with freshly made Carnoy\u2019s solution (75% methanol, 25% acetic acid), and the fixative was changed three times. For spreading, cells in Carnoy\u2019s solution were dropped onto glass slides and dried. Slides were stained with 5% Giemsa (Merck) for 4 min, washed briefly in tap water and air dried. For chromosome spread analysis two independent slides were scored blindly for each condition. Live-cell imaging was performed using Spinning Disk Confocal UltraView Vox Axio Observer equipped with Plan apochromat 20x/0.8 objective (Zeiss) and an electron-multiplying charge-coupled device 9100\u201313 camera (Hamamatsu Photonics). The microscope was controlled using Volocity software (Perkin-Elmer). DNA was counterstained with 100 nM SiR-Hoechst 3 hr before the start of imaging. At 24 hr post siRNA transfection cell nuclei were imaged in 2 z slice sections spaced 6 \u03bcm every 6 min for 48 hr. For the imaging, cells were seeded into glass bottom 24 well SensoPlate (Greiner) with imaging medium (phenol red free DMEM supplemented with 10% [vol/vol] FCS, L-glutamine 2 mM and 1% [vol/vol] penicillin-streptomycin). During live cell imaging, cells were maintained at 37\u00b0C in a humidified 5% CO2 atmosphere.\n",
+      "created_at": "2025-12-02T09:16:33.994668Z"
+    },
+    {
+      "id": "7c11ec14-25be-4baf-b870-52cd309444a3",
+      "submission_id": "bb51f2f2-768f-41f5-99fc-3477020de862",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Wolf-Dietrich Heyer, University of California, Davis United States\n\nReviewers:\n- Wolf-Dietrich Heyer, University of California, Davis United States\n- Ray Monnat, University of Washington United States\n- Petr Cejka, Institute for Research in Biomedicine Switzerland\n\n## Review text\n\nDOI: [10.7554/eLife.43333.024](https://doi.org/10.7554/eLife.43333.024)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Werner syndrome helicase is a selective vulnerability of microsatellite instability-high tumor cells\" for consideration by eLife. Your article has been reviewed by three peer reviewers, including Wolf-Dietrich Heyer as the Reviewing Editor and Reviewer #1, and the evaluation has been overseen by Jeffrey Settleman as the Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Ray Monnat (Reviewer #2); Petr Cejka (Reviewer #3).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThis intriguing new report identifies the WRN RecQ helicase as a new and potentially useful vulnerability in microsatellite-unstable ('MSI-high or MSI-H') cancer cell lines. The results are worth reporting after some additional work on the manuscript.\n\nThe authors identified a dependency of MMR-deficient cells on the RecQ-like helicase WRN, which constitutes a significant novel finding with far-reaching implications for improving treatment of MMR-deficient tumors. The selective dependency was identified in a large screen of 398 cancer cell models covering ~8,000 genes as published in 2017 and the correlation of MMR status and WRN dependency is highly significant (Figure 1). The observation is validated in multiple cell line models for MMR+ and MMR- colorectal cancer and endometrial cancer cell lines (Figure 2) and with WRN KO in 2 independent MMR+ and MMR- colorectal cancer cell lines (Figure 3) using viability and colony forming assays. Back-complementation activity depended on the WRN ATPase/helicase activity but not the nuclease activity in HCT 116 cells (Figure 4). The results with another MMR- cell line, RKO, are less clear (Figure 4\u2014figure supplement 1, see below), suggesting the involvement of additional variables. Figure 5, Figure 6 and Figure 7 demonstrate that WRN knockdown in MMR-deficient cells leads to hallmarks of genomic instability including bridges and micronuclei (Figure 5), which is confirmed by life imaging (Figure 6) and endpoint analysis of mitotic spreads (Figure 7). The claims of the manuscript are largely well supported by the data with one exception (see essential points). Overall, the authors consistently use multiple cell lines and approaches to corroborate the dependence of MMR-deficient cells on WRN. The manuscript is very well written, and the results are displayed very clearly in the Figures and Tables.\n\nEssential revisions:\n\n1) Figure 4\u2014figure supplement 1 and subsection \u201cWRN dependency in MSI-H CRC is linked to its helicase function\u201d: There is a significant difference between the back-complementation results in HCT 116 (Figure 4) and RKO (Figure 4\u2014figure supplement 1) and the description in the text does not reflect the results of Figure 4\u2014figure supplement 1. Figure 4 shows that the back-complementation with wildtype and nuclease-deficient WRN is very effective, whereas the ATPase/helicase-deficient mutant as well as the ATPase/helicase nuclease double mutant cannot complement the WRN siRNA knockdown cells. For RKO (Figure 4\u2014figure supplement 1), the difference between nuclease and helicase mutants appears statistically insignificant as the error bars overlap. The text should be changed to more accurately reflect these results.\n\n2) The authors meticulously show the dependence of the effect on WRN status, but the dependence on MMR status is only correlative. A key concern is that all experiments were carried upon depletion of WRN in MMR-deficient cell lines. These cell lines have a high mutator phenotype and accumulate mutations in a number of other genes, in particular in those containing microsatellites. Therefore, to confirm the key conclusion of this manuscript that the lethality is a result of simultaneous MMR and WRN deficiency, the experiment should also done the other way round, i.e. to deplete key MMR factors (MLH1 would be the best) in WRN-deficient cells, or to perform co-depletion experiments. Additionally, WRN depletion should also be carried out in HCT 116 +ch3 cell line, in which the expression of MLH1 was corrected.\n\nHCT 116 and RKO are both MLH1 deficient. What is known about additional mutations in these cell lines that may contribute to this difference? This above approach might also address the difference between both cell lines. For RKO a complementation system was described in Yan et al., 2003.\n\n3) WRN inhibitors need to be referenced and discussed more fully. In addition to the Rosenthal et al., 2010 reference, at least two WRN inhibitors have been around for 5+ years. They are highly and directly relevant to the topic of this manuscript, and are being pursued in other clinical contexts (see, e.g., Moles et al., 2016) that may provide additional insight. These inhibitors are readily available, and the authors' results make a straight-ahead prediction of what a dose-response outcome should be in their CRC cell line panels to provide a bit of pre-clinical data. The authors should acquire the WRN inhibitors and do dose-response curves on their MSI-H and MSS cell lines, and show that their WRN KO lines are insensitive (or largely insensitive) as a demonstration of target specificity.\n\n[Editors' note: further revisions were requested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \"Werner syndrome helicase is a selective vulnerability of microsatellite instability-high tumor cells\" for further consideration at eLife. Your revised article has been favorably evaluated by Jeffrey Settleman (Senior Editor), a Reviewing Editor, and two reviewers.\n\nThe manuscript has been improved but there are some remaining issues that need to be addressed before acceptance, as outlined below:\n\nThe Abstract should be updated to reflect the significant insight that the MHL1 WRN synthetic lethality is context-dependent and not absolute.\n\nReviewer #1:\n\nIn this revision the authors meticulously addressed the comments made in the initial review. They conducted significant new experimentation that strengthens the conclusion about the role of the nuclease activity of WRN (essential revision 1).\n\nThe authors devoted significant efforts to address essential revision 2, conducting 3 lines of experimentation that clearly demonstrate that the MLH1 WRN synthetic lethality is not hard wired but is context dependent. This significantly affects the overall conclusion of the study, and it is very important that these new data were included in the revision and discussed. What I am missing is an update of the abstract to reflect this important point.\n\nThe authors also nicely addressed essential revision 3 testing 2 WRN inhibitors and 2 controls in their cell models. The results provide important insights about the inhibitors but do not contribute much mechanistic insight regarding the MLH1 WRN synthetic lethality. While the authors briefly refer to WRN inhibitors in the discussion, they elected not to include the data in the manuscript. I agree with their choice, as the inhibitors show little promise in terms of target specificity.\n\nPoint for final acceptance:\n\nUpdate the Abstract to reflect the major conclusion that the MLH1 WRN synthetic lethality is context dependent and not absolute.\n\nReviewer #3:\n\nThe authors carried out experiments to address issues raised during the initial revision.\n\nI now support publication of this paper. Although the effect seems \"indirect\" as far as MMR status is concerned, it is still very significant with regards to the therapeutic potential. Also, this is now a very competitive topic.\n",
+      "created_at": "2025-12-02T09:16:33.994668Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T09:16:33.994668Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T09:16:33.994668Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "de84ed3c-d384-4fb8-9f09-aa7c22ae94b3",
+      "content_id": "362310de-e79a-4637-b56a-2ae52e4b3943",
+      "claim_id": "C1",
+      "claim": "WRN was identified as a potential selective dependency in a subset of 398 cancer cell models in Project DRIVE pooled shRNA viability screen.",
+      "claim_type": "EXPLICIT",
+      "source": "WRN was identified as a potential selective dependency in a subset of 398 cancer cell models in a recent pooled shRNA viability screen covering approximately 8000 genes (Project DRIVE) (https://oncologynibr.shinyapps.io/drive/; McDonald et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to the Project DRIVE study (McDonald et al., 2017) and reference to the screening data.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:16:33.994668Z"
+    },
+    {
+      "id": "cfc0e1dd-4b23-4a2e-a52a-d85ee71c0eac",
+      "content_id": "362310de-e79a-4637-b56a-2ae52e4b3943",
+      "claim_id": "C2",
+      "claim": "Depletion of WRN exclusively affects viability of a subset of CRC, gastric and endometrial cancer cell models with RSA sensitivity scores \u2264\u22123.",
+      "claim_type": "EXPLICIT",
+      "source": "Depletion of WRN exclusively affects viability of a subset of CRC, gastric and endometrial cancer cell models reflected by RSA (redundant siRNA activity) sensitivity scores \u2264\u22123, indicative of cell essentiality (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data shown in Figure 1A and the RSA scoring methodology from the screening study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:16:33.994668Z"
+    },
+    {
+      "id": "ffe758a2-f7a0-49dd-8717-52de1239a59e",
+      "content_id": "362310de-e79a-4637-b56a-2ae52e4b3943",
+      "claim_id": "C3",
+      "claim": "CRC, gastric and endometrial cancers are the three human malignancies with the highest frequency of MSI-H status.",
+      "claim_type": "EXPLICIT",
+      "source": "Intriguingly, CRC, gastric and endometrial cancers are the three human malignancies with the highest frequency of MSI-H status (Cortes-Ciriano et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Cortes-Ciriano et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:16:33.994668Z"
+    },
+    {
+      "id": "aaaf7b3b-0c0c-419f-8355-8d7353511c1f",
+      "content_id": "362310de-e79a-4637-b56a-2ae52e4b3943",
+      "claim_id": "C4",
+      "claim": "A Random Forest model classifies WRN sensitive and insensitive cell lines with an accuracy of 0.89 and a recall rate for sensitive lines of 0.69.",
+      "claim_type": "EXPLICIT",
+      "source": "This model classifies WRN sensitive and insensitive cell lines with an accuracy of 0.89 and a recall rate for sensitive lines of 0.69.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by the results of the Random Forest modeling analysis described in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:16:33.994668Z"
+    },
+    {
+      "id": "1a674f7d-1c01-4ce5-8bdf-5ba3b7c37423",
+      "content_id": "362310de-e79a-4637-b56a-2ae52e4b3943",
+      "claim_id": "C5",
+      "claim": "MLH1 expression is the feature most highly associated with WRN dependency classification outcome.",
+      "claim_type": "EXPLICIT",
+      "source": "An analysis of variable importance revealed MLH1 expression as the feature most highly associated with the classification outcome, in line with the frequent inactivation of the MLH1 gene in MSI-H CRC (Cunningham et al., 1998; Herman et al., 1998; Kane et al., 1997; Kuismanen et al., 2000) (Figure 1\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by the Random Forest variable importance analysis shown in Figure 1\u2014figure supplement 1A and citations to studies on MLH1 inactivation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:16:33.994668Z"
+    },
+    {
+      "id": "9fec2412-f92b-4f87-97d4-9f3dcb21e300",
+      "content_id": "362310de-e79a-4637-b56a-2ae52e4b3943",
+      "claim_id": "C6",
+      "claim": "WRN dependency anti-correlates with MLH1 mRNA expression levels among cell models used in Project DRIVE (p=1.02*10\u22124).",
+      "claim_type": "EXPLICIT",
+      "source": "Consistently, WRN dependency anti-correlates with MLH1 mRNA expression levels among the cell models used in Project DRIVE (Figure 1\u2014figure supplement 1B; p=1.02*10\u22124, Fisher's exact test, stratification of MLH1-low and -high expressing cell models according to median MLH1 expression [TPM 37.44]).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by statistical analysis (Fisher's exact test) and data shown in Figure 1\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:16:33.994668Z"
+    },
+    {
+      "id": "129b41da-1204-4f06-9883-9ff58d0ea7ba",
+      "content_id": "362310de-e79a-4637-b56a-2ae52e4b3943",
+      "claim_id": "C7",
+      "claim": "WRN dependency is strongly associated with MSI-H status across CRC, gastric and endometrial models (p=4.91*10\u22128).",
+      "claim_type": "EXPLICIT",
+      "source": "Analysis of gene dependency and MSS/MSI-H status data revealed that WRN dependency was strongly associated with MSI-H status across CRC, gastric and endometrial models (p=4.91*10\u22128, Fisher's exact test).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by statistical analysis (Fisher's exact test) of gene dependency and MSI status data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:16:33.994668Z"
+    },
+    {
+      "id": "117a14a2-b28b-4375-8952-192e2a1c8956",
+      "content_id": "362310de-e79a-4637-b56a-2ae52e4b3943",
+      "claim_id": "C8",
+      "claim": "Of the 18 cell lines classified as MSI-H, 15 cell lines (83%) were sensitive to WRN depletion using an RSA value of \u2264\u22123.",
+      "claim_type": "EXPLICIT",
+      "source": "Of the 18 cell lines classified as MSI-H, 15 cell lines (83%) were sensitive to WRN depletion using an RSA value of \u2264\u22123 to define WRN dependency (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by quantitative analysis of the screening data shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:16:33.994668Z"
+    },
+    {
+      "id": "e97d0ec2-360b-4b24-860f-055d7c197a58",
+      "content_id": "362310de-e79a-4637-b56a-2ae52e4b3943",
+      "claim_id": "C9",
+      "claim": "WRN is dispensable for viability in all MSS cell models.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, WRN is dispensable for viability in all MSS cell models (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:16:33.994668Z"
+    },
+    {
+      "id": "3a960c2e-724d-4649-b23a-9a7fd5440851",
+      "content_id": "362310de-e79a-4637-b56a-2ae52e4b3943",
+      "claim_id": "C10",
+      "claim": "MSI-H status is a strong predictor for WRN sensitivity of cancer cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Our analysis suggests that MSI-H status is a strong predictor for WRN sensitivity of cancer cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an inference based on the statistical associations and experimental data presented.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:16:33.994668Z"
+    },
+    {
+      "id": "d184e32c-bcef-4d52-8854-5fd93cc8b424",
+      "content_id": "362310de-e79a-4637-b56a-2ae52e4b3943",
+      "claim_id": "C11",
+      "claim": "WRN depletion using siRNA profoundly affected viability in MSI-H CRC models (HCT 116, RKO, SNU-C4) but not in MSS CRC models (SK-CO-1, CaCo-2, SW480).",
+      "claim_type": "EXPLICIT",
+      "source": "In agreement with the results from Project DRIVE, WRN depletion using a mixture of four siRNA duplexes (Pool) or an individual siRNA (#1) targeting WRN profoundly affected viability in MSI-H, but not in MSS CRC models (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental viability data shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:16:33.994668Z"
+    },
+    {
+      "id": "cecfaf71-ee9c-4325-bc53-fad30c9aba20",
+      "content_id": "362310de-e79a-4637-b56a-2ae52e4b3943",
+      "claim_id": "C12",
+      "claim": "Depletion of PLK1 had a detrimental effect on viability of both MSS and MSI-H cell lines.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, depletion of the known essential mitotic kinase PLK1, had a detrimental effect on viability of both MSS and MSI-H cell lines.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental viability data comparing PLK1 and WRN depletion effects.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:16:33.994668Z"
+    },
+    {
+      "id": "da34e6e2-45bf-4a37-9972-d0db6a7602cf",
+      "content_id": "362310de-e79a-4637-b56a-2ae52e4b3943",
+      "claim_id": "C13",
+      "claim": "WRN knock-down impaired viability of three MSI-H endometrial carcinoma cell lines (HEC-265, ISHIKAWA, HEC-6) but not the MSS cell line MFE-280.",
+      "claim_type": "EXPLICIT",
+      "source": "Likewise, we observed that WRN knock-down impaired viability of three MSI-H endometrial carcinoma cells lines (HEC-265, ISHIKAWA, HEC-6), but not the MSS cell line MFE-280 (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental viability data shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:16:33.994668Z"
+    },
+    {
+      "id": "6f6d5b5a-251e-4bb2-8a5a-cd70aea0c0fc",
+      "content_id": "362310de-e79a-4637-b56a-2ae52e4b3943",
+      "claim_id": "C14",
+      "claim": "Non-transformed hTERT RPE-1 cells did not display sensitivity to knock-down of WRN.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to MSS cancer models, non-transformed telomerase-immortalized human retinal pigment epithelial cells (hTERT RPE-1) did not display sensitivity to knock-down of WRN (Figure 2\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental viability data shown in Figure 2\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:16:33.994668Z"
+    },
+    {
+      "id": "ab92c426-2023-41ba-b098-9a063fce39c8",
+      "content_id": "362310de-e79a-4637-b56a-2ae52e4b3943",
+      "claim_id": "C15",
+      "claim": "Depletion of BLM significantly impaired viability of hTERT RPE-1 but not HCT 116 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "It is noteworthy, that the depletion of the related RecQ helicase BLM significantly impaired viability of hTERT RPE-1, but not HCT 116 cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental viability data comparing BLM depletion effects in different cell lines.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:16:33.994668Z"
+    },
+    {
+      "id": "5ec5b60d-2af4-489b-abdd-1c54263902d9",
+      "content_id": "362310de-e79a-4637-b56a-2ae52e4b3943",
+      "claim_id": "C16",
+      "claim": "WRN/p53 co-depletion exacerbated the reduction in viability compared to WRN knock-down alone in HCT 116 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "However, WRN/p53 co-depletion exacerbated the reduction in viability compared to WRN knock-down alone (Figure 2\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental viability data shown in Figure 2\u2014figure supplement 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:16:33.994668Z"
+    },
+    {
+      "id": "8ec65676-7396-4414-8d92-9b514048da57",
+      "content_id": "362310de-e79a-4637-b56a-2ae52e4b3943",
+      "claim_id": "C17",
+      "claim": "A slight elevation of p53 protein levels was observed upon WRN depletion in both HCT 116 and SK-CO-1 cell lines.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, in both cell lines we observed a slight elevation of p53 protein levels upon WRN depletion (Figure 2\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by immunoblot data shown in Figure 2\u2014figure supplement 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:16:33.994668Z"
+    },
+    {
+      "id": "ccf0fb0a-f14e-4655-a6d8-c0601cee0a15",
+      "content_id": "362310de-e79a-4637-b56a-2ae52e4b3943",
+      "claim_id": "C18",
+      "claim": "Reconstitution of MLH1 and MSH3 in HCT 116 cells resulted in only a modest increase of viability upon WRN knock-down compared to parental cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In both HCT 116 +ch3 and HCT 116 +ch3+ch5 cell lines, we noticed only a modest increase of viability upon WRN knock-down compared to the parental cells or the HCT 116 +ch2 control line (Figure 2\u2014figure supplement 2A) despite equally potent WRN knock-down in all models (Figure 2\u2014figure supplement 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental viability data shown in Figure 2\u2014figure supplement 2A and 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:16:33.994668Z"
+    },
+    {
+      "id": "8cb764ef-2ea1-405c-8742-4660bdff3016",
+      "content_id": "362310de-e79a-4637-b56a-2ae52e4b3943",
+      "claim_id": "C19",
+      "claim": "Single or concomitant knockdown of MLH1 and MSH3 did not affect cell viability of WRN-deficient SW480 cell lines.",
+      "claim_type": "EXPLICIT",
+      "source": "We did not observe an effect of either single or concomitant knockdown of MLH1 and MSH3 on cell viability of the WRN-deficient SW480 cell lines (Figure 2\u2014figure supplement 3A), despite efficacious depletion of the mRNAs encoding MLH1 and MSH3 (Figure 2\u2014figure supplement 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental viability data shown in Figure 2\u2014figure supplement 3A and 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:16:33.994668Z"
+    },
+    {
+      "id": "c6fb7b84-9f52-4203-b7ac-5c3c4f3d0f50",
+      "content_id": "362310de-e79a-4637-b56a-2ae52e4b3943",
+      "claim_id": "C20",
+      "claim": "WRN dependence of MSI-H cancer cell lines might not be attributable to an acute and hard-wired synthetic lethal interaction between WRN and MLH1/MSH3.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that WRN dependence of MSI-H cancer cell lines might not be attributable to an acute and hard-wired synthetic lethal interaction between WRN and MLH1/MSH3.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an inference based on the reconstitution and depletion experimental results.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:16:33.994668Z"
+    },
+    {
+      "id": "4bc89628-231c-4bd1-b3cc-eb53bba47b21",
+      "content_id": "362310de-e79a-4637-b56a-2ae52e4b3943",
+      "claim_id": "C21",
+      "claim": "MSI-H HCT 116 cells expressing WRN sgRNAs depleted to a similar level as observed for the RPA3 positive control.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, MSI-H HCT 116 cells expressing WRN sgRNAs depleted to a similar level as observed for the RPA3 positive control.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by CRISPR-Cas9 depletion assay data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:16:33.994668Z"
+    },
+    {
+      "id": "37831fc9-bbeb-473f-afad-70779d70c01c",
+      "content_id": "362310de-e79a-4637-b56a-2ae52e4b3943",
+      "claim_id": "C22",
+      "claim": "sgRNAs directed against the exonuclease, helicase and RQC domains of WRN were most effective in depleting MSI-H cells.",
+      "claim_type": "EXPLICIT",
+      "source": "sgRNAs directed against the exonuclease, helicase and RQC domains were most effective, implying a functional or structural requirement of both these domains in the context of WRN dependency.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by CRISPR domain scanning data shown in Figure 3B.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:16:33.994668Z"
+    },
+    {
+      "id": "92c3612e-09df-4165-910d-14a3ea88cfeb",
+      "content_id": "362310de-e79a-4637-b56a-2ae52e4b3943",
+      "claim_id": "C23",
+      "claim": "Strong depletion effects were observed for sgRNAs targeting the C-terminal HTH motif of WRN.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, strong depletion effects were also observed for sgRNAs targeting the C-terminal HTH motif (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by CRISPR domain scanning data shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:16:33.994668Z"
+    },
+    {
+      "id": "130f1a95-fd4c-45cd-a480-88350404fcff",
+      "content_id": "362310de-e79a-4637-b56a-2ae52e4b3943",
+      "claim_id": "C24",
+      "claim": "WRN depletion did not affect viability in MSS CRC cell line HT-29.",
+      "claim_type": "EXPLICIT",
+      "source": "We did not observe depletion of cells harboring WRN targeting sgRNAs in the MSS CRC cell line HT-29.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by CRISPR-Cas9 depletion assay data shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:16:33.994668Z"
+    },
+    {
+      "id": "a7616890-ee84-40bd-9b02-3a23cd449507",
+      "content_id": "362310de-e79a-4637-b56a-2ae52e4b3943",
+      "claim_id": "C25",
+      "claim": "Wild-type WRNr expression was sufficient to render HCT 116 cells inert to knock-down of endogenous WRN.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, both the high and low expression level of wild-type WRNr was sufficient to render HCT 116 cells inert to knock-down of endogenous WRN (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by rescue experiment data shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:16:33.994668Z"
+    },
+    {
+      "id": "91f236b5-a920-47b1-97b6-8b5fee0e39c1",
+      "content_id": "362310de-e79a-4637-b56a-2ae52e4b3943",
+      "claim_id": "C26",
+      "claim": "Exogenous expression of the nuclease-dead form of WRNr almost completely rescued the effect of endogenous WRN depletion.",
+      "claim_type": "EXPLICIT",
+      "source": "Exogenous expression of the nuclease-dead form of WRNr almost completely rescued the effect of endogenous WRN depletion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by rescue experiment data shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:16:33.994668Z"
+    },
+    {
+      "id": "4cc33e4d-24ed-44ba-997b-2c925ec174b1",
+      "content_id": "362310de-e79a-4637-b56a-2ae52e4b3943",
+      "claim_id": "C27",
+      "claim": "Both the ATP-binding deficient and double-mutant form of WRNr were unable to restore viability following depletion of endogenous WRN.",
+      "claim_type": "EXPLICIT",
+      "source": "In stark contrast, although expressed at similar or higher levels than WRNr wild-type, both the ATP-binding deficient and double-mutant form of WRNr were unable to restore viability following depletion of endogenous WRN (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by rescue experiment data shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:16:33.994668Z"
+    },
+    {
+      "id": "a0175ad7-602c-4b15-89fc-979f088790b1",
+      "content_id": "362310de-e79a-4637-b56a-2ae52e4b3943",
+      "claim_id": "C28",
+      "claim": "The ATP-binding activity of WRN and possibly its helicase function are crucial for the survival of MSI-H CRC cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, these results indicate that the ATP-binding activity of WRN and possibly its helicase function are crucial for the survival of MSI-H CRC cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an inference based on the rescue experiments with WRN mutants.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:16:33.994668Z"
+    },
+    {
+      "id": "ba90171b-a061-4cbe-90f9-0152ded7fa3e",
+      "content_id": "362310de-e79a-4637-b56a-2ae52e4b3943",
+      "claim_id": "C29",
+      "claim": "WRN depletion in MSI-H HCT 116 and RKO cells resulted in formation of chromatin bridges and micronuclei.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, in HCT 116 and RKO cells we observed formation of chromatin bridges and micronuclei upon WRN knock-down, both potential consequences of failed sister genome partitioning during mitosis (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by immunofluorescence data shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:16:33.994668Z"
+    },
+    {
+      "id": "62003e4a-c7d7-423a-a8a4-86fe0c60265c",
+      "content_id": "362310de-e79a-4637-b56a-2ae52e4b3943",
+      "claim_id": "C30",
+      "claim": "Enlarged nuclei, indicative of failed mitosis, were observed upon WRN knock-down in HCT 116 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Enlarged nuclei, indicative of failed mitosis, were additionally observed upon WRN knock-down in HCT 116 cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by immunofluorescence observations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:16:33.994668Z"
+    },
+    {
+      "id": "b3b4b773-d78c-4247-a53d-bacaddb0bd36",
+      "content_id": "362310de-e79a-4637-b56a-2ae52e4b3943",
+      "claim_id": "C31",
+      "claim": "WRN depletion did not affect baseline levels of chromatin bridges and micronuclei in MSS CRC cancer models SK-CO-1 and SW480.",
+      "claim_type": "EXPLICIT",
+      "source": "Quantification of the frequency of chromatin bridges and micronuclei revealed that WRN depletion did not affect baseline levels of these aberrant nuclear morphologies in the MSS CRC cancer models SK-CO-1 and SW480, while the frequency of both chromatin bridges and micronuclei was strongly increased upon WRN knock-down in the MSI-H CRC cell lines HCT 116 and RKO (Figure 5B and C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by quantitative immunofluorescence data shown in Figure 5B and C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:16:33.994668Z"
+    },
+    {
+      "id": "18ff7923-83c7-402a-a3fe-2531bd417810",
+      "content_id": "362310de-e79a-4637-b56a-2ae52e4b3943",
+      "claim_id": "C32",
+      "claim": "WRN depletion led to a slight increase of chromatin bridge and micronucleus formation in hTERT RPE-1 cells, although far less pronounced compared to MSI-H CRC models.",
+      "claim_type": "EXPLICIT",
+      "source": "In non-transformed hTERT RPE-1 cells, WRN depletion led to a slight increase of chromatin bridge and micronucleus formation, although far less pronounced compared to the MSI-H CRC models (Figure 5B and C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by quantitative immunofluorescence data shown in Figure 5B and C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:16:33.994668Z"
+    },
+    {
+      "id": "6af58d2b-e060-4287-91da-d26c0d5a9e27",
+      "content_id": "362310de-e79a-4637-b56a-2ae52e4b3943",
+      "claim_id": "C33",
+      "claim": "Live cell imaging revealed a strong increase of the incidence of lagging chromosomes and chromosome bridges during mitosis in WRN-depleted MSI-H CRC cell lines HCT 116 and RKO, but not in MSS SW480 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Supportive of the immunofluorescence studies, live cell imaging revealed a strong increase of the incidence of lagging chromosomes and chromosome bridges during mitosis in WRN-depleted MSI-H CRC cell lines HCT 116 and RKO, but not in MSS SW480 cells (Figure 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by live cell imaging data shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:16:33.994668Z"
+    },
+    {
+      "id": "d2532ccf-6cb4-496c-937d-fa120bdd1763",
+      "content_id": "362310de-e79a-4637-b56a-2ae52e4b3943",
+      "claim_id": "C34",
+      "claim": "WRN depletion in MSI-H cells results in nuclear morphology and integrity aberrations that are manifested during cell division.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that WRN depletion in MSI-H cells results in nuclear morphology and integrity aberrations that are manifested during cell division.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a conclusion based on the immunofluorescence and live cell imaging data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:16:33.994668Z"
+    },
+    {
+      "id": "1d3a5457-5032-4eb1-b1b0-1ffe1f9625e3",
+      "content_id": "362310de-e79a-4637-b56a-2ae52e4b3943",
+      "claim_id": "C35",
+      "claim": "Nuclear abnormalities are causally linked to the anti-proliferative effect of WRN loss in MSI-H models.",
+      "claim_type": "EXPLICIT",
+      "source": "The correlation of these defects with the observed cell viability reduction in MSI-H models suggests that nuclear abnormalities are causally linked to the anti-proliferative effect of WRN loss.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an inference based on the correlation between nuclear defects and viability reduction.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:16:33.994668Z"
+    },
+    {
+      "id": "77ccc8c7-4a65-410a-bd1f-6165dfd0be9a",
+      "content_id": "362310de-e79a-4637-b56a-2ae52e4b3943",
+      "claim_id": "C36",
+      "claim": "WRN loss elicited structural chromosome aberrations, such as chromosome breaks and non-homologous radial formations, in MSI-H CRC cell lines HCT 116 and RKO.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, WRN loss elicited structural chromosome aberrations, such as chromosome breaks and non-homologous radial formations, in the MSI-H CRC cell lines HCT 116 and RKO (Figure 7A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by chromosome spread analysis data shown in Figure 7A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:16:33.994668Z"
+    },
+    {
+      "id": "96ded2d3-2865-4c91-ac01-e3198320d4c8",
+      "content_id": "362310de-e79a-4637-b56a-2ae52e4b3943",
+      "claim_id": "C37",
+      "claim": "WRN depletion resulted in a strong increase in the fraction of cells harboring 1\u20135 or >5 chromosome breaks in two MSI-H CRC models.",
+      "claim_type": "EXPLICIT",
+      "source": "Quantification of the number of chromatin breaks per karyotype demonstrated a strong increase in the fraction of cells harboring 1\u20135 or >5 chromosome breaks in the two MSI-H CRC models upon WRN depletion (Figure 7B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by quantitative chromosome spread analysis data shown in Figure 7B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:16:33.994668Z"
+    },
+    {
+      "id": "c316f266-8d16-44ca-b35f-163ebc9a4584",
+      "content_id": "362310de-e79a-4637-b56a-2ae52e4b3943",
+      "claim_id": "C38",
+      "claim": "In MSS CRC model SW480 and hTERT RPE-1 non-transformed cells only a minor increase of karyotypes with chromosome breaks was detected upon WRN depletion.",
+      "claim_type": "EXPLICIT",
+      "source": "In the MSS CRC model SW480 and hTERT RPE-1 non-transformed cells only a minor increase of karyotypes with chromosome breaks was detected (Figure 7B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by quantitative chromosome spread analysis data shown in Figure 7B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:16:33.994668Z"
+    },
+    {
+      "id": "8dd89c9b-c75c-4ed0-b463-1086cef23d21",
+      "content_id": "362310de-e79a-4637-b56a-2ae52e4b3943",
+      "claim_id": "C39",
+      "claim": "A strong induction of \u03b3-H2AX was observed upon siRNA-mediated depletion of WRN in MSI-H, but not MSS, CRC cancer cell lines.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed a strong induction of \u03b3-H2AX upon siRNA-mediated depletion of WRN in MSI-H, but not MSS, CRC cancer cell lines (Figure 7\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by immunofluorescence data shown in Figure 7\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:16:33.994668Z"
+    },
+    {
+      "id": "d665507d-9d74-477b-94e9-aba71a7cf372",
+      "content_id": "362310de-e79a-4637-b56a-2ae52e4b3943",
+      "claim_id": "C40",
+      "claim": "In both HCT 116 and RKO MSI-H CRC lines, WRN depletion led to an increase in nuclear \u03b3-H2AX signal similar to or higher than upon treatment with etoposide.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, in both HCT 116 and RKO MSI-H CRC lines, WRN depletion led to an increase in nuclear \u03b3-H2AX signal similar to or higher than upon treatment of cells with the DNA double-strand break-inducing agent etoposide (Figure 7\u2014figure supplement 1A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by quantitative immunofluorescence data shown in Figure 7\u2014figure supplement 1A and B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:16:33.994668Z"
+    },
+    {
+      "id": "5df5cd30-49a9-456f-a53d-f0fcc746c46b",
+      "content_id": "362310de-e79a-4637-b56a-2ae52e4b3943",
+      "claim_id": "C41",
+      "claim": "Nuclear \u03b3-H2AX levels in hTERT RPE-1 cells were strongly increased by treatment with etoposide, while loss of WRN had no effect.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, nuclear \u03b3-H2AX levels in non-transformed and MSS hTERT RPE-1 cells were strongly increased by treatment with etoposide, while loss of WRN had no effect in this model (Figure 7\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by quantitative immunofluorescence data shown in Figure 7\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:16:33.994668Z"
+    },
+    {
+      "id": "7f84d03f-ffe0-4707-bc58-e8178710d3cb",
+      "content_id": "362310de-e79a-4637-b56a-2ae52e4b3943",
+      "claim_id": "C42",
+      "claim": "WRN helicase is essential for maintaining genome integrity in MSI-H cells by preventing chromosome breaks and erroneous chromosome fusions.",
+      "claim_type": "EXPLICIT",
+      "source": "Our analyses suggest that WRN helicase is essential for maintaining genome integrity in MSI-H cells by preventing chromosome breaks and erroneous chromosome fusions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an inference based on the chromosome aberration data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:16:33.994668Z"
+    },
+    {
+      "id": "3b22e893-4e5d-4918-93b5-e92aa36679d0",
+      "content_id": "362310de-e79a-4637-b56a-2ae52e4b3943",
+      "claim_id": "C43",
+      "claim": "The detection of DNA damage markers in interphase nuclei of WRN-depleted MSI-H cells suggests that mitotic and post-mitotic aberrations originate from genome integrity defects in interphase.",
+      "claim_type": "EXPLICIT",
+      "source": "The detection of DNA damage markers in interphase nuclei of WRN-depleted MSI-H cells suggests that the aforementioned mitotic and post-mitotic aberrations originate from genome integrity defects in interphase.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an inference based on the \u03b3-H2AX immunofluorescence data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:16:33.994668Z"
+    },
+    {
+      "id": "58be14f1-3737-4856-ba22-a664f0c00b15",
+      "content_id": "362310de-e79a-4637-b56a-2ae52e4b3943",
+      "claim_id": "C44",
+      "claim": "Genome integrity defects are responsible for the profound reduction in viability of MSI-H cancer cells upon WRN loss.",
+      "claim_type": "EXPLICIT",
+      "source": "The correlation of chromosome aberrations and nuclear abnormalities with MSI-H status following loss of WRN function indicate that genome integrity defects are responsible for the profound reduction in viability of MSI-H cancer cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an inference based on the correlation between genome integrity defects and viability reduction.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:16:33.994668Z"
+    },
+    {
+      "id": "34e8218d-6b1c-477b-8087-af8754df1ca6",
+      "content_id": "362310de-e79a-4637-b56a-2ae52e4b3943",
+      "claim_id": "C45",
+      "claim": "Pembrolizumab, nivolumab and ipilimumab have been approved for targeting PD-1 and CTLA-4 in MSI-H tumors.",
+      "claim_type": "EXPLICIT",
+      "source": "Treatment paradigms for MSI-H tumors have recently shifted with the approval of the immune checkpoint agents pembrolizumab, nivolumab and ipilimumab, targeting programmed cell death 1 (PD-1) and cytotoxic T-lymphocyte-associated Protein 4 (CTLA-4) in this patient segment (Le et al., 2017; Le et al., 2015; Overman et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to clinical studies (Le et al., 2017; Le et al., 2015; Overman et al., 2018).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:16:33.994668Z"
+    },
+    {
+      "id": "86b87bcb-f9c9-4a80-8264-bbb3726ae2e3",
+      "content_id": "362310de-e79a-4637-b56a-2ae52e4b3943",
+      "claim_id": "C46",
+      "claim": "Pembrolizumab constitutes the first cancer therapy approval based on a patient selection biomarker irrespective of the tumor type.",
+      "claim_type": "EXPLICIT",
+      "source": "Pembrolizumab constitutes the first cancer therapy approval based on a patient selection biomarker irrespective of the tumor type, highlighting MSI-H status as a therapeutically trackable and clinically implemented feature of tumor cells (Goswami and Sharma, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Goswami and Sharma, 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:16:33.994668Z"
+    },
+    {
+      "id": "0a9686a9-2944-4665-8c71-5ec5aa3213e0",
+      "content_id": "362310de-e79a-4637-b56a-2ae52e4b3943",
+      "claim_id": "C47",
+      "claim": "Intrinsic and acquired resistance to immunotherapy represents a continuous medical need in MSI-H cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "While responses to immune checkpoint blockade in MSI-H cancer are often durable, intrinsic and acquired resistance to immunotherapy represents a continuous medical need in MSI-H cancer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established knowledge about immunotherapy resistance.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:16:33.994668Z"
+    },
+    {
+      "id": "a02948d0-1b3f-4a0a-b205-1abcef900490",
+      "content_id": "362310de-e79a-4637-b56a-2ae52e4b3943",
+      "claim_id": "C48",
+      "claim": "MSI-H status is linked to a CpG island methylator (CIMP) phenotype and an increased mutational burden.",
+      "claim_type": "EXPLICIT",
+      "source": "However, while MSI-H status is linked to a CpG island methylator (CIMP) phenotype and an increased mutational burden, a functional dependency enabling selective targeting of MSI-H cancer cells remains elusive.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established knowledge about MSI-H tumors.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:16:33.994668Z"
+    },
+    {
+      "id": "fa71b25b-1dfa-4dce-859f-630eb373df65",
+      "content_id": "362310de-e79a-4637-b56a-2ae52e4b3943",
+      "claim_id": "C49",
+      "claim": "Pharmacological inhibition of WRN helicase function represents an opportunity to develop a novel targeted therapy for MSI-H cancers.",
+      "claim_type": "EXPLICIT",
+      "source": "Our study suggests that pharmacological inhibition of WRN helicase function represents an opportunity to develop a novel targeted therapy for MSI-H cancers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a conclusion based on the study findings and represents speculation about therapeutic potential.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:16:33.994668Z"
+    },
+    {
+      "id": "edcc7535-ff97-46d3-bdaa-05e5d55a45af",
+      "content_id": "362310de-e79a-4637-b56a-2ae52e4b3943",
+      "claim_id": "C50",
+      "claim": "MMR deficiency and MSI-H status represent a genetic determinant for WRN dependency regardless of tumor type.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data suggest that similar to the tumor agnostic activity of checkpoint blockade, MMR deficiency and MSI-H status represent a genetic determinant for WRN dependency regardless of tumor type.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an inference based on the data showing WRN dependency across multiple MSI-H tumor types.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:16:33.994668Z"
+    },
+    {
+      "id": "a4e5a1c6-c77f-49a2-87fd-ab5677bd1787",
+      "content_id": "362310de-e79a-4637-b56a-2ae52e4b3943",
+      "claim_id": "C51",
+      "claim": "The genetic interaction of WRN and MMR genes seems to be distinct from acute and hard-wired synthetic lethal interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "As indicated by the MLH1/MSH3 reconstitution and depletion studies, the genetic interaction of WRN and MMR genes cannot readily be recapitulated using isogenic cell models and thus seems to be distinct from acute and hard-wired synthetic lethal interactions, such as described in cancer cells for the alternate BAF complex ATPases SMARCA2/SMARCA4 or the cohesin subunits STAG1/STAG2 (Oike et al., 2013; van der Lelij et al., 2017; Benedetti et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an inference based on the reconstitution/depletion experiments and comparison to known synthetic lethal interactions.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:16:33.994668Z"
+    },
+    {
+      "id": "4252c5b4-d8aa-4f41-b5ff-4ac6f787f667",
+      "content_id": "362310de-e79a-4637-b56a-2ae52e4b3943",
+      "claim_id": "C52",
+      "claim": "WRN is a member of the RecQ DNA helicase subfamily.",
+      "claim_type": "EXPLICIT",
+      "source": "Werner syndrome helicase (WRN) is a member of the RecQ DNA helicase subfamily (Croteau et al., 2014; Yu et al., 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Croteau et al., 2014 and Yu et al., 1996.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:16:33.994668Z"
+    },
+    {
+      "id": "d5562b19-af73-43c9-bad4-7caa778a6d72",
+      "content_id": "362310de-e79a-4637-b56a-2ae52e4b3943",
+      "claim_id": "C53",
+      "claim": "RecQ helicases are involved in multiple DNA processing steps including DNA replication, double-strand break repair, transcription and telomere maintenance.",
+      "claim_type": "EXPLICIT",
+      "source": "RecQ helicases are involved in multiple DNA processing steps including DNA replication, double-strand break repair, transcription and telomere maintenance and are therefore considered to serve as 'genome caretakers' (Chu and Hickson, 2009; Croteau et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Chu and Hickson, 2009 and Croteau et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:16:33.994668Z"
+    },
+    {
+      "id": "7fd93489-4a4e-44ad-b815-dd216c47fa6f",
+      "content_id": "362310de-e79a-4637-b56a-2ae52e4b3943",
+      "claim_id": "C54",
+      "claim": "Defects in WRN, BLM and RECQL4 give rise to human disease syndromes associated with developmental defects and cancer predisposition.",
+      "claim_type": "EXPLICIT",
+      "source": "The critical function of this protein family in genome maintenance is underscored by the fact that defects in three of the five family members \u2013 WRN, Bloom Syndrome RecQ Like Helicase (BLM) and RecQ Like Helicase 4 (RECQL4) \u2013 give rise to human disease syndromes associated with developmental defects and cancer predisposition (Brosh, 2013; Oshima et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Brosh, 2013 and Oshima et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:16:33.994668Z"
+    },
+    {
+      "id": "57a021ee-9fc9-490b-9f60-d4235a73ba6a",
+      "content_id": "362310de-e79a-4637-b56a-2ae52e4b3943",
+      "claim_id": "C55",
+      "claim": "Patients with Werner syndrome display a premature ageing phenotype including arteriosclerosis, type II diabetes and osteoporosis.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, patients with Werner syndrome display a premature ageing phenotype including arteriosclerosis, type II diabetes and osteoporosis and are prone to develop tumors of mesenchymal origin, such as soft tissue sarcoma or osteosarcoma (Goto et al., 2013; Hickson, 2003; Lauper et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Goto et al., 2013; Hickson, 2003; and Lauper et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:16:33.994668Z"
+    },
+    {
+      "id": "cc1d58ef-a139-4ff8-a666-52739a40efec",
+      "content_id": "362310de-e79a-4637-b56a-2ae52e4b3943",
+      "claim_id": "C56",
+      "claim": "WRN is unique among RecQ family helicases in possessing 3'\u22125' exonuclease activity.",
+      "claim_type": "EXPLICIT",
+      "source": "WRN is unique among RecQ family helicases in possessing 3'\u22125' exonuclease activity (Huang et al., 1998; Kamath-Loeb et al., 1998; Shen et al., 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Huang et al., 1998; Kamath-Loeb et al., 1998; and Shen et al., 1998.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:16:33.994668Z"
+    },
+    {
+      "id": "08cce8b8-9026-4002-9ff1-9da1b28cbabb",
+      "content_id": "362310de-e79a-4637-b56a-2ae52e4b3943",
+      "claim_id": "C57",
+      "claim": "Defects in components of the DNA repair machinery are a common characteristic of tumor cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Defects in components of the DNA repair machinery, such as BRCA1/2 mutations or impaired DNA mismatch repair (MMR), are a common characteristic of tumor cells, accelerating the accumulation of DNA mutations or chromosomal aberrations that are required for neoplastic growth and transformation (Kinzler and Vogelstein, 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Kinzler and Vogelstein, 1997.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:16:33.994668Z"
+    },
+    {
+      "id": "1b867e04-b151-4d28-9b15-2811b9cea5e4",
+      "content_id": "362310de-e79a-4637-b56a-2ae52e4b3943",
+      "claim_id": "C58",
+      "claim": "PARP inhibitors are the first clinically approved drugs exploiting synthetic lethality for therapy of BRCA1/BRCA2-deficient tumors.",
+      "claim_type": "EXPLICIT",
+      "source": "The first clinically approved drugs exploiting such a SL interaction are Poly(ADP-Ribose) Polymerase (PARP) inhibitors for therapy of BRCA1/BRCA2-deficient tumors (Kaufman et al., 2015; Lord and Ashworth, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Kaufman et al., 2015 and Lord and Ashworth, 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:16:33.994668Z"
+    },
+    {
+      "id": "e6c80c74-9a58-48f3-a3f1-a63381a3cabf",
+      "content_id": "362310de-e79a-4637-b56a-2ae52e4b3943",
+      "claim_id": "C59",
+      "claim": "MMR deficiency is caused by inactivation of genes involved in the resolution of nucleotide base-base mismatches during DNA replication.",
+      "claim_type": "EXPLICIT",
+      "source": "MMR deficiency is caused by inactivation of genes of the DNA repair machinery involved in the resolution of nucleotide base-base mismatches during DNA replication (Jiricny, 2006; Kunkel and Erie, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Jiricny, 2006 and Kunkel and Erie, 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:16:33.994668Z"
+    },
+    {
+      "id": "9b5513b6-4921-4d4a-a781-47718ac241d9",
+      "content_id": "362310de-e79a-4637-b56a-2ae52e4b3943",
+      "claim_id": "C60",
+      "claim": "MMR defects lead to characteristic variations in the length of tandem nucleotide repeats across the genome, known as microsatellite instability (MSI).",
+      "claim_type": "EXPLICIT",
+      "source": "MMR defects lead to characteristic variations in the length of tandem nucleotide repeats across the genome, known as microsatellite instability (MSI) (Ellegren, 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Ellegren, 2004.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:16:33.994668Z"
+    },
+    {
+      "id": "af094544-07a4-42e0-bce8-873d8c0697f7",
+      "content_id": "362310de-e79a-4637-b56a-2ae52e4b3943",
+      "claim_id": "C61",
+      "claim": "Germline mutations in MMR genes are causative for Lynch syndrome, a cancer predisposition condition.",
+      "claim_type": "EXPLICIT",
+      "source": "Germline mutations in MMR genes, most commonly MLH1, MSH2, MSH6 and PMS2, are causative for Lynch syndrome, a cancer predisposition condition associated with increased lifetime risk to develop colorectal cancer (CRC) or other tumor types including endometrial and gastric carcinoma (Hampel et al., 2005; Lynch and Krush, 1971; Lynch et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Hampel et al., 2005; Lynch and Krush, 1971; and Lynch et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:16:33.994668Z"
+    },
+    {
+      "id": "0300d5e2-2223-411a-ab55-d499a3a8029b",
+      "content_id": "362310de-e79a-4637-b56a-2ae52e4b3943",
+      "claim_id": "C62",
+      "claim": "In sporadic CRC, MSI is frequently observed due to epigenetic silencing of MLH1.",
+      "claim_type": "EXPLICIT",
+      "source": "In sporadic, nonhereditary CRC, MSI is frequently observed due to epigenetic silencing of MLH1 (Cunningham et al., 1998; Herman et al., 1998; Kane et al., 1997; Kuismanen et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Cunningham et al., 1998; Herman et al., 1998; Kane et al., 1997; and Kuismanen et al., 2000.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:16:33.994668Z"
+    },
+    {
+      "id": "2b116daf-4fb1-410b-91a8-d31324e639e8",
+      "content_id": "362310de-e79a-4637-b56a-2ae52e4b3943",
+      "claim_id": "C63",
+      "claim": "MSI-H tumors display a hypermutator phenotype.",
+      "claim_type": "EXPLICIT",
+      "source": "MSI-high (MSI-H) tumors display a hypermutator phenotype (Cancer Genome Atlas Network, 2012), which entails increased immunogenicity, amendable to therapy with immune checkpoint inhibitors (Le et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Cancer Genome Atlas Network, 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:16:33.994668Z"
+    },
+    {
+      "id": "77c5fb78-20e8-4f09-bddc-4b83148e3f35",
+      "content_id": "362310de-e79a-4637-b56a-2ae52e4b3943",
+      "claim_id": "C64",
+      "claim": "Targeted therapies directly exploiting the MMR-deficient status of tumor cells do not exist.",
+      "claim_type": "EXPLICIT",
+      "source": "However, targeted therapies directly exploiting the MMR-deficient status of tumor cells do not exist.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on knowledge of the current therapeutic landscape.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:16:33.994668Z"
+    },
+    {
+      "id": "659c57bc-3f5f-405a-a039-8d076bbc0670",
+      "content_id": "362310de-e79a-4637-b56a-2ae52e4b3943",
+      "claim_id": "C65",
+      "claim": "WRN loss-of-function causes mitotic defects and nuclear abnormalities in MSI-H cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Loss of WRN causes mitotic defects and nuclear abnormalities in MSI-H cells",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a section heading that summarizes experimental findings presented in the section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:16:33.994668Z"
+    },
+    {
+      "id": "bd01db8b-d60f-4a67-b978-b42653f8d388",
+      "content_id": "362310de-e79a-4637-b56a-2ae52e4b3943",
+      "claim_id": "C66",
+      "claim": "WRN depletion in MSI-H cells results in structural chromosome aberrations.",
+      "claim_type": "EXPLICIT",
+      "source": "Structural chromosome aberrations in MSI-H cells after WRN loss-of-function",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a section heading that summarizes experimental findings presented in the section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:16:33.994668Z"
+    },
+    {
+      "id": "1e8b1bca-09a3-40ff-85b2-3bcf3ffa69d0",
+      "content_id": "362310de-e79a-4637-b56a-2ae52e4b3943",
+      "claim_id": "C67",
+      "claim": "WRN inactivation selectively impairs the viability of MSI-H but not MSS colorectal and endometrial cancer cell lines.",
+      "claim_type": "EXPLICIT",
+      "source": "We demonstrate that WRN inactivation selectively impairs the viability of MSI-H but not microsatellite stable (MSS) colorectal and endometrial cancer cell lines.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is stated in the abstract and supported by experimental data throughout the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:16:33.994668Z"
+    },
+    {
+      "id": "5b667193-a254-4362-9e11-1fb95e49a6a9",
+      "content_id": "362310de-e79a-4637-b56a-2ae52e4b3943",
+      "claim_id": "C68",
+      "claim": "In MSI-H cells, WRN loss results in severe genome integrity defects.",
+      "claim_type": "EXPLICIT",
+      "source": "In MSI-H cells, WRN loss results in severe genome integrity defects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is stated in the abstract and supported by chromosome spread and immunofluorescence data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:16:33.994668Z"
+    },
+    {
+      "id": "57be439d-7488-4368-89dd-4a7b353389d9",
+      "content_id": "362310de-e79a-4637-b56a-2ae52e4b3943",
+      "claim_id": "C69",
+      "claim": "ATP-binding deficient variants of WRN fail to rescue the viability phenotype of WRN-depleted MSI-H cancer cells.",
+      "claim_type": "EXPLICIT",
+      "source": "ATP-binding deficient variants of WRN fail to rescue the viability phenotype of WRN-depleted MSI-H cancer cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is stated in the abstract and supported by rescue experiment data in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:16:33.994668Z"
+    },
+    {
+      "id": "c4f8c499-89ff-428c-950d-488efae33d80",
+      "content_id": "362310de-e79a-4637-b56a-2ae52e4b3943",
+      "claim_id": "C70",
+      "claim": "WRN dependence might arise during sustained MMR-deficiency rather than from acute loss of MMR gene function.",
+      "claim_type": "EXPLICIT",
+      "source": "Reconstitution and depletion studies indicate that WRN dependence is not attributable to acute loss of MMR gene function but might arise during sustained MMR-deficiency.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is stated in the abstract and supported by the MLH1/MSH3 reconstitution and depletion experiments.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:16:33.994668Z"
+    },
+    {
+      "id": "477cb18d-6723-4611-9ff9-fd49f5d63ee5",
+      "content_id": "362310de-e79a-4637-b56a-2ae52e4b3943",
+      "claim_id": "C71",
+      "claim": "Homozygous Wrn-null mice display no overt phenotype and do not recapitulate Werner syndrome unless crossed into a Terc-null background.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, homozygous Wrn-null mice display no overt phenotype and do not recapitulate the premature ageing or cancer predisposition conditions of Werner syndrome, unless crossed into a Terc-null background (Chang et al., 2004; Lebel and Leder, 1998; Lombard et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Chang et al., 2004; Lebel and Leder, 1998; and Lombard et al., 2000.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:16:33.994668Z"
+    },
+    {
+      "id": "c41b363a-64b4-4a1d-9c6d-1a81aa92a24b",
+      "content_id": "362310de-e79a-4637-b56a-2ae52e4b3943",
+      "claim_id": "C72",
+      "claim": "Mutations in Werner syndrome are almost exclusively truncating nonsense, splicing or frameshift mutations affecting WRN nuclear localization.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutations in Werner syndrome are almost exclusively truncating nonsense, splicing or frameshift mutations affecting WRN nuclear localization, suggesting that concomitant loss of WRN helicase and exonuclease function might be required for the onset of Werner syndrome (Fu et al., 2017; Huang et al., 2006; Matsumoto et al., 1997; Yokote et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Fu et al., 2017; Huang et al., 2006; Matsumoto et al., 1997; and Yokote et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:16:33.994668Z"
+    },
+    {
+      "id": "8573c088-f781-4f93-a362-e08d97bb347b",
+      "content_id": "362310de-e79a-4637-b56a-2ae52e4b3943",
+      "claim_id": "C73",
+      "claim": "Inhibition of WRN helicase function might have a therapeutic index for the treatment of MSI-H cancer without inducing Werner syndrome related phenotypes.",
+      "claim_type": "EXPLICIT",
+      "source": "This indicates that inhibition of WRN helicase function might have a therapeutic index for the treatment of MSI-H cancer without inducing Werner syndrome related phenotypes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is speculation based on the mutation patterns in Werner syndrome and the rescue experiments.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:16:33.994668Z"
+    },
+    {
+      "id": "5d6668d5-38df-4dac-8810-c5f77fa7d491",
+      "content_id": "362310de-e79a-4637-b56a-2ae52e4b3943",
+      "claim_id": "C74",
+      "claim": "It is possible to develop potent and selective small molecule inhibitors of WRN helicase.",
+      "claim_type": "EXPLICIT",
+      "source": "Given the possibility to develop potent and selective small molecule inhibitors of WRN helicase (Aggarwal et al., 2013; Aggarwal et al., 2011; Rosenthal et al., 2010), our findings outline a novel strategy for the treatment of a clinically defined subset of patients harboring MSI-H/MMR-deficient tumors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Aggarwal et al., 2013; Aggarwal et al., 2011; and Rosenthal et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:16:33.994668Z"
+    },
+    {
+      "id": "353d6d34-9590-49ae-8cb5-aeb1d3bbdc41",
+      "content_id": "362310de-e79a-4637-b56a-2ae52e4b3943",
+      "claim_id": "C75",
+      "claim": "Genome instability can elicit cytoplasmic nucleic acid sensor pathways and innate immune responses.",
+      "claim_type": "EXPLICIT",
+      "source": "Since genome instability can elicit cytoplasmic nucleic acid sensor pathways and innate immune responses (Mackenzie et al., 2017), the induction of cancer cell selective nuclear aberrations by WRN inactivation could provide a synergistic combination option with the approved immunotherapy agents for the benefit of MSI-H cancer patients.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Mackenzie et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:16:33.994668Z"
+    },
+    {
+      "id": "5e17dcfe-45f3-44ed-8b74-02354d7882c5",
+      "content_id": "362310de-e79a-4637-b56a-2ae52e4b3943",
+      "claim_id": "C76",
+      "claim": "WRN inactivation could provide a synergistic combination option with approved immunotherapy agents for MSI-H cancer patients.",
+      "claim_type": "EXPLICIT",
+      "source": "Since genome instability can elicit cytoplasmic nucleic acid sensor pathways and innate immune responses (Mackenzie et al., 2017), the induction of cancer cell selective nuclear aberrations by WRN inactivation could provide a synergistic combination option with the approved immunotherapy agents for the benefit of MSI-H cancer patients.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is speculation based on the potential for WRN inactivation to induce immune responses.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:16:33.994668Z"
+    },
+    {
+      "id": "4f411f66-b032-4674-99b5-ed0b2de2c3e1",
+      "content_id": "362310de-e79a-4637-b56a-2ae52e4b3943",
+      "claim_id": "C77",
+      "claim": "MMR activity is required for activation of the G2/M checkpoint in response to DNA damage prior to entry into mitosis.",
+      "claim_type": "EXPLICIT",
+      "source": "MMR activity is required for activation of the G2/M checkpoint in response to DNA damage prior to entry into mitosis (O'Brien and Brown, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to O'Brien and Brown, 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:16:33.994668Z"
+    },
+    {
+      "id": "c48336d2-3882-4940-95ae-0da1f9eb3eb3",
+      "content_id": "362310de-e79a-4637-b56a-2ae52e4b3943",
+      "claim_id": "C78",
+      "claim": "WRN function in MSI-H cells might be critical for the resolution of DNA damage events and to prevent premature entry into mitosis.",
+      "claim_type": "EXPLICIT",
+      "source": "WRN function in MSI-H cells might therefore be critical for the resolution of DNA damage events and to prevent premature entry into mitosis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is speculation based on the observed phenotypes and known functions of WRN and MMR.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:16:33.994668Z"
+    },
+    {
+      "id": "23ecdab8-3675-46d1-b0ac-6eddf1793f53",
+      "content_id": "362310de-e79a-4637-b56a-2ae52e4b3943",
+      "claim_id": "C79",
+      "claim": "Cell lines derived from Werner syndrome patients display defective mitotic recombination and are susceptible to genome instability.",
+      "claim_type": "EXPLICIT",
+      "source": "Of note, cell lines derived from Werner syndrome patients display defective mitotic recombination and are susceptible to genome instability (Prince et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Prince et al., 2001.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:16:33.994668Z"
+    },
+    {
+      "id": "d0814111-3d66-4d8c-b8af-e22f835d371a",
+      "content_id": "362310de-e79a-4637-b56a-2ae52e4b3943",
+      "claim_id": "C80",
+      "claim": "Pharmacological inhibition of WRN might allow for an MSI-H cancer-directed therapy that spares normal cells and tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "However, in MSS cancer and non-transformed cells WRN depletion had no or very mild effects on viability, suggesting that pharmacological inhibition of WRN might allow for an MSI-H cancer-directed therapy that spares normal cells and tissues.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is speculation based on the selective effects of WRN depletion in MSI-H versus MSS and non-transformed cells.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:16:33.994668Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "dae8cd1d-c554-48bc-942b-b7fedad16836",
+      "content_id": "362310de-e79a-4637-b56a-2ae52e4b3943",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "WRN dependency is strongly associated with MSI-H status in cancer cell lines. Analysis of Project DRIVE screening data revealed that WRN depletion selectively affects viability of MSI-H CRC, gastric, and endometrial cancer cell lines (RSA \u2264-3), with 83% of MSI-H lines sensitive to WRN depletion while all MSS lines were insensitive. A Random Forest model using MSI features classified WRN sensitivity with 0.89 accuracy, identifying MLH1 expression as the most important predictor, which anti-correlates with WRN dependency (p=1.02\u00d710\u207b\u2074).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C10 provide converging evidence from computational analysis (Random Forest modeling), statistical testing (Fisher's exact test with p=4.91\u00d710\u207b\u2078), and screening data showing strong association between MSI-H status and WRN dependency. The 83% sensitivity rate in MSI-H lines versus 0% in MSS lines, combined with MLH1 expression as the top predictor, provides robust support for this result.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:16:33.994668Z"
+    },
+    {
+      "id": "b6b5ad2a-6f41-46c6-8f9b-f267ed6a483c",
+      "content_id": "362310de-e79a-4637-b56a-2ae52e4b3943",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "siRNA-mediated WRN depletion selectively impairs viability of MSI-H but not MSS cancer cell lines or non-transformed cells. WRN knockdown profoundly reduced viability in MSI-H CRC lines (HCT 116, RKO, SNU-C4) and MSI-H endometrial lines (HEC-265, ISHIKAWA, HEC-6), but had no effect on MSS CRC lines (SK-CO-1, CaCo-2, SW480), MSS endometrial line (MFE-280), or non-transformed hTERT RPE-1 cells. The essential kinase PLK1 affected both MSS and MSI-H lines, confirming specificity of the WRN effect.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11-C15 provide experimental validation across multiple cell lines (6 MSI-H, 4 MSS, 1 non-transformed) using siRNA knockdown with viability and colony formation assays. The consistent selective effect in MSI-H cells, lack of effect in MSS/non-transformed cells, and appropriate controls (PLK1, BLM) strongly support this result.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:16:33.994668Z"
+    },
+    {
+      "id": "c4dd1dd0-5b07-4dbd-a69f-b1886cf17e6f",
+      "content_id": "362310de-e79a-4637-b56a-2ae52e4b3943",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Co-depletion of WRN and p53 exacerbates viability reduction in MSI-H HCT 116 cells compared to WRN depletion alone, with slight elevation of p53 protein levels observed upon WRN depletion in both HCT 116 and SK-CO-1 cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16-C17 are supported by experimental data showing that p53 co-depletion does not rescue but worsens the WRN depletion phenotype, and immunoblot data showing p53 elevation. This suggests p53 status does not explain the selective WRN dependency in MSI-H cells.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:16:33.994668Z"
+    },
+    {
+      "id": "f4708478-0c19-4fa3-93e1-30660be0faae",
+      "content_id": "362310de-e79a-4637-b56a-2ae52e4b3943",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "WRN dependence in MSI-H cells is not attributable to acute synthetic lethality with MLH1/MSH3 loss, but may arise during sustained MMR deficiency. Reconstitution of MLH1 and MSH3 in HCT 116 cells resulted in only modest rescue of WRN depletion effects, and knockdown of MLH1/MSH3 in WRN-deficient SW480 cells did not affect viability, suggesting the genetic interaction differs from classical synthetic lethal relationships.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C18-C20 and C70 are supported by reconstitution experiments in HCT 116 variants and depletion experiments in SW480 WRN knockout lines. The modest rescue and lack of reciprocal synthetic lethality indicate the WRN-MMR relationship is not a simple acute synthetic lethal interaction, though the mechanism remains unclear.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:16:33.994668Z"
+    },
+    {
+      "id": "ff38842c-74a3-4944-a4cc-bd8f4df4c6cc",
+      "content_id": "362310de-e79a-4637-b56a-2ae52e4b3943",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "CRISPR-Cas9 domain scanning confirms selective WRN dependency in MSI-H cells and identifies critical functional domains. MSI-H HCT 116 cells expressing WRN sgRNAs depleted to levels similar to the essential RPA3 control, while MSS HT-29 cells showed no depletion. sgRNAs targeting the exonuclease, helicase, RQC domains, and C-terminal HTH motif were most effective in depleting MSI-H cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21-C24 are supported by CRISPR depletion assay data across multiple WRN domains in MSS and MSI-H cell lines. The domain scanning provides insight into structural/functional requirements and independently validates the MSI-H selective dependency using an orthogonal genetic approach.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:16:33.994668Z"
+    },
+    {
+      "id": "4c17744a-fe4a-484f-b138-6191a3e4b400",
+      "content_id": "362310de-e79a-4637-b56a-2ae52e4b3943",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "WRN helicase ATP-binding activity is essential for MSI-H cell survival. Wild-type and nuclease-dead (E84A) WRN rescued viability of WRN-depleted HCT 116 cells, but ATP-binding deficient (K577M) and double mutant (E84A/K577M) variants failed to rescue despite similar or higher expression levels, indicating that ATP-binding/helicase function, but not exonuclease activity, is crucial for MSI-H cell survival.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25-C28 and C69 are strongly supported by rescue experiments using siRNA-resistant WRN variants with defined mutations. The differential rescue by nuclease-dead versus ATP-binding deficient mutants provides clear evidence for the critical role of helicase function. Expression levels were controlled, strengthening the conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:16:33.994668Z"
+    },
+    {
+      "id": "44f78c39-ba09-4ae5-97dd-0b4384743246",
+      "content_id": "362310de-e79a-4637-b56a-2ae52e4b3943",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "WRN depletion causes mitotic defects and nuclear abnormalities selectively in MSI-H cells. WRN loss in MSI-H HCT 116 and RKO cells resulted in chromatin bridges, micronuclei, enlarged nuclei, and lagging chromosomes during mitosis, with frequencies strongly increased compared to controls. MSS cells (SK-CO-1, SW480) showed no increase in these defects, while non-transformed hTERT RPE-1 cells showed only slight increases. These nuclear abnormalities correlate with and are likely causally linked to the viability reduction in MSI-H cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29-C35 and C65 are supported by quantitative immunofluorescence and live cell imaging data showing selective induction of mitotic defects in MSI-H cells. The correlation between these defects and viability reduction is strong, though direct causality is inferred rather than experimentally proven.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:16:33.994668Z"
+    },
+    {
+      "id": "c61e91e1-08f7-4706-8dfd-2474a011cb3f",
+      "content_id": "362310de-e79a-4637-b56a-2ae52e4b3943",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "WRN loss causes severe genome integrity defects in MSI-H cells, including structural chromosome aberrations and DNA damage. WRN depletion in MSI-H HCT 116 and RKO cells resulted in chromosome breaks and non-homologous radial formations, with strong increases in cells harboring 1-5 or >5 breaks. MSS SW480 and hTERT RPE-1 cells showed only minor increases. \u03b3-H2AX induction in WRN-depleted MSI-H cells was comparable to etoposide treatment, suggesting DNA double-strand breaks accumulate in interphase prior to mitotic defects. These genome integrity defects are responsible for the viability reduction in MSI-H cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36-C44, C66, and C68 are supported by chromosome spread analysis showing structural aberrations and \u03b3-H2AX immunofluorescence showing DNA damage markers. The selective effects in MSI-H cells and correlation with viability reduction strongly support this result, though the causal chain from DNA damage to mitotic defects to cell death is inferred.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:16:33.994668Z"
+    },
+    {
+      "id": "a52cc2eb-6e1e-4b19-9ba9-a42f73c828f8",
+      "content_id": "362310de-e79a-4637-b56a-2ae52e4b3943",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "WRN represents a novel therapeutic target for MSI-H cancers. Immune checkpoint inhibitors (pembrolizumab, nivolumab, ipilimumab) have been approved for MSI-H tumors, with pembrolizumab being the first tumor-agnostic approval based on MSI-H biomarker. However, resistance to immunotherapy remains a clinical need, and no targeted therapies directly exploiting MMR deficiency exist. The selective WRN dependency in MSI-H cells across tumor types suggests pharmacological WRN helicase inhibition could provide a novel targeted therapy for MSI-H cancers.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C45-C50, C64, and C67 accurately describe the clinical context and therapeutic landscape (supported by citations), and the data demonstrate selective WRN dependency in cell lines. However, the therapeutic potential is speculative and requires validation in animal models, patient-derived samples, and ultimately clinical trials. The translation from cell line dependency to therapeutic efficacy is uncertain.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:16:33.994668Z"
+    },
+    {
+      "id": "f37f5521-b5f7-4042-880f-f3974735f237",
+      "content_id": "362310de-e79a-4637-b56a-2ae52e4b3943",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The WRN-MMR genetic interaction is distinct from classical synthetic lethal interactions. Unlike acute synthetic lethal relationships (e.g., SMARCA2/SMARCA4, STAG1/STAG2), the WRN-MMR interaction cannot be readily recapitulated in isogenic models through acute manipulation of MMR genes, suggesting a more complex relationship that may develop during sustained MMR deficiency.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C51 is supported by the reconstitution and depletion experiments (C18-C20) and comparison to known synthetic lethal interactions. The inability to recapitulate the dependency in isogenic models distinguishes this from classical synthetic lethality, though the underlying mechanism remains unclear.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:16:33.994668Z"
+    },
+    {
+      "id": "7bbfab74-786c-4e0a-b3de-a10ccd300b8f",
+      "content_id": "362310de-e79a-4637-b56a-2ae52e4b3943",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Background information on WRN, RecQ helicases, Werner syndrome, MMR deficiency, and MSI-H tumors. WRN is a RecQ helicase with unique 3'-5' exonuclease activity involved in genome maintenance. Werner syndrome patients show premature aging and cancer predisposition. MMR deficiency causes MSI through impaired mismatch repair, occurring in Lynch syndrome (germline mutations) or sporadically (MLH1 silencing). MSI-H tumors display hypermutator phenotype and increased immunogenicity. PARP inhibitors exemplify synthetic lethality-based therapy for BRCA-deficient tumors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52-C63 provide established background knowledge supported by appropriate citations. These claims accurately represent the scientific literature and provide necessary context for the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:16:33.994668Z"
+    },
+    {
+      "id": "c4c8defe-a0dd-4887-831c-76eb0f0bb33b",
+      "content_id": "362310de-e79a-4637-b56a-2ae52e4b3943",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Discussion of therapeutic implications and mechanistic considerations. Wrn-null mice lack Werner syndrome phenotype unless Terc-null, and Werner syndrome mutations are predominantly truncating, suggesting helicase inhibition might spare normal tissues. Small molecule WRN helicase inhibitors are feasible. MMR activity is required for G2/M checkpoint activation, and WRN may be critical for resolving DNA damage in MSI-H cells. WRN inactivation could synergize with immunotherapy by inducing genome instability and immune responses. The selective effects in MSI-H versus MSS/non-transformed cells suggest a therapeutic window.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C71-C80 mix supported observations (mouse models, mutation patterns, checkpoint function) with speculation about therapeutic potential. While the cited evidence supports individual points, the therapeutic implications (C73, C76, C78, C80) are speculative and require experimental validation. The mechanistic proposals are reasonable hypotheses but lack direct experimental support in this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:16:33.994668Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "de84ed3c-d384-4fb8-9f09-aa7c22ae94b3",
+      "result_id": "dae8cd1d-c554-48bc-942b-b7fedad16836"
+    },
+    {
+      "claim_id": "cfc0e1dd-4b23-4a2e-a52a-d85ee71c0eac",
+      "result_id": "dae8cd1d-c554-48bc-942b-b7fedad16836"
+    },
+    {
+      "claim_id": "ffe758a2-f7a0-49dd-8717-52de1239a59e",
+      "result_id": "dae8cd1d-c554-48bc-942b-b7fedad16836"
+    },
+    {
+      "claim_id": "aaaf7b3b-0c0c-419f-8355-8d7353511c1f",
+      "result_id": "dae8cd1d-c554-48bc-942b-b7fedad16836"
+    },
+    {
+      "claim_id": "1a674f7d-1c01-4ce5-8bdf-5ba3b7c37423",
+      "result_id": "dae8cd1d-c554-48bc-942b-b7fedad16836"
+    },
+    {
+      "claim_id": "9fec2412-f92b-4f87-97d4-9f3dcb21e300",
+      "result_id": "dae8cd1d-c554-48bc-942b-b7fedad16836"
+    },
+    {
+      "claim_id": "129b41da-1204-4f06-9883-9ff58d0ea7ba",
+      "result_id": "dae8cd1d-c554-48bc-942b-b7fedad16836"
+    },
+    {
+      "claim_id": "117a14a2-b28b-4375-8952-192e2a1c8956",
+      "result_id": "dae8cd1d-c554-48bc-942b-b7fedad16836"
+    },
+    {
+      "claim_id": "e97d0ec2-360b-4b24-860f-055d7c197a58",
+      "result_id": "dae8cd1d-c554-48bc-942b-b7fedad16836"
+    },
+    {
+      "claim_id": "3a960c2e-724d-4649-b23a-9a7fd5440851",
+      "result_id": "dae8cd1d-c554-48bc-942b-b7fedad16836"
+    },
+    {
+      "claim_id": "d184e32c-bcef-4d52-8854-5fd93cc8b424",
+      "result_id": "b6b5ad2a-6f41-46c6-8f9b-f267ed6a483c"
+    },
+    {
+      "claim_id": "cecfaf71-ee9c-4325-bc53-fad30c9aba20",
+      "result_id": "b6b5ad2a-6f41-46c6-8f9b-f267ed6a483c"
+    },
+    {
+      "claim_id": "da34e6e2-45bf-4a37-9972-d0db6a7602cf",
+      "result_id": "b6b5ad2a-6f41-46c6-8f9b-f267ed6a483c"
+    },
+    {
+      "claim_id": "6f6d5b5a-251e-4bb2-8a5a-cd70aea0c0fc",
+      "result_id": "b6b5ad2a-6f41-46c6-8f9b-f267ed6a483c"
+    },
+    {
+      "claim_id": "ab92c426-2023-41ba-b098-9a063fce39c8",
+      "result_id": "b6b5ad2a-6f41-46c6-8f9b-f267ed6a483c"
+    },
+    {
+      "claim_id": "5ec5b60d-2af4-489b-abdd-1c54263902d9",
+      "result_id": "c4dd1dd0-5b07-4dbd-a69f-b1886cf17e6f"
+    },
+    {
+      "claim_id": "8ec65676-7396-4414-8d92-9b514048da57",
+      "result_id": "c4dd1dd0-5b07-4dbd-a69f-b1886cf17e6f"
+    },
+    {
+      "claim_id": "ccf0fb0a-f14e-4655-a6d8-c0601cee0a15",
+      "result_id": "f4708478-0c19-4fa3-93e1-30660be0faae"
+    },
+    {
+      "claim_id": "8cb764ef-2ea1-405c-8742-4660bdff3016",
+      "result_id": "f4708478-0c19-4fa3-93e1-30660be0faae"
+    },
+    {
+      "claim_id": "c6fb7b84-9f52-4203-b7ac-5c3c4f3d0f50",
+      "result_id": "f4708478-0c19-4fa3-93e1-30660be0faae"
+    },
+    {
+      "claim_id": "c4f8c499-89ff-428c-950d-488efae33d80",
+      "result_id": "f4708478-0c19-4fa3-93e1-30660be0faae"
+    },
+    {
+      "claim_id": "4bc89628-231c-4bd1-b3cc-eb53bba47b21",
+      "result_id": "ff38842c-74a3-4944-a4cc-bd8f4df4c6cc"
+    },
+    {
+      "claim_id": "37831fc9-bbeb-473f-afad-70779d70c01c",
+      "result_id": "ff38842c-74a3-4944-a4cc-bd8f4df4c6cc"
+    },
+    {
+      "claim_id": "92c3612e-09df-4165-910d-14a3ea88cfeb",
+      "result_id": "ff38842c-74a3-4944-a4cc-bd8f4df4c6cc"
+    },
+    {
+      "claim_id": "130f1a95-fd4c-45cd-a480-88350404fcff",
+      "result_id": "ff38842c-74a3-4944-a4cc-bd8f4df4c6cc"
+    },
+    {
+      "claim_id": "a7616890-ee84-40bd-9b02-3a23cd449507",
+      "result_id": "4c17744a-fe4a-484f-b138-6191a3e4b400"
+    },
+    {
+      "claim_id": "91f236b5-a920-47b1-97b6-8b5fee0e39c1",
+      "result_id": "4c17744a-fe4a-484f-b138-6191a3e4b400"
+    },
+    {
+      "claim_id": "4cc33e4d-24ed-44ba-997b-2c925ec174b1",
+      "result_id": "4c17744a-fe4a-484f-b138-6191a3e4b400"
+    },
+    {
+      "claim_id": "a0175ad7-602c-4b15-89fc-979f088790b1",
+      "result_id": "4c17744a-fe4a-484f-b138-6191a3e4b400"
+    },
+    {
+      "claim_id": "57be439d-7488-4368-89dd-4a7b353389d9",
+      "result_id": "4c17744a-fe4a-484f-b138-6191a3e4b400"
+    },
+    {
+      "claim_id": "ba90171b-a061-4cbe-90f9-0152ded7fa3e",
+      "result_id": "44f78c39-ba09-4ae5-97dd-0b4384743246"
+    },
+    {
+      "claim_id": "62003e4a-c7d7-423a-a8a4-86fe0c60265c",
+      "result_id": "44f78c39-ba09-4ae5-97dd-0b4384743246"
+    },
+    {
+      "claim_id": "b3b4b773-d78c-4247-a53d-bacaddb0bd36",
+      "result_id": "44f78c39-ba09-4ae5-97dd-0b4384743246"
+    },
+    {
+      "claim_id": "18ff7923-83c7-402a-a3fe-2531bd417810",
+      "result_id": "44f78c39-ba09-4ae5-97dd-0b4384743246"
+    },
+    {
+      "claim_id": "6af58d2b-e060-4287-91da-d26c0d5a9e27",
+      "result_id": "44f78c39-ba09-4ae5-97dd-0b4384743246"
+    },
+    {
+      "claim_id": "d2532ccf-6cb4-496c-937d-fa120bdd1763",
+      "result_id": "44f78c39-ba09-4ae5-97dd-0b4384743246"
+    },
+    {
+      "claim_id": "1d3a5457-5032-4eb1-b1b0-1ffe1f9625e3",
+      "result_id": "44f78c39-ba09-4ae5-97dd-0b4384743246"
+    },
+    {
+      "claim_id": "659c57bc-3f5f-405a-a039-8d076bbc0670",
+      "result_id": "44f78c39-ba09-4ae5-97dd-0b4384743246"
+    },
+    {
+      "claim_id": "77ccc8c7-4a65-410a-bd1f-6165dfd0be9a",
+      "result_id": "c61e91e1-08f7-4706-8dfd-2474a011cb3f"
+    },
+    {
+      "claim_id": "96ded2d3-2865-4c91-ac01-e3198320d4c8",
+      "result_id": "c61e91e1-08f7-4706-8dfd-2474a011cb3f"
+    },
+    {
+      "claim_id": "c316f266-8d16-44ca-b35f-163ebc9a4584",
+      "result_id": "c61e91e1-08f7-4706-8dfd-2474a011cb3f"
+    },
+    {
+      "claim_id": "8dd89c9b-c75c-4ed0-b463-1086cef23d21",
+      "result_id": "c61e91e1-08f7-4706-8dfd-2474a011cb3f"
+    },
+    {
+      "claim_id": "d665507d-9d74-477b-94e9-aba71a7cf372",
+      "result_id": "c61e91e1-08f7-4706-8dfd-2474a011cb3f"
+    },
+    {
+      "claim_id": "5df5cd30-49a9-456f-a53d-f0fcc746c46b",
+      "result_id": "c61e91e1-08f7-4706-8dfd-2474a011cb3f"
+    },
+    {
+      "claim_id": "7f84d03f-ffe0-4707-bc58-e8178710d3cb",
+      "result_id": "c61e91e1-08f7-4706-8dfd-2474a011cb3f"
+    },
+    {
+      "claim_id": "3b22e893-4e5d-4918-93b5-e92aa36679d0",
+      "result_id": "c61e91e1-08f7-4706-8dfd-2474a011cb3f"
+    },
+    {
+      "claim_id": "58be14f1-3737-4856-ba22-a664f0c00b15",
+      "result_id": "c61e91e1-08f7-4706-8dfd-2474a011cb3f"
+    },
+    {
+      "claim_id": "bd01db8b-d60f-4a67-b978-b42653f8d388",
+      "result_id": "c61e91e1-08f7-4706-8dfd-2474a011cb3f"
+    },
+    {
+      "claim_id": "5b667193-a254-4362-9e11-1fb95e49a6a9",
+      "result_id": "c61e91e1-08f7-4706-8dfd-2474a011cb3f"
+    },
+    {
+      "claim_id": "34e8218d-6b1c-477b-8087-af8754df1ca6",
+      "result_id": "a52cc2eb-6e1e-4b19-9ba9-a42f73c828f8"
+    },
+    {
+      "claim_id": "86b87bcb-f9c9-4a80-8264-bbb3726ae2e3",
+      "result_id": "a52cc2eb-6e1e-4b19-9ba9-a42f73c828f8"
+    },
+    {
+      "claim_id": "0a9686a9-2944-4665-8c71-5ec5aa3213e0",
+      "result_id": "a52cc2eb-6e1e-4b19-9ba9-a42f73c828f8"
+    },
+    {
+      "claim_id": "a02948d0-1b3f-4a0a-b205-1abcef900490",
+      "result_id": "a52cc2eb-6e1e-4b19-9ba9-a42f73c828f8"
+    },
+    {
+      "claim_id": "fa71b25b-1dfa-4dce-859f-630eb373df65",
+      "result_id": "a52cc2eb-6e1e-4b19-9ba9-a42f73c828f8"
+    },
+    {
+      "claim_id": "edcc7535-ff97-46d3-bdaa-05e5d55a45af",
+      "result_id": "a52cc2eb-6e1e-4b19-9ba9-a42f73c828f8"
+    },
+    {
+      "claim_id": "77c5fb78-20e8-4f09-bddc-4b83148e3f35",
+      "result_id": "a52cc2eb-6e1e-4b19-9ba9-a42f73c828f8"
+    },
+    {
+      "claim_id": "1e8b1bca-09a3-40ff-85b2-3bcf3ffa69d0",
+      "result_id": "a52cc2eb-6e1e-4b19-9ba9-a42f73c828f8"
+    },
+    {
+      "claim_id": "a4e5a1c6-c77f-49a2-87fd-ab5677bd1787",
+      "result_id": "f37f5521-b5f7-4042-880f-f3974735f237"
+    },
+    {
+      "claim_id": "4252c5b4-d8aa-4f41-b5ff-4ac6f787f667",
+      "result_id": "7bbfab74-786c-4e0a-b3de-a10ccd300b8f"
+    },
+    {
+      "claim_id": "d5562b19-af73-43c9-bad4-7caa778a6d72",
+      "result_id": "7bbfab74-786c-4e0a-b3de-a10ccd300b8f"
+    },
+    {
+      "claim_id": "7fd93489-4a4e-44ad-b815-dd216c47fa6f",
+      "result_id": "7bbfab74-786c-4e0a-b3de-a10ccd300b8f"
+    },
+    {
+      "claim_id": "57a021ee-9fc9-490b-9f60-d4235a73ba6a",
+      "result_id": "7bbfab74-786c-4e0a-b3de-a10ccd300b8f"
+    },
+    {
+      "claim_id": "cc1d58ef-a139-4ff8-a666-52739a40efec",
+      "result_id": "7bbfab74-786c-4e0a-b3de-a10ccd300b8f"
+    },
+    {
+      "claim_id": "08cce8b8-9026-4002-9ff1-9da1b28cbabb",
+      "result_id": "7bbfab74-786c-4e0a-b3de-a10ccd300b8f"
+    },
+    {
+      "claim_id": "1b867e04-b151-4d28-9b15-2811b9cea5e4",
+      "result_id": "7bbfab74-786c-4e0a-b3de-a10ccd300b8f"
+    },
+    {
+      "claim_id": "e6c80c74-9a58-48f3-a3f1-a63381a3cabf",
+      "result_id": "7bbfab74-786c-4e0a-b3de-a10ccd300b8f"
+    },
+    {
+      "claim_id": "9b5513b6-4921-4d4a-a781-47718ac241d9",
+      "result_id": "7bbfab74-786c-4e0a-b3de-a10ccd300b8f"
+    },
+    {
+      "claim_id": "af094544-07a4-42e0-bce8-873d8c0697f7",
+      "result_id": "7bbfab74-786c-4e0a-b3de-a10ccd300b8f"
+    },
+    {
+      "claim_id": "0300d5e2-2223-411a-ab55-d499a3a8029b",
+      "result_id": "7bbfab74-786c-4e0a-b3de-a10ccd300b8f"
+    },
+    {
+      "claim_id": "2b116daf-4fb1-410b-91a8-d31324e639e8",
+      "result_id": "7bbfab74-786c-4e0a-b3de-a10ccd300b8f"
+    },
+    {
+      "claim_id": "477cb18d-6723-4611-9ff9-fd49f5d63ee5",
+      "result_id": "c4c8defe-a0dd-4887-831c-76eb0f0bb33b"
+    },
+    {
+      "claim_id": "c41b363a-64b4-4a1d-9c6d-1a81aa92a24b",
+      "result_id": "c4c8defe-a0dd-4887-831c-76eb0f0bb33b"
+    },
+    {
+      "claim_id": "8573c088-f781-4f93-a362-e08d97bb347b",
+      "result_id": "c4c8defe-a0dd-4887-831c-76eb0f0bb33b"
+    },
+    {
+      "claim_id": "5d6668d5-38df-4dac-8810-c5f77fa7d491",
+      "result_id": "c4c8defe-a0dd-4887-831c-76eb0f0bb33b"
+    },
+    {
+      "claim_id": "353d6d34-9590-49ae-8cb5-aeb1d3bbdc41",
+      "result_id": "c4c8defe-a0dd-4887-831c-76eb0f0bb33b"
+    },
+    {
+      "claim_id": "5e17dcfe-45f3-44ed-8b74-02354d7882c5",
+      "result_id": "c4c8defe-a0dd-4887-831c-76eb0f0bb33b"
+    },
+    {
+      "claim_id": "4f411f66-b032-4674-99b5-ed0b2de2c3e1",
+      "result_id": "c4c8defe-a0dd-4887-831c-76eb0f0bb33b"
+    },
+    {
+      "claim_id": "c48336d2-3882-4940-95ae-0da1f9eb3eb3",
+      "result_id": "c4c8defe-a0dd-4887-831c-76eb0f0bb33b"
+    },
+    {
+      "claim_id": "23ecdab8-3675-46d1-b0ac-6eddf1793f53",
+      "result_id": "c4c8defe-a0dd-4887-831c-76eb0f0bb33b"
+    },
+    {
+      "claim_id": "d0814111-3d66-4d8c-b8af-e22f835d371a",
+      "result_id": "c4c8defe-a0dd-4887-831c-76eb0f0bb33b"
+    }
+  ],
+  "comparisons": []
+}

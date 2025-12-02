@@ -1,0 +1,533 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "NeuB, predicted to encode a NeuB-like sialic acid synthase, is required for flagellar filament assembly in C. crescentus. Transposon insertions and in-frame deletions in neuB result in non-motile cells that lack flagellar filaments but retain hook structures, and complementation with NeuB restores motility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C77 provide converging genetic, microscopy, and complementation evidence that neuB is required for flagellar filament assembly. The TEM data (C74-C75) clearly shows hook structures without filaments in \u0394neuB cells, and complementation (C72) confirms the genetic requirement. The prediction that NeuB encodes a sialic acid synthase (C76-C77) is reasonable based on sequence homology.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "NeuB is required for post-translational modification of all six flagellins in C. crescentus. Flagellins from \u0394neuB cells show increased mobility on SDS-PAGE compared to WT, consistent with loss of glycosylation, and this mobility matches that of FljK expressed in E. coli.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C85 provide strong biochemical evidence from immunoblotting that NeuB controls flagellin modification. The shift in SDS-PAGE mobility (C80-C81) is consistent with loss of post-translational modification, and the comparison with E. coli-expressed FljK (C82) provides an appropriate unmodified control. Testing all six flagellins (C83-C85) demonstrates the breadth of NeuB's role.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "NeuB catalytic activity is required for its function in C. crescentus flagellation. Site-directed mutagenesis of conserved catalytic residues (E30A, H245A, R322A) abolishes or severely reduces NeuB activity in motility and flagellin modification assays.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C95 provide strong evidence through site-directed mutagenesis that NeuB enzymatic activity is required. The selection of residues based on structural homology to N. meningitidis NeuB (C88-C90) is well-justified, and the functional testing (C91-C94) shows clear loss or reduction of activity. The H245A partial activity (C94) is interesting and suggests this residue may be less critical than E30 or R322.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "C. crescentus NeuB functions as a pseudaminic acid synthase, as demonstrated by heterologous complementation experiments. Only C. jejuni NeuB3 (pseudaminic acid synthase) can substitute for C. crescentus NeuB in motility and flagellin modification, while NeuB1 and NeuB2 cannot. Reciprocally, C. crescentus NeuB can restore capsular polysaccharide production in S. fredii \u0394rkpQ mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C107 provide compelling evidence through reciprocal heterologous complementation that C. crescentus NeuB is a pseudaminic acid synthase. The specificity of complementation (only NeuB3 works in C. crescentus, C96-C98) and the ability of C. crescentus NeuB to restore capsule synthesis in S. fredii (C101-C105) provide strong functional evidence. The interchangeability of pseudaminic acid synthases (C107) is well-demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "FlmG, a protein with an N-terminal TPR domain and a C-terminal glycosyltransferase domain, is required for flagellin modification and motility in C. crescentus. FlmG acts in the same pathway as NeuB, consistent with its predicted role as an O-glycosyltransferase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C115 provide strong genetic evidence that FlmG is required for flagellin glycosylation. The identification of multiple transposon insertions (C108), the domain structure prediction (C110), and the complementation experiments (C114) all support this conclusion. The observation that \u0394flmG cells phenocopy \u0394neuB cells (C112-C113) strongly suggests they act in the same pathway (C115).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C116",
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "FlmG is sufficient for flagellin glycosylation in the presence of pseudaminic acid, as demonstrated by heterologous expression in S. fredii. Co-expression of FlmG and FljK in S. fredii results in FljK modification that is dependent on pseudaminic acid synthesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C116-C119 provide strong evidence for FlmG sufficiency through heterologous expression experiments. The shift in FljK migration upon FlmG co-expression (C117) and the dependence on pseudaminic acid (C118) demonstrate that FlmG is both necessary and sufficient for flagellin glycosylation. This is a key result establishing FlmG as the glycosyltransferase.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C12",
+      "C62"
+    ],
+    "result": "The substrate specificity of FlmG resides in its N-terminal TPR domain, which binds flagellins. The TPR domain is required and sufficient for flagellin binding in BACTH assays, while the C-terminal glycosyltransferase domain alone cannot restore motility or flagellin modification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C120-C123, C12, and C62 provide strong evidence for the modular organization of FlmG. The BACTH data (C121-C122) clearly show that the TPR domain binds flagellins while the GT domain does not. The functional requirement for the TPR domain (C120) demonstrates that substrate binding is essential for activity. This establishes the molecular basis for substrate specificity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C10",
+      "C11"
+    ],
+    "result": "All six flagellins in C. crescentus are glycosylated by FlmG in a reaction requiring pseudaminic acid. FlmG is both required and sufficient for flagellin modification, as demonstrated in native C. crescentus and two heterologous systems (S. fredii NGR234 and E. coli).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C61, C10-C11 provide comprehensive evidence that FlmG glycosylates all six flagellins. The demonstration of sufficiency in three different systems (C. crescentus, S. fredii, and E. coli) is particularly strong. The E. coli reconstitution experiment with the synthetic flm operon is especially compelling as it demonstrates that the six enzymes identified are sufficient for the entire pathway.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130"
+    ],
+    "result": "Transcription of flmG, flmA, and neuB is cell cycle-regulated and directly controlled by the essential cell cycle regulator CtrA. The flmGH and flmAB transcripts peak during early pre-divisional stage, while neuB peaks later. CtrA binds to the promoter regions of these genes and activates their transcription.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C124-C130 provide strong evidence for cell cycle regulation of the glycosylation pathway genes. The RNA-Seq/Ribo-Seq data (C124-C126), ChIP-Seq data (C127), and promoter probe experiments with ctrA mutants (C128-C129) all converge to support CtrA-dependent transcriptional control. This integrates flagellin glycosylation into the cell cycle regulatory network.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C13",
+      "C14",
+      "C65",
+      "C66"
+    ],
+    "result": "FlmG protein levels increase steadily during the cell cycle, peaking at the end, while NeuB levels remain relatively constant. FlmG accumulates before the FlaF secretion chaperone, potentially allowing flagellin glycosylation to occur before secretion and avoiding competition between FlmG and FlaF for flagellin binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C131-C135, C13-C14, C65-C66 provide evidence for temporal regulation at the protein level. The immunoblotting data from synchronized cells (C131-C132) clearly show differential accumulation of FlmG vs. NeuB. The interpretation that early FlmG accumulation avoids competition with FlaF (C135, C66) is reasonable speculation supported by the temporal data, though direct evidence for competition is not provided. The speculation is appropriately qualified as 'potentially'.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C153",
+      "C154",
+      "C155",
+      "C64"
+    ],
+    "result": "Flagellin modification by FlmG occurs independently of the flagellar secretion apparatus and the FlaF secretion chaperone. Flagellins are glycosylated in mutants lacking the hook basal body complex or FlaF.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C153-C155 and C64 provide clear evidence that glycosylation is independent of the secretion machinery. The immunoblotting data from flbD::Tn, rpoN::Tn, and flaF::Tn mutants showing normal flagellin modification is compelling. This establishes that glycosylation occurs in the cytoplasm before secretion, which is an important mechanistic insight.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C106"
+    ],
+    "result": "The pseudaminic acid biosynthetic pathway is required for flagellation, flagellin modification, and efficient flagellin export in C. crescentus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C5 and C106 are well-supported by the genetic, biochemical, and microscopy data presented throughout the manuscript. The requirement for flagellation (C3) is shown by motility assays and TEM, flagellin modification (C4) is shown by SDS-PAGE mobility shifts, and efficient export (C5) is shown by reduced flagellin levels in supernatants of \u0394neuB cells. These are core findings of the study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C6",
+      "C7"
+    ],
+    "result": "The C. crescentus NeuB enzyme condenses phosphoenolpyruvate with a hexose into pseudaminic acid and is functionally interchangeable with other pseudaminic acid synthases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C7 are supported by the enzymatic characterization and heterologous complementation experiments. The enzymatic activity (C6) is inferred from the NeuB family membership and confirmed by the functional studies. The interchangeability (C7) is directly demonstrated by the complementation experiments with C. jejuni NeuB3 and S. fredii RkpQ.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C8",
+      "C9"
+    ],
+    "result": "FlmG is a previously unknown and cell cycle-regulated protein that defines a new class of cytoplasmic O-glycosyltransferases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C9 are supported by the novelty of the finding (FlmG had not been characterized as a glycosyltransferase before), the cell cycle regulation data (C132), and the unique domain architecture (TPR-GT fusion). The classification as a 'new class' (C9) is justified by the lack of homology to known OGTs like Maf and the unique modular organization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C63"
+    ],
+    "result": "Both the N-terminal and C-terminal domains of FlmG are required for flagellin glycosylation, formation of the flagellar filament, and motility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C63 is supported by the domain deletion experiments showing that the CTD alone cannot restore motility or flagellin modification (C120). The requirement for both domains is consistent with the model that the NTD provides substrate specificity while the CTD provides catalytic activity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C162",
+      "C163",
+      "C164",
+      "C165",
+      "C166"
+    ],
+    "result": "In C. crescentus, no flagellar filament is assembled in the absence of glycosylation, although flagellins accumulate in the supernatant at reduced levels. Non-glycosylated flagellin appears to be less efficiently exported and/or less stable than modified flagellin, and only hook structures are observed rather than short filaments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C162-C166 are supported by the TEM data showing only hooks in glycosylation mutants (C165) and the immunoblotting data showing reduced flagellin in supernatants (C163). The interpretation that non-glycosylated flagellin is less efficiently exported or less stable (C164) is reasonable given the data, though the relative contributions of export efficiency vs. stability cannot be distinguished. The conclusion that filament assembly is defective (C166) is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C141",
+      "C142",
+      "C143"
+    ],
+    "result": "FlmG exhibits substrate promiscuity, glycosylating all six C. crescentus flagellins despite their sequence divergence. While FljJ shares only 49% identity with other flagellins, there are at least 20 conserved serine/threonine residues that could be modified, though only one of the four threonines modified in FljK is conserved in all six flagellins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C141-C143 are supported by the data showing all six flagellins are modified (C83-C85) and the sequence analysis. The observation that only one of four modified threonines is universally conserved (C143, citing Montemayor et al., 2020) suggests FlmG can modify different sites in different flagellins, which is consistent with promiscuity. This is an important mechanistic insight.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C144",
+      "C145",
+      "C146"
+    ],
+    "result": "The FlmG N-terminal domain binds flagellins via the TPR region and is required for motility and efficient glycosylation. A free-floating glycosyltransferase domain cannot bind flagellins or support flagellar filament assembly.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C144-C146 are supported by the BACTH data (C121-C122) and the functional complementation experiments (C120). The inability of the CTD alone to function (C145-C146) demonstrates the importance of the substrate-binding domain for activity in vivo.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152"
+    ],
+    "result": "Both FlmG and the FlaF secretion chaperone bind all six flagellins, potentially competing for the same substrate. However, FlmG accumulates before FlaF, which may temporally separate their activities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C147-C152 integrate findings from this study with prior work on FlaF. The potential competition (C151) is reasonable speculation given that both proteins bind flagellins, and the temporal separation (C152) provides a mechanism to avoid this competition. The evidence for temporal separation is strong (C132-C133), though direct evidence for competition is not provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C156",
+      "C157"
+    ],
+    "result": "The preference of FlbT for FljJ underlies translational repression of structural flagellin transcripts, which is relieved when FljJ is secreted through the flagellar export apparatus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C156-C157 describe the translational regulation mechanism from prior work (Ardissone et al., 2020). This provides important context for understanding the regulatory network but is not a new finding from this study. The claims are well-supported by the cited work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "C. crescentus is a monopolarly flagellated alpha-proteobacterium with six flagellin paralogs that serves as a model system for studying cell cycle-regulated flagellation. It assembles a single flagellum at the newborn cell pole each cycle and divides asymmetrically into flagellated swarmer and stalked cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C44-C48 provide background information about C. crescentus that is well-established in the literature. These claims are supported by the cited references and provide essential context for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Bacterial flagellin glycosylation is widespread in both pathogenic and environmental bacteria, often involving pseudaminic acid or related sialic acid-like sugars. In pathogens like C. jejuni and H. pylori, glycosylation is linked to virulence and immune evasion, while in environmental bacteria it may serve other functions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C32 provide comprehensive background on bacterial flagellin glycosylation from the literature. All claims are well-supported by the cited references and establish the broader context for the study. This background is essential for understanding the significance of the findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Flagellin glycosylation occurs at serine/threonine residues by O-glycosyltransferases, with modification extent varying from single sites to 19 residues. Glycosylation occurs in the cytoplasm before secretion, and no consensus sequence has been identified, suggesting OGTs recognize tertiary structure. Polarly flagellated bacteria must assemble a new flagellum each cell cycle.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C43 provide important background on the mechanisms and regulation of flagellin glycosylation. The claims are well-supported by the cited literature. The inference that OGTs recognize tertiary structure (C37) is reasonable given the lack of consensus sequence (C36). The requirement for cell cycle-regulated assembly in polar flagellation (C43) sets up the rationale for studying FlmG regulation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Multiple spatiotemporal cell cycle control mechanisms regulate flagellar assembly in C. crescentus, including spatial cues inherited from the previous cycle, CtrA-dependent transcription of flagellar genes, and FlaF-dependent flagellin export.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C53 summarize the known cell cycle regulation of flagellar assembly in C. crescentus from the literature. These claims provide essential background for understanding how the glycosylation pathway fits into the broader regulatory network. All claims are well-supported by the cited references.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "C. crescentus expresses six flagellin paralogs: five structural flagellins (FljKLMNO) that can each support motility, and one regulatory flagellin (FljJ) that controls translation of the others but cannot support motility alone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C57 describe the unique flagellin system of C. crescentus from prior work. These claims are well-supported by the cited references and establish an important peculiarity of this organism that is relevant to understanding the substrate promiscuity of FlmG.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C136",
+      "C137",
+      "C138",
+      "C139"
+    ],
+    "result": "The Maf glycosyltransferase can modify flagellin in some bacteria, but C. crescentus lacks a Maf ortholog and instead uses FlmG. Recent evidence shows C. crescentus modifies FljK at four threonine residues with an O-linked glycan.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C136-C139 provide important context by describing an alternative flagellin glycosylation system (Maf) and noting that C. crescentus uses a different system. The recent structural data on FljK modification (C139) aligns well with the findings of this study. All claims are supported by the cited references.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C140"
+    ],
+    "result": "The reconstitution of FlmG-dependent glycosylation in E. coli with a synthetic pseudaminic acid biosynthesis operon simplifies future analyses of donor promiscuity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C140 is a reasonable interpretation of the implications of the E. coli reconstitution experiment. The ability to express the complete pathway in E. coli does indeed provide a convenient system for testing alternative sugar donors. This is a valid inference about future applications.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C158",
+      "C159",
+      "C160",
+      "C161"
+    ],
+    "result": "Flagellin glycosylation may serve different functions in pathogenic vs. environmental bacteria. In pathogens, it may aid immune evasion, while in environmental bacteria it likely serves other purposes. The requirement for glycosylation in flagellar assembly varies among bacterial species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C158-C161 provide a balanced discussion of the functional diversity of flagellin glycosylation. The speculation about different functions (C158-C159) is reasonable and appropriately qualified. The observation about variable requirements for assembly (C160-C161) is well-supported by the cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C167",
+      "C168",
+      "C169",
+      "C170",
+      "C171",
+      "C172",
+      "C173",
+      "C174",
+      "C175"
+    ],
+    "result": "The authors speculate about potential mechanisms for why glycosylation is required for flagellar assembly in C. crescentus, including the possibility of an assembly factor that binds glycosylated flagellins, or that glycosylation provides an additional regulatory checkpoint to coordinate flagellar assembly with the cell cycle.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C167-C175 are explicitly presented as speculation about mechanisms. While the speculation is reasonable and well-articulated, no direct experimental evidence is provided to test these hypotheses. The observation that glycosylated residues are not in inter-subunit contact regions (C172) argues against a direct role in self-assembly. These are interesting ideas for future work but remain speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R30",
+    "claim_ids": [
+      "C176",
+      "C177",
+      "C178",
+      "C179",
+      "C180",
+      "C181",
+      "C182"
+    ],
+    "result": "The authors propose that PEP-dependent pseudaminic acid synthesis could integrate flagellar assembly with (p)ppGpp-dependent cell cycle control, since PEP is required for both pseudaminic acid synthesis and (p)ppGpp production via PTS systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C176-C182 present an interesting hypothesis linking pseudaminic acid synthesis to cell cycle control through PEP metabolism. While the individual facts are supported by citations (C179-C181), the proposed integration (C182) is speculation. No direct experimental evidence is provided to test whether PEP availability actually regulates flagellin glycosylation or whether this links to (p)ppGpp signaling. This is an appealing hypothesis for future work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R31",
+    "claim_ids": [
+      "C183",
+      "C184",
+      "C185",
+      "C186",
+      "C187",
+      "C188",
+      "C189"
+    ],
+    "result": "The authors speculate that pseudaminic acid synthesis, which branches from UDP-N-acetyl-glucosamine (a precursor for cell wall and LPS synthesis), could link flagellin glycosylation to cell envelope modifications and cell cycle events like septation. In S. fredii, pseudaminic acid is used in capsule synthesis rather than flagellation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C183-C189 present speculation about metabolic integration of pseudaminic acid synthesis with cell envelope biogenesis. While the metabolic connection is factual (C183), the proposed coordination with septation (C184, C186) is speculation without direct experimental support. The observation about S. fredii (C185) is well-supported. The general speculation about metabolic coordination (C189) is interesting but untested.",
+    "result_type": "MINOR"
+  }
+]

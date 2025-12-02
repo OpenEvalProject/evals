@@ -1,0 +1,338 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C52",
+      "C53",
+      "C54",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "K-means clustering (k=4) successfully parcellated human primary olfactory cortex into four anatomically-defined subregions (anterior olfactory nucleus, olfactory tubercle, frontal piriform cortex, temporal piriform cortex) based solely on whole-brain functional connectivity patterns. Each parcellated cluster corresponded significantly to a single anatomical ROI (minimal z-score = 7.18, p<0.001).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C64 provide converging evidence: the clustering produced four distinct regions that matched anatomical boundaries defined a priori (C52-C54). The statistical validation (C59) with permutation testing (z>7.18) and the stability analysis (C56-C57) showing positive correlations across subjects support the reliability of the parcellation. The methodology is appropriate for the research question.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "The parcellation results replicated in two independent analyses: one using an independently-drawn ROI and another using a completely independent dataset (N=53) acquired on different equipment with different parameters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C67 demonstrate successful replication across different ROI definitions and datasets, with identical analysis procedures (C67). This addresses concerns about ROI-dependence and dataset-specific effects. The replication strengthens confidence in the primary parcellation finding (C68), though the manuscript does not provide quantitative similarity metrics between original and replicated parcellations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Parcellation across k-values (3-6) and hemispheres revealed robust separation of frontal and temporal piriform cortex across all solutions, while anterior olfactory nucleus and olfactory tubercle showed more lateralized connectivity patterns, being separated by hemisphere at k=4 and k=6.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C77 systematically document parcellation behavior across k-values, showing consistent piriform subdivision (C75) and hemisphere-specific clustering of AON/TUB (C70, C73, C77). The interpretation of greater lateralization for AON (C71, C78) follows logically from the clustering patterns. However, the manuscript does not provide formal quantitative metrics of lateralization beyond the clustering results themselves.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C79",
+      "C80"
+    ],
+    "result": "No statistically significant differences were found between left and right hemisphere connectivity maps for corresponding primary olfactory subregions (TFCE corrected p>0.001), justifying the combination of hemispheres for subsequent analyses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C79 provides direct statistical evidence for the methodological decision in C80. The TFCE correction is appropriate for multiple comparisons. However, this finding appears to contradict the earlier observation of lateralized connectivity patterns for AON (C71, C78), suggesting the lateralization may be relative rather than absolute. The manuscript should clarify this apparent inconsistency.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C179",
+      "C180",
+      "C181",
+      "C182",
+      "C183"
+    ],
+    "result": "The anterior olfactory nucleus showed unique connectivity with orbitofrontal cortex (including secondary olfactory cortex), inferior temporal gyrus (object recognition pathway), anterior temporal gyri, anterior insula (gustatory cortex), and hypothalamic regions. This connectivity pattern is consistent with a role in odor-object representation formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C89 provide detailed anatomical localization of AON connectivity, supported by Figure 4A,E. The interpretation linking this to odor-object representation (C179-C181) is supported by rodent literature citations, though it remains inferential. The finding of greater lateralization (C182-C183) is consistent with earlier parcellation results. The connectivity data are robust, but functional interpretations require validation through task-based studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C197",
+      "C198",
+      "C199"
+    ],
+    "result": "The olfactory tubercle exhibited unique connectivity with medial prefrontal cortex (paracingulate gyrus, frontal pole), accumbens, retrosplenial cortex, red nucleus, and fusiform face area. This pattern is consistent with roles in emotional processing, social cognition, and reward.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C96 document TUB connectivity patterns with appropriate anatomical detail. The functional interpretation (C197-C199) linking to emotion/social cognition is supported by citations but remains speculative. The fusiform face area connectivity (C198) is particularly interesting given social olfaction functions, though the manuscript acknowledges this is correlational. The connectivity data are solid, but causal functional claims require additional evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C152",
+      "C153",
+      "C154",
+      "C155",
+      "C156",
+      "C157"
+    ],
+    "result": "Frontal piriform cortex showed distinct connectivity with dorsal striatum (caudate/putamen), primary motor cortex (face/jaw area), anterior mid-cingulate cortex, mediodorsal thalamus, and left supramarginal gyrus. This pattern suggests involvement in motor planning related to olfaction, potentially including eating behaviors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C98-C104 provide robust connectivity data (C152, C154). However, the functional interpretation becomes increasingly speculative: the connection to motor planning (C155) is reasonable given striatal/motor cortex connectivity, but the specific hypothesis about hand-to-mouth food guidance (C157) is explicitly labeled as \"highly speculative\" and lacks supporting evidence. The connectivity findings are solid, but functional claims require experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C158",
+      "C159",
+      "C160",
+      "C161",
+      "C162",
+      "C163",
+      "C164",
+      "C165",
+      "C166"
+    ],
+    "result": "Temporal piriform cortex showed unique connectivity with brainstem (raphe magnus), temporal pole, inferior frontal gyrus (Broca's area), superior temporal gyrus (language areas), hippocampus, and posterior insula. This pattern suggests roles in pain processing, respiratory modulation, and language-related olfactory processing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C105-C111 document robust connectivity patterns. The functional interpretations (C158-C160) are supported by citations linking connected regions to pain/respiration/language. However, the synthesis suggesting PirT mediates both protective respiratory responses and olfactory verbal communication (C164) is speculative. The link to olfactory language limitations (C165-C166) is interesting but requires experimental validation. The connectivity data are strong, but functional claims need additional support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "All primary olfactory subregions showed common connectivity with bilateral hippocampus, amygdala, subgenual area, anterior insula, and posterior orbitofrontal cortex, with generally more extensive right hemisphere connectivity. This common network may explain consistent OFC activation in olfactory tasks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C115 document the common connectivity network with appropriate anatomical detail. The observation of right hemisphere dominance (C116) is supported by citations to previous literature. The interpretation regarding OFC activation (C117) is reasonable given the connectivity data, though it remains inferential. The findings are well-supported and consistent with known olfactory system organization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C128",
+      "C129",
+      "C130",
+      "C132"
+    ],
+    "result": "The study demonstrates dissociable whole-brain functional connectivity patterns across primary olfactory subregions, suggesting the human olfactory system comprises distinct parallel processing pathways that reach broader cortical targets earlier than other sensory systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C128-C130 appropriately summarize the main findings. The interpretation of parallel pathways (C129) is well-supported by the parcellation and connectivity data, with appropriate citations. The comparison to other sensory systems (C132) regarding early cortical parallelization is valid given the lack of thalamic relay in olfaction. However, the functional significance of these pathways requires additional experimental validation beyond connectivity patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C200",
+      "C201",
+      "C202"
+    ],
+    "result": "The authors acknowledge that functional roles cannot be definitively determined from resting connectivity alone, that multiple interpretations exist, and that future psychophysical studies combined with neural measurements are needed for complete understanding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C200-C202 appropriately acknowledge the limitations of resting-state connectivity for inferring function. This is a critical and honest assessment that tempers the more speculative functional interpretations made throughout the discussion. The call for future experiments (C202) is appropriate and necessary for validating the functional hypotheses generated from connectivity patterns.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C203",
+      "C204",
+      "C205",
+      "C206",
+      "C207",
+      "C208",
+      "C209",
+      "C210",
+      "C211",
+      "C212",
+      "C213"
+    ],
+    "result": "The study used appropriate methods including 25 right-handed subjects with normal olfaction, optimized fMRI acquisition parameters (30\u00b0 slice angle, multiband acceleration) to improve signal in olfactory regions, and proper ethical approvals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C51, C203-C213 document appropriate sample characteristics, acquisition parameters, and ethical procedures. The 30\u00b0 slice angle (C210) is well-justified for reducing distortion in olfactory regions. The sample size (N=25) is reasonable for connectivity analyses, though larger samples would increase power. The validation of signal quality (C211-C212) supports the technical adequacy of the data. Methods are generally sound.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C55"
+    ],
+    "result": "Amygdala and entorhinal cortex were excluded from the ROI because the exact location of olfactory afferents into these areas is poorly understood.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C55 provides appropriate justification for excluding certain primary olfactory areas from analysis. This is a reasonable methodological decision given anatomical uncertainty, though it limits the completeness of the olfactory network characterization. The authors appropriately acknowledge this as an important topic for future investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C13",
+      "C14",
+      "C18",
+      "C24",
+      "C26",
+      "C28",
+      "C33",
+      "C37",
+      "C40"
+    ],
+    "result": "The manuscript establishes multiple knowledge gaps: distinct networks from olfactory bulb targets are not well-defined, functional network organization is incomplete, human piriform anatomy/function is less understood than rodents, and functional connectivity profiles of primary olfactory subregions have not been separately characterized.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C13-C14, C18, C24, C26, C28, C33, C37, C40 establish the rationale for the study by documenting gaps in current knowledge. These claims are appropriately supported by citations and accurately characterize the state of the field. The knowledge gaps are legitimate and justify the study's approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C133",
+      "C134",
+      "C135",
+      "C136"
+    ],
+    "result": "The findings may have clinical implications for understanding olfactory decline in neurological diseases, as olfactory structures connected to disease-affected brain regions (e.g., tubercle-depression, temporal piriform-aphasia) likely perform critical sensory functions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C133-C136 propose clinical applications based on connectivity patterns. While the logic is reasonable (structures connected to disease-affected regions may be functionally important), this remains highly speculative without clinical validation data. The citations (C135-C136) support the disease associations but not the causal functional claims. This represents hypothesis generation rather than established findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "The olfactory system shows direct parallel cortical processing without pre-cortical thalamic relay, contrasting with other sensory systems. Thalamic processing in olfaction occurs after primary cortical processing and may only involve a subset of processing streams (specifically frontal piriform cortex).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C118-C120 accurately describe established differences in sensory system organization. Claim C121 correctly characterizes olfactory organization. Claim C122 makes an inference from the connectivity data showing thalamic connectivity only with frontal piriform cortex (C103). This inference is reasonable but should be stated more cautiously, as absence of detected connectivity does not definitively prove absence of thalamic involvement in other pathways.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C23",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151"
+    ],
+    "result": "The manuscript reviews rodent piriform cortex literature showing anterior/posterior subdivisions with distinct functions, notes that human piriform anatomy/function is less understood, and highlights uncertainty about whether human frontal/temporal subdivisions correspond to rodent anterior/posterior divisions, suggesting substantial cross-species functional differences may exist.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23, C138-C151 provide appropriate literature review establishing what is known from rodent studies (well-supported by citations) and what remains uncertain in humans. The observation that human frontal piriform does not receive greater bulbar input than temporal (C149-C150), unlike rodent anterior vs. posterior, is a valid anatomical difference. The inference of potential substantial functional differences (C151) is reasonable but requires empirical validation.",
+    "result_type": "MINOR"
+  }
+]

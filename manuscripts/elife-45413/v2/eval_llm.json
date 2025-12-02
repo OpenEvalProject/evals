@@ -1,0 +1,304 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C18",
+      "C19",
+      "C20",
+      "C27",
+      "C28",
+      "C135",
+      "C136",
+      "C137"
+    ],
+    "result": "Junction Mapper is an open-access, semi-automated software tool developed in Java that identifies cell-cell contact interfaces and corners with minimal user input, quantifies junction parameters (length, area, intensity), and uniquely measures fragmented junctions across various cell types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3, C18-C20, C27-C28, and C135-C137 collectively describe the software's core capabilities and are directly stated in the manuscript with supporting figures (Figure 2). The software's availability on GitHub (C136) and its technical implementation (C135, C137) are explicitly documented in the methods section.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "Junction Mapper's workflow involves automated detection of cell-cell interfaces to create a skeletonized edge map, with user-adjustable manual corrections, followed by dilation, corner identification, and automated parameter measurement. The software requires a Peak Signal to Noise ratio above 22 dB for efficient skeleton definition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C39 describe the technical workflow and are supported by Figure 2 and supplementary figures. The PSNR threshold of 22 dB (C36) is explicitly stated and validated in Figure 2\u2014figure supplement 2. The workflow steps are clearly documented in the methods and results sections.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C54"
+    ],
+    "result": "Primary parameters in Junction Mapper measure fundamental junction properties including interface (contacting membrane between cells), junction (region covered by adhesion receptors), area (dilated region around skeleton), contour (length of skeleton outline), and straight-line length (Euclidian distance between corners). These parameters were validated and behave as predicted from their definitions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C47 and C54 define the primary parameters and their validation. Figure 3 demonstrates that measurements behave as predicted, with validation experiments showing expected responses to user-controlled settings (dilation and thresholding). The validation is systematic and well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Validation experiments demonstrate that junction contour and area are more severely disrupted when two neighboring cells express H-RasG12V compared to mosaic contacts or controls. User-controlled settings (dilation and thresholding) selectively affect area-based versus length-based measurements as predicted.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C53 are supported by Figures 3 and 4, with statistical analyses showing significant differences. The validation demonstrates that dilation affects area-based but not length-based measurements (C50), and thresholding affects fragmented junction length but not interface contour (C52-C53), consistent with parameter definitions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Secondary parameters normalize measurements to interface or junction dimensions and include Linearity Index, Coverage Index, Interface Occupancy, Junction Protein Intensity per Interface Area, and Cluster Density. These parameters were validated against manual quantification and show reproducibility across biological replicates despite slight variations in absolute values.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C67 describe secondary parameters and their validation. Scheme 1 and Supplementary file 2 demonstrate that Junction Mapper produces statistically equivalent results to manual quantification (C61), though with different absolute values due to methodological differences (C62-C63). Reproducibility across biological replicates is demonstrated (C65-C67).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "User bias analysis reveals that confluent epithelial monolayers produce less variability than disrupted contacts, with corner identification being a particular source of variation. However, secondary parameters are more robust against user bias than primary parameters, and normalization to controls minimizes bias effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C72 and C115-C117 address user bias and are supported by Supplementary file 3 and Figure 7\u2014figure supplement 1. While primary parameters show significant differences between users (C70), secondary parameters produce similar profiles (C71), supporting the conclusion that user bias can be minimized through appropriate parameter selection and normalization (C72, C117).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C119",
+      "C120"
+    ],
+    "result": "Junction Mapper distinguishes distinct disruption profiles among oncogenes: H-RasG12V and SrcY527F induce interface elongation, undulation, and E-cadherin fragmentation/removal with decreased cluster density, while Rac1Q61L redistributes receptors without fragmentation or undulation, maintaining straight junctions with increased cluster density.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C73-C87 and C119-C120 describe oncogene-specific junction disruption patterns supported by Figures 4-5 and Scheme 2. However, the manuscript explicitly states these are from single technical replicates (C77) and describes findings as 'preliminary observations' (C85), requiring additional biological replicates to confirm the patterns. The mechanistic interpretations (C80, C85-C87) are speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C121",
+      "C122"
+    ],
+    "result": "Junction Mapper detects subtle changes in junction phenotypes following siRNA depletion of cytoskeleton-associated proteins (CIP4, VAV2, EEF1A), revealing that similar reductions in E-cadherin intensity can result from distinct mechanisms: reduced cluster density (CIP4) versus localized removal with denser clusters (VAV2).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C97 and C121-C122 are supported by Figure 6 and Scheme 3, with statistical analyses showing significant differences. The results confirm prior findings (C88, C121) while revealing new mechanistic distinctions (C92-C95). The data demonstrate the software's ability to detect both major and minor changes with good dynamic range (C97).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C123",
+      "C124"
+    ],
+    "result": "In thrombin-treated endothelial cells, Junction Mapper detects increased VE-cadherin distribution, intensity, and cluster density at junctions using area-based parameters, though the characteristic zig-zag pattern is not captured by automated skeleton definition. The increased VE-cadherin may promote stronger adhesion to sustain elevated tension and contractility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C98-C103 and C123-C124 are supported by Figure 7 with statistical significance (N=2 biological replicates). However, the software's inability to capture zig-zag patterns (C99, C124) is a significant limitation. The mechanistic interpretation about stronger adhesion (C102) is speculative and explicitly stated to 'merit further experimentation' (C103).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "In cardiomyocytes, hypertrophic stimulation increases \u03b2-catenin and connexin 43 levels at intercalated discs, but through distinct mechanisms: \u03b2-catenin shows decreased cluster density with more contiguous distribution, while connexin 43 forms denser clusters, suggesting enhanced gap junction formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C104-C110 and C125-C127 are supported by Figure 8 and Scheme 4 with statistical analyses. However, the data are from a single technical replicate, and the manuscript explicitly states 'further investigation is necessary to ascertain the profiling and biological significance' (preceding C128). The findings are consistent with prior literature (C105-C107, C126-C127) but require additional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C21",
+      "C111",
+      "C118",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134"
+    ],
+    "result": "Junction Mapper successfully quantifies junctions in multiple cell types (epithelia, endothelia, cardiomyocytes) that deviate from standard epithelial phenotypes, providing unique fingerprints for different stimuli. The software has broad applicability despite limitations with highly fragmented/zig-zagged junctions and untested applications (stratified epithelia).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C5, C21, C111, C118, and C128-C134 describe the software's broad applicability and are supported by data from multiple cell types (Figures 7-8). The limitations are explicitly acknowledged (C128-C130), and the potential applications (C131-C134) are appropriately framed as future directions. The demonstration across three distinct cell types with different junction architectures supports the broad applicability claim.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "The manuscript establishes that existing quantitative image analysis methods have restricted capabilities for mammalian cell junctions, particularly for detecting non-intensity-based attributes like shape, length, fragmentation, and continuity, which motivated the development of Junction Mapper.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C17 establish the background and motivation for the study, supported by multiple citations to prior work. These claims accurately represent established knowledge about junction biology (C6-C11) and limitations of existing methods (C12-C17). The citations are appropriate and the characterization of the problem is well-supported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C40"
+    ],
+    "result": "Normal epithelial junctions appear as straight lines with uniformly distributed E-cadherin receptors delimited by tricellular corners, while various stimuli disrupt this architecture in different ways that are not always captured by intensity measurements alone, requiring distinct parameter sets for appropriate quantification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C25 and C40 describe fundamental junction biology and the rationale for multiple parameters, supported by Figure 1. These observations are well-established and provide the conceptual foundation for the parameter design. The claim that different phenotypes require distinct parameters (C40) is validated throughout the results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C26"
+    ],
+    "result": "Junction Mapper builds upon prior quantitative analysis methods from RNAi screens developed by the same research group.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C26 is explicitly stated with citation to Erasmus et al., 2016, establishing the software's development history and connection to prior work by the authors.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "Machine learning algorithms could improve Junction Mapper's segmentation, particularly for fragmented contacts, though training dataset availability remains a bottleneck. The software could generate training data for future machine learning applications.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C114 discuss future directions and are appropriately framed as speculation. The limitation regarding training datasets (C113) is supported by citation to H\u00e4ring et al., 2018. These are reasonable assessments of future potential rather than claims about current capabilities.",
+    "result_type": "MINOR"
+  }
+]

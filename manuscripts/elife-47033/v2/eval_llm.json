@@ -1,0 +1,162 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C7",
+      "C78",
+      "C23",
+      "C25",
+      "C26"
+    ],
+    "result": "E. coli maintains a conserved aspect ratio of \u03b7 = 4.14 \u00b1 0.17 (coefficient of variation ~14%) during steady-state growth, resulting in a surface-to-volume scaling relationship S = 2\u03c0V^(2/3) with \u03b3 = 6.24 \u00b1 0.04 and power law exponent 0.671 \u00b1 0.006. This aspect ratio is independent of growth media, cell size, and growth rate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C7, C78 provide quantitative measurements from experimental data fitting (Si et al., 2017), while C23, C25, C26 demonstrate that aspect ratio is maintained across conditions. The data span multiple growth conditions and show consistent scaling, with Figure 1 and Figure 2 providing visual confirmation. The slight deviation from exact 2/3 scaling (0.671 vs 0.667) is explained by biological variability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C1",
+      "C8",
+      "C9",
+      "C10",
+      "C14",
+      "C16"
+    ],
+    "result": "Rod-shaped bacteria adapt their cell dimensions in response to environmental changes, with both length and width increasing with growth rate. Cell volume control follows an adder mechanism, and cells regulate surface-to-volume ratio in response to nutrient availability, with increased S/V at low nutrient concentrations promoting nutrient influx.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C9, C10 are well-supported by multiple cited studies. Claim C14 regarding adaptive feedback is supported by citations and mathematical modeling (Equation 1). Claim C16 demonstrates predictive power by comparing model predictions with experimental data in Figure 1\u2014figure supplement 1A-B. The mechanistic links are established through prior literature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C18",
+      "C20",
+      "C21"
+    ],
+    "result": "The S \u2248 2\u03c0V^(2/3) scaling relationship is conserved across diverse rod-shaped bacterial species and rod-shaped Archaea, while Spirochetes deviate from this relationship. Coccoid S. aureus follows S = \u03b3V^(2/3) scaling but with lower aspect ratio (\u03b7 = 1.38 \u00b1 0.18), suggesting aspect-ratio preservation emerges from a common mechanism across bacterial morphologies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18 and C20 are supported by data from 49 bacterial species shown in Figure 1E, with quantitative measurements from cited studies. Claim C21 is a reasonable inference from the observation that both rod-shaped and coccoid bacteria maintain constant aspect ratios despite different morphologies. The data compilation across diverse species provides strong comparative evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C24",
+      "C39",
+      "C65"
+    ],
+    "result": "At the single-cell level, slight deviations from 2/3 scaling arise from fluctuations in newborn cell lengths for a given width. Added length during the cell cycle correlates with cell width, making width an essential predictor of cell length in E. coli.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C24 is explained by analysis in Figure 2\u2014figure supplement 1A-B showing how length variability affects scaling. Claims C39 and C65 are directly supported by single-cell data in Figure 2\u2014figure supplement 1C-D demonstrating the correlation between added length and width. The statistical analysis of variability sources is appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C33",
+      "C34",
+      "C37"
+    ],
+    "result": "Cell division follows an adder mechanism triggered by threshold accumulation of FtsZ, the key division initiator protein that assembles into a Z-ring. FtsZ scales with cell width, and aspect ratio homeostasis is achieved through balanced rates of cell elongation and division protein production, with FtsZ concentration (4-10 \u03bcM) exceeding the critical concentration (1 \u03bcM) for filament formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28, C29, C33, C34 are well-supported by multiple cited studies (Si et al., 2019; Shi et al., 2017; Erickson et al., 2010). Claim C37 integrates the model with experimental observations of FtsZ overexpression/depletion phenotypes. The mechanistic model is consistent with established knowledge and provides a coherent framework linking division protein dynamics to aspect ratio control.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C45",
+      "C47"
+    ],
+    "result": "Following nutrient shifts, aspect ratio returns to its homeostatic value over multiple generations, with faster equilibration in media with higher growth rates. This is consistent with experimental observations that newborn aspect ratio reaches equilibrium faster in fast-growing media.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C45 is supported by model simulations shown in Figure 3C. Claim C47 is validated by comparison with experimental data from Taheri-Araghi et al. (2015) shown in Figure 3\u2014figure supplement 1F. The model predictions match experimental observations, providing support for the proposed mechanism. The timescale dependence on growth rate (\u221dk^-1) is mechanistically justified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C52",
+      "C55",
+      "C56",
+      "C57",
+      "C59"
+    ],
+    "result": "Perturbations to cell shape machinery and antibiotic treatments produce predictable morphological changes: MreB depletion increases width and decreases length while inducing FtsZ overproduction via Rcs stress response; cell-wall targeting antibiotics prevent septation by inhibiting penicillin binding proteins; DNA-targeting antibiotics induce filamentation through SOS-mediated FtsZ sequestration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52, C55, C56, C57, C59 are all supported by cited experimental studies (Zheng et al., 2016; Carball\u00e8s et al., 1999; Cho et al., 2014; Nonejuie et al., 2013; Chen et al., 2012). The model successfully predicts these morphological changes as shown in Figure 4B by adjusting k_P and \u03b2 parameters. The mechanistic explanations are consistent with established knowledge of these perturbations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C66",
+      "C67"
+    ],
+    "result": "B. subtilis differs from E. coli in that cell width remains approximately constant across different media while length increases. FtsZ recruitment in B. subtilis is additionally controlled by UgtP, which prevents Z-ring assembly in a nutrient-dependent manner.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Both claims are supported by cited studies (Sharpe et al., 1998; Weart et al., 2007). The authors appropriately contrast B. subtilis behavior with E. coli and provide a mechanistic interpretation within their model framework (reduction in k_P with increasing k). This demonstrates species-specific variations in the general mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Aspect ratio control may provide adaptive benefits: increasing S/V under low nutrients promotes nutrient influx, while under ribosome-targeting antibiotics, cells increase volume while preserving aspect ratio, reducing S/V to counter further antibiotic influx.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C71 is supported by cited experimental observations (Harris and Theriot, 2016; Si et al., 2017). However, claims C70 and C72 regarding adaptive benefits are speculative inferences from geometric relationships without direct experimental validation of the proposed functional advantages. While plausible, these remain hypotheses requiring further testing to establish causality between morphological changes and fitness benefits.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Swarming efficiency strongly depends on aspect ratio, with highest foraging speed observed for aspect ratios of 4-6, suggesting that maintenance of optimal aspect ratio may have evolutionary benefits for cell swarmers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73 and C74 are supported by cited studies (Ilkanaiv et al., 2017; Jeckel et al., 2019) that experimentally measured swarming efficiency as a function of aspect ratio. Claim C75 is a reasonable inference connecting the observed optimal aspect ratio range (4-6) with the measured E. coli aspect ratio (~4). While the evolutionary benefit is speculative, it is grounded in experimental observations of functional consequences.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C76"
+    ],
+    "result": "The mechanistic origin of aspect ratio control has been puzzling for almost half a century, representing a long-standing question in bacterial cell biology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This claim is supported by historical citations (Zaritsky, 1975; Zaritsky, 2015) spanning nearly 50 years, establishing the context and significance of the current work. This appropriately frames the study as addressing a long-standing problem in the field.",
+    "result_type": "MINOR"
+  }
+]

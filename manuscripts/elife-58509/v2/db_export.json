@@ -1,0 +1,1530 @@
+{
+  "submission": {
+    "id": "9dc76e32-66e7-40d9-a8fa-9dcf49f01900",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T18:41:49.815737Z",
+    "updated_at": "2025-12-02T18:41:49.815737Z"
+  },
+  "content": [
+    {
+      "id": "3735adb4-3412-4548-8ac3-55eb22dc080f",
+      "submission_id": "9dc76e32-66e7-40d9-a8fa-9dcf49f01900",
+      "content_type": "manuscript",
+      "content_text": "# Synaptic and intrinsic mechanisms underlying development of cortical direction selectivity\n\n## Authors\n\n- Arani Roy<sup>1</sup>\n- Jason J Osik<sup>1</sup>\n- Benyamin Meschede-Krasa<sup>1</sup>\n- Wesley T Alford<sup>1</sup>\n- Daniel P Leman<sup>1</sup>\n- Stephen D Van Hooser<sup>1</sup> ([ORCID: 0000-0002-1112-5832](https://orcid.org/0000-0002-1112-5832)) \u2020\n\n### Affiliations\n\n1. Department of Biology, Brandeis University Waltham United States\n2. Volen Center for Complex Systems, Brandeis University Waltham United States\n3. Sloan-Swartz Center for Theoretical Neurobiology Brandeis University Waltham United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nModifications of synaptic inputs and cell-intrinsic properties both contribute to neuronal plasticity and development. To better understand these mechanisms, we undertook an intracellular analysis of the development of direction selectivity in the ferret visual cortex, which occurs rapidly over a few days after eye opening. We found strong evidence of developmental changes in linear spatiotemporal receptive fields of simple cells, implying alterations in circuit inputs. Further, this receptive field plasticity was accompanied by increases in near-spike-threshold excitability and input-output gain that resulted in dramatically increased spiking responses in the experienced state. Increases in subthreshold membrane responses induced by the receptive field plasticity and the increased input-output spiking gain were both necessary to explain the elevated firing rates in experienced ferrets. These results demonstrate that cortical direction selectivity develops through a combination of plasticity in inputs and in cell-intrinsic properties.\n\n## Introduction\n\nThe physical world is represented in the primary sensory cortices through patterns of neuronal population activity evoked by sensory stimuli. Responses of individual neurons tuned to specific features of the sensory stimuli are essential building blocks of this population representation of the physical world. Feature-selective responses arise through a combination of precise patterns of neuronal connectivity and intrinsic cellular properties. A cortical neuron is an input-output device that receives thousands of cortical and sub-cortical synaptic inputs and in turn generates a spiking output, whose selectivity often differs dramatically from the selectivities of its sub-cortical inputs (Hubel and Wiesel, 1962; Priebe and Ferster, 2012). The cell-intrinsic properties gate this input-output transformation by controlling how the neuron summates inputs and then maps it on to a spiking output. While the patterns of synaptic inputs underlying some receptive field properties of cortical neurons have been uncovered in the mature cortex (Jagadeesh et al., 1993; Reid and Alonso, 1995), it remains unclear how the input patterns and the cell-intrinsic properties evolve during development (Zhang and Linden, 2003), and yet these features are a key component of understanding how cortical circuits compute in general.\n\nIn the mammalian primary visual cortex (V1), neuronal responses are particularly characterized by selectivity for two features of the visual stimuli: orientation (orientation selectivity) and direction of motion (direction selectivity) (Hubel and Wiesel, 1959). At the time of eye opening in carnivores and primates, while neurons already exhibit orientation selectivity, they respond about equally to motion in the two opposite directions orthogonal to the preferred axis of orientation. Selectivity to direction of motion develops rapidly in the days and weeks following the onset of visual experience (Hatta et al., 1998; Li et al., 2006; Clemens et al., 2012; Smith et al., 2015), and can be accelerated in the lab through exposure to moving stimuli (Li et al., 2008; Van Hooser et al., 2012). In cats and primates, it has been demonstrated that a set of inputs activating the cell at varying spatial positions and temporal latencies following a specific spatiotemporal order underlies direction selectivity in the visually mature state (DeAngelis et al., 1993b; Jagadeesh et al., 1993; McLean et al., 1994; Livingstone, 1998). But the mechanisms underlying the development of this precise pattern of spatiotemporal activation, and consequently of direction selectivity, are poorly understood. Additionally, the contributions of cell-intrinsic properties to the development of direction-selectivity also remain largely unexplored.\n\nTherefore, to clarify the contributions of synaptic and cell-intrinsic properties to the development of direction selectivity, we carried out in vivo intracellular recordings in V1 from two groups of ferrets at different stages of visual development: visually naive (post-natal day P30-34) and visually experienced (P40-60). Using reverse correlation of membrane potential (Vm) responses to sparse noise stimuli, we constructed the spatiotemporal receptive fields (STRF) of neurons in the two groups and compared them. We found significant differences in the spatiotemporal organization of receptive fields between the visually naive and experienced groups. Surprisingly, the enhancement in Vm responses brought about by these receptive field rearrangements did not successfully predict the developmental enhancement in spiking responses. We tested whether a concomitant developmental alteration in intrinsic excitability, which gates the input-output transformation of neurons, could underlie this discrepancy. Consistent with this idea, we found that V1 neurons in visually experienced animals had stronger gains in Vm-to-spike transformation, and that this gain enhancement was accompanied by a lowering of spike threshold. Changes in subthreshold responses and voltage-to-firing rate gain enhancement both had to be considered to explain the total increases in firing rates that are observed over this period (Clemens et al., 2012), signifying that a combination of synaptic and intrinsic plasticity mechanisms underlie development of direction selectivity.\n\n## Results\n\nAt the time of eye opening, around 30\u201333 days of postnatal age (P30-P33), neurons in ferret visual cortex exhibit robust selectivity for stimulus orientation but only very weak selectivity for stimulus direction (Li et al., 2006; Li et al., 2008). Selectivity for stimulus direction emerges over the weeks following eye opening through a process that requires visual experience (Li et al., 2006). In cortical simple cells in the visually experienced state, direction selectivity is thought to arise from spatiotemporally selective inputs activating the cell at varying spatial positions and temporal latencies (DeAngelis et al., 1993b; Jagadeesh et al., 1993; McLean et al., 1994; Livingstone, 1998). According to this model (Reichardt and Poggio, 1976; Reichardt, 1987), a direction-selective neuron is maximally activated when its inputs selective for specific spatial locations within the receptive field are activated by a moving stimulus in a specific temporal order \u2013 with the inputs with the longest latencies activated first and inputs with progressively shorter latencies sequentially activated thereafter. This spatiotemporally sequenced order of activation ensures that the subthreshold inputs activated by the preferred direction of motion arrive at the soma simultaneously and achieve maximal summation, leading to a strong response. In contrast, a stimulus moving in the null direction activates the shortest latencies first followed by progressively longer latencies, thereby leading to suboptimal summation of activity, and consequently lower responses in the postsynaptic neuron. A direction-selective simple cell with its inputs organized in this manner exhibits a stereotypical \u2018slant\u2019 in its spatiotemporal receptive field.\n\nIn order to examine the initial state of spatiotemporal receptive fields (Figure 1) and to understand how these fields are altered during the short critical period for the emergence of direction selectivity, we carried out in vivo intracellular recordings in the visual cortex of anesthetized ferrets using sharp microelectrodes. Intracellular recordings were used because naive visual cortical neurons exhibit lower firing rates than experienced animals (Clemens et al., 2012; Popovi\u0107 et al., 2018), and we wanted to be able to examine the receptive field properties of the subthreshold voltage in addition to spiking. Experimental animals were split in to two age groups: visually naive (\u2018naive\u2019: age P30-34, n\u00a0=\u00a010 animals, 23 cells) and visually experienced (\u2018experienced\u2019: age P40-60, n\u00a0=\u00a011 animals, 29 cells). Drifting sinusoidal grating stimuli were used to measure responses to stimulus orientation and direction. Cells were classified as simple or complex by comparing the fundamental (F1) and the DC components (F0) of the visual responses (Carandini and Ferster, 2000; Mechler and Ringach, 2002; Priebe et al., 2004). We first converted the Vm and spike responses of each recorded neuron to the frequency domain using Fast Fourier Transform (FFT) and then analyzed all response properties for the F0 and F1 components separately as well as combined (F0+F1). We calculated Vm and spike modulation ratios by dividing the amplitude of the F1 component by that of the F0 component of the respective responses. Cells with spike modulation ratio equal to or greater than 1.0 were classified as simple, while the rest were categorized as complex (Figure 2\u2014figure supplement 1). Neurons that did not fire sufficient spikes were classified as simple if their Vm modulation ratio was greater than 0.5. According to this classification, our dataset contained 10 simple and 13 complex cells in the naive group, and 16 simple and 13 complex cells in the experienced group. After a cell\u2019s orientation and direction preferences were identified by the responses to grating stimuli, sparse noise bar stimuli were shown to examine the spatiotemporal receptive fields only for the simple cells, because such analysis of linear summation properties apply only to simple cells.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/58509/elife-58509-fig1-v2.jpg)\n\n**Figure 1.:** (A) In Possible Juvenile State I, receptive fields might be initially broad and weak in space and time and later sharpened to exhibit a slant. In this state, the lack of direction selectivity comes from the symmetry in the broad initial receptive field. In Possible Juvenile State II, there is a compact initial input that is constrained to grow only at certain positions and latencies, either by addition of new synaptic inputs or by changes in the properties of existing inputs. In this state, the lack of direction selectivity comes from the symmetry of compact strong input, and the weak inputs do not contribute at the naive stage. (B) Experienced state, with a characteristic directional slant in space time, indicating that the cell would respond to a leftward moving stimulus at an appropriate velocity.\n\n### Emergence of enhanced direction selectivity following visual experience\n\nWe constructed orientation and direction tuning curves from recorded Vm and spiking activities in response to sinusoidal gratings. Figure 2AB shows an example simple cell each from a naive and an experienced ferret. The neuron from the naive ferret (Figure 2AB, left panel) responded strongly to horizontal gratings, irrespective of whether they were moving upward or downward, while showing only weak subthreshold responses to vertical gratings. In contrast, the neuron from the experienced ferret (Figure 2AB, right panel) strongly responded only to vertical gratings drifting to the right while responding minimally to all other stimuli. Direction selectivity index values for spiking activity and Vm were much larger for the experienced example cell than for the naive cell. On average, the experienced cells exhibited stronger direction selectivity compared to the naive cells, both at the subthreshold Vm and the suprathreshold spiking levels (Figure 2C, Direction selectivity index or DSI. Top, Vm: naive: mean\u00a0=\u00a00.16\u00a0\u00b1\u00a00.02, n\u00a0=\u00a023; experienced: mean\u00a0=\u00a00.35\u00a0\u00b1\u00a00.04, n\u00a0=\u00a029; p<0.001, WRS test; bottom, spike: naive: mean\u00a0=\u00a00.3\u00a0\u00b1\u00a00.05, n\u00a0=\u00a014 (9 cells did not spike); experienced: mean\u00a0=\u00a00.66\u00a0\u00b1\u00a00.05, n\u00a0=\u00a029; p<0.001, WRS test).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/58509/elife-58509-fig2-v2.jpg)\n\n**Figure 2.:** (A) Vm responses of a simple cell from a visually naive and an experienced ferret each. For each cell, single-trial responses to presentation of sinusoidal gratings moving in both directions orthogonal to the preferred orientation (top) and the non-preferred orientation (bottom) are shown. The stimulus orientations and motion directions are indicated above each trace with a solid bar and arrow, respectively, and the angles representing the specific directions of motion are given in parentheses. Solid bar below each trace indicates the duration of the stimulus display and dotted lines indicate the Vm level of \u221275 mV. For both cells, the gratings drifted at a temporal frequency of 4 Hz and the Vm oscillated at the same frequency with a strong response to each grating cycle. (B) Direction tuning curves of the cells in A, plotted separately for Vm (top) and spiking (bottom) responses, and for the F0 or DC (left) and the F1 or fundamental (right) components of the responses. Direction selectivity index (DSI) value calculated from each tuning curve is given above each curve. Both F0 and F1 DSI values are higher in the cell from the experienced animal. (C) Mean total Vm and spike DSI values, calculated from F0+F1 responses, compared between naive (N, green) and experienced (E, magenta) animal groups. (D) Vm and spike total DSI (F0+F1) values for each cell plotted against each other. Dashed line denotes the line of unity. (E) Same as C, but the DSI values are calculated separately for the F0 and the F1 components of response. (F) Mean total (F0+F1) Vm and spiking responses to the null and preferred direction of motion compared between naive and experienced groups. For all panels: error bars denote SEM; circles denote values for individual cells; asterisks denote significant differences at p<0.05 level, Wilcoxon rank sum test.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/58509/elife-58509-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Cells with spike modulation ratio\u00a0>1 from this figure were classified as simple cells.\u00a0In the naive group, many neurons did not fire sufficient spikes to calculate a spike modulation ratio. Those neurons were plotted in this figure with a spike modulation ratio set to 0. Out of those neurons, those with Vm modulation ratio\u00a0>0.5 were classified as simple cells.\n\nIn a majority of cells, the DSI for spiking responses were greater than the DSI for Vm responses. A pairwise comparison of Vm and spike DSI within each neuron revealed that the spike DSI was significantly higher than Vm DSI in both the naive and the experienced groups (Figure 2D; naive, p=0.001, n\u00a0=\u00a014; experienced, p<0.001, n\u00a0=\u00a029; signed rank test). Thus, in both groups, the outputs of V1 cells were more sharply tuned for direction than their summed inputs. Also, to test if the developmental enhancement of DSI in V1 cells were restricted to the mean (F0) or the modulated (F1) component or affected both, we calculated DSI separately for the F0 and the F1 response components. F0 and F1 DSI for both sub- and suprathreshold responses in the experienced group were significantly higher than the naive group (Figure 2E; F0: Vm: naive: mean\u00a0=\u00a00.15 +/-\u00a00.02, n\u00a0=\u00a023; experienced: mean\u00a0=\u00a00.27 +/-\u00a00.04, n\u00a0=\u00a029; p=0.02, WRS test; spike: naive: mean\u00a0=\u00a00.33 +/-\u00a00.05, n\u00a0=\u00a014; experienced: mean\u00a0=\u00a00.62 +/-\u00a00.05, n\u00a0=\u00a029; p=0.003, WRS test; F1: Vm: naive: mean\u00a0=\u00a00.32 +/-\u00a00.04, n\u00a0=\u00a014; experienced: mean\u00a0=\u00a00.57 +/-\u00a00.04, n\u00a0=\u00a029; p<0.001, WRS test; spike: naive: mean\u00a0=\u00a00.31 +/-\u00a00.06, n\u00a0=\u00a014; experienced: mean\u00a0=\u00a00.7 +/-\u00a00.04, n\u00a0=\u00a029; p<0.001, WRS test), demonstrating that both the mean and the modulated component of visual responses became more direction-selective during development.\n\nAn increase in direction selectivity index values could be realized either by an increase in responses to the preferred direction, a decrease in responses to the null direction, or both. To distinguish between these possibilities, we analyzed the Vm and spiking response amplitudes to the preferred and the null direction stimuli for each cell. The total (F0 plus F1) responses to the preferred and null stimuli were compared between the naive and experienced groups, separately for Vm and spiking responses (Figure 2F). At the level of Vm (Figure 2F, top), the null responses (left) did not show any significant change over development, whereas the preferred responses (right) showed a modest but significant increase from the naive to the experienced group (Null, naive: mean\u00a0=\u00a011\u00a0\u00b1\u00a01.2, n\u00a0=\u00a023; experienced: mean\u00a0=\u00a011.2\u00a0\u00b1\u00a00.9, n\u00a0=\u00a029, p=0.8, WRS test; Preferred, naive: mean\u00a0=\u00a013.1\u00a0\u00b1\u00a01.3, n\u00a0=\u00a023; experienced: mean\u00a0=\u00a017.3\u00a0\u00b1\u00a00.9, n\u00a0=\u00a029, p=0.008, WRS test). At the level of spiking (Figure 2F, bottom), both the null and the preferred responses underwent developmental enhancement (null, naive: mean\u00a0=\u00a04.8\u00a0\u00b1\u00a01.2, n\u00a0=\u00a023; experienced: mean\u00a0=\u00a09\u00a0\u00b1\u00a01.5, n\u00a0=\u00a029, p=0.01, WRS test; preferred, naive: mean\u00a0=\u00a06.6\u00a0\u00b1\u00a01.6, n\u00a0=\u00a023; experienced: mean\u00a0=\u00a024.7\u00a0\u00b1\u00a02.6, n\u00a0=\u00a029, p<0.001, WRS test). Therefore, the increase in direction selectivity following visual experience was driven primarily by a robust increase in responses to the preferred direction of motion and not by a decrease in response to the null direction of motion. Notably, while this increase in response to the preferred direction was modest (32%) at the Vm level, it was dramatic for spiking activity (274%).\n\n### Reorganization of simple cell spatiotemporal receptive fields following visual experience\n\nThe increase in Vm responses to the preferred direction raises the question as to what changes in the spatiotemporal receptive field configurations might underlie these increases. To compare spatiotemporal receptive field structures of the Vm responses between simple cells from the naive and experienced groups, we performed reverse correlation of the response of the Vm to sparse, one-dimensional noise visual stimulation (Reid et al., 1987; Reid et al., 1991; Reid et al., 1997; Ringach et al., 1997; Priebe and Ferster, 2005; Rust et al., 2005; van Kleef et al., 2010). The noise stimulus consisted of black, white and gray bars, angled at the cell\u2019s preferred orientation, that changed pattern every 100 ms (Figure 3A). Positive cross-correlation values were obtained if a white bar (contrast 1) led to increased Vm or a black bar (contrast \u22121) led to decreased Vm (ON subunit), and negative cross-correlation values were obtained if a white bar led to decreased Vm or a black bar led to increased Vm (OFF subunit). For every spatial location, the cross-correlation values were plotted at varying lag times, thereby allowing assessment of the latencies at which the high or low cross-correlation values were obtained. Because visually driven spiking activity was weak in naive ferrets, we focused our analysis primarily on the Vm responses, for which a reliable spatiotemporal receptive field could be computed for every simple cell tested.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/58509/elife-58509-fig3-v2.jpg)\n\n**Figure 3.:** (A) Schematic of sparse noise stimulus, rotated to match each cell\u2019s preferred orientation. Spikes were removed and the membrane potential was correlated with the stimulus at each position. (B) Vm spatiotemporal receptive fields of four simple cells each from naive animals. X-axis represents spatial location, y-axis represents latency from onset of visual stimuli, and the cross-correlation coefficient between the stimulus contrast and Vm values are represented by the color. Black lines outline the ellipses fitted to the ON (continuous) and OFF (dashed) subunits. Raw correlations are shown, which are blurred by the time step of the stimulus (100 ms), so some ellipses overlap zero. (C) Same, for four cells from experienced animals. Receptive fields in experienced animals appeared more elongated in space time, and more slanted, consistent with the increased direction selectivity that was observed.\n\nFigure 3B, C shows Vm spatiotemporal receptive fields of four cells recorded from a naive ferret and four cells recorded from an experienced ferret. Consistent with previous findings (Reid et al., 1987; Reid et al., 1991; DeAngelis et al., 1993b; Priebe and Ferster, 2005), the spatiotemporal receptive field subunits from direction-selective neurons in experienced animals were slanted in space-time. For cell #60, gratings moving from right to left on the monitor would activate the inputs with longer latencies first, progressively moving to shorter latencies as the grating moves across the visual field, thereby leading to maximal response. Stimuli moving from left to right, on the other hand, will activate the shorter latency inputs followed by the longer latency inputs, thereby leading to sub-optimal responses. The spatiotemporal receptive field of Cell #86 was also slanted, albeit in the opposite direction.\n\nThe spatiotemporal receptive fields from the neurons in naive animals were not completely unstructured, and exhibited several properties of neurons from experienced animals such as alternating ON and OFF subunits and a small slant in space-time. However, the subunits from the experienced cells were longer and narrower in profile, and relatively more slanted in space-time.\n\nTo rigorously quantify the degree to which subunit structure differed between naive and experienced animals, we fitted ellipses to the individual ON and OFF subunits (Leong et al., 2016) and compared several shape parameters of these ellipses (see Materials and methods). We chose a set of nine parameters that adequately captured the relevant spatial and temporal characteristics of the receptive fields (Figure 4A) \u2013 \u2018eccentricity\u2019: eccentricity of the fitted ellipse; \u2018major axis\u2019: the length of the major axis of the fitted ellipse; \u2018minor axis\u2019: the length of the minor axis of the fitted ellipse; \u2018orientation\u2019: the angle the ellipse subtended on the space (x-) axis; \u2018area\u2019: the full area covered by the ellipse, in pixels; \u2018spatial extent\u2019: projection of the ellipse on the space axis; \u2018temporal extent\u2019: projection of the ellipse on the time/latency axis; \u2018minimum latency\u2019: the lower bound of the fitted ellipse on the time axis signifying the shortest latency response; and \u2018maximum latency\u2019: the upper bound of the fitted ellipse on the time axis signifying the longest latency response. Wilcoxon rank sum test comparisons revealed that six out of these nine parameters were significantly different between the naive and the experienced groups: eccentricity, major axis, minor axis, orientation, temporal extent and minimum latency. The shape parameter that is most relevant to direction selectivity is the eccentricity of the ellipses describing the subunits. If subunits are broad along the minor axis of the ellipse, they will enable some response summation from stimuli moving in either direction, thus leading to weaker direction selectivity. Also, if subunits are short along the major axis of the ellipse, there might not exist sufficient latency differences to facilitate differential input summation. Therefore, to optimally support high direction selectivity, receptive field subunits would have to be narrow on the minor axis and elongated on the major axis, which would result in high eccentricity.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/58509/elife-58509-fig4-v2.jpg)\n\n**Figure 4.:** (A) Quantification of the nine parameters defining the characteristics of the spatiotemporal receptive field subunits. In each panel, the parameter being quantified is described by a schematic on the left, and on the right is a bar plot showing the mean\u00a0\u00b1\u00a0SEM of the parameter values in the naive (N, green, 19 subunits from 8 cells) and experienced (E, purple, 26 subunits from 12 cells) animals. Black circles denote individual subunit values. Red stars denote statistical significance at p<0.05 level via WRS test. (B) Relationship between cell-average spatiotemporal receptive field structure parameters and Vm DSI for all simple cells. The R2 and p values for each linear correlation are shown above each plot. Raw correlations were used in the calculations, which are blurred by the time step of the stimulus (100 ms), so some ellipses begin earlier than latency 0. If the outlier (orientation\u00a0<45 \u00b0) in orientation is removed, then the r2 is 0.26 and p\u22640.03. (C) All subunits (ON\u00a0=\u00a0solid, OFF\u00a0=\u00a0dashed) for naive cells. Lines are at 0 time lag. Scale bar shows 250 msec by 20\u00b0 of visual angle. Note that correlations are raw, so they are blurred 100 ms by the stimulus timesteps (some subunits begin before time 0). (D) Same, for experienced cells. Note the earlier onset responses and the greater slants. (E) Cumulative histogram of response latencies of naive and experienced simple cells to grating stimuli. Latency is defined as the first time when the voltage signal reaches six standard deviations.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/58509/elife-58509-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) STRFs were Fourier transformed along both space and time axes to convert both dimensions to the frequency domain. The amplitudes were scaled between 0\u20131 and plotted as a color map image, in which the intensity of every pixel represented the Fourier amplitude of response at a particular spatial and temporal frequency combination. The darkest pixel corresponds to the neurons\u2019 preferred spatial and temporal frequencies. Left: frequency-domain STRF of cell # 121 recorded in a visually naive ferret; Right: frequency-domain STRF of cell # 60 recorded in a visually experienced ferret. In these images, there are four quadrants organized around the origin, which represents 0 spatial and temporal frequency. The two diagonally opposite quadrants contain the same data, and each of the two such diagonal pairs correspond to the two opposite directions of motion each. For example, if the quadrant with positive spatial and temporal frequencies represents forward motion, then the quadrant with positive spatial and negative temporal frequencies represents the backward motion. In a cell with low direction selectivity (left), the intensity of pixels in these two quadrants are similar, whereas in a highly direction selective cell (right), the pixel intensities are strikingly higher in one of the two quadrants. The imbalance of intensities along the two diagonals can be used to predict direction selectivity of the linear component for a simple cell. The summed amplitudes from each of the two quadrants represent predicted amplitudes of Vm responses to the two opposite motions, and we used those predicted responses to calculate a predicted Vm DSI for the linear component of the cell\u2019s response. (B) The predicted Vm DSI of the linear component (F1) and the actual Vm F1 DSI measured in each cell were correlated to each other, and this was true for both the naive and the experienced groups. The overall R2 value of 0.32 implies that the linear spatiotemporal summation properties of the simple cells can account for 32% of the variance in Vm F1 DSI.\n\nConsistent with this idea, we found that the eccentricity measured from the experienced subunits were significantly higher (p<0.001), and was caused by both a longer major axis (p<0.03) and a shorter minor axis (p<0.03, Figure 4A). Also, the subunits from the experienced animals subtended a smaller angle on the space axis (orientation: p<0.005), which would indicate that the cells from experienced animals are tuned to higher motion velocities, consistent with data from actual V1 recordings in cats (DeAngelis et al., 1993a). The overall area (p<0.6) and the spatial projection (p<0.35) of the subunits did not significantly differ. However, the projection on the latency axis was significantly longer in the experienced group (p<0.04), suggesting that a longer range of response latencies became available in the experienced animals. This extension of the latency range was achieved solely by stretching the receptive field subunits towards the lower latency side: while the maximum latencies of the subunits were not significantly different (p<0.3), the minimum latencies were significantly lower in the experienced group (p<0.05). Consistent with this data, we also found that the Vm response latency distributions were significantly shifted towards shorter latencies in the experienced animals (Figure 4E), and these results mirror reduced latencies observed in experienced vs. naive neurons in ferret lateral geniculate nucleus (Tavazoie and Reid, 2000).\n\nIf the changes in Vm spatiotemporal receptive field structure resulted in improved discrimination between the preferred and null directions of motion, then the receptive field structure parameters should correlate with Vm direction index measured in each cell. Therefore, we computed linear correlations between cell-averaged shape parameters and the cells\u2019 Vm direction index values (Figure 4B). We found that the Vm direction index of the cells increased with increasing \u2018narrowness\u2019 of the subunits (longer \u2018major axis\u2019, shorter \u2018minor axis\u2019 and higher \u2018eccentricity\u2019), \u2018orientation\u2019, if the one low outlier is removed, and decreasing minimum latencies accessible (lower \u2018min latency\u2019). Other parameters did not show significant correlation. These data further corroborate the idea that narrower spatiotemporal input profiles and availability of shorter\u00a0latency inputs exert a strong impact on directional summation of inputs in simple cells of experienced animals, thereby leading to higher direction selectivity. Additionally, the Vm DSI predicted from the STRFs, by converting the STRFs into the frequency domain via 2-dimensional FFT, showed a linear correlation with the actually measured Vm DSI of the F1 components of the simple cells (Figure 4\u2014figure supplement 1), further demonstrating that the STRF structures influenced the direction selectivity index values of the cells. The subunit shapes for all cells are shown in Figure 4CD.\n\nIn sum, following visual experience, the Vm receptive fields exhibited marked reorganization involving increased eccentricity of the space-time profile and a shift of response latencies towards lower values, leading to improved discrimination of directional inputs at subthreshold level and thus a more direction-selective Vm response.\n\n### Plasticity of cellular intrinsic properties following visual experience\n\nWe saw a sharp rise in visually\u00a0evoked spiking responses in the experienced animals. The fraction of cells that fired action potentials in response to drifting grating stimuli was significantly higher in the experienced group (simple: naive, 7/10; experienced, 16/16; p<0.05, complex: naive, 7/13; experienced, 13/13; p<0.05, Fisher Exact test). Thus, every recorded cell in the experienced group fired action potentials, but 9/23 cells in the naive group did not fire any action potentials at all. However, enhancement of Vm responses mediated by reorganization of STRF structure alone could not account for this enhanced spiking. As we saw in Figure 2F, the responses to the preferred direction underwent modest developmental increase (32%) at the Vm level, but the increase was dramatic for spiking activity (274%). Therefore, we argued that changes in cell-intrinsic properties also must have played a role in amplifying the effects at the Vm level. Visual inspection of spike waveforms revealed a couple of striking differences between the naive and the experienced groups: in the naive group, the spikes were significantly broader and the take-off point of the action potential (spike threshold) was higher (Figure 5ABC). These observations lead us to examine cell-intrinsic properties more carefully.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/58509/elife-58509-fig5-v2.jpg)\n\n**Figure 5.:** (A) Detection of spike kink voltage from single action potentials in vivo (Azouz and Gray, 1999). (B) Action potentials and spike phase diagram from an example naive (top) and experienced cell (bottom). Individual spike traces shown in gray. In spike phase diagram, membrane potential is on the horizontal axis (scale bar is 20 mV) and dV/dt is on the vertical axis (scale bar is 100 mV/msec). (C) Average and standard error of the mean of voltage waveforms for naive (N\u00a0=\u00a014) and experienced (N\u00a0=\u00a029) cells, showing much wider action potentials in naive animals. Shaded area is standard error of the mean across cells. Inset: phase diagram of mean spike waveforms; membrane potential is on the horizontal axis (scale bar is 20 mV) and dV/dt is on the vertical axis (scale bar is 100 mV/msec). (D) Maximum dV/dt for naive and experienced cells in vivo (WRS test, p<2.0e-04); (E) spike kink voltages in vivo (WRS test, p=0.2); (F) action potential full width at half height (WRS test, p<4.3e-04) in vivo. (G) Maximum dV/dt for synaptically\u00a0isolated cells in brain slices for naive and experienced animals. Ex vivo measurements showed similar maximum dV/dt values as in vivo measurements (N\u00a0=\u00a029 naive, N\u00a0=\u00a017 experienced, WRS, p<2.4e-05), showing similar values as in vivo measurements. (H) Spike kink voltage exhibited a significant decrease when measured in isolated cells from visually experienced animals (WRS p<1.6e-04). (I) Spike kink reductions and increased maximum dV/dt co-occurred with developmentally\u00a0typical decreases in membrane resistance (WRS, p<1.2e-04), suggesting that experienced cells would take longer to charge from rest even though they spike at lower voltages. Example firing rate vs. current curves for a cell from a naive (J) animal and an experienced (K) animal are shown, and average firing rate vs. current curves are shown (L). The increased excitability with age and the decreased input resistance produced firing rate vs. current relationships that were not different between the two cases: (Kruskal-Wallis test of slopes: p<0.068). For all panels, p-values as listed are before Bonferroni correction; significant * indicates significant difference after Bonferroni correction (which did not change results for these tests).\n\nTo characterize changes in cell-intrinsic properties, we examined several parameters of the action potential. These parameters included the maximum rate of change in Vm preceding a spike (max dV/dt), which has been shown to correlate with the density of sodium channels (Colbert and Pan, 2002; Kole et al., 2008; Hu et al., 2009; Grubb and Burrone, 2010; Kuba et al., 2010); a quantity called the spike kink (one way to define threshold), which is based on the time when the voltage obtains a sufficiently large rate-of-change relative to its maximum (Azouz and Gray, 1999; and the full width at half maximum of the spike waveform.\n\nIn vivo, the maximum dV/dt exhibited a strong increase between naive and experienced animals (Figure 5C, naive mean: 172.2\u00a0\u00b1\u00a064.6 mV/ms, experienced mean: 253\u00a0\u00b1\u00a078.3 mV/ms, WRS test p<2.0e-04), a small empirical drop in spike kink voltage (Figure 5D, naive mean: 21\u00a0\u00b1\u00a00.4 mV, experienced mean: 19.1\u00a0\u00b1\u00a04.7 mV, WRS test p=0.21, not statistically significant), and a very substantial decrease in action potential width (Figure 5E, naive mean: 1.6\u00a0\u00b1\u00a00.7 ms, experienced mean: 1.0\u00a0\u00b1\u00a00.4 msec, WRS test p<4.3e-04).\n\nThese in vivo measurements of action potential properties are altered by the ongoing activity of the cortex, so we also made these measurements in synaptic transmission-blocked visual cortical slices prepared from naive and experienced ferrets. Maximum dV/dt measurements in slice (Figure 5F) strongly resembled those measured in vivo (naive mean: 162.1\u00a0\u00b1\u00a051.1 mV/ms, experienced mean: 264.4\u00a0\u00b1\u00a061.9 mV/ms, WRS n vs. e, p<2.4e-05). The spike kink voltage exhibited a small, significant decrease with experience (naive mean: \u221225\u00a0\u00b1\u00a03.5 mV, experienced mean: \u221230.2\u00a0\u00b1\u00a03.7 mV), consistent with the idea that the experienced cells were more excitable near threshold. As expected for developing animals, input resistance exhibited a drop with developmental age (naive mean: 222.9\u00a0\u00b1\u00a057.9 M\u03a9, experienced mean: 144.8\u00a0\u00b1\u00a039.3 M\u03a9), meaning that it took more time to charge older cells from rest than naive cells. The firing rate vs. input current curves (F-I curves) were not different across the two groups (Figure 5IJK; f-I curve Kruskal-Wallis test of linear slopes: p<0.068).\n\n### Changes in the voltage-to-firing rate transform contribute to development of visual responses\n\nAlthough we found evidence for changes in excitability with development, the preceding analyses could not tell us quantitatively how these changes might impact sensory responses. To address this, we examined the voltage-to-firing rate transformation following methods of Priebe and Ferster (Priebe et al., 2004; Priebe and Ferster, 2005; Priebe and Ferster, 2006). In brief, voltage waveforms were median-filtered to remove spikes (Figure 6AB), and both spike trains and spike-trimmed voltage waveforms were binned into 30 ms intervals (Figure 6C) to generate pairs of Vm and firing rate observations. Voltage-to-firing rate relationships, with sliding 1 mV empirical mean curves and power law fits to the data, are shown for four examples cells in Figure 6DE. Empirical mean voltage-to-firing rate curves for all naive and experienced cells are plotted in Figure 6F, and individual voltage-to-firing rate curves for all cells are shown in Figure 6\u2014figure supplement 1. Generally, most naive cells exhibited smaller firing rates for a given voltage than the experienced cells, which reflects the increased excitability of the mature neurons. On average, experienced cells exhibited significantly higher firing rates than naive cells over a wide range of voltages (Figure 6G).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/58509/elife-58509-fig6-v2.jpg)\n\n**Figure 6.:** (A) To calculate the voltage-to-firing rate transform, we (B) extracted spike times and used median filtering to remove spike waveforms from the membrane potential, and (C) averaged firing rate and spike-filtered membrane potential into 30 ms bins (Priebe et al., 2004; Priebe and Ferster, 2005; Priebe and Ferster, 2006). (D) Membrane potential and firing rate observations from two cells from naive and (E) two cells from experienced animals. Empirical means and standard error of the mean in sliding 1 mV windows (black) and a power law fit (Priebe et al., 2004) (naive are green, experienced are magenta) are shown for each cell. Empirical means are calculated up until first bin that does not contain 15 Vm, firing rate ordered pairs. (F) Empirical mean voltage-to-firing rate relationships for all cells (N\u00a0=\u00a016 naive, N\u00a0=\u00a029 experienced). (G) Mean and standard error of the mean empirical voltage-to-firing rate transforms for naive and experienced animals, averaging over cells; * indicates locations where a t-test shows a p-value of less than 0.05. Voltage values that had data for at least two cells are shown. Experienced voltage-to-firing rate transforms exhibited increased firing rates at a given voltage over a large membrane voltage range. Solid lines are power law fits, weighed by number of data points at each voltage.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/58509/elife-58509-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** This figure includes all cells, including cells that exhibited no 1 mV bin with at least 15 spikes (inclusion criteria for the group analysis).\n\nTo calculate the average impact of changes in selectivity and firing rates due to membrane voltage and the voltage-to-firing rate transform across naive and experienced cortical neurons, we modeled the results phenomenologically by passing the actual voltage waveforms that were recorded for each stimulus through each cell\u2019s power law fit function to generate firing rate responses on a bin-by-bin basis. This phenomenological model did an excellent job of reproducing the actual firing rates recorded for each stimulus and each cell for both naive and experienced cells (Figure 7AB). To explore the impact of changes in membrane voltage and voltage-to-firing rate transforms separately on the direction index values (Figure 2, Figure 7C) and firing rates (Figure 7E) we observed, we created 10,000 bootstrap simulations (Press et al., 1993) of experiments with 20 cells that used the waveforms and voltage-to-firing rate transform for different cell groups. In each simulation, a cell was chosen at random (with replacement) to provide the response Vm waveforms, and another cell was chosen at random (with replacement) to provide the voltage-to-firing rate transform. This rough phenomenological model assumes that voltage responses and gains can be selected independently; in the actual data, these quantities are not completely independent and the random mixture model slightly overestimates actual firing rates from the population. When membrane voltages and voltage-to-firing rate transforms were both selected from naive cells, the simulations yielded relatively low direction selectivity index values (Figure 7D) and low firing rate responses (Figure 7F), similar to the actual data (Figure 2EF and Figure 7CE). Similarly, when these quantities were both selected from experienced cells, the simulations exhibited high direction selectivity and higher firing rates as in the actual data (Figure 2EF and Figure 7CE). Applying the experienced voltage waveforms to naive voltage-to-firing rate transforms resulted in a big increase in direction selectivity, even larger than those measured in mature animals (Figure 7CD), but the simulated firing rates were below those measured in the actual experienced animals (Figure 7EF). Applying the naive voltage waveforms to experienced voltage-to-firing rate transforms did not produce substantial increases in direction selectivity compared to the naive case, although firing rates were elevated. Therefore, changes in the underlying selectivity of the voltage waveforms from naive to experienced was sufficient to confer increased direction selectivity values across these conditions, but the increased gain of the experienced voltage-to-firing rate transforms were needed to also confer the higher firing rates observed in experienced animals (Figure 7CDEF).\n\n![Figure 7.](https://cdn.elifesciences.org/articles/58509/elife-58509-fig7-v2.jpg)\n\n**Figure 7.:** (A) Actual mean spiking response rates for each stimulus plotted against the mean spiking response that is obtained by applying the voltage-to-firing rate transform to each stimulus\u2019s membrane potential record for all naive cells (N\u00a0=\u00a016), showing that the phenomenological model captures the voltage-to-membrane transfer well. (B) Same, for experienced cells (N\u00a0=\u00a029). Model captures the actual spiking responses well. (C) Actual direction index values derived from the mean responses (F0) of naive and experienced cells. (D) Simulations of what we would expect if naive or experienced waveforms were paired with naive or experienced voltage-to-firing rate transforms. Plots show vertical histograms (with 5\u201395 percentile error bars) of mean direction selectivity index values for 10,000 simulations of 20 cells for several cases: 1) randomly selected naive voltage waveforms applied to randomly selected naive voltage-to-firing rate transforms; 2) randomly selected experienced voltage waveforms applied to randomly selected naive voltage-to-firing rate transforms; 3) randomly selected naive voltage waveforms applied to randomly selected experienced voltage-to-firing rate transforms, and 4) randomly selected experienced voltage waveforms applied to randomly selected experienced voltage-to-firing rate transforms. Scale bar on top of histogram shows 100 simulations. Axis labels identify the model by the waveforms used (top symbol) and voltage-to-firing rate transform used (bottom symbol). Actual data values are shown as dashed lines. To achieve increases in direction selectivity, it was only necessary for the model to adopt the voltage response waveforms of the experienced animals: the increased gain of the experienced animals was not necessary. (E+F) Same as C,D, but response to preferred direction is shown. Scale bar shows 50 simulations. To achieve increases in firing rates observed in experienced animals, experienced voltage-to-firing rate transforms were necessary. In D,F, models can be compared to whether they match the individual cell data by seeing if the individual cell data mean across cells falls within the 5\u201395%-tile range (the distribution of means is sampled empirically through simulation). Overall, to achieve both increases in direction selectivity and firing rate that are observed in vivo, changes in voltage responses and voltage-to-firing rate transform were necessary.\n\n## Discussion\n\nWe studied the evolution of spatiotemporal receptive fields, excitability, and voltage-to-firing rate transformations over a short period of rapid visual development of direction selectivity in ferret visual cortex. Shape analysis of linear spatiotemporal receptive fields of simple cells showed that the elliptical subunits in experienced animals exhibited more eccentric profiles and contained energy at shorter latencies not seen in naive animals. This reorganization led to a significant increase in direction selectivity at the level of membrane voltage. Neurons in experienced animals exhibited hallmarks of increased cell-intrinsic excitability, such as a lower spike threshold. When analyzed with system-response methods, we found that these changes in excitability contributed to a substantial increase in the voltage-to-firing rate transform with experience. The full extent of increases in spiking activity could only be explained by considering both the enhancement in Vm responses and the enhancement of input-output gain.\n\n### Extension and refinement of spatiotemporal receptive field structure\n\nIn the developing visual system, molecular cues and spontaneous activity (Katz and Shatz, 1996) shape the formation of initial circuitry and the emergence of initial cortical receptive field properties, including retinotopic organization (Cang et al., 2008) and orientation selectivity (Chapman and Stryker, 1993; Crair et al., 1998; Li et al., 2006; Smith et al., 2018) (although not its alignment across the two eyes, which requires experience Wang et al., 2010; Gu and Cang, 2016; Whitney et al., 2019). In cortex of ferrets (Li et al., 2006) and primates (Hatta et al., 1998) (but not mice:\u00a0Rochefort et al., 2011), selectivity for direction of motion is not present at eye opening \u2013 neurons respond about equally to stimulation in two opposite directions \u2013 but develops over a period of about 2 weeks in ferrets and about 4 weeks in macaques.\n\nThe question of how a neural system can be responsive to a wide stimulus set and then become more restricted with experience reminds one of the \u2018overproduction and pruning\u2019 hypothesis (Brown et al., 1976; Huttenlocher, 1979; Purves and Lichtman, 1980; Petanjek et al., 2011), also called the \u2018stabilization\u2019 hypothesis (Changeux and Danchin, 1976). One might imagine that the connections that support multiple responses are present initially, and then, with activity-dependent development, \u2018inappropriate\u2019 connections are pruned away and reinforced connections are strengthened (Meliza and Dan, 2006). Alternatively, an early compact receptive field could become extended with visual experience, through addition of new inputs. Here, we found evidence for a reorganization process that combines some elements of both receptive field constriction and expansion. On the one hand, the mature receptive fields became elongated along the temporal axis, particularly by exhibiting responses with shorter response latencies that did not exist in the naive state. However, the mature receptive fields also became significantly narrow in space-time, providing evidence for a narrowing process. This process is reminiscent of the sharpening (narrowing) of spatial receptive fields over the first weeks and months after the onset of experience (DeAngelis et al., 1993a; Tavazoie and Reid, 2000; Kiorpes, 2015; Kiorpes, 2016).\n\n### Increased intrinsic excitability\n\nAs neurons mature, they must regulate their ion channels and synaptic connections in order to bring their spiking response rates into an appropriate physiological range (Turrigiano and Nelson, 2004). At eye opening, neurons in vivo exhibit weak spiking activity (Clemens et al., 2012) (this study) and both rats (Kasper et al., 1994) and ferrets (this study) exhibit wide action potentials. Further, as neurons are maturing during this stage just after eye opening, their input resistance also rapidly decreases (Kasper et al., 1994; Desai et al., 2002; Wang et al., 2012), which means the same input current will produce a smaller resulting voltage. Previous studies in rats have shown that layer 4 neurons add synapses during this time (Desai et al., 2002) and that spike threshold decreases (Kasper et al., 1994), presumably to bring the visual response rates up to mature values and to overcome the decreasing input resistance. In other feed-forward systems, the weight of feed-forward connections increases substantially:\u00a0~50 fold over the first week of vision at the retinogeniculate synapse (Chen and Regehr, 2000) and 2\u20134 fold from P4 to P15 in the barrel cortex (Li et al., 2013), presumably to allow mature selectivity and firing rates. Because subthreshold voltage responses increase over the first week of vision and because input resistance is going down, feed-forward synaptic contributions to visual cortex are also likely to be increasing, although we are not aware of direct measurements that would confirm this hypothesis. Increases in sodium channel density at the axon initial segment may underlie the enhancement in the maximum slope of Vm during an action potential (max dV/dt) and decreased threshold observed here (Colbert and Pan, 2002; Kole et al., 2008; Hu et al., 2009; Grubb and Burrone, 2010; Kuba et al., 2010).\n\nWhile we observed an increase in input-output gain (in vivo), a reduced spike threshold (ex vivo), and evidence of a more excitable membrane (increased maximum dV/dt), we did not observe an overall increase in spiking in ex vivo current-firing rate (F-I) curves (Figure 5L). An F-I curve plots the cellular firing rate as a function of the amplitude of somatically injected current. The current-to-spiking transformation takes place in two distinct steps: in the first step the injected current elicits a change in Vm, a process gated by the cell\u2019s input resistance. Due to developmental decreases in input resistance we observed, the same current amplitude would elicit a smaller Vm change in the cells from experienced as compared to the naive animals. In the second step, a given level of Vm elicits the firing of a certain number of spikes, a process gated by the mechanisms of spike generation such as threshold voltage. Our in vivo data show that this Vm-to-spike transformation is steeper in the experienced animal, possibly mediated by lowered spike threshold. During the measuring of F-I curves, these two factors possibly cancel each other, resulting in F-I curves indistinguishable across the two developmental stages. In addition, stronger visually\u00a0evoked synchronous synaptic currents in the experienced state might help overcome the effect of lower input resistance, resulting in higher Vm responses after all. For these reasons, the lack of enhancement in F-I curves obtained from slices does not contradict the strong enhancement in intrinsic excitability, as evidenced by the steeper Vm-to-spike curves and lower thresholds.\n\n### Developmental changes in input-output gain\n\nThe spike threshold non-linearity contributes substantially to cortical direction selectivity (Reid et al., 1987; Jagadeesh et al., 1993; Priebe et al., 2004; Priebe and Ferster, 2005). Before these experiments, it was possible to imagine that much of the developmental increase in cortical direction selectivity in ferret might be due not to changes in subthreshold inputs, but rather purely through changes in effective threshold or the voltage-to-firing rate transform (Van Hooser et al., 2014; Christie et al., 2017). The experiments here show that increased input-output gain does contribute to the increased firing rates that are observed in experienced animals, but that increased input-output gain did not, by itself, account for the increased direction selectivity index values (see Figure 7CD). Instead, changes in the underlying voltage responses were necessary to confer increased direction selectivity.\n\n### Possible synaptic bases of spatiotemporal receptive field reorganization\n\nIt is interesting to consider the possible synaptic bases for the expanded receptive fields we observed here, as we cannot directly examine the physiological properties of the synapses that underlie these receptive fields at this time. A variety of mechanisms seem plausible given the data.\n\nFirst, the receptive field expansion that we observed might be due to recruitment of additional synapses between LGN neurons and cortical neurons, such that newly\u00a0connected neurons are providing inputs at the latencies and positions that are newly present in the spatiotemporal receptive fields of mature neurons. These results fit nicely with prior anatomical observations that the number of excitatory synapses being formed in ferret and human visual cortex during this time are greatly increasing (Huttenlocher, 1990; Durack and Katz, 1996; Ruthazer and Stryker, 1996; White et al., 2001; Erisir and Harris, 2003; White and Fitzpatrick, 2007), and are consistent with the idea that precise growth may be an important principle of the development of some neural circuits.\n\nA second hypothesis is that the maturation of receptive field properties of already-connected LGN neurons or cortical neurons might cause the spatiotemporal receptive field to expand, and confer direction selectivity even without such selectivity in the antecedent inputs. For example, LGN neuron latency drops during the first weeks of visual experience Tavazoie and Reid, 2000; therefore, it is possible that changes in receptive field properties of already-connected LGN cells that exhibit purely center surround receptive fields could fill out the earlier latency regions of the experienced spatiotemporal receptive fields. Experiments that measure thalmocortical inputs to cortical neurons (Alonso and Reid, 1995; Swadlow et al., 2005; Lien and Scanziani, 2018), performed in developing animals, could support or reject this hypothesis. Regardless of whether LGN inputs are altered or constant, there is clear evidence linking the spatiotemporal structure of LGN inputs to direction selectivity in V1 in mice and carnivores (Kremkow et al., 2016; Lien and Scanziani, 2018).\n\nA third hypothesis is that a change in the relative contributions of excitation and inhibition within the cortex underlie the maturation we observed. Although the data here force us to reject the hypothesis that the change in direction selectivity is purely due to postsynaptic changes in excitability, it remains possible that there might be no changes in LGN inputs and that amplified firing from recurrent connections underlie the increases in Vm selectivity (Douglas et al., 1995; Suarez et al., 1995; Christie et al., 2017). Under this view, contributions could increase from the excitatory side such that the enhanced gain in cortical neurons would recurrently drive changes in the synaptic inputs, leading to additional direction selectivity. Alternatively, removal of cortical shunting inhibition or alterations in the timing of inhibition (Nelson et al., 1994; Priebe and Ferster, 2005; Wilson et al., 2018), which impact direction selectivity, could also sculpt these developing receptive fields.\n\nFurther studies will be needed to tease apart the contributions of feed-forward and recurrent connections to direction selectivity.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Matlab</td>\n      <td>The MathWorks, Natick, MA</td>\n      <td>RRID:SCR_001622</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>GitHub</td>\n      <td>GitHub</td>\n      <td>RRID:SCR_002630</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Psychophysics Toolbox</td>\n      <td>Psychtoolbox.org</td>\n      <td>RRID:SCR_002881</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Spike2</td>\n      <td>Cambridge Electronic Design</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>Spyder Express 3</td>\n      <td>Datacolor</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Mustela putorius furo)</td>\n      <td>Ferrets</td>\n      <td>Marshall Bio-resources</td>\n      <td>\u2018Conventional\u2019 colony</td>\n      <td>Females</td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>Electrode Puller</td>\n      <td>Sutter Instrument Company</td>\n      <td>P-97 with box filament</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>Micromanipulator</td>\n      <td>Sutter Instrument Company</td>\n      <td>MP-285</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>Microelectrode amplifier</td>\n      <td>Axon Instruments (now Molecular Devices)</td>\n      <td>AxoClamp-2B</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>Multifunction data acquisition system</td>\n      <td>Cambridge Electronic Design</td>\n      <td>Micro1401</td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### General design\n\nAll experimental procedures were approved by the Brandeis University Animal Care and Use Committee and performed in compliance with National Institutes of Health guidelines. In vivo intracellular recordings were carried out in two groups of ferrets (Mustela putorius furo): \u2018naive\u2019 (postnatal day (P) 30\u201334; n\u00a0=\u00a010) and \u2018experienced\u2019 (P40-60; n\u00a0=\u00a011).\n\n### Sex as a variable\n\nOnly female ferrets were used because housing mature male and female ferrets in the same room causes significant hormonal stress for the female animals if they are not allowed to mate.\n\n### Surgical preparation\n\nFerrets were sedated with ketamine (20 mg/kg intramuscular) and given atropine (0.16\u20130.8 mg/kg intramuscular) and dexamethasone (0.5 mg/kg intramuscular) to reduce bronchial and salivary secretion and to reduce inflammation. Ferrets were next anesthetized with a mixture of isoflurane, oxygen, and nitrous oxide through a mask while a tracheostomy was performed. Ferrets were then ventilated with 1.5\u20133% isoflurane in a 2:1 mixture of nitrous oxide and oxygen. A cannula was inserted into the intraperitoneal (IP) cavity for delivery of neuromuscular blockers and Ringer\u2019s solution (3 ml/kg/hr). The animals were next inserted in a custom stereotaxic frame that did not obstruct vision. All wound margins were infused with bupivacaine. Silicone oil was placed on the eyes to prevent corneal damage. An incision was made on the scalp, a craniotomy performed, and a durotomy performed with a sharp needle (31 gauge). Before recording commenced, ferrets were paralyzed with the neuromuscular blocker gallamine triethiodide (10\u201330 mg/kg per hour) through the IP cannula to suppress spontaneous eye movements, and the nitrous oxide-oxygen mixture was adjusted to 1:1. The animals\u2019 ECG was continuously monitored to ensure adequate anesthesia, and the percentage of isoflurane was increased if the ECG indicated any distress. Body temperature was maintained at 37\u00b0C.\n\n### In vivo intracellular electrophysiology\n\nIntracellular recordings were performed using sharp microelectrodes (borosilicate glass, BF100-50-10; Sutter Instruments, CA) with a resistance of 80-120MO when filled with 3M KCl and 5% Neurobiotin at the tip. The electrodes were lowered into the primary visual cortex using a Sutter P-285 micromanipulator. The intracellular potentials were recorded using an AxoClamp 2B amplifier (Molecular Devices, CA) in the bridge mode, and subsequently low-pass filtered at 3 kHz, digitized at 8\u201311 kHz (micro1401, Cambridge Electronics Design), and stored on a personal computer (PC) hard drive. V1 neurons were recorded between the depths of 230\u00a0and\u00a01100 \u00b5M, and cells were later classified into simple and complex types based on spike modulation ratio (Figure 2\u2014figure supplement 1).\n\n### Visual stimuli\n\nVisual stimuli were created in MATLAB with the Psychophysics Toolbox (Brainard, 1997; Pelli, 1997; Kleiner et al., 2007) on a Macintosh Pro running OSX and displayed on a Dell monitor 1704FPVt (40 cm viewing distance). Gratings were shown in pseudorandom order at temporal frequencies that varied between 2\u20138 Hz and a spatial frequency of 0.08 cycles per degree, which is in the middle of the maximal response functions for animals in this age range (Li et al., 2006; Popovi\u0107 et al., 2018). Sparse noise stimuli for reverse correlation analysis were 1-dimensional bar stimuli, rotated so that the bar orientation matched the preferred orientation of each cell (Priebe and Ferster, 2005; Rust et al., 2005). Bar width varied from 1.55 to 3.1 degrees of visual angle, and bar luminance values were updated each 100 ms to be black (10% probability), white (10% probability), or gray (80% probability).\n\n### Acute slice electrophysiology\n\nFerrets (n\u00a0=\u00a09) were split into naive (n\u00a0=\u00a06, age P28-32, 29 cells) and experienced (n\u00a0=\u00a03, age P41-44, 17 cells) groups. Animals were injected with an intraperitoneal dose of Beuthanasia-D (1 \u03bcL/g; 390 mg/mL sodium pentobarbital, 50 mg/mL sodium phenytoin) to induce acute respiratory arrest. Transcardial perfusion was immediately performed using 0.22 M sucrose artificial cerebrospinal fluid (aCSF) that had been chilled to 4\u00b0C and aerated in 95% carbon dioxide/5% oxygen gas mixture for 15 min. The full composition of the solution used for perfusion and slicing was 220 mM sucrose, 26 mM NaHCO3, 3 mM KCl, 5 mM MgCl, 1.25 mM NaH2PO4, 1.0 CaCl2, and 10 mM dextrose. Following decapitation using a small animal guillotine, the brain was extracted, separated into hemispheres and cut again into caudal coronal blocks to excise the occipital lobe before slicing into 330 \u03bcm coronal sections on a Leica VT-1000s vibratome at high vibrating frequency in sucrose cutting solution. Sections were retained if fully intact and obtained in the second through the fifth passes in the slicing sequence (i.e. not more than 1650 microns from the extremity of the occipital pole) and most recorded neurons were taken from the second and third slices. Each slice was immediately incubated in aerated standard aCSF (124 mM NaCl, 2.5 mM KCl, 2 mM MgSO4, 1.25 mM NaHPO4, 2 mM CaCl2, 26 mM NaHCO3, 10 mM dextrose, ph 7.4, mOsm 318\u00a0\u00b1\u00a02) at 34\u201335\u00b0C for 15\u201330 min and then allowed to recover at room temperature in the same solution for 1 to 1.5 hr. Slices were maintained in an aerated incubation chamber at room temperature until needed for recording when they were transferred to the perfusion chamber and maintained at a temperature of 35\u00b0 to 37\u00b0C during recording.\n\nCurrent clamp measurements of single neuron intrinsic excitability were obtained in standard ACSF containing 20 \u03bcM 6,7-dinitroquinoxaline-2,3-dione (DNQX), either 25 \u03bcM of D-2-amino-5-phosphonopentanoate (D-AP-V) or 50 \u03bcM of racemic mixture AP-V, and 20 \u03bcM of picrotoxin, synaptic blockers of AMPA, NMDA, and GABA, respectively. A small ad-hoc DC current was injected for all cells to set baseline membrane potential to \u221260 mV. A series of current pulses were tested over 10 to 15 evenly spaced step sizes between 0 and 400 pA. Single current pulses were 300 too 400 ms in duration over a 1 s acquisition frame with stimulation onset delayed by 50 ms. A 3 s minimum delay was used between all single pulse acquisition frames. The order of current step amplitudes was pseudorandomly interleaved and a minimum of three repetitions were acquired for each current level.\n\n### Data analysis\n\nFor Vm analysis, spikes were removed from the traces using an 8 ms median filter (Ferster and Jagadeesh, 1992). Responses to each stimulus were calculated relative to a baseline that was calculated in the 5 s preceding each stimulus (or shorter for a few cases where the interstimulus interval was shorter than 5 s). The baseline was defined as the 20th percentile of the data points in this time interval, to discount any spontaneous activity that was more prevalent especially in the older animals; manual inspection showed that this value was very close to what the experimenter would have selected on a case-by-case basis. For spike analyses, spikes were detected using a manually set threshold on the Vm trace for each recording epoch. For each cell, we examined both the mean response to drifting grating stimulation (F0) as well as the modulation at the stimulus frequency (F1). If a cell\u2019s F1 response was greater than the mean response (F0), then the cell was declared to be a \u2018simple\u2019 cell. Direction selectivity was examined in recorded cells that exhibited significant variation across all stimuli by an ANOVA test, and tuning curves were fit with a double Gaussian (Mazurek et al., 2014). The direction selectivity index (DSI) was defined to be (Rp(\u03b8) - Rn(\u03b8))/Rp(\u03b8), where Rp(\u03b8) is the fitted response in the preferred direction (\u03b8) and Rn is the response in the opposite direction 180\u00b0 + \u03b8.\n\n### Reverse correlation with sparse noise\n\nVm traces median-filtered at 8 ms to remove spikes as above. For each spatial location, the stimulus trace was cross-correlated (Citron et al., 1981) with the median-filtered Vm trace using the xcorr function in Matlab. Correlation values were plotted as a function of lag time with respect to stimulus onset (time 0). Attempts to sharpen (or whiten) the reverse correlation to remove the blurring from the step-function-like stimuli typically resulted in unstable filters, so only the raw stimulus-voltage correlation waveform is plotted here, as these measurements were always stable.\n\n#### Subunit analysis\n\nOnce the Vm STRFs were computed, pixel clusters representing each ON and OFF subunit were detected through connected component analysis using the bwconncomp function in MATLAB. Only the brightest and the darkest 5% of pixels from the STRF images were analyzed using bwconncomp for ON and OFF subunits, respectively. To eliminate random pixel clusters spuriously detected by the method, only pixel clusters containing at least 20 pixels were accepted as subunits, and an ellipse was drawn through each accepted pixel cluster to represent a subunit. Next, using the regionprops function in MATLAB, the following parameters were extracted for each ellipse: orientation, major axis length, minor axis length, eccentricity and area. Further, using these parameters and the geometric properties of an ellipse, the following parameters were also calculated: spatial extent (the projection of the ellipse on the x or spatial axis), temporal extent (the projection of the ellipse on the y or time axis), maximum latency (the upper bound of the ellipse on the time axis) and minimum latency (the lower bound of the ellipse on the time axis). Values for each of the above nine parameters from all ON and OFF subunits from a single cell were averaged to obtain cell-average values.\n\nBecause visual stimulation evoked stronger Vm responses in the experienced group, the weaker responses in the naive group might have yielded less reliable correlations to the stimulus contrast, leading to spurious differences in STRF shape parameters. To test that possibility, we compared the absolute peak correlation values of the ON (positive) and OFF (negative) subunits across the two developmental groups, and found that on average the peak correlation values were indistinguishable between the two groups (Naive_ON x Naive_OFF x Exp_ON x Exp_OFF; one-way ANOVA, p>0.05). This implies that the peaks and troughs of the ON and OFF subunits were separated from the correlation floor equally well in the naive and the experienced groups, thereby making it unlikely that weaker correlations might have led to unreliable STRFs in the naive group.\n\nTwo-dimensional Fourier transforms of the Vm STRFs were computed using the fft2 function in MATLAB. The resulting STRFs in the frequency-domain, represented with spatial frequencies along the x-axis and temporal frequencies along the y-axis, had four quadrants around the origin representing 0 spatial and temporal frequencies (Priebe and Ferster, 2005). The quadrants diagonally opposite to each other represented the same pattern of amplitudes. The quadrant with positive spatial and temporal frequencies represented one direction of motion, while the quadrant with positive spatial and negative temporal frequencies represented the opposite direction of motion. All FFT amplitudes (within spatial frequency range 0 to 0.2 cycles/degrees, and temporal frequency range 0 to \u221210 or 10 Hz) in these two quadrants were summed to obtain a predicted response to the forward and reverse direction of motion, respectively (Priebe and Ferster, 2005). The larger of the two responses was taken as the preferred response (Rpref) and the smaller was taken as the null response (Rnull). Predicted Vm DSI was then calculated as DSIpr = (Rpref - Rnull)/Rpref.\n\n### V-F transform\n\nVm signals were filtered with a 60 Hz Savitzky-Golay filter to remove a small 60 Hz component, and spikes were filtered out of Vm by applying an 8 ms median filter (Finn et al., 2007) and baseline subtraction as described above. Next, a set of ordered pairs of Vm values and corresponding firing rate values were created by calculating the mean Vm and mean firing rate in non-overlapping 30 ms windows that were run across the data (Priebe and Ferster, 2005; Priebe and Ferster, 2006). The relationship between these pairs (Vm and firing rate) for each cell was fit by a power\u00a0law\u00a0function: FR(V)=b * rectify(V-Vth)\u03b1, where \u03b1 was constrained to be between 1 and 4 and rectify(x):=x, if x\u00a0\u2265\u00a00; 0, if x\u00a0<\u00a00. Empirical data was plotted against these fits by binning observations into 1 mV bins and computing the mean and standard error of the mean.\n\n### Spike kink analysis\n\nSpike \u2018kinks\u2019 (a particular definition for spike threshold) were calculated for spikes following the algorithm by Azouz and Gray, 1999. In brief, dV/dt was calculated by dividing the difference between successive samples by the time interval between them. The spike kink voltage was defined to be the point at which dV/dt exceeded 0.033 of the maximum value.\n",
+      "created_at": "2025-12-02T18:41:49.815737Z"
+    },
+    {
+      "id": "3b480bd2-491f-4eb3-a40a-f2015820f21b",
+      "submission_id": "9dc76e32-66e7-40d9-a8fa-9dcf49f01900",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Marla B Feller, University of California, Berkeley United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.58509.sa1](https://doi.org/10.7554/eLife.58509.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nThe authors have done a great job revising the paper. The new paper organization makes a much clearer distinction between experimental findings and interpretation. The Results section is now fully focused on describing the developmental changes that they observe while the Discussion section describes three possible alternative interpretations of the findings.\n\nDecision letter after peer review:\n\nThank you for submitting your work entitled \"Synaptic and intrinsic mechanisms underlying development of cortical direction selectivity\" for consideration by eLife. Your article has been evaluated by three reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation has been overseen Laura Colgin as the Senior Editor.\n\nThis manuscript has been read by three reviewers. All three agree that this is an excellent study with high quality data addressing he important questions regarding the mechanisms underlying the maturation of receptive fields in ferret visual cortex. However, there were significant concerns of the context in which these data were presented. These concerns can be addressed with significant revisions to text and some additional analysis.\n\nReviewer #1:\n\nThis study represents a careful dissection of the maturation of receptive fields in ferret primary visual cortex. It has been well-established that direction selective responses in ferret cortex emerge in an activity dependent manner after eye opening. The authors use in vivo sharp electrode recordings to gain insights into the changes in receptive field properties that underlie the maturation of directional tuning. Specifically, they first show that both subthreshold changes in membrane potential as well as spiking output increase their direction selectivity tuning. Second, they use random visual stimuli to characterize the space-time receptive fields (STRFs) and compare properties for both immature and mature simple cells. From these data they see there is both an expansion of compact receptive fields and an enhanced tilt in space-time. Third, they use in vivo and in vitro recordings to show that there is an increase in the excitability of cells by assessing action potential waveforms. Fourth they compute voltage-> firing rate transformation (i.e. input-output gain, a term first introduced by classic papers by Priebe and Ferster). Finally, they use a simple model to show that need both changes in receptive fields and input-output gain functions to explain the change in tuning.\n\nThe paper is clearly written (though the Abstract is a bit obtuse \u2013 see below) and the data clearly presented. The data is gorgeous and based on very difficult experiments. The authors are to be commended.\n\n1) The Abstract can really only be understood by people within the field \u2013 particularly the sentences about the STRFs (e.g. \"expansion of space-time receptive fields along the temporal dimensions\" and \"marked loss of inputs with certain space-time selectivities\").\n\n2) In Figure 5J-L, the authors argue that the change in spike waveform seems to balance out the decrease in input resistance and increase capacitance associated with development due to the enlargement of cells. So, it is not clear whether there is a change in excitability contributed to the enhanced input-output gain.\n\nReviewer #2:\n\nIn this paper, the authors studied mechanisms underlying the development of direction selectivity in ferret visual cortex. They performed intracellular recording to reveal both synaptic and intrinsic membrane properties that are correlated with direction selectivity development. Overall, the paper addressed an important question; the data were of high quality; and presentation was largely clear. However, the authors fell short in connecting the synaptic changes (spatial temporal receptive fields) with changes in direction selectivity, which can be potentially corrected by additional analysis.\n\n1) The main finding of the paper is changes in the spatial temporal receptive fields (STRF; Figure 4), which was interpreted as changes in synaptic connections (Figure 1). Specially, the authors concluded that there was both pruning of existing connections (because of the narrowing of minor axis) and forming of new connections (increase in major axis and decrease of latency). However, as the authors mentioned, dLGN cells' receptive fields become smaller and faster, which could account for much of the changes in cortical receptive fields. Can the authors perform additional analysis using existing LGN data to determine how much of the observed changes can be explained by changes in the dLGN or more upstream, without a change in synaptic connection?\n\n2) The most dramatic change to me is actually the STRF orientation (Figure 4C, D), the extent of which does not appear to be reflected by the quantification in Figure 4A. Please double check the analysis. More importantly, the authors did not provide any evidence connecting STRF structure with direction selectivity, despite how they framed the study (Figure 1). Did the STRF predict the preferred direction and DSI in adult animals? In young animals, this does not seem to be the case for DSI (Figure 4B), perhaps because most of them did not have any tilt.\n\n3) Assuming STRF structure indeed determines direction selectivity (to be shown by the authors), what changes could mediate the appearance of the adult tilt? Synaptic reorganization, changes in dLGN response temporal profile, or conduction delay? Some discussion are needed given its importance.\n\nReviewer #3:\n\nThis is an excellent and important piece of work that investigates the development of direction selectivity in visual cortex. The mechanism underlying cortical direction selectivity has been a topic of great interest for several decades and attracted the attention of many different laboratories across the world. One of the most powerful approaches to study input-output neuronal transformations in the brain is to perform in vivo intracellular recordings. However, this approach is technically very difficult and, to my knowledge, it has only been used to study cortical direction selectivity in adult animals. Remarkably, the authors succeeded at performing these experiments in immature developing brains and the data that they collected is simply beautiful. Just because the data is unique and obtained with such a powerful approach, the study is of great value to the scientific community. In addition, the high quality of the data and the unexpected findings increase even further the scientific impact.\n\nMy comments should be seen more as suggestions to improve an already strong paper rather than criticisms. Most of my comments relate with the interpretation of the results and are relatively minor.\n\n1) Abstract. The Abstract motivates the work by offering two alternative mechanisms of wiring development, elimination of redundant connections or formation of new connections. However, the general reader may think that this motivation is misleading since the development of neuronal connections frequently involves a combination of both. For example, each immature LGN neuron receives multiple retinal inputs that are eliminated as the brain matures. In addition, the remaining connections become stronger by making new connections (i.e. new synapses).\n\n2) Abstract. The parallel that the Abstract makes between elimination/formation of connections and input/intrinsic changes does not work well. The mixed mechanism involving changes in input connectivity and intrinsic excitability is different from a mixed mechanism involving elimination and formation of connections. The authors may want to consider changing the motivation of the work (e.g. nobody knew the intracellular changes underlying the development of direction selectivity until the authors performed these experiments).\n\n3) Abstract. It is unclear whether the authors can interpret the changes that they observe in the spatiotemporal receptive field as formation of new connections, as they claim in the Abstract. Changes in the temporal dimension of the spatiotemporal receptive field could be caused by combined changes in the receptive field size, time course and synaptic strength of already-connected inputs. A paragraph of the discussion states this wonderfully (quoted below) but the rest of the paper (including the Abstract) gives the impression that the results provide a direct demonstration of changes in the number of inputs during development. This could be misleading particularly for the non-specialized reader. Quote of paragraph: \"Alternatively, maturation of receptive field properties of already-connected LGN neurons or cortical neurons might cause the spatiotemporal receptive field to expand, and confer direction selectivity even without such selectivity in the antecedent inputs. [\u2026] Or, perhaps connections from LGN cells with reduced latencies do not form until after the onset of experience\".\n\n4) Introduction and Results. Several sections of the paper appear to imply that the results provide direct evidence for formation and elimination of synaptic inputs. However, as the authors acknowledge in the Discussion, this is one of several possible interpretations. Therefore, it is probably a good idea to make it clear early in the paper that the elimination/formation of inputs is not a direct conclusion from the results but a possible interpretation. For example, the authors state: \"\u2026became more elongated along the temporal axis, corroborating the idea of recruitment of new synaptic inputs. However, the subunits also became significantly narrower along their preferred space-time axis, consistent with pruning of synaptic inputs with certain spatiotemporal properties\". The term \"consistent with\" is probably more appropriate than \"corroborating\". \"Corroborating\" may lead the non-specialized reader to believe that the authors are providing a direct demonstration of input recruitment.\n\n5) Changes in the relative strength of intracortical inhibition could be proposed as another possible interpretation of the results and should probably be discussed. Several studies have demonstrated that intracortical inhibition plays an important role in cortical direction selectivity including those from Sacha Nelson (the PhD advisor of the corresponding author) and, more recently, David Fitzpatrick (the postdoctoral advisor). An alternative interpretation of the results is that the receptive field maturation that they observe originates from changes in the relative strength of excitation and inhibition. For example, the much larger increase in spiking than Vm response during development could reflect a release from shunting inhibition as cortical neurons mature. This mechanism could also explain why the spiking response in the null direction is weaker in naive than mature ferrets. The developmental increase in response to the null direction may indicate that stimulus-driven excitation becomes stronger than stimulus-driven inhibition during development. Inhibition could also be relatively stronger in immature brains because cortical neurons spike less but each spike from inhibitory neurons has a relatively bigger impact in the cortical response because excitation is weak.\n\n6) It may be a good idea to report the signal to noise ratio of the receptive field measurements. This is important to fully disregard the possibility that the reported differences are not partly due to differences in signal to noise between na\u00efve and experienced animals. The signal to noise should be lower in na\u00efve animals because stimuli drive weaker fluctuations in Vm and spike rate than in experienced animals. This is not a concern in the interpretation of the results because the authors did not find differences in area, spatial extent and temporal extent of the receptive fields between na\u00efve and experienced animals. However, reporting signal to noise measurements somewhere in the Materials and methods section is important to fully eliminate this concern. If there is a difference in signal to noise, the authors can control for a possible contribution of this difference in their comparison by subsampling spikes in experienced animals at the same rate as in na\u00efve animals and show that the most important results (e.g. changes in eccentricity) hold.\n\n7) Results. The following statement is another example of a possible misleading conclusion: \"\u2026In sum, following visual experience, the Vm receptive fields exhibited marked reorganization\u2026 and recruitment of lower latency inputs\". \"recruitment of lower latency inputs\" seems to imply that the results directly show this. However, recruitment of lower latency inputs is one of several possible interpretations. One interpretation is that already-connected LGN inputs become stronger and faster in response latency. It would be very interesting to see the relation between response strength and latency across the entire dataset. One possibility is that response strength and latency are negatively correlated and both change together during development.\n\n8) It is very impressive to see all the pronounced and clear changes that the authors report in just 14 days of development. Great work!\n\nSome references that should probably be cited:\n\nLien and Scanziani, 2018. To my knowledge, this is the only study measuring directly the thalamic inputs to directional selective cortical cells. It shows that, at least for some cortical cells, direction selectivity can be explained simply by the addition of thalamic inputs with different response time courses.\n\nKremkow et al., 2016. This study shows that rapid changes in direction preference within 100-200 microns of horizontal cortical distance are closely associated with rapid changes in receptive field position. This finding is also consistent with the notion that changes in direction preference are associated with changes in the receptive field position of thalamic inputs.\n\nWilson, Scholl and Fitzpatrick, 2018. There are many papers showing the importance of intracortical inhibition in generating cortical direction selectivity. Wilson et al., 2018, should probably be cited because it is the most recent one on this topic and uses ferrets, the animal model chosen by the authors.\n",
+      "created_at": "2025-12-02T18:41:49.815737Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T18:41:49.815737Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T18:41:49.815737Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "3d3a048a-38aa-4360-bf89-733c5219e432",
+      "content_id": "3735adb4-3412-4548-8ac3-55eb22dc080f",
+      "claim_id": "C1",
+      "claim": "Direction selectivity in ferret visual cortex develops rapidly over a few days after eye opening.",
+      "claim_type": "EXPLICIT",
+      "source": "we undertook an intracellular analysis of the development of direction selectivity in the ferret visual cortex, which occurs rapidly over a few days after eye opening.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as a known fact about the developmental timeline.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:41:49.815737Z"
+    },
+    {
+      "id": "e7122b85-485e-4149-a47f-98b633ecc1cd",
+      "content_id": "3735adb4-3412-4548-8ac3-55eb22dc080f",
+      "claim_id": "C2",
+      "claim": "Strong evidence of developmental changes in linear spatiotemporal receptive fields of simple cells was found.",
+      "claim_type": "EXPLICIT",
+      "source": "We found strong evidence of developmental changes in linear spatiotemporal receptive fields of simple cells, implying alterations in circuit inputs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the abstract and supported by experimental data throughout the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:41:49.815737Z"
+    },
+    {
+      "id": "2979d9c4-1158-45c8-b589-a3fee056d724",
+      "content_id": "3735adb4-3412-4548-8ac3-55eb22dc080f",
+      "claim_id": "C3",
+      "claim": "Receptive field plasticity was accompanied by increases in near-spike-threshold excitability.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, this receptive field plasticity was accompanied by increases in near-spike-threshold excitability and input-output gain that resulted in dramatically increased spiking responses in the experienced state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the abstract and supported by experimental measurements of spike threshold and excitability.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:41:49.815737Z"
+    },
+    {
+      "id": "61e74180-3935-4572-b48a-f0c5de2593bf",
+      "content_id": "3735adb4-3412-4548-8ac3-55eb22dc080f",
+      "claim_id": "C4",
+      "claim": "Receptive field plasticity was accompanied by increases in input-output gain.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, this receptive field plasticity was accompanied by increases in near-spike-threshold excitability and input-output gain that resulted in dramatically increased spiking responses in the experienced state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the abstract and supported by voltage-to-firing rate transformation analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:41:49.815737Z"
+    },
+    {
+      "id": "2baa478a-5dab-4c37-b50b-64a7c9e4dc0b",
+      "content_id": "3735adb4-3412-4548-8ac3-55eb22dc080f",
+      "claim_id": "C5",
+      "claim": "Increases in subthreshold membrane responses and increased input-output spiking gain were both necessary to explain elevated firing rates in experienced ferrets.",
+      "claim_type": "EXPLICIT",
+      "source": "Increases in subthreshold membrane responses induced by the receptive field plasticity and the increased input-output spiking gain were both necessary to explain the elevated firing rates in experienced ferrets.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary conclusion stated in the abstract and supported by modeling simulations shown in Figure 7.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:41:49.815737Z"
+    },
+    {
+      "id": "e0860dcb-b960-4a83-bb6d-b4770d12b218",
+      "content_id": "3735adb4-3412-4548-8ac3-55eb22dc080f",
+      "claim_id": "C6",
+      "claim": "Cortical direction selectivity develops through a combination of plasticity in inputs and in cell-intrinsic properties.",
+      "claim_type": "EXPLICIT",
+      "source": "These results demonstrate that cortical direction selectivity develops through a combination of plasticity in inputs and in cell-intrinsic properties.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion of the study stated in the abstract and supported by all experimental findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:41:49.815737Z"
+    },
+    {
+      "id": "20fc58b3-d3b8-4965-9932-03abf965bd99",
+      "content_id": "3735adb4-3412-4548-8ac3-55eb22dc080f",
+      "claim_id": "C7",
+      "claim": "At eye opening in carnivores and primates, neurons exhibit orientation selectivity but respond equally to motion in opposite directions.",
+      "claim_type": "EXPLICIT",
+      "source": "At the time of eye opening in carnivores and primates, while neurons already exhibit orientation selectivity, they respond about equally to motion in the two opposite directions orthogonal to the preferred axis of orientation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge in the introduction.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:41:49.815737Z"
+    },
+    {
+      "id": "bdc2709a-18ad-4943-b2fa-96d612d840ed",
+      "content_id": "3735adb4-3412-4548-8ac3-55eb22dc080f",
+      "claim_id": "C8",
+      "claim": "Selectivity to direction of motion develops rapidly in the days and weeks following the onset of visual experience.",
+      "claim_type": "EXPLICIT",
+      "source": "Selectivity to direction of motion develops rapidly in the days and weeks following the onset of visual experience (Hatta et al., 1998; Li et al., 2006; Clemens et al., 2012; Smith et al., 2015)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:41:49.815737Z"
+    },
+    {
+      "id": "edd263c0-6670-4f38-a764-9bd725ec6ced",
+      "content_id": "3735adb4-3412-4548-8ac3-55eb22dc080f",
+      "claim_id": "C9",
+      "claim": "Direction selectivity can be accelerated in the lab through exposure to moving stimuli.",
+      "claim_type": "EXPLICIT",
+      "source": "and can be accelerated in the lab through exposure to moving stimuli (Li et al., 2008; Van Hooser et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:41:49.815737Z"
+    },
+    {
+      "id": "3a880475-2947-40a6-87e2-612b80614af1",
+      "content_id": "3735adb4-3412-4548-8ac3-55eb22dc080f",
+      "claim_id": "C10",
+      "claim": "In cats and primates, a set of inputs activating the cell at varying spatial positions and temporal latencies following a specific spatiotemporal order underlies direction selectivity in the visually mature state.",
+      "claim_type": "EXPLICIT",
+      "source": "In cats and primates, it has been demonstrated that a set of inputs activating the cell at varying spatial positions and temporal latencies following a specific spatiotemporal order underlies direction selectivity in the visually mature state (DeAngelis et al., 1993b; Jagadeesh et al., 1993; McLean et al., 1994; Livingstone, 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:41:49.815737Z"
+    },
+    {
+      "id": "45b4f835-3130-420c-b662-7c4ac77010ac",
+      "content_id": "3735adb4-3412-4548-8ac3-55eb22dc080f",
+      "claim_id": "C11",
+      "claim": "The mechanisms underlying the development of the precise pattern of spatiotemporal activation are poorly understood.",
+      "claim_type": "EXPLICIT",
+      "source": "But the mechanisms underlying the development of this precise pattern of spatiotemporal activation, and consequently of direction selectivity, are poorly understood.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a gap in knowledge that motivates the study.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:41:49.815737Z"
+    },
+    {
+      "id": "27ffb32c-d6b1-400e-933a-be20e7691893",
+      "content_id": "3735adb4-3412-4548-8ac3-55eb22dc080f",
+      "claim_id": "C12",
+      "claim": "The contributions of cell-intrinsic properties to the development of direction-selectivity remain largely unexplored.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, the contributions of cell-intrinsic properties to the development of direction-selectivity also remain largely unexplored.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a gap in knowledge that motivates the study.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:41:49.815737Z"
+    },
+    {
+      "id": "1cf267cb-5621-450f-9b13-553eee8b4b0f",
+      "content_id": "3735adb4-3412-4548-8ac3-55eb22dc080f",
+      "claim_id": "C13",
+      "claim": "In vivo intracellular recordings were carried out in two groups of ferrets: visually naive (P30-34) and visually experienced (P40-60).",
+      "claim_type": "EXPLICIT",
+      "source": "we carried out in vivo intracellular recordings in V1 from two groups of ferrets at different stages of visual development: visually naive (post-natal day P30-34) and visually experienced (P40-60).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental design and groups used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:41:49.815737Z"
+    },
+    {
+      "id": "6314f6a3-39bc-40d8-9b19-39afcea23643",
+      "content_id": "3735adb4-3412-4548-8ac3-55eb22dc080f",
+      "claim_id": "C14",
+      "claim": "Significant differences in the spatiotemporal organization of receptive fields were found between the visually naive and experienced groups.",
+      "claim_type": "EXPLICIT",
+      "source": "We found significant differences in the spatiotemporal organization of receptive fields between the visually naive and experienced groups.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the introduction and supported by data in Figure 3 and Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:41:49.815737Z"
+    },
+    {
+      "id": "60c12917-ec12-46c7-8a69-9c2009761319",
+      "content_id": "3735adb4-3412-4548-8ac3-55eb22dc080f",
+      "claim_id": "C15",
+      "claim": "The enhancement in Vm responses brought about by receptive field rearrangements did not successfully predict the developmental enhancement in spiking responses.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, the enhancement in Vm responses brought about by these receptive field rearrangements did not successfully predict the developmental enhancement in spiking responses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a key finding stated in the introduction and supported by data comparing Vm and spike responses.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:41:49.815737Z"
+    },
+    {
+      "id": "9619e50a-76c1-4dd6-a1b6-305a4adf2330",
+      "content_id": "3735adb4-3412-4548-8ac3-55eb22dc080f",
+      "claim_id": "C16",
+      "claim": "V1 neurons in visually experienced animals had stronger gains in Vm-to-spike transformation.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this idea, we found that V1 neurons in visually experienced animals had stronger gains in Vm-to-spike transformation",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the introduction and supported by voltage-to-firing rate analysis in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:41:49.815737Z"
+    },
+    {
+      "id": "3de89871-3ed4-40ef-b3e8-0e579ad50497",
+      "content_id": "3735adb4-3412-4548-8ac3-55eb22dc080f",
+      "claim_id": "C17",
+      "claim": "Gain enhancement was accompanied by a lowering of spike threshold.",
+      "claim_type": "EXPLICIT",
+      "source": "and that this gain enhancement was accompanied by a lowering of spike threshold.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the introduction and supported by spike threshold measurements in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:41:49.815737Z"
+    },
+    {
+      "id": "161104d3-fed6-42b5-b80a-3bb8988edc17",
+      "content_id": "3735adb4-3412-4548-8ac3-55eb22dc080f",
+      "claim_id": "C18",
+      "claim": "The experienced cells exhibited stronger direction selectivity compared to the naive cells at the subthreshold Vm level.",
+      "claim_type": "EXPLICIT",
+      "source": "On average, the experienced cells exhibited stronger direction selectivity compared to the naive cells, both at the subthreshold Vm and the suprathreshold spiking levels (Figure 2C, Direction selectivity index or DSI. Top, Vm: naive: mean = 0.16 \u00b1 0.02, n = 23; experienced: mean = 0.35 \u00b1 0.04, n = 29; p<0.001, WRS test",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding with specific statistical values and significance testing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:41:49.815737Z"
+    },
+    {
+      "id": "26dd139c-cd7a-469c-b8df-4cc4b2733002",
+      "content_id": "3735adb4-3412-4548-8ac3-55eb22dc080f",
+      "claim_id": "C19",
+      "claim": "The experienced cells exhibited stronger direction selectivity compared to the naive cells at the suprathreshold spiking level.",
+      "claim_type": "EXPLICIT",
+      "source": "On average, the experienced cells exhibited stronger direction selectivity compared to the naive cells, both at the subthreshold Vm and the suprathreshold spiking levels (Figure 2C, Direction selectivity index or DSI. Top, Vm: naive: mean = 0.16 \u00b1 0.02, n = 23; experienced: mean = 0.35 \u00b1 0.04, n = 29; p<0.001, WRS test; bottom, spike: naive: mean = 0.3 \u00b1 0.05, n = 14 (9 cells did not spike); experienced: mean = 0.66 \u00b1 0.05, n = 29; p<0.001, WRS test).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding with specific statistical values and significance testing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:41:49.815737Z"
+    },
+    {
+      "id": "aafeb886-f56c-4097-b40a-db3ddffe4edb",
+      "content_id": "3735adb4-3412-4548-8ac3-55eb22dc080f",
+      "claim_id": "C20",
+      "claim": "In both naive and experienced groups, the spike DSI was significantly higher than Vm DSI.",
+      "claim_type": "EXPLICIT",
+      "source": "A pairwise comparison of Vm and spike DSI within each neuron revealed that the spike DSI was significantly higher than Vm DSI in both the naive and the experienced groups (Figure 2D; naive, p=0.001, n = 14; experienced, p<0.001, n = 29; signed rank test).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding with specific statistical values and significance testing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:41:49.815737Z"
+    },
+    {
+      "id": "f056e603-a030-44bd-a760-4cacfeacfe39",
+      "content_id": "3735adb4-3412-4548-8ac3-55eb22dc080f",
+      "claim_id": "C21",
+      "claim": "In both groups, the outputs of V1 cells were more sharply tuned for direction than their summed inputs.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, in both groups, the outputs of V1 cells were more sharply tuned for direction than their summed inputs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the finding that spike DSI was higher than Vm DSI.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:41:49.815737Z"
+    },
+    {
+      "id": "8453253b-ea1b-4241-8542-0b026f58c8b3",
+      "content_id": "3735adb4-3412-4548-8ac3-55eb22dc080f",
+      "claim_id": "C22",
+      "claim": "F0 and F1 DSI for both sub- and suprathreshold responses in the experienced group were significantly higher than the naive group.",
+      "claim_type": "EXPLICIT",
+      "source": "F0 and F1 DSI for both sub- and suprathreshold responses in the experienced group were significantly higher than the naive group (Figure 2E; F0: Vm: naive: mean = 0.15 +/- 0.02, n = 23; experienced: mean = 0.27 +/- 0.04, n = 29; p=0.02, WRS test; spike: naive: mean = 0.33 +/- 0.05, n = 14; experienced: mean = 0.62 +/- 0.05, n = 29; p=0.003, WRS test; F1: Vm: naive: mean = 0.32 +/- 0.04, n = 14; experienced: mean = 0.57 +/- 0.04, n = 29; p<0.001, WRS test; spike: naive: mean = 0.31 +/- 0.06, n = 14; experienced: mean = 0.7 +/- 0.04, n = 29; p<0.001, WRS test)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding with specific statistical values and significance testing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:41:49.815737Z"
+    },
+    {
+      "id": "fd50d8e5-129a-4f09-a078-e9059b18c936",
+      "content_id": "3735adb4-3412-4548-8ac3-55eb22dc080f",
+      "claim_id": "C23",
+      "claim": "Both the mean and the modulated component of visual responses became more direction-selective during development.",
+      "claim_type": "EXPLICIT",
+      "source": "demonstrating that both the mean and the modulated component of visual responses became more direction-selective during development.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the F0 and F1 DSI findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:41:49.815737Z"
+    },
+    {
+      "id": "023caede-90ef-41d5-b945-1bda689d370d",
+      "content_id": "3735adb4-3412-4548-8ac3-55eb22dc080f",
+      "claim_id": "C24",
+      "claim": "At the level of Vm, the null responses did not show any significant change over development.",
+      "claim_type": "EXPLICIT",
+      "source": "At the level of Vm (Figure 2F, top), the null responses (left) did not show any significant change over development, whereas the preferred responses (right) showed a modest but significant increase from the naive to the experienced group (Null, naive: mean = 11 \u00b1 1.2, n = 23; experienced: mean = 11.2 \u00b1 0.9, n = 29, p=0.8, WRS test",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding with specific statistical values showing no significant difference.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:41:49.815737Z"
+    },
+    {
+      "id": "ccfeba11-80fb-46a4-a019-8e6c629f3970",
+      "content_id": "3735adb4-3412-4548-8ac3-55eb22dc080f",
+      "claim_id": "C25",
+      "claim": "At the level of Vm, the preferred responses showed a modest but significant increase from the naive to the experienced group.",
+      "claim_type": "EXPLICIT",
+      "source": "At the level of Vm (Figure 2F, top), the null responses (left) did not show any significant change over development, whereas the preferred responses (right) showed a modest but significant increase from the naive to the experienced group (Null, naive: mean = 11 \u00b1 1.2, n = 23; experienced: mean = 11.2 \u00b1 0.9, n = 29, p=0.8, WRS test; Preferred, naive: mean = 13.1 \u00b1 1.3, n = 23; experienced: mean = 17.3 \u00b1 0.9, n = 29, p=0.008, WRS test).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding with specific statistical values and significance testing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:41:49.815737Z"
+    },
+    {
+      "id": "2a7db243-5ca7-4058-ad00-1b66d0e2e2f1",
+      "content_id": "3735adb4-3412-4548-8ac3-55eb22dc080f",
+      "claim_id": "C26",
+      "claim": "At the level of spiking, both the null and the preferred responses underwent developmental enhancement.",
+      "claim_type": "EXPLICIT",
+      "source": "At the level of spiking (Figure 2F, bottom), both the null and the preferred responses underwent developmental enhancement (null, naive: mean = 4.8 \u00b1 1.2, n = 23; experienced: mean = 9 \u00b1 1.5, n = 29, p=0.01, WRS test; preferred, naive: mean = 6.6 \u00b1 1.6, n = 23; experienced: mean = 24.7 \u00b1 2.6, n = 29, p<0.001, WRS test).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding with specific statistical values and significance testing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:41:49.815737Z"
+    },
+    {
+      "id": "759794de-e64b-4a5d-bec7-3eaf2f86e568",
+      "content_id": "3735adb4-3412-4548-8ac3-55eb22dc080f",
+      "claim_id": "C27",
+      "claim": "The increase in direction selectivity following visual experience was driven primarily by a robust increase in responses to the preferred direction of motion and not by a decrease in response to the null direction of motion.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, the increase in direction selectivity following visual experience was driven primarily by a robust increase in responses to the preferred direction of motion and not by a decrease in response to the null direction of motion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the preferred and null response data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:41:49.815737Z"
+    },
+    {
+      "id": "b191b556-6c10-4003-aac5-db321f37b21a",
+      "content_id": "3735adb4-3412-4548-8ac3-55eb22dc080f",
+      "claim_id": "C28",
+      "claim": "While the increase in response to the preferred direction was modest (32%) at the Vm level, it was dramatic for spiking activity (274%).",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, while this increase in response to the preferred direction was modest (32%) at the Vm level, it was dramatic for spiking activity (274%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative comparison of the magnitude of changes at different levels.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:41:49.815737Z"
+    },
+    {
+      "id": "e2fe615b-495e-436f-9690-1b9c5c980690",
+      "content_id": "3735adb4-3412-4548-8ac3-55eb22dc080f",
+      "claim_id": "C29",
+      "claim": "The spatiotemporal receptive field subunits from direction-selective neurons in experienced animals were slanted in space-time.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with previous findings (Reid et al., 1987; Reid et al., 1991; DeAngelis et al., 1993b; Priebe and Ferster, 2005), the spatiotemporal receptive field subunits from direction-selective neurons in experienced animals were slanted in space-time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding consistent with prior literature, supported by data in Figure 3.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:41:49.815737Z"
+    },
+    {
+      "id": "ec06c343-e399-4e30-a88c-d29d7ce2b0fe",
+      "content_id": "3735adb4-3412-4548-8ac3-55eb22dc080f",
+      "claim_id": "C30",
+      "claim": "The subunits from the experienced cells were longer and narrower in profile, and relatively more slanted in space-time compared to naive cells.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the subunits from the experienced cells were longer and narrower in profile, and relatively more slanted in space-time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a qualitative description of differences observed in the receptive field data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:41:49.815737Z"
+    },
+    {
+      "id": "b875412f-57d8-40c9-965d-baccd6766c47",
+      "content_id": "3735adb4-3412-4548-8ac3-55eb22dc080f",
+      "claim_id": "C31",
+      "claim": "Six out of nine receptive field shape parameters were significantly different between the naive and the experienced groups: eccentricity, major axis, minor axis, orientation, temporal extent and minimum latency.",
+      "claim_type": "EXPLICIT",
+      "source": "Wilcoxon rank sum test comparisons revealed that six out of these nine parameters were significantly different between the naive and the experienced groups: eccentricity, major axis, minor axis, orientation, temporal extent and minimum latency.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from statistical comparisons of receptive field parameters.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:41:49.815737Z"
+    },
+    {
+      "id": "1a0bbd76-3ac9-405e-a2eb-1dd84a508493",
+      "content_id": "3735adb4-3412-4548-8ac3-55eb22dc080f",
+      "claim_id": "C32",
+      "claim": "The eccentricity measured from the experienced subunits were significantly higher.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this idea, we found that the eccentricity measured from the experienced subunits were significantly higher (p<0.001), and was caused by both a longer major axis (p<0.03) and a shorter minor axis (p<0.03, Figure 4A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding with specific statistical significance values.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:41:49.815737Z"
+    },
+    {
+      "id": "7c20a44f-3ed0-44b8-b7d9-7dd7ee2aafca",
+      "content_id": "3735adb4-3412-4548-8ac3-55eb22dc080f",
+      "claim_id": "C33",
+      "claim": "The subunits from the experienced animals subtended a smaller angle on the space axis.",
+      "claim_type": "EXPLICIT",
+      "source": "Also, the subunits from the experienced animals subtended a smaller angle on the space axis (orientation: p<0.005), which would indicate that the cells from experienced animals are tuned to higher motion velocities, consistent with data from actual V1 recordings in cats (DeAngelis et al., 1993a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding with statistical significance and comparison to prior literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:41:49.815737Z"
+    },
+    {
+      "id": "4e005734-67c0-4d07-827d-5a07b3cb3fe2",
+      "content_id": "3735adb4-3412-4548-8ac3-55eb22dc080f",
+      "claim_id": "C34",
+      "claim": "The overall area and the spatial projection of the subunits did not significantly differ between naive and experienced groups.",
+      "claim_type": "EXPLICIT",
+      "source": "The overall area (p<0.6) and the spatial projection (p<0.35) of the subunits did not significantly differ.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding showing no significant difference for these parameters.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:41:49.815737Z"
+    },
+    {
+      "id": "dfaac464-62db-48e9-98ee-98708d88e582",
+      "content_id": "3735adb4-3412-4548-8ac3-55eb22dc080f",
+      "claim_id": "C35",
+      "claim": "The projection on the latency axis was significantly longer in the experienced group.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the projection on the latency axis was significantly longer in the experienced group (p<0.04), suggesting that a longer range of response latencies became available in the experienced animals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding with statistical significance and interpretation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:41:49.815737Z"
+    },
+    {
+      "id": "6d9296ea-7c80-4b65-8a58-f115732237ed",
+      "content_id": "3735adb4-3412-4548-8ac3-55eb22dc080f",
+      "claim_id": "C36",
+      "claim": "The extension of the latency range was achieved solely by stretching the receptive field subunits towards the lower latency side.",
+      "claim_type": "EXPLICIT",
+      "source": "This extension of the latency range was achieved solely by stretching the receptive field subunits towards the lower latency side: while the maximum latencies of the subunits were not significantly different (p<0.3), the minimum latencies were significantly lower in the experienced group (p<0.05).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the latency data with statistical support.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:41:49.815737Z"
+    },
+    {
+      "id": "bb2c86d1-05a4-4192-8c29-3147436c135c",
+      "content_id": "3735adb4-3412-4548-8ac3-55eb22dc080f",
+      "claim_id": "C37",
+      "claim": "The Vm response latency distributions were significantly shifted towards shorter latencies in the experienced animals.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this data, we also found that the Vm response latency distributions were significantly shifted towards shorter latencies in the experienced animals (Figure 4E)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding supported by data shown in Figure 4E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:41:49.815737Z"
+    },
+    {
+      "id": "2060ad23-a52c-40cc-b6ff-1e47e889e9b4",
+      "content_id": "3735adb4-3412-4548-8ac3-55eb22dc080f",
+      "claim_id": "C38",
+      "claim": "Reduced latencies observed in experienced vs. naive neurons mirror those in ferret lateral geniculate nucleus.",
+      "claim_type": "EXPLICIT",
+      "source": "and these results mirror reduced latencies observed in experienced vs. naive neurons in ferret lateral geniculate nucleus (Tavazoie and Reid, 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison to prior literature findings.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:41:49.815737Z"
+    },
+    {
+      "id": "3c7b8ce4-3a5b-45e3-bb47-06a503c173af",
+      "content_id": "3735adb4-3412-4548-8ac3-55eb22dc080f",
+      "claim_id": "C39",
+      "claim": "The Vm direction index of the cells increased with increasing 'narrowness' of the subunits (longer 'major axis', shorter 'minor axis' and higher 'eccentricity').",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the Vm direction index of the cells increased with increasing 'narrowness' of the subunits (longer 'major axis', shorter 'minor axis' and higher 'eccentricity'), 'orientation', if the one low outlier is removed, and decreasing minimum latencies accessible (lower 'min latency').",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from correlation analysis shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:41:49.815737Z"
+    },
+    {
+      "id": "ce2a64cd-432c-45fa-b724-bec16783dfc2",
+      "content_id": "3735adb4-3412-4548-8ac3-55eb22dc080f",
+      "claim_id": "C40",
+      "claim": "The Vm DSI predicted from the STRFs showed a linear correlation with the actually measured Vm DSI of the F1 components of the simple cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, the Vm DSI predicted from the STRFs, by converting the STRFs into the frequency domain via 2-dimensional FFT, showed a linear correlation with the actually measured Vm DSI of the F1 components of the simple cells (Figure 4\u2014figure supplement 1)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from analysis shown in Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:41:49.815737Z"
+    },
+    {
+      "id": "d6c25885-e0ed-4ba1-bb20-3acbd9b058ff",
+      "content_id": "3735adb4-3412-4548-8ac3-55eb22dc080f",
+      "claim_id": "C41",
+      "claim": "Following visual experience, the Vm receptive fields exhibited marked reorganization involving increased eccentricity of the space-time profile and a shift of response latencies towards lower values.",
+      "claim_type": "EXPLICIT",
+      "source": "In sum, following visual experience, the Vm receptive fields exhibited marked reorganization involving increased eccentricity of the space-time profile and a shift of response latencies towards lower values, leading to improved discrimination of directional inputs at subthreshold level and thus a more direction-selective Vm response.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary statement of the receptive field findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:41:49.815737Z"
+    },
+    {
+      "id": "437bc8b8-2d76-4d2c-9dfe-496ed261af77",
+      "content_id": "3735adb4-3412-4548-8ac3-55eb22dc080f",
+      "claim_id": "C42",
+      "claim": "The fraction of cells that fired action potentials in response to drifting grating stimuli was significantly higher in the experienced group.",
+      "claim_type": "EXPLICIT",
+      "source": "The fraction of cells that fired action potentials in response to drifting grating stimuli was significantly higher in the experienced group (simple: naive, 7/10; experienced, 16/16; p<0.05, complex: naive, 7/13; experienced, 13/13; p<0.05, Fisher Exact test).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding with specific statistical values and significance testing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:41:49.815737Z"
+    },
+    {
+      "id": "eba354c7-65a0-411e-bf03-c773ec9011ce",
+      "content_id": "3735adb4-3412-4548-8ac3-55eb22dc080f",
+      "claim_id": "C43",
+      "claim": "Every recorded cell in the experienced group fired action potentials, but 9/23 cells in the naive group did not fire any action potentials at all.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, every recorded cell in the experienced group fired action potentials, but 9/23 cells in the naive group did not fire any action potentials at all.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a descriptive finding from the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:41:49.815737Z"
+    },
+    {
+      "id": "3878b1a3-bcf5-42ba-a76a-17543bfed681",
+      "content_id": "3735adb4-3412-4548-8ac3-55eb22dc080f",
+      "claim_id": "C44",
+      "claim": "Enhancement of Vm responses mediated by reorganization of STRF structure alone could not account for enhanced spiking.",
+      "claim_type": "EXPLICIT",
+      "source": "However, enhancement of Vm responses mediated by reorganization of STRF structure alone could not account for this enhanced spiking.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the discrepancy between Vm and spike response changes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:41:49.815737Z"
+    },
+    {
+      "id": "49ac435d-dd3c-482c-beeb-c5fa646ad963",
+      "content_id": "3735adb4-3412-4548-8ac3-55eb22dc080f",
+      "claim_id": "C45",
+      "claim": "In the naive group, the spikes were significantly broader than in the experienced group.",
+      "claim_type": "EXPLICIT",
+      "source": "Visual inspection of spike waveforms revealed a couple of striking differences between the naive and the experienced groups: in the naive group, the spikes were significantly broader and the take-off point of the action potential (spike threshold) was higher (Figure 5ABC).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from visual inspection and quantitative analysis shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:41:49.815737Z"
+    },
+    {
+      "id": "5609553e-fed5-4dd8-bec3-8190b64fcbe4",
+      "content_id": "3735adb4-3412-4548-8ac3-55eb22dc080f",
+      "claim_id": "C46",
+      "claim": "The take-off point of the action potential (spike threshold) was higher in the naive group than in the experienced group.",
+      "claim_type": "EXPLICIT",
+      "source": "Visual inspection of spike waveforms revealed a couple of striking differences between the naive and the experienced groups: in the naive group, the spikes were significantly broader and the take-off point of the action potential (spike threshold) was higher (Figure 5ABC).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from visual inspection and quantitative analysis shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:41:49.815737Z"
+    },
+    {
+      "id": "632d8fe0-d327-4261-9245-6611b2b0acab",
+      "content_id": "3735adb4-3412-4548-8ac3-55eb22dc080f",
+      "claim_id": "C47",
+      "claim": "In vivo, the maximum dV/dt exhibited a strong increase between naive and experienced animals.",
+      "claim_type": "EXPLICIT",
+      "source": "In vivo, the maximum dV/dt exhibited a strong increase between naive and experienced animals (Figure 5C, naive mean: 172.2 \u00b1 64.6 mV/ms, experienced mean: 253 \u00b1 78.3 mV/ms, WRS test p<2.0e-04)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding with specific statistical values and significance testing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:41:49.815737Z"
+    },
+    {
+      "id": "588b5f34-3090-4a64-b5f7-47f0625dae91",
+      "content_id": "3735adb4-3412-4548-8ac3-55eb22dc080f",
+      "claim_id": "C48",
+      "claim": "In vivo, there was a small empirical drop in spike kink voltage that was not statistically significant.",
+      "claim_type": "EXPLICIT",
+      "source": "a small empirical drop in spike kink voltage (Figure 5D, naive mean: 21 \u00b1 0.4 mV, experienced mean: 19.1 \u00b1 4.7 mV, WRS test p=0.21, not statistically significant)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding showing no significant difference.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:41:49.815737Z"
+    },
+    {
+      "id": "e130e375-7a9e-4df3-9316-7acb4d6a6032",
+      "content_id": "3735adb4-3412-4548-8ac3-55eb22dc080f",
+      "claim_id": "C49",
+      "claim": "In vivo, there was a very substantial decrease in action potential width between naive and experienced animals.",
+      "claim_type": "EXPLICIT",
+      "source": "and a very substantial decrease in action potential width (Figure 5E, naive mean: 1.6 \u00b1 0.7 ms, experienced mean: 1.0 \u00b1 0.4 msec, WRS test p<4.3e-04).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding with specific statistical values and significance testing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:41:49.815737Z"
+    },
+    {
+      "id": "3eb0b696-a50d-47d6-8b61-40cca673b35a",
+      "content_id": "3735adb4-3412-4548-8ac3-55eb22dc080f",
+      "claim_id": "C50",
+      "claim": "Maximum dV/dt measurements in slice strongly resembled those measured in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "Maximum dV/dt measurements in slice (Figure 5F) strongly resembled those measured in vivo (naive mean: 162.1 \u00b1 51.1 mV/ms, experienced mean: 264.4 \u00b1 61.9 mV/ms, WRS n vs. e, p<2.4e-05).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding comparing in vivo and ex vivo measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:41:49.815737Z"
+    },
+    {
+      "id": "899f8a44-1923-4896-9f92-b94783b796bb",
+      "content_id": "3735adb4-3412-4548-8ac3-55eb22dc080f",
+      "claim_id": "C51",
+      "claim": "The spike kink voltage exhibited a small, significant decrease with experience in slice measurements.",
+      "claim_type": "EXPLICIT",
+      "source": "The spike kink voltage exhibited a small, significant decrease with experience (naive mean: \u221225 \u00b1 3.5 mV, experienced mean: \u221230.2 \u00b1 3.7 mV), consistent with the idea that the experienced cells were more excitable near threshold.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from ex vivo measurements with interpretation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:41:49.815737Z"
+    },
+    {
+      "id": "d24b1972-33b6-49d5-9cd1-2e550ba2a49d",
+      "content_id": "3735adb4-3412-4548-8ac3-55eb22dc080f",
+      "claim_id": "C52",
+      "claim": "Input resistance exhibited a drop with developmental age.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected for developing animals, input resistance exhibited a drop with developmental age (naive mean: 222.9 \u00b1 57.9 M\u03a9, experienced mean: 144.8 \u00b1 39.3 M\u03a9)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding consistent with developmental expectations.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:41:49.815737Z"
+    },
+    {
+      "id": "2b0db27c-dc1d-4ae1-8db3-7232a5f805b6",
+      "content_id": "3735adb4-3412-4548-8ac3-55eb22dc080f",
+      "claim_id": "C53",
+      "claim": "The firing rate vs. input current curves (F-I curves) were not different across the two groups.",
+      "claim_type": "EXPLICIT",
+      "source": "The firing rate vs. input current curves (F-I curves) were not different across the two groups (Figure 5IJK; f-I curve Kruskal-Wallis test of linear slopes: p<0.068).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding showing no significant difference.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:41:49.815737Z"
+    },
+    {
+      "id": "8215413e-5b17-4063-9a29-9dde3114f4d6",
+      "content_id": "3735adb4-3412-4548-8ac3-55eb22dc080f",
+      "claim_id": "C54",
+      "claim": "On average, experienced cells exhibited significantly higher firing rates than naive cells over a wide range of voltages.",
+      "claim_type": "EXPLICIT",
+      "source": "Generally, most naive cells exhibited smaller firing rates for a given voltage than the experienced cells, which reflects the increased excitability of the mature neurons. On average, experienced cells exhibited significantly higher firing rates than naive cells over a wide range of voltages (Figure 6G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from voltage-to-firing rate analysis shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:41:49.815737Z"
+    },
+    {
+      "id": "a8394dc5-6568-4eb4-ad86-8fbaba0ab9e4",
+      "content_id": "3735adb4-3412-4548-8ac3-55eb22dc080f",
+      "claim_id": "C55",
+      "claim": "The phenomenological model did an excellent job of reproducing the actual firing rates recorded for each stimulus and each cell for both naive and experienced cells.",
+      "claim_type": "EXPLICIT",
+      "source": "This phenomenological model did an excellent job of reproducing the actual firing rates recorded for each stimulus and each cell for both naive and experienced cells (Figure 7AB).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from model validation shown in Figure 7AB.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:41:49.815737Z"
+    },
+    {
+      "id": "c6280cf4-128b-4b9c-a981-6e665c31f331",
+      "content_id": "3735adb4-3412-4548-8ac3-55eb22dc080f",
+      "claim_id": "C56",
+      "claim": "Changes in the underlying selectivity of the voltage waveforms from naive to experienced was sufficient to confer increased direction selectivity values.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, changes in the underlying selectivity of the voltage waveforms from naive to experienced was sufficient to confer increased direction selectivity values across these conditions, but the increased gain of the experienced voltage-to-firing rate transforms were needed to also confer the higher firing rates observed in experienced animals (Figure 7CDEF).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a conclusion from the bootstrap simulation analysis shown in Figure 7.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:41:49.815737Z"
+    },
+    {
+      "id": "d0bc24dd-86b9-4a07-b6f9-3bcb6b231f2f",
+      "content_id": "3735adb4-3412-4548-8ac3-55eb22dc080f",
+      "claim_id": "C57",
+      "claim": "The increased gain of the experienced voltage-to-firing rate transforms were needed to confer the higher firing rates observed in experienced animals.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, changes in the underlying selectivity of the voltage waveforms from naive to experienced was sufficient to confer increased direction selectivity values across these conditions, but the increased gain of the experienced voltage-to-firing rate transforms were needed to also confer the higher firing rates observed in experienced animals (Figure 7CDEF).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a conclusion from the bootstrap simulation analysis shown in Figure 7.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:41:49.815737Z"
+    },
+    {
+      "id": "a16a2696-facf-4eaa-8d7c-e97fc9131895",
+      "content_id": "3735adb4-3412-4548-8ac3-55eb22dc080f",
+      "claim_id": "C58",
+      "claim": "The mature receptive fields became elongated along the temporal axis, particularly by exhibiting responses with shorter response latencies that did not exist in the naive state.",
+      "claim_type": "EXPLICIT",
+      "source": "On the one hand, the mature receptive fields became elongated along the temporal axis, particularly by exhibiting responses with shorter response latencies that did not exist in the naive state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary interpretation of the receptive field findings in the Discussion.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:41:49.815737Z"
+    },
+    {
+      "id": "d234d928-60d0-4125-9e3a-51cb7e62c3f5",
+      "content_id": "3735adb4-3412-4548-8ac3-55eb22dc080f",
+      "claim_id": "C59",
+      "claim": "The mature receptive fields also became significantly narrow in space-time, providing evidence for a narrowing process.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the mature receptive fields also became significantly narrow in space-time, providing evidence for a narrowing process.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary interpretation of the receptive field findings in the Discussion.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:41:49.815737Z"
+    },
+    {
+      "id": "33dfd212-a4d0-4ff4-a986-760aa3fbc0d4",
+      "content_id": "3735adb4-3412-4548-8ac3-55eb22dc080f",
+      "claim_id": "C60",
+      "claim": "At eye opening, neurons in vivo exhibit weak spiking activity.",
+      "claim_type": "EXPLICIT",
+      "source": "At eye opening, neurons in vivo exhibit weak spiking activity (Clemens et al., 2012) (this study)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge supported by citation and current study.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:41:49.815737Z"
+    },
+    {
+      "id": "92378c8f-c0f3-45fb-945e-4db768c17790",
+      "content_id": "3735adb4-3412-4548-8ac3-55eb22dc080f",
+      "claim_id": "C61",
+      "claim": "Both rats and ferrets exhibit wide action potentials at eye opening.",
+      "claim_type": "EXPLICIT",
+      "source": "and both rats (Kasper et al., 1994) and ferrets (this study) exhibit wide action potentials.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge supported by citation and current study.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:41:49.815737Z"
+    },
+    {
+      "id": "fda4e1c1-c817-421f-b606-e64da5b907d2",
+      "content_id": "3735adb4-3412-4548-8ac3-55eb22dc080f",
+      "claim_id": "C62",
+      "claim": "As neurons are maturing during this stage just after eye opening, their input resistance rapidly decreases.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, as neurons are maturing during this stage just after eye opening, their input resistance also rapidly decreases (Kasper et al., 1994; Desai et al., 2002; Wang et al., 2012)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:41:49.815737Z"
+    },
+    {
+      "id": "3e253df5-1d29-440e-b1c4-8956fc37b426",
+      "content_id": "3735adb4-3412-4548-8ac3-55eb22dc080f",
+      "claim_id": "C63",
+      "claim": "Previous studies in rats have shown that layer 4 neurons add synapses during this time.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies in rats have shown that layer 4 neurons add synapses during this time (Desai et al., 2002)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:41:49.815737Z"
+    },
+    {
+      "id": "20471760-7def-467b-9612-bdce6a7087e6",
+      "content_id": "3735adb4-3412-4548-8ac3-55eb22dc080f",
+      "claim_id": "C64",
+      "claim": "Spike threshold decreases during early visual development.",
+      "claim_type": "EXPLICIT",
+      "source": "and that spike threshold decreases (Kasper et al., 1994), presumably to bring the visual response rates up to mature values and to overcome the decreasing input resistance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge supported by citation with interpretation.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:41:49.815737Z"
+    },
+    {
+      "id": "8d5143c7-e5f0-4738-a011-1485f0e66105",
+      "content_id": "3735adb4-3412-4548-8ac3-55eb22dc080f",
+      "claim_id": "C65",
+      "claim": "The weight of feed-forward connections increases substantially at the retinogeniculate synapse (~50 fold over the first week of vision).",
+      "claim_type": "EXPLICIT",
+      "source": "In other feed-forward systems, the weight of feed-forward connections increases substantially: ~50 fold over the first week of vision at the retinogeniculate synapse (Chen and Regehr, 2000)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:41:49.815737Z"
+    },
+    {
+      "id": "c1938277-1579-444c-b147-a924197b09db",
+      "content_id": "3735adb4-3412-4548-8ac3-55eb22dc080f",
+      "claim_id": "C66",
+      "claim": "The weight of feed-forward connections increases 2\u20134 fold from P4 to P15 in the barrel cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "and 2\u20134 fold from P4 to P15 in the barrel cortex (Li et al., 2013)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:41:49.815737Z"
+    },
+    {
+      "id": "b1c45a68-3dd5-4495-8af7-5cca255c171c",
+      "content_id": "3735adb4-3412-4548-8ac3-55eb22dc080f",
+      "claim_id": "C67",
+      "claim": "Feed-forward synaptic contributions to visual cortex are likely to be increasing during development.",
+      "claim_type": "EXPLICIT",
+      "source": "Because subthreshold voltage responses increase over the first week of vision and because input resistance is going down, feed-forward synaptic contributions to visual cortex are also likely to be increasing, although we are not aware of direct measurements that would confirm this hypothesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis based on inference from the data and lack of direct measurements.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:41:49.815737Z"
+    },
+    {
+      "id": "5766281f-54fc-4fd1-8910-fc6fcfe4953f",
+      "content_id": "3735adb4-3412-4548-8ac3-55eb22dc080f",
+      "claim_id": "C68",
+      "claim": "Increases in sodium channel density at the axon initial segment may underlie the enhancement in the maximum slope of Vm during an action potential (max dV/dt) and decreased threshold.",
+      "claim_type": "EXPLICIT",
+      "source": "Increases in sodium channel density at the axon initial segment may underlie the enhancement in the maximum slope of Vm during an action potential (max dV/dt) and decreased threshold observed here (Colbert and Pan, 2002; Kole et al., 2008; Hu et al., 2009; Grubb and Burrone, 2010; Kuba et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mechanistic hypothesis supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:41:49.815737Z"
+    },
+    {
+      "id": "389380ae-bb1a-434f-b4c5-a19ac7052f3a",
+      "content_id": "3735adb4-3412-4548-8ac3-55eb22dc080f",
+      "claim_id": "C69",
+      "claim": "The spike threshold non-linearity contributes substantially to cortical direction selectivity.",
+      "claim_type": "EXPLICIT",
+      "source": "The spike threshold non-linearity contributes substantially to cortical direction selectivity (Reid et al., 1987; Jagadeesh et al., 1993; Priebe et al., 2004; Priebe and Ferster, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:41:49.815737Z"
+    },
+    {
+      "id": "519f2cae-8638-4963-a390-60d4116a3b74",
+      "content_id": "3735adb4-3412-4548-8ac3-55eb22dc080f",
+      "claim_id": "C70",
+      "claim": "Increased input-output gain did not, by itself, account for the increased direction selectivity index values.",
+      "claim_type": "EXPLICIT",
+      "source": "The experiments here show that increased input-output gain does contribute to the increased firing rates that are observed in experienced animals, but that increased input-output gain did not, by itself, account for the increased direction selectivity index values (see Figure 7CD).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a conclusion from the experimental findings shown in Figure 7.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:41:49.815737Z"
+    },
+    {
+      "id": "6e26a311-e842-4948-9f0e-877c2e936e3d",
+      "content_id": "3735adb4-3412-4548-8ac3-55eb22dc080f",
+      "claim_id": "C71",
+      "claim": "Changes in the underlying voltage responses were necessary to confer increased direction selectivity.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, changes in the underlying voltage responses were necessary to confer increased direction selectivity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from the experimental findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:41:49.815737Z"
+    },
+    {
+      "id": "dc951a4b-f952-4685-b497-9170675848a6",
+      "content_id": "3735adb4-3412-4548-8ac3-55eb22dc080f",
+      "claim_id": "C72",
+      "claim": "The number of excitatory synapses being formed in ferret and human visual cortex during this time are greatly increasing.",
+      "claim_type": "EXPLICIT",
+      "source": "These results fit nicely with prior anatomical observations that the number of excitatory synapses being formed in ferret and human visual cortex during this time are greatly increasing (Huttenlocher, 1990; Durack and Katz, 1996; Ruthazer and Stryker, 1996; White et al., 2001; Erisir and Harris, 2003; White and Fitzpatrick, 2007)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:41:49.815737Z"
+    },
+    {
+      "id": "1829550b-dd88-4aac-881f-140cf4db170e",
+      "content_id": "3735adb4-3412-4548-8ac3-55eb22dc080f",
+      "claim_id": "C73",
+      "claim": "LGN neuron latency drops during the first weeks of visual experience.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, LGN neuron latency drops during the first weeks of visual experience Tavazoie and Reid, 2000",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:41:49.815737Z"
+    },
+    {
+      "id": "70a4eceb-6aed-4e99-bccb-4a74700db8fb",
+      "content_id": "3735adb4-3412-4548-8ac3-55eb22dc080f",
+      "claim_id": "C74",
+      "claim": "There is clear evidence linking the spatiotemporal structure of LGN inputs to direction selectivity in V1 in mice and carnivores.",
+      "claim_type": "EXPLICIT",
+      "source": "Regardless of whether LGN inputs are altered or constant, there is clear evidence linking the spatiotemporal structure of LGN inputs to direction selectivity in V1 in mice and carnivores (Kremkow et al., 2016; Lien and Scanziani, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:41:49.815737Z"
+    },
+    {
+      "id": "36bfd197-e728-4637-a713-321392cd6565",
+      "content_id": "3735adb4-3412-4548-8ac3-55eb22dc080f",
+      "claim_id": "C75",
+      "claim": "Only female ferrets were used because housing mature male and female ferrets in the same room causes significant hormonal stress for the female animals if they are not allowed to mate.",
+      "claim_type": "EXPLICIT",
+      "source": "Only female ferrets were used because housing mature male and female ferrets in the same room causes significant hormonal stress for the female animals if they are not allowed to mate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological justification based on animal welfare considerations.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:41:49.815737Z"
+    },
+    {
+      "id": "14ddc71e-0d71-4686-b2af-933d1c1ead22",
+      "content_id": "3735adb4-3412-4548-8ac3-55eb22dc080f",
+      "claim_id": "C76",
+      "claim": "Cells were classified as simple or complex by comparing the fundamental (F1) and the DC components (F0) of the visual responses.",
+      "claim_type": "EXPLICIT",
+      "source": "Cells were classified as simple or complex by comparing the fundamental (F1) and the DC components (F0) of the visual responses (Carandini and Ferster, 2000; Mechler and Ringach, 2002; Priebe et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological description supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:41:49.815737Z"
+    },
+    {
+      "id": "ab062c30-5e7b-4b51-bffa-6fcd09da647d",
+      "content_id": "3735adb4-3412-4548-8ac3-55eb22dc080f",
+      "claim_id": "C77",
+      "claim": "Cells with spike modulation ratio equal to or greater than 1.0 were classified as simple, while the rest were categorized as complex.",
+      "claim_type": "EXPLICIT",
+      "source": "Cells with spike modulation ratio equal to or greater than 1.0 were classified as simple, while the rest were categorized as complex (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a methodological description of cell classification criteria.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:41:49.815737Z"
+    },
+    {
+      "id": "15314617-f253-4361-a7af-a9069cde57a7",
+      "content_id": "3735adb4-3412-4548-8ac3-55eb22dc080f",
+      "claim_id": "C78",
+      "claim": "The dataset contained 10 simple and 13 complex cells in the naive group, and 16 simple and 13 complex cells in the experienced group.",
+      "claim_type": "EXPLICIT",
+      "source": "According to this classification, our dataset contained 10 simple and 13 complex cells in the naive group, and 16 simple and 13 complex cells in the experienced group.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the dataset composition.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:41:49.815737Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "5932b236-8ce3-4243-a5c3-57580bbd1655",
+      "content_id": "3735adb4-3412-4548-8ac3-55eb22dc080f",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Direction selectivity increases significantly from naive to experienced animals at both subthreshold (Vm) and suprathreshold (spike) levels. The increase is driven primarily by enhanced responses to the preferred direction rather than suppression of null direction responses. While Vm responses to the preferred direction increased modestly (32%), spiking responses increased dramatically (274%).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C18-C28 provide comprehensive statistical evidence (p<0.001 for multiple comparisons, n=23 naive, n=29 experienced) showing developmental increases in direction selectivity. The data clearly demonstrate that both F0 and F1 components become more direction-selective, and the discrepancy between modest Vm changes (32%) and dramatic spike changes (274%) is well-documented with appropriate statistical tests.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:41:49.815737Z"
+    },
+    {
+      "id": "41f9b76e-ba11-4cfd-854c-d8a90601c24f",
+      "content_id": "3735adb4-3412-4548-8ac3-55eb22dc080f",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Spatiotemporal receptive fields undergo significant reorganization during development. Experienced cells show more elongated and narrower receptive field subunits with increased eccentricity, smaller orientation angles, and extended temporal range achieved by incorporating shorter latency responses. Six of nine shape parameters differed significantly between groups, and these structural changes correlate with increased direction selectivity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31-C41 provide detailed quantitative analysis of receptive field structure with appropriate statistical tests (p<0.001 to p<0.05 for six parameters). The correlation analyses (C39, C40) linking structural parameters to direction selectivity strengthen the interpretation. The finding that minimum latencies decreased while maximum latencies remained constant (C36) is particularly well-supported with specific p-values.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:41:49.815737Z"
+    },
+    {
+      "id": "4653647f-a4d6-4ba2-9e2b-26ea128e9bbb",
+      "content_id": "3735adb4-3412-4548-8ac3-55eb22dc080f",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Cell-intrinsic excitability increases with visual experience, characterized by lower spike threshold, increased maximum dV/dt, narrower action potentials, and enhanced voltage-to-firing rate gain. These changes were observed both in vivo and confirmed in synaptically isolated slice preparations, indicating they are intrinsic cellular properties rather than network effects.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C54 provide robust evidence from both in vivo (C47-C49) and ex vivo (C50-C51) measurements with strong statistical significance (p<2.0e-04 to p<4.3e-04). The convergence of in vivo and slice data (C50) strengthens the conclusion that these are intrinsic changes. The voltage-to-firing rate analysis (C54) is supported by appropriate methods and Figure 6.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:41:49.815737Z"
+    },
+    {
+      "id": "aa01b82a-59b9-46a4-9ba1-99845834f16b",
+      "content_id": "3735adb4-3412-4548-8ac3-55eb22dc080f",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Both synaptic input reorganization and increased intrinsic excitability are necessary to explain the full developmental enhancement of direction selectivity and firing rates. Modeling simulations demonstrate that changes in voltage selectivity alone can increase direction selectivity but cannot account for the dramatic increases in firing rates without also incorporating the enhanced voltage-to-firing rate gain.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55-C57 describe bootstrap simulations (10,000 iterations) that systematically test the contributions of voltage changes versus gain changes. The phenomenological model successfully reproduces actual firing rates (C55), and the simulations clearly demonstrate that both mechanisms are required (C56-C57). This represents a rigorous computational dissection of the two mechanisms supported by Figure 7.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:41:49.815737Z"
+    },
+    {
+      "id": "d065a17d-5642-4fd1-a4a0-af2fc74d2188",
+      "content_id": "3735adb4-3412-4548-8ac3-55eb22dc080f",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The fraction of cells firing action potentials in response to visual stimuli increased significantly with experience. All experienced cells (29/29) fired spikes, while 9/23 naive cells did not fire at all.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C43 provide clear statistical evidence (p<0.05, Fisher Exact test) for both simple and complex cells. The complete absence of spiking in 9/23 naive cells versus 0/29 experienced cells is a striking and well-documented finding that supports the overall developmental narrative.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:41:49.815737Z"
+    },
+    {
+      "id": "2427f8dd-0721-45b5-9c4b-a5559accd79f",
+      "content_id": "3735adb4-3412-4548-8ac3-55eb22dc080f",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Firing rate versus input current curves (F-I curves) measured in slice preparations were not significantly different between naive and experienced groups.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C53 reports a non-significant result (p<0.068, Kruskal-Wallis test) that is appropriately interpreted in the Discussion. The authors provide a reasonable explanation for why F-I curves might not differ despite increased excitability in vivo, relating to the opposing effects of decreased input resistance and lowered spike threshold.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:41:49.815737Z"
+    },
+    {
+      "id": "ac75d83b-fbe4-4c99-a352-8e047c741607",
+      "content_id": "3735adb4-3412-4548-8ac3-55eb22dc080f",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The study used two age groups of female ferrets (naive: P30-34, n=10 animals, 23 cells; experienced: P40-60, n=11 animals, 29 cells). Cells were classified as simple or complex based on spike modulation ratio, yielding 10 simple and 13 complex cells in the naive group, and 16 simple and 13 complex cells in the experienced group.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C13 and C75-C78 describe the experimental design and dataset composition. The classification criteria are clearly stated and supported by citations (C76). The justification for using only females (C75) is provided. These methodological details are straightforward and well-documented.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:41:49.815737Z"
+    },
+    {
+      "id": "1a16eaec-d30c-4e52-88a1-23e4cce51034",
+      "content_id": "3735adb4-3412-4548-8ac3-55eb22dc080f",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Direction selectivity in ferret visual cortex develops rapidly after eye opening. At eye opening, neurons exhibit orientation selectivity but respond equally to opposite motion directions. The mechanisms underlying this development, particularly the role of cell-intrinsic properties, remain poorly understood.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1 and C7-C12 establish the background knowledge and motivation for the study. These are appropriately cited to prior literature (Hatta et al., 1998; Li et al., 2006; Clemens et al., 2012; Smith et al., 2015; DeAngelis et al., 1993b; Jagadeesh et al., 1993; McLean et al., 1994; Livingstone, 1998). The identification of knowledge gaps (C11-C12) appropriately motivates the current work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:41:49.815737Z"
+    },
+    {
+      "id": "975bb16e-c108-4d62-975a-b4a40ddba5da",
+      "content_id": "3735adb4-3412-4548-8ac3-55eb22dc080f",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The findings are consistent with prior literature showing developmental changes in visual system properties, including reduced response latencies in LGN, decreased input resistance, increased synapse formation, and decreased spike threshold during early visual development.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38 and C60-C66, C72-C74 appropriately cite and contextualize the current findings within established developmental neuroscience literature. The comparisons to prior work (Tavazoie and Reid, 2000; Kasper et al., 1994; Desai et al., 2002; Chen and Regehr, 2000; Huttenlocher, 1990; etc.) are appropriate and strengthen the interpretation of the results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:41:49.815737Z"
+    },
+    {
+      "id": "380a6627-9842-4263-bc47-53964fc5720c",
+      "content_id": "3735adb4-3412-4548-8ac3-55eb22dc080f",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Feed-forward synaptic contributions to visual cortex are likely increasing during development, and increases in sodium channel density at the axon initial segment may underlie the observed changes in spike properties.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C67-C68 are explicitly stated as hypotheses and speculation by the authors. C67 acknowledges the lack of direct measurements, and C68 proposes a mechanism based on analogy to prior work but without direct evidence. These are reasonable hypotheses but remain unconfirmed by the current data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:41:49.815737Z"
+    },
+    {
+      "id": "21794ebc-3566-4b09-94b5-d9f957c18fcb",
+      "content_id": "3735adb4-3412-4548-8ac3-55eb22dc080f",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The spike threshold non-linearity contributes substantially to cortical direction selectivity in mature animals.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C69 is appropriately cited to established literature (Reid et al., 1987; Jagadeesh et al., 1993; Priebe et al., 2004; Priebe and Ferster, 2005) and provides important context for interpreting the developmental changes in spike threshold observed in the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:41:49.815737Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "161104d3-fed6-42b5-b80a-3bb8988edc17",
+      "result_id": "5932b236-8ce3-4243-a5c3-57580bbd1655"
+    },
+    {
+      "claim_id": "26dd139c-cd7a-469c-b8df-4cc4b2733002",
+      "result_id": "5932b236-8ce3-4243-a5c3-57580bbd1655"
+    },
+    {
+      "claim_id": "aafeb886-f56c-4097-b40a-db3ddffe4edb",
+      "result_id": "5932b236-8ce3-4243-a5c3-57580bbd1655"
+    },
+    {
+      "claim_id": "f056e603-a030-44bd-a760-4cacfeacfe39",
+      "result_id": "5932b236-8ce3-4243-a5c3-57580bbd1655"
+    },
+    {
+      "claim_id": "8453253b-ea1b-4241-8542-0b026f58c8b3",
+      "result_id": "5932b236-8ce3-4243-a5c3-57580bbd1655"
+    },
+    {
+      "claim_id": "fd50d8e5-129a-4f09-a078-e9059b18c936",
+      "result_id": "5932b236-8ce3-4243-a5c3-57580bbd1655"
+    },
+    {
+      "claim_id": "023caede-90ef-41d5-b945-1bda689d370d",
+      "result_id": "5932b236-8ce3-4243-a5c3-57580bbd1655"
+    },
+    {
+      "claim_id": "ccfeba11-80fb-46a4-a019-8e6c629f3970",
+      "result_id": "5932b236-8ce3-4243-a5c3-57580bbd1655"
+    },
+    {
+      "claim_id": "2a7db243-5ca7-4058-ad00-1b66d0e2e2f1",
+      "result_id": "5932b236-8ce3-4243-a5c3-57580bbd1655"
+    },
+    {
+      "claim_id": "759794de-e64b-4a5d-bec7-3eaf2f86e568",
+      "result_id": "5932b236-8ce3-4243-a5c3-57580bbd1655"
+    },
+    {
+      "claim_id": "b191b556-6c10-4003-aac5-db321f37b21a",
+      "result_id": "5932b236-8ce3-4243-a5c3-57580bbd1655"
+    },
+    {
+      "claim_id": "e7122b85-485e-4149-a47f-98b633ecc1cd",
+      "result_id": "41f9b76e-ba11-4cfd-854c-d8a90601c24f"
+    },
+    {
+      "claim_id": "6314f6a3-39bc-40d8-9b19-39afcea23643",
+      "result_id": "41f9b76e-ba11-4cfd-854c-d8a90601c24f"
+    },
+    {
+      "claim_id": "e2fe615b-495e-436f-9690-1b9c5c980690",
+      "result_id": "41f9b76e-ba11-4cfd-854c-d8a90601c24f"
+    },
+    {
+      "claim_id": "ec06c343-e399-4e30-a88c-d29d7ce2b0fe",
+      "result_id": "41f9b76e-ba11-4cfd-854c-d8a90601c24f"
+    },
+    {
+      "claim_id": "b875412f-57d8-40c9-965d-baccd6766c47",
+      "result_id": "41f9b76e-ba11-4cfd-854c-d8a90601c24f"
+    },
+    {
+      "claim_id": "1a0bbd76-3ac9-405e-a2eb-1dd84a508493",
+      "result_id": "41f9b76e-ba11-4cfd-854c-d8a90601c24f"
+    },
+    {
+      "claim_id": "7c20a44f-3ed0-44b8-b7d9-7dd7ee2aafca",
+      "result_id": "41f9b76e-ba11-4cfd-854c-d8a90601c24f"
+    },
+    {
+      "claim_id": "4e005734-67c0-4d07-827d-5a07b3cb3fe2",
+      "result_id": "41f9b76e-ba11-4cfd-854c-d8a90601c24f"
+    },
+    {
+      "claim_id": "dfaac464-62db-48e9-98ee-98708d88e582",
+      "result_id": "41f9b76e-ba11-4cfd-854c-d8a90601c24f"
+    },
+    {
+      "claim_id": "6d9296ea-7c80-4b65-8a58-f115732237ed",
+      "result_id": "41f9b76e-ba11-4cfd-854c-d8a90601c24f"
+    },
+    {
+      "claim_id": "bb2c86d1-05a4-4192-8c29-3147436c135c",
+      "result_id": "41f9b76e-ba11-4cfd-854c-d8a90601c24f"
+    },
+    {
+      "claim_id": "3c7b8ce4-3a5b-45e3-bb47-06a503c173af",
+      "result_id": "41f9b76e-ba11-4cfd-854c-d8a90601c24f"
+    },
+    {
+      "claim_id": "ce2a64cd-432c-45fa-b724-bec16783dfc2",
+      "result_id": "41f9b76e-ba11-4cfd-854c-d8a90601c24f"
+    },
+    {
+      "claim_id": "d6c25885-e0ed-4ba1-bb20-3acbd9b058ff",
+      "result_id": "41f9b76e-ba11-4cfd-854c-d8a90601c24f"
+    },
+    {
+      "claim_id": "a16a2696-facf-4eaa-8d7c-e97fc9131895",
+      "result_id": "41f9b76e-ba11-4cfd-854c-d8a90601c24f"
+    },
+    {
+      "claim_id": "d234d928-60d0-4125-9e3a-51cb7e62c3f5",
+      "result_id": "41f9b76e-ba11-4cfd-854c-d8a90601c24f"
+    },
+    {
+      "claim_id": "2979d9c4-1158-45c8-b589-a3fee056d724",
+      "result_id": "4653647f-a4d6-4ba2-9e2b-26ea128e9bbb"
+    },
+    {
+      "claim_id": "61e74180-3935-4572-b48a-f0c5de2593bf",
+      "result_id": "4653647f-a4d6-4ba2-9e2b-26ea128e9bbb"
+    },
+    {
+      "claim_id": "9619e50a-76c1-4dd6-a1b6-305a4adf2330",
+      "result_id": "4653647f-a4d6-4ba2-9e2b-26ea128e9bbb"
+    },
+    {
+      "claim_id": "3de89871-3ed4-40ef-b3e8-0e579ad50497",
+      "result_id": "4653647f-a4d6-4ba2-9e2b-26ea128e9bbb"
+    },
+    {
+      "claim_id": "49ac435d-dd3c-482c-beeb-c5fa646ad963",
+      "result_id": "4653647f-a4d6-4ba2-9e2b-26ea128e9bbb"
+    },
+    {
+      "claim_id": "5609553e-fed5-4dd8-bec3-8190b64fcbe4",
+      "result_id": "4653647f-a4d6-4ba2-9e2b-26ea128e9bbb"
+    },
+    {
+      "claim_id": "632d8fe0-d327-4261-9245-6611b2b0acab",
+      "result_id": "4653647f-a4d6-4ba2-9e2b-26ea128e9bbb"
+    },
+    {
+      "claim_id": "588b5f34-3090-4a64-b5f7-47f0625dae91",
+      "result_id": "4653647f-a4d6-4ba2-9e2b-26ea128e9bbb"
+    },
+    {
+      "claim_id": "e130e375-7a9e-4df3-9316-7acb4d6a6032",
+      "result_id": "4653647f-a4d6-4ba2-9e2b-26ea128e9bbb"
+    },
+    {
+      "claim_id": "3eb0b696-a50d-47d6-8b61-40cca673b35a",
+      "result_id": "4653647f-a4d6-4ba2-9e2b-26ea128e9bbb"
+    },
+    {
+      "claim_id": "899f8a44-1923-4896-9f92-b94783b796bb",
+      "result_id": "4653647f-a4d6-4ba2-9e2b-26ea128e9bbb"
+    },
+    {
+      "claim_id": "d24b1972-33b6-49d5-9cd1-2e550ba2a49d",
+      "result_id": "4653647f-a4d6-4ba2-9e2b-26ea128e9bbb"
+    },
+    {
+      "claim_id": "8215413e-5b17-4063-9a29-9dde3114f4d6",
+      "result_id": "4653647f-a4d6-4ba2-9e2b-26ea128e9bbb"
+    },
+    {
+      "claim_id": "2baa478a-5dab-4c37-b50b-64a7c9e4dc0b",
+      "result_id": "aa01b82a-59b9-46a4-9ba1-99845834f16b"
+    },
+    {
+      "claim_id": "e0860dcb-b960-4a83-bb6d-b4770d12b218",
+      "result_id": "aa01b82a-59b9-46a4-9ba1-99845834f16b"
+    },
+    {
+      "claim_id": "60c12917-ec12-46c7-8a69-9c2009761319",
+      "result_id": "aa01b82a-59b9-46a4-9ba1-99845834f16b"
+    },
+    {
+      "claim_id": "3878b1a3-bcf5-42ba-a76a-17543bfed681",
+      "result_id": "aa01b82a-59b9-46a4-9ba1-99845834f16b"
+    },
+    {
+      "claim_id": "a8394dc5-6568-4eb4-ad86-8fbaba0ab9e4",
+      "result_id": "aa01b82a-59b9-46a4-9ba1-99845834f16b"
+    },
+    {
+      "claim_id": "c6280cf4-128b-4b9c-a981-6e665c31f331",
+      "result_id": "aa01b82a-59b9-46a4-9ba1-99845834f16b"
+    },
+    {
+      "claim_id": "d0bc24dd-86b9-4a07-b6f9-3bcb6b231f2f",
+      "result_id": "aa01b82a-59b9-46a4-9ba1-99845834f16b"
+    },
+    {
+      "claim_id": "519f2cae-8638-4963-a390-60d4116a3b74",
+      "result_id": "aa01b82a-59b9-46a4-9ba1-99845834f16b"
+    },
+    {
+      "claim_id": "6e26a311-e842-4948-9f0e-877c2e936e3d",
+      "result_id": "aa01b82a-59b9-46a4-9ba1-99845834f16b"
+    },
+    {
+      "claim_id": "437bc8b8-2d76-4d2c-9dfe-496ed261af77",
+      "result_id": "d065a17d-5642-4fd1-a4a0-af2fc74d2188"
+    },
+    {
+      "claim_id": "eba354c7-65a0-411e-bf03-c773ec9011ce",
+      "result_id": "d065a17d-5642-4fd1-a4a0-af2fc74d2188"
+    },
+    {
+      "claim_id": "2b0db27c-dc1d-4ae1-8db3-7232a5f805b6",
+      "result_id": "2427f8dd-0721-45b5-9c4b-a5559accd79f"
+    },
+    {
+      "claim_id": "1cf267cb-5621-450f-9b13-553eee8b4b0f",
+      "result_id": "ac75d83b-fbe4-4c99-a352-8e047c741607"
+    },
+    {
+      "claim_id": "36bfd197-e728-4637-a713-321392cd6565",
+      "result_id": "ac75d83b-fbe4-4c99-a352-8e047c741607"
+    },
+    {
+      "claim_id": "14ddc71e-0d71-4686-b2af-933d1c1ead22",
+      "result_id": "ac75d83b-fbe4-4c99-a352-8e047c741607"
+    },
+    {
+      "claim_id": "ab062c30-5e7b-4b51-bffa-6fcd09da647d",
+      "result_id": "ac75d83b-fbe4-4c99-a352-8e047c741607"
+    },
+    {
+      "claim_id": "15314617-f253-4361-a7af-a9069cde57a7",
+      "result_id": "ac75d83b-fbe4-4c99-a352-8e047c741607"
+    },
+    {
+      "claim_id": "3d3a048a-38aa-4360-bf89-733c5219e432",
+      "result_id": "1a16eaec-d30c-4e52-88a1-23e4cce51034"
+    },
+    {
+      "claim_id": "20fc58b3-d3b8-4965-9932-03abf965bd99",
+      "result_id": "1a16eaec-d30c-4e52-88a1-23e4cce51034"
+    },
+    {
+      "claim_id": "bdc2709a-18ad-4943-b2fa-96d612d840ed",
+      "result_id": "1a16eaec-d30c-4e52-88a1-23e4cce51034"
+    },
+    {
+      "claim_id": "edd263c0-6670-4f38-a764-9bd725ec6ced",
+      "result_id": "1a16eaec-d30c-4e52-88a1-23e4cce51034"
+    },
+    {
+      "claim_id": "3a880475-2947-40a6-87e2-612b80614af1",
+      "result_id": "1a16eaec-d30c-4e52-88a1-23e4cce51034"
+    },
+    {
+      "claim_id": "45b4f835-3130-420c-b662-7c4ac77010ac",
+      "result_id": "1a16eaec-d30c-4e52-88a1-23e4cce51034"
+    },
+    {
+      "claim_id": "27ffb32c-d6b1-400e-933a-be20e7691893",
+      "result_id": "1a16eaec-d30c-4e52-88a1-23e4cce51034"
+    },
+    {
+      "claim_id": "2060ad23-a52c-40cc-b6ff-1e47e889e9b4",
+      "result_id": "975bb16e-c108-4d62-975a-b4a40ddba5da"
+    },
+    {
+      "claim_id": "33dfd212-a4d0-4ff4-a986-760aa3fbc0d4",
+      "result_id": "975bb16e-c108-4d62-975a-b4a40ddba5da"
+    },
+    {
+      "claim_id": "92378c8f-c0f3-45fb-945e-4db768c17790",
+      "result_id": "975bb16e-c108-4d62-975a-b4a40ddba5da"
+    },
+    {
+      "claim_id": "fda4e1c1-c817-421f-b606-e64da5b907d2",
+      "result_id": "975bb16e-c108-4d62-975a-b4a40ddba5da"
+    },
+    {
+      "claim_id": "3e253df5-1d29-440e-b1c4-8956fc37b426",
+      "result_id": "975bb16e-c108-4d62-975a-b4a40ddba5da"
+    },
+    {
+      "claim_id": "20471760-7def-467b-9612-bdce6a7087e6",
+      "result_id": "975bb16e-c108-4d62-975a-b4a40ddba5da"
+    },
+    {
+      "claim_id": "8d5143c7-e5f0-4738-a011-1485f0e66105",
+      "result_id": "975bb16e-c108-4d62-975a-b4a40ddba5da"
+    },
+    {
+      "claim_id": "c1938277-1579-444c-b147-a924197b09db",
+      "result_id": "975bb16e-c108-4d62-975a-b4a40ddba5da"
+    },
+    {
+      "claim_id": "dc951a4b-f952-4685-b497-9170675848a6",
+      "result_id": "975bb16e-c108-4d62-975a-b4a40ddba5da"
+    },
+    {
+      "claim_id": "1829550b-dd88-4aac-881f-140cf4db170e",
+      "result_id": "975bb16e-c108-4d62-975a-b4a40ddba5da"
+    },
+    {
+      "claim_id": "70a4eceb-6aed-4e99-bccb-4a74700db8fb",
+      "result_id": "975bb16e-c108-4d62-975a-b4a40ddba5da"
+    },
+    {
+      "claim_id": "b1c45a68-3dd5-4495-8af7-5cca255c171c",
+      "result_id": "380a6627-9842-4263-bc47-53964fc5720c"
+    },
+    {
+      "claim_id": "5766281f-54fc-4fd1-8910-fc6fcfe4953f",
+      "result_id": "380a6627-9842-4263-bc47-53964fc5720c"
+    },
+    {
+      "claim_id": "389380ae-bb1a-434f-b4c5-a19ac7052f3a",
+      "result_id": "21794ebc-3566-4b09-94b5-d9f957c18fcb"
+    }
+  ],
+  "comparisons": []
+}

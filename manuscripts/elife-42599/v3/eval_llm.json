@@ -1,0 +1,269 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "Chlamydomonas reinhardtii is a single-celled green algae with two flagella composed of microtubule-based axonemes that maintain equal and constant lengths. The organism serves as a canonical model for studying organelle size control, and loss of flagellar length control has dramatic physiological consequences including decreased swimming velocities and circular swimming patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3, C10-C14 provide well-established background knowledge about Chlamydomonas structure and function, supported by appropriate citations to prior work. These descriptive claims about the organism's morphology and the importance of flagellar length control are consistently reported in the literature and form the foundation for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C30",
+      "C32"
+    ],
+    "result": "Intraflagellar transport (IFT) involves motor-driven transport of tubulin and other proteins from the flagellar base to tip and back, with kinesin-2 providing anterograde transport and dynein providing retrograde transport. The injection rate of IFT particles is length-dependent, and kinesin-2 undergoes ballistic anterograde transport followed by diffusive retrograde motion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C16-C21, C30, C32 describe well-established features of IFT supported by appropriate citations to experimental literature. The length-dependent injection rate (C30) and ballistic-to-diffusive motion of kinesin-2 (C32) are cited to specific experimental studies, providing solid foundation for the modeling work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C15",
+      "C33",
+      "C34",
+      "C35",
+      "C42"
+    ],
+    "result": "Severing experiments demonstrate that flagella are coupled: after one flagellum is severed, the two flagella equalize at a shorter length over 10-20 minutes, then grow together to original lengths over 60-90 minutes. The timescale of flagellar length dynamics (~10 min) is much longer than the time for motors to traverse the flagellum (tens of seconds).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15, C33-C35, C42 describe experimental observations from severing experiments with appropriate citations and reference to Figure 1b showing data from 20 experiments. The separation of timescales is clearly demonstrated and provides justification for the quasi-steady state approximation used in modeling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C31",
+      "C36",
+      "C37",
+      "C103"
+    ],
+    "result": "Length-dependent injection of IFT particles arises from mass action kinetics of proteins in limiting amounts, yielding the flux equation J = (k_on M)/(1 + k_on L/v + k_on L\u00b2/2D). The quasi-steady state approximation is validated by comparison to stochastic simulations and justified by the separation of timescales.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31, C36, C37, C103 present a key theoretical result derived from first principles and validated against stochastic simulations (Figure 2b). The derivation is shown in Materials and methods, and the timescale separation provides clear justification for the approximation. The validation against simulations strengthens confidence in the approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C25",
+      "C41",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C52",
+      "C55",
+      "C71",
+      "C72"
+    ],
+    "result": "The limiting-pool assumption alone is insufficient for simultaneous length control of two flagella. Constant disassembly models fail to capture rapid length equalization observed in severing experiments regardless of how tubulin and motors are shared between flagella. When both are shared, the system becomes indeterminate; when only one is shared, steady-state lengths are unequal after severing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C6, C25, C41-C52, C55, C71-C72 present a systematic analysis ruling out constant disassembly models through mathematical analysis and comparison to experimental data (Figure 3b). The logic is sound: constant disassembly models predict no change in steady-state immediately after severing because basal pool concentrations are unchanged, contradicting observations. Each coupling scenario is analyzed and rejected based on specific failures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Adding external control mechanisms that replenish protein levels to target values destabilizes flagellar lengths in constant disassembly models. This result is general and independent of the specific form of the control mechanism, as steady-state equations become independent of length when free protein levels are driven to fixed targets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C59 present a compelling theoretical argument supported by experimental citation (C56). The mathematical logic is clear: if Tf and Mf are driven to target values, the steady-state equation becomes 0 = \u03b3k_on M\u0304f T\u0304f - d, eliminating length dependence. The generality of the argument (C59) is correctly stated, as it depends only on the steady-state condition, not control mechanism details.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C27",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Microtubule-depolymerizing proteins have been observed within flagella, and experiments with intact IFT show 50-fold greater disassembly rates than in IFT-disabled mutants. Some kinesin species (e.g., kinesin-13) participate in microtubule disassembly, providing biochemical basis for IFT-dependent disassembly.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27, C60-C62 cite specific experimental observations that motivate the concentration-dependent disassembly model. The 50-fold difference in disassembly rates between intact and disabled IFT (C61) is a striking observation that challenges the constant disassembly assumption and is appropriately cited.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C73",
+      "C77"
+    ],
+    "result": "The concentration-dependent disassembly model yields simultaneous length control and captures rapid length equalization after severing. The model requires a concentration gradient of depolymerizing protein (achieved by ballistic transport to tip with diffusive return), which makes disassembly rates length-dependent. Unlike constant disassembly models, this model allows external control on protein levels and achieves length equalization with or without replenishment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C29, C63-C67, C73, C77 present the main positive result supported by mathematical analysis and comparison to experimental data (Figure 4). The model successfully captures both fast equalization and slow recovery phases when protein replenishment is included. The mechanism is clearly explained: concentration gradients create length-dependent disassembly, yielding independent steady-state equations for each flagellum.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C70",
+      "C78",
+      "C79",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C88",
+      "C89"
+    ],
+    "result": "The concentration-dependent disassembly model generalizes to N flagella with stable steady-states. The essential ingredient is a depolymerizing protein with a concentration gradient along the flagellum; the detailed form of the gradient and how it is generated are not critical. The model predicts that tubulin and depolymerizer pools must both be shared, and limiting pools of IFT motors are necessary for agreement with data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70, C78-C79, C82-C86, C88-C89 establish the generality and robustness of the model. The N-flagella generalization (C70, Figure 5) demonstrates scalability. The identification of the concentration gradient as the essential ingredient (C82-C83) with flexibility in implementation (C84) shows theoretical maturity. The predictions about pool sharing (C78) and limiting motors (C89) are testable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C104"
+    ],
+    "result": "The model differs from Hendel et al. (2018) in that diffusion must be combined with concentration-dependent disassembly; constant disassembly models fail regardless of motor dynamics. The Hendel et al. model achieves length equalization through instantaneous replenishment of motors lost to severing, which appears inconsistent with experiments showing equalization occurs even when protein synthesis is blocked.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C76, C104 provide critical comparison to prior work. The distinction is clearly articulated: Hendel et al. requires instantaneous motor replenishment for equalization, while the current model achieves it through concentration-dependent disassembly. The citation to cycloheximide experiments (C76) provides experimental support for the critique, though the authors appropriately use cautious language ('appears to be inconsistent').",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C87",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "The model predicts that the depolymerizer has increasing concentration toward the flagellar tip, which could be tested by fluorescent labeling. Such a depolymerizer has not yet been identified in Chlamydomonas. Kinesin-13 is unlikely to be the candidate as only negligible amounts are present at steady-state, but CALK and CNK2 are potential candidates based on their effects on disassembly.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C81, C87, C90-C95 appropriately discuss experimental predictions and candidate proteins. The prediction about concentration profiles (C80-C81) is testable and appropriately cited to similar work in Giardia. The discussion of candidates is balanced, acknowledging that the key depolymerizer remains unidentified (C90) while citing relevant experimental observations about potential candidates.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "The balance point model involves continual competition between assembly and disassembly, with steady-state length determined by the balance point. Previous work focused on single flagella with length-dependent assembly.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C24 provide accurate background on the balance point model framework with appropriate citation. These are well-established concepts in the field that frame the current work's contribution.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C8",
+      "C9"
+    ],
+    "result": "Nuclear size is tightly coupled with cell size across species, and loss of this coupling is implicated in cancer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C9 provide motivating context about organelle size control with appropriate citations. These are well-established observations that justify studying size control mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C54"
+    ],
+    "result": "Sharing all biomolecules between filaments does not yield simultaneous length control, a conclusion also reached for actin filaments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C54 appropriately cites parallel findings in actin systems, strengthening the generality of the conclusion about shared pools with constant disassembly.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C96",
+      "C97"
+    ],
+    "result": "Studying length fluctuations about steady-state could further test the active disassembly model, as fluctuation spectra provide signatures for assessing model frameworks and testing predicted timescales.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C97 appropriately suggest future theoretical work with citation to relevant methodology. This is reasonable speculation about how to further validate the model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C98"
+    ],
+    "result": "The flagellar geometry is fully described by its length given constant cross-sectional area, based on the regular axoneme structure revealed by cryo-EM.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C98 presents a reasonable modeling assumption supported by structural studies. The regular 9+2 microtubule structure justifies assuming constant cross-section.",
+    "result_type": "MINOR"
+  }
+]

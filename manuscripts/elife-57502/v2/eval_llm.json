@@ -1,0 +1,330 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "Submillimeter curvature domains exist in V4 with similar sizes (518 \u00b1 25 \u03bcm) and response amplitudes as orientation domains (479 \u00b1 16 \u03bcm), but these domains tend to spatially separate from orientation and color domains. Curvature domains occupy 12.1 \u00b1 1.7% of V4 surface compared to 22.3 \u00b1 3.7% for orientation domains, with significantly less overlap than expected by chance (p=0.03).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C45 provide quantitative measurements with appropriate statistical tests (paired t-test, n=7 cases) showing similar domain sizes. Claims C50-C52 demonstrate spatial separation with statistical significance (p=0.03). The measurements are consistent across multiple animals and imaging sessions (C38, C41), and the findings are replicated using two complementary imaging methods (ISOI and two-photon).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C9",
+      "C26",
+      "C27",
+      "C148"
+    ],
+    "result": "V1 and V2 do not exhibit contour-shape-related domains for curved stimuli, in contrast to V4. This absence was consistently observed across multiple cases and is consistent with prior fMRI findings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C26, C27 are directly supported by Figure 1D showing absence of circle vs. triangle patterns in V1 and V2 across all seven cases. Claim C148 confirms consistency with prior literature (Yue et al., 2014). The negative finding is strengthened by the positive control (presence of domains in V4 in the same preparations).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C6",
+      "C31",
+      "C32",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C107"
+    ],
+    "result": "Within curvature domains, neurons cluster into finer-scale subdomains based on preferences for circles versus curve orientations. Inside curvature domains, 25.6% of neurons prefer circles, 14.4% show dual-preference, and 19.2% prefer curve orientations, with these neuron types showing spatial clustering at ~360 \u03bcm scale.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C87 provide quantitative proportions from 1923 neurons across 10 imaging locations. Claims C90-C92 demonstrate spatial clustering with statistical support (Figure 6J showing shorter within-group distances). Claim C93 provides periodicity analysis showing ~360 \u03bcm subdomain size. The findings are consistent between ISOI (C31-C32) and two-photon imaging (C6, C90-C91), providing convergent evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C96",
+      "C97",
+      "C98",
+      "C111",
+      "C114",
+      "C133"
+    ],
+    "result": "Individual neurons within curvature domains exhibit substantial diversity in contour selectivity beyond their common preference for curved stimuli. Neighboring neurons show varied response patterns to the 73 tested stimuli, with diversity levels related to domain type.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C8 and C96-C97 are directly supported by single-neuron response matrices in Figures 6 and 7 showing diverse tuning profiles. Claims C69-C72 provide specific examples (cells 1-3) demonstrating within-domain heterogeneity. The diversity is quantified across 1923 neurons and is consistent with the complexity of response patterns observed. However, the limited stimulus set (C169: only 19 shapes) acknowledged by the authors may underestimate the full extent of diversity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C73",
+      "C74",
+      "C110"
+    ],
+    "result": "Two-photon calcium imaging confirms that curvature domains form columnar structures across cortical depths (210-350 \u03bcm), with consistent preference patterns between ISOI and two-photon measurements (Pearson r=0.42-0.43, p<10^-83). Different stimuli primarily modulate population response amplitudes rather than activating different cell populations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C68 are supported by two-photon imaging data from multiple depths at 10 locations in 2 cases. Claims C73-C74 provide strong statistical correlations between ISOI and two-photon measurements (n=1923 neurons, highly significant p-values). The columnar organization (C68, C110) is inferred from consistency across depths shown in Figures 4B-I. However, imaging was limited to superficial layers (210-350 \u03bcm), so the claim of columnar structure is only supported for \"at least the top V4 layers\" as stated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C156",
+      "C157",
+      "C158",
+      "C159",
+      "C161"
+    ],
+    "result": "Neurons preferring curved stimuli have smaller receptive fields (1.95 \u00b1 0.032\u00b0 inside vs 2.37 \u00b1 0.038\u00b0 outside curvature domains, p=1.15\u00d710^-14) and greater surround suppression, consistent with end-stopping properties. However, curvature neurons show additional curve-specific preferences beyond simple end-stopping.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C78 provide quantitative measurements with strong statistical support (p=1.15\u00d710^-14, n=1418 neurons with significant RF tuning). The relationship with end-stopping (C79, C158) is supported by citations to prior literature. Claims C159 and C161 argue that curvature neurons are not simply end-stopping neurons based on additional features (curve-orientation tuning, preference for curves over angles), which is demonstrated in Figure 6. The argument is logical but could benefit from more direct comparison with classical end-stopping neurons.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "Curvature domain neurons show much higher response amplitudes and larger differences between curved and rectilinear responses than neurons in rectilinear domains or outside both domain types. However, curvature neurons also respond to rectilinear stimuli at about half amplitude, and rectilinear domain neurons show weak differentiation between stimulus types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C103 are supported by average response matrices in Figure 8A-C comparing three neuron populations (n=722 curvature, n=411 rectilinear, n=423 outside). The weak rectilinear domains (C102-C103) are consistent with ISOI observations (Figure 1D). The findings demonstrate that functional domains represent relative preferences rather than absolute selectivity, which is an important characterization of the organization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C80"
+    ],
+    "result": "Similar V4 patterns were observed across circle vs. triangle, circle vs. line, and curve vs. line maps, suggesting that curviness is the key contour feature responsible for curvature domain activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C29 is supported by visual comparison of Figures 1D, G, and H showing similar spatial patterns. Claim C30 represents a reasonable inference that curviness is the common feature, though alternative explanations (e.g., closure, smoothness) are not explicitly ruled out. The consistency across different curved stimuli (C80) strengthens this interpretation. The inference is logical but could be tested more rigorously with parametric variation of curvature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C54",
+      "C55"
+    ],
+    "result": "Triangle-activated cortical regions are significantly weaker and more diffused than curvature domains, with triangle-preferring patches tending to overlap with orientation domains (p=0.003) but not color domains (p=0.17). Angle-orientation subdomains are absent, unlike curve-orientation subdomains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C37 are supported by visual comparison of maps in Figures 1D-L showing weaker and more diffuse patterns for triangles/angles. Claims C54-C55 provide statistical support for overlap patterns (n=7 cases). The absence of angle-orientation subdomains (C37) is demonstrated by comparing Figures 1I and 1L. These findings suggest asymmetry in how curved versus angular features are organized in V4.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C139"
+    ],
+    "result": "Curvature domains are consistently observed across seven hemispheres from six macaque monkeys, spanning the entire exposed V4 surface (0-10\u00b0 eccentricity), with peripheral V4 preferring larger circles. Patterns are stable over months and robust to variations in viewing conditions and stimulus parameters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C38 is supported by consistent patterns shown in Figure 2B and supplements across all seven cases. Claims C39-C40 are demonstrated in Figure 2\u2014figure supplement 2A-D showing eccentricity-dependent size preferences. Claims C41-C42 demonstrate stability and robustness through repeated imaging and parameter variations. The replication across multiple animals and conditions strengthens confidence in the findings, though the sample size (n=7 hemispheres from 6 animals) is modest.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C160"
+    ],
+    "result": "Circle-preferring neurons show responses that increase approximately linearly with circle fragment length and are proportional to shape similarity to circles. These neurons prefer complete circles over half-circles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C95 are supported by population-averaged responses in Figure 6K showing systematic relationships between stimulus properties and responses. Claim C160 is demonstrated in the same figure. However, the characterization is based on a limited set of stimuli (circle fragments, closed shapes), and the \"approximately linear\" relationship is qualitative rather than quantitatively tested with regression analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C162",
+      "C163",
+      "C164",
+      "C165",
+      "C166",
+      "C167"
+    ],
+    "result": "Curvature domains are unlikely to be suppression-domains (S-domains) because stimulus pairs had similar sizes (similar surround suppression), balanced orientations, and little overlap with orientation maps, with curvature being the only consistent contrast.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C162-C167 present a logical argument based on stimulus design and domain overlap analysis. The argument is strengthened by the demonstration that curvature domains separate from orientation domains (C50-C52, p=0.03). However, this is an argument by exclusion rather than direct demonstration. More direct tests (e.g., varying stimulus size systematically, measuring surround suppression for different stimulus types) would strengthen the conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C23",
+      "C59",
+      "C60",
+      "C61",
+      "C181",
+      "C182",
+      "C183",
+      "C184"
+    ],
+    "result": "The experimental preparation involved imaging seven hemispheres from six adult male macaque monkeys, with ISOI performed on all cases and two-photon imaging on two cases. The exposed V4 region corresponded to 0-10\u00b0 eccentricity, and two-photon imaging targeted regions with population RF ~4\u00b0 in size at ~7\u00b0 eccentricity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C181-C184 describe the experimental subjects and procedures, which are clearly documented in the Methods section. Claims C23, C59-C61 provide specific details about the imaging regions and targeting strategy. These are straightforward methodological descriptions that are well-supported by the manuscript. The ethical approval (C184) is properly documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C168",
+      "C169",
+      "C170",
+      "C174"
+    ],
+    "result": "The study has acknowledged limitations including a limited stimulus set (19 simple contour shapes with mostly four orientations), anesthetized preparation, and calcium signal constraints. The identified best-driven stimuli may not be optimal for the neurons, though they likely represent features present in actual optimal stimuli.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C168-C170 are explicitly acknowledged limitations by the authors. Claim C174 is speculation based on comparison with deep-learning findings (C171-C173). The authors appropriately recognize these limitations, which is important for interpreting the results. The limited stimulus set (C169) is a significant constraint that may affect the characterization of neuronal diversity and optimal preferences.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C1",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "The study is motivated by established knowledge about V4's role in shape processing and a gap in understanding the submillimeter-scale functional organization for intermediate-complexity shape features like curvatures, which prior fMRI studies could only resolve at cm-scale.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C11-C14, C16-C18 cite established knowledge from prior literature with appropriate references. Claims C15, C19, C21-C22 identify gaps in knowledge that motivate the current study. The motivation is well-grounded in prior work and clearly articulates the scientific question. Claim C20 appropriately cites prior fMRI work (Yue et al., 2014) while noting its spatial resolution limitations (C21).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146"
+    ],
+    "result": "The current study's findings are compared with concurrent work by Jiang et al., 2019 and Hu et al., 2020, with the unique contribution being the direct linking of functional domain properties (via ISOI) with underlying neural responses (via two-photon imaging) across the entire V4 surface.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C135-C146 appropriately contextualize the current work relative to concurrent studies. The comparison is fair and accurately identifies complementary strengths: Jiang et al. provided cellular-level detail but lacked domain-scale information (C137), while Hu et al. provided ISOI findings similar to the current study (C141-C142). Claim C146 correctly identifies the unique contribution of combining both methods in the same preparation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C10",
+      "C116",
+      "C121",
+      "C149",
+      "C150",
+      "C151"
+    ],
+    "result": "V4 plays a key functional role in curvature processing, containing clear maps for curvature that emerge in V4 (not V1/V2) and remain present in IT. V4's possession of both orientation maps (like V1/V2) and curvature maps (like IT) indicates its intermediate-stage role in the shape processing hierarchy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10 and C116 are supported by the current findings and consistent with prior literature (Pasupathy and Connor series, Yue et al., 2014). Claim C121 is a reasonable inference from the presence of clear curvature domains. Claims C149-C151 synthesize the current findings with prior work to position V4 in the processing hierarchy. The logic is sound, though the hierarchical interpretation is somewhat inferential and could be tested more directly with comparative studies.",
+    "result_type": "MINOR"
+  }
+]

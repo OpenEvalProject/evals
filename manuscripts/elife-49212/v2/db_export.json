@@ -1,0 +1,1589 @@
+{
+  "submission": {
+    "id": "14a398f6-2702-4f60-b26a-14a444d9959e",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T12:57:49.627753Z",
+    "updated_at": "2025-12-02T12:57:49.627753Z"
+  },
+  "content": [
+    {
+      "id": "9665823f-b228-47fe-b323-01cf6c1a3537",
+      "submission_id": "14a398f6-2702-4f60-b26a-14a444d9959e",
+      "content_type": "manuscript",
+      "content_text": "# Rare variants contribute disproportionately to quantitative trait variation in yeast\n\n## Authors\n\n- Joshua S Bloom<sup>1</sup> ([ORCID: 0000-0002-7241-1648](https://orcid.org/0000-0002-7241-1648)) \u2020\n- James Boocock<sup>1</sup>\n- Sebastian Treusch<sup>1</sup>\n- Meru J Sadhu<sup>1</sup>\n- Laura Day<sup>1</sup>\n- Holly Oates-Barker<sup>1</sup>\n- Leonid Kruglyak<sup>1</sup> ([ORCID: 0000-0002-8065-3057](https://orcid.org/0000-0002-8065-3057)) \u2020\n\n### Affiliations\n\n1. Department of Human Genetics University of California, Los Angeles Los Angeles United States\n2. Department of Biological Chemistry University of California, Los Angeles Los Angeles United States\n3. Howard Hughes Medical Institute, University of California, Los Angeles Los Angeles United States\n4. Institute for Quantitative and Computational Biology University of California, Los Angeles Los Angeles United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nHow variants with different frequencies contribute to trait variation is a central question in genetics. We use a unique model system to disentangle the contributions of common and rare variants to quantitative traits. We generated ~14,000 progeny from crosses among 16 diverse yeast strains and identified thousands of quantitative trait loci (QTLs) for 38 traits. We combined our results with sequencing data for 1011 yeast isolates to show that rare variants make a disproportionate contribution to trait variation. Evolutionary analyses revealed that this contribution is driven by rare variants that arose recently, and that negative selection has shaped the relationship between variant frequency and effect size. We leveraged the structure of the crosses to resolve hundreds of QTLs to single genes. These results refine our understanding of trait variation at the population level and suggest that studies of rare variants are a fertile ground for discovery of genetic effects.\n\n## Introduction\n\nA detailed understanding of the sources of heritable variation is a central goal of modern genetics. Genome-wide association studies (GWAS) in humans (Visscher et al., 2017) have implicated tens of thousands of DNA sequence variants in disease risk and quantitative trait variation, but these variants fail to account for the entire heritability of diseases and traits. One key question is the relative contribution of DNA sequence variants with different allele frequencies in a population to trait variation. GWAS by design only test common DNA sequence variants; however, recent studies underscore the likely importance of the contribution of rare variants to heritable variation (Wainschtein et al., 2019). Theoretical analyses have explored how factors such as mutational target size, pleiotropy, and the strength of selection shape the relationship between variant frequency and effect size (Eyre-Walker, 2010; Robinson et al., 2014; Simons et al., 2018). In particular, purifying selection against variants that negatively affect fitness is expected to keep them at low frequencies in a population, resulting in a predicted inverse relationship between effect sizes and allele frequencies for variants that influence fitness-related traits (Gibson, 2012; Goldstein et al., 2013; Kryukov et al., 2007; Pritchard, 2001).\n\nEmpirical results have been consistent with the theoretical expectation that rare variants should have larger effect sizes, or, equivalently, that variants implicated in trait variation should be shifted to lower frequencies relative to all variants. An increased burden of ultra-rare protein-truncating variants has been observed in human diseases (Ganna et al., 2018; Exome Aggregation Consortium et al., 2016), and multiple studies have found that GWAS variants with lower allele frequencies have larger effect sizes (Marouli et al., 2017; Park et al., 2011). A negative correlation between allele frequency and effect size has also been observed in maize GWAS (Wallace et al., 2014), and our previous work in yeast suggested that variants that contribute to trait variation are shifted to lower frequencies when compared to all sequence variants (Ehrenreich et al., 2012).\n\nRecent studies employed indirect variance partitioning approaches to uncover appreciable contributions of lower\u00a0frequency variants to heritability of complex traits in humans, including prostate cancer susceptibility (Mancuso et al., 2016), height (Wainschtein et al., 2019; Yang et al., 2015), and body mass index (Wainschtein et al., 2019). However, a direct comprehensive comparison of the effects of rare and common variants has been lacking in humans for two principal reasons. First, rare variants cannot be detected by GWAS by design, and sequencing studies have not reached sufficient sample sizes to find them with high statistical power (Zuk et al., 2014). As a result, most rare variants have to date escaped detection. Second, the power to detect a variant with any given effect size decreases with the frequency of the variant in the study, simply because fewer individuals in the sample carry a less-frequent variant (Zuk et al., 2014). This statistical artifact shifts the effect sizes of those rare variants that are detected upwards, confounding effect size and allele frequency and biasing any effort to measure the underlying relationship between the two.\n\nHere, we report a comprehensive study in yeast designed to overcome these limitations. We built a mapping population consisting of approximately one thousand progeny from each of 16 biparental crosses. In this mapping population, even variants that are rare in the yeast population and occur in only a single parental strain are present in approximately 1000 progeny, resulting in high power to detect them. We mapped thousands of QTLs that account for most of the heritable variation in 38 quantitative traits and measured the QTL effect sizes. We then decoupled variant frequency from effect size by measuring the population allele frequencies of QTL lead variants detected in our panel in a separate large catalog of sequenced yeast isolates (Peter et al., 2018). Analysis of these large complementary data sets enabled us to directly and comprehensively examine the relationship between QTL effect sizes and variant frequency, characterize the genetic architecture of quantitative traits on a population scale, and improve mapping resolution, in many cases to single genes.\n\n## Results\n\nTo investigate the genetic basis of quantitative traits in the yeast population, we selected 16 highly diverse S. cerevisiae strains that capture much of the known genetic diversity of this species. Specifically, they contain both alleles at 82% of biallelic SNPs and small indels observed at minor allele frequency\u00a0>5% in a collection of 1011 S. cerevisiae strains (Peter et al., 2018). We sequenced the 16 strains to high coverage in order to obtain a comprehensive set of genetic variants. We constructed a panel of 13,950 individual recombinant haploid yeast segregants by crossing each parental strain to two different strains and collecting an average of 872 progeny per cross (Figure 1; Figure 1\u2014source data 1; Supplementary file 1). We genotyped these segregants by highly multiplexed whole-genome sequencing, with median 2.3-fold coverage per base per individual. Genotypes were called at 298,979 genetic variants, with an average of 71,117 genetic variants segregating in a single cross. We measured the growth of each segregant in 38 different environments in duplicate by automated assays and quantitative imaging (Materials\u00a0and\u00a0methods). Because the growth measurements in different environments are not strongly correlated, we treat them as separate phenotypes or traits (Bloom et al., 2013). The resulting genotype-by-phenotype matrix (over half a million phenotypic measurements and 158 billion combinations of genotype and phenotype) formed the basis for all downstream analyses.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/49212/elife-49212-fig1-v2.jpg)\n\n**Figure 1.:** 16 parental strains were chosen to represent the diversity of the S. cerevisiae population, as illustrated by their positions on a neighbor-joining tree based on 1011 sequenced isolates (Peter et al., 2018). These strains were crossed in a single round-robin design, with each strain crossed to two other strains, as depicted by lines connecting the colored circles. Colors indicate the ecological origins of the parental strains.\n\nWe used a variance components model (Bloom et al., 2015; de los Campos et al., 2015; Yang et al., 2010) to show that, on average, additive genetic effects accounted for just over half of the total phenotypic variance, while pairwise genetic interactions accounted for 8%, approximately 1/6 as much as additive effects (Figure 2 inset; Supplementary file 2; Figure 2\u2014source data 1). We carried out QTL mapping to find the specific loci contributing additively to trait variation. We used a joint mapping approach that leverages information across the entire panel of 13,950 segregants (Materials\u00a0and\u00a0methods). We mapped 4552 QTLs at a false discovery rate (FDR) of 5%, with an average of 120 (range 52\u2013195) QTLs per trait (Supplementary file 3; Figure 3\u2014source data 1). The detected QTLs explain a median of 73% of the additive heritability per trait and cross, showing that we can account for most of the genetic contribution to trait variation with specific loci (Figure 2; Figure 2\u2014source data 1). We complemented the joint analysis with QTL mapping within each cross and found a median of 12 QTLs per trait at the same FDR of 5%. The detected loci explained a median of 68% of the additive heritability (Figure 2\u2014source data 1). The joint analysis was more powerful, explaining an additional 5% of trait variance and uncovering 458 QTLs not detected within individual crosses. Consistent with the higher statistical power of the joint analysis, these additional QTLs had smaller effect sizes (median of 0.071 SD units vs 0.083 SD units; Wilcoxon rank sum test W\u00a0=\u00a01e6, p=9e-5). All subsequent results are based on the QTLs detected in the joint analysis.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/49212/elife-49212-fig2-v2.jpg)\n\n**Figure 2.:** Whole-genome estimates of additive genetic variance (X-axis) are plotted against cross-validated estimates of trait variance explained by detected QTLs (Y-axis) for each trait-cross combination. Red points show values for the BY-RM cross. The diagonal line corresponds to detected QTLs explaining all of the estimated additive genetic variance, and is shown as a visual guide. (Inset) A histogram of the ratio of non-additive to additive genetic variance for each trait-cross combination, based on estimates from a variance component model.\n\nTo investigate the relationship between variant frequency and QTL effects, we focused on biallelic variants observed in our panel whose frequency could be measured in a large collection of 1011 sequenced yeast strains. Based on their minor allele frequency (MAF) in this collection, we designated variants as rare (MAF\u00a0<0.01) or common (MAF\u00a0>0.01). By this definition, 27.8% of biallelic variants in our study were rare. For each trait, we computed the relative fraction of variance explained by these two categories of variants in the segregant panel (Materials\u00a0and\u00a0methods) (Yang et al., 2015). Across all traits, the median contribution of rare variants was 51.7%, despite the fact that they constituted only 27.8% of all variants and that a rare variant is expected to explain less variance than a common one with the same allelic effect size. These results are consistent with rare variants having larger effect sizes and making a disproportionate contribution to trait variation. Comparing different traits, we saw a wide range of the relative contribution of rare variants, from almost none for growth in the presence of copper sulfate and lithium chloride to over 75% for growth in the presence of cadmium chloride, in low pH, at high temperature, and on minimal medium (Figure 3A; Figure 3\u2014figure supplement 1; Figure 3\u2014source data 2). The results for copper sulfate and lithium chloride are consistent with GWAS for these traits in the 1011 sequenced yeast strains\u2014these two traits had the most phenotypic variance explained by detected GWAS loci, which inherently correspond to common variants, with large contributions coming from known common copy-number variation at the CUP and ENA loci, respectively (Peter et al., 2018).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/49212/elife-49212-fig3-v2.jpg)\n\n**Figure 3.:** (A) Stacked bar plots of additive genetic variance explained by rare (blue) and common (gray) variants. Error bars show +\u00a0/-\u00a0s.e. (B) Minor allele frequency (X-axis) of the lead variant at each QTL (Peter et al., 2018) is plotted against QTL effect size (Y-axis). Red points show mean QTL effect sizes for groups of approximately 100 variants binned by allele frequency. Error bars show +\u00a0/-\u00a0s.e.m. (C) Frequency of the derived allele of each QTL lead variant (X-axis), based on comparison with S. paradoxus, is plotted against QTL effect size (Y-axis). Negative values on the Y-axis correspond to variants with effects that are detrimental for growth.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/49212/elife-49212-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Stacked bar plots of a variance component analysis for each trait are shown. Results are the same as in Figure 3A except that the fraction of phenotypic variance, instead of the fraction of total additive variance, is indicated. The variance component model splits the additive genetic variance into the fraction coming from variants with MAF\u00a0<1% (blue) and MAF\u00a0>1% (gray). Error bars show +\u00a0/-\u00a0s.e. (B) Same as in (A), except a seven allele-frequency bin variance component model was fit per trait. (C) Same as in (B), except only private variants (segregating in two crosses) were used in the analysis. This model makes no assumption about the relationship between allele-frequency in the mapping panel and effect sizes.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/49212/elife-49212-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** Simulated architectures and resulting inference based on lead variants. In the leftmost panels, the X-axis is the MAF of simulated causal variants, the Y-axis is the simulated average absolute effect of a simulated causal variant. In the rightmost panels, the X-axis is the MAF of the detected lead variants, and the Y-axis is the estimate of the average absolute effect of the detected lead variants. The top two panels correspond to a simulated architectures of 20 traits, where for each trait 200 causal variants were drawn at random from all variants, effects were sampled from a normal distribution N(0, 0.05), and total additive heritability was 60%. This is designated Simulation 1. The bottom two panels correspond to a simulated architectures of 20 traits, where for each trait 200 causal variants were drawn at random from all variants, effects were sampled from a normal distribution N(0, 0.05) for variants with MAF\u00a0>=\u00a01% and N(0,0.3) for variants with MAF\u00a0<1%, and total additive heritability was 60%. This is designated Simulation 2.\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/49212/elife-49212-fig3-figsupp3-v2.jpg)\n\n**Figure 3\u2014figure supplement 3.:** The minor allele frequency (X-axis) of the lead variant at each QTL is plotted against QTL effect size as in Figure 3B. Here results are shown separately for each phenotype.\n\n![Figure 3\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/49212/elife-49212-fig3-figsupp4-v2.jpg)\n\n**Figure 3\u2014figure supplement 4.:** Minor allele frequency (X-axis) of the lead variant at each QTL (Peter et al., 2018) is plotted against an unbiased estimate of QTL effect size.\n\n![Figure 3\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/49212/elife-49212-fig3-figsupp5-v2.jpg)\n\n**Figure 3\u2014figure supplement 5.:** The cumulative genetic variance explained (GVE) in our mapping panel (Y-axis) is plotted against minor allele frequency (X-axis) of the lead variants. Under an evolutionarily neutral model, the cumulative genetic variance explained is linearly proportional to MAF (the identity line MAF\u00a0=\u00a0cumulative genetic variance explained). Deviations from the identity are indicative of the action of selective forces.\n\nIn a complementary analysis, we investigated the relationship between the allele frequency of the lead variant at each QTL and the corresponding QTL effect size. Although the lead variant is not necessarily causal, in our study it is likely to be of similar frequency as the causal variant, and a simulation analysis showed that this approach largely preserves the relationship between frequency and effect size (Figure 3\u2014figure supplement 2). Most QTLs had small effects (64% of QTLs had effects less than 0.1 SD units) and most lead variants were common (78%), consistent with previous linkage and association studies. We observed that QTLs with large effects were highly enriched for rare variants, and conversely, that rare variants were highly enriched for large effect sizes (Figure 3B; Figure 3\u2014figure supplement 3; Figure 3\u2014figure supplement 4). For instance, among QTLs with an absolute effect of at least 0.3 SD units, 145 of the corresponding lead variants were rare and only 90 were common. Rare variants were 6.7 times more likely to have an effect greater than 0.3 SD (Figure 3\u2014source data 1, Fisher\u2019s exact test, p<2e-16). Theoretical population genetics models show that for traits under negative selection, variant effect size is expected to be a decreasing function of minor allele frequency (Eyre-Walker, 2010; Pritchard, 2001). We empirically observe this relationship in our data for most of the traits examined, providing evidence that they have evolved under negative selection in the yeast population (Figure 3\u2014figure supplement 5).\n\nThe existence of a close sister species of S. cerevisiae\u2014S. paradoxus\u2014allowed us to distinguish rare variants by their ancestral state. Variants that share the major allele with S. paradoxus are more likely to have arisen in the S. cerevisiae population recently than those that share the minor allele with S. paradoxus. We classified low-frequency variants as recent or ancient according to whether their major or minor allele was shared with S. paradoxus, respectively. Recently arising deleterious alleles have had less time to be purged by negative selection, and therefore recent variants are expected to have stronger effects on gene function, and hence manifest as QTLs with larger effects. Consistent with this expectation, we observed that recent variants were 1.8 times more likely than ancient variants to have an effect size greater than 0.1 SD units (Fisher\u2019s exact test p=9e-5) (Figure 3C). We further examined the direction of QTL effects and found that recent variants were 1.5 times more likely to decrease fitness (Fisher\u2019s exact test p=8e-3). Strikingly, no ancient variant decreased fitness by more than 0.5 SD units, whereas 41 recent variants did (Fisher\u2019s exact test p=7e-3).\n\nAn understanding of trait variation at the level of molecular mechanisms requires narrowing QTLs to the underlying causal genes. Such fine-mapping is a challenge because genetic linkage causes variants across an extended region to show mapping signals of similar strength. Statistical fine-mapping aims to address this challenge by estimating the probability that each variant within a QTL region is causal based on the precise pattern of genotype-phenotype correlations (Farh et al., 2015; Pasaniuc and Price, 2017; Treusch et al., 2015). Our crossing design enables us to obtain higher resolution for QTLs observed in two crosses that share a parent strain by looking for consistent inheritance patterns in both. Specifically, we focused on QTLs with effects greater than 0.14 SD units and used a Bayesian framework (Farh et al., 2015) to compute the posterior probability that each variant is causal (Figure 4A). We then aggregated these probabilities to obtain causality scores for each gene in a QTL. With this approach, we resolved 427 QTLs to single causal genes at an FDR of 20%. Because some QTLs have pleiotropic effects on multiple traits, this gene set contains 195 unique genes, greatly expanding the repertoire of causal genes in yeast. We searched the literature and found that 26 of the 195 genes identified here are supported by previous experimental evidence as causal for yeast trait variation (Fay, 2013; Jerison et al., 2017; Sadhu et al., 2016; Treusch et al., 2015; Wang and Kruglyak, 2014) (Figure 4B; Figure 4\u2014source data 1). At a more stringent FDR of 5%, we found 105 unique causal genes, which included 24 of the 26 genes with experimental evidence.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/49212/elife-49212-fig4-v2.jpg)\n\n**Figure 4.:** (A) Statistical fine-mapping of a QTL for growth in the presence of caffeine. Genetic mapping signal, shown as the coefficient of determination between genotype and phenotype (Y-axis, left), is plotted against genome position (X-axis) for crosses between 273614N and YJM981 (black) and YJM981 and CBS2888 (blue). The posterior probability of causality (PPC), plotted in red (Y-axis, right), localizes the QTL to a portion of the gene TOR1. (B) PPC is shown as black dots for 195 genes identified as causal at an FDR of 20%, sorted by PPC. Genes containing natural variants that have been experimentally validated as causal for trait variation in prior studies (Fay, 2013; Jerison et al., 2017; Sadhu et al., 2016; Treusch et al., 2015; Wang and Kruglyak, 2014) are shown in red and labeled with gene names.\n\nCausal genes were highly enriched for GO terms related to the plasma membrane (45 of 522, 16.5 expected, q\u00a0=\u00a01.8e-7), metal ion transport (13 of 83, 2.6 expected, q\u00a0=\u00a00.0009), and positive regulation of nitrogen compound biosynthesis (28 of 393, 12.5 expected, q\u00a0=\u00a00.0076) (Figure 4\u2014source data 1). Strikingly, five of the six genes involved in cAMP biosynthesis were identified as causal (IRA1, IRA2, BCY1, CYR1, and RAS1; 0.19 expected, q\u00a0=\u00a00.0002). Additional genes in the RAS/cAMP signaling pathway were also identified as causal, including GPR1, which is involved in glucose sensing, SRV2, which binds adenylate cyclase, and RHO3, which encodes a RAS-like GTPase. In yeast, the RAS/cAMP pathway regulates cell cycle progression, metabolism, and stress resistance (Tisi et al., 2014). Variation in many of these genes influenced growth on alternative carbon sources. We hypothesize that the yeast population contains abundant functional variation in genes that regulate the switch from glucose to alternative carbon sources through the RAS/cAMP pathway.\n\n## Discussion\n\nWe previously used a cross between lab (BY) and vineyard (RM) strains of yeast to show that the majority of heritable phenotypic differences arise from additive genetic effects, and we were able to detect, at genome-wide significance, specific loci that together account for the majority of quantitative trait variation (Bloom et al., 2015; Bloom et al., 2013). It has been argued that the BY lab reference strain (commonly known as S288c) used in those and many other yeast studies is genetically and phenotypically atypical compared to other yeast isolates (Warringer et al., 2011). Our results here, obtained from crosses among 16 diverse strains, generalize these findings to the S. cerevisiae population and show that S288c is not exceptional from the standpoint of genetic variation and quantitative traits. We believe that the findings that the majority of the genetic variance of most traits is additive, and that there is little additive \u2018missing heritability\u2019 in studies with sufficiently large sample sizes, will apply broadly beyond yeast.\n\nWe discovered over 4500 quantitative trait loci (QTLs) that influence yeast growth in a wide variety of conditions. These loci likely capture the majority of common variants that segregate in S. cerevisiae and have appreciable phenotypic effects on growth, and therefore provide a comprehensive starting point for more fine-grained analyses of the genetic contribution to quantitative trait variation. We were able to localize approximately 8% of the QTLs to single genes based on genetic mapping information alone. Interestingly, these genes cluster in specific functional categories and pathways, suggesting that different strains of S. cerevisiae may have evolved different strategies for nutrient sensing and response as a function of specializing in particular environmental niches (Chantranupong et al., 2015). In addition to the findings described here, we anticipate that our data set will be a useful resource for further dissecting the genetic basis of trait variation at the gene and variant level (Peltier et al., 2019), and for evaluating statistical methods aimed at inferring causal genes and variants. In particular, the set of loci and genes identified here provides an ideal starting point for massively parallel editing experiments that directly test the phenotypic consequences of sequence variants (Shendure and Fields, 2016).\n\nBy combining our results with deep population sequencing in yeast (Peter et al., 2018), we were able to examine the contributions of variants in different frequency classes to trait variation. This approach avoids statistical confounding between variant frequency and effect size that occurs when both are measured in the same study sample. We observed a broad range of genetic architectures across the traits studied here, with variation in some traits dominated by common variants, while variation in others is mostly explained by rare variants. Overall, rare variants made a disproportionate contribution to trait variation as a consequence of their larger effect sizes. A complementary mapping approach in an overlapping set of yeast isolates also revealed enrichment of rare variants with larger effects (Fournier et al., 2019). These results are consistent with the finding from GWAS that common variants have small effects, as well as with linkage studies that find rare variants with large effect sizes. Our study design also revealed a substantial component of genetic variation\u2014variants with low allele frequency and small effect size\u2014that has been refractory to discovery in humans because both GWAS and linkage studies lack statistical power to detect this class of variants. Recent work in humans has suggested that rare variants account for a substantial fraction of heritability of complex traits and diseases (Wainschtein et al., 2019). Our study presents a more direct and fine-grained view of this component of trait variation and implies that larger sample sizes and more complete genotype information will be needed for more comprehensive studies in other systems.\n\n## Materials and methods\n\n### Data availability\n\nUnless otherwise specified, all computational analyses were performed in R (v3.4.4). Analysis code and processing scripts are available at https://github.com/joshsbloom/yeast-16-parents (Bloom, 2019; copy archived at https://github.com/elifesciences-publications/yeast-16-parents). Additional links to generated data are also provided in the github repository. The version numbers of R packages used are listed in this repository. Sequencing data for parents and segregants is available in the Sequenced Read Archive (SRA) under the Bioproject ID PRJNA549760.\n\n### Short-read and synthetic long read sequencing of parental strains\n\nParental genotypes were obtained by deep (>100X) paired-end sequencing of the 16 parental strains. A VCF file containing SNPs and small indels was generated for the parents using bwa (v0.7.1)\u00a0(Li, 2013) to align to the sacCer3 reference (Engel et al., 2014), Picard (v2.12.2) (Broad Institute, 2019) to remove PCR duplicates, and the GATK HaplotypeCaller (v3.8)\u00a0(Van der Auwera et al., 2013) with expected sample ploidy set to 1. A separate pipeline was developed to leverage additional synthetic long-reads (Illumina/Moleculo) to identify larger structural variants in the parents. Briefly, synthetic long-read assemblies were filtered to only include scaffolds greater than 10 kb. Scaffolds were corrected with our short-read data using Pilon\u00a0(Walker et al., 2014). CNVs were discovered using custom scripts modified from scripts originally used to generate calls for testing LUMPY (Layer et al., 2014). CNVs were genotyped in all parents using the approach presented in SVTyper (Ebler et al., 2017). Scripts associated with the CNV detection pipeline are available at\u00a0https://github.com/theboocock/long_read_cnv\u00a0(Boocock, 2019;\u00a0https://github.com/elifesciences-publications/long_read_cnv).\n\n### Construction of haploid segregant panels\n\nSegregants for the BY-RM cross and YPS163-YJM145 cross were obtained by sporulation of the hybrid diploid parents for 5\u20137 days in SPO++ sporulation medium\u00a0(http://dunham.gs.washington.edu/sporulationdissection.htm)\u00a0and tetrad dissection using the MSM 400 dissection microscope (Singer Instrument Company Ltd.). Four-spore tetrads were retained. For BYxRM, one segregant was randomly chosen per tetrad (Bloom et al., 2013). For the YPS163-YJM145 cross, all segregants from\u00a0~250 tetrads were used. For all other crosses, the hybrid diploids were were pre-grown in YPD with either G418 or cloNat, depending on which fluorescent magic marker plasmid they contained (Treusch et al., 2015). Then they were sporulated in SPO++ and either cloNat or G418 for 5\u20137 days. A random spore prep was used to isolate haploid progeny (https://openwetware.org/wiki/McClean:Random_Spore_Prep), modified to exclude the use of glass beads for spore separation. Cells were plated on selective media, grown for two days, and colony fluorescence was visualized. Green fluorescent colonies and red fluorescent colonies corresponding to MATa and MAT\u03b1 haploid progeny were picked to deep-well 96-well plates and then split into frozen stocks.\n\n### Preparation of whole-genome sequencing libraries for segregants\n\nYeast were grown in 1 ml of yeast peptone dextrose in 2 ml deep-well 96-well plates (Thermo Scientific). Plates were sealed with Breathe-Easy gas-permeable membranes (Sigma-Aldrich). Yeasts were grown without shaking for 2 days in a 30\u00b0C incubator. Cell walls were digested with Zymolase, and DNA was extracted using either the 96-well DNeasy Blood and Tissue kits (Qiagen) for the BY-RM and YPS163-YJM145 segregants, or 96-well E-Z 96 Tissue DNA kit, following the bacterial protocol (Omega) for all other segregants. DNA concentrations were determined using the Quant-iT dsDNA High-Sensitivity DNA quantification kit (Invitrogen) and the Bio-Tek Synergy two-plate reader. DNA was diluted to 0.22 ng per \u03bcl using a Biomek FX liquid handing robot (Beckamn Coulter). For each segregant, 5 \u03bcl of 0.22 ng per \u03bcl of DNA was added to 4 \u03bcl of 5X Nextera HWM buffer (Illumina), 6 \u03bcl of water and 5 \u03bcl of 1/35 diluted Nextera enzyme. The transposition reaction was performed for 5 min at 55\u00b0C. Directly after the tagmentation reaction and without additional sample purification, Illumina sequencing adaptors and custom indices were added by PCR. 10 \u03bcl of tagmented DNA was combined with 0.5 \u03bcl each of 10 \u03bcM index primers (one of N701-N712 plus one of 96 custom indices, see Supplementary file 1), 5 \u03bcl of 10X Ex Taq buffer, 0.375 \u03bcl Ex Taq polymerase (Takara), 4 \u03bcl of 2.5 mM dNTPs and 29.625 \u03bcl of water, and amplified with 20 cycles of PCR. Up to 1152-plex libraries were run on a Hiseq 2500 with single end 150 bp reads, except BY-RM (Bloom et al., 2013) and YPS163-YJM145 which were sequenced with 100 bp reads.\n\n### Segregant genotype calling\n\nFastq files for were demultiplexed using fastq-multx (v1.3.1) (Aronesty, 2013) and aligned to the SacCer3 version of the reference genome using bwa. Adapter sequences were trimmed from reads and Phred33 quality scores were computed with Trimmomatic (v0.32) (Bolger et al., 2014). PCR duplicates were removed using Picard and then merged into one CRAM file per cross using Picard. VCF files were generated for each cross using the GATK haplotype caller (Van der Auwera et al., 2013) and genotypes were called at known variant sites between the parental strains. Additional custom provided R code was used to remove regions with strong mapping bias toward the reference genome (Albert et al., 2018), filter poor quality markers, and remove segregants with too many crossovers, likely corresponding to diploid contaminants. Missing segregant genotype information was imputed using a hidden Markov model (HMM) implemented in R/QTL (Arends et al., 2010). Structural variants identified in the parent VCF files were considered missing information in the segregants and the HMM was used to impute genotypes at those sites.\n\n### Phenotyping by endpoint colony growth\n\nSegregants were arrayed to 384-well liquid plates in duplicate with different plate positions across the duplicates. Segregants were grown in YPD for approximately 48 hr without shaking and then pinned to agar plates using a BM-5 colony arraying robot (S and P Robotics). Plates were incubated for 48 hr and end-point growth was quantified by automated plate imaging using the colony arraying robot. Colony radii were calculated using functions in the EBImage R package (Pau et al., 2010), and endpoint growth measurements were filtered and normalized for plate effects as described previously (Bloom et al., 2015; Bloom et al., 2013). In addition, a manual filtering step was used to filter out aberrant colonies arising from technical artefacts, such as from wet spots on the agar plates at the time colonies were pinned. Unless otherwise specified, the average value across replicates was used per segregant for all downstream analyses.\n\n### Within-cross QTL mapping\n\nQTL were mapped using a forward stepwise regression procedure that controls the FDR (G\u2019Sell et al., 2013) for each trait and cross. We tested for linkage at each marker along the genome by calculating r2, where r is the Pearson correlation coefficient between segregant genotypes at the marker and segregant phenotypes. 10,000 permutations of phenotype to strain assignment were performed and this statistic was calculated across the genome for each of the permutations. For each of the permutations, the maximum statistic was recorded to generate an empirical null distribution of the maximum statistic (Churchill and Doerge, 1994). A p-value was calculated as the probability the observed maximum statistic comes from the empirical null distribution of maximum statistics. If the observed statistic was greater than all of the empirical null statistics the p-value was recorded as 1e-4. The p-value was added to a set of p-values (p1, \u2026 pk), and the entire procedure was repeated (including permutations) with the previously identified marker(s) included as regression covariates. A \u2018FowardStop\u2019, FDR-controlling statistic (G\u2019Sell et al., 2013) was calculated as $-\\frac{1}{k}\\sumi=1klog\u2061(1-p_{i})$. We continued to add selected markers to a multiple regression model as long as the \u2018ForwardStop\u2019 statistic was less than or equal to 5%.\n\nWe note that we chose to use this procedure rather than procedures we have used in the past (Albert et al., 2018; Bloom et al., 2015; Bloom et al., 2013) because it is simple, does not require exchangeability of statistics across different traits, gives very similar results as previous methods, and we verified through simulations (not shown) that it controls FDR for forward stepwise model selection under different QTL architectures.\n\nFor this within-cross QTL mapping procedure, we re-localized QTL peak positions for QTL detected by the forward selection procedure. Specifically, for each QTL peak we included all other detected QTL peaks (as detected from the forward selection procedure) as covariates in a multiple regression model, and scanned each marker on the chromosome on which the QTL peak being re-localized was detected to identify the marker that maximized the likelihood of the multiple regression model. The marker that maximized the likelihood of the multiple regression model was retained as the new, re-localized, QTL peak position.\n\n### Cross-validation procedures to estimate heritability explained by QTL\n\nThe amount of additive variance explained by detected QTLs was estimated using cross-validation. For the within-cross analysis, segregants were randomly split into 10 sets. Each set of segregants was left out of the procedure one at a time (held-out set). The within-cross QTL mapping procedure was performed for all the other sets (training set). For the QTL markers detected in this training set and with effects estimated in the training set, the amount of variance explained by the joint model of the set of significant QTL markers was estimated in the held out set. For the joint analysis described below, we performed a similar procedure, splitting the segregants within each cross into 10 sets, leaving one of the sets from each cross out (held-out set) identifying QTL jointly across the other sets (training set) and estimating their effects in each cross (training set) and then estimating the variance explained in the held-out set.\n\n### Within-cross analysis to estimate additive and pairwise genetic interaction variance\n\nTo estimate the fraction of phenotypic variance attributable to additive genetic effects for each cross and trait we fit the model y\u00a0=\u00a0a+e, where y contains the segregant phenotype values and is standardized to have mean 0 and variance 1. Here, a are the additive genetic effects and the residual error is denoted as e. The distributions of these effects are assumed to be multivariate normal with mean zero and variance-covariance as follows:\n\n$$\na~N0,\\sigma_{A}^{2}Aande~N0,\\sigma_{EV}^{2}I\n$$\n\nHere, A is the additive relatedness matrix, the fraction of genome shared between pairs of segregants and was calculated as $MM^{'}/n$ where M is the n x m matrix of standardized marker genotypes, n is the number of segregants and m is the number of markers.\n\nWe also fit an expanded model to estimate the relative contribution of additive vs non-additive (pairwise epistatic) effects. For the pairwise epistatic component, we believe that the assumption that all pairs of loci contribute to trait variation with effect sizes drawn from a single normal distribution is violated when one or a few QTL-QTL interactions with large effects are present, resulting in a downward bias. We previously showed (Bloom et al., 2015) that loci involved in such stronger interactions can be detected in additive scans. Therefore, by explicitly including additive QTLs in the three components model, we avoid making the assumption that the effect sizes of all locus pairs are drawn from the same normal distribution and obtain a better estimator of total two-way epistatic variance when large-effect QTL-QTL interactions are present. This model was parameterized as:\n\n$$\ny=\\betaX+Zq+Za+Zf+Zg+Zi+Zp+e\n$$\n\nThe distributions of these effects are assumed to be multivariate normal with mean zero and variance-covariance as follows:\n\n$$\nq~N0,\\sigma_{A_{QTL}}^{2}A_{QTL},a~N0,\\sigma_{A}^{2}A,f~N0,\\sigma_{A_{QTL}*A_{QTL}}^{2}A_{QTL}\u2218A_{QTL},\n$$\n\n$g~N0,\\sigma_{A_{QTL}*A}^{2}A_{QTL}\u2218A,$$i~N0,\\sigma_{A*A}^{2}A\u2218A,$$p~N(0,\\sigma_{R}^{2}I_{n})$, $ande~N(0,\\sigma_{EV}^{2}I_{m})$ where y is a vector of length L that contains phenotypes for n segregants including replicate measurements such that L\u00a0=\u00a0n x [number of replicates]. \u03b2 is a vector of estimated fixed effect coefficients. X is a matrix of fixed effects (here \u03b2 is the overall mean, and X is a 1L vector of ones unless otherwise specified). Z is an L x n incidence matrix that maps L total measures to n total segregants. In order, the random effect terms correspond to the effects of detected QTL, effects from the whole genome, epistatic interactions between detected QTL, epistatic interactions between additive QTL and the genome, epistatic interactions between all pairs of markers across the genome, and residual repeatability, following very similar methods and syntax as described previously (Bloom et al., 2015). We also fit a model that omitted the terms for epistatic interactions between detected QTL, and epistatic interactions between additive QTL and the genome. The mixed model was fit with the regress R package (Clifford and McCullagh, 2014) using restricted maximum likelihood estimation (REML). Standard errors of variance component estimates were calculated as the square root of the diagonal of the Fisher information matrix from the iteration at convergence of the Newton-Raphson algorithm. These procedures were used for all other mixed model analyses described below. For the analysis that compared the fraction non-additive to additive variation, we calculated $\\frac{\\sigma_{A_{QTL}*A_{QTL}}^{2}+\\sigma_{A_{QTL}*A}^{2}+\\sigma_{A*A}^{2}}{\\sigma_{A_{QTL}}^{2}+\\sigma_{A}^{2}}$.\n\n### Allele-frequency lookup in 1011 yeast isolate population\n\nWe used bcftools isec (Li et al., 2009) to intersect our VCF containing sequence variant information on the 16 parental strains with the 1011 yeast isolate VCF generated by Peter et al. (2018), and vcftools (Danecek et al., 2011) to further filter only biallelic variants. This subset of 259,647 biallelic markers was used for variance components analysis and joint QTL mapping across the panel. Allele frequencies in the larger panel of 1011 yeast isolates were extracted from the provided VCF (Peter et al., 2018). Derived allele frequencies were calculated by using nucmer (Mar\u00e7ais et al., 2018) to perform whole genome alignment between the sacCer3 reference assembly and the CBS432 assembly of S. paradoxus. Variants were identified using delta-filter and show-snps commands provided in nucmer. Biallelic variants in our panel were classified as ancient if the variant matches the S. paradoxus sequence and recent if not. The unfolded allele frequency was calculated as the frequency of the recent variant. We could determine ancestral status for approximately 80% of the biallelic variants. To improve power for enrichment tests, we used derived allele frequency\u00a0<5% and>95% as cutoffs when comparing effect sizes and signs of effects between derived and ancestral variants.\n\n### Genotype recoding for joint analyses\n\nWe coded the biallelic markers for which we had allele frequency data from the larger yeast isolate panel as \u22121 for matching the reference strain, or one if not matching the reference. If a variant does not segregate in a particular cross it was treated as missing in that cross.\n\n### Mixed model analysis with allele-frequency partitioning\n\nWe fit the following mixed model model per trait (jointly across the different crosses):\n\n$$\ny=\\betaX+r+c+e\n$$\n\nThe distributions of these effects are assumed to be multivariate normal with mean zero and variance-covariance as follows:\n\n$\u00a0r\u223cN(0,\\sigma_{R}^{2}A_{maf<1%}),\u00a0c\u223cN(0,\\sigma_{C}^{2}A_{maf>=1%}),\u00a0and\u00a0e\u223cN(0,\\sigma_{EV}^{2}I_{m})$ where y is a vector of length 13,950 that contains phenotypes for segregants concatenated across the different crosses. \u03b2 is a vector of estimated fixed effects of each cross. X is an incidence matrix mapping segregants to crosses. Here, the two relatedness matrices Amaf<1% and Amaf>=1% were calculated separately for all markers with MAF<1% and MAF>=1% respectively in the larger panel of 1,011 yeast isolates. Per marker, the genotype values were scaled to have mean 0 and variance 1, for each of the segregants from crosses in which that marker segregates. Markers that are fixed within a cross were excluded from the subsequent calculation of genetic covariance. The rationale for excluding data for variants not segregating in a given cross is that all such variants are completely confounded with each other and with any other effects specific to that cross. Thus, their effects are more appropriately captured by including a fixed effect for each cross within the analysis. Then, with M being the n segregants by m markers matrix corresponding to the standardized genotypes for that subset of markers, we calculated the relatedness matrix as a Gower\u2019s centered matrix (Forni et al., 2011; Kang et al., 2010; McArdle and Anderson, 2001) $\\frac{MM'}{\\frac{tr(MM')}{n}}$ which has the property that the average diagonal coefficient equals 1.\n\nWe used the same logic to construct additional covariance matrices when more finely binning variants by allele frequency in the external panel (seven allele-frequency bins model). Bins were chosen to contain approximately equal numbers of variants. We also fit the seven allele-frequency bins model using only variants that were private to each parent (variants that only segregate in a pair of crosses). In this last model, the allele-frequency of variants used for the analysis are all approximately the same across the panel. Therefore, this last model does not make the assumption that the variance of variants effects is inversely proportional to their frequencies in the mapping panel (Yang et al., 2010).\n\nThe procedure for fitting these models was the same as described above in the section \u2018within-cross variance component analysis\u2019.\n\n### Accounting for large effect QTL and polygenic background for all chromosomes except the chromosome of interest for joint QTL mapping\n\nFor each chromosome of interest and for each trait and cross and trait, we calculated yc\u00a0=\u00a0CQ+aL+sc where yc is the vector of trait values for a given trait and cross, Q is a matrix of QTL genotypes at peak markers from the within-cross mapping described above, with FDR\u00a0<\u00a05% that are not located on the chromosome of interest, C is a vector of estimated QTL effects from the section \u2018within-cross QTL mapping\u2019, aL is the additive genetic variance from all chromosomes excluding the chromosome of interest. aL comes from the REML-based BLUP estimate of the effect all other chromosomes, including the fixed effects of detected QTL on the other. The goal of this step was to obtain the residual trait values sc that can be used to scan for QTLs on a chromosome of interest and corrects for mapped genetic sources of variation that do not arise from the chromosome of interest (Yang et al., 2014).\n\n### Joint QTL mapping\n\nUnder the assumption that a causal biallelic variant has a consistent additive effect in all the crosses in which it segregates, we implemented a model to identify such variants jointly across our entire segregant panel (McMullen et al., 2009; Stich, 2009). This procedure increases statistical power. For example, for variants that are private to one of the 16 parental strains, this procedure will approximately double the observed number of instances of the minor allele, resulting in less noisy estimates of variant effects. For variants that are shared among multiple parents, the increase in the observed number of instances of the minor allele will be greater.\n\nFor each trait and each chromosome, and then for each marker on that chromosome, we calculated a t-statistic as $\\frac{r}{\\sqrt{\\frac{1-r^{2}}{n-2}}}$. Here, r is the Pearson correlation between the recoded segregant genotypes across the panel, and the vector s, which corresponds to the values of sc described in the previous section concatenated across the different crosses. The number of informative segregants, n, differs for each biallelic variant, and corresponds to the sum of the sample sizes for each cross in which the variant segregates. P-values were calculated that factor in the different number of informative segregants, n, in the calculation of the degrees of freedom using built-in R functions. The -log10(p) was recorded. This statistic was calculated for each marker on the chromosome. 1000 permutations of phenotype to strain assignment were performed, but these permutations were performed with phenotype values within each cross (we did not permute values between crosses) and this statistic was calculated across the genome for each of the permutations. For each of the permutations, the maximum statistic was recorded to generate an empirical null distribution of the maximum statistic (Churchill and Doerge, 1994). A new corrected p-value was calculated as the probability the observed maximum statistic comes from the empirical null distribution of maximum statistics. If the observed maximum statistic was greater than all of the empirical null maximum statistics the p-value was recorded as 1e-3. The p-value was added to a set of p-values (p1, \u2026 pk), and the entire procedure was repeated (including permutations) with the previously identified marker(s) included as regression covariates. A \u2018FowardStop\u2019, FDR-controlling statistic (G\u2019Sell et al., 2013) was calculated as described above. We continued to add selected markers to a multiple regression model as long as the \u2018ForwardStop\u2019 statistic was less than or equal to 5%.\n\n### Effect size estimation for joint QTL mapping\n\nThe peak markers (lead variants) from this procedure were then used for effect size estimation. For each trait and cross, the phenotypes are scaled to have mean 0 and variance 1, and effect sizes within each cross are estimated using multiple regression for the peak markers that segregate within that cross. The betas in this analysis correspond to the differences in the means between the two QTL alleles (conditional on the effects of the other segregating QTL). For peak markers that segregate in multiple crosses, the average betas over the different crosses are shown in Figure 3. Unbiased estimates of QTL effect size (Figure 3\u2014figure supplement 4) were obtained by the same procedure except peak detection was performed in 9/10 of the data and effects estimated in the 1/10 of the data left out. Allele frequencies of the lead variants were looked up in the 1011 isolate panel.\n\n### Statistical fine-mapping to identify causal genes\n\nWe implemented the probabilistic identification of causal snps (PICS) procedure, a Bayesian approach to estimate the probability that a variant is causal. A very thorough description of the method, including details about the logic and implementation, is present in Farh et al. (2015). We aggregated these probabilities within genes to estimate the probability that a gene contains the causal variant. We noted the position of the observed QTL peak (called the \u2018lead\u2019 variant in the GWAS literature), and its effect size for all QTL that explained more than 2% of phenotypic variance from the within-cross mapping (equivalent to 0.1414 SD units). We assumed that the prior probabilities of a variant being causal, or being identified as a lead variant, are equal. For this analysis, we only used variants that fall within a 50 kb window centered around the detected QTL peak. For each variant within this window, we simulated the observed QTL effect size on the background of noise, 500 times. Here, noise was estimated as the residual error of the within-cross QTL model for that trait and cross. Each of the simulations was generated by a different permutation of the assignment of the residual error to segregant. We then repeated our mapping procedure for the simulated data and calculated the fraction of simulations where the observed QTL peak from our trait mappings was the lead variant given the simulated causal variant. This posterior probability was estimated for each of the variants within the 50 kb window, and then normalized so that the sum of all the probabilities in the window is 1. This generated a variant-level probability of causality for each variant within the window for that trait and cross.\n\nNext, we identified overlapping QTL. Overlapping QTL were defined as the QTL coming from neighboring crosses that shared a parent, have 1.5 LOD drop confidence intervals that overlap, and have QTL effect directions that are consistent between the neighboring crosses. For these overlapping QTL, we calculated the product of the causality probabilities (described above) for each variant shared between the two crosses (and segregating in both crosses) and then normalized these probabilities so that they sum to 1. To calculate the probability that a gene was causal, we summed these probabilities for all variants that fell within each gene. Here, a gene was defined as all variants that fell within the defined open-reading frame as well as variants that fell halfway between the start and stop of the adjacent open-reading frames. We calculated a FDR by sorting the observed posterior probabilities of causality per gene from highest to lowest, calculating a posterior error probability as one minus the posterior probability of causality, and calculating the cumulative mean of these probabilities (K\u00e4ll et al., 2008; Storey, 2003; Storey and Tibshirani, 2003).\n\nWe note that the causal gene statistic is an estimate of the posterior probability that a gene is causal assuming that one causal variant in the defined window is responsible for generating a signal in two crosses that share a parent strain, that we estimate the effects of causal variants in both crosses without error, and that genotypes are called without error.\n\n### Gene ontology enrichment analyses\n\nWe tested for GO enrichments using the R package topGO (Alexa and Rahnenfuhrer, 2018), using the Fisher test for enrichment ant the \u2018classic\u2019 scoring method that does not adjust the enrichments for significance of child GO terms.\n",
+      "created_at": "2025-12-02T12:57:49.627753Z"
+    },
+    {
+      "id": "1b85b14b-c3f7-4c5b-8ff6-130bd3d89006",
+      "submission_id": "14a398f6-2702-4f60-b26a-14a444d9959e",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Christian R Landry, Universit\u00e9 Laval Canada\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.49212.023](https://doi.org/10.7554/eLife.49212.023)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nAcceptance summary:\n\nThe authors show that rare and recent variants contribute proportionally more than common ones to trait variation in budding yeast. They combine a powerful quantitative genetics approach with extensive trait phenotyping and population genomics data to illustrate how natural selection may be keeping mutations with large effects from reaching high frequency. The expected negative correlation between effect size and frequency has been studied theoretically, but much less so at the experimental level because of the complex type of data needed. The study has broad significance, from population genetics, to quantitative genetics and evolution of complex traits.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Rare variants contribute disproportionately to quantitative trait variation in yeast\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Naama Barkai as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nYour manuscript addresses an important question in genetics and evolutionary biology: what are the relative contributions of genetic variants to phenotypic variation and do these contributions correlate with the frequency of these variants within a species? The reviewers agree that this is an important question that has rarely been comprehensively addressed. They therefore find the work of interest and the findings to be important for the field, in addition to appreciating the quality of the writing and of the presentation. However, they identify some aspects that would need to be reconsidered or better presented and interpreted (details below). In addition, your paper could be strengthened if it was extended to include a more detailed Introduction on why these questions are important for the non-specialists. You could also include more discussions on the implications of your findings, including the implications for biology and evolution in general and for yeast in particular. Since eLife is a generalist journal, the manuscript would appeal to a larger audience with these changes. Your manuscript is currently very short so this would be feasible by the addition of a few short sections in the current structure of the manuscript. You will see that one specific comment relates to the novelty of the work with respect to previous studies. This means that the novelty may not be obvious as presented. It would therefore also be important to emphasize this aspect in a revised version.\n\nEssential revisions:\n\n1) There are two analyses, within cross and joint analysis. I have to go back and forth between Results and Materials and methods to figure out exactly what is done. It would be nice to make clear when discussing the results from which one they are derived.\n\n2) Because the segregants are haploid, there is only the A x A interaction. The majority of variance generated by A x A in fact goes into the additive variance, hence the non-additive variance is small. The authors did not make a big deal out of the fact that non-additive variance is only 1/6 of additive variance, but I feel it's important to stress that large additive variance is expected given the population design. In addition, when estimating the variance attributable additive variance and epistatic variance, the authors broke the non-additive variance into three components, AQTL x A, AQTL x AQTL, and A x A. I wonder if this is necessary because there was no mention of the differences between these three components. A single component A(all) x A(all) could be fitted.\n\n3) The two-component mixed model analysis has some caveats. There is correlation between rare and common variants, i.e., the variance components are not orthogonal. This makes any claim about the relative importance of rare versus common less reliable. For example, for the Cadmium chloride trait (Figure 3\u2014figure supplement 1), the 7-component model seems to disagree with the 2-component model, with MAF < 0.01 explaining much less in the 7-component model than in the 2-component model in A. I think comparing the 2-component and one component model could suffer from the same problem. Perhaps a more appropriate (but still not perfect) analysis is to fit single component model first and then fit two component models, do it in two sequential orders (rare, then rare + common; versus common, then common + rare), and look at how the cumulative variance increase. This will tell you which MAF class is more important or can explain more variance. I think in this case, one-component model is more informative than the 2-component model.\n\n4) In Figure 3, the relationship between effects and MAF or DAF is a major result. Although many other papers have reported similar results, I think this paper (and the co-submitted paper from Fournier et al.) has the most appropriate design, i.e., the discovery panel is independent of where MAF is estimated. Given its central role in this paper, it probably deserves a bit more clarity. A few questions came to mind when reading this part of the paper. In what analysis is the effect size estimated, single crosses or joint? Could you briefly explain how the effect sizes are estimated in the Results section? If effects estimated from joint analysis, the t-statistic used a factor (n-2) to normalize the degree of freedom, which is smaller for rare variants. This would lead to Beavis effect. I believe the authors used a cross validation strategy to estimate effects, but it's not very clear by reading the Materials and methods. Can you also plot 2pqa^2 versus MAF? Even if a is large, the variance contributed by rare variants could be small.\n\n5) The main conclusion of the manuscript is that rare variants significantly contribute to genetic variance. In my view, this conclusion is biased as these rare causal variants are being analysed in genetic backgrounds in which they are no longer rare; actually, these variants are biallelic. Several studies have shown that a rare variant of MKT1(89A) is a significant contributor to phenotypic variation whenever it is present in segregating populations. However, MKT1(89A) allele hardly identified when one of the parents is not S288c, the strain which harbours this allele. So, the extension that if the rare variant has a significant effect in a sub-population, then its effect size would be similar in a large heterogeneous population is false. Furthermore, the authors conclude that in their larger 16 strain segregant populations, a representative distribution of 1000 strain collection, most of the variants have additive effects. This the authors claim is revalidation of their other previous studies (Bloom et al., 2013, 2015), where they identified that most of the causal variants between BYxRM had additive effects. However, in their subsequent paper (Frosberg et al., 2017, PMID 28250458) and another paper (Yadav et al., 2016, PMID 28172852) showed that variance mapping in BYxRM segregants helped to account for genetic interactions and showed how non-additive interactions also contribute significantly to phenotypic variation. Therefore, I find that just doing a few more strains and larger no. of segregants per cross does not make this manuscript a significant advance over the previous studies. One can argue that taking into account all causal variants identified till date (Fay, 2013), one can identify what frequency of rare variants have been identified, e.g. a typical example being MKT1(89A) allele as causal, even though their effect size will not be identified using this strategy. Peltier et al., 2019, show that 284 rare QTNs variants have been identified till date and these functional variants being private to a subpopulation, possibly due to their adaptive role to a specific environment. Moreover, this conclusion can be made without these extensive experimental crosses.\n",
+      "created_at": "2025-12-02T12:57:49.627753Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T12:57:49.627753Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T12:57:49.627753Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "8977fb5b-cade-49c9-8a85-235548c2e205",
+      "content_id": "9665823f-b228-47fe-b323-01cf6c1a3537",
+      "claim_id": "C1",
+      "claim": "Approximately 14,000 progeny were generated from crosses among 16 diverse yeast strains.",
+      "claim_type": "EXPLICIT",
+      "source": "We generated ~14,000 progeny from crosses among 16 diverse yeast strains and identified thousands of quantitative trait loci (QTLs) for 38 traits.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states the number of progeny generated and the number of parental strains used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:57:49.627753Z"
+    },
+    {
+      "id": "4061fe18-4253-46d7-b4b6-4f462b183017",
+      "content_id": "9665823f-b228-47fe-b323-01cf6c1a3537",
+      "claim_id": "C2",
+      "claim": "Thousands of quantitative trait loci (QTLs) were identified for 38 traits.",
+      "claim_type": "EXPLICIT",
+      "source": "We generated ~14,000 progeny from crosses among 16 diverse yeast strains and identified thousands of quantitative trait loci (QTLs) for 38 traits.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports the number of QTLs and traits analyzed.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:57:49.627753Z"
+    },
+    {
+      "id": "c8bc2a21-f510-4c38-a2d8-574ce259d13f",
+      "content_id": "9665823f-b228-47fe-b323-01cf6c1a3537",
+      "claim_id": "C3",
+      "claim": "Rare variants make a disproportionate contribution to trait variation.",
+      "claim_type": "EXPLICIT",
+      "source": "We combined our results with sequencing data for 1011 yeast isolates to show that rare variants make a disproportionate contribution to trait variation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript presents data from the segregant panel combined with population sequencing data to demonstrate this relationship.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:57:49.627753Z"
+    },
+    {
+      "id": "88291111-0155-40f4-a258-9fd26721356d",
+      "content_id": "9665823f-b228-47fe-b323-01cf6c1a3537",
+      "claim_id": "C4",
+      "claim": "The disproportionate contribution of rare variants is driven by rare variants that arose recently.",
+      "claim_type": "EXPLICIT",
+      "source": "Evolutionary analyses revealed that this contribution is driven by rare variants that arose recently, and that negative selection has shaped the relationship between variant frequency and effect size.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript uses evolutionary analyses comparing variants to S. paradoxus to determine ancestral state and timing.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:57:49.627753Z"
+    },
+    {
+      "id": "826f055b-011c-4a16-adc5-4f6d9f17cfb6",
+      "content_id": "9665823f-b228-47fe-b323-01cf6c1a3537",
+      "claim_id": "C5",
+      "claim": "Negative selection has shaped the relationship between variant frequency and effect size.",
+      "claim_type": "EXPLICIT",
+      "source": "Evolutionary analyses revealed that this contribution is driven by rare variants that arose recently, and that negative selection has shaped the relationship between variant frequency and effect size.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript presents evolutionary analyses and theoretical expectations about selection.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:57:49.627753Z"
+    },
+    {
+      "id": "9d8de3e8-9318-4e9e-af47-741a2d59df6a",
+      "content_id": "9665823f-b228-47fe-b323-01cf6c1a3537",
+      "claim_id": "C6",
+      "claim": "Hundreds of QTLs were resolved to single genes.",
+      "claim_type": "EXPLICIT",
+      "source": "We leveraged the structure of the crosses to resolve hundreds of QTLs to single genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes statistical fine-mapping results that identify causal genes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:57:49.627753Z"
+    },
+    {
+      "id": "082e85d3-8629-40f4-83e9-24239d751c34",
+      "content_id": "9665823f-b228-47fe-b323-01cf6c1a3537",
+      "claim_id": "C7",
+      "claim": "The 16 parental strains contain both alleles at 82% of biallelic SNPs and small indels observed at minor allele frequency >5% in a collection of 1011 S. cerevisiae strains.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, they contain both alleles at 82% of biallelic SNPs and small indels observed at minor allele frequency >5% in a collection of 1011 S. cerevisiae strains (Peter et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites comparison with the Peter et al. 2018 dataset to quantify genetic diversity captured.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:57:49.627753Z"
+    },
+    {
+      "id": "4a0bd10b-a3d5-4206-bfaf-30b33d6e10fc",
+      "content_id": "9665823f-b228-47fe-b323-01cf6c1a3537",
+      "claim_id": "C8",
+      "claim": "The panel of segregants consists of 13,950 individual recombinant haploid yeast segregants.",
+      "claim_type": "EXPLICIT",
+      "source": "We constructed a panel of 13,950 individual recombinant haploid yeast segregants by crossing each parental strain to two different strains and collecting an average of 872 progeny per cross (Figure 1; Figure 1\u2014source data 1; Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states the number of segregants constructed.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:57:49.627753Z"
+    },
+    {
+      "id": "ee9196e8-3409-4456-8c29-cc53f51a2d91",
+      "content_id": "9665823f-b228-47fe-b323-01cf6c1a3537",
+      "claim_id": "C9",
+      "claim": "Each parental strain was crossed to two different strains.",
+      "claim_type": "EXPLICIT",
+      "source": "We constructed a panel of 13,950 individual recombinant haploid yeast segregants by crossing each parental strain to two different strains and collecting an average of 872 progeny per cross (Figure 1; Figure 1\u2014source data 1; Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the crossing design used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:57:49.627753Z"
+    },
+    {
+      "id": "612a94fa-0b33-4c68-bc8c-cbb9a1f5d7f6",
+      "content_id": "9665823f-b228-47fe-b323-01cf6c1a3537",
+      "claim_id": "C10",
+      "claim": "An average of 872 progeny per cross were collected.",
+      "claim_type": "EXPLICIT",
+      "source": "We constructed a panel of 13,950 individual recombinant haploid yeast segregants by crossing each parental strain to two different strains and collecting an average of 872 progeny per cross (Figure 1; Figure 1\u2014source data 1; Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports the average number of progeny per cross.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:57:49.627753Z"
+    },
+    {
+      "id": "e38cd79a-e541-4e56-8d34-6aa0e900ae65",
+      "content_id": "9665823f-b228-47fe-b323-01cf6c1a3537",
+      "claim_id": "C11",
+      "claim": "Segregants were genotyped by highly multiplexed whole-genome sequencing with median 2.3-fold coverage per base per individual.",
+      "claim_type": "EXPLICIT",
+      "source": "We genotyped these segregants by highly multiplexed whole-genome sequencing, with median 2.3-fold coverage per base per individual.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the genotyping method and coverage achieved.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:57:49.627753Z"
+    },
+    {
+      "id": "7d175e90-4355-4ff2-af97-292dbe1ceaf3",
+      "content_id": "9665823f-b228-47fe-b323-01cf6c1a3537",
+      "claim_id": "C12",
+      "claim": "Genotypes were called at 298,979 genetic variants.",
+      "claim_type": "EXPLICIT",
+      "source": "Genotypes were called at 298,979 genetic variants, with an average of 71,117 genetic variants segregating in a single cross.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports the total number of variants genotyped.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:57:49.627753Z"
+    },
+    {
+      "id": "92ac396f-0a16-4407-90ed-b269344dd437",
+      "content_id": "9665823f-b228-47fe-b323-01cf6c1a3537",
+      "claim_id": "C13",
+      "claim": "An average of 71,117 genetic variants segregate in a single cross.",
+      "claim_type": "EXPLICIT",
+      "source": "Genotypes were called at 298,979 genetic variants, with an average of 71,117 genetic variants segregating in a single cross.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports the average number of segregating variants per cross.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:57:49.627753Z"
+    },
+    {
+      "id": "10b09d7d-28b7-4300-bf2a-f14d20db26c5",
+      "content_id": "9665823f-b228-47fe-b323-01cf6c1a3537",
+      "claim_id": "C14",
+      "claim": "Growth measurements in different environments are not strongly correlated.",
+      "claim_type": "EXPLICIT",
+      "source": "Because the growth measurements in different environments are not strongly correlated, we treat them as separate phenotypes or traits (Bloom et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states this observation and cites a previous study.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:57:49.627753Z"
+    },
+    {
+      "id": "2fe01c14-1ce5-4fa9-8e83-c9ec65d6b93e",
+      "content_id": "9665823f-b228-47fe-b323-01cf6c1a3537",
+      "claim_id": "C15",
+      "claim": "Additive genetic effects accounted for just over half of the total phenotypic variance on average.",
+      "claim_type": "EXPLICIT",
+      "source": "We used a variance components model (Bloom et al., 2015; de los Campos et al., 2015; Yang et al., 2010) to show that, on average, additive genetic effects accounted for just over half of the total phenotypic variance, while pairwise genetic interactions accounted for 8%, approximately 1/6 as much as additive effects (Figure 2 inset; Supplementary file 2; Figure 2\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports variance component analysis results shown in Figure 2.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:57:49.627753Z"
+    },
+    {
+      "id": "451a7c60-3c09-468f-b473-1ecc83db5454",
+      "content_id": "9665823f-b228-47fe-b323-01cf6c1a3537",
+      "claim_id": "C16",
+      "claim": "Pairwise genetic interactions accounted for 8% of total phenotypic variance, approximately 1/6 as much as additive effects.",
+      "claim_type": "EXPLICIT",
+      "source": "We used a variance components model (Bloom et al., 2015; de los Campos et al., 2015; Yang et al., 2010) to show that, on average, additive genetic effects accounted for just over half of the total phenotypic variance, while pairwise genetic interactions accounted for 8%, approximately 1/6 as much as additive effects (Figure 2 inset; Supplementary file 2; Figure 2\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports variance component analysis results shown in Figure 2.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:57:49.627753Z"
+    },
+    {
+      "id": "ffacc64b-ec0f-4957-ab87-08620b1dcd36",
+      "content_id": "9665823f-b228-47fe-b323-01cf6c1a3537",
+      "claim_id": "C17",
+      "claim": "4552 QTLs were mapped at a false discovery rate (FDR) of 5%.",
+      "claim_type": "EXPLICIT",
+      "source": "We mapped 4552 QTLs at a false discovery rate (FDR) of 5%, with an average of 120 (range 52\u2013195) QTLs per trait (Supplementary file 3; Figure 3\u2014source data 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports the number of QTLs detected at a specified FDR threshold.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:57:49.627753Z"
+    },
+    {
+      "id": "fa09cf37-6908-48de-948a-994f876b29a4",
+      "content_id": "9665823f-b228-47fe-b323-01cf6c1a3537",
+      "claim_id": "C18",
+      "claim": "An average of 120 QTLs per trait were detected, with a range of 52\u2013195.",
+      "claim_type": "EXPLICIT",
+      "source": "We mapped 4552 QTLs at a false discovery rate (FDR) of 5%, with an average of 120 (range 52\u2013195) QTLs per trait (Supplementary file 3; Figure 3\u2014source data 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports the average and range of QTLs per trait.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:57:49.627753Z"
+    },
+    {
+      "id": "187c7644-6e9d-4fff-9ca7-604f3f7f7390",
+      "content_id": "9665823f-b228-47fe-b323-01cf6c1a3537",
+      "claim_id": "C19",
+      "claim": "The detected QTLs explain a median of 73% of the additive heritability per trait and cross.",
+      "claim_type": "EXPLICIT",
+      "source": "The detected QTLs explain a median of 73% of the additive heritability per trait and cross, showing that we can account for most of the genetic contribution to trait variation with specific loci (Figure 2; Figure 2\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports cross-validation results shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:57:49.627753Z"
+    },
+    {
+      "id": "efd482af-eb90-4290-807b-8c2a4910c1ba",
+      "content_id": "9665823f-b228-47fe-b323-01cf6c1a3537",
+      "claim_id": "C20",
+      "claim": "Within-cross QTL mapping found a median of 12 QTLs per trait at FDR of 5%.",
+      "claim_type": "EXPLICIT",
+      "source": "We complemented the joint analysis with QTL mapping within each cross and found a median of 12 QTLs per trait at the same FDR of 5%.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports results from within-cross mapping analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:57:49.627753Z"
+    },
+    {
+      "id": "c17e6b87-5720-4cc3-859e-a3f9208a0b4d",
+      "content_id": "9665823f-b228-47fe-b323-01cf6c1a3537",
+      "claim_id": "C21",
+      "claim": "Within-cross detected loci explained a median of 68% of the additive heritability.",
+      "claim_type": "EXPLICIT",
+      "source": "The detected loci explained a median of 68% of the additive heritability (Figure 2\u2014source data 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports the variance explained by within-cross mapping.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:57:49.627753Z"
+    },
+    {
+      "id": "d8d3eef8-7a86-44fa-9c0f-67cfaae936d1",
+      "content_id": "9665823f-b228-47fe-b323-01cf6c1a3537",
+      "claim_id": "C22",
+      "claim": "The joint analysis was more powerful than within-cross analysis, explaining an additional 5% of trait variance.",
+      "claim_type": "EXPLICIT",
+      "source": "The joint analysis was more powerful, explaining an additional 5% of trait variance and uncovering 458 QTLs not detected within individual crosses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript compares the performance of joint versus within-cross analyses.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:57:49.627753Z"
+    },
+    {
+      "id": "d3249368-3fb7-405d-8300-45eab22250f2",
+      "content_id": "9665823f-b228-47fe-b323-01cf6c1a3537",
+      "claim_id": "C23",
+      "claim": "The joint analysis uncovered 458 QTLs not detected within individual crosses.",
+      "claim_type": "EXPLICIT",
+      "source": "The joint analysis was more powerful, explaining an additional 5% of trait variance and uncovering 458 QTLs not detected within individual crosses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports the number of additional QTLs detected by joint analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:57:49.627753Z"
+    },
+    {
+      "id": "6a963d03-a4a5-4c42-9534-4a52fcf4f583",
+      "content_id": "9665823f-b228-47fe-b323-01cf6c1a3537",
+      "claim_id": "C24",
+      "claim": "Additional QTLs detected by joint analysis had smaller effect sizes than those detected within crosses (median of 0.071 SD units vs 0.083 SD units).",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the higher statistical power of the joint analysis, these additional QTLs had smaller effect sizes (median of 0.071 SD units vs 0.083 SD units; Wilcoxon rank sum test W = 1e6, p=9e-5).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports effect size comparison with statistical test results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:57:49.627753Z"
+    },
+    {
+      "id": "aa789f32-da76-4a60-9323-95dfd869296f",
+      "content_id": "9665823f-b228-47fe-b323-01cf6c1a3537",
+      "claim_id": "C25",
+      "claim": "27.8% of biallelic variants in the study were rare (MAF <0.01).",
+      "claim_type": "EXPLICIT",
+      "source": "By this definition, 27.8% of biallelic variants in our study were rare.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports the proportion of rare variants based on the defined threshold.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:57:49.627753Z"
+    },
+    {
+      "id": "9c800959-d3ef-489e-bb75-db3259be629e",
+      "content_id": "9665823f-b228-47fe-b323-01cf6c1a3537",
+      "claim_id": "C26",
+      "claim": "Across all traits, the median contribution of rare variants was 51.7%.",
+      "claim_type": "EXPLICIT",
+      "source": "Across all traits, the median contribution of rare variants was 51.7%, despite the fact that they constituted only 27.8% of all variants and that a rare variant is expected to explain less variance than a common one with the same allelic effect size.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports variance partitioning results across traits.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:57:49.627753Z"
+    },
+    {
+      "id": "7405fcdd-6f60-4a6b-a028-1063f5dbb74a",
+      "content_id": "9665823f-b228-47fe-b323-01cf6c1a3537",
+      "claim_id": "C27",
+      "claim": "Rare variants are expected to explain less variance than common variants with the same allelic effect size.",
+      "claim_type": "EXPLICIT",
+      "source": "Across all traits, the median contribution of rare variants was 51.7%, despite the fact that they constituted only 27.8% of all variants and that a rare variant is expected to explain less variance than a common one with the same allelic effect size.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of statistical expectation based on allele frequency.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:57:49.627753Z"
+    },
+    {
+      "id": "06b6cf28-2e90-4d33-bb18-c029b749c106",
+      "content_id": "9665823f-b228-47fe-b323-01cf6c1a3537",
+      "claim_id": "C28",
+      "claim": "Growth in the presence of copper sulfate and lithium chloride showed almost no contribution from rare variants.",
+      "claim_type": "EXPLICIT",
+      "source": "Comparing different traits, we saw a wide range of the relative contribution of rare variants, from almost none for growth in the presence of copper sulfate and lithium chloride to over 75% for growth in the presence of cadmium chloride, in low pH, at high temperature, and on minimal medium (Figure 3A; Figure 3\u2014figure supplement 1; Figure 3\u2014source data 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports trait-specific variance partitioning results shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:57:49.627753Z"
+    },
+    {
+      "id": "c8642177-60f0-4e73-a72d-849f9ef56192",
+      "content_id": "9665823f-b228-47fe-b323-01cf6c1a3537",
+      "claim_id": "C29",
+      "claim": "Growth in the presence of cadmium chloride, in low pH, at high temperature, and on minimal medium showed over 75% contribution from rare variants.",
+      "claim_type": "EXPLICIT",
+      "source": "Comparing different traits, we saw a wide range of the relative contribution of rare variants, from almost none for growth in the presence of copper sulfate and lithium chloride to over 75% for growth in the presence of cadmium chloride, in low pH, at high temperature, and on minimal medium (Figure 3A; Figure 3\u2014figure supplement 1; Figure 3\u2014source data 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports trait-specific variance partitioning results shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:57:49.627753Z"
+    },
+    {
+      "id": "3b023d16-94da-473b-85f5-5f9e974f70ea",
+      "content_id": "9665823f-b228-47fe-b323-01cf6c1a3537",
+      "claim_id": "C30",
+      "claim": "Copper sulfate and lithium chloride traits had the most phenotypic variance explained by detected GWAS loci in the 1011 sequenced yeast strains.",
+      "claim_type": "EXPLICIT",
+      "source": "The results for copper sulfate and lithium chloride are consistent with GWAS for these traits in the 1011 sequenced yeast strains\u2014these two traits had the most phenotypic variance explained by detected GWAS loci, which inherently correspond to common variants, with large contributions coming from known common copy-number variation at the CUP and ENA loci, respectively (Peter et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites GWAS results from Peter et al. 2018 to support the findings.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:57:49.627753Z"
+    },
+    {
+      "id": "41db1728-a1f3-4ee7-9597-a71281c834eb",
+      "content_id": "9665823f-b228-47fe-b323-01cf6c1a3537",
+      "claim_id": "C31",
+      "claim": "Large contributions to copper sulfate and lithium chloride trait variation come from known common copy-number variation at the CUP and ENA loci, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "The results for copper sulfate and lithium chloride are consistent with GWAS for these traits in the 1011 sequenced yeast strains\u2014these two traits had the most phenotypic variance explained by detected GWAS loci, which inherently correspond to common variants, with large contributions coming from known common copy-number variation at the CUP and ENA loci, respectively (Peter et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites known genetic architecture from Peter et al. 2018.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:57:49.627753Z"
+    },
+    {
+      "id": "caac4eac-c29d-4e0e-93b2-834568c49810",
+      "content_id": "9665823f-b228-47fe-b323-01cf6c1a3537",
+      "claim_id": "C32",
+      "claim": "Most QTLs had small effects (64% of QTLs had effects less than 0.1 SD units).",
+      "claim_type": "EXPLICIT",
+      "source": "Most QTLs had small effects (64% of QTLs had effects less than 0.1 SD units) and most lead variants were common (78%), consistent with previous linkage and association studies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports the distribution of QTL effect sizes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:57:49.627753Z"
+    },
+    {
+      "id": "d7f33b5d-da59-4655-88fb-671f0155dec3",
+      "content_id": "9665823f-b228-47fe-b323-01cf6c1a3537",
+      "claim_id": "C33",
+      "claim": "Most lead variants were common (78%).",
+      "claim_type": "EXPLICIT",
+      "source": "Most QTLs had small effects (64% of QTLs had effects less than 0.1 SD units) and most lead variants were common (78%), consistent with previous linkage and association studies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports the frequency distribution of lead variants.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:57:49.627753Z"
+    },
+    {
+      "id": "b2fed6b6-c15e-4fdf-b28d-b37638a92548",
+      "content_id": "9665823f-b228-47fe-b323-01cf6c1a3537",
+      "claim_id": "C34",
+      "claim": "QTLs with large effects were highly enriched for rare variants.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that QTLs with large effects were highly enriched for rare variants, and conversely, that rare variants were highly enriched for large effect sizes (Figure 3B; Figure 3\u2014figure supplement 3; Figure 3\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports the relationship between effect size and allele frequency shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:57:49.627753Z"
+    },
+    {
+      "id": "e1d8d825-c1ec-46b5-8615-2f2a793aa1ae",
+      "content_id": "9665823f-b228-47fe-b323-01cf6c1a3537",
+      "claim_id": "C35",
+      "claim": "Rare variants were highly enriched for large effect sizes.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that QTLs with large effects were highly enriched for rare variants, and conversely, that rare variants were highly enriched for large effect sizes (Figure 3B; Figure 3\u2014figure supplement 3; Figure 3\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports the relationship between effect size and allele frequency shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:57:49.627753Z"
+    },
+    {
+      "id": "3bc4e5b5-9308-4b1f-9aae-9204378c51a2",
+      "content_id": "9665823f-b228-47fe-b323-01cf6c1a3537",
+      "claim_id": "C36",
+      "claim": "Among QTLs with an absolute effect of at least 0.3 SD units, 145 of the corresponding lead variants were rare and only 90 were common.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, among QTLs with an absolute effect of at least 0.3 SD units, 145 of the corresponding lead variants were rare and only 90 were common.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports specific counts of rare versus common variants among large-effect QTLs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:57:49.627753Z"
+    },
+    {
+      "id": "b3e3c90d-870c-4775-b4a2-390e064d1700",
+      "content_id": "9665823f-b228-47fe-b323-01cf6c1a3537",
+      "claim_id": "C37",
+      "claim": "Rare variants were 6.7 times more likely to have an effect greater than 0.3 SD.",
+      "claim_type": "EXPLICIT",
+      "source": "Rare variants were 6.7 times more likely to have an effect greater than 0.3 SD (Figure 3\u2014source data 1, Fisher's exact test, p<2e-16).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports enrichment analysis with statistical test results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:57:49.627753Z"
+    },
+    {
+      "id": "9e585892-1916-47e0-a06a-3a9ce2eb76e0",
+      "content_id": "9665823f-b228-47fe-b323-01cf6c1a3537",
+      "claim_id": "C38",
+      "claim": "For traits under negative selection, variant effect size is expected to be a decreasing function of minor allele frequency.",
+      "claim_type": "EXPLICIT",
+      "source": "Theoretical population genetics models show that for traits under negative selection, variant effect size is expected to be a decreasing function of minor allele frequency (Eyre-Walker, 2010; Pritchard, 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites theoretical population genetics models.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:57:49.627753Z"
+    },
+    {
+      "id": "d1039faa-1d82-461a-88fd-d0fc1bcff401",
+      "content_id": "9665823f-b228-47fe-b323-01cf6c1a3537",
+      "claim_id": "C39",
+      "claim": "The empirically observed relationship between effect size and allele frequency provides evidence that most traits examined have evolved under negative selection in the yeast population.",
+      "claim_type": "EXPLICIT",
+      "source": "We empirically observe this relationship in our data for most of the traits examined, providing evidence that they have evolved under negative selection in the yeast population (Figure 3\u2014figure supplement 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript interprets the observed data in light of theoretical expectations about selection.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:57:49.627753Z"
+    },
+    {
+      "id": "fa4fe9f9-a3e3-4526-8884-e9e8992344d4",
+      "content_id": "9665823f-b228-47fe-b323-01cf6c1a3537",
+      "claim_id": "C40",
+      "claim": "Recently arising deleterious alleles have had less time to be purged by negative selection.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently arising deleterious alleles have had less time to be purged by negative selection, and therefore recent variants are expected to have stronger effects on gene function, and hence manifest as QTLs with larger effects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript presents a theoretical expectation based on population genetics principles.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:57:49.627753Z"
+    },
+    {
+      "id": "0d8a2acf-e8b3-48b5-9878-4bb381954c15",
+      "content_id": "9665823f-b228-47fe-b323-01cf6c1a3537",
+      "claim_id": "C41",
+      "claim": "Recent variants are expected to have stronger effects on gene function than ancient variants.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently arising deleterious alleles have had less time to be purged by negative selection, and therefore recent variants are expected to have stronger effects on gene function, and hence manifest as QTLs with larger effects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript presents a theoretical expectation based on population genetics principles.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:57:49.627753Z"
+    },
+    {
+      "id": "caf68a07-4de8-46f0-aabe-bd0314bbd07a",
+      "content_id": "9665823f-b228-47fe-b323-01cf6c1a3537",
+      "claim_id": "C42",
+      "claim": "Recent variants were 1.8 times more likely than ancient variants to have an effect size greater than 0.1 SD units.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this expectation, we observed that recent variants were 1.8 times more likely than ancient variants to have an effect size greater than 0.1 SD units (Fisher's exact test p=9e-5) (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports enrichment analysis comparing recent and ancient variants with statistical test results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:57:49.627753Z"
+    },
+    {
+      "id": "047880c6-30bb-410a-b77d-acdb4cde10e3",
+      "content_id": "9665823f-b228-47fe-b323-01cf6c1a3537",
+      "claim_id": "C43",
+      "claim": "Recent variants were 1.5 times more likely to decrease fitness.",
+      "claim_type": "EXPLICIT",
+      "source": "We further examined the direction of QTL effects and found that recent variants were 1.5 times more likely to decrease fitness (Fisher's exact test p=8e-3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports analysis of effect direction with statistical test results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:57:49.627753Z"
+    },
+    {
+      "id": "a7f2b3d6-347a-445b-88b7-f64e54d8f66b",
+      "content_id": "9665823f-b228-47fe-b323-01cf6c1a3537",
+      "claim_id": "C44",
+      "claim": "No ancient variant decreased fitness by more than 0.5 SD units, whereas 41 recent variants did.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, no ancient variant decreased fitness by more than 0.5 SD units, whereas 41 recent variants did (Fisher's exact test p=7e-3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports specific counts of large-effect deleterious variants by ancestral state with statistical test results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:57:49.627753Z"
+    },
+    {
+      "id": "729d4c8f-52d5-419b-9884-6d8b0db13f49",
+      "content_id": "9665823f-b228-47fe-b323-01cf6c1a3537",
+      "claim_id": "C45",
+      "claim": "427 QTLs were resolved to single causal genes at an FDR of 20%.",
+      "claim_type": "EXPLICIT",
+      "source": "With this approach, we resolved 427 QTLs to single causal genes at an FDR of 20%.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports statistical fine-mapping results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:57:49.627753Z"
+    },
+    {
+      "id": "b1c109cd-4637-4b47-830f-17669477ca84",
+      "content_id": "9665823f-b228-47fe-b323-01cf6c1a3537",
+      "claim_id": "C46",
+      "claim": "The 427 resolved QTLs contain 195 unique genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Because some QTLs have pleiotropic effects on multiple traits, this gene set contains 195 unique genes, greatly expanding the repertoire of causal genes in yeast.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports the number of unique causal genes identified.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:57:49.627753Z"
+    },
+    {
+      "id": "70154284-9b07-44b8-b027-57866dd6799e",
+      "content_id": "9665823f-b228-47fe-b323-01cf6c1a3537",
+      "claim_id": "C47",
+      "claim": "26 of the 195 genes identified are supported by previous experimental evidence as causal for yeast trait variation.",
+      "claim_type": "EXPLICIT",
+      "source": "We searched the literature and found that 26 of the 195 genes identified here are supported by previous experimental evidence as causal for yeast trait variation (Fay, 2013; Jerison et al., 2017; Sadhu et al., 2016; Treusch et al., 2015; Wang and Kruglyak, 2014) (Figure 4B; Figure 4\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports validation of identified genes against prior experimental studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:57:49.627753Z"
+    },
+    {
+      "id": "e1374fda-6489-4090-91f5-df33984fe676",
+      "content_id": "9665823f-b228-47fe-b323-01cf6c1a3537",
+      "claim_id": "C48",
+      "claim": "At a more stringent FDR of 5%, 105 unique causal genes were found, which included 24 of the 26 genes with experimental evidence.",
+      "claim_type": "EXPLICIT",
+      "source": "At a more stringent FDR of 5%, we found 105 unique causal genes, which included 24 of the 26 genes with experimental evidence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports fine-mapping results at a more stringent threshold.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:57:49.627753Z"
+    },
+    {
+      "id": "c9700ae8-81dc-404b-a7de-e5321769d310",
+      "content_id": "9665823f-b228-47fe-b323-01cf6c1a3537",
+      "claim_id": "C49",
+      "claim": "Causal genes were highly enriched for GO terms related to the plasma membrane (45 of 522, 16.5 expected, q = 1.8e-7).",
+      "claim_type": "EXPLICIT",
+      "source": "Causal genes were highly enriched for GO terms related to the plasma membrane (45 of 522, 16.5 expected, q = 1.8e-7), metal ion transport (13 of 83, 2.6 expected, q = 0.0009), and positive regulation of nitrogen compound biosynthesis (28 of 393, 12.5 expected, q = 0.0076) (Figure 4\u2014source data 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports GO enrichment analysis results with statistical significance.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:57:49.627753Z"
+    },
+    {
+      "id": "37678f6a-5fbe-4257-825a-9669e0748001",
+      "content_id": "9665823f-b228-47fe-b323-01cf6c1a3537",
+      "claim_id": "C50",
+      "claim": "Causal genes were highly enriched for GO terms related to metal ion transport (13 of 83, 2.6 expected, q = 0.0009).",
+      "claim_type": "EXPLICIT",
+      "source": "Causal genes were highly enriched for GO terms related to the plasma membrane (45 of 522, 16.5 expected, q = 1.8e-7), metal ion transport (13 of 83, 2.6 expected, q = 0.0009), and positive regulation of nitrogen compound biosynthesis (28 of 393, 12.5 expected, q = 0.0076) (Figure 4\u2014source data 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports GO enrichment analysis results with statistical significance.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:57:49.627753Z"
+    },
+    {
+      "id": "261c2f4c-9165-4745-9ade-6f10324a6093",
+      "content_id": "9665823f-b228-47fe-b323-01cf6c1a3537",
+      "claim_id": "C51",
+      "claim": "Causal genes were highly enriched for GO terms related to positive regulation of nitrogen compound biosynthesis (28 of 393, 12.5 expected, q = 0.0076).",
+      "claim_type": "EXPLICIT",
+      "source": "Causal genes were highly enriched for GO terms related to the plasma membrane (45 of 522, 16.5 expected, q = 1.8e-7), metal ion transport (13 of 83, 2.6 expected, q = 0.0009), and positive regulation of nitrogen compound biosynthesis (28 of 393, 12.5 expected, q = 0.0076) (Figure 4\u2014source data 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports GO enrichment analysis results with statistical significance.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:57:49.627753Z"
+    },
+    {
+      "id": "0c664644-fca3-4d8d-9fe5-b31bbdc1a68e",
+      "content_id": "9665823f-b228-47fe-b323-01cf6c1a3537",
+      "claim_id": "C52",
+      "claim": "Five of the six genes involved in cAMP biosynthesis were identified as causal (IRA1, IRA2, BCY1, CYR1, and RAS1; 0.19 expected, q = 0.0002).",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, five of the six genes involved in cAMP biosynthesis were identified as causal (IRA1, IRA2, BCY1, CYR1, and RAS1; 0.19 expected, q = 0.0002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports enrichment of specific pathway genes with statistical significance.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:57:49.627753Z"
+    },
+    {
+      "id": "95f6dd8f-c0f7-4dee-bca7-98305b89b81e",
+      "content_id": "9665823f-b228-47fe-b323-01cf6c1a3537",
+      "claim_id": "C53",
+      "claim": "Additional genes in the RAS/cAMP signaling pathway were identified as causal, including GPR1, SRV2, and RHO3.",
+      "claim_type": "EXPLICIT",
+      "source": "Additional genes in the RAS/cAMP signaling pathway were also identified as causal, including GPR1, which is involved in glucose sensing, SRV2, which binds adenylate cyclase, and RHO3, which encodes a RAS-like GTPase.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports additional causal genes in the pathway.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:57:49.627753Z"
+    },
+    {
+      "id": "7a599275-02ab-4143-80b1-cff10ba456a5",
+      "content_id": "9665823f-b228-47fe-b323-01cf6c1a3537",
+      "claim_id": "C54",
+      "claim": "In yeast, the RAS/cAMP pathway regulates cell cycle progression, metabolism, and stress resistance.",
+      "claim_type": "EXPLICIT",
+      "source": "In yeast, the RAS/cAMP pathway regulates cell cycle progression, metabolism, and stress resistance (Tisi et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites established knowledge about the RAS/cAMP pathway.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:57:49.627753Z"
+    },
+    {
+      "id": "82d61613-267e-4f83-a658-da4bfbf429a3",
+      "content_id": "9665823f-b228-47fe-b323-01cf6c1a3537",
+      "claim_id": "C55",
+      "claim": "Variation in many RAS/cAMP pathway genes influenced growth on alternative carbon sources.",
+      "claim_type": "EXPLICIT",
+      "source": "Variation in many of these genes influenced growth on alternative carbon sources.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports phenotypic effects of variation in pathway genes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:57:49.627753Z"
+    },
+    {
+      "id": "b421ae9b-aef7-462e-9f47-c933b1ae16d9",
+      "content_id": "9665823f-b228-47fe-b323-01cf6c1a3537",
+      "claim_id": "C56",
+      "claim": "The yeast population contains abundant functional variation in genes that regulate the switch from glucose to alternative carbon sources through the RAS/cAMP pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "We hypothesize that the yeast population contains abundant functional variation in genes that regulate the switch from glucose to alternative carbon sources through the RAS/cAMP pathway.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript presents a hypothesis based on the observed data.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:57:49.627753Z"
+    },
+    {
+      "id": "8e73e723-3d21-463b-b55f-0aa07a7c2e06",
+      "content_id": "9665823f-b228-47fe-b323-01cf6c1a3537",
+      "claim_id": "C57",
+      "claim": "The majority of heritable phenotypic differences arise from additive genetic effects in yeast crosses.",
+      "claim_type": "EXPLICIT",
+      "source": "We previously used a cross between lab (BY) and vineyard (RM) strains of yeast to show that the majority of heritable phenotypic differences arise from additive genetic effects, and we were able to detect, at genome-wide significance, specific loci that together account for the majority of quantitative trait variation (Bloom et al., 2015; Bloom et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites previous work demonstrating this finding.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:57:49.627753Z"
+    },
+    {
+      "id": "9a5112b2-c130-4011-a1f4-a35cb5300017",
+      "content_id": "9665823f-b228-47fe-b323-01cf6c1a3537",
+      "claim_id": "C58",
+      "claim": "The BY lab reference strain (S288c) is not exceptional from the standpoint of genetic variation and quantitative traits compared to other yeast isolates.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results here, obtained from crosses among 16 diverse strains, generalize these findings to the S. cerevisiae population and show that S288c is not exceptional from the standpoint of genetic variation and quantitative traits.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript interprets the current results in the context of previous concerns about S288c.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:57:49.627753Z"
+    },
+    {
+      "id": "1510066c-3c45-484f-a275-1cbef280c038",
+      "content_id": "9665823f-b228-47fe-b323-01cf6c1a3537",
+      "claim_id": "C59",
+      "claim": "The findings that the majority of genetic variance of most traits is additive will apply broadly beyond yeast.",
+      "claim_type": "EXPLICIT",
+      "source": "We believe that the findings that the majority of the genetic variance of most traits is additive, and that there is little additive 'missing heritability' in studies with sufficiently large sample sizes, will apply broadly beyond yeast.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript presents a belief about the generalizability of findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:57:49.627753Z"
+    },
+    {
+      "id": "fc19f5b3-5769-44df-95fd-5b8cdc05aa60",
+      "content_id": "9665823f-b228-47fe-b323-01cf6c1a3537",
+      "claim_id": "C60",
+      "claim": "There is little additive 'missing heritability' in studies with sufficiently large sample sizes.",
+      "claim_type": "EXPLICIT",
+      "source": "We believe that the findings that the majority of the genetic variance of most traits is additive, and that there is little additive 'missing heritability' in studies with sufficiently large sample sizes, will apply broadly beyond yeast.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript presents a belief based on the current findings.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:57:49.627753Z"
+    },
+    {
+      "id": "2ab46eb1-8fe4-4ed6-84dc-464cc691160d",
+      "content_id": "9665823f-b228-47fe-b323-01cf6c1a3537",
+      "claim_id": "C61",
+      "claim": "The detected QTLs likely capture the majority of common variants that segregate in S. cerevisiae and have appreciable phenotypic effects on growth.",
+      "claim_type": "EXPLICIT",
+      "source": "These loci likely capture the majority of common variants that segregate in S. cerevisiae and have appreciable phenotypic effects on growth, and therefore provide a comprehensive starting point for more fine-grained analyses of the genetic contribution to quantitative trait variation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript makes an inference about the comprehensiveness of the detected QTLs.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:57:49.627753Z"
+    },
+    {
+      "id": "7377203d-3a1f-4284-9216-84581b657b0a",
+      "content_id": "9665823f-b228-47fe-b323-01cf6c1a3537",
+      "claim_id": "C62",
+      "claim": "Approximately 8% of the QTLs were localized to single genes based on genetic mapping information alone.",
+      "claim_type": "EXPLICIT",
+      "source": "We were able to localize approximately 8% of the QTLs to single genes based on genetic mapping information alone.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports the proportion of QTLs fine-mapped to single genes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:57:49.627753Z"
+    },
+    {
+      "id": "b64cf49a-d8c0-4677-9a6c-4d24f73bee15",
+      "content_id": "9665823f-b228-47fe-b323-01cf6c1a3537",
+      "claim_id": "C63",
+      "claim": "Different strains of S. cerevisiae may have evolved different strategies for nutrient sensing and response as a function of specializing in particular environmental niches.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, these genes cluster in specific functional categories and pathways, suggesting that different strains of S. cerevisiae may have evolved different strategies for nutrient sensing and response as a function of specializing in particular environmental niches (Chantranupong et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript presents a hypothesis based on the functional clustering of causal genes.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:57:49.627753Z"
+    },
+    {
+      "id": "2d06fe9a-d87c-487d-b424-1baae64ef878",
+      "content_id": "9665823f-b228-47fe-b323-01cf6c1a3537",
+      "claim_id": "C64",
+      "claim": "GWAS by design only test common DNA sequence variants.",
+      "claim_type": "EXPLICIT",
+      "source": "GWAS by design only test common DNA sequence variants; however, recent studies underscore the likely importance of the contribution of rare variants to heritable variation (Wainschtein et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states a known limitation of GWAS methodology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:57:49.627753Z"
+    },
+    {
+      "id": "a7db5e4b-ada7-45ee-bf5b-26bafae081c9",
+      "content_id": "9665823f-b228-47fe-b323-01cf6c1a3537",
+      "claim_id": "C65",
+      "claim": "Recent studies underscore the likely importance of the contribution of rare variants to heritable variation.",
+      "claim_type": "EXPLICIT",
+      "source": "GWAS by design only test common DNA sequence variants; however, recent studies underscore the likely importance of the contribution of rare variants to heritable variation (Wainschtein et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites recent studies on rare variant contributions.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:57:49.627753Z"
+    },
+    {
+      "id": "a755048f-7da1-4e5d-ac06-3ece173da9b6",
+      "content_id": "9665823f-b228-47fe-b323-01cf6c1a3537",
+      "claim_id": "C66",
+      "claim": "Purifying selection against variants that negatively affect fitness is expected to keep them at low frequencies in a population.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, purifying selection against variants that negatively affect fitness is expected to keep them at low frequencies in a population, resulting in a predicted inverse relationship between effect sizes and allele frequencies for variants that influence fitness-related traits (Gibson, 2012; Goldstein et al., 2013; Kryukov et al., 2007; Pritchard, 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites theoretical expectations from population genetics.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:57:49.627753Z"
+    },
+    {
+      "id": "8611ce32-cb07-45ba-9f27-861268c78177",
+      "content_id": "9665823f-b228-47fe-b323-01cf6c1a3537",
+      "claim_id": "C67",
+      "claim": "An inverse relationship between effect sizes and allele frequencies is predicted for variants that influence fitness-related traits.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, purifying selection against variants that negatively affect fitness is expected to keep them at low frequencies in a population, resulting in a predicted inverse relationship between effect sizes and allele frequencies for variants that influence fitness-related traits (Gibson, 2012; Goldstein et al., 2013; Kryukov et al., 2007; Pritchard, 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites theoretical expectations from population genetics.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:57:49.627753Z"
+    },
+    {
+      "id": "2f064cec-ddcf-4f13-a022-f477648a8386",
+      "content_id": "9665823f-b228-47fe-b323-01cf6c1a3537",
+      "claim_id": "C68",
+      "claim": "An increased burden of ultra-rare protein-truncating variants has been observed in human diseases.",
+      "claim_type": "EXPLICIT",
+      "source": "An increased burden of ultra-rare protein-truncating variants has been observed in human diseases (Ganna et al., 2018; Exome Aggregation Consortium et al., 2016), and multiple studies have found that GWAS variants with lower allele frequencies have larger effect sizes (Marouli et al., 2017; Park et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites empirical findings from human genetics studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:57:49.627753Z"
+    },
+    {
+      "id": "8d80dc1a-96ef-4bd0-9412-db7d30db37a9",
+      "content_id": "9665823f-b228-47fe-b323-01cf6c1a3537",
+      "claim_id": "C69",
+      "claim": "Multiple studies have found that GWAS variants with lower allele frequencies have larger effect sizes.",
+      "claim_type": "EXPLICIT",
+      "source": "An increased burden of ultra-rare protein-truncating variants has been observed in human diseases (Ganna et al., 2018; Exome Aggregation Consortium et al., 2016), and multiple studies have found that GWAS variants with lower allele frequencies have larger effect sizes (Marouli et al., 2017; Park et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites empirical findings from GWAS studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:57:49.627753Z"
+    },
+    {
+      "id": "8c798c13-f14f-4960-8105-82dc8c99fb52",
+      "content_id": "9665823f-b228-47fe-b323-01cf6c1a3537",
+      "claim_id": "C70",
+      "claim": "A negative correlation between allele frequency and effect size has been observed in maize GWAS.",
+      "claim_type": "EXPLICIT",
+      "source": "A negative correlation between allele frequency and effect size has also been observed in maize GWAS (Wallace et al., 2014), and our previous work in yeast suggested that variants that contribute to trait variation are shifted to lower frequencies when compared to all sequence variants (Ehrenreich et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites empirical findings from maize genetics.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:57:49.627753Z"
+    },
+    {
+      "id": "b15c6494-b462-450c-b1c6-8615fc60b813",
+      "content_id": "9665823f-b228-47fe-b323-01cf6c1a3537",
+      "claim_id": "C71",
+      "claim": "Previous work in yeast suggested that variants that contribute to trait variation are shifted to lower frequencies when compared to all sequence variants.",
+      "claim_type": "EXPLICIT",
+      "source": "A negative correlation between allele frequency and effect size has also been observed in maize GWAS (Wallace et al., 2014), and our previous work in yeast suggested that variants that contribute to trait variation are shifted to lower frequencies when compared to all sequence variants (Ehrenreich et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites previous findings from yeast genetics.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:57:49.627753Z"
+    },
+    {
+      "id": "48c195b9-811e-4926-8458-3d72f9899149",
+      "content_id": "9665823f-b228-47fe-b323-01cf6c1a3537",
+      "claim_id": "C72",
+      "claim": "Recent studies employed indirect variance partitioning approaches to uncover appreciable contributions of lower frequency variants to heritability of complex traits in humans.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent studies employed indirect variance partitioning approaches to uncover appreciable contributions of lower frequency variants to heritability of complex traits in humans, including prostate cancer susceptibility (Mancuso et al., 2016), height (Wainschtein et al., 2019; Yang et al., 2015), and body mass index (Wainschtein et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites recent human genetics studies using variance partitioning.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:57:49.627753Z"
+    },
+    {
+      "id": "8ba605c8-ec73-42ab-aa63-8b5a72cda906",
+      "content_id": "9665823f-b228-47fe-b323-01cf6c1a3537",
+      "claim_id": "C73",
+      "claim": "Rare variants cannot be detected by GWAS by design.",
+      "claim_type": "EXPLICIT",
+      "source": "First, rare variants cannot be detected by GWAS by design, and sequencing studies have not reached sufficient sample sizes to find them with high statistical power (Zuk et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states a known limitation of GWAS methodology.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:57:49.627753Z"
+    },
+    {
+      "id": "99316e57-3358-4cc8-b0fa-51e80ffd13e4",
+      "content_id": "9665823f-b228-47fe-b323-01cf6c1a3537",
+      "claim_id": "C74",
+      "claim": "Sequencing studies have not reached sufficient sample sizes to find rare variants with high statistical power.",
+      "claim_type": "EXPLICIT",
+      "source": "First, rare variants cannot be detected by GWAS by design, and sequencing studies have not reached sufficient sample sizes to find them with high statistical power (Zuk et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites a study discussing power limitations in sequencing studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:57:49.627753Z"
+    },
+    {
+      "id": "a0d7cb07-90a0-4dfb-af63-000df13888e5",
+      "content_id": "9665823f-b228-47fe-b323-01cf6c1a3537",
+      "claim_id": "C75",
+      "claim": "The power to detect a variant with any given effect size decreases with the frequency of the variant in the study.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, the power to detect a variant with any given effect size decreases with the frequency of the variant in the study, simply because fewer individuals in the sample carry a less-frequent variant (Zuk et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites a study explaining statistical power considerations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:57:49.627753Z"
+    },
+    {
+      "id": "a8d3ecab-2996-4995-b4d2-96fb345636ee",
+      "content_id": "9665823f-b228-47fe-b323-01cf6c1a3537",
+      "claim_id": "C76",
+      "claim": "The statistical artifact of decreased power for rare variants shifts the effect sizes of detected rare variants upwards, confounding effect size and allele frequency.",
+      "claim_type": "EXPLICIT",
+      "source": "This statistical artifact shifts the effect sizes of those rare variants that are detected upwards, confounding effect size and allele frequency and biasing any effort to measure the underlying relationship between the two.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explains a statistical bias in detecting rare variants.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:57:49.627753Z"
+    },
+    {
+      "id": "4cf11247-d263-489c-821a-eb1698a86daa",
+      "content_id": "9665823f-b228-47fe-b323-01cf6c1a3537",
+      "claim_id": "C77",
+      "claim": "Variants that are rare in the yeast population and occur in only a single parental strain are present in approximately 1000 progeny in the mapping population.",
+      "claim_type": "EXPLICIT",
+      "source": "In this mapping population, even variants that are rare in the yeast population and occur in only a single parental strain are present in approximately 1000 progeny, resulting in high power to detect them.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explains the design advantage of the crossing scheme.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:57:49.627753Z"
+    },
+    {
+      "id": "97464924-e65d-45a7-b42f-2fbdce6eae65",
+      "content_id": "9665823f-b228-47fe-b323-01cf6c1a3537",
+      "claim_id": "C78",
+      "claim": "The crossing design results in high power to detect rare variants.",
+      "claim_type": "EXPLICIT",
+      "source": "In this mapping population, even variants that are rare in the yeast population and occur in only a single parental strain are present in approximately 1000 progeny, resulting in high power to detect them.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explains the design advantage of the crossing scheme.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:57:49.627753Z"
+    },
+    {
+      "id": "92c7730a-d924-4e0c-a845-db631c56c4b0",
+      "content_id": "9665823f-b228-47fe-b323-01cf6c1a3537",
+      "claim_id": "C79",
+      "claim": "The study decoupled variant frequency from effect size by measuring population allele frequencies in a separate large catalog of sequenced yeast isolates.",
+      "claim_type": "EXPLICIT",
+      "source": "We then decoupled variant frequency from effect size by measuring the population allele frequencies of QTL lead variants detected in our panel in a separate large catalog of sequenced yeast isolates (Peter et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the methodological approach to avoid confounding.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:57:49.627753Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "3302e0e2-aa50-473a-8951-0b15cd21fc8b",
+      "content_id": "9665823f-b228-47fe-b323-01cf6c1a3537",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors constructed a large segregant panel from 16 diverse yeast strains, generating 13,950 progeny that capture 82% of common genetic diversity in S. cerevisiae. These segregants were genotyped at ~299,000 variants using low-coverage whole-genome sequencing.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C7-C13 provide consistent, explicit data on the experimental design. The crossing scheme, sample sizes, sequencing coverage, and genetic diversity captured are clearly documented with specific numbers. The design is well-justified for detecting both common and rare variants.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:57:49.627753Z"
+    },
+    {
+      "id": "ff8d4cda-61cc-4b7c-b7bd-54865e3ceb3b",
+      "content_id": "9665823f-b228-47fe-b323-01cf6c1a3537",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Joint QTL mapping across all crosses identified 4,552 QTLs at 5% FDR (average 120 per trait), explaining a median of 73% of additive heritability. This joint approach was more powerful than within-cross mapping, detecting 458 additional QTLs with smaller effect sizes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C17-C24 present a coherent QTL mapping result with appropriate statistical controls (FDR), cross-validation for heritability estimates, and direct comparison between methods. The statistical test (Wilcoxon rank sum, p=9e-5) supports the claim that additional QTLs have smaller effects.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:57:49.627753Z"
+    },
+    {
+      "id": "664c6e24-1a59-4e15-bf0e-e71b61e11c94",
+      "content_id": "9665823f-b228-47fe-b323-01cf6c1a3537",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Variance component analysis revealed that additive genetic effects account for just over half of total phenotypic variance on average, while pairwise genetic interactions account for only 8% (approximately 1/6 as much as additive effects).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C15-C16 report variance partitioning results using established methods (cited appropriately). The findings are presented with Figure 2 support and are consistent with prior work in yeast. The relative contribution of epistasis versus additive effects is clearly quantified.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:57:49.627753Z"
+    },
+    {
+      "id": "b7514ab6-775f-47d6-a02d-32cdbacf608d",
+      "content_id": "9665823f-b228-47fe-b323-01cf6c1a3537",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Rare variants (MAF <0.01) make a disproportionate contribution to trait variation, explaining a median of 51.7% of variance despite constituting only 27.8% of variants. This contribution varies widely across traits, from nearly zero for copper sulfate/lithium chloride to over 75% for cadmium chloride and other stressors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C25-C31 present a major finding with appropriate variance partitioning methodology. The disproportionate contribution is well-supported given that rare variants are expected to explain less variance per variant (C27). Trait-specific patterns are validated by comparison with independent GWAS data (C30-C31).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:57:49.627753Z"
+    },
+    {
+      "id": "18aa60f0-a4c4-4223-ad10-1b919d968ab1",
+      "content_id": "9665823f-b228-47fe-b323-01cf6c1a3537",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Most QTLs have small effects (64% <0.1 SD) and common lead variants (78%), but large-effect QTLs are highly enriched for rare variants. Among QTLs with effects \u22650.3 SD, 145 lead variants were rare versus 90 common, with rare variants being 6.7-fold more likely to have large effects (p<2e-16).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C37 describe the relationship between effect size and allele frequency with specific quantitative data and appropriate statistical testing (Fisher's exact test). The enrichment is substantial and highly significant, supporting the inverse relationship between frequency and effect size.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:57:49.627753Z"
+    },
+    {
+      "id": "d3f5dcdf-1550-424b-910d-517c128989c6",
+      "content_id": "9665823f-b228-47fe-b323-01cf6c1a3537",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Evolutionary analysis using S. paradoxus as an outgroup revealed that recent variants (sharing major allele with S. paradoxus) are 1.8-fold more likely to have large effects (>0.1 SD, p=9e-5) and 1.5-fold more likely to be deleterious (p=8e-3). Strikingly, no ancient variant decreased fitness by >0.5 SD, whereas 41 recent variants did (p=7e-3).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38-C44 integrate theoretical expectations (C38, C40-C41) with empirical observations (C42-C44). The use of S. paradoxus for ancestral state determination is appropriate, and the statistical tests support the conclusion that negative selection has shaped the frequency-effect relationship. The stark difference in large deleterious effects is particularly compelling.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:57:49.627753Z"
+    },
+    {
+      "id": "b272bea7-faba-4593-8992-a2f41c0690c7",
+      "content_id": "9665823f-b228-47fe-b323-01cf6c1a3537",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The disproportionate contribution of rare variants to trait variation is driven by recently arising variants, and negative selection has shaped the relationship between variant frequency and effect size.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4-C5 are high-level conclusions supported by the detailed evolutionary analyses in C38-C44. The integration of theoretical expectations with empirical data on recent versus ancient variants provides strong evidence for the role of negative selection.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:57:49.627753Z"
+    },
+    {
+      "id": "5a0c82dd-1673-46c1-ba4f-8fc3c6e31319",
+      "content_id": "9665823f-b228-47fe-b323-01cf6c1a3537",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Statistical fine-mapping resolved 427 QTLs to 195 unique causal genes at 20% FDR, with 26 genes validated by prior experimental evidence. At 5% FDR, 105 genes were identified, including 24 of the 26 experimentally validated genes. This represents approximately 8% of all detected QTLs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C45-C48, C62 describe fine-mapping results using an appropriate Bayesian method (PICS). The validation rate (26/195 or 24/105 genes with prior experimental support) provides strong evidence for the accuracy of the approach. The FDR control and validation against literature are appropriate.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:57:49.627753Z"
+    },
+    {
+      "id": "2b9f8af0-60d5-4cf6-963e-e0ae672f8ae7",
+      "content_id": "9665823f-b228-47fe-b323-01cf6c1a3537",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Causal genes are enriched for plasma membrane (q=1.8e-7), metal ion transport (q=0.0009), and nitrogen compound biosynthesis (q=0.0076) functions. Strikingly, 5 of 6 cAMP biosynthesis genes were identified (q=0.0002), along with additional RAS/cAMP pathway genes, suggesting abundant functional variation in glucose-to-alternative carbon source switching.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49-C56 present GO enrichment analysis with appropriate multiple testing correction (q-values). The enrichment of the RAS/cAMP pathway is particularly striking (5/6 genes, highly significant). The hypothesis in C56 is reasonable given the data, though explicitly labeled as speculation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:57:49.627753Z"
+    },
+    {
+      "id": "e78bf3d0-a7fd-48f7-9031-8f238a8598e3",
+      "content_id": "9665823f-b228-47fe-b323-01cf6c1a3537",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The findings generalize previous BY-RM cross results to the broader S. cerevisiae population, showing that S288c is not exceptional and that additive effects dominate trait variation with little missing heritability in sufficiently powered studies. The authors believe these findings will apply broadly beyond yeast.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C57-C61 mix supported findings (C57-C58 based on current data) with speculation about generalizability (C59-C60 explicitly stated as beliefs). While C58 is supported by the multi-strain design, the broader claims about missing heritability and generalization beyond yeast (C59-C60) are speculative and cannot be fully evaluated from this study alone.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:57:49.627753Z"
+    },
+    {
+      "id": "35c1e003-2aae-46bd-88a9-ca88db1338ff",
+      "content_id": "9665823f-b228-47fe-b323-01cf6c1a3537",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Different S. cerevisiae strains may have evolved different strategies for nutrient sensing and response as a function of specializing in particular environmental niches.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C63 is explicitly speculative (\"suggesting that\") based on functional clustering of causal genes. While the functional enrichment is well-supported, the evolutionary interpretation about niche specialization requires additional evidence beyond the genetic mapping data presented.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:57:49.627753Z"
+    },
+    {
+      "id": "ec255f38-d257-40e3-a69c-72525f25f893",
+      "content_id": "9665823f-b228-47fe-b323-01cf6c1a3537",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Growth measurements in different environments are not strongly correlated and are treated as separate traits.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C14 states an observation with citation to prior work (Bloom et al., 2013). This justifies treating the 38 conditions as separate phenotypes rather than as repeated measures of a single trait, which is appropriate for the subsequent analyses.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:57:49.627753Z"
+    },
+    {
+      "id": "5a6f4f2a-e692-470b-9ad3-4ac2c3971f00",
+      "content_id": "9665823f-b228-47fe-b323-01cf6c1a3537",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Prior work establishes that GWAS cannot detect rare variants by design, that negative selection is expected to create an inverse relationship between effect size and allele frequency, and that empirical studies in humans, maize, and yeast have observed this pattern. However, statistical power limitations confound frequency and effect size in typical studies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C64-C76 accurately summarize prior knowledge and cite appropriate literature. These claims establish the theoretical and empirical context for the current study and correctly identify the statistical challenges (ascertainment bias, power limitations) that the current study design addresses.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:57:49.627753Z"
+    },
+    {
+      "id": "a6ef7187-5e87-4cc4-a4fe-13d589a660fa",
+      "content_id": "9665823f-b228-47fe-b323-01cf6c1a3537",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The crossing design provides high power to detect rare variants because even variants present in only one parent appear in ~1000 progeny. The study decouples variant frequency from effect size by measuring population frequencies in an independent panel of 1011 sequenced isolates.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C77-C79 describe key methodological advantages of the study design. The logic is sound: the crossing scheme amplifies rare variants in the mapping population (C77-C78), while using external frequency data (C79) avoids the confounding between power and frequency that plagues typical association studies.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:57:49.627753Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "8977fb5b-cade-49c9-8a85-235548c2e205",
+      "result_id": "3302e0e2-aa50-473a-8951-0b15cd21fc8b"
+    },
+    {
+      "claim_id": "082e85d3-8629-40f4-83e9-24239d751c34",
+      "result_id": "3302e0e2-aa50-473a-8951-0b15cd21fc8b"
+    },
+    {
+      "claim_id": "4a0bd10b-a3d5-4206-bfaf-30b33d6e10fc",
+      "result_id": "3302e0e2-aa50-473a-8951-0b15cd21fc8b"
+    },
+    {
+      "claim_id": "ee9196e8-3409-4456-8c29-cc53f51a2d91",
+      "result_id": "3302e0e2-aa50-473a-8951-0b15cd21fc8b"
+    },
+    {
+      "claim_id": "612a94fa-0b33-4c68-bc8c-cbb9a1f5d7f6",
+      "result_id": "3302e0e2-aa50-473a-8951-0b15cd21fc8b"
+    },
+    {
+      "claim_id": "e38cd79a-e541-4e56-8d34-6aa0e900ae65",
+      "result_id": "3302e0e2-aa50-473a-8951-0b15cd21fc8b"
+    },
+    {
+      "claim_id": "7d175e90-4355-4ff2-af97-292dbe1ceaf3",
+      "result_id": "3302e0e2-aa50-473a-8951-0b15cd21fc8b"
+    },
+    {
+      "claim_id": "92ac396f-0a16-4407-90ed-b269344dd437",
+      "result_id": "3302e0e2-aa50-473a-8951-0b15cd21fc8b"
+    },
+    {
+      "claim_id": "4061fe18-4253-46d7-b4b6-4f462b183017",
+      "result_id": "ff8d4cda-61cc-4b7c-b7bd-54865e3ceb3b"
+    },
+    {
+      "claim_id": "ffacc64b-ec0f-4957-ab87-08620b1dcd36",
+      "result_id": "ff8d4cda-61cc-4b7c-b7bd-54865e3ceb3b"
+    },
+    {
+      "claim_id": "fa09cf37-6908-48de-948a-994f876b29a4",
+      "result_id": "ff8d4cda-61cc-4b7c-b7bd-54865e3ceb3b"
+    },
+    {
+      "claim_id": "187c7644-6e9d-4fff-9ca7-604f3f7f7390",
+      "result_id": "ff8d4cda-61cc-4b7c-b7bd-54865e3ceb3b"
+    },
+    {
+      "claim_id": "efd482af-eb90-4290-807b-8c2a4910c1ba",
+      "result_id": "ff8d4cda-61cc-4b7c-b7bd-54865e3ceb3b"
+    },
+    {
+      "claim_id": "c17e6b87-5720-4cc3-859e-a3f9208a0b4d",
+      "result_id": "ff8d4cda-61cc-4b7c-b7bd-54865e3ceb3b"
+    },
+    {
+      "claim_id": "d8d3eef8-7a86-44fa-9c0f-67cfaae936d1",
+      "result_id": "ff8d4cda-61cc-4b7c-b7bd-54865e3ceb3b"
+    },
+    {
+      "claim_id": "d3249368-3fb7-405d-8300-45eab22250f2",
+      "result_id": "ff8d4cda-61cc-4b7c-b7bd-54865e3ceb3b"
+    },
+    {
+      "claim_id": "6a963d03-a4a5-4c42-9534-4a52fcf4f583",
+      "result_id": "ff8d4cda-61cc-4b7c-b7bd-54865e3ceb3b"
+    },
+    {
+      "claim_id": "2fe01c14-1ce5-4fa9-8e83-c9ec65d6b93e",
+      "result_id": "664c6e24-1a59-4e15-bf0e-e71b61e11c94"
+    },
+    {
+      "claim_id": "451a7c60-3c09-468f-b473-1ecc83db5454",
+      "result_id": "664c6e24-1a59-4e15-bf0e-e71b61e11c94"
+    },
+    {
+      "claim_id": "c8bc2a21-f510-4c38-a2d8-574ce259d13f",
+      "result_id": "b7514ab6-775f-47d6-a02d-32cdbacf608d"
+    },
+    {
+      "claim_id": "aa789f32-da76-4a60-9323-95dfd869296f",
+      "result_id": "b7514ab6-775f-47d6-a02d-32cdbacf608d"
+    },
+    {
+      "claim_id": "9c800959-d3ef-489e-bb75-db3259be629e",
+      "result_id": "b7514ab6-775f-47d6-a02d-32cdbacf608d"
+    },
+    {
+      "claim_id": "7405fcdd-6f60-4a6b-a028-1063f5dbb74a",
+      "result_id": "b7514ab6-775f-47d6-a02d-32cdbacf608d"
+    },
+    {
+      "claim_id": "06b6cf28-2e90-4d33-bb18-c029b749c106",
+      "result_id": "b7514ab6-775f-47d6-a02d-32cdbacf608d"
+    },
+    {
+      "claim_id": "c8642177-60f0-4e73-a72d-849f9ef56192",
+      "result_id": "b7514ab6-775f-47d6-a02d-32cdbacf608d"
+    },
+    {
+      "claim_id": "3b023d16-94da-473b-85f5-5f9e974f70ea",
+      "result_id": "b7514ab6-775f-47d6-a02d-32cdbacf608d"
+    },
+    {
+      "claim_id": "41db1728-a1f3-4ee7-9597-a71281c834eb",
+      "result_id": "b7514ab6-775f-47d6-a02d-32cdbacf608d"
+    },
+    {
+      "claim_id": "caac4eac-c29d-4e0e-93b2-834568c49810",
+      "result_id": "18aa60f0-a4c4-4223-ad10-1b919d968ab1"
+    },
+    {
+      "claim_id": "d7f33b5d-da59-4655-88fb-671f0155dec3",
+      "result_id": "18aa60f0-a4c4-4223-ad10-1b919d968ab1"
+    },
+    {
+      "claim_id": "b2fed6b6-c15e-4fdf-b28d-b37638a92548",
+      "result_id": "18aa60f0-a4c4-4223-ad10-1b919d968ab1"
+    },
+    {
+      "claim_id": "e1d8d825-c1ec-46b5-8615-2f2a793aa1ae",
+      "result_id": "18aa60f0-a4c4-4223-ad10-1b919d968ab1"
+    },
+    {
+      "claim_id": "3bc4e5b5-9308-4b1f-9aae-9204378c51a2",
+      "result_id": "18aa60f0-a4c4-4223-ad10-1b919d968ab1"
+    },
+    {
+      "claim_id": "b3e3c90d-870c-4775-b4a2-390e064d1700",
+      "result_id": "18aa60f0-a4c4-4223-ad10-1b919d968ab1"
+    },
+    {
+      "claim_id": "9e585892-1916-47e0-a06a-3a9ce2eb76e0",
+      "result_id": "d3f5dcdf-1550-424b-910d-517c128989c6"
+    },
+    {
+      "claim_id": "d1039faa-1d82-461a-88fd-d0fc1bcff401",
+      "result_id": "d3f5dcdf-1550-424b-910d-517c128989c6"
+    },
+    {
+      "claim_id": "fa4fe9f9-a3e3-4526-8884-e9e8992344d4",
+      "result_id": "d3f5dcdf-1550-424b-910d-517c128989c6"
+    },
+    {
+      "claim_id": "0d8a2acf-e8b3-48b5-9878-4bb381954c15",
+      "result_id": "d3f5dcdf-1550-424b-910d-517c128989c6"
+    },
+    {
+      "claim_id": "caf68a07-4de8-46f0-aabe-bd0314bbd07a",
+      "result_id": "d3f5dcdf-1550-424b-910d-517c128989c6"
+    },
+    {
+      "claim_id": "047880c6-30bb-410a-b77d-acdb4cde10e3",
+      "result_id": "d3f5dcdf-1550-424b-910d-517c128989c6"
+    },
+    {
+      "claim_id": "a7f2b3d6-347a-445b-88b7-f64e54d8f66b",
+      "result_id": "d3f5dcdf-1550-424b-910d-517c128989c6"
+    },
+    {
+      "claim_id": "88291111-0155-40f4-a258-9fd26721356d",
+      "result_id": "b272bea7-faba-4593-8992-a2f41c0690c7"
+    },
+    {
+      "claim_id": "826f055b-011c-4a16-adc5-4f6d9f17cfb6",
+      "result_id": "b272bea7-faba-4593-8992-a2f41c0690c7"
+    },
+    {
+      "claim_id": "9d8de3e8-9318-4e9e-af47-741a2d59df6a",
+      "result_id": "5a0c82dd-1673-46c1-ba4f-8fc3c6e31319"
+    },
+    {
+      "claim_id": "729d4c8f-52d5-419b-9884-6d8b0db13f49",
+      "result_id": "5a0c82dd-1673-46c1-ba4f-8fc3c6e31319"
+    },
+    {
+      "claim_id": "b1c109cd-4637-4b47-830f-17669477ca84",
+      "result_id": "5a0c82dd-1673-46c1-ba4f-8fc3c6e31319"
+    },
+    {
+      "claim_id": "70154284-9b07-44b8-b027-57866dd6799e",
+      "result_id": "5a0c82dd-1673-46c1-ba4f-8fc3c6e31319"
+    },
+    {
+      "claim_id": "e1374fda-6489-4090-91f5-df33984fe676",
+      "result_id": "5a0c82dd-1673-46c1-ba4f-8fc3c6e31319"
+    },
+    {
+      "claim_id": "7377203d-3a1f-4284-9216-84581b657b0a",
+      "result_id": "5a0c82dd-1673-46c1-ba4f-8fc3c6e31319"
+    },
+    {
+      "claim_id": "c9700ae8-81dc-404b-a7de-e5321769d310",
+      "result_id": "2b9f8af0-60d5-4cf6-963e-e0ae672f8ae7"
+    },
+    {
+      "claim_id": "37678f6a-5fbe-4257-825a-9669e0748001",
+      "result_id": "2b9f8af0-60d5-4cf6-963e-e0ae672f8ae7"
+    },
+    {
+      "claim_id": "261c2f4c-9165-4745-9ade-6f10324a6093",
+      "result_id": "2b9f8af0-60d5-4cf6-963e-e0ae672f8ae7"
+    },
+    {
+      "claim_id": "0c664644-fca3-4d8d-9fe5-b31bbdc1a68e",
+      "result_id": "2b9f8af0-60d5-4cf6-963e-e0ae672f8ae7"
+    },
+    {
+      "claim_id": "95f6dd8f-c0f7-4dee-bca7-98305b89b81e",
+      "result_id": "2b9f8af0-60d5-4cf6-963e-e0ae672f8ae7"
+    },
+    {
+      "claim_id": "7a599275-02ab-4143-80b1-cff10ba456a5",
+      "result_id": "2b9f8af0-60d5-4cf6-963e-e0ae672f8ae7"
+    },
+    {
+      "claim_id": "82d61613-267e-4f83-a658-da4bfbf429a3",
+      "result_id": "2b9f8af0-60d5-4cf6-963e-e0ae672f8ae7"
+    },
+    {
+      "claim_id": "b421ae9b-aef7-462e-9f47-c933b1ae16d9",
+      "result_id": "2b9f8af0-60d5-4cf6-963e-e0ae672f8ae7"
+    },
+    {
+      "claim_id": "8e73e723-3d21-463b-b55f-0aa07a7c2e06",
+      "result_id": "e78bf3d0-a7fd-48f7-9031-8f238a8598e3"
+    },
+    {
+      "claim_id": "9a5112b2-c130-4011-a1f4-a35cb5300017",
+      "result_id": "e78bf3d0-a7fd-48f7-9031-8f238a8598e3"
+    },
+    {
+      "claim_id": "1510066c-3c45-484f-a275-1cbef280c038",
+      "result_id": "e78bf3d0-a7fd-48f7-9031-8f238a8598e3"
+    },
+    {
+      "claim_id": "fc19f5b3-5769-44df-95fd-5b8cdc05aa60",
+      "result_id": "e78bf3d0-a7fd-48f7-9031-8f238a8598e3"
+    },
+    {
+      "claim_id": "2ab46eb1-8fe4-4ed6-84dc-464cc691160d",
+      "result_id": "e78bf3d0-a7fd-48f7-9031-8f238a8598e3"
+    },
+    {
+      "claim_id": "b64cf49a-d8c0-4677-9a6c-4d24f73bee15",
+      "result_id": "35c1e003-2aae-46bd-88a9-ca88db1338ff"
+    },
+    {
+      "claim_id": "10b09d7d-28b7-4300-bf2a-f14d20db26c5",
+      "result_id": "ec255f38-d257-40e3-a69c-72525f25f893"
+    },
+    {
+      "claim_id": "2d06fe9a-d87c-487d-b424-1baae64ef878",
+      "result_id": "5a6f4f2a-e692-470b-9ad3-4ac2c3971f00"
+    },
+    {
+      "claim_id": "a7db5e4b-ada7-45ee-bf5b-26bafae081c9",
+      "result_id": "5a6f4f2a-e692-470b-9ad3-4ac2c3971f00"
+    },
+    {
+      "claim_id": "a755048f-7da1-4e5d-ac06-3ece173da9b6",
+      "result_id": "5a6f4f2a-e692-470b-9ad3-4ac2c3971f00"
+    },
+    {
+      "claim_id": "8611ce32-cb07-45ba-9f27-861268c78177",
+      "result_id": "5a6f4f2a-e692-470b-9ad3-4ac2c3971f00"
+    },
+    {
+      "claim_id": "2f064cec-ddcf-4f13-a022-f477648a8386",
+      "result_id": "5a6f4f2a-e692-470b-9ad3-4ac2c3971f00"
+    },
+    {
+      "claim_id": "8d80dc1a-96ef-4bd0-9412-db7d30db37a9",
+      "result_id": "5a6f4f2a-e692-470b-9ad3-4ac2c3971f00"
+    },
+    {
+      "claim_id": "8c798c13-f14f-4960-8105-82dc8c99fb52",
+      "result_id": "5a6f4f2a-e692-470b-9ad3-4ac2c3971f00"
+    },
+    {
+      "claim_id": "b15c6494-b462-450c-b1c6-8615fc60b813",
+      "result_id": "5a6f4f2a-e692-470b-9ad3-4ac2c3971f00"
+    },
+    {
+      "claim_id": "48c195b9-811e-4926-8458-3d72f9899149",
+      "result_id": "5a6f4f2a-e692-470b-9ad3-4ac2c3971f00"
+    },
+    {
+      "claim_id": "8ba605c8-ec73-42ab-aa63-8b5a72cda906",
+      "result_id": "5a6f4f2a-e692-470b-9ad3-4ac2c3971f00"
+    },
+    {
+      "claim_id": "99316e57-3358-4cc8-b0fa-51e80ffd13e4",
+      "result_id": "5a6f4f2a-e692-470b-9ad3-4ac2c3971f00"
+    },
+    {
+      "claim_id": "a0d7cb07-90a0-4dfb-af63-000df13888e5",
+      "result_id": "5a6f4f2a-e692-470b-9ad3-4ac2c3971f00"
+    },
+    {
+      "claim_id": "a8d3ecab-2996-4995-b4d2-96fb345636ee",
+      "result_id": "5a6f4f2a-e692-470b-9ad3-4ac2c3971f00"
+    },
+    {
+      "claim_id": "4cf11247-d263-489c-821a-eb1698a86daa",
+      "result_id": "a6ef7187-5e87-4cc4-a4fe-13d589a660fa"
+    },
+    {
+      "claim_id": "97464924-e65d-45a7-b42f-2fbdce6eae65",
+      "result_id": "a6ef7187-5e87-4cc4-a4fe-13d589a660fa"
+    },
+    {
+      "claim_id": "92c7730a-d924-4e0c-a845-db631c56c4b0",
+      "result_id": "a6ef7187-5e87-4cc4-a4fe-13d589a660fa"
+    }
+  ],
+  "comparisons": []
+}

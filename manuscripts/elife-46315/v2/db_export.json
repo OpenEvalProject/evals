@@ -1,0 +1,1948 @@
+{
+  "submission": {
+    "id": "8bc8e906-27fc-4a63-a874-c7b98ba0573f",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T10:56:04.221176Z",
+    "updated_at": "2025-12-02T10:56:04.221176Z"
+  },
+  "content": [
+    {
+      "id": "65ec2bef-505f-4e37-846b-d312b9d2ca40",
+      "submission_id": "8bc8e906-27fc-4a63-a874-c7b98ba0573f",
+      "content_type": "manuscript",
+      "content_text": "# A positive feedback loop between Myc and aerobic glycolysis sustains tumor growth in a Drosophila tumor model\n\n## Authors\n\n- Kenneth Kin Lam Wong<sup>1</sup>\n- Jenny Zhe Liao<sup>1</sup>\n- Esther M Verheyen<sup>1</sup> ([ORCID: 0000-0002-9795-5094](https://orcid.org/0000-0002-9795-5094)) \u2020\n\n### Affiliations\n\n1. Department of Molecular Biology and Biochemistry Simon Fraser University Burnaby Canada\n2. Centre for Cell Biology Development and Disease Simon Fraser University Burnaby Canada\n\n\u2020 Corresponding author\n\n## Abstract\n\nCancer cells usually exhibit aberrant cell signaling and metabolic reprogramming. However, mechanisms of crosstalk between these processes remain elusive. Here, we show that in an in vivo tumor model expressing oncogenic Drosophila Homeodomain-interacting protein kinase (Hipk), tumor cells display elevated aerobic glycolysis. Mechanistically, elevated Hipk drives transcriptional upregulation of Drosophila Myc (dMyc; MYC in vertebrates) likely through convergence of multiple perturbed signaling cascades. dMyc induces robust expression of pfk2 (encoding 6-Phosphofructo-2-kinase/fructose-2,6-bisphosphatase; PFKFB in vertebrates) among other glycolytic genes. Pfk2 catalyzes the synthesis of fructose-2,6-bisphosphate, which acts as a potent allosteric activator of Phosphofructokinase (Pfk) and thus stimulates glycolysis. Pfk2 and Pfk in turn are required to sustain dMyc protein accumulation post-transcriptionally, establishing a positive feedback loop. Disruption of the loop abrogates tumorous growth. Together, our study demonstrates a reciprocal stimulation of Myc and aerobic glycolysis and identifies the Pfk2-Pfk governed committed step of glycolysis as a metabolic vulnerability during tumorigenesis.\n\n## Introduction\n\nIn the 1920s, Otto Warburg first discovered that cancer cells vigorously take up glucose and preferentially produce lactate even in the presence of oxygen, a phenomenon now widely termed the Warburg effect or aerobic glycolysis (Warburg et al., 1927). Despite his pioneering work, the Warburg effect was largely disregarded for the subsequent decades (Liberti and Locasale, 2016; Koppenol et al., 2011). After the discoveries of oncogenes and tumor suppressor genes, cancers are generally considered as genetic diseases rather than metabolic ones (Wishart, 2015; Seyfried et al., 2014). Not until the 1980s did the revisiting of the Warburg effect in connection with oncogenes spark substantial research in cancer metabolism (Koppenol et al., 2011), laying the foundation for 2-deoxy-2-(18F)fluoro-D-glucose (18F-FDG) positron emission tomography (PET) in clinical cancer diagnosis (Vander Heiden et al., 2009; Ben-Haim and Ell, 2008), recognition of metabolic reprogramming as a hallmark of cancer (Hanahan and Weinberg, 2011; Ward and Thompson, 2012) and development of anti-cancer agents targeting aerobic glycolysis (Ganapathy-Kanniappan and Geschwind, 2013; Pelicano et al., 2006; Granchi and Minutolo, 2012).\n\nHow the Warburg effect arises and contributes to tumor progression have always been the center in the field of cancer metabolism (Lu et al., 2015). Warburg hypothesized that mitochondrial impairment is the cause of aerobic glycolysis and cancer (Warburg, 1956), which has sparked much controversy among scientists (Senyilmaz and Teleman, 2015). Contrary to his idea, the current, widely-accepted view is that oncogenic drivers such as RAS, MYC, hypoxia-inducible factors (HIFs) and steroid receptor coactivators (SRCs) promote cancer cell proliferation and directly stimulate aerobic glycolysis through regulating transcriptional expression or catalytic activities of metabolic enzymes (Koppenol et al., 2011). Several explanations for the Warburg effect have been put forward, including rapid adenosine triphosphate (ATP) production and de novo biosynthesis of macromolecules (Liberti and Locasale, 2016). Recently, Warburg effect functions are being re-evaluated as a growing body of evidence shows that metabolic rewiring in cancers impacts cell signaling and epigenetics (Liberti and Locasale, 2016; Lu and Thompson, 2012).\n\nDrosophila has proven to be a powerful genetic model organism for studying tumorigenesis in vivo largely due to high conservation of genes and signaling cascades between human and flies and reduced genetic redundancy (Gonzalez, 2013; Herranz and Cohen, 2017)\u00a0(Supplementary file 1). In a recent study, we showed that elevation of Drosophila Hipk causes an in vivo tumor model characterized by tissue overgrowth, loss of epithelial integrity and invasion-like behaviors (Blaquiere et al., 2018). The tumorigenic roles of Drosophila Hipk seem to be conserved in mammals as the four members of the HIPK family (HIPK1-4) are also implicated in certain cancers\u00a0(Reviewed\u00a0in\u00a0Blaquiere and Verheyen, 2017). For example, HIPK1 is highly expressed in breast cancer cell lines, colorectal cancer samples and oncogenically-transformed mouse embryo fibroblasts (Kondo et al., 2003; Rey et al., 2013). Also, HIPK2 is elevated in certain cancers including cervical cancers, pilocytic astrocytomas, colorectal cancer cells and in other proliferative diseases, such as thyroid follicular hyperplasia (Al-Beiti and Lu, 2008; Cheng et al., 2012; Yu et al., 2009; D'Orazi et al., 2006; Saul and Schmitz, 2013; Deshmukh et al., 2008; Lavra et al., 2011). To gain a better understanding of cancer metabolism, we set out to use the fly Hipk tumor model to investigate whether and how cellular metabolism is altered in tumor cells. We find that Hipk-induced tumorous growth is accompanied by elevated aerobic glycolysis. Furthermore, we identify novel feedback mechanisms leading to prolonged dMyc expression and hence tumorigenesis. Our study reveals potential metabolic vulnerabilities that could be exploited to suppress tumor growth.\n\n## Results\n\n### Hipk tumor cells exhibit elevated glucose uptake and consumption\n\nLarval imaginal epithelia such as wing and eye-antennal imaginal discs, which give rise to wing and eye structures in adult flies, respectively, are extensively used as tumor models to study human carcinomas (Herranz et al., 2016). To generate the Hipk tumor model, we used the Gal4-UAS system (Brand and Perrimon, 1993) to induce overexpression of hipk in larval wing discs (full genotype: dpp-Gal4>UAS-RFP\u00a0+\u00a0UAS-hipk, abbreviated as dpp>RFP\u00a0+ hipk) (Figure 1c\u2013d). Fluorescent proteins, for example red fluorescent proteins (RFP) or green fluorescent proteins (GFP), were co-expressed to label the transgene-expressing cells. As previously reported (Blaquiere et al., 2018), in contrast to control discs (dpp>RFP) (Figure 1a\u2013b), tumorous growth and severe tissue distortions were evident in hipk-expressing discs (dpp>RFP\u00a0+\u00a0 hipk) (Figure 1c\u2013d).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/46315/elife-46315-fig1-v2.jpg)\n\n**Figure 1.:** (a\u2013d) Incorporation of 2-NBDG (green) in control (dpp>RFP) (a, b) and hipk-expressing (dpp>RFP\u00a0+\u00a0 hipk) wing discs (c, d). Insets (dashed line) in (a and c) are magnified in (b and d), respectively. RFP (red) marks the transgene-expressing cells. F-actin (gray) staining shows the overall tissue morphology. (e\u2013h) Intracellular glucose FRET efficiency (FRET/CFP) (colored using Fire Lookup Table) in control (dpp>Glucose Sensor) (e\u2013f) and hipk-expressing (dpp>Glucose Sensor+hipk) wing discs (g\u2013h). Individual CFP and FRET channels are shown in cyan and yellow, respectively. Insets (dashed line) in (e and g) are magnified in (f and h), respectively. Insets (solid line) at the upper right corners in (e\u2013e\u2019\u2019) and (g\u2013g\u2019\u2019) show the corresponding signals at single pixel level. (i) Quantification of mean 2-NBDG intensity in hipk-expressing cells (RFP positive) and the neighboring wild-type cells (RFP negative) in hipk-expressing wing discs (dpp\u00a0>RFP\u00a0+\u00a0 hipk) (n\u00a0=\u00a012 wing discs). (j) Chemical structures of D-glucose (top) and 2-NBDG (bottom). (k) Quantification of glucose FRET efficiency in control (dpp>Glucose Sensor) and hipk-expressing (dpp\u00a0>Glucose Sensor\u00a0+\u00a0hipk) wing discs (n\u00a0=\u00a011 wing discs per genotype). (l) Schematic diagram of the FRET-based glucose sensor. Glucose binding induces conformational changes of glucose-binding domain (GBD) such that FRET occurs and YFP emission increases. Scale bars, 50 \u03bcm. Exact p values are shown and calculated using unpaired two-tailed t-test.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/46315/elife-46315-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (a\u2013d) Incorporation of 2-NBDG (green) in control (dpp>RFP) (a) and hipk-expressing eye-antennal discs (dpp>RFP\u00a0+\u00a0 hipk) (b). Insets (dashed line) in (a and b) are magnified in (a\u2019\u2013a\u2019\u2019 and b\u2019\u2013b\u2019\u2019), respectively. RFP (red) marks the transgene-expressing cells. F-actin (magenta) staining shows the overall tissue morphology. (c\u2013d) Incorporation of 2-NBDG (green) in hipk-expressing wing discs without (dpp>RFP\u00a0+\u00a0 hipk) (c) or with co-expression of glut1-RNAi (dpp>RFP\u00a0+ hipk\u00a0+\u00a0glut1-RNAi) (d). Insets (dashed line) in (c and d) are magnified in (c\u2019\u2013c\u2019\u2019 and d\u2019\u2013d\u2019\u2019), respectively. RFP (red) marks the transgene-expressing cells. F-actin (magenta) staining shows the overall tissue morphology. Scale bars, 50 \u03bcm.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/46315/elife-46315-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (a) qRT-PCR analysis of glut1 expression in control (act5c>RFP) and glut1 knockdown (act5c>glut1-RNAi) pupae. (b) qRT-PCR analyses of hex-A and hex-C expression in control (act5c>RFP), hex-A knockdown (act5c>hex A-RNAi) and hex-C knockdown (act5c>hex C-RNAi) pupae. (c) qRT-PCR analysis of pgi expression in control (act5c>RFP) and pgi knockdown (act5c>pgi-RNAi) pupae. (d) qRT-PCR analyses of pfk and pfk2 expression in control (act5c>RFP), pfk knockdown (act5c>pfk-RNAi) and pfk2 knockdown (act5c>pfk2-RNAi) larvae. (e) qRT-PCR analysis of pgk expression in control (dpp>RFP) and pgk knockdown (dpp>pgk-RNAi) larval salivary gland cells. (f) qRT-PCR analysis of pyk expression in control (act5c>RFP) and pyk knockdown (act5c>pyk-RNAi) larvae. (g) qRT-PCR analysis of Ldh expression in control (act5c>RFP) and Ldh knockdown (act5c>Ldh-RNAi) pupae. Data are mean\u00a0\u00b1\u00a0sem. At least n\u00a0=\u00a02 independent experiments with samples pooled from approximately 10 larvae or pupae. Exact p values are shown and calculated using unpaired two-tailed t-test.\n\nTo ask if elevated Hipk alters cellular metabolism, we first used a fluorescently labeled glucose analog, 2-deoxy-2-[(7-nitro-2,1,3-benzoxadiazol-4-yl)amino]-D-glucose (2-NBDG) (Figure 1j). Like D-glucose, 2-NBDG is transported into cells through glucose transporters and phosphorylated by hexokinases (Yoshioka et al., 1996; O'Neil et al., 2005). However, due to the presence of the fluorescent amino group at the C-2 position, 2-NBDG-6-phosphate cannot proceed further through glycolysis and is consequently trapped within the cells, rendering it a probe for monitoring glucose uptake (O'Neil et al., 2005). 2-NBDG is often used in Drosophila to measure glucose uptake. For example, overexpression of glut1 (encoding Glucose transporter 1) is sufficient to promote the accumulation in 2-NBDG (Niccoli et al., 2016). Increased import of 2-NBDG is also found in dMyc-expressing cells (de la Cova et al., 2014) and RasV12scrib\u2212/\u2212 tumor cells (Katheder et al., 2017), indicating that such cells acquire enhanced glucose metabolism.\n\nSimilarly, we found that cells with elevated Hipk (RFP positive) in hipk-expressing wing discs (dpp>RFP\u00a0+\u00a0 hipk) exhibited statistically significant 2-NBDG accumulation when compared with the neighboring wild-type cells (RFP negative) (Figure 1c\u2013d and i) or cells (either RFP positive or negative) in control discs (dpp>RFP) (Figure 1a\u2013b). A comparable phenomenon was seen in larval eye-antennal discs (Figure 1\u2014figure supplement 1a\u2013b). Furthermore, we detected a mild upregulation of glut1 (1.6-fold) in hipk-expressing discs by quantitative real-time PCR (qRT-PCR) (Figure 2a). Knockdown of glut1 using RNA interference (RNAi) moderately reduced 2-NBDG incorporation in Hipk tumor cells (Figure 1\u2014figure supplement 1c\u2013d). The knockdown efficiency of glut1-RNAi was tested using a ubiquitous Gal4 driver, act5c-Gal4 (Figure 1\u2014figure supplement 2a). Together, these results suggest that elevated Hipk facilitates the import of glucose into cells at least in part through augmenting Glut1 expression.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/46315/elife-46315-fig2-v2.jpg)\n\n**Figure 2.:** (a, b) qRT-PCR analysis of glycolytic gene expression in hipk-expressing discs (dpp>hipk) relative to control discs (dpp>GFP) (a). Data are mean\u00a0\u00b1\u00a0sem. n\u00a0=\u00a03 independent experiments with samples pooled from 10 to 20 wing discs per genotype. Schematic diagram of glycolysis (b). Fold changes are shown in brackets. Glycolytic enzymes with more than 1.5-fold transcriptional upregulation in hipk-expressing discs are marked in red. Bi- and uni-directional arrows indicate the reversible and essentially irreversible steps in glycolysis, respectively. Dashed arrow (blue) shows the positive allosteric regulation of Pfk by fructose-2,6-BP. Full names of the glycolytic genes are provided in Supplementary file 1. Exact p values are shown and calculated using unpaired two-tailed t-test. (c\u2013d) Expression of Ldh-GFP (green), an enhancer trap to monitor Ldh expression, in control (genotype: Ldh-GFP/+) (c) and hipk-expressing wing discs (genotype: Ldh-GFP/dpp>hipk) (d). DAPI staining for DNA (blue) reveals tissue morphology. White arrowhead in d\u2019\u2019 indicates marked induction of Ldh expression. Scale bars, 50 \u03bcm.\n\nNext, we evaluated the intracellular glucose levels using a FRET (F\u00f6rster resonance energy transfer)-based glucose sensor, which is composed of a glucose-binding domain (GBD) fused with cyan fluorescent protein (CFP) and yellow fluorescent protein (YFP) (Volkenhoff et al., 2018; Fehr et al., 2003) (Figure 1l). The binding of glucose to GBD induces conformational changes, leading to increased FRET efficiency (the ratio of FRET to CFP). Intriguingly, a lower FRET/CFP ratio indicative of reduced glucose concentration was observed in hipk-expressing cells (Figure 1g\u2013h and k) when compared with control discs (Figure 1e\u2013f and k). This implies that despite enhanced glucose uptake, glucose is substantially utilized in the rapidly proliferating Hipk tumor cells.\n\n### Elevated Hipk induces robust expression of a subset of glycolytic genes\n\nGlycolysis is a catabolic process that breaks down glucose into pyruvate via multiple enzymatic steps. To ask if glycolysis is upregulated, we examined the expression profile of glycolytic genes by qRT-PCR and changes greater than 1.5-fold were considered significant. We isolated RNA from whole wing discs expressing either GFP (control) or hipk under the dpp-Gal4 driver control. qRT-PCR analyses revealed that genes encoding Hexokinases (Hex-A and Hex-C, 2.2-fold and 4.3-fold respectively), Phosphoglucose isomerase (Pgi, 2.4-fold), Phosphofructokinase 2 (Pfk2, also known as Pfrx, 2.7-fold) and Lactate dehydrogenase (Ldh, also known as Impl3, 3.4-fold) are significantly upregulated in hipk-expressing discs (Figure 2a\u2013b). Expression of other glycolytic genes, on the other hand, remained relatively unchanged.\n\nAs the Dpp domain comprises 10\u201320% of the wing disc, the glycolytic gene upregulation within hipk-expressing cells is likely understated. In light of such a limitation, we used a GFP-based enhancer trap to monitor Ldh transcription in vivo (Ldh-GFP) (Qui\u00f1ones-Coello et al., 2007). In control wing discs, little Ldh-GFP was detected (Figure 2c), indicating that Ldh is minimally expressed under physiological conditions as previously described (Wang et al., 2016). On the contrary, we observed robust Ldh-GFP expression in hipk-expressing wing discs (Figure 2d), confirming that elevated Hipk induces Ldh expression.\n\nHexokinases phosphorylate glucose to form glucose-6-phosphate (G6P), which is the first essentially irreversible step in glycolysis (Figure 2b). Pgi catalyzes the reversible conversion of G6P and fructose-6-phosphate. Pfk2 is a bifunctional enzyme that synthesizes fructose-2,6-bisphosphate (F2,6-BP). F2,6-BP is a potent allosteric activator of Pfk, which governs the committed, second irreversible step in glycolysis. Ldh, similar to LDHA in vertebrates (Rechsteiner, 1970), favors the reduction of pyruvate to lactate, regenerating nicotinamide adenine dinucleotide (NAD+) such that glycolysis continues unabated (Valvona et al., 2016). The robust upregulation of these glycolytic enzymes in hipk-expressing discs is in agreement with previous data implying that glucose consumption is stimulated. Taken together, the results support the hypothesis that Hipk tumor cells exhibited elevated glycolytic activities, resembling the Warburg effect seen in cancers.\n\n### Elevated Hipk drives dMyc upregulation in a region-specific manner\n\nTo elucidate the underlying mechanisms for the metabolic alterations in the Hipk tumors, we examined gene expression of dMyc and Sima (HIF1-\u03b1 in vertebrates) since these two transcription factors are well-known inducers of glycolysis in cancer cells (Miller et al., 2012a; Mar\u00edn-Hern\u00e1ndez et al., 2009). qRT-PCR analyses showed that dMyc was upregulated in hipk-expressing discs whereas sima expression remained unchanged (Figure 3a).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/46315/elife-46315-fig3-v2.jpg)\n\n**Figure 3.:** (a) qRT-PCR analysis of dMyc and sima expression in hipk-expressing discs (dpp>hipk) relative to control discs (dpp>GFP). Data are mean\u00a0\u00b1\u00a0sem. n\u00a0=\u00a03 independent experiments with samples pooled from 10 to 20 wing discs per genotype. Exact p values are shown and calculated using unpaired two-tailed t-test. (b) Schematic diagram of a larval wing imaginal disc, with notum, hinge and pouch in light gray, dark gray and white, respectively. (c\u2013d) \u03b2-galactosidase staining (red) in control (dpp>GFP) (c) and hipk-expressing (dpp>GFP\u00a0+\u00a0 hipk) (d) wing discs harboring a lacZ reporter to monitor the transcriptional induction of dMyc (dMyc-lacZ). White arrowhead in (d\u2019) indicates robust upregulation of dMyc in the wing hinge. (e\u2013f) dMyc staining (gray) in control (dpp>GFP) (e) and hipk-expressing (dpp>GFP\u00a0+\u00a0 hipk) (f) wing discs. White arrowhead in (f\u2019) indicates dMyc accumulation in the wing hinge. GFP (green) marks the transgene-expressing cells. Scale bars, 50 \u03bcm.\n\nLarval wing discs are mainly composed of three regions known as the notum, hinge and pouch, corresponding to the adult structures they give rise to (Figure 3b). Using a dMyc-lacZ enhancer trap (encoding \u03b2-galactosidase (\u03b2-gal)) to monitor the transcriptional control of dMyc in vivo, we observed that dMyc was expressed at high levels in the pouch region of control discs (Figure 3c). In the hinge and notum areas of control discs, dMyc was minimally and weakly expressed, respectively (Figure 3c). In hipk-expressing discs, we found intense \u03b2-galactosidase staining, confirming that Hipk cell-autonomously drives transcriptional upregulation of dMyc. Interestingly, the increase in the \u03b2-gal signal intensity appeared to be the largest in the wing hinge (Figure 3d, arrowhead) where the tumor cells proliferated most rapidly, while the intensity faded when moving away from the hinge region (Figure 3d).\n\nImmunofluorescent staining using antibodies against dMyc confirmed the accumulation of dMyc proteins in Hipk tumor cells especially in the wing hinge (Figure 3e\u2013f), which positively correlates with the marked increase in dMyc mRNA levels in the same region (Figure 3d). dMyc proteins appeared to not accumulate in hipk-expressing cells in the wing pouch (Figure 3f), possibly due to weak induction in dMyc transcription (Figure 3d).\n\nThe variability in Hipk-induced dMyc accumulation suggests a potential region-specificity in dMyc upregulation. To assess this, we generated random flip-out clones of hipk-expressing cells. The clones were marked by RFP. We observed that hipk-expressing clones located in the dorsal hinge (Figure 4c, arrowhead, Figure 4\u2014figure supplement 1a), the lateral hinge (Figure 4\u2014figure supplement 1b) as well as the epithelium on the peripodial side exhibited marked dMyc accumulation (Figure 4\u2014figure supplement 1c). On the contrary, when hipk-expressing clones were located in the wing pouch, dMyc levels appeared unchanged (Figure 4\u2014figure supplement 1d). Altogether, our data imply that elevated Hipk drives dMyc upregulation in a region-specific manner.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/46315/elife-46315-fig4-v2.jpg)\n\n**Figure 4.:** (a) dMyc staining (gray) in a control wing disc. (b) Schematic diagram of a larval wing imaginal disc. The hinge region can be divided into dorsal, lateral and ventral compartments. (c\u2013g) dMyc staining (gray) in flip-out clones expressing hipk (c), yki-S168A (d), Arm-S10 (e), Ci (f) or N-act (g) under the control of actin-Gal4. RFP (red) marks the transgene-expressing clones. DAPI staining for DNA (blue) reveals tissue morphology. (c\u2019, c\u2019\u2019-g\u2019, g\u2019\u2019) are magnified images of the insets (dashed lines) in (c-g). (c) White arrowhead indicates dMyc accumulation in a hipk-expressing clone. (d) White arrowheads indicate yki-S168A-expressing clones with dMyc accumulation. (e) White arrowheads indicate ectopic dMyc expression at the boundary of the Arm-S10-expressing clone and the neighboring wild-type cells. (f) White arrowheads indicate dMyc upregulation in Ci-expressing clones. (g) White arrowheads indicate dMyc accumulation in N-act-expressing clones and the adjacent wild-type cells. Scale bars, 50 \u03bcm.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/46315/elife-46315-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (a\u2013h) dMyc staining (gray) in flip-out clones expressing hipk (a\u2013d), yki-S168A (e), Arm-S10 (f), Ci (g) or N-act (h) under the control of actin-Gal4. RFP (red) marks the transgene-expressing clones. DAPI staining for DNA (blue) reveals tissue morphology. (a\u2019, a\u2019\u2019-h\u2019, h\u2019\u2019) are magnified images of the insets (dashed lines) in (a\u2013h). Scale bars, 50 \u03bcm.\n\n### Elevated Hipk modulates dMyc expression likely through convergence of multiple perturbed signaling cascades\n\nWe further investigated the molecular mechanisms underlying the upregulation of dMyc in Hipk tumor cells. Earlier studies have demonstrated that Hipk is a versatile regulator of numerous signaling pathways. For example, Hipk stimulates the transcriptional activity of Yorkie (Yki, a Drosophila orthologue of YAP/TAZ), the effector of the Hippo tumor suppressor pathway (Chen and Verheyen, 2012; Poon et al., 2012). Hipk also functions as a positive regulator of both Wnt/Wingless (Wg) and Hedgehog signaling by stabilizing Armadillo (\u03b2-catenin in vertebrates) and Cubitus interruptus (Ci; Gli in vertebrates), respectively (Lee et al., 2009a; Swarup and Verheyen, 2011). In addition, Hipk has been found to antagonize Groucho, a global co-repressor, to promote Notch signal transduction (Lee et al., 2009b). If Hipk-induced dMyc upregulation is through deregulation of multiple signaling pathways, we would expect to see dMyc accumulation when the signaling pathways are perturbed. We first focused on the dorsal hinge area since ectopic dMyc expression and tumor growth are most striking in such region in hipk-expressing discs.\n\nFlip-out clones expressing a constitutively active form of Yki (Yki-S168A) to inactivate the Hippo pathway were usually round and most of them in the dorsal hinge displayed dMyc upregulation (Figure 4d, arrowheads). Wing discs with flip-out clones expressing an active form of Arm (Arm-S10) featured an expansion in the hinge area and some dMyc accumulated at the interface between the clone and the neighboring wild-type cells (Figure 4e, arrowheads) but not at the center of the clone. Flip-out clones expressing Ci to activate Hedgehog signaling in the hinge region were round or irregular in shape and exhibited elevated levels of dMyc (Figure 4f, arrowheads). Consistent with previous findings (Djiane et al., 2013), expression of activated Notch appeared to induce dMyc accumulation in both cell and non-cell autonomous fashions in the hinge area likely involving a signaling relay (Figure 4g). Therefore, individual perturbation of signaling pathways that have been previously shown to be regulated by Hipk was sufficient to trigger ectopic dMyc expression in the hinge region.\n\nIn the wing pouch region, activation of Yki failed to cause any dMyc upregulation (Figure 4\u2014figure supplement 1e). This is in contrast to previous findings that overexpression of Yki increased dMyc protein levels in both hinge and pouch regions (Ziosi et al., 2010). Such discrepancy could be due to the different expression levels of the UAS-Yki constructs. Flip-out clones expressing Arm-S10 or activated Notch displayed reduced dMyc expression (Figure 4\u2014figure supplement 1f and h), which is consistent with earlier studies showing that Wg and Notch signaling negatively regulate dMyc expression in the pouch region (Duman-Scheel et al., 2004; Herranz et al., 2008). Clones with Ci overexpression were few and tiny in the wing pouch and the dMyc levels in the clones seemed comparable to those in the neighboring wild-type cells (Figure 4\u2014figure supplement 1g). Our data suggest that the region specificity in dMyc upregulation applies to not only Hipk tumor cells, but also cells with other tumorigenic stimuli.\n\nIn summary, our data show that in the wing hinge region where Hipk tumor growth is most prominent, dMyc protein markedly accumulates. Individual perturbations in signaling pathways that have been shown to be regulated by Hipk also result in ectopic dMyc expression in the same region. Hence, it is likely that in the rapidly proliferating Hipk tumor cells, aberrant signals propagate and converge at the transcriptional control of dMyc. In other words, the modulation of dMyc levels by Hipk seems to be a cumulative effect of alterations in multiple signaling outputs.\n\n### Hipk-induced dMyc governs aerobic glycolysis and tumor growth\n\nIn addition to growth control, dMyc/MYC plays a conserved role in upregulating glycolysis in vertebrates and Drosophila during normal development and in cancers (de la Cova et al., 2014; Gallant, 2013). As expected and previously reported (de la Cova et al., 2014), overexpression of dMyc caused marked 2-NBDG uptake (Figure 5a and d) and promoted glycolytic gene expression (Figure 5e). More importantly, knockdown of dMyc by RNAi in hipk-expressing discs reversed the 2-NBDG accumulation (Figure 5b\u2013d) and moderately suppressed glycolytic gene upregulation (Figure 5e), suggesting that dMyc is essential for the enhanced glycolysis in Hipk tumor cells. Additionally, knockdown of dMyc significantly suppressed the tumorous growth and tissue distortions in hipk-expressing discs, as seen by the decrease in GFP positive cells (Figure 5f\u2013g). Using an independent RNAi construct targeting dMyc (dMyc-RNAi #2), we observed a similar effect upon silencing of dMyc (Figure 5h). dMyc immunofluorescent staining showed the efficient knockdown when dMyc-RNAi constructs were expressed (Figure 5g\u2013i). Wing discs with dMyc knockdown alone appeared wild-type (Figure 5i). Altogether, our results imply that dMyc-induced glycolysis may be a key driver for Hipk tumor growth. Intriguingly, overexpression of dMyc alone (Figure 5a), despite the enhanced glycolysis, failed to reproduce the tumorous phenotypes observed in hipk-expressing discs (Figure 5f). Thus, while upregulation of dMyc is indispensable for Hipk-induced glycolysis and tumor growth, additional mechanisms are involved in the Hipk tumors to trigger the tumorigenic process.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/46315/elife-46315-fig5-v2.jpg)\n\n**Figure 5.:** (a\u2013c) Incorporation of 2-NBDG (green) in dMyc-expressing wing disc (dpp>dMyc) (a), hipk-expressing wing disc (dpp>RFP\u00a0+\u00a0 hipk) (b), and hipk-expressing wing disc with dMyc knockdown (dpp>RFP\u00a0+ hipk\u00a0+\u00a0dMyc-RNAi) (c). Insets (dashed line) in (a, b and c) are magnified in (a\u2019\u2013a\u2019\u2019), (b\u2019\u2013b\u2019\u2019) and (c\u2019\u2013c\u2019\u2019), respectively. dMyc staining (gray) in (a) marks the dMyc-overexpressing cells. RFP (red) in (b and c) marks the transgene-expressing cells. (d) Quantification of mean 2-NBDG intensity in dMyc-expressing cells and the neighboring wild-type cells in dMyc-expressing wing discs (dpp>dMyc) (left), in hipk-expressing cells (RFP positive) and the neighboring wild-type cells (RFP negative) in hipk-expressing discs (dpp>RFP\u00a0+\u00a0 hipk) (middle) and, in hipk, dMyc-RNAi co-expressing cells (RFP positive) and the neighboring wild-type cells (RFP negative) in hipk-expressing discs with dMyc knockdown (dpp>RFP\u00a0+ hipk\u00a0+\u00a0dMyc-RNAi) (right). n\u00a0=\u00a06 discs per genotype. (e) qRT-PCR analysis of expression of a set of glycolytic genes in hipk-expressing wing discs (dpp>hipk), hipk-expressing discs with dMyc knockdown (dpp>hipk\u00a0+\u00a0 dMyc-RNAi), and dMyc-expressing discs relative to control discs (dpp>GFP). Data are mean\u00a0\u00b1\u00a0sem. n\u00a0=\u00a03 independent experiments with samples pooled from 10 to 20 wing discs per genotype. (f\u2013i) dMyc staining (gray in f\u2019\u2019), (g\u2019\u2019, h\u2019\u2019 and i\u2019\u2019) in hipk-expressing disc (dpp>GFP\u00a0+\u00a0 hipk) (f), hipk and dMyc-RNAi co-expressing disc (dpp>GFP\u00a0+ hipk\u00a0+\u00a0dMyc-RNAi) (g), hipk and dMyc-RNAi #2 co-expressing disc (dpp>GFP\u00a0+ hipk\u00a0+\u00a0dMyc-RNAi #2) (h) and dMyc knockdown disc (dpp>GFP\u00a0+\u00a0 dMyc-RNAi) (i). GFP (green) marks the transgene-expressing cells. DAPI staining for DNA (blue) reveals tissue morphology. Scale bars, 50 \u03bcm. Exact p values are shown and calculated using unpaired two-tailed t-test.\n\n### Aerobic glycolysis (the Warburg effect) is essential to tumor growth through sustaining ectopic dMyc expression\n\nEarlier studies have shown that flies incompetent at glycolysis displayed reduced viability as deletion or ubiquitous knockdown of the glycolytic genes pfk, ald, pgk, pglym78, eno or pyk resulted in lethality (Volkenhoff et al., 2015; Gerber et al., 2006; Miller et al., 2012b; Tennessen et al., 2011). Likewise, we observed that flies ubiquitously depleted of pgk (act5c>pgk-RNAi) failed to reach the larval stage. Flies lacking pfk (act5c>pfk-RNAi) or pyk (act5c>pyk-RNAi) reached the larval stage but could not pupariate. Flies with pfk2 knockdown (act5c>pfk2-RNAi) died at the early pupal stage but did not differentiate further to become late pupae. Most flies lacking glut1 (act5c>glut1-RNAi) or pgi (act5c>pgi-RNAi) succeeded in emerging as adults. The timing of lethality following knockdown targeting glycolytic genes could presumably be influenced by maternal contribution, knockdown efficiency or the importance of the glycolytic step which the particular enzyme controls. To confirm the regulatory roles of Pfk and Pfk2 in glycolytic flux, we measured the relative pyruvate content in the knockdown larvae. Consistent with previous work (Li et al., 2018), knockdown of pfk significantly decreased pyruvate levels (Figure 6\u2014figure supplement 1). Similarly, knockdown of pfk2 induced an approximately 60% drop in the pyruvate content (Figure 6\u2014figure supplement 1). The knockdown efficiencies of all RNAi constructs used in this study to silence glycolytic genes were evaluated by qRT-PCR analyses (Figure 1\u2014figure supplement 2).\n\nTo examine the roles of glycolytic activation in Hipk tumor cells, we used RNAi to deplete key glycolytic genes. Knockdown of hex-A or hex-C had negligible effects on Hipk tumor growth; as did hex-A and hex-C double knockdown (Figure 6\u2014figure supplement 2). Similarly, knockdown of glut1 or pgi failed to block Hipk-induced tumorigenesis (Figure 6\u2014figure supplement 3a\u2013b). Knockdown of pfk2, on the contrary, markedly prevented tumor growth and restored tissue architecture in hipk-expressing discs (Figure 6b), suggesting that the committed step of glycolysis determines Hipk tumorigenesis. Indeed, the effect of pfk knockdown was comparable to that of pfk2 knockdown (Figure 6c), even though we did not detect significant pfk upregulation (<1.5 fold) in hipk-expressing discs (Figure 2a). Knockdown of pgk, pyk or Ldh appeared to slightly restrict Hipk tumor growth but the tissue morphology remained distorted (Figure 6d, Figure 6\u2014figure supplement 3c\u2013d).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/46315/elife-46315-fig6-v2.jpg)\n\n**Figure 6.:** (a\u2013d) dMyc staining (gray in a\u2019\u2019, b\u2019\u2019, c\u2019\u2019 and d\u2019\u2019) in hipk-expressing wing disc (dpp>GFP\u00a0+\u00a0 hipk) (a), hipk and pfk2-RNAi co-expressing disc (dpp>GFP\u00a0+ hipk\u00a0+\u00a0pfk2-RNAi) (b), hipk and pfk-RNAi co-expressing disc (dpp>GFP\u00a0+ hipk\u00a0+\u00a0pfk-RNAi) (c) and hipk and Ldh-RNAi co-expressing disc (dpp>GFP\u00a0+ hipk\u00a0+\u00a0Ldh-RNAi) (d). GFP (green) marks the transgene-expressing cells. DAPI staining for DNA (blue) reveals tissue morphology. (e\u2013g) Hipk staining (magenta in e, f and g) and \u03b2-galactosidase staining (red in e\u2019, f\u2019 and g\u2019) in hipk-expressing disc (dpp>hipk) (e), hipk and pfk2-RNAi co-expressing disc (dpp>hipk\u00a0+\u00a0pfk2-RNAi) (f), hipk and pfk-RNAi co-expressing disc (dpp>hipk\u00a0+\u00a0 pfk-RNAi) (g). All wing discs harbor a lacZ reporter to monitor the transcriptional induction of dMyc (dMyc-lacZ). Scale bars, 50 \u03bcm.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/46315/elife-46315-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (a) Relative pyruvate levels in control (act5c>RFP), pfk2 knockdown (act5c>pfk2-RNAi) and pfk knockdown (act5c>pfk-RNAi) larvae. Data are mean\u00a0\u00b1\u00a0sem and pooled from two biological replicates. Exact p values are shown and calculated using unpaired two-tailed t-test. (b) The representative result of the colorimetric assay for pyruvate measurement from one set of biological samples. The left column shows the pyruvate standards. The right column shows the biological samples with the indicated genotypes.\n\n![Figure 6\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/46315/elife-46315-fig6-figsupp2-v2.jpg)\n\n**Figure 6\u2014figure supplement 2.:** (a\u2013b) hipk-expressing wing disc with hex-A knockdown (a) or hex-C knockdown (b). GFP (green) marks the transgene-expressing cells. (c) hipk-expressing wing disc with hex-A and hex-C double knockdown. Hipk staining (red) marks the transgene-expressing cells. DAPI staining for DNA (blue) reveals tissue morphology. Scale bars, 50 \u03bcm.\n\n![Figure 6\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/46315/elife-46315-fig6-figsupp3-v2.jpg)\n\n**Figure 6\u2014figure supplement 3.:** (a\u2013d) dMyc staining (gray in a\u2019\u2019), (b\u2019\u2019, c\u2019\u2019 and d\u2019\u2019) in hipk and glut1-RNAi co-expressing disc (dpp>GFP\u00a0+ hipk\u00a0+\u00a0glut1-RNAi) (a), hipk and pgi-RNAi co-expressing disc (dpp>GFP\u00a0+ hipk\u00a0+\u00a0pgi-RNAi) (b), hipk and pgk-RNAi co-expressing disc (dpp>GFP\u00a0+ hipk\u00a0+\u00a0pgk-RNAi) (c) and hipk and pyk-RNAi co-expressing disc (dpp>GFP\u00a0+ hipk\u00a0+\u00a0pyk-RNAi) (d). GFP (green) marks the transgene-expressing cells. DAPI staining for DNA (blue) reveals tissue morphology. Scale bars, 50 \u03bcm.\n\n![Figure 6\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/46315/elife-46315-fig6-figsupp4-v2.jpg)\n\n**Figure 6\u2014figure supplement 4.:** (a\u2013b) dMyc staining (gray) in pfk knockdown discs (dpp>GFP\u00a0+\u00a0 pfk-RNAi) (a) and pfk2 knockdown discs (dpp>GFP\u00a0+\u00a0pfk2-RNAi) (b). GFP (green) marks the transgene-expressing cells. Scale bars, 50 \u03bcm.\n\n![Figure 6\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/46315/elife-46315-fig6-figsupp5-v2.jpg)\n\n**Figure 6\u2014figure supplement 5.:** (a\u2013b) Armadillo (Arm, red) and Cyclin E (CycE, magenta) in control discs (dpp>GFP) (a), hipk-expressing discs (dpp>GFP\u00a0+\u00a0 hipk) (b), hipk-expressing discs with pfk2 knockdown (dpp>GFP\u00a0+ hipk\u00a0+\u00a0pfk2-RNAi) (c), hipk-expressing discs with pfk knockdown (dpp>GFP\u00a0+ hipk\u00a0+\u00a0pfk-RNAi) (d). White arrowheads in (b\u2019, c\u2019 and d\u2019) indicate stabilization of Arm in the pouch region. White arrowheads in (b\u2019\u2019, c\u2019\u2019 and d\u2019\u2019) indicate CycE induction along the anterior/posterior boundary of the wing discs. GFP (green) marks the transgene-expressing cells. (e\u2013g) \u03b2-galactosidase staining (gray) in control disc (hh-Gal4) (e), hipk-expressing disc (hh>hipk) (f) and hipk-expressing disc with pfk2 knockdown (hh>hipk\u00a0+\u00a0pfk2-RNAi) (g). Hh-Gal4 drives transgenic expression in the posterior compartment of wing discs (left half of the discs). All wing discs harboring a lacZ reporter to monitor the transcriptional induction of expanded (ex-lacZ). Hipk staining (yellow) in (f and g) marks the transgene-expressing cells (posterior compartment). Scale bars, 50 \u03bcm.\n\nWe also examined dMyc expression in Hipk tumor cells when glycolysis was inhibited. Intriguingly, dMyc accumulation was largely abolished in hipk-expressing discs when pfk2 or pfk was knocked down (Figure 6a\u2013c). In the absence of hipk overexpression, neither knockdown of pfk nor pfk2 affected the normal dMyc expression pattern nor led to defects in tissue growth (Figure 6\u2014figure supplement 4). Knockdown of glut1, pgi, pgk, pyk or Ldh in Hipk tumor cells did not rescue dMyc upregulation (Figure 6d, Figure 6\u2014figure supplement 3). Together, our results suggest that dMyc accumulation and the associated Hipk tumor growth are most sensitive to the committed step of glycolysis governed by Pfk2-Pfk.\n\nUsing the dMyc-lacZ reporter, we found that dMyc transcriptional activation remained robust when pfk2 or pfk was depleted in Hipk tumor cells even though the tumor growth was reduced and dMyc protein levels were reduced (Figure 6e\u2013g). Thus, our data indicate that Pfk2 and Pfk are required to sustain ectopic dMyc expression specifically in Hipk tumor cells through post-transcriptional regulation.\n\nThe control of Hipk tumor growth by Pfk2 or Pfk seemed not to be a consequence of altered Hipk protein stability or functions because of the following reasons. First, we did not detect a noticeable change in Hipk protein levels in discs depleted of pfk2 or pfk when compared with discs expressing hipk alone (Figure 6e\u2013g), indicating that blocking glycolysis does not trigger Hipk protein degradation. Second, the robust stimulation of the dMyc-lacZ reporter in hipk-expressing discs with pfk2 or pfk knockdown suggests that Hipk activities remain intact. Indeed, when we examined other signaling targets downstream of Hipk as readouts for Hipk activity, we found that Hipk-mediated stabilization of Armadillo (Wnt/Wg signaling), and induction of Cyclin E or expanded-lacZ (Hippo signaling) remained unaffected by knockdown of pfk2 or pfk in a Hipk overexpression background, indicating Hipk is still functional (Figure 6\u2014figure supplement 5).\n\nAltogether, our data suggest that while dMyc upregulation promotes glycolytic activities, the upregulation of Pfk2, along with subsequent F2,6-BP biosynthesis and Pfk activation, is required to foster the accumulation of dMyc proteins. In other words, a positive feedback loop between dMyc and aerobic glycolysis is formed, coordinating growth signals with metabolic states to reinforce tumor progression.\n\n## Discussion\n\n### dMyc-driven aerobic glycolysis in a hipk tumor model\n\nMultiple approaches and tools have been developed to measure glycolysis including measurement of the extracellular acidification rate (ECAR), fluorescent probes, biosensors, fluorescent/colorimetric assays and mass spectrometry (Bittner et al., 2010; TeSlaa and Teitell, 2014; Tennessen et al., 2014). In the Hipk tumor model, the tumor cells are surrounded by wild-type cells. Our study primarily used fluorescence imaging such that we could examine changes in metabolite levels, gene and protein expression between tumor cells and the adjacent wild-type cells. Our work delineates the causes and significance of metabolic changes in tumor cells.\n\nDrosophila tumor models frequently acquire metabolic changes, especially the Warburg effect. For instance, epidermal growth factor receptor (EGFR)-driven tumors, tumors with activated platelet-derived growth factor (PDGF)/vascular endothelial growth factor (VEGF) receptor (Pvr) and tumors with polarity loss (such as scrib or dlg mutant tumors) feature robust upregulation of Ldh among other glycolytic genes (Wang et al., 2016; Eichenlaub et al., 2018; Bunker et al., 2015). Depletion of Ldh was shown to reduce growth of EGFR-driven tumors but not tumors with polarity loss (Eichenlaub et al., 2018; Bunker et al., 2015). In RasV12scrib\u2212/\u2212 tumors, elevated glucose uptake was evident, but its significance was not evaluated (Katheder et al., 2017). Similar to the previously described models, Hipk tumor cells exhibited elevated glucose metabolism (Figures 1\u20132). Metabolic reprogramming was driven by dMyc upregulation (Figures 3\u20135). Although the transcript levels of another glycolytic inducer sima remained unchanged (Figure 3a), we could not eliminate the possibility that Sima protein levels are altered in the tumor cells. Thus, whether Sima is involved in the tumor growth warrants further studies. Genetical inhibition of Pfk or Pfk2 was sufficient to block Hipk-induced tumorigenesis whereas depletion of Pgk, Pyk or Ldh at most slightly reduced tumor growth (Figure 6; Figure 6\u2014figure supplement 3). Therefore, our data suggest that targeted but not generic inhibition of glycolysis is required to abrogate tumor growth.\n\n### A feedback loop between dMyc and aerobic glycolysis as a metabolic vulnerability in tumor cells\n\nAlthough MYC functions in cancer metabolism are widely recognized, MYC is generally considered \u2018undruggable\u2019 largely due to its nuclear localization, lack of an enzymatic \u2018active site\u2019, and indispensable roles during normal development (Soucek and Evan, 2010). Hence, limited therapeutic strategies have been developed, and identification of the \u2018druggable\u2019 regulatory proteins of MYC becomes critical.\n\nOur study reveals two modes of dysregulation of endogenous dMyc specifically during Hipk-induced tumorigenesis. The first mode is transcriptional stimulation of dMyc likely as a consequence of convergence of multiple signaling outputs (Figures 3\u20134). In our previous study, we found that genetically targeting individual signaling cascades failed to restrain Hipk tumor growth (Blaquiere et al., 2018). This is likely due to the redundancy of signaling cascades in inducing dMyc upregulation. It is also interesting to note that dMyc upregulation and the associated tumor growth are most striking in the wing hinge (Figures 3\u20134). The pouch region, however, seems more refractory to such alterations. We also observed the lowest intracellular glucose levels (Figure 1g\u2013h) and robust Ldh upregulation (Figure 2d) in the hinge area. dMyc-dependent glucose uptake (Figure 5b\u2013c), on the other hand, was enhanced in both hinge and pouch regions even though dMyc protein buildup is undetectable in the wing pouch, suggesting that glucose uptake is particularly sensitive to changes in dMyc levels. Our data therefore imply that the Warburg effect and the tumor growth phenotype may be linked to the dMyc levels being induced. The region-specific susceptibility to tumorigenic stimuli has been previously described and the hinge region was coined a \u2018tumor hotspot\u2019 because of its unique epithelial cell architectures and high endogenous JAK/STAT signaling (Tamori et al., 2016). It is possible that such features in the hinge region also contribute to the sensitivity of dMyc upregulation by elevated Hipk and other signaling pathways. Further studies are required to verify this proposition.\n\nThe second mode of dMyc regulation is the metabolic control of dMyc protein levels by aerobic glycolysis. Specifically, we found that the rate-limiting enzymes Pfk2 and Pfk are required to perpetuate dMyc buildup in tumor cells in a post-transcriptional manner (Figure 6). Similar to the effects on tumor growth, while pfk2/pfk knockdown prevented dMyc accumulation, knockdown of other glycolytic enzymes had little effect on sustaining dMyc accumulation. Such a disparity could possibly be explained by the potency of the glycolytic enzymes in controlling glycolytic flux. While Pfk2 and Pfk govern the rate-limiting, committed step of glycolysis, RNAi targeting other glycolytic genes may fail to render the corresponding steps rate-limiting, especially in tumors with elevated aerobic glycolysis. In other words, knockdown of other glycolytic enzymes may not reach the threshold that would restrict glycolytic flux as potently as pfk2/pfk knockdown. Given that Pfk2 is mis-expressed in tumor cells but not in normal cells (Figure 2a) and that dMyc accumulation is most sensitive to the Pfk2-Pfk mediated committed step of glycolysis specifically in tumor cells (Figure 6), targeting Pfk2 may be a favorable, selective metabolic strategy in the treatment of cancers, especially those displaying ectopic MYC expression.\n\n### Potential pro-tumorigenic roles of the pfk and Pfk2 in addition to their core biochemical role in glycolysis\n\nThe human homologs of fly Pfk and Pfk2 are PFK and PFK-2/FBPase (PFKFB), respectively. The functions of mammalian PFK and PFKFB in controlling glycolytic flux are well-defined. The allosteric regulation of PFK by F2,6-BP seems to be conserved among mammals and insects as F2,6-BP is able to activate insect Pfk, likely due to the conserved amino acid residues for F2,6-BP binding (Nunes et al., 2016). This suggests that Pfk2 can induce Pfk activation and hence glycolytic flux through biosynthesizing F2,6-BP. A previous report shows that flies lacking pfk2 exhibited levels of circulating glucose and reduced sugar tolerance, providing a functional link between Pfk2 and glucose metabolism (Havula et al., 2013). We provide evidence that both pfk2 and pfk knockdown larvae exhibited significant decreases in pyruvate contents, confirming a conserved role of Pfk2 in regulating glycolytic flux.\n\nRecently, the roles of PFK and PFKFB in the regulation of transcription factors or cofactors have drawn considerable attention. For example, vertebrate PFK was shown to physically interact with TEAD factors to stimulate YAP/TAZ activity, thus promoting proliferation and malignancy in cancer cells (Enzo et al., 2015). PFKFB4 (an isoform of PFK2) phosphorylates and activates oncogenic SRC-3 to promote breast cancers through stimulating purine synthesis (Dasgupta et al., 2018). These studies point to the fact that PFK and PFKFB functions are not restricted to metabolic regulation. Thus, it is tempting to speculate that Pfk2/Pfk may sustain ectopic dMyc through a direct interaction with or even phosphorylation of dMyc. That being said, as knockdown of Pfk2 or Pfk had no effects on dMyc protein levels under normal conditions (Figure 6\u2014figure supplement 4), we tend to believe that a tumorigenic environment with active aerobic glycolysis is necessary for the metabolic control of dMyc in particular through the committed step governed by Pfk2/Pfk. In summary, we and others show that glycolytic enzymes Pfk and Pfk2, likely through their core biochemical role in stimulating glycolytic flux, glycolysis-independent actions or both, act as key players in coupling metabolic demands with growth signals to achieve cancer progression.\n\n## Materials and methods\n\n### Drosophila genetics\n\nDrosophila melanogaster flies were raised on standard cornmeal-molasses food. Stocks were kept at 25\u00b0C and crosses at 29\u00b0C unless otherwise indicated. Three Gal4 fly lines, (1) dpp-Gal4/TM6B, (2) hh-Gal4/TM6B and (3) act5c-Gal4/TM6B (BL #3954) were used to induce transgene expression. To generate heat-shock inducible actin flip-out clones, (4) yw,hsFlp[122];;act>CD2>Gal4, UAS-RFP/TM6B was used. To mark the transgene-expressing cells, (5) UAS-GFP (BL #5431) and (6) UAS-RFP (BL #7118) were used. To generate the Hipk tumor model, (7) UAS-HA-hipk-3M (abbreviated as UAS-hipk) (Swarup and Verheyen, 2011) and (8) dpp-Gal4, UAS-hipk/TM6B were used. RNAi fly strains used include (9) UAS-dMyc-RNAi (BL #25783), (10) UAS-dMyc-RNAi #2 (BL #25784), (11) UAS-glut1-RNAi (BL #40904), (12) UAS-hex-A-RNAi (BL #35155), (13) UAS-hex-C-RNAi (BL #57404), (14) UAS-pfk2-RNAi (BL #35380), (15) UAS-pfk-RNAi (BL #34336), (16) UAS-Ldh-RNAi (BL #33640), (17) UAS-pgi-RNAi (BL #51804), (18) UAS-pgk-RNAi (BL #33632) and (19) UAS-pyk-RNAi (BL #35218). To perturb signaling pathway activities, the following strains were used: (20) UAS-yki-S168A-GFP (BL #28836), (21) UAS-Arm-S10 (Mirkovic et al., 2011), (22) UAS-Ci-5M, (23) UAS-N-act. Other strains used include (24) myc-lacZ/FM7c (BL #12247) and (25) UAS-dMyc (BL #9674). (26) UAS-FLII12Pglu-700\u00b5\u03b46 (Glucose sensor) is a generous gift from Dr. Stefanie Schirmeier (Volkenhoff et al., 2018). (27) Ldh-GFP is a generous gift from Dr. Ingrid Lohmann. Strains with BL stock number were obtained from Bloomington Drosophila Stock Center (Bloomington, IN, USA).\n\n### Flip-out clones\n\nA 10\u201315 min heat shock (37\u00b0C) was applied to larvae grown for two to three days after egg laying (25\u00b0C). After heat shock, the larvae were grown at 29\u00b0C and dissected when they reached third instar larval stage.\n\n### Immunofluorescence microscopy\n\nLarval imaginal discs were dissected in PBS and fixed in 4% paraformaldehyde (PFA) for 15 min at room temperature. Samples were washed with PBS with 0.1% Triton X-100 (PBST). After blocking with 5% BSA in PBST for 1 hr at room temperature, samples were incubated with primary antibodies overnight at 4\u00b0C. The following primary antibodies were used: (1) mouse anti-\u03b2-Galactosidase (1:50, DSHB 40-1a), (2) rabbit anti-dMyc (d1-717) (1:500, Santa Cruz Biotechnology, Inc sc-28207), (3) rabbit anti-Hipk (1:200; Blaquiere et al., 2018), (4) mouse anti-Armadillo (1:50, diluted form, DSHB N2 7A1), (5) rabbit anti-Cyclin E (d-300) (1:100, Santa Cruz Biotechnology, Inc sc-33748). After washing with PBST, samples were incubated with Cy3- and/or Alexa Fluor 647-conjugated secondary antibodies (1:500, Jackson ImmunoResearch Laboratories, Inc), DAPI (4',6-Diamidino-2-Phenylindole, Dihydrochloride) (final concentration: 0.2 \u03bcg per mL, Invitrogen D1306) and/or Rhodamine phalloidin (1:500, Molecular Probes R415) for 2 hr at room temperature. Samples were mounted in 70% Glycerol/PBS after wash. Images were taken on a Nikon Air laser-scanning confocal microscope and processed by Image J.\n\n### Quantitative RT-PCR (qRT-PCR)\n\nImaginal discs from third instar larva were dissected in PBS and temporarily stored in RNAlater Stabilization solution (Invitrogen AM7020). Total RNA was extracted using RNeasy Mini Kits (Qiagen 74101). First strand cDNA was synthesized using OneScript Plus cDNA Synthesis Kit (Abm G236). qRT-PCR were performed using SensiFast SYBR Hi-ROS Kit (Bioline 92005) on StepOne Real-time PCR System (Applied Biosystems).\n\n### 2-NBDG uptake\n\nImaginal discs from third instar larva were dissected in PBS, followed by incubation with 2-NBDG (Invitrogen N13195) at 0.3 mM for 15 min in the dark at room temperature. After rinsing with PBS, samples were fixed and processed according to standard immunofluorescence staining protocol.\n\n### Intracellular glucose FRET analysis\n\nThe glucose sensor UAS-FLII12Pglu-700\u00b5\u03b46 was generated by Dr. Schirmeier\u2019s group (Volkenhoff et al., 2018). Imaginal discs expressing the sensor with or without overexpression of hipk were mounted and imaged on the same day. The same confocal settings as previously described (Volkenhoff et al., 2018) were used to record the CFP and FRET images. FRET efficiency (FRET/CFP) was calculated as quotient of FRET and CFP using Image J. Since we were not determining the actual values of intracellular glucose concentrations, we did not take into account a correction for spectral bleed through and thus uncorrected FRET/CFP ratios were used to compare glucose levels in discs of different genotypes. The values of FRET efficiency were displayed using the Fire Lookup Table (LUT) in figures and shown in boxplots.\n\n### Pyruvate measurement\n\nWhole-body larvae were homogenized in PBS, followed by centrifugation at 14,000 g for 10 min. The supernatants were used for the pyruvate assay. The pyruvate assay was performed using EnzyChrom Pyruvate Assay Kit (BioAssay Systems EPYR-100) according to the manufacturer\u2019s instructions. Absorbance at 570 nm was measured in a SpectraMax M5 fluorescent microplate reader (Molecular Devices). Relative pyruvate levels were determined after normalizing with the protein levels. Protein quantification was performed using the Bio-Rad protein assay (Bio-Rad 500\u20130006) and absorbance at 595 nm was measured. Experiments were conducted with two biological replicates. Each assay was performed with two technical replicates.\n\n### Statistics\n\nFor data analyses, unpaired two-tailed Student t-tests were used to determine p-values using Microsoft Excel. Bar graphs were generated by Microsoft Excel. Boxplots were generated using BoxPlotR with data points included (Spitzer et al., 2014). We used the Spear definition to show the maximum and minimum values by the upper and lower whiskers, respectively. The third quartile, median and the first quartile are shown in the box accordingly to a standard boxplot.\n",
+      "created_at": "2025-12-02T10:56:04.221176Z"
+    },
+    {
+      "id": "4bc7f3b8-8a6b-4e97-bfbc-370f5baeeae9",
+      "submission_id": "8bc8e906-27fc-4a63-a874-c7b98ba0573f",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Jason Tennessen, Indiana University United States\n\nReviewers:\n- Jason Tennessen, Indiana University United States\n\n## Review text\n\nDOI: [10.7554/eLife.46315.025](https://doi.org/10.7554/eLife.46315.025)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Metabolic alterations involving a dMyc-Pfk2-Pfk regulatory loop and active mitochondrial metabolism drive tumor growth\" for consideration by eLife. Your article has been reviewed by three peer reviewers, including Jason Tennessen as the guest Reviewing Editor and Reviewer #1, and the evaluation has been overseen by Utpal Banerjee as the Senior Editor.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThe consensus view is that the manuscript provides an interesting description of a mechanism linking Hipk with aerobic glycolysis and mitochondrial metabolism within Drosophila larval cells. The manuscript provides three important observations:\n\n1) Hipk overexpression within the wing imaginal disc induces elevated glycolytic metabolism as determined by 2-NBDG uptake, a glucose FRET-sensor, and changes in gene expression related to glycolysis. Overall, these findings suggest that Hipk overexpression induces the Warburg effect in the wing disc.\n\n2) Hipk overexpression within the larval salivary glands induces significant changes in mitochondrial morphology and membrane potential.\n\n3) Loss of either Pfk or Pfk2 expression results in a decreased dMyc levels, hinting at a mechanism in which Hipk induced expression of Pfk and Pfk2 promotes dMyc accumulation.\n\nIndividually, each of these points is interesting, however, the studies of mitochondrial metabolism are largely conducted in the salivary gland while the glycolytic studies primarily take place within the wing imaginal disc. Combining these two tissue-specific studies into a single manuscript raises the question as to whether Hipk activates different metabolic programs within each tissue. This dilemma is further emphasized by the last paragraph of the Results section, which revealed that PFK2 but not PFK is required for mitochondrial elongation and branching phenotypes observed in the salivary glands. Since this result is in contrast to the Hipk-induced imaginal disc tumors, which are dependent on both PFK and PFK2, substantial effort would be required to understand how Hipk differentially regulates metabolism in these two tissues.\n\nAfter several discussions, the reviewers agree that the strength of this study lies in the relationship between Hipk, dMyc, and Pfk/Pfk2 within the wing imaginal disc. The mechanism proposed by the wing disc studies are better defined than the salivary gland work and they reflect the heart of the manuscript. Based on this conclusion, the manuscript should be split in two, with the wing disc studies serving as the foundation of a major revision and the mitochondrial studies acting as seed for a future manuscript.\n\nEssential revisions:\n\nThe reviewers agree that the following major revisions are required before the paper can be accepted at eLife:\n\n1) Reorganize the manuscript to focus on the link between Hipk, Myc, and glycolysis in the imaginal disc while removing the mitochondrial studies in the salivary gland.\n\n2) The reviewers request three additional sets of experiments to demonstrate that glycolysis is both elevated and necessary in HIPK-induced tumors.\n\ni) The reviewers would like additional experiments demonstrating that 2-NBDG serves as an accurate readout of cellular glucose import:\n\nHow efficient is the UAS-Glut-RNAi used?\n\nIs Glut1 over-expression sufficient to cause an accumulation in 2-NBDG?\n\nDoes Glut1 depletion rescue tumor formation?\n\nii) Please provide some evidence that Pfk2 activity is linked with increased glycolytic flux. Insect PFK is regulated differently than mammalian PFK, as the insect enzymes are insensitive to both citrate and AMP levels. This evidence could be provided by an appropriate set of references from the insect metabolism literature, a biochemical study using S2 cells, or measurements of lactate and pyruvate in larvae following whole body Pfk-2-RNAi.\n\niii) The reviewers are concerned that the link between Pfk/Pfk2 and dMyc might not be the result of a direct interaction, but instead reflects a feedback from glycolysis onto dMyc stability. They request that the authors use RNAi to determine if depletion of other glycolytic enzymes affects Myc levels. Specifically, the authors should determine if dMyc levels are sensitive to the loss of a glycolytic enzyme that is encoded by a single gene (unlike the hexokinases) and directly catalyzes a glycolytic reaction (unlike Ldh). Possible suggestions would be Pgi, Pyk, or Pgk.\n\n3) The authors must strengthen the connection between HIPK up-regulation and dMyc expression.\n\ni) The authors claim in Figure 4 that HIPK induces elevated dMyc levels. While the increase in dMyc-lacZ resembles the dpp-expression pattern, dMyc protein levels exhibit a different pattern. The authors should clarify this discrepancy. Moreover, dMyc protein levels appear to be increased in some regions of the disc but not in all the dpp-expressing cells (e.g., the wing pouch in Figure 4E, or Figure 6A). The use of clones over-expressing Hipk could help the authors to assess this potential region specificity in dMyc protein upregulation.\n\nii) There are also concerns regarding the section that examines the role of different signaling pathways on dMyc protein levels. The authors examine dMyc protein when different pathways are deregulated in the disc but do not evaluate the effect of dMyc expression. The use of clones might give better resolution and will allow showing these results in a clearer manner.\n\n[Editors' note: further revisions were requested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \"A dMyc-Pfk2-Pfk regulatory loop drives the Warburg effect and tumor growth\" for further consideration at eLife. Your revised article has been favorably evaluated by Utpal Banerjee (Senior Editor), a Reviewing Editor, and three reviewers.\n\nThe manuscript has been substantially improved but there are a few remaining issues that need to be addressed before acceptance. As outlined by reviewer 3 and mentioned in my comments (reviewer 1), there are still concerns regarding the conclusion that PfK and Pfk2 promote dMyc stability independent of glycolytic flux. I would ask that you address these concerns within the text. In particular, please discuss alternative models that could explain your observations and justify why you favor a glycolysis-independent role for Pfk and Pfk2.\n\nReviewer #1:\n\nThe revised manuscript Wong, Lio, and Verheyen is significantly improved and all of my major concerns have been addressed. I have two minor revisions that the authors should address prior to publication.\n\n1) In subsection \u201cAerobic glycolysis (the Warburg effect) is essential to tumor growth through sustaining ectopic dMyc expression\u201d, the statement that glycolysis is indispensable for Drosophila growth and development needs some citations. Also, the authors should revise the sentence to state that glycolysis is indispensable for larval development\u2026.Pfk mutants can survive until L2 and therefore survive embryogenesis. While this is likely due to maternal loading of the enzyme, the authors should use a more nuanced statement to start this section.\n\n2) The glycolytic studies are significantly improved. But the authors can't rule out the possibility that RNAi targeting the other genes, such as Pgk and Pgi, fails to lower enzyme activity below a level that would restrict glycolytic flux. A brief qualifying statement about this in the discussion would alleviate my concerns.\n\nReviewer #2:\n\nIn the revised version of their manuscript, the authors have addressed all my concerns and, in my view, it is ready for publication.\n\nReviewer #3:\n\nThe manuscript is improved following the omission of the salivary gland data. The focus on the wing disc eliminates the confusion caused by studying the divergent phenotypes in the different tissues.\n\nMuch of the manuscript now discusses the role of glycolysis in tumor growth. The authors were asked to provide additional data to bolster the assertion that Hipk over-expression causes glycolysis to be increased and that the increase in glycolysis is necessary. Particularly, the authors were also asked to demonstrate that the stability of dMyc was due to a direct interaction between Pfk/Pfk2 and dMyc.\n\nWhile the authors performed many of the experiments requested, it is still not clear if the changes in tumor growth and dMyc stability are due to a direct interaction between Pfk or Pfk2 with dMyc (i.e. a mechanism that does not involve glycolysis) or whether the glycolytic role of Pfk is critical, but glycolysis is especially sensitive to inhibition at the Pfk step. In the rebuttal, the authors propose that the direct interaction model is supported by negative data describing the relative unimportance of the other glycolytic steps. The authors performed RNAi knock-downs of the other glycolytic enzymes (as requested during the initial review). These experiments show that knock-down of the other glycolytic enzymes do not reduce dMyc stability, but have also only, surprisingly, a very minor impact on tumor growth (Figure 6\u2014figure supplement 1, Figure 6\u2014figure supplement 2, Figure 6\u2014figure supplement 3, Figure 6\u2014figure supplement 4 and Figure 6\u2014figure supplement 5). Is it really true, then, that elevated glucose import or glycolysis is not necessary for tumor growth, or could it be that the knock-downs of the other glycolytic enzymes do not reduce glycolytic flux to the same extent as the Pfk/Pfk2 knock-down? This is a very difficult question to resolve without quantitative flux data, though accepting the conclusion that elevated glycolysis is not necessary for tumor growth would be contrary to much previous work. The other solution to distinguishing between the two models would be to provide a clear mechanistic model that describes how Pfk/Pfk2 promotes dMyc stability independent of the role of Pfk in glycolysis \u2013 the authors provide no new data to describe how such a mechanism might operate.\n\nIn the absence of new data, I don't think a glycolysis-independent role of Pfk is supported \u2013 right now it seems very difficult to separate the two phenomena. Any model that is proposed should take this uncertainty more fully into account. On the other hand, it seems very reasonable to say the targeted inhibition of glycolysis is necessary to reduce tumor-growth and that the Pfk/Pfk2 step is the most sensitive step in this system (e.g. subsection \u201cdMyc-driven metabolic rewiring in Hipk tumor model\u201d).\n",
+      "created_at": "2025-12-02T10:56:04.221176Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T10:56:04.221176Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T10:56:04.221176Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "14f91407-19ed-49b0-bfb4-b8ae408e033b",
+      "content_id": "65ec2bef-505f-4e37-846b-d312b9d2ca40",
+      "claim_id": "C1",
+      "claim": "Tumor cells expressing oncogenic Drosophila Hipk display elevated aerobic glycolysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we show that in an in vivo tumor model expressing oncogenic Drosophila Homeodomain-interacting protein kinase (Hipk), tumor cells display elevated aerobic glycolysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract directly states this finding, which is supported by experimental data shown in Figures 1-2 including 2-NBDG uptake assays, glucose FRET measurements, and glycolytic gene expression analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:56:04.221176Z"
+    },
+    {
+      "id": "f7087d3f-0ebd-40a6-b3c5-7ee7d1e23371",
+      "content_id": "65ec2bef-505f-4e37-846b-d312b9d2ca40",
+      "claim_id": "C2",
+      "claim": "Elevated Hipk drives transcriptional upregulation of Drosophila Myc (dMyc) likely through convergence of multiple perturbed signaling cascades.",
+      "claim_type": "EXPLICIT",
+      "source": "Mechanistically, elevated Hipk drives transcriptional upregulation of Drosophila Myc (dMyc; MYC in vertebrates) likely through convergence of multiple perturbed signaling cascades.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by qRT-PCR data showing dMyc upregulation (Figure 3a), dMyc-lacZ reporter expression (Figure 3c-d), and flip-out clone experiments showing that perturbation of individual signaling pathways (Hippo, Wnt, Hedgehog, Notch) results in dMyc accumulation (Figure 4).",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:56:04.221176Z"
+    },
+    {
+      "id": "66f130b2-ad02-41dd-bebc-2513d2afad65",
+      "content_id": "65ec2bef-505f-4e37-846b-d312b9d2ca40",
+      "claim_id": "C3",
+      "claim": "dMyc induces robust expression of pfk2 (encoding 6-Phosphofructo-2-kinase/fructose-2,6-bisphosphatase) among other glycolytic genes.",
+      "claim_type": "EXPLICIT",
+      "source": "dMyc induces robust expression of pfk2 (encoding 6-Phosphofructo-2-kinase/fructose-2,6-bisphosphatase; PFKFB in vertebrates) among other glycolytic genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by qRT-PCR data showing that dMyc overexpression leads to upregulation of glycolytic genes including pfk2 (Figure 5e), and that pfk2 is upregulated 2.7-fold in hipk-expressing discs (Figure 2a).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:56:04.221176Z"
+    },
+    {
+      "id": "02e535f4-460a-4c91-860e-6460ce675a4e",
+      "content_id": "65ec2bef-505f-4e37-846b-d312b9d2ca40",
+      "claim_id": "C4",
+      "claim": "Pfk2 catalyzes the synthesis of fructose-2,6-bisphosphate, which acts as a potent allosteric activator of Phosphofructokinase (Pfk) and thus stimulates glycolysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Pfk2 catalyzes the synthesis of fructose-2,6-bisphosphate, which acts as a potent allosteric activator of Phosphofructokinase (Pfk) and thus stimulates glycolysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established biochemical knowledge about the function of Pfk2 and F2,6-BP in regulating glycolysis, as referenced in the discussion where the authors note 'The allosteric regulation of PFK by F2,6-BP seems to be conserved among mammals and insects as F2,6-BP is able to activate insect Pfk' (Nunes et al., 2016).",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:56:04.221176Z"
+    },
+    {
+      "id": "2058eeea-3454-4839-b1ba-a14d9434afad",
+      "content_id": "65ec2bef-505f-4e37-846b-d312b9d2ca40",
+      "claim_id": "C5",
+      "claim": "Pfk2 and Pfk are required to sustain dMyc protein accumulation post-transcriptionally, establishing a positive feedback loop.",
+      "claim_type": "EXPLICIT",
+      "source": "Pfk2 and Pfk in turn are required to sustain dMyc protein accumulation post-transcriptionally, establishing a positive feedback loop.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by data showing that knockdown of pfk2 or pfk abolishes dMyc protein accumulation (Figure 6a-c) while dMyc transcriptional activation remains robust as shown by dMyc-lacZ reporter (Figure 6e-g), indicating post-transcriptional regulation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:56:04.221176Z"
+    },
+    {
+      "id": "85974753-e996-4385-b695-7c514bc9293f",
+      "content_id": "65ec2bef-505f-4e37-846b-d312b9d2ca40",
+      "claim_id": "C6",
+      "claim": "Disruption of the positive feedback loop between dMyc and aerobic glycolysis abrogates tumorous growth.",
+      "claim_type": "EXPLICIT",
+      "source": "Disruption of the loop abrogates tumorous growth.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by data showing that knockdown of dMyc (Figure 5f-i), pfk2 (Figure 6b), or pfk (Figure 6c) in hipk-expressing discs suppresses tumor growth and restores tissue architecture.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:56:04.221176Z"
+    },
+    {
+      "id": "04b126d2-a7c6-4178-963e-a04ab1aa131b",
+      "content_id": "65ec2bef-505f-4e37-846b-d312b9d2ca40",
+      "claim_id": "C7",
+      "claim": "Cells with elevated Hipk exhibit statistically significant 2-NBDG accumulation compared to neighboring wild-type cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, we found that cells with elevated Hipk (RFP positive) in hipk-expressing wing discs (dpp>RFP +  hipk) exhibited statistically significant 2-NBDG accumulation when compared with the neighboring wild-type cells (RFP negative) (Figure 1c\u2013d and i) or cells (either RFP positive or negative) in control discs (dpp>RFP) (Figure 1a\u2013b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is directly supported by quantification data shown in Figure 1i (p = 8.93E-08) and microscopy images in Figure 1c-d showing increased 2-NBDG signal in RFP-positive cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:56:04.221176Z"
+    },
+    {
+      "id": "acdcfcd0-d4ea-44bb-be8a-e209b1a6903e",
+      "content_id": "65ec2bef-505f-4e37-846b-d312b9d2ca40",
+      "claim_id": "C8",
+      "claim": "A lower FRET/CFP ratio indicative of reduced glucose concentration was observed in hipk-expressing cells compared to control discs.",
+      "claim_type": "EXPLICIT",
+      "source": "Intriguingly, a lower FRET/CFP ratio indicative of reduced glucose concentration was observed in hipk-expressing cells (Figure 1g\u2013h and k) when compared with control discs (Figure 1e\u2013f and k).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by FRET imaging data shown in Figure 1e-h and quantification in Figure 1k (p = 1.04E-08) showing decreased FRET/CFP ratio in hipk-expressing discs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:56:04.221176Z"
+    },
+    {
+      "id": "528a6733-f3c7-4179-a98d-b6b4c3dcc390",
+      "content_id": "65ec2bef-505f-4e37-846b-d312b9d2ca40",
+      "claim_id": "C9",
+      "claim": "Despite enhanced glucose uptake, glucose is substantially utilized in the rapidly proliferating Hipk tumor cells.",
+      "claim_type": "EXPLICIT",
+      "source": "This implies that despite enhanced glucose uptake, glucose is substantially utilized in the rapidly proliferating Hipk tumor cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the combination of increased 2-NBDG uptake (Figure 1c-d, i) and decreased intracellular glucose levels measured by FRET (Figure 1g-h, k).",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:56:04.221176Z"
+    },
+    {
+      "id": "50154e38-a15f-4173-ac82-9cf83d6543f9",
+      "content_id": "65ec2bef-505f-4e37-846b-d312b9d2ca40",
+      "claim_id": "C10",
+      "claim": "Genes encoding Hexokinases (Hex-A and Hex-C) are significantly upregulated 2.2-fold and 4.3-fold respectively in hipk-expressing discs.",
+      "claim_type": "EXPLICIT",
+      "source": "qRT-PCR analyses revealed that genes encoding Hexokinases (Hex-A and Hex-C, 2.2-fold and 4.3-fold respectively), Phosphoglucose isomerase (Pgi, 2.4-fold), Phosphofructokinase 2 (Pfk2, also known as Pfrx, 2.7-fold) and Lactate dehydrogenase (Ldh, also known as Impl3, 3.4-fold) are significantly upregulated in hipk-expressing discs (Figure 2a\u2013b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly supported by qRT-PCR data shown in Figure 2a with statistical significance indicated (p values shown).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:56:04.221176Z"
+    },
+    {
+      "id": "27d28096-3c25-4967-8b88-111b1b615cbd",
+      "content_id": "65ec2bef-505f-4e37-846b-d312b9d2ca40",
+      "claim_id": "C11",
+      "claim": "Phosphoglucose isomerase (Pgi) is upregulated 2.4-fold in hipk-expressing discs.",
+      "claim_type": "EXPLICIT",
+      "source": "qRT-PCR analyses revealed that genes encoding Hexokinases (Hex-A and Hex-C, 2.2-fold and 4.3-fold respectively), Phosphoglucose isomerase (Pgi, 2.4-fold), Phosphofructokinase 2 (Pfk2, also known as Pfrx, 2.7-fold) and Lactate dehydrogenase (Ldh, also known as Impl3, 3.4-fold) are significantly upregulated in hipk-expressing discs (Figure 2a\u2013b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly supported by qRT-PCR data shown in Figure 2a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:56:04.221176Z"
+    },
+    {
+      "id": "92f70029-d948-454d-925b-21f04dfb923d",
+      "content_id": "65ec2bef-505f-4e37-846b-d312b9d2ca40",
+      "claim_id": "C12",
+      "claim": "Phosphofructokinase 2 (Pfk2) is upregulated 2.7-fold in hipk-expressing discs.",
+      "claim_type": "EXPLICIT",
+      "source": "qRT-PCR analyses revealed that genes encoding Hexokinases (Hex-A and Hex-C, 2.2-fold and 4.3-fold respectively), Phosphoglucose isomerase (Pgi, 2.4-fold), Phosphofructokinase 2 (Pfk2, also known as Pfrx, 2.7-fold) and Lactate dehydrogenase (Ldh, also known as Impl3, 3.4-fold) are significantly upregulated in hipk-expressing discs (Figure 2a\u2013b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly supported by qRT-PCR data shown in Figure 2a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:56:04.221176Z"
+    },
+    {
+      "id": "b1265eed-6859-4e1a-8159-46adcaeea958",
+      "content_id": "65ec2bef-505f-4e37-846b-d312b9d2ca40",
+      "claim_id": "C13",
+      "claim": "Lactate dehydrogenase (Ldh) is upregulated 3.4-fold in hipk-expressing discs.",
+      "claim_type": "EXPLICIT",
+      "source": "qRT-PCR analyses revealed that genes encoding Hexokinases (Hex-A and Hex-C, 2.2-fold and 4.3-fold respectively), Phosphoglucose isomerase (Pgi, 2.4-fold), Phosphofructokinase 2 (Pfk2, also known as Pfrx, 2.7-fold) and Lactate dehydrogenase (Ldh, also known as Impl3, 3.4-fold) are significantly upregulated in hipk-expressing discs (Figure 2a\u2013b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly supported by qRT-PCR data shown in Figure 2a and confirmed by Ldh-GFP reporter expression in Figure 2c-d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:56:04.221176Z"
+    },
+    {
+      "id": "c4eb7d45-15c1-4af1-9c80-7d239ddfbb12",
+      "content_id": "65ec2bef-505f-4e37-846b-d312b9d2ca40",
+      "claim_id": "C14",
+      "claim": "Robust Ldh-GFP expression was observed in hipk-expressing wing discs.",
+      "claim_type": "EXPLICIT",
+      "source": "On the contrary, we observed robust Ldh-GFP expression in hipk-expressing wing discs (Figure 2d), confirming that elevated Hipk induces Ldh expression.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly shown by microscopy images in Figure 2d showing strong GFP signal in hipk-expressing discs compared to minimal signal in control discs (Figure 2c).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:56:04.221176Z"
+    },
+    {
+      "id": "def255f0-2119-44cc-9cb7-8741290802a1",
+      "content_id": "65ec2bef-505f-4e37-846b-d312b9d2ca40",
+      "claim_id": "C15",
+      "claim": "glut1 was mildly upregulated 1.6-fold in hipk-expressing discs.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, we detected a mild upregulation of glut1 (1.6-fold) in hipk-expressing discs by quantitative real-time PCR (qRT-PCR) (Figure 2a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by qRT-PCR data shown in Figure 2a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:56:04.221176Z"
+    },
+    {
+      "id": "99723a32-8faf-4638-9dda-1d2169ee3648",
+      "content_id": "65ec2bef-505f-4e37-846b-d312b9d2ca40",
+      "claim_id": "C16",
+      "claim": "Knockdown of glut1 using RNA interference moderately reduced 2-NBDG incorporation in Hipk tumor cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Knockdown of glut1 using RNA interference (RNAi) moderately reduced 2-NBDG incorporation in Hipk tumor cells (Figure 1\u2014figure supplement 1c\u2013d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by microscopy images in Figure 1\u2014figure supplement 1c-d comparing 2-NBDG uptake in hipk-expressing discs with and without glut1-RNAi.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:56:04.221176Z"
+    },
+    {
+      "id": "a195cf30-1e7f-41e4-a1bf-2d0901df48a8",
+      "content_id": "65ec2bef-505f-4e37-846b-d312b9d2ca40",
+      "claim_id": "C17",
+      "claim": "dMyc was upregulated in hipk-expressing discs whereas sima expression remained unchanged.",
+      "claim_type": "EXPLICIT",
+      "source": "qRT-PCR analyses showed that dMyc was upregulated in hipk-expressing discs whereas sima expression remained unchanged (Figure 3a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly supported by qRT-PCR data shown in Figure 3a with p values indicating statistical significance for dMyc (p = 0.0003) and no significance for sima (p = 0.466).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:56:04.221176Z"
+    },
+    {
+      "id": "98267126-d035-4d95-b115-03372481df43",
+      "content_id": "65ec2bef-505f-4e37-846b-d312b9d2ca40",
+      "claim_id": "C18",
+      "claim": "In control wing discs, dMyc was expressed at high levels in the pouch region.",
+      "claim_type": "EXPLICIT",
+      "source": "Using a dMyc-lacZ enhancer trap (encoding \u03b2-galactosidase (\u03b2-gal)) to monitor the transcriptional control of dMyc in vivo, we observed that dMyc was expressed at high levels in the pouch region of control discs (Figure 3c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by \u03b2-galactosidase staining in Figure 3c showing strong signal in the pouch region of control discs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:56:04.221176Z"
+    },
+    {
+      "id": "406d80a1-b206-4078-8c10-3e67576b913e",
+      "content_id": "65ec2bef-505f-4e37-846b-d312b9d2ca40",
+      "claim_id": "C19",
+      "claim": "In the hinge and notum areas of control discs, dMyc was minimally and weakly expressed, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "In the hinge and notum areas of control discs, dMyc was minimally and weakly expressed, respectively (Figure 3c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by \u03b2-galactosidase staining in Figure 3c showing low signal in hinge and notum regions of control discs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:56:04.221176Z"
+    },
+    {
+      "id": "1f3d0bc5-9c1d-45bf-bdb4-ddba302194f9",
+      "content_id": "65ec2bef-505f-4e37-846b-d312b9d2ca40",
+      "claim_id": "C20",
+      "claim": "In hipk-expressing discs, intense \u03b2-galactosidase staining was found, confirming that Hipk cell-autonomously drives transcriptional upregulation of dMyc.",
+      "claim_type": "EXPLICIT",
+      "source": "In hipk-expressing discs, we found intense \u03b2-galactosidase staining, confirming that Hipk cell-autonomously drives transcriptional upregulation of dMyc.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown by \u03b2-galactosidase staining in Figure 3d showing strong signal in hipk-expressing regions compared to control in Figure 3c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:56:04.221176Z"
+    },
+    {
+      "id": "d9172be0-6821-4c6c-a187-271be3c4dfef",
+      "content_id": "65ec2bef-505f-4e37-846b-d312b9d2ca40",
+      "claim_id": "C21",
+      "claim": "The increase in \u03b2-gal signal intensity appeared to be the largest in the wing hinge where tumor cells proliferated most rapidly.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the increase in the \u03b2-gal signal intensity appeared to be the largest in the wing hinge (Figure 3d, arrowhead) where the tumor cells proliferated most rapidly, while the intensity faded when moving away from the hinge region (Figure 3d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by \u03b2-galactosidase staining in Figure 3d with an arrowhead indicating the strongest signal in the hinge region.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:56:04.221176Z"
+    },
+    {
+      "id": "35fcaabd-9306-4c02-85c5-3b66e1b57a94",
+      "content_id": "65ec2bef-505f-4e37-846b-d312b9d2ca40",
+      "claim_id": "C22",
+      "claim": "Immunofluorescent staining confirmed the accumulation of dMyc proteins in Hipk tumor cells especially in the wing hinge.",
+      "claim_type": "EXPLICIT",
+      "source": "Immunofluorescent staining using antibodies against dMyc confirmed the accumulation of dMyc proteins in Hipk tumor cells especially in the wing hinge (Figure 3e\u2013f), which positively correlates with the marked increase in dMyc mRNA levels in the same region (Figure 3d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by dMyc immunostaining in Figure 3f with an arrowhead indicating dMyc accumulation in the hinge region of hipk-expressing discs compared to control in Figure 3e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:56:04.221176Z"
+    },
+    {
+      "id": "a828a308-e7df-44cf-999e-6f899eeb128a",
+      "content_id": "65ec2bef-505f-4e37-846b-d312b9d2ca40",
+      "claim_id": "C23",
+      "claim": "dMyc proteins appeared to not accumulate in hipk-expressing cells in the wing pouch.",
+      "claim_type": "EXPLICIT",
+      "source": "dMyc proteins appeared to not accumulate in hipk-expressing cells in the wing pouch (Figure 3f), possibly due to weak induction in dMyc transcription (Figure 3d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by dMyc immunostaining in Figure 3f showing no obvious increase in dMyc signal in the pouch region of hipk-expressing discs.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:56:04.221176Z"
+    },
+    {
+      "id": "ac84478c-cf14-4a7a-9a99-d75f8142aa14",
+      "content_id": "65ec2bef-505f-4e37-846b-d312b9d2ca40",
+      "claim_id": "C24",
+      "claim": "hipk-expressing clones located in the dorsal hinge exhibited marked dMyc accumulation.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that hipk-expressing clones located in the dorsal hinge (Figure 4c, arrowhead, Figure 4\u2014figure supplement 1a), the lateral hinge (Figure 4\u2014figure supplement 1b) as well as the epithelium on the peripodial side exhibited marked dMyc accumulation (Figure 4\u2014figure supplement 1c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by dMyc immunostaining in flip-out clones in Figure 4c with arrowhead indicating dMyc accumulation in a dorsal hinge clone.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:56:04.221176Z"
+    },
+    {
+      "id": "f391687f-d091-42ee-92a8-b82d74ab31a1",
+      "content_id": "65ec2bef-505f-4e37-846b-d312b9d2ca40",
+      "claim_id": "C25",
+      "claim": "When hipk-expressing clones were located in the wing pouch, dMyc levels appeared unchanged.",
+      "claim_type": "EXPLICIT",
+      "source": "On the contrary, when hipk-expressing clones were located in the wing pouch, dMyc levels appeared unchanged (Figure 4\u2014figure supplement 1d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by dMyc immunostaining in Figure 4\u2014figure supplement 1d showing no obvious dMyc accumulation in pouch clones.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:56:04.221176Z"
+    },
+    {
+      "id": "e46a8b2f-19e1-47b5-9148-e4735d92c8fb",
+      "content_id": "65ec2bef-505f-4e37-846b-d312b9d2ca40",
+      "claim_id": "C26",
+      "claim": "Elevated Hipk drives dMyc upregulation in a region-specific manner.",
+      "claim_type": "EXPLICIT",
+      "source": "Altogether, our data imply that elevated Hipk drives dMyc upregulation in a region-specific manner.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the differential dMyc accumulation observed in different regions of the wing disc (hinge vs. pouch) as shown in Figures 3 and 4.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:56:04.221176Z"
+    },
+    {
+      "id": "efcd50cd-d08f-4f78-a8f2-3486b5742b5a",
+      "content_id": "65ec2bef-505f-4e37-846b-d312b9d2ca40",
+      "claim_id": "C27",
+      "claim": "Hipk stimulates the transcriptional activity of Yorkie (Yki), the effector of the Hippo tumor suppressor pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, Hipk stimulates the transcriptional activity of Yorkie (Yki, a Drosophila orthologue of YAP/TAZ), the effector of the Hippo tumor suppressor pathway (Chen and Verheyen, 2012; Poon et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies (Chen and Verheyen, 2012; Poon et al., 2012).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:56:04.221176Z"
+    },
+    {
+      "id": "f2c05ddb-bb93-40d3-b2e6-0cef19d0916e",
+      "content_id": "65ec2bef-505f-4e37-846b-d312b9d2ca40",
+      "claim_id": "C28",
+      "claim": "Hipk functions as a positive regulator of Wnt/Wingless signaling by stabilizing Armadillo.",
+      "claim_type": "EXPLICIT",
+      "source": "Hipk also functions as a positive regulator of both Wnt/Wingless (Wg) and Hedgehog signaling by stabilizing Armadillo (\u03b2-catenin in vertebrates) and Cubitus interruptus (Ci; Gli in vertebrates), respectively (Lee et al., 2009a; Swarup and Verheyen, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies (Lee et al., 2009a; Swarup and Verheyen, 2011).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:56:04.221176Z"
+    },
+    {
+      "id": "0c88d012-e477-4f41-8b59-bc4936a8afd9",
+      "content_id": "65ec2bef-505f-4e37-846b-d312b9d2ca40",
+      "claim_id": "C29",
+      "claim": "Hipk functions as a positive regulator of Hedgehog signaling by stabilizing Cubitus interruptus (Ci).",
+      "claim_type": "EXPLICIT",
+      "source": "Hipk also functions as a positive regulator of both Wnt/Wingless (Wg) and Hedgehog signaling by stabilizing Armadillo (\u03b2-catenin in vertebrates) and Cubitus interruptus (Ci; Gli in vertebrates), respectively (Lee et al., 2009a; Swarup and Verheyen, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies (Lee et al., 2009a; Swarup and Verheyen, 2011).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:56:04.221176Z"
+    },
+    {
+      "id": "7d067db9-105d-4610-90c6-42ac55ff42f9",
+      "content_id": "65ec2bef-505f-4e37-846b-d312b9d2ca40",
+      "claim_id": "C30",
+      "claim": "Hipk antagonizes Groucho to promote Notch signal transduction.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, Hipk has been found to antagonize Groucho, a global co-repressor, to promote Notch signal transduction (Lee et al., 2009b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a previous study (Lee et al., 2009b).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:56:04.221176Z"
+    },
+    {
+      "id": "41696669-a8a3-4e2e-8a34-7e6d80ef5c26",
+      "content_id": "65ec2bef-505f-4e37-846b-d312b9d2ca40",
+      "claim_id": "C31",
+      "claim": "Flip-out clones expressing a constitutively active form of Yki (Yki-S168A) in the dorsal hinge displayed dMyc upregulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Flip-out clones expressing a constitutively active form of Yki (Yki-S168A) to inactivate the Hippo pathway were usually round and most of them in the dorsal hinge displayed dMyc upregulation (Figure 4d, arrowheads).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by dMyc immunostaining in Figure 4d with arrowheads indicating dMyc accumulation in Yki-S168A-expressing clones in the hinge region.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:56:04.221176Z"
+    },
+    {
+      "id": "57b3ed56-f64c-4a83-bf97-4a6c06a8e8df",
+      "content_id": "65ec2bef-505f-4e37-846b-d312b9d2ca40",
+      "claim_id": "C32",
+      "claim": "Wing discs with flip-out clones expressing an active form of Arm (Arm-S10) featured an expansion in the hinge area and some dMyc accumulated at the interface between the clone and the neighboring wild-type cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Wing discs with flip-out clones expressing an active form of Arm (Arm-S10) featured an expansion in the hinge area and some dMyc accumulated at the interface between the clone and the neighboring wild-type cells (Figure 4e, arrowheads) but not at the center of the clone.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by dMyc immunostaining in Figure 4e with arrowheads indicating dMyc accumulation at clone boundaries.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:56:04.221176Z"
+    },
+    {
+      "id": "4fec0715-7033-449c-814a-7b18c665e434",
+      "content_id": "65ec2bef-505f-4e37-846b-d312b9d2ca40",
+      "claim_id": "C33",
+      "claim": "Flip-out clones expressing Ci to activate Hedgehog signaling in the hinge region exhibited elevated levels of dMyc.",
+      "claim_type": "EXPLICIT",
+      "source": "Flip-out clones expressing Ci to activate Hedgehog signaling in the hinge region were round or irregular in shape and exhibited elevated levels of dMyc (Figure 4f, arrowheads).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by dMyc immunostaining in Figure 4f with arrowheads indicating dMyc accumulation in Ci-expressing clones in the hinge region.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:56:04.221176Z"
+    },
+    {
+      "id": "1721d9c7-9d58-4df1-b71a-60306f270a52",
+      "content_id": "65ec2bef-505f-4e37-846b-d312b9d2ca40",
+      "claim_id": "C34",
+      "claim": "Expression of activated Notch appeared to induce dMyc accumulation in both cell and non-cell autonomous fashions in the hinge area.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with previous findings (Djiane et al., 2013), expression of activated Notch appeared to induce dMyc accumulation in both cell and non-cell autonomous fashions in the hinge area likely involving a signaling relay (Figure 4g).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by dMyc immunostaining in Figure 4g with arrowheads indicating dMyc accumulation in and around N-act-expressing clones, and is consistent with a cited previous study (Djiane et al., 2013).",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:56:04.221176Z"
+    },
+    {
+      "id": "94071cc5-d584-4092-a637-7fbc50c400d4",
+      "content_id": "65ec2bef-505f-4e37-846b-d312b9d2ca40",
+      "claim_id": "C35",
+      "claim": "Individual perturbation of signaling pathways that have been previously shown to be regulated by Hipk was sufficient to trigger ectopic dMyc expression in the hinge region.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, individual perturbation of signaling pathways that have been previously shown to be regulated by Hipk was sufficient to trigger ectopic dMyc expression in the hinge region.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the data showing that activation of Yki, Arm, Ci, or Notch individually results in dMyc accumulation in the hinge region (Figure 4d-g).",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:56:04.221176Z"
+    },
+    {
+      "id": "762ae9bd-0aac-4020-9ca2-0563325037dc",
+      "content_id": "65ec2bef-505f-4e37-846b-d312b9d2ca40",
+      "claim_id": "C36",
+      "claim": "Overexpression of dMyc caused marked 2-NBDG uptake.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected and previously reported (de la Cova et al., 2014), overexpression of dMyc caused marked 2-NBDG uptake (Figure 5a and d) and promoted glycolytic gene expression (Figure 5e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by 2-NBDG uptake assay in Figure 5a and quantification in Figure 5d (p = 9.12E-05), and is consistent with a cited previous study (de la Cova et al., 2014).",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:56:04.221176Z"
+    },
+    {
+      "id": "117543ba-17c4-4b40-994c-3fbc91b57a71",
+      "content_id": "65ec2bef-505f-4e37-846b-d312b9d2ca40",
+      "claim_id": "C37",
+      "claim": "Overexpression of dMyc promoted glycolytic gene expression.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected and previously reported (de la Cova et al., 2014), overexpression of dMyc caused marked 2-NBDG uptake (Figure 5a and d) and promoted glycolytic gene expression (Figure 5e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by qRT-PCR data in Figure 5e showing upregulation of glycolytic genes in dMyc-expressing discs, and is consistent with a cited previous study (de la Cova et al., 2014).",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:56:04.221176Z"
+    },
+    {
+      "id": "61d05d84-bf42-4d08-813b-f660dfb27c3a",
+      "content_id": "65ec2bef-505f-4e37-846b-d312b9d2ca40",
+      "claim_id": "C38",
+      "claim": "Knockdown of dMyc by RNAi in hipk-expressing discs reversed the 2-NBDG accumulation.",
+      "claim_type": "EXPLICIT",
+      "source": "More importantly, knockdown of dMyc by RNAi in hipk-expressing discs reversed the 2-NBDG accumulation (Figure 5b\u2013d) and moderately suppressed glycolytic gene upregulation (Figure 5e), suggesting that dMyc is essential for the enhanced glycolysis in Hipk tumor cells.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by 2-NBDG uptake assay in Figure 5c and quantification in Figure 5d (p = 0.774, not significant) showing that dMyc knockdown prevents 2-NBDG accumulation in hipk-expressing cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:56:04.221176Z"
+    },
+    {
+      "id": "21271bde-20bd-4385-8b75-f969bdc5f3bf",
+      "content_id": "65ec2bef-505f-4e37-846b-d312b9d2ca40",
+      "claim_id": "C39",
+      "claim": "Knockdown of dMyc in hipk-expressing discs moderately suppressed glycolytic gene upregulation.",
+      "claim_type": "EXPLICIT",
+      "source": "More importantly, knockdown of dMyc by RNAi in hipk-expressing discs reversed the 2-NBDG accumulation (Figure 5b\u2013d) and moderately suppressed glycolytic gene upregulation (Figure 5e), suggesting that dMyc is essential for the enhanced glycolysis in Hipk tumor cells.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by qRT-PCR data in Figure 5e showing reduced glycolytic gene expression in hipk-expressing discs with dMyc knockdown compared to hipk alone.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:56:04.221176Z"
+    },
+    {
+      "id": "a37f693c-7e91-49ed-97fa-ea2b7462df21",
+      "content_id": "65ec2bef-505f-4e37-846b-d312b9d2ca40",
+      "claim_id": "C40",
+      "claim": "dMyc is essential for the enhanced glycolysis in Hipk tumor cells.",
+      "claim_type": "EXPLICIT",
+      "source": "More importantly, knockdown of dMyc by RNAi in hipk-expressing discs reversed the 2-NBDG accumulation (Figure 5b\u2013d) and moderately suppressed glycolytic gene upregulation (Figure 5e), suggesting that dMyc is essential for the enhanced glycolysis in Hipk tumor cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the data showing that dMyc knockdown reverses 2-NBDG accumulation and suppresses glycolytic gene expression in hipk-expressing discs (Figure 5b-e).",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:56:04.221176Z"
+    },
+    {
+      "id": "891f88c6-01ad-4c4b-b66f-80932245c8a4",
+      "content_id": "65ec2bef-505f-4e37-846b-d312b9d2ca40",
+      "claim_id": "C41",
+      "claim": "Knockdown of dMyc significantly suppressed the tumorous growth and tissue distortions in hipk-expressing discs.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, knockdown of dMyc significantly suppressed the tumorous growth and tissue distortions in hipk-expressing discs, as seen by the decrease in GFP positive cells (Figure 5f\u2013g).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by microscopy images in Figure 5g showing restored tissue architecture in hipk-expressing discs with dMyc knockdown compared to hipk alone in Figure 5f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:56:04.221176Z"
+    },
+    {
+      "id": "85515aad-dd06-4131-b10c-d5475e047358",
+      "content_id": "65ec2bef-505f-4e37-846b-d312b9d2ca40",
+      "claim_id": "C42",
+      "claim": "Overexpression of dMyc alone, despite the enhanced glycolysis, failed to reproduce the tumorous phenotypes observed in hipk-expressing discs.",
+      "claim_type": "EXPLICIT",
+      "source": "Intriguingly, overexpression of dMyc alone (Figure 5a), despite the enhanced glycolysis, failed to reproduce the tumorous phenotypes observed in hipk-expressing discs (Figure 5f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by comparing the tissue morphology in dMyc-expressing discs (Figure 5a) which appears normal, to hipk-expressing discs (Figure 5f) which show severe tissue distortions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:56:04.221176Z"
+    },
+    {
+      "id": "2a26dc8e-1554-483d-9057-eae74213b734",
+      "content_id": "65ec2bef-505f-4e37-846b-d312b9d2ca40",
+      "claim_id": "C43",
+      "claim": "While upregulation of dMyc is indispensable for Hipk-induced glycolysis and tumor growth, additional mechanisms are involved in the Hipk tumors to trigger the tumorigenic process.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, while upregulation of dMyc is indispensable for Hipk-induced glycolysis and tumor growth, additional mechanisms are involved in the Hipk tumors to trigger the tumorigenic process.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that dMyc overexpression alone does not cause tumorous phenotypes (Figure 5a) even though it enhances glycolysis, while dMyc knockdown suppresses Hipk-induced tumors (Figure 5f-g).",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:56:04.221176Z"
+    },
+    {
+      "id": "87f1bd74-15fb-4a06-9085-38a684b77288",
+      "content_id": "65ec2bef-505f-4e37-846b-d312b9d2ca40",
+      "claim_id": "C44",
+      "claim": "Knockdown of pfk2 markedly prevented tumor growth and restored tissue architecture in hipk-expressing discs.",
+      "claim_type": "EXPLICIT",
+      "source": "Knockdown of pfk2, on the contrary, markedly prevented tumor growth and restored tissue architecture in hipk-expressing discs (Figure 6b), suggesting that the committed step of glycolysis determines Hipk tumorigenesis.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by microscopy images in Figure 6b showing restored tissue architecture in hipk-expressing discs with pfk2 knockdown compared to hipk alone in Figure 6a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:56:04.221176Z"
+    },
+    {
+      "id": "54552631-a733-4b2d-b7f9-237e6e678d57",
+      "content_id": "65ec2bef-505f-4e37-846b-d312b9d2ca40",
+      "claim_id": "C45",
+      "claim": "The committed step of glycolysis determines Hipk tumorigenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Knockdown of pfk2, on the contrary, markedly prevented tumor growth and restored tissue architecture in hipk-expressing discs (Figure 6b), suggesting that the committed step of glycolysis determines Hipk tumorigenesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that knockdown of pfk2 or pfk, which govern the committed step of glycolysis, effectively suppresses Hipk tumor growth (Figure 6b-c).",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:56:04.221176Z"
+    },
+    {
+      "id": "361b6edc-bc3a-4f0b-a451-dcb90eb371ae",
+      "content_id": "65ec2bef-505f-4e37-846b-d312b9d2ca40",
+      "claim_id": "C46",
+      "claim": "The effect of pfk knockdown was comparable to that of pfk2 knockdown in suppressing Hipk tumor growth.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, the effect of pfk knockdown was comparable to that of pfk2 knockdown (Figure 6c), even though we did not detect significant pfk upregulation (<1.5 fold) in hipk-expressing discs (Figure 2a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by comparing microscopy images in Figure 6b (pfk2 knockdown) and Figure 6c (pfk knockdown), both showing restored tissue architecture.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:56:04.221176Z"
+    },
+    {
+      "id": "24813559-3949-4504-9d3d-55a6cfa1f5f6",
+      "content_id": "65ec2bef-505f-4e37-846b-d312b9d2ca40",
+      "claim_id": "C47",
+      "claim": "Knockdown of pgk, pyk or Ldh appeared to slightly restrict Hipk tumor growth but the tissue morphology remained distorted.",
+      "claim_type": "EXPLICIT",
+      "source": "Knockdown of pgk, pyk or Ldh appeared to slightly restrict Hipk tumor growth but the tissue morphology remained distorted (Figure 6d, Figure 6\u2014figure supplement 3c\u2013d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by microscopy images in Figure 6d (Ldh knockdown) and Figure 6\u2014figure supplement 3c-d (pgk and pyk knockdown) showing that tissue distortions persist despite knockdown.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:56:04.221176Z"
+    },
+    {
+      "id": "5aa0ac8b-bc87-4b6f-91ed-8a52486c392f",
+      "content_id": "65ec2bef-505f-4e37-846b-d312b9d2ca40",
+      "claim_id": "C48",
+      "claim": "dMyc accumulation was largely abolished in hipk-expressing discs when pfk2 or pfk was knocked down.",
+      "claim_type": "EXPLICIT",
+      "source": "Intriguingly, dMyc accumulation was largely abolished in hipk-expressing discs when pfk2 or pfk was knocked down (Figure 6a\u2013c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by dMyc immunostaining in Figure 6b-c showing loss of dMyc accumulation in hipk-expressing discs with pfk2 or pfk knockdown compared to hipk alone in Figure 6a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:56:04.221176Z"
+    },
+    {
+      "id": "9dd1e485-ed72-42ef-b9b6-22aa16948fdb",
+      "content_id": "65ec2bef-505f-4e37-846b-d312b9d2ca40",
+      "claim_id": "C49",
+      "claim": "In the absence of hipk overexpression, neither knockdown of pfk nor pfk2 affected the normal dMyc expression pattern nor led to defects in tissue growth.",
+      "claim_type": "EXPLICIT",
+      "source": "In the absence of hipk overexpression, neither knockdown of pfk nor pfk2 affected the normal dMyc expression pattern nor led to defects in tissue growth (Figure 6\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by dMyc immunostaining in Figure 6\u2014figure supplement 4a-b showing normal dMyc expression patterns in discs with pfk or pfk2 knockdown alone.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:56:04.221176Z"
+    },
+    {
+      "id": "ac2e481e-4181-4ffe-8554-8a2bc250ef3e",
+      "content_id": "65ec2bef-505f-4e37-846b-d312b9d2ca40",
+      "claim_id": "C50",
+      "claim": "Knockdown of glut1, pgi, pgk, pyk or Ldh in Hipk tumor cells did not rescue dMyc upregulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Knockdown of glut1, pgi, pgk, pyk or Ldh in Hipk tumor cells did not rescue dMyc upregulation (Figure 6d, Figure 6\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by dMyc immunostaining in Figure 6d and Figure 6\u2014figure supplement 3a-d showing persistent dMyc accumulation in hipk-expressing discs with knockdown of these glycolytic genes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:56:04.221176Z"
+    },
+    {
+      "id": "64ebc929-9e1c-45ba-b6ef-a9514652105b",
+      "content_id": "65ec2bef-505f-4e37-846b-d312b9d2ca40",
+      "claim_id": "C51",
+      "claim": "dMyc accumulation and the associated Hipk tumor growth are most sensitive to the committed step of glycolysis governed by Pfk2-Pfk.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, our results suggest that dMyc accumulation and the associated Hipk tumor growth are most sensitive to the committed step of glycolysis governed by Pfk2-Pfk.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that only knockdown of pfk2 or pfk, but not other glycolytic enzymes, abolishes dMyc accumulation and suppresses tumor growth (Figure 6).",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:56:04.221176Z"
+    },
+    {
+      "id": "51fbe106-65c5-4484-a72e-40c968d65011",
+      "content_id": "65ec2bef-505f-4e37-846b-d312b9d2ca40",
+      "claim_id": "C52",
+      "claim": "dMyc transcriptional activation remained robust when pfk2 or pfk was depleted in Hipk tumor cells even though the tumor growth was reduced and dMyc protein levels were reduced.",
+      "claim_type": "EXPLICIT",
+      "source": "Using the dMyc-lacZ reporter, we found that dMyc transcriptional activation remained robust when pfk2 or pfk was depleted in Hipk tumor cells even though the tumor growth was reduced and dMyc protein levels were reduced (Figure 6e\u2013g).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by \u03b2-galactosidase staining in Figure 6f-g showing strong dMyc-lacZ signal in hipk-expressing discs with pfk2 or pfk knockdown, comparable to hipk alone in Figure 6e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:56:04.221176Z"
+    },
+    {
+      "id": "06c06e2b-50b8-433f-968e-aa9a8a527469",
+      "content_id": "65ec2bef-505f-4e37-846b-d312b9d2ca40",
+      "claim_id": "C53",
+      "claim": "Pfk2 and Pfk are required to sustain ectopic dMyc expression specifically in Hipk tumor cells through post-transcriptional regulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, our data indicate that Pfk2 and Pfk are required to sustain ectopic dMyc expression specifically in Hipk tumor cells through post-transcriptional regulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that pfk2/pfk knockdown abolishes dMyc protein accumulation (Figure 6b-c) while dMyc transcription remains active (Figure 6f-g), indicating post-transcriptional regulation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:56:04.221176Z"
+    },
+    {
+      "id": "745fb424-cc81-4598-83eb-283281066092",
+      "content_id": "65ec2bef-505f-4e37-846b-d312b9d2ca40",
+      "claim_id": "C54",
+      "claim": "Blocking glycolysis does not trigger Hipk protein degradation.",
+      "claim_type": "EXPLICIT",
+      "source": "First, we did not detect a noticeable change in Hipk protein levels in discs depleted of pfk2 or pfk when compared with discs expressing hipk alone (Figure 6e\u2013g), indicating that blocking glycolysis does not trigger Hipk protein degradation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by Hipk immunostaining in Figure 6e-g showing comparable Hipk protein levels in hipk-expressing discs with or without pfk2/pfk knockdown.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:56:04.221176Z"
+    },
+    {
+      "id": "b39f4f77-62bf-4739-aa52-eb81cab53428",
+      "content_id": "65ec2bef-505f-4e37-846b-d312b9d2ca40",
+      "claim_id": "C55",
+      "claim": "Hipk activities remain intact when pfk2 or pfk is knocked down.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, the robust stimulation of the dMyc-lacZ reporter in hipk-expressing discs with pfk2 or pfk knockdown suggests that Hipk activities remain intact.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the strong dMyc-lacZ signal in hipk-expressing discs with pfk2/pfk knockdown (Figure 6f-g), and is further supported by data showing that Hipk-mediated signaling outputs remain unaffected (Figure 6\u2014figure supplement 5).",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:56:04.221176Z"
+    },
+    {
+      "id": "0bf8f9f5-e748-4e79-b150-19a9be97db7f",
+      "content_id": "65ec2bef-505f-4e37-846b-d312b9d2ca40",
+      "claim_id": "C56",
+      "claim": "Hipk-mediated stabilization of Armadillo remained unaffected by knockdown of pfk2 or pfk.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, when we examined other signaling targets downstream of Hipk as readouts for Hipk activity, we found that Hipk-mediated stabilization of Armadillo (Wnt/Wg signaling), and induction of Cyclin E or expanded-lacZ (Hippo signaling) remained unaffected by knockdown of pfk2 or pfk in a Hipk overexpression background, indicating Hipk is still functional (Figure 6\u2014figure supplement 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by Armadillo immunostaining in Figure 6\u2014figure supplement 5c-d showing persistent Armadillo stabilization in hipk-expressing discs with pfk2 or pfk knockdown.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:56:04.221176Z"
+    },
+    {
+      "id": "c8aef993-5adf-4f69-88f2-a2759e32917c",
+      "content_id": "65ec2bef-505f-4e37-846b-d312b9d2ca40",
+      "claim_id": "C57",
+      "claim": "Hipk-mediated induction of Cyclin E remained unaffected by knockdown of pfk2 or pfk.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, when we examined other signaling targets downstream of Hipk as readouts for Hipk activity, we found that Hipk-mediated stabilization of Armadillo (Wnt/Wg signaling), and induction of Cyclin E or expanded-lacZ (Hippo signaling) remained unaffected by knockdown of pfk2 or pfk in a Hipk overexpression background, indicating Hipk is still functional (Figure 6\u2014figure supplement 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by Cyclin E immunostaining in Figure 6\u2014figure supplement 5c-d showing persistent Cyclin E induction in hipk-expressing discs with pfk2 or pfk knockdown.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:56:04.221176Z"
+    },
+    {
+      "id": "7850eaad-43df-4bb3-914b-a980b7bfd3a6",
+      "content_id": "65ec2bef-505f-4e37-846b-d312b9d2ca40",
+      "claim_id": "C58",
+      "claim": "Hipk-mediated induction of expanded-lacZ remained unaffected by knockdown of pfk2 or pfk.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, when we examined other signaling targets downstream of Hipk as readouts for Hipk activity, we found that Hipk-mediated stabilization of Armadillo (Wnt/Wg signaling), and induction of Cyclin E or expanded-lacZ (Hippo signaling) remained unaffected by knockdown of pfk2 or pfk in a Hipk overexpression background, indicating Hipk is still functional (Figure 6\u2014figure supplement 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by \u03b2-galactosidase staining in Figure 6\u2014figure supplement 5f-g showing persistent expanded-lacZ induction in hipk-expressing discs with pfk2 knockdown.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:56:04.221176Z"
+    },
+    {
+      "id": "c5cfba07-73d3-497f-9e29-7c843afdd1c0",
+      "content_id": "65ec2bef-505f-4e37-846b-d312b9d2ca40",
+      "claim_id": "C59",
+      "claim": "A positive feedback loop between dMyc and aerobic glycolysis is formed, coordinating growth signals with metabolic states to reinforce tumor progression.",
+      "claim_type": "EXPLICIT",
+      "source": "Altogether, our data suggest that while dMyc upregulation promotes glycolytic activities, the upregulation of Pfk2, along with subsequent F2,6-BP biosynthesis and Pfk activation, is required to foster the accumulation of dMyc proteins. In other words, a positive feedback loop between dMyc and aerobic glycolysis is formed, coordinating growth signals with metabolic states to reinforce tumor progression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the data showing that dMyc induces glycolytic gene expression including pfk2 (Figure 5e), and that Pfk2/Pfk are required to sustain dMyc protein accumulation (Figure 6a-c), forming a feedback loop.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:56:04.221176Z"
+    },
+    {
+      "id": "54756deb-467c-49a4-b457-b8d4ff8b68d6",
+      "content_id": "65ec2bef-505f-4e37-846b-d312b9d2ca40",
+      "claim_id": "C60",
+      "claim": "Knockdown of pfk2 significantly decreased pyruvate levels.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, knockdown of pfk2 induced an approximately 60% drop in the pyruvate content (Figure 6\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by pyruvate measurement data in Figure 6\u2014figure supplement 1a showing reduced pyruvate levels in pfk2 knockdown larvae (p = 0.0497).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:56:04.221176Z"
+    },
+    {
+      "id": "747b039e-f6bb-4250-a134-6b7c48e5d33a",
+      "content_id": "65ec2bef-505f-4e37-846b-d312b9d2ca40",
+      "claim_id": "C61",
+      "claim": "Knockdown of pfk significantly decreased pyruvate levels.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with previous work (Li et al., 2018), knockdown of pfk significantly decreased pyruvate levels (Figure 6\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by pyruvate measurement data in Figure 6\u2014figure supplement 1a showing reduced pyruvate levels in pfk knockdown larvae (p = 0.0214), consistent with a cited previous study (Li et al., 2018).",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:56:04.221176Z"
+    },
+    {
+      "id": "495f5959-6e6c-4125-af83-e756e9dc7077",
+      "content_id": "65ec2bef-505f-4e37-846b-d312b9d2ca40",
+      "claim_id": "C62",
+      "claim": "Knockdown of hex-A or hex-C had negligible effects on Hipk tumor growth.",
+      "claim_type": "EXPLICIT",
+      "source": "Knockdown of hex-A or hex-C had negligible effects on Hipk tumor growth; as did hex-A and hex-C double knockdown (Figure 6\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by microscopy images in Figure 6\u2014figure supplement 2a-c showing persistent tissue distortions in hipk-expressing discs with hex-A, hex-C, or double knockdown.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:56:04.221176Z"
+    },
+    {
+      "id": "8cd98607-a399-467c-8b60-f10443d955ea",
+      "content_id": "65ec2bef-505f-4e37-846b-d312b9d2ca40",
+      "claim_id": "C63",
+      "claim": "Knockdown of glut1 or pgi failed to block Hipk-induced tumorigenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, knockdown of glut1 or pgi failed to block Hipk-induced tumorigenesis (Figure 6\u2014figure supplement 3a\u2013b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by microscopy images in Figure 6\u2014figure supplement 3a-b showing persistent tissue distortions in hipk-expressing discs with glut1 or pgi knockdown.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:56:04.221176Z"
+    },
+    {
+      "id": "cd4ee00a-ab60-4a36-9d15-96efa5ae827e",
+      "content_id": "65ec2bef-505f-4e37-846b-d312b9d2ca40",
+      "claim_id": "C64",
+      "claim": "Flies ubiquitously depleted of pgk failed to reach the larval stage.",
+      "claim_type": "EXPLICIT",
+      "source": "Likewise, we observed that flies ubiquitously depleted of pgk (act5c>pgk-RNAi) failed to reach the larval stage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the authors' experiments showing lethality of pgk knockdown.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:56:04.221176Z"
+    },
+    {
+      "id": "83b11fc0-cdec-4a10-9f5d-64d62538cbb5",
+      "content_id": "65ec2bef-505f-4e37-846b-d312b9d2ca40",
+      "claim_id": "C65",
+      "claim": "Flies lacking pfk or pyk reached the larval stage but could not pupariate.",
+      "claim_type": "EXPLICIT",
+      "source": "Flies lacking pfk (act5c>pfk-RNAi) or pyk (act5c>pyk-RNAi) reached the larval stage but could not pupariate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the authors' experiments showing lethality of pfk or pyk knockdown at the larval-pupal transition.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:56:04.221176Z"
+    },
+    {
+      "id": "d7512a35-99bb-4c31-a67a-16cf1769d941",
+      "content_id": "65ec2bef-505f-4e37-846b-d312b9d2ca40",
+      "claim_id": "C66",
+      "claim": "Flies with pfk2 knockdown died at the early pupal stage but did not differentiate further to become late pupae.",
+      "claim_type": "EXPLICIT",
+      "source": "Flies with pfk2 knockdown (act5c>pfk2-RNAi) died at the early pupal stage but did not differentiate further to become late pupae.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the authors' experiments showing lethality of pfk2 knockdown at the early pupal stage.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:56:04.221176Z"
+    },
+    {
+      "id": "11ad7548-bbf7-4051-9f49-879d41ae54d3",
+      "content_id": "65ec2bef-505f-4e37-846b-d312b9d2ca40",
+      "claim_id": "C67",
+      "claim": "Most flies lacking glut1 or pgi succeeded in emerging as adults.",
+      "claim_type": "EXPLICIT",
+      "source": "Most flies lacking glut1 (act5c>glut1-RNAi) or pgi (act5c>pgi-RNAi) succeeded in emerging as adults.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the authors' experiments showing that glut1 or pgi knockdown does not cause lethality.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:56:04.221176Z"
+    },
+    {
+      "id": "a3413bb6-bf1b-4792-87d9-a80445f1ff48",
+      "content_id": "65ec2bef-505f-4e37-846b-d312b9d2ca40",
+      "claim_id": "C68",
+      "claim": "Otto Warburg first discovered that cancer cells vigorously take up glucose and preferentially produce lactate even in the presence of oxygen in the 1920s.",
+      "claim_type": "EXPLICIT",
+      "source": "In the 1920s, Otto Warburg first discovered that cancer cells vigorously take up glucose and preferentially produce lactate even in the presence of oxygen, a phenomenon now widely termed the Warburg effect or aerobic glycolysis (Warburg et al., 1927).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a historical fact supported by citation to Warburg's original work (Warburg et al., 1927).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:56:04.221176Z"
+    },
+    {
+      "id": "9b2b4d42-6556-437c-bfe8-f9aaa07ec4e1",
+      "content_id": "65ec2bef-505f-4e37-846b-d312b9d2ca40",
+      "claim_id": "C69",
+      "claim": "The Warburg effect was largely disregarded for the decades following Warburg's discovery.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite his pioneering work, the Warburg effect was largely disregarded for the subsequent decades (Liberti and Locasale, 2016; Koppenol et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a historical statement supported by citations (Liberti and Locasale, 2016; Koppenol et al., 2011).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:56:04.221176Z"
+    },
+    {
+      "id": "61d3494b-ae64-4a76-8a5c-45a9c79551ec",
+      "content_id": "65ec2bef-505f-4e37-846b-d312b9d2ca40",
+      "claim_id": "C70",
+      "claim": "After the discoveries of oncogenes and tumor suppressor genes, cancers are generally considered as genetic diseases rather than metabolic ones.",
+      "claim_type": "EXPLICIT",
+      "source": "After the discoveries of oncogenes and tumor suppressor genes, cancers are generally considered as genetic diseases rather than metabolic ones (Wishart, 2015; Seyfried et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the historical perspective on cancer supported by citations (Wishart, 2015; Seyfried et al., 2014).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:56:04.221176Z"
+    },
+    {
+      "id": "38019d9d-a667-4ad1-85ad-84af63131f1c",
+      "content_id": "65ec2bef-505f-4e37-846b-d312b9d2ca40",
+      "claim_id": "C71",
+      "claim": "The revisiting of the Warburg effect in connection with oncogenes in the 1980s sparked substantial research in cancer metabolism.",
+      "claim_type": "EXPLICIT",
+      "source": "Not until the 1980s did the revisiting of the Warburg effect in connection with oncogenes spark substantial research in cancer metabolism (Koppenol et al., 2011), laying the foundation for 2-deoxy-2-(18F)fluoro-D-glucose (18F-FDG) positron emission tomography (PET) in clinical cancer diagnosis (Vander Heiden et al., 2009; Ben-Haim and Ell, 2008), recognition of metabolic reprogramming as a hallmark of cancer (Hanahan and Weinberg, 2011; Ward and Thompson, 2012) and development of anti-cancer agents targeting aerobic glycolysis (Ganapathy-Kanniappan and Geschwind, 2013; Pelicano et al., 2006; Granchi and Minutolo, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a historical statement supported by multiple citations describing the impact of renewed interest in the Warburg effect.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:56:04.221176Z"
+    },
+    {
+      "id": "245e872e-a510-46a1-86ba-2e8797b9cb34",
+      "content_id": "65ec2bef-505f-4e37-846b-d312b9d2ca40",
+      "claim_id": "C72",
+      "claim": "Warburg hypothesized that mitochondrial impairment is the cause of aerobic glycolysis and cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "Warburg hypothesized that mitochondrial impairment is the cause of aerobic glycolysis and cancer (Warburg, 1956), which has sparked much controversy among scientists (Senyilmaz and Teleman, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a historical statement about Warburg's hypothesis supported by citations (Warburg, 1956; Senyilmaz and Teleman, 2015).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:56:04.221176Z"
+    },
+    {
+      "id": "8fca8d1d-f963-44a1-a5d3-9714d958d7c7",
+      "content_id": "65ec2bef-505f-4e37-846b-d312b9d2ca40",
+      "claim_id": "C73",
+      "claim": "The current, widely-accepted view is that oncogenic drivers such as RAS, MYC, hypoxia-inducible factors (HIFs) and steroid receptor coactivators (SRCs) promote cancer cell proliferation and directly stimulate aerobic glycolysis through regulating transcriptional expression or catalytic activities of metabolic enzymes.",
+      "claim_type": "EXPLICIT",
+      "source": "Contrary to his idea, the current, widely-accepted view is that oncogenic drivers such as RAS, MYC, hypoxia-inducible factors (HIFs) and steroid receptor coactivators (SRCs) promote cancer cell proliferation and directly stimulate aerobic glycolysis through regulating transcriptional expression or catalytic activities of metabolic enzymes (Koppenol et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the current scientific consensus supported by citation (Koppenol et al., 2011).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:56:04.221176Z"
+    },
+    {
+      "id": "16cee370-af77-431b-8caf-f1801ffc280b",
+      "content_id": "65ec2bef-505f-4e37-846b-d312b9d2ca40",
+      "claim_id": "C74",
+      "claim": "Drosophila has proven to be a powerful genetic model organism for studying tumorigenesis in vivo largely due to high conservation of genes and signaling cascades between human and flies and reduced genetic redundancy.",
+      "claim_type": "EXPLICIT",
+      "source": "Drosophila has proven to be a powerful genetic model organism for studying tumorigenesis in vivo largely due to high conservation of genes and signaling cascades between human and flies and reduced genetic redundancy (Gonzalez, 2013; Herranz and Cohen, 2017) (Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the utility of Drosophila as a model organism supported by citations (Gonzalez, 2013; Herranz and Cohen, 2017).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:56:04.221176Z"
+    },
+    {
+      "id": "4dddeae6-8dcd-4859-9dce-105e59135525",
+      "content_id": "65ec2bef-505f-4e37-846b-d312b9d2ca40",
+      "claim_id": "C75",
+      "claim": "Elevation of Drosophila Hipk causes an in vivo tumor model characterized by tissue overgrowth, loss of epithelial integrity and invasion-like behaviors.",
+      "claim_type": "EXPLICIT",
+      "source": "In a recent study, we showed that elevation of Drosophila Hipk causes an in vivo tumor model characterized by tissue overgrowth, loss of epithelial integrity and invasion-like behaviors (Blaquiere et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about previous findings from the authors' group supported by citation (Blaquiere et al., 2018).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:56:04.221176Z"
+    },
+    {
+      "id": "cda4a3b5-dbe9-47f0-a4b3-373ca2b4d809",
+      "content_id": "65ec2bef-505f-4e37-846b-d312b9d2ca40",
+      "claim_id": "C76",
+      "claim": "HIPK1 is highly expressed in breast cancer cell lines, colorectal cancer samples and oncogenically-transformed mouse embryo fibroblasts.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, HIPK1 is highly expressed in breast cancer cell lines, colorectal cancer samples and oncogenically-transformed mouse embryo fibroblasts (Kondo et al., 2003; Rey et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about HIPK1 expression in cancers supported by citations (Kondo et al., 2003; Rey et al., 2013).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:56:04.221176Z"
+    },
+    {
+      "id": "d2aff710-49fa-481f-a31b-a3117ff68620",
+      "content_id": "65ec2bef-505f-4e37-846b-d312b9d2ca40",
+      "claim_id": "C77",
+      "claim": "HIPK2 is elevated in certain cancers including cervical cancers, pilocytic astrocytomas, colorectal cancer cells and in other proliferative diseases, such as thyroid follicular hyperplasia.",
+      "claim_type": "EXPLICIT",
+      "source": "Also, HIPK2 is elevated in certain cancers including cervical cancers, pilocytic astrocytomas, colorectal cancer cells and in other proliferative diseases, such as thyroid follicular hyperplasia (Al-Beiti and Lu, 2008; Cheng et al., 2012; Yu et al., 2009; D'Orazi et al., 2006; Saul and Schmitz, 2013; Deshmukh et al., 2008; Lavra et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about HIPK2 expression in cancers supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:56:04.221176Z"
+    },
+    {
+      "id": "77e45c58-3aaf-4322-bb37-e5ae7b9c98ac",
+      "content_id": "65ec2bef-505f-4e37-846b-d312b9d2ca40",
+      "claim_id": "C78",
+      "claim": "2-NBDG is transported into cells through glucose transporters and phosphorylated by hexokinases.",
+      "claim_type": "EXPLICIT",
+      "source": "Like D-glucose, 2-NBDG is transported into cells through glucose transporters and phosphorylated by hexokinases (Yoshioka et al., 1996; O'Neil et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the biochemical properties of 2-NBDG supported by citations (Yoshioka et al., 1996; O'Neil et al., 2005).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:56:04.221176Z"
+    },
+    {
+      "id": "285afd6f-c242-4890-a83f-6dfbdcd86c5a",
+      "content_id": "65ec2bef-505f-4e37-846b-d312b9d2ca40",
+      "claim_id": "C79",
+      "claim": "Due to the presence of the fluorescent amino group at the C-2 position, 2-NBDG-6-phosphate cannot proceed further through glycolysis and is consequently trapped within the cells.",
+      "claim_type": "EXPLICIT",
+      "source": "However, due to the presence of the fluorescent amino group at the C-2 position, 2-NBDG-6-phosphate cannot proceed further through glycolysis and is consequently trapped within the cells, rendering it a probe for monitoring glucose uptake (O'Neil et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the biochemical properties of 2-NBDG supported by citation (O'Neil et al., 2005).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:56:04.221176Z"
+    },
+    {
+      "id": "a1c320d3-965f-4a58-9378-13445c7896e9",
+      "content_id": "65ec2bef-505f-4e37-846b-d312b9d2ca40",
+      "claim_id": "C80",
+      "claim": "Overexpression of glut1 is sufficient to promote the accumulation of 2-NBDG.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, overexpression of glut1 (encoding Glucose transporter 1) is sufficient to promote the accumulation in 2-NBDG (Niccoli et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the effect of glut1 overexpression supported by citation (Niccoli et al., 2016).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:56:04.221176Z"
+    },
+    {
+      "id": "2f9b4b50-67b9-4b00-a9f1-9a144cf61fcd",
+      "content_id": "65ec2bef-505f-4e37-846b-d312b9d2ca40",
+      "claim_id": "C81",
+      "claim": "Increased import of 2-NBDG is found in dMyc-expressing cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Increased import of 2-NBDG is also found in dMyc-expressing cells (de la Cova et al., 2014) and RasV12scrib\u2212/\u2212 tumor cells (Katheder et al., 2017), indicating that such cells acquire enhanced glucose metabolism.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about 2-NBDG uptake in dMyc-expressing cells supported by citation (de la Cova et al., 2014).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:56:04.221176Z"
+    },
+    {
+      "id": "e747839a-c651-437b-b2ba-c5866ea6263b",
+      "content_id": "65ec2bef-505f-4e37-846b-d312b9d2ca40",
+      "claim_id": "C82",
+      "claim": "Increased import of 2-NBDG is found in RasV12scrib\u2212/\u2212 tumor cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Increased import of 2-NBDG is also found in dMyc-expressing cells (de la Cova et al., 2014) and RasV12scrib\u2212/\u2212 tumor cells (Katheder et al., 2017), indicating that such cells acquire enhanced glucose metabolism.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about 2-NBDG uptake in RasV12scrib\u2212/\u2212 tumor cells supported by citation (Katheder et al., 2017).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:56:04.221176Z"
+    },
+    {
+      "id": "86204f5d-88a8-47d1-8fe3-1d8dfa060c11",
+      "content_id": "65ec2bef-505f-4e37-846b-d312b9d2ca40",
+      "claim_id": "C83",
+      "claim": "Hexokinases phosphorylate glucose to form glucose-6-phosphate (G6P), which is the first essentially irreversible step in glycolysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Hexokinases phosphorylate glucose to form glucose-6-phosphate (G6P), which is the first essentially irreversible step in glycolysis (Figure 2b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is established biochemical knowledge about the function of hexokinases in glycolysis, as illustrated in Figure 2b.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:56:04.221176Z"
+    },
+    {
+      "id": "b2b3e5ca-1a08-4145-8b4f-68caa76fcd33",
+      "content_id": "65ec2bef-505f-4e37-846b-d312b9d2ca40",
+      "claim_id": "C84",
+      "claim": "Pgi catalyzes the reversible conversion of G6P and fructose-6-phosphate.",
+      "claim_type": "EXPLICIT",
+      "source": "Pgi catalyzes the reversible conversion of G6P and fructose-6-phosphate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established biochemical knowledge about the function of Pgi in glycolysis.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:56:04.221176Z"
+    },
+    {
+      "id": "51f8985e-4531-407e-a518-bfc4f9a55dfa",
+      "content_id": "65ec2bef-505f-4e37-846b-d312b9d2ca40",
+      "claim_id": "C85",
+      "claim": "Pfk2 is a bifunctional enzyme that synthesizes fructose-2,6-bisphosphate (F2,6-BP).",
+      "claim_type": "EXPLICIT",
+      "source": "Pfk2 is a bifunctional enzyme that synthesizes fructose-2,6-bisphosphate (F2,6-BP).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established biochemical knowledge about the function of Pfk2.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:56:04.221176Z"
+    },
+    {
+      "id": "9359f6e4-6aed-4644-93e2-5e14df8bd1bc",
+      "content_id": "65ec2bef-505f-4e37-846b-d312b9d2ca40",
+      "claim_id": "C86",
+      "claim": "F2,6-BP is a potent allosteric activator of Pfk, which governs the committed, second irreversible step in glycolysis.",
+      "claim_type": "EXPLICIT",
+      "source": "F2,6-BP is a potent allosteric activator of Pfk, which governs the committed, second irreversible step in glycolysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established biochemical knowledge about the regulatory role of F2,6-BP in glycolysis.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:56:04.221176Z"
+    },
+    {
+      "id": "f085a0a9-33fd-4a23-804c-523a012015ee",
+      "content_id": "65ec2bef-505f-4e37-846b-d312b9d2ca40",
+      "claim_id": "C87",
+      "claim": "Ldh favors the reduction of pyruvate to lactate, regenerating nicotinamide adenine dinucleotide (NAD+) such that glycolysis continues unabated.",
+      "claim_type": "EXPLICIT",
+      "source": "Ldh, similar to LDHA in vertebrates (Rechsteiner, 1970), favors the reduction of pyruvate to lactate, regenerating nicotinamide adenine dinucleotide (NAD+) such that glycolysis continues unabated (Valvona et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established biochemical knowledge about the function of Ldh supported by citations (Rechsteiner, 1970; Valvona et al., 2016).",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:56:04.221176Z"
+    },
+    {
+      "id": "582baf52-ce49-4a03-84bf-1d97722db0f3",
+      "content_id": "65ec2bef-505f-4e37-846b-d312b9d2ca40",
+      "claim_id": "C88",
+      "claim": "dMyc/MYC plays a conserved role in upregulating glycolysis in vertebrates and Drosophila during normal development and in cancers.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to growth control, dMyc/MYC plays a conserved role in upregulating glycolysis in vertebrates and Drosophila during normal development and in cancers (de la Cova et al., 2014; Gallant, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the conserved function of dMyc/MYC supported by citations (de la Cova et al., 2014; Gallant, 2013).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:56:04.221176Z"
+    },
+    {
+      "id": "f3ee9cfa-fb9b-4881-a2e9-916a1eed0f1a",
+      "content_id": "65ec2bef-505f-4e37-846b-d312b9d2ca40",
+      "claim_id": "C89",
+      "claim": "Vertebrate PFK was shown to physically interact with TEAD factors to stimulate YAP/TAZ activity, thus promoting proliferation and malignancy in cancer cells.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, vertebrate PFK was shown to physically interact with TEAD factors to stimulate YAP/TAZ activity, thus promoting proliferation and malignancy in cancer cells (Enzo et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about PFK function beyond metabolism supported by citation (Enzo et al., 2015).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:56:04.221176Z"
+    },
+    {
+      "id": "b4af68e8-5e71-4b56-81ea-233f64a6a43b",
+      "content_id": "65ec2bef-505f-4e37-846b-d312b9d2ca40",
+      "claim_id": "C90",
+      "claim": "PFKFB4 phosphorylates and activates oncogenic SRC-3 to promote breast cancers through stimulating purine synthesis.",
+      "claim_type": "EXPLICIT",
+      "source": "PFKFB4 (an isoform of PFK2) phosphorylates and activates oncogenic SRC-3 to promote breast cancers through stimulating purine synthesis (Dasgupta et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about PFKFB4 function beyond metabolism supported by citation (Dasgupta et al., 2018).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:56:04.221176Z"
+    },
+    {
+      "id": "f1b77c8a-5370-4130-822c-fb0de9a13468",
+      "content_id": "65ec2bef-505f-4e37-846b-d312b9d2ca40",
+      "claim_id": "C91",
+      "claim": "MYC is generally considered 'undruggable' largely due to its nuclear localization, lack of an enzymatic 'active site', and indispensable roles during normal development.",
+      "claim_type": "EXPLICIT",
+      "source": "Although MYC functions in cancer metabolism are widely recognized, MYC is generally considered 'undruggable' largely due to its nuclear localization, lack of an enzymatic 'active site', and indispensable roles during normal development (Soucek and Evan, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the challenges of targeting MYC therapeutically supported by citation (Soucek and Evan, 2010).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:56:04.221176Z"
+    },
+    {
+      "id": "c4f28c31-528f-4581-aadf-b0102754721a",
+      "content_id": "65ec2bef-505f-4e37-846b-d312b9d2ca40",
+      "claim_id": "C92",
+      "claim": "The hinge region was coined a 'tumor hotspot' because of its unique epithelial cell architectures and high endogenous JAK/STAT signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "The region-specific susceptibility to tumorigenic stimuli has been previously described and the hinge region was coined a 'tumor hotspot' because of its unique epithelial cell architectures and high endogenous JAK/STAT signaling (Tamori et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the hinge region's susceptibility to tumorigenesis supported by citation (Tamori et al., 2016).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:56:04.221176Z"
+    },
+    {
+      "id": "08654150-ac19-47e2-abe8-113574ac7ab5",
+      "content_id": "65ec2bef-505f-4e37-846b-d312b9d2ca40",
+      "claim_id": "C93",
+      "claim": "Flies lacking pfk2 exhibited elevated levels of circulating glucose and reduced sugar tolerance.",
+      "claim_type": "EXPLICIT",
+      "source": "A previous report shows that flies lacking pfk2 exhibited levels of circulating glucose and reduced sugar tolerance, providing a functional link between Pfk2 and glucose metabolism (Havula et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the metabolic phenotype of pfk2 mutants supported by citation (Havula et al., 2013).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:56:04.221176Z"
+    },
+    {
+      "id": "9bc51a90-f2f2-4070-93a0-c4c852dc6f4e",
+      "content_id": "65ec2bef-505f-4e37-846b-d312b9d2ca40",
+      "claim_id": "C94",
+      "claim": "EGFR-driven tumors feature robust upregulation of Ldh among other glycolytic genes.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, epidermal growth factor receptor (EGFR)-driven tumors, tumors with activated platelet-derived growth factor (PDGF)/vascular endothelial growth factor (VEGF) receptor (Pvr) and tumors with polarity loss (such as scrib or dlg mutant tumors) feature robust upregulation of Ldh among other glycolytic genes (Wang et al., 2016; Eichenlaub et al., 2018; Bunker et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about metabolic changes in EGFR-driven tumors supported by citations (Wang et al., 2016; Eichenlaub et al., 2018; Bunker et al., 2015).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:56:04.221176Z"
+    },
+    {
+      "id": "6446f2ef-a9a5-4dee-9294-2b19ce463c95",
+      "content_id": "65ec2bef-505f-4e37-846b-d312b9d2ca40",
+      "claim_id": "C95",
+      "claim": "Tumors with activated PDGF/VEGF receptor (Pvr) feature robust upregulation of Ldh among other glycolytic genes.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, epidermal growth factor receptor (EGFR)-driven tumors, tumors with activated platelet-derived growth factor (PDGF)/vascular endothelial growth factor (VEGF) receptor (Pvr) and tumors with polarity loss (such as scrib or dlg mutant tumors) feature robust upregulation of Ldh among other glycolytic genes (Wang et al., 2016; Eichenlaub et al., 2018; Bunker et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about metabolic changes in Pvr-activated tumors supported by citations (Wang et al., 2016; Eichenlaub et al., 2018; Bunker et al., 2015).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:56:04.221176Z"
+    },
+    {
+      "id": "6d2aef48-78e2-4d28-99a0-435a994d4910",
+      "content_id": "65ec2bef-505f-4e37-846b-d312b9d2ca40",
+      "claim_id": "C96",
+      "claim": "Tumors with polarity loss (such as scrib or dlg mutant tumors) feature robust upregulation of Ldh among other glycolytic genes.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, epidermal growth factor receptor (EGFR)-driven tumors, tumors with activated platelet-derived growth factor (PDGF)/vascular endothelial growth factor (VEGF) receptor (Pvr) and tumors with polarity loss (such as scrib or dlg mutant tumors) feature robust upregulation of Ldh among other glycolytic genes (Wang et al., 2016; Eichenlaub et al., 2018; Bunker et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about metabolic changes in polarity-deficient tumors supported by citations (Wang et al., 2016; Eichenlaub et al., 2018; Bunker et al., 2015).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:56:04.221176Z"
+    },
+    {
+      "id": "251ef368-4506-4fc8-9c74-10eeecbe5e96",
+      "content_id": "65ec2bef-505f-4e37-846b-d312b9d2ca40",
+      "claim_id": "C97",
+      "claim": "Depletion of Ldh was shown to reduce growth of EGFR-driven tumors but not tumors with polarity loss.",
+      "claim_type": "EXPLICIT",
+      "source": "Depletion of Ldh was shown to reduce growth of EGFR-driven tumors but not tumors with polarity loss (Eichenlaub et al., 2018; Bunker et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the differential requirement for Ldh in different tumor types supported by citations (Eichenlaub et al., 2018; Bunker et al., 2015).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:56:04.221176Z"
+    },
+    {
+      "id": "230c4019-c60c-4e28-bd36-621c79ea73fd",
+      "content_id": "65ec2bef-505f-4e37-846b-d312b9d2ca40",
+      "claim_id": "C98",
+      "claim": "In RasV12scrib\u2212/\u2212 tumors, elevated glucose uptake was evident.",
+      "claim_type": "EXPLICIT",
+      "source": "In RasV12scrib\u2212/\u2212 tumors, elevated glucose uptake was evident, but its significance was not evaluated (Katheder et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about metabolic changes in RasV12scrib\u2212/\u2212 tumors supported by citation (Katheder et al., 2017).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:56:04.221176Z"
+    },
+    {
+      "id": "706717f1-9dd4-473d-9390-bd6b0ea28034",
+      "content_id": "65ec2bef-505f-4e37-846b-d312b9d2ca40",
+      "claim_id": "C99",
+      "claim": "Genetically targeting individual signaling cascades failed to restrain Hipk tumor growth.",
+      "claim_type": "EXPLICIT",
+      "source": "In our previous study, we found that genetically targeting individual signaling cascades failed to restrain Hipk tumor growth (Blaquiere et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about previous findings from the authors' group supported by citation (Blaquiere et al., 2018).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:56:04.221176Z"
+    },
+    {
+      "id": "278b1d0c-0f1e-4ca9-a19a-08a378071371",
+      "content_id": "65ec2bef-505f-4e37-846b-d312b9d2ca40",
+      "claim_id": "C100",
+      "claim": "Targeting Pfk2 may be a favorable, selective metabolic strategy in the treatment of cancers, especially those displaying ectopic MYC expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Given that Pfk2 is mis-expressed in tumor cells but not in normal cells (Figure 2a) and that dMyc accumulation is most sensitive to the Pfk2-Pfk mediated committed step of glycolysis specifically in tumor cells (Figure 6), targeting Pfk2 may be a favorable, selective metabolic strategy in the treatment of cancers, especially those displaying ectopic MYC expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about potential therapeutic strategies inferred from the data showing that Pfk2 is upregulated in tumors and required for dMyc accumulation specifically in tumor cells.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:56:04.221176Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "25983bea-b374-4a66-adc0-fa5f88e21968",
+      "content_id": "65ec2bef-505f-4e37-846b-d312b9d2ca40",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Hipk tumor cells exhibit elevated glucose uptake as measured by 2-NBDG accumulation and reduced intracellular glucose levels measured by FRET, indicating enhanced glucose consumption. This is accompanied by mild upregulation of glut1, and glut1 knockdown moderately reduces 2-NBDG uptake.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C7-C9 are well-supported by quantitative 2-NBDG uptake data (Figure 1c-d, i; p=8.93E-08) and FRET measurements (Figure 1e-h, k; p=1.04E-08). The inference that glucose is substantially utilized (C9) logically follows from increased uptake with decreased intracellular levels. Claims C15-C16 provide mechanistic support through glut1 upregulation (1.6-fold) and partial rescue by glut1-RNAi, though the effect is moderate.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:56:04.221176Z"
+    },
+    {
+      "id": "dafca333-a347-40b4-aaf9-73f09354cc61",
+      "content_id": "65ec2bef-505f-4e37-846b-d312b9d2ca40",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Hipk-expressing discs show significant upregulation of key glycolytic genes including Hex-A (2.2-fold), Hex-C (4.3-fold), Pgi (2.4-fold), Pfk2 (2.7-fold), and Ldh (3.4-fold), confirmed by qRT-PCR and Ldh-GFP reporter expression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10-C14 are directly supported by qRT-PCR data in Figure 2a with statistical significance indicated for each gene. The Ldh upregulation is independently confirmed by Ldh-GFP reporter expression (Figure 2c-d), providing orthogonal validation. The fold-changes are clearly stated with p-values provided.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:56:04.221176Z"
+    },
+    {
+      "id": "310e30b1-ad96-45eb-859a-d7ab0c6e5b7a",
+      "content_id": "65ec2bef-505f-4e37-846b-d312b9d2ca40",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Elevated Hipk drives transcriptional upregulation of dMyc in a region-specific manner, with strongest induction in the wing hinge where tumor cells proliferate most rapidly, while the wing pouch shows minimal dMyc protein accumulation despite some transcriptional activation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C17-C23, C26 are well-supported by qRT-PCR (Figure 3a; p=0.0003 for dMyc), dMyc-lacZ reporter expression (Figure 3c-d), and dMyc immunostaining (Figure 3e-f). The region-specificity is clearly demonstrated with strongest signal in the hinge (arrowheads in Figure 3d, f). Claim C2 regarding convergence of signaling cascades is supported by subsequent flip-out clone experiments (addressed in another result group).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:56:04.221176Z"
+    },
+    {
+      "id": "54973dbc-83f3-4460-b5d2-7a2e8f50aeb1",
+      "content_id": "65ec2bef-505f-4e37-846b-d312b9d2ca40",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Individual perturbation of signaling pathways regulated by Hipk (Hippo/Yki, Wnt/Arm, Hedgehog/Ci, Notch) is sufficient to trigger ectopic dMyc expression in the wing hinge region, supporting the hypothesis that Hipk-induced dMyc upregulation occurs through convergence of multiple perturbed signaling cascades.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31-C35 are supported by flip-out clone experiments showing dMyc accumulation upon activation of Yki-S168A (Figure 4d), Arm-S10 (Figure 4e), Ci (Figure 4f), and N-act (Figure 4g) in the hinge region. Claims C27-C30 cite prior literature establishing Hipk's regulation of these pathways. The region-specificity (C24-C25) is demonstrated by differential dMyc response in hinge vs. pouch. However, the claim of 'convergence' (C2, C35) is inferential rather than directly demonstrated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:56:04.221176Z"
+    },
+    {
+      "id": "976b1869-7785-41e7-9648-85877b74c8d7",
+      "content_id": "65ec2bef-505f-4e37-846b-d312b9d2ca40",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "dMyc induces robust expression of glycolytic genes including pfk2, drives 2-NBDG uptake, and is essential for enhanced glycolysis and tumor growth in Hipk tumor cells, as demonstrated by rescue experiments showing that dMyc knockdown reverses 2-NBDG accumulation, suppresses glycolytic gene expression, and blocks tumorous growth.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36-C41 are well-supported by gain-of-function (dMyc overexpression: Figure 5a, d-e) and loss-of-function (dMyc-RNAi in hipk background: Figure 5b-i) experiments. The 2-NBDG data (Figure 5d) shows significant uptake with dMyc overexpression (p=9.12E-05) and rescue by dMyc knockdown (p=0.774, not significant vs. control). Glycolytic gene expression (Figure 5e) and tumor suppression (Figure 5f-i) provide strong supporting evidence. Claim C3 is supported by pfk2 upregulation data (Figure 2a).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:56:04.221176Z"
+    },
+    {
+      "id": "1e45a04d-639c-47b9-8164-287e3344ce5e",
+      "content_id": "65ec2bef-505f-4e37-846b-d312b9d2ca40",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "While dMyc overexpression alone enhances glycolysis, it fails to reproduce the tumorous phenotypes observed in hipk-expressing discs, indicating that additional mechanisms beyond dMyc upregulation are required for Hipk-induced tumorigenesis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C43 are supported by comparing tissue morphology in dMyc-expressing discs (Figure 5a, normal appearance) versus hipk-expressing discs (Figure 5f, severe distortions). This observation is critical for understanding that dMyc is necessary but not sufficient for tumor formation. The inference (C43) is logical given the rescue data showing dMyc is indispensable (Figure 5f-i) combined with the insufficiency of dMyc alone.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:56:04.221176Z"
+    },
+    {
+      "id": "e7daa650-3ddf-4b64-9b79-a56ec91904aa",
+      "content_id": "65ec2bef-505f-4e37-846b-d312b9d2ca40",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Pfk2 and Pfk are required to sustain dMyc protein accumulation post-transcriptionally in Hipk tumor cells, establishing a positive feedback loop where dMyc induces glycolytic gene expression including pfk2, and Pfk2/Pfk activity in turn maintains dMyc protein levels. Disruption of this loop by pfk2 or pfk knockdown abolishes dMyc accumulation and blocks tumor growth.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C44-C46, C48, C51-C53, C59 are strongly supported by data showing that pfk2/pfk knockdown abolishes dMyc protein (Figure 6a-c) while maintaining dMyc transcription (dMyc-lacZ signal in Figure 6e-g), indicating post-transcriptional regulation. The specificity is demonstrated by comparing effects of different glycolytic enzyme knockdowns (Figure 6, Figure 6\u2014figure supplements 2-3). The feedback loop model (C59) is a reasonable inference from the bidirectional relationship demonstrated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:56:04.221176Z"
+    },
+    {
+      "id": "079bd0ac-0f43-4bfe-bf62-ecaaba737262",
+      "content_id": "65ec2bef-505f-4e37-846b-d312b9d2ca40",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Disruption of the dMyc-glycolysis feedback loop abrogates tumorous growth, with knockdown of pfk2 or pfk effectively suppressing tumor phenotypes, while knockdown of other glycolytic enzymes (hex-A, hex-C, glut1, pgi, pgk, pyk, Ldh) has minimal or no effect on tumor growth or dMyc accumulation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C6 is supported by tumor suppression data for dMyc (Figure 5f-i), pfk2 (Figure 6b), and pfk (Figure 6c) knockdowns. Claims C47, C50, C62-C63 are supported by microscopy showing persistent tissue distortions and dMyc accumulation with knockdown of other glycolytic enzymes (Figure 6d, Figure 6\u2014figure supplements 2-3). This demonstrates specificity for the committed step of glycolysis governed by Pfk2/Pfk.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:56:04.221176Z"
+    },
+    {
+      "id": "aca3dea9-b6a3-4fd6-a9d6-7b733396d377",
+      "content_id": "65ec2bef-505f-4e37-846b-d312b9d2ca40",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Hipk protein levels and signaling activities remain intact when pfk2 or pfk is knocked down, as evidenced by maintained Hipk protein expression, robust dMyc-lacZ reporter activity, and persistent Hipk-mediated stabilization of Armadillo and induction of Cyclin E and expanded-lacZ.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54-C58 are supported by immunostaining showing comparable Hipk levels (Figure 6e-g), maintained dMyc-lacZ signal (Figure 6e-g), and persistent downstream signaling outputs including Armadillo stabilization, Cyclin E induction, and expanded-lacZ expression (Figure 6\u2014figure supplement 5). This control experiment is critical for ruling out the alternative explanation that pfk2/pfk knockdown simply inactivates Hipk.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:56:04.221176Z"
+    },
+    {
+      "id": "56fbeff3-5081-47c0-b907-0c37835a1f73",
+      "content_id": "65ec2bef-505f-4e37-846b-d312b9d2ca40",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Knockdown of pfk2 or pfk significantly decreases pyruvate levels in larvae, confirming their role in regulating glycolytic flux.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C60-C61 are supported by pyruvate measurement data (Figure 6\u2014figure supplement 1a) showing ~60% reduction with pfk2 knockdown (p=0.0497) and significant reduction with pfk knockdown (p=0.0214). This provides biochemical validation that the RNAi constructs effectively impair glycolytic flux. Claim C61 is additionally supported by citation to prior work (Li et al., 2018).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:56:04.221176Z"
+    },
+    {
+      "id": "71c34cac-ebeb-46bc-96eb-0714d0620668",
+      "content_id": "65ec2bef-505f-4e37-846b-d312b9d2ca40",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "In the absence of hipk overexpression, knockdown of pfk or pfk2 does not affect normal dMyc expression patterns or tissue growth.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C49 is supported by dMyc immunostaining in Figure 6\u2014figure supplement 4a-b showing normal dMyc expression patterns in discs with pfk or pfk2 knockdown alone. This control is important for demonstrating that the requirement for Pfk2/Pfk in maintaining dMyc is specific to the tumor context.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:56:04.221176Z"
+    },
+    {
+      "id": "7f3fe52c-a8e5-4241-b6e7-402e9e07c85a",
+      "content_id": "65ec2bef-505f-4e37-846b-d312b9d2ca40",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Ubiquitous knockdown of glycolytic genes results in lethality at different developmental stages, with pgk knockdown causing pre-larval lethality, pfk/pyk knockdown preventing pupariation, pfk2 knockdown causing early pupal lethality, while glut1/pgi knockdown permits adult emergence.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C64-C67 are observational data from the authors' experiments documenting the developmental consequences of ubiquitous glycolytic gene knockdown. These observations provide context for the essential roles of these enzymes in normal development and help interpret the tumor-specific phenotypes. The data are straightforward observations without statistical analysis required.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:56:04.221176Z"
+    },
+    {
+      "id": "dd1d7bf8-8faa-4d2d-ac08-d01e3fe25899",
+      "content_id": "65ec2bef-505f-4e37-846b-d312b9d2ca40",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The manuscript correctly describes established biochemical knowledge about glycolytic enzymes and metabolic probes, including the functions of Pfk2, F2,6-BP, hexokinases, Pgi, Ldh, and the properties of 2-NBDG.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C78-C79, C83-C87 represent established biochemical knowledge that is correctly stated and appropriately cited. These claims provide necessary background for interpreting the experimental results. Claim C4 is additionally supported by citation to Nunes et al., 2016 regarding conservation of F2,6-BP regulation in insects.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:56:04.221176Z"
+    },
+    {
+      "id": "ee6d4dce-c3d1-4ae9-8c27-2f481b04470a",
+      "content_id": "65ec2bef-505f-4e37-846b-d312b9d2ca40",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The manuscript accurately cites prior literature regarding the history of the Warburg effect, current understanding of cancer metabolism, the utility of Drosophila as a model organism, HIPK expression in cancers, dMyc/MYC functions, non-metabolic roles of glycolytic enzymes, and metabolic changes in other Drosophila tumor models.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C68-C77, C88-C99 represent accurate citations of prior literature that provide appropriate context for the current study. These claims are supported by multiple citations to relevant primary literature. The historical context (C68-C73) and model organism justification (C74-C77) are standard background. The citations regarding other tumor models (C94-C99) appropriately position the current work within the field.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:56:04.221176Z"
+    },
+    {
+      "id": "48afc2cb-a841-456e-b967-cfd0eebb15cb",
+      "content_id": "65ec2bef-505f-4e37-846b-d312b9d2ca40",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The authors propose that targeting Pfk2 may be a favorable, selective metabolic strategy for treating cancers with ectopic MYC expression, based on Pfk2 being upregulated in tumor cells but not normal cells, and dMyc accumulation being specifically sensitive to Pfk2/Pfk in tumor cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C100 is a speculative therapeutic proposal based on the experimental findings. While the data support that Pfk2 is upregulated in tumors (Figure 2a) and required for dMyc accumulation specifically in tumor cells (Figure 6), the claim about therapeutic potential is extrapolation beyond the data. No therapeutic experiments, drug studies, or validation in mammalian systems are presented. This represents a reasonable hypothesis for future work but is not directly supported by the current data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:56:04.221176Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "14f91407-19ed-49b0-bfb4-b8ae408e033b",
+      "result_id": "25983bea-b374-4a66-adc0-fa5f88e21968"
+    },
+    {
+      "claim_id": "04b126d2-a7c6-4178-963e-a04ab1aa131b",
+      "result_id": "25983bea-b374-4a66-adc0-fa5f88e21968"
+    },
+    {
+      "claim_id": "acdcfcd0-d4ea-44bb-be8a-e209b1a6903e",
+      "result_id": "25983bea-b374-4a66-adc0-fa5f88e21968"
+    },
+    {
+      "claim_id": "528a6733-f3c7-4179-a98d-b6b4c3dcc390",
+      "result_id": "25983bea-b374-4a66-adc0-fa5f88e21968"
+    },
+    {
+      "claim_id": "def255f0-2119-44cc-9cb7-8741290802a1",
+      "result_id": "25983bea-b374-4a66-adc0-fa5f88e21968"
+    },
+    {
+      "claim_id": "99723a32-8faf-4638-9dda-1d2169ee3648",
+      "result_id": "25983bea-b374-4a66-adc0-fa5f88e21968"
+    },
+    {
+      "claim_id": "50154e38-a15f-4173-ac82-9cf83d6543f9",
+      "result_id": "dafca333-a347-40b4-aaf9-73f09354cc61"
+    },
+    {
+      "claim_id": "27d28096-3c25-4967-8b88-111b1b615cbd",
+      "result_id": "dafca333-a347-40b4-aaf9-73f09354cc61"
+    },
+    {
+      "claim_id": "92f70029-d948-454d-925b-21f04dfb923d",
+      "result_id": "dafca333-a347-40b4-aaf9-73f09354cc61"
+    },
+    {
+      "claim_id": "b1265eed-6859-4e1a-8159-46adcaeea958",
+      "result_id": "dafca333-a347-40b4-aaf9-73f09354cc61"
+    },
+    {
+      "claim_id": "c4eb7d45-15c1-4af1-9c80-7d239ddfbb12",
+      "result_id": "dafca333-a347-40b4-aaf9-73f09354cc61"
+    },
+    {
+      "claim_id": "f7087d3f-0ebd-40a6-b3c5-7ee7d1e23371",
+      "result_id": "310e30b1-ad96-45eb-859a-d7ab0c6e5b7a"
+    },
+    {
+      "claim_id": "a195cf30-1e7f-41e4-a1bf-2d0901df48a8",
+      "result_id": "310e30b1-ad96-45eb-859a-d7ab0c6e5b7a"
+    },
+    {
+      "claim_id": "98267126-d035-4d95-b115-03372481df43",
+      "result_id": "310e30b1-ad96-45eb-859a-d7ab0c6e5b7a"
+    },
+    {
+      "claim_id": "406d80a1-b206-4078-8c10-3e67576b913e",
+      "result_id": "310e30b1-ad96-45eb-859a-d7ab0c6e5b7a"
+    },
+    {
+      "claim_id": "1f3d0bc5-9c1d-45bf-bdb4-ddba302194f9",
+      "result_id": "310e30b1-ad96-45eb-859a-d7ab0c6e5b7a"
+    },
+    {
+      "claim_id": "d9172be0-6821-4c6c-a187-271be3c4dfef",
+      "result_id": "310e30b1-ad96-45eb-859a-d7ab0c6e5b7a"
+    },
+    {
+      "claim_id": "35fcaabd-9306-4c02-85c5-3b66e1b57a94",
+      "result_id": "310e30b1-ad96-45eb-859a-d7ab0c6e5b7a"
+    },
+    {
+      "claim_id": "a828a308-e7df-44cf-999e-6f899eeb128a",
+      "result_id": "310e30b1-ad96-45eb-859a-d7ab0c6e5b7a"
+    },
+    {
+      "claim_id": "e46a8b2f-19e1-47b5-9148-e4735d92c8fb",
+      "result_id": "310e30b1-ad96-45eb-859a-d7ab0c6e5b7a"
+    },
+    {
+      "claim_id": "ac84478c-cf14-4a7a-9a99-d75f8142aa14",
+      "result_id": "54973dbc-83f3-4460-b5d2-7a2e8f50aeb1"
+    },
+    {
+      "claim_id": "f391687f-d091-42ee-92a8-b82d74ab31a1",
+      "result_id": "54973dbc-83f3-4460-b5d2-7a2e8f50aeb1"
+    },
+    {
+      "claim_id": "efcd50cd-d08f-4f78-a8f2-3486b5742b5a",
+      "result_id": "54973dbc-83f3-4460-b5d2-7a2e8f50aeb1"
+    },
+    {
+      "claim_id": "f2c05ddb-bb93-40d3-b2e6-0cef19d0916e",
+      "result_id": "54973dbc-83f3-4460-b5d2-7a2e8f50aeb1"
+    },
+    {
+      "claim_id": "0c88d012-e477-4f41-8b59-bc4936a8afd9",
+      "result_id": "54973dbc-83f3-4460-b5d2-7a2e8f50aeb1"
+    },
+    {
+      "claim_id": "7d067db9-105d-4610-90c6-42ac55ff42f9",
+      "result_id": "54973dbc-83f3-4460-b5d2-7a2e8f50aeb1"
+    },
+    {
+      "claim_id": "41696669-a8a3-4e2e-8a34-7e6d80ef5c26",
+      "result_id": "54973dbc-83f3-4460-b5d2-7a2e8f50aeb1"
+    },
+    {
+      "claim_id": "57b3ed56-f64c-4a83-bf97-4a6c06a8e8df",
+      "result_id": "54973dbc-83f3-4460-b5d2-7a2e8f50aeb1"
+    },
+    {
+      "claim_id": "4fec0715-7033-449c-814a-7b18c665e434",
+      "result_id": "54973dbc-83f3-4460-b5d2-7a2e8f50aeb1"
+    },
+    {
+      "claim_id": "1721d9c7-9d58-4df1-b71a-60306f270a52",
+      "result_id": "54973dbc-83f3-4460-b5d2-7a2e8f50aeb1"
+    },
+    {
+      "claim_id": "94071cc5-d584-4092-a637-7fbc50c400d4",
+      "result_id": "54973dbc-83f3-4460-b5d2-7a2e8f50aeb1"
+    },
+    {
+      "claim_id": "66f130b2-ad02-41dd-bebc-2513d2afad65",
+      "result_id": "976b1869-7785-41e7-9648-85877b74c8d7"
+    },
+    {
+      "claim_id": "762ae9bd-0aac-4020-9ca2-0563325037dc",
+      "result_id": "976b1869-7785-41e7-9648-85877b74c8d7"
+    },
+    {
+      "claim_id": "117543ba-17c4-4b40-994c-3fbc91b57a71",
+      "result_id": "976b1869-7785-41e7-9648-85877b74c8d7"
+    },
+    {
+      "claim_id": "61d05d84-bf42-4d08-813b-f660dfb27c3a",
+      "result_id": "976b1869-7785-41e7-9648-85877b74c8d7"
+    },
+    {
+      "claim_id": "21271bde-20bd-4385-8b75-f969bdc5f3bf",
+      "result_id": "976b1869-7785-41e7-9648-85877b74c8d7"
+    },
+    {
+      "claim_id": "a37f693c-7e91-49ed-97fa-ea2b7462df21",
+      "result_id": "976b1869-7785-41e7-9648-85877b74c8d7"
+    },
+    {
+      "claim_id": "891f88c6-01ad-4c4b-b66f-80932245c8a4",
+      "result_id": "976b1869-7785-41e7-9648-85877b74c8d7"
+    },
+    {
+      "claim_id": "85515aad-dd06-4131-b10c-d5475e047358",
+      "result_id": "1e45a04d-639c-47b9-8164-287e3344ce5e"
+    },
+    {
+      "claim_id": "2a26dc8e-1554-483d-9057-eae74213b734",
+      "result_id": "1e45a04d-639c-47b9-8164-287e3344ce5e"
+    },
+    {
+      "claim_id": "2058eeea-3454-4839-b1ba-a14d9434afad",
+      "result_id": "e7daa650-3ddf-4b64-9b79-a56ec91904aa"
+    },
+    {
+      "claim_id": "87f1bd74-15fb-4a06-9085-38a684b77288",
+      "result_id": "e7daa650-3ddf-4b64-9b79-a56ec91904aa"
+    },
+    {
+      "claim_id": "54552631-a733-4b2d-b7f9-237e6e678d57",
+      "result_id": "e7daa650-3ddf-4b64-9b79-a56ec91904aa"
+    },
+    {
+      "claim_id": "361b6edc-bc3a-4f0b-a451-dcb90eb371ae",
+      "result_id": "e7daa650-3ddf-4b64-9b79-a56ec91904aa"
+    },
+    {
+      "claim_id": "5aa0ac8b-bc87-4b6f-91ed-8a52486c392f",
+      "result_id": "e7daa650-3ddf-4b64-9b79-a56ec91904aa"
+    },
+    {
+      "claim_id": "64ebc929-9e1c-45ba-b6ef-a9514652105b",
+      "result_id": "e7daa650-3ddf-4b64-9b79-a56ec91904aa"
+    },
+    {
+      "claim_id": "51fbe106-65c5-4484-a72e-40c968d65011",
+      "result_id": "e7daa650-3ddf-4b64-9b79-a56ec91904aa"
+    },
+    {
+      "claim_id": "06c06e2b-50b8-433f-968e-aa9a8a527469",
+      "result_id": "e7daa650-3ddf-4b64-9b79-a56ec91904aa"
+    },
+    {
+      "claim_id": "c5cfba07-73d3-497f-9e29-7c843afdd1c0",
+      "result_id": "e7daa650-3ddf-4b64-9b79-a56ec91904aa"
+    },
+    {
+      "claim_id": "85974753-e996-4385-b695-7c514bc9293f",
+      "result_id": "079bd0ac-0f43-4bfe-bf62-ecaaba737262"
+    },
+    {
+      "claim_id": "24813559-3949-4504-9d3d-55a6cfa1f5f6",
+      "result_id": "079bd0ac-0f43-4bfe-bf62-ecaaba737262"
+    },
+    {
+      "claim_id": "ac2e481e-4181-4ffe-8554-8a2bc250ef3e",
+      "result_id": "079bd0ac-0f43-4bfe-bf62-ecaaba737262"
+    },
+    {
+      "claim_id": "495f5959-6e6c-4125-af83-e756e9dc7077",
+      "result_id": "079bd0ac-0f43-4bfe-bf62-ecaaba737262"
+    },
+    {
+      "claim_id": "8cd98607-a399-467c-8b60-f10443d955ea",
+      "result_id": "079bd0ac-0f43-4bfe-bf62-ecaaba737262"
+    },
+    {
+      "claim_id": "745fb424-cc81-4598-83eb-283281066092",
+      "result_id": "aca3dea9-b6a3-4fd6-a9d6-7b733396d377"
+    },
+    {
+      "claim_id": "b39f4f77-62bf-4739-aa52-eb81cab53428",
+      "result_id": "aca3dea9-b6a3-4fd6-a9d6-7b733396d377"
+    },
+    {
+      "claim_id": "0bf8f9f5-e748-4e79-b150-19a9be97db7f",
+      "result_id": "aca3dea9-b6a3-4fd6-a9d6-7b733396d377"
+    },
+    {
+      "claim_id": "c8aef993-5adf-4f69-88f2-a2759e32917c",
+      "result_id": "aca3dea9-b6a3-4fd6-a9d6-7b733396d377"
+    },
+    {
+      "claim_id": "7850eaad-43df-4bb3-914b-a980b7bfd3a6",
+      "result_id": "aca3dea9-b6a3-4fd6-a9d6-7b733396d377"
+    },
+    {
+      "claim_id": "54756deb-467c-49a4-b457-b8d4ff8b68d6",
+      "result_id": "56fbeff3-5081-47c0-b907-0c37835a1f73"
+    },
+    {
+      "claim_id": "747b039e-f6bb-4250-a134-6b7c48e5d33a",
+      "result_id": "56fbeff3-5081-47c0-b907-0c37835a1f73"
+    },
+    {
+      "claim_id": "9dd1e485-ed72-42ef-b9b6-22aa16948fdb",
+      "result_id": "71c34cac-ebeb-46bc-96eb-0714d0620668"
+    },
+    {
+      "claim_id": "cd4ee00a-ab60-4a36-9d15-96efa5ae827e",
+      "result_id": "7f3fe52c-a8e5-4241-b6e7-402e9e07c85a"
+    },
+    {
+      "claim_id": "83b11fc0-cdec-4a10-9f5d-64d62538cbb5",
+      "result_id": "7f3fe52c-a8e5-4241-b6e7-402e9e07c85a"
+    },
+    {
+      "claim_id": "d7512a35-99bb-4c31-a67a-16cf1769d941",
+      "result_id": "7f3fe52c-a8e5-4241-b6e7-402e9e07c85a"
+    },
+    {
+      "claim_id": "11ad7548-bbf7-4051-9f49-879d41ae54d3",
+      "result_id": "7f3fe52c-a8e5-4241-b6e7-402e9e07c85a"
+    },
+    {
+      "claim_id": "02e535f4-460a-4c91-860e-6460ce675a4e",
+      "result_id": "dd1d7bf8-8faa-4d2d-ac08-d01e3fe25899"
+    },
+    {
+      "claim_id": "77e45c58-3aaf-4322-bb37-e5ae7b9c98ac",
+      "result_id": "dd1d7bf8-8faa-4d2d-ac08-d01e3fe25899"
+    },
+    {
+      "claim_id": "285afd6f-c242-4890-a83f-6dfbdcd86c5a",
+      "result_id": "dd1d7bf8-8faa-4d2d-ac08-d01e3fe25899"
+    },
+    {
+      "claim_id": "86204f5d-88a8-47d1-8fe3-1d8dfa060c11",
+      "result_id": "dd1d7bf8-8faa-4d2d-ac08-d01e3fe25899"
+    },
+    {
+      "claim_id": "b2b3e5ca-1a08-4145-8b4f-68caa76fcd33",
+      "result_id": "dd1d7bf8-8faa-4d2d-ac08-d01e3fe25899"
+    },
+    {
+      "claim_id": "51f8985e-4531-407e-a518-bfc4f9a55dfa",
+      "result_id": "dd1d7bf8-8faa-4d2d-ac08-d01e3fe25899"
+    },
+    {
+      "claim_id": "9359f6e4-6aed-4644-93e2-5e14df8bd1bc",
+      "result_id": "dd1d7bf8-8faa-4d2d-ac08-d01e3fe25899"
+    },
+    {
+      "claim_id": "f085a0a9-33fd-4a23-804c-523a012015ee",
+      "result_id": "dd1d7bf8-8faa-4d2d-ac08-d01e3fe25899"
+    },
+    {
+      "claim_id": "a3413bb6-bf1b-4792-87d9-a80445f1ff48",
+      "result_id": "ee6d4dce-c3d1-4ae9-8c27-2f481b04470a"
+    },
+    {
+      "claim_id": "9b2b4d42-6556-437c-bfe8-f9aaa07ec4e1",
+      "result_id": "ee6d4dce-c3d1-4ae9-8c27-2f481b04470a"
+    },
+    {
+      "claim_id": "61d3494b-ae64-4a76-8a5c-45a9c79551ec",
+      "result_id": "ee6d4dce-c3d1-4ae9-8c27-2f481b04470a"
+    },
+    {
+      "claim_id": "38019d9d-a667-4ad1-85ad-84af63131f1c",
+      "result_id": "ee6d4dce-c3d1-4ae9-8c27-2f481b04470a"
+    },
+    {
+      "claim_id": "245e872e-a510-46a1-86ba-2e8797b9cb34",
+      "result_id": "ee6d4dce-c3d1-4ae9-8c27-2f481b04470a"
+    },
+    {
+      "claim_id": "8fca8d1d-f963-44a1-a5d3-9714d958d7c7",
+      "result_id": "ee6d4dce-c3d1-4ae9-8c27-2f481b04470a"
+    },
+    {
+      "claim_id": "16cee370-af77-431b-8caf-f1801ffc280b",
+      "result_id": "ee6d4dce-c3d1-4ae9-8c27-2f481b04470a"
+    },
+    {
+      "claim_id": "4dddeae6-8dcd-4859-9dce-105e59135525",
+      "result_id": "ee6d4dce-c3d1-4ae9-8c27-2f481b04470a"
+    },
+    {
+      "claim_id": "cda4a3b5-dbe9-47f0-a4b3-373ca2b4d809",
+      "result_id": "ee6d4dce-c3d1-4ae9-8c27-2f481b04470a"
+    },
+    {
+      "claim_id": "d2aff710-49fa-481f-a31b-a3117ff68620",
+      "result_id": "ee6d4dce-c3d1-4ae9-8c27-2f481b04470a"
+    },
+    {
+      "claim_id": "582baf52-ce49-4a03-84bf-1d97722db0f3",
+      "result_id": "ee6d4dce-c3d1-4ae9-8c27-2f481b04470a"
+    },
+    {
+      "claim_id": "f3ee9cfa-fb9b-4881-a2e9-916a1eed0f1a",
+      "result_id": "ee6d4dce-c3d1-4ae9-8c27-2f481b04470a"
+    },
+    {
+      "claim_id": "b4af68e8-5e71-4b56-81ea-233f64a6a43b",
+      "result_id": "ee6d4dce-c3d1-4ae9-8c27-2f481b04470a"
+    },
+    {
+      "claim_id": "f1b77c8a-5370-4130-822c-fb0de9a13468",
+      "result_id": "ee6d4dce-c3d1-4ae9-8c27-2f481b04470a"
+    },
+    {
+      "claim_id": "c4f28c31-528f-4581-aadf-b0102754721a",
+      "result_id": "ee6d4dce-c3d1-4ae9-8c27-2f481b04470a"
+    },
+    {
+      "claim_id": "08654150-ac19-47e2-abe8-113574ac7ab5",
+      "result_id": "ee6d4dce-c3d1-4ae9-8c27-2f481b04470a"
+    },
+    {
+      "claim_id": "9bc51a90-f2f2-4070-93a0-c4c852dc6f4e",
+      "result_id": "ee6d4dce-c3d1-4ae9-8c27-2f481b04470a"
+    },
+    {
+      "claim_id": "6446f2ef-a9a5-4dee-9294-2b19ce463c95",
+      "result_id": "ee6d4dce-c3d1-4ae9-8c27-2f481b04470a"
+    },
+    {
+      "claim_id": "6d2aef48-78e2-4d28-99a0-435a994d4910",
+      "result_id": "ee6d4dce-c3d1-4ae9-8c27-2f481b04470a"
+    },
+    {
+      "claim_id": "251ef368-4506-4fc8-9c74-10eeecbe5e96",
+      "result_id": "ee6d4dce-c3d1-4ae9-8c27-2f481b04470a"
+    },
+    {
+      "claim_id": "230c4019-c60c-4e28-bd36-621c79ea73fd",
+      "result_id": "ee6d4dce-c3d1-4ae9-8c27-2f481b04470a"
+    },
+    {
+      "claim_id": "706717f1-9dd4-473d-9390-bd6b0ea28034",
+      "result_id": "ee6d4dce-c3d1-4ae9-8c27-2f481b04470a"
+    },
+    {
+      "claim_id": "278b1d0c-0f1e-4ca9-a19a-08a378071371",
+      "result_id": "48afc2cb-a841-456e-b967-cfd0eebb15cb"
+    }
+  ],
+  "comparisons": []
+}

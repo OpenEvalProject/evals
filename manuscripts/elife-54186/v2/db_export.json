@@ -1,0 +1,2258 @@
+{
+  "submission": {
+    "id": "9126da46-755b-4872-89ea-826ea4955617",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T17:24:43.923554Z",
+    "updated_at": "2025-12-02T17:24:43.923554Z"
+  },
+  "content": [
+    {
+      "id": "65e6aa00-744b-4fbe-ae43-2c9f5bbfc7ad",
+      "submission_id": "9126da46-755b-4872-89ea-826ea4955617",
+      "content_type": "manuscript",
+      "content_text": "# Epigenetic inheritance of circadian period in clonal cells\n\n## Authors\n\n- Yan Li<sup>1</sup> ([ORCID: 0000-0003-4962-9910](https://orcid.org/0000-0003-4962-9910))\n- Yongli Shan<sup>1</sup>\n- Gokhul Krishna Kilaru<sup>1</sup>\n- Stefano Berto<sup>1</sup>\n- Guang-Zhong Wang<sup>1</sup> ([ORCID: 0000-0001-6432-8310](https://orcid.org/0000-0001-6432-8310))\n- Kimberly H Cox<sup>1</sup> ([ORCID: 0000-0002-7097-9563](https://orcid.org/0000-0002-7097-9563))\n- Seung-Hee Yoo<sup>1</sup>\n- Shuzhang Yang<sup>1</sup>\n- Genevieve Konopka<sup>1</sup> ([ORCID: 0000-0002-3363-7302](https://orcid.org/0000-0002-3363-7302))\n- Joseph S Takahashi<sup>1</sup> ([ORCID: 0000-0003-0384-8878](https://orcid.org/0000-0003-0384-8878)) \u2020\n\n### Affiliations\n\n1. Department of Neuroscience, Peter O\u2019Donnell Jr. Brain Institute, University of Texas Southwestern Medical Center Dallas United States\n2. Howard Hughes Medical Institute, University of Texas Southwestern Medical Center Dallas United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nCircadian oscillations are generated via transcriptional-translational negative feedback loops. However, individual cells from fibroblast cell lines have heterogeneous rhythms, oscillating independently and with different period lengths. Here we showed that heterogeneity in circadian period is heritable and used a multi-omics approach to investigate underlying mechanisms. By examining large-scale phenotype-associated gene expression profiles in hundreds of mouse clonal cell lines, we identified and validated multiple novel candidate genes involved in circadian period determination in the absence of significant genomic variants. We also discovered differentially co-expressed gene networks that were functionally associated with period length. We further demonstrated that global differential DNA methylation bidirectionally regulated these same gene networks. Interestingly, we found that depletion of DNMT1 and DNMT3A had opposite effects on circadian period, suggesting non-redundant roles in circadian gene regulation. Together, our findings identify novel gene candidates involved in periodicity, and reveal DNA methylation as an important regulator of circadian periodicity.\n\n## Introduction\n\nCircadian oscillations maintain daily rhythms to control multiple physiological and behavioral processes, including metabolism, cell growth, immune response, and the sleep-wake cycle. Disruptions of the circadian clock have been linked with various disease processes and aging (Takahashi et al., 2008; Kondratova and Kondratov, 2012). Circadian oscillations display remarkable fidelity in their periodicity even in the absence of environmental cues. This precision of the internal biological clock arises from a complex gene network. In mammals, the core of this network is composed of an autoregulatory transcriptional negative feedback loop involving Clock, Bmal1, Per1/Per2, and Cry1/Cry2, and there are additional feedback loops interlocked with the core (Takahashi et al., 2008; Mohawk et al., 2012; Takahashi, 2017). Interestingly, although the cell-autonomous clock is ubiquitous, individual cells often do not maintain a perfect 24 hr circadian period, and within cell populations there are heterogeneous autonomous oscillations with a broad distribution of period length (Nagoshi et al., 2004; Welsh et al., 2004; Leise et al., 2012). The heterogeneity in intrinsic period of hypothalamic suprachiasmatic nucleus (SCN) neurons confers important functions of phase liability and phase plasticity (Welsh et al., 1995; Liu et al., 1997; Ko et al., 2010; Mohawk et al., 2012). However, it is still unclear how heterogeneous circadian periodicity is established and maintained under physiological conditions, or how much of this heterogeneity is heritable.\n\nThe origin of heterogeneity is complex, but may be driven by genetic variation, epigenetic modifications, and/or transcriptional noise (Jaenisch and Bird, 2003; Raser and O'Shea, 2005; Raj and van Oudenaarden, 2008; Burrell et al., 2013; Kelsey et al., 2017; Cavalli and Heard, 2019; Liu et al., 2019). We have recently shown that nonheritable noise is the predominant source of intercellular variation in circadian period within clonal cell lines (Li et al., 2020). However, it is still unclear what heritable factors contribute to period variation among different clonal cells. DNA methylation has been recognized as a chief contributor to gene expression states, and it is essential for mammalian embryonic development, with genome-wide methylation patterns changing during differentiation (Greenberg and Bourc'his, 2019). There are three canonical cytosine-5 DNA methyltransferases that catalyze the addition of methylation marks. DNMT3A and 3B, the de novo methyltransferases, set up DNA methylation patterns during early development. Once established, DNMT1 will copy those patterns onto the daughter strand during DNA replication ensuring methylation maintenance (Jaenisch and Bird, 2003). DNMT dysfunction has been associated with various diseases, and DNMT-deficient mice exhibit embryonic lethality (Greenberg and Bourc'his, 2019). Numerous studies have supported the role of DNA methylation in gene silencing; however, more recent work suggests that DNA methylation can also be involved in transcriptional activation (Rinaldi et al., 2016; Yin et al., 2017b; Harris et al., 2018; Lyko, 2018). Interestingly, despite high fidelity in mitotic inheritance, DNA methylation is variable across individuals, tissues, and cell types (Jaenisch and Bird, 2003; Jones, 2012; Varley et al., 2013). Thus, we hypothesized that differential DNA methylation could contribute as a heritable factor underlying heterogeneous circadian oscillations in clonal cell lines.\n\nHere, by examining phenotype-associated high-throughput multi-omics profiles in clonal cell populations, we identified and validated a pool of novel candidate genes regulating circadian period length and uncovered complex gene co-expression networks highly enriched in stress response and metabolic pathways. We next explored the origins of heterogeneous gene expression and found differences in global DNA methylation patterns that were associated with both silencing and activation of differentially expressed genes. Using gene knockdown studies, we also found that DNMT1 and DNMT3A have opposite effects on period length. Together, our findings demonstrate the important role of DNA methylation in the regulation of circadian period.\n\n## Results\n\n### Heritable circadian periodicity in clonal cell lines\n\nTo assess cellular phenotypic heterogeneity, we utilized an immortalized mouse ear fibroblast cell line carrying a PER2::LUCsv bioluminescence reporter generated from Per2::lucSV knockin mice (Chen et al., 2012; Yoo et al., 2017). We recently showed that these cells express persistent, robust, and cell-autonomous circadian oscillations over a 2 week period. Moreover, clonal cell lines generated from the parent culture had period distributions similar to those seen with single cells, indicating that circadian period is a heritable phenotype (Figure 1A\u2013B; Li et al., 2020). Here, we used the clonal cell lines to address the underlying molecular mechanism for heterogeneous circadian periodicity. To examine the stability of this heritability, twenty clonal cell lines were randomly selected and cultured continuously for 20 passages and tested for circadian period every five passages. Although two-way ANOVA revealed significant effects (p<0.01) of both cell line and passage, there was no interaction (p=0.09). Moreover, cell line was the dominant source of variation (74.70%), while passage only contributed 2.64% of the total variation. Multiple comparisons within each clonal cell line across passages identified a significant difference (adjusted p<0.05) for only\u00a0~5% of comparisons (11 out of 200), which is consistent with 5% false positive rate. These results indicate that circadian period of clonal cell lines is stable and transmissible for at least 20 cell passages (Figure 1C).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/54186/elife-54186-fig1-v2.jpg)\n\n**Figure 1.:** (A) Heatmap showing circadian oscillations of 83 single cells from parent culture tracked continuously for 10 days (sorted by phase at day 8). (B) Histogram showing circadian period distributions of single cells compared to clonal cell lines generated from the same parent culture. Single cells: 24.38\u00a0\u00b1\u00a01.20 hr (mean\u00a0\u00b1\u00a0SD), ranged 21.55\u201327.82 hr. Clonal cell lines: 24.81\u00a0\u00b1\u00a00.83 hr, ranged 22.76\u201327.65 hr. Clonal cell lines were measured as a\u00a0whole culture. Data are replotted from Li et al., 2020 and presented as averages from\u00a0\u22653 experiments. (C) Periods of individual clonal cell lines of different generations. Periods were analyzed for the whole culture at passages 1, 5, 10, 15, and 20. Data are presented as averages from\u00a0\u22653 experiments.\n\n### Transcriptomics identifies novel gene candidates determining period length\n\nTo explore potential underlying mechanisms, we selected two groups of clonal cell lines from the two tails of the period distribution (Table 1, 5 short period (SP) and five long period (LP) clones) (Li et al., 2020) and performed RNA-seq analysis (Figure 2\u2014source data 1). We compared their transcriptomic profiles and identified 5,137 period-correlated differentially expressed (DE) genes, with 2,782 genes upregulated and 2,355 genes downregulated in the LP group (Figure 2A, Figure 2\u2014source data 1). To narrow down the target pool further and identify candidate genes more directly responsible for periodicity differences, we selected four additional groups of subclones established from two representative clonal cell lines with different periods: a shorter period subgroup and a longer period subgroup from short period clone#33 (SSP and LSP), or long period clone#114 (SLP and LLP), respectively (Figure 2B; Li et al., 2020). These subclones and the original 10 clonal cell lines constituted a continuous period spectrum beneficial for identifying period-correlated genes (Figure 2C, Table 1).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/54186/elife-54186-fig2-v2.jpg)\n\n**Figure 2.:** (A) Heatmap of 5,137 period-correlated differentially expressed (DE) genes identified between two groups of clonal cell lines. SP: short period. LP: long period. Clones were sorted based on period length. Clone IDs shown at top. Four columns for each clone indicate two time-points, two replicates. From left to right: replicate1_T1, replicate1_T2, replicate2_T1 and replicate2_T2. Color scale represents z-score. (B) Experimental scheme for establishing subgroups of clonal cell lines carrying different circadian periods. SSP: shorter period subgroup from short period clone. LSP: longer period subgroup from short period clone. SLP: shorter period subgroup from long period clone. LLP: longer period subgroup from long period clone. (C) Scatter plot showing period length of different groups. Each dot represents a clonal cell line. (D) Heatmap of 535 period-correlated DE genes identified between two groups of subclones derived from SP clone#33. Each group include six subclones sorted based on period length. From left to right: #33\u2013123, #33\u2013112, #33\u20133, #33\u201326, #33\u2013117, #33\u2013141, #33\u201349, #33\u201384, #33\u201322, #33\u201353, #33\u201327, #33\u201351. Two columns for each sample indicate two time-points. (E) Heatmap of 1,352 period-correlated DE genes identified between two groups of subclones derived from LP clone#114. Each group include six subclones sorted based on period length. From left to right: #114\u201365, #114\u2013125, #114\u201362, #114\u2013129, #114\u201331, #114\u201357, #114\u201396, #114\u201382, #114\u201341, #114\u201380, #114\u201349, #114\u201391. Two columns for each sample indicate two time-points. (F) Area-proportional Venn diagram comparing DE genes identified above. For more information, see Figure 2\u2014source data 1.\n\n**Table 1.**\n Period of Clonal Cell Lines\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Group</th>\n      <th>Clone #</th>\n      <th>Period (hr)*</th>\n      <th>STDEV</th>\n      <th>Group</th>\n      <th>Clone #</th>\n      <th>Period (hr)*</th>\n      <th>STDEV</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td rowspan=\"5\">SP</td>\n      <td>#128</td>\n      <td>22.35</td>\n      <td>0.13</td>\n      <td rowspan=\"5\">LP</td>\n      <td>#86</td>\n      <td>25.07</td>\n      <td>0.12</td>\n    </tr>\n    <tr>\n      <td>#80</td>\n      <td>22.78</td>\n      <td>0.10</td>\n      <td>#34</td>\n      <td>25.60</td>\n      <td>0.50</td>\n    </tr>\n    <tr>\n      <td>#137</td>\n      <td>23.42</td>\n      <td>0.21</td>\n      <td>#74</td>\n      <td>25.80</td>\n      <td>0.50</td>\n    </tr>\n    <tr>\n      <td>#33</td>\n      <td>23.43</td>\n      <td>0.07</td>\n      <td>#114</td>\n      <td>26.43</td>\n      <td>0.15</td>\n    </tr>\n    <tr>\n      <td>#44</td>\n      <td>23.70</td>\n      <td>0.10</td>\n      <td>#108</td>\n      <td>26.90</td>\n      <td>0.14</td>\n    </tr>\n    <tr>\n      <td rowspan=\"6\">SSP</td>\n      <td>#33\u2013123</td>\n      <td>22.15</td>\n      <td>0.43</td>\n      <td rowspan=\"6\">SLP</td>\n      <td>#114\u201365</td>\n      <td>24.74</td>\n      <td>0.20</td>\n    </tr>\n    <tr>\n      <td>#33\u2013112</td>\n      <td>22.18</td>\n      <td>0.18</td>\n      <td>#114\u2013125</td>\n      <td>24.80</td>\n      <td>0.14</td>\n    </tr>\n    <tr>\n      <td>#33\u20133</td>\n      <td>22.20</td>\n      <td>0.21</td>\n      <td>#114\u201362</td>\n      <td>24.81</td>\n      <td>0.21</td>\n    </tr>\n    <tr>\n      <td>#33\u201326</td>\n      <td>22.43</td>\n      <td>0.21</td>\n      <td>#114\u2013129</td>\n      <td>24.82</td>\n      <td>0.16</td>\n    </tr>\n    <tr>\n      <td>#33\u2013117</td>\n      <td>22.43</td>\n      <td>0.27</td>\n      <td>#114\u201331</td>\n      <td>24.93</td>\n      <td>0.35</td>\n    </tr>\n    <tr>\n      <td>#33\u2013141</td>\n      <td>22.44</td>\n      <td>0.38</td>\n      <td>#114\u201357</td>\n      <td>25.19</td>\n      <td>0.13</td>\n    </tr>\n    <tr>\n      <td rowspan=\"6\">LSP</td>\n      <td>#33\u201349</td>\n      <td>23.95</td>\n      <td>0.27</td>\n      <td rowspan=\"6\">LLP</td>\n      <td>#114\u201396</td>\n      <td>26.69</td>\n      <td>0.68</td>\n    </tr>\n    <tr>\n      <td>#33\u201384</td>\n      <td>24.13</td>\n      <td>0.27</td>\n      <td>#114\u201382</td>\n      <td>27.02</td>\n      <td>0.47</td>\n    </tr>\n    <tr>\n      <td>#33\u201322</td>\n      <td>24.16</td>\n      <td>0.13</td>\n      <td>#114\u201341</td>\n      <td>27.16</td>\n      <td>0.45</td>\n    </tr>\n    <tr>\n      <td>#33\u201353</td>\n      <td>24.16</td>\n      <td>0.20</td>\n      <td>#114\u201380</td>\n      <td>27.77</td>\n      <td>0.44</td>\n    </tr>\n    <tr>\n      <td>#33\u201327</td>\n      <td>24.22</td>\n      <td>0.32</td>\n      <td>#114\u201349</td>\n      <td>27.97</td>\n      <td>0.99</td>\n    </tr>\n    <tr>\n      <td>#33\u201351</td>\n      <td>24.68</td>\n      <td>0.13</td>\n      <td>#114\u201391</td>\n      <td>28.00</td>\n      <td>0.66</td>\n    </tr>\n  </tbody>\n</table>\n\n_* Average of\u00a0\u22653\u00a0experiments.SP: short period group.LP: long period group.SSP: shorter period subgroup from short period clone#33.LSP: longer period subgroup from short period clone#33.SLP: shorter period subgroup from long period clone#114.LLP: longer period subgroup from long period clone#114._\n\nWe identified 535 additional\u00a0period-correlated DE genes from subclones originating from SP clone#33 and 1,352 additional DE genes from subclones originating from LP clone#114 (Figure 2D\u2013E, Figure 2\u2014source data 1). By comparing the three RNA-seq datasets, 67 overlapping DE genes were identified (Figure 2F). From these, we selected 14 genes based on the strength of the correlation between their expression and circadian period length from all 88 samples and performed knockdown experiments to validate their function in circadian periodicity. Out of 7 positively correlated DE genes, knockdown of Ak3 and Trim3 significantly shortened period, whereas knockdown of Cpeb1, Lrrfip1, Rbfa, and Dars lengthened period (Figure 3A\u2013C, Figure 3\u2014source data 1). Out of 7 negatively correlated DE genes, knockdown of Ipo13 and Tmem165 significantly lengthened period, whereas Slc8a3, Jun, Med23, and Cpa4 knockdown shortened period (Figure 3D\u2013F, Figure 3\u2014source data 1). Knockdown of two other genes, Eif4e2 and Rfx5, did not alter period length. We also examined the effect of knockdown of five representative genes in 10 clonal cell lines and found that they all showed the same period alterations as that seen in the parent culture demonstrating the overall consistency of the gene knockdowns on circadian period (Figure 3G, Figure 3\u2014source data 1). These results suggest that multiple genes function together to determine circadian period length and that there were no unique (clone-specific) effects on the direction (long or short) of the period changes. Since the majority of the DE genes identified here have never been reported as having effects on circadian period, these data provide a new pool of candidate genes functioning in circadian periodicity.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/54186/elife-54186-fig3-v2.jpg)\n\n**Figure 3.:** (A) Scatter plot of seven novel candidate genes showing positive correlation between gene expression and period length across all 88 samples. (B) Histogram comparing periods after knocking down seven positively correlated genes in parent culture. n\u00a0\u2265\u00a03 for each gene. Error bar indicates SD. (C) QPCR results showing knockdown efficiency of seven positively correlated genes. Error bar indicates SD. (D) Scatter plot of seven novel candidate genes showing negative correlation between gene expression and period length across all 88 samples. (E) Histogram comparing periods after knocking down seven negatively correlated genes in parent culture. n\u00a0\u2265\u00a03 for each gene. Error bar indicates SD. (F) QPCR results showing knockdown efficiency of seven negatively correlated genes. Error bar indicates SD. (G) Knockdown of five representative candidate genes in 10 clonal cell lines. For more information, see Figure 3\u2014source data 1.\n\n### Large-scale gene networks are associated with period heterogeneity\n\nBecause functionally related genes are usually co-expressed (Heyer et al., 1999), we further characterized the period-correlated DE genes by examining their co-expression patterns. Using weighted gene co-expression network analysis (WGCNA), we generated 31 modules from the 10 clonal cell lines RNA-seq data (Figure 4A, Figure 4\u2014source data 1). Several modules exhibited significant enrichment for period-correlated DE genes. Blue, lightgreen, green and darkred modules were enriched for positively correlated DE genes, while salmon, pink, red, and darkgreen modules were enriched for negatively correlated DE genes (Figure 4B).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/54186/elife-54186-fig4-v2.jpg)\n\n**Figure 4.:** (A) Gene co-expression modules identified via WGCNA for 10 clonal cell lines. Each branch in the dendrogram on top represents a cluster of highly correlated genes. Thirty-one modules were identified and marked by colors on the horizontal bar. Bottom row shows period-correlated DE genes identified in Figure 2a. Red bars indicate positive correlation (Pearson correlation coefficient\u00a0>0.5). Blue bars indicate negative correlation (Pearson correlation coefficient\u00a0<\u22120.5). (B) Bubble plot showing enrichment of period-correlated DE genes in each module. Rows from top to bottom indicate enrichment\u00a0of positively correlated, negatively correlated, and all period-correlated DE genes, respectively. Dark grey bars highlight the top 10 enriched modules. (C) Top five Ingenuity pathways associated with 5,137 period-correlated DE genes comparing SP and LP groups (top) or blue module (bottom). Brown threshold line refers to p-value=0.05. (D) Two small molecule activators of EIF2 signaling pathway, halofuginone and tunicamycin, significantly shortened circadian period in parent culture. Error bar indicates SD. (E) The main PPI network of genes in blue module. Disconnected nodes were hidden. Red indicates period-correlated DE genes. Line thickness indicates confidence. For more information, see Figure 4\u2014source data 1.\n\nIngenuity pathway analysis (IPA) revealed stress response signaling pathways and metabolic pathways were associated with the period-correlated DE genes, suggesting their important roles in circadian periodicity (Figure 4C, Figure 4\u2014source data 1). IPA analysis of the correlated modules also revealed overlapping functional pathways. For example, the blue module is highly enriched for DE genes, and is also enriched for the EIF2 signaling pathway, which has been recently shown to regulate circadian period, consistent with the predicted elevated translational activity in LP group (Pathak et al., 2019; Figure 4C). To validate these results further, we used two different small molecules to activate the EIF2 signaling pathway in parent culture and observed significantly shortened period, consistent with what has been previously reported (Pathak et al., 2019; Figure 4D). In addition, the darkred module was enriched for the mTOR signaling pathway; the green and salmon modules were enriched for the protein ubiquitination pathway; and the pink module was enriched for NRF2-mediated oxidative stress response pathway (Figure 4\u2014source data 1). Interestingly, all three of these pathways have been shown to be functional in circadian periodicity, further confirming the functional importance of the co-expressed gene networks (Stojkovic et al., 2014; Ramanathan et al., 2018; Wible et al., 2018). Further analysis of Protein-protein Interactions (PPI) revealed that co-expressed DE genes were also physically interconnected. For example, within the blue module there were several different tightly linked clusters, including those enriched for ribosomal RNA processing, protein ubiquitination, nucleotide and amino acid metabolism, and mRNA splicing, emphasizing the blue module as a transcriptional/translational related gene network (Figure 4E). Taken together, our results suggest that period heterogeneity is regulated by changes in large-scale functional gene co-expression networks.\n\n### Global DNA methylation contributes to gene Co-expression networks\n\nTo explore whether there was a genetic basis for heterogeneous gene expression, we performed whole-exome sequencing on SP clone#33 and LP clone#114. Interestingly, only four annotated genes carrying unique variants were identified (Supplementary file 1), but 2 of them are not expressed (Figure 2\u2014source data 1), and none of them have known circadian functions, suggesting that somatic mutations are unlikely to underlie the heterogeneous period distributions.\n\nCell-to-cell variability is also partially heritable via epigenetic modifications such as DNA methylation (Jaenisch and Bird, 2003; Jones, 2012). To assess the contribution of DNA methylation in heterogeneous circadian periodicity, we used reduced representation bisulfite sequencing (RRBS) to explore DNA methylation profiles and their correlation with the period-correlated transcriptomes. Using 1,000 bp tiling windows genome-wide, we identified 16,520 significant differentially methylated regions (DMRs). Importantly, none of the core clock genes, even the few that were differentially expressed in the parental lines, had coding mutations or differential DNA methylation, except for a small DMR spanning\u00a0~10 nucleotides located in exon 1 of Per1 (Table 2). Of the DMRs found, 62% (10,212 DMRs) were up-regulated, whereas 38% (6,308 DMRs) were down-regulated in the SP group (Figure 5A, Figure 5\u2014source data 1). 6055 genes were annotated as DMR-associated with DMRs falling in either the gene body or 5 kb upstream of the transcription start site (TSS), and of these, 1,315 DMR-associated genes overlapped with period-correlated DE genes (Figure 5B). Interestingly, for period-correlated DE genes associated with DMRs, in addition to negative correlations, we also observed positively correlated DMRs, indicating both repression and enhancement of functional gene expression by DNA methylation (Figure 5C\u2013D) as reported by others (Jones, 2012; Rinaldi et al., 2016; Yin et al., 2017b; Harris et al., 2018).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/54186/elife-54186-fig5-v2.jpg)\n\n**Figure 5.:** (A) Manhattan plot showing 16,520 significant DMRs with 1 kb bins. 10,212 DMRs were up-regulated and 6,308 DMRs were down-regulated in the SP group. (B) Area-proportional Venn diagram showing overlap between period-correlated DE genes and DMR-associated genes comparing SP and LP groups. Red indicates 5,131 period-correlated DE genes. Blue\u00a0indicates 6,055 genes associated with significant DMRs. Overlapping area represents 1,315 period-correlated DE genes associated with significant DMRs. (C) Volcano plot showing correlation coefficients (Pearson\u2019s r) between gene expression and DMR methylation for 1,315 DMR-associated DE genes. X axis indicates Pearson\u2019s r. Yellow line indicates q-value\u00a0=\u00a00.05. Turquoise indicates all significant correlations, including 618 negative and 583 positive correlations. (D) Quadrant plot showing relationship between gene expression and DNA methylation. There\u00a0were\u00a01,915 significant DMRs associated with 1,315 period-correlated DE genes. X axis indicates methylation difference of the associated DMRs. Y axis indicates fold change of averaged gene expression. Blue indicates negative correlations. Black indicates positive correlations. See also Figure 5\u2014figure supplement 1 and Figure 5\u2014source data 1.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/54186/elife-54186-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) MDS plot with Euclidean distance of RNA-seq for 10 clonal cell lines. Blue indicates SP group. Red indicates LP group. (B) PCA plot of RRBS seq for 10 clonal cell lines. Blue indicates SP group. Red indicates LP group.\n\n**Table 2.**\n Summary of Sequencing Results of Clock Genes\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Gene</th>\n      <th>DE gene (SP vs LP)</th>\n      <th>Fold change (LP/SP)</th>\n      <th>Adjusted P-Value</th>\n      <th>DE gene (SSP vs LSP)</th>\n      <th>DE gene (SLP vs LLP)</th>\n      <th>Coding mutation</th>\n      <th>DMR (SP vs LP)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Clock</td>\n      <td>Yes</td>\n      <td>0.83</td>\n      <td>6.30E-07</td>\n      <td>No</td>\n      <td>No</td>\n      <td>No</td>\n      <td>No</td>\n    </tr>\n    <tr>\n      <td>Bmal1</td>\n      <td>No</td>\n      <td>N/A</td>\n      <td>N/A</td>\n      <td>No</td>\n      <td>No</td>\n      <td>No</td>\n      <td>No</td>\n    </tr>\n    <tr>\n      <td>Per1</td>\n      <td>Yes</td>\n      <td>1.49</td>\n      <td>4.14E-05</td>\n      <td>No</td>\n      <td>No</td>\n      <td>No</td>\n      <td>Yes</td>\n    </tr>\n    <tr>\n      <td>Per2</td>\n      <td>Yes</td>\n      <td>1.74</td>\n      <td>0.05</td>\n      <td>No</td>\n      <td>No</td>\n      <td>No</td>\n      <td>No</td>\n    </tr>\n    <tr>\n      <td>Per3</td>\n      <td>No</td>\n      <td>N/A</td>\n      <td>N/A</td>\n      <td>No</td>\n      <td>No</td>\n      <td>No</td>\n      <td>No</td>\n    </tr>\n    <tr>\n      <td>Cry1</td>\n      <td>No</td>\n      <td>N/A</td>\n      <td>N/A</td>\n      <td>No</td>\n      <td>No</td>\n      <td>No</td>\n      <td>No</td>\n    </tr>\n    <tr>\n      <td>Cry2</td>\n      <td>No</td>\n      <td>N/A</td>\n      <td>N/A</td>\n      <td>No</td>\n      <td>No</td>\n      <td>No</td>\n      <td>No</td>\n    </tr>\n    <tr>\n      <td>Dbp</td>\n      <td>No</td>\n      <td>N/A</td>\n      <td>N/A</td>\n      <td>No</td>\n      <td>No</td>\n      <td>No</td>\n      <td>No</td>\n    </tr>\n    <tr>\n      <td>Npas2</td>\n      <td>No</td>\n      <td>N/A</td>\n      <td>N/A</td>\n      <td>No</td>\n      <td>No</td>\n      <td>No</td>\n      <td>No</td>\n    </tr>\n    <tr>\n      <td>Fbxl3</td>\n      <td>No</td>\n      <td>N/A</td>\n      <td>N/A</td>\n      <td>No</td>\n      <td>No</td>\n      <td>No</td>\n      <td>No</td>\n    </tr>\n    <tr>\n      <td>Fbxl21</td>\n      <td>No</td>\n      <td>N/A</td>\n      <td>N/A</td>\n      <td>No</td>\n      <td>No</td>\n      <td>No</td>\n      <td>No</td>\n    </tr>\n    <tr>\n      <td>Nr1d1</td>\n      <td>No</td>\n      <td>N/A</td>\n      <td>N/A</td>\n      <td>No</td>\n      <td>No</td>\n      <td>No</td>\n      <td>No</td>\n    </tr>\n    <tr>\n      <td>Nr1d2</td>\n      <td>Yes</td>\n      <td>0.63</td>\n      <td>1.56E-04</td>\n      <td>No</td>\n      <td>No</td>\n      <td>No</td>\n      <td>No</td>\n    </tr>\n    <tr>\n      <td>Csnk1a1</td>\n      <td>Yes</td>\n      <td>1.29</td>\n      <td>5.38E-03</td>\n      <td>No</td>\n      <td>No</td>\n      <td>No</td>\n      <td>No</td>\n    </tr>\n    <tr>\n      <td>Csnk1d</td>\n      <td>No</td>\n      <td>N/A</td>\n      <td>N/A</td>\n      <td>No</td>\n      <td>No</td>\n      <td>No</td>\n      <td>No</td>\n    </tr>\n    <tr>\n      <td>Csnk1e</td>\n      <td>Yes</td>\n      <td>1.16</td>\n      <td>0.05</td>\n      <td>No</td>\n      <td>No</td>\n      <td>No</td>\n      <td>No</td>\n    </tr>\n    <tr>\n      <td>Csnk2a1</td>\n      <td>No</td>\n      <td>N/A</td>\n      <td>N/A</td>\n      <td>No</td>\n      <td>No</td>\n      <td>No</td>\n      <td>No</td>\n    </tr>\n    <tr>\n      <td>Csnk2a2</td>\n      <td>No</td>\n      <td>N/A</td>\n      <td>N/A</td>\n      <td>No</td>\n      <td>No</td>\n      <td>No</td>\n      <td>No</td>\n    </tr>\n  </tbody>\n</table>\n\nThe overall clustering pattern of the methylomes resembled that of the transcriptomes, indicating an important role for global DNA methylation in regulating the co-expressed genes (Figure 5\u2014figure supplement 1). We examined the modules enriched for period-correlated DE genes and found that several hub genes were regulated by differential DNA methylation. For example, the hub gene of the blue module, Htatip2, which exhibited the same expression pattern of the module eigengene (Figure 6A\u2013B), was hypermethylated at the promoter region and repressed in the SP group (Figure 6C\u2013D). On the contrary, Parvb and Rftn1, two hub genes from negatively correlated modules, were hypermethylated and repressed in the LP group (Figure 6A\u2013D). Except for these negative correlations, some genes with hypermethylation in the gene body or enhancer showed enhanced expression levels (Figure 6\u2014figure supplement 1), supporting recent findings that DNA methylation in these regions may activate gene expression (Jones, 2012; Rinaldi et al., 2016; Yin et al., 2017b). To validate the function of DMR-associated DE genes further, we also performed gene knockdown experiments in two different clonal cell lines. Knockdown of Htatip2 and Dusp18 in LP clone#114 significantly shortened period, whereas knockdown of Rftn1 in SP clone#128 significantly lengthened circadian period (Figure 6E), consistent with predictions that deficiency of Htatip2 shortens circadian period possibly by activating the AKT/mTOR signaling pathway (Yin et al., 2017a; Ramanathan et al., 2018), and that hypomethylation and upregulated expression of Dusp18 lengthens circadian period, possibly by inhibiting the SAPK/JNK signaling pathway (Wu et al., 2006; Chansard et al., 2007; Yoshitane et al., 2012).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/54186/elife-54186-fig6-v2.jpg)\n\n**Figure 6.:** (A) Eigengene expression patterns in four top period-associated modules. Blue and lightgreen modules are enriched in positively correlated DE genes with up-regulated gene expression in LP group. Salmon and pink modules are enriched in negatively correlated DE genes with down-regulated gene expression in the LP group. (B) Gene expression plot for hub genes of four modules shown in a): Htatip2, Dusp18, Parvb and Rftn1. Each clonal cell line includes four data points (two time-points, two replicates). (C) UCSC genome browser view of DNA methylation at promoter regions of the four hub genes. Red indicates methylated C. Blue indicates unmethylated C. Arrows indicate the direction of transcription. Track height from left to right: 50,\u201350; 100,\u201380; 45,\u201360; 70,\u201380. (D) Scatter plot showing correlation between gene expression and DNA methylation at the promoter regions of the four hub genes. X axis indicates average methylation level of the associated DMRs for each clonal cell line. Y axis indicates gene expression level of two replicates at timepoint T1. Trendline and R2 of Pearson correlation coefficient are shown. Blue indicates SP group. Red indicates LP group. DMR loci for each gene are listed as below: Htatip2: chr7:49759001\u201349760000; Dusp18: chr11:3894001\u20133896000. Parvb: chr15:84232001\u201384233000; Rftn1: chr17:50190001\u201350191000. (E) Knockdown effect of four DMR associated DE genes in different clonal cells. Left: Htatip2 and Dusp18 knockdown in LP clone#114. Right: Parvb and Rftn1 knockdown in SP clone#128. n\u00a0\u2265\u00a03 for each experiment. Error bar indicates SD. See also Figure 6\u2014figure supplement 1.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/54186/elife-54186-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (A) Gene expression plot for Nkx2-5 and Dlx6. Each clonal cell line includes four data points (two time-points, two replicates). (B) UCSC genome browser view of DNA methylation at their promoter regions. Red indicates methylated C. Blue indicates unmethylated C. Arrows indicate the direction of transcription. Track height from left to right:150,\u2013180; 150,\u2013300.\n\n### Opposite effects of different DNMTs on circadian period\n\nTo assess the role of DNA methylation in circadian periodicity further, we manipulated global DNA methylation either by knocking down DNA methyltransferases or by applying small molecule inhibitors. Interestingly, deficiency of Dnmt1 significantly shortened period length, whereas knockdown of Dnmt3a slightly, but significantly, lengthened period (Figure 7A\u2013B). Dnmt1 and Dnmt3a knockdown in the ten clonal cell lines showed the same overall results, suggesting that DNA methylation affects circadian periodicity in the same way in all clones tested (Figure 7C). As pharmacological validation, administration of SGI-1027, which selectively induces degradation of the DNMT1 protein (Datta et al., 2009), significantly shortened period, while administration of zebularine, which induces significant reduction of both DNMT1 and DNMT3A (Billam et al., 2010; You and Park, 2012), lengthened period (Figure 7D). Drug administration in primary MEF cells with PER2::LUCsv and NIH3T3 cells carrying an E2-box-luc reporter also revealed similar results (Figure 7E). Taken together, these findings suggest that different DNA methyltransferases contribute to the regulation of circadian periodicity, likely via different mechanisms.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/54186/elife-54186-fig7-v2.jpg)\n\n**Figure 7.:** (A) Effects of knockdown of DNMT1 in parent culture. Left: baseline-subtracted LumiCycle traces of a typical experiment; middle: comparison of average period from\u00a0\u22653 experiments; right: qPCR results showing knockdown efficiency. Error bar indicates SD. (B) Effects of knockdown of DNMT3A. (C) Effects of knockdown of DNMT1 and DNMT3A in 10 clonal cell lines. Left: comparison of period length from\u00a0\u22653 experiments. Right: qPCR results showing knockdown efficiency. Error bar indicates SD. (D) Administration of different DNA methyltransferase inhibitors in parent culture altered period length. Left: SGI-1027. Right: zebularine. n\u00a0\u2265\u00a03 for each experiment. Error bar indicates SD. (E) Administration of different DNA methyltransferase inhibitors in primary mouse embryonic fibroblasts (MEFs) or NIH3T3 cells altered period length. Left: MEF. Right: NIH3T3. n\u00a0\u2265\u00a03 for each experiment. Error bar indicates SD.\n\n## Discussion\n\nUsing clonal cell analysis, we show that the heterogeneity of single-cell circadian periodicity is heritable and stable for at least 20 cell passages. The heritability of circadian period is consistent with an epigenetic mechanism, likely mediated by DNA methylation. By analyzing gene expression profiles of multiple clonal cell lines with different circadian periods, we identified groups of differentially expressed genes that were significantly correlated with period length. Although a few core clock genes were differentially expressed in parental cultures, there were no significant differences in these genes among subclones, suggesting they are not responsible for the period heterogeneity seen in these homogeneous cell populations. By comparing subclones, we narrowed down the common candidate gene list and further validated that 86% of the novel candidates regulated circadian period using gene knockdown assays. While some of these genes had effects on period length that were aligned with our predictions, others had effects counter to our expectations which were probably masked in the complex gene networks. Overall, our results are consistent with the hypothesis that period is determined by the ensemble interactions of many genes that can either shorten or lengthen period individually. Importantly, the vast majority of the DE genes identified here have never been reported as having effects on circadian period. Thus, we have provided a new pool of candidate genes functioning in circadian periodicity.\n\nWe also provide evidence that the genome-wide DNA methylation landscape underlies much of the complex gene networks. Multiple hub genes of period-correlated modules were under the regulation of DNA methylation, showing remarkable coherence in DNA methylation, gene expression, and circadian phenotype. The similar clustering patterns of transcriptomes and methylomes further suggested an important role of DNA methylation in shaping circadian period heterogeneity through regulating large-scale gene networks. Previous studies have linked DNA methylation of core clock genes with different diseases (Joska et al., 2014; Peng et al., 2019); however, the results presented here have revealed how global DNA methylation can regulate circadian clock function via genome-wide changes in gene expression. Our whole exome sequencing failed to detect significant coding mutations, further supporting the role of differential DNA methylation in establishing circadian heterogeneity. However, we cannot rule out that genetic variation in regulatory regions, or other epigenetic modifications could be involved. Additional experiments will help to understand better the full array of underlying mechanisms regulating circadian period.\n\nWe observed both negatively and positively correlated DMRs in almost equal proportions, indicating both repression and activation of gene expression by DNA methylation and supporting the revised view of the functions of DNA methylation (Greenberg and Bourc'his, 2019). In addition, we found that knockdown of DNMT1 and DNMT3A had opposite effects on circadian period. It is not surprising that DNMT1 knockdown alters period length, since it is the methyltransferase responsible for DNA methylation maintenance through mitotic inheritance (Jones, 2012). However, as DNMT3A is responsible for de novo DNA methylation, it is less clear how its knockdown affects circadian period. One possibility is that DNMT3A is also involved in transcriptional activation associated with active enhancers (Rinaldi et al., 2016; Lyko, 2018). Another possibility is that some genes might undergo dynamic demethylation and de novo methylation since both Tet2 and Tet3 are expressed at comparable levels to Dnmt3a in our cellular system (Oh et al., 2018; Oh et al., 2019; Figure 2\u2014source data 1). Additional studies targeting DNMT1 and DNMT3A may help to explain the functions of different DNMTs in circadian regulation.\n\nIn conclusion, our findings have identified a novel pool of candidate genes involved in circadian period regulation, and have revealed the important role of DNA methylation underlying circadian period heterogeneity by bidirectionally regulating large-scale gene co-expression networks. Our study not only expands the knowledge about circadian clock regulation, but also may benefit epigenetic research by providing multiple candidate genes repressed or activated by DNA methylation.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Cell line (M. musculus, male)</td>\n      <td>Per2::lucSV EF</td>\n      <td>(Chen et al., 2012; Yoo et al., 2017)</td>\n      <td></td>\n      <td>Immortalized mouse ear fibroblast cells carrying PER2::LUCsv bioluminescence reporter</td>\n    </tr>\n    <tr>\n      <td>Cell line (Human)</td>\n      <td>HEK293T</td>\n      <td>ATCC</td>\n      <td>CRL-3216</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cell line (M. musculus)</td>\n      <td>Per2::lucSV MEF</td>\n      <td>This paper</td>\n      <td></td>\n      <td>Primary mouse embryonic fibroblast cells carrying PER2::LUCsv bioluminescence reporter</td>\n    </tr>\n    <tr>\n      <td>Cell line (M. musculus)</td>\n      <td>NIH3T3/E2LB</td>\n      <td>This paper</td>\n      <td></td>\n      <td>NIH3T3 cells carrying Per2 E-box (E2)-driven luciferase bioluminescence reporter</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pLKO.1-TRC</td>\n      <td>(Moffat et al., 2006) Addgene</td>\n      <td>Plasmid #10878</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>RRBS kit</td>\n      <td>Diagenode</td>\n      <td>Cat#C02030033</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>RNA-seq for all clonal cell lines</td>\n      <td>This paper</td>\n      <td></td>\n      <td>https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE132663</td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>RRBS-seq for 10 clonal cell lines</td>\n      <td>This paper</td>\n      <td></td>\n      <td>https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE132665</td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>Exome sequencing for clone#33 and #114</td>\n      <td>This paper</td>\n      <td></td>\n      <td>https://www.ncbi.nlm.nih.gov/sra/PRJNA548837</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>FastQC</td>\n      <td>other</td>\n      <td></td>\n      <td>https://www.bioinformatics.babraham.ac.uk/projects/fastqc/</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>TopHat</td>\n      <td>(Trapnell et al., 2009)</td>\n      <td></td>\n      <td>http://ccb.jhu.edu/software/tophat/index.shtml</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Samtools</td>\n      <td>(Li et al., 2009)</td>\n      <td></td>\n      <td>http://www.htslib.org/</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>HOMER</td>\n      <td>(Heinz et al., 2010)</td>\n      <td></td>\n      <td>http://homer.ucsd.edu/homer/</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>DESeq2</td>\n      <td>(Love et al., 2014)</td>\n      <td></td>\n      <td>https://bioconductor.org/packages/release/bioc/html/DESeq2.html</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>edgeR</td>\n      <td>(Robinson et al., 2010)</td>\n      <td></td>\n      <td>https://bioconductor.org/packages/release/bioc/html/edgeR.html</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>featureCounts</td>\n      <td>(Liao et al., 2014)</td>\n      <td></td>\n      <td>http://bioinf.wehi.edu.au/featureCounts/</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>WGCNA</td>\n      <td>(Langfelder and Horvath, 2008)</td>\n      <td></td>\n      <td>https://cran.r-project.org/web/packages/WGCNA/index.html</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Trim Galore</td>\n      <td>other</td>\n      <td></td>\n      <td>https://www.bioinformatics.babraham.ac.uk/projects/trim_galore/</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Bismark</td>\n      <td>(Krueger and Andrews, 2011)</td>\n      <td></td>\n      <td>https://www.bioinformatics.babraham.ac.uk/projects/bismark/</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>methylKit</td>\n      <td>(Akalin et al., 2012)</td>\n      <td></td>\n      <td>https://bioconductor.org/packages/release/bioc/html/methylKit.html</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>STRING</td>\n      <td>(Szklarczyk et al., 2019)</td>\n      <td></td>\n      <td>https://string-db.org/</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>MeV</td>\n      <td>other</td>\n      <td></td>\n      <td>https://sourceforge. net/projects/mev-tm4/</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>ggplot2</td>\n      <td>(Wickham, 2016)</td>\n      <td></td>\n      <td>https://github.com/tidyverse/ggplot2</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>qqman</td>\n      <td>(Turner, 2014)</td>\n      <td></td>\n      <td>https://github.com/stephenturner/qqman</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>dplyr</td>\n      <td>(Wickham et al., 2018)</td>\n      <td></td>\n      <td>https://dplyr.tidyverse.org</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Ingenuity Pathway Analysis</td>\n      <td>Qiagen</td>\n      <td></td>\n      <td>https://www.qiagenbioinformatics.com/products/ingenuity-pathway-analysis</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>ImageJ2 (Fiji) with trackmate</td>\n      <td>NIH</td>\n      <td></td>\n      <td>https://imagej.net/ImageJ2</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>BioVenn</td>\n      <td>(Hulsen et al., 2008)</td>\n      <td></td>\n      <td>http://www.biovenn.nl/</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Prism</td>\n      <td>GraphPad Software</td>\n      <td></td>\n      <td>https://www.graphpad.com/scientific-software/prism/</td>\n    </tr>\n  </tbody>\n</table>\n\n### Generation of clonal cell lines and cell culture\n\nImmortalized mouse ear fibroblast cells from male mice carrying PER2::LUCsv bioluminescence reporter were maintained in DMEM (Corning) supplemented with 10% fetal bovine serum (FBS). To generate clonal cell lines, cells were diluted and seeded at a density of\u00a0~30 cells per 96-well plate with conditioned medium. Each well was monitored on a daily basis to make sure only single colonies were picked. 20 clonal cell lines were randomly selected and cultured continuously for 20 generations (3 days/generation) to verify stability of circadian period. Primary mouse embryonic fibroblast (MEF) cells carrying PER2::LUCsv bioluminescence reporter were isolated from 13.5 day mouse embryos. NIH3T3 cells stably expressing Per2 E-box (E2)-driven luciferase bioluminescence reporter were established by lentivirus transduction followed by blasticidin selection. Our cell line stocks have all tested negative for mycoplasma contamination. For authentication of cell lines, as described below, two clonal cell lines, #33 and #114, were sequenced by whole exome sequencing; and a total of 34 clones and subclones were assessed by RNA-seq and were found to be valid.\n\n### Bioluminescence imaging and data analysis\n\nTo measure luminescence rhythms from 35 mm culture dishes, confluent cells were synchronized with 100 nM dexamethasone for 2 hr, then changed to HEPES-buffered recording medium containing 2% FBS (Welsh et al., 2004), and loaded into a LumiCycle luminometer (Actimetrics). The period was analyzed with LumiCycle Analysis program (Actimetrics). All LumiCycle period analysis results shown in this paper were averages of\u00a0\u22653 experiments. Baseline-subtracted signals were exported to Excel to generate bioluminescence traces.\n\nFor single-cell imaging, cells were changed to recording medium containing 2% B27% and 1% FBS without dexamethasone synchronization. An inverted microscope (Leica DM IRB) in a heated lucite chamber custom-engineered to fit around the microscope stage (Solent Scientific, UK) kept the cells at a constant 36\u00b0C was mounted on an anti-vibration table (TMC) equipped with a 10X objective. A cooled CCD camera with backside illuminated E2V CCD 42\u201340, 2048 \u00d7 2048 pixel, F-mount adapter, \u2212100\u00b0C cooling (Series 600, Spectral Instruments) was used to capture the luminescence signal at 30 min intervals, with 29.6 min exposure duration, for at least 12 days. 8 \u00d7 8 binning was used to increase the signal-to-noise ratio. The bioluminescence signal of each single cell, outlined with a region of interest (ROI), was tracked using ImageJ (Schindelin et al., 2012; Rueden et al., 2017) with the Trackmate plugin (Tinevez et al., 2017) and analyzed as described previously (Li et al., 2020).\n\n### Next generation sequencing and data analysis\n\nFor exome sequencing, two clonal cell lines #33 and #114 were sequenced representing short period and long period clones, respectively. Genomic DNA was purified using a ChargeSwitch gDNA Mini Tissue Kit (Invitrogen). Libraries were made using the SureSelectXT Reagent Kit (Agilent) following the manufacturer\u2019s instruction. All reads were mapped to mm10 genome assembly. We used HaplotypeCaller and UnifiedGenotyper from GATK to call variants and the results were the union of both callers. SnpEff was used to annotate variants. Results were further filtered as follows: threshold GQ\u00a0\u2265\u00a020, total counts\u00a0\u2265\u00a08, and alternate frequency (defined as the ratio of alternates to total counts)\u226530%.\n\nFor RNA-seq, cells were collected at two time-points after synchronization: the first peak (T1) and the following trough (T2) based on LumiCycle recording. At each time-point, we collected 2 replicates for 10 clonal cell lines and 1 replicate for 24 subclones. RNA was isolated using TRIzol (Life technologies), and libraries were prepared as described previously\u00a0(Takahashi et al., 2015). Raw reads were tested for quality using FastQC. The resulting reads were mapped to mm10 annotation from UCSC using TopHat (Trapnell et al., 2009). The output BAM file was then filtered for uniquely mapped reads using Samtools (Li et al., 2009), and RPKM calculations were performed using analyzeRepeats.pl of HOMER suite (Heinz et al., 2010).\n\nThe average RPKM value for each gene was calculated separately for each of the six groups (SP, LP, SSP, LSP, SLP, LLP). To identify significant DE genes, the list was further filtered based on expression level. Only genes for which the maximum average RPKM value among six groups was greater than 0.5 were preserved. Differential gene expression analysis was carried out with DESeq2 (Love et al., 2014) and edgeR (Robinson et al., 2010) using a raw read counts matrix generated with featureCounts tool (Liao et al., 2014). Genes with FDR\u00a0<\u00a00.05 were deemed significant. Results from both programs were combined to generate a final DE gene list. Pearson correlation coefficient between circadian period length and gene expression was calculated across all 88 samples (including replicates and different time-points) in Excel. P-value was adjusted using Benjamini-Hochberg (BH) method, and FDR\u00a0<\u00a00.05 was considered as significant. The overlaps between significant DE genes and period-correlated genes were defined as period-correlated DE genes. Multidimensional scaling (MDS) analysis with Euclidean distance was performed using edgeR. Ingenuity Pathway Analysis (Qiagen) was used to identify the pathways associated with period-correlated DE genes, using all expressed 22,786 genes (average RPKM\u00a0>0) as a reference set.\n\nFor DNA methylation sequencing, cells were collected at the first peak (T1) after synchronization. Each clone included two replicates. DNA was purified using a PureLink Genomic DNA Mini Kit (Invitrogen). Libraries were made using the Premium Reduced Representation Bisulfite Sequencing (RRBS) Kit (Diagenode) following the manufacturer\u2019s instruction. Raw reads were tested for quality using FastQC and trimmed with Trim Galore. The trimmed reads were aligned to mm10 using Bismark (Krueger and Andrews, 2011). The CpG reports from Bismark methylation extractor were then analyzed using methylKit (Akalin et al., 2012). We used default settings to discard bases that had coverage below 10X and/or more than 99.9th percentile of coverage in each sample. Differentially methylated regions (DMR) were identified using a tiling window of 1,000 bp and a step size of 1,000 bp comparing SP and LP group. Clone#44 was excluded for DMR analysis because of the outlying clustering (Figure 5\u2014figure supplement 1). Overdispersion correction with Fisher\u2019s extract test was applied. P-value was adjusted with BH method. DMRs with FDR\u00a0<\u00a00.05 and methylation difference\u00a0>25% were considered as significant. Genes with significant DMRs located either in the gene body or 5 kb upstream of the transcription start site (TSS) were considered as DMR-associated genes. Principal component analysis (PCA) was performed using methylKit. All sequencing was performed by the UTSW McDermott Sequencing Core Facility.\n\n### Weighted Gene Co-expression Network Analysis (WGCNA)\n\nWeighted gene co-expression network analysis was performed using WGCNA package (Langfelder and Horvath, 2008). Only genes for which the maximum average RPKM value among six groups was greater than 0.5 RPKM were used. A soft-threshold power was automatically calculated to achieve approximate scale-free topology (R2 >0.85). Networks were constructed with blockwiseModules function with biweight midcorrelation (bicor). We used corType = bicor, networkType = signed, TOMtype = signed, TOMDenom = mean, maxBlockSize = 16000, mergingThresh = 0.10, minCoreKME = 0.4, minKMEtoStay = 0.5, reassignThreshold = 1e-10, deepSplit = 4, detectCutHeight = 0.999, minModuleSize = 100, power = 26. The modules were then determined using the dynamic tree-cutting algorithm. Deep split of 4 was used to split more aggressively the data and create more specific modules. Spearman\u2019s rank correlation was used to compute module eigengene \u2013 covariates associations. Gene set enrichment applied for module \u2013 period-correlated DE genes was performed using a Fisher\u2019s exact test in R with the following parameters: alternative = \u2018greater\u2019, conf.level = 0.99. The PPI network was generated using STRING without textmining, and the minimum required interaction score was 0.7 (Szklarczyk et al., 2019).\n\nGene Knockdown Assay shRNA sequences were cloned into pLKO.1-TRC vector (gift from David Root, Addgene plasmid # 10878)\u00a0(Moffat et al., 2006). Scramble shRNA (5\u2019 -CCTAAGGTTAAGTCGCCCTCG- 3\u2019) was used as control. Lentiviruses were produced using HEK293T cells as described previously (Huang et al., 2012). Viruses were harvested twice after transfection, at 48 and 72 hr, to infect fibroblasts. Forty-eight hours after first infection, cells were synchronized and loaded for LumiCycle analysis. RNA was extracted at the first peak after synchronization to check knockdown efficiency via qPCR. Average of three reference genes (Gapdh, Hprt and Ywhaz) served as internal control. See Supplementary files 2 and 3 for shRNA target sequences and primer sequences, respectively.\n\n### Drug treatment\n\nThe EIF2 signaling pathway activator halofuginone (Sigma-Aldrich) was dissolved in DMSO as 10 mM stock and used at 50 nM. Tunicamycin (Sigma-Aldrich) was dissolved in DMSO as 5 mg/ml stock and used at 5 \u00b5g/ml. Cells were treated for 4 hr and 6 hr, respectively, before loading for LumiCycle analysis. DNMT inhibitor SGI-1027 (Sigma-Aldrich) was dissolved in DMSO as 200 mM stock and used at 10 \u00b5M. Zebularine (Sigma-Aldrich) was dissolved in water as 200 mM stock and used at 50 \u00b5M or 100 \u00b5M. The parent culture was continuously treated for up to 60 days and split when necessary. MEFs and NIH3T3 cells were treated for 3 days.\n\n### Quantification and statistical analysis\n\nStatistical analysis of single-cell imaging was performed with a Python code as described previously (Li et al., 2020). Student\u2019s T-test and two tailed F-test were performed in Excel. P-values were adjusted using Benjamini-Hochberg (BH) method. Two-way ANOVA analysis with multiple comparisons via Tukey test was performed using GraphPad Prism. Heatmaps for single-cell imaging analysis and gene expression were generated using MeV based on z-score. GraphPad prism was used to generate heatmaps for T-test and F-test based on log transformed q-value. Volcano plot was generated in R using ggplot2 (Wickham, 2016). Venn diagrams were generated using BioVenn (Hulsen et al., 2008). Manhattan plots were generated in R using qqman (Turner, 2014). Quadrant plots were generated using dplyr package in R.\n",
+      "created_at": "2025-12-02T17:24:43.923554Z"
+    },
+    {
+      "id": "ea6763d9-8cc4-414c-8509-56e2492a8c45",
+      "submission_id": "9126da46-755b-4872-89ea-826ea4955617",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Amita Sehgal, Howard Hughes Medical Institute, University of Pennsylvania United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.54186.sa1](https://doi.org/10.7554/eLife.54186.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nThe manuscript from the Takahashi laboratory uses a culture model to investigate mechanisms underlying cell-to-cell variations in circadian period. The authors find that periodicity is a stable, heritable phenotype, and differences in period correlate with changes in gene expression. DNA methylation is implicated as a significant source of period variability across cells/clones.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Epigenetic Inheritance of Circadian Period in Clonal Cells\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Catherine Dulac as the Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Salvador Aznar Benitah (Reviewer #2); Michael Rosbash (Reviewer #3).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThe manuscript from the Takahashi laboratory investigates the mechanism underlying differences in circadian period across cultured fibroblasts. The authors generated clonal populations of varying circadian period and find that periodicity is a stable, heritable phenotype. Transcriptomic analysis of short and long period clones identified genes whose expression correlates with period, and knockdown of most of these genes affects circadian period, albeit not necessarily in the direction predicted by the correlational analysis. Finally, differences in methylation are proposed as the basis of period alterations.\n\nEssential revisions:\n\nThe reviewers found the study of interest, but noted a few concerns. First, it is critical that the authors establish a/the mechanism that accounts for the differences in period across clones. As currently presented, genes showing a correlation with period are knocked down in the parent culture and, as noted above, their effects on period are in the opposite direction from what one would predict. It is also surprising that so many of them affect period, raising the question of whether uncorrelated genes would also show effects on period. Reviewers recommend that knockdown (or perhaps over-expression) be conducted in isolated clones or sub-clones to \"rescue\" the differences in period. Inclusion of uncorrelated genes would demonstrate specificity. If the opposite effects on period result from multiple genes acting together, as claimed by the authors, then they should be able to manipulate pathways to nail the mechanism. Finally, to better integrate the methylation analysis, it would be good to see changes in methylation linked to the specific genes manipulated, and not to correlated networks in general.\n\nKnockdown of DNMTs in clones would also be informative.\n\nRelated to the above point, correlation and knockdown data should be included in the main text (and not the supplement).\n\nThe second major point raised by reviewers concerns the relevance of these findings to other systems. Ideally, this would be demonstrated in vivo, or at least in primary cells, but recognizing the amount of time these experiments would take, examples in other cell types would suffice.\n",
+      "created_at": "2025-12-02T17:24:43.923554Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T17:24:43.923554Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T17:24:43.923554Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "2cc45bb5-4a5a-4f78-a7c3-281670f8a0ce",
+      "content_id": "65e6aa00-744b-4fbe-ae43-2c9f5bbfc7ad",
+      "claim_id": "C1",
+      "claim": "Individual cells from fibroblast cell lines have heterogeneous rhythms, oscillating independently and with different period lengths.",
+      "claim_type": "EXPLICIT",
+      "source": "However, individual cells from fibroblast cell lines have heterogeneous rhythms, oscillating independently and with different period lengths.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the abstract as a known phenomenon that motivates the study.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:24:43.923554Z"
+    },
+    {
+      "id": "f813e073-294f-46cd-910b-ac42bee5d452",
+      "content_id": "65e6aa00-744b-4fbe-ae43-2c9f5bbfc7ad",
+      "claim_id": "C2",
+      "claim": "Heterogeneity in circadian period is heritable.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we showed that heterogeneity in circadian period is heritable and used a multi-omics approach to investigate underlying mechanisms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the abstract and supported by experimental data throughout the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:24:43.923554Z"
+    },
+    {
+      "id": "da632917-6e23-41c6-ac19-c33df9e208fd",
+      "content_id": "65e6aa00-744b-4fbe-ae43-2c9f5bbfc7ad",
+      "claim_id": "C3",
+      "claim": "Multiple novel candidate genes are involved in circadian period determination in the absence of significant genomic variants.",
+      "claim_type": "EXPLICIT",
+      "source": "By examining large-scale phenotype-associated gene expression profiles in hundreds of mouse clonal cell lines, we identified and validated multiple novel candidate genes involved in circadian period determination in the absence of significant genomic variants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the abstract and supported by RNA-seq data and knockdown experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:24:43.923554Z"
+    },
+    {
+      "id": "d1b2a1a3-f46e-4c25-8879-88e3f05a45a7",
+      "content_id": "65e6aa00-744b-4fbe-ae43-2c9f5bbfc7ad",
+      "claim_id": "C4",
+      "claim": "Differentially co-expressed gene networks are functionally associated with period length.",
+      "claim_type": "EXPLICIT",
+      "source": "We also discovered differentially co-expressed gene networks that were functionally associated with period length.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by WGCNA analysis and pathway enrichment data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:24:43.923554Z"
+    },
+    {
+      "id": "ee5942e1-6908-4414-b408-80c7a9b4164c",
+      "content_id": "65e6aa00-744b-4fbe-ae43-2c9f5bbfc7ad",
+      "claim_id": "C5",
+      "claim": "Global differential DNA methylation bidirectionally regulates gene networks associated with circadian period.",
+      "claim_type": "EXPLICIT",
+      "source": "We further demonstrated that global differential DNA methylation bidirectionally regulated these same gene networks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the abstract and supported by RRBS sequencing data showing both positive and negative correlations between methylation and gene expression.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:24:43.923554Z"
+    },
+    {
+      "id": "076e9732-61b0-4487-84c3-77554a4b9e1c",
+      "content_id": "65e6aa00-744b-4fbe-ae43-2c9f5bbfc7ad",
+      "claim_id": "C6",
+      "claim": "Depletion of DNMT1 and DNMT3A have opposite effects on circadian period.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, we found that depletion of DNMT1 and DNMT3A had opposite effects on circadian period, suggesting non-redundant roles in circadian gene regulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by knockdown experiments shown in Figure 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:24:43.923554Z"
+    },
+    {
+      "id": "15a45eb0-00dc-4b58-9c97-d4f7672a5b4a",
+      "content_id": "65e6aa00-744b-4fbe-ae43-2c9f5bbfc7ad",
+      "claim_id": "C7",
+      "claim": "DNMT1 and DNMT3A have non-redundant roles in circadian gene regulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, we found that depletion of DNMT1 and DNMT3A had opposite effects on circadian period, suggesting non-redundant roles in circadian gene regulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the opposite effects of DNMT1 and DNMT3A knockdown on circadian period.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:24:43.923554Z"
+    },
+    {
+      "id": "c55151d9-bd55-4208-862b-ea445771c644",
+      "content_id": "65e6aa00-744b-4fbe-ae43-2c9f5bbfc7ad",
+      "claim_id": "C8",
+      "claim": "DNA methylation is an important regulator of circadian periodicity.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, our findings identify novel gene candidates involved in periodicity, and reveal DNA methylation as an important regulator of circadian periodicity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion stated in the abstract, supported by multiple lines of evidence including RRBS data and DNMT knockdown experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:24:43.923554Z"
+    },
+    {
+      "id": "40b5cd7a-f61e-4fd2-8388-63f1ef1d6943",
+      "content_id": "65e6aa00-744b-4fbe-ae43-2c9f5bbfc7ad",
+      "claim_id": "C9",
+      "claim": "Circadian oscillations are generated via transcriptional-translational negative feedback loops.",
+      "claim_type": "EXPLICIT",
+      "source": "Circadian oscillations are generated via transcriptional-translational negative feedback loops.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge in the abstract.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:24:43.923554Z"
+    },
+    {
+      "id": "77f563df-ef9b-4c9e-9d73-284fd9cbb3ce",
+      "content_id": "65e6aa00-744b-4fbe-ae43-2c9f5bbfc7ad",
+      "claim_id": "C10",
+      "claim": "Disruptions of the circadian clock have been linked with various disease processes and aging.",
+      "claim_type": "EXPLICIT",
+      "source": "Disruptions of the circadian clock have been linked with various disease processes and aging (Takahashi et al., 2008; Kondratova and Kondratov, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:24:43.923554Z"
+    },
+    {
+      "id": "53691876-dffa-4010-a4d0-47eafa1ca274",
+      "content_id": "65e6aa00-744b-4fbe-ae43-2c9f5bbfc7ad",
+      "claim_id": "C11",
+      "claim": "The core circadian network in mammals is composed of an autoregulatory transcriptional negative feedback loop involving Clock, Bmal1, Per1/Per2, and Cry1/Cry2.",
+      "claim_type": "EXPLICIT",
+      "source": "In mammals, the core of this network is composed of an autoregulatory transcriptional negative feedback loop involving Clock, Bmal1, Per1/Per2, and Cry1/Cry2, and there are additional feedback loops interlocked with the core (Takahashi et al., 2008; Mohawk et al., 2012; Takahashi, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:24:43.923554Z"
+    },
+    {
+      "id": "42d1a3cf-1166-4ad8-978b-8eebe0e0ebe0",
+      "content_id": "65e6aa00-744b-4fbe-ae43-2c9f5bbfc7ad",
+      "claim_id": "C12",
+      "claim": "Individual cells often do not maintain a perfect 24 hr circadian period.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, although the cell-autonomous clock is ubiquitous, individual cells often do not maintain a perfect 24 hr circadian period, and within cell populations there are heterogeneous autonomous oscillations with a broad distribution of period length (Nagoshi et al., 2004; Welsh et al., 2004; Leise et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:24:43.923554Z"
+    },
+    {
+      "id": "a2830667-24cb-4d31-8461-ed68651e8dab",
+      "content_id": "65e6aa00-744b-4fbe-ae43-2c9f5bbfc7ad",
+      "claim_id": "C13",
+      "claim": "Within cell populations there are heterogeneous autonomous oscillations with a broad distribution of period length.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, although the cell-autonomous clock is ubiquitous, individual cells often do not maintain a perfect 24 hr circadian period, and within cell populations there are heterogeneous autonomous oscillations with a broad distribution of period length (Nagoshi et al., 2004; Welsh et al., 2004; Leise et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:24:43.923554Z"
+    },
+    {
+      "id": "c90a0c96-8392-4934-85da-243247d9c811",
+      "content_id": "65e6aa00-744b-4fbe-ae43-2c9f5bbfc7ad",
+      "claim_id": "C14",
+      "claim": "Heterogeneity in intrinsic period of hypothalamic suprachiasmatic nucleus (SCN) neurons confers important functions of phase liability and phase plasticity.",
+      "claim_type": "EXPLICIT",
+      "source": "The heterogeneity in intrinsic period of hypothalamic suprachiasmatic nucleus (SCN) neurons confers important functions of phase liability and phase plasticity (Welsh et al., 1995; Liu et al., 1997; Ko et al., 2010; Mohawk et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:24:43.923554Z"
+    },
+    {
+      "id": "5850c93c-96af-4b82-8ae1-ec5f2b558f2e",
+      "content_id": "65e6aa00-744b-4fbe-ae43-2c9f5bbfc7ad",
+      "claim_id": "C15",
+      "claim": "Nonheritable noise is the predominant source of intercellular variation in circadian period within clonal cell lines.",
+      "claim_type": "EXPLICIT",
+      "source": "We have recently shown that nonheritable noise is the predominant source of intercellular variation in circadian period within clonal cell lines (Li et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to the authors' previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:24:43.923554Z"
+    },
+    {
+      "id": "7fd82cf5-8c7b-4fa8-8d4f-44f358928b12",
+      "content_id": "65e6aa00-744b-4fbe-ae43-2c9f5bbfc7ad",
+      "claim_id": "C16",
+      "claim": "DNA methylation has been recognized as a chief contributor to gene expression states.",
+      "claim_type": "EXPLICIT",
+      "source": "DNA methylation has been recognized as a chief contributor to gene expression states, and it is essential for mammalian embryonic development, with genome-wide methylation patterns changing during differentiation (Greenberg and Bourc'his, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by a citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:24:43.923554Z"
+    },
+    {
+      "id": "75ebc06b-fe8d-4840-a4ba-fab4fffed4d1",
+      "content_id": "65e6aa00-744b-4fbe-ae43-2c9f5bbfc7ad",
+      "claim_id": "C17",
+      "claim": "DNA methylation is essential for mammalian embryonic development.",
+      "claim_type": "EXPLICIT",
+      "source": "DNA methylation has been recognized as a chief contributor to gene expression states, and it is essential for mammalian embryonic development, with genome-wide methylation patterns changing during differentiation (Greenberg and Bourc'his, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by a citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:24:43.923554Z"
+    },
+    {
+      "id": "4bd833e8-1444-4e7a-ab64-9c76f5f6c8da",
+      "content_id": "65e6aa00-744b-4fbe-ae43-2c9f5bbfc7ad",
+      "claim_id": "C18",
+      "claim": "Genome-wide methylation patterns change during differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "DNA methylation has been recognized as a chief contributor to gene expression states, and it is essential for mammalian embryonic development, with genome-wide methylation patterns changing during differentiation (Greenberg and Bourc'his, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by a citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:24:43.923554Z"
+    },
+    {
+      "id": "59952661-39a2-461b-acd0-d34cf8306d7e",
+      "content_id": "65e6aa00-744b-4fbe-ae43-2c9f5bbfc7ad",
+      "claim_id": "C19",
+      "claim": "DNMT3A and 3B are de novo methyltransferases that set up DNA methylation patterns during early development.",
+      "claim_type": "EXPLICIT",
+      "source": "DNMT3A and 3B, the de novo methyltransferases, set up DNA methylation patterns during early development.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about DNMT function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:24:43.923554Z"
+    },
+    {
+      "id": "0e84d6d2-5cac-47eb-a3cc-306f0a7f8c19",
+      "content_id": "65e6aa00-744b-4fbe-ae43-2c9f5bbfc7ad",
+      "claim_id": "C20",
+      "claim": "DNMT1 copies DNA methylation patterns onto the daughter strand during DNA replication ensuring methylation maintenance.",
+      "claim_type": "EXPLICIT",
+      "source": "Once established, DNMT1 will copy those patterns onto the daughter strand during DNA replication ensuring methylation maintenance (Jaenisch and Bird, 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by a citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:24:43.923554Z"
+    },
+    {
+      "id": "de8e9653-892a-47d2-b58c-3bf0dd8da642",
+      "content_id": "65e6aa00-744b-4fbe-ae43-2c9f5bbfc7ad",
+      "claim_id": "C21",
+      "claim": "DNMT dysfunction has been associated with various diseases.",
+      "claim_type": "EXPLICIT",
+      "source": "DNMT dysfunction has been associated with various diseases, and DNMT-deficient mice exhibit embryonic lethality (Greenberg and Bourc'his, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:24:43.923554Z"
+    },
+    {
+      "id": "c7ed45bc-4f4c-4da0-adfc-c03e06e53009",
+      "content_id": "65e6aa00-744b-4fbe-ae43-2c9f5bbfc7ad",
+      "claim_id": "C22",
+      "claim": "DNMT-deficient mice exhibit embryonic lethality.",
+      "claim_type": "EXPLICIT",
+      "source": "DNMT dysfunction has been associated with various diseases, and DNMT-deficient mice exhibit embryonic lethality (Greenberg and Bourc'his, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:24:43.923554Z"
+    },
+    {
+      "id": "52db0449-13e5-4f5c-bfe8-1866eee132f6",
+      "content_id": "65e6aa00-744b-4fbe-ae43-2c9f5bbfc7ad",
+      "claim_id": "C23",
+      "claim": "DNA methylation can be involved in transcriptional activation.",
+      "claim_type": "EXPLICIT",
+      "source": "Numerous studies have supported the role of DNA methylation in gene silencing; however, more recent work suggests that DNA methylation can also be involved in transcriptional activation (Rinaldi et al., 2016; Yin et al., 2017b; Harris et al., 2018; Lyko, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to recent literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:24:43.923554Z"
+    },
+    {
+      "id": "51f6042c-a03c-4c53-b22a-f435e8620ee5",
+      "content_id": "65e6aa00-744b-4fbe-ae43-2c9f5bbfc7ad",
+      "claim_id": "C24",
+      "claim": "DNA methylation is variable across individuals, tissues, and cell types.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, despite high fidelity in mitotic inheritance, DNA methylation is variable across individuals, tissues, and cell types (Jaenisch and Bird, 2003; Jones, 2012; Varley et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:24:43.923554Z"
+    },
+    {
+      "id": "e3a8305b-054d-4211-a1b7-55faa4f5c9f7",
+      "content_id": "65e6aa00-744b-4fbe-ae43-2c9f5bbfc7ad",
+      "claim_id": "C25",
+      "claim": "Clonal cell lines generated from the parent culture had period distributions similar to those seen with single cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, clonal cell lines generated from the parent culture had period distributions similar to those seen with single cells, indicating that circadian period is a heritable phenotype (Figure 1A\u2013B; Li et al., 2020).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 1A-B and cited from previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:24:43.923554Z"
+    },
+    {
+      "id": "5d1e32cc-aab1-4259-941c-4e73c1bf6d23",
+      "content_id": "65e6aa00-744b-4fbe-ae43-2c9f5bbfc7ad",
+      "claim_id": "C26",
+      "claim": "Circadian period is a heritable phenotype.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, clonal cell lines generated from the parent culture had period distributions similar to those seen with single cells, indicating that circadian period is a heritable phenotype (Figure 1A\u2013B; Li et al., 2020).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the similarity of period distributions between single cells and clonal cell lines.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:24:43.923554Z"
+    },
+    {
+      "id": "d6e3a63c-8bce-4c87-9288-fa8f0672d0bc",
+      "content_id": "65e6aa00-744b-4fbe-ae43-2c9f5bbfc7ad",
+      "claim_id": "C27",
+      "claim": "Circadian period of clonal cell lines is stable and transmissible for at least 20 cell passages.",
+      "claim_type": "EXPLICIT",
+      "source": "These results indicate that circadian period of clonal cell lines is stable and transmissible for at least 20 cell passages (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data from 20 clonal cell lines cultured for 20 passages shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:24:43.923554Z"
+    },
+    {
+      "id": "0b4be084-5506-4d29-8d7c-eac4911f2eba",
+      "content_id": "65e6aa00-744b-4fbe-ae43-2c9f5bbfc7ad",
+      "claim_id": "C28",
+      "claim": "Cell line was the dominant source of variation (74.70%) in circadian period across passages.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, cell line was the dominant source of variation (74.70%), while passage only contributed 2.64% of the total variation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on two-way ANOVA analysis of period measurements across cell lines and passages.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:24:43.923554Z"
+    },
+    {
+      "id": "97561fc7-c4e4-4e20-ba9a-45b36e14d724",
+      "content_id": "65e6aa00-744b-4fbe-ae43-2c9f5bbfc7ad",
+      "claim_id": "C29",
+      "claim": "Passage only contributed 2.64% of the total variation in circadian period.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, cell line was the dominant source of variation (74.70%), while passage only contributed 2.64% of the total variation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on two-way ANOVA analysis of period measurements across cell lines and passages.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:24:43.923554Z"
+    },
+    {
+      "id": "67ab0d14-e295-4eb5-83f5-c6b4a52fca80",
+      "content_id": "65e6aa00-744b-4fbe-ae43-2c9f5bbfc7ad",
+      "claim_id": "C30",
+      "claim": "5,137 period-correlated differentially expressed genes were identified between short period and long period groups, with 2,782 genes upregulated and 2,355 genes downregulated in the LP group.",
+      "claim_type": "EXPLICIT",
+      "source": "We compared their transcriptomic profiles and identified 5,137 period-correlated differentially expressed (DE) genes, with 2,782 genes upregulated and 2,355 genes downregulated in the LP group (Figure 2A, Figure 2\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on RNA-seq analysis comparing SP and LP groups shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:24:43.923554Z"
+    },
+    {
+      "id": "2ad28474-0224-4914-891c-094a9dda1ba0",
+      "content_id": "65e6aa00-744b-4fbe-ae43-2c9f5bbfc7ad",
+      "claim_id": "C31",
+      "claim": "535 period-correlated DE genes were identified between two groups of subclones derived from SP clone#33.",
+      "claim_type": "EXPLICIT",
+      "source": "We identified 535 additional period-correlated DE genes from subclones originating from SP clone#33 and 1,352 additional DE genes from subclones originating from LP clone#114 (Figure 2D\u2013E, Figure 2\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on RNA-seq analysis of subclones shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:24:43.923554Z"
+    },
+    {
+      "id": "589be353-fd35-40dc-8520-4f76278faed7",
+      "content_id": "65e6aa00-744b-4fbe-ae43-2c9f5bbfc7ad",
+      "claim_id": "C32",
+      "claim": "1,352 period-correlated DE genes were identified between two groups of subclones derived from LP clone#114.",
+      "claim_type": "EXPLICIT",
+      "source": "We identified 535 additional period-correlated DE genes from subclones originating from SP clone#33 and 1,352 additional DE genes from subclones originating from LP clone#114 (Figure 2D\u2013E, Figure 2\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on RNA-seq analysis of subclones shown in Figure 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:24:43.923554Z"
+    },
+    {
+      "id": "85222f57-4428-4c8c-8cd7-604f755d5bd5",
+      "content_id": "65e6aa00-744b-4fbe-ae43-2c9f5bbfc7ad",
+      "claim_id": "C33",
+      "claim": "67 overlapping DE genes were identified by comparing three RNA-seq datasets.",
+      "claim_type": "EXPLICIT",
+      "source": "By comparing the three RNA-seq datasets, 67 overlapping DE genes were identified (Figure 2F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the Venn diagram in Figure 2F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:24:43.923554Z"
+    },
+    {
+      "id": "8b7afe45-1ae1-49ce-acdc-d3b7db21cb96",
+      "content_id": "65e6aa00-744b-4fbe-ae43-2c9f5bbfc7ad",
+      "claim_id": "C34",
+      "claim": "Knockdown of Ak3 significantly shortened circadian period.",
+      "claim_type": "EXPLICIT",
+      "source": "Out of 7 positively correlated DE genes, knockdown of Ak3 and Trim3 significantly shortened period, whereas knockdown of Cpeb1, Lrrfip1, Rbfa, and Dars lengthened period (Figure 3A\u2013C, Figure 3\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on knockdown experiments shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:24:43.923554Z"
+    },
+    {
+      "id": "adb90818-1388-4614-84f3-e03e4657f505",
+      "content_id": "65e6aa00-744b-4fbe-ae43-2c9f5bbfc7ad",
+      "claim_id": "C35",
+      "claim": "Knockdown of Trim3 significantly shortened circadian period.",
+      "claim_type": "EXPLICIT",
+      "source": "Out of 7 positively correlated DE genes, knockdown of Ak3 and Trim3 significantly shortened period, whereas knockdown of Cpeb1, Lrrfip1, Rbfa, and Dars lengthened period (Figure 3A\u2013C, Figure 3\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on knockdown experiments shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:24:43.923554Z"
+    },
+    {
+      "id": "2fd65798-b7c4-436a-b337-10002b0a76fe",
+      "content_id": "65e6aa00-744b-4fbe-ae43-2c9f5bbfc7ad",
+      "claim_id": "C36",
+      "claim": "Knockdown of Cpeb1 lengthened circadian period.",
+      "claim_type": "EXPLICIT",
+      "source": "Out of 7 positively correlated DE genes, knockdown of Ak3 and Trim3 significantly shortened period, whereas knockdown of Cpeb1, Lrrfip1, Rbfa, and Dars lengthened period (Figure 3A\u2013C, Figure 3\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on knockdown experiments shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:24:43.923554Z"
+    },
+    {
+      "id": "6da140ba-3291-49c7-8101-b1fde55dd433",
+      "content_id": "65e6aa00-744b-4fbe-ae43-2c9f5bbfc7ad",
+      "claim_id": "C37",
+      "claim": "Knockdown of Lrrfip1 lengthened circadian period.",
+      "claim_type": "EXPLICIT",
+      "source": "Out of 7 positively correlated DE genes, knockdown of Ak3 and Trim3 significantly shortened period, whereas knockdown of Cpeb1, Lrrfip1, Rbfa, and Dars lengthened period (Figure 3A\u2013C, Figure 3\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on knockdown experiments shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:24:43.923554Z"
+    },
+    {
+      "id": "e8109ca6-4aea-4579-9204-27857cc7092b",
+      "content_id": "65e6aa00-744b-4fbe-ae43-2c9f5bbfc7ad",
+      "claim_id": "C38",
+      "claim": "Knockdown of Rbfa lengthened circadian period.",
+      "claim_type": "EXPLICIT",
+      "source": "Out of 7 positively correlated DE genes, knockdown of Ak3 and Trim3 significantly shortened period, whereas knockdown of Cpeb1, Lrrfip1, Rbfa, and Dars lengthened period (Figure 3A\u2013C, Figure 3\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on knockdown experiments shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:24:43.923554Z"
+    },
+    {
+      "id": "8158958c-2ba2-4ddb-abb2-14cadae4835c",
+      "content_id": "65e6aa00-744b-4fbe-ae43-2c9f5bbfc7ad",
+      "claim_id": "C39",
+      "claim": "Knockdown of Dars lengthened circadian period.",
+      "claim_type": "EXPLICIT",
+      "source": "Out of 7 positively correlated DE genes, knockdown of Ak3 and Trim3 significantly shortened period, whereas knockdown of Cpeb1, Lrrfip1, Rbfa, and Dars lengthened period (Figure 3A\u2013C, Figure 3\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on knockdown experiments shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:24:43.923554Z"
+    },
+    {
+      "id": "45697cdb-1675-4681-be20-0ce0ac304a66",
+      "content_id": "65e6aa00-744b-4fbe-ae43-2c9f5bbfc7ad",
+      "claim_id": "C40",
+      "claim": "Knockdown of Ipo13 significantly lengthened circadian period.",
+      "claim_type": "EXPLICIT",
+      "source": "Out of 7 negatively correlated DE genes, knockdown of Ipo13 and Tmem165 significantly lengthened period, whereas Slc8a3, Jun, Med23, and Cpa4 knockdown shortened period (Figure 3D\u2013F, Figure 3\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on knockdown experiments shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:24:43.923554Z"
+    },
+    {
+      "id": "50366366-b17c-400d-b455-fc51208fdb29",
+      "content_id": "65e6aa00-744b-4fbe-ae43-2c9f5bbfc7ad",
+      "claim_id": "C41",
+      "claim": "Knockdown of Tmem165 significantly lengthened circadian period.",
+      "claim_type": "EXPLICIT",
+      "source": "Out of 7 negatively correlated DE genes, knockdown of Ipo13 and Tmem165 significantly lengthened period, whereas Slc8a3, Jun, Med23, and Cpa4 knockdown shortened period (Figure 3D\u2013F, Figure 3\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on knockdown experiments shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:24:43.923554Z"
+    },
+    {
+      "id": "416af71d-25eb-40f8-a0b2-1207d5a73d5d",
+      "content_id": "65e6aa00-744b-4fbe-ae43-2c9f5bbfc7ad",
+      "claim_id": "C42",
+      "claim": "Knockdown of Slc8a3 shortened circadian period.",
+      "claim_type": "EXPLICIT",
+      "source": "Out of 7 negatively correlated DE genes, knockdown of Ipo13 and Tmem165 significantly lengthened period, whereas Slc8a3, Jun, Med23, and Cpa4 knockdown shortened period (Figure 3D\u2013F, Figure 3\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on knockdown experiments shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:24:43.923554Z"
+    },
+    {
+      "id": "ea22e274-dd8d-4ce1-8414-b8dd9a4fc9fa",
+      "content_id": "65e6aa00-744b-4fbe-ae43-2c9f5bbfc7ad",
+      "claim_id": "C43",
+      "claim": "Knockdown of Jun shortened circadian period.",
+      "claim_type": "EXPLICIT",
+      "source": "Out of 7 negatively correlated DE genes, knockdown of Ipo13 and Tmem165 significantly lengthened period, whereas Slc8a3, Jun, Med23, and Cpa4 knockdown shortened period (Figure 3D\u2013F, Figure 3\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on knockdown experiments shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:24:43.923554Z"
+    },
+    {
+      "id": "590eae57-ee6e-49a3-8203-3426bbf89a0d",
+      "content_id": "65e6aa00-744b-4fbe-ae43-2c9f5bbfc7ad",
+      "claim_id": "C44",
+      "claim": "Knockdown of Med23 shortened circadian period.",
+      "claim_type": "EXPLICIT",
+      "source": "Out of 7 negatively correlated DE genes, knockdown of Ipo13 and Tmem165 significantly lengthened period, whereas Slc8a3, Jun, Med23, and Cpa4 knockdown shortened period (Figure 3D\u2013F, Figure 3\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on knockdown experiments shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:24:43.923554Z"
+    },
+    {
+      "id": "5a7971f7-9e93-4666-aef5-6153162421ab",
+      "content_id": "65e6aa00-744b-4fbe-ae43-2c9f5bbfc7ad",
+      "claim_id": "C45",
+      "claim": "Knockdown of Cpa4 shortened circadian period.",
+      "claim_type": "EXPLICIT",
+      "source": "Out of 7 negatively correlated DE genes, knockdown of Ipo13 and Tmem165 significantly lengthened period, whereas Slc8a3, Jun, Med23, and Cpa4 knockdown shortened period (Figure 3D\u2013F, Figure 3\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on knockdown experiments shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:24:43.923554Z"
+    },
+    {
+      "id": "4ad94b92-ffcf-48d5-b141-de2e69b686d0",
+      "content_id": "65e6aa00-744b-4fbe-ae43-2c9f5bbfc7ad",
+      "claim_id": "C46",
+      "claim": "Knockdown of Eif4e2 did not alter period length.",
+      "claim_type": "EXPLICIT",
+      "source": "Knockdown of two other genes, Eif4e2 and Rfx5, did not alter period length.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on knockdown experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:24:43.923554Z"
+    },
+    {
+      "id": "d81c9f9e-7aaf-4f1e-9fbf-e2cb0da2e5c1",
+      "content_id": "65e6aa00-744b-4fbe-ae43-2c9f5bbfc7ad",
+      "claim_id": "C47",
+      "claim": "Knockdown of Rfx5 did not alter period length.",
+      "claim_type": "EXPLICIT",
+      "source": "Knockdown of two other genes, Eif4e2 and Rfx5, did not alter period length.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on knockdown experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:24:43.923554Z"
+    },
+    {
+      "id": "38433bd7-b451-4826-9396-5984bb6af091",
+      "content_id": "65e6aa00-744b-4fbe-ae43-2c9f5bbfc7ad",
+      "claim_id": "C48",
+      "claim": "Multiple genes function together to determine circadian period length.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that multiple genes function together to determine circadian period length and that there were no unique (clone-specific) effects on the direction (long or short) of the period changes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the validation of multiple candidate genes affecting period.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:24:43.923554Z"
+    },
+    {
+      "id": "a93f224c-f8bf-46df-8eb6-e7d719dfee56",
+      "content_id": "65e6aa00-744b-4fbe-ae43-2c9f5bbfc7ad",
+      "claim_id": "C49",
+      "claim": "The majority of the DE genes identified have never been reported as having effects on circadian period.",
+      "claim_type": "EXPLICIT",
+      "source": "Since the majority of the DE genes identified here have never been reported as having effects on circadian period, these data provide a new pool of candidate genes functioning in circadian periodicity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated based on comparison with existing literature.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:24:43.923554Z"
+    },
+    {
+      "id": "4d7420df-be85-401c-af3a-7bac7118e826",
+      "content_id": "65e6aa00-744b-4fbe-ae43-2c9f5bbfc7ad",
+      "claim_id": "C50",
+      "claim": "31 gene co-expression modules were generated from the 10 clonal cell lines RNA-seq data using WGCNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Using weighted gene co-expression network analysis (WGCNA), we generated 31 modules from the 10 clonal cell lines RNA-seq data (Figure 4A, Figure 4\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on WGCNA analysis shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:24:43.923554Z"
+    },
+    {
+      "id": "278b8655-567a-433b-8a7d-f1c26e10568c",
+      "content_id": "65e6aa00-744b-4fbe-ae43-2c9f5bbfc7ad",
+      "claim_id": "C51",
+      "claim": "Blue, lightgreen, green and darkred modules were enriched for positively correlated DE genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Blue, lightgreen, green and darkred modules were enriched for positively correlated DE genes, while salmon, pink, red, and darkgreen modules were enriched for negatively correlated DE genes (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the enrichment analysis in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:24:43.923554Z"
+    },
+    {
+      "id": "336fff55-1b9b-434a-9725-a8366f2c7669",
+      "content_id": "65e6aa00-744b-4fbe-ae43-2c9f5bbfc7ad",
+      "claim_id": "C52",
+      "claim": "Salmon, pink, red, and darkgreen modules were enriched for negatively correlated DE genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Blue, lightgreen, green and darkred modules were enriched for positively correlated DE genes, while salmon, pink, red, and darkgreen modules were enriched for negatively correlated DE genes (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the enrichment analysis in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:24:43.923554Z"
+    },
+    {
+      "id": "207e9914-18b7-41c6-91b0-7711acc76c07",
+      "content_id": "65e6aa00-744b-4fbe-ae43-2c9f5bbfc7ad",
+      "claim_id": "C53",
+      "claim": "Stress response signaling pathways and metabolic pathways were associated with the period-correlated DE genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Ingenuity pathway analysis (IPA) revealed stress response signaling pathways and metabolic pathways were associated with the period-correlated DE genes, suggesting their important roles in circadian periodicity (Figure 4C, Figure 4\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on IPA analysis shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:24:43.923554Z"
+    },
+    {
+      "id": "3d798c6f-2980-4857-8839-9088c6ee272f",
+      "content_id": "65e6aa00-744b-4fbe-ae43-2c9f5bbfc7ad",
+      "claim_id": "C54",
+      "claim": "The blue module is highly enriched for DE genes and is enriched for the EIF2 signaling pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the blue module is highly enriched for DE genes, and is also enriched for the EIF2 signaling pathway, which has been recently shown to regulate circadian period, consistent with the predicted elevated translational activity in LP group (Pathak et al., 2019; Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on IPA analysis and supported by a citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:24:43.923554Z"
+    },
+    {
+      "id": "a854ac07-28c4-45be-bb09-9062ff7a3e6c",
+      "content_id": "65e6aa00-744b-4fbe-ae43-2c9f5bbfc7ad",
+      "claim_id": "C55",
+      "claim": "The EIF2 signaling pathway has been recently shown to regulate circadian period.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the blue module is highly enriched for DE genes, and is also enriched for the EIF2 signaling pathway, which has been recently shown to regulate circadian period, consistent with the predicted elevated translational activity in LP group (Pathak et al., 2019; Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by a citation to Pathak et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:24:43.923554Z"
+    },
+    {
+      "id": "8c2851f4-e091-4e9a-8e71-7693e9fc4af2",
+      "content_id": "65e6aa00-744b-4fbe-ae43-2c9f5bbfc7ad",
+      "claim_id": "C56",
+      "claim": "Two small molecule activators of EIF2 signaling pathway, halofuginone and tunicamycin, significantly shortened circadian period in parent culture.",
+      "claim_type": "EXPLICIT",
+      "source": "To validate these results further, we used two different small molecules to activate the EIF2 signaling pathway in parent culture and observed significantly shortened period, consistent with what has been previously reported (Pathak et al., 2019; Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on drug treatment experiments shown in Figure 4D.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:24:43.923554Z"
+    },
+    {
+      "id": "3b00e6a3-065d-4564-b324-7bf565bb1ee1",
+      "content_id": "65e6aa00-744b-4fbe-ae43-2c9f5bbfc7ad",
+      "claim_id": "C57",
+      "claim": "The darkred module was enriched for the mTOR signaling pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the darkred module was enriched for the mTOR signaling pathway; the green and salmon modules were enriched for the protein ubiquitination pathway; and the pink module was enriched for NRF2-mediated oxidative stress response pathway (Figure 4\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on pathway enrichment analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:24:43.923554Z"
+    },
+    {
+      "id": "0f44dd1c-7117-4157-9af0-1daf119af1e2",
+      "content_id": "65e6aa00-744b-4fbe-ae43-2c9f5bbfc7ad",
+      "claim_id": "C58",
+      "claim": "The green and salmon modules were enriched for the protein ubiquitination pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the darkred module was enriched for the mTOR signaling pathway; the green and salmon modules were enriched for the protein ubiquitination pathway; and the pink module was enriched for NRF2-mediated oxidative stress response pathway (Figure 4\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on pathway enrichment analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:24:43.923554Z"
+    },
+    {
+      "id": "c0abfc69-2121-4c18-9591-158fa02bf491",
+      "content_id": "65e6aa00-744b-4fbe-ae43-2c9f5bbfc7ad",
+      "claim_id": "C59",
+      "claim": "The pink module was enriched for NRF2-mediated oxidative stress response pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the darkred module was enriched for the mTOR signaling pathway; the green and salmon modules were enriched for the protein ubiquitination pathway; and the pink module was enriched for NRF2-mediated oxidative stress response pathway (Figure 4\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on pathway enrichment analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:24:43.923554Z"
+    },
+    {
+      "id": "435fd446-f3a0-4e9b-bea9-4a5f8d2da3cc",
+      "content_id": "65e6aa00-744b-4fbe-ae43-2c9f5bbfc7ad",
+      "claim_id": "C60",
+      "claim": "The mTOR signaling pathway, protein ubiquitination pathway, and NRF2-mediated oxidative stress response pathway have been shown to be functional in circadian periodicity.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, all three of these pathways have been shown to be functional in circadian periodicity, further confirming the functional importance of the co-expressed gene networks (Stojkovic et al., 2014; Ramanathan et al., 2018; Wible et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:24:43.923554Z"
+    },
+    {
+      "id": "49fb3cf7-9af5-4087-96f2-f9f551bf7cd6",
+      "content_id": "65e6aa00-744b-4fbe-ae43-2c9f5bbfc7ad",
+      "claim_id": "C61",
+      "claim": "Only four annotated genes carrying unique variants were identified by whole-exome sequencing on SP clone#33 and LP clone#114.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, only four annotated genes carrying unique variants were identified (Supplementary file 1), but 2 of them are not expressed (Figure 2\u2014source data 1), and none of them have known circadian functions, suggesting that somatic mutations are unlikely to underlie the heterogeneous period distributions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on whole-exome sequencing data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:24:43.923554Z"
+    },
+    {
+      "id": "8e080b5c-2764-4dc8-9bfc-c8a49bfaa72f",
+      "content_id": "65e6aa00-744b-4fbe-ae43-2c9f5bbfc7ad",
+      "claim_id": "C62",
+      "claim": "Two of the four genes with unique variants are not expressed.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, only four annotated genes carrying unique variants were identified (Supplementary file 1), but 2 of them are not expressed (Figure 2\u2014source data 1), and none of them have known circadian functions, suggesting that somatic mutations are unlikely to underlie the heterogeneous period distributions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on RNA-seq expression data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:24:43.923554Z"
+    },
+    {
+      "id": "49c44de2-620b-42d7-aa59-53806a7376d5",
+      "content_id": "65e6aa00-744b-4fbe-ae43-2c9f5bbfc7ad",
+      "claim_id": "C63",
+      "claim": "None of the genes with unique variants have known circadian functions.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, only four annotated genes carrying unique variants were identified (Supplementary file 1), but 2 of them are not expressed (Figure 2\u2014source data 1), and none of them have known circadian functions, suggesting that somatic mutations are unlikely to underlie the heterogeneous period distributions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on comparison with known circadian genes.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:24:43.923554Z"
+    },
+    {
+      "id": "9a3f57ff-5261-4311-903f-65f9b5b736c9",
+      "content_id": "65e6aa00-744b-4fbe-ae43-2c9f5bbfc7ad",
+      "claim_id": "C64",
+      "claim": "Somatic mutations are unlikely to underlie the heterogeneous period distributions.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, only four annotated genes carrying unique variants were identified (Supplementary file 1), but 2 of them are not expressed (Figure 2\u2014source data 1), and none of them have known circadian functions, suggesting that somatic mutations are unlikely to underlie the heterogeneous period distributions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the lack of significant coding mutations in relevant genes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:24:43.923554Z"
+    },
+    {
+      "id": "1e638760-f715-44fd-9b36-a9a382133fe9",
+      "content_id": "65e6aa00-744b-4fbe-ae43-2c9f5bbfc7ad",
+      "claim_id": "C65",
+      "claim": "16,520 significant differentially methylated regions (DMRs) were identified using 1,000 bp tiling windows genome-wide.",
+      "claim_type": "EXPLICIT",
+      "source": "Using 1,000 bp tiling windows genome-wide, we identified 16,520 significant differentially methylated regions (DMRs).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on RRBS sequencing analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:24:43.923554Z"
+    },
+    {
+      "id": "8ec6f2dc-c614-459c-8bfc-7be747c0e05d",
+      "content_id": "65e6aa00-744b-4fbe-ae43-2c9f5bbfc7ad",
+      "claim_id": "C66",
+      "claim": "None of the core clock genes had coding mutations or differential DNA methylation, except for a small DMR spanning ~10 nucleotides located in exon 1 of Per1.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, none of the core clock genes, even the few that were differentially expressed in the parental lines, had coding mutations or differential DNA methylation, except for a small DMR spanning ~10 nucleotides located in exon 1 of Per1 (Table 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on whole-exome sequencing and RRBS data summarized in Table 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:24:43.923554Z"
+    },
+    {
+      "id": "1cefd7cd-9c90-4f92-9145-7179458c94a3",
+      "content_id": "65e6aa00-744b-4fbe-ae43-2c9f5bbfc7ad",
+      "claim_id": "C67",
+      "claim": "62% (10,212 DMRs) were up-regulated in the SP group.",
+      "claim_type": "EXPLICIT",
+      "source": "Of the DMRs found, 62% (10,212 DMRs) were up-regulated, whereas 38% (6,308 DMRs) were down-regulated in the SP group (Figure 5A, Figure 5\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on RRBS analysis shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:24:43.923554Z"
+    },
+    {
+      "id": "820b947d-c2e9-415e-ada1-75e42b170337",
+      "content_id": "65e6aa00-744b-4fbe-ae43-2c9f5bbfc7ad",
+      "claim_id": "C68",
+      "claim": "38% (6,308 DMRs) were down-regulated in the SP group.",
+      "claim_type": "EXPLICIT",
+      "source": "Of the DMRs found, 62% (10,212 DMRs) were up-regulated, whereas 38% (6,308 DMRs) were down-regulated in the SP group (Figure 5A, Figure 5\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on RRBS analysis shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:24:43.923554Z"
+    },
+    {
+      "id": "e8bae686-7b67-4686-a7a3-88835e600c2e",
+      "content_id": "65e6aa00-744b-4fbe-ae43-2c9f5bbfc7ad",
+      "claim_id": "C69",
+      "claim": "6055 genes were annotated as DMR-associated with DMRs falling in either the gene body or 5 kb upstream of the transcription start site (TSS).",
+      "claim_type": "EXPLICIT",
+      "source": "6055 genes were annotated as DMR-associated with DMRs falling in either the gene body or 5 kb upstream of the transcription start site (TSS), and of these, 1,315 DMR-associated genes overlapped with period-correlated DE genes (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on annotation of DMRs relative to genes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:24:43.923554Z"
+    },
+    {
+      "id": "fcb282f1-520d-4439-93d2-54fc99e8c5e2",
+      "content_id": "65e6aa00-744b-4fbe-ae43-2c9f5bbfc7ad",
+      "claim_id": "C70",
+      "claim": "1,315 DMR-associated genes overlapped with period-correlated DE genes.",
+      "claim_type": "EXPLICIT",
+      "source": "6055 genes were annotated as DMR-associated with DMRs falling in either the gene body or 5 kb upstream of the transcription start site (TSS), and of these, 1,315 DMR-associated genes overlapped with period-correlated DE genes (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the Venn diagram in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:24:43.923554Z"
+    },
+    {
+      "id": "533d0449-6e8d-4747-a382-1a784e67475d",
+      "content_id": "65e6aa00-744b-4fbe-ae43-2c9f5bbfc7ad",
+      "claim_id": "C71",
+      "claim": "For period-correlated DE genes associated with DMRs, both negative and positive correlations were observed between DNA methylation and gene expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, for period-correlated DE genes associated with DMRs, in addition to negative correlations, we also observed positively correlated DMRs, indicating both repression and enhancement of functional gene expression by DNA methylation (Figure 5C\u2013D) as reported by others (Jones, 2012; Rinaldi et al., 2016; Yin et al., 2017b; Harris et al., 2018).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on correlation analysis shown in Figure 5C-D and supported by citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:24:43.923554Z"
+    },
+    {
+      "id": "e3ebedd1-b8af-454e-89cf-7a4ea92f3333",
+      "content_id": "65e6aa00-744b-4fbe-ae43-2c9f5bbfc7ad",
+      "claim_id": "C72",
+      "claim": "DNA methylation can both repress and enhance functional gene expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, for period-correlated DE genes associated with DMRs, in addition to negative correlations, we also observed positively correlated DMRs, indicating both repression and enhancement of functional gene expression by DNA methylation (Figure 5C\u2013D) as reported by others (Jones, 2012; Rinaldi et al., 2016; Yin et al., 2017b; Harris et al., 2018).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the observation of both positive and negative correlations and supported by citations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:24:43.923554Z"
+    },
+    {
+      "id": "c8c83044-db38-4188-ab06-92cb2acf7017",
+      "content_id": "65e6aa00-744b-4fbe-ae43-2c9f5bbfc7ad",
+      "claim_id": "C73",
+      "claim": "The overall clustering pattern of the methylomes resembled that of the transcriptomes.",
+      "claim_type": "EXPLICIT",
+      "source": "The overall clustering pattern of the methylomes resembled that of the transcriptomes, indicating an important role for global DNA methylation in regulating the co-expressed genes (Figure 5\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 5\u2014figure supplement 1 comparing MDS and PCA plots.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:24:43.923554Z"
+    },
+    {
+      "id": "e4886d0d-aca7-452e-8dfe-7a31ff955c6f",
+      "content_id": "65e6aa00-744b-4fbe-ae43-2c9f5bbfc7ad",
+      "claim_id": "C74",
+      "claim": "Global DNA methylation plays an important role in regulating co-expressed genes.",
+      "claim_type": "EXPLICIT",
+      "source": "The overall clustering pattern of the methylomes resembled that of the transcriptomes, indicating an important role for global DNA methylation in regulating the co-expressed genes (Figure 5\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the similarity of clustering patterns between methylomes and transcriptomes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:24:43.923554Z"
+    },
+    {
+      "id": "73b1a859-8209-43a0-99e2-082ce3c1f609",
+      "content_id": "65e6aa00-744b-4fbe-ae43-2c9f5bbfc7ad",
+      "claim_id": "C75",
+      "claim": "Htatip2, the hub gene of the blue module, was hypermethylated at the promoter region and repressed in the SP group.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the hub gene of the blue module, Htatip2, which exhibited the same expression pattern of the module eigengene (Figure 6A\u2013B), was hypermethylated at the promoter region and repressed in the SP group (Figure 6C\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on methylation and expression data shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:24:43.923554Z"
+    },
+    {
+      "id": "925b0d8b-ffeb-4535-9b06-f295fff6044a",
+      "content_id": "65e6aa00-744b-4fbe-ae43-2c9f5bbfc7ad",
+      "claim_id": "C76",
+      "claim": "Parvb and Rftn1, two hub genes from negatively correlated modules, were hypermethylated and repressed in the LP group.",
+      "claim_type": "EXPLICIT",
+      "source": "On the contrary, Parvb and Rftn1, two hub genes from negatively correlated modules, were hypermethylated and repressed in the LP group (Figure 6A\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on methylation and expression data shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:24:43.923554Z"
+    },
+    {
+      "id": "8296ff70-589b-4c2d-904f-1a044cb5ed82",
+      "content_id": "65e6aa00-744b-4fbe-ae43-2c9f5bbfc7ad",
+      "claim_id": "C77",
+      "claim": "Some genes with hypermethylation in the gene body or enhancer showed enhanced expression levels.",
+      "claim_type": "EXPLICIT",
+      "source": "Except for these negative correlations, some genes with hypermethylation in the gene body or enhancer showed enhanced expression levels (Figure 6\u2014figure supplement 1), supporting recent findings that DNA methylation in these regions may activate gene expression (Jones, 2012; Rinaldi et al., 2016; Yin et al., 2017b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 6\u2014figure supplement 1 and supported by citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:24:43.923554Z"
+    },
+    {
+      "id": "564ade0a-e351-4cce-8c59-522a6a52d41e",
+      "content_id": "65e6aa00-744b-4fbe-ae43-2c9f5bbfc7ad",
+      "claim_id": "C78",
+      "claim": "DNA methylation in gene body or enhancer regions may activate gene expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Except for these negative correlations, some genes with hypermethylation in the gene body or enhancer showed enhanced expression levels (Figure 6\u2014figure supplement 1), supporting recent findings that DNA methylation in these regions may activate gene expression (Jones, 2012; Rinaldi et al., 2016; Yin et al., 2017b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by citations to recent literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:24:43.923554Z"
+    },
+    {
+      "id": "61f5ea92-06db-4fbf-90eb-c0ddd6c2bcd3",
+      "content_id": "65e6aa00-744b-4fbe-ae43-2c9f5bbfc7ad",
+      "claim_id": "C79",
+      "claim": "Knockdown of Htatip2 in LP clone#114 significantly shortened circadian period.",
+      "claim_type": "EXPLICIT",
+      "source": "Knockdown of Htatip2 and Dusp18 in LP clone#114 significantly shortened period, whereas knockdown of Rftn1 in SP clone#128 significantly lengthened circadian period (Figure 6E), consistent with predictions that deficiency of Htatip2 shortens circadian period possibly by activating the AKT/mTOR signaling pathway (Yin et al., 2017a; Ramanathan et al., 2018), and that hypomethylation and upregulated expression of Dusp18 lengthens circadian period, possibly by inhibiting the SAPK/JNK signaling pathway (Wu et al., 2006; Chansard et al., 2007; Yoshitane et al., 2012).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on knockdown experiments shown in Figure 6E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:24:43.923554Z"
+    },
+    {
+      "id": "1626350f-ab2f-4f77-a5c0-de172224dd15",
+      "content_id": "65e6aa00-744b-4fbe-ae43-2c9f5bbfc7ad",
+      "claim_id": "C80",
+      "claim": "Knockdown of Dusp18 in LP clone#114 significantly shortened circadian period.",
+      "claim_type": "EXPLICIT",
+      "source": "Knockdown of Htatip2 and Dusp18 in LP clone#114 significantly shortened period, whereas knockdown of Rftn1 in SP clone#128 significantly lengthened circadian period (Figure 6E), consistent with predictions that deficiency of Htatip2 shortens circadian period possibly by activating the AKT/mTOR signaling pathway (Yin et al., 2017a; Ramanathan et al., 2018), and that hypomethylation and upregulated expression of Dusp18 lengthens circadian period, possibly by inhibiting the SAPK/JNK signaling pathway (Wu et al., 2006; Chansard et al., 2007; Yoshitane et al., 2012).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on knockdown experiments shown in Figure 6E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:24:43.923554Z"
+    },
+    {
+      "id": "86435eb5-3964-4065-bf9f-27d670167de7",
+      "content_id": "65e6aa00-744b-4fbe-ae43-2c9f5bbfc7ad",
+      "claim_id": "C81",
+      "claim": "Knockdown of Rftn1 in SP clone#128 significantly lengthened circadian period.",
+      "claim_type": "EXPLICIT",
+      "source": "Knockdown of Htatip2 and Dusp18 in LP clone#114 significantly shortened period, whereas knockdown of Rftn1 in SP clone#128 significantly lengthened circadian period (Figure 6E), consistent with predictions that deficiency of Htatip2 shortens circadian period possibly by activating the AKT/mTOR signaling pathway (Yin et al., 2017a; Ramanathan et al., 2018), and that hypomethylation and upregulated expression of Dusp18 lengthens circadian period, possibly by inhibiting the SAPK/JNK signaling pathway (Wu et al., 2006; Chansard et al., 2007; Yoshitane et al., 2012).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on knockdown experiments shown in Figure 6E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:24:43.923554Z"
+    },
+    {
+      "id": "049b4863-ba5f-46a3-9ad9-18c1faf6d3ef",
+      "content_id": "65e6aa00-744b-4fbe-ae43-2c9f5bbfc7ad",
+      "claim_id": "C82",
+      "claim": "Deficiency of Htatip2 shortens circadian period possibly by activating the AKT/mTOR signaling pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "Knockdown of Htatip2 and Dusp18 in LP clone#114 significantly shortened period, whereas knockdown of Rftn1 in SP clone#128 significantly lengthened circadian period (Figure 6E), consistent with predictions that deficiency of Htatip2 shortens circadian period possibly by activating the AKT/mTOR signaling pathway (Yin et al., 2017a; Ramanathan et al., 2018), and that hypomethylation and upregulated expression of Dusp18 lengthens circadian period, possibly by inhibiting the SAPK/JNK signaling pathway (Wu et al., 2006; Chansard et al., 2007; Yoshitane et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mechanistic speculation supported by citations.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:24:43.923554Z"
+    },
+    {
+      "id": "212d2628-f3eb-428a-bfbd-5c31a62fca73",
+      "content_id": "65e6aa00-744b-4fbe-ae43-2c9f5bbfc7ad",
+      "claim_id": "C83",
+      "claim": "Hypomethylation and upregulated expression of Dusp18 lengthens circadian period, possibly by inhibiting the SAPK/JNK signaling pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "Knockdown of Htatip2 and Dusp18 in LP clone#114 significantly shortened period, whereas knockdown of Rftn1 in SP clone#128 significantly lengthened circadian period (Figure 6E), consistent with predictions that deficiency of Htatip2 shortens circadian period possibly by activating the AKT/mTOR signaling pathway (Yin et al., 2017a; Ramanathan et al., 2018), and that hypomethylation and upregulated expression of Dusp18 lengthens circadian period, possibly by inhibiting the SAPK/JNK signaling pathway (Wu et al., 2006; Chansard et al., 2007; Yoshitane et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mechanistic speculation supported by citations.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:24:43.923554Z"
+    },
+    {
+      "id": "197aea14-c397-4b49-96c3-a0d925cdbeb8",
+      "content_id": "65e6aa00-744b-4fbe-ae43-2c9f5bbfc7ad",
+      "claim_id": "C84",
+      "claim": "Deficiency of Dnmt1 significantly shortened circadian period length.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, deficiency of Dnmt1 significantly shortened period length, whereas knockdown of Dnmt3a slightly, but significantly, lengthened period (Figure 7A\u2013B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on knockdown experiments shown in Figure 7A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:24:43.923554Z"
+    },
+    {
+      "id": "76cef209-4855-4db0-b557-79a5ad67455b",
+      "content_id": "65e6aa00-744b-4fbe-ae43-2c9f5bbfc7ad",
+      "claim_id": "C85",
+      "claim": "Knockdown of Dnmt3a slightly, but significantly, lengthened circadian period.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, deficiency of Dnmt1 significantly shortened period length, whereas knockdown of Dnmt3a slightly, but significantly, lengthened period (Figure 7A\u2013B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on knockdown experiments shown in Figure 7B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:24:43.923554Z"
+    },
+    {
+      "id": "fb77ef26-e7c1-4fff-8a8c-46d79ba0ecb8",
+      "content_id": "65e6aa00-744b-4fbe-ae43-2c9f5bbfc7ad",
+      "claim_id": "C86",
+      "claim": "Dnmt1 and Dnmt3a knockdown in the ten clonal cell lines showed the same overall results.",
+      "claim_type": "EXPLICIT",
+      "source": "Dnmt1 and Dnmt3a knockdown in the ten clonal cell lines showed the same overall results, suggesting that DNA methylation affects circadian periodicity in the same way in all clones tested (Figure 7C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on knockdown experiments in multiple clones shown in Figure 7C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:24:43.923554Z"
+    },
+    {
+      "id": "fe020825-cdde-45df-bb2a-4c201aaf2da4",
+      "content_id": "65e6aa00-744b-4fbe-ae43-2c9f5bbfc7ad",
+      "claim_id": "C87",
+      "claim": "DNA methylation affects circadian periodicity in the same way in all clones tested.",
+      "claim_type": "EXPLICIT",
+      "source": "Dnmt1 and Dnmt3a knockdown in the ten clonal cell lines showed the same overall results, suggesting that DNA methylation affects circadian periodicity in the same way in all clones tested (Figure 7C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the consistent effects of DNMT knockdown across clones.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:24:43.923554Z"
+    },
+    {
+      "id": "c5634013-da28-45ef-a089-4b5ee7294d7f",
+      "content_id": "65e6aa00-744b-4fbe-ae43-2c9f5bbfc7ad",
+      "claim_id": "C88",
+      "claim": "Administration of SGI-1027, which selectively induces degradation of the DNMT1 protein, significantly shortened circadian period.",
+      "claim_type": "EXPLICIT",
+      "source": "As pharmacological validation, administration of SGI-1027, which selectively induces degradation of the DNMT1 protein (Datta et al., 2009), significantly shortened period, while administration of zebularine, which induces significant reduction of both DNMT1 and DNMT3A (Billam et al., 2010; You and Park, 2012), lengthened period (Figure 7D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on drug treatment experiments shown in Figure 7D and supported by citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:24:43.923554Z"
+    },
+    {
+      "id": "0ad94d95-c9f5-45aa-8f69-e8a0eb116d96",
+      "content_id": "65e6aa00-744b-4fbe-ae43-2c9f5bbfc7ad",
+      "claim_id": "C89",
+      "claim": "Administration of zebularine, which induces significant reduction of both DNMT1 and DNMT3A, lengthened circadian period.",
+      "claim_type": "EXPLICIT",
+      "source": "As pharmacological validation, administration of SGI-1027, which selectively induces degradation of the DNMT1 protein (Datta et al., 2009), significantly shortened period, while administration of zebularine, which induces significant reduction of both DNMT1 and DNMT3A (Billam et al., 2010; You and Park, 2012), lengthened period (Figure 7D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on drug treatment experiments shown in Figure 7D and supported by citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:24:43.923554Z"
+    },
+    {
+      "id": "e9a5851a-62b5-48bb-8b73-d02337b37126",
+      "content_id": "65e6aa00-744b-4fbe-ae43-2c9f5bbfc7ad",
+      "claim_id": "C90",
+      "claim": "Drug administration in primary MEF cells with PER2::LUCsv and NIH3T3 cells carrying an E2-box-luc reporter revealed similar results to those in clonal cell lines.",
+      "claim_type": "EXPLICIT",
+      "source": "Drug administration in primary MEF cells with PER2::LUCsv and NIH3T3 cells carrying an E2-box-luc reporter also revealed similar results (Figure 7E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on drug treatment experiments in different cell types shown in Figure 7E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:24:43.923554Z"
+    },
+    {
+      "id": "74132c47-e62d-4201-a962-2f60ca772f69",
+      "content_id": "65e6aa00-744b-4fbe-ae43-2c9f5bbfc7ad",
+      "claim_id": "C91",
+      "claim": "Different DNA methyltransferases contribute to the regulation of circadian periodicity, likely via different mechanisms.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these findings suggest that different DNA methyltransferases contribute to the regulation of circadian periodicity, likely via different mechanisms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the opposite effects of DNMT1 and DNMT3A on circadian period.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:24:43.923554Z"
+    },
+    {
+      "id": "e4e8bd17-accf-481a-bce9-5d3b89930ee2",
+      "content_id": "65e6aa00-744b-4fbe-ae43-2c9f5bbfc7ad",
+      "claim_id": "C92",
+      "claim": "A few core clock genes were differentially expressed in parental cultures.",
+      "claim_type": "EXPLICIT",
+      "source": "Although a few core clock genes were differentially expressed in parental cultures, there were no significant differences in these genes among subclones, suggesting they are not responsible for the period heterogeneity seen in these homogeneous cell populations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on RNA-seq analysis comparing parental lines and subclones.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:24:43.923554Z"
+    },
+    {
+      "id": "29d2c25e-230d-4677-a527-30862a91c7a2",
+      "content_id": "65e6aa00-744b-4fbe-ae43-2c9f5bbfc7ad",
+      "claim_id": "C93",
+      "claim": "There were no significant differences in core clock genes among subclones.",
+      "claim_type": "EXPLICIT",
+      "source": "Although a few core clock genes were differentially expressed in parental cultures, there were no significant differences in these genes among subclones, suggesting they are not responsible for the period heterogeneity seen in these homogeneous cell populations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on RNA-seq analysis of subclones.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:24:43.923554Z"
+    },
+    {
+      "id": "61feecc7-547b-4528-bcf5-d4a4ba5c844f",
+      "content_id": "65e6aa00-744b-4fbe-ae43-2c9f5bbfc7ad",
+      "claim_id": "C94",
+      "claim": "Core clock genes are not responsible for the period heterogeneity seen in homogeneous cell populations.",
+      "claim_type": "EXPLICIT",
+      "source": "Although a few core clock genes were differentially expressed in parental cultures, there were no significant differences in these genes among subclones, suggesting they are not responsible for the period heterogeneity seen in these homogeneous cell populations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the lack of differential expression of core clock genes among subclones.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:24:43.923554Z"
+    },
+    {
+      "id": "0c24f2d2-bced-4d79-b607-a795b92408f2",
+      "content_id": "65e6aa00-744b-4fbe-ae43-2c9f5bbfc7ad",
+      "claim_id": "C95",
+      "claim": "86% of the novel candidate genes regulated circadian period using gene knockdown assays.",
+      "claim_type": "EXPLICIT",
+      "source": "By comparing subclones, we narrowed down the common candidate gene list and further validated that 86% of the novel candidates regulated circadian period using gene knockdown assays.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the validation rate from knockdown experiments (12 out of 14 genes tested).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:24:43.923554Z"
+    },
+    {
+      "id": "d08dd176-026e-4c7e-828c-1d4de954abae",
+      "content_id": "65e6aa00-744b-4fbe-ae43-2c9f5bbfc7ad",
+      "claim_id": "C96",
+      "claim": "Period is determined by the ensemble interactions of many genes that can either shorten or lengthen period individually.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, our results are consistent with the hypothesis that period is determined by the ensemble interactions of many genes that can either shorten or lengthen period individually.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the identification and validation of multiple genes with opposing effects on period.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:24:43.923554Z"
+    },
+    {
+      "id": "f5015eeb-1d4e-4dbd-853c-d1ea1a3948a5",
+      "content_id": "65e6aa00-744b-4fbe-ae43-2c9f5bbfc7ad",
+      "claim_id": "C97",
+      "claim": "The genome-wide DNA methylation landscape underlies much of the complex gene networks.",
+      "claim_type": "EXPLICIT",
+      "source": "We also provide evidence that the genome-wide DNA methylation landscape underlies much of the complex gene networks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the correlation between methylation patterns and gene expression networks.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:24:43.923554Z"
+    },
+    {
+      "id": "1deb6742-d35a-4a2a-a586-451fb93786d6",
+      "content_id": "65e6aa00-744b-4fbe-ae43-2c9f5bbfc7ad",
+      "claim_id": "C98",
+      "claim": "Multiple hub genes of period-correlated modules were under the regulation of DNA methylation.",
+      "claim_type": "EXPLICIT",
+      "source": "Multiple hub genes of period-correlated modules were under the regulation of DNA methylation, showing remarkable coherence in DNA methylation, gene expression, and circadian phenotype.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the analysis of hub genes like Htatip2, Dusp18, Parvb, and Rftn1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:24:43.923554Z"
+    },
+    {
+      "id": "0746acbc-ad50-4b5a-a84a-48188e92e927",
+      "content_id": "65e6aa00-744b-4fbe-ae43-2c9f5bbfc7ad",
+      "claim_id": "C99",
+      "claim": "The similar clustering patterns of transcriptomes and methylomes suggest an important role of DNA methylation in shaping circadian period heterogeneity through regulating large-scale gene networks.",
+      "claim_type": "EXPLICIT",
+      "source": "The similar clustering patterns of transcriptomes and methylomes further suggested an important role of DNA methylation in shaping circadian period heterogeneity through regulating large-scale gene networks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the similarity of clustering patterns shown in Figure 5\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:24:43.923554Z"
+    },
+    {
+      "id": "7d6a6a58-03d9-4064-8977-a74472bcb573",
+      "content_id": "65e6aa00-744b-4fbe-ae43-2c9f5bbfc7ad",
+      "claim_id": "C100",
+      "claim": "Previous studies have linked DNA methylation of core clock genes with different diseases.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies have linked DNA methylation of core clock genes with different diseases (Joska et al., 2014; Peng et al., 2019); however, the results presented here have revealed how global DNA methylation can regulate circadian clock function via genome-wide changes in gene expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:24:43.923554Z"
+    },
+    {
+      "id": "cf548ff1-0e80-45cb-b6ec-7b6819339a51",
+      "content_id": "65e6aa00-744b-4fbe-ae43-2c9f5bbfc7ad",
+      "claim_id": "C101",
+      "claim": "Global DNA methylation can regulate circadian clock function via genome-wide changes in gene expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies have linked DNA methylation of core clock genes with different diseases (Joska et al., 2014; Peng et al., 2019); however, the results presented here have revealed how global DNA methylation can regulate circadian clock function via genome-wide changes in gene expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study based on multi-omics analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:24:43.923554Z"
+    },
+    {
+      "id": "45237c24-68f9-43aa-8a67-ff1fd8265318",
+      "content_id": "65e6aa00-744b-4fbe-ae43-2c9f5bbfc7ad",
+      "claim_id": "C102",
+      "claim": "Whole exome sequencing failed to detect significant coding mutations.",
+      "claim_type": "EXPLICIT",
+      "source": "Our whole exome sequencing failed to detect significant coding mutations, further supporting the role of differential DNA methylation in establishing circadian heterogeneity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on whole-exome sequencing data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:24:43.923554Z"
+    },
+    {
+      "id": "82a83e05-5857-4727-a474-2ed860134296",
+      "content_id": "65e6aa00-744b-4fbe-ae43-2c9f5bbfc7ad",
+      "claim_id": "C103",
+      "claim": "Genetic variation in regulatory regions or other epigenetic modifications could be involved in circadian period heterogeneity.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we cannot rule out that genetic variation in regulatory regions, or other epigenetic modifications could be involved.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a possibility that was not fully explored in the study.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:24:43.923554Z"
+    },
+    {
+      "id": "574bdd32-e5f9-45cd-8a87-c1c4ca11aad0",
+      "content_id": "65e6aa00-744b-4fbe-ae43-2c9f5bbfc7ad",
+      "claim_id": "C104",
+      "claim": "Both negatively and positively correlated DMRs were observed in almost equal proportions.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed both negatively and positively correlated DMRs in almost equal proportions, indicating both repression and activation of gene expression by DNA methylation and supporting the revised view of the functions of DNA methylation (Greenberg and Bourc'his, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the correlation analysis showing 618 negative and 583 positive correlations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:24:43.923554Z"
+    },
+    {
+      "id": "c53d77d9-8e8f-4870-a338-9c789f403830",
+      "content_id": "65e6aa00-744b-4fbe-ae43-2c9f5bbfc7ad",
+      "claim_id": "C105",
+      "claim": "DNA methylation can both repress and activate gene expression.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed both negatively and positively correlated DMRs in almost equal proportions, indicating both repression and activation of gene expression by DNA methylation and supporting the revised view of the functions of DNA methylation (Greenberg and Bourc'his, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation of both positive and negative correlations and supported by a citation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:24:43.923554Z"
+    },
+    {
+      "id": "868c7c78-c7d9-4178-897b-f1fdeda40f10",
+      "content_id": "65e6aa00-744b-4fbe-ae43-2c9f5bbfc7ad",
+      "claim_id": "C106",
+      "claim": "DNMT3A is responsible for de novo DNA methylation.",
+      "claim_type": "EXPLICIT",
+      "source": "However, as DNMT3A is responsible for de novo DNA methylation, it is less clear how its knockdown affects circadian period.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about DNMT3A function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:24:43.923554Z"
+    },
+    {
+      "id": "6e72beba-97ea-4ac2-9989-e7416ceca3e4",
+      "content_id": "65e6aa00-744b-4fbe-ae43-2c9f5bbfc7ad",
+      "claim_id": "C107",
+      "claim": "DNMT3A might be involved in transcriptional activation associated with active enhancers.",
+      "claim_type": "EXPLICIT",
+      "source": "One possibility is that DNMT3A is also involved in transcriptional activation associated with active enhancers (Rinaldi et al., 2016; Lyko, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative mechanism supported by citations.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:24:43.923554Z"
+    },
+    {
+      "id": "55615020-57eb-4862-9c1c-142ceed90515",
+      "content_id": "65e6aa00-744b-4fbe-ae43-2c9f5bbfc7ad",
+      "claim_id": "C108",
+      "claim": "Some genes might undergo dynamic demethylation and de novo methylation since both Tet2 and Tet3 are expressed at comparable levels to Dnmt3a.",
+      "claim_type": "EXPLICIT",
+      "source": "Another possibility is that some genes might undergo dynamic demethylation and de novo methylation since both Tet2 and Tet3 are expressed at comparable levels to Dnmt3a in our cellular system (Oh et al., 2018; Oh et al., 2019; Figure 2\u2014source data 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative mechanism based on expression data and supported by citations.",
+      "evidence_type": "[\"SPECULATION\", \"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:24:43.923554Z"
+    },
+    {
+      "id": "a5edae52-2ba3-4bf5-97f2-b505a904a7e8",
+      "content_id": "65e6aa00-744b-4fbe-ae43-2c9f5bbfc7ad",
+      "claim_id": "C109",
+      "claim": "Single cells from parent culture have a mean period of 24.38 \u00b1 1.20 hr, ranging from 21.55\u201327.82 hr.",
+      "claim_type": "EXPLICIT",
+      "source": "Single cells: 24.38 \u00b1 1.20 hr (mean \u00b1 SD), ranged 21.55\u201327.82 hr.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is data from single-cell measurements shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:24:43.923554Z"
+    },
+    {
+      "id": "076d0be1-8e62-46c9-b285-19d6482ccf92",
+      "content_id": "65e6aa00-744b-4fbe-ae43-2c9f5bbfc7ad",
+      "claim_id": "C110",
+      "claim": "Clonal cell lines have a mean period of 24.81 \u00b1 0.83 hr, ranging from 22.76\u201327.65 hr.",
+      "claim_type": "EXPLICIT",
+      "source": "Clonal cell lines: 24.81 \u00b1 0.83 hr, ranged 22.76\u201327.65 hr.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is data from clonal cell line measurements shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:24:43.923554Z"
+    },
+    {
+      "id": "bc97d7de-e824-402c-8b2f-4b7b2ca73ade",
+      "content_id": "65e6aa00-744b-4fbe-ae43-2c9f5bbfc7ad",
+      "claim_id": "C111",
+      "claim": "Two-way ANOVA revealed significant effects (p<0.01) of both cell line and passage on circadian period.",
+      "claim_type": "EXPLICIT",
+      "source": "Although two-way ANOVA revealed significant effects (p<0.01) of both cell line and passage, there was no interaction (p=0.09).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on statistical analysis of period measurements across passages.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:24:43.923554Z"
+    },
+    {
+      "id": "701b9ffa-4d90-42c1-aaa7-b26d975e8819",
+      "content_id": "65e6aa00-744b-4fbe-ae43-2c9f5bbfc7ad",
+      "claim_id": "C112",
+      "claim": "There was no interaction between cell line and passage effects on circadian period (p=0.09).",
+      "claim_type": "EXPLICIT",
+      "source": "Although two-way ANOVA revealed significant effects (p<0.01) of both cell line and passage, there was no interaction (p=0.09).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on statistical analysis of period measurements across passages.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:24:43.923554Z"
+    },
+    {
+      "id": "bab04ce7-719c-4a87-923a-c1f41da15031",
+      "content_id": "65e6aa00-744b-4fbe-ae43-2c9f5bbfc7ad",
+      "claim_id": "C113",
+      "claim": "Only ~5% of comparisons (11 out of 200) showed significant differences in period within each clonal cell line across passages.",
+      "claim_type": "EXPLICIT",
+      "source": "Multiple comparisons within each clonal cell line across passages identified a significant difference (adjusted p<0.05) for only ~5% of comparisons (11 out of 200), which is consistent with 5% false positive rate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on multiple comparison analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:24:43.923554Z"
+    },
+    {
+      "id": "6b47c1ca-a605-466d-a11b-b062a141c1d9",
+      "content_id": "65e6aa00-744b-4fbe-ae43-2c9f5bbfc7ad",
+      "claim_id": "C114",
+      "claim": "Functionally related genes are usually co-expressed.",
+      "claim_type": "EXPLICIT",
+      "source": "Because functionally related genes are usually co-expressed (Heyer et al., 1999), we further characterized the period-correlated DE genes by examining their co-expression patterns.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by a citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:24:43.923554Z"
+    },
+    {
+      "id": "a28e5211-dbea-462f-9903-61f116630153",
+      "content_id": "65e6aa00-744b-4fbe-ae43-2c9f5bbfc7ad",
+      "claim_id": "C115",
+      "claim": "The EIF2 signaling pathway is associated with elevated translational activity in the LP group.",
+      "claim_type": "IMPLICIT",
+      "source": "For example, the blue module is highly enriched for DE genes, and is also enriched for the EIF2 signaling pathway, which has been recently shown to regulate circadian period, consistent with the predicted elevated translational activity in LP group (Pathak et al., 2019; Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the enrichment of EIF2 signaling pathway in the blue module which is upregulated in LP group.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:24:43.923554Z"
+    },
+    {
+      "id": "83ee3b4d-1347-43dd-8a18-f85a56a0b0a9",
+      "content_id": "65e6aa00-744b-4fbe-ae43-2c9f5bbfc7ad",
+      "claim_id": "C116",
+      "claim": "Co-expressed DE genes are physically interconnected in protein-protein interaction networks.",
+      "claim_type": "EXPLICIT",
+      "source": "Further analysis of Protein-protein Interactions (PPI) revealed that co-expressed DE genes were also physically interconnected.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on PPI network analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:24:43.923554Z"
+    },
+    {
+      "id": "de90c437-4d0b-42cc-bb56-dbfcea69715f",
+      "content_id": "65e6aa00-744b-4fbe-ae43-2c9f5bbfc7ad",
+      "claim_id": "C117",
+      "claim": "Within the blue module there are several tightly linked clusters enriched for ribosomal RNA processing, protein ubiquitination, nucleotide and amino acid metabolism, and mRNA splicing.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, within the blue module there were several different tightly linked clusters, including those enriched for ribosomal RNA processing, protein ubiquitination, nucleotide and amino acid metabolism, and mRNA splicing, emphasizing the blue module as a transcriptional/translational related gene network (Figure 4E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on PPI network analysis shown in Figure 4E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:24:43.923554Z"
+    },
+    {
+      "id": "84657e75-38d1-460f-928a-cd9bfa0b47c0",
+      "content_id": "65e6aa00-744b-4fbe-ae43-2c9f5bbfc7ad",
+      "claim_id": "C118",
+      "claim": "The blue module is a transcriptional/translational related gene network.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, within the blue module there were several different tightly linked clusters, including those enriched for ribosomal RNA processing, protein ubiquitination, nucleotide and amino acid metabolism, and mRNA splicing, emphasizing the blue module as a transcriptional/translational related gene network (Figure 4E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the functional enrichment of genes in the blue module.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:24:43.923554Z"
+    },
+    {
+      "id": "4fdf0774-8b6b-4366-ae4c-3079d4382728",
+      "content_id": "65e6aa00-744b-4fbe-ae43-2c9f5bbfc7ad",
+      "claim_id": "C119",
+      "claim": "Period heterogeneity is regulated by changes in large-scale functional gene co-expression networks.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, our results suggest that period heterogeneity is regulated by changes in large-scale functional gene co-expression networks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the WGCNA analysis and pathway enrichment results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:24:43.923554Z"
+    },
+    {
+      "id": "47b7f4be-b985-4ecd-9567-fa37f65f9c0a",
+      "content_id": "65e6aa00-744b-4fbe-ae43-2c9f5bbfc7ad",
+      "claim_id": "C120",
+      "claim": "Immortalized mouse ear fibroblast cells carrying PER2::LUCsv bioluminescence reporter express persistent, robust, and cell-autonomous circadian oscillations over a 2 week period.",
+      "claim_type": "EXPLICIT",
+      "source": "We recently showed that these cells express persistent, robust, and cell-autonomous circadian oscillations over a 2 week period.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to the authors' previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:24:43.923554Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "e279f4fc-a7bb-4c7e-9249-75930fef8cd1",
+      "content_id": "65e6aa00-744b-4fbe-ae43-2c9f5bbfc7ad",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Circadian period heterogeneity is heritable and stable across at least 20 cell passages in clonal cell lines. Clonal cell lines generated from parent culture showed period distributions similar to single cells (24.81 \u00b1 0.83 hr vs 24.38 \u00b1 1.20 hr), with cell line identity accounting for 74.70% of variation while passage contributed only 2.64%.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C25-C29, and C109-C113 provide converging evidence from single-cell tracking, clonal line measurements, and statistical analysis (two-way ANOVA) demonstrating heritability and stability of circadian period. The data show consistent period distributions across 20 passages with minimal passage effects, supporting the conclusion that period is a heritable phenotype.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:24:43.923554Z"
+    },
+    {
+      "id": "97ffd4be-f031-4059-abc1-ecab8e438484",
+      "content_id": "65e6aa00-744b-4fbe-ae43-2c9f5bbfc7ad",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Multiple novel candidate genes regulate circadian period in the absence of significant genomic variants. RNA-seq identified 5,137 period-correlated DE genes between SP and LP groups, with 67 overlapping genes across three datasets. Knockdown validation showed 86% (12/14) of tested genes significantly altered period, including Ak3, Trim3, Cpeb1, Lrrfip1, Rbfa, Dars, Ipo13, Tmem165, Slc8a3, Jun, Med23, and Cpa4.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C30-C49, C95 are supported by comprehensive RNA-seq analysis across multiple clonal lines and subclones, with functional validation through knockdown experiments. The 86% validation rate (C95) and consistent effects across different clones (C48) provide strong evidence. However, the mechanistic understanding of how these genes regulate period remains incomplete.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:24:43.923554Z"
+    },
+    {
+      "id": "e8c9913d-a0b0-4c97-a5f9-96dc7ecaf8ae",
+      "content_id": "65e6aa00-744b-4fbe-ae43-2c9f5bbfc7ad",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Period-correlated differentially expressed genes organize into co-expression networks associated with stress response and metabolic pathways. WGCNA identified 31 modules, with blue, lightgreen, green, and darkred modules enriched for positively correlated DE genes, and salmon, pink, red, and darkgreen modules enriched for negatively correlated genes. The blue module was enriched for EIF2 signaling pathway, validated by small molecule activators shortening period.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C50-C60, C114-C119 demonstrate large-scale gene network organization using WGCNA, pathway enrichment analysis, and PPI networks. The functional validation with EIF2 pathway activators (C56) strengthens the conclusion. The enrichment of known circadian-relevant pathways (mTOR, protein ubiquitination, NRF2) provides additional support.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:24:43.923554Z"
+    },
+    {
+      "id": "1313fa0b-c7cb-4451-bea5-fd2ff4cc51bf",
+      "content_id": "65e6aa00-744b-4fbe-ae43-2c9f5bbfc7ad",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Global differential DNA methylation bidirectionally regulates gene networks associated with circadian period. RRBS identified 16,520 DMRs, with 1,315 DMR-associated genes overlapping with period-correlated DE genes. Both negative (618) and positive (583) correlations were observed between methylation and gene expression in almost equal proportions. Methylome clustering patterns resembled transcriptome patterns.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C65-C74, C97-C99, C104-C105 provide comprehensive evidence from RRBS sequencing showing bidirectional regulation by DNA methylation. The similar clustering of methylomes and transcriptomes (C73-C74) and nearly equal proportions of positive/negative correlations (C104) support the bidirectional regulation model. However, causality is inferred rather than directly demonstrated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:24:43.923554Z"
+    },
+    {
+      "id": "c4cee3e4-ad6c-40ed-bdb7-9d9a365868a8",
+      "content_id": "65e6aa00-744b-4fbe-ae43-2c9f5bbfc7ad",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Hub genes of period-correlated modules are regulated by DNA methylation with functional consequences for circadian period. Htatip2 (blue module) was hypermethylated and repressed in SP group; Parvb and Rftn1 were hypermethylated and repressed in LP group. Knockdown of Htatip2 and Dusp18 shortened period in LP clones, while Rftn1 knockdown lengthened period in SP clones.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C75-C81 provide specific examples of methylation-regulated hub genes with functional validation through knockdown experiments. The coherence between methylation status, expression, and period phenotype is demonstrated. However, C82-C83 are mechanistic speculations supported only by citations, not direct experimental evidence in this study.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:24:43.923554Z"
+    },
+    {
+      "id": "f682c614-358e-48aa-b5fa-182dcf63b968",
+      "content_id": "65e6aa00-744b-4fbe-ae43-2c9f5bbfc7ad",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "DNMT1 and DNMT3A have opposite, non-redundant effects on circadian period. Dnmt1 knockdown significantly shortened period while Dnmt3a knockdown lengthened period, with consistent effects across all 10 clonal cell lines tested. Pharmacological validation with SGI-1027 (DNMT1 inhibitor) shortened period while zebularine (dual DNMT1/3A inhibitor) lengthened period in multiple cell types.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6-C7, C84-C91 demonstrate opposite effects of DNMT1 and DNMT3A through genetic knockdown and pharmacological validation across multiple cell lines and cell types. The consistency across clones (C86-C87) and validation in primary MEFs and NIH3T3 cells (C90) strengthen the conclusion. The opposite effects support non-redundant roles (C7, C91).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:24:43.923554Z"
+    },
+    {
+      "id": "baabb02b-723a-4a8c-99a9-ff89458e2905",
+      "content_id": "65e6aa00-744b-4fbe-ae43-2c9f5bbfc7ad",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "DNA methylation is an important regulator of circadian periodicity through genome-wide changes in gene expression. This represents a novel mechanism distinct from previously reported methylation of core clock genes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8 and C101 represent the main conclusion synthesizing multiple lines of evidence: DMR identification, correlation with gene expression, functional validation of hub genes, and DNMT manipulation. The evidence from C5, C65-C105 collectively supports this conclusion, though the relative contribution of methylation versus other mechanisms remains to be fully quantified.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:24:43.923554Z"
+    },
+    {
+      "id": "a1533f7b-5e26-4adf-bf55-35e2f56f8276",
+      "content_id": "65e6aa00-744b-4fbe-ae43-2c9f5bbfc7ad",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Somatic mutations and core clock gene expression differences are unlikely to underlie period heterogeneity. Whole-exome sequencing identified only four genes with unique variants, two of which are not expressed and none with known circadian functions. Core clock genes showed no significant differences among subclones despite some differential expression in parental cultures.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C61-C64, C92-C94, C102 provide negative results that help rule out genetic mutation and core clock gene expression as primary mechanisms. The whole-exome sequencing data (C61-C64) and subclone RNA-seq analysis (C92-C94) support these conclusions. However, regulatory region variants (C103) were not fully explored, representing a limitation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:24:43.923554Z"
+    },
+    {
+      "id": "e65a2a75-2880-4749-9976-a1b34f01fa0f",
+      "content_id": "65e6aa00-744b-4fbe-ae43-2c9f5bbfc7ad",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Circadian period is determined by ensemble interactions of many genes that can individually shorten or lengthen period.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C96 is supported by the identification and validation of multiple genes with opposing effects on period (C34-C45). The 86% validation rate (C95) and consistent directional effects across clones demonstrate that period emerges from complex multi-gene interactions rather than single gene effects.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:24:43.923554Z"
+    },
+    {
+      "id": "4ee75900-b4f7-427a-9d6c-cf75dcf8a3aa",
+      "content_id": "65e6aa00-744b-4fbe-ae43-2c9f5bbfc7ad",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "DNMT3A may regulate circadian period through transcriptional activation at active enhancers or dynamic methylation/demethylation cycles involving TET enzymes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C106-C108 are speculative mechanisms proposed to explain DNMT3A's effects. While C106 states established knowledge, C107-C108 are hypotheses supported only by citations and expression data showing TET2/TET3 expression. No direct experimental evidence is provided to test these mechanisms, making the evaluation uncertain.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:24:43.923554Z"
+    },
+    {
+      "id": "e698a284-495f-4f69-83af-c825f4c17eca",
+      "content_id": "65e6aa00-744b-4fbe-ae43-2c9f5bbfc7ad",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Genetic variation in regulatory regions or other epigenetic modifications could be involved in circadian period heterogeneity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C103 acknowledges limitations of the study - regulatory region variants and other epigenetic modifications were not comprehensively examined. This represents an important caveat but is stated as speculation without supporting data, making evaluation uncertain.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:24:43.923554Z"
+    },
+    {
+      "id": "39c6542e-3906-42b5-8e88-4de1d1263fc1",
+      "content_id": "65e6aa00-744b-4fbe-ae43-2c9f5bbfc7ad",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Background knowledge claims about circadian biology, DNA methylation, and the experimental system.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C9-C24, C100, C120 represent established knowledge supported by citations or describe the experimental system. These provide necessary context but are not novel findings of this study. All are appropriately cited or previously published by the authors.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:24:43.923554Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "f813e073-294f-46cd-910b-ac42bee5d452",
+      "result_id": "e279f4fc-a7bb-4c7e-9249-75930fef8cd1"
+    },
+    {
+      "claim_id": "e3a8305b-054d-4211-a1b7-55faa4f5c9f7",
+      "result_id": "e279f4fc-a7bb-4c7e-9249-75930fef8cd1"
+    },
+    {
+      "claim_id": "5d1e32cc-aab1-4259-941c-4e73c1bf6d23",
+      "result_id": "e279f4fc-a7bb-4c7e-9249-75930fef8cd1"
+    },
+    {
+      "claim_id": "d6e3a63c-8bce-4c87-9288-fa8f0672d0bc",
+      "result_id": "e279f4fc-a7bb-4c7e-9249-75930fef8cd1"
+    },
+    {
+      "claim_id": "0b4be084-5506-4d29-8d7c-eac4911f2eba",
+      "result_id": "e279f4fc-a7bb-4c7e-9249-75930fef8cd1"
+    },
+    {
+      "claim_id": "97561fc7-c4e4-4e20-ba9a-45b36e14d724",
+      "result_id": "e279f4fc-a7bb-4c7e-9249-75930fef8cd1"
+    },
+    {
+      "claim_id": "a5edae52-2ba3-4bf5-97f2-b505a904a7e8",
+      "result_id": "e279f4fc-a7bb-4c7e-9249-75930fef8cd1"
+    },
+    {
+      "claim_id": "076d0be1-8e62-46c9-b285-19d6482ccf92",
+      "result_id": "e279f4fc-a7bb-4c7e-9249-75930fef8cd1"
+    },
+    {
+      "claim_id": "bc97d7de-e824-402c-8b2f-4b7b2ca73ade",
+      "result_id": "e279f4fc-a7bb-4c7e-9249-75930fef8cd1"
+    },
+    {
+      "claim_id": "701b9ffa-4d90-42c1-aaa7-b26d975e8819",
+      "result_id": "e279f4fc-a7bb-4c7e-9249-75930fef8cd1"
+    },
+    {
+      "claim_id": "bab04ce7-719c-4a87-923a-c1f41da15031",
+      "result_id": "e279f4fc-a7bb-4c7e-9249-75930fef8cd1"
+    },
+    {
+      "claim_id": "da632917-6e23-41c6-ac19-c33df9e208fd",
+      "result_id": "97ffd4be-f031-4059-abc1-ecab8e438484"
+    },
+    {
+      "claim_id": "67ab0d14-e295-4eb5-83f5-c6b4a52fca80",
+      "result_id": "97ffd4be-f031-4059-abc1-ecab8e438484"
+    },
+    {
+      "claim_id": "2ad28474-0224-4914-891c-094a9dda1ba0",
+      "result_id": "97ffd4be-f031-4059-abc1-ecab8e438484"
+    },
+    {
+      "claim_id": "589be353-fd35-40dc-8520-4f76278faed7",
+      "result_id": "97ffd4be-f031-4059-abc1-ecab8e438484"
+    },
+    {
+      "claim_id": "85222f57-4428-4c8c-8cd7-604f755d5bd5",
+      "result_id": "97ffd4be-f031-4059-abc1-ecab8e438484"
+    },
+    {
+      "claim_id": "8b7afe45-1ae1-49ce-acdc-d3b7db21cb96",
+      "result_id": "97ffd4be-f031-4059-abc1-ecab8e438484"
+    },
+    {
+      "claim_id": "adb90818-1388-4614-84f3-e03e4657f505",
+      "result_id": "97ffd4be-f031-4059-abc1-ecab8e438484"
+    },
+    {
+      "claim_id": "2fd65798-b7c4-436a-b337-10002b0a76fe",
+      "result_id": "97ffd4be-f031-4059-abc1-ecab8e438484"
+    },
+    {
+      "claim_id": "6da140ba-3291-49c7-8101-b1fde55dd433",
+      "result_id": "97ffd4be-f031-4059-abc1-ecab8e438484"
+    },
+    {
+      "claim_id": "e8109ca6-4aea-4579-9204-27857cc7092b",
+      "result_id": "97ffd4be-f031-4059-abc1-ecab8e438484"
+    },
+    {
+      "claim_id": "8158958c-2ba2-4ddb-abb2-14cadae4835c",
+      "result_id": "97ffd4be-f031-4059-abc1-ecab8e438484"
+    },
+    {
+      "claim_id": "45697cdb-1675-4681-be20-0ce0ac304a66",
+      "result_id": "97ffd4be-f031-4059-abc1-ecab8e438484"
+    },
+    {
+      "claim_id": "50366366-b17c-400d-b455-fc51208fdb29",
+      "result_id": "97ffd4be-f031-4059-abc1-ecab8e438484"
+    },
+    {
+      "claim_id": "416af71d-25eb-40f8-a0b2-1207d5a73d5d",
+      "result_id": "97ffd4be-f031-4059-abc1-ecab8e438484"
+    },
+    {
+      "claim_id": "ea22e274-dd8d-4ce1-8414-b8dd9a4fc9fa",
+      "result_id": "97ffd4be-f031-4059-abc1-ecab8e438484"
+    },
+    {
+      "claim_id": "590eae57-ee6e-49a3-8203-3426bbf89a0d",
+      "result_id": "97ffd4be-f031-4059-abc1-ecab8e438484"
+    },
+    {
+      "claim_id": "5a7971f7-9e93-4666-aef5-6153162421ab",
+      "result_id": "97ffd4be-f031-4059-abc1-ecab8e438484"
+    },
+    {
+      "claim_id": "4ad94b92-ffcf-48d5-b141-de2e69b686d0",
+      "result_id": "97ffd4be-f031-4059-abc1-ecab8e438484"
+    },
+    {
+      "claim_id": "d81c9f9e-7aaf-4f1e-9fbf-e2cb0da2e5c1",
+      "result_id": "97ffd4be-f031-4059-abc1-ecab8e438484"
+    },
+    {
+      "claim_id": "38433bd7-b451-4826-9396-5984bb6af091",
+      "result_id": "97ffd4be-f031-4059-abc1-ecab8e438484"
+    },
+    {
+      "claim_id": "a93f224c-f8bf-46df-8eb6-e7d719dfee56",
+      "result_id": "97ffd4be-f031-4059-abc1-ecab8e438484"
+    },
+    {
+      "claim_id": "0c24f2d2-bced-4d79-b607-a795b92408f2",
+      "result_id": "97ffd4be-f031-4059-abc1-ecab8e438484"
+    },
+    {
+      "claim_id": "d1b2a1a3-f46e-4c25-8879-88e3f05a45a7",
+      "result_id": "e8c9913d-a0b0-4c97-a5f9-96dc7ecaf8ae"
+    },
+    {
+      "claim_id": "4d7420df-be85-401c-af3a-7bac7118e826",
+      "result_id": "e8c9913d-a0b0-4c97-a5f9-96dc7ecaf8ae"
+    },
+    {
+      "claim_id": "278b8655-567a-433b-8a7d-f1c26e10568c",
+      "result_id": "e8c9913d-a0b0-4c97-a5f9-96dc7ecaf8ae"
+    },
+    {
+      "claim_id": "336fff55-1b9b-434a-9725-a8366f2c7669",
+      "result_id": "e8c9913d-a0b0-4c97-a5f9-96dc7ecaf8ae"
+    },
+    {
+      "claim_id": "207e9914-18b7-41c6-91b0-7711acc76c07",
+      "result_id": "e8c9913d-a0b0-4c97-a5f9-96dc7ecaf8ae"
+    },
+    {
+      "claim_id": "3d798c6f-2980-4857-8839-9088c6ee272f",
+      "result_id": "e8c9913d-a0b0-4c97-a5f9-96dc7ecaf8ae"
+    },
+    {
+      "claim_id": "a854ac07-28c4-45be-bb09-9062ff7a3e6c",
+      "result_id": "e8c9913d-a0b0-4c97-a5f9-96dc7ecaf8ae"
+    },
+    {
+      "claim_id": "8c2851f4-e091-4e9a-8e71-7693e9fc4af2",
+      "result_id": "e8c9913d-a0b0-4c97-a5f9-96dc7ecaf8ae"
+    },
+    {
+      "claim_id": "3b00e6a3-065d-4564-b324-7bf565bb1ee1",
+      "result_id": "e8c9913d-a0b0-4c97-a5f9-96dc7ecaf8ae"
+    },
+    {
+      "claim_id": "0f44dd1c-7117-4157-9af0-1daf119af1e2",
+      "result_id": "e8c9913d-a0b0-4c97-a5f9-96dc7ecaf8ae"
+    },
+    {
+      "claim_id": "c0abfc69-2121-4c18-9591-158fa02bf491",
+      "result_id": "e8c9913d-a0b0-4c97-a5f9-96dc7ecaf8ae"
+    },
+    {
+      "claim_id": "435fd446-f3a0-4e9b-bea9-4a5f8d2da3cc",
+      "result_id": "e8c9913d-a0b0-4c97-a5f9-96dc7ecaf8ae"
+    },
+    {
+      "claim_id": "6b47c1ca-a605-466d-a11b-b062a141c1d9",
+      "result_id": "e8c9913d-a0b0-4c97-a5f9-96dc7ecaf8ae"
+    },
+    {
+      "claim_id": "a28e5211-dbea-462f-9903-61f116630153",
+      "result_id": "e8c9913d-a0b0-4c97-a5f9-96dc7ecaf8ae"
+    },
+    {
+      "claim_id": "83ee3b4d-1347-43dd-8a18-f85a56a0b0a9",
+      "result_id": "e8c9913d-a0b0-4c97-a5f9-96dc7ecaf8ae"
+    },
+    {
+      "claim_id": "de90c437-4d0b-42cc-bb56-dbfcea69715f",
+      "result_id": "e8c9913d-a0b0-4c97-a5f9-96dc7ecaf8ae"
+    },
+    {
+      "claim_id": "84657e75-38d1-460f-928a-cd9bfa0b47c0",
+      "result_id": "e8c9913d-a0b0-4c97-a5f9-96dc7ecaf8ae"
+    },
+    {
+      "claim_id": "4fdf0774-8b6b-4366-ae4c-3079d4382728",
+      "result_id": "e8c9913d-a0b0-4c97-a5f9-96dc7ecaf8ae"
+    },
+    {
+      "claim_id": "ee5942e1-6908-4414-b408-80c7a9b4164c",
+      "result_id": "1313fa0b-c7cb-4451-bea5-fd2ff4cc51bf"
+    },
+    {
+      "claim_id": "1e638760-f715-44fd-9b36-a9a382133fe9",
+      "result_id": "1313fa0b-c7cb-4451-bea5-fd2ff4cc51bf"
+    },
+    {
+      "claim_id": "8ec6f2dc-c614-459c-8bfc-7be747c0e05d",
+      "result_id": "1313fa0b-c7cb-4451-bea5-fd2ff4cc51bf"
+    },
+    {
+      "claim_id": "1cefd7cd-9c90-4f92-9145-7179458c94a3",
+      "result_id": "1313fa0b-c7cb-4451-bea5-fd2ff4cc51bf"
+    },
+    {
+      "claim_id": "820b947d-c2e9-415e-ada1-75e42b170337",
+      "result_id": "1313fa0b-c7cb-4451-bea5-fd2ff4cc51bf"
+    },
+    {
+      "claim_id": "e8bae686-7b67-4686-a7a3-88835e600c2e",
+      "result_id": "1313fa0b-c7cb-4451-bea5-fd2ff4cc51bf"
+    },
+    {
+      "claim_id": "fcb282f1-520d-4439-93d2-54fc99e8c5e2",
+      "result_id": "1313fa0b-c7cb-4451-bea5-fd2ff4cc51bf"
+    },
+    {
+      "claim_id": "533d0449-6e8d-4747-a382-1a784e67475d",
+      "result_id": "1313fa0b-c7cb-4451-bea5-fd2ff4cc51bf"
+    },
+    {
+      "claim_id": "e3ebedd1-b8af-454e-89cf-7a4ea92f3333",
+      "result_id": "1313fa0b-c7cb-4451-bea5-fd2ff4cc51bf"
+    },
+    {
+      "claim_id": "c8c83044-db38-4188-ab06-92cb2acf7017",
+      "result_id": "1313fa0b-c7cb-4451-bea5-fd2ff4cc51bf"
+    },
+    {
+      "claim_id": "e4886d0d-aca7-452e-8dfe-7a31ff955c6f",
+      "result_id": "1313fa0b-c7cb-4451-bea5-fd2ff4cc51bf"
+    },
+    {
+      "claim_id": "f5015eeb-1d4e-4dbd-853c-d1ea1a3948a5",
+      "result_id": "1313fa0b-c7cb-4451-bea5-fd2ff4cc51bf"
+    },
+    {
+      "claim_id": "1deb6742-d35a-4a2a-a586-451fb93786d6",
+      "result_id": "1313fa0b-c7cb-4451-bea5-fd2ff4cc51bf"
+    },
+    {
+      "claim_id": "0746acbc-ad50-4b5a-a84a-48188e92e927",
+      "result_id": "1313fa0b-c7cb-4451-bea5-fd2ff4cc51bf"
+    },
+    {
+      "claim_id": "574bdd32-e5f9-45cd-8a87-c1c4ca11aad0",
+      "result_id": "1313fa0b-c7cb-4451-bea5-fd2ff4cc51bf"
+    },
+    {
+      "claim_id": "c53d77d9-8e8f-4870-a338-9c789f403830",
+      "result_id": "1313fa0b-c7cb-4451-bea5-fd2ff4cc51bf"
+    },
+    {
+      "claim_id": "73b1a859-8209-43a0-99e2-082ce3c1f609",
+      "result_id": "c4cee3e4-ad6c-40ed-bdb7-9d9a365868a8"
+    },
+    {
+      "claim_id": "925b0d8b-ffeb-4535-9b06-f295fff6044a",
+      "result_id": "c4cee3e4-ad6c-40ed-bdb7-9d9a365868a8"
+    },
+    {
+      "claim_id": "8296ff70-589b-4c2d-904f-1a044cb5ed82",
+      "result_id": "c4cee3e4-ad6c-40ed-bdb7-9d9a365868a8"
+    },
+    {
+      "claim_id": "564ade0a-e351-4cce-8c59-522a6a52d41e",
+      "result_id": "c4cee3e4-ad6c-40ed-bdb7-9d9a365868a8"
+    },
+    {
+      "claim_id": "61f5ea92-06db-4fbf-90eb-c0ddd6c2bcd3",
+      "result_id": "c4cee3e4-ad6c-40ed-bdb7-9d9a365868a8"
+    },
+    {
+      "claim_id": "1626350f-ab2f-4f77-a5c0-de172224dd15",
+      "result_id": "c4cee3e4-ad6c-40ed-bdb7-9d9a365868a8"
+    },
+    {
+      "claim_id": "86435eb5-3964-4065-bf9f-27d670167de7",
+      "result_id": "c4cee3e4-ad6c-40ed-bdb7-9d9a365868a8"
+    },
+    {
+      "claim_id": "049b4863-ba5f-46a3-9ad9-18c1faf6d3ef",
+      "result_id": "c4cee3e4-ad6c-40ed-bdb7-9d9a365868a8"
+    },
+    {
+      "claim_id": "212d2628-f3eb-428a-bfbd-5c31a62fca73",
+      "result_id": "c4cee3e4-ad6c-40ed-bdb7-9d9a365868a8"
+    },
+    {
+      "claim_id": "076e9732-61b0-4487-84c3-77554a4b9e1c",
+      "result_id": "f682c614-358e-48aa-b5fa-182dcf63b968"
+    },
+    {
+      "claim_id": "15a45eb0-00dc-4b58-9c97-d4f7672a5b4a",
+      "result_id": "f682c614-358e-48aa-b5fa-182dcf63b968"
+    },
+    {
+      "claim_id": "197aea14-c397-4b49-96c3-a0d925cdbeb8",
+      "result_id": "f682c614-358e-48aa-b5fa-182dcf63b968"
+    },
+    {
+      "claim_id": "76cef209-4855-4db0-b557-79a5ad67455b",
+      "result_id": "f682c614-358e-48aa-b5fa-182dcf63b968"
+    },
+    {
+      "claim_id": "fb77ef26-e7c1-4fff-8a8c-46d79ba0ecb8",
+      "result_id": "f682c614-358e-48aa-b5fa-182dcf63b968"
+    },
+    {
+      "claim_id": "fe020825-cdde-45df-bb2a-4c201aaf2da4",
+      "result_id": "f682c614-358e-48aa-b5fa-182dcf63b968"
+    },
+    {
+      "claim_id": "c5634013-da28-45ef-a089-4b5ee7294d7f",
+      "result_id": "f682c614-358e-48aa-b5fa-182dcf63b968"
+    },
+    {
+      "claim_id": "0ad94d95-c9f5-45aa-8f69-e8a0eb116d96",
+      "result_id": "f682c614-358e-48aa-b5fa-182dcf63b968"
+    },
+    {
+      "claim_id": "e9a5851a-62b5-48bb-8b73-d02337b37126",
+      "result_id": "f682c614-358e-48aa-b5fa-182dcf63b968"
+    },
+    {
+      "claim_id": "74132c47-e62d-4201-a962-2f60ca772f69",
+      "result_id": "f682c614-358e-48aa-b5fa-182dcf63b968"
+    },
+    {
+      "claim_id": "c55151d9-bd55-4208-862b-ea445771c644",
+      "result_id": "baabb02b-723a-4a8c-99a9-ff89458e2905"
+    },
+    {
+      "claim_id": "cf548ff1-0e80-45cb-b6ec-7b6819339a51",
+      "result_id": "baabb02b-723a-4a8c-99a9-ff89458e2905"
+    },
+    {
+      "claim_id": "49fb3cf7-9af5-4087-96f2-f9f551bf7cd6",
+      "result_id": "a1533f7b-5e26-4adf-bf55-35e2f56f8276"
+    },
+    {
+      "claim_id": "8e080b5c-2764-4dc8-9bfc-c8a49bfaa72f",
+      "result_id": "a1533f7b-5e26-4adf-bf55-35e2f56f8276"
+    },
+    {
+      "claim_id": "49c44de2-620b-42d7-aa59-53806a7376d5",
+      "result_id": "a1533f7b-5e26-4adf-bf55-35e2f56f8276"
+    },
+    {
+      "claim_id": "9a3f57ff-5261-4311-903f-65f9b5b736c9",
+      "result_id": "a1533f7b-5e26-4adf-bf55-35e2f56f8276"
+    },
+    {
+      "claim_id": "e4e8bd17-accf-481a-bce9-5d3b89930ee2",
+      "result_id": "a1533f7b-5e26-4adf-bf55-35e2f56f8276"
+    },
+    {
+      "claim_id": "29d2c25e-230d-4677-a527-30862a91c7a2",
+      "result_id": "a1533f7b-5e26-4adf-bf55-35e2f56f8276"
+    },
+    {
+      "claim_id": "61feecc7-547b-4528-bcf5-d4a4ba5c844f",
+      "result_id": "a1533f7b-5e26-4adf-bf55-35e2f56f8276"
+    },
+    {
+      "claim_id": "45237c24-68f9-43aa-8a67-ff1fd8265318",
+      "result_id": "a1533f7b-5e26-4adf-bf55-35e2f56f8276"
+    },
+    {
+      "claim_id": "d08dd176-026e-4c7e-828c-1d4de954abae",
+      "result_id": "e65a2a75-2880-4749-9976-a1b34f01fa0f"
+    },
+    {
+      "claim_id": "868c7c78-c7d9-4178-897b-f1fdeda40f10",
+      "result_id": "4ee75900-b4f7-427a-9d6c-cf75dcf8a3aa"
+    },
+    {
+      "claim_id": "6e72beba-97ea-4ac2-9989-e7416ceca3e4",
+      "result_id": "4ee75900-b4f7-427a-9d6c-cf75dcf8a3aa"
+    },
+    {
+      "claim_id": "55615020-57eb-4862-9c1c-142ceed90515",
+      "result_id": "4ee75900-b4f7-427a-9d6c-cf75dcf8a3aa"
+    },
+    {
+      "claim_id": "82a83e05-5857-4727-a474-2ed860134296",
+      "result_id": "e698a284-495f-4f69-83af-c825f4c17eca"
+    },
+    {
+      "claim_id": "2cc45bb5-4a5a-4f78-a7c3-281670f8a0ce",
+      "result_id": "39c6542e-3906-42b5-8e88-4de1d1263fc1"
+    },
+    {
+      "claim_id": "40b5cd7a-f61e-4fd2-8388-63f1ef1d6943",
+      "result_id": "39c6542e-3906-42b5-8e88-4de1d1263fc1"
+    },
+    {
+      "claim_id": "77f563df-ef9b-4c9e-9d73-284fd9cbb3ce",
+      "result_id": "39c6542e-3906-42b5-8e88-4de1d1263fc1"
+    },
+    {
+      "claim_id": "53691876-dffa-4010-a4d0-47eafa1ca274",
+      "result_id": "39c6542e-3906-42b5-8e88-4de1d1263fc1"
+    },
+    {
+      "claim_id": "42d1a3cf-1166-4ad8-978b-8eebe0e0ebe0",
+      "result_id": "39c6542e-3906-42b5-8e88-4de1d1263fc1"
+    },
+    {
+      "claim_id": "a2830667-24cb-4d31-8461-ed68651e8dab",
+      "result_id": "39c6542e-3906-42b5-8e88-4de1d1263fc1"
+    },
+    {
+      "claim_id": "c90a0c96-8392-4934-85da-243247d9c811",
+      "result_id": "39c6542e-3906-42b5-8e88-4de1d1263fc1"
+    },
+    {
+      "claim_id": "5850c93c-96af-4b82-8ae1-ec5f2b558f2e",
+      "result_id": "39c6542e-3906-42b5-8e88-4de1d1263fc1"
+    },
+    {
+      "claim_id": "7fd82cf5-8c7b-4fa8-8d4f-44f358928b12",
+      "result_id": "39c6542e-3906-42b5-8e88-4de1d1263fc1"
+    },
+    {
+      "claim_id": "75ebc06b-fe8d-4840-a4ba-fab4fffed4d1",
+      "result_id": "39c6542e-3906-42b5-8e88-4de1d1263fc1"
+    },
+    {
+      "claim_id": "4bd833e8-1444-4e7a-ab64-9c76f5f6c8da",
+      "result_id": "39c6542e-3906-42b5-8e88-4de1d1263fc1"
+    },
+    {
+      "claim_id": "59952661-39a2-461b-acd0-d34cf8306d7e",
+      "result_id": "39c6542e-3906-42b5-8e88-4de1d1263fc1"
+    },
+    {
+      "claim_id": "0e84d6d2-5cac-47eb-a3cc-306f0a7f8c19",
+      "result_id": "39c6542e-3906-42b5-8e88-4de1d1263fc1"
+    },
+    {
+      "claim_id": "de8e9653-892a-47d2-b58c-3bf0dd8da642",
+      "result_id": "39c6542e-3906-42b5-8e88-4de1d1263fc1"
+    },
+    {
+      "claim_id": "c7ed45bc-4f4c-4da0-adfc-c03e06e53009",
+      "result_id": "39c6542e-3906-42b5-8e88-4de1d1263fc1"
+    },
+    {
+      "claim_id": "52db0449-13e5-4f5c-bfe8-1866eee132f6",
+      "result_id": "39c6542e-3906-42b5-8e88-4de1d1263fc1"
+    },
+    {
+      "claim_id": "51f6042c-a03c-4c53-b22a-f435e8620ee5",
+      "result_id": "39c6542e-3906-42b5-8e88-4de1d1263fc1"
+    },
+    {
+      "claim_id": "7d6a6a58-03d9-4064-8977-a74472bcb573",
+      "result_id": "39c6542e-3906-42b5-8e88-4de1d1263fc1"
+    },
+    {
+      "claim_id": "47b7f4be-b985-4ecd-9567-fa37f65f9c0a",
+      "result_id": "39c6542e-3906-42b5-8e88-4de1d1263fc1"
+    }
+  ],
+  "comparisons": []
+}

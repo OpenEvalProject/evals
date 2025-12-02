@@ -1,0 +1,2162 @@
+{
+  "submission": {
+    "id": "fb547082-763d-4411-bf9c-050598682779",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T19:08:01.456908Z",
+    "updated_at": "2025-12-02T19:08:01.456908Z"
+  },
+  "content": [
+    {
+      "id": "15474fca-32e8-477b-bdda-83a21f92fb2f",
+      "submission_id": "fb547082-763d-4411-bf9c-050598682779",
+      "content_type": "manuscript",
+      "content_text": "# The autophagy adaptor NDP52 and the FIP200 coiled-coil allosterically activate ULK1 complex membrane recruitment\n\n## Authors\n\n- Xiaoshan Shi<sup>1</sup> ([ORCID: 0000-0001-7931-8684](https://orcid.org/0000-0001-7931-8684))\n- Chunmei Chang<sup>1</sup> ([ORCID: 0000-0002-5607-7985](https://orcid.org/0000-0002-5607-7985))\n- Adam L Yokom<sup>1</sup> ([ORCID: 0000-0002-3746-7961](https://orcid.org/0000-0002-3746-7961))\n- Liv E Jensen<sup>1</sup>\n- James H Hurley<sup>1</sup> ([ORCID: 0000-0001-5054-5445](https://orcid.org/0000-0001-5054-5445)) \u2020\n\n### Affiliations\n\n1. Department of Molecular and Cell Biology and California Institute for Quantitative Biosciences, University of California, Berkeley Berkeley United States\n2. Molecular Biophysics and Integrated Bioimaging Division, Lawrence Berkeley National Laboratory Berkeley United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe selective autophagy pathways of xenophagy and mitophagy are initiated when the adaptor NDP52 recruits the ULK1 complex to autophagic cargo. Hydrogen-deuterium exchange coupled to mass spectrometry (HDX-MS) was used to map the membrane and NDP52 binding sites of the ULK1 complex to unique regions of the coiled coil of the FIP200 subunit. Electron microscopy of the full-length ULK1 complex shows that the FIP200 coiled coil projects away from the crescent-shaped FIP200 N-terminal domain dimer. NDP52 allosterically stimulates membrane-binding by FIP200 and the ULK1 complex by promoting a more dynamic conformation of the membrane-binding portion of the FIP200 coiled coil. Giant unilamellar vesicle (GUV) reconstitution confirmed that membrane recruitment by the ULK1 complex is triggered by NDP52 engagement. These data reveal how the allosteric linkage between NDP52 and the ULK1 complex could drive the first membrane recruitment event of phagophore biogenesis in xenophagy and mitophagy.\n\n## Introduction\n\nAutophagy is a cellular process that maintains homeostasis via clearance of cellular components, degradation of damaged organelles and protection against viral and bacterial invasion (Boya et al., 2013). Autophagy entails the de novo formation of a double membrane structure (termed the isolation membrane), maturation into a sealed autophagosome, and delivery of substrates to the lysosome for degradation (Melia et al., 2020; Mercer et al., 2018). Macroautophagy and selective autophagy are two distinct modes of autophagy that differ in their initiation mechanisms and cargo specificity (Yu et al., 2018; Zaffagnini and Martens, 2016). During cellular starvation conditions, macroautophagy functions by the initial formation of an isolation membrane at ER exit sites and expands (Graef et al., 2013; Suzuki et al., 2013), engulfing cytoplasmic debris in a nonspecific manner. Selective autophagy functions via a set of autophagy adaptor proteins, which bind cargos directly or via polyubiquitin chains (Zaffagnini and Martens, 2016). The isolation membrane forms on the labeled cargo and tightly engulfs the cargo during maturation. A complex cascade of autophagy (ATG) related proteins, including the ULK1 complex, Class III PI3K complex, WIPIs, ATG12-5-16, LC3, ATG9, cargo adaptors, and others are required for mammalian autophagy (Bento et al., 2016; Hurley and Young, 2017). Through numerous studies, selective autophagy pathways for mitochondria (mitophagy), aggregates (aggrephagy), lysosomes (lysophagy), endoplasmic reticulum (ER-phagy), bacteria (xenophagy) and other cargos have been discovered (Zaffagnini and Martens, 2016). Correspondingly, a set of adaptors have been identified which function to decorate cargos for degradation. Nuclear domain 10 protein 52 (NDP52), optineurin, CCPG1, TAX1BP1 and p62 represent a subset of such adaptors (Kirkin and Rogov, 2019).\n\nNDP52, also known as Calcium Binding And Coiled-Coil Domain 2 (CALCOCO2), is a multifunctional autophagy adaptor that is crucial for both xenophagy and mitophagy (Lazarou et al., 2015; von Muhlinen et al., 2010). Knock out studies of NDP52 show a severe impairment of autophagic protection against Salmonella invasion (Verlhac et al., 2015) and diminished recruitment of the ULK1 complex during mitophagy (Lazarou et al., 2015). The N-terminal SKICH domain of NDP52 forms a network of interactions in xenophagy and mitophagy pathways (Ravenhill et al., 2019; Till et al., 2013). Recent work has shown the direct interaction of NDP52 with FIP200, a protein in the autophagy initiation ULK1 complex (Ravenhill et al., 2019; Vargas et al., 2019). This interaction is crucial for recruitment of ULK1 to initial phagophore sites, ultimately leading to the engulfment and degradation of selected cargo. NDP52 contains a LIR motif which is required for its interaction with LC3, a hallmark of the autophagosome membrane. Lastly, NDP52 has two domains that recognize cargo; a GALB1 domain, which interacts with galectin-8, and a UBZ domain that recognizes polyubiquitin conjugated to the bacterial surface (Thurston et al., 2009).\n\nThe ULK1 complex is comprised of the ULK1 kinase, focal adhesion kinase family interacting protein of 200 kDa (FIP200), autophagy-related protein 13 (ATG13), and ATG101 (Ganley et al., 2009; Hosokawa et al., 2009; Jung et al., 2009; Lin and Hurley, 2016; Mercer et al., 2009). ULK1 and 2 are interchangeable threonine/serine kinases which function as the catalytic subunit of the ULK1 complex. The N-terminal kinase domain is followed by a\u00a0~\u00a0550 residue intrinsically disordered region (IDR) and a C-terminal early autophagy tethering (EAT) domain which recruits ULK1 to the rest of the complex via ATG13 (Alers et al., 2014). This network of interactions is conserved in the yeast homolog Atg1 complex (Fujioka et al., 2014; Stjepanovic et al., 2014). FIP200 is a 1594 residue protein which contains a dimeric N-terminal scaffolding domain (Shi et al., 2020), an IDR, a coiled-coil (CC) region and a C-terminal \u2018Claw\u2019 domain (Turco et al., 2019). The C-shaped N-terminal domain dimer of FIP200 scaffolds assembly of the ULK1 complex while the C-terminal Claw domain interacts with cargo adaptors, including NDP52, p62 and CCPG1 (Ravenhill et al., 2019; Turco et al., 2019; Vargas et al., 2019). ATG13/101 form a HORMA dimer which interacts with PI3K and is required for ULK1 complex function and assembly (Qi et al., 2015; Suzuki et al., 2015). Little is known about the structure and function of the massive CC domain of FIP200, beyond the crystal structure of its very C-terminal 100 residues (Turco et al., 2019) and the identification of an NDP52 binding site between residues 1351\u20131441 (Ravenhill et al., 2019).\n\nThe ULK1 complex is rapidly recruited to invading bacteria and damaged mitochondria following their ubiquitination via its interaction with NDP52 (Ravenhill et al., 2019; Turco et al., 2020; Vargas et al., 2019). As the most upstream of the autophagy core complexes, ULK1 complex recruitment is pivotal to subsequent events in autophagosome biogenesis. The nature of the structural changes in the ULK1 complex following NDP52 engagement and how those changes influence recruitment of membranes and downstream autophagy components is, however, almost entirely unknown.\n\nDespite progress in crystallizing substructures of the ULK1 complex (Lin and Hurley, 2016) and an intermediate resolution cryo-EM structure of the FIP200 NTD (Shi et al., 2020), progress on the intact ULK1 complex containing full-length FIP200 has been very challenging. FIP200 is 1594 amino acid residues in length, and apart from the NTD and C-terminal Claw, consists of an intrinsically disordered region (IDR) and a massive 710-residue CC. These features have made full-length FIP200 and the intact ULK1 complex exceptionally difficult for biochemical and structural studies. Here we demonstrate that purified full length FIP200 forms an extended and\u00a0dynamic structure, which scaffolds the ULK1 complex at its dimeric\u00a0C-shaped N-terminal domain. Binding of NDP52 to full length FIP200 and the ULK1 complex does\u00a0not change the conformation of the N-terminal domain, but alters that\u00a0of\u00a0a large\u00a0portion of the FIP200 CC domain. This interaction increases the membrane affinity of FIP200. NDP52 induces robust recruitment of the ULK1 complex to giant unilamellar vesicles (GUVs) by exposing a membrane binding site within the CC domain of FIP200.\n\n## Results\n\n### Full length FIP200 forms an elongated scaffold for ULK1 and adaptor binding\n\nWe sought to investigate the\u00a0structure\u00a0of purified full-length FIP200. To express and purify full-length FIP200, a dual tag construct was developed. Wild-type FIP200 was expressed with a glutathione S-transferase (GST) tag fused to the N-terminus and a maltose binding protein (MBP) tag on the C terminus. After affinity purification, full-length GST-FIP200-MBP was characterized using negative stain electron microscopy (NSEM) (Figure 1A, Figure 1\u2014figure supplement 1A). Full length FIP200 single particles showed an extended density with a C-shaped density at one end, corresponding to the dimeric FIP200NTD previously resolved (Shi et al., 2020). Density for the GST tags can be seen in the center of the FIP200 NTD dimer (Figure 1\u2014figure supplement 1B). This N-terminal density is followed by a long meandering density which we assigned as the CC domain (residues 790\u20131500). The IDR region (640-790) was not visualized. The CC domain of FIP200 has segments of predicted dimeric coiled-coils and linker regions. Features visualized at the C-terminus of FIP200 correspond to density for two MBP tags (40 kDa each) and the Claw dimer (22 kDa) (Figure 1\u2014figure supplement 1C).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/59099/elife-59099-fig1-v2.jpg)\n\n**Figure 1.:** (A) Negative stain EM single particles of full length FIP200 alone. Scale bar 50 nm. (B) Histogram of FIP200 path length and end-to-end distances. (C) Difference of Hydrogen Deuterium Exchange percentages of the FIP200 alone vs FIP200:ATG13:ATG101:ULK1 at 60 s time point. All values are mean (Blue)\u00a0\u00b1\u00a0SD (Grey). N\u00a0=\u00a03 replicates.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/59099/elife-59099-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Negative Stain EM micrograph of full-length GST-FIP200-MBP. 2D class averages of the NTD dimer (B) and CTD Claw domain (C) of GST-FIP200-MBP. Green arrows indicate the GST tags and yellow arrows indicate the MBP tags. Scale bars are 10 nm.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/59099/elife-59099-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A) ADP-Glo Kinase assay of ULK1 complex with ULKtide as substrate. N\u00a0=\u00a05 biological replicates. All values are mean\u00a0\u00b1\u00a0SD. (B) Hydrogen Deuterium Exchange percentages of the FIP200 alone (Purple) and in FIP200:ATG13:ATG101:ULK1 (Blue) at 60 s time point. (C) Microscopy-based bead protein interaction assay with glutathione sepharose beads coated with GST-NDP52 as baits and incubated with GFP-tagged wild type ULK1 complex. Representative confocal micrographs are shown. Scale bars, 50 \u00b5m. (D) Pull-down efficiency of GFP-tagged wild type ULK1 complex by glutathione sepharose beads coated with GST-NDP52 or GST-4xUb as baits. N\u00a0=\u00a03 biological replicates. All values are mean\u00a0\u00b1\u00a0SD.\n\nThe CC was observed in a variety of conformations with varying lengths and curvatures. FIP200-CC domain comprises 710 residues which, if uninterrupted, would span about 105 nm. The contour lengths of the CC region in particles analyzed by NSEM ranged from 37 nm to 107 nm, with a mean length of 79 nm (Figure 1B). The presence of some particles with contour lengths far below the predicted maximum suggests that the CC is capable of folding back onto itself. The variability of the total length corresponds to a range of end-to-end distances distributed from 32 nm to 94 nm with a mean of 69 nm (Figure 1B). It is clear that the FIP200 N-terminus is separated from the C-terminus Claw domain. This spatially separates the site of ULK1 assembly at the NTD and the binding site of the cargo adaptors NDP52 near the C-terminal end of the CC (Ravenhill et al., 2019; Vargas et al., 2019) and p62 at the Claw domain C-terminal to the CC (Turco et al., 2019).\n\nTo investigate how the ULK1 complex assembles on full-length FIP200, we employed hydrogen-deuterium exchange mass spectrometry analysis (HDX-MS) on FIP200 alone and the full-length ULK1 complex. Purified ULK1 complex was active with respect to the synthetic substrate, ULKtide (Figure 1\u2014figure supplement 2A). Difference maps for H/D exchange showed a clear protection pattern in the FIP200NTD, similar to our previous results on the FIP200 NTD alone (Shi et al., 2020). Specifically, peptides spanning residues 75\u201380, 157\u2013165, 313\u2013324, 350\u2013356, 435\u2013469 and 532\u2013541 showed increases in protection of\u00a0>10% after exchanging for 60 s (Figure 1C, Figure 1\u2014figure supplement 2B). No large changes (>10%) were observed in FIP200 CC or Claw. This implies that assembly of the ULK1 complex with full length FIP200 does not affect the dynamics of the cargo-recognizing CC and Claw. Thus, FIP200 is a modular protein whose NTD engages with the rest of the ULK1 complex and whose CC and Claw engage independently with cargo adaptors.\n\n### ULK1 complex engages NDP52 only via FIP200\n\nNext, we used HDX-MS to systematically analyze how the H/D exchange rate of the ULK1 complex changed in the presence of NDP52. To validate the ULK1 complex sample, the complex was expressed with fluorescent GFP tags on ATG13 and ATG101 and purified. Labeled ULK1 complex was mixed with GST-NDP52, GST-4xUb and glutathione beads. The\u00a0fluorescence signal was quantified for each reaction condition (Figure 1\u2014figure supplement 2C,D). The\u00a0ULK1 complex was specifically pulled down by GST-NDP52, but not by GST-4xUb or GSH beads alone. This confirmed that the ULK1 complex recognizes cargo adaptors but not poly-ubiquitin chains directly in our in vitro system.\n\nIn the presence of NDP52, no large changes (<-10% or\u00a0>10%) were identified in peptides from ATG13, ATG101, ULK1 or the FIP200NTD (Figure 2A\u2013D, Figure 2\u2014figure supplement 1, all proteins at 2 \u03bcM, except FIP200 at 4 \u03bcM and NDP52 at 16 \u03bcM). A lack of HDX difference suggests that NDP52 does not directly or allosterically modulate these regions upon binding to the FIP200 CTD. However, our analysis showed three regions of the CC domain of FIP200 with significant protection in the presence of NDP52. Peptides of residues 1290\u20131320, 1339\u20131392 and 1462\u20131470 showed a decrease of deuterium exchange of\u00a0>10% (Figure 2D, Figure 2\u2014figure supplement 2A). Residues in the 1339\u20131392 region (L1371, L1378, L1385, and L1392) corresponds to the previously proposed as a binding site of NDP52 (Ravenhill et al., 2019; Vargas et al., 2019). Residues 1290\u20131320 and 1339\u20131392 display a higher level of protection than 1462\u20131470. Unexpectedly, an extensive region of the CC N-terminal to the NDP52 binding site, spanning FIP200 residues 800\u20131250, especially 935\u20131073, had increased H/D exchange rate after NDP52 binding (Figure 2D, Figure 2\u2014figure supplement 2A, Supplementary file 1- Table S1). These changes suggest that the N-terminal part of the CC is destabilized upon NDP52 binding.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/59099/elife-59099-fig2-v2.jpg)\n\n**Figure 2.:** (A\u2013D) Difference of Hydrogen Deuterium Exchange percentages of the ATG13 (A), ATG101 (B), ULK1 (C) and FIP200 (D) in ULK1 complex vs in ULK1 complex with NDP52 at the 60 s time point. All values are mean (Blue)\u00a0\u00b1\u00a0SD (Grey). N\u00a0=\u00a03 replicates. (E) Pull-down efficiency of GFP-tagged wild type ULK1 complex or GFP-FIP200 by glutathione sepharose beads coated with different concentrations of GST-NDP52 as baits. All values are mean\u00a0\u00b1\u00a0SD. N\u00a0=\u00a04 biological replicates. (F) Pull-down assays of mutant FIP200 constructs (M1\u2013M8) and wild type with NDP52. Both GSH and Amylose resin were used to pull down GST-FIP200(1274 C):MBP-NDP52 complex from lysate of overexpressing HEK cells. The pull-down results were visualized by SDS-PAGE and Coomassie blue staining.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/59099/elife-59099-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A\u2013D) Difference of Hydrogen Deuterium Exchange percentages of the ATG13 (A), ATG101 (B), ULK1 (C) and FIP200 (D) in ULK1 complex vs in ULK1 complex with NDP52 at the 6 s and 600 s time point. All values are mean (Blue)\u00a0\u00b1\u00a0SD (Grey).\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/59099/elife-59099-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A) Hydrogen Deuterium Exchange percentages of FIP200 in ULK1 complex (Purple) and in ULK1 complex with NDP52 (Blue) at the 60 s time point. (B) Hydrogen Deuterium Exchange percentages of FIP200 in ULK1 complex (Purple) and in ULK1 complex with POPS/POPI SUV (Blue) at the 60 s time point. (C) GSH resin was used to pull down GST-FIP200-MBP, GST-FIP200\u0394MR-MBP and GST-FIP200\u0394NDP52-MBP from lysate of overexpressing HEK cells. The pull-down results were visualized by SDS-PAGE and Coomassie blue staining.\n\nTo confirm the conclusion from HDX-MS that ULK1, ATG13 and ATG101 are not involved in NDP52 binding, fluorescent FIP200 alone and the complete ULK1 complex were compared in a GST pulldown assay with GST-NDP52 as bait (Figure 2E). FIP200 alone and the full ULK1 complex bound to the same extent to 0.1, 0.3 and 1 uM of GST-NDP52. To further investigate which regions of FIP200 bind directly to NDP52, we mutated eight regions identified by our HDX-MS analysis (Figure 2D). Regions selected for mutation were replaced by a poly Gly-Ser sequence of equal length to the wild-type region. GST pulldown assays showed that the expression of FIP200 was unaffected by the Gly-Ser mutations (Figure 2F, right). In addition, both GST and MBP pulldown assays confirmed that mutation of region 4 (1355\u20131362), 5 (1363\u20131370) and 6 (1371\u20131378) in FIP200 impaired the interaction with NDP52, while the rest showed small decreases in binding affinity (region 3 and 7) or minimal (region 1, 2 and 8) effects (Figure 2F).\n\n### FIP200 CC interacts with membranes\n\nThe finding that NDP52 increased the H/D exchange rate of a subset of the coiled-coil (800\u20131250) region of FIP200 stimulated our curiosity about the physiological function of this CC region. We thus used HDX-MS to systematically analyze if the ULK1 complex interacts with SUVs containing PI lipids. No large changes (<-10% or\u00a0>10%) were identified in peptides from ATG13 or ATG101 which suggests that PI containing membranes do not directly or allosterically modulate these proteins of the ULK1 complex (Figure 3A,B). In our assay, two regions of FIP200 showed significant protection. Residues within the N-terminal domain (539-564) showed moderate protection\u00a0~10%. However, the strongest protection profile (5\u201345%) was seen across an extended portion of the CC domain, covering residues 844\u20131073 (Figure 3C, Figure 2\u2014figure supplement 2B).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/59099/elife-59099-fig3-v2.jpg)\n\n**Figure 3.:** (A\u2013C) Difference of Hydrogen Deuterium Exchange percentages of the ATG13 (A), ATG101 (B) and FIP200 (C) in ULK1 complex vs in ULK1 complex with POPS/POPI SUV at the 60 s time point. All values are mean (Blue)\u00a0\u00b1\u00a0SD (Grey). N\u00a0=\u00a03 replicates. (D) Liposome sedimentation assay of FIP200 truncations alone\u00a0with POPS/POPI and POPC/POPE SUVs. Results were visualized by SDS-PAGE and Coomassie blue staining with the supernatant fractions (S) and pellet fractions (P).\n\nTo refine the mapping of the membrane binding site within FIP200, we compared truncations of the FIP200 in a liposome sedimentation assay. NTD (N-640) and CTD (636-C) FIP200 proteins were mixed with SUVs before separation into pellet and supernatant fractions (Figure 3D). The FIP200 CTD (636-C) containing the CC domain, but not FIP200 NTD, co-precipitated with membranes. This was most prominent in SUVs containing an acidic lipid mixture of PS/PI. Furthermore, a smaller amount of the FIP200 CTD was observed in the pellet of SUVs containing PC/PE. The interaction between the CC domain of FIP200 and membranes raises the possibility that NDP52 binding at the C-terminal CC domain could trigger destabilization or opening of the N-terminal CC domain, increasing exposure of hydrophobic residues and so stimulating membrane binding to the ULK1 complex.\n\n### Reconstitution of NDP52-stimulated membrane binding of the ULK1 complex\n\nTo investigate how NDP52 binding effects membrane recruitment of the ULK1 complex, we reconstituted this event on GUVs with an ER-like lipid composition. FIP200 alone was only minimally recruited to GUVs (Figure 4A,B). Additionally, minimal GUV binding was observed in the presence of His-tagged NDP52. GST-tagged NDP52 showed a small increase in membrane binding (Figure 4A,B). Given that the GST tag forms a native dimer, this suggested the oligomeric state of NDP52 was crucial for the activation of FIP200 membrane binding.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/59099/elife-59099-fig4-v2.jpg)\n\n**Figure 4.:** The schematic drawing illustrates the reaction setting. Colors indicate fluorescent protein fused components. Components in gray are not labeled but are present in the reaction mix. (A) Representative confocal micrographs showing the membrane recruitment of GFP-FIP200. GFP-FIP200 mixed with His-NDP52 or GST-NDP52 was incubated with GUVs, either in the absence or presence of GST-4xUb at room temperature. GFP-FIP200 alone or mixed with GST-4xUb was also incubated with GUVs at room temperature as controls. Images taken at indicated time points were shown. Scale bars, 10 \u00b5m. (B) Quantitation of the kinetics of FIP200 recruitment to the membrane from individual GUV tracing in A (means\u00a0\u00b1\u00a0SDs; N\u00a0=\u00a051 (-); 51 (His-NDP52); 48 (GST-NDP52); 53 (GST-4xUb); 72 (GST-4xUb+ His-NDP52); 57 (GST-4xUb+ GST-NDP52)). (C) Representative confocal micrographs showing the membrane recruitment of GFP-ULK1 complex. GFP-ULK1 complex alone or mixed with His-NDP52 or GST-NDP52 in the presence of GST-4xUb was incubated with GUVs at room temperature. Images taken at indicated time points were shown. Scale bars, 10 \u00b5m. (D) Quantitation of the kinetics of ULK1 complex recruitment to the membrane from individual GUV tracing in C (means\u00a0\u00b1\u00a0SDs; N\u00a0=\u00a054 (-); 47 (GST-4xUb+ His-NDP52); 49 (GST-4xUb+ GST-NDP52)).\n\nTo test how NDP52 oligomeric state effects FIP200 recruitment we included GST-tagged linear tetra-ubiquitin, which mimics poly-ubiquitinated protein substrates and induces the oligomerization of NDP52 in vitro. No recruitment of FIP200 was detected to GUVs in the presence of GST-4xUb alone, consistent with the lack of a direct interaction between FIP200 and Ub (Figure 1\u2014figure supplement 2D). In the presence of GST-4xUb and NDP52, FIP200 rapidly coalesced into clusters and was robustly recruited to the GUV surface (Figure 4A,B). These clusters began to form within 5 min of mixing (Figure 4A,B). After 35 min, FIP200 was clustered into large, continuous domains on the GUVs (Figure 4A,B).\n\nWe then tested the membrane recruitment of the entire ULK1 complex under equivalent conditions. Similarly to FIP200 alone, full-length ULK1 complex formed clusters with NDP52 and poly-ubiquitin but not in\u00a0their\u00a0absence (Figure 4C,D). Recruitment of the ULK1\u00a0complex was stronger with the dimeric GST-NDP52 than the monomeric His-NDP52. Together, these data show that oligomerized NDP52 activates membrane recruitment of the ULK1 complex. Furthermore, the higher order assembly of NDP52 via poly-ubiquitin stimulates membrane binding.\n\n### NDP52 binding is required for the membrane recruitment of ULK1\n\nTo validate that the middle region of FIP200 (residues 790\u20131050) was the membrane binding site of ULK1 complex as suggested by HDX-MS, we generated FIP200 constructs with the middle region (residues 790\u20131050) deleted (FIP200\u0394MR). The NDP52 binding region from HDX-MS, residues 1363\u20131370 was also converted to poly Gly-Ser (FIP200\u0394NDP52) in a separate mutation. Neither mutation altered the stability of FIP200 on the basis that both mutants yielded protein at the same level as wild type (Figure 2\u2014figure supplement 2C). A microscopy-based bead assay was used to confirm that FIP200\u0394MR still bound to NDP52 (Figure 5A,B). WT and FIP200\u0394MR ULK1 complex were both robustly recruited to GST-NDP52 beads (Figure 5A,B). FIP200\u0394NDP52 ULK1 was not recruited to the GST-NDP52 beads (Figure 5A,B), which is consistent with our previous pulldown data (Figure 2F).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/59099/elife-59099-fig5-v2.jpg)\n\n**Figure 5.:** (A) Microscopy-based bead protein interaction assay with glutathione sepharose beads coated with GST-NDP52 as baits and incubated with GFP-tagged wild type ULK1 complex or mutant as prey. Representative confocal micrographs are shown. Scale bars, 50 \u00b5m. (B) Quantification of the GFP-ULK1 complex signal intensity measured on glutathione sepharose beads coated with GST-NDP52 (means\u00a0\u00b1\u00a0SDs; N\u00a0=\u00a020). (C) Representative confocal micrographs showing the membrane recruitment of GFP-ULK1 complex. GFP-tagged wild type ULK1 complex or mutant was mixed with GUVs in the presence of GST-NDP52 and GST-4xUb at room temperature. Images taken at indicated time points were shown. Scale bars, 10 \u00b5m. (D) Quantitation of the kinetics of ULK1 complex recruitment to the membrane from individual GUV tracing in A (means\u00a0\u00b1\u00a0SDs; N\u00a0=\u00a022 (WT); 25 (\u0394MR); 22 (\u0394NDP52)).\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/59099/elife-59099-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** Representative confocal micrographs showing the membrane recruitment of NDP52. GST-NDP52-mCherry (upper) or TSF-NDP52-mCherry (lower) was mixed with GUVs in the presence or absence of GST-4xUb at room temperature. Images taken at 30 min were shown. Scale bars, 10 \u00b5m.\n\nWe proceeded to test the membrane recruitment of ULK1 complexes containing these two mutants. WT ULK1 complex was recruited strongly in the presence of GST-NDP52 and GST-4xUb (Figure 5C,D). FIP200\u0394MR ULK1 complex bound more weakly to GUVs (Figure 5C,D), whereas FIP200\u0394NDP52 ULK1 complex completely abolished membrane recruitment (Figure 5C,D). These data show that the NDP52-FIP200 interaction is essential for membrane recruitment. The CC membrane binding site is also important for binding, but residual binding still occurs in when the CC membrane binding site is removed. We tested whether NDP52 itself could bind membranes. NDP52 was recruited to the GUV membranes either when it was tagged with GST or upon the addition of poly-ubiquitin (Figure 5\u2014figure supplement 1). From this finding, we concluded that the residual binding to GUVs is due to membrane binding by NDP52, not to additional membrane binding sites on the ULK1 complex.\n\n## Discussion\n\nThe year 2019 saw a paradigm shift in the initiation of selective autophagy (Melia et al., 2020). Recognition of p62 (Turco et al., 2019) and NDP52 (Ravenhill et al., 2019; Vargas et al., 2019) by FIP200 was shown to the key triggering event responsible for recruiting the ULK1 complex to cargo. The binding sites of p62 and NDP52 were mapped to the Claw (Turco et al., 2019) and CC C-terminus (Ravenhill et al., 2019) respectively, and the structure of the Claw and a small part of the CC were determined (Turco et al., 2019). All of the many downstream events remained unclear, however, as did the structure of the great majority of FIP200. Here we obtained the first structural view of full-length FIP200 and the intact ULK1 complex. In the context of the structure, we formulated a model for the allosteric activation by NDP52 of the next step following ULK1 complex recruitment to cargo, namely membrane recruitment.\n\nIn a related study, we recently showed that the N-terminal domain (NTD) of FIP200, consisting of the first 640 amino acids, comprised a C-shaped dimeric hub for assembly of the rest of the ULK1 complex. A single molecule of ATG13 was shown to bind to the NTD dimer. ATG13 in turn contacts ATG101 and ULK1 itself. The ULK1 complex is unusually loosely organized, lacking extensive direct contacts between FIP200, ULK1, and ATG101. Biochemical and structural studies of the 1594-residue FIP200 have been exceptionally challenging, and it has only now been possible to visualize the intact molecule. The C-termini of the two FIP200 NTDs in the C-shaped dimer is located near the center. We have now confirmed that the CC projects away from the center of the NTD. Thus, the symmetry of the NTD matches the symmetry of the FIP200 CC, which is parallel and a dimer (Turco et al., 2019). FIP200 CC has a modal end-to-end distance of\u00a0~75 nm and is partially flexible, making it ideally suited to its function of connecting cargo to other components of the ULK1 complex and to membranes over substantial distances, much as seen with other coiled-coil based tethers such as the endosomal tether EEA1 (Murray et al., 2016) and the Golgi tether GCC185 (Cheung et al., 2015).\n\nThe data presented here suggest that the membrane binding region (MR) in the N-terminal portion of FIP200 CC is the principal, although not sole, membrane binding site responsible for the first ULK1 complex membrane recruitment event in autophagy. NDP52 and, most probably, the FIP200 NTD also contribute to membrane interactions. Figure 6 depicts the series of events that these data lead us to believe underlie membrane recruitment downstream of NDP52-ubiquitin engagement. In solution, FIP200 exists as isolated dimers with the MR region in a helical conformation that sequesters the hydrophobic residues. When ubiquitin is conjugated to and presented on the surface of damaged mitochondria, invading bacteria, or other substrates, NDP52 is recruited to these sites by directly binding to the clustered ubiquitin on their surfaces (Thurston et al., 2009; Thurston et al., 2012; Xie et al., 2015). FIP200 is then recruited to clustered NDP52 via its NDP52 binding site in the C-terminal part of its CC. We found that engagement to NDP52 destabilizes the conformation of the N-terminal part of the FIP200 CC and increases membrane affinity, presumably by melting the coiled coil and increasing the exposure of hydrophobic side chains in this region. These changes occur simultaneously with clustering of multiple FIP200 dimers. In our study, the role of clustering in driving membrane affinity was evidenced by the increase in binding when GST-fusions were used, because GST is dimeric. Taken together, the MR conformational change and higher-order clustering drives strong membrane recruitment.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/59099/elife-59099-fig6-v2.jpg)\n\n**Figure 6.:** Before engagement with NDP52, the FIP200 middle region (790\u20131050) forms a stable coiled-coil in a low membrane affinity state and the CTD and \u2018Claw\u2019 domains are unbound. Initially, NDP52 is recruited by interaction with ubiquitin to autophagic cargo in both xenophagy and mitophagy. FIP200 CTD binds directly to NDP52, driving clustering of FIP200 along with an allosteric conformational change in the MR region. These clusters form a hub for ULK1 auto-transphosphorylation and a site for initial recruitment of phagophore membranes.\n\nFIP200 is thought to initially localize to phosphatidylinositol synthase (PIS)-enriched ER subdomains prior to PI(3)P generation by the autophagic PI 3-kinase complex I (Nishimura et al., 2017). In the presence of an ER-like synthetic lipid mixture, only the MR showed significant changes in HDX. A basic patch on the ATG13 HORMA domain structure (Qi et al., 2015; Suzuki et al., 2015) was been reported to interact with PI(3)P (Karanasios et al., 2013) and so sustain ULK1 complex localization at the omegasome subsequent to PI 3-kinase activation. Our synthetic lipid mixture intentionally omitted PI(3)P to reflect the earliest step in activation. The conserved EAT domain of the yeast ULK1 ortholog Atg1 binds to highly curved ER-like vesicles, but only in the absence of Atg13, and its lipid-binding role is probably important only in later steps of autophagosome biogenesis (Lin et al., 2018). The MR is not electropositive in character, unlike most membrane binding domains (Hurley and Misra, 2000), but this is in keeping with the neutral character of ER lipids. Our data suggest a model wherein NDP52 binding to the C-terminus of FIP200 CC promotes lipid binding at the MR, so allowing a tether to be formed between cargo and the ER subdomain destined to become the omegasome. These data are consistent with the critical role of the NDP52-binding residues of FIP200 as demonstrated in both mitophagy (Vargas et al., 2019) and xenophagy (Ravenhill et al., 2019).\n\nIn this study, we focused on NDP52 rather than p62 because NDP52 binds much more tightly to FIP200, which facilitated the HDX-MS and biochemical experiments. It remains to be seen if the principles of membrane recruitment revealed here are general to p62 and other adaptors. The stimulation of the effect seen by using dimeric GST fusions of 4xUb and NDP52 show that multimerization is important for promoting membrane binding. While the binding site of NDP52 on FIP200 CC appears to be unique, clustering of cargo adaptors on ubiquitinated cargo is a general aspect of selective autophagy (Kirkin and Rogov, 2019; Zaffagnini and Martens, 2016). The role of the membrane-recruitment mechanism described here in bulk autophagy also remains to be determined, but to the extent that cargo-like ubiquitin condensates (Zaffagnini et al., 2018) mediate bulk autophagy, similar principles seem likely to apply.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Cell line (Homo sapiens)</td>\n      <td>HEK GnTi</td>\n      <td>ATCC</td>\n      <td>CRL-3022</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pCAG-GST-TEVcs-FIP200-MBP</td>\n      <td>This paper</td>\n      <td></td>\n      <td>See \u2018plasmid construction\u2019 section. Can be obtained from the Hurley lab.</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pCAG-Atg13</td>\n      <td>This paper</td>\n      <td></td>\n      <td>See \u2018plasmid construction\u2019 section. Can be obtained from the Hurley lab.</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pCAG-GST-TEVcs-ATG101</td>\n      <td>This paper</td>\n      <td></td>\n      <td>See \u2018plasmid construction\u2019 section. Can be obtained from the Hurley lab.</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pCAG- MBP-TSF-TEVcs-ULK1</td>\n      <td>This paper</td>\n      <td></td>\n      <td>See \u2018plasmid construction\u2019 section. Can be obtained from the Hurley lab.</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pCAG- EGFP-ATG13</td>\n      <td>This paper</td>\n      <td></td>\n      <td>See \u2018plasmid construction\u2019 section. Can be obtained from the Hurley lab.</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pCAG- GST-TEVcs-EGFP-ATG101</td>\n      <td>This paper</td>\n      <td></td>\n      <td>See \u2018plasmid construction\u2019 section. Can be obtained from the Hurley lab.</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pCAG- GST-TEVcs-EGFP-FIP200-MBP</td>\n      <td>This paper</td>\n      <td></td>\n      <td>See \u2018plasmid construction\u2019 section. Can be obtained from the Hurley lab.</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pGST2-NDP52</td>\n      <td>This paper</td>\n      <td></td>\n      <td>See \u2018plasmid construction\u2019 section. Can be obtained from the Hurley lab.</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pCAG-MBP-NDP52</td>\n      <td>This paper</td>\n      <td></td>\n      <td>See \u2018plasmid construction\u2019 section. Can be obtained from the Hurley lab.</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pGEX5-4xUb</td>\n      <td>Zaffagnini et al., 2018</td>\n      <td></td>\n      <td>From Sascha Martens group (Vienna)</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pGST2-NDP52-mCherry</td>\n      <td>This paper</td>\n      <td></td>\n      <td>See \u2018plasmid construction\u2019 section. Can be obtained from the Hurley lab.</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pCAG-TSF-NDP52-mCherry</td>\n      <td>This paper</td>\n      <td></td>\n      <td>See \u2018plasmid construction\u2019 section. Can be obtained from the Hurley lab.</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pET-6xHis-TEVcs-NDP52</td>\n      <td>This paper</td>\n      <td></td>\n      <td>From Sascha Martens group (Vienna)</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pCAG-GST-TEVcs-FIP200(1274 C)</td>\n      <td>This paper</td>\n      <td></td>\n      <td>See \u2018plasmid construction\u2019 section. Can be obtained from the Hurley lab.</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pCAG-GST-TEVcs-FIP200(N-640)-MBP</td>\n      <td>This paper</td>\n      <td></td>\n      <td>See \u2018plasmid construction\u2019 section. Can be obtained from the Hurley lab.</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pCAG-GST-TEVcs-FIP200(636-C)-MBP</td>\n      <td>This paper</td>\n      <td></td>\n      <td>See \u2018plasmid construction\u2019 section. Can be obtained from the Hurley lab.</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pCAG-GST-TEVcs-FIP200(delta790-1050, \u0394MR)-MBP</td>\n      <td>This paper</td>\n      <td></td>\n      <td>See \u2018plasmid construction\u2019 section. Can be obtained from the Hurley lab.</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pCAG-GST-TEVcs-FIP200(1363-1370Mut, \u0394NDP52)-MBP</td>\n      <td>This paper</td>\n      <td></td>\n      <td>See \u2018plasmid construction\u2019 section. Can be obtained from the Hurley lab.</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pCAG-GST-TEVcs-FIP200(1274 C) M1-M8</td>\n      <td>This paper</td>\n      <td></td>\n      <td>See \u2018plasmid construction\u2019 section. Can be obtained from the Hurley lab.</td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>ADP-Glo Max Assay</td>\n      <td>Promega, Madison, WI</td>\n      <td>V6930</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Proteome Discoverer 2.1</td>\n      <td>Thermo Fisher Scientific, Waltham, MA</td>\n      <td>https://www.thermofisher.com/order/catalog/product/OPTON-30795</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>HDExaminer</td>\n      <td>Sierra Analytics, Modesto, CA</td>\n      <td>http://massspec.com/hdexaminer/</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Nikon Elements microscope imaging software 4.60</td>\n      <td>Nikon Corporation, Tokyo, Japan</td>\n      <td>https://www.nikoninstruments.com/Products/Software/NIS-Elements-Advanced-Research/NIS-Elements-Viewer</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Custom Python scripts and Jupyter notebooks</td>\n      <td>This paper</td>\n      <td></td>\n      <td>Access at https://github.com/Hurley-Lab/FIP-NDP52-paper</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Relion</td>\n      <td></td>\n      <td>SCR_016274</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>Glutathione Sepharose 4B GST-tagged protein purification resin</td>\n      <td>GE healthcare, Chicago, IL</td>\n      <td>Cat#17075605</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>Amylose Resin</td>\n      <td>New England Biolabs, Ipswich, MA</td>\n      <td>Cat#E8021L</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>Strep-Tactin Superflow high capacity 50% suspension</td>\n      <td>IBA Lifesciences, G\u00f6ttingen, Germany</td>\n      <td>Cat# 2-1208-010</td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### Plasmid construction\n\nThe sequences of all DNAs encoding components of ULK1 complex were codon optimized, synthesized and then subcloned into the pCAG vector. All DNAs encoding NDP52 (except His-NDP52) were subcloned into pCAG or pGST2 vectors. The linear tetraubiqutin expressed in pGEX5 and His-NDP52 in pET were obtained from Sascha Martens (Vienna). Proteins were tagged with GST, MBP or TwinStrep-Flag (TSF) for affinity purification or pull-down assays. N-terminal GST, MBP or TSF tags were followed by a tobacco etch virus cleavage site (TEVcs). All constructs were verified by DNA sequencing. Details are shown in the key resources table.\n\n### Protein expression and purification\n\nGST-FIP200-MBP, FIP200(N-640)-MBP, FIP200(636-C)-MBP and full-length ULK1 complex protein samples used for NSEM, HDX-MS, fluorescent pulldown assays, ADP-Glo kinase assays and liposome sedimentation assays were expressed in HEK293-GnTI suspension cells by using the polyethylenimine (Polysciences) transfection system. Cells were transfected at a concentration of 2\u20133 \u00d7 106/mL and harvested after 48 hr. The harvested cells were pelleted at 500 x g for 10 min at 4\u00b0C, washed with PBS once, and then stored at \u221280\u00b0C. The pellets were then lysed with lysis buffer containing 50 mM Tris-HCl pH 7.4, 200 mM NaCl, 2 mM MgCl2, 1 mM TCEP, 1% Triton X-100, 10% Glycerol and protease inhibitors (Roche) before being cleared at 16000 x g for 30 min at 4\u00b0C. The supernatant was then incubated with Glutathione Sepharose 4B (GE Healthcare) or Strep-Tactin Sepharose (IBA Lifesciences) as appropriate, with gentle shaking for 12 hr at 4\u00b0C. The mixture was then loaded onto a gravity flow column, and the resin was washed extensively with wash buffer (50 mM HEPES pH 8.0, 200 mM NaCl, 1 mM MgCl2 and 1 mM TCEP). The proteins were eluted with wash buffer containing 50 mM glutathione or 10 mM desthiobiotin, as appropriate. To purify GST-FIP200-MBP, FIP200(N-640)-MBP, FIP200(636-C)-MBP, FIP200-MBP and EGFP-FIP200-MBP, eluted protein samples may be treated with TEV protease at 4\u00b0C overnight before flowing through Amylose resin (New England Biolabs) for a second step of affinity purification. To purify ULK1 complex and EGFP-ULK1 complex, FIP200/ATG13/ATG101 subcomplex and ULK1 were expressed and purified separately. After the first step of affinity purification, the two samples were mixed, cleaved by TEV at 4\u00b0C overnight, and subjected to a second step of affinity purification using the MBP tag. The eluted sample was passed through a Strep-Tactin Sepharose (IBA Lifesciences) column to clear the MBP-TSF tag from ULK1. The final buffer after MBP affinity purification is 20 mM HEPES (pH 8.0), 200 mM NaCl, 1 mM TCEP and 50 mM Maltose.\n\nGST-NDP52, GST-NDP52-mCherry, 6xHis-NDP52 and GST-4xUb protein samples were expressed in E. coli (BL21DE3) at 18\u00b0C overnight. The harvested cells were pelleted at 4500 x g for 20 min at 4\u00b0C, washed with PBS once, and then stocked in \u221280\u00b0C if needed. The pellets were then suspended in a buffer containing 50 mM Tris-HCl pH 7.4, 200 mM NaCl, 2 mM MgCl2, 1 mM TCEP and protease inhibitors (Roche), and sonicated before being cleared at 16000 x g for 30 min at 4\u00b0C. The supernatant was incubated with Glutathione Sepharose 4B (GE Healthcare) or Ni-NTA Resins (Qiagen) as appropriate, with gentle shaking for 2 hr at 4\u00b0C. The mixture was then loaded onto a gravity flow column, and the resin was washed extensively with wash buffer (50 mM HEPES pH 8.0, 200 mM NaCl, 1 mM MgCl2 and 1 mM TCEP). The proteins were eluted with wash buffer containing 50 mM glutathione or 200 mM imidazole, as appropriate. The protein samples were applied to a final size exclusion chromatography step before use. For GST-4xUb, a Superdex 200 column (GE Healthcare) was used, and for NDP52, a Superose six column (GE Healthcare) was used. The running buffer was 20 mM HEPES (pH 8.0), 200 mM NaCl and 1 mM TCEP. For purification of TSF-NDP52-mCherry, the transfected HEK GnTI cells were harvested and treated as ULK1 transfected HEK GnTI cells mentioned above. The supernatant was incubated with Strep-Tactin Sepharose (IBA Lifesciences) with gentle shaking for 2 hr at 4\u00b0C, and then subjected to a Strep tag affinity purification mentioned above. The protein samples were applied to a final size exclusion chromatography step using a Superose six column (GE Healthcare).\n\n### Negative stain electron microscopy collection and coiled-coil tracing\n\nGrids were glow discharged in PELCO easiGlow for 25 s at 25 mAmps. Full length FIP200 labeled with an N terminal GST tag and a C terminal MBP tag was incubated on continuous carbon grids at 100 nM concentration. Protein was stained with 2% uranyl formate twice before drying and imaging. Samples were imaged with a T12 operating at 120 kV at a nominal magnification of 49,000x. This corresponds to 2.2 \u00c5/pixel on a Gatan CCD 4k \u00d7 4 k camera. Data were collected at 60 e-/\u00c52 and single particles were manually selected within Relion. Particles were binned and extracted in a box size of 120 by 120 with 8.8 \u00c5/pixel.\n\n2D classification of the N and C terminal domains was carried out as follows. Relion LoG picker was used to pick the negative stain micrographs. 17,281 single particles were classified into 200 classes. Resolved class averages were selected based on the shape of the NTD dimer and the CTD trimeric density (the dimer Claw domain and 2 MBP tags). A second round of classification was performed to better resolve the class averages (Figure 1\u2014figure supplement 1B\u2013C).\n\nFull length single particles were imported into FIJI ImageJ and traced using the plugin Simple Neurite Tracer yielding 117 individual tracks. Tracks were started at the beginning of the coiled-coil domain after the distinct NTD crescent shape and ended between the double MBP density at the C terminus. Tracking was checked for each single particle to ensure accuracy of the automatically determined path. End to end distances and total length measurements are shown as histograms.\n\n### Hydrogen-deuterium exchange mass spectrometry\n\nFIP200 and NDP52 samples for HDX were concentrated to a 20 \u03bcM stock solution, ULK1 complex was concentrated to a 10 \u03bcM stock solution, while POPS/POPI SUVs (molar ratio\u00a0=\u00a01:1) were prepared as a 1 mM stock solution. The buffer used was 20 mM HEPES (pH 8.0), 200 mM NaCl and 1 mM TCEP. To prepare the ULK1c/NDP52 sample or ULK1c/SUV sample, 2 \u03bcL of ULK1c stock solution was mixed with 8 \u03bcL of NDP52 or SUV stock solution and then incubated at 23\u00b0C for 30 min. To prepare the FIP200 or ULK1c sample, 2 \u03bcL of protein stock was mixed with 8 \u03bcL of control buffer (20 mM HEPES (pH 8.0), 200 mM NaCl, 1 mM TCEP), and then incubated at 23\u00b0C for 30 min. Exchange was initiated by adding 90 \u03bcL of D2O buffer containing 20 mM HEPES (pH 8.0), 200 mM NaCl, 1 mM TCEP into 10 \u03bcL of protein mixture at 30\u00b0C. Exchange was carried out for 6 s, 60 s, 600 s, or 60000 s, and quenched at 0\u00b0C by the addition 100 \u03bcL of ice-cold quench buffer (400 mM KH2PO4/H3PO4, pH 2.2). The 60000 s sample served as the maximally labeled control. All HDX reactions were repeated three times. Quenched samples were injected into a chilled HPLC (Agilent) setup with in-line peptic digestion and desalting steps. The analytical column used was a Biobasic 8.5 \u03bcm KAPPA column (Fisher Scientific). The peptides were eluted with an acetonitrile gradient and electrosprayed into an Orbitrap Discovery mass spectrometer (Thermo Scientific) for analysis. To generate the gradient, solvent A was 0.05% TFA, while solvent B was 0.05% TFA in 90% acetonitrile. The elution method was as follows: 0\u20136 min: 10% B; 6\u201342 min: from 10% B to 55% B; 42\u201343 min: from 55% B to 90% B; 43\u201353 min: 90% B; 53\u201354 min: from 90% B to 10% B; 54\u201360 min: 10% B. The spray voltage was set at 3.4 kV, capillary temperature was set at 275\u00b0C, capillary voltage was set at 37 V and tube-lens was set at 120 V. As a control, unexchanged samples went through the same process, except that D2O was replaced by H2O.\n\nTo identify peptides, unexchanged samples were analyzed by tandem MS/MS analysis with the same HPLC method. Tandem MS/MS was performed using data dependent analysis, in which a cycle of one full-scan MS spectrum (m/z 200\u20132000) was acquired followed by MS/MS events (CID fragmentation). MS/MS was sequentially generated on the ten most intense ions selected from the full MS spectrum at a 35% normalized collision energy. The ion trap analyzer was used for MS2, activation time was 30 ms, and the dynamic exclusion was set at 30 s. For HDX mass analysis, only a full-scan MS spectrum was acquired, and the resolution was 30000. Database searches were performed with Proteome Discoverer 2.1 (Thermo Fisher Scientific) using the Sequest HT search engine to identify peptides. Raw data were searched against the small database containing all four components of ULK1 complex. The following search parameters were used: unspecific cleavage was used; precursor mass tolerance was set to\u00a0\u00b110 ppm and fragment mass tolerance was set to\u00a0\u00b10.6 Da. Target FDR was set to 1% as the filter cut-off for the identified peptides. For HDX analysis, mass analysis of the peptide centroids was performed using HDExaminer (Sierra Analytics), followed by manual verification for every peptide. The HDX-MS data are provided in Supplementary file 2.\n\n### ADP-Glo kinase assay\n\n100 nM purified ULK1 complex was mixed with 5 \u03bcM ULKtide (SignalChem Biotech Inc), and incubated at room temperature for 1 hr. The reaction buffer was 20 mM HEPES pH 8.0, 200 mM NaCl, 2 mM MgCl2, 100 \u03bcM ATP, 20 mM Maltose and 1 mM TCEP. The reaction was terminated by adding an ATP-depletion reagent. Then a kinase detection reagent was added to convert ADP to ATP, which is used in a coupled luciferase reaction. The luminescent output was measured with a GloMax-Multi detection system (Promega) and was correlated with the kinase activity.\n\n### Pull-down assays\n\nFor the fluorescence-based pulldown assay in Figure 1\u2014figure supplement 2D, purified fluorescent ULK1 complex (FIP200-MBP/EGFP-ATG13/EGFP-ATG101/ULK1) was mixed with purified GST-NDP52 or GST-4xUb and 10 \u03bcL Glutathione Sepharose 4B (GE Healthcare). The final buffer was 20 mM HEPES pH 8.0, 200 mM NaCl, 1 mM TCEP, 10 mM maltose and 1% Triton-X-100. The final protein concentration was 50 nM ULK1 complex and 1 \u03bcM GST-NDP52 or GST-4xUb. The final volume was 150 \u03bcL. The system was gently shaken for 1 hr at 23\u00b0C. The EGFP signal of the supernatant was measured before and after shaking to calculate the pull-down efficiency.\n\nFor the pulldown assay in Figure 2E, purified fluorescent FIP200(EGFP-FIP200-MBP) or ULK1 complex (EGFP-FIP200-MBP/ATG13/ATG101/ULK1) was mixed with purified GST-NDP52 at the indicated concentrations.\n\nFor the pulldown assay in Figures 2F and 10 mL of HEK293-GnT1 suspension cells were transfected at the concentration of 2\u20132.5 \u00d7 106/mL and harvested after 48 hr. The harvested cells were pelleted at 500 x g for 8 min at 4\u00b0C, and then washed with 5 mL PBS once. The pellets were then lysed with 1 mL lysis buffer containing 50 mM Tris-HCl pH 7.4, 200 mM NaCl, 2 mM MgCl2, 1 mM TCEP, 1% Triton X-100, 10% Glycerol and protease inhibitors (Roche) before being cleared at 12000 rpm for 10 min at 4\u00b0C. The supernatant was then incubated with 20 \u03bcL Glutathione Sepharose 4B (GE Healthcare) or Amylose resin (New England Biolabs) with gentle shaking for 8 hr at 4\u00b0C. The protein-bound resin was washed with 1 mL lysis buffer three times, and then eluted with 60 \u03bcl elution buffer containing 50 mM glutathione or 50 mM maltose, respectively. The eluted proteins were applied to SDS\u2013PAGE for analysis.\n\n### Liposome sedimentation assays\n\nPOPI, POPS, POPE and POPC from Avanti Polar Lipids, Inc were dissolved in chloroform. The chloroform was removed by overnight incubation under vacuum. Lipids were rehydrated in 20 mM HEPES pH 8.0, 200 mM NaCl, 1 mM TCEP and 50 mM Maltose for 30 min on ice and then resuspended by vigorous vortexing. Small unilamellar vesicles (SUVs) were prepared by sonication on ice until the solution appeared clear. Two kinds of SUV were prepared. PS/PI SUV is comprised of 50% POPS and 50% POPI, while PC/PE SUV is comprised of 50% POPC and 50% POPE. The protein and SUV were mixed and incubated at room temperature for 30 min. The final concentration of protein is 1 \u03bcM and the final concentration of liposomes was 100 \u03bcM. The final buffer was 20 mM HEPES pH 8.0, 200 mM NaCl, 1 mM TCEP and 10 mM Maltose. The liposomes were pelleted in an ultracentrifuge (TLA100 rotor) for 45 min at 50,000 rpm, and the presence of protein in the pellet and supernatant fractions was analyzed by SDS-PAGE.\n\n### Preparation of giant unilamellar vesicles (GUVs)\n\nGUVs were prepared by hydrogel-assisted swelling as described previously (Fracchiolla et al., 2020). Polyvinyl alcohol (PVA) with a molecular weight of 145,000 (Millipore) was used as hydrogel substrate. 300 \u03bcL of 5% (w/w) PVA solution was spin coated onto a plasma-cleaned coverslip of 25 mm diameter. The coated coverslip was placed for 30 min in a heating incubator at 60\u00b0C to dry the PVA film. A lipid mixture with a molar composition of 64.8% DOPC, 20% DOPE, 10% POPI, 5% DOPS and 0.2% Atto647N DOPE at 1 mg/ml was spread uniformly onto the PVA film. The lipid-coated coverslip was then put under vacuum overnight to evaporate the solvent. 300 \u03bcL 400 mOsm sucrose solution was used for swelling for 1 hr at room temperature, and the vesicles were then harvested and used immediately.\n\n### Membrane protein recruitment \u2013 GUV assay\n\nThe reactions were set up in an eight-well observation chamber (Lab Tek) at room temperature. The chamber was coated with 5 mg/ml \u03b2 casein for 30 min and washed three times with reaction buffer (20 mM HEPES at pH 8.0, 190 mM NaCl and 1 mM TCEP). A final concentration of 10 \u00b5M GST-4xUb, 1 \u00b5M NDP52, and 100 nM GFP-FIP200 or GFP-ULK1 complex was used for all reactions unless otherwise specified. 15\u201320 \u00b5L GUVs were added to initiate the reaction in a final volume of 150 \u00b5L. After 5 min incubation, during which we picked random views for imaging, time-lapse images were acquired in multitracking mode on a Nikon A1 confocal microscope with a 63\u00a0\u00d7\u00a0Plan Apochromat 1.4 NA objective. Three biological replicates were performed for each experimental condition. Identical laser power and gain settings were used during the course of all conditions.\n\n### Microscopy-based bead protein-protein interaction assay\n\nA mixture of 1 \u00b5M GST-NDP52 and 100 nM GFP-ULK1 complex was incubated with 10 \u00b5L Glutathione Sepharose beads (GE Healthcare) in a reaction buffer containing 20 mM HEPES at pH 8.0, 200 mM NaCl and 1 mM TCEP. After incubation at room temperature for 30 min, the beads were washed three times, suspended in 120 \u00b5L reaction buffer, and then transferred to the observation chamber for imaging. Images were acquired on a Nikon A1 confocal microscope with a 63\u00a0\u00d7\u00a0Plan Apochromat 1.4 NA objective. Three biological replicates were performed for each experimental condition.\n\n### Image quantification\n\nGUV images were analyzed using a custom script implemented in Python 3.6 (https://github.com/Hurley-Lab/FIP-NDP52-paper;\u00a0Jensen, 2020; copy archived at https://github.com/elifesciences-publications/FIP-NDP52-paper). First, to obtain the outline of all the vesicles within a field of view, images were segmented into regions corresponding to local maxima of the membrane fluorescence channel, which were defined by applying an Otsu threshold to the differences between local maxima and minima. Then, binding of fluorescently labeled proteins was quantified by taking the mean value of these segmented pixels in the fluorescent protein channel. Background was calculated as the average of the vesicle-internal background and the vesicle-external background and subtracted from the fluorescence signal. The intensity trajectories of multiple fields of view were then obtained frame by frame. Multiple intensity trajectories were calculated, and the average and standard deviation calculated and reported.\n\nFor quantification of bead binding, the outline of individual beads was manually defined based on the bright field channel. The intensity threshold was calculated by the average intensities of pixels inside and outside of the bead and then intensity measurements of individual bead were obtained. Averages and standard deviations were calculated among the measured values per each condition and plotted in a bar graph.\n",
+      "created_at": "2025-12-02T19:08:01.456908Z"
+    },
+    {
+      "id": "24a1b928-36f0-4911-8c8a-3749faea4376",
+      "submission_id": "fb547082-763d-4411-bf9c-050598682779",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Wade Harper, Harvard Medical School United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.59099.sa1](https://doi.org/10.7554/eLife.59099.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nThis paper employs biophysical approaches to examine membrane binding of NDP52, a protein involved in selective autophagy. The authors propose a new membrane binding mechanism involving the coiled-coil of NDP52. This represents a new mechanism that may collaborate with ubiquitin binding by NDP52 to capture autophagic cargo.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"The autophagy adaptor NDP52 and the FIP200 coiled-coil allosterically activate ULK1 complex membrane recruitment\" for consideration by eLife. Your article has been reviewed by three peer reviewers, including Wade Harper as the Reviewing Editor and Reviewer #1, and the evaluation has been overseen by Suzanne Pfeffer as the Senior Editor.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nAs the editors have judged that your manuscript is of interest, but as described below that additional experiments are required before it is published, we would like to draw your attention to changes in our revision policy that we have made in response to COVID-19 (https://elifesciences.org/articles/57162). First, because many researchers have temporarily lost access to the labs, we will give authors as much time as they need to submit revised manuscripts. We are also offering, if you choose, to post the manuscript to bioRxiv (if it is not already there) along with this decision letter and a formal designation that the manuscript is \"in revision at eLife\". Please let us know if you would like to pursue this option. (If your work is more suitable for medRxiv, you will need to post the preprint yourself, as the mechanisms for us to do so are still in development.)\n\nSummary:\n\nThis paper describes biophysical and structural studies on purified, full length FIP200 in complex with its other binding partners, including NDP52 (a well-known ubiquitin binding autophagy receptor). The results presented in this manuscript corroborate prior results from the Hurley lab demonstrating a \"C-Shaped\" N-terminal dimer that acts as a scaffold of ULK1-ATG13-ATG101, while the C-terminal claw region engages receptor molecules such as NDP52 and p62. Furthermore, Shi et al. conclude that a coiled-coil region within FIP200 undergoes a dynamic conformational change upon binding with the receptor molecule NDP52, increasing its affinity for FIP200 towards membranes. They propose that NDP52 binding to the surface to cargo elicits a conformational change in the FIP200, increasing its propensity to bind to membranes and drives the local clustering of the ULK1 kinase leading to its autoactivation and the induction of autophagy.\n\nWhile the reviewers feel that the work is of high quality and is potentially appropriate for publication in eLife, the consensus after extensive discussion among the reviewers and the senior editor is that core elements of the proposed model are not fully supported by the data presented thus far. This has to do primarily with the relative roles/contributions of coiled-coli domains in FIP200 and NDP52 for association with membranes, and whether there is a key role for allostery in the mechanism of membrane binding. Another weakness in the paper is that the work primarily employs liposomes, rather than intact membranes, and there isn't data supporting the role for these structural elements in autophagy within cells. Given this, we are offering the possibility of a significant revision, but without the normal time constraints, due to COVID-19 related limitations on lab access.\n\nEssential revisions:\n\nThe reviewers would like to see:\n\n1) A better understanding of the structural features within the coiled-coils that facilitate membrane binding.\n\n2) An analysis of the interactions with biological membranes rather than liposomes would be important in further validating the model.\n\n3) A better understanding of the allostery mechanism is needed. It is often assumed that regions predicted to be \"coiled-coil\" form a typical helical dimeric assembly of \u03b1-helices. In such case, the \"hydrophobic residues\", which are assumed to be buried in the dimeric interface, twists along the long axis of the coiled-coil. The MR reported in this study is fairly long (over 150 residues). Although association of short coiled-coil domains are known to associate with membranes, it is harder to see how an extended helix might do this, and so the question is whether this coiled-coil undergoes an alteration in structure (e.g. melting) that is in some way coupled with the allostery (or not). If so, that could cause liposome binding, as shown in Figure 3D. Again, Figure 3D's data are without NDP52. As such, the data does not directly demonstrate the suggested binding mode (hydrophobic residues are exposed upon allosteric conformational change, and those residues bind to membranes).\n\nAfter discussion, we concluded that perhaps analysis of mutants in cells is beyond the scope of this heavily biophysical analysis. However, one aspect that is unclear concerns the conclusion that NDP52 is effectively recruited to membranes on its own or together with FIP200. For example, in the context of mitophagy, mutations in the ubiquitin binding domain of NDP52 abolish recruitment to the mitochondrial outermembrane downstream of parkin activation in cells. It is difficult to see how the intrinsic membrane binding of NDP52 could be operative in this context as the core mechanism of recruitment, given the ubiquitin binding dependence. Although OPTN is the main adaptor in this form of selective autophagy, NDP52 plays a partially redundant role and cells only expressing NDP52 as the ubiquitin binding autophagy adaptor can support mitophagy. So this aspect of the model for direct and biologically relevant membrane as the primary mechanism for membrane recruitment doesn't precisely fit with prior data and it may be necessary to discuss how membrane binding may be relevant in the context of other mechanisms that place NDP52 adjacent to the membrane. Might the primary recruitment mechanism be through ubiquitin, but then the membrane interactions serve to orient the molecules on the membrane surface for optimal downstream functions?\n\nReviewer #1:\n\nAutophagy is driven by the action of the central and highly conserved ULK1 complex which comprises of the Serine/Threonine kinase ULK1, the large scaffolding protein FIP200, and the accessory proteins ATG13 and ATG101. Additionally, cargo sequestration in autophagy is bought about by the binding of autophagy \"receptor\" molecules to the surface of cargo and helps recruit the ULK1 complex via direct interactions to promote their degradation.\n\nStructural studies on this complex (specifically FIP200) have been limited, largely in part due the size and the prevalence of an Intrinsically disordered region in the center of the protein. Recently, the Hurley lab have made strides in the understanding of three-dimensional architecture of this complex by ascertaining the structure of the N-terminal(NTD) and extreme C-terminal regions(Claw) of FIP200. In this paper, Shi and colleagues describe another advancement in the study of this complex by biophysical and structural studies on purified, full length FIP200 in complex with its other binding partners. The results presented in this manuscript corroborate prior results from the Hurley lab demonstrating a \"C-Shaped\" N-terminal dimer that acts as a scaffold of ULK1-ATG13-ATG101, while the C-terminal claw region engages receptor molecules such as NDP52 and p62. Furthermore, Shi et al. demonstrate that a coiled-coil region within FIP200 undergoes a dynamic conformational change upon binding with the receptor molecule NDP52, increasing its affinity for FIP200 towards membranes. Therefore, autophagy receptor binding to the surface to cargo elicits a conformational change in the FIP200, increasing its propensity to bind to membranes and drives the local clustering of the ULK1 kinase leading to its autoactivation and the induction of autophagy.\n\nOverall this is a well-executed and presented study and would be suitable for publication once the following points are addressed.\n\n1) While the biophysical assays are relatively convincing, one obvious drawback is the absence of any functional autophagy assays to monitor if this receptor-mediated conformational change is actually physiologically important. The most obvious experiment in this regard would be to add back the FIP200 (deleted membrane region) and monitor any form of autophagy. However, given the state of affairs due to the ongoing COVID19 pandemic I would say that this experiment is not critical, but if performed would significantly bolster the conclusions of this paper.\n\n2) The HDX graphs were not always clear to this reader. For example, in Figure 1C the blue and grey colors need to be assigned to the relevant sample. Additionally, the number of repeats performed here and in every experiment presented should be stated.\n\n3) The increase in the FIP200 residues 800-1250 (2D) after NDP52 doesn't seem significant by the authors own cut-offs (> or <10%), nevertheless this region appears to the important for membrane binding.\n\n4) Figure 2F is lacking input controls to show that the levels of MBP-NDP52 and GST FIP200 in cells are equal.\n\nReviewer #2:\n\nIn this manuscript from Hurley and colleagues, the authors describe for the first time the structure of the full-length FIP200 protein including its ~75 nm long coiled-coil domain, and then explore how this region of the protein contributes to the membrane targeting of FIP200 and of its cognate kinase, ULK1. Their principle discoveries are that the coiled coil includes a region that can interact with acidic lipids PI and/or PS, that this motif can adopt a range of structures (fully elongated or bent back on itself) and that there is no allosteric communication between the opposite termini of the coiled-coil, thus for example cargo-binding does not directly alter ULK1 interactions. Furthermore, the membrane interaction is augmented under conditions of multimerization, such as occurs when FIP200 is engaged with the oligomeric cargo adaptor NDP52 and polyUB.\n\nThe strength of the paper is the excellent in vitro biochemistry and biophysics. The authors use deuterium exchange to establish regions on FIP200 involved in ULK1, NDP52 and membrane binding. They use electron microscopy to develop a model of the full-length protein (and protein complex). GUV recruitment assays confirm that membrane binding of ULK1 depends upon FIP200 and NDP52/Ub, and that this membrane binding is augmented by the motif in the coiled-coil domain. Further, membrane binding leads to localized domains of ULK1 protein, consistent with the association of ULK1 to an oligomerizing cargo/cargo-adaptor complex. The design and chronology of experiments are logical and each is well controlled.\n\n1) I have only one relatively significant concern with the structure of the narrative. The authors pose the general question of how FIP200 organizes ULK1 on membranes and attempt to address this question through most of the paper without acknowledging that NDP52 itself can and does bind membranes. This point, previously published, is finally addressed at the end of the Results, but it fundamentally changes the way the results should be considered. In the Discussion they say \" The data presented here suggest that the membrane binding region (MR) in the N terminal portion of FIP200 CC is the major membrane binding site responsible for the first ULK1 complex membrane recruitment event in autophagy \" and \"Our data suggest a model wherein NDP52 binding to the Cterminus of FIP200 CC promotes lipid binding at the MR, so allowing a tether to be formed between cargo and the ER subdomain destined to become the omegasome.\" However, their GUV recruitment assay (Figure 5 and Figure 5\u2014figure supplement 1) strongly implies that although the membrane-binding motif they have described on FIP200 can augment membrane binding, NDP52 is still largely sufficient and a/the principle driver of membrane targeting. This element of the model should be more fully described and the existing literature on the role of NDP52 in targeting these complexes specifically to membranes should be introduced early.\n\nReviewer #3:\n\nThe authors dissect protein-protein interactions within the NDP52-ULK1 complex and its membrane interaction using HDX and identify a membrane-interacting region in the coiled-coil domain of its component FIP200. They show the ULK1 complex is recruited to GUV membranes through the identified membrane-binding region, and this membrane recruitment is activated by NDP52. Because NDP52 binds to another region in the coiled-coil domain of FIP200, they conclude that NDP52 allosterically activates the membrane-binding region of the FIP200. This in vitro study is performed carefully, and the presented data appear to be of high quality. Identification of the membrane-interacting region of FIP200 is valuable for the autophagy field and would help future work toward the elucidation of the role of FIP200 in autophagy. However, it seems that the allosteric activation is not fully supported by the data and the work struggles to establish the biological significance of this membrane-binding activity by FIP200.\n\n1) It is not clear how the FIP200-mediated membrane association fits in the biological event (selective autophagy). There seem to be several candidate membranes that FIP200 might associate with: the membrane of the targets (bacteria/mitochondria), the ER, the omegasome, the autophagosome/phagophore. However, which of these is the bona fide membrane target of FIP200 is not clear, making it difficult to relate the findings of this work to the mechanism of selective autophagy. NDP52 is also shown to be capable of associating with membranes, which complicates the interpretation. How are the roles of these membrane associations by FIP200 and NDP52 related?\n\n2) The coiled-coil domain is suggested to associate with membranes through hydrophobic residues exposed upon NDP52 binding. This is a very interesting and thoughtful model deduced from a careful interpretation of the HDX data. However, as hydrophobic residues could bind to many things, this explanation alone is probably not sufficient to convince that the observed membrane-binding is biological. More detailed mechanism of the membrane association could help clarify this. Is the MR predicted to form a typical parallel coiled-coil dimer? If so, would a structural model provide insights into the mechanism of membrane binding?\n\n3) The authors suggest that NDP52 allosterically activates the membrane binding by FIP200. However, FIP200 is suggested to have weak and intrinsic membrane-binding activity (in the absence of NDP52) (Figure 3D). The overall membrane binding could be enhanced through multivalent FIP200-membrane interactions created by GST-4xUb-mediated clustering. Thus, it seems that the membrane-binding data of the NDP52-ULK1 complex can be explained without invoking such allosteric activation. The NDP52-membrane interactions would also become multivalent in the presence of GST-4xUb so that they would also contribute to the membrane recruitment of the overall complex. Thus, with two membrane-binding domains and clustering, it seems to be not straightforward to determine the magnitude of allosteric activation in the presented data.\n\n4) NDP52 alone does not seem to recruit FIP200 to membranes. However, NDP52 alone is shown to be capable of destabilizing the MR. GST-NDP52 enhances the FIP200 membrane association but only modestly. Thus, these data seem to suggest that the membrane-binding affinity of \"activated MR\" is very low. If hydrophobic residues in such a long region of the coiled-coil were exposed to interact with membranes, as suggested, shouldn't the affinity be higher?\n\n5) Direct evidence for the allosteric activation is lacking. While structural information is limited to at a low-resolution, the membrane-binding region and NDP52 binding site are both in the coiled-coil. Thus, it may be possible to design and create a mutant FIP200 that can bind to NDB52 but not to membranes without touching MR and NDP52 binding sites directly. Such a mutant protein will be strong support for the suggested allostery.\n\n6) Is the mechanism by which NDP52 associates with membranes known? The authors should create an NDP52 construct that can bind to FIP200 but not to membranes and use it in their ULK1/FIP200 membrane recruitment assays to remove the contribution of NDP52-membrane association.\n\n7) Full-length FIP200 should be included in the sedimentation assay in Figure 3D as it would clarify whether the full-length and the truncated proteins are different in membrane binding.\n\n8) An MR-only construct should be tested for membrane binding using sedimentation assays and GUV assays to clarify whether the activity of the MR is intrinsically suppressed or not. The MR is said to be not electropositive, but in Figure 3, the C-terminal FIP200 construct shows a better binding with negatively charged liposomes. An MR-only construct might reveal the differences between the MR and the entire CTD. Is the CTD overall electropositive?\n\n9) The oligomeric state of NDP52 should be examined as it has a coiled-coil domain that may oligomerize.\n\n10) The KD between NDP52 and FIP200 coiled-coil would be helpful for understanding the contribution of FIP200 in membrane association if available.\n\n11) It may be helpful to present the raw HDX protection profiles (not differences between two samples) as supplements to show protection levels of each samples. Are the coiled-coil regions well protected in the absence of NDP52/liposomes?\n",
+      "created_at": "2025-12-02T19:08:01.456908Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T19:08:01.456908Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T19:08:01.456908Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "19705f11-20ef-460b-be03-9afc7d8ad43c",
+      "content_id": "15474fca-32e8-477b-bdda-83a21f92fb2f",
+      "claim_id": "C1",
+      "claim": "Autophagy maintains homeostasis via clearance of cellular components, degradation of damaged organelles and protection against viral and bacterial invasion.",
+      "claim_type": "EXPLICIT",
+      "source": "Autophagy is a cellular process that maintains homeostasis via clearance of cellular components, degradation of damaged organelles and protection against viral and bacterial invasion (Boya et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Boya et al., 2013",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:08:01.456908Z"
+    },
+    {
+      "id": "66dac560-b6d9-441f-8939-933cb2b75ca5",
+      "content_id": "15474fca-32e8-477b-bdda-83a21f92fb2f",
+      "claim_id": "C2",
+      "claim": "Autophagy entails the de novo formation of a double membrane structure (termed the isolation membrane), maturation into a sealed autophagosome, and delivery of substrates to the lysosome for degradation.",
+      "claim_type": "EXPLICIT",
+      "source": "Autophagy entails the de novo formation of a double membrane structure (termed the isolation membrane), maturation into a sealed autophagosome, and delivery of substrates to the lysosome for degradation (Melia et al., 2020; Mercer et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Melia et al., 2020 and Mercer et al., 2018",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:08:01.456908Z"
+    },
+    {
+      "id": "d6b90b76-32b4-47cd-87c0-249b93ef73d3",
+      "content_id": "15474fca-32e8-477b-bdda-83a21f92fb2f",
+      "claim_id": "C3",
+      "claim": "Macroautophagy and selective autophagy differ in their initiation mechanisms and cargo specificity.",
+      "claim_type": "EXPLICIT",
+      "source": "Macroautophagy and selective autophagy are two distinct modes of autophagy that differ in their initiation mechanisms and cargo specificity (Yu et al., 2018; Zaffagnini and Martens, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Yu et al., 2018 and Zaffagnini and Martens, 2016",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:08:01.456908Z"
+    },
+    {
+      "id": "cebb49e0-b39c-4d8b-870c-c99f3775c2b5",
+      "content_id": "15474fca-32e8-477b-bdda-83a21f92fb2f",
+      "claim_id": "C4",
+      "claim": "During cellular starvation conditions, macroautophagy functions by the initial formation of an isolation membrane at ER exit sites and expands.",
+      "claim_type": "EXPLICIT",
+      "source": "During cellular starvation conditions, macroautophagy functions by the initial formation of an isolation membrane at ER exit sites and expands (Graef et al., 2013; Suzuki et al., 2013), engulfing cytoplasmic debris in a nonspecific manner.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Graef et al., 2013 and Suzuki et al., 2013",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:08:01.456908Z"
+    },
+    {
+      "id": "193111de-7feb-49c1-9684-b6f4e1abc8ba",
+      "content_id": "15474fca-32e8-477b-bdda-83a21f92fb2f",
+      "claim_id": "C5",
+      "claim": "Macroautophagy engulfs cytoplasmic debris in a nonspecific manner.",
+      "claim_type": "EXPLICIT",
+      "source": "During cellular starvation conditions, macroautophagy functions by the initial formation of an isolation membrane at ER exit sites and expands (Graef et al., 2013; Suzuki et al., 2013), engulfing cytoplasmic debris in a nonspecific manner.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Graef et al., 2013 and Suzuki et al., 2013",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:08:01.456908Z"
+    },
+    {
+      "id": "e831cc60-0812-4851-9cd7-0c76765260b7",
+      "content_id": "15474fca-32e8-477b-bdda-83a21f92fb2f",
+      "claim_id": "C6",
+      "claim": "Selective autophagy functions via a set of autophagy adaptor proteins, which bind cargos directly or via polyubiquitin chains.",
+      "claim_type": "EXPLICIT",
+      "source": "Selective autophagy functions via a set of autophagy adaptor proteins, which bind cargos directly or via polyubiquitin chains (Zaffagnini and Martens, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Zaffagnini and Martens, 2016",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:08:01.456908Z"
+    },
+    {
+      "id": "e0939c06-1d55-47ab-a76e-ec39a75e2d6a",
+      "content_id": "15474fca-32e8-477b-bdda-83a21f92fb2f",
+      "claim_id": "C7",
+      "claim": "NDP52 is a multifunctional autophagy adaptor that is crucial for both xenophagy and mitophagy.",
+      "claim_type": "EXPLICIT",
+      "source": "NDP52, also known as Calcium Binding And Coiled-Coil Domain 2 (CALCOCO2), is a multifunctional autophagy adaptor that is crucial for both xenophagy and mitophagy (Lazarou et al., 2015; von Muhlinen et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Lazarou et al., 2015 and von Muhlinen et al., 2010",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:08:01.456908Z"
+    },
+    {
+      "id": "e7eec4e7-048a-4170-ab80-275ae67ccbc2",
+      "content_id": "15474fca-32e8-477b-bdda-83a21f92fb2f",
+      "claim_id": "C8",
+      "claim": "Knock out studies of NDP52 show a severe impairment of autophagic protection against Salmonella invasion.",
+      "claim_type": "EXPLICIT",
+      "source": "Knock out studies of NDP52 show a severe impairment of autophagic protection against Salmonella invasion (Verlhac et al., 2015) and diminished recruitment of the ULK1 complex during mitophagy (Lazarou et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Verlhac et al., 2015",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:08:01.456908Z"
+    },
+    {
+      "id": "2f05c94c-b6b8-4a11-9342-c7e28d75a04f",
+      "content_id": "15474fca-32e8-477b-bdda-83a21f92fb2f",
+      "claim_id": "C9",
+      "claim": "Knock out studies of NDP52 show diminished recruitment of the ULK1 complex during mitophagy.",
+      "claim_type": "EXPLICIT",
+      "source": "Knock out studies of NDP52 show a severe impairment of autophagic protection against Salmonella invasion (Verlhac et al., 2015) and diminished recruitment of the ULK1 complex during mitophagy (Lazarou et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Lazarou et al., 2015",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:08:01.456908Z"
+    },
+    {
+      "id": "046349e6-dc54-44a9-a9b2-1baeba95111b",
+      "content_id": "15474fca-32e8-477b-bdda-83a21f92fb2f",
+      "claim_id": "C10",
+      "claim": "The N-terminal SKICH domain of NDP52 forms a network of interactions in xenophagy and mitophagy pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "The N-terminal SKICH domain of NDP52 forms a network of interactions in xenophagy and mitophagy pathways (Ravenhill et al., 2019; Till et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Ravenhill et al., 2019 and Till et al., 2013",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:08:01.456908Z"
+    },
+    {
+      "id": "1028c718-4fea-4459-9276-e7d556a5d61d",
+      "content_id": "15474fca-32e8-477b-bdda-83a21f92fb2f",
+      "claim_id": "C11",
+      "claim": "NDP52 directly interacts with FIP200, a protein in the autophagy initiation ULK1 complex.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent work has shown the direct interaction of NDP52 with FIP200, a protein in the autophagy initiation ULK1 complex (Ravenhill et al., 2019; Vargas et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Ravenhill et al., 2019 and Vargas et al., 2019",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:08:01.456908Z"
+    },
+    {
+      "id": "a26e28b6-1634-4d41-8798-ead57bbb2e3a",
+      "content_id": "15474fca-32e8-477b-bdda-83a21f92fb2f",
+      "claim_id": "C12",
+      "claim": "The interaction between NDP52 and FIP200 is crucial for recruitment of ULK1 to initial phagophore sites, ultimately leading to the engulfment and degradation of selected cargo.",
+      "claim_type": "EXPLICIT",
+      "source": "This interaction is crucial for recruitment of ULK1 to initial phagophore sites, ultimately leading to the engulfment and degradation of selected cargo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a conclusion from recent work cited in the previous sentence",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:08:01.456908Z"
+    },
+    {
+      "id": "85171503-87ff-4685-b215-2d7ecb3669d4",
+      "content_id": "15474fca-32e8-477b-bdda-83a21f92fb2f",
+      "claim_id": "C13",
+      "claim": "NDP52 contains a LIR motif which is required for its interaction with LC3.",
+      "claim_type": "EXPLICIT",
+      "source": "NDP52 contains a LIR motif which is required for its interaction with LC3, a hallmark of the autophagosome membrane.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as established knowledge about NDP52 structure and function",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:08:01.456908Z"
+    },
+    {
+      "id": "1a847982-e55e-4aa9-b9dd-72c32d113c59",
+      "content_id": "15474fca-32e8-477b-bdda-83a21f92fb2f",
+      "claim_id": "C14",
+      "claim": "NDP52 has a GALB1 domain, which interacts with galectin-8.",
+      "claim_type": "EXPLICIT",
+      "source": "Lastly, NDP52 has two domains that recognize cargo; a GALB1 domain, which interacts with galectin-8, and a UBZ domain that recognizes polyubiquitin conjugated to the bacterial surface (Thurston et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Thurston et al., 2009",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:08:01.456908Z"
+    },
+    {
+      "id": "87915267-50b4-4a1a-9221-db53fe58d91a",
+      "content_id": "15474fca-32e8-477b-bdda-83a21f92fb2f",
+      "claim_id": "C15",
+      "claim": "NDP52 has a UBZ domain that recognizes polyubiquitin conjugated to the bacterial surface.",
+      "claim_type": "EXPLICIT",
+      "source": "Lastly, NDP52 has two domains that recognize cargo; a GALB1 domain, which interacts with galectin-8, and a UBZ domain that recognizes polyubiquitin conjugated to the bacterial surface (Thurston et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Thurston et al., 2009",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:08:01.456908Z"
+    },
+    {
+      "id": "54f78d70-18f2-46e8-9721-acab1bae7ce4",
+      "content_id": "15474fca-32e8-477b-bdda-83a21f92fb2f",
+      "claim_id": "C16",
+      "claim": "The ULK1 complex is comprised of the ULK1 kinase, FIP200, ATG13, and ATG101.",
+      "claim_type": "EXPLICIT",
+      "source": "The ULK1 complex is comprised of the ULK1 kinase, focal adhesion kinase family interacting protein of 200 kDa (FIP200), autophagy-related protein 13 (ATG13), and ATG101 (Ganley et al., 2009; Hosokawa et al., 2009; Jung et al., 2009; Lin and Hurley, 2016; Mercer et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:08:01.456908Z"
+    },
+    {
+      "id": "b4fda823-eaa7-4a96-b6bd-9759798a58e7",
+      "content_id": "15474fca-32e8-477b-bdda-83a21f92fb2f",
+      "claim_id": "C17",
+      "claim": "ULK1 and ULK2 are interchangeable threonine/serine kinases which function as the catalytic subunit of the ULK1 complex.",
+      "claim_type": "EXPLICIT",
+      "source": "ULK1 and 2 are interchangeable threonine/serine kinases which function as the catalytic subunit of the ULK1 complex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as established knowledge about ULK1/2",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:08:01.456908Z"
+    },
+    {
+      "id": "b0ff68fb-cc6f-4dff-a822-f79c963e1b16",
+      "content_id": "15474fca-32e8-477b-bdda-83a21f92fb2f",
+      "claim_id": "C18",
+      "claim": "The N-terminal kinase domain of ULK1 is followed by a ~ 550 residue intrinsically disordered region (IDR) and a C-terminal early autophagy tethering (EAT) domain.",
+      "claim_type": "EXPLICIT",
+      "source": "The N-terminal kinase domain is followed by a ~ 550 residue intrinsically disordered region (IDR) and a C-terminal early autophagy tethering (EAT) domain which recruits ULK1 to the rest of the complex via ATG13 (Alers et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Alers et al., 2014",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:08:01.456908Z"
+    },
+    {
+      "id": "ffae0db1-9e48-4df2-b1ad-2f9df11983e6",
+      "content_id": "15474fca-32e8-477b-bdda-83a21f92fb2f",
+      "claim_id": "C19",
+      "claim": "The EAT domain of ULK1 recruits ULK1 to the rest of the complex via ATG13.",
+      "claim_type": "EXPLICIT",
+      "source": "The N-terminal kinase domain is followed by a ~ 550 residue intrinsically disordered region (IDR) and a C-terminal early autophagy tethering (EAT) domain which recruits ULK1 to the rest of the complex via ATG13 (Alers et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Alers et al., 2014",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:08:01.456908Z"
+    },
+    {
+      "id": "e0fab68d-f358-4dff-a31f-d4e83dc1229a",
+      "content_id": "15474fca-32e8-477b-bdda-83a21f92fb2f",
+      "claim_id": "C20",
+      "claim": "The network of interactions in the ULK1 complex is conserved in the yeast homolog Atg1 complex.",
+      "claim_type": "EXPLICIT",
+      "source": "This network of interactions is conserved in the yeast homolog Atg1 complex (Fujioka et al., 2014; Stjepanovic et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Fujioka et al., 2014 and Stjepanovic et al., 2014",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:08:01.456908Z"
+    },
+    {
+      "id": "de31e014-cee6-4c63-9fc2-04c4dffea845",
+      "content_id": "15474fca-32e8-477b-bdda-83a21f92fb2f",
+      "claim_id": "C21",
+      "claim": "FIP200 is a 1594 residue protein which contains a dimeric N-terminal scaffolding domain, an IDR, a coiled-coil (CC) region and a C-terminal 'Claw' domain.",
+      "claim_type": "EXPLICIT",
+      "source": "FIP200 is a 1594 residue protein which contains a dimeric N-terminal scaffolding domain (Shi et al., 2020), an IDR, a coiled-coil (CC) region and a C-terminal 'Claw' domain (Turco et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Shi et al., 2020 and Turco et al., 2019",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:08:01.456908Z"
+    },
+    {
+      "id": "41a46335-859c-47af-808a-0798bfeefff9",
+      "content_id": "15474fca-32e8-477b-bdda-83a21f92fb2f",
+      "claim_id": "C22",
+      "claim": "The C-shaped N-terminal domain dimer of FIP200 scaffolds assembly of the ULK1 complex.",
+      "claim_type": "EXPLICIT",
+      "source": "The C-shaped N-terminal domain dimer of FIP200 scaffolds assembly of the ULK1 complex while the C-terminal Claw domain interacts with cargo adaptors, including NDP52, p62 and CCPG1 (Ravenhill et al., 2019; Turco et al., 2019; Vargas et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Ravenhill et al., 2019, Turco et al., 2019, and Vargas et al., 2019",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:08:01.456908Z"
+    },
+    {
+      "id": "b5645781-1cab-4d3d-a9bc-884ead905752",
+      "content_id": "15474fca-32e8-477b-bdda-83a21f92fb2f",
+      "claim_id": "C23",
+      "claim": "The C-terminal Claw domain of FIP200 interacts with cargo adaptors, including NDP52, p62 and CCPG1.",
+      "claim_type": "EXPLICIT",
+      "source": "The C-shaped N-terminal domain dimer of FIP200 scaffolds assembly of the ULK1 complex while the C-terminal Claw domain interacts with cargo adaptors, including NDP52, p62 and CCPG1 (Ravenhill et al., 2019; Turco et al., 2019; Vargas et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Ravenhill et al., 2019, Turco et al., 2019, and Vargas et al., 2019",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:08:01.456908Z"
+    },
+    {
+      "id": "9e7e1c42-9b9c-4c86-821c-7983a1e49546",
+      "content_id": "15474fca-32e8-477b-bdda-83a21f92fb2f",
+      "claim_id": "C24",
+      "claim": "ATG13/101 form a HORMA dimer which interacts with PI3K and is required for ULK1 complex function and assembly.",
+      "claim_type": "EXPLICIT",
+      "source": "ATG13/101 form a HORMA dimer which interacts with PI3K and is required for ULK1 complex function and assembly (Qi et al., 2015; Suzuki et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Qi et al., 2015 and Suzuki et al., 2015",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:08:01.456908Z"
+    },
+    {
+      "id": "e4d8caee-5d69-4be9-826b-0dcf52578ad5",
+      "content_id": "15474fca-32e8-477b-bdda-83a21f92fb2f",
+      "claim_id": "C25",
+      "claim": "An NDP52 binding site on FIP200 is located between residues 1351\u20131441.",
+      "claim_type": "EXPLICIT",
+      "source": "Little is known about the structure and function of the massive CC domain of FIP200, beyond the crystal structure of its very C-terminal 100 residues (Turco et al., 2019) and the identification of an NDP52 binding site between residues 1351\u20131441 (Ravenhill et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Ravenhill et al., 2019",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:08:01.456908Z"
+    },
+    {
+      "id": "603cc9eb-60fe-4329-98cd-df039334ac87",
+      "content_id": "15474fca-32e8-477b-bdda-83a21f92fb2f",
+      "claim_id": "C26",
+      "claim": "The ULK1 complex is rapidly recruited to invading bacteria and damaged mitochondria following their ubiquitination via its interaction with NDP52.",
+      "claim_type": "EXPLICIT",
+      "source": "The ULK1 complex is rapidly recruited to invading bacteria and damaged mitochondria following their ubiquitination via its interaction with NDP52 (Ravenhill et al., 2019; Turco et al., 2020; Vargas et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Ravenhill et al., 2019, Turco et al., 2020, and Vargas et al., 2019",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:08:01.456908Z"
+    },
+    {
+      "id": "64811614-0c37-400e-8e4d-6152b4af127d",
+      "content_id": "15474fca-32e8-477b-bdda-83a21f92fb2f",
+      "claim_id": "C27",
+      "claim": "Full length FIP200 forms an extended and dynamic structure, which scaffolds the ULK1 complex at its dimeric C-shaped N-terminal domain.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we demonstrate that purified full length FIP200 forms an extended and dynamic structure, which scaffolds the ULK1 complex at its dimeric C-shaped N-terminal domain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated by the authors' experimental data in this study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:08:01.456908Z"
+    },
+    {
+      "id": "c9c545cb-5620-4822-a54f-e8a28d98665e",
+      "content_id": "15474fca-32e8-477b-bdda-83a21f92fb2f",
+      "claim_id": "C28",
+      "claim": "Binding of NDP52 to full length FIP200 and the ULK1 complex does not change the conformation of the N-terminal domain.",
+      "claim_type": "EXPLICIT",
+      "source": "Binding of NDP52 to full length FIP200 and the ULK1 complex does not change the conformation of the N-terminal domain, but alters that of a large portion of the FIP200 CC domain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated by the authors' HDX-MS data in this study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:08:01.456908Z"
+    },
+    {
+      "id": "4ffd5211-d137-45ee-8594-0da963834c74",
+      "content_id": "15474fca-32e8-477b-bdda-83a21f92fb2f",
+      "claim_id": "C29",
+      "claim": "Binding of NDP52 to full length FIP200 and the ULK1 complex alters the conformation of a large portion of the FIP200 CC domain.",
+      "claim_type": "EXPLICIT",
+      "source": "Binding of NDP52 to full length FIP200 and the ULK1 complex does not change the conformation of the N-terminal domain, but alters that of a large portion of the FIP200 CC domain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated by the authors' HDX-MS data in this study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:08:01.456908Z"
+    },
+    {
+      "id": "c9e2f4de-b12e-4681-9108-4e8391fc6dc4",
+      "content_id": "15474fca-32e8-477b-bdda-83a21f92fb2f",
+      "claim_id": "C30",
+      "claim": "NDP52 binding increases the membrane affinity of FIP200.",
+      "claim_type": "EXPLICIT",
+      "source": "This interaction increases the membrane affinity of FIP200.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated by the authors' experimental data in this study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:08:01.456908Z"
+    },
+    {
+      "id": "f33a4a7d-bac0-4d4d-8d6f-8997f58cae1a",
+      "content_id": "15474fca-32e8-477b-bdda-83a21f92fb2f",
+      "claim_id": "C31",
+      "claim": "NDP52 induces robust recruitment of the ULK1 complex to giant unilamellar vesicles (GUVs) by exposing a membrane binding site within the CC domain of FIP200.",
+      "claim_type": "EXPLICIT",
+      "source": "NDP52 induces robust recruitment of the ULK1 complex to giant unilamellar vesicles (GUVs) by exposing a membrane binding site within the CC domain of FIP200.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated by the authors' GUV reconstitution experiments in this study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:08:01.456908Z"
+    },
+    {
+      "id": "81cb1056-0b84-4542-bb79-04adfbd68fbb",
+      "content_id": "15474fca-32e8-477b-bdda-83a21f92fb2f",
+      "claim_id": "C32",
+      "claim": "Full length FIP200 single particles showed an extended density with a C-shaped density at one end, corresponding to the dimeric FIP200NTD.",
+      "claim_type": "EXPLICIT",
+      "source": "Full length FIP200 single particles showed an extended density with a C-shaped density at one end, corresponding to the dimeric FIP200NTD previously resolved (Shi et al., 2020).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Observed in negative stain EM images shown in Figure 1A and supported by citation to Shi et al., 2020",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:08:01.456908Z"
+    },
+    {
+      "id": "79e9aa43-808d-4c2f-9b68-69bab8b545c0",
+      "content_id": "15474fca-32e8-477b-bdda-83a21f92fb2f",
+      "claim_id": "C33",
+      "claim": "Density for the GST tags can be seen in the center of the FIP200 NTD dimer.",
+      "claim_type": "EXPLICIT",
+      "source": "Density for the GST tags can be seen in the center of the FIP200 NTD dimer (Figure 1\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Observed in EM data shown in Figure 1\u2014figure supplement 1B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:08:01.456908Z"
+    },
+    {
+      "id": "422d6e89-b851-4390-bb3b-60bdb10d2ee2",
+      "content_id": "15474fca-32e8-477b-bdda-83a21f92fb2f",
+      "claim_id": "C34",
+      "claim": "The C-shaped N-terminal density of FIP200 is followed by a long meandering density which corresponds to the CC domain (residues 790\u20131500).",
+      "claim_type": "EXPLICIT",
+      "source": "This N-terminal density is followed by a long meandering density which we assigned as the CC domain (residues 790\u20131500).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Observed in EM data and assigned based on structural knowledge",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:08:01.456908Z"
+    },
+    {
+      "id": "dce59ef6-cb0a-49a5-b2a4-f27010c1d1a7",
+      "content_id": "15474fca-32e8-477b-bdda-83a21f92fb2f",
+      "claim_id": "C35",
+      "claim": "The IDR region (640-790) of FIP200 was not visualized in negative stain EM.",
+      "claim_type": "EXPLICIT",
+      "source": "The IDR region (640-790) was not visualized.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observation from EM data analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:08:01.456908Z"
+    },
+    {
+      "id": "71070c00-862c-4af8-b39f-c4dc5532ef22",
+      "content_id": "15474fca-32e8-477b-bdda-83a21f92fb2f",
+      "claim_id": "C36",
+      "claim": "Features visualized at the C-terminus of FIP200 correspond to density for two MBP tags (40 kDa each) and the Claw dimer (22 kDa).",
+      "claim_type": "EXPLICIT",
+      "source": "Features visualized at the C-terminus of FIP200 correspond to density for two MBP tags (40 kDa each) and the Claw dimer (22 kDa) (Figure 1\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Observed in EM data shown in Figure 1\u2014figure supplement 1C and assigned based on known molecular weights",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:08:01.456908Z"
+    },
+    {
+      "id": "0136dab2-601c-4e1f-961f-6d016f9ac037",
+      "content_id": "15474fca-32e8-477b-bdda-83a21f92fb2f",
+      "claim_id": "C37",
+      "claim": "The CC domain of FIP200 was observed in a variety of conformations with varying lengths and curvatures.",
+      "claim_type": "EXPLICIT",
+      "source": "The CC was observed in a variety of conformations with varying lengths and curvatures.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Observed in EM data shown in Figure 1A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:08:01.456908Z"
+    },
+    {
+      "id": "8ae5f3fb-c366-4985-a335-cd380ee9c7db",
+      "content_id": "15474fca-32e8-477b-bdda-83a21f92fb2f",
+      "claim_id": "C38",
+      "claim": "The contour lengths of the CC region in FIP200 particles analyzed by NSEM ranged from 37 nm to 107 nm, with a mean length of 79 nm.",
+      "claim_type": "EXPLICIT",
+      "source": "The contour lengths of the CC region in particles analyzed by NSEM ranged from 37 nm to 107 nm, with a mean length of 79 nm (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Measured from EM data and shown in histogram in Figure 1B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:08:01.456908Z"
+    },
+    {
+      "id": "ed475a99-e22b-4a21-8bed-874335a180a2",
+      "content_id": "15474fca-32e8-477b-bdda-83a21f92fb2f",
+      "claim_id": "C39",
+      "claim": "The end-to-end distances of FIP200 particles ranged from 32 nm to 94 nm with a mean of 69 nm.",
+      "claim_type": "EXPLICIT",
+      "source": "The variability of the total length corresponds to a range of end-to-end distances distributed from 32 nm to 94 nm with a mean of 69 nm (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Measured from EM data and shown in histogram in Figure 1B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:08:01.456908Z"
+    },
+    {
+      "id": "b15d8d18-014d-4d45-ab39-f10ea691f2ae",
+      "content_id": "15474fca-32e8-477b-bdda-83a21f92fb2f",
+      "claim_id": "C40",
+      "claim": "The FIP200 N-terminus is separated from the C-terminus Claw domain.",
+      "claim_type": "EXPLICIT",
+      "source": "It is clear that the FIP200 N-terminus is separated from the C-terminus Claw domain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from EM observations of FIP200 structure",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:08:01.456908Z"
+    },
+    {
+      "id": "b8be2f32-44f1-426f-9bc1-9b0daf10426b",
+      "content_id": "15474fca-32e8-477b-bdda-83a21f92fb2f",
+      "claim_id": "C41",
+      "claim": "The spatial separation of FIP200 N-terminus and C-terminus separates the site of ULK1 assembly at the NTD and the binding site of the cargo adaptors NDP52 near the C-terminal end of the CC and p62 at the Claw domain.",
+      "claim_type": "EXPLICIT",
+      "source": "This spatially separates the site of ULK1 assembly at the NTD and the binding site of the cargo adaptors NDP52 near the C-terminal end of the CC (Ravenhill et al., 2019; Vargas et al., 2019) and p62 at the Claw domain C-terminal to the CC (Turco et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from structural observations and supported by citations",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:08:01.456908Z"
+    },
+    {
+      "id": "662f5140-af9b-4f62-ace0-b145aa1456fc",
+      "content_id": "15474fca-32e8-477b-bdda-83a21f92fb2f",
+      "claim_id": "C42",
+      "claim": "Purified ULK1 complex was active with respect to the synthetic substrate, ULKtide.",
+      "claim_type": "EXPLICIT",
+      "source": "Purified ULK1 complex was active with respect to the synthetic substrate, ULKtide (Figure 1\u2014figure supplement 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by kinase assay data shown in Figure 1\u2014figure supplement 2A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:08:01.456908Z"
+    },
+    {
+      "id": "3112e56d-5018-4084-bb1a-42eed2f2bfeb",
+      "content_id": "15474fca-32e8-477b-bdda-83a21f92fb2f",
+      "claim_id": "C43",
+      "claim": "Peptides spanning residues 75\u201380, 157\u2013165, 313\u2013324, 350\u2013356, 435\u2013469 and 532\u2013541 of FIP200 showed increases in protection of >10% after exchanging for 60 s when comparing FIP200 alone to FIP200 in the ULK1 complex.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, peptides spanning residues 75\u201380, 157\u2013165, 313\u2013324, 350\u2013356, 435\u2013469 and 532\u2013541 showed increases in protection of >10% after exchanging for 60 s (Figure 1C, Figure 1\u2014figure supplement 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Measured by HDX-MS and shown in Figure 1C and Figure 1\u2014figure supplement 2B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:08:01.456908Z"
+    },
+    {
+      "id": "59727154-4e65-42c5-a298-25fa5b054d69",
+      "content_id": "15474fca-32e8-477b-bdda-83a21f92fb2f",
+      "claim_id": "C44",
+      "claim": "No large changes (>10%) in H/D exchange were observed in FIP200 CC or Claw when comparing FIP200 alone to FIP200 in the ULK1 complex.",
+      "claim_type": "EXPLICIT",
+      "source": "No large changes (>10%) were observed in FIP200 CC or Claw.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Measured by HDX-MS analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:08:01.456908Z"
+    },
+    {
+      "id": "82d0dfd3-86f0-4ff5-9414-ab83077d0ff7",
+      "content_id": "15474fca-32e8-477b-bdda-83a21f92fb2f",
+      "claim_id": "C45",
+      "claim": "Assembly of the ULK1 complex with full length FIP200 does not affect the dynamics of the cargo-recognizing CC and Claw.",
+      "claim_type": "EXPLICIT",
+      "source": "This implies that assembly of the ULK1 complex with full length FIP200 does not affect the dynamics of the cargo-recognizing CC and Claw.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from HDX-MS data showing no large changes in CC and Claw regions",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:08:01.456908Z"
+    },
+    {
+      "id": "24117e87-b5a5-437b-b772-a36dade68229",
+      "content_id": "15474fca-32e8-477b-bdda-83a21f92fb2f",
+      "claim_id": "C46",
+      "claim": "FIP200 is a modular protein whose NTD engages with the rest of the ULK1 complex and whose CC and Claw engage independently with cargo adaptors.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, FIP200 is a modular protein whose NTD engages with the rest of the ULK1 complex and whose CC and Claw engage independently with cargo adaptors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Concluded from HDX-MS data showing differential protection patterns",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:08:01.456908Z"
+    },
+    {
+      "id": "9aa9fe89-a100-4c06-9d64-867b5cfd0555",
+      "content_id": "15474fca-32e8-477b-bdda-83a21f92fb2f",
+      "claim_id": "C47",
+      "claim": "The ULK1 complex was specifically pulled down by GST-NDP52, but not by GST-4xUb or GSH beads alone.",
+      "claim_type": "EXPLICIT",
+      "source": "The ULK1 complex was specifically pulled down by GST-NDP52, but not by GST-4xUb or GSH beads alone.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by pulldown assay shown in Figure 1\u2014figure supplement 2C,D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:08:01.456908Z"
+    },
+    {
+      "id": "adf23c26-e245-4936-a98e-14fd4551e0ef",
+      "content_id": "15474fca-32e8-477b-bdda-83a21f92fb2f",
+      "claim_id": "C48",
+      "claim": "The ULK1 complex recognizes cargo adaptors but not poly-ubiquitin chains directly in the in vitro system used.",
+      "claim_type": "EXPLICIT",
+      "source": "This confirmed that the ULK1 complex recognizes cargo adaptors but not poly-ubiquitin chains directly in our in vitro system.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Concluded from pulldown assay results",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:08:01.456908Z"
+    },
+    {
+      "id": "b6581dd3-c209-43a2-861e-0870f782b7fd",
+      "content_id": "15474fca-32e8-477b-bdda-83a21f92fb2f",
+      "claim_id": "C49",
+      "claim": "In the presence of NDP52, no large changes (<-10% or >10%) in H/D exchange were identified in peptides from ATG13, ATG101, ULK1 or the FIP200NTD.",
+      "claim_type": "EXPLICIT",
+      "source": "In the presence of NDP52, no large changes (<-10% or >10%) were identified in peptides from ATG13, ATG101, ULK1 or the FIP200NTD (Figure 2A\u2013D, Figure 2\u2014figure supplement 1, all proteins at 2 \u03bcM, except FIP200 at 4 \u03bcM and NDP52 at 16 \u03bcM).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Measured by HDX-MS and shown in Figure 2A\u2013D and Figure 2\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:08:01.456908Z"
+    },
+    {
+      "id": "6fb43075-3736-406e-ad87-3eefd94e8d7b",
+      "content_id": "15474fca-32e8-477b-bdda-83a21f92fb2f",
+      "claim_id": "C50",
+      "claim": "NDP52 does not directly or allosterically modulate ATG13, ATG101, ULK1 or the FIP200NTD upon binding to the FIP200 CTD.",
+      "claim_type": "EXPLICIT",
+      "source": "A lack of HDX difference suggests that NDP52 does not directly or allosterically modulate these regions upon binding to the FIP200 CTD.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from HDX-MS data showing no large changes",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:08:01.456908Z"
+    },
+    {
+      "id": "dcc2475d-5c56-474b-a835-cc07c7a4ce85",
+      "content_id": "15474fca-32e8-477b-bdda-83a21f92fb2f",
+      "claim_id": "C51",
+      "claim": "Three regions of the CC domain of FIP200 (residues 1290\u20131320, 1339\u20131392 and 1462\u20131470) showed significant protection (>10% decrease in deuterium exchange) in the presence of NDP52.",
+      "claim_type": "EXPLICIT",
+      "source": "However, our analysis showed three regions of the CC domain of FIP200 with significant protection in the presence of NDP52. Peptides of residues 1290\u20131320, 1339\u20131392 and 1462\u20131470 showed a decrease of deuterium exchange of >10% (Figure 2D, Figure 2\u2014figure supplement 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Measured by HDX-MS and shown in Figure 2D and Figure 2\u2014figure supplement 2A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:08:01.456908Z"
+    },
+    {
+      "id": "ae5f13c4-d1a9-41ce-8e07-d60268600ac6",
+      "content_id": "15474fca-32e8-477b-bdda-83a21f92fb2f",
+      "claim_id": "C52",
+      "claim": "Residues in the 1339\u20131392 region (L1371, L1378, L1385, and L1392) of FIP200 correspond to the previously proposed binding site of NDP52.",
+      "claim_type": "EXPLICIT",
+      "source": "Residues in the 1339\u20131392 region (L1371, L1378, L1385, and L1392) corresponds to the previously proposed as a binding site of NDP52 (Ravenhill et al., 2019; Vargas et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Ravenhill et al., 2019 and Vargas et al., 2019",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:08:01.456908Z"
+    },
+    {
+      "id": "2f939ff7-e7c8-45b3-9efa-a48556273ed1",
+      "content_id": "15474fca-32e8-477b-bdda-83a21f92fb2f",
+      "claim_id": "C53",
+      "claim": "An extensive region of the FIP200 CC N-terminal to the NDP52 binding site, spanning residues 800\u20131250, especially 935\u20131073, had increased H/D exchange rate after NDP52 binding.",
+      "claim_type": "EXPLICIT",
+      "source": "Unexpectedly, an extensive region of the CC N-terminal to the NDP52 binding site, spanning FIP200 residues 800\u20131250, especially 935\u20131073, had increased H/D exchange rate after NDP52 binding (Figure 2D, Figure 2\u2014figure supplement 2A, Supplementary file 1- Table S1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Measured by HDX-MS and shown in Figure 2D and Figure 2\u2014figure supplement 2A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:08:01.456908Z"
+    },
+    {
+      "id": "2bdd2be7-9de2-4065-9ce8-e05aad116e0e",
+      "content_id": "15474fca-32e8-477b-bdda-83a21f92fb2f",
+      "claim_id": "C54",
+      "claim": "The N-terminal part of the FIP200 CC is destabilized upon NDP52 binding.",
+      "claim_type": "EXPLICIT",
+      "source": "These changes suggest that the N-terminal part of the CC is destabilized upon NDP52 binding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from HDX-MS data showing increased exchange rates",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:08:01.456908Z"
+    },
+    {
+      "id": "262fa54b-3a3c-4269-8891-85a69eedcfe0",
+      "content_id": "15474fca-32e8-477b-bdda-83a21f92fb2f",
+      "claim_id": "C55",
+      "claim": "FIP200 alone and the full ULK1 complex bound to the same extent to 0.1, 0.3 and 1 uM of GST-NDP52.",
+      "claim_type": "EXPLICIT",
+      "source": "FIP200 alone and the full ULK1 complex bound to the same extent to 0.1, 0.3 and 1 uM of GST-NDP52.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by pulldown assay shown in Figure 2E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:08:01.456908Z"
+    },
+    {
+      "id": "892caac7-be97-4dda-906f-384e92eca5b2",
+      "content_id": "15474fca-32e8-477b-bdda-83a21f92fb2f",
+      "claim_id": "C56",
+      "claim": "Mutation of region 4 (1355\u20131362), 5 (1363\u20131370) and 6 (1371\u20131378) in FIP200 impaired the interaction with NDP52.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, both GST and MBP pulldown assays confirmed that mutation of region 4 (1355\u20131362), 5 (1363\u20131370) and 6 (1371\u20131378) in FIP200 impaired the interaction with NDP52, while the rest showed small decreases in binding affinity (region 3 and 7) or minimal (region 1, 2 and 8) effects (Figure 2F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by pulldown assays shown in Figure 2F",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:08:01.456908Z"
+    },
+    {
+      "id": "258c700f-486d-4645-9486-4befc66da44c",
+      "content_id": "15474fca-32e8-477b-bdda-83a21f92fb2f",
+      "claim_id": "C57",
+      "claim": "Mutations in regions 3 and 7 of FIP200 showed small decreases in binding affinity to NDP52.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, both GST and MBP pulldown assays confirmed that mutation of region 4 (1355\u20131362), 5 (1363\u20131370) and 6 (1371\u20131378) in FIP200 impaired the interaction with NDP52, while the rest showed small decreases in binding affinity (region 3 and 7) or minimal (region 1, 2 and 8) effects (Figure 2F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by pulldown assays shown in Figure 2F",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:08:01.456908Z"
+    },
+    {
+      "id": "bc90d0f6-e4ea-49e5-b764-3fa0397df453",
+      "content_id": "15474fca-32e8-477b-bdda-83a21f92fb2f",
+      "claim_id": "C58",
+      "claim": "Mutations in regions 1, 2 and 8 of FIP200 showed minimal effects on binding to NDP52.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, both GST and MBP pulldown assays confirmed that mutation of region 4 (1355\u20131362), 5 (1363\u20131370) and 6 (1371\u20131378) in FIP200 impaired the interaction with NDP52, while the rest showed small decreases in binding affinity (region 3 and 7) or minimal (region 1, 2 and 8) effects (Figure 2F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by pulldown assays shown in Figure 2F",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:08:01.456908Z"
+    },
+    {
+      "id": "dcea7209-a13d-4d32-bfb0-d7e5768c7514",
+      "content_id": "15474fca-32e8-477b-bdda-83a21f92fb2f",
+      "claim_id": "C59",
+      "claim": "No large changes (<-10% or >10%) in H/D exchange were identified in peptides from ATG13 or ATG101 when the ULK1 complex was incubated with SUVs containing PI lipids.",
+      "claim_type": "EXPLICIT",
+      "source": "No large changes (<-10% or >10%) were identified in peptides from ATG13 or ATG101 which suggests that PI containing membranes do not directly or allosterically modulate these proteins of the ULK1 complex (Figure 3A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Measured by HDX-MS and shown in Figure 3A,B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:08:01.456908Z"
+    },
+    {
+      "id": "89c4209f-7f0a-46b4-b1b9-9759aec63a3b",
+      "content_id": "15474fca-32e8-477b-bdda-83a21f92fb2f",
+      "claim_id": "C60",
+      "claim": "PI containing membranes do not directly or allosterically modulate ATG13 or ATG101 of the ULK1 complex.",
+      "claim_type": "EXPLICIT",
+      "source": "No large changes (<-10% or >10%) were identified in peptides from ATG13 or ATG101 which suggests that PI containing membranes do not directly or allosterically modulate these proteins of the ULK1 complex (Figure 3A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inferred from HDX-MS data showing no large changes",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:08:01.456908Z"
+    },
+    {
+      "id": "f9f468fc-0cb5-4a51-b8f1-2bb0517cf4c7",
+      "content_id": "15474fca-32e8-477b-bdda-83a21f92fb2f",
+      "claim_id": "C61",
+      "claim": "Residues within the N-terminal domain (539-564) of FIP200 showed moderate protection (~10%) when incubated with PI-containing SUVs.",
+      "claim_type": "EXPLICIT",
+      "source": "In our assay, two regions of FIP200 showed significant protection. Residues within the N-terminal domain (539-564) showed moderate protection ~10%.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Measured by HDX-MS and shown in Figure 3C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:08:01.456908Z"
+    },
+    {
+      "id": "0661a046-2a3d-4a79-b8d4-a16ef8e71c89",
+      "content_id": "15474fca-32e8-477b-bdda-83a21f92fb2f",
+      "claim_id": "C62",
+      "claim": "The strongest protection profile (5\u201345%) in FIP200 upon SUV binding was seen across an extended portion of the CC domain, covering residues 844\u20131073.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the strongest protection profile (5\u201345%) was seen across an extended portion of the CC domain, covering residues 844\u20131073 (Figure 3C, Figure 2\u2014figure supplement 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Measured by HDX-MS and shown in Figure 3C and Figure 2\u2014figure supplement 2B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:08:01.456908Z"
+    },
+    {
+      "id": "fc1ce4c0-74dd-4d7a-b87c-16b2aafcf0b1",
+      "content_id": "15474fca-32e8-477b-bdda-83a21f92fb2f",
+      "claim_id": "C63",
+      "claim": "The FIP200 CTD (636-C) containing the CC domain, but not FIP200 NTD, co-precipitated with membranes in liposome sedimentation assays.",
+      "claim_type": "EXPLICIT",
+      "source": "The FIP200 CTD (636-C) containing the CC domain, but not FIP200 NTD, co-precipitated with membranes.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by liposome sedimentation assay shown in Figure 3D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:08:01.456908Z"
+    },
+    {
+      "id": "f5b17965-3bdd-40fd-b432-b906ad0408ed",
+      "content_id": "15474fca-32e8-477b-bdda-83a21f92fb2f",
+      "claim_id": "C64",
+      "claim": "FIP200 CTD co-precipitation with membranes was most prominent in SUVs containing an acidic lipid mixture of PS/PI.",
+      "claim_type": "EXPLICIT",
+      "source": "This was most prominent in SUVs containing an acidic lipid mixture of PS/PI.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by liposome sedimentation assay shown in Figure 3D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:08:01.456908Z"
+    },
+    {
+      "id": "99ef8d0c-6e9c-414b-8d60-22e7f57db5a5",
+      "content_id": "15474fca-32e8-477b-bdda-83a21f92fb2f",
+      "claim_id": "C65",
+      "claim": "A smaller amount of the FIP200 CTD was observed in the pellet of SUVs containing PC/PE.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, a smaller amount of the FIP200 CTD was observed in the pellet of SUVs containing PC/PE.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by liposome sedimentation assay shown in Figure 3D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:08:01.456908Z"
+    },
+    {
+      "id": "5aa8286a-dd73-44cf-90e4-2f63897e8395",
+      "content_id": "15474fca-32e8-477b-bdda-83a21f92fb2f",
+      "claim_id": "C66",
+      "claim": "NDP52 binding at the C-terminal CC domain could trigger destabilization or opening of the N-terminal CC domain, increasing exposure of hydrophobic residues and stimulating membrane binding to the ULK1 complex.",
+      "claim_type": "EXPLICIT",
+      "source": "The interaction between the CC domain of FIP200 and membranes raises the possibility that NDP52 binding at the C-terminal CC domain could trigger destabilization or opening of the N-terminal CC domain, increasing exposure of hydrophobic residues and so stimulating membrane binding to the ULK1 complex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculated based on the observed interactions between CC domain and membranes",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:08:01.456908Z"
+    },
+    {
+      "id": "d43719c7-cd48-4e14-aeac-53e59a4e2bbf",
+      "content_id": "15474fca-32e8-477b-bdda-83a21f92fb2f",
+      "claim_id": "C67",
+      "claim": "FIP200 alone was only minimally recruited to GUVs.",
+      "claim_type": "EXPLICIT",
+      "source": "FIP200 alone was only minimally recruited to GUVs (Figure 4A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by GUV reconstitution assay shown in Figure 4A,B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:08:01.456908Z"
+    },
+    {
+      "id": "884cd974-467e-42bb-8051-80c188c42882",
+      "content_id": "15474fca-32e8-477b-bdda-83a21f92fb2f",
+      "claim_id": "C68",
+      "claim": "Minimal GUV binding of FIP200 was observed in the presence of His-tagged NDP52.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, minimal GUV binding was observed in the presence of His-tagged NDP52.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by GUV reconstitution assay shown in Figure 4A,B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:08:01.456908Z"
+    },
+    {
+      "id": "2d7a1008-1d95-4d8b-8990-241e655b4f66",
+      "content_id": "15474fca-32e8-477b-bdda-83a21f92fb2f",
+      "claim_id": "C69",
+      "claim": "GST-tagged NDP52 showed a small increase in membrane binding of FIP200 compared to His-tagged NDP52.",
+      "claim_type": "EXPLICIT",
+      "source": "GST-tagged NDP52 showed a small increase in membrane binding (Figure 4A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by GUV reconstitution assay shown in Figure 4A,B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:08:01.456908Z"
+    },
+    {
+      "id": "318d62eb-b6c5-407d-bf08-1a99bcfd757c",
+      "content_id": "15474fca-32e8-477b-bdda-83a21f92fb2f",
+      "claim_id": "C70",
+      "claim": "The oligomeric state of NDP52 is crucial for the activation of FIP200 membrane binding.",
+      "claim_type": "EXPLICIT",
+      "source": "Given that the GST tag forms a native dimer, this suggested the oligomeric state of NDP52 was crucial for the activation of FIP200 membrane binding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the difference in binding between GST-NDP52 (dimeric) and His-NDP52 (monomeric)",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:08:01.456908Z"
+    },
+    {
+      "id": "212e38a3-ec20-42a6-97be-77c0176c26f8",
+      "content_id": "15474fca-32e8-477b-bdda-83a21f92fb2f",
+      "claim_id": "C71",
+      "claim": "No recruitment of FIP200 was detected to GUVs in the presence of GST-4xUb alone.",
+      "claim_type": "EXPLICIT",
+      "source": "No recruitment of FIP200 was detected to GUVs in the presence of GST-4xUb alone, consistent with the lack of a direct interaction between FIP200 and Ub (Figure 1\u2014figure supplement 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by GUV reconstitution assay shown in Figure 4A,B and consistent with pulldown data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:08:01.456908Z"
+    },
+    {
+      "id": "045e9831-7d59-4635-9d52-25b517c667b0",
+      "content_id": "15474fca-32e8-477b-bdda-83a21f92fb2f",
+      "claim_id": "C72",
+      "claim": "In the presence of GST-4xUb and NDP52, FIP200 rapidly coalesced into clusters and was robustly recruited to the GUV surface.",
+      "claim_type": "EXPLICIT",
+      "source": "In the presence of GST-4xUb and NDP52, FIP200 rapidly coalesced into clusters and was robustly recruited to the GUV surface (Figure 4A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by GUV reconstitution assay shown in Figure 4A,B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:08:01.456908Z"
+    },
+    {
+      "id": "6a8e9853-0993-4b90-806f-c16b63b6eed2",
+      "content_id": "15474fca-32e8-477b-bdda-83a21f92fb2f",
+      "claim_id": "C73",
+      "claim": "FIP200 clusters began to form within 5 min of mixing with GST-4xUb and NDP52.",
+      "claim_type": "EXPLICIT",
+      "source": "These clusters began to form within 5 min of mixing (Figure 4A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by time-lapse imaging in GUV reconstitution assay shown in Figure 4A,B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:08:01.456908Z"
+    },
+    {
+      "id": "b8979e76-1a5e-444d-ad03-5ed98b59f74f",
+      "content_id": "15474fca-32e8-477b-bdda-83a21f92fb2f",
+      "claim_id": "C74",
+      "claim": "After 35 min, FIP200 was clustered into large, continuous domains on the GUVs in the presence of GST-4xUb and NDP52.",
+      "claim_type": "EXPLICIT",
+      "source": "After 35 min, FIP200 was clustered into large, continuous domains on the GUVs (Figure 4A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by time-lapse imaging in GUV reconstitution assay shown in Figure 4A,B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:08:01.456908Z"
+    },
+    {
+      "id": "7019e629-79c7-4a49-aef9-28daf58e3df9",
+      "content_id": "15474fca-32e8-477b-bdda-83a21f92fb2f",
+      "claim_id": "C75",
+      "claim": "Full-length ULK1 complex formed clusters with NDP52 and poly-ubiquitin but not in their absence.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly to FIP200 alone, full-length ULK1 complex formed clusters with NDP52 and poly-ubiquitin but not in their absence (Figure 4C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by GUV reconstitution assay shown in Figure 4C,D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:08:01.456908Z"
+    },
+    {
+      "id": "8a345701-dc5a-4fce-85ae-722a12b01068",
+      "content_id": "15474fca-32e8-477b-bdda-83a21f92fb2f",
+      "claim_id": "C76",
+      "claim": "Recruitment of the ULK1 complex was stronger with the dimeric GST-NDP52 than the monomeric His-NDP52.",
+      "claim_type": "EXPLICIT",
+      "source": "Recruitment of the ULK1 complex was stronger with the dimeric GST-NDP52 than the monomeric His-NDP52.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by GUV reconstitution assay shown in Figure 4C,D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:08:01.456908Z"
+    },
+    {
+      "id": "b5f2a2f2-a6d2-428c-a470-a38e8bd04b60",
+      "content_id": "15474fca-32e8-477b-bdda-83a21f92fb2f",
+      "claim_id": "C77",
+      "claim": "Oligomerized NDP52 activates membrane recruitment of the ULK1 complex.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these data show that oligomerized NDP52 activates membrane recruitment of the ULK1 complex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Concluded from GUV reconstitution experiments comparing monomeric and dimeric NDP52",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:08:01.456908Z"
+    },
+    {
+      "id": "0cbb2f6f-5060-4c10-894e-8db205fed318",
+      "content_id": "15474fca-32e8-477b-bdda-83a21f92fb2f",
+      "claim_id": "C78",
+      "claim": "The higher order assembly of NDP52 via poly-ubiquitin stimulates membrane binding of the ULK1 complex.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the higher order assembly of NDP52 via poly-ubiquitin stimulates membrane binding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Concluded from GUV reconstitution experiments with poly-ubiquitin",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:08:01.456908Z"
+    },
+    {
+      "id": "5905a877-ed49-4959-819d-0378c37de4c7",
+      "content_id": "15474fca-32e8-477b-bdda-83a21f92fb2f",
+      "claim_id": "C79",
+      "claim": "Neither FIP200\u0394MR nor FIP200\u0394NDP52 mutations altered the stability of FIP200.",
+      "claim_type": "EXPLICIT",
+      "source": "Neither mutation altered the stability of FIP200 on the basis that both mutants yielded protein at the same level as wild type (Figure 2\u2014figure supplement 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by protein expression levels shown in Figure 2\u2014figure supplement 2C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:08:01.456908Z"
+    },
+    {
+      "id": "fddb4503-e3f8-4a95-a918-117975f5d5d6",
+      "content_id": "15474fca-32e8-477b-bdda-83a21f92fb2f",
+      "claim_id": "C80",
+      "claim": "FIP200\u0394MR still bound to NDP52.",
+      "claim_type": "EXPLICIT",
+      "source": "A microscopy-based bead assay was used to confirm that FIP200\u0394MR still bound to NDP52 (Figure 5A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by bead assay shown in Figure 5A,B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:08:01.456908Z"
+    },
+    {
+      "id": "5be4efd1-f2f3-4c00-a504-5a086a3e9e92",
+      "content_id": "15474fca-32e8-477b-bdda-83a21f92fb2f",
+      "claim_id": "C81",
+      "claim": "WT and FIP200\u0394MR ULK1 complex were both robustly recruited to GST-NDP52 beads.",
+      "claim_type": "EXPLICIT",
+      "source": "WT and FIP200\u0394MR ULK1 complex were both robustly recruited to GST-NDP52 beads (Figure 5A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by bead assay shown in Figure 5A,B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:08:01.456908Z"
+    },
+    {
+      "id": "5c41698f-9224-40e6-9991-d3a56fdef7c2",
+      "content_id": "15474fca-32e8-477b-bdda-83a21f92fb2f",
+      "claim_id": "C82",
+      "claim": "FIP200\u0394NDP52 ULK1 was not recruited to the GST-NDP52 beads.",
+      "claim_type": "EXPLICIT",
+      "source": "FIP200\u0394NDP52 ULK1 was not recruited to the GST-NDP52 beads (Figure 5A,B), which is consistent with our previous pulldown data (Figure 2F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by bead assay shown in Figure 5A,B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:08:01.456908Z"
+    },
+    {
+      "id": "e93ede75-015f-4c5f-a846-347b38e4eb1e",
+      "content_id": "15474fca-32e8-477b-bdda-83a21f92fb2f",
+      "claim_id": "C83",
+      "claim": "WT ULK1 complex was recruited strongly to GUVs in the presence of GST-NDP52 and GST-4xUb.",
+      "claim_type": "EXPLICIT",
+      "source": "WT ULK1 complex was recruited strongly in the presence of GST-NDP52 and GST-4xUb (Figure 5C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by GUV reconstitution assay shown in Figure 5C,D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:08:01.456908Z"
+    },
+    {
+      "id": "f8a323dc-a354-41b1-9b01-59704ff3c261",
+      "content_id": "15474fca-32e8-477b-bdda-83a21f92fb2f",
+      "claim_id": "C84",
+      "claim": "FIP200\u0394MR ULK1 complex bound more weakly to GUVs than WT.",
+      "claim_type": "EXPLICIT",
+      "source": "FIP200\u0394MR ULK1 complex bound more weakly to GUVs (Figure 5C,D), whereas FIP200\u0394NDP52 ULK1 complex completely abolished membrane recruitment (Figure 5C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by GUV reconstitution assay shown in Figure 5C,D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:08:01.456908Z"
+    },
+    {
+      "id": "0aeb92ea-7f60-45e4-b3b0-32794d4bcd1a",
+      "content_id": "15474fca-32e8-477b-bdda-83a21f92fb2f",
+      "claim_id": "C85",
+      "claim": "FIP200\u0394NDP52 ULK1 complex completely abolished membrane recruitment to GUVs.",
+      "claim_type": "EXPLICIT",
+      "source": "FIP200\u0394MR ULK1 complex bound more weakly to GUVs (Figure 5C,D), whereas FIP200\u0394NDP52 ULK1 complex completely abolished membrane recruitment (Figure 5C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by GUV reconstitution assay shown in Figure 5C,D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:08:01.456908Z"
+    },
+    {
+      "id": "394e09c3-4c82-490b-b2e5-da34addde18a",
+      "content_id": "15474fca-32e8-477b-bdda-83a21f92fb2f",
+      "claim_id": "C86",
+      "claim": "The NDP52-FIP200 interaction is essential for membrane recruitment of the ULK1 complex.",
+      "claim_type": "EXPLICIT",
+      "source": "These data show that the NDP52-FIP200 interaction is essential for membrane recruitment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Concluded from GUV reconstitution experiments with FIP200\u0394NDP52 mutant",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:08:01.456908Z"
+    },
+    {
+      "id": "c9daacfa-df1b-4e6e-be92-76efe72b1acd",
+      "content_id": "15474fca-32e8-477b-bdda-83a21f92fb2f",
+      "claim_id": "C87",
+      "claim": "The CC membrane binding site is important for ULK1 complex binding to membranes, but residual binding still occurs when the CC membrane binding site is removed.",
+      "claim_type": "EXPLICIT",
+      "source": "The CC membrane binding site is also important for binding, but residual binding still occurs in when the CC membrane binding site is removed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Concluded from GUV reconstitution experiments with FIP200\u0394MR mutant",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:08:01.456908Z"
+    },
+    {
+      "id": "4bc3479a-649e-46e4-b86f-e020c06fd32c",
+      "content_id": "15474fca-32e8-477b-bdda-83a21f92fb2f",
+      "claim_id": "C88",
+      "claim": "NDP52 was recruited to the GUV membranes either when it was tagged with GST or upon the addition of poly-ubiquitin.",
+      "claim_type": "EXPLICIT",
+      "source": "We tested whether NDP52 itself could bind membranes. NDP52 was recruited to the GUV membranes either when it was tagged with GST or upon the addition of poly-ubiquitin (Figure 5\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by GUV reconstitution assay shown in Figure 5\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:08:01.456908Z"
+    },
+    {
+      "id": "81a93162-2862-4b72-a05b-5129c4419b38",
+      "content_id": "15474fca-32e8-477b-bdda-83a21f92fb2f",
+      "claim_id": "C89",
+      "claim": "The residual binding of FIP200\u0394MR ULK1 complex to GUVs is due to membrane binding by NDP52, not to additional membrane binding sites on the ULK1 complex.",
+      "claim_type": "EXPLICIT",
+      "source": "From this finding, we concluded that the residual binding to GUVs is due to membrane binding by NDP52, not to additional membrane binding sites on the ULK1 complex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Concluded from NDP52 membrane binding experiments",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:08:01.456908Z"
+    },
+    {
+      "id": "1742ef98-eec2-4c8b-9869-83edfa8a18ed",
+      "content_id": "15474fca-32e8-477b-bdda-83a21f92fb2f",
+      "claim_id": "C90",
+      "claim": "Recognition of p62 and NDP52 by FIP200 is the key triggering event responsible for recruiting the ULK1 complex to cargo.",
+      "claim_type": "EXPLICIT",
+      "source": "Recognition of p62 (Turco et al., 2019) and NDP52 (Ravenhill et al., 2019; Vargas et al., 2019) by FIP200 was shown to the key triggering event responsible for recruiting the ULK1 complex to cargo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Turco et al., 2019, Ravenhill et al., 2019, and Vargas et al., 2019",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:08:01.456908Z"
+    },
+    {
+      "id": "09d7d940-442e-4a98-ac35-acf2e5f2459c",
+      "content_id": "15474fca-32e8-477b-bdda-83a21f92fb2f",
+      "claim_id": "C91",
+      "claim": "The binding sites of p62 and NDP52 on FIP200 were mapped to the Claw and CC C-terminus respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "The binding sites of p62 and NDP52 were mapped to the Claw (Turco et al., 2019) and CC C-terminus (Ravenhill et al., 2019) respectively, and the structure of the Claw and a small part of the CC were determined (Turco et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Turco et al., 2019 and Ravenhill et al., 2019",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:08:01.456908Z"
+    },
+    {
+      "id": "45a89bad-80eb-4bdb-8a6f-aaeb1ceabb18",
+      "content_id": "15474fca-32e8-477b-bdda-83a21f92fb2f",
+      "claim_id": "C92",
+      "claim": "The C-termini of the two FIP200 NTDs in the C-shaped dimer is located near the center.",
+      "claim_type": "EXPLICIT",
+      "source": "The C-termini of the two FIP200 NTDs in the C-shaped dimer is located near the center.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated based on structural knowledge from previous work",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:08:01.456908Z"
+    },
+    {
+      "id": "49b7bb98-cb0d-4b03-b898-3d9d9c421958",
+      "content_id": "15474fca-32e8-477b-bdda-83a21f92fb2f",
+      "claim_id": "C93",
+      "claim": "The symmetry of the NTD matches the symmetry of the FIP200 CC, which is parallel and a dimer.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the symmetry of the NTD matches the symmetry of the FIP200 CC, which is parallel and a dimer (Turco et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from structural observations and supported by citation to Turco et al., 2019",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:08:01.456908Z"
+    },
+    {
+      "id": "58ef197d-a530-4330-96ab-155002fbc12e",
+      "content_id": "15474fca-32e8-477b-bdda-83a21f92fb2f",
+      "claim_id": "C94",
+      "claim": "FIP200 CC has a modal end-to-end distance of ~75 nm and is partially flexible.",
+      "claim_type": "EXPLICIT",
+      "source": "FIP200 CC has a modal end-to-end distance of ~75 nm and is partially flexible, making it ideally suited to its function of connecting cargo to other components of the ULK1 complex and to membranes over substantial distances, much as seen with other coiled-coil based tethers such as the endosomal tether EEA1 (Murray et al., 2016) and the Golgi tether GCC185 (Cheung et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on EM measurements and compared to other tethers with citations",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:08:01.456908Z"
+    },
+    {
+      "id": "f52525b2-dc5a-4d22-839d-1910d617dd3c",
+      "content_id": "15474fca-32e8-477b-bdda-83a21f92fb2f",
+      "claim_id": "C95",
+      "claim": "The membrane binding region (MR) in the N-terminal portion of FIP200 CC is the principal membrane binding site responsible for the first ULK1 complex membrane recruitment event in autophagy.",
+      "claim_type": "EXPLICIT",
+      "source": "The data presented here suggest that the membrane binding region (MR) in the N-terminal portion of FIP200 CC is the principal, although not sole, membrane binding site responsible for the first ULK1 complex membrane recruitment event in autophagy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Concluded from the experimental data presented in the study",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:08:01.456908Z"
+    },
+    {
+      "id": "3e9d848b-1acc-4aab-896d-f395ed76302f",
+      "content_id": "15474fca-32e8-477b-bdda-83a21f92fb2f",
+      "claim_id": "C96",
+      "claim": "NDP52 and the FIP200 NTD also contribute to membrane interactions of the ULK1 complex.",
+      "claim_type": "EXPLICIT",
+      "source": "The data presented here suggest that the membrane binding region (MR) in the N-terminal portion of FIP200 CC is the principal, although not sole, membrane binding site responsible for the first ULK1 complex membrane recruitment event in autophagy. NDP52 and, most probably, the FIP200 NTD also contribute to membrane interactions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Concluded from the experimental data presented in the study",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:08:01.456908Z"
+    },
+    {
+      "id": "9fdc21fb-5b14-4a7a-8594-e7b6ba53f8e5",
+      "content_id": "15474fca-32e8-477b-bdda-83a21f92fb2f",
+      "claim_id": "C97",
+      "claim": "In solution, FIP200 exists as isolated dimers with the MR region in a helical conformation that sequesters the hydrophobic residues.",
+      "claim_type": "EXPLICIT",
+      "source": "In solution, FIP200 exists as isolated dimers with the MR region in a helical conformation that sequesters the hydrophobic residues.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Proposed model based on experimental observations shown in Figure 6",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:08:01.456908Z"
+    },
+    {
+      "id": "556b7e8b-3093-4c0d-a29a-a6729f57ee07",
+      "content_id": "15474fca-32e8-477b-bdda-83a21f92fb2f",
+      "claim_id": "C98",
+      "claim": "When ubiquitin is conjugated to and presented on the surface of damaged mitochondria, invading bacteria, or other substrates, NDP52 is recruited to these sites by directly binding to the clustered ubiquitin on their surfaces.",
+      "claim_type": "EXPLICIT",
+      "source": "When ubiquitin is conjugated to and presented on the surface of damaged mitochondria, invading bacteria, or other substrates, NDP52 is recruited to these sites by directly binding to the clustered ubiquitin on their surfaces (Thurston et al., 2009; Thurston et al., 2012; Xie et al., 2015).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by citations and illustrated in Figure 6",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:08:01.456908Z"
+    },
+    {
+      "id": "159c4845-5379-4d1a-8e18-825e853f89c8",
+      "content_id": "15474fca-32e8-477b-bdda-83a21f92fb2f",
+      "claim_id": "C99",
+      "claim": "FIP200 is recruited to clustered NDP52 via its NDP52 binding site in the C-terminal part of its CC.",
+      "claim_type": "EXPLICIT",
+      "source": "FIP200 is then recruited to clustered NDP52 via its NDP52 binding site in the C-terminal part of its CC.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Proposed model based on experimental data and illustrated in Figure 6",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:08:01.456908Z"
+    },
+    {
+      "id": "88f3ff62-158e-4ea1-866a-c71ff6194417",
+      "content_id": "15474fca-32e8-477b-bdda-83a21f92fb2f",
+      "claim_id": "C100",
+      "claim": "Engagement of FIP200 to NDP52 destabilizes the conformation of the N-terminal part of the FIP200 CC and increases membrane affinity, presumably by melting the coiled coil and increasing the exposure of hydrophobic side chains in this region.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that engagement to NDP52 destabilizes the conformation of the N-terminal part of the FIP200 CC and increases membrane affinity, presumably by melting the coiled coil and increasing the exposure of hydrophobic side chains in this region.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Concluded from HDX-MS and membrane binding experiments, illustrated in Figure 6",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:08:01.456908Z"
+    },
+    {
+      "id": "7b313494-f86b-421c-8d20-f752d071102b",
+      "content_id": "15474fca-32e8-477b-bdda-83a21f92fb2f",
+      "claim_id": "C101",
+      "claim": "Engagement of FIP200 to NDP52 occurs simultaneously with clustering of multiple FIP200 dimers.",
+      "claim_type": "EXPLICIT",
+      "source": "These changes occur simultaneously with clustering of multiple FIP200 dimers.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Observed in GUV reconstitution experiments and illustrated in Figure 6",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:08:01.456908Z"
+    },
+    {
+      "id": "cc267d3a-97ab-49cf-9bd1-64816968a128",
+      "content_id": "15474fca-32e8-477b-bdda-83a21f92fb2f",
+      "claim_id": "C102",
+      "claim": "The MR conformational change and higher-order clustering drives strong membrane recruitment of the ULK1 complex.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, the MR conformational change and higher-order clustering drives strong membrane recruitment.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Concluded from experimental data and illustrated in Figure 6",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:08:01.456908Z"
+    },
+    {
+      "id": "ed62e834-d4fb-44f9-bc8a-4d41489aeed8",
+      "content_id": "15474fca-32e8-477b-bdda-83a21f92fb2f",
+      "claim_id": "C103",
+      "claim": "FIP200 is thought to initially localize to phosphatidylinositol synthase (PIS)-enriched ER subdomains prior to PI(3)P generation by the autophagic PI 3-kinase complex I.",
+      "claim_type": "EXPLICIT",
+      "source": "FIP200 is thought to initially localize to phosphatidylinositol synthase (PIS)-enriched ER subdomains prior to PI(3)P generation by the autophagic PI 3-kinase complex I (Nishimura et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Nishimura et al., 2017",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:08:01.456908Z"
+    },
+    {
+      "id": "5e74d4ca-caea-4ad3-b845-fe989cde2963",
+      "content_id": "15474fca-32e8-477b-bdda-83a21f92fb2f",
+      "claim_id": "C104",
+      "claim": "A basic patch on the ATG13 HORMA domain structure was reported to interact with PI(3)P and sustain ULK1 complex localization at the omegasome subsequent to PI 3-kinase activation.",
+      "claim_type": "EXPLICIT",
+      "source": "A basic patch on the ATG13 HORMA domain structure (Qi et al., 2015; Suzuki et al., 2015) was been reported to interact with PI(3)P (Karanasios et al., 2013) and so sustain ULK1 complex localization at the omegasome subsequent to PI 3-kinase activation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Qi et al., 2015, Suzuki et al., 2015, and Karanasios et al., 2013",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:08:01.456908Z"
+    },
+    {
+      "id": "e8b20be8-9202-4cf4-87a6-0dbcf58f23d2",
+      "content_id": "15474fca-32e8-477b-bdda-83a21f92fb2f",
+      "claim_id": "C105",
+      "claim": "The conserved EAT domain of the yeast ULK1 ortholog Atg1 binds to highly curved ER-like vesicles, but only in the absence of Atg13.",
+      "claim_type": "EXPLICIT",
+      "source": "The conserved EAT domain of the yeast ULK1 ortholog Atg1 binds to highly curved ER-like vesicles, but only in the absence of Atg13, and its lipid-binding role is probably important only in later steps of autophagosome biogenesis (Lin et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Lin et al., 2018",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:08:01.456908Z"
+    },
+    {
+      "id": "94b25781-656a-4250-a081-5c637b8fcb0a",
+      "content_id": "15474fca-32e8-477b-bdda-83a21f92fb2f",
+      "claim_id": "C106",
+      "claim": "The lipid-binding role of the EAT domain is probably important only in later steps of autophagosome biogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "The conserved EAT domain of the yeast ULK1 ortholog Atg1 binds to highly curved ER-like vesicles, but only in the absence of Atg13, and its lipid-binding role is probably important only in later steps of autophagosome biogenesis (Lin et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Lin et al., 2018",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:08:01.456908Z"
+    },
+    {
+      "id": "29f1b1eb-004a-44fe-acea-3f2fae8b0bb9",
+      "content_id": "15474fca-32e8-477b-bdda-83a21f92fb2f",
+      "claim_id": "C107",
+      "claim": "The MR is not electropositive in character, unlike most membrane binding domains.",
+      "claim_type": "EXPLICIT",
+      "source": "The MR is not electropositive in character, unlike most membrane binding domains (Hurley and Misra, 2000), but this is in keeping with the neutral character of ER lipids.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observed characteristic of MR and compared to typical membrane binding domains with citation",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:08:01.456908Z"
+    },
+    {
+      "id": "0eab0960-2bb7-4171-bb65-20401214b5cd",
+      "content_id": "15474fca-32e8-477b-bdda-83a21f92fb2f",
+      "claim_id": "C108",
+      "claim": "NDP52 binding to the C-terminus of FIP200 CC promotes lipid binding at the MR, allowing a tether to be formed between cargo and the ER subdomain destined to become the omegasome.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data suggest a model wherein NDP52 binding to the C-terminus of FIP200 CC promotes lipid binding at the MR, so allowing a tether to be formed between cargo and the ER subdomain destined to become the omegasome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Proposed model based on experimental data",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:08:01.456908Z"
+    },
+    {
+      "id": "6926ffd7-0261-48d1-b1cc-af6735ab8048",
+      "content_id": "15474fca-32e8-477b-bdda-83a21f92fb2f",
+      "claim_id": "C109",
+      "claim": "The experimental data are consistent with the critical role of the NDP52-binding residues of FIP200 as demonstrated in both mitophagy and xenophagy.",
+      "claim_type": "EXPLICIT",
+      "source": "These data are consistent with the critical role of the NDP52-binding residues of FIP200 as demonstrated in both mitophagy (Vargas et al., 2019) and xenophagy (Ravenhill et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Vargas et al., 2019 and Ravenhill et al., 2019",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:08:01.456908Z"
+    },
+    {
+      "id": "1c4e5c60-24a0-4b0d-8798-377cdefa45a3",
+      "content_id": "15474fca-32e8-477b-bdda-83a21f92fb2f",
+      "claim_id": "C110",
+      "claim": "NDP52 binds much more tightly to FIP200 than p62.",
+      "claim_type": "EXPLICIT",
+      "source": "In this study, we focused on NDP52 rather than p62 because NDP52 binds much more tightly to FIP200, which facilitated the HDX-MS and biochemical experiments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as rationale for experimental design",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:08:01.456908Z"
+    },
+    {
+      "id": "09d83f29-c0ff-4a41-a5f7-e47e97249244",
+      "content_id": "15474fca-32e8-477b-bdda-83a21f92fb2f",
+      "claim_id": "C111",
+      "claim": "Multimerization is important for promoting membrane binding of the ULK1 complex by NDP52.",
+      "claim_type": "EXPLICIT",
+      "source": "The stimulation of the effect seen by using dimeric GST fusions of 4xUb and NDP52 show that multimerization is important for promoting membrane binding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Concluded from experiments comparing monomeric and dimeric forms",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:08:01.456908Z"
+    },
+    {
+      "id": "e612d4e0-0ebc-4382-b506-975b2974afa3",
+      "content_id": "15474fca-32e8-477b-bdda-83a21f92fb2f",
+      "claim_id": "C112",
+      "claim": "Clustering of cargo adaptors on ubiquitinated cargo is a general aspect of selective autophagy.",
+      "claim_type": "EXPLICIT",
+      "source": "While the binding site of NDP52 on FIP200 CC appears to be unique, clustering of cargo adaptors on ubiquitinated cargo is a general aspect of selective autophagy (Kirkin and Rogov, 2019; Zaffagnini and Martens, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Kirkin and Rogov, 2019 and Zaffagnini and Martens, 2016",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:08:01.456908Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "b8e1220e-c6dd-4ce9-8875-9262e9e4c099",
+      "content_id": "15474fca-32e8-477b-bdda-83a21f92fb2f",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Full-length FIP200 forms an extended, dynamic structure with a C-shaped N-terminal domain dimer connected to a flexible coiled-coil domain that spatially separates the ULK1 assembly site from cargo adaptor binding sites. Negative stain EM revealed the CC domain exhibits variable conformations with contour lengths ranging from 37-107 nm (mean 79 nm) and end-to-end distances of 32-94 nm (mean 69 nm).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C41 are well-supported by negative stain EM data (Figure 1A-B) showing the extended structure, measurements of CC domain lengths, and identification of structural features including GST tags, NTD, CC domain, and Claw domain. The spatial separation of functional domains is directly observed and consistent with known binding sites from prior work.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:08:01.456908Z"
+    },
+    {
+      "id": "c87dd01b-c758-41a6-a93e-8c3176be1120",
+      "content_id": "15474fca-32e8-477b-bdda-83a21f92fb2f",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "HDX-MS analysis demonstrates that FIP200 is a modular protein where ULK1 complex assembly affects only the N-terminal domain (residues 75-541 show >10% protection), while the CC and Claw domains remain dynamically independent and available for cargo adaptor engagement.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C46 are supported by HDX-MS data (Figure 1C, Figure 1\u2014figure supplement 2B) showing selective protection in the NTD upon ULK1 complex formation with no large changes in CC or Claw regions. The kinase activity assay (C42) validates the functional integrity of the purified complex. The modular architecture conclusion is well-justified by the differential protection patterns.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:08:01.456908Z"
+    },
+    {
+      "id": "8dd9c36f-2cbc-41f3-816f-4821df4352b0",
+      "content_id": "15474fca-32e8-477b-bdda-83a21f92fb2f",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The ULK1 complex specifically recognizes NDP52 but not polyubiquitin chains directly, and this interaction is mediated solely through FIP200 without requiring other ULK1 complex components (ULK1, ATG13, ATG101).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47-C48 and C55 are supported by pulldown assays (Figure 1\u2014figure supplement 2C-D, Figure 2E) demonstrating specific binding to GST-NDP52 but not GST-4xUb or beads alone, and showing equivalent binding of FIP200 alone versus full ULK1 complex to NDP52. The controls are appropriate and the conclusion that FIP200 is the sole NDP52-binding component is well-justified.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:08:01.456908Z"
+    },
+    {
+      "id": "532cc1c9-582b-402c-8c24-a088f9580f79",
+      "content_id": "15474fca-32e8-477b-bdda-83a21f92fb2f",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "NDP52 binding induces allosteric conformational changes in FIP200: three regions of the CC domain (residues 1290-1320, 1339-1392, 1462-1470) show protection (>10% decrease in deuterium exchange), while an extensive N-terminal CC region (residues 800-1250, especially 935-1073) shows increased exchange, indicating destabilization. NDP52 does not directly affect ATG13, ATG101, ULK1, or the FIP200 NTD.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49-C54 are well-supported by comprehensive HDX-MS data (Figure 2A-D, Figure 2\u2014figure supplement 1-2A). The protection patterns identify the NDP52 binding site (consistent with prior work, C52) and reveal unexpected allosteric destabilization of the N-terminal CC. The lack of changes in other ULK1 complex components is clearly demonstrated. The interpretation of increased exchange as destabilization is reasonable and well-supported.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:08:01.456908Z"
+    },
+    {
+      "id": "f8aca48d-f1f5-40fa-9fd4-acde23fd9030",
+      "content_id": "15474fca-32e8-477b-bdda-83a21f92fb2f",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Mutagenesis mapping identifies FIP200 regions 4-6 (residues 1355-1378) as critical for NDP52 binding, with regions 3 and 7 showing modest effects and regions 1, 2, and 8 showing minimal effects.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56-C58 are supported by systematic mutagenesis and pulldown assays (Figure 2F) using both GST and MBP affinity purification. The differential effects of mutations across eight regions provide clear structure-function relationships. The experimental design with dual affinity tags strengthens the conclusions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:08:01.456908Z"
+    },
+    {
+      "id": "96f62ff6-9460-40dd-aaf2-5c5de2f8de37",
+      "content_id": "15474fca-32e8-477b-bdda-83a21f92fb2f",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The FIP200 CC domain (residues 844-1073) directly binds membranes, with strongest protection observed by HDX-MS in this region upon SUV incubation. Liposome sedimentation assays confirm that the FIP200 CTD (636-C), but not NTD, co-precipitates with membranes, preferentially with acidic PS/PI lipids over neutral PC/PE lipids.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59-C65 are supported by complementary HDX-MS (Figure 3A-C) and liposome sedimentation data (Figure 3D). The HDX-MS identifies the membrane-binding region with strong protection (5-45%), while sedimentation assays with truncation constructs confirm the CC domain is necessary and sufficient for membrane binding. The lipid specificity is clearly demonstrated. ATG13/ATG101 show no membrane interaction, supporting specificity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:08:01.456908Z"
+    },
+    {
+      "id": "8fdd02ea-3d36-4e4d-9252-f949408a0ab2",
+      "content_id": "15474fca-32e8-477b-bdda-83a21f92fb2f",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The authors propose that NDP52 binding at the C-terminal CC domain could trigger destabilization of the N-terminal CC domain, increasing exposure of hydrophobic residues and stimulating membrane binding.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C66 is explicitly stated as speculation ('raises the possibility') based on the observed interactions. While the HDX-MS data show destabilization of the N-terminal CC upon NDP52 binding (C53-C54) and membrane binding to this region (C62), the mechanism of hydrophobic residue exposure and the causal link between NDP52 binding and enhanced membrane affinity requires additional experimental validation beyond the correlative observations presented.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:08:01.456908Z"
+    },
+    {
+      "id": "f9335f67-9503-4464-8799-cdbaf88b6788",
+      "content_id": "15474fca-32e8-477b-bdda-83a21f92fb2f",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "GUV reconstitution experiments demonstrate that oligomerized NDP52 (via GST dimerization or polyubiquitin clustering) activates robust membrane recruitment of FIP200 and the ULK1 complex, with clustering beginning within 5 minutes and forming large continuous domains by 35 minutes. Monomeric His-NDP52 or GST-4xUb alone show minimal recruitment.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C67-C78 are strongly supported by systematic GUV reconstitution experiments (Figure 4A-D) with appropriate controls and time-lapse imaging. The comparison of monomeric vs. dimeric NDP52 and the requirement for both NDP52 and polyubiquitin clearly demonstrate the importance of oligomerization. The kinetics are well-documented. The conclusions about oligomerization-dependent activation are well-justified by the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:08:01.456908Z"
+    },
+    {
+      "id": "7ad39254-de78-41f7-a2b6-90d2ca699a9d",
+      "content_id": "15474fca-32e8-477b-bdda-83a21f92fb2f",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Deletion mutagenesis reveals that the NDP52-FIP200 interaction is essential for membrane recruitment (FIP200\u0394NDP52 abolishes recruitment), while the CC membrane-binding region (790-1050) is important but not absolutely required (FIP200\u0394MR shows reduced but not abolished recruitment). The residual binding of FIP200\u0394MR is attributed to NDP52's own membrane-binding activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C79-C87 are supported by bead binding assays (Figure 5A-B) and GUV reconstitution with mutants (Figure 5C-D). The FIP200\u0394NDP52 mutant completely abolishes recruitment, establishing the essential role of the NDP52-FIP200 interaction. The FIP200\u0394MR mutant shows partial reduction, and the residual binding is explained by NDP52's own membrane binding (C88-C89, Figure 5\u2014figure supplement 1). The experimental design with appropriate controls and quantification supports the conclusions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:08:01.456908Z"
+    },
+    {
+      "id": "a7dd4c3d-62fe-4ad9-b798-809f3e6fb83f",
+      "content_id": "15474fca-32e8-477b-bdda-83a21f92fb2f",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "NDP52 itself can bind membranes when oligomerized (via GST tag or polyubiquitin), explaining the residual membrane recruitment observed with the FIP200\u0394MR mutant.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C88-C89 are supported by GUV reconstitution experiments (Figure 5\u2014figure supplement 1) showing NDP52 membrane binding under oligomerizing conditions. This provides a mechanistic explanation for the residual binding of FIP200\u0394MR and strengthens the interpretation of the mutagenesis results. The conclusion is logical and well-supported.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:08:01.456908Z"
+    },
+    {
+      "id": "700f5ff4-1615-4a39-86d0-0195db5e6355",
+      "content_id": "15474fca-32e8-477b-bdda-83a21f92fb2f",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The authors propose a mechanistic model where NDP52 binding to clustered ubiquitin on cargo recruits FIP200, triggering allosteric destabilization of the N-terminal CC membrane-binding region (MR, residues 790-1050) and simultaneous clustering of FIP200 dimers, together driving strong membrane recruitment of the ULK1 complex to initiate phagophore formation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C95-C102 synthesize the experimental findings into a coherent mechanistic model illustrated in Figure 6. The model is well-supported by: (1) HDX-MS showing MR destabilization upon NDP52 binding (C53-C54), (2) membrane binding to the MR region (C62), (3) GUV experiments showing oligomerization-dependent recruitment (C77-C78), (4) mutagenesis demonstrating the essential role of NDP52-FIP200 interaction (C86) and importance of the MR (C87). While some mechanistic details (e.g., coiled-coil melting) are inferred, the overall model is strongly supported by converging lines of evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:08:01.456908Z"
+    },
+    {
+      "id": "46410253-d400-4af4-9a67-c8adc64667ac",
+      "content_id": "15474fca-32e8-477b-bdda-83a21f92fb2f",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Background on autophagy mechanisms and NDP52 function: Autophagy maintains cellular homeostasis through cargo degradation. NDP52 is a multifunctional adaptor crucial for xenophagy and mitophagy that directly interacts with FIP200 in the ULK1 complex, recruiting it to ubiquitinated cargo for selective autophagy.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C15 provide established background information supported by appropriate citations to prior literature. These claims accurately represent the current understanding of autophagy mechanisms, NDP52 structure and function, and its role in selective autophagy pathways. The citations are appropriate and the claims are consistent with the cited work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:08:01.456908Z"
+    },
+    {
+      "id": "fce55e4d-4340-44a7-9c4b-5d1cc69dd719",
+      "content_id": "15474fca-32e8-477b-bdda-83a21f92fb2f",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Background on ULK1 complex structure and function: The ULK1 complex comprises ULK1 kinase, FIP200, ATG13, and ATG101. FIP200 contains an N-terminal scaffolding domain, IDR, coiled-coil region, and C-terminal Claw domain. The complex is rapidly recruited to ubiquitinated cargo via NDP52 interaction with FIP200.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16-C26 provide established background on ULK1 complex composition and architecture, supported by appropriate citations. The structural organization of FIP200 and the recruitment mechanism via NDP52 are well-documented in prior literature. These claims accurately represent the state of knowledge at the time of the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:08:01.456908Z"
+    },
+    {
+      "id": "2885aa91-3fcf-47bf-9256-8eefbfe86ab7",
+      "content_id": "15474fca-32e8-477b-bdda-83a21f92fb2f",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Discussion of prior work and structural context: Recognition of cargo adaptors (p62, NDP52) by FIP200 is the key triggering event for ULK1 complex recruitment. The FIP200 CC has a modal end-to-end distance of ~75 nm and is partially flexible, functioning as a tether similar to other coiled-coil tethers.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C90-C94 accurately summarize prior work (supported by citations) and integrate it with the current structural findings. The comparison to other coiled-coil tethers (EEA1, GCC185) is appropriate and well-supported. The modal distance measurement (C94) is consistent with the EM data presented (C38-C39).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:08:01.456908Z"
+    },
+    {
+      "id": "dff41a46-36c1-4453-a324-c47ac922808b",
+      "content_id": "15474fca-32e8-477b-bdda-83a21f92fb2f",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Discussion of membrane recruitment mechanisms: The authors propose that NDP52 binding promotes lipid binding at the MR, forming a tether between cargo and ER subdomains. The MR is not electropositive (unlike typical membrane-binding domains), consistent with binding neutral ER lipids. This model is consistent with the critical role of NDP52-binding residues in mitophagy and xenophagy.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C103-C109 integrate the current findings with prior work on membrane recruitment mechanisms. The observation about MR charge character (C107) is supported by the data showing binding to neutral lipids (C64-C65). The proposed model (C108) is well-supported by the experimental data. The consistency with prior in vivo studies (C109) strengthens the physiological relevance of the findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:08:01.456908Z"
+    },
+    {
+      "id": "9bb06f82-825d-4dd6-8444-0017b9f7053e",
+      "content_id": "15474fca-32e8-477b-bdda-83a21f92fb2f",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Discussion of experimental design rationale and generalizability: NDP52 was chosen over p62 due to tighter FIP200 binding. Multimerization is important for promoting membrane binding. Clustering of cargo adaptors on ubiquitinated cargo is a general feature of selective autophagy.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C110-C112 provide methodological justification and discuss the broader implications. C110 explains the experimental design choice. C111 is well-supported by the GST-fusion experiments (C69-C70, C76-C78). C112 is supported by appropriate citations and places the findings in a broader context of selective autophagy mechanisms.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:08:01.456908Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "64811614-0c37-400e-8e4d-6152b4af127d",
+      "result_id": "b8e1220e-c6dd-4ce9-8875-9262e9e4c099"
+    },
+    {
+      "claim_id": "81cb1056-0b84-4542-bb79-04adfbd68fbb",
+      "result_id": "b8e1220e-c6dd-4ce9-8875-9262e9e4c099"
+    },
+    {
+      "claim_id": "79e9aa43-808d-4c2f-9b68-69bab8b545c0",
+      "result_id": "b8e1220e-c6dd-4ce9-8875-9262e9e4c099"
+    },
+    {
+      "claim_id": "422d6e89-b851-4390-bb3b-60bdb10d2ee2",
+      "result_id": "b8e1220e-c6dd-4ce9-8875-9262e9e4c099"
+    },
+    {
+      "claim_id": "dce59ef6-cb0a-49a5-b2a4-f27010c1d1a7",
+      "result_id": "b8e1220e-c6dd-4ce9-8875-9262e9e4c099"
+    },
+    {
+      "claim_id": "71070c00-862c-4af8-b39f-c4dc5532ef22",
+      "result_id": "b8e1220e-c6dd-4ce9-8875-9262e9e4c099"
+    },
+    {
+      "claim_id": "0136dab2-601c-4e1f-961f-6d016f9ac037",
+      "result_id": "b8e1220e-c6dd-4ce9-8875-9262e9e4c099"
+    },
+    {
+      "claim_id": "8ae5f3fb-c366-4985-a335-cd380ee9c7db",
+      "result_id": "b8e1220e-c6dd-4ce9-8875-9262e9e4c099"
+    },
+    {
+      "claim_id": "ed475a99-e22b-4a21-8bed-874335a180a2",
+      "result_id": "b8e1220e-c6dd-4ce9-8875-9262e9e4c099"
+    },
+    {
+      "claim_id": "b15d8d18-014d-4d45-ab39-f10ea691f2ae",
+      "result_id": "b8e1220e-c6dd-4ce9-8875-9262e9e4c099"
+    },
+    {
+      "claim_id": "b8be2f32-44f1-426f-9bc1-9b0daf10426b",
+      "result_id": "b8e1220e-c6dd-4ce9-8875-9262e9e4c099"
+    },
+    {
+      "claim_id": "662f5140-af9b-4f62-ace0-b145aa1456fc",
+      "result_id": "c87dd01b-c758-41a6-a93e-8c3176be1120"
+    },
+    {
+      "claim_id": "3112e56d-5018-4084-bb1a-42eed2f2bfeb",
+      "result_id": "c87dd01b-c758-41a6-a93e-8c3176be1120"
+    },
+    {
+      "claim_id": "59727154-4e65-42c5-a298-25fa5b054d69",
+      "result_id": "c87dd01b-c758-41a6-a93e-8c3176be1120"
+    },
+    {
+      "claim_id": "82d0dfd3-86f0-4ff5-9414-ab83077d0ff7",
+      "result_id": "c87dd01b-c758-41a6-a93e-8c3176be1120"
+    },
+    {
+      "claim_id": "24117e87-b5a5-437b-b772-a36dade68229",
+      "result_id": "c87dd01b-c758-41a6-a93e-8c3176be1120"
+    },
+    {
+      "claim_id": "9aa9fe89-a100-4c06-9d64-867b5cfd0555",
+      "result_id": "8dd9c36f-2cbc-41f3-816f-4821df4352b0"
+    },
+    {
+      "claim_id": "adf23c26-e245-4936-a98e-14fd4551e0ef",
+      "result_id": "8dd9c36f-2cbc-41f3-816f-4821df4352b0"
+    },
+    {
+      "claim_id": "262fa54b-3a3c-4269-8891-85a69eedcfe0",
+      "result_id": "8dd9c36f-2cbc-41f3-816f-4821df4352b0"
+    },
+    {
+      "claim_id": "b6581dd3-c209-43a2-861e-0870f782b7fd",
+      "result_id": "532cc1c9-582b-402c-8c24-a088f9580f79"
+    },
+    {
+      "claim_id": "6fb43075-3736-406e-ad87-3eefd94e8d7b",
+      "result_id": "532cc1c9-582b-402c-8c24-a088f9580f79"
+    },
+    {
+      "claim_id": "dcc2475d-5c56-474b-a835-cc07c7a4ce85",
+      "result_id": "532cc1c9-582b-402c-8c24-a088f9580f79"
+    },
+    {
+      "claim_id": "ae5f13c4-d1a9-41ce-8e07-d60268600ac6",
+      "result_id": "532cc1c9-582b-402c-8c24-a088f9580f79"
+    },
+    {
+      "claim_id": "2f939ff7-e7c8-45b3-9efa-a48556273ed1",
+      "result_id": "532cc1c9-582b-402c-8c24-a088f9580f79"
+    },
+    {
+      "claim_id": "2bdd2be7-9de2-4065-9ce8-e05aad116e0e",
+      "result_id": "532cc1c9-582b-402c-8c24-a088f9580f79"
+    },
+    {
+      "claim_id": "892caac7-be97-4dda-906f-384e92eca5b2",
+      "result_id": "f8aca48d-f1f5-40fa-9fd4-acde23fd9030"
+    },
+    {
+      "claim_id": "258c700f-486d-4645-9486-4befc66da44c",
+      "result_id": "f8aca48d-f1f5-40fa-9fd4-acde23fd9030"
+    },
+    {
+      "claim_id": "bc90d0f6-e4ea-49e5-b764-3fa0397df453",
+      "result_id": "f8aca48d-f1f5-40fa-9fd4-acde23fd9030"
+    },
+    {
+      "claim_id": "dcea7209-a13d-4d32-bfb0-d7e5768c7514",
+      "result_id": "96f62ff6-9460-40dd-aaf2-5c5de2f8de37"
+    },
+    {
+      "claim_id": "89c4209f-7f0a-46b4-b1b9-9759aec63a3b",
+      "result_id": "96f62ff6-9460-40dd-aaf2-5c5de2f8de37"
+    },
+    {
+      "claim_id": "f9f468fc-0cb5-4a51-b8f1-2bb0517cf4c7",
+      "result_id": "96f62ff6-9460-40dd-aaf2-5c5de2f8de37"
+    },
+    {
+      "claim_id": "0661a046-2a3d-4a79-b8d4-a16ef8e71c89",
+      "result_id": "96f62ff6-9460-40dd-aaf2-5c5de2f8de37"
+    },
+    {
+      "claim_id": "fc1ce4c0-74dd-4d7a-b87c-16b2aafcf0b1",
+      "result_id": "96f62ff6-9460-40dd-aaf2-5c5de2f8de37"
+    },
+    {
+      "claim_id": "f5b17965-3bdd-40fd-b432-b906ad0408ed",
+      "result_id": "96f62ff6-9460-40dd-aaf2-5c5de2f8de37"
+    },
+    {
+      "claim_id": "99ef8d0c-6e9c-414b-8d60-22e7f57db5a5",
+      "result_id": "96f62ff6-9460-40dd-aaf2-5c5de2f8de37"
+    },
+    {
+      "claim_id": "5aa8286a-dd73-44cf-90e4-2f63897e8395",
+      "result_id": "8fdd02ea-3d36-4e4d-9252-f949408a0ab2"
+    },
+    {
+      "claim_id": "d43719c7-cd48-4e14-aeac-53e59a4e2bbf",
+      "result_id": "f9335f67-9503-4464-8799-cdbaf88b6788"
+    },
+    {
+      "claim_id": "884cd974-467e-42bb-8051-80c188c42882",
+      "result_id": "f9335f67-9503-4464-8799-cdbaf88b6788"
+    },
+    {
+      "claim_id": "2d7a1008-1d95-4d8b-8990-241e655b4f66",
+      "result_id": "f9335f67-9503-4464-8799-cdbaf88b6788"
+    },
+    {
+      "claim_id": "318d62eb-b6c5-407d-bf08-1a99bcfd757c",
+      "result_id": "f9335f67-9503-4464-8799-cdbaf88b6788"
+    },
+    {
+      "claim_id": "212e38a3-ec20-42a6-97be-77c0176c26f8",
+      "result_id": "f9335f67-9503-4464-8799-cdbaf88b6788"
+    },
+    {
+      "claim_id": "045e9831-7d59-4635-9d52-25b517c667b0",
+      "result_id": "f9335f67-9503-4464-8799-cdbaf88b6788"
+    },
+    {
+      "claim_id": "6a8e9853-0993-4b90-806f-c16b63b6eed2",
+      "result_id": "f9335f67-9503-4464-8799-cdbaf88b6788"
+    },
+    {
+      "claim_id": "b8979e76-1a5e-444d-ad03-5ed98b59f74f",
+      "result_id": "f9335f67-9503-4464-8799-cdbaf88b6788"
+    },
+    {
+      "claim_id": "7019e629-79c7-4a49-aef9-28daf58e3df9",
+      "result_id": "f9335f67-9503-4464-8799-cdbaf88b6788"
+    },
+    {
+      "claim_id": "8a345701-dc5a-4fce-85ae-722a12b01068",
+      "result_id": "f9335f67-9503-4464-8799-cdbaf88b6788"
+    },
+    {
+      "claim_id": "b5f2a2f2-a6d2-428c-a470-a38e8bd04b60",
+      "result_id": "f9335f67-9503-4464-8799-cdbaf88b6788"
+    },
+    {
+      "claim_id": "0cbb2f6f-5060-4c10-894e-8db205fed318",
+      "result_id": "f9335f67-9503-4464-8799-cdbaf88b6788"
+    },
+    {
+      "claim_id": "5905a877-ed49-4959-819d-0378c37de4c7",
+      "result_id": "7ad39254-de78-41f7-a2b6-90d2ca699a9d"
+    },
+    {
+      "claim_id": "fddb4503-e3f8-4a95-a918-117975f5d5d6",
+      "result_id": "7ad39254-de78-41f7-a2b6-90d2ca699a9d"
+    },
+    {
+      "claim_id": "5be4efd1-f2f3-4c00-a504-5a086a3e9e92",
+      "result_id": "7ad39254-de78-41f7-a2b6-90d2ca699a9d"
+    },
+    {
+      "claim_id": "5c41698f-9224-40e6-9991-d3a56fdef7c2",
+      "result_id": "7ad39254-de78-41f7-a2b6-90d2ca699a9d"
+    },
+    {
+      "claim_id": "e93ede75-015f-4c5f-a846-347b38e4eb1e",
+      "result_id": "7ad39254-de78-41f7-a2b6-90d2ca699a9d"
+    },
+    {
+      "claim_id": "f8a323dc-a354-41b1-9b01-59704ff3c261",
+      "result_id": "7ad39254-de78-41f7-a2b6-90d2ca699a9d"
+    },
+    {
+      "claim_id": "0aeb92ea-7f60-45e4-b3b0-32794d4bcd1a",
+      "result_id": "7ad39254-de78-41f7-a2b6-90d2ca699a9d"
+    },
+    {
+      "claim_id": "394e09c3-4c82-490b-b2e5-da34addde18a",
+      "result_id": "7ad39254-de78-41f7-a2b6-90d2ca699a9d"
+    },
+    {
+      "claim_id": "c9daacfa-df1b-4e6e-be92-76efe72b1acd",
+      "result_id": "7ad39254-de78-41f7-a2b6-90d2ca699a9d"
+    },
+    {
+      "claim_id": "4bc3479a-649e-46e4-b86f-e020c06fd32c",
+      "result_id": "a7dd4c3d-62fe-4ad9-b798-809f3e6fb83f"
+    },
+    {
+      "claim_id": "81a93162-2862-4b72-a05b-5129c4419b38",
+      "result_id": "a7dd4c3d-62fe-4ad9-b798-809f3e6fb83f"
+    },
+    {
+      "claim_id": "f52525b2-dc5a-4d22-839d-1910d617dd3c",
+      "result_id": "700f5ff4-1615-4a39-86d0-0195db5e6355"
+    },
+    {
+      "claim_id": "3e9d848b-1acc-4aab-896d-f395ed76302f",
+      "result_id": "700f5ff4-1615-4a39-86d0-0195db5e6355"
+    },
+    {
+      "claim_id": "9fdc21fb-5b14-4a7a-8594-e7b6ba53f8e5",
+      "result_id": "700f5ff4-1615-4a39-86d0-0195db5e6355"
+    },
+    {
+      "claim_id": "556b7e8b-3093-4c0d-a29a-a6729f57ee07",
+      "result_id": "700f5ff4-1615-4a39-86d0-0195db5e6355"
+    },
+    {
+      "claim_id": "159c4845-5379-4d1a-8e18-825e853f89c8",
+      "result_id": "700f5ff4-1615-4a39-86d0-0195db5e6355"
+    },
+    {
+      "claim_id": "88f3ff62-158e-4ea1-866a-c71ff6194417",
+      "result_id": "700f5ff4-1615-4a39-86d0-0195db5e6355"
+    },
+    {
+      "claim_id": "7b313494-f86b-421c-8d20-f752d071102b",
+      "result_id": "700f5ff4-1615-4a39-86d0-0195db5e6355"
+    },
+    {
+      "claim_id": "cc267d3a-97ab-49cf-9bd1-64816968a128",
+      "result_id": "700f5ff4-1615-4a39-86d0-0195db5e6355"
+    },
+    {
+      "claim_id": "19705f11-20ef-460b-be03-9afc7d8ad43c",
+      "result_id": "46410253-d400-4af4-9a67-c8adc64667ac"
+    },
+    {
+      "claim_id": "66dac560-b6d9-441f-8939-933cb2b75ca5",
+      "result_id": "46410253-d400-4af4-9a67-c8adc64667ac"
+    },
+    {
+      "claim_id": "d6b90b76-32b4-47cd-87c0-249b93ef73d3",
+      "result_id": "46410253-d400-4af4-9a67-c8adc64667ac"
+    },
+    {
+      "claim_id": "cebb49e0-b39c-4d8b-870c-c99f3775c2b5",
+      "result_id": "46410253-d400-4af4-9a67-c8adc64667ac"
+    },
+    {
+      "claim_id": "193111de-7feb-49c1-9684-b6f4e1abc8ba",
+      "result_id": "46410253-d400-4af4-9a67-c8adc64667ac"
+    },
+    {
+      "claim_id": "e831cc60-0812-4851-9cd7-0c76765260b7",
+      "result_id": "46410253-d400-4af4-9a67-c8adc64667ac"
+    },
+    {
+      "claim_id": "e0939c06-1d55-47ab-a76e-ec39a75e2d6a",
+      "result_id": "46410253-d400-4af4-9a67-c8adc64667ac"
+    },
+    {
+      "claim_id": "e7eec4e7-048a-4170-ab80-275ae67ccbc2",
+      "result_id": "46410253-d400-4af4-9a67-c8adc64667ac"
+    },
+    {
+      "claim_id": "2f05c94c-b6b8-4a11-9342-c7e28d75a04f",
+      "result_id": "46410253-d400-4af4-9a67-c8adc64667ac"
+    },
+    {
+      "claim_id": "046349e6-dc54-44a9-a9b2-1baeba95111b",
+      "result_id": "46410253-d400-4af4-9a67-c8adc64667ac"
+    },
+    {
+      "claim_id": "1028c718-4fea-4459-9276-e7d556a5d61d",
+      "result_id": "46410253-d400-4af4-9a67-c8adc64667ac"
+    },
+    {
+      "claim_id": "a26e28b6-1634-4d41-8798-ead57bbb2e3a",
+      "result_id": "46410253-d400-4af4-9a67-c8adc64667ac"
+    },
+    {
+      "claim_id": "85171503-87ff-4685-b215-2d7ecb3669d4",
+      "result_id": "46410253-d400-4af4-9a67-c8adc64667ac"
+    },
+    {
+      "claim_id": "1a847982-e55e-4aa9-b9dd-72c32d113c59",
+      "result_id": "46410253-d400-4af4-9a67-c8adc64667ac"
+    },
+    {
+      "claim_id": "87915267-50b4-4a1a-9221-db53fe58d91a",
+      "result_id": "46410253-d400-4af4-9a67-c8adc64667ac"
+    },
+    {
+      "claim_id": "54f78d70-18f2-46e8-9721-acab1bae7ce4",
+      "result_id": "fce55e4d-4340-44a7-9c4b-5d1cc69dd719"
+    },
+    {
+      "claim_id": "b4fda823-eaa7-4a96-b6bd-9759798a58e7",
+      "result_id": "fce55e4d-4340-44a7-9c4b-5d1cc69dd719"
+    },
+    {
+      "claim_id": "b0ff68fb-cc6f-4dff-a822-f79c963e1b16",
+      "result_id": "fce55e4d-4340-44a7-9c4b-5d1cc69dd719"
+    },
+    {
+      "claim_id": "ffae0db1-9e48-4df2-b1ad-2f9df11983e6",
+      "result_id": "fce55e4d-4340-44a7-9c4b-5d1cc69dd719"
+    },
+    {
+      "claim_id": "e0fab68d-f358-4dff-a31f-d4e83dc1229a",
+      "result_id": "fce55e4d-4340-44a7-9c4b-5d1cc69dd719"
+    },
+    {
+      "claim_id": "de31e014-cee6-4c63-9fc2-04c4dffea845",
+      "result_id": "fce55e4d-4340-44a7-9c4b-5d1cc69dd719"
+    },
+    {
+      "claim_id": "41a46335-859c-47af-808a-0798bfeefff9",
+      "result_id": "fce55e4d-4340-44a7-9c4b-5d1cc69dd719"
+    },
+    {
+      "claim_id": "b5645781-1cab-4d3d-a9bc-884ead905752",
+      "result_id": "fce55e4d-4340-44a7-9c4b-5d1cc69dd719"
+    },
+    {
+      "claim_id": "9e7e1c42-9b9c-4c86-821c-7983a1e49546",
+      "result_id": "fce55e4d-4340-44a7-9c4b-5d1cc69dd719"
+    },
+    {
+      "claim_id": "e4d8caee-5d69-4be9-826b-0dcf52578ad5",
+      "result_id": "fce55e4d-4340-44a7-9c4b-5d1cc69dd719"
+    },
+    {
+      "claim_id": "603cc9eb-60fe-4329-98cd-df039334ac87",
+      "result_id": "fce55e4d-4340-44a7-9c4b-5d1cc69dd719"
+    },
+    {
+      "claim_id": "1742ef98-eec2-4c8b-9869-83edfa8a18ed",
+      "result_id": "2885aa91-3fcf-47bf-9256-8eefbfe86ab7"
+    },
+    {
+      "claim_id": "09d7d940-442e-4a98-ac35-acf2e5f2459c",
+      "result_id": "2885aa91-3fcf-47bf-9256-8eefbfe86ab7"
+    },
+    {
+      "claim_id": "45a89bad-80eb-4bdb-8a6f-aaeb1ceabb18",
+      "result_id": "2885aa91-3fcf-47bf-9256-8eefbfe86ab7"
+    },
+    {
+      "claim_id": "49b7bb98-cb0d-4b03-b898-3d9d9c421958",
+      "result_id": "2885aa91-3fcf-47bf-9256-8eefbfe86ab7"
+    },
+    {
+      "claim_id": "58ef197d-a530-4330-96ab-155002fbc12e",
+      "result_id": "2885aa91-3fcf-47bf-9256-8eefbfe86ab7"
+    },
+    {
+      "claim_id": "ed62e834-d4fb-44f9-bc8a-4d41489aeed8",
+      "result_id": "dff41a46-36c1-4453-a324-c47ac922808b"
+    },
+    {
+      "claim_id": "5e74d4ca-caea-4ad3-b845-fe989cde2963",
+      "result_id": "dff41a46-36c1-4453-a324-c47ac922808b"
+    },
+    {
+      "claim_id": "e8b20be8-9202-4cf4-87a6-0dbcf58f23d2",
+      "result_id": "dff41a46-36c1-4453-a324-c47ac922808b"
+    },
+    {
+      "claim_id": "94b25781-656a-4250-a081-5c637b8fcb0a",
+      "result_id": "dff41a46-36c1-4453-a324-c47ac922808b"
+    },
+    {
+      "claim_id": "29f1b1eb-004a-44fe-acea-3f2fae8b0bb9",
+      "result_id": "dff41a46-36c1-4453-a324-c47ac922808b"
+    },
+    {
+      "claim_id": "0eab0960-2bb7-4171-bb65-20401214b5cd",
+      "result_id": "dff41a46-36c1-4453-a324-c47ac922808b"
+    },
+    {
+      "claim_id": "6926ffd7-0261-48d1-b1cc-af6735ab8048",
+      "result_id": "dff41a46-36c1-4453-a324-c47ac922808b"
+    },
+    {
+      "claim_id": "1c4e5c60-24a0-4b0d-8798-377cdefa45a3",
+      "result_id": "9bb06f82-825d-4dd6-8444-0017b9f7053e"
+    },
+    {
+      "claim_id": "09d83f29-c0ff-4a41-a5f7-e47e97249244",
+      "result_id": "9bb06f82-825d-4dd6-8444-0017b9f7053e"
+    },
+    {
+      "claim_id": "e612d4e0-0ebc-4382-b506-975b2974afa3",
+      "result_id": "9bb06f82-825d-4dd6-8444-0017b9f7053e"
+    }
+  ],
+  "comparisons": []
+}

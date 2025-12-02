@@ -1,0 +1,220 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5"
+    ],
+    "result": "HLHS is a genetically heterogeneous congenital heart disease characterized by left ventricular underdevelopment. Prior studies in mice and human HLHS samples suggest impaired cardiomyocyte proliferation may contribute to HLHS pathogenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C5 establish the clinical definition of HLHS (C1), its genetic heterogeneity (C2), and cite prior evidence from mouse models (C3) and human samples (C4) linking impaired cardiomyocyte proliferation to HLHS. The inference in C5 is appropriately qualified as a hypothesis requiring further validation. These claims provide well-supported background context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "The study characterized a family quintet (5H) with a male proband diagnosed with severe HLHS who died following failed surgical interventions, while parents and siblings had normal cardiac anatomy. Maternal history included four miscarriages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C12 provide clinical characterization of the index family. These are straightforward clinical observations documented through physical examination and echocardiography. The data establish the family structure and phenotypes essential for the genetic analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "RNA-seq analysis of proband-derived iPSCs revealed 1,401 concordantly differentially expressed transcripts compared to both parents, with enrichment in TP53 pathway genes including cell cycle inhibitors. Proband hiPSC-CMs from three HLHS families (5H, 75H, 151H) exhibited reduced proliferation compared to parents, which was rescued by knockdown of TP53 or CDKN1A.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C18 present RNA-seq data (C13-C15) and functional validation through EdU incorporation assays (C16-C18). The transcriptomic findings are supported by appropriate statistical correction (Benjamini p<0.001), and the proliferation defect is replicated across three independent families. The rescue experiments with TP53/CDKN1A knockdown provide mechanistic support. Statistical tests (one-way ANOVA) are appropriately applied.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "Whole-genome sequencing of the 5H family quintet achieved high coverage (36X average depth, >99% genome coverage) and identified 114 rare variants in 61 genes. Integration with RNA-seq data prioritized 10 candidate genes (HSPG2, APOB, LRP2, PRTG, SLC9A1, SDHD, JPT1, ELF4, HS6ST2, SIK1) harboring recessive variants and showing differential expression in proband iPSCs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C27 describe the WGS methodology and variant filtering strategy. The sequencing quality metrics (C20-C24) are appropriate, and the filtering approach (C25) is clearly described. The integration of genomic and transcriptomic data (C26) to prioritize candidates is methodologically sound, with qPCR validation (C27) providing orthogonal confirmation. The approach is well-justified for hypothesis generation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C28",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Heart-specific knockdown of candidate gene orthologs in Drosophila revealed cardiac phenotypes: LRP2/mgl and JPT1 caused dilated hearts, APOB/apolpp and LRP2/mgl caused arrhythmias, and HSPG2/trol and SDHD showed constricted phenotypes in a sensitized NKX2-5/tinman heterozygous background.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28, C31-C33 present functional validation in Drosophila using established heart analysis methods (cited: Fink et al., 2009; Ocorr et al., 2014). Statistical analysis (Wilcoxon rank sum test, p<0.001) supports the phenotypic observations. The use of a sensitized genetic background (NKX2-5/tin+/-) for some genes is appropriate for detecting subtle phenotypes. The conservation-based approach is well-justified (see C50, C54).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C34",
+      "C35"
+    ],
+    "result": "Knockdown of LRP2 or APOB in healthy hiPSC-CMs reduced EdU incorporation and total cell numbers, with upregulation of cell cycle inhibitors (TP53, CDKN1A) and apoptosis genes, and downregulation of cell cycle genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C30, C34-C35 demonstrate that LRP2 and APOB knockdown recapitulates key aspects of the proband phenotype in healthy cells. The EdU incorporation assays (C29, C34) are appropriately quantified with statistical testing (one-way ANOVA, p<0.01). Gene expression changes (C30, C35) provide mechanistic insight. The convergence of phenotypes across Drosophila and human cells strengthens the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Rare variant burden analysis revealed ~3-fold enrichment of predicted-damaging LRP2 missense variants in 130 HLHS patients compared to 861 controls (10% vs 3.4%, p=0.0008). Three patients shared the N3205D variant with the 5H proband. LRP2 mRNA levels were reduced in probands and variant-carrying parents in two families (5H, 49H).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C36-C38 present cohort-level genetic evidence. While the initial p-value (p=0.0008, C36) appears significant, the authors acknowledge in the manuscript that Caucasian-only sub-analysis yields p=0.05, and race-specific differences require further study. The shared N3205D variant (C37) is interesting but present in only 3/130 cases. The reduced LRP2 mRNA in variant carriers (C38) is intriguing but the mechanism linking coding variants to reduced expression is unclear and speculative. The enrichment provides suggestive but not definitive evidence for LRP2's role in HLHS.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C39",
+      "C40"
+    ],
+    "result": "Loss of lrp2a function in zebrafish (via morpholino and CRISPR) resulted in hypoplastic hearts with decreased cardiomyocyte numbers, reduced ventricular chamber dimensions, compromised contractility, and bradycardia.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C40 provide vertebrate in vivo validation using two independent methods (morpholino and CRISPR/Cas9). The phenotypes are quantified using established methods (SOHA analysis) with appropriate statistics (Student's t-test, one-way ANOVA). The hypoplastic ventricular phenotype is particularly relevant to HLHS. The use of two independent genetic perturbation methods strengthens confidence in the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Gene network analysis connected the five validated candidates (APOB, HS6ST2, HSPG2, JPT1, LRP2) to WNT and SHH signaling pathways. RNA-seq showed PTCH1 (SHH inhibitor) upregulation and WNT agonists (WNT1/3a/8a/10b, FZD10) downregulation in proband cells. LRP2 knockdown reduced FZD10 and increased PTCH1 levels, and blocked BIO- and siPTCH1-induced proliferation in hiPSC-CMs, suggesting LRP2 is required for WNT- and SHH-regulated cardiomyocyte proliferation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C41-C46 propose a mechanistic model linking LRP2 to WNT/SHH signaling. The network analysis (C41) and RNA-seq observations (C42-C43) are descriptive. The functional experiments (C44-C45) show LRP2 knockdown affects pathway markers and blocks pathway-induced proliferation, but these are correlative observations. The inference that LRP2 is 'required' for WNT/SHH-regulated proliferation (C46) is reasonable but requires more direct mechanistic validation (e.g., rescue experiments, pathway activity reporters). The authors appropriately note that 'genetic interaction studies in our model systems are required' to substantiate the link.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "LRP2 mutations have been previously associated with left ventricular non-compaction (LVNC) and other congenital heart defects in mice, and with Donnai-Barrow Syndrome in humans, but LRP2 has not been previously linked to HLHS in curated bioinformatic networks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C49 accurately cite prior literature (Baardman et al., 2016; Kantarci et al., 2008) establishing LRP2's role in other cardiac conditions while noting its novelty in HLHS context. This contextualizes the current findings appropriately.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C50",
+      "C54",
+      "C55",
+      "C56",
+      "C62"
+    ],
+    "result": "Drosophila is an established model for identifying cardiac genes conserved in vertebrates, with ~80% of disease-causing human genes having fly orthologs. The discovery of Nkx2-5/tinman in Drosophila marked the beginning of molecular-genetic understanding of cardiac specification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50, C54-C56, C62 provide well-supported background on the utility of Drosophila as a cardiac model system, citing extensive prior literature. These claims justify the use of fly genetics in the study and are appropriately supported by citations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "The study established a multi-species platform demonstrating that LRP2 is required for cardiomyocyte proliferation and differentiation, with rare LRP2 variants enriched in HLHS patients and reduced proliferation observed in proband iPSC-CMs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C53 summarize the main findings. The multi-species validation (C53) is well-supported by the experimental data across hiPSC, Drosophila, and zebrafish systems. The enrichment of LRP2 variants (C51) is supported but with caveats noted in the race-stratified analysis. The reduced proliferation in proband cells (C52) is consistently demonstrated. These summary claims accurately reflect the study's contributions while acknowledging limitations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C57",
+      "C58"
+    ],
+    "result": "The only existing mouse HLHS model (Sap130/Pcdha9 double mutant) has <30% penetrance, indicating a profound role for genetic background differences in HLHS manifestation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C58 accurately cite prior work (Liu et al., 2017) and draw a reasonable inference about the importance of genetic background. This contextualizes the oligogenic hypothesis of HLHS.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C63",
+      "C64"
+    ],
+    "result": "The authors propose that HLHS may result from a multi-hit model involving sub-threshold hypomorphic alleles affecting WNT/SHH signaling and p53 pathways, with CHDs in general being oligogenic and sharing common factors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C59-C61, C63-C64 present speculative hypotheses about HLHS etiology. While C59 is supported by citations, claims C61, C63, and C64 are explicitly speculative ('likely oligogenic', 'could be caused', 'represents an attractive explanation'). These are reasonable hypotheses generated from the data but lack direct experimental validation. The authors appropriately qualify these as speculative throughout the manuscript.",
+    "result_type": "MAJOR"
+  }
+]

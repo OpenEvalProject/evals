@@ -1,0 +1,343 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "Single-cell RNA-seq analysis identified HAVCR2 and ITGAX as LSC-enriched markers that define a hierarchical differentiation trajectory from HAVCR2high LSCs through intermediate states to blasts in the Pten-null T-ALL model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C21 provide converging evidence from WGCNA, gene ontology analysis, FACS, and pseudotime analysis demonstrating that HAVCR2 and ITGAX mark distinct LSC subpopulations organized hierarchically. The single-cell RNA-seq data with pseudotime analysis (C21) provides strong support for the developmental trajectory.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "The HAVCR2high subgroup exhibits stem cell-like properties (quiescence, low MYC, enrichment in stem/progenitor pathways) while blast cells show proliferative characteristics (high MYC, active cell cycle, Myc lymphoma pathway enrichment).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C24 are supported by GSEA analysis, cell cycle analysis, and intracellular FACS measurements shown in Figure 2. The data consistently demonstrate opposing molecular and functional characteristics between HAVCR2high and blast populations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "HAVCR2high cells represent the true LSC population with nearly 1/1 leukemia-initiating capacity, compared to 1/14 for Lin-CD3+KITmid and 1/28 for HAVCR2low cells, establishing HAVCR2 as a novel LSC marker.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C30 are strongly supported by limiting dilution transplantation assays (Figure 3B-C) showing dose-dependent leukemia initiation and survival differences. The functional data definitively establish HAVCR2high cells as the LSC population, though the claim of 'nearly every cell' (C25) may be slightly overstated without exact quantification.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C2",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "SPI1 is identified as the master regulator of LSC signature genes, with ~70% overlap between HAVCR2high signature genes and SPI1 targets. SPI1 directly binds and regulates HAVCR2 and MYC, with SPI1 expression highest in HAVCR2high cells and inversely correlated with MYC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C38 are supported by multiple lines of evidence including network analysis, ChIP-qPCR (Figure 4D-F), overexpression/knockdown experiments (Figure 4G-I), and pseudotime analysis. The ChIP data demonstrate direct binding, while gain/loss-of-function experiments establish regulatory relationships.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C39",
+      "C98"
+    ],
+    "result": "The positive correlation between SPI1 and HAVCR2/ITGAX/LMO2 expression observed in the mouse model is conserved in human T-ALL datasets and cell lines.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39 and C98 are supported by analysis of two independent human T-ALL datasets (Figure 5) showing significant correlations (\u03c1=0.58-0.68, p<0.001). This provides evidence for translational relevance, though the functional significance in human T-ALL requires further validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Genetic deletion of Spi1 prevents T-ALL development and LSC formation in the Pten-null model in a dose-dependent manner, demonstrating that SPI1 is essential for LSC stemness and leukemogenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C45 are strongly supported by survival analysis, histology, and FACS data (Figure 6) from Pten/Spi1 double knockout mice. The dose-dependent effect (C40) and complete absence of LSCs and T-ALL in double knockouts (C41-C42) provide compelling genetic evidence. The rescue of T cell development (C44) addresses a potential confounding factor.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "Spi1 expression patterns during T-ALL development mirror normal T cell development, with high expression at the ETP/DN1 stage that is significantly upregulated in Pten-null mice, suggesting LSCs arise at this developmental stage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C48 are supported by pseudotime analysis comparing T-ALL to normal development (Figure 7A) and Spi1-GFP reporter analysis (Figure 7B). The data demonstrate conservation of developmental expression patterns and identify the ETP/DN1 stage as the origin of LSCs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C3",
+      "C88"
+    ],
+    "result": "A \u03b2-catenin-SPI1-HAVCR2 regulatory circuit maintains LSC-specific SPI1 expression and stemness. While initiated by PTEN loss and PI3K activation, the circuit becomes independent of the driver mutation, with HAVCR2 signaling activating \u03b2-catenin and NF\u03baB to reinforce SPI1 expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C57, C3, and C88 are supported by \u03b2-catenin overexpression experiments (Figure 8A), intracellular FACS showing differential P-GSK3\u03b2, \u03b2-catenin, P-p65, and SPI1 levels (Figure 8B-E), and citations to prior work. The key observation that HAVCR2high cells have similar P-GSK3\u03b2 but higher active \u03b2-catenin than other subgroups (C54-C55) supports independence from PTEN loss.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C4"
+    ],
+    "result": "Genetic deletion of Spi1 or pharmacological inhibition of \u03b2-catenin (but not PI3K alone) prevents HAVCR2high LSC formation, demonstrating that the \u03b2-catenin-SPI1-HAVCR2 circuit can be therapeutically targeted.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C60 and C4 are supported by FACS analysis of Spi1 knockout mice (Figure 8F) and drug treatment experiments (Figure 8G). The differential effects of BAY6060 (\u03b2-catenin inhibitor) versus BAY1082439 (PI3K inhibitor) alone provide strong evidence for circuit independence from PI3K pathway at the leukemia stage.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C5",
+      "C65",
+      "C90"
+    ],
+    "result": "SPI1 expression is epigenetically regulated by DNA methylation, with the Spi1 promoter hypomethylated in LSCs and progressively methylated during differentiation to blasts, leading to loss of LSC stemness. This regulation is reversible.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C62, C5, C65, and C90 are supported by RRBS analysis (Figure 9A-C) and bisulfite sequencing (Figure 9D) showing progressive methylation of CpG islands in the Spi1 promoter from HAVCR2high to blast cells. The reversibility is demonstrated by 5-AZ treatment experiments (C63-C64).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C6"
+    ],
+    "result": "Treatment with the DNMT inhibitor 5-AZ reactivates Spi1 expression and induces SPI1+ MYClow subgroups in vivo, demonstrating reversible epigenetic control of LSC stemness.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C64 and C6 are supported by qPCR data (Figure 9E) and FACS analysis (Figure 9F) showing 5-AZ treatment increases Spi1 and LSC signature gene expression in vitro and induces SPI1+ MYClow cells in vivo. This demonstrates the reversibility of the methylation-mediated silencing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C97",
+      "C7"
+    ],
+    "result": "SPI1 expression is regulated by DNA methylation in human T-ALL cell lines, with differential methylation status between KE-37 (unmethylated, SPI1+) and CEM (methylated, SPI1-) cells. 5-AZ treatment reactivates SPI1 in CEM but not KE-37 cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C70, C97, and C7 are supported by FACS analysis (Figure 10A), bisulfite sequencing (Figure 10B), and qPCR after 5-AZ treatment (Figure 10C) in human T-ALL cell lines. The differential response to 5-AZ based on methylation status provides strong evidence for epigenetic regulation in human T-ALL.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C71"
+    ],
+    "result": "5-AZ treatment of CEM cells significantly accelerates T-ALL development in vivo, suggesting that reactivation of SPI1 expression enhances leukemogenic potential.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C71 is supported by survival data (Figure 10D) showing accelerated leukemia after 5-AZ treatment. However, the interpretation is problematic: if SPI1 drives LSC stemness, its reactivation should enhance leukemogenesis, but this contradicts the therapeutic goal of eliminating LSCs. The authors acknowledge this paradox in their discussion (C95), but the mechanism remains unclear. Cell line-based transplantation may not accurately model LSC biology.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "The SPI1 inhibitor DB1976 reduces HAVCR2high LSCs and LSC signature gene expression, but only when combined with rapamycin does it significantly reduce leukemia burden, prolong survival, and restore normal organ morphology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C78 are supported by qPCR (Figure 11A), FACS (Figure 11B), survival analysis (Figure 11C), and histology (Figure 11D-E). The data demonstrate that targeting the LSC maintenance circuit (DB1976) must be combined with debulking therapy (rapamycin) for effective treatment. The lack of body weight loss (Figure 11\u2014supplement 1C) suggests tolerability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C79",
+      "C80"
+    ],
+    "result": "Combination treatment with BAY6060 (tankyrase/\u03b2-catenin inhibitor) and BAY1082439 (PI3K inhibitor) significantly reduces \u03b2-catenin activity and SPI1 expression, prolongs survival, and nearly eliminates LSCs and blasts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C80 are supported by FACS analysis (Figure 12A) and survival data (Figure 12B). The combination therapy shows efficacy similar to DB1976/rapamycin, providing independent validation of the two-layer model and demonstrating that targeting \u03b2-catenin upstream of SPI1 is therapeutically effective.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Anti-HAVCR2 antibody combined with rapamycin shows therapeutic efficacy similar to other combination treatments, and HAVCR2 may be a superior therapeutic target due to its restricted expression in LSCs versus normal hematopoietic cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C84 are supported by survival data (Figure 12C) and citations to prior work on HAVCR2 expression and clinical use. The comparable efficacy of targeting any circuit component (SPI1, \u03b2-catenin, or HAVCR2) combined with PI3K/mTOR inhibition validates the regulatory circuit model and provides multiple therapeutic options.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C91",
+      "C92"
+    ],
+    "result": "T-ALL leukemogenesis involves two layers of control: (1) PTEN loss/PI3K activation driving \u03b2-catenin activation and Tcra/d-Myc translocation (hardwired in all cells), and (2) SPI1-mediated LSC stemness maintenance via the \u03b2-catenin-SPI1-HAVCR2 circuit (reversible, LSC-specific).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C87, C91-C92 represent the integrative model synthesizing all experimental findings. The two-layer model is well-supported by: (1) genetic data showing PTEN loss and Myc translocation in both LSCs and blasts (C13, C91), (2) differential SPI1 expression and circuit activity in LSCs versus blasts (C32, C54-C55, C92), (3) reversible epigenetic regulation of SPI1 (C61-C65), and (4) differential therapeutic responses (C59-C60, C75, C89).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C89",
+      "C94"
+    ],
+    "result": "Once formed, LSCs are sensitive to perturbation of the \u03b2-catenin-SPI1-HAVCR2 circuit but less dependent on PI3K pathway inhibition. Effective therapy requires targeting both driver mutations (for debulking) and LSC stemness maintenance mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89 and C94 are supported by drug treatment experiments showing PI3K inhibition alone is ineffective at the leukemia stage (C60, C14) but combination therapies targeting both layers are highly effective (C75-C78, C80, C83). This has important therapeutic implications for LSC-targeted therapy.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C93",
+      "C95"
+    ],
+    "result": "The two-layer control mechanism may be present in other cancers with CSCs, and reactivation of SPI1 expression could represent a mechanism for LSC-mediated therapeutic resistance, predicting poor outcomes with demethylating agents like 5-AZ.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C93 and C95 are speculative extrapolations from the T-ALL data. While the logic is sound given the reversibility of SPI1 expression (C65) and the accelerated leukemia after 5-AZ treatment (C71), these remain hypotheses requiring validation in other cancer types and with clinical data. The paradoxical effect of 5-AZ (C71) complicates interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C1",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "Background claims establishing the clinical significance of T-ALL, the role of LSCs in relapse and drug resistance, and prior characterization of the Pten-null T-ALL model showing that driver mutations alone do not determine LSC stemness.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C8-C15 provide background context supported by citations to published literature. These establish the rationale for the study and summarize prior work on the Pten-null model, including the observation that PI3K inhibitors are only effective before leukemia onset (C14), which motivates the search for LSC-specific maintenance mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C96"
+    ],
+    "result": "PTEN and the PI3K/AKT/mTOR pathway are critical for human T-ALL etiology, providing translational relevance for the Pten-null mouse model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C96 is supported by multiple citations to published work on human T-ALL. This establishes the clinical relevance of the mouse model and justifies the translational potential of the findings, though direct validation in human T-ALL patients is still needed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C99"
+    ],
+    "result": "HAVCR2high LSCs can be detected in peripheral blood of leukemic mice, suggesting potential for noninvasive monitoring of T-ALL and treatment response.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C99 is based on unpublished data and represents a speculative future direction. While the detection of LSCs in peripheral blood would have important clinical implications for monitoring, the claim cannot be evaluated without the supporting data. This requires follow-up studies.",
+    "result_type": "MINOR"
+  }
+]

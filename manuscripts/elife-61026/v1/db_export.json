@@ -1,0 +1,2066 @@
+{
+  "submission": {
+    "id": "9a085c70-6fa0-4d3e-9086-43473d1135d0",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T20:32:06.600061Z",
+    "updated_at": "2025-12-02T20:32:06.600061Z"
+  },
+  "content": [
+    {
+      "id": "344fd1d3-98a1-434b-bcc4-d4b98e03f24a",
+      "submission_id": "9a085c70-6fa0-4d3e-9086-43473d1135d0",
+      "content_type": "manuscript",
+      "content_text": "# Dynamics of nevus development implicate cell cooperation in the growth arrest of transformed melanocytes\n\n## Authors\n\n- Rolando Ruiz-Vega<sup>1</sup>\n- Chi-Fen Chen<sup>3</sup>\n- Emaad Razzak<sup>1</sup>\n- Priya Vasudeva<sup>3</sup>\n- Tatiana B Krasieva<sup>4</sup>\n- Jessica Shiu<sup>3</sup>\n- Michael G Caldwell<sup>1</sup>\n- Huaming Yan<sup>5</sup>\n- John Lowengrub<sup>1</sup>\n- Anand K Ganesan<sup>1</sup> ([ORCID: 0000-0003-4944-9274](https://orcid.org/0000-0003-4944-9274))\n- Arthur D Lander<sup>1</sup> ([ORCID: 0000-0002-4380-5525](https://orcid.org/0000-0002-4380-5525)) \u2020\n\n### Affiliations\n\n1. Center for Complex Biological Systems, University of California, Irvine Irvine United States\n2. Department of Developmental and Cell Biology, University of California, Irvine Irvine United States\n3. Department of Dermatology, University of California, Irvine Irvine United States\n4. Beckman Laser Institute, University of California, Irvine Irvine United States\n5. Department of Mathematics, University of California, Irvine Irvine United States\n6. Department of Biological Chemistry, University of California, Irvine Irvine United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nMutational activation of the BRAF proto-oncogene in melanocytes reliably produces benign nevi (pigmented \u2018moles\u2019), yet the same change is the most common driver mutation in melanoma. The reason nevi stop growing, and do not progress to melanoma, is widely attributed to a cell-autonomous process of \u2018oncogene-induced senescence\u2019. Using a mouse model of Braf-driven nevus formation, analyzing both proliferative dynamics and single-cell gene expression, we found no evidence that nevus cells are senescent, either compared with other skin cells, or other melanocytes. We also found that nevus size distributions could not be fit by any simple cell-autonomous model of growth arrest, yet were easily fit by models based on collective cell behavior, for example in which arresting cells release an arrest-promoting factor. We suggest that nevus growth arrest is more likely related to the cell interactions that mediate size control in normal tissues, than to any cell-autonomous, \u2018oncogene-induced\u2019 program of senescence.\n\n## Introduction\n\nActivating BRAF mutations (e.g. BRAFV600E) are the most common oncogenic mutations in melanoma, seen in about 66% of cases (Davies et al., 2002). Curiously, the same mutation is found in 89% of melanocytic nevi (Pollock et al., 2003)\u2014the benign, pigmented \u2018moles\u2019 found on the skin of most individuals. In animal studies, melanocyte-specific expression of BRAFV600E efficiently produces nevi, but only very rarely melanoma (Dankort et al., 2009; Dhomen et al., 2009; Patton et al., 2005). The widely-accepted explanation is that transformed melanocytes undergo oncogene-induced senescence (OIS), arresting proliferation before additional oncogenic events can occur (e.g. Bennett, 2003; Huang et al., 2017; Kaplon et al., 2014; Michaloglou et al., 2005).\n\nNevus melanocytes are indeed growth-arrested, but the assumption that OIS is the cause remains untested, in part because of a lack of criteria to rigorously define OIS in vivo (Damsky and Bosenberg, 2017). Initially studied as a consequence of forced expression of oncogenes in cell cultures (Serrano et al., 1997), OIS has come to be seen as a distinctive cellular stress response characterized by a phenotype of growth arrest, morphological and metabolic changes, chromatin alterations, and secretion of growth factors, chemokines, cytokines and proteases (Campisi and d'Adda di Fagagna, 2007; Gorgoulis et al., 2019; Ito et al., 2017; Kuilman et al., 2010).\n\nGiven an abundance of \u2018hallmarks\u2019 of senescence, one might think that recognizing this cell state in vivo should be straightforward. Yet no single hallmark distinguishes senescence from other growth-arrested cell states. Phenotypes once thought to be \u2018gold standards\u2019, such as expression of lysosomal beta-galactosidase, cyclin-dependent kinase inhibitors, or p53, commonly mark only subsets of senescent cells (Wiley et al., 2017), as well as non-senescent cells (Tran et al., 2012). Moreover, observations of supposedly senescent cells resuming proliferation (e.g. Beaus\u00e9jour et al., 2003), imply that permanent cell cycle exit cannot be used as a distinguishing feature. In vivo senescence, as a result, is currently somewhat of a Gestalt diagnosis, that\u00a0is assessed by a collection of traits, no subset of which is necessary or sufficient. Yet there is no clear consensus on which traits are best to assess, and recent meta-analyses of gene expression suggest that some of the most commonly assessed features are not \u2018core\u2019 to senescence at all (Hernandez-Segura et al., 2017).\n\nThe reason it is important to clarify how BRAF-transformed nevus melanocytes stop growing is that it shapes how we think about the origins of melanoma. OIS is usually portrayed in cell-intrinsic terms: oncogene expression within a transformed cell produces a stress within that cell, which triggers it to senesce. Even those who acknowledge a possible role for paracrine signals (Acosta et al., 2013; Elzi et al., 2012; Ito et al., 2017; Wajapeyee et al., 2008) still portray the process as something initiated and orchestrated by cell-autonomous responses to oncogenes. This naturally leads to an approach to melanoma prevention and treatment that focuses on understanding how oncogenes derange intracellular processes; how those derangements elicit stress responses; and what might enable cancer cells to circumvent those responses (e.g. Bennett, 2003; Damsky and Bosenberg, 2017; Vredeveld et al., 2012; Yu et al., 2018). In contrast, as we argue below, it is possible that the growth arrest displayed by nevus melanocytes has little to do with oncogene-induced stress, and may have more to do with networks of cell\u2013cell communication that are characteristic of melanocytes, independent of whether they are transformed. In this case, the most effective path to understanding how to prevent or treat melanoma could be to better elucidate the normal physiology of melanocytes in their environment.\n\nHere, we investigate the details of nevus growth arrest in a model in which melanocyte-specific Braf activation generates hundreds of nevi on the skin of mice (Dankort et al., 2009). By examining both single-cell transcriptomes and the dynamics of growth arrest in nevus-associated melanocytes, we make two key observations: First, patterns of gene expression in arrested nevus melanocytes fail to identify them as any more senescent than other skin cells or normal melanocytes, arguing against a primary role for any form of senescence in their arrest. Second, the timing and statistics of nevus formation effectively argue against any relatively simple cell-autonomous process as being the cause of growth arrest. Ultimately, we propose a model in which arrest is driven not by oncogene stress, but by feedback mechanisms similar to those commonly involved in normal tissue homeostasis.\n\n## Results\n\n### Dynamics of nevus growth\n\nCharacterizing the dynamics of nevus growth and arrest requires observing nevi that started growing at known times. We took advantage of a mouse model in which Cre-mediated recombination introduces the activating V600E mutation into the endogenous Braf locus. When crossed onto a background carrying a Tyr-CreER transgene, the mice acquire the BrafV600E mutation only in cells of the melanocytic lineage, and only after Cre activation by 4-hydroxytamoxifen (4-OHT), applied either systemically or through painting on the skin.\n\nAs shown previously (Dankort et al., 2009), 4-OHT treatment of these mice leads to development of numerous pigmented nevi. Visualization of nevi is hindered, however, by the strong pigmentation in hair follicles which, except at microscopic resolution, can be difficult to distinguish from nevi. One way to circumvent this difficulty is to observe nevi only during the telogen phase of the hair cycle, when follicle-associated pigment is not present (conveniently, synchronization of hair cycles may be maintained on a large patch of skin through depilation).\n\nAs shown in Figure 1, in mice whose back skin was treated with topical 4-OHT at postnatal day 2 (P2), P3 and P4, nevi were apparent macroscopically at telogen (P50; Figure 1A). Live\u00a0imaging, using multi-photon microscopy (MPM; Saager et al., 2015), revealed that, like human nevi, mouse nevi consist of scattered nests of pigment-containing cells (Figure 1B). Nevi could also be visualized post-mortem, using a dissecting microscope, on the undersurface of pieces of telogen-stage back skin (Figure 1C).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/61026/elife-61026-fig1-v1.jpg)\n\n**Figure 1.:** (A-D)\u00a0Visualization of nevi on BrafV600E mice. (A) Live imaging of back skin at telogen-stage (P50), following hair depilation. Scale bar\u00a0=\u00a05 mm. (B) Live imaging of a sample like that in panel A using multi-photon microscopy. The central square is an en face view of the skin (x-y plane), while rectangles above and to the right are cross-sections (x-z and y-z planes, respectively, with blue lines marking the location of the central image). Melanin autofluorescence appears yellow, second harmonic generation of collagen is cyan, and keratin autofluorescence is green. Dashing outlines dermal melanocyte nests. Scale bar\u00a0=\u00a0318 \u00b5m. (C) Appearance of nevi on the undersurface of back skin (at P21). Scale bar\u00a0=\u00a01 mm. (D) Nevus development on the ventral (glabrous) surface of the paw. Images of a single paw were taken at the indicated ages. Scale bar\u00a0=\u00a00.5 cm.\u00a0(E-F) Assessment of melanocyte proliferation. Sections are from albino wildtype (E) and BrafV600E (F) skin at P21. Melanocytes were identified by premelanosome protein (Pmel) immunohistochemistry and proliferation assessed by BrdU incorporation. Wildtype hair follicle (HF) melanocytes (E) incorporate BrdU whereas nevus melanocytes (F) do not. Scale bar\u00a0=\u00a020 \u00b5m.\n\n![Figure 1\u2014figure supplement 1 .](https://cdn.elifesciences.org/articles/61026/elife-61026-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1 .:** (A)\u00a0Nevus development on the ventral surface of the glabrous paw. Images were taken at the indicated age. (B\u2013C) Identification of dividing or non-dividing melanocytes with the premelanosome protein (Pmel), and BrdU incorporation, in the (B) hair follicle (HF) of wild\u00a0type\u00a0mice and (C) in nests at P21 in BrafV600E mice. Scale bar\u00a0=\u00a020 \u00b5m.\n\nAn alternate approach to visualization that did not require hair synchronization was to generate nevi by painting 4-OHT on glabrous (hairless) skin, such as the ventral surface of the paw, permitting tracking of individual nevi on a daily basis. As shown in Figure 1D, when forepaws were treated with 4-OHT from P2 through P4, tiny nevi could be detected as early as P6. Serial observation indicated that most nevi reach a maximum size somewhere between P16 and P21 (Figure 1D ,\u00a0Figure 1\u2014figure supplement 1A). This suggests that, in the mouse, BrafV600E-transformed melanocytes arrest within 2\u20133 weeks. To confirm this, we used BrdU labeling to monitor DNA synthesis. Because melanin readily obscures immunohistochemical signals, these experiments were done in an albino (unpigmented) genetic background, using premelanosome protein (Pmel) staining to identify melanocytes. As shown in Figure 1F, albino mice generate nests similar to those seen in pigmented mice. In such animals, BrdU readily incorporated into hair follicle melanocytes (Figure 1E, Figure 1\u2014figure supplement 1B), whereas by p21 nests within nevi were uniformly negative for BrdU, implying growth arrest (Figure 1F, Figure 1\u2014figure supplement 1C).\n\nThe conclusion that Braf-induced nevi are already growth-arrested by P21 agrees with the reports of others (Damsky and Bosenberg, 2017), and is lent further support by time course measurements of nest size by MPM (Figure 1C), which show that nest size distributions change insignificantly between P21 and P50 (Figure 4\u2014figure supplement 1A-B).\n\n### Do nevi undergo OIS?\n\nAs discussed above, senescence is usually accompanied by distinctive gene expression. Various gene expression \u2018signatures\u2019 have been developed to help investigators identify senescent cells and distinguish them from cells that have become growth-arrested by other processes. We considered several of these (Source data 1):\n\nTo determine whether any of these proposed signatures fits nevus melanocytes, we performed single-cell RNA\u00a0sequencing on dissociated cells from the back skin of nevus-bearing mice at both P30 and P50 (i.e. after nevi have stopped growing), using wildtype skin as a control. Using known cell-type marker genes (Figure 2\u2014figure supplement 1A-B), we identified 14 different cell types in the skin, including melanocytes (Figure 2A). Unsupervised clustering further sub-divided the melanocytes into four groups (Figure 2B): Two of them, Mel 0 and Mel 1, were composed of cells found only in nevus-bearing, and not wildtype, skin (Figure 2C); they are highly similar in gene expression, primarily differing in having a slightly lower level of pigment gene expression in Mel 1 versus Mel 0 (Figure 2D). We identify them as the \u2018nevus melanocytes\u2019, because they are seen only when nevi are present, and are by far the predominant melanocyte population in such animals.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/61026/elife-61026-fig2-v1.jpg)\n\n**Figure 2.:** (A)\u00a0Skin cell types are visualized with tSNE (cells\u00a0=\u00a035,141) from mice at P30 (n[BrafWT]=2 mice, n[BrafV600E]=2 mice) and P50 (n[BrafWT]=3 mice, n[BrafV600E]=3 mice). Melanocytes are outlined with a blue box. (B) Subclustering of melanocytes (n\u00a0=\u00a0609) visualized on a tSNE plot. Four clusters were identified. (C) Visualization of melanocytes based on their genotype on a tSNE plot. (D) A heat map of genes involved in pigmentation. Each cluster expresses these genes at different levels. (E) Visualization of melanocytes, based on mouse age, on a tSNE plot. (F) Quantification of melanocytes in each cluster based on their genotype (BRAF wildtype or mutant).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/61026/elife-61026-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A)\u00a0Heat map depicting the average gene expression of canonical markers for known cell types found in the skin. (B) Using\u00a0gene expression of the indicated genes to identify cell-type clusters.\n\nMel 2 cells express the lowest levels of pigmentation genes (Figure 2D), and are seen in both genotypes (Figure 2C) at all stages (although expanded in number in nevus-bearing animals (Figure 2F)). Their pattern of gene expression bears a strong resemblance to one recently published for melanocyte stem cells isolated from telogen-stage hair follicles (Zhang et al., 2020). In particular, they express Cd34, which has been proposed to be a marker for bulge-associated melanocyte stem cells (Joshi et al., 2019).\n\nFinally, cells of cluster Mel 3, which express the highest levels of pigment genes (Figure 2D), are found in both mutant and wildtype mice, but only at the P30 time point (Figure 2E\u2013F). We thus identify them as mature hair follicle melanocytes, as such cells are present exclusively during anagen phase of the hair cycle (P30), and disappear during telogen (P50).\n\nBecause gene signatures are based on the idea of up- and downregulation of expression relative to some baseline state, to test whether nevus melanocytes fit a known signature it is necessary to have comparison transcriptomes. We made two types of comparisons: nevus melanocytes versus every other cell type in the skin (which, with the possible exception of mature keratinocytes, we would not expect to be senescent); and the four melanocyte subclusters (two of which are nevus-associated and two of which are not) versus each other. In each case we computed average expression for each gene in every cell type or cluster, together with a standard error of the mean as a measure of dispersion. Expression values were then normalized to average expression across all of the cells being compared (i.e. all skin cells, or all melanocytes, depending on which comparison was being done) and log2-transformed, so that positive values signify upregulation (relative to the average for that gene), and negative downregulation. Gene expression was then visualized using heat maps (Figure 3A and Figure 3\u2014figure supplements 1\u20132, with positive values in blue and negative in red). Because gene expression levels inferred from single-cell RNA sequencing tend to be noisy, particularly for genes with low expression, we ranked all genes by their minimum level of noise (i.e. normalized standard error of the mean in the least noisy cell type), and used this value (\u2018n-SEM\u2019, which is also presented graphically as a bar to the right of each heatmap) to sort gene lists, so that maps vary from most to least reliable as one goes from top to bottom.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/61026/elife-61026-fig3-v1.jpg)\n\n**Figure 3.:** Transcriptomes of clusters identified in Figure 2 were compared with proposed \u2018signatures\u2019 of senescence.( A) Gene expression data for clusters in Figure 2A and B were averaged by cluster and, for each gene, expressed as a ratio to the average expression level of that gene in the entire skin sample (\u2018Whole Skin\u2019) or just the melanocyte clusters (\u2018Melanocytes\u2019). The heat map displays the logarithm of that ratio, with blue representing upregulation and red downregulation, relative to the appropriate average. Two proposed signatures for genes upregulated in senescence (\u2018Classical\u2019 and \u2018Universal Up\u2019) are shown (For other signatures, see Figure 3\u2014figure supplement 1). Gene lists have been sorted by the minimum gene expression variability within the least variable cluster (green-brown bar). (B). The \u2018Classical\u2019 heatmaps in panel A are summarized as a bar graph displaying the sum of the log-transformed data. Also shown are summary results for a proposed signature of proliferation, \u2018meta-PCNA\u2019, which clearly distinguishes between cell types expected to be proliferative and non-proliferative (in normal skin). The \u2018Classical\u2019 senescence signature fails to identify nevus melanocytes (Mel 0 and Mel 1) as senescent, especially when compared with other cell types or other melanocytes. (C). Extension of the analysis in panel B to eight additional signatures.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/61026/elife-61026-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** The single-cell transcriptomes analyzed in Figure 3 were compared with each of the signatures in Source data 1. (A\u2013D) Summary (A\u2013C) and detailed (D) comparisons for the four melanocytes subclusters. (E\u2013F). detailed comparisons of all skin subclusters to all signatures not shown in Figure 3.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/61026/elife-61026-fig3-figsupp2-v1.jpg)\n\n**Figure 3\u2014figure supplement 2.:** As shown in Figure 3 and Figure 3\u2014figure supplement 1, Mel\u00a03 melanocytes score higher for expression of proliferation genes (meta-PCNA signature) that those of clusters Mel\u00a00 and Mel\u00a01. Here, cluster Mel\u00a03 was divided into wildtype and Braf-mutant subsets, and levels of meta-PCNA genes compared. The heat map is essentially the same as in panel D of Figure 3\u2014figure supplement 1, except three genes not expressed in cluster Mel\u00a03 were removed. As in Figure 3, genes have been sorted by minimum normalized standard error of the mean. Highest confidence assignments are at left, lowest at right. Bars show genes expression in wildtype (orange) and Braf-mutant (blue) cells (error bars are SEMs). No statistically significant differences are seen, although there is a slight trend toward lower expression in mutant (suggesting Braf activation might be associated with some inhibition of proliferation).\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/61026/elife-61026-fig3-figsupp3-v1.jpg)\n\n**Figure 3\u2014figure supplement 3.:** (A-B)\u00a0In the scatter plots, values on the abscissa are gene expression fold-change data from microarray data of Pawlikowski et al., 2013, comparing gene expression in cultured BrafV600E-transduced human melanocytes with mock-transduced human melanocytes. Log-transformed fold-change data from probe sets mapping to the same gene were averaged, and genes without clear mouse orthologs were discarded. Values on the ordinate are from the present study, comparing gene expression in nevus melanocyte from BrafV600E-expressing skin (Mel 0 and 1) with non-nevus melanocytes of either Mel 2 (panel A, putative melanocyte stem cells) or Mel 3 (panel B, hair follicle melanocytes) from wild-type skin. Each dot represents a single gene; in the right-hand plot of panel B, only genes that were found to be significantly different (adjusted p-value<0.05) between nevus melanocytes and Mel\u00a03\u00a0melanocytes are shown. Points at the very bottom or top of each plot represent genes that showed no detectable expression in either the nevus melanocytes, or the non-nevus melanocytes, respectively. Lines of best fit are shown, along with the coefficient of determination (R2). The small positive correlation in B is largely driven by points in the lower left quadrant. The shaded area in the right panel of B highlights 99 jointly-statistically significant genes that are substantially affected in this quadrant. (C) Sixteen of the genes associated with the shaded area in the right-hand panel of B are associated with cell proliferation (meta-PCNA signature; see Figure 3), while 19 are Mitf-target genes (as described by Hoek et al., 2008; Rambow et al., 2015; Tirosh et al., 2016). The remaining 64 are listed here. (D\u2013G) All plots are based on the left-hand plot in panel B, colored to highlight particular sets of genes. Panel D shows genes belonging to the meta-PCNA signature; the data imply that nevus cells and cultured BRAF-transformed melanocytes are both growth-inhibited. Panel E highlights Mitf (green) and Mitf-target genes (red). The data imply that Mitf and its targets are nearly all downregulated in BRAFV600E-transduced cultured melanocytes, but not in nevus melanocytes (compared with hair follicle melanocytes); instead, Mitf expression is little-changed, and only a subset of Mitf target genes is downregulated (these include melanin synthesis and melanosome biogenesis genes Gpr143, Mlana, Pmel, Slc45a2, Tyr and Tyrp1). Panel F highlights genes \u2018universally\u2019 associated with senescence (Hernandez-Segura et al., 2017; see Figure 3). The data show that the senescent phenotype of the cultured BRAFV600E-melanocytes is well captured by this signature, whereas the phenotype of nevus melanocytes is not. Panel G highlights those genes considered by Pawlikowski et al., 2013 to be SASP-associated, most of which are upregulated in BRAFV600E-transduced cultured melanocytes. A subset of these appears upregulated in nevus melanocytes (arrows), although the very high fold-change values of those genes marked by arrows simply reflect the fact that transcripts for these genes were not detected in hair follicle melanocytes.\n\nFigure 3A shows the results for the \u2018Classical\u2019 and \u2018Universal Up\u2019 signatures (heat maps for the other signatures are shown in Figure 3\u2014figure supplement 1). Here we see no strong enrichment of blue over red signals in nevus melanocytes, nor in most other cells. When compared with whole skin, using the \u2018Classical\u2019 signature, only Cdkn2a stands out as strongly upregulated in nevus melanocytes, but it is similarly upregulated in skin fibroblasts (it also has the noisiest data among genes in the signature). With the \u2018Universal Up\u2019 signature, more genes are downregulated than upregulated in nevus melanocytes. To quantify such impressions, we summed the log2-transformed data in each column in every heat map, producing the bar graphs in Figure 3B. We reasoned that summation of log-transformed data would emphasize consistent trends in the data while suppressing effects of noise (random positive and negative variation would tend to cancel out). The results suggest that skin fibroblasts better fit the \u2018Classical\u2019 senescent signature than any skin cell type, including nevus melanocytes, or indeed melanocytes of any cluster. As a control\u2014to demonstrate the ability of this approach to correctly associate cell types with gene signatures\u2014 we analyzed the same data using a signature of cell proliferation, \u2018meta-PCNA\u2019, that represents 129 human genes most positively correlated with proliferation marker PCNA in a compendium of normal tissues (Venet et al., 2011). As shown in Figure 3B (also see Figure 3\u2014figure supplement 1), this signature (122 genes of which had unambiguous mouse orthologs; Source data 1) identified two keratinocyte populations (\u2018IFE-cycling\u2019 and \u2018Outer Bulge 1\u2019) as highly proliferative (in agreement with Joost et al., 2020), and mature (postmitotic) keratinocytes as non-proliferative. Importantly, it also correctly identified nevus melanocytes as non-proliferative\u2014and other melanocytes as proliferative\u2014in agreement with Figure 1E\u2013F. Interestingly, the relatively high expression of proliferation-associated genes in non-nevus, hair follicle melanocytes (Mel 3) when compared with nevus melanocytes, was consistent between BrafV600E-expressing and control mice (Figure 3\u2014figure supplement 2), suggesting that tissue context plays a role in whether BrafV600E-expressing cells even arrest growth.\n\nFigure 3C and Figure 3\u2014figure supplement 1 extend this analysis to the remaining eight potential signatures of senescence (five consisting of genes that are upregulated; three of genes that are downregulated). In five of the eight cases, nevus melanocytes rank as less senescent than the average skin cell; in two of the cases nevus melanocytes are about average. In only one case (\u2018Chatsirisupachai Down\u2019) does nevus melanocyte gene expression go in the predicted direction for senescence. However, the Chatsirisupachai signatures had not been curated to remove genes associated simply with proliferation/quiescence (Chatsirisupachai et al., 2019), and inspection of the \u2018Chatsirisupachai Down\u2019 gene list shows that 61 of its 250 genes are shared with the 129-gene meta-PCNA signature; that\u00a0is it is more likely a signature of proliferation than \u2018non-senescence\u2019 (note the strong similarity between the \u2018Chatsirisupachai Down\u2019 bar graph in Figure 3C and the meta-PCNA graph in Figure 3B).\n\nTo confirm that the senescence-associated gene expression signatures used here truly could identify melanocytes that had become senescent, we also analyzed published data comparing gene expression in BRAFV600E-transduced and normal human melanocytes in culture, under conditions in which the former developed definitive morphological characteristics of senescence (Pawlikowski et al., 2013; see Figure 3\u2014figure supplement 3). Of the 23 \u2018Universal Down\u2019 signature genes, 15 were significantly differentially expressed, and 100% of these were decreased in expression. Of the 31 \u2018Universal Up\u2019 genes, 19 were significantly differentially expressed, and 84% of these were elevated in expression.\n\nTogether these data do not support the view that any sort of senescence\u2014oncogene-induced or otherwise\u2014is characteristic of nevus melanocytes and therefore a possible cause of their growth arrest.\n\n### Does a cell-autonomous process arrest nevi?\n\nAs discussed above, OIS is usually presented as a cell-autonomous process (e.g. Dankort et al., 2009; Dhomen et al., 2009; Michaloglou et al., 2005; Serrano et al., 1997). The simplest cell-autonomous process that one might imagine is a probabilistic switch: Once oncogene activation commences, cells arrest with a fixed probability (per time or per cell cycle). Regardless of the molecular details, such a model makes distinctive predictions about clonal dynamics.\n\nConsider the clonal descendants of a single oncogene-transformed founder cell. For any value of the per-cell-cycle senescence probability (which we denote here as \u2018s\u2019), how many cells should we expect that clone to contain at any given time? How many cell cycles should it take before all of the cells in most clones should have arrested? Such questions are well studied in mathematics (Athreya and Ney, 1972), and easily solved by computer simulation. For this particular problem, there are two key results (Figure 4).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/61026/elife-61026-fig4-v1.jpg)\n\n**Figure 4.:** (A-D)\u00a0Monte Carlo simulations were carried out in which a single-cell replicates and arrests with fixed probability, s, per cell cycle. (A) Cell cycles required before proliferation stops in 95% or 99% of simulations. (B) Mean cells at 30 cell cycles, and fraction of clones expected to have arrested by then. (C\u2013D) Clone (nevus) size distributions, after 30 cell cycles, assuming s\u00a0=\u00a00.56 (C), the probability required for 99% arrest, or 0.53 (D), the probability required for 95% arrest (see panel A). (E) Actual mouse nevus sizes at P21 (mice\u00a0=\u00a03, nevi\u00a0=\u00a0768). Dashed line shows median radius, 76.8 \u00b5m. (F\u2013I) Simulations in which proliferating cells arrest after multiple events (stages). (F) The value of s required to ensure arrest within 30 cell cycles, as a function of number of stages. (G\u2013H) Clone size distributions for two (G), or three (H) stages, assuming the lowest per-stage transition probability compatible with 99% arrest by 30 cell cycles (see panel C). (I) Median clone size for different numbers of stages (labeled above each graph), transition probabilities per stage (plotted on the abscissa), and thresholds below which clones are excluded from analysis. Each curve represents a different exclusion threshold (between 0 and 200 cells for 1\u20134 stages, and up to 1600 cells for 5\u20138 stages, as labeled). Curves change from solid to dashed where the observability threshold becomes inconsistent with the observations in panel E (in panel E the median nevus has\u00a0>3 times the area of the smallest observable nevi; in panel I the curves become dashed when median cell number is less than twice the observability threshold). Within the hatched region, fewer than 95% of clones arrest by 30 cell cycles. The thin line to right of the hatched region marks the probability at which 99% of clones arrest by 30 cell cycles. Solid gray demarcates median cell numbers between 100 and 3000 (see text). All results are from a minimum of 20,000 simulations.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/61026/elife-61026-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A-B)\u00a0Quantification of nest radii from\u00a0mice\u00a0treated with 75 mg/mL of tamoxifen at (A) P21 (mice\u00a0=\u00a010, nests\u00a0=\u00a0221) or (B) P50 (mice\u00a0=\u00a018 mice, nests\u00a0=\u00a0428). The black dashed line represents the medians of 20.2 and 21.4 \u00b5m, respectively. (C) Quantification of human nests. The black dashed line represents the median radius of 70 \u00b5m.\n\nFirst, the time after which one can expect clones to have stopped growing (e.g. when all cells will have arrested in, say, 95% or 99% of clones) is a steep function of s. If s\u00a0<\u00a00.5, (i.e. less than a 50% chance of arrest per cell cycle), then some clones will never stop growing. If s is, say, 0.53, all clones will eventually stop growing, but one must wait 51 cell cycles before 99% of them do so (Figure 4A). Given typical lengths of postnatal mammalian cell cycles, and the fact that we observe cessation of mouse nevus growth in about 2\u20133 weeks, we may consider 30 to be a generous estimate for the maximum number of cell cycles by which nevi stop growing. To achieve 99% clonal arrest by 30 cell cycles, s must be around 0.56 or higher; to achieve arrest in 95% of clones, s must be greater than 0.52 (Figure 4A).\n\nFrom the same simulations one may also calculate predicted distributions of clone sizes. There is a clear reciprocal relationship between mean clone size and the fraction of clones that arrest by 30 cell cycles of time (Figure 4B). For example, a value of s that enables 95% of clones to arrest produces a mean clone size of only 18.5 cells. For comparison, we estimate cell numbers per nevus to be in the range of 100\u20131000 cells (see Materials\u00a0and\u00a0methods).\n\nThe explanation for the small mean clone sizes produced by simulations can be appreciated by examining the full size distributions. As shown in Figure 4C\u2013D, such distributions are extremely heavy-tailed, with a very large number of very small clones and a small number of very large clones (the histograms in Figure 4C\u2013D are plotted with logarithmic abscissa to facilitate display of all clone sizes).\n\nQualitatively, this is very different from what we observed for nevi on the backs of p21 mice. Nevi displayed a mean radius of 76.8 \u00b5m (corresponding to an area of 0.019 mm2, in excellent agreement with the results of Damsky et al., 2015) and, when plotted on a logarithmic scale, individual radii displayed a Gaussian-like distribution (Figure 4E; a Gaussian shape on a logarithmic axis is usually referred to as \u2018log-normal\u2019). Interestingly, nest sizes (quantified by MPM) also seem to be log-normally distributed (Figure 4\u2014figure supplement 1) whether at P21 (panel A) or P50 (panel B). So are the nests within human melanocytic nevi, despite the latter being an order of magnitude larger than those in mice (Figure 4\u2014figure supplement 1C). It should be noted that using different units to represent simulation results (cell numbers) and empirical data (linear dimension) in Figure 4 and its supplement does not confound comparing the shapes of distributions, thanks to the logarithmic abscissa: as long as cell number scales as some power of linear dimension, values associated with log-transformed bins are simply scaled by a constant factor.\n\nThe above comparison of observed distributions with the results of computer simulation is not entirely fair, however: Simulations track all clones, no matter how small, whereas empirical distributions undoubtedly omit nevi with sizes below some threshold of observability. To correct for this, one can truncate simulated distributions to remove clones smaller than some threshold size. With no a priori way to know what threshold to use, we examined the entire range of plausible truncations (up to the largest clone sizes). As it turns out, the relative shapes of simulated distributions were about the same regardless of where they were truncated. The reason for this behavior can be understood by displaying simulated distributions (with bin sizes of one cell) on a log-log plot, and observing that they fall, over most clone size ranges, on a straight line (see Supplemental Material). This implies an approximately \u2018power law\u2019 relationship which, by definition, is scale-free, that\u00a0is has the same relative shape over any range of observations. In fact, for s reasonably close to 0.5, the approximate probability of observing any clone size can be shown analytically to vary inversely with the 3/2-power of size (for derivation, see Appendix 1).\n\nThese data imply that observed nevus size distributions cannot be generated by any cell-autonomous, random, time independent, one-step process. But they do not speak to whether a more complicated random process, for example, one with several steps, might suffice. To address this, one can simulate clonal evolution under multi-step models. Again, dynamic predictions can be made. First, to achieve clonal stopping times within 30 cell cycles, the minimum per-step transition probability increases with the number of steps (Figure 4F). For example, if it takes three random events to arrest growth in 99% of clones, the average probability of each event needs to be at least 0.66 per cell cycle; with five random events that number is 0.74.\n\nSecond, although distributions generated by such models still tend to be heavy-tailed (Figure 4G), they become less so as the number of steps increases (Figure 4H), gradually approaching something that looks log-normal. This makes mathematical sense: as per-cell-cycle probabilities approach unity, the system approaches a clock that simply ticks off a fixed number of cell cycles before stopping. A scenario in which all clones stop at roughly the same time, plus or minus some variation, necessarily produces a log-normal distribution, since the logarithm of cell size will be proportional to the number of cell divisions.\n\nTo determine how many independent steps would be required for a random cell-autonomous process to produce distributions that fit those we observed for nevi, we simulated up to eight random stages, over a variety of transition probabilities (Figure 4I). We subjected the results to a range of possible truncations, from 0 to 1600 cells, to mimic any observability cutoffs in the empirical data, and recorded the median clone sizes produced under each of these scenarios.\n\nAs described below (see Materials\u00a0and\u00a0methods), we estimate that the average nevus has about 500\u20131000 cells, but given possible errors in the estimate, we consider here a range of values between 100 and 3000 (gray-shaded area in Figure 4I). Subject to the constraint that enough clones must arrest within 30 cell cycles, and that observation thresholds cannot be so high that the observed median is less than twice the threshold, we find that, to produce nevi of even 200 cells requires 4\u20135 independent events (stages), depending on whether one requires 95% or 99% clonal arrest; to reach 500 cells requires 6\u20137 events. To reach even larger numbers\u2014as would be found in human nevi, or in other mouse models (Chai et al., 2014)\u2014would require even more stages.\n\n### Does a collective process arrest nevi?\n\nThe above results indicate that, to generate in vivo-like distributions of nevi, a process something like a clock is needed, with cells either counting elapsed divisions (or time) since oncogene activation, or progressing through a sufficiently large sequence of random processes, with tightly controlled probabilities, so that the net outcome is clock-like.\n\nCell-autonomous counting of cell cycles (up to about 12) can occur in early, cleavage-stage embryos (Tadros and Lipshitz, 2009), but no mechanism has been described to enable growing (as opposed to merely cleaving) cells to track more than a small handful of divisions (or the equivalent amount of time). Erosion of telomeres can mark the passage of large amounts of time in some cells, but this does not seem to occur to any significant degree in nevus melanocytes (Michaloglou et al., 2005).\n\nIn contrast, if growth arrest is not cell-autonomous, but driven by cell\u2013cell communication, then clock-like behavior is easily achieved, without any sort of intrinsic cell memory: Consider a simple communication circuit in which every cell\u2019s arrest probability is simply a monotonically increasing function of the number of cells around it that have already arrested (Figure 5A). This mechanism describes a dynamically well-understood feedback process that normal tissues use to control size (Lander, 2011; Lander et al., 2009). Termed \u2018renewal control\u2019 (Buzi et al., 2015), because differentiated cells control the probability that progenitor cells self-renew, the process is often mediated by secreted TGF-\u03b2 superfamily members such as myostatin, activin and GDF11 (Gokoffski et al., 2011; Lee et al., 2005). Because it implements the engineering principle of \u2018integral negative feedback\u2019, renewal control produces highly robust final population sizes that are independent of parameters such as cell cycle speed or the starting numbers of cells (Buzi et al., 2015; Lander, 2011; Lander et al., 2009).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/61026/elife-61026-fig5-v1.jpg)\n\n**Figure 5.:** (A)\u00a0A generic integral negative feedback scheme. \u2018Renewal probability\u2019, p, is the probability that offspring of cell division remain dividing (i.e. 1\u2212p is the probability that they arrest). (B) Clone sizes generated by 9115 stochastic simulations of scheme A, modeled as an ordinary differential equation, where p falls with the number of arrested cells according to a Hill function with half-maximal effect at 50 arrested cells. (C\u2013D) Results from a spatial (agent-based) simulation of scheme A, in which the signal from arrested cells spreads by diffusion. Histogram (C) tabulates clone sizes produced by 100 independent simulations (the histograms in both B and C are logarithmically-scaled to show that the data are well fit by log-normal distributions). Panels (D) are from a single simulation, showing locations of growing and arresting cells, and the gradient of the diffusible signal. Bar\u00a0=\u00a050 \u00b5m. The average cell cycle is equivalent to approximately 382 Monte Carlo time steps. (E\u2013F) Using spatial coordinates and areas of 122 nests in seven individual fields at P21, nests were modeled as disks of equivalent area, and mean sizes of neighboring nests falling within successively larger annuli around each target nest were determined. Distributions of mean neighbor sizes up to 45 \u00b5m away from (E) large (radius\u00a0>20 \u00b5m) and (F) small (radius\u00a0<20 \u00b5m) nests (histograms) are compared with a \u2018null distribution\u2019 derived by random permutation (blue fields). Arrows show deviations in neighbor size distribution greater than expected at random, and substantially different for large versus small nests.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/61026/elife-61026-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A\u2013B) The same nest size and location data were analyzed as in Figure 5E\u2013F, except that distributions of mean neighbor sizes up to 150 \u03bcm away from (A) large (radius\u00a0>20 \u03bcm) and (B) small (radius\u00a0<20 \u03bcm) nests (histograms) were included. As in Figure 5E\u2013F, observed distributions are compared with a \u2018null distribution\u2019 derived by random permutation (blue fields).\n\nWhen growth arrest due to renewal control is simulated as a probabilistic process (Figure 5B), the observed size distributions of clones are very close to log-normal. This is because renewal control effectively enforces cell cooperation, so that once a small fraction of a clone has arrested, the entire clone stops soon thereafter. The resulting narrow distribution of stopping times produces size distributions that are approximately log-normal, that\u00a0is that emulate a clock.\n\nThis behavior is a generic outcome of feedback control, and does not depend strongly on the details of how feedback is implemented. Similar distributions are obtained whether we model nevi as progressing reversibly or irreversibly through more than one proliferative stage, or use agent-based simulations in which renewal is controlled by the concentration of a secreted molecule that accumulates according to the laws of diffusion and local uptake (Figure 5C\u2013D). The point of these simulations is not to argue in favor of a specific feedback mechanism, but rather to show that, where cell-autonomous mechanisms of arrest struggle to fit nevus dynamics, almost any sort of (collective) feedback does so easily.\n\nAlthough nevus size distributions alone cannot shed light on the molecular details of how feedback might be implemented in nevi, it is interesting that those cells that we identify as nevus melanocytes (Figure 2) express multiple genes encoding ligands with known or suspected growth inhibitory activities, together with the receptors for those ligands. These include TGF\u03b2 superfamily members Gdf11, Gdf15, Tgfb1, Tgfb2, and Tgfb3, as well as other genes associated with growth inhibition, such as Angptl2, Angptl4, Il6, Sema3a, Sema3b, and Sema3f (Attisano and Wrana, 1996; Neufeld et al., 2016; Santulli, 2014).\n\nThe evaluation of such candidates (as well as other genes expressed at too low a level to be reliably detected by single-cell RNA sequencing) will no doubt require further study. In the meantime, we reasoned that any feedback mechanism based on secreted, diffusible factors should induce spatial correlations among clones. In particular, when clones (or subclones) get close enough to each other, they should inhibit each other\u2019s growth, leading to a smaller final size. The distance over which such effects could occur should reflect the spatial decay length of diffusible molecules in the skin, which is thought to be on the order of no more than a few hundred microns (Chen et al., 2015). Although our data on macroscopic nevi (Figure 1D), which had been collected in a manner that included spatial coordinates, did not contain enough examples of nevus spacings in this range to test this hypothesis, our data on the nests within individual nevi did, as the median spacing between nests at postnatal day 21 was approximately 79 microns.\n\nTo assess whether nests were significantly smaller when located near other nests (especially large ones), we extracted the coordinates and nest areas from seven separate fields at P21 (representing 122 individual nests) and, modeling each nest as a disk of equivalent area, calculated the mean sizes of neighboring nests falling within successively larger annuli around each target nest. We compared the distributions of mean neighbor sizes near the 52 smallest nests (radius\u00a0<20 \u00b5m) with the equivalent distributions around the 70 largest nests.\n\nAs shown in Figure 5E\u2013F, within annuli extending 45 \u00b5m away from the perimeters of target nests, we saw fewer examples of large neighbors (radius\u00a0>30 \u00b5m) around large nests (panel E) than around small ones (panel F). To determine whether the difference was statistically significant, we used a permutation test in which we randomly swapped nest areas (but not locations) within each field 5000 times, and recalculated the distributions. This allowed us to plot the envelope enclosing the 5th and 95th percentiles for permuted data, onto which we overlaid the observed data. Unlike the observed data, the envelopes of the permuted data (blue zones in Figure 5E\u2013F) look similar whether target nests are large or small. Moreover, the observed data extended outside of the envelopes only for median neighbor sizes\u00a0>\u00a030 \u00b5m, with the data for small target nevi extending well above the relevant envelope and the data for large target nevi lying at to the bottom of the envelope (Figure 5E\u2013F, arrows). These results argue that proximity is associated with a small, but significant decrease in nest size, supporting the view that nests inhibit each other\u2019s growth. Interestingly, when we repeated the same analysis using annulus sizes of 150 \u00b5m, differences in the sizes of neighbors of small and large nests were not seen, consistent with the view that whatever is promoting coordination among nests has a spatial range of\u00a0<150 \u00b5m (Figure 5\u2014figure supplement 1).\n\n## Discussion\n\nStudies in man, mouse and fish establish that most melanocytic nevi form by mutational activation of BRAF, which triggers proliferation followed by growth arrest (Damsky and Bosenberg, 2017; Dankort et al., 2009; Dhomen et al., 2009; Kaufman et al., 2016; Michaloglou et al., 2005; Patton et al., 2005; Shain and Bastian, 2016). Nevus growth is often considered a paradigmatic example of OIS, but here we question two of the major tenets of the OIS hypothesis: that nevus melanocytes are actually senescent; and that growth arrest is a direct effect of oncogene action on the individual cell.\n\nTo assess whether nevi are senescent, we used single-cell RNA sequencing in a mouse model of Braf-driven nevus formation, comparing gene expression of nevus melanocytes with that of other cell types. Across a wide variety of gene expression signatures, especially those developed to distinguish senescence from other growth-arrested cell states, we failed to find any evidence in support of the OIS hypothesis. By gene expression criteria, nevus melanocytes were less senescent than many other normal skin cells, including non-nevus melanocytes (Figure 3, and its supplements). These results support earlier work that also questioned, based on immunohistochemical staining of human nevi for markers including lysosomal \u03b2-galactosidase, Ki67, p16INK4a (CDKN2A), \u03b3-H2AX and p53, whether nevus melanocytes should be considered senescent (Tran et al., 2012). In agreement with other studies, we do find that Cdkn2A is highly expressed in nevus cells; it is in fact the only \u2018classical\u2019 senescence marker that clearly distinguishes nevus melanocytes from other melanocytes (Figure 3A). Yet, as others have shown, Cdkn2A is neither necessary nor sufficient for oncogene-mediated melanocyte growth arrest (Haferkamp et al., 2009; Zeng et al., 2018). Thus, to the extent that nevus melanocytes do execute even part of a common senescence program, there is little to support the view that this why they stop proliferating.\n\nAs for the question of exactly how Braf-induced nevus growth arrest occurs, Figure 6 presents a continuum of models: In model A, oncogene action elicits a cell-autonomous stress response which, after some time lag, triggers senescence that shuts proliferation down. This is the form in which the OIS hypothesis is most frequently presented.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/61026/elife-61026-fig6-v1.jpg)\n\n**Figure 6.:** Three different models of nevus growth arrest are presented, varying from classical OIS (A) to feedback control of proliferative cell renewal (C). The model in the middle panel (B) illustrates a hypothetical hybrid situation, in which paracrine effects of senescence-associated secreted proteins (SASP) act as inhibitors of melanocyte self-renewal. Although model B can mimic some of the dynamic behaviors of model C, in the absence of convincing evidence that nevus melanocytes actually are senescent, we favor model C.\n\nIn model C, growth\u00a0arrest is not a direct effect of oncogene action, but rather a consequence of growth itself. This type of feedback is commonly used by adult tissues to maintain constant size, and also enables developing tissues to produce precise numbers of differentiated cells (Kunche et al., 2016; Lander, 2011; Lander et al., 2009). Because of the collective nature of this mechanism\u2014cells that have stopped dividing tell other cells in their vicinity to do likewise\u2014it naturally produces semi-synchronous arrest of spatially-coherent cell clones, and the distinctive log-normal clone size distribution that comes along with that. In contrast, a purely cell-autonomous mechanism (panel A) has great difficulty producing such distributions (Figure 4), either necessitating the operation of some kind of multi-cell-cycle clock, or requiring cells to complete a long sequence of independent probabilistic events prior to arresting (Figure 4).\n\nOne can, of course, build a model in between these two extremes (model B), in which oncogenes induce growth arrest directly, but paracrine signals (i.e. SASP factors) help maintain it. If the paracrine role is important enough, this mechanism might also produce clone size distributions that are approximately log-normal, so we cannot categorically rule this model out. However, our gene expression data do not support any versions of it that have been explicitly proposed for nevi. So far, several groups (working predominantly from in vitro observations) have claimed a critical role for SASP factors in melanocyte OIS: Wajapeyee et al., 2008 argued that IGFBP7 plays a necessary role in the establishment of BRAF-V600E-induced melanocyte senescence (a conclusion disputed by some [Scurr et al., 2010]); Feuerer et al., 2019 proposed that MIA (melanoma inhibitory activity) secreted by senescent melanocytes is required to maintain senescence; and Damsky and Bosenberg have proposed that IL1, IL6, IL8 (encoded in mouse by Cxcl15), and type 1 interferons produced by nevus cells play a role in their arrest (Damsky and Bosenberg, 2017).\n\nOur in vivo data do not support any of these hypotheses. For example, we observed that the vast majority of Igfbp7 transcripts are produced by fibroblasts and endothelial cells and that, among melanocytes, nevus melanocytes express lower levels of Igfbp7 than non-nevus melanocytes. We did not detect any Mia transcripts in nevus melanocytes, although it was expressed at detectable levels in non-nevus melanocytes and various other skin cells. Likewise, of Il1 family members, only Il1a transcripts were detected in nevus melanocytes and they were at levels lower than in many other skin cell types. Il6 was also only weakly expressed in nevus melanocytes, especially when compared with other cells. Transcripts for type one interferons were not detected in any melanocytic cells, and Cxcl15 transcripts were not detected in any skin cells at all.\n\nOf course, the accuracy of single-cell RNA sequencing can be limited for weakly expressed genes, so we cannot completely eliminate the possibility that these factors play some role in nevus growth arrest. But given these results, and the evidence that nevus melanocytes are not senescent, we strongly favor the renewal-feedback model (model C). Adopting this model also makes it easier to accommodate long-standing evidence that nevus growth arrest is not permanent (Shain and Bastian, 2016). For example, it is known that nevi may exhibit a low level of mitoses (Glatz et al., 2010); that they can grow in response to stimuli such as UV light (Rudolph et al., 1998) or immunosuppression (Shain and Bastian, 2016) and, perhaps most tellingly, they can re-grow after incomplete surgical resection\u2014stopping again when they reach a typical nevus size (Vilain et al., 2016). The latter result is inherently problematic for any non-feedback model, but is precisely what renewal feedback predicts (Lander, 2011; Lander et al., 2009).\n\nBecause feedback control of renewal implements a generic strategy (integral negative feedback [Lander, 2011]), it places no constraints on the molecular details of feedback, short of the fact that whatever is mediating it needs to rise with the number of cells already arrested. One possibility is that nevi are responding to some of the same signals that are used in melanocyte homeostasis. For instance, during anagen phase of the hair cycle, melanocyte stem cells produce progeny that migrate out of the hair follicle bulge as they differentiate, leaving functional stem cells behind for future cycles. A variety of experimental and pathological circumstances that allow small numbers of melanocytes to differentiate within the bulge cause differentiation and loss of the entire stem cell pool (with concomitant hair graying [Nishimura et al., 2005]). This sort of behavior\u2014where differentiated cells drive the differentiation of their progenitors\u2014is exactly the sort of behavior that drives feedback models of renewal (Buzi et al., 2015; Lander, 2011; Lander et al., 2009).\n\nNevi are but one of many types of benign, clonal, proliferative lesions that arise due to the activation of oncogenes, but rarely if ever progress to malignancy (Adashek et al., 2020). Notwithstanding the disruptive influence that oncogenes can have on cell physiology, the existence of such lesions suggest that homeostatic mechanisms persist and function at many stages along the road to cancer. New avenues for cancer prevention and treatment are likely to follow from the detailed elucidation of such mechanisms.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Gene (Mus musculus)</td>\n      <td>Braf</td>\n      <td>Mouse Genome Informatics (MGI)</td>\n      <td>MGI:88190</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Gene (M. musculus)</td>\n      <td>Tyr::CreER</td>\n      <td>MGI</td>\n      <td>MGI:3641203</td>\n      <td>MGI Transgene name: GeneTg(Tyr-cre/ERT2)13Bos</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (M. musculus)</td>\n      <td>B6.Cg-Tg(Tyr-cre/ERT2)13Bos Braftm1Mmcm /BosJ</td>\n      <td>Dankort et al., 2009</td>\n      <td>RRID:MGI:5902125</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-Pmel (rabbit monoclonal)</td>\n      <td>Abcam</td>\n      <td>Cat#ab137078 RRID:AB_2732921</td>\n      <td>Also known as anti-melanoma gp100 IF (1:500)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-BrdU (rat monoclonal)</td>\n      <td>Abcam</td>\n      <td>Cat#ab6326 RRID:AB_305426</td>\n      <td>IF (1:500)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Goat anti-rabbit alexa fluor 594 conjugated (polyclonal)</td>\n      <td>ThermoFisher Scientific</td>\n      <td>Cat#A-11012 RRID:AB_2534079</td>\n      <td>(1:2000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Chicken anti-rat alexa fluor 488 (polyclonal)</td>\n      <td>ThermoFisher Scientific</td>\n      <td>Cat#A-21470 RRIB:AB_2535873</td>\n      <td>(1:2000)</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Braf_F</td>\n      <td>IDT</td>\n      <td>PCR primer</td>\n      <td>5\u2019-TGAGTATTTTTGTGGCAACTGC \u22123\u2019</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Braf_R</td>\n      <td>IDT</td>\n      <td>PCR primer</td>\n      <td>5\u2019-CTCTGCTGGGAAAGCGCC \u22123\u2019</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Cre_F</td>\n      <td>IDT</td>\n      <td>PCR primer</td>\n      <td>5\u2019- GGTGTCCAATTTACTGACCGTACA-3\u2019</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Cre_R</td>\n      <td>IDT</td>\n      <td>PCR primer</td>\n      <td>5\u2019- CGGATCCGCCGCATAACCAGTG \u22123\u2019</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>4-hydroxytamoxifen</td>\n      <td>Sigma-Aldrich</td>\n      <td>Cat#68047-06-3</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>TrueBlack lipofuscin</td>\n      <td>Biotium</td>\n      <td>Cat#23007</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Mathematica</td>\n      <td>Wolfram</td>\n      <td>RRID:SCR_014448</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Scanpy</td>\n      <td>Wolf et al., 2018</td>\n      <td>RRID:SCR_018139</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Cell Ranger</td>\n      <td>10X genomics</td>\n      <td>RRID:SCR_017344</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>CompuCell3D</td>\n      <td>Swat et al., 2012</td>\n      <td>RRID:SCR_003052</td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### Mouse treatment for nevus development\n\nBrafV600E, Tyr-CreER (C56BL/6) mice (RRID:MGI:5902125) were genotyped by PCR as previously described (Bosenberg et al., 2006; Dankort et al., 2007). The primers used in this study are: Braf forward 5\u2019-TGAGTATTTTTGTGGCAACTGC \u22123\u2019, Braf reverse 5\u2019-CTCTGCTGGGAAAGCGCC \u22123\u2019, Cre forward 5\u2019- GGTGTCCAATTTACTGACCGTACA-3\u2019 and Cre reverse 5\u2019- CGGATCCGCCGCATAACCAGTG \u22123\u2019. Topical administration of 4-hydroxytamoxifen (4-OHT; 25 mg/mL or 75 mg/mL in DMSO; 98% Z-isomer, Sigma-Aldrich) was administered to pups on their back and/or paws at ages P2, P3, and P4. Images of nevi on back and paw skin were taken with a digital camera at the indicated ages. Nevi from the underside of the skin were imaged using a dissection microscope. All mouse procedures were approved by UCI\u2019s IACUC.\n\n### Live imaging of the skin by MPM\n\nMice were sedated, shaved, and depilated with wax strips at the indicated ages (during a telogen phase) and the dorsal skin was imaged to capture the intrinsic fluorescent signal from keratin, melanin, as well as the second-harmonic-generation signal from collagen, using the LSM 510 NLO Zeiss system. Excitation was achieved with a femtosecond Titanium: Sapphire (Chameleon-Ultra, Coherent) laser at 900 nm. Emission was detected at 390\u2013465 nm for second harmonic generation (blue) and 500\u2013550 nm (green) and 565\u2013650 (red) for fluorescence.\n\n### In vivo labeling with BrdU\n\nBrdU was prepared in sterile PBS at 10 mg/mL and injected intraperitoneally into mice that were 20 days old at 100 mg/kg of body weight. 24 hr later the mouse was shaved, depilated with wax strips and the skin was removed and fixed in 10% formalin for 16 hr.\n\n### Immunofluorescence\n\nFormalin fixed paraffin embedded skins were sectioned 8 \u00b5m thick, deparaffinized with Xylene, and dehydrated in a series of increasing concentration of ethanol washes. Antigen retrieval was performed with 10 mM citric acid buffer at pH 6.0 for 10 min in a steamer. Samples were washed with PBS, incubated with TrueBlack for 30 s to reduce autofluorescence, and washed again with PBS. All antibodies were diluted at a 1:500 and incubated overnight at 4\u00b0C. Samples were washed and incubated with the appropriate secondary antibody. Melanocytes were identified with a Pmel antibody (EP4863(2); ab137078, Abcam; RRID:AB_2732921). Cells that incorporated BrdU were visualized with a BrdU antibody (ab6326, Abcam; RRID:AB_305426).\n\n### Cell isolation for single-cell RNA sequencing\n\nBrafWT, Tyr-CreER or BrafV600E, Tyr-CreER mice were euthanized at either P30 (n\u00a0=\u00a02 of each genotype) or P50 (n\u00a0=\u00a03 of each genotype), shaved, and depilated. A 2 \u00d7 3 cm section of the dorsal skin was removed, and the fat scraped off from the underside. The piece was then diced into smaller pieces and suspended in dissociation buffer (RPMI, liberase 0.25 mg/mL, Hepes 23.2 mM, Sodium Pyruvate 2.32 mM, Collagenase:Dispase 1 mg/mL) for 50 min at 37\u00b0C with gentle agitation. After incubation, DNaseI (232U) was added for 10 min and then inactivated with fetal bovine serum and EDTA (1 mM). The tissue suspension was further dissociated mechanically with the GentleMACS using the setting m_imptumor_04.01, which runs for 37 s at various speeds. Single-cell suspensions were filtered twice through a 70 \u00b5m strainer and dead cells removed by centrifugation at 300 x g for 15 min. The live cells were washed with 0.04% UltraPure BSA:PBS buffer, gently re-suspended in the same buffer, and counted using trypan blue.\n\n### Library preparation for single-cell RNA sequencing and analysis\n\nLibraries were prepared using the Chromium Single Cell 3\u2019 v2 protocol (10X Genomics). Briefly, individual cells and gel beads were encapsulated in oil droplets where cells were lysed and mRNA was reverse transcribed to 10X barcoded cDNA. Adapters were ligated to the cDNA followed by the addition of the sample index. Prepared libraries were sequenced using paired end 100 cycles chemistry for the Illumina HiSeq 4000. FASTQ files were generated from Illumina\u2019s binary base call raw output with Cell Ranger\u2019s (v2.1.0; RRID:SCR_017344) `cellranger mkfastq` command and the count matrix for each sample was produced with `cellranger count`. All ten samples (four samples from P30 [two control (wild type) and two mutant] and six samples from P50 [three control and three mutant]) were aggregated together with the `cellranger aggr` command to produce one count matrix that includes all samples. Data analysis was performed with Scanpy [v1.3.6; RRID:SCR_018139] (Wolf et al., 2018). Cells with fewer than 200 detected genes, and genes detected in less than three cells, were discarded. We calculated the percent mitochondrial gene expression and kept cells with less than 13% mitochondrial gene expression, and cells with fewer than 4000 genes/cell (35,141 cells). Each cell was normalized to total counts over all genes. In the final preprocessing step, we regressed out cell-cell variation driven by mitochondrial gene expression and the number of detected UMI. To identify clusters, we first performed principal component analysis on log-transformed data, using highly variable genes, Louvain clustering (Levine et al., 2015), and visualization with t-distributed stochastic neighbor embedding (tSNE).\n\n### Quantification of nevus and nest size and cell content\n\nTo quantify the sizes of nevi in mice, dorsal skin was excised and the underside visualized using a dissecting microscope. Nevi were traced, and area calculated using ImageJ. Nest sizes were quantified in live mice by MPM. Sizes of human nests were measured from histological samples (n\u00a0=\u00a05) obtained from the UCI Department of Dermatology. Samples were stained with hematoxylin and eosin and imaged with a microscope. A dermatologist manually identified the nests on each slide, and nest area was quantified using ImageJ. Human studies were performed under IRB protocol HS# 2019\u20135054.\n\nEstimates of cell numbers for mouse nevi were obtained in two different ways: First, we used estimates from\u00a0Chai et al., 2014 for melanocytic nuclei per square area of mouse nevus, together with our observed median nevus radius of 76.8 \u00b5m; this approach led to an estimate of 897 cells/nevus. As the data of Chai et al., 2014\u00a0come from a different genetic model, we also estimated cell number as follows: Using 8 \u00b5m sections of back skin from Albino BrafV600E mice, we used fluorescence microscopy to measure the sizes of 194 Pmel-stained melanocytes within the nests of nevi, obtaining an average cell diameter of 5.68 \u00b5m, and counted approximately 14.4 cells per 104 \u00b5m3 of nest. In pigmented animals, we measured by MPM an average nest cross sectional area of 1385 \u00b5m2, an average nest volume of 38792 \u00b5m3, and an average number of nests per nevi of approximately 12, yielding an estimate of 672 cells/nevus. Given uncertainties in these measures, analyses in the manuscript take into account the possibility of an average that falls anywhere between 100 and 1000 cells.\n\n### Simulations and agent-based modeling\n\nStochastic, non-spatial simulations of renewal control were obtained by Monte Carlo simulation, in which cells duplicated every cell cycle, and then chose randomly whether to differentiate or continue dividing according to a probability modified by feedback from non-dividing cells. A Hill function, with Hill coefficient\u00a0=\u00a01, was used to represent the feedback.\n\nTo model feedback in a spatial context, we used CompuCell3D (RRID:SCR_003052), an open-source platform for Cellular Potts modeling (Swat et al., 2012). In CPM, every generalized object or \u2018cell\u2019 is associated with a list of attributes such as cell type, surface area, volume, etc. These enter into the calculation of an effective energy, which can be summarized as the sum of the contact energy between neighboring cells and the effective energy due to volume constraints.\n\nSimulations were initialized by seeding a single cell, with a size of 25 pixel2, in the center of a 300 \u00d7 300 pixel lattice, which grew and divided according to rules and parameters summarized in Source data 2. To add variability to cell growth, cells randomly chose one of three different growth rates after every cell division. To add variability to cell division times, cells randomly chose a target area, between 72 and 80 pixel2, at which to divide. Growth rates were chosen to be sufficiently slow that the mean time between cell divisions came out to approximately 382 time steps. At division, each cell was divided in half by a randomly-oriented division plane.\n\nUpon division, a cell either remained dividing or became permanently arrested. All cells had a minimum 1% probability of arrest per cell division. Once an arrested cell was generated, it began continuous secretion of a signaling molecule that diffuses and promotes the transition from dividing to non-dividing (Kunche et al., 2016). Diffusion and decay of the feedback factor was modeled deterministically, with parameters chosen to produce a steady state decay length of 15 pixels. The concentration of this factor at the center of mass of each cell then augmented the arrest probability of that cell by an amount determined by a Hill function (see Source data 2).\n\n### Statistical analysis\n\nStatistical analyses for single-cell RNA sequencing were performed using Scanpy (RRID:SCR_018139). Other statistical testing was done using Mathematica (RRID:SCR_014448). For the spatial analysis in Figure 5E\u2013F, nest areas in each field were randomly swapped, with positions held constant, 5000 times, and the distributions of neighboring nest locations and sizes recalculated each time. This allowed us to generate an envelope enclosing the 5th and 95th percentiles for the permuted data, at each target nest size, and compare the observed data with the bounds of that envelope.\n",
+      "created_at": "2025-12-02T20:32:06.600061Z"
+    },
+    {
+      "id": "aa93129a-3723-4bee-8b14-120f8f44b047",
+      "submission_id": "9a085c70-6fa0-4d3e-9086-43473d1135d0",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- C Daniela Robles-Espinoza, International Laboratory for Human Genome Research Mexico\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.61026.sa1](https://doi.org/10.7554/eLife.61026.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nIn this elegant manuscript, Ruiz-Vega and collaborators test the generally accepted hypothesis that nevi are growth-arrested due to oncogene-induced senescence, which is a cell-autonomous process thought to be triggered by the oncogenic mutation BRAF V600E, present in the majority of nevi. They analyse single-cell transcriptome data from mice nevi and do not find any evidence of these cells being senescent. Rather, and showing great creativity, they find through the use of mathematical models that the distribution of nevi sizes is better explained by cooperative mechanisms, of the kind used in size control of normal tissues.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Dynamics of nevus development implicate cell cooperation in the growth arrest of transformed melanocytes\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Richard White as the Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Peter Adams (Reviewer #1); Mariana G\u00f3mez-Schiavon (Reviewer #2); Heinz Arnheiter (Reviewer #3).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nWe would like to draw your attention to changes in our revision policy that we have made in response to COVID-19 (https://elifesciences.org/articles/57162). Specifically, we are asking editors to accept without delay manuscripts, like yours, that they judge can stand as eLife papers without additional data, even if they feel that they would make the manuscript stronger. Thus the revisions requested below only address clarity and presentation.\n\nIn this manuscript, the authors present evidence that benign nevi do not simply reflect oncogene-induced senescence. The authors propose, based on single cell RNA-seq of BRAF oncogene-expressing mouse melanocytes from mouse skin, that nevus growth arrest is more likely related to the cell interactions that mediate size control in normal tissues, than to any cell-autonomous, \"oncogene-induced\" program of senescence. Then, the authors propose a basic integral feedback control as the underlying mechanism behind nevi growth regulation. The editors and reviewers consider that this manuscript is exquisitely done, clear and convincing, and an important contribution to an important topic. As the authors note, the prevailing dogma is that nevus melanocytes are senescent.\n\nAll issues raised by the reviewers can be considered minor, and are listed below.\n\n1) About the concept behind the paper:\n\nThe reviewers highlight two conceptual questions that would be in need of an answer:\n\na) what are the suggested mechanisms leading to growth arrest of the first cells in a clone? If this were due to some probabilistic event that, however, still depended on oncogene activation, would that not favor the hybrid model B (at least for these initial cells) rather than the authors' preferred model C?\n\nb) While the model is clearly exclusively or nearly exclusively cell non-autonomous, it is still nevus-autonomous. The authors argue that the OIS model is mostly based on in vitro observations, but should a nevus-autonomous model not also be reproducible in vitro? If it were not, then one would have to invoke an influence of the nevus microenvironment, which would leave room for, among other factors, a senescence-associated program generated by the surrounding cells.\n\nWhat would be the authors' opinion on these two points?\n\n2) Regarding the single-cell RNAseq data:\n\na) The authors show data to indicate that BRAF-expressing nevi are no-proliferating, compared to WT hair follicle melanocytes. What about BRAF-expressing melanocytes in hair follicles? Does the system permit an analysis?\n\nb) The authors compare their single cell RNA-seq data to many different senescence datasets and signatures \u2013 but most of these are from fibroblasts, including Hernandez-Segura et al., 2017. However, Pawlikowski et al., 2013, reported gene expression profiling specifically in primary human melanocytes expressing activated BRAF. Can a comparison to the dataset in this paper be made, as it is judged to be better suited?\n\n3) Regarding the mathematical model:\n\na) When the authors are exploring the hypothesis of the multiple stages for a cell-autonomous growth arrest (on Figure 4 legend, and in the Results), the authors use \"observation thresholds cannot be so high that the observed median is less than twice the threshold\" as an argument to reject some models with few stages. Can you please explain what the logic is behind this restriction? What are the implications?\n\nb) On Figure 4C-D, a reviewer found it difficult to compare the two models. Can you please explain what the intended message is? It might be clearer if the two distributions are overlapped.\n\nc) A reviewer thought that Figure 4I and its legend are confusing. Particularly, the sentence \"Curves become dashed at the point where the observability threshold exceeds 50% of the median cell number\" is unclear. The main text does a better job explaining it, but the figure panel and legend can be improved. Can this be clarified, please?\n\nd) The authors refer to the number of \"Monte Carlo time steps\" in Figure 5 and supplementary information. Can the authors please explain how this is meaningful? Why is this number relevant? A reviewer writes, \"The actual kinetic parameter values can have implications on the system behavior when stochasticity is considered, and these parameters being congruent with the expected cell cycle length is relevant. Nevertheless, the relevance of the Monte Carlo time steps on the simulations isn't clear to me.\"\n\ne) The authors say \"repeated the same analysis using annulus sizes of 150 \u00b5m, differences in the sizes of neighbors of small and large nests were not seen.\" Can you please include these results in the supplementary material?\n",
+      "created_at": "2025-12-02T20:32:06.600061Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T20:32:06.600061Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T20:32:06.600061Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "fcbe6ffb-87dd-404d-a8e4-b55c87a1c16d",
+      "content_id": "344fd1d3-98a1-434b-bcc4-d4b98e03f24a",
+      "claim_id": "C1",
+      "claim": "Activating BRAF mutations (e.g. BRAFV600E) are the most common oncogenic mutations in melanoma, seen in about 66% of cases.",
+      "claim_type": "EXPLICIT",
+      "source": "Activating BRAF mutations (e.g. BRAFV600E) are the most common oncogenic mutations in melanoma, seen in about 66% of cases (Davies et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Davies et al., 2002",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:32:06.600061Z"
+    },
+    {
+      "id": "bbe3d2b5-1c5e-4672-85af-347d2d074a3b",
+      "content_id": "344fd1d3-98a1-434b-bcc4-d4b98e03f24a",
+      "claim_id": "C2",
+      "claim": "The BRAFV600E mutation is found in 89% of melanocytic nevi.",
+      "claim_type": "EXPLICIT",
+      "source": "Curiously, the same mutation is found in 89% of melanocytic nevi (Pollock et al., 2003)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Pollock et al., 2003",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:32:06.600061Z"
+    },
+    {
+      "id": "d9aa47a2-6ade-4111-b2f9-c97d45be2460",
+      "content_id": "344fd1d3-98a1-434b-bcc4-d4b98e03f24a",
+      "claim_id": "C3",
+      "claim": "Melanocyte-specific expression of BRAFV600E efficiently produces nevi, but only very rarely melanoma in animal studies.",
+      "claim_type": "EXPLICIT",
+      "source": "In animal studies, melanocyte-specific expression of BRAFV600E efficiently produces nevi, but only very rarely melanoma (Dankort et al., 2009; Dhomen et al., 2009; Patton et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to multiple animal studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:32:06.600061Z"
+    },
+    {
+      "id": "f66477c6-5667-4d2e-abbf-d2141b81887d",
+      "content_id": "344fd1d3-98a1-434b-bcc4-d4b98e03f24a",
+      "claim_id": "C4",
+      "claim": "The widely-accepted explanation for nevus growth arrest is that transformed melanocytes undergo oncogene-induced senescence (OIS).",
+      "claim_type": "EXPLICIT",
+      "source": "The widely-accepted explanation is that transformed melanocytes undergo oncogene-induced senescence (OIS), arresting proliferation before additional oncogenic events can occur (e.g. Bennett, 2003; Huang et al., 2017; Kaplon et al., 2014; Michaloglou et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations to literature",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:32:06.600061Z"
+    },
+    {
+      "id": "c258432d-e470-418d-9fe1-6d62103c73ca",
+      "content_id": "344fd1d3-98a1-434b-bcc4-d4b98e03f24a",
+      "claim_id": "C5",
+      "claim": "Nevus melanocytes are growth-arrested.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevus melanocytes are indeed growth-arrested, but the assumption that OIS is the cause remains untested, in part because of a lack of criteria to rigorously define OIS in vivo (Damsky and Bosenberg, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as established fact with citation",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:32:06.600061Z"
+    },
+    {
+      "id": "450a13a5-e55a-4728-9896-4c8fe99bdab9",
+      "content_id": "344fd1d3-98a1-434b-bcc4-d4b98e03f24a",
+      "claim_id": "C6",
+      "claim": "No single hallmark distinguishes senescence from other growth-arrested cell states.",
+      "claim_type": "EXPLICIT",
+      "source": "Yet no single hallmark distinguishes senescence from other growth-arrested cell states.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established knowledge about senescence markers",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:32:06.600061Z"
+    },
+    {
+      "id": "7c44e0f6-0371-4b51-be85-1562d01be2b4",
+      "content_id": "344fd1d3-98a1-434b-bcc4-d4b98e03f24a",
+      "claim_id": "C7",
+      "claim": "Phenotypes once thought to be 'gold standards' for senescence, such as expression of lysosomal beta-galactosidase, cyclin-dependent kinase inhibitors, or p53, commonly mark only subsets of senescent cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Phenotypes once thought to be 'gold standards', such as expression of lysosomal beta-galactosidase, cyclin-dependent kinase inhibitors, or p53, commonly mark only subsets of senescent cells (Wiley et al., 2017), as well as non-senescent cells (Tran et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Wiley et al., 2017 and Tran et al., 2012",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:32:06.600061Z"
+    },
+    {
+      "id": "ed6df44b-78fc-463e-9617-2da78db93ad9",
+      "content_id": "344fd1d3-98a1-434b-bcc4-d4b98e03f24a",
+      "claim_id": "C8",
+      "claim": "Observations of supposedly senescent cells resuming proliferation imply that permanent cell cycle exit cannot be used as a distinguishing feature of senescence.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, observations of supposedly senescent cells resuming proliferation (e.g. Beaus\u00e9jour et al., 2003), imply that permanent cell cycle exit cannot be used as a distinguishing feature.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on cited observations",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:32:06.600061Z"
+    },
+    {
+      "id": "266483ce-b222-4f6b-a71e-ea6a8a4a65c2",
+      "content_id": "344fd1d3-98a1-434b-bcc4-d4b98e03f24a",
+      "claim_id": "C9",
+      "claim": "In mice whose back skin was treated with topical 4-OHT at postnatal day 2 (P2), P3 and P4, nevi were apparent macroscopically at telogen (P50).",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 1, in mice whose back skin was treated with topical 4-OHT at postnatal day 2 (P2), P3 and P4, nevi were apparent macroscopically at telogen (P50; Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 1A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:32:06.600061Z"
+    },
+    {
+      "id": "905b2372-6893-4f43-a82a-3b535d50d238",
+      "content_id": "344fd1d3-98a1-434b-bcc4-d4b98e03f24a",
+      "claim_id": "C10",
+      "claim": "Mouse nevi consist of scattered nests of pigment-containing cells, like human nevi.",
+      "claim_type": "EXPLICIT",
+      "source": "Live imaging, using multi-photon microscopy (MPM; Saager et al., 2015), revealed that, like human nevi, mouse nevi consist of scattered nests of pigment-containing cells (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by imaging data in Figure 1B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:32:06.600061Z"
+    },
+    {
+      "id": "abf6f915-758b-4e67-aeed-a6f7c3c3190d",
+      "content_id": "344fd1d3-98a1-434b-bcc4-d4b98e03f24a",
+      "claim_id": "C11",
+      "claim": "When forepaws were treated with 4-OHT from P2 through P4, tiny nevi could be detected as early as P6.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 1D, when forepaws were treated with 4-OHT from P2 through P4, tiny nevi could be detected as early as P6.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental observations shown in Figure 1D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:32:06.600061Z"
+    },
+    {
+      "id": "1d0b2fc8-6f18-4c3a-9c3a-67336d509b48",
+      "content_id": "344fd1d3-98a1-434b-bcc4-d4b98e03f24a",
+      "claim_id": "C12",
+      "claim": "Most nevi reach a maximum size somewhere between P16 and P21.",
+      "claim_type": "EXPLICIT",
+      "source": "Serial observation indicated that most nevi reach a maximum size somewhere between P16 and P21 (Figure 1D , Figure 1\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by serial observation data shown in figures",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:32:06.600061Z"
+    },
+    {
+      "id": "0c548938-97cd-4c1f-bd88-9120c40173e1",
+      "content_id": "344fd1d3-98a1-434b-bcc4-d4b98e03f24a",
+      "claim_id": "C13",
+      "claim": "In the mouse, BrafV600E-transformed melanocytes arrest within 2\u20133 weeks.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that, in the mouse, BrafV600E-transformed melanocytes arrest within 2\u20133 weeks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from the observation that nevi reach maximum size between P16 and P21",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:32:06.600061Z"
+    },
+    {
+      "id": "bf5e2337-a087-4cf0-a425-d4f734a40187",
+      "content_id": "344fd1d3-98a1-434b-bcc4-d4b98e03f24a",
+      "claim_id": "C14",
+      "claim": "By P21, nests within nevi were uniformly negative for BrdU, implying growth arrest.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 1F, albino mice generate nests similar to those seen in pigmented mice. In such animals, BrdU readily incorporated into hair follicle melanocytes (Figure 1E, Figure 1\u2014figure supplement 1B), whereas by p21 nests within nevi were uniformly negative for BrdU, implying growth arrest (Figure 1F, Figure 1\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by BrdU labeling data shown in figures",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:32:06.600061Z"
+    },
+    {
+      "id": "68f14e7c-0a09-4480-891f-af8deb0ec374",
+      "content_id": "344fd1d3-98a1-434b-bcc4-d4b98e03f24a",
+      "claim_id": "C15",
+      "claim": "Braf-induced nevi are already growth-arrested by P21.",
+      "claim_type": "EXPLICIT",
+      "source": "The conclusion that Braf-induced nevi are already growth-arrested by P21 agrees with the reports of others (Damsky and Bosenberg, 2017)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data and citation",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:32:06.600061Z"
+    },
+    {
+      "id": "1cf29f13-2840-4afc-b1ec-18d727ee434a",
+      "content_id": "344fd1d3-98a1-434b-bcc4-d4b98e03f24a",
+      "claim_id": "C16",
+      "claim": "Nest size distributions change insignificantly between P21 and P50.",
+      "claim_type": "EXPLICIT",
+      "source": "and is lent further support by time course measurements of nest size by MPM (Figure 1C), which show that nest size distributions change insignificantly between P21 and P50 (Figure 4\u2014figure supplement 1A-B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by time course measurements shown in figures",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:32:06.600061Z"
+    },
+    {
+      "id": "3c3564fa-d461-4c93-9245-99270a28d2a7",
+      "content_id": "344fd1d3-98a1-434b-bcc4-d4b98e03f24a",
+      "claim_id": "C17",
+      "claim": "Single-cell RNA sequencing identified 14 different cell types in the skin, including melanocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "Using known cell-type marker genes (Figure 2\u2014figure supplement 1A-B), we identified 14 different cell types in the skin, including melanocytes (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by single-cell RNA sequencing data shown in figures",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:32:06.600061Z"
+    },
+    {
+      "id": "5f042471-699e-4e4b-9155-b627de879c12",
+      "content_id": "344fd1d3-98a1-434b-bcc4-d4b98e03f24a",
+      "claim_id": "C18",
+      "claim": "Unsupervised clustering sub-divided the melanocytes into four groups.",
+      "claim_type": "EXPLICIT",
+      "source": "Unsupervised clustering further sub-divided the melanocytes into four groups (Figure 2B)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by clustering analysis shown in Figure 2B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:32:06.600061Z"
+    },
+    {
+      "id": "44750002-492e-4520-a2cb-488a66736a3b",
+      "content_id": "344fd1d3-98a1-434b-bcc4-d4b98e03f24a",
+      "claim_id": "C19",
+      "claim": "Mel 0 and Mel 1 melanocyte clusters were composed of cells found only in nevus-bearing, and not wildtype, skin.",
+      "claim_type": "EXPLICIT",
+      "source": "Two of them, Mel 0 and Mel 1, were composed of cells found only in nevus-bearing, and not wildtype, skin (Figure 2C)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by single-cell RNA sequencing data shown in Figure 2C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:32:06.600061Z"
+    },
+    {
+      "id": "1895d3f8-18c5-4208-b6d7-b6694c10636b",
+      "content_id": "344fd1d3-98a1-434b-bcc4-d4b98e03f24a",
+      "claim_id": "C20",
+      "claim": "Mel 0 and Mel 1 are identified as the 'nevus melanocytes', because they are seen only when nevi are present, and are by far the predominant melanocyte population in such animals.",
+      "claim_type": "EXPLICIT",
+      "source": "We identify them as the 'nevus melanocytes', because they are seen only when nevi are present, and are by far the predominant melanocyte population in such animals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from the observation that these clusters are only found in nevus-bearing animals",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:32:06.600061Z"
+    },
+    {
+      "id": "0f0fdd4f-6c2a-49e1-93ef-23e2117f34b4",
+      "content_id": "344fd1d3-98a1-434b-bcc4-d4b98e03f24a",
+      "claim_id": "C21",
+      "claim": "Mel 0 and Mel 1 are highly similar in gene expression, primarily differing in having a slightly lower level of pigment gene expression in Mel 1 versus Mel 0.",
+      "claim_type": "EXPLICIT",
+      "source": "they are highly similar in gene expression, primarily differing in having a slightly lower level of pigment gene expression in Mel 1 versus Mel 0 (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by gene expression data shown in Figure 2D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:32:06.600061Z"
+    },
+    {
+      "id": "3184da59-4a38-4e92-81db-db2f63c6c1fd",
+      "content_id": "344fd1d3-98a1-434b-bcc4-d4b98e03f24a",
+      "claim_id": "C22",
+      "claim": "Mel 2 cells express the lowest levels of pigmentation genes and are seen in both genotypes at all stages.",
+      "claim_type": "EXPLICIT",
+      "source": "Mel 2 cells express the lowest levels of pigmentation genes (Figure 2D), and are seen in both genotypes (Figure 2C) at all stages (although expanded in number in nevus-bearing animals (Figure 2F)).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by gene expression and clustering data shown in figures",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:32:06.600061Z"
+    },
+    {
+      "id": "bfb77f1d-3007-4625-873d-8b8c95bffedc",
+      "content_id": "344fd1d3-98a1-434b-bcc4-d4b98e03f24a",
+      "claim_id": "C23",
+      "claim": "Mel 2 cells' pattern of gene expression bears a strong resemblance to one recently published for melanocyte stem cells isolated from telogen-stage hair follicles.",
+      "claim_type": "EXPLICIT",
+      "source": "Their pattern of gene expression bears a strong resemblance to one recently published for melanocyte stem cells isolated from telogen-stage hair follicles (Zhang et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Comparison with published data from Zhang et al., 2020",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:32:06.600061Z"
+    },
+    {
+      "id": "f7b4420c-a168-42e6-8af5-7929f945063e",
+      "content_id": "344fd1d3-98a1-434b-bcc4-d4b98e03f24a",
+      "claim_id": "C24",
+      "claim": "Mel 2 cells express Cd34, which has been proposed to be a marker for bulge-associated melanocyte stem cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, they express Cd34, which has been proposed to be a marker for bulge-associated melanocyte stem cells (Joshi et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by gene expression data and citation to Joshi et al., 2019",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:32:06.600061Z"
+    },
+    {
+      "id": "3a4bed80-8794-4b04-ba96-d7af4dc6e497",
+      "content_id": "344fd1d3-98a1-434b-bcc4-d4b98e03f24a",
+      "claim_id": "C25",
+      "claim": "Cells of cluster Mel 3 express the highest levels of pigment genes and are found in both mutant and wildtype mice, but only at the P30 time point.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, cells of cluster Mel 3, which express the highest levels of pigment genes (Figure 2D), are found in both mutant and wildtype mice, but only at the P30 time point (Figure 2E\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by gene expression and temporal analysis shown in figures",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:32:06.600061Z"
+    },
+    {
+      "id": "def7e1de-ae3c-46fa-af6c-5f28ce90d602",
+      "content_id": "344fd1d3-98a1-434b-bcc4-d4b98e03f24a",
+      "claim_id": "C26",
+      "claim": "Mel 3 cells are identified as mature hair follicle melanocytes, as such cells are present exclusively during anagen phase of the hair cycle (P30), and disappear during telogen (P50).",
+      "claim_type": "EXPLICIT",
+      "source": "We thus identify them as mature hair follicle melanocytes, as such cells are present exclusively during anagen phase of the hair cycle (P30), and disappear during telogen (P50).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from temporal expression patterns and knowledge of hair cycle biology",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:32:06.600061Z"
+    },
+    {
+      "id": "7f6443ed-c444-47b9-bf1c-62523e34907a",
+      "content_id": "344fd1d3-98a1-434b-bcc4-d4b98e03f24a",
+      "claim_id": "C27",
+      "claim": "Patterns of gene expression in arrested nevus melanocytes fail to identify them as any more senescent than other skin cells or normal melanocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "First, patterns of gene expression in arrested nevus melanocytes fail to identify them as any more senescent than other skin cells or normal melanocytes, arguing against a primary role for any form of senescence in their arrest.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by gene expression signature analysis shown in Figure 3",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:32:06.600061Z"
+    },
+    {
+      "id": "d4feb9d6-5619-4b5c-b5a3-5372ec482b8b",
+      "content_id": "344fd1d3-98a1-434b-bcc4-d4b98e03f24a",
+      "claim_id": "C28",
+      "claim": "The timing and statistics of nevus formation effectively argue against any relatively simple cell-autonomous process as being the cause of growth arrest.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, the timing and statistics of nevus formation effectively argue against any relatively simple cell-autonomous process as being the cause of growth arrest.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by modeling and statistical analysis shown in Figure 4",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:32:06.600061Z"
+    },
+    {
+      "id": "4a4fec5c-15d4-4ac1-a46e-5ecd68dc595a",
+      "content_id": "344fd1d3-98a1-434b-bcc4-d4b98e03f24a",
+      "claim_id": "C29",
+      "claim": "Using the 'Classical' signature, only Cdkn2a stands out as strongly upregulated in nevus melanocytes, but it is similarly upregulated in skin fibroblasts.",
+      "claim_type": "EXPLICIT",
+      "source": "When compared with whole skin, using the 'Classical' signature, only Cdkn2a stands out as strongly upregulated in nevus melanocytes, but it is similarly upregulated in skin fibroblasts (it also has the noisiest data among genes in the signature).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by gene expression analysis shown in Figure 3A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:32:06.600061Z"
+    },
+    {
+      "id": "14d7889b-7b56-4dc6-8da4-deaf7c36adb6",
+      "content_id": "344fd1d3-98a1-434b-bcc4-d4b98e03f24a",
+      "claim_id": "C30",
+      "claim": "With the 'Universal Up' signature, more genes are downregulated than upregulated in nevus melanocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "With the 'Universal Up' signature, more genes are downregulated than upregulated in nevus melanocytes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by gene expression analysis shown in Figure 3A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:32:06.600061Z"
+    },
+    {
+      "id": "79096ac3-9e01-4e09-bb65-a10b7ba9d6ce",
+      "content_id": "344fd1d3-98a1-434b-bcc4-d4b98e03f24a",
+      "claim_id": "C31",
+      "claim": "Skin fibroblasts better fit the 'Classical' senescent signature than any skin cell type, including nevus melanocytes, or indeed melanocytes of any cluster.",
+      "claim_type": "EXPLICIT",
+      "source": "The results suggest that skin fibroblasts better fit the 'Classical' senescent signature than any skin cell type, including nevus melanocytes, or indeed melanocytes of any cluster.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by quantitative analysis of gene expression signatures shown in Figure 3B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:32:06.600061Z"
+    },
+    {
+      "id": "58c207f2-951c-4b2a-be19-c4328425382d",
+      "content_id": "344fd1d3-98a1-434b-bcc4-d4b98e03f24a",
+      "claim_id": "C32",
+      "claim": "The meta-PCNA signature identified two keratinocyte populations ('IFE-cycling' and 'Outer Bulge 1') as highly proliferative.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 3B (also see Figure 3\u2014figure supplement 1), this signature (122 genes of which had unambiguous mouse orthologs; Source data 1) identified two keratinocyte populations ('IFE-cycling' and 'Outer Bulge 1') as highly proliferative (in agreement with Joost et al., 2020)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by gene expression signature analysis shown in figures",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:32:06.600061Z"
+    },
+    {
+      "id": "212d22bc-d628-40ab-bd4c-83bc7ceb0d17",
+      "content_id": "344fd1d3-98a1-434b-bcc4-d4b98e03f24a",
+      "claim_id": "C33",
+      "claim": "The meta-PCNA signature correctly identified nevus melanocytes as non-proliferative and other melanocytes as proliferative.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, it also correctly identified nevus melanocytes as non-proliferative\u2014and other melanocytes as proliferative\u2014in agreement with Figure 1E\u2013F.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by gene expression signature analysis consistent with BrdU labeling data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:32:06.600061Z"
+    },
+    {
+      "id": "d2004d25-b90c-4209-ba6c-0b9b16dc5711",
+      "content_id": "344fd1d3-98a1-434b-bcc4-d4b98e03f24a",
+      "claim_id": "C34",
+      "claim": "The relatively high expression of proliferation-associated genes in non-nevus, hair follicle melanocytes (Mel 3) when compared with nevus melanocytes, was consistent between BrafV600E-expressing and control mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the relatively high expression of proliferation-associated genes in non-nevus, hair follicle melanocytes (Mel 3) when compared with nevus melanocytes, was consistent between BrafV600E-expressing and control mice (Figure 3\u2014figure supplement 2)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by gene expression comparison shown in Figure 3\u2014figure supplement 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:32:06.600061Z"
+    },
+    {
+      "id": "49a732a2-77ae-40ff-8096-ecd950157205",
+      "content_id": "344fd1d3-98a1-434b-bcc4-d4b98e03f24a",
+      "claim_id": "C35",
+      "claim": "Tissue context plays a role in whether BrafV600E-expressing cells even arrest growth.",
+      "claim_type": "EXPLICIT",
+      "source": "suggesting that tissue context plays a role in whether BrafV600E-expressing cells even arrest growth.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from the observation that proliferation gene expression differs between nevus and hair follicle melanocytes regardless of Braf status",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:32:06.600061Z"
+    },
+    {
+      "id": "3ff238db-1f2b-4ec6-9a72-afa3d085e8c4",
+      "content_id": "344fd1d3-98a1-434b-bcc4-d4b98e03f24a",
+      "claim_id": "C36",
+      "claim": "In five of eight senescence signature cases, nevus melanocytes rank as less senescent than the average skin cell.",
+      "claim_type": "EXPLICIT",
+      "source": "In five of the eight cases, nevus melanocytes rank as less senescent than the average skin cell; in two of the cases nevus melanocytes are about average.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by analysis of multiple senescence signatures shown in Figure 3C and supplements",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:32:06.600061Z"
+    },
+    {
+      "id": "9e355dda-fd19-456d-8e5f-351a918fa9d3",
+      "content_id": "344fd1d3-98a1-434b-bcc4-d4b98e03f24a",
+      "claim_id": "C37",
+      "claim": "In only one case ('Chatsirisupachai Down') does nevus melanocyte gene expression go in the predicted direction for senescence.",
+      "claim_type": "EXPLICIT",
+      "source": "In only one case ('Chatsirisupachai Down') does nevus melanocyte gene expression go in the predicted direction for senescence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by analysis shown in Figure 3C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:32:06.600061Z"
+    },
+    {
+      "id": "f077e595-a3fd-476d-8423-faf164cdaf66",
+      "content_id": "344fd1d3-98a1-434b-bcc4-d4b98e03f24a",
+      "claim_id": "C38",
+      "claim": "The Chatsirisupachai Down signature is more likely a signature of proliferation than 'non-senescence'.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the Chatsirisupachai signatures had not been curated to remove genes associated simply with proliferation/quiescence (Chatsirisupachai et al., 2019), and inspection of the 'Chatsirisupachai Down' gene list shows that 61 of its 250 genes are shared with the 129-gene meta-PCNA signature; that is it is more likely a signature of proliferation than 'non-senescence'",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from overlap analysis between gene signatures",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:32:06.600061Z"
+    },
+    {
+      "id": "14c995ce-4104-4625-9908-07646e355a67",
+      "content_id": "344fd1d3-98a1-434b-bcc4-d4b98e03f24a",
+      "claim_id": "C39",
+      "claim": "Of the 23 'Universal Down' signature genes in BRAFV600E-transduced human melanocytes, 15 were significantly differentially expressed, and 100% of these were decreased in expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Of the 23 'Universal Down' signature genes, 15 were significantly differentially expressed, and 100% of these were decreased in expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Analysis of published data from Pawlikowski et al., 2013 shown in Figure 3\u2014figure supplement 3",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:32:06.600061Z"
+    },
+    {
+      "id": "284225c1-ac1c-4914-b2f1-d688ce4da5fe",
+      "content_id": "344fd1d3-98a1-434b-bcc4-d4b98e03f24a",
+      "claim_id": "C40",
+      "claim": "Of the 31 'Universal Up' genes in BRAFV600E-transduced human melanocytes, 19 were significantly differentially expressed, and 84% of these were elevated in expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Of the 31 'Universal Up' genes, 19 were significantly differentially expressed, and 84% of these were elevated in expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Analysis of published data from Pawlikowski et al., 2013 shown in Figure 3\u2014figure supplement 3",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:32:06.600061Z"
+    },
+    {
+      "id": "c1cc38b4-ab01-416c-9e27-7961b44b7f6b",
+      "content_id": "344fd1d3-98a1-434b-bcc4-d4b98e03f24a",
+      "claim_id": "C41",
+      "claim": "The data do not support the view that any sort of senescence\u2014oncogene-induced or otherwise\u2014is characteristic of nevus melanocytes and therefore a possible cause of their growth arrest.",
+      "claim_type": "EXPLICIT",
+      "source": "Together these data do not support the view that any sort of senescence\u2014oncogene-induced or otherwise\u2014is characteristic of nevus melanocytes and therefore a possible cause of their growth arrest.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion drawn from comprehensive gene expression signature analysis",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:32:06.600061Z"
+    },
+    {
+      "id": "e7f1484d-06a5-4e59-b4ab-84518b06f3ae",
+      "content_id": "344fd1d3-98a1-434b-bcc4-d4b98e03f24a",
+      "claim_id": "C42",
+      "claim": "If the per-cell-cycle senescence probability (s) is less than 0.5, then some clones will never stop growing.",
+      "claim_type": "EXPLICIT",
+      "source": "If s < 0.5, (i.e. less than a 50% chance of arrest per cell cycle), then some clones will never stop growing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Mathematical result from stochastic modeling",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:32:06.600061Z"
+    },
+    {
+      "id": "d7a30f49-efc1-40b4-820d-1f4e5599ad13",
+      "content_id": "344fd1d3-98a1-434b-bcc4-d4b98e03f24a",
+      "claim_id": "C43",
+      "claim": "To achieve 99% clonal arrest by 30 cell cycles, s must be around 0.56 or higher; to achieve arrest in 95% of clones, s must be greater than 0.52.",
+      "claim_type": "EXPLICIT",
+      "source": "To achieve 99% clonal arrest by 30 cell cycles, s must be around 0.56 or higher; to achieve arrest in 95% of clones, s must be greater than 0.52 (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Results from Monte Carlo simulations shown in Figure 4A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:32:06.600061Z"
+    },
+    {
+      "id": "87f15a9d-74da-4548-ab97-9f805b6efda3",
+      "content_id": "344fd1d3-98a1-434b-bcc4-d4b98e03f24a",
+      "claim_id": "C44",
+      "claim": "A value of s that enables 95% of clones to arrest produces a mean clone size of only 18.5 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, a value of s that enables 95% of clones to arrest produces a mean clone size of only 18.5 cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Results from simulations shown in Figure 4B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:32:06.600061Z"
+    },
+    {
+      "id": "72435577-a1a4-4bf0-b1ef-df8fd0c34e4e",
+      "content_id": "344fd1d3-98a1-434b-bcc4-d4b98e03f24a",
+      "claim_id": "C45",
+      "claim": "Cell numbers per nevus are estimated to be in the range of 100\u20131000 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "For comparison, we estimate cell numbers per nevus to be in the range of 100\u20131000 cells (see Materials and methods).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Estimation based on measurements described in Materials and methods",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:32:06.600061Z"
+    },
+    {
+      "id": "b7efc595-e3ca-4e5d-9f43-dea0e33f07c5",
+      "content_id": "344fd1d3-98a1-434b-bcc4-d4b98e03f24a",
+      "claim_id": "C46",
+      "claim": "Simulated clone size distributions are extremely heavy-tailed, with a very large number of very small clones and a small number of very large clones.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 4C\u2013D, such distributions are extremely heavy-tailed, with a very large number of very small clones and a small number of very large clones",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Results from simulations shown in Figure 4C-D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:32:06.600061Z"
+    },
+    {
+      "id": "3e129a32-f067-4e84-bb2f-de559a6acf8b",
+      "content_id": "344fd1d3-98a1-434b-bcc4-d4b98e03f24a",
+      "claim_id": "C47",
+      "claim": "Nevi displayed a mean radius of 76.8 \u00b5m (corresponding to an area of 0.019 mm2).",
+      "claim_type": "EXPLICIT",
+      "source": "Nevi displayed a mean radius of 76.8 \u00b5m (corresponding to an area of 0.019 mm2, in excellent agreement with the results of Damsky et al., 2015)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Measurement from experimental data, consistent with published results",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:32:06.600061Z"
+    },
+    {
+      "id": "d32228a6-1c36-4e5a-8eed-a403b6d9e8f6",
+      "content_id": "344fd1d3-98a1-434b-bcc4-d4b98e03f24a",
+      "claim_id": "C48",
+      "claim": "When plotted on a logarithmic scale, individual nevus radii displayed a Gaussian-like distribution (log-normal).",
+      "claim_type": "EXPLICIT",
+      "source": "and, when plotted on a logarithmic scale, individual radii displayed a Gaussian-like distribution (Figure 4E; a Gaussian shape on a logarithmic axis is usually referred to as 'log-normal').",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Observation from data shown in Figure 4E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:32:06.600061Z"
+    },
+    {
+      "id": "acf5310f-b3f5-4c3c-a31b-15c5cac99d19",
+      "content_id": "344fd1d3-98a1-434b-bcc4-d4b98e03f24a",
+      "claim_id": "C49",
+      "claim": "Nest sizes are log-normally distributed whether at P21 or P50.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, nest sizes (quantified by MPM) also seem to be log-normally distributed (Figure 4\u2014figure supplement 1) whether at P21 (panel A) or P50 (panel B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Observation from data shown in Figure 4\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:32:06.600061Z"
+    },
+    {
+      "id": "3ba3e59b-2203-4b76-b74c-e7326ae0e8d9",
+      "content_id": "344fd1d3-98a1-434b-bcc4-d4b98e03f24a",
+      "claim_id": "C50",
+      "claim": "The nests within human melanocytic nevi are log-normally distributed, despite being an order of magnitude larger than those in mice.",
+      "claim_type": "EXPLICIT",
+      "source": "So are the nests within human melanocytic nevi, despite the latter being an order of magnitude larger than those in mice (Figure 4\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Observation from human nevus data shown in Figure 4\u2014figure supplement 1C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:32:06.600061Z"
+    },
+    {
+      "id": "373eae1f-91f9-4713-9e28-8ed3a5c0cba5",
+      "content_id": "344fd1d3-98a1-434b-bcc4-d4b98e03f24a",
+      "claim_id": "C51",
+      "claim": "The relative shapes of simulated distributions were about the same regardless of where they were truncated.",
+      "claim_type": "EXPLICIT",
+      "source": "As it turns out, the relative shapes of simulated distributions were about the same regardless of where they were truncated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Result from simulation analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:32:06.600061Z"
+    },
+    {
+      "id": "2f0ed245-3ec6-45d8-bafd-426fb0d9f663",
+      "content_id": "344fd1d3-98a1-434b-bcc4-d4b98e03f24a",
+      "claim_id": "C52",
+      "claim": "For s reasonably close to 0.5, the approximate probability of observing any clone size can be shown analytically to vary inversely with the 3/2-power of size.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, for s reasonably close to 0.5, the approximate probability of observing any clone size can be shown analytically to vary inversely with the 3/2-power of size (for derivation, see Appendix 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Mathematical derivation provided in Appendix 1",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:32:06.600061Z"
+    },
+    {
+      "id": "00b7331e-2224-410f-92c6-dda49b0d6f6b",
+      "content_id": "344fd1d3-98a1-434b-bcc4-d4b98e03f24a",
+      "claim_id": "C53",
+      "claim": "Observed nevus size distributions cannot be generated by any cell-autonomous, random, time independent, one-step process.",
+      "claim_type": "EXPLICIT",
+      "source": "These data imply that observed nevus size distributions cannot be generated by any cell-autonomous, random, time independent, one-step process.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion from comparison of simulations with empirical data",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:32:06.600061Z"
+    },
+    {
+      "id": "c891d3b9-bb36-48f9-b685-45276fb6dfe0",
+      "content_id": "344fd1d3-98a1-434b-bcc4-d4b98e03f24a",
+      "claim_id": "C54",
+      "claim": "To achieve clonal stopping times within 30 cell cycles, the minimum per-step transition probability increases with the number of steps.",
+      "claim_type": "EXPLICIT",
+      "source": "First, to achieve clonal stopping times within 30 cell cycles, the minimum per-step transition probability increases with the number of steps (Figure 4F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Results from multi-step simulations shown in Figure 4F",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:32:06.600061Z"
+    },
+    {
+      "id": "2cc52b53-e21c-4d49-a8eb-3c2f192a6088",
+      "content_id": "344fd1d3-98a1-434b-bcc4-d4b98e03f24a",
+      "claim_id": "C55",
+      "claim": "If it takes three random events to arrest growth in 99% of clones, the average probability of each event needs to be at least 0.66 per cell cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, if it takes three random events to arrest growth in 99% of clones, the average probability of each event needs to be at least 0.66 per cell cycle; with five random events that number is 0.74.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Results from multi-step simulations",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:32:06.600061Z"
+    },
+    {
+      "id": "37a34d13-886f-48d8-a5d3-3fd44afbeb34",
+      "content_id": "344fd1d3-98a1-434b-bcc4-d4b98e03f24a",
+      "claim_id": "C56",
+      "claim": "Distributions generated by multi-step models become less heavy-tailed as the number of steps increases, gradually approaching something that looks log-normal.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, although distributions generated by such models still tend to be heavy-tailed (Figure 4G), they become less so as the number of steps increases (Figure 4H), gradually approaching something that looks log-normal.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Results from multi-step simulations shown in Figure 4G-H",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:32:06.600061Z"
+    },
+    {
+      "id": "a6a7fa8e-c21c-4c81-b4d1-fc04e1a34612",
+      "content_id": "344fd1d3-98a1-434b-bcc4-d4b98e03f24a",
+      "claim_id": "C57",
+      "claim": "To produce nevi of even 200 cells requires 4\u20135 independent events (stages), depending on whether one requires 95% or 99% clonal arrest.",
+      "claim_type": "EXPLICIT",
+      "source": "we find that, to produce nevi of even 200 cells requires 4\u20135 independent events (stages), depending on whether one requires 95% or 99% clonal arrest; to reach 500 cells requires 6\u20137 events.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Results from multi-step simulations shown in Figure 4I",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:32:06.600061Z"
+    },
+    {
+      "id": "04a642f1-cef4-4d3b-9947-eb3103d3ac62",
+      "content_id": "344fd1d3-98a1-434b-bcc4-d4b98e03f24a",
+      "claim_id": "C58",
+      "claim": "To reach 500 cells requires 6\u20137 independent events.",
+      "claim_type": "EXPLICIT",
+      "source": "to reach 500 cells requires 6\u20137 events.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Results from multi-step simulations shown in Figure 4I",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:32:06.600061Z"
+    },
+    {
+      "id": "5d5f6259-4006-4762-b0ca-ed24ecf41040",
+      "content_id": "344fd1d3-98a1-434b-bcc4-d4b98e03f24a",
+      "claim_id": "C59",
+      "claim": "Cell-autonomous counting of cell cycles (up to about 12) can occur in early, cleavage-stage embryos.",
+      "claim_type": "EXPLICIT",
+      "source": "Cell-autonomous counting of cell cycles (up to about 12) can occur in early, cleavage-stage embryos (Tadros and Lipshitz, 2009)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Tadros and Lipshitz, 2009",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:32:06.600061Z"
+    },
+    {
+      "id": "651c341a-0051-41cc-9620-6c27d0027d8c",
+      "content_id": "344fd1d3-98a1-434b-bcc4-d4b98e03f24a",
+      "claim_id": "C60",
+      "claim": "No mechanism has been described to enable growing (as opposed to merely cleaving) cells to track more than a small handful of divisions (or the equivalent amount of time).",
+      "claim_type": "EXPLICIT",
+      "source": "but no mechanism has been described to enable growing (as opposed to merely cleaving) cells to track more than a small handful of divisions (or the equivalent amount of time).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about the state of scientific knowledge",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:32:06.600061Z"
+    },
+    {
+      "id": "b145df24-636c-4122-a98d-98a6adce522f",
+      "content_id": "344fd1d3-98a1-434b-bcc4-d4b98e03f24a",
+      "claim_id": "C61",
+      "claim": "Erosion of telomeres does not seem to occur to any significant degree in nevus melanocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "Erosion of telomeres can mark the passage of large amounts of time in some cells, but this does not seem to occur to any significant degree in nevus melanocytes (Michaloglou et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Michaloglou et al., 2005",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:32:06.600061Z"
+    },
+    {
+      "id": "133277e3-984d-4124-8a9b-6d032b4578a8",
+      "content_id": "344fd1d3-98a1-434b-bcc4-d4b98e03f24a",
+      "claim_id": "C62",
+      "claim": "If growth arrest is driven by cell\u2013cell communication, then clock-like behavior is easily achieved, without any sort of intrinsic cell memory.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, if growth arrest is not cell-autonomous, but driven by cell\u2013cell communication, then clock-like behavior is easily achieved, without any sort of intrinsic cell memory",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Theoretical argument based on feedback control principles",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:32:06.600061Z"
+    },
+    {
+      "id": "56cd9cd7-86ce-4a90-88b0-c5d01ffbdc5b",
+      "content_id": "344fd1d3-98a1-434b-bcc4-d4b98e03f24a",
+      "claim_id": "C63",
+      "claim": "Renewal control is a feedback process that normal tissues use to control size.",
+      "claim_type": "EXPLICIT",
+      "source": "This mechanism describes a dynamically well-understood feedback process that normal tissues use to control size (Lander, 2011; Lander et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Lander, 2011 and Lander et al., 2009",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:32:06.600061Z"
+    },
+    {
+      "id": "e00ba9fc-afc5-4cd3-aad7-82625ad4a687",
+      "content_id": "344fd1d3-98a1-434b-bcc4-d4b98e03f24a",
+      "claim_id": "C64",
+      "claim": "Renewal control is often mediated by secreted TGF-\u03b2 superfamily members such as myostatin, activin and GDF11.",
+      "claim_type": "EXPLICIT",
+      "source": "Termed 'renewal control' (Buzi et al., 2015), because differentiated cells control the probability that progenitor cells self-renew, the process is often mediated by secreted TGF-\u03b2 superfamily members such as myostatin, activin and GDF11 (Gokoffski et al., 2011; Lee et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to multiple studies",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:32:06.600061Z"
+    },
+    {
+      "id": "661ca715-4bd6-4756-8b25-899cbc4ac848",
+      "content_id": "344fd1d3-98a1-434b-bcc4-d4b98e03f24a",
+      "claim_id": "C65",
+      "claim": "Renewal control produces highly robust final population sizes that are independent of parameters such as cell cycle speed or the starting numbers of cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Because it implements the engineering principle of 'integral negative feedback', renewal control produces highly robust final population sizes that are independent of parameters such as cell cycle speed or the starting numbers of cells (Buzi et al., 2015; Lander, 2011; Lander et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations describing the properties of renewal control",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:32:06.600061Z"
+    },
+    {
+      "id": "73956485-5d9e-48dd-b92d-a1e4f4355b83",
+      "content_id": "344fd1d3-98a1-434b-bcc4-d4b98e03f24a",
+      "claim_id": "C66",
+      "claim": "When growth arrest due to renewal control is simulated as a probabilistic process, the observed size distributions of clones are very close to log-normal.",
+      "claim_type": "EXPLICIT",
+      "source": "When growth arrest due to renewal control is simulated as a probabilistic process (Figure 5B), the observed size distributions of clones are very close to log-normal.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Results from simulations shown in Figure 5B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:32:06.600061Z"
+    },
+    {
+      "id": "f4e02b48-53cf-4281-894f-88aac50605a4",
+      "content_id": "344fd1d3-98a1-434b-bcc4-d4b98e03f24a",
+      "claim_id": "C67",
+      "claim": "Renewal control effectively enforces cell cooperation, so that once a small fraction of a clone has arrested, the entire clone stops soon thereafter.",
+      "claim_type": "EXPLICIT",
+      "source": "This is because renewal control effectively enforces cell cooperation, so that once a small fraction of a clone has arrested, the entire clone stops soon thereafter.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Explanation of mechanism underlying simulation results",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:32:06.600061Z"
+    },
+    {
+      "id": "3c83547d-e978-46d4-871a-32f81012aad5",
+      "content_id": "344fd1d3-98a1-434b-bcc4-d4b98e03f24a",
+      "claim_id": "C68",
+      "claim": "Similar log-normal distributions are obtained whether nevi are modeled as progressing reversibly or irreversibly through more than one proliferative stage, or using agent-based simulations with diffusible molecules.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar distributions are obtained whether we model nevi as progressing reversibly or irreversibly through more than one proliferative stage, or use agent-based simulations in which renewal is controlled by the concentration of a secreted molecule that accumulates according to the laws of diffusion and local uptake (Figure 5C\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Results from multiple simulation approaches shown in Figure 5C-D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:32:06.600061Z"
+    },
+    {
+      "id": "89900515-1399-4286-a5de-afc29f10773a",
+      "content_id": "344fd1d3-98a1-434b-bcc4-d4b98e03f24a",
+      "claim_id": "C69",
+      "claim": "Nevus melanocytes express multiple genes encoding ligands with known or suspected growth inhibitory activities, together with the receptors for those ligands.",
+      "claim_type": "EXPLICIT",
+      "source": "it is interesting that those cells that we identify as nevus melanocytes (Figure 2) express multiple genes encoding ligands with known or suspected growth inhibitory activities, together with the receptors for those ligands. These include TGF\u03b2 superfamily members Gdf11, Gdf15, Tgfb1, Tgfb2, and Tgfb3, as well as other genes associated with growth inhibition, such as Angptl2, Angptl4, Il6, Sema3a, Sema3b, and Sema3f (Attisano and Wrana, 1996; Neufeld et al., 2016; Santulli, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by single-cell RNA sequencing data and citations about gene functions",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:32:06.600061Z"
+    },
+    {
+      "id": "697308fa-abd6-4401-9f4c-9a93a4f82d40",
+      "content_id": "344fd1d3-98a1-434b-bcc4-d4b98e03f24a",
+      "claim_id": "C70",
+      "claim": "Any feedback mechanism based on secreted, diffusible factors should induce spatial correlations among clones.",
+      "claim_type": "EXPLICIT",
+      "source": "we reasoned that any feedback mechanism based on secreted, diffusible factors should induce spatial correlations among clones.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Theoretical prediction based on diffusion principles",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:32:06.600061Z"
+    },
+    {
+      "id": "48ec883e-8caf-45c0-8e8d-8677b9596b14",
+      "content_id": "344fd1d3-98a1-434b-bcc4-d4b98e03f24a",
+      "claim_id": "C71",
+      "claim": "When clones (or subclones) get close enough to each other, they should inhibit each other's growth, leading to a smaller final size.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, when clones (or subclones) get close enough to each other, they should inhibit each other's growth, leading to a smaller final size.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Theoretical prediction from feedback model",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:32:06.600061Z"
+    },
+    {
+      "id": "3d8a0367-de5a-4320-9ac3-c2eca75d5104",
+      "content_id": "344fd1d3-98a1-434b-bcc4-d4b98e03f24a",
+      "claim_id": "C72",
+      "claim": "The distance over which spatial effects could occur should reflect the spatial decay length of diffusible molecules in the skin, which is thought to be on the order of no more than a few hundred microns.",
+      "claim_type": "EXPLICIT",
+      "source": "The distance over which such effects could occur should reflect the spatial decay length of diffusible molecules in the skin, which is thought to be on the order of no more than a few hundred microns (Chen et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Chen et al., 2015",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:32:06.600061Z"
+    },
+    {
+      "id": "ace9c2dd-9f32-46e7-94b5-1d30c3efb8cf",
+      "content_id": "344fd1d3-98a1-434b-bcc4-d4b98e03f24a",
+      "claim_id": "C73",
+      "claim": "The median spacing between nests at postnatal day 21 was approximately 79 microns.",
+      "claim_type": "EXPLICIT",
+      "source": "as the median spacing between nests at postnatal day 21 was approximately 79 microns.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Measurement from experimental data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:32:06.600061Z"
+    },
+    {
+      "id": "7d068785-c19b-4fbe-a96e-c2e061fa69a7",
+      "content_id": "344fd1d3-98a1-434b-bcc4-d4b98e03f24a",
+      "claim_id": "C74",
+      "claim": "Within annuli extending 45 \u00b5m away from the perimeters of target nests, there were fewer examples of large neighbors (radius >30 \u00b5m) around large nests than around small ones.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 5E\u2013F, within annuli extending 45 \u00b5m away from the perimeters of target nests, we saw fewer examples of large neighbors (radius >30 \u00b5m) around large nests (panel E) than around small ones (panel F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Spatial analysis results shown in Figure 5E-F",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:32:06.600061Z"
+    },
+    {
+      "id": "30649542-db0e-4e2c-910e-50b524d464c9",
+      "content_id": "344fd1d3-98a1-434b-bcc4-d4b98e03f24a",
+      "claim_id": "C75",
+      "claim": "The observed data extended outside of the envelopes of permuted data only for median neighbor sizes > 30 \u00b5m, with the data for small target nevi extending well above the relevant envelope and the data for large target nevi lying at to the bottom of the envelope.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the observed data extended outside of the envelopes only for median neighbor sizes > 30 \u00b5m, with the data for small target nevi extending well above the relevant envelope and the data for large target nevi lying at to the bottom of the envelope (Figure 5E\u2013F, arrows).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Statistical analysis results shown in Figure 5E-F",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:32:06.600061Z"
+    },
+    {
+      "id": "09f16d78-e8c3-497b-81d8-fed15ae8eb14",
+      "content_id": "344fd1d3-98a1-434b-bcc4-d4b98e03f24a",
+      "claim_id": "C76",
+      "claim": "Proximity is associated with a small, but significant decrease in nest size, supporting the view that nests inhibit each other's growth.",
+      "claim_type": "EXPLICIT",
+      "source": "These results argue that proximity is associated with a small, but significant decrease in nest size, supporting the view that nests inhibit each other's growth.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion from spatial correlation analysis",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:32:06.600061Z"
+    },
+    {
+      "id": "4a9e402e-19e8-4c48-91ba-1dd11879102a",
+      "content_id": "344fd1d3-98a1-434b-bcc4-d4b98e03f24a",
+      "claim_id": "C77",
+      "claim": "When annulus sizes of 150 \u00b5m were used, differences in the sizes of neighbors of small and large nests were not seen, consistent with the view that whatever is promoting coordination among nests has a spatial range of <150 \u00b5m.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, when we repeated the same analysis using annulus sizes of 150 \u00b5m, differences in the sizes of neighbors of small and large nests were not seen, consistent with the view that whatever is promoting coordination among nests has a spatial range of <150 \u00b5m (Figure 5\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Spatial analysis results shown in Figure 5\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:32:06.600061Z"
+    },
+    {
+      "id": "6f8dcfb6-7472-4ea9-b8bc-643d847ec5bf",
+      "content_id": "344fd1d3-98a1-434b-bcc4-d4b98e03f24a",
+      "claim_id": "C78",
+      "claim": "Studies in man, mouse and fish establish that most melanocytic nevi form by mutational activation of BRAF, which triggers proliferation followed by growth arrest.",
+      "claim_type": "EXPLICIT",
+      "source": "Studies in man, mouse and fish establish that most melanocytic nevi form by mutational activation of BRAF, which triggers proliferation followed by growth arrest (Damsky and Bosenberg, 2017; Dankort et al., 2009; Dhomen et al., 2009; Kaufman et al., 2016; Michaloglou et al., 2005; Patton et al., 2005; Shain and Bastian, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations to studies in different species",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:32:06.600061Z"
+    },
+    {
+      "id": "71f83cea-e8d0-4bba-b135-2e2d62c77b0b",
+      "content_id": "344fd1d3-98a1-434b-bcc4-d4b98e03f24a",
+      "claim_id": "C79",
+      "claim": "Across a wide variety of gene expression signatures, especially those developed to distinguish senescence from other growth-arrested cell states, we failed to find any evidence in support of the OIS hypothesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Across a wide variety of gene expression signatures, especially those developed to distinguish senescence from other growth-arrested cell states, we failed to find any evidence in support of the OIS hypothesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of gene expression signature analysis results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:32:06.600061Z"
+    },
+    {
+      "id": "e3fdb0f9-4647-4f19-8b42-3215957b2587",
+      "content_id": "344fd1d3-98a1-434b-bcc4-d4b98e03f24a",
+      "claim_id": "C80",
+      "claim": "By gene expression criteria, nevus melanocytes were less senescent than many other normal skin cells, including non-nevus melanocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "By gene expression criteria, nevus melanocytes were less senescent than many other normal skin cells, including non-nevus melanocytes (Figure 3, and its supplements).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Summary of gene expression signature analysis results shown in figures",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:32:06.600061Z"
+    },
+    {
+      "id": "7e4031f7-53f7-418d-8af7-b3bc897f83db",
+      "content_id": "344fd1d3-98a1-434b-bcc4-d4b98e03f24a",
+      "claim_id": "C81",
+      "claim": "These results support earlier work that also questioned, based on immunohistochemical staining of human nevi for markers including lysosomal \u03b2-galactosidase, Ki67, p16INK4a (CDKN2A), \u03b3-H2AX and p53, whether nevus melanocytes should be considered senescent.",
+      "claim_type": "EXPLICIT",
+      "source": "These results support earlier work that also questioned, based on immunohistochemical staining of human nevi for markers including lysosomal \u03b2-galactosidase, Ki67, p16INK4a (CDKN2A), \u03b3-H2AX and p53, whether nevus melanocytes should be considered senescent (Tran et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Tran et al., 2012",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:32:06.600061Z"
+    },
+    {
+      "id": "cd803476-953c-4cc0-afed-f763490bb074",
+      "content_id": "344fd1d3-98a1-434b-bcc4-d4b98e03f24a",
+      "claim_id": "C82",
+      "claim": "Cdkn2A is highly expressed in nevus cells and is the only 'classical' senescence marker that clearly distinguishes nevus melanocytes from other melanocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "In agreement with other studies, we do find that Cdkn2A is highly expressed in nevus cells; it is in fact the only 'classical' senescence marker that clearly distinguishes nevus melanocytes from other melanocytes (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by gene expression data shown in Figure 3A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:32:06.600061Z"
+    },
+    {
+      "id": "62da8bb8-de6d-4601-a121-ee24c0e9911a",
+      "content_id": "344fd1d3-98a1-434b-bcc4-d4b98e03f24a",
+      "claim_id": "C83",
+      "claim": "Cdkn2A is neither necessary nor sufficient for oncogene-mediated melanocyte growth arrest.",
+      "claim_type": "EXPLICIT",
+      "source": "Yet, as others have shown, Cdkn2A is neither necessary nor sufficient for oncogene-mediated melanocyte growth arrest (Haferkamp et al., 2009; Zeng et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Haferkamp et al., 2009 and Zeng et al., 2018",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:32:06.600061Z"
+    },
+    {
+      "id": "9962f3c1-5a78-454b-b571-3c8e377e49b2",
+      "content_id": "344fd1d3-98a1-434b-bcc4-d4b98e03f24a",
+      "claim_id": "C84",
+      "claim": "To the extent that nevus melanocytes do execute even part of a common senescence program, there is little to support the view that this why they stop proliferating.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, to the extent that nevus melanocytes do execute even part of a common senescence program, there is little to support the view that this why they stop proliferating.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion drawn from gene expression and functional data",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:32:06.600061Z"
+    },
+    {
+      "id": "edb620a2-0f2f-445c-8d24-4eb53614a725",
+      "content_id": "344fd1d3-98a1-434b-bcc4-d4b98e03f24a",
+      "claim_id": "C85",
+      "claim": "The in vivo data do not support the hypothesis that IGFBP7 plays a necessary role in BRAF-V600E-induced melanocyte senescence.",
+      "claim_type": "EXPLICIT",
+      "source": "Our in vivo data do not support any of these hypotheses. For example, we observed that the vast majority of Igfbp7 transcripts are produced by fibroblasts and endothelial cells and that, among melanocytes, nevus melanocytes express lower levels of Igfbp7 than non-nevus melanocytes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by single-cell RNA sequencing data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:32:06.600061Z"
+    },
+    {
+      "id": "13eb5e81-36b9-4820-9c67-fbd13f6ad7c1",
+      "content_id": "344fd1d3-98a1-434b-bcc4-d4b98e03f24a",
+      "claim_id": "C86",
+      "claim": "Mia transcripts were not detected in nevus melanocytes, although it was expressed at detectable levels in non-nevus melanocytes and various other skin cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We did not detect any Mia transcripts in nevus melanocytes, although it was expressed at detectable levels in non-nevus melanocytes and various other skin cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by single-cell RNA sequencing data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:32:06.600061Z"
+    },
+    {
+      "id": "d922e83e-9d4a-4ec9-adb3-94c03b500b51",
+      "content_id": "344fd1d3-98a1-434b-bcc4-d4b98e03f24a",
+      "claim_id": "C87",
+      "claim": "Of Il1 family members, only Il1a transcripts were detected in nevus melanocytes and they were at levels lower than in many other skin cell types.",
+      "claim_type": "EXPLICIT",
+      "source": "Likewise, of Il1 family members, only Il1a transcripts were detected in nevus melanocytes and they were at levels lower than in many other skin cell types.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by single-cell RNA sequencing data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:32:06.600061Z"
+    },
+    {
+      "id": "767dce5f-f0d9-4492-9141-ff24887b7879",
+      "content_id": "344fd1d3-98a1-434b-bcc4-d4b98e03f24a",
+      "claim_id": "C88",
+      "claim": "Il6 was only weakly expressed in nevus melanocytes, especially when compared with other cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Il6 was also only weakly expressed in nevus melanocytes, especially when compared with other cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by single-cell RNA sequencing data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:32:06.600061Z"
+    },
+    {
+      "id": "dba9566a-5787-47ee-867e-a729d2909780",
+      "content_id": "344fd1d3-98a1-434b-bcc4-d4b98e03f24a",
+      "claim_id": "C89",
+      "claim": "Transcripts for type one interferons were not detected in any melanocytic cells, and Cxcl15 transcripts were not detected in any skin cells at all.",
+      "claim_type": "EXPLICIT",
+      "source": "Transcripts for type one interferons were not detected in any melanocytic cells, and Cxcl15 transcripts were not detected in any skin cells at all.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by single-cell RNA sequencing data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:32:06.600061Z"
+    },
+    {
+      "id": "cc52d301-2e6b-4156-b912-e437654774a7",
+      "content_id": "344fd1d3-98a1-434b-bcc4-d4b98e03f24a",
+      "claim_id": "C90",
+      "claim": "The authors strongly favor the renewal-feedback model (model C) over OIS models.",
+      "claim_type": "EXPLICIT",
+      "source": "But given these results, and the evidence that nevus melanocytes are not senescent, we strongly favor the renewal-feedback model (model C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion based on the totality of evidence presented",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:32:06.600061Z"
+    },
+    {
+      "id": "946e5f67-8c01-49a9-94ca-a7be7af78c70",
+      "content_id": "344fd1d3-98a1-434b-bcc4-d4b98e03f24a",
+      "claim_id": "C91",
+      "claim": "Nevi may exhibit a low level of mitoses.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, it is known that nevi may exhibit a low level of mitoses (Glatz et al., 2010)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Glatz et al., 2010",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:32:06.600061Z"
+    },
+    {
+      "id": "99403de1-062e-4bcb-89d0-5f03b0111ece",
+      "content_id": "344fd1d3-98a1-434b-bcc4-d4b98e03f24a",
+      "claim_id": "C92",
+      "claim": "Nevi can grow in response to stimuli such as UV light or immunosuppression.",
+      "claim_type": "EXPLICIT",
+      "source": "that they can grow in response to stimuli such as UV light (Rudolph et al., 1998) or immunosuppression (Shain and Bastian, 2016)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Rudolph et al., 1998 and Shain and Bastian, 2016",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:32:06.600061Z"
+    },
+    {
+      "id": "e29835a8-7ff5-47c2-afc0-e09167373544",
+      "content_id": "344fd1d3-98a1-434b-bcc4-d4b98e03f24a",
+      "claim_id": "C93",
+      "claim": "Nevi can re-grow after incomplete surgical resection\u2014stopping again when they reach a typical nevus size.",
+      "claim_type": "EXPLICIT",
+      "source": "and, perhaps most tellingly, they can re-grow after incomplete surgical resection\u2014stopping again when they reach a typical nevus size (Vilain et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Vilain et al., 2016",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:32:06.600061Z"
+    },
+    {
+      "id": "23501fbe-b62d-423f-b118-dc284afe20b5",
+      "content_id": "344fd1d3-98a1-434b-bcc4-d4b98e03f24a",
+      "claim_id": "C94",
+      "claim": "The re-growth of nevi after incomplete surgical resection is inherently problematic for any non-feedback model, but is precisely what renewal feedback predicts.",
+      "claim_type": "EXPLICIT",
+      "source": "The latter result is inherently problematic for any non-feedback model, but is precisely what renewal feedback predicts (Lander, 2011; Lander et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on theoretical predictions of feedback models",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:32:06.600061Z"
+    },
+    {
+      "id": "523a45ae-4392-4607-807d-8816ad28f4fd",
+      "content_id": "344fd1d3-98a1-434b-bcc4-d4b98e03f24a",
+      "claim_id": "C95",
+      "claim": "During anagen phase of the hair cycle, melanocyte stem cells produce progeny that migrate out of the hair follicle bulge as they differentiate, leaving functional stem cells behind for future cycles.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, during anagen phase of the hair cycle, melanocyte stem cells produce progeny that migrate out of the hair follicle bulge as they differentiate, leaving functional stem cells behind for future cycles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement of established biological knowledge",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:32:06.600061Z"
+    },
+    {
+      "id": "5e092444-7535-4c1f-98a1-a5e6b3941353",
+      "content_id": "344fd1d3-98a1-434b-bcc4-d4b98e03f24a",
+      "claim_id": "C96",
+      "claim": "Experimental and pathological circumstances that allow small numbers of melanocytes to differentiate within the bulge cause differentiation and loss of the entire stem cell pool (with concomitant hair graying).",
+      "claim_type": "EXPLICIT",
+      "source": "A variety of experimental and pathological circumstances that allow small numbers of melanocytes to differentiate within the bulge cause differentiation and loss of the entire stem cell pool (with concomitant hair graying [Nishimura et al., 2005]).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Nishimura et al., 2005",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:32:06.600061Z"
+    },
+    {
+      "id": "8f94ee7a-f7db-4458-994a-538090708703",
+      "content_id": "344fd1d3-98a1-434b-bcc4-d4b98e03f24a",
+      "claim_id": "C97",
+      "claim": "The behavior where differentiated cells drive the differentiation of their progenitors is exactly the sort of behavior that drives feedback models of renewal.",
+      "claim_type": "EXPLICIT",
+      "source": "This sort of behavior\u2014where differentiated cells drive the differentiation of their progenitors\u2014is exactly the sort of behavior that drives feedback models of renewal (Buzi et al., 2015; Lander, 2011; Lander et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference connecting observed biological behavior to theoretical models",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:32:06.600061Z"
+    },
+    {
+      "id": "46377ee2-78dd-4f68-abd9-e146e3597a3e",
+      "content_id": "344fd1d3-98a1-434b-bcc4-d4b98e03f24a",
+      "claim_id": "C98",
+      "claim": "Nevi are but one of many types of benign, clonal, proliferative lesions that arise due to the activation of oncogenes, but rarely if ever progress to malignancy.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevi are but one of many types of benign, clonal, proliferative lesions that arise due to the activation of oncogenes, but rarely if ever progress to malignancy (Adashek et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Adashek et al., 2020",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:32:06.600061Z"
+    },
+    {
+      "id": "abea8642-226c-4327-bb91-72ecfc682dcd",
+      "content_id": "344fd1d3-98a1-434b-bcc4-d4b98e03f24a",
+      "claim_id": "C99",
+      "claim": "The existence of benign oncogene-driven lesions suggests that homeostatic mechanisms persist and function at many stages along the road to cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "Notwithstanding the disruptive influence that oncogenes can have on cell physiology, the existence of such lesions suggest that homeostatic mechanisms persist and function at many stages along the road to cancer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from the observation of benign oncogene-driven lesions",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:32:06.600061Z"
+    },
+    {
+      "id": "f99af5c1-3206-4780-af97-f6a68be7ab4d",
+      "content_id": "344fd1d3-98a1-434b-bcc4-d4b98e03f24a",
+      "claim_id": "C100",
+      "claim": "New avenues for cancer prevention and treatment are likely to follow from the detailed elucidation of homeostatic mechanisms.",
+      "claim_type": "EXPLICIT",
+      "source": "New avenues for cancer prevention and treatment are likely to follow from the detailed elucidation of such mechanisms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative statement about future research directions",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:32:06.600061Z"
+    },
+    {
+      "id": "f8cba0a7-518f-47e3-9974-8e826fb1a7fa",
+      "content_id": "344fd1d3-98a1-434b-bcc4-d4b98e03f24a",
+      "claim_id": "C101",
+      "claim": "The average nevus has about 500\u20131000 cells, but given possible errors in the estimate, a range of values between 100 and 3000 is considered.",
+      "claim_type": "EXPLICIT",
+      "source": "As described below (see Materials and methods), we estimate that the average nevus has about 500\u20131000 cells, but given possible errors in the estimate, we consider here a range of values between 100 and 3000 (gray-shaded area in Figure 4I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Estimation based on measurements described in Materials and methods",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:32:06.600061Z"
+    },
+    {
+      "id": "a3cb7dbd-78d6-48b0-bb4f-bb5824bf6005",
+      "content_id": "344fd1d3-98a1-434b-bcc4-d4b98e03f24a",
+      "claim_id": "C102",
+      "claim": "Using 8 \u00b5m sections of back skin from Albino BrafV600E mice, an average cell diameter of 5.68 \u00b5m was measured for melanocytes within the nests of nevi.",
+      "claim_type": "EXPLICIT",
+      "source": "Using 8 \u00b5m sections of back skin from Albino BrafV600E mice, we used fluorescence microscopy to measure the sizes of 194 Pmel-stained melanocytes within the nests of nevi, obtaining an average cell diameter of 5.68 \u00b5m",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Measurement from experimental data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:32:06.600061Z"
+    },
+    {
+      "id": "d048cf32-1331-46da-a366-57cbdf18f320",
+      "content_id": "344fd1d3-98a1-434b-bcc4-d4b98e03f24a",
+      "claim_id": "C103",
+      "claim": "Approximately 14.4 cells per 104 \u00b5m3 of nest were counted in albino BrafV600E mice.",
+      "claim_type": "EXPLICIT",
+      "source": "and counted approximately 14.4 cells per 104 \u00b5m3 of nest.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Measurement from experimental data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:32:06.600061Z"
+    },
+    {
+      "id": "f3a16b6c-db32-4ac7-9026-3b05e57efade",
+      "content_id": "344fd1d3-98a1-434b-bcc4-d4b98e03f24a",
+      "claim_id": "C104",
+      "claim": "In pigmented animals, an average nest cross sectional area of 1385 \u00b5m2, an average nest volume of 38792 \u00b5m3, and an average number of nests per nevi of approximately 12 were measured, yielding an estimate of 672 cells/nevus.",
+      "claim_type": "EXPLICIT",
+      "source": "In pigmented animals, we measured by MPM an average nest cross sectional area of 1385 \u00b5m2, an average nest volume of 38792 \u00b5m3, and an average number of nests per nevi of approximately 12, yielding an estimate of 672 cells/nevus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Measurements from experimental data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:32:06.600061Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "7c4b7b10-2035-4980-a6ec-bc3213051934",
+      "content_id": "344fd1d3-98a1-434b-bcc4-d4b98e03f24a",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "BRAFV600E mutations are common in both melanoma (66%) and benign melanocytic nevi (89%), and while melanocyte-specific expression of BRAFV600E produces nevi that undergo growth arrest, the widely-accepted explanation is oncogene-induced senescence (OIS), though this remains untested in vivo.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C5 establish the biological context from prior literature. The prevalence statistics and animal model observations are well-supported by multiple citations (Davies et al., 2002; Pollock et al., 2003; Dankort et al., 2009; Dhomen et al., 2009; Patton et al., 2005). The statement that OIS remains untested in vivo (C5) appropriately frames the research question.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:32:06.600061Z"
+    },
+    {
+      "id": "d13c583e-588b-4031-bf8c-0df4b5ff2350",
+      "content_id": "344fd1d3-98a1-434b-bcc4-d4b98e03f24a",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "No single hallmark reliably distinguishes senescence from other growth-arrested states; traditional 'gold standard' markers like lysosomal beta-galactosidase, CDK inhibitors, and p53 mark only subsets of senescent cells and can also mark non-senescent cells, and observations of senescent cells resuming proliferation indicate permanent cell cycle exit cannot define senescence.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6-C8 establish the conceptual challenge in defining senescence, supported by citations to Wiley et al., 2017; Tran et al., 2012; and Beaus\u00e9jour et al., 2003. These claims provide important context for why gene expression signatures are needed to assess senescence status.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:32:06.600061Z"
+    },
+    {
+      "id": "2da1f0e0-6b08-4117-b8eb-f1e04131e95b",
+      "content_id": "344fd1d3-98a1-434b-bcc4-d4b98e03f24a",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "In a mouse model with inducible BRAFV600E expression in melanocytes, nevi become macroscopically visible by P50, consist of scattered nests of pigment-containing cells, first appear by P6, reach maximum size between P16-P21, and are growth-arrested by P21 as evidenced by lack of BrdU incorporation and stable nest size distributions between P21 and P50.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9-C16 describe the temporal dynamics of nevus formation and growth arrest, supported by experimental observations using multiple imaging modalities (macroscopic, MPM, BrdU labeling). The data consistently show growth arrest by P21 (C14, C15) with stable sizes thereafter (C16). The conclusions are well-supported by the experimental data shown in Figure 1 and supplements.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:32:06.600061Z"
+    },
+    {
+      "id": "feab18a1-dfcb-401f-a73a-335c73da3263",
+      "content_id": "344fd1d3-98a1-434b-bcc4-d4b98e03f24a",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Single-cell RNA sequencing identified 14 skin cell types including four melanocyte subclusters: Mel 0 and Mel 1 (nevus melanocytes, found only in nevus-bearing skin, highly similar with slightly different pigment gene expression); Mel 2 (melanocyte stem cells expressing Cd34, present in both genotypes); and Mel 3 (mature hair follicle melanocytes present only during anagen at P30).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C17-C26 describe the single-cell RNA sequencing analysis and melanocyte cluster identification. The clustering is supported by data in Figure 2, with cell type assignments based on marker gene expression, temporal patterns, and comparison with published data (Zhang et al., 2020; Joshi et al., 2019). The identification of nevus melanocytes (Mel 0/1) is logical based on their exclusive presence in nevus-bearing animals.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:32:06.600061Z"
+    },
+    {
+      "id": "50d85e08-3256-4ca2-8272-37c7e95013ce",
+      "content_id": "344fd1d3-98a1-434b-bcc4-d4b98e03f24a",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Gene expression analysis using multiple senescence signatures failed to identify nevus melanocytes as senescent; they ranked as less senescent than average skin cells in 5 of 8 signatures, with only Cdkn2a upregulated among classical markers (but also upregulated in fibroblasts). The meta-PCNA proliferation signature correctly identified nevus melanocytes as non-proliferative, validating the analytical approach.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C41 present the core negative finding regarding senescence. The analysis is comprehensive, testing multiple published signatures (Figure 3 and supplements). The validation using the meta-PCNA signature (C32-C33) and analysis of published BRAFV600E-transduced melanocytes (C39-C40) strengthen confidence in the approach. The conclusion (C41) that nevus melanocytes are not senescent is well-supported by the systematic analysis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:32:06.600061Z"
+    },
+    {
+      "id": "7204c4c7-6309-41c2-9369-8f0d2d15c776",
+      "content_id": "344fd1d3-98a1-434b-bcc4-d4b98e03f24a",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The relatively high expression of proliferation-associated genes in hair follicle melanocytes (Mel 3) compared to nevus melanocytes was consistent between BRAFV600E-expressing and control mice, suggesting tissue context plays a role in whether BRAFV600E-expressing cells arrest growth.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C35 make an important observation about context-dependence of growth arrest. The data (Figure 3\u2014figure supplement 2) show that proliferation gene expression differences between melanocyte populations are independent of Braf mutation status, supporting the inference about tissue context (C35).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:32:06.600061Z"
+    },
+    {
+      "id": "ee0bbb5f-c572-4954-a9c0-e73bb54dfc1e",
+      "content_id": "344fd1d3-98a1-434b-bcc4-d4b98e03f24a",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Stochastic modeling of cell-autonomous arrest shows that for clones to arrest within 30 cell cycles with 95-99% probability, the per-cycle arrest probability must be 0.52-0.56, producing mean clone sizes of only 18.5 cells and extremely heavy-tailed size distributions. In contrast, observed mouse nevi contain 100-1000 cells with log-normal size distributions (mean radius 76.8 \u00b5m), a pattern also seen in human nevi, which cannot be generated by any cell-autonomous, random, time-independent, one-step process.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C53 present mathematical modeling results showing incompatibility between simple cell-autonomous arrest models and observed nevus size distributions. The simulations (Figure 4A-E) are well-described, and the comparison with empirical data (C47-C50) clearly demonstrates the mismatch. The mathematical derivation (C52) and conclusion (C53) are logically sound.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:32:06.600061Z"
+    },
+    {
+      "id": "1bba04cb-ac28-4116-a195-80156ce4423e",
+      "content_id": "344fd1d3-98a1-434b-bcc4-d4b98e03f24a",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Multi-step cell-autonomous models require increasingly high per-step transition probabilities (0.66 for 3 steps, 0.74 for 5 steps) to achieve arrest within 30 cycles. While these models produce less heavy-tailed distributions approaching log-normal, producing nevi of 200 cells requires 4-5 independent events, and 500 cells requires 6-7 events.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54-C58 extend the modeling to multi-step processes. The simulations (Figure 4F-I) show that while multi-step models can produce more realistic distributions, they require implausibly many independent events (4-7 steps) to match observed nevus sizes. The analysis is rigorous and the conclusions are well-supported.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:32:06.600061Z"
+    },
+    {
+      "id": "19f36a16-7a99-4658-9679-5e2e47c19b39",
+      "content_id": "344fd1d3-98a1-434b-bcc4-d4b98e03f24a",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "While cell-autonomous cell cycle counting can occur in early embryos (up to ~12 divisions), no mechanism exists for growing cells to track more than a few divisions, and telomere erosion does not occur significantly in nevus melanocytes. In contrast, cell-cell communication can easily achieve clock-like behavior without intrinsic cell memory.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59-C62 provide biological context for why multi-step cell-autonomous models are implausible. C59-C61 are supported by citations (Tadros and Lipshitz, 2009; Michaloglou et al., 2005). C62 is a theoretical argument based on feedback control principles, which is reasonable but represents an inference rather than direct evidence.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:32:06.600061Z"
+    },
+    {
+      "id": "96d9c6e8-9e75-435d-b83d-955a0117a012",
+      "content_id": "344fd1d3-98a1-434b-bcc4-d4b98e03f24a",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Renewal control, a feedback process where differentiated cells control progenitor self-renewal probability (often mediated by TGF-\u03b2 superfamily members), produces robust population sizes independent of cell cycle speed or starting cell numbers. When simulated probabilistically, renewal control produces log-normal clone size distributions because it enforces cell cooperation, causing entire clones to stop once a small fraction arrests.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C63-C68 describe the renewal control model and its predictions. The theoretical framework is well-established (Lander, 2011; Lander et al., 2009; Buzi et al., 2015). The simulations (Figure 5B-D) demonstrate that feedback models naturally produce log-normal distributions matching observations. The explanation of the mechanism (C67) is clear and logical.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:32:06.600061Z"
+    },
+    {
+      "id": "990b1c47-14a7-4caf-aaf8-b509915b91aa",
+      "content_id": "344fd1d3-98a1-434b-bcc4-d4b98e03f24a",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Nevus melanocytes express multiple genes encoding ligands with known or suspected growth inhibitory activities and their receptors, including TGF\u03b2 superfamily members (Gdf11, Gdf15, Tgfb1, Tgfb2, Tgfb3) and other growth inhibition-associated genes (Angptl2, Angptl4, Il6, Sema3a, Sema3b, Sema3f).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C69 reports gene expression observations from the single-cell RNA sequencing data. The expression of these genes is supported by the data, and their functional annotations are supported by citations (Attisano and Wrana, 1996; Neufeld et al., 2016; Santulli, 2014). This provides molecular candidates consistent with the feedback model.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:32:06.600061Z"
+    },
+    {
+      "id": "e3414e17-9379-4fe6-bdce-57d7f8cfdb25",
+      "content_id": "344fd1d3-98a1-434b-bcc4-d4b98e03f24a",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Spatial analysis of nest locations shows that large nests have fewer large neighbors within 45 \u00b5m than small nests do, with observed distributions deviating significantly from random permutations for neighbor sizes >30 \u00b5m. This spatial correlation, which disappears at 150 \u00b5m distances, supports the view that nests inhibit each other's growth through short-range signals.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C70-C77 present spatial correlation analysis testing a prediction of the feedback model. The theoretical prediction (C70-C72) is logical, and the empirical analysis (C73-C77) using permutation tests (Figure 5E-F and supplement) provides statistical support for spatial correlations at short range (<150 \u00b5m) consistent with diffusible factor signaling. The analysis is rigorous and the conclusion (C76) is well-supported.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:32:06.600061Z"
+    },
+    {
+      "id": "f8205d17-9209-4c29-adb9-d3faeb62b5e9",
+      "content_id": "344fd1d3-98a1-434b-bcc4-d4b98e03f24a",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The study concludes that nevus melanocytes are not senescent by gene expression criteria, being less senescent than many normal skin cells. While Cdkn2A is highly expressed in nevus cells, it is neither necessary nor sufficient for oncogene-mediated melanocyte growth arrest, and there is little support for senescence being the cause of proliferation arrest.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C78-C84 summarize the main conclusions regarding senescence. The conclusion is well-supported by the comprehensive gene expression analysis (C79-C80), agreement with prior work (C81), and functional evidence about Cdkn2A (C82-C83). The overall conclusion (C84) follows logically from the evidence presented.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:32:06.600061Z"
+    },
+    {
+      "id": "ad506f37-1a4b-4a66-840b-6a4165f1b2b1",
+      "content_id": "344fd1d3-98a1-434b-bcc4-d4b98e03f24a",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Single-cell RNA sequencing data do not support proposed roles for specific SASP factors in nevus melanocyte arrest: Igfbp7 is primarily expressed by fibroblasts/endothelial cells (not nevus melanocytes); Mia transcripts were not detected in nevus melanocytes; Il1a was detected at lower levels than other skin cells; Il6 was weakly expressed; and type I interferons and Cxcl15 were not detected.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C85-C89 test specific hypotheses from prior literature about SASP factors. The single-cell RNA sequencing data clearly show that the proposed factors are either not expressed or not enriched in nevus melanocytes. This provides strong evidence against these specific mechanistic models, though the authors acknowledge limitations of scRNA-seq for low-expression genes.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:32:06.600061Z"
+    },
+    {
+      "id": "6e39d8ea-f91d-43e5-8ac2-d02b131dbb63",
+      "content_id": "344fd1d3-98a1-434b-bcc4-d4b98e03f24a",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The authors favor the renewal-feedback model over OIS models. Evidence that nevi can exhibit low-level mitoses, grow in response to UV light or immunosuppression, and re-grow after incomplete surgical resection (stopping again at typical nevus size) is problematic for non-feedback models but precisely matches renewal feedback predictions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C90-C94 present the authors' preferred model and supporting evidence from the literature. The observations about nevus plasticity (C91-C93) are supported by citations (Glatz et al., 2010; Rudolph et al., 1998; Shain and Bastian, 2016; Vilain et al., 2016). The argument that re-growth after resection (C93-C94) is particularly diagnostic for feedback control is logical and well-reasoned.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:32:06.600061Z"
+    },
+    {
+      "id": "294f5ccf-7999-4b5b-8484-91fe065f67d0",
+      "content_id": "344fd1d3-98a1-434b-bcc4-d4b98e03f24a",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "During the hair cycle, melanocyte stem cells produce progeny that migrate and differentiate, and experimental conditions allowing differentiation within the bulge cause loss of the entire stem cell pool (with hair graying). This behavior\u2014where differentiated cells drive progenitor differentiation\u2014exemplifies the feedback mechanisms that drive renewal control models.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C95-C97 provide a biological example of feedback control in melanocyte biology. C95 describes established biology, C96 is supported by citation (Nishimura et al., 2005), and C97 makes a reasonable connection to the theoretical framework. This strengthens the plausibility of the feedback model.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:32:06.600061Z"
+    },
+    {
+      "id": "11d3432a-858e-4b46-9753-22137a86b151",
+      "content_id": "344fd1d3-98a1-434b-bcc4-d4b98e03f24a",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Nevi are one of many benign, clonal, oncogene-driven lesions that rarely progress to malignancy, suggesting homeostatic mechanisms persist through multiple stages of cancer development. Detailed elucidation of these mechanisms may lead to new avenues for cancer prevention and treatment.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C98-C99 place the findings in broader context, with C98 supported by citation (Adashek et al., 2020). C99 is a reasonable inference from the existence of benign oncogene-driven lesions. C100 is speculative about future applications, which is appropriate for a discussion section.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:32:06.600061Z"
+    },
+    {
+      "id": "a28d88cd-86c0-42ad-b235-5aba56743ccd",
+      "content_id": "344fd1d3-98a1-434b-bcc4-d4b98e03f24a",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Cell number estimates for mouse nevi were obtained through two methods: measuring cell diameter (5.68 \u00b5m), cell density (14.4 cells per 104 \u00b5m\u00b3), nest dimensions (cross-sectional area 1385 \u00b5m\u00b2, volume 38792 \u00b5m\u00b3), and nest number per nevus (~12), yielding an estimate of 672 cells/nevus. Considering uncertainties, a range of 100-3000 cells is used in analyses.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C101-C104 describe the methodology for estimating nevus cell numbers. The measurements are clearly described and the calculations are straightforward. The acknowledgment of uncertainty and use of a broad range (100-3000 cells) in subsequent analyses (C101) is appropriately conservative.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:32:06.600061Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "fcbe6ffb-87dd-404d-a8e4-b55c87a1c16d",
+      "result_id": "7c4b7b10-2035-4980-a6ec-bc3213051934"
+    },
+    {
+      "claim_id": "bbe3d2b5-1c5e-4672-85af-347d2d074a3b",
+      "result_id": "7c4b7b10-2035-4980-a6ec-bc3213051934"
+    },
+    {
+      "claim_id": "d9aa47a2-6ade-4111-b2f9-c97d45be2460",
+      "result_id": "7c4b7b10-2035-4980-a6ec-bc3213051934"
+    },
+    {
+      "claim_id": "f66477c6-5667-4d2e-abbf-d2141b81887d",
+      "result_id": "7c4b7b10-2035-4980-a6ec-bc3213051934"
+    },
+    {
+      "claim_id": "c258432d-e470-418d-9fe1-6d62103c73ca",
+      "result_id": "7c4b7b10-2035-4980-a6ec-bc3213051934"
+    },
+    {
+      "claim_id": "450a13a5-e55a-4728-9896-4c8fe99bdab9",
+      "result_id": "d13c583e-588b-4031-bf8c-0df4b5ff2350"
+    },
+    {
+      "claim_id": "7c44e0f6-0371-4b51-be85-1562d01be2b4",
+      "result_id": "d13c583e-588b-4031-bf8c-0df4b5ff2350"
+    },
+    {
+      "claim_id": "ed6df44b-78fc-463e-9617-2da78db93ad9",
+      "result_id": "d13c583e-588b-4031-bf8c-0df4b5ff2350"
+    },
+    {
+      "claim_id": "266483ce-b222-4f6b-a71e-ea6a8a4a65c2",
+      "result_id": "2da1f0e0-6b08-4117-b8eb-f1e04131e95b"
+    },
+    {
+      "claim_id": "905b2372-6893-4f43-a82a-3b535d50d238",
+      "result_id": "2da1f0e0-6b08-4117-b8eb-f1e04131e95b"
+    },
+    {
+      "claim_id": "abf6f915-758b-4e67-aeed-a6f7c3c3190d",
+      "result_id": "2da1f0e0-6b08-4117-b8eb-f1e04131e95b"
+    },
+    {
+      "claim_id": "1d0b2fc8-6f18-4c3a-9c3a-67336d509b48",
+      "result_id": "2da1f0e0-6b08-4117-b8eb-f1e04131e95b"
+    },
+    {
+      "claim_id": "0c548938-97cd-4c1f-bd88-9120c40173e1",
+      "result_id": "2da1f0e0-6b08-4117-b8eb-f1e04131e95b"
+    },
+    {
+      "claim_id": "bf5e2337-a087-4cf0-a425-d4f734a40187",
+      "result_id": "2da1f0e0-6b08-4117-b8eb-f1e04131e95b"
+    },
+    {
+      "claim_id": "68f14e7c-0a09-4480-891f-af8deb0ec374",
+      "result_id": "2da1f0e0-6b08-4117-b8eb-f1e04131e95b"
+    },
+    {
+      "claim_id": "1cf29f13-2840-4afc-b1ec-18d727ee434a",
+      "result_id": "2da1f0e0-6b08-4117-b8eb-f1e04131e95b"
+    },
+    {
+      "claim_id": "3c3564fa-d461-4c93-9245-99270a28d2a7",
+      "result_id": "feab18a1-dfcb-401f-a73a-335c73da3263"
+    },
+    {
+      "claim_id": "5f042471-699e-4e4b-9155-b627de879c12",
+      "result_id": "feab18a1-dfcb-401f-a73a-335c73da3263"
+    },
+    {
+      "claim_id": "44750002-492e-4520-a2cb-488a66736a3b",
+      "result_id": "feab18a1-dfcb-401f-a73a-335c73da3263"
+    },
+    {
+      "claim_id": "1895d3f8-18c5-4208-b6d7-b6694c10636b",
+      "result_id": "feab18a1-dfcb-401f-a73a-335c73da3263"
+    },
+    {
+      "claim_id": "0f0fdd4f-6c2a-49e1-93ef-23e2117f34b4",
+      "result_id": "feab18a1-dfcb-401f-a73a-335c73da3263"
+    },
+    {
+      "claim_id": "3184da59-4a38-4e92-81db-db2f63c6c1fd",
+      "result_id": "feab18a1-dfcb-401f-a73a-335c73da3263"
+    },
+    {
+      "claim_id": "bfb77f1d-3007-4625-873d-8b8c95bffedc",
+      "result_id": "feab18a1-dfcb-401f-a73a-335c73da3263"
+    },
+    {
+      "claim_id": "f7b4420c-a168-42e6-8af5-7929f945063e",
+      "result_id": "feab18a1-dfcb-401f-a73a-335c73da3263"
+    },
+    {
+      "claim_id": "3a4bed80-8794-4b04-ba96-d7af4dc6e497",
+      "result_id": "feab18a1-dfcb-401f-a73a-335c73da3263"
+    },
+    {
+      "claim_id": "def7e1de-ae3c-46fa-af6c-5f28ce90d602",
+      "result_id": "feab18a1-dfcb-401f-a73a-335c73da3263"
+    },
+    {
+      "claim_id": "7f6443ed-c444-47b9-bf1c-62523e34907a",
+      "result_id": "50d85e08-3256-4ca2-8272-37c7e95013ce"
+    },
+    {
+      "claim_id": "4a4fec5c-15d4-4ac1-a46e-5ecd68dc595a",
+      "result_id": "50d85e08-3256-4ca2-8272-37c7e95013ce"
+    },
+    {
+      "claim_id": "14d7889b-7b56-4dc6-8da4-deaf7c36adb6",
+      "result_id": "50d85e08-3256-4ca2-8272-37c7e95013ce"
+    },
+    {
+      "claim_id": "79096ac3-9e01-4e09-bb65-a10b7ba9d6ce",
+      "result_id": "50d85e08-3256-4ca2-8272-37c7e95013ce"
+    },
+    {
+      "claim_id": "58c207f2-951c-4b2a-be19-c4328425382d",
+      "result_id": "50d85e08-3256-4ca2-8272-37c7e95013ce"
+    },
+    {
+      "claim_id": "212d22bc-d628-40ab-bd4c-83bc7ceb0d17",
+      "result_id": "50d85e08-3256-4ca2-8272-37c7e95013ce"
+    },
+    {
+      "claim_id": "3ff238db-1f2b-4ec6-9a72-afa3d085e8c4",
+      "result_id": "50d85e08-3256-4ca2-8272-37c7e95013ce"
+    },
+    {
+      "claim_id": "9e355dda-fd19-456d-8e5f-351a918fa9d3",
+      "result_id": "50d85e08-3256-4ca2-8272-37c7e95013ce"
+    },
+    {
+      "claim_id": "f077e595-a3fd-476d-8423-faf164cdaf66",
+      "result_id": "50d85e08-3256-4ca2-8272-37c7e95013ce"
+    },
+    {
+      "claim_id": "14c995ce-4104-4625-9908-07646e355a67",
+      "result_id": "50d85e08-3256-4ca2-8272-37c7e95013ce"
+    },
+    {
+      "claim_id": "284225c1-ac1c-4914-b2f1-d688ce4da5fe",
+      "result_id": "50d85e08-3256-4ca2-8272-37c7e95013ce"
+    },
+    {
+      "claim_id": "c1cc38b4-ab01-416c-9e27-7961b44b7f6b",
+      "result_id": "50d85e08-3256-4ca2-8272-37c7e95013ce"
+    },
+    {
+      "claim_id": "d2004d25-b90c-4209-ba6c-0b9b16dc5711",
+      "result_id": "7204c4c7-6309-41c2-9369-8f0d2d15c776"
+    },
+    {
+      "claim_id": "49a732a2-77ae-40ff-8096-ecd950157205",
+      "result_id": "7204c4c7-6309-41c2-9369-8f0d2d15c776"
+    },
+    {
+      "claim_id": "e7f1484d-06a5-4e59-b4ab-84518b06f3ae",
+      "result_id": "ee0bbb5f-c572-4954-a9c0-e73bb54dfc1e"
+    },
+    {
+      "claim_id": "d7a30f49-efc1-40b4-820d-1f4e5599ad13",
+      "result_id": "ee0bbb5f-c572-4954-a9c0-e73bb54dfc1e"
+    },
+    {
+      "claim_id": "87f15a9d-74da-4548-ab97-9f805b6efda3",
+      "result_id": "ee0bbb5f-c572-4954-a9c0-e73bb54dfc1e"
+    },
+    {
+      "claim_id": "72435577-a1a4-4bf0-b1ef-df8fd0c34e4e",
+      "result_id": "ee0bbb5f-c572-4954-a9c0-e73bb54dfc1e"
+    },
+    {
+      "claim_id": "b7efc595-e3ca-4e5d-9f43-dea0e33f07c5",
+      "result_id": "ee0bbb5f-c572-4954-a9c0-e73bb54dfc1e"
+    },
+    {
+      "claim_id": "3e129a32-f067-4e84-bb2f-de559a6acf8b",
+      "result_id": "ee0bbb5f-c572-4954-a9c0-e73bb54dfc1e"
+    },
+    {
+      "claim_id": "d32228a6-1c36-4e5a-8eed-a403b6d9e8f6",
+      "result_id": "ee0bbb5f-c572-4954-a9c0-e73bb54dfc1e"
+    },
+    {
+      "claim_id": "acf5310f-b3f5-4c3c-a31b-15c5cac99d19",
+      "result_id": "ee0bbb5f-c572-4954-a9c0-e73bb54dfc1e"
+    },
+    {
+      "claim_id": "3ba3e59b-2203-4b76-b74c-e7326ae0e8d9",
+      "result_id": "ee0bbb5f-c572-4954-a9c0-e73bb54dfc1e"
+    },
+    {
+      "claim_id": "373eae1f-91f9-4713-9e28-8ed3a5c0cba5",
+      "result_id": "ee0bbb5f-c572-4954-a9c0-e73bb54dfc1e"
+    },
+    {
+      "claim_id": "2f0ed245-3ec6-45d8-bafd-426fb0d9f663",
+      "result_id": "ee0bbb5f-c572-4954-a9c0-e73bb54dfc1e"
+    },
+    {
+      "claim_id": "00b7331e-2224-410f-92c6-dda49b0d6f6b",
+      "result_id": "ee0bbb5f-c572-4954-a9c0-e73bb54dfc1e"
+    },
+    {
+      "claim_id": "c891d3b9-bb36-48f9-b685-45276fb6dfe0",
+      "result_id": "1bba04cb-ac28-4116-a195-80156ce4423e"
+    },
+    {
+      "claim_id": "2cc52b53-e21c-4d49-a8eb-3c2f192a6088",
+      "result_id": "1bba04cb-ac28-4116-a195-80156ce4423e"
+    },
+    {
+      "claim_id": "37a34d13-886f-48d8-a5d3-3fd44afbeb34",
+      "result_id": "1bba04cb-ac28-4116-a195-80156ce4423e"
+    },
+    {
+      "claim_id": "a6a7fa8e-c21c-4c81-b4d1-fc04e1a34612",
+      "result_id": "1bba04cb-ac28-4116-a195-80156ce4423e"
+    },
+    {
+      "claim_id": "04a642f1-cef4-4d3b-9947-eb3103d3ac62",
+      "result_id": "1bba04cb-ac28-4116-a195-80156ce4423e"
+    },
+    {
+      "claim_id": "5d5f6259-4006-4762-b0ca-ed24ecf41040",
+      "result_id": "19f36a16-7a99-4658-9679-5e2e47c19b39"
+    },
+    {
+      "claim_id": "651c341a-0051-41cc-9620-6c27d0027d8c",
+      "result_id": "19f36a16-7a99-4658-9679-5e2e47c19b39"
+    },
+    {
+      "claim_id": "b145df24-636c-4122-a98d-98a6adce522f",
+      "result_id": "19f36a16-7a99-4658-9679-5e2e47c19b39"
+    },
+    {
+      "claim_id": "133277e3-984d-4124-8a9b-6d032b4578a8",
+      "result_id": "19f36a16-7a99-4658-9679-5e2e47c19b39"
+    },
+    {
+      "claim_id": "56cd9cd7-86ce-4a90-88b0-c5d01ffbdc5b",
+      "result_id": "96d9c6e8-9e75-435d-b83d-955a0117a012"
+    },
+    {
+      "claim_id": "e00ba9fc-afc5-4cd3-aad7-82625ad4a687",
+      "result_id": "96d9c6e8-9e75-435d-b83d-955a0117a012"
+    },
+    {
+      "claim_id": "661ca715-4bd6-4756-8b25-899cbc4ac848",
+      "result_id": "96d9c6e8-9e75-435d-b83d-955a0117a012"
+    },
+    {
+      "claim_id": "73956485-5d9e-48dd-b92d-a1e4f4355b83",
+      "result_id": "96d9c6e8-9e75-435d-b83d-955a0117a012"
+    },
+    {
+      "claim_id": "f4e02b48-53cf-4281-894f-88aac50605a4",
+      "result_id": "96d9c6e8-9e75-435d-b83d-955a0117a012"
+    },
+    {
+      "claim_id": "3c83547d-e978-46d4-871a-32f81012aad5",
+      "result_id": "96d9c6e8-9e75-435d-b83d-955a0117a012"
+    },
+    {
+      "claim_id": "89900515-1399-4286-a5de-afc29f10773a",
+      "result_id": "990b1c47-14a7-4caf-aaf8-b509915b91aa"
+    },
+    {
+      "claim_id": "697308fa-abd6-4401-9f4c-9a93a4f82d40",
+      "result_id": "e3414e17-9379-4fe6-bdce-57d7f8cfdb25"
+    },
+    {
+      "claim_id": "48ec883e-8caf-45c0-8e8d-8677b9596b14",
+      "result_id": "e3414e17-9379-4fe6-bdce-57d7f8cfdb25"
+    },
+    {
+      "claim_id": "3d8a0367-de5a-4320-9ac3-c2eca75d5104",
+      "result_id": "e3414e17-9379-4fe6-bdce-57d7f8cfdb25"
+    },
+    {
+      "claim_id": "ace9c2dd-9f32-46e7-94b5-1d30c3efb8cf",
+      "result_id": "e3414e17-9379-4fe6-bdce-57d7f8cfdb25"
+    },
+    {
+      "claim_id": "7d068785-c19b-4fbe-a96e-c2e061fa69a7",
+      "result_id": "e3414e17-9379-4fe6-bdce-57d7f8cfdb25"
+    },
+    {
+      "claim_id": "30649542-db0e-4e2c-910e-50b524d464c9",
+      "result_id": "e3414e17-9379-4fe6-bdce-57d7f8cfdb25"
+    },
+    {
+      "claim_id": "09f16d78-e8c3-497b-81d8-fed15ae8eb14",
+      "result_id": "e3414e17-9379-4fe6-bdce-57d7f8cfdb25"
+    },
+    {
+      "claim_id": "4a9e402e-19e8-4c48-91ba-1dd11879102a",
+      "result_id": "e3414e17-9379-4fe6-bdce-57d7f8cfdb25"
+    },
+    {
+      "claim_id": "6f8dcfb6-7472-4ea9-b8bc-643d847ec5bf",
+      "result_id": "f8205d17-9209-4c29-adb9-d3faeb62b5e9"
+    },
+    {
+      "claim_id": "71f83cea-e8d0-4bba-b135-2e2d62c77b0b",
+      "result_id": "f8205d17-9209-4c29-adb9-d3faeb62b5e9"
+    },
+    {
+      "claim_id": "e3fdb0f9-4647-4f19-8b42-3215957b2587",
+      "result_id": "f8205d17-9209-4c29-adb9-d3faeb62b5e9"
+    },
+    {
+      "claim_id": "7e4031f7-53f7-418d-8af7-b3bc897f83db",
+      "result_id": "f8205d17-9209-4c29-adb9-d3faeb62b5e9"
+    },
+    {
+      "claim_id": "cd803476-953c-4cc0-afed-f763490bb074",
+      "result_id": "f8205d17-9209-4c29-adb9-d3faeb62b5e9"
+    },
+    {
+      "claim_id": "62da8bb8-de6d-4601-a121-ee24c0e9911a",
+      "result_id": "f8205d17-9209-4c29-adb9-d3faeb62b5e9"
+    },
+    {
+      "claim_id": "9962f3c1-5a78-454b-b571-3c8e377e49b2",
+      "result_id": "f8205d17-9209-4c29-adb9-d3faeb62b5e9"
+    },
+    {
+      "claim_id": "edb620a2-0f2f-445c-8d24-4eb53614a725",
+      "result_id": "ad506f37-1a4b-4a66-840b-6a4165f1b2b1"
+    },
+    {
+      "claim_id": "13eb5e81-36b9-4820-9c67-fbd13f6ad7c1",
+      "result_id": "ad506f37-1a4b-4a66-840b-6a4165f1b2b1"
+    },
+    {
+      "claim_id": "d922e83e-9d4a-4ec9-adb3-94c03b500b51",
+      "result_id": "ad506f37-1a4b-4a66-840b-6a4165f1b2b1"
+    },
+    {
+      "claim_id": "767dce5f-f0d9-4492-9141-ff24887b7879",
+      "result_id": "ad506f37-1a4b-4a66-840b-6a4165f1b2b1"
+    },
+    {
+      "claim_id": "dba9566a-5787-47ee-867e-a729d2909780",
+      "result_id": "ad506f37-1a4b-4a66-840b-6a4165f1b2b1"
+    },
+    {
+      "claim_id": "cc52d301-2e6b-4156-b912-e437654774a7",
+      "result_id": "6e39d8ea-f91d-43e5-8ac2-d02b131dbb63"
+    },
+    {
+      "claim_id": "946e5f67-8c01-49a9-94ca-a7be7af78c70",
+      "result_id": "6e39d8ea-f91d-43e5-8ac2-d02b131dbb63"
+    },
+    {
+      "claim_id": "99403de1-062e-4bcb-89d0-5f03b0111ece",
+      "result_id": "6e39d8ea-f91d-43e5-8ac2-d02b131dbb63"
+    },
+    {
+      "claim_id": "e29835a8-7ff5-47c2-afc0-e09167373544",
+      "result_id": "6e39d8ea-f91d-43e5-8ac2-d02b131dbb63"
+    },
+    {
+      "claim_id": "23501fbe-b62d-423f-b118-dc284afe20b5",
+      "result_id": "6e39d8ea-f91d-43e5-8ac2-d02b131dbb63"
+    },
+    {
+      "claim_id": "523a45ae-4392-4607-807d-8816ad28f4fd",
+      "result_id": "294f5ccf-7999-4b5b-8484-91fe065f67d0"
+    },
+    {
+      "claim_id": "5e092444-7535-4c1f-98a1-a5e6b3941353",
+      "result_id": "294f5ccf-7999-4b5b-8484-91fe065f67d0"
+    },
+    {
+      "claim_id": "8f94ee7a-f7db-4458-994a-538090708703",
+      "result_id": "294f5ccf-7999-4b5b-8484-91fe065f67d0"
+    },
+    {
+      "claim_id": "46377ee2-78dd-4f68-abd9-e146e3597a3e",
+      "result_id": "11d3432a-858e-4b46-9753-22137a86b151"
+    },
+    {
+      "claim_id": "abea8642-226c-4327-bb91-72ecfc682dcd",
+      "result_id": "11d3432a-858e-4b46-9753-22137a86b151"
+    },
+    {
+      "claim_id": "f99af5c1-3206-4780-af97-f6a68be7ab4d",
+      "result_id": "11d3432a-858e-4b46-9753-22137a86b151"
+    },
+    {
+      "claim_id": "f8cba0a7-518f-47e3-9974-8e826fb1a7fa",
+      "result_id": "a28d88cd-86c0-42ad-b235-5aba56743ccd"
+    },
+    {
+      "claim_id": "a3cb7dbd-78d6-48b0-bb4f-bb5824bf6005",
+      "result_id": "a28d88cd-86c0-42ad-b235-5aba56743ccd"
+    },
+    {
+      "claim_id": "d048cf32-1331-46da-a366-57cbdf18f320",
+      "result_id": "a28d88cd-86c0-42ad-b235-5aba56743ccd"
+    },
+    {
+      "claim_id": "f3a16b6c-db32-4ac7-9026-3b05e57efade",
+      "result_id": "a28d88cd-86c0-42ad-b235-5aba56743ccd"
+    }
+  ],
+  "comparisons": []
+}

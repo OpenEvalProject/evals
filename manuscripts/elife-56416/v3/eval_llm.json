@@ -1,0 +1,344 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "Phylogenetic analysis reveals that AQP1 is the ancestral aquaporin present in all trypanosome species, with gene duplications leading to 1-3 aquaporins across species. TbAQP2 shows evidence of positive selection (dN/dS = 2.0) for increased pore size, with unique modifications to conserved NPA/NPA and ar/R selectivity filter motifs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C13 present a coherent phylogenetic analysis with quantitative dN/dS ratios and sequence alignment data (C10). The positive selection interpretation (C13) is well-supported by the high dN/dS ratio of 2.0 compared to purifying selection values of 0.21-0.30 for other AQPs (C11-C12). The phylogenetic tree and sequence alignments provide direct evidence for these evolutionary relationships.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "Introduction of conserved aquaporin motifs (NPA/NPA and ar/R selectivity filter residues) into TbAQP2 dramatically reduces pentamidine transport. The S131P/S263A mutant reduced uptake to 4.40\u00b10.71% of wild-type, L258Y to 6.6\u00b11.4%, while I110W and L264R mutations abolished transport entirely.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C18 provide quantitative transport data with appropriate statistical analysis (p-values, n values, Student's t-tests). The conclusion (C19) that both NPA/NPA and WGYR motif modifications are necessary is well-supported by the systematic mutational analysis showing graded effects on transport. The data consistently show that introducing conserved aquaporin features reduces pentamidine permeability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "Reciprocal mutagenesis converting TbAQP3 WGYR residues to TbAQP2 equivalents (W102I/R256L/Y250L) confers pentamidine transport capability to TbAQP3, though at lower levels than wild-type TbAQP2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C21 present transport and drug sensitivity data with statistical significance (p<0.01, p<0.0001). The gain-of-function experiment provides strong complementary evidence to the loss-of-function mutations in TbAQP2. The requirement for all three WGYR substitutions (C20 shows W102I/R256L alone was insufficient) supports the specificity of these residues in determining pentamidine permeability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Mutations at positions I190 and W192, predicted to interact with pentamidine in the pore, reduce pentamidine transport. I190T reduced uptake to 2.7\u00b10.7% through decreased Vmax rather than altered Km, while the double mutant I190T/W192G abolished transport.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C25 provide quantitative transport data with kinetic analysis (C24). The Vmax vs Km distinction (C24) is important mechanistically and is supported by supplementary kinetic data. The additive effect of the double mutation (C25) strengthens the interpretation that these residues are functionally important for pentamidine permeation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "Introduction of bulky tryptophan residues at the cytoplasmic end of TbAQP2 (L84W, L118W, L218W) dramatically reduces pentamidine transport in a size-dependent manner, while methionine substitutions at the same positions largely preserve function. All mutants retain glycerol transport capability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C29 present systematic mutagenesis data showing size-dependent effects on pentamidine transport. The comparison between Trp and Met substitutions (C28) provides strong evidence for steric effects. The retention of glycerol transport (C29) demonstrates that the mutants are functional aquaporins, ruling out global misfolding. The use of SHAM sensitivity as a proxy for glycerol transport is reasonable given the established relationship.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Partial inhibition of endocytosis by CRK12 RNAi (42% mRNA reduction) significantly reduced suramin uptake but did not affect pentamidine uptake, suggesting pentamidine entry is independent of endocytosis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C32 provide a controlled experiment with appropriate positive control (suramin, known to enter by endocytosis). The 42% CRK12 knockdown (C30) was sufficient to reduce suramin uptake (C32, p=0.019) but not pentamidine (C31), providing evidence against endocytosis-mediated pentamidine entry. However, the partial knockdown is a limitation - complete inhibition would be more definitive.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C33"
+    ],
+    "result": "Pentamidine does not induce internalization and turnover of TbAQP2, as shown by identical protein turnover rates in the presence or absence of pentamidine.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C33 is supported by western blot quantification showing no difference in TbAQP2 turnover with or without pentamidine treatment. This argues against receptor-mediated endocytosis where ligand binding typically triggers internalization. The cycloheximide chase experiment is appropriately designed to measure protein half-life.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Ionophores inhibit pentamidine uptake, but CCCP also directly inhibits TbAQP2 (IC50 20.7\u00b12.6 \u03bcM for glycerol uptake) independent of membrane potential effects. The membrane potential of T. brucei is \u2212125 mV.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C37 distinguish between indirect effects (membrane potential) and direct inhibition. The key evidence is that CCCP inhibits neutral glycerol transport (C36) with similar IC50 to pentamidine inhibition, demonstrating direct TbAQP2 interaction. The membrane potential value (C35) is from cited literature. The experimental design appropriately uses neutral glycerol to separate membrane potential effects from direct inhibition.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Molecular dynamics simulations show pentamidine binds in an extended conformation (16.5-17 \u00c5 inter-amidine distance) at the minimum free-energy site in TbAQP2, can exit in either direction, and is driven inward by the \u2212125 mV membrane potential (~22 kJ/mol attraction).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C41 present computational results that are internally consistent and align with experimental observations. The extended conformation (C39) matches the SAR data showing optimal linker length. The bidirectional exit capability (C40) with membrane potential driving inward flux (C41) explains the experimental dependence on membrane potential. The computational methods are appropriate (steered MD, Jarzynski equality for free energy).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Structure-activity relationship analysis of pentamidine linker modifications shows optimal binding with 5-7 methylene units (submicromolar Ki), with ether oxygens contributing as H-bond acceptors (replacement with S or NH increases \u0394G0 by 10.0-12.9 kJ/mol).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C46 present systematic SAR data with quantitative binding measurements. The linker length optimization (C43) and functional group analysis (C44-C46) are well-documented with Ki values and free energy changes. The interpretation of ether oxygen roles as H-bond acceptors (C44) is supported by comparison with S and NH replacements and cited literature on electronic properties.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C47",
+      "C48"
+    ],
+    "result": "Both amidine groups are required for high-affinity pentamidine binding to TbAQP2, with removal of one H-bond donor causing >10 kJ/mol loss in binding energy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C48 are supported by matched-molecular pair analysis comparing symmetric and asymmetric analogues. The quantitative free energy changes provide strong evidence for the contribution of both amidines. This is consistent with the molecular dynamics showing pentamidine binding in an extended conformation where both ends interact with the pore.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Diamidines with rigid aromatic linkers (stilbamidine, diminazene, furamidines) show much lower binding affinity (Ki 38-63 \u03bcM) than flexible aliphatic diamidines. Modifications that increase flexibility or linearity (e.g., difuran spacer DB914, Ki=0.073 \u03bcM) restore high affinity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C54 present systematic SAR data showing the importance of linker flexibility and geometry. The comparison between rigid (low affinity) and flexible (high affinity) analogues is well-documented with Ki values. The structural interpretations regarding bond angles and molecular geometry are supported by cited literature and are chemically reasonable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C55",
+      "C56"
+    ],
+    "result": "Isometamidium inhibits pentamidine uptake (Ki=3.5 \u03bcM) but is not transported by TbAQP2, as evidenced by identical EC50 values across cell lines with and without functional TbAQP2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C56 distinguish between binding/inhibition and transport. The identical EC50 values across multiple cell lines (C56) provide strong evidence that isometamidium is not a substrate despite binding to TbAQP2. This demonstrates that not all compounds that bind TbAQP2 are transported, which is important for understanding selectivity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C58",
+      "C59"
+    ],
+    "result": "There is poor correlation (r\u00b2=0.039) between HAPT1 binding affinity and resistance in tbaqp2/tbaqp3 null cells, indicating many high-affinity inhibitors are not transported by TbAQP2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C59 present correlation analysis of 30 compounds showing lack of relationship between binding and transport. This is important evidence against a simple endocytosis model where binding should correlate with uptake. However, the caveat noted in the text that some compounds might use alternative transporters is appropriate and limits the strength of this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "No modification to pentamidine improved TbAQP2 binding affinity, but SAR analysis demonstrates that both amidine groups and at least one ether oxygen are involved in binding, contributing to the unusually high binding energy (\u0394G0 = \u221242.6 kJ/mol).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C61 summarize the extensive SAR study showing pentamidine is optimized for TbAQP2 binding. The binding energy value (C62) is from cited previous work. The conclusion that multiple functional groups contribute to binding is well-supported by the systematic SAR data showing that modifications to any part of the molecule reduce affinity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Multiple lines of evidence argue against endocytosis-mediated pentamidine uptake: pentamidine uptake is ~10-fold higher in procyclic forms despite lower endocytosis rates and similar TbAQP2 expression; TbAQP2 is spread across the cell surface in procyclics while endocytosis occurs only in the smaller flagellar pocket; heterologous expression in Leishmania produces >10-fold higher uptake than T. brucei BSF.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C70 present multiple independent lines of evidence from cited literature that are inconsistent with endocytosis-mediated uptake. The inverse correlation between endocytosis rate and pentamidine uptake (C64-C65) is particularly compelling. The spatial mismatch between TbAQP2 localization and endocytosis sites in procyclics (C67-C69) provides strong evidence against endocytosis. All claims are supported by appropriate citations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "The experimental Vmax for pentamidine uptake (9.5\u00d710\u2075 molecules/cell/h in BSF, 8.5\u00d710\u2076 in procyclics) would require implausibly rapid TbAQP2 turnover for an endocytosis mechanism, given the >4 hr protein half-life.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C73 present a quantitative argument against endocytosis based on cited kinetic data and measured protein turnover. The calculation showing that endocytosis would require recycling rates inconsistent with the observed half-life is logically sound. This is particularly strong for procyclic cells where the required rate would be ~10-fold higher. The argument assumes 1:1 stoichiometry which is reasonable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C74",
+      "C75"
+    ],
+    "result": "The high binding energy of pentamidine to TbAQP2 (\u0394G0 = \u221242 kJ/mol) cannot be explained by a single interaction with Asp265 as proposed in the endocytosis model, since a comparable double H-bond in TbAT1 contributes only ~16 kJ/mol.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C75 present a thermodynamic argument against the endocytosis model using cited binding energies and comparison to a related transporter. The logic is sound: if a double H-bond contributes ~16 kJ/mol in TbAT1, a single interaction with Asp265 cannot account for \u221242 kJ/mol binding energy. This supports the model of multiple interactions throughout the pore.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C76",
+      "C77"
+    ],
+    "result": "The combined evidence strongly suggests pentamidine enters T. brucei primarily through the TbAQP2 pore rather than by endocytosis, rendering the parasite extraordinarily sensitive to pentamidine and melarsoprol.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C77 represent the main conclusion integrating all experimental evidence: mutagenesis, SAR, molecular dynamics, endocytosis inhibition, protein turnover, and thermodynamic arguments. The conclusion is well-supported by the convergence of multiple independent lines of evidence. The claim of being the first detailed mechanistic evidence for organic drug transport by an aquaporin (C78) appears justified given the comprehensive nature of the study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5"
+    ],
+    "result": "TbAQP2 and TbAQP3 are tandemly arranged genes on chromosome 10 with 74% amino acid identity. TbAQP2 mediates pentamidine uptake while TbAQP3 does not, and chimeric AQP2/3 genes confer pentamidine resistance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C5 present established background information from cited literature (Baker et al., 2012; Munday et al., 2014; Graf et al., 2015). These are well-documented facts that provide context for the current study. The genomic organization (C1-C2) and functional differences (C3-C5) are foundational observations that motivated the detailed mechanistic investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C42"
+    ],
+    "result": "The Vmax for HAPT-mediated pentamidine uptake is 0.0044\u00b10.0004 pmol(10\u2077 cells)\u207b\u00b9 s\u207b\u00b9, reflecting slow off-rates due to high-affinity binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C42 cites a quantitative measurement from previous work (de Koning, 2001a). This is an established kinetic parameter used for subsequent calculations and interpretations. The value is consistent with the high binding affinity demonstrated in the SAR studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C57"
+    ],
+    "result": "Phloretin, a known inhibitor of human AQP9 and AQP3, displays a Ki of 1.76 \u03bcM for TbAQP2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C57 presents a single inhibition measurement with appropriate citation of phloretin's activity on human aquaporins. This provides a useful comparison point showing that some aquaporin inhibitors can cross-react with TbAQP2, though with modest affinity. This is a minor supporting observation rather than a central finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C63"
+    ],
+    "result": "TbAQP2 evolved by positive selection to remove constriction points including ar/R selectivity filter and NPA/NPA motif, resulting in an enlarged pore.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C63 synthesizes the phylogenetic analysis (C13) with cited structural studies. The positive selection interpretation is supported by the dN/dS ratio of 2.0, and the structural consequences are documented in cited literature (Baker et al., 2012; Munday et al., 2015a). This is a summary statement integrating current and prior work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C78"
+    ],
+    "result": "This is the first report providing detailed mechanistic evidence of organic drug uptake (MW 340 and 398) by an aquaporin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C78 asserts novelty and significance. While the comprehensive nature of the study (mutagenesis, SAR, molecular dynamics, etc.) is evident, evaluating whether this is truly the \"first\" detailed mechanistic evidence would require comprehensive literature review beyond the scope of this manuscript. The claim is plausible given the unusual nature of the findings, but cannot be definitively verified from the presented evidence alone.",
+    "result_type": "MAJOR"
+  }
+]

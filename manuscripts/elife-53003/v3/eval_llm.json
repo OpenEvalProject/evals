@@ -1,0 +1,350 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Global phosphoproteomic profiling identified 6025 phosphopeptides from 2428 proteins in HEK TER cells, revealing that transformation by ST or PP2A knockdown is associated with both increased phosphorylation (e.g., AKT1S, \u03b2-catenin) and decreased phosphorylation (e.g., four MAP4K4 sites: T804, S888, S889, S1272).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C41 describe the phosphoproteomic screen results with appropriate technical detail. The identification of 6025 phosphopeptides in replicate experiments (C38), validation of known PP2A targets (C39), and discovery of MAP4K4 phosphorylation changes (C41) are supported by Figure 1B and consistent with prior literature (C39 cites previous studies). The methodology appears sound with biological replicates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "SV40 ST interacts with STRIPAK components (PP2A C, STRN3, STRIP1) and MAP4K4, with the ST-MAP4K4 interaction being unique to SV40 ST compared to related polyomaviruses JCPyV and BKPyV.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C44 are supported by co-immunoprecipitation data (Figure 1\u2014figure supplement 1D) showing differential binding patterns between SV40 ST and related viral proteins. The specificity of MAP4K4 interaction to SV40 ST (C44) is demonstrated by comparing multiple polyomavirus ST proteins, providing appropriate controls.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Partial knockdown of MAP4K4 (approximately 50% reduction by shMAP4K4-82) induces transformation in HEK TER cells both in vitro (AI growth) and in vivo (tumor formation), while complete knockdown does not promote transformation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C51 describe a dose-dependent relationship between MAP4K4 knockdown and transformation. The use of 8 different shRNAs (C47-C49, Figure 2\u2014figure supplement 1B) provides strong evidence that partial but not complete knockdown induces transformation. In vivo validation (C50, Figure 2D-E) strengthens the conclusion. The 50% threshold is empirically determined and reproducible across multiple shRNAs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "ST expression enhances MAP4K4 interactions with STRIPAK components (STRIP1, STRN3, STRN4, PP2A A\u03b1) by 3-4-fold, and this interaction depends on ST binding to PP2A A\u03b1, as demonstrated by ST mutants unable to bind A\u03b1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C56 are supported by SILAC proteomics (C53, Figure 3B) and co-IP validation (C56, Figure 3C). The use of ST mutants (C54, Figure 3\u2014figure supplement 1A) provides strong mechanistic evidence that the interaction requires PP2A A\u03b1 binding. The quantitative fold-change measurements and mutant analysis provide robust support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "ST expression reduces phosphorylation at the majority of 17 quantified MAP4K4 sites, and STRN4 immune complexes from ST-expressing cells show enhanced PP2A-mediated dephosphorylation of MAP4K4 phosphopeptides (S771/S775, S876) compared to GFP control.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C59 are supported by targeted phosphoproteomics (C57, Figure 3D) and in vitro phosphatase assays (C58, Figure 3E). The phosphatase assay includes appropriate controls (okadaic acid treatment) and demonstrates >2-fold increased dephosphorylation for specific sites. The conclusion (C59) is well-supported by the experimental data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "MAP4K4 kinase activity is reduced in ST-expressing cells, and partial inhibition of MAP4K4 activity (either by pharmacological inhibitor at 2 \u03bcM or by kinase-dead K54R mutant) induces transformation, mimicking the effect of ST.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C65 are supported by in vitro kinase assays (C60, Figure 4A), dose-response experiments with MAP4K4 inhibitor (C61, Figure 4B), and genetic complementation with kinase-dead mutant (C63, Figure 4C). The convergence of pharmacological and genetic approaches strengthens the conclusion that MAP4K4 kinase activity attenuation drives transformation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "STRN4 is required for ST-mediated transformation and tumor formation, as demonstrated by dose-dependent reduction in AI growth with STRN4 knockdown, rescue with shRNA-resistant STRN4, and reduced tumor formation in vivo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C70 are supported by multiple lines of evidence: dose-dependent effects with 4 different shRNAs (C67, Figure 5\u2014figure supplement 1A-B), rescue experiments (C68, Figure 5D), and in vivo validation (C69, Figure 5E-F). The correlation between knockdown level and phenotype (C67) and the rescue experiment (C68) provide strong evidence for specificity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "STRN4 is required for MAP4K4 interactions with the STRIPAK complex; STRN4 knockdown increases MAP4K4 kinase activity, and co-knockdown of MAP4K4 or expression of kinase-dead MAP4K4 rescues the transformation defect caused by STRN4 depletion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C77 are supported by proteomics (C71, Figure 6B), co-IP experiments (C72), kinase assays (C74, Figure 6D), and genetic rescue experiments (C75-C76, Figure 6E and Figure 6\u2014figure supplement 1D). The epistasis analysis (C75-C76) provides strong evidence that STRN4 acts through MAP4K4 to regulate transformation. The modest but significant increase in MAP4K4 activity upon STRN4 knockdown (C74) is appropriately qualified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Partial MAP4K4 knockdown activates YAP1, as evidenced by decreased YAP1 S127 phosphorylation, reduced p-LATS1, increased expression of YAP1 target genes (CTGF, CYR61), and significant association with YAP1 gene signatures by ssGSEA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C82 are supported by transcriptomic analysis with ssGSEA (C78, Figure 7A), Western blots showing decreased pYAP1 S127 (C79, Figure 7B), reduced p-LATS1 (C80, Figure 7C), and increased YAP1 target gene expression (C81, Figure 7D-F). The convergence of multiple readouts for YAP1 activation provides strong support. The association with published YAP1 signatures (C78) adds external validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C83"
+    ],
+    "result": "STRN4 suppression in HEK TER ST cells increases pYAP1, consistent with increased MAP4K4 activity upon STRN4 knockdown.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C83 is supported by Western blot data (Figure 7G) and is consistent with the model that STRN4 knockdown increases MAP4K4 activity (C74), which would increase YAP1 phosphorylation and inactivation. This provides internal consistency to the proposed pathway.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "Transformation induced by partial MAP4K4 knockdown depends on YAP1, as co-suppression of YAP1 reduces AI growth by 3-fold, and expression of wild-type or constitutively active YAP1 (5SA) rescues the transformation defect caused by STRN4 knockdown.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C87 are supported by genetic epistasis experiments showing YAP1 requirement for MAP4K4 knockdown-induced transformation (C84, Figure 8A) and YAP1 rescue of STRN4 knockdown phenotype (C86, Figure 8B). These experiments establish YAP1 as a critical downstream effector in the pathway.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "The MAP4K4 knockdown signature associates with YAP1/TAZ gene signatures and dependency profiles across cancer cell lines (CCLE and Project Achilles), with significant associations to Hippo pathway genes (LATS2, PTPN14, NF2) and STRIPAK component CCM3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C92 are supported by computational analysis of large-scale datasets (CCLE, Project Achilles) showing significant associations (p<0.0001) between MAP4K4 knockdown signature and YAP1/Hippo pathway components (Figure 8C-E). The identification of CCM3 (STRIPAK component) as the top associated dependency (C91) provides additional validation of the STRIPAK-MAP4K4 connection. The statistical significance and consistency across multiple datasets support the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C94",
+      "C97",
+      "C103",
+      "C104"
+    ],
+    "result": "ST promotes PP2A A-C subunit interactions with STRIPAK (particularly STRN4), which facilitates PP2A-mediated dephosphorylation of MAP4K4, leading to reduced MAP4K4 activity and YAP1 activation, thereby inducing cell transformation. This demonstrates that STRIPAK regulates PP2A substrate specificity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C10 and C94-C104 represent the central mechanistic model of the paper, integrating findings from multiple experiments. The model is well-supported by: (1) ST-STRIPAK interaction data (C4-C5), (2) requirement of STRN4 for transformation (C6), (3) MAP4K4 dephosphorylation by STRIPAK-associated PP2A (C7), (4) YAP1 activation downstream (C8), and (5) epistasis experiments establishing the pathway order. The conclusion that STRIPAK regulates PP2A specificity (C10, C94, C103) is supported by the demonstration that STRN4 is required for MAP4K4-STRIPAK interactions and subsequent dephosphorylation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C35"
+    ],
+    "result": "Kinase inactivation or partial suppression of MAP4K4 can replace ST expression in transformation of human cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C35 is supported by the collective evidence from C46-C51 (partial knockdown), C61-C63 (kinase inhibition and K54R mutant), showing that multiple approaches to reduce MAP4K4 activity induce transformation comparable to ST expression. This is a key finding of the study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C96",
+      "C108"
+    ],
+    "result": "ST binds to B''' subunits (striatins) and other STRIPAK components, and the PP2A A-C complex continues to interact with non-canonical B''' subunits in the presence of ST.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96 and C108 are supported by proteomic analysis (Figure 1\u2014figure supplement 1D, Figure 3B, Figure 6B) showing ST in complex with striatins and other STRIPAK components. This contrasts with prior findings that ST primarily displaces B subunits (C95), representing a novel finding about ST's mechanism of action.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "ST interactions with STRIPAK depend on PP2A A\u03b1 binding, and cancer-associated PP2A A\u03b1 mutations similarly promote STRIPAK interactions. The increased STRIPAK activity induced by ST may involve specific conformational changes within the complex rather than simple redistribution of PP2A C subunits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C116 are supported by ST mutant data (C112, Figure 3\u2014figure supplement 1A), citation of cancer mutation studies (C113), and observation that total PP2A C-STRN4 interactions don't change with ST (C115, Figures 3C, 6B-C). The interpretation that ST induces specific changes within STRIPAK (C116) is reasonable given the data, though the exact mechanism remains to be fully elucidated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "Only partial, but not complete, knockdown of MAP4K4 leads to transformation, similar to prior observations with PP2A subunits. MAP4K4 suppression leads to greater AI growth than PP2A knockdown, and only a subset of cellular MAP4K4 interacts with STRIPAK in ST-expressing cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C102 are supported by the dose-response data with multiple shRNAs (Figure 2\u2014figure supplement 1B), comparison with PP2A knockdown effects (C101), and co-IP data (C102, Figure 3C). The observation about partial vs. complete knockdown (C100) is well-documented with citations to prior work and validated with multiple shRNAs in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C117"
+    ],
+    "result": "STRIPAK serves as an organizing scaffold to bring substrates like MAP4K4 to the PP2A complex, similar to how LxxIxE motif-containing proteins interact with B56 subunits. Striatins act as key regulators of PP2A that impart substrate specificity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C107 and C117 represent mechanistic interpretations supported by the experimental data showing STRN4-dependent MAP4K4-STRIPAK interactions (C72-C73) and prior literature on other STRIPAK substrates (C107). The comparison to B56-mediated specificity (C105) provides conceptual framework. The conclusion about striatins regulating PP2A specificity (C117) is well-supported by the collective findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C128"
+    ],
+    "result": "Cancer-associated PP2A mutations may serve, in part, to activate YAP1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C128 is presented as speculation based on the findings that ST-mediated PP2A perturbation activates YAP1 and that cancer-associated PP2A mutations promote STRIPAK interactions (C113). While this is a reasonable hypothesis, it lacks direct experimental validation in the context of cancer-associated mutations. The claim is appropriately qualified as a suggestion rather than a demonstrated fact.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C36",
+      "C37",
+      "C93",
+      "C95",
+      "C98",
+      "C99",
+      "C109",
+      "C110",
+      "C111",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "Background and context claims establishing the role of PP2A in cancer, the structure and function of PP2A complexes, the STRIPAK complex composition, MAP4K4 functions, YAP1/Hippo pathway biology, and prior findings about ST interactions with PP2A.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C37 and C93-C127 represent background knowledge and literature citations that provide context for the study. These are appropriately cited and accurately represent the current understanding in the field. They establish the rationale for investigating ST-STRIPAK-MAP4K4-YAP1 connections.",
+    "result_type": "MINOR"
+  }
+]

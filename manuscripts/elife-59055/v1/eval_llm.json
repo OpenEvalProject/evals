@@ -1,0 +1,229 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "MthK channels rescue bacterial growth more efficiently at higher temperatures (36-37\u00b0C) than at lower temperatures (18-24\u00b0C) in complementation assays. The cytosolic C-terminal RCK domain is important for robust temperature-dependent complementation, with MthK IR showing more dramatic temperature-dependent effects than MthK FL.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C27, C28 are directly supported by complementation assay data in Figures 1B and 1C showing temperature-dependent rescue. Claims C29 and C30 provide mechanistic interpretation supported by comparison of constructs with and without RCK domains. The use of barium blocker controls (C32, Figure 1\u2014figure supplement 1) strengthens the conclusion that effects are channel-mediated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C22",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C67",
+      "C68"
+    ],
+    "result": "Purified and reconstituted MthK IR exhibits extreme temperature sensitivity (Q10 >100) in single-channel recordings, with open probability increasing about two orders of magnitude between 20-40\u00b0C at low calcium concentrations. This temperature sensitivity is an intrinsic property of the channel and does not require cellular cofactors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C36, C67, C68 are directly supported by single-channel electrophysiology data in Figure 2 showing dramatic Po increases with temperature. Claim C35 is supported by recordings from purified, reconstituted channels. The Q10 >100 (C36, C37) is comparable to eukaryotic thermosensors. However, precise Q10 calculation is acknowledged to be challenging at low Po values.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C23",
+      "C47",
+      "C48",
+      "C72",
+      "C73"
+    ],
+    "result": "The RCK domain is essential for temperature-dependent gating of MthK. Channels lacking the RCK domain (MthK PO) show opposite temperature dependence with Po decreasing ~4-fold at higher temperatures, while the truncated MthK \u0394C construct shows minimal temperature sensitivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C23, C47, C48 are supported by comparison of MthK IR versus MthK PO (Figure 3) and MthK \u0394C constructs. The opposite temperature effect in MthK PO (C72, C44-C46) strongly argues against the pore domain being responsible for thermosensitivity. Complementation data for MthK \u0394C (C73) provides additional functional evidence. The convergence of multiple experimental approaches strengthens this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C6",
+      "C24",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C71"
+    ],
+    "result": "Temperature alters the allosteric coupling between the RCK domain and pore domain in MthK. Linkage analysis reveals that \u0394\u03c7 changes from 4.5 at 21\u00b0C to 2.2 at 37\u00b0C (corresponding to coupling energy change from 2.6 to 1.4 kcal/mol), with the greatest temperature dependence observed at low calcium concentrations where RCK domains are in the apo state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C24, C58-C64 are supported by Hill plot analysis in Figure 4C showing temperature-dependent changes in coupling parameters. The linkage analysis approach (detailed in Materials and methods) provides rigorous thermodynamic framework. The observation that temperature effects are maximal at low calcium (C58, C71) supports the conclusion that apo-RCK domains regulate temperature-dependent gating (C59, C60). The mathematical derivations in the methods section support the interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Temperature increases MthK IR open probability primarily by shortening closed-state dwell times rather than altering open-state dwell times. Mean open-dwell time remains constant (~8 ms) between 21-37\u00b0C, while mean closed-dwell time decreases from ~930 ms to ~44 ms, resulting in ~20-fold increase in Po.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C41 are supported by kinetic analysis of single-channel data in Figure 2C-D. The calculation of mean closed-dwell time from Po and mean open time (C40) is mathematically sound. This mechanistic insight explains how temperature affects channel gating at the kinetic level. The data quality appears sufficient to support these quantitative conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "MthK IR does not show significant temperature-dependent desensitization during sustained heating (up to 5 min at 39\u00b0C), and temperature-dependent gating is reversible between 21-37\u00b0C, making it suitable for thermodynamic analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C53 are supported by extended recordings (Figure 2\u2014figure supplement 1) and reversibility experiments (Figure 2\u2014figure supplement 3). This addresses an important concern raised about TRPV1 channels (C49, C50) and validates MthK as a model system. The reversibility is crucial for the thermodynamic linkage analysis performed in the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "The EC50 of calcium for MthK IR is modestly different between temperatures (~0.7 mM at 21\u00b0C vs ~0.6 mM at 37\u00b0C), but the Hill coefficient decreases substantially from 4.0 at 21\u00b0C to 1.8 at 37\u00b0C.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C57 are supported by dose-response curve analysis in Figure 4\u2014figure supplement 1. The modest change in EC50 but substantial change in Hill coefficient is consistent with the proposed mechanism of temperature affecting coupling rather than calcium binding affinity. However, the authors acknowledge challenges in accurately measuring EC50 due to high Hill coefficients.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C86"
+    ],
+    "result": "This study represents the first known instance where temperature is shown to affect allosteric coupling rather than the intrinsic equilibrium constant of a sensor domain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C86 is based on the authors' assessment of the literature and their experimental findings. While the experimental data supporting temperature-dependent coupling is strong (C61-C64), the claim of being 'first known instance' is difficult to verify without exhaustive literature review. The theoretical prediction by Jara-Oseguera and Islas (C85) suggests this mechanism was previously proposed but not experimentally demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Structural analysis suggests that the linker between pore and RCK domains may mediate temperature-dependent coupling, with the linker being more ordered in the calcium-free state and potentially disrupted by elevated temperature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C77-C79 are supported by citations to structural studies. However, claims C80-C82 are explicitly speculative (marked as SPECULATION in evidence_type). While the speculation is reasonable given the functional data, it lacks direct experimental validation in this study. Further mutagenesis or structural studies at different temperatures would be needed to test this hypothesis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C65",
+      "C66",
+      "C69",
+      "C70",
+      "C74",
+      "C75",
+      "C76",
+      "C83",
+      "C84",
+      "C85",
+      "C87"
+    ],
+    "result": "Background claims establishing the context of temperature-sensitive ion channels, MthK structure and function, and comparison to other thermosensitive channels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C1-C2, C7-C21, C65-C66, C69-C70, C74-C76, C83-C85, C87) are primarily based on established knowledge and citations to prior literature. They provide necessary context but are not novel findings of this study. The citations appear appropriate and the claims are consistent with established understanding in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C31",
+      "C32"
+    ],
+    "result": "The LB2003 complementation assay system is validated for studying MthK function, with controls showing that increased rescue correlates with higher channel open probability and that MthK \u0394C shows better survivability at lower temperatures due to host strain properties.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C26 establish the validity of the complementation assay based on prior literature. Claims C31-C32 address an unexpected observation with MthK \u0394C, providing appropriate controls with barium blocker to show the effect is not channel-mediated but reflects host strain properties. This strengthens confidence in the assay system.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C42",
+      "C43"
+    ],
+    "result": "Prior work on TRPV1-Shaker chimeras suggests that pore domains can retain temperature sensitivity, providing context for testing whether MthK pore domain is temperature-sensitive.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C42 is supported by citation to Zhang et al., 2018. Claim C43 is marked as speculation based on that study. These claims provide rationale for testing the MthK pore domain construct but are not novel findings of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C49",
+      "C50"
+    ],
+    "result": "TRPV1 channels exhibit hysteresis, irreversible loss of activity, and rapid desensitization upon repeated or sustained heat stimulation, limiting their use for thermodynamic analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C50 are supported by citations to recent literature (S\u00e1nchez-Moreno et al., 2018; Luo et al., 2019; Cui et al., 2012). These claims provide important context for why MthK is a better model system for thermodynamic studies, but are not novel findings of this work.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,324 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "16p11.2 CNVs are associated with neurodevelopmental disorders and reciprocal physiological phenotypes. The 16p11.2 region spans 29.4-32.2 Mb and encompasses 29 genes. Deletions and duplications at this locus are found in approximately 1% of ASD individuals and 0.01-0.1% of the general population, with reciprocal effects on head size, brain volume, and body mass index.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C22 establish the known associations between 16p11.2 CNVs and various phenotypes based on extensive prior literature. All claims are supported by multiple citations to published research and represent well-established knowledge in the field. These background claims provide appropriate context for the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "A cohort of 65 hiPSC clones was generated from 13 individuals with 16p11.2 CNVs. The cohort includes 10 deletion donors (7 males, 3 females, ages 6-41 years) and 3 duplication donors (2 females, 1 male, ages 5-38 years), with diverse clinical presentations including articulation disorder, ASD, and language disorders.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3 and C23-C28 describe the study cohort with specific demographic and clinical data. The information is clearly documented and represents primary data collection. The cohort size and diversity are appropriate for the study objectives, though the small number of duplication donors (n=3) is noted as a limitation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "hiPSCs were successfully generated using episomal reprogramming vectors and validated for pluripotency. All clones showed >95% positivity for pluripotency markers, could differentiate into all three germ layers, were confirmed diploid, and had 16p11.2 CNV breakpoints consistent with previously reported values.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C33 describe standard hiPSC generation and quality control procedures with appropriate validation methods. The immunofluorescence, differentiation assays, and SNP array data provide multiple lines of evidence for successful reprogramming and clone authenticity. The methods are well-established and appropriately applied.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "40 hiPSC clones were differentiated into cortical neural progenitor cells using dual-SMAD inhibition. Flow cytometry confirmed rapid loss of OCT4 and induction of PAX6 within 7 days. All clones formed neural rosettes with no subjective differences between WT and CNV clones, and showed enrichment for anterior and dorsal cortical markers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C37 describe the neural differentiation protocol and validation. The flow cytometry data (C35), morphological observations (C36), and RNA-seq analysis (C37) provide converging evidence for successful cortical NPC differentiation. The lack of obvious morphological differences at this stage is an important negative result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "Unexpected integration of episomal reprogramming vectors was detected in many clones, causing major transcriptional artifacts. PCA revealed segregation by integration status rather than genotype. Approximately 40% of OCT3/4 transcripts were plasmid-derived in integration-positive clones, leading to 3,612 differentially expressed genes and significant proliferation changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C47, C109-C111 describe a critical quality control finding. The pseudo-alignment approach (C39-C41) provides quantitative evidence for plasmid expression, and the differential expression analysis (C43-C46) demonstrates the magnitude of the artifact. The conclusion to exclude integration-positive clones (C47) is well-justified. This represents rigorous quality control and methodological innovation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C4",
+      "C108"
+    ],
+    "result": "A customizable bioinformatic strategy was developed to detect random integration and expression of reprogramming vectors. The authors emphasize the importance of screening for cryptic plasmid integration even when using episomal reprogramming methods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4 and C108 describe the methodological contribution. The pseudo-alignment pipeline successfully identified integration events that would have confounded the analysis. This is a valuable methodological advance for the field, though the generalizability depends on the availability of plasmid sequences and appropriate bioinformatic expertise.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C48"
+    ],
+    "result": "An insufficient number of integration-free 16p11.2 duplication clones remained (n=4) for meaningful analysis, limiting the study to deletion clones only.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C48 acknowledges a significant limitation of the study. With only 4 integration-free duplication clones, statistical power would be inadequate for robust differential expression analysis. This is an honest assessment of the data limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "After excluding integration-positive clones, DEL and WT populations clustered by genotype. Of 56 genes in the 16p11.2 locus, 14 were differentially expressed and all were downregulated, consistent with copy number-dependent effects. In total, 107 DE genes were identified (49 with \u22651.5-fold change), validated by qPCR for key genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C56 present the core differential expression findings. The PCA clustering (C49), identification of 14 downregulated genes in the deletion interval (C51), and qPCR validation (C55) provide strong evidence. The consistency across individual clones (C56) strengthens confidence in the findings. The statistical approach using DESeq2 with appropriate batch correction is sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C71",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Only a subset of 16p11.2 genes are expressed in early NPCs. Of 56 genes in the region, 15 are expressed at or below detection limits, while the remaining 41 are likely relevant to early cortical development. The 14 downregulated genes warrant increased scrutiny as potential drivers of developmental outcomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71 and C75-C77 provide important context about gene expression in the 16p11.2 region. The identification of which genes are expressed at this developmental stage (C75) is valuable for prioritizing mechanistic studies. The interpretation that expressed genes are likely relevant (C76) is reasonable, though speculative. The recommendation for further study (C77) is appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C57",
+      "C72",
+      "C73",
+      "C83",
+      "C84"
+    ],
+    "result": "93 additional DE genes outside the 16p11.2 region were identified, including genes associated with ASD (CNTNAP2, LHFPL3) and excitatory synapse function. These genes impinge on signaling pathways relevant to previously described phenotypic abnormalities in neurons and human carriers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57, C72-C73, C83-C84 describe secondary transcriptional effects. The enrichment for ASD-associated genes (C57) is statistically significant, and the identification of synaptic genes (C84) provides mechanistic hypotheses. However, the connection to 'previously described phenotypic abnormalities' (C73) is interpretive and would require functional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "MAPK3 (Erk1) is downregulated and interacts with several other DE genes, supporting a role for the Erk1 MAPK pathway in 16p11.2 phenotypes. However, no changes in NPC proliferation were observed between WT and deletion lines, suggesting MAPK3 may not influence NPC proliferation in these patient lines.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C82 present findings about MAPK3. The downregulation is well-documented (C78), and the connection to prior work is appropriate (C79). The negative proliferation result (C80) is important and consistent with prior studies (C82). However, the conclusion that MAPK3 'may not influence' proliferation (C81) is tentative\u2014the lack of effect could reflect compensatory mechanisms or timing issues rather than lack of involvement.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "KCTD13 and TAOK2, both downregulated in deletion lines, have known roles in synaptic transmission and neuronal morphology. Reduced expression in cortical progenitors may impact cortical network development and synaptic tone in autistic individuals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C85-C86 cite prior functional studies, but C87 is highly speculative. The connection between reduced expression in NPCs and later synaptic phenotypes requires functional validation. The 'may impact' language (C87) appropriately indicates speculation, but the causal chain from NPC gene expression to mature circuit function is not established.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "The microRNA miR-6723 showed the highest fold-change and smallest p-value among DE transcripts. miR-6723 is enriched in neurons and has been associated with cellular proliferation or immune response in other contexts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C90 identify miR-6723 as the most significantly changed transcript. However, the authors acknowledge their sequencing protocol was not optimized for miRNA detection (C88), which raises questions about the reliability of this finding. The functional speculation (C90) is based on limited prior literature and should be interpreted cautiously.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C58"
+    ],
+    "result": "An orthogonal differential expression analysis using a linear mixed model identified 40 DE genes, with 17 overlapping the primary analysis. This validation approach accounts for shared patient identities across clones.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C58 describes an important validation analysis. The partial overlap (17/40 genes) between methods suggests some findings are robust to analytical approach, but also indicates sensitivity to statistical modeling choices. The use of a mixed model to account for patient-level effects is methodologically sound, though the modest overlap raises questions about which gene set is more reliable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "Four DEL clones contained additional CNVs (14q11.1 deletion, 14q11.2 duplication, 7p11.2 deletion). However, there was no significant difference in DE gene expression between clones with and without these additional CNVs, suggesting they are unlikely to account for the reported transcriptional changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C93 address potential confounding by additional CNVs. The analysis comparing clones with and without additional CNVs (C92) is appropriate, though the small sample size limits statistical power. The conclusion that additional CNVs are 'unlikely to account' for changes (C93) is reasonable but not definitive\u2014subtle effects could be missed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "WGCNA identified 123 gene expression modules, with 20 showing significant associations with clinical variables. Fifteen modules correlated with clinical phenotypes, and four modules correlated with Age, Height Z-score, Weight Z-score, and Head Circumference Z-score. GSEA identified 69 gene sets upregulated in high BMI individuals, predominantly in metabolic processes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C65 describe the WGCNA analysis. The identification of modules correlating with clinical traits is interesting, but the analysis is exploratory and correlational. The pink4 module's correlation with multiple traits (C64-C65) is intriguing but requires validation. The predominance of metabolic genes (C63) in BMI-associated modules is consistent with known biology.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C66",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "Patient-specific transcriptional abnormalities, in addition to core 16p11.2 transcript deficiency, may interact to generate heterogeneous phenotypes. Gene modules correlating with phenotypic variance involve genes outside the 16p11.2 region and implicate both metabolic and cell-cell signaling pathways. The pink4 module correlates with both BMI and language deficits, suggesting unexpected links between these clinical features.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C66 and C94-C107 present highly interpretive conclusions from the WGCNA analysis. While the correlations are statistically significant, the causal interpretations are speculative. The suggestion that BMI-associated genes in NPCs reflect 'generalized phenotypes with tissue-specific effects' (C102) is plausible but unproven. The connection between NPC gene expression and language deficits (C103-C104) requires substantial additional validation. These are hypothesis-generating findings rather than established results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C74",
+      "C112",
+      "C113"
+    ],
+    "result": "The hiPSC resource and transcriptomic profiling identified early gene expression alterations in NPCs that precede morphological abnormalities. The data reveal disruptions in gene programs related to nervous system function and cellular metabolism, providing an important resource for studying early neurodevelopmental alterations underlying 16p11.2 CNV phenotypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C6, C74, C112-C113 summarize the overall contributions. The identification of early transcriptional changes (C5) is well-supported by the differential expression data. The characterization of both neural and metabolic disruptions (C6, C74) is supported by the GSEA and WGCNA analyses, though the metabolic findings are more exploratory. The resource value (C112) is clear, though limited by the exclusion of duplication clones.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Prior work has shown abnormalities in 16p11.2-derived neurons and idiopathic ASD NPCs, and widespread effects on NPC signaling pathways. However, 16p11.2 CNV-related alterations in early neuroepithelial precursors had not been previously examined, representing a gap this study addresses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C70 provide context from prior literature and identify the study's contribution. The citations to prior work (C67-C69) are appropriate, and the identification of a gap in the literature (C70) justifies the current study. This establishes the novelty of examining early NPCs rather than more differentiated cell types.",
+    "result_type": "MINOR"
+  }
+]

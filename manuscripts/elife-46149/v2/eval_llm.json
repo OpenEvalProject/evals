@@ -1,0 +1,359 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C21",
+      "C22",
+      "C143",
+      "C144",
+      "C145",
+      "C146"
+    ],
+    "result": "The study compared transcriptomic responses to four licensed vaccines with known safety profiles and three TLR agonists/adjuvants with known inflammatory potential in mice. Samples were collected from muscle, draining lymph nodes, and PBMCs at multiple time points (4, 8, 24, 48, 72, 168 hr) after intramuscular injection, with appropriate controls (unvaccinated and saline-injected mice).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The experimental design is clearly described with appropriate controls (C22), validated vaccines with known safety profiles (C17), and a rational dosing strategy based on FDA-accepted mouse equivalent dose calculations (C146). The multi-tissue, longitudinal sampling approach (C4, C21) is well-justified for tracking immune responses across compartments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C147",
+      "C148",
+      "C149",
+      "C150"
+    ],
+    "result": "Differential gene expression analysis revealed that immunizations differed in magnitude and kinetics of transcriptomic responses across tissues. LPS, Pentavac SD, and Poly I:C induced strong early responses (4-48 hr) in all three tissues, while Engerix B, IFA, Agrippal, and Fluad showed more modest or delayed responses primarily in muscle and lymph nodes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The statistical methodology is appropriate with clearly defined criteria for differential expression (BH-adjusted p<0.01, C23) and proper normalization procedures (C150). The findings are supported by Figure 1 showing violin plots of gene expression changes. The use of established analytical tools (limma package) with proper version documentation (C149, C150) supports reproducibility.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Gene-set enrichment analysis using blood transcriptional modules revealed distinct functional patterns: in muscle, vaccines/TLR agonists (except Agrippal) upregulated inflammation, growth factors, innate immunity and cell damage genes; in lymph nodes, LPS, Pentavac SD and Poly I:C elevated interferon response and cytokine/chemokine genes; in PBMCs, these same treatments increased interferon response and activated monocyte/neutrophil signatures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The analysis appropriately uses established blood transcriptional modules from Li et al. (2014) as a reference framework (C30), with proper statistical testing (p<10^-6 threshold mentioned in methods). The tissue-specific patterns are consistent with expected immune biology and supported by Figure 2 and supplementary figures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Weighted Gene Co-expression Network Analysis (WGCNA) identified tissue-specific gene modules that correlated with different vaccines: 40 modules in muscle, 47 in lymph nodes, and 30 in blood. Key modules included muM1-turquoise (muscle, positively associated with LPS/Pentavac SD), lnM8-pink (lymph nodes, interferon/antiviral sensing), and blM4-yellow (blood, monocytes/neutrophils/inflammatory markers).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "WGCNA is an appropriate unbiased method for identifying co-expressed gene modules (C34, C35). The analysis identified biologically meaningful modules with functional enrichment that aligns with known immune biology (C41-C47). Module sizes are reasonable and the correlation analysis with vaccine treatments is properly conducted, as shown in Figure 3 and supplementary figures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Cross-tissue analysis identified genes differentially regulated across muscle, lymph nodes, and blood, including chemokines/cytokines and acute-phase proteins (SAA3, PTX3). LPS caused the greatest alterations in cytokine/chemokine gene expression in blood at early time points (4-8 hr), while licensed vaccines induced only minor perturbations in PBMCs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The analytical approach of selecting top 100 genes common between muscle and lymph nodes, then assessing blood expression (C50) is methodologically sound. The findings are well-supported by Figure 4 showing circular heatmap correlations. The identification of SAA3 and specific chemokines is consistent with known inflammatory biology (C53, C54), and the temporal patterns are clearly documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Protein measurements in sera validated transcriptomic findings. LPS elicited strong inflammatory cytokine/chemokine responses at early time points (4-8 hr). Strikingly, SAA3 protein was elevated 1000-fold higher than other analytes with longer kinetics: LPS peaked at 24 hr (492.8 \u00b5g/mL), while Pentavac SD showed sustained elevation through 168 hr with >2-fold greater AUC than LPS.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The protein validation using Luminex and ELISA (C63) provides orthogonal confirmation of transcriptomic findings. Statistical significance is properly assessed with appropriate controls (C67, C68, C72, C73), and the dramatic magnitude of SAA3 response (C71) is well-documented. The AUC comparison (C74) provides quantitative support for differential kinetics. Sample size (n=5 per group per timepoint) is adequate for these measurements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Comparison of transcript and protein levels showed concordance for many markers (CCL2, CCL3, CCL4, CXCL2, CXCL10, TNF-\u03b1, SAA3) but discordance for CCL5 (downregulated transcript, elevated protein). For LPS immunization, CXCL1, CXCL10, and SAA3 showed statistically significant correlations (r>0.6, p<0.05) between blood transcript and protein fold changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The correlation analysis between transcript and protein levels is appropriate and reveals both expected concordance and interesting discordance (C80), which is biologically plausible due to post-transcriptional regulation. Statistical significance is properly assessed (C82) and supported by Figure 5\u2014figure supplement 1. The identification of both concordant and discordant markers strengthens confidence in the analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Tissue-specific correlations between gene expression and serum proteins varied by vaccine: LPS showed strongest correlations between lymph node/blood transcripts and serum proteins; Fluad showed highest correlations between muscle transcripts and blood proteins; Pentavac SD showed correlations primarily from lymph nodes to serum, not from blood transcripts to blood proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The correlation analysis across tissues and treatments (Figure 6) reveals vaccine-specific patterns that are biologically interpretable. The finding that different vaccines show different tissue sources for serum biomarkers (C87, C88) is novel and well-supported by the data. The statistical approach using Pearson correlations is appropriate for this analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "Integration of multi-tissue transcriptomics and serum protein data revealed that CCL3, CCL4, CXCL1, and IL-6 showed strong muscle-lymph node correlations but weak blood connections, while CCL2, CXCL10, and SAA3 showed positive correlations between tissue and blood compartments. Serum proteins peaked within 4 hr for most cytokines/chemokines, while SAA3 showed 100-1000-fold higher levels with different kinetics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The cross-compartment analysis (C104, C105) is well-executed and reveals biologically meaningful patterns about biomarker sources. The observation that some proteins in serum don't correlate with blood transcripts (C111) appropriately raises questions about tissue sources, which is then addressed by the muscle/lymph node correlation analysis (C112). This integrated analysis is a strength of the study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "The study identified a panel of blood-measurable biomarkers (SAA3, CCL2, CXCL10) that reflect inflammatory responses from distal muscle injection, with vaccine-specific signatures. Optimal sampling should occur within 12 hr post-immunization, and the presence/level of all three biomarkers indicates potentially harmful inflammation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the identification of SAA3, CCL2, and CXCL10 as biomarkers is well-supported by the data (C117), the claim that their presence indicates 'adverse or potentially harmful inflammation' (C117) requires validation in additional models or clinical studies. The 12-hr sampling recommendation (C116) is based on kinetic data but hasn't been validated for predictive utility. The biomarkers distinguish between vaccines and TLR agonists, but whether they predict actual adverse events in humans remains to be determined (C142).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "Safe licensed vaccines (Engerix B, Agrippal, Fluad) produced minimal transcriptomic signals across all tissues, while more reactogenic treatments (Pentavac SD, LPS, Poly I:C) showed large numbers of differentially expressed genes at early time points (4-8 hr), returning to baseline by 24 hr. Muscle tissue showed enrichment of innate/adaptive immune modules at early timepoints and cell cycle modules after 48 hr.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The interpretation that low transcriptomic signals from Engerix B, Agrippal, and Fluad are 'reassuring' given their safety history (C94) is reasonable but somewhat circular\u2014the vaccines were selected based on known safety. The temporal dynamics (C95, C96) are well-documented and the comparison with human studies (C97) appropriately notes limitations in capturing early responses. The gene set enrichment patterns (C98, C99) follow expected immunological progression.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129"
+    ],
+    "result": "The identified biomarkers (CCL2, CXCL10, SAA3) are consistent with previous mouse studies of LPS responses and adjuvant-containing vaccines (MF59, AS03), where similar chemokines and SAA3 were elevated in muscle and draining lymph nodes at early time points.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The comparison with published literature (C125-C128) appropriately validates the findings against prior work. The consistency across different studies and adjuvant systems (C126, C127) strengthens confidence in the biomarker identification. The citations support the claims made about prior findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139"
+    ],
+    "result": "CCL2 and CXCL10 are critical modulators of leukocyte trafficking and homing to injection sites. CCL2 regulates monocyte/macrophage movement via CCR2, can amplify inflammation through autocrine signaling, and influences Th2 polarization. CXCL10 is interferon-induced, binds CXCR3, promotes immune cell trafficking, and is critical for CD8 T cell responses. Both chemokines recruit cells that augment vaccine-induced immunity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims about CCL2 and CXCL10 biology (C130-C139) are well-established in the literature and properly cited. The biological interpretation connecting these chemokines to vaccine responses is reasonable and supported by the citations provided. This contextualizes the biomarker findings within established immunology.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C118",
+      "C119"
+    ],
+    "result": "SAA3 was specifically identified as differentially regulated across all three tissues, while the more highly expressed SAA1 and SAA2 were not, despite acute-phase proteins being primarily produced by hepatocytes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The specific identification of SAA3 versus SAA1/SAA2 (C119) is an interesting finding that suggests tissue-specific or stimulus-specific regulation. The observation is well-documented in the data. The note about hepatocyte production (C118) appropriately raises the question of tissue source, which is addressed by the multi-tissue analysis showing SAA3 expression in muscle and lymph nodes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C48",
+      "C121"
+    ],
+    "result": "An interactive web interface (https://vaccinebiomarkers.com) was developed to facilitate data access, gene querying, visualization of transcriptional profiles, filtering of differentially expressed genes, and analysis of WGCNA modules.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The creation of a web resource (C48, C121) for data exploration is a valuable contribution that enhances reproducibility and enables further discovery. The data deposition in GEO (C148) also supports reproducibility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C140",
+      "C141",
+      "C142"
+    ],
+    "result": "The study addresses a gap in systems vaccinology by using transcriptomics to identify biomarkers of vaccine inflammation rather than just efficacy. The multi-tissue, longitudinal approach allows tracking of immune responses across compartments, though translation to human biosignatures requires additional work.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The rationale for the study (C1, C2, C89, C90) is well-articulated and addresses a genuine gap in the field. The experimental approach (C91, C92, C141) is appropriate for the stated goals. The acknowledgment of limitations regarding mouse-to-human translation (C142) is appropriate and honest. The biological reasoning about immune system dynamics (C10, C11, C93) is sound.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "The study's rationale is based on understanding that vaccine responses are determined by antigen nature, formulation, and adjuvants, with immune cells and mediators trafficking between injection site, lymph nodes, and blood. Blood biomarkers are practically useful but may be diluted compared to tissue concentrations, and signals may arise from different tissue sources.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The biological framework (C12, C13) is well-established and properly cited. The practical considerations about blood biomarkers (C14, C15) and the hypotheses about signal sources (C101-C103) are reasonable and guide the experimental design appropriately.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C20",
+      "C120"
+    ],
+    "result": "The identified biomarkers in a mouse model could provide an early warning system for vaccine tolerability and utility during development, potentially identifying candidates with harmful inflammatory profiles and de-risking late-stage failure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the biomarkers successfully distinguish between safe vaccines and inflammatory TLR agonists in mice (C20, C120), the predictive utility for human vaccine development remains speculative. The claim requires validation in additional preclinical models and correlation with human clinical outcomes. The mouse model limitations (C122, C123, C142) are acknowledged but not fully addressed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "The mouse is the typical initial animal model for vaccine development, though studies examining mouse-human transcriptomic correlations have reached conflicting conclusions about the validity of mouse models, with some showing poor correlation and others showing high correlation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The discussion of mouse model validity (C122-C124) appropriately acknowledges the ongoing debate in the field and cites the relevant controversial literature. This provides important context for interpreting the study's findings.",
+    "result_type": "MINOR"
+  }
+]

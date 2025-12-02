@@ -1,0 +1,482 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "TXNIP expression inversely correlates with proton exporters (MCT1, MCT4, NHE1) and positively correlates with an acidosis gene signature across multiple cancer types and normal tissues, suggesting that intracellular pH per se controls MondoA transcriptional activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C5 provide correlation data from TCGA and GTEx datasets showing consistent inverse relationships between TXNIP and pH regulators across multiple tissue types. The observation in both cancer and normal tissues (C5-C6) supports the generalizability of this pH-dependent regulation. However, correlation does not establish causation, and the mechanistic link (C7) is inferred rather than directly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "Low pH medium (HBSS or DMEMAcidic) induces TXNIP expression and decreases glucose uptake in cultured cells, with pH being the primary driver rather than sodium bicarbonate concentration. This establishes that acidosis drives MondoA nuclear accumulation, promoter binding, and transcriptional activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C10 demonstrate TXNIP induction and functional consequences with HBSS treatment. The pH-clamping experiments (C13-C17) provide strong evidence that pH rather than bicarbonate is the key variable. Multiple complementary assays (RT-qPCR, immunoblotting, glucose uptake) support the conclusion (C18) that acidosis activates MondoA.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "MondoA is necessary and sufficient for acidosis-induced TXNIP expression, requiring its obligate partner Mlx and the ChoRE binding site. This mechanism is conserved across multiple cell lineages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Loss-of-function (C19-C20) and gain-of-function (C21) experiments with MondoA knockout and complementation provide strong genetic evidence. The requirement for Mlx interaction (C24-C26) and ChoRE binding site (C27-C28) is demonstrated through mutant analysis and luciferase reporters. ChIP data (C29) confirms increased promoter occupancy. Conservation across cell types (C22-C23) strengthens the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Cytosolic and/or mitochondrial proton gradients, but not endosomal/lysosomal pH changes, are critical for MondoA/TXNIP axis activation, as demonstrated by differential effects of compartment-specific ionophores.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The pharmacological approach using monensin (C31), FCCP (C32), and chloroquine (C35) provides clear differential effects that support the conclusion (C37-C38). However, ionophores can have off-target effects, and the interpretation relies on the assumed specificity of these compounds (C33-C34, C36). The lack of effect with chloroquine is particularly informative for ruling out endosomal involvement.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "MondoA requires a functional electron transport chain (ETC) for transcriptional activity, with the requirement potentially downstream of complex I, as demonstrated using respiration-deficient \u03c10 cells and cybrid rescue experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The genetic approach using 143B\u03c10 cells (C40-C42) and rescue with wild-type mitochondria (C43) provides strong evidence for ETC requirement. The metformin result (C44) is surprising and suggests complexity in the pathway, making the inference about complex I (C45) appropriately tentative. The use of genetic models is more rigorous than relying solely on pharmacological inhibitors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Mitochondrial ATP (mtATP) synthesis through ATP synthase is necessary for low pH to induce MondoA transcriptional activity, as demonstrated by genetic disruption of ATP6/ATP8 and pharmacological inhibition with oligomycin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The convergence of genetic (C46-C50) and pharmacological (C52) approaches provides strong support for the requirement of ATP synthase. The partial rescue by nuclear-encoded ATP6/ATP8 (C50) is particularly compelling. However, the rescue is only partial, suggesting additional factors may be involved. The conclusion (C51, C53) is well-supported but the mechanistic link between acidosis and mtATP synthesis requires further elaboration.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Acidosis generates an ectopic proton gradient that drives mtATP synthesis, as evidenced by decreased intracellular pH, increased mitochondrial membrane potential, and increased total cellular ATP levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C58 provide direct measurements supporting the model. The hypothesis (C55) is logical given the known permeability of the outer mitochondrial membrane (C54). However, the increase in total ATP (C58-C59) could have multiple sources, and the specific contribution of the ectopic proton gradient versus other mechanisms is not definitively established. Additional controls or measurements of proton gradients would strengthen this result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "The DMEMAcidic-induced increase in TXNIP expression is largely independent of mTORC1 activity and its control of ATP pools, as mTORC1 activity is not significantly suppressed by acidic treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The immunoblotting data for phospho-S6 (C62) provides direct evidence against mTORC1 involvement. This effectively rules out an alternative mechanism (C60-C61) and supports the conclusion (C63). However, the analysis is limited to a single mTORC1 substrate, and more comprehensive assessment of mTORC1 activity could strengthen the conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Acidosis specifically increases mitochondrial ATP (mtATP) but not cytosolic ATP, as measured by compartment-specific FRET-based ATP biosensors (Mit-ATEAM and ATEAM).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The use of genetically encoded biosensors (C65-C66) provides spatially resolved ATP measurements. The differential FRET signals (C67-C68) clearly support the conclusion (C69-C70). This is a technically sophisticated approach that addresses the limitation of whole-cell ATP measurements (C64). The use of ATP-binding mutants as negative controls strengthens the interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "ATP synthase component ATP5I is required for both basal and acidosis-driven mtATP production and TXNIP induction, demonstrating that low pH drives mtATP production through ATP synthase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The siRNA knockdown of ATP5I (C71-C73) provides functional validation of the ATP synthase requirement. The convergence of effects on both mtATP levels and TXNIP expression strengthens the mechanistic link (C74-C75). This complements the genetic and pharmacological approaches used earlier and provides additional support for the model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "MondoA, Mlx, and HK2 are co-localized at the outer mitochondrial membrane where mitochondria-bound HK2 has preferential access to exported mtATP to generate G6P, which activates MondoA transcriptional activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The cellular fractionation data (C76) and cited literature (C77, C92) support the co-localization. The enzymatic function of HK2 (C78) and role of G6P in MondoA activation (C79) are well-established. However, the proposed model (C80) is speculative and requires direct demonstration that the G6P sensed by MondoA specifically comes from mitochondria-bound HK2 rather than cytosolic sources.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "DMEMAcidic treatment increases TCA cycle intermediates and specifically increases G6P levels 3-fold while decreasing most other glycolytic intermediates, consistent with increased mitochondrial metabolism under acidosis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The GC-MS metabolomics data (C82-C84) provides comprehensive metabolite profiling. The increase in TCA intermediates is consistent with cited literature (C81). The specific 3-fold increase in G6P while other glycolytic intermediates decrease is particularly striking and supports the proposed model. However, the mechanism underlying this selective G6P accumulation requires further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C85",
+      "C86"
+    ],
+    "result": "mtATP must be exported from the mitochondrial matrix via ANT2 to trigger MondoA transcriptional activity, indicating that mtATP functions outside the mitochondria rather than through an indirect signaling mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The siRNA knockdown of ANT2 (C85) blocking TXNIP induction provides strong evidence for the requirement of ATP export. The inference (C86) that mtATP functions outside mitochondria is logical and well-supported. This is a critical experiment that distinguishes between direct metabolic effects and indirect signaling mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "HK2 enzymatic activity and G6P formation are critical for MondoA transcriptional activity, as demonstrated by siRNA knockdown and dominant-negative catalytically inactive HK2 mutant.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The siRNA knockdown (C87-C88) and dominant-negative approach with HK2(D657A) (C89-C91) provide complementary loss-of-function evidence. The requirement for enzymatic activity specifically implicates G6P production rather than a scaffolding function of HK2. This is well-designed and convincing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "Mitochondrial localization of HK2 via VDAC interaction is both necessary and sufficient for low pH-driven MondoA activity, as demonstrated by loss-of-function with VDAC(E72Q) mutant and gain-of-function with GFP complementation-based artificial tethering.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The experimental design is sophisticated, using both loss-of-function (C93-C95) and gain-of-function (C96-C98) approaches. The GFP complementation system to artificially tether HK2 to mitochondria is particularly elegant and provides strong evidence for sufficiency (C99). This is a key result supporting the model that mitochondrial localization is critical.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "mtATP synthesis (ATP5I), ATP export (ANT2), and mitochondrial HK2 are all required for acidosis-driven MondoA nuclear accumulation, linking the entire pathway from mtATP production to transcriptional activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The cellular fractionation experiments (C100-C101) demonstrate that all three components are required for MondoA nuclear localization. This integrates the previous findings into a coherent pathway (C102). The convergence of multiple genetic perturbations on the same phenotype provides strong support for the model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "MondoA contributes to 37% of the acidosis-driven transcriptional response, with TXNIP and its paralogue ARRDC4 being the only two genes entirely dependent on MondoA following acidic treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The RNA-sequencing analysis (C103-C105) provides genome-wide assessment of MondoA's role. The identification of TXNIP and ARRDC4 as uniquely MondoA-dependent (C106, C108) is striking and well-supported by the data. However, the analysis is based on duplicate samples, and additional biological replicates would strengthen statistical confidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "MondoA is required for the transcriptional response to acidosis, regulating pathways including fatty acid metabolism, sterol biosynthesis, ion homeostasis, and cell proliferation, suggesting an essential role in adaptive metabolic response to acidosis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The pathway analysis (C109-C112) and GSEA (C111-C112) provide comprehensive characterization of MondoA-dependent transcriptional changes. The conclusion (C113-C114) is well-supported, though the functional significance of these pathway changes requires validation. The speculation about adaptive response (C114) is reasonable but requires further experimental support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "MondoA occupies ~700 genomic sites with increased occupancy under acidosis, showing dramatically higher binding (>10-fold) to TXNIP and ARRDC4 promoters compared to other targets, with similar fold-increases across all binding sites upon acidosis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The ChIP-seq analysis (C115-C118) provides genome-wide binding data, validated by ChIP-PCR (C119-C121). The dramatically higher occupancy at TXNIP and ARRDC4 promoters correlates well with their unique MondoA-dependence. However, the ChIP-seq is from single biological samples, which limits statistical assessment. The uniform fold-increase across sites (C122) is an interesting observation suggesting a general activation mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C123",
+      "C124",
+      "C125",
+      "C126"
+    ],
+    "result": "The ETC signal required for MondoA activity is mtATP, which couples to glucose via OMM-bound HK2 to generate G6P. MondoA:Mlx and HK2 constitute a sensing module that integrates mitochondrial and cytoplasmic energy signals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This integrative conclusion (C123-C125) is well-supported by the cumulative experimental evidence. The proposal that MondoA functions as a coincidence detector (C126) is a reasonable synthesis of the findings, though the term \"sensing and response module\" implies a level of functional integration that could benefit from additional validation. The model is compelling but somewhat speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C127",
+      "C128"
+    ],
+    "result": "MondoA may be activated by a pH-dependent mechanism independent of functional mitochondria, potentially involving conserved histidines with titratable protons in the physiological range.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The observation of partial TXNIP induction in \u03c10 cells and with metformin (C127) suggests an additional mechanism, but the evidence is limited. The speculation about histidines (C128) is based on sequence analysis but lacks experimental validation. This represents an interesting observation that requires further investigation but is not sufficiently supported by the current data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133"
+    ],
+    "result": "The OMM serves as a scaffold for nutrient sensing by MondoA, analogous to other organellar membrane-tethered nutrient sensors like mTORC1 at lysosomes and SREBP/Scap at the ER.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The analogy to other nutrient sensing systems (C132-C133) is well-founded and provides useful conceptual framework. The proposal that OMM serves as a scaffold (C131) is supported by the localization data and functional requirements. The cited properties of mitochondria-bound hexokinase (C129) support the model (C130), though direct demonstration of preferential G6P sensing from mitochondrial HK2 is lacking.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C134",
+      "C135",
+      "C136"
+    ],
+    "result": "MondoA functions as a coincidence detector of high cellular energy charge by coupling mtATP and glucose, restricting glucose uptake and aerobic glycolysis through TXNIP and ARRDC4 to restore energy balance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The model (C134-C136) is a logical synthesis of the experimental findings. The requirement for both mtATP and glucose supports the coincidence detection concept (C134). The proposed function as an energy charge sensor (C135) and the mechanism through TXNIP/ARRDC4 (C136) are well-supported, though the actual restoration of energy balance is not directly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C137",
+      "C138"
+    ],
+    "result": "The MondoA/TXNIP axis may drive utilization of non-glucose fuels when cellular energy charge is high, based on correlations between high TXNIP levels and oxidation of alternative substrates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The correlation data (C137) from cited literature is suggestive but the proposed role (C138) is speculative. This represents an interesting hypothesis that requires experimental validation. The current evidence is insufficient to support this as an established result.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C139",
+      "C140",
+      "C141",
+      "C142"
+    ],
+    "result": "TXNIP induction contributes to the suppression of glucose metabolism driven by acidic pH, and an acidosis gene signature including TXNIP correlates with better clinical outcomes in breast cancer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The general principles about pH effects (C139) and the correlation with glucose metabolism (C140) are well-established from cited literature. The inference that TXNIP contributes to this suppression (C141) is reasonable given the demonstrated TXNIP induction by acidosis. The clinical correlation (C142) from cited studies provides translational relevance, though causation is not established.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147"
+    ],
+    "result": "MondoA activity at the TXNIP promoter is suppressed by alkaline pH, and TXNIP downregulation may contribute to the shift to high glucose uptake characteristic of cancer metabolism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The experimental data showing suppression by alkaline pH (C146) is clear. The historical context (C143) and established role of intracellular alkalization in cancer (C144-C145) provide strong background. The proposal that TXNIP downregulation contributes to the Warburg effect (C147) is logical but speculative, requiring functional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C148",
+      "C149",
+      "C150",
+      "C151"
+    ],
+    "result": "MondoA plays a critical role in adaptive metabolic response to acidosis by regulating fatty acid and mitochondrial metabolism genes, pathways that are enhanced by acidosis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The RNA-seq data (C148-C149) identifies MondoA-dependent metabolic genes. The cited literature (C150) establishes that these pathways are enhanced by acidosis. The conclusion (C151) is reasonable but the functional significance and adaptive nature of these changes require experimental validation beyond transcriptional profiling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C152",
+      "C153",
+      "C154",
+      "C155",
+      "C156"
+    ],
+    "result": "TXNIP and ARRDC4 are the primary MondoA effectors in response to low pH, with their high MondoA occupancy likely explained by features beyond E-box sequences, such as chromatin modifications or ancillary factors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The ChIP-seq and ChIP-PCR data (C152) clearly demonstrate preferential binding. The correlation with functional dependence (C153) is logical. The observation that E-box enrichment is insufficient (C154) and the speculation about additional factors (C155) are reasonable but require experimental validation. The conclusion (C156) is well-supported by the convergence of binding and expression data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C157",
+      "C158",
+      "C159",
+      "C160",
+      "C161"
+    ],
+    "result": "MondoA and TXNIP regulation are positioned both upstream and downstream of metabolic reprogramming toward aerobic glycolysis, as oncogene-driven shifts away from mtATP would restrict MondoA activity, while pro-growth signals also directly downregulate TXNIP.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The cited literature (C157, C159-C160) establishes the relevant background. The prediction about mtATP shifts (C158) is logical given the demonstrated mtATP requirement. The synthesis (C161) provides an interesting perspective on MondoA's dual role, though this is largely conceptual and requires experimental validation of the proposed feedback relationships.",
+    "result_type": "MAJOR"
+  }
+]

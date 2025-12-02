@@ -1,0 +1,223 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C14",
+      "C15",
+      "C39",
+      "C40"
+    ],
+    "result": "Brain surface temperature recovers to ~37\u00b0C within 2-4 days post-surgery in chronically implanted mice, but heat is constantly lost through the glass window to the room environment, with a temperature gradient of ~1-2\u00b0C across the window.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C9, C14, C15 provide direct experimental temperature measurements showing recovery to 37\u00b0C and constant heat loss. C39 and C40 provide mechanistic interpretation supported by the temperature gradient data. The experimental design includes proper controls (body temperature maintained at 37\u00b0C, C18) and multiple measurement timepoints.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C10",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "Imaging with a water immersion objective at room temperature (21-23\u00b0C) causes brain temperature to drop by ~2-3\u00b0C, with an initial transient drop of 5-10\u00b0C that partially recovers within minutes and stabilizes ~2\u00b0C below baseline. Heating the objective restores temperature to physiological values.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10, C16, C17 are supported by direct temperature measurements shown in Figures 1b,c with proper experimental controls (C18 - body temperature maintained). The reversibility upon heating the objective strengthens the causal relationship. Sample sizes are stated (n=5 mice) with statistical significance indicated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C11",
+      "C21",
+      "C22",
+      "C24",
+      "C25",
+      "C44"
+    ],
+    "result": "The temperature drop caused by cool water immersion decreases resting RBC velocity by ~33% (from 0.75\u00b10.09 to 0.5\u00b10.1 mm/s) and RBC flow by ~22% (from 44\u00b15 to 35\u00b15 RBC/s). These effects are reversible upon heating the objective to restore brain temperature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C25 provide quantitative measurements with error estimates and sample sizes (n=6-8 capillaries, 3-4 mice). The reversibility (C25) and consistency with prior work strengthen the finding. Statistical analysis using linear mixed effects models is appropriate. C44 correctly summarizes the correction factors needed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C12",
+      "C23",
+      "C26",
+      "C28",
+      "C42",
+      "C43"
+    ],
+    "result": "Cool water immersion decreases Po2 Mean by ~20% (from 42\u00b13 to 34\u00b13 mmHg), Po2 RBC by ~14%, and Po2 interRBC (tissue Po2) by ~26% (to 31.4 mmHg). The corrected physiological values are Po2 Mean ~42 mmHg and tissue Po2 ~31 mmHg in olfactory bulb glomeruli.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23, C26, C28 provide experimental measurements accounting for temperature-dependent sensor calibration (C19-C20). C42-C43 appropriately revise prior published values (Lyons et al., 2016). The reversibility upon heating and consistency across measurements support the findings. However, the tissue Po2 interpretation relies on prior work (C27) establishing Po2 interRBC as a proxy for neuropil Po2.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C19",
+      "C20"
+    ],
+    "result": "The phosphorescence lifetime of the oxygen sensor PtP-C343 is temperature-dependent, with calibration curves shifting rightward at lower temperatures, necessitating temperature-specific calibration for accurate Po2 measurements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C20 are supported by experimental calibration data shown in Figure 2b and citation to prior work (Finikova et al., 2008). The custom calibration chamber design is described in detail with proper controls (simultaneous Po2 and temperature monitoring). This methodological result is critical for interpreting all Po2 measurements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C27",
+      "C29"
+    ],
+    "result": "Po2 interRBC measurements indicate that resting hemoglobin saturation in olfactory bulb capillaries is approximately 70%, with hemoglobin principally existing as oxyhemoglobin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C27 relies on prior work (Parpaleix et al., 2013) establishing Po2 interRBC as a neuropil Po2 proxy. C29 uses established hemoglobin properties (Hill coefficient, P50 from Uchida et al., 1998) to calculate saturation from Po2 RBC measurements. The inference is reasonable but depends on the validity of prior calibrations and assumptions about mouse hemoglobin properties.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "Anesthesia (ketamine-medetomidine) lowers brain temperature and blood flow, and imaging with a cool objective further decreases temperature to 32.4\u00b0C. With 30% oxygen supplementation, Po2 Mean (65\u00b18 mmHg) is much higher than in awake mice breathing normal air (34\u00b13 mmHg), but heating the objective still significantly increases vascular parameters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C31, C46-C47 are supported by experimental data (Figure 3c) with appropriate citations to prior work on anesthesia effects. C48 is a reasonable inference about prior studies but is somewhat speculative as it generalizes beyond the current data. The comparison between anesthetized (with O2 supplementation) and awake conditions is confounded by both anesthesia and inspired oxygen concentration.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C49"
+    ],
+    "result": "In mice with reinforced thinned-skull preparation over barrel cortex, brain temperature recovery (3-4 days to 37.7\u00b10.2\u00b0C) and imaging-induced temperature drop (~3\u00b0C) are similar to glass window preparation. Heating the objective increases RBC velocity, flow, and Po2 by 18.4%, 27.5%, and 33% respectively, demonstrating that the thin bone layer does not protect against thermal loss.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C36 are supported by experimental data (Figure 4b,c) with stated sample sizes (n=3-4 mice). C37 and C49 are appropriate conclusions from the comparative data. However, the sample size is smaller than for the glass window experiments, and the measurements are limited to superficial layers (<180 \u03bcm, C56) due to technical limitations (C50, C55).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C50",
+      "C55",
+      "C56"
+    ],
+    "result": "In reinforced thinned-skull preparation, the oxygen sensor penetrates the remaining bone and generates surface excitation, limiting reliable Po2 measurements to vessels in upper layer 2/3 (<180 \u03bcm from surface).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50, C55, C56 describe a technical limitation verified experimentally. The authors appropriately restricted their measurements to avoid this artifact. This is a methodological finding that limits the applicability of 2PLM with thinned-skull preparations for deep tissue Po2 measurements.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C41"
+    ],
+    "result": "The drop in oxygenation during cooling principally results from decreased blood flow rather than from temperature-induced changes in hemoglobin-oxygen affinity, oxygen solubility, or diffusion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C41 is a mechanistic interpretation supported by the correlation between blood flow and Po2 changes, with citations to support that temperature effects on hemoglobin affinity and oxygen solubility are minor. However, the manuscript does not provide direct experimental evidence ruling out contributions from these other factors. The statement uses \"we believe\" indicating some uncertainty. Additional experiments manipulating blood flow independently of temperature would strengthen this conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C13",
+      "C51"
+    ],
+    "result": "Heating the objective to correct brain temperature or imaging with a dry objective are required to determine true physiological values of capillary blood flow and brain oxygenation. TPLSM and 2PLM modify brain activity, oxygenation, and blood supply unless temperature is corrected.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13 and C51 are well-supported by the comprehensive experimental data showing reversible effects of temperature on all measured parameters (C10-C12, C24-C26, C30, C36). The conclusion is appropriately cautious and provides practical guidance. However, C51's claim about brain activity modification is not directly demonstrated in this study (no neural activity measurements), though it is supported by prior citations (C7, C38).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5"
+    ],
+    "result": "Prior work established 2PLM as a technique for measuring Po2 in rodent brain vessels and neuropil to depths of several hundred micrometers, revealing erythrocyte-associated transients (EATs) and enabling noninvasive brain oxygenation measurements. Previous measurements in awake mice reported resting Po2 values of ~25 mmHg.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C5 accurately summarize prior work with appropriate citations. These are background claims establishing the context for the current study. C5 reports prior measurements that are later corrected in the current work (C42-C43), which is appropriately acknowledged.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C38"
+    ],
+    "result": "Chronic window preparation requires removing scalp and cranial bone (thermal insulators), and prior studies showed that imaging through glass windows lowers brain temperature in acute preparations, causing neuronal depolarization and altered cortical network properties. Thermal effects of light during two-photon imaging are widely recognized.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C7, C38 accurately cite prior work establishing the problem being addressed. C6 is based on established knowledge about thermal properties of tissue. These background claims appropriately motivate the current study and are well-supported by citations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C32",
+      "C33"
+    ],
+    "result": "Thinned-skull cortical windows have been used for decades for blood flow imaging, and polished reinforced thinned skull (PoRTS) allows long-term imaging with improved quality, stability, and without inflammation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C33 accurately summarize prior work with appropriate citations (Gerrits et al., 1998; Zakharov et al., 2009; Drew et al., 2010). These are background claims establishing context for testing the thinned-skull preparation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C45",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Imaging with immersion objectives provides superior quality and requires less laser power than air objectives. Experiments were performed in capillaries of 3.1\u00b10.5 \u03bcm diameter after a minimum 5-day post-surgery recovery. Temperature changes from two-photon scanning were minute compared to objective-induced changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45, C52-C54 describe methodological details and considerations. C45 is based on established optical principles. C52 and C54 describe experimental parameters. C53 is supported by experimental observations with appropriate citations, justifying the focus on objective-induced temperature changes rather than laser-induced heating.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,403 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C57",
+      "C58",
+      "C59",
+      "C93"
+    ],
+    "result": "A nationally representative serosurvey was conducted in Bangladesh using probability-proportional-to-size sampling of 70 communities from 97,162 census communities, with two visits during 2014-2016, achieving 5,866 participants (76% of household members) with age/sex distributions largely matching the 2011 census.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3, C57-C59, and C93 collectively demonstrate rigorous sampling methodology with clear documentation of selection procedures, participation rates, and representativeness. The probability-proportional-to-size sampling from a complete census frame, high participation rate (76% of household members, 90% of households), and demographic matching to census data provide strong evidence for the representativeness of the sample.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C11",
+      "C12",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Overall dengue seroprevalence in Bangladesh was 24%, with substantial spatial heterogeneity ranging from 3% in rural Sylhet to 88% in urban Chittagong, and demographic variation showing 27% in males vs 21% in females (p<0.001) and 30% in those >20 years vs 14% in those <20 years.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C6, C11-C12, and C61-C63 provide consistent descriptive statistics with appropriate statistical testing (p-values reported). The spatial heterogeneity is well-documented across multiple geographic scales (national, divisional, and city-level), and demographic patterns are clearly quantified with statistical significance testing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C64",
+      "C70"
+    ],
+    "result": "Male sex (aOR: 1.7 [1.5-2.0]) and recent travel within 7 days (aOR: 1.4 [1.1-1.8]) were significant risk factors for dengue seropositivity, with the sex difference concentrated in low-seroprevalence communities (<20%), suggesting male-female seropositivity ratios may serve as markers of local endemicity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C14, C64, and C70 present regression results with both unadjusted and adjusted odds ratios with confidence intervals. The stratified analysis by community seroprevalence level (C64) strengthens the interpretation. However, the mechanistic explanation for why sex differences concentrate in low-prevalence areas remains inferential.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C15",
+      "C16"
+    ],
+    "result": "Household-level factors including electricity, water access, land ownership, household income, and mosquito control use were not associated with dengue seropositivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C16 clearly report null findings with confidence intervals crossing 1.0 for odds ratios. These negative results are important for understanding transmission dynamics, though the lack of association could reflect measurement issues, insufficient statistical power for household-level effects, or genuine absence of effects.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C76",
+      "C77"
+    ],
+    "result": "Ae. aegypti presence showed some association with seropositivity (OR 1.8 [1.2-2.8], aOR 1.4 [0.9-2.2]), while Ae. albopictus presence showed no association (aOR 1.0 [0.7-1.6]). The two species showed slight negative correlation (r=-0.2, p=0.07), and incorporating spatial correlation reduced the Ae. aegypti coefficient toward the null.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C17-C23, C76-C77 present mosquito surveillance data and associations, but the adjusted confidence interval for Ae. aegypti crosses 1.0 (0.9-2.2), indicating statistical uncertainty. The authors acknowledge that spatial covariance may be a better predictor than mosquito presence/absence data (C77), suggesting the mosquito surveillance may have been insufficiently sensitive or that spatial correlation captures unmeasured environmental drivers.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C75"
+    ],
+    "result": "Population size (log scale) was associated with increased seropositivity (OR 1.3 [1.2-1.5]). Variance partitioning showed spatial covariance explained 15%, community random effects 6%, and household random effects 12% of variance, with spatial correlation providing modest improvement in model fit (DIC difference of 4).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C28 and C75 provide clear statistical evidence for urbanization effects and variance partitioning. The DIC comparison justifies inclusion of spatial correlation, though the improvement is modest. The variance partitioning provides important insights into the hierarchical structure of transmission.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C78",
+      "C79"
+    ],
+    "result": "Approximately 25% (95% CI: 21-29%) of Bangladesh's population, equivalent to 40.3 million individuals (95% CI: 34.3-47.2), had been infected with dengue, with crude estimates (24%) closely matching modeled estimates (25%), validating the sampling framework.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C30, C78-C79 present national burden estimates with appropriate uncertainty quantification. The close agreement between crude and modeled estimates (24% vs 25%) provides internal validation of the sampling design and modeling approach. However, these estimates assume the serological assay correctly identifies dengue exposure without cross-reactivity issues.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C80",
+      "C81"
+    ],
+    "result": "Spatial correlation in seropositivity extended to 108 km, and spatial prediction models performed well (Pearson r=0.8, MAE=8%) without requiring demographic covariates, highlighting the importance of spatial dependence for predictions in unsampled locations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C32, C80-C81 demonstrate strong model performance with appropriate validation metrics. The finding that spatial correlation alone performs as well as models with covariates is important for understanding transmission patterns and has practical implications for survey design.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Catalytic modeling estimated 1.6% (95% CI: 1.5-1.7%) annual infection rate nationally, equivalent to 2.4 million infections/year (95% CI: 2.2-2.5), with substantial geographic variation: 6.4% (5.4-7.6%) annually in major urban hubs (Dhaka, Chittagong, Khulna) versus 1.0% (0.9-1.2%) for females and 1.6% (1.4-1.8%) for males elsewhere.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C33-C37 present force of infection estimates from catalytic models, but these rely on strong assumptions including constant force of infection across time (C133), 20 years of circulation (C134), and equal risk across ages (C133). The model assumes all seropositive individuals were infected in Bangladesh, potentially overestimating local transmission if some infections were acquired through travel. Sensitivity analyses on time period (C135) are mentioned but results not fully presented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Sensitivity analyses showed that sampling 20 communities would yield highly variable seroprevalence estimates (13-37%), while 60 communities provided more stable estimates (22-28%). Spatial model performance improved substantially with more communities (MAE: 13.6% with 20 communities to 10.5% with 69; correlation: 0.39 to 0.81), while sampling 20 vs 80 individuals per community had minimal impact.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C42 provide rigorous sensitivity analyses demonstrating the importance of sampling many communities rather than many individuals per community. The iterative resampling approach (100 iterations, C130) provides robust estimates of sampling variability. These findings have important implications for future survey design.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C7",
+      "C8"
+    ],
+    "result": "Seropositivity was highly correlated between 2014 and 2015 visits (Pearson r=0.92) with no significant difference in overall seropositivity across years (p=0.66).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C8 demonstrate temporal stability in community-level seroprevalence. However, the authors acknowledge (in discussion) that the study was not powered to detect small changes and that sampling different households in each year limited ability to measure incidence. The high correlation primarily reflects spatial heterogeneity rather than temporal dynamics.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C98",
+      "C99"
+    ],
+    "result": "Despite 91% awareness of dengue among those >10 years, only 0.6% (38/5866) reported prior dengue infection, and only 16 of these 38 were seropositive, demonstrating that self-reported infection history is uninformative for dengue burden estimation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C10, C98-C99 clearly demonstrate the disconnect between awareness, self-reported infection, and serological evidence. This finding is important for understanding limitations of questionnaire-based surveillance and supports the need for serological surveys.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C65"
+    ],
+    "result": "The estimated 40.3 million seropositive individuals in Bangladesh is substantially lower than the 16.7 million previously estimated by Bhatt et al. (2013) modeling exercise.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C65 compares cumulative infections (40.3 million ever infected) with annual infections from a prior model (16.7 million), which may not be directly comparable. The claim states the current estimate is \"much less\" but the comparison appears to conflate cumulative prevalence with annual incidence. The citation to Bhatt et al. 2013 should be verified to confirm what was actually estimated in that study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Dengue has established sustained endemic transmission only in a few urban settings in Bangladesh, not throughout the country as in neighboring Myanmar, Thailand, and Cambodia. Limited Ae. aegypti presence (33% of communities) may explain this pattern, with negative correlation between Ae. aegypti and Ae. albopictus suggesting niche partitioning or competition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C69 synthesize multiple lines of evidence (spatial heterogeneity, vector distributions, universal presence of at least one seropositive individual) to infer transmission patterns. The interpretation is reasonable given the data, though the comparison to neighboring countries relies on cited literature rather than direct comparison. The inference about vector limitation is plausible but not definitively proven.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C71",
+      "C72"
+    ],
+    "result": "Individuals from low-transmission communities likely acquire infections when traveling to high-transmission areas, and could serve as sources of outbreaks in their home communities if vector presence expands.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C71-C72 present reasonable inferences from the travel and seropositivity associations, but C72 is explicitly speculative (\"If the vector presence expands...\"). The travel data (time since last leaving community) is crude and doesn't capture destination or duration. The causal pathway from travel to infection to local transmission requires assumptions about viremia timing and vector competence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C73",
+      "C74"
+    ],
+    "result": "The male-biased dengue seropositivity contrasts with female-biased chikungunya infection risk in Bangladesh, suggesting difficulty in generalizing risk factors across arboviruses due to differences in vector species and transmission dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C74 make an appropriate comparison to prior work (Salje et al. 2016b) and draw a reasonable inference about arbovirus-specific transmission patterns. The contrast between dengue and chikungunya sex patterns is well-documented and the interpretation about vector and transmission differences is plausible.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "WHO recommends nationally representative serosurveys for Dengvaxia vaccine deployment because the vaccine only protects seropositive individuals and increases severe disease risk in seronegative individuals. For Bangladesh, vaccine rollout should target urban Dhaka, Chittagong, and Khulna, but even there, seropositivity at age 9 is below the 80% threshold for vaccination without pre-screening, necessitating individual antibody screening before vaccination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C87 appropriately cite WHO guidance and vaccine characteristics, and logically apply the study findings to vaccine policy. The recommendation for pre-vaccination screening is well-justified given the seropositivity data. However, the age 9 threshold and 80% cutoff come from WHO guidance (C86) rather than being derived in this study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "Cross-reactivity with other flaviviruses, particularly Japanese encephalitis, is a limitation that prevents serotype-specific quantification and may cause false positives, though the impact is likely small because Japanese encephalitis circulates at low levels (2.7 cases/100,000) primarily in rural areas where dengue seropositivity was low.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C92 appropriately acknowledge a key limitation of serological studies and provide a reasonable assessment of its likely impact. The logic that false positives from JE would be minimal in rural areas where dengue seropositivity was already low is sound. However, no direct testing for JE antibodies was performed to quantify this potential bias.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "BG sentinel traps were used for mosquito surveillance with repeat visits to communities where Aedes were not initially found, but the heterogeneous nature of mosquito distributions means Aedes may have been missed in some communities, potentially underestimating vector distribution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C97 appropriately describe the mosquito surveillance methods with citations supporting trap choice, acknowledge the repeat sampling effort, and honestly discuss limitations. The acknowledgment of potential underestimation due to spatial heterogeneity is appropriate given that only 8 households per community were sampled.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "Nationally representative serum banks are powerful tools for understanding pathogen circulation, vaccination levels, and susceptibility pockets, but have historically focused on vaccine-preventable childhood infections. Adding serological components to surveys like Demographic Health Surveys could improve arbovirus burden estimation, and vector surveillance could help monitor outbreak risk in Bangladesh.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C104 present reasonable recommendations based on the study findings and cited literature. The suggestions for enhancing existing survey platforms and implementing vector surveillance are logical extensions of the work, though they represent future directions rather than findings from this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C143",
+      "C144",
+      "C145"
+    ],
+    "result": "Optimal community sampling density depends on population distribution, infection heterogeneity, precision requirements, and budget, but the 108 km spatial correlation suggests sampling at least one community per 100 km radius. Sampling 20 individuals per community provides robust estimates with fewer budget constraints than visiting additional communities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C143-C145 provide practical guidance for future survey design based on the spatial correlation findings (C31) and sensitivity analyses (C38-C42). The recommendations are well-justified by the data, though the specific 100 km threshold is somewhat arbitrary given the continuous nature of spatial correlation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C50",
+      "C60"
+    ],
+    "result": "Serum samples were tested using PanBio indirect IgG ELISAs, which appeared to discriminate well between those with and without past dengue infection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C50 and C60 describe the serological assay used, but C60's assessment that the assay \"appeared to discriminate well\" is based only on visual inspection of a figure (Figure 1\u2014figure supplement 3) without quantitative validation metrics. No sensitivity/specificity data, comparison to neutralization assays, or assessment of cross-reactivity with other flaviviruses is provided beyond the general discussion of cross-reactivity limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C146",
+      "C147",
+      "C148"
+    ],
+    "result": "The quasi-random household sampling approach using recent wedding locations as starting points is unlikely to bias the sample in Bangladesh where >95% of adults marry, though this approach could produce bias in contexts where marriage rates vary spatially. More detailed movement tracking (GPS, diaries) would improve understanding of mobility patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C146-C148 appropriately discuss limitations and context-specificity of the sampling approach. The justification for the wedding-based starting point is reasonable for Bangladesh but the authors appropriately note it may not generalize. The suggestion for improved movement tracking is a reasonable recommendation for future work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "The study received ethical approval from icddr,b (protocol PR-14058), with CDC relying on this approval, and obtained written informed consent from all adult participants and parents/guardians of children.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C56 document appropriate ethical procedures. These are standard reporting requirements and appear to have been properly followed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C120",
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "Statistical analyses used hierarchical models with random intercepts for household and community, incorporated spatial correlation via Matern covariance functions fitted with INLA in a Bayesian framework, and included sensitivity analyses restricted to adults >20 years.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C120-C123 describe appropriate and sophisticated statistical methods with proper citations (Lindgren et al. 2011). The hierarchical structure accounts for clustering, spatial correlation addresses geographic dependence, and sensitivity analyses address potential confounding by age-related exposure history. The methods are well-suited to the data structure.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141"
+    ],
+    "result": "Catalytic models estimated force of infection from age-seroprevalence relationships, assuming constant force of infection across four serotypes with no age-related risk differences, 20 years of circulation (sensitivity: 15-25 years), and complete susceptibility in 1995. Models estimated primary, secondary, tertiary, and quaternary infections separately by sex and for major cities versus rest of country.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C132-C141 describe the catalytic modeling approach with appropriate citations, but the assumptions are quite strong and may not hold. Constant force of infection (C133) is unlikely given the documented spatial heterogeneity and temporal variation in dengue transmission. The assumption of complete susceptibility in 1995 (C138) ignores potential earlier circulation. The 20-year circulation period (C134) is described as \"approximate\" without clear justification. While sensitivity analyses on the time period were conducted (C135), results are not fully presented. These assumptions substantially affect the infection rate estimates.",
+    "result_type": "MINOR"
+  }
+]

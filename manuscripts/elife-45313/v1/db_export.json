@@ -1,0 +1,1742 @@
+{
+  "submission": {
+    "id": "edf9023e-9fad-484f-8a57-09ee6c35716b",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T10:21:51.947752Z",
+    "updated_at": "2025-12-02T10:21:51.947752Z"
+  },
+  "content": [
+    {
+      "id": "f87403e9-0511-495b-a977-8464a88e2f16",
+      "submission_id": "edf9023e-9fad-484f-8a57-09ee6c35716b",
+      "content_type": "manuscript",
+      "content_text": "# Transcriptional control of subtype switching ensures adaptation and growth of pancreatic cancer\n\n## Authors\n\n- Christina R Adams<sup>1</sup> ([ORCID: 0000-0003-3490-6444](https://orcid.org/0000-0003-3490-6444))\n- Htet Htwe Htwe<sup>1</sup>\n- Timothy Marsh<sup>2</sup> ([ORCID: 0000-0002-8772-7645](https://orcid.org/0000-0002-8772-7645))\n- Aprilgate L Wang<sup>1</sup>\n- Megan L Montoya<sup>1</sup>\n- Lakshmipriya Subbaraj<sup>3</sup>\n- Aaron D Tward<sup>3</sup>\n- Nabeel Bardeesy<sup>5</sup>\n- Rushika M Perera<sup>1</sup> ([ORCID: 0000-0003-2435-2273](https://orcid.org/0000-0003-2435-2273)) \u2020\n\n### Affiliations\n\n1. Department of Anatomy University of California, San Francisco San Francisco United States\n2. Department of Pathology University of California, San Francisco San Francisco United States\n3. Department of Otolaryngology University of California, San Francisco San Francisco United States\n4. Helen Diller Family Comprehensive Cancer Center University of California, San Francisco San Francisco United States\n5. Massachusetts General Hospital Cancer Center Harvard Medical School Boston United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nPancreatic ductal adenocarcinoma (PDA) is a heterogeneous disease comprised of a basal-like subtype with mesenchymal gene signatures, undifferentiated histopathology and worse prognosis compared to the classical subtype. Despite their prognostic and therapeutic value, the key drivers that establish and control subtype identity remain unknown. Here, we demonstrate that PDA subtypes are not permanently encoded, and identify the GLI2 transcription factor as a master regulator of subtype inter-conversion. GLI2 is elevated in basal-like PDA lines and patient specimens, and forced GLI2 activation is sufficient to convert classical PDA cells to basal-like. Mechanistically, GLI2 upregulates expression of the pro-tumorigenic secreted protein, Osteopontin (OPN), which is especially critical for metastatic growth in vivo and adaptation to oncogenic KRAS ablation. Accordingly, elevated GLI2 and OPN levels predict shortened overall survival of PDA patients. Thus, the GLI2-OPN circuit is a driver of PDA cell plasticity that establishes and maintains an aggressive variant of this disease.\n\n## Introduction\n\nPancreatic ductal adenocarcinoma (PDA) is projected to become the second leading cause of cancer-related deaths by 2030 (Rahib et al., 2014), and has a 5-year survival rate of\u00a0<10%. Genomic and transcriptomic analyses have revealed important insights into the underlying biology of this disease. The most common genetic alterations include activating mutations in KRAS in\u00a0~95% of PDA and inactivating mutations or deletions of TP53, CDKN2A, and SMAD4 in 50\u201370% (Jones et al., 2008; Biankin et al., 2012; Ryan et al., 2014; Waddell et al., 2015; Witkiewicz et al., 2015). Recently, transcriptional profiling from resected PDA specimens has identified two main subtypes with distinct molecular features, termed classical and basal-like (Collisson et al., 2011; Moffitt et al., 2015; Bailey et al., 2016). Classical PDA is enriched for expression of epithelial differentiation genes, whereas basal-like PDA is characterized by laminin and basal keratin gene expression, stem cell and epithelial-to-mesenchymal transition (EMT) markers, analogous to the basal subtypes previously defined in bladder and breast cancers (Perou et al., 2000; Parker et al., 2009; Curtis et al., 2012; Cancer Genome Atlas Research Network, 2014; Damrauer et al., 2014). Importantly, basal-like subtype tumors display poorly differentiated histological features and correlate with markedly worse prognosis (Moffitt et al., 2015; Cancer Genome Atlas Research Network, 2017; Aung et al., 2018). These subtypes are preserved in different experimental models of PDA including organoids (Boj et al., 2015; Huang et al., 2015; Seino et al., 2018), cell line cultures (Collisson et al., 2011; Moffitt et al., 2015; Martinelli et al., 2017), and a genetically engineered mouse (GEM) model of PDA in which ablation of oncogenic Kras resulted in subtype conversion (Kapoor et al., 2014). However, the identity of key factors responsible for establishing and maintaining subtype specificity and how these programs integrate with pathways known to be deregulated in PDA remain largely unknown.\n\nThe Hedgehog (Hh) pathway is activated in PDA and\u00a0has been found to play important and complex roles in PDA pathogenesis (Morris et al., 2010). Whereas the developing and normal adult pancreas lack expression of Hh pathway ligands, the Sonic Hedgehog (SHH) and Indian Hedgehog (IHH) ligands are prominently induced in the pancreatic epithelium upon injury and throughout PDA development, from early precursor pancreatic intraepithelial neoplasia (PanIN) to invasive disease (Berman et al., 2003; Thayer et al., 2003; Prasad et al., 2005; Nolan-Stevaux et al., 2009). The neoplastic cells and stromal fibroblasts also express the Hh receptor Smoothened (SMO) and the Glioma-associated oncogene homology (GLI) transcription factors \u2013 GLI1 and GLI2, which mediate Hh signaling downstream of SMO, and GLI3 which functions as a transcriptional repressor (Hui and Angers, 2011; Robbins et al., 2012). While Smo deletion in the pancreatic epithelium has no effect on mutant KRAS-driven PDA in GEM models, studies from our group and others reveal a surprising role for SHH in restraining cancer growth (Lee et al., 2014; Mathew et al., 2014; Rhim et al., 2014; Liu et al., 2016). By contrast, several lines of evidence indicate that activation of GLI transcription factors in the pancreatic epithelium is required for oncogenesis in PDA (Dennler et al., 2007; Ji et al., 2007; Nolan-Stevaux et al., 2009; Rajurkar et al., 2012; Xu et al., 2012). First, pancreas-specific transgenic over-expression of the Gli3 repressor attenuates PDA progression (Rajurkar et al., 2012). Second, forced Gli2 over-expression cooperates with oncogenic Kras to promote aggressive poorly differentiated tumors (Pasca di Magliano et al., 2006). While much emphasis has been placed on ligand-mediated activation of Hh signaling in stromal cells within PDA, the tumor cell-autonomous roles of GLI proteins have remained unclear. In other cancer settings, GLI proteins have been implicated in cell cycle progression, activation of pro-survival programs and a cancer-associated EMT (Yoon et al., 2002; Alexaki et al., 2010; Das et al., 2013; Han et al., 2015; Neelakantan et al., 2017). We therefore explored a role for GLI transcription factors in regulating PDA subtype identity and inter-conversion. We show that GLI2 functions as a master regulator of the basal-like subset of PDA, and define the secreted pro-inflammatory cytokine, Osteopontin (OPN), as a critical downstream target mediating this program. Moreover, our findings indicate that a GLI-OPN axis can functionally substitute for proliferative and survival cues regularly provided by oncogenic Kras in PDA. Together, these data identify GLI2 as an Hh-independent, cell autonomous driver of an aggressive variant of PDA and illuminate the complex role of Hh pathway components in PDA tumorigenesis.\n\n## Results\n\n### Expression of Hh ligands and GLI transcription factors are anti-correlated and predict survival outcomes in PDA\n\nTo explore the relationship between the Hh pathway components in PDA, we first determined the expression levels of SHH and GLI family transcription factors (GLI1, GLI2, GLI3) in a panel of 14 human PDA cell lines using validated antibodies (Figure 1\u2014figure supplement 1A,B). We found that all PDA cell lines expressed Hh pathway proteins to varying degrees. GLI1 and GLI3 expression were restricted to two- and one-cell line respectively, while GLI2 was readily detectable in 10/14 lines. Moreover, high levels of SHH were observed in 7/14 cell lines, while the remainder showed low or undetectable levels of expression (Figure 1A). No significant differences in the level of the SMO receptor were observed across the panel. Notably, cell lines expressing the highest levels of GLI2 (KP4, MiaPaca and Panc0327 cells) displayed the lowest levels of SHH expression (Figure 1A; asterisk). Conversely, GLI expression was uniformly low in lines with high levels of SHH. Accordingly, GLI responsive luciferase reporter assay (Sasaki et al., 1997) demonstrated that GLI transcriptional activity was inversely correlated with SHH expression and positively correlated with GLI expression (Figure 1B,C), such that all SHHhi cell lines lacked basal reporter activity (Figure 1B), whereas the GLIhi KP4, MiaPaca and Panc0327 lines exhibited the highest levels of activity (Figure 1B,C). Luciferase activity was specific to GLI proteins as shRNA-mediated knockdown of GLI2 or treating cells with GANT61 inhibitor, which blocks GLI binding to DNA (Lauth et al., 2007), suppressed GLI-driven luciferase activity (Figure 1\u2014figure supplement 1C,D).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/45313/elife-45313-fig1-v1.jpg)\n\n**Figure 1.:** (A) Immunoblots showing expression of the indicated proteins in 14 human PDA cell lines. Cell lines denoted with an asterisk represent GLIhi/Hhlo lines. (B) The indicated cell lines were transfected with the 8 \u00d7 3\u2019Gli-binding site luciferase plasmid and luciferase activity was measured 48 hr post-transfection. For each box-and-whisker plot, center asterisk indicates the mean of n\u00a0=\u00a03 experiments with a total of 10 independently transfected cultures for each cell line. (C) GLI activity as measured by GLI luciferase assay (B) is anti-correlated with SHH protein levels (A). Linear regression line is shown in red along with corresponding statistics. (D,E) High expression of GLI2 predicts shorter overall (D: left; GLI2 high n\u00a0=\u00a0147, GLI2 low n\u00a0=\u00a038) and disease-free (D: right; GLI2 high n\u00a0=\u00a0114, GLI2 low n\u00a0=\u00a027) survival while high SHH expression predicts extended disease-free survival (E: SHH high n\u00a0=\u00a011, SHH low n\u00a0=\u00a0130) for patients with PDA from The Cancer Genome Atlas (TCGA). Data from 185 patients. p-Value calculated by Log-rank test.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/45313/elife-45313-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Lysates from 293 T cells transiently transfected with Flag tagged GLI constructs were probed with GLI-specific antibodies as indicated. (B) Immunoblot showing loss of the GLI2-specific band following knockdown of GLI2 with two distinct shRNA constructs in KP4 cells. (C,D) GLI luciferase activity in Panc0327 cells following shRNA-mediated knockdown of GLI2 (C) and in MiaPaca and KP4 cells following treatment with 5 \u03bcM GANT61 for 3 days (D). p-Values were calculated by two-tailed unpaired t test. *p<0.05; **p<0.01; ***p<0.001. (E) Comparison of SHH (left) and IHH (right) mRNA expression in RNA-seq data from TCGA PDA tumors binned into GLI2 high (n\u00a0=\u00a051) and GLI2 low (n\u00a0=\u00a041) groups. (F,G) Demographic and clinical information stratified by GLI2 (high: z > \u22121) (F), and stratified by SHH (high: z\u00a0>\u00a02) (G). (H) mRNA expression of epithelial to mesenchymal transition (EMT) markers as indicated. Data corresponds to Figure 2A.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/45313/elife-45313-fig1-figsupp2-v1.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A) Cox regression model for overall survival stratified by GLI2 and SHH expression reveals age at diagnosis as a significant predictor of overall survival in GLI2 high samples while no covariates are significant predictors of overall survival in SHH high samples (B) Cox regression model for progression free survival stratified by GLI2 high and SHH high reveals no covariates as significant predictors. Differences in sample sizes (n) attributed to missing clinical data.\n\nThe anti-correlation between GLI2 and SHH was further corroborated by analyzing RNA-sequencing (RNA-seq) data of resected PDA specimens from The Cancer Genome Atlas (TCGA) study (Cancer Genome Atlas Research Network, 2017). Samples were binned into two groups based on whether GLI2 expression levels were higher or lower than the mean mRNA expression within the sample set (see Materials\u00a0and\u00a0methods for details). Consistent with the cell line data, tumors expressing high levels of GLI2 mRNA had significantly lower expression of SHH and IHH (Figure 1\u2014figure supplement 1E). Importantly, given that stromal cells also express GLI2, we confirmed that high GLI2 status was independent of stromal cell content. Of the 51 PDA tumors characterized as GLI2 high, a relatively even distribution between high purity (>33% tumor/stromal cell content; n\u00a0=\u00a023) and low purity (<33% tumor/stromal cell content; n\u00a0=\u00a027) samples was observed (see Materials and methods for details), indicating that GLI2 expression in stromal cells is an unlikely confounding factor in determining tumor cell GLI2 status in this patient cohort. These findings indicate that PDA cell lines and tumors segregate into GLIhi/Hhlo and GLIlo/Hhhi subgroups, independent of tumor cell purity, further supporting an inverse relationship between expression of Hh ligands and GLI transcription factors in PDA. Notably, high expression levels of GLI2 in primary PDA tumors correlated with shortened overall and disease-free survival (Figure 1D). In contrast, high SHH expression levels were associated with longer disease-free survival (Figure 1E). GLI2 or SHH high versus low expression level was not correlated with clinical variables such as sex, T stage, N stage, or M stage, although as expected from our data there was a correlation between high SHH and low GLI2 expression and vice-versa (Figure 1\u2014figure supplement 1F,G). A multivariate analysis of the hazard attributable to SHH or GLI2 status demonstrated that no other variables explained the relationship between SHH or GLI2 and overall or progression-free survival (Figure 1\u2014figure supplement 2). Collectively, our data point to an unexpected dichotomy among PDA tumors and cell lines with respect to Hh pathway circuitry, with high GLI transcriptional activity dissociated from canonical ligand-dependent signaling and associated with worse patient outcomes. Given these findings, we sought to determine the functions of GLI2 \u2013 the main transcriptional activator amongst the GLI family of proteins (Hui and Angers, 2011), - in PDA and examine how its increased activity may promote a more aggressive tumor phenotype.\n\n### GLI expression and activity correlates with a mesenchymal cell state and the basal-like subtype of PDA\n\nWe sought to determine the relationship between GLI expression and EMT in PDA, given the role of this program in cancer aggressiveness. Reexamination of our panel of 14 PDA cell lines by immunoblot (Figure 2A) and qRT-PCR (Figure 1\u2014figure supplement 1H) for mesenchymal markers - ZEB1, ZEB2, Vimentin (VIM), SNAI1, SNAI2, N-Cadherin (CDH2) - and epithelial markers \u2013 E-Cadherin (CDH1), Epithelial splicing regulatory protein 1 and 2 (ESRP1, ESRP2) \u2013 enabled classification into EMT low and EMT high groups. Notably, whereas none of the GLIlo/Hhhi cell lines showed an EMT signature, most of the GLIhi/Hhlo cell lines were in the EMT high group, with the exceptions, HupT3 and Panc0327, displaying an intermediate phenotype (Figure 2A; Figure 1B,C). To assess whether GLI activity correlates with EMT status more broadly, we used a published EMT score generated from a meta-analysis of 18 independent gene expression studies of EMT (Gr\u00f6ger et al., 2012). This signature assigned 38 human PDA cell lines as EMT high or low (Gr\u00f6ger et al., 2012; Viswanathan et al., 2017), and we found that GLI activity (see Figure 1B) correlated positively with EMT in our PDA cell line panel (Figure 2B), while SHH expression correlated negatively (Figure 2C). Intermediate cell lines, Panc0327 and HupT3 clustered together with the mesenchymal and epithelial-like cohort, respectively (Figure 2B). Together these findings indicate that GLIhi status correlates with a mesenchymal cell state in PDA.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/45313/elife-45313-fig2-v1.jpg)\n\n**Figure 2.:** (A) Human PDA cell lines segregate into two groups based on protein expression of EMT associated markers as indicated. Mesenchymal markers (ZEB1, VIM, N-Cadherin), epithelial markers (E-Cadherin, ESRP1). (B,C) GLI activity (B) as measured by GLI luciferase assay and SHH protein levels (see Figure 1) (C) correlated to EMT score. Linear regression line is shown in red along with corresponding statistics. Epithelial cell lines are indicated in blue, and mesenchymal cell lines are indicated in red. Intermediate lines are indicated in grey. (D) mRNA expression of the classical subtype gene set (see Materials and methods) across 14 human PDA cell lines. Epithelial cell lines (blue) express higher levels of the classical gene program. (E) Expression of Hh pathway components correlates with PDA subtypes. GLI2 mRNA expression is higher in TCGA PDA samples (n\u00a0=\u00a0149) classified as basal-like (n\u00a0=\u00a065), while SHH and IHH expression is higher in samples classified as classical (n\u00a0=\u00a084). Bar represents average normalized z-score. (F) Table outlining the relationship between GLI and Hh expression to PDA subtypes in PDA human cell lines.\n\nEMT and poorly differentiated histopathology are features of basal-like PDA, prompting us to examine the relationship between GLI/Hh and subtype identity. To assay classical and basal-like status in PDA cell lines, we used concordant gene signatures based on the Collisson, Moffitt and Bailey studies (Collisson et al., 2011; Moffitt et al., 2015; Bailey et al., 2016; Cancer Genome Atlas Research Network, 2017) (See Materials and methods). As expected, PDA cell lines with elevated levels of epithelial marker expression (GLIlo/Hhhi lines) closely correlated with enrichment of the classical gene program (Collisson et al., 2011; Aung et al., 2018) (Figure 2A and Figure 2D). We next analyzed GLI status in 149 TCGA PDA samples pre-classified as classical or basal-like using the Collisson, Moffitt and Bailey signatures (Cancer Genome Atlas Research Network, 2017). Strikingly, GLI2 mRNA expression was enriched in the basal-like tumors, (Figure 2E left), whereas high SHH and IHH expression correlated with the classical subtype (Figure 2E middle, right). Collectively these data demonstrate that GLI-high status is a hallmark of the basal-like, EMT-high state that portends poor patient prognosis (Figure 2F).\n\n### GLI2 induction is sufficient to drive a classical to basal-like subtype switch in PDA cells\n\nTo determine whether GLI proteins have functional roles in driving subtype specification, we engineered classical subtype PDA cell lines (YAPC, HPAFII) to stably overexpress GLI2 (Figure 3A; Figure 3\u2014figure supplement 1A). Luciferase assays revealed that ectopic GLI2 expression in YAPC cells resulted in comparable GLI transcriptional activity to what is observed in the basal-like cell lines (Figure 3\u2014figure supplement 1B vs Figure 1B). Strikingly, GLI2 overexpression strongly induced the mesenchymal markers ZEB1, VIM and basal-like marker KRT14 in YAPC cells and led to downregulation of epithelial markers E-Cadherin and ESRP1, and the transcription factor GATA6 - a putative regulator of the classical subtype of PDA (Collisson et al., 2011; Martinelli et al., 2017) and SHH in YAPC and HPAFII cells (Figure 3A; Figure 3\u2014figure supplement 1A). Consistent with a switch toward a mesenchymal-like cell state, YAPC- and HPAFII-GLI2 cells showed a significant change in cell morphology compared to control cells expressing empty vector (EV) (Figure 3B; Figure 3\u2014figure supplement 1C), characterized by a more elongated, less compact morphology when grown as monolayer cultures or as 3D matrigel cultures (Figure 3B). Together, these data indicate that GLI2 can promote an EMT-like switch in classical PDA cells.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/45313/elife-45313-fig3-v1.jpg)\n\n**Figure 3.:** (A) Immunoblot shows expression of the indicated proteins in YAPC cells stably expressing empty vector (EV) or Flag-tagged GLI2 (GLI2). (B) Images show the effect of stable expression of Flag-tagged GLI2 in YAPC cells on morphology when grown in 2D (left) and as 3D cultures (right). Note the switch to a mesenchymal phenotype in the GLI2-expressing cells. Scale bars, 100 \u03bcm. (C) Immunoblot shows GLI2 induction in HPAFII- and YAPC-iGLI2 cells following treatment with Dox. (D) Gene set enrichment analysis (GSEA) of RNA-sequencing data shows significant enrichment of the \u2018Hallmarks_Epithelial_Mesenchymal_Transition\u2019 gene set in YAPC-iGLI2 cells treated with 1 \u03bcg/ml Dox for 6 days to induce expression of GLI2, compared to identically treated YAPC-iEV control cells, (n\u00a0=\u00a03). (E) Heatmap shows expression of basal-like (red) and classical (blue) subtype associated genes determined by qRT-PCR following 1 \u03bcg/ml Dox treatment of replicate HPAFII-iGLI2 (top) and YAPC-iGLI2 (bottom) cells for 3 days. Values from n\u00a0=\u00a05 replicates per cell are normalized to gene expression in identically treated iEV control cells and log10 transformed. (F,G) Graph shows the effect of GLI2 induction in YAPC-iGLI2 cells treated with 1 \u03bcg/mL Dox for 3 days on SOX2 and CD44 (F) and SHH and GATA6 (G) mRNA expression, displayed as fold change normalized to identically treated iEV control cells, (data represent n\u00a0=\u00a03 experiments). p-Values were calculated by two-tailed unpaired t test. *p<0.05; **p<0.01; ***p<0.001.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/45313/elife-45313-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Immunoblot of HPAFII cells stably expressing empty vector (EV) or Flag-tagged GLI2 (+GLI2). (B) Luciferase assay measuring GLI activity in YAPC cells ectopically expressing EV or Flag-tagged GLI2 (GLI2). (C) Effect of ectopic GLI2 expression on morphology of HPAFII cells relative to EV control cells. Scale bar\u00a0=\u00a050 \u03bcm. (D) Graph shows mRNA levels of the indicated genes following Dox induced expression of GLI2 in YAPC-iGLI2 cells after 3 days. Values represent fold change normalized to identically treated iEV control cells, (n\u00a0=\u00a03). (E) Effect of stable over-expression of \u0394N-GLI2 in YAPC cells on GLI2, SHH and GATA6 mRNA levels, displayed as fold change normalized to EV control cells. p-Values were calculated by two-tailed unpaired t test. *p<0.05, **p<0.01, ***p<0.001.\n\nWe next engineered YAPC and HPAFII cells to express GLI2 in a doxycycline (Dox)-inducible manner (iGLI2 cells), to study the downstream gene programs controlled by GLI2 with further resolution (Figure 3C). We performed RNA-seq analysis of YAPC-iGLI2 cells compared to EV control cells (YAPC-iEV) following 6 days of Dox treatment. Gene set enrichment analysis (GSEA) using the Cancer Hallmarks database indicated that \u2018Epithelial_Mesenchymal_Transition\u2019 was the most statistically significant program activated by GLI2 (Figure 3D). We further validated that Dox-inducible activation of GLI2 in YAPC cells led to an increase in EMT markers, consistent with our results with stable GLI2 over-expression (Figure 3\u2014figure supplement 1D). In keeping with the relationship between EMT and the basal-like subtype, qPCR analysis indicated that Dox treatment of iGLI2 cells for 3 days resulted in a significant increase in basal-like subtype genes and a corresponding decrease in a subset of classical genes in both YAPC- and HPAFII-iGLI2 cells (Figure 3E). In addition, the expression levels of stemness associated markers SOX2 and CD44 increased (Figure 3F), while SHH and GATA6 showed a significant decrease upon GLI2 induction and basal-like subtype switching in YAPC cells (Figure 3G). Similarly, forced expression of a constitutively active GLI2 lacking the N-terminal repressor domain (Pasca di Magliano et al., 2006) (\u0394N-GLI2) also lead to a decrease in SHH and GATA6 levels in YAPC cells (Figure 3\u2014figure supplement 1E). Thus, GLI2-mediated conversion from a classical to a basal-like state also incorporates loss of SHH, which is in support of our observed inverse correlation between GLI proteins and Hh ligand expression in cell lines and patient tumors.\n\n### GLI2 is required for maintenance of the basal-like state\n\nTo test whether GLI proteins are not only sufficient but also necessary to sustain the basal-like phenotype, we suppressed GLI2 levels via siRNA or shRNA-mediated knockdown or CRISPR-Cas9 mediated knockout in basal-like cell lines, KP4 and Panc0327. Loss of GLI2 led to a decrease in basal-like markers (KRT5, KRT14) and SOX2 and induction of epithelial markers (Figure 4A; Figure 4\u2014figure supplement 1A). Accordingly, expression of the basal-like signature and EMT-associated genes were also significantly reduced following GLI2 knockdown (KP4) (Figure 4B,C) or knockout (Panc0327) (Figure 4\u2014figure supplement 1B,C).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/45313/elife-45313-fig4-v1.jpg)\n\n**Figure 4.:** (A) Immunoblot shows the effect of shRNA-mediated GLI2 and GLI1 combined knockdown on expression of the indicated proteins in KP4 cells. (B,C) Graph shows the effect of siRNA mediated GLI2 and GLI1 combined knockdown on EMT associated gene expression (B) and basal-like subtype gene expression (C) determined by qRT-PCR, displayed as fold change normalized to a scrambled siRNA control in KP4 cells (n\u00a0=\u00a02). (D) Brightfield images of Panc0327 and KP4 cells grown in 2D monolayer show loss of a mesenchymal phenotype upon GLI2 knockout (GLI2 KO) compared to Cas9 control cells (CTRL). Scale bar, 100 \u03bcm. (E) Immunofluorescence staining (left) and quantification (right) of percentage ESRP1 nuclear localization in KP4 control (shGFP) and shRNA mediated GLI2 knockdown cells. Data represent 10 fields from two independent experiments. Solid arrowheads indicate absence of nuclear ESRP1; open arrowheads indicate nuclear ESRP1. Scale bar, 50 \u03bcm. (F) Quantification of in vitro growth rate of KP4 Cas9 CTRL and GLI2 KO cells. (G) Quantification of in vivo growth of KP4 CTRL and GLI2 KO subcutaneous xenografts. Error bars represent s.e.m. (H) Immunohistochemistry of KP4 xenografts show downregulation of basal-like marker S100A2 (top) and upregulation of GATA6 (bottom) in GLI2 KO cells compared to CTRL, consistent with loss of the basal-like state. Scale bars, 200 \u03bcm. p-Values were calculated by two-tailed unpaired t test. n.s.\u00a0=\u00a0not significant; *p<0.05; **p<0.01; ***p<0.001.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/45313/elife-45313-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Immunoblot shows the effect of GLI2 knockout (KO) in Panc0327 cells on protein expression of the indicated markers. (B,C) Graph shows the effect of CRISPR-Cas9 mediated GLI2 knockout (GLI2 KO) in Panc0327 cells on mRNA expression of the basal-like subtype genes (B) and EMT markers (C) determined by qRT-PCR, displayed as fold change normalized to Cas9 control (CTRL) cells. (D) Images show the effect of GLI2 KO in KP4 cells grown in 3D matrigel culture. Note the change from a mesenchymal to an epithelial phenotype. Scale bar\u00a0=\u00a0100 \u03bcm. (E) Immunofluorescence staining (left) and quantification (right) of percentage ESRP1 nuclear localization in Panc0327 Cas9 control (CTRL) and GLI2 KO cells. Data represent 10 fields from two independent experiments. Solid arrowheads indicate absence of nuclear ESRP1; open arrowheads indicate nuclear ESRP1. Scale bar, 50 \u03bcm. p-Values were calculated by two-tailed unpaired t test. *p<0.05; **p<0.01; ***p<0.001.\n\nSimilarly, GLI2 knockout in KP4 and Panc0327 cells (GLI2KO) resulted in a clear switch towards a more epithelial like morphology in 2D monolayer culture (Figure 4D) and 3D matrigel growth (KP4; Figure 4\u2014figure supplement 1D). Moreover, immunofluorescence staining followingGLI2 knockdown or GLI2KO in KP4 and Panc0327 cells, respectively, showed a prominent nuclear relocalization of ESRP1 relative to Cas9 control cells, where ESRP1 was predominantly cytoplasmic (Figure 4E; Figure 4\u2014figure supplement 1E). We next determined whether loss of the basal-like state compromises tumor growth. KP4 GLI2KO cells showed a modest difference in in vitro growth rate (Figure 4F); however, GLI2KO tumor xenografts displayed significantly reduced in vivo growth relative to Cas9 control tumors (Figure 4G). Importantly, slow growing KP4 GLI2KO tumors displayed reduced expression of the basal-like marker S100A2 (Figure 4H, top row) and increased expression of the classical marker GATA6 (Figure 4H, bottom row), suggesting that GLI2-dependent maintenance of a basal-like state is important for facilitating rapid in vivo tumor growth.\n\nCollectively, these data indicate that GLI2 is both necessary and sufficient to drive a common program that couples EMT and the basal-like subtype of PDA and that a significant level of cellular plasticity exists within PDA molecular subtypes\n\n### GLI2 mediates basal-like subtype switching in response to oncogenic KRASG12D ablation\n\nRecent studies have shown that PDA tumor cells can survive in the absence of oncogenic KRAS (referred to hereafter as KRAS*) signaling by activating alternative mechanisms that maintain their growth (Singh et al., 2009; Kapoor et al., 2014; Kemper et al., 2014; Shao et al., 2014). These circuits often restore critical functions of KRAS*, such as tumor cell proliferation and evasion of apoptosis, thereby enabling cancer cells to escape KRAS* withdrawal. Moreover, basal-like PDA cell lines have been shown to harbor reduced dependency on KRAS* for growth (Singh et al., 2009). Therefore, we hypothesized that GLI2-mediated basal-like subtype switching of classical PDA cells could likewise obviate KRAS*-dependency. First, we measured GLI1 and GLI2 expression levels in response to oncogenic Kras* extinction in cells derived from a murine PDA model driven by a Dox-inducible Kras* allele [termed the iKRAS model (Ying et al., 2012). In this system, removal of Dox from the culture media led to a 50% reduction in Kras mRNA expression within 24 hr and complete extinction by 72 hr (Figure 5\u2014figure supplement 1A,B). Interestingly, a reciprocal increase in Gli2 and Gli1 expression was evident within 24 hr of Dox removal and persisted for at least 5 days (Figure 5A\u2013C; Figure 5\u2014figure supplement 1A). Moreover, there was a corresponding up-regulation of Zeb1 and Vim mRNA and of basal-like subtype genes, consistent with induction of EMT and basal-like features (Figure 5\u2014figure supplement 1C,D). Similarly, shRNA-mediated knockdown of KRAS in the human PDA cell lines YAPC and HPAFII led to a concomitant increase in GLI expression, EMT markers (Figure 5D; Figure 5\u2014figure supplement 1E) and basal-like subtype genes (Figure 5E). Importantly, expression of the basal-like program was dependent on GLI2, as treatment of iKRAS4 cells with the GLI inhibitor, GANT61 (5 \u03bcM), suppressed basal-like gene induction in response to KRAS* ablation (Figure 5F). Thus, upon KRAS* suppression, upregulation of GLI expression is responsible for induction of the basal-like gene program.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/45313/elife-45313-fig5-v1.jpg)\n\n**Figure 5.:** (A,B) Effect of Dox depletion for 3 days on levels of Gli2 (A) and Gli1 (B) mRNA as measured by qRT-PCR in the indicated iKRAS cell lines, (n\u00a0=\u00a03). (C) Immunoblot shows expression of GLI2 and KRAS in iKRAS2 cells\u00a0+\u00a0Dox and \u2013 Dox for 3 and 5 days. (D,E) Effect of shRNA-mediated knockdown of KRAS on GLI2, GLI1, ZEB1 mRNA levels (D) and basal-like gene expression (E) as measured by qRT-PCR in YAPC cells. (n\u00a0=\u00a03). (F) Fold change in the basal-like gene signature in iKRAS4 cells following Dox removal (red plot) for 3 days or Dox removal in conjunction with 5 \u03bcM GANT61 treatment (grey plot). qRT-PCR measurement of the indicated genes in both conditions are normalized to the\u00a0+Dox control condition (black plot) (n\u00a0=\u00a03). (G) Colony-forming ability of iKRAS4 cells stably expressing empty vector (EV) or Flag-tagged mGLI2 (GLI2) grown in the presence (top) or absence (bottom) of Dox for 6 days, followed by staining with crystal violet. Graph shows the fold change in growth relative to the EV\u00a0+Dox setting. Results shown are representative of n\u00a0=\u00a03 experiments. (H,I) Images (H) show the effect of stable expression of EV (top) or Flag tagged GLI2 (bottom) on YAPC sphere formation 5 days post shRNA-mediated knockdown of KRAS compared to control cells (shGFP). Quantification of sphere area for each condition is shown (I). Number of spheres measured per condition is indicated in parenthesis. Scale bar, 200 \u03bcm. (J) Immunoblots show expression of the indicated proteins in iKRAS (black) and Escaper (red) cell lines. Numerical values indicate levels of GLI2 and YAP1 normalized to Tubulin. Escaper cell lines denoted with \u2018Y\u2019 harbor genomic amplification of Yap1. (K\u2013M) Images (K) show the effect of shRNA-mediated knockdown of Gli2 using two separate hairpins on iKRAS1 sphere formation when grown in the presence (top) or absence (bottom) of Dox for 18 days. Quantification of sphere area in the presence (L) and absence (M) of Dox is shown. Number of spheres measured per condition is indicated in parenthesis. Arrowheads indicate growth of KRASG12D independent spheroids. Scale bar, 100 \u03bcm. p-Values were calculated by two-tailed unpaired t test. n.s.\u00a0=\u00a0not significant, *p<0.05; **p<0.01; ***p<0.001.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/45313/elife-45313-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) Graph shows effect of Dox withdrawal for 1, 3 and 5 days on Kras and Gli2 mRNA expression in iKRAS2 cells as measured by qRT-PCR. Results are representative of n\u00a0=\u00a03 experiments. (B) Graph shows the effect of Dox depletion for 3 days on mRNA expression of Kras in iKRAS cell lines as measured by qRT-PCR. (C) Graph shows the effect of Dox depletion for 5 days on Vim and Zeb1 mRNA expression in iKRAS2 cells as measured by qRT-PCR. Results are representative of n\u00a0=\u00a03 experiments. (D) Effect of Dox depletion for 3 days on mRNA expression of basal-like genes in the indicated iKRAS cell lines as measured by qRT-PCR. Results are shown as fold change relative to the\u00a0+Dox condition. Significantly upregulated genes are indicated for each iKRAS cell line. (E) Effect of shRNA-mediated knockdown of KRAS on the indicated genes as measured by qRT-PCR in HPAFII cells. p-Values were calculated by two-tailed unpaired t test. *p<0.05; **p<0.01; ***p<0.001; # p<0.001.\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/45313/elife-45313-fig5-figsupp2-v1.jpg)\n\n**Figure 5\u2014figure supplement 2.:** (A) Immunoblot shows expression of Flag in iKRAS cells stably expressing empty vector or Flag-tagged mouse GLI2 (mGLI2-FLAG). (B) Immunoblot shows the effect of ectopically expressing empty vector (EV) or Flag tagged mGli2 (+Gli2) in iKRAS4 cells on indicated EMT markers. (C) Colony-forming ability of iKRAS1 and iKRAS2 cells stably expressing EV or mGLI2-FLAG (+GLI2) grown in the presence (top) or absence (bottom) of Dox for 6 days, followed by staining with crystal violet. (D) Images (top) show the effect of stable expression of EV or mGLI2-FLAG on iKRAS4 sphere formation when grown in the presence (left) or absence (right) of Dox for 5 days. Quantification of sphere area for each condition is shown (below). Number of spheres measured per condition is indicated in parenthesis. Scale bars, 200 \u03bcm. (E) Immunoblot shows shRNA-mediated knockdown efficiency of KRAS in YAPC-EV and YAPC-GLI2 cells. (F) qRT-PCR measuring Gli2 transcript in iKRAS1 (left) and iKRAS4 (right) cells following infection with shRNA targeting mouse Gli2. (G) Images show the effect of shRNA-mediated knockdown of Gli2 on iKRAS4 sphere formation in the presence (top) or absence (bottom) of 1 \u03bcg/ml Dox for 15 days. Arrowheads indicate growth of KRASG12D independent spheroids. Scale bars, 250 \u03bcm. (H, I) Quantification of sphere area shown in \u2018G\u2019. Area of spheres grown in the presence (H) or absence (I) of Dox following infection with shGFP control hairpin or shGli2 in iKRAS4 cells. Number of spheres measured is indicated in parenthesis. p-Values were calculated by two-tailed unpaired t test. n.s.\u00a0=\u00a0not significant, *p<0.05; **p<0.01; ***p<0.001; ****p<0.0001.\n\n### Acquired resistance and tumor relapse following KRAS* ablation is mediated by GLI2\n\nTo test whether GLI2 induction is required to sustain growth of tumor cells following suppression of KRAS*, we stably overexpressed Flag-tagged mouse GLI2 in iKRAS cell lines (iKRAS-GLI2) prior to Dox withdrawal (Figure 5\u2014figure supplement 2A). Consistent with our findings in human PDA cell lines following ectopic expression of GLI2, murine iKRAS-GLI2 cells similarly displayed an increase in expression of basal (KRT5, KRT14) and EMT markers and SOX2 (Figure 5\u2014figure supplement 2B). In the presence of Dox (KRAS* on), iKRAS-GLI2 cells had a growth advantage over control cells (Figure 5G, quantified in graph; \u2018+Dox\u2019). Upon Dox withdrawal (KRAS* off), control cells (iKRAS-EV) failed to form colonies after 6 days while iKRAS-GLI2 cells were able to form colonies within the same time frame (Figure 5G, quantified in graph; \u2018- Dox\u2019; Figure 5\u2014figure supplement 2C). This phenotype was recapitulated in 3D spheroid culture, where ectopic GLI2 expression rescued growth of iKRAS cells by 2.5 fold following Dox withdrawal (Figure 5\u2014figure supplement 2D). Similarly, human YAPC-GLI2 PDA cells were capable of sustained growth as 3D spheroids following shRNA-mediated knockdown of KRAS* relative to YAPC-EV cells (Figure 5H,I; Figure 5\u2014figure supplement 2E). Thus activation of GLI2 in PDA cells accelerates the emergence of clones that grow in the absence of KRAS*.\n\nSustained KRAS* pathway suppression in the iKRAS model was shown to induce significant tumor regression; however, this was often followed by rapid tumor re-growth (Kapoor et al., 2014; Shao et al., 2014). Relapsed tumors retain KRAS* pathway suppression (Figure 5J) and a subset harbor genomic amplification of the Hippo pathway transcriptional coactivator, YAP1 (Kapoor et al., 2014), which we have confirmed in 3 of 7 \u2018Escaper\u2019 tumor cells lines (Figure 5J; cell lines denoted as EY1-3). Interestingly, several Escaper cell lines do not harbor YAP1 amplification, suggesting that additional mechanisms may exist which mediate bypass of KRAS* extinction. Strikingly, we find that GLI2 is upregulated in 6/7 Escaper cell lines, including 4/7 lacking YAP1 induction. These results suggest that PDA cells co-opt several bypass mechanisms to circumvent KRAS* inactivation, including YAP1 and GLI2 upregulation, which may functionally compensate for KRAS* loss.\n\nTo further test the role of GLI2 in tumor relapse following KRAS* suppression, we grew iKRAS cell lines (iKRAS1 and iKRAS4) in the presence or absence of Dox for 15\u201318 days following shRNA mediated knockdown of Gli2 (Figure 5\u2014figure supplement 2F). In the presence of Dox, loss of GLI2 did not have a significant effect on spheroid growth compared to shGFP control cells (Figure 5K top row, L; Figure 5\u2014figure supplement 2G top row, H). However, the eventual emergence of resistant colonies in the absence of Dox was suppressed in shGLI2 cells compared with shGFP control (Figure 5K bottom row, M arrowheads; Figure 5\u2014figure supplement 2G, bottom row, arrowheads and I). Thus, GLI2-mediated basal-like subtype switching can rescue viability upon KRAS* suppression, whereas its loss exacerbates the growth deficits caused by KRAS* loss.\n\n### The secreted ligand osteopontin (OPN) promotes basal-like subtype conversion downstream of GLI2\n\nWe next interrogated candidate downstream GLI2 targets that may drive subtype interconversion. Among the most upregulated transcripts expressed in YAPC-iGLI2 cells following GLI2 induction were genes encoding secreted factors including Secreted Phosphoprotein 1 (SPP1) encoding Osteopontin (OPN), fibroblast growth factor 19 (FGF19) and SPOCK2 [SPARC (Osteonectin)] and the basal-like gene S100A2 (Figure 6A). OPN is a secreted glycosylated phosphoprotein classified as a member of the \u2018small integrin-binding ligand N-linked glycoproteins\u2019 (SIBLINGs) and has been associated with tumorigenesis and metastasis of several tumor types (Yoon et al., 2002; Rangaswami et al., 2006; Das et al., 2009; Pietras et al., 2014; Ahmed et al., 2016; Zhao et al., 2018). We confirmed upregulation of secreted OPN in YAPC-iGLI2 (Figure 6\u2014figure supplement 1A) and in a second cell line, HPAFII-iGLI2 (Figure 6B,C) 3 days post-induction of GLI2. Similarly, ectopic expression of \u0394N-GLI2 in YAPC cells also led to an increase in SPP1 expression (Figure 6\u2014figure supplement 1B). Consistent with direct regulation of SPP1 transcription, chromatin immuno-precipitation of GLI2 showed binding to a GLI consensus element found upstream of the human SPP1 transcriptional start site (Figure 6D) (Kijewska et al., 2017).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/45313/elife-45313-fig6-v1.jpg)\n\n**Figure 6.:** (A) Top altered genes identified via RNA-sequencing analysis of YAPC-iGLI2 cells\u00a0+\u00a0Dox relative to YAPC-iEV\u00a0+Dox, (n\u00a0=\u00a03). (B,C) Graph shows the relative fold change in human SPP1 mRNA (B) and secreted protein (OPN) in the conditioned media as measured by ELISA (C) of HPAFII-iGLI2 cells treated with 1 \u03bcg/mL Dox for 3 days normalized to identically treated HPAFII-iEV. (D) Chromatin immunoprecipitation of Flag-tagged GLI2 in 293 T cells shows enrichment of binding to the BCL2 and SPP1 promoter relative to WT control cells (n\u00a0=\u00a03). Error bars indicate s.e.m. (E) Effect of siRNA-mediated knockdown of KRAS in YAPC cells on SPP1 mRNA expression as measured by qRT-PCR. (F) Western blot of OPN receptors, CD44, integrin \u03b15 and integrin \u03b23 in basal-like (red) and classical (blue) PDA cell lines. (G,H) Effect of GLI2 knockdown in KP4 (G) and MiaPaca (H) cells, on mRNA expression of the indicated genes. (I) Heatmap shows the effect of treating Capan2 cells with 1 \u03bcg/mL recombinant human OPN for 3 days on expression of the basal-like and classical subtype genes as measured by qRT-PCR (n\u00a0=\u00a04). Values are normalized to no treatment and log2 transformed. (J) Effect of shRNA-mediated knockdown of GLI2 alone (red) or in conjunction with 1 \u03bcg/mL OPN treatment (black) on expression of basal genes in Panc0327 cells. Values are normalized to no treatment and log10 transformed. p-Values were calculated by two-tailed unpaired t test. *p<0.05; **p<0.01; ***p<0.001.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/45313/elife-45313-fig6-figsupp1-v1.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (A) Graph shows the relative fold change in human OPN in the conditioned media of YAPC-iEV and -iGLI2 cells treated with 1 \u03bcg/mL Dox for 3 days as measured by ELISA. All values are normalized to OPN levels in YAPC-iEV grown in the absence of Dox. (B) Graph shows relative fold change in SPP1 mRNA levels following transient expression of \u0394N-GLI2 (\u0394N) in YAPC cells. (C) Graph represents mRNA levels of SPP1 and CD44 in the indicated human PDA cell lines as measured by qRT-PCR. (D,E) Effect of shRNA-mediated knockdown of GLI2 with two distinct hairpins on the mRNA expression of the indicated genes (D) and secreted OPN as measured by ELISA (E) in Panc0327 cells. (F) Expression of basal-like and classical subtype genes as measured by qRT-PCR following treatment of YAPC cells with 1 \u03bcg/mL recombinant human OPN for 3 days. Values are normalized to no treatment and log10 transformed. Error bars are plotted as s.e.m. p-Values were calculated by two-tailed unpaired t test. *p<0.05; **p<0.01; ***p<0.001.\n\nExpression of SPP1 is significantly increased in YAPC cells during basal-like subtype switching in response to KRAS* suppression (Figure 6E), suggesting that OPN induction is a hallmark of the basal-like cell state in PDA. Accordingly, we found that GLI2-high basal-like cell lines expressed the highest levels of SPP1 mRNA (Figure 6\u2014figure supplement 1C) and OPN protein levels in addition to higher levels of OPN receptors, CD44 and integrin \u03b23, as well as integrin \u03b15 (Figure 6F) (Weber et al., 1996; Rangaswami et al., 2006; Zhao et al., 2018), compared to classical subtype cells. Moreover, knockdown of GLI2 alone or in combination with GLI1 led to a significant decrease in SPP1 transcript (Figure 6G,H; Figure 6\u2014figure supplement 1D) and secreted protein (Figure 6\u2014figure supplement 1E), establishing GLI transcription factors as endogenous regulators of SPP1 expression.\n\nWe next tested whether treatment of classical subtype PDA cells with exogenous OPN is sufficient to induce a basal-like subtype switch. Exposure of Capan2 cells to recombinant OPN led to a significant increase in expression of basal-like genes, and a decrease in a subset of classical genes (Figure 6I). A similar induction of basal-like genes was also observed in YAPC cells treated with exogenous OPN (Figure 6\u2014figure supplement 1F). To assess whether OPN promotes a basal-like program downstream of GLI2, we determined the ability of exogenous OPN to rescue basal gene expression upon GLI2 knockdown in basal-like cells. shRNA-mediated GLI2 knockdown in Panc0327 cells led to a decrease in 13 basal-like genes, of which 12 were significantly rescued following co-treatment with recombinant OPN (Figure 6J).\n\n### Loss of OPN in basal-like cells suppresses in vivo tumor growth\n\nTo test the role of the GLI-OPN axis in tumorigenesis, we first generated an OPN-deleted KP4 line via CRISPR-mediated gene editing (Figure 7A). OPN-deleted KP4 cells displayed a decrease in basal-like markers KRT14 (Figure 7B) and a concomitant increase in classical-associated markers, E-cadherin and GATA6 (Figure 7B,C), along with a switch toward a more epithelial like morphology on monolayer culture (Figure 7D).\n\n![Figure 7.](https://cdn.elifesciences.org/articles/45313/elife-45313-fig7-v1.jpg)\n\n**Figure 7.:** (A) CRISPR-Cas9-mediated knockout of SPP1 in KP4 cells leads to a decrease in mRNA expression and secreted Osteopontin in two independent clones. (B,C) Immunoblot of KRT14 and E-cadherin (B) and GATA6 (C) levels following KO of SPP1 in KP4 cells. (D) Brightfield images of KP4 cell morphology when grown in 2D monolayer following KO of SPP1. Note the switch to a more epithelial phenotype in the KO cells. Scale bars, 100 \u03bcm. (E) In vitro growth rate of KP4 control versus SPP1 KO cell lines. Error bars represent s.e.m. (F) Growth rate of control and SPP1 KO KP4 cells following subcutaneous injection into the flank of NOD/SCID mice. Error bars represent s.e.m. (G) Relative size of control and SPP1 KO KP4 xenografts resected at day 25 (left) and comparative tumor weight (graph at right). (H) Representative H and E stained sections of lungs at endpoint following tail vein injection (TVI) of 2 \u00d7 106 KP4 control cells (WT; top) or SPP1 KO (bottom) into NOD/SCID mice. Scale bars, 400 \u03bcm. (I) Quantification of metastatic tumor burden in the lungs as a percentage of total lung area per mouse (n\u00a0=\u00a05 CTRL; n\u00a0=\u00a010 SPP1 KO). (J) Kaplan-Meier graph depicting survival of NOD/SCID mice following TVI of KP4 WT (black) or SPP1 KO cells (red). (K) High expression of SPP1 in basal-like PDA patient tumors from TCGA predicts shorter overall survival (SPP1 high n\u00a0=\u00a017, SPP1 low n\u00a0=\u00a048). Data from 65 patients. (L) Model depicting a classical to basal-like switch mediated by a GLI2-OPN signaling axis and in response to KRASG12D ablation. The classical and basal-like subtypes are marked by GLIlo/Hhhi and GLIhi/Hhlo expression, respectively. p-Value calculated by Log-rank test and by two-tailed unpaired t test. *p<0.05; **p<0.01; ***p<0.001.\n\nSimilar to GLI2KO cells, SPP1KO cells did not show a significant growth defect in vitro relative to Cas9 controls cells (Figure 7E). However, SPP1KO cells displayed a dramatic defect in growth as tumor xenografts in mice (Figure 7F,G). Similarly, SPP1KO cells were significantly impaired in their ability to form metastatic tumors in the lungs of recipient mice following tail vein injection, whereas Cas9 control cells gave rise to widespread metastatic disease (Figure 7H,I). Accordingly, the reduced overall tumor burden of mice injected with SPP1KO cells led to their prolonged survival relative to the control cohort (Figure 7J). These data indicate that OPN, downstream of GLI2, is a major growth regulator of basal-like tumors. Consistent with this notion, high expression levels of SPP1 mRNA in basal-like tumors correlated with shortened overall survival of PDA patients (Figure 7K).\n\nCollectively, our findings support a key role for a GLI-OPN axis in promoting and maintaining a basal-like phenotype that is key for PDA tumorigenesis, and highlight the importance of GLI2-dependent, dynamic inter-conversion between subtypes in enabling adaptation to cellular stress, such as following loss of oncogenic KRAS (Figure 7L).\n\n## Discussion\n\nWhile the clinical relevance of PDA subtypes is becoming increasingly appreciated, a mechanistic understanding of the molecular underpinnings of PDA subtype identity is lacking. Our findings establish a broad equivalence between basal-like and EMT-high, versus classical and EMT-low states of PDA. Moreover, we have identified a novel role for the GLI2 transcription factor as a central driver for promoting and maintaining the basal-like state in PDA. We found that high GLI2 status independently predicts shortened survival of PDA patients and correlates with the aggressive basal-like subtype of PDA. In contrast, high levels of the Hh ligands correlate with longer patient survival and are associated with the classical subtype of PDA. These findings highlight a remarkable rewiring of the Hh signaling pathway in PDA, whereby expression of Hh ligands and GLI proteins trend toward mutual exclusivity and instead correlate with the classical and basal-like subtype of PDA, respectively (Figure 7L).\n\nImportantly, GLI2 is required for maintaining the basal-like state as GLI2 knockdown in tumor derived human and mouse PDA cell lines suppresses the basal-like program in vitro, attenuating expression of mesenchymal and stem cell markers. Conversely, forced expression of GLI2 in classical subtype cells was sufficient to induce a switch to a basal-like phenotype. Thus, GLI2 has critical functions in promoting and maintaining the basal-like phenotype and conferring enhanced plasticity to PDA cells by enabling interconversion between subtype states.\n\nMechanistically, our findings indicate that GLI2 induced a broad transcriptional program in PDA with a particular enrichment in EMT genes. Within this program, we identified several secreted proteins including OPN, which are induced following forced GLI2 expression in classical subtype cells. Accordingly, basal-like PDA cells express higher levels of OPN and several of its known receptors, including CD44 and integrin \u03b23. Our studies also suggest that OPN, like GLI2, is a key determinant of cellular reprogramming. As with GLI2, CRIPSR-mediated knockout of OPN in basal-like cells led to a failure to maintain the basal-like state and induced a classical subtype switch. Importantly, loss of OPN in basal-like PDA cells completely suppressed primary and metastatic tumor growth indicating that maintenance of the basal-like state is required for facilitating rapid in vivo tumor growth.\n\nNotably, OPN has been linked to aggressive disease features including increased stemness, migration, EMT and drug resistance in several other cancer settings (Rangaswami et al., 2006; Orian-Rousseau, 2010; Das et al., 2013; Wang et al., 2015; Zhao et al., 2018). In the context of PDA, early studies showed that OPN was over-expressed in patient tumors and could promote the growth of PDA cells (Koopmann et al., 2004; Kolb et al., 2005). Subsequent studies measuring serum OPN have suggested that elevated levels can distinguish PDA from chronic pancreatitis and healthy control subjects (Koopmann et al., 2004; Poruk et al., 2013; Cao et al., 2019). Whether OPN can serve as a faithful diagnostic and/or prognostic biomarker of aggressive disease and more specifically, the basal-like subtype will be an important future direction.\n\nOur data also shows that exogenous OPN can drive a classical to basal-like subtype switch. This finding suggests the intriguing possibility that GLI2-dependent induction of secreted factors may serve as a juxtacrine or paracrine mechanism to instruct neighboring tumor cells to establish and/or sustain a basal-like cell state. Tumor associated stromal cells such as activated macrophages (Koopmann et al., 2004) and pancreatic stellate cells (Cao et al., 2019) can also secrete OPN and therefore potentially promote a basal-like switch. Thus, the ability to locally reprogram neighboring epithelial cells to a more aggressive cell state may contribute to disease progression. In contrast to OPN, tumor derived SHH is associated with the classical subtype of PDA and was shown to restrain tumor growth (Lee et al., 2014; Mathew et al., 2014; Rhim et al., 2014; Liu et al., 2016). Recent studies in bladder cancer suggest that secreted SHH functions to activate the release of stromal derived paracrine cues that promote epithelial differentiation of tumor cells (Shin et al., 2014). Consistent with this finding, our data in PDA show that high SHH levels correlate with the well-differentiated classical subtype of PDA and longer disease-free survival of PDA patients. Taken together, these findings indicate opposite effects of OPN and SHH on PDA differentiation status and growth and suggest a potential hierarchy between secreted cues may help to establish subtype identity in PDA.\n\nRecent studies have established that PDA subtypes have distinct epigenetic landscapes that underlie their specific transcriptional signatures (Lomberk et al., 2016; Andricovich et al., 2018; Somerville et al., 2018). Notably, a subset of basal-like/squamous PDA exhibit enhancer reprogramming mediated by TP63, consistent with the functions of this transcription factor as a master regulator of squamous differentiation. The impact of GLI2 on chromatin states and the specific interplay between GLI2 and other transcription factors and epigenetic regulators will be important to address in future studies to fully decipher the circuitry driving subtype switching in PDA.\n\nThe ability of cancer cells to adaptively interconvert between states that rely on different molecular circuits to support growth and survival provides a potential mechanism for treatment failure and tumor relapse (Polyak and Weinberg, 2009). Notably, a prior study has linked elevated GLI expression to resistance to therapy in patients with acute myeloid leukemia (AML) (Zahreddine et al., 2014). Reciprocally, switching off GLI activity in basal cell carcinoma of the skin was associated with a cell identity switch involving induction of GATA6 (Biehs et al., 2018). In the context of PDA, the ability to switch between PDA subtypes may likewise facilitate therapeutic resistance or bypass of oncogene addiction. Our data indicates that activation of a GLI-OPN circuit is a novel mechanism of acquired resistance to KRAS* inhibition. Upon KRAS* loss, GLI2 is induced and substitutes for KRAS* suppression by promoting a basal-like switch. A prediction based on these observations is that cells with pre-existing high GLI activity would show intrinsic resistance to KRAS* inhibition and potentially other oncogenic drivers. As strategies to target oncogenic KRAS are currently in development, co-targeting of GLI \u2013 and/or OPN in PDA - may be necessary to achieve durable therapeutic responses.\n\nIn conclusion, we have identified a high level of intrinsic plasticity between PDA subtypes mediated by GLI proteins and uncovered a surprising and unconventional role for these transcription factors in maintenance of the basal-like state. Blocking the ability of tumor cells to dynamically switch between cell states via inhibition of GLI proteins, OPN and other master regulators of cellular plasticity (Andricovich et al., 2018; Somerville et al., 2018) will be an important future direction in combating intrinsic and acquired resistance to therapy in PDA and other cancers.\n\n## Materials and methods\n\n### Antibodies and reagents\n\nAntibodies against GLI2 H-300 (sc-28674) and GAPDH (sc-32233) were purchased from Santa Cruz Biotechnology; GLI3 (AF3690) from R and D Systems; SHH (ab53281), SMO (ab38686) and S100A2 (ab109494) from Abcam; GLI2 (18989\u20131-AP), KRAS (12063\u20131-AP), Tubulin (66031\u20131-Ig), E-Cadherin (20874\u20131-AP), and ESRP1 (21045\u20131-AP) from Proteintech; GLI1 (2534), FLAG (2368), ZEB1 (3396), Vimentin (5741), YAP1 (4912), N-Cadherin (4061), GATA6 (5851) from Cell Signaling Technology; Keratin 14 (905304) and Keratin 5 (905504) from BioLegend; Peroxidase goat anti-rabbit (PI-1000), horse anti-goat (PI-9500), and horse anti-mouse IgG (PI-2000) antibodies from Vector Labs. Keratinocyte SFM and supplements, RPM1, DMEM, DMEM F12 (1:1), fetal bovine serum (FBS) were purchased from Corning; tet system approved FBS from Clontech. Silencer select siRNA sequences against human GLI2, GLI1 and KRAS were purchased from Ambion.\n\n### Cell culture\n\nCell lines were obtained from the American Type Culture Collection (ATCC). Mouse PDA Dox-inducible iKRAS lines were gifts from Haoqiang Ying and Alec Kimmelman. Human PDA cell lines were cultured as previously described (Perera et al., 2015) and iKRAS mouse cell lines were cultured as previously described (Kapoor et al., 2014). All cell lines were confirmed negative for mycoplasma contamination on a routine basis using MycoAlert Detection Kit (LT07-418) from Lonza. Colony formation was assessed following plating of 3,000 cells per well, which were fixed with 4% paraformaldehyde and stained with 0.1% crystal violet after 6 days of growth. Cells grown in three-dimensiaonal culture were plated at 10,000\u201330,000 cells per well in 24-well plates onto Matrigel (354234; Corning) as previously described (Lee et al., 2007) and imaged using a Zeiss Axio Vert.A1 inverted confocal microscope after nine days. Alternatively, cells were plated at 20,000 cells per well in 24-well on ultra low-attachment plates (Corning) in DMEM F12 supplemented with 1X B27 (17504044; Life Technologies), 20 ng/mL EGF (GF144; EMD Millipore) and 20 ng/mL bFGF (13256029; Life Technologies), and imaged after 5\u201318 days with 200 \u03bcL fresh media added every 5 days.\n\n### Constructs\n\ncDNA encoding C-terminal 3xFlag tagged human GLI1, GLI2, GLI3 and GLI2 \u0394N were purchased from Addgene (#84922, 84920, 84921, 17649, respectively) and cloned into pMSCV retroviral vector or pRetroX-Tight-Pur doxycycline-inducible vector (generously provided by Dr. Nabeel Bardeesy; Massachusetts General Hospital). Mouse Gli2 was generously provided by Dr. Ryan Corcoran (Massachusetts General Hospital). Gli-luciferase and Renilla reporters were gifts from Dr. Jeremy Reiter (UCSF).\n\n### Lentiviral-mediated knockdown\n\nAll shRNA were obtained from Sigma Aldrich in the pLKO vector and sequences are listed in Supplementary file 1. HEK293T cells were transfected with lentiviral or retroviral plasmids and packaging constructs using X-tremeGENE transfection (6365787001; Sigma Aldrich) reagent according to the manufacturer\u2019s instructions and as previously described (Perera et al., 2015). Cells were infected with virus-containing media using Polybrene reagent (TR-1003-G; EMD Millipore) according to the manufacturer\u2019s instructions, and selected for 48 hr in 2 \u03bcg/mL of puromycin or blasticidin.\n\n### Luciferase reporter assay\n\nCells were plated at 100,000 cells per well in 12-well or 24-well plates and co-transfected with Gli-luciferase and Renilla luciferase plasmids using Lipofectamine 2000 (11668019; Life Technologies) according to the manufacturer\u2019s instructions. Cells were lysed and assayed for activity using the Dual-Luciferase Assay kit (E1960; Promega) 48 hr post-transfection.\n\n### ELISA and exogenous ligand treatments\n\nSecreted OPN in the supernatant of cultured cells was measured using the Human Osteopontin Quantikine ELISA kit (DOST00; R and D systems) according to manufacturers protocol. For experiments where exogenous ligand was added, recombinant human OPN (1433-OP-050/CF; R and D Systems) was added at 1 \u03bcg/mL and cells assayed 2\u20133 days later.\n\n### Drug treatment\n\nCells were treated with 5 \u03bcM of GANT61 (3191/10; R and D Systems) for 3\u20135 days prior to collection of RNA or protein lysates. Alternatively, iKRAS cells were plated at 150,000 cells with or without Dox (1 \u03bcg/mL) in the presence of absence of 5 \u03bcM GANT61 and RNA was collected 72 hr post-plating.\n\n### Immunoblotting\n\nCells were lysed in ice-cold lysis buffer (150 mM NaCl, 20 mM Tris [pH 7.5], 1 mM EDTA, 1 mM EGTA, 1% Triton X-100, 2.5 mM sodium pryophosphate, 1 mM \u03b2-glycerophosphate, 1 mM sodium vanadate, and one tablet of Pierce Protease Inhibitor Tablets, EDTA Free [Fisher Scientific-A32965] per 10 mL). Samples were clarified by sonication and centrifugation. Protein content was measured using Pierce BCA Protein Assay Kit (Life Technologies-23227), and 15\u201350 \u03bcg protein was resolved on 8\u201315% protein gels using SDS-PAGE and transferred onto PVDF membranes (EMD MIllipore-IPVH00010). Membranes were blocked in 5% non-fat dry milk (VWR-89406056) made up in Tris-buffered saline with 0.2% Tween 20 (TBS-T) prior to incubation with primary antibody overnight at 4\u00b0C in either 5% non-fat dry milk or 5% bovine serum albumin (BSA, Sigma Aldrich-A4503). Membranes were washed in TBS-T and developed after 45-min incubation in species-specific horseradish peroxidase-conjugated secondary antibody, and visualized using supersignal west pico chemiluminescent substrate (Fisher Scientific-34080), and imaged using the ChemiDoc XRS\u00a0+\u00a0System (Biorad).\n\n### Immunofluorescence\n\nCells were plated on fibronectin-coated glass cover- slips at 100,000\u2013300,000 cells per coverslip. Twelve-to-sixteen hours later, the slides were rinsed with PBS once and fixed for 15 min with 4% paraformaldehyde at room temperature prior to permeabilization with 0.1% Saponin for 5 min. Slides were incubated with primary antibody in 5% normal goat serum overnight at 4 degC, rinsed four times with PBS, and incubated with secondary antibodies produced in goat (diluted 1:400 in 5% normal goat serum) for 45 min at room temperature in the dark. Slides were mounted on glass slides using Vectashield (Vector Laboratories) and imaged on a Zeiss Laser Scanning Microscope (LSM) 710. Images were processed using ImageJ.\n\n### RNA isolation and quantitative RT-PCR\n\nTotal cellular RNA was extracted using the PureLink RNA Mini Kit (12183025; Thermo Fisher). Reverse transcription was performed using the iScript Reverse Transcription Supermix (1708841; Bio-Rad) followed by quantitative RT\u2013PCR with iTaq Universal SYBR Green Supermix (1725122; Bio-Rad) using the CFX384 Touch Real Time PCR Detection System (BioRad). Results are presented as the mean of at least three technical replicates and are representative of at least n\u00a0=\u00a03 biological replicates. Primer sequences are listed in Supplementary file 1.\n\n### Generation of GLI2 and SPP1 knockout cell lines using CRISPR/Cas9\n\nGLI2 and SPP1 knockouts in KP4 cells were generated using the RNP-electroporation method as previously described (Liang et al., 2015). One million KP4 cells were used per electroporation using the Amaxa 4D Nucleofector kit (V4XC-9064, Lonza). Guide RNA and Cas9 complexes were formed using 160 \u03bcM crRNA annealed to 160 \u03bcM tracrRNA (Dharmacon) and incubated with 40 \u03bcM Cas9 protein (purchased from University of California, Berkeley). Cutting efficiency was assessed 48 hr post-electroporation using PCR and sanger sequencing. GLI2 and SPP1 knockout was confirmed using quantitative RT-PCR, immunoblotting and ELISA after clonal expansion of single cells.\n\nGuide RNA sequences 5\u2019\u22123\u2019:\n\nGLI2 exon 2 \u2013 TTTGGCTTCTTGCTTCTCGG\n\nSPP1 exon 2 \u2013 GTATGGCACAGGTGATGCCT\n\nPCR primer sequences 5\u2019\u22123\u2019:\n\nGLI2 exon 2 FW \u2013 GTGAAGGAGTGAGCGAACATGC\n\nGLI2 exon 2 RV \u2013 TCTTCGCCCTCCATAAACCCAG\n\nSPP1 exon 2 FW \u2013 GCAAAATTTCCCTTTCCCTTGCC\n\nSPP1 exon 2 RV \u2013 ACTGTGCTTGGTACTGGCCTAG\n\n### Chromatin immunoprecipitation\n\n293 T cells were transiently transfected with GLI2-Flag and fixed with 1% formaldehyde for 15 min and quenched with 125 mM glycine for 5 min. Cells were washed with cold PBS and collected as 107 cell pellets. Cells were resuspended in 500 \u03bcL cold L1 buffer (50 mM Tris pH 8.0, 2 mM EDTA, 0.1% NP-40, 10% glycerol, 1 mM PMSF, 1x Pierce Protease Inhibitor) on ice for 5 min, centrifuged and resuspended in 450 \u03bcL cold SDS buffer (50 mM Tris pH 8.0, 10 mM EDTA, 1% SDS, 1 mM PMSF, 1x Pierce Protease Inhibitor). Chromatin was sheared for 10 cycles using the Bioruptor Pico to obtain fragments of 200\u2013500 base pairs, and diluted 1:10 in cold ChIP buffer (0.5% NP-40, 5 mM EDTA, 200 mM NaCl, 50 \u03bcM Tris pH 8.0, 1 mM PMSF). Diluted chromatin was pre-cleared with 100 \u03bcL washed Protein A Dynabeads (Invitrogen) at 4\u00b0C for 1 hr then immunoprecipitated with Flag antibody (CST, 14793) or negative control Rabbit IgG (CST, 2729) at 4\u00b0C overnight. Immunocomplexes were recovered using 50 \u03bcL washed Protein A Dynabeads at 4\u00b0C for 2 hr. Beads were washed two times in following buffers: 800 \u03bcL Wash buffer (0.1% SDS, 1% NP-40, 2 mM EDTA, 500 mM NaCl, 20 mM Tris pH 8.0, 1 mM PMSF), LiCl buffer (0.1% SDS, 1% NP-40, 2 mM EDTA, 0.5M LiCl, 20 mM Tris pH 8.0, 1 mM PMSF) then TE buffer (1 mM EDTA, 10 mM Tris pH 8.0) for 5 min each all on ice. Complexes were eluted by resuspending beads in 100 \u03bcL 2% SDS in TE buffer then de-crosslinked overnight with 5 \u03bcL NaCl at 65\u00b0C. Recovered DNA was PCR purified and analyzed using qPCR. Primers were used to amplify a region that contains a GLI binding site in the SPP1 promoter (\u22122324 to \u22122316) as reported in Kijewska et al. (2017). Primers targeting the ACTB promoter served as a negative control while primers targeting a known GLI-binding site in the BCL2 promoter (\u2212957 to \u2212949) served as a positive control (Regl et al., 2004).\n\nChIP qPCR primer sequences 5\u2019\u22123\u2019:\n\nACTB promoter FW \u2013 ATGCAGCGATCAGTGGCGT\n\nACTB promoter RV \u2013 TCCAGCTTCTTGTCACCACCTC\n\nBCL2 promoter FW \u2013 CCGGACGCGCCCTCCC\n\nBCL2 promoter RV \u2013 GGTGCCTGTCCTCTTACTTCATTCTC\n\nSPP1 promoter FW \u2013 CTGACAGAAAATCCTACTCAGAAAA\n\nSPP1 promoter RV \u2013 AAAGTAGGAAATGGATGCTGCG\n\n### Subcutaneous and tail vein injections\n\nFor xenograft experiments, 4 million KP4 Cas9 control, GLI2KO, or SPP1KO cells were injected into the flank of NOD.SCID-II2rg-/- (NSG) immunodeficient mice, and tumor volumes were measured using a caliper and calculated as tumor volume = \u00bd (length x width2). For tail vein injections, 2 million cells were injected into the tail vein of NSG mice. End point criteria included poor body condition and weight loss. Sample sizes for in vivo experiments were calculated using a online tool (http://www.bu.edu/orccommittees/iacuc/policies-and-guidelines/sample-size-calculations/), taking into account variability of the assays and inter-individual differences within groups. In summary, we will use 8\u201310 mice per cohort (male and female) which provides statistical power of\u00a0>0.8 (\u03b1\u00a0=\u00a00.05) to detect differences of approximately 50%, assuming a normal distribution.\n\n### Histology and immunostaining\n\nTissue samples were fixed overnight in 10% formalin, and then embedded in paraffin and sectioned (5 mm thickness) by the UCSF mouse histopathology core. Haematoxylin and eosin staining was performed using standard methods. Slides were baked at 60\u00b0C for an hour, deparaffinized in xylenes (three treatments, 5 min each), rehydrated sequentially in ethanol (5 min in 100%, 5 min in 90%, 5 min in 70%, 5 min in 50%, and 5 min in 30%), and washed for 5 min in water twice. For antigen unmasking, specimens were cooked in a 10 mM sodium citrate buffer (pH 6.0) for 10 min at 95\u00b0C using conventional pressure cooker, rinsed three times with PBS, incubated for 1 hr with 1% H2O2 at room temperature to block endogenous peroxidase activity, washed three times with PBS, and blocked with 2.5% goat serum in PBS for 1 hr. Primary antibodies were diluted in blocking solution as follows: anti-S100A2 (abcam, ab109494) 1:200; anti-GATA6 (CST, 5851) 1:500 and incubated with the tissue sections at 4\u00b0C overnight. Specimens were then washed three times for 5 min each in PBS and incubated with secondary anti-mouse/rabbit IgG (Vector Laboratories, MP-7500) for 1 hr at room temperature. Following three washes in PBS, slides were stained for peroxidase for 3 min with the DAB(di-aminebenzidine) substrate kit (SK-4100, Vector Laboratories), washed with water and counterstained with haematoxylin. Stained slides were photographed with a KEYENCE BZ-X710 microscope.\n\n### RNAseq and GSEA\n\nRNA sequencing data containing gene expression values from pancreatic ductal adenocarcinoma samples sequenced as part of the TCGA project was downloaded from the cBioPortal (http://www.cbioportal.org/index.do). The data are represented as z scores where zero represents the mean value of normalized and log transformed gene expression for samples diploid at that locus in the sample set, and a z score of one corresponding to expression one standard deviation above the mean. A subset of tumors corresponding to those with levels of GLI2 expression that were high (z scrore\u00a0>0.5; n\u00a0=\u00a051) or low (z score\u00a0<\u22120.5; n\u00a0=\u00a041) were then analyzed for their corresponding gene expression values of the ligands IHH or SHH (Figure 1\u2014figure supplement 1E). Assignment of PDA TCGA samples as classical or basal-like and extent of tumor cellularity was based on an independently published study (Cancer Genome Atlas Research Network, 2017). Overall survival (OS) was defined as the time of surgery to the date of death from any cause. Disease-free survival (DFS) was defined as the date of surgery to the date of tumor recurrence at any site or to the date of last follow-up. Parameters for determining OS and DFS were defined as z score > \u22121 for GLI2 high status, z score\u00a0>2 for SHH high status (Figure 1D,E) and z score\u00a0>0.5 for SPP1 high status (Figure 7K). OS and DFS were analyzed using Kaplan\u2013Meier and log-rank tests. Significance was determined as a P value\u00a0<\u00a00.05.\n\nData for the YAPC-iEV and YAPC-iGLI2 cells in Figure 3D was processed using a standard RNA-seq pipeline that used Trimmomatic to clip and trim the reads, tophat2 to align the reads to hg19, and cuffdiff to calculate differential expression. GSEA (http://www.broadinstitute.org/gsea/index.jsp) of the expression data was used to assess enrichment of the epithelial-to-mesenchymal gene signature. The Moffitt (Moffitt et al., 2015) basal-like gene signature was used to assign basal-like status. For the classical signature, a combination of genes from the Collisson classical (Collisson et al., 2011), Moffitt classical (Moffitt et al., 2015) and Bailey progenitor (Bailey et al., 2016) signatures were used (See Supplementary file 2).\n\n### Image and statistical analysis\n\nImage analysis, including densitometry and spheroid quantification was conducted using Image J software (NIH). Statistical analyses of results are expressed as mean\u00a0\u00b1\u00a0standard deviation unless otherwise indicated. For each box-and-whisker plot, center line is the median and whiskers represent the minimum and maximum values. Significance was analyzed using two-tailed Student\u2019s t-test and Log-rank (Mantel-Cox) test for survival data. A p value of less than 0.05 was considered statistically significant. Graphing and statistical analyses were performed with GraphPad Prism seven software. All experiments were performed at least three times or in at least two separate cell lines. Data is displayed as either representative or the average of 2\u20134 independent biological replicates with at least three technical replicates per experiment.\n\nCorrelations between demographic and clinical factor variables and the genes of interest, GLI2 and SHH were performed. Correlations were stratified based on expression levels (previously defined with z score thresholds). Significance was analyzed using a Chi squared test for categorical variables (sex, TNM staging), Fisher\u2019s exact test for dichotomous categorical variables (GLI2 and SHH expression), and a two sample t-test for continuous variables (age and mutation count). A p-value<0.05 was considered a statistically significant association.\n\nCox proportional hazards survival analysis regression models were used to identify demographic and clinical factors with significant predictive value for the outcomes of overall survival and progression free survival. Factors included in the analysis were age at diagnosis, sex, TNM staging, mutation count, and GLI2 and SHH expression levels previously defined based on z-scores. Unstratified models and models stratified based on GLI2 and SHH expression levels were performed. A p-value<0.05 was considered a statistically significant association. Differences in sample sizes (n) attributed to missing clinical data. These analyses and figures were generated using R statistical software.\n",
+      "created_at": "2025-12-02T10:21:51.947752Z"
+    },
+    {
+      "id": "77d02a0d-6e32-4cb7-a452-80d844ad2382",
+      "submission_id": "edf9023e-9fad-484f-8a57-09ee6c35716b",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Wilbert Zwart, Netherlands Cancer Institute Netherlands\n\nReviewers:\n- Wilbert Zwart, Netherlands Cancer Institute Netherlands\n- Claus J\u00f8rgensen, Cancer Research UK Manchester Institute United Kingdom\n\n## Review text\n\nDOI: [10.7554/eLife.45313.029](https://doi.org/10.7554/eLife.45313.029)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Transcriptional control of subtype switching ensures adaptation and growth of pancreatic cancer\" for consideration by eLife. Your article has been reviewed by two peer reviewers, including Wilbert Zwart as the Reviewing Editor and Reviewer #1, and the evaluation has been overseen by Jeffrey Settleman as the Senior Editor. The following individual involved in review of your submission has also agreed to reveal his identity: Claus J\u00f8rgensen (Reviewer #2).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nHere, Perera and colleagues describe a novel role of GLI2 in regulating subtype switching, EMT status and RAS dependency in pancreatic cancer.\n\nPancreatic cancer cells can exist as different subtypes, and this has previously been linked to patient performance and therapeutic sensitivity. However, while there has been a lot of focus on defining subtypes and their potential role in PDA, less is known about the regulators of PDA subtypes. The data presented describing a role for GLI2 in regulating PDA subtype switching are rigorous, experiments are well conducted, key controls are in place and the manuscript is logical and well presented.\n\nMajor points:\n\n1) Figure 1D,E: multivariate correction with clinical parameters should be performed; is the difference in survival related to the gene of interest, or to other clinical variables that associate with these factors? Also, do the 2 arms between the different KM curves identify the same patient populations? Are the patients with GLI2 high the same as those with SSH low?\n\n2) Figure 3: the text states that two cell lines were used in these analyses (HPAFII and YAPC), for I can only find the data (especially 3B and D) for the YAPC cell lines. Please confirm findings in several cell lines, and include those data in the paper.\n\n3) Figure 4: same thing here as in Figure 3. In the text, two cell lines are mentioned (KP4 and Panc0327), but the data presented don't show the findings in both cell lines, only one. Please include the data for both cell lines.\n\n4) In Figure 3B, 3D growth analyses (not organoids) is depicted with GLI2 over expression, observing effects on migration. Wouldn't you also expect to see impact on migratory phenotype in Figures 5H and K, when overexpressing GLI2 (H) or the opposite when knocking it down (K)?\n",
+      "created_at": "2025-12-02T10:21:51.947752Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T10:21:51.947752Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T10:21:51.947752Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "ab753848-c94f-4dfe-8ecd-9fbc5802d049",
+      "content_id": "f87403e9-0511-495b-a977-8464a88e2f16",
+      "claim_id": "C1",
+      "claim": "Pancreatic ductal adenocarcinoma (PDA) is projected to become the second leading cause of cancer-related deaths by 2030.",
+      "claim_type": "EXPLICIT",
+      "source": "Pancreatic ductal adenocarcinoma (PDA) is projected to become the second leading cause of cancer-related deaths by 2030 (Rahib et al., 2014)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Rahib et al., 2014",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:51.947752Z"
+    },
+    {
+      "id": "c5e93ee1-cdd3-4fcb-89da-dd7fe5cc0852",
+      "content_id": "f87403e9-0511-495b-a977-8464a88e2f16",
+      "claim_id": "C2",
+      "claim": "PDA has a 5-year survival rate of less than 10%.",
+      "claim_type": "EXPLICIT",
+      "source": "Pancreatic ductal adenocarcinoma (PDA) is projected to become the second leading cause of cancer-related deaths by 2030 (Rahib et al., 2014), and has a 5-year survival rate of <10%.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as established knowledge in the introduction",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:51.947752Z"
+    },
+    {
+      "id": "4b3db51e-a2da-4d8e-908c-18ebe222974a",
+      "content_id": "f87403e9-0511-495b-a977-8464a88e2f16",
+      "claim_id": "C3",
+      "claim": "Activating mutations in KRAS occur in approximately 95% of PDA cases.",
+      "claim_type": "EXPLICIT",
+      "source": "The most common genetic alterations include activating mutations in KRAS in ~95% of PDA and inactivating mutations or deletions of TP53, CDKN2A, and SMAD4 in 50\u201370% (Jones et al., 2008; Biankin et al., 2012; Ryan et al., 2014; Waddell et al., 2015; Witkiewicz et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations to genomic studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:51.947752Z"
+    },
+    {
+      "id": "f7bdf2fd-d1bb-4d8f-a71c-849982bbbf1d",
+      "content_id": "f87403e9-0511-495b-a977-8464a88e2f16",
+      "claim_id": "C4",
+      "claim": "Inactivating mutations or deletions of TP53, CDKN2A, and SMAD4 occur in 50-70% of PDA cases.",
+      "claim_type": "EXPLICIT",
+      "source": "The most common genetic alterations include activating mutations in KRAS in ~95% of PDA and inactivating mutations or deletions of TP53, CDKN2A, and SMAD4 in 50\u201370% (Jones et al., 2008; Biankin et al., 2012; Ryan et al., 2014; Waddell et al., 2015; Witkiewicz et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations to genomic studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:51.947752Z"
+    },
+    {
+      "id": "0c6e8ac7-977c-4042-966e-c426f4f3db5e",
+      "content_id": "f87403e9-0511-495b-a977-8464a88e2f16",
+      "claim_id": "C5",
+      "claim": "Transcriptional profiling has identified two main PDA subtypes termed classical and basal-like.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently, transcriptional profiling from resected PDA specimens has identified two main subtypes with distinct molecular features, termed classical and basal-like (Collisson et al., 2011; Moffitt et al., 2015; Bailey et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to three independent transcriptional profiling studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:51.947752Z"
+    },
+    {
+      "id": "e49ca858-3d80-4ac2-9ca7-71fd6ae37c8e",
+      "content_id": "f87403e9-0511-495b-a977-8464a88e2f16",
+      "claim_id": "C6",
+      "claim": "Classical PDA is enriched for expression of epithelial differentiation genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Classical PDA is enriched for expression of epithelial differentiation genes, whereas basal-like PDA is characterized by laminin and basal keratin gene expression, stem cell and epithelial-to-mesenchymal transition (EMT) markers, analogous to the basal subtypes previously defined in bladder and breast cancers (Perou et al., 2000; Parker et al., 2009; Curtis et al., 2012; Cancer Genome Atlas Research Network, 2014; Damrauer et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to subtype classification studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:51.947752Z"
+    },
+    {
+      "id": "4b550dc0-bf51-4986-8daa-83f98fa622b4",
+      "content_id": "f87403e9-0511-495b-a977-8464a88e2f16",
+      "claim_id": "C7",
+      "claim": "Basal-like PDA is characterized by laminin and basal keratin gene expression, stem cell and epithelial-to-mesenchymal transition (EMT) markers.",
+      "claim_type": "EXPLICIT",
+      "source": "Classical PDA is enriched for expression of epithelial differentiation genes, whereas basal-like PDA is characterized by laminin and basal keratin gene expression, stem cell and epithelial-to-mesenchymal transition (EMT) markers, analogous to the basal subtypes previously defined in bladder and breast cancers (Perou et al., 2000; Parker et al., 2009; Curtis et al., 2012; Cancer Genome Atlas Research Network, 2014; Damrauer et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to subtype classification studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:51.947752Z"
+    },
+    {
+      "id": "1f5e196b-35f3-4be1-b4ef-b457aaaac791",
+      "content_id": "f87403e9-0511-495b-a977-8464a88e2f16",
+      "claim_id": "C8",
+      "claim": "Basal-like subtype tumors display poorly differentiated histological features and correlate with markedly worse prognosis.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, basal-like subtype tumors display poorly differentiated histological features and correlate with markedly worse prognosis (Moffitt et al., 2015; Cancer Genome Atlas Research Network, 2017; Aung et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to clinical outcome studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:51.947752Z"
+    },
+    {
+      "id": "e1cfbaa7-733c-4c03-98d3-2e51e33cb9a1",
+      "content_id": "f87403e9-0511-495b-a977-8464a88e2f16",
+      "claim_id": "C9",
+      "claim": "PDA subtypes are preserved in organoids, cell line cultures, and genetically engineered mouse models.",
+      "claim_type": "EXPLICIT",
+      "source": "These subtypes are preserved in different experimental models of PDA including organoids (Boj et al., 2015; Huang et al., 2015; Seino et al., 2018), cell line cultures (Collisson et al., 2011; Moffitt et al., 2015; Martinelli et al., 2017), and a genetically engineered mouse (GEM) model of PDA in which ablation of oncogenic Kras resulted in subtype conversion (Kapoor et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to studies using different model systems",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:51.947752Z"
+    },
+    {
+      "id": "6d487e8f-4b7e-4982-941a-264ea61563e7",
+      "content_id": "f87403e9-0511-495b-a977-8464a88e2f16",
+      "claim_id": "C10",
+      "claim": "The Hedgehog pathway is activated in PDA.",
+      "claim_type": "EXPLICIT",
+      "source": "The Hedgehog (Hh) pathway is activated in PDA and has been found to play important and complex roles in PDA pathogenesis (Morris et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Morris et al., 2010",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:51.947752Z"
+    },
+    {
+      "id": "c919334e-99c8-4d28-92f3-4f53bd7bd8a9",
+      "content_id": "f87403e9-0511-495b-a977-8464a88e2f16",
+      "claim_id": "C11",
+      "claim": "The developing and normal adult pancreas lack expression of Hh pathway ligands.",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas the developing and normal adult pancreas lack expression of Hh pathway ligands, the Sonic Hedgehog (SHH) and Indian Hedgehog (IHH) ligands are prominently induced in the pancreatic epithelium upon injury and throughout PDA development, from early precursor pancreatic intraepithelial neoplasia (PanIN) to invasive disease (Berman et al., 2003; Thayer et al., 2003; Prasad et al., 2005; Nolan-Stevaux et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to studies of Hh ligand expression",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:51.947752Z"
+    },
+    {
+      "id": "3f0af6c9-0d12-4a4f-a67c-db9538816de6",
+      "content_id": "f87403e9-0511-495b-a977-8464a88e2f16",
+      "claim_id": "C12",
+      "claim": "SHH and IHH ligands are prominently induced in the pancreatic epithelium upon injury and throughout PDA development from PanIN to invasive disease.",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas the developing and normal adult pancreas lack expression of Hh pathway ligands, the Sonic Hedgehog (SHH) and Indian Hedgehog (IHH) ligands are prominently induced in the pancreatic epithelium upon injury and throughout PDA development, from early precursor pancreatic intraepithelial neoplasia (PanIN) to invasive disease (Berman et al., 2003; Thayer et al., 2003; Prasad et al., 2005; Nolan-Stevaux et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to studies tracking Hh ligand expression during PDA progression",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:51.947752Z"
+    },
+    {
+      "id": "48ce6a0c-b596-4d91-97e8-8e092476edb8",
+      "content_id": "f87403e9-0511-495b-a977-8464a88e2f16",
+      "claim_id": "C13",
+      "claim": "Smo deletion in the pancreatic epithelium has no effect on mutant KRAS-driven PDA in GEM models.",
+      "claim_type": "EXPLICIT",
+      "source": "While Smo deletion in the pancreatic epithelium has no effect on mutant KRAS-driven PDA in GEM models, studies from our group and others reveal a surprising role for SHH in restraining cancer growth (Lee et al., 2014; Mathew et al., 2014; Rhim et al., 2014; Liu et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to genetic studies in mouse models",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:51.947752Z"
+    },
+    {
+      "id": "2721caa4-efb7-4aa5-a6c3-1e56c9228221",
+      "content_id": "f87403e9-0511-495b-a977-8464a88e2f16",
+      "claim_id": "C14",
+      "claim": "SHH has a role in restraining cancer growth in PDA.",
+      "claim_type": "EXPLICIT",
+      "source": "While Smo deletion in the pancreatic epithelium has no effect on mutant KRAS-driven PDA in GEM models, studies from our group and others reveal a surprising role for SHH in restraining cancer growth (Lee et al., 2014; Mathew et al., 2014; Rhim et al., 2014; Liu et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to multiple studies including authors' own work",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:51.947752Z"
+    },
+    {
+      "id": "40160187-97d3-44b6-b95f-3ea9c1a3160b",
+      "content_id": "f87403e9-0511-495b-a977-8464a88e2f16",
+      "claim_id": "C15",
+      "claim": "Activation of GLI transcription factors in the pancreatic epithelium is required for oncogenesis in PDA.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, several lines of evidence indicate that activation of GLI transcription factors in the pancreatic epithelium is required for oncogenesis in PDA (Dennler et al., 2007; Ji et al., 2007; Nolan-Stevaux et al., 2009; Rajurkar et al., 2012; Xu et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to multiple studies of GLI function",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:51.947752Z"
+    },
+    {
+      "id": "187d16c9-c488-4f36-b658-47cfa2489120",
+      "content_id": "f87403e9-0511-495b-a977-8464a88e2f16",
+      "claim_id": "C16",
+      "claim": "Pancreas-specific transgenic over-expression of the Gli3 repressor attenuates PDA progression.",
+      "claim_type": "EXPLICIT",
+      "source": "First, pancreas-specific transgenic over-expression of the Gli3 repressor attenuates PDA progression (Rajurkar et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Rajurkar et al., 2012",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:51.947752Z"
+    },
+    {
+      "id": "a8c66340-0b12-4235-ab8a-4cfac1829ff7",
+      "content_id": "f87403e9-0511-495b-a977-8464a88e2f16",
+      "claim_id": "C17",
+      "claim": "Forced Gli2 over-expression cooperates with oncogenic Kras to promote aggressive poorly differentiated tumors.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, forced Gli2 over-expression cooperates with oncogenic Kras to promote aggressive poorly differentiated tumors (Pasca di Magliano et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Pasca di Magliano et al., 2006",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:51.947752Z"
+    },
+    {
+      "id": "06fdf6ab-3cc5-43c3-ac62-e6694e76e2c0",
+      "content_id": "f87403e9-0511-495b-a977-8464a88e2f16",
+      "claim_id": "C18",
+      "claim": "All PDA cell lines in the panel expressed Hh pathway proteins to varying degrees.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that all PDA cell lines expressed Hh pathway proteins to varying degrees.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on immunoblot analysis shown in Figure 1A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:51.947752Z"
+    },
+    {
+      "id": "a447be3c-b20c-4c19-ae64-3896ece23391",
+      "content_id": "f87403e9-0511-495b-a977-8464a88e2f16",
+      "claim_id": "C19",
+      "claim": "GLI2 was readily detectable in 10 out of 14 PDA cell lines.",
+      "claim_type": "EXPLICIT",
+      "source": "GLI1 and GLI3 expression were restricted to two- and one-cell line respectively, while GLI2 was readily detectable in 10/14 lines.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on immunoblot data in Figure 1A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:51.947752Z"
+    },
+    {
+      "id": "508b4d7a-e66f-4e14-82ad-aac87f323503",
+      "content_id": "f87403e9-0511-495b-a977-8464a88e2f16",
+      "claim_id": "C20",
+      "claim": "Cell lines expressing the highest levels of GLI2 displayed the lowest levels of SHH expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, cell lines expressing the highest levels of GLI2 (KP4, MiaPaca and Panc0327 cells) displayed the lowest levels of SHH expression (Figure 1A; asterisk).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on immunoblot analysis shown in Figure 1A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:51.947752Z"
+    },
+    {
+      "id": "36176b78-c3c0-49e2-aa47-2ee8aa4a81bf",
+      "content_id": "f87403e9-0511-495b-a977-8464a88e2f16",
+      "claim_id": "C21",
+      "claim": "GLI transcriptional activity was inversely correlated with SHH expression and positively correlated with GLI expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, GLI responsive luciferase reporter assay (Sasaki et al., 1997) demonstrated that GLI transcriptional activity was inversely correlated with SHH expression and positively correlated with GLI expression (Figure 1B,C)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on luciferase reporter assay data shown in Figure 1B,C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:51.947752Z"
+    },
+    {
+      "id": "3c4393e3-68de-4e5d-b2a9-a57f7d2fe00e",
+      "content_id": "f87403e9-0511-495b-a977-8464a88e2f16",
+      "claim_id": "C22",
+      "claim": "All SHH-high cell lines lacked basal GLI reporter activity.",
+      "claim_type": "EXPLICIT",
+      "source": "such that all SHHhi cell lines lacked basal reporter activity (Figure 1B)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on luciferase reporter data in Figure 1B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:51.947752Z"
+    },
+    {
+      "id": "92ed7ece-1819-4c43-be4d-97577715805e",
+      "content_id": "f87403e9-0511-495b-a977-8464a88e2f16",
+      "claim_id": "C23",
+      "claim": "GLI-high KP4, MiaPaca and Panc0327 lines exhibited the highest levels of GLI reporter activity.",
+      "claim_type": "EXPLICIT",
+      "source": "whereas the GLIhi KP4, MiaPaca and Panc0327 lines exhibited the highest levels of activity (Figure 1B,C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on luciferase reporter data in Figure 1B,C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:51.947752Z"
+    },
+    {
+      "id": "39a9a90f-aa67-4747-a03c-73c7fe2bd973",
+      "content_id": "f87403e9-0511-495b-a977-8464a88e2f16",
+      "claim_id": "C24",
+      "claim": "shRNA-mediated knockdown of GLI2 suppressed GLI-driven luciferase activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Luciferase activity was specific to GLI proteins as shRNA-mediated knockdown of GLI2 or treating cells with GANT61 inhibitor, which blocks GLI binding to DNA (Lauth et al., 2007), suppressed GLI-driven luciferase activity (Figure 1\u2014figure supplement 1C,D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on experimental data shown in Figure 1\u2014figure supplement 1C,D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:51.947752Z"
+    },
+    {
+      "id": "6d8d6bef-98ac-49a4-8a45-d2c33a8175a3",
+      "content_id": "f87403e9-0511-495b-a977-8464a88e2f16",
+      "claim_id": "C25",
+      "claim": "Treatment with GANT61 inhibitor suppressed GLI-driven luciferase activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Luciferase activity was specific to GLI proteins as shRNA-mediated knockdown of GLI2 or treating cells with GANT61 inhibitor, which blocks GLI binding to DNA (Lauth et al., 2007), suppressed GLI-driven luciferase activity (Figure 1\u2014figure supplement 1C,D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on experimental data shown in Figure 1\u2014figure supplement 1C,D and citation to Lauth et al., 2007",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:51.947752Z"
+    },
+    {
+      "id": "7302ea18-4e57-41cd-b1f3-0c768464c588",
+      "content_id": "f87403e9-0511-495b-a977-8464a88e2f16",
+      "claim_id": "C26",
+      "claim": "Tumors expressing high levels of GLI2 mRNA had significantly lower expression of SHH and IHH in TCGA samples.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the cell line data, tumors expressing high levels of GLI2 mRNA had significantly lower expression of SHH and IHH (Figure 1\u2014figure supplement 1E).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on analysis of TCGA RNA-seq data shown in Figure 1\u2014figure supplement 1E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:51.947752Z"
+    },
+    {
+      "id": "065ab3fc-b05a-4f4a-a999-17417f951c28",
+      "content_id": "f87403e9-0511-495b-a977-8464a88e2f16",
+      "claim_id": "C27",
+      "claim": "High GLI2 status was independent of stromal cell content in TCGA PDA samples.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, given that stromal cells also express GLI2, we confirmed that high GLI2 status was independent of stromal cell content. Of the 51 PDA tumors characterized as GLI2 high, a relatively even distribution between high purity (>33% tumor/stromal cell content; n = 23) and low purity (<33% tumor/stromal cell content; n = 27) samples was observed (see Materials and methods for details), indicating that GLI2 expression in stromal cells is an unlikely confounding factor in determining tumor cell GLI2 status in this patient cohort.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on analysis of tumor purity data from TCGA samples",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:51.947752Z"
+    },
+    {
+      "id": "f71aa31b-d841-4681-959e-60b5639d969f",
+      "content_id": "f87403e9-0511-495b-a977-8464a88e2f16",
+      "claim_id": "C28",
+      "claim": "High expression levels of GLI2 in primary PDA tumors correlated with shortened overall and disease-free survival.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, high expression levels of GLI2 in primary PDA tumors correlated with shortened overall and disease-free survival (Figure 1D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on Kaplan-Meier survival analysis shown in Figure 1D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:51.947752Z"
+    },
+    {
+      "id": "df7539f7-865d-4c5b-8b01-1af6aa54dc5c",
+      "content_id": "f87403e9-0511-495b-a977-8464a88e2f16",
+      "claim_id": "C29",
+      "claim": "High SHH expression levels were associated with longer disease-free survival.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, high SHH expression levels were associated with longer disease-free survival (Figure 1E).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on Kaplan-Meier survival analysis shown in Figure 1E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:51.947752Z"
+    },
+    {
+      "id": "b92f1e02-ce29-4bda-b43e-23b9867d65f2",
+      "content_id": "f87403e9-0511-495b-a977-8464a88e2f16",
+      "claim_id": "C30",
+      "claim": "GLI2 or SHH high versus low expression level was not correlated with clinical variables such as sex, T stage, N stage, or M stage.",
+      "claim_type": "EXPLICIT",
+      "source": "GLI2 or SHH high versus low expression level was not correlated with clinical variables such as sex, T stage, N stage, or M stage, although as expected from our data there was a correlation between high SHH and low GLI2 expression and vice-versa (Figure 1\u2014figure supplement 1F,G).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on statistical analysis of clinical variables shown in Figure 1\u2014figure supplement 1F,G",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:51.947752Z"
+    },
+    {
+      "id": "44eaf405-0a48-4d3b-8dff-048450173e87",
+      "content_id": "f87403e9-0511-495b-a977-8464a88e2f16",
+      "claim_id": "C31",
+      "claim": "Most GLI-high/Hh-low cell lines were in the EMT high group.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, whereas none of the GLIlo/Hhhi cell lines showed an EMT signature, most of the GLIhi/Hhlo cell lines were in the EMT high group, with the exceptions, HupT3 and Panc0327, displaying an intermediate phenotype (Figure 2A; Figure 1B,C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on immunoblot and qRT-PCR data shown in Figure 2A and Figure 1B,C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:51.947752Z"
+    },
+    {
+      "id": "46ea69a3-6012-4337-bc3f-c2936d1f2bda",
+      "content_id": "f87403e9-0511-495b-a977-8464a88e2f16",
+      "claim_id": "C32",
+      "claim": "GLI activity correlated positively with EMT in the PDA cell line panel.",
+      "claim_type": "EXPLICIT",
+      "source": "This signature assigned 38 human PDA cell lines as EMT high or low (Gr\u00f6ger et al., 2012; Viswanathan et al., 2017), and we found that GLI activity (see Figure 1B) correlated positively with EMT in our PDA cell line panel (Figure 2B)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on correlation analysis shown in Figure 2B using published EMT scores",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:51.947752Z"
+    },
+    {
+      "id": "3d41ecec-6469-47f8-810d-199ee433a831",
+      "content_id": "f87403e9-0511-495b-a977-8464a88e2f16",
+      "claim_id": "C33",
+      "claim": "SHH expression correlated negatively with EMT.",
+      "claim_type": "EXPLICIT",
+      "source": "and we found that GLI activity (see Figure 1B) correlated positively with EMT in our PDA cell line panel (Figure 2B), while SHH expression correlated negatively (Figure 2C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on correlation analysis shown in Figure 2C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:51.947752Z"
+    },
+    {
+      "id": "85fcb90d-2ef6-4e2c-aac6-cfd1474a2fac",
+      "content_id": "f87403e9-0511-495b-a977-8464a88e2f16",
+      "claim_id": "C34",
+      "claim": "PDA cell lines with elevated levels of epithelial marker expression closely correlated with enrichment of the classical gene program.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, PDA cell lines with elevated levels of epithelial marker expression (GLIlo/Hhhi lines) closely correlated with enrichment of the classical gene program (Collisson et al., 2011; Aung et al., 2018) (Figure 2A and Figure 2D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on gene expression data shown in Figure 2A and 2D",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:51.947752Z"
+    },
+    {
+      "id": "0a808f45-d1de-4c1d-8771-1f8e8fc34393",
+      "content_id": "f87403e9-0511-495b-a977-8464a88e2f16",
+      "claim_id": "C35",
+      "claim": "GLI2 mRNA expression was enriched in basal-like tumors in TCGA samples.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, GLI2 mRNA expression was enriched in the basal-like tumors, (Figure 2E left)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on analysis of TCGA data shown in Figure 2E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:51.947752Z"
+    },
+    {
+      "id": "ad4ada73-421c-4954-abaa-67a78e9d2b2d",
+      "content_id": "f87403e9-0511-495b-a977-8464a88e2f16",
+      "claim_id": "C36",
+      "claim": "High SHH and IHH expression correlated with the classical subtype in TCGA samples.",
+      "claim_type": "EXPLICIT",
+      "source": "whereas high SHH and IHH expression correlated with the classical subtype (Figure 2E middle, right).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on analysis of TCGA data shown in Figure 2E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:51.947752Z"
+    },
+    {
+      "id": "20c1b621-ed92-46c7-beac-66ae4bc732cc",
+      "content_id": "f87403e9-0511-495b-a977-8464a88e2f16",
+      "claim_id": "C37",
+      "claim": "GLI2 overexpression strongly induced mesenchymal markers ZEB1, VIM and basal-like marker KRT14 in YAPC cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, GLI2 overexpression strongly induced the mesenchymal markers ZEB1, VIM and basal-like marker KRT14 in YAPC cells and led to downregulation of epithelial markers E-Cadherin and ESRP1, and the transcription factor GATA6 - a putative regulator of the classical subtype of PDA (Collisson et al., 2011; Martinelli et al., 2017) and SHH in YAPC and HPAFII cells (Figure 3A; Figure 3\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on immunoblot data shown in Figure 3A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:51.947752Z"
+    },
+    {
+      "id": "ec8b4d83-856c-4db6-a11d-685c10d86d72",
+      "content_id": "f87403e9-0511-495b-a977-8464a88e2f16",
+      "claim_id": "C38",
+      "claim": "GLI2 overexpression led to downregulation of epithelial markers E-Cadherin and ESRP1, and the transcription factor GATA6 and SHH in YAPC and HPAFII cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, GLI2 overexpression strongly induced the mesenchymal markers ZEB1, VIM and basal-like marker KRT14 in YAPC cells and led to downregulation of epithelial markers E-Cadherin and ESRP1, and the transcription factor GATA6 - a putative regulator of the classical subtype of PDA (Collisson et al., 2011; Martinelli et al., 2017) and SHH in YAPC and HPAFII cells (Figure 3A; Figure 3\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on immunoblot data shown in Figure 3A and Figure 3\u2014figure supplement 1A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:51.947752Z"
+    },
+    {
+      "id": "754414b7-58a4-4af0-9096-cc9ca0e42f29",
+      "content_id": "f87403e9-0511-495b-a977-8464a88e2f16",
+      "claim_id": "C39",
+      "claim": "YAPC- and HPAFII-GLI2 cells showed a significant change in cell morphology characterized by a more elongated, less compact morphology.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with a switch toward a mesenchymal-like cell state, YAPC- and HPAFII-GLI2 cells showed a significant change in cell morphology compared to control cells expressing empty vector (EV) (Figure 3B; Figure 3\u2014figure supplement 1C), characterized by a more elongated, less compact morphology when grown as monolayer cultures or as 3D matrigel cultures (Figure 3B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on microscopy images shown in Figure 3B and Figure 3\u2014figure supplement 1C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:51.947752Z"
+    },
+    {
+      "id": "c41890c2-70c7-4b1b-a759-7f566f93b6c5",
+      "content_id": "f87403e9-0511-495b-a977-8464a88e2f16",
+      "claim_id": "C40",
+      "claim": "Gene set enrichment analysis indicated that 'Epithelial_Mesenchymal_Transition' was the most statistically significant program activated by GLI2.",
+      "claim_type": "EXPLICIT",
+      "source": "Gene set enrichment analysis (GSEA) using the Cancer Hallmarks database indicated that 'Epithelial_Mesenchymal_Transition' was the most statistically significant program activated by GLI2 (Figure 3D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on GSEA analysis of RNA-seq data shown in Figure 3D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:51.947752Z"
+    },
+    {
+      "id": "e6ef345a-30b9-4e5d-9c02-7dadc2c5408c",
+      "content_id": "f87403e9-0511-495b-a977-8464a88e2f16",
+      "claim_id": "C41",
+      "claim": "Dox treatment of iGLI2 cells for 3 days resulted in a significant increase in basal-like subtype genes and a corresponding decrease in a subset of classical genes in both YAPC- and HPAFII-iGLI2 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In keeping with the relationship between EMT and the basal-like subtype, qPCR analysis indicated that Dox treatment of iGLI2 cells for 3 days resulted in a significant increase in basal-like subtype genes and a corresponding decrease in a subset of classical genes in both YAPC- and HPAFII-iGLI2 cells (Figure 3E).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on qPCR data shown in Figure 3E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:51.947752Z"
+    },
+    {
+      "id": "955885ad-e587-4d4e-a2db-2dbaf8cc6353",
+      "content_id": "f87403e9-0511-495b-a977-8464a88e2f16",
+      "claim_id": "C42",
+      "claim": "The expression levels of stemness associated markers SOX2 and CD44 increased upon GLI2 induction in YAPC cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the expression levels of stemness associated markers SOX2 and CD44 increased (Figure 3F)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on qPCR data shown in Figure 3F",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:51.947752Z"
+    },
+    {
+      "id": "de05b1ac-8c22-432f-bb2c-56a43aa8c76b",
+      "content_id": "f87403e9-0511-495b-a977-8464a88e2f16",
+      "claim_id": "C43",
+      "claim": "SHH and GATA6 showed a significant decrease upon GLI2 induction and basal-like subtype switching in YAPC cells.",
+      "claim_type": "EXPLICIT",
+      "source": "while SHH and GATA6 showed a significant decrease upon GLI2 induction and basal-like subtype switching in YAPC cells (Figure 3G).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on qPCR data shown in Figure 3G",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:51.947752Z"
+    },
+    {
+      "id": "4ef97b2f-6f6f-409c-8734-e806dcd0754c",
+      "content_id": "f87403e9-0511-495b-a977-8464a88e2f16",
+      "claim_id": "C44",
+      "claim": "Forced expression of constitutively active GLI2 lacking the N-terminal repressor domain led to a decrease in SHH and GATA6 levels in YAPC cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, forced expression of a constitutively active GLI2 lacking the N-terminal repressor domain (Pasca di Magliano et al., 2006) (\u0394N-GLI2) also lead to a decrease in SHH and GATA6 levels in YAPC cells (Figure 3\u2014figure supplement 1E).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on qPCR data shown in Figure 3\u2014figure supplement 1E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:51.947752Z"
+    },
+    {
+      "id": "b91de737-dbf2-4e1d-933c-0e7b86e286a9",
+      "content_id": "f87403e9-0511-495b-a977-8464a88e2f16",
+      "claim_id": "C45",
+      "claim": "Loss of GLI2 led to a decrease in basal-like markers (KRT5, KRT14) and SOX2 and induction of epithelial markers in basal-like cell lines.",
+      "claim_type": "EXPLICIT",
+      "source": "To test whether GLI proteins are not only sufficient but also necessary to sustain the basal-like phenotype, we suppressed GLI2 levels via siRNA or shRNA-mediated knockdown or CRISPR-Cas9 mediated knockout in basal-like cell lines, KP4 and Panc0327. Loss of GLI2 led to a decrease in basal-like markers (KRT5, KRT14) and SOX2 and induction of epithelial markers (Figure 4A; Figure 4\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on immunoblot data shown in Figure 4A and Figure 4\u2014figure supplement 1A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:51.947752Z"
+    },
+    {
+      "id": "3b82bfa1-f7fd-4475-8a07-f68cc35a31e2",
+      "content_id": "f87403e9-0511-495b-a977-8464a88e2f16",
+      "claim_id": "C46",
+      "claim": "Expression of the basal-like signature and EMT-associated genes were significantly reduced following GLI2 knockdown in KP4 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, expression of the basal-like signature and EMT-associated genes were also significantly reduced following GLI2 knockdown (KP4) (Figure 4B,C) or knockout (Panc0327) (Figure 4\u2014figure supplement 1B,C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on qPCR data shown in Figure 4B,C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:51.947752Z"
+    },
+    {
+      "id": "6aa7309b-72af-4ef7-8527-52dd55690503",
+      "content_id": "f87403e9-0511-495b-a977-8464a88e2f16",
+      "claim_id": "C47",
+      "claim": "GLI2 knockout in KP4 and Panc0327 cells resulted in a clear switch towards a more epithelial like morphology in 2D monolayer culture.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, GLI2 knockout in KP4 and Panc0327 cells (GLI2KO) resulted in a clear switch towards a more epithelial like morphology in 2D monolayer culture (Figure 4D) and 3D matrigel growth (KP4; Figure 4\u2014figure supplement 1D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on microscopy images shown in Figure 4D and Figure 4\u2014figure supplement 1D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:51.947752Z"
+    },
+    {
+      "id": "7228e49e-3a57-4af9-b765-edab9d0f3622",
+      "content_id": "f87403e9-0511-495b-a977-8464a88e2f16",
+      "claim_id": "C48",
+      "claim": "GLI2 knockdown or knockout in KP4 and Panc0327 cells showed a prominent nuclear relocalization of ESRP1.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, immunofluorescence staining followingGLI2 knockdown or GLI2KO in KP4 and Panc0327 cells, respectively, showed a prominent nuclear relocalization of ESRP1 relative to Cas9 control cells, where ESRP1 was predominantly cytoplasmic (Figure 4E; Figure 4\u2014figure supplement 1E).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on immunofluorescence data shown in Figure 4E and Figure 4\u2014figure supplement 1E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:51.947752Z"
+    },
+    {
+      "id": "87cf47ed-a88c-4a49-bb9f-5e1349cb7201",
+      "content_id": "f87403e9-0511-495b-a977-8464a88e2f16",
+      "claim_id": "C49",
+      "claim": "KP4 GLI2 knockout cells showed a modest difference in in vitro growth rate.",
+      "claim_type": "EXPLICIT",
+      "source": "KP4 GLI2KO cells showed a modest difference in in vitro growth rate (Figure 4F)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on growth curve data shown in Figure 4F",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:51.947752Z"
+    },
+    {
+      "id": "4683f366-a014-450f-bace-a77fd9421df5",
+      "content_id": "f87403e9-0511-495b-a977-8464a88e2f16",
+      "claim_id": "C50",
+      "claim": "GLI2 knockout tumor xenografts displayed significantly reduced in vivo growth relative to Cas9 control tumors.",
+      "claim_type": "EXPLICIT",
+      "source": "however, GLI2KO tumor xenografts displayed significantly reduced in vivo growth relative to Cas9 control tumors (Figure 4G).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on tumor growth measurements shown in Figure 4G",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:51.947752Z"
+    },
+    {
+      "id": "de0a788f-de99-4184-baa1-31ea561c727d",
+      "content_id": "f87403e9-0511-495b-a977-8464a88e2f16",
+      "claim_id": "C51",
+      "claim": "Slow growing KP4 GLI2 knockout tumors displayed reduced expression of the basal-like marker S100A2 and increased expression of the classical marker GATA6.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, slow growing KP4 GLI2KO tumors displayed reduced expression of the basal-like marker S100A2 (Figure 4H, top row) and increased expression of the classical marker GATA6 (Figure 4H, bottom row)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on immunohistochemistry data shown in Figure 4H",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:51.947752Z"
+    },
+    {
+      "id": "da412b3c-4cb6-4379-9dc9-21e6cead6e06",
+      "content_id": "f87403e9-0511-495b-a977-8464a88e2f16",
+      "claim_id": "C52",
+      "claim": "Removal of Dox from iKRAS cell culture media led to a 50% reduction in Kras mRNA expression within 24 hr and complete extinction by 72 hr.",
+      "claim_type": "EXPLICIT",
+      "source": "In this system, removal of Dox from the culture media led to a 50% reduction in Kras mRNA expression within 24 hr and complete extinction by 72 hr (Figure 5\u2014figure supplement 1A,B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on qPCR data shown in Figure 5\u2014figure supplement 1A,B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:51.947752Z"
+    },
+    {
+      "id": "352a847b-d04a-409c-987d-ca3d5622121a",
+      "content_id": "f87403e9-0511-495b-a977-8464a88e2f16",
+      "claim_id": "C53",
+      "claim": "A reciprocal increase in Gli2 and Gli1 expression was evident within 24 hr of Dox removal and persisted for at least 5 days in iKRAS cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, a reciprocal increase in Gli2 and Gli1 expression was evident within 24 hr of Dox removal and persisted for at least 5 days (Figure 5A\u2013C; Figure 5\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on qPCR and immunoblot data shown in Figure 5A-C and Figure 5\u2014figure supplement 1A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:51.947752Z"
+    },
+    {
+      "id": "a8d4dcac-700e-4295-8dfd-044376e4fba1",
+      "content_id": "f87403e9-0511-495b-a977-8464a88e2f16",
+      "claim_id": "C54",
+      "claim": "There was a corresponding up-regulation of Zeb1 and Vim mRNA and of basal-like subtype genes following Kras extinction in iKRAS cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, there was a corresponding up-regulation of Zeb1 and Vim mRNA and of basal-like subtype genes, consistent with induction of EMT and basal-like features (Figure 5\u2014figure supplement 1C,D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on qPCR data shown in Figure 5\u2014figure supplement 1C,D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:51.947752Z"
+    },
+    {
+      "id": "7606b27d-14ab-4181-94d2-d81899b84b51",
+      "content_id": "f87403e9-0511-495b-a977-8464a88e2f16",
+      "claim_id": "C55",
+      "claim": "shRNA-mediated knockdown of KRAS in YAPC and HPAFII cells led to a concomitant increase in GLI expression, EMT markers and basal-like subtype genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, shRNA-mediated knockdown of KRAS in the human PDA cell lines YAPC and HPAFII led to a concomitant increase in GLI expression, EMT markers (Figure 5D; Figure 5\u2014figure supplement 1E) and basal-like subtype genes (Figure 5E).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on qPCR data shown in Figure 5D, 5E and Figure 5\u2014figure supplement 1E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:51.947752Z"
+    },
+    {
+      "id": "2f063ea0-5edf-4481-8891-abcd002d3a64",
+      "content_id": "f87403e9-0511-495b-a977-8464a88e2f16",
+      "claim_id": "C56",
+      "claim": "Treatment of iKRAS4 cells with the GLI inhibitor GANT61 suppressed basal-like gene induction in response to KRAS ablation.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, expression of the basal-like program was dependent on GLI2, as treatment of iKRAS4 cells with the GLI inhibitor, GANT61 (5 \u03bcM), suppressed basal-like gene induction in response to KRAS* ablation (Figure 5F).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on qPCR data shown in Figure 5F",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:51.947752Z"
+    },
+    {
+      "id": "9cd30c55-56d6-4b0a-89bd-1e65fa9d47a7",
+      "content_id": "f87403e9-0511-495b-a977-8464a88e2f16",
+      "claim_id": "C57",
+      "claim": "In the presence of Dox (KRAS on), iKRAS-GLI2 cells had a growth advantage over control cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In the presence of Dox (KRAS* on), iKRAS-GLI2 cells had a growth advantage over control cells (Figure 5G, quantified in graph; '+Dox').",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on colony formation assay shown in Figure 5G",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:51.947752Z"
+    },
+    {
+      "id": "aee66920-f7a6-4f61-888e-e96b10637aac",
+      "content_id": "f87403e9-0511-495b-a977-8464a88e2f16",
+      "claim_id": "C58",
+      "claim": "Upon Dox withdrawal (KRAS off), control cells failed to form colonies after 6 days while iKRAS-GLI2 cells were able to form colonies within the same time frame.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon Dox withdrawal (KRAS* off), control cells (iKRAS-EV) failed to form colonies after 6 days while iKRAS-GLI2 cells were able to form colonies within the same time frame (Figure 5G, quantified in graph; '- Dox'; Figure 5\u2014figure supplement 2C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on colony formation assay shown in Figure 5G and Figure 5\u2014figure supplement 2C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:51.947752Z"
+    },
+    {
+      "id": "dd6390f7-2ac7-42d2-92cd-25694411e56e",
+      "content_id": "f87403e9-0511-495b-a977-8464a88e2f16",
+      "claim_id": "C59",
+      "claim": "Ectopic GLI2 expression rescued growth of iKRAS cells by 2.5 fold following Dox withdrawal in 3D spheroid culture.",
+      "claim_type": "EXPLICIT",
+      "source": "This phenotype was recapitulated in 3D spheroid culture, where ectopic GLI2 expression rescued growth of iKRAS cells by 2.5 fold following Dox withdrawal (Figure 5\u2014figure supplement 2D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on spheroid culture data shown in Figure 5\u2014figure supplement 2D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:51.947752Z"
+    },
+    {
+      "id": "177efe6d-5673-4dc8-8776-dfcaa13476c1",
+      "content_id": "f87403e9-0511-495b-a977-8464a88e2f16",
+      "claim_id": "C60",
+      "claim": "Human YAPC-GLI2 PDA cells were capable of sustained growth as 3D spheroids following shRNA-mediated knockdown of KRAS relative to YAPC-EV cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, human YAPC-GLI2 PDA cells were capable of sustained growth as 3D spheroids following shRNA-mediated knockdown of KRAS* relative to YAPC-EV cells (Figure 5H,I; Figure 5\u2014figure supplement 2E).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on spheroid culture data shown in Figure 5H,I and Figure 5\u2014figure supplement 2E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:51.947752Z"
+    },
+    {
+      "id": "a7ddaaa4-d8bd-4e34-80eb-f3c8b5592e31",
+      "content_id": "f87403e9-0511-495b-a977-8464a88e2f16",
+      "claim_id": "C61",
+      "claim": "GLI2 is upregulated in 6 out of 7 Escaper cell lines, including 4 out of 7 lacking YAP1 induction.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, we find that GLI2 is upregulated in 6/7 Escaper cell lines, including 4/7 lacking YAP1 induction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on immunoblot data shown in Figure 5J",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:51.947752Z"
+    },
+    {
+      "id": "6ed0a101-016d-42d1-aa69-7d04559d0689",
+      "content_id": "f87403e9-0511-495b-a977-8464a88e2f16",
+      "claim_id": "C62",
+      "claim": "Loss of GLI2 did not have a significant effect on spheroid growth in the presence of Dox compared to shGFP control cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In the presence of Dox, loss of GLI2 did not have a significant effect on spheroid growth compared to shGFP control cells (Figure 5K top row, L; Figure 5\u2014figure supplement 2G top row, H).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on spheroid culture data shown in Figure 5K,L and Figure 5\u2014figure supplement 2G,H",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:51.947752Z"
+    },
+    {
+      "id": "27b2d9b7-3bdc-4eae-89a8-ee160399dfa0",
+      "content_id": "f87403e9-0511-495b-a977-8464a88e2f16",
+      "claim_id": "C63",
+      "claim": "The eventual emergence of resistant colonies in the absence of Dox was suppressed in shGLI2 cells compared with shGFP control.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the eventual emergence of resistant colonies in the absence of Dox was suppressed in shGLI2 cells compared with shGFP control (Figure 5K bottom row, M arrowheads; Figure 5\u2014figure supplement 2G, bottom row, arrowheads and I).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on spheroid culture data shown in Figure 5K,M and Figure 5\u2014figure supplement 2G,I",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:51.947752Z"
+    },
+    {
+      "id": "fe55484d-97cc-44f0-b10d-79a63255ab35",
+      "content_id": "f87403e9-0511-495b-a977-8464a88e2f16",
+      "claim_id": "C64",
+      "claim": "Among the most upregulated transcripts expressed in YAPC-iGLI2 cells following GLI2 induction were genes encoding secreted factors including SPP1 (Osteopontin), FGF19 and SPOCK2 and the basal-like gene S100A2.",
+      "claim_type": "EXPLICIT",
+      "source": "Among the most upregulated transcripts expressed in YAPC-iGLI2 cells following GLI2 induction were genes encoding secreted factors including Secreted Phosphoprotein 1 (SPP1) encoding Osteopontin (OPN), fibroblast growth factor 19 (FGF19) and SPOCK2 [SPARC (Osteonectin)] and the basal-like gene S100A2 (Figure 6A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on RNA-seq data shown in Figure 6A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:51.947752Z"
+    },
+    {
+      "id": "f6208f45-fa7f-419a-8ba6-b1bf2bc0daf3",
+      "content_id": "f87403e9-0511-495b-a977-8464a88e2f16",
+      "claim_id": "C65",
+      "claim": "Upregulation of secreted OPN was confirmed in YAPC-iGLI2 and HPAFII-iGLI2 cells 3 days post-induction of GLI2.",
+      "claim_type": "EXPLICIT",
+      "source": "We confirmed upregulation of secreted OPN in YAPC-iGLI2 (Figure 6\u2014figure supplement 1A) and in a second cell line, HPAFII-iGLI2 (Figure 6B,C) 3 days post-induction of GLI2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on ELISA data shown in Figure 6B,C and Figure 6\u2014figure supplement 1A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:51.947752Z"
+    },
+    {
+      "id": "f7943234-722e-44f1-a8fa-334ff8a201e4",
+      "content_id": "f87403e9-0511-495b-a977-8464a88e2f16",
+      "claim_id": "C66",
+      "claim": "Ectopic expression of \u0394N-GLI2 in YAPC cells led to an increase in SPP1 expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, ectopic expression of \u0394N-GLI2 in YAPC cells also led to an increase in SPP1 expression (Figure 6\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on qPCR data shown in Figure 6\u2014figure supplement 1B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:51.947752Z"
+    },
+    {
+      "id": "3b9be313-47ed-445a-8380-189903acc720",
+      "content_id": "f87403e9-0511-495b-a977-8464a88e2f16",
+      "claim_id": "C67",
+      "claim": "Chromatin immuno-precipitation of GLI2 showed binding to a GLI consensus element found upstream of the human SPP1 transcriptional start site.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with direct regulation of SPP1 transcription, chromatin immuno-precipitation of GLI2 showed binding to a GLI consensus element found upstream of the human SPP1 transcriptional start site (Figure 6D) (Kijewska et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on ChIP data shown in Figure 6D and citation to Kijewska et al., 2017",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:51.947752Z"
+    },
+    {
+      "id": "c5617240-2217-4e11-8b2d-958c540cd27c",
+      "content_id": "f87403e9-0511-495b-a977-8464a88e2f16",
+      "claim_id": "C68",
+      "claim": "Expression of SPP1 is significantly increased in YAPC cells during basal-like subtype switching in response to KRAS suppression.",
+      "claim_type": "EXPLICIT",
+      "source": "Expression of SPP1 is significantly increased in YAPC cells during basal-like subtype switching in response to KRAS* suppression (Figure 6E)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on qPCR data shown in Figure 6E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:51.947752Z"
+    },
+    {
+      "id": "b8afa8dd-563c-4bc2-bc36-bf21b9bb150b",
+      "content_id": "f87403e9-0511-495b-a977-8464a88e2f16",
+      "claim_id": "C69",
+      "claim": "GLI2-high basal-like cell lines expressed the highest levels of SPP1 mRNA and OPN protein levels in addition to higher levels of OPN receptors, CD44 and integrin \u03b23, as well as integrin \u03b15.",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, we found that GLI2-high basal-like cell lines expressed the highest levels of SPP1 mRNA (Figure 6\u2014figure supplement 1C) and OPN protein levels in addition to higher levels of OPN receptors, CD44 and integrin \u03b23, as well as integrin \u03b15 (Figure 6F) (Weber et al., 1996; Rangaswami et al., 2006; Zhao et al., 2018), compared to classical subtype cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on qPCR and immunoblot data shown in Figure 6F and Figure 6\u2014figure supplement 1C",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:51.947752Z"
+    },
+    {
+      "id": "fad23456-1a4f-4007-84ac-a28a75cacd82",
+      "content_id": "f87403e9-0511-495b-a977-8464a88e2f16",
+      "claim_id": "C70",
+      "claim": "Knockdown of GLI2 alone or in combination with GLI1 led to a significant decrease in SPP1 transcript and secreted protein.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, knockdown of GLI2 alone or in combination with GLI1 led to a significant decrease in SPP1 transcript (Figure 6G,H; Figure 6\u2014figure supplement 1D) and secreted protein (Figure 6\u2014figure supplement 1E)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on qPCR and ELISA data shown in Figure 6G,H and Figure 6\u2014figure supplement 1D,E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:51.947752Z"
+    },
+    {
+      "id": "4df0b0dd-a38b-41bd-ae55-c10135c3aecd",
+      "content_id": "f87403e9-0511-495b-a977-8464a88e2f16",
+      "claim_id": "C71",
+      "claim": "Exposure of Capan2 cells to recombinant OPN led to a significant increase in expression of basal-like genes, and a decrease in a subset of classical genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Exposure of Capan2 cells to recombinant OPN led to a significant increase in expression of basal-like genes, and a decrease in a subset of classical genes (Figure 6I).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on qPCR data shown in Figure 6I",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:51.947752Z"
+    },
+    {
+      "id": "93f0ff97-bb29-427a-a95a-35ffd3347231",
+      "content_id": "f87403e9-0511-495b-a977-8464a88e2f16",
+      "claim_id": "C72",
+      "claim": "A similar induction of basal-like genes was observed in YAPC cells treated with exogenous OPN.",
+      "claim_type": "EXPLICIT",
+      "source": "A similar induction of basal-like genes was also observed in YAPC cells treated with exogenous OPN (Figure 6\u2014figure supplement 1F).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on qPCR data shown in Figure 6\u2014figure supplement 1F",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:51.947752Z"
+    },
+    {
+      "id": "5f8e1d85-9893-4679-b60e-f7e843dd49c9",
+      "content_id": "f87403e9-0511-495b-a977-8464a88e2f16",
+      "claim_id": "C73",
+      "claim": "shRNA-mediated GLI2 knockdown in Panc0327 cells led to a decrease in 13 basal-like genes, of which 12 were significantly rescued following co-treatment with recombinant OPN.",
+      "claim_type": "EXPLICIT",
+      "source": "shRNA-mediated GLI2 knockdown in Panc0327 cells led to a decrease in 13 basal-like genes, of which 12 were significantly rescued following co-treatment with recombinant OPN (Figure 6J).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on qPCR data shown in Figure 6J",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:51.947752Z"
+    },
+    {
+      "id": "348d4c9d-8d3b-4fb7-8c46-bca99f8796a6",
+      "content_id": "f87403e9-0511-495b-a977-8464a88e2f16",
+      "claim_id": "C74",
+      "claim": "OPN-deleted KP4 cells displayed a decrease in basal-like marker KRT14 and a concomitant increase in classical-associated markers, E-cadherin and GATA6.",
+      "claim_type": "EXPLICIT",
+      "source": "OPN-deleted KP4 cells displayed a decrease in basal-like markers KRT14 (Figure 7B) and a concomitant increase in classical-associated markers, E-cadherin and GATA6 (Figure 7B,C)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on immunoblot data shown in Figure 7B,C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:51.947752Z"
+    },
+    {
+      "id": "9de23cca-3be3-46f3-a3c1-8a1363018fee",
+      "content_id": "f87403e9-0511-495b-a977-8464a88e2f16",
+      "claim_id": "C75",
+      "claim": "OPN-deleted KP4 cells showed a switch toward a more epithelial like morphology on monolayer culture.",
+      "claim_type": "EXPLICIT",
+      "source": "along with a switch toward a more epithelial like morphology on monolayer culture (Figure 7D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on microscopy images shown in Figure 7D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:51.947752Z"
+    },
+    {
+      "id": "52c2938b-f669-46e7-818e-c221f5dd9948",
+      "content_id": "f87403e9-0511-495b-a977-8464a88e2f16",
+      "claim_id": "C76",
+      "claim": "SPP1 knockout cells did not show a significant growth defect in vitro relative to Cas9 controls cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to GLI2KO cells, SPP1KO cells did not show a significant growth defect in vitro relative to Cas9 controls cells (Figure 7E).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on growth curve data shown in Figure 7E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:51.947752Z"
+    },
+    {
+      "id": "b6143d1f-9a1a-4106-9ac6-0b46de1a004c",
+      "content_id": "f87403e9-0511-495b-a977-8464a88e2f16",
+      "claim_id": "C77",
+      "claim": "SPP1 knockout cells displayed a dramatic defect in growth as tumor xenografts in mice.",
+      "claim_type": "EXPLICIT",
+      "source": "However, SPP1KO cells displayed a dramatic defect in growth as tumor xenografts in mice (Figure 7F,G).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on tumor growth measurements shown in Figure 7F,G",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:51.947752Z"
+    },
+    {
+      "id": "3d55f412-907d-4f77-9b6b-f9005cd0b336",
+      "content_id": "f87403e9-0511-495b-a977-8464a88e2f16",
+      "claim_id": "C78",
+      "claim": "SPP1 knockout cells were significantly impaired in their ability to form metastatic tumors in the lungs of recipient mice following tail vein injection.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, SPP1KO cells were significantly impaired in their ability to form metastatic tumors in the lungs of recipient mice following tail vein injection, whereas Cas9 control cells gave rise to widespread metastatic disease (Figure 7H,I).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on histology and quantification shown in Figure 7H,I",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:51.947752Z"
+    },
+    {
+      "id": "2d1a0cec-4688-487e-8822-8fa61b754b51",
+      "content_id": "f87403e9-0511-495b-a977-8464a88e2f16",
+      "claim_id": "C79",
+      "claim": "The reduced overall tumor burden of mice injected with SPP1 knockout cells led to their prolonged survival relative to the control cohort.",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, the reduced overall tumor burden of mice injected with SPP1KO cells led to their prolonged survival relative to the control cohort (Figure 7J).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on Kaplan-Meier survival data shown in Figure 7J",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:51.947752Z"
+    },
+    {
+      "id": "8a021633-64e5-4d2c-b014-afd404a36468",
+      "content_id": "f87403e9-0511-495b-a977-8464a88e2f16",
+      "claim_id": "C80",
+      "claim": "High expression levels of SPP1 mRNA in basal-like tumors correlated with shortened overall survival of PDA patients.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this notion, high expression levels of SPP1 mRNA in basal-like tumors correlated with shortened overall survival of PDA patients (Figure 7K).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on Kaplan-Meier survival analysis of TCGA data shown in Figure 7K",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:51.947752Z"
+    },
+    {
+      "id": "a88e4fcd-fab0-4ce1-9df9-d1c42dded5b5",
+      "content_id": "f87403e9-0511-495b-a977-8464a88e2f16",
+      "claim_id": "C81",
+      "claim": "PDA subtypes are not permanently encoded.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we demonstrate that PDA subtypes are not permanently encoded, and identify the GLI2 transcription factor as a master regulator of subtype inter-conversion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on experimental data showing GLI2-mediated subtype switching",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:51.947752Z"
+    },
+    {
+      "id": "4f58afbb-68a0-45e9-bf85-f719424d7508",
+      "content_id": "f87403e9-0511-495b-a977-8464a88e2f16",
+      "claim_id": "C82",
+      "claim": "GLI2 is a master regulator of subtype inter-conversion in PDA.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we demonstrate that PDA subtypes are not permanently encoded, and identify the GLI2 transcription factor as a master regulator of subtype inter-conversion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on experimental data showing GLI2 is sufficient and necessary for subtype switching",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:51.947752Z"
+    },
+    {
+      "id": "131dc720-aee4-4253-823b-fb1b7c4e8e55",
+      "content_id": "f87403e9-0511-495b-a977-8464a88e2f16",
+      "claim_id": "C83",
+      "claim": "GLI2 is elevated in basal-like PDA lines and patient specimens.",
+      "claim_type": "EXPLICIT",
+      "source": "GLI2 is elevated in basal-like PDA lines and patient specimens, and forced GLI2 activation is sufficient to convert classical PDA cells to basal-like.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on immunoblot data in cell lines and RNA-seq data from patient samples",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:51.947752Z"
+    },
+    {
+      "id": "5c865eb2-0c2e-4b3e-bb21-65bf0b81936d",
+      "content_id": "f87403e9-0511-495b-a977-8464a88e2f16",
+      "claim_id": "C84",
+      "claim": "Forced GLI2 activation is sufficient to convert classical PDA cells to basal-like.",
+      "claim_type": "EXPLICIT",
+      "source": "GLI2 is elevated in basal-like PDA lines and patient specimens, and forced GLI2 activation is sufficient to convert classical PDA cells to basal-like.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on experimental data showing GLI2 overexpression induces basal-like features",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:51.947752Z"
+    },
+    {
+      "id": "bd4727eb-213a-4af0-999c-0eec54abed80",
+      "content_id": "f87403e9-0511-495b-a977-8464a88e2f16",
+      "claim_id": "C85",
+      "claim": "GLI2 upregulates expression of Osteopontin (OPN).",
+      "claim_type": "EXPLICIT",
+      "source": "Mechanistically, GLI2 upregulates expression of the pro-tumorigenic secreted protein, Osteopontin (OPN), which is especially critical for metastatic growth in vivo and adaptation to oncogenic KRAS ablation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on RNA-seq, qPCR, ELISA and ChIP data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:51.947752Z"
+    },
+    {
+      "id": "f843780c-4261-42ed-be68-a5cc98e07c4b",
+      "content_id": "f87403e9-0511-495b-a977-8464a88e2f16",
+      "claim_id": "C86",
+      "claim": "OPN is especially critical for metastatic growth in vivo and adaptation to oncogenic KRAS ablation.",
+      "claim_type": "EXPLICIT",
+      "source": "Mechanistically, GLI2 upregulates expression of the pro-tumorigenic secreted protein, Osteopontin (OPN), which is especially critical for metastatic growth in vivo and adaptation to oncogenic KRAS ablation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on experimental data showing OPN knockout impairs metastasis and OPN rescues KRAS loss",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:51.947752Z"
+    },
+    {
+      "id": "20e9278e-504d-48d3-83e3-509e3e0534ff",
+      "content_id": "f87403e9-0511-495b-a977-8464a88e2f16",
+      "claim_id": "C87",
+      "claim": "Elevated GLI2 and OPN levels predict shortened overall survival of PDA patients.",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, elevated GLI2 and OPN levels predict shortened overall survival of PDA patients.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on Kaplan-Meier survival analysis of TCGA patient data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:51.947752Z"
+    },
+    {
+      "id": "c77338fc-cf1e-48c4-a138-94c50d202d03",
+      "content_id": "f87403e9-0511-495b-a977-8464a88e2f16",
+      "claim_id": "C88",
+      "claim": "The GLI2-OPN circuit is a driver of PDA cell plasticity that establishes and maintains an aggressive variant of this disease.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the GLI2-OPN circuit is a driver of PDA cell plasticity that establishes and maintains an aggressive variant of this disease.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on the collective experimental findings showing GLI2-OPN axis drives basal-like subtype",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:51.947752Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "f558eae6-675e-4a6f-ac04-1dca94cff51c",
+      "content_id": "f87403e9-0511-495b-a977-8464a88e2f16",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "PDA is a lethal cancer with poor prognosis and common genetic alterations. PDA is projected to become the second leading cause of cancer-related deaths by 2030, has a 5-year survival rate of less than 10%, and harbors activating KRAS mutations in ~95% of cases and inactivating mutations in TP53, CDKN2A, and SMAD4 in 50-70% of cases.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C4 are well-established facts about PDA supported by multiple citations to prior literature. These background claims provide context for the study but are not novel findings from this work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:21:51.947752Z"
+    },
+    {
+      "id": "ee72dbef-2b88-40b9-b9c5-8a4731b460e7",
+      "content_id": "f87403e9-0511-495b-a977-8464a88e2f16",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "PDA comprises two main molecular subtypes\u2014classical and basal-like\u2014with distinct features and clinical outcomes. Classical PDA is enriched for epithelial differentiation genes, while basal-like PDA is characterized by mesenchymal markers, poorly differentiated histology, and worse prognosis. These subtypes are preserved across multiple experimental models.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5-C9 summarize well-established prior work on PDA subtypes, supported by multiple citations. These provide essential background but represent prior knowledge rather than new findings from this manuscript.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:21:51.947752Z"
+    },
+    {
+      "id": "ed0e0827-cd1e-465b-af03-1f1fe1d29089",
+      "content_id": "f87403e9-0511-495b-a977-8464a88e2f16",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The Hedgehog pathway plays complex roles in PDA pathogenesis. While Hh ligands (SHH, IHH) are induced during PDA development and SHH restrains cancer growth, GLI transcription factors in the epithelium are required for oncogenesis, as demonstrated by genetic manipulation studies in mouse models.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10-C17 summarize prior work on Hedgehog signaling in PDA, supported by multiple citations including the authors' previous work. These establish the rationale for investigating GLI proteins but are not novel findings from this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:21:51.947752Z"
+    },
+    {
+      "id": "7dab210d-ba3f-4a3d-8961-3dddfa5c8e81",
+      "content_id": "f87403e9-0511-495b-a977-8464a88e2f16",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "PDA cell lines exhibit an inverse correlation between GLI2 and SHH expression. All cell lines express Hh pathway proteins, with GLI2 detectable in 10/14 lines. Cell lines with highest GLI2 levels show lowest SHH expression, and GLI transcriptional activity inversely correlates with SHH and positively correlates with GLI expression, as validated by luciferase reporter assays and knockdown/inhibitor experiments.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C18-C25 are well-supported by immunoblot data (Figure 1A), luciferase reporter assays (Figure 1B,C), and validation experiments with GLI2 knockdown and GANT61 inhibitor (Figure 1\u2014figure supplement 1C,D). The data clearly demonstrate the inverse relationship between GLI and SHH.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:21:51.947752Z"
+    },
+    {
+      "id": "8f42f8cb-ddf7-4133-abff-a2f471a8ffd1",
+      "content_id": "f87403e9-0511-495b-a977-8464a88e2f16",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Analysis of TCGA patient data reveals that high GLI2 expression correlates with low SHH/IHH expression and predicts poor survival outcomes. High GLI2 expression is associated with shortened overall and disease-free survival, while high SHH expression correlates with longer disease-free survival. These associations are independent of tumor purity and standard clinical variables.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26-C30 are supported by TCGA RNA-seq analysis (Figure 1\u2014figure supplement 1E), tumor purity analysis (C27), and Kaplan-Meier survival curves (Figure 1D,E). The multivariate analysis (Figure 1\u2014figure supplement 2) confirms independence from clinical covariates. The findings are statistically significant and well-documented.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:21:51.947752Z"
+    },
+    {
+      "id": "8b83a486-fb42-4ba5-947f-0d793bca22e4",
+      "content_id": "f87403e9-0511-495b-a977-8464a88e2f16",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "GLI expression correlates with EMT status and basal-like subtype in PDA. Most GLI-high/Hh-low cell lines exhibit EMT-high features, and GLI activity positively correlates with published EMT scores while SHH expression correlates negatively. In TCGA samples, GLI2 is enriched in basal-like tumors while SHH/IHH correlate with the classical subtype.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31-C36 are supported by immunoblot/qRT-PCR data (Figure 2A, Figure 1\u2014figure supplement 1H), correlation analyses with published EMT scores (Figure 2B,C), and TCGA subtype analysis (Figure 2E). The data consistently demonstrate the association between GLI2, EMT, and basal-like subtype.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:21:51.947752Z"
+    },
+    {
+      "id": "52045151-bfa8-4179-b2d6-21e4fe162082",
+      "content_id": "f87403e9-0511-495b-a977-8464a88e2f16",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Forced GLI2 expression is sufficient to drive classical-to-basal-like subtype conversion in PDA cells. GLI2 overexpression induces mesenchymal markers (ZEB1, VIM, KRT14), downregulates epithelial markers (E-Cadherin, ESRP1) and classical subtype regulators (GATA6, SHH), causes morphological changes toward mesenchymal phenotype, and activates EMT and basal-like gene programs as demonstrated by RNA-seq and qPCR.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-C44 are well-supported by multiple complementary experiments: immunoblots (Figure 3A, Figure 3\u2014figure supplement 1A), morphology changes (Figure 3B, Figure 3\u2014figure supplement 1C), GSEA showing EMT as top enriched program (Figure 3D), and qPCR validation of subtype switching (Figure 3E-G). Both stable and inducible GLI2 systems show consistent results.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:21:51.947752Z"
+    },
+    {
+      "id": "c2995613-be47-487a-848f-644d05803da1",
+      "content_id": "f87403e9-0511-495b-a977-8464a88e2f16",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "GLI2 is necessary for maintaining the basal-like phenotype in PDA cells. GLI2 knockdown or knockout in basal-like cell lines decreases basal-like markers, induces epithelial markers, causes morphological switch to epithelial phenotype, and relocates ESRP1 to the nucleus. While GLI2 knockout shows modest effects on in vitro growth, it significantly impairs in vivo tumor growth and causes subtype switching (decreased S100A2, increased GATA6).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C51 are supported by loss-of-function experiments using siRNA, shRNA, and CRISPR knockout in KP4 and Panc0327 cells. Data include immunoblots (Figure 4A, Figure 4\u2014figure supplement 1A), qPCR (Figure 4B,C), morphology (Figure 4D), immunofluorescence (Figure 4E), growth assays (Figure 4F,G), and IHC (Figure 4H). The in vivo data particularly strengthen the functional significance.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:21:51.947752Z"
+    },
+    {
+      "id": "232e19b6-c668-47d9-887e-6eb356ea5d5f",
+      "content_id": "f87403e9-0511-495b-a977-8464a88e2f16",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "KRAS ablation induces GLI2 expression and basal-like subtype switching in PDA cells. In the iKRAS model, Dox withdrawal leads to rapid Kras extinction and reciprocal increase in Gli2/Gli1 expression, accompanied by upregulation of EMT and basal-like genes. Similar effects occur with KRAS knockdown in human cell lines, and GLI inhibition blocks basal-like gene induction upon KRAS ablation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52-C56 are supported by qPCR and immunoblot data from iKRAS cells (Figure 5A-C, Figure 5\u2014figure supplement 1A-D) and human cell lines (Figure 5D,E). The GANT61 inhibitor experiment (Figure 5F) provides critical evidence that GLI2 mediates the basal-like switch upon KRAS loss. The temporal dynamics are well-documented.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:21:51.947752Z"
+    },
+    {
+      "id": "b326507b-ac11-4eb6-9d75-3905b4e2faea",
+      "content_id": "f87403e9-0511-495b-a977-8464a88e2f16",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "GLI2 enables PDA cells to survive and grow independently of oncogenic KRAS. Ectopic GLI2 expression rescues colony formation and spheroid growth following KRAS ablation in both mouse and human PDA cells. GLI2 is upregulated in 6/7 KRAS-independent 'Escaper' cell lines. GLI2 knockdown does not affect growth with KRAS present but suppresses emergence of resistant colonies upon KRAS withdrawal.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57-C63 are supported by colony formation assays (Figure 5G, Figure 5\u2014figure supplement 2C), spheroid culture experiments (Figure 5H,I, Figure 5\u2014figure supplement 2D,E), analysis of Escaper lines (Figure 5J), and long-term spheroid assays with GLI2 knockdown (Figure 5K-M, Figure 5\u2014figure supplement 2G-I). The data demonstrate GLI2's role in KRAS-independent survival.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:21:51.947752Z"
+    },
+    {
+      "id": "949a0697-bfc1-4cc4-a762-9544ec7a7527",
+      "content_id": "f87403e9-0511-495b-a977-8464a88e2f16",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "GLI2 directly upregulates SPP1/Osteopontin (OPN) expression in PDA cells. RNA-seq identified SPP1 among top GLI2-induced genes, confirmed by ELISA in multiple cell lines. ChIP demonstrates GLI2 binding to the SPP1 promoter. SPP1 expression increases during KRAS-induced basal-like switching, and basal-like cell lines express highest SPP1/OPN levels along with OPN receptors. GLI2 knockdown decreases SPP1 expression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C64-C70 are well-supported by RNA-seq (Figure 6A), ELISA (Figure 6B,C, Figure 6\u2014figure supplement 1A), ChIP showing direct binding (Figure 6D), qPCR in multiple contexts (Figure 6E-H, Figure 6\u2014figure supplement 1B-E), and immunoblots (Figure 6F). The ChIP data provides strong evidence for direct transcriptional regulation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:21:51.947752Z"
+    },
+    {
+      "id": "36d94d0b-7246-4336-b981-97125375d82c",
+      "content_id": "f87403e9-0511-495b-a977-8464a88e2f16",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Exogenous OPN is sufficient to induce basal-like gene expression and can rescue the basal-like phenotype upon GLI2 loss. Treatment of classical subtype cells with recombinant OPN increases basal-like genes and decreases classical genes. OPN co-treatment rescues 12 of 13 basal-like genes suppressed by GLI2 knockdown in basal-like cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C71-C73 are supported by qPCR experiments showing OPN treatment induces basal-like genes in Capan2 (Figure 6I) and YAPC cells (Figure 6\u2014figure supplement 1F), and rescues basal-like gene expression upon GLI2 knockdown in Panc0327 cells (Figure 6J). The rescue experiment is particularly compelling evidence for OPN acting downstream of GLI2.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:21:51.947752Z"
+    },
+    {
+      "id": "5d1951e7-18ae-4223-935d-9cc4ac45a2b6",
+      "content_id": "f87403e9-0511-495b-a977-8464a88e2f16",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "OPN is critical for basal-like tumor growth and metastasis in vivo. SPP1 knockout in KP4 cells decreases basal-like markers, increases classical markers, and causes epithelial morphology. While SPP1 knockout shows minimal effect on in vitro growth, it dramatically impairs subcutaneous tumor growth, severely reduces metastatic capacity in tail vein injection experiments, and prolongs survival. High SPP1 expression in basal-like patient tumors correlates with poor survival.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C74-C80 are strongly supported by CRISPR knockout experiments with immunoblots (Figure 7A-C), morphology (Figure 7D), in vitro growth (Figure 7E), subcutaneous xenografts (Figure 7F,G), metastasis assays (Figure 7H,I), survival data (Figure 7J), and TCGA patient survival analysis (Figure 7K). The dramatic in vivo phenotypes despite minimal in vitro effects highlight OPN's importance in the tumor microenvironment.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:21:51.947752Z"
+    },
+    {
+      "id": "08fb1898-5aa9-4f06-8742-227a9ac509f2",
+      "content_id": "f87403e9-0511-495b-a977-8464a88e2f16",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The GLI2-OPN axis is a master regulator of PDA subtype plasticity and drives the aggressive basal-like variant. PDA subtypes are not permanently encoded but can interconvert. GLI2 is elevated in basal-like tumors and sufficient to convert classical cells to basal-like. GLI2 upregulates OPN, which is critical for metastasis and KRAS-independent growth. High GLI2 and OPN predict poor patient survival, establishing this circuit as a driver of PDA plasticity and aggressiveness.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C81-C88 represent the major conclusions synthesized from the collective experimental findings. These are well-supported by the comprehensive data showing: (1) bidirectional subtype switching with GLI2 manipulation, (2) GLI2-OPN regulatory relationship, (3) functional importance in multiple contexts, and (4) clinical relevance. The conclusions are appropriately drawn from the data presented.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:21:51.947752Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "ab753848-c94f-4dfe-8ecd-9fbc5802d049",
+      "result_id": "f558eae6-675e-4a6f-ac04-1dca94cff51c"
+    },
+    {
+      "claim_id": "c5e93ee1-cdd3-4fcb-89da-dd7fe5cc0852",
+      "result_id": "f558eae6-675e-4a6f-ac04-1dca94cff51c"
+    },
+    {
+      "claim_id": "4b3db51e-a2da-4d8e-908c-18ebe222974a",
+      "result_id": "f558eae6-675e-4a6f-ac04-1dca94cff51c"
+    },
+    {
+      "claim_id": "f7bdf2fd-d1bb-4d8f-a71c-849982bbbf1d",
+      "result_id": "f558eae6-675e-4a6f-ac04-1dca94cff51c"
+    },
+    {
+      "claim_id": "0c6e8ac7-977c-4042-966e-c426f4f3db5e",
+      "result_id": "ee72dbef-2b88-40b9-b9c5-8a4731b460e7"
+    },
+    {
+      "claim_id": "e49ca858-3d80-4ac2-9ca7-71fd6ae37c8e",
+      "result_id": "ee72dbef-2b88-40b9-b9c5-8a4731b460e7"
+    },
+    {
+      "claim_id": "4b550dc0-bf51-4986-8daa-83f98fa622b4",
+      "result_id": "ee72dbef-2b88-40b9-b9c5-8a4731b460e7"
+    },
+    {
+      "claim_id": "1f5e196b-35f3-4be1-b4ef-b457aaaac791",
+      "result_id": "ee72dbef-2b88-40b9-b9c5-8a4731b460e7"
+    },
+    {
+      "claim_id": "e1cfbaa7-733c-4c03-98d3-2e51e33cb9a1",
+      "result_id": "ee72dbef-2b88-40b9-b9c5-8a4731b460e7"
+    },
+    {
+      "claim_id": "6d487e8f-4b7e-4982-941a-264ea61563e7",
+      "result_id": "ed0e0827-cd1e-465b-af03-1f1fe1d29089"
+    },
+    {
+      "claim_id": "c919334e-99c8-4d28-92f3-4f53bd7bd8a9",
+      "result_id": "ed0e0827-cd1e-465b-af03-1f1fe1d29089"
+    },
+    {
+      "claim_id": "3f0af6c9-0d12-4a4f-a67c-db9538816de6",
+      "result_id": "ed0e0827-cd1e-465b-af03-1f1fe1d29089"
+    },
+    {
+      "claim_id": "48ce6a0c-b596-4d91-97e8-8e092476edb8",
+      "result_id": "ed0e0827-cd1e-465b-af03-1f1fe1d29089"
+    },
+    {
+      "claim_id": "2721caa4-efb7-4aa5-a6c3-1e56c9228221",
+      "result_id": "ed0e0827-cd1e-465b-af03-1f1fe1d29089"
+    },
+    {
+      "claim_id": "40160187-97d3-44b6-b95f-3ea9c1a3160b",
+      "result_id": "ed0e0827-cd1e-465b-af03-1f1fe1d29089"
+    },
+    {
+      "claim_id": "187d16c9-c488-4f36-b658-47cfa2489120",
+      "result_id": "ed0e0827-cd1e-465b-af03-1f1fe1d29089"
+    },
+    {
+      "claim_id": "a8c66340-0b12-4235-ab8a-4cfac1829ff7",
+      "result_id": "ed0e0827-cd1e-465b-af03-1f1fe1d29089"
+    },
+    {
+      "claim_id": "06fdf6ab-3cc5-43c3-ac62-e6694e76e2c0",
+      "result_id": "7dab210d-ba3f-4a3d-8961-3dddfa5c8e81"
+    },
+    {
+      "claim_id": "a447be3c-b20c-4c19-ae64-3896ece23391",
+      "result_id": "7dab210d-ba3f-4a3d-8961-3dddfa5c8e81"
+    },
+    {
+      "claim_id": "508b4d7a-e66f-4e14-82ad-aac87f323503",
+      "result_id": "7dab210d-ba3f-4a3d-8961-3dddfa5c8e81"
+    },
+    {
+      "claim_id": "36176b78-c3c0-49e2-aa47-2ee8aa4a81bf",
+      "result_id": "7dab210d-ba3f-4a3d-8961-3dddfa5c8e81"
+    },
+    {
+      "claim_id": "3c4393e3-68de-4e5d-b2a9-a57f7d2fe00e",
+      "result_id": "7dab210d-ba3f-4a3d-8961-3dddfa5c8e81"
+    },
+    {
+      "claim_id": "92ed7ece-1819-4c43-be4d-97577715805e",
+      "result_id": "7dab210d-ba3f-4a3d-8961-3dddfa5c8e81"
+    },
+    {
+      "claim_id": "39a9a90f-aa67-4747-a03c-73c7fe2bd973",
+      "result_id": "7dab210d-ba3f-4a3d-8961-3dddfa5c8e81"
+    },
+    {
+      "claim_id": "6d8d6bef-98ac-49a4-8a45-d2c33a8175a3",
+      "result_id": "7dab210d-ba3f-4a3d-8961-3dddfa5c8e81"
+    },
+    {
+      "claim_id": "7302ea18-4e57-41cd-b1f3-0c768464c588",
+      "result_id": "8f42f8cb-ddf7-4133-abff-a2f471a8ffd1"
+    },
+    {
+      "claim_id": "065ab3fc-b05a-4f4a-a999-17417f951c28",
+      "result_id": "8f42f8cb-ddf7-4133-abff-a2f471a8ffd1"
+    },
+    {
+      "claim_id": "f71aa31b-d841-4681-959e-60b5639d969f",
+      "result_id": "8f42f8cb-ddf7-4133-abff-a2f471a8ffd1"
+    },
+    {
+      "claim_id": "df7539f7-865d-4c5b-8b01-1af6aa54dc5c",
+      "result_id": "8f42f8cb-ddf7-4133-abff-a2f471a8ffd1"
+    },
+    {
+      "claim_id": "b92f1e02-ce29-4bda-b43e-23b9867d65f2",
+      "result_id": "8f42f8cb-ddf7-4133-abff-a2f471a8ffd1"
+    },
+    {
+      "claim_id": "44eaf405-0a48-4d3b-8dff-048450173e87",
+      "result_id": "8b83a486-fb42-4ba5-947f-0d793bca22e4"
+    },
+    {
+      "claim_id": "46ea69a3-6012-4337-bc3f-c2936d1f2bda",
+      "result_id": "8b83a486-fb42-4ba5-947f-0d793bca22e4"
+    },
+    {
+      "claim_id": "3d41ecec-6469-47f8-810d-199ee433a831",
+      "result_id": "8b83a486-fb42-4ba5-947f-0d793bca22e4"
+    },
+    {
+      "claim_id": "85fcb90d-2ef6-4e2c-aac6-cfd1474a2fac",
+      "result_id": "8b83a486-fb42-4ba5-947f-0d793bca22e4"
+    },
+    {
+      "claim_id": "0a808f45-d1de-4c1d-8771-1f8e8fc34393",
+      "result_id": "8b83a486-fb42-4ba5-947f-0d793bca22e4"
+    },
+    {
+      "claim_id": "ad4ada73-421c-4954-abaa-67a78e9d2b2d",
+      "result_id": "8b83a486-fb42-4ba5-947f-0d793bca22e4"
+    },
+    {
+      "claim_id": "20c1b621-ed92-46c7-beac-66ae4bc732cc",
+      "result_id": "52045151-bfa8-4179-b2d6-21e4fe162082"
+    },
+    {
+      "claim_id": "ec8b4d83-856c-4db6-a11d-685c10d86d72",
+      "result_id": "52045151-bfa8-4179-b2d6-21e4fe162082"
+    },
+    {
+      "claim_id": "754414b7-58a4-4af0-9096-cc9ca0e42f29",
+      "result_id": "52045151-bfa8-4179-b2d6-21e4fe162082"
+    },
+    {
+      "claim_id": "c41890c2-70c7-4b1b-a759-7f566f93b6c5",
+      "result_id": "52045151-bfa8-4179-b2d6-21e4fe162082"
+    },
+    {
+      "claim_id": "e6ef345a-30b9-4e5d-9c02-7dadc2c5408c",
+      "result_id": "52045151-bfa8-4179-b2d6-21e4fe162082"
+    },
+    {
+      "claim_id": "955885ad-e587-4d4e-a2db-2dbaf8cc6353",
+      "result_id": "52045151-bfa8-4179-b2d6-21e4fe162082"
+    },
+    {
+      "claim_id": "de05b1ac-8c22-432f-bb2c-56a43aa8c76b",
+      "result_id": "52045151-bfa8-4179-b2d6-21e4fe162082"
+    },
+    {
+      "claim_id": "4ef97b2f-6f6f-409c-8734-e806dcd0754c",
+      "result_id": "52045151-bfa8-4179-b2d6-21e4fe162082"
+    },
+    {
+      "claim_id": "b91de737-dbf2-4e1d-933c-0e7b86e286a9",
+      "result_id": "c2995613-be47-487a-848f-644d05803da1"
+    },
+    {
+      "claim_id": "3b82bfa1-f7fd-4475-8a07-f68cc35a31e2",
+      "result_id": "c2995613-be47-487a-848f-644d05803da1"
+    },
+    {
+      "claim_id": "6aa7309b-72af-4ef7-8527-52dd55690503",
+      "result_id": "c2995613-be47-487a-848f-644d05803da1"
+    },
+    {
+      "claim_id": "7228e49e-3a57-4af9-b765-edab9d0f3622",
+      "result_id": "c2995613-be47-487a-848f-644d05803da1"
+    },
+    {
+      "claim_id": "87cf47ed-a88c-4a49-bb9f-5e1349cb7201",
+      "result_id": "c2995613-be47-487a-848f-644d05803da1"
+    },
+    {
+      "claim_id": "4683f366-a014-450f-bace-a77fd9421df5",
+      "result_id": "c2995613-be47-487a-848f-644d05803da1"
+    },
+    {
+      "claim_id": "de0a788f-de99-4184-baa1-31ea561c727d",
+      "result_id": "c2995613-be47-487a-848f-644d05803da1"
+    },
+    {
+      "claim_id": "da412b3c-4cb6-4379-9dc9-21e6cead6e06",
+      "result_id": "232e19b6-c668-47d9-887e-6eb356ea5d5f"
+    },
+    {
+      "claim_id": "352a847b-d04a-409c-987d-ca3d5622121a",
+      "result_id": "232e19b6-c668-47d9-887e-6eb356ea5d5f"
+    },
+    {
+      "claim_id": "a8d4dcac-700e-4295-8dfd-044376e4fba1",
+      "result_id": "232e19b6-c668-47d9-887e-6eb356ea5d5f"
+    },
+    {
+      "claim_id": "7606b27d-14ab-4181-94d2-d81899b84b51",
+      "result_id": "232e19b6-c668-47d9-887e-6eb356ea5d5f"
+    },
+    {
+      "claim_id": "2f063ea0-5edf-4481-8891-abcd002d3a64",
+      "result_id": "232e19b6-c668-47d9-887e-6eb356ea5d5f"
+    },
+    {
+      "claim_id": "9cd30c55-56d6-4b0a-89bd-1e65fa9d47a7",
+      "result_id": "b326507b-ac11-4eb6-9d75-3905b4e2faea"
+    },
+    {
+      "claim_id": "aee66920-f7a6-4f61-888e-e96b10637aac",
+      "result_id": "b326507b-ac11-4eb6-9d75-3905b4e2faea"
+    },
+    {
+      "claim_id": "dd6390f7-2ac7-42d2-92cd-25694411e56e",
+      "result_id": "b326507b-ac11-4eb6-9d75-3905b4e2faea"
+    },
+    {
+      "claim_id": "177efe6d-5673-4dc8-8776-dfcaa13476c1",
+      "result_id": "b326507b-ac11-4eb6-9d75-3905b4e2faea"
+    },
+    {
+      "claim_id": "a7ddaaa4-d8bd-4e34-80eb-f3c8b5592e31",
+      "result_id": "b326507b-ac11-4eb6-9d75-3905b4e2faea"
+    },
+    {
+      "claim_id": "6ed0a101-016d-42d1-aa69-7d04559d0689",
+      "result_id": "b326507b-ac11-4eb6-9d75-3905b4e2faea"
+    },
+    {
+      "claim_id": "27b2d9b7-3bdc-4eae-89a8-ee160399dfa0",
+      "result_id": "b326507b-ac11-4eb6-9d75-3905b4e2faea"
+    },
+    {
+      "claim_id": "fe55484d-97cc-44f0-b10d-79a63255ab35",
+      "result_id": "949a0697-bfc1-4cc4-a762-9544ec7a7527"
+    },
+    {
+      "claim_id": "f6208f45-fa7f-419a-8ba6-b1bf2bc0daf3",
+      "result_id": "949a0697-bfc1-4cc4-a762-9544ec7a7527"
+    },
+    {
+      "claim_id": "f7943234-722e-44f1-a8fa-334ff8a201e4",
+      "result_id": "949a0697-bfc1-4cc4-a762-9544ec7a7527"
+    },
+    {
+      "claim_id": "3b9be313-47ed-445a-8380-189903acc720",
+      "result_id": "949a0697-bfc1-4cc4-a762-9544ec7a7527"
+    },
+    {
+      "claim_id": "c5617240-2217-4e11-8b2d-958c540cd27c",
+      "result_id": "949a0697-bfc1-4cc4-a762-9544ec7a7527"
+    },
+    {
+      "claim_id": "b8afa8dd-563c-4bc2-bc36-bf21b9bb150b",
+      "result_id": "949a0697-bfc1-4cc4-a762-9544ec7a7527"
+    },
+    {
+      "claim_id": "fad23456-1a4f-4007-84ac-a28a75cacd82",
+      "result_id": "949a0697-bfc1-4cc4-a762-9544ec7a7527"
+    },
+    {
+      "claim_id": "4df0b0dd-a38b-41bd-ae55-c10135c3aecd",
+      "result_id": "36d94d0b-7246-4336-b981-97125375d82c"
+    },
+    {
+      "claim_id": "93f0ff97-bb29-427a-a95a-35ffd3347231",
+      "result_id": "36d94d0b-7246-4336-b981-97125375d82c"
+    },
+    {
+      "claim_id": "5f8e1d85-9893-4679-b60e-f7e843dd49c9",
+      "result_id": "36d94d0b-7246-4336-b981-97125375d82c"
+    },
+    {
+      "claim_id": "348d4c9d-8d3b-4fb7-8c46-bca99f8796a6",
+      "result_id": "5d1951e7-18ae-4223-935d-9cc4ac45a2b6"
+    },
+    {
+      "claim_id": "9de23cca-3be3-46f3-a3c1-8a1363018fee",
+      "result_id": "5d1951e7-18ae-4223-935d-9cc4ac45a2b6"
+    },
+    {
+      "claim_id": "52c2938b-f669-46e7-818e-c221f5dd9948",
+      "result_id": "5d1951e7-18ae-4223-935d-9cc4ac45a2b6"
+    },
+    {
+      "claim_id": "b6143d1f-9a1a-4106-9ac6-0b46de1a004c",
+      "result_id": "5d1951e7-18ae-4223-935d-9cc4ac45a2b6"
+    },
+    {
+      "claim_id": "3d55f412-907d-4f77-9b6b-f9005cd0b336",
+      "result_id": "5d1951e7-18ae-4223-935d-9cc4ac45a2b6"
+    },
+    {
+      "claim_id": "2d1a0cec-4688-487e-8822-8fa61b754b51",
+      "result_id": "5d1951e7-18ae-4223-935d-9cc4ac45a2b6"
+    },
+    {
+      "claim_id": "8a021633-64e5-4d2c-b014-afd404a36468",
+      "result_id": "5d1951e7-18ae-4223-935d-9cc4ac45a2b6"
+    },
+    {
+      "claim_id": "a88e4fcd-fab0-4ce1-9df9-d1c42dded5b5",
+      "result_id": "08fb1898-5aa9-4f06-8742-227a9ac509f2"
+    },
+    {
+      "claim_id": "4f58afbb-68a0-45e9-bf85-f719424d7508",
+      "result_id": "08fb1898-5aa9-4f06-8742-227a9ac509f2"
+    },
+    {
+      "claim_id": "131dc720-aee4-4253-823b-fb1b7c4e8e55",
+      "result_id": "08fb1898-5aa9-4f06-8742-227a9ac509f2"
+    },
+    {
+      "claim_id": "5c865eb2-0c2e-4b3e-bb21-65bf0b81936d",
+      "result_id": "08fb1898-5aa9-4f06-8742-227a9ac509f2"
+    },
+    {
+      "claim_id": "bd4727eb-213a-4af0-999c-0eec54abed80",
+      "result_id": "08fb1898-5aa9-4f06-8742-227a9ac509f2"
+    },
+    {
+      "claim_id": "f843780c-4261-42ed-be68-a5cc98e07c4b",
+      "result_id": "08fb1898-5aa9-4f06-8742-227a9ac509f2"
+    },
+    {
+      "claim_id": "20e9278e-504d-48d3-83e3-509e3e0534ff",
+      "result_id": "08fb1898-5aa9-4f06-8742-227a9ac509f2"
+    },
+    {
+      "claim_id": "c77338fc-cf1e-48c4-a138-94c50d202d03",
+      "result_id": "08fb1898-5aa9-4f06-8742-227a9ac509f2"
+    }
+  ],
+  "comparisons": []
+}

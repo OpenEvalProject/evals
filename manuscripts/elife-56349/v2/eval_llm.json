@@ -1,0 +1,323 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Individual cells perform chemotaxis inefficiently in noisy, shallow gradients, showing high variance and diffusive movement. In contrast, adhering cell clusters perform efficient collective chemotaxis through self-organized information transfer, with cells in clusters migrating in longer, more directed straight lines toward the gradient source despite individual cells having noisy measurements and similar instantaneous speeds to isolated cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C69 collectively demonstrate through simulation data (Figures 3, 4) that single cells are inefficient at chemotaxis while clusters excel. The mechanistic explanation is well-supported by quantitative measures including MSD analysis, trajectory analysis, and speed measurements. The data consistently show that collective behavior emerges from cell-cell interactions rather than individual improvements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C70"
+    ],
+    "result": "Collective chemotaxis emerges through a self-organized streaming mechanism where cells push and pull each other via persistent migration, causing alignment into streams that preferentially orient toward the gradient. This mechanism does not simply average individual contributions and operates independently of the chemotactic signal itself.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C70 describe the mechanistic basis of collective chemotaxis supported by simulation observations (Video 4, Appendix 1.3-1.4). The finding that cluster speed saturates and streaming occurs without chemotactic signal (C59) provides strong evidence for an emergent self-organization mechanism. The visual and quantitative data converge on a coherent explanation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C20",
+      "C73",
+      "C74",
+      "C77",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C87",
+      "C88",
+      "C119",
+      "C120"
+    ],
+    "result": "In evolutionary simulations with seasonally changing environments, multicellularity (high adhesion) evolves when seasons are sufficiently long (\u03c4s \u2265 40\u00d710\u00b3 MCS), allowing clusters time to reach resources. For short seasons (\u03c4s \u2264 20\u00d710\u00b3 MCS), a unicellular dispersal strategy evolves where non-adhering cells spread across the field over multiple seasons, with some reaching resources by chance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20, C73-C88, C119-C120 describe the main evolutionary findings supported by Figure 5 and Videos 5-7. The model demonstrates clear transitions between strategies based on season duration, with mechanistic explanations for why each strategy succeeds in its regime. The evolutionary steady states are well-documented, though the model's limited mutational space (only adhesion evolves) constrains generality.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C132",
+      "C133",
+      "C137"
+    ],
+    "result": "Evolutionary bistability occurs for intermediate season durations (20\u00d710\u00b3 \u2264 \u03c4s \u2264 40\u00d710\u00b3 MCS) due to interference competition between unicellular and multicellular strategies. The resident population physically excludes invading mutants from resources, preventing mutual invasion and creating two meta-stable evolutionary states that resist reversal.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C101, C132-C133, C137 describe bistability supported by competition experiments (Figure 6) showing spatial exclusion dynamics. The mechanistic explanation through interference competition is well-demonstrated, though the model's lack of cell dispersal between seasons may artificially strengthen this effect. The authors acknowledge this limitation and provide reasoning for why bistability would persist even with dispersal (C136).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C107",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C121",
+      "C138",
+      "C160",
+      "C161"
+    ],
+    "result": "The model demonstrates that undifferentiated multicellularity can evolve without direct selection for group-level traits or division of labor. Selection pressure for multicellularity emerges from the structure of the environment and the emergent collective chemotaxis capability, with fitness defined only at the individual cell level based on proximity to resources.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C39, C107, C115-C118, C121, C138, C160-C161 establish the key conceptual contribution. The model design explicitly avoids fitness benefits for being in groups (C38), yet multicellularity evolves due to emergent collective properties. However, the model's limitation (C116-C117) that only adhesion can evolve means selection for multicellularity can only occur because clusters always perform better at chemotaxis, which somewhat constrains the generality of the finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C152"
+    ],
+    "result": "The evolution of multicellularity is robust to changes in gradient shape, steepness, noise levels, and the specific mechanism of collective chemotaxis. Results hold even when implementing an alternative chemotaxis mechanism based on concentration sensing and contact inhibition of locomotion rather than gradient sensing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C95, C152 describe robustness tests documented in multiple appendices. The finding that results hold with an alternative chemotaxis mechanism (C95, Appendix 3.1) is particularly important for generality. These robustness checks strengthen confidence in the main findings, though full details are in appendices rather than main text.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C64",
+      "C72"
+    ],
+    "result": "Chemotactic migration improves with cell size because larger cells perceive a larger area of the chemotactic signal. However, cell size is constrained by factors such as metabolic complexity and cell division mechanisms, motivating the model assumption of fixed cell size.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C64 is supported by simulations in Appendix 1.7, while C72 provides biological justification from literature. This establishes why the model focuses on adhesion evolution rather than cell size evolution, though it represents a simplification of the actual evolutionary landscape available to cells.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C134",
+      "C135",
+      "C136"
+    ],
+    "result": "Evolutionary bistability may explain why many unicellular organisms possess adhesion proteins but remain unicellular, and protects multicellular organization from evolutionary reversal over a range of environmental conditions. Spatial self-organization provides initial non-genetic robustness that can be stabilized by later adaptations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C102-C103, C134-C136 make broader evolutionary interpretations. While C103 and C133 are supported by the bistability results, C102 is speculative about real organisms. C136 is explicitly speculative about model behavior with dispersal. These represent reasonable hypotheses extending from the model but lack direct empirical support.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145"
+    ],
+    "result": "The model is reminiscent of Dictyostelium discoideum's aggregate phase, where clusters move directionally while individual cells inefficiently identify direction. However, the model differs by lacking long-range chemical signaling (cAMP waves) and dispersal phases present in D. discoideum's life cycle.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C139-C145 compare the model to D. discoideum with appropriate citations. The comparison is fair, acknowledging both similarities and important differences. C145 is a reasonable suggestion for future work. This contextualizes the model within real biological systems while being clear about its simplifications.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151"
+    ],
+    "result": "The model exemplifies the 'many wrongs' principle where individual direction errors are corrected through cell interactions. Unlike previous models with rigid clusters or explicit alignment rules, gradient information transfer emerges from collective streaming in deformable cell clusters without explicit information-sharing mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C146-C151 position the model relative to previous work with appropriate citations. The distinction from rigid cluster models (C148) and models requiring explicit alignment rules (C130, C149) is well-supported. C151 is speculative but reasonable given the robustness to alternative chemotaxis mechanisms (C152).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "Background claims establishing that multicellularity evolved independently multiple times, is driven by increased cell-cell adhesion (supported by comparative genomics and experimental evolution), and that the genetic toolkit for multicellularity pre-dates multicellular species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C7 provide standard background supported by appropriate citations to established literature. These are well-accepted facts in the field that motivate the study but are not results of this work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "Previous theoretical work has shown multicellularity can evolve through various mechanisms including cooperation, differential assortment, reproductive trade-offs, division of labor, spatial organization effects, and collective information integration. Earlier models found multicellular structuring can emerge without direct selection when cells are destabilized by internal dynamics or toxic environments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C16, C108-C114 summarize prior modeling work with appropriate citations. These accurately represent the literature and position the current work within the broader theoretical landscape. Not results of this study but important context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C17",
+      "C22",
+      "C23",
+      "C26",
+      "C29",
+      "C30",
+      "C31",
+      "C33",
+      "C34",
+      "C36",
+      "C162",
+      "C166",
+      "C172",
+      "C173"
+    ],
+    "result": "Model implementation details: The Cellular Potts Model represents cells as deformable objects with explicit shape and size, cell movement arises from stochastic boundary fluctuations, adhesion is encoded through complementary receptor-ligand bitstrings, persistent migration biases movement toward previous direction, and fitness depends on distance to gradient peak.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17, C22-C23, C26, C29-C31, C33-C34, C36, C162, C166, C172-C173 describe model implementation. These are methodological descriptions that are internally consistent and well-documented in Materials and Methods. The CPM formalism is established (C17, C22) and the specific implementations are clearly defined.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C123",
+      "C124",
+      "C125"
+    ],
+    "result": "A model limitation is that resources are modeled implicitly through gradients and season duration. While precise seasonality might be realistic for periodic phenomena (tides, daily cycles), other resources are more stochastic. The authors expect evolution would converge to average resource duration if stochasticity is not extreme.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C123-C125 acknowledge a model limitation. C123 is a valid limitation. C124 is reasonable speculation about when the model assumptions are realistic. C125 is an untested prediction about model behavior with stochastic resources. These represent honest assessment of model scope but lack empirical validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131"
+    ],
+    "result": "The evolution of multicellularity can be compared to evolution of collective dynamics like herding. Previous work showed aggregating strategies evolve in response to clumped food and mixed strategies evolve when gradient sensing and social behavior are costly. The current model differs by having group movement emerge from deformable cell interactions rather than requiring explicit alignment rules.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C126-C131 draw parallels to collective behavior evolution with appropriate citations (Wood and Ackland 2007, Guttal and Couzin 2010). The comparison is apt and the distinction about emergent vs. explicit alignment (C130-C131) is well-supported. This contextualizes the work within broader evolutionary dynamics.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C153",
+      "C154",
+      "C155",
+      "C156",
+      "C157"
+    ],
+    "result": "The authors chose the Cellular Potts Model to explore spatial cell interactions and implement evolvable receptor-ligand systems. The visual nature of results may guide future analytical work, and the model's simplicity makes results testable in vitro.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C153-C154 explain modeling choices (reasonable justification). C155-C157 are speculative about future work and experimental testability. While the model is relatively simple, actual in vitro testing would face significant challenges not addressed. These are reasonable aspirations but not demonstrated capabilities.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C104",
+      "C158",
+      "C159"
+    ],
+    "result": "Multicellular organisms may incur fitness costs not present at the unicellular level. A bottom-up approach to studying multicellularity evolution has been emphasized and may have applications to clinically relevant problems like collective cancer cell migration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C104 is supported by citations but not tested in the main model (only in Appendix 4.1). C158 is supported by citations. C159 is highly speculative about clinical applications without demonstrating actual relevance to cancer. These represent context and aspirations rather than demonstrated results.",
+    "result_type": "MINOR"
+  }
+]

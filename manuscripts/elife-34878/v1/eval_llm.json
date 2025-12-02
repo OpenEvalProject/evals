@@ -1,0 +1,238 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C40",
+      "C41",
+      "C42",
+      "C50",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C110",
+      "C117",
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "Unassigned UAG codons in the GRO are resolved through multiple mechanisms including near-cognate suppression (glutamine, tyrosine, aspartic acid, valine), extensive ribosomal frameshifting (from -3 to +19 nucleotides), and tmRNA-mediated tagging, as demonstrated by mass spectrometry analysis of GFP constructs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C4, C40-C42, C50, C57-C65, C110, C117, C125-C127 collectively provide strong mass spectrometry evidence for the three resolution mechanisms. The data show >30 unique C-terminal peptide sequences (C57), including known and novel suppressors (C59-C60), frameshifts across multiple reading frames (C61), and tmRNA tags (C65). The experimental design with DD-tag mutation (C49) and appropriate controls (GRO.DD.prfA+) strengthens the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C72",
+      "C128",
+      "C131"
+    ],
+    "result": "Five peptides detected by mass spectrometry (LEHHHHHHEKP, LEHHHHHHQLD, LEHHHHHHQQR, LEHHHHHHSLK, LEHHHHHHYQR) suggest loss of translational fidelity following mistranslation at the UAG codon, representing potential in vivo evidence of post-peptidyl transfer quality control.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C68-C69, C72, C128, C131 present intriguing data, but the interpretation remains speculative. While the authors provide reasonable arguments against alternative explanations (transcription errors, mRNA degradation), they acknowledge multiple possible mechanisms (RF2 termination, ArfA/ArfB rescue) without definitive evidence distinguishing between them. The claim of 'loss of translational fidelity' is inferred rather than directly demonstrated, and only 5 of 14 peptides meeting the scoring threshold support this interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C43",
+      "C44",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C92"
+    ],
+    "result": "Deletion of ssrA (tmRNA) in the GRO partially to fully restores protein expression from UAG-ending transcripts, with ssrA deletion alone producing 31 \u00b5g/ml GFP compared to 8.0 \u00b5g/ml in the unmodified GRO, and ssrA/arfB double deletion fully restoring expression to 70 \u00b5g/ml.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C43-C44, C83-C87, C92 are well-supported by western blot quantification data with appropriate statistical analysis (p-values reported). The use of biological replicates (n=3), calibration curves for quantification, and multiple controls (UAA-GFP, ECNR2) provides robust evidence. The graded restoration of protein expression with single versus double deletions supports the mechanistic interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C45",
+      "C95",
+      "C96",
+      "C97",
+      "C101",
+      "C106",
+      "C108",
+      "C109",
+      "C111"
+    ],
+    "result": "Deletion of ssrA restores propagation of UAG-containing plasmids (RK2, F) and viruses (\u03bb) in the GRO, demonstrating that tmRNA-mediated rescue and nascent peptide degradation is the primary mechanism obstructing horizontal gene transfer in recoded organisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C7, C45, C95-C97, C101, C106, C108-C109, C111 are strongly supported by conjugation efficiency data (RK2: 99% vs 87%; F: 1000-fold increase), growth rate measurements (6% vs 28% doubling time increase), and viral titer data (~10^8 PFU/mL restored). Statistical significance is reported (p-values), and the consistency across multiple HTGEs (two plasmids, one phage) strengthens the conclusion about the causal mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C81",
+      "C82",
+      "C88"
+    ],
+    "result": "Expression of UAG-GFP impairs GRO fitness (54% increase in doubling time, 8% reduction in max OD600), while deletion strains show differential effects with ssrA deletions reducing maximum OD600 (34-61% reduction) and arfB deletion increasing doubling time by 50%.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C82, C88 are supported by growth curve data with biological replicates (n=3). The quantitative measurements of doubling time and OD600 are appropriate fitness metrics. However, the mechanistic interpretations (C80, C82, C88) are somewhat speculative, though reasonably inferred from the data. The consistency of effects across strains and conditions supports the overall findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C98",
+      "C99",
+      "C102",
+      "C103"
+    ],
+    "result": "ArfB deletion has complex effects on HTGE propagation, halving RK2 conjugation efficiency and reducing F conjugation in double deletion strains, suggesting ArfB contributes to ribosomal rescue at native expression levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C91, C98-C99, C102-C103 are supported by conjugation and growth data, though the effects are more subtle than ssrA deletion. The statistical significance is reported (p-values), and the interpretation is consistent with prior in vitro work (C104-C105). However, the lack of statistical significance for protein production (C90) and the complexity of double deletion effects (C102) introduce some uncertainty about ArfB's precise role.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C137",
+      "C139",
+      "C140",
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C152",
+      "C153"
+    ],
+    "result": "The ubiquity of tmRNA homologs (>99% of bacterial genomes) suggests genomic recoding with unassigned codons is a broadly applicable strategy for conferring genetic isolation and impairing horizontal gene transfer in diverse organisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C8-C9, C137, C139-C140, C144-C148, C152-C153 are largely speculative extrapolations from the E. coli data. While the ubiquity of tmRNA homologs (C8, C146) is well-established by citations, the inference that this mechanism will work similarly in other organisms (C139, C147) is not directly tested. The claims about broad applicability (C9, C144-C145, C152-C153) are reasonable hypotheses but lack experimental validation beyond E. coli.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C149",
+      "C150",
+      "C151"
+    ],
+    "result": "The barrier to HGT from unassigned stop codons can be breached by tmRNA deletion, and unassigned sense codons would likely provide stronger barriers than stop codons due to production of nonfunctional truncated peptides.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C149 is directly supported by the experimental data showing tmRNA deletion restores HTGE propagation. Claims C150-C151 are speculative but represent logical inferences based on the demonstrated mechanism. The reasoning that sense codon termination would produce truncated peptides is sound, though untested in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C73"
+    ],
+    "result": "Double deletion of ssrA and arfA is synthetic lethal in the GRO.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C73 is supported by the authors' failed attempts to generate the double deletion and citation to prior work (Chadani et al., 2010) demonstrating synthetic lethality. This is a straightforward negative result that constrains the experimental design.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Mutation of the tmRNA degradation tag from AA to DD increases protein half-life, enabling detection of tmRNA-tagged peptides by mass spectrometry in both UAG- and UAA-ending constructs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C51 are supported by citations to prior work (C49) and mass spectrometry data (C50). The detection of DD-tags in both UAG and UAA constructs (C50) is consistent with prior reports of tmRNA targeting overexpressed proteins (C51). This methodological approach is well-validated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "The GRO model elucidates the mechanistic contributions of different ribosomal rescue systems and the functional significance of regulatory relationships between ssrA, ArfA, and ArfB.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C115 are supported by the comprehensive deletion analysis showing differential effects of ssrA, arfA, and arfB deletions on protein expression and HTGE propagation. The data are consistent with prior work on regulatory relationships (C113), and the systematic comparison across deletion strains provides new mechanistic insights.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "The GFP construct used lacks three of four elements required for programmed frameshifting (exact P-site pairing, no Shine-Dalgarno sequence), yet extensive frameshifting occurs, distinguishing this from programmed frameshifting mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C119-C124 are supported by sequence analysis (C122-C123) and comparison to prior work on programmed frameshifting (C119-C120). The analysis demonstrates that the observed frameshifting is distinct from programmed mechanisms, strengthening the novelty of the findings. However, claim C121 (UAG slows translation) is somewhat inferential.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C116",
+      "C134"
+    ],
+    "result": "Future work using ribosomal profiling and investigation of translational fidelity loss is proposed to further characterize the mechanisms of translation resolution at unassigned codons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C116 and C134 are reasonable proposals for future work based on the current findings. These are appropriate suggestions that acknowledge limitations of the current methodology and propose complementary approaches.",
+    "result_type": "MINOR"
+  }
+]

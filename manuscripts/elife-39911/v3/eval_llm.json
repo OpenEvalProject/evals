@@ -1,0 +1,388 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "The MAD platform successfully enables purification of aged yeast cells with expected division rates and controlled bead-to-cell ratios. Pre-growth after biotin labeling improves bead uniformity, purified mothers aged at ~2 hr division rates (38 hr: haploid = 15.5, diploid = 17.6 bud scars; expected ~19), and maintaining bead-to-cell ratios <20:1 is critical for normal growth.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C12 and C110-C112 provide converging experimental evidence that the MAD platform works as designed. Bud scar counting (C11, C12) validates the aging rate, and the bead optimization data (C10, C112) demonstrates technical refinement. The slight discrepancy between observed (15.5-17.6) and expected (~19) bud scars is acknowledged but reasonable given experimental variation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C13",
+      "C14"
+    ],
+    "result": "The MAD platform can distinguish differential aging between strains, as demonstrated by sir2\u0394 mothers showing ~2-fold lower viability than WT mothers, consistent with SIR2's known role in suppressing rDNA hyper-recombination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13 and C14 together demonstrate that MAD can detect known lifespan differences. The viability data (C13) aligns with established knowledge about SIR2 function (C14), validating the platform's ability to measure aging phenotypes across genotypes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "The aging transcriptome in MAD-purified cells recapitulates known hallmarks of yeast aging, including strong activation of the environmental stress response (ESR), upregulation of NTS transcripts from the rDNA locus, enrichment for metabolism/stress/mitochondrial genes, and downregulation of ribosome biogenesis and translation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C23 collectively demonstrate that MAD-purified cells show expected aging signatures. The RNA-seq data (C15, C18, C19, C23) align with prior literature (C16, C17, C20, C21, C22), validating the biological relevance of MAD-aged cells. The consistency with multiple independent studies strengthens confidence in the platform.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "Transposon upregulation is identified as one of the earliest and strongest age-related transcriptional changes, with TY transposon genes highly enriched in ESR-independent age-induced gene clusters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C26 identify a specific early aging signature. While C25 acknowledges prior reports of age-dependent transposon expression, C26 provides new temporal resolution showing this is among the earliest changes. The RNA-seq data (Figure 2) supports this conclusion, though the mechanistic significance remains to be determined.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C27",
+      "C28"
+    ],
+    "result": "ADR1, a carbon source-responsive transcription factor, is an early-age transcriptional responder that may regulate the age-induced shift toward gluconeogenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27 and C28 identify ADR1 as an early responder and propose a mechanistic link to metabolic changes. C27 is supported by current data and prior literature (Kamei et al., 2014), while C28 provides context from Wierman et al., 2017. The connection is plausible but remains speculative without functional validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C29",
+      "C30"
+    ],
+    "result": "Low abundance transcripts and non-coding RNAs tend to increase with age, with non-coding transcripts typically falling into age-induced clusters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29 and C30 describe a general pattern in the aging transcriptome. The negative correlation between initial abundance and age-related induction (C29) is clearly shown in Figure 2\u2014figure supplement 2B. The non-coding RNA enrichment (C30) is consistent with Sen et al., 2015 and visible in Figure 2.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Contrary to Hu et al. (2014), universal upregulation of gene expression is not a general feature of aging cells, with the discrepancy potentially explained by batch effects in the previously published data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C33 challenge a prior model. The current data (C32) clearly shows both up- and down-regulated genes. The re-analysis of Hu et al. data (C33, Figure 2\u2014figure supplement 3) provides compelling evidence for batch effects, particularly in the '4.19' batch. This is a significant correction to the field.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Aging transcriptomes are remarkably similar across WT, sir2\u0394, ubr2\u0394, and fob1\u0394 strains, with sir2\u0394 showing differences primarily in magnitude per replication event rather than in which genes change, and with bud scar age differences reflecting the percentage of actively dividing cells rather than growth rate per se.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C41 demonstrate transcriptional conservation across genotypes. The RNA-seq data (C40, C41, Figure 3\u2014figure supplement 4) shows high correlation despite different lifespans. The interpretation of bud scar differences (C37, C39) is logical given known biology (C38), though it relies on inference rather than direct measurement of cell cycle status.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Age-dependent gene expression changes are strongly correlated with growth rate-dependent changes, with correlation coefficients of r = -0.67 for ESR-induced genes and r = -0.48 for all genes, underscoring the close relationship between aging, stress, and growth rate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C44 quantify the relationship between aging and growth rate using published GRS data from Brauer et al. The correlations are clearly shown in Figure 3B, and the observation of decreased SRP component expression (C42) adds a specific example. The statistical analysis is appropriate and the conclusion well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Age-dependent changes independent of growth rate/ESR are enriched for SRP clients (signal sequence-containing proteins), which are significantly upregulated with age (p<10\u207b\u2075\u00b9) while SRP components decrease, suggesting a negative feedback loop. SCR1 (SRP RNA) increases from ~5% to ~10% of the transcriptome with age, and ER-associated degradation components are upregulated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C49 identify a novel aging signature. The enrichment analysis (C45, C46) is statistically robust, and the negative correlation between SRP components and clients (C47) across the deleteome dataset provides mechanistic insight. The SCR1 increase (C48) and ERAD upregulation (C49) suggest ER stress, creating a coherent model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Subtelomeric genes are more likely to increase in expression with age, and this positional effect correlates with growth rate dependence (negative GRS), consistent with prior reports of age-dependent loss of subtelomeric silencing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C52 describe a positional effect on aging gene expression. The data (Figure 3\u2014figure supplement 7A,B) clearly show the telomere proximity effect and its correlation with GRS. The connection to prior literature (C50) provides mechanistic context, though the underlying cause (SIR redistribution vs. general stress response) remains unclear.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Global chromatin structure does not deteriorate significantly with age when accounting for dead cell contamination. PMA treatment to eliminate dead cell DNA reveals that apparent age-dependent increases in nucleosomal accessibility and decreases in occupancy are artifacts of dead cell contamination, with nucleosomal occupancy remaining constant when comparing PMA-treated samples.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C65 present a major technical and conceptual advance. The ATAC-seq data with and without PMA (Figures 4A-D) clearly demonstrate that dead cell DNA creates artifactual accessibility signals. The NucleoATAC analysis (C61-C63) quantitatively shows constant occupancy with PMA treatment. This directly challenges Hu et al. (2014) and is well-supported by multiple lines of evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Despite stable global chromatin structure, local changes occur with age: approximately 12% of genomic bins significantly change accessibility (q<10\u207b\u00b3), with gene bodies tending to open, promoters tending to close, and origins of replication (ARS) strongly losing accessibility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C70 describe specific local chromatin changes. The ATAC-seq analysis (Figure 5A,B, Figure 4\u2014figure supplement 4) clearly shows these patterns. The statistical threshold (q<10\u207b\u00b3) is appropriate, and the differential behavior of gene bodies, promoters, and ARS elements is well-documented in the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C104"
+    ],
+    "result": "The strong closure of ARS elements with age, similar to the transition from reductive to oxidative phase of the metabolic cycle, suggests that DNA replication is inhibited in aging mothers, potentially due to a smaller fraction of cells in S-phase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71, C72, and C104 connect ARS closure to cell cycle status. The comparison to metabolic cycle data (C71, Figure 4\u2014figure supplement 4E) provides supporting evidence. However, the interpretation (C72, C104) is inferential and would benefit from direct cell cycle measurements. The hypothesis is plausible but not definitively proven.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C73",
+      "C74"
+    ],
+    "result": "Genomic regions that increase in accessibility with age are enriched for binding sites of cell cycle regulators (Ndd1, Swi4/6, Fkh1/2, Sbp1) and amino acid biosynthesis regulators (Arg81, Leu3, Gcn4), with all enzymes in leucine biosynthesis and nearly all in arginine biosynthesis gaining accessibility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73 and C74 identify specific transcription factor enrichments. The analysis (Figure 5B) is based on published ChIP data and shows clear enrichments. The complete pathway coverage for leucine and arginine biosynthesis (C74) is striking and suggests coordinated regulation, though the functional significance requires validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Aging slopes for chromatin accessibility changes are highly correlated across WT, ubr2\u0394, and fob1\u0394 strains, while sir2\u0394 shows significantly higher slopes interpreted as a faster aging rate, though the overall pattern of changes remains the same.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C77 demonstrate conservation of chromatin aging patterns. The ATAC-seq analysis (Figure 4\u2014figure supplement 4F) shows clear correlations. The interpretation of sir2\u0394 slopes as faster aging (C76) is reasonable given the known short lifespan, and the maintained correlation (C77) suggests a common underlying process.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "WT strains show a ~2-fold increase in ATAC-seq insertional density at the rDNA locus with age, driven primarily by copy number expansion (6-fold increase by qPCR) rather than increased accessibility. The signal returns to normal in daughters, demonstrating asymmetric retention consistent with ERC accumulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C82 characterize rDNA changes with age. The ATAC-seq and qPCR data (Figure 6A,B) clearly show copy number expansion exceeds accessibility changes. The asymmetric division (C81) and interpretation as ERCs (C82) are well-supported, though direct visualization of ERCs would strengthen the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "Sir2\u0394 cells have slightly higher rDNA copy number (~20%) but much higher ATAC-seq coverage (2-fold) at young ages, with relative copy number increasing ~10-fold and ATAC-seq signal only 2-fold at older ages, suggesting that an initial open chromatin state may promote instability and higher copy number with age.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C83 and C84 present clear data, but C85 is speculative. The disproportionate increase in copy number vs. accessibility in sir2\u0394 is intriguing, but the interpretation that open chromatin promotes instability requires additional experiments (e.g., manipulating chromatin state independently of SIR2). The data are consistent with the model but don't prove causation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "Fob1\u0394 cells begin with ~15% higher rDNA copy number and ~20% higher accessibility than WT, consistent with Fob1p's role in Sir2p recruitment, but experience much more modest age-related increases in both ATAC-seq signal (1.4-fold vs 2.5-fold) and copy number (1.6-fold vs 6-fold), indicating partial defects in ERC formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C89 characterize fob1\u0394 rDNA dynamics. The data (Figure 6) clearly show the baseline differences and attenuated age-related changes. The interpretation as partial ERC defects (C89) is consistent with Lindstrom et al., 2011 and the data, though the unexpected baseline increase raises questions about the mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C106",
+      "C107"
+    ],
+    "result": "Ubr2\u0394 cells show WT-equivalent rDNA profiles when young but display an attenuated rDNA phenotype with age (ATAC-seq 1.7 vs 2.5, copy number 2.3 vs 6), phenocopying fob1\u0394 and providing provocative evidence that UBR2 is involved in ERC formation/rDNA stability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90, C91, C106, and C107 identify a novel connection between UBR2 and rDNA stability. The data (Figure 6) clearly show the phenocopy of fob1\u0394. This is unexpected given UBR2's known role in proteasome activation, and the inference (C107) is reasonable but requires mechanistic follow-up to determine if this is direct or indirect.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "All genotypes show nucleolar enlargement with age, but the increases are more pronounced in WT and sir2\u0394 than in ubr2\u0394 and fob1\u0394, correlating with the qPCR and ATAC-seq measurements of rDNA changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C94 provide orthogonal validation of rDNA phenotypes. The microscopy data (Figure 7) clearly show differential nucleolar enlargement across genotypes, correlating with molecular measurements. This strengthens the conclusion that ubr2\u0394 and fob1\u0394 have reduced rDNA instability, though quantification could be more rigorous.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "The dominant transcriptional feature of aging is ESR activation (stress induction, ribosome biogenesis repression). While MSN2/MSN4 deletion doesn't reduce RLS on rich medium but is required for lifespan extension under glucose restriction, the authors favor a model where aging-associated growth slowing drives ESR activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C98 synthesize the transcriptional findings. The ESR activation (C95) is well-documented in the data. The MSN2/MSN4 observations (C96, C97) from Medvedik et al., 2007 provide context. The proposed model (C98) is speculative but consistent with the data and Jo et al., 2015, though it remains to be tested whether growth slowing is cause or consequence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C99",
+      "C100"
+    ],
+    "result": "Subtelomeric regions are fast-evolving and enriched for stress, cell surface, and carbohydrate metabolism genes, with speculation that high evolvability permits rapid adaptation to novel stresses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99 and C100 cite Brown et al., 2010 for both observations and speculation. These are background claims that provide context for the current findings on subtelomeric gene expression with age. The claims accurately represent the cited work but don't constitute new results from this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "While histone mRNAs and proteins decline with age and a model exists proposing that nucleosome loss causes universal transcriptional upregulation, the modified ATAC-seq method is expected to become generally useful for exploring genomic changes in mixed-viability samples.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101 and C102 describe prior work and models, while C103 is a forward-looking statement about the PMA-ATAC-seq method. The expectation (C103) is reasonable given the clear demonstration that PMA eliminates dead cell artifacts, though broader adoption will depend on validation in other systems.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C105"
+    ],
+    "result": "ERC formation may be a common cause of replicative senescence in S. cerevisiae across numerous strain backgrounds and environments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C105 is a speculative synthesis based on the rDNA data across multiple genotypes. The observation that all tested strains show rDNA copy number increases (though to different extents) supports this generalization, but the claim remains tentative without testing additional strain backgrounds and environmental conditions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C108",
+      "C109"
+    ],
+    "result": "Combining MAD with single-cell analysis could facilitate identification of distinct aging trajectories and distinguish subtle causative changes from stress responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108 and C109 are forward-looking statements about future applications. The expectation is reasonable given that MAD provides aged cells and single-cell methods can resolve heterogeneity, but these remain untested hypotheses. The citations to Bendall et al., 2014 and Trapnell et al., 2014 provide precedent for trajectory analysis.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,2031 @@
+{
+  "submission": {
+    "id": "9800caec-9cfd-45e7-8c7c-60c49a7585ed",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T11:34:49.060169Z",
+    "updated_at": "2025-12-02T11:34:49.060169Z"
+  },
+  "content": [
+    {
+      "id": "36ee755e-b347-4692-a8d7-a2fa982dec30",
+      "submission_id": "9800caec-9cfd-45e7-8c7c-60c49a7585ed",
+      "content_type": "manuscript",
+      "content_text": "# Metacontrol of decision-making strategies in human aging\n\n## Authors\n\n- Florian Bolenz<sup>1</sup> ([ORCID: 0000-0003-2213-1071](https://orcid.org/0000-0003-2213-1071)) \u2020\n- Wouter Kool<sup>2</sup>\n- Andrea MF Reiter<sup>1</sup>\n- Ben Eppinger<sup>1</sup>\n\n### Affiliations\n\n1. Chair of Lifespan Developmental Neuroscience, Faculty of Psychology Technische Universit\u00e4t Dresden Dresden Germany\n2. Department of Psychology Harvard University Cambridge United States\n3. Department of Psychological & Brain Sciences Washington University in St. Louis St. Louis United States\n4. Wellcome Centre for Human Neuroimaging University College London London United Kingdom\n5. Max Planck UCL Centre for Computational Psychiatry and Ageing Research London United Kingdom\n6. Department of Psychology Concordia University Montreal Canada\n7. PERFORM centre Concordia University Montreal Canada\n\n\u2020 Corresponding author\n\n## Abstract\n\nHumans employ different strategies when making decisions. Previous research has reported reduced reliance on model-based strategies with aging, but it remains unclear whether this is due to cognitive or motivational factors. Moreover, it is not clear how aging affects the metacontrol of decision making, that is the dynamic adaptation of decision-making strategies to varying situational demands. In this cross-sectional study, we tested younger and older adults in a sequential decision-making task that dissociates model-free and model-based strategies. In contrast to previous research, model-based strategies led to higher payoffs. Moreover, we manipulated the costs and benefits of model-based strategies by varying reward magnitude and the stability of the task structure. Compared to younger adults, older adults showed reduced model-based decision making and less adaptation of decision-making strategies. Our findings suggest that aging affects the metacontrol of decision-making strategies and that reduced model-based strategies in older adults are due to limited cognitive abilities.\n\n## Introduction\n\nIn order to cope efficiently with environmental demands, humans as well as other biological and artificial agents have to engage in metacontrol, that is they constantly have to decide how to allocate their limited computational resources (Boureau et al., 2015; Gershman et al., 2015; Griffiths et al., 2019). Recent research in psychology and neuroscience has advanced our understanding of metacontrol in humans (e.g., Kurzban et al., 2013; Shenhav et al., 2017), however it is still unclear how metacontrol changes across the lifespan. In our current study, we investigate how aging affects the metacontrol of decision-making strategies. For this purpose, we focus on model-free and model-based decision making (Daw et al., 2011; Dolan and Dayan, 2013) \u2013 two strategies that are reflective of a broader distinction between automatic and deliberative modes of information processing as put forward by prominent dual-system theories (Balleine and O'Doherty, 2010; Kahneman, 2003; Sloman, 1996).\n\nWithin the computational framework of reinforcement learning (Sutton and Barto, 1998), model-free decision making represents the strategy to repeat actions that previously led to desirable outcomes and to avoid actions that previously led to undesirable outcomes, corresponding to Thorndike\u2019s law of effect (Thorndike, 1911). Model-free control only requires a single value update and therefore it is computationally efficient and does not rely strongly on cognitive resources. However, it can be inflexible and inaccurate because it requires direct experience with the consequences of an action in order to update the corresponding reward expectation.\n\nAnother strategy for decision making is to store an internal model about contingencies in the environment (e.g., how taking an action leads from one state to another and how rewards are distributed across states) and to use this model to predict the consequences of available actions (Tolman, 1948). Computationally, this strategy has been formalized as model-based decision making. This strategy can account for sudden changes in the environment more quickly and may be more accurate in complex environments; however, it comes with the cost of higher cognitive demands.\n\nIt is commonly assumed that model-free and model-based strategies involve different cognitive mechanisms and compete for behavioral control (Daw et al., 2005; Kool et al., 2017a). Indeed, humans show signs of both strategies during decision making (Daw et al., 2011; Gl\u00e4scher et al., 2010), and they dynamically regulate the balance between model-free and model-based control on a moment-to-moment basis. It has been suggested that this metacontrol of decision-making strategies is based on a cost-benefit analysis (Kool et al., 2017b; Kool et al., 2018). This framework states that people weigh the cognitive costs of each decision-making strategy against its potential benefits in order to decide how to invest mental resources. For example, people increase model-based control when rewards are amplified (Kool et al., 2017b). Conversely, model-based control decreases when the task becomes more complex and thus model-based planning gets more effortful (Kool et al., 2018).\n\nOlder adults show reduced model-based control during decision making compared to younger adults (Eppinger et al., 2013). This finding could be explained by aging-related difficulties in representing the structure of the experimental task (i.e., the contingencies between actions and states in the task) which would limit the use of a task model to accurately predict future outcomes (Eppinger et al., 2015; H\u00e4mmerer et al., 2019). On the neurobiological level, difficulties in the representation of the task structure could result from structural decline of prefrontal and hippocampal regions (Raz et al., 2005; Resnick et al., 2003) that have been suggested to be involved in the encoding of mental task models (Koechlin, 2016; Schuck et al., 2016; Vikbladh et al., 2019).\n\nHowever, the observed reduction of model-based control in older adults does not necessarily have to be an impairment: The sequential decision-making task that is most frequently used to determine individual reliance on model-free versus model-based control (Daw et al., 2011) lacks a control-reward trade-off (Kool et al., 2016). That is, greater model-based control does not lead to higher pay-offs in the task compared to model-free control. When considering the greater cognitive costs that come with a model-based strategy, it may be optimal to engage in a model-free strategy, particularly for individuals with limitations in cognitive abilities such as older adults.\n\nIn the present study, we aimed to distinguish between these explanations for the finding that older adults show reduced model-based control. Specifically, we were interested in whether older adults continue to show reduced model-based control even if this strategy leads to better pay-offs than model-free decision making. For this purpose, we make use of a recent version of the sequential decision-making task that has a control-reward trade-off (Kool et al., 2016). If aging-related changes in model-based control are due to difficulties in representing the task structure, older adults should show reduced model-based control in this modified task. Alternatively, if the aging-related changes reported previously (Eppinger et al., 2013) are caused by a reduced willingness to engage in a more effortful strategy without a related improvement in terms of rewards, reliance on model-based control should be aligned for both age groups when an association between model-based control and reward is introduced. Furthermore, previous studies have found that surprising transitions elicit a slowing of response times (Decker et al., 2016; Deserno et al., 2015; Shahar et al., 2019). If task structure representations become less accurate with aging, this should also be reflected in less differentiated responses to surprising and unsurprising transitions.\n\nIn order to investigate how aging affects the metacontrol of decision-making strategies, we compared the dynamic regulation of decision-making strategies between younger and older adults. To this end, we manipulated the magnitude of rewards across trials (Kool et al., 2017b). If older adults take into account differences in the benefits of model-based decision making just like younger adults do (Kool et al., 2017b), they should increase model-based control when rewards are amplified. Alternatively, if metacontrol is reduced in older adults, they should show less adaptation of model-based control to different reward magnitudes. Additionally, we added an experimental condition to the existing paradigm in which the task transition structure changes repeatedly. In this condition, participants constantly have to update their internal representation of the task which should inflict higher costs on model-based control. If younger and older adults take into account differences in the costs of model-based decision making, both age groups should decrease model-based control when the task transition structure becomes more variable. Alternatively, less adaptation of model-based control to the variability of the task structure in older adults would point to reduced meta-control with aging.\n\n## Results\n\nWe analyzed the behavior of 62 younger adults (age range: 18\u201330 years, mean age: 22.7 years) and 62 older adults (age range: 57\u201380 years, mean age: 70.2 years) in a sequential decision-making task that dissociates model-free and model-based decision making. Importantly, in this task higher model-based decision making leads to better outcomes in terms of monetary reward (Kool et al., 2016). In brief, every trial started randomly in one of two first-stage states that offered a choice between two spaceships (Figure 1A). This choice determined which second-stage state, a red or a purple planet, would be encountered. For each first-stage state, one spaceship would lead to the red planet, whereas the other would lead to the purple planet. Each planet afforded the opportunity to earn reward, represented by a certain number of pieces of \u2018space treasure\u2019. The amount of space treasure was independent for each planet and drifted over the course of the experiment so that participants had to constantly update their reward expectations.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/49154/elife-49154-fig1-v2.jpg)\n\n**Figure 1.:** (A) State transition structure of the task. (B) Trial structure. At the beginning of each trial, a stakes cue signaled the stakes condition of the current trial (low-stakes trial vs. high-stakes trials). Participants started in one of two first-stage states where they selected one spaceship. They then transitioned to a planet (second stage) where they received a certain amount of space treasure. Space treasure was converted into points depending on the stakes condition. (C) In stable-transitions blocks, spaceships maintained their destination planets throughout a block of 80 trials. In variable-transitions blocks, every 6 to 14 trials, one pair of spaceships swapped their destination planets.\n\nThis task is able to dissociate model-free from model-based decision making. To see this, note that each first-stage state offers an identical choice between transitioning to the red and the purple planet. A pure model-based decision maker is able to use this equivalence to transfer experiences learned in one starting state to the other, because it plans over the transition structure toward the second-stage goals. For example, an unexpectedly good outcome on the previous trial should affect choices on the next trial, regardless of whether it starts in the same starting state, because the agent assigns value to the spaceships by combining the transition structure with the second-stage reward expectations. A pure model-free decision maker does not consult the transition structure of the task, but instead relies on action-reward contingencies. Therefore, reward outcomes on the previous trial only affect choices on the current trial if the same actions are available. In other words, a model-free agent is unable to transfer experiences obtained after one pair of spaceships to the other pair (Doll et al., 2015). Here, we use this distinction between these strategies in order to test our hypotheses.\n\nTo vary the cost and benefits associated with model-based decision making in the two age groups, we introduced two factorial manipulations to this task: a stakes manipulation and a transition stability manipulation. First, similar to previous studies (Kool et al., 2017b; Patzelt et al., 2019), every trial started with a randomly picked cue that indicated whether it was a low-stakes or a high-stakes trial (Figure 1B). In low-stakes trials, participants obtained one point for every piece of space treasure that they received and in high-stakes trials, participants obtained five points for every piece of space treasure. Second, we manipulated the stability of the task transition structure (i.e., the mapping of spaceships to planets) in blocks of 80 trials (Figure 1C): Throughout stable-transitions blocks, all spaceships maintained the same destination planet. In variable-transitions blocks, every 6 to 14 trials, the pair of spaceships in one of the first-stage states swapped their destination planets. These reversals of the transition structure required participants repeatedly to update their internal model of the task and thus increased the demands on model-based decision making. At the beginning of each trial block, we informed participants about the transition stability condition for the upcoming trials.\n\nWe compared the overall baseline-corrected reward obtained between age groups (Figure 2A). An effect-coded hierarchical regression analysis revealed an age-difference in reward ($\\beta\u00af_{agegroup}$\u00a0=\u00a00.25, 95% credible interval (CI) = [0.17, 0.33]), indicating that younger adults performed on average better than older adults.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/49154/elife-49154-fig2-v2.jpg)\n\n**Figure 2.:** (A) Reward per trial (baseline-corrected). Gray dots indicate values for individual participants and bars indicate group means with error bars representing standard error of the mean. (B) Degree of model-based control. Model-based weights are depicted for the complete sample of younger and older adults as a function of stakes condition and transition variability condition. Gray dots indicate values for individual participants. Colored dots indicate group means as predicted by the hierarchical regression model with error bars representing Bayesian 95% credible intervals.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/49154/elife-49154-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Model-based weights are depicted for the complete sample of younger and older adults as a function of stakes condition and transition variability condition. Gray dots indicate values for individual participants. Colored dots indicate group means as predicted by the hierarchical regression model with error bars representing Bayesian 95% credible intervals.\n\n### Reinforcement-learning modeling\n\nWe used a hybrid reinforcement-learning model to assess the individual reliance on model-free versus model-based decision making. In this reinforcement-learning model, a model-free learner learns independent reward expectations for each of the four spaceships in the first-stage states as well as for each of the second-stage planets and updates these reward expectations based on reward prediction errors. In contrast, a model-based learner learns a transition structure that represents to which planet the choice of a spaceship will lead. By means of this knowledge about the task structure, model-based decision making can use the reward expectations associated with the two planets when selecting a spaceship.\n\nIn order to capture individual differences in the reliance on these two strategies, the hybrid reinforcement-learning model includes a model-based weight that determines their relative contribution. Model-based weights close to 0 reflect model-free decision making and model-based weights close to one reflect model-based decision making. Intermediate values of the model-based weight indicate that behavior reflects a combination of both decision-making strategies. When fitting the model, the model-based weight was estimated as a free parameter. In order to test for differences in decision-making strategies between task conditions, we estimated for every participant four model-based weights: one for each combination of stakes condition and transition stability condition (see Materials\u00a0and\u00a0methods section for details).\n\nWe compared model-based weights (Figure 2B) with an effect-coded hierarchical regression analysis. This analysis revealed evidence for a main effect of age group ($\\beta\u00af_{agegroup}$\u00a0=\u00a00.11, 95% CI = [0.05, 0.16]), indicating that older adults employed reduced model-based control compared to younger adults. This effect replicates previous findings (Eppinger et al., 2013). We found evidence for a main effect of stakes condition ($\\beta\u00af_{stakes}$\u00a0=\u00a00.05, 95% CI = [0.01, 0.08]), indicating increased model-based control in high-stakes trials. The analysis also revealed a main effect of transition stability condition ($\\beta\u00af_{transition}$\u00a0=\u00a00.04, 95% CI = [0.01, 0.07]), indicating that model-based control was lower during variable-transitions blocks compared to stable-transitions blocks. Finally, we obtained evidence for an interaction effect of age group and stakes condition ($\\beta\u00af_{agegroup\\timesstakes}$\u00a0=\u00a00.12, 95% CI = [0.06, 0.18]) as well as and interaction effect of age group and transition stability condition ($\\beta\u00af_{agegroup\\timestransition}$\u00a0=\u00a00.09, 95% CI = [0.03, 0.15]), which indicates that the effects of both stakes and transition stability condition were reduced in older adults.\n\nIn the findings reported above, we only allowed the model-based weight to vary between experimental conditions. Thus, any potential changes in processes other than the reliance on different decision-making strategies would be forced on this parameter. To account for this potential confound we also fitted an exhaustive version of the reinforcement-learning model that varied all model parameters between experimental conditions (cf. Table S1 in Supplementary file 1). When analyzing differences in the model-based weights in this exhaustive model, we found a main effect of age group ($\\beta\u00af_{agegroup}$\u00a0=\u00a00.12, 95% credible interval (CI) = [0.07, 0.17]) and a main effect of stakes condition ($\\beta\u00af_{stakes}$\u00a0=\u00a00.04, 95% CI = [0.01, 0.07]), replicating the results from the standard model. Furthermore, consistent with the results from the standard model, there was an interaction effect of age group and stakes condition ($\\beta\u00af_{agegroup\\timesstakes}$\u00a0=\u00a00.07, 95% CI = [0.01, 0.14]) as well as and interaction effect of age group and transition stability condition ($\\beta\u00af_{agegroup\\timestransition}$\u00a0=\u00a00.12, 95% CI = [0.06, 0.19]). Thus, this analysis shows that the observed differences in model-based weights cannot be completely accounted for by decision processes other than model-based control.\n\nAdditionally, we found reduced parameter estimates for the transition learning rate in older adults ($\\beta\u00af_{agegroup}$\u00a0=\u00a00.22, 95% CI = [0.14, 0.31]). The transition learning rate indicates how quickly observations about changes in the task transition structure are incorporated into the mental representation of the task (but see Materials\u00a0and\u00a0methods section for an alternative interpretation). The lower transition learning rates suggest that older adults have less accurate representations of the task transition structure than younger adults. Further parameters of the standard version of the reinforcement-learning model are reported in Table S2 in Supplementary file 1.\n\nTo sum up, these findings show reduced reliance on model-based decision making in older adults even in a task where model-based decision making leads to better outcomes. Beyond this, older adults also showed reduced metacontrol of decision-making strategies, that\u00a0is less dynamic adaptation of decision-making strategies when their associated costs and benefits change.\n\n### Performance-matched sample\n\nTo investigate whether the reduced adaptation of model-based decision making was due to differences in task performance between age groups, we analyzed the metacontrol of decision-making strategies in a performance-matched subsample of participants. The matching was achieved by selecting the participants of both age groups that were the closest in terms of their mean baseline-corrected reward. This procedure yielded a subsample of 26 younger adults and 26 older adults (see Figure 3A for the distribution of reward in this subsample). In this performance-matched subsample, a hierarchical regression analysis of model-based weights (Figure 3B) showed evidence for a main effect of stakes condition ($\\beta\u00af_{stakes}$\u00a0=\u00a00.07, 95% CI = [0.01, 0.12]) and for an interaction effect of age group and stakes condition ($\\beta\u00af_{agegroup\\timesstakes}$\u00a0=\u00a00.17, 95% CI = [0.07, 0.28]). This indicates a reduced effect of stakes condition in older adults. There was no conclusive evidence for any other main effect or interaction effect.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/49154/elife-49154-fig3-v2.jpg)\n\n**Figure 3.:** (A) Reward per trial (baseline-corrected) for participants in the performance-matched sample. Gray dots indicate values for individual participants and bars indicate group means. (B) Degree of model-based control for younger and older adults in the performance-matched sample as a function of stakes condition and transition variability condition. Gray dots indicate values for individual participants. Colored dots indicate group means as predicted by the hierarchical regression model with error bars representing Bayesian 95% credible intervals.\n\nThis matching procedure comes with the downsides of reduced statistical power and potentially biased samples. To control for these potential confounds, we analyzed model-based weights in the total sample with a hierarchical regression analysis while including mean baseline-corrected reward (task performance) and all its interaction terms with stakes condition and transition stability condition as covariates. Consistent with the results in the performance-matched subsample, we observed a main effect of stakes condition ($\\beta\u00af_{stakes}$\u00a0=\u00a00.13, 95% CI = [0.07, 0.19]) and an interaction effect of age group and stakes condition ($\\beta\u00af_{agegroup\\timesstakes}$\u00a0=\u00a00.18, 95% CI = [0.11, 0.25]), which reflects the reduced effect of stakes condition in older adults.\n\nTogether, these analyses replicate the finding of reduced metacontrol in older compared to younger adults while controlling for differences in overall task performance between age groups.\n\n### Age differences in transition revaluations\n\nTo further examine how the changes in the task transition structure affected choice behavior in the two age groups, we compared trials in which participants observed a change in the task transition structure for the first time (revaluation trials) with all other trials from variable-transitions blocks (non-revaluation trials). In line with previous results of studies using similar sequential decision-making tasks, we expected slowed reactions immediately after surprising transitions (Deserno et al., 2015; Decker et al., 2016; Shahar et al., 2019), that is for second-stage responses in revaluation trials. A dummy-coded hierarchical regression analysis of log-transformed reaction times at the second stage of the task (Figure 4A) revealed a positive slope for older adults ($\\beta\u00af_{old}$\u00a0=\u00a00.32, 95% CI = [0.26, 0.39]), reflecting slowed reaction times for older adults compared to younger adults in non-revaluation trials, and a positive slope for revaluation trials ($\\beta\u00af_{revaluation}$\u00a0=\u00a00.15, 95% CI = [0.11, 0.18]), reflecting that younger adults slowed reaction times in revaluation trials compared to non-revaluation trials. Moreover, we found evidence for an interaction effect of revaluation trial and age group ($\\beta\u00af_{old\\timesrevaluation}$\u00a0=\u00a0-0.09, 95% CI = [-0.14, -0.05]). This interaction indicates that younger adults showed a greater slowing of reaction times on revaluation trials compared to non-revaluation trials than older adults and suggests that younger adults were more sensitive to surprising changes of the task structure than older adults.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/49154/elife-49154-fig4-v2.jpg)\n\n**Figure 4.:** (A) Reaction times at the second stage during variable-transitions blocks for trials in which a change of the task transition structure was observed for the first time (revaluation trials) and all other trials (non-revaluation trials). Gray dots indicate mean values for individual participants. Colored dots indicate group means as predicted by the hierarchical regression model with error bars representing Bayesian 95% credible intervals. (B) Relationship between model-based control and reaction time slowing in revaluation trials. Solid line represents prediction from the hierarchical regression model and dashed lines indicate 95% confidence region.\n\nTo control whether slowed reaction times in revaluation trials could be explained by reduced response vigor due to lower reward expectations (Deserno et al., 2015), we derived trial-wise estimates for second-stage reward expectations from the reinforcement-learning model and included them as a predictor for log-transformed reaction times in the regression analysis. We still found a positive slope for revaluation trials ($\\beta\u00af_{revaluation}$\u00a0=\u00a00.15, 95% CI = [0.11, 0.18]) which was reduced for older adults ($\\beta\u00af_{old\\timesrevaluation}$\u00a0=\u00a0-0.09, 95% CI = [-0.14, -0.05]). The effect of reward expectations was comparably small ($\\beta\u00af_{expecation}$\u00a0=\u00a0-0.01, 95% CI = [-0.02, -0.00]) and there was no evidence that it was affected by age ($\\beta\u00af_{old\\timesexpecation}$\u00a0=\u00a00.01, 95% CI = [-0.01, -0.02]). Thus, slowed reaction times in revaluation trials cannot be explained by lower reward expectations in these trials.\n\nThe degree of model-based control modulated the slowing of reaction times in revaluation trials (Figure 4B). A hierarchical regression analysis of log-transformed reaction times showed an interaction of (low-stakes, variable-transitions) model-based weights and revaluation trials ($\\beta\u00af_{model-based\\timesrevaluation}$\u00a0=\u00a00.17, 95% CI = [0.04, 0.30]). This interaction indicates that participants relied more on model-based decision making the more their reactions were slowed in revaluation trials. When running the hierarchical regression analysis separately for both age groups, this interaction was replicated for older adults ($\\beta\u00af_{model-based\\timesrevaluation}$\u00a0=\u00a00.17, 95% CI = [0.01, 0.33]) and with slightly weaker evidence for younger adults ($\\beta\u00af_{model-based\\timesrevaluation}$\u00a0=\u00a00.14, 95% CI = [-0.05, 0.33], with 93% of the posterior mass above zero). For younger adults, this interaction is consistent with previous findings (Deserno et al., 2015; Shahar et al., 2019; Decker et al., 2016). When performing the same analysis with model-based weights from high-stakes trials in variable-transitions blocks, we found similar interactions of model-based weights and revaluation trials although with weaker evidence for this interaction when analyzing both age groups separately (complete sample: $\\beta\u00af_{model-based\\timesrevaluation}$\u00a0=\u00a00.20, 95% CI = [0.07, 0.34]); older adults: $\\beta\u00af_{model-based\\timesrevaluation}$\u00a0=\u00a00.16, 95% CI = [-0.02, 0.33]), with 96% of the posterior probability mass above zero; younger adults: $\\beta\u00af_{model-based\\timesrevaluation}$\u00a0=\u00a00.11, 95% CI = [-0.10, 0.33], with 83% of the posterior probability mass above zero).\n\nThis association between model-based decision making and reaction slowing suggests that individual differences in the reliance on model-based decision making might be related to differences in the accuracy of the task structure representation.\n\n## Discussion\n\nPrevious findings suggest that older adults show reduced model-based control compared to younger adults (Eppinger et al., 2013). However, these findings are based on a task in which model-based control does not lead to more reward (Kool et al., 2016). Therefore, it remains unclear whether reduced model-based control with aging is due to limited cognitive capacities or a reduced willingness to engage in a more effortful strategy.\n\nTo address this issue, we tested younger and older adults in a decision-making task where model-based control pays off in terms of higher rewards. We found that older adults showed reduced model-based control compared to younger adults, even in a setting where model-based control leads to better outcomes. Thus, our findings suggest that reduced model-based control in older adults cannot be explained by a reduced willingness to engage in a cognitively effortful strategy when this effort does not pay off. Instead, the effect seems to reflect aging-related limitations in the cognitive processes involved in model-based control.\n\nPrevious studies did not investigate how aging affects metacontrol, that\u00a0is the dynamic adaptation of decision-making strategies to varying situational demands. Therefore, we manipulated the magnitude of rewards and the stability of the task transition structure throughout the task. In line with previous findings (Kool et al., 2017b; Patzelt et al., 2019), we found that younger adults showed increased model-based control when rewards were amplified, which suggests that they are more willing to incur the cost of planning when incentives are high. We also found that younger adults showed decreased model-based control when the task transition structure was variable, suggesting that repeated changes in the task transition structure increase the demands for model-based control, thus leading to a reduction of this more effortful strategy. We found that older adults\u2019 metacontrol was less sensitive to these changes in costs and benefits. They showed less adaptation of model-based control to increased reward magnitudes and to increased demands on structure learning or working memory. Crucially, we also observed reduced metacontrol in a subsample of younger and older adults who were matched for overall reward obtained. This indicates that the reduced adaptation of decision-making strategies is not solely due to older adults having more difficulties with performing the task. These findings point to specific aging-related deficits in the metacontrol of decision-making strategies.\n\nWhen interpreting our findings, it is important to consider the cross-sectional design of our study. Future research should use longitudinal study designs to better isolate aging-related effects from other cohort-related factors.\n\n### Model-based control and task structure representations in older adults\n\nThe reduction of model-based control in older adults may reflect aging-related difficulties in representing the structure of the task. This notion is supported by two further findings: First, older adults showed reduced transition learning rates compared to younger adults. In the reinforcement learning model, the transition learning rate indicates how quickly the mental representation of the task is updated when a change in the task transition structure is observed (e.g., when choosing the blue spaceship now leads to the purple plant while previously it led to the red planet). Since in our task, a new transition reliably signaled a prolonged change in the task transition structure, an optimal decision-maker should immediately update the mental representation of the task accordingly. Lower transition learning rates in older adults indicate that they incorporated information about changes in the task transition structure more slowly (see Materials\u00a0and\u00a0methods section for an alternative interpretation), which suggests a more blurred representation of the task structure in older adults.\n\nSecond, older adults showed less slowing of second-stage responses in revaluation trials. That is, in trials with a surprising transition due to a change in the task transition structure, older adults showed less slowing of the responses immediately following the surprising transition. Slowed reaction times after surprising transitions have already been reported by other studies using sequential decision-making tasks (Decker et al., 2016; Deserno et al., 2015; Shahar et al., 2019) and could be explained by inhibition of motor and cognitive processes after surprising events (Wessel and Aron, 2017). Therefore, the less differentiated responses after revaluation trials and non-revaluation trials in older adults suggest that they had a less accurate representation of the task. Consistent with this line of reasoning, we found that older adults who showed more slowing on the revaluation trials, also showed more model-based control.\n\nThere are other explanations for slowed reaction times in response to surprising transitions. For example, they could indicate decreased response vigor due to lower reward expectations (Deserno et al., 2015) or higher decision conflict due to less discriminable rewards (Shahar et al., 2019). However, we found that the effect of slowed reaction times after surprising transitions remained even after controlling for model-derived reward expectations. This speaks against the idea that this effect can be explained by reduced response vigor alone. Furthermore, in contrast to the decision-making task used in previous studies, we found slowed reaction times even when there is only one available option at the time of responding (i.e., at the second stage of a trial). Decision conflict would require different choice options and hence cannot account for slowed responses in our study. Therefore, in line with a previous study (Decker et al., 2016), we interpret slowed reaction times after surprising transitions as reflecting knowledge of the task structure which was less accurate in older adults.\n\nWhat are the potential neurobiological foundations of reduced model-based control in older adults? It has been suggested that aging-related alterations in neuromodulation reduce the signal-to-noise ratio in neural information processing and thus reduce representational distinctiveness (Li et al., 2001; Li and Rieckmann, 2014). This would make it more difficult to maintain and use a representation of the task structure which would impair model-based decision making. Furthermore, prefrontal and hippocampal brain regions are important for the representation of task structures (Koechlin, 2016; Schuck et al., 2016; Vikbladh et al., 2019). Older adults show structural decline of these brain regions (Raz et al., 2005; Resnick et al., 2003), which might limit their ability to use a task model for model-based decision making. Indeed, underrecruitment of prefrontal brain regions in older adults is linked to impaired learning of task contingencies (Eppinger et al., 2015). Moreover, the importance of prefrontal brain regions for the representation of task structure is also in line with findings that transient inhibition of prefrontal areas leads to a reduction in model-based control and in the learning of sequential relations during value-based decision making (Smittenaar et al., 2013; Wittkuhn et al., 2018). Future research should attempt to link aging-related neurobiological changes more directly to differences in model-based decision making.\n\n### Reduced metacontrol in older adults\n\nIn addition to overall reductions in model-based control, we also found that older adults showed reduced adaptation of decision-making strategies to varying reward magnitudes and structure learning or working memory demands. One interpretation of these results could be in terms of aging-related decline in dopaminergic neuromodulation (B\u00e4ckman et al., 2006) which has been suggested to be involved in the regulation of effortful cognitive processes (Cools, 2016; Westbrook and Braver, 2016). Alternatively, reduced metacontrol might be related to aging-related tissue loss in brain regions such as dorsal anterior cingulate cortex (Resnick et al., 2003) that have been implicated in the modulation of cognitive effort (Shenhav et al., 2013; Silvetti et al., 2018).\n\nOne surprising finding is that older adults showed less adaptation of model-based decision making to differences in the stability of the task transition structure. Why should \u2013 in contrast to the effects in younger adults \u2013 additional demands to maintain an accurate representation of the task transition structure not further reduce older adults\u2019 reliance on model-based decision making? It is conceivable that the comparatively blurred representation of the task structure in older adults in the variable-transitions condition (reflected by lower transition learning rates) could facilitate the use of a (in return, constricted) model-based strategy. In fact, when assuming perfect learning of changes in the task transition structure, we find that even older adults show differences in model-based weights as a function of the transition stability condition (compare to Table S3 in Supplementary file 1 and Figure 2\u2014figure supplement 1). This indicates that older adults show less signs of a model-based strategy with perfect transition learning in variable-transitions blocks than in stable-transitions blocks. This analysis might suggest that the increased demands imposed by repeated changes in the task transition structure could affect other cognitive mechanism that in turn modulate how effortful model-based decision making is.\n\nMetacontrol of decision-making strategies seems to be subject to considerable individual differences. Some participants and especially some older adults showed the opposite of the expected pattern, that is reduced model-based weights in high-stakes compared to low-stakes trials. One possible explanation for this observation is that these participants responded to amplified reward magnitudes with an increased reliance on model-free reward expectations, potentially trying to compensate deficits in increasing reliance on model-based decision-making strategies. Since model-based weights reflect the relative influence of decision-making strategies, increased reliance on model-free strategies would \u2013 everything else being equal \u2013 result in lower model-based weights.\n\nOur results suggest that older adults are relatively insensitive to costs and benefits when arbitrating between decision-making strategies. However, a recent study by Yee et al. (2019) found that incentives boosted performance of both younger and older adults in a cognitive control paradigm, but that these effects are weaker and more gradual in older adults. To understand this difference, note that in our task, the stakes condition was randomly picked on each trial whereas Yee et al. (2019) varied incentives over longer blocks of trials. It is possible that older adults take longer to implement effective metacontrol and only show adaptation when task conditions remain stable over a longer period of time.\n\nIt is also possible that the older adults were aiming to optimize accuracy rather than reward or a net value of reward and cognitive costs. This would be consistent with the finding that older adults tend to maximize accuracy instead of trading off accuracy against response speed in a perceptual decision making task (Starns and Ratcliff, 2010). If older adults were primarily concerned with making an accurate choice, we would not expect different reward magnitudes to affect their reliance on model-based decision making. To investigate this explanation, a promising avenue for research might be to use neurophysiological measurements such as electroencephalography or pupillometry in order to assess the behavioral relevance of stake cues and outcome information to younger and older adults.\n\nIt could be argued that the reduced adaptation of model-based decision making to different reward magnitudes in older adults might reflect a general insensitivity to differences in reward in older adults rather than age differences in the metacontrol of decision-making strategies. We think that this alternative explanation is unlikely for two reasons: First, we found that the older adults showed modulation of other model parameters (representing differences in explorative behavior and choice perseveration) in response to the stakes condition, which suggests that they were not generally insensitive to amplified reward magnitudes. Second, we found that the same sample of older adults showed increased performance in response to amplified rewards in an independent cognitive control task. Thus, the age effects seem to be task- and process-specific and do not reflect a general insensitivity to reward. We describe these analyses in more detail in the Appendix 1.\n\nOur study does not address the mechanisms that drive the reduced amounts of metacontrol in older adults. Adapting controlled cognitive processes involves several component functions, such as monitoring information that signals the need to adapt cognitive processes, specification of which cognitive process should be executed and with what intensity, as well as the corresponding regulation of cognitive processes (Shenhav et al., 2013). Further studies are required to specify how these processes are affected by aging and contribute to weakened metacontrol.\n\nTo conclude, the present study investigated how aging affects model-based decision making and the metacontrol of decision-making strategies according to their costs and benefits. Older adults showed reduced model-based control even when it was associated with increased reward. Thus, our results suggest that aging-related reductions in model-based control reflect cognitive limitations rather than differences in motivation. Moreover, when compared to younger adults, older adults displayed reduced adaptation of decision-making strategies to differences in reward magnitudes and task demands. This cannot be explained in terms of decreased overall task performance, suggesting that the elderly may have specific deficits in the metacontrol of decision-making strategies.\n\n## Materials and methods\n\n### Participants\n\nWe tested 63 younger adults and 83 older adults for this study. We excluded data from 22 participants from data analysis: Data from one younger adult and one older adult were excluded because they were unable to respond on more than 50% of the trials in the decision-making task. Data from two older adults were excluded because they did not complete the decision-making task. Data from one older adult were excluded because of consistent perseverative choice behavior on the first stage of the task. Data from 17 older adults were excluded because of sub-threshold performance in a dementia screening test (Montreal Cognitive Assessment with a threshold of 26 points; Nasreddine et al., 2005). Thus, the effective sample included 62 younger adults (39 female, age range: 18\u201330 years, mean age: 22.7 years) and 62 older adults (32 female, age range: 57\u201380 years, mean age: 70.2 years). The size of the effective sample was geared to a previous aging study with a similar decision-making task (Eppinger et al., 2013).\n\nWe assessed participants on different cognitive and motivational variables. Working memory was assessed with the digit span test (forward and backward) (Wechsler, 1997), verbal intelligence was assessed with the Spot-A-Word test (Lindenberger et al., 1993), processing speed was assessed with the Identical Pictures test (Lindenberger et al., 1993) and need for cognition was assessed with the German Need for Cognition short-scale (Bless et al., 1994). Consistent with previous findings in larger population-based samples (Li et al., 2004), we found reduced fluid abilities (working memory, processing speed) but increased crystallized abilities (verbal intelligence) in older adults. Furthermore, we found no differences between age groups in the self-reported tendency to engage in and enjoy effortful cognitive activities (Need for Cognition). See Table 1 for details on the psychometric assessment.\n\n**Table 1.**\n Psychometric assessment of complete sample.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Variable</th>\n      <th>N assessed (younger/older adults)</th>\n      <th>Mean (SD) younger adults</th>\n      <th>Mean (SD) older adults</th>\n      <th>Bayes Factor*</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Working memory</td>\n      <td>62/61</td>\n      <td>18.42 (3.80)</td>\n      <td>15.95 (4.22)</td>\n      <td>31.88</td>\n    </tr>\n    <tr>\n      <td>Verbal intelligence</td>\n      <td>60/60</td>\n      <td>69.07% (11.82)</td>\n      <td>81.94% (5.71)</td>\n      <td>&gt;100</td>\n    </tr>\n    <tr>\n      <td>Processing speed (reaction times)</td>\n      <td>61/60</td>\n      <td>2032.17 s (315.87)</td>\n      <td>3319.93 s (516.42)</td>\n      <td>&gt;100</td>\n    </tr>\n    <tr>\n      <td>Processing speed (accuracy)</td>\n      <td>61/60</td>\n      <td>94.10% (6.02)</td>\n      <td>94.84% (5.48)</td>\n      <td>0.24</td>\n    </tr>\n    <tr>\n      <td>Need for cognition</td>\n      <td>61/59</td>\n      <td>82.18 (13.25)</td>\n      <td>81.44 (13.24)</td>\n      <td>0.20</td>\n    </tr>\n  </tbody>\n</table>\n\n_*Bayes Factors quantify the evidence in favor of one hypothesis (here: non-equal means) as opposed to a competing hypothesis (here: equal means). Commonly, Bayes Factors between 3 and 10 are considered as representing moderate evidence for the hypothesis and Bayes Factor above 10 as representing strong evidence for the hypothesis. Conversely, Bayes Factors between 1/3 and 1/10 represent moderate evidence for the competing hypothesis and Bayes Factors below 1/10 represent strong evidence for the competing hypothesis (Lee and Wagenmakers, 2013). We calculated Bayes Factors with the BayesFactors package (Morey et al., 2015)._\n\nAll participants were compensated with a baseline payment of 5 \u20ac per hour and an additional performance-related payment between 6.83 \u20ac and 9.41 \u20ac (10 cents for every 60 points obtained in the decision-making task). All participants gave informed written consent. The ethics committee of Technische Universit\u00e4t Dresden approved the study.\n\n### Sequential decision-making task\n\nEvery trial started with one of two different first-stage states that were identified by a pair of spaceships (see Figure 1). Spaceships were displayed side by side on the screen and each spaceship appeared on the left or the right side equally often. Throughout the experiment, pairings of spaceships remained constant. After selecting one spaceship, the participant transitioned to one of two second-stage states that were represented by two different planets (a red planet and a purple planet) and a corresponding alien. Both second-stage states were associated with a scalar reward (\u2018space treasure\u2019) that the participant received after selecting the alien. Similar to previous studies, the reward magnitude available in each second-stage state drifted over the course of the experiment (Gaussian random walks with mean \u03bc\u00a0=\u00a00, standard deviation \u03c3\u00a0=\u00a02 and reflecting boundaries at 0 and 9; reward values were rounded to integers).\n\nThe transition to the second-stage state (planet) was contingent on the choice of the spaceship on the first stage. In both first-stage states, the choice of one spaceship led to the red planet and the choice of the other spaceship led to the purple planet (i.e. the transition was deterministic). In stable-transitions blocks, the spaceships\u2019 destinations stayed the same over the course of the entire block. In contrast, during variable-transitions blocks, every 6 to 14 trials the spaceships in one of the two starting states swapped their destination. While participants were informed at the beginning of each trial block whether transitions were stable or variable, they were not informed when these changes would happen.\n\nAt the beginning of each trial, a stake cue informed the participant about the stakes condition of the current trial. The stakes condition determined how reward was converted into points. In low-stakes trials, the obtained reward was multiplied by a factor of 1. In high-stakes trials, the obtained reward was multiplied by a factor of 5. The total point count was displayed in the top-right corner of the screen during the entire experiment.\n\nThe experiment consisted of 320 trials that were divided into four blocks of 80 trials: two stable-transitions blocks and two variable-transitions blocks. Stable-transitions blocks and variable-transitions blocks alternated. In each block, half of the trials were low-stakes trials and the other half of the trials were high-stakes trials, appearing in random order and being counter-balanced over the two first-stage states.\n\nIn order to decrease variability in task performance between subjects, we created four trial sequences that determined the sequence of first-stage states, second-stage rewards, stakes conditions, and transition variability conditions. Each participant performed the task with one of these four trials sequences and trial sequences were counter-balanced across age groups. Across all trial sequences, the first-stage states and the reward trajectories for the two second-stage states were identical. Stakes condition and transition variability condition were counter-balanced across trial sequences.\n\nThe experiment was implemented in Matlab and run on a standard PC. Participants controlled the experiment with a computer keyboard. The left and the right spaceships were selected with the keys F and J, respectively, and the second-stage response was made using the space bar. If participants missed the response deadline of 3 s (first-stage state) or 2 s (second-stage state), the trial was aborted, no reward was obtained and the experiment proceeded with the next trial. Trials with missed responses were excluded from the analysis. Trials with missing second-stage responses were included in the parameter estimation of the reinforcement-learning model because they are potentially informative with respect to the changes in the transition structure. For younger adults, 0.2% of trials were aborted at the first stage and 1.2% were aborted at the second stage. For older adults, 1.6% of trials were aborted at the first stage and 2.1% were aborted at the second stage. If responses happened in time, the selected option was highlighted for the remaining time of the response window such that trial duration remained constant for all participants.\n\nPrior to the experiment, participants were instructed extensively about the reward distribution, the transition structure and the stakes manipulation. To ensure that participants understood the task structure, we asked participants to pick the correct spaceship leading to a given planet up to a performance criterion of 10 correct consecutive choices of the two planets. Furthermore, participants had to report the correct number of earned points (combination of reward magnitude and stakes cue) on 10 consecutive correct answers in a row. During this instruction procedure, they also completed 20 practice trials with stable transitions and 20 practice trials with variable transitions.\n\n### Computational model\n\nWe used an established hybrid reinforcement-learning model (Daw et al., 2011; Gl\u00e4scher et al., 2010; Kool et al., 2017b) to describe participants\u2019 behavior in the decision-making task. In the task, every trial t started in one of two first-stage states (s1,t) where one of two possible actions (a1,t) could be selected. Depending on the action, the participant deterministically transitioned to a second-stage state (s2,t) where only one action (a2,t) was available and a reward (rt) obtained. The model consisted of a model-free and a model-based learner that both learned an expectation of long-term future reward Q(s,a) for each combination of state and action.\n\nModel-free learner. We assumed that the model-free learner assigned an intermediate reward expectation of 4.5 (as the arithmetic mean of the minimum and the maximum possible reward) to all actions in all states at the beginning of the experiment. The model-free learner then used the SARSA(\u03bb) temporal difference learning algorithm (Rummery and Niranjan, 1994) to update reward expectations based on the discrepancy between the expected and experienced reward. In our task, this meant that at every stage, a reward prediction error \u03b4 was computed according to\n\n$$\n\\delta_{1,t}=Q_{MF}s_{2,t},a_{2,t}-Q_{MF}s_{1,t},a_{1,t}\n$$\n\n\n\n$$\n\\delta_{2,t}=r_{t}-Q_{MF}s_{2,t},a_{2,t}\n$$\n\nThis reward prediction error was then used to update reward expectations at the first and second stage:\n\n$$\nQ_{MF}s_{1,t},a_{1,t}\u2190Q_{MF}s_{1,t},a_{1,t}+\\alpha\\delta_{1,t}+\\alpha\\lambda\\delta_{2,t}\n$$\n\n\n\n$$\nQ_{MF}s_{2,t},a_{2,t}\u2190Q_{MF}s_{2,t},a_{2,t}+\\alpha\\delta_{2,t}\n$$\n\nHere, \u03b1 is the reward learning rate (ranging between 0 and 1) that determined how strongly new information was incorporated into the reward expectations. \u03bb is the eligibility trace decay (ranging between 0 and 1) that determined to what extent a reward prediction error affected the update of reward expectations for past actions (here, how the reward prediction error at the second stage affected the update of the reward expectations at the first stage).\n\nModel-based learner. The model-based learner predicted reward by learning a transition probability T(s2|s1,a1) that represented the probability of transitioning to the second-stage state s2 after selecting action a1 in the first-stage state s1. The reward expectations at the second-stage were then weighted by the transition probabilities:\n\n$$\nQ_{MB}s_{1,t},a_{1,t}=\\sums_{2}Ts_{2}s_{1,t},a_{1,t}Q_{MB}(s_{2},a_{2})\n$$\n\nModel-based reward expectations at the second stage are identical to second-stage model-free reward expectations because they are both an estimate of the immediate reward. Therefore, we set\n\n$$\nQ_{MB}s_{2,t},a_{2,t}=Q_{MF}s_{2,t},a_{2,t}\n$$\n\nGiven that all participants practiced the task with variable transitions, we assumed that participants started without knowledge of the correct initial transition structure, such that T(s2|s1,a1)=0.5 for all values of s1, a1, and s2. After transitioning to a second-stage state, a state prediction error \u03b4SPE was computed as\n\n$$\n\\delta_{t}^{SPE}=1-T(s_{2,t}|s_{1,t},a_{1,t})\n$$\n\nThis state prediction error was used to update the transition probability for the experienced transition. Moreover, the transition probability to the alternative second-stage state (\u00acs2,t) had to be reduced to ensure that the sum of the both transition probabilities still equaled 1:\n\n$$\nTs_{2,t}s_{1,t},a_{1,t}\u2190Ts_{2,t}s_{1,t},a_{1,t}+\u03b7\\delta_{t}^{SPE}\n$$\n\n\n\n$$\nT\u00acs_{2,t}s_{1,t},a_{1,t}\u2190T\u00acs_{2,t}s_{1,t},a_{1,t}(1-\u03b7)\n$$\n\nHere, \u03b7 is the transition learning rate (ranging between 0 and 1) that defined how quickly transition probabilities were updated. In stable-transitions blocks, we set \u03b7\u00a0=\u00a01 which is consistent with previous implementations for this task where no changes in the transition structure occurred; thus \u03b7 was a free parameter only in variable-transitions blocks.\n\nDue to the anti-correlated transition structure of the task (the two actions in a first-stage state led always to different second-stage states), it was possible to make an inference where the alternative action in the first-stage state \u00aca1,t would have led to. We therefore implemented a counterfactual update of the transition probabilities, similar to the update based on the experienced transition described above:\n\n$$\n\\delta_{t}^{CF-SPE}=1-Ts_{2,t}s_{1,t},\u00aca_{1,t}\n$$\n\n\n\n$$\nT\u00acs_{2,t}s_{1,t},\u00aca_{1,t}\u2190T\u00acs_{2,t}s_{1,t},\u00aca_{1,t}+\u03b7_{CF}\\delta_{t}^{CF-SPE}\n$$\n\n\n\n$$\nTs_{2,t}s_{1,t},\u00aca_{1,t}\u2190Ts_{2,t}s_{1,t},\u00aca_{1,t}(1-\u03b7_{CF})\n$$\n\nHere, \u03b7CF is the transition learning rate for counterfactual transitions. We set \u03b7CF = \u03b7 because model comparisons indicated higher goodness of fit for a model with a single transition learning rate based on the Akaike information criterion in both age groups (see Table S4 in Supplementary file 1).\n\nWhile this model assumes incremental learning of changes in the task transition structure, it is also conceivable that an agent maintains representations of the four possible task transition structures in working memory and activates them according to the observed transitions. With the current task design, we cannot dissociate between these two mechanisms. In both cases, higher transition learning rates reflect better abilities to use an accurate representation of the task transition structure because any inaccuracies in the use of a task model would be forced upon this model parameter.\n\nChoice rule. Model-free and model-based reward expectations in the first stage were integrated using a model-based weight \u03c9 (ranging from 0 to 1):\n\n$$\nQ_{net}s_{1},a_{1}=1-\\omegaQ_{MF}s_{1},a_{1}+\\omegaQ_{MB}(s_{1},a_{1})\n$$\n\nWe used a softmax function to map reward expectations to choice probabilities:\n\n$$\nPa_{1,t}=a_{1}s_{1,t}=\\frac{exp\u2061(\\betaQ_{net}s_{1,t},a_{1}+\\pi\u22c5repa_{1}+\u03c1\u22c5respa_{1})}{\\sum_{a_{1}'}exp\u2061(\\beta[Q_{net}s_{1,t},a_{1}'+\\pi\u22c5rep(a_{1}')+\u03c1\u22c5resp(a_{1}')])}\n$$\n\nHere, \u03b2 is the inverse softmax temperature (left-bounded to 0) that controlled how strongly choice probabilities were guided by reward expectations. The variable rep(a1) was defined as one if a1 was the action that was chosen in the previous trial, and 0 otherwise. The choice stickiness parameter \u03c0 (unbounded) captured choice perseveration (\u03c0\u00a0>0) or choice switching (\u03c0\u00a0<0). The variable resp(a1) was defined as one if the action a1 could be selected with the same response key as the response key that was used in the previous trial, and 0 otherwise. The response stickiness parameter \u03c1 captured perseveration (\u03c1\u00a0>0) or switching (\u03c1\u00a0<0) of the response key at the first stage.\n\nModel fitting procedure. For each participant, we obtained maximum a posteriori estimates of the free model parameters. For parameter estimation, we used the mfit toolbox in Matlab (Gershman, 2016). For all parameters bounded between 0 and 1 (\u03b1, \u03bb, \u03b7, \u03c9), we used a Beta(2,2) prior, for the inverse softmax temperature \u03b2, we used a Gamma(3,0.2) prior, and for the two stickiness parameters \u03c0 and \u03c1, we used Normal(0,1) priors. To avoid local optima, we ran the optimization procedure 100 times for each participant with random initializations of the parameters and selected the parameters of the run with the highest posterior probability.\n\nTo detect differences in decision-making strategies between task conditions, a different model-based weight was estimated for each combination of stakes condition and transition condition. Accordingly, the model contained ten free parameters: \u03b1, \u03bb, \u03b7, \u03c9low,stable, \u03c9high,stable, \u03c9low,variable, \u03c9high,variable, \u03b2, \u03c0, and \u03c1. Analyses on parameter recovery (see Appendix 2) showed that the identifiability of model parameters with our task design was substantial and similar to previous versions of the sequential decision-making task (cf., Kool et al., 2016). A posterior predictive check (see Appendix 2) revealed a good absolute (as opposed to relative) model fit because the model could reproduce individual differences in observed behavior.\n\nIn the exhaustive version of the model, we varied all parameters between all four task conditions (apart from \u03b7 which was only varied between low-stakes trials and high-stakes trials in the variable-transitions blocks, see above), leading to overall 26 free parameters.\n\n### Hierarchical regression analysis\n\nHierarchical Bayesian regression analyses were conducted in R Studio using the brms package (B\u00fcrkner, 2017). This package interfaces with the probabilistic programming language Stan and draws samples from the posterior distribution over model parameters by means of a Markov Chain Monte Carlo procedure and a NUTS sampling algorithm. For each model, we ran four independent chains with 2000 iterations each, of which the first 1000 were discarded as warm-up, leaving 4000 posterior samples in total. If effective sample size was below 400 for reported parameters, we increased the number of iterations accordingly. We assessed the convergence of all chains via the Gelman-Rubin statistic (R-hat\u00a0<1.1) for all parameters.\n\nAll regression models included a random-by-participant intercept and, where multiple data points for each participant and condition were available (i.e., in the analysis of reaction times), we additionally included a random-by-participant slope for all within-subject factors and their interaction terms. When there was an equal number of data points per condition, we used effect coding for categorical variables (younger adults\u00a0=\u00a00.5, older adults\u00a0=\u00a0\u22120.5, low-stakes\u00a0=\u00a0\u22120.5, high-stakes\u00a0=\u00a00.5, stable-transitions\u00a0=\u00a00.5, variable-transitions\u00a0=\u00a0\u22120.5) which allows interpreting regression coefficients as main and interaction effects. In the analysis of revaluation trials, categorical variables were dummy-coded (younger adults\u00a0=\u00a00, older adults\u00a0=\u00a01, non-revaluation trial\u00a0=\u00a00, revaluation trial\u00a0=\u00a01) due to the unequal number of revaluation trials and non-revaluation trials. Moreover, in the analysis of revaluation trials, we only considered trials from variable-transitions blocks and excluded trials with reaction times below 200 ms when analyzing differences in reaction times. Weakly informative default priors were used.\n\nEach reported regression coefficient is described by the mean of its marginal posterior distribution $\\beta-$ and the 95% credible interval that is computed as the [.025,. 975] percentile interval and can be interpreted as including the parameter of interest with 95% probability. A full report on all group-level coefficients can be found in the Tables S5-S21 in Supplementary file 1.\n\n### Performance-matching procedure\n\nWe matched participants between age groups based on their mean baseline-corrected reward (i.e., the difference between obtained reward and the mean reward available at the two planets, before multiplication in high-stakes trials) by assigning to each participant a candidate partner from the respective other age group such that the absolute difference in mean baseline-corrected rewards between both participants was minimized. Pairs of participants who were mutually assigned as each other\u2019s candidate partner were included into the performance-matched sample.\n\nThis procedure yielded a subsample of 26 younger adults (14 female, age range: 18\u201327 years, mean age: 22.4 years) and 26 older adults (14 female, age range: 57\u201379 years, mean age: 69.1 years).\n",
+      "created_at": "2025-12-02T11:34:49.060169Z"
+    },
+    {
+      "id": "9b4a33cb-fc18-4264-94d6-dedcc701f51a",
+      "submission_id": "9800caec-9cfd-45e7-8c7c-60c49a7585ed",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Thorsten Kahnt, Feinberg School of Medicine Northwestern University United States\n\nReviewers:\n- Greg Samanez-Larkin\n\n## Review text\n\nDOI: [10.7554/eLife.49154.017](https://doi.org/10.7554/eLife.49154.017)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Metacontrol of decision-making strategies in human aging\" for consideration by eLife. Your article has been reviewed by three peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation has been overseen by a Reviewing Editor and Christian B\u00fcchel as the Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Greg Samanez-Larkin (Reviewer #2).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThis manuscript presents new data and results comparing younger and older adults in a reinforcement learning task to provide (1) additional evidence that older adults are less model-based than younger adults consistent with prior research and (2) new evidence that older adults are less likely to adjust the use of model-based decision making even when doing so would improve overall task performance. The new analyses of potential differences in reward sensitivity, the parameter recovery analysis, and the performance-matched comparisons strengthen the paper and provide additional evidence for the conclusion of age differences in model-based behavior.\n\nEssential revisions:\n\n- Subsection \u201cModel-based control and task structure representations in older adults\u201d: Why is it \"'implicit' knowledge of the task structure\"? Could it not also be 'explicit' knowledge? Reviewer #1 thinks it would be best to just say 'knowledge' and leave it open whether it is implicit or explicit.\n\n- Reviewer #1 thinks it would be important to clearly state that the current cross-sectional study does not isolate effects of age from those of cohort. The cross-sectional design should be mentioned in the abstract.\n\n- Reviewer #2 wonders if the authors make anything of the quite strong individual differences within older adults. Figure 2 shows relatively flat mean lines but that one third to half of the older adults show patterns similar to the young averages. Yet there are also quite a few \u2013 a handful on the left and many on the right \u2013 that show a strong opposite pattern compared to the younger adults. The mean lines suggest that older adults on average show no differences when really there are subgroups showing opposite effects. Reviewer #2 thinks it could be useful to ads some mention of it \u2013 assuming the authors are confident in the accuracy of the parameter estimates. Why would some individuals show these strong opposite effects where they become much less model based when the stakes are higher?\n\n- Figure 2 should have an overall performance plot like Figure 3A. It's very helpful to see the distributions and mean differences in overall performance plotted.\n\n- In several places within the manuscript, the authors suggest that task structure representations may grow \"less distinct\" with aging. Reviewer #3 has troubles understanding what is meant by this phrase. Distinct from what?\n\n- The model of learning in the variable transitions condition assumes that transition structure knowledge is updated via an incremental process governed by a learning rate. Given that transitions in the task are fully deterministic, and thus observing a single change provides full information, it seems possible that the task structure representation in the variable transition condition might rely more on a working memory process, in which the four transition mappings are actively maintained and updated when revaluation trials are observed. Perhaps with older adults having fewer \"slots\" or a faster decay rate. Reviewer #3 is not sure that these two models would be formally discriminable/identifiable, but the independent working memory measure collected might be informative. Does WM correlate with RT slowing on revaluation trials and overall performance in the variable transitions condition? This sort of analysis might provide insight into whether that the aging-related cognitive changes that impair task performance in older adults are more centrally related to structure learning, versus working memory.\n\n- The absence of a difference in performance in older adults between the stable and variable transitions condition merits further discussion. The discussion at present highlights differences between young and older adults' performance in the variable transition condition, suggesting that the relative performance at different ages suggests age-related impairments in structure learning. But it is also important to consider why the variable transition condition does not appear to impose a cost on older adults' model-based evaluation, as hypothesized. What are the cognitive limitations on older adults' performance in the stable condition, when the structure learning demands of the task are relatively simple?\n\n- Descriptive statistics for the parameter estimates for younger and older adults should be reported in a table. At present, the age group effects are reported, but not the estimates themselves.\n",
+      "created_at": "2025-12-02T11:34:49.060169Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T11:34:49.060169Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T11:34:49.060169Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "41f66700-120a-4a8b-92c9-c231e9584f69",
+      "content_id": "36ee755e-b347-4692-a8d7-a2fa982dec30",
+      "claim_id": "C1",
+      "claim": "Humans employ different strategies when making decisions.",
+      "claim_type": "EXPLICIT",
+      "source": "Humans employ different strategies when making decisions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement in the abstract that sets up the research context.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:34:49.060169Z"
+    },
+    {
+      "id": "93899dd1-1701-41bf-ba3a-3ee919335268",
+      "content_id": "36ee755e-b347-4692-a8d7-a2fa982dec30",
+      "claim_id": "C2",
+      "claim": "Previous research has reported reduced reliance on model-based strategies with aging.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous research has reported reduced reliance on model-based strategies with aging, but it remains unclear whether this is due to cognitive or motivational factors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "References prior research findings without specific citation in this sentence, but the claim is supported by citations elsewhere in the manuscript.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:34:49.060169Z"
+    },
+    {
+      "id": "23e37aff-b104-486e-a918-7da37b4a778b",
+      "content_id": "36ee755e-b347-4692-a8d7-a2fa982dec30",
+      "claim_id": "C3",
+      "claim": "It remains unclear whether reduced model-based strategies with aging are due to cognitive or motivational factors.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous research has reported reduced reliance on model-based strategies with aging, but it remains unclear whether this is due to cognitive or motivational factors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This identifies a gap in knowledge that the study addresses.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:34:49.060169Z"
+    },
+    {
+      "id": "d932b198-8be9-45e6-a09f-5b63a00f3f0f",
+      "content_id": "36ee755e-b347-4692-a8d7-a2fa982dec30",
+      "claim_id": "C4",
+      "claim": "Model-based strategies led to higher payoffs in the task used in this study.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to previous research, model-based strategies led to higher payoffs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a design feature of the task used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:34:49.060169Z"
+    },
+    {
+      "id": "96bb55be-1a98-4aa6-a0ca-1151b338e3ec",
+      "content_id": "36ee755e-b347-4692-a8d7-a2fa982dec30",
+      "claim_id": "C5",
+      "claim": "Older adults showed reduced model-based decision making compared to younger adults.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared to younger adults, older adults showed reduced model-based decision making and less adaptation of decision-making strategies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the study's data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:34:49.060169Z"
+    },
+    {
+      "id": "79e88e2d-a0a9-4346-b14c-c0ed3c5b8f3b",
+      "content_id": "36ee755e-b347-4692-a8d7-a2fa982dec30",
+      "claim_id": "C6",
+      "claim": "Older adults showed less adaptation of decision-making strategies compared to younger adults.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared to younger adults, older adults showed reduced model-based decision making and less adaptation of decision-making strategies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the study's data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:34:49.060169Z"
+    },
+    {
+      "id": "76f132c5-7d89-46c5-bb1f-98a00668793b",
+      "content_id": "36ee755e-b347-4692-a8d7-a2fa982dec30",
+      "claim_id": "C7",
+      "claim": "Reduced model-based strategies in older adults are due to limited cognitive abilities.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings suggest that aging affects the metacontrol of decision-making strategies and that reduced model-based strategies in older adults are due to limited cognitive abilities.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the study findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:34:49.060169Z"
+    },
+    {
+      "id": "0df27e51-4986-42f5-8617-bf056339b2af",
+      "content_id": "36ee755e-b347-4692-a8d7-a2fa982dec30",
+      "claim_id": "C8",
+      "claim": "Humans have to engage in metacontrol to cope efficiently with environmental demands.",
+      "claim_type": "EXPLICIT",
+      "source": "In order to cope efficiently with environmental demands, humans as well as other biological and artificial agents have to engage in metacontrol, that is they constantly have to decide how to allocate their limited computational resources (Boureau et al., 2015; Gershman et al., 2015; Griffiths et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:34:49.060169Z"
+    },
+    {
+      "id": "df2043d3-f005-4ec3-88a9-c58dc42ba7e2",
+      "content_id": "36ee755e-b347-4692-a8d7-a2fa982dec30",
+      "claim_id": "C9",
+      "claim": "It is unclear how metacontrol changes across the lifespan.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent research in psychology and neuroscience has advanced our understanding of metacontrol in humans (e.g., Kurzban et al., 2013; Shenhav et al., 2017), however it is still unclear how metacontrol changes across the lifespan.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This identifies a gap in the literature that motivates the study.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:34:49.060169Z"
+    },
+    {
+      "id": "8b5fb7fc-d383-420c-b644-7b7a3bc6d1c8",
+      "content_id": "36ee755e-b347-4692-a8d7-a2fa982dec30",
+      "claim_id": "C10",
+      "claim": "Model-free and model-based decision making are reflective of a broader distinction between automatic and deliberative modes of information processing.",
+      "claim_type": "EXPLICIT",
+      "source": "For this purpose, we focus on model-free and model-based decision making (Daw et al., 2011; Dolan and Dayan, 2013) \u2013 two strategies that are reflective of a broader distinction between automatic and deliberative modes of information processing as put forward by prominent dual-system theories (Balleine and O'Doherty, 2010; Kahneman, 2003; Sloman, 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement connects the specific strategies studied to broader theoretical frameworks, supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:34:49.060169Z"
+    },
+    {
+      "id": "bfc9de2b-ea45-49ea-8a5c-cb8b99665ea6",
+      "content_id": "36ee755e-b347-4692-a8d7-a2fa982dec30",
+      "claim_id": "C11",
+      "claim": "Model-free decision making represents the strategy to repeat actions that previously led to desirable outcomes and to avoid actions that previously led to undesirable outcomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Within the computational framework of reinforcement learning (Sutton and Barto, 1998), model-free decision making represents the strategy to repeat actions that previously led to desirable outcomes and to avoid actions that previously led to undesirable outcomes, corresponding to Thorndike's law of effect (Thorndike, 1911).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definition based on established computational frameworks and historical principles, supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:34:49.060169Z"
+    },
+    {
+      "id": "69c04e26-b40a-4ed6-b299-489abfafa3b3",
+      "content_id": "36ee755e-b347-4692-a8d7-a2fa982dec30",
+      "claim_id": "C12",
+      "claim": "Model-free control only requires a single value update.",
+      "claim_type": "EXPLICIT",
+      "source": "Model-free control only requires a single value update and therefore it is computationally efficient and does not rely strongly on cognitive resources.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a characteristic of model-free control based on computational theory.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:34:49.060169Z"
+    },
+    {
+      "id": "a04c131e-2b55-48d9-9522-97781598d885",
+      "content_id": "36ee755e-b347-4692-a8d7-a2fa982dec30",
+      "claim_id": "C13",
+      "claim": "Model-free control is computationally efficient and does not rely strongly on cognitive resources.",
+      "claim_type": "EXPLICIT",
+      "source": "Model-free control only requires a single value update and therefore it is computationally efficient and does not rely strongly on cognitive resources.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the computational properties of model-free control.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:34:49.060169Z"
+    },
+    {
+      "id": "8da5aee6-7a36-4bb3-9177-7f2d65e7407b",
+      "content_id": "36ee755e-b347-4692-a8d7-a2fa982dec30",
+      "claim_id": "C14",
+      "claim": "Model-free control can be inflexible and inaccurate because it requires direct experience with the consequences of an action.",
+      "claim_type": "EXPLICIT",
+      "source": "However, it can be inflexible and inaccurate because it requires direct experience with the consequences of an action in order to update the corresponding reward expectation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a limitation of model-free control based on computational theory.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:34:49.060169Z"
+    },
+    {
+      "id": "0ff7235b-0ac8-4e55-bf41-6f33123b5edb",
+      "content_id": "36ee755e-b347-4692-a8d7-a2fa982dec30",
+      "claim_id": "C15",
+      "claim": "Model-based decision making involves storing an internal model about contingencies in the environment and using this model to predict the consequences of available actions.",
+      "claim_type": "EXPLICIT",
+      "source": "Another strategy for decision making is to store an internal model about contingencies in the environment (e.g., how taking an action leads from one state to another and how rewards are distributed across states) and to use this model to predict the consequences of available actions (Tolman, 1948).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definition of model-based decision making supported by a historical citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:34:49.060169Z"
+    },
+    {
+      "id": "15591d14-386e-4500-a248-a3e3d535fe22",
+      "content_id": "36ee755e-b347-4692-a8d7-a2fa982dec30",
+      "claim_id": "C16",
+      "claim": "Model-based strategy can account for sudden changes in the environment more quickly and may be more accurate in complex environments.",
+      "claim_type": "EXPLICIT",
+      "source": "This strategy can account for sudden changes in the environment more quickly and may be more accurate in complex environments; however, it comes with the cost of higher cognitive demands.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes advantages of model-based control based on computational theory.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:34:49.060169Z"
+    },
+    {
+      "id": "e04c562a-e795-4b51-8533-9313cfb13c48",
+      "content_id": "36ee755e-b347-4692-a8d7-a2fa982dec30",
+      "claim_id": "C17",
+      "claim": "Model-based strategy comes with the cost of higher cognitive demands.",
+      "claim_type": "EXPLICIT",
+      "source": "This strategy can account for sudden changes in the environment more quickly and may be more accurate in complex environments; however, it comes with the cost of higher cognitive demands.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a disadvantage of model-based control based on computational theory.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:34:49.060169Z"
+    },
+    {
+      "id": "cb78f52b-7917-43f7-ba24-4e8298f78349",
+      "content_id": "36ee755e-b347-4692-a8d7-a2fa982dec30",
+      "claim_id": "C18",
+      "claim": "Model-free and model-based strategies involve different cognitive mechanisms and compete for behavioral control.",
+      "claim_type": "EXPLICIT",
+      "source": "It is commonly assumed that model-free and model-based strategies involve different cognitive mechanisms and compete for behavioral control (Daw et al., 2005; Kool et al., 2017a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical assumption supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:34:49.060169Z"
+    },
+    {
+      "id": "bfab8256-ad19-475c-939e-874c796edcdc",
+      "content_id": "36ee755e-b347-4692-a8d7-a2fa982dec30",
+      "claim_id": "C19",
+      "claim": "Humans show signs of both model-free and model-based strategies during decision making.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, humans show signs of both strategies during decision making (Daw et al., 2011; Gl\u00e4scher et al., 2010), and they dynamically regulate the balance between model-free and model-based control on a moment-to-moment basis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an empirical finding from prior research supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:34:49.060169Z"
+    },
+    {
+      "id": "7e84a9d3-4987-43f1-b201-6b5726eb5fa7",
+      "content_id": "36ee755e-b347-4692-a8d7-a2fa982dec30",
+      "claim_id": "C20",
+      "claim": "Humans dynamically regulate the balance between model-free and model-based control on a moment-to-moment basis.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, humans show signs of both strategies during decision making (Daw et al., 2011; Gl\u00e4scher et al., 2010), and they dynamically regulate the balance between model-free and model-based control on a moment-to-moment basis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an empirical finding from prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:34:49.060169Z"
+    },
+    {
+      "id": "9cd4b862-d4b5-4c6f-abd4-2b0ee392d7c1",
+      "content_id": "36ee755e-b347-4692-a8d7-a2fa982dec30",
+      "claim_id": "C21",
+      "claim": "Metacontrol of decision-making strategies is based on a cost-benefit analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been suggested that this metacontrol of decision-making strategies is based on a cost-benefit analysis (Kool et al., 2017b; Kool et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical framework supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:34:49.060169Z"
+    },
+    {
+      "id": "4f8502d4-4268-4b63-9612-336ec9dbd7df",
+      "content_id": "36ee755e-b347-4692-a8d7-a2fa982dec30",
+      "claim_id": "C22",
+      "claim": "People weigh the cognitive costs of each decision-making strategy against its potential benefits to decide how to invest mental resources.",
+      "claim_type": "EXPLICIT",
+      "source": "This framework states that people weigh the cognitive costs of each decision-making strategy against its potential benefits in order to decide how to invest mental resources.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This elaborates on the cost-benefit framework for metacontrol.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:34:49.060169Z"
+    },
+    {
+      "id": "4ab79942-18d5-4f03-b0d2-693499fc0ef3",
+      "content_id": "36ee755e-b347-4692-a8d7-a2fa982dec30",
+      "claim_id": "C23",
+      "claim": "People increase model-based control when rewards are amplified.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, people increase model-based control when rewards are amplified (Kool et al., 2017b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an empirical finding from prior research supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:34:49.060169Z"
+    },
+    {
+      "id": "e35e3db4-65fa-474a-b7dc-e4afc5d734fc",
+      "content_id": "36ee755e-b347-4692-a8d7-a2fa982dec30",
+      "claim_id": "C24",
+      "claim": "Model-based control decreases when the task becomes more complex and thus model-based planning gets more effortful.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, model-based control decreases when the task becomes more complex and thus model-based planning gets more effortful (Kool et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an empirical finding from prior research supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:34:49.060169Z"
+    },
+    {
+      "id": "5d96a987-0ad9-426d-bf42-65d66eac3543",
+      "content_id": "36ee755e-b347-4692-a8d7-a2fa982dec30",
+      "claim_id": "C25",
+      "claim": "Older adults show reduced model-based control during decision making compared to younger adults.",
+      "claim_type": "EXPLICIT",
+      "source": "Older adults show reduced model-based control during decision making compared to younger adults (Eppinger et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an empirical finding from prior research supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:34:49.060169Z"
+    },
+    {
+      "id": "cdd5d30f-afac-4cd4-a123-d4edfe50be0e",
+      "content_id": "36ee755e-b347-4692-a8d7-a2fa982dec30",
+      "claim_id": "C26",
+      "claim": "Reduced model-based control in older adults could be explained by aging-related difficulties in representing the structure of the experimental task.",
+      "claim_type": "EXPLICIT",
+      "source": "This finding could be explained by aging-related difficulties in representing the structure of the experimental task (i.e., the contingencies between actions and states in the task) which would limit the use of a task model to accurately predict future outcomes (Eppinger et al., 2015; H\u00e4mmerer et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical explanation for prior findings, supported by citations.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:34:49.060169Z"
+    },
+    {
+      "id": "020f5649-90b1-4702-be02-79bf893c993f",
+      "content_id": "36ee755e-b347-4692-a8d7-a2fa982dec30",
+      "claim_id": "C27",
+      "claim": "Difficulties in the representation of the task structure could result from structural decline of prefrontal and hippocampal regions.",
+      "claim_type": "EXPLICIT",
+      "source": "On the neurobiological level, difficulties in the representation of the task structure could result from structural decline of prefrontal and hippocampal regions (Raz et al., 2005; Resnick et al., 2003) that have been suggested to be involved in the encoding of mental task models (Koechlin, 2016; Schuck et al., 2016; Vikbladh et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical explanation linking neurobiological changes to cognitive deficits, supported by citations.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:34:49.060169Z"
+    },
+    {
+      "id": "051b3e06-dbf6-40c5-8750-e56a095e170a",
+      "content_id": "36ee755e-b347-4692-a8d7-a2fa982dec30",
+      "claim_id": "C28",
+      "claim": "Prefrontal and hippocampal regions have been suggested to be involved in the encoding of mental task models.",
+      "claim_type": "EXPLICIT",
+      "source": "On the neurobiological level, difficulties in the representation of the task structure could result from structural decline of prefrontal and hippocampal regions (Raz et al., 2005; Resnick et al., 2003) that have been suggested to be involved in the encoding of mental task models (Koechlin, 2016; Schuck et al., 2016; Vikbladh et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from prior neuroscience research supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:34:49.060169Z"
+    },
+    {
+      "id": "b6cd9b75-db61-4476-8077-708105ed93b5",
+      "content_id": "36ee755e-b347-4692-a8d7-a2fa982dec30",
+      "claim_id": "C29",
+      "claim": "The sequential decision-making task most frequently used to determine individual reliance on model-free versus model-based control lacks a control-reward trade-off.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the observed reduction of model-based control in older adults does not necessarily have to be an impairment: The sequential decision-making task that is most frequently used to determine individual reliance on model-free versus model-based control (Daw et al., 2011) lacks a control-reward trade-off (Kool et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a characteristic of a commonly used task, supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:34:49.060169Z"
+    },
+    {
+      "id": "0554754f-86fb-4646-a315-ea48993492d6",
+      "content_id": "36ee755e-b347-4692-a8d7-a2fa982dec30",
+      "claim_id": "C30",
+      "claim": "In the standard sequential decision-making task, greater model-based control does not lead to higher pay-offs compared to model-free control.",
+      "claim_type": "EXPLICIT",
+      "source": "That is, greater model-based control does not lead to higher pay-offs in the task compared to model-free control.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This elaborates on the lack of control-reward trade-off in the standard task.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:34:49.060169Z"
+    },
+    {
+      "id": "f7997428-f6e4-4e6c-8426-3704b22c5aae",
+      "content_id": "36ee755e-b347-4692-a8d7-a2fa982dec30",
+      "claim_id": "C31",
+      "claim": "It may be optimal to engage in a model-free strategy when considering the greater cognitive costs of model-based strategy, particularly for individuals with limitations in cognitive abilities such as older adults.",
+      "claim_type": "EXPLICIT",
+      "source": "When considering the greater cognitive costs that come with a model-based strategy, it may be optimal to engage in a model-free strategy, particularly for individuals with limitations in cognitive abilities such as older adults.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical inference about optimal strategy selection.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:34:49.060169Z"
+    },
+    {
+      "id": "36593d7f-fd3d-440d-a330-4c69ee4599bb",
+      "content_id": "36ee755e-b347-4692-a8d7-a2fa982dec30",
+      "claim_id": "C32",
+      "claim": "The study used a version of the sequential decision-making task that has a control-reward trade-off.",
+      "claim_type": "EXPLICIT",
+      "source": "For this purpose, we make use of a recent version of the sequential decision-making task that has a control-reward trade-off (Kool et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a methodological choice in the study design, supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:34:49.060169Z"
+    },
+    {
+      "id": "295f9535-893e-439a-94a7-72ea5be1cd8d",
+      "content_id": "36ee755e-b347-4692-a8d7-a2fa982dec30",
+      "claim_id": "C33",
+      "claim": "Surprising transitions elicit a slowing of response times.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, previous studies have found that surprising transitions elicit a slowing of response times (Decker et al., 2016; Deserno et al., 2015; Shahar et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an empirical finding from prior research supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:34:49.060169Z"
+    },
+    {
+      "id": "f4c571be-183f-4722-b110-a3b3b442d957",
+      "content_id": "36ee755e-b347-4692-a8d7-a2fa982dec30",
+      "claim_id": "C34",
+      "claim": "If task structure representations become less accurate with aging, this should be reflected in less differentiated responses to surprising and unsurprising transitions.",
+      "claim_type": "EXPLICIT",
+      "source": "If task structure representations become less accurate with aging, this should also be reflected in less differentiated responses to surprising and unsurprising transitions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis derived from theoretical reasoning.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:34:49.060169Z"
+    },
+    {
+      "id": "b92d976a-c18a-441a-b6f3-3860085c23c0",
+      "content_id": "36ee755e-b347-4692-a8d7-a2fa982dec30",
+      "claim_id": "C35",
+      "claim": "The study tested 62 younger adults (age range: 18\u201330 years, mean age: 22.7 years) and 62 older adults (age range: 57\u201380 years, mean age: 70.2 years).",
+      "claim_type": "EXPLICIT",
+      "source": "We analyzed the behavior of 62 younger adults (age range: 18\u201330 years, mean age: 22.7 years) and 62 older adults (age range: 57\u201380 years, mean age: 70.2 years) in a sequential decision-making task that dissociates model-free and model-based decision making.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the sample characteristics of the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:34:49.060169Z"
+    },
+    {
+      "id": "a0992816-6b15-42b3-89ee-a67819a8a613",
+      "content_id": "36ee755e-b347-4692-a8d7-a2fa982dec30",
+      "claim_id": "C36",
+      "claim": "In the task used in this study, higher model-based decision making leads to better outcomes in terms of monetary reward.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, in this task higher model-based decision making leads to better outcomes in terms of monetary reward (Kool et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a design feature of the task, supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:34:49.060169Z"
+    },
+    {
+      "id": "483b4329-2232-4367-8218-e1cc06a5659a",
+      "content_id": "36ee755e-b347-4692-a8d7-a2fa982dec30",
+      "claim_id": "C37",
+      "claim": "Every trial started randomly in one of two first-stage states that offered a choice between two spaceships.",
+      "claim_type": "EXPLICIT",
+      "source": "In brief, every trial started randomly in one of two first-stage states that offered a choice between two spaceships (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the task structure, with reference to a figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:34:49.060169Z"
+    },
+    {
+      "id": "02799cf9-795b-4a9d-bd7b-eba28f6cfee7",
+      "content_id": "36ee755e-b347-4692-a8d7-a2fa982dec30",
+      "claim_id": "C38",
+      "claim": "The choice of spaceship determined which second-stage state (a red or a purple planet) would be encountered.",
+      "claim_type": "EXPLICIT",
+      "source": "This choice determined which second-stage state, a red or a purple planet, would be encountered.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the task structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:34:49.060169Z"
+    },
+    {
+      "id": "1ed47dd9-0fe0-49b8-8673-ba25450ec45a",
+      "content_id": "36ee755e-b347-4692-a8d7-a2fa982dec30",
+      "claim_id": "C39",
+      "claim": "For each first-stage state, one spaceship would lead to the red planet, whereas the other would lead to the purple planet.",
+      "claim_type": "EXPLICIT",
+      "source": "For each first-stage state, one spaceship would lead to the red planet, whereas the other would lead to the purple planet.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the task structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:34:49.060169Z"
+    },
+    {
+      "id": "fcdfc751-82c5-4e39-85c0-daf49f1dc146",
+      "content_id": "36ee755e-b347-4692-a8d7-a2fa982dec30",
+      "claim_id": "C40",
+      "claim": "Each planet afforded the opportunity to earn reward, represented by a certain number of pieces of 'space treasure'.",
+      "claim_type": "EXPLICIT",
+      "source": "Each planet afforded the opportunity to earn reward, represented by a certain number of pieces of 'space treasure'.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the task structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:34:49.060169Z"
+    },
+    {
+      "id": "1544d012-97f9-405c-8da2-045cb18bd23e",
+      "content_id": "36ee755e-b347-4692-a8d7-a2fa982dec30",
+      "claim_id": "C41",
+      "claim": "The amount of space treasure was independent for each planet and drifted over the course of the experiment.",
+      "claim_type": "EXPLICIT",
+      "source": "The amount of space treasure was independent for each planet and drifted over the course of the experiment so that participants had to constantly update their reward expectations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the task structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:34:49.060169Z"
+    },
+    {
+      "id": "b7ec4094-7272-4e22-a0b1-f6dcb91e4bc8",
+      "content_id": "36ee755e-b347-4692-a8d7-a2fa982dec30",
+      "claim_id": "C42",
+      "claim": "A pure model-based decision maker is able to transfer experiences learned in one starting state to the other.",
+      "claim_type": "EXPLICIT",
+      "source": "A pure model-based decision maker is able to use this equivalence to transfer experiences learned in one starting state to the other, because it plans over the transition structure toward the second-stage goals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a theoretical property of model-based decision making in the context of the task.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:34:49.060169Z"
+    },
+    {
+      "id": "43d4ef36-cca8-46d4-a20d-e3049184bf98",
+      "content_id": "36ee755e-b347-4692-a8d7-a2fa982dec30",
+      "claim_id": "C43",
+      "claim": "A pure model-free decision maker is unable to transfer experiences obtained after one pair of spaceships to the other pair.",
+      "claim_type": "EXPLICIT",
+      "source": "A pure model-free decision maker does not consult the transition structure of the task, but instead relies on action-reward contingencies. Therefore, reward outcomes on the previous trial only affect choices on the current trial if the same actions are available. In other words, a model-free agent is unable to transfer experiences obtained after one pair of spaceships to the other pair (Doll et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a theoretical property of model-free decision making in the context of the task, supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:34:49.060169Z"
+    },
+    {
+      "id": "c3b232ca-f473-47e8-a725-5e60030d891f",
+      "content_id": "36ee755e-b347-4692-a8d7-a2fa982dec30",
+      "claim_id": "C44",
+      "claim": "Every trial started with a randomly picked cue that indicated whether it was a low-stakes or a high-stakes trial.",
+      "claim_type": "EXPLICIT",
+      "source": "First, similar to previous studies (Kool et al., 2017b; Patzelt et al., 2019), every trial started with a randomly picked cue that indicated whether it was a low-stakes or a high-stakes trial (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the stakes manipulation in the task, with reference to a figure and citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:34:49.060169Z"
+    },
+    {
+      "id": "ba2cd99b-3e06-4371-8e28-9ca83c565826",
+      "content_id": "36ee755e-b347-4692-a8d7-a2fa982dec30",
+      "claim_id": "C45",
+      "claim": "In low-stakes trials, participants obtained one point for every piece of space treasure.",
+      "claim_type": "EXPLICIT",
+      "source": "In low-stakes trials, participants obtained one point for every piece of space treasure that they received and in high-stakes trials, participants obtained five points for every piece of space treasure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the stakes manipulation in the task.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:34:49.060169Z"
+    },
+    {
+      "id": "aa19301b-1524-4092-8920-412a56f33136",
+      "content_id": "36ee755e-b347-4692-a8d7-a2fa982dec30",
+      "claim_id": "C46",
+      "claim": "In high-stakes trials, participants obtained five points for every piece of space treasure.",
+      "claim_type": "EXPLICIT",
+      "source": "In low-stakes trials, participants obtained one point for every piece of space treasure that they received and in high-stakes trials, participants obtained five points for every piece of space treasure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the stakes manipulation in the task.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:34:49.060169Z"
+    },
+    {
+      "id": "aa4ea2af-9f77-4567-86cf-dc0df4f36060",
+      "content_id": "36ee755e-b347-4692-a8d7-a2fa982dec30",
+      "claim_id": "C47",
+      "claim": "The stability of the task transition structure was manipulated in blocks of 80 trials.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, we manipulated the stability of the task transition structure (i.e., the mapping of spaceships to planets) in blocks of 80 trials (Figure 1C): Throughout stable-transitions blocks, all spaceships maintained the same destination planet.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the transition stability manipulation in the task, with reference to a figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:34:49.060169Z"
+    },
+    {
+      "id": "04b6e548-c2d2-463b-8cdb-9d4d71d579a4",
+      "content_id": "36ee755e-b347-4692-a8d7-a2fa982dec30",
+      "claim_id": "C48",
+      "claim": "Throughout stable-transitions blocks, all spaceships maintained the same destination planet.",
+      "claim_type": "EXPLICIT",
+      "source": "Throughout stable-transitions blocks, all spaceships maintained the same destination planet.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the stable-transitions condition.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:34:49.060169Z"
+    },
+    {
+      "id": "825cb73d-fbc6-4384-8ae4-8d8780957555",
+      "content_id": "36ee755e-b347-4692-a8d7-a2fa982dec30",
+      "claim_id": "C49",
+      "claim": "In variable-transitions blocks, every 6 to 14 trials, the pair of spaceships in one of the first-stage states swapped their destination planets.",
+      "claim_type": "EXPLICIT",
+      "source": "In variable-transitions blocks, every 6 to 14 trials, the pair of spaceships in one of the first-stage states swapped their destination planets.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the variable-transitions condition.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:34:49.060169Z"
+    },
+    {
+      "id": "3a53d063-a647-4b5a-b046-74c750d1c740",
+      "content_id": "36ee755e-b347-4692-a8d7-a2fa982dec30",
+      "claim_id": "C50",
+      "claim": "Reversals of the transition structure required participants repeatedly to update their internal model of the task and thus increased the demands on model-based decision making.",
+      "claim_type": "EXPLICIT",
+      "source": "These reversals of the transition structure required participants repeatedly to update their internal model of the task and thus increased the demands on model-based decision making.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the cognitive demands of the variable-transitions condition.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:34:49.060169Z"
+    },
+    {
+      "id": "0ed86539-8600-47c0-9028-1290e45fcb9d",
+      "content_id": "36ee755e-b347-4692-a8d7-a2fa982dec30",
+      "claim_id": "C53",
+      "claim": "The finding of reduced model-based control in older adults replicates previous findings.",
+      "claim_type": "EXPLICIT",
+      "source": "This effect replicates previous findings (Eppinger et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This connects the current finding to prior research, supported by a citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:34:49.060169Z"
+    },
+    {
+      "id": "2398fd85-61f4-4cd1-88b6-9b59e9ff1050",
+      "content_id": "36ee755e-b347-4692-a8d7-a2fa982dec30",
+      "claim_id": "C58",
+      "claim": "The transition learning rate indicates how quickly observations about changes in the task transition structure are incorporated into the mental representation of the task.",
+      "claim_type": "EXPLICIT",
+      "source": "The transition learning rate indicates how quickly observations about changes in the task transition structure are incorporated into the mental representation of the task (but see Materials and methods section for an alternative interpretation).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of a model parameter.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:34:49.060169Z"
+    },
+    {
+      "id": "4383cc76-1791-40aa-a198-fbfbf23000ea",
+      "content_id": "36ee755e-b347-4692-a8d7-a2fa982dec30",
+      "claim_id": "C59",
+      "claim": "Lower transition learning rates suggest that older adults have less accurate representations of the task transition structure than younger adults.",
+      "claim_type": "EXPLICIT",
+      "source": "The lower transition learning rates suggest that older adults have less accurate representations of the task transition structure than younger adults.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the modeling results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:34:49.060169Z"
+    },
+    {
+      "id": "04e2fe16-aa16-4ecf-87df-e49ba88f038b",
+      "content_id": "36ee755e-b347-4692-a8d7-a2fa982dec30",
+      "claim_id": "C60",
+      "claim": "Reduced reliance on model-based decision making in older adults was found even in a task where model-based decision making leads to better outcomes.",
+      "claim_type": "EXPLICIT",
+      "source": "To sum up, these findings show reduced reliance on model-based decision making in older adults even in a task where model-based decision making leads to better outcomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the main findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:34:49.060169Z"
+    },
+    {
+      "id": "c27bfa6b-e664-44d3-a2de-6712de2d264f",
+      "content_id": "36ee755e-b347-4692-a8d7-a2fa982dec30",
+      "claim_id": "C61",
+      "claim": "Older adults showed reduced metacontrol of decision-making strategies.",
+      "claim_type": "EXPLICIT",
+      "source": "Beyond this, older adults also showed reduced metacontrol of decision-making strategies, that is less dynamic adaptation of decision-making strategies when their associated costs and benefits change.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the main findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:34:49.060169Z"
+    },
+    {
+      "id": "60fa2177-43ec-42a4-87d3-b5857137ce61",
+      "content_id": "36ee755e-b347-4692-a8d7-a2fa982dec30",
+      "claim_id": "C66",
+      "claim": "Younger adults were more sensitive to surprising changes of the task structure than older adults.",
+      "claim_type": "EXPLICIT",
+      "source": "This interaction indicates that younger adults showed a greater slowing of reaction times on revaluation trials compared to non-revaluation trials than older adults and suggests that younger adults were more sensitive to surprising changes of the task structure than older adults.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the reaction time findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:34:49.060169Z"
+    },
+    {
+      "id": "59a50f89-3ea8-4caa-ba31-8b2aca7ad504",
+      "content_id": "36ee755e-b347-4692-a8d7-a2fa982dec30",
+      "claim_id": "C68",
+      "claim": "The degree of model-based control modulated the slowing of reaction times in revaluation trials.",
+      "claim_type": "EXPLICIT",
+      "source": "The degree of model-based control modulated the slowing of reaction times in revaluation trials (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the analysis of the relationship between model-based control and reaction times.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:34:49.060169Z"
+    },
+    {
+      "id": "82c4dddb-e570-47e0-a82a-dbc448213bc6",
+      "content_id": "36ee755e-b347-4692-a8d7-a2fa982dec30",
+      "claim_id": "C70",
+      "claim": "Individual differences in the reliance on model-based decision making might be related to differences in the accuracy of the task structure representation.",
+      "claim_type": "EXPLICIT",
+      "source": "This association between model-based decision making and reaction slowing suggests that individual differences in the reliance on model-based decision making might be related to differences in the accuracy of the task structure representation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the findings on the relationship between model-based control and reaction times.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:34:49.060169Z"
+    },
+    {
+      "id": "44d30b7b-94b9-4be2-bc92-754ff2c87348",
+      "content_id": "36ee755e-b347-4692-a8d7-a2fa982dec30",
+      "claim_id": "C71",
+      "claim": "Reduced model-based control in older adults cannot be explained by a reduced willingness to engage in a more effortful strategy when this effort does not pay off.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that older adults showed reduced model-based control compared to younger adults, even in a setting where model-based control leads to better outcomes. Thus, our findings suggest that reduced model-based control in older adults cannot be explained by a reduced willingness to engage in a cognitively effortful strategy when this effort does not pay off.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the main findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:34:49.060169Z"
+    },
+    {
+      "id": "4e6d197a-edbc-4363-9f03-34ee54a53cbd",
+      "content_id": "36ee755e-b347-4692-a8d7-a2fa982dec30",
+      "claim_id": "C72",
+      "claim": "The effect of reduced model-based control in older adults seems to reflect aging-related limitations in the cognitive processes involved in model-based control.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, the effect seems to reflect aging-related limitations in the cognitive processes involved in model-based control.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the main findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:34:49.060169Z"
+    },
+    {
+      "id": "a6439760-77b6-42dd-9ac2-c25a0f8ca870",
+      "content_id": "36ee755e-b347-4692-a8d7-a2fa982dec30",
+      "claim_id": "C73",
+      "claim": "Younger adults showed increased model-based control when rewards were amplified.",
+      "claim_type": "EXPLICIT",
+      "source": "In line with previous findings (Kool et al., 2017b; Patzelt et al., 2019), we found that younger adults showed increased model-based control when rewards were amplified, which suggests that they are more willing to incur the cost of planning when incentives are high.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the data analysis, consistent with prior research.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:34:49.060169Z"
+    },
+    {
+      "id": "900ede05-f771-491b-a464-cfa45d483a66",
+      "content_id": "36ee755e-b347-4692-a8d7-a2fa982dec30",
+      "claim_id": "C74",
+      "claim": "Younger adults showed decreased model-based control when the task transition structure was variable.",
+      "claim_type": "EXPLICIT",
+      "source": "We also found that younger adults showed decreased model-based control when the task transition structure was variable, suggesting that repeated changes in the task transition structure increase the demands for model-based control, thus leading to a reduction of this more effortful strategy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:34:49.060169Z"
+    },
+    {
+      "id": "ec90c76a-9c8f-4d66-8067-ec0a347ab26b",
+      "content_id": "36ee755e-b347-4692-a8d7-a2fa982dec30",
+      "claim_id": "C75",
+      "claim": "Repeated changes in the task transition structure increase the demands for model-based control, thus leading to a reduction of this more effortful strategy.",
+      "claim_type": "EXPLICIT",
+      "source": "We also found that younger adults showed decreased model-based control when the task transition structure was variable, suggesting that repeated changes in the task transition structure increase the demands for model-based control, thus leading to a reduction of this more effortful strategy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the findings on the effect of transition stability.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:34:49.060169Z"
+    },
+    {
+      "id": "05f939c5-8365-453f-bec2-85aca35545f9",
+      "content_id": "36ee755e-b347-4692-a8d7-a2fa982dec30",
+      "claim_id": "C76",
+      "claim": "Older adults' metacontrol was less sensitive to changes in costs and benefits of decision-making strategies.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that older adults' metacontrol was less sensitive to these changes in costs and benefits.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the findings on metacontrol.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:34:49.060169Z"
+    },
+    {
+      "id": "56dc4d20-53c6-45b2-8ef4-d3e1c057d444",
+      "content_id": "36ee755e-b347-4692-a8d7-a2fa982dec30",
+      "claim_id": "C77",
+      "claim": "Older adults showed less adaptation of model-based control to increased reward magnitudes.",
+      "claim_type": "EXPLICIT",
+      "source": "They showed less adaptation of model-based control to increased reward magnitudes and to increased demands on structure learning or working memory.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:34:49.060169Z"
+    },
+    {
+      "id": "8e854f9b-140c-4f5e-bf41-8523d32363bf",
+      "content_id": "36ee755e-b347-4692-a8d7-a2fa982dec30",
+      "claim_id": "C78",
+      "claim": "Older adults showed less adaptation of model-based control to increased demands on structure learning or working memory.",
+      "claim_type": "EXPLICIT",
+      "source": "They showed less adaptation of model-based control to increased reward magnitudes and to increased demands on structure learning or working memory.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:34:49.060169Z"
+    },
+    {
+      "id": "aace2fe1-721c-4617-9167-d2a2bd9392f1",
+      "content_id": "36ee755e-b347-4692-a8d7-a2fa982dec30",
+      "claim_id": "C79",
+      "claim": "Reduced adaptation of decision-making strategies in older adults is not solely due to older adults having more difficulties with performing the task.",
+      "claim_type": "EXPLICIT",
+      "source": "Crucially, we also observed reduced metacontrol in a subsample of younger and older adults who were matched for overall reward obtained. This indicates that the reduced adaptation of decision-making strategies is not solely due to older adults having more difficulties with performing the task.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the findings from the performance-matched subsample.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:34:49.060169Z"
+    },
+    {
+      "id": "57b45127-65d4-423b-818c-f106c12f53d8",
+      "content_id": "36ee755e-b347-4692-a8d7-a2fa982dec30",
+      "claim_id": "C80",
+      "claim": "The findings point to specific aging-related deficits in the metacontrol of decision-making strategies.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings point to specific aging-related deficits in the metacontrol of decision-making strategies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the overall findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:34:49.060169Z"
+    },
+    {
+      "id": "de285130-4440-4ced-a060-421b1725d027",
+      "content_id": "36ee755e-b347-4692-a8d7-a2fa982dec30",
+      "claim_id": "C81",
+      "claim": "The reduction of model-based control in older adults may reflect aging-related difficulties in representing the structure of the task.",
+      "claim_type": "EXPLICIT",
+      "source": "The reduction of model-based control in older adults may reflect aging-related difficulties in representing the structure of the task.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:34:49.060169Z"
+    },
+    {
+      "id": "c911d851-6b91-471c-85b8-10988b96f763",
+      "content_id": "36ee755e-b347-4692-a8d7-a2fa982dec30",
+      "claim_id": "C82",
+      "claim": "Lower transition learning rates in older adults indicate that they incorporated information about changes in the task transition structure more slowly.",
+      "claim_type": "EXPLICIT",
+      "source": "Lower transition learning rates in older adults indicate that they incorporated information about changes in the task transition structure more slowly (see Materials and methods section for an alternative interpretation), which suggests a more blurred representation of the task structure in older adults.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the modeling results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:34:49.060169Z"
+    },
+    {
+      "id": "f36debe6-406d-4e7c-a6fa-28cec52914a9",
+      "content_id": "36ee755e-b347-4692-a8d7-a2fa982dec30",
+      "claim_id": "C83",
+      "claim": "Lower transition learning rates in older adults suggest a more blurred representation of the task structure.",
+      "claim_type": "EXPLICIT",
+      "source": "Lower transition learning rates in older adults indicate that they incorporated information about changes in the task transition structure more slowly (see Materials and methods section for an alternative interpretation), which suggests a more blurred representation of the task structure in older adults.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the modeling results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:34:49.060169Z"
+    },
+    {
+      "id": "e41bac77-c7f9-4303-92f3-af4af2714bc1",
+      "content_id": "36ee755e-b347-4692-a8d7-a2fa982dec30",
+      "claim_id": "C84",
+      "claim": "Older adults showed less slowing of second-stage responses in revaluation trials.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, older adults showed less slowing of second-stage responses in revaluation trials.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the reaction time analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:34:49.060169Z"
+    },
+    {
+      "id": "d918c333-05d2-455f-b4b7-9eff57318bcc",
+      "content_id": "36ee755e-b347-4692-a8d7-a2fa982dec30",
+      "claim_id": "C85",
+      "claim": "Slowed reaction times after surprising transitions could be explained by inhibition of motor and cognitive processes after surprising events.",
+      "claim_type": "EXPLICIT",
+      "source": "Slowed reaction times after surprising transitions have already been reported by other studies using sequential decision-making tasks (Decker et al., 2016; Deserno et al., 2015; Shahar et al., 2019) and could be explained by inhibition of motor and cognitive processes after surprising events (Wessel and Aron, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical explanation for the reaction time findings, supported by citations.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:34:49.060169Z"
+    },
+    {
+      "id": "af499a3a-d995-4b90-8f1e-cd6867822d72",
+      "content_id": "36ee755e-b347-4692-a8d7-a2fa982dec30",
+      "claim_id": "C86",
+      "claim": "Less differentiated responses after revaluation trials and non-revaluation trials in older adults suggest that they had a less accurate representation of the task.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, the less differentiated responses after revaluation trials and non-revaluation trials in older adults suggest that they had a less accurate representation of the task.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the reaction time findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:34:49.060169Z"
+    },
+    {
+      "id": "cd29c9ce-e3bd-4784-916a-5e8935a25e50",
+      "content_id": "36ee755e-b347-4692-a8d7-a2fa982dec30",
+      "claim_id": "C87",
+      "claim": "Older adults who showed more slowing on the revaluation trials also showed more model-based control.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this line of reasoning, we found that older adults who showed more slowing on the revaluation trials, also showed more model-based control.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the analysis of the relationship between reaction times and model-based control.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:34:49.060169Z"
+    },
+    {
+      "id": "71793c67-53e4-4dda-9579-9f070b91b90e",
+      "content_id": "36ee755e-b347-4692-a8d7-a2fa982dec30",
+      "claim_id": "C88",
+      "claim": "Aging-related alterations in neuromodulation reduce the signal-to-noise ratio in neural information processing and thus reduce representational distinctiveness.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been suggested that aging-related alterations in neuromodulation reduce the signal-to-noise ratio in neural information processing and thus reduce representational distinctiveness (Li et al., 2001; Li and Rieckmann, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical explanation from prior research, supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:34:49.060169Z"
+    },
+    {
+      "id": "3489ff7c-099e-420f-96c5-e289232b56b3",
+      "content_id": "36ee755e-b347-4692-a8d7-a2fa982dec30",
+      "claim_id": "C89",
+      "claim": "Reduced signal-to-noise ratio would make it more difficult to maintain and use a representation of the task structure which would impair model-based decision making.",
+      "claim_type": "EXPLICIT",
+      "source": "This would make it more difficult to maintain and use a representation of the task structure which would impair model-based decision making.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference connecting neurobiological changes to cognitive deficits.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:34:49.060169Z"
+    },
+    {
+      "id": "393afad5-581d-4f06-95f8-8c6a69e08025",
+      "content_id": "36ee755e-b347-4692-a8d7-a2fa982dec30",
+      "claim_id": "C90",
+      "claim": "Older adults show structural decline of prefrontal and hippocampal brain regions.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, prefrontal and hippocampal brain regions are important for the representation of task structures (Koechlin, 2016; Schuck et al., 2016; Vikbladh et al., 2019). Older adults show structural decline of these brain regions (Raz et al., 2005; Resnick et al., 2003), which might limit their ability to use a task model for model-based decision making.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from prior neuroscience research, supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:34:49.060169Z"
+    },
+    {
+      "id": "32ef8004-73b0-4d1d-9b97-55e2f2de29f4",
+      "content_id": "36ee755e-b347-4692-a8d7-a2fa982dec30",
+      "claim_id": "C91",
+      "claim": "Structural decline of prefrontal and hippocampal regions might limit older adults' ability to use a task model for model-based decision making.",
+      "claim_type": "EXPLICIT",
+      "source": "Older adults show structural decline of these brain regions (Raz et al., 2005; Resnick et al., 2003), which might limit their ability to use a task model for model-based decision making.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference connecting neurobiological changes to cognitive deficits.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:34:49.060169Z"
+    },
+    {
+      "id": "532c6a07-b067-494b-92d5-f38e1189dd51",
+      "content_id": "36ee755e-b347-4692-a8d7-a2fa982dec30",
+      "claim_id": "C92",
+      "claim": "Underrecruitment of prefrontal brain regions in older adults is linked to impaired learning of task contingencies.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, underrecruitment of prefrontal brain regions in older adults is linked to impaired learning of task contingencies (Eppinger et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from prior research, supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:34:49.060169Z"
+    },
+    {
+      "id": "8794cc84-c1a0-4002-9ccf-7389cb6fdecf",
+      "content_id": "36ee755e-b347-4692-a8d7-a2fa982dec30",
+      "claim_id": "C93",
+      "claim": "Transient inhibition of prefrontal areas leads to a reduction in model-based control and in the learning of sequential relations during value-based decision making.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the importance of prefrontal brain regions for the representation of task structure is also in line with findings that transient inhibition of prefrontal areas leads to a reduction in model-based control and in the learning of sequential relations during value-based decision making (Smittenaar et al., 2013; Wittkuhn et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from prior research, supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:34:49.060169Z"
+    },
+    {
+      "id": "e7b40115-5a19-45f9-8233-b68a594f1a8f",
+      "content_id": "36ee755e-b347-4692-a8d7-a2fa982dec30",
+      "claim_id": "C94",
+      "claim": "Reduced metacontrol might be related to aging-related decline in dopaminergic neuromodulation.",
+      "claim_type": "EXPLICIT",
+      "source": "One interpretation of these results could be in terms of aging-related decline in dopaminergic neuromodulation (B\u00e4ckman et al., 2006) which has been suggested to be involved in the regulation of effortful cognitive processes (Cools, 2016; Westbrook and Braver, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical explanation for the findings, supported by citations.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:34:49.060169Z"
+    },
+    {
+      "id": "43ab8b07-5a09-44fe-b715-d1d5777a312f",
+      "content_id": "36ee755e-b347-4692-a8d7-a2fa982dec30",
+      "claim_id": "C95",
+      "claim": "Reduced metacontrol might be related to aging-related tissue loss in brain regions such as dorsal anterior cingulate cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "Alternatively, reduced metacontrol might be related to aging-related tissue loss in brain regions such as dorsal anterior cingulate cortex (Resnick et al., 2003) that have been implicated in the modulation of cognitive effort (Shenhav et al., 2013; Silvetti et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical explanation for the findings, supported by citations.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:34:49.060169Z"
+    },
+    {
+      "id": "a9205426-abe7-4417-9128-0eacdf880521",
+      "content_id": "36ee755e-b347-4692-a8d7-a2fa982dec30",
+      "claim_id": "C96",
+      "claim": "When assuming perfect learning of changes in the task transition structure, even older adults show differences in model-based weights as a function of the transition stability condition.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, when assuming perfect learning of changes in the task transition structure, we find that even older adults show differences in model-based weights as a function of the transition stability condition (compare to Table S3 in Supplementary file 1 and Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from an additional analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:34:49.060169Z"
+    },
+    {
+      "id": "77576d57-6bae-4114-95ee-83280f9b1187",
+      "content_id": "36ee755e-b347-4692-a8d7-a2fa982dec30",
+      "claim_id": "C97",
+      "claim": "Older adults show less signs of a model-based strategy with perfect transition learning in variable-transitions blocks than in stable-transitions blocks.",
+      "claim_type": "EXPLICIT",
+      "source": "This indicates that older adults show less signs of a model-based strategy with perfect transition learning in variable-transitions blocks than in stable-transitions blocks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the additional analysis.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:34:49.060169Z"
+    },
+    {
+      "id": "9193862e-442b-4986-90bd-e46be43fe906",
+      "content_id": "36ee755e-b347-4692-a8d7-a2fa982dec30",
+      "claim_id": "C98",
+      "claim": "Some participants, especially some older adults, showed reduced model-based weights in high-stakes compared to low-stakes trials.",
+      "claim_type": "EXPLICIT",
+      "source": "Some participants and especially some older adults showed the opposite of the expected pattern, that is reduced model-based weights in high-stakes compared to low-stakes trials.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes individual differences observed in the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:34:49.060169Z"
+    },
+    {
+      "id": "fc7411d3-a2f7-42b5-b884-4396247ca2ee",
+      "content_id": "36ee755e-b347-4692-a8d7-a2fa982dec30",
+      "claim_id": "C99",
+      "claim": "Older adults are relatively insensitive to costs and benefits when arbitrating between decision-making strategies.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results suggest that older adults are relatively insensitive to costs and benefits when arbitrating between decision-making strategies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the overall findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:34:49.060169Z"
+    },
+    {
+      "id": "d63e8555-90a6-4745-8fd1-3f06acb8724a",
+      "content_id": "36ee755e-b347-4692-a8d7-a2fa982dec30",
+      "claim_id": "C100",
+      "claim": "Incentives boosted performance of both younger and older adults in a cognitive control paradigm, but these effects are weaker and more gradual in older adults.",
+      "claim_type": "EXPLICIT",
+      "source": "However, a recent study by Yee et al. (2019) found that incentives boosted performance of both younger and older adults in a cognitive control paradigm, but that these effects are weaker and more gradual in older adults.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from prior research, supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:34:49.060169Z"
+    },
+    {
+      "id": "a9eae838-5a8e-4957-bde5-155b833a1553",
+      "content_id": "36ee755e-b347-4692-a8d7-a2fa982dec30",
+      "claim_id": "C101",
+      "claim": "It is possible that older adults take longer to implement effective metacontrol and only show adaptation when task conditions remain stable over a longer period of time.",
+      "claim_type": "EXPLICIT",
+      "source": "It is possible that older adults take longer to implement effective metacontrol and only show adaptation when task conditions remain stable over a longer period of time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative explanation for differences between studies.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:34:49.060169Z"
+    },
+    {
+      "id": "a493b0e7-520c-4c30-a158-465494c29ae3",
+      "content_id": "36ee755e-b347-4692-a8d7-a2fa982dec30",
+      "claim_id": "C102",
+      "claim": "Older adults tend to maximize accuracy instead of trading off accuracy against response speed in a perceptual decision making task.",
+      "claim_type": "EXPLICIT",
+      "source": "This would be consistent with the finding that older adults tend to maximize accuracy instead of trading off accuracy against response speed in a perceptual decision making task (Starns and Ratcliff, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from prior research, supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:34:49.060169Z"
+    },
+    {
+      "id": "d771f671-4e20-41ec-aa14-18160a02f48d",
+      "content_id": "36ee755e-b347-4692-a8d7-a2fa982dec30",
+      "claim_id": "C103",
+      "claim": "The study tested 63 younger adults and 83 older adults.",
+      "claim_type": "EXPLICIT",
+      "source": "We tested 63 younger adults and 83 older adults for this study.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the initial sample size.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:34:49.060169Z"
+    },
+    {
+      "id": "076e3281-9f4a-4fc7-bfaa-5601dd3842ca",
+      "content_id": "36ee755e-b347-4692-a8d7-a2fa982dec30",
+      "claim_id": "C104",
+      "claim": "Data from 22 participants were excluded from data analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "We excluded data from 22 participants from data analysis: Data from one younger adult and one older adult were excluded because they were unable to respond on more than 50% of the trials in the decision-making task. Data from two older adults were excluded because they did not complete the decision-making task. Data from one older adult were excluded because of consistent perseverative choice behavior on the first stage of the task. Data from 17 older adults were excluded because of sub-threshold performance in a dementia screening test (Montreal Cognitive Assessment with a threshold of 26 points; Nasreddine et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the exclusion criteria and numbers.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:34:49.060169Z"
+    },
+    {
+      "id": "f8e7c503-c359-4d32-a27e-b9cb3a81fec4",
+      "content_id": "36ee755e-b347-4692-a8d7-a2fa982dec30",
+      "claim_id": "C105",
+      "claim": "The effective sample included 62 younger adults (39 female, age range: 18\u201330 years, mean age: 22.7 years) and 62 older adults (32 female, age range: 57\u201380 years, mean age: 70.2 years).",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the effective sample included 62 younger adults (39 female, age range: 18\u201330 years, mean age: 22.7 years) and 62 older adults (32 female, age range: 57\u201380 years, mean age: 70.2 years).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the final sample characteristics.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:34:49.060169Z"
+    },
+    {
+      "id": "66d80e9c-7dbe-4424-b225-9110ba73ac2b",
+      "content_id": "36ee755e-b347-4692-a8d7-a2fa982dec30",
+      "claim_id": "C106",
+      "claim": "Older adults showed reduced fluid abilities (working memory, processing speed) but increased crystallized abilities (verbal intelligence) compared to younger adults.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with previous findings in larger population-based samples (Li et al., 2004), we found reduced fluid abilities (working memory, processing speed) but increased crystallized abilities (verbal intelligence) in older adults.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the psychometric assessment, consistent with prior research.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:34:49.060169Z"
+    },
+    {
+      "id": "aa6544e5-5b72-44ed-b25c-297ad0b019e1",
+      "content_id": "36ee755e-b347-4692-a8d7-a2fa982dec30",
+      "claim_id": "C107",
+      "claim": "There were no differences between age groups in the self-reported tendency to engage in and enjoy effortful cognitive activities (Need for Cognition).",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, we found no differences between age groups in the self-reported tendency to engage in and enjoy effortful cognitive activities (Need for Cognition).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the psychometric assessment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:34:49.060169Z"
+    },
+    {
+      "id": "ebda18bf-6a9f-4bab-a422-03fcbd2e8984",
+      "content_id": "36ee755e-b347-4692-a8d7-a2fa982dec30",
+      "claim_id": "C108",
+      "claim": "The experiment consisted of 320 trials that were divided into four blocks of 80 trials: two stable-transitions blocks and two variable-transitions blocks.",
+      "claim_type": "EXPLICIT",
+      "source": "The experiment consisted of 320 trials that were divided into four blocks of 80 trials: two stable-transitions blocks and two variable-transitions blocks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental design.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:34:49.060169Z"
+    },
+    {
+      "id": "1d4fd106-639b-475b-b042-0504a48254b2",
+      "content_id": "36ee755e-b347-4692-a8d7-a2fa982dec30",
+      "claim_id": "C109",
+      "claim": "Stable-transitions blocks and variable-transitions blocks alternated.",
+      "claim_type": "EXPLICIT",
+      "source": "Stable-transitions blocks and variable-transitions blocks alternated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental design.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:34:49.060169Z"
+    },
+    {
+      "id": "6569279f-353a-4bfa-b093-b3ca88c5f4b0",
+      "content_id": "36ee755e-b347-4692-a8d7-a2fa982dec30",
+      "claim_id": "C110",
+      "claim": "In each block, half of the trials were low-stakes trials and the other half were high-stakes trials, appearing in random order.",
+      "claim_type": "EXPLICIT",
+      "source": "In each block, half of the trials were low-stakes trials and the other half of the trials were high-stakes trials, appearing in random order and being counter-balanced over the two first-stage states.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental design.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:34:49.060169Z"
+    },
+    {
+      "id": "568171a9-1891-405b-b774-f2e3bde8531d",
+      "content_id": "36ee755e-b347-4692-a8d7-a2fa982dec30",
+      "claim_id": "C111",
+      "claim": "Four trial sequences were created that determined the sequence of first-stage states, second-stage rewards, stakes conditions, and transition variability conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "In order to decrease variability in task performance between subjects, we created four trial sequences that determined the sequence of first-stage states, second-stage rewards, stakes conditions, and transition variability conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental design.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:34:49.060169Z"
+    },
+    {
+      "id": "de8e7eb6-f211-4a51-b99d-56d999d15cdf",
+      "content_id": "36ee755e-b347-4692-a8d7-a2fa982dec30",
+      "claim_id": "C112",
+      "claim": "Each participant performed the task with one of the four trial sequences and trial sequences were counter-balanced across age groups.",
+      "claim_type": "EXPLICIT",
+      "source": "Each participant performed the task with one of these four trials sequences and trial sequences were counter-balanced across age groups.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental design.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:34:49.060169Z"
+    },
+    {
+      "id": "0f100e3c-0ef2-4826-b012-16f3a2989f84",
+      "content_id": "36ee755e-b347-4692-a8d7-a2fa982dec30",
+      "claim_id": "C113",
+      "claim": "For younger adults, 0.2% of trials were aborted at the first stage and 1.2% were aborted at the second stage.",
+      "claim_type": "EXPLICIT",
+      "source": "For younger adults, 0.2% of trials were aborted at the first stage and 1.2% were aborted at the second stage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data quality.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:34:49.060169Z"
+    },
+    {
+      "id": "70dfe407-5297-407f-99a9-8ab42011da02",
+      "content_id": "36ee755e-b347-4692-a8d7-a2fa982dec30",
+      "claim_id": "C114",
+      "claim": "For older adults, 1.6% of trials were aborted at the first stage and 2.1% were aborted at the second stage.",
+      "claim_type": "EXPLICIT",
+      "source": "For older adults, 1.6% of trials were aborted at the first stage and 2.1% were aborted at the second stage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data quality.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:34:49.060169Z"
+    },
+    {
+      "id": "2905e02a-cd40-4aa6-b967-328448585938",
+      "content_id": "36ee755e-b347-4692-a8d7-a2fa982dec30",
+      "claim_id": "C115",
+      "claim": "A hybrid reinforcement-learning model was used to describe participants' behavior in the decision-making task.",
+      "claim_type": "EXPLICIT",
+      "source": "We used an established hybrid reinforcement-learning model (Daw et al., 2011; Gl\u00e4scher et al., 2010; Kool et al., 2017b) to describe participants' behavior in the decision-making task.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the modeling approach, supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:34:49.060169Z"
+    },
+    {
+      "id": "4cfa6936-e02d-4d8c-9b02-ed6be2d22fe8",
+      "content_id": "36ee755e-b347-4692-a8d7-a2fa982dec30",
+      "claim_id": "C116",
+      "claim": "The model consisted of a model-free and a model-based learner that both learned an expectation of long-term future reward Q(s,a) for each combination of state and action.",
+      "claim_type": "EXPLICIT",
+      "source": "The model consisted of a model-free and a model-based learner that both learned an expectation of long-term future reward Q(s,a) for each combination of state and action.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the computational model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:34:49.060169Z"
+    },
+    {
+      "id": "5c2f8254-dba1-4b9b-b48f-45f3d016ef92",
+      "content_id": "36ee755e-b347-4692-a8d7-a2fa982dec30",
+      "claim_id": "C117",
+      "claim": "The model-free learner used the SARSA(\u03bb) temporal difference learning algorithm to update reward expectations.",
+      "claim_type": "EXPLICIT",
+      "source": "The model-free learner then used the SARSA(\u03bb) temporal difference learning algorithm (Rummery and Niranjan, 1994) to update reward expectations based on the discrepancy between the expected and experienced reward.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the computational model, supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:34:49.060169Z"
+    },
+    {
+      "id": "aedeeaaa-c91a-47af-b24a-0e3b2fa22608",
+      "content_id": "36ee755e-b347-4692-a8d7-a2fa982dec30",
+      "claim_id": "C118",
+      "claim": "The model-based learner predicted reward by learning a transition probability T(s2|s1,a1) that represented the probability of transitioning to the second-stage state s2 after selecting action a1 in the first-stage state s1.",
+      "claim_type": "EXPLICIT",
+      "source": "The model-based learner predicted reward by learning a transition probability T(s2|s1,a1) that represented the probability of transitioning to the second-stage state s2 after selecting action a1 in the first-stage state s1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the computational model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:34:49.060169Z"
+    },
+    {
+      "id": "4a425a63-e5a3-498c-b2dc-6121f50d7f6b",
+      "content_id": "36ee755e-b347-4692-a8d7-a2fa982dec30",
+      "claim_id": "C119",
+      "claim": "Model-free and model-based reward expectations in the first stage were integrated using a model-based weight \u03c9.",
+      "claim_type": "EXPLICIT",
+      "source": "Model-free and model-based reward expectations in the first stage were integrated using a model-based weight \u03c9 (ranging from 0 to 1):",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the computational model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:34:49.060169Z"
+    },
+    {
+      "id": "0e039155-e604-49ad-bdfd-d081d05c1f79",
+      "content_id": "36ee755e-b347-4692-a8d7-a2fa982dec30",
+      "claim_id": "C120",
+      "claim": "Model-based weights close to 0 reflect model-free decision making and model-based weights close to one reflect model-based decision making.",
+      "claim_type": "EXPLICIT",
+      "source": "Model-based weights close to 0 reflect model-free decision making and model-based weights close to one reflect model-based decision making.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the interpretation of the model parameter.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:34:49.060169Z"
+    },
+    {
+      "id": "939c1b50-0c83-495c-b416-f57d77c3a956",
+      "content_id": "36ee755e-b347-4692-a8d7-a2fa982dec30",
+      "claim_id": "C121",
+      "claim": "Intermediate values of the model-based weight indicate that behavior reflects a combination of both decision-making strategies.",
+      "claim_type": "EXPLICIT",
+      "source": "Intermediate values of the model-based weight indicate that behavior reflects a combination of both decision-making strategies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the interpretation of the model parameter.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:34:49.060169Z"
+    },
+    {
+      "id": "590b0df0-caca-4406-8f01-c21241addefd",
+      "content_id": "36ee755e-b347-4692-a8d7-a2fa982dec30",
+      "claim_id": "C122",
+      "claim": "Four model-based weights were estimated for every participant: one for each combination of stakes condition and transition stability condition.",
+      "claim_type": "EXPLICIT",
+      "source": "In order to test for differences in decision-making strategies between task conditions, we estimated for every participant four model-based weights: one for each combination of stakes condition and transition stability condition (see Materials and methods section for details).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the modeling approach.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:34:49.060169Z"
+    },
+    {
+      "id": "7ff15359-c4c3-4e0a-8fa0-d515a02fe241",
+      "content_id": "36ee755e-b347-4692-a8d7-a2fa982dec30",
+      "claim_id": "C123",
+      "claim": "The identifiability of model parameters with the task design was substantial and similar to previous versions of the sequential decision-making task.",
+      "claim_type": "EXPLICIT",
+      "source": "Analyses on parameter recovery (see Appendix 2) showed that the identifiability of model parameters with our task design was substantial and similar to previous versions of the sequential decision-making task (cf., Kool et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from parameter recovery analyses.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:34:49.060169Z"
+    },
+    {
+      "id": "a1fbcecd-30c4-4cb7-ad01-dbee88a85dcf",
+      "content_id": "36ee755e-b347-4692-a8d7-a2fa982dec30",
+      "claim_id": "C124",
+      "claim": "A posterior predictive check revealed a good absolute model fit because the model could reproduce individual differences in observed behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "A posterior predictive check (see Appendix 2) revealed a good absolute (as opposed to relative) model fit because the model could reproduce individual differences in observed behavior.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from model validation analyses.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:34:49.060169Z"
+    },
+    {
+      "id": "99302e0d-478a-4c9e-a627-12648716984f",
+      "content_id": "36ee755e-b347-4692-a8d7-a2fa982dec30",
+      "claim_id": "C125",
+      "claim": "The performance-matching procedure yielded a subsample of 26 younger adults and 26 older adults.",
+      "claim_type": "EXPLICIT",
+      "source": "This procedure yielded a subsample of 26 younger adults (14 female, age range: 18\u201327 years, mean age: 22.4 years) and 26 older adults (14 female, age range: 57\u201379 years, mean age: 69.1 years).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the performance-matched subsample.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:34:49.060169Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "5792a160-f2bb-4c5d-8327-a31c52739bb8",
+      "content_id": "36ee755e-b347-4692-a8d7-a2fa982dec30",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The study employed a sequential decision-making task with 62 younger and 62 older adults. The task featured a two-stage structure with spaceships and planets, manipulating reward stakes (1x vs 5x) and transition stability (stable vs variable blocks). The task was designed such that model-based strategies led to higher payoffs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The experimental design is clearly described with appropriate sample sizes (C35, C105), detailed task structure (C37-C50), and proper counterbalancing procedures (C111-C112). Exclusion criteria are transparent (C104), and data quality metrics are reported (C113-C114). The task design appropriately dissociates model-free from model-based strategies.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:34:49.060169Z"
+    },
+    {
+      "id": "82d43293-1b2b-4a6f-bfb1-869cac35e617",
+      "content_id": "36ee755e-b347-4692-a8d7-a2fa982dec30",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Older adults showed reduced model-based decision making compared to younger adults, even when model-based strategies led to higher payoffs. This finding replicates prior work and suggests the reduction reflects cognitive limitations rather than motivational factors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The main effect of age on model-based control is supported by hierarchical regression analysis with credible intervals excluding zero (C5). The replication of prior findings (C53) and the critical test using a task with control-reward trade-off (C60, C71) provide converging evidence that the effect reflects cognitive rather than motivational factors (C72).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:34:49.060169Z"
+    },
+    {
+      "id": "92fb817a-fc63-45ae-8db5-517c30932c42",
+      "content_id": "36ee755e-b347-4692-a8d7-a2fa982dec30",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Older adults showed reduced metacontrol of decision-making strategies, with less adaptation to reward magnitude and transition stability manipulations compared to younger adults. This effect persisted in a performance-matched subsample, indicating specific deficits in metacontrol rather than general task difficulty.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The interaction effects between age and both stakes condition and transition stability are supported by credible intervals (C6, C76-C78). The critical control analysis using performance-matched samples (C79) strengthens the interpretation that this reflects specific metacontrol deficits (C80). Younger adults showed expected modulation by both manipulations (C73-C75), providing a proper comparison.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:34:49.060169Z"
+    },
+    {
+      "id": "b9df9875-4c62-4f84-8252-8686193478a8",
+      "content_id": "36ee755e-b347-4692-a8d7-a2fa982dec30",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Older adults showed lower transition learning rates, suggesting they incorporated information about changes in task structure more slowly and had less accurate representations of the task structure.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "While the modeling results show age differences in transition learning rates (C58-C59), the authors acknowledge an alternative interpretation exists (C58, C82). The interpretation that this reflects slower incorporation of transition information (C82) or blurred task representations (C83) is plausible but not definitively established. Additional validation would strengthen this claim.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:34:49.060169Z"
+    },
+    {
+      "id": "f5ca188d-a7c9-4723-842a-a8964017aa83",
+      "content_id": "36ee755e-b347-4692-a8d7-a2fa982dec30",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Older adults showed less differentiated reaction time responses to surprising versus unsurprising transitions (revaluation vs non-revaluation trials), suggesting less accurate task structure representations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The interaction effect showing reduced RT slowing in older adults for revaluation trials is supported by hierarchical regression (C66, C84). The interpretation builds on established findings (C33, C85) and the hypothesis was pre-specified (C34). The inference that this reflects less accurate task representations (C86) is reasonable given the convergence with modeling results.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:34:49.060169Z"
+    },
+    {
+      "id": "ecd4508d-2173-44c5-a0b7-57bbbc76f06f",
+      "content_id": "36ee755e-b347-4692-a8d7-a2fa982dec30",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Individual differences in model-based control were associated with reaction time slowing on revaluation trials, with participants showing more model-based control also showing greater RT slowing after surprising transitions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The correlation between model-based weights and RT slowing is demonstrated with hierarchical regression showing positive interaction effects (C68, C87). This relationship was found in both age groups, though with varying strength of evidence. The interpretation that this links model-based control to task structure representation accuracy (C70) is reasonable.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:34:49.060169Z"
+    },
+    {
+      "id": "e5bfaf84-2139-4272-9fb2-f3be99e6c794",
+      "content_id": "36ee755e-b347-4692-a8d7-a2fa982dec30",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "A hybrid reinforcement learning model with separate model-free and model-based learners was used to quantify decision-making strategies. The model showed good parameter identifiability and absolute fit to observed behavior.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The computational model is well-established (C115) and clearly described (C116-C121). Critical validation analyses including parameter recovery (C123) and posterior predictive checks (C124) demonstrate adequate model performance. The approach of estimating separate model-based weights for each condition (C122) is appropriate for testing the hypotheses.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:34:49.060169Z"
+    },
+    {
+      "id": "bb2c7ee5-1c42-42a7-979e-8d814bdc7b29",
+      "content_id": "36ee755e-b347-4692-a8d7-a2fa982dec30",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Older adults showed the expected pattern of reduced fluid abilities but increased crystallized abilities compared to younger adults, with no differences in need for cognition.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The psychometric assessment shows the expected aging pattern consistent with prior research (C106). The lack of age differences in need for cognition (C107) helps rule out motivational explanations for the main findings. These are appropriate control measures for the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:34:49.060169Z"
+    },
+    {
+      "id": "769bb43b-2852-434c-8197-969d3d910791",
+      "content_id": "36ee755e-b347-4692-a8d7-a2fa982dec30",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The authors propose that reduced model-based control in older adults may reflect aging-related difficulties in representing task structure, potentially due to structural decline in prefrontal and hippocampal regions or alterations in neuromodulation affecting signal-to-noise ratio.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "These are theoretical explanations (C26-C28, C81, C88-C93) supported by citations to prior work but not directly tested in the current study. While the proposed mechanisms are plausible and consistent with the literature, they remain speculative without direct neurobiological measurements. The current behavioral data are consistent with but do not prove these mechanisms.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:34:49.060169Z"
+    },
+    {
+      "id": "64eb7907-847d-451e-8d5b-c187c0cb8fc4",
+      "content_id": "36ee755e-b347-4692-a8d7-a2fa982dec30",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Reduced metacontrol in older adults might be related to aging-related decline in dopaminergic neuromodulation or tissue loss in dorsal anterior cingulate cortex.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "These are speculative mechanistic explanations (C94-C95) supported by citations but not tested in the current study. The authors appropriately present these as possible interpretations rather than established findings. Without neurobiological measurements, these remain plausible hypotheses requiring future investigation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:34:49.060169Z"
+    },
+    {
+      "id": "c4707f27-9b05-4a92-b5e0-4edd05c15a7a",
+      "content_id": "36ee755e-b347-4692-a8d7-a2fa982dec30",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Additional analyses and discussion address individual differences, alternative interpretations, and comparisons with other studies regarding older adults' sensitivity to costs and benefits in decision-making.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The supplementary analyses with perfect transition learning assumptions (C96-C97) provide additional insight into the mechanisms. The acknowledgment of individual differences (C98) and alternative interpretations (C99-C102) demonstrates appropriate scientific caution. These discussions contextualize the findings within the broader literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:34:49.060169Z"
+    },
+    {
+      "id": "43648b26-da6c-420d-b3f5-ab0da824320e",
+      "content_id": "36ee755e-b347-4692-a8d7-a2fa982dec30",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "A performance-matching procedure yielded a subsample of 26 younger and 26 older adults matched on task performance.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The performance-matching procedure is clearly described and yielded appropriately sized subsamples (C125). This methodological approach provides an important control for testing whether metacontrol differences are independent of overall task performance, though the authors appropriately note limitations of this approach.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:34:49.060169Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "b92d976a-c18a-441a-b6f3-3860085c23c0",
+      "result_id": "5792a160-f2bb-4c5d-8327-a31c52739bb8"
+    },
+    {
+      "claim_id": "a0992816-6b15-42b3-89ee-a67819a8a613",
+      "result_id": "5792a160-f2bb-4c5d-8327-a31c52739bb8"
+    },
+    {
+      "claim_id": "483b4329-2232-4367-8218-e1cc06a5659a",
+      "result_id": "5792a160-f2bb-4c5d-8327-a31c52739bb8"
+    },
+    {
+      "claim_id": "02799cf9-795b-4a9d-bd7b-eba28f6cfee7",
+      "result_id": "5792a160-f2bb-4c5d-8327-a31c52739bb8"
+    },
+    {
+      "claim_id": "1ed47dd9-0fe0-49b8-8673-ba25450ec45a",
+      "result_id": "5792a160-f2bb-4c5d-8327-a31c52739bb8"
+    },
+    {
+      "claim_id": "fcdfc751-82c5-4e39-85c0-daf49f1dc146",
+      "result_id": "5792a160-f2bb-4c5d-8327-a31c52739bb8"
+    },
+    {
+      "claim_id": "1544d012-97f9-405c-8da2-045cb18bd23e",
+      "result_id": "5792a160-f2bb-4c5d-8327-a31c52739bb8"
+    },
+    {
+      "claim_id": "b7ec4094-7272-4e22-a0b1-f6dcb91e4bc8",
+      "result_id": "5792a160-f2bb-4c5d-8327-a31c52739bb8"
+    },
+    {
+      "claim_id": "43d4ef36-cca8-46d4-a20d-e3049184bf98",
+      "result_id": "5792a160-f2bb-4c5d-8327-a31c52739bb8"
+    },
+    {
+      "claim_id": "c3b232ca-f473-47e8-a725-5e60030d891f",
+      "result_id": "5792a160-f2bb-4c5d-8327-a31c52739bb8"
+    },
+    {
+      "claim_id": "ba2cd99b-3e06-4371-8e28-9ca83c565826",
+      "result_id": "5792a160-f2bb-4c5d-8327-a31c52739bb8"
+    },
+    {
+      "claim_id": "aa19301b-1524-4092-8920-412a56f33136",
+      "result_id": "5792a160-f2bb-4c5d-8327-a31c52739bb8"
+    },
+    {
+      "claim_id": "aa4ea2af-9f77-4567-86cf-dc0df4f36060",
+      "result_id": "5792a160-f2bb-4c5d-8327-a31c52739bb8"
+    },
+    {
+      "claim_id": "04b6e548-c2d2-463b-8cdb-9d4d71d579a4",
+      "result_id": "5792a160-f2bb-4c5d-8327-a31c52739bb8"
+    },
+    {
+      "claim_id": "825cb73d-fbc6-4384-8ae4-8d8780957555",
+      "result_id": "5792a160-f2bb-4c5d-8327-a31c52739bb8"
+    },
+    {
+      "claim_id": "3a53d063-a647-4b5a-b046-74c750d1c740",
+      "result_id": "5792a160-f2bb-4c5d-8327-a31c52739bb8"
+    },
+    {
+      "claim_id": "d771f671-4e20-41ec-aa14-18160a02f48d",
+      "result_id": "5792a160-f2bb-4c5d-8327-a31c52739bb8"
+    },
+    {
+      "claim_id": "076e3281-9f4a-4fc7-bfaa-5601dd3842ca",
+      "result_id": "5792a160-f2bb-4c5d-8327-a31c52739bb8"
+    },
+    {
+      "claim_id": "f8e7c503-c359-4d32-a27e-b9cb3a81fec4",
+      "result_id": "5792a160-f2bb-4c5d-8327-a31c52739bb8"
+    },
+    {
+      "claim_id": "ebda18bf-6a9f-4bab-a422-03fcbd2e8984",
+      "result_id": "5792a160-f2bb-4c5d-8327-a31c52739bb8"
+    },
+    {
+      "claim_id": "1d4fd106-639b-475b-b042-0504a48254b2",
+      "result_id": "5792a160-f2bb-4c5d-8327-a31c52739bb8"
+    },
+    {
+      "claim_id": "6569279f-353a-4bfa-b093-b3ca88c5f4b0",
+      "result_id": "5792a160-f2bb-4c5d-8327-a31c52739bb8"
+    },
+    {
+      "claim_id": "568171a9-1891-405b-b774-f2e3bde8531d",
+      "result_id": "5792a160-f2bb-4c5d-8327-a31c52739bb8"
+    },
+    {
+      "claim_id": "de8e7eb6-f211-4a51-b99d-56d999d15cdf",
+      "result_id": "5792a160-f2bb-4c5d-8327-a31c52739bb8"
+    },
+    {
+      "claim_id": "0f100e3c-0ef2-4826-b012-16f3a2989f84",
+      "result_id": "5792a160-f2bb-4c5d-8327-a31c52739bb8"
+    },
+    {
+      "claim_id": "70dfe407-5297-407f-99a9-8ab42011da02",
+      "result_id": "5792a160-f2bb-4c5d-8327-a31c52739bb8"
+    },
+    {
+      "claim_id": "96bb55be-1a98-4aa6-a0ca-1151b338e3ec",
+      "result_id": "82d43293-1b2b-4a6f-bfb1-869cac35e617"
+    },
+    {
+      "claim_id": "0ed86539-8600-47c0-9028-1290e45fcb9d",
+      "result_id": "82d43293-1b2b-4a6f-bfb1-869cac35e617"
+    },
+    {
+      "claim_id": "04e2fe16-aa16-4ecf-87df-e49ba88f038b",
+      "result_id": "82d43293-1b2b-4a6f-bfb1-869cac35e617"
+    },
+    {
+      "claim_id": "44d30b7b-94b9-4be2-bc92-754ff2c87348",
+      "result_id": "82d43293-1b2b-4a6f-bfb1-869cac35e617"
+    },
+    {
+      "claim_id": "4e6d197a-edbc-4363-9f03-34ee54a53cbd",
+      "result_id": "82d43293-1b2b-4a6f-bfb1-869cac35e617"
+    },
+    {
+      "claim_id": "79e88e2d-a0a9-4346-b14c-c0ed3c5b8f3b",
+      "result_id": "92fb817a-fc63-45ae-8db5-517c30932c42"
+    },
+    {
+      "claim_id": "c27bfa6b-e664-44d3-a2de-6712de2d264f",
+      "result_id": "92fb817a-fc63-45ae-8db5-517c30932c42"
+    },
+    {
+      "claim_id": "a6439760-77b6-42dd-9ac2-c25a0f8ca870",
+      "result_id": "92fb817a-fc63-45ae-8db5-517c30932c42"
+    },
+    {
+      "claim_id": "900ede05-f771-491b-a464-cfa45d483a66",
+      "result_id": "92fb817a-fc63-45ae-8db5-517c30932c42"
+    },
+    {
+      "claim_id": "ec90c76a-9c8f-4d66-8067-ec0a347ab26b",
+      "result_id": "92fb817a-fc63-45ae-8db5-517c30932c42"
+    },
+    {
+      "claim_id": "05f939c5-8365-453f-bec2-85aca35545f9",
+      "result_id": "92fb817a-fc63-45ae-8db5-517c30932c42"
+    },
+    {
+      "claim_id": "56dc4d20-53c6-45b2-8ef4-d3e1c057d444",
+      "result_id": "92fb817a-fc63-45ae-8db5-517c30932c42"
+    },
+    {
+      "claim_id": "8e854f9b-140c-4f5e-bf41-8523d32363bf",
+      "result_id": "92fb817a-fc63-45ae-8db5-517c30932c42"
+    },
+    {
+      "claim_id": "aace2fe1-721c-4617-9167-d2a2bd9392f1",
+      "result_id": "92fb817a-fc63-45ae-8db5-517c30932c42"
+    },
+    {
+      "claim_id": "57b45127-65d4-423b-818c-f106c12f53d8",
+      "result_id": "92fb817a-fc63-45ae-8db5-517c30932c42"
+    },
+    {
+      "claim_id": "2398fd85-61f4-4cd1-88b6-9b59e9ff1050",
+      "result_id": "b9df9875-4c62-4f84-8252-8686193478a8"
+    },
+    {
+      "claim_id": "4383cc76-1791-40aa-a198-fbfbf23000ea",
+      "result_id": "b9df9875-4c62-4f84-8252-8686193478a8"
+    },
+    {
+      "claim_id": "c911d851-6b91-471c-85b8-10988b96f763",
+      "result_id": "b9df9875-4c62-4f84-8252-8686193478a8"
+    },
+    {
+      "claim_id": "f36debe6-406d-4e7c-a6fa-28cec52914a9",
+      "result_id": "b9df9875-4c62-4f84-8252-8686193478a8"
+    },
+    {
+      "claim_id": "295f9535-893e-439a-94a7-72ea5be1cd8d",
+      "result_id": "f5ca188d-a7c9-4723-842a-a8964017aa83"
+    },
+    {
+      "claim_id": "f4c571be-183f-4722-b110-a3b3b442d957",
+      "result_id": "f5ca188d-a7c9-4723-842a-a8964017aa83"
+    },
+    {
+      "claim_id": "60fa2177-43ec-42a4-87d3-b5857137ce61",
+      "result_id": "f5ca188d-a7c9-4723-842a-a8964017aa83"
+    },
+    {
+      "claim_id": "e41bac77-c7f9-4303-92f3-af4af2714bc1",
+      "result_id": "f5ca188d-a7c9-4723-842a-a8964017aa83"
+    },
+    {
+      "claim_id": "d918c333-05d2-455f-b4b7-9eff57318bcc",
+      "result_id": "f5ca188d-a7c9-4723-842a-a8964017aa83"
+    },
+    {
+      "claim_id": "af499a3a-d995-4b90-8f1e-cd6867822d72",
+      "result_id": "f5ca188d-a7c9-4723-842a-a8964017aa83"
+    },
+    {
+      "claim_id": "59a50f89-3ea8-4caa-ba31-8b2aca7ad504",
+      "result_id": "ecd4508d-2173-44c5-a0b7-57bbbc76f06f"
+    },
+    {
+      "claim_id": "82c4dddb-e570-47e0-a82a-dbc448213bc6",
+      "result_id": "ecd4508d-2173-44c5-a0b7-57bbbc76f06f"
+    },
+    {
+      "claim_id": "cd29c9ce-e3bd-4784-916a-5e8935a25e50",
+      "result_id": "ecd4508d-2173-44c5-a0b7-57bbbc76f06f"
+    },
+    {
+      "claim_id": "2905e02a-cd40-4aa6-b967-328448585938",
+      "result_id": "e5bfaf84-2139-4272-9fb2-f3be99e6c794"
+    },
+    {
+      "claim_id": "4cfa6936-e02d-4d8c-9b02-ed6be2d22fe8",
+      "result_id": "e5bfaf84-2139-4272-9fb2-f3be99e6c794"
+    },
+    {
+      "claim_id": "5c2f8254-dba1-4b9b-b48f-45f3d016ef92",
+      "result_id": "e5bfaf84-2139-4272-9fb2-f3be99e6c794"
+    },
+    {
+      "claim_id": "aedeeaaa-c91a-47af-b24a-0e3b2fa22608",
+      "result_id": "e5bfaf84-2139-4272-9fb2-f3be99e6c794"
+    },
+    {
+      "claim_id": "4a425a63-e5a3-498c-b2dc-6121f50d7f6b",
+      "result_id": "e5bfaf84-2139-4272-9fb2-f3be99e6c794"
+    },
+    {
+      "claim_id": "0e039155-e604-49ad-bdfd-d081d05c1f79",
+      "result_id": "e5bfaf84-2139-4272-9fb2-f3be99e6c794"
+    },
+    {
+      "claim_id": "939c1b50-0c83-495c-b416-f57d77c3a956",
+      "result_id": "e5bfaf84-2139-4272-9fb2-f3be99e6c794"
+    },
+    {
+      "claim_id": "590b0df0-caca-4406-8f01-c21241addefd",
+      "result_id": "e5bfaf84-2139-4272-9fb2-f3be99e6c794"
+    },
+    {
+      "claim_id": "7ff15359-c4c3-4e0a-8fa0-d515a02fe241",
+      "result_id": "e5bfaf84-2139-4272-9fb2-f3be99e6c794"
+    },
+    {
+      "claim_id": "a1fbcecd-30c4-4cb7-ad01-dbee88a85dcf",
+      "result_id": "e5bfaf84-2139-4272-9fb2-f3be99e6c794"
+    },
+    {
+      "claim_id": "66d80e9c-7dbe-4424-b225-9110ba73ac2b",
+      "result_id": "bb2c7ee5-1c42-42a7-979e-8d814bdc7b29"
+    },
+    {
+      "claim_id": "aa6544e5-5b72-44ed-b25c-297ad0b019e1",
+      "result_id": "bb2c7ee5-1c42-42a7-979e-8d814bdc7b29"
+    },
+    {
+      "claim_id": "cdd5d30f-afac-4cd4-a123-d4edfe50be0e",
+      "result_id": "769bb43b-2852-434c-8197-969d3d910791"
+    },
+    {
+      "claim_id": "020f5649-90b1-4702-be02-79bf893c993f",
+      "result_id": "769bb43b-2852-434c-8197-969d3d910791"
+    },
+    {
+      "claim_id": "051b3e06-dbf6-40c5-8750-e56a095e170a",
+      "result_id": "769bb43b-2852-434c-8197-969d3d910791"
+    },
+    {
+      "claim_id": "de285130-4440-4ced-a060-421b1725d027",
+      "result_id": "769bb43b-2852-434c-8197-969d3d910791"
+    },
+    {
+      "claim_id": "71793c67-53e4-4dda-9579-9f070b91b90e",
+      "result_id": "769bb43b-2852-434c-8197-969d3d910791"
+    },
+    {
+      "claim_id": "3489ff7c-099e-420f-96c5-e289232b56b3",
+      "result_id": "769bb43b-2852-434c-8197-969d3d910791"
+    },
+    {
+      "claim_id": "393afad5-581d-4f06-95f8-8c6a69e08025",
+      "result_id": "769bb43b-2852-434c-8197-969d3d910791"
+    },
+    {
+      "claim_id": "32ef8004-73b0-4d1d-9b97-55e2f2de29f4",
+      "result_id": "769bb43b-2852-434c-8197-969d3d910791"
+    },
+    {
+      "claim_id": "532c6a07-b067-494b-92d5-f38e1189dd51",
+      "result_id": "769bb43b-2852-434c-8197-969d3d910791"
+    },
+    {
+      "claim_id": "8794cc84-c1a0-4002-9ccf-7389cb6fdecf",
+      "result_id": "769bb43b-2852-434c-8197-969d3d910791"
+    },
+    {
+      "claim_id": "e7b40115-5a19-45f9-8233-b68a594f1a8f",
+      "result_id": "64eb7907-847d-451e-8d5b-c187c0cb8fc4"
+    },
+    {
+      "claim_id": "43ab8b07-5a09-44fe-b715-d1d5777a312f",
+      "result_id": "64eb7907-847d-451e-8d5b-c187c0cb8fc4"
+    },
+    {
+      "claim_id": "a9205426-abe7-4417-9128-0eacdf880521",
+      "result_id": "c4707f27-9b05-4a92-b5e0-4edd05c15a7a"
+    },
+    {
+      "claim_id": "77576d57-6bae-4114-95ee-83280f9b1187",
+      "result_id": "c4707f27-9b05-4a92-b5e0-4edd05c15a7a"
+    },
+    {
+      "claim_id": "9193862e-442b-4986-90bd-e46be43fe906",
+      "result_id": "c4707f27-9b05-4a92-b5e0-4edd05c15a7a"
+    },
+    {
+      "claim_id": "fc7411d3-a2f7-42b5-b884-4396247ca2ee",
+      "result_id": "c4707f27-9b05-4a92-b5e0-4edd05c15a7a"
+    },
+    {
+      "claim_id": "d63e8555-90a6-4745-8fd1-3f06acb8724a",
+      "result_id": "c4707f27-9b05-4a92-b5e0-4edd05c15a7a"
+    },
+    {
+      "claim_id": "a9eae838-5a8e-4957-bde5-155b833a1553",
+      "result_id": "c4707f27-9b05-4a92-b5e0-4edd05c15a7a"
+    },
+    {
+      "claim_id": "a493b0e7-520c-4c30-a158-465494c29ae3",
+      "result_id": "c4707f27-9b05-4a92-b5e0-4edd05c15a7a"
+    },
+    {
+      "claim_id": "99302e0d-478a-4c9e-a627-12648716984f",
+      "result_id": "43648b26-da6c-420d-b3f5-ab0da824320e"
+    }
+  ],
+  "comparisons": []
+}

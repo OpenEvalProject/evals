@@ -1,0 +1,245 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C46",
+      "C51",
+      "C58",
+      "C60",
+      "C63"
+    ],
+    "result": "The study demonstrates that multivalent proteins form metastable multi-droplet states through a kinetic mechanism involving two competing timescales: diffusion-limited encounters between proteins and exhaustion of available valencies within smaller clusters. Clusters with satisfied valencies cannot readily coalesce, resulting in arrested growth and co-existing assemblies rather than a single equilibrium-like cluster.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C3, C58, C60, and C63 collectively establish the mechanistic basis for arrested droplet growth through valency exhaustion. Claims C4, C46, and C51 provide direct observational evidence from simulations showing multiple co-existing clusters in the high-density regime. The temporal evolution data (C56-C60) and competing timescale analysis (C58, C64) provide strong mechanistic support for this central finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C48",
+      "C94",
+      "C97"
+    ],
+    "result": "System-spanning networks encompassing all multivalent proteins are only observed at high concentrations and large interaction valencies, with the critical interaction strength being lower for higher valency particles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5 and C48 from LD simulations and claims C94 and C97 from kMC simulations consistently demonstrate that macrophase formation requires specific conditions of high concentration and high valency. The data from both simulation approaches converge on this finding, with Figure 2A, Figure 7B, and Figure 7C providing supporting evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C68",
+      "C69",
+      "C72"
+    ],
+    "result": "Two critical timescales govern cluster growth: the diffusion-limited encounter time (inversely proportional to monomer concentration) and the valency exhaustion time within clusters (dependent on linker stiffness). The interplay between these timescales determines whether clusters grow to larger sizes or become arrested at smaller sizes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C72 establish the two competing timescales through mean first passage time calculations shown in Figure 4A and 4B. The mechanistic relationship between these timescales and cluster growth is well-supported by simulation data, though the analysis is limited to dimer systems and early timescales accessible to LD simulations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C73",
+      "C77",
+      "C81",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Linker properties serve as modulators of phase-separation propensity and cluster sizes. Strong inter-linker interactions result in faster valency exhaustion and smaller cluster sizes, while stiffer linkers lead to more open configurations and larger clusters. Linker properties can tune intra-cluster density without modifying functional domains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73, C81, C85, and C86 are supported by simulation data in Figure 5 showing the effects of varying linker stiffness and inter-linker interaction strength. Claims C77, C87, and C88 represent valid conclusions about the modulatory role of linkers. The density tuning capability (10-100 fold enrichment) is consistent with experimental observations cited in C79.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C6",
+      "C104",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "In regimes favoring large clusters, a dramatic slow-down in molecular exchange dynamics is observed. Valency is a key determinant of exchange rates, with metastable microphases being the likely outcome for dynamically exchanging functional droplets. This prediction is consistent with experimental observations showing orders of magnitude differences in exchange times for proteins with different valencies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104 and C106 are supported by kMC simulation data in Figure 8B showing the relationship between valency, interaction strength, and exchange times. Claim C107 provides experimental validation from Xing et al. 2018 (Figure 8C-D). However, claim C6 includes speculation about 'loss of function' that is not directly tested, and claim C108 represents an inference rather than direct evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C114"
+    ],
+    "result": "Droplet sizes depend on dynamic quantities such as solvent viscosity, with higher viscosities resulting in smaller cluster sizes at biologically relevant timescales. This viscosity dependence is a signature of the metastable, kinetically-controlled nature of the multi-droplet state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109, C111, and C112 are directly supported by simulation data in Figure 9 showing reduced cluster sizes at higher viscosities in both LD and kMC simulations. Claims C110 and C114 represent valid inferences from these observations. This constitutes a testable prediction distinguishing kinetic from equilibrium mechanisms, though experimental validation is noted as needed (C113).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C50",
+      "C78",
+      "C79",
+      "C95"
+    ],
+    "result": "The density transitions and phase behavior observed in simulations are qualitatively consistent with equilibrium theories for sticker-spacer proteins and experimental observations, including 10-100 fold enrichment within droplets and the relationship between valency and critical concentration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50 and C78 establish consistency with prior theoretical work (Harmon et al. 2017, Choi et al. 2019). Claims C79 and C95 demonstrate agreement with experimental observations from multiple studies. This validation strengthens the model's credibility, though the key novelty is the deviation from equilibrium predictions in cluster size distributions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "The computational model employs coarse-grained polymer chains with 5 adhesive domains (20 \u00c5 diameter, mimicking SH3 domains) separated by semi-flexible linkers (35 beads, 4.2 \u00c5 diameter each), with 400 chains simulated in a periodic box using Langevin dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C44 describe the model architecture and parameters, which are clearly documented in the Methods section and Figure 1. The model design is justified by references to structural data (PDB ID:1SHG) and prior theoretical studies (Harmon et al. 2017). The coarse-graining approach is appropriate for the timescales and phenomena being studied.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C53",
+      "C55"
+    ],
+    "result": "Introduction of reversible (breakable) interactions results in increased diversity in cluster sizes at early stages of assembly, and the multi-droplet state could persist in vitro and in vivo even in the absence of active processes given typical cellular protein concentrations (nanomolar to low micromolar range).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C53 is supported by data in Figure 2C showing broader cluster size distributions with reversible interactions. Claim C55 represents a reasonable inference based on the simulation results and typical cellular concentrations cited from Xing et al. 2018 (C54), though direct experimental validation in cellular contexts is not provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C116",
+      "C117",
+      "C49"
+    ],
+    "result": "Density transitions show non-monotonic behavior as a function of concentration, with intra-cluster density depending on linker characteristics. A narrow intermediate concentration regime exhibits microphases with high polymer density within clusters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C116 and C49 are directly supported by data in Figure 2A showing the non-monotonic density profile and the cyan region of high-density microphases. Claim C117 is a forward reference to results presented in subsequent sections (Figure 5), which are indeed demonstrated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C118",
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "The findings are consistent with 'sticky reptation' theory, which predicts that dynamics of associative polymers with multiple stickers slow down at high degrees of association. The highly cross-linked nature of the phase-separated state prevents early droplets from transitioning into a single large droplet even with reversible interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C118-C120 appropriately cite relevant theoretical work (Rubinstein and Semenov 2001, Leibler et al. 1991, Roberts et al. 2018) that supports the observed phenomena. Claim C121 represents a valid inference connecting the simulation results to established polymer physics theory. The consistency with prior theory strengthens the mechanistic interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C115"
+    ],
+    "result": "If micro-droplets were formed at equilibrium, dependencies on solvent viscosity would not be observed, distinguishing kinetic from equilibrium mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C115 represents a valid theoretical prediction based on equilibrium theory (supported by citations to Harmon et al. 2017 and Brangwynne et al. 2015). This provides the conceptual basis for the viscosity experiments as a test of the kinetic vs. equilibrium nature of the multi-droplet state.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C7",
+      "C122",
+      "C123"
+    ],
+    "result": "Metastability could be a hallmark of dynamic functional droplets formed by sticker-spacer proteins. The sticker-spacer architecture allows functional domains to remain conserved while spacer regions can be modified to tune phase separation propensity. Switches in driving forces from specific to non-specific interactions could have implications for disorders associated with aberrant phase separation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C7, C122, and C123 represent speculative conclusions and broader implications of the work. While they are reasonable inferences from the simulation results, they extend beyond what is directly demonstrated. Claim C7 uses conditional language ('could be'), and C123 explicitly speculates about disease implications without direct evidence. These represent hypotheses for future work rather than established findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "The introduction establishes the biological context of membrane-less organelles, their multivalent protein composition, prior computational and theoretical work on equilibrium states, and identifies a gap in understanding ATP-independent mechanisms for multi-droplet persistence at biologically relevant timescales.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C36 represent background knowledge and literature review, all supported by appropriate citations. Claim C34 correctly identifies a gap in the literature that motivates the current study. These claims establish the scientific context but do not represent novel findings from this work.",
+    "result_type": "MINOR"
+  }
+]

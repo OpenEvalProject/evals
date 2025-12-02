@@ -1,0 +1,1403 @@
+{
+  "submission": {
+    "id": "ecd1252e-1f77-4b7d-8428-a8e79bf57c91",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T15:57:37.810604Z",
+    "updated_at": "2025-12-02T15:57:37.810604Z"
+  },
+  "content": [
+    {
+      "id": "11ffaa20-05a8-49c7-8888-336aeab1b8d5",
+      "submission_id": "ecd1252e-1f77-4b7d-8428-a8e79bf57c91",
+      "content_type": "manuscript",
+      "content_text": "# Correcting for physical distortions in visual stimuli improves reproducibility in zebrafish neuroscience\n\n## Authors\n\n- Timothy W Dunn<sup>1</sup> ([ORCID: 0000-0002-9381-4630](https://orcid.org/0000-0002-9381-4630)) \u2020\n- James E Fitzgerald<sup>2</sup> ([ORCID: 0000-0002-0949-4188](https://orcid.org/0000-0002-0949-4188)) \u2020\n\n### Affiliations\n\n1. Duke Forge, Duke Global Neurosurgery and Neurology, Departments of Statistical Science and Neurosurgery, Duke University Durham United States\n2. Janelia Research Campus, Howard Hughes Medical Institute Ashburn United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nOptical refraction causes light to bend at interfaces between optical media. This phenomenon can significantly distort visual stimuli presented to aquatic animals in water, yet refraction has often been ignored in the design and interpretation of visual neuroscience experiments. Here we provide a computational tool that transforms between projected and received stimuli in order to detect and control these distortions. The tool considers the most commonly encountered interface geometry, and we show that this and other common configurations produce stereotyped distortions. By correcting these distortions, we reduced discrepancies in the literature concerning stimuli that evoke escape behavior, and we expect this tool will help reconcile other confusing aspects of the literature. This tool also aids experimental design, and we illustrate the dangers that uncorrected stimuli pose to receptive field mapping experiments.\n\n## Materials and methods\n\nSee Appendix 1 and Appendix 2 for the geometric consequences of Snell\u2019s law at flat and curved interfaces, respectively.\n\n### Implications of the Fresnel equations\n\nOnly a portion of the incident light is transmitted into the water to reach the eye. We calculated the fraction of transmitted light according to the Fresnel equations. Assuming the light is unpolarized,\n\n$$\nT=1-\\frac{R_{s}+R_{p}}{2},\n$$\n\nwhere $T$ is the fraction of light transmitted across an air-water interface at incident angle $\u03c8_{a}=\u03c8_{a}\\theta$ (See Appendices 1, 2), $\u03c8_{w}=\\theta$ is the angle of the refracted light ray in water, and\n\n$$\nR_{s}=(\\frac{n_{a}cos\u2061\u03c8_{a}(\\theta)\u2212n_{w}cos\u2061\\theta}{n_{a}cos\u2061\u03c8_{a}(\\theta)+n_{w}cos\u2061\\theta})^{2}R_{p}=(\\frac{n_{a}cos\u2061\\theta\u2212n_{w}cos\u2061\u03c8_{a}(\\theta)}{n_{a}cos\u2061\\theta+n_{w}cos\u2061\u03c8_{a}(\\theta)})^{2}\n$$\n\nare the reflectances for s-polarized (i.e. perpendicular) and p-polarized (i.e. parallel) light, respectively. When including the plastic dish in our simulations, we modified these equations to separately calculate the transmission fractions across the air-plastic and the plastic-water interfaces. We assumed that the full transmission fraction is the product of these two factors, thereby ignoring the possibility of multiple reflections within the plastic.\n\n### Illustrating distorted sinusoidal gratings\n\nFor all image simulations in Figure 1c, we neglected the plastic and fixed the total distance between the fish and the virtual screen, $d_{a}+d_{w}$, to be 1 cm, a typical distance in real-world experiments. The virtual screen was considered to be a 4 \u00d7 4 cm square with 250 pixels/cm resolution. Here we assumed that the virtual screen emits light uniformly at all angles, but this assumption is violated by certain displays, and our computational tool allows the user to specify alternate angular emission profiles. To transform images on the virtual screen, we shifted each light ray (i.e. image pixel) according to Snell\u2019s law, scaled its intensity according to the Fresnel equations, and added the intensity value to a bin at the resulting apparent position. This simple model treats the fish eye as a pinhole detector, whereas real photoreceptors blur visual signals on a spatial scale determined by their receptive field. Consequently, our simulation compresses a large amount of light onto the overly thin border of the Snell window, and we saturated the grayscale color axes in Figure 1c to avoid this visually distracting artifact.\n\nTo make the image as realistic as possible, we mimicked real projector conditions using gamma-encoded gratings with spatial frequency 1 cycle / cm, such that\n\n$$\n[x(t)]^{1/2.2}=\u00a0sin\u2061t\n$$\n\nwith $xt$ ranging from 1.0 to 500.0 lux, a standard range of physical illuminance for a lab projector. The exponent on the left represents a typical display gamma encoding with gamma = 2.2. To reduce moir\u00e9 artifacts arising from ray tracing, we used a combination of ray supersampling (averaging the rays emanating from 16 sub-pixels for each virtual screen pixel) and stochastic sampling (the position of each ray was randomly jittered between -1 and\u00a01 sub-pixels from its native position) (Dipp\u00e9 and Wold, 1985). In Figure 1c, we display the result of these operations followed by a gamma compression to mimic the perceptual encoding of the presented stimulus.\n\n### Corrections to looming visual stimuli\n\nWe approximated the geometric parameters from Dunn et al.\u00a0(2016a) (flat air-water interface, da\u00a0=\u00a00.5 mm, dw\u00a0=\u00a03 mm, dp\u00a0=\u00a01 mm, stimulus offset from the fish by 10 mm along the screen) and Temizer et al., 2015 (curved air-water interface, da\u00a0=\u00a08 mm, dw\u00a0=\u00a02 mm, dp\u00a0=\u00a01 mm, r\u00a0=\u00a017.5 mm, stimulus centered) to create Snell-transformed images of circular stimuli with sizes growing over time (Figure 2a\u2013c). We used a refractive index of np\u00a0=\u00a01.55 for the polystyrene plastic. While Dunn et al. collected data from freely swimming fish, the height of the water was kept at\u00a0approximately 5 mm, and 3 mm reflects a typical swim depth. Since freely swimming zebrafish can adjust their depth in water, it\u2019s an approximation to treat dw as constant.\n\nWe quantified the size of each transformed stimulus with its solid angle, the surface area of the stimulus shape projected onto the unit sphere. To calculate the solid angle for Temizer et al., we used the formula for a spherical cap, $A=2\\pi(1-cos\u2061\\theta)$, where\u00a0$A$ is the solid angle and\u00a0$2\\theta$ is the apex angle. To calculate the solid angle for Dunn et al., in which stimuli were not spherical caps, we first represented stimulus border pixels in a spherical coordinate system locating the fish at the origin. The radial coordinate does not affect the solid angle, so we described each border pixel by two angles: the latitude, \u03b1, and longitude, $\\beta$. To calculate the area, we used an equal-area sinusoidal (Mercator) projection given by\n\n$$\nx,y=\\betacos\u2061\\alpha,\\alpha,\n$$\n\nwhich projects an arbitrary shape on the surface of a sphere onto the Cartesian plane. While distances and shapes are not preserved in this projection, area as a fraction of the sphere\u2019s surface area is maintained. Thus, we could calculate the solid area of the stimulus in this projection by finding the area of the projected 2D polygon. To calculate the absolute and relative discrepancy 95% confidence intervals in Figure 2c, we used error propagation formulae for the difference and division of two distributions, respectively.\n\n### Receptive field mapping\n\nWe simulated receptive field (RF) mapping experiments by tracing light paths from single pixels on a virtual screen to the fish (Figure 2d-f). We modeled a neuron\u2019s RF as a Gaussian function on the sphere, defined the \u201ctrue RF\u201d to be the pixel-wise response pattern that would occur in the absence of the air-water interface, and defined the \u201capparent RF\u201d as the pixel-wise response pattern that would be induced with light that bends according to Snell\u2019s law at an air-water interface. More precisely, we modeled the neural response to pixel activation at position $x$ as\n\n$$\nFx=T\u03c8_{a}xP(\u03c1x,\\mu_{RF},\\sigma_{RF}^{2}),\n$$\n\nwhere $T\u03c8_{a}x$ is the fraction of light transmitted (Fresnel equations),\u00a0$\\mu_{RF}$ and $\\sigma_{RF}$ are the mean and standard deviation of the Gaussian RF, $\u03c1(x,\\mu_{RF})$ is the distance along a great circle from the center of the RF to the pixel\u2019s projected retinal location, and $P\u03c1,\\sigma_{RF}^{2}=e^{-\u03c1^{2}/2\\sigma_{RF}^{2}}$\u00a0is the Gaussian RF shape. We calculated the great circle distance between points on the sphere as\n\n$$\ncos\u2061\u03c1x,\\mu_{RF}=sin\u2061\\alpha_{RF}sin\u2061\\alpha_{x}+cos\u2061\\alpha_{RF}cos\u2061\\alpha_{x}cos\u2061\\beta_{x}-\\beta_{RF},\n$$\n\nwhere $\\alpha_{RF},\\beta_{RF}$ are the latitude and longitude coordinate of the RF center, and $\\alpha_{x},\\beta_{x}$ are the latitude and longitude coordinates of the projected pixel location. We quantified the position of the RF as the maximum of $Fx$, converted to an angular coordinate along the screen. We quantified RF area as the solid angle of the shape formed by thresholding $Fx$ at half its maximal value.\n\n### Computational tool for simulating and correcting optical distortions\n\nWith this paper, we provide a computation tool for visualizing and correcting distortions (https://github.com/spoonsso/snell_tool/). The tool is written in Python and uses standard image processing libraries. The tool can be launched virtually over the web, without any need to install new software, using the MyBinder link in the README file hosted on the github repository. The source code can also be downloaded and run on the user\u2019s local machine.\n\nThe uses and parameters of the tool are described in detail in an example notebook in the repository (snell_example.ipynb). In brief, the tool is implemented only for flat interfaces with the assumptions described in Appendix 1, and it can model distortions through three media (i.e. with a plastic interface between air and water). It can also model displays that emit light with non-uniform angular profiles. Key customizable parameters include the screen size, screen resolution, screen distance, media thicknesses, media refractive indices, and gamma encoding. As described in Illustrating distorted sinusoidal gratings, the tool uses a combination of ray super-sampling and stochastic sampling to reduce moir\u00e9 artifacts arising from ray tracing.\n\nThe Python notebook illustrates two primary use cases of the tool, though the tool\u2019s library is flexible enough to be adopted for other tasks. First, it allows the user to input an image to see its distorted form under the assumptions of the model. Thus, it recreates Figure 1c, but for any arbitrary grayscale stimulus, and for a range of user-specified experimental configurations. Second, it allows the user to input an undistorted target image, and the tool inverts the distortion process to suggest an image that could be displayed during an experiment to approximately produce the target from the point of view of the fish. In the tool\u2019s example notebook, we demonstrate this inversion process using a checkered ball stimulus. Importantly, note that some stimuli will be physically impossible to correct (e.g. undistorted image content cannot be delivered outside the Snell window).\n",
+      "created_at": "2025-12-02T15:57:37.810604Z"
+    },
+    {
+      "id": "d6d128e6-f1b3-4da8-9600-0f49dab09e36",
+      "submission_id": "ecd1252e-1f77-4b7d-8428-a8e79bf57c91",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Claire Wyart, Institut du Cerveau et la Moelle \u00e9pini\u00e8re, H\u00f4pital Piti\u00e9-Salp\u00eatri\u00e8re, Sorbonne Universit\u00e9s, UPMC Univ Paris 06, Inserm, CNRS France\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.53684.sa1](https://doi.org/10.7554/eLife.53684.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nThank you for submitting your article \"Correcting for physical distortions in visual stimuli improves reproducibility in zebrafish neuroscience.\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Didier Stainier as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Andre Maia Chagas (Reviewer #3).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThe three reviewers agree that the study is of general interest and will help future studies on visual integration in zebrafish properly design their setups. Precisions and corrections are listed below. Please address all points raised and improve clarity of figures, check legends of supplementary videos.\n\nReviewer #1:\n\nIn this manuscript, the authors describe how to correct for distortions of the light path in vision experiments in aquatic animals. They first discuss and illustrate relevant physical laws and then showcase how distortions associated with suboptimal stimulus configurations could have affected two recent studies on looming stimuli in zebrafish. The impact of their manuscript can be subdivided into the following four points.\n\n1) They raise awareness about stimulus stretching, compression and attenuation occurring in aquatic stimulus setups, which have oftentimes been ignored in zebrafish vision research. This will certainly be of high interest for the growing community of scientists working with aquatic animals, especially zebrafish.\n\n2) The authors show that a critical parameter (da/dw) determines how the physical laws (Fresnel equations, Snell's law) will affect the stimulus appearance in one of the frequently used recording configurations: the apparent position of a stimulus is shown to depend on the ratio of the water column length and the free-air distance between display and water container (da/dw). While the physical laws are no news, the provided equation can be useful for scientists working with such a recording configuration.\n\n3) They calculate, how stimuli have likely been distorted in two recent publications. This is a very helpful type of analysis that can potentially correct/explain observed differences in studies. The authors state that in the original publications the critical stimulus sizes were reported as 21.7\u00b0 and 72.0\u00b0 (difference: factor 3.3), and after their correction, the stimulus sizes were 0.6% and 1.9% (of 4\u03c0 steradians, difference: factor 3.2). If I understand the authors correctly, the authors take the small absolute difference of 1.9% and 0.6% ( = 1.3%) as evidence for a better match after optical correction, because the absolute difference (14%) in the original studies before correction (72\u00b0 \u2013 21.7\u00b0=50.3\u00b0 ~ = 14% of 360 degrees) had been much bigger. However, I don't agree that this is the best way to compare the results. The relative difference is about a factor of 3 in both cases, so not much different after correction. That being said, it is of course nonetheless very useful to perform these distortion calculations as they can be used to report the stimulus characteristics from the animal's perspective, which is what matters.\n\n4) A programming tool is provided to help scientists calculate the distortions in their setups. It would be helpful if the functionality (inputs, outputs, available configurations) were described in more detail in the manuscript. The tool can be used for the experimental setup in Figure 1A, but for other configurations, users likely need to adapt it or use other software for ray tracing.\n\nIn summary, I think that the topic of the manuscript will be of interest to the community of aquatic vision researchers. The presented results and discussion present a rather incremental scientific advance, but are timely for zebrafish vision researchers.\n\nReviewer #2:\n\nIn this study, Dunn and Fitzgerald evaluate the effects of refractive index mismatches and consequent visual distortions upon zebrafish visual neuroscience experiments. They show that refraction at water-air interfaces causes distortions and translations to visual stimuli that, if ignored, will lead to erroneous conclusions about receptive field properties of visual neurons and visuomotor relationships. They show that accounting for Snell's law explains a large part of the apparent discrepancy between the critical angular sizes reported in two studies of looming-evoked escape behavior. The authors also provide a software tool to simulate the effects of refraction on visual stimuli.\n\nOverall, this paper and the associated software will be of considerable value to the growing community of researchers investigating the larval zebrafish visual system. By highlighting an issue that has hitherto largely been ignored and providing means to improve experimental design and interpretation, the paper should enhance the quality and reproducibility of experiments in this important neuroscience model.\n\nI have two main comments:\n\n1) The authors do not appear to have considered the angular intensity profiles of the screens used to present visual cues. However, this will influence the most eccentric location at which an image feature (pixel) is visible to the fish as well as the observed intensity distribution. Moreover, the types of screens used in different studies vary. For example, Dunn et al. used a diffusive screen (for back projection) which will have some scattering characteristic \u2013 how was this modeled? Temizer et al. used an OLED screen where individual pixels have a (likely more limited) angular emission profile. This will determine the maximal theta' from which a ray can be emitted that will reach the fish, causing clipping at eccentric locations an affecting the size and amplitude profile of receptive fields. Can the authors incorporate the angular intensity profile of the presentation screen into their modeling (tool)?\n\n2) It was not clear to me why the maximum image size is assumed to be 360\u00b0 or 4\u03c0 steradians. In the Dunn and Temizer papers, I assume angular size is computed according to a simple 2D model where one eye views a directly approaching orthogonal object.\n\nIn this case, the largest angular size subtended at the eye is 180\u00b0 (at impact). However, the largest image size cast on the retina of a real eye will be limited by the visual field of that eye (and thus occur prior to impact). Similarly, for the analysis of solid angle, the authors compute percentages assuming a maximal size of 4\u03c0, which is clearly not biologically plausible. I would find it more useful if image sizes were given as a proportion of the (monocular) visual field. What is this estimated to be?\n\nReviewer #3:\n\nI would like to start by thanking the authors for putting this paper together, as it is well written and definitely an asset for experimenters working with aquatic species, or in general for any other researchers that have visual stimuli that need to go through different media before reaching the animal/subject. I'm surprised that this issue hasn't been raised before, but glad to see that this is done here. I also enjoy the fact that they made a repository with more details on the tool they are proposing as a solution to the issue reported here, also that you can reproduce the paper's figures using this repository.\n\nHere are some comments I hope will make the paper even more enjoyable:\n\n1) Would it be possible for the authors to setup their repository to work with \"My Binder\" (https://mybinder.org/), so that readers who are not using/familiar with python could still use their notebook?\n\n2) In the second paragraph of the main text the authors state that in traditional experimental setups for zebrafish, due to Snell's law, stimuli that are distant appear to the fish at the asymptotic value of ~48.6\u00b0, and that this would lead to a \"Snell window\" of 97.2\u00b0. I think this leads to some interesting questions:\n\n2.1) In this setup configuration, the Snell window is covering what area of the bottom of the Petri dish? It would be nice to see visually represented what is the projection size of the window as size of the dish, since:\n\n2.1.1) If the window is only covering part of the dish, the animals are freely moving, and the correction algorithm is used, this would mean that as the animals move, they could go past the edge of the window and be in a region where the stimulus is not present?\n\n2.1.2) It would be nice to know how big the window projection is in relation to the animal's visual space, and how the distance between the petri dish and the projection window change this\n\n3) The authors also mention that having water instead of air in the space between the petri-dish and the projection could be used as an alternative solution to the problem (main text, last paragraph), with the shortcoming of having a reduced transmission of stimuli in large angles. I wonder what these large angles would be? Would this be something easy to calculate? I wonder about this, since Franke et al. (https://elifesciences.org/articles/48779), show a \"fish cinema\" system where a lot of the fish's field of view is covered (while projecting directly at a screen which was the water container wall \u2013 so no air or water interface before the projected image)\n\n4) One thing that I didn't see mentioned in the paper is chromatic aberration. Given the fact that stimuli are travelling through 3 different media at least, one could expect that different wavelengths will be projected slightly misaligned when compared to one another, especially considering the wide chromatic range present in Zebrafish vision? I wonder if it would be easy to incorporate these calculations in the tools they are describing, and most importantly, how could this affect the calculation of receptive fields, considering the misaligned patches of different wavelengths could directly influence some of these receptive fields?\n\nI'm happy to clarify any points that might be unclear, or provide further arguments for the above mentioned points.\n\n[Editors' note: further revisions were suggested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \"Correcting for physical distortions in visual stimuli improves reproducibility in zebrafish neuroscience.\" for further consideration by eLife. Your revised article has been evaluated by Didier Stainier as the Senior Editor, and a Reviewing Editor.\n\nThe manuscript has been improved but there are some remaining issues that need to be addressed before acceptance, as outlined below:\n\nThe reviewers have addressed most of the comments from the three reviewers satisfactorily. The authors now include a description of the relative differences of solid angles between the two studies, which is good. However, the presentation is still somewhat confusing for readers, because the comparison of fractional apex angles and fractional solid angles introduces a huge difference simply due to the fact of switching from a one-dimensional to a two-dimensional/squared parameter (the solid angle is proportional to the surface area of the sphere). Thus, the effect of the optical correction is partially masked by the effect of this parameter conversion, and the current text fails to make this transparent and resolve it for the reader.\n\n1) Without optical correction, the absolute difference of 70.3\u00b0 and 21.7\u00b0 corresponds to solid angles of 1.15 sr and 0.112 sr, which is a 10-fold relative difference [according to the equation \u03a9=2\u03c01-cos\u03b8; \u03a9 corresponds to the solid angle, 2\u03b8 to the apex, see https://en.wikipedia.org/wiki/Solid_angle]. After optical correction, the relative difference is reduced to 3-fold (0.24 sr vs. 0.08 sr).\n\nOur suggestion is to present results in the main text and in Figure 2C in relative steradian terms. The authors could state that the initial 10-fold difference in covered stimulus area (between the two studies) was surprising, but that after optical correction, this difference is reduced markedly (by a factor of 3).\n\nThe remaining 3-fold difference could potentially be explained by a dependence of behavior on the spatial stimulus location (as the authors already write). If the authors structure the paragraph like this, they could then also delete the following sentence, which they need in their current version to present results accurately, but which can be confusing and anticlimactic for readers and the story: \"These corrections did not eliminate the discrepancy in relative terms, as Dunn et al. still found a critical size that was approximately three times as large as Temizer et al.\".\n\n2) We are not convinced that a 50.3\u00b0 difference is \"far more striking\" than a similar relative difference at small stimulus sizes (as the authors state in their point-by-point response). Sensory systems typically encode stimulus magnitudes in logarithmic terms (Weber-Fechner law).\n\nAccording to the logic used by the authors, a difference of 50.3\u00b0 is striking irrespective of the base stimulus size. I think they would agree though, that two stimuli, 360\u00b0 and 310.7\u00b0 in size, are not very different. This is why the description of differences in relative terms is important, which the authors have now included in their revision.\n",
+      "created_at": "2025-12-02T15:57:37.810604Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T15:57:37.810604Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T15:57:37.810604Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "35f223c2-ef58-4c13-8092-6987bd9db51c",
+      "content_id": "11ffaa20-05a8-49c7-8888-336aeab1b8d5",
+      "claim_id": "C1",
+      "claim": "Optical refraction causes light to bend at interfaces between optical media.",
+      "claim_type": "EXPLICIT",
+      "source": "Optical refraction causes light to bend at interfaces between optical media.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge about the behavior of light at interfaces between different media.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:57:37.810604Z"
+    },
+    {
+      "id": "495bc4e4-7799-43fe-824d-5e51bd6321fe",
+      "content_id": "11ffaa20-05a8-49c7-8888-336aeab1b8d5",
+      "claim_id": "C2",
+      "claim": "Refraction can significantly distort visual stimuli presented to aquatic animals in water.",
+      "claim_type": "EXPLICIT",
+      "source": "This phenomenon can significantly distort visual stimuli presented to aquatic animals in water",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference based on the established principle of refraction and its application to aquatic experimental settings.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:57:37.810604Z"
+    },
+    {
+      "id": "37968f96-3f0a-4a97-8f03-6b070dffe203",
+      "content_id": "11ffaa20-05a8-49c7-8888-336aeab1b8d5",
+      "claim_id": "C3",
+      "claim": "Refraction has often been ignored in the design and interpretation of visual neuroscience experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "yet refraction has often been ignored in the design and interpretation of visual neuroscience experiments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observational claim about the state of the field, implied by the need for this work.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:57:37.810604Z"
+    },
+    {
+      "id": "e8a3c1de-bbea-4a62-9293-4afda1550187",
+      "content_id": "11ffaa20-05a8-49c7-8888-336aeab1b8d5",
+      "claim_id": "C4",
+      "claim": "The computational tool transforms between projected and received stimuli to detect and control distortions.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we provide a computational tool that transforms between projected and received stimuli in order to detect and control these distortions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the functionality of the tool developed in this work.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:57:37.810604Z"
+    },
+    {
+      "id": "d4c03d2c-ade0-4a61-9fab-2d757620a34a",
+      "content_id": "11ffaa20-05a8-49c7-8888-336aeab1b8d5",
+      "claim_id": "C5",
+      "claim": "The tool considers the most commonly encountered interface geometry.",
+      "claim_type": "EXPLICIT",
+      "source": "The tool considers the most commonly encountered interface geometry",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the design scope of the computational tool.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:57:37.810604Z"
+    },
+    {
+      "id": "8fa1e3ef-415d-443d-8fbe-9bb2a2431677",
+      "content_id": "11ffaa20-05a8-49c7-8888-336aeab1b8d5",
+      "claim_id": "C6",
+      "claim": "Common interface configurations produce stereotyped distortions.",
+      "claim_type": "EXPLICIT",
+      "source": "and we show that this and other common configurations produce stereotyped distortions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding demonstrated through the simulations and analyses in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:57:37.810604Z"
+    },
+    {
+      "id": "7bf03d15-46f1-4359-b8e8-480422fcc436",
+      "content_id": "11ffaa20-05a8-49c7-8888-336aeab1b8d5",
+      "claim_id": "C7",
+      "claim": "Correcting distortions reduced discrepancies in the literature concerning stimuli that evoke escape behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "By correcting these distortions, we reduced discrepancies in the literature concerning stimuli that evoke escape behavior",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the analysis comparing corrected stimuli from different studies (Figure 2).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:57:37.810604Z"
+    },
+    {
+      "id": "7a5fe212-eca9-4810-8728-2457e89ca8b4",
+      "content_id": "11ffaa20-05a8-49c7-8888-336aeab1b8d5",
+      "claim_id": "C8",
+      "claim": "The tool is expected to help reconcile other confusing aspects of the literature.",
+      "claim_type": "EXPLICIT",
+      "source": "and we expect this tool will help reconcile other confusing aspects of the literature.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about the future utility of the tool.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:57:37.810604Z"
+    },
+    {
+      "id": "608ffa46-fbd7-444d-a743-c0e2f90cf3bb",
+      "content_id": "11ffaa20-05a8-49c7-8888-336aeab1b8d5",
+      "claim_id": "C9",
+      "claim": "Uncorrected stimuli pose dangers to receptive field mapping experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "and we illustrate the dangers that uncorrected stimuli pose to receptive field mapping experiments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through simulations of receptive field mapping (Figure 2d-f).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:57:37.810604Z"
+    },
+    {
+      "id": "eceeca29-2e38-44a9-9bff-b32932d8d68c",
+      "content_id": "11ffaa20-05a8-49c7-8888-336aeab1b8d5",
+      "claim_id": "C10",
+      "claim": "Only a portion of incident light is transmitted into the water to reach the eye.",
+      "claim_type": "EXPLICIT",
+      "source": "Only a portion of the incident light is transmitted into the water to reach the eye.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about light transmission at interfaces, quantified using Fresnel equations.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:57:37.810604Z"
+    },
+    {
+      "id": "43dda57e-6a11-4faa-ba57-c6a3f22ee720",
+      "content_id": "11ffaa20-05a8-49c7-8888-336aeab1b8d5",
+      "claim_id": "C11",
+      "claim": "The fraction of transmitted light can be calculated according to the Fresnel equations.",
+      "claim_type": "EXPLICIT",
+      "source": "We calculated the fraction of transmitted light according to the Fresnel equations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the method used in the study, based on established physics equations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:57:37.810604Z"
+    },
+    {
+      "id": "0dfead1c-ce05-4ceb-bb1b-2bb57a859278",
+      "content_id": "11ffaa20-05a8-49c7-8888-336aeab1b8d5",
+      "claim_id": "C13",
+      "claim": "When including the plastic dish in simulations, transmission fractions are calculated separately across air-plastic and plastic-water interfaces.",
+      "claim_type": "EXPLICIT",
+      "source": "When including the plastic dish in our simulations, we modified these equations to separately calculate the transmission fractions across the air-plastic and the plastic-water interfaces.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methodological approach for modeling multi-interface systems.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:57:37.810604Z"
+    },
+    {
+      "id": "daee261f-4668-4d7e-a18b-3fbfb06e695e",
+      "content_id": "11ffaa20-05a8-49c7-8888-336aeab1b8d5",
+      "claim_id": "C14",
+      "claim": "The full transmission fraction is the product of transmission fractions at air-plastic and plastic-water interfaces.",
+      "claim_type": "EXPLICIT",
+      "source": "We assumed that the full transmission fraction is the product of these two factors",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an assumption made in the modeling approach.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:57:37.810604Z"
+    },
+    {
+      "id": "dce3f642-52f0-4468-bc46-16dadf80ba3d",
+      "content_id": "11ffaa20-05a8-49c7-8888-336aeab1b8d5",
+      "claim_id": "C15",
+      "claim": "The model ignores the possibility of multiple reflections within the plastic.",
+      "claim_type": "EXPLICIT",
+      "source": "thereby ignoring the possibility of multiple reflections within the plastic.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an explicit simplification stated in the methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:57:37.810604Z"
+    },
+    {
+      "id": "4e6bcc8e-a9e6-45fe-a689-7f32842c4e87",
+      "content_id": "11ffaa20-05a8-49c7-8888-336aeab1b8d5",
+      "claim_id": "C16",
+      "claim": "For image simulations in Figure 1c, the plastic was neglected.",
+      "claim_type": "EXPLICIT",
+      "source": "For all image simulations in Figure 1c, we neglected the plastic",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a specific methodological choice for the simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:57:37.810604Z"
+    },
+    {
+      "id": "c918b2b7-a480-4e04-a217-688024bb14b2",
+      "content_id": "11ffaa20-05a8-49c7-8888-336aeab1b8d5",
+      "claim_id": "C18",
+      "claim": "1 cm is a typical distance between fish and screen in real-world experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "to be 1 cm, a typical distance in real-world experiments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as knowledge about typical experimental setups.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:57:37.810604Z"
+    },
+    {
+      "id": "47c198af-7894-4693-ae4a-f17ca60c099b",
+      "content_id": "11ffaa20-05a8-49c7-8888-336aeab1b8d5",
+      "claim_id": "C19",
+      "claim": "The virtual screen was modeled as a 4 \u00d7 4 cm square with 250 pixels/cm resolution.",
+      "claim_type": "EXPLICIT",
+      "source": "The virtual screen was considered to be a 4 \u00d7 4 cm square with 250 pixels/cm resolution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes simulation parameters.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:57:37.810604Z"
+    },
+    {
+      "id": "88f80ede-3072-422f-a371-1218de82b36b",
+      "content_id": "11ffaa20-05a8-49c7-8888-336aeab1b8d5",
+      "claim_id": "C20",
+      "claim": "The virtual screen was assumed to emit light uniformly at all angles.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we assumed that the virtual screen emits light uniformly at all angles",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an assumption made in the modeling.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:57:37.810604Z"
+    },
+    {
+      "id": "f442aeaa-3639-4b6f-b762-05a1641d981b",
+      "content_id": "11ffaa20-05a8-49c7-8888-336aeab1b8d5",
+      "claim_id": "C21",
+      "claim": "The assumption of uniform light emission is violated by certain displays.",
+      "claim_type": "EXPLICIT",
+      "source": "but this assumption is violated by certain displays",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated knowledge about display properties.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:57:37.810604Z"
+    },
+    {
+      "id": "d01d13f7-15ce-4933-8f28-79f0c4d2fb67",
+      "content_id": "11ffaa20-05a8-49c7-8888-336aeab1b8d5",
+      "claim_id": "C22",
+      "claim": "The computational tool allows users to specify alternate angular emission profiles.",
+      "claim_type": "EXPLICIT",
+      "source": "and our computational tool allows the user to specify alternate angular emission profiles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a feature of the computational tool.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:57:37.810604Z"
+    },
+    {
+      "id": "1cc87845-5e96-4946-8d6c-f9f0fd3576be",
+      "content_id": "11ffaa20-05a8-49c7-8888-336aeab1b8d5",
+      "claim_id": "C23",
+      "claim": "Images on the virtual screen are transformed by shifting each light ray according to Snell's law.",
+      "claim_type": "EXPLICIT",
+      "source": "To transform images on the virtual screen, we shifted each light ray (i.e. image pixel) according to Snell's law",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the computational method used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:57:37.810604Z"
+    },
+    {
+      "id": "b1c125d3-1193-4e5d-8f46-55cfc7ea03a7",
+      "content_id": "11ffaa20-05a8-49c7-8888-336aeab1b8d5",
+      "claim_id": "C24",
+      "claim": "Light ray intensities are scaled according to the Fresnel equations.",
+      "claim_type": "EXPLICIT",
+      "source": "scaled its intensity according to the Fresnel equations",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the computational method used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:57:37.810604Z"
+    },
+    {
+      "id": "89fb7b10-09a3-49b7-9856-bc55dbc7693c",
+      "content_id": "11ffaa20-05a8-49c7-8888-336aeab1b8d5",
+      "claim_id": "C25",
+      "claim": "The simple model treats the fish eye as a pinhole detector.",
+      "claim_type": "EXPLICIT",
+      "source": "This simple model treats the fish eye as a pinhole detector",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an explicit simplification in the model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:57:37.810604Z"
+    },
+    {
+      "id": "2fe3f36a-8999-4cba-b6b0-93b19c2a6944",
+      "content_id": "11ffaa20-05a8-49c7-8888-336aeab1b8d5",
+      "claim_id": "C26",
+      "claim": "Real photoreceptors blur visual signals on a spatial scale determined by their receptive field.",
+      "claim_type": "EXPLICIT",
+      "source": "whereas real photoreceptors blur visual signals on a spatial scale determined by their receptive field.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about photoreceptor function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:57:37.810604Z"
+    },
+    {
+      "id": "d4a3ba2b-32a0-4f2b-a3cb-c7be8dab5cfc",
+      "content_id": "11ffaa20-05a8-49c7-8888-336aeab1b8d5",
+      "claim_id": "C27",
+      "claim": "The simulation compresses a large amount of light onto the overly thin border of the Snell window.",
+      "claim_type": "EXPLICIT",
+      "source": "Consequently, our simulation compresses a large amount of light onto the overly thin border of the Snell window",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the consequence of the pinhole detector assumption.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:57:37.810604Z"
+    },
+    {
+      "id": "ba37cffa-5d42-4554-8f2b-e7dbf16f0082",
+      "content_id": "11ffaa20-05a8-49c7-8888-336aeab1b8d5",
+      "claim_id": "C28",
+      "claim": "The grayscale color axes in Figure 1c were saturated to avoid a visually distracting artifact.",
+      "claim_type": "EXPLICIT",
+      "source": "and we saturated the grayscale color axes in Figure 1c to avoid this visually distracting artifact.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a visualization choice made for the figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:57:37.810604Z"
+    },
+    {
+      "id": "4c288232-ceaa-4f52-9a9d-99eee8556e00",
+      "content_id": "11ffaa20-05a8-49c7-8888-336aeab1b8d5",
+      "claim_id": "C29",
+      "claim": "Gamma-encoded gratings with spatial frequency 1 cycle/cm were used to mimic real projector conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "To make the image as realistic as possible, we mimicked real projector conditions using gamma-encoded gratings with spatial frequency 1 cycle / cm",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the simulation parameters chosen to match real conditions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:57:37.810604Z"
+    },
+    {
+      "id": "08a9d63a-1a95-4d75-89dd-19ff1e172b4e",
+      "content_id": "11ffaa20-05a8-49c7-8888-336aeab1b8d5",
+      "claim_id": "C31",
+      "claim": "A typical display gamma encoding has gamma = 2.2.",
+      "claim_type": "EXPLICIT",
+      "source": "The exponent on the left represents a typical display gamma encoding with gamma = 2.2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is standard knowledge about display technology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:57:37.810604Z"
+    },
+    {
+      "id": "c0422623-7799-4235-a52e-a41b240f098a",
+      "content_id": "11ffaa20-05a8-49c7-8888-336aeab1b8d5",
+      "claim_id": "C32",
+      "claim": "Ray supersampling and stochastic sampling were used to reduce moir\u00e9 artifacts arising from ray tracing.",
+      "claim_type": "EXPLICIT",
+      "source": "To reduce moir\u00e9 artifacts arising from ray tracing, we used a combination of ray supersampling (averaging the rays emanating from 16 sub-pixels for each virtual screen pixel) and stochastic sampling (the position of each ray was randomly jittered between -1 and 1 sub-pixels from its native position) (Dipp\u00e9 and Wold, 1985).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the computational technique used, supported by citation to prior work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:57:37.810604Z"
+    },
+    {
+      "id": "4c04fa15-457e-4df4-81b6-a30cdba8dfb8",
+      "content_id": "11ffaa20-05a8-49c7-8888-336aeab1b8d5",
+      "claim_id": "C33",
+      "claim": "Ray supersampling involves averaging rays emanating from 16 sub-pixels for each virtual screen pixel.",
+      "claim_type": "EXPLICIT",
+      "source": "ray supersampling (averaging the rays emanating from 16 sub-pixels for each virtual screen pixel)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the specific implementation of the technique.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:57:37.810604Z"
+    },
+    {
+      "id": "a99b1b5f-d2a0-4a1e-86d6-c0f4c146c29b",
+      "content_id": "11ffaa20-05a8-49c7-8888-336aeab1b8d5",
+      "claim_id": "C34",
+      "claim": "Stochastic sampling involves randomly jittering ray positions between -1 and 1 sub-pixels from their native position.",
+      "claim_type": "EXPLICIT",
+      "source": "stochastic sampling (the position of each ray was randomly jittered between -1 and 1 sub-pixels from its native position)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the specific implementation of the technique.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:57:37.810604Z"
+    },
+    {
+      "id": "e587abc1-2166-4a05-b2fe-f899c381d882",
+      "content_id": "11ffaa20-05a8-49c7-8888-336aeab1b8d5",
+      "claim_id": "C35",
+      "claim": "Geometric parameters were approximated from Dunn et al. (2016a) for looming stimulus corrections.",
+      "claim_type": "EXPLICIT",
+      "source": "We approximated the geometric parameters from Dunn et al. (2016a) (flat air-water interface, da = 0.5 mm, dw = 3 mm, dp = 1 mm, stimulus offset from the fish by 10 mm along the screen)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the source of parameters used in the analysis, citing prior work.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:57:37.810604Z"
+    },
+    {
+      "id": "cc32b499-a948-4787-9920-5fa71db63516",
+      "content_id": "11ffaa20-05a8-49c7-8888-336aeab1b8d5",
+      "claim_id": "C36",
+      "claim": "Dunn et al. (2016a) used a flat air-water interface with da = 0.5 mm, dw = 3 mm, dp = 1 mm, and stimulus offset of 10 mm.",
+      "claim_type": "EXPLICIT",
+      "source": "Dunn et al. (2016a) (flat air-water interface, da = 0.5 mm, dw = 3 mm, dp = 1 mm, stimulus offset from the fish by 10 mm along the screen)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes experimental parameters from a cited study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:57:37.810604Z"
+    },
+    {
+      "id": "c1feca92-51a6-4a51-b399-98e836697b25",
+      "content_id": "11ffaa20-05a8-49c7-8888-336aeab1b8d5",
+      "claim_id": "C37",
+      "claim": "Geometric parameters were approximated from Temizer et al., 2015 for looming stimulus corrections.",
+      "claim_type": "EXPLICIT",
+      "source": "and Temizer et al., 2015 (curved air-water interface, da = 8 mm, dw = 2 mm, dp = 1 mm, r = 17.5 mm, stimulus centered)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the source of parameters used in the analysis, citing prior work.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:57:37.810604Z"
+    },
+    {
+      "id": "80ae54ed-37e0-493d-83a4-b40988e34a8b",
+      "content_id": "11ffaa20-05a8-49c7-8888-336aeab1b8d5",
+      "claim_id": "C38",
+      "claim": "Temizer et al., 2015 used a curved air-water interface with da = 8 mm, dw = 2 mm, dp = 1 mm, r = 17.5 mm, and centered stimulus.",
+      "claim_type": "EXPLICIT",
+      "source": "Temizer et al., 2015 (curved air-water interface, da = 8 mm, dw = 2 mm, dp = 1 mm, r = 17.5 mm, stimulus centered)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes experimental parameters from a cited study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:57:37.810604Z"
+    },
+    {
+      "id": "86f5849e-ba4a-4266-9ef8-435284186220",
+      "content_id": "11ffaa20-05a8-49c7-8888-336aeab1b8d5",
+      "claim_id": "C39",
+      "claim": "A refractive index of np = 1.55 was used for polystyrene plastic.",
+      "claim_type": "EXPLICIT",
+      "source": "We used a refractive index of np = 1.55 for the polystyrene plastic.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a parameter used in the simulations based on material properties.",
+      "evidence_type": "[\"KNOWLEDGE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:57:37.810604Z"
+    },
+    {
+      "id": "1468244d-9f79-4f9f-8173-6c1a993f0fe9",
+      "content_id": "11ffaa20-05a8-49c7-8888-336aeab1b8d5",
+      "claim_id": "C40",
+      "claim": "Dunn et al. collected data from freely swimming fish.",
+      "claim_type": "EXPLICIT",
+      "source": "While Dunn et al. collected data from freely swimming fish",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental conditions from a cited study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:57:37.810604Z"
+    },
+    {
+      "id": "243e08ca-055e-44db-babe-f43801e6986d",
+      "content_id": "11ffaa20-05a8-49c7-8888-336aeab1b8d5",
+      "claim_id": "C41",
+      "claim": "In Dunn et al., the height of water was kept at approximately 5 mm.",
+      "claim_type": "EXPLICIT",
+      "source": "the height of the water was kept at approximately 5 mm",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes experimental parameters from a cited study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:57:37.810604Z"
+    },
+    {
+      "id": "5b0a0693-4656-4759-a719-936f6358df85",
+      "content_id": "11ffaa20-05a8-49c7-8888-336aeab1b8d5",
+      "claim_id": "C42",
+      "claim": "3 mm reflects a typical swim depth for zebrafish in the Dunn et al. experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "and 3 mm reflects a typical swim depth.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about typical behavior in the cited experimental setup.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:57:37.810604Z"
+    },
+    {
+      "id": "0db01db5-a3a6-483a-9817-43321f9a95d2",
+      "content_id": "11ffaa20-05a8-49c7-8888-336aeab1b8d5",
+      "claim_id": "C43",
+      "claim": "Freely swimming zebrafish can adjust their depth in water.",
+      "claim_type": "EXPLICIT",
+      "source": "Since freely swimming zebrafish can adjust their depth in water",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about zebrafish behavior.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:57:37.810604Z"
+    },
+    {
+      "id": "1260aa0f-83c5-4ec0-93b9-e0abc2b7bd02",
+      "content_id": "11ffaa20-05a8-49c7-8888-336aeab1b8d5",
+      "claim_id": "C44",
+      "claim": "Treating dw as constant is an approximation for freely swimming fish.",
+      "claim_type": "EXPLICIT",
+      "source": "it's an approximation to treat dw as constant.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This acknowledges a limitation of the modeling approach.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:57:37.810604Z"
+    },
+    {
+      "id": "8394e5a1-1b0b-4cee-9422-9333bec4f3ed",
+      "content_id": "11ffaa20-05a8-49c7-8888-336aeab1b8d5",
+      "claim_id": "C45",
+      "claim": "Stimulus size was quantified with solid angle, the surface area of the stimulus shape projected onto the unit sphere.",
+      "claim_type": "EXPLICIT",
+      "source": "We quantified the size of each transformed stimulus with its solid angle, the surface area of the stimulus shape projected onto the unit sphere.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the metric used for quantification.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:57:37.810604Z"
+    },
+    {
+      "id": "5a024a40-8d25-4ab8-989c-74955c5dfc7a",
+      "content_id": "11ffaa20-05a8-49c7-8888-336aeab1b8d5",
+      "claim_id": "C47",
+      "claim": "For Dunn et al., stimuli were not spherical caps.",
+      "claim_type": "EXPLICIT",
+      "source": "To calculate the solid angle for Dunn et al., in which stimuli were not spherical caps",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a characteristic of the stimuli in the cited study.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:57:37.810604Z"
+    },
+    {
+      "id": "dcea399d-8006-4238-bfa8-5403f697649f",
+      "content_id": "11ffaa20-05a8-49c7-8888-336aeab1b8d5",
+      "claim_id": "C48",
+      "claim": "Stimulus border pixels were represented in a spherical coordinate system with the fish at the origin.",
+      "claim_type": "EXPLICIT",
+      "source": "we first represented stimulus border pixels in a spherical coordinate system locating the fish at the origin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the computational approach used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:57:37.810604Z"
+    },
+    {
+      "id": "f2872956-f1eb-4ff1-874c-99318abae086",
+      "content_id": "11ffaa20-05a8-49c7-8888-336aeab1b8d5",
+      "claim_id": "C49",
+      "claim": "The radial coordinate does not affect solid angle.",
+      "claim_type": "EXPLICIT",
+      "source": "The radial coordinate does not affect the solid angle",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about solid angle geometry.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:57:37.810604Z"
+    },
+    {
+      "id": "af7241ba-6f90-418d-8b11-6f6ecef84cd5",
+      "content_id": "11ffaa20-05a8-49c7-8888-336aeab1b8d5",
+      "claim_id": "C51",
+      "claim": "An equal-area sinusoidal (Mercator) projection was used to calculate area.",
+      "claim_type": "EXPLICIT",
+      "source": "To calculate the area, we used an equal-area sinusoidal (Mercator) projection",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the mathematical method used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:57:37.810604Z"
+    },
+    {
+      "id": "996288c2-7ccd-4324-bae0-1985690cc5a1",
+      "content_id": "11ffaa20-05a8-49c7-8888-336aeab1b8d5",
+      "claim_id": "C53",
+      "claim": "The equal-area sinusoidal projection projects an arbitrary shape on the sphere's surface onto the Cartesian plane.",
+      "claim_type": "EXPLICIT",
+      "source": "which projects an arbitrary shape on the surface of a sphere onto the Cartesian plane.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the function of the projection.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:57:37.810604Z"
+    },
+    {
+      "id": "569d466a-733d-4a05-9ee9-7e6f38c804f2",
+      "content_id": "11ffaa20-05a8-49c7-8888-336aeab1b8d5",
+      "claim_id": "C54",
+      "claim": "Distances and shapes are not preserved in the equal-area sinusoidal projection.",
+      "claim_type": "EXPLICIT",
+      "source": "While distances and shapes are not preserved in this projection",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the properties of this projection.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:57:37.810604Z"
+    },
+    {
+      "id": "fd9adb91-971f-4eec-ab1f-48ce59cbeeef",
+      "content_id": "11ffaa20-05a8-49c7-8888-336aeab1b8d5",
+      "claim_id": "C55",
+      "claim": "Area as a fraction of the sphere's surface area is maintained in the equal-area sinusoidal projection.",
+      "claim_type": "EXPLICIT",
+      "source": "area as a fraction of the sphere's surface area is maintained.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the properties of this projection.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:57:37.810604Z"
+    },
+    {
+      "id": "7c8e34c3-d387-4d11-acc5-00f059221590",
+      "content_id": "11ffaa20-05a8-49c7-8888-336aeab1b8d5",
+      "claim_id": "C56",
+      "claim": "The solid area of the stimulus can be calculated by finding the area of the projected 2D polygon.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, we could calculate the solid area of the stimulus in this projection by finding the area of the projected 2D polygon.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the area-preserving property of the projection.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:57:37.810604Z"
+    },
+    {
+      "id": "3ca96434-c7e6-4460-b8d1-34a4ade7883b",
+      "content_id": "11ffaa20-05a8-49c7-8888-336aeab1b8d5",
+      "claim_id": "C57",
+      "claim": "Error propagation formulae were used to calculate absolute and relative discrepancy 95% confidence intervals in Figure 2c.",
+      "claim_type": "EXPLICIT",
+      "source": "To calculate the absolute and relative discrepancy 95% confidence intervals in Figure 2c, we used error propagation formulae for the difference and division of two distributions, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the statistical method used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:57:37.810604Z"
+    },
+    {
+      "id": "9944bc97-5fe7-49ad-ae9c-f72152523b9b",
+      "content_id": "11ffaa20-05a8-49c7-8888-336aeab1b8d5",
+      "claim_id": "C58",
+      "claim": "Receptive field mapping experiments were simulated by tracing light paths from single pixels on a virtual screen to the fish.",
+      "claim_type": "EXPLICIT",
+      "source": "We simulated receptive field (RF) mapping experiments by tracing light paths from single pixels on a virtual screen to the fish (Figure 2d-f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the simulation approach and references supporting figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:57:37.810604Z"
+    },
+    {
+      "id": "0ce36609-a47f-4823-89dd-a83a8b359496",
+      "content_id": "11ffaa20-05a8-49c7-8888-336aeab1b8d5",
+      "claim_id": "C59",
+      "claim": "A neuron's receptive field was modeled as a Gaussian function on the sphere.",
+      "claim_type": "EXPLICIT",
+      "source": "We modeled a neuron's RF as a Gaussian function on the sphere",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the modeling assumption.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:57:37.810604Z"
+    },
+    {
+      "id": "eb19756d-e54a-4c83-a30f-be2bb44b296b",
+      "content_id": "11ffaa20-05a8-49c7-8888-336aeab1b8d5",
+      "claim_id": "C60",
+      "claim": "The 'true RF' is defined as the pixel-wise response pattern that would occur in the absence of the air-water interface.",
+      "claim_type": "EXPLICIT",
+      "source": "defined the \"true RF\" to be the pixel-wise response pattern that would occur in the absence of the air-water interface",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definition used in the analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:57:37.810604Z"
+    },
+    {
+      "id": "c8ef2145-dace-4376-90e6-577a8f7f6ae4",
+      "content_id": "11ffaa20-05a8-49c7-8888-336aeab1b8d5",
+      "claim_id": "C61",
+      "claim": "The 'apparent RF' is defined as the pixel-wise response pattern induced with light that bends according to Snell's law at an air-water interface.",
+      "claim_type": "EXPLICIT",
+      "source": "and defined the \"apparent RF\" as the pixel-wise response pattern that would be induced with light that bends according to Snell's law at an air-water interface.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definition used in the analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:57:37.810604Z"
+    },
+    {
+      "id": "1fe64158-9c78-4dbe-9957-24158613abb3",
+      "content_id": "11ffaa20-05a8-49c7-8888-336aeab1b8d5",
+      "claim_id": "C65",
+      "claim": "A computational tool for visualizing and correcting distortions is provided at https://github.com/spoonsso/snell_tool/.",
+      "claim_type": "EXPLICIT",
+      "source": "With this paper, we provide a computation tool for visualizing and correcting distortions (https://github.com/spoonsso/snell_tool/).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the availability of the tool.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:57:37.810604Z"
+    },
+    {
+      "id": "0a7bf966-1ed9-4638-ae63-23da28db25c4",
+      "content_id": "11ffaa20-05a8-49c7-8888-336aeab1b8d5",
+      "claim_id": "C66",
+      "claim": "The tool is written in Python and uses standard image processing libraries.",
+      "claim_type": "EXPLICIT",
+      "source": "The tool is written in Python and uses standard image processing libraries.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the implementation of the tool.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:57:37.810604Z"
+    },
+    {
+      "id": "5654fbbd-bc8c-4825-af08-2cd928e0c1d7",
+      "content_id": "11ffaa20-05a8-49c7-8888-336aeab1b8d5",
+      "claim_id": "C67",
+      "claim": "The tool can be launched virtually over the web without installing new software using the MyBinder link.",
+      "claim_type": "EXPLICIT",
+      "source": "The tool can be launched virtually over the web, without any need to install new software, using the MyBinder link in the README file hosted on the github repository.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the accessibility of the tool.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:57:37.810604Z"
+    },
+    {
+      "id": "777a3525-2a7f-4c4a-bc95-a40c0cfde80c",
+      "content_id": "11ffaa20-05a8-49c7-8888-336aeab1b8d5",
+      "claim_id": "C68",
+      "claim": "The source code can be downloaded and run on the user's local machine.",
+      "claim_type": "EXPLICIT",
+      "source": "The source code can also be downloaded and run on the user's local machine.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the accessibility of the tool.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:57:37.810604Z"
+    },
+    {
+      "id": "e4a852b1-94f2-4bdb-b66b-50f4beb9f280",
+      "content_id": "11ffaa20-05a8-49c7-8888-336aeab1b8d5",
+      "claim_id": "C69",
+      "claim": "The uses and parameters of the tool are described in detail in an example notebook (snell_example.ipynb).",
+      "claim_type": "EXPLICIT",
+      "source": "The uses and parameters of the tool are described in detail in an example notebook in the repository (snell_example.ipynb).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the documentation provided with the tool.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:57:37.810604Z"
+    },
+    {
+      "id": "5d769343-08eb-4616-97e4-a57242c5ef60",
+      "content_id": "11ffaa20-05a8-49c7-8888-336aeab1b8d5",
+      "claim_id": "C70",
+      "claim": "The tool is implemented only for flat interfaces with the assumptions described in Appendix 1.",
+      "claim_type": "EXPLICIT",
+      "source": "In brief, the tool is implemented only for flat interfaces with the assumptions described in Appendix 1",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a limitation of the tool's scope.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:57:37.810604Z"
+    },
+    {
+      "id": "96d59538-f898-46cc-b4d9-dac0d9a56980",
+      "content_id": "11ffaa20-05a8-49c7-8888-336aeab1b8d5",
+      "claim_id": "C71",
+      "claim": "The tool can model distortions through three media (i.e. with a plastic interface between air and water).",
+      "claim_type": "EXPLICIT",
+      "source": "and it can model distortions through three media (i.e. with a plastic interface between air and water).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a capability of the tool.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:57:37.810604Z"
+    },
+    {
+      "id": "a36207e3-b8cf-4f5e-85b3-11598d517281",
+      "content_id": "11ffaa20-05a8-49c7-8888-336aeab1b8d5",
+      "claim_id": "C72",
+      "claim": "The tool can model displays that emit light with non-uniform angular profiles.",
+      "claim_type": "EXPLICIT",
+      "source": "It can also model displays that emit light with non-uniform angular profiles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a capability of the tool.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:57:37.810604Z"
+    },
+    {
+      "id": "b827c1dc-f76e-43e2-a1c1-a91b231f4b87",
+      "content_id": "11ffaa20-05a8-49c7-8888-336aeab1b8d5",
+      "claim_id": "C73",
+      "claim": "Key customizable parameters include screen size, screen resolution, screen distance, media thicknesses, media refractive indices, and gamma encoding.",
+      "claim_type": "EXPLICIT",
+      "source": "Key customizable parameters include the screen size, screen resolution, screen distance, media thicknesses, media refractive indices, and gamma encoding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the configurable aspects of the tool.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:57:37.810604Z"
+    },
+    {
+      "id": "5cba4255-de38-45b7-a53c-12890c182dd0",
+      "content_id": "11ffaa20-05a8-49c7-8888-336aeab1b8d5",
+      "claim_id": "C74",
+      "claim": "The tool uses a combination of ray super-sampling and stochastic sampling to reduce moir\u00e9 artifacts.",
+      "claim_type": "EXPLICIT",
+      "source": "As described in Illustrating distorted sinusoidal gratings, the tool uses a combination of ray super-sampling and stochastic sampling to reduce moir\u00e9 artifacts arising from ray tracing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a technical feature of the tool.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:57:37.810604Z"
+    },
+    {
+      "id": "fade2172-4170-4405-a00d-6c11fab9b7ab",
+      "content_id": "11ffaa20-05a8-49c7-8888-336aeab1b8d5",
+      "claim_id": "C75",
+      "claim": "The Python notebook illustrates two primary use cases of the tool.",
+      "claim_type": "EXPLICIT",
+      "source": "The Python notebook illustrates two primary use cases of the tool",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the content of the documentation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:57:37.810604Z"
+    },
+    {
+      "id": "9ce1b41b-f649-4271-91ed-172851a53c20",
+      "content_id": "11ffaa20-05a8-49c7-8888-336aeab1b8d5",
+      "claim_id": "C76",
+      "claim": "The tool's library is flexible enough to be adopted for other tasks beyond the two primary use cases.",
+      "claim_type": "EXPLICIT",
+      "source": "though the tool's library is flexible enough to be adopted for other tasks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the extensibility of the tool.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:57:37.810604Z"
+    },
+    {
+      "id": "4aa2629a-7d1b-4015-9c08-7cc22ff9157a",
+      "content_id": "11ffaa20-05a8-49c7-8888-336aeab1b8d5",
+      "claim_id": "C77",
+      "claim": "The tool allows users to input an image to see its distorted form under the model's assumptions.",
+      "claim_type": "EXPLICIT",
+      "source": "First, it allows the user to input an image to see its distorted form under the assumptions of the model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a primary use case of the tool.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:57:37.810604Z"
+    },
+    {
+      "id": "36c02cae-336d-432e-9530-6180c22e1a10",
+      "content_id": "11ffaa20-05a8-49c7-8888-336aeab1b8d5",
+      "claim_id": "C78",
+      "claim": "The tool recreates Figure 1c for any arbitrary grayscale stimulus and a range of user-specified experimental configurations.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, it recreates Figure 1c, but for any arbitrary grayscale stimulus, and for a range of user-specified experimental configurations.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the functionality of the tool in relation to the manuscript's figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:57:37.810604Z"
+    },
+    {
+      "id": "059e18f2-8084-4b49-94e9-fd5fe714ee23",
+      "content_id": "11ffaa20-05a8-49c7-8888-336aeab1b8d5",
+      "claim_id": "C79",
+      "claim": "The tool allows users to input an undistorted target image and inverts the distortion process to suggest a displayable image.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, it allows the user to input an undistorted target image, and the tool inverts the distortion process to suggest an image that could be displayed during an experiment to approximately produce the target from the point of view of the fish.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a primary use case of the tool.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:57:37.810604Z"
+    },
+    {
+      "id": "99cdb8cc-7233-4a52-b274-921aab5d27d5",
+      "content_id": "11ffaa20-05a8-49c7-8888-336aeab1b8d5",
+      "claim_id": "C80",
+      "claim": "The inversion process is demonstrated using a checkered ball stimulus in the tool's example notebook.",
+      "claim_type": "EXPLICIT",
+      "source": "In the tool's example notebook, we demonstrate this inversion process using a checkered ball stimulus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the content of the documentation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:57:37.810604Z"
+    },
+    {
+      "id": "74380e55-4938-4eb5-b92a-845e5e4f50a0",
+      "content_id": "11ffaa20-05a8-49c7-8888-336aeab1b8d5",
+      "claim_id": "C81",
+      "claim": "Some stimuli will be physically impossible to correct.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, note that some stimuli will be physically impossible to correct",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference about the limitations of the correction process.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:57:37.810604Z"
+    },
+    {
+      "id": "bee72e37-4a62-455f-8510-838629624324",
+      "content_id": "11ffaa20-05a8-49c7-8888-336aeab1b8d5",
+      "claim_id": "C82",
+      "claim": "Undistorted image content cannot be delivered outside the Snell window.",
+      "claim_type": "EXPLICIT",
+      "source": "(e.g. undistorted image content cannot be delivered outside the Snell window).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an example of a physical limitation based on optical principles.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:57:37.810604Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "c03e1138-6ed1-43cd-b2bb-fc705e52e525",
+      "content_id": "11ffaa20-05a8-49c7-8888-336aeab1b8d5",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors developed a computational tool that transforms between projected and received visual stimuli to detect and control optical distortions caused by refraction at air-water interfaces. The tool is implemented in Python, handles flat interfaces with optional plastic layers, supports customizable experimental parameters, and provides two primary use cases: visualizing distortions and inverting the distortion process to generate corrected stimuli.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4-C6 and C65-C80 collectively demonstrate the development and capabilities of the computational tool. The tool's implementation is well-documented with specific technical details (ray tracing methods, customizable parameters), accessibility options (web-based and local execution), and clear use cases. The methodology is based on established optical principles (Snell's law, Fresnel equations) and includes appropriate technical considerations (moir\u00e9 artifact reduction).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:57:37.810604Z"
+    },
+    {
+      "id": "086de4ca-5a10-448a-bdef-696f3e21af85",
+      "content_id": "11ffaa20-05a8-49c7-8888-336aeab1b8d5",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Applying refraction corrections to looming stimuli from two prior studies (Dunn et al. 2016a and Temizer et al. 2015) reduced discrepancies in the literature concerning stimuli that evoke escape behavior. The authors quantified stimulus size using solid angle calculations with appropriate geometric projections and error propagation methods.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7 and C35-C57 provide a concrete application of the correction tool to reconcile literature discrepancies. The methodology is sound: parameters were approximated from cited studies, solid angle was used as an appropriate metric for stimulus size, and proper mathematical methods (equal-area projections, error propagation) were employed. However, the claim relies on approximated parameters (C35, C37) and acknowledges limitations (C44), which are appropriately disclosed.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:57:37.810604Z"
+    },
+    {
+      "id": "c31d28c5-1e2f-474f-a05b-a8470947f404",
+      "content_id": "11ffaa20-05a8-49c7-8888-336aeab1b8d5",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The authors demonstrated through simulations that uncorrected stimuli pose dangers to receptive field mapping experiments by comparing 'true' receptive fields (without interface) to 'apparent' receptive fields (with refraction at air-water interface). Receptive fields were modeled as Gaussian functions on the sphere.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9 and C58-C61 describe a simulation study illustrating the impact of refraction on receptive field mapping. The methodology is clearly defined with explicit definitions of 'true RF' and 'apparent RF', and the Gaussian model is a reasonable simplification. The simulation approach (ray tracing from pixels to fish) is appropriate for demonstrating the distortion effects, though the actual magnitude of errors and their practical significance would depend on the specific experimental parameters.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:57:37.810604Z"
+    },
+    {
+      "id": "bb861314-9b81-4d41-9628-23a5e114abe8",
+      "content_id": "11ffaa20-05a8-49c7-8888-336aeab1b8d5",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Optical refraction causes light to bend at interfaces between media, which can significantly distort visual stimuli presented to aquatic animals, yet this phenomenon has often been ignored in visual neuroscience experiments.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C3 establish the motivation for the work. C1 is established physics, C2 is a logical consequence of C1 applied to aquatic experiments, and C3 is an observational claim about the field that is implicitly supported by the need for this work and the literature reconciliation demonstrated in C7. These claims provide appropriate context and justification.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:57:37.810604Z"
+    },
+    {
+      "id": "cf83239f-d091-4c26-bf45-8f19f5c7d1ae",
+      "content_id": "11ffaa20-05a8-49c7-8888-336aeab1b8d5",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The authors calculated light transmission fractions using Fresnel equations, modeling multi-interface systems (air-plastic-water) by multiplying transmission fractions at each interface while ignoring multiple reflections within the plastic.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10-C15 describe the application of Fresnel equations to calculate transmission. The approach is based on established physics (C10, C11) and the simplification of ignoring multiple reflections (C15) is explicitly acknowledged. The multiplicative approach (C14) is a reasonable first-order approximation for thin plastic layers, though it introduces some error that is appropriately disclosed.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:57:37.810604Z"
+    },
+    {
+      "id": "d47d3e68-8cab-4b00-9493-7011f748133f",
+      "content_id": "11ffaa20-05a8-49c7-8888-336aeab1b8d5",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The authors simulated distorted sinusoidal gratings using ray tracing with Snell's law and Fresnel equations, employing a pinhole detector model for the fish eye, gamma-encoded gratings to mimic real projectors, and ray supersampling with stochastic sampling to reduce moir\u00e9 artifacts.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16-C34 describe the simulation methodology for Figure 1c. The approach is technically sound with appropriate choices: realistic parameters (C18, C19, C29, C31), established ray tracing techniques (C23, C24, C32-C34), and explicit acknowledgment of simplifications (C25) and their consequences (C27, C28). The pinhole detector assumption is a limitation but is clearly stated and its visual artifact is handled appropriately (C28).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:57:37.810604Z"
+    },
+    {
+      "id": "bb560ec6-bdf9-4a48-83f3-7802b0defafa",
+      "content_id": "11ffaa20-05a8-49c7-8888-336aeab1b8d5",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The tool is expected to help reconcile other confusing aspects of the literature beyond escape behavior stimuli.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C8 is explicitly speculative about future utility. While the tool's success in reconciling escape behavior literature (C7) provides some support for this expectation, no additional examples or validation are provided. This represents a reasonable hypothesis but lacks direct evidence.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:57:37.810604Z"
+    },
+    {
+      "id": "36ae8a0b-58aa-4af1-9f34-f15ba2a3980a",
+      "content_id": "11ffaa20-05a8-49c7-8888-336aeab1b8d5",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Some stimuli are physically impossible to correct, such as delivering undistorted image content outside the Snell window.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C81-C82 identify a fundamental physical limitation of the correction approach based on optical principles. This is a logical consequence of total internal reflection and the geometry of the Snell window, representing an important caveat for users of the tool.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:57:37.810604Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "e8a3c1de-bbea-4a62-9293-4afda1550187",
+      "result_id": "c03e1138-6ed1-43cd-b2bb-fc705e52e525"
+    },
+    {
+      "claim_id": "d4c03d2c-ade0-4a61-9fab-2d757620a34a",
+      "result_id": "c03e1138-6ed1-43cd-b2bb-fc705e52e525"
+    },
+    {
+      "claim_id": "8fa1e3ef-415d-443d-8fbe-9bb2a2431677",
+      "result_id": "c03e1138-6ed1-43cd-b2bb-fc705e52e525"
+    },
+    {
+      "claim_id": "1fe64158-9c78-4dbe-9957-24158613abb3",
+      "result_id": "c03e1138-6ed1-43cd-b2bb-fc705e52e525"
+    },
+    {
+      "claim_id": "0a7bf966-1ed9-4638-ae63-23da28db25c4",
+      "result_id": "c03e1138-6ed1-43cd-b2bb-fc705e52e525"
+    },
+    {
+      "claim_id": "5654fbbd-bc8c-4825-af08-2cd928e0c1d7",
+      "result_id": "c03e1138-6ed1-43cd-b2bb-fc705e52e525"
+    },
+    {
+      "claim_id": "777a3525-2a7f-4c4a-bc95-a40c0cfde80c",
+      "result_id": "c03e1138-6ed1-43cd-b2bb-fc705e52e525"
+    },
+    {
+      "claim_id": "e4a852b1-94f2-4bdb-b66b-50f4beb9f280",
+      "result_id": "c03e1138-6ed1-43cd-b2bb-fc705e52e525"
+    },
+    {
+      "claim_id": "5d769343-08eb-4616-97e4-a57242c5ef60",
+      "result_id": "c03e1138-6ed1-43cd-b2bb-fc705e52e525"
+    },
+    {
+      "claim_id": "96d59538-f898-46cc-b4d9-dac0d9a56980",
+      "result_id": "c03e1138-6ed1-43cd-b2bb-fc705e52e525"
+    },
+    {
+      "claim_id": "a36207e3-b8cf-4f5e-85b3-11598d517281",
+      "result_id": "c03e1138-6ed1-43cd-b2bb-fc705e52e525"
+    },
+    {
+      "claim_id": "b827c1dc-f76e-43e2-a1c1-a91b231f4b87",
+      "result_id": "c03e1138-6ed1-43cd-b2bb-fc705e52e525"
+    },
+    {
+      "claim_id": "5cba4255-de38-45b7-a53c-12890c182dd0",
+      "result_id": "c03e1138-6ed1-43cd-b2bb-fc705e52e525"
+    },
+    {
+      "claim_id": "fade2172-4170-4405-a00d-6c11fab9b7ab",
+      "result_id": "c03e1138-6ed1-43cd-b2bb-fc705e52e525"
+    },
+    {
+      "claim_id": "9ce1b41b-f649-4271-91ed-172851a53c20",
+      "result_id": "c03e1138-6ed1-43cd-b2bb-fc705e52e525"
+    },
+    {
+      "claim_id": "4aa2629a-7d1b-4015-9c08-7cc22ff9157a",
+      "result_id": "c03e1138-6ed1-43cd-b2bb-fc705e52e525"
+    },
+    {
+      "claim_id": "36c02cae-336d-432e-9530-6180c22e1a10",
+      "result_id": "c03e1138-6ed1-43cd-b2bb-fc705e52e525"
+    },
+    {
+      "claim_id": "059e18f2-8084-4b49-94e9-fd5fe714ee23",
+      "result_id": "c03e1138-6ed1-43cd-b2bb-fc705e52e525"
+    },
+    {
+      "claim_id": "99cdb8cc-7233-4a52-b274-921aab5d27d5",
+      "result_id": "c03e1138-6ed1-43cd-b2bb-fc705e52e525"
+    },
+    {
+      "claim_id": "7bf03d15-46f1-4359-b8e8-480422fcc436",
+      "result_id": "086de4ca-5a10-448a-bdef-696f3e21af85"
+    },
+    {
+      "claim_id": "e587abc1-2166-4a05-b2fe-f899c381d882",
+      "result_id": "086de4ca-5a10-448a-bdef-696f3e21af85"
+    },
+    {
+      "claim_id": "cc32b499-a948-4787-9920-5fa71db63516",
+      "result_id": "086de4ca-5a10-448a-bdef-696f3e21af85"
+    },
+    {
+      "claim_id": "c1feca92-51a6-4a51-b399-98e836697b25",
+      "result_id": "086de4ca-5a10-448a-bdef-696f3e21af85"
+    },
+    {
+      "claim_id": "80ae54ed-37e0-493d-83a4-b40988e34a8b",
+      "result_id": "086de4ca-5a10-448a-bdef-696f3e21af85"
+    },
+    {
+      "claim_id": "86f5849e-ba4a-4266-9ef8-435284186220",
+      "result_id": "086de4ca-5a10-448a-bdef-696f3e21af85"
+    },
+    {
+      "claim_id": "1468244d-9f79-4f9f-8173-6c1a993f0fe9",
+      "result_id": "086de4ca-5a10-448a-bdef-696f3e21af85"
+    },
+    {
+      "claim_id": "243e08ca-055e-44db-babe-f43801e6986d",
+      "result_id": "086de4ca-5a10-448a-bdef-696f3e21af85"
+    },
+    {
+      "claim_id": "5b0a0693-4656-4759-a719-936f6358df85",
+      "result_id": "086de4ca-5a10-448a-bdef-696f3e21af85"
+    },
+    {
+      "claim_id": "0db01db5-a3a6-483a-9817-43321f9a95d2",
+      "result_id": "086de4ca-5a10-448a-bdef-696f3e21af85"
+    },
+    {
+      "claim_id": "1260aa0f-83c5-4ec0-93b9-e0abc2b7bd02",
+      "result_id": "086de4ca-5a10-448a-bdef-696f3e21af85"
+    },
+    {
+      "claim_id": "8394e5a1-1b0b-4cee-9422-9333bec4f3ed",
+      "result_id": "086de4ca-5a10-448a-bdef-696f3e21af85"
+    },
+    {
+      "claim_id": "5a024a40-8d25-4ab8-989c-74955c5dfc7a",
+      "result_id": "086de4ca-5a10-448a-bdef-696f3e21af85"
+    },
+    {
+      "claim_id": "dcea399d-8006-4238-bfa8-5403f697649f",
+      "result_id": "086de4ca-5a10-448a-bdef-696f3e21af85"
+    },
+    {
+      "claim_id": "f2872956-f1eb-4ff1-874c-99318abae086",
+      "result_id": "086de4ca-5a10-448a-bdef-696f3e21af85"
+    },
+    {
+      "claim_id": "af7241ba-6f90-418d-8b11-6f6ecef84cd5",
+      "result_id": "086de4ca-5a10-448a-bdef-696f3e21af85"
+    },
+    {
+      "claim_id": "996288c2-7ccd-4324-bae0-1985690cc5a1",
+      "result_id": "086de4ca-5a10-448a-bdef-696f3e21af85"
+    },
+    {
+      "claim_id": "569d466a-733d-4a05-9ee9-7e6f38c804f2",
+      "result_id": "086de4ca-5a10-448a-bdef-696f3e21af85"
+    },
+    {
+      "claim_id": "fd9adb91-971f-4eec-ab1f-48ce59cbeeef",
+      "result_id": "086de4ca-5a10-448a-bdef-696f3e21af85"
+    },
+    {
+      "claim_id": "7c8e34c3-d387-4d11-acc5-00f059221590",
+      "result_id": "086de4ca-5a10-448a-bdef-696f3e21af85"
+    },
+    {
+      "claim_id": "3ca96434-c7e6-4460-b8d1-34a4ade7883b",
+      "result_id": "086de4ca-5a10-448a-bdef-696f3e21af85"
+    },
+    {
+      "claim_id": "608ffa46-fbd7-444d-a743-c0e2f90cf3bb",
+      "result_id": "c31d28c5-1e2f-474f-a05b-a8470947f404"
+    },
+    {
+      "claim_id": "9944bc97-5fe7-49ad-ae9c-f72152523b9b",
+      "result_id": "c31d28c5-1e2f-474f-a05b-a8470947f404"
+    },
+    {
+      "claim_id": "0ce36609-a47f-4823-89dd-a83a8b359496",
+      "result_id": "c31d28c5-1e2f-474f-a05b-a8470947f404"
+    },
+    {
+      "claim_id": "eb19756d-e54a-4c83-a30f-be2bb44b296b",
+      "result_id": "c31d28c5-1e2f-474f-a05b-a8470947f404"
+    },
+    {
+      "claim_id": "c8ef2145-dace-4376-90e6-577a8f7f6ae4",
+      "result_id": "c31d28c5-1e2f-474f-a05b-a8470947f404"
+    },
+    {
+      "claim_id": "35f223c2-ef58-4c13-8092-6987bd9db51c",
+      "result_id": "bb861314-9b81-4d41-9628-23a5e114abe8"
+    },
+    {
+      "claim_id": "495bc4e4-7799-43fe-824d-5e51bd6321fe",
+      "result_id": "bb861314-9b81-4d41-9628-23a5e114abe8"
+    },
+    {
+      "claim_id": "37968f96-3f0a-4a97-8f03-6b070dffe203",
+      "result_id": "bb861314-9b81-4d41-9628-23a5e114abe8"
+    },
+    {
+      "claim_id": "eceeca29-2e38-44a9-9bff-b32932d8d68c",
+      "result_id": "cf83239f-d091-4c26-bf45-8f19f5c7d1ae"
+    },
+    {
+      "claim_id": "43dda57e-6a11-4faa-ba57-c6a3f22ee720",
+      "result_id": "cf83239f-d091-4c26-bf45-8f19f5c7d1ae"
+    },
+    {
+      "claim_id": "0dfead1c-ce05-4ceb-bb1b-2bb57a859278",
+      "result_id": "cf83239f-d091-4c26-bf45-8f19f5c7d1ae"
+    },
+    {
+      "claim_id": "daee261f-4668-4d7e-a18b-3fbfb06e695e",
+      "result_id": "cf83239f-d091-4c26-bf45-8f19f5c7d1ae"
+    },
+    {
+      "claim_id": "dce3f642-52f0-4468-bc46-16dadf80ba3d",
+      "result_id": "cf83239f-d091-4c26-bf45-8f19f5c7d1ae"
+    },
+    {
+      "claim_id": "4e6bcc8e-a9e6-45fe-a689-7f32842c4e87",
+      "result_id": "d47d3e68-8cab-4b00-9493-7011f748133f"
+    },
+    {
+      "claim_id": "c918b2b7-a480-4e04-a217-688024bb14b2",
+      "result_id": "d47d3e68-8cab-4b00-9493-7011f748133f"
+    },
+    {
+      "claim_id": "47c198af-7894-4693-ae4a-f17ca60c099b",
+      "result_id": "d47d3e68-8cab-4b00-9493-7011f748133f"
+    },
+    {
+      "claim_id": "88f80ede-3072-422f-a371-1218de82b36b",
+      "result_id": "d47d3e68-8cab-4b00-9493-7011f748133f"
+    },
+    {
+      "claim_id": "f442aeaa-3639-4b6f-b762-05a1641d981b",
+      "result_id": "d47d3e68-8cab-4b00-9493-7011f748133f"
+    },
+    {
+      "claim_id": "d01d13f7-15ce-4933-8f28-79f0c4d2fb67",
+      "result_id": "d47d3e68-8cab-4b00-9493-7011f748133f"
+    },
+    {
+      "claim_id": "1cc87845-5e96-4946-8d6c-f9f0fd3576be",
+      "result_id": "d47d3e68-8cab-4b00-9493-7011f748133f"
+    },
+    {
+      "claim_id": "b1c125d3-1193-4e5d-8f46-55cfc7ea03a7",
+      "result_id": "d47d3e68-8cab-4b00-9493-7011f748133f"
+    },
+    {
+      "claim_id": "89fb7b10-09a3-49b7-9856-bc55dbc7693c",
+      "result_id": "d47d3e68-8cab-4b00-9493-7011f748133f"
+    },
+    {
+      "claim_id": "2fe3f36a-8999-4cba-b6b0-93b19c2a6944",
+      "result_id": "d47d3e68-8cab-4b00-9493-7011f748133f"
+    },
+    {
+      "claim_id": "d4a3ba2b-32a0-4f2b-a3cb-c7be8dab5cfc",
+      "result_id": "d47d3e68-8cab-4b00-9493-7011f748133f"
+    },
+    {
+      "claim_id": "ba37cffa-5d42-4554-8f2b-e7dbf16f0082",
+      "result_id": "d47d3e68-8cab-4b00-9493-7011f748133f"
+    },
+    {
+      "claim_id": "4c288232-ceaa-4f52-9a9d-99eee8556e00",
+      "result_id": "d47d3e68-8cab-4b00-9493-7011f748133f"
+    },
+    {
+      "claim_id": "08a9d63a-1a95-4d75-89dd-19ff1e172b4e",
+      "result_id": "d47d3e68-8cab-4b00-9493-7011f748133f"
+    },
+    {
+      "claim_id": "c0422623-7799-4235-a52e-a41b240f098a",
+      "result_id": "d47d3e68-8cab-4b00-9493-7011f748133f"
+    },
+    {
+      "claim_id": "4c04fa15-457e-4df4-81b6-a30cdba8dfb8",
+      "result_id": "d47d3e68-8cab-4b00-9493-7011f748133f"
+    },
+    {
+      "claim_id": "a99b1b5f-d2a0-4a1e-86d6-c0f4c146c29b",
+      "result_id": "d47d3e68-8cab-4b00-9493-7011f748133f"
+    },
+    {
+      "claim_id": "7a5fe212-eca9-4810-8728-2457e89ca8b4",
+      "result_id": "bb560ec6-bdf9-4a48-83f3-7802b0defafa"
+    },
+    {
+      "claim_id": "74380e55-4938-4eb5-b92a-845e5e4f50a0",
+      "result_id": "36ae8a0b-58aa-4af1-9f34-f15ba2a3980a"
+    },
+    {
+      "claim_id": "bee72e37-4a62-455f-8510-838629624324",
+      "result_id": "36ae8a0b-58aa-4af1-9f34-f15ba2a3980a"
+    }
+  ],
+  "comparisons": []
+}

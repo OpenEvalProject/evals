@@ -1,0 +1,285 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C23",
+      "C32",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "The authors developed a 2D coarse-grained simulation model of microtubules with effective motor-mediated interactions using Langevin dynamics in LAMMPS with periodic boundary conditions and biologically-inspired parameters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23, C32, C34-C37 describe the simulation methodology with specific parameter values cited from literature (C35-C37). The model is clearly defined with appropriate physical parameters and computational implementation details provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C24",
+      "C38",
+      "C28"
+    ],
+    "result": "The simulations identify five distinct chronological processes comprising MT streaming with characteristic timescales spanning three orders of magnitude: motor-driven sliding, polarity-inversion, maximal activity, collective migration, and rotation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24, C38, and C28 present the main organizational finding of the paper. The chronology is supported by multiple analyses (MSDs, velocity distributions, correlation functions) shown in Figures 3-8 and summarized in Figure 9 and Table 1.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C40"
+    ],
+    "result": "Motor activity drives polarity sorting of MTs, forming large polar-aligned domains with streaming occurring at domain boundaries.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C27, C40 describe structural organization observed in simulations. This is directly supported by simulation snapshots (Figure 3a, Figure 3\u2014figure supplement 2) and Videos 1-2, with polarity sorting mechanism cited to prior work (C40).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "MT dynamics exhibits two distinct modes: slow diffusion within polar-aligned domains and fast ballistic streaming at interfaces between domains, with domain structure remaining constant at steady state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C44 characterize the dual-mode dynamics shown in Figure 3c and Video 3. The interpretation is consistent with trajectory analysis showing correlated vs. uncorrelated displacements (C42-C43) and steady-state observations (C44).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C47",
+      "C52",
+      "C53",
+      "C65"
+    ],
+    "result": "Increasing motor activity leads to faster MT motion, with velocity distributions showing increasing asymmetry at intermediate lag times before decreasing again at long times due to MT reorientation. Motor concentration exponentially shifts activity timescales.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47, C52-C53, C65 describe velocity-activity relationships supported by MSD data (Figure 3d) and velocity distributions (Figure 3e, Figure 3\u2014figure supplements 4-7). The exponential relationship (C65) is shown in Figure 6b.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C59"
+    ],
+    "result": "Displacement correlation functions reveal negative correlations at short times due to antialigned MT sliding, positive correlations at intermediate times from collective motion, and no correlations at long times. Passive systems show weak positive correlations from steric interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C57, C59 describe spatio-temporal correlation analysis shown in Figure 4a-b. The three temporal regimes are clearly demonstrated, with mechanistic interpretations (C55, C59) consistent with the model design.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C73",
+      "C74"
+    ],
+    "result": "Neighboring polar-aligned MTs in the same stream travel collectively in the same direction because they share a similar antialigned environment at domain interfaces.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C74 provide mechanistic interpretation of collective migration supported by positive displacement correlations (Figure 4b) and FRAP-like visualizations (Figure 7). The inference is logical given the domain structure.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "Characteristic timescales increase with MT surface density due to increased stream lifetime and coherence, with specific relationships between transition times and motor forces.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C87 summarize density-dependent trends shown throughout Figures 3-8. The mechanistic explanation (C85) is reasonable, and specific examples (C86-C87) are stated as simulation findings with data support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C77"
+    ],
+    "result": "In the nematic state at high density, MTs cannot rotate freely as in the isotropic case.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C77 explains density-dependent rotational dynamics shown in Figure 8. This is a standard expectation for nematic systems and is consistent with the observed increase in rotational correlation time with density.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "The transition from diffusive to ballistic motion in simulations matches in vitro experiments, with ballistic regimes emerging for increasing motor activity (simulations) or ATP concentration (experiments).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C95 compare simulation results (Figure 3d, Figure 3\u2014figure supplement 10a) with experimental data from Sanchez et al. 2012 (Figure 3\u2014figure supplement 10b). The qualitative agreement is demonstrated, though quantitative comparison is limited by length scale differences (C89).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C102",
+      "C103"
+    ],
+    "result": "Simulation velocity distributions with heavy tails match experimental observations in Drosophila oocytes, but simulations show that neither 3D geometry nor heterogeneous motor speeds are required to reproduce this feature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C103 compare with experimental PIV data (Ganguly et al. 2012). The simulation reproduces heavy-tailed distributions (C99) without the complexity suggested in prior work (C102), leading to the conclusion in C103 supported by simulation data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C109"
+    ],
+    "result": "Simulation dynamics match photoconversion experiments in Drosophila S2 cells, where MTs spend most time stationary in polar-aligned bundles but undergo abrupt long-distance streaming when contacting antialigned MTs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C107, C109 compare with experimental observations (Jolly et al. 2010). The qualitative agreement is stated (C109) and supported by simulation trajectories (Figure 3c, Videos 2-3) showing the same intermittent dynamics pattern.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "FRAP-like visualization of simulation data shows elongated MT stream patterns similar to experiments, confirming collective motion of similarly oriented MTs, consistent with prior predictions based on polarity sorting.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113-C115 describe FRAP analysis shown in Figure 7 and Figure 7\u2014figure supplement 1. The patterns match experimental observations (C113) and prior computational predictions (C115), supporting the collective migration interpretation (C114).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C116",
+      "C117"
+    ],
+    "result": "Spatio-temporal displacement correlations show antialigned MTs sliding apart at short times and positive correlations at long times, in agreement with experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C116-C117 summarize correlation function results (Figure 4) with explicit comparison to experimental data (Ganguly et al. 2012). Both short-time and long-time behaviors are demonstrated in the simulations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C120",
+      "C121"
+    ],
+    "result": "Streaming is observed in simulations without hydrodynamics, though hydrodynamic interactions may still be important for motor-MT systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C120 states a key finding that streaming emerges without hydrodynamics in the model. Claim C121 appropriately qualifies this by noting hydrodynamics may still matter in real systems, acknowledging a model limitation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C88",
+      "C89"
+    ],
+    "result": "The closest experimental analog is the in vitro oil-water interface system, but detailed quantitative comparison is not currently possible due to different characteristic length scales.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C89 identify the most relevant experimental system (Sanchez et al. 2012) while honestly acknowledging limitations in quantitative comparison. This is a reasonable assessment given the ~10-fold difference in MT lengths.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C111",
+      "C118",
+      "C119",
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "The model provides a foundation for future work and can be extended to include 3D networks, crosslinkers, and confinement, with predictions testable by modern microscopy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111, C118-C119, C122-C124 discuss future directions and model extensibility. These are reasonable statements about the model's potential applications and are appropriately framed as future work rather than current results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "Background claims establish that cytoplasmic streaming is caused by cytoskeletal filaments and motors, with debate about mechanisms (cargo entrainment vs. MT sliding), and that motor-mediated MT sliding produces different dynamics for polar-aligned vs. antialigned MT pairs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C22 provide literature context with appropriate citations. These establish the biological relevance, identify the knowledge gap (C7-C8), and describe the mechanistic basis for the model (C11-C17). All are properly attributed to prior work.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,245 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "The CLC family comprises channels and exchangers with distinct functions and localizations, and mutations in CLC genes cause various genetic disorders affecting muscle, kidney, bone, and nervous system.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C23 provide well-established background knowledge about the CLC family structure, function, and disease associations. These claims are supported by multiple literature citations and represent accepted knowledge in the field rather than novel findings of this manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "The CLC ion permeation pathway contains three main anionic binding sites (Sext, Scen, Sint) and a conserved glutamate (Gluex) that alternately occupies these sites. CLC transporters simultaneously bind Cl- and H+ through partially congruent pathways, unlike classical ping-pong antiporters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C41 describe established structural and mechanistic features of CLC proteins based on prior structural and functional studies. These are well-supported by extensive citations to previous work and provide necessary background for understanding the novel findings presented in this manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "MD simulations reveal that F357 (Phecen) exists in equilibrium between 'up' and 'down' rotameric states, and this conformational flexibility controls ion movement through the pore. When F357 is 'down', a ~12 kCal/mol barrier opposes ion movement, while the 'up' state permits simultaneous Cl- binding to Scen and Sext with barriers of only ~2-4 kCal/mol.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C47 present novel computational findings from PMF calculations showing the critical role of F357 rotameric states in controlling ion permeation. The data is internally consistent, with the crosslink experiment (C47) providing validation that constraining F357 movement impairs transport. However, all simulations were performed at 0 mV (C84), which may not fully capture voltage-dependent behavior observed experimentally.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "MD simulations show that protonated Glu0ex interacts with the aromatic rings of F190 (Pheex) and F357 (Phecen) rather than occupying Sext, and can form a water wire to Gluin or a \u03c0-dipole interaction with F357.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C50 describe key conformational states observed in MD simulations that support the aromatic slide hypothesis. These observations are consistent across multiple simulation windows and provide a mechanistic explanation for how protonated Gluex moves outside the Cl- pathway. The \u03c0-dipole interaction energy calculation (C79) provides quantitative support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Alanine mutations of F190 and F357 in CLC-ec1 significantly impair transport rate and Cl-:H+ coupling stoichiometry. F190A reduces rate ~4-fold and degrades stoichiometry to ~8.6:1, while F357A reduces rate ~9-fold and alters stoichiometry to ~4.3:1. The double mutant E148A/F190A rescues the transport defect of E148A.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C59 present experimental validation of the MD simulation predictions using biochemical flux assays. The data shows clear functional effects of mutating the aromatic slide residues. The ITC data (C55) confirms F357A maintains WT-like Cl- binding affinity, ruling out structural disruption. The epistasis experiments with E148A provide strong support that these residues interact functionally with Gluex. Sample sizes and error estimates are provided.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C60",
+      "C61"
+    ],
+    "result": "F190 and F357 are highly conserved across the CLC family at ~94% and ~76% respectively, suggesting their functional role is evolutionarily conserved.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C61 present sequence conservation analysis supporting the evolutionary importance of these residues. The conservation data is shown in Figure 4\u2014figure supplement 2 and is consistent with a functionally important role across the CLC family.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Alanine mutations of Pheex and Phecen in mammalian CLC-7 and CLC-5 exchangers reduce current amplitude and left-shift voltage dependence, with F301A (Pheex) showing reduced voltage dependence and F514A (Phecen) showing sigmoidal voltage-dependent gating.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C68 demonstrate that the functional role of the aromatic slide residues is conserved in mammalian CLC exchangers. The electrophysiological data shows consistent effects across CLC-7 and CLC-5, with appropriate sample sizes (N=10-22 oocytes) and statistical analysis. The inability to determine stoichiometry in oocytes is acknowledged as a limitation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "In the CLC-0 channel, F214A and F418A mutations cause nearly voltage-independent single-pore gating and alter common-pore gating parameters, suggesting these residues regulate Gluex movement in both gating processes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C71 and C87-C91 show that the aromatic slide residues are important for both single-pore and common-pore gating in CLC-0 channels. The electrophysiological data is well-presented with appropriate controls and sample sizes. The inference that mutations favor the open conformation of Gluex (C70) is reasonable based on the voltage-independence of gating.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Non-canonical amino acid mutagenesis reveals that the electrostatic properties of Phecen's aromatic ring are critical for gating: neutralizing \u03c0-electrons with Cha right-shifts single-pore G-V by ~50 mV, while redistributing electrons with 2,6F2-Phe left-shifts it by ~50 mV. Restricting rotational flexibility with 2,6diMeth-Phe impairs gating.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C78 provide atomic-level mechanistic insight using non-canonical amino acids to selectively manipulate specific properties of the aromatic residues. The systematic effects of Cha, 2,6F2-Phe, and 2,6diMeth-Phe substitutions strongly support the proposed \u03c0-dipole interaction mechanism and the importance of conformational flexibility. The use of C212S background to isolate single-pore effects is appropriate. Incorporation efficiency data (Figure 7\u2014figure supplement 3) validates the approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "Two conserved phenylalanine residues (Pheex and Phecen) form an aromatic pathway that enables H+ movement outside the Cl- pore. These residues are important for H+ transport and voltage-dependent gating in exchangers and channels, with their electrostatic properties and conformational flexibility determining function. Cl- and H+ move through physically distinct routes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C10 and C92-C94 represent the central conclusions of the manuscript, integrating MD simulations, biochemical, and electrophysiological data. The aromatic slide mechanism is supported by: (1) MD simulations showing F357 rotameric states control ion movement and Glu0ex interacts with aromatic rings; (2) functional impairment of F190A and F357A mutants in multiple CLC homologs; (3) non-canonical amino acid data demonstrating importance of electrostatics and flexibility; (4) epistasis with E148A mutations. The model provides a mechanistic explanation for reversible transport and resolves the energetic paradox of protonated Gluex entering the Cl- pathway.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "Structural analysis shows Phecen adopts the 'up' rotamer in all available CLC structures, suggesting this is the most stable conformation. Pheex plays a structural role positioning Gluex, while Phecen's electrostatic properties are essential for Gluex movement. The Phecen-Gluex interaction may account for observed pKa shifts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C101 integrate structural observations with functional data to explain the differential roles of Pheex and Phecen. The structural analysis is based on multiple published structures (C95), and the functional interpretations are well-supported by the non-canonical amino acid data showing larger electrostatic effects at Phecen than Pheex. The pKa shift proposal (C101) is reasonable but remains speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "Mutations at Phecen severely affect CLC-1 gating and cause dominant myotonia. The aromatic slide may provide a conserved pathway for residual H+ transport in CLC-0 channels, and rapid conduction may be enabled by disruption of the intracellular gate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C80-C81 cite literature support for the importance of Phecen in CLC-1 function and disease. Claims C82-C83 are speculative proposals about channel function based on the transporter mechanism and structural observations. While reasonable hypotheses, these require direct experimental validation in channels to be fully supported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C79",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "Methodological details: \u03c0-dipole interaction strength is ~-5.0 kCal/mol using CHARMM36 force field; all MD simulations were at 0 mV; monomeric CLC-ec1 is functional; voltage-dependence arises from ion and Gluex movement through the electric field.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79, C84, C85, and C86 provide important methodological context. The force field validation (C79) supports the computational approach. The 0 mV simulation condition (C84) is a limitation for interpreting voltage-dependent phenomena. The use of monomers (C85) is justified by citation. The voltage-dependence mechanism (C86) is supported by prior literature.",
+    "result_type": "MINOR"
+  }
+]

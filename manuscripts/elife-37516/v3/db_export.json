@@ -1,0 +1,1724 @@
+{
+  "submission": {
+    "id": "697828ea-be31-4569-be82-895f3fa9e76b",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T06:41:11.716892Z",
+    "updated_at": "2025-12-02T06:41:11.716892Z"
+  },
+  "content": [
+    {
+      "id": "3b1d14b0-cccb-46ab-9979-e9f75d35abc4",
+      "submission_id": "697828ea-be31-4569-be82-895f3fa9e76b",
+      "content_type": "manuscript",
+      "content_text": "# Maturing Mycobacterium smegmatis peptidoglycan requires non-canonical crosslinks to maintain shape\n\n## Authors\n\n- Catherine Baranowski<sup>1</sup> ([ORCID: 0000-0003-0407-8609](https://orcid.org/0000-0003-0407-8609))\n- Michael A Welsh<sup>2</sup> ([ORCID: 0000-0001-8268-6285](https://orcid.org/0000-0001-8268-6285))\n- Lok-To Sham<sup>2</sup>\n- Haig A Eskandarian<sup>4</sup> ([ORCID: 0000-0002-0610-0550](https://orcid.org/0000-0002-0610-0550))\n- Hoong Chuin Lim<sup>2</sup>\n- Karen J Kieser<sup>1</sup>\n- Jeffrey C Wagner<sup>1</sup>\n- John D McKinney<sup>4</sup>\n- Georg E Fantner<sup>5</sup>\n- Thomas R Ioerger<sup>6</sup>\n- Suzanne Walker<sup>2</sup>\n- Thomas G Bernhardt<sup>2</sup> ([ORCID: 0000-0003-3566-7756](https://orcid.org/0000-0003-3566-7756))\n- Eric J Rubin<sup>1</sup> ([ORCID: 0000-0001-5120-962X](https://orcid.org/0000-0001-5120-962X)) \u2020\n- E Hesper Rego<sup>7</sup> ([ORCID: 0000-0002-2973-8354](https://orcid.org/0000-0002-2973-8354)) \u2020\n\n### Affiliations\n\n1. Department of Immunology and Infectious Disease Harvard TH Chan School of Public Health Boston United States\n2. Department of Microbiology and Immunobiology Harvard Medical School Boston United States\n3. Department of Microbiology and Immunology National University of Singapore Singapore Singapore\n4. School of Life Sciences Swiss Federal Institute of Technology in Lausanne Lausanne Switzerland\n5. School of Engineering Swiss Federal Institute of Technology in Lausanne Lausanne Switzerland\n6. Department of Computer Science and Engineering Texas A&M University Texas United States\n7. Department of Microbial Pathogenesis Yale University School of Medicine New Haven United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nIn most well-studied rod-shaped bacteria, peptidoglycan is primarily crosslinked by penicillin-binding proteins (PBPs). However, in mycobacteria, crosslinks formed by L,D-transpeptidases (LDTs) are highly abundant. To elucidate the role of these unusual crosslinks, we characterized Mycobacterium smegmatis cells lacking all LDTs. We find that crosslinks generate by LDTs are required for rod shape maintenance specifically at sites of aging cell wall, a byproduct of polar elongation. Asymmetric polar growth leads to a non-uniform distribution of these two types of crosslinks in a single cell. Consequently, in the absence of LDT-mediated crosslinks, PBP-catalyzed crosslinks become more important. Because of this, Mycobacterium tuberculosis (Mtb) is more rapidly killed using a combination of drugs capable of PBP- and LDT- inhibition. Thus, knowledge about the spatial and genetic relationship between drug targets can be exploited to more effectively treat this pathogen.\n\n## Introduction\n\nPeptidoglycan (PG) is an essential component of all bacterial cells (Vollmer et al., 2008a), and the target of many antibiotics. PG consists of linear glycan strands crosslinked by short peptides to form a continuous molecular cage surrounding the plasma membrane. This structure maintains cell shape and protects the plasma membrane from rupture. Our understanding of PG is largely derived from studies on laterally\u00a0growing model rod-shaped bacteria like Escherichia coli and Bacillus subtilis (Figure 1\u2014figure supplement 1A). In these organisms, new PG is constructed along the lateral side wall by the concerted effort of glycosyltransferases, which connect the glycan of a new PG subunit to the existing mesh, and transpeptidases, which link peptide side chains. An actin-like protein, MreB, positions this multi-protein complex along the short axis of the cell so that glycan strands are inserted circumferentially, creating discontinuous hoops of PG around the cell (Dom\u00ednguez-Escobar et al., 2011; Garner et al., 2011). This orientation of PG creates a mechanical anisotropy that is responsible for rod shape (Hussain et al., 2018).\n\nHowever, not all rod-shaped bacteria encode MreB. In fact, there are important differences between model bacteria and Actinobacteria like mycobacteria, a genus of rod-shaped bacteria that includes the major human pathogen Mycobacterium tuberculosis (Mtb). In mycobacteria, new PG is inserted at the cell poles (at unequal amounts based on pole age), rather than along the lateral walls (Figure 1A). Additionally, mycobacteria are missing several factors, including MreB, that are important for cell elongation (Kieser and Rubin, 2014). Furthermore, in E. coli and B. subtilis the vast majority (>90%) of the peptide linkages are created by D,D-transpeptidases known as penicillin-binding proteins (PBPs) (Pisabarro et al., 1985). PBPs, the targets of most \u03b2-lactams, link the fourth amino acid of one peptide side chain to the third amino acid of another, forming 4\u20133 crosslinks. Peptidoglycan crosslinks can also be catalyzed by L,D-transpeptidases (LDTs), which link peptide side chains by the third amino acid forming 3\u20133 linkages (Figure 1\u2014figure supplement 1B). In mycobacteria, these 3\u20133 crosslinks, are highly abundant, accounting for at least 60% of linkages (Kumar et al., 2012; Lavollay et al., 2008; Wietzerbin et al., 1974). Although there has been extensive characterization of LDTs in vitro (Cordillot et al., 2013; Dub\u00e9e et al., 2012; Lavollay et al., 2008; Magnet et al., 2007; Mainardi et al., 2005; Mainardi et al., 2007; Triboulet et al., 2013), because PG has been most well studied in bacteria where 3\u20133 crosslinks are rare, the cellular role of these enzymes and the linkages they create is poorly understood. As is the case with PBPs, there exists many copies of LDTs in the cell - there are five LDTs in Mtb and six in Mycobacterium\u00a0smegmatis\u00a0(Msm), a non-pathogenic relative of Mtb (Sanders et al., 2014), making genetic characterization challenging. Also similarly to PBPs, LDT homologues do not appear to functionally overlap completely (Cordillot et al., 2013; Kumar et al., 2017; Schoonmaker et al., 2014).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/37516/elife-37516-fig1-v3.jpg)\n\n**Figure 1.:** (A) Schematic of mycobacterial asymmetric polar growth. Green, old cell wall; grey, new material; dotted line, septum; large arrows, old pole growth; small arrows, new pole growth. (B) FDAA incorporation in log-phase WT Msm cell after 2 min incubation. Scale bar\u00a0=\u00a05 \u00b5m. Old pole marked with (*). (C) Schematic of Fluorescence Activated Cell Sorting (FACS)-based FDAA transposon library enrichment. An Msm transposon library was stained with FDAAs, the dimmest and brightest cells were sorted, grown, sorted again to enrich for transposon mutants that are unable or enhanced for FDAA incorporation. (D) Results from 1C screen. For each gene, the contribution to low or high staining population was calculated from transposon reads per gene. Plotted is the ratio of the population contribution from the second sort of low FDAA staining (L2) over the second sort of high FDAA staining (H2) cells compared to the Mann-Whitney U p-value. (E) Representative image of FDAA incorporation in log-phase WT, \u2206LDT and \u2206LDTcomp cells. Scale bar\u00a0=\u00a05 \u03bcm. (F) Profiles of FDAA incorporation in log-phase WT (N\u00a0=\u00a098), \u2206LDT (N\u00a0=\u00a040), and \u2206LDTcomp (N\u00a0=\u00a077) cells. Thick lines represent mean incorporation profile, thin lines are FDAA incorporation in single cells.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/37516/elife-37516-fig1-figsupp1-v3.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Escherichia coli and Bacillus subtilis lateral cell wall growth. Unlike mycobacteria, E. coli and B. subtilis insert new cell wall along the lateral cell body, mixing old and new peptidoglycan. Green portion represents old cell wall; grey portion represents new material. (B) Cartoon of penicillin-binding proteins (PBPs), L,D-transpeptidases (LDTs), and both 4\u20133 and 3\u20133 crosslinking. PBPs utilize a pentapeptide substrate found on new peptidoglycan, ending in D-Alanine-D-Alanine. Class A PBPs (aPBPs), like PonA1, have ability to polymerize glycan strands (transglycosylation) and to crosslink (transpeptidation). Class B PBPs (bPBPs) are only capable of transpeptidation. LDTs utilize a tetrapeptide substrate found on processed peptidoglycan. TP, transpeptidase; TG, transglycosylase.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/37516/elife-37516-fig1-figsupp2-v3.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A) Schematic of asymmetric polar growth in mycobacteria, where green portion corresponds to Alexa FluorTM 488 NHS ester (ALEXA) stained cell wall, and grey portion represents outgrowth of new, unstained cell wall. (B) Image of WT Msm cell stained with ALEXA and FDAA at time\u00a0=\u00a00 min. (C) Graph quantifying FDAA and ALEXA incorporation along the length of the cell in (B). (D) Image of the same cell as (B) at 30 min. The blue line highlights the growth from the old pole. (E) As in C, a graph of the distribution of FDAA and ALEXA. The blue box corresponds to the blue line in (D), where the old pole has grown out.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/37516/elife-37516-fig1-figsupp3-v3.jpg)\n\n**Figure 1\u2014figure supplement 3.:** (A) FDAA incorporation in WT, \u2206ldtAEB, and \u2206ldtAEB complemented with LdtE-mRFP as measured by flow cytometry. (B) FDAA incorporation in WT, \u2206LDT, and \u2206LDT complemented with LdtE-mRFP (\u2206LDTcomp).\n\n![Figure 1\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/37516/elife-37516-fig1-figsupp4-v3.jpg)\n\n**Figure 1\u2014figure supplement 4.:** Peptidoglycan from M. smegmatis \u2206LDT cells was isolated, hydrolyzed in NH4OH, and analyzed by LC-MS/MS (see Materials\u00a0and\u00a0methods). Peaks corresponding to 3\u20133 crosslinks were identified by mass (Kumar et al., 2012). (A,B) Extracted ion chromatograms of 3\u20133 crosslinks from WT, \u2206LDT and \u2206LDTcomp peptidoglycan where both donor and acceptor stems are tripeptides. (C) Table of observed 3\u20133 crosslink masses. ND\u00a0=\u00a0not detected. (D) Proposed structures of the detected 3\u20133 crosslinks with all four possible sites of amidation shown in blue. Tri-tri refers to the 3\u20133 crosslink where both donor and acceptor peptides are tripeptides (903.45; with three sites amidated- 904.43). Tri-tetra refers to the 3\u20133 crosslink where the donor stempeptide is a tripeptide, and the acceptor is a tetrapeptide (974.49; with three sites amidated- 975.47). The crosslink amide bond is shown in red.\n\nTuberculosis remains an enormous global health problem, in part, because treating even drug susceptible disease is difficult. The standard regimen includes a cocktail of four drugs given over six months. Treatment of drug-resistant Mtb is substantially longer and includes combinations of up to seven drugs (Global Tuberculosis Report, 2017). While some of the most important anti-mycobacterials target cell wall synthesis, surprisingly, drugs that target PG are not part of the core treatment for either drug-susceptible or drug-resistant disease. However, carbapenems, \u03b2-lactam antibiotics that potently inhibit LDTs in vitro (Cordillot et al., 2013; Dub\u00e9e et al., 2012; Lavollay et al., 2008; Mainardi et al., 2007; Triboulet et al., 2013), are also effective against drug resistant Mtb in vitro and drug-sensitive Mtb in patients (Diacon et al., 2016; Hugonnet et al., 2009).\n\nBut, why are LDTs important in mycobacteria? To explore this, we constructed a strain of Msm that lacks the ability to form 3\u20133 crosslinks. We find that 3\u20133 crosslinks are formed in maturing peptidoglycan and that they are necessary to stabilize the cell wall and prevent lysis. Cells that lose the ability to synthesize 3\u20133 crosslinks have increased dependence on 4\u20133 crosslinking. Thus, simultaneous inhibition of both processes results in rapid cell death.\n\n## Results\n\n### Fluorescent D-amino acids are incorporated asymmetrically by L,D-transpeptidases\n\nPG uniquely contains D-amino acids, which can be conjugated to fluorescent probes (fluorescent D-amino acids, FDAAs) to visualize PG synthesis in live bacterial cells (Kuru et al., 2012). When we incubated Msmwith FDAAs for a short 2 min pulse (\u00a0<\u00a02% of Msm\u2019s generation time) we observed incorporation at both poles, the sites of new PG insertion in mycobacteria (Figure 1A,B) (Aldridge et al., 2012). However, we also saw a gradient of fluorescence along the sidewalls, extending from the old pole (the previously established growth pole) that fades to a minimum at roughly mid-cell as it reaches the new pole (the pole formed at the last cell division) (Figure 1B, Figure 1\u2014figure supplement 2).\n\nTo identify the enzymes responsible for this unexpected pattern of lateral cell wall FDAA incorporation, we performed a fluorescence-activated cell sorting (FACS)-based transposon screen (Figure 1C). Briefly, we stained an Msm transposon library with FDAA and repeatedly sorted the least fluorescent 12.5% of the population by FACS. After each sort we regrew cells, extracted gDNA and used deep sequencing to map the location of the transposons found in the low-staining population.\n\nFrom this screen, we identified three LDTs (ldtA - MSMEG_3528, ldtB - MSMEG_4745, ldtE - MSMEG_0233) (Figure 1D) that appeared primarily responsible for FDAA incorporation. Deleting these three LDTs significantly reduced FDAA incorporation and this defect in incorporation could be partially complemented with constitutive expression of LdtE alone (ldtE-mRFP, Figure 1\u2014figure supplement 3A). To further investigate the physiological role of LDTs, we constructed a strain lacking all 6 LDTs (\u0394ldtAEBCGF, hereafter \u0394LDT). Whole genome sequencing verified all six deletions and did not detect crossover events or chromosomal duplications (see supplemental methods). FDAA incorporation and 3\u20133 crosslinking are both nearly abolished in \u0394LDT cells and can be partially restored by complementation with a single LDT (ldtE-mRFP; \u0394LDTcomp) (Figure 1E,F, Figure 1\u2014figure supplements 3B and 4). Thus, as might be the case in Bdellovibrio (Kuru et al., 2017), FDAA incorporation in Msm is primarily LDT-dependent. LDTs have previously been shown to exchange non-canonical D-amino acids onto PG tetrapeptides in Vibrio cholera (Cava et al., 2011).\n\n### 3\u20133 crosslinks are required for rod shape maintenance at aging cell wall\n\nAs deletion of a subset of LDTs in Msm produces morphologic changes (Sanders et al., 2014), we visualized \u0394LDT cells by time-lapse microscopy. We observed that a subpopulation of cells loses rod shape progressively over time, resulting in localized spherical blebs (Figure 2A \u2013 top row, Figure 2\u2014figure supplement 1A, Figure 2\u2014video 1). Complemented cells are able to maintain rod shape (Figure 2\u2014figure supplement 1B). We reasoned that localized loss of rod shape may occur for two reasons: (1) spatially-specific loss of cell wall integrity and/or (2) cell wall deformation due to uncontrolled, local PG synthesis. If the first hypothesis were true, high osmolarity should protect cells against forming blebs. Indeed, switching cells from iso- to high- osmolarity prevented bleb formation over time (Figure 2A \u2013 bottom row, Figure 2\u2014video 2). To test the second hypothesis, we stained \u0394LDT or WT cells with an amine-reactive dye, and observed outgrowth of new, unstained material (Figure 2B). Blebs that formed in the \u0394LDT cells retained stain, indicating a lack of new cell wall synthesis in the region. WT cells maintained rod shape over time at the stained portion of the bacillus. Collectively, these results indicate that 3\u20133 crosslinks are required to counteract turgor pressure and maintain rod shape in Msm. This led us to hypothesize that bleb formation is a result of a local defect in cell wall rigidity.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/37516/elife-37516-fig2-v3.jpg)\n\n**Figure 2.:** (A) Msm \u2206LDT time-lapse microscopy of cells switched from high- to iso- osmolar media (top row, see Figure 2\u2014video 1), or iso- to high osmolar media (bottom row, see Figure 2\u2014video 2). (high\u00a0=\u00a07H9+150 mM sorbitol; iso\u00a0=\u00a07H9). t\u00a0=\u00a0time in minutes post-osmolarity switch. (B) \u2206LDT or WT cells were stained with Alexa 488 NHS-ester (green) to mark existing cell wall, washed, and visualized after outgrowth (unstained material). A, B scale bar\u00a0=\u00a02 \u00b5m. (C) Mean stiffness of WT (N\u00a0=\u00a073) and \u2206LDT (N\u00a0=\u00a047) Msm cells as measured by atomic force microscopy. Mann-Whitney U p-Value ****<0.0001. (D) Representative profile of cell height and height-normalized stiffness (modulus/height) in a single \u2206LDT cell. Pink-shaded portion highlights location of a bleb. (E) Maximum cell width of \u2206LDT cell lineages over time. Width of new pole daughters\u00a0=\u00a0blue circle; width of old pole daughters\u00a0=\u00a0orange circle. Division signs denote a division event. At each division, there are two arrows from the dividing cell leading to the resulting new and old pole daughter cell widths (blue and orange respectively). (F) Model of rod shape loss in old cell wall of \u2206LDT cells compared to WT. Green portions of the cell represents old cell wall; grey portion represents new cell wall. The larger arrows indicate more growth from the old pole, while smaller arrows show less relative growth from the new pole. Dotted lines represent septa. op\u00a0=\u00a0old pole, np\u00a0=\u00a0new pole.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/37516/elife-37516-fig2-figsupp1-v3.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Time-lapse microscopy montage of \u2206LDT cells. The white stars mark new poles. The orange arrow points to the first new pole daughter cell of this series. The red arrow indicates the second resulting new pole daughter cell. In the last frame, white arrows point to all new pole daughter cells (besides the orange arrow and red arrow). (B) Time-lapse microscopy montage of \u2206LDTcomp cells expressing LdtE-mRFP. All scale bars\u00a0=\u00a05 \u03bcm.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/37516/elife-37516-fig2-figsupp2-v3.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A) WT Msm stained with Alexa FluorTM 488 NHS ester, washed and visualized over time. New material is unstained, old material is stained green. Orange arrows indicate a new pole. Orange stars mark new pole daughter cells. All scale bars\u00a0=\u00a05 \u03bcm. (B) Maximum cell width of \u2206LDT cell lineages over time. Width of new pole daughters\u00a0=\u00a0blue circle; width of old pole daughters\u00a0=\u00a0orange circle. Division signs denote a division event. At each division, there are two arrows from the dividing cell leading to the resulting new and old pole daughter cell widths (blue and orange, respectively).\n\nTo directly measure cell wall rigidity, we used atomic force microscopy (AFM) on live \u0394LDT and WT cells. We measured the rigidity of cells in relation to their height. Generally, WT cells are stiffer than \u0394LDT cells (Figure 2C). Blebs in \u0394LDT cells can be identified by a sharp increase in height (Figure 2D, pink shaded). Since circumferential stress of the rod measured by AFM is proportional to the radius of the cell, and inversely proportional to the thickness of the cell wall (an immeasurable quantity by AFM), we used cell height, a proxy for radius, to normalize the stiffness measurement. We found that stiffness drops in the area of blebs (Figure 2D, pink shaded).\n\nWhy does loss of rod shape occur locally and only in a subpopulation of cells? Mycobacterial polar growth and division results in daughter cells with phenotypic differences (Aldridge et al., 2012). For example, the oldest cell wall is specifically inherited by the new pole daughter (Figure 2\u2014figure supplement 2A, Aldridge et al., 2012). We hypothesized that the loss of rod shape might occur in specific progeny generated by cell division. Indeed, the daughter which inherited the new pole from the previous round of division, and the oldest cell wall, consistently lost rod shape over time, while the old pole daughter maintained rod shape (Figure 2E, Figure 2\u2014figure supplement 2B). In addition, blebs localized to the oldest cell wall (Figure 2B), as visualized by pulse-chase labeling of the cell wall. Thus, 3\u20133 crosslinking is likely occurring in the oldest cell wall, which is non-uniformly distributed along a single cell and in the population via asymmetric polar growth and division. Taken together, these data suggest that LDTs act locally to reinforce aging PG and to maintain rod shape in a subpopulation of Msm cells - specifically, new pole daughters (Figure 2F).\n\n### Mycobacterium smegmatis is hypersensitive to PBP inactivation in the absence of LDTs\n\nOur observations lead to the following model: 4\u20133 crosslinks made by PBPs are formed at the poles where new PG is inserted and where pentapeptide substrates reside. These newly synthesized 4\u20133 crosslinks can then be gradually cleaved (by D,D-endopeptidases) as PG ages and moves toward the middle of the cell, leaving tetrapeptide substrates for LDTs to create 3\u20133 crosslinks. This is consistent with the FDAA incorporation pattern, which reflects the abundance of tetrapeptide substrates available for LDT exchange. Specifically, there are more available tetrapeptides near the poles and fewer near mid-cell, the site of older PG (Figure 1F). In the absence of LDTs to catalyze 3\u20133 crosslinks, old cell wall loses integrity and turgor pressure causes bleb formation.\n\nThis model predicts that \u0394LDT cells should be even more dependent on 4\u20133 crosslinking than wild-type cells. To test this hypothesis, we used TnSeq (Long et al., 2015) to identify genes required for growth in cells lacking LDTs (Figure 3A). We found that mutants of two PBPs, pbpA (MSMEG_0031 c) and ponA2 (MSMEG_6201), were recovered at significantly lower frequencies in \u0394LDT cells (Figure 3B). Likewise, using allele swapping (Kieser et al., 2015b) (Figure 3C, Figure 3\u2014figure supplement 1), a technique that tests the ability of various alleles to support viability, we found that the transpeptidase (TP) activity of PonA1, which is non-essential in WT cells (Kieser et al., 2015b), becomes essential in \u0394LDT cells (Figure 3D). Thus, cells that lack 3\u20133 crosslinks are more dependent on 4\u20133 crosslinking enzymes.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/37516/elife-37516-fig3-v3.jpg)\n\n**Figure 3.:** (A) Fold change in the number of reads for transposon insertion counts in \u2206LDT cells compared to WT Msm. p-value is derived from a rank sum test (DeJesus et al., 2015). (B) Transposon insertions per TA dinucleotide in pbpA and ponA2 in WT (grey) and \u2206LDT (blue) cells. (C) Schematic of L5 allele swapping experiment. (D) Results of WT or transpeptidase null ponA1 allele swapping experiment in \u2206LDT cells.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/37516/elife-37516-fig3-figsupp1-v3.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Schematic of L5 allele swapping experiment. Adapted from (Kieser et al., 2015b).\n\n### Peptidoglycan synthesizing enzymes localize to differentially aged cell wall\n\nGiven our model, we hypothesized that enzymes catalyzing and processing different types of crosslinks should be differentially localized along the length of the cell. Specifically, we postulated that 4\u20133 generating PBPs would localize at sites of new PG, while 4\u20133 cleaving D,D-endopeptidases and 3\u20133 crosslinking LDTs would localize to sites of older PG. Polar growth segregates newer PG to the poles, and, as growth occurs, older PG migrates towards the middle of the cell. To test whether 4\u20133 and 3\u20133 crosslinking enzymes localize differently, we visualized fluorescent fusions of a PBP (PonA1), and an LDT (LdtE), (Figure 4A). Intriguingly, both enzymes localized in a gradient pattern along the long axis of the cell, not unlike the pattern observed for FDAA incorporation. We found that the distribution pattern of PonA1-RFP was highest at the old and new poles, where new PG is inserted (Figure 4A,B, Figure 4\u2014video 1, Figure 4\u2014figure supplement 1A). Compared to PonA1-RFP, the LdtE-mRFP localization is highest farther from the poles, more inward from the ends of the bacillus (albeit in a similar gradient pattern), at the sites of older PG (Figure 4A,B, Figure 4\u2014video 2, Figure 4\u2014figure supplement 1B). Thus, enzymes responsible for 4\u20133 and 3\u20133 crosslinks show distinctive subcellular localizations with respect to the site of new PG synthesis. This is consistent with the model that these enzymes act on differentially aged PG.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/37516/elife-37516-fig4-v3.jpg)\n\n**Figure 4.:** (A) Representative fluorescence image of PonA1-RFP (magenta, see Figure 4\u2014video 1), LdtE-mRFP (cyan, see Figure 4\u2014video 2), and DacB2-mRFP (green, see Figure 4\u2014video 3). Scale bars\u00a0=\u00a05 \u00b5m. (B) Average PonA1-RFP (N\u00a0=\u00a024), LdtE-mRFP (N\u00a0=\u00a023) or DacB2-mRFP (N\u00a0=\u00a023) distribution in cells before division. (C) Schematic of the in vitro experiment to test D,D-carboxy- and D,D-endopeptidase activity of DacB2 (top). Lipid II extracted from B. subtilis is first polymerized into linear (using SgtB) or crosslinked (using B. subtilis PBP1) peptidoglycan and then reacted with DacB2. The reaction products are analyzed by LC-MS. Extracted ion chromatograms of the reaction products produced by incubation of DacB2 with peptidoglycan substrates (bottom).\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/37516/elife-37516-fig4-figsupp1-v3.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Distribution of PonA1-RFP, (B) LdtE-mRFP, and (C) DacB2-mRFP.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/37516/elife-37516-fig4-figsupp2-v3.jpg)\n\n**Figure 4\u2014figure supplement 2.:** (A) Coomassie-stained gel of purified His6-DacB2. (B) Bocillin-FL and Penicillin G binding assay of purified DacB2. (C) Mass spectra of the reaction products of DacB2 digestion reactions.\n\n![Figure 4\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/37516/elife-37516-fig4-figsupp3-v3.jpg)\n\n**Figure 4\u2014figure supplement 3.:** An anhydro-tetracycline (aTc)-inducible guide RNA targeting dacB2 was cloned into Msm containing a dCas9 as described previously (Rock et al., 2017). Bleb size was measured in \u2206LDT cells without the dacB2 targeting guide RNA (grey) as well as \u2206LDT cells with (+aTc) and without (-aTc) induction of the guide RNA. Mann-Whitney U test p-value=0.0070.\n\nWe next sought to localize a D,D-endopeptidase. As no D,D-endopeptidase has been clearly identified in mycobacteria, we used HHPRED (Zimmermann et al., 2018) to find candidates. By homology to the E. coli protein AmpH, an enzyme with both D,D- carboxy- and endopeptidase activity (Gonz\u00e1lez-Leiza et al., 2011), we identified DacB2 (MSMEG_2433), a protein previously shown to have D,D-carboxypeptidase activity in Msm (Bansal et al., 2015), as a candidate to also harbor D,D-endopeptidase capability. We expressed and purified DacB2 and found that it, like AmpH, had both D,D-carboxypeptidase and D,D-endopeptidase activity on peptidoglycan substrates generated in vitro (Figure 4C, Figure 4\u2014figure supplement 1A\u2013C). We used a recently\u00a0developed CRISPRi system for mycobacteria to knockdown dacB2 expression in \u0394LDT cells (Rock et al., 2017). Induction of the sgRNA and dCas9 by anhydro-tetracycline (aTc) led to smaller blebs (Figure 4\u2014figure supplement 3). Furthermore, DacB2-mRFP localized closer to LDT-mRFP, farther from the poles, at sites of older PG (Figure 4A,B, Figure 4\u2014video 3, Figure 4\u2014figure supplement 1C). Taken together, these data are consistent with a model in which blebs are formed in \u0394LDT cells due to unchecked D,D-endopeptidase activity. Given that bleb formation is not completely rescued by knockdown of dacB2, we speculate that there are additional D,D-endopeptidases in M. smegmatis.\n\n### Drugs targeting both PBPs and LDTs synergize to kill Mycobacterium tuberculosis\n\nThe importance of 3\u20133 crosslinks in mycobacteria suggests a unique vulnerability. While Mtb can be killed by most non-carbapenem (N-C) \u03b2-lactams like amoxicillin, which largely target the PBPs, carbapenem \u03b2-lactams, which target both PBPs and LDTs (Kumar et al., 2017; Mainardi et al., 2007; Papp-Wallace et al., 2011) are also effective against Mtb (Diacon et al., 2016; Hugonnet et al., 2009). It has been previously proposed (Gonzalo and Drobniewski, 2013; Gupta et al., 2010; Kumar et al., 2017; Mainardi et al., 2007) that more rapid killing of Mtb could be achieved with drug combinations that target both PBPs and LDTs. Msm Tnseq data suggests that typically dispensable 4\u20133 transpeptidase activity becomes essential in cells lacking LDTs (Figure 3), supporting the notion that inhibition of both PBPs and LDTs could kill mycobacteria very successfully. Interestingly, while we could create a strain of Msm lacking all LDTs, previously published Mtb Tnseq data suggests that LDTs may be essential in the pathogen (Kieser et al., 2015a).\n\nWe utilized Msm and Mtb strains expressing the luxABCDE operon from Photorhabdus luminescens (Andreu et al., 2012; Andreu et al., 2010), where light production can be correlated to growth (Figure 5\u2014figure supplement 1), to test if the combination of amoxicillin (a penam) and meropenem (a carbapenem) killed Msm or Mtb more rapidly than either drug alone. We found that these drugs together kill both Msm and Mtb faster than either alone (Figure 5A,B). Furthermore, this combination exhibits synergism in minimal inhibitory concentration in Mtb but, not against Msm (where synergism is defined as \u03a3 Fractional Inhibitory Concentration\u00a0<0.5 (\u2018Synergism Testing: Broth Microdilution Checkerboard and Broth Macrodilution Materials\u00a0and\u00a0methods,\u2019 2016), Figure 5B, Figure 5\u2014figure supplement 2). This may reflect a difference in LDT expression or essentiality between Msm and Mtb.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/37516/elife-37516-fig5-v3.jpg)\n\n**Figure 5.:** Killing dynamics of Msm (A) and Mtb (B) (expressing the luxABCDE operon from Photorhabdus luminescens [Andreu et al., 2010]) measured via luciferase production (RLU\u00a0=\u00a0relative light units). Amoxicillin (AM) (Msm-1.25; Mtb-3.125 \u00b5g/mL); Meropenem (MR) (Msm-10; Mtb-6.25 \u00b5g/mL); Amoxicillin\u00a0+\u00a0Meropenem: Msm-1.25 \u00b5g/mL AM\u00a0+10 \u00b5g/mL MR; Mtb-3.125 \u00b5g/mL AM\u00a0+6.25 \u00b5g/mL MR). Biological triplicate are plotted for Mtb. All drugs were used in combination with 5 \u00b5g/mL clavulanate.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/37516/elife-37516-fig5-figsupp1-v3.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) Mycobacterium smegmatis CFU and luminescence (RLU) during drug treatment.\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/37516/elife-37516-fig5-figsupp2-v3.jpg)\n\n**Figure 5\u2014figure supplement 2.:** (A, B) Killing dynamics of \u2206LDT (A) and \u2206LDTcomp (B) (expressing the luxABCDE operon from Photorhabdus luminescens [Andreu et al., 2010]) measured via luciferase production (RLU\u00a0=\u00a0relative light units). Amoxicillin (AM) (\u2206LDT \u22120.156; \u2206LDTcomp\u221210 \u00b5g/mL); Meropenem (MR) (\u2206LDT \u22120.625; \u2206LDTcomp\u221220 \u00b5g/mL); Amoxicillin\u00a0+\u00a0Meropenem: \u2206LDT \u22120.156 \u00b5g/mL AM\u00a0+0.625 \u00b5g/mL MR; \u2206LDTcomp\u221210 \u00b5g/mL AM\u00a0+20 \u00b5g/mL MR). (C) Minimum inhibitor concentration (MIC) data calculated via alamar blue (resazurin). All drugs were used in combination with 5 \u00b5g/mL clavulanate. Synergy by fractional inhibitory concentration (FIC) is defined as a sum of FIC for each drug in the combination less than 0.5 (\u2018Synergism Testing: Broth Microdilution Checkerboard and Broth Macrodilution Materials and methods,\u2019 2016).\n\n## Discussion\n\nThe success of antibiotics that target PG, like \u03b2-lactams, has led to decades of research on this critical bacterial polymer. Recently developed fluorescent probes (FDAAs) have been used extensively to study PG\u00a0synthesis in live cells of numerous bacterial species (Kuru et al., 2012; Kuru et al., 2017; Liechti et al., 2014). Intriguingly, these probes can be incorporated through diverse pathways in different bacteria and thus, their pattern can mark distinct processes (Kuru et al., 2012). We find that in mycobacteria, FDAA incorporation is primarily LDT-dependent. FDAA incorporation in Msm shows an unusual gradient pattern (Botella et al., 2017), suggesting an asymmetric distribution of tetrapeptide substrate for the LDT-dependent exchange reaction. In addition to their ability to exchange D-amino acids onto tetrapeptides, LDTs also catalyze non-canonical 3\u20133 crosslinks.\n\nCrosslinks catalyzed by LDTs are rare in model rod-shaped bacteria like E.coli and B. subtilis but, are abundant in polar growing bacteria like mycobacteria, Agrobacterium tumefaciens and Sinorhizobium meliloti (Brown et al., 2012; Cameron et al., 2015; Kumar et al., 2012; Lavollay et al., 2008; Pisabarro et al., 1985). Here, we find that Msm cells lacking 3\u20133 crosslinks cannot maintain rod shape at sites of aging cell wall. 4\u20133 crosslinks made by PBPs appear able to maintain rod shape near the poles, the sites of newer cell wall (Figure 6A). Over time, as older cell wall moves toward the middle of the cell, it loses structural stability, and begins to bleb. The gradual manner in which rod shape is lost in cells lacking 3\u20133 crosslinks suggests that cell wall processing must occur to de-stabilize this portion of the rod. Consistent with this idea, we find that an enzyme that cleaves 4\u20133 crosslinks, the D,D-endopeptidase/D,D-carboxypeptidase DacB2, also localizes to sites of old cell wall and knockdown of this enzyme leads to smaller blebs.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/37516/elife-37516-fig6-v3.jpg)\n\n**Figure 6.:** (A) A model for PG age, PG enzyme and crosslink segregation via polar growth in mycobacteria. First, 4\u20133 crosslinks are made by PBPs at site of new growth, where the pentapeptide substrate resides. Then, these 4\u20133 crosslinks can be cleaved by D,D-endopeptidases (END). This action would leave a free tetrapeptide. Lastly, LDTs can utilize this tetrapeptide to generate 3\u20133 crosslinks. As this is occurring over time and during polar growth, the aging cell wall moves toward mid-cell (new growth at the poles moves away from the existing cell wall). (B) Schematic of PG segregation by age (top). 2 min FDAA pulse (cyan), 45 min outgrowth, followed by 2 min FDAA chase (magenta) in WT Msm cells (bottom). Newest cell wall (magenta), older cell wall (cyan). Scale bar\u00a0=\u00a05 \u03bcm.\n\nWhy would Msm cells create 4\u20133 crosslinks to eventually cleave them? There are many possibilities. For example, perhaps in the absence of lateral cell wall synthesis, the creation of substrate for LDTs through the destruction of 4\u20133 crosslinks allows the cell to engage the PG along the lateral cell body. This could be important for altering the thickness of the PG layer or anchoring it to the membrane at sites of otherwise \u2018inert\u2019 cell wall. Additionally, it may be that as PG ages, it is being manicured or marked for septal synthesis. Supporting this idea, we find that the gradient localization patterns of fluorescently tagged PonA1, LdtE and DacB2, (as well as FDAAs) all have local minima at mid-cell closer to the new pole- a location that correlates with the asymmetric site of division in mycobacteria (Aldridge et al., 2012; Santi et al., 2013; Eskandarian et al., 2017). The lack of localization of PG synthesis enzymes and FDAAs suggests a lack of penta- and tetra- peptide substrates. This implies that this region of the cell may be more abundantly crosslinked, as crosslinking utilizes these peptide species. Could 3\u20133 crosslinking be a signal for septal placement? Mycobacteria are missing known molecular septal placement mechanisms like the Noc and the Min system (Hett and Rubin, 2008). The major septal PG hydrolase is RipA, a D,L-endopeptidase which cleaves the bond between the second and third amino acid of PG side chains, a substrate available on 3\u20133 crosslinked material (B\u00f6th et al., 2011; Vollmer et al., 2008b). While LdtE-mRFP does not itself strongly localize to the site of division, the crosslinks it synthesizes could migrate toward the mid-cell through polar elongation. Transmitting information from the tip to mid-cell through polar growth was recently described in mycobacteria: atomic force microscopy revealed cell-envelope deformations formed at the pole of Msm travel to mid-cell through polar growth, marking the future site of division (Eskandarian et al., 2017). Thus, it is intriguing to speculate that 3\u20133 crosslinks found at aging cell wall could be important for localizing cell division machinery.\n\nIn well-studied rod-shaped bacteria like E.coli and B. subtilis, shape is maintained by MreB-directed PG synthesis along the lateral cell body (Garner et al., 2011; Hussain et al., 2018; Ursell et al., 2014). On the other hand, mycobacteria maintain shape in the absence of an obvious MreB homolog, and in the absence of lateral cell wall elongation. Furthermore, in contrast to lateral-elongating bacteria, in which new and old cell wall are constantly intermingled during growth, polar growth segregates new and old cell wall (Figure 6B). We find that mycobacteria appear to utilize 3\u20133 crosslinks at asymmetrically distributed aging cell wall to provide stability along the lateral body, something that may not be required in the presence of MreB-directed PG synthesis.\n\nNew drug combinations for TB are desperately needed. There has been a renewed interest in repurposing FDA-approved drugs for TB treatment (Diacon et al., 2016). Some of that interest has focused on \u03b2-lactams, the oldest class of antibiotics which are the therapeutic bedrock for most other infections. We find that the protein targets of two different classes of \u03b2-lactams \u2013 enzymes which do very similar chemistry \u2013 PG crosslinking \u2013 are distributed differentially in a single cell and across the population. In the absence of 3\u20133 crosslinks, 4\u20133 crosslinks become more important for cell viability. These data predict that a drug combination which inhibits both PBPs and LDTs will work synergistically to more quickly kill Mtb, a prediction we verified in vitro. Interestingly, meropenem combined with amoxicillin/clavulanate resulted in early clearance of Mtb from patient sputum (Diacon et al., 2016). In fact, the combination might be key to accelerated killing of Mtb (Gonzalo and Drobniewski, 2013).\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Strain (Mycobacterium smegmatis)</td>\n      <td>KB85; (WT Msm)</td>\n      <td>this work</td>\n      <td>Mycobacterium smegmatis mc2155</td>\n      <td>Wildtype M. smegmatis</td>\n    </tr>\n    <tr>\n      <td>Strain (M. smegmatis)</td>\n      <td>KB134</td>\n      <td>this work</td>\n      <td>mc2155\u2206ldtA::loxP</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain (M. smegmatis)</td>\n      <td>KB156</td>\n      <td>this work</td>\n      <td>mc2155\u2206ldtA::loxP + \u2206ldtE:: zeoR</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain (M. smegmatis)</td>\n      <td>KB200 (\u2206ldtAEB)</td>\n      <td>this work</td>\n      <td>mc2155\u2206ldtA::loxP \u2206ldtE:: zeoR + \u2206ldtB:: hygR</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain (M. smegmatis)</td>\n      <td>KB209</td>\n      <td>this work</td>\n      <td>mc2155\u2206ldtA::loxP \u2206ldtE::loxP \u2206ldtB::loxP + \u2206ldtC:: hygR</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain (M. smegmatis)</td>\n      <td>KB222</td>\n      <td>this work</td>\n      <td>mc2155\u2206ldtA::loxP \u2206ldtE::loxP \u2206ldtB::loxP \u2206ldtC:: hygR \u2206ldtG:: zeoR</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain (M. smegmatis)</td>\n      <td>KB303 (\u2206LDT)</td>\n      <td>this work</td>\n      <td>mc2155\u2206ldtA::loxP \u2206ldtE::loxP \u2206ldtB::loxP \u2206ldtC:: loxP \u2206ldtG:: loxP \u2206ldtF:: hygR</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain (Escherichia coli XL1-Blue)</td>\n      <td>KB302</td>\n      <td>this work</td>\n      <td>pTetO-ldtE(MSMEG_0233)-Gly-Gly-Ser linker-mRFP</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain (M. smegmatis)</td>\n      <td>KB316 (\u2206LDTcomp)</td>\n      <td>this work</td>\n      <td>[mc2155\u2206ldtA::loxP \u2206ldtE::loxP \u2206ldtB::loxP \u2206ldtC:: loxP \u2206ldtG:: loxP \u2206ldtF:: hygR]+KB302</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain (M. smegmatis)</td>\n      <td>KK311</td>\n      <td>this work; plasmid from Kieser et al. (2015a)</td>\n      <td>mc2155\u00a0+\u00a0TetO-ponA1-RFP (Kieser et al., 2015b)</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain\u00a0(Escherichia coli Top10)</td>\n      <td>KB380</td>\n      <td>this work</td>\n      <td>pTetO-dacB2 (MSMEG_2433)-glycine-glycine-serine linker-mRFP</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain (M. smegmatis)</td>\n      <td>KB414</td>\n      <td>this work</td>\n      <td>mc2155\u00a0+\u00a0KB380</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain (M. smegmatis)</td>\n      <td>HR583</td>\n      <td>this work</td>\n      <td>KB303 (\u2206LDT)+CRISPRi vector (Rock et al., 2017) with dacB2 targeting sgRNA</td>\n      <td>Plasmid from Dr. Sarah Fortune (Harvard School of Public Health) and Dr. Jeremy Rock (Rockefeller University)</td>\n    </tr>\n    <tr>\n      <td>Strain (E. coli BL21)</td>\n      <td>KB428</td>\n      <td>this work</td>\n      <td>E.coli BL21\u00a0+\u00a0pET28 b (dacB2)</td>\n      <td>Plasmid pET28b from Dr. Suzanne Walker</td>\n    </tr>\n  </tbody>\n</table>\n\n### Bacterial strains and culture conditions\n\nUnless otherwise stated, M. smegmatis (mc2155) was grown shaking at 37\u00b0C in liquid 7H9 media consisting of Middlebrook 7H9 salts with 0.2% glycerol, 0.85 g/L NaCl, ADC (5 g/L albumin, 2 g/L dextrose, 0.003 g/L catalase), and 0.05% Tween 80 and plated on LB agar. M. tuberculosis (H37Rv) was grown in liquid 7H9 with OADC (oleic acid, albumin, dextrose, catalase) with 0.2% glycerol and 0.05% Tween 80. Antibiotic selection for M. smegmatis and M. tuberculosis were done at the following concentrations in broth and on agar: 25 \u03bcg/mL kanamycin, 50 \u03bcg/mL hygromycin, 20 \u03bcg/mL zeocin and 20 \u03bcg/mL nourseothricin and, twice those concentrations for cloning in E.coli (TOP10, XL1-Blue and DH5\u03b1).\n\n### Strain construction\n\n#### \u0394LDT\n\nM. smegmatis mc2155 mutants lacking ldtABECFG (\u0394LDT) was constructed using recombineering to replace endogenous copies with zeocin or hygromycin resistance cassettes flanked by lox sites as previously described (Boutte et al., 2016). Briefly, about 500 base pairs of upstream and downstream sequence surrounding the gene of interest were amplified via PCR (KOD XtremeTM Hot Start DNA polymerase (EMD Millipore, Billerica, MA)). These flanking regions were amplified with overlaps to either a zeocin or hygromycin resistance cassette flanked by loxP sites and these pieces were assembled into a deletion construct via isothermal assembly (Gibson et al., 2009). Each deletion cassette was transformed into Msm expressing inducible copies of RecET for recombination (Murphy et al., 2015). Once deletions were verified by PCR and sequencing, the antibiotic resistance cassettes were removed by the expression of Cre recombinase. The order of deletion construction in the \u0394LDT strain was as follows (where arrows represent transformation of a Cre-recombinase plasmid, followed by curing of the Cre-recombinase plasmid as it contains the sacB gene for sucrose counter selection on LB supplemented with 10% sucrose, and strain names are listed in parenthesis). This resulted in the removal of antibiotic cassettes flanked by loxP sites:\n\n1)\u00a0mc2155\u0394ldtA:: zeoR (KB103)\u2192 mc2155\u0394ldtA::loxP (KB134)\n\nSequence flanking ldtA upstream was amplified with KB208/209; downstream flanking sequence was amplified with KB210/211\n\n2)\u00a0mc2155\u0394ldtA::loxP +\u0394ldtE:: zeoR (KB156)\n\nSequence flanking ldtE upstream was amplified with KB220/221; downstream flanking sequence was amplified with KB222/223\n\n3)\u00a0mc2155\u0394ldtA::loxP\u00a0\u0394ldtE:: zeoR + \u0394ldtB:: hygR (KB200) \u2192 mc2155\u0394ldtA::loxP\u00a0\u0394ldtE::loxP \u0394ldtB::loxP (KB207)\n\nSequence flanking ldtB upstream was amplified with KB444/445; downstream flanking sequence was amplified with KB446/447\n\n4)\u00a0mc2155\u0394ldtA::loxP\u0394ldtE::loxP \u0394ldtB::loxP + \u0394ldtC:: hygR (KB209)\n\nSequence flanking ldtC upstream was amplified with KB216/448; downstream flanking sequence was amplified with KB449/219\n\n5)\u00a0mc2155\u0394ldtA::loxP\u00a0\u0394ldtE::loxP \u0394ldtB::loxP \u0394ldtC:: hygR \u0394ldtG:: zeoR (KB222)\u2192 mc2155\u0394ldtA::loxP \u0394ldtE::loxP \u0394ldtB::loxP \u0394ldtC:: loxP \u0394ldtG:: loxP (KB241)\n\nSequence flanking ldtG upstream was amplified with KB228/454; downstream flanking sequence was amplified with KB455/231\n\n6)\u00a0mc2155\u0394ldtA::loxP \u0394ldtE::loxP \u0394ldtB::loxP \u0394ldtC:: loxP \u0394ldtG:: loxP \u0394ldtF:: hygR\n\nSequence flanking ldtF upstream was amplified with KB224/452; downstream flanking sequence was amplified with KB453/227\n\n(KB303 referred to as \u0394LDT).\n\n#### Mtb and Msm Lux\n\nM. tuberculosis H37Rv was transformed with a vector expressing the codon optimized Photorhabdus luminescens luxABCDE operon (pMV306hsp\u00a0+\u00a0LuxG13 \u2013Addgene #26161; RRID:SCR_005907)\u00a0(Andreu et al., 2010). This strain is referred to as Mtb Lux. The same plasmid was transformed into Msm and this strain is referred to as Msm Lux.\n\n#### \u0394LDTcomp\n\nTo complement \u0394LDT (KB303) we placed a copy of ldtE (MSMEG_0233) under the constitutive TetO promoter (a UV15 derivative within a pMC1s plasmid that is inducible with anhydro-tetracycline in the presence of a tet-repressor TetR, which the \u0394LDTcomp strain lacks [Kieser et al., 2015b]) on vector that integrates at the L5 phage integration site of the chromosome of the \u0394LDT strain (the vector is marked with kanamycin resistance). A glycine, glycine, serine linker was cloned between ldtE and mRFP in this complementation construct. LdtE lacking a stop codon, with a glycine-glycine-serine linker was amplified with primers 323A/351. The fluorescent protein mRFP was amplified with primers KB352/353 with overlaps to the linker and the vector backbone.\n\n#### DacB2 expression strain\n\nA truncated MSMEG_2433 was cloned into pET28b for isopropyl \u03b2-D-1-thiogalactopyranoside (IPTG) inducible expression in E. coli BL21 (DE3). MSMEG_2433(29-296) amplified using the primers KB662/663 with overlaps to NdeI digested pET28b. This PCR product was assembled with the digested vector using isothermal assembly. The resulting vector was transformed into E. coli BL21.\n\n#### PonA1-RFP\n\nPonA1-RFP was amplified from Kieser et al. (2015a) using primers KK1/KK2 and KK3/KK4, digested with NdeI and cloned into the same vector as ldtE-mRFP (see above).\n\n#### DacB2-mRFP\n\nUsing the same cloning strategy as for LdtE-mRFP, dacB2 (MSMEG_2433) was amplified lacking a stop codon, with a gly-gly-ser linker using primers KB626/627. The fluorescent protein mRFP was amplified with primers KB628/353 containing overlaps to dacB2, the linker and the vector backbone. The resulting vector was transformed into WT Msm.\n\n#### PonA1 transpeptidase essentiality L5 allele swapping\n\nTo test essentiality of transpeptidation by PonA1 in the \u0394LDT cells, L5 allele swapping as described in Kieser et al., 2015b was performed. The plasmids used in this experiment were previously published in Kieser et al., 2015b. Briefly, a wild-type copy of PonA1 (TetO driven expression, L5 integrating and kanamycin marked) was transformed into \u0394LDT. Then, the endogenous copy of ponA1 was replaced with zeocin using the above mentioned recombineering technique (amplifying the construct from a previously published deletion mutation of ponA1\u00a0[Kieser et al., 2015b]). Swapping efficiency of either wildtype or transpeptidase mutant PonA1 marked with nourseothricin was tested with a transformation into \u0394LDT//L5-TetO-ponA1 (WT)-kanamycin.\n\n### Whole genome sequencing\n\nWhole genome sequencing was performed on wild-type mc2155 as well as the \u0394LDT mutant. Sequencing was done on an Illumina HiSeq 4000 (RRID:SCR_016386) with 150 bp paired-end reads. There was a mean depth of coverage of 148x. All 6 LDT genes were verified as deleted. Furthermore, there was no evidence of any duplications or cross-over events based on a coverage plot.\n\nThe sequencing has been uploaded to NCBI\u2019s SRA (details for sample identifiers are provided below).\n\nSTUDY: PRJNA451029 (SRP141343)\n\n\u0394LDT SAMPLE: deltaLdtAEBCGF (SRS3442031)\n\n\u0394LDT EXPERIMENT: deltaLdtAEBCGF (SRX4275943)\n\n\u0394LDT RUN: deltaLdtAEBCGF_R2.fastq (SRR7403831)\n\nWT SAMPLE: Msmeg-KB (SRS3442032)\n\nWT EXPERIMENT: Msmeg-KB (SRX4275944)\n\nWT RUN: Msmeg-KB_R2.fastq (SRR7403830)\n\n### M. tuberculosis and M. smegmatis minimum inhibitory concentration (MIC) determination\n\nMtb or Msm Lux was grown to log phase and diluted to an OD600\u00a0=\u00a00.006 in each well of non-treated 96-well plates (Genesee Scientific) containing 100 \u03bcL of meropenem (Sigma Aldrich) and/or amoxicillin (Sigma Aldrich) diluted in 7H9\u00a0+\u00a0OADC\u00a0+\u00a05 \u03bcg/mL clavulanate (Sigma Aldrich). Msm media contained ADC rather than OADC. Cells were incubated in drug at 37\u00b0C shaking for 7 days (Mtb) or 1 day (Msm), 0.002% resazurin (Sigma Aldrich) was added to each well, and the plates were incubated for 24 hr before MICs were determined. Pink wells signify metabolic activity and blue signify no metabolic activity. (Kieser et al., 2015a) Checkerboard MIC plates and fractional inhibitory concentrations were calculated as described in (Synergism Testing: Broth Microdilution Checkerboard and Broth Macrodilution Methods, 2016).\n\n### M. tuberculosis and M. smegmatis drug killing assays\n\nMtb Lux was grown to log phase (kanamycin 25 \u03bcg/mL) and diluted in 30 mL inkwells (Corning Lifesciences) to an OD600\u00a0=\u00a00.05 in 7H9\u00a0+\u00a0OADC\u00a0+\u00a05 \u03bcg/mL clavulanate with varying concentrations of amoxicillin, meropenem, or both. 100 \u03bcL of these cultures were pipetted in duplicate into a white 96-well polystyrene plate (Greiner Bio-One) and luminescence was measured in a Synergy H1 microplate reader from BioTek Instruments, Inc. using the Gen5 Software (2.02.11 Installation version). The correlation between relative light units (RLU) and CFU is shown in Msm in Figure 5\u2014figure supplement 1.\n\nMsm Lux was grown to log phase and diluted into white 96-well polystyrene plates to an OD600\u00a0=\u00a00.05. Plates were sealed with 4titude Moisture Barrier Seals and shaken continuously at 37\u00b0C. Luminescence measurements (RLU) were taken at 15-min intervals integrated over 1000 ms in a TECAN Spark 10M plate reader for 18 hr.\n\n### Fluorescent D-amino acid labeling\n\nNADA (3-[7-nitrobenzofurazan]-carboxamide-D-Alanine), HADA (3-[7-hydroxycoumarin]-carboxamide-D-Alanine) and TADA (3-[5-carboxytetramethylrhodamine]-carboxamide-D-Alanine) were synthesized by Tocris following the published protocol (Kuru et al., 2015). To 1 mL of exponentially growing cells 0.1 mM of FDAA final was added and incubated for 2 min before washing in 7H9 twice. For still imaging, after the second wash, cells were fixed in 7H9\u00a0+\u00a01% paraformaldehyde before imaging. For pulse chase experiments, cells were stained, washed with 7H9 and allowed to grow out for 40 min before being stained with a second dye and imaged.\n\n### Flow cytometry\n\nAn M. smegmatis transposon library was grown to mid-log phase, and stained with 2 \u00b5g/mL NADA for 2 min. Cells were centrifuged and half of the supernatant was discarded. The pellet was resuspended in the remaining supernatant, passed through a 10 \u00b5m filter and taken to be sorted (FACSAria; Excitation: 488 nm; Emission filter: 530/30; RRID:SCR_009839). Two bins were drawn at the lowest and highest staining end of the population, representing 12.5% of the population. 600,000 cells from these bins were sorted into 7H9 medium. Half of this was directly plated onto LB agar supplemented with kanamycin to select for cells harboring the transposon. The remaining 300,000 cells were grown out in 7H9 to log phase, stained with FDAA and sorted again to enrich the populations.\n\n### Transposon sequencing, mapping and FDAA flow cytometry enrichment analysis\n\nGenomic DNA (gDNA) was harvested from the sorted transposon library colonies and transposon-gDNA junction libraries were constructed and sequenced using the Illumina Hi-Seq platform (Long et al., 2015). Reads were mapped on the M. smegmatis genome, tallied and reads at each TA site for the bins (low/high incorporating sort 1 and 2) were imported into MATLAB and processed by a custom scripts as described in Rego et al. (2017). Source code for this analysis can be found on GitHub at:\u00a0https://github.com/hesperrego/baranowski_2018 (copy archived at https://github.com/elifesciences-publications/baranowski_2018).\n\nSequencing data are available in NCBI\u2019s SRA with accession number SRP141343.\n\n### Microscopy\n\nBoth still imaging and time-lapse microscopy were performed on an inverted Nikon TI-E microscope at 60x magnification. Time-lapse was done using a CellASIC ONIX2 Microfluidic System (Millipore Sigma, B04A plate) with constant liquid 7H9 flow in a 37\u00b0C chamber. For turgor experiment (Figure 2A), cells were grown in either 7H9 or 7H9 500 mM sorbitol overnight, and then switched to either 7H9 with 150 mM sorbitol (high osmolar) or to 7H9 alone (iso-osmolar).\n\n### Atomic force microscopy\n\nAFM experimentation was conducted as previously(Eskandarian et al., 2017). In short, polydimethylsiloxane (PDMS) \u2013 coated coverslips were prepared by spin-coating a mixture of PDMS at a ratio of 15:1 (elastomer:curing agent) with hexane (Sigma 296090) at a ratio of 1:10 (PDMS:hexane) (Koschwanez et al., 2009; Thangawng et al., 2007). A 50 \u00b5l filtered (0.5 \u00b5m pore size PVDF filter \u2013 Millipore) aliquot of bacteria grown to mid-exponential phase and concentrated from 2 to 5 ml of culture was deposited onto the hydrophobic surface of a PDMS-coated coverslip and incubated for\u00a0~20 min to increase surface interactions between bacteria and the coverslip. 7H9 medium (~3 ml) was supplied to the sample so as to immerse the bacterial sample and the AFM cantilever in fluid. The AFM imaging mode, Peak Force QNM, was used to image bacteria with a Nanoscope five controller (Veeco Metrology) at a scan rate of 0.5 Hz and a maximum Z-range of 12 \u00b5m. A ScanAsyst fluid cantilever (Bruker) was used. Height, peak force error, DMT modulus, and log DMT modulus were recorded for all scanned images in the trace and retrace directions. Images were processed using Gwyddion (Department of Nanometrology, Czech Metrology Institute). ImageJ was used for extracting bacterial cell profiles in a tabular form.\n\n### Correlated optical fluorescence and AFM\n\nCorrelated optical fluorescence and AFM images were acquired as described (Eskandarian et al., 2017). Briefly, optical fluorescence images were acquired with an electron-multiplying charge-coupled device (EMCCD) iXon Ultra 897 camera (Andor) mounted on an IX81 inverted optical microscope (Olympus) equipped with an UPLFLN100XO2PH x100 oil immersion objective (Olympus). Transmitted light illumination was provided by a 12V/100W AHS-LAMP halogen lamp. An U-MGFPHQ fluorescence filter cube for GFP with HQ-Ion-coated filters was used to detect GFP fluorescence. The AFM was mounted on top of the inverted microscope, and images were acquired with a Dimension Icon scan head (Bruker) using ScanAsyst fluid cantilevers (Bruker) with a nominal spring constant of 0.7 N m\u22121 in Peak Force QNM mode at a force setpoint\u00a0~1 nN and typical scan rates of 0.5 Hz. Indentation on the cell surface was estimated to be\u00a0~10 nm in the Z-axis. Optical fluorescence microscopy was used to identify Wag31-GFP puncta expressed in a wild-type background\u00a0(Santi et al., 2013) in order to distinguish them from cells of the \u2206LDT mutant strains.\n\n### Calculating cell surface rigidity\n\nA cell profile was extracted from AFM Height and DMT Modulus image channels as sequentially connected linear segments following the midline of an individual cell. A background correction was conducted to by dividing the DMT modulus values of the cell surface by the mean value of the PDMS surface and rescaled to compare the cell surface rigidity between individual cells from different experiments. The DMT modulus reflects the elastic modulus (stress-strain relationship) for each cross-sectional increment along the cell length.\n\n### Analysis of fluorescent protein distribution\n\nUsing a segmented line, profiles of cells from new to old pole were created at the frame \u2018pre-division\u2019 based on physical cell separation of the phase image. A custom FIJI\u00a0(Schindelin et al., 2012) script was run to extract fluorescence line profiles of each cell and save them as. csv files. These. csv files were imported to Matlab where a custom script was applied to normalize the fluorescence line profile to fractional cell length and to interpolate the fluorescence values to allow for averaging. Source code for this analysis can be found on GitHub at:https://github.com/hesperrego/baranowski_2018\n\n### Analysis of cell wall distribution\n\nCells were stained with AlexaFluor 488 NHS ester (ThermoFisher Scientific) as described previously (Aldridge et al., 2012) and followed via time-lapse microscopy in the CellASIC device. Briefly, 1 mL of log phase cells was pelleted at 8000 rpm for 1 min and washed with 1 mL PBST. The pellet was resuspended in 100 uL of PBST and 10 uL Alexa Fluor 488 carboxylic acid succinimidyl ester was added for a final concentration of 0.05 mg/mL. This was incubated for 3 min at room temperature. Stained cells were pelleted for 1 min at 13,000 rpm and washed with 500 \u03bcL PBST. They were spun again and resuspended in 7H9 for outgrowth observation over time in the CellASIC device.\n\n### Analysis of FDAAs\n\nImages were analyzed using a combination of Oufti (Paintdakhi et al., 2016) (RRID:SCR_016244) for cell selection followed by custom coded Matlab scripts to plot FDAA fluorescence over normalized cell length, calculate cell length and bin cells by existence of an FDAA labeled septum. This code and a manual for its use has been included as a source code file with this manuscript (Source Code-Instructions and code for FDAA image analysis in Figure 1).\n\n### Generation of transposon libraries\n\nM. smegmatis cells were transduced at (OD6001.1\u20131.7) with \u03c6MycoMarT7 phage (temperature sensitive) that has a Kanamycin marked Mariner transposon as previously described (Long et al., 2015). Briefly, mutagenized cells were plated at 37\u00b0C on LB plates supplemented with Kanamycin to select for phage transduced cells. Roughly 100,000 colonies per library were scraped, and genomic DNA was extracted. Sequencing libraries were generated specifically containing transposon disrupted DNA. Libraries were sequenced on the Illumina platform. Data were analyzed using the TRANSIT pipeline (DeJesus et al., 2015) (RRID:SCR_016492).\n\nSequencing data are available in NCBI\u2019s SRA with accession number SRP141343.\n\n### Peptidoglycan isolation and analysis\n\n600\u00a0mL of wild-type and \u0394LDT cells were grown to log phase and collected via centrifugation at 5000 x g for 10 min at 4\u00b0C. The resulting pellet was resuspended in PBS and cells were lysed using a cell disruptor at 35,000 psi twice. Lysed cells were boiled in 10% SDS (sodium dodecyl sulfate) for 30 min and peptidoglycan was collected via centrifugation at 17,000 x g. Pellets were washed with 0.01% DDM(n-Dodecyl \u03b2-D-maltoside) to remove SDS and resuspended in 1XPBS\u00a0+\u00a00.01% DDM. PG was digested with alpha amylase (Sigma A-6380) and alpha chymotrypsin (Amersco 0164) overnight. The samples were again boiled in 10% SDS and washed in 0.01% DDM. The resulting pellet was resuspended in 400 \u03bcL 25 mM sodium phosphate pH6, 0.5 mM MgCl2, 0.01% DDM. 20 \u03bcL of lysozyme (10 mg/mL) and 20 \u03bcL 5 U/\u03bcL mutanolysin (Sigma M9901) were added and incubated overnight at 37\u00b0C. Samples were heated at 100\u00b0C and centrifuged at 100,000 x g. 128 \u03bcL of ammonium hydroxide was added and incubated for 5 hr at 37\u00b0C. This reaction was neutralized with 122 \u03bcL of glacial acetic acid. Samples were lyophilized, resuspended in 300 \u03bcL 0.1% formic acid and subjected to analysis by LC-MS/MS. Peptide fragments were separated with an Agilent Technologies 1200 series HPLC on a Nucleosil C18 column (5 \u03bcm 100A 4.6 \u00d7 250 mm) at 0.5 mL/min flow rate with the following method: Buffer A\u00a0=\u00a00.1% Formic Acid; Buffer B\u00a0=\u00a00.1% Formic Acid in acetonitrile; 0% B from 0 to 10 min, 0\u201320% B from 10 to 100 min, 20% B from 100 to 120 min, 20\u201380% B from 120 to 130 min, 80% B from 130 to 140 min, 80\u20130% B from 140 to 150 min, 0% B from 150 to 170 min. MS/MS was conducted in positive ion mode using electrospray ionization on an Agilent Q-TOF (6520).\n\n### Expression and purification of MSMEG_2433 (DacB2)\n\nMSMEG_2433 was expressed and purified using a modified method for purification of low-molecular-weight PBPs that was previously published (Qiao et al., 2014). An N-terminally truncated MSMEG_2433(29-296) was cloned into the pET28b vector for isopropyl \u03b2-D-1-thiogalactopyranoside (IPTG) inducible expression in E. coli BL21 (DE3) (see strain construction notes above). 10mLs of overnight culture grown in LB with Kanamycin (50 \u03bcg/mL) were diluted 1:100 into 1 L of LB with Kanamycin (50 \u03bcg/mL) and grown at 37\u00b0C until an OD600 of 0.5. The culture was cooled to room temperature, induced with 0.5 mM IPTG, and shaken at 16\u00b0C overnight. Cells were pelleted via centrifugation at 4000 rpm for 20 min at 4\u00b0C. The pellet was suspended in 20 mL binding buffer (20 mM Tris pH 8, 10 mM MgCl2, 160 mM NaCl, 20 mM imidazole) with 1 mM phenylmethylsulfonylfluoride (PMSF) and 500 \u03bcg/mL DNase. Cells were lysed via three passage through a cell disrupter at\u00a0\u226510,000 psi. Lysate was pelleted by ultracentrifugation (90,000\u00a0\u00d7\u00a0g, 30 min, 4\u00b0C). To the supernatant, 1.0 mL washed Ni-NTA resin (Qiagen) was added and the mixture rocked at 4\u00b0C for 40 min. After loading onto a gravity column, the resin was washed twice with 10 mL wash buffer (20 mM Tris pH 8, 500 mM NaCl, 20 mM imidazole, 0.1% Triton X-100). The protein was eluted in 10 mL of elution buffer (20 mM Tris pH8, 150 mM NaCl, 300 mM imidazole, 0.1% reduced Triton X-100) and was concentrated to 1 mL with a 10kD MWCO Amicon Ultra Centrifuge Filter. The final protein concentration was measured by reading absorbance at 280 nm and using the estimated extinction coefficient (29459 M\u22121cm\u22121) calculate concentration. The protein was diluted to 200 \u03bcM in elution buffer with 10% glycerol, aliquoted, and stored at \u221280\u00b0C.\n\nProper folding of purified MSMEG_2433(29-296) was tested via Bocillin-FL binding. Briefly, 20 \u03bcM of purified protein was added to penicillin G (100, 1000 U/mL in 20 mM K2HPO4, 140 mM NaCl, pH7.5) in a 9 \u03bcL reaction. The reaction was incubated at 37\u00b0C for 1 hr. 10 \u03bcM Bocillin-FL was added and incubated at 37\u00b0C for 30 min. SDS loading dye was added the quench the reaction and samples were loaded onto a 4\u201320% gel. MSMEG_2433(29-296) bound by Bocillin-FL was imaged using a Typhoon 9400 Variable Mode Imager (GE Healthcare) (Alexa Excitation-488nm Emission-526nm).\n\n### Lipid II extraction\n\nB. subtilis Lipid II was extracted as previously published (Qiao et al., 2017).\n\n### SgtB purification\n\nS. aureus SgtB was purified as previously published (Rebets et al., 2014).\n\n### Purification of B. subtilis PBP1\n\nPurification of B. subtilis PBP1 was carried out as previously described (Lebar et al., 2014).\n\n### In vitro Lipid II polymerization and crosslinking\n\n20 \u03bcM purified BS Lipid II was incubated in reaction buffer (50 mM HEPES pH 7.5, 10 mM CaCl2) with either 5 \u03bcM PBP1 or 0.33 \u03bcM SgtB for 1 hr at room temperature. The enzymes were heat denatured at 95\u00b0C for 5 min. Purified MSMEG_2433(29-296) was added (20 uM, final) and the reaction was incubated at room temperature for 1 hr. Mutanolysin (1 \u03bcL of a 4000 U/mL stock) was added and incubated for 1.5 hr at 37\u00b0C (twice). The resulting muropeptides were reduced with 30 \u03bcL of NaBH4 (10 mg/mL) for 20 min at room temperature with tube flicking every 5 min to mix. The pH was adjusted to\u00a0~4 using with 20% H3PO4 and the resulting product was lyophilized to dryness. The residue was resuspended in 18 \u03bcL of water and analyzed via LC-MS as previously reported (Welsh et al., 2017).\n\n### Experimental replicates\n\nBiological replicates \u2013 independent cultures; Technical replicates \u2013 the same culture in replicate.\n\nMicroscopy for Figure 1E,F and Figure 1\u2014figure supplement 2 was done once and analyzed. The data shown in Figure 1\u2014figure supplement 3 was done once in technical triplicate. The graph shows one replicate.\n\nTime-lapse experiment in Figure 2A was done twice (biological duplicate on separate days). Included for this figure are videos of full fields of view of the time-lapse experiments (Figure 2\u2014video 1- full field; Figure 2\u2014video 2- full field). Microscopy for Figure 2B was done in biological triplicate on three separate days. The time-lapse phenotype highlighted Figure 2\u2014figure supplement 1 was observed in biological triplicate on 3 independent days. AFM data in Figure 2D and E was derived from two independent experiments done on separate days.\n\nAllele swapping experiment in Figure 3C was done once.\n\nTime-lapse microscopy for Figure 4A was performed in biological duplicate. The graph in Figure 4B represents data from one experiment. Figure 4C is representative data from two technical replicates (the same protein and substrate preparations were used). Microscopy and quantification of bleb size in dacB2 CRISPRi knock-down (Figure 4\u2014figure supplement 3) was done twice (biological duplicate on separate days).\n\nLuciferase Msm data in Figure 5A was performed once. Luciferase Mtb survival data in Figure 5B was done in biological triplicate and technical triplicate. Biological triplicates are plotted. Minimum inhibitory concentrations (MIC) were determined in biological duplicate (two separate cultures on two separate days) and technical duplicate for Figure 5B. Combination MIC for Figure 5\u2014figure supplement 2 was determined once for Mtb and twice for Msm strains.\n\nFluorescent D-amino acid pulse-chase for Figure 6B was done on two independent days (biological duplicate).\n",
+      "created_at": "2025-12-02T06:41:11.716892Z"
+    },
+    {
+      "id": "7b423814-8877-4321-933a-80c5f5c0b15d",
+      "submission_id": "697828ea-be31-4569-be82-895f3fa9e76b",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Bavesh D Kana, University of the Witwatersrand South Africa\n\nReviewers:\n- Michel Arthur, INSERM, UMR_S 1138, Centre de Recherche des Cordeliers France\n\n## Review text\n\nDOI: [10.7554/eLife.37516.041](https://doi.org/10.7554/eLife.37516.041)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Maturing Mycobacterial Peptidoglycan Requires Non-canonical Crosslinks to Maintain Shape\" for consideration by eLife. Your article has been reviewed by four peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation has been overseen by Wendy Garrett as the Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Michel Arthur (Reviewer #2); Clif Barry (Reviewer #3); Gyanu Lamichhane (Reviewer #4).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThe manuscript by Dr. Rego and colleagues explores peptidoglycan (PG) metabolism in mycobacteria. The biosynthetic pathway for the PG polymer in these organisms represents several departures from well-known paradigms, most notably; mycobacteria extend their cell surfaces by incorporating new material at the cell tips. Also, the composition of cross-linked mycobacterial PG comprises a large proportion of 3-3 crosslinks, which are relatively rare in model organisms wherein PG has been intensely studied. This form of cross linking is mediated by the activity of L,D-transpeptidases (LDTs) and the authors focus their efforts on describing the function of these enzymes in Mycobacterium smegmatis. Using fluorescent D-amino acids (FDAAs) to visualise PG synthesis, they report strong staining of an FDAA at the cell poles, with a gradient of staining that extends to mid-cell, from the old pole. To determine which enzymes drive this pattern of staining the authors carry out saturating transposon mutagenesis, together with fluorescence associated cell sorting, to identify cells where staining was reduced. This analysis identified three LDTs (LDTA, B, and E) and combinatorial deletion of these resulted in reduced FDAA uptake. The authors proceed to delete all six LDTs (\u0394LDT) and note similar effects, indicating that FDAA incorporation in mycobacteria is LDT-dependent. Next, the authors characterise the morphological defects that occur upon combinatorial deletion of all LDTs and report that a proportion of cells lose rod shape, which could be rescued by high osmolarity, suggesting that loss of cell wall rigidity mediated shape defects, a notion supported by measurement of cell rigidity using atomic force microscopy. Time-lapse microscopy revealed that the daughter cell that lost rod shape inherited the new pole and oldest cell wall, with spherical blebs localized in the cell retaining the old cell wall. This suggested that LDTs stabilize old cell wall material. After this, the authors demonstrate that in the absence of LDTs, mycobacteria depend on PbpA and PonA2-mediated 4-3 crosslink formation to maintain cell wall integrity. The authors then demonstrate that PG synthesizing and remodelling enzymes locate to distinct sites of the cell. Combinatorial inhibition of both 4-3 and 3-3 crosslink formation by antibiotics illustrated the potential tractability of targeting PG for tuberculosis drug treatment.\n\nCentral conclusions:\n\n1) LDT-mediated 3-3 crosslinks are required for maintenance of rod shape in M. smegmatis.\n\n2) The different types of cross-links, 4-3 versus 3-3, are most likely spatially distributed to distinct locations in the mycobacterial cell, with mature PG locating to the sidewall in a 3-3 crosslinked conformation.\n\n3) In the absence of the ability to generate 3-3 crosslinks, mycobacteria become critically reliant of 4-3 crosslinks generated by HMW PBPs.\n\nThe study is carefully conducted and opens new avenues to decipher the mechanism underlying septum localization in mycobacteria and to identify strategies for synergistic killing of mycobacteria by drug combinations.\n\nEssential revisions:\n\n1) In Figure 1B, how do the authors determine the new from the old pole? This most likely related to birth size and intensity of staining at the cell pole, but some illustration of this would be useful in the figure and is required to understand the rest of the work.\n\n2) Data demonstrating how the genotype of the Msm strains lacking all 6 (and 3) LDT-encoding genes was verified is necessary. It could be Southern blotting or sequencing. Sequencing is mentioned in the Materials and methods section, but it is not clear what was done to ensure that there were no unintended cross-over events elsewhere in the chromosome as well.\n\n3) Why just complement with LDTE? Were the other three LDTs enriched/identified in the screen? Was the sextuple mutant necessary to completely eliminate FDAA staining? In this context, for rigour, genetic complementation of the LDT triple mutant is necessary, this seems relatively easy. The same construct used to complement the \u0394LDT mutant can be used in this case.\n\n4) The study unambiguously shows that DacB2 has endopeptidase activity (cleavage of 4-3 crosslinks) and that DacB2 co-localizes with LDTE. The authors conclude that the endopeptidase activity of DacB2 is responsible for the formation of blebs in the absence of LDTs. Direct evidence of the proposed model should be obtained by constructing a dacB2 \u0394LDT mutant. As dacB2 was deemed to be nonessential in genome wide inactivation studies in M. tuberculosis and direct gene deletion (Microb Pathog. 2012 52:109-16), this experiment should be feasible and is required to support the conclusions of the study. Genetic complementation of the resulting combinatorial mutant (dacB2 \u0394LDT mutant) is also required.\n\n5) The MS analysis of peptidoglycan structure appearing in \"Figure 1\u2014figure supplement 3B\" raises numerous issues including the absence of any definition of the molecular ions that were detected and the inversion of the donor and acceptor stems between the sets of 4-3 and 3-3 crosslinked dimers. There are inconsistencies between the observed mass and the proposed structures, e.g. peaks 7 and 14 display the same mass but contain 2 and 4 NH2, respectively. Please, be consistent and list the number of NH2 rather than a mixed designation with OH for certain peaks. More importantly, peak 10 disappeared upon deletion of the LDT genes although it is reported to contain a 4-3 crosslink (formed by PPBs). These shortfalls must be addressed.\n\n6) The experiments showing the cellular localization of the various proteins are not really as clear. Figure 4, subsection \u201cPeptidoglycan synthesizing enzymes localize to differentially aged cell wall\u201d, first paragraph: While it is clear that LDTE-mRFP localized farther from the poles, it appears PonA1-RFP localizes throughout the cell wall as the staining is clearly visible throughout the cell.\n\nSubsection \u201cPeptidoglycan synthesizing enzymes localize to differentially aged cell wall\u201d, last paragraph: Figure 4A, bottom panel, shows prominent staining in the poles as well. Therefore, the conclusion that 'DacB2-mRFP localized closer to LDT-mRFP' is not entirely supported by the data.\n\nSimilarly, from the Discussion (end of third paragraph) to conclude that 3-3 cross-linkages are responsible for localizing the biosynthetic machinery seems inadequate from the location of only one of these proteins. These shortfalls can be addressed by attempting localization of another LDT homologue and providing clearer pictures of how PonA1-RFP localizes. Please ensure that any quantification of localization intensity is done for a sufficient number of cells to ensure robustness.\n\n7) Figure 6A, subsection \u201cMycobacteria are hypersensitive to PBP inactivation in the absence of LDTs\u201d, first paragraph: It is proposed that D,D-endopeptidase generates tetrapeptide substrates. Data/citation to support this claim is missing. The figure shows tetrapeptide as a substrate. Please address this.\n\n8) Subsection \u201cDrugs targeting both PBPs and LDTs synergize to kill Mtb\u201d: Clavulanic acid at 5 \u03bcg/mL was used for this assay. Therefore, it is important to include this detail here. It is not possible to conclude that amoxicillin and meropenem exhibit synergism as the experiment included another agent (clavulanic acid). Or, the assay needs to be repeated in the absence of clavulanic acid to draw this conclusion. Also, previous work (Kumar P et al., 2017) describes the relationship between various B-lactams and transpeptidases of Mtb. The concluding sentence of this paper is that combinations of two different b-lactams would be most optimal to treat TB. This paper is directly relevant to parts of this manuscript and should be considered.\n\n9) The synergy experiments in M. tuberculosis are a (wholly unnecessary) distraction from the importance of the study. It would be far more useful to see the synergy (and or lack of) with the various M. smegmatis mutants. None of the other studies were done in Mtb and there is not even an attempt to discuss the relevant enzymes or orthologs in Mtb. Please address this.\n\n10) Currently, the figures are highly complex and the manuscript would benefit from an improved lead in their content. Figure 6 is limited to substrate and enzyme localization. The relation of the central part to panels A and B is unclear. Considering this, Figure 6 is not at the high quality level of the rest of the manuscript. Address this. A related minor point is that Figure 6 is introduced before Figure 3 to 5. As eLife caters to a broad readership base, improved flow of your text, clear figures demonstrating key conclusions and a carefully synthesized graphic of the central conclusions would substantively enhance the value of your submission.\n\n[Editors' note: further revisions were requested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \"Maturing Mycobacterium smegmatis Peptidoglycan Requires Non-canonical Crosslinks to Maintain Shape\" for further consideration at eLife. Your revised article has been favorably evaluated by Wendy Garrett (Senior Editor), a Reviewing Editor, and one reviewer.\n\nThe manuscript has been improved but there are some remaining issues that need to be addressed before acceptance, as outlined below:\n\n1) With regards to the previous requests to correct the mass spectroscopy data, the ion designation is still incorrect [M+H] 1+ and [M+2H] 2+. Should the m/z ratio in panel C not be 1012.469?\n\n2) The structure of the ions that correspond to the m/z 903.4 and 904.4 (and 974.5 and 975.5) should be provided.\n\n3). Neutral mass = calculated monoisotopic mass. Observed mass [M+H] should be replaced by the observed monoisotopic mass (or observed m/z [M+H] 1+ if preferred). m/z should be italicized. A brief explanation of the techniqueshould be introduced in the legend.\n",
+      "created_at": "2025-12-02T06:41:11.716892Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T06:41:11.716892Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T06:41:11.716892Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "3a44794f-2575-4736-8c04-9772b710d132",
+      "content_id": "3b1d14b0-cccb-46ab-9979-e9f75d35abc4",
+      "claim_id": "C1",
+      "claim": "In most well-studied rod-shaped bacteria, peptidoglycan is primarily crosslinked by penicillin-binding proteins (PBPs).",
+      "claim_type": "EXPLICIT",
+      "source": "In most well-studied rod-shaped bacteria, peptidoglycan is primarily crosslinked by penicillin-binding proteins (PBPs).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about established knowledge in the field, drawing from scientific consensus about bacterial cell wall structure.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:41:11.716892Z"
+    },
+    {
+      "id": "0f854861-c152-436c-af80-e2476d5fc0c0",
+      "content_id": "3b1d14b0-cccb-46ab-9979-e9f75d35abc4",
+      "claim_id": "C2",
+      "claim": "In mycobacteria, crosslinks formed by L,D-transpeptidases (LDTs) are highly abundant.",
+      "claim_type": "EXPLICIT",
+      "source": "However, in mycobacteria, crosslinks formed by L,D-transpeptidases (LDTs) are highly abundant.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to prior research on mycobacterial peptidoglycan composition.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:41:11.716892Z"
+    },
+    {
+      "id": "abe1a7b6-ff90-4b38-871c-587f66b93025",
+      "content_id": "3b1d14b0-cccb-46ab-9979-e9f75d35abc4",
+      "claim_id": "C3",
+      "claim": "Crosslinks generated by LDTs are required for rod shape maintenance specifically at sites of aging cell wall.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that crosslinks generate by LDTs are required for rod shape maintenance specifically at sites of aging cell wall, a byproduct of polar elongation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study, supported by experimental observations of \u0394LDT cells losing rod shape at aging cell wall regions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:41:11.716892Z"
+    },
+    {
+      "id": "f6d76ee3-8868-4681-9b46-2c6cdb73b7a3",
+      "content_id": "3b1d14b0-cccb-46ab-9979-e9f75d35abc4",
+      "claim_id": "C4",
+      "claim": "Asymmetric polar growth leads to a non-uniform distribution of 4-3 and 3-3 crosslinks in a single cell.",
+      "claim_type": "EXPLICIT",
+      "source": "Asymmetric polar growth leads to a non-uniform distribution of these two types of crosslinks in a single cell.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by FDAA incorporation patterns and localization studies of PBPs and LDTs shown in the figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:41:11.716892Z"
+    },
+    {
+      "id": "2f26634f-f56c-4aed-9e8b-6574e7d2817c",
+      "content_id": "3b1d14b0-cccb-46ab-9979-e9f75d35abc4",
+      "claim_id": "C5",
+      "claim": "In the absence of LDT-mediated crosslinks, PBP-catalyzed crosslinks become more important.",
+      "claim_type": "EXPLICIT",
+      "source": "Consequently, in the absence of LDT-mediated crosslinks, PBP-catalyzed crosslinks become more important.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by TnSeq data showing that PBPs become essential in \u0394LDT cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:41:11.716892Z"
+    },
+    {
+      "id": "ac9f9799-f894-4d39-bf49-20614369e4f1",
+      "content_id": "3b1d14b0-cccb-46ab-9979-e9f75d35abc4",
+      "claim_id": "C6",
+      "claim": "Mycobacterium tuberculosis is more rapidly killed using a combination of drugs capable of PBP- and LDT- inhibition.",
+      "claim_type": "EXPLICIT",
+      "source": "Because of this, Mycobacterium tuberculosis (Mtb) is more rapidly killed using a combination of drugs capable of PBP- and LDT- inhibition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data showing synergistic killing with amoxicillin and meropenem combinations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:41:11.716892Z"
+    },
+    {
+      "id": "d22e491b-6966-4433-b15a-d3236f415021",
+      "content_id": "3b1d14b0-cccb-46ab-9979-e9f75d35abc4",
+      "claim_id": "C7",
+      "claim": "Peptidoglycan consists of linear glycan strands crosslinked by short peptides to form a continuous molecular cage surrounding the plasma membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "PG consists of linear glycan strands crosslinked by short peptides to form a continuous molecular cage surrounding the plasma membrane.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about peptidoglycan structure.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:41:11.716892Z"
+    },
+    {
+      "id": "6ab7bce4-4a3b-4336-a49b-da757ab06ccb",
+      "content_id": "3b1d14b0-cccb-46ab-9979-e9f75d35abc4",
+      "claim_id": "C8",
+      "claim": "In E. coli and B. subtilis, new PG is constructed along the lateral side wall.",
+      "claim_type": "EXPLICIT",
+      "source": "In these organisms, new PG is constructed along the lateral side wall by the concerted effort of glycosyltransferases, which connect the glycan of a new PG subunit to the existing mesh, and transpeptidases, which link peptide side chains.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about lateral cell wall growth in model bacteria, supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:41:11.716892Z"
+    },
+    {
+      "id": "b8d6072b-7d39-4156-b6e3-3d73528926ca",
+      "content_id": "3b1d14b0-cccb-46ab-9979-e9f75d35abc4",
+      "claim_id": "C9",
+      "claim": "MreB positions the PG synthesis complex along the short axis of the cell so that glycan strands are inserted circumferentially in E. coli and B. subtilis.",
+      "claim_type": "EXPLICIT",
+      "source": "An actin-like protein, MreB, positions this multi-protein complex along the short axis of the cell so that glycan strands are inserted circumferentially, creating discontinuous hoops of PG around the cell (Dom\u00ednguez-Escobar et al., 2011; Garner et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research on MreB function.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:41:11.716892Z"
+    },
+    {
+      "id": "30881751-c612-43e5-a400-43c7e55dfb05",
+      "content_id": "3b1d14b0-cccb-46ab-9979-e9f75d35abc4",
+      "claim_id": "C10",
+      "claim": "The circumferential orientation of PG creates a mechanical anisotropy that is responsible for rod shape in E. coli and B. subtilis.",
+      "claim_type": "EXPLICIT",
+      "source": "This orientation of PG creates a mechanical anisotropy that is responsible for rod shape (Hussain et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:41:11.716892Z"
+    },
+    {
+      "id": "14e2ddc7-9a37-4abf-9d1e-132b9e31e2aa",
+      "content_id": "3b1d14b0-cccb-46ab-9979-e9f75d35abc4",
+      "claim_id": "C11",
+      "claim": "Mycobacteria do not encode MreB.",
+      "claim_type": "EXPLICIT",
+      "source": "However, not all rod-shaped bacteria encode MreB.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about mycobacterial genetics.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:41:11.716892Z"
+    },
+    {
+      "id": "902c1430-2d35-4d12-a21c-f3f748d4e326",
+      "content_id": "3b1d14b0-cccb-46ab-9979-e9f75d35abc4",
+      "claim_id": "C12",
+      "claim": "In mycobacteria, new PG is inserted at the cell poles at unequal amounts based on pole age.",
+      "claim_type": "EXPLICIT",
+      "source": "In mycobacteria, new PG is inserted at the cell poles (at unequal amounts based on pole age), rather than along the lateral walls (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the schematic in Figure 1A and established knowledge about mycobacterial growth.",
+      "evidence_type": "[\"KNOWLEDGE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:41:11.716892Z"
+    },
+    {
+      "id": "21c554d5-155c-41d5-be2d-77c6c747c6d7",
+      "content_id": "3b1d14b0-cccb-46ab-9979-e9f75d35abc4",
+      "claim_id": "C13",
+      "claim": "Mycobacteria are missing several factors, including MreB, that are important for cell elongation.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, mycobacteria are missing several factors, including MreB, that are important for cell elongation (Kieser and Rubin, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:41:11.716892Z"
+    },
+    {
+      "id": "6e2cc6e0-a29b-413f-93cd-9faa51959f3c",
+      "content_id": "3b1d14b0-cccb-46ab-9979-e9f75d35abc4",
+      "claim_id": "C14",
+      "claim": "In E. coli and B. subtilis, the vast majority (>90%) of peptide linkages are created by D,D-transpeptidases known as penicillin-binding proteins (PBPs).",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, in E. coli and B. subtilis the vast majority (>90%) of the peptide linkages are created by D,D-transpeptidases known as penicillin-binding proteins (PBPs) (Pisabarro et al., 1985).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:41:11.716892Z"
+    },
+    {
+      "id": "40dd3943-fae3-46a2-8cd5-f06f848a5999",
+      "content_id": "3b1d14b0-cccb-46ab-9979-e9f75d35abc4",
+      "claim_id": "C15",
+      "claim": "PBPs link the fourth amino acid of one peptide side chain to the third amino acid of another, forming 4\u20133 crosslinks.",
+      "claim_type": "EXPLICIT",
+      "source": "PBPs, the targets of most \u03b2-lactams, link the fourth amino acid of one peptide side chain to the third amino acid of another, forming 4\u20133 crosslinks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about PBP biochemistry.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:41:11.716892Z"
+    },
+    {
+      "id": "22c27f65-af3e-4a98-bd83-fd19d823ba59",
+      "content_id": "3b1d14b0-cccb-46ab-9979-e9f75d35abc4",
+      "claim_id": "C16",
+      "claim": "L,D-transpeptidases (LDTs) link peptide side chains by the third amino acid forming 3\u20133 linkages.",
+      "claim_type": "EXPLICIT",
+      "source": "Peptidoglycan crosslinks can also be catalyzed by L,D-transpeptidases (LDTs), which link peptide side chains by the third amino acid forming 3\u20133 linkages (Figure 1\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is established knowledge about LDT biochemistry, illustrated in the figure.",
+      "evidence_type": "[\"KNOWLEDGE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:41:11.716892Z"
+    },
+    {
+      "id": "3451f6da-aade-4329-bb05-13a934554359",
+      "content_id": "3b1d14b0-cccb-46ab-9979-e9f75d35abc4",
+      "claim_id": "C17",
+      "claim": "In mycobacteria, 3\u20133 crosslinks account for at least 60% of linkages.",
+      "claim_type": "EXPLICIT",
+      "source": "In mycobacteria, these 3\u20133 crosslinks, are highly abundant, accounting for at least 60% of linkages (Kumar et al., 2012; Lavollay et al., 2008; Wietzerbin et al., 1974).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:41:11.716892Z"
+    },
+    {
+      "id": "32b75c6e-2912-489a-a270-357a1075ee8c",
+      "content_id": "3b1d14b0-cccb-46ab-9979-e9f75d35abc4",
+      "claim_id": "C18",
+      "claim": "There are five LDTs in Mtb and six in Mycobacterium smegmatis (Msm).",
+      "claim_type": "EXPLICIT",
+      "source": "As is the case with PBPs, there exists many copies of LDTs in the cell - there are five LDTs in Mtb and six in Mycobacterium smegmatis (Msm), a non-pathogenic relative of Mtb (Sanders et al., 2014), making genetic characterization challenging.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:41:11.716892Z"
+    },
+    {
+      "id": "b6971c98-e034-4dd9-8b8e-22518860861d",
+      "content_id": "3b1d14b0-cccb-46ab-9979-e9f75d35abc4",
+      "claim_id": "C19",
+      "claim": "LDT homologues do not appear to functionally overlap completely.",
+      "claim_type": "EXPLICIT",
+      "source": "Also similarly to PBPs, LDT homologues do not appear to functionally overlap completely (Cordillot et al., 2013; Kumar et al., 2017; Schoonmaker et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:41:11.716892Z"
+    },
+    {
+      "id": "63fad2c4-7112-4723-b323-d1b49ecfc64b",
+      "content_id": "3b1d14b0-cccb-46ab-9979-e9f75d35abc4",
+      "claim_id": "C20",
+      "claim": "Carbapenems are \u03b2-lactam antibiotics that potently inhibit LDTs in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "However, carbapenems, \u03b2-lactam antibiotics that potently inhibit LDTs in vitro (Cordillot et al., 2013; Dub\u00e9e et al., 2012; Lavollay et al., 2008; Mainardi et al., 2007; Triboulet et al., 2013), are also effective against drug resistant Mtb in vitro and drug-sensitive Mtb in patients (Diacon et al., 2016; Hugonnet et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:41:11.716892Z"
+    },
+    {
+      "id": "92b35264-6ca3-4e6f-9882-9cb3582288ec",
+      "content_id": "3b1d14b0-cccb-46ab-9979-e9f75d35abc4",
+      "claim_id": "C21",
+      "claim": "When Msm was incubated with FDAAs for a short 2 min pulse, incorporation was observed at both poles.",
+      "claim_type": "EXPLICIT",
+      "source": "When we incubated Msmwith FDAAs for a short 2 min pulse ( < 2% of Msm's generation time) we observed incorporation at both poles, the sites of new PG insertion in mycobacteria (Figure 1A,B) (Aldridge et al., 2012).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the microscopy images in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:41:11.716892Z"
+    },
+    {
+      "id": "21c1fd24-6255-425d-bb2b-81c8a8531fc1",
+      "content_id": "3b1d14b0-cccb-46ab-9979-e9f75d35abc4",
+      "claim_id": "C22",
+      "claim": "A gradient of FDAA fluorescence was observed along the sidewalls, extending from the old pole and fading to a minimum at roughly mid-cell as it reaches the new pole.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we also saw a gradient of fluorescence along the sidewalls, extending from the old pole (the previously established growth pole) that fades to a minimum at roughly mid-cell as it reaches the new pole (the pole formed at the last cell division) (Figure 1B, Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the microscopy images and quantification in Figure 1B and Figure 1\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:41:11.716892Z"
+    },
+    {
+      "id": "5218edc2-4420-4081-a34f-d6248b922482",
+      "content_id": "3b1d14b0-cccb-46ab-9979-e9f75d35abc4",
+      "claim_id": "C23",
+      "claim": "Three LDTs (ldtA, ldtB, ldtE) were identified from a FACS-based transposon screen as primarily responsible for FDAA incorporation.",
+      "claim_type": "EXPLICIT",
+      "source": "From this screen, we identified three LDTs (ldtA - MSMEG_3528, ldtB - MSMEG_4745, ldtE - MSMEG_0233) (Figure 1D) that appeared primarily responsible for FDAA incorporation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the screen results shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:41:11.716892Z"
+    },
+    {
+      "id": "cefec4e3-45e7-4d51-a131-a70d3ce24b3d",
+      "content_id": "3b1d14b0-cccb-46ab-9979-e9f75d35abc4",
+      "claim_id": "C24",
+      "claim": "Deleting ldtA, ldtB, and ldtE significantly reduced FDAA incorporation.",
+      "claim_type": "EXPLICIT",
+      "source": "Deleting these three LDTs significantly reduced FDAA incorporation and this defect in incorporation could be partially complemented with constitutive expression of LdtE alone (ldtE-mRFP, Figure 1\u2014figure supplement 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by flow cytometry data in Figure 1\u2014figure supplement 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:41:11.716892Z"
+    },
+    {
+      "id": "f8f09b8d-30c5-4e23-a659-b1d2c670138d",
+      "content_id": "3b1d14b0-cccb-46ab-9979-e9f75d35abc4",
+      "claim_id": "C25",
+      "claim": "FDAA incorporation and 3\u20133 crosslinking are both nearly abolished in \u0394LDT cells.",
+      "claim_type": "EXPLICIT",
+      "source": "FDAA incorporation and 3\u20133 crosslinking are both nearly abolished in \u0394LDT cells and can be partially restored by complementation with a single LDT (ldtE-mRFP; \u0394LDTcomp) (Figure 1E,F, Figure 1\u2014figure supplements 3B and 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by microscopy and LC-MS/MS data in the referenced figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:41:11.716892Z"
+    },
+    {
+      "id": "89fb8525-006f-4c22-b41d-719519e43ae4",
+      "content_id": "3b1d14b0-cccb-46ab-9979-e9f75d35abc4",
+      "claim_id": "C26",
+      "claim": "FDAA incorporation in Msm is primarily LDT-dependent.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, as might be the case in Bdellovibrio (Kuru et al., 2017), FDAA incorporation in Msm is primarily LDT-dependent.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the experimental data showing loss of FDAA incorporation in \u0394LDT cells.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:41:11.716892Z"
+    },
+    {
+      "id": "0ed1a1d2-f136-4682-be1c-b987dce703a4",
+      "content_id": "3b1d14b0-cccb-46ab-9979-e9f75d35abc4",
+      "claim_id": "C27",
+      "claim": "A subpopulation of \u0394LDT cells loses rod shape progressively over time, resulting in localized spherical blebs.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that a subpopulation of cells loses rod shape progressively over time, resulting in localized spherical blebs (Figure 2A \u2013 top row, Figure 2\u2014figure supplement 1A, Figure 2\u2014video 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by time-lapse microscopy shown in Figure 2A and supplementary figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:41:11.716892Z"
+    },
+    {
+      "id": "a719b35f-1556-45a6-9541-a52db9f17d6c",
+      "content_id": "3b1d14b0-cccb-46ab-9979-e9f75d35abc4",
+      "claim_id": "C28",
+      "claim": "Complemented \u0394LDT cells are able to maintain rod shape.",
+      "claim_type": "EXPLICIT",
+      "source": "Complemented cells are able to maintain rod shape (Figure 2\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by time-lapse microscopy in Figure 2\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:41:11.716892Z"
+    },
+    {
+      "id": "b18e2a8d-613e-4c8d-8901-d632cd8abcb6",
+      "content_id": "3b1d14b0-cccb-46ab-9979-e9f75d35abc4",
+      "claim_id": "C29",
+      "claim": "Switching \u0394LDT cells from iso- to high-osmolarity prevented bleb formation over time.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, switching cells from iso- to high- osmolarity prevented bleb formation over time (Figure 2A \u2013 bottom row, Figure 2\u2014video 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by time-lapse microscopy in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:41:11.716892Z"
+    },
+    {
+      "id": "24b49dbd-9362-4779-87c4-4421f190582b",
+      "content_id": "3b1d14b0-cccb-46ab-9979-e9f75d35abc4",
+      "claim_id": "C30",
+      "claim": "Blebs that formed in \u0394LDT cells retained stain, indicating a lack of new cell wall synthesis in the region.",
+      "claim_type": "EXPLICIT",
+      "source": "Blebs that formed in the \u0394LDT cells retained stain, indicating a lack of new cell wall synthesis in the region.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by pulse-chase labeling experiments shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:41:11.716892Z"
+    },
+    {
+      "id": "a02a9880-246b-4049-9e4f-c463f2b8d30c",
+      "content_id": "3b1d14b0-cccb-46ab-9979-e9f75d35abc4",
+      "claim_id": "C31",
+      "claim": "WT cells maintained rod shape over time at the stained portion of the bacillus.",
+      "claim_type": "EXPLICIT",
+      "source": "WT cells maintained rod shape over time at the stained portion of the bacillus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by pulse-chase labeling experiments shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:41:11.716892Z"
+    },
+    {
+      "id": "155afbfd-f012-4def-b802-9c18308bf90c",
+      "content_id": "3b1d14b0-cccb-46ab-9979-e9f75d35abc4",
+      "claim_id": "C32",
+      "claim": "3\u20133 crosslinks are required to counteract turgor pressure and maintain rod shape in Msm.",
+      "claim_type": "EXPLICIT",
+      "source": "Collectively, these results indicate that 3\u20133 crosslinks are required to counteract turgor pressure and maintain rod shape in Msm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the osmolarity experiments and bleb formation observations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:41:11.716892Z"
+    },
+    {
+      "id": "30c17fdf-0e0a-4c60-b6bc-77918dd748b5",
+      "content_id": "3b1d14b0-cccb-46ab-9979-e9f75d35abc4",
+      "claim_id": "C33",
+      "claim": "WT cells are generally stiffer than \u0394LDT cells as measured by atomic force microscopy.",
+      "claim_type": "EXPLICIT",
+      "source": "Generally, WT cells are stiffer than \u0394LDT cells (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by AFM measurements shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:41:11.716892Z"
+    },
+    {
+      "id": "7f8583a9-6b30-4de3-89d0-c320728803c3",
+      "content_id": "3b1d14b0-cccb-46ab-9979-e9f75d35abc4",
+      "claim_id": "C34",
+      "claim": "Stiffness drops in the area of blebs in \u0394LDT cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that stiffness drops in the area of blebs (Figure 2D, pink shaded).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by AFM measurements shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:41:11.716892Z"
+    },
+    {
+      "id": "451e1cf8-564d-403b-9437-3fe6199622c4",
+      "content_id": "3b1d14b0-cccb-46ab-9979-e9f75d35abc4",
+      "claim_id": "C35",
+      "claim": "The daughter which inherited the new pole from the previous round of division, and the oldest cell wall, consistently lost rod shape over time.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, the daughter which inherited the new pole from the previous round of division, and the oldest cell wall, consistently lost rod shape over time, while the old pole daughter maintained rod shape (Figure 2E, Figure 2\u2014figure supplement 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by time-lapse microscopy tracking cell lineages in Figure 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:41:11.716892Z"
+    },
+    {
+      "id": "3377d47b-2157-44fc-90e5-225fef14cc7f",
+      "content_id": "3b1d14b0-cccb-46ab-9979-e9f75d35abc4",
+      "claim_id": "C36",
+      "claim": "Blebs localized to the oldest cell wall in \u0394LDT cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, blebs localized to the oldest cell wall (Figure 2B), as visualized by pulse-chase labeling of the cell wall.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by pulse-chase labeling experiments shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:41:11.716892Z"
+    },
+    {
+      "id": "cbc3795a-0d39-40c4-ae26-153da7e1b5f9",
+      "content_id": "3b1d14b0-cccb-46ab-9979-e9f75d35abc4",
+      "claim_id": "C37",
+      "claim": "LDTs act locally to reinforce aging PG and to maintain rod shape in a subpopulation of Msm cells - specifically, new pole daughters.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these data suggest that LDTs act locally to reinforce aging PG and to maintain rod shape in a subpopulation of Msm cells - specifically, new pole daughters (Figure 2F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference drawn from the lineage tracking and bleb localization data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:41:11.716892Z"
+    },
+    {
+      "id": "9b3e0dc8-f850-47f6-8b96-e42a4178b258",
+      "content_id": "3b1d14b0-cccb-46ab-9979-e9f75d35abc4",
+      "claim_id": "C38",
+      "claim": "Mutants of two PBPs, pbpA and ponA2, were recovered at significantly lower frequencies in \u0394LDT cells compared to WT.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that mutants of two PBPs, pbpA (MSMEG_0031 c) and ponA2 (MSMEG_6201), were recovered at significantly lower frequencies in \u0394LDT cells (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by TnSeq data shown in Figure 3A and 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:41:11.716892Z"
+    },
+    {
+      "id": "7eb240d5-7ce7-4086-a40c-6f05b64ee0ce",
+      "content_id": "3b1d14b0-cccb-46ab-9979-e9f75d35abc4",
+      "claim_id": "C39",
+      "claim": "The transpeptidase (TP) activity of PonA1, which is non-essential in WT cells, becomes essential in \u0394LDT cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Likewise, using allele swapping (Kieser et al., 2015b) (Figure 3C, Figure 3\u2014figure supplement 1), a technique that tests the ability of various alleles to support viability, we found that the transpeptidase (TP) activity of PonA1, which is non-essential in WT cells (Kieser et al., 2015b), becomes essential in \u0394LDT cells (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by allele swapping experiments shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:41:11.716892Z"
+    },
+    {
+      "id": "5130b496-59b6-4718-92c9-283a7576ee06",
+      "content_id": "3b1d14b0-cccb-46ab-9979-e9f75d35abc4",
+      "claim_id": "C40",
+      "claim": "Cells that lack 3\u20133 crosslinks are more dependent on 4\u20133 crosslinking enzymes.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, cells that lack 3\u20133 crosslinks are more dependent on 4\u20133 crosslinking enzymes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the TnSeq and allele swapping data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:41:11.716892Z"
+    },
+    {
+      "id": "9fd0ddf7-59f1-45c7-bc99-5f6b96d00416",
+      "content_id": "3b1d14b0-cccb-46ab-9979-e9f75d35abc4",
+      "claim_id": "C41",
+      "claim": "PonA1-RFP localization was highest at the old and new poles, where new PG is inserted.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the distribution pattern of PonA1-RFP was highest at the old and new poles, where new PG is inserted (Figure 4A,B, Figure 4\u2014video 1, Figure 4\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by fluorescence microscopy shown in Figure 4A and 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:41:11.716892Z"
+    },
+    {
+      "id": "8d6d839d-6f0c-4ab5-a79b-b054b61773d4",
+      "content_id": "3b1d14b0-cccb-46ab-9979-e9f75d35abc4",
+      "claim_id": "C42",
+      "claim": "LdtE-mRFP localization is highest farther from the poles, more inward from the ends of the bacillus, at the sites of older PG.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared to PonA1-RFP, the LdtE-mRFP localization is highest farther from the poles, more inward from the ends of the bacillus (albeit in a similar gradient pattern), at the sites of older PG (Figure 4A,B, Figure 4\u2014video 2, Figure 4\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by fluorescence microscopy shown in Figure 4A and 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:41:11.716892Z"
+    },
+    {
+      "id": "2bc9fc87-88f2-40f0-941e-15866b0cb554",
+      "content_id": "3b1d14b0-cccb-46ab-9979-e9f75d35abc4",
+      "claim_id": "C43",
+      "claim": "Enzymes responsible for 4\u20133 and 3\u20133 crosslinks show distinctive subcellular localizations with respect to the site of new PG synthesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, enzymes responsible for 4\u20133 and 3\u20133 crosslinks show distinctive subcellular localizations with respect to the site of new PG synthesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the localization data of PonA1-RFP and LdtE-mRFP.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:41:11.716892Z"
+    },
+    {
+      "id": "e618ac68-cbb7-4d34-abb3-36e417ddaa8f",
+      "content_id": "3b1d14b0-cccb-46ab-9979-e9f75d35abc4",
+      "claim_id": "C44",
+      "claim": "DacB2 has both D,D-carboxypeptidase and D,D-endopeptidase activity on peptidoglycan substrates generated in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "We expressed and purified DacB2 and found that it, like AmpH, had both D,D-carboxypeptidase and D,D-endopeptidase activity on peptidoglycan substrates generated in vitro (Figure 4C, Figure 4\u2014figure supplement 1A\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by in vitro biochemical assays shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:41:11.716892Z"
+    },
+    {
+      "id": "49cae438-fff1-4a05-a227-4827e08fe760",
+      "content_id": "3b1d14b0-cccb-46ab-9979-e9f75d35abc4",
+      "claim_id": "C45",
+      "claim": "Induction of dacB2 CRISPRi knockdown led to smaller blebs in \u0394LDT cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Induction of the sgRNA and dCas9 by anhydro-tetracycline (aTc) led to smaller blebs (Figure 4\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by microscopy and quantification shown in Figure 4\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:41:11.716892Z"
+    },
+    {
+      "id": "5eb3dad4-7385-4c4b-90a5-91f1fe16fe6f",
+      "content_id": "3b1d14b0-cccb-46ab-9979-e9f75d35abc4",
+      "claim_id": "C46",
+      "claim": "DacB2-mRFP localized closer to LDT-mRFP, farther from the poles, at sites of older PG.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, DacB2-mRFP localized closer to LDT-mRFP, farther from the poles, at sites of older PG (Figure 4A,B, Figure 4\u2014video 3, Figure 4\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by fluorescence microscopy shown in Figure 4A and 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:41:11.716892Z"
+    },
+    {
+      "id": "d2535a16-e6aa-4115-80bc-27f325a2dc43",
+      "content_id": "3b1d14b0-cccb-46ab-9979-e9f75d35abc4",
+      "claim_id": "C47",
+      "claim": "Blebs are formed in \u0394LDT cells due to unchecked D,D-endopeptidase activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these data are consistent with a model in which blebs are formed in \u0394LDT cells due to unchecked D,D-endopeptidase activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the DacB2 localization and knockdown experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:41:11.716892Z"
+    },
+    {
+      "id": "47ad64b8-71b9-4dff-ba80-97ee3d0d414d",
+      "content_id": "3b1d14b0-cccb-46ab-9979-e9f75d35abc4",
+      "claim_id": "C48",
+      "claim": "There are additional D,D-endopeptidases in M. smegmatis besides DacB2.",
+      "claim_type": "EXPLICIT",
+      "source": "Given that bleb formation is not completely rescued by knockdown of dacB2, we speculate that there are additional D,D-endopeptidases in M. smegmatis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on the incomplete rescue of the bleb phenotype.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:41:11.716892Z"
+    },
+    {
+      "id": "864b29b8-a882-4103-bcda-f4e3d6149715",
+      "content_id": "3b1d14b0-cccb-46ab-9979-e9f75d35abc4",
+      "claim_id": "C49",
+      "claim": "Carbapenem \u03b2-lactams target both PBPs and LDTs.",
+      "claim_type": "EXPLICIT",
+      "source": "While Mtb can be killed by most non-carbapenem (N-C) \u03b2-lactams like amoxicillin, which largely target the PBPs, carbapenem \u03b2-lactams, which target both PBPs and LDTs (Kumar et al., 2017; Mainardi et al., 2007; Papp-Wallace et al., 2011) are also effective against Mtb (Diacon et al., 2016; Hugonnet et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:41:11.716892Z"
+    },
+    {
+      "id": "a2a38bf8-c087-4206-b521-b853f7cddf95",
+      "content_id": "3b1d14b0-cccb-46ab-9979-e9f75d35abc4",
+      "claim_id": "C50",
+      "claim": "The combination of amoxicillin and meropenem kills both Msm and Mtb faster than either drug alone.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that these drugs together kill both Msm and Mtb faster than either alone (Figure 5A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by luciferase-based killing assays shown in Figure 5A and 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:41:11.716892Z"
+    },
+    {
+      "id": "ee13e66d-0922-4d42-bfa6-0926decc31cb",
+      "content_id": "3b1d14b0-cccb-46ab-9979-e9f75d35abc4",
+      "claim_id": "C51",
+      "claim": "The combination of amoxicillin and meropenem exhibits synergism in minimal inhibitory concentration in Mtb but not against Msm.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, this combination exhibits synergism in minimal inhibitory concentration in Mtb but, not against Msm (where synergism is defined as \u03a3 Fractional Inhibitory Concentration <0.5 ('Synergism Testing: Broth Microdilution Checkerboard and Broth Macrodilution Materials and methods,' 2016), Figure 5B, Figure 5\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by MIC checkerboard assays shown in Figure 5\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:41:11.716892Z"
+    },
+    {
+      "id": "80a88e07-b1b7-4728-bd50-4576a7b6efbc",
+      "content_id": "3b1d14b0-cccb-46ab-9979-e9f75d35abc4",
+      "claim_id": "C52",
+      "claim": "The difference in synergism between Msm and Mtb may reflect a difference in LDT expression or essentiality between the two species.",
+      "claim_type": "EXPLICIT",
+      "source": "This may reflect a difference in LDT expression or essentiality between Msm and Mtb.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on the observed differences in drug synergy.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:41:11.716892Z"
+    },
+    {
+      "id": "a3b97a2e-5ebe-463b-b9cf-b43d8b7b3aa2",
+      "content_id": "3b1d14b0-cccb-46ab-9979-e9f75d35abc4",
+      "claim_id": "C53",
+      "claim": "FDAA incorporation in mycobacteria shows an unusual gradient pattern.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that in mycobacteria, FDAA incorporation is primarily LDT-dependent. FDAA incorporation in Msm shows an unusual gradient pattern (Botella et al., 2017), suggesting an asymmetric distribution of tetrapeptide substrate for the LDT-dependent exchange reaction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the FDAA incorporation patterns observed in Figure 1 and cited prior work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:41:11.716892Z"
+    },
+    {
+      "id": "25dafd75-f92f-4712-8928-5561eae32083",
+      "content_id": "3b1d14b0-cccb-46ab-9979-e9f75d35abc4",
+      "claim_id": "C54",
+      "claim": "Crosslinks catalyzed by LDTs are rare in model rod-shaped bacteria like E.coli and B. subtilis but are abundant in polar growing bacteria like mycobacteria, Agrobacterium tumefaciens and Sinorhizobium meliloti.",
+      "claim_type": "EXPLICIT",
+      "source": "Crosslinks catalyzed by LDTs are rare in model rod-shaped bacteria like E.coli and B. subtilis but, are abundant in polar growing bacteria like mycobacteria, Agrobacterium tumefaciens and Sinorhizobium meliloti (Brown et al., 2012; Cameron et al., 2015; Kumar et al., 2012; Lavollay et al., 2008; Pisabarro et al., 1985).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:41:11.716892Z"
+    },
+    {
+      "id": "cc608497-a670-4642-b3b9-1e4ffb611a2f",
+      "content_id": "3b1d14b0-cccb-46ab-9979-e9f75d35abc4",
+      "claim_id": "C55",
+      "claim": "Msm cells lacking 3\u20133 crosslinks cannot maintain rod shape at sites of aging cell wall.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we find that Msm cells lacking 3\u20133 crosslinks cannot maintain rod shape at sites of aging cell wall.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding supported by the bleb formation data in \u0394LDT cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:41:11.716892Z"
+    },
+    {
+      "id": "86a5ed0b-6314-432b-b0fb-f3ade1136993",
+      "content_id": "3b1d14b0-cccb-46ab-9979-e9f75d35abc4",
+      "claim_id": "C56",
+      "claim": "4\u20133 crosslinks made by PBPs appear able to maintain rod shape near the poles, the sites of newer cell wall.",
+      "claim_type": "EXPLICIT",
+      "source": "4\u20133 crosslinks made by PBPs appear able to maintain rod shape near the poles, the sites of newer cell wall (Figure 6A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference drawn from the observation that blebs form in older cell wall regions but not at the poles.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:41:11.716892Z"
+    },
+    {
+      "id": "266a8b17-883a-4a94-953d-a58e0aa9490a",
+      "content_id": "3b1d14b0-cccb-46ab-9979-e9f75d35abc4",
+      "claim_id": "C57",
+      "claim": "As older cell wall moves toward the middle of the cell, it loses structural stability and begins to bleb in \u0394LDT cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Over time, as older cell wall moves toward the middle of the cell, it loses structural stability, and begins to bleb.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by time-lapse microscopy and pulse-chase labeling experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:41:11.716892Z"
+    },
+    {
+      "id": "78db6bbb-46f0-404c-aa7c-5b88424c4fbc",
+      "content_id": "3b1d14b0-cccb-46ab-9979-e9f75d35abc4",
+      "claim_id": "C58",
+      "claim": "Cell wall processing must occur to de-stabilize older portions of the rod in \u0394LDT cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The gradual manner in which rod shape is lost in cells lacking 3\u20133 crosslinks suggests that cell wall processing must occur to de-stabilize this portion of the rod.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the gradual nature of bleb formation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:41:11.716892Z"
+    },
+    {
+      "id": "e9121554-6c21-4c5f-8e60-1e89635d7526",
+      "content_id": "3b1d14b0-cccb-46ab-9979-e9f75d35abc4",
+      "claim_id": "C59",
+      "claim": "DacB2, a D,D-endopeptidase/D,D-carboxypeptidase, localizes to sites of old cell wall.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this idea, we find that an enzyme that cleaves 4\u20133 crosslinks, the D,D-endopeptidase/D,D-carboxypeptidase DacB2, also localizes to sites of old cell wall and knockdown of this enzyme leads to smaller blebs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by fluorescence microscopy and CRISPRi knockdown experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:41:11.716892Z"
+    },
+    {
+      "id": "08e1d7f7-ee8e-4ac5-8cf0-e5f2cdec9c83",
+      "content_id": "3b1d14b0-cccb-46ab-9979-e9f75d35abc4",
+      "claim_id": "C60",
+      "claim": "The gradient localization patterns of PonA1, LdtE and DacB2 all have local minima at mid-cell closer to the new pole.",
+      "claim_type": "EXPLICIT",
+      "source": "Supporting this idea, we find that the gradient localization patterns of fluorescently tagged PonA1, LdtE and DacB2, (as well as FDAAs) all have local minima at mid-cell closer to the new pole- a location that correlates with the asymmetric site of division in mycobacteria (Aldridge et al., 2012; Santi et al., 2013; Eskandarian et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the localization data in Figure 4 and cited prior work on division site placement.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:41:11.716892Z"
+    },
+    {
+      "id": "ad055bfb-457c-478d-b298-d6f223577a60",
+      "content_id": "3b1d14b0-cccb-46ab-9979-e9f75d35abc4",
+      "claim_id": "C61",
+      "claim": "The lack of localization of PG synthesis enzymes and FDAAs at mid-cell suggests a lack of penta- and tetra- peptide substrates.",
+      "claim_type": "EXPLICIT",
+      "source": "The lack of localization of PG synthesis enzymes and FDAAs suggests a lack of penta- and tetra- peptide substrates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the localization patterns.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:41:11.716892Z"
+    },
+    {
+      "id": "e4995619-e565-4071-b093-d0eb93ec344e",
+      "content_id": "3b1d14b0-cccb-46ab-9979-e9f75d35abc4",
+      "claim_id": "C62",
+      "claim": "The region near mid-cell may be more abundantly crosslinked, as crosslinking utilizes peptide species.",
+      "claim_type": "EXPLICIT",
+      "source": "This implies that this region of the cell may be more abundantly crosslinked, as crosslinking utilizes these peptide species.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the lack of available peptide substrates.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:41:11.716892Z"
+    },
+    {
+      "id": "ef0b1148-ef28-4aaa-8086-efc020294cd4",
+      "content_id": "3b1d14b0-cccb-46ab-9979-e9f75d35abc4",
+      "claim_id": "C63",
+      "claim": "3\u20133 crosslinking may be a signal for septal placement.",
+      "claim_type": "EXPLICIT",
+      "source": "Could 3\u20133 crosslinking be a signal for septal placement?",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on the localization patterns and lack of known septal placement mechanisms.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:41:11.716892Z"
+    },
+    {
+      "id": "3c8173c6-d22a-43f9-a59c-ac1f7bcbdd40",
+      "content_id": "3b1d14b0-cccb-46ab-9979-e9f75d35abc4",
+      "claim_id": "C64",
+      "claim": "Mycobacteria are missing known molecular septal placement mechanisms like the Noc and the Min system.",
+      "claim_type": "EXPLICIT",
+      "source": "Mycobacteria are missing known molecular septal placement mechanisms like the Noc and the Min system (Hett and Rubin, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:41:11.716892Z"
+    },
+    {
+      "id": "12d8514b-604a-4468-bca7-febd46442433",
+      "content_id": "3b1d14b0-cccb-46ab-9979-e9f75d35abc4",
+      "claim_id": "C65",
+      "claim": "The major septal PG hydrolase is RipA, a D,L-endopeptidase which cleaves the bond between the second and third amino acid of PG side chains.",
+      "claim_type": "EXPLICIT",
+      "source": "The major septal PG hydrolase is RipA, a D,L-endopeptidase which cleaves the bond between the second and third amino acid of PG side chains, a substrate available on 3\u20133 crosslinked material (B\u00f6th et al., 2011; Vollmer et al., 2008b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:41:11.716892Z"
+    },
+    {
+      "id": "91e98c79-c68d-4213-8c2f-884e57937bae",
+      "content_id": "3b1d14b0-cccb-46ab-9979-e9f75d35abc4",
+      "claim_id": "C66",
+      "claim": "Atomic force microscopy revealed cell-envelope deformations formed at the pole of Msm travel to mid-cell through polar growth, marking the future site of division.",
+      "claim_type": "EXPLICIT",
+      "source": "Transmitting information from the tip to mid-cell through polar growth was recently described in mycobacteria: atomic force microscopy revealed cell-envelope deformations formed at the pole of Msm travel to mid-cell through polar growth, marking the future site of division (Eskandarian et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:41:11.716892Z"
+    },
+    {
+      "id": "81ba2c21-8114-466e-8150-540e8edc2698",
+      "content_id": "3b1d14b0-cccb-46ab-9979-e9f75d35abc4",
+      "claim_id": "C67",
+      "claim": "3\u20133 crosslinks found at aging cell wall could be important for localizing cell division machinery.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, it is intriguing to speculate that 3\u20133 crosslinks found at aging cell wall could be important for localizing cell division machinery.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on the localization patterns and division site placement.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:41:11.716892Z"
+    },
+    {
+      "id": "bb45be17-dd95-4e32-bdd9-c09416e4dd1b",
+      "content_id": "3b1d14b0-cccb-46ab-9979-e9f75d35abc4",
+      "claim_id": "C68",
+      "claim": "In well-studied rod-shaped bacteria like E.coli and B. subtilis, shape is maintained by MreB-directed PG synthesis along the lateral cell body.",
+      "claim_type": "EXPLICIT",
+      "source": "In well-studied rod-shaped bacteria like E.coli and B. subtilis, shape is maintained by MreB-directed PG synthesis along the lateral cell body (Garner et al., 2011; Hussain et al., 2018; Ursell et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:41:11.716892Z"
+    },
+    {
+      "id": "684978d1-e58a-4c29-9584-11b2e9f87558",
+      "content_id": "3b1d14b0-cccb-46ab-9979-e9f75d35abc4",
+      "claim_id": "C69",
+      "claim": "Mycobacteria maintain shape in the absence of an obvious MreB homolog, and in the absence of lateral cell wall elongation.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, mycobacteria maintain shape in the absence of an obvious MreB homolog, and in the absence of lateral cell wall elongation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about mycobacterial cell biology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:41:11.716892Z"
+    },
+    {
+      "id": "bfb91701-c6f1-48a1-83f1-d65e9fa75b9a",
+      "content_id": "3b1d14b0-cccb-46ab-9979-e9f75d35abc4",
+      "claim_id": "C70",
+      "claim": "In lateral-elongating bacteria, new and old cell wall are constantly intermingled during growth.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, in contrast to lateral-elongating bacteria, in which new and old cell wall are constantly intermingled during growth, polar growth segregates new and old cell wall (Figure 6B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is established knowledge about different growth modes, illustrated in Figure 6B.",
+      "evidence_type": "[\"KNOWLEDGE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:41:11.716892Z"
+    },
+    {
+      "id": "ec9690cd-a701-4eed-bc58-148af98061f9",
+      "content_id": "3b1d14b0-cccb-46ab-9979-e9f75d35abc4",
+      "claim_id": "C71",
+      "claim": "Polar growth segregates new and old cell wall in mycobacteria.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, in contrast to lateral-elongating bacteria, in which new and old cell wall are constantly intermingled during growth, polar growth segregates new and old cell wall (Figure 6B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by pulse-chase labeling experiments shown in Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:41:11.716892Z"
+    },
+    {
+      "id": "d8f29aa9-b941-4228-9cc8-74d41f7b073c",
+      "content_id": "3b1d14b0-cccb-46ab-9979-e9f75d35abc4",
+      "claim_id": "C72",
+      "claim": "Mycobacteria appear to utilize 3\u20133 crosslinks at asymmetrically distributed aging cell wall to provide stability along the lateral body.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that mycobacteria appear to utilize 3\u20133 crosslinks at asymmetrically distributed aging cell wall to provide stability along the lateral body, something that may not be required in the presence of MreB-directed PG synthesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the experimental findings about LDT function and localization.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:41:11.716892Z"
+    },
+    {
+      "id": "4390805c-cf20-4a33-94e8-2a7fe8f7284f",
+      "content_id": "3b1d14b0-cccb-46ab-9979-e9f75d35abc4",
+      "claim_id": "C73",
+      "claim": "The protein targets of two different classes of \u03b2-lactams are distributed differentially in a single cell and across the population.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that the protein targets of two different classes of \u03b2-lactams \u2013 enzymes which do very similar chemistry \u2013 PG crosslinking \u2013 are distributed differentially in a single cell and across the population.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the localization data of PBPs and LDTs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:41:11.716892Z"
+    },
+    {
+      "id": "4b51b4a8-8e13-4a45-89e4-d1a9534910c0",
+      "content_id": "3b1d14b0-cccb-46ab-9979-e9f75d35abc4",
+      "claim_id": "C74",
+      "claim": "In the absence of 3\u20133 crosslinks, 4\u20133 crosslinks become more important for cell viability.",
+      "claim_type": "EXPLICIT",
+      "source": "In the absence of 3\u20133 crosslinks, 4\u20133 crosslinks become more important for cell viability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the TnSeq and allele swapping data showing increased dependence on PBPs in \u0394LDT cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:41:11.716892Z"
+    },
+    {
+      "id": "a9550f13-5670-4d6a-9c31-7defd6fd1c10",
+      "content_id": "3b1d14b0-cccb-46ab-9979-e9f75d35abc4",
+      "claim_id": "C75",
+      "claim": "A drug combination which inhibits both PBPs and LDTs will work synergistically to more quickly kill Mtb.",
+      "claim_type": "EXPLICIT",
+      "source": "These data predict that a drug combination which inhibits both PBPs and LDTs will work synergistically to more quickly kill Mtb, a prediction we verified in vitro.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the drug killing assays shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:41:11.716892Z"
+    },
+    {
+      "id": "02ef6a48-7153-4e6c-9524-5abe5ff91a31",
+      "content_id": "3b1d14b0-cccb-46ab-9979-e9f75d35abc4",
+      "claim_id": "C76",
+      "claim": "Meropenem combined with amoxicillin/clavulanate resulted in early clearance of Mtb from patient sputum.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, meropenem combined with amoxicillin/clavulanate resulted in early clearance of Mtb from patient sputum (Diacon et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior clinical research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:41:11.716892Z"
+    },
+    {
+      "id": "ee01a8bb-c96c-41fe-98b8-c76365d57bac",
+      "content_id": "3b1d14b0-cccb-46ab-9979-e9f75d35abc4",
+      "claim_id": "C77",
+      "claim": "The combination of meropenem and amoxicillin might be key to accelerated killing of Mtb.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, the combination might be key to accelerated killing of Mtb (Gonzalo and Drobniewski, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:41:11.716892Z"
+    },
+    {
+      "id": "9af89baf-2ea0-42a5-b1be-8ddc445cd2be",
+      "content_id": "3b1d14b0-cccb-46ab-9979-e9f75d35abc4",
+      "claim_id": "C78",
+      "claim": "Whole genome sequencing verified all six LDT gene deletions in the \u0394LDT strain.",
+      "claim_type": "EXPLICIT",
+      "source": "Whole genome sequencing verified all six deletions and did not detect crossover events or chromosomal duplications (see supplemental methods).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by whole genome sequencing data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:41:11.716892Z"
+    },
+    {
+      "id": "1d156bdb-98f7-45ba-9d0d-d194f71c4bd1",
+      "content_id": "3b1d14b0-cccb-46ab-9979-e9f75d35abc4",
+      "claim_id": "C79",
+      "claim": "LDTs have previously been shown to exchange non-canonical D-amino acids onto PG tetrapeptides in Vibrio cholera.",
+      "claim_type": "EXPLICIT",
+      "source": "LDTs have previously been shown to exchange non-canonical D-amino acids onto PG tetrapeptides in Vibrio cholera (Cava et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:41:11.716892Z"
+    },
+    {
+      "id": "6a562796-37f8-4a49-91a0-c37aabc6ba9b",
+      "content_id": "3b1d14b0-cccb-46ab-9979-e9f75d35abc4",
+      "claim_id": "C80",
+      "claim": "Deletion of a subset of LDTs in Msm produces morphologic changes.",
+      "claim_type": "EXPLICIT",
+      "source": "As deletion of a subset of LDTs in Msm produces morphologic changes (Sanders et al., 2014), we visualized \u0394LDT cells by time-lapse microscopy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:41:11.716892Z"
+    },
+    {
+      "id": "58b6f40e-4457-44c6-8c7f-c7111f881926",
+      "content_id": "3b1d14b0-cccb-46ab-9979-e9f75d35abc4",
+      "claim_id": "C81",
+      "claim": "High osmolarity protects \u0394LDT cells against forming blebs.",
+      "claim_type": "EXPLICIT",
+      "source": "If the first hypothesis were true, high osmolarity should protect cells against forming blebs. Indeed, switching cells from iso- to high- osmolarity prevented bleb formation over time (Figure 2A \u2013 bottom row, Figure 2\u2014video 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by time-lapse microscopy experiments shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:41:11.716892Z"
+    },
+    {
+      "id": "5c4159ec-0f25-4a86-8692-df95e3316703",
+      "content_id": "3b1d14b0-cccb-46ab-9979-e9f75d35abc4",
+      "claim_id": "C82",
+      "claim": "DacB2 was identified by homology to the E. coli protein AmpH.",
+      "claim_type": "EXPLICIT",
+      "source": "By homology to the E. coli protein AmpH, an enzyme with both D,D- carboxy- and endopeptidase activity (Gonz\u00e1lez-Leiza et al., 2011), we identified DacB2 (MSMEG_2433), a protein previously shown to have D,D-carboxypeptidase activity in Msm (Bansal et al., 2015), as a candidate to also harbor D,D-endopeptidase capability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by bioinformatic analysis using HHPRED and citations to prior research.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:41:11.716892Z"
+    },
+    {
+      "id": "867552b8-22b7-40d1-a458-7724982eec21",
+      "content_id": "3b1d14b0-cccb-46ab-9979-e9f75d35abc4",
+      "claim_id": "C83",
+      "claim": "DacB2 has D,D-carboxypeptidase activity in Msm.",
+      "claim_type": "EXPLICIT",
+      "source": "By homology to the E. coli protein AmpH, an enzyme with both D,D- carboxy- and endopeptidase activity (Gonz\u00e1lez-Leiza et al., 2011), we identified DacB2 (MSMEG_2433), a protein previously shown to have D,D-carboxypeptidase activity in Msm (Bansal et al., 2015), as a candidate to also harbor D,D-endopeptidase capability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:41:11.716892Z"
+    },
+    {
+      "id": "6cac53a1-7e8d-4a06-9018-faacc0b9dc58",
+      "content_id": "3b1d14b0-cccb-46ab-9979-e9f75d35abc4",
+      "claim_id": "C84",
+      "claim": "Knockdown of dacB2 expression in \u0394LDT cells led to smaller blebs.",
+      "claim_type": "EXPLICIT",
+      "source": "We used a recently developed CRISPRi system for mycobacteria to knockdown dacB2 expression in \u0394LDT cells (Rock et al., 2017). Induction of the sgRNA and dCas9 by anhydro-tetracycline (aTc) led to smaller blebs (Figure 4\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by CRISPRi experiments and microscopy shown in Figure 4\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:41:11.716892Z"
+    },
+    {
+      "id": "b2eef6df-0e67-47b8-b8dd-62aa812a90e5",
+      "content_id": "3b1d14b0-cccb-46ab-9979-e9f75d35abc4",
+      "claim_id": "C85",
+      "claim": "Previously published Mtb Tnseq data suggests that LDTs may be essential in the pathogen.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, while we could create a strain of Msm lacking all LDTs, previously published Mtb Tnseq data suggests that LDTs may be essential in the pathogen (Kieser et al., 2015a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior TnSeq data.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:41:11.716892Z"
+    },
+    {
+      "id": "6e6fd639-ac35-4cda-b6b7-b9411e63f4db",
+      "content_id": "3b1d14b0-cccb-46ab-9979-e9f75d35abc4",
+      "claim_id": "C86",
+      "claim": "Amoxicillin and meropenem together kill both Msm and Mtb faster than either alone.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that these drugs together kill both Msm and Mtb faster than either alone (Figure 5A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by luciferase-based killing assays shown in Figure 5A and 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:41:11.716892Z"
+    },
+    {
+      "id": "d01a98b3-180d-43f4-bb9b-725ae6ea556e",
+      "content_id": "3b1d14b0-cccb-46ab-9979-e9f75d35abc4",
+      "claim_id": "C87",
+      "claim": "The combination of amoxicillin and meropenem exhibits synergism in minimal inhibitory concentration in Mtb.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, this combination exhibits synergism in minimal inhibitory concentration in Mtb but, not against Msm (where synergism is defined as \u03a3 Fractional Inhibitory Concentration <0.5 ('Synergism Testing: Broth Microdilution Checkerboard and Broth Macrodilution Materials and methods,' 2016), Figure 5B, Figure 5\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by MIC checkerboard assays shown in Figure 5\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:41:11.716892Z"
+    },
+    {
+      "id": "935d2b36-1012-4329-817c-915d6b2018eb",
+      "content_id": "3b1d14b0-cccb-46ab-9979-e9f75d35abc4",
+      "claim_id": "C88",
+      "claim": "The combination of amoxicillin and meropenem does not exhibit synergism in minimal inhibitory concentration in Msm.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, this combination exhibits synergism in minimal inhibitory concentration in Mtb but, not against Msm (where synergism is defined as \u03a3 Fractional Inhibitory Concentration <0.5 ('Synergism Testing: Broth Microdilution Checkerboard and Broth Macrodilution Materials and methods,' 2016), Figure 5B, Figure 5\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by MIC checkerboard assays shown in Figure 5\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:41:11.716892Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "318b3a1f-c4b5-4287-bc74-1093395c7edf",
+      "content_id": "3b1d14b0-cccb-46ab-9979-e9f75d35abc4",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Mycobacteria differ fundamentally from model bacteria (E. coli and B. subtilis) in cell wall synthesis and growth mode. While model bacteria use MreB-directed lateral wall synthesis with predominantly 4-3 crosslinks (>90% by PBPs), mycobacteria lack MreB, grow by polar elongation, and have abundant 3-3 crosslinks (\u226560% by LDTs). Polar growth segregates new and old cell wall, unlike the intermingled pattern in lateral-elongating bacteria.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C19, C54, C68-C71 establish well-documented differences between mycobacterial and model bacterial cell wall biology through citations to prior research and established knowledge. The contrasts in growth mode, enzyme distribution, and crosslink abundance are consistently supported across multiple independent studies.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:41:11.716892Z"
+    },
+    {
+      "id": "3ad9e062-2a56-4d59-90a0-354d4ef4765b",
+      "content_id": "3b1d14b0-cccb-46ab-9979-e9f75d35abc4",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "FDAA incorporation in M. smegmatis shows an unusual gradient pattern from old to new pole and is primarily LDT-dependent. A FACS-based transposon screen identified three LDTs (ldtA, ldtB, ldtE) responsible for FDAA incorporation. Deletion of all six LDTs (\u0394LDT strain, verified by whole genome sequencing) nearly abolished both FDAA incorporation and 3-3 crosslinking, with partial restoration by complementation with ldtE.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21-C26, C53, C78-C79 are well-supported by microscopy (Figure 1B), FACS screening data (Figure 1D), flow cytometry (Figure 1\u2014figure supplement 3), LC-MS/MS analysis (Figure 1\u2014figure supplement 4), and whole genome sequencing verification. The gradient pattern is reproducibly observed and the genetic characterization is thorough.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:41:11.716892Z"
+    },
+    {
+      "id": "6619cc71-8b75-417b-bb50-a6d9c6b21ba1",
+      "content_id": "3b1d14b0-cccb-46ab-9979-e9f75d35abc4",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "\u0394LDT cells progressively lose rod shape at sites of aging cell wall, forming localized spherical blebs that are prevented by high osmolarity. Blebs localize to the oldest cell wall (inherited by new pole daughters), lack new cell wall synthesis, and correlate with reduced cell stiffness measured by AFM. This demonstrates that 3-3 crosslinks are required to counteract turgor pressure and maintain rod shape specifically at aging cell wall, while 4-3 crosslinks maintain shape at newer cell wall near poles.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C37, C55-C57, C80-C81 are strongly supported by time-lapse microscopy (Figure 2A, biological duplicate), pulse-chase labeling (Figure 2B, biological triplicate), AFM measurements (Figure 2C-D, two independent experiments), and lineage tracking (Figure 2E). The osmolarity rescue experiment provides direct evidence for turgor-related defects. The phenotype is specific, reproducible, and mechanistically interpretable.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:41:11.716892Z"
+    },
+    {
+      "id": "1506fbad-ccc2-41af-a820-0c06994176ad",
+      "content_id": "3b1d14b0-cccb-46ab-9979-e9f75d35abc4",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "In the absence of LDTs, cells become hypersensitive to PBP inactivation. TnSeq analysis showed that pbpA and ponA2 mutants were recovered at significantly lower frequencies in \u0394LDT cells. Allele swapping experiments demonstrated that the transpeptidase activity of PonA1, non-essential in WT, becomes essential in \u0394LDT cells. This indicates that 4-3 crosslinks become more important for viability when 3-3 crosslinks are absent.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38-C40, C5, C74 are supported by TnSeq data (Figure 3A-B) and allele swapping experiments (Figure 3D). However, the allele swapping was performed only once (noted in methods), which is a limitation. The TnSeq provides genome-wide support for the conclusion, and the genetic logic is sound, but additional replicates of the allele swapping would strengthen confidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:41:11.716892Z"
+    },
+    {
+      "id": "84e18e4a-e9b7-47b5-9e7a-886a9b5cdb0c",
+      "content_id": "3b1d14b0-cccb-46ab-9979-e9f75d35abc4",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "PBPs and LDTs show distinctive subcellular localizations reflecting cell wall age. PonA1-RFP localizes highest at old and new poles (sites of new PG insertion), while LdtE-mRFP localizes farther from poles at sites of older PG. This differential distribution creates a non-uniform distribution of 4-3 and 3-3 crosslinks in single cells due to asymmetric polar growth.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41-C43, C4, C73 are supported by fluorescence microscopy (Figure 4A-B, biological duplicate). The localization patterns are clear and consistent with the model of age-dependent crosslink distribution. However, only one biological replicate is shown in the quantification (Figure 4B), which is a limitation. The patterns are visually compelling and mechanistically coherent with other findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:41:11.716892Z"
+    },
+    {
+      "id": "a9f418e2-ed33-44c6-9efd-ee005498a7f2",
+      "content_id": "3b1d14b0-cccb-46ab-9979-e9f75d35abc4",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "DacB2, identified by homology to E. coli AmpH, has both D,D-carboxypeptidase and D,D-endopeptidase activity in vitro. DacB2-mRFP localizes to sites of old cell wall (similar to LdtE), and CRISPRi knockdown of dacB2 in \u0394LDT cells led to smaller blebs. This supports a model where blebs form due to unchecked D,D-endopeptidase activity cleaving 4-3 crosslinks in aging cell wall lacking 3-3 crosslinks.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44-C47, C59, C82-C84 are supported by in vitro biochemical assays (Figure 4C, technical duplicate), localization data (Figure 4A-B), and CRISPRi experiments (Figure 4\u2014figure supplement 3, biological duplicate). The incomplete rescue of blebs (C48) suggests additional endopeptidases exist, which is appropriately noted as speculation. The biochemical characterization is solid, though only technical replicates are reported.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:41:11.716892Z"
+    },
+    {
+      "id": "e38b67f3-9567-40e1-8f1f-3200af538713",
+      "content_id": "3b1d14b0-cccb-46ab-9979-e9f75d35abc4",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "There are likely additional D,D-endopeptidases in M. smegmatis besides DacB2.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C48 is explicitly labeled as speculation by the authors, based on incomplete rescue of the bleb phenotype by dacB2 knockdown. While this is a reasonable inference, it remains unproven and requires identification of additional enzymes.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:41:11.716892Z"
+    },
+    {
+      "id": "275b5031-a68d-4ccf-9ccf-3721a8616b9d",
+      "content_id": "3b1d14b0-cccb-46ab-9979-e9f75d35abc4",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "PonA1, LdtE, DacB2, and FDAAs all show local minima at mid-cell closer to the new pole, correlating with the asymmetric division site. The lack of enzyme localization and FDAA incorporation suggests depletion of penta- and tetrapeptide substrates, implying this region may be more abundantly crosslinked.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C60-C62 are supported by localization data (Figure 4) and cited prior work on division site placement. The inference about substrate depletion and increased crosslinking (C61-C62) is logical but indirect. The correlation with division site is interesting but the mechanistic connection remains speculative.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:41:11.716892Z"
+    },
+    {
+      "id": "07ab7853-d60a-48d9-8e8d-a3f67b9e24ee",
+      "content_id": "3b1d14b0-cccb-46ab-9979-e9f75d35abc4",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "3-3 crosslinks might serve as a signal for septal placement in mycobacteria, which lack known septal placement mechanisms (Noc and Min systems). The major septal hydrolase RipA cleaves substrates available on 3-3 crosslinked material, and cell-envelope deformations travel from pole to mid-cell through polar growth.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C63-C67 are explicitly speculative (C63, C67) and rely on correlations and prior work (C64-C66). While the hypothesis is intriguing and mechanistically plausible, no direct experimental evidence is provided linking 3-3 crosslinks to division site determination. This represents an interesting direction for future work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:41:11.716892Z"
+    },
+    {
+      "id": "984d0fae-094f-4d60-a2d0-adac7e01f9f1",
+      "content_id": "3b1d14b0-cccb-46ab-9979-e9f75d35abc4",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Mycobacteria utilize 3-3 crosslinks at asymmetrically distributed aging cell wall to provide lateral body stability, a function that may not be required in bacteria with MreB-directed PG synthesis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C72 is an inference well-supported by the collective experimental findings (bleb formation in \u0394LDT, localization patterns, mechanical measurements). The comparison to MreB-containing bacteria is logical given the fundamental differences in growth mode and the specific requirement for 3-3 crosslinks at aging cell wall.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:41:11.716892Z"
+    },
+    {
+      "id": "961d27e5-e9f3-4e09-b182-917829005ff0",
+      "content_id": "3b1d14b0-cccb-46ab-9979-e9f75d35abc4",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Combining drugs targeting both PBPs (amoxicillin) and LDTs (meropenem) kills M. tuberculosis faster than either drug alone, with synergism in MIC observed in Mtb but not Msm. This validates the prediction that simultaneous inhibition of both crosslinking pathways would be therapeutically effective, consistent with prior clinical observations of early sputum clearance with this combination.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C20, C49-C51, C6, C75-C77, C85-C88 are supported by luciferase-based killing assays (Figure 5A-B, Mtb in biological and technical triplicate) and MIC determinations (Figure 5\u2014figure supplement 2). The synergy in Mtb but not Msm (C51, C87-C88) may reflect species differences in LDT essentiality (C52, C85). The connection to prior clinical data (C76-C77) strengthens translational relevance. The experimental design is appropriate and results are reproducible.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:41:11.716892Z"
+    },
+    {
+      "id": "5ac362c5-5e34-4808-a4b5-b32f2a4d4f9a",
+      "content_id": "3b1d14b0-cccb-46ab-9979-e9f75d35abc4",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The difference in drug synergism between Msm and Mtb may reflect differences in LDT expression or essentiality between the two species.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C52 is speculation based on observed differences in drug synergy (C51, C87-C88) and prior TnSeq data suggesting LDT essentiality in Mtb (C85). While plausible, this remains unproven and would require direct comparative studies of LDT expression and function in both species.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:41:11.716892Z"
+    },
+    {
+      "id": "9e69e6e5-3261-4a4a-ac4b-e99b66a9fc94",
+      "content_id": "3b1d14b0-cccb-46ab-9979-e9f75d35abc4",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Cell wall processing must occur to destabilize older portions of the rod in \u0394LDT cells, as evidenced by the gradual manner of rod shape loss.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C58 is a reasonable inference from the time-lapse data showing progressive bleb formation (C27, C57). The identification of DacB2 as a D,D-endopeptidase that localizes to old cell wall and whose knockdown reduces blebs (C44-C47) provides direct support for this processing model.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:41:11.716892Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "3a44794f-2575-4736-8c04-9772b710d132",
+      "result_id": "318b3a1f-c4b5-4287-bc74-1093395c7edf"
+    },
+    {
+      "claim_id": "0f854861-c152-436c-af80-e2476d5fc0c0",
+      "result_id": "318b3a1f-c4b5-4287-bc74-1093395c7edf"
+    },
+    {
+      "claim_id": "d22e491b-6966-4433-b15a-d3236f415021",
+      "result_id": "318b3a1f-c4b5-4287-bc74-1093395c7edf"
+    },
+    {
+      "claim_id": "6ab7bce4-4a3b-4336-a49b-da757ab06ccb",
+      "result_id": "318b3a1f-c4b5-4287-bc74-1093395c7edf"
+    },
+    {
+      "claim_id": "b8d6072b-7d39-4156-b6e3-3d73528926ca",
+      "result_id": "318b3a1f-c4b5-4287-bc74-1093395c7edf"
+    },
+    {
+      "claim_id": "30881751-c612-43e5-a400-43c7e55dfb05",
+      "result_id": "318b3a1f-c4b5-4287-bc74-1093395c7edf"
+    },
+    {
+      "claim_id": "14e2ddc7-9a37-4abf-9d1e-132b9e31e2aa",
+      "result_id": "318b3a1f-c4b5-4287-bc74-1093395c7edf"
+    },
+    {
+      "claim_id": "902c1430-2d35-4d12-a21c-f3f748d4e326",
+      "result_id": "318b3a1f-c4b5-4287-bc74-1093395c7edf"
+    },
+    {
+      "claim_id": "21c554d5-155c-41d5-be2d-77c6c747c6d7",
+      "result_id": "318b3a1f-c4b5-4287-bc74-1093395c7edf"
+    },
+    {
+      "claim_id": "6e2cc6e0-a29b-413f-93cd-9faa51959f3c",
+      "result_id": "318b3a1f-c4b5-4287-bc74-1093395c7edf"
+    },
+    {
+      "claim_id": "40dd3943-fae3-46a2-8cd5-f06f848a5999",
+      "result_id": "318b3a1f-c4b5-4287-bc74-1093395c7edf"
+    },
+    {
+      "claim_id": "22c27f65-af3e-4a98-bd83-fd19d823ba59",
+      "result_id": "318b3a1f-c4b5-4287-bc74-1093395c7edf"
+    },
+    {
+      "claim_id": "3451f6da-aade-4329-bb05-13a934554359",
+      "result_id": "318b3a1f-c4b5-4287-bc74-1093395c7edf"
+    },
+    {
+      "claim_id": "32b75c6e-2912-489a-a270-357a1075ee8c",
+      "result_id": "318b3a1f-c4b5-4287-bc74-1093395c7edf"
+    },
+    {
+      "claim_id": "b6971c98-e034-4dd9-8b8e-22518860861d",
+      "result_id": "318b3a1f-c4b5-4287-bc74-1093395c7edf"
+    },
+    {
+      "claim_id": "bb45be17-dd95-4e32-bdd9-c09416e4dd1b",
+      "result_id": "318b3a1f-c4b5-4287-bc74-1093395c7edf"
+    },
+    {
+      "claim_id": "684978d1-e58a-4c29-9584-11b2e9f87558",
+      "result_id": "318b3a1f-c4b5-4287-bc74-1093395c7edf"
+    },
+    {
+      "claim_id": "bfb91701-c6f1-48a1-83f1-d65e9fa75b9a",
+      "result_id": "318b3a1f-c4b5-4287-bc74-1093395c7edf"
+    },
+    {
+      "claim_id": "ec9690cd-a701-4eed-bc58-148af98061f9",
+      "result_id": "318b3a1f-c4b5-4287-bc74-1093395c7edf"
+    },
+    {
+      "claim_id": "25dafd75-f92f-4712-8928-5561eae32083",
+      "result_id": "318b3a1f-c4b5-4287-bc74-1093395c7edf"
+    },
+    {
+      "claim_id": "92b35264-6ca3-4e6f-9882-9cb3582288ec",
+      "result_id": "3ad9e062-2a56-4d59-90a0-354d4ef4765b"
+    },
+    {
+      "claim_id": "21c1fd24-6255-425d-bb2b-81c8a8531fc1",
+      "result_id": "3ad9e062-2a56-4d59-90a0-354d4ef4765b"
+    },
+    {
+      "claim_id": "5218edc2-4420-4081-a34f-d6248b922482",
+      "result_id": "3ad9e062-2a56-4d59-90a0-354d4ef4765b"
+    },
+    {
+      "claim_id": "cefec4e3-45e7-4d51-a131-a70d3ce24b3d",
+      "result_id": "3ad9e062-2a56-4d59-90a0-354d4ef4765b"
+    },
+    {
+      "claim_id": "f8f09b8d-30c5-4e23-a659-b1d2c670138d",
+      "result_id": "3ad9e062-2a56-4d59-90a0-354d4ef4765b"
+    },
+    {
+      "claim_id": "89fb8525-006f-4c22-b41d-719519e43ae4",
+      "result_id": "3ad9e062-2a56-4d59-90a0-354d4ef4765b"
+    },
+    {
+      "claim_id": "a3b97a2e-5ebe-463b-b9cf-b43d8b7b3aa2",
+      "result_id": "3ad9e062-2a56-4d59-90a0-354d4ef4765b"
+    },
+    {
+      "claim_id": "9af89baf-2ea0-42a5-b1be-8ddc445cd2be",
+      "result_id": "3ad9e062-2a56-4d59-90a0-354d4ef4765b"
+    },
+    {
+      "claim_id": "1d156bdb-98f7-45ba-9d0d-d194f71c4bd1",
+      "result_id": "3ad9e062-2a56-4d59-90a0-354d4ef4765b"
+    },
+    {
+      "claim_id": "0ed1a1d2-f136-4682-be1c-b987dce703a4",
+      "result_id": "6619cc71-8b75-417b-bb50-a6d9c6b21ba1"
+    },
+    {
+      "claim_id": "a719b35f-1556-45a6-9541-a52db9f17d6c",
+      "result_id": "6619cc71-8b75-417b-bb50-a6d9c6b21ba1"
+    },
+    {
+      "claim_id": "b18e2a8d-613e-4c8d-8901-d632cd8abcb6",
+      "result_id": "6619cc71-8b75-417b-bb50-a6d9c6b21ba1"
+    },
+    {
+      "claim_id": "24b49dbd-9362-4779-87c4-4421f190582b",
+      "result_id": "6619cc71-8b75-417b-bb50-a6d9c6b21ba1"
+    },
+    {
+      "claim_id": "a02a9880-246b-4049-9e4f-c463f2b8d30c",
+      "result_id": "6619cc71-8b75-417b-bb50-a6d9c6b21ba1"
+    },
+    {
+      "claim_id": "155afbfd-f012-4def-b802-9c18308bf90c",
+      "result_id": "6619cc71-8b75-417b-bb50-a6d9c6b21ba1"
+    },
+    {
+      "claim_id": "30c17fdf-0e0a-4c60-b6bc-77918dd748b5",
+      "result_id": "6619cc71-8b75-417b-bb50-a6d9c6b21ba1"
+    },
+    {
+      "claim_id": "7f8583a9-6b30-4de3-89d0-c320728803c3",
+      "result_id": "6619cc71-8b75-417b-bb50-a6d9c6b21ba1"
+    },
+    {
+      "claim_id": "451e1cf8-564d-403b-9437-3fe6199622c4",
+      "result_id": "6619cc71-8b75-417b-bb50-a6d9c6b21ba1"
+    },
+    {
+      "claim_id": "3377d47b-2157-44fc-90e5-225fef14cc7f",
+      "result_id": "6619cc71-8b75-417b-bb50-a6d9c6b21ba1"
+    },
+    {
+      "claim_id": "cbc3795a-0d39-40c4-ae26-153da7e1b5f9",
+      "result_id": "6619cc71-8b75-417b-bb50-a6d9c6b21ba1"
+    },
+    {
+      "claim_id": "cc608497-a670-4642-b3b9-1e4ffb611a2f",
+      "result_id": "6619cc71-8b75-417b-bb50-a6d9c6b21ba1"
+    },
+    {
+      "claim_id": "86a5ed0b-6314-432b-b0fb-f3ade1136993",
+      "result_id": "6619cc71-8b75-417b-bb50-a6d9c6b21ba1"
+    },
+    {
+      "claim_id": "266a8b17-883a-4a94-953d-a58e0aa9490a",
+      "result_id": "6619cc71-8b75-417b-bb50-a6d9c6b21ba1"
+    },
+    {
+      "claim_id": "6a562796-37f8-4a49-91a0-c37aabc6ba9b",
+      "result_id": "6619cc71-8b75-417b-bb50-a6d9c6b21ba1"
+    },
+    {
+      "claim_id": "58b6f40e-4457-44c6-8c7f-c7111f881926",
+      "result_id": "6619cc71-8b75-417b-bb50-a6d9c6b21ba1"
+    },
+    {
+      "claim_id": "9b3e0dc8-f850-47f6-8b96-e42a4178b258",
+      "result_id": "1506fbad-ccc2-41af-a820-0c06994176ad"
+    },
+    {
+      "claim_id": "7eb240d5-7ce7-4086-a40c-6f05b64ee0ce",
+      "result_id": "1506fbad-ccc2-41af-a820-0c06994176ad"
+    },
+    {
+      "claim_id": "5130b496-59b6-4718-92c9-283a7576ee06",
+      "result_id": "1506fbad-ccc2-41af-a820-0c06994176ad"
+    },
+    {
+      "claim_id": "2f26634f-f56c-4aed-9e8b-6574e7d2817c",
+      "result_id": "1506fbad-ccc2-41af-a820-0c06994176ad"
+    },
+    {
+      "claim_id": "4b51b4a8-8e13-4a45-89e4-d1a9534910c0",
+      "result_id": "1506fbad-ccc2-41af-a820-0c06994176ad"
+    },
+    {
+      "claim_id": "9fd0ddf7-59f1-45c7-bc99-5f6b96d00416",
+      "result_id": "84e18e4a-e9b7-47b5-9e7a-886a9b5cdb0c"
+    },
+    {
+      "claim_id": "8d6d839d-6f0c-4ab5-a79b-b054b61773d4",
+      "result_id": "84e18e4a-e9b7-47b5-9e7a-886a9b5cdb0c"
+    },
+    {
+      "claim_id": "2bc9fc87-88f2-40f0-941e-15866b0cb554",
+      "result_id": "84e18e4a-e9b7-47b5-9e7a-886a9b5cdb0c"
+    },
+    {
+      "claim_id": "f6d76ee3-8868-4681-9b46-2c6cdb73b7a3",
+      "result_id": "84e18e4a-e9b7-47b5-9e7a-886a9b5cdb0c"
+    },
+    {
+      "claim_id": "4390805c-cf20-4a33-94e8-2a7fe8f7284f",
+      "result_id": "84e18e4a-e9b7-47b5-9e7a-886a9b5cdb0c"
+    },
+    {
+      "claim_id": "e618ac68-cbb7-4d34-abb3-36e417ddaa8f",
+      "result_id": "a9f418e2-ed33-44c6-9efd-ee005498a7f2"
+    },
+    {
+      "claim_id": "49cae438-fff1-4a05-a227-4827e08fe760",
+      "result_id": "a9f418e2-ed33-44c6-9efd-ee005498a7f2"
+    },
+    {
+      "claim_id": "5eb3dad4-7385-4c4b-90a5-91f1fe16fe6f",
+      "result_id": "a9f418e2-ed33-44c6-9efd-ee005498a7f2"
+    },
+    {
+      "claim_id": "d2535a16-e6aa-4115-80bc-27f325a2dc43",
+      "result_id": "a9f418e2-ed33-44c6-9efd-ee005498a7f2"
+    },
+    {
+      "claim_id": "e9121554-6c21-4c5f-8e60-1e89635d7526",
+      "result_id": "a9f418e2-ed33-44c6-9efd-ee005498a7f2"
+    },
+    {
+      "claim_id": "5c4159ec-0f25-4a86-8692-df95e3316703",
+      "result_id": "a9f418e2-ed33-44c6-9efd-ee005498a7f2"
+    },
+    {
+      "claim_id": "867552b8-22b7-40d1-a458-7724982eec21",
+      "result_id": "a9f418e2-ed33-44c6-9efd-ee005498a7f2"
+    },
+    {
+      "claim_id": "6cac53a1-7e8d-4a06-9018-faacc0b9dc58",
+      "result_id": "a9f418e2-ed33-44c6-9efd-ee005498a7f2"
+    },
+    {
+      "claim_id": "47ad64b8-71b9-4dff-ba80-97ee3d0d414d",
+      "result_id": "e38b67f3-9567-40e1-8f1f-3200af538713"
+    },
+    {
+      "claim_id": "08e1d7f7-ee8e-4ac5-8cf0-e5f2cdec9c83",
+      "result_id": "275b5031-a68d-4ccf-9ccf-3721a8616b9d"
+    },
+    {
+      "claim_id": "ad055bfb-457c-478d-b298-d6f223577a60",
+      "result_id": "275b5031-a68d-4ccf-9ccf-3721a8616b9d"
+    },
+    {
+      "claim_id": "e4995619-e565-4071-b093-d0eb93ec344e",
+      "result_id": "275b5031-a68d-4ccf-9ccf-3721a8616b9d"
+    },
+    {
+      "claim_id": "ef0b1148-ef28-4aaa-8086-efc020294cd4",
+      "result_id": "07ab7853-d60a-48d9-8e8d-a3f67b9e24ee"
+    },
+    {
+      "claim_id": "3c8173c6-d22a-43f9-a59c-ac1f7bcbdd40",
+      "result_id": "07ab7853-d60a-48d9-8e8d-a3f67b9e24ee"
+    },
+    {
+      "claim_id": "12d8514b-604a-4468-bca7-febd46442433",
+      "result_id": "07ab7853-d60a-48d9-8e8d-a3f67b9e24ee"
+    },
+    {
+      "claim_id": "91e98c79-c68d-4213-8c2f-884e57937bae",
+      "result_id": "07ab7853-d60a-48d9-8e8d-a3f67b9e24ee"
+    },
+    {
+      "claim_id": "81ba2c21-8114-466e-8150-540e8edc2698",
+      "result_id": "07ab7853-d60a-48d9-8e8d-a3f67b9e24ee"
+    },
+    {
+      "claim_id": "d8f29aa9-b941-4228-9cc8-74d41f7b073c",
+      "result_id": "984d0fae-094f-4d60-a2d0-adac7e01f9f1"
+    },
+    {
+      "claim_id": "63fad2c4-7112-4723-b323-d1b49ecfc64b",
+      "result_id": "961d27e5-e9f3-4e09-b182-917829005ff0"
+    },
+    {
+      "claim_id": "864b29b8-a882-4103-bcda-f4e3d6149715",
+      "result_id": "961d27e5-e9f3-4e09-b182-917829005ff0"
+    },
+    {
+      "claim_id": "a2a38bf8-c087-4206-b521-b853f7cddf95",
+      "result_id": "961d27e5-e9f3-4e09-b182-917829005ff0"
+    },
+    {
+      "claim_id": "ee13e66d-0922-4d42-bfa6-0926decc31cb",
+      "result_id": "961d27e5-e9f3-4e09-b182-917829005ff0"
+    },
+    {
+      "claim_id": "ac9f9799-f894-4d39-bf49-20614369e4f1",
+      "result_id": "961d27e5-e9f3-4e09-b182-917829005ff0"
+    },
+    {
+      "claim_id": "a9550f13-5670-4d6a-9c31-7defd6fd1c10",
+      "result_id": "961d27e5-e9f3-4e09-b182-917829005ff0"
+    },
+    {
+      "claim_id": "02ef6a48-7153-4e6c-9524-5abe5ff91a31",
+      "result_id": "961d27e5-e9f3-4e09-b182-917829005ff0"
+    },
+    {
+      "claim_id": "ee01a8bb-c96c-41fe-98b8-c76365d57bac",
+      "result_id": "961d27e5-e9f3-4e09-b182-917829005ff0"
+    },
+    {
+      "claim_id": "b2eef6df-0e67-47b8-b8dd-62aa812a90e5",
+      "result_id": "961d27e5-e9f3-4e09-b182-917829005ff0"
+    },
+    {
+      "claim_id": "6e6fd639-ac35-4cda-b6b7-b9411e63f4db",
+      "result_id": "961d27e5-e9f3-4e09-b182-917829005ff0"
+    },
+    {
+      "claim_id": "d01a98b3-180d-43f4-bb9b-725ae6ea556e",
+      "result_id": "961d27e5-e9f3-4e09-b182-917829005ff0"
+    },
+    {
+      "claim_id": "935d2b36-1012-4329-817c-915d6b2018eb",
+      "result_id": "961d27e5-e9f3-4e09-b182-917829005ff0"
+    },
+    {
+      "claim_id": "80a88e07-b1b7-4728-bd50-4576a7b6efbc",
+      "result_id": "5ac362c5-5e34-4808-a4b5-b32f2a4d4f9a"
+    },
+    {
+      "claim_id": "78db6bbb-46f0-404c-aa7c-5b88424c4fbc",
+      "result_id": "9e69e6e5-3261-4a4a-ac4b-e99b66a9fc94"
+    }
+  ],
+  "comparisons": []
+}

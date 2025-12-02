@@ -1,0 +1,334 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "Mass cytometry detected cell doublets with elevated signaling. Events with two cell-equivalents of DNA showed higher phosphorylated and total protein staining, particularly for pSLP76, and were more likely to show signaling behavior, suggesting they represent actively conjugated T cells engaged in TCR-peptide-MHC interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C21 provide converging evidence from DNA content gating, protein staining intensity, and normalized pSLP76 measurements that doublets represent actively signaling conjugated cells. The data are internally consistent and the interpretation is well-supported by the observations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C22",
+      "C23"
+    ],
+    "result": "Total signaling protein levels remained stable over 6 hours while effector proteins CD44 and CD25 increased in a time- and potency-dependent manner.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C23 are directly supported by mass cytometry data in Figure 3\u2014figure supplement 1, showing stable total protein levels for signaling molecules but increasing CD44 and CD25 expression that correlates with both time and ligand potency.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Exogenous IL2 selectively affected STAT5 and AKT phosphorylation but not ERK1/2, S6, or I\u03baB\u03b1 signaling. IL2 was required for STAT5 phosphorylation in weakly stimulated cells and subtly enhanced AKT[S473] phosphorylation, particularly with low potency ligands.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C28 are supported by comparative data with and without exogenous IL2 (Figure 3\u2014figure supplement 2). The selective effects on different signaling nodes are clearly demonstrated, and the proposed mechanism for AKT phosphorylation via IL2-JAK-mTORC2 is appropriately cited.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Proximal signaling molecules showed limited or potency-dependent activation patterns. ZAP70 and PLC\u03b31 phosphorylation was detectable in only a small percentage of cells. LCK inhibitory phosphorylation decreased at 6 hours in a potency-dependent manner, while SLP76 showed greater phosphorylation with high potency N4 stimulation between 1-4 hours.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C32 are supported by mass cytometry data (Figure 2b, Figure 3\u2014figure supplement 2a). The low detection of ZAP70 and PLC\u03b31 is acknowledged as limiting interpretation. The inference about LCK activity (C31) from inhibitory phosphorylation is reasonable but indirect.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "ERK1/2, AKT, and I\u03baB\u03b1 displayed transient signaling with kinetics dependent on ligand potency. For high potency N4, maximal signaling occurred at 2 hours, while lower potency ligands showed delayed peaks at 4-6 hours. After 2 hours, strongly stimulated cells showed declining signaling that converged with weakly stimulated cells, though the maximum percentage of signaling cells was higher with strong stimulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C40 are well-supported by time course data in Figure 3a. The transient nature of these signaling events and their potency-dependent kinetics are clearly demonstrated. The convergence pattern and differences in maximum signaling percentages are evident in the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "S6 phosphorylation showed sustained signaling within the 6-hour time course. Under N4 stimulation, pS6+ cells increased rapidly then plateaued, while lower potency ligands showed slower kinetics. However, the proportions of pS6+ cells converged across all ovalbumin-derived ligands by 6 hours, indicating that ligand potency affected the rate but not the maximal proportion of S6-phosphorylating cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C45 are supported by mass cytometry data in Figure 3a. The sustained nature of S6 phosphorylation contrasts with transient signaling of other molecules. The convergence at 6 hours despite different kinetics is clearly shown and supports the rate-based mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "ERK1/2 exhibits digital signaling behavior with bimodal distribution. The extent of ERK1/2 phosphorylation in positive cells was constant regardless of ligand potency, confirming an 'on or off' state at the single-cell level.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C48 are supported by mass cytometry data (Figure 3\u2014figure supplement 3a) and consistent with cited prior work. The bimodal distribution and constant intensity in positive cells provide strong evidence for digital signaling behavior.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "S6[S235/S236] phosphorylation showed bimodal distribution with intensity in positive cells slightly increasing over time. After normalization to total S6, ligand potency appeared to subtly affect the rate of S6 phosphorylation within individual cells in addition to affecting the percentage of positive cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C51 are supported by data in Figure 2a and Figure 3\u2014figure supplement 3b-c. The normalization analysis provides additional insight into per-cell phosphorylation dynamics, though the effect is described as subtle.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "S6[S235/S236] phosphorylation requires both MEK/ERK and mTOR pathways, with MEK signaling essential for digital phosphorylation. Rapamycin moderately reduced per-cell S6 phosphorylation without disturbing bimodality or the percentage of positive cells. MEK162 showed dose-dependent effects, disrupting bimodality at high doses and reducing the percentage of pS6+ cells even at low doses. Combined inhibition severely blocked S6 phosphorylation and synergistically inhibited proliferation after 2 days without substantially affecting CD44 expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C62 are well-supported by inhibitor experiments (Figure 3b-d, Figure 3\u2014figure supplement 3d-g). The differential effects of rapamycin versus MEK162 on bimodality provide strong evidence for MEK's role in digital S6 phosphorylation. The synergistic effect on proliferation is clearly demonstrated. The inference about pathway requirements (C61-C62) is well-justified by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Differential abundance analysis identified distinct multidimensional signaling phenotypes. Phenotype A (pS6+ pSTAT5+ pERK1/2+) and A' (pS6+ pSTAT5- pERK1/2+) were transient and most prevalent with high potency N4 stimulation. Phenotypes B (pS6+ pSTAT5+ pERK1/2-) and B' (pS6+ pSTAT5- pERK1/2-) were sustained and appeared with similar prevalence across all ovalbumin-derived ligands.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C69 are supported by differential abundance analysis (Figure 4a-b). The cydar method is appropriate for identifying multidimensional phenotypes. The distinction between transient (A/A') and sustained (B/B') phenotypes and their differential association with ligand potency is clearly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "Analysis of signaling phenotypes with CD44 expression revealed temporal progression of activation. N4 induced large proportions of CD44- pS6+ pSTAT5- pERK+ cells at 1 hour, followed by CD44- pS6+ pSTAT5+ pERK+ cells peaking at 2 hours. Weaker peptides showed dramatically reduced and delayed abundances of these phenotypes. All stimuli showed high abundances of CD44- pS6+ pSTAT5+/- pERK1/2- cells at 4-6 hours, with CD44 expression appearing by 4 hours (N4, T4) or 6 hours (G4).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C74 are supported by data in Figure 4c and Figure 4\u2014figure supplement 2. The temporal progression and potency-dependent differences in phenotype abundances are clearly shown. The convergence to sustained phenotypes supports the rate-based activation model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "The coordination of distal TCR-induced signaling follows a specific sequence: cells initially phosphorylate S6 and ERK1/2, followed by STAT5, after which ERK1/2 becomes dephosphorylated, followed by STAT5 in some cells. CD44 expression remains low initially but increases by 4-6 hours. Over time, cells activated with reduced potency ligands phenotypically resemble those stimulated with high potency ligand.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C77 represent inferences from the phenotypic data (Figure 4, Figure 5) that are well-supported by the observed kinetics and convergence patterns. The proposed sequence is consistent with the multidimensional phenotype analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Trajectory analysis revealed a conserved order of activation events across stimulation conditions: pS6 appeared first, followed by pERK1/2, pSTAT5, and finally CD44 (p=0.00174 compared to random orders). The start of ERK1/2 phosphorylation corresponded to the most dramatic increase in S6 phosphorylation. Ligand potency controls the rate of achieving signaling states, but the order of events is preserved regardless of stimulation strength.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C82 are supported by trajectory analysis (Figure 5\u2014figure supplement 1) with appropriate statistical testing. The conserved order across conditions (p=0.00174) provides strong evidence for a coordinated program. The correspondence between ERK and S6 phosphorylation (C79) is consistent with the inhibitor data showing MEK's role in S6 phosphorylation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "Combined phosphoflow and RNA flow cytometry revealed coordinated activation of translational and transcriptional machinery. Nr4a1 transcripts were upregulated before S6 phosphorylation and downregulated after, while Irf8 transcripts were upregulated after S6 phosphorylation. This order was consistent across stimuli, with the timing of maximal pS6+Nr4a1+ and pS6+Irf8+ cells delayed in proportion to reduced ligand potency. The relationship between signaling events is conserved across stimulation strengths, suggesting coordinated deployment of transcriptional and translational machinery upon TCR activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C94 are supported by combined phosphoflow and RNA flow data (Figure 6). The temporal relationships between Nr4a1, pS6, and Irf8 are clearly demonstrated, and the conservation of order across different ligand potencies supports the rate-based mechanism extending to transcriptional events. The inference about coordinated machinery deployment (C94) is reasonable but somewhat speculative regarding functional benefits.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "The T:T stimulation system includes integrin adhesion but lacks costimulatory signals. All T cells expressed ICAM-1 regardless of stimulation status, suggesting integrin adhesion contributes to activation. However, CD80 remained largely absent after 6 hours, while mature BMDCs expressed high levels of CD80 and additional costimulatory molecules.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C98 are supported by flow cytometry data (Figure 7\u2014figure supplement 1). The presence of ICAM-1 and absence of CD80 in the T:T system versus their presence on BMDCs is clearly shown. The inference about integrin contribution (C96) is reasonable given ICAM-1 expression.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "Stimulation with peptide-pulsed BMDCs showed both similarities and differences compared to the T:T system. Activation was generally less strong, possibly due to reduced ligand availability. The potency-dependent kinetics of pERK1/2, pSLP76, and CD44 resembled the T:T system, but pS6 was upregulated over time with all ligand potencies. pSTAT5 was upregulated with all stimuli including the null peptide, suggesting BMDCs enhance IL2 signaling. These results indicate the rate-based mechanism is further tuned at particular signaling nodes by more complex antigen presentation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C104 are supported by BMDC stimulation data (Figure 7). The similarities and differences between T:T and BMDC systems are clearly demonstrated. The inference about reduced ligand availability (C99) is reasonable. The observation that pSTAT5 increases even with null peptide (C102-C103) suggests non-specific effects of BMDC co-culture. The conclusion about tuning by complex antigen presentation (C104) is a reasonable inference.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C113"
+    ],
+    "result": "The main conclusion of the study: TCR-induced signaling results in a coordinated activation program that is modulated in rate but not organization by stimulation strength. Using a limited set of signaling machinery in a single coordinated program, T cells can finely tune their responses to different ligands through modulation of the rate of signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C107 and C113 represent the central conclusion, which is well-supported by the collective evidence from mass cytometry, trajectory analysis, and combined phospho/RNA flow experiments. The conserved order of events across stimulation strengths (C80, C82, C89) combined with potency-dependent kinetics (C36-C37, C43, C90-C91) strongly support this rate-based model. This is a major conceptual advance in understanding TCR signaling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5"
+    ],
+    "result": "Background on T cell recognition and thymic selection. Fewer than 0.01% of na\u00efve CD8+ T cells recognize a particular peptide-MHCI complex. During thymic selection, weakly self-reactive T cells are retained while strongly self-reactive cells undergo negative selection. In the periphery, population responses vary with stimulation strength, which controls the rate of individual cell activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C5 are background claims supported by appropriate citations to prior literature. These establish the context for the current study but are not novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "Background on TCR signaling pathways and prior work. TCR signaling proceeds through LCK/Fyn phosphorylation of CD3 ITAMs, ZAP70 recruitment and activation, LAT-SLP76 signalosome formation, and activation of multiple downstream cascades. Prior work showed ligand potency determines signaling extent at various nodes and affects the percentage of cells phosphorylating specific proteins. Small differences in proximal signaling are propagated and amplified downstream.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C15 are background claims describing established TCR signaling mechanisms and prior findings, all appropriately cited. These provide context but are not novel results of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "Discussion of costimulation and in vivo complexity. CD28 costimulation amplifies signaling pathways and enhances sensitivity and division potential. Strongly stimulated T cells undergo prolonged lymph node retention and may out-compete weakly stimulated cells for resources, suggesting stimulation strength and microenvironment are not independent.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C112 are discussion points appropriately citing prior literature. These contextualize the findings but are not novel results. The inference about non-independence of stimulation strength and microenvironment (C112) is reasonable speculation based on cited observations.",
+    "result_type": "MINOR"
+  }
+]

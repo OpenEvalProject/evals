@@ -1,0 +1,280 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "ICP4 binding to the viral genome changes dynamically during infection. Early in infection (2 hpi), ICP4 densely coats the viral genome. As viral genome replication proceeds, the amount of ICP4 per genome decreases, and by 6 hpi, ICP4 binding is retained predominantly on strong cognate binding motifs. The ICP4 consensus binding motif was identified as DTSGKBDTBNHSG, similar to previously reported in vitro motifs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C35 are well-supported by ChIP-Seq data shown in Figure 1, including quantitative analysis, peak calling, and motif discovery. The time course experiments (2, 4, 6 hpi) with normalization for genome copy number provide robust evidence for the dynamic changes in ICP4 binding patterns. The motif discovery is consistent with prior work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C48",
+      "C50"
+    ],
+    "result": "ICP4 is required for robust recruitment of general transcription factors (GTFs) including Pol II, TBP, SP1, and Mediator components (Med1, Med23) to viral E and L promoters. In ICP4-null (n12) infection, binding of all these factors to most viral promoters is dramatically reduced, with the exception of IE genes where binding increases. Mediator densely coats the viral genome in WT infection but this coating is absent in n12 infection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C50 are strongly supported by ChIP-Seq data comparing WT and n12 infections shown in Figure 2 and supplements. The data demonstrate ICP4-dependent recruitment of multiple GTFs with appropriate controls. The exception of IE genes is consistent with known VP16-mediated recruitment mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Histone H3 binding to the viral genome is minimal and not reproducible in both WT and n12 infections. H3 reads mapped to the viral genome were 100-fold less than ICP4, with patterns nearly identical to input (R\u00b2 correlations of 0.0004-0.02). Similar results were observed for histone modifications H3K4me3, H3K27ac, H3K9me3, and H3K27me3. Quality controls showed robust H3 binding to the cellular genome (\u226510 million reads, R\u00b2 \u22650.97).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C57 are well-supported by ChIP-Seq data in Figure 3 and supplements. The low correlation with input, minimal read counts, and appropriate quality controls on cellular genome demonstrate that the lack of histone binding is not a technical artifact. The consistency across multiple histone marks strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C106",
+      "C107"
+    ],
+    "result": "The viral genome is 2-2.2 fold more accessible than the cellular genome as measured by ATAC-Seq, and this increased accessibility is independent of ICP4. The viral genome shows even tagmentation without nucleosomal laddering. ICP4 binding and GTF recruitment, rather than genome accessibility, is responsible for robust GTF binding to the viral genome.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C62, C106-C107 are supported by ATAC-Seq data in Figure 3 comparing WT and n12 infections. The quantification accounts for genome copy number, and the absence of nucleosomal laddering is clear. The conclusion that ICP4-dependent GTF recruitment is not due to accessibility changes is logically derived from combining ChIP-Seq and ATAC-Seq results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "ICP4 binds to the cellular genome early during infection (2 hpi) at 5727 sites (0.002 peaks/kbp), predominantly at transcription start sites of housekeeping genes. This binding decreases by 4 hpi and becomes negligible by 6 hpi. The viral genome has a much higher density of ICP4 binding sites (0.8 peaks/kbp) and motifs (2 motifs/kbp) compared to the cellular genome (0.02 motifs/kbp).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C72 are supported by ChIP-Seq data aligned to the cellular genome shown in Figure 4. The time course, peak calling, motif density analysis, and ontology analysis provide converging evidence. The temporal dynamics correlate with viral genome replication, supporting the mass action interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "ICP4 binds to accessible, euchromatic regions of the cellular genome (adjacent to H3K4me3 and H3K27ac marks) where histones are absent, particularly at active promoters. ICP4 does not alter chromatin markers or promote open chromatin; rather, it binds to regions that are already accessible in uninfected cells. ICP4 binding correlates with Pol II and euchromatin (Spearman coefficient \u22650.5) but not with heterochromatin markers. 82% of ICP4-bound regions are within 1 kb of promoters, while only 10% of predicted ICP4 motifs are near promoters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C88 are well-supported by integrated ChIP-Seq and ATAC-Seq data in Figure 5 and supplements. K-means clustering, Spearman correlation analysis, peak intersection analysis, and comparison with uninfected cells provide multiple lines of evidence. The discrepancy between motif location and actual binding suggests sequence-independent binding to accessible regions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "ICP4 is required for depletion of Pol II from cellular promoters, and this effect is independent of viral genome copy number. Pol II depletion occurs in WT but not n12 infection at 2 hpi (pre-replication). Temperature-shift experiments with tsKos demonstrate that ICP4 bound to the viral genome is continuously required for Pol II depletion, and the effect correlates with the number of ICP4-bound viral genomes rather than genome number alone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C98 are strongly supported by ChIP-Seq data in Figure 6 comparing WT, n12, and tsKos infections. The pre-replication time point (2 hpi) controls for genome copy number effects. The tsKos temperature-shift experiments elegantly separate ICP4 function from genome replication, demonstrating that functional ICP4 bound to viral genomes is required for cellular Pol II depletion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C2",
+      "C4",
+      "C5",
+      "C25",
+      "C109",
+      "C110",
+      "C116",
+      "C120",
+      "C128",
+      "C129",
+      "C130",
+      "C131"
+    ],
+    "result": "ICP4 functions as a viral nucleoprotein that preferentially recruits Pol II machinery to the viral genome by creating a competitive transcriptional environment. ICP4 discriminately binds the viral genome due to absence of nucleosomes and high density of cognate binding sites. ICP4 recruits limiting PIC components (TBP, Mediator) to create a local concentration gradient, increasing Pol II recruitment to viral genomes. As ICP4-bound viral genomes increase, limiting factors are sequestered from cellular promoters, resulting in decreased Pol II occupancy and preventing cellular transcription.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C4, C5, C25, C109-C110, C116, C120, C128-C131 represent the central mechanistic model supported by the integrated data. The model is well-supported by: (1) ChIP-Seq showing ICP4-dependent GTF recruitment, (2) histone ChIP-Seq showing absence of nucleosomes on viral genome, (3) motif density analysis, (4) ATAC-Seq showing accessibility is ICP4-independent, and (5) temporal correlation between ICP4-bound viral genomes and cellular Pol II depletion. The competitive sequestration model logically integrates all observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C108",
+      "C111",
+      "C113",
+      "C114",
+      "C118",
+      "C119"
+    ],
+    "result": "ICP4 binds promiscuously to the viral genome prior to DNA replication when the relative concentration of ICP4 to viral genomes is high, likely through multimerization. The high density of ICP4 binding motifs on the viral genome creates a global affinity for ICP4. Mediator shows a unique recruitment phenotype, binding generally to the viral genome and concentrating near TATA boxes. In the absence of ICP4, minimal GTF recruitment is insufficient to support transcription of E and L genes, with the exception of IE promoters which are activated by VP16. The absence of histones in n12 infection is likely due to ICP0 activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C105, C108, C111, C113-C114, C118-C119 are supported by the ChIP-Seq data and integrate well with prior knowledge. The promiscuous binding at early times, Mediator coating pattern, and ICP0-mediated histone exclusion are all supported by data. The speculation about late promoter repression (C114) is reasonable but less directly tested. The explanation for why specific binding sites don't affect ICP4 function (C119) is well-supported by the motif density data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C133",
+      "C134"
+    ],
+    "result": "Quantification of ChIP-Seq input reads determined that the approximate number of viral genomes per cell in WT and n12 infection was 169 and 254, respectively, at 2 hpi. This is consistent with infection at MOI of 10 pfu/cell and a particle-to-pfu ratio of 20-30.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C133-C134 are supported by quantitative analysis of ChIP-Seq input data shown in Figure 3C. The calculation method is appropriate, and the values are consistent with expected infection parameters. This quantification is critical for normalizing the ChIP-Seq and ATAC-Seq data throughout the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C1",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C40",
+      "C41",
+      "C51",
+      "C76",
+      "C77",
+      "C90",
+      "C112",
+      "C115",
+      "C117",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126"
+    ],
+    "result": "Background and context claims about HSV-1 biology, ICP4 properties, and prior work. These include: HSV-1 transcriptional cascade and kinetics, ICP4 as an essential transcription factor, ICP4 DNA binding and GTF interactions, histone effects on viral infection, ICP4 packaging in virions, IE promoter regulation by VP16/Oct-1/HCF, ICP4 multimerization, HSV genome organization, and prior observations of Pol II depletion during infection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C6-C24, C40-C41, C51, C76-C77, C90, C112, C115, C117, C121-C126 are background claims supported by citations to prior work or established knowledge in the field. These provide necessary context for interpreting the current results. The citations appear appropriate and the knowledge claims are consistent with the HSV-1 literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C29",
+      "C42",
+      "C47",
+      "C49",
+      "C127",
+      "C132"
+    ],
+    "result": "Interpretive claims connecting data to biological significance. These include: retained ICP4 binding sites at inhibitory promoters, insufficient virion ICP4 for transcription complex formation, ICP4-Mediator interaction inferred from binding patterns, cooperative Pol II recruitment, ICP4 coating the viral genome throughout infection, and the biological significance of GTF sequestration for viral replication and host response limitation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29, C42, C47, C49, C127, C132 are reasonable interpretations of the data. C29 connects current data with prior knowledge of inhibitory sites. C42 logically explains minimal ICP4 signal in n12. C47 infers interaction from similar binding patterns (supported by prior citations). C49 invokes established cooperativity principles. C127 summarizes the coating phenotype. C132 speculates on biological significance, which is reasonable but not directly tested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C3"
+    ],
+    "result": "ICP4 is a viral nucleoprotein which binds double-stranded DNA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C3 is supported by both established knowledge from prior work and the ChIP-Seq data presented showing ICP4 binding to DNA. This is a well-established property of ICP4.",
+    "result_type": "MINOR"
+  }
+]

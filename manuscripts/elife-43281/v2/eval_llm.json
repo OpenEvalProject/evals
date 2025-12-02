@@ -1,0 +1,230 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C56",
+      "C57",
+      "C58",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "Two macaque monkeys were trained to perform two go/no-go tasks with different sensorimotor associations using sequences of two tones (3 kHz and 1 kHz). The tasks used a symmetrical reward structure and were performed in alternating blocks within the same experimental sessions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C18 and C56-C58, C83-C85 provide comprehensive methodological details about the experimental design, including the behavioral paradigm, stimulus parameters, task structure, and reward contingencies. The design is well-documented and internally consistent.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C19",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C86"
+    ],
+    "result": "Behavioral performance was high across sessions (d-prime >1), and neuronal recordings (single-unit, multiunit, and LFP) were obtained from 243 experimental sessions in the core fields of auditory cortex after monkeys achieved criterion performance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19, C61-C65, and C86 document the behavioral performance criteria, recording methods, and dataset size. The d-prime values >1 indicate reliable discrimination, and the recording methods are standard for the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "Spike responses to S1 differed based on sensorimotor associations: responses were higher to S1-no-go than S1-uncertain in 41.6% of multiunits (median ratio 1.09), with differences emerging ~70ms after tone onset. After controlling for confounds (visual cue, acoustic context), at least 18.5% of multiunits represented sensorimotor associations of S1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C30 provide converging evidence from example units, population statistics, timing analyses, and control conditions. The statistical tests are appropriate (permutation tests, Wilcoxon signed rank test, chi-square tests), and the conservative estimate after accounting for confounds strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "Spike responses to S2 differed based on sensorimotor associations: responses were higher to S2-no-go than S2-go in 36.7% of multiunits (median ratio 1.13), with differences emerging shortly after tone onset. After controlling for confounds, at least ~20% of multiunits represented sensorimotor associations of S2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C39 parallel the S1 analysis with similar statistical rigor. The control analyses for visual cue, acoustic context, and motor preparation (C39) are appropriate. However, C39 notes that motor-related activity starting >250ms before bar release may have affected the measurements, which is acknowledged but could partially confound the S2 results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C40",
+      "C41"
+    ],
+    "result": "Multiunits responded more strongly to S2-no-go than S2-nil (median ratio 1.10), but showed no difference between S2-go and S2-nil (median ratio 1.00), ruling out attention-based explanations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C41 provide an important control showing that the enhanced responses are specific to the no-go association rather than general attention or task engagement. The statistical tests support the differential effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Normalized spike responses were strongest when tones signaled the no-go response, regardless of position (S1 or S2), and could change rapidly within a trial (on a timescale of one second) depending on sensorimotor associations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C44 synthesize the findings across conditions with appropriate multiple comparison corrections (p<0.05/4). The comparison between task and passive conditions (C44) supports the task-dependent nature of the rapid changes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C68",
+      "C69"
+    ],
+    "result": "Neuronal responses to no-go tones in false-alarm trials were smaller than in correct trials and similar to responses in correct go trials, indicating that responses reflected the monkeys' actual behavior rather than the instructed response.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C48 and C68-C69 provide compelling evidence linking neuronal activity to behavior. The analysis of error trials is methodologically sound, though the relatively low false-alarm rates (median 0.05-0.16) limited the number of comparisons available.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Local field potentials (LFPs) represented sensorimotor associations similarly to spiking activity: significant during-S1 LFP ratios were obtained at 264/401 sites (65.8%) and during-S2 ratios at 145/401 sites (36.2%). After controlling for confounds, ~45% (S1) and ~24% (S2) of sites represented sensorimotor associations in LFPs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C53 demonstrate that sensorimotor associations are represented at the population level. The higher incidence in LFPs compared to spiking activity is expected given that LFPs reflect population activity. The control analyses parallel those for spiking activity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5"
+    ],
+    "result": "Early auditory cortex represents associations between sounds and actions in both spiking activity and LFPs, with responses changing shortly after sound onset and being largest for no-go signals, suggesting that association processes occur in auditory cortex and may contribute to rapid motor response selection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C5 summarize the main findings. These are well-supported by the detailed analyses in the manuscript. However, C4 and C5 involve interpretations about the role of auditory cortex that, while plausible, go beyond what is directly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C59",
+      "C60",
+      "C66",
+      "C67"
+    ],
+    "result": "The experimental design controlled for multiple confounds including visual cues, acoustic context, and reward valence (through symmetrical reward), addressing limitations of previous studies that did not adequately control for these factors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C55, C59-C60, C66-C67 describe the experimental rationale and controls. The design is thoughtful, though the unequal tone probabilities (C59) were necessary for behavioral reasons but introduced acoustic context differences that required additional control analyses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "Changes in neuronal responses occurred shortly after tone onset, suggesting that the auditory system contributes to sensorimotor associations, potentially through task-specific modulation of adaptation, suppression, or receptive fields mediated by neuromodulatory or top-down systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C70-C74 include both supported observations (C70) and speculative mechanistic interpretations (C71-C74). While the timing data support early involvement of auditory cortex, the proposed mechanisms are hypothetical and not directly tested in this study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Early auditory cortex may contribute to motor response selection and inhibitory control, functions traditionally associated with association cortices, and may integrate diverse task-relevant information to serve as a semantic processor or problem solver.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C75-C81 present interpretations about the functional role of auditory cortex. While the data demonstrate representation of sensorimotor associations, the claims about contribution to motor selection (C75), inhibitory control (C78-C79), and semantic processing (C81) are speculative extrapolations not directly tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "Previous studies showed that frontal/prefrontal cortices represent stimulus-action associations, but few studies examined sensory cortices, and those that did were confounded by factors such as cues, acoustic context, and reward valence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C12 accurately summarize prior literature and identify the knowledge gap and methodological limitations that motivated the current study. The citations support these characterizations.",
+    "result_type": "MINOR"
+  }
+]

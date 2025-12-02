@@ -1,0 +1,174 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C10",
+      "C12",
+      "C13",
+      "C16"
+    ],
+    "result": "The manuscript provides background on malaria pathology and the merozoite invasion process, including the lifecycle, key invasion events, time constraints, surface proteins, bond characteristics, membrane deformations, and calcium release timing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C16 are well-supported by appropriate citations to established literature (WHO, Miller et al., Cowman et al., Koch and Baum, Weiss et al., Introini et al., etc.). These claims establish the biological context and prior experimental observations that motivate the computational study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C19"
+    ],
+    "result": "The merozoite is modeled as a rigid body based on the absence of visible parasite deformations in experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C19 is supported by experimental observations (Weiss et al., 2015; Crick et al., 2014) showing no visible parasite deformations, justifying the rigid body approximation in the computational model. This is a reasonable modeling assumption given the experimental evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C25",
+      "C27"
+    ],
+    "result": "The bond-based adhesion model is calibrated to experimental parasite displacement data and reproduces subdiffusive dynamics at short timescales transitioning to diffusive motion at longer times.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25 and C27 are supported by Figure 2b,c showing good agreement between simulated and experimental fixed-time displacements, and MSD analysis demonstrating subdiffusive-to-diffusive transition. The calibration approach is reasonable, though the parameter set may not be unique as acknowledged by the authors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C34",
+      "C35"
+    ],
+    "result": "Successful parasite alignment occurs more frequently in RBC dimples than at the rim, with more bonds forming in dimples due to favorable local curvature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34 and C35 are supported by simulation data (Figure 5\u2014figure supplement 1) showing position-dependent bond formation. The mechanistic explanation based on energetically favorable membrane wrapping in concave regions is physically reasonable and consistent with membrane biophysics principles.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C43",
+      "C44"
+    ],
+    "result": "Membrane deformation levels correlate with alignment times, and bond rigidity affects the number of bonds formed, membrane wrapping, and deformation energy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43 and C44 are supported by simulation data in Figures 6b,c and 7. The correlation between membrane deformation and alignment time is clearly demonstrated, and the effect of bond rigidity on adhesion characteristics is mechanistically explained through distance-limited bond formation at the adhesion edge.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C48",
+      "C50",
+      "C55"
+    ],
+    "result": "Increased RBC rigidity drastically increases parasite alignment times while increasing parasite displacement, demonstrating the critical role of membrane deformability in alignment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48, C50, and C55 are supported by simulation data in Figure 9 comparing flexible and rigid RBCs. The results clearly show longer alignment times and larger displacements for rigid membranes, with mechanistic explanation based on reduced bond formation. This is a key finding supporting the passive compliance hypothesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C51"
+    ],
+    "result": "The computational model quantitatively reproduces experimentally measured alignment times.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C51 is supported by comparison with experimental data: simulations show alignment times of 1-26s with average 9.53s, compared to experimental averages of 16s (Weiss et al., 2015) and range of 7-44s (Yahata et al., 2012). The agreement is reasonable given experimental variability and limited sample sizes, though some discrepancies exist.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C53",
+      "C54"
+    ],
+    "result": "Parasite alignment is mediated by RBC membrane deformations and stochastic bond dynamics, with membrane deformations accelerating alignment through partial parasite wrapping.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53 and C54 represent the main conclusions and are well-supported by the comprehensive simulation results showing: (1) diffusive-like motion from stochastic bonds (Figure 2c), (2) dynamic membrane deformations (Figure 5), (3) correlation between deformation and alignment time (Figure 6), and (4) drastically increased alignment times for rigid RBCs (Figure 9).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C56"
+    ],
+    "result": "Infected RBCs become significantly stiffer than healthy cells, limiting secondary invasion events.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C56 is supported by citations to established literature (Suresh et al., 2005; Fedosov et al., 2011). This contextualizes the biological relevance of the rigidity findings from the model, though the direct connection to secondary invasion limitation is inferred rather than demonstrated in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C57"
+    ],
+    "result": "The model explains the possibility of RBC invasion without preceding membrane deformations, which occurs less frequently than invasion with deformations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C57 is supported by simulation results showing that alignment can occur through diffusive-like rotational dynamics alone (at high k_off values), consistent with experimental observations (Weiss et al., 2015) that invasion without deformations is less frequent. The mechanistic explanation is reasonable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C58"
+    ],
+    "result": "The bond-based model is more appropriate than the potential-based model for representing RBC-parasite interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C58 is supported by comparison showing that the bond-based model captures dynamic membrane deformations and realistic alignment times (~10s vs <1s), while the potential-based model (Hillringhaus et al., 2019) fails to reproduce these key features. The bond-based model also explains invasion without deformations, which the potential-based model cannot.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C59"
+    ],
+    "result": "Long bonds serve as leverages for stable parasite adhesion and motion at the membrane.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C59 is supported by simulation results showing that models with only short ligands fail to achieve proper alignment and mobility, while long ligands enable both. The mechanistic explanation based on progressive membrane attachment over the curved parasite surface is physically reasonable, though limited by model resolution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C60"
+    ],
+    "result": "The model supports the passive compliance hypothesis, suggesting that parasite alignment can be explained without additional active mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C60 is the main conclusion and is well-supported by the comprehensive simulation results demonstrating that passive adhesion through stochastic bond dynamics and membrane deformability is sufficient to reproduce experimental observations of alignment times, membrane deformations, and parasite motion. However, the authors appropriately note this does not exclude possible active mechanisms.",
+    "result_type": "MAJOR"
+  }
+]

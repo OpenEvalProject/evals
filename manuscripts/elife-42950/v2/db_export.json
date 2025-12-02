@@ -1,0 +1,2351 @@
+{
+  "submission": {
+    "id": "b29aaa45-5d0d-44ed-840e-7cce3cf9464a",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T11:28:18.183224Z",
+    "updated_at": "2025-12-02T11:28:18.183224Z"
+  },
+  "content": [
+    {
+      "id": "0f8b7eb8-796b-4994-a7f2-e3a57e9f93d5",
+      "submission_id": "b29aaa45-5d0d-44ed-840e-7cce3cf9464a",
+      "content_type": "manuscript",
+      "content_text": "# Multivariate stochastic volatility modeling of neural data\n\n## Authors\n\n- Tung D Phan<sup>1</sup> ([ORCID: 0000-0001-5957-7566](https://orcid.org/0000-0001-5957-7566)) \u2020\n- Jessica A Wachter<sup>1</sup>\n- Ethan A Solomon<sup>1</sup> ([ORCID: 0000-0003-0541-7588](https://orcid.org/0000-0003-0541-7588))\n- Michael J Kahana<sup>1</sup> \u2020\n\n### Affiliations\n\n1. University of Pennsylvania Philadelphia United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nBecause multivariate autoregressive models have failed to adequately account for the complexity of neural signals, researchers have predominantly relied on non-parametric methods when studying the relations between brain and behavior. Using medial temporal lobe (MTL) recordings from 96 neurosurgical patients, we show that time series models with volatility described by a multivariate stochastic latent-variable process and lagged interactions between signals in different brain regions provide new insights into the dynamics of brain function. The implied volatility inferred from our process positively correlates with high-frequency spectral activity, a signal that correlates with neuronal activity. We show that volatility features derived from our model can reliably decode memory states, and that this classifier performs as well as those using spectral features. Using the directional connections between brain regions during complex cognitive process provided by the model, we uncovered perirhinal-hippocampal desynchronization in the MTL regions that is associated with successful memory encoding.\n\n## Introduction\n\nRecent advances in neuroscience have enabled researchers to measure brain function with both high spatial and temporal resolution, leading to significant advances in our ability to relate complex behaviors to underlying neural signals. Because neural activity gives rise to electrical potentials, much of our knowledge concerning the neural correlates of cognition derive from the analyses of multi-electrode recordings, which yield a multivariate time series of voltage recorded at varying brain locations (denoted here as $\ud835\udc32_{t}$). Such signals may be measured non-invasively, using scalp electroencephalography (EEG), or invasively, using subdural grids or intraparenchymal depth electrodes in human neurosurgical patients. In recent years, intracranially recorded (iEEG) signals have yielded detailed information on correlations between time-series measures and a wide range of behaviors including perception, attention, learning, memory, language, problem solving and decision making (Jacobs and Kahana, 2010).\n\nWhereas other fields that grapple with complex multivariate time series have made effective use of parametric models such as economics and engineering (Kim et al., 1998; Blanchard and Simon, 2001; West, 1996), neuroscientists largely ceded early parametric approaches (e.g. linear autoregressive models) in favor of non-parametric spectral decomposition methods, as a means of uncovering features of neural activity that may correlate with behavior. A strength of these non-parametric methods is that they have enabled researchers to link fluctuations in iEEG signals to low-frequency neural oscillations observed during certain behavioral or cognitive states, such as slow-wave sleep (Landolt et al., 1996; Chauvette et al., 2011; Nir et al., 2011), eye closure (Klimesch, 1999; Goldman et al., 2002; Laufs et al., 2003; Barry et al., 2007) or spatial exploration (Kahana et al., 2001; Raghavachari et al., 2001; Caplan et al., 2003; Ekstrom et al., 2005; Byrne et al., 2007). High-frequency neural activity, which has also been linked to a variety of cognitive and behavioral states (Maloney et al., 1997; Herrmann et al., 2004; Canolty et al., 2006), is less clearly oscillatory, and may reflect asynchronous stochastic volatility of the underlying EEG signal (Burke et al., 2015).\n\nAlthough spectral analysis methods have been used extensively in the neuroscience literature, they assume that there is unique information in each of a discrete set of frequency bands. The number of bands and frequency ranges used in these methods have been the subject of considerable controversy. Indeed Manning et al. (2009) have shown that broadband power often correlates more strongly with neuronal activity than does power at any narrow band. Also, non-parametric methods implicitly assume that the measured activity is observed independently during each observational epoch, and at each frequency, an assumption which is easily rejected in the data, which show strong temporal autocorrelation as well as correlations among frequency bands\u00a0(von Stein and Sarnthein, 2000; Jensen and Colgin, 2007; Axmacher et al., 2010). Moreover, non-parametric methods are typically applied to EEG signals in a univariate fashion that neglects the spatial correlational structure. By simultaneously modeling the spatial and temporal structure in the data, parametric models confer greater statistical power so long as they are not poorly specified.\n\nParametric methods have been applied to various types of multivariate neural data including EEG (Hesse et al., 2003; Dhamala et al., 2008; Bastos et al., 2015), magnetoencephalography (MEG) (David et al., 2006), functional magnetic resonance imaging (FMRI) (Roebroeck et al., 2005; Goebel et al., 2003; David et al., 2008; Luo et al., 2013), and local field potentials (LFP) (Brovelli et al., 2004). These methods typically involve fitting vector autoregressive (VAR) models to multivariate neural data that are assumed to be stationary in a specific time interval of interest. The regression coefficient matrix derived from the VAR models can be used to study the flow of information between neuronal regions in the context of Granger causality (G-causality). Neuroscientists have used Gaussian VAR models to study the effective connectivity (directed influence) between activated brain areas during cognitive and visuomotor tasks (Zhou et al., 2009; Deshpande et al., 2009; Graham et al., 2009; Roebroeck et al., 2005). Although VAR models and G-causality methods have been argued to provide useful insights into the functional organization of the brain, their validity relies upon the assumptions of linearity and stationarity in mean and variance of the neural data. When one of these assumptions is violated, the conclusions drawn from a G-causality analysis will be inconsistent and misleading (Seth et al., 2015). One of the most common violations by EEG signals is the assumption of variance-stationarity (Wong et al., 2006). Therefore, in the present work, we adopt a stochastic volatility approach in which the non-stationary variance (also known as volatility) of the neural time series is assumed to follow a stochastic process. Such models have been extremely useful in the analyses of financial market data which, like neural data, exhibits high kurtosis (Heston, 1993; Bates, 1996; Barndorff-Nielsen and Shephard, 2002).\n\nWe propose a multivariate stochastic volatility (MSV) model with the aim of estimating the time-varying volatility of multivariate neural data and its spatial correlational structure. The MSV model assumes that the volatility series of iEEG signals follows a latent-variable vector-autoregressive process, and it allows for the lagged signals of different brain regions to influence each other by specifying a full persistent matrix (typically assumed to be diagonal) in the VAR process for volatility.\n\nWe employed a Bayesian approach to estimate the latent volatility series and the parameters of the MSV model using the forward filtering backward sampling and Metropolis Hastings algorithms. We validated the MSV model in a unique dataset comprising depth-electrode recordings from 96 neurosurgical patients. These patients volunteered to participate in a verbal recall memory task while they were undergoing clinical monitoring to localize the epileptogenic foci responsible for seizure onset. Our analyses focused on the subset of electrodes ($n=718$) implanted in medial temporal lobe (MTL) regions, including hippocampus, parahippocampal cortex, entorhinal cortex and perirhinal cortex. We chose to focus on these regions given their prominent role in the encoding and retrieval of episodic memories (Davachi et al., 2003; Kirwan and Stark, 2004; Kreiman et al., 2000; Sederberg et al., 2007).\n\nWe show that the MSV model, which allows for interactions between regions, provides a substantially superior fit to MTL recordings than univariate stochastic volatility (SV) models. The implied volatility in these models positively correlates with non-parametric estimates of spectral power, especially in the gamma frequency band.\n\nWe demonstrate the utility of our method for decoding cognitive states by using a penalized logistic regression classifier trained on the implied volatility data across MTL electrodes to predict which studied items will be subsequently recalled. We find that the MSV-derived features outperform spectral features in decoding cognitive states, supporting the value of this model-based time-series analysis approach to the study of human cognition. Furthermore, using the MSV model to construct a directional MTL connectivity network, we find that significant bidirectional desynchronization between the perirhinal cortex and the hippocampus predicts successful memory encoding.\n\n### Multivariate Stochastic Volatility models for iEEG\n\n#### Volatility of iEEG is stochastic\n\nPrevious studies have shown that variance of EEG recordings is time-varying (Wong et al., 2006; Galka et al., 2010). Klonowski et al. (2004) demonstrated a striking similarity between the timeseries of the Dow Jones index during economic recessions (big crashes) and the timeseries of iEEG during epileptic seizures. These timeseries typically possess 'big spikes' that are associated with abrupt changes in the variance of the measured signal. There are two main approaches for modeling the time-varying variance commonly known as volatility in the econometrics literature, both of which assume that volatility is a latent autoregressive process, that\u00a0is the current volatility depends on its previous values. The first approach is the class of autoregressive conditional heteroscedastic (ARCH) models developed by Engle (1982) and the generalized autoregressive conditional heteroscedastic (GARCH) models extended by Bollerslev (1986). The ARCH/GARCH models assume that the current volatility is a deterministic function of the previous volatilities and the information up to the current time. The second approach is the class of stochastic volatility models proposed by Heston (1993), which assume that volatility is non-deterministic and follows a random process with a Gaussian error term. GARCH-type models have been popular in the empirical research community since the 1980\u2019s due to their computational attractiveness. Inference of GARCH models is usually performed using maximum likelihood estimation methods (Engle and Bollerslev, 1986; Nelson, 1991). Until the mid 1990s, stochastic volatility models had not been widely used due to the difficulty in estimating the likelihood function, which involves integrating over a random latent process. With advances in computer technology, econometricians started to apply simulation-based techniques to estimate SV models (Kim et al., 1998; Chib et al., 2002; Jacquier et al., 1994). Despite their computational advantages, the GARCH model assumes a deterministic relationship between the current volatility and its previous information, making it slow to react to instantaneous changes in the system. In addition, Wang (2002) showed an asymptotic nonequivalance between the GARCH model and its diffusion limit if volatility is stochastic. Therefore, we employ a more general stochastic volatility approach to analyze iEEG signals.\n\nTo motivate the discussion of the MSV model, we first examine the distributional property of volatility. Previous econometrics literature has shown that volatilities of various financial timeseries can be well approximated by log-normal distributions such as the Standard and Poor 500 index (Cizeau et al., 1997), stock returns (Andersen, 2001a), and daily foreign exchange rates (Andersen et al., 2001b). The volatilities of these financial measures are found to be highly right-skewed and their logarithmic volatilities are approximately normal. Volatility of iEEG also exhibits this log-normality property. To demonstrate this property, we calculate and plot the density of the empirical variance of a sample iEEG timeseries using a rolling variance of window size 20 (Hull, 2009, chapter 17). Figure 1 demonstrates the distribution of the empirical volatility timeseries of the detrended (after removing autoregressive components) raw iEEG signals. The distribution is right-skewed and can be well approximated by a log-normal distribution. Due to this log-normality property, the SV approach typically models the logarithm of volatility instead of volatility itself. The next section describes the multivariate stochastic volatility model for iEEG data, which is a generalized version of the SV model that accounts for the interactions between recording brain locations.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/42950/elife-42950-fig1-v2.jpg)\n\n**Figure 1.:** (A) Sample raw iEEG time series during a resting state (count down non-task) period for subject R1240T.\u00a0(B) Detrended iEEG timeseries after removing autoregressive components. (C) Empirical variance timeseries calculated using a rolling-window of size 20. (D) Distribution of empirical variance with the blue curve showing the estimated empirical density using kernel density estimation and the red curve showing the best-fitting log-normal density to the data.\n\n#### The model\n\nStochastic volatility models belong to a wide class of non-linear state-space models that have been extensively used in financial economics. There has been overwhelming evidence of non-stationarity in the variance of financial data (Black et al., 1972) and much effort has been made to model and understand the changes in volatility in order to forecast future returns, price derivatives, and study recessions, inflations and monetary policies (Engle and Patton, 2001; Cogley and Sargent, 2005; Blanchard and Simon, 2001). There is by now a large literature on stochastic volatility models and methods for estimating these models either by closed-form solutions (Heston, 1993; Heston and Nandi, 2000) or by simulation (Harvey and Shephard, 1996; Kim et al., 1998; Omori et al., 2007). Under the stochastic volatility framework, the variance (or its monotonic transformation) of a time series is assumed to be a latent process, which is typically assumed to be autoregressive. Latent process models have also been widely applied to the neuroscience domain to model neuronal spiking activity using point processes (Macke et al., 2011; Smith and Brown, 2003; Eden et al., 2004), to study motor cortical activity using a state-space model (Wu et al., 2006), etc. These models have provided many insights into the mechanisms underlying cognitive processes. GARCH-type models have also been applied to EEG signals to study the transition into anesthesia in human, sleep stage transitions in sheep, and seizures in epileptic patients (Galka et al., 2010; Mohamadi et al., 2017). However, the applications of the GARCH models in the neuroscience literature remain on a small-scale, which focus on individual recording locations and neglect the connectivity among different regions of the brain. In this study, we provide a systematic way to study volatility of iEEG signals using a large iEEG dataset from the MTL region during a verbal memory task as a medium to illustrate how volatility and its connectivity network among MTL subregions can provide insights into the understanding of cognitive processes.\n\nFollowing Harvey et al. (1994), we model the multivariate latent volatility process of the iEEG signals in the MTL region to follow a vector autoregressive model. The original model assumes that the coefficient matrix is diagonal, that\u00a0is the past activity of one region does not have any influence on the others. In many financial applications, it is convenient to make this diagonality assumption to reduce the number of parameters of the MSV model, otherwise, a very large amount of data would be required to reliably estimate these parameters. We generalize the MSV model to allow for a full coefficient matrix in order to study the directional connections between different subregions in the MTL. This generalization is feasible due to high-temporal-resolution neural time series collected using the intracranial electroencephalography. Let $y_{t}=(y_{1,t},\u22ef,y_{J,t})$ be a multivariate iEEG time-series recordings at $J$ electrodes at time $t$. We model $y_{j,t}$, $1\\leqj\\leqJ$, as follows:\n\n$$\ny_{j,t}=exp\u2061(\\frac{x_{j,t}}{2})\u03f5_{j,t}^{y},\n$$\n\nand\n\n$$\nx_{j,t}\u2212\\mu_{j}=\\sumk=1J\\beta_{j,k}(x_{k,t\u22121}\u2212\\mu_{k})+\u03f5_{j,t}^{x},\n$$\n\nwhere the error terms follow multivariate normal distributions: $\u03f5_{t}^{y}=(\u03f5_{1,t}^{y},\u22ef,\u03f5_{J,t}^{y})\u223c\u2133\ud835\udcb1\ud835\udca9(0,I_{J})$, $\u03f5_{t}^{x}=(\u03f5_{1,t}^{x},\u22ef,\u03f5_{J,t}^{x})\u223c\u2133\ud835\udcb1\ud835\udca9(0,\u03a3)$ denotes the identity matrix of rank $J$, and $\ud835\udeba=d\u2062i\u2062a\u2062g\u2062(\\sigma_{1}^{2},\u22ef,\\sigma_{J}^{2})$ is assumed to be diagonal. That is, ${y_{j,t}}$ is a time series whose conditional log-variance (log-volatility), ${x_{j,t}}$, follows an AR(1) process that depends on its past value and the past values of other electrodes. The series {$y_{1,t}}_{t=1}^{T},\u22ef,{y_{J,t}}_{t=1}^{T}$ are assumed to be conditionally independent given their log-volatility series ${x_{1,t}}_{t=1}^{T},\u22ef,{x_{J,t}}_{t=1}^{T}$. The coefficient $\\beta_{j,k}$ models how the past value of channel $k$ affects the current value of channel $j$ and $\\mu_{k}$ is the unconditional average volatility at channel $k$. We can rewrite Equation 2 in a matrix form\n\n$$\n\ud835\udc31_{t}-\ud835\udf41=\ud835\udf37\u2062(\ud835\udc31_{t-1}-\ud835\udf41)+\u03f5_{t}^{x},\n$$\n\nwhere $\ud835\udc31_{t}=(x_{1,t},\u22ef,x_{J,t}),\ud835\udf41=(\\mu_{1},\u22ef,\\mu_{J})$, and $\ud835\udf37\u2062(j,k)=\\beta_{j,k}$. The vector error terms $\u03f5_{t}^{y}$ and $\u03f5_{t}^{x}$ are assumed to be independent. The parameters in the system above are assumed to be unknown and need to be estimated.\n\nFollowing a Bayesian perspective, we assume that the parameters are not completely unknown, but they follow some prior distributions. Then, using the prior distributions and the information provided by the data, we can make inferences about the parameters from their posterior distributions.\n\n### Priors and estimation method\n\nWe specify prior distributions for the set of parameters $\ud835\udf3d=(\ud835\udf41,\ud835\udf37,\ud835\udeba)$ of the MSV model. The mean vector $\ud835\udf41$ follows a flat multivariate normal distribution $\ud835\udf41\u223c\u2133\u2062\ud835\udcb1\u2062\ud835\udca9\u2062(0,1000\u2062I_{J})$. Each entry of the persistence matrix $\\beta_{i,j}\\in(-1,1)$ is assumed to follow a beta distribution, $(\\beta_{i,j}+1)/2\u223cB\u2062e\u2062t\u2062a\u2062(20,1.5)$\u00a0(Kim et al., 1998). The beta prior distribution ensures that the entries of the persistent matrix are between \u22121 and 1, which guarantees the stationarity of the volatility process. For volatility of volatility, we utilize a flat gamma prior, $\\sigma_{j}\u223c\u0393\u2062(1/2,1/2\\times10)$\u00a0(Kastner and Fr\u00fchwirth-Schnatter, 2014), which is equivalent to $\\pm\\sqrt{\\sigma_{j}^{2}}\u223cN\u2062(0,10)$. We estimated the latent volatility processes and the parameters of the MSV model using a Metropolis-within-Gibbs sampler (Kim et al., 1998; Omori et al., 2007; Kastner and Fr\u00fchwirth-Schnatter, 2014) (see Appendix\u00a01 for derivation and 2 for discussion of parameter identification). Here, we choose hyperparameters which provide relatively flat prior distributions. In addition, due to a large amount of data (\u22481 million time points per model for each subject) that was used to estimate the MSV model, the choice of the hyperparameters has little effect on the posterior estimates of the parameters in the MSV model.\n\n### Applications to verbal-free recall task\n\nWe analyzed the behavioral and electrophysiological data of 96 subjects implanted with MTL subdural and depth electrodes during a verbal free recall memory task (see Materials\u00a0and\u00a0methods section for details), a powerful paradigm for studying episodic memory. Subjects learned 25 lists of 12 unrelated words presented on a screen (encoding period) separated by 800\u20131200 ms interstimulus intervals (ISI), with each list followed by a short arithmetic distractor task to reduce recency effects (subjects more likely to recall words at the end of the list). During the retrieval period, subjects recalled as many words from the previously studied list as possible, in any order (Figure 2). In this paper, we focused our analyses on the MTL regions that have been implicated in episodic memory encoding (Squire and Zola-Morgan, 1991; Solomon et al., 2019; Long and Kahana, 2015). To assess a particular effect across subjects, we utilized the maximum a posteriori (MAP) estimate by taking the posterior mean of the variable of interest (whether it be the volatility time series $\ud835\udc31_{t}$ or the regression coefficient matrix $\ud835\udf37$) (Stephan et al., 2010).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/42950/elife-42950-fig2-v2.jpg)\n\n**Figure 2.:** (A) Subjects performed a verbal free-recall task which consists of three phases: (1) word encoding, (2) math distraction, and (3) retrieval. (B) 96 Participants were implanted with depth electrodes in the medial temporal lobe (MTL) with localized subregions: CA1, CA3, dentate gyrus (DG), subiculum (Sub), perirhinal cortex (PRC), entorhinal cortex (EC), or parahippocampal cortex (PHC). (C) To construct a directional connectivity network, we applied the MSV model to brain signals recorded from electrodes in the MTL during encoding. We analyzed the 1.6 s epochs during which words were presented on the screen. The network reflects directional lag-one correlations among the implied volatility timeseries recorded at various MTL subregions. (D) The upper row shows a sample of an individual patient\u2019s raw voltage timeseries (blue) recorded from two electrodes during a word encoding period of 1.6 s, and the lower row shows their corresponding implied volatility timseries (gray) estimated using the MSV model.\n\n### Model comparison\n\nTo establish the validity of the MSV model, we compared its performance to that of univariate stochastic volatility models (equivalent to setting all the off-diagonal entries of the matrix $\ud835\udf37$ in Equation 2 to 0) in fitting iEEG data. We applied the MSV model to the multivariate neural data combined across encoding periods (regardless of whether the word items were later recalled) and SV models to datasets of individual electrodes with the assumption that the parameters of these models were shared across encoding events. We utilized the deviance information criterion (DIC) (Spiegelhalter et al., 2002; Gelman et al., 2014) considered to be a Bayesian analogue of the Akaike information criterion (AIC) to evaluate the performance of the models. The DIC consists of two components: the negative log-likelihood, $D\u00af=\ud835\udd3c_{\ud835\udf3d,\ud835\udc31\u2223\ud835\udc32}\u2062[-2\u2062log\u2061P\u2062(\ud835\udc32\u2223\ud835\udf3d,\ud835\udc31)]$, which measures the goodness-of-fit of the model and the effective number of parameters, $p_{D}=D\u00af-D\u2062(\ud835\udf3d\u00af,\ud835\udc31\u00af)=\ud835\udd3c_{\ud835\udf3d,\ud835\udc31\u2223\ud835\udc32}\u2062[-2\u2062log\u2061P\u2062(\ud835\udc32\u2223\ud835\udf3d,\ud835\udc31)]+2\u2062log\u2061P\u2062(\ud835\udc32\u2223\ud835\udf3d\u00af,\ud835\udc31\u00af)$, which measures the complexity of the model (see Appendix 5 for details on how to compute DIC for the MSV model). Where $\ud835\udf3d\u00af$ and $\ud835\udc31\u00af$ denote the posterior means of the latent volatility series and the parameters of the MSV model. The DIC balances the trade-off between model fit and model complexity. Models with smaller DICs are preferred. To account for the varying amount of data each subject had, we averaged the DIC by the number of events and electrodes. We found the MSV model to have a consistently lower DIC value than the SV model with a mean difference of 23 (\u00b15.9 SEM). This indicates that the MSV model is approximately more than 150 times as probable as the SV models (Kass and Raftery, 1995), suggesting that the MSV model is a more appropriate model for iEEG data.\n\n### Relation to spectral power\n\nWe next analyzed the relation between volatility and spectral power (see Materials and methods) over a wide range of frequencies, from 3 to 180 Hz with 1 Hz steps). For each subject, we computed the correlation between volatility and spectral power for each encoding event and then averaged these correlations across all events. Since spectral powers of neighboring frequencies exhibit high correlations, we utilized a Gaussian regression model (Rasmussen, 2004) to estimate the correlation between volatility and spectral power as a function of frequency, which allows for a non-linear relation. Figure 3 indicates that the correlation between volatility and spectral power is significantly positive across the spectrum and increasing in frequency. This illustrates the broadband nature of the volatility measure, but also suggests that volatility may more closely relate to previous neuroscientific findings observed for high-frequency as compared with low-frequency activity. Having established that the MSV model outperforms the more traditional SV approach, and having shown that the implied volatility of the series reliably correlates with high-frequency neural activity, we next asked whether we can use the model-derived time series of volatility to predict subjects\u2019 behavior in a memory task.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/42950/elife-42950-fig3-v2.jpg)\n\n**Figure 3.:** We fit a Gaussian process model to estimate the functional form of the correlation function between volatility and spectral power (solid blue line). The 95% confidence bands were constructed from 96 subjects (dashed gray lines). The red line shows the null model. We observe a significantly positive correlation between volatility and spectral power, and the correlation increases with frequency.\n\n### Classification of subsequent memory recall\n\nExtensive previous work on the electrophysiological correlates of memory encoding has shown that spectral power, in both the low-frequency (4\u20138 Hz) theta band and at frequencies about 40 Hz (so-called gamma activity), reliably predicts which studied words will be subsequently recalled or recognized (Sederberg et al., 2003). Here, we ask whether the implied volatility derived from the MSV model during word encoding can also reliably predict subsequent recall. To benchmark our MSV findings, we conducted parallel analyses of wavelet-derived spectral power at frequencies ranging between 3\u00a0and\u00a0180 Hz. To aggregate across MTL electrodes within each subject we applied an L2-penalized logistic regression classifier using features extracted during the encoding period to predict subsequent memory performance (Ezzyat et al., 2017; Ezzyat et al., 2018). To estimate the generalization of the classifier, we utilized a nested cross-validation procedure in which we trained the model on $N-1$ sessions using the optimal penalty parameter selected via another inner cross-validation procedure on the same training data (see Appendix 6 for details). We then tested the classifier on a hold-out session collected at a different time. We computed the receiver operating characteristic (ROC) curve, relating true and false positives, as a function of the criterion used to assign regression output to response labels (see Appendix 6 for illustrations of ROC curves). We then use the AUC metric (area under the ROC curve) to characterize model performance. In order to perform a nested cross-validation procedure, we focused on 42 subjects (out of 96 subjects with at least two sessions) with at least three sessions of recording. We find that MSV-model implied volatility during item encoding reliably predicts subsequent recall, yielding an average AUC of 0.53 (95% CI, from 0.51 to 0.55). AUCs reliably exceeded chance levels in 72 percent of subjects (30 out of 42 subjects who contributed at least 3 sessions of data). Figure 4 compares these findings against results obtained using wavelet-derived power. Here we see that implied volatility does as well as, or better than, spectral measures at nearly all frequencies. In order to capture the correlation between spectral powers (thus their corresponding classifiers\u2019 performances), we fit a Gaussian regression model to test the functional form of $\u0394$AUC. We find that the $\u0394$AUC function is significantly different from the 0 function ($\u03c7_{11}^{2}=42$, P < $10^{-5})$\u00a0(Benavoli and Mangili, 2015), which indicates that on average volatility performs significantly better than spectral power in predicting subsequent memory recall.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/42950/elife-42950-fig4-v2.jpg)\n\n**Figure 4.:** (A) Average AUC of the classifier trained on spectral power across 42 subjects with at least three sessions of recording (blue).\u00a0The red line indicates the average AUC of the classifier trained on volatility. (B)\u00a0$\u0394$AUC\u00a0=\u00a0AUC$_{v\u2062o\u2062l}$$\u2212$AUC$_{p\u2062o\u2062w\u2062e\u2062r}$\u00a0as a function of frequency estimated by using a Gaussian regression model (dashed gray lines indicate 95% confidence bands). The red line shows the null model. We observe that the classifier trained on volatility performs at least as well as the one trained on spectral power across the frequency spectrum. We find that functional form of $\u0394$AUC is significantly different from the function ($\u03c7_{11}^{2}=42$, P < $10^{-5}$) using a Gaussian process model, suggesting that the difference in performance between the volatility classifier and the spectral power classifier is significant.\n\n### Directional connectivity analysis\n\nHaving established that volatility is predictive of subsequent memory recall, we now seek to identify directional connections between MTL subregions that are related to successful memory encoding. To investigate the intra-MTL directional connectivity patterns that correlate with successful memory encoding, we utilize a subsequent memory effect (SME) paradigm in which we compare the MTL directional connectivity patterns (regression coefficient matrix $\ud835\udf37$) associated with recalled (R) word items to those associated with non-recalled (NR) items. The SME paradigm has been widely used in the memory literature to study neural correlates (typically spectral power in a specific frequency band) that predict successful memory formation (Sederberg et al., 2003; Long et al., 2014; Burke et al., 2014). The intra-MTL connectivity SME was constructed using the following procedure. First, we partitioned the word items into recalled and non-recalled items offline. Using the MSV model, we constructed an intra-MTL connectivity network for each memory outcome. We compared the distribution of the elements of these matrices across subjects. For the analysis, we considered four subregions of the MTL: hippocampus (Hipp), entorhinal cortex (EC), perirhinal cortex (PRC), and parahippocampal cortex (PHC). Each MTL subregion contains a different number of recording locations depending on the subject\u2019s electrode coverage. We then computed the contrast between the two intra-MTL networks corresponding to recalled and non-recalled items for each ordered pair of subregions excluding the ones with fewer than 10 subjects contributing to the analysis. To compute the directional connectivity from region $I$ to region $J$, we took the average of the lag-one 'influences\u2019 that electrodes in region $I$ have on electrodes in region $J$, where $|I|$ denotes the number of electrodes in region $I$. We then computed the contrast between the two connectivity networks associated with recalled and non-recalled items: $\u0394_{I\u2192J}=C_{I\u2192J}^{R}-C_{I\u2192J}^{N\u2062R}$. Finally, we averaged the contrast for each ordered pair of MTL subregions across sessions within a subject. From now on, we refer to this contrast as simply connectivity network.\n\nFigure 5 illustrates the intra-MTL connectivity SME for the left and right hemispheres. Directed connections between the left hippocampus and the left PRC reliably decrease (false-discovery-rate-corrected) during successful memory encoding ($\u0394_{H\u2062i\u2062p\u2062p\u2192P\u2062R\u2062C}=-0.04,t_{47}=-3.49$, adj. P $<0.01$ and $\u0394_{P\u2062R\u2062C\u2192H\u2062i\u2062p\u2062p}=-0.06,t_{47}=-2.66$, adj. P $<0.05)$. The difference between the directional connections between these two regions is not significant ($t_{47}$=0.53, p=0.60). The decreases in the bi-directional connections within the left MTL are consistent with the findings in Solomon et al. (2017) which noted memory-related decreases in phase synchronization at high frequencies. We did not, however, find any other significant directional connections among the remaining regions (Figure 5, Appendix 7\u2014tables 1 and 2).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/42950/elife-42950-fig5-v2.jpg)\n\n**Figure 5.:** The MTL electrodes were divided into four subregions: hippocampus (Hipp.), parahippocampal cortex (PHC), entorhinal cortex (EC), and perirhinal cortex (PRC). The directional connectivity from region I to region J, $C_{I\u2192J}=\\frac{1}{|I|\u2062|J|}\u2062\\sum_{i\\inI,j\\inJ}\ud835\udf37_{i\u2062j}$, was calculated by averaging the entries of the sub-matrix of the regression coefficient matrix $\ud835\udf37$, whose rows and columns correspond to region I and J respectively. We computed the contrast between the directional connectivity of recalled and non-recalled events: $\u0394_{I\u2192J}=C_{I\u2192J}^{R}-C_{I\u2192J}^{N\u2062R}$ for each subject. Solid lines show significant (FDR-corrected) connections between two regions and dashed lines show trending but insignificant connections. Red indicates positive changes and blue indicates negative changes. The directional connectivity from Hipp. to PRC is significant (adj. P < 0.01) and the reverse directional connectivity is also significant (adj. P < 0.05).\n\n## Discussion\n\nThe ability to record electrophysiological signals from large numbers of brain recording sites has created a wealth of data on the neural basis of behavior and a pressing need for statistical methods suited to the properties of multivariate, neural, time-series data. Because neural data strongly violate variance-stationarity assumptions underlying standard approaches, such as Granger causality (Stokes and Purdon, 2017), researchers have generally eschewed these model-based approaches and embraced non-parameter data analytic procedures. The multivariate stochastic volatility framework that we propose allows for non-stationary variance in the signals. This framework allows us to explicitly model the time-varying variance of neural signals. Similar stochastic volatility models have been used extensively in the financial economics literature to characterize a wide range of phenomena.\n\nThe MSV models proposed in this paper provide a new framework for studying multi-channel neural data and relating them to cognition. Using a large MTL intracranical EEG dataset from 96 neurosurgical patients while performing a free-recall task, we found that volatility of iEEG timeseries is correlated with spectral power across the frequency spectrum and the correlation increases with frequency. To further test the ability of the MSV model to link iEEG recordings to behavior, we asked whether MTL volatility features during encoding can predict subsequent memory recall as well as spectral power features. Our findings indicate that volatility features significantly outperform the spectral features in decoding memory process in the human brain, suggesting that volatility can serve as a reliable measure for understanding cognitive processes.\n\nA key strength of the MSV approach is its ability to identify directed interactions between brain regions without assuming variance-stationarity of neural signals. We therefore used this approach to determine the directional connections between MTL subregions that correlate with successful memory encoding. Using the regression coefficient matrix of the multivariate volatility process, we found that periods of decreased connectivity in the volatility network among MTL subregions predicted successful learning. Specifically, we found that the hippocampus and the perirhinal cortex in the left hemisphere desynchronize (exerting less influence on one another) during successful learning, which is consistent with the late-phase gamma decoupling noted in Fell et al. (2001). A more recent study by Solomon et al. (2019)\u00a0also examined the association between intra-MTL connectivity and successful memory formation using phase-based measures of connectivity. Solomon et al. (2019) noted intra-MTL desynchronization at high frequencies during successful memory formation, aligning with the finding here that the volatility network tended to desynchronize. Furthermore, Solomon, et al. found broad increases in low-frequency connectivity, which did not appear to be captured by our stochastic model. This suggests that volatility features reflect neural processes that are also captured by high-frequency phase information.\n\nWe further noted more statistically reliable changes in volatility networks in the left MTL compared to the right. This result is in line with a long history of neuroanatomical, electrophysiological, and imaging studies (e.g. Ojemann and Dodrill, 1985; Kelley et al., 1998) that found an association between verbal memory and the left MTL. It is possible that the verbal nature of our memory task specifically engaged processing in the left MTL, resulting in a lateralization of observed volatility phenomena.\n\nPrior studies implicate the perirhinal cortex in judgement of familiarity and in recency discrimination system, while the hippocampus supports contextual binding (Eichenbaum et al., 2007; Diana et al., 2007; Hasselmo, 2005). These two systems play important roles in memory associative retrieval as suggested by animal studies (Brown and Aggleton, 2001), but it is still unclear how the hippocampus and PRC interact during memory processing. Fell et al. (2006) suggested that rhinal-hippocampal coupling in the gamma range is associated with successful memory formation. Our results show no evidence for such a phenomenon, but rather agree with more recent studies demonstrating memory-related overall high-frequency desynchronization in the MTL (Solomon et al., 2019; Burke et al., 2015).\n\nThis paper presents the first major application of stochastic volatility models to neural time-series data. The use of a multivariate modeling approach allows us to account for interactions between different subregions in the MTL and thus provides a better fit to the neural data than a univariate approach. Our MSV model fully captures how changes in neural data measured by volatility in one region influences changes in another region, providing insights into the complex dynamics of neural brain signals. We further demonstrated that volatility can be a promising biomarker due to its broadband nature by comparing its performance to one of spectral power in classifying subsequent memory. Finally, researchers can extend these models to broader classes of neural recordings, and exploit their statistical power to substantially increase our understanding of how behavior emerges from the complex interplay of neural activity across many brain regions.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent, type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional Information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Software and algorithm</td>\n      <td></td>\n      <td>Avants et al., 2008</td>\n      <td>http://picsl.upenn.edu/software/ants</td>\n      <td>advanced normalization tool</td>\n    </tr>\n    <tr>\n      <td>Software and algorithm</td>\n      <td></td>\n      <td>Yushkevich et al., 2015</td>\n      <td>https://www.nitrc.org/projects/ashs</td>\n      <td>ashs</td>\n    </tr>\n    <tr>\n      <td>Software and algorithm</td>\n      <td>sklearnc</td>\n      <td>Pedregosa et al., 2011</td>\n      <td>https://scikit-learn.org/stable/</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software and algorithm</td>\n      <td></td>\n      <td>This paper</td>\n      <td>http://memory.psych.upenn.edu/Electrophysiological_Data</td>\n      <td>custom processing scripts</td>\n    </tr>\n    <tr>\n      <td>Software and algorithm</td>\n      <td>PTSA</td>\n      <td>This paper</td>\n      <td>https://github.com/pennmem/ptsa_new</td>\n      <td>processing pipeline for reading in iEEG</td>\n    </tr>\n  </tbody>\n</table>\n\n### Participants\n\nNinety six patients with drug-resistant epilepsy undergoing intracranial electroencephalographic monitoring were recruited in this study. Data were collected as part of a study of the effects of electrical stimulation on memory-related brain function at multiple medical centers. Surgery and iEEG monitoring were performed at the following centers: Thomas Jefferson University Hospital (Philadelphia, PA), Mayo Clinic (Rochester, MN), Hospital of the University of Pennsylvania (Philadelphia, PA), Emory University Hospital (Atlanta, GA), University of Texas Southwestern Medical Center (Dallas, TX), Dartmouth-Hitchcock Medical Center (Lebanon, NH), Columbia University Medical Center (New York, NY) and the National Institutes of Health (Bethesda, MD). The research protocol was approved by the Institutional Review Board at each hospital and informed consent was obtained from each participant. Electrophysiological signals were collected from electrodes implanted subdurally on the cortical surface and within brain parenchyma. The neurosurgeons at each clinical site determined the placement of electrodes to best localize epileptogenic regions. Across the clinical sites, the following models of depth and grid electrodes (electrode diameter in parentheses) were used: PMT Depthalon (0.86 mm); Adtech Spencer RD (0.86 mm); Adtech Spencer SD (1.12 mm); Adtech Behnke-Fried (1.28 mm); Adtech subdural and grids (2.3 mm). The dataset can be requested at http://memory.psych.upenn.edu/RAM_Public_Data.\n\n### Free-recall task\n\nEach subject participated in a delayed free-recall task in which they were instructed to study a list of words for later recall test. The task is comprised of three parts: encoding, delay, and retrieval. During encoding, the subjects were presented with a list of 12 words that were randomly selected from a pool of nouns (http://memory.psych.upenn.edu/WordPools). Each word presentation lasts for 1600 ms followed by a blank inter-stimulus interval (ISI) of 800 to 1200 ms. To mitigate the recency effect (recalling last items best) and the primacy effect (recalling first items better than the middle items), subjects were asked to perform a math distraction task immediately after the presentation of the last word. The math problems were of the form A+B+C = ?, where A,B,C were randomly selected digits. The delay math task lasted for 20 s, after which subjects were asked to recall as many words as possible from the recent list of words, in any order during the 30 s recall period. Subjects performed up to 25 lists per session of recording (300 words). Multiple sessions were recorded over the course of the patient\u2019s hospital stay.\n\n### Electrophysiological recordings and data processing\n\niEEG signals were recorded from subdural and depth electrodes at various sampling rates (500, 1000, or 1600 Hz) based on the the amplifier and the preference of the clinical team using one of the following EEG systems: DeltaMed XlTek (Natus), Grass Telefactor, and Nihon-Kohden. We applied a 5 Hz band-stop fourth order Butterworth filter centered on 60 Hz to attenuate signal from electrical noise. We re-referenced the data using the common average of all electrodes in the MTL to eliminate potentially confounding large-scale artifacts and noise. We used Morlet wavelet transform (wave number\u00a0=\u00a05) to compute power as a function of time for our iEEG signals. The frequencies were sample linearly from 3 to 180 Hz with 1 Hz increments. For each electrode and frequency, spectral power was log-transformed and then averaged over the encoding period. Within a session of recording, the spectral power was z-scored using the distribution of power features across events.\n\nTo extract volatility feature, we applied the MSV model to the dataset constructed from the encoding events with an assumption that the parameters governing the dynamics of the volatility process does not change within a session of recording, that\u00a0is the parameters of the MSV model are assumed to be shared across encoding events. Since we were only interested in the dynamics of the volatility time series of the brain signals, not the orignal time series themselves, we detrended the raw time series using vector autoregressive models of order $p$, where $p$ was selected based on the Akaike information criterion (AIC) to remove any autocorrelation in the raw signals and to make the time series more suited for an MSV application.\n\nIn the present manuscript, we used the common average reference (of MTL electrodes) to remove large-scale noise from our MTL recordings. While the bipolar reference is frequently used for such analyses, due to its superior spatial selectivity, several factors limit its utility in this context. First, connectivity between a pair of adjacent bipolar electrodes is contaminated by signal common to their shared monopolar contact; as such, it is difficult to interpret connectivity between such pairs. In the setting of linear depth electrodes placed within the MTL, a substantial portion of the data between pairs of nearby MTL subregions would have to be excluded due to shared monopolar contacts. Second, bipolar re-referencing within the MTL produces the undesirable outcome that a bipolar midpoint 'virtual\u2019 electrode could fall in a subregion where neither physical contact was placed, making observed connectivities difficult to interpret.\n\n### Anatomical localization\n\nThe MTL electrodes were anatomically localized using the following procedure. Hippocampal subfields and MTL cortices were automatically labeled in a pre-implant 2 mm thick T2-weighted MRI using the Automatic segmentation of hippocampal subfields (ASHS) multi-atlas segmentation method (Yushkevich et al., 2015). A post-implant was co-registered with the MRI using Advanced Normalization Tools (Avants et al., 2008). MTL depth electrodes that were visible in the CT were then localized by a pair of neuroradiologists with expertise in MTL anatomy.\n\n### Statistical analyses\n\nTo assess an effect across subjects, we applied classical statistical tests on the maximum a posteriori (MAP) estimate of the parameter of interest . This approach has been used in many Bayesian applications to FMRI studies (Stephan et al., 2010) to test an effect across subjects. For analyses concerning frequencies, we applied Gaussian regression models (Rasmussen, 2004) to take the correlations among frequencies into account. We used the Matern (5/2) kernel function for all analyses that used Gaussian regression models, which enforces that the underlying functional form be at least twice differentiable. p-values were FDR-corrected at $\\alpha=0.05$ significance level when multiple tests were conducted.\n",
+      "created_at": "2025-12-02T11:28:18.183224Z"
+    },
+    {
+      "id": "8411245a-5d11-48ac-ab50-258de0d63b6d",
+      "submission_id": "b29aaa45-5d0d-44ed-840e-7cce3cf9464a",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Michael Breakspear, QIMR Berghofer Medical Research Institute Australia\n\nReviewers:\n- Pedro Vald\u00e9s-Sosa\n\n## Review text\n\nDOI: [10.7554/eLife.42950.025](https://doi.org/10.7554/eLife.42950.025)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Multivariate Stochastic Volatility Modeling of Neural Data\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Michael Frank as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Pedro Vald\u00e9s-Sosa (Reviewer #3).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThe authors employ time varying analyses of the (multivariate) variance to a large data set of intracranial EEG. A hierarchical series of analyses is applied to capture an increasing complexity of distributed network activity. The authors establish that their approach can capture neuronal activity that predicts the behavioural performance of the experimental participants, an important proof-of-principle.\n\nThis is an important departure from classic (mean-based) autoregressive models of neurophysiological data. All three reviewers acknowledge the innovation of the approach and the quality of the presentation.\n\nEssential revisions:\n\n1) Better contextualization is requested by all three reviewers.\n\n2) Reviewer 1 requests some further validation and I agree with this. You may choose to use eLife's figure supplements to do this.\n\n3) Reviewer 1 also requests some elaboration of the theory and better presentation of the figures. These should be addressed.\n\n4) I think the comparison with the power spectrum in the prediction section is informative in its current state (the authors already attended to aspects of this section in a pre-submission process). Reviewer 1 has requested consideration of some alternative benchmarks here \u2013 these may be of interest but are not essential.\n\nReviewer #1:\n\nThe manuscript \u201cMultivariate Stochastic Volatility Modeling of Neural Data\u201d by Phan et al. addresses the problem of time-varying variance (volatility) in EEG data. It presents a multivariate model that describes the evolution of the variance over time. In this multivariate model, the variances of the channels evolve in a fashion described by an autoregressive model. The authors present a method to fit the model to data. They then (i) show that the multivariate model captures the data better than a univariate model, (ii) show that the volatility approach correlates with established methods based on the power spectrum, (iii) demonstrate that the volatility bears predictive power for the outcome of the experiment, and (iv) use the volatility coupling matrix to infer some changes in the effective connectivity between successfully memorized and not memorized items.\n\nWhile their approach is intriguing in places, and the inference of multivariate couplings is indeed an open topic in the field, I have several considerations that limit my enthusiasm. I would request the authors to address these in detail before reconsidering the manuscript.\n\nFirst, the authors introduce a novel method for estimating model parameters without showing many of its central properties. Most importantly, the data-sensitivity of multivariate approaches is not explored here (although the authors do acknowledge it in the Introduction): how does the variability of their method depend on the amount of data? Appendix 1\u2014table 1 does not address these problems. Furthermore, the three example studies are not a systematic proof of the consistency of the estimate. What happens, for example, if the largest eigenvalue of the coupling matrix is close to 1, i.e. close to a phase transition?\n\nSecond, in this light the authors should at least compare their method to established pair-wise quantities (cross-correlations, synchronization, information theoretic measures) and show that the observed decoupling is not equally visible in these well-established (and more data-efficient) methods.\n\nThird, there is considerable literature on multivariate time series analysis, including volatility. For example, ARCH and GARCH models are rather frequently used. One reference that I am aware of (although this is just the tip of the iceberg) is Galka et al. (2010). The authors should relate their work to the established models, show how they differ and what benefit their novel approach yields.\n\nEquation 1: I do not really understand why the model is constructed this way. I understand that the modeled variance enters exponentially, but do the authors have a justification for this approach? Second, the approach presented here only correlates the variance over time, while \u03f5jty is still drawn from a normal distribution. If I am not mistaken, yt will hence look like Gaussian noise with changing amplitude. Does the data look like this? I would expect a more pronounced autocorrelation of the raw EEG signals. It might help if the authors showed (and clearly marked, see below about Figure 1) example data that they try to fit.\n\nFigure 1: I find panel C inconsistent and incomprehensible in many respects. (i) Why are there 1 second intervals shown in the Countdown period? Why is this panel shown at all, given there are no data? (I guess this indicates that these data were not analyzed?) (ii) In the encoding period, why are there pauses between the words? These pauses are not mentioned in the description of the experiment. Are they included in the analysis or not? If not, why are the data still shown, given no data are shown for the Countdown period? Also, the label indicating the length of the intervals is rather hidden, given all other scales are at the top of the diagrams. Last, what does REM / Not REM mean? It can be guessed but is not explained anywhere. (iii) A distractor task following the encoding is mentioned in the text but not shown in the figure. (iv) The free-recall diagram is not explained at all. Was it analyzed (so far, the text says otherwise)? If not, why are data still shown, and what do the intervals indicate? Also there is no length scale for the white intervals. (v) The panel does not state what the plots show. The (very small, and unintuitively placed) label \"Compute volatility\" seems to indicate that it is the time series yt,i of two channels, from which the volatility is then computed? (vi) I think readers could greatly benefit from an illustration of the workflow from y to theta and x, for example incorporating elements from Appendix 1\u2014figure 1.\n\nSubsection \u201cRelation to Spectral Power\u201d: This whole paragraph is imprecise in the details. (i) What is an \"encoding event\"? If it is each single word during any encoding period, this would imply a data length of 1.6 seconds each. How would this fit with the Introduction, which states that fitting a multivariate model is hard for limited data? (ii) The Materials and methods say that averaging was done per subject. So does Figure 2 show exemplary results for one subject? If so, this should be indicated, and the generalization to all subjects discussed.\n\nSubsection \u201cClassification of Subsequent Memory Recall\u201d: I get that the authors want to show the predictive power of volatility. However, to make this point it would suffice to show that it is above chance level. I do not see the significance of comparing it to the predictive power of methods based on the power spectrum. Furthermore, why does the classifier only take into account each band of the power spectrum? Should a classification based on all bands simultaneously not be much more powerful?\n\nSubsection \u201cDirectional Connectivity Analysis\u201d: While I understand the approach by the authors, the results are displayed in a way that I find hard to comprehend. (i) The authors should indicate the inferred values for the coupling matrix and discuss its significance for the dynamics of the process (intrinsic timescales etc.). (ii) The authors first state that directed connections between left HC and PRC decrease, but then also say that the difference between directional connections between these areas is not significant. Do they refer to the difference between HC \u2192 PRC and PRC \u2192 HC? If yes, do the reported p-values refer to the R or NR set of items?\n\nThe first three paragraphs of the Discussion are a mere introduction or repetition of results, and should hence be included in the Introduction or be omitted.\n\nDiscussion, fourth paragraph: Why is the decoupling only found in the left hemisphere? This striking difference is completely neglected by the authors. Although I am not too familiar with the cited study by Fell et al. (2006), it does not appear to confirm this difference between hemispheres. As this limitation to the left hemisphere will probably be very obvious to many readers, the authors should discuss it.\n\nDiscussion, last paragraph: The authors suggest that fellow researchers can use and extend their method. With this in mind, it would be very beneficial if the authors made their code publicly available.\n\nReviewer #2:\n\nI believe that this paper succeeds in rolling out a new method for multivariate signal analysis for multi-channel neural data. The paper presents an application of an approach to multi-process (here multi-channel) time series data that was first utilized in the analysis of financial time series. In this approach, the variance of the time series is not assumed to be constant across the periods of analysis. Methods such as Granger causality assume variance stationarity between brain regions in order to identify directed interactions between the regions. However, variance stationarity is often not observed in neural data. The method developed here (MSV: multivariate stochastic volatility) models multi-electrode depth recordings from the medial temporal lobes (MTL) of 96 epilepsy patients participating in word-list recall task. The key innovation is the use of an autoregressive framework to model the fluctuations in the variance of the time series across the encoding interval of the behavioral task and across the data channels. Through a fairly rigorous and detailed analysis of the variables of the state-space MSV model, including the regression coefficient matrix, the authors are able to infer how the signals in the multiple channels interact in time and across space. The authors are able to conclude that during successful encoding of words the connectivity between the hippocampus and the perirhinal cortex in the left hemisphere decreases from a resting condition where the former drives the latter more strongly than the latter drives the former. The authors are also able to predict which words from the lists will be successfully recalled by measuring the volatility in the neural data.\n\nThe methodology described here will find many applications in other studies using large-scale electrophysiology and MEG. As a consequence, this paper will be of considerable interest to the large community of researchers investigating brain networks.\n\nThe authors use a limited number of equations to explain their methods of modeling and their analysis of the data and instead rely on the text do a lot of the expository work, which is fine given that text is clear and well written.\n\nThe authors do a good job of placing the MSV model in the context of non-parametric methods such as spectral analysis and provide a means to link the two together. Through this linkage the authors are able to show that the correlation between volatility and spectral power is nearly proportional to the analysis frequency in the spectrum. This suggests that neural activity in the gamma band is more volatile than at lower frequencies. This result is of interest because it suggests that the conflicting reports in the literature about the nature and function of gamma band activity in neural activity may in part be due to the application of non-parametric methods that require that the time series be stationary over the data periods of interest.\n\nOne improvement here would be if the authors also included the analysis of the neural activity during a time window other than the encoding phase. For example, if the countdown phase was also submitted to the same MSV modeling, the hippocampus and perirhinal cortex should show a different functional connectivity than what was reported for successful encoding of words. The authors should also comment on whether the MSV modeling can be applied to a network that includes 20 distinct sites, instead of just 4, as was done in the paper.\n\nReviewer #3:\n\nThis is excellent work and directs us away from looking at directional measure of influence based on pure autoregressive models (which focus on the conditional mean). Rather interest is focused on the conditional variance, which is shown in a clear way to have advantages over traditional Granger Causality measures. I am convinced by the evidence presented.\n\nThe paper would benefit by clarifying the sub-types of stochastic volatility models. There is some confusion in the field. The authors seem to be applying a type of GARCH model, sometimes proposed as distinct from SV and sometimes a subtype.\n\nI do suggest that some prior work be cited properly. The Wong paper is cited in a way that suggests that it is relevant for emphasizing non-stationary when in reality is also a multivariate stochastic volatility model. The same group even attempted source localization in Galka, Yamashita and Ozaki (2004). This is all well covered in the book by Ozaki on time series modeling of neuroscience data.\n\nFinally in the Discussion I would suggest a discussion with combined AR type models and those with stochastic volatility: see Mohamadi et al. (2017).\n\nI also do not see if the code will be made publicly available.\n",
+      "created_at": "2025-12-02T11:28:18.183224Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T11:28:18.183224Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T11:28:18.183224Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "ae77200d-af29-4f9e-9ead-794b64d8720d",
+      "content_id": "0f8b7eb8-796b-4994-a7f2-e3a57e9f93d5",
+      "claim_id": "C1",
+      "claim": "Multivariate autoregressive models have failed to adequately account for the complexity of neural signals.",
+      "claim_type": "EXPLICIT",
+      "source": "Because multivariate autoregressive models have failed to adequately account for the complexity of neural signals, researchers have predominantly relied on non-parametric methods when studying the relations between brain and behavior.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as background context in the abstract without specific supporting data or citations in this sentence.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:28:18.183224Z"
+    },
+    {
+      "id": "1a980406-79fa-4196-8140-2c0fc41417fa",
+      "content_id": "0f8b7eb8-796b-4994-a7f2-e3a57e9f93d5",
+      "claim_id": "C2",
+      "claim": "Researchers have predominantly relied on non-parametric methods when studying the relations between brain and behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "Because multivariate autoregressive models have failed to adequately account for the complexity of neural signals, researchers have predominantly relied on non-parametric methods when studying the relations between brain and behavior.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established practice in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:28:18.183224Z"
+    },
+    {
+      "id": "c0de4709-1c46-4d27-af54-2a865862cc66",
+      "content_id": "0f8b7eb8-796b-4994-a7f2-e3a57e9f93d5",
+      "claim_id": "C3",
+      "claim": "The study analyzed medial temporal lobe (MTL) recordings from 96 neurosurgical patients.",
+      "claim_type": "EXPLICIT",
+      "source": "Using medial temporal lobe (MTL) recordings from 96 neurosurgical patients, we show that time series models with volatility described by a multivariate stochastic latent-variable process and lagged interactions between signals in different brain regions provide new insights into the dynamics of brain function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the dataset used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:28:18.183224Z"
+    },
+    {
+      "id": "0c30a1e8-33bf-41df-9032-955a0585366d",
+      "content_id": "0f8b7eb8-796b-4994-a7f2-e3a57e9f93d5",
+      "claim_id": "C4",
+      "claim": "Time series models with volatility described by a multivariate stochastic latent-variable process and lagged interactions between signals in different brain regions provide new insights into the dynamics of brain function.",
+      "claim_type": "EXPLICIT",
+      "source": "Using medial temporal lobe (MTL) recordings from 96 neurosurgical patients, we show that time series models with volatility described by a multivariate stochastic latent-variable process and lagged interactions between signals in different brain regions provide new insights into the dynamics of brain function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding claimed by the authors based on their analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:28:18.183224Z"
+    },
+    {
+      "id": "d6ce7ea2-af7e-4e17-a829-20b66d1ab2a9",
+      "content_id": "0f8b7eb8-796b-4994-a7f2-e3a57e9f93d5",
+      "claim_id": "C5",
+      "claim": "The implied volatility inferred from the MSV process positively correlates with high-frequency spectral activity.",
+      "claim_type": "EXPLICIT",
+      "source": "The implied volatility inferred from our process positively correlates with high-frequency spectral activity, a signal that correlates with neuronal activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the study's analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:28:18.183224Z"
+    },
+    {
+      "id": "3c36816d-aac4-44e1-88e6-4f59c176b67d",
+      "content_id": "0f8b7eb8-796b-4994-a7f2-e3a57e9f93d5",
+      "claim_id": "C6",
+      "claim": "High-frequency spectral activity correlates with neuronal activity.",
+      "claim_type": "EXPLICIT",
+      "source": "The implied volatility inferred from our process positively correlates with high-frequency spectral activity, a signal that correlates with neuronal activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about high-frequency spectral activity.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:28:18.183224Z"
+    },
+    {
+      "id": "7470c959-ba5f-4013-ba12-5fcd192d5827",
+      "content_id": "0f8b7eb8-796b-4994-a7f2-e3a57e9f93d5",
+      "claim_id": "C7",
+      "claim": "Volatility features derived from the MSV model can reliably decode memory states.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that volatility features derived from our model can reliably decode memory states, and that this classifier performs as well as those using spectral features.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the classification analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:28:18.183224Z"
+    },
+    {
+      "id": "3ef2ea91-cb36-4da5-982e-babd6e0d9883",
+      "content_id": "0f8b7eb8-796b-4994-a7f2-e3a57e9f93d5",
+      "claim_id": "C8",
+      "claim": "The volatility-based classifier performs as well as classifiers using spectral features.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that volatility features derived from our model can reliably decode memory states, and that this classifier performs as well as those using spectral features.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparative finding from the classification analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:28:18.183224Z"
+    },
+    {
+      "id": "effe0d50-2e24-4ada-bb32-4e20d5886885",
+      "content_id": "0f8b7eb8-796b-4994-a7f2-e3a57e9f93d5",
+      "claim_id": "C9",
+      "claim": "Perirhinal-hippocampal desynchronization in the MTL regions is associated with successful memory encoding.",
+      "claim_type": "EXPLICIT",
+      "source": "Using the directional connections between brain regions during complex cognitive process provided by the model, we uncovered perirhinal-hippocampal desynchronization in the MTL regions that is associated with successful memory encoding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the directional connectivity analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:28:18.183224Z"
+    },
+    {
+      "id": "f9415134-c4fd-44cf-af96-9ec6f1f225e1",
+      "content_id": "0f8b7eb8-796b-4994-a7f2-e3a57e9f93d5",
+      "claim_id": "C12",
+      "claim": "Intracranially recorded (iEEG) signals have yielded detailed information on correlations between time-series measures and a wide range of behaviors including perception, attention, learning, memory, language, problem solving and decision making.",
+      "claim_type": "EXPLICIT",
+      "source": "In recent years, intracranially recorded (iEEG) signals have yielded detailed information on correlations between time-series measures and a wide range of behaviors including perception, attention, learning, memory, language, problem solving and decision making (Jacobs and Kahana, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:28:18.183224Z"
+    },
+    {
+      "id": "786b0105-bebd-4e07-bc08-6c9eb0c4c37d",
+      "content_id": "0f8b7eb8-796b-4994-a7f2-e3a57e9f93d5",
+      "claim_id": "C13",
+      "claim": "Economics and engineering fields have made effective use of parametric models for complex multivariate time series.",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas other fields that grapple with complex multivariate time series have made effective use of parametric models such as economics and engineering (Kim et al., 1998; Blanchard and Simon, 2001; West, 1996), neuroscientists largely ceded early parametric approaches (e.g. linear autoregressive models) in favor of non-parametric spectral decomposition methods, as a means of uncovering features of neural activity that may correlate with behavior.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work in economics and engineering.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:28:18.183224Z"
+    },
+    {
+      "id": "d3e9afa4-4e76-4b93-b2b0-fd9db0b8b997",
+      "content_id": "0f8b7eb8-796b-4994-a7f2-e3a57e9f93d5",
+      "claim_id": "C14",
+      "claim": "Neuroscientists largely ceded early parametric approaches in favor of non-parametric spectral decomposition methods.",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas other fields that grapple with complex multivariate time series have made effective use of parametric models such as economics and engineering (Kim et al., 1998; Blanchard and Simon, 2001; West, 1996), neuroscientists largely ceded early parametric approaches (e.g. linear autoregressive models) in favor of non-parametric spectral decomposition methods, as a means of uncovering features of neural activity that may correlate with behavior.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a historical trend in neuroscience.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:28:18.183224Z"
+    },
+    {
+      "id": "b1c2be01-aa28-486e-bfe9-961dcd9f2612",
+      "content_id": "0f8b7eb8-796b-4994-a7f2-e3a57e9f93d5",
+      "claim_id": "C15",
+      "claim": "Non-parametric methods have enabled researchers to link fluctuations in iEEG signals to low-frequency neural oscillations observed during certain behavioral or cognitive states.",
+      "claim_type": "EXPLICIT",
+      "source": "A strength of these non-parametric methods is that they have enabled researchers to link fluctuations in iEEG signals to low-frequency neural oscillations observed during certain behavioral or cognitive states, such as slow-wave sleep (Landolt et al., 1996; Chauvette et al., 2011; Nir et al., 2011), eye closure (Klimesch, 1999; Goldman et al., 2002; Laufs et al., 2003; Barry et al., 2007) or spatial exploration (Kahana et al., 2001; Raghavachari et al., 2001; Caplan et al., 2003; Ekstrom et al., 2005; Byrne et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:28:18.183224Z"
+    },
+    {
+      "id": "08ce1b50-de69-48a5-9f05-f7aee2d982f5",
+      "content_id": "0f8b7eb8-796b-4994-a7f2-e3a57e9f93d5",
+      "claim_id": "C16",
+      "claim": "High-frequency neural activity has been linked to a variety of cognitive and behavioral states.",
+      "claim_type": "EXPLICIT",
+      "source": "High-frequency neural activity, which has also been linked to a variety of cognitive and behavioral states (Maloney et al., 1997; Herrmann et al., 2004; Canolty et al., 2006), is less clearly oscillatory, and may reflect asynchronous stochastic volatility of the underlying EEG signal (Burke et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:28:18.183224Z"
+    },
+    {
+      "id": "1df30265-cda2-4a68-8861-c8b0935f4195",
+      "content_id": "0f8b7eb8-796b-4994-a7f2-e3a57e9f93d5",
+      "claim_id": "C17",
+      "claim": "High-frequency neural activity is less clearly oscillatory than low-frequency activity.",
+      "claim_type": "EXPLICIT",
+      "source": "High-frequency neural activity, which has also been linked to a variety of cognitive and behavioral states (Maloney et al., 1997; Herrmann et al., 2004; Canolty et al., 2006), is less clearly oscillatory, and may reflect asynchronous stochastic volatility of the underlying EEG signal (Burke et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a characteristic of high-frequency activity with supporting citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:28:18.183224Z"
+    },
+    {
+      "id": "f65bb222-281d-4f89-a534-d25bb30937eb",
+      "content_id": "0f8b7eb8-796b-4994-a7f2-e3a57e9f93d5",
+      "claim_id": "C18",
+      "claim": "High-frequency neural activity may reflect asynchronous stochastic volatility of the underlying EEG signal.",
+      "claim_type": "EXPLICIT",
+      "source": "High-frequency neural activity, which has also been linked to a variety of cognitive and behavioral states (Maloney et al., 1997; Herrmann et al., 2004; Canolty et al., 2006), is less clearly oscillatory, and may reflect asynchronous stochastic volatility of the underlying EEG signal (Burke et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:28:18.183224Z"
+    },
+    {
+      "id": "09c0eab1-f0e1-4252-9c7d-eb4c52ec701f",
+      "content_id": "0f8b7eb8-796b-4994-a7f2-e3a57e9f93d5",
+      "claim_id": "C19",
+      "claim": "Spectral analysis methods assume that there is unique information in each of a discrete set of frequency bands.",
+      "claim_type": "EXPLICIT",
+      "source": "Although spectral analysis methods have been used extensively in the neuroscience literature, they assume that there is unique information in each of a discrete set of frequency bands.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a characteristic assumption of spectral analysis methods.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:28:18.183224Z"
+    },
+    {
+      "id": "fec1c189-464e-4777-b687-6485c75bd592",
+      "content_id": "0f8b7eb8-796b-4994-a7f2-e3a57e9f93d5",
+      "claim_id": "C20",
+      "claim": "The number of bands and frequency ranges used in spectral analysis methods have been the subject of considerable controversy.",
+      "claim_type": "EXPLICIT",
+      "source": "The number of bands and frequency ranges used in these methods have been the subject of considerable controversy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a known issue in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:28:18.183224Z"
+    },
+    {
+      "id": "aa4e75bf-867f-48da-acac-502d4ab98e9f",
+      "content_id": "0f8b7eb8-796b-4994-a7f2-e3a57e9f93d5",
+      "claim_id": "C21",
+      "claim": "Broadband power often correlates more strongly with neuronal activity than does power at any narrow band.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed Manning et al. (2009) have shown that broadband power often correlates more strongly with neuronal activity than does power at any narrow band.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:28:18.183224Z"
+    },
+    {
+      "id": "d6c9f491-e207-4043-aaaa-551ecf3ee85a",
+      "content_id": "0f8b7eb8-796b-4994-a7f2-e3a57e9f93d5",
+      "claim_id": "C22",
+      "claim": "Non-parametric methods implicitly assume that the measured activity is observed independently during each observational epoch and at each frequency.",
+      "claim_type": "EXPLICIT",
+      "source": "Also, non-parametric methods implicitly assume that the measured activity is observed independently during each observational epoch, and at each frequency, an assumption which is easily rejected in the data, which show strong temporal autocorrelation as well as correlations among frequency bands (von Stein and Sarnthein, 2000; Jensen and Colgin, 2007; Axmacher et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a characteristic assumption of non-parametric methods.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:28:18.183224Z"
+    },
+    {
+      "id": "0ad5ed90-4d02-48aa-8fbf-4361cf6715c4",
+      "content_id": "0f8b7eb8-796b-4994-a7f2-e3a57e9f93d5",
+      "claim_id": "C23",
+      "claim": "The independence assumption of non-parametric methods is easily rejected in the data, which show strong temporal autocorrelation as well as correlations among frequency bands.",
+      "claim_type": "EXPLICIT",
+      "source": "Also, non-parametric methods implicitly assume that the measured activity is observed independently during each observational epoch, and at each frequency, an assumption which is easily rejected in the data, which show strong temporal autocorrelation as well as correlations among frequency bands (von Stein and Sarnthein, 2000; Jensen and Colgin, 2007; Axmacher et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work showing autocorrelation and correlations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:28:18.183224Z"
+    },
+    {
+      "id": "4f40ea4b-861d-4a64-9628-9ae124d82615",
+      "content_id": "0f8b7eb8-796b-4994-a7f2-e3a57e9f93d5",
+      "claim_id": "C24",
+      "claim": "Non-parametric methods are typically applied to EEG signals in a univariate fashion that neglects the spatial correlational structure.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, non-parametric methods are typically applied to EEG signals in a univariate fashion that neglects the spatial correlational structure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a limitation of typical non-parametric approaches.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:28:18.183224Z"
+    },
+    {
+      "id": "010fb19f-55df-4e44-9f8a-bbc851448cc5",
+      "content_id": "0f8b7eb8-796b-4994-a7f2-e3a57e9f93d5",
+      "claim_id": "C25",
+      "claim": "Parametric models confer greater statistical power by simultaneously modeling the spatial and temporal structure in the data, so long as they are not poorly specified.",
+      "claim_type": "EXPLICIT",
+      "source": "By simultaneously modeling the spatial and temporal structure in the data, parametric models confer greater statistical power so long as they are not poorly specified.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a theoretical advantage of parametric models.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:28:18.183224Z"
+    },
+    {
+      "id": "bd731cae-85ad-4fcf-9615-ea3811f5cdc5",
+      "content_id": "0f8b7eb8-796b-4994-a7f2-e3a57e9f93d5",
+      "claim_id": "C26",
+      "claim": "Parametric methods have been applied to various types of multivariate neural data including EEG, MEG, FMRI, and LFP.",
+      "claim_type": "EXPLICIT",
+      "source": "Parametric methods have been applied to various types of multivariate neural data including EEG (Hesse et al., 2003; Dhamala et al., 2008; Bastos et al., 2015), magnetoencephalography (MEG) (David et al., 2006), functional magnetic resonance imaging (FMRI) (Roebroeck et al., 2005; Goebel et al., 2003; David et al., 2008; Luo et al., 2013), and local field potentials (LFP) (Brovelli et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:28:18.183224Z"
+    },
+    {
+      "id": "dbbc1ead-6954-442f-b9f0-b7f0c1a37f2a",
+      "content_id": "0f8b7eb8-796b-4994-a7f2-e3a57e9f93d5",
+      "claim_id": "C27",
+      "claim": "Parametric methods typically involve fitting vector autoregressive (VAR) models to multivariate neural data that are assumed to be stationary in a specific time interval of interest.",
+      "claim_type": "EXPLICIT",
+      "source": "These methods typically involve fitting vector autoregressive (VAR) models to multivariate neural data that are assumed to be stationary in a specific time interval of interest.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a characteristic of typical parametric methods.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:28:18.183224Z"
+    },
+    {
+      "id": "bb6fa574-4d8a-4dc8-8e5e-d4833deb95e9",
+      "content_id": "0f8b7eb8-796b-4994-a7f2-e3a57e9f93d5",
+      "claim_id": "C28",
+      "claim": "The regression coefficient matrix derived from VAR models can be used to study the flow of information between neuronal regions in the context of Granger causality.",
+      "claim_type": "EXPLICIT",
+      "source": "The regression coefficient matrix derived from the VAR models can be used to study the flow of information between neuronal regions in the context of Granger causality (G-causality).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an application of VAR models.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:28:18.183224Z"
+    },
+    {
+      "id": "bfb34930-cc0c-406e-a9cc-0ed416321947",
+      "content_id": "0f8b7eb8-796b-4994-a7f2-e3a57e9f93d5",
+      "claim_id": "C29",
+      "claim": "Neuroscientists have used Gaussian VAR models to study the effective connectivity between activated brain areas during cognitive and visuomotor tasks.",
+      "claim_type": "EXPLICIT",
+      "source": "Neuroscientists have used Gaussian VAR models to study the effective connectivity (directed influence) between activated brain areas during cognitive and visuomotor tasks (Zhou et al., 2009; Deshpande et al., 2009; Graham et al., 2009; Roebroeck et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:28:18.183224Z"
+    },
+    {
+      "id": "380028a7-a9c6-4118-8ab4-c12163850ca5",
+      "content_id": "0f8b7eb8-796b-4994-a7f2-e3a57e9f93d5",
+      "claim_id": "C30",
+      "claim": "The validity of VAR models and G-causality methods relies upon the assumptions of linearity and stationarity in mean and variance of the neural data.",
+      "claim_type": "EXPLICIT",
+      "source": "Although VAR models and G-causality methods have been argued to provide useful insights into the functional organization of the brain, their validity relies upon the assumptions of linearity and stationarity in mean and variance of the neural data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a requirement for the validity of these methods.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:28:18.183224Z"
+    },
+    {
+      "id": "8b240fac-d6e2-4d41-881d-b9467deabfd2",
+      "content_id": "0f8b7eb8-796b-4994-a7f2-e3a57e9f93d5",
+      "claim_id": "C31",
+      "claim": "When one of the assumptions of linearity or stationarity is violated, the conclusions drawn from a G-causality analysis will be inconsistent and misleading.",
+      "claim_type": "EXPLICIT",
+      "source": "When one of these assumptions is violated, the conclusions drawn from a G-causality analysis will be inconsistent and misleading (Seth et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:28:18.183224Z"
+    },
+    {
+      "id": "db1c28c5-0572-46c6-b046-597bcf40f4db",
+      "content_id": "0f8b7eb8-796b-4994-a7f2-e3a57e9f93d5",
+      "claim_id": "C32",
+      "claim": "One of the most common violations by EEG signals is the assumption of variance-stationarity.",
+      "claim_type": "EXPLICIT",
+      "source": "One of the most common violations by EEG signals is the assumption of variance-stationarity (Wong et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:28:18.183224Z"
+    },
+    {
+      "id": "845e386f-9a1c-4995-8d92-b30938eb32e2",
+      "content_id": "0f8b7eb8-796b-4994-a7f2-e3a57e9f93d5",
+      "claim_id": "C33",
+      "claim": "Stochastic volatility models have been extremely useful in the analyses of financial market data which, like neural data, exhibits high kurtosis.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, in the present work, we adopt a stochastic volatility approach in which the non-stationary variance (also known as volatility) of the neural time series is assumed to follow a stochastic process. Such models have been extremely useful in the analyses of financial market data which, like neural data, exhibits high kurtosis (Heston, 1993; Bates, 1996; Barndorff-Nielsen and Shephard, 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work in financial modeling.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:28:18.183224Z"
+    },
+    {
+      "id": "fbf9558b-111f-46f9-993f-c2c11aa69afe",
+      "content_id": "0f8b7eb8-796b-4994-a7f2-e3a57e9f93d5",
+      "claim_id": "C34",
+      "claim": "The MSV model assumes that the volatility series of iEEG signals follows a latent-variable vector-autoregressive process.",
+      "claim_type": "EXPLICIT",
+      "source": "The MSV model assumes that the volatility series of iEEG signals follows a latent-variable vector-autoregressive process, and it allows for the lagged signals of different brain regions to influence each other by specifying a full persistent matrix (typically assumed to be diagonal) in the VAR process for volatility.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the proposed model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:28:18.183224Z"
+    },
+    {
+      "id": "40b142f8-8340-40c5-af98-fae25196caae",
+      "content_id": "0f8b7eb8-796b-4994-a7f2-e3a57e9f93d5",
+      "claim_id": "C35",
+      "claim": "The MSV model allows for the lagged signals of different brain regions to influence each other by specifying a full persistent matrix in the VAR process for volatility.",
+      "claim_type": "EXPLICIT",
+      "source": "The MSV model assumes that the volatility series of iEEG signals follows a latent-variable vector-autoregressive process, and it allows for the lagged signals of different brain regions to influence each other by specifying a full persistent matrix (typically assumed to be diagonal) in the VAR process for volatility.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the proposed model's capability.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:28:18.183224Z"
+    },
+    {
+      "id": "7c6314cb-a0b1-4c09-9d11-7af8aa47d63b",
+      "content_id": "0f8b7eb8-796b-4994-a7f2-e3a57e9f93d5",
+      "claim_id": "C36",
+      "claim": "A Bayesian approach was employed to estimate the latent volatility series and the parameters of the MSV model using the forward filtering backward sampling and Metropolis Hastings algorithms.",
+      "claim_type": "EXPLICIT",
+      "source": "We employed a Bayesian approach to estimate the latent volatility series and the parameters of the MSV model using the forward filtering backward sampling and Metropolis Hastings algorithms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the estimation method used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:28:18.183224Z"
+    },
+    {
+      "id": "48440a14-4367-4044-8509-5be2d44c0de9",
+      "content_id": "0f8b7eb8-796b-4994-a7f2-e3a57e9f93d5",
+      "claim_id": "C38",
+      "claim": "MTL regions have a prominent role in the encoding and retrieval of episodic memories.",
+      "claim_type": "EXPLICIT",
+      "source": "We chose to focus on these regions given their prominent role in the encoding and retrieval of episodic memories (Davachi et al., 2003; Kirwan and Stark, 2004; Kreiman et al., 2000; Sederberg et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:28:18.183224Z"
+    },
+    {
+      "id": "a4e58fb4-32b9-42ee-ac1b-7a48669b22c0",
+      "content_id": "0f8b7eb8-796b-4994-a7f2-e3a57e9f93d5",
+      "claim_id": "C39",
+      "claim": "The MSV model, which allows for interactions between regions, provides a substantially superior fit to MTL recordings than univariate stochastic volatility (SV) models.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that the MSV model, which allows for interactions between regions, provides a substantially superior fit to MTL recordings than univariate stochastic volatility (SV) models.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the model comparison analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:28:18.183224Z"
+    },
+    {
+      "id": "dbdb86c1-f9ee-43b9-bc9e-5de4df72127a",
+      "content_id": "0f8b7eb8-796b-4994-a7f2-e3a57e9f93d5",
+      "claim_id": "C40",
+      "claim": "The implied volatility in the MSV model positively correlates with non-parametric estimates of spectral power, especially in the gamma frequency band.",
+      "claim_type": "EXPLICIT",
+      "source": "The implied volatility in these models positively correlates with non-parametric estimates of spectral power, especially in the gamma frequency band.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the correlation analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:28:18.183224Z"
+    },
+    {
+      "id": "ee0f0016-fabe-4d7a-9ae0-02b11aca0457",
+      "content_id": "0f8b7eb8-796b-4994-a7f2-e3a57e9f93d5",
+      "claim_id": "C41",
+      "claim": "The MSV-derived features outperform spectral features in decoding cognitive states.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that the MSV-derived features outperform spectral features in decoding cognitive states, supporting the value of this model-based time-series analysis approach to the study of human cognition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the classification analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:28:18.183224Z"
+    },
+    {
+      "id": "defe0942-9aa3-433a-a7ed-b0f06bfaad83",
+      "content_id": "0f8b7eb8-796b-4994-a7f2-e3a57e9f93d5",
+      "claim_id": "C42",
+      "claim": "Significant bidirectional desynchronization between the perirhinal cortex and the hippocampus predicts successful memory encoding.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, using the MSV model to construct a directional MTL connectivity network, we find that significant bidirectional desynchronization between the perirhinal cortex and the hippocampus predicts successful memory encoding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the directional connectivity analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:28:18.183224Z"
+    },
+    {
+      "id": "3e8ec68e-59aa-466b-952a-d24bb84f611c",
+      "content_id": "0f8b7eb8-796b-4994-a7f2-e3a57e9f93d5",
+      "claim_id": "C43",
+      "claim": "Variance of EEG recordings is time-varying.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies have shown that variance of EEG recordings is time-varying (Wong et al., 2006; Galka et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:28:18.183224Z"
+    },
+    {
+      "id": "10d8b704-eff8-477d-bbeb-b51cd0cd9d7e",
+      "content_id": "0f8b7eb8-796b-4994-a7f2-e3a57e9f93d5",
+      "claim_id": "C44",
+      "claim": "There is a striking similarity between the timeseries of the Dow Jones index during economic recessions and the timeseries of iEEG during epileptic seizures.",
+      "claim_type": "EXPLICIT",
+      "source": "Klonowski et al. (2004) demonstrated a striking similarity between the timeseries of the Dow Jones index during economic recessions (big crashes) and the timeseries of iEEG during epileptic seizures.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:28:18.183224Z"
+    },
+    {
+      "id": "e24a8797-8c9f-4da8-9108-371e23c9eac5",
+      "content_id": "0f8b7eb8-796b-4994-a7f2-e3a57e9f93d5",
+      "claim_id": "C45",
+      "claim": "ARCH/GARCH models assume that the current volatility is a deterministic function of the previous volatilities and the information up to the current time.",
+      "claim_type": "EXPLICIT",
+      "source": "The ARCH/GARCH models assume that the current volatility is a deterministic function of the previous volatilities and the information up to the current time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a characteristic of ARCH/GARCH models.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:28:18.183224Z"
+    },
+    {
+      "id": "5ebc6fa7-1497-498c-9464-f6e919809068",
+      "content_id": "0f8b7eb8-796b-4994-a7f2-e3a57e9f93d5",
+      "claim_id": "C46",
+      "claim": "Stochastic volatility models assume that volatility is non-deterministic and follows a random process with a Gaussian error term.",
+      "claim_type": "EXPLICIT",
+      "source": "The second approach is the class of stochastic volatility models proposed by Heston (1993), which assume that volatility is non-deterministic and follows a random process with a Gaussian error term.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a characteristic of stochastic volatility models with citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:28:18.183224Z"
+    },
+    {
+      "id": "203d3221-d738-4b03-b090-228b072d83fb",
+      "content_id": "0f8b7eb8-796b-4994-a7f2-e3a57e9f93d5",
+      "claim_id": "C47",
+      "claim": "GARCH-type models have been popular in the empirical research community since the 1980's due to their computational attractiveness.",
+      "claim_type": "EXPLICIT",
+      "source": "GARCH-type models have been popular in the empirical research community since the 1980's due to their computational attractiveness.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a historical fact about GARCH models.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:28:18.183224Z"
+    },
+    {
+      "id": "f017db59-c488-4f9b-9e91-45aa0b3f4ce7",
+      "content_id": "0f8b7eb8-796b-4994-a7f2-e3a57e9f93d5",
+      "claim_id": "C48",
+      "claim": "The GARCH model assumes a deterministic relationship between the current volatility and its previous information, making it slow to react to instantaneous changes in the system.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite their computational advantages, the GARCH model assumes a deterministic relationship between the current volatility and its previous information, making it slow to react to instantaneous changes in the system.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a limitation of GARCH models.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:28:18.183224Z"
+    },
+    {
+      "id": "f92f2a42-6c54-48e8-a85c-c22b3fc3bd6b",
+      "content_id": "0f8b7eb8-796b-4994-a7f2-e3a57e9f93d5",
+      "claim_id": "C49",
+      "claim": "There is an asymptotic nonequivalance between the GARCH model and its diffusion limit if volatility is stochastic.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, Wang (2002) showed an asymptotic nonequivalance between the GARCH model and its diffusion limit if volatility is stochastic.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:28:18.183224Z"
+    },
+    {
+      "id": "19afab62-9196-481d-90c5-92d8cd9e2dcd",
+      "content_id": "0f8b7eb8-796b-4994-a7f2-e3a57e9f93d5",
+      "claim_id": "C50",
+      "claim": "Volatilities of various financial timeseries can be well approximated by log-normal distributions.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous econometrics literature has shown that volatilities of various financial timeseries can be well approximated by log-normal distributions such as the Standard and Poor 500 index (Cizeau et al., 1997), stock returns (Andersen, 2001a), and daily foreign exchange rates (Andersen et al., 2001b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work in econometrics.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:28:18.183224Z"
+    },
+    {
+      "id": "7743cb1e-1f1b-47a2-8121-93053d1e53a6",
+      "content_id": "0f8b7eb8-796b-4994-a7f2-e3a57e9f93d5",
+      "claim_id": "C51",
+      "claim": "Volatility of iEEG exhibits log-normality property.",
+      "claim_type": "EXPLICIT",
+      "source": "Volatility of iEEG also exhibits this log-normality property.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a finding and demonstrated in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:28:18.183224Z"
+    },
+    {
+      "id": "5d708a33-a3b3-4044-b274-e15e73b680f3",
+      "content_id": "0f8b7eb8-796b-4994-a7f2-e3a57e9f93d5",
+      "claim_id": "C52",
+      "claim": "The distribution of empirical volatility timeseries of detrended raw iEEG signals is right-skewed and can be well approximated by a log-normal distribution.",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 1 demonstrates the distribution of the empirical volatility timeseries of the detrended (after removing autoregressive components) raw iEEG signals. The distribution is right-skewed and can be well approximated by a log-normal distribution.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated in Figure 1 showing the distribution.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:28:18.183224Z"
+    },
+    {
+      "id": "7135d3a6-e089-4f92-b7eb-bfd29fe196e6",
+      "content_id": "0f8b7eb8-796b-4994-a7f2-e3a57e9f93d5",
+      "claim_id": "C53",
+      "claim": "Stochastic volatility models belong to a wide class of non-linear state-space models that have been extensively used in financial economics.",
+      "claim_type": "EXPLICIT",
+      "source": "Stochastic volatility models belong to a wide class of non-linear state-space models that have been extensively used in financial economics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about stochastic volatility models.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:28:18.183224Z"
+    },
+    {
+      "id": "9d88ff1c-5794-4606-8e74-d3da866a7609",
+      "content_id": "0f8b7eb8-796b-4994-a7f2-e3a57e9f93d5",
+      "claim_id": "C54",
+      "claim": "There has been overwhelming evidence of non-stationarity in the variance of financial data.",
+      "claim_type": "EXPLICIT",
+      "source": "There has been overwhelming evidence of non-stationarity in the variance of financial data (Black et al., 1972) and much effort has been made to model and understand the changes in volatility in order to forecast future returns, price derivatives, and study recessions, inflations and monetary policies (Engle and Patton, 2001; Cogley and Sargent, 2005; Blanchard and Simon, 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work in financial economics.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:28:18.183224Z"
+    },
+    {
+      "id": "08cf3ffb-b224-462b-a0df-7f535eb13225",
+      "content_id": "0f8b7eb8-796b-4994-a7f2-e3a57e9f93d5",
+      "claim_id": "C55",
+      "claim": "Latent process models have been widely applied to the neuroscience domain to model neuronal spiking activity using point processes.",
+      "claim_type": "EXPLICIT",
+      "source": "Latent process models have also been widely applied to the neuroscience domain to model neuronal spiking activity using point processes (Macke et al., 2011; Smith and Brown, 2003; Eden et al., 2004), to study motor cortical activity using a state-space model (Wu et al., 2006), etc.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:28:18.183224Z"
+    },
+    {
+      "id": "f4e402d5-b7ef-4114-b1f9-7d10f136d900",
+      "content_id": "0f8b7eb8-796b-4994-a7f2-e3a57e9f93d5",
+      "claim_id": "C56",
+      "claim": "GARCH-type models have been applied to EEG signals to study the transition into anesthesia in human, sleep stage transitions in sheep, and seizures in epileptic patients.",
+      "claim_type": "EXPLICIT",
+      "source": "GARCH-type models have also been applied to EEG signals to study the transition into anesthesia in human, sleep stage transitions in sheep, and seizures in epileptic patients (Galka et al., 2010; Mohamadi et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:28:18.183224Z"
+    },
+    {
+      "id": "4c34735e-9029-46af-8506-73f5066a0e9d",
+      "content_id": "0f8b7eb8-796b-4994-a7f2-e3a57e9f93d5",
+      "claim_id": "C57",
+      "claim": "The applications of the GARCH models in the neuroscience literature remain on a small-scale, which focus on individual recording locations and neglect the connectivity among different regions of the brain.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the applications of the GARCH models in the neuroscience literature remain on a small-scale, which focus on individual recording locations and neglect the connectivity among different regions of the brain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a limitation of prior GARCH applications in neuroscience.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:28:18.183224Z"
+    },
+    {
+      "id": "38e1b6c9-a146-4429-b120-1f9822489ddb",
+      "content_id": "0f8b7eb8-796b-4994-a7f2-e3a57e9f93d5",
+      "claim_id": "C58",
+      "claim": "The original MSV model assumes that the coefficient matrix is diagonal, that is the past activity of one region does not have any influence on the others.",
+      "claim_type": "EXPLICIT",
+      "source": "Following Harvey et al. (1994), we model the multivariate latent volatility process of the iEEG signals in the MTL region to follow a vector autoregressive model. The original model assumes that the coefficient matrix is diagonal, that is the past activity of one region does not have any influence on the others.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a characteristic of the original model with citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:28:18.183224Z"
+    },
+    {
+      "id": "18fc683b-51fd-4725-8b1d-9e5e13470d42",
+      "content_id": "0f8b7eb8-796b-4994-a7f2-e3a57e9f93d5",
+      "claim_id": "C59",
+      "claim": "The study generalizes the MSV model to allow for a full coefficient matrix in order to study the directional connections between different subregions in the MTL.",
+      "claim_type": "EXPLICIT",
+      "source": "We generalize the MSV model to allow for a full coefficient matrix in order to study the directional connections between different subregions in the MTL.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a methodological contribution of the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:28:18.183224Z"
+    },
+    {
+      "id": "ff535f74-d01d-4e0f-b672-f21da7041d1c",
+      "content_id": "0f8b7eb8-796b-4994-a7f2-e3a57e9f93d5",
+      "claim_id": "C60",
+      "claim": "This generalization is feasible due to high-temporal-resolution neural time series collected using the intracranial electroencephalography.",
+      "claim_type": "EXPLICIT",
+      "source": "This generalization is feasible due to high-temporal-resolution neural time series collected using the intracranial electroencephalography.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a justification for the methodological approach.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:28:18.183224Z"
+    },
+    {
+      "id": "9e66f3f3-f2e1-442b-9c42-c42a24fbff13",
+      "content_id": "0f8b7eb8-796b-4994-a7f2-e3a57e9f93d5",
+      "claim_id": "C61",
+      "claim": "The MSV model was validated in a unique dataset comprising depth-electrode recordings from 96 neurosurgical patients.",
+      "claim_type": "EXPLICIT",
+      "source": "We validated the MSV model in a unique dataset comprising depth-electrode recordings from 96 neurosurgical patients.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the validation dataset.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:28:18.183224Z"
+    },
+    {
+      "id": "6253fb6c-8270-40c3-a552-4a6e588bb246",
+      "content_id": "0f8b7eb8-796b-4994-a7f2-e3a57e9f93d5",
+      "claim_id": "C62",
+      "claim": "Patients volunteered to participate in a verbal recall memory task while they were undergoing clinical monitoring to localize the epileptogenic foci responsible for seizure onset.",
+      "claim_type": "EXPLICIT",
+      "source": "These patients volunteered to participate in a verbal recall memory task while they were undergoing clinical monitoring to localize the epileptogenic foci responsible for seizure onset.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the patient population and task.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:28:18.183224Z"
+    },
+    {
+      "id": "6be7844a-276d-42f1-865d-db7eaa86d12c",
+      "content_id": "0f8b7eb8-796b-4994-a7f2-e3a57e9f93d5",
+      "claim_id": "C63",
+      "claim": "The MSV model to MTL recordings was compared to univariate stochastic volatility (SV) models using the deviance information criterion (DIC).",
+      "claim_type": "EXPLICIT",
+      "source": "We utilized the deviance information criterion (DIC) (Spiegelhalter et al., 2002; Gelman et al., 2014) considered to be a Bayesian analogue of the Akaike information criterion (AIC) to evaluate the performance of the models.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the model comparison method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:28:18.183224Z"
+    },
+    {
+      "id": "ebe45866-b0f7-4831-9fb3-5b9f3174b654",
+      "content_id": "0f8b7eb8-796b-4994-a7f2-e3a57e9f93d5",
+      "claim_id": "C64",
+      "claim": "The MSV model was found to have a consistently lower DIC value than the SV model with a mean difference of 23 (\u00b15.9 SEM).",
+      "claim_type": "EXPLICIT",
+      "source": "We found the MSV model to have a consistently lower DIC value than the SV model with a mean difference of 23 (\u00b15.9 SEM).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the model comparison analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:28:18.183224Z"
+    },
+    {
+      "id": "9f23554d-717c-4f14-877f-ef479de93377",
+      "content_id": "0f8b7eb8-796b-4994-a7f2-e3a57e9f93d5",
+      "claim_id": "C65",
+      "claim": "The MSV model is approximately more than 150 times as probable as the SV models.",
+      "claim_type": "EXPLICIT",
+      "source": "This indicates that the MSV model is approximately more than 150 times as probable as the SV models (Kass and Raftery, 1995), suggesting that the MSV model is a more appropriate model for iEEG data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the DIC comparison with citation support.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:28:18.183224Z"
+    },
+    {
+      "id": "49c37197-7e2f-4715-947e-2a4890f91677",
+      "content_id": "0f8b7eb8-796b-4994-a7f2-e3a57e9f93d5",
+      "claim_id": "C66",
+      "claim": "The correlation between volatility and spectral power is significantly positive across the spectrum and increasing in frequency.",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 3 indicates that the correlation between volatility and spectral power is significantly positive across the spectrum and increasing in frequency.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 3 and stated in the text.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:28:18.183224Z"
+    },
+    {
+      "id": "175731e6-607c-426a-b6ee-63fd9bad630c",
+      "content_id": "0f8b7eb8-796b-4994-a7f2-e3a57e9f93d5",
+      "claim_id": "C67",
+      "claim": "Spectral power, in both the low-frequency (4\u20138 Hz) theta band and at frequencies about 40 Hz (gamma activity), reliably predicts which studied words will be subsequently recalled or recognized.",
+      "claim_type": "EXPLICIT",
+      "source": "Extensive previous work on the electrophysiological correlates of memory encoding has shown that spectral power, in both the low-frequency (4\u20138 Hz) theta band and at frequencies about 40 Hz (so-called gamma activity), reliably predicts which studied words will be subsequently recalled or recognized (Sederberg et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:28:18.183224Z"
+    },
+    {
+      "id": "4d19935e-1df9-4f5a-9595-ddfaccb4a5f7",
+      "content_id": "0f8b7eb8-796b-4994-a7f2-e3a57e9f93d5",
+      "claim_id": "C68",
+      "claim": "MSV-model implied volatility during item encoding reliably predicts subsequent recall, yielding an average AUC of 0.53 (95% CI, from 0.51 to 0.55).",
+      "claim_type": "EXPLICIT",
+      "source": "We find that MSV-model implied volatility during item encoding reliably predicts subsequent recall, yielding an average AUC of 0.53 (95% CI, from 0.51 to 0.55).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the classification analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:28:18.183224Z"
+    },
+    {
+      "id": "afae40c0-a859-400c-9792-60d83f3388af",
+      "content_id": "0f8b7eb8-796b-4994-a7f2-e3a57e9f93d5",
+      "claim_id": "C69",
+      "claim": "AUCs reliably exceeded chance levels in 72 percent of subjects (30 out of 42 subjects who contributed at least 3 sessions of data).",
+      "claim_type": "EXPLICIT",
+      "source": "AUCs reliably exceeded chance levels in 72 percent of subjects (30 out of 42 subjects who contributed at least 3 sessions of data).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the classification analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:28:18.183224Z"
+    },
+    {
+      "id": "4bc9b2ac-ce66-4510-9793-3fdd34f775c7",
+      "content_id": "0f8b7eb8-796b-4994-a7f2-e3a57e9f93d5",
+      "claim_id": "C70",
+      "claim": "Implied volatility does as well as, or better than, spectral measures at nearly all frequencies.",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 4 compares these findings against results obtained using wavelet-derived power. Here we see that implied volatility does as well as, or better than, spectral measures at nearly all frequencies.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 4 and stated in the text.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:28:18.183224Z"
+    },
+    {
+      "id": "26c8a03a-a976-4d97-9162-945b60a3fc9f",
+      "content_id": "0f8b7eb8-796b-4994-a7f2-e3a57e9f93d5",
+      "claim_id": "C74",
+      "claim": "The decreases in the bi-directional connections within the left MTL are consistent with the findings in Solomon et al. (2017) which noted memory-related decreases in phase synchronization at high frequencies.",
+      "claim_type": "EXPLICIT",
+      "source": "The decreases in the bi-directional connections within the left MTL are consistent with the findings in Solomon et al. (2017) which noted memory-related decreases in phase synchronization at high frequencies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This relates the current findings to prior work via citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:28:18.183224Z"
+    },
+    {
+      "id": "64964615-a52f-41c8-be55-8926902af94c",
+      "content_id": "0f8b7eb8-796b-4994-a7f2-e3a57e9f93d5",
+      "claim_id": "C75",
+      "claim": "No other significant directional connections among the remaining MTL regions were found.",
+      "claim_type": "EXPLICIT",
+      "source": "We did not, however, find any other significant directional connections among the remaining regions (Figure 5, Appendix 7\u2014tables 1 and 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a negative finding from the directional connectivity analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:28:18.183224Z"
+    },
+    {
+      "id": "e073b071-c717-44b4-ae9f-ec78dd7d403b",
+      "content_id": "0f8b7eb8-796b-4994-a7f2-e3a57e9f93d5",
+      "claim_id": "C76",
+      "claim": "Neural data strongly violate variance-stationarity assumptions underlying standard approaches, such as Granger causality.",
+      "claim_type": "EXPLICIT",
+      "source": "Because neural data strongly violate variance-stationarity assumptions underlying standard approaches, such as Granger causality (Stokes and Purdon, 2017), researchers have generally eschewed these model-based approaches and embraced non-parameter data analytic procedures.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:28:18.183224Z"
+    },
+    {
+      "id": "2da366bb-10e0-4801-abe3-5a8defafa669",
+      "content_id": "0f8b7eb8-796b-4994-a7f2-e3a57e9f93d5",
+      "claim_id": "C77",
+      "claim": "The multivariate stochastic volatility framework allows for non-stationary variance in the signals.",
+      "claim_type": "EXPLICIT",
+      "source": "The multivariate stochastic volatility framework that we propose allows for non-stationary variance in the signals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a characteristic of the proposed framework.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:28:18.183224Z"
+    },
+    {
+      "id": "c3e21588-595c-4971-add0-6d4e8c5a4646",
+      "content_id": "0f8b7eb8-796b-4994-a7f2-e3a57e9f93d5",
+      "claim_id": "C78",
+      "claim": "Volatility of iEEG timeseries is correlated with spectral power across the frequency spectrum and the correlation increases with frequency.",
+      "claim_type": "EXPLICIT",
+      "source": "Using a large MTL intracranical EEG dataset from 96 neurosurgical patients while performing a free-recall task, we found that volatility of iEEG timeseries is correlated with spectral power across the frequency spectrum and the correlation increases with frequency.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary finding from the correlation analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:28:18.183224Z"
+    },
+    {
+      "id": "06d8925e-4471-4d32-bc84-117d207d801d",
+      "content_id": "0f8b7eb8-796b-4994-a7f2-e3a57e9f93d5",
+      "claim_id": "C79",
+      "claim": "Volatility features significantly outperform the spectral features in decoding memory process in the human brain.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings indicate that volatility features significantly outperform the spectral features in decoding memory process in the human brain, suggesting that volatility can serve as a reliable measure for understanding cognitive processes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary finding from the classification analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:28:18.183224Z"
+    },
+    {
+      "id": "1c72636f-486e-47cf-82a1-2ecc3510917a",
+      "content_id": "0f8b7eb8-796b-4994-a7f2-e3a57e9f93d5",
+      "claim_id": "C80",
+      "claim": "Volatility can serve as a reliable measure for understanding cognitive processes.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings indicate that volatility features significantly outperform the spectral features in decoding memory process in the human brain, suggesting that volatility can serve as a reliable measure for understanding cognitive processes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the classification findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:28:18.183224Z"
+    },
+    {
+      "id": "2b6b8e5c-c5d3-4137-984e-3fe709e8786f",
+      "content_id": "0f8b7eb8-796b-4994-a7f2-e3a57e9f93d5",
+      "claim_id": "C81",
+      "claim": "The MSV approach can identify directed interactions between brain regions without assuming variance-stationarity of neural signals.",
+      "claim_type": "EXPLICIT",
+      "source": "A key strength of the MSV approach is its ability to identify directed interactions between brain regions without assuming variance-stationarity of neural signals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an advantage of the MSV approach.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:28:18.183224Z"
+    },
+    {
+      "id": "bbba0775-4a6c-4d86-bb11-528412dccd9d",
+      "content_id": "0f8b7eb8-796b-4994-a7f2-e3a57e9f93d5",
+      "claim_id": "C82",
+      "claim": "Periods of decreased connectivity in the volatility network among MTL subregions predicted successful learning.",
+      "claim_type": "EXPLICIT",
+      "source": "Using the regression coefficient matrix of the multivariate volatility process, we found that periods of decreased connectivity in the volatility network among MTL subregions predicted successful learning.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary finding from the connectivity analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:28:18.183224Z"
+    },
+    {
+      "id": "1dcfb389-604e-4019-b6be-30d8010c42c9",
+      "content_id": "0f8b7eb8-796b-4994-a7f2-e3a57e9f93d5",
+      "claim_id": "C83",
+      "claim": "The hippocampus and the perirhinal cortex in the left hemisphere desynchronize during successful learning.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, we found that the hippocampus and the perirhinal cortex in the left hemisphere desynchronize (exerting less influence on one another) during successful learning, which is consistent with the late-phase gamma decoupling noted in Fell et al. (2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the connectivity analysis with citation support.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:28:18.183224Z"
+    },
+    {
+      "id": "3763b582-9357-4bd8-b954-f44b9ace0bff",
+      "content_id": "0f8b7eb8-796b-4994-a7f2-e3a57e9f93d5",
+      "claim_id": "C84",
+      "claim": "Solomon et al. (2019) examined the association between intra-MTL connectivity and successful memory formation using phase-based measures of connectivity.",
+      "claim_type": "EXPLICIT",
+      "source": "A more recent study by Solomon et al. (2019) also examined the association between intra-MTL connectivity and successful memory formation using phase-based measures of connectivity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a reference to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:28:18.183224Z"
+    },
+    {
+      "id": "1592e03d-d2a1-4d43-838f-5b2802373942",
+      "content_id": "0f8b7eb8-796b-4994-a7f2-e3a57e9f93d5",
+      "claim_id": "C85",
+      "claim": "Solomon et al. (2019) noted intra-MTL desynchronization at high frequencies during successful memory formation.",
+      "claim_type": "EXPLICIT",
+      "source": "Solomon et al. (2019) noted intra-MTL desynchronization at high frequencies during successful memory formation, aligning with the finding here that the volatility network tended to desynchronize.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a reference to prior work that aligns with current findings.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:28:18.183224Z"
+    },
+    {
+      "id": "f09b2e62-0205-4272-92f8-286222050ce6",
+      "content_id": "0f8b7eb8-796b-4994-a7f2-e3a57e9f93d5",
+      "claim_id": "C86",
+      "claim": "Solomon et al. (2019) found broad increases in low-frequency connectivity, which did not appear to be captured by the stochastic model.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, Solomon, et al. found broad increases in low-frequency connectivity, which did not appear to be captured by our stochastic model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a reference to prior work noting a difference from current findings.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:28:18.183224Z"
+    },
+    {
+      "id": "6184f722-e47b-4be6-ab9e-f74089ef4bb0",
+      "content_id": "0f8b7eb8-796b-4994-a7f2-e3a57e9f93d5",
+      "claim_id": "C87",
+      "claim": "Volatility features reflect neural processes that are also captured by high-frequency phase information.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that volatility features reflect neural processes that are also captured by high-frequency phase information.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from comparing current findings to prior work.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:28:18.183224Z"
+    },
+    {
+      "id": "64f2d4ac-b199-4bfa-a249-5de15ff7c973",
+      "content_id": "0f8b7eb8-796b-4994-a7f2-e3a57e9f93d5",
+      "claim_id": "C88",
+      "claim": "More statistically reliable changes in volatility networks were noted in the left MTL compared to the right.",
+      "claim_type": "EXPLICIT",
+      "source": "We further noted more statistically reliable changes in volatility networks in the left MTL compared to the right.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the connectivity analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:28:18.183224Z"
+    },
+    {
+      "id": "f1429441-b666-4300-a92d-13660af9e5e9",
+      "content_id": "0f8b7eb8-796b-4994-a7f2-e3a57e9f93d5",
+      "claim_id": "C89",
+      "claim": "There is a long history of neuroanatomical, electrophysiological, and imaging studies that found an association between verbal memory and the left MTL.",
+      "claim_type": "EXPLICIT",
+      "source": "This result is in line with a long history of neuroanatomical, electrophysiological, and imaging studies (e.g. Ojemann and Dodrill, 1985; Kelley et al., 1998) that found an association between verbal memory and the left MTL.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:28:18.183224Z"
+    },
+    {
+      "id": "205caf22-852c-424d-af6d-58fe60e707bf",
+      "content_id": "0f8b7eb8-796b-4994-a7f2-e3a57e9f93d5",
+      "claim_id": "C90",
+      "claim": "The verbal nature of the memory task may have specifically engaged processing in the left MTL, resulting in a lateralization of observed volatility phenomena.",
+      "claim_type": "EXPLICIT",
+      "source": "It is possible that the verbal nature of our memory task specifically engaged processing in the left MTL, resulting in a lateralization of observed volatility phenomena.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation of the lateralization finding.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:28:18.183224Z"
+    },
+    {
+      "id": "79873d97-2734-44eb-a725-b8c0c2838b3e",
+      "content_id": "0f8b7eb8-796b-4994-a7f2-e3a57e9f93d5",
+      "claim_id": "C91",
+      "claim": "Prior studies implicate the perirhinal cortex in judgement of familiarity and in recency discrimination system.",
+      "claim_type": "EXPLICIT",
+      "source": "Prior studies implicate the perirhinal cortex in judgement of familiarity and in recency discrimination system, while the hippocampus supports contextual binding (Eichenbaum et al., 2007; Diana et al., 2007; Hasselmo, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:28:18.183224Z"
+    },
+    {
+      "id": "83ee1923-8036-425d-984e-bf3a3873fc52",
+      "content_id": "0f8b7eb8-796b-4994-a7f2-e3a57e9f93d5",
+      "claim_id": "C92",
+      "claim": "The hippocampus supports contextual binding.",
+      "claim_type": "EXPLICIT",
+      "source": "Prior studies implicate the perirhinal cortex in judgement of familiarity and in recency discrimination system, while the hippocampus supports contextual binding (Eichenbaum et al., 2007; Diana et al., 2007; Hasselmo, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:28:18.183224Z"
+    },
+    {
+      "id": "e36c2f0d-2f6c-4831-95a5-29633ee6b193",
+      "content_id": "0f8b7eb8-796b-4994-a7f2-e3a57e9f93d5",
+      "claim_id": "C93",
+      "claim": "The perirhinal cortex and hippocampus play important roles in memory associative retrieval as suggested by animal studies.",
+      "claim_type": "EXPLICIT",
+      "source": "These two systems play important roles in memory associative retrieval as suggested by animal studies (Brown and Aggleton, 2001), but it is still unclear how the hippocampus and PRC interact during memory processing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:28:18.183224Z"
+    },
+    {
+      "id": "edc07054-5d5d-4e6e-8a73-c2d73b256825",
+      "content_id": "0f8b7eb8-796b-4994-a7f2-e3a57e9f93d5",
+      "claim_id": "C94",
+      "claim": "It is still unclear how the hippocampus and PRC interact during memory processing.",
+      "claim_type": "EXPLICIT",
+      "source": "These two systems play important roles in memory associative retrieval as suggested by animal studies (Brown and Aggleton, 2001), but it is still unclear how the hippocampus and PRC interact during memory processing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a gap in knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:28:18.183224Z"
+    },
+    {
+      "id": "05a2ad8b-ec67-4e37-9524-f1aac100c50c",
+      "content_id": "0f8b7eb8-796b-4994-a7f2-e3a57e9f93d5",
+      "claim_id": "C95",
+      "claim": "Fell et al. (2006) suggested that rhinal-hippocampal coupling in the gamma range is associated with successful memory formation.",
+      "claim_type": "EXPLICIT",
+      "source": "Fell et al. (2006) suggested that rhinal-hippocampal coupling in the gamma range is associated with successful memory formation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a reference to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:28:18.183224Z"
+    },
+    {
+      "id": "4c8e5a1c-3293-41a2-92c7-44c23d04ba6a",
+      "content_id": "0f8b7eb8-796b-4994-a7f2-e3a57e9f93d5",
+      "claim_id": "C96",
+      "claim": "The current results show no evidence for rhinal-hippocampal coupling in the gamma range associated with successful memory formation.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results show no evidence for such a phenomenon, but rather agree with more recent studies demonstrating memory-related overall high-frequency desynchronization in the MTL (Solomon et al., 2019; Burke et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a negative finding from the connectivity analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:28:18.183224Z"
+    },
+    {
+      "id": "1b5807a6-a1fe-4883-b90f-369c0075bf14",
+      "content_id": "0f8b7eb8-796b-4994-a7f2-e3a57e9f93d5",
+      "claim_id": "C97",
+      "claim": "The current results agree with more recent studies demonstrating memory-related overall high-frequency desynchronization in the MTL.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results show no evidence for such a phenomenon, but rather agree with more recent studies demonstrating memory-related overall high-frequency desynchronization in the MTL (Solomon et al., 2019; Burke et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This relates current findings to prior work via citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:28:18.183224Z"
+    },
+    {
+      "id": "ec9d6178-da90-4f6a-84e0-7a6a5d75cb1c",
+      "content_id": "0f8b7eb8-796b-4994-a7f2-e3a57e9f93d5",
+      "claim_id": "C98",
+      "claim": "This paper presents the first major application of stochastic volatility models to neural time-series data.",
+      "claim_type": "EXPLICIT",
+      "source": "This paper presents the first major application of stochastic volatility models to neural time-series data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a contribution of the paper.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:28:18.183224Z"
+    },
+    {
+      "id": "cb54ec01-e273-4e87-8938-b0ac0ffc4ee7",
+      "content_id": "0f8b7eb8-796b-4994-a7f2-e3a57e9f93d5",
+      "claim_id": "C99",
+      "claim": "The use of a multivariate modeling approach allows accounting for interactions between different subregions in the MTL and thus provides a better fit to the neural data than a univariate approach.",
+      "claim_type": "EXPLICIT",
+      "source": "The use of a multivariate modeling approach allows us to account for interactions between different subregions in the MTL and thus provides a better fit to the neural data than a univariate approach.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the model comparison findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:28:18.183224Z"
+    },
+    {
+      "id": "a4f82b6a-f862-4f13-9711-2ced48c09081",
+      "content_id": "0f8b7eb8-796b-4994-a7f2-e3a57e9f93d5",
+      "claim_id": "C100",
+      "claim": "The MSV model fully captures how changes in neural data measured by volatility in one region influences changes in another region.",
+      "claim_type": "EXPLICIT",
+      "source": "Our MSV model fully captures how changes in neural data measured by volatility in one region influences changes in another region, providing insights into the complex dynamics of neural brain signals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a capability of the MSV model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:28:18.183224Z"
+    },
+    {
+      "id": "0a7e0562-286a-485f-8895-f10dc3616d69",
+      "content_id": "0f8b7eb8-796b-4994-a7f2-e3a57e9f93d5",
+      "claim_id": "C101",
+      "claim": "Volatility can be a promising biomarker due to its broadband nature.",
+      "claim_type": "EXPLICIT",
+      "source": "We further demonstrated that volatility can be a promising biomarker due to its broadband nature by comparing its performance to one of spectral power in classifying subsequent memory.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the classification findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:28:18.183224Z"
+    },
+    {
+      "id": "2a40579e-a90c-4a8d-b0d0-3576303a3502",
+      "content_id": "0f8b7eb8-796b-4994-a7f2-e3a57e9f93d5",
+      "claim_id": "C102",
+      "claim": "Researchers can extend these models to broader classes of neural recordings.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, researchers can extend these models to broader classes of neural recordings, and exploit their statistical power to substantially increase our understanding of how behavior emerges from the complex interplay of neural activity across many brain regions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about future applications.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:28:18.183224Z"
+    },
+    {
+      "id": "805f7d26-9c57-4b5a-9d96-0557989fa7ec",
+      "content_id": "0f8b7eb8-796b-4994-a7f2-e3a57e9f93d5",
+      "claim_id": "C103",
+      "claim": "96 patients with drug-resistant epilepsy undergoing intracranial electroencephalographic monitoring were recruited in this study.",
+      "claim_type": "EXPLICIT",
+      "source": "Ninety six patients with drug-resistant epilepsy undergoing intracranial electroencephalographic monitoring were recruited in this study.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the participant population.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:28:18.183224Z"
+    },
+    {
+      "id": "7b46c0d1-df89-4558-a653-0d3f88f11062",
+      "content_id": "0f8b7eb8-796b-4994-a7f2-e3a57e9f93d5",
+      "claim_id": "C104",
+      "claim": "Data were collected as part of a study of the effects of electrical stimulation on memory-related brain function at multiple medical centers.",
+      "claim_type": "EXPLICIT",
+      "source": "Data were collected as part of a study of the effects of electrical stimulation on memory-related brain function at multiple medical centers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data collection context.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:28:18.183224Z"
+    },
+    {
+      "id": "c499e924-82a2-4891-9ae3-febc0e17c719",
+      "content_id": "0f8b7eb8-796b-4994-a7f2-e3a57e9f93d5",
+      "claim_id": "C105",
+      "claim": "The research protocol was approved by the Institutional Review Board at each hospital and informed consent was obtained from each participant.",
+      "claim_type": "EXPLICIT",
+      "source": "The research protocol was approved by the Institutional Review Board at each hospital and informed consent was obtained from each participant.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the ethical approval and consent process.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:28:18.183224Z"
+    },
+    {
+      "id": "227f3807-e927-4af2-8b30-df23a2494c46",
+      "content_id": "0f8b7eb8-796b-4994-a7f2-e3a57e9f93d5",
+      "claim_id": "C106",
+      "claim": "Electrophysiological signals were collected from electrodes implanted subdurally on the cortical surface and within brain parenchyma.",
+      "claim_type": "EXPLICIT",
+      "source": "Electrophysiological signals were collected from electrodes implanted subdurally on the cortical surface and within brain parenchyma.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data collection method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:28:18.183224Z"
+    },
+    {
+      "id": "5e203c32-4eb3-4795-9077-825cb38840c9",
+      "content_id": "0f8b7eb8-796b-4994-a7f2-e3a57e9f93d5",
+      "claim_id": "C107",
+      "claim": "The neurosurgeons at each clinical site determined the placement of electrodes to best localize epileptogenic regions.",
+      "claim_type": "EXPLICIT",
+      "source": "The neurosurgeons at each clinical site determined the placement of electrodes to best localize epileptogenic regions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the electrode placement procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:28:18.183224Z"
+    },
+    {
+      "id": "403be92b-51f6-480d-a0ad-9f6a7b1b1666",
+      "content_id": "0f8b7eb8-796b-4994-a7f2-e3a57e9f93d5",
+      "claim_id": "C108",
+      "claim": "Each word presentation lasts for 1600 ms followed by a blank inter-stimulus interval (ISI) of 800 to 1200 ms.",
+      "claim_type": "EXPLICIT",
+      "source": "Each word presentation lasts for 1600 ms followed by a blank inter-stimulus interval (ISI) of 800 to 1200 ms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental timing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:28:18.183224Z"
+    },
+    {
+      "id": "bd6e9f50-3b1f-4e16-8d8e-94d77b2aef62",
+      "content_id": "0f8b7eb8-796b-4994-a7f2-e3a57e9f93d5",
+      "claim_id": "C109",
+      "claim": "Subjects were asked to perform a math distraction task immediately after the presentation of the last word to mitigate the recency effect and the primacy effect.",
+      "claim_type": "EXPLICIT",
+      "source": "To mitigate the recency effect (recalling last items best) and the primacy effect (recalling first items better than the middle items), subjects were asked to perform a math distraction task immediately after the presentation of the last word.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental design rationale.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:28:18.183224Z"
+    },
+    {
+      "id": "482926aa-2d66-46c5-8f99-8aff01a5a318",
+      "content_id": "0f8b7eb8-796b-4994-a7f2-e3a57e9f93d5",
+      "claim_id": "C110",
+      "claim": "The delay math task lasted for 20 s.",
+      "claim_type": "EXPLICIT",
+      "source": "The delay math task lasted for 20 s, after which subjects were asked to recall as many words as possible from the recent list of words, in any order during the 30 s recall period.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental timing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:28:18.183224Z"
+    },
+    {
+      "id": "7c361164-1cff-4437-8218-02fc74fffc64",
+      "content_id": "0f8b7eb8-796b-4994-a7f2-e3a57e9f93d5",
+      "claim_id": "C111",
+      "claim": "Subjects performed up to 25 lists per session of recording (300 words).",
+      "claim_type": "EXPLICIT",
+      "source": "Subjects performed up to 25 lists per session of recording (300 words).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental design.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:28:18.183224Z"
+    },
+    {
+      "id": "e8fc9507-0a08-4b13-8ca5-35291062f5b1",
+      "content_id": "0f8b7eb8-796b-4994-a7f2-e3a57e9f93d5",
+      "claim_id": "C112",
+      "claim": "iEEG signals were recorded from subdural and depth electrodes at various sampling rates (500, 1000, or 1600 Hz).",
+      "claim_type": "EXPLICIT",
+      "source": "iEEG signals were recorded from subdural and depth electrodes at various sampling rates (500, 1000, or 1600 Hz) based on the the amplifier and the preference of the clinical team using one of the following EEG systems: DeltaMed XlTek (Natus), Grass Telefactor, and Nihon-Kohden.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data acquisition parameters.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:28:18.183224Z"
+    },
+    {
+      "id": "b486992c-e275-48ee-84e3-135a91f6d1df",
+      "content_id": "0f8b7eb8-796b-4994-a7f2-e3a57e9f93d5",
+      "claim_id": "C113",
+      "claim": "A 5 Hz band-stop fourth order Butterworth filter centered on 60 Hz was applied to attenuate signal from electrical noise.",
+      "claim_type": "EXPLICIT",
+      "source": "We applied a 5 Hz band-stop fourth order Butterworth filter centered on 60 Hz to attenuate signal from electrical noise.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data preprocessing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:28:18.183224Z"
+    },
+    {
+      "id": "87d868d3-4860-4d5e-b9ef-7f162e6c6390",
+      "content_id": "0f8b7eb8-796b-4994-a7f2-e3a57e9f93d5",
+      "claim_id": "C114",
+      "claim": "The data were re-referenced using the common average of all electrodes in the MTL to eliminate potentially confounding large-scale artifacts and noise.",
+      "claim_type": "EXPLICIT",
+      "source": "We re-referenced the data using the common average of all electrodes in the MTL to eliminate potentially confounding large-scale artifacts and noise.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data preprocessing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:28:18.183224Z"
+    },
+    {
+      "id": "2366a412-db4f-4b8d-a5b8-03c9578d6251",
+      "content_id": "0f8b7eb8-796b-4994-a7f2-e3a57e9f93d5",
+      "claim_id": "C115",
+      "claim": "Morlet wavelet transform (wave number = 5) was used to compute power as a function of time for iEEG signals.",
+      "claim_type": "EXPLICIT",
+      "source": "We used Morlet wavelet transform (wave number = 5) to compute power as a function of time for our iEEG signals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the spectral analysis method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:28:18.183224Z"
+    },
+    {
+      "id": "3c1de235-77b8-439a-8dca-bdfc1d5c2b54",
+      "content_id": "0f8b7eb8-796b-4994-a7f2-e3a57e9f93d5",
+      "claim_id": "C116",
+      "claim": "The frequencies were sampled linearly from 3 to 180 Hz with 1 Hz increments.",
+      "claim_type": "EXPLICIT",
+      "source": "The frequencies were sample linearly from 3 to 180 Hz with 1 Hz increments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the spectral analysis parameters.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:28:18.183224Z"
+    },
+    {
+      "id": "e2709598-cd0b-4d13-89b5-9d021a6d19cb",
+      "content_id": "0f8b7eb8-796b-4994-a7f2-e3a57e9f93d5",
+      "claim_id": "C117",
+      "claim": "For each electrode and frequency, spectral power was log-transformed and then averaged over the encoding period.",
+      "claim_type": "EXPLICIT",
+      "source": "For each electrode and frequency, spectral power was log-transformed and then averaged over the encoding period.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the feature extraction procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:28:18.183224Z"
+    },
+    {
+      "id": "8c85cc0b-b283-4180-99b4-73b7364b6e79",
+      "content_id": "0f8b7eb8-796b-4994-a7f2-e3a57e9f93d5",
+      "claim_id": "C118",
+      "claim": "Within a session of recording, the spectral power was z-scored using the distribution of power features across events.",
+      "claim_type": "EXPLICIT",
+      "source": "Within a session of recording, the spectral power was z-scored using the distribution of power features across events.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the normalization procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:28:18.183224Z"
+    },
+    {
+      "id": "78d6fa8c-52e9-44ad-bebe-b46b7a09c9ea",
+      "content_id": "0f8b7eb8-796b-4994-a7f2-e3a57e9f93d5",
+      "claim_id": "C119",
+      "claim": "The MSV model was applied to the dataset constructed from the encoding events with an assumption that the parameters governing the dynamics of the volatility process does not change within a session of recording.",
+      "claim_type": "EXPLICIT",
+      "source": "To extract volatility feature, we applied the MSV model to the dataset constructed from the encoding events with an assumption that the parameters governing the dynamics of the volatility process does not change within a session of recording, that is the parameters of the MSV model are assumed to be shared across encoding events.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the modeling assumption.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:28:18.183224Z"
+    },
+    {
+      "id": "dacc919e-71c1-490f-bd26-ede6d6537a9f",
+      "content_id": "0f8b7eb8-796b-4994-a7f2-e3a57e9f93d5",
+      "claim_id": "C121",
+      "claim": "The common average reference was used to remove large-scale noise from MTL recordings.",
+      "claim_type": "EXPLICIT",
+      "source": "In the present manuscript, we used the common average reference (of MTL electrodes) to remove large-scale noise from our MTL recordings.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the referencing choice.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:28:18.183224Z"
+    },
+    {
+      "id": "b66fa469-f3bb-4763-a0f4-1afe20804770",
+      "content_id": "0f8b7eb8-796b-4994-a7f2-e3a57e9f93d5",
+      "claim_id": "C122",
+      "claim": "Connectivity between a pair of adjacent bipolar electrodes is contaminated by signal common to their shared monopolar contact.",
+      "claim_type": "EXPLICIT",
+      "source": "First, connectivity between a pair of adjacent bipolar electrodes is contaminated by signal common to their shared monopolar contact; as such, it is difficult to interpret connectivity between such pairs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a limitation of bipolar referencing.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:28:18.183224Z"
+    },
+    {
+      "id": "d5a4a539-5e31-44f3-9993-273f79505868",
+      "content_id": "0f8b7eb8-796b-4994-a7f2-e3a57e9f93d5",
+      "claim_id": "C123",
+      "claim": "Bipolar re-referencing within the MTL produces the undesirable outcome that a bipolar midpoint 'virtual' electrode could fall in a subregion where neither physical contact was placed.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, bipolar re-referencing within the MTL produces the undesirable outcome that a bipolar midpoint 'virtual' electrode could fall in a subregion where neither physical contact was placed, making observed connectivities difficult to interpret.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a limitation of bipolar referencing.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:28:18.183224Z"
+    },
+    {
+      "id": "593ff71b-755a-44c6-9e6c-cc6c05d2368a",
+      "content_id": "0f8b7eb8-796b-4994-a7f2-e3a57e9f93d5",
+      "claim_id": "C124",
+      "claim": "Hippocampal subfields and MTL cortices were automatically labeled in a pre-implant 2 mm thick T2-weighted MRI using the Automatic segmentation of hippocampal subfields (ASHS) multi-atlas segmentation method.",
+      "claim_type": "EXPLICIT",
+      "source": "Hippocampal subfields and MTL cortices were automatically labeled in a pre-implant 2 mm thick T2-weighted MRI using the Automatic segmentation of hippocampal subfields (ASHS) multi-atlas segmentation method (Yushkevich et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the anatomical localization method with citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:28:18.183224Z"
+    },
+    {
+      "id": "b56a79b4-04e8-4c76-8f1e-7c7eec16f2b9",
+      "content_id": "0f8b7eb8-796b-4994-a7f2-e3a57e9f93d5",
+      "claim_id": "C125",
+      "claim": "A post-implant CT was co-registered with the MRI using Advanced Normalization Tools.",
+      "claim_type": "EXPLICIT",
+      "source": "A post-implant was co-registered with the MRI using Advanced Normalization Tools (Avants et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the image registration method with citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:28:18.183224Z"
+    },
+    {
+      "id": "8e959337-b847-4c01-8041-b528a257e26f",
+      "content_id": "0f8b7eb8-796b-4994-a7f2-e3a57e9f93d5",
+      "claim_id": "C126",
+      "claim": "MTL depth electrodes that were visible in the CT were localized by a pair of neuroradiologists with expertise in MTL anatomy.",
+      "claim_type": "EXPLICIT",
+      "source": "MTL depth electrodes that were visible in the CT were then localized by a pair of neuroradiologists with expertise in MTL anatomy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the electrode localization procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:28:18.183224Z"
+    },
+    {
+      "id": "c38231bb-f1d7-4278-8b80-9d57215d96d7",
+      "content_id": "0f8b7eb8-796b-4994-a7f2-e3a57e9f93d5",
+      "claim_id": "C127",
+      "claim": "Classical statistical tests were applied on the maximum a posteriori (MAP) estimate of the parameter of interest to assess an effect across subjects.",
+      "claim_type": "EXPLICIT",
+      "source": "To assess an effect across subjects, we applied classical statistical tests on the maximum a posteriori (MAP) estimate of the parameter of interest .",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the statistical analysis approach.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:28:18.183224Z"
+    },
+    {
+      "id": "61fdfe88-9792-4d5a-8db5-9cdf1875b7ac",
+      "content_id": "0f8b7eb8-796b-4994-a7f2-e3a57e9f93d5",
+      "claim_id": "C128",
+      "claim": "This approach has been used in many Bayesian applications to FMRI studies to test an effect across subjects.",
+      "claim_type": "EXPLICIT",
+      "source": "This approach has been used in many Bayesian applications to FMRI studies (Stephan et al., 2010) to test an effect across subjects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:28:18.183224Z"
+    },
+    {
+      "id": "b4d9ecd4-4621-446a-a061-30de5d9d5617",
+      "content_id": "0f8b7eb8-796b-4994-a7f2-e3a57e9f93d5",
+      "claim_id": "C129",
+      "claim": "Gaussian regression models were applied to take the correlations among frequencies into account for analyses concerning frequencies.",
+      "claim_type": "EXPLICIT",
+      "source": "For analyses concerning frequencies, we applied Gaussian regression models (Rasmussen, 2004) to take the correlations among frequencies into account.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the statistical analysis method with citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:28:18.183224Z"
+    },
+    {
+      "id": "1415d063-3fbb-4506-8236-1b79bb4d7f1f",
+      "content_id": "0f8b7eb8-796b-4994-a7f2-e3a57e9f93d5",
+      "claim_id": "C130",
+      "claim": "The Matern (5/2) kernel function was used for all analyses that used Gaussian regression models, which enforces that the underlying functional form be at least twice differentiable.",
+      "claim_type": "EXPLICIT",
+      "source": "We used the Matern (5/2) kernel function for all analyses that used Gaussian regression models, which enforces that the underlying functional form be at least twice differentiable.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the kernel choice for Gaussian regression.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:28:18.183224Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "d74acd73-6f2b-467e-ad6d-8d759aa6fc0c",
+      "content_id": "0f8b7eb8-796b-4994-a7f2-e3a57e9f93d5",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors argue that traditional multivariate autoregressive models and non-parametric spectral methods have significant limitations for analyzing neural data. These limitations include failure to account for signal complexity (C1), assumptions of independence across time and frequency that are violated by neural data (C22, C23), univariate application that neglects spatial structure (C24), and controversy over frequency band selection (C19, C20).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C2, C14, C19-C24 collectively establish the motivation for the study by documenting known limitations of existing methods. These claims are supported by multiple citations to prior work (C15, C21, C23) and represent established knowledge in the field. The characterization of these limitations is consistent with the neuroscience literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:28:18.183224Z"
+    },
+    {
+      "id": "223b7833-e1bf-445f-899a-6749cfd6b945",
+      "content_id": "0f8b7eb8-796b-4994-a7f2-e3a57e9f93d5",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The authors describe parametric VAR models and Granger causality methods as alternatives to non-parametric approaches, noting their use in neuroscience and other fields. However, they emphasize that these methods critically depend on assumptions of linearity and variance-stationarity (C30), and that violation of these assumptions\u2014particularly variance non-stationarity in EEG signals (C32)\u2014leads to inconsistent and misleading conclusions (C31).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25-C32 provide well-cited background on parametric methods and their limitations. The characterization of VAR model assumptions and their violations is supported by appropriate citations (C26, C29, C31, C32). This establishes the rationale for developing stochastic volatility approaches that relax variance-stationarity assumptions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:28:18.183224Z"
+    },
+    {
+      "id": "0c5cfac9-2819-4d7f-9631-ec259c858a04",
+      "content_id": "0f8b7eb8-796b-4994-a7f2-e3a57e9f93d5",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The authors motivate the use of stochastic volatility models by drawing parallels between neural and financial time series data. They demonstrate that iEEG volatility exhibits log-normality (C51, C52), similar to financial data (C50), and argue that stochastic volatility models are more appropriate than GARCH models because they allow volatility to be non-deterministic (C46, C48, C49).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C54 establish the theoretical foundation for applying stochastic volatility models to neural data. The log-normality of iEEG volatility is demonstrated empirically in Figure 1 (C52), and the comparison to financial data is well-cited (C33, C50, C54). The critique of GARCH models is supported by appropriate citations (C48, C49).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:28:18.183224Z"
+    },
+    {
+      "id": "d62174a6-193e-4d66-a8b7-d1a409a2e925",
+      "content_id": "0f8b7eb8-796b-4994-a7f2-e3a57e9f93d5",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The authors propose a multivariate stochastic volatility (MSV) model that generalizes previous univariate approaches by allowing a full (non-diagonal) coefficient matrix in the VAR process for volatility. This enables modeling of directional interactions between brain regions (C35, C59). The model is estimated using Bayesian methods with forward filtering backward sampling and Metropolis-Hastings algorithms (C36).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C36 and C58-C60 describe the core methodological contribution. The model specification is clearly stated (C34, C35), the generalization from diagonal to full coefficient matrix is justified (C58, C59), and the estimation approach is specified (C36). The feasibility argument based on high temporal resolution data (C60) is reasonable.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:28:18.183224Z"
+    },
+    {
+      "id": "e0c3eb12-e4e1-4ef7-ab63-801240e2484f",
+      "content_id": "0f8b7eb8-796b-4994-a7f2-e3a57e9f93d5",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The study analyzed iEEG data from 96 neurosurgical patients with drug-resistant epilepsy performing a verbal free-recall memory task. The experimental design, data acquisition parameters, and preprocessing steps are described in detail, including electrode placement, recording parameters, filtering, re-referencing, and spectral analysis methods.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C61-C62, C103-C118 provide comprehensive methodological details about the dataset, experimental paradigm, and data processing. The sample size is substantial (96 patients), ethical approvals are documented (C105), and technical specifications are clearly stated. The methods are sufficiently detailed for reproducibility.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:28:18.183224Z"
+    },
+    {
+      "id": "03981e3a-9600-49b6-8c51-d850c9a0755a",
+      "content_id": "0f8b7eb8-796b-4994-a7f2-e3a57e9f93d5",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The MSV model provides a substantially superior fit to MTL recordings compared to univariate stochastic volatility (SV) models. Model comparison using the Deviance Information Criterion (DIC) showed the MSV model had consistently lower DIC values with a mean difference of 23 (\u00b15.9 SEM) (C64), indicating the MSV model is approximately 150 times more probable than SV models (C65).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39, C63-C65, C99 demonstrate the superiority of the multivariate approach. The use of DIC for Bayesian model comparison is appropriate (C63), the quantitative results are clearly stated (C64), and the interpretation using Bayes factors is properly cited (C65). The conclusion that accounting for inter-regional interactions improves model fit is well-supported.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:28:18.183224Z"
+    },
+    {
+      "id": "2215a2f9-747c-4318-ae90-8697d57e2577",
+      "content_id": "0f8b7eb8-796b-4994-a7f2-e3a57e9f93d5",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The implied volatility from the MSV model positively correlates with spectral power across the frequency spectrum, with correlation increasing with frequency. The correlation is significantly positive across all frequencies and particularly strong in the gamma frequency band (C40), as demonstrated using Gaussian process regression (C66).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C40, C66, C78 establish the relationship between model-derived volatility and traditional spectral measures. The analysis uses appropriate statistical methods (Gaussian process regression) to account for correlations among frequencies, and the results are clearly visualized in Figure 3. The finding validates the volatility measure against established neural activity markers.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:28:18.183224Z"
+    },
+    {
+      "id": "26517003-74e1-4187-8925-143d65e26e75",
+      "content_id": "0f8b7eb8-796b-4994-a7f2-e3a57e9f93d5",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Volatility features derived from the MSV model can reliably decode memory states, with an average AUC of 0.53 (95% CI: 0.51-0.55) (C68). The volatility-based classifier performs as well as or better than spectral power classifiers across nearly all frequencies (C70), with the difference being statistically significant (C79). This suggests volatility can serve as a reliable biomarker for cognitive processes (C80).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C7-C8, C41, C68-C70, C79-C80, C101 present classification results, but there are concerns. The AUC of 0.53 (C68) is only marginally above chance (0.5), and while statistically significant, the effect size is small. The claim that volatility 'significantly outperforms' spectral features (C79) is overstated\u2014Figure 4B shows \u0394AUC is positive but small. The nested cross-validation approach is appropriate, but only 42 of 96 subjects had sufficient sessions for this analysis. The conclusion that volatility is a 'promising biomarker' (C101) requires more substantial performance improvements.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:28:18.183224Z"
+    },
+    {
+      "id": "7299dd19-b094-486e-bd22-10d8c7d4285c",
+      "content_id": "0f8b7eb8-796b-4994-a7f2-e3a57e9f93d5",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Using the MSV model to construct directional connectivity networks, the authors found significant bidirectional desynchronization between the perirhinal cortex and hippocampus in the left MTL during successful memory encoding (C42, C83). This finding is consistent with prior work showing memory-related high-frequency desynchronization (C74). No other significant directional connections were found (C75), and effects were more reliable in the left than right MTL (C88).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9, C42, C74-C75, C82-C83, C88 present the main connectivity findings. The statistical analysis is appropriate with FDR correction, the results are clearly stated with effect sizes and p-values, and the findings align with recent literature (C74, Solomon et al. 2017). The lateralization to left MTL is consistent with the verbal nature of the task. The negative result (C75) is appropriately reported.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:28:18.183224Z"
+    },
+    {
+      "id": "38863e36-3a48-4523-8240-1bf665d06ea3",
+      "content_id": "0f8b7eb8-796b-4994-a7f2-e3a57e9f93d5",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The authors compare their findings to prior work, noting agreement with Solomon et al. (2019) regarding high-frequency desynchronization during memory formation (C85, C97), but acknowledge that low-frequency connectivity increases found by Solomon et al. were not captured by their model (C86). They also note their results contradict earlier work by Fell et al. (2006) suggesting gamma-range coupling during memory formation (C95, C96).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C84-C87, C95-C97 appropriately contextualize the findings within existing literature. The authors acknowledge both agreements and discrepancies with prior work, and offer reasonable interpretations (e.g., that volatility features may primarily reflect high-frequency processes, C87). The discussion of conflicting findings is balanced and appropriately cautious.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:28:18.183224Z"
+    },
+    {
+      "id": "95d212b7-da3c-4c73-b64a-429547ded0b4",
+      "content_id": "0f8b7eb8-796b-4994-a7f2-e3a57e9f93d5",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The authors discuss the functional roles of the perirhinal cortex (familiarity and recency discrimination) and hippocampus (contextual binding) based on prior literature (C91, C92), and note that while these regions are important for memory retrieval (C93), the mechanisms of their interaction during memory processing remain unclear (C94). They speculate that the verbal nature of their task may explain the left MTL lateralization (C90).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C89-C94 provide appropriate theoretical context for interpreting the connectivity findings. The characterization of MTL subregion functions is well-cited (C91, C92, C93), and the acknowledgment of remaining uncertainties (C94) is appropriate. The speculation about task-related lateralization (C90) is reasonable but clearly marked as speculative.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:28:18.183224Z"
+    },
+    {
+      "id": "7f24eda8-4e22-4b19-bc26-fb367d6b98b5",
+      "content_id": "0f8b7eb8-796b-4994-a7f2-e3a57e9f93d5",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The authors claim their MSV framework provides 'new insights into the dynamics of brain function' (C4) by allowing analysis of directed interactions without assuming variance-stationarity (C77, C81). They state this is the 'first major application of stochastic volatility models to neural time-series data' (C98) and that the model 'fully captures' how volatility changes in one region influence another (C100).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C4, C76-C77, C81, C98, C100, C102 make broad claims about the contribution and capabilities of the method. While the MSV approach is novel in neuroscience (C98 appears accurate), the claim that it 'fully captures' inter-regional influences (C100) is overstated\u2014the model captures lag-1 linear relationships in log-volatility but may miss nonlinear or longer-lag effects. The claim of 'new insights' (C4) is supported by the specific findings but is somewhat generic. The statement that researchers 'can extend these models' (C102) is speculative.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:28:18.183224Z"
+    },
+    {
+      "id": "e3a20fc0-889f-4b6b-973e-2fe8226772e1",
+      "content_id": "0f8b7eb8-796b-4994-a7f2-e3a57e9f93d5",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The authors describe additional methodological details including model assumptions (C119), referencing choices and their justification (C121-C123), anatomical localization procedures (C124-C126), and statistical analysis approaches including the use of MAP estimates for group-level inference (C127-C128) and Gaussian process regression for frequency-dependent analyses (C129-C130).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C119, C121-C130 provide important methodological details. The choice of common average reference over bipolar reference is justified with clear reasoning (C122-C123). The anatomical localization using ASHS is well-cited (C124). The statistical approaches are appropriate and properly cited (C128, C129). These details support reproducibility and interpretation of results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:28:18.183224Z"
+    },
+    {
+      "id": "6eef9f0c-a1c2-4c5c-a4e2-7aabe439d37a",
+      "content_id": "0f8b7eb8-796b-4994-a7f2-e3a57e9f93d5",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The authors provide background on neural recordings and memory research, including the utility of iEEG for studying cognition (C12), the role of MTL in episodic memory (C38), and prior findings on spectral correlates of memory encoding (C67). They note that high-frequency activity correlates with neuronal activity (C6) but is less clearly oscillatory than low-frequency activity (C17) and may reflect stochastic volatility (C18).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C12-C13, C15-C18, C38, C67 provide well-cited background establishing the context for the study. The characterization of high-frequency activity as potentially reflecting stochastic volatility (C18) is appropriately marked as speculative and supported by citation. This background appropriately motivates the research questions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:28:18.183224Z"
+    },
+    {
+      "id": "2b139ff5-8584-4802-b19c-9e6e3ed72b69",
+      "content_id": "0f8b7eb8-796b-4994-a7f2-e3a57e9f93d5",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The authors note that while latent process models have been applied in neuroscience for modeling spiking activity and motor cortical activity (C55), and GARCH models have been applied to EEG for studying anesthesia, sleep, and seizures (C56), these applications have been small-scale and focused on individual recording locations, neglecting inter-regional connectivity (C57).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55-C57 accurately characterize prior applications of volatility models in neuroscience. The citations support the claims about previous applications (C55, C56), and the characterization of these as small-scale and univariate (C57) appropriately distinguishes the current multivariate approach.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:28:18.183224Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "ae77200d-af29-4f9e-9ead-794b64d8720d",
+      "result_id": "d74acd73-6f2b-467e-ad6d-8d759aa6fc0c"
+    },
+    {
+      "claim_id": "1a980406-79fa-4196-8140-2c0fc41417fa",
+      "result_id": "d74acd73-6f2b-467e-ad6d-8d759aa6fc0c"
+    },
+    {
+      "claim_id": "d3e9afa4-4e76-4b93-b2b0-fd9db0b8b997",
+      "result_id": "d74acd73-6f2b-467e-ad6d-8d759aa6fc0c"
+    },
+    {
+      "claim_id": "09c0eab1-f0e1-4252-9c7d-eb4c52ec701f",
+      "result_id": "d74acd73-6f2b-467e-ad6d-8d759aa6fc0c"
+    },
+    {
+      "claim_id": "fec1c189-464e-4777-b687-6485c75bd592",
+      "result_id": "d74acd73-6f2b-467e-ad6d-8d759aa6fc0c"
+    },
+    {
+      "claim_id": "aa4e75bf-867f-48da-acac-502d4ab98e9f",
+      "result_id": "d74acd73-6f2b-467e-ad6d-8d759aa6fc0c"
+    },
+    {
+      "claim_id": "d6c9f491-e207-4043-aaaa-551ecf3ee85a",
+      "result_id": "d74acd73-6f2b-467e-ad6d-8d759aa6fc0c"
+    },
+    {
+      "claim_id": "0ad5ed90-4d02-48aa-8fbf-4361cf6715c4",
+      "result_id": "d74acd73-6f2b-467e-ad6d-8d759aa6fc0c"
+    },
+    {
+      "claim_id": "4f40ea4b-861d-4a64-9628-9ae124d82615",
+      "result_id": "d74acd73-6f2b-467e-ad6d-8d759aa6fc0c"
+    },
+    {
+      "claim_id": "010fb19f-55df-4e44-9f8a-bbc851448cc5",
+      "result_id": "223b7833-e1bf-445f-899a-6749cfd6b945"
+    },
+    {
+      "claim_id": "bd731cae-85ad-4fcf-9615-ea3811f5cdc5",
+      "result_id": "223b7833-e1bf-445f-899a-6749cfd6b945"
+    },
+    {
+      "claim_id": "dbbc1ead-6954-442f-b9f0-b7f0c1a37f2a",
+      "result_id": "223b7833-e1bf-445f-899a-6749cfd6b945"
+    },
+    {
+      "claim_id": "bb6fa574-4d8a-4dc8-8e5e-d4833deb95e9",
+      "result_id": "223b7833-e1bf-445f-899a-6749cfd6b945"
+    },
+    {
+      "claim_id": "bfb34930-cc0c-406e-a9cc-0ed416321947",
+      "result_id": "223b7833-e1bf-445f-899a-6749cfd6b945"
+    },
+    {
+      "claim_id": "380028a7-a9c6-4118-8ab4-c12163850ca5",
+      "result_id": "223b7833-e1bf-445f-899a-6749cfd6b945"
+    },
+    {
+      "claim_id": "8b240fac-d6e2-4d41-881d-b9467deabfd2",
+      "result_id": "223b7833-e1bf-445f-899a-6749cfd6b945"
+    },
+    {
+      "claim_id": "db1c28c5-0572-46c6-b046-597bcf40f4db",
+      "result_id": "223b7833-e1bf-445f-899a-6749cfd6b945"
+    },
+    {
+      "claim_id": "845e386f-9a1c-4995-8d92-b30938eb32e2",
+      "result_id": "0c5cfac9-2819-4d7f-9631-ec259c858a04"
+    },
+    {
+      "claim_id": "3e8ec68e-59aa-466b-952a-d24bb84f611c",
+      "result_id": "0c5cfac9-2819-4d7f-9631-ec259c858a04"
+    },
+    {
+      "claim_id": "10d8b704-eff8-477d-bbeb-b51cd0cd9d7e",
+      "result_id": "0c5cfac9-2819-4d7f-9631-ec259c858a04"
+    },
+    {
+      "claim_id": "e24a8797-8c9f-4da8-9108-371e23c9eac5",
+      "result_id": "0c5cfac9-2819-4d7f-9631-ec259c858a04"
+    },
+    {
+      "claim_id": "5ebc6fa7-1497-498c-9464-f6e919809068",
+      "result_id": "0c5cfac9-2819-4d7f-9631-ec259c858a04"
+    },
+    {
+      "claim_id": "203d3221-d738-4b03-b090-228b072d83fb",
+      "result_id": "0c5cfac9-2819-4d7f-9631-ec259c858a04"
+    },
+    {
+      "claim_id": "f017db59-c488-4f9b-9e91-45aa0b3f4ce7",
+      "result_id": "0c5cfac9-2819-4d7f-9631-ec259c858a04"
+    },
+    {
+      "claim_id": "f92f2a42-6c54-48e8-a85c-c22b3fc3bd6b",
+      "result_id": "0c5cfac9-2819-4d7f-9631-ec259c858a04"
+    },
+    {
+      "claim_id": "19afab62-9196-481d-90c5-92d8cd9e2dcd",
+      "result_id": "0c5cfac9-2819-4d7f-9631-ec259c858a04"
+    },
+    {
+      "claim_id": "7743cb1e-1f1b-47a2-8121-93053d1e53a6",
+      "result_id": "0c5cfac9-2819-4d7f-9631-ec259c858a04"
+    },
+    {
+      "claim_id": "5d708a33-a3b3-4044-b274-e15e73b680f3",
+      "result_id": "0c5cfac9-2819-4d7f-9631-ec259c858a04"
+    },
+    {
+      "claim_id": "7135d3a6-e089-4f92-b7eb-bfd29fe196e6",
+      "result_id": "0c5cfac9-2819-4d7f-9631-ec259c858a04"
+    },
+    {
+      "claim_id": "9d88ff1c-5794-4606-8e74-d3da866a7609",
+      "result_id": "0c5cfac9-2819-4d7f-9631-ec259c858a04"
+    },
+    {
+      "claim_id": "fbf9558b-111f-46f9-993f-c2c11aa69afe",
+      "result_id": "d62174a6-193e-4d66-a8b7-d1a409a2e925"
+    },
+    {
+      "claim_id": "40b142f8-8340-40c5-af98-fae25196caae",
+      "result_id": "d62174a6-193e-4d66-a8b7-d1a409a2e925"
+    },
+    {
+      "claim_id": "7c6314cb-a0b1-4c09-9d11-7af8aa47d63b",
+      "result_id": "d62174a6-193e-4d66-a8b7-d1a409a2e925"
+    },
+    {
+      "claim_id": "38e1b6c9-a146-4429-b120-1f9822489ddb",
+      "result_id": "d62174a6-193e-4d66-a8b7-d1a409a2e925"
+    },
+    {
+      "claim_id": "18fc683b-51fd-4725-8b1d-9e5e13470d42",
+      "result_id": "d62174a6-193e-4d66-a8b7-d1a409a2e925"
+    },
+    {
+      "claim_id": "ff535f74-d01d-4e0f-b672-f21da7041d1c",
+      "result_id": "d62174a6-193e-4d66-a8b7-d1a409a2e925"
+    },
+    {
+      "claim_id": "c0de4709-1c46-4d27-af54-2a865862cc66",
+      "result_id": "e0c3eb12-e4e1-4ef7-ab63-801240e2484f"
+    },
+    {
+      "claim_id": "9e66f3f3-f2e1-442b-9c42-c42a24fbff13",
+      "result_id": "e0c3eb12-e4e1-4ef7-ab63-801240e2484f"
+    },
+    {
+      "claim_id": "6253fb6c-8270-40c3-a552-4a6e588bb246",
+      "result_id": "e0c3eb12-e4e1-4ef7-ab63-801240e2484f"
+    },
+    {
+      "claim_id": "805f7d26-9c57-4b5a-9d96-0557989fa7ec",
+      "result_id": "e0c3eb12-e4e1-4ef7-ab63-801240e2484f"
+    },
+    {
+      "claim_id": "7b46c0d1-df89-4558-a653-0d3f88f11062",
+      "result_id": "e0c3eb12-e4e1-4ef7-ab63-801240e2484f"
+    },
+    {
+      "claim_id": "c499e924-82a2-4891-9ae3-febc0e17c719",
+      "result_id": "e0c3eb12-e4e1-4ef7-ab63-801240e2484f"
+    },
+    {
+      "claim_id": "227f3807-e927-4af2-8b30-df23a2494c46",
+      "result_id": "e0c3eb12-e4e1-4ef7-ab63-801240e2484f"
+    },
+    {
+      "claim_id": "5e203c32-4eb3-4795-9077-825cb38840c9",
+      "result_id": "e0c3eb12-e4e1-4ef7-ab63-801240e2484f"
+    },
+    {
+      "claim_id": "403be92b-51f6-480d-a0ad-9f6a7b1b1666",
+      "result_id": "e0c3eb12-e4e1-4ef7-ab63-801240e2484f"
+    },
+    {
+      "claim_id": "bd6e9f50-3b1f-4e16-8d8e-94d77b2aef62",
+      "result_id": "e0c3eb12-e4e1-4ef7-ab63-801240e2484f"
+    },
+    {
+      "claim_id": "482926aa-2d66-46c5-8f99-8aff01a5a318",
+      "result_id": "e0c3eb12-e4e1-4ef7-ab63-801240e2484f"
+    },
+    {
+      "claim_id": "7c361164-1cff-4437-8218-02fc74fffc64",
+      "result_id": "e0c3eb12-e4e1-4ef7-ab63-801240e2484f"
+    },
+    {
+      "claim_id": "e8fc9507-0a08-4b13-8ca5-35291062f5b1",
+      "result_id": "e0c3eb12-e4e1-4ef7-ab63-801240e2484f"
+    },
+    {
+      "claim_id": "b486992c-e275-48ee-84e3-135a91f6d1df",
+      "result_id": "e0c3eb12-e4e1-4ef7-ab63-801240e2484f"
+    },
+    {
+      "claim_id": "87d868d3-4860-4d5e-b9ef-7f162e6c6390",
+      "result_id": "e0c3eb12-e4e1-4ef7-ab63-801240e2484f"
+    },
+    {
+      "claim_id": "2366a412-db4f-4b8d-a5b8-03c9578d6251",
+      "result_id": "e0c3eb12-e4e1-4ef7-ab63-801240e2484f"
+    },
+    {
+      "claim_id": "3c1de235-77b8-439a-8dca-bdfc1d5c2b54",
+      "result_id": "e0c3eb12-e4e1-4ef7-ab63-801240e2484f"
+    },
+    {
+      "claim_id": "e2709598-cd0b-4d13-89b5-9d021a6d19cb",
+      "result_id": "e0c3eb12-e4e1-4ef7-ab63-801240e2484f"
+    },
+    {
+      "claim_id": "8c85cc0b-b283-4180-99b4-73b7364b6e79",
+      "result_id": "e0c3eb12-e4e1-4ef7-ab63-801240e2484f"
+    },
+    {
+      "claim_id": "a4e58fb4-32b9-42ee-ac1b-7a48669b22c0",
+      "result_id": "03981e3a-9600-49b6-8c51-d850c9a0755a"
+    },
+    {
+      "claim_id": "6be7844a-276d-42f1-865d-db7eaa86d12c",
+      "result_id": "03981e3a-9600-49b6-8c51-d850c9a0755a"
+    },
+    {
+      "claim_id": "ebe45866-b0f7-4831-9fb3-5b9f3174b654",
+      "result_id": "03981e3a-9600-49b6-8c51-d850c9a0755a"
+    },
+    {
+      "claim_id": "9f23554d-717c-4f14-877f-ef479de93377",
+      "result_id": "03981e3a-9600-49b6-8c51-d850c9a0755a"
+    },
+    {
+      "claim_id": "cb54ec01-e273-4e87-8938-b0ac0ffc4ee7",
+      "result_id": "03981e3a-9600-49b6-8c51-d850c9a0755a"
+    },
+    {
+      "claim_id": "d6ce7ea2-af7e-4e17-a829-20b66d1ab2a9",
+      "result_id": "2215a2f9-747c-4318-ae90-8697d57e2577"
+    },
+    {
+      "claim_id": "dbdb86c1-f9ee-43b9-bc9e-5de4df72127a",
+      "result_id": "2215a2f9-747c-4318-ae90-8697d57e2577"
+    },
+    {
+      "claim_id": "49c37197-7e2f-4715-947e-2a4890f91677",
+      "result_id": "2215a2f9-747c-4318-ae90-8697d57e2577"
+    },
+    {
+      "claim_id": "c3e21588-595c-4971-add0-6d4e8c5a4646",
+      "result_id": "2215a2f9-747c-4318-ae90-8697d57e2577"
+    },
+    {
+      "claim_id": "7470c959-ba5f-4013-ba12-5fcd192d5827",
+      "result_id": "26517003-74e1-4187-8925-143d65e26e75"
+    },
+    {
+      "claim_id": "3ef2ea91-cb36-4da5-982e-babd6e0d9883",
+      "result_id": "26517003-74e1-4187-8925-143d65e26e75"
+    },
+    {
+      "claim_id": "ee0f0016-fabe-4d7a-9ae0-02b11aca0457",
+      "result_id": "26517003-74e1-4187-8925-143d65e26e75"
+    },
+    {
+      "claim_id": "4d19935e-1df9-4f5a-9595-ddfaccb4a5f7",
+      "result_id": "26517003-74e1-4187-8925-143d65e26e75"
+    },
+    {
+      "claim_id": "afae40c0-a859-400c-9792-60d83f3388af",
+      "result_id": "26517003-74e1-4187-8925-143d65e26e75"
+    },
+    {
+      "claim_id": "4bc9b2ac-ce66-4510-9793-3fdd34f775c7",
+      "result_id": "26517003-74e1-4187-8925-143d65e26e75"
+    },
+    {
+      "claim_id": "06d8925e-4471-4d32-bc84-117d207d801d",
+      "result_id": "26517003-74e1-4187-8925-143d65e26e75"
+    },
+    {
+      "claim_id": "1c72636f-486e-47cf-82a1-2ecc3510917a",
+      "result_id": "26517003-74e1-4187-8925-143d65e26e75"
+    },
+    {
+      "claim_id": "0a7e0562-286a-485f-8895-f10dc3616d69",
+      "result_id": "26517003-74e1-4187-8925-143d65e26e75"
+    },
+    {
+      "claim_id": "effe0d50-2e24-4ada-bb32-4e20d5886885",
+      "result_id": "7299dd19-b094-486e-bd22-10d8c7d4285c"
+    },
+    {
+      "claim_id": "defe0942-9aa3-433a-a7ed-b0f06bfaad83",
+      "result_id": "7299dd19-b094-486e-bd22-10d8c7d4285c"
+    },
+    {
+      "claim_id": "26c8a03a-a976-4d97-9162-945b60a3fc9f",
+      "result_id": "7299dd19-b094-486e-bd22-10d8c7d4285c"
+    },
+    {
+      "claim_id": "64964615-a52f-41c8-be55-8926902af94c",
+      "result_id": "7299dd19-b094-486e-bd22-10d8c7d4285c"
+    },
+    {
+      "claim_id": "bbba0775-4a6c-4d86-bb11-528412dccd9d",
+      "result_id": "7299dd19-b094-486e-bd22-10d8c7d4285c"
+    },
+    {
+      "claim_id": "1dcfb389-604e-4019-b6be-30d8010c42c9",
+      "result_id": "7299dd19-b094-486e-bd22-10d8c7d4285c"
+    },
+    {
+      "claim_id": "64f2d4ac-b199-4bfa-a249-5de15ff7c973",
+      "result_id": "7299dd19-b094-486e-bd22-10d8c7d4285c"
+    },
+    {
+      "claim_id": "3763b582-9357-4bd8-b954-f44b9ace0bff",
+      "result_id": "38863e36-3a48-4523-8240-1bf665d06ea3"
+    },
+    {
+      "claim_id": "1592e03d-d2a1-4d43-838f-5b2802373942",
+      "result_id": "38863e36-3a48-4523-8240-1bf665d06ea3"
+    },
+    {
+      "claim_id": "f09b2e62-0205-4272-92f8-286222050ce6",
+      "result_id": "38863e36-3a48-4523-8240-1bf665d06ea3"
+    },
+    {
+      "claim_id": "6184f722-e47b-4be6-ab9e-f74089ef4bb0",
+      "result_id": "38863e36-3a48-4523-8240-1bf665d06ea3"
+    },
+    {
+      "claim_id": "05a2ad8b-ec67-4e37-9524-f1aac100c50c",
+      "result_id": "38863e36-3a48-4523-8240-1bf665d06ea3"
+    },
+    {
+      "claim_id": "4c8e5a1c-3293-41a2-92c7-44c23d04ba6a",
+      "result_id": "38863e36-3a48-4523-8240-1bf665d06ea3"
+    },
+    {
+      "claim_id": "1b5807a6-a1fe-4883-b90f-369c0075bf14",
+      "result_id": "38863e36-3a48-4523-8240-1bf665d06ea3"
+    },
+    {
+      "claim_id": "f1429441-b666-4300-a92d-13660af9e5e9",
+      "result_id": "95d212b7-da3c-4c73-b64a-429547ded0b4"
+    },
+    {
+      "claim_id": "205caf22-852c-424d-af6d-58fe60e707bf",
+      "result_id": "95d212b7-da3c-4c73-b64a-429547ded0b4"
+    },
+    {
+      "claim_id": "79873d97-2734-44eb-a725-b8c0c2838b3e",
+      "result_id": "95d212b7-da3c-4c73-b64a-429547ded0b4"
+    },
+    {
+      "claim_id": "83ee1923-8036-425d-984e-bf3a3873fc52",
+      "result_id": "95d212b7-da3c-4c73-b64a-429547ded0b4"
+    },
+    {
+      "claim_id": "e36c2f0d-2f6c-4831-95a5-29633ee6b193",
+      "result_id": "95d212b7-da3c-4c73-b64a-429547ded0b4"
+    },
+    {
+      "claim_id": "edc07054-5d5d-4e6e-8a73-c2d73b256825",
+      "result_id": "95d212b7-da3c-4c73-b64a-429547ded0b4"
+    },
+    {
+      "claim_id": "0c30a1e8-33bf-41df-9032-955a0585366d",
+      "result_id": "7f24eda8-4e22-4b19-bc26-fb367d6b98b5"
+    },
+    {
+      "claim_id": "e073b071-c717-44b4-ae9f-ec78dd7d403b",
+      "result_id": "7f24eda8-4e22-4b19-bc26-fb367d6b98b5"
+    },
+    {
+      "claim_id": "2da366bb-10e0-4801-abe3-5a8defafa669",
+      "result_id": "7f24eda8-4e22-4b19-bc26-fb367d6b98b5"
+    },
+    {
+      "claim_id": "2b6b8e5c-c5d3-4137-984e-3fe709e8786f",
+      "result_id": "7f24eda8-4e22-4b19-bc26-fb367d6b98b5"
+    },
+    {
+      "claim_id": "ec9d6178-da90-4f6a-84e0-7a6a5d75cb1c",
+      "result_id": "7f24eda8-4e22-4b19-bc26-fb367d6b98b5"
+    },
+    {
+      "claim_id": "a4f82b6a-f862-4f13-9711-2ced48c09081",
+      "result_id": "7f24eda8-4e22-4b19-bc26-fb367d6b98b5"
+    },
+    {
+      "claim_id": "2a40579e-a90c-4a8d-b0d0-3576303a3502",
+      "result_id": "7f24eda8-4e22-4b19-bc26-fb367d6b98b5"
+    },
+    {
+      "claim_id": "78d6fa8c-52e9-44ad-bebe-b46b7a09c9ea",
+      "result_id": "e3a20fc0-889f-4b6b-973e-2fe8226772e1"
+    },
+    {
+      "claim_id": "dacc919e-71c1-490f-bd26-ede6d6537a9f",
+      "result_id": "e3a20fc0-889f-4b6b-973e-2fe8226772e1"
+    },
+    {
+      "claim_id": "b66fa469-f3bb-4763-a0f4-1afe20804770",
+      "result_id": "e3a20fc0-889f-4b6b-973e-2fe8226772e1"
+    },
+    {
+      "claim_id": "d5a4a539-5e31-44f3-9993-273f79505868",
+      "result_id": "e3a20fc0-889f-4b6b-973e-2fe8226772e1"
+    },
+    {
+      "claim_id": "593ff71b-755a-44c6-9e6c-cc6c05d2368a",
+      "result_id": "e3a20fc0-889f-4b6b-973e-2fe8226772e1"
+    },
+    {
+      "claim_id": "b56a79b4-04e8-4c76-8f1e-7c7eec16f2b9",
+      "result_id": "e3a20fc0-889f-4b6b-973e-2fe8226772e1"
+    },
+    {
+      "claim_id": "8e959337-b847-4c01-8041-b528a257e26f",
+      "result_id": "e3a20fc0-889f-4b6b-973e-2fe8226772e1"
+    },
+    {
+      "claim_id": "c38231bb-f1d7-4278-8b80-9d57215d96d7",
+      "result_id": "e3a20fc0-889f-4b6b-973e-2fe8226772e1"
+    },
+    {
+      "claim_id": "61fdfe88-9792-4d5a-8db5-9cdf1875b7ac",
+      "result_id": "e3a20fc0-889f-4b6b-973e-2fe8226772e1"
+    },
+    {
+      "claim_id": "b4d9ecd4-4621-446a-a061-30de5d9d5617",
+      "result_id": "e3a20fc0-889f-4b6b-973e-2fe8226772e1"
+    },
+    {
+      "claim_id": "1415d063-3fbb-4506-8236-1b79bb4d7f1f",
+      "result_id": "e3a20fc0-889f-4b6b-973e-2fe8226772e1"
+    },
+    {
+      "claim_id": "3c36816d-aac4-44e1-88e6-4f59c176b67d",
+      "result_id": "6eef9f0c-a1c2-4c5c-a4e2-7aabe439d37a"
+    },
+    {
+      "claim_id": "f9415134-c4fd-44cf-af96-9ec6f1f225e1",
+      "result_id": "6eef9f0c-a1c2-4c5c-a4e2-7aabe439d37a"
+    },
+    {
+      "claim_id": "786b0105-bebd-4e07-bc08-6c9eb0c4c37d",
+      "result_id": "6eef9f0c-a1c2-4c5c-a4e2-7aabe439d37a"
+    },
+    {
+      "claim_id": "b1c2be01-aa28-486e-bfe9-961dcd9f2612",
+      "result_id": "6eef9f0c-a1c2-4c5c-a4e2-7aabe439d37a"
+    },
+    {
+      "claim_id": "08ce1b50-de69-48a5-9f05-f7aee2d982f5",
+      "result_id": "6eef9f0c-a1c2-4c5c-a4e2-7aabe439d37a"
+    },
+    {
+      "claim_id": "1df30265-cda2-4a68-8861-c8b0935f4195",
+      "result_id": "6eef9f0c-a1c2-4c5c-a4e2-7aabe439d37a"
+    },
+    {
+      "claim_id": "f65bb222-281d-4f89-a534-d25bb30937eb",
+      "result_id": "6eef9f0c-a1c2-4c5c-a4e2-7aabe439d37a"
+    },
+    {
+      "claim_id": "48440a14-4367-4044-8509-5be2d44c0de9",
+      "result_id": "6eef9f0c-a1c2-4c5c-a4e2-7aabe439d37a"
+    },
+    {
+      "claim_id": "175731e6-607c-426a-b6ee-63fd9bad630c",
+      "result_id": "6eef9f0c-a1c2-4c5c-a4e2-7aabe439d37a"
+    },
+    {
+      "claim_id": "08cf3ffb-b224-462b-a0df-7f535eb13225",
+      "result_id": "2b139ff5-8584-4802-b19c-9e6e3ed72b69"
+    },
+    {
+      "claim_id": "f4e402d5-b7ef-4114-b1f9-7d10f136d900",
+      "result_id": "2b139ff5-8584-4802-b19c-9e6e3ed72b69"
+    },
+    {
+      "claim_id": "4c34735e-9029-46af-8506-73f5066a0e9d",
+      "result_id": "2b139ff5-8584-4802-b19c-9e6e3ed72b69"
+    }
+  ],
+  "comparisons": []
+}

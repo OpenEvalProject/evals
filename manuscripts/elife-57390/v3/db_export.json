@@ -1,0 +1,1679 @@
+{
+  "submission": {
+    "id": "b5b55cdd-9b75-45c7-b6c0-bc169497c508",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T19:07:18.192825Z",
+    "updated_at": "2025-12-02T19:07:18.192825Z"
+  },
+  "content": [
+    {
+      "id": "fe856001-4554-4c04-b56a-9d40b129cec8",
+      "submission_id": "b5b55cdd-9b75-45c7-b6c0-bc169497c508",
+      "content_type": "manuscript",
+      "content_text": "# Population-scale proteome variation in human induced pluripotent stem cells\n\n## Authors\n\n- Bogdan Andrei Mirauta<sup>1</sup> ([ORCID: 0000-0002-9733-292X](https://orcid.org/0000-0002-9733-292X))\n- Daniel D Seaton<sup>1</sup>\n- Dalila Bensaddek<sup>2</sup>\n- Alejandro Brenes<sup>2</sup>\n- Marc Jan Bonder<sup>1</sup> ([ORCID: 0000-0002-8431-3180](https://orcid.org/0000-0002-8431-3180))\n- Helena Kilpinen<sup>1</sup> ([ORCID: 0000-0001-6692-6154](https://orcid.org/0000-0001-6692-6154))\n- Chukwuma A Agu<sup>1</sup>\n- Chukwuma A Agu\n- Alex Alderton\n- Petr Danecek\n- Rachel Denton\n- Richard Durbin\n- Daniel J Gaffney\n- Angela Goncalves\n- Reena Halai\n- Sarah Harper\n- Christopher M Kirton\n- Anja Kolb-Kokocinski\n- Andreas Leha\n- Shane A McCarthy\n- Yasin Memari\n- Minal Patel\n- Ewan Birney\n- Francesco Paolo Casale\n- Laura Clarke\n- Peter W Harrison\n- Helena Kilpinen\n- Ian Streeter\n- Davide Denovi\n- Oliver Stegle\n- Angus I Lamond\n- Ruta Meleckyte\n- Natalie Moens\n- Fiona M Watt\n- Willem H Ouwehand\n- Philip Beales\n- Oliver Stegle<sup>1</sup> ([ORCID: 0000-0002-8818-7193](https://orcid.org/0000-0002-8818-7193)) \u2020\n- Angus I Lamond<sup>2</sup> ([ORCID: 0000-0001-6204-6045](https://orcid.org/0000-0001-6204-6045)) \u2020\n\n### Affiliations\n\n1. European Molecular Biology Laboratory, European Bioinformatics Institute, Wellcome Genome Campus Hinxton United Kingdom\n2. Centre for Gene Regulation & Expression, School of Life Sciences, University of Dundee Dundee United Kingdom\n3. Wellcome Sanger Institute Hinxton, Cambridge United Kingdom\n4. King's College London United Kingdom\n5. European Molecular Biology Laboratory, Genome Biology Unit Heidelberg Germany\n6. Division of Computational Genomics and Systems Genetic, German Cancer Research Center Heidelberg Germany\n\n\u2020 Corresponding author\n\n## Abstract\n\nHuman disease phenotypes are driven primarily by alterations in protein expression and/or function. To date, relatively little is known about the variability of the human proteome in populations and how this relates to variability in mRNA expression and to disease loci. Here, we present the first comprehensive proteomic analysis of human induced pluripotent stem cells (iPSC), a key cell type for disease modelling, analysing 202 iPSC lines derived from 151 donors, with integrated transcriptome and genomic sequence data from the same lines. We characterised the major genetic and non-genetic determinants of proteome variation across iPSC lines and assessed key regulatory mechanisms affecting variation in protein abundance. We identified 654 protein quantitative trait loci (pQTLs) in iPSCs, including disease-linked variants in protein-coding sequences and variants with trans regulatory effects. These include pQTL linked to GWAS variants that cannot be detected at the mRNA level, highlighting the utility of dissecting pQTL at peptide level resolution.\n\n## Introduction\n\nInduced pluripotent stem cells (iPSC) hold great promise for advancing basic research and biomedicine. By enabling the in vitro reconstitution of development and cell differentiation, iPS cells allow the investigation of mechanisms underlying development and the aetiology of many forms of genetic disease. To realize this potential, it is essential to characterise genetic and non-genetic sources of variability of molecular and cellular phenotypes in human iPSCs.\n\nRecently, multiple reference panels of human iPSC lines have been established (Kilpinen et al., 2017; Panopoulos et al., 2017; Carcamo-Orive et al., 2017), providing a valuable resource for functional experiments in pluripotent cells. These cell lines, together with associated data, have enabled the characterisation of variability in iPSC transcriptomes, identifying genetic and non-genetic determinants of expression variation, including expression quantitative trait loci (eQTL) (Kilpinen et al., 2017; Rouhani et al., 2014; DeBoever et al., 2017)\u00a0in cis.\n\nWhile RNA-centric analyses are informative for studying gene regulatory mechanisms at the transcriptional level, most cellular phenotypes ultimately involve downstream mechanisms that are mediated by proteins. Several proteogenomics studies, primarily in cancer (Zhang et al., 2014; Mertins et al., 2016), have underlined the relevance of protein measurements to interpreting how genomic changes act at the phenotypic level. Moreover, recent evidence has shown that genetic alterations can have effects on RNA that are attenuated at the protein level (Gon\u00e7alves et al., 2017; Roumeliotis et al., 2017). Vice versa, the mapping of protein quantitative trait loci (pQTL), predominantly in lymphoblast cell lines (Battle et al., 2015; Stark et al., 2014; Wu et al., 2013) and for the plasma proteome (Sun et al., 2018; Yao et al., 2018; Liu et al., 2015; Johansson et al., 2013; Lourdusamy et al., 2012), has revealed genetic effects on protein traits that do not manifest at the RNA level. However, the extent of RNA-independent protein regulation is not yet understood, with previous analyses performed only at gene-level resolution and, in some cases, without comparing protein and RNA data from the same cellular material.\n\nHere, we report the first comprehensive, population-scale, combined proteomic and transcriptomic analysis of human iPSC lines. Our data provide matched quantitative proteomic (Tandem Mass Tag Mass Spectrometry) and transcriptomic (RNA-Seq) profiles of 202 iPSC lines, derived from 151 donors from the HipSci project (Kilpinen et al., 2017). We identify both genetic and non-genetic effects associated with variability in protein expression between individuals and describe the first high-resolution pQTL map in human iPSCs, including loci not detected as eQTLs at the RNA level.\n\n## Results\n\n### A population reference proteome for human iPSCs\n\nA set of 217 iPSC lines from the HipSci project (Kilpinen et al., 2017), derived from 163 distinct donors, was selected for protein analysis, using material from the identical batches of cells that were used for RNA-Seq and other assays (Materials\u00a0and\u00a0methods). Quantitative mass spectrometry was carried out in batches of 10 lines, using tandem mass tagging (TMT, Thompson et al., 2003), with one common reference sample shared across batches (Brenes et al., 2018) (Materials\u00a0and\u00a0methods). Collectively, we identified 255,015 distinct (unmodified) peptide sequences, corresponding to 16,773 protein groups (groups of protein isoforms with no discriminating peptides; hereon denoted proteins) with median sequence coverage of 46%.\n\nAfter quality control, 202 lines (from 151 donors) with matched genotype, RNA-Seq and proteome data, were selected for further analysis (Figure 1a; Figure 1\u2014figure supplement 1; Figure 1\u2014source data 1). We identified 11,140 recurrently detected proteins, corresponding to 10,198 genes (detected in at least 30 lines; Materials\u00a0and\u00a0methods) and RNA expression for 12,363 protein-coding genes (population average TPM\u00a0>1). Out of these, 9013 protein coding genes were detected both at the RNA and protein levels (Figure 1\u2014source datas 2 and 3).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/57390/elife-57390-fig1-v3.jpg)\n\n**Figure 1.:** (a)\u00a0Experimental design and assays considered in this study. Genotype, RNA-Seq and quantitative proteomics data were obtained from the same cell material of 202 iPSC lines derived from 151 unrelated donors. (b)\u00a0Variance component analysis of RNA and protein abundances across genes, considering different technical and biological factors. Shown is the distribution of the fraction of variance explained by different factors (upper panel) across proteins, and the number of genes with substantial variance contribution for each factor (>20% contribution; lower panel). Also shown are the number of genes that retain greater than 20% contribution after adjusting for the effect of the corresponding RNA profiles on protein abundance (light blue; see Materials\u00a0and\u00a0methods). (c) Association of protein level with X chromosome inactivation (XCI) status across 110 female iPSC lines. Shown are lowess regression curves for 322 and 312 proteins respectively that were identified as significantly up (red) - and down (blue) - regulated with loss of XCI in female iPSC lines (lower panel; 10% FDR). Selected gene ontology enrichments for these sets of proteins are shown (right-hand panel; Materials\u00a0and\u00a0methods). XCI status was estimated as the average fraction of allele-specific expression for the inactive chromosome across all chromosome X genes (Materials\u00a0and\u00a0methods). (d) Scatter plot of the fraction of variance explained by donor at the RNA (x-axis) versus protein (y-axis) level. Encoded in colour is the fraction of variance explained by donor effects at the protein level after adjusting for the effect of the corresponding RNA profiles on protein abundance (Materials\u00a0and\u00a0methods).\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/57390/elife-57390-fig1-figsupp1-v3.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (a) Number of detected peptides across all 240 iPSC lines (including 23 replicates of the reference line) ordered by TMT processing batch (dashed vertical lines). The horizontal lines denote the QC cutoff of 75% of the median across lines (67,000 peptides). (b) Distribution of the number lines in which the peptides and proteins were detected. The number of recurrently detected peptides, or protein groups (at least one detected peptide per group), are shown as a function of the recurrence (considering 202 lines with QC-passing RNA and protein data). (c) Fraction of expressed genes detected at the protein level for increasing levels of expression at the RNA level (for each decile of RNA expression; grey: values for each cell line ; blue: average across cell lines). (d) Assessment of batch correction across TMT batches. Principal component analysis of all 202 iPS lines + 22 additional technical replicates of the reference cell line (HPSI0314i-bubh_3), which was included in each TMT batch. Colour denotes the TMT batch. (e) Scatter plot of the coefficient of variation of peptide abundance estimates across processing batches for the reference line, before (x-axis) and after (y-axis) batch correction and quantile normalisation. Note that the reference line is not used for estimating parameters of the batch adjustment (Materials\u00a0and\u00a0methods).\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/57390/elife-57390-fig1-figsupp2-v3.jpg)\n\n**Figure 1\u2014figure supplement 2.:** Spearman correlation coefficients between the average iPSC proteome abundance and proteome profiles of 23 tissues obtained from the Human Proteome Map, including Fetal (Red) and Adult (Blue) tissues are shown (see Materials\u00a0and\u00a0methods for details).\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/57390/elife-57390-fig1-figsupp3-v3.jpg)\n\n**Figure 1\u2014figure supplement 3.:** (a) Principal components analysis of protein (left panel) and RNA (right panel) profiles of 202 iPSC lines, with individual lines color coded by disease status. In total 6583 proteins detected in all 202 cell lines and 16,852 genes with RNA expression (TPM\u00a0>1) in at least 30 lines were considered. (b) Differential expression analysis between the largest disease entities (Bardet-Biedl;N\u00a0=\u00a038 and Monogenic diabetes; N\u00a0=\u00a038 and \u2018Normal\u2019;\u00a0N\u00a0=\u00a0112; Supplementary file 2) for protein (left panels) and RNA (right panels). p-Values and effect size estimates obtained from a linear model with the disease indicator as an exogenous variable are shown. For protein, the fold change is computed for each batch and averaged across batches. Significantly differential RNA or protein levels (FDR\u00a0<\u00a010%, Benjamini-Hochberg adjusted) are indicated in red.\n\n![Figure 1\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/57390/elife-57390-fig1-figsupp4-v3.jpg)\n\n**Figure 1\u2014figure supplement 4.:** Briefly, for each protein-RNA pair, the effect of RNA abundance on protein abundance was accounted for using a linear model, regressing out its effect on the protein abundance. The analogous variance component model as considered in Figure 1b is then fitted on this adjusted protein abundance (Materials\u00a0and\u00a0methods).\n\n![Figure 1\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/57390/elife-57390-fig1-figsupp5-v3.jpg)\n\n**Figure 1\u2014figure supplement 5.:** Donor variance component results for all proteins and subsets of highly expressed and highly variable proteins, compared to the donor variance components for proteins reported as differentially expressed between iPSC and Munoz et al., 2011 (a set of 81 proteins) and Phanstiel et al., 2011 (a set of 255 proteins) (see Materials\u00a0and\u00a0methods). Horizontal black bars denote median variance components.\n\n![Figure 1\u2014figure supplement 6.](https://cdn.elifesciences.org/articles/57390/elife-57390-fig1-figsupp6-v3.jpg)\n\n**Figure 1\u2014figure supplement 6.:** (a) Mean allele-specific expression (ASE), averaged across all chromosome X heterozygous variants for all female iPSC lines included in this study (left), with illustrative examples of the distribution of SNP ASE measured across chromosome X (right). (b) Scatter plot between XIST RNA expression and mean ASE for chromosome X.\n\nCollectively, these data provide the most comprehensive analysis of the human iPSC proteome reported to date, and one of the most comprehensive proteomic datasets reported for any human primary, or derived, cell type (Supplementary file 1). When overlaying our data with the Human Proteome Map (Kim et al., 2014), the iPSC proteome was most similar to foetal and reproductive organs (Figure 1\u2014figure supplement 2), which is consistent with the expected expression of pluripotency markers in these tissues (Kerr et al., 2008a; Kerr et al., 2008b). We also assessed differences between healthy donors and disease-bearing donors, identifying no systematic expression differences in the iPSC state (Supplementary file 2; Figure 1\u2014figure supplement 3).\n\n### RNA and proteome variability\n\nWe assessed a range of factors to explain the variation in protein expression between iPSC lines. Leveraging our experimental design with data from two or more lines for 34% of donors, we assessed the effects of donor, alongside age, sex, and the contributions of technical and cell culture related factors (on 6009 genes; Figure 1b,d; Figure 1\u2014source data 4; using a linear mixed model; Materials\u00a0and\u00a0methods). Overall, the fraction of variance explained by biological factors was lower for protein levels, compared to RNA variation, which points to higher assay noise and/or stochastic variability of protein abundance. Consistent with previous results using RNA data (Kilpinen et al., 2017), we identified donor genome (i.e. DNA sequence variation) as the most relevant factor, followed by culture medium (Figure 1b). Critically, however, significant donor effects remained after accounting for RNA variability (Figure 1b,d; Figure 1\u2014figure supplement 4; Materials\u00a0and\u00a0methods). This indicates that (i) genetic differences between individual donors and experimental differences between culture conditions play an important role in causing the observed variation in proteome expression between the iPSC lines and (ii) post-transcriptional mechanisms also contribute to these effects. Notably, many of the proteins showing strong donor effects were previously identified as differentially expressed between reprogrammed iPS cells and embryonic stem cells (ESCs) (Phanstiel et al., 2011; Munoz et al., 2011), suggesting that some of these previously reported differences could be due to genetic variation between donors, rather than intrinsic differences between the iPSC and ESC cell types (Figure 1\u2014figure supplement 5).\n\nThe sex of the donor affected proteome expression, including a subset of proteins uniquely encoded on the male-specific X chromosome. There was also a strong (i.e.\u00a0>20%) gender-related effect on the expression of a subset of 88 proteins (Figure 1b), which are enriched for proteins encoded on the X chromosome (Odds ratio\u00a0=\u00a024.8, PV\u00a0=\u00a03\u00d710\u221232, Fisher\u2019s exact test). This reflected the partial erosion of X chromosome inactivation (XCI) observed in a subset of iPSC lines derived from female donors, as confirmed both by quantification of allele-specific expression and XIST expression in these lines (Figure 1\u2014figure supplement 6). Incomplete XCI has been linked previously to poor iPSC differentiation and changes in RNA levels (Mekhoubad et al., 2012; Salomonis et al., 2016). However, our data provide the first opportunity to link the XCI status of 110 distinct female iPSC lines (as inferred from allele-specific expression; Materials\u00a0and\u00a0methods; Figure 1\u2014figure supplement 6), with changes in the abundance of both proteins and RNAs. This identified 1374 genes for which either protein, or RNA levels, or both, showed changes correlated with XCI status (Figure 1c, FDR\u00a0<\u00a010%; Figure 1\u2014source data 5). Further analysis indicated that XCI status preferentially impacts catabolic processes and mitochondria at the protein level, while this was not observed at the RNA level (Gene Ontology; Materials\u00a0and\u00a0methods; Figure 1c; Figure 1\u2014source data 6). These data thus reveal an important effect of XCI status on global gene expression in iPSC lines from female donors, including specific effects at the protein level that are not detected by transcriptomic analysis.\n\n### Mapping cis genetic effects on protein abundance\n\nNext, we mapped cis quantitative trait loci at both the RNA and protein levels, considering 8543 autosomal protein coding genes that were quantified at both levels (MAF\u00a0>5%; within +/-\u00a0250 kb of the gene boundaries; using a linear mixed model; Materials\u00a0and\u00a0methods). The number of pQTLs identified was greatly increased by adapting the PEER-based adjustment, which was previously developed for mapping of eQTLs (Stegle et al., 2012), for use with proteomic data (Materials\u00a0and\u00a0methods; Figure 2\u2014figure supplement 1). Across all autosomal genes, we report 654 genes with at least one cis pQTL and 3487 genes with a cis eQTL (FDR\u00a0<\u00a010% for both eQTL and pQTL mapping; lead variants only; Figure 2a; Figure 2\u2014source datas 1 and 2). Among these, 273 genes were shared and had identical or correlated lead variants, whereas 82 genes showed evidence for an eQTL and pQTL with independent lead variants (LD-based criterion, r2\u00a0<0.1, Figure 2\u2014source data 1). Genes with substantial donor components, as identified based on the variance component analysis (>20%; Figure 1b), were enriched for significant cis pQTL (215 genes out of 962; Odds ratio\u00a0=\u00a04.2; Figure 2\u2014figure supplement 2).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/57390/elife-57390-fig2-v3.jpg)\n\n**Figure 2.:** (a)\u00a0Number of genes with a protein (blue) or RNA (green) cis QTL (FDR\u00a0<\u00a010%) and pairwise replication of genetic effects. Left: Number of genes with a pQTL, either with (dark blue) or without (light blue) replicated RNA effect. Right: Number of genes with an eQTL, either with (dark green) or without (light green) replicated protein effect. Replication defined by assessing nominal significance (PV\u00a0<0.01) of QTL in the respective other layer. (b)\u00a0Local Manhattan plots displaying negative log p-values (PV) from cis RNA (top) and protein (bottom) QTL mapping for PEX6. The dashed line and the grey box indicate the genomic positions of the lead QTL and of the gene. Boxplots show RNA and protein expression for different alleles at the pQTL lead variant rs11752813, a variant in LD (r2\u00a0=\u00a01, 1000 Genomes European populations phase 3) with the Alzheimer risk variant rs1129187 (Jun et al., 2016) (OR 1.13). (c)\u00a0Cumulative fraction of eQTLs with replicated protein effects as a function of the eQTL effect size (from highest to lowest). (d)\u00a0Prediction of protein replication of eQTLs, considering features derived from gene annotations, eQTL, RNA and protein data. Predictions were obtained using a random forest model trained on the protein replication status of eQTL (as in a; Materials\u00a0and\u00a0methods). Left: Feature importance scores. Right: Precision-recall curve for the model, evaluated in independent test fractions. The model performance was assessed by random sampling of training/testing data with a 80/20 split, performed 50 times. Shown in red is the average precision-recall across all sampled training/test splits and in thin grey lines results of individual folds.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/57390/elife-57390-fig2-figsupp1-v3.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Pairwise correlation (Pearson correlation coefficient) between the Peer factors fitted on RNA (a) and protein data (b). Vertical red lines indicate the number of factors used within this study. (c) Number of genes with a pQTL (FDR\u00a0<\u00a010%) when accounting for increasing numbers of factors in the analysis. Dark blue denotes pQTLs replicated at RNA level (defined as nominal PV\u00a0<0.01; Materials\u00a0and\u00a0methods).\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/57390/elife-57390-fig2-figsupp2-v3.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (a) Barplot showing the fractions of genes with significant variance donor component for genes with and without cis pQTLs. (a) Barplot showing the fractions of genes with a cis pQTL for genes stratified by the relative donor variance.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/57390/elife-57390-fig2-figsupp3-v3.jpg)\n\n**Figure 2\u2014figure supplement 3.:** (a) Scatter plot of QTL effect size estimates for eQTL lead variants (FDR\u00a0<\u00a00.1) at the RNA and protein level, respectively. Dark green denotes eQTLs nominally significant at pQTL; Light green denotes eQTLs lacking protein replication. (b) Scatter plot of QTL effect size estimates for lead pQTL variants (FDR\u00a0<\u00a00.1) at the protein and RNA level, respectively. Dark blue denotes pQTLs nominally significant at eQTL; Light blue denotes pQTLs lacking eQTL replication. (c) Distribution of eQTL(top) and pQTL (bottom) around the gene start. Y-axis indicates the QTL effect size. pQTLs are stratified by eQTL replication status.\n\n![Figure 2\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/57390/elife-57390-fig2-figsupp4-v3.jpg)\n\n**Figure 2\u2014figure supplement 4.:** (a) Left - local Manhattan plot for the cis region of gene SMC2 (lead pQTL rs7872034), displaying eQTL and pQTL association negative log p-values, as well as negative log p-values obtained from a GWAS of invasive ovarian cancer (Phelan et al., 2017) (pQTL cumulative co-localisation posterior probability 0.8; eCAVIAR). Right: scatter plot with eQTL and pQTL effect sizes (y-axis) juxtaposed with effect sizes on invasive ovarian cancer (x-axis). The red triangle indicates the lead pQTL for protein and mRNA effects. (b) Local Manhattan plot of the cis region for the gene TRIM5 (lead pQTL missense variant rs11601507) displaying eQTL and pQTL association negative log p-values, as well as negative log p-values obtained from a GWAS study for coronary artery disease risk (van der Harst and Verweij, 2018). Right: scatter plot with eQTL and pQTL effect sizes juxtaposed with effect sizes on coronary artery disease risk. Left plot insert shows the position in Q9C035, the protein encoded by TRIM5, of the missense variant rs11601507 and of the peptides used for protein quantification.\n\nTo identify DNA sequence variants with effects at both the RNA and protein levels, we considered the pairwise replication of pQTLs at the RNA level and vice versa (lead QTL variants, defining \u2018replication\u2019 as nominal PV\u00a0<0.01 with consistent effect direction; Materials\u00a0and\u00a0methods), which is more sensitive than assessing overlapping QTL variants. This identified 473 pQTLs (72%) with replicated eQTL effects. Conversely, 893 eQTLs (26%) had replicated protein effects, with globally concordant effect size directions and distance from gene boundaries (Figure 2\u2014figure supplement 3).\n\nLack of replication of eQTLs at the protein level could arise from a combination of technical and/or biological factors. We identified the eQTL effect size as a strong predictor for protein replication, with larger effects being associated with increased replication rates (Figure 2c). To systematically characterise the determinants of eQTL replication, we considered a random forest model trained to predict the protein replication status (Figure 2d). In addition to the eQTL effect size, this identified other predictive factors, including the protein coefficient of error (estimated from technical replicate samples; Materials\u00a0and\u00a0methods) and the protein coefficient of variation across lines (Figure 2d; Figure 2\u2014source data 2).\n\nTo explore the physiological relevance of iPSC pQTL variants, we examined their overlap with variants identified in genome-wide association studies (GWAS). Specifically, we probed for QTLs that tag GWAS variants contained in the GWAS catalogue (MacArthur et al., 2017) (i.e. are in LD r2\u00a0>0.8), identifying 136 (of 654) pQTL signals that tag a known GWAS variant (Figure 2\u2014source data 1). In addition, we assessed the statistical evidence for co-localisation of pQTL and GWAS signals for 51 studies for which full summary statistics were obtained (using eCAVIAR Hormozdiari et al., 2016; Materials\u00a0and\u00a0methods; Figure 2\u2014source data 1), yielding 49 pQTLs with evidence of co-localisation (i.e cumulative co-localisation probability greater than 0.1). Among these, examples of pQTLs with corresponding effects at the RNA level include the variant rs7872034, a pQTL for SMC2 with co-localisation evidence for serous invasive ovarian cancer (Phelan et al., 2017), and the variant rs11752813, a pQTL for PEX6 and in LD with Alzheimer's disease in APOE e4+ carriers risk variant rs1129187 (Jun et al., 2016; Figure 2\u2014figure supplement 4; Figure 2b).\n\nNotably, for 33 pQTLs linked to GWAS variants, either via co-localisation or LD tagging, no replicated effect was identified at the RNA level, suggesting protein-specific regulation (Figure 2\u2014source data 1). For example, rs11601507 has no RNA effects, and is associated with TRIM5 protein abundance and with coronary artery disease risk (van der Harst and Verweij, 2018; Figure 2\u2014figure supplement 4). Such cases raise the question of the mechanisms by which these variants modulate protein abundance and, ultimately, phenotypic traits, as addressed below.\n\n### pQTL linked to isoform-specific transcript expression\n\nTo investigate the mechanisms that underlie discordant eQTLs and pQTLs in more detail, we performed transcript isoform and protein peptide QTL analyses. cis QTL mapping of 33,050 reference transcript isoforms (Zerbino et al., 2018) (quantified using Salmon Patro et al., 2017; Materials\u00a0and\u00a0methods) and 119,747 peptides identified 3810 genes with a transcript QTL\u00a0(tQTL) and 566 genes with a peptide QTL\u00a0(pepQTL), respectively (Figure 3\u2014figure supplement 1, Materials\u00a0and\u00a0methods, Figure 3\u2014source datas 1 and 2).\n\nTranscript-level QTL mapping could explain the lack of protein effects for a small fraction of the 2594 eQTL without a replicated pQTL effect (Figure 2a). For 48 of these, the eQTL variant was identified as exclusively associated with abundance changes of non-coding transcript isoforms (nominal PV\u00a0<0.01), which explains the absence of protein effects (Figure 3\u2014figure supplement 2). Furthermore, when considering 1262 transcript QTL that neither replicate at the eQTL, nor at the pQTL level, in 45 instances we observed consistent replication when considering peptide QTL (Figure 3\u2014figure supplement 2b).\n\nAmong 181 pQTLs without eQTL replication (Figure 2a), 61 had nominally significant transcript QTLs (PV\u00a0<0.01; Figure 3a). For 12 of these, including a pQTL for MMAB (Figure 3b), we observed genetic effects with opposite directions on coding and non-coding transcript isoforms, which explains the lack of genetic effects when considering gene-level RNA abundance.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/57390/elife-57390-fig3-v3.jpg)\n\n**Figure 3.:** (a) Categorisation of 654 pQTL into four classes according to their putative mechanism: gene expression effect (i.e. replicated at eQTL level), transcript-isoform specific effect (i.e. not replicated at eQTL level, but significant at transcript isoform level), protein-altering variant (i.e. at least one inframe variant in LD with lead pQTL variant) without expression effect at RNA level, and without any putative mechanism identified. (b)\u00a0Example pQTL without eQTL replication (rs6663; gene MMAB), with a directional opposite effect on a coding and non-coding isoform (cyan: ENST00000540016; grey: ENST00000537496), resulting in no overall change in gene expression level. (c)\u00a0The pQTL variant (rs1051061) is a protein-altering variant associated with VRK2 protein abundance (below), and lacks detectable effect on RNA expression. The pQTL signal is observed across 15 peptides spanning the VRK2 protein sequence (above, left). This variant is associated with schizophrenia risk, and is located at the kinase active site, proximal to the proton acceptor residue (above, right). The dashed line and the grey box indicate the genomic positions of the lead QTL and of the gene. (d)\u00a0Enrichment of RNA-independent pQTL in different categories of predicted variant effects, using gene variants in high LD with pQTLs (proxy gene variants; r2\u00a0>0.8; within the cis gene boundaries). Enrichment calculated using Fisher\u2019s exact test.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/57390/elife-57390-fig3-figsupp1-v3.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Upset plots showing from top to bottom: genome-wide significant cis QTLs (FDR\u00a0<\u00a010%) for protein (pQTLs), peptides (pepQTLs), gene expression (eQTLs) and transcript isoforms (tQTLs) summarised at gene level. For each discovery set the replication (i.e. nominal PV\u00a0<0.01 and effect sizes of the same direction) is assessed in the respective other layers, and the number of genes with replicated effects for each intersection is displayed. For comparison purposes, we show only QTLs assessed in all the four layers.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/57390/elife-57390-fig3-figsupp2-v3.jpg)\n\n**Figure 3\u2014figure supplement 2.:** (a) An eQTL arising from a non-coding transcript QTL. The variant rs2709373, an eQTL variant for METTL21A, was associated with the abundance of the non-coding transcript isoform ENST00000477919 without detectable effect on the abundance of any protein-coding transcript isoform and thus not altering protein expression levels from this locus. (b) A transcript QTL that is neither an eQTL nor a pQTL. The variant rs12795503 has effects in opposite directions on the coding transcripts ENST00000301843 (light blue) and ENST00000346329 (light red), resulting in no detectable effects on either the RNA or protein level. The transcript-specific effect on ENST00000301843 is detectable at the peptide level (peptide QDSAAVGFDYK; uniquely mapping to exon 11 of ENST00000301843). Subplot shows genetic effect sizes for all peptides mapped to CTTN, with the peptides that are shared by both isoforms, and unique to the ENST00000301843 isoform, labelled.\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/57390/elife-57390-fig3-figsupp3-v3.jpg)\n\n**Figure 3\u2014figure supplement 3.:** (a) Fraction of peptides supporting the genetic effects of missense variants detected at the protein level and not replicated in RNA. For each missense variant - cis pQTL lacking mRNA replication (either eQTL or tQTL), we show the fraction of peptides mapped to the protein with direction of genetic effects consistent with the effect at the protein level. The grey area indicates the random agreement fraction (assuming equal probability of either effect direction; CI: 5\u201395%). Right panels illustrate genetic effects at protein (dashed horizontal line) and peptide (vertical bars) levels. (b) Fraction of peptides supporting the 68 trans protein QTL. For peptides mapping to the trans protein, we show the fraction of peptideQTLs with direction of genetic effects consistent with the pQTL. (c) Assessment of protein sequence similarity for cis/trans gene pairs. For the top 69 (FDR 0.1) trans pQTLs, the number of missmatching aminoacids are shown, based on the local alignment between peptides of the source cis pQTL and the affected trans protein (Materials\u00a0and\u00a0methods). For each cis - trans association, we report the minimal number of mismatches across all peptides used for the cis protein. Right: barplot showing the number of amino acid differences between pairs of detected peptides. The proportion was calculated from detected peptides ordered by sequence, using 10 random groups of 1000 peptides.\n\n![Figure 3\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/57390/elife-57390-fig3-figsupp4-v3.jpg)\n\n**Figure 3\u2014figure supplement 4.:** (a, b) For each peptide with an SNP changing the peptide sequence (Materials\u00a0and\u00a0methods), peptide intensities were averaged across samples from donors who were homozygous for the reference allele (AA), heterozygous (AB), and homozygous for the alternative allele (BB). To increase robustness, we limit the analysis to variants with at least three alternative homozygous and at least three heterozygous lines. (a) Histogram comparing the intensity average of homozygous samples for peptides containing coding polymorphisms. (b) Density plot of the ratio between the average of the heterozygous samples and the reference homozygous samples restricted on the peptides which were not detected for the alternative homozygous samples.\n\n### pQTL arising from protein-altering variants\n\nNext, we set out to characterise further\u00a0the remaining 120 pQTL without replication at either eQTL, or transcript QTL levels. When classifying the corresponding lead pQTL variants based on their predicted functional effect, we identified 24 inframe variants, a striking enrichment compared to pQTL with replicated RNA effects (3.8-fold enrichment; PV\u00a0=\u00a04\u00d710\u22125, Fisher\u2019s exact test; Figure 3c and d). These findings are in line with previous observations in lymphoblast cell lines (Battle et al., 2015). Of note, peptides containing protein-altering variants were excluded from the quantifications (Materials\u00a0and\u00a0methods), and the reported pQTL effects were observed for multiple peptides from the same proteins (Figure 3\u2014figure supplement 3), providing further confidence in genuine regulatory effects. We assessed whether the 24 pQTL have effects at the RNA level (eQTL) in other cell types, and for 11 of these pQTL we did not find evidence of eQTL nominal significance in any of the 48 GTEx (PV\u00a0<0.01/48; Battle et al., 2017; Figure 1\u2014source data 1), which further points to RNA-independent mechanisms.\n\nInframe variants have the potential to affect protein function. We estimated whether a variant is likely to be deleterious to protein function using SIFT scores, which capture evolutionary conservation and amino acid similarity (Ng and Henikoff, 2003). This revealed a clear enrichment of the 24 RNA-independent pQTL that tag inframe variants, 10 of which have predicted deleterious effects (SIFT score\u00a0<0.05), compared to four among all other pQTL (Odds ratio\u00a0=\u00a027.5, PV\u00a0=\u00a03.8\u00d710\u22128, Fisher\u2019s exact test; Figure 3d; Figure 1\u2014source data 1). Putative effects of these variants on protein function include loss of enzymatic activity and disruption of protein structure. For example, the variant rs1051061 in VRK2 lies\u00a0in a conserved sequence in the kinase domain, proximal to the proton acceptor residue, likely impacting kinase activity (Figure 3c). The identical variant has been identified as GWAS risk variant for schizophrenia (Yu et al., 2017) (OR 1.17), with the risk allele being associated with decreased protein abundance. The effect direction is consistent with previous studies that have linked decreased VRK2 expression to neurological disorders including schizophrenia (Azimi et al., 2018; Tesli et al., 2016).\n\nThese data show important roles of transcriptional regulation underlying cis pQTL effects, while also highlighting how isoform-specific effects, which are invisible to standard eQTL mapping approaches, can be detected at the protein level. For a substantial subset of pQTLs, we identified linked protein-altering variants, many with deleterious effects. Together with previous observations, these results suggest that proteomics information can aid understanding of pathogenic mechanisms of deleterious variants.\n\n### Proteome-wide effects of cis QTLs\n\nBuilding on the compendium of cis pQTL identified here in iPS cells, we set out to characterise downstream proteome-wide changes. We mapped proteome-wide trans pQTL, considering 654 cis pQTL variants. This identified 51 cis-pQTL lead variants with trans effects on a total of 68 proteins (FDR\u00a0<\u00a010%; Figure 4\u2014source data 1; Materials\u00a0and\u00a0methods). To rule out synthetic associations, we discarded associations with evidence for sequence similarity between cis and trans proteins, and we verified the consistency of the identified trans effects across multiple independent peptides (Materials\u00a0and\u00a0methods; Figure 3\u2014figure supplement 3). The detected pairs of proteins with shared genetic regulation were strongly enriched for known protein-protein interactions (CORUM Ruepp et al., 2010, IntAct Orchard et al., 2014, StringDB Szklarczyk et al., 2017; Odds ratio\u00a0=\u00a09.1, PV\u00a0=\u00a01.5\u00d710\u221210, Fisher\u2019s exact test; Figure 4b). The cis and trans effects had similar effect directions and effect sizes, consistent with genetic effects mediated via stabilising protein-protein interactions (Figure 4c). This interpretation of our data in human iPSCs is consistent with the significant donor variance component we observed for many protein complexes (Figure 4d). It is also consistent with previous observations in an outbred mouse cross, showing that protein modules sharing genetic effects in trans are enriched in protein interactions (Ruepp et al., 2010), and identification of trans protein effects due to somatic aberrations in human cancer cell lines (Gon\u00e7alves et al., 2017; Roumeliotis et al., 2017). Importantly, our results generalise these previous observations to genetic effects of common variants that segregate in human populations.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/57390/elife-57390-fig4-v3.jpg)\n\n**Figure 4.:** (a)\u00a0Strategy for mapping trans genetic effects on protein abundance. Lead cis pQTL variants were considered for proteome-wide association analysis. (b)\u00a0Enrichment of previously catalogued protein-protein interactions among significant trans pQTLs. Shown is the fraction of cis-trans gene pairs linked by a trans pQTL with evidence of protein-protein interactions (based on the union of CORUM, IntAct, and StringDB), as a function of the considered FDR threshold for trans pQTL discovery. The dashed lines correspond to FDR\u00a0<\u00a010%. Numbers indicate the number of trans pQTL identified for each FDR threshold. (c)\u00a0Comparison of genetic effect sizes, in cis and trans, for significant (FDR\u00a0<\u00a010%) trans pQTLs. Red points indicate cis-trans pairs with evidence for protein-protein interactions defined as in b. (d)\u00a0Left: Protein co-expression of protein complex subunits defined based on CORUM. Right: i) subunit with the most significant cis pQTL; ii) fraction of subunits in association with the cis pQTL at nominal significance (PV\u00a0<0.01). iii) fraction of the average cluster protein expression level explained by donor effects. (e)\u00a0Trans regulation of the PEX26-PEX6-PEX1 complex. The variant rs11752813 (LD r2\u00a0=\u00a01 with rs1129187) is associated in cis with changes in the RNA and protein abundance of PEX6 and in trans with changes in the protein abundance of PEX1 and PEX26.\n\nIn summary, the trans effects we detected appear to induce strong correlations across protein complex subunits (Figure 4d), whereby a variant associated in cis with one subunit was also associated in trans with other subunits. This is illustrated by PEX26-PEX6-PEX1, a protein complex involved in peroxisome biogenesis. As noted above, the underlying pQTL variant rs1129187 is associated in cis with an increase in both PEX6 RNA and protein abundance (Figure 2b) and is a known risk variant for Alzheimer's disease in APOE e4+ carriers (Jun et al., 2016). This cis pQTL in turn induces downstream associations on the remaining complex subunits, PEX26 and PEX1 (Figure 4e), suggesting that PEX6 acts as a limiting subunit of this complex in iPSCs. Thus, our results provide a potential biological mechanism underlying this risk variant, namely acting through changes in the abundance of the PEX26-PEX6-PEX1 complex. Notably, there is prior evidence for an implication of peroxisomal function in the development of Alzheimer\u2019s disease and in other neurodegenerative processes (Lizard et al., 2012; Berger et al., 2016), providing further support for this hypothesis.\n\n## Discussion\n\nHere, we report the first in-depth characterisation of the human iPSC proteome, connecting genetic variation to changes in RNA and protein levels. Beyond the relevance for iPS cell biology, this study, to our knowledge, provides the most detailed population-level analysis of parallel RNA/protein profiles in human cells. By quantifying genome-wide protein and transcript expression variation across more than 200 human iPSC lines, we identified both genetic and non-genetic mechanisms that underlie variation in both protein and RNA levels. We have mapped more than 600 cis protein quantitative trait loci (pQTLs) and analysed how these relate to cis eQTLs, how they impact other proteins in trans, and how pQTLs link to human disease variants.\n\nThe variance component analysis explained a lower overall fraction of variance in the protein data compared to RNA variation, which likely reflects larger technical effects and/or stochasticity in protein expression levels. Among the explainable fraction of variance, donor-specific genetic factors are a major contributor to the differences in protein expression detected across the iPSC lines. The corollary is that protein expression variation across iPS cells reflects genetic diversity in the human population. Consistent with this, we identified 654 common genetic variants associated with changes in protein abundance.\n\nGlobally, there were substantially fewer pQTLs than eQTLs, and while most pQTLs had effects of the same direction at eQTL, only 30% of eQTLs are nominally significant at the protein level. It is possible that technical factors resulting from the protein measurement methods may contribute, at least in part, towards attenuating the signal detected at the protein level. However, considering our data in light also of results from previous studies, some of which employed alternative technologies for protein detection to the MS methods used here, we suggest that the signal attenuation between eQTL and pQTL levels is not exclusively the result of limitations in protein measurements. Instead, many eQTLs may reflect variation in RNA abundance that does not cause significant changes in steady state protein levels.\n\nBy the systematic comparison of matched protein and RNA data, including detailed analysis of separate isoforms, we demonstrated that in order to fully understand the propagation of genetic effects to proteins, isoform-resolution protein and RNA phenotypes are indispensable. In particular, this approach identified additional RNA-dependent regulation that manifests in protein QTL, thereby improving the ability to identify genuine RNA-independent pQTL.\n\nWe showed that the pQTLs for which no corresponding changes in transcript levels were detected, are enriched in deleterious missense variants. This result suggests that the phenotypic effects of such variations may be exerted through protein abundance changes. Because most deleterious variants, and in particular pathogenic variants, are rare, larger sample sizes will be required to fully assess the protein components of this class of regulatory genetic effects.\n\nOur study presents the first comprehensive map of pQTLs at peptide resolution, considering a total of 119,747 peptides from 8543 proteins for genetic analysis. This identified 566 peptide QTL, several of which were not detectable when considering whole protein expression levels, as illustrated with the variant rs12795503, pepQTL for gene CTTN (Figure 3\u2014figure supplement 1). While we mapped fewer significant pepQTLs than pQTLs, peptide level analyses were shown here to overcome potential artefacts raised by protein quantification, in particular when mapping trans pQTL, and are invaluable in identifying isoform-specific effects.\n\nOur data highlight the ability of protein-protein interactions to propagate genetic effects in human populations. A long-standing hypothesis has been that certain protein complexes may have a rate-limiting subunit that determines complex abundance, with any excess subunits produced being rapidly degraded (e.g. because of exposure of hydrophobic residues). This implies that cis eQTLs affecting the levels of rate-limiting subunits should also have effects in trans on the abundance of the whole complex, and on most, if not all, subunits therein. While trans genetic effects were previously reported to be mediated by protein interactions in high heterozygosity samples, that\u00a0is outbred mice, (Chick et al., 2016) and for somatic aberrations in cancer cell lines (Gon\u00e7alves et al., 2017; Roumeliotis et al., 2017), to our knowledge, this study provides the first example that such effects act through common genetic variants in untransformed human cells. In the future, the approach we have taken here could be extended by mendelian randomisation-based approaches to formally assess the mediating role of the cis pQTL on protein complex members.\n\nUnderstanding the mechanisms through which genetic variations act in the human population is of great relevance to characterising risk factors and susceptibility to disease. There is on-going interest in the potential for studying disease mechanisms using disease relevant tissues that are derived from panels of iPSCs (Cayo et al., 2017; Li et al., 2018; D'Aiuto et al., 2014; Schwartzentruber et al., 2018). This study provides important information showing how direct analysis of human iPSCs can advance our understanding of the genetic regulation of protein expression and how this influences cell phenotypes and disease mechanisms.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Cell line (Homo-sapiens)</td>\n      <td>iPSC</td>\n      <td>www.hipsci.org</td>\n      <td>RRID:SCR_003909</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>MaxQuant</td>\n      <td>https://www.maxquant.org/</td>\n      <td>RRID:SCR_014485</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Trim Galore</td>\n      <td>https://www.bioinformatics.babraham.ac.uk/projects/trim_galore/</td>\n      <td>RRID:SCR_011847</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>STAR</td>\n      <td>https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3530905/</td>\n      <td>RRID:SCR_015899</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Salmon</td>\n      <td>https://combine-lab.github.io/salmon/</td>\n      <td>NA</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>g:Profiler</td>\n      <td>http://biit.cs.ut.ee/gprofiler/</td>\n      <td>RRID:SCR_006809</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>eCAVIAR</td>\n      <td>http://zarlab.cs.ucla.edu/tag/ecaviar/</td>\n      <td>NA</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>VEP</td>\n      <td>https://www.ensembl.org/info/docs/tools/vep/index.html</td>\n      <td>RRID:SCR_007931</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>MutFunc</td>\n      <td>http://www.mutfunc.com/</td>\n      <td>NA</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Limix</td>\n      <td>https://github.com/limix/limix</td>\n      <td>NA</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Peer</td>\n      <td>http://www.sanger.ac.uk/resources/software/peer/</td>\n      <td>RRID:SCR_009326</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Scikit-learn</td>\n      <td>http://scikit-learn.org/</td>\n      <td>RRID:SCR_002577</td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### Cell lines\n\nAs described in Kilpinen et al., 2017, all HipSci samples were collected from consented research volunteers recruited from the NIHR Cambridge BioResource, and iPSC were generated from fibroblasts by transduction with Sendai vectors. In brief, cells were cultured on fibroblasts (MEF-CF1) feeder layer with selected lines being transferred on Essential 8 (E8) medium. Pluripotency was assessed based on expression profiling, detection of pluripotency markers in culture and response to differentiation inducing conditions. Mycoplasma screening was performed using a standard PCR kit. Sample identity was confirmed using a Fluidigm genotyping assay containing 24 SNPs. The ID numbers and details for each cell line included in this analysis are listed in Figure 1\u2014source data 1.\n\n### RNA-Seq data processing\n\nRaw RNA-Seq data for 331 samples were obtained from the ENA project: ERP007111. CRAM files were merged on a sample level and were converted to FASTQ format. Sequencing reads were trimmed to remove adapters and low-quality bases (using Trim Galore! Dobin et al., 2013), followed by read alignment using STAR (version: 020201) (Liao et al., 2014), using the two-pass alignment mode and the default parameters as proposed by ENCODE (c.f. STAR manual). All alignments were relative to the GRCh37 reference genome, using ENSEMBL 75 as transcript annotation (Zerbino et al., 2018).\n\nSamples with low-quality RNA-Seq were discarded, if they had less than 2 billion bases aligned, had less than 30% coding bases, or had a duplication rate higher than 75%. This resulted in 323 lines for analysis, of which 202 had matched proteome data.\n\nGene-level RNA expression was quantified from the STAR alignments using featureCounts (v1.6.0) (Robinson et al., 2010), which was applied to the primary alignments using the \u2018-B\u2019 and \u2018-C\u2019 options in stranded mode, using the ENSEMBL 75 GTF file. Quantifications per sample were merged into an expression table using the following normalisation steps. First, gene counts were normalized by gene length. Second, the counts for each sample were normalised by sequencing depth using the edgeR adjustment (McAlister et al., 2014).\n\nTranscript isoform expression was quantified directly from the (unaligned) trimmed reads using Salmon (Zerbino et al., 2018) (version: 0.8.2), using the \u2018--seqBias\u2019, \u2018--gcBias\u2019 and \u2018VBOpt\u2019 options in \u2018ISR\u2019 mode to match our inward stranded sequencing reads. The transcript database was built on transcripts derived from ENSEMBL 75. The TPM values as returned by Salmon were combined into an expression table.\n\n### Quantitative proteomics data generation\n\nUpon establishment in culture, lines were expanded for banking and molecular assays (including genomics, transcriptomics and proteomics). We selected 217 lines (banked frozen pellets) for in-depth proteomic analysis with Tandem Mass Tag Mass Spectrometry. A subset of 202 lines (112 normal and 90 disease; Figure 1\u2014source data 1) with matched mRNA and protein data were considered for further analysis. Previous studies have shown that this sample size enables the identification of a large number of cis RNA and protein QTLs (Battle et al., 2015).\n\n### Sample preparation\n\nFor protein extraction, frozen iPSC cell pellets were washed with ice cold PBS and redissolved immediately in 200 \u03bcL of lysis buffer (8 M urea in 100 mM triethyl ammonium bicarbonate (TEAB) and mixed at room temperature for 15 min. DNA in the cell lysates was sheared using ultrasonication (6 \u00d7 20 s at 10\u00b0C). The proteins were reduced using tris-carboxyethylphosphine TCEP (25 mM) for 30 min at room temperature, then alkylated in the dark for 30 min using iodoacetamide (50 mM). Total protein was quantified using the fluorescence based EZQ assay (Life Technologies). The lysates were diluted four-fold with 100 mM TEAB for the first protease digestion with mass spectrometry grade lysyl endopeptidase, Lys-C (Wako, Japan), then diluted a further 2.5-fold before a second digestion with trypsin. Lys-C and trypsin were used at an enzyme to substrate ratio of 1:50 (w/w). Digestions were carried out for 12 hr at 37\u00b0C, then stopped by acidification with trifluoroacetic acid (TFA) to a final concentration of 1% (v:v). Peptides were desalted using C18 Sep-Pak cartridges (Waters) following manufacturer\u2019s instructions and dried.\n\n### Tandem Mass Tag mass spectrometry analysis\n\nFor Tandem Mass Tag (TMT)-based quantification, the dried peptides were redissolved in 100 mM TEAB (50 \u00b5L) and their concentration was measured using a fluorescent assay (CBQCA) (Life Technologies). 100 \u00b5g of peptides, from each cell line to be compared, in 100 \u00b5L of TEAB were labelled with a different TMT tag (20 \u00b5g ml\u22121 in 40 \u00b5L acetonitrile) (Thermo Scientific), for 2 hr at room temperature. After incubation, the labelling reaction was quenched using 8 \u00b5l of 5% hydroxylamine (Pierce) for 30 min and the different cell lines/tags were mixed and dried in vacuo. TMT-ten plex was used to label ten IPSC lines and quantify them in parallel. In total, 24 TMT-ten plex experiments were performed, where one IPSC line (HPSI0314i-bubh_3) was chosen as a reference cell line and was kept constant in all TMT batches. The other nine quantification channels were used to label 9 different cell lines. No randomisation was applied in assigning the samples to batches.\n\nThe TMT samples were fractionated using off-line, high pH reverse phase chromatography: samples were loaded onto a 4.6 \u00d7 250 mm Xbridge BEH130 C18 column with 3.5 \u00b5m particles (Waters). Using a Dionex bioRS system, the samples were separated using a 25 min multistep gradient of solvents A (10 mM formate at pH 9) and B (10 mM ammonium formate pH 9 in 80% acetonitrile), at a flow rate of 1 ml/min. Peptides were separated into 48 fractions, which were consolidated into 24 fractions. The fractions were subsequently dried and the peptides redissolved in 5% formic acid and analysed by LC-MS.\n\n5% of the material was analysed using an orbitrap fusion tribrid mass spectrometer (Thermo Scientific), equipped with a Dionex ultra high-pressure liquid chromatography system (nano RSLC). RP-LC was performed using a Dionex RSLC nano HPLC (Thermo Scientific). Peptides were injected onto a 75 \u03bcm\u00a0\u00d7\u00a02 cm PepMap-C18 pre-column and resolved on a 75 \u03bcm\u00a0\u00d7\u00a050 cm RP- C18 EASY-Spray temperature controlled integrated column-emitter (Thermo), using a 4-hr multistep gradient from 5% B to 35% B with a constant flow of 200 nL min\u22121. The mobile phases were: 2% ACN incorporating 0.1% FA (Solvent A) and 80% ACN incorporating 0.1% FA (Solvent B). The spray was initiated by applying 2.5 kV to the EASY-Spray emitter and the data were acquired under the control of Xcalibur software in a data-dependent mode using top speed and 4 s duration per cycle. The survey scan is acquired in the orbitrap covering the m/z range from 400 to 1400 Th, with a mass resolution of 120,000 and an automatic gain control (AGC) target of 2.0 e5 ions. The most intense ions were selected for fragmentation using CID in the ion trap with 30% CID collision energy and an isolation window of 1.6 Th. The AGC target was set to 1.0 e4 with a maximum injection time of 70 ms and a dynamic exclusion of 80 s.\n\nDuring the MS3 analysis for more accurate TMT quantifications, five fragment ions were co-isolated using synchronous precursor selection, using a window of 2 Th and further fragmented using a HCD collision energy of 55% (McAlister et al., 2014). The fragments were then analysed in the orbitrap with a resolution of 60,000. The AGC target was set to 1.0 e5 and the maximum injection time was set to 105 ms.\n\n### Proteomics data processing\n\nThe TMT-labelled samples (24 batches of TMT-ten plex) were analysed using MaxQuant v. 1.6.0.13 (Cox et al., 2011; Schwanh\u00e4usser et al., 2011). Proteins and peptides were identified using the UniProt human reference proteome database (Swiss Prot + TrEMBL) release-2017_03, using the Andromeda search engine. Run parameters and the raw MaxQuant output have been deposited at PRIDE (PXD010557).\n\nThe following search parameters were used: reporter ion quantification, mass deviation of 6 ppm on the precursor and 0.5 Da on the fragment ions; Tryp/P for enzyme specificity; up to two missed cleavages, \u2018match between runs\u2019, \u2018iBAQ\u2019. Carbamidomethylation on cysteine was set as a fixed modification. Oxidation on methionine, pyro-glu conversion of N-terminal Gln, deamidation of asparagine and glutamine and acetylation at the protein N-terminus, were set as variable modifications (Cox and Mann, 2008; Cox et al., 2011; Schwanh\u00e4usser et al., 2011; Tyanova et al., 2016).\n\nPeptides and protein groups, that\u00a0is groups of protein isoforms identified by common peptides (for details see Brenes et al., 2018), were reported at FDR\u00a0<\u00a05%. The same FDR threshold was used for reporting the Peptide Spectrum Matches (PSM). We performed the FDR calculation on an extended set and removed the Razor Protein FDR calculation constraint (for more details see reference Ramasamy et al., 2013). In total, we identified 255,015 peptides detected in at least one sample (after removing reverse and contaminant peptides; on the 217 lines and 23 replicates of the reference line), which corresponds to 16,773 protein groups.\n\n### Quality control and quantification\n\nPeptides that overlap non-synonymous variants may be incorrectly detected and could result in synthetic associations, similarly to the polymorphism-in-probe effects in microarrays (Schlaffner et al., 2017). We performed the following quality control and filtering steps. First, using PoGo; (Lippert et al., 2015) (applied with Gencode release 30 mapped on GRCh 37), we reconstructed the genomic loci of 250,171 peptides that could be assigned to one or multiple genomic locations. Next, we assessed the overlap of these peptides with common, non-synonymous variants in human populations (MAF\u00a0>0.01 in 1000 Genomes European populations phase 3). To define non-synonymous variants, we considered the overlap with any transcript isoform that contains the analysed peptide obtained from Gencode release 30 mapped on GRCh 37. This resulted in 6273 peptides that overlap such polymorphisms, which were discarded from further analyses (Supplementary file 3). Peptides mapped to multiple locations in the genome were discarded if they overlap non-synonymous variants for at least one of these locations. Finally, we discarded 4844 peptides for which a genetic position was not identified.\n\nWe discarded 10 lines with fewer than 67,000 identified peptides (corresponding to 75% of the median number of peptides identified; Figure 1\u2014figure supplement 1), resulting in a proteomics dataset consisting of 207 lines, 202 of which had matched RNA-Seq data and hence were considered for further analysis. In addition, the technical replicates for the included reference line in each TMT batch were retained to aid the normalisation of protein quantifications between batches; see below.\n\nProtein group abundances were estimated using the remaining peptides as the sum of the intensities of individual peptides mapped to the protein group. Peptide abundance estimates were obtained from the intensity values reported in the \u2018Peptides\u2019 file from MaxQuant.\n\nFor downstream analysis, we considered the subset of peptides that were recurrently detected in at least 30 of the 202 lines. Similarly, we discarded all protein groups that did not contain at least one recurrent peptide. This resulted in a final dataset of 11,140 recurrent protein groups and 132,078 recurrent peptides (Figure 1\u2014figure supplement 1), corresponding to 10,198 genes (Ensembl ID).\n\nTo adjust for technical effects during the acquisition of protein data in TMT batches, we scaled the abundance estimate for each feature (i.e. protein or peptide) as follows. For each feature and batch, we multiply the intensity with a scaling coefficient defined as the ratio between the median intensity across all lines and the median across the subset of lines within a given TMT batch. Next, we employed quantile normalisation for peptide and protein abundance estimates, by performing quantile normalisation of the feature distribution in each line relative to a normalisation reference line (the line with the highest number of total peptides detected). Briefly, for each line we assigned for each feature the value observed in the reference line corresponding to the rank of the value of that feature in the line to be normalised:\u00a0y\u2019pl = r [rank ypl ], where ypl\u00a0are the intensity values for feature p and line l obtained after batch scaling, r is the sorted vector of intensities from the normalisation reference line, and y\u2019pl\u00a0is the normalised value. In order to evaluate how the data transformation tackles batch effects, we performed a PCA analysis of protein quantifications and compared the peptide coefficient of error before and after data transformation (Figure 1\u2014figure supplement 1d and e).\n\n### Assessment of TMT ratio compression effects\n\nWe assessed quantitative compression of our proteomics data by examining changes in peptide abundance for those peptides that were discarded because they overlap non-synonymous variants, following Battle et al., 2015. The rationale behind this approach is that a non-synonymous variant in a peptide prevents detection of that peptide, as its sequence will not exist in the proteome reference. Thus, in samples heterozygous for the non-synonymous variants, the measured peptide abundance is expected to be half of that of samples homozygous for the reference variant. Although the data indicated that ratio compression effects can be noticed in our study (Figure 3\u2014figure supplement 4), the QTL results show that protein measurements derived from TMT Mass spectrometry analyses are suitable for the detection of protein abundance changes.\n\n### Comparisons of iPSC proteome profiles to existing datasets\n\nTo compare our iPSC proteome dataset to the Human Proteome Map (HPM) (Kim et al., 2014; Figure 1\u2014figure supplement 1d), we first mapped the RefSeq IDs of proteins quantified in the HPM to UniProt IDs. We considered the subset of 8333 proteins that were expressed in our iPSC dataset and in at least one HPM tissue, and for which IDs could be mapped. We then calculated spearman correlation coefficients between the aggregate iPSC proteome abundance profile (averaged across lines) and each HPM tissue.\n\n### Variance component analysis\n\nIn order to calculate the contribution of each factor k to variation in protein abundance, we fitted a random effects model as follows:\u00a0y = \u03bc + \u2211k\u00a0uk + \u03b5 ; uk \u223c N(0, \u03c3k2 \u22c5 Mk ); \u03b5 \u223c\u00a0N(0, \u03c3r2 \u22c5 I); Mk [i, j] = {1 if fk [i] = fk [j]; 0 if fk [i ] \u2260 fk [j]).\n\nwhere y denotes the (N x 1) vector of normalised log protein abundances, uk\u00a0are the random effects, Mk\u00a0is the (N x N) covariance structure, \u03c3kis the standard deviation, and\u00a0\u03b5 is the residual (i.i.d. noise). The random effect components are defined based on a categorical covariance function defined on covariates\u00a0fk, that is the vector of observed values for factor k (e.g. fk [i] \u2208 {\u2032male\u2032, \u2032female\u2032}\u00a0when k is the donor sex component). We considered donor identity, donor sex, donor age (treated as a categorical variable, with each group in age windows of 5 years), culture medium, TMT batch, and TMT channel as random effect components. In order to accurately estimate the donor variance component, we restricted this analysis to the set of lines from the subset of 51 donors for which two cell lines were assayed and on 6009 genes with TPM\u00a0>1 and with proteins detected in this subset of lines. Analogous analyses were considered for RNA abundance, leaving out the TMT-specific, random effects.\n\nIn order to study the effect of different factors on protein abundance, after adjusting for the effects of RNA abundance on protein abundance, we also applied the variance decomposition analysis to protein abundance values after adjusting for RNA variation. Adjusted protein abundances were calculated by regressing out the effects of RNA abundance (i.e. gene-level quantifications of RNA), on protein abundance for each RNA-protein pair. To do this, we fitted a linear model between RNA and protein abundances across lines (using the Numpy function poly1d in Python), taking the model residuals as the adjusted protein abundance values. Variance decomposition models were then fitted as described above.\n\nAll variance component models were fitted using the LIMIX package (https://github.com/PMBio/limix; https://doi.org/10.1101/003905) (Reimand, 2016).\n\n### Quantification of X chromosome inactivation (XCI)\n\nThe X chromosome inactivation (XCI) status of female cell lines was quantified using allele-specific counts from RNA-Seq reads mapping to the X chromosome. These allele-specific counts were obtained for SNPs present in DBSNP using GATK ReadCounter with the command \u2018GenomeAnalysisTK.jar -T ASEReadCounter -U ALLOW_N_CIGAR_READS --minMappingQuality 10 --minBaseQuality 2\u2019. For known heterozygous SNPs in each line, the allele-specific fraction of expression was defined as the fraction of reads mapping to the less expressed allele (i.e. the allele-specific fraction was\u00a0\u22640.5). The XCI status of each cell line was then defined as the mean of the allele-specific fractions across all heterozygous X chromosome SNPs with at least 20 overlapping reads in the corresponding RNA-Seq sample.\n\nGene ontology enrichment was performed against the 6335 genes included in the XCI analysis using g:Profiler (Ongen et al., 2016), and p-values were adjusted for multiple testing using the Benjamini-Hochberg FDR procedure.\n\n### QTL mapping of RNA and protein traits\n\n#### Cis QTL mapping\n\nWe used PEER (Stegle et al., 2012) to account for unwanted variation and confounding factors. PEER was applied to log normalised protein abundance and log normalised gene TPM, considering the most highly expressed 10,000 proteins and genes, respectively. We fit 7 PEER factors for protein and 13 PEER factors for RNA, settings that were determined as the largest number of PEER factors that retain statistical independence of the inferred factors (R\u00a0<\u00a00.7; Figure 2\u2014figure supplement 1).\n\nFor cis genetic analyses, we considered common variants (MAF\u00a0>5%) in gene-proximal regions of 250 k upstream and downstream of gene transcription start and end sites (GRCh37). The chosen size of this cis analysis window is a compromise between comprehensiveness to detect distal regulatory elements, while managing the multiple testing burden. We used a linear mixed model implemented in LIMIX, thereby controlling for both population structure and repeat lines from the same donor, using kinship as a random effect component. The population structure random effect was accounted for using the realized relationship covariance,that\u00a0is dot product of the genotype matrices. PEER factors were included as fixed effect covariates.\n\nTo adjust for multiple testing across cis variants for each gene, we fit an empirical null distribution using a permutation scheme combined with a parametric fit to the null distribution, similar to the approach taken in Fast QTL (Walter et al., 2015), Briefly, for each gene, we obtained p-values from 100 permutations of the tested variants. We then estimated an empirical null distribution by fitting a parametric Beta distribution to the obtained p-values. Using this null model, we estimated cis region adjusted p-values for QTL lead variants. For multiple testing adjustment across genes, we performed Benjamini-Hochberg adjustment.\n\nFor protein, peptide and transcript QTLs, as multiple of these features map to the same gene, we used Bonferroni adjustment to correct for feature multiplicity for each gene, followed by Benjamini-Hochberg adjustment, as performed for the gene-level eQTLs.\n\n#### Trans QTL mapping\n\nFor trans QTLs analysis, we considered lead cis QTLs (FDR\u00a0<\u00a010%; 654 pQTLs) versus 11,140 recurrently detected proteins. Genome-wide adjustment for multiple testing was performed using Benjamini Hochberg (BH) across all tests (7\u22c5106 variants\u00a0\u00d7 proteins).\n\nTo rule out any potential artefact linked to the mis-mapping of cis protein peptides to the trans proteins, we aligned all trans peptide sequences to the cis protein sequences. We considered all peptides used for the quantification of proteins associated in trans and locally aligned them to the reference sequence of the proteins associated in cis (using pairwise2.align.localxs from the Biopython Project, with a gap penalty of 1). This identified a single trans association for which the peptides had less than two mismatches, which was excluded from the reported results.\n\n### Downstream analysis of QTL results\n\n#### Cis eQTL and pQTL replication\n\nTo assess the replication of QTL across molecular layers, we considered the QTL detected in one layer and assessed the nominal significance in the other layer (PV\u00a0<0.01), as well as the consistency of the effect directions in the second layer.\n\nTo identify the determinants of eQTL to pQTL replication, we trained a Random Forest model to the replication status of 3487 eQTL (Figure 2\u2014source data 2). For each RNA-protein pair, we defined eight features: \u2018eQTL effect size\u2019, \u2018protein coefficient of error\u2019, \u2018protein coefficient of variation\u2019, \u2018protein abundance\u2019, \u201dSNP MAF\u2019, \u2018RNA abundance\u2019, \u2018number of peptides\u2019, and \u2018number of missing measurements\u2019. The feature \u2018protein coefficient of error\u2019 was computed as the coefficient of variation of the reference line across the set of technical replicates (TMT batches). This model was fit in Python using the scikit-learn library v0.21.3, with the sklearn.ensembl.RandomForestClassifier model with n_estimators\u00a0=\u00a0100 (i.e. the suggested default). The model was trained and tested 50 times, training on a random sample of 80% of the data, and tested on the remaining 20%.\n\n### Annotation of cis-trans protein pairs with protein-protein interactions\n\nProtein-protein interactions were obtained from the union of CORUM (Ruepp et al., 2010), IntAct (Orchard et al., 2014) and protein-binding interactions from StringDB (Szklarczyk et al., 2017). For CORUM, we considered pairwise interactions between all protein complex subunits, discarded any isoform extension from the protein UniProt IDs, and intersect cis-trans protein pairs with the protein-protein interactions reference list.\n\n### Overlap with disease variants and GTEx eQTLs\n\nFollowing the approach in Kilpinen et al., 2017, we defined proxy variants of each cis QTL as variants in high LD (r2\u00a0>0.8) based on the UK10K European reference panel (Buniello, 2019) and located in the same cis window. A QTL was defined as GWAS-tagging if at least one proxy variant was annotated in the NHGRI-EBI GWAS Catalog (download on 2019\u201303) (Staley et al., 2016). A pQTL was defined as replicating in GTEx eQTLs if it was mapped at nominal significance (PV\u00a0<0.01/48) in any of the 48 tissues (Battle et al., 2017).\n\nComplementary, we considered a more stringent criterion based on statistical co-localisation of GWAS signals with QTLs. Specifically, we used summary statistics from phenotypic traits mapped in 51 studies (McLaren et al., 2016), using eCAVIAR (Hormozdiari et al., 2016) to test for co-localisation. For each pQTL cis region and each GWAS trait and study we first intersected the variants assessed both in GWAS and in our study, resulting between 104 and 2 \u00d7 105 variants. We then selected the traits with at least one variant with PVGWAS\u00a0<10\u22125 and genome wide-significant in our study. For each trait - QTL pair we performed the co-localisation of z-scores (computed as the ratio between effect size and effect size standard deviation).\n\n### Annotation of pQTLs with variant effects\n\nFor each pQTL lead variant, a set of proxy variants were identified based on LD (r2\u00a0>0.8). Each proxy variant located in the gene body for the corresponding gene was annotated based on its position and predicted effect, using Variant Effect Predictor (Eilbeck et al., 2005). The variants were grouped in parent categories using Sequence Ontology (2016 release; Wagih et al., 2018) as follows: 'inframe_variant' includes variants annotated as 'inframe_deletion', 'inframe_insertion', 'incomplete_terminal_codon_variant', 'stop_lost', 'stop_gained' and 'missense_variant'; 'splicing_variant' includes variants annotated as 'splice_acceptor_variant', 'splice_donor_variant' and 'splice_region_variant'; 'frameshift_variant' includes variants annotated as 'feature_elongation', 'feature_truncation' and 'frameshift_variant'. The set of inframe variants were further classified as deleterious or not according to their SIFT scores (Ng and Henikoff, 2003), as provided by MutFunc 69 (SIFT score\u00a0<0.05 corresponds to a deleterious mutation). Each pQTL SNP with at least one proxy variant was annotated with the predicted effects of all its proxy variants. For each class of variants (inframe, splicing, etc.), enrichment in the set of pQTLs without any evidence of RNA mechanism (i.e. no eQTL or transcript isoform QTL) compared to all pQTLs was evaluated by Fisher\u2019s exact test, restricted to pQTLs with at least one proxy variant in the gene body (Figure 3d).\n",
+      "created_at": "2025-12-02T19:07:18.192825Z"
+    },
+    {
+      "id": "72f8288e-b5b8-4d9a-8a06-d0a301f37dd1",
+      "submission_id": "b5b55cdd-9b75-45c7-b6c0-bc169497c508",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Stephen CJ Parker, University of Michigan United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.57390.sa1](https://doi.org/10.7554/eLife.57390.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nThis exciting study quantifies the genetic architecture of gene expression (eQTL) and protein abundance (pQTL) regulation in iPSCs and will server is an important benchmark for the community. The rigorous comparison of these e/pQTL maps reveals differences that represent expected biological diversity, with a notable example in Figure 3B. Further, this work will serve as a foundation for many novel future studies, including GWAS colocalization and additional omics layers.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Population-scale proteome variation in human induced pluripotent stem cells\" for consideration by eLife. Your article has been reviewed by three peer reviewers, including Stephen CJ Parker as the Reviewing Editor and Reviewer #1, and the evaluation has been overseen by Patricia Wittkopp as the Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Arushi Varshney (Reviewer #3); Roderic Guig\u00f3 (Reviewer #4).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nWe would like to draw your attention to changes in our revision policy that we have made in response to COVID-19 (https://elifesciences.org/articles/57162). Specifically, we are asking editors to accept without delay manuscripts, like yours, that they judge can stand as eLife papers without additional data, even if they feel that they would make the manuscript stronger. Thus the revisions requested below only address clarity and presentation.\n\nSummary:\n\nHere the authors report pQTL results on 202 iPSC lines from 151 donors which already had RNA-seq data, enabling direct population-scale comparisons of eQTL and pQTL. This manuscript is well-written, clear, and has impactful results. We think it would be a great resource for the field. This is excellent work, and the authors are to be commended on an exciting study. We have a few items of feedback:\n\nRevisions:\n\n1) It is unclear how the acquisition of RNA and proteomics data were related. For example, were the same batches prepped, split, and material frozen for later profiling. Or, were the lines grown up at separate times for each of the different profiling modalities? If the latter, how could this potentially RNA-protein confounding batch effect influence the results?\n\n2) In subsection \u201cpQTL arising from protein-altering variants\u201d, paragraph three, the authors advocate using protein abundance instead of RNA to interpret pathogenic mechanisms of rare variants. However, QTL studies generally have low power to detect effects for SNPs with low MAF. In fact, in this study, the authors used MAF 5% or higher. So, how does one reconcile this assertion to use protein abundance to interpret rare variant effects with the massive sample size it would take to do so. Addressing this idea in the text would be helpful.\n\n3) The authors should make the full summary scan results available so that the rest of the community can use them as a resource.\n\n4) Discussion paragraph three, the word \"significant\" is missing a \"ly\" and we'd advise removing that word altogether. In general, it should be used when making a statistical comparison and the associated test and p-value should be provided. This is not mentioned anywhere in the sentence. So, either those results should be disclosed, or a different word without a statistical connotation should be used. The same issue is present in paragraph three of subsection \u201cpQTL arising from protein-altering variants\u201d.\n\n5) The variance component analysis showed effects of culture medium, sex, age etc. Were these taken as covariates in the QTL analysis? Looking at effects of the culture medium, were the culture passage numbers comparable across lines and does that have an effect?\n\n6) For the X chromosome inactivation (XCI) section, it is unclear how exactly the XCI status was quantified. Subsection \u201cRNA and proteome variability\u201d paragraph two and the legend to Figure 1 reference the Materials and methods section but a description of this analysis is missing there. These results are hard to interpret without methodological clarity.\n\n7) Figure 1D \u2013 While the random forest model analysis is interesting, the authors should elaborate on their selection of these specific variables. Some other factors that would be informative to include would be MAF and RNA expression level.\n\n8) Figure 2B and 3C \u2013 is the grey bar/shaded region in these plots the genomic location of the respective gene? If so, this should be specified in the legend.\n\n9) Figure 3C and the corresponding text briefly describe a pQTL for the VRK2 gene where the pQTL SNP is also a GWAS SNP for schizophrenia risk. The authors should elaborate on the pQTL direction of effect with respect to GWAS risk. Is the variant the lead SNP for GWAS or what is the LD r2 with the lead SNP and do these signals colocalize in that case? Is there some evidence of this protein being relevant in schizophrenia related cellular mechanisms?\n\n10) Figure 4E \u2013 This is an interesting example. What is the eQTL/pQTL and trans pQTL direction of effect with respect to the Alzheimer's GWAS risk allele? In this example, the SNP rs1129187 is associated with PEX6 mRNA expression and protein abundance, and also associated with PEX1 and PEX26 abundance. To directly test if the trans-association of the SNP with PEX1 and PEX26 is through the association with PEX6 (complex stability) and not through other mechanisms, have the authors tried to regress out the PEX6 abundance from the association between the SNP and PEX1 or PEX26 and check if the association disappears?\n\n11) Wrong figures are referenced in some places in the manuscript. Figure 3D is referenced before 3B etc.\n\n12) Were there genes for which significant eQTL and also pQTL associations were identified but the variants were independent (low LD r2?)\n\n13) It was confusing that the authors do not clearly distinguish between the variant affecting the phenotype of the gene (transcript or protein expression) and the affected gene. They write \"we report 654 genes with a cis pQTL and 3487 genes with a cis eQTL. I assume that will in general find multiple p/eQTLs for a given gene (althought these number do not appear to be reported). These are thus the numbers of p/eGenes, but not of p/eQTLs. However, when they set to investigate replication of p/eQTLs, the numbers correspond to p/eGenes. The authors equate the numbers of QTLs with the number of affected genes. This part could be more clear.\n\n14) Figure 1B. It looks to me that the fraction of the total variance explained by the factors the authors use in their model is much larger for transcriptomics than for proteomics data. I suggest the authors to report this number. If I am correct, this would mean that proteomics data behaves \"somehow\" more stochastically than transcriptomics data, maybe reflecting technical issues. It maybe also linked to the lack of replication of eQLTs at the protein level.\n\n15) I understand the rationale of using 250Kb for eQTL analysis, since much of the regulation of gene expression is likely to reside in the promoter region. However, I do not see a biological rationale for using the same window for pQTL analysis. I understand that using the same window maybe the only way of making meaningful comparisons between eQTLs and pQTLs, and I think that this is ok. By using the same window the authors are implicitly assessing to what extent variation affecting gene expression also affects protein expression, that is the genetic variation in which the impact on protein expression is mediated by the impact on gene expression. Maybe the authors should acknowledge this.\n\n16) Related to the above. eQTLs tend to cluster around the TSS. Do they observe the same clustering for pQTLs? What is the comparative distribution of p/eQTLs along the tested region?\n",
+      "created_at": "2025-12-02T19:07:18.192825Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T19:07:18.192825Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T19:07:18.192825Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "8e12ab05-9829-4b06-80ac-3a0f817e6500",
+      "content_id": "fe856001-4554-4c04-b56a-9d40b129cec8",
+      "claim_id": "C1",
+      "claim": "202 iPSC lines derived from 151 donors were analyzed with integrated transcriptome and genomic sequence data from the same lines.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we present the first comprehensive proteomic analysis of human induced pluripotent stem cells (iPSC), a key cell type for disease modelling, analysing 202 iPSC lines derived from 151 donors, with integrated transcriptome and genomic sequence data from the same lines.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states the number of iPSC lines and donors analyzed in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:07:18.192825Z"
+    },
+    {
+      "id": "96067b0d-4ae8-43b1-a03d-262371d74031",
+      "content_id": "fe856001-4554-4c04-b56a-9d40b129cec8",
+      "claim_id": "C2",
+      "claim": "654 protein quantitative trait loci (pQTLs) were identified in iPSCs.",
+      "claim_type": "EXPLICIT",
+      "source": "We identified 654 protein quantitative trait loci (pQTLs) in iPSCs, including disease-linked variants in protein-coding sequences and variants with trans regulatory effects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract explicitly reports the number of pQTLs identified.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:07:18.192825Z"
+    },
+    {
+      "id": "dbdd0bf0-7c62-4cd9-8e62-3723d5af4bcc",
+      "content_id": "fe856001-4554-4c04-b56a-9d40b129cec8",
+      "claim_id": "C3",
+      "claim": "Some pQTLs are linked to GWAS variants that cannot be detected at the mRNA level.",
+      "claim_type": "EXPLICIT",
+      "source": "These include pQTL linked to GWAS variants that cannot be detected at the mRNA level, highlighting the utility of dissecting pQTL at peptide level resolution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract explicitly states that some pQTLs linked to GWAS variants are not detectable at mRNA level.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:07:18.192825Z"
+    },
+    {
+      "id": "fb338b33-44ed-47a7-b225-c3ebea6ea53e",
+      "content_id": "fe856001-4554-4c04-b56a-9d40b129cec8",
+      "claim_id": "C4",
+      "claim": "255,015 distinct peptide sequences were identified, corresponding to 16,773 protein groups with median sequence coverage of 46%.",
+      "claim_type": "EXPLICIT",
+      "source": "Collectively, we identified 255,015 distinct (unmodified) peptide sequences, corresponding to 16,773 protein groups (groups of protein isoforms with no discriminating peptides; hereon denoted proteins) with median sequence coverage of 46%.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The Results section explicitly reports the number of peptides and protein groups identified.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:07:18.192825Z"
+    },
+    {
+      "id": "0af2979a-c4ec-4eae-bc3e-9015e7faa377",
+      "content_id": "fe856001-4554-4c04-b56a-9d40b129cec8",
+      "claim_id": "C5",
+      "claim": "11,140 recurrently detected proteins were identified, corresponding to 10,198 genes.",
+      "claim_type": "EXPLICIT",
+      "source": "We identified 11,140 recurrently detected proteins, corresponding to 10,198 genes (detected in at least 30 lines; Materials and methods) and RNA expression for 12,363 protein-coding genes (population average TPM >1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The Results section explicitly states the number of recurrently detected proteins and corresponding genes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:07:18.192825Z"
+    },
+    {
+      "id": "e194510b-65dd-4647-9da6-d182ea6446ac",
+      "content_id": "fe856001-4554-4c04-b56a-9d40b129cec8",
+      "claim_id": "C6",
+      "claim": "9013 protein coding genes were detected both at the RNA and protein levels.",
+      "claim_type": "EXPLICIT",
+      "source": "Out of these, 9013 protein coding genes were detected both at the RNA and protein levels (Figure 1\u2014source datas 2 and 3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The Results section explicitly reports the number of genes detected at both RNA and protein levels.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:07:18.192825Z"
+    },
+    {
+      "id": "ddd0aee8-ef16-492c-a4c1-3ec6f4ec2059",
+      "content_id": "fe856001-4554-4c04-b56a-9d40b129cec8",
+      "claim_id": "C7",
+      "claim": "The iPSC proteome was most similar to foetal and reproductive organs.",
+      "claim_type": "EXPLICIT",
+      "source": "When overlaying our data with the Human Proteome Map (Kim et al., 2014), the iPSC proteome was most similar to foetal and reproductive organs (Figure 1\u2014figure supplement 2), which is consistent with the expected expression of pluripotency markers in these tissues (Kerr et al., 2008a; Kerr et al., 2008b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The Results section explicitly states the similarity of iPSC proteome to foetal and reproductive organs, supported by Figure 1\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:07:18.192825Z"
+    },
+    {
+      "id": "ce2a03b9-c0e0-41b2-85fb-30924f28a05b",
+      "content_id": "fe856001-4554-4c04-b56a-9d40b129cec8",
+      "claim_id": "C8",
+      "claim": "No systematic expression differences were identified between healthy donors and disease-bearing donors in the iPSC state.",
+      "claim_type": "EXPLICIT",
+      "source": "We also assessed differences between healthy donors and disease-bearing donors, identifying no systematic expression differences in the iPSC state (Supplementary file 2; Figure 1\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The Results section explicitly states that no systematic differences were found between healthy and disease-bearing donors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:07:18.192825Z"
+    },
+    {
+      "id": "ff0c27f8-693a-4ea3-a06f-7b5a6550925b",
+      "content_id": "fe856001-4554-4c04-b56a-9d40b129cec8",
+      "claim_id": "C9",
+      "claim": "The fraction of variance explained by biological factors was lower for protein levels compared to RNA variation.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, the fraction of variance explained by biological factors was lower for protein levels, compared to RNA variation, which points to higher assay noise and/or stochastic variability of protein abundance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The Results section explicitly compares variance explained at protein vs RNA levels.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:07:18.192825Z"
+    },
+    {
+      "id": "2ed6471a-4cbe-4ce8-9180-0bccb21044c0",
+      "content_id": "fe856001-4554-4c04-b56a-9d40b129cec8",
+      "claim_id": "C10",
+      "claim": "Donor genome is the most relevant factor explaining protein expression variation, followed by culture medium.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with previous results using RNA data (Kilpinen et al., 2017), we identified donor genome (i.e. DNA sequence variation) as the most relevant factor, followed by culture medium (Figure 1b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The Results section explicitly identifies donor genome as the most relevant factor, supported by Figure 1b.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:07:18.192825Z"
+    },
+    {
+      "id": "db7c31b6-1782-4570-b2d4-05b48bff9fc9",
+      "content_id": "fe856001-4554-4c04-b56a-9d40b129cec8",
+      "claim_id": "C11",
+      "claim": "Significant donor effects remained after accounting for RNA variability.",
+      "claim_type": "EXPLICIT",
+      "source": "Critically, however, significant donor effects remained after accounting for RNA variability (Figure 1b,d; Figure 1\u2014figure supplement 4; Materials and methods).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The Results section explicitly states that donor effects persist after adjusting for RNA.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:07:18.192825Z"
+    },
+    {
+      "id": "5d7745ca-42b8-453c-8377-c0dd8613fd97",
+      "content_id": "fe856001-4554-4c04-b56a-9d40b129cec8",
+      "claim_id": "C12",
+      "claim": "Genetic differences between individual donors and experimental differences between culture conditions play an important role in causing the observed variation in proteome expression between the iPSC lines.",
+      "claim_type": "EXPLICIT",
+      "source": "This indicates that (i) genetic differences between individual donors and experimental differences between culture conditions play an important role in causing the observed variation in proteome expression between the iPSC lines and (ii) post-transcriptional mechanisms also contribute to these effects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The Results section explicitly states the role of genetic and experimental differences.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:07:18.192825Z"
+    },
+    {
+      "id": "c7b6f7fd-8abd-4fe7-885e-f5d01c4feeb3",
+      "content_id": "fe856001-4554-4c04-b56a-9d40b129cec8",
+      "claim_id": "C13",
+      "claim": "Post-transcriptional mechanisms contribute to protein expression variation.",
+      "claim_type": "EXPLICIT",
+      "source": "This indicates that (i) genetic differences between individual donors and experimental differences between culture conditions play an important role in causing the observed variation in proteome expression between the iPSC lines and (ii) post-transcriptional mechanisms also contribute to these effects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The Results section explicitly states that post-transcriptional mechanisms contribute to effects.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:07:18.192825Z"
+    },
+    {
+      "id": "258cc1c6-3d78-4da9-b4b2-f676ce3fa9c9",
+      "content_id": "fe856001-4554-4c04-b56a-9d40b129cec8",
+      "claim_id": "C14",
+      "claim": "88 proteins showed a strong (>20%) gender-related effect on expression.",
+      "claim_type": "EXPLICIT",
+      "source": "There was also a strong (i.e. >20%) gender-related effect on the expression of a subset of 88 proteins (Figure 1b), which are enriched for proteins encoded on the X chromosome (Odds ratio = 24.8, PV = 3\u00d710\u221232, Fisher's exact test).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The Results section explicitly reports the number of proteins with gender-related effects.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:07:18.192825Z"
+    },
+    {
+      "id": "5b8b8270-c12d-4d56-ad3f-f13fe4f116ec",
+      "content_id": "fe856001-4554-4c04-b56a-9d40b129cec8",
+      "claim_id": "C15",
+      "claim": "Proteins showing strong gender-related effects are enriched for proteins encoded on the X chromosome (Odds ratio = 24.8, PV = 3\u00d710\u221232).",
+      "claim_type": "EXPLICIT",
+      "source": "There was also a strong (i.e. >20%) gender-related effect on the expression of a subset of 88 proteins (Figure 1b), which are enriched for proteins encoded on the X chromosome (Odds ratio = 24.8, PV = 3\u00d710\u221232, Fisher's exact test).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The Results section explicitly reports the enrichment statistics.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:07:18.192825Z"
+    },
+    {
+      "id": "cfa60837-e191-4a55-9ca4-62e8935d920d",
+      "content_id": "fe856001-4554-4c04-b56a-9d40b129cec8",
+      "claim_id": "C16",
+      "claim": "1374 genes showed changes in protein or RNA levels correlated with XCI status (FDR < 10%).",
+      "claim_type": "EXPLICIT",
+      "source": "This identified 1374 genes for which either protein, or RNA levels, or both, showed changes correlated with XCI status (Figure 1c, FDR < 10%; Figure 1\u2014source data 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The Results section explicitly reports the number of genes affected by XCI status.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:07:18.192825Z"
+    },
+    {
+      "id": "29e41f9e-dc1c-4cfd-8ccc-5d19276e47bb",
+      "content_id": "fe856001-4554-4c04-b56a-9d40b129cec8",
+      "claim_id": "C17",
+      "claim": "XCI status preferentially impacts catabolic processes and mitochondria at the protein level, while this was not observed at the RNA level.",
+      "claim_type": "EXPLICIT",
+      "source": "Further analysis indicated that XCI status preferentially impacts catabolic processes and mitochondria at the protein level, while this was not observed at the RNA level (Gene Ontology; Materials and methods; Figure 1c; Figure 1\u2014source data 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The Results section explicitly states the differential impact of XCI status at protein vs RNA levels.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:07:18.192825Z"
+    },
+    {
+      "id": "99263279-b731-4f14-abdc-dd0e77eef079",
+      "content_id": "fe856001-4554-4c04-b56a-9d40b129cec8",
+      "claim_id": "C18",
+      "claim": "654 genes have at least one cis pQTL (FDR < 10%).",
+      "claim_type": "EXPLICIT",
+      "source": "Across all autosomal genes, we report 654 genes with at least one cis pQTL and 3487 genes with a cis eQTL (FDR < 10% for both eQTL and pQTL mapping; lead variants only; Figure 2a; Figure 2\u2014source datas 1 and 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The Results section explicitly reports the number of genes with cis pQTLs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:07:18.192825Z"
+    },
+    {
+      "id": "0552faf5-90c5-4a4c-913a-071965443902",
+      "content_id": "fe856001-4554-4c04-b56a-9d40b129cec8",
+      "claim_id": "C19",
+      "claim": "3487 genes have a cis eQTL (FDR < 10%).",
+      "claim_type": "EXPLICIT",
+      "source": "Across all autosomal genes, we report 654 genes with at least one cis pQTL and 3487 genes with a cis eQTL (FDR < 10% for both eQTL and pQTL mapping; lead variants only; Figure 2a; Figure 2\u2014source datas 1 and 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The Results section explicitly reports the number of genes with cis eQTLs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:07:18.192825Z"
+    },
+    {
+      "id": "91c57f81-5fcc-44b8-84b1-829c5b97a875",
+      "content_id": "fe856001-4554-4c04-b56a-9d40b129cec8",
+      "claim_id": "C20",
+      "claim": "273 genes had shared pQTL and eQTL with identical or correlated lead variants.",
+      "claim_type": "EXPLICIT",
+      "source": "Among these, 273 genes were shared and had identical or correlated lead variants, whereas 82 genes showed evidence for an eQTL and pQTL with independent lead variants (LD-based criterion, r2 <0.1, Figure 2\u2014source data 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The Results section explicitly reports the number of genes with shared QTLs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:07:18.192825Z"
+    },
+    {
+      "id": "df6959d2-3572-407d-a7c6-079707296a65",
+      "content_id": "fe856001-4554-4c04-b56a-9d40b129cec8",
+      "claim_id": "C21",
+      "claim": "82 genes showed evidence for an eQTL and pQTL with independent lead variants (r2 <0.1).",
+      "claim_type": "EXPLICIT",
+      "source": "Among these, 273 genes were shared and had identical or correlated lead variants, whereas 82 genes showed evidence for an eQTL and pQTL with independent lead variants (LD-based criterion, r2 <0.1, Figure 2\u2014source data 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The Results section explicitly reports the number of genes with independent QTLs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:07:18.192825Z"
+    },
+    {
+      "id": "1177c933-88ba-4eae-af8f-a5a0edca3ebc",
+      "content_id": "fe856001-4554-4c04-b56a-9d40b129cec8",
+      "claim_id": "C22",
+      "claim": "Genes with substantial donor components (>20%) were enriched for significant cis pQTL (Odds ratio = 4.2).",
+      "claim_type": "EXPLICIT",
+      "source": "Genes with substantial donor components, as identified based on the variance component analysis (>20%; Figure 1b), were enriched for significant cis pQTL (215 genes out of 962; Odds ratio = 4.2; Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The Results section explicitly reports the enrichment of pQTLs in genes with substantial donor components.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:07:18.192825Z"
+    },
+    {
+      "id": "f251a49e-a3a7-4f3d-ab75-60208ac1727b",
+      "content_id": "fe856001-4554-4c04-b56a-9d40b129cec8",
+      "claim_id": "C23",
+      "claim": "473 pQTLs (72%) had replicated eQTL effects.",
+      "claim_type": "EXPLICIT",
+      "source": "This identified 473 pQTLs (72%) with replicated eQTL effects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The Results section explicitly reports the number and percentage of pQTLs with replicated eQTL effects.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:07:18.192825Z"
+    },
+    {
+      "id": "77155cdf-2b83-453b-84fb-3cb2d7a1a06c",
+      "content_id": "fe856001-4554-4c04-b56a-9d40b129cec8",
+      "claim_id": "C24",
+      "claim": "893 eQTLs (26%) had replicated protein effects.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, 893 eQTLs (26%) had replicated protein effects, with globally concordant effect size directions and distance from gene boundaries (Figure 2\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The Results section explicitly reports the number and percentage of eQTLs with replicated protein effects.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:07:18.192825Z"
+    },
+    {
+      "id": "d305ca86-a881-43e7-a0fb-37073975c31c",
+      "content_id": "fe856001-4554-4c04-b56a-9d40b129cec8",
+      "claim_id": "C25",
+      "claim": "eQTL effect size is a strong predictor for protein replication, with larger effects being associated with increased replication rates.",
+      "claim_type": "EXPLICIT",
+      "source": "We identified the eQTL effect size as a strong predictor for protein replication, with larger effects being associated with increased replication rates (Figure 2c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The Results section explicitly identifies eQTL effect size as a predictor of protein replication.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:07:18.192825Z"
+    },
+    {
+      "id": "a6dc9704-084d-4778-90a4-02e0870b5f5a",
+      "content_id": "fe856001-4554-4c04-b56a-9d40b129cec8",
+      "claim_id": "C26",
+      "claim": "136 (of 654) pQTL signals tag a known GWAS variant (r2 >0.8).",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, we probed for QTLs that tag GWAS variants contained in the GWAS catalogue (MacArthur et al., 2017) (i.e. are in LD r2 >0.8), identifying 136 (of 654) pQTL signals that tag a known GWAS variant (Figure 2\u2014source data 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The Results section explicitly reports the number of pQTLs that tag GWAS variants.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:07:18.192825Z"
+    },
+    {
+      "id": "99bfc1f8-bf0a-4181-bd51-85677ad8e2b5",
+      "content_id": "fe856001-4554-4c04-b56a-9d40b129cec8",
+      "claim_id": "C27",
+      "claim": "49 pQTLs showed evidence of co-localisation with GWAS signals (cumulative co-localisation probability greater than 0.1).",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, we assessed the statistical evidence for co-localisation of pQTL and GWAS signals for 51 studies for which full summary statistics were obtained (using eCAVIAR Hormozdiari et al., 2016; Materials and methods; Figure 2\u2014source data 1), yielding 49 pQTLs with evidence of co-localisation (i.e cumulative co-localisation probability greater than 0.1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The Results section explicitly reports the number of pQTLs with co-localisation evidence.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:07:18.192825Z"
+    },
+    {
+      "id": "eb5ee524-de32-481d-9d94-50b69a857e02",
+      "content_id": "fe856001-4554-4c04-b56a-9d40b129cec8",
+      "claim_id": "C28",
+      "claim": "rs7872034 is a pQTL for SMC2 with co-localisation evidence for serous invasive ovarian cancer (Phelan et al., 2017).",
+      "claim_type": "EXPLICIT",
+      "source": "Among these, examples of pQTLs with corresponding effects at the RNA level include the variant rs7872034, a pQTL for SMC2 with co-localisation evidence for serous invasive ovarian cancer (Phelan et al., 2017), and the variant rs11752813, a pQTL for PEX6 and in LD with Alzheimer's disease in APOE e4+ carriers risk variant rs1129187 (Jun et al., 2016; Figure 2\u2014figure supplement 4; Figure 2b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The Results section explicitly identifies rs7872034 as a pQTL for SMC2 with GWAS co-localisation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:07:18.192825Z"
+    },
+    {
+      "id": "fd0f7273-d845-4bc1-bcdd-ba04d197eccc",
+      "content_id": "fe856001-4554-4c04-b56a-9d40b129cec8",
+      "claim_id": "C29",
+      "claim": "rs11752813 is a pQTL for PEX6 and in LD with Alzheimer's disease in APOE e4+ carriers risk variant rs1129187 (Jun et al., 2016).",
+      "claim_type": "EXPLICIT",
+      "source": "Among these, examples of pQTLs with corresponding effects at the RNA level include the variant rs7872034, a pQTL for SMC2 with co-localisation evidence for serous invasive ovarian cancer (Phelan et al., 2017), and the variant rs11752813, a pQTL for PEX6 and in LD with Alzheimer's disease in APOE e4+ carriers risk variant rs1129187 (Jun et al., 2016; Figure 2\u2014figure supplement 4; Figure 2b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The Results section explicitly identifies rs11752813 as a pQTL for PEX6 linked to Alzheimer's disease risk.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:07:18.192825Z"
+    },
+    {
+      "id": "b9f4e70a-eb84-4885-a944-b2bd4175c354",
+      "content_id": "fe856001-4554-4c04-b56a-9d40b129cec8",
+      "claim_id": "C30",
+      "claim": "33 pQTLs linked to GWAS variants had no replicated effect at the RNA level, suggesting protein-specific regulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, for 33 pQTLs linked to GWAS variants, either via co-localisation or LD tagging, no replicated effect was identified at the RNA level, suggesting protein-specific regulation (Figure 2\u2014source data 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The Results section explicitly reports the number of pQTLs with protein-specific regulation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:07:18.192825Z"
+    },
+    {
+      "id": "9ab13b7d-be75-4d35-8f97-d6fb0d691a1b",
+      "content_id": "fe856001-4554-4c04-b56a-9d40b129cec8",
+      "claim_id": "C31",
+      "claim": "rs11601507 has no RNA effects, and is associated with TRIM5 protein abundance and with coronary artery disease risk (van der Harst and Verweij, 2018).",
+      "claim_type": "EXPLICIT",
+      "source": "For example, rs11601507 has no RNA effects, and is associated with TRIM5 protein abundance and with coronary artery disease risk (van der Harst and Verweij, 2018; Figure 2\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The Results section explicitly identifies rs11601507 as a protein-specific pQTL associated with disease risk.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:07:18.192825Z"
+    },
+    {
+      "id": "720975f0-c8d1-4f44-9a8d-0aa9a9c49c2d",
+      "content_id": "fe856001-4554-4c04-b56a-9d40b129cec8",
+      "claim_id": "C32",
+      "claim": "3810 genes have a transcript QTL (tQTL).",
+      "claim_type": "EXPLICIT",
+      "source": "cis QTL mapping of 33,050 reference transcript isoforms (Zerbino et al., 2018) (quantified using Salmon Patro et al., 2017; Materials and methods) and 119,747 peptides identified 3810 genes with a transcript QTL (tQTL) and 566 genes with a peptide QTL (pepQTL), respectively (Figure 3\u2014figure supplement 1, Materials and methods, Figure 3\u2014source datas 1 and 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The Results section explicitly reports the number of genes with transcript QTLs.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:07:18.192825Z"
+    },
+    {
+      "id": "0d99bd96-93f6-49f4-9941-23e9fc009394",
+      "content_id": "fe856001-4554-4c04-b56a-9d40b129cec8",
+      "claim_id": "C33",
+      "claim": "566 genes have a peptide QTL (pepQTL).",
+      "claim_type": "EXPLICIT",
+      "source": "cis QTL mapping of 33,050 reference transcript isoforms (Zerbino et al., 2018) (quantified using Salmon Patro et al., 2017; Materials and methods) and 119,747 peptides identified 3810 genes with a transcript QTL (tQTL) and 566 genes with a peptide QTL (pepQTL), respectively (Figure 3\u2014figure supplement 1, Materials and methods, Figure 3\u2014source datas 1 and 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The Results section explicitly reports the number of genes with peptide QTLs.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:07:18.192825Z"
+    },
+    {
+      "id": "9ddf5374-8ae4-4576-bb4d-27c3bb2f72af",
+      "content_id": "fe856001-4554-4c04-b56a-9d40b129cec8",
+      "claim_id": "C34",
+      "claim": "For 48 eQTLs without replicated pQTL effect, the eQTL variant was exclusively associated with abundance changes of non-coding transcript isoforms (nominal PV <0.01).",
+      "claim_type": "EXPLICIT",
+      "source": "Transcript-level QTL mapping could explain the lack of protein effects for a small fraction of the 2594 eQTL without a replicated pQTL effect (Figure 2a). For 48 of these, the eQTL variant was identified as exclusively associated with abundance changes of non-coding transcript isoforms (nominal PV <0.01), which explains the absence of protein effects (Figure 3\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The Results section explicitly reports the number of eQTLs affecting non-coding isoforms.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:07:18.192825Z"
+    },
+    {
+      "id": "5b76343e-3242-4a5c-a845-9be7253e8bf8",
+      "content_id": "fe856001-4554-4c04-b56a-9d40b129cec8",
+      "claim_id": "C35",
+      "claim": "Among 181 pQTLs without eQTL replication, 61 had nominally significant transcript QTLs (PV <0.01).",
+      "claim_type": "EXPLICIT",
+      "source": "Among 181 pQTLs without eQTL replication (Figure 2a), 61 had nominally significant transcript QTLs (PV <0.01; Figure 3a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The Results section explicitly reports the number of pQTLs with transcript QTL effects.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:07:18.192825Z"
+    },
+    {
+      "id": "22c63c31-2c24-4dc8-89ca-42a195e55194",
+      "content_id": "fe856001-4554-4c04-b56a-9d40b129cec8",
+      "claim_id": "C36",
+      "claim": "For 12 pQTLs without eQTL replication, genetic effects with opposite directions on coding and non-coding transcript isoforms were observed.",
+      "claim_type": "EXPLICIT",
+      "source": "For 12 of these, including a pQTL for MMAB (Figure 3b), we observed genetic effects with opposite directions on coding and non-coding transcript isoforms, which explains the lack of genetic effects when considering gene-level RNA abundance.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The Results section explicitly reports the number of pQTLs with opposite directional effects on isoforms.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:07:18.192825Z"
+    },
+    {
+      "id": "c82b1f3e-039d-4908-8e73-45a39b7975db",
+      "content_id": "fe856001-4554-4c04-b56a-9d40b129cec8",
+      "claim_id": "C37",
+      "claim": "24 pQTL lead variants without replication at eQTL or transcript QTL levels are inframe variants.",
+      "claim_type": "EXPLICIT",
+      "source": "When classifying the corresponding lead pQTL variants based on their predicted functional effect, we identified 24 inframe variants, a striking enrichment compared to pQTL with replicated RNA effects (3.8-fold enrichment; PV = 4\u00d710\u22125, Fisher's exact test; Figure 3c and d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The Results section explicitly reports the number of inframe variants among RNA-independent pQTLs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:07:18.192825Z"
+    },
+    {
+      "id": "dad6ad04-46fc-476b-92d9-83a6efa33408",
+      "content_id": "fe856001-4554-4c04-b56a-9d40b129cec8",
+      "claim_id": "C38",
+      "claim": "RNA-independent pQTLs show a 3.8-fold enrichment for inframe variants (PV = 4\u00d710\u22125).",
+      "claim_type": "EXPLICIT",
+      "source": "When classifying the corresponding lead pQTL variants based on their predicted functional effect, we identified 24 inframe variants, a striking enrichment compared to pQTL with replicated RNA effects (3.8-fold enrichment; PV = 4\u00d710\u22125, Fisher's exact test; Figure 3c and d).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The Results section explicitly reports the enrichment statistics for inframe variants.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:07:18.192825Z"
+    },
+    {
+      "id": "e23888fe-14bf-43b2-ae9b-8e1428f0230b",
+      "content_id": "fe856001-4554-4c04-b56a-9d40b129cec8",
+      "claim_id": "C39",
+      "claim": "For 11 of the 24 RNA-independent pQTLs, no evidence of eQTL nominal significance was found in any of the 48 GTEx tissues (PV <0.01/48).",
+      "claim_type": "EXPLICIT",
+      "source": "We assessed whether the 24 pQTL have effects at the RNA level (eQTL) in other cell types, and for 11 of these pQTL we did not find evidence of eQTL nominal significance in any of the 48 GTEx (PV <0.01/48; Battle et al., 2017; Figure 1\u2014source data 1), which further points to RNA-independent mechanisms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The Results section explicitly reports the lack of eQTL evidence in GTEx for 11 pQTLs.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:07:18.192825Z"
+    },
+    {
+      "id": "5d3593cf-0ee1-4e19-8b4e-3e7b234b2084",
+      "content_id": "fe856001-4554-4c04-b56a-9d40b129cec8",
+      "claim_id": "C40",
+      "claim": "10 of the 24 RNA-independent pQTLs that tag inframe variants have predicted deleterious effects (SIFT score <0.05).",
+      "claim_type": "EXPLICIT",
+      "source": "We estimated whether a variant is likely to be deleterious to protein function using SIFT scores, which capture evolutionary conservation and amino acid similarity (Ng and Henikoff, 2003). This revealed a clear enrichment of the 24 RNA-independent pQTL that tag inframe variants, 10 of which have predicted deleterious effects (SIFT score <0.05), compared to four among all other pQTL (Odds ratio = 27.5, PV = 3.8\u00d710\u22128, Fisher's exact test; Figure 3d; Figure 1\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The Results section explicitly reports the number of deleterious variants among RNA-independent pQTLs.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:07:18.192825Z"
+    },
+    {
+      "id": "d2eeb4c6-186a-4d0f-a03b-c5feea685ad3",
+      "content_id": "fe856001-4554-4c04-b56a-9d40b129cec8",
+      "claim_id": "C41",
+      "claim": "RNA-independent pQTLs with inframe variants show enrichment for deleterious effects (Odds ratio = 27.5, PV = 3.8\u00d710\u22128).",
+      "claim_type": "EXPLICIT",
+      "source": "This revealed a clear enrichment of the 24 RNA-independent pQTL that tag inframe variants, 10 of which have predicted deleterious effects (SIFT score <0.05), compared to four among all other pQTL (Odds ratio = 27.5, PV = 3.8\u00d710\u22128, Fisher's exact test; Figure 3d; Figure 1\u2014source data 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The Results section explicitly reports the enrichment statistics for deleterious effects.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:07:18.192825Z"
+    },
+    {
+      "id": "b7bc0aa8-2d50-492c-99ba-fa43ef8adc5f",
+      "content_id": "fe856001-4554-4c04-b56a-9d40b129cec8",
+      "claim_id": "C42",
+      "claim": "The variant rs1051061 in VRK2 lies in a conserved sequence in the kinase domain, proximal to the proton acceptor residue, likely impacting kinase activity.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the variant rs1051061 in VRK2 lies in a conserved sequence in the kinase domain, proximal to the proton acceptor residue, likely impacting kinase activity (Figure 3c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The Results section explicitly describes the location and predicted impact of rs1051061.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:07:18.192825Z"
+    },
+    {
+      "id": "ef874d61-b183-49ab-bce5-46d67c19feb5",
+      "content_id": "fe856001-4554-4c04-b56a-9d40b129cec8",
+      "claim_id": "C43",
+      "claim": "The variant rs1051061 has been identified as GWAS risk variant for schizophrenia (Yu et al., 2017) (OR 1.17).",
+      "claim_type": "EXPLICIT",
+      "source": "The identical variant has been identified as GWAS risk variant for schizophrenia (Yu et al., 2017) (OR 1.17), with the risk allele being associated with decreased protein abundance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The Results section explicitly identifies rs1051061 as a schizophrenia risk variant.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:07:18.192825Z"
+    },
+    {
+      "id": "87150f56-feaf-4e5b-9c47-9d5b89e001bd",
+      "content_id": "fe856001-4554-4c04-b56a-9d40b129cec8",
+      "claim_id": "C44",
+      "claim": "The risk allele of rs1051061 is associated with decreased VRK2 protein abundance.",
+      "claim_type": "EXPLICIT",
+      "source": "The identical variant has been identified as GWAS risk variant for schizophrenia (Yu et al., 2017) (OR 1.17), with the risk allele being associated with decreased protein abundance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The Results section explicitly states the association between the risk allele and decreased protein abundance.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:07:18.192825Z"
+    },
+    {
+      "id": "b2df9a7c-32d0-4df3-9d92-3d18080aad6b",
+      "content_id": "fe856001-4554-4c04-b56a-9d40b129cec8",
+      "claim_id": "C45",
+      "claim": "51 cis-pQTL lead variants have trans effects on a total of 68 proteins (FDR < 10%).",
+      "claim_type": "EXPLICIT",
+      "source": "We mapped proteome-wide trans pQTL, considering 654 cis pQTL variants. This identified 51 cis-pQTL lead variants with trans effects on a total of 68 proteins (FDR < 10%; Figure 4\u2014source data 1; Materials and methods).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The Results section explicitly reports the number of cis-pQTL variants with trans effects.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:07:18.192825Z"
+    },
+    {
+      "id": "ecd02d4e-4118-4d02-aa65-7ea4674ec157",
+      "content_id": "fe856001-4554-4c04-b56a-9d40b129cec8",
+      "claim_id": "C46",
+      "claim": "Pairs of proteins with shared genetic regulation were strongly enriched for known protein-protein interactions (Odds ratio = 9.1, PV = 1.5\u00d710\u221210).",
+      "claim_type": "EXPLICIT",
+      "source": "The detected pairs of proteins with shared genetic regulation were strongly enriched for known protein-protein interactions (CORUM Ruepp et al., 2010, IntAct Orchard et al., 2014, StringDB Szklarczyk et al., 2017; Odds ratio = 9.1, PV = 1.5\u00d710\u221210, Fisher's exact test; Figure 4b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The Results section explicitly reports the enrichment of protein-protein interactions among trans pQTLs.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:07:18.192825Z"
+    },
+    {
+      "id": "e214179d-24a9-41de-8944-a0561057de88",
+      "content_id": "fe856001-4554-4c04-b56a-9d40b129cec8",
+      "claim_id": "C47",
+      "claim": "The cis and trans effects had similar effect directions and effect sizes, consistent with genetic effects mediated via stabilising protein-protein interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "The cis and trans effects had similar effect directions and effect sizes, consistent with genetic effects mediated via stabilising protein-protein interactions (Figure 4c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The Results section explicitly states the similarity of effect directions and sizes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:07:18.192825Z"
+    },
+    {
+      "id": "aa602d1c-6aef-4d26-bd40-202187c2cd96",
+      "content_id": "fe856001-4554-4c04-b56a-9d40b129cec8",
+      "claim_id": "C48",
+      "claim": "The variant rs1129187 is associated in cis with an increase in both PEX6 RNA and protein abundance.",
+      "claim_type": "EXPLICIT",
+      "source": "As noted above, the underlying pQTL variant rs1129187 is associated in cis with an increase in both PEX6 RNA and protein abundance (Figure 2b) and is a known risk variant for Alzheimer's disease in APOE e4+ carriers (Jun et al., 2016).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The Results section explicitly states the cis association of rs1129187 with PEX6.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:07:18.192825Z"
+    },
+    {
+      "id": "33317f0e-8f5e-4835-9f48-1fc7ee11f309",
+      "content_id": "fe856001-4554-4c04-b56a-9d40b129cec8",
+      "claim_id": "C49",
+      "claim": "The variant rs1129187 is a known risk variant for Alzheimer's disease in APOE e4+ carriers (Jun et al., 2016).",
+      "claim_type": "EXPLICIT",
+      "source": "As noted above, the underlying pQTL variant rs1129187 is associated in cis with an increase in both PEX6 RNA and protein abundance (Figure 2b) and is a known risk variant for Alzheimer's disease in APOE e4+ carriers (Jun et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The Results section explicitly identifies rs1129187 as an Alzheimer's disease risk variant.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:07:18.192825Z"
+    },
+    {
+      "id": "eab61a5c-a108-4c6a-bbea-7b06a3b53d53",
+      "content_id": "fe856001-4554-4c04-b56a-9d40b129cec8",
+      "claim_id": "C50",
+      "claim": "The cis pQTL rs1129187 induces downstream associations on the remaining complex subunits, PEX26 and PEX1.",
+      "claim_type": "EXPLICIT",
+      "source": "This cis pQTL in turn induces downstream associations on the remaining complex subunits, PEX26 and PEX1 (Figure 4e), suggesting that PEX6 acts as a limiting subunit of this complex in iPSCs.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The Results section explicitly states the trans effects on PEX26 and PEX1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:07:18.192825Z"
+    },
+    {
+      "id": "f5f5958f-1e64-4e04-b524-99389c04bfe1",
+      "content_id": "fe856001-4554-4c04-b56a-9d40b129cec8",
+      "claim_id": "C51",
+      "claim": "PEX6 acts as a limiting subunit of the PEX26-PEX6-PEX1 complex in iPSCs.",
+      "claim_type": "EXPLICIT",
+      "source": "This cis pQTL in turn induces downstream associations on the remaining complex subunits, PEX26 and PEX1 (Figure 4e), suggesting that PEX6 acts as a limiting subunit of this complex in iPSCs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The Results section explicitly suggests PEX6 as a limiting subunit.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:07:18.192825Z"
+    },
+    {
+      "id": "1794f9b2-24a1-4064-a018-1f17cd849282",
+      "content_id": "fe856001-4554-4c04-b56a-9d40b129cec8",
+      "claim_id": "C52",
+      "claim": "There is prior evidence for an implication of peroxisomal function in the development of Alzheimer's disease and in other neurodegenerative processes (Lizard et al., 2012; Berger et al., 2016).",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, there is prior evidence for an implication of peroxisomal function in the development of Alzheimer's disease and in other neurodegenerative processes (Lizard et al., 2012; Berger et al., 2016), providing further support for this hypothesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The Results section explicitly cites prior evidence for peroxisomal function in Alzheimer's disease.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:07:18.192825Z"
+    },
+    {
+      "id": "e3a5874e-4436-4120-aecb-35409c5bd81c",
+      "content_id": "fe856001-4554-4c04-b56a-9d40b129cec8",
+      "claim_id": "C53",
+      "claim": "This study provides the most detailed population-level analysis of parallel RNA/protein profiles in human cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Beyond the relevance for iPS cell biology, this study, to our knowledge, provides the most detailed population-level analysis of parallel RNA/protein profiles in human cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The Discussion section explicitly claims this is the most detailed population-level analysis.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:07:18.192825Z"
+    },
+    {
+      "id": "b26edac1-b976-4bac-ac8b-50bbc28a850f",
+      "content_id": "fe856001-4554-4c04-b56a-9d40b129cec8",
+      "claim_id": "C54",
+      "claim": "More than 600 cis protein quantitative trait loci (pQTLs) were mapped.",
+      "claim_type": "EXPLICIT",
+      "source": "By quantifying genome-wide protein and transcript expression variation across more than 200 human iPSC lines, we identified both genetic and non-genetic mechanisms that underlie variation in both protein and RNA levels. We have mapped more than 600 cis protein quantitative trait loci (pQTLs) and analysed how these relate to cis eQTLs, how they impact other proteins in trans, and how pQTLs link to human disease variants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The Discussion section explicitly states that more than 600 cis pQTLs were mapped.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:07:18.192825Z"
+    },
+    {
+      "id": "4c8f727a-ab4e-4c4b-9005-f2d4c67c9e42",
+      "content_id": "fe856001-4554-4c04-b56a-9d40b129cec8",
+      "claim_id": "C55",
+      "claim": "The variance component analysis explained a lower overall fraction of variance in the protein data compared to RNA variation.",
+      "claim_type": "EXPLICIT",
+      "source": "The variance component analysis explained a lower overall fraction of variance in the protein data compared to RNA variation, which likely reflects larger technical effects and/or stochasticity in protein expression levels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The Discussion section explicitly states that variance explained is lower for protein data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:07:18.192825Z"
+    },
+    {
+      "id": "0fb6539a-0e68-4505-8f1e-0670830214ad",
+      "content_id": "fe856001-4554-4c04-b56a-9d40b129cec8",
+      "claim_id": "C56",
+      "claim": "Donor-specific genetic factors are a major contributor to the differences in protein expression detected across the iPSC lines.",
+      "claim_type": "EXPLICIT",
+      "source": "Among the explainable fraction of variance, donor-specific genetic factors are a major contributor to the differences in protein expression detected across the iPSC lines.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The Discussion section explicitly identifies donor-specific genetic factors as major contributors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:07:18.192825Z"
+    },
+    {
+      "id": "cade53d2-c915-46ce-8c99-7fa52c124387",
+      "content_id": "fe856001-4554-4c04-b56a-9d40b129cec8",
+      "claim_id": "C57",
+      "claim": "Protein expression variation across iPS cells reflects genetic diversity in the human population.",
+      "claim_type": "EXPLICIT",
+      "source": "The corollary is that protein expression variation across iPS cells reflects genetic diversity in the human population.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The Discussion section explicitly states that protein variation reflects genetic diversity.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:07:18.192825Z"
+    },
+    {
+      "id": "bbd0940d-eb97-4137-a49f-9e4eba897662",
+      "content_id": "fe856001-4554-4c04-b56a-9d40b129cec8",
+      "claim_id": "C58",
+      "claim": "There were substantially fewer pQTLs than eQTLs.",
+      "claim_type": "EXPLICIT",
+      "source": "Globally, there were substantially fewer pQTLs than eQTLs, and while most pQTLs had effects of the same direction at eQTL, only 30% of eQTLs are nominally significant at the protein level.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The Discussion section explicitly compares the number of pQTLs and eQTLs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:07:18.192825Z"
+    },
+    {
+      "id": "4d1f9921-6e6f-4879-883a-c3e15ca2a8f4",
+      "content_id": "fe856001-4554-4c04-b56a-9d40b129cec8",
+      "claim_id": "C59",
+      "claim": "Only 30% of eQTLs are nominally significant at the protein level.",
+      "claim_type": "EXPLICIT",
+      "source": "Globally, there were substantially fewer pQTLs than eQTLs, and while most pQTLs had effects of the same direction at eQTL, only 30% of eQTLs are nominally significant at the protein level.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The Discussion section explicitly states the percentage of eQTLs significant at protein level.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:07:18.192825Z"
+    },
+    {
+      "id": "dfa733e2-4a95-4481-8f2e-6b4a06756d4a",
+      "content_id": "fe856001-4554-4c04-b56a-9d40b129cec8",
+      "claim_id": "C60",
+      "claim": "Many eQTLs may reflect variation in RNA abundance that does not cause significant changes in steady state protein levels.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, many eQTLs may reflect variation in RNA abundance that does not cause significant changes in steady state protein levels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The Discussion section explicitly suggests that many eQTLs do not affect protein levels.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:07:18.192825Z"
+    },
+    {
+      "id": "7c9a20da-ecc9-41c1-9606-45295b7b7882",
+      "content_id": "fe856001-4554-4c04-b56a-9d40b129cec8",
+      "claim_id": "C61",
+      "claim": "Isoform-resolution protein and RNA phenotypes are indispensable to fully understand the propagation of genetic effects to proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "By the systematic comparison of matched protein and RNA data, including detailed analysis of separate isoforms, we demonstrated that in order to fully understand the propagation of genetic effects to proteins, isoform-resolution protein and RNA phenotypes are indispensable.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The Discussion section explicitly states the importance of isoform-resolution analysis.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:07:18.192825Z"
+    },
+    {
+      "id": "d84d6194-a5b7-402c-b9e5-c0403d03d447",
+      "content_id": "fe856001-4554-4c04-b56a-9d40b129cec8",
+      "claim_id": "C62",
+      "claim": "pQTLs for which no corresponding changes in transcript levels were detected are enriched in deleterious missense variants.",
+      "claim_type": "EXPLICIT",
+      "source": "We showed that the pQTLs for which no corresponding changes in transcript levels were detected, are enriched in deleterious missense variants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The Discussion section explicitly states the enrichment of deleterious missense variants in RNA-independent pQTLs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:07:18.192825Z"
+    },
+    {
+      "id": "4499d598-c998-4816-8c59-b293babd2393",
+      "content_id": "fe856001-4554-4c04-b56a-9d40b129cec8",
+      "claim_id": "C63",
+      "claim": "The phenotypic effects of deleterious missense variants may be exerted through protein abundance changes.",
+      "claim_type": "EXPLICIT",
+      "source": "This result suggests that the phenotypic effects of such variations may be exerted through protein abundance changes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The Discussion section explicitly suggests that deleterious variants act through protein abundance changes.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:07:18.192825Z"
+    },
+    {
+      "id": "d227bc71-fca4-4e36-8dd9-47d3f8e60deb",
+      "content_id": "fe856001-4554-4c04-b56a-9d40b129cec8",
+      "claim_id": "C64",
+      "claim": "This study presents the first comprehensive map of pQTLs at peptide resolution, considering a total of 119,747 peptides from 8543 proteins for genetic analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Our study presents the first comprehensive map of pQTLs at peptide resolution, considering a total of 119,747 peptides from 8543 proteins for genetic analysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The Discussion section explicitly claims this is the first comprehensive peptide-resolution pQTL map.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:07:18.192825Z"
+    },
+    {
+      "id": "2cd1c1bf-0324-4a1f-8e27-8a0e75920a50",
+      "content_id": "fe856001-4554-4c04-b56a-9d40b129cec8",
+      "claim_id": "C65",
+      "claim": "566 peptide QTL were identified.",
+      "claim_type": "EXPLICIT",
+      "source": "This identified 566 peptide QTL, several of which were not detectable when considering whole protein expression levels, as illustrated with the variant rs12795503, pepQTL for gene CTTN (Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The Discussion section explicitly reports the number of peptide QTLs identified.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:07:18.192825Z"
+    },
+    {
+      "id": "8ff445ab-f1a3-4415-b590-2e7e35d03a21",
+      "content_id": "fe856001-4554-4c04-b56a-9d40b129cec8",
+      "claim_id": "C66",
+      "claim": "Protein-protein interactions can propagate genetic effects in human populations.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data highlight the ability of protein-protein interactions to propagate genetic effects in human populations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The Discussion section explicitly states that protein-protein interactions propagate genetic effects.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:07:18.192825Z"
+    },
+    {
+      "id": "953453f6-3cd4-4db3-b6fc-c57685ea16cc",
+      "content_id": "fe856001-4554-4c04-b56a-9d40b129cec8",
+      "claim_id": "C67",
+      "claim": "cis eQTLs affecting the levels of rate-limiting subunits should have effects in trans on the abundance of the whole complex.",
+      "claim_type": "EXPLICIT",
+      "source": "A long-standing hypothesis has been that certain protein complexes may have a rate-limiting subunit that determines complex abundance, with any excess subunits produced being rapidly degraded (e.g. because of exposure of hydrophobic residues). This implies that cis eQTLs affecting the levels of rate-limiting subunits should also have effects in trans on the abundance of the whole complex, and on most, if not all, subunits therein.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The Discussion section explicitly describes the hypothesis about rate-limiting subunits.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:07:18.192825Z"
+    },
+    {
+      "id": "8d315669-e32f-4a73-82e0-0af659cb2440",
+      "content_id": "fe856001-4554-4c04-b56a-9d40b129cec8",
+      "claim_id": "C68",
+      "claim": "This study provides the first example that trans genetic effects mediated by protein interactions act through common genetic variants in untransformed human cells.",
+      "claim_type": "EXPLICIT",
+      "source": "While trans genetic effects were previously reported to be mediated by protein interactions in high heterozygosity samples, that is outbred mice, (Chick et al., 2016) and for somatic aberrations in cancer cell lines (Gon\u00e7alves et al., 2017; Roumeliotis et al., 2017), to our knowledge, this study provides the first example that such effects act through common genetic variants in untransformed human cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The Discussion section explicitly claims this is the first example in untransformed human cells.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:07:18.192825Z"
+    },
+    {
+      "id": "fc1cee90-2d78-46ad-960f-4f2050996def",
+      "content_id": "fe856001-4554-4c04-b56a-9d40b129cec8",
+      "claim_id": "C69",
+      "claim": "Direct analysis of human iPSCs can advance our understanding of the genetic regulation of protein expression and how this influences cell phenotypes and disease mechanisms.",
+      "claim_type": "EXPLICIT",
+      "source": "This study provides important information showing how direct analysis of human iPSCs can advance our understanding of the genetic regulation of protein expression and how this influences cell phenotypes and disease mechanisms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The Discussion section explicitly states the utility of iPSC analysis for understanding genetic regulation.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:07:18.192825Z"
+    },
+    {
+      "id": "2699d98f-f50e-4c3f-896c-b517c8c81494",
+      "content_id": "fe856001-4554-4c04-b56a-9d40b129cec8",
+      "claim_id": "C70",
+      "claim": "All HipSci samples were collected from consented research volunteers recruited from the NIHR Cambridge BioResource.",
+      "claim_type": "EXPLICIT",
+      "source": "As described in Kilpinen et al., 2017, all HipSci samples were collected from consented research volunteers recruited from the NIHR Cambridge BioResource, and iPSC were generated from fibroblasts by transduction with Sendai vectors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The Materials and methods section explicitly describes the sample source.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:07:18.192825Z"
+    },
+    {
+      "id": "c3a0b28a-fb27-4b86-b0cc-d047baff13e8",
+      "content_id": "fe856001-4554-4c04-b56a-9d40b129cec8",
+      "claim_id": "C71",
+      "claim": "iPSC were generated from fibroblasts by transduction with Sendai vectors.",
+      "claim_type": "EXPLICIT",
+      "source": "As described in Kilpinen et al., 2017, all HipSci samples were collected from consented research volunteers recruited from the NIHR Cambridge BioResource, and iPSC were generated from fibroblasts by transduction with Sendai vectors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The Materials and methods section explicitly describes the iPSC generation method.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:07:18.192825Z"
+    },
+    {
+      "id": "c0475ef6-26be-4993-b301-d1e35d7e1809",
+      "content_id": "fe856001-4554-4c04-b56a-9d40b129cec8",
+      "claim_id": "C72",
+      "claim": "Quantitative mass spectrometry was carried out in batches of 10 lines, using tandem mass tagging (TMT).",
+      "claim_type": "EXPLICIT",
+      "source": "Quantitative mass spectrometry was carried out in batches of 10 lines, using tandem mass tagging (TMT, Thompson et al., 2003), with one common reference sample shared across batches (Brenes et al., 2018) (Materials and methods).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The Materials and methods section explicitly describes the mass spectrometry approach.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:07:18.192825Z"
+    },
+    {
+      "id": "e8184201-717b-4815-9743-c6737bad0267",
+      "content_id": "fe856001-4554-4c04-b56a-9d40b129cec8",
+      "claim_id": "C73",
+      "claim": "One common reference sample was shared across TMT batches.",
+      "claim_type": "EXPLICIT",
+      "source": "Quantitative mass spectrometry was carried out in batches of 10 lines, using tandem mass tagging (TMT, Thompson et al., 2003), with one common reference sample shared across batches (Brenes et al., 2018) (Materials and methods).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The Materials and methods section explicitly describes the use of a common reference sample.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:07:18.192825Z"
+    },
+    {
+      "id": "9f70e658-6172-48dc-8a29-b35f52b2b2a4",
+      "content_id": "fe856001-4554-4c04-b56a-9d40b129cec8",
+      "claim_id": "C74",
+      "claim": "TMT-ten plex was used to label ten IPSC lines and quantify them in parallel.",
+      "claim_type": "EXPLICIT",
+      "source": "TMT-ten plex was used to label ten IPSC lines and quantify them in parallel.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The Materials and methods section explicitly describes the TMT-ten plex approach.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:07:18.192825Z"
+    },
+    {
+      "id": "031f8257-d8b1-4f5f-8910-f58e9e357d20",
+      "content_id": "fe856001-4554-4c04-b56a-9d40b129cec8",
+      "claim_id": "C75",
+      "claim": "24 TMT-ten plex experiments were performed.",
+      "claim_type": "EXPLICIT",
+      "source": "In total, 24 TMT-ten plex experiments were performed, where one IPSC line (HPSI0314i-bubh_3) was chosen as a reference cell line and was kept constant in all TMT batches.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The Materials and methods section explicitly states the number of TMT experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:07:18.192825Z"
+    },
+    {
+      "id": "76d0c1db-1de3-4032-917f-dde0cd7294de",
+      "content_id": "fe856001-4554-4c04-b56a-9d40b129cec8",
+      "claim_id": "C76",
+      "claim": "HPSI0314i-bubh_3 was chosen as a reference cell line and was kept constant in all TMT batches.",
+      "claim_type": "EXPLICIT",
+      "source": "In total, 24 TMT-ten plex experiments were performed, where one IPSC line (HPSI0314i-bubh_3) was chosen as a reference cell line and was kept constant in all TMT batches.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The Materials and methods section explicitly identifies the reference cell line.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:07:18.192825Z"
+    },
+    {
+      "id": "c7f9d1b3-037e-42c7-b9cc-611ad2a6a04d",
+      "content_id": "fe856001-4554-4c04-b56a-9d40b129cec8",
+      "claim_id": "C77",
+      "claim": "6273 peptides that overlap polymorphisms were discarded from further analyses.",
+      "claim_type": "EXPLICIT",
+      "source": "This resulted in 6273 peptides that overlap such polymorphisms, which were discarded from further analyses (Supplementary file 3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The Materials and methods section explicitly reports the number of peptides discarded.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:07:18.192825Z"
+    },
+    {
+      "id": "eb159bbd-f9f9-4ab2-b5cd-2e70755d8017",
+      "content_id": "fe856001-4554-4c04-b56a-9d40b129cec8",
+      "claim_id": "C78",
+      "claim": "10 lines with fewer than 67,000 identified peptides were discarded.",
+      "claim_type": "EXPLICIT",
+      "source": "We discarded 10 lines with fewer than 67,000 identified peptides (corresponding to 75% of the median number of peptides identified; Figure 1\u2014figure supplement 1), resulting in a proteomics dataset consisting of 207 lines, 202 of which had matched RNA-Seq data and hence were considered for further analysis.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The Materials and methods section explicitly reports the number of lines discarded.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:07:18.192825Z"
+    },
+    {
+      "id": "ee39c00f-dab6-40b3-aa6e-f898a6246475",
+      "content_id": "fe856001-4554-4c04-b56a-9d40b129cec8",
+      "claim_id": "C79",
+      "claim": "7 PEER factors were fit for protein and 13 PEER factors for RNA.",
+      "claim_type": "EXPLICIT",
+      "source": "We fit 7 PEER factors for protein and 13 PEER factors for RNA, settings that were determined as the largest number of PEER factors that retain statistical independence of the inferred factors (R < 0.7; Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The Materials and methods section explicitly reports the number of PEER factors used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:07:18.192825Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "aec74d95-543a-4930-b8f9-ab76b8e54444",
+      "content_id": "fe856001-4554-4c04-b56a-9d40b129cec8",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The study analyzed 202 iPSC lines from 151 donors with integrated proteomics, transcriptomics, and genomics data. The proteomic analysis identified 255,015 distinct peptides corresponding to 16,773 protein groups, with 11,140 recurrently detected proteins (10,198 genes) and 9,013 genes detected at both RNA and protein levels.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C4, C5, and C6 provide consistent and explicit quantitative data about the study design and proteomic coverage. The numbers are internally consistent and represent the foundational dataset for all subsequent analyses. The methodology is clearly described with appropriate quality control measures.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:07:18.192825Z"
+    },
+    {
+      "id": "75650279-ef21-445d-ae8a-4b666536694a",
+      "content_id": "fe856001-4554-4c04-b56a-9d40b129cec8",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The iPSC proteome showed greatest similarity to fetal and reproductive organs, consistent with pluripotency marker expression. No systematic expression differences were observed between healthy and disease-bearing donors in the undifferentiated iPSC state.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7 and C8 are supported by explicit comparisons to the Human Proteome Map and differential expression analysis. The lack of disease-specific signatures in undifferentiated iPSCs is consistent with the expectation that disease phenotypes typically manifest upon differentiation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:07:18.192825Z"
+    },
+    {
+      "id": "b1fc6701-f956-481f-91ac-1a36de947ba6",
+      "content_id": "fe856001-4554-4c04-b56a-9d40b129cec8",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Variance component analysis revealed that donor genome is the primary factor explaining protein expression variation, followed by culture medium. Significant donor effects persisted after accounting for RNA variability, indicating that both genetic differences and post-transcriptional mechanisms contribute to proteome variation. Overall variance explained was lower for protein compared to RNA levels.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9-C13 present a coherent analysis of variance components using appropriate linear mixed models. The finding that donor effects remain significant after RNA adjustment (C11) provides strong evidence for post-transcriptional regulation (C13). The lower variance explained at protein level (C9) is appropriately attributed to technical and biological factors.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:07:18.192825Z"
+    },
+    {
+      "id": "f5e49a3a-7e0f-4ef8-8294-043daf79e02e",
+      "content_id": "fe856001-4554-4c04-b56a-9d40b129cec8",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "X chromosome inactivation (XCI) status significantly impacts protein expression in female iPSC lines. 88 proteins showed strong gender-related effects (>20% variance), enriched for X-chromosome encoded proteins (OR=24.8, p=3\u00d710\u207b\u00b3\u00b2). 1,374 genes showed XCI-correlated changes in protein or RNA levels, with XCI preferentially impacting catabolic processes and mitochondria at the protein level but not at RNA level.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C14-C17 provide comprehensive analysis of XCI effects with strong statistical support. The enrichment of X-chromosome proteins (C15) validates the biological relevance. The protein-specific effects on mitochondrial/catabolic processes (C17) represent a novel finding that would not be detected by RNA analysis alone. The large sample size (110 female lines) provides adequate power.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:07:18.192825Z"
+    },
+    {
+      "id": "924fd076-381f-478a-8129-7837303126ae",
+      "content_id": "fe856001-4554-4c04-b56a-9d40b129cec8",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Cis QTL mapping identified 654 genes with protein QTLs (pQTLs) and 3,487 genes with expression QTLs (eQTLs) at FDR<10%. Among these, 273 genes had shared pQTL/eQTL with correlated variants, while 82 genes showed independent pQTL and eQTL signals. Genes with substantial donor variance components (>20%) were enriched 4.2-fold for significant pQTLs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C18-C22 present the core QTL mapping results with appropriate statistical thresholds and clear definitions of replication criteria. The substantially lower number of pQTLs versus eQTLs is consistent with technical and biological factors. The enrichment of pQTLs in high-donor-variance genes (C22) provides internal validation of the variance component analysis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:07:18.192825Z"
+    },
+    {
+      "id": "70fc35cd-a773-49ce-9dc1-289babbe3cd3",
+      "content_id": "fe856001-4554-4c04-b56a-9d40b129cec8",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Cross-layer QTL replication analysis showed that 72% of pQTLs (473/654) had replicated eQTL effects, while only 26% of eQTLs (893/3,487) showed replicated protein effects. eQTL effect size was identified as a strong predictor of protein replication, with larger RNA effects associated with increased protein-level replication rates.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C23-C25 provide clear asymmetry in QTL replication between layers, which is biologically plausible given post-transcriptional regulation and technical factors. The random forest analysis (C25) appropriately identifies predictive features. However, the nominal significance threshold (p<0.01) for replication is relatively permissive and may include false positives.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:07:18.192825Z"
+    },
+    {
+      "id": "ea154310-27a1-4398-ba90-4734c0941ab8",
+      "content_id": "fe856001-4554-4c04-b56a-9d40b129cec8",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "136 pQTLs tag known GWAS variants (r\u00b2>0.8), with 49 showing statistical co-localization evidence. Examples include rs7872034 (SMC2, ovarian cancer), rs11752813 (PEX6, Alzheimer's disease), and rs11601507 (TRIM5, coronary artery disease). Notably, 33 GWAS-linked pQTLs showed no replicated RNA effects, suggesting protein-specific regulatory mechanisms.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26-C31 demonstrate disease relevance of pQTLs with appropriate statistical methods (LD tagging and eCAVIAR co-localization). The protein-specific GWAS associations (C30-C31) are particularly important as they would be missed by eQTL studies alone. However, co-localization analysis is limited to 51 studies with available summary statistics, potentially missing additional associations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:07:18.192825Z"
+    },
+    {
+      "id": "36633516-c771-4d14-95fa-52476115bf04",
+      "content_id": "fe856001-4554-4c04-b56a-9d40b129cec8",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Transcript isoform and peptide-level QTL mapping identified 3,810 genes with transcript QTLs (tQTLs) and 566 genes with peptide QTLs (pepQTLs). Isoform-level analysis explained some eQTL/pQTL discordance: 48 eQTLs without pQTL replication affected only non-coding isoforms, while 61 of 181 pQTLs without eQTL replication had significant tQTLs, including 12 cases with opposite directional effects on coding versus non-coding isoforms.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C36 demonstrate the value of isoform-resolution analysis for understanding QTL mechanisms. The identification of opposite-directional isoform effects (C36) elegantly explains apparent eQTL/pQTL discordance. However, the relatively small numbers (48, 61, 12) suggest this explains only a minority of discordant cases, and the nominal significance threshold (p<0.01) may include false positives.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:07:18.192825Z"
+    },
+    {
+      "id": "1bf83dc1-4ac6-4b21-a5c5-e8a26f74fcca",
+      "content_id": "fe856001-4554-4c04-b56a-9d40b129cec8",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Among 120 pQTLs without RNA-level replication, 24 were inframe variants showing 3.8-fold enrichment (p=4\u00d710\u207b\u2075) compared to RNA-replicated pQTLs. Ten of these 24 variants had predicted deleterious effects (SIFT<0.05), representing 27.5-fold enrichment (p=3.8\u00d710\u207b\u2078). For 11 of these 24 pQTLs, no eQTL evidence was found in any of 48 GTEx tissues.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-C41 provide strong evidence for protein-altering variants affecting abundance through RNA-independent mechanisms. The enrichment statistics are highly significant and the lack of GTEx eQTL evidence (C39) strengthens the case for protein-specific effects. However, SIFT predictions are computational and would benefit from experimental validation of functional impacts.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:07:18.192825Z"
+    },
+    {
+      "id": "e8c2a4a3-d4a7-41ed-955a-e45a8dcbec6f",
+      "content_id": "fe856001-4554-4c04-b56a-9d40b129cec8",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The missense variant rs1051061 in VRK2 lies in a conserved kinase domain sequence proximal to the proton acceptor residue, likely impacting kinase activity. This variant is a GWAS risk variant for schizophrenia (OR=1.17), with the risk allele associated with decreased VRK2 protein abundance.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C44 provide a compelling example linking a protein-altering variant to disease risk through protein abundance changes. The structural context (kinase domain, proton acceptor proximity) supports functional impact. However, the claim that the variant \"likely impacts kinase activity\" (C42) is inferential and would require experimental validation of enzymatic activity.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:07:18.192825Z"
+    },
+    {
+      "id": "44f26c46-99cb-4559-82b0-b91fec7e5c92",
+      "content_id": "fe856001-4554-4c04-b56a-9d40b129cec8",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Trans pQTL mapping identified 51 cis-pQTL variants with trans effects on 68 proteins (FDR<10%). Cis-trans protein pairs showed 9.1-fold enrichment for known protein-protein interactions (p=1.5\u00d710\u207b\u00b9\u2070). Cis and trans effects had similar effect directions and sizes, consistent with genetic effects mediated through stabilizing protein-protein interactions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C47 demonstrate trans genetic effects propagated through protein complexes. The strong enrichment for known interactions (C46) and concordant effect directions (C47) support the proposed mechanism. Quality control measures to exclude sequence similarity artifacts strengthen confidence. However, the relatively small number of trans effects may reflect limited statistical power.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:07:18.192825Z"
+    },
+    {
+      "id": "1fa92967-bd29-4889-ab2b-3ff03f897db1",
+      "content_id": "fe856001-4554-4c04-b56a-9d40b129cec8",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The variant rs1129187, an Alzheimer's disease risk variant in APOE e4+ carriers, is associated in cis with increased PEX6 RNA and protein abundance and induces trans effects on PEX26 and PEX1, suggesting PEX6 acts as a rate-limiting subunit of the peroxisomal PEX26-PEX6-PEX1 complex. Prior evidence links peroxisomal function to Alzheimer's disease and neurodegeneration.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48-C52 provide a mechanistic hypothesis linking a disease risk variant to protein complex stoichiometry. The cis and trans effects are well-documented (C48, C50), and the rate-limiting subunit interpretation (C51) is consistent with the data. The supporting citations for peroxisomal involvement in neurodegeneration (C52) strengthen biological plausibility. However, this remains a hypothesis requiring functional validation in disease-relevant cell types.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:07:18.192825Z"
+    },
+    {
+      "id": "1012a5d2-dc7a-468b-97d3-061538c360ab",
+      "content_id": "fe856001-4554-4c04-b56a-9d40b129cec8",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "This study provides the most detailed population-level analysis of parallel RNA/protein profiles in human cells, mapping more than 600 cis protein quantitative trait loci (pQTLs) and analyzing their relationships to eQTLs, trans effects, and disease variants.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C53 asserts this is \"the most detailed\" population-level RNA/protein analysis but provides no systematic comparison to other studies to support this claim. While the scale (202 lines, 654 pQTLs) is substantial, the claim of being \"most detailed\" is subjective without defined metrics. Claim C54 accurately summarizes the scope but doesn't validate the superlative claim.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:07:18.192825Z"
+    },
+    {
+      "id": "cd987d10-5db4-4847-836e-daa3235e6044",
+      "content_id": "fe856001-4554-4c04-b56a-9d40b129cec8",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Variance component analysis explained lower overall variance in protein data compared to RNA, likely reflecting technical effects and/or stochastic protein expression. Among explainable variance, donor-specific genetic factors are the major contributor to protein expression differences, indicating that protein variation across iPSCs reflects genetic diversity in the human population.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55-C57 appropriately interpret the variance component results. The lower explained variance at protein level (C55) is reasonably attributed to technical and biological factors. The conclusion that protein variation reflects population genetic diversity (C57) logically follows from the strong donor genetic component (C56), though this is somewhat circular reasoning.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:07:18.192825Z"
+    },
+    {
+      "id": "71c5f06c-e99a-47ef-b3bf-bb4b42b7c68b",
+      "content_id": "fe856001-4554-4c04-b56a-9d40b129cec8",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "There were substantially fewer pQTLs than eQTLs globally. While most pQTLs had concordant eQTL effects, only 30% of eQTLs were nominally significant at the protein level. This suggests many eQTLs reflect RNA abundance variation that does not cause significant changes in steady-state protein levels.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-C60 accurately summarize the asymmetry in QTL detection between layers. The interpretation (C60) is reasonable but somewhat speculative\u2014alternative explanations include technical limitations of protein measurement, post-transcriptional buffering, or differences in statistical power. The 30% figure (C59) uses nominal significance which is a permissive threshold.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:07:18.192825Z"
+    },
+    {
+      "id": "e2efcc0c-079a-4af8-9311-4d6e4a2c72db",
+      "content_id": "fe856001-4554-4c04-b56a-9d40b129cec8",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Isoform-resolution protein and RNA phenotypes are indispensable for fully understanding genetic effects on proteins. pQTLs without corresponding transcript changes are enriched in deleterious missense variants, suggesting phenotypic effects of such variants may be exerted through protein abundance changes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C61-C63 present important conclusions about the necessity of multi-level analysis. The enrichment of deleterious variants in RNA-independent pQTLs (C62) is well-supported statistically. However, the claim that isoform resolution is \"indispensable\" (C61) is strong\u2014while valuable, it explained only a subset of discordant cases. The mechanistic interpretation (C63) is reasonable but inferential.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:07:18.192825Z"
+    },
+    {
+      "id": "e9982c74-469d-4e59-bf85-99293c9e15c1",
+      "content_id": "fe856001-4554-4c04-b56a-9d40b129cec8",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "This study presents the first comprehensive pQTL map at peptide resolution, analyzing 119,747 peptides from 8,543 proteins and identifying 566 peptide QTLs, several of which were not detectable at whole protein expression levels.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C64-C65 accurately describe the peptide-level analysis scope. The claim of being \"first comprehensive\" peptide-resolution pQTL map is plausible given the scale, though no systematic comparison to prior work is provided. The identification of pepQTLs not detectable at protein level demonstrates added value, though specific examples would strengthen the claim.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:07:18.192825Z"
+    },
+    {
+      "id": "f6aea9b2-78f9-4902-ac83-3c22dfc41bc0",
+      "content_id": "fe856001-4554-4c04-b56a-9d40b129cec8",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Protein-protein interactions can propagate genetic effects in human populations through rate-limiting subunits. This study provides the first example that trans genetic effects mediated by protein interactions act through common genetic variants in untransformed human cells, extending previous observations in outbred mice and cancer cell lines.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C66-C68 present an important conceptual advance. The rate-limiting subunit hypothesis (C67) is well-established, and the data support its operation in human iPSCs. The claim of being \"first\" in untransformed human cells (C68) is appropriately qualified with citations to prior work in other systems. However, the number of trans effects is relatively small, limiting generalizability.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:07:18.192825Z"
+    },
+    {
+      "id": "ff3ab866-e3e0-499f-8cbf-71840ad98540",
+      "content_id": "fe856001-4554-4c04-b56a-9d40b129cec8",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "Direct analysis of human iPSCs can advance understanding of genetic regulation of protein expression and its influence on cell phenotypes and disease mechanisms.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C69 is a reasonable concluding statement supported by the collective findings, particularly the disease-linked pQTLs and trans effects. However, this is a general statement about potential rather than a specific result. The study demonstrates proof-of-concept but actual impact on disease understanding requires follow-up functional studies.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:07:18.192825Z"
+    },
+    {
+      "id": "a86c15db-8584-412e-80c0-08ecdd1b9ed4",
+      "content_id": "fe856001-4554-4c04-b56a-9d40b129cec8",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "iPSC lines were generated from consented volunteers from NIHR Cambridge BioResource using Sendai vector transduction. Quantitative proteomics used TMT-ten plex in 24 batches of 10 lines each, with one common reference line (HPSI0314i-bubh_3) shared across all batches.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C70-C76 accurately describe the experimental design and methodology. The use of a common reference across batches (C73, C76) is appropriate for batch correction. The TMT-ten plex approach (C74-C75) is standard for multiplexed proteomics. These methodological details are clearly documented and support reproducibility.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:07:18.192825Z"
+    },
+    {
+      "id": "365aa6ee-69b1-4e8d-830f-1511605a57a2",
+      "content_id": "fe856001-4554-4c04-b56a-9d40b129cec8",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "Quality control measures included discarding 6,273 peptides overlapping polymorphisms and 10 lines with fewer than 67,000 peptides. For QTL analysis, 7 PEER factors were used for protein data and 13 for RNA data, determined as the maximum number maintaining statistical independence (R<0.7).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C77-C79 describe appropriate quality control and normalization procedures. Removing peptides overlapping polymorphisms (C77) prevents synthetic associations. The PEER factor selection criterion (C79) is reasonable for controlling confounding while preserving power. The 75% median threshold for line exclusion (C78) is somewhat arbitrary but defensible.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:07:18.192825Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "8e12ab05-9829-4b06-80ac-3a0f817e6500",
+      "result_id": "aec74d95-543a-4930-b8f9-ab76b8e54444"
+    },
+    {
+      "claim_id": "fb338b33-44ed-47a7-b225-c3ebea6ea53e",
+      "result_id": "aec74d95-543a-4930-b8f9-ab76b8e54444"
+    },
+    {
+      "claim_id": "0af2979a-c4ec-4eae-bc3e-9015e7faa377",
+      "result_id": "aec74d95-543a-4930-b8f9-ab76b8e54444"
+    },
+    {
+      "claim_id": "e194510b-65dd-4647-9da6-d182ea6446ac",
+      "result_id": "aec74d95-543a-4930-b8f9-ab76b8e54444"
+    },
+    {
+      "claim_id": "ddd0aee8-ef16-492c-a4c1-3ec6f4ec2059",
+      "result_id": "75650279-ef21-445d-ae8a-4b666536694a"
+    },
+    {
+      "claim_id": "ce2a03b9-c0e0-41b2-85fb-30924f28a05b",
+      "result_id": "75650279-ef21-445d-ae8a-4b666536694a"
+    },
+    {
+      "claim_id": "ff0c27f8-693a-4ea3-a06f-7b5a6550925b",
+      "result_id": "b1fc6701-f956-481f-91ac-1a36de947ba6"
+    },
+    {
+      "claim_id": "2ed6471a-4cbe-4ce8-9180-0bccb21044c0",
+      "result_id": "b1fc6701-f956-481f-91ac-1a36de947ba6"
+    },
+    {
+      "claim_id": "db7c31b6-1782-4570-b2d4-05b48bff9fc9",
+      "result_id": "b1fc6701-f956-481f-91ac-1a36de947ba6"
+    },
+    {
+      "claim_id": "5d7745ca-42b8-453c-8377-c0dd8613fd97",
+      "result_id": "b1fc6701-f956-481f-91ac-1a36de947ba6"
+    },
+    {
+      "claim_id": "c7b6f7fd-8abd-4fe7-885e-f5d01c4feeb3",
+      "result_id": "b1fc6701-f956-481f-91ac-1a36de947ba6"
+    },
+    {
+      "claim_id": "258cc1c6-3d78-4da9-b4b2-f676ce3fa9c9",
+      "result_id": "f5e49a3a-7e0f-4ef8-8294-043daf79e02e"
+    },
+    {
+      "claim_id": "5b8b8270-c12d-4d56-ad3f-f13fe4f116ec",
+      "result_id": "f5e49a3a-7e0f-4ef8-8294-043daf79e02e"
+    },
+    {
+      "claim_id": "cfa60837-e191-4a55-9ca4-62e8935d920d",
+      "result_id": "f5e49a3a-7e0f-4ef8-8294-043daf79e02e"
+    },
+    {
+      "claim_id": "29e41f9e-dc1c-4cfd-8ccc-5d19276e47bb",
+      "result_id": "f5e49a3a-7e0f-4ef8-8294-043daf79e02e"
+    },
+    {
+      "claim_id": "99263279-b731-4f14-abdc-dd0e77eef079",
+      "result_id": "924fd076-381f-478a-8129-7837303126ae"
+    },
+    {
+      "claim_id": "0552faf5-90c5-4a4c-913a-071965443902",
+      "result_id": "924fd076-381f-478a-8129-7837303126ae"
+    },
+    {
+      "claim_id": "91c57f81-5fcc-44b8-84b1-829c5b97a875",
+      "result_id": "924fd076-381f-478a-8129-7837303126ae"
+    },
+    {
+      "claim_id": "df6959d2-3572-407d-a7c6-079707296a65",
+      "result_id": "924fd076-381f-478a-8129-7837303126ae"
+    },
+    {
+      "claim_id": "1177c933-88ba-4eae-af8f-a5a0edca3ebc",
+      "result_id": "924fd076-381f-478a-8129-7837303126ae"
+    },
+    {
+      "claim_id": "f251a49e-a3a7-4f3d-ab75-60208ac1727b",
+      "result_id": "70fc35cd-a773-49ce-9dc1-289babbe3cd3"
+    },
+    {
+      "claim_id": "77155cdf-2b83-453b-84fb-3cb2d7a1a06c",
+      "result_id": "70fc35cd-a773-49ce-9dc1-289babbe3cd3"
+    },
+    {
+      "claim_id": "d305ca86-a881-43e7-a0fb-37073975c31c",
+      "result_id": "70fc35cd-a773-49ce-9dc1-289babbe3cd3"
+    },
+    {
+      "claim_id": "a6dc9704-084d-4778-90a4-02e0870b5f5a",
+      "result_id": "ea154310-27a1-4398-ba90-4734c0941ab8"
+    },
+    {
+      "claim_id": "99bfc1f8-bf0a-4181-bd51-85677ad8e2b5",
+      "result_id": "ea154310-27a1-4398-ba90-4734c0941ab8"
+    },
+    {
+      "claim_id": "eb5ee524-de32-481d-9d94-50b69a857e02",
+      "result_id": "ea154310-27a1-4398-ba90-4734c0941ab8"
+    },
+    {
+      "claim_id": "fd0f7273-d845-4bc1-bcdd-ba04d197eccc",
+      "result_id": "ea154310-27a1-4398-ba90-4734c0941ab8"
+    },
+    {
+      "claim_id": "b9f4e70a-eb84-4885-a944-b2bd4175c354",
+      "result_id": "ea154310-27a1-4398-ba90-4734c0941ab8"
+    },
+    {
+      "claim_id": "9ab13b7d-be75-4d35-8f97-d6fb0d691a1b",
+      "result_id": "ea154310-27a1-4398-ba90-4734c0941ab8"
+    },
+    {
+      "claim_id": "720975f0-c8d1-4f44-9a8d-0aa9a9c49c2d",
+      "result_id": "36633516-c771-4d14-95fa-52476115bf04"
+    },
+    {
+      "claim_id": "0d99bd96-93f6-49f4-9941-23e9fc009394",
+      "result_id": "36633516-c771-4d14-95fa-52476115bf04"
+    },
+    {
+      "claim_id": "9ddf5374-8ae4-4576-bb4d-27c3bb2f72af",
+      "result_id": "36633516-c771-4d14-95fa-52476115bf04"
+    },
+    {
+      "claim_id": "5b76343e-3242-4a5c-a845-9be7253e8bf8",
+      "result_id": "36633516-c771-4d14-95fa-52476115bf04"
+    },
+    {
+      "claim_id": "22c63c31-2c24-4dc8-89ca-42a195e55194",
+      "result_id": "36633516-c771-4d14-95fa-52476115bf04"
+    },
+    {
+      "claim_id": "c82b1f3e-039d-4908-8e73-45a39b7975db",
+      "result_id": "1bf83dc1-4ac6-4b21-a5c5-e8a26f74fcca"
+    },
+    {
+      "claim_id": "dad6ad04-46fc-476b-92d9-83a6efa33408",
+      "result_id": "1bf83dc1-4ac6-4b21-a5c5-e8a26f74fcca"
+    },
+    {
+      "claim_id": "e23888fe-14bf-43b2-ae9b-8e1428f0230b",
+      "result_id": "1bf83dc1-4ac6-4b21-a5c5-e8a26f74fcca"
+    },
+    {
+      "claim_id": "5d3593cf-0ee1-4e19-8b4e-3e7b234b2084",
+      "result_id": "1bf83dc1-4ac6-4b21-a5c5-e8a26f74fcca"
+    },
+    {
+      "claim_id": "d2eeb4c6-186a-4d0f-a03b-c5feea685ad3",
+      "result_id": "1bf83dc1-4ac6-4b21-a5c5-e8a26f74fcca"
+    },
+    {
+      "claim_id": "b7bc0aa8-2d50-492c-99ba-fa43ef8adc5f",
+      "result_id": "e8c2a4a3-d4a7-41ed-955a-e45a8dcbec6f"
+    },
+    {
+      "claim_id": "ef874d61-b183-49ab-bce5-46d67c19feb5",
+      "result_id": "e8c2a4a3-d4a7-41ed-955a-e45a8dcbec6f"
+    },
+    {
+      "claim_id": "87150f56-feaf-4e5b-9c47-9d5b89e001bd",
+      "result_id": "e8c2a4a3-d4a7-41ed-955a-e45a8dcbec6f"
+    },
+    {
+      "claim_id": "b2df9a7c-32d0-4df3-9d92-3d18080aad6b",
+      "result_id": "44f26c46-99cb-4559-82b0-b91fec7e5c92"
+    },
+    {
+      "claim_id": "ecd02d4e-4118-4d02-aa65-7ea4674ec157",
+      "result_id": "44f26c46-99cb-4559-82b0-b91fec7e5c92"
+    },
+    {
+      "claim_id": "e214179d-24a9-41de-8944-a0561057de88",
+      "result_id": "44f26c46-99cb-4559-82b0-b91fec7e5c92"
+    },
+    {
+      "claim_id": "aa602d1c-6aef-4d26-bd40-202187c2cd96",
+      "result_id": "1fa92967-bd29-4889-ab2b-3ff03f897db1"
+    },
+    {
+      "claim_id": "33317f0e-8f5e-4835-9f48-1fc7ee11f309",
+      "result_id": "1fa92967-bd29-4889-ab2b-3ff03f897db1"
+    },
+    {
+      "claim_id": "eab61a5c-a108-4c6a-bbea-7b06a3b53d53",
+      "result_id": "1fa92967-bd29-4889-ab2b-3ff03f897db1"
+    },
+    {
+      "claim_id": "f5f5958f-1e64-4e04-b524-99389c04bfe1",
+      "result_id": "1fa92967-bd29-4889-ab2b-3ff03f897db1"
+    },
+    {
+      "claim_id": "1794f9b2-24a1-4064-a018-1f17cd849282",
+      "result_id": "1fa92967-bd29-4889-ab2b-3ff03f897db1"
+    },
+    {
+      "claim_id": "e3a5874e-4436-4120-aecb-35409c5bd81c",
+      "result_id": "1012a5d2-dc7a-468b-97d3-061538c360ab"
+    },
+    {
+      "claim_id": "b26edac1-b976-4bac-ac8b-50bbc28a850f",
+      "result_id": "1012a5d2-dc7a-468b-97d3-061538c360ab"
+    },
+    {
+      "claim_id": "4c8f727a-ab4e-4c4b-9005-f2d4c67c9e42",
+      "result_id": "cd987d10-5db4-4847-836e-daa3235e6044"
+    },
+    {
+      "claim_id": "0fb6539a-0e68-4505-8f1e-0670830214ad",
+      "result_id": "cd987d10-5db4-4847-836e-daa3235e6044"
+    },
+    {
+      "claim_id": "cade53d2-c915-46ce-8c99-7fa52c124387",
+      "result_id": "cd987d10-5db4-4847-836e-daa3235e6044"
+    },
+    {
+      "claim_id": "bbd0940d-eb97-4137-a49f-9e4eba897662",
+      "result_id": "71c5f06c-e99a-47ef-b3bf-bb4b42b7c68b"
+    },
+    {
+      "claim_id": "4d1f9921-6e6f-4879-883a-c3e15ca2a8f4",
+      "result_id": "71c5f06c-e99a-47ef-b3bf-bb4b42b7c68b"
+    },
+    {
+      "claim_id": "dfa733e2-4a95-4481-8f2e-6b4a06756d4a",
+      "result_id": "71c5f06c-e99a-47ef-b3bf-bb4b42b7c68b"
+    },
+    {
+      "claim_id": "7c9a20da-ecc9-41c1-9606-45295b7b7882",
+      "result_id": "e2efcc0c-079a-4af8-9311-4d6e4a2c72db"
+    },
+    {
+      "claim_id": "d84d6194-a5b7-402c-b9e5-c0403d03d447",
+      "result_id": "e2efcc0c-079a-4af8-9311-4d6e4a2c72db"
+    },
+    {
+      "claim_id": "4499d598-c998-4816-8c59-b293babd2393",
+      "result_id": "e2efcc0c-079a-4af8-9311-4d6e4a2c72db"
+    },
+    {
+      "claim_id": "d227bc71-fca4-4e36-8dd9-47d3f8e60deb",
+      "result_id": "e9982c74-469d-4e59-bf85-99293c9e15c1"
+    },
+    {
+      "claim_id": "2cd1c1bf-0324-4a1f-8e27-8a0e75920a50",
+      "result_id": "e9982c74-469d-4e59-bf85-99293c9e15c1"
+    },
+    {
+      "claim_id": "8ff445ab-f1a3-4415-b590-2e7e35d03a21",
+      "result_id": "f6aea9b2-78f9-4902-ac83-3c22dfc41bc0"
+    },
+    {
+      "claim_id": "953453f6-3cd4-4db3-b6fc-c57685ea16cc",
+      "result_id": "f6aea9b2-78f9-4902-ac83-3c22dfc41bc0"
+    },
+    {
+      "claim_id": "8d315669-e32f-4a73-82e0-0af659cb2440",
+      "result_id": "f6aea9b2-78f9-4902-ac83-3c22dfc41bc0"
+    },
+    {
+      "claim_id": "fc1cee90-2d78-46ad-960f-4f2050996def",
+      "result_id": "ff3ab866-e3e0-499f-8cbf-71840ad98540"
+    },
+    {
+      "claim_id": "2699d98f-f50e-4c3f-896c-b517c8c81494",
+      "result_id": "a86c15db-8584-412e-80c0-08ecdd1b9ed4"
+    },
+    {
+      "claim_id": "c3a0b28a-fb27-4b86-b0cc-d047baff13e8",
+      "result_id": "a86c15db-8584-412e-80c0-08ecdd1b9ed4"
+    },
+    {
+      "claim_id": "c0475ef6-26be-4993-b301-d1e35d7e1809",
+      "result_id": "a86c15db-8584-412e-80c0-08ecdd1b9ed4"
+    },
+    {
+      "claim_id": "e8184201-717b-4815-9743-c6737bad0267",
+      "result_id": "a86c15db-8584-412e-80c0-08ecdd1b9ed4"
+    },
+    {
+      "claim_id": "9f70e658-6172-48dc-8a29-b35f52b2b2a4",
+      "result_id": "a86c15db-8584-412e-80c0-08ecdd1b9ed4"
+    },
+    {
+      "claim_id": "031f8257-d8b1-4f5f-8910-f58e9e357d20",
+      "result_id": "a86c15db-8584-412e-80c0-08ecdd1b9ed4"
+    },
+    {
+      "claim_id": "76d0c1db-1de3-4032-917f-dde0cd7294de",
+      "result_id": "a86c15db-8584-412e-80c0-08ecdd1b9ed4"
+    },
+    {
+      "claim_id": "c7f9d1b3-037e-42c7-b9cc-611ad2a6a04d",
+      "result_id": "365aa6ee-69b1-4e8d-830f-1511605a57a2"
+    },
+    {
+      "claim_id": "eb159bbd-f9f9-4ab2-b5cd-2e70755d8017",
+      "result_id": "365aa6ee-69b1-4e8d-830f-1511605a57a2"
+    },
+    {
+      "claim_id": "ee39c00f-dab6-40b3-aa6e-f898a6246475",
+      "result_id": "365aa6ee-69b1-4e8d-830f-1511605a57a2"
+    }
+  ],
+  "comparisons": []
+}

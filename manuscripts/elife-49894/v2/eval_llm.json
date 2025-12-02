@@ -1,0 +1,354 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "The authors generated 170 stable cell lines expressing V5-tagged HCMV proteins (169 canonical, 2 non-canonical), infected them with HCMV at MOI 2 for 60 hr, performed IP-MS using detergent-specific lysis buffers, and applied CompPASS filtering. This identified 3572 interactions across 162 viral baits with a median of 9 interactions per bait, comparable to human interactome studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C43 describe a comprehensive experimental workflow with appropriate controls, validation steps, and statistical filtering (CompPASS algorithm with estimated 5% FDR). The methodology is well-documented with technical replicates, multiple validation methods (IB, MS, RT-qPCR), and comparison to established interactome studies. The scale and reproducibility metrics support the robustness of the approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C6"
+    ],
+    "result": "The interactome analysis identified >3400 virus-host and >150 virus-virus protein interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C6 are directly supported by the experimental data from C40-C42, which report 3572 total interactions. The numbers are consistent across multiple claims and represent the primary output of the interactome study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "The interactome revealed that HCMV proteins interact with chromatin remodeling complexes, particularly the NuRD complex and CCR4-NOT complex. UL29 and UL38 interact with all NuRD components, and UL72 interacts with all 10 CCR4-NOT components, with interactions validated by co-IP.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C48 and C59-C61 are supported by pathway enrichment analysis (Figure 2) and experimental validation via co-IP (Figure 3A-B). The findings confirm known interactions (C46-C47) and identify novel ones (C48, C59), demonstrating both validation of the method and discovery of new biology.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "The interactome confirmed that UL87 interacts with UL79, UL91, and UL95 (but not UL92), and revealed novel interactions between UL87 and all 12 RNA polymerase II complex components plus RPAP2, as well as interactions with UL97 kinase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C57 are supported by interactome data (Figure 2) and provide mechanistic insights into viral transcription. The absence of UL92 interaction (C53) is explained by low protein abundance (C54), demonstrating appropriate consideration of technical limitations. The UL87-RPII interaction was anticipated by analogy to EBV (C56) but not previously demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Multiple HCMV proteins interact with ubiquitin conjugation pathway components. UL145 and RL1 interact with Cullin 4 E3 ligase components, UL36 binds Cullin 1 scaffold and other E3 ligases, and UL102 interacts with E3 ligase RNF114 and E2 enzyme UBE2L6.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C68 are supported by interactome data (Figure 2) and co-IP validation (Figure 3C for RL1-CUL4A). The findings build on prior knowledge (C62) and reveal a broader pattern of viral manipulation of ubiquitin pathways, which is further elaborated in C122.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "UL71, a tegument protein with known late-stage functions, is expressed with Tp3 kinetics and interacts with multiple interferon-stimulated proteins including TRIM22, validated by co-IP, suggesting an earlier innate immune role.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C73 are supported by interactome data (Figure 3D) and co-IP validation (Figure 3E). The temporal expression pattern (C70) combined with interferon-stimulated protein interactions suggests a dual function, though the precise mechanism requires further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "Viral GPCRs show unexpected interaction patterns: US28 interacts with all quantified thick filament/muscle myosin complex members, US27 interacts with SNARE complex components, and UL132 interacts with the AP-2 adaptor complex, suggesting roles in cytoskeletal regulation and vesicular transport.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C79 are supported by interactome data (Figure 2\u2014figure supplement 1). While the interactions are well-documented, the functional interpretations (C76) are speculative and require experimental validation. The findings suggest novel functions for these viral proteins beyond their known roles.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C7",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Domain association analysis predicted and validated that UL25 interacts with NCK1 SH3 domains. Mutagenesis experiments demonstrated that the UL25 proline-rich C-terminus specifically interacts with the first NCK1 SH3 domain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7 and C83-C91 are supported by domain analysis (Figure 4A), interactome data (Figure 4B), and mutagenesis/co-IP validation (Figure 4C-D). The experimental validation of the predicted domain interaction demonstrates the utility of the domain association approach and provides mechanistic detail about the interaction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C8",
+      "C95",
+      "C97",
+      "C98",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "Integration of interactome data with prior degradation screens identified viral proteins targeting degraded host factors. UL42 was identified as a hub degrading multiple E3 ligases (ITCH, NEDD4, NEDD4L), validated by co-IP. Overall, 18 viral proteins interact with \u22652 E3 ligases, and 51 interact with \u22651 E3 ligase, revealing extensive viral manipulation of ubiquitin pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8 and C95-C127 integrate current interactome data with prior degradation studies (C120). The UL42-NEDD4/NEDD4L interactions are validated by co-IP (C97, Figure 5D-E) and functional degradation assays (C98). The broader pattern (C122) is supported by systematic analysis. However, the precise degradation mechanisms and substrates for many interactions remain to be determined.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C128",
+      "C129",
+      "C130",
+      "C131"
+    ],
+    "result": "UL20 interacts with IL6ST, FCGRT, EPHA2, and IFNGR1, all of which are rescued from degradation by leupeptin and by deletion of US12-US21 genes, suggesting cooperativity between UL20 and US12-US21 proteins in targeting these receptors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C128-C131 integrate interactome data with prior degradation studies (C129-C130 cite Fielding et al., 2017). The convergent evidence from multiple approaches supports the interactions, though the mechanistic details of cooperativity (C131) remain speculative and require further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "US10 interacts with LRFN3, a weakly-expressed plasma membrane protein that is rapidly downregulated during infection, validated by co-IP. US10 may downregulate LRFN3 similarly to its reported degradation of HLA-G.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C100 are supported by interactome data (Figure 5G) and co-IP validation (Figure 5H), demonstrating the sensitivity of the method for detecting interactions with low-abundance proteins. However, the proposed mechanism (C101) is speculative and requires functional validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "The non-canonical protein ORFL147C is expressed at intermediate abundance with Tp4 kinetics, has 80 human interactors enriched in RNA binding and mRNA splicing functions (including validated interactions with MBNL1 and CELF1), and deletion of ORFL147C significantly impairs viral growth, suggesting functional importance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C115 provide the first evidence for functionality of a non-canonical HCMV ORF. The abundance data (C102-C104), interactome analysis (C105, C110), co-IP validation (C111-C112), and growth defect (C114, Figure 6F-G) collectively support functional importance. However, the precise molecular mechanism remains unclear and requires further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C116",
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "Comparison of HCMV and KSHV interactomes revealed 176 common human prey proteins, including RNA Pol II, CCR4-NOT, CTLH components, and ubiquitin conjugation pathway elements, suggesting conserved herpesvirus functions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C116-C119 are supported by comparative analysis (Figure 7) with a prior KSHV interactome study (C117). The identification of common targets suggests conserved viral strategies, though the analysis is limited by differences in experimental conditions (HEK293T vs HFFF cells) and the relatively small overlap compared to total interactions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Temporal analysis revealed that viral protein interactions are functionally organized by expression kinetics: Tp1/Tp2 proteins interact with chromatin remodeling factors, Tp3 with replication/immune evasion factors, and Tp5 with trafficking/secretion factors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C82 are supported by pathway enrichment analysis stratified by temporal class (Figure 2\u2014figure supplement 2A). The functional organization by temporal class is logical and consistent with the viral life cycle, though the analysis is descriptive and does not establish causality.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140"
+    ],
+    "result": "The interactome has an estimated 5% false discovery rate based on CompPASS filtering. Protein abundance may affect interaction discovery, as 36% of missed known interactions were unquantified in whole cell lysates. Viral protein expression levels were generally higher than host proteins, and prior studies found no correlation between bait expression and interaction number.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C132-C140 provide important context about the limitations and technical considerations of the study. The FDR estimate (C132) is based on prior validation (C37). The analysis of missed interactions (C133-C134) and protein abundance (C138-C139) demonstrates appropriate consideration of technical limitations. The discussion of potential confounders (C135-C136) is appropriately cautious.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146"
+    ],
+    "result": "The interactome identified 3 RP-ORFs, 2/13 previously identified 6FT-ORFs, and 7 additional 6FT-ORFs as interactors of canonical proteins. ORFL147C interacts with RAVER1 (involved in alternative splicing), and HCMV has up to 100 identified splice junctions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C141-C146 document the identification of non-canonical ORF interactions, supporting the potential functionality of these proteins. The connection to splicing (C144-C146) is consistent with the ORFL147C functional analysis (C110-C115), though the broader functional significance of most non-canonical ORFs remains unclear.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "Prior work established that HCMV downregulates >900 host proteins and degrades \u2265133 proteins during early infection, with certain proteins targeted by multiple viral factors. The viral factors targeting most degraded proteins remain unknown.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2 and C24-C26 summarize prior work by the authors (Nightingale et al., 2018; Weekes et al., 2014) that provides context for the current study. These are well-established findings that motivate the interactome analysis to identify viral factors responsible for protein degradation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "Background on HCMV: it persistently infects most of the population, establishes lifelong latency, causes disease in immunocompromised individuals and congenital infections, encodes 170 canonical genes plus non-canonical ORFs, and has five temporal expression classes. Many protein functions remain poorly understood.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C23 provide established background knowledge about HCMV biology, supported by appropriate citations. These claims contextualize the study but do not represent new findings. They accurately represent the current state of knowledge in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151"
+    ],
+    "result": "Therapeutic implications: Small-molecule disruption of virus-host interactions could provide novel therapeutic strategies. Only three drugs are currently available for HCMV, all with significant side effects and resistance issues. Potential targets include CNOT7 deadenylase and viral GPCRs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C15-C16 and C147-C151 discuss potential therapeutic applications. While the current drug limitations (C147-C148) are accurate, the therapeutic potential (C15, C149-C151) is speculative and not directly tested in this study. The interactome provides a foundation for such approaches but does not validate them experimentally.",
+    "result_type": "MINOR"
+  }
+]

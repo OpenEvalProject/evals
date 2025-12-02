@@ -1,0 +1,266 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Studies 1 and 2 demonstrate that partial EMG responses occur on approximately 50% of successful stop trials, with amplitudes ~50% smaller than full keypresses. CancelTime (the time when EMG activity begins to decline after the stop signal) was measured at ~147 ms across both studies, which is approximately 60 ms shorter than the behavioral SSRT (~207 ms). CancelTime was positively correlated with SSRTBeh in both studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C25 provide converging evidence from two independent samples showing consistent patterns of partial EMG responses and their timing. The statistical analyses are appropriate with adequate sample sizes (n=10 and n=32), significant correlations (r=0.71 and r=0.59), and strong Bayes factors. The replication across studies strengthens the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C53",
+      "C54"
+    ],
+    "result": "The ~60 ms difference between CancelTime and SSRTBeh is attributed to a ballistic stage in movement execution. When SSRT was recalculated using EMG responses (SSRTEMG = 157\u00b17 ms) instead of behavioral responses, it was significantly faster than SSRTBeh (207\u00b13 ms) but not significantly different from CancelTime. The EMG profile on partial trials diverged from full response trials ~55 ms after EMG onset.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C31, C53-C54 are well-supported by the data showing SSRTEMG matches CancelTime better than SSRTBeh (C29-C30), with appropriate statistical tests and large effect sizes (d=1.3, BF10>100). The ballistic stage hypothesis is supported by citations to prior work (C27-C28) and the EMG profile analysis (C31). However, the exact duration and mechanism of the ballistic stage remain somewhat inferential.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C49"
+    ],
+    "result": "CancelTime was validated as a measure of stopping latency through correlations with BEESTS model estimates. Mean CancelTime correlated with mean SSRTBEESTS (r=0.54), the variability (SD) of CancelTime correlated with SD of SSRTBEESTS (r=0.42), and trigger failure percentage correlated with mean CancelTime (\u03c1=0.57).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C35, C49 demonstrate convergent validity through multiple correlations with an established computational model (BEESTS). All correlations are statistically significant with moderate to strong effect sizes and strong Bayes factors (BF10>6.9). The consistency across different model parameters (mean, SD, trigger failures) strengthens the interpretation that CancelTime reflects stopping implementation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C51",
+      "C61",
+      "C79"
+    ],
+    "result": "Study 3 using TMS demonstrated that global motor suppression begins at ~140 ms after the stop signal, approximately 20 ms before the mean CancelTime of ~160 ms. MEP amplitudes in a task-irrelevant muscle (ECR) were significantly suppressed at 140 ms and 180 ms after the stop signal. The corticospinal conduction time was measured at 23\u00b10.3 ms, accounting for the delay between cortical suppression and muscle-level effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C39, C51, C61, C79 are well-supported by TMS data with appropriate statistical analyses (n=17, significant t-tests with large effect sizes and BF10>39.8). The timing relationship between global motor suppression (~140 ms) and CancelTime (~160 ms) is consistent with the measured corticospinal conduction time (~23 ms), providing physiological plausibility. The trial-by-trial analysis (C39) further validates the temporal relationship.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C56",
+      "C57"
+    ],
+    "result": "Studies 4 and 5 using EEG demonstrated that right frontal beta burst percentage increased for successful stop trials compared to baseline and correct go trials. Mean BurstTime (~115-129 ms) was significantly shorter than CancelTime (~166-169 ms) in both studies. Across participants, there was a strong positive correlation between BurstTime and CancelTime in both studies individually (Study 4: \u03c1=0.76; Study 5: \u03c1=0.57) and when pooled (\u03c1=0.66).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C48, C56-C57 are supported by converging evidence from two independent EEG studies with appropriate statistical analyses. The replication of the BurstTime-CancelTime correlation across studies strengthens the finding. However, the authors acknowledge limitations including low burst percentage (~15%, C68) and no difference in CancelTime between trials with and without bursts (C69), which somewhat weakens the interpretation of necessity/sufficiency.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C58",
+      "C59",
+      "C60",
+      "C62",
+      "C63",
+      "C55",
+      "C80"
+    ],
+    "result": "The manuscript proposes a temporal cascade model of action-stopping: right frontal beta activity increases at ~120 ms (likely reflecting rIFC/preSMA activation), followed by global motor suppression at ~140 ms (reflecting basal ganglia output via STN and GPi), then muscle-level suppression at ~160 ms (CancelTime), and finally behavioral stopping at ~220 ms (SSRTBeh). This implies neural events mediating stopping must occur before ~140 ms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4, C55, C58-C60, C62-C63, C80 synthesize findings across all five studies into a coherent temporal model. Each timing estimate is supported by direct empirical data from the respective studies. The model is physiologically plausible given known anatomy and conduction times. However, the model involves some inference about neural pathways (C59-C60) based on prior literature rather than direct measurement in this study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C50",
+      "C52"
+    ],
+    "result": "Multiple lines of evidence support the interpretation that partial EMG activity represents an actively suppressed response rather than merely weak Go activation: (1) correlation with SSRTBeh, (2) correlation with BEESTS model estimates, (3) similar initial EMG profile to full responses that diverges ~55 ms after onset, (4) coincidence with TMS-measured global motor suppression, and (5) amplitude increases with SSD.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50, C52 represent interpretive conclusions supported by multiple converging lines of evidence presented throughout the manuscript. The evidence is strong and multifaceted, using different methodologies (EMG, TMS, computational modeling) that all point to the same interpretation. The alternative hypothesis (weak Go activation) is explicitly addressed and ruled out based on the EMG profile analysis and SSD-amplitude relationship.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C77",
+      "C78"
+    ],
+    "result": "CancelTime likely overestimates the brain's true stopping latency because it does not account for corticospinal conduction time (~20-23 ms, though this may underestimate the true mean conduction time) and does not include No EMG trials where stopping occurred before any muscle activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C65, C77-C78 are logical inferences based on the measured corticospinal conduction time and the existence of No EMG trials. The acknowledgment that TMS-evoked MEP onset latency underestimates true conduction time (C64-C65) is appropriately cautious and supported by citations. The inference about No EMG trials (C78) is reasonable but somewhat speculative as these trials were not directly analyzed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C66",
+      "C67"
+    ],
+    "result": "MEPs were also suppressed in Failed Stop trials compared to Correct Go trials, but with a delay relative to Successful Stop trials and CancelTime, suggesting the Stop process is initiated even in Failed Stop trials but implemented later.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C67 are supported by the trial-by-trial TMS analysis shown in Figure 4d. The interpretation that delayed Stop process implementation contributes to stopping failure is reasonable and consistent with race model frameworks. However, the authors appropriately note an alternative explanation (faster Go process completion).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "The burst percentage on Successful Stop trials was relatively low (~15%), and CancelTimes did not differ between trials with and without detected bursts in Study 5. The authors speculate this could be due to poor EEG signal-to-noise or that bursts on Go trials might reflect proactive slowing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C68-C69 report empirical findings that somewhat complicate the interpretation of beta bursts' role in stopping. The low burst percentage and lack of CancelTime difference between burst/no-burst trials (C69) raise questions about necessity/sufficiency. The explanations offered (C70-C71) are speculative and not directly tested. This represents an important limitation that the authors appropriately acknowledge.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "The current study found right frontal beta bursts, whereas Wessel (2020) found dorsomedial frontal bursts. This discrepancy may be due to methodological differences (spatial filter vs. channel space analysis). Both studies observed motor cortex suppression ~20-25 ms after frontal bursts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C75 appropriately contextualize the current findings relative to prior work. The methodological explanation for the discrepancy (C73) is plausible though speculative. The convergence on timing of motor suppression following frontal activity (C75) strengthens confidence in the temporal cascade despite spatial localization differences.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C82",
+      "C83"
+    ],
+    "result": "The authors acknowledge that timings in their model are approximations dependent on various factors (averaging, different experiments, detection algorithms), but note striking convergence with timings reported in other studies for CancelTime, MEP suppression, conduction time, BurstTime, and ballistic stage duration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C83 represent appropriate scientific caution (C82) balanced with confidence based on convergence across studies (C83). The citations to multiple independent studies reporting similar timings (C83) strengthen the generalizability of the findings. This represents good scientific practice in acknowledging limitations while contextualizing findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C84",
+      "C85"
+    ],
+    "result": "The current results are compatible with the interactive race model (Stop process begins late but implementation is quick) and the BEESTS model (trigger process duration ~80-120 ms).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C85 appropriately relate the empirical findings to existing computational models. The compatibility with the interactive race model is supported by the observation of late but rapid stopping implementation. The BEESTS compatibility is supported by the timing of beta bursts (~120 ms) preceding motor suppression. These are reasonable interpretations though not definitive tests of the models.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "The authors predict that CancelTime and beta burst time will be more sensitive than SSRTBeh for discriminating patients from controls and will show stronger correlations with self-reported impulsivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C86-C89 are predictions about future work rather than results from the current studies. While these predictions are reasonable based on the current findings showing CancelTime is less contaminated by peripheral delays, they remain untested hypotheses. No clinical or self-report data are presented in the current manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "The manuscript reviews established knowledge about response inhibition, SSRT, and prior findings suggesting SSRT may overestimate brain stopping latency. Previous studies showed EMG decline at ~150 ms, MEP reduction at ~150 ms, global MEP suppression at ~150 ms linked to subthalamic nucleus, and increased right frontal beta power during stopping.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C14 accurately summarize prior literature with appropriate citations. These provide essential context and motivation for the current studies. The citations appear accurate and relevant. This represents appropriate scholarly contextualization of the research question.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C76",
+      "C81"
+    ],
+    "result": "The authors suggest that maximum CancelTime reflects the last point at which stopping can prevent responses, and that CancelTime narrows the time window for causal manipulation of neural structures involved in stopping.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76, C81 are reasonable inferences based on the ballistic stage hypothesis and the timing data. The interpretation that CancelTime represents a critical temporal boundary is logical given the evidence. The implication for experimental design (C81) is a valid practical consequence of the findings.",
+    "result_type": "MINOR"
+  }
+]

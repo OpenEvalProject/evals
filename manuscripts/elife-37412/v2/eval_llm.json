@@ -1,0 +1,299 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C47"
+    ],
+    "result": "Immunohistochemistry revealed that OPN1SW protein was detected in just over half (32/56) of bat species assayed, with all frugivorous Stenodermatinae retaining S-cones, while approximately one third (18/56) of species lacked OPN1SW protein, including the first evidence of S-opsin loss in non-noctilionoid Yangochiroptera. Cones showed cone-specific expression with no co-localization of OPN1SW and OPN1LW proteins, and intraspecific variation was detected in P. quadridens.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C20 and C47 are supported by extensive IHC data across 56 species with appropriate replication (at least 3 retinas from 2 individuals per species, C77). The quality control measures described (exclusion of poorly preserved specimens, antibody validation, multiple replicates) strengthen confidence in the protein absence calls. The detection of both positive and negative results across the same specimens validates the methodology.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "RNA-Seq analysis detected OPN1SW mRNA transcripts in 34 of 39 bat species, with expression absent in only five phylogenetically widespread species from three families. In contrast, complete RHO and OPN1LW transcripts were recovered from all 39 taxa assessed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C23 are supported by RNA-Seq data from 39 species with biological replicates for key species (C76). The complete recovery of RHO and OPN1LW from all samples (C23) serves as an important positive control, demonstrating that RNA quality and sequencing depth were sufficient to detect opsin transcripts. Cross-validation with published sequences (C65, C66) further supports the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Nine bat lineages possessed OPN1SW transcripts but lacked OPN1SW protein, representing mismatches between transcript and protein. Among these, D. rotundus and E. bombifrons showed disrupted transcripts with premature stop codons or deletions, while C. brevicauda and T. saurophila had apparently complete transcripts. P. parnellii showed extensive splice variation with no intact isoforms recovered.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C32 are well-supported by combined RNA-Seq and IHC data. The identification of disrupted transcripts in D. rotundus was confirmed by PCR and genome data (C26), strengthening the inference. The extensive splice variation in P. parnellii across four biological replicates (C30-C32) with repeated patterns provides strong evidence. However, the molecular mechanisms underlying translation failure in species with apparently complete transcripts remain unclear, as acknowledged by the authors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C33",
+      "C34"
+    ],
+    "result": "Among species lacking both OPN1SW transcript and protein, the ORF was intact in C. micropus and B. pumila based on PCR, while genomic sequences showed disrupted ORFs with premature stop codons in M. blainvillei, M. waterhousii, and L. spurrelli.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C34 are supported by PCR and genomic sequence data. The findings are corroborated by published genome datasets (C66), providing independent validation. This represents evidence for different molecular routes to the same phenotype (loss of S-cones).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C37"
+    ],
+    "result": "Complete correlation was found between OPN1LW mRNA transcript presence and OPN1LW protein presence across all species examined.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C37 is supported by the combined RNA-Seq and IHC data showing 100% concordance for OPN1LW, contrasting sharply with the mismatches observed for OPN1SW. This serves as an important control demonstrating that transcript-protein mismatches are specific to OPN1SW and not a general methodological artifact.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "Molecular evolution analyses revealed significantly higher \u03c9 (dN/dS ratio) in lineages with pseudogenized OPN1SW for both OPN1SW and OPN1LW genes, while RHO showed no differences across lineages except for a slightly higher \u03c9 in non-frugivorous lineages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C40 are supported by PAML analyses with appropriate statistical tests and significant p-values. The finding of relaxed selection in pseudogenized lineages is expected and validates the approach. The strong purifying selection on RHO (C39) serves as a control. However, the biological significance of the small difference in RHO \u03c9 between frugivorous and non-frugivorous lineages (C40) is unclear.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Photoreceptor density varied among species, with L-cone densities ranging from 2,500-7,500 cones/mm\u00b2 and S-cone densities from 327-5,747 cones/mm\u00b2. S-cones were consistently less dense than L-cones, both cone types showed highest densities near the retinal center, and species with S-cones had significantly higher L-cone densities (43% increase, explaining ~24% of variance).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C44 are supported by quantification data from 14 species with appropriate replication. The automated counting was validated by manual counting by two independent observers. The Bayesian regression analysis for C44 appropriately accounts for phylogenetic structure. The consistent spatial patterns (C43) and density relationships (C42, C44) suggest biological significance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C52",
+      "C57"
+    ],
+    "result": "Frugivory was identified as the strongest ecological factor explaining S-cone presence, increasing the odds of having S-cones roughly 39-fold and explaining about 50% of between-species variance. The strongest ecological association was with S-cone protein presence rather than with earlier steps in protein production (ORF or mRNA).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C46, C52, and C57 are supported by Bayesian hierarchical regression analyses that appropriately account for phylogenetic structure. The comparison across different levels of protein production (ORF, mRNA, protein) strengthens the inference that protein presence most directly reflects ecology. However, the sample size for some ecological categories may be limited, and the causal relationship between frugivory and S-cone retention requires further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C70",
+      "C74",
+      "C75"
+    ],
+    "result": "The study documented molecular signatures consistent with as many as 17 instances of parallel S-opsin loss via three putative routes: (1) pseudogenization with absent/fragmentary transcripts, (2) intact gene without mRNA transcript, and (3) intact transcripts without protein. These findings indicate roles for transcriptional and translational control in opsin loss, with shifts in translation and transcription apparently preceding pseudogenizing changes in ORFs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C49, C70, C74-C75 synthesize the major findings and are well-supported by the combined DNA, RNA, and protein data. The identification of three distinct molecular routes is a key contribution. However, the exact count of 17 parallel losses (C48) depends on phylogenetic inference and may be uncertain. The inference that transcriptional/translational changes precede pseudogenization (C75) is logical but would benefit from temporal data or additional evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C58"
+    ],
+    "result": "Some nectarivorous species from both independent nectar-feeding lineages lost S-cones while others retained them. The discovery of S-opsin loss in non-high-duty-cycle Mormoopidae (M. blainvillei and P. davyi) challenges the sensory trade-off hypothesis within this family.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53 and C58 are supported by the IHC and molecular data showing variable S-cone presence in nectarivorous species and loss in non-HDC species. Claim C54 provides context from prior literature. The challenge to the sensory trade-off hypothesis (C58) is logical given the data, though alternative explanations should be considered.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C35",
+      "C36"
+    ],
+    "result": "In P. poeyi, four individuals showed S-cone presence while one individual had a non-functional transcript with a four base-pair insertion. The ATG start codon in OPN1SW sequences of most species was three codons downstream relative to the human orthologue.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C36 are supported by IHC and RNA-Seq data confirmed by PCR. The intraspecific variation in P. poeyi (C35) suggests ongoing evolutionary change. The shifted start codon (C36) is an interesting observation but its functional significance is unclear.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Museum specimens proved useful for IHC, with successful staining recovered from specimens up to ~100 years old. However, S-opsin assays were inconclusive for six species due to low signal-to-background ratios, while L-opsin assays succeeded in these same species due to higher L-cone densities. Geographic variation was observed in M. molossus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C63 address important methodological considerations. The successful staining of century-old specimens (C60) is supported by the data and prior literature (C59). The differential success for L- vs S-opsin detection (C61-C62) is explained by cone density differences and serves as an important caveat. The geographic variation in M. molossus (C63) highlights a potential confound but is based on limited data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "RNA-Seq data were validated through multiple approaches including comparison with published sequences, PCR confirmation, and genome data. Low gene expression can limit transcript assembly, but the consistent recovery of RHO and OPN1LW in all samples suggests sufficient sequencing depth. Alternative explanations for observed patterns (gDNA contamination, immature mRNA) were considered but deemed unlikely.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C69 address data quality and alternative interpretations. The cross-validation with published data (C65-C66) strengthens confidence in the assemblies. The recovery of all three opsins in most samples (C68-C69) supports data quality, though the reliance on single individuals for most species (acknowledged in C69) is a limitation. The consideration of alternative explanations (C67) demonstrates appropriate scientific rigor.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "The study concludes that current approaches studying gene loss mainly at the genetic or transcriptomic level may underestimate the contribution of translational changes, leading to underestimates of parallel losses and incomplete pictures based on genes alone. Assessments of visual perception based purely on genotypic analyses can be misleading.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C73 represent the major conceptual conclusions of the study and are well-supported by the empirical findings showing mismatches between DNA, RNA, and protein. The inference that current studies underestimate complexity (C71-C72) is logical given the novel findings. However, the generalizability beyond opsins and bats requires further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C50",
+      "C51"
+    ],
+    "result": "Mismatches between opsin coding DNA and mRNA have not previously been documented in mammals, though the OPN1SW mRNA of blind mole-rat S. ehrenbergi has been found to contain introns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C51 are supported by literature review and citations. The novelty claim (C50) is appropriately qualified ('to our knowledge'), and the parallel finding in mole-rats (C51) provides important context suggesting the phenomenon may be more widespread.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C55",
+      "C56"
+    ],
+    "result": "The main difference in molecular selection was between species with an intact OPN1SW ORF versus a pseudogene. Protein composition should more closely reflect visual ecology than sequence evolution or pseudogenization, as the latter only responds to long-term functional loss.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C56 are supported by the molecular evolution analyses (C38) and the ecological modeling showing stronger associations with protein presence (C57). The inference that protein better reflects ecology than ORF status is logical and represents an important conceptual advance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "The study generated eye transcriptomes for 46 individuals (39 species) with biological replicates for three species, performed IHC on at least three retinas from two individuals per species, and obtained eye tissue from 59 bat species from both field collections and museum specimens.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C78 describe the study design and sample sizes. The sample sizes are substantial for a comparative study of this scope. The inclusion of biological replicates for key species and the use of both fresh and museum specimens are strengths. However, the reliance on single individuals for most species in the RNA-Seq analysis is a limitation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6"
+    ],
+    "result": "Background on trait loss in vertebrates: examples include flight loss in birds, armor plate loss in sticklebacks, and vitamin C synthesis loss in bats. Many trait losses occur in parallel across independent lineages. Most mammals possess three visual opsins (RHO, OPN1LW, OPN1SW), and there have been >20 independent losses of cone-opsins in mammals, with some cetacean and xenarthran lineages losing both cone-opsins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C6 provide background context and are supported by appropriate citations to published literature. These establish the broader evolutionary context for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C7",
+      "C8"
+    ],
+    "result": "Evolutionary reconstructions of color vision have been based almost entirely on opsin gene sequences, with gene expression and protein data limited or missing for most mammalian species. No large-scale comparative study has considered each step in protein production.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C8 identify the knowledge gap addressed by this study and are supported by literature review. These claims establish the novelty and importance of the multi-level approach taken in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "Background on noctilionoid bats: they underwent ecological diversification ~40 million years ago and show marked adaptations linked to dietary specializations. S-opsin was thought to be functional across Yangochiroptera, but recent studies show multiple independent lineages with OPN1SW pseudogenization in Noctilionoidea. Multiple S-opsin losses have also been documented in Yinpterochiroptera. Bat S-opsins are inferred to be UV-sensitive.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C15 provide background on the study system and are supported by appropriate citations. These establish the evolutionary and ecological context for investigating S-opsin loss in noctilionoid bats.",
+    "result_type": "MINOR"
+  }
+]

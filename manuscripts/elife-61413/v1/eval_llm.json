@@ -1,0 +1,325 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "The manuscript provides background on cerebral cavernous malformation (CCM), describing it as a rare neurovascular disease characterized by enlarged and irregular blood vessels leading to cerebral hemorrhage. CCM occurs in familial and sporadic forms, with familial CCM caused by loss-of-function mutations in KRIT1, CCM2, or PDCD10 genes. Current treatment is limited to surgical intervention or stereotactic radiosurgery, with no effective pharmacological therapy available.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C1, C2, C17-C31) represent well-established background knowledge about CCM disease, supported by multiple citations to previous research and clinical knowledge. The epidemiological data, genetic basis, clinical manifestations, and treatment limitations are consistent with the scientific literature on CCM.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "This study reports the first in-depth single-cell RNA sequencing combined with spatial transcriptomics and immunohistochemistry to characterize brain endothelial cell subclasses in CCM. The authors used Cdh5(PAC)-Cre-ERT2/Ccm3f/f/Cldn5(BAC)-GFP mice that develop CCM lesions by P8 following tamoxifen injection at P1. Endothelial cells were isolated (CD45- and CD31+) from brains of Pdcd10-wt and Pdcd10-ko littermates, and 32,261 cells were analyzed using 10\u00d7 Genomics platform and Seurat (version 3).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C32-C37 describe the experimental approach and are well-supported by the methods section and data presented. The novelty claim (C3) is reasonable given the integration of multiple technologies. Sample sizes (n=2 mice per condition, >30,000 cells total) are adequate for scRNA-seq studies, and the methods are clearly described with appropriate tools and versions specified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Through unsupervised clustering, 17 cell clusters were identified and visualized using UMAP. Four clusters (C10, C11, C15, C16) were identified as mixed with non-endothelial cells, including pericytes (C11), microglia (C16), and astrocytes (C10). The remaining 13 endothelial subpopulations were categorized into six groups: venous (C9), arterial (C8), capillary (C0, C3, C4, C5), tip (C1, C6), mitotic/capillary (C2, C7), and tip/capillary (C12, C13, C14) cells. All endothelial subpopulations except C13 showed significant down-regulation of Pdcd10 expression after deletion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C45 describe the clustering results and cell type identification, which are supported by Figure 1 and supplementary data. The cluster annotations are based on established marker genes (Supplementary file 1) and appear consistent with known endothelial cell biology. The confirmation of Pdcd10 deletion in most clusters validates the experimental model. However, the identity of C15 remains unclear (C39), which is appropriately acknowledged.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Differential gene expression analysis revealed that venous/venous capillary ECs in C9 were highly modified by Pdcd10 deletion, while arterial ECs in C8 were essentially not affected. Tip cell clusters C1 and C6, mitotic/venous capillary C7, and capillary C0 showed strong modifications. Klf4 and Klf2, key drivers of the Pdcd10-ko phenotype, were up-regulated in almost all clusters except arterial C8. Notably, Pdcd10-wt arterial C8 ECs showed significantly higher baseline expression of Klf4 and Klf2 compared to other clusters, with no differences between Pdcd10-wt and Pdcd10-ko.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C56 are well-supported by differential gene expression analysis shown in Figure 2A-B and referenced supplementary files. The statistical thresholds (padj <0.05) are appropriate. The observation that arterial C8 cells have high baseline Klf2/Klf4 but are resistant to Pdcd10 deletion is particularly interesting and well-documented. The data support the conclusion that Klf2/Klf4 upregulation alone is insufficient for the mutant phenotype.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Pdcd10-ko venous/venous capillary C9 ECs showed up-regulation of most lesion-marker genes and the greatest overlap with the CCM gene set (12 of 51 CCM genes). Gene set enrichment analysis revealed that biological processes implicated in CCM pathology were mainly altered in C9 and tip cell C1 and C6 ECs, including angiogenesis, cell differentiation, coagulation, immune responses, and cell apoptosis. Endothelial-to-mesenchymal transition mediated through increased TGF\u03b2 signaling was confirmed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C62 are supported by gene expression analysis (Figure 2C-E) and enrichment analysis using EnrichR and GSEA. The overlap with known CCM genes (C58) provides validation. The confirmation of endothelial-to-mesenchymal transition (C61-C62) is supported by both current data and previous work by the authors (Maddaluno et al., 2013). The statistical methods and thresholds are appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "The blood-brain barrier (BBB) is impaired in CCM, as demonstrated by significant increase in vascular permeability to endogenous immunoglobulins in the Pdcd10-depletion model. Expression levels of BBB formation and maturation regulators were decreased in C9 and C6 clusters, and BBB transporters were diffusely down-regulated in Pdcd10-ko cells. While gene expression of most junctional molecules was unchanged, tight-junction proteins (Claudin-5, Cingulin) and adherens junction VE-cadherin were not correctly localized at cell-to-cell contacts in cavernomas.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C72 are well-supported by immunofluorescence data (Figure 2F, Figure 2\u2014figure supplement 1), gene expression analysis (Figure 2G), and citations to previous research. The distinction between gene expression (mostly unchanged, C70-C71) and protein localization (disrupted, C72) is important and well-documented. The quantification of IgG leakage (C64) provides functional validation of BBB impairment with appropriate statistics (n=6-7, p<0.01).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Four endothelial subpopulations are particularly affected by Pdcd10 deletion: venous/venous capillary C9, tip cell C1 and C6, and mitotic/venous capillary C7. Among these, C9 ECs represent the strongest candidate to form the most advanced lesions. The venous nature of cavernomas was confirmed by expression of the venous marker COUP-TFII (encoded by Nr2f2) in vivo in CCM lesions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C76 represent a synthesis of multiple lines of evidence from differential gene expression, lesion marker analysis, and CCM gene enrichment. The conclusion is well-supported by the data presented in Figures 1-2. The immunofluorescence confirmation of COUP-TFII expression in cavernomas (C75-C76, Figure 2H) provides important validation of the venous identity at the protein level.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C4",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "Arterial endothelial cells (C8) are refractory to CCM transformation. Despite successful Pdcd10 deletion, arterial C8 ECs showed minimal gene expression changes, with the lowest number of differentially expressed genes, no increase in Klf4/Klf2, and minimal changes in lesion markers or BBB markers. Analysis of 111 unique marker genes in C8 revealed that 80 had potential preventive functions. The authors hypothesize that these genes can counteract the effects of Pdcd10 deletion and prevent lesion formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C77-C85 are well-supported by comprehensive gene expression analysis (Figures 2-3). The identification of unique marker genes with potential preventive functions (C79-C80) is based on appropriate statistical thresholds (logFC >0.25, padj <0.05) and manual annotation using established databases. The observation that high Klf2/Klf4 levels are not sufficient for the mutant phenotype (C82-C83) is an important mechanistic insight. However, the hypothesis about preventive gene function (C85) requires experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "The number of Pdcd10-ko cells was significantly increased in C9 (4.8-fold), C12 (4.0-fold), and C14 (2.8-fold). C9 enrichment is likely due to sustained proliferation, as indicated by increased expression of mitotic markers and higher proportions of cells expressing mitotic markers. Increased numbers of mitotic ECs (co-expressing Ki-67 and ERG) were observed in cavernomas but not in pseudo-normal vessels, confirmed by both immunofluorescence and Visium spatial transcriptomics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C90 are well-supported by multiple complementary approaches: scRNA-seq cell counts (Figure 4A), mitotic marker expression analysis (Figure 4B-C), immunofluorescence with quantification (Figure 4D-E, n=6 per group, p<0.01), and spatial transcriptomics validation (Figure 4F-G). The convergence of evidence from different methodologies strengthens the conclusion about increased proliferation in C9 cells.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "Increased proportions of Pdcd10-ko cells expressed tip cell markers in C9 and C12. While tip cell clusters C1 and C6 showed the greatest number of up-regulated tip cell markers, C9 Pdcd10-ko cells showed up-regulation of tumor tip cell markers. In retinas, tip cells at the vascular front were significantly denser in Pdcd10-ko, but 15-30% appeared blocked within the dense cell layer (tip-like cells) compared to 10% in Pdcd10-wt. Radial expansion of the vascular network was significantly inhibited in Pdcd10-ko retina.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C101 are supported by gene expression analysis (Figure 5A-C), immunofluorescence (Figure 5D-F), and quantification in both brain (n=6 per group) and retina (n=10-13 per group) with appropriate statistics. The distinction between normal tip cells and blocked 'tip-like' cells (C98-C99) is an important observation supported by morphological analysis. The impaired radial expansion (C100) provides functional validation of the defective tip cell phenotype.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "Pdcd10-ko cells of C9 are more mitotic than Pdcd10-wt cells and express tip cell traits, although with an abnormal profile. Visium analysis confirmed that 15-30% of lesion EC spots were positive for both tip cell and mitotic markers. The angiogenic phenotype is defective, with impaired network elongation and enhanced cell proliferation. The combination of high cell proliferation and low cell motility might explain cavernoma formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C107 represent a synthesis of the proliferation and tip cell data. The conclusion is well-supported by convergent evidence from scRNA-seq, immunofluorescence, and spatial transcriptomics. The mechanistic hypothesis about cavernoma formation (C107) is reasonable and supported by a citation (Castro et al., 2019), though it remains speculative and would benefit from direct experimental testing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "STREAM trajectory analysis revealed that Pdcd10-ko cells of C9 were distributed over different branches (S3-S0, S0-S2, S0-S1). Cells in the S0-S2 branch highly expressed typical cavernoma markers, were mainly mitotic, and had pathological tip cell traits, representing ECs of typical cavernoma lesions. These cells showed increased expression of Tcf15 and Id1, with Id1 inhibiting Tcf15-mediated progenitor cell differentiation but not proliferation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C114 are supported by trajectory analysis using STREAM (Figure 6) and differential gene expression analysis (Figure 6\u2014figure supplement 1E, Figure 6\u2014figure supplement 2A). The computational approach is appropriate and well-described. The interpretation regarding Id1 and Tcf15 function (C114) is supported by citation to Davies et al., 2013. The trajectory analysis provides important insights into the developmental progression of lesion formation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "Cavernomas have clonal origins from expansion of Pdcd10-ko progenitor cells. The proportions of Pdcd10-ko cells positive for Bst1 or Peg3 were highly increased in the S0-S2 and S3-S0 branches, while Procr and Cd200 were similar across branches. Increased proportions of Mki67-positive Pdcd10-ko progenitor cells were observed in all branches, with strongest increases in S0-S2. Klf4 and Klf2 were highly expressed in Pdcd10-ko progenitor cells, supporting the concept that they are early response genes to Pdcd10 deletion in resident endothelial progenitor cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C115-C124 are supported by trajectory analysis (Figure 6E-G) and previous work by the authors (Malinverno et al., 2019). The analysis of progenitor marker expression across trajectory branches is methodologically sound, with appropriate thresholds (Q1 for positive cells). The observation that Klf4/Klf2 are highly expressed in progenitor cells (C123-C124) provides important mechanistic insight into early responses to Pdcd10 deletion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133"
+    ],
+    "result": "Spatial transcriptomics and in-situ hybridization confirmed concentration of Bst1 progenitor cell transcripts at cavernomas and mulberry lesions. After Pdcd10 deletion, proportions of Bst1-positive cells increased in all capillary-vein clusters (C2, C4, C7), with greatest expression in venous C9 (39.9%), but did not increase in arterial C8 or arterial capillary C3 and C5. Bst1 appears to be a preferential marker of vein-resident progenitor cells. Peg3 showed highest expression in venous C9 Pdcd10-ko cells (24.0% vs. 9.3% in wt), while Procr and Cd200 were ubiquitously expressed and did not significantly increase after Pdcd10 deletion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C125-C133 are well-supported by multiple complementary approaches: Visium spatial transcriptomics (Figure 7A-B), in-situ hybridization (Figure 7C), and scRNA-seq analysis (Figure 7D). The differential expression of progenitor markers between venous and arterial clusters (C127-C129) is an important finding that aligns with the overall conclusion about venous origin of lesions. Sample sizes for Visium (n=2 per genotype) and in-situ hybridization (n=3 per genotype) are adequate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C5",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147"
+    ],
+    "result": "This study identifies venous endothelial cell clusters and their related progenitor cells as the main cell types responsible for cavernoma development. Brain ECs represent a heterogeneous population distributed across 13 clusters expressing highly specialized functions. Resident progenitor cells were detected in all Pdcd10-wt clusters in different proportions and are heterogeneous, sharing transcriptional features with ECs of the vessels where they reside. Although Pdcd10 deletion occurs comparably in arterial and venous ECs, only venous ECs respond, following defective differentiation and angiogenic programs with abnormal tip cell traits and increased mitosis. While Klf2 and Klf4 are necessary for the mutant phenotype, they are not sufficient; a specific transcriptional landscape appears necessary for full transformation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C134-C147 represent the major conclusions of the study, synthesizing evidence from scRNA-seq, spatial transcriptomics, immunohistochemistry, and trajectory analysis. The conclusions are well-supported by the comprehensive dataset. The observation that Klf2/Klf4 are necessary but not sufficient (C145) is an important mechanistic insight supported by the arterial C8 data. The speculation about progenitor cell identity (C138) is appropriately presented as speculative. The overall conclusion about venous origin of lesions (C147) is strongly supported by convergent evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "The manuscript provides background on endothelial cell heterogeneity and specialization, describing how ECs of arteries, veins, and lymphatic system show high degrees of specialization. Brain microcirculation ECs regulate cerebral blood flow, oxygen delivery, and supply of energy metabolites. These cells form the blood-brain barrier (BBB) in neurovascular units, where ECs are surrounded by pericytes and in contact with glia and neurons. The BBB controls entry of neurotoxic components and promotes passage of nutrients through specialized transport systems. Several genetic pathologies causing BBB alterations arise from inactivation of specific genes in neurovascular unit cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C16 provide essential background on endothelial cell biology and BBB function, all supported by appropriate citations to previous research (Kalucka et al., 2020; Vanlandewijck et al., 2018; Augustin and Koh, 2017; Zhao et al., 2015; Armulik et al., 2010; Iadecola, 2017). This background is accurate and provides necessary context for the study.",
+    "result_type": "MINOR"
+  }
+]

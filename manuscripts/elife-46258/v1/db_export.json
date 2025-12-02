@@ -1,0 +1,1795 @@
+{
+  "submission": {
+    "id": "2f8c7674-a409-432f-825e-b9ac9769adee",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T10:49:32.160602Z",
+    "updated_at": "2025-12-02T10:49:32.160602Z"
+  },
+  "content": [
+    {
+      "id": "2a476e1a-b523-43ea-aeed-69a50cea3ed4",
+      "submission_id": "2f8c7674-a409-432f-825e-b9ac9769adee",
+      "content_type": "manuscript",
+      "content_text": "# Massive antibody discovery used to probe structure\u2013function relationships of the essential outer membrane protein LptD\n\n## Authors\n\n- Kelly M Storek<sup>1</sup>\n- Joyce Chan<sup>2</sup>\n- Rajesh Vij<sup>3</sup>\n- Nancy Chiang<sup>3</sup>\n- Zhonghua Lin<sup>3</sup>\n- Jack Bevers<sup>3</sup>\n- Christopher M Koth<sup>4</sup>\n- Jean-Michel Vernes<sup>2</sup>\n- Y Gloria Meng<sup>2</sup>\n- JianPing Yin<sup>4</sup>\n- Heidi Wallweber<sup>4</sup>\n- Olivier Dalmas<sup>4</sup>\n- Stephanie Shriver<sup>5</sup>\n- Christine Tam<sup>5</sup>\n- Kellen Schneider<sup>3</sup>\n- Dhaya Seshasayee<sup>3</sup>\n- Gerald Nakamura<sup>3</sup>\n- Peter A Smith<sup>1</sup>\n- Jian Payandeh<sup>4</sup> \u2020\n- James T Koerber<sup>3</sup> \u2020\n- Laetitia Comps-Agrar<sup>2</sup> \u2020\n- Steven T Rutherford<sup>1</sup> ([ORCID: 0000-0002-4758-4248](https://orcid.org/0000-0002-4758-4248)) \u2020\n\n### Affiliations\n\n1. Department of Infectious Diseases Genentech, Inc South San Francisco United States\n2. Department of Biochemical and Cellular Pharmacology Genentech, Inc South San Francisco United States\n3. Department of Antibody Engineering Genentech, Inc South San Francisco United States\n4. Department of Structural Biology Genentech, Inc South San Francisco United States\n5. Department of Biomolecular Resources Genentech, Inc South San Francisco United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nOuter membrane proteins (OMPs) in Gram-negative bacteria dictate permeability of metabolites, antibiotics, and toxins. Elucidating the structure-function relationships governing OMPs within native membrane environments remains challenging. We constructed a diverse library of >3000 monoclonal antibodies to assess the roles of extracellular loops (ECLs) in LptD, an essential OMP that inserts lipopolysaccharide into the outer membrane of Escherichia coli. Epitope binning and mapping experiments with LptD-loop-deletion mutants demonstrated that 7 of the 13 ECLs are targeted by antibodies. Only ECLs inaccessible to antibodies were required for the structure or function of LptD. Our results suggest that antibody-accessible loops evolved to protect key extracellular regions of LptD, but are themselves dispensable. Supporting this hypothesis, no \u03b1-LptD antibody interfered with essential functions of LptD. Our experimental workflow enables structure-function studies of OMPs in native cellular environments, provides unexpected insight into LptD, and presents a method to assess the therapeutic potential of antibody targeting.\n\n## Introduction\n\nThe outer membrane (OM) of Gram-negative bacteria is a permeability barrier to antibiotics and other cytotoxic agents, such as detergents (Nikaido, 2003). A key feature of the OM is its distinctive asymmetrical bilayer populated with lipopolysaccharide (LPS) in the outer leaflet and phospholipids in the inner leaflet (Funahara and Nikaido, 1980; Kamio and Nikaido, 1976). Lateral interactions between LPS molecules mediated by divalent cations on the surface and packing of hydrocarbon chains in the membrane impede the passage of both hydrophilic and large hydrophobic molecules (Nikaido, 2003). LPS is composed of a conserved lipid A molecule, a core oligosaccharide, and a variable O-antigen glycan. Lipid A is synthesized in the cytoplasm where the core oligosaccharide is attached to form core-LPS (Whitfield and Trent, 2014). This molecule is flipped into the periplasmic space by the inner membrane ATPase MsbA (Ho et al., 2018; Mi et al., 2017; Zhou et al., 1998). The O-antigen is appended onto core-LPS in the periplasm and LPS is transported to the outer leaflet of the OM by the LPS transport (Lpt) system (Abeyrathne et al., 2005; Han et al., 2012; Okuda et al., 2016).\n\nIn E. coli, all 7 components of the Lpt pathway, LptABCDEFG, are essential and shuttle LPS molecules from the IM across the periplasm to the OM (Okuda et al., 2016; Okuda et al., 2012; Ruiz et al., 2008; Wu et al., 2006). LptD is a \u03b2-barrel outer membrane protein (OMP) responsible for the final unidirectional insertion of LPS into the OM outer leaflet (Botos et al., 2016; Gu et al., 2015; Li et al., 2015). The LptD \u03b2-barrel is comprised of 26 anti-parallel \u03b2-strands with a proposed lateral gate formed where the first and last \u03b2-strands interact (Dong et al., 2014; Qiao et al., 2014). Like other Gram-negative \u03b2-barrel OMPs, LptD possess long extracellular, environmentally-exposed loops and short periplasmic loops connecting adjacent strands (Franklin and Slusky, 2018; Rollauer et al., 2015; Schulz, 2002). The roles of the extracellular loops (ECLs) in folding or activity of LptD have not been determined. LptD forms an obligate interaction with the OM lipoprotein LptE (Chimalakonda et al., 2011; Freinkman et al., 2011). An N-terminal jelly roll domain is located on the periplasmic side of the \u03b2-barrel below the lateral gate. Structural, biochemical, and genetic analyses suggest that the hydrophobic lipid A portion of LPS is embedded in the hydrophobic jelly roll domain. The presumed model for LPS transport across the OM posits that lipid A is inserted into the hydrophobic OM through a lateral gate of LptD (Botos et al., 2016; Gu et al., 2015; Li et al., 2015). By an unknown mechanism, the polar sugars of the LPS core oligosaccharide and O-antigen are presumably moved through the LptD \u03b2-barrel lumen and flipped to the exterior of the cell.\n\nDue to its essential role in OM biogenesis, high conservation among Gram-negative bacteria, and exposure to the extracellular environment, LptD represents a potential new antibacterial target. Genetic experiments show that crosslinking LPS to LptD in the jelly roll domain or the lateral gate, or introduction of disulfide bonds that disrupt the proposed LPS path through LptD, inhibit growth (Gu et al., 2015; Li et al., 2015). Indeed, two antibacterial peptides targeting LptD have been described, both presumably targeting the periplasmic jelly roll domain (Srinivas et al., 2010; Vetterli et al., 2018). Critical roles for ECLs in OMP function have been described (Browning et al., 2013; Rigel et al., 2013). For example, removal of the LptD extracellular loop 4 (L4), imp4213, is known to disrupt the OM barrier leading to sensitization to antibiotics (Sampson et al., 1989). However, the roles of the extracellular LptD loops remain largely underexplored due to a lack of robust tools to systematically assess structure-function relationships in the context of a native OM.\n\nMonoclonal antibodies (mAbs) represent useful tools to probe protein structure and function because they typically have high target specificity and affinity. Accordingly, here we pursued four diverse strategies to produce thousands of mAbs that bound to LptD. The breadth and depth of mAb discovery that we report here is unusual, especially for an integral membrane protein, and also takes advantage of an efficient and novel targeted boost-and-sort \u03b1-OMP discovery approach recently reported for another OMP, BamA (Vij et al., 2018). Characterization of the \u03b1-LptD mAbs discovered herein allowed us to map the environmentally-exposed surfaces of LptD and to systematically explore the structure-function relationship of the large ECLs of this essential OMP within its native OM environment. Through the construction and characterization of LptD loop deletion strains, we identified non-exposed loops that are critical for LptD function under defined conditions, which are all inaccessible to antibody interference. Our data provide unique insights into the structure and function of LptD and suggest that non-antibody approaches for interfering with the function of this essential OMP in E. coli should be prioritized to develop novel antibiotics.\n\n## Results\n\n### Identifying \u03b1-LptD mAbs that bind to extracellular LptD loops\n\nTo probe the functional relevance of the ECLs of the essential E. coli OMP LptD, we set out to discover \u03b1-LptD antibodies to these surface-exposed structures. We generated a diverse mAb library against E. coli LptD by running four independent discovery campaigns. Specifically, we immunized (1) rats with cyclic and linear peptides derived from extracellular LptD loop sequences, (2) rats and (3) mice with purified LptDE protein in detergent (n-octyl-\u03b2-D-glucopyranoside) and non-detergent polymer (amphipol A8-35), and (4) rats with a targeted boost-and-sort strategy that uses whole bacterial cell immunizations followed by immune boosts with purified LptDE protein (Figure 1A and Figure 1B). Within each campaign, the adjuvants and boosting strategies were varied to increase potential antibody diversity (see Materials and methods for details). Cumulatively, the discovery campaigns generated more than 7000 hybridomas and more than 3,000 ELISA+ LptD-specific mAbs (Figure 1C). In total, 774 ELISA+ \u03b1-LptD mAbs from the peptide and protein rat immunizations, 952 ELISA+ \u03b1-LptD mAbs from the mouse immunizations, and 1494 \u03b1-LptD mAbs from the targeted boost-and-sort immunizations were purified (Figure 1C).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/46258/elife-46258-fig1-v1.jpg)\n\n**Figure 1.:** (A) Cartoon of LptD immunization campaigns with purified E. coli LptDE protein, LptD cyclic peptides, and linear peptides. 10 rounds of protein or peptide injections were performed. Clones were selected from hybridoma fusions. (B) Cartoon of targeted boost-and-sort strategy in which SD rats were initially primed with E. coli K-12 bacteria, followed by two boosts with the recombinant LptDE protein reconstituted in amphipol matrix. Cell hybridoma fusions were sorted with fluorescently-labeled LptDE to enrich LptDE+ hybridomas. (C) Overview of the individual immunization campaigns. The total number of hybridoma clones isolated and binding to LptDE by ELISA were determined for each campaign. ELISA positive antibodies had a signal 3x above background. ELISA measurements were not determined (ND) for the hybridoma clones from the boost-and-sort approach.\n\nTo explore epitope coverage and accessibility of the \u03b1-LptD ELISA+ mAbs from three of the antibody discovery campaigns, we first measured their extracellular binding by a fluorescence-assisted cell sorting (FACS)-based assay to two strains of E. coli (Figure 2A). The first strain was a laboratory E. coli strain, K-12, that produces an intact core-LPS but no O-antigen. The second strain was an E. coli \u0394waaD mutant, which produces a truncated form of LPS on the cell surface (Kneidinger et al., 2002). This truncation of LPS increases the exposed epitopes accessible to mAbs (Bentley and Klebba, 1988; Storek et al., 2018). Depending on the immunization campaign, 9\u201330% of the ELISA+ \u03b1-LptD mAbs were FACS+ on E. coli \u0394waaD, while\u00a0<1% of the same antibodies were FACS+ on E. coli K-12 (Figure 2A). The E. coli K-12 FACS+ \u03b1-LptD mAbs were a subset of all the FACS+ mAbs, binding equally well to E. coli K-12 and E. coli \u0394waaD cells (Figure 2\u2014figure supplement 1), and were discovered in both mouse and rat immunization campaigns. These results reinforce the finding that LPS presents a significant barrier to accessing surface epitopes on E. coli (Bentley and Klebba, 1988; Storek et al., 2018) and suggest that the ECLs of OMPs may be masked or intimately associated with the core sugars of the LPS.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/46258/elife-46258-fig2-v1.jpg)\n\n**Figure 2.:** (A) LptD mAb campaign summary of ELISA+ LptDE mAbs tested for surface binding on E. coli \u0394waaD and E. coli K-12 by FACS assay. Antibodies were scored FACS+ if the MFI was 2x above an isotype control. (B) Amino acids comprising the 13 ECLs of LptD are highlighted on the structure as spheres. The spheres are color-coded based on amino acid conservation between different sequence comparisons as indicated in the key. Structure is of Shigella flexneri LptDE with LptE removed rendered in PyMol (PDB 4Q35 [Qiao et al., 2014]). (C) 134 FACS+ and 233 FACS- antibodies were characterized for cross-reactive binding to purified LptDE from two closely-related Enterobacteriaceae species: Klebsiella pneumoniae (K. pneum) and Enterobacter cloacae (E. cloacae) by ELISA. ELISA positive antibodies had a signal 3x above background. (D) 52 FACS+ \u03b1-LptD mAbs were characterized for epitope binning patterns using a high-throughput SPR-based method to determine pairwise mAb binding competition. Antibodies are color-coded based on ELISA cross-reactivity profiles as indicated in the key. Circle designates data obtained from both capture and detection antibodies. Square designates a single capture or detection data point. Characterization of all antibodies described in Figure 4\u2014figure supplement 1 and those with green-outlined squares or circles are shown in Figure 4B.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/46258/elife-46258-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Representative FACS traces for three ELISA+ \u03b1-LptD mAbs, 27C2 (purple), 3D10 (blue), and 27C8 (red), with E. coli \u0394waaD (top) and E. coli K-12 (bottom) cells. A non-binding isotype control mAb is shown in grey. 10,000 events were counted for each antibody and counts at each fluorescent intensity were plotted. (B) FACS analysis of a representative E. coli K-12 FACS+ \u03b1-LptD mAb (27C8) for binding to E. coli \u0394waaD strains expressing wild-type LptD and the 12 viable loop deletion strains. Loop 10 could not be assessed (see text). The mean fluorescent intensities (MFIs) are plotted. The red dashed line represents a descriptive MFI level that is 10% that of the WT control.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/46258/elife-46258-fig2-figsupp2-v1.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A) Amino acid sequence alignment of LptD \u03b2-barrel region (amino acids 181\u2013778) for E. coli (Ecoli), E. cloacae (Ecloacae), and K. pneumoniae (Kpneumo). Extent of ECLs based on available structures is indicated as lines above the sequences and the boundaries for the ECL deletions (L1\u2013L13) are indicated by colors that match those in Figure 3A. (B) Extracellular amino acids are displayed as spheres on the LptD structure based on Shigella flexneri LptDE (PDB 4Q35 [Qiao et al., 2014]) with LptE removed. Spheres are colored based on sequence alignment if they are unique to E. coli (light grey) or identical between E. coli and E. cloacae (yellow), E. coli and K. pneumoniae (red), and all three species (blue).\n\nThe diversity of epitopes bound by \u03b1-LptD mAbs in our library was next assessed by monitoring binding to LptD from different species. ELISAs were performed with 134 FACS+ and 233 FACS- \u03b1-LptD mAbs using purified LptDE protein from two closely related Enterobacteriaceae species, Klebsiella pneumoniae and Enterobacter cloacae, which share 82% and 84% overall protein identity and 71% and 76% identify between the ECLs only when compared with E. coli LptD, respectively (Figure 2B and Figure 2\u2014figure supplement 2A). The majority of FACS+ (61%) and FACS- (69%) \u03b1-LptD mAbs bound only E. coli LptDE by ELISA (Figure 2C). This result was not surprising considering that all protein immunization campaigns utilized only purified E. coli LptDE protein. Analysis of the surface-exposed portion of LptD predicted from experimental x-ray crystallographic structural models identified regions of\u00a0>5 amino acids that were conserved among all three Enterobacteriaceae species, the size of a typical hot spot of residues that contribute to antibody binding (Stave and Lindpaintner, 2013) (Figure 2B and Figure 2\u2014figure supplement 2B). Indeed, we identified 10 (7%) \u03b1-LptD mAbs that bound to LptDE from all three species and 42 that bound either E. coli plus K. pneumoniae (22%) or E. coli plus E. cloacae (9%) LptDE (Figure 2C). Thus, our immunization campaigns using E. coli LptD-derived peptides and E. coli LptDE protein yielded diverse antibodies that bound to both unique and conserved extracellular accessible (i.e., FACS+) and extracellular-inaccessible or periplasmic (i.e., FACS-) epitopes.\n\nThe differences in cross-species reactivity of the \u03b1-LptD mAbs suggested that the FACS+ antibodies bound multiple surface-exposed LptD epitopes. To determine if these antibodies bound unique extracellular epitopes, we tested \u03b1-LptD mAbs with the highest FACS+ signal for their abilities to compete with each other for binding to purified E. coli LptDE. Every possible FACS+ pair of \u03b1-LptD mAbs was screened for the ability to either bind LptDE protein simultaneously (i.e., different epitopes) or to compete for binding (i.e., same or nearby epitopes) using a SPR-based binding assay (Abdiche et al., 2017). From these results, we constructed a surface epitope map for the FACS+ \u03b1-LptD mAbs (Figure 2D). We identified two major epitope bins and a possible third bin with limited overlap (Figure 2D). When the species cross-reactivity data were considered, most three-species cross-reactive \u03b1-LptD mAbs were tightly clustered, while those that bound only E. coli LptDE formed a distinct cluster (Figure 2D). There were some outliers to these trends with the dual-species binders and E. coli-only binders binning with the cross-reactive mAbs suggesting distinct, but overlapping epitopes. Thus, the \u03b1-LptD mAbs we discovered covered multiple distinct and overlapping extracellular LptD epitopes.\n\n### Effects of removing extracellular LptD loops on E. coli growth\n\nIn order to map the extracellular epitopes of the \u03b1-LptD mAbs in a native asymmetrical OM environment, we first generated and characterized a panel of lptD mutants each lacking one ECL. This strain panel also allowed us to assess the essentiality of each ECL in strains with different OM compositions. We constructed 13 lptD mutants, each lacking the region encoding one of the 13 ECLs (Figure 3A). These loop deletions were based on available x-ray crystal structures of LptD and were constructed as complete loop deletions without replacing the removed sequence. In the case of loop 4 (L4), which encompassed the classical imp4213 allele (Sampson et al., 1989) and in the case of loop 8, which is an extensive loop that interacts with LptE in the LptD lumen (Freinkman et al., 2011), we only removed a portion of the loop. Each lptD loop mutant was expressed in a lptD-conditional E. coli strain. In the presence of arabinose, which induces a chromosomal wild-type lptD, all strains grew (Figure 3B). In the absence of arabinose, all lptD loop mutants supported growth in the K-12 strain with the exception of loop 2 (L2) removal, which showed reduced growth (Figure 3B). In all cases when growth was observed, the levels of the LptD loop deletion protein produced were similar to the protein level of wild-type LptD (Figure 3\u2014figure supplement 1A). Thus, LptD is highly tolerable to genetic manipulation of its ECLs.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/46258/elife-46258-fig3-v1.jpg)\n\n**Figure 3.:** (A) The ECL boundaries of LptD are highlighted as spheres and color-coded as indicated. Sequence boundaries are indicated Figure 2\u2014figure supplement 2A. Structure based on S. flexneri LptDE with LptE removed rendered in PyMol (PDB 4Q35 [Qiao et al., 2014]). (B) LptD loop mutants were expressed on a plasmid, pLMG18gm, in a conditional lptD mutant strain in which the chromosomal copy of wild-type lptD is under arabinose control. Mutants were streaked onto LB gentamicin agar supplemented with or without 0.2% arabinose and imaged after overnight growth. Representative image of three biological triplicates is\u00a0shown. Growth was determined in both the E. coli wild-type and E. coli \u0394waaD strain backgrounds. Vector control (VC) does not encode a copy of lptD and requires arabinose induction of the chromosomal lptD copy to grow. Growth curves of lptD loop mutants expressed in E. coli (C) K-12 and (D) \u0394waaD strain backgrounds are shown. Strains were grown from a starting inoculum of OD600 0.001 in LB gentamicin without arabinose and monitored for bacterial growth by measuring OD600 over 15 hr. Means and standard deviations from biological triplicates are plotted. Statistical analysis of growth rates for each curve are shown in Supplementary file 1.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/46258/elife-46258-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Representative Western blots of (A) log-phase E. coli K-12 wild-type liquid cultures and (B) E. coli \u0394waaD cultures from overnight agar plates expressing each lptD loop mutant. Strains were grown in LB gentamicin with no arabinose. LptD\u0394L2 was severely growth delayed in E. coli K-12 and LptD\u0394L10 was not viable in E. coli \u0394waaD so these could not be evaluated for protein expression. (C) Growth curves of lptD loop mutants expressed in a E. coli K-12 (left) and E. coli \u0394waaD (right) strain background are shown. Strains were grown from a starting inoculum of OD600 0.001 in LB gentamicin supplemented with arabinose and monitored for bacterial growth by measuring OD600 over 15 hr in the presence of arabinose. Means and standard deviations for biological triplicates are plotted and comparisons of growth rates are shown in Supplementary file 1.\n\nWhen the lptD loop mutants were expressed in an lptD-conditional E. coli \u0394waaD strain, which produces LPS with a truncated core oligosaccharide, the observed loop requirements were different. In the E. coli \u0394waaD background, LptD lacking either loop 2 or loop 10 were unable to support bacterial growth on solid growth agar (Figure 3B). The inability of LptD lacking L10 (LptD\u0394L10) to support growth of the E. coli \u0394waaD strain suggested that this ECL is important for LptD folding or activity in this strain. In contrast, the LptD\u0394L10 variant was produced and did support growth of E. coli K-12 (Figure 3B and Figure 3\u2014figure supplement 1A), indicating that LptD\u0394L10 was folded and sufficiently functional in the strain producing core-LPS but not the minimal LPS of E. coli \u0394waaD strain.\n\nTo determine if the other LptD loops had differential activities in these two strains, we monitored the growth of all of the LptD loop variants in both the E. coli K-12 and E. coli \u0394waaD strain backgrounds over time in liquid growth media. In the presence of arabinose, which induces a chromosomal wild-type lptD, all strains had similar growth patterns (Figure 3\u2014figure supplement 1C). In the absence of arabinose, the E. coli K-12 strain producing LptD\u0394L10 grew, but at a decreased rate, and the strain with LptD\u0394L2 exhibited a dramatically prolonged lag phase and severe growth phenotype (Figure 3C and Supplementary file 1). In contrast, E. coli \u0394waaD expressing LptD\u0394L10 did not grow at all, but expression of LptD\u0394L2 supported growth in liquid media (Figure 3D and Supplementary file 1). Thus, L2 and L10 are important for LptD folding, activity, interaction with the \u03b2-barrel assembly machinery component BamA, or a combination of these. Also, the LptD\u0394L10 loop deletion mutant was better tolerated in E. coli K-12 compared to the LPS-truncated \u0394waaD strain while in liquid growth media the LptD\u0394L2 mutant is better tolerated in the E. coli \u0394waaD strain. This result is consistent with the synthetic lethality of other mutations that affect OM biogenesis, specifically bam101, \u0394bamB, \u0394surA, and \u0394lpxL, in LPS-truncated E. coli strain backgrounds (Klein et al., 2009; Storek et al., 2019) highlighting the redundancy that exists to maintain this important barrier structure.\n\nThe lptD\u0394L4 mutant used in this study encompassed the imp4213 allele. This particular loop mutant is viable but increases membrane permeability and sensitivity to OM-excluded antibiotics (Sampson et al., 1989). We tested whether the strains producing other LptD loop mutants had increased membrane permeability by measuring sensitivities to rifampicin and vancomycin, two antibiotics excluded by the Gram-negative bacteria OM. The minimal inhibitory concentrations (MICs) of both rifampicin and vancomycin were lower for strains producing LptD\u0394L4, as expected, and also for strains producing LptD\u0394L2, LptD\u0394L8, and LptD\u0394L10 indicating an OM defect (Table 1). Increases in OM permeability were observed in both E. coli K-12 and E. coli \u0394waaD strain backgrounds. These results suggest that extracellular L2, L4, L8 and L10 are important for LptD function and potentially influence LptD folding, interaction with BamA, or activity.\n\n**Table 1.**\n Removal of extracellular LptD loops sensitizes E. coli to OM-excluded antibiotics.\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th colspan=\"4\">MIC (\u00b5g/ml)*</th>\n    </tr>\n    <tr>\n      <th></th>\n      <th colspan=\"2\">Vancomycin</th>\n      <th colspan=\"2\">Rifampicin</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>LptD\u2020</td>\n      <td>WT\u2021</td>\n      <td>\u0394waaD\u00a7</td>\n      <td>WT</td>\n      <td>\u0394waaD</td>\n    </tr>\n    <tr>\n      <td>WT</td>\n      <td>128</td>\n      <td>64</td>\n      <td>8</td>\n      <td>0.125</td>\n    </tr>\n    <tr>\n      <td>\u0394L1</td>\n      <td>128</td>\n      <td>64</td>\n      <td>4</td>\n      <td>0.125</td>\n    </tr>\n    <tr>\n      <td>\u0394L2</td>\n      <td>8</td>\n      <td>4</td>\n      <td>0.25</td>\n      <td>0.0625</td>\n    </tr>\n    <tr>\n      <td>\u0394L3</td>\n      <td>128</td>\n      <td>16</td>\n      <td>4</td>\n      <td>0.125</td>\n    </tr>\n    <tr>\n      <td>\u0394L4</td>\n      <td>16</td>\n      <td>1</td>\n      <td>0.25</td>\n      <td>0.0156</td>\n    </tr>\n    <tr>\n      <td>\u0394L5</td>\n      <td>128</td>\n      <td>64</td>\n      <td>8</td>\n      <td>0.125</td>\n    </tr>\n    <tr>\n      <td>\u0394L6</td>\n      <td>128</td>\n      <td>64</td>\n      <td>2</td>\n      <td>0.0625</td>\n    </tr>\n    <tr>\n      <td>\u0394L7</td>\n      <td>128</td>\n      <td>64</td>\n      <td>4</td>\n      <td>0.125</td>\n    </tr>\n    <tr>\n      <td>\u0394L8</td>\n      <td>16</td>\n      <td>4</td>\n      <td>0.125</td>\n      <td>0.0625</td>\n    </tr>\n    <tr>\n      <td>\u0394L9</td>\n      <td>128</td>\n      <td>128</td>\n      <td>4</td>\n      <td>0.125</td>\n    </tr>\n    <tr>\n      <td>\u0394L10</td>\n      <td>64</td>\n      <td>NG</td>\n      <td>2</td>\n      <td>NG</td>\n    </tr>\n    <tr>\n      <td>\u0394L11</td>\n      <td>128</td>\n      <td>64</td>\n      <td>8</td>\n      <td>0.125</td>\n    </tr>\n    <tr>\n      <td>\u0394L12</td>\n      <td>128</td>\n      <td>64</td>\n      <td>8</td>\n      <td>0.125</td>\n    </tr>\n    <tr>\n      <td>\u0394L13</td>\n      <td>128</td>\n      <td>64</td>\n      <td>8</td>\n      <td>0.125</td>\n    </tr>\n  </tbody>\n</table>\n\n_*Minimum inhibitory concentration (MIC) is the lowest concentration of antibiotic that completely inhibits bacterial growth.\u2020Conditional lptD E. coli strains carry an arabinose-inducible wild-type lptD and a plasmid-encoded copy of lptD with the indicated loop deletions (as indicated in Figure 3A). Only the plasmid copy of lptD is expressed in the absence of arabinose.\u2021The wild-type (WT) strain is a conditional E. coli K-12 with a chromosomal arabinose-inducible lptD.\u00a7The \u0394waaD strain is a conditional E. coli \u0394waaD mutant with a chromosomal arabinose-inducible lptD._\n\n### Mapping surface loop binding sites of \u03b1-LptD antibodies\n\nWe utilized our lptD loop deletion panel to map the \u03b1-LptD mAb surface coverage in a native E. coli membrane environment. We characterized binding of 52 FACS+ \u03b1-LptD mAbs to the E. coli \u0394waaD loop deletion panel. In the absence of arabinose driving expression of the chromosomal wild-type lptD, production of each mutant LptD was detected and growth of the E. coli \u0394waaD conditional lptD strain was supported by all LptD loop deletion mutants with the exception of L10, so this construct was not tested in this assay (Figure 3B and Figure 3\u2014figure supplement 1B). The mAbs in the panel were confirmed to bind to an E. coli \u0394waaD strain expressing wild-type lptD (Figure 4A). We expected that if an extracellular LptD loop was critical for binding, removing the loop would reduce \u03b1-LptD mAb binding. The lack of binding by any particular mAb to a LptD loop mutant could be due to removal of the mAb binding site, in part or in full, or a structural change that alters the mAb binding site when a loop is removed. The majority of the \u03b1-LptD mAbs could be categorized into one of 7 general binding patterns based on the mutants they were unable to bind with multiple representatives in each grouping: (1) Loop 4 (L4), (2) Loop 6/7 (L6/L7), (3) Loop 6/7/8 (L6/L7/L8), (4) Loop 8/9 (L8/L9), (5) Loop 9 (L9), (6) Loop 11 (L11), and (7) Loop 13 (L13) (Figure 4B and Figure 4\u2014figure supplement 1). Thus, our immunization campaigns produced antibodies that allow systematic probing of accessible ELCs around the LptD structure.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/46258/elife-46258-fig4-v1.jpg)\n\n**Figure 4.:** (A) 52 FACS+ LptD mAbs were screened for FACS binding to E. coli \u0394waaD expressing wild-type lptD. The mean fluorescent intensities (MFIs) are plotted. The blue bars highlight the eight representative mAbs shown below in 4B. Antibodies originating from different hosts are labeled. The dotted line is the MFI of an LptD FACS- antibody. (B) FACS analysis of 8 representative \u03b1-LptD mAbs for binding to E. coli \u0394waaD expressing wild-type LptD and the 12 viable loop deletions. Loop 10 could not be assessed (see text). The MFIs above background are plotted. The red dashed lines represent a descriptive MFI level that is 10% that of the WT control. The remaining antibodies from (A) are shown in Figure 4\u2014figure supplement 1. (C) Top view of LptD structure from E. coli LptDE with LptE removed highlighting extracellular L2 (pink), L8 (orange), and L10 (green) rendered in PyMol (PDB 4RHB [Malojcic et al., 2015]).\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/46258/elife-46258-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** 52 FACS\u00a0+LptD mAbs were screened for FACS binding to E. coli \u0394waaD expressing each lptD loop mutant (except L10, see text). The mean fluorescent intensities (MFIs) above background are normalized to the MFIs of E. coli \u0394waaD expressing wild-type lptD and plotted. The antibodies are in the same order as Figure 4A and the blue bars highlight the eight representative mAbs shown in Figure 4B. The solid bars represent antibodies that are ELISA+ for at least two species and hashed bars represent antibodies that are ELISA+ only for E. coli LptDE (Figure 2D).\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/46258/elife-46258-fig4-figsupp2-v1.jpg)\n\n**Figure 4\u2014figure supplement 2.:** Bacterial growth was measured (OD600) for (A) E. coli \u0394waaD and (B) E. coli K-12 after treatment with one representative plate of \u03b1-LptDE mAbs at 10 \u00b5g/mL for 4 hr. Black dashed line indicates media only control. Blue dashed line indicates 50% growth inhibition compared to no treatment.\n\nIn some cases, for example, a representative E. coli K-12 FACS+ \u03b1-LptD mAb (Figure 2\u2014figure supplement 1B), no loop mutant dramatically altered antibody binding. This pattern suggests a surface-exposed epitope was present that was not altered in these particular loop mutants or the mAb bound a composite epitope that was not sufficiently disrupted by loss of a portion of the epitope encompassed by one individual loop deletion (Figure 4B). This could be especially true for L8 as the deletion encompassed only part of the loop that, based on structural models, is likely to occupy the LptD lumen while additional exposed portions were left unchanged (Figure 4C).\n\nFor every loop deletion, at least one FACS+ \u03b1-LptD mAb had reduced cell binding by\u00a0>90%. The notable exceptions were L1, L2, L5 and L12, but mAbs could be found that exhibited\u00a0>80% decreased binding for L1, L5 and L12. Comparing these data with the species cross-reactivity and in vitro binding competition epitope map provided a complete picture of the mAb accessible surface of LptD. Specifically, a majority of the two- and three-species cross-reactive \u03b1-LptD mAbs were dependent upon L8, L9, or both for binding (Figure 2B, Figure 2D, Figure 2\u2014figure supplement 2, Figure 4B, and Figure 4\u2014figure supplement 1). The cross-reactive mAbs 5A3 and 3D4 exhibited slightly different binding requirements, L6/L8/L9/L11 and L7/L8, respectively, consistent with these mAbs recognizing different epitopes in our in vitro binning experiment (Figure 2D). Additionally, E. coli-specific \u03b1-LptD mAbs, but not the three-species cross-reactive mAbs, were defective for binding upon removal of L3, L7, or L13 (Figure 2B, Figure 2D, Figure 2\u2014figure supplement 2, Figure 4B, and Figure 4\u2014figure supplement 1). These \u03b1-LptD mAbs and knowledge of their binding sites are valuable tools for probing the accessible LptD surface and suggest that LptD can tolerate extensive alteration to its extracellular surface with little or no effect on folding or function.\n\nBecause distinct antibody discovery approaches were utilized, we were also able to evaluate the potential correlation of LptD targeting with regard to the immunization campaign. Partitioning the mAbs with respect to the host animal used for immunization highlighted a trend for L6, L7, and L8 to be critical from the rat immunization campaign, while mAbs from the mouse immunization campaign tended to yield FACS+ antibodies that required L8 and L9. Because these animals are likely not tolerized to the foreign bacterial LptD protein, this difference could reflect differences in the types of binding sites presented for rat versus mouse antibodies. Thus, even within these immunization campaigns, diverse binding profiles to the loop mutants were seen (Figure 4B and Figure 4\u2014figure supplement 1).\n\n### LptD ECLs critical for function are not accessible\n\nA potential application of antibodies raised against extracellularly-exposed bacterial proteins is as direct-acting antibacterial molecules (LaRocca et al., 2009; Storek et al., 2018). Disruption of L2 or L10 resulted in growth defects for E. coli \u0394waaD (Figure 3B), however, we did not identify any \u03b1-LptD mAbs that bound L2, and both L2 and L10 appear to be inaccessible in available structural models of LptD (Figure 4C) (Botos et al., 2016; Dong et al., 2014; Qiao et al., 2014). Indeed, when we screened our entire antibody catalog using growth inhibition as a readout for mAb activity, we did not identify any \u03b1-LptD mAbs able to inhibit growth of E. coli K-12 or E. coli \u0394waaD by\u00a0>50% (Table 2 and Figure 4\u2014figure supplement 2). Combined with our LptD loop deletion analysis, the lack of ability to identify an inhibitory \u03b1-LptD mAb suggests that LptD may be specifically evolved to withstand extracellular modulation by antibodies while protecting critical structural elements of LptD function.\n\n**Table 2.**\n mAbs to accessible ECLs do not inhibit essential function of LptD.\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th></th>\n      <th></th>\n      <th colspan=\"3\">Growth inhibitory \u03b1-LptD mAbs*</th>\n    </tr>\n    <tr>\n      <th>Antigen</th>\n      <th>Host</th>\n      <th>Clones</th>\n      <th>K-12\u2020</th>\n      <th>\u0394waaD\u2021</th>\n      <th>\u0394waaD\u00a0+\u00a0Rif.\u00a7</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Linear and cyclic LptD peptides</td>\n      <td>SD Rats</td>\n      <td>576</td>\n      <td>0</td>\n      <td>0</td>\n      <td>0</td>\n    </tr>\n    <tr>\n      <td>Purified LptDE</td>\n      <td>Mice</td>\n      <td>3360</td>\n      <td>0</td>\n      <td>0</td>\n      <td>0</td>\n    </tr>\n    <tr>\n      <td>Purified LptDE</td>\n      <td>SD Rats</td>\n      <td>2400</td>\n      <td>0</td>\n      <td>0</td>\n      <td>0</td>\n    </tr>\n    <tr>\n      <td>Cells and purified LptDE</td>\n      <td>SD Rats</td>\n      <td>1494</td>\n      <td>0</td>\n      <td>0</td>\n      <td>0</td>\n    </tr>\n  </tbody>\n</table>\n\n_*For each antibody campaign, bacterial growth was measured (OD600) for E. coli \u0394waaD and E. coli K-12 after treatment with each antibody at 10 \u00b5g/mL for 4 hr. Growth inhibition was calculated as a percentage of growth compared to an untreated control. 50% growth inhibition was considered positive.\u2020WT (wild-type) is E. coli K-12.\u2021\u0394waaD is an E. coli \u0394waaD.\u00a7\u0394waaD\u00a0+\u00a0Rif. is E. coli \u0394waaD grown in the presence sub-inhibitory rifampicin_\n\n## Discussion\n\nThe OM is a critical feature of Gram-negative bacteria and presents a barrier to the discovery of new antibiotics (Lewis, 2013). There are two essential OMPs embedded in the OM and involved in construction of the OM barrier. BamA is part of the \u03b2-barrel assembly machine that folds and inserts \u03b2-barrel OMPs, including BamA and LptD, into the OM (Konovalova et al., 2017; Ricci and Silhavy, 2012). LptD is the last protein in the Lpt pathway that establishes and maintains OM asymmetry by inserting LPS exclusively into the outer leaflet of the OM (Okuda et al., 2016). Despite the importance of these \u03b2-barrel OMPs, understanding of how their structures contributes to their folding and function is still incomplete.\n\nSimilar to other Gram-negative \u03b2-barrel OMPs, both BamA and LptD possess short periplasmic loops but long, variable, and environmentally-exposed ECLs (Franklin and Slusky, 2018; Rollauer et al., 2015; Schulz, 2002). A deeper examination of the roles of these ECLs in a native OM context could contribute to a greater understanding of how they contribute to the structure and function of OMPs in general. To systematically interrogate the LptD ECLs, we performed four antibody discovery campaigns to generate thousands of antibodies targeting LptD to probe structure-function relationships of this essential OMP in its native OM environment. The unusual breadth and depth of our approach represents a powerful way to probe the accessible surfaces of the ECLs of LptD and to tease apart the changes that accompany LPS insertion by LptD in the native OM environment of the bacterial cell. By characterizing hundreds of these \u03b1-LptD mAbs, we discovered that extensive portions of the extracellular surface of LptD are dispensable in E. coli and critical features of LptD are likely occluded and protected by non-essential loops (Figure 5).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/46258/elife-46258-fig5-v1.jpg)\n\n**Figure 5.:** Side view of LptD structure rendered in PyMol from E. coli LptDE with LptE removed (PDB 4RHB [Malojcic et al., 2015]). LptD was placed in a standard phosphatidylethanolamine membrane context (shown as cyan and red space fill) using MemProtMD database (Stansfeld et al., 2015). Antibody accessible, non-essential ECLs L3, L6, L7, L9, L11, and L13 are highlighted in pink and antibody inaccessible ECLs L2 and L10 are indicated.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/46258/elife-46258-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) Amino acid sequence alignments of each LptD ECL comparing E. coli (Ecoli), Pseudomonas aeruginosa (Paeruginosa), Acinetobacter baumannii (Abaumannii), K. pneumoniae (Kpneumoniae), and E. cloacae (Ecloacae). Boundaries for the ECLs in E. coli are highlighted. (B) Consurf analysis (consurf.tau.ac.il/2016) of LptD \u03b2-barrel with 150 sequences that are 35\u201395% identical to LptD from the E. coli (PDB 4RHB [Malojcic et al., 2015]) using the default settings. Deeper maroon colors are conserved and deeper cyan colors are more variable.\n\nLittle is known about the role and dynamics of the ECLs of LptD in the function of LPS insertion into the OM and there are few available tools to study this process. In an effort to probe as many extracellular epitopes as possible, we generated a large, diverse \u03b1-LptD mAb library by undertaking multiple immunization campaigns utilizing different antigens, adjuvants, and hosts. Varying antigens systematically presented LptD in increasingly complex arrangements to potentially capture different available epitopes. First, peptide immunizations utilized both linear peptides derived from conserved and non-conserved LptD ECL sequences and cyclic variants in an effort to constrain particular conformations. Next, purified full-length LptDE immunizations aimed to capture a more native state of the ECLs. Because the matrix in which the protein is reconstituted can alter the conformational flexibility and exposure of membrane-proximal epitopes, we utilized multiple reconstitution matrices (i.e., detergents and amphipols). Finally, using an approach that we have recently leveraged to find rare, inhibitory \u03b1-BamA antibodies, a targeted boost-and-sort strategy, we immunized rats with sub-lethal E. coli infections and then boosted them with purified LptDE protein to enrich for any LptD antibody response (Vij et al., 2018). Taken together, our effort to maximize the epitope coverage in our \u03b1-LptD mAb library led to distinct clusters of antibodies that possessed differing abilities to cross-react with LptD species variants, required different ECLs for binding, and exhibited varying levels of access to LptD through the protective LPS layer. Although the full breadth of antibody diversity in our library required the multiple immunization approaches described here, we propose a streamlined workflow for future OMP efforts. An accessible approach is to immunize SD rats with recombinant purified OMP either with or without whole bacterial cells (strategies 3 and 4, Figure 1). Both of these workflows returned the highest percentages of FACS+ antibodies coupled with recognition of diverse epitopes (Figure 2, Figure 4B, and Figure 4\u2014figure supplement 1). Given the ease of manipulating bacterial strains, it could even be possible to steer immunizations towards particular ECLs by initially immunizing with a \u0394ECL-OMP strain followed by boosting with recombinant protein.\n\nOther scaffolds or antibodies from different host species might be able to recognize distinct epitopes on the exposed portions of LptD. For example, recognition of partially buried epitopes could be achieved using species, such as rabbits, chickens, llamas, or camels, that contain longer CDRH3s that are better suited to reach into cavities on a particular antigen (Lavinder et al., 2014; Muyldermans and Smider, 2016). In the case of the mouse and rat antibodies described here, we found that seven different LptD ECLs, out of a total of 13, could affect binding of the mAbs and the remaining six loops are likely partially or fully buried based on models from crystal structures (Botos et al., 2016; Dong et al., 2014; Qiao et al., 2014) (Figure 5). When this \u03b1-LptD mAb campaign is combined with of our \u03b1-BamA mAb effort (Storek et al., 2018; Vij et al., 2018), we now have the ability to probe the structure-function relationships of the only two essential OMPs in their native OM environment in E. coli at a level not previously possible. Importantly, we note the antibody discovery methods that we describe herein are efficient, robust, and a streamlined approach can be readily applied within a standard laboratory setting.\n\nWe have observed that in LptD there appear to be differential requirements for particular ECLs, L2 and L10, depending on the structure of LPS, specifically wild-type LPS versus the truncated \u0394waaD LPS. Notably, BamA appears to be defective in the highly fluid OM of an LPS-truncated strain grown under low salt and high temperature conditions (Storek et al., 2018). This is manifest by an increased sensitivity to a recently discovered inhibitory \u03b1-BamA antibody MAB1 and a requirement for elevated BamA levels. In these cases, the defects can be suppressed by altering the conditions to increase membrane rigidity (Storek et al., 2019). The LPS-dependent requirement for LptD loops suggests that effects of the OM structure on OMPs might be more general. Among the 13 extracellular LptD loops, both L2 and L10 are short and lack large insertions or deletions across LptD homologs when compared to the longer loops in highly divergent LptD proteins (Figure 5\u2014figure supplement 1A). One possible reason for this is that these loops are uniquely positioned to make interactions with the LPS in the OM to allow for proper folding or functioning of this essential OMP. Although these interpretations are speculative and complicated by the fact that LPS is the substrate for LptD, it is tempting to hypothesize that the structure and function of OMPs evolved to be maximal when embedded in the constrained, liquid crystalline, OM matrix (Paracini et al., 2018) and altering the nature of this membrane leads to defects. Thus, membrane environment is a critical consideration when interpreting biochemical and structural data of LptD and other OMPs in detergent micelles and must be considered when attempting to design or discover inhibitors of these essential processes in Gram-negative bacteria.\n\nGenetic, biochemical, and structural data support a model for LPS insertion into the OM whereby the acyl chains of lipid A are inserted into the hydrophobic bilayer through a lateral gate created between the first and last strands of the LptD \u03b2-barrel (Botos et al., 2016; Dong et al., 2014; Qiao et al., 2014). It is less clear how the polar sugars of the core oligosaccharide and O-antigen emerge from the periplasm to the cell exterior as it would be unfavorable for them to pass directly through the membrane. Presumably the sugars must pass through the LptD transmembrane \u03b2-barrel lumen, which is also occupied by an essential lipoprotein, LptE, and then through a proposed opening in the surface-exposed cap of LptD. Thus, consistent with prior molecular dynamic simulations, there are likely major structural surface re-arrangements in LptD during LPS insertion (Dong et al., 2014). Given this model, we hypothesized that an antibody could have interfered with this process in a number of ways. For example, a mAb could staple the lateral gate in either a closed or open conformation, prevent the movements associated with expelling the sugars to the outside, or allosterically alter the protein so that LPS movement is thwarted. It is informative, therefore, that none of our identified \u03b1-LptD mAbs were able to inhibit the activity of LptD. One explanation is that binding to a single epitope is insufficient to disrupt the required movements of LptD. Alternatively, the positions on LptD critical for these presumed structural changes might be inaccessible to mAbs. Indeed, few or no \u03b1-LptD mAbs bound to the extracellular LptD loops that were found genetically to be important for viability or OM maintenance under specific conditions. Consistent with this possibility, in crystal structures of LptDE, the two loops we found most critical were occluded by other parts of the protein: L2 by L3, and L10 by L9 and L11 (Dong et al., 2014; Qiao et al., 2014).\n\nBy burying critical regions, LptD appears to avoid direct interference by antibodies, providing bacteria an evolutionary advantage in evading functional antagonism by the host immune system. Accordingly, the antibody-accessible LptD loops also are the most diverse in sequence, suggesting that these regions may be subject to selective pressures from the immune system (Botos et al., 2016) (Figure 5\u2014figure supplement 1B). Moreover, the proximity of a particular epitope to the membrane can sterically or electrostatically block binding. However, in rare cases, recognition can be achieved via stabilizing hydrophobic residues in an antibody CDR that transiently interact with the membrane, as observed for several \u03b1-HIV or \u03b1-GPCR antibodies (Ishchenko et al., 2017; Scherer et al., 2010). It remains to be seen whether immobilizing these loops in LptD, for example, with a small molecule or peptide macrocycle that can access these positions, would inhibit LptD activity. While our observations make direct interference with LptD function by antibodies unlikely, they do not rule out the potential value of LptD as a vaccine candidate (Zha et al., 2016).\n\nOverall, our study represents an exhaustive \u03b1-LptD antibody discovery campaign, and potentially the most exhaustive on any membrane protein described to date. For the first time, we have been able to map essential and non-essential structural features of this intriguing and important potential antibiotic target. We have observed extreme tolerability of the ECLs to interference, suggesting that the architecture of the exposed ECLs of LptD play a role in protecting critical functions of this essential OMP. More generally, we provide a robust template for future efforts to dissect the structure-function relationships of complex membrane proteins from bacteria and mammals in their native environments, and a method to rapidly assess the therapeutic potential of antibody targeting.\n\n## Materials and methods\n\n### Growth conditions\n\nLuria-Bertani broth (ThermoFisher Scientific 12795027) and Mueller Hinton II cation-adjusted broth (BBL 212322) was prepared according to manufacturer's instructions. Bacterial cultures were grown at 37\u00b0C. When appropriate, media was supplemented with kanamycin (50 \u03bcg/mL), carbenicillin (50 \u03bcg/mL), chloramphenicol (12.5 \u03bcg/mL), hygromycin (200 \u03bcg/mL), gentamicin (10 \u03bcg/mL) and arabinose (0.2% vol/vol).\n\n### Bacterial strains and plasmids\n\nBacterial strains and relevant primers are listed in Supplementary file 2. Kanamycin deletion-insertion mutations of waaD was obtained from the Keio collection (Baba et al., 2006). Briefly, pKD4 or pKD3 was amplified with primers containing 50 bp nucleotide homology extensions (Supplementary file 2) to the gene of interest. The linear product was transformed into the appropriate background strain containing pSIM18 (Chan et al., 2007) recovered for 4 hr and selected on media containing 50 \u03bcg/mL kanamycin or 12.5 \u03bcg/mL chloramphenicol as appropriate. Mutations were confirmed by PCR. To make sequential mutants, the antibiotic marker was flipped out using pCP20 (Datsenko and Wanner, 2000).\n\nThe conditional lptD strain, \u0394lptD::PBAD-lptD, was created by inserting PBAD-lptD at the attB site in MG1655 followed by deletion of the native copy of lptD (Datsenko and Wanner, 2000; Diederich et al., 1992). Briefly, lptD was cloned into pBAD24 using standard methods. PBAD-lptD was amplified from pBAD24-lptD and sub-cloned into pLDR9. pLDR9-PBAD-lptD was digested with XbaI, ligated, and transformed into MG1655 expressing pLDR8. PCR and DNA sequencing confirmed insertion of PBAD-lptD at the attB site. After integration of PBAD-lptD, the native copy of lptD was deleted using \u03bb Red recombination as described above. In the absence of arabinose, the conditional DlptD::PBAD-lptD strain did not grow. To obtain a conditional lptD strain truncated for LPS, waaD was deleted using \u03bb Red recombination.\n\nTo clone the loop mutants into the lptD conditional strains, pLMG18 was modified to replace the original antibiotic cassette providing chloramphenicol resistance with a gentamicin resistance cassette using Gibson Assembly. The lptD gene and mutant constructs were codon optimized and ordered as gBlocks (Integrated DNA technologies). The genes were amplified and cloned into pLMG18gm using Gibson Assembly. Clones were confirmed by sequencing.\n\n### Expression and purification of E. coli LptDE\n\nThe E. coli LptDE expression plasmid was constructed by cloning E. coli LptD (amino acids 1\u2013784) and E. coli LptE (amino acids 1\u2013193) into pCDFDuet1 vector at the first and second multiple cloning sites. An AviTag followed by an 8x histidine tag was inserted into N-terminal of E. coli LptD. The expression plasmid was expressed in E. coli C41(DE3). When the OD600 reached 0.9, cells were induced with 0.5 mM isopropyl-\u03b2-D-1 thiogalactopyranoside (IPTG) overnight at 18\u00b0C. Cells were harvested by centrifugation at 4500 rpm for 15 min and the cell pellets were resuspended in lysis buffer (50 mM Tris, pH 8.0, 200 mM NaCl, 1x complete protease inhibitor mixture (Roche)). The resuspended cells were disrupted by passing through a microfluidizer at 10,000 psi three times. The cell lysate was added with 2% Zwittergent 3\u201314 and rocked overnight at 4\u00b0C. The suspension was ultracentrifuged (45Ti rotor, 40,000 rpm) for 1 hr at 4\u00b0C. The supernatant was incubated with pre-equilibrated Ni-NTA resins (Qiagen) and rocked for 1 hr at 4\u00b0C. The resins were washed by the buffer containing 50 mM Tris, pH 8.0, 200 mM NaCl, 1% Zwittergent 3\u201314, 15 mM imidazole, 1x complete protease inhibitor mixture and eluted with the buffer consisting of 50 mM Tris, pH 8.0, 200 mM NaCl, 1% Zwittergent 3\u201314, 300 mM imidazole and 1x complete protease inhibitor mixture. The eluate was concentrated and purified by a Superdex 200 16/60 column (GE Healthcare) using 20 mM HEPES, pH 8.0, 100 mM NaCl, 1.5% n-Octyl-\u03b2-D-Glucopyranoside (OG; Anatrace), 1x complete protease inhibitor mixture as the running buffer. The obtained LptD/E protein was diluted 4-fold into the buffer of 20 mM HEPES, pH 8.0, 1.5% OG and further polished using Q HP anion exchange 5 ml column (GE Healthcare). 20 mM HEPES, pH 8.0, 25 mM NaCl, 1.5% OG was used as the start buffer and elution was achieved with linear gradient of 0.025\u20131 M NaCl. When protein was required in amphipol, LptD/E protein was incubated with biotinylated amphipol (Anatrace) overnight at 4\u00b0C and then purified over a Superdex 200 16/60 column in a buffer consisting of 20 mM HEPES, pH 8.0, 100 mM NaCl.\n\n### Peptide pools\n\nPeptide pools are listed in Supplementary file 3. Peptides were designed based on sequence conservation, surface exposure and loop location.\n\n### Protein biotinylation, amphipol reconstitution, and PE-labeling\n\nWhen LptDE protein was required for ELISA or antigen-based sorting, an in vitro biotinylation reaction using BirA enzyme targeting the N-terminal Avi tag was first carried out according to the manufacturer's suggestions (Avidity); LptDE was then rerun over the Superdex 200 (26/60) in buffer E as described above in order to remove free biotin and other reaction components. When protein was required in amphipol (either non-biotinylated or biotinylated), LptDE at 1 mg/mL in buffer E was incubated with a stock solution of 2 mg/mL A8-35 amphipol (Anatrace) at 22\u00b0C for 1 hr and then applied over a Superdex 200 (26/60) column in buffer F (50 mM Tris pH 8, 100 mM NaCl). Protein reconstituted in A8-35 amphipol for immunization was concentrated to 1 mg/mL using a centrifugal device (10 K MWKO; Millipore). When PE-labeled protein was required for antigen-specific sorting, LptDE at 1 mg/mL (biotinyated and reconstituted in A8-35 amphipol in buffer F) was mixed 1:1 (vol/vol) with PE-streptavidin (Jackson ImmunoResearch) reconstituted in buffer F; the PE-streptavidin-biotin-LptDE-amphipol complex was incubated at 22\u00b0C for at least 15 min prior to use.\n\n### Generation and purification of hybridomas\n\nAll animal study designs for the mouse and rat immunizations were reviewed and approved by the Genentech Institutional Animal Care and Use Committee prior to the start of this work. All animal work was performed in accordance with relevant guidelines and regulations.\n\n### Generation of murine hybridomas\n\nLptD peptide immunization campaign immunized Balb/c mice (Charles River Laboratories, Hollister, CA) with cyclic and linear LptD peptide pools (Supplementary file 3). The initial immunization contained 100 \u03bcl Complete Freund\u2019s Adjuvant (CFA) and subsequent dosing included 100 \u03bcl Incomplete Freund\u2019s Adjuvant (IFA) (Sigma). pAbs were purified by Protein A and assayed by ELISA, FACS, and inhibition of bacterial growth as described below. Hybridoma fusions were performed as previously described and supernatants were screened for protein binding by ELISA (Hazen et al., 2014). All ELISA positive clones were purified and screened for inhibition of bacterial growth.\n\nLptDE protein immunization campaign immunized Balb/c mice (Charles River Laboratories, Hollister, CA) with detergent-solubilized or amphipol-reconstituted E. coli LptDE protein and either CFA or Ribi adjuvants (Sigma). pAbs were purified and screened as described above.\n\n### Generation of rat hybridomas\n\nLptDE protein immunization campaign immunized Sprague Dawley rats (Charles River Laboratories, Hollister, CA) with detergent-solubilized or amphipol-reconstituted E. coli LptDE protein and either CFA or Ribi adjuvants (Sigma). pAbs were purified and screened as described above.\n\nBacterial immunization campaign immunized Sprague Dawley rats (Charles River Laboratories, Hollister, CA) with E. coli K-12 cells in PBS (107\u2013109 colony forming units via intravenous injection). The rats were boosted four times with E. coli K-12 cells followed by two protein boosts with 10 \u03bcg E. coli LptDE protein in amphipol. To generate monoclonal antibodies, hybridoma fusions were performed as previously described except with a myeloma partner SP2ab that enables surface display of IgG cell (Hazen et al., 2014; Price et al., 2009). After HAT selection in ClonaCell-HY Medium C (StemCell Technologies) for 4 days, hybridomas were stained with a cocktail of FITC-conjugated anti-rat IgG1/IgG2a/IgG2b mAbs (1:100 dilution; Bethyl Laboratories) and PE-conjugated LptDE protein antigen (5 \u03bcg/\u03bcl). Samples were sorted on a FACSAria II cell sorter (BD Biosciences). Gating strategy to identify hybridoma cells was first based on size (FSC/SSC). After dead-cell exclusion with Propidium iodide (Sigma-Aldrich P-4864), IgG\u00a0+LptDE\u00a0+ single cell hybridomas were sorted into 96-well tissue-culture plates containing 200 \u03bcl of ClonaCell-HY Medium E (StemCell Technologies). Profiles were analyzed by FlowJo v.9.7.7 software. Sorted cells were cultured for seven days.\n\n### Hybridoma culture and purification\n\nHybridomas were cultured using a previously described semi-automated high throughput process for hybridoma culturing and antibody purification (Vij et al., 2018).\n\n### Epitope binning and affinity characterization\n\nEpitope bins were determined by 96\u00a0\u00d7\u00a096 array-based SPR imaging system (Carterra, USA) using classical sandwich method. Purified antibodies were diluted at 20 \u03bcg/ml in 10 mM sodium acetate buffer pH 4.5. Using amine coupling, antibodies were directly immobilized onto a SPR sensorprism CMD 200 M chip (XanTec Bioanalytics, Germany) using a Continuous Flow Microspotter (Carterra, USA) to create an array of 96 antibodies. For antibody binning, printed chip was loaded on IBIS MX96 SPRi (Carterra USA) and E. coli LptDE protein, diluted to 50 nM in 1.5% bOG HBS-P buffer, was injected over the chip at 25\u00b0C followed by a second injection of purified antibody, diluted at 20 \u03bcg/ml in 1.5% bOG HBS-P buffer, to make a sandwich. The epitope binning data were processed using Carterra binning software tool. Epitope binning experiments were performed as part of our high throughput antibody screening workflow and are purely descriptive.\n\n### Antibody activity assay\n\nThe test strain was grown to log phase in MHB II supplemented with 0.002% Tween-80, diluted to a final OD600 0.01 in sterile round-bottom 96-well plates (Costar). Antibodies were added at 10 \u03bcg/mL, incubated statically at 37\u00b0C and monitored for bacterial growth after 4 hr of static incubation. A plate reader at OD600 measured optical density of bacterial growth after shaking the plate for 25 s. Bacterial inhibition was calculated by subtracting the OD600 value from the media control, followed by dividing that value by the no antibody control OD600 value. Antibody activity experiments were performed as part of our high throughput antibody screening workflow and are purely descriptive.\n\n### ELISA\n\nAntibodies were screened by capture ELISA. Briefly, 50 \u00b5l of biotinylated LptDE protein, diluted in assay buffer (PBS\u00a0+\u00a01.5% OG\u00a0+0.5% BSA) was added to streptavidin coated 384 well plates (Thermo Scientific USA, Cat # 15504) and incubated at RT for 1 hr, while shaking. The plates were washed 3X with wash buffer (PBS\u00a0+\u00a01.5% OG). 50 \u00b5l of supernatants or purified antibody, neat or diluted in assay buffer, were added to the wells and incubated at RT for 1 hr, while shaking. The plates were washed 3X with wash buffer. The captured antibody was detected with goat anti-rat HRP or goal anti-mouse HRP secondary antibody as appropriate (50 \u03bcl per well diluted at 1:10K in assay buffer, Bethyl Laboratories USA, Cat # A110-236P). The plates were incubated at RT for 1 hr, washed 3X with wash buffer and 50 \u00b5l of substrate, TMB solution (Surmodics, USA Cat # TMBW-1000), was added to each well. The plates were incubated for 5 min at RT followed by addition of 50 \u03bcl of TMB stop solution (Surmodics, USA Cat # LPSP-1000). Plates were read at 630 nm. ELISA assays were performed as part of our high throughput antibody screening workflow and are purely descriptive.\n\n### Bacterial flow cytometry assays\n\nBacterial cells were grown to log phase, pelleted, re-suspended in ice-cold PBS with 1% BSA, and normalized to an OD600 of 0.5. Bacterial suspensions were diluted 1:2.5 in ice-cold PBS, 1% BSA and 2\u00a0\u00d7\u00a0106 CFU were incubated with 10 \u00b5g/ml mAb at 4\u00b0C for 1 hr under gentle agitation. Bacterial cells were then washed three times in ice-cold PBS, 1% BSA and labeled using Alexa 488 anti-mouse IgG (H\u00a0+\u00a0L) (1:1000; Invitrogen) or Alexa 488 anti-rat IgG (H\u00a0+\u00a0L) (1:1000; Invitrogen) for 30 min 4\u00b0C. After three washes in ice-cold PBS, bacterial cells were fixed by adding one vol. of 2% w/v paraformaldehyde in PBS. Samples were run on a BD FACSCalibur and data from 10,000 events were analyzed using FlowJo software. FACS experiments were performed as part of our high-throughput antibody screening workflow and are purely descriptive. An isotype matched antibody was used as a negative control.\n\n### Western blots\n\nBacterial cells were grown to log phase, normalized to OD600, and pelleted. Samples were resuspended in 1x LDS sample buffer (ThermoFisher Scientific) and boiled for 5 min prior to loading on a 4\u201312% Bis-Tris SDS-PAGE gel. Proteins were transferred onto cellulose membranes using the iBlot 2 Dry Blotting System (ThermoFisher Scientific). Membranes were blocked for 1 hr in Blocking Buffer (TBS containing 5% nonfat milk and 0.05% Tween-20), washed, then incubated either overnight at 4\u00b0C or room temperature for 1 hr with the following primary Abs: human \u03b1-LptD 3D11 (1 \u03bcg/mL, Genentech) and rabbit \u03b1-GroEL (1:25,000, Enzo). Appropriate HRP-linked secondary antibodies (GE Healthcare) were diluted 1:20,000 in TBST and incubated with the membrane for 1 hr at RT. Blots were developed using ECL Prime Western Blotting Detection Reagent (Amersham). The displayed Western blot experiment shows a single biological replicate.\n\n### Bacterial growth assays\n\nGrowth curves were performed in biological triplicate. Bacterial strains were grown overnight on LB agar containing gentamicin and arabinose. Cells were scraped from the plate into fresh media. OD600 was measured and subsequently diluted to 0.001 (OD600). 100 \u03bcl transferred to a 96-well plate (Corning) and monitored for growth by measuring OD600 (EnVision Multimode Plate Reader, PerkinElmer).\n\nBacterial growth curves were analyzed by determining the doubling time (dt) during exponential growth phase and compared via the unpaired Student\u2019s t test using Prism 6.0 (GraphPad Software) (Supplementary file 1). The Bonferroni correction was applied to control for multiple comparisons.\n\nMinimum inhibitory concentration (MIC) assays were performed by inoculating 105 colony forming units into medium with only test antibiotics (rifampicin and vancomycin). Biological duplicates were performed. MIC defined as the lowest concentration of drug to inhibit bacterial growth.\n",
+      "created_at": "2025-12-02T10:49:32.160602Z"
+    },
+    {
+      "id": "2bf8b64a-ade8-4840-87a6-eb611648a5a5",
+      "submission_id": "2f8c7674-a409-432f-825e-b9ac9769adee",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Volker D\u00f6tsch, Goethe University Germany\n\nReviewers:\n- Volker D\u00f6tsch, Goethe University Germany\n- Edmund RS Kunji, University of Cambridge United Kingdom\n\n## Review text\n\nDOI: [10.7554/eLife.46258.021](https://doi.org/10.7554/eLife.46258.021)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Massive antibody discovery used to probe structure-function relationships of the essential outer membrane protein LptD\" for consideration by eLife. Your article has been reviewed by three peer reviewers, including Volker D\u00f6tsch as the Reviewing Editor and Reviewer #1, and the evaluation has been overseen by Gisela Storz as the Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Edmund RS Kunji (Reviewer #3).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nStorek et al. describe an exhaustive immunisation strategy to assess the use of an antibody-based approach as an antimicrobial agent against one of the essential OMPs in E. coli, LptD. They find that only a small fraction of mAbs (FACS+) were successful in E. coli K12 with intact LPS and were much more successful at raising antibodies in the E. coli \u0394waaD conditional strain with a chromosomal arabinose-inducible LptD that produces a truncated from of LPS. Many of the mAbs recognised extracellular loops in LptD. However, by expressing many extracellular loop deletions they found out that all the FACS+ mAb bound to loops that were not required to function and had no antimicrobial effect. The most essential loops were L2 and L10, which are closer to the membrane. The authors did manage to produce mAb against L2 and L10 loops by using LptD-derived peptides for immunization instead of the full-length protein. Whilst these antibodies were not therapeutically useful in the E. coli K12 strain with an intact LPS, they nonetheless provided some interesting insights into the different roles of the loops. The authors concluded that the more accessible and longer extracellular loops might be \"decoys\" to avoid the immune system to produce antibodies against the inner loops L2 and L10 that were essential for function.\n\nEssential revisions:\n\n1) Subsection \u201cIdentifying \u03b1-LptD mAbs that bind to extracellular LptD loops\u201d: \"\u2026while <1% were FACS+ on E. coli K-12 (Figure 2A)\u2026\"\n\nWhat were the properties of these antibodies, as they can recognise LptD despite there being a lipopolysaccharide layer? Were they false positives? Which species and immunization protocols were used?\n\n2) Subsection \u201cIdentifying \u03b1-LptD mAbs that bind to extracellular LptD loops\u201d and onwards: \"Indeed, we identified 10 (7%) \u03b1-LptD mAbs that bound to LptDE from all three species and 42 that bound either E. coli plus K. pneumoniae (22%) or E. coli plus E. cloacae (9%) (Figure 2C).\"\n\nCould the loop replacement approach (Figure 3B and related text) be used to confirm the location of the cross-reactive loops? See also Figure 4B as a strategy. This is relevant because it could show a common or differential bacterial strategy to evade an immune response and would firm up the claim that there is an evolutionary link. I find Figure 2D not very informative (unless you have the particular antibodies). More relevant would be to understand where the cross-reactive loops are. Maybe better to map the cross-reactive epitopes on the structure, based on the experimental results?\n\n3) Subsection \u201cEffects of removing extracellular LptD loop on E. coli growth\u201d and onwards. \"These results suggest that extracellular L2, L4, L8 and L10 are important.\"\n\nMaybe another remarkable result is that the shortest loops cannot be easily deleted, whereas the longer loops are fairly tolerant (with the possible exception of loop 8 which was partially deleted). What it may tell you is that, structurally, the short loops are possibly as short as they can get to be compatible with a well-folded and therefore functional protein.\n\n4) Subsection \u201cEffects of removing extracellular LptD loop on E. coli growth\u201d and Figure 3\u2014figure supplement 1A).\n\nWhere is the expression profile of LptD\u0394L2? Legend says that it could not be evaluated, but maybe LptD\u0394L2is not produced, explaining the severe phenotype, as we know the protein is essential.\n\n5) Have these OMPs evolved extracellular loops as \"decoys\" or these extracellular loops just happen to pose a technical issue when using an antibody-based approach to target OMPs? Is there any other data to support this conclusion, i.e., do non-pathogenic strains harbouring similar OMPs have shorter extracellular loops?\n",
+      "created_at": "2025-12-02T10:49:32.160602Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T10:49:32.160602Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T10:49:32.160602Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "5d38b7b7-ea83-457e-b8aa-6a339aff821a",
+      "content_id": "2a476e1a-b523-43ea-aeed-69a50cea3ed4",
+      "claim_id": "C1",
+      "claim": "The outer membrane of Gram-negative bacteria is a permeability barrier to antibiotics and other cytotoxic agents, such as detergents.",
+      "claim_type": "EXPLICIT",
+      "source": "The outer membrane (OM) of Gram-negative bacteria is a permeability barrier to antibiotics and other cytotoxic agents, such as detergents (Nikaido, 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Nikaido, 2003",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:49:32.160602Z"
+    },
+    {
+      "id": "08d20ddf-6ee1-4a16-9131-54d4a309480d",
+      "content_id": "2a476e1a-b523-43ea-aeed-69a50cea3ed4",
+      "claim_id": "C2",
+      "claim": "The outer membrane has a distinctive asymmetrical bilayer populated with lipopolysaccharide (LPS) in the outer leaflet and phospholipids in the inner leaflet.",
+      "claim_type": "EXPLICIT",
+      "source": "A key feature of the OM is its distinctive asymmetrical bilayer populated with lipopolysaccharide (LPS) in the outer leaflet and phospholipids in the inner leaflet (Funahara and Nikaido, 1980; Kamio and Nikaido, 1976).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Funahara and Nikaido, 1980; Kamio and Nikaido, 1976",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:49:32.160602Z"
+    },
+    {
+      "id": "ce9d21af-7e34-4a98-a706-98456aa81e2b",
+      "content_id": "2a476e1a-b523-43ea-aeed-69a50cea3ed4",
+      "claim_id": "C3",
+      "claim": "Lateral interactions between LPS molecules mediated by divalent cations on the surface and packing of hydrocarbon chains in the membrane impede the passage of both hydrophilic and large hydrophobic molecules.",
+      "claim_type": "EXPLICIT",
+      "source": "Lateral interactions between LPS molecules mediated by divalent cations on the surface and packing of hydrocarbon chains in the membrane impede the passage of both hydrophilic and large hydrophobic molecules (Nikaido, 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Nikaido, 2003",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:49:32.160602Z"
+    },
+    {
+      "id": "e457cb9e-5ca6-4197-bfbd-fd1b0cc63ca9",
+      "content_id": "2a476e1a-b523-43ea-aeed-69a50cea3ed4",
+      "claim_id": "C4",
+      "claim": "LPS is composed of a conserved lipid A molecule, a core oligosaccharide, and a variable O-antigen glycan.",
+      "claim_type": "EXPLICIT",
+      "source": "LPS is composed of a conserved lipid A molecule, a core oligosaccharide, and a variable O-antigen glycan.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as established knowledge about LPS structure",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:49:32.160602Z"
+    },
+    {
+      "id": "b7c169d1-e4f0-4ced-97e6-2f5a8c791bf5",
+      "content_id": "2a476e1a-b523-43ea-aeed-69a50cea3ed4",
+      "claim_id": "C5",
+      "claim": "Lipid A is synthesized in the cytoplasm where the core oligosaccharide is attached to form core-LPS.",
+      "claim_type": "EXPLICIT",
+      "source": "Lipid A is synthesized in the cytoplasm where the core oligosaccharide is attached to form core-LPS (Whitfield and Trent, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Whitfield and Trent, 2014",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:49:32.160602Z"
+    },
+    {
+      "id": "e31781b7-f02f-48ab-9db0-1486a52bd5eb",
+      "content_id": "2a476e1a-b523-43ea-aeed-69a50cea3ed4",
+      "claim_id": "C6",
+      "claim": "Core-LPS is flipped into the periplasmic space by the inner membrane ATPase MsbA.",
+      "claim_type": "EXPLICIT",
+      "source": "This molecule is flipped into the periplasmic space by the inner membrane ATPase MsbA (Ho et al., 2018; Mi et al., 2017; Zhou et al., 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Ho et al., 2018; Mi et al., 2017; Zhou et al., 1998",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:49:32.160602Z"
+    },
+    {
+      "id": "14be20ab-999b-475b-aa51-6635aeff437f",
+      "content_id": "2a476e1a-b523-43ea-aeed-69a50cea3ed4",
+      "claim_id": "C7",
+      "claim": "The O-antigen is appended onto core-LPS in the periplasm and LPS is transported to the outer leaflet of the OM by the LPS transport (Lpt) system.",
+      "claim_type": "EXPLICIT",
+      "source": "The O-antigen is appended onto core-LPS in the periplasm and LPS is transported to the outer leaflet of the OM by the LPS transport (Lpt) system (Abeyrathne et al., 2005; Han et al., 2012; Okuda et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Abeyrathne et al., 2005; Han et al., 2012; Okuda et al., 2016",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:49:32.160602Z"
+    },
+    {
+      "id": "0007412e-18dc-4583-acb3-11e25912965b",
+      "content_id": "2a476e1a-b523-43ea-aeed-69a50cea3ed4",
+      "claim_id": "C8",
+      "claim": "In E. coli, all 7 components of the Lpt pathway, LptABCDEFG, are essential and shuttle LPS molecules from the IM across the periplasm to the OM.",
+      "claim_type": "EXPLICIT",
+      "source": "In E. coli, all 7 components of the Lpt pathway, LptABCDEFG, are essential and shuttle LPS molecules from the IM across the periplasm to the OM (Okuda et al., 2016; Okuda et al., 2012; Ruiz et al., 2008; Wu et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Okuda et al., 2016; Okuda et al., 2012; Ruiz et al., 2008; Wu et al., 2006",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:49:32.160602Z"
+    },
+    {
+      "id": "91e1107e-88d7-4613-97d1-84280d6c070e",
+      "content_id": "2a476e1a-b523-43ea-aeed-69a50cea3ed4",
+      "claim_id": "C9",
+      "claim": "LptD is a \u03b2-barrel outer membrane protein (OMP) responsible for the final unidirectional insertion of LPS into the OM outer leaflet.",
+      "claim_type": "EXPLICIT",
+      "source": "LptD is a \u03b2-barrel outer membrane protein (OMP) responsible for the final unidirectional insertion of LPS into the OM outer leaflet (Botos et al., 2016; Gu et al., 2015; Li et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Botos et al., 2016; Gu et al., 2015; Li et al., 2015",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:49:32.160602Z"
+    },
+    {
+      "id": "62da76f0-2840-4bad-980f-373bd4e2bbef",
+      "content_id": "2a476e1a-b523-43ea-aeed-69a50cea3ed4",
+      "claim_id": "C10",
+      "claim": "The LptD \u03b2-barrel is comprised of 26 anti-parallel \u03b2-strands with a proposed lateral gate formed where the first and last \u03b2-strands interact.",
+      "claim_type": "EXPLICIT",
+      "source": "The LptD \u03b2-barrel is comprised of 26 anti-parallel \u03b2-strands with a proposed lateral gate formed where the first and last \u03b2-strands interact (Dong et al., 2014; Qiao et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Dong et al., 2014; Qiao et al., 2014",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:49:32.160602Z"
+    },
+    {
+      "id": "a66a9b90-b947-49b7-8d23-c74ac78ffde9",
+      "content_id": "2a476e1a-b523-43ea-aeed-69a50cea3ed4",
+      "claim_id": "C11",
+      "claim": "LptD possesses long extracellular, environmentally-exposed loops and short periplasmic loops connecting adjacent strands.",
+      "claim_type": "EXPLICIT",
+      "source": "Like other Gram-negative \u03b2-barrel OMPs, LptD possess long extracellular, environmentally-exposed loops and short periplasmic loops connecting adjacent strands (Franklin and Slusky, 2018; Rollauer et al., 2015; Schulz, 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Franklin and Slusky, 2018; Rollauer et al., 2015; Schulz, 2002",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:49:32.160602Z"
+    },
+    {
+      "id": "f5fa642e-3f98-48b3-a232-6693c5349d28",
+      "content_id": "2a476e1a-b523-43ea-aeed-69a50cea3ed4",
+      "claim_id": "C12",
+      "claim": "LptD forms an obligate interaction with the OM lipoprotein LptE.",
+      "claim_type": "EXPLICIT",
+      "source": "LptD forms an obligate interaction with the OM lipoprotein LptE (Chimalakonda et al., 2011; Freinkman et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Chimalakonda et al., 2011; Freinkman et al., 2011",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:49:32.160602Z"
+    },
+    {
+      "id": "4b0cceae-bbb3-4b6b-97ec-2f525d0d3cd6",
+      "content_id": "2a476e1a-b523-43ea-aeed-69a50cea3ed4",
+      "claim_id": "C13",
+      "claim": "An N-terminal jelly roll domain is located on the periplasmic side of the \u03b2-barrel below the lateral gate.",
+      "claim_type": "EXPLICIT",
+      "source": "An N-terminal jelly roll domain is located on the periplasmic side of the \u03b2-barrel below the lateral gate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as structural feature of LptD",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:49:32.160602Z"
+    },
+    {
+      "id": "df7a9369-6aa3-4d1f-af26-572a00713be0",
+      "content_id": "2a476e1a-b523-43ea-aeed-69a50cea3ed4",
+      "claim_id": "C14",
+      "claim": "The hydrophobic lipid A portion of LPS is embedded in the hydrophobic jelly roll domain.",
+      "claim_type": "EXPLICIT",
+      "source": "Structural, biochemical, and genetic analyses suggest that the hydrophobic lipid A portion of LPS is embedded in the hydrophobic jelly roll domain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on structural, biochemical, and genetic analyses",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:49:32.160602Z"
+    },
+    {
+      "id": "041217e5-a404-4dca-8999-9bd8ebdbdd9a",
+      "content_id": "2a476e1a-b523-43ea-aeed-69a50cea3ed4",
+      "claim_id": "C15",
+      "claim": "The presumed model for LPS transport across the OM posits that lipid A is inserted into the hydrophobic OM through a lateral gate of LptD.",
+      "claim_type": "EXPLICIT",
+      "source": "The presumed model for LPS transport across the OM posits that lipid A is inserted into the hydrophobic OM through a lateral gate of LptD (Botos et al., 2016; Gu et al., 2015; Li et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Botos et al., 2016; Gu et al., 2015; Li et al., 2015",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:49:32.160602Z"
+    },
+    {
+      "id": "b0b2107d-d024-495f-bb59-1e6eba66241b",
+      "content_id": "2a476e1a-b523-43ea-aeed-69a50cea3ed4",
+      "claim_id": "C16",
+      "claim": "The polar sugars of the LPS core oligosaccharide and O-antigen are presumably moved through the LptD \u03b2-barrel lumen and flipped to the exterior of the cell by an unknown mechanism.",
+      "claim_type": "EXPLICIT",
+      "source": "By an unknown mechanism, the polar sugars of the LPS core oligosaccharide and O-antigen are presumably moved through the LptD \u03b2-barrel lumen and flipped to the exterior of the cell.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as presumed mechanism with unknown details",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:49:32.160602Z"
+    },
+    {
+      "id": "d34a0f97-1041-46b3-af40-606ad9a2fc44",
+      "content_id": "2a476e1a-b523-43ea-aeed-69a50cea3ed4",
+      "claim_id": "C17",
+      "claim": "LptD represents a potential new antibacterial target due to its essential role in OM biogenesis, high conservation among Gram-negative bacteria, and exposure to the extracellular environment.",
+      "claim_type": "EXPLICIT",
+      "source": "Due to its essential role in OM biogenesis, high conservation among Gram-negative bacteria, and exposure to the extracellular environment, LptD represents a potential new antibacterial target.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Logical inference based on stated properties of LptD",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:49:32.160602Z"
+    },
+    {
+      "id": "4045d669-a218-4c5d-8b20-3ed4e3f778b5",
+      "content_id": "2a476e1a-b523-43ea-aeed-69a50cea3ed4",
+      "claim_id": "C18",
+      "claim": "Crosslinking LPS to LptD in the jelly roll domain or the lateral gate inhibits growth.",
+      "claim_type": "EXPLICIT",
+      "source": "Genetic experiments show that crosslinking LPS to LptD in the jelly roll domain or the lateral gate, or introduction of disulfide bonds that disrupt the proposed LPS path through LptD, inhibit growth (Gu et al., 2015; Li et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Gu et al., 2015; Li et al., 2015",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:49:32.160602Z"
+    },
+    {
+      "id": "1489ea1e-c346-4278-a7ea-d547abeff4ed",
+      "content_id": "2a476e1a-b523-43ea-aeed-69a50cea3ed4",
+      "claim_id": "C19",
+      "claim": "Introduction of disulfide bonds that disrupt the proposed LPS path through LptD inhibits growth.",
+      "claim_type": "EXPLICIT",
+      "source": "Genetic experiments show that crosslinking LPS to LptD in the jelly roll domain or the lateral gate, or introduction of disulfide bonds that disrupt the proposed LPS path through LptD, inhibit growth (Gu et al., 2015; Li et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Gu et al., 2015; Li et al., 2015",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:49:32.160602Z"
+    },
+    {
+      "id": "4a229dbd-c942-4997-87d1-00474edfd427",
+      "content_id": "2a476e1a-b523-43ea-aeed-69a50cea3ed4",
+      "claim_id": "C20",
+      "claim": "Two antibacterial peptides targeting LptD have been described, both presumably targeting the periplasmic jelly roll domain.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, two antibacterial peptides targeting LptD have been described, both presumably targeting the periplasmic jelly roll domain (Srinivas et al., 2010; Vetterli et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Srinivas et al., 2010; Vetterli et al., 2018",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:49:32.160602Z"
+    },
+    {
+      "id": "8e7ccfaa-6352-449b-94ca-2ff4598f5f3b",
+      "content_id": "2a476e1a-b523-43ea-aeed-69a50cea3ed4",
+      "claim_id": "C21",
+      "claim": "Removal of the LptD extracellular loop 4 (L4), imp4213, disrupts the OM barrier leading to sensitization to antibiotics.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, removal of the LptD extracellular loop 4 (L4), imp4213, is known to disrupt the OM barrier leading to sensitization to antibiotics (Sampson et al., 1989).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Sampson et al., 1989",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:49:32.160602Z"
+    },
+    {
+      "id": "9eaa4123-de89-42e2-ae02-f656386f29c3",
+      "content_id": "2a476e1a-b523-43ea-aeed-69a50cea3ed4",
+      "claim_id": "C22",
+      "claim": "The roles of the extracellular LptD loops remain largely underexplored due to a lack of robust tools to systematically assess structure-function relationships in the context of a native OM.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the roles of the extracellular LptD loops remain largely underexplored due to a lack of robust tools to systematically assess structure-function relationships in the context of a native OM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about the state of the field",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:49:32.160602Z"
+    },
+    {
+      "id": "c5ae0114-5ac1-46f3-b98e-369834d72eb2",
+      "content_id": "2a476e1a-b523-43ea-aeed-69a50cea3ed4",
+      "claim_id": "C23",
+      "claim": "Four diverse strategies were pursued to produce thousands of mAbs that bound to LptD.",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, here we pursued four diverse strategies to produce thousands of mAbs that bound to LptD.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of experimental approach in the study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:49:32.160602Z"
+    },
+    {
+      "id": "2ec9b18d-bb22-4b47-8959-07f4bc77bb13",
+      "content_id": "2a476e1a-b523-43ea-aeed-69a50cea3ed4",
+      "claim_id": "C24",
+      "claim": "The study constructed a diverse library of >3000 monoclonal antibodies to assess the roles of extracellular loops (ECLs) in LptD.",
+      "claim_type": "EXPLICIT",
+      "source": "We constructed a diverse library of >3000 monoclonal antibodies to assess the roles of extracellular loops (ECLs) in LptD, an essential OMP that inserts lipopolysaccharide into the outer membrane of Escherichia coli.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of experimental work performed in the study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:49:32.160602Z"
+    },
+    {
+      "id": "ad97e1c6-e444-46c4-b8af-80cf37f940d8",
+      "content_id": "2a476e1a-b523-43ea-aeed-69a50cea3ed4",
+      "claim_id": "C25",
+      "claim": "Epitope binning and mapping experiments with LptD-loop-deletion mutants demonstrated that 7 of the 13 ECLs are targeted by antibodies.",
+      "claim_type": "EXPLICIT",
+      "source": "Epitope binning and mapping experiments with LptD-loop-deletion mutants demonstrated that 7 of the 13 ECLs are targeted by antibodies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Results from epitope binning and mapping experiments in the study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:49:32.160602Z"
+    },
+    {
+      "id": "be9f19a7-ed44-431c-8e51-d997e265be45",
+      "content_id": "2a476e1a-b523-43ea-aeed-69a50cea3ed4",
+      "claim_id": "C26",
+      "claim": "Only ECLs inaccessible to antibodies were required for the structure or function of LptD.",
+      "claim_type": "EXPLICIT",
+      "source": "Only ECLs inaccessible to antibodies were required for the structure or function of LptD.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion from experimental results in the study",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:49:32.160602Z"
+    },
+    {
+      "id": "1b85cc85-ee3f-42e6-af6c-5f1498325e16",
+      "content_id": "2a476e1a-b523-43ea-aeed-69a50cea3ed4",
+      "claim_id": "C27",
+      "claim": "Antibody-accessible loops evolved to protect key extracellular regions of LptD, but are themselves dispensable.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results suggest that antibody-accessible loops evolved to protect key extracellular regions of LptD, but are themselves dispensable.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Interpretation of experimental results",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:49:32.160602Z"
+    },
+    {
+      "id": "45e18a76-a5d9-476a-b223-b5d10fe9c835",
+      "content_id": "2a476e1a-b523-43ea-aeed-69a50cea3ed4",
+      "claim_id": "C28",
+      "claim": "No \u03b1-LptD antibody interfered with essential functions of LptD.",
+      "claim_type": "EXPLICIT",
+      "source": "Supporting this hypothesis, no \u03b1-LptD antibody interfered with essential functions of LptD.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Experimental result from antibody functional testing",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:49:32.160602Z"
+    },
+    {
+      "id": "9b533e3c-8a96-4516-b2de-f71e8b88dffe",
+      "content_id": "2a476e1a-b523-43ea-aeed-69a50cea3ed4",
+      "claim_id": "C29",
+      "claim": "The discovery campaigns generated more than 7000 hybridomas and more than 3,000 ELISA+ LptD-specific mAbs.",
+      "claim_type": "EXPLICIT",
+      "source": "Cumulatively, the discovery campaigns generated more than 7000 hybridomas and more than 3,000 ELISA+ LptD-specific mAbs (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental data from antibody discovery campaigns shown in Figure 1C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:49:32.160602Z"
+    },
+    {
+      "id": "cd0b8da5-ab9b-4171-a908-bc0ef3285d1f",
+      "content_id": "2a476e1a-b523-43ea-aeed-69a50cea3ed4",
+      "claim_id": "C30",
+      "claim": "774 ELISA+ \u03b1-LptD mAbs from the peptide and protein rat immunizations were purified.",
+      "claim_type": "EXPLICIT",
+      "source": "In total, 774 ELISA+ \u03b1-LptD mAbs from the peptide and protein rat immunizations, 952 ELISA+ \u03b1-LptD mAbs from the mouse immunizations, and 1494 \u03b1-LptD mAbs from the targeted boost-and-sort immunizations were purified (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental data from antibody purification shown in Figure 1C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:49:32.160602Z"
+    },
+    {
+      "id": "221f410d-63b3-4b3f-8146-5d4880606928",
+      "content_id": "2a476e1a-b523-43ea-aeed-69a50cea3ed4",
+      "claim_id": "C31",
+      "claim": "952 ELISA+ \u03b1-LptD mAbs from the mouse immunizations were purified.",
+      "claim_type": "EXPLICIT",
+      "source": "In total, 774 ELISA+ \u03b1-LptD mAbs from the peptide and protein rat immunizations, 952 ELISA+ \u03b1-LptD mAbs from the mouse immunizations, and 1494 \u03b1-LptD mAbs from the targeted boost-and-sort immunizations were purified (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental data from antibody purification shown in Figure 1C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:49:32.160602Z"
+    },
+    {
+      "id": "2a2c2c53-573c-44f7-af63-d95dd8c9050c",
+      "content_id": "2a476e1a-b523-43ea-aeed-69a50cea3ed4",
+      "claim_id": "C32",
+      "claim": "1494 \u03b1-LptD mAbs from the targeted boost-and-sort immunizations were purified.",
+      "claim_type": "EXPLICIT",
+      "source": "In total, 774 ELISA+ \u03b1-LptD mAbs from the peptide and protein rat immunizations, 952 ELISA+ \u03b1-LptD mAbs from the mouse immunizations, and 1494 \u03b1-LptD mAbs from the targeted boost-and-sort immunizations were purified (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental data from antibody purification shown in Figure 1C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:49:32.160602Z"
+    },
+    {
+      "id": "6a2dc9f2-f6ec-47fc-a9cd-f75185130a7b",
+      "content_id": "2a476e1a-b523-43ea-aeed-69a50cea3ed4",
+      "claim_id": "C33",
+      "claim": "9\u201330% of the ELISA+ \u03b1-LptD mAbs were FACS+ on E. coli \u0394waaD, depending on the immunization campaign.",
+      "claim_type": "EXPLICIT",
+      "source": "Depending on the immunization campaign, 9\u201330% of the ELISA+ \u03b1-LptD mAbs were FACS+ on E. coli \u0394waaD, while <1% of the same antibodies were FACS+ on E. coli K-12 (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental data from FACS assays shown in Figure 2A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:49:32.160602Z"
+    },
+    {
+      "id": "a8f2d38c-62de-483a-96c6-b0a934c7d481",
+      "content_id": "2a476e1a-b523-43ea-aeed-69a50cea3ed4",
+      "claim_id": "C34",
+      "claim": "<1% of the ELISA+ \u03b1-LptD mAbs were FACS+ on E. coli K-12.",
+      "claim_type": "EXPLICIT",
+      "source": "Depending on the immunization campaign, 9\u201330% of the ELISA+ \u03b1-LptD mAbs were FACS+ on E. coli \u0394waaD, while <1% of the same antibodies were FACS+ on E. coli K-12 (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental data from FACS assays shown in Figure 2A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:49:32.160602Z"
+    },
+    {
+      "id": "614a8bb0-2480-452b-a46a-3a18b1b5e556",
+      "content_id": "2a476e1a-b523-43ea-aeed-69a50cea3ed4",
+      "claim_id": "C35",
+      "claim": "The E. coli K-12 FACS+ \u03b1-LptD mAbs were a subset of all the FACS+ mAbs, binding equally well to E. coli K-12 and E. coli \u0394waaD cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The E. coli K-12 FACS+ \u03b1-LptD mAbs were a subset of all the FACS+ mAbs, binding equally well to E. coli K-12 and E. coli \u0394waaD cells (Figure 2\u2014figure supplement 1), and were discovered in both mouse and rat immunization campaigns.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental data from FACS assays shown in Figure 2\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:49:32.160602Z"
+    },
+    {
+      "id": "5bd8c215-ead7-445a-aa07-4c4f2823f126",
+      "content_id": "2a476e1a-b523-43ea-aeed-69a50cea3ed4",
+      "claim_id": "C36",
+      "claim": "LPS presents a significant barrier to accessing surface epitopes on E. coli.",
+      "claim_type": "EXPLICIT",
+      "source": "These results reinforce the finding that LPS presents a significant barrier to accessing surface epitopes on E. coli (Bentley and Klebba, 1988; Storek et al., 2018) and suggest that the ECLs of OMPs may be masked or intimately associated with the core sugars of the LPS.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Bentley and Klebba, 1988; Storek et al., 2018 and experimental data",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:49:32.160602Z"
+    },
+    {
+      "id": "1cff2b9c-5b03-4c3a-b89a-bb6d881f8e08",
+      "content_id": "2a476e1a-b523-43ea-aeed-69a50cea3ed4",
+      "claim_id": "C37",
+      "claim": "The ECLs of OMPs may be masked or intimately associated with the core sugars of the LPS.",
+      "claim_type": "EXPLICIT",
+      "source": "These results reinforce the finding that LPS presents a significant barrier to accessing surface epitopes on E. coli (Bentley and Klebba, 1988; Storek et al., 2018) and suggest that the ECLs of OMPs may be masked or intimately associated with the core sugars of the LPS.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from experimental results",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:49:32.160602Z"
+    },
+    {
+      "id": "33603ae4-d469-4ef9-bb86-276c2f116e8d",
+      "content_id": "2a476e1a-b523-43ea-aeed-69a50cea3ed4",
+      "claim_id": "C38",
+      "claim": "K. pneumoniae LptD shares 82% overall protein identity with E. coli LptD.",
+      "claim_type": "EXPLICIT",
+      "source": "ELISAs were performed with 134 FACS+ and 233 FACS- \u03b1-LptD mAbs using purified LptDE protein from two closely related Enterobacteriaceae species, Klebsiella pneumoniae and Enterobacter cloacae, which share 82% and 84% overall protein identity and 71% and 76% identify between the ECLs only when compared with E. coli LptD, respectively (Figure 2B and Figure 2\u2014figure supplement 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Sequence comparison data shown in Figure 2B and Figure 2\u2014figure supplement 2A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:49:32.160602Z"
+    },
+    {
+      "id": "f8e64c01-180e-47e5-a36f-b114d6ee4230",
+      "content_id": "2a476e1a-b523-43ea-aeed-69a50cea3ed4",
+      "claim_id": "C39",
+      "claim": "E. cloacae LptD shares 84% overall protein identity with E. coli LptD.",
+      "claim_type": "EXPLICIT",
+      "source": "ELISAs were performed with 134 FACS+ and 233 FACS- \u03b1-LptD mAbs using purified LptDE protein from two closely related Enterobacteriaceae species, Klebsiella pneumoniae and Enterobacter cloacae, which share 82% and 84% overall protein identity and 71% and 76% identify between the ECLs only when compared with E. coli LptD, respectively (Figure 2B and Figure 2\u2014figure supplement 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Sequence comparison data shown in Figure 2B and Figure 2\u2014figure supplement 2A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:49:32.160602Z"
+    },
+    {
+      "id": "c1a40f18-0ef4-43e1-be76-d13c8582f997",
+      "content_id": "2a476e1a-b523-43ea-aeed-69a50cea3ed4",
+      "claim_id": "C40",
+      "claim": "K. pneumoniae LptD shares 71% identity between the ECLs only when compared with E. coli LptD.",
+      "claim_type": "EXPLICIT",
+      "source": "ELISAs were performed with 134 FACS+ and 233 FACS- \u03b1-LptD mAbs using purified LptDE protein from two closely related Enterobacteriaceae species, Klebsiella pneumoniae and Enterobacter cloacae, which share 82% and 84% overall protein identity and 71% and 76% identify between the ECLs only when compared with E. coli LptD, respectively (Figure 2B and Figure 2\u2014figure supplement 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Sequence comparison data shown in Figure 2B and Figure 2\u2014figure supplement 2A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:49:32.160602Z"
+    },
+    {
+      "id": "512f29fb-4996-442d-9b5e-885ae85b6705",
+      "content_id": "2a476e1a-b523-43ea-aeed-69a50cea3ed4",
+      "claim_id": "C41",
+      "claim": "E. cloacae LptD shares 76% identity between the ECLs only when compared with E. coli LptD.",
+      "claim_type": "EXPLICIT",
+      "source": "ELISAs were performed with 134 FACS+ and 233 FACS- \u03b1-LptD mAbs using purified LptDE protein from two closely related Enterobacteriaceae species, Klebsiella pneumoniae and Enterobacter cloacae, which share 82% and 84% overall protein identity and 71% and 76% identify between the ECLs only when compared with E. coli LptD, respectively (Figure 2B and Figure 2\u2014figure supplement 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Sequence comparison data shown in Figure 2B and Figure 2\u2014figure supplement 2A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:49:32.160602Z"
+    },
+    {
+      "id": "395cd3b0-ac10-49df-bc7c-64b61fcccf1f",
+      "content_id": "2a476e1a-b523-43ea-aeed-69a50cea3ed4",
+      "claim_id": "C42",
+      "claim": "The majority of FACS+ (61%) \u03b1-LptD mAbs bound only E. coli LptDE by ELISA.",
+      "claim_type": "EXPLICIT",
+      "source": "The majority of FACS+ (61%) and FACS- (69%) \u03b1-LptD mAbs bound only E. coli LptDE by ELISA (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental data from ELISA assays shown in Figure 2C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:49:32.160602Z"
+    },
+    {
+      "id": "4867e26b-97e6-498f-821f-398c79706696",
+      "content_id": "2a476e1a-b523-43ea-aeed-69a50cea3ed4",
+      "claim_id": "C43",
+      "claim": "The majority of FACS- (69%) \u03b1-LptD mAbs bound only E. coli LptDE by ELISA.",
+      "claim_type": "EXPLICIT",
+      "source": "The majority of FACS+ (61%) and FACS- (69%) \u03b1-LptD mAbs bound only E. coli LptDE by ELISA (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental data from ELISA assays shown in Figure 2C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:49:32.160602Z"
+    },
+    {
+      "id": "7b679408-86f0-49d3-9aeb-3dd23a7dee72",
+      "content_id": "2a476e1a-b523-43ea-aeed-69a50cea3ed4",
+      "claim_id": "C44",
+      "claim": "10 (7%) \u03b1-LptD mAbs bound to LptDE from all three species (E. coli, K. pneumoniae, and E. cloacae).",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, we identified 10 (7%) \u03b1-LptD mAbs that bound to LptDE from all three species and 42 that bound either E. coli plus K. pneumoniae (22%) or E. coli plus E. cloacae (9%) LptDE (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental data from ELISA assays shown in Figure 2C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:49:32.160602Z"
+    },
+    {
+      "id": "009c25b2-9674-4658-bf38-d4cf6781075e",
+      "content_id": "2a476e1a-b523-43ea-aeed-69a50cea3ed4",
+      "claim_id": "C45",
+      "claim": "42 \u03b1-LptD mAbs bound either E. coli plus K. pneumoniae (22%) or E. coli plus E. cloacae (9%) LptDE.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, we identified 10 (7%) \u03b1-LptD mAbs that bound to LptDE from all three species and 42 that bound either E. coli plus K. pneumoniae (22%) or E. coli plus E. cloacae (9%) LptDE (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental data from ELISA assays shown in Figure 2C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:49:32.160602Z"
+    },
+    {
+      "id": "ec4ec48e-b5c8-4b90-9b9e-4759def0a3b5",
+      "content_id": "2a476e1a-b523-43ea-aeed-69a50cea3ed4",
+      "claim_id": "C46",
+      "claim": "Two major epitope bins and a possible third bin with limited overlap were identified from the FACS+ \u03b1-LptD mAbs.",
+      "claim_type": "EXPLICIT",
+      "source": "We identified two major epitope bins and a possible third bin with limited overlap (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Results from SPR-based epitope binning shown in Figure 2D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:49:32.160602Z"
+    },
+    {
+      "id": "0c9eb749-530c-49a8-9da4-6fbe293a6e5b",
+      "content_id": "2a476e1a-b523-43ea-aeed-69a50cea3ed4",
+      "claim_id": "C47",
+      "claim": "Most three-species cross-reactive \u03b1-LptD mAbs were tightly clustered in the epitope map.",
+      "claim_type": "EXPLICIT",
+      "source": "When the species cross-reactivity data were considered, most three-species cross-reactive \u03b1-LptD mAbs were tightly clustered, while those that bound only E. coli LptDE formed a distinct cluster (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Results from epitope binning analysis shown in Figure 2D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:49:32.160602Z"
+    },
+    {
+      "id": "e26cb077-6980-4917-b6be-77c6e0f23d88",
+      "content_id": "2a476e1a-b523-43ea-aeed-69a50cea3ed4",
+      "claim_id": "C48",
+      "claim": "\u03b1-LptD mAbs that bound only E. coli LptDE formed a distinct cluster in the epitope map.",
+      "claim_type": "EXPLICIT",
+      "source": "When the species cross-reactivity data were considered, most three-species cross-reactive \u03b1-LptD mAbs were tightly clustered, while those that bound only E. coli LptDE formed a distinct cluster (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Results from epitope binning analysis shown in Figure 2D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:49:32.160602Z"
+    },
+    {
+      "id": "4d0e8282-ff8a-4ee3-bf98-1dbf07587fc0",
+      "content_id": "2a476e1a-b523-43ea-aeed-69a50cea3ed4",
+      "claim_id": "C49",
+      "claim": "13 lptD mutants were constructed, each lacking the region encoding one of the 13 ECLs.",
+      "claim_type": "EXPLICIT",
+      "source": "We constructed 13 lptD mutants, each lacking the region encoding one of the 13 ECLs (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Description of experimental construction shown in Figure 3A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:49:32.160602Z"
+    },
+    {
+      "id": "18fce8ef-a91f-4001-9698-3ef3145718be",
+      "content_id": "2a476e1a-b523-43ea-aeed-69a50cea3ed4",
+      "claim_id": "C50",
+      "claim": "In the presence of arabinose, which induces a chromosomal wild-type lptD, all strains grew.",
+      "claim_type": "EXPLICIT",
+      "source": "In the presence of arabinose, which induces a chromosomal wild-type lptD, all strains grew (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental growth data shown in Figure 3B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:49:32.160602Z"
+    },
+    {
+      "id": "d135d957-defb-47b9-9db1-07f4c2e5380a",
+      "content_id": "2a476e1a-b523-43ea-aeed-69a50cea3ed4",
+      "claim_id": "C51",
+      "claim": "In the absence of arabinose, all lptD loop mutants supported growth in the K-12 strain with the exception of loop 2 (L2) removal, which showed reduced growth.",
+      "claim_type": "EXPLICIT",
+      "source": "In the absence of arabinose, all lptD loop mutants supported growth in the K-12 strain with the exception of loop 2 (L2) removal, which showed reduced growth (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental growth data shown in Figure 3B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:49:32.160602Z"
+    },
+    {
+      "id": "48d63556-db6e-4491-a0ae-3df018005d55",
+      "content_id": "2a476e1a-b523-43ea-aeed-69a50cea3ed4",
+      "claim_id": "C52",
+      "claim": "The levels of the LptD loop deletion protein produced were similar to the protein level of wild-type LptD in all cases when growth was observed.",
+      "claim_type": "EXPLICIT",
+      "source": "In all cases when growth was observed, the levels of the LptD loop deletion protein produced were similar to the protein level of wild-type LptD (Figure 3\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Western blot data shown in Figure 3\u2014figure supplement 1A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:49:32.160602Z"
+    },
+    {
+      "id": "1dfb5fb8-3ea8-4558-ad41-f5a337c0d41a",
+      "content_id": "2a476e1a-b523-43ea-aeed-69a50cea3ed4",
+      "claim_id": "C53",
+      "claim": "LptD is highly tolerable to genetic manipulation of its ECLs.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, LptD is highly tolerable to genetic manipulation of its ECLs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion from experimental growth data of loop deletion mutants",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:49:32.160602Z"
+    },
+    {
+      "id": "4622355a-42fc-4024-98a3-b638d890ba5a",
+      "content_id": "2a476e1a-b523-43ea-aeed-69a50cea3ed4",
+      "claim_id": "C54",
+      "claim": "In the E. coli \u0394waaD background, LptD lacking either loop 2 or loop 10 were unable to support bacterial growth on solid growth agar.",
+      "claim_type": "EXPLICIT",
+      "source": "In the E. coli \u0394waaD background, LptD lacking either loop 2 or loop 10 were unable to support bacterial growth on solid growth agar (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental growth data shown in Figure 3B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:49:32.160602Z"
+    },
+    {
+      "id": "2de61f48-fbf4-4c77-b805-5c0e8be62e78",
+      "content_id": "2a476e1a-b523-43ea-aeed-69a50cea3ed4",
+      "claim_id": "C55",
+      "claim": "Loop 10 is important for LptD folding or activity in the E. coli \u0394waaD strain.",
+      "claim_type": "EXPLICIT",
+      "source": "The inability of LptD lacking L10 (LptD\u0394L10) to support growth of the E. coli \u0394waaD strain suggested that this ECL is important for LptD folding or activity in this strain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from experimental growth data",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:49:32.160602Z"
+    },
+    {
+      "id": "0881710e-cd69-4d82-8f35-1c3ed16738be",
+      "content_id": "2a476e1a-b523-43ea-aeed-69a50cea3ed4",
+      "claim_id": "C56",
+      "claim": "LptD\u0394L10 was produced and did support growth of E. coli K-12.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the LptD\u0394L10 variant was produced and did support growth of E. coli K-12 (Figure 3B and Figure 3\u2014figure supplement 1A), indicating that LptD\u0394L10 was folded and sufficiently functional in the strain producing core-LPS but not the minimal LPS of E. coli \u0394waaD strain.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental growth and Western blot data shown in Figure 3B and Figure 3\u2014figure supplement 1A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:49:32.160602Z"
+    },
+    {
+      "id": "bfa96f0d-edbb-42d0-8ea9-f4ca7ac7df24",
+      "content_id": "2a476e1a-b523-43ea-aeed-69a50cea3ed4",
+      "claim_id": "C57",
+      "claim": "LptD\u0394L10 was folded and sufficiently functional in the strain producing core-LPS but not the minimal LPS of E. coli \u0394waaD strain.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the LptD\u0394L10 variant was produced and did support growth of E. coli K-12 (Figure 3B and Figure 3\u2014figure supplement 1A), indicating that LptD\u0394L10 was folded and sufficiently functional in the strain producing core-LPS but not the minimal LPS of E. coli \u0394waaD strain.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inference from experimental growth data shown in Figure 3B and Figure 3\u2014figure supplement 1A",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:49:32.160602Z"
+    },
+    {
+      "id": "b72c96cb-ab50-43e2-9c38-68db13e1d65b",
+      "content_id": "2a476e1a-b523-43ea-aeed-69a50cea3ed4",
+      "claim_id": "C58",
+      "claim": "In the E. coli K-12 strain, LptD\u0394L10 grew at a decreased rate.",
+      "claim_type": "EXPLICIT",
+      "source": "In the absence of arabinose, the E. coli K-12 strain producing LptD\u0394L10 grew, but at a decreased rate, and the strain with LptD\u0394L2 exhibited a dramatically prolonged lag phase and severe growth phenotype (Figure 3C and Supplementary file 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental growth curve data shown in Figure 3C and Supplementary file 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:49:32.160602Z"
+    },
+    {
+      "id": "5fcfe244-1478-47e4-934e-c795407fe811",
+      "content_id": "2a476e1a-b523-43ea-aeed-69a50cea3ed4",
+      "claim_id": "C59",
+      "claim": "The E. coli K-12 strain with LptD\u0394L2 exhibited a dramatically prolonged lag phase and severe growth phenotype.",
+      "claim_type": "EXPLICIT",
+      "source": "In the absence of arabinose, the E. coli K-12 strain producing LptD\u0394L10 grew, but at a decreased rate, and the strain with LptD\u0394L2 exhibited a dramatically prolonged lag phase and severe growth phenotype (Figure 3C and Supplementary file 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental growth curve data shown in Figure 3C and Supplementary file 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:49:32.160602Z"
+    },
+    {
+      "id": "1b8634e6-9452-4e5c-9b81-52312d191f51",
+      "content_id": "2a476e1a-b523-43ea-aeed-69a50cea3ed4",
+      "claim_id": "C60",
+      "claim": "E. coli \u0394waaD expressing LptD\u0394L10 did not grow at all.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, E. coli \u0394waaD expressing LptD\u0394L10 did not grow at all, but expression of LptD\u0394L2 supported growth in liquid media (Figure 3D and Supplementary file 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental growth curve data shown in Figure 3D and Supplementary file 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:49:32.160602Z"
+    },
+    {
+      "id": "06754b18-2dd6-484f-a68c-202690269ab1",
+      "content_id": "2a476e1a-b523-43ea-aeed-69a50cea3ed4",
+      "claim_id": "C61",
+      "claim": "E. coli \u0394waaD expressing LptD\u0394L2 supported growth in liquid media.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, E. coli \u0394waaD expressing LptD\u0394L10 did not grow at all, but expression of LptD\u0394L2 supported growth in liquid media (Figure 3D and Supplementary file 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental growth curve data shown in Figure 3D and Supplementary file 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:49:32.160602Z"
+    },
+    {
+      "id": "c543e907-fb9f-48b4-91fd-4bdce191990a",
+      "content_id": "2a476e1a-b523-43ea-aeed-69a50cea3ed4",
+      "claim_id": "C62",
+      "claim": "L2 and L10 are important for LptD folding, activity, interaction with the \u03b2-barrel assembly machinery component BamA, or a combination of these.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, L2 and L10 are important for LptD folding, activity, interaction with the \u03b2-barrel assembly machinery component BamA, or a combination of these.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from experimental growth data",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:49:32.160602Z"
+    },
+    {
+      "id": "503a88d3-aaa6-49d9-9a87-150977135f6f",
+      "content_id": "2a476e1a-b523-43ea-aeed-69a50cea3ed4",
+      "claim_id": "C63",
+      "claim": "The LptD\u0394L10 loop deletion mutant was better tolerated in E. coli K-12 compared to the LPS-truncated \u0394waaD strain while in liquid growth media.",
+      "claim_type": "EXPLICIT",
+      "source": "Also, the LptD\u0394L10 loop deletion mutant was better tolerated in E. coli K-12 compared to the LPS-truncated \u0394waaD strain while in liquid growth media the LptD\u0394L2 mutant is better tolerated in the E. coli \u0394waaD strain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Comparison of experimental growth data",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:49:32.160602Z"
+    },
+    {
+      "id": "19191e06-a25b-45ab-8511-4e27a5b99b03",
+      "content_id": "2a476e1a-b523-43ea-aeed-69a50cea3ed4",
+      "claim_id": "C64",
+      "claim": "The LptD\u0394L2 mutant is better tolerated in the E. coli \u0394waaD strain in liquid growth media.",
+      "claim_type": "EXPLICIT",
+      "source": "Also, the LptD\u0394L10 loop deletion mutant was better tolerated in E. coli K-12 compared to the LPS-truncated \u0394waaD strain while in liquid growth media the LptD\u0394L2 mutant is better tolerated in the E. coli \u0394waaD strain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Comparison of experimental growth data",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:49:32.160602Z"
+    },
+    {
+      "id": "09a2781e-85af-4a48-9b83-e31eb944a74e",
+      "content_id": "2a476e1a-b523-43ea-aeed-69a50cea3ed4",
+      "claim_id": "C65",
+      "claim": "This result is consistent with the synthetic lethality of other mutations that affect OM biogenesis, specifically bam101, \u0394bamB, \u0394surA, and \u0394lpxL, in LPS-truncated E. coli strain backgrounds.",
+      "claim_type": "EXPLICIT",
+      "source": "This result is consistent with the synthetic lethality of other mutations that affect OM biogenesis, specifically bam101, \u0394bamB, \u0394surA, and \u0394lpxL, in LPS-truncated E. coli strain backgrounds (Klein et al., 2009; Storek et al., 2019) highlighting the redundancy that exists to maintain this important barrier structure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Klein et al., 2009; Storek et al., 2019",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:49:32.160602Z"
+    },
+    {
+      "id": "0edc88e0-61a9-4746-80b7-563900ed1484",
+      "content_id": "2a476e1a-b523-43ea-aeed-69a50cea3ed4",
+      "claim_id": "C66",
+      "claim": "The minimal inhibitory concentrations (MICs) of both rifampicin and vancomycin were lower for strains producing LptD\u0394L4.",
+      "claim_type": "EXPLICIT",
+      "source": "The minimal inhibitory concentrations (MICs) of both rifampicin and vancomycin were lower for strains producing LptD\u0394L4, as expected, and also for strains producing LptD\u0394L2, LptD\u0394L8, and LptD\u0394L10 indicating an OM defect (Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental MIC data shown in Table 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:49:32.160602Z"
+    },
+    {
+      "id": "ec5a14c9-2abd-435c-aa28-fe5a9995b803",
+      "content_id": "2a476e1a-b523-43ea-aeed-69a50cea3ed4",
+      "claim_id": "C67",
+      "claim": "The minimal inhibitory concentrations (MICs) of both rifampicin and vancomycin were lower for strains producing LptD\u0394L2, LptD\u0394L8, and LptD\u0394L10 indicating an OM defect.",
+      "claim_type": "EXPLICIT",
+      "source": "The minimal inhibitory concentrations (MICs) of both rifampicin and vancomycin were lower for strains producing LptD\u0394L4, as expected, and also for strains producing LptD\u0394L2, LptD\u0394L8, and LptD\u0394L10 indicating an OM defect (Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental MIC data shown in Table 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:49:32.160602Z"
+    },
+    {
+      "id": "1c5c5f37-1a71-44f9-bb87-1241133a36da",
+      "content_id": "2a476e1a-b523-43ea-aeed-69a50cea3ed4",
+      "claim_id": "C68",
+      "claim": "Increases in OM permeability were observed in both E. coli K-12 and E. coli \u0394waaD strain backgrounds for strains producing LptD\u0394L2, LptD\u0394L4, LptD\u0394L8, and LptD\u0394L10.",
+      "claim_type": "EXPLICIT",
+      "source": "Increases in OM permeability were observed in both E. coli K-12 and E. coli \u0394waaD strain backgrounds.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from MIC data",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:49:32.160602Z"
+    },
+    {
+      "id": "4f52c16a-74fd-440f-9662-3916a347c4eb",
+      "content_id": "2a476e1a-b523-43ea-aeed-69a50cea3ed4",
+      "claim_id": "C69",
+      "claim": "Extracellular L2, L4, L8 and L10 are important for LptD function and potentially influence LptD folding, interaction with BamA, or activity.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that extracellular L2, L4, L8 and L10 are important for LptD function and potentially influence LptD folding, interaction with BamA, or activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from experimental growth and MIC data",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:49:32.160602Z"
+    },
+    {
+      "id": "38b2b922-13be-43d1-b098-37e77228b44f",
+      "content_id": "2a476e1a-b523-43ea-aeed-69a50cea3ed4",
+      "claim_id": "C70",
+      "claim": "52 FACS+ \u03b1-LptD mAbs were characterized for binding to the E. coli \u0394waaD loop deletion panel.",
+      "claim_type": "EXPLICIT",
+      "source": "We characterized binding of 52 FACS+ \u03b1-LptD mAbs to the E. coli \u0394waaD loop deletion panel.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of experimental approach",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:49:32.160602Z"
+    },
+    {
+      "id": "bb4484c7-e4b8-4bc0-93b6-0a38790716ec",
+      "content_id": "2a476e1a-b523-43ea-aeed-69a50cea3ed4",
+      "claim_id": "C71",
+      "claim": "Production of each mutant LptD was detected and growth of the E. coli \u0394waaD conditional lptD strain was supported by all LptD loop deletion mutants with the exception of L10.",
+      "claim_type": "EXPLICIT",
+      "source": "In the absence of arabinose driving expression of the chromosomal wild-type lptD, production of each mutant LptD was detected and growth of the E. coli \u0394waaD conditional lptD strain was supported by all LptD loop deletion mutants with the exception of L10, so this construct was not tested in this assay (Figure 3B and Figure 3\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental growth and Western blot data shown in Figure 3B and Figure 3\u2014figure supplement 1B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:49:32.160602Z"
+    },
+    {
+      "id": "7a6a28e2-7b3e-49c9-afd1-b6798a7bc3f2",
+      "content_id": "2a476e1a-b523-43ea-aeed-69a50cea3ed4",
+      "claim_id": "C72",
+      "claim": "The majority of the \u03b1-LptD mAbs could be categorized into one of 7 general binding patterns based on the mutants they were unable to bind.",
+      "claim_type": "EXPLICIT",
+      "source": "The majority of the \u03b1-LptD mAbs could be categorized into one of 7 general binding patterns based on the mutants they were unable to bind with multiple representatives in each grouping: (1) Loop 4 (L4), (2) Loop 6/7 (L6/L7), (3) Loop 6/7/8 (L6/L7/L8), (4) Loop 8/9 (L8/L9), (5) Loop 9 (L9), (6) Loop 11 (L11), and (7) Loop 13 (L13) (Figure 4B and Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental FACS binding data shown in Figure 4B and Figure 4\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:49:32.160602Z"
+    },
+    {
+      "id": "172e0a6f-7c4d-4cdc-a5cc-edf742e21e94",
+      "content_id": "2a476e1a-b523-43ea-aeed-69a50cea3ed4",
+      "claim_id": "C73",
+      "claim": "For every loop deletion, at least one FACS+ \u03b1-LptD mAb had reduced cell binding by >90%.",
+      "claim_type": "EXPLICIT",
+      "source": "For every loop deletion, at least one FACS+ \u03b1-LptD mAb had reduced cell binding by >90%.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Analysis of experimental FACS binding data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:49:32.160602Z"
+    },
+    {
+      "id": "49fb65b7-ddbe-461a-b85f-74c1cd798134",
+      "content_id": "2a476e1a-b523-43ea-aeed-69a50cea3ed4",
+      "claim_id": "C74",
+      "claim": "The notable exceptions to >90% reduced binding were L1, L2, L5 and L12.",
+      "claim_type": "EXPLICIT",
+      "source": "The notable exceptions were L1, L2, L5 and L12, but mAbs could be found that exhibited >80% decreased binding for L1, L5 and L12.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Analysis of experimental FACS binding data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:49:32.160602Z"
+    },
+    {
+      "id": "47274813-ab60-42e1-a2de-de553d3745cb",
+      "content_id": "2a476e1a-b523-43ea-aeed-69a50cea3ed4",
+      "claim_id": "C75",
+      "claim": "mAbs could be found that exhibited >80% decreased binding for L1, L5 and L12.",
+      "claim_type": "EXPLICIT",
+      "source": "The notable exceptions were L1, L2, L5 and L12, but mAbs could be found that exhibited >80% decreased binding for L1, L5 and L12.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Analysis of experimental FACS binding data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:49:32.160602Z"
+    },
+    {
+      "id": "7e36da01-6a4c-45d6-ad51-d1f168d783fa",
+      "content_id": "2a476e1a-b523-43ea-aeed-69a50cea3ed4",
+      "claim_id": "C76",
+      "claim": "A majority of the two- and three-species cross-reactive \u03b1-LptD mAbs were dependent upon L8, L9, or both for binding.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, a majority of the two- and three-species cross-reactive \u03b1-LptD mAbs were dependent upon L8, L9, or both for binding (Figure 2B, Figure 2D, Figure 2\u2014figure supplement 2, Figure 4B, and Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Analysis of experimental FACS binding and cross-reactivity data shown in multiple figures",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:49:32.160602Z"
+    },
+    {
+      "id": "26b36ce5-ca2e-4479-8c53-9f5360cc0e46",
+      "content_id": "2a476e1a-b523-43ea-aeed-69a50cea3ed4",
+      "claim_id": "C77",
+      "claim": "E. coli-specific \u03b1-LptD mAbs, but not the three-species cross-reactive mAbs, were defective for binding upon removal of L3, L7, or L13.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, E. coli-specific \u03b1-LptD mAbs, but not the three-species cross-reactive mAbs, were defective for binding upon removal of L3, L7, or L13 (Figure 2B, Figure 2D, Figure 2\u2014figure supplement 2, Figure 4B, and Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Analysis of experimental FACS binding and cross-reactivity data shown in multiple figures",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:49:32.160602Z"
+    },
+    {
+      "id": "ebe070a0-ef8b-4fcf-afe9-db6bb8cc9719",
+      "content_id": "2a476e1a-b523-43ea-aeed-69a50cea3ed4",
+      "claim_id": "C78",
+      "claim": "LptD can tolerate extensive alteration to its extracellular surface with little or no effect on folding or function.",
+      "claim_type": "EXPLICIT",
+      "source": "These \u03b1-LptD mAbs and knowledge of their binding sites are valuable tools for probing the accessible LptD surface and suggest that LptD can tolerate extensive alteration to its extracellular surface with little or no effect on folding or function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from experimental data on loop deletions and antibody binding",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:49:32.160602Z"
+    },
+    {
+      "id": "68b9ee28-af4f-4de4-8cbf-50c57639c04d",
+      "content_id": "2a476e1a-b523-43ea-aeed-69a50cea3ed4",
+      "claim_id": "C79",
+      "claim": "mAbs from the rat immunization campaign tended to require L6, L7, and L8 for binding.",
+      "claim_type": "EXPLICIT",
+      "source": "Partitioning the mAbs with respect to the host animal used for immunization highlighted a trend for L6, L7, and L8 to be critical from the rat immunization campaign, while mAbs from the mouse immunization campaign tended to yield FACS+ antibodies that required L8 and L9.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Analysis of experimental FACS binding data partitioned by host animal",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:49:32.160602Z"
+    },
+    {
+      "id": "f5391317-34f5-400f-847e-15f7ec49f04d",
+      "content_id": "2a476e1a-b523-43ea-aeed-69a50cea3ed4",
+      "claim_id": "C80",
+      "claim": "mAbs from the mouse immunization campaign tended to yield FACS+ antibodies that required L8 and L9.",
+      "claim_type": "EXPLICIT",
+      "source": "Partitioning the mAbs with respect to the host animal used for immunization highlighted a trend for L6, L7, and L8 to be critical from the rat immunization campaign, while mAbs from the mouse immunization campaign tended to yield FACS+ antibodies that required L8 and L9.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Analysis of experimental FACS binding data partitioned by host animal",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:49:32.160602Z"
+    },
+    {
+      "id": "7fac3745-1bc3-46b2-b990-e5f3d58947bc",
+      "content_id": "2a476e1a-b523-43ea-aeed-69a50cea3ed4",
+      "claim_id": "C81",
+      "claim": "Disruption of L2 or L10 resulted in growth defects for E. coli \u0394waaD.",
+      "claim_type": "EXPLICIT",
+      "source": "Disruption of L2 or L10 resulted in growth defects for E. coli \u0394waaD (Figure 3B), however, we did not identify any \u03b1-LptD mAbs that bound L2, and both L2 and L10 appear to be inaccessible in available structural models of LptD (Figure 4C) (Botos et al., 2016; Dong et al., 2014; Qiao et al., 2014).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental growth data shown in Figure 3B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:49:32.160602Z"
+    },
+    {
+      "id": "c5bec792-3639-40d3-a282-5691a9e497eb",
+      "content_id": "2a476e1a-b523-43ea-aeed-69a50cea3ed4",
+      "claim_id": "C82",
+      "claim": "No \u03b1-LptD mAbs were identified that bound L2.",
+      "claim_type": "EXPLICIT",
+      "source": "Disruption of L2 or L10 resulted in growth defects for E. coli \u0394waaD (Figure 3B), however, we did not identify any \u03b1-LptD mAbs that bound L2, and both L2 and L10 appear to be inaccessible in available structural models of LptD (Figure 4C) (Botos et al., 2016; Dong et al., 2014; Qiao et al., 2014).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Result from antibody binding experiments",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:49:32.160602Z"
+    },
+    {
+      "id": "564fad40-ba7b-49e2-ad43-d317a124d557",
+      "content_id": "2a476e1a-b523-43ea-aeed-69a50cea3ed4",
+      "claim_id": "C83",
+      "claim": "Both L2 and L10 appear to be inaccessible in available structural models of LptD.",
+      "claim_type": "EXPLICIT",
+      "source": "Disruption of L2 or L10 resulted in growth defects for E. coli \u0394waaD (Figure 3B), however, we did not identify any \u03b1-LptD mAbs that bound L2, and both L2 and L10 appear to be inaccessible in available structural models of LptD (Figure 4C) (Botos et al., 2016; Dong et al., 2014; Qiao et al., 2014).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Analysis of structural models shown in Figure 4C and supported by citations to Botos et al., 2016; Dong et al., 2014; Qiao et al., 2014",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:49:32.160602Z"
+    },
+    {
+      "id": "9197ede8-d9cb-4b40-94ca-b437dea0029b",
+      "content_id": "2a476e1a-b523-43ea-aeed-69a50cea3ed4",
+      "claim_id": "C84",
+      "claim": "No \u03b1-LptD mAbs were able to inhibit growth of E. coli K-12 or E. coli \u0394waaD by >50%.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, when we screened our entire antibody catalog using growth inhibition as a readout for mAb activity, we did not identify any \u03b1-LptD mAbs able to inhibit growth of E. coli K-12 or E. coli \u0394waaD by >50% (Table 2 and Figure 4\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental growth inhibition data shown in Table 2 and Figure 4\u2014figure supplement 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:49:32.160602Z"
+    },
+    {
+      "id": "d4e1e3bf-70aa-44a8-9315-c85c28cf16ab",
+      "content_id": "2a476e1a-b523-43ea-aeed-69a50cea3ed4",
+      "claim_id": "C85",
+      "claim": "The lack of ability to identify an inhibitory \u03b1-LptD mAb suggests that LptD may be specifically evolved to withstand extracellular modulation by antibodies while protecting critical structural elements of LptD function.",
+      "claim_type": "EXPLICIT",
+      "source": "Combined with our LptD loop deletion analysis, the lack of ability to identify an inhibitory \u03b1-LptD mAb suggests that LptD may be specifically evolved to withstand extracellular modulation by antibodies while protecting critical structural elements of LptD function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from experimental data on loop deletions and antibody activity",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:49:32.160602Z"
+    },
+    {
+      "id": "d853000b-4c7c-46b9-aabd-e66c9323b182",
+      "content_id": "2a476e1a-b523-43ea-aeed-69a50cea3ed4",
+      "claim_id": "C86",
+      "claim": "In crystal structures of LptDE, L2 is occluded by L3.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this possibility, in crystal structures of LptDE, the two loops we found most critical were occluded by other parts of the protein: L2 by L3, and L10 by L9 and L11 (Dong et al., 2014; Qiao et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Dong et al., 2014; Qiao et al., 2014",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:49:32.160602Z"
+    },
+    {
+      "id": "93e8dc5e-b2ab-42de-bf04-bf67bd8c2527",
+      "content_id": "2a476e1a-b523-43ea-aeed-69a50cea3ed4",
+      "claim_id": "C87",
+      "claim": "In crystal structures of LptDE, L10 is occluded by L9 and L11.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this possibility, in crystal structures of LptDE, the two loops we found most critical were occluded by other parts of the protein: L2 by L3, and L10 by L9 and L11 (Dong et al., 2014; Qiao et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Dong et al., 2014; Qiao et al., 2014",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:49:32.160602Z"
+    },
+    {
+      "id": "8ee3c6fa-f631-4411-abc5-4dc2c41ca9f9",
+      "content_id": "2a476e1a-b523-43ea-aeed-69a50cea3ed4",
+      "claim_id": "C88",
+      "claim": "By burying critical regions, LptD appears to avoid direct interference by antibodies, providing bacteria an evolutionary advantage in evading functional antagonism by the host immune system.",
+      "claim_type": "EXPLICIT",
+      "source": "By burying critical regions, LptD appears to avoid direct interference by antibodies, providing bacteria an evolutionary advantage in evading functional antagonism by the host immune system.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from experimental data on loop accessibility and essentiality",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:49:32.160602Z"
+    },
+    {
+      "id": "dc6bfc4d-f1f5-43dc-beb8-b8d074fe4797",
+      "content_id": "2a476e1a-b523-43ea-aeed-69a50cea3ed4",
+      "claim_id": "C89",
+      "claim": "The antibody-accessible LptD loops are the most diverse in sequence.",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, the antibody-accessible LptD loops also are the most diverse in sequence, suggesting that these regions may be subject to selective pressures from the immune system (Botos et al., 2016) (Figure 5\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Sequence analysis shown in Figure 5\u2014figure supplement 1B and supported by citation to Botos et al., 2016",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:49:32.160602Z"
+    },
+    {
+      "id": "8e4a27a1-5178-4d94-a82c-72d433e28135",
+      "content_id": "2a476e1a-b523-43ea-aeed-69a50cea3ed4",
+      "claim_id": "C90",
+      "claim": "The antibody-accessible LptD loops may be subject to selective pressures from the immune system.",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, the antibody-accessible LptD loops also are the most diverse in sequence, suggesting that these regions may be subject to selective pressures from the immune system (Botos et al., 2016) (Figure 5\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inference from sequence analysis shown in Figure 5\u2014figure supplement 1B and supported by citation to Botos et al., 2016",
+      "evidence_type": "[\"CITATION\", \"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:49:32.160602Z"
+    },
+    {
+      "id": "9120c421-12da-4c33-b87c-2f6b9b9eb024",
+      "content_id": "2a476e1a-b523-43ea-aeed-69a50cea3ed4",
+      "claim_id": "C91",
+      "claim": "The study represents an exhaustive \u03b1-LptD antibody discovery campaign, and potentially the most exhaustive on any membrane protein described to date.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, our study represents an exhaustive \u03b1-LptD antibody discovery campaign, and potentially the most exhaustive on any membrane protein described to date.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary statement about the scope of the study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:49:32.160602Z"
+    },
+    {
+      "id": "b696c593-8644-4d1d-a243-2c9301cd5d63",
+      "content_id": "2a476e1a-b523-43ea-aeed-69a50cea3ed4",
+      "claim_id": "C92",
+      "claim": "The study mapped essential and non-essential structural features of LptD for the first time.",
+      "claim_type": "EXPLICIT",
+      "source": "For the first time, we have been able to map essential and non-essential structural features of this intriguing and important potential antibiotic target.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of experimental findings",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:49:32.160602Z"
+    },
+    {
+      "id": "b9abb462-2557-486e-b3de-50773864b0b7",
+      "content_id": "2a476e1a-b523-43ea-aeed-69a50cea3ed4",
+      "claim_id": "C93",
+      "claim": "Extreme tolerability of the ECLs to interference was observed, suggesting that the architecture of the exposed ECLs of LptD play a role in protecting critical functions of this essential OMP.",
+      "claim_type": "EXPLICIT",
+      "source": "We have observed extreme tolerability of the ECLs to interference, suggesting that the architecture of the exposed ECLs of LptD play a role in protecting critical functions of this essential OMP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from experimental data on loop deletions and antibody binding",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:49:32.160602Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "53ccfd39-dd2d-43b8-930e-68a4242e2683",
+      "content_id": "2a476e1a-b523-43ea-aeed-69a50cea3ed4",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The study generated a large library of >3000 monoclonal antibodies against LptD using four diverse immunization strategies, producing 7000+ hybridomas with 774 rat, 952 mouse, and 1494 targeted boost-and-sort purified mAbs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C23-C32 describe the antibody discovery campaigns with specific quantitative data shown in Figure 1C. The experimental approach is clearly documented with reproducible methods, and the numbers are internally consistent across claims.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:49:32.160602Z"
+    },
+    {
+      "id": "71939e13-b015-4338-b22d-8ff205f3849b",
+      "content_id": "2a476e1a-b523-43ea-aeed-69a50cea3ed4",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "FACS analysis revealed that 9-30% of ELISA+ \u03b1-LptD mAbs bound E. coli \u0394waaD while <1% bound E. coli K-12, demonstrating that LPS presents a significant barrier to accessing surface epitopes and suggesting ECLs may be masked by LPS core sugars.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-C37 present FACS data from Figure 2A and Figure 2\u2014figure supplement 1 showing differential antibody binding between strains with different LPS structures. The data support the conclusion about LPS as a barrier, consistent with cited prior work.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:49:32.160602Z"
+    },
+    {
+      "id": "23e23d80-07c8-4cb6-a429-33f7beffdc12",
+      "content_id": "2a476e1a-b523-43ea-aeed-69a50cea3ed4",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Cross-species ELISA analysis showed that the majority (61-69%) of \u03b1-LptD mAbs bound only E. coli LptDE, while 10 mAbs (7%) bound LptDE from all three tested species (E. coli, K. pneumoniae, E. cloacae), which share 71-84% sequence identity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38-C45 present sequence comparison and ELISA cross-reactivity data shown in Figures 2B-C and supplementary figures. The percentages and species identity values are specific and supported by the experimental data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:49:32.160602Z"
+    },
+    {
+      "id": "a7fbe1e2-1bfb-4d3b-91c9-d7219317acc7",
+      "content_id": "2a476e1a-b523-43ea-aeed-69a50cea3ed4",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "SPR-based epitope binning identified two major epitope bins and a possible third bin, with three-species cross-reactive mAbs clustering together while E. coli-specific mAbs formed a distinct cluster.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46-C48 describe epitope binning results shown in Figure 2D. The SPR-based competition assay is a standard method for epitope mapping, and the clustering patterns are visually evident in the figure.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:49:32.160602Z"
+    },
+    {
+      "id": "1cf67f92-5e40-4f59-b14e-78cae3da635b",
+      "content_id": "2a476e1a-b523-43ea-aeed-69a50cea3ed4",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Construction of 13 LptD loop deletion mutants showed that in E. coli K-12, all loop deletions except L2 supported growth in the absence of arabinose, with similar protein expression levels to wild-type, demonstrating high tolerance of LptD to ECL manipulation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49-C53 describe the loop deletion panel construction and growth phenotypes shown in Figures 3A-B and Figure 3\u2014figure supplement 1A. The experimental design is sound with appropriate controls (arabinose induction), and Western blots confirm protein expression.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:49:32.160602Z"
+    },
+    {
+      "id": "9a03c01e-8cbb-4180-9730-4cf4c7e11507",
+      "content_id": "2a476e1a-b523-43ea-aeed-69a50cea3ed4",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "In E. coli \u0394waaD, LptD lacking L2 or L10 could not support growth on solid agar, but LptD\u0394L10 was functional in E. coli K-12, indicating L10 is important for LptD function specifically in the LPS-truncated strain.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54-C57 present differential growth phenotypes between strains shown in Figure 3B and Figure 3\u2014figure supplement 1A. The data clearly show strain-specific requirements for L10, with appropriate controls and protein expression confirmation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:49:32.160602Z"
+    },
+    {
+      "id": "cc165a22-52c2-40a6-b619-fed55d418d58",
+      "content_id": "2a476e1a-b523-43ea-aeed-69a50cea3ed4",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Liquid growth curve analysis revealed that LptD\u0394L10 grew at decreased rate in K-12 but not at all in \u0394waaD, while LptD\u0394L2 showed severe growth defects in K-12 but supported growth in \u0394waaD, indicating L2 and L10 are important for LptD folding, activity, or BamA interaction with differential requirements depending on LPS structure.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-C64 describe growth curve data from Figures 3C-D and Supplementary file 1. The differential phenotypes between strains are clearly documented with statistical analysis, supporting the conclusion about strain-specific loop requirements.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:49:32.160602Z"
+    },
+    {
+      "id": "81e0d535-2772-4ddd-bcb3-4514743fe99f",
+      "content_id": "2a476e1a-b523-43ea-aeed-69a50cea3ed4",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The differential loop requirements in LPS-truncated strains are consistent with synthetic lethality of other OM biogenesis mutations (bam101, \u0394bamB, \u0394surA, \u0394lpxL) in LPS-truncated backgrounds.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C65 contextualizes the findings with cited prior work (Klein et al., 2009; Storek et al., 2019). The comparison is appropriate and supports the interpretation of redundancy in OM maintenance.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:49:32.160602Z"
+    },
+    {
+      "id": "4f3d194f-602b-4ff3-9e14-a6b728a95bf8",
+      "content_id": "2a476e1a-b523-43ea-aeed-69a50cea3ed4",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "MIC assays showed that strains producing LptD\u0394L2, LptD\u0394L4, LptD\u0394L8, or LptD\u0394L10 had lower MICs for rifampicin and vancomycin in both K-12 and \u0394waaD backgrounds, indicating these loops are important for OM barrier function.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C66-C69 present MIC data from Table 1 showing increased antibiotic sensitivity for specific loop deletions. The use of OM-excluded antibiotics is an appropriate assay for OM integrity, and the data are consistent across both strain backgrounds.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:49:32.160602Z"
+    },
+    {
+      "id": "1def2444-34f4-4410-af83-ff81dbba0051",
+      "content_id": "2a476e1a-b523-43ea-aeed-69a50cea3ed4",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "FACS-based epitope mapping with 52 mAbs against the loop deletion panel identified 7 general binding patterns (L4, L6/L7, L6/L7/L8, L8/L9, L9, L11, L13), with at least one mAb showing >90% reduced binding for most loops except L1, L2, L5, and L12.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C70-C75 describe systematic epitope mapping shown in Figures 4A-B and Figure 4\u2014figure supplement 1. The experimental design is rigorous with 12 viable loop deletions tested, and the binding patterns are clearly documented with quantitative MFI data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:49:32.160602Z"
+    },
+    {
+      "id": "1abee2ce-133e-4efa-9521-a30cb8ee12cf",
+      "content_id": "2a476e1a-b523-43ea-aeed-69a50cea3ed4",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Integration of cross-reactivity and loop deletion mapping showed that cross-reactive mAbs predominantly required L8/L9 for binding while E. coli-specific mAbs required L3, L7, or L13, suggesting LptD can tolerate extensive extracellular surface alteration.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C76-C78 integrate data from multiple figures (2B, 2D, 4B, and supplements) to correlate species cross-reactivity with loop requirements. The analysis is comprehensive and the conclusion about tolerance to alteration is supported by the extensive loop deletion data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:49:32.160602Z"
+    },
+    {
+      "id": "f5dbfe43-bbf9-47f0-adec-5a2f8aa16e6f",
+      "content_id": "2a476e1a-b523-43ea-aeed-69a50cea3ed4",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Partitioning mAbs by host animal revealed that rat immunizations yielded mAbs requiring L6/L7/L8 while mouse immunizations yielded mAbs requiring L8/L9, suggesting host-specific differences in epitope recognition.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C79-C80 describe trends in the FACS binding data partitioned by immunization host. While the manuscript states these are trends rather than absolute patterns, the observation is supported by the data and provides insight into immunization strategy.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:49:32.160602Z"
+    },
+    {
+      "id": "a0c1a96a-ad15-477b-8b5d-f36b8c28efa8",
+      "content_id": "2a476e1a-b523-43ea-aeed-69a50cea3ed4",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "L2 and L10, which caused growth defects when deleted in \u0394waaD, were not bound by any identified mAbs and appear inaccessible in structural models of LptD.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C81-C83 integrate functional data (Figure 3B) with antibody binding results and structural analysis (Figure 4C, cited structures). The correlation between functional importance, antibody inaccessibility, and structural occlusion is well-supported.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:49:32.160602Z"
+    },
+    {
+      "id": "cf8f2a13-ff71-4fe1-b387-4a770b8a694c",
+      "content_id": "2a476e1a-b523-43ea-aeed-69a50cea3ed4",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Screening the entire antibody catalog (>3000 mAbs) identified no \u03b1-LptD mAbs able to inhibit growth of E. coli K-12 or \u0394waaD by >50%.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C84 and C28 present growth inhibition data from Table 2 and Figure 4\u2014figure supplement 2. The negative result is clearly documented across all immunization campaigns with appropriate controls and thresholds defined.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:49:32.160602Z"
+    },
+    {
+      "id": "752eba36-ff8a-4f4d-b463-009132071a0d",
+      "content_id": "2a476e1a-b523-43ea-aeed-69a50cea3ed4",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The lack of inhibitory mAbs combined with loop deletion analysis suggests LptD evolved to withstand antibody interference by burying critical loops (L2 by L3, L10 by L9/L11 in crystal structures), providing evolutionary advantage against immune antagonism.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C85-C88 synthesize functional, antibody binding, and structural data (cited structures from Dong et al., 2014; Qiao et al., 2014) to propose an evolutionary interpretation. The conclusion is well-supported by the convergence of multiple lines of evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:49:32.160602Z"
+    },
+    {
+      "id": "e22309cb-e86b-4cd2-b4d5-3c91757e1d98",
+      "content_id": "2a476e1a-b523-43ea-aeed-69a50cea3ed4",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Antibody-accessible LptD loops are the most diverse in sequence (Figure 5\u2014figure supplement 1B), suggesting these regions may be subject to selective pressures from the immune system.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C89-C90 present sequence diversity analysis shown in Figure 5\u2014figure supplement 1B and supported by citation to Botos et al., 2016. The correlation between antibody accessibility and sequence diversity supports the evolutionary interpretation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:49:32.160602Z"
+    },
+    {
+      "id": "212e323c-cb40-4455-9b5b-5f964b0e37da",
+      "content_id": "2a476e1a-b523-43ea-aeed-69a50cea3ed4",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Epitope binning and mapping experiments demonstrated that 7 of 13 ECLs are targeted by antibodies, and only antibody-inaccessible ECLs were required for LptD structure or function, suggesting antibody-accessible loops evolved to protect key regions but are themselves dispensable.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25-C27 summarize the main findings integrating epitope mapping (Figures 2D, 4B) with functional analysis (Figure 3). The conclusion that accessible loops are dispensable while inaccessible loops are essential is strongly supported by the comprehensive data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:49:32.160602Z"
+    },
+    {
+      "id": "74171fc8-b62b-4eb1-9024-d2df6226aefd",
+      "content_id": "2a476e1a-b523-43ea-aeed-69a50cea3ed4",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "This study represents an exhaustive \u03b1-LptD antibody discovery campaign (potentially the most exhaustive on any membrane protein), mapping essential and non-essential structural features of LptD for the first time and revealing extreme tolerability of ECLs to interference.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C91-C93 provide summary statements about the scope and significance of the work. The claim of being potentially the most exhaustive campaign is supported by the scale (>3000 mAbs, 4 strategies) and systematic characterization presented throughout the manuscript.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:49:32.160602Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "c5ae0114-5ac1-46f3-b98e-369834d72eb2",
+      "result_id": "53ccfd39-dd2d-43b8-930e-68a4242e2683"
+    },
+    {
+      "claim_id": "2ec9b18d-bb22-4b47-8959-07f4bc77bb13",
+      "result_id": "53ccfd39-dd2d-43b8-930e-68a4242e2683"
+    },
+    {
+      "claim_id": "9b533e3c-8a96-4516-b2de-f71e8b88dffe",
+      "result_id": "53ccfd39-dd2d-43b8-930e-68a4242e2683"
+    },
+    {
+      "claim_id": "cd0b8da5-ab9b-4171-a908-bc0ef3285d1f",
+      "result_id": "53ccfd39-dd2d-43b8-930e-68a4242e2683"
+    },
+    {
+      "claim_id": "221f410d-63b3-4b3f-8146-5d4880606928",
+      "result_id": "53ccfd39-dd2d-43b8-930e-68a4242e2683"
+    },
+    {
+      "claim_id": "2a2c2c53-573c-44f7-af63-d95dd8c9050c",
+      "result_id": "53ccfd39-dd2d-43b8-930e-68a4242e2683"
+    },
+    {
+      "claim_id": "6a2dc9f2-f6ec-47fc-a9cd-f75185130a7b",
+      "result_id": "71939e13-b015-4338-b22d-8ff205f3849b"
+    },
+    {
+      "claim_id": "a8f2d38c-62de-483a-96c6-b0a934c7d481",
+      "result_id": "71939e13-b015-4338-b22d-8ff205f3849b"
+    },
+    {
+      "claim_id": "614a8bb0-2480-452b-a46a-3a18b1b5e556",
+      "result_id": "71939e13-b015-4338-b22d-8ff205f3849b"
+    },
+    {
+      "claim_id": "5bd8c215-ead7-445a-aa07-4c4f2823f126",
+      "result_id": "71939e13-b015-4338-b22d-8ff205f3849b"
+    },
+    {
+      "claim_id": "1cff2b9c-5b03-4c3a-b89a-bb6d881f8e08",
+      "result_id": "71939e13-b015-4338-b22d-8ff205f3849b"
+    },
+    {
+      "claim_id": "33603ae4-d469-4ef9-bb86-276c2f116e8d",
+      "result_id": "23e23d80-07c8-4cb6-a429-33f7beffdc12"
+    },
+    {
+      "claim_id": "f8e64c01-180e-47e5-a36f-b114d6ee4230",
+      "result_id": "23e23d80-07c8-4cb6-a429-33f7beffdc12"
+    },
+    {
+      "claim_id": "c1a40f18-0ef4-43e1-be76-d13c8582f997",
+      "result_id": "23e23d80-07c8-4cb6-a429-33f7beffdc12"
+    },
+    {
+      "claim_id": "512f29fb-4996-442d-9b5e-885ae85b6705",
+      "result_id": "23e23d80-07c8-4cb6-a429-33f7beffdc12"
+    },
+    {
+      "claim_id": "395cd3b0-ac10-49df-bc7c-64b61fcccf1f",
+      "result_id": "23e23d80-07c8-4cb6-a429-33f7beffdc12"
+    },
+    {
+      "claim_id": "4867e26b-97e6-498f-821f-398c79706696",
+      "result_id": "23e23d80-07c8-4cb6-a429-33f7beffdc12"
+    },
+    {
+      "claim_id": "7b679408-86f0-49d3-9aeb-3dd23a7dee72",
+      "result_id": "23e23d80-07c8-4cb6-a429-33f7beffdc12"
+    },
+    {
+      "claim_id": "009c25b2-9674-4658-bf38-d4cf6781075e",
+      "result_id": "23e23d80-07c8-4cb6-a429-33f7beffdc12"
+    },
+    {
+      "claim_id": "ec4ec48e-b5c8-4b90-9b9e-4759def0a3b5",
+      "result_id": "a7fbe1e2-1bfb-4d3b-91c9-d7219317acc7"
+    },
+    {
+      "claim_id": "0c9eb749-530c-49a8-9da4-6fbe293a6e5b",
+      "result_id": "a7fbe1e2-1bfb-4d3b-91c9-d7219317acc7"
+    },
+    {
+      "claim_id": "e26cb077-6980-4917-b6be-77c6e0f23d88",
+      "result_id": "a7fbe1e2-1bfb-4d3b-91c9-d7219317acc7"
+    },
+    {
+      "claim_id": "4d0e8282-ff8a-4ee3-bf98-1dbf07587fc0",
+      "result_id": "1cf67f92-5e40-4f59-b14e-78cae3da635b"
+    },
+    {
+      "claim_id": "18fce8ef-a91f-4001-9698-3ef3145718be",
+      "result_id": "1cf67f92-5e40-4f59-b14e-78cae3da635b"
+    },
+    {
+      "claim_id": "d135d957-defb-47b9-9db1-07f4c2e5380a",
+      "result_id": "1cf67f92-5e40-4f59-b14e-78cae3da635b"
+    },
+    {
+      "claim_id": "48d63556-db6e-4491-a0ae-3df018005d55",
+      "result_id": "1cf67f92-5e40-4f59-b14e-78cae3da635b"
+    },
+    {
+      "claim_id": "1dfb5fb8-3ea8-4558-ad41-f5a337c0d41a",
+      "result_id": "1cf67f92-5e40-4f59-b14e-78cae3da635b"
+    },
+    {
+      "claim_id": "4622355a-42fc-4024-98a3-b638d890ba5a",
+      "result_id": "9a03c01e-8cbb-4180-9730-4cf4c7e11507"
+    },
+    {
+      "claim_id": "2de61f48-fbf4-4c77-b805-5c0e8be62e78",
+      "result_id": "9a03c01e-8cbb-4180-9730-4cf4c7e11507"
+    },
+    {
+      "claim_id": "0881710e-cd69-4d82-8f35-1c3ed16738be",
+      "result_id": "9a03c01e-8cbb-4180-9730-4cf4c7e11507"
+    },
+    {
+      "claim_id": "bfa96f0d-edbb-42d0-8ea9-f4ca7ac7df24",
+      "result_id": "9a03c01e-8cbb-4180-9730-4cf4c7e11507"
+    },
+    {
+      "claim_id": "b72c96cb-ab50-43e2-9c38-68db13e1d65b",
+      "result_id": "cc165a22-52c2-40a6-b619-fed55d418d58"
+    },
+    {
+      "claim_id": "5fcfe244-1478-47e4-934e-c795407fe811",
+      "result_id": "cc165a22-52c2-40a6-b619-fed55d418d58"
+    },
+    {
+      "claim_id": "1b8634e6-9452-4e5c-9b81-52312d191f51",
+      "result_id": "cc165a22-52c2-40a6-b619-fed55d418d58"
+    },
+    {
+      "claim_id": "06754b18-2dd6-484f-a68c-202690269ab1",
+      "result_id": "cc165a22-52c2-40a6-b619-fed55d418d58"
+    },
+    {
+      "claim_id": "c543e907-fb9f-48b4-91fd-4bdce191990a",
+      "result_id": "cc165a22-52c2-40a6-b619-fed55d418d58"
+    },
+    {
+      "claim_id": "503a88d3-aaa6-49d9-9a87-150977135f6f",
+      "result_id": "cc165a22-52c2-40a6-b619-fed55d418d58"
+    },
+    {
+      "claim_id": "19191e06-a25b-45ab-8511-4e27a5b99b03",
+      "result_id": "cc165a22-52c2-40a6-b619-fed55d418d58"
+    },
+    {
+      "claim_id": "09a2781e-85af-4a48-9b83-e31eb944a74e",
+      "result_id": "81e0d535-2772-4ddd-bcb3-4514743fe99f"
+    },
+    {
+      "claim_id": "0edc88e0-61a9-4746-80b7-563900ed1484",
+      "result_id": "4f3d194f-602b-4ff3-9e14-a6b728a95bf8"
+    },
+    {
+      "claim_id": "ec5a14c9-2abd-435c-aa28-fe5a9995b803",
+      "result_id": "4f3d194f-602b-4ff3-9e14-a6b728a95bf8"
+    },
+    {
+      "claim_id": "1c5c5f37-1a71-44f9-bb87-1241133a36da",
+      "result_id": "4f3d194f-602b-4ff3-9e14-a6b728a95bf8"
+    },
+    {
+      "claim_id": "4f52c16a-74fd-440f-9662-3916a347c4eb",
+      "result_id": "4f3d194f-602b-4ff3-9e14-a6b728a95bf8"
+    },
+    {
+      "claim_id": "38b2b922-13be-43d1-b098-37e77228b44f",
+      "result_id": "1def2444-34f4-4410-af83-ff81dbba0051"
+    },
+    {
+      "claim_id": "bb4484c7-e4b8-4bc0-93b6-0a38790716ec",
+      "result_id": "1def2444-34f4-4410-af83-ff81dbba0051"
+    },
+    {
+      "claim_id": "7a6a28e2-7b3e-49c9-afd1-b6798a7bc3f2",
+      "result_id": "1def2444-34f4-4410-af83-ff81dbba0051"
+    },
+    {
+      "claim_id": "172e0a6f-7c4d-4cdc-a5cc-edf742e21e94",
+      "result_id": "1def2444-34f4-4410-af83-ff81dbba0051"
+    },
+    {
+      "claim_id": "49fb65b7-ddbe-461a-b85f-74c1cd798134",
+      "result_id": "1def2444-34f4-4410-af83-ff81dbba0051"
+    },
+    {
+      "claim_id": "47274813-ab60-42e1-a2de-de553d3745cb",
+      "result_id": "1def2444-34f4-4410-af83-ff81dbba0051"
+    },
+    {
+      "claim_id": "7e36da01-6a4c-45d6-ad51-d1f168d783fa",
+      "result_id": "1abee2ce-133e-4efa-9521-a30cb8ee12cf"
+    },
+    {
+      "claim_id": "26b36ce5-ca2e-4479-8c53-9f5360cc0e46",
+      "result_id": "1abee2ce-133e-4efa-9521-a30cb8ee12cf"
+    },
+    {
+      "claim_id": "ebe070a0-ef8b-4fcf-afe9-db6bb8cc9719",
+      "result_id": "1abee2ce-133e-4efa-9521-a30cb8ee12cf"
+    },
+    {
+      "claim_id": "68b9ee28-af4f-4de4-8cbf-50c57639c04d",
+      "result_id": "f5dbfe43-bbf9-47f0-adec-5a2f8aa16e6f"
+    },
+    {
+      "claim_id": "f5391317-34f5-400f-847e-15f7ec49f04d",
+      "result_id": "f5dbfe43-bbf9-47f0-adec-5a2f8aa16e6f"
+    },
+    {
+      "claim_id": "7fac3745-1bc3-46b2-b990-e5f3d58947bc",
+      "result_id": "a0c1a96a-ad15-477b-8b5d-f36b8c28efa8"
+    },
+    {
+      "claim_id": "c5bec792-3639-40d3-a282-5691a9e497eb",
+      "result_id": "a0c1a96a-ad15-477b-8b5d-f36b8c28efa8"
+    },
+    {
+      "claim_id": "564fad40-ba7b-49e2-ad43-d317a124d557",
+      "result_id": "a0c1a96a-ad15-477b-8b5d-f36b8c28efa8"
+    },
+    {
+      "claim_id": "9197ede8-d9cb-4b40-94ca-b437dea0029b",
+      "result_id": "cf8f2a13-ff71-4fe1-b387-4a770b8a694c"
+    },
+    {
+      "claim_id": "45e18a76-a5d9-476a-b223-b5d10fe9c835",
+      "result_id": "cf8f2a13-ff71-4fe1-b387-4a770b8a694c"
+    },
+    {
+      "claim_id": "d4e1e3bf-70aa-44a8-9315-c85c28cf16ab",
+      "result_id": "752eba36-ff8a-4f4d-b463-009132071a0d"
+    },
+    {
+      "claim_id": "d853000b-4c7c-46b9-aabd-e66c9323b182",
+      "result_id": "752eba36-ff8a-4f4d-b463-009132071a0d"
+    },
+    {
+      "claim_id": "93e8dc5e-b2ab-42de-bf04-bf67bd8c2527",
+      "result_id": "752eba36-ff8a-4f4d-b463-009132071a0d"
+    },
+    {
+      "claim_id": "8ee3c6fa-f631-4411-abc5-4dc2c41ca9f9",
+      "result_id": "752eba36-ff8a-4f4d-b463-009132071a0d"
+    },
+    {
+      "claim_id": "dc6bfc4d-f1f5-43dc-beb8-b8d074fe4797",
+      "result_id": "e22309cb-e86b-4cd2-b4d5-3c91757e1d98"
+    },
+    {
+      "claim_id": "8e4a27a1-5178-4d94-a82c-72d433e28135",
+      "result_id": "e22309cb-e86b-4cd2-b4d5-3c91757e1d98"
+    },
+    {
+      "claim_id": "ad97e1c6-e444-46c4-b8af-80cf37f940d8",
+      "result_id": "212e323c-cb40-4455-9b5b-5f964b0e37da"
+    },
+    {
+      "claim_id": "be9f19a7-ed44-431c-8e51-d997e265be45",
+      "result_id": "212e323c-cb40-4455-9b5b-5f964b0e37da"
+    },
+    {
+      "claim_id": "1b85cc85-ee3f-42e6-af6c-5f1498325e16",
+      "result_id": "212e323c-cb40-4455-9b5b-5f964b0e37da"
+    },
+    {
+      "claim_id": "9120c421-12da-4c33-b87c-2f6b9b9eb024",
+      "result_id": "74171fc8-b62b-4eb1-9024-d2df6226aefd"
+    },
+    {
+      "claim_id": "b696c593-8644-4d1d-a243-2c9301cd5d63",
+      "result_id": "74171fc8-b62b-4eb1-9024-d2df6226aefd"
+    },
+    {
+      "claim_id": "b9abb462-2557-486e-b3de-50773864b0b7",
+      "result_id": "74171fc8-b62b-4eb1-9024-d2df6226aefd"
+    }
+  ],
+  "comparisons": []
+}

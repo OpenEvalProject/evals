@@ -1,0 +1,342 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C9",
+      "C10",
+      "C31",
+      "C32"
+    ],
+    "result": "Xenogeneic mouse models have significant limitations for evaluating CAR-T cell therapies, including inability to assess on-target off-tumor toxicity due to limited antibody cross-reactivity and severe GVHD from human T cells. These models failed to predict lethal toxicities observed in clinical trials.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C9, C10, C31, and C32 collectively establish well-documented limitations of xenogeneic models through citations and experimental observations. The GVHD observed in NOG mice (C31) directly supports the inability to evaluate safety (C32), and historical failure to predict clinical toxicities (C10) validates these concerns.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C11",
+      "C81",
+      "C97"
+    ],
+    "result": "Syngeneic mouse models enable evaluation of CAR-T cell effects on endogenous immunity and combination therapies, providing advantages over xenogeneic models for assessing safety and efficacy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11, C81, and C97 are supported by citations to prior work and demonstrated in the current study through successful evaluation of antigen spreading (C4, C49-C51) and combination therapy (C5, C59-C61). The experimental data validates the utility of syngeneic models.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "GPC1 is a cell-surface proteoglycan involved in fetal brain development, with knockout mice showing no abnormalities in adult stage but reduced brain volume in early fetal phase, suggesting no critical function in healthy adults.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C16 are well-supported by citation to Jen et al., 2009 and represent established knowledge about GPC1 biology. The inference that GPC1 has no critical adult function (C16) logically follows from the knockout phenotype data (C14).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "GPC1 is overexpressed in various human cancers and linked to malignant phenotypes including cell-cycle promotion and enhanced metastatic potential, serving as a prognostic factor in some cancers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C19 are supported by multiple citations to previous studies documenting GPC1 overexpression and functional roles in cancer. This establishes the rationale for targeting GPC1 with CAR-T cells.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C34",
+      "C35"
+    ],
+    "result": "Anti-GPC1 mAb (clone: 1-12) recognizes both human and mouse GPC1, shows tumor-specific expression with low/no detection in normal adult tissues by IHC, and demonstrates similar expression patterns between species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C23, C34-C35 are supported by prior work (Harada et al., 2017), SPR data, qPCR (Figures 1A, 3A), and IHC data (Figures 1C, 3B). The cross-reactivity and tumor-specific staining pattern are consistently demonstrated across multiple assays and species.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "The scFv derived from anti-GPC1 mAb shows high binding affinity for both human GPC1 (KD ~10^-8 to 10^-9 M) and mouse GPC1 (KD ~10^-7 to 10^-8 M), with affinity comparable to clinical anti-CD19 scFv.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C26, C36-C38 are supported by SPR analysis data presented in the manuscript. The KD values are quantitatively reported and compared to clinical benchmarks (C26), providing strong evidence for suitable binding characteristics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C2"
+    ],
+    "result": "Human GPC1-specific CAR-T cells demonstrate antigen-dependent IFN\u03b3 secretion and cytotoxicity in vitro, with the HL form showing superior activity, and effectively inhibit tumor growth in xenogeneic mouse models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C30 and C2 are supported by functional assay data (Figures 2C, 2D) and in vivo tumor growth data (Figure 2E). The antigen-specificity is demonstrated by lack of response to GPC1-negative cells, and the HL superiority is consistently shown across assays.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C43",
+      "C44",
+      "C45",
+      "C3",
+      "C42"
+    ],
+    "result": "Murine GPC1-specific CAR-T cells show antigen-specific cytokine secretion and killing in vitro, and demonstrate robust antitumor effects in syngeneic models including complete tumor eradication in 4/5 MCA205-mGPC1 mice and efficacy against large established tumors without adverse effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C45, C3, and C42 are strongly supported by in vitro functional data (Figures 4C, 4D) and in vivo tumor growth data (Figures 4E, 4F, 4G). The complete responses in MCA205 model and efficacy against large tumors demonstrate therapeutic potential. Safety data (Figure 5) supports lack of adverse effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "Injected mCAR-T cells persist in peripheral blood and infiltrate tumors, maintaining GPC1-specific IFN\u03b3 production for at least 15 days, with persistence exceeding 60 days in mice with complete tumor eradication.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C48 are supported by flow cytometry data (Figure 4H) and ex vivo functional assays (Figure 4I). However, C47 notes data not shown, which slightly weakens this claim. The functional persistence (C48) is directly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C4",
+      "C82"
+    ],
+    "result": "GPC1-specific CAR-T cells enhance endogenous T cell responses against non-GPC1 tumor antigens through antigen spreading, as demonstrated by increased gp70-specific IFN\u03b3 production and rejection of GPC1-negative tumors upon re-challenge.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C51, C4, and C82 are supported by gp70-specific ELISA data (Figure 4J) and tumor re-challenge experiments (Figure 4K). The re-challenge with GPC1-negative tumors provides strong evidence for antigen spreading and immunological memory against endogenous antigens.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "No adverse effects were observed in mice treated with mCAR-T cells, including no changes in body weight, gross appearance, behavior, or histological tissue damage, even at doses >10-fold higher than therapeutic doses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C55 are supported by body weight data (Figure 5A), histological analysis (Figure 5B and supplements), and high-dose experiments (Figure 4G). The comprehensive safety evaluation across multiple parameters and dose levels provides strong evidence for lack of toxicity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C5"
+    ],
+    "result": "Combination therapy of mCAR-T cells with anti-PD-1 antibody shows synergistic antitumor effects, with 2/5 mice achieving complete tumor eradication compared to partial responses with monotherapy, without adverse effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C61 and C5 are supported by PD-1 expression data (Figure 6A) and combination therapy tumor growth data (Figures 6C, 6D). The synergy is clearly demonstrated, though the mechanism remains speculative (C90, C92). The lack of adverse effects is observed but not extensively documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C33"
+    ],
+    "result": "Mouse heart, lung, and brain show relatively high Gpc1 mRNA expression compared to other tissues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C33 is supported by qPCR data in Figure 3A showing tissue-specific mRNA expression patterns. This is important for safety assessment as these tissues showed no toxicity despite mRNA expression.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C39"
+    ],
+    "result": "The HL form of hCAR-T cells showed higher antitumor activity in vitro than the LH form.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C39 is supported by in vitro functional assay data in Figures 2C and 2D comparing LH and HL forms. This guided the selection of HL form for murine CAR development.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C62"
+    ],
+    "result": "Antitumor effects of anti-PD-1 Ab were relatively weak due to preconditioning with total body irradiation for in vivo CAR-T cell expansion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C62 is an inference about why anti-PD-1 monotherapy showed limited efficacy. While plausible given the experimental design (5 Gy TBI), this is not directly tested and remains speculative. Alternative explanations are not excluded.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Despite potential immunogenicity concerns with chicken-based CAR-T cells, the GPC1-specific CAR-T cells showed strong antitumor effects, similar to non-humanized CD19 CAR-T cells in immunosuppressed patients.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C63-C65 involve speculation about clinical translation. While C65 is supported by the experimental data, C63 and C64 are speculative comparisons to clinical scenarios. The immunogenicity of chicken-derived scFv in humans is not tested and remains a potential concern requiring further study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "The anti-GPC1 mAb (clone: 1-12) shows tumor-specific recognition with GPC1 expression below detection in normal tissues, differing from commercial polyclonal antibodies possibly due to epitope differences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C69 are supported by IHC data (Figure 1C) and prior citations. The comparison between antibodies (C68) is speculative but reasonable. The conclusion that the mAb is suitable for CAR-T generation (C69) is supported by the functional data throughout the manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Multiple mechanisms may explain the lack of on-target off-tumor toxicity despite low GPC1 expression in normal tissues, including tumor-specific antibody recognition, antigen density thresholds, and anatomical barriers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C70-C78 present established knowledge (C70, C71, C77) and speculation about mechanisms (C74, C75, C78). While C76 provides supporting data showing no response to low-expressing cells, the actual mechanism remains unclear. Multiple plausible explanations are offered but not definitively tested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Prior studies with VEGFR2 and FAP CAR-T cells in syngeneic models demonstrated the utility of these models for safety assessment, with VEGFR2 showing no toxicity while FAP caused lethal bone toxicities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C81 are supported by citations to Rosenberg et al. studies. This provides important context for the current work and validates the syngeneic model approach for safety evaluation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "The enhanced antitumor effects in syngeneic versus xenogeneic models may be explained by antigen spreading creating optimal conditions for dendritic cell and CTL activation, a mechanism reported in clinical trials and important for overcoming immune escape.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C83-C88 involve speculation about mechanisms (C84, C88) supported by citations to clinical observations (C85) and established concepts (C86, C87). While the antigen spreading is demonstrated (C4, C49-C51), the mechanistic explanations and comparisons between model systems remain inferential.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "PD-1 expression on CAR-T cells and TIL suggests T cell exhaustion, and clinical data shows PD-1 is associated with treatment failure, making it a potential target to improve CAR-T efficacy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89, C93-C96 are supported by citations to clinical data. Claims C90-C92 are mechanistic speculation. The PD-1 expression data (C89, Figure 6A) and synergy with anti-PD-1 (C59-C60) support the conclusion that PD-1 is a relevant target (C96), though mechanisms remain speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "CAR-T therapies have shown robust responses in hematological malignancies but face obstacles in solid tumors including on-target off-tumor toxicities, as exemplified by lethal toxicities in first-in-human trials.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C8 represent well-established knowledge in the field supported by citations. This provides important background context for the study's rationale.",
+    "result_type": "MINOR"
+  }
+]

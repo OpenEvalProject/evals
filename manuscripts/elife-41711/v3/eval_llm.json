@@ -1,0 +1,330 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Forskolin and the GLP-1 agonist exendin-4 increase the fraction of flash events (restricted fusion pores) and NPY release times in \u03b2-cells. The Epac2-specific agonist S223 mimics these effects, while the Epac inhibitor ESI-09 reverses them. PKA inhibition has no effect, indicating that Epac rather than PKA mediates cAMP-dependent fusion pore regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple pharmacological interventions (forskolin, exendin-4, S223, ESI-09, PKA inhibitor) produce consistent and complementary results across multiple readouts (flash event fraction, NPY release times, exocytosis rate). The non-additive effects of forskolin and S223, combined with the lack of PKA inhibitor effects, provide strong evidence for Epac-specific mediation. Statistical significance is reported for key comparisons.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Overexpression of Epac2 increases the rate of flash events and NPY release times threefold in the absence of forskolin, but has no effect on overall exocytosis rate. In the presence of forskolin, Epac2 overexpression produces effects similar to controls, suggesting that high Epac2 concentration can achieve sufficient activity even at basal cAMP levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The overexpression experiments provide gain-of-function evidence complementing the pharmacological studies. The observation that overexpression effects are most pronounced without forskolin is internally consistent with the model that cAMP acts partly by recruiting Epac2 to the membrane. However, the lack of effect on overall exocytosis rate with overexpression is somewhat paradoxical given the forskolin results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Using P2X2 receptor-based detection of ATP release, cAMP increases current spike frequency by 50% and widens current spikes (20% longer half-widths, 30% longer decay constants, 40% slower rising phases). These effects are blocked by the Epac inhibitor ESI-09, indicating that cAMP slows nucleotide release through Epac-mediated changes in fusion pore kinetics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The electrophysiological approach provides an independent method to assess fusion pore behavior through small molecule (ATP) release kinetics. The quantitative changes in spike parameters are statistically significant and consistent with restricted fusion pores. ESI-09 blockade confirms Epac involvement. This complements the imaging data by measuring a different cargo molecule.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "In Epac2-/- (Rapgef4-/-) mouse \u03b2-cells, exocytosis is significantly slower, the fraction of flash events is five-fold lower, and fusion pore lifetimes are strikingly shorter compared to wildtype cells. Forskolin increases exocytosis and flash events in wildtype but not in Epac2-/- cells, demonstrating that cAMP effects on fusion pore behavior are mediated specifically by Epac2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The genetic knockout provides definitive loss-of-function evidence. The complete absence of forskolin effects in Epac2-/- cells is particularly compelling. The observation that basal conditions show differences between wildtype and knockout suggests partial Epac2 activation under hyperglycemic conditions, which is consistent with cited literature on cAMP levels. This is the strongest evidence for Epac2 specificity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Three sulfonylureas (tolbutamide, glibenclamide, gliclazide) accelerate K+-stimulated exocytosis about twofold in the absence of forskolin, entirely through increased flash-associated events with longer NPY release times. Under forskolin conditions, sulfonylureas tend to decrease full-fusion exocytosis without affecting flash event frequency. Similar results were obtained in human \u03b2-cells, indicating that sulfonylureas restrict fusion pore expansion through the same intracellular pathway as cAMP.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The sulfonylurea experiments are well-controlled and test three different compounds with varying membrane permeability. The differential effects in the presence versus absence of forskolin are internally consistent with a shared pathway. The human \u03b2-cell data strengthen translational relevance. However, the mechanism by which sulfonylureas activate Epac2 is not directly demonstrated here.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "Acute application of sulfonylureas has no effect on fusion pore behavior despite blocking KATP channels, while long-term exposure restricts fusion pores. EGFP-tagged SUR1 does not localize to exocytosis sites or affect fusion pore behavior. These findings indicate that sulfonylureas must enter the cytosol to affect fusion pore behavior through Epac2, and this effect is not mediated by plasma membrane SUR1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The acute versus chronic application experiments provide strong evidence against SUR1 involvement in fusion pore regulation. The lack of SUR1 localization to exocytosis sites further supports this conclusion. The interpretation that cytosolic entry is required is reasonable given the time-dependence and membrane permeability differences among the three sulfonylureas tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "In the presence of forskolin, both dynamin1-GFP and mCherry-amisyn are recruited to granule sites during membrane fusion. Expression of these proteins (2-4 fold over endogenous) markedly increases NPY release times and flash-associated exocytosis events. The Epac inhibitor ESI-09 prevents recruitment and reduces flash events below control. Without forskolin, only amisyn is recruited, but Epac activation with S223 recruits both proteins and increases NPY release times and flash events.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The recruitment experiments provide direct visualization of the proposed mechanism. The differential recruitment of dynamin1 (only with cAMP/Epac activation) versus amisyn (constitutive) is an important mechanistic detail. The functional consequences of overexpression are consistent with the recruitment data. However, the 2-4 fold overexpression could potentially create artifacts, though the ESI-09 and S223 experiments help control for this.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C102"
+    ],
+    "result": "Activation of Epac2 by GLP-1 receptor agonists or sulfonylureas restricts expansion of the insulin granule fusion pore by recruiting dynamin and amisyn to the exocytosis site. This causes insulin and other peptides to remain trapped within the granule while smaller transmitter molecules are released, thereby hindering full fusion and insulin release from individual granules while promoting paracrine intra-islet communication.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This integrative result synthesizes the major findings. The molecular mechanism (Epac2 \u2192 dynamin/amisyn recruitment \u2192 fusion pore restriction) is well-supported by the experimental data. The differential release of small versus large molecules is consistent with the molecular sieve properties of fusion pores. However, the claim that this 'hinders' insulin release and reduces drug effectiveness is an interpretation that extends beyond the direct measurements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "Sulfonylureas allosterically stabilize cAMP-dependent Epac activation, and basal cAMP concentrations are sufficient for sulfonylurea-induced fusion pore restriction. Gliclazide binds the CNB1 domain without activating it, suggesting that Epac localization at the granule site may be sufficient to regulate downstream proteins. The competing stimulatory and inhibitory effects of sulfonylureas may contribute to reduced effectiveness over time.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The mechanism by which sulfonylureas activate Epac2 relies heavily on cited literature rather than direct demonstration in this study. The interpretation about gliclazide and Epac localization is reasonable but speculative. The claim about reduced effectiveness over time is entirely speculative and not tested experimentally. More direct evidence of sulfonylurea-Epac2 interaction would strengthen these conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113",
+      "C151",
+      "C152",
+      "C153"
+    ],
+    "result": "Epac/cAMP-dependent fusion pore restriction is expected to alter the timing and relative volume of peptidergic versus transmitter signaling, potentially affecting the insulin to glucagon secretion ratio. Long-term GLP-1 analog treatment disturbs glucose homeostasis, and combination therapy with sulfonylureas and DPP4 inhibitors leads to severe hypoglycemia through Epac-dependent mechanisms. Epac-dependent fusion pore regulation may have profound consequences for islet physiology and glucose metabolism in vivo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These claims are largely speculative and based on inference from the experimental findings combined with cited clinical observations. While the reasoning is logical, the manuscript does not directly test these physiological and clinical implications. The cited studies on GLP-1 analogs and combination therapy provide some support, but the causal link to fusion pore regulation is not established. These represent important hypotheses for future work rather than supported conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "Background context on fusion pore biology, kiss-and-run exocytosis, paracrine signaling in islets, and the mechanisms of antidiabetic drugs. These claims establish the scientific foundation for the study through citations to prior literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These are primarily literature-based claims that establish context. The citations appear appropriate and the background is accurately represented. However, as these are not original findings of this manuscript, they serve to frame the research questions rather than constitute results. The accuracy of these claims depends on the cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Two phenotypes of granule exocytosis are observed: full fusion (sudden fluorescence loss within <100 ms) and flash events (fluorescence increase lasting several seconds before loss). Flash events reflect neutralization of the acidic granule lumen through proton flux via the fusion pore, allowing quantitative study of fusion pore behavior through fluorescence timecourse analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The methodological foundation is well-established through prior work (cited) and clearly demonstrated in the figures. The interpretation of flash events as pH-dependent dequenching is supported by previous studies and the size comparison between EGFP (3.7 nm) and insulin monomers (3 nm) relative to the fusion pore (3 nm upper limit) is reasonable. This provides the technical basis for the quantitative measurements throughout the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125"
+    ],
+    "result": "Epac2 mediates PKA-independent stimulation of exocytosis and may affect both priming and fusion pore restriction. Epac2 concentrates at docked insulin granule sites and forms complexes with Rim2 and Piccolo. The amount of Epac2 at individual sites does not correlate with fusion pore behavior, suggesting indirect action through targets like Rap1, R-Ras, and downstream effectors including dynamin and amisyn via altered phosphoinositide levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These mechanistic interpretations combine cited literature with speculation about how Epac2 might regulate fusion pores. The lack of correlation between Epac2 amount and fusion pore behavior is an important observation, but the proposed mechanisms involving Rap1, R-Ras, and phosphoinositide signaling are largely speculative. The recruitment data for dynamin and amisyn provide some support, but the upstream signaling pathway is not directly tested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137"
+    ],
+    "result": "Discussion of potential mechanisms for fusion pore regulation, including dynamin-mediated scission (similar to endocytosis), active pore dilation driven by SNARE proteins or \u03b1-synuclein, and the possibility of separate mechanisms for preventing pore dilation versus shifting equilibrium between open and closed states. Curvature-sensitive proteins like synaptotagmin are proposed as attractive candidates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These are largely speculative mechanistic proposals based on analogy to other systems and cited literature. While the reasoning is sound and the proposals are testable, they represent hypotheses rather than demonstrated findings. The manuscript does not directly test these mechanisms. The discussion appropriately acknowledges uncertainty but presents these as possibilities rather than conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150"
+    ],
+    "result": "\u03b2-cell granules contain multiple bioactive molecules (insulin, IAPP, chromogranins, GABA, nucleotides, 5HT) with diverse para- and autocrine functions within the islet. These include insulin's effects on its own release, somatostatin and glucagon secretion; GABA's effects on glucagon secretion, insulin secretion, and \u03b2-cell mass; and nucleotides' effects on \u03b2-cell synchronization, Ca2+ signaling, somatostatin secretion, and immune cell activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims are well-supported by the cited literature and establish the physiological context for why differential release of small versus large molecules matters. The citations appear appropriate and comprehensive. This background is important for understanding the potential significance of fusion pore regulation but does not constitute an original finding of this manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C95",
+      "C100",
+      "C101"
+    ],
+    "result": "cAMP-dependent signaling restricts fusion pore expansion and promotes kiss-and-run exocytosis in \u03b2-cells and neuroendocrine cells. Sulfonylureas stimulate insulin secretion by binding to SUR1 (closing KATP channels) and accelerate PKA-independent granule priming, possibly through intracellular SUR1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These are well-established findings from prior literature that provide context for the current study. The citations are appropriate. The manuscript builds on these foundations to identify Epac2 as the specific mediator and to reveal the paradoxical inhibitory effect on fusion pore expansion.",
+    "result_type": "MINOR"
+  }
+]

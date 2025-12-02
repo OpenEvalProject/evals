@@ -1,0 +1,270 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C7",
+      "C8",
+      "C9",
+      "C19",
+      "C20"
+    ],
+    "result": "Manual annotation of fluorescent features with low signal-to-noise ratios is subjective and depends on individual annotator perception. This subjectivity poses challenges for training deep learning models, as there is no objective ground truth in fluorescent label segmentation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4, C7-C9, C19-C20 establish the problem context through cited literature and general knowledge about fluorescence imaging. The claims are mutually consistent and well-supported by multiple citations (Schmitz et al., 1999; Collier et al., 2003; Niedworok et al., 2016; Cleveland and McGill, 1985), establishing the foundation for the study's motivation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "Deep learning approaches have emerged as alternatives to traditional image thresholding methods for bioimage analysis, offering flexibility to learn tasks from training data. However, deployment requires computational expertise and suitable resources, prompting efforts to integrate DL into accessible bioimaging tools.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C17 describe the state of the field regarding DL in bioimage analysis, supported by multiple citations (Li et al., 2010; McDole et al., 2018; Sezgin and Sankur, 2004; LeCun et al., 2015; Falk et al., 2019; McQuin et al., 2018). These are well-established facts in the field and provide appropriate background context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C18",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "DL-based approaches must meet standards of objectivity, reliability, and validity. While repeatability is guaranteed for deterministic models, reproducibility is challenged by stochastic training procedures. Standard DL practices do not apply when ground truth is absent, potentially aggravating the reproducibility crisis in biology and AI.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18, C22-C28 establish the quality criteria framework (supported by Frambach et al., 2013; Taylor and Kuyatt, 1994) and identify limitations of current DL practices. The claims about reproducibility crisis are supported by multiple citations (Siebert et al., 2015; Baker, 2016; Ioannidis, 2016; Hutson, 2018; Fanelli, 2018; Chen et al., 2019). The logical progression from established standards to identified gaps is sound.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "The study employs U-Net architecture as the standard for biomedical image segmentation and uses STAPLE for ground truth estimation. Model ensembles are known to be robust to noise and provide high-quality uncertainty estimates. The cFOS label in mouse brain sections serves as an ideal test case due to its low signal-to-noise ratio and well-established behavioral correlations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C36 describe methodological choices supported by appropriate citations (McQuin et al., 2018; Falk et al., 2019; Caicedo et al., 2019; Warfield et al., 2004; Dietterich, 2000; Lakshminarayanan et al., 2017; Gallo et al., 2018; Shuvaev et al., 2017). The rationale for using cFOS as a test case is well-justified based on its properties and established use in neuroscience.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C37",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Analysis of manual annotations from five independent experts revealed substantial inter-rater variability that was inversely correlated with signal intensity. Expert models successfully learned and reproduced the annotation behavior of individual experts, including their biases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37, C39-C41 describe experimental findings supported by data (Figure 2\u2014figure supplement 1) and citations (Schmitz et al., 1999; Collier et al., 2003; Niedworok et al., 2016; von Chamier et al., 2019). The inverse correlation between variability and signal intensity is demonstrated in Figure 2\u2014figure supplement 1. The conclusion that expert models reproduce individual biases is a reasonable inference from the similarity analysis data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Consensus ensembles outperformed all other strategies in similarity metrics, achieving performance on par with human experts while showing substantially higher reliability (Fleiss' kappa indicating substantial to almost perfect agreement). Only the consensus ensemble strategy meets bioimaging standards for objectivity, reliability, and validity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C49 present the core similarity analysis results supported by multiple figures (Figure 2F-H, Figure 2\u2014figure supplement 3-4). The statistical analysis using Fleiss' kappa is appropriate and properly interpreted using Landis and Koch, 1977 criteria. The conclusion that consensus ensembles meet all three quality criteria is well-supported by the comprehensive similarity analysis data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Bioimage analysis of cFOS in mouse hippocampus after contextual fear conditioning revealed context-dependent increases in cFOS abundance across most hippocampal regions. All three DL strategies showed identical majority votes at p\u22640.05, but expert models trained on expert 1 annotations failed to detect significant increases in mean signal intensity, demonstrating bias incorporation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C56 present biological validation results supported by extensive neuroscience literature (Keiser et al., 2017; Campeau et al., 1997; Huff et al., 2006; and others), behavioral data (Figure 3\u2014figure supplement 1), and bioimage analysis results (Figure 4A-E). The finding that expert 1 models failed to detect effects demonstrates bias propagation. Statistical analyses are appropriate (Mann-Whitney-U tests with Bonferroni correction).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C80",
+      "C81"
+    ],
+    "result": "Consensus ensembles yielded significantly lower standard deviation of effect sizes compared to alternative strategies. Model-to-model variability was identified as the main factor impairing reproducibility, and no expert model detected all biological effects defined by majority votes. Consensus ensembles significantly reduce the risk of irreproducible results.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C59, C80-C81 present reproducibility analysis results supported by Figure 4F showing variation per effect and variation per model. The statistical comparison (Kruskal-Wallis ANOVA followed by Mann-Whitney tests with Bonferroni correction, p<0.001) demonstrates significant differences. The conclusion about model-to-model variability as the main reproducibility factor is well-supported by the comprehensive analysis across 30 pairwise comparisons.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Transfer learning from pretrained models reduces training iterations and yields higher validity compared to training from scratch. Frozen pretrained models performed poorly on dissimilar images but matched human expert performance on highly similar datasets, demonstrating the importance of task similarity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C65 present transfer learning results supported by data from four external datasets (Figure 5D, Figure 5\u2014figure supplement 1-2) and appropriate citations (Yosinski et al., 2014; Oquab et al., 2014; Bayramoglu and Heikkil\u00e4, 2016; Falk et al., 2019). The performance differences between frozen models on similar vs. dissimilar datasets (Lab-Mue vs. Lab-Wue2) provide clear evidence for the role of task similarity. Model selection criteria are clearly defined and applied consistently.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "The consensus ensemble workflow was validated across four external datasets from different laboratories, model organisms (mice and zebrafish), and imaging conditions. All DL approaches detected the expected biological effects confirmed by manual expert analysis, with ensembles showing reduced variation in effect sizes. The workflow is reproducible and increases objectivity, reliability, and validity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C73 present external validation results supported by data from Lab-Mue, Lab-Inns1, Lab-Inns2, and Lab-Wue2 (Figure 5E, Figure 5\u2014figure supplement 1-2, Table 1). Statistical analyses are appropriate (Mann-Whitney-U tests, some with Bonferroni correction). The biological effects detected by DL approaches match manual expert analyses across diverse experimental conditions. The conclusion about reproducibility across laboratories and datasets is well-supported by the comprehensive external validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "Training DL models on single expert annotations incorporates individual human bias and merely automates manual annotation without removing subjective biases. Multiple expert annotations are imperative to mitigate bias and assess model performance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C79 present key conclusions supported by the similarity analysis data (Figure 2) and bioimage analysis results (Figure 4), with appropriate citations (Schmitz et al., 1999; Collier et al., 2003; Niedworok et al., 2016; Falk et al., 2019; von Chamier et al., 2019). The evidence from expert 1 models failing to detect biological effects provides strong support for the bias incorporation claim. The conclusion is a reasonable inference from the comprehensive data analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C87"
+    ],
+    "result": "Fine-tuned models require fewer training iterations than training from scratch and show reliability at least equivalent to from scratch ensembles. Pretrained ensembles can be used without adaptation if task similarity is sufficiently high, though adapted models typically outperform general models trained on different domains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C84, C87 present transfer learning findings supported by data from external datasets (Figure 5D, Figure 5\u2014figure supplement 5) and citations (Falk et al., 2019; Caicedo et al., 2019). The comparison of training iterations, reliability metrics, and performance across initialization variants is well-documented. The conclusion about task similarity is supported by the contrasting performance of frozen models on Lab-Mue vs. Lab-Wue2.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C88"
+    ],
+    "result": "Sharing validated model weights in open-source libraries could provide annotation experience across laboratories, improve objectivity, and contribute to better reproducibility. The learned representations from cFOS consensus ensembles may serve as good initialization for nucleosomatic fluorescent label segmentation tasks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C85-C86, C88 are primarily speculative about future applications and potential benefits, supported by citations (Falk et al., 2019; Fanelli, 2018) but not directly tested in the study. While the reasoning is sound and the potential benefits are plausible based on the study's findings, these claims represent discussion points about future work rather than demonstrated results. The speculation is reasonable but lacks direct experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "The study's focus on U-Net architecture is both a standardization choice and a limitation. Human perception is worse for complex graphical features (area, volume, density) than linear features, and DL models based on human annotations are not suitable for tasks where complete annotation is virtually impossible.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C91 discuss study limitations and scope, supported by appropriate citations (Ronneberger et al., 2015; Cleveland and McGill, 1985; Feldman-Stewart et al., 2000; Driscoll et al., 2019). The acknowledgment of limitations is appropriate and well-reasoned. The claims about human perceptual limitations and the unsuitability of human-annotation-based DL for complex tasks are supported by cited literature and represent honest assessment of the method's scope.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C29",
+      "C30",
+      "C92",
+      "C93"
+    ],
+    "result": "Ground truth estimation from multiple human annotators establishes objectivity in fluorescent feature annotations. Ensembles of models trained on estimated ground truth establish reliability and validity. The authors recommend using multiple expert annotations to train and evaluate DL consensus model ensembles to increase objectivity, reliability, and validity of bioimage analyses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C6, C29-C30, C92-C93 present the study's main conclusions, supported by comprehensive data from similarity analysis (Figure 2), bioimage analysis (Figures 3-4), and external validation (Figure 5). The progression from establishing objectivity through consensus models to achieving reliability and validity through ensembles is well-demonstrated across multiple datasets and laboratories. The recommendations are well-justified by the extensive experimental evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C21",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Low-quality annotations can cause DL algorithms to fail training or reproduce inconsistent annotations. While DL models can hold advantages over conventional algorithms, their flexibility makes them prone to internalizing subjective human biases. Standard performance assessment using similarity measures is insufficient to establish trust in DL models for bioimage analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21, C74-C76 present discussion points about DL challenges and limitations, supported by appropriate citations (von Chamier et al., 2019; Falk et al., 2019; Caicedo et al., 2019; Ronneberger et al., 2015; McQuin et al., 2018; Haberl et al., 2018). These claims synthesize established knowledge from the field and are consistent with the study's findings about bias incorporation in expert models. The reasoning is sound and well-supported by cited literature.",
+    "result_type": "MINOR"
+  }
+]

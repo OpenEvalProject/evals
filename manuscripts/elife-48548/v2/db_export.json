@@ -1,0 +1,1389 @@
+{
+  "submission": {
+    "id": "9d07cbf6-07e7-4c42-8a84-11bfcf9383a5",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T12:01:33.575600Z",
+    "updated_at": "2025-12-02T12:01:33.575600Z"
+  },
+  "content": [
+    {
+      "id": "1c4642e6-0e25-4b80-930a-de47df052817",
+      "submission_id": "9d07cbf6-07e7-4c42-8a84-11bfcf9383a5",
+      "content_type": "manuscript",
+      "content_text": "# Asexual reproduction reduces transposable element load in experimental yeast populations\n\n## Authors\n\n- Jens Bast<sup>1</sup> ([ORCID: 0000-0003-0017-3860](https://orcid.org/0000-0003-0017-3860)) \u2020\n- Kamil S Jaron<sup>1</sup> ([ORCID: 0000-0003-1470-5450](https://orcid.org/0000-0003-1470-5450))\n- Donovan Schuseil<sup>1</sup>\n- Denis Roze<sup>3</sup>\n- Tanja Schwander<sup>1</sup>\n\n### Affiliations\n\n1. Department of Ecology and Evolution University of Lausanne Lausanne Switzerland\n2. Swiss Institute of Bioinformatics Lausanne Switzerland\n3. UMI3614 Evolutionary Biology and Ecology of Alga Centre National de la Recherche Scientifique (CNRS) Roscoff France\n4. Station Biologique de Roscoff Sorbonne Universit\u00e9 Roscoff France\n\n\u2020 Corresponding author\n\n## Abstract\n\nTheory predicts that sexual reproduction can either facilitate or restrain transposable element (TE) accumulation by providing TEs with a means of spreading to all individuals in a population, versus facilitating TE load reduction via purifying selection. By quantifying genomic TE loads over time in experimental sexual and asexual Saccharomyces cerevisiae populations, we provide direct evidence that TE loads decrease rapidly under asexual reproduction. We show, using simulations, that this reduction may occur via evolution of TE activity, most likely via increased excision rates. Thus, sex is a major driver of genomic TE loads and at the root of the success of TEs.\n\n## Introduction\n\nSelf-replicating transposable elements (TEs) can occupy large fractions of genomes in organisms throughout the tree of life (reviewed in Hua-Van et al., 2011). Their overwhelming success is driven by their ability to proliferate independently of the host cell cycle via different self-copying mechanisms involving \u2018cut-and-paste\u2019 or \u2018copy-and-paste\u2019 systems. These mechanisms allow TEs to invade genomes in a similar way to parasites, despite generally not providing any advantage to the individual carrying them (Doolittle and Sapienza, 1980; Orgel and Crick, 1980). To the contrary, TEs generate deleterious effects in their hosts by promoting ectopic recombination and because most new TE insertions in coding or regulatory sequences disrupt gene functions (Finnegan, 1992; Montgomery et al., 1991).\n\nTheory predicts that sexual reproduction can either facilitate or restrain the genomic accumulation of TEs, and it is currently unclear whether the expected net effect of sex on TE loads is positive or negative. Sexual reproduction can facilitate the accumulation of TEs because it allows TEs to colonise new genomes and spread throughout populations (Hickey, 1982; Zeyl et al., 1996). Because the colonisation of new genomes is more likely for active TEs, sexual reproduction should favour the evolution of highly active TEs (Charlesworth and Langley, 1986; Hickey, 1982), even though increased activity generates higher TE loads in the host genome. At the same time, sexual reproduction facilitates the evolution of host defences and increases the efficacy of purifying selection against deleterious TE copies by reducing selective interference among loci (\u00c5gren and Wright, 2011; Arkhipova and Meselson, 2005; Crespi and Schwander, 2012; Wright and Finnegan, 2001). In the absence of sex, reduced purifying selection can thus result in the accumulation of TEs, unless TE copies get eliminated via excision at sufficiently high rates (Burt and Trivers, 2006; Dolgin and Charlesworth, 2006).\n\nGenomic TE loads have been empirically estimated for natural populations of asexual and related sexual organisms, but no consistent difference emerges (\u00c5gren et al., 2015; Bast et al., 2016; Jiang et al., 2017; Szitenberg et al., 2016), probably because many confounding factors not related to reproductive mode such as hybridisation and polyploidisation can affect TE loads and mask the effect of sex (Arkhipova and Rodriguez, 2013; Hua-Van et al., 2011).\n\nHere, to quantify whether the net effect of sexual reproduction on genomic TE loads is positive or negative, we study the evolution of genomic TE loads in experimental yeast (Saccharomyces cerevisiae) populations generated in a previous study (McDonald et al., 2016). McDonald et al. maintained four sexual and four asexual strains originating from the same haploid ancestral strain (W303) under constant conditions over 1000 generations. For sexual strains, a mating event (meiosis) was induced every 90 generations. Sequencing of each strain was conducted at generation 0 and every 90 generations prior to mating (for details see Materials\u00a0and\u00a0methods, and McDonald et al., 2016). In the present study, we use the published Illumina data to quantify TE loads in each strain for each sequenced generation.\n\nTEs in S. cerevisiae are well characterised (Carr et al., 2012; Castanera et al., 2016; Voytas and Boeke, 1992). S. cerevisiae TEs consist solely of \u2018copy-and-paste\u2019 elements that are flanked by long terminal repeats (LTRs) and are grouped into the families Ty1-Ty5 (Voytas and Boeke, 1992). The 12.2 Mb genome of the studied yeast strain comprises approximately 50 full-length, active Ty element copies, and 430 inactive ones (Carr et al., 2012). Inactive copies include truncated elements as well as remnants from TE excisions (i.e., solo-LTR formation;\u00a0Carr et al., 2012). Excisions occur by intra-chromosomal recombination between the two flanking LTRs of a TE, and result in the removal of protein-coding genes that allow for transposition.\n\nUsing different computational approaches to quantify genomic TE loads in experimental yeast strains, we show that sex is required for the success of TEs, as TE loads decrease over time under asexual reproduction. For the first approach, we quantified total TE loads without distinguishing between active and inactive TEs. This was done by computing the fraction of reads that mapped to a curated S. cerevisiae TE library (see Materials and methods) for each yeast strain and sequenced generation. This analysis revealed that the total TE load in sexual strains remained constant over 1000 generations, but decreased in asexual strains over time (resulting in a total reduction of 23.5% after 1000 generations; generation effect p<0.001, reproductive mode effect p=0.081, and interaction between generation and mode p<0.001; permutation ANOVA, Figure 1\u2014figure supplement 1). For the second approach, we focused on full-length TE copy insertions, because only those are active and can lead to increased genomic TE loads over time. Detecting specific TE insertions by aligning short-read data to a reference genome is difficult and associated with a detection bias towards TEs present in the reference genome. Moreover, because sequencing was done with population pools and not individual clones within populations, it is not possible to analyse turnover or activity of TEs within specific genomic backgrounds. Instead, we analysed the presence versus absence of specific TE insertions in each population over time. With a pipeline that combines different complementary approaches (Nelson et al., 2017, see Materials and methods), the available sequencing data allowed us to detect 24 out of the 50 full-length insertions that are present in the reference genome of the ancestral strain at the start of the experiment (generation 0). As with the first approach, we found that the number of (detectable) full-length TE copies remained constant in sexual yeast strains, but decreased in asexual strains over time (generation effect p=0.006, reproductive mode effect p=0.033, and interaction between generation and mode p<0.001; permutation ANOVA). In asexual strains, the estimated average number of full-length TEs decreased from approximately 50 to 41 over 1000 generations (Figure 1).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/48548/elife-48548-fig1-v2.jpg)\n\n**Figure 1.:** (A) Number of full-length TE copies inserted in genomes of four replicates of otherwise identical occasionally sexual (red) and wholly asexual (blue) yeast strains over 1000 generations of experimental evolution. Numbers are expressed as residuals, since the TE detection probability depends on sequencing coverage (Figure 1\u2014figure supplement 2). (B) Individual-based simulations for studying the TE load dynamics expected under sexual and asexual reproduction with ten replicates (red and blue dotted lines). The simulations are parameterised with yeast-specific values and include a modifier alleles. For both (A) empirical and (B) simulation data, asexuals lost about nine active, full-length TEs by generation 1000. Lines represent linear regression for sexuals (red) and asexuals (blue) and the grey areas represent 95% CI.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/48548/elife-48548-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Read fraction mapping to TEs relative to the sum of reads mapping to the genome and/or the TE library for each of the four replicate sexual (red) and asexual (blue) strains sequenced every 90 generations (from generation 0 to 990). Lines represent linear regression for sexuals (red) and asexuals (blue) and the grey areas represent 95% CI..\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/48548/elife-48548-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A) TE insertions (including those present in the reference genome and de novo insertions) vs. median sequencing coverage from paired reads. Coverage influences the ability to detect TE insertions (Wilcoxon signed-rank test V\u00a0=\u00a04095, p-value<0.001). (B) Median read coverage per sample for sexual (red) and asexual (blue) strains over 1000 generations. Data from asexual strains had lower coverage, but were not different to sexuals through time (generation effect p=0.096, reproductive mode effect p=0.002, and interaction between generation and mode p=0.588; permutation ANOVA). Lines represent linear regression and the grey areas represent 95% CI. (C) Subsampling to the mean asexual read coverage per generation for all samples results in similar findings (generation effect p=0.012, reproductive mode effect p=0.302, and interaction between generation and mode p=0.004; permutation ANOVA).\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/48548/elife-48548-fig1-figsupp3-v2.jpg)\n\n**Figure 1\u2014figure supplement 3.:** Meiosis generates the TE load spikes following events of sexual reproduction, but allows for selection to effectively remove genotypes with high TE loads by generating fitness variation among genotypes. Parameters used in the simulations are indicated in Supplementary file 2A (bold values).\n\n![Figure 1\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/48548/elife-48548-fig1-figsupp4-v2.jpg)\n\n**Figure 1\u2014figure supplement 4.:** The modifier allele frequency is shown over time for simulations under sexual (red) and asexual (blue) reproduction, with ten replicates.\n\nThis decrease could be generated by either increased TE excision rates in asexual as compared to sexual yeast, reduced transposition rates, or a combination of both mechanisms. To evaluate the relative importance of the two mechanisms, we estimated the number of\u00a0losses of TEs present in the ancestral yeast strain, as well as the number of novel insertions, at each assayed generation (Figure 2). These analyses revealed that \u2018ancestral\u2019 TE insertions are lost at a higher rate in asexual than sexual strains (generation effect p=0.002, reproductive mode effect p=0.027, and interaction between generation and mode p<0.001; permutation ANOVA), while we detected similar numbers of novel TE insertions (indicating similar transposition rates) under both reproductive modes (generation effect p=0.338, reproductive mode effect p=0.271, and interaction between generation and mode p=0.599; permutation ANOVA). Taken together, our empirical observations indicate that even very rare events of sex (here just 10 out of 990 reproduction events) are sufficient to maintain genomic TE loads, while asexuality results in the reduction of TE loads.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/48548/elife-48548-fig2-v2.jpg)\n\n**Figure 2.:** Count of all TE insertions, irrespective whether full-length TE, solo LTR, truncated elements or other types in genomes of four replicates of sexual (red) and asexual (blue) yeast strains over 1000 generations of experimental evolution. Numbers are expressed as residuals, since TE detection probability depends on sequencing coverage. Lines represent linear regression for sexuals (red) and asexuals (blue) and the grey areas represent 95% CI.\n\nThe parallel reduction of TE loads in different asexual strains suggests that the evolution of reduced TE activity (the ratio of transposition to excision) in asexual strains influences genomic TE loads more strongly than purifying selection, which should act to reduce TE loads most effectively in sexual strains. To evaluate whether these findings are plausible, we tested whether the net loss of TEs under asexualitly is predicted by a simple model of TE dynamics. As explained above, different theoretical approaches have shown that both purifying selection and activity rate evolution can affect TE loads under sexual or asexual reproduction (Charlesworth and Langley, 1986; Dolgin and Charlesworth, 2006; Hickey, 1982). However, no theoretical study has considered TE load evolution under the joint effects of the different processes. To fill this gap, we extended the individual-level simulation program of Dolgin and Charlesworth (2006). This program allows to study the evolution of TE copy numbers in an asexual lineage as a function of TE activity (the joint effects of transposition and excision rates), as well as of the strength of selection against TE insertions, which depends on the fitness cost per TE insertion. To compare TE loads in sexual and asexual lineages, we first extended the program to include events of sexual reproduction and parameterised the simulations with empirically determined values from yeast (Blanc and Adams, 2004; Carr et al., 2012; Garfinkel et al., 2005). We ran individual-based simulations with a range of transposition rates, excision rates and selection coefficients with and without epistasis between TE copies as pertinent for yeast (see Supplementary file 2A).\n\nFor all simulations, TE loads in populations undergoing sex every 90 generations decreased faster than in asexual populations, contrary to our empirical observations. This occurs because sexual events generate variation among individuals in TE loads (and thus variation in fitness), which facilitates selection against deleterious TEs (see also Dolgin and Charlesworth, 2006). Different transposition rates under meiosis (sex) or mitosis (asex) did not affect this finding. Indeed, increased TE activity during meiosis only transiently increases TE loads in sexual strains. Because such activity also generates increased variation in TE loads (and therefore in fitness) among strains, the additional TE copies generated during meiosis are rapidly removed by purifying selection (Figure 1\u2014figure supplement 3). In short, none of the simulations generated the empirically observed pattern of lower TE loads in asexual than sexual strains. In a second step, we therefore allowed TE activity rates to evolve over time, by introducing a modifier allele that increases excision rates. The allele has no direct fitness effect, so it can only be fixed in a population via genetic hitchhiking. In simulations that included the modifier allele, the modifier spreads rapidly to fixation in asexual strains, because it is associated with genomes that have fewer TE copies, and therefore have a higher relative fitness. As a consequence, TE activity rates decrease in asexual populations (Figure 1\u2014figure supplement 4). By contrast, the modifier cannot spread as rapidly in sexual populations because recombination constantly breaks up the association between the modifier and less TE loaded backgrounds. By allowing for the evolution of TE activity rates in our simulations, we were able to identify parameter values representative for yeast that result in simulations with a very close fit to our empirical results (Figure 1B, Supplementary file 2B). These analyses thus corroborate our empirical findings that a likely mechanism driving genomic TE load reduction in asexual yeast strains is the rapid evolution of increased TE excision rates. A similar effect would be expected if our modifier acted on transposition rather than excision rates, since the net TE activity depends on the relative rates of transposition vs excision. However, our empirical results do not suggest major differences in transposition rates between sexual and asexual yeast strains. In combination with our findings that, in the absence of TE activity evolution, sexual strains always lose TEs faster than asexual ones, the empirical results are best explained by an increase in TE excision rates under asexuality (Figures 1 and 2).\n\nOur study shows that sexual reproduction permits the maintenance of TEs in S. cerevisiae, while in its absence, TE loads decrease, likely via the evolution of TE activity rates. The findings are consistent with empirical findings of low TE activity in old asexuals (Bast et al., 2016) and the idea that TEs should evolve to be benign in asexual species, because the evolutionary interests of TEs and their host genome are aligned (Charlesworth and Langley, 1986). While the exact mechanisms causing TE activity change in the asexual yeast populations cannot be assessed in the empirical data, our simulations suggest that there is some form of TE defense mechanism (a \u2018modifier locus\u2019) that either segregates in the ancestral yeast strain used in the experiments or repeatedly appeared de novo during experimental evolution. Independently of the exact mechanism, we confirm that TE loads do not increase, but decrease, in asexual populations. This contrasts with the hypothesis that most asexual species are evolutionarily short lived because they are driven to extinction via negative consequences of accumulating TE copies (Arkhipova and Meselson, 2005). Instead, sex is at the root of the evolutionary success of parasitic TEs.\n\n## Materials and methods\n\n### Yeast experimental evolution\n\nWe used data generated in a previous study based on experimental evolution of the yeast S. cerevisiae (for in-depth details see McDonald et al., 2016). In short, 12 different strains were initiated from the same pool of ancestral strains (derived from haploid W303 strains) and kept under constant conditions. Sexual reproduction in yeast depends on the presence of two separate mating types. Only individuals with different mating types can fuse and go through meiosis. Asexual reproduction occurs through budding. For the experiment, six haploid strains consisting of mating type a (MATa) and six haploid strains of mating type \u03b1 (MAT\u03b1), were grown over 990 generations. Of these, four strains were grown exclusively asexually (two of MATa, two of MAT\u03b1), while the eight others (four of MATa, four of MAT\u03b1) were mixed for mating events every 90 generations, resulting in four sexual strains. Paired-end Illumina reads were generated for each of the 12 different strains every 90 generations during 990 generations (for a total of 11 sequencing events per strain). Read numbers per sample ranged from 12,775 to 10,270,312, averaging 2,964,869 reads per sample, with a total of 818,303,966 reads. Details of the read data can be found at BioProject PRJNA308843 and in the original study (McDonald et al., 2016).\n\n### Data processing\n\nThe genome of the haploid W303 S. cerevisiae strain was retrieved from Lang et al. (2013). All Illumina paired-end raw reads of the 12 replicate strains generated in McDonald et al. (2016) were downloaded from the SRA (BioProject identifier PRJNA308843). Raw reads were quality filtered by first removing adapter sequences (with the script used in the original study; McDonald et al., 2016; provided by Daniel P Rice, Harvard University), followed by removing the first 10 bases and quality trimming using trimmomatic v0.33 (Bolger et al., 2014) with parameters set to LEADING:3 TRAILING:3 HEADCROP:10 SLIDINGWINDOW:4:15 MINLEN:36. Additionally, non-overlapping paired-reads were constructed in silico from the subset of the original paired-reads that were overlapping, as a prerequisite to run the insertion detection pipeline. For this, overlapping reads (on average overlapping by 16 bp) were merged using PEAR v0.9.6 with standard parameters (Zhang et al., 2014). Merged reads were split in half and 20 bp deleted from each read at the overlapping ends using the fastx_toolkit v 0.0.13.2 (Hannon Laboratory, 2010). This resulted in mean read lengths of 72 bp. These \u2018artificial\u2019 non-overlapping read pairs were afterwards merged with the read set fraction that was non-overlapping.\n\n### Overall transposable element load\n\nA S. cerevisiae specific, curated and updated TE library that contained all consensus sequences of all TE families found in this species is available from Carr et al. (2012). With this library, we identified TE content and specific copy insertions in the W303 genome using RepeatMasker v4.02\u00a0(Smit et al., 2015) with parameters set to -nolow -gccalc -s -cutoff 200 -no_is -nolow -norna -gff -u -engine rmblast. For overall TE load estimates, the fraction of reads mapped to TEs out of total mappable reads was calculated. For this, the TE library was appended to the masked W303 genome and all reads for all strains and generations were mapped using BWA v0.7.13 with standard parameters (Li, 2013). For all strains, mean per-base coverage was checked with bedtools genomecov v2.26 (Quinlan and Hall, 2010), upon which the asexual strain\u00a0sample 3D-90 was excluded from all further analyses, as coverage was lower than one-fold for this sample. Following this analysis, stat-reads from the PopoolationTE2 v1.10.04 program (Kofler et al., 2016) was utilised to extract the number of total mapped reads and reads mapped to TEs. For statistics, a permutation ANOVA with the formula lm(coverage\u00a0~generation*mode) was utilised; for details see github repository\u00a0(Bast and Jaron, 2019, copy archived at https://github.com/elifesciences-publications/reproductive_mode_TE_dynamics).\n\n### Specific transposable element insertions\n\nTo detect specific reference (present in the reference genome) and non-reference TE insertions in all samples, the McClintock pipeline was utilised (Nelson et al., 2017). This pipeline combines six different, benchmarked programs in a standardised fashion. McClintock was run with the non-overlapping read set,\u00a0the curated TE library, and the W303 assembly using default parameters. The nonredundant insertions output file per sub-program was collected. Next, we utilised a custom python script to collect all information on insertions detected by all different programs and counted insertions with evidence from different programs only once.\n\nTo identify full-length TEs and solo LTR insertions from the McClintock custom filtered output, we tagged insertions by length according to the typical TY TE properties found in S. cerevisiae (i.e. a full TE is a combination of internal sequence and two LTRs within a 500 bp range; solo LTRs are between 220 and 420 bp; see Supplementary file 1). Because TE insertion detection was influenced by the coverage, coverage was taken into account when calculating the number of insertions, by adding it as random factor (coverage effect p<0.001, generation effect p=0.006, reproductive mode effect p=0.033, and interaction between generation and mode p<0.001; permutation ANOVA with the formula lm(counts\u00a0~\u00a0coverage+generation*mode); for details see github repository,\u00a0Bast and Jaron, 2019). We then calculated the number of lost TEs in asexual strains from the regression slope in asexuals after correcting for coverage (i.e. computing residuals) over 1000 generations, with 50 full-length TEs in the ancestor. To additionally check for a bias due to coverage differences between sexual and asexual strains, we randomly subsampled read data for each sample corresponding to the mean coverage of the asexual strains for each generation (Figure 1\u2014figure supplement 2).\n\n### Modelling\n\nTo model TE dynamics in yeast we adjusted an individual based, forward in time simulator by Dolgin and Charlesworth (2006). We extended the model to include sexual cycles via fusion of two haploid individuals and recombination, with on average one crossover on each of the 16 modelled chromosomes (yeast has 16 chromosomes;\u00a0Goffeau et al., 1996; McDonald et al., 2016). Each chromosome carries 200 loci that are potential targets for a TE insertion. A simulation is initiated with a single individual with 50 TEs randomly placed in the 3200 loci of the genome. The founder individual then populates clonally the whole simulated deme of explicitly simulated 100,000 individuals.\u00a0With currently available computational resources, there was no need to scale deterministic parameters of the model as was done in the original study by Dolgin and Charlesworth (2006). To account for mutations during this phase, we ran 20 burn-in generations of transposition and excision cycles on every individual separately without applying selection. One generation in the simulation consists of a round of selection and reproduction with transposition occurring during reproduction, followed by excision. The relative fitness $w_{n}$ of an individual carrying $n$\u00a0TEs was modelled as\u00a0$w_{n}=exp(-an-\\frac{1}{2}bn^{2})$, where $a$\u00a0and $b$\u00a0are parameters representing the strength of selection and the strength of epistatic interactions between TEs respectively (Dolgin and Charlesworth, 2006). The simulation was then continued for 990 generations. We performed 10 replicates of each simulation. Using the average TE load in the population measured every 10 generations, we fitted a linear model to estimate average TE loss across the ten replicates of each simulation. Parameters were derived from yeast experimental measurements and simulations were run with perturbation in the surrounding parametric space (see Supplementary file 2A). We further explored the effects of different transposition rates during meiosis vs asexual reproduction, but this did not change the dynamics even for meiotic transposition rates that were not biologically plausible (up to 10% of TEs transposing during meiosis). The last extension included the introduction of an unlinked, general modifier allele increasing the excision rates of all elements by the same amount. The parameters related to this extension are the initial frequency of the modifier allele and the excision rate increases when the modifier allele is present (see Supplementary file 2B). See the code documentation for details.\n\n### Data availability\n\nRaw read data of the experiment are available at SRA (BioProject identifier PRJNA308843).\n\n### Code availability\n\nThe code used for both the analyses of empirical data and for the theoretical prediction of TE dynamics together with explanations are available online at\u00a0https://github.com/KamilSJaron/reproductive_mode_TE_dynamics (copy archived at https://github.com/elifesciences-publications/reproductive_mode_TE_dynamics).\n",
+      "created_at": "2025-12-02T12:01:33.575600Z"
+    },
+    {
+      "id": "222d0e38-8560-4c54-a5fc-7be2aa343b7e",
+      "submission_id": "9d07cbf6-07e7-4c42-8a84-11bfcf9383a5",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Graham Coop, University of California, Davis United States\n\nReviewers:\n- Graham Coop, University of California, Davis United States\n- Brian Charlesworth, University of Edinburgh United Kingdom\n\n## Review text\n\nDOI: [10.7554/eLife.48548.015](https://doi.org/10.7554/eLife.48548.015)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Asexual reproduction drives the reduction of transposable element load\" for consideration by eLife. Your article has been reviewed by three peer reviewers, including Graham Coop as the Reviewing Editor and Reviewer #1, and the evaluation has been overseen by Diethard Tautz as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Brian Charlesworth (Reviewer #2).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nThe reviewers and I appreciated the analysis and results. I have included the two reviewers' comments below.\n\nPlease respond point by point to the reviewer comments below. The major comments that definitely need addressing are:\n\n1) Moderate the causal language concerning selection and increase in excision rate, the evidence for this is indirect at best. See reviewer 1.\n\n2) Reviewer 2 raises a concern about how the non-independence of temporal samples from the same population replicate are dealt with. One suggestion from the reviewer/editor discussion was to just use the difference between the initial and end points. The authors more generally need to be clearer about the analysis performed, e.g. give the formulae for the linear models run.\n\n3) Reviewer 2 raises some questions about full-length and non-reference TEs that need to be addressed.\n\n4) The McDonald experiment is of pooled sequencing, thus you are averaging over population-frequencies of TE at each locus. While TE-calling from the short-read data, and asexuality, it might be very hard to do anything with the frequency of TEs at each locus I thought it would be helpful to more fully acknowledge that the current analysis (I think) confounds the number TE loci in the genome and the frequency of the TE at each locus.\n\nReviewer #2:\n\nThis paper presents an interesting analysis of the population dynamics of transposable elements (TEs) in long-term experimental populations of budding yeast, comparing sexual and asexual populations. The data are analysed in the light of simulations, which extend an earlier study by Dolgin and Charlesworth, 2007, to match more closely the properties of the yeast populations. The overall conclusion is that excisions of the LTR retrotransposons (presumably by recombination between the LTRs; this could have been investigated) cause a decline in TE copy number in the asexuals, whereas the sexuals seem to stay more or less in equilibrium.\n\nThis is one of the few studies of this type of problem, and illustrates the difficulty of making generalisations about the fates of TEs in populations with different mating systems, as the authors make clear. I have to take their bioinformatic analyses on trust, as I lack the relevant expertise, but they seem to have done a thorough job of these. Overall, this is a nice paper.\n\nMy only criticism is that they emphasis the possible role of selection for an increase in excision rate in explaining their results, but I could not see that they have presented any solid evidence that this has actually happened. In an asexual population, all kinds of hitchhiking will be going on, so any increase in frequency of a modifier of excision rate could simply be due to such an effect, although of course one would not expect consistency across replicate populations. They need to make it clearer what the evidence for such selection actually is; it's not obvious to me that there has been an increase in excision rates.\n\nReviewer #3:\n\nBast et al. address how sexual reproduction affects transposable element (TE) accumulation in paired sexual and asexual lineages of yeast. As noted in the manuscript, much of the literature surrounding the issue of the impact of sex on TE accumulation is confounded by deeper evolutionary timescales, different effective population sizes, and changes in mating system. Utilizing existing data of yeast experimental evolution lines to get around these issues, Bast et al. find that TEs are spread through sex, and driven towards extinction in asex lines. The manuscript is clearly written and easy to follow. Specific comments below.\n\nMy understanding from a brief glance at the McDonald et al., 2016 paper these data come from suggests that the data represent eight separate lineages, such that each point should be connected through the time series in Figures 1 and 2. I'm not familiar enough with the statistics involved, but if each is an independent lineage through time, does this need to be included in analyses? It also seems that some of the uncertainty in TE genotyping could be addressed using replicate lineages \u2013 if a full-length copy is 'excised,' we don't expect to see it again in later generations of that replicate.\n\n- Main text, fifth paragraph: Throughout the manuscript, the use of the term 'excision' might confuse readers more familiar with different types of TEs. For DNA transposons (cut and paste), this refers to a complete or near complete removal via transposition. In this manuscript, 'excision' is used for solo LTR formation via unequal recombination. To avoid confusion, perhaps 'solo LTR formation' could be used as an alternative to excision.\n\n- Main text, fifth paragraph: It would be useful to add that solo LTR formation (excision) removes the protein coding genes that allow transposition, to make it clear why we care about full-length copies.\n\n- Main text, sixth paragraph: I am a bit confused on the numbers of full length TEs identified. The second to last sentence states only 24 of 50 full length copies can be detected, but the last sentence states asex decreases to 41 full length copies. Although identifying TEs is really difficult, I am concerned that there could be deletions or excisions in these 26 non-assayable copies that overwhelm the signal observed. Could a total count of transposition-competent copies be tracked through time by something akin to the first coverage based approach (like Figure 1\u2014figure supplement 1), using internal protein coding regions? Or is there a way to explain what's happening with these non-assayable copies? Are they always the same copies in every individual?\n\nDoesn't a constant number of non-reference copies through time (Figure 2B) mean that there is an increased transposition rate in asex through time? To me it feels like since both the asex full length copies (presumably the active copies) and reference copies are being removed through time, this means the per-element transposition rate is going up. Again, this could be addressed by identifying how many non-reference TEs are the same non-reference TE copies (at the same loci) through time (although maybe the low coverage of some samples precludes this?). But it's hard for me to think in residuals, so maybe this isn't impacting things, and the slightly more negative trend in asex in 2B reflects the effect of a higher excision rate on generating fewer new copies.\n\n- Subsection \u201cModelling\u201d: I need a little more information on the TE annotation. How are full length copies being defined from the RepeatMasker output? Those which contain any internal protein coding sequence? A length cutoff relative to the reference db?\n",
+      "created_at": "2025-12-02T12:01:33.575600Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T12:01:33.575600Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T12:01:33.575600Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "2edcee1b-6955-435a-8d0a-1b5b7980141b",
+      "content_id": "1c4642e6-0e25-4b80-930a-de47df052817",
+      "claim_id": "C1",
+      "claim": "Sexual reproduction can either facilitate or restrain transposable element (TE) accumulation by providing TEs with a means of spreading to all individuals in a population, versus facilitating TE load reduction via purifying selection.",
+      "claim_type": "EXPLICIT",
+      "source": "Theory predicts that sexual reproduction can either facilitate or restrain transposable element (TE) accumulation by providing TEs with a means of spreading to all individuals in a population, versus facilitating TE load reduction via purifying selection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by theoretical predictions referenced in the abstract and introduction.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:01:33.575600Z"
+    },
+    {
+      "id": "469a4689-c157-4656-9a8f-dc6a89a83581",
+      "content_id": "1c4642e6-0e25-4b80-930a-de47df052817",
+      "claim_id": "C2",
+      "claim": "TE loads decrease rapidly under asexual reproduction in experimental Saccharomyces cerevisiae populations.",
+      "claim_type": "EXPLICIT",
+      "source": "By quantifying genomic TE loads over time in experimental sexual and asexual Saccharomyces cerevisiae populations, we provide direct evidence that TE loads decrease rapidly under asexual reproduction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from the study quantifying TE loads over time.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:01:33.575600Z"
+    },
+    {
+      "id": "e93c920d-f521-470f-a43c-a3e391d4d865",
+      "content_id": "1c4642e6-0e25-4b80-930a-de47df052817",
+      "claim_id": "C3",
+      "claim": "The reduction in TE loads under asexual reproduction may occur via evolution of TE activity, most likely via increased excision rates.",
+      "claim_type": "EXPLICIT",
+      "source": "We show, using simulations, that this reduction may occur via evolution of TE activity, most likely via increased excision rates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by simulation results presented in the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:01:33.575600Z"
+    },
+    {
+      "id": "08bbe3b5-21cc-4a3c-bed2-2c7338dd7817",
+      "content_id": "1c4642e6-0e25-4b80-930a-de47df052817",
+      "claim_id": "C4",
+      "claim": "Sex is a major driver of genomic TE loads and at the root of the success of TEs.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, sex is a major driver of genomic TE loads and at the root of the success of TEs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the experimental and simulation results showing TE maintenance in sexual populations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:01:33.575600Z"
+    },
+    {
+      "id": "c364f3c2-3db3-446e-a93d-cb462c09b190",
+      "content_id": "1c4642e6-0e25-4b80-930a-de47df052817",
+      "claim_id": "C5",
+      "claim": "Self-replicating transposable elements (TEs) can occupy large fractions of genomes in organisms throughout the tree of life.",
+      "claim_type": "EXPLICIT",
+      "source": "Self-replicating transposable elements (TEs) can occupy large fractions of genomes in organisms throughout the tree of life (reviewed in Hua-Van et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to a review article.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:01:33.575600Z"
+    },
+    {
+      "id": "cb1725f7-af91-4b79-a9ea-8b848e69bc8e",
+      "content_id": "1c4642e6-0e25-4b80-930a-de47df052817",
+      "claim_id": "C6",
+      "claim": "TEs proliferate independently of the host cell cycle via different self-copying mechanisms involving 'cut-and-paste' or 'copy-and-paste' systems.",
+      "claim_type": "EXPLICIT",
+      "source": "Their overwhelming success is driven by their ability to proliferate independently of the host cell cycle via different self-copying mechanisms involving 'cut-and-paste' or 'copy-and-paste' systems.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on established scientific knowledge about TE mechanisms.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:01:33.575600Z"
+    },
+    {
+      "id": "24d17bdf-7971-41cb-ac79-8cab05e33da7",
+      "content_id": "1c4642e6-0e25-4b80-930a-de47df052817",
+      "claim_id": "C7",
+      "claim": "TEs can invade genomes in a similar way to parasites, despite generally not providing any advantage to the individual carrying them.",
+      "claim_type": "EXPLICIT",
+      "source": "These mechanisms allow TEs to invade genomes in a similar way to parasites, despite generally not providing any advantage to the individual carrying them (Doolittle and Sapienza, 1980; Orgel and Crick, 1980).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to foundational papers on TE biology.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:01:33.575600Z"
+    },
+    {
+      "id": "2ae538a5-19eb-4411-bea3-153f271e0b34",
+      "content_id": "1c4642e6-0e25-4b80-930a-de47df052817",
+      "claim_id": "C8",
+      "claim": "TEs generate deleterious effects in their hosts by promoting ectopic recombination and because most new TE insertions in coding or regulatory sequences disrupt gene functions.",
+      "claim_type": "EXPLICIT",
+      "source": "To the contrary, TEs generate deleterious effects in their hosts by promoting ectopic recombination and because most new TE insertions in coding or regulatory sequences disrupt gene functions (Finnegan, 1992; Montgomery et al., 1991).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to studies on TE effects.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:01:33.575600Z"
+    },
+    {
+      "id": "6d524d64-44ad-41d5-aca1-806a451812c0",
+      "content_id": "1c4642e6-0e25-4b80-930a-de47df052817",
+      "claim_id": "C9",
+      "claim": "Sexual reproduction can facilitate the accumulation of TEs because it allows TEs to colonise new genomes and spread throughout populations.",
+      "claim_type": "EXPLICIT",
+      "source": "Sexual reproduction can facilitate the accumulation of TEs because it allows TEs to colonise new genomes and spread throughout populations (Hickey, 1982; Zeyl et al., 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to theoretical and empirical studies.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:01:33.575600Z"
+    },
+    {
+      "id": "a1e83d02-01a9-4759-964a-351938a3d8d8",
+      "content_id": "1c4642e6-0e25-4b80-930a-de47df052817",
+      "claim_id": "C10",
+      "claim": "Sexual reproduction should favour the evolution of highly active TEs because the colonisation of new genomes is more likely for active TEs.",
+      "claim_type": "EXPLICIT",
+      "source": "Because the colonisation of new genomes is more likely for active TEs, sexual reproduction should favour the evolution of highly active TEs (Charlesworth and Langley, 1986; Hickey, 1982), even though increased activity generates higher TE loads in the host genome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to theoretical studies.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:01:33.575600Z"
+    },
+    {
+      "id": "304b1c68-81ab-41be-95bf-87dd86dd93dd",
+      "content_id": "1c4642e6-0e25-4b80-930a-de47df052817",
+      "claim_id": "C11",
+      "claim": "Sexual reproduction facilitates the evolution of host defences and increases the efficacy of purifying selection against deleterious TE copies by reducing selective interference among loci.",
+      "claim_type": "EXPLICIT",
+      "source": "At the same time, sexual reproduction facilitates the evolution of host defences and increases the efficacy of purifying selection against deleterious TE copies by reducing selective interference among loci (\u00c5gren and Wright, 2011; Arkhipova and Meselson, 2005; Crespi and Schwander, 2012; Wright and Finnegan, 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to multiple studies on the effects of sexual reproduction on selection.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:01:33.575600Z"
+    },
+    {
+      "id": "3d86b7fb-64c8-4874-8a4c-1a21a1ba2570",
+      "content_id": "1c4642e6-0e25-4b80-930a-de47df052817",
+      "claim_id": "C12",
+      "claim": "In the absence of sex, reduced purifying selection can result in the accumulation of TEs, unless TE copies get eliminated via excision at sufficiently high rates.",
+      "claim_type": "EXPLICIT",
+      "source": "In the absence of sex, reduced purifying selection can thus result in the accumulation of TEs, unless TE copies get eliminated via excision at sufficiently high rates (Burt and Trivers, 2006; Dolgin and Charlesworth, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to theoretical studies.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:01:33.575600Z"
+    },
+    {
+      "id": "77f153ff-26aa-4946-b7ce-f46345912e90",
+      "content_id": "1c4642e6-0e25-4b80-930a-de47df052817",
+      "claim_id": "C13",
+      "claim": "No consistent difference in genomic TE loads emerges between natural populations of asexual and related sexual organisms.",
+      "claim_type": "EXPLICIT",
+      "source": "Genomic TE loads have been empirically estimated for natural populations of asexual and related sexual organisms, but no consistent difference emerges (\u00c5gren et al., 2015; Bast et al., 2016; Jiang et al., 2017; Szitenberg et al., 2016), probably because many confounding factors not related to reproductive mode such as hybridisation and polyploidisation can affect TE loads and mask the effect of sex (Arkhipova and Rodriguez, 2013; Hua-Van et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to empirical studies on TE loads in natural populations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:01:33.575600Z"
+    },
+    {
+      "id": "61deb22f-d4b4-4cce-8209-0d2856f6e089",
+      "content_id": "1c4642e6-0e25-4b80-930a-de47df052817",
+      "claim_id": "C14",
+      "claim": "Many confounding factors not related to reproductive mode such as hybridisation and polyploidisation can affect TE loads and mask the effect of sex.",
+      "claim_type": "EXPLICIT",
+      "source": "Genomic TE loads have been empirically estimated for natural populations of asexual and related sexual organisms, but no consistent difference emerges (\u00c5gren et al., 2015; Bast et al., 2016; Jiang et al., 2017; Szitenberg et al., 2016), probably because many confounding factors not related to reproductive mode such as hybridisation and polyploidisation can affect TE loads and mask the effect of sex (Arkhipova and Rodriguez, 2013; Hua-Van et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to studies discussing confounding factors in TE load studies.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:01:33.575600Z"
+    },
+    {
+      "id": "3f8c19e5-f9e9-4004-9370-467ad617c24f",
+      "content_id": "1c4642e6-0e25-4b80-930a-de47df052817",
+      "claim_id": "C15",
+      "claim": "McDonald et al. maintained four sexual and four asexual strains originating from the same haploid ancestral strain (W303) under constant conditions over 1000 generations.",
+      "claim_type": "EXPLICIT",
+      "source": "McDonald et al. maintained four sexual and four asexual strains originating from the same haploid ancestral strain (W303) under constant conditions over 1000 generations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes the experimental design from a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:01:33.575600Z"
+    },
+    {
+      "id": "284acba6-9817-4d4f-983a-b6fa6be5b137",
+      "content_id": "1c4642e6-0e25-4b80-930a-de47df052817",
+      "claim_id": "C16",
+      "claim": "For sexual strains, a mating event (meiosis) was induced every 90 generations.",
+      "claim_type": "EXPLICIT",
+      "source": "For sexual strains, a mating event (meiosis) was induced every 90 generations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes the experimental design from a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:01:33.575600Z"
+    },
+    {
+      "id": "ed44cb89-9069-4bb8-a3a7-4affdf637fee",
+      "content_id": "1c4642e6-0e25-4b80-930a-de47df052817",
+      "claim_id": "C17",
+      "claim": "Sequencing of each strain was conducted at generation 0 and every 90 generations prior to mating.",
+      "claim_type": "EXPLICIT",
+      "source": "Sequencing of each strain was conducted at generation 0 and every 90 generations prior to mating (for details see Materials and methods, and McDonald et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes the experimental design from a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:01:33.575600Z"
+    },
+    {
+      "id": "511db546-c2e3-42cc-a4d9-fd9399fce624",
+      "content_id": "1c4642e6-0e25-4b80-930a-de47df052817",
+      "claim_id": "C18",
+      "claim": "TEs in S. cerevisiae are well characterised.",
+      "claim_type": "EXPLICIT",
+      "source": "TEs in S. cerevisiae are well characterised (Carr et al., 2012; Castanera et al., 2016; Voytas and Boeke, 1992).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to studies characterizing S. cerevisiae TEs.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:01:33.575600Z"
+    },
+    {
+      "id": "bf925515-86d4-48a5-bef5-5b0ba48190b0",
+      "content_id": "1c4642e6-0e25-4b80-930a-de47df052817",
+      "claim_id": "C19",
+      "claim": "S. cerevisiae TEs consist solely of 'copy-and-paste' elements that are flanked by long terminal repeats (LTRs) and are grouped into the families Ty1-Ty5.",
+      "claim_type": "EXPLICIT",
+      "source": "S. cerevisiae TEs consist solely of 'copy-and-paste' elements that are flanked by long terminal repeats (LTRs) and are grouped into the families Ty1-Ty5 (Voytas and Boeke, 1992).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to a study on S. cerevisiae TEs.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:01:33.575600Z"
+    },
+    {
+      "id": "a215df3a-c91f-43e2-92d9-f5dd37f000d1",
+      "content_id": "1c4642e6-0e25-4b80-930a-de47df052817",
+      "claim_id": "C20",
+      "claim": "The 12.2 Mb genome of the studied yeast strain comprises approximately 50 full-length, active Ty element copies, and 430 inactive ones.",
+      "claim_type": "EXPLICIT",
+      "source": "The 12.2 Mb genome of the studied yeast strain comprises approximately 50 full-length, active Ty element copies, and 430 inactive ones (Carr et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to a study characterizing the yeast genome.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:01:33.575600Z"
+    },
+    {
+      "id": "6702276c-b5ce-4c63-a7d4-c772c6ac0191",
+      "content_id": "1c4642e6-0e25-4b80-930a-de47df052817",
+      "claim_id": "C21",
+      "claim": "Inactive TE copies include truncated elements as well as remnants from TE excisions (i.e., solo-LTR formation).",
+      "claim_type": "EXPLICIT",
+      "source": "Inactive copies include truncated elements as well as remnants from TE excisions (i.e., solo-LTR formation; Carr et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to a study characterizing the yeast genome.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:01:33.575600Z"
+    },
+    {
+      "id": "5c4065d0-907b-4156-971c-eef53087ea1a",
+      "content_id": "1c4642e6-0e25-4b80-930a-de47df052817",
+      "claim_id": "C22",
+      "claim": "Excisions occur by intra-chromosomal recombination between the two flanking LTRs of a TE, and result in the removal of protein-coding genes that allow for transposition.",
+      "claim_type": "EXPLICIT",
+      "source": "Excisions occur by intra-chromosomal recombination between the two flanking LTRs of a TE, and result in the removal of protein-coding genes that allow for transposition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on established knowledge about TE excision mechanisms.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:01:33.575600Z"
+    },
+    {
+      "id": "5d47a059-5055-4e49-99b0-b79a52dfd5d6",
+      "content_id": "1c4642e6-0e25-4b80-930a-de47df052817",
+      "claim_id": "C23",
+      "claim": "The total TE load in sexual strains remained constant over 1000 generations.",
+      "claim_type": "EXPLICIT",
+      "source": "This analysis revealed that the total TE load in sexual strains remained constant over 1000 generations, but decreased in asexual strains over time (resulting in a total reduction of 23.5% after 1000 generations; generation effect p<0.001, reproductive mode effect p=0.081, and interaction between generation and mode p<0.001; permutation ANOVA, Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data and statistical analysis, with reference to Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:01:33.575600Z"
+    },
+    {
+      "id": "e39c3da1-d198-43d8-8518-5f38e393ce2e",
+      "content_id": "1c4642e6-0e25-4b80-930a-de47df052817",
+      "claim_id": "C24",
+      "claim": "The total TE load decreased in asexual strains over time, resulting in a total reduction of 23.5% after 1000 generations.",
+      "claim_type": "EXPLICIT",
+      "source": "This analysis revealed that the total TE load in sexual strains remained constant over 1000 generations, but decreased in asexual strains over time (resulting in a total reduction of 23.5% after 1000 generations; generation effect p<0.001, reproductive mode effect p=0.081, and interaction between generation and mode p<0.001; permutation ANOVA, Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data and statistical analysis, with reference to Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:01:33.575600Z"
+    },
+    {
+      "id": "5f87818f-5148-45f4-8ee5-b0e97b4a9ba5",
+      "content_id": "1c4642e6-0e25-4b80-930a-de47df052817",
+      "claim_id": "C25",
+      "claim": "The available sequencing data allowed detection of 24 out of the 50 full-length insertions that are present in the reference genome of the ancestral strain at the start of the experiment.",
+      "claim_type": "EXPLICIT",
+      "source": "With a pipeline that combines different complementary approaches (Nelson et al., 2017, see Materials and methods), the available sequencing data allowed us to detect 24 out of the 50 full-length insertions that are present in the reference genome of the ancestral strain at the start of the experiment (generation 0).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the data analysis methods and results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:01:33.575600Z"
+    },
+    {
+      "id": "513e770e-9f2d-4b61-b01b-c1ac0b08478a",
+      "content_id": "1c4642e6-0e25-4b80-930a-de47df052817",
+      "claim_id": "C26",
+      "claim": "The number of (detectable) full-length TE copies remained constant in sexual yeast strains.",
+      "claim_type": "EXPLICIT",
+      "source": "As with the first approach, we found that the number of (detectable) full-length TE copies remained constant in sexual yeast strains, but decreased in asexual strains over time (generation effect p=0.006, reproductive mode effect p=0.033, and interaction between generation and mode p<0.001; permutation ANOVA).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data and statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:01:33.575600Z"
+    },
+    {
+      "id": "e71664d6-9b67-453d-8169-b353f6fb87b4",
+      "content_id": "1c4642e6-0e25-4b80-930a-de47df052817",
+      "claim_id": "C27",
+      "claim": "The number of (detectable) full-length TE copies decreased in asexual strains over time.",
+      "claim_type": "EXPLICIT",
+      "source": "As with the first approach, we found that the number of (detectable) full-length TE copies remained constant in sexual yeast strains, but decreased in asexual strains over time (generation effect p=0.006, reproductive mode effect p=0.033, and interaction between generation and mode p<0.001; permutation ANOVA).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data and statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:01:33.575600Z"
+    },
+    {
+      "id": "f405c846-96f4-421b-8ad3-0b9fb161fd70",
+      "content_id": "1c4642e6-0e25-4b80-930a-de47df052817",
+      "claim_id": "C28",
+      "claim": "In asexual strains, the estimated average number of full-length TEs decreased from approximately 50 to 41 over 1000 generations.",
+      "claim_type": "EXPLICIT",
+      "source": "In asexual strains, the estimated average number of full-length TEs decreased from approximately 50 to 41 over 1000 generations (Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:01:33.575600Z"
+    },
+    {
+      "id": "0733d26a-80c8-4836-adf7-61887641aa66",
+      "content_id": "1c4642e6-0e25-4b80-930a-de47df052817",
+      "claim_id": "C29",
+      "claim": "'Ancestral' TE insertions are lost at a higher rate in asexual than sexual strains.",
+      "claim_type": "EXPLICIT",
+      "source": "These analyses revealed that 'ancestral' TE insertions are lost at a higher rate in asexual than sexual strains (generation effect p=0.002, reproductive mode effect p=0.027, and interaction between generation and mode p<0.001; permutation ANOVA), while we detected similar numbers of novel TE insertions (indicating similar transposition rates) under both reproductive modes (generation effect p=0.338, reproductive mode effect p=0.271, and interaction between generation and mode p=0.599; permutation ANOVA).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data and statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:01:33.575600Z"
+    },
+    {
+      "id": "a909b252-3e71-4d03-9201-9aed2b63f2ae",
+      "content_id": "1c4642e6-0e25-4b80-930a-de47df052817",
+      "claim_id": "C30",
+      "claim": "Similar numbers of novel TE insertions were detected under both reproductive modes, indicating similar transposition rates.",
+      "claim_type": "EXPLICIT",
+      "source": "These analyses revealed that 'ancestral' TE insertions are lost at a higher rate in asexual than sexual strains (generation effect p=0.002, reproductive mode effect p=0.027, and interaction between generation and mode p<0.001; permutation ANOVA), while we detected similar numbers of novel TE insertions (indicating similar transposition rates) under both reproductive modes (generation effect p=0.338, reproductive mode effect p=0.271, and interaction between generation and mode p=0.599; permutation ANOVA).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data and statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:01:33.575600Z"
+    },
+    {
+      "id": "4216fb60-d98d-4b07-95e8-a763c08ab195",
+      "content_id": "1c4642e6-0e25-4b80-930a-de47df052817",
+      "claim_id": "C31",
+      "claim": "Even very rare events of sex (just 10 out of 990 reproduction events) are sufficient to maintain genomic TE loads.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, our empirical observations indicate that even very rare events of sex (here just 10 out of 990 reproduction events) are sufficient to maintain genomic TE loads, while asexuality results in the reduction of TE loads.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the experimental results showing TE maintenance in sexual strains.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:01:33.575600Z"
+    },
+    {
+      "id": "3d639a1c-6dd2-4ecb-b176-0eed168f4ece",
+      "content_id": "1c4642e6-0e25-4b80-930a-de47df052817",
+      "claim_id": "C32",
+      "claim": "Asexuality results in the reduction of TE loads.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, our empirical observations indicate that even very rare events of sex (here just 10 out of 990 reproduction events) are sufficient to maintain genomic TE loads, while asexuality results in the reduction of TE loads.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data showing TE reduction in asexual strains.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:01:33.575600Z"
+    },
+    {
+      "id": "f6fbe1d0-4660-4ccd-8ed3-ce4dc897851f",
+      "content_id": "1c4642e6-0e25-4b80-930a-de47df052817",
+      "claim_id": "C33",
+      "claim": "The parallel reduction of TE loads in different asexual strains suggests that the evolution of reduced TE activity in asexual strains influences genomic TE loads more strongly than purifying selection.",
+      "claim_type": "EXPLICIT",
+      "source": "The parallel reduction of TE loads in different asexual strains suggests that the evolution of reduced TE activity (the ratio of transposition to excision) in asexual strains influences genomic TE loads more strongly than purifying selection, which should act to reduce TE loads most effectively in sexual strains.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the parallel reduction observed across multiple asexual strains.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:01:33.575600Z"
+    },
+    {
+      "id": "46735202-bf6a-48bd-8799-f3987188beb8",
+      "content_id": "1c4642e6-0e25-4b80-930a-de47df052817",
+      "claim_id": "C34",
+      "claim": "For all simulations without modifier alleles, TE loads in populations undergoing sex every 90 generations decreased faster than in asexual populations.",
+      "claim_type": "EXPLICIT",
+      "source": "For all simulations, TE loads in populations undergoing sex every 90 generations decreased faster than in asexual populations, contrary to our empirical observations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by simulation results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:01:33.575600Z"
+    },
+    {
+      "id": "ff135bf4-1a18-4682-88f4-2a755c482c7d",
+      "content_id": "1c4642e6-0e25-4b80-930a-de47df052817",
+      "claim_id": "C35",
+      "claim": "Sexual events generate variation among individuals in TE loads (and thus variation in fitness), which facilitates selection against deleterious TEs.",
+      "claim_type": "EXPLICIT",
+      "source": "This occurs because sexual events generate variation among individuals in TE loads (and thus variation in fitness), which facilitates selection against deleterious TEs (see also Dolgin and Charlesworth, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by simulation results and a citation to a theoretical study.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:01:33.575600Z"
+    },
+    {
+      "id": "239a8eee-ce30-4659-b920-49dfd1372829",
+      "content_id": "1c4642e6-0e25-4b80-930a-de47df052817",
+      "claim_id": "C36",
+      "claim": "Increased TE activity during meiosis only transiently increases TE loads in sexual strains.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, increased TE activity during meiosis only transiently increases TE loads in sexual strains.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by simulation results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:01:33.575600Z"
+    },
+    {
+      "id": "5a2f12ba-e526-4d15-9e2e-0308944127f7",
+      "content_id": "1c4642e6-0e25-4b80-930a-de47df052817",
+      "claim_id": "C37",
+      "claim": "Additional TE copies generated during meiosis are rapidly removed by purifying selection because increased TE activity generates increased variation in TE loads (and therefore in fitness) among strains.",
+      "claim_type": "EXPLICIT",
+      "source": "Because such activity also generates increased variation in TE loads (and therefore in fitness) among strains, the additional TE copies generated during meiosis are rapidly removed by purifying selection (Figure 1\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by simulation results shown in Figure 1\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:01:33.575600Z"
+    },
+    {
+      "id": "c4794da6-1abb-4d6d-8f91-177c9242156f",
+      "content_id": "1c4642e6-0e25-4b80-930a-de47df052817",
+      "claim_id": "C38",
+      "claim": "None of the simulations without modifier alleles generated the empirically observed pattern of lower TE loads in asexual than sexual strains.",
+      "claim_type": "EXPLICIT",
+      "source": "In short, none of the simulations generated the empirically observed pattern of lower TE loads in asexual than sexual strains.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by simulation results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:01:33.575600Z"
+    },
+    {
+      "id": "ec7eeff4-066a-4df8-a6bf-be9410f81545",
+      "content_id": "1c4642e6-0e25-4b80-930a-de47df052817",
+      "claim_id": "C39",
+      "claim": "The modifier allele spreads rapidly to fixation in asexual strains because it is associated with genomes that have fewer TE copies, and therefore have a higher relative fitness.",
+      "claim_type": "EXPLICIT",
+      "source": "In simulations that included the modifier allele, the modifier spreads rapidly to fixation in asexual strains, because it is associated with genomes that have fewer TE copies, and therefore have a higher relative fitness.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by simulation results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:01:33.575600Z"
+    },
+    {
+      "id": "dac45ce4-4442-4b48-8271-97a36da7ceee",
+      "content_id": "1c4642e6-0e25-4b80-930a-de47df052817",
+      "claim_id": "C40",
+      "claim": "TE activity rates decrease in asexual populations when the modifier allele spreads to fixation.",
+      "claim_type": "EXPLICIT",
+      "source": "As a consequence, TE activity rates decrease in asexual populations (Figure 1\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by simulation results shown in Figure 1\u2014figure supplement 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:01:33.575600Z"
+    },
+    {
+      "id": "39b33ade-bfe3-4d0d-8751-5cf7e02e1174",
+      "content_id": "1c4642e6-0e25-4b80-930a-de47df052817",
+      "claim_id": "C41",
+      "claim": "The modifier cannot spread as rapidly in sexual populations because recombination constantly breaks up the association between the modifier and less TE loaded backgrounds.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, the modifier cannot spread as rapidly in sexual populations because recombination constantly breaks up the association between the modifier and less TE loaded backgrounds.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by simulation results and theoretical reasoning.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:01:33.575600Z"
+    },
+    {
+      "id": "0b09e520-3264-4c35-af6c-445b7996939e",
+      "content_id": "1c4642e6-0e25-4b80-930a-de47df052817",
+      "claim_id": "C42",
+      "claim": "Parameter values representative for yeast result in simulations with a very close fit to the empirical results when allowing for the evolution of TE activity rates.",
+      "claim_type": "EXPLICIT",
+      "source": "By allowing for the evolution of TE activity rates in our simulations, we were able to identify parameter values representative for yeast that result in simulations with a very close fit to our empirical results (Figure 1B, Supplementary file 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by simulation results shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:01:33.575600Z"
+    },
+    {
+      "id": "9658be00-9034-471d-95f4-4f0fc45a672d",
+      "content_id": "1c4642e6-0e25-4b80-930a-de47df052817",
+      "claim_id": "C43",
+      "claim": "A likely mechanism driving genomic TE load reduction in asexual yeast strains is the rapid evolution of increased TE excision rates.",
+      "claim_type": "EXPLICIT",
+      "source": "These analyses thus corroborate our empirical findings that a likely mechanism driving genomic TE load reduction in asexual yeast strains is the rapid evolution of increased TE excision rates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by simulation results and empirical data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:01:33.575600Z"
+    },
+    {
+      "id": "4296f8dd-5b9a-42ba-b208-10a3443a8854",
+      "content_id": "1c4642e6-0e25-4b80-930a-de47df052817",
+      "claim_id": "C44",
+      "claim": "A similar effect would be expected if the modifier acted on transposition rather than excision rates, since the net TE activity depends on the relative rates of transposition vs excision.",
+      "claim_type": "EXPLICIT",
+      "source": "A similar effect would be expected if our modifier acted on transposition rather than excision rates, since the net TE activity depends on the relative rates of transposition vs excision.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on theoretical reasoning about TE dynamics.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:01:33.575600Z"
+    },
+    {
+      "id": "5e85de37-e7b4-4c53-b22c-7b9f5d7f366f",
+      "content_id": "1c4642e6-0e25-4b80-930a-de47df052817",
+      "claim_id": "C45",
+      "claim": "The empirical results do not suggest major differences in transposition rates between sexual and asexual yeast strains.",
+      "claim_type": "EXPLICIT",
+      "source": "However, our empirical results do not suggest major differences in transposition rates between sexual and asexual yeast strains.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data showing similar numbers of novel TE insertions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:01:33.575600Z"
+    },
+    {
+      "id": "c74847e2-6356-4dcd-b01c-1fcef66f018a",
+      "content_id": "1c4642e6-0e25-4b80-930a-de47df052817",
+      "claim_id": "C46",
+      "claim": "In the absence of TE activity evolution, sexual strains always lose TEs faster than asexual ones.",
+      "claim_type": "EXPLICIT",
+      "source": "In combination with our findings that, in the absence of TE activity evolution, sexual strains always lose TEs faster than asexual ones, the empirical results are best explained by an increase in TE excision rates under asexuality (Figures 1 and 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by simulation results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:01:33.575600Z"
+    },
+    {
+      "id": "62cfd26a-1fbd-4232-8610-f2917068f1a2",
+      "content_id": "1c4642e6-0e25-4b80-930a-de47df052817",
+      "claim_id": "C47",
+      "claim": "The empirical results are best explained by an increase in TE excision rates under asexuality.",
+      "claim_type": "EXPLICIT",
+      "source": "In combination with our findings that, in the absence of TE activity evolution, sexual strains always lose TEs faster than asexual ones, the empirical results are best explained by an increase in TE excision rates under asexuality (Figures 1 and 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is inferred from the combination of simulation and empirical results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:01:33.575600Z"
+    },
+    {
+      "id": "36e00973-0abe-4e03-b571-225cec6c26c3",
+      "content_id": "1c4642e6-0e25-4b80-930a-de47df052817",
+      "claim_id": "C48",
+      "claim": "Sexual reproduction permits the maintenance of TEs in S. cerevisiae.",
+      "claim_type": "EXPLICIT",
+      "source": "Our study shows that sexual reproduction permits the maintenance of TEs in S. cerevisiae, while in its absence, TE loads decrease, likely via the evolution of TE activity rates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data showing TE maintenance in sexual strains.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:01:33.575600Z"
+    },
+    {
+      "id": "b328b91d-153c-40be-941a-9d1de9e6bee5",
+      "content_id": "1c4642e6-0e25-4b80-930a-de47df052817",
+      "claim_id": "C49",
+      "claim": "In the absence of sexual reproduction, TE loads decrease, likely via the evolution of TE activity rates.",
+      "claim_type": "EXPLICIT",
+      "source": "Our study shows that sexual reproduction permits the maintenance of TEs in S. cerevisiae, while in its absence, TE loads decrease, likely via the evolution of TE activity rates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data and simulation results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:01:33.575600Z"
+    },
+    {
+      "id": "0333c52b-af4d-416b-b824-41a7385206fd",
+      "content_id": "1c4642e6-0e25-4b80-930a-de47df052817",
+      "claim_id": "C50",
+      "claim": "The findings are consistent with empirical findings of low TE activity in old asexuals.",
+      "claim_type": "EXPLICIT",
+      "source": "The findings are consistent with empirical findings of low TE activity in old asexuals (Bast et al., 2016) and the idea that TEs should evolve to be benign in asexual species, because the evolutionary interests of TEs and their host genome are aligned (Charlesworth and Langley, 1986).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to an empirical study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:01:33.575600Z"
+    },
+    {
+      "id": "da68063f-2de0-4714-856d-fdd4cbe83c6f",
+      "content_id": "1c4642e6-0e25-4b80-930a-de47df052817",
+      "claim_id": "C51",
+      "claim": "TEs should evolve to be benign in asexual species, because the evolutionary interests of TEs and their host genome are aligned.",
+      "claim_type": "EXPLICIT",
+      "source": "The findings are consistent with empirical findings of low TE activity in old asexuals (Bast et al., 2016) and the idea that TEs should evolve to be benign in asexual species, because the evolutionary interests of TEs and their host genome are aligned (Charlesworth and Langley, 1986).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to a theoretical study.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:01:33.575600Z"
+    },
+    {
+      "id": "b95db9b3-d319-4a35-96ef-9bcbd8b5be21",
+      "content_id": "1c4642e6-0e25-4b80-930a-de47df052817",
+      "claim_id": "C52",
+      "claim": "The simulations suggest that there is some form of TE defense mechanism (a 'modifier locus') that either segregates in the ancestral yeast strain used in the experiments or repeatedly appeared de novo during experimental evolution.",
+      "claim_type": "EXPLICIT",
+      "source": "While the exact mechanisms causing TE activity change in the asexual yeast populations cannot be assessed in the empirical data, our simulations suggest that there is some form of TE defense mechanism (a 'modifier locus') that either segregates in the ancestral yeast strain used in the experiments or repeatedly appeared de novo during experimental evolution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on simulation results and speculation about the mechanism.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:01:33.575600Z"
+    },
+    {
+      "id": "2f30e1d0-1689-4d51-8b64-5262bc67df6d",
+      "content_id": "1c4642e6-0e25-4b80-930a-de47df052817",
+      "claim_id": "C53",
+      "claim": "TE loads do not increase, but decrease, in asexual populations.",
+      "claim_type": "EXPLICIT",
+      "source": "Independently of the exact mechanism, we confirm that TE loads do not increase, but decrease, in asexual populations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:01:33.575600Z"
+    },
+    {
+      "id": "aa17f3af-baac-4361-8933-c07c7aee7843",
+      "content_id": "1c4642e6-0e25-4b80-930a-de47df052817",
+      "claim_id": "C54",
+      "claim": "The finding that TE loads decrease in asexual populations contrasts with the hypothesis that most asexual species are evolutionarily short lived because they are driven to extinction via negative consequences of accumulating TE copies.",
+      "claim_type": "EXPLICIT",
+      "source": "This contrasts with the hypothesis that most asexual species are evolutionarily short lived because they are driven to extinction via negative consequences of accumulating TE copies (Arkhipova and Meselson, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim contrasts the study's findings with a hypothesis from a cited study.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:01:33.575600Z"
+    },
+    {
+      "id": "c374854e-b558-447e-9db7-46a50938da31",
+      "content_id": "1c4642e6-0e25-4b80-930a-de47df052817",
+      "claim_id": "C55",
+      "claim": "Sex is at the root of the evolutionary success of parasitic TEs.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, sex is at the root of the evolutionary success of parasitic TEs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the experimental and simulation results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:01:33.575600Z"
+    },
+    {
+      "id": "942c743d-74e3-4db2-b078-b8d661d93b31",
+      "content_id": "1c4642e6-0e25-4b80-930a-de47df052817",
+      "claim_id": "C56",
+      "claim": "Six haploid strains consisting of mating type a (MATa) and six haploid strains of mating type \u03b1 (MAT\u03b1) were grown over 990 generations.",
+      "claim_type": "EXPLICIT",
+      "source": "For the experiment, six haploid strains consisting of mating type a (MATa) and six haploid strains of mating type \u03b1 (MAT\u03b1), were grown over 990 generations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes the experimental design.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:01:33.575600Z"
+    },
+    {
+      "id": "f99f51ca-c9dc-4f04-b30d-faade744a9c4",
+      "content_id": "1c4642e6-0e25-4b80-930a-de47df052817",
+      "claim_id": "C57",
+      "claim": "Four strains were grown exclusively asexually (two of MATa, two of MAT\u03b1).",
+      "claim_type": "EXPLICIT",
+      "source": "Of these, four strains were grown exclusively asexually (two of MATa, two of MAT\u03b1), while the eight others (four of MATa, four of MAT\u03b1) were mixed for mating events every 90 generations, resulting in four sexual strains.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes the experimental design.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:01:33.575600Z"
+    },
+    {
+      "id": "53f6edf6-4b9e-4748-a87f-9e2eb1e610e7",
+      "content_id": "1c4642e6-0e25-4b80-930a-de47df052817",
+      "claim_id": "C58",
+      "claim": "Eight strains (four of MATa, four of MAT\u03b1) were mixed for mating events every 90 generations, resulting in four sexual strains.",
+      "claim_type": "EXPLICIT",
+      "source": "Of these, four strains were grown exclusively asexually (two of MATa, two of MAT\u03b1), while the eight others (four of MATa, four of MAT\u03b1) were mixed for mating events every 90 generations, resulting in four sexual strains.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes the experimental design.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:01:33.575600Z"
+    },
+    {
+      "id": "a8d75a22-70dd-4d86-baad-15f3f5842675",
+      "content_id": "1c4642e6-0e25-4b80-930a-de47df052817",
+      "claim_id": "C59",
+      "claim": "Paired-end Illumina reads were generated for each of the 12 different strains every 90 generations during 990 generations (for a total of 11 sequencing events per strain).",
+      "claim_type": "EXPLICIT",
+      "source": "Paired-end Illumina reads were generated for each of the 12 different strains every 90 generations during 990 generations (for a total of 11 sequencing events per strain).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes the sequencing methodology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:01:33.575600Z"
+    },
+    {
+      "id": "b739c71b-8ee5-4e3b-ae98-593036422ca1",
+      "content_id": "1c4642e6-0e25-4b80-930a-de47df052817",
+      "claim_id": "C60",
+      "claim": "Read numbers per sample ranged from 12,775 to 10,270,312, averaging 2,964,869 reads per sample, with a total of 818,303,966 reads.",
+      "claim_type": "EXPLICIT",
+      "source": "Read numbers per sample ranged from 12,775 to 10,270,312, averaging 2,964,869 reads per sample, with a total of 818,303,966 reads.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes the sequencing data characteristics.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:01:33.575600Z"
+    },
+    {
+      "id": "d8e82fd5-07a8-4c2b-bf70-3d376a35b83c",
+      "content_id": "1c4642e6-0e25-4b80-930a-de47df052817",
+      "claim_id": "C61",
+      "claim": "Coverage influences the ability to detect TE insertions.",
+      "claim_type": "EXPLICIT",
+      "source": "(A) TE insertions (including those present in the reference genome and de novo insertions) vs. median sequencing coverage from paired reads. Coverage influences the ability to detect TE insertions (Wilcoxon signed-rank test V = 4095, p-value<0.001).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by statistical analysis shown in Figure 1\u2014figure supplement 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:01:33.575600Z"
+    },
+    {
+      "id": "bd95fe32-a9ca-438a-b1c4-4511213fa46d",
+      "content_id": "1c4642e6-0e25-4b80-930a-de47df052817",
+      "claim_id": "C62",
+      "claim": "Data from asexual strains had lower coverage than sexual strains.",
+      "claim_type": "EXPLICIT",
+      "source": "(B) Median read coverage per sample for sexual (red) and asexual (blue) strains over 1000 generations. Data from asexual strains had lower coverage, but were not different to sexuals through time (generation effect p=0.096, reproductive mode effect p=0.002, and interaction between generation and mode p=0.588; permutation ANOVA).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 1\u2014figure supplement 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:01:33.575600Z"
+    },
+    {
+      "id": "cc7ae81e-c5e5-453f-bbae-6852c88352dd",
+      "content_id": "1c4642e6-0e25-4b80-930a-de47df052817",
+      "claim_id": "C63",
+      "claim": "Asexual and sexual strains were not different in coverage through time.",
+      "claim_type": "EXPLICIT",
+      "source": "(B) Median read coverage per sample for sexual (red) and asexual (blue) strains over 1000 generations. Data from asexual strains had lower coverage, but were not different to sexuals through time (generation effect p=0.096, reproductive mode effect p=0.002, and interaction between generation and mode p=0.588; permutation ANOVA).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by statistical analysis shown in Figure 1\u2014figure supplement 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:01:33.575600Z"
+    },
+    {
+      "id": "b734e346-cac2-45b7-9059-91a73bc18744",
+      "content_id": "1c4642e6-0e25-4b80-930a-de47df052817",
+      "claim_id": "C64",
+      "claim": "Subsampling to the mean asexual read coverage per generation for all samples results in similar findings.",
+      "claim_type": "EXPLICIT",
+      "source": "(C) Subsampling to the mean asexual read coverage per generation for all samples results in similar findings (generation effect p=0.012, reproductive mode effect p=0.302, and interaction between generation and mode p=0.004; permutation ANOVA).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by statistical analysis shown in Figure 1\u2014figure supplement 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:01:33.575600Z"
+    },
+    {
+      "id": "da02d1dc-52fa-41ac-a352-5fdb916660ab",
+      "content_id": "1c4642e6-0e25-4b80-930a-de47df052817",
+      "claim_id": "C65",
+      "claim": "Meiosis generates TE load spikes following events of sexual reproduction.",
+      "claim_type": "EXPLICIT",
+      "source": "Meiosis generates the TE load spikes following events of sexual reproduction, but allows for selection to effectively remove genotypes with high TE loads by generating fitness variation among genotypes.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by simulation results shown in Figure 1\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:01:33.575600Z"
+    },
+    {
+      "id": "653ae209-37dd-4d0e-8b9c-eef1f61bc2e0",
+      "content_id": "1c4642e6-0e25-4b80-930a-de47df052817",
+      "claim_id": "C66",
+      "claim": "Meiosis allows for selection to effectively remove genotypes with high TE loads by generating fitness variation among genotypes.",
+      "claim_type": "EXPLICIT",
+      "source": "Meiosis generates the TE load spikes following events of sexual reproduction, but allows for selection to effectively remove genotypes with high TE loads by generating fitness variation among genotypes.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by simulation results shown in Figure 1\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:01:33.575600Z"
+    },
+    {
+      "id": "4aed0b64-dd3e-422d-98ee-1dd3d6aee19b",
+      "content_id": "1c4642e6-0e25-4b80-930a-de47df052817",
+      "claim_id": "C67",
+      "claim": "Both empirical and simulation data show that asexuals lost about nine active, full-length TEs by generation 1000.",
+      "claim_type": "EXPLICIT",
+      "source": "For both (A) empirical and (B) simulation data, asexuals lost about nine active, full-length TEs by generation 1000.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by both empirical data and simulation results shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:01:33.575600Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "e8d343eb-94f9-4110-8b78-af9a8510b183",
+      "content_id": "1c4642e6-0e25-4b80-930a-de47df052817",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "TE loads decrease in asexual yeast populations over 1000 generations while remaining constant in sexual populations. Total TE load decreased by 23.5% in asexual strains, and full-length TE copies decreased from approximately 50 to 41. Sexual strains maintained constant TE loads despite rare mating events (10 out of 990 reproduction events).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C23-C28, C32, C48, C53, and C67 provide converging evidence from multiple analytical approaches (total TE load quantification and full-length TE detection) with appropriate statistical tests showing significant generation \u00d7 reproductive mode interactions (p<0.001). The findings are consistent across different measurement methods and account for sequencing coverage differences (C61-C64), strengthening the conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:01:33.575600Z"
+    },
+    {
+      "id": "51ef09d0-6f68-4bcc-ba08-795c3de6df12",
+      "content_id": "1c4642e6-0e25-4b80-930a-de47df052817",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Ancestral TE insertions are lost at higher rates in asexual than sexual strains, while transposition rates remain similar between reproductive modes. Novel TE insertions showed no significant differences between sexual and asexual strains (p=0.338 for generation effect, p=0.271 for reproductive mode effect).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29-C30 and C45 are supported by statistical analyses showing significant differences in TE loss rates (p<0.001 for interaction) but not in transposition rates (non-significant p-values). This mechanistic insight distinguishes between excision and transposition as drivers of TE load differences, though the detection method may have limitations in identifying all novel insertions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:01:33.575600Z"
+    },
+    {
+      "id": "ff2736ad-338a-4b38-aa0d-06cc8a883ffe",
+      "content_id": "1c4642e6-0e25-4b80-930a-de47df052817",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The reduction in TE loads under asexual reproduction occurs via evolution of TE activity, most likely through increased excision rates rather than reduced transposition. This mechanism is inferred from parallel reduction across independent asexual strains and supported by simulation modeling.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C33, C43, C47, and C49 are supported by the combination of empirical observations (parallel reduction in independent replicates, similar transposition rates) and simulation results showing that only models incorporating evolved TE activity can reproduce the empirical pattern. However, the exact molecular mechanism cannot be directly assessed from the sequencing data, making this an inference rather than direct observation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:01:33.575600Z"
+    },
+    {
+      "id": "10892201-27db-417b-a32f-e2de98e6b831",
+      "content_id": "1c4642e6-0e25-4b80-930a-de47df052817",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Simulations without modifier alleles show that sexual reproduction enhances purifying selection against TEs, causing faster TE loss in sexual than asexual populations\u2014opposite to empirical observations. Sexual events generate fitness variation that facilitates selection, and increased meiotic TE activity only transiently increases TE loads before purifying selection removes them.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C38, C46, C65-C66 describe simulation results that are internally consistent and demonstrate that standard population genetic models without evolved TE activity cannot explain the empirical observations. The simulations appropriately model selection, recombination, and TE dynamics, though parameter choices and model assumptions should be carefully evaluated. The discrepancy between these simulations and empirical data motivates the modifier allele hypothesis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:01:33.575600Z"
+    },
+    {
+      "id": "2b624a1e-e354-453b-a9b9-c1b4532ca59f",
+      "content_id": "1c4642e6-0e25-4b80-930a-de47df052817",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Simulations incorporating a modifier allele that increases excision rates can reproduce the empirical pattern. The modifier spreads to fixation in asexual strains via genetic hitchhiking with low-TE genomes but cannot spread in sexual strains due to recombination breaking the association. This suggests a TE defense mechanism either segregated in the ancestral strain or arose de novo.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C39-C42 and C52 show that simulations with a modifier allele can fit the data (C42), but this is a modeling result that demonstrates plausibility rather than proof. The modifier is a hypothetical construct, and C52 explicitly acknowledges the mechanism cannot be assessed in the empirical data. Alternative explanations (e.g., changes in host genome affecting TE activity, epigenetic modifications) are not thoroughly explored. The model fit is encouraging but requires experimental validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:01:33.575600Z"
+    },
+    {
+      "id": "99e3ba91-9cf0-4d78-8d23-95d4e1c42db4",
+      "content_id": "1c4642e6-0e25-4b80-930a-de47df052817",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Sex is a major driver of genomic TE loads and at the root of TE evolutionary success. Even rare sexual events (10 out of 990 reproduction events) maintain TE loads, contrasting with the hypothesis that asexual species accumulate TEs and are driven to extinction.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C31, C48, C54, and C55 represent the main conclusions synthesized from the empirical and simulation results. The evidence from TE maintenance in sexual strains and reduction in asexual strains supports this interpretation. However, the generalizability beyond S. cerevisiae and the specific experimental conditions (rare sex every 90 generations) requires caution. The contrast with extinction hypotheses (C54) is valid but limited to the 1000-generation timeframe studied.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:01:33.575600Z"
+    },
+    {
+      "id": "42a375da-7147-4657-9427-634dec3d0b8e",
+      "content_id": "1c4642e6-0e25-4b80-930a-de47df052817",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Theoretical predictions indicate sexual reproduction has dual effects on TE accumulation: facilitating TE spread to new genomes while also enhancing purifying selection and host defenses. In asexuality, reduced purifying selection may cause TE accumulation unless excision rates are sufficiently high.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C9-C12 accurately represent established theoretical predictions from cited literature. These provide the conceptual framework for the study and are well-supported by prior work. The claims appropriately acknowledge the complexity and competing effects of sexual reproduction on TE dynamics.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:01:33.575600Z"
+    },
+    {
+      "id": "eca98498-120c-4859-9a8d-f3de4b800ea8",
+      "content_id": "1c4642e6-0e25-4b80-930a-de47df052817",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Natural populations of asexual and sexual organisms show no consistent difference in TE loads, likely due to confounding factors such as hybridization and polyploidization that mask the effect of reproductive mode.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C13-C14 accurately summarize findings from multiple cited empirical studies and provide important context for why experimental evolution approaches are needed. The explanation for inconsistent patterns (confounding factors) is reasonable and supported by citations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:01:33.575600Z"
+    },
+    {
+      "id": "45d8082f-d5e7-447f-a7f8-325a0cb7b6b6",
+      "content_id": "1c4642e6-0e25-4b80-930a-de47df052817",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The experimental design involved 12 yeast strains (4 sexual, 4 asexual) derived from a common ancestor (W303), grown for 990 generations with sexual strains undergoing mating every 90 generations. Paired-end Illumina sequencing was performed every 90 generations with coverage averaging ~2.96 million reads per sample.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C15-C17 and C56-C60 describe the experimental design and sequencing methodology from McDonald et al. (2016). These are factual descriptions of the experimental setup that are verifiable from the cited source and the current study's methods. The design is appropriate for testing the effects of reproductive mode on TE dynamics.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:01:33.575600Z"
+    },
+    {
+      "id": "00f54256-5363-4793-bbaa-eb251a385e81",
+      "content_id": "1c4642e6-0e25-4b80-930a-de47df052817",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "S. cerevisiae TEs are well-characterized, consisting solely of LTR retrotransposons (Ty1-Ty5 families). The W303 genome contains approximately 50 full-length active copies and 430 inactive copies (truncated elements and solo-LTRs). Excisions occur via intra-chromosomal recombination between flanking LTRs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C18-C22 accurately describe established knowledge about S. cerevisiae TEs from cited literature. This background information is well-supported and provides essential context for interpreting the experimental results. The characterization of the study organism's TE complement is appropriate.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:01:33.575600Z"
+    },
+    {
+      "id": "729873ff-5f9d-4a0f-b122-4a36f4d7d762",
+      "content_id": "1c4642e6-0e25-4b80-930a-de47df052817",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The McClintock pipeline detected 24 of 50 full-length TEs from the reference genome. Sequencing coverage influences TE detection ability (p<0.001), with asexual strains having lower coverage than sexual strains (p=0.002), though coverage did not differ through time (p=0.588). Subsampling to equalize coverage yields similar findings.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25 and C61-C64 address important methodological considerations regarding detection bias. The authors appropriately acknowledge the limitation of detecting only 24/50 TEs and account for coverage differences through statistical modeling and subsampling analyses. The robustness checks (C64) strengthen confidence that coverage differences do not explain the main findings, though the incomplete detection remains a limitation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:01:33.575600Z"
+    },
+    {
+      "id": "ba05f26a-6ace-4997-bdba-dda79a4897b1",
+      "content_id": "1c4642e6-0e25-4b80-930a-de47df052817",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "TEs are widespread genomic parasites that proliferate independently of the host cell cycle via cut-and-paste or copy-and-paste mechanisms. Despite generally providing no advantage to hosts, TEs can invade genomes and cause deleterious effects through ectopic recombination and gene disruption.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5-C8 represent well-established background knowledge about TE biology, appropriately cited to foundational literature. These claims provide necessary context but are not novel findings of this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:01:33.575600Z"
+    },
+    {
+      "id": "b3c7230a-ea9c-4878-b80d-654092d59518",
+      "content_id": "1c4642e6-0e25-4b80-930a-de47df052817",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "A modifier acting on transposition rates rather than excision rates would produce similar effects, since net TE activity depends on the relative rates of transposition versus excision.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C44 is a valid theoretical point about the equivalence of reducing transposition versus increasing excision for net TE activity. This is logically sound and helps interpret the simulation results, though it remains a theoretical consideration rather than an empirically tested claim.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:01:33.575600Z"
+    },
+    {
+      "id": "d73ef50a-859b-45be-b2a5-da0d77994ae4",
+      "content_id": "1c4642e6-0e25-4b80-930a-de47df052817",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The findings are consistent with low TE activity in old asexual lineages and the theoretical prediction that TEs should evolve to be benign in asexual species due to aligned evolutionary interests between TEs and host genomes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50-C51 appropriately connect the current findings to prior empirical observations and theoretical predictions from cited literature. The consistency with other studies strengthens the interpretation, though the generality of this pattern requires further investigation across diverse asexual lineages.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:01:33.575600Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "469a4689-c157-4656-9a8f-dc6a89a83581",
+      "result_id": "e8d343eb-94f9-4110-8b78-af9a8510b183"
+    },
+    {
+      "claim_id": "5d47a059-5055-4e49-99b0-b79a52dfd5d6",
+      "result_id": "e8d343eb-94f9-4110-8b78-af9a8510b183"
+    },
+    {
+      "claim_id": "e39c3da1-d198-43d8-8518-5f38e393ce2e",
+      "result_id": "e8d343eb-94f9-4110-8b78-af9a8510b183"
+    },
+    {
+      "claim_id": "513e770e-9f2d-4b61-b01b-c1ac0b08478a",
+      "result_id": "e8d343eb-94f9-4110-8b78-af9a8510b183"
+    },
+    {
+      "claim_id": "e71664d6-9b67-453d-8169-b353f6fb87b4",
+      "result_id": "e8d343eb-94f9-4110-8b78-af9a8510b183"
+    },
+    {
+      "claim_id": "f405c846-96f4-421b-8ad3-0b9fb161fd70",
+      "result_id": "e8d343eb-94f9-4110-8b78-af9a8510b183"
+    },
+    {
+      "claim_id": "3d639a1c-6dd2-4ecb-b176-0eed168f4ece",
+      "result_id": "e8d343eb-94f9-4110-8b78-af9a8510b183"
+    },
+    {
+      "claim_id": "36e00973-0abe-4e03-b571-225cec6c26c3",
+      "result_id": "e8d343eb-94f9-4110-8b78-af9a8510b183"
+    },
+    {
+      "claim_id": "2f30e1d0-1689-4d51-8b64-5262bc67df6d",
+      "result_id": "e8d343eb-94f9-4110-8b78-af9a8510b183"
+    },
+    {
+      "claim_id": "4aed0b64-dd3e-422d-98ee-1dd3d6aee19b",
+      "result_id": "e8d343eb-94f9-4110-8b78-af9a8510b183"
+    },
+    {
+      "claim_id": "0733d26a-80c8-4836-adf7-61887641aa66",
+      "result_id": "51ef09d0-6f68-4bcc-ba08-795c3de6df12"
+    },
+    {
+      "claim_id": "a909b252-3e71-4d03-9201-9aed2b63f2ae",
+      "result_id": "51ef09d0-6f68-4bcc-ba08-795c3de6df12"
+    },
+    {
+      "claim_id": "5e85de37-e7b4-4c53-b22c-7b9f5d7f366f",
+      "result_id": "51ef09d0-6f68-4bcc-ba08-795c3de6df12"
+    },
+    {
+      "claim_id": "e93c920d-f521-470f-a43c-a3e391d4d865",
+      "result_id": "ff2736ad-338a-4b38-aa0d-06cc8a883ffe"
+    },
+    {
+      "claim_id": "f6fbe1d0-4660-4ccd-8ed3-ce4dc897851f",
+      "result_id": "ff2736ad-338a-4b38-aa0d-06cc8a883ffe"
+    },
+    {
+      "claim_id": "9658be00-9034-471d-95f4-4f0fc45a672d",
+      "result_id": "ff2736ad-338a-4b38-aa0d-06cc8a883ffe"
+    },
+    {
+      "claim_id": "62cfd26a-1fbd-4232-8610-f2917068f1a2",
+      "result_id": "ff2736ad-338a-4b38-aa0d-06cc8a883ffe"
+    },
+    {
+      "claim_id": "b328b91d-153c-40be-941a-9d1de9e6bee5",
+      "result_id": "ff2736ad-338a-4b38-aa0d-06cc8a883ffe"
+    },
+    {
+      "claim_id": "46735202-bf6a-48bd-8799-f3987188beb8",
+      "result_id": "10892201-27db-417b-a32f-e2de98e6b831"
+    },
+    {
+      "claim_id": "ff135bf4-1a18-4682-88f4-2a755c482c7d",
+      "result_id": "10892201-27db-417b-a32f-e2de98e6b831"
+    },
+    {
+      "claim_id": "239a8eee-ce30-4659-b920-49dfd1372829",
+      "result_id": "10892201-27db-417b-a32f-e2de98e6b831"
+    },
+    {
+      "claim_id": "5a2f12ba-e526-4d15-9e2e-0308944127f7",
+      "result_id": "10892201-27db-417b-a32f-e2de98e6b831"
+    },
+    {
+      "claim_id": "c4794da6-1abb-4d6d-8f91-177c9242156f",
+      "result_id": "10892201-27db-417b-a32f-e2de98e6b831"
+    },
+    {
+      "claim_id": "c74847e2-6356-4dcd-b01c-1fcef66f018a",
+      "result_id": "10892201-27db-417b-a32f-e2de98e6b831"
+    },
+    {
+      "claim_id": "da02d1dc-52fa-41ac-a352-5fdb916660ab",
+      "result_id": "10892201-27db-417b-a32f-e2de98e6b831"
+    },
+    {
+      "claim_id": "653ae209-37dd-4d0e-8b9c-eef1f61bc2e0",
+      "result_id": "10892201-27db-417b-a32f-e2de98e6b831"
+    },
+    {
+      "claim_id": "ec7eeff4-066a-4df8-a6bf-be9410f81545",
+      "result_id": "2b624a1e-e354-453b-a9b9-c1b4532ca59f"
+    },
+    {
+      "claim_id": "dac45ce4-4442-4b48-8271-97a36da7ceee",
+      "result_id": "2b624a1e-e354-453b-a9b9-c1b4532ca59f"
+    },
+    {
+      "claim_id": "39b33ade-bfe3-4d0d-8751-5cf7e02e1174",
+      "result_id": "2b624a1e-e354-453b-a9b9-c1b4532ca59f"
+    },
+    {
+      "claim_id": "0b09e520-3264-4c35-af6c-445b7996939e",
+      "result_id": "2b624a1e-e354-453b-a9b9-c1b4532ca59f"
+    },
+    {
+      "claim_id": "b95db9b3-d319-4a35-96ef-9bcbd8b5be21",
+      "result_id": "2b624a1e-e354-453b-a9b9-c1b4532ca59f"
+    },
+    {
+      "claim_id": "08bbe3b5-21cc-4a3c-bed2-2c7338dd7817",
+      "result_id": "99e3ba91-9cf0-4d78-8d23-95d4e1c42db4"
+    },
+    {
+      "claim_id": "4216fb60-d98d-4b07-95e8-a763c08ab195",
+      "result_id": "99e3ba91-9cf0-4d78-8d23-95d4e1c42db4"
+    },
+    {
+      "claim_id": "36e00973-0abe-4e03-b571-225cec6c26c3",
+      "result_id": "99e3ba91-9cf0-4d78-8d23-95d4e1c42db4"
+    },
+    {
+      "claim_id": "aa17f3af-baac-4361-8933-c07c7aee7843",
+      "result_id": "99e3ba91-9cf0-4d78-8d23-95d4e1c42db4"
+    },
+    {
+      "claim_id": "c374854e-b558-447e-9db7-46a50938da31",
+      "result_id": "99e3ba91-9cf0-4d78-8d23-95d4e1c42db4"
+    },
+    {
+      "claim_id": "2edcee1b-6955-435a-8d0a-1b5b7980141b",
+      "result_id": "42a375da-7147-4657-9427-634dec3d0b8e"
+    },
+    {
+      "claim_id": "6d524d64-44ad-41d5-aca1-806a451812c0",
+      "result_id": "42a375da-7147-4657-9427-634dec3d0b8e"
+    },
+    {
+      "claim_id": "a1e83d02-01a9-4759-964a-351938a3d8d8",
+      "result_id": "42a375da-7147-4657-9427-634dec3d0b8e"
+    },
+    {
+      "claim_id": "304b1c68-81ab-41be-95bf-87dd86dd93dd",
+      "result_id": "42a375da-7147-4657-9427-634dec3d0b8e"
+    },
+    {
+      "claim_id": "3d86b7fb-64c8-4874-8a4c-1a21a1ba2570",
+      "result_id": "42a375da-7147-4657-9427-634dec3d0b8e"
+    },
+    {
+      "claim_id": "77f153ff-26aa-4946-b7ce-f46345912e90",
+      "result_id": "eca98498-120c-4859-9a8d-f3de4b800ea8"
+    },
+    {
+      "claim_id": "61deb22f-d4b4-4cce-8209-0d2856f6e089",
+      "result_id": "eca98498-120c-4859-9a8d-f3de4b800ea8"
+    },
+    {
+      "claim_id": "3f8c19e5-f9e9-4004-9370-467ad617c24f",
+      "result_id": "45d8082f-d5e7-447f-a7f8-325a0cb7b6b6"
+    },
+    {
+      "claim_id": "284acba6-9817-4d4f-983a-b6fa6be5b137",
+      "result_id": "45d8082f-d5e7-447f-a7f8-325a0cb7b6b6"
+    },
+    {
+      "claim_id": "ed44cb89-9069-4bb8-a3a7-4affdf637fee",
+      "result_id": "45d8082f-d5e7-447f-a7f8-325a0cb7b6b6"
+    },
+    {
+      "claim_id": "942c743d-74e3-4db2-b078-b8d661d93b31",
+      "result_id": "45d8082f-d5e7-447f-a7f8-325a0cb7b6b6"
+    },
+    {
+      "claim_id": "f99f51ca-c9dc-4f04-b30d-faade744a9c4",
+      "result_id": "45d8082f-d5e7-447f-a7f8-325a0cb7b6b6"
+    },
+    {
+      "claim_id": "53f6edf6-4b9e-4748-a87f-9e2eb1e610e7",
+      "result_id": "45d8082f-d5e7-447f-a7f8-325a0cb7b6b6"
+    },
+    {
+      "claim_id": "a8d75a22-70dd-4d86-baad-15f3f5842675",
+      "result_id": "45d8082f-d5e7-447f-a7f8-325a0cb7b6b6"
+    },
+    {
+      "claim_id": "b739c71b-8ee5-4e3b-ae98-593036422ca1",
+      "result_id": "45d8082f-d5e7-447f-a7f8-325a0cb7b6b6"
+    },
+    {
+      "claim_id": "511db546-c2e3-42cc-a4d9-fd9399fce624",
+      "result_id": "00f54256-5363-4793-bbaa-eb251a385e81"
+    },
+    {
+      "claim_id": "bf925515-86d4-48a5-bef5-5b0ba48190b0",
+      "result_id": "00f54256-5363-4793-bbaa-eb251a385e81"
+    },
+    {
+      "claim_id": "a215df3a-c91f-43e2-92d9-f5dd37f000d1",
+      "result_id": "00f54256-5363-4793-bbaa-eb251a385e81"
+    },
+    {
+      "claim_id": "6702276c-b5ce-4c63-a7d4-c772c6ac0191",
+      "result_id": "00f54256-5363-4793-bbaa-eb251a385e81"
+    },
+    {
+      "claim_id": "5c4065d0-907b-4156-971c-eef53087ea1a",
+      "result_id": "00f54256-5363-4793-bbaa-eb251a385e81"
+    },
+    {
+      "claim_id": "5f87818f-5148-45f4-8ee5-b0e97b4a9ba5",
+      "result_id": "729873ff-5f9d-4a0f-b122-4a36f4d7d762"
+    },
+    {
+      "claim_id": "d8e82fd5-07a8-4c2b-bf70-3d376a35b83c",
+      "result_id": "729873ff-5f9d-4a0f-b122-4a36f4d7d762"
+    },
+    {
+      "claim_id": "bd95fe32-a9ca-438a-b1c4-4511213fa46d",
+      "result_id": "729873ff-5f9d-4a0f-b122-4a36f4d7d762"
+    },
+    {
+      "claim_id": "cc7ae81e-c5e5-453f-bbae-6852c88352dd",
+      "result_id": "729873ff-5f9d-4a0f-b122-4a36f4d7d762"
+    },
+    {
+      "claim_id": "b734e346-cac2-45b7-9059-91a73bc18744",
+      "result_id": "729873ff-5f9d-4a0f-b122-4a36f4d7d762"
+    },
+    {
+      "claim_id": "c364f3c2-3db3-446e-a93d-cb462c09b190",
+      "result_id": "ba05f26a-6ace-4997-bdba-dda79a4897b1"
+    },
+    {
+      "claim_id": "cb1725f7-af91-4b79-a9ea-8b848e69bc8e",
+      "result_id": "ba05f26a-6ace-4997-bdba-dda79a4897b1"
+    },
+    {
+      "claim_id": "24d17bdf-7971-41cb-ac79-8cab05e33da7",
+      "result_id": "ba05f26a-6ace-4997-bdba-dda79a4897b1"
+    },
+    {
+      "claim_id": "2ae538a5-19eb-4411-bea3-153f271e0b34",
+      "result_id": "ba05f26a-6ace-4997-bdba-dda79a4897b1"
+    },
+    {
+      "claim_id": "4296f8dd-5b9a-42ba-b208-10a3443a8854",
+      "result_id": "b3c7230a-ea9c-4878-b80d-654092d59518"
+    },
+    {
+      "claim_id": "0333c52b-af4d-416b-b824-41a7385206fd",
+      "result_id": "d73ef50a-859b-45be-b2a5-da0d77994ae4"
+    },
+    {
+      "claim_id": "da68063f-2de0-4714-856d-fdd4cbe83c6f",
+      "result_id": "d73ef50a-859b-45be-b2a5-da0d77994ae4"
+    }
+  ],
+  "comparisons": []
+}

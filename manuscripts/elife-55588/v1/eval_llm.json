@@ -1,0 +1,164 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C28",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C40"
+    ],
+    "result": "The authors extended a 1D reaction-diffusion model to 2D and demonstrated that an arbitrary number of distinct cortical fields can emerge from just two guidance gradients when projections compete for cortical space, with field locations determined by relative interaction strengths (\u03b3 values) rather than requiring pre-specified center points.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28, C31, C36 provide direct simulation evidence, while C33-C35 establish the theoretical framework. The model successfully reproduces prior 1D results (C28) and demonstrates that competition between projections allows two gradients to specify multiple fields (C31, C33), avoiding the biological implausibility of requiring numerous guidance fields (C32).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C52",
+      "C54"
+    ],
+    "result": "Simulations demonstrate that realistic whisker barrel maps self-organize by ~20,000 iterations, with emergent patterns matching real barrel field topology (Honda-\u03b4 and pattern difference metrics), and reveal a trade-off where strong competition with fast diffusion produces barrel-shaped fields while slow diffusion produces more selective innervation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C49 are directly supported by quantitative metrics shown in Figure 1D-E, demonstrating convergence to realistic patterns. Claims C52 and C54 are supported by systematic parameter sweeps in Figure 2A, revealing the diffusion-competition trade-off. The multiple independent metrics (Honda-\u03b4, pattern difference, connection selectivity) provide converging evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C60"
+    ],
+    "result": "Sensitivity analysis reveals that barrel field self-organization is highly robust to perturbations in interaction parameters (\u03b3), initial conditions, and guidance field noise, with topological defects only appearing when perturbations are large enough to reverse the ordering of neighboring thalamic \u03b3 values.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C56 are directly supported by systematic perturbation analysis shown in Figure 3A, testing multiple noise sources. The conclusion (C60) is well-justified by the comprehensive sensitivity testing across initial conditions, interaction parameters, and guidance fields, demonstrating that the model's behavior is not dependent on fine-tuning.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C70"
+    ],
+    "result": "The model successfully replicates experimental whisker deprivation results: simulated trimming of individual whisker C3 (by reducing its competitiveness parameter \u03b5) produces smaller barrels matching experimental observations, while trimming an entire row produces minimal size changes, consistent with published experimental findings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C65, C70 cite established experimental results, while the simulation results shown in Figure 4C-D quantitatively match these biological observations. The model predicts 65% barrel area reduction for individual trimming (matching Kossut 1992) and 91% retention for row trimming (matching Land and Simons 1985), providing strong validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C81",
+      "C82"
+    ],
+    "result": "The authors conclude that realistic barrel patterning requires three key mechanisms: (i) competition for synaptic connections, (ii) density-dependent branching reduction, and (iii) branch density conservation. Critically, the model demonstrates that somatotopic maps can self-organize through purely local interactions without pre-specified center points.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C75 identify the minimal mechanistic requirements validated by the simulation results. Claims C81-C82 represent well-justified conclusions from the modeling work, directly addressing the central question posed in the introduction (C19-C20). The local-only computation (C80) and successful pattern formation without center points provide strong support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C79"
+    ],
+    "result": "The model predicts that barrel absence in larger-brained rodents (e.g., capybara) results from weaker spatial competition, and suggests that somatotopically ordered modular structures may inevitably emerge from local competition for cortical territory driven by discrete sensory organ arrays.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C76-C77 are speculative extrapolations from the model, supported by simulation results showing pattern loss at low diffusion rates (Figure 2Biii, equivalent to larger cortex) and cited observations in capybara. However, these remain predictions requiring experimental validation. The mechanistic logic is sound but the biological predictions are untested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "The model assumes that complementary gradients of EphA4 receptors in thalamus and ephrin-A5 ligands in cortex create correlated interaction strengths (\u03b3 values) that guide thalamocortical projection targeting, with VPM cells (high EphA4) projecting to lateral S1 (low ephrin-A5) and VPL cells (low EphA4) projecting to medial S1 (high ephrin-A5).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C39 cite well-established experimental findings about complementary molecular gradients. Claim C40 represents a reasonable modeling assumption connecting these gradients to the \u03b3 parameters. While the precise mechanistic link is assumed rather than proven, it is grounded in established biology and enables the model to work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C2",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "The manuscript reviews established knowledge about rodent barrel cortex development, including the somatotopic organization of whisker representations, developmental timeline, molecular guidance mechanisms (ephrin-A5/A7, cadherin-6/8, Fgf8/17, Emx2, Pax6), Voronoi tessellation structure, and the tension between pre-specified center points versus self-organization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims are well-supported by extensive citations to established literature (Woolsey and Van der Loos 1970, Erzurumlu and Gaspar 2012, Armstrong-James et al. 1992, Vanderhaeghen et al. 2000, Miller et al. 2006, Shimogori and Grove 2005, Assimacopoulos et al. 2012, Agmon et al. 1993, and others). They provide essential context but represent prior knowledge rather than novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "The computational implementation uses a 2D hexagonal lattice (hex-to-hex distance 0.03 mm) containing 6,515-12,739 hexes depending on domain size, with 82 time-dependent variables per hex (41 branching densities, 41 connection densities), solved using fourth-order Runge-Kutta integration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These methodological claims (C83-C89) describe the technical implementation details that are standard computational approaches. The hexagonal lattice choice (C83-C84) is justified for simplifying Laplacian computation. The specific parameters (C85-C87) and numerical methods (C89) are clearly stated and appropriate for the problem.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,245 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "The authors conducted a density manipulation experiment on three Camponotus pennsylvanicus colonies by quadrupling nest space after filming under high-density conditions, then filming again after a week of habituation to low-density conditions. They manually recorded 6.9 million ant locations and 3,262 trophallaxis events from 24 hours of video footage, with extensive quality control measures and naturalistic experimental conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The experimental design is well-documented with appropriate sample sizes (n=3 colonies), adequate habituation periods (1 week), naturalistic conditions (infrared lighting, wooden chambers, 188 cm foraging distance), and rigorous data collection methods including manual verification of all trophallaxis events (C76). The extensive observation time (630 hours for trophallaxis, 980 hours for tracking, C85) and quality control measures support the reliability of the data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C90"
+    ],
+    "result": "When nest space was quadrupled, colonies split into two spatially separated groups rather than dispersing evenly: approximately 39% of ants aggregated in the entrance chamber while 60% (including the queen) stayed in the chamber farthest from the entrance. Only about 23% of workers moved between these two groups, and the middle two chambers remained predominantly empty.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The spatial distribution patterns are clearly quantified with means and standard deviations across all three colonies (C31, C32), showing consistent bimodal clustering rather than uniform dispersion. The low percentage of workers moving between groups (C33) and empty middle chambers (C90) provide converging evidence for spatial compartmentalization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C34",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C89"
+    ],
+    "result": "Using a novel spatial clustering algorithm based on Kolmogorov-Smirnov statistics and the Louvain community detection method, the authors identified 2-3 distinct spatial groups within each nest. These groups were robust to data perturbations, with fewer than 5% of ants changing group membership when the data was corrupted by 10%.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The methodology is clearly described (C78, C79) and validated through robustness analysis (C89). The consistent identification of 2-3 groups across all colonies and treatments (C80-C82) with detailed group sizes provides strong evidence. However, the choice of the 15mm distance threshold for similarity (C78) and the KS statistic approach could benefit from additional justification.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C35",
+      "C36"
+    ],
+    "result": "An ant's spatial group before nest expansion significantly predicted its spatial group afterwards (Spearman's r = 0.26-0.47, p \u2264 0.03 across colonies), indicating that the fourfold increase in space allowed pre-existing groups to separate rather than creating new organizational patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The statistical analysis is appropriate (Spearman's rank correlation with permutation tests) and shows significant correlations across all three colonies (C35). The interpretation that pre-existing groups separated (C36) logically follows from the correlation data, though the moderate correlation coefficients suggest some reorganization also occurred.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C37",
+      "C38"
+    ],
+    "result": "Spatial organization was linked to task performance: 95% of foragers were part of the spatial group closest to the nest entrance or outside the nest, while groups in the back harbored the queen and brood.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The strong association between spatial location and foraging behavior (C37) is clearly quantified. The observation about queen and brood location (C38) is descriptive but consistent across colonies. This demonstrates functional spatial organization related to division of labor.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C91",
+      "C92"
+    ],
+    "result": "Trophallaxis networks showed significantly positive assortativity (>2 SD above 0) across all colonies and treatments, indicating that each colony consists of tightly knit spatial groups with dense within-group connections but sparse between-group connections. The authors infer that colony regulation relies on key individuals connecting spatial groups and that ants mitigate spatial separation effects by preserving organization and reducing travel time.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The assortativity analysis is statistically sound using the jackknife method (C39), and the network structure interpretation (C40) is well-supported by the positive assortativity and visual network data. However, the inferences about key individuals (C91) and mitigation strategies (C92) are reasonable but speculative, as they are not directly tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Contrary to expectations, trophallaxis interaction rates did not increase with global density. There were divergent trends among colonies: colonies 1 and 2 showed significantly less trophallaxis during high-density than low-density periods, while colony 3 showed no significant difference. Overall, ant interaction rates did not decline after density was decreased.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The statistical analysis using generalized linear models with Poisson distribution is appropriate (Table 1), and the significant colony \u00d7 treatment interaction (C43) is properly followed up with pairwise comparisons (C44, C45). The finding contradicts the density-dependence hypothesis but is well-documented. The agreement with Gordon et al. 1993 (C42) provides external validation, though that study measured different interactions (antennation vs. trophallaxis).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C83"
+    ],
+    "result": "Local density (defined as the number of ants within 15 mm) was significantly lower in low-density nests (7.9 ants) compared to high-density nests (9.9 ants, p<0.00001). However, this reduction was substantially smaller than expected under random diffusion (observed ~20% reduction vs. expected 75% reduction), suggesting ants regulate local density to some degree.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The local density definition is clear (C83), the statistical test is appropriate (Wald Chi-square, C50), and the comparison with a null model (C51) strengthens the interpretation. The mixed effects model accounting for colony-level variation is methodologically sound. This provides evidence for active density regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Pair-based analysis using inhomogeneous Poisson process models revealed that trophallaxis rates were significantly lower in high-density than low-density treatments, independent of local density effects. Local density had complex distance-dependent effects: more ants within 5-10 mm increased trophallaxis rates, while more ants at 15-20 mm decreased rates. This suggests ants are more likely to initiate trophallaxis in small clusters separated by space.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The inhomogeneous Poisson process modeling is sophisticated and appropriate for event-time data. The finding of a significant treatment effect independent of local density (C54, C55) provides strong evidence for behavioral changes beyond density regulation. The distance-dependent local density effects (C56, C57) are consistent across colonies (C53) and reveal nuanced spatial preferences. The interpretation about clustered spacing (C58) is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C84",
+      "C98",
+      "C99"
+    ],
+    "result": "Stochastic differential equation models of movement revealed that ants move much faster through the middle two chambers of the enlarged nest compared to occupied chambers (irrespective of density). Potential surface analysis showed ants accelerate upon entering middle chambers and change direction quickly around corners. The authors conclude that workers use the middle chambers as a high-speed corridor for travel between ant groups, implying differential space perception that may involve learning, chemical trails, and/or low encounter rates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The SDE modeling approach (C84) is sophisticated and appropriate for analyzing movement data, with clear motility and potential surface estimates (C59, C61). The interpretation of middle chambers as corridors (C62) is well-supported by the movement patterns. However, the inference about differential space perception (C98) and the proposed mechanisms (C99) are speculative, as no direct tests of learning, chemical trails, or encounter rate effects were conducted.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C63",
+      "C96",
+      "C100"
+    ],
+    "result": "The authors conclude that ants maintain social homeostasis by changing their spatial distribution, movement dynamics, and interaction behavior (independent of local density) to preserve critical elements of spatial organization and social interaction patterns despite drastic environmental changes. This helps colonies retain fast flow of information and food despite spatial separation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This overarching conclusion (C63) is well-supported by the convergence of multiple lines of evidence: preserved spatial group membership (C35), maintained interaction rates despite density changes (C96), behavioral changes independent of local density (C55), and corridor formation (C62). The functional interpretation about information and food flow (C100) is reasonable given the trophallaxis data, though direct measures of flow efficiency were not provided.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C93",
+      "C94",
+      "C95",
+      "C97"
+    ],
+    "result": "The authors propose several explanations for why interaction rates did not decline with decreased density: physical/physiological constraints on trophallaxis (which involves only 1-2 individuals at a time), difficulty finding interaction partners in dense crowds, and that the form and function of interactions may affect their density-dependence. They suggest differences from Gordon et al. 1993 may reflect different interaction types (trophallaxis vs. antennation).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These are plausible post-hoc explanations (C47, C94, C95, C97) supported by citations and observations (C48, C93), but they remain speculative as they were not directly tested. The constraint argument (C47, C48) is reasonable but would require experimental manipulation to confirm. The comparison with Gordon et al. (C97) is useful but the different interaction types make direct comparison difficult.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C64"
+    ],
+    "result": "The introduction establishes that ants are ecologically successful due to their social organization and division of labor, that collective behaviors emerge from self-organization through local interactions, that interaction rates influence colony function and are thought to be density-dependent, and that spatial fidelity zones promote task specialization. Changes in spatial organization and interaction patterns are predicted to impact division of labor and food distribution efficiency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These background claims (C1-C22, C64) are appropriately supported by citations to established literature. They provide necessary context for the study's motivation and hypotheses. The claims about ant biology, social organization, and the importance of interaction rates are well-established in the field.",
+    "result_type": "MINOR"
+  }
+]

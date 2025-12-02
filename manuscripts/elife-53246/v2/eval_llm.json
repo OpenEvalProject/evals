@@ -1,0 +1,259 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C25",
+      "C68"
+    ],
+    "result": "Cerebellar patients exhibit intact visual feedback control, as demonstrated by their ability to scale movement amplitude in response to altered visual feedback gains (0.65x and 1.35x) in a manner statistically indistinguishable from age-matched controls. Both groups significantly modulated their movement scaling (Scaling Factor) in response to feedback gain changes, with no significant group effect or interaction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C43 provide strong statistical evidence (two-way ANOVA, p-values, effect sizes) showing that patients and controls respond similarly to visual feedback gain manipulations. The experimental design appropriately tests feedback control by manipulating cursor gain during unpredictable tracking. Sample sizes (n=11 per group) are adequate, statistical tests are appropriate, and the conclusion that feedback control is intact is well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C48",
+      "C49",
+      "C50",
+      "C55",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Cerebellar patients exhibit substantially greater phase lag than controls during visuomotor tracking, particularly at higher frequencies. This phase lag difference is frequency-dependent and more pronounced in unpredictable (sum-of-sines) tracking compared to predictable (single-sine) tracking, with 73% of patient responses showing greater phase lag than matched controls.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C63 provide comprehensive statistical evidence from circular ANOVA and frequency response analysis demonstrating increased phase lag in patients. The frequency-dependent nature of the deficit is well-characterized across both predictable and unpredictable conditions. Statistical tests are appropriate for circular data, sample sizes are adequate, and the pattern of results is internally consistent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C6",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C69",
+      "C70",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "Computational modeling reveals that the key difference between patients and controls is feedback delay: controls exhibit negligible feedback delay (consistent with predictive control via a Smith Predictor-like mechanism), while patients show visual feedback delays of 181-211 ms. Model selection procedures identified that control subjects' models are structurally consistent with a Smith Predictor architecture, while patient models lack this predictive component.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C47 and C83-C85 are supported by rigorous model selection procedures (leave-one-out cross-validation, consistency analysis) applied to frequency-domain data. The modeling approach is methodologically sound, with appropriate consideration of model parsimony, physiological plausibility of parameters, and validation in both frequency and time domains. The Smith Predictor interpretation provides a mechanistically coherent explanation for the observed phase lag differences. However, the modeling relies on simplified assumptions (McRuer crossover model) that may not capture all aspects of the control system.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "In predictable single-sine tracking, controls demonstrate efficient tracking with minimal phase lag (all responses within the effort/error tradeoff circle at low frequencies), while patients show impaired predictive ability (only 31% of responses within the circle). Controls show marked improvement from unpredictable to predictable tracking, while patients show only modest improvement, suggesting impairment in both internal plant models and external reference prediction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C53 and C90-C92 are supported by quantitative analysis of phasor plots and statistical comparisons (sign tests, p=0.012). The experimental design appropriately contrasts predictable vs. unpredictable conditions to isolate predictive deficits. The interpretation that patients have impaired prediction of both self-motion and external targets is reasonable given the data, though C92 represents an inference that could benefit from additional experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C7",
+      "C26",
+      "C27",
+      "C65",
+      "C66",
+      "C67",
+      "C71",
+      "C94",
+      "C103"
+    ],
+    "result": "Acceleration-dependent visual feedback manipulation successfully reduces dysmetria in cerebellar patients during discrete reaching movements. Patient-specific tuning of the acceleration-dependent feedback gain (ka) was necessary, with positive gains reducing hypometria and negative gains reducing hypermetria, supporting the inertial mismatch theory of cerebellar dysmetria.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C67 provide experimental evidence that the intervention works as predicted, with appropriate directionality of effects. The PEST algorithm provided systematic optimization of patient-specific gains. However, the result has important limitations acknowledged in C95-C102: the intervention was tested only in single-joint movements, does not address movement variability or post-correction oscillations, and recent evidence (C95) suggests the inertial mismatch theory may be insufficient for multi-joint movements. The claim of 'success' (C27, C71) should be qualified by these limitations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C54",
+      "C56",
+      "C57"
+    ],
+    "result": "Both patients and controls showed reduced tracking error in predictable single-sine tasks compared to unpredictable sum-of-sines tasks, with all subjects performing better in the predictable condition. In the unpredictable condition, patient and control performance was more similar (72% vs 64% of responses within the effort/error circle).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54, C56-C57 are supported by appropriate statistical tests (two-sided sign tests, p=9\u00d710\u207b\u2074 for both groups). The finding that both groups benefit from predictability is well-established, and the statistical evidence is strong. The comparison between conditions appropriately uses within-subject designs.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "The study tested 17 cerebellar patients and 14 age-matched controls across three experiments, with strict exclusion criteria to ensure cerebellar-specific deficits. Experiments 1-2 included 11 patients and 11 controls, while Experiment 3 included 12 patients and 12 controls.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C31 provide clear demographic information. The exclusion criteria (C29) are appropriate for isolating cerebellar deficits. Sample sizes are adequate for the statistical tests performed, though modest for some analyses. Age-matching is generally good (within \u00b13 years) with one exception noted.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "The experimental design used a sum-of-sines target trajectory comprising 15 non-harmonic sinusoids (0.1-2.35 Hz) creating an unpredictable, temporally complex motion repeating every 20 seconds. The KINARM system's cursor delay (45.8 ms) was measured and accounted for in modeling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C36 describe methodological details that are well-justified. The sum-of-sines design is appropriate for testing feedback control while minimizing predictability (supported by C36 citing prior work). The measurement and accounting of system delay (C32) is methodologically sound. The stimulus design is well-characterized.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "The modeling results suggest that apparent increased reliance on visual feedback in cerebellar patients may not be compensatory, but rather reflects the loss of predictive capabilities that normally 'disguise' visual feedback delays in healthy controls. All subjects may rely on delayed visual feedback, but controls use predictions of future limb state to compensate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C86-C88 represent speculative interpretations (marked as SPECULATION in evidence_type) of the modeling results. While this interpretation is consistent with the data and provides an interesting theoretical perspective, it goes beyond what the current experiments directly demonstrate. Claims C72-C75 provide supporting context from prior work, but the core interpretation remains a hypothesis requiring additional experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "Prior research shows cerebellar patients can exhibit longer reaction times and reduced gain in proprioceptive-driven responses, but can reweight sensory modalities (proprioception vs. vision) depending on task demands, consistent with the current findings of intact visual feedback control.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C79 appropriately cite and interpret prior research to contextualize the current findings. The interpretation in C79 that patients can reweight sensory modalities is supported by both the current data and cited prior work (Block and Bastian, 2012). This provides important context for understanding the main results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "The Smith Predictor is a control architecture that compensates for feedback delay by simulating the plant to predict sensory consequences of motor output and storing these predictions for comparison with delayed feedback. Prior work has proposed the cerebellum functions in a manner consistent with a Smith Predictor.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C82 accurately describe the Smith Predictor concept from control theory (C81-C82 are established knowledge) and appropriately cite prior work proposing cerebellar involvement (C80). This provides necessary theoretical background for interpreting the modeling results, though C80 notes controversy in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C89",
+      "C93"
+    ],
+    "result": "Prior research in weakly electric fish demonstrated that target predictability improves tracking performance via internal models of reference motion, and recent evidence suggests predictive models of action-perception can heighten perceptual sensitivity of self-motion feedback.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89 and C93 appropriately cite relevant prior work that supports the theoretical framework. These citations provide important context for the predictive control hypothesis and the interpretation of the current results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "The acceleration-dependent feedback intervention has important limitations: it was patient-specific even for single-joint reaches, does not address movement variability or post-correction oscillations, and recent evidence suggests the underlying inertial mismatch theory may be insufficient for multi-joint movements. Future work will require modifications for multi-joint movements and may benefit from adding damping terms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C102 provide an honest assessment of limitations and future directions. C95 appropriately cites contradictory evidence, C97-C98 acknowledge patient-specific requirements, and C99-C101 identify aspects of dysmetria not addressed by the intervention. C96 and C102 are reasonable speculations about future work. This critical self-assessment strengthens the overall evaluation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C104"
+    ],
+    "result": "The manuscript provides extensive background on motor control theory, cerebellar function, and ataxia, establishing that: (1) the brain uses internal models for predictive control, (2) the cerebellum is implicated in prediction, (3) cerebellar damage causes ataxia characterized by dysmetria and intention tremor, (4) patients may rely more on delayed visual feedback, and (5) drug therapy for cerebellar ataxia is not currently viable.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C24 and C104 represent established knowledge in the field (marked as KNOWLEDGE or CITATION evidence types) and provide appropriate background context. These claims are well-supported by citations to prior research and represent consensus views in motor control and cerebellar neuroscience. They establish the scientific foundation and motivation for the current study.",
+    "result_type": "MINOR"
+  }
+]

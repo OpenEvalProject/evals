@@ -1,0 +1,238 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "A novel cell type termed 'cue cells' was identified in the MEC, representing ~13% of recorded cells. These cells exhibited firing fields preferentially located near visual cues during virtual navigation, with significantly higher firing field fractions in cue regions (0.4 \u00b1 0.1) compared to non-cue regions (0.2 \u00b1 0.1, p=1.2\u00d710\u207b\u00b9\u00b9).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C34, C35, C36, and C37 provide converging evidence from raster plots, spatial firing rates, statistical analysis, and the novel cue score metric. The threshold-based classification (95th percentile of shuffled data) and significant statistical test support the identification of this cell population.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C50",
+      "C51",
+      "C52",
+      "C58"
+    ],
+    "result": "Cue cells formed sequences of spatial firing fields repeated at each cue location. The population exhibited consistent spatial shifts relative to cues, with most cells having small spatial shifts. The ridge/background ratio for cue cells (1.8) was significantly higher than shuffled data (1.2 \u00b1 0.35, p=9.8\u00d710\u207b\u2077).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C50, C51, C52, and C58 are supported by data from both tetrode recordings (Figure 4) and calcium imaging (Figure 5D). The ridge/background ratio analysis with appropriate shuffling controls demonstrates that the sequential pattern is not an artifact of data ordering.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Cue cell activity depends on the presence of visual cues. When cues were removed from part of a track, cue cells maintained firing in regions where cues remained identical but lost spatial firing fields in regions where cues were removed (Region B: p=1\u00d710\u207b\u00b9\u2074 for correlation, p=0.0002 for field fraction).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C41 describe a well-controlled perturbation experiment with appropriate statistical comparisons between with-cues and missing-cues tracks. The regional analysis (Region A vs. Region B) provides strong evidence that cue cell activity is driven by visual cues rather than other spatial features.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C6",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C59",
+      "C60",
+      "C75"
+    ],
+    "result": "On tracks with asymmetric left and right cues, most cue cells responded preferentially to cues on one side. In left MEC, 8.1% were left cue cells and 21.9% were right cue cells, with right cue cells showing higher cue scores. The bimodal distribution of bilateral scores confirmed single-side preference.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C53-C57, C59-C60, and C75 are supported by calcium imaging data from layers 2 and 3. The bilateral score analysis, comparison to random templates, and statistical tests provide strong evidence for side-specific responses. The contralateral preference (right cues in left MEC) supports visual input-based mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C5",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Cue cells maintained cue-correlated responses across different environments. The percentages of cells remaining as the same cell type across tracks were significantly higher than chance, and spatial shifts relative to cue templates were highly correlated across environments (p=2.27\u00d710\u207b\u2075).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C61-C64 demonstrate that cue cells represent a stable functional cell type. The cross-environment analysis with appropriate chance-level comparisons supports the conclusion that these cells consistently encode visual cue information across contexts.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C7",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "During navigation in real 2D arenas, cue cells showed spatially stable but irregular firing patterns comparable to other MEC cell types. Most cue cells (63%) were not conjunctive with grid or border cells, though 35% had head direction tuning. Cue cells accounted for 7% of spatially stable cells and 14% (or ~22%) of previously unclassified spatially stable MEC cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C7-C8 and C42-C49, C66-C68 describe cue cell properties in real arenas. While spatial stability is demonstrated, there is inconsistency in the reported percentages (C8 states 32%, C67 states ~22%, C49 states 14%). The irregular firing patterns in real arenas contrast with the clear cue-locked responses in VR, raising questions about what drives cue cell activity in complex environments without discrete landmarks.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C9",
+      "C65",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C86"
+    ],
+    "result": "The authors propose that cue cells could provide spatial information for error correction during path integration, either by acting as external error-correction inputs to the path integrator network or by producing continuous adjustment of location through sequential activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C9, C65, C81, C83-C84, and C86 are speculative interpretations about functional roles. While the properties of cue cells are consistent with these proposed functions, no direct experimental evidence is provided demonstrating that cue cells actually participate in error correction or path integration. These remain plausible hypotheses requiring future experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C74"
+    ],
+    "result": "Cue cells have properties distinct from place cells and boundary vector cells. The authors suggest cue cells may be similar to landmark vector cells in hippocampus or object-vector cells recently described in MEC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C72, C74 provide appropriate comparisons to other cell types. The distinction from place cells (single fields on linear tracks) and boundary vector cells (distance-dependent field widths) is well-supported. The comparison to object-vector cells is reasonable given similar percentages and properties, though the relationship requires further investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "The introduction establishes the context of path integration, grid cells, error accumulation, and the role of spatial cues in navigation, drawing from established literature and prior research.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C10-C28 accurately summarize established knowledge and prior research through appropriate citations. These provide the scientific context and motivation for studying cue-responsive cells in MEC.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C85",
+      "C89",
+      "C90"
+    ],
+    "result": "The discussion contextualizes cue cells within the framework of grid cell modules, attractor dynamics, and mixed selectivity in neural coding, drawing on theoretical and experimental literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C80, C85, C89-C90 appropriately cite and summarize relevant theoretical frameworks and prior findings. These provide context for interpreting the functional significance of cue cells.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C87",
+      "C88"
+    ],
+    "result": "Cue scores form a continuum, and a significant fraction of MEC cells are conjunctive for more than one cell class, consistent with mixed selectivity observed in other brain systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C88 are supported by the data shown in Figure 3, which demonstrates continuous distributions of scores and overlap between cell types. This observation is appropriately contextualized within the broader framework of mixed selectivity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "The methods describe the experimental design, including virtual reality setup, animal subjects, and recording techniques using tetrodes and two-photon calcium imaging in MEC layers 2 and 3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C33, C91-C94 provide methodological details that are clearly described and appropriate for the experiments conducted. The use of multiple recording techniques (tetrodes and calcium imaging) and proper ethical approvals strengthen the experimental approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C73"
+    ],
+    "result": "The discussion references properties of place cells, boundary vector cells, and object-vector cells from prior literature to contextualize the novel findings about cue cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C70, C73 appropriately cite prior research to establish comparisons with other spatially-modulated cell types. These comparisons help define the unique properties of cue cells.",
+    "result_type": "MINOR"
+  }
+]

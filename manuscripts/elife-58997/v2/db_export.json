@@ -1,0 +1,2101 @@
+{
+  "submission": {
+    "id": "0e605b34-a7b6-463c-a032-5aba67eedc57",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T20:21:48.113786Z",
+    "updated_at": "2025-12-02T20:21:48.113786Z"
+  },
+  "content": [
+    {
+      "id": "2084b190-a1fc-46a8-8457-96cbdf66972d",
+      "submission_id": "0e605b34-a7b6-463c-a032-5aba67eedc57",
+      "content_type": "manuscript",
+      "content_text": "# Pathway-specific dysregulation of striatal excitatory synapses by LRRK2 mutations\n\n## Authors\n\n- Chuyu Chen<sup>1</sup> ([ORCID: 0000-0001-5666-5173](https://orcid.org/0000-0001-5666-5173))\n- Giulia Soto<sup>2</sup>\n- Vasin Dumrongprechachan<sup>2</sup> ([ORCID: 0000-0001-5890-6778](https://orcid.org/0000-0001-5890-6778))\n- Nicholas Bannon<sup>2</sup>\n- Shuo Kang<sup>1</sup>\n- Yevgenia Kozorovitskiy<sup>2</sup> ([ORCID: 0000-0002-3710-1484](https://orcid.org/0000-0002-3710-1484)) \u2020\n- Loukia Parisiadou<sup>1</sup> ([ORCID: 0000-0002-2569-4200](https://orcid.org/0000-0002-2569-4200)) \u2020\n\n### Affiliations\n\n1. Department of Pharmacology, Feinberg School of Medicine, Northwestern University Chicago United States\n2. Department of Neurobiology, Northwestern University Chicago United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nLRRK2 is a kinase expressed in striatal spiny projection neurons (SPNs), cells which lose dopaminergic input in Parkinson\u2019s disease (PD). R1441C and G2019S are the most common pathogenic mutations of LRRK2. How these mutations alter the structure and function of individual synapses on direct and indirect pathway SPNs is unknown and may reveal pre-clinical changes in dopamine-recipient neurons that predispose toward disease. Here, R1441C and G2019S knock-in mice enabled thorough evaluation of dendritic spines and synapses on pathway-identified SPNs. Biochemical synaptic preparations and super-resolution imaging revealed increased levels and altered organization of glutamatergic AMPA receptors in LRRK2 mutants. Relatedly, decreased frequency of miniature excitatory post-synaptic currents accompanied changes in dendritic spine nano-architecture, and single-synapse currents, evaluated using two-photon glutamate uncaging. Overall, LRRK2 mutations reshaped synaptic structure and function, an effect exaggerated in R1441C dSPNs. These data open the possibility of new neuroprotective therapies aimed at SPN synapse function, prior to disease onset.\n\n## Introduction\n\nGain-of-function mutations in the leucine-rich repeat kinase 2 (LRRK2) gene represent the most common cause of familial Parkinson\u2019s disease\u00a0(PD) (Alessi and Sammler, 2018). Carriers are at risk for late onset PD, which is clinically indistinguishable from sporadic PD, consistent with a possibility of common disease mechanisms (Kluss et al., 2019; Italian Parkinson's Genetics Network et al., 2006; Haugarvoll et al., 2008; Di Maio et al., 2018). LRRK2 gene product is a large multi-domain protein with two catalytic domains: a GTPase (ROC-COR) domain and a serine/threonine-directed protein kinase domain. Pathogenic mutations are found predominantly in these two domains, suggesting that LRRK2 enzymatic activities are involved in PD pathogenesis (Cookson, 2010), (Esteves et al., 2014). Yet, how LRRK2 mutations in the two distinct functional domains contribute to PD pathogenesis and whether they act through a common mechanism is unknown. Enhanced LRRK2 kinase activity conferred by the G2019S (GS) mutation in the kinase domain is the most extensively studied property of mutant LRRK2 (Cookson, 2010), (Steger et al., 2016). Meanwhile, the R1441C (RC) substitution in the GTPase domain results in impaired GTP hydrolysis, which is thought to indirectly enhance kinase activity through mechanisms that remain to be determined (Nguyen and Moore, 2017), (Xiong et al., 2010).\n\nDespite remaining questions, the last decade marks extensive progress in our understanding of LRRK2 function. This kinase is highly expressed in the spiny projection neurons (SPNs) of the striatum (Nguyen and Moore, 2017; West et al., 2014; Parisiadou et al., 2014). LRRK2 expression peaks in a developmental time window of extensive glutamatergic excitatory synapse formation, suggesting that LRRK2 may regulate the development or function of excitatory synaptic networks. Consistently, several lines of evidence suggest that loss of LRRK2 alters striatal circuits during postnatal development (Parisiadou et al., 2014), and the GS pathogenic mutation increases glutamatergic activity in cultured cortical neurons (Beccano-Kelly et al., 2015) as well as in acute striatal slices (Matikainen-Ankney et al., 2016), (Volta et al., 2017). Recent studies assign a critical role of LRRK2 in presynaptic terminal vesicle function (Pan et al., 2017). Here, the GS mutation impairs presynaptic glutamatergic release, suggested to underlie changes in glutamatergic activity of striatal neurons (Volta et al., 2017). The potential postsynaptic function of LRRK2 remains less well-characterized. We have previously shown that the RC mutation impedes normal striatal protein kinase A (PKA) signaling, which in turn results in increased GluA1 phosphorylation in developing SPNs, consistent with a postsynaptic mechanism of action (Parisiadou et al., 2014). Similarly, glutamate receptor trafficking perturbations were observed in GS knock-in (KI) mice in response to plasticity induction protocols (Matikainen-Ankney et al., 2018). Furthermore, although an increase in spontaneous excitatory postsynaptic currents has been reported for the dorsomedial striatum, a recent report failed to show this phenotype for the ventral striatum (Huntley, 2020), despite LRRK2 expression in that region (West et al., 2014), (Giesert et al., 2013). These observations suggest that LRRK2 mutations may shape the corticostriatal synaptic function in a synapse-, cell- and area-specific manner. Overall, despite the links between LRRK2 and glutamatergic synapse dysfunction, the field currently lacks a coherent framework for understanding how the two distinct LRRK2 mutations selectively alter synaptic function in specific cell types.\n\nGiven the complementary role of direct and indirect striatal pathways in behavior (Kravitz et al., 2010; Fieblinger et al., 2014; Kozorovitskiy et al., 2012) the lack of pathway specificity in prior studies limits our understanding of disease related mechanisms associated with LRRK2 mutations. Previous studies did not compare the dysfunction of two LRRK2 mutations which are found in distinct LRRK2 domains and confer divergent biochemical properties to the kinase, choosing instead to focus on the one mutation or the other. Earlier reports have mainly focused on the GS pathogenic mutation, and whether the molecular mechanisms underlying pathology across the two most common mutations remain unknown. In addition, the phenotype of LRRK2 mutant models is subtle and corresponds to a moderate susceptibility for PD. Therefore, refined tools are required to distinguish the early pre-pathology functional abnormalities. We have taken the approach of combining molecular, anatomical and electrophysiological approaches that capture global aspects of LRRK2 function in the striatum, but also single synapse-specific effects, in case abnormalities are associated with specific synapse subtypes.\n\nHere, we undertook a systematic synapse function and structure analysis in two different mutant LRRK2 mouse lines to evaluate the contribution of this kinase mutations to SPN synapses across direct and indirect pathways. Using a combination of subcellular fractionation biochemistry, super-resolution imaging, and two-photon laser scanning microscopy with whole-cell physiology approaches, we found a critical role for LRRK2 RC, and to a lesser extent GS mutation, in organizing the structure and function of the SPN excitatory synapses, particularly for dSPNs.\n\n## Results\n\n### LRRK2 +/RC mutation leads to increased synaptic incorporation of GluA1 in the striatum\n\nIn order to resolve LRRK2 mediated synaptic alterations in identified SPNs in a systematic way, we crossed the pathway-specific reporter BAC transgenic mice (Tozzi et al., 2018a) with two mutant LRRK2 KI mouse lines. Specifically, Drd1-Tomato and Drd2-eGFP reporter mice were crossed with each of the two mutant LRRK2 lines (RC and GS) (Figure 1A). This platform enabled pathway-specific interrogation of each LRRK2 mutation side by side, as well as initial experiments described below that were done on aggregated SPN populations. Our previous findings showed that RC KI neurons displayed altered PKARII\u03b2 localization, as compared to wild-type (+/+) neurons, suggesting altered synaptic PKA activity in SPNs (Parisiadou et al., 2014). To further explore the synaptic PKA signaling in both KI mouse lines, we employed differential centrifugation, discontinuous sucrose gradient, and detergent extractions to isolate synaptic subcellular fractions from striatal extracts as shown in Figure 1B (Parisiadou et al., 2014), (Bermejo et al., 2014; Peng et al., 2004). Consistent with our previous data, PKA activity was found elevated in the P2 crude synaptosomal preparation of +/RC but not +/GS striatal extracts, when phospho-PKA substrate antibody was used to detect phosphorylation of downstream PKA targets. The increased PKA activity in +/RC was further confirmed by an increase in phosphorylation of GluA1, a key downstream target of PKA. To directly evaluate LRRK2 function, we examined the phosphorylation of two known targets of this kinase, Rab8A and Rab10. Phosphorylation of both targets was selectively increased in the synaptic fraction (P2) of the RC striatal extracts (Figure 1D). Notably, while Rab8A is a known physiological target of LRRK2 kinase activity (Steger et al., 2016), (Bonet-Ponce and Cookson, 2019), it was unclear whether this is the case in the striatum, since only low levels of Rab8A transcripts are found in dSPNs and iSPNs at the single-cell level (dropviz.org) (Saunders et al., 2018). Our finding stands in accordance with two recent studies in cell lines, showing that the RC and other mutations found in the GTPase domain of LRRK2 result in greater increase kinase activity, compared to the GS mutation (Purlyte et al., 2018; Liu et al., 2018). We further isolated the post-synaptic density (PSD) fraction from the P2 preparation by using a detergent extraction step. The PSD fraction showed enrichment of the postsynaptic marker PSD95, but not presynaptic protein synaptophysin (svp38) (Figure 1C). Given that PKA mediated phosphorylation of S845 in GluA1 has a significant impact on synaptic trafficking of GluA1 (Parisiadou et al., 2014), (Roche et al., 1996), we examined the levels of GluA1 in the PSD fractions of KI mice. We observed a significant increase in the GluA1 levels in the PSD fraction from +/RC, but not +/GS mice, compared to wild-type control (+/RC: 47% increase of control; +/GS: 19% increase relative to control, one-way ANOVA p=0.0397, post-hoc tests as noted, n\u00a0=\u00a06 per group) (Figure 1E,F), which was paralleled by elevated PKA activity specifically in the PSD fractions in +/RC (+/RC, 167% of control, one-way ANOVA p=0.0486, post-hoc tests as noted, n\u00a0=\u00a06) but not +/GS mice (+/GS, 118% of control, n\u00a0=\u00a06) (Figure 1E,G). Next, we determined the relative levels of PSD-95 protein in the PSD fraction across genotypes, which was used in the ratios in Figure 1F,G. We run subcellular fractions of all genotypes on the same blot (Figure 1\u2014figure supplement 1A,B), and normalized PSD95 to another synaptic protein, Homer1. PSD95 band intensities across fractions and genotypes showed no difference. Furthermore, PSD95 band intensities in each of S1, P2, and PSD fractions were expressed as percentage of the PSD95 intensity of the wild type in each fraction (Figure 1\u2014figure supplement 1C). Similarly, no differences in PSD95 levels in mutant LRRK2 fractions were observed after one-way ANOVA. Overall, our data show increased GluA1 levels in the PSD fractions of +/RC striatal extracts, which parallels enhanced synaptic PKA signaling.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/58997/elife-58997-fig1-v2.jpg)\n\n**Figure 1.:** (A) Schematic diagram of LRRK2 protein highlighting the armadillo repeats (ARM), ankyrin (ANK) repeats, Ras of complex (ROC), C-terminal of ROC (COR), kin (KIN), and WD40 domains. Knock- in mice expressing the R1441C and G2019S mutations found in the ROC and kinase domains respectively, crossed with either Drd1-Tomato or Drd2-eGFP mouse lines. (B) Workflow schematic for subcellular fractionation of striatal homogenate for the enrichment of postsynaptic density fraction (PSD). (C)\u00a0Representative western blot analysis of the subcellular fractionation results, showing supernatant (S1), crude synaptosomal preparation (P2), PSD, and Triton soluble fractions (TSF). (D) Western blot analysis of +/+, +/RC, and +/GS P2 striatal fractions probed for p-PKA substrates, pS845 GluA1, total GluA1, pT72Rab8A, total Rab8A, pT73Rab10, total Rab10, and PSD95. (E) Western blot analysis of +/+, +/RC, and +/GS mice probed for GluA1, p-PKA, and PSD95. S1 and PSD fractions are shown. (F-G) Quantification of GluA1 and p-PKA proteins in PSD fractions normalized to PSD95. Summary graphs reflect the mean, error bars reflect SEM. *p<0.05, Tukey post-hoc test following one-way ANOVA.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/58997/elife-58997-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A\u2013B)\u00a0Supernatant (S1), crude synaptosomal preparation (P2), PSD, and Triton soluble fractions (TSF) of wild type, +/RC and +/GS striata were run on the same blot. Ponceau staining shows similar loading across genotypes at a given fraction. Western blot analysis of the fractions described in A, probed for PSD95 and Homer-1. (C) Quantification of PSD95 band intensities normalized to Homer-1. Summary graphs represent the mean, while error bars SEM. (D) Quantification of PSD95 band intensities expressed as a fraction of the intensity of PSD95 wild type in each one of the S1, P2, and PSD fractions.\n\n### Altered nanoscale organization in the dendritic spines of direct and indirect pathway mutant LRRK2 SPNs\n\nTo precisely examine the nanoscale organization of GluA1 receptors in the dendritic spines of identified SPNs in mutant LRRK2 mice, we used structured illumination microscopy (SIM). SIM is able to overcome the resolution limits of conventional microscopy, and recently revealed a high degree of organization among scaffold proteins and AMPA receptors, forming nanoscale subsynaptic domains (Gao et al., 2018; Crosby et al., 2019; Smith et al., 2014). Primary cultured striatal neurons from Drd1-dTomato or Drd2-eGFP mice crossed with either +/RC or +/GS mouse lines (Figure 2A), were immunostained for GluA1 and PSD95 (Figure 2B, and Figure 3A\u2013B, Figure 2\u2014video 1). We found several lines of evidence demonstrating increased synaptic incorporation of GluA1 in +/RC dSPNs, compared to +/+ ones. Specifically, the distance between GluA1 and PSD95 was smaller in +/RC dSPNs compared to control dSPNs, while no difference was observed between +/GS and +/+ neurons (+/RC, 63% of control, +/GS 85% of control one-way ANOVA, p=0.0208, post-hoc tests as noted, n\u00a0=\u00a075\u201393 dendritic spines/genotype) (Figure 2C\u2013D). Similarly, the +/RC dendritic spines showed the greatest shift in cumulative distribution for minimum distance between GluA1 and PSD95 nanodomains (Figure 2E). While the overlap area of GluA1 and PSD95 nanodomains was found elevated in the dendritic spines of +/RC dSPNs, no differences were observed in +/GS neurons, compared to +/+ neurons (+/RC, 137% of control, +/GS, 102% of control one-way ANOVA p=0.0215, post hoc tests as noted, n\u00a0=\u00a075\u201393 dendritic spines/genotype) (Figure 2F). Similarly, the cumulative distribution analysis showed that GluA1-PSD95 distance was shifted towards higher values in the +/RC dSPNs (Figure 2G).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/58997/elife-58997-fig2-v2.jpg)\n\n**Figure 2.:** (A) Schematic depicting experimental design. (B) Structured Illumination super-resolution microscopy (SIM) image of dendritic spines on +/+, +/RC, and +/GS Drd1-Tomato expressing SPNs, labeled with antibodies to GluA1 (purple), and PSD95 (green). Open arrowheads, GluA1 nanodomains; arrowheads, PSD95 nanodomains. (C) Schematic diagram and object masks depicting GluA1, PSD95, and overlap nanodomains within a dendritic spine. Minimum distance between GluA1-PSD95 is measured from the closest edge of the two nanodomains, as shown. (D, E) Summary graphs and cumulative distribution of the minimum distance between GluA1 and PSD95 nanodomains. (F, G) Summary data and cumulative frequency for the overlap area of GluA1 and PSD95 nanodomains within dendritic spines. Asterisk in D and F reflect statistical significance for Tukey\u2019s multiple comparison tests after one-way ANOVA, whereas asterisks in E and G show statistical significance for Bonferroni post-hoc comparisons after Kolmogorov-Smirnov tests. (H) Bar graphs showing the ratio of GluA1-PSD95 overlap area in E relative to PSD95 area, across genotypes. Data are represented as mean\u00a0\u00b1\u00a0SEM. (I-K) Correlation plots of overlap in GluA1-PSD95 area versus PSD95 area for +/+, +/RC, and +/GS Drd1-Tomato expressing SPNs. *p<0.05, **p<0.01, ***p<0.001.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/58997/elife-58997-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A)\u00a0Summary graph, PSD95 area across genotypes of dSPNs. Error bars reflect SEM. (B) Cumulative percentage of PSD95 area per dendritic spine across dSPN genotypes. (C)\u00a0Summary graph, PSD95 area across genotypes of iSPNs. Error bars reflect SEM; asterisks, Tukey post-hoc comparisons after one-way ANOVA, +/+ vs. +/GS p<0.001 (D) Cumulative percentage of PSD95 areas per dendritic spine across iSPN genotypes.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/58997/elife-58997-fig3-v2.jpg)\n\n**Figure 3.:** (A) SIM image of +/+, +/RC, and +/GS Drd2-eGFP expressing SPNs immunostained with GluA1 (purple), and PSD95 (orange). Open arrowheads, GluA1 nanodomains; arrowheads, PSD95 nanodomains. GFP antibody was used to amplify the Drd2-eGFP signal. (B) Surface intensity through a dendritic spine head in an RC iSPN. (C) Schematic diagram and object masks depicting GluA1, PSD95, overlap nanodomains, and minimum distance between nanodomains within a dendritic spine head. (D) Bar graphs showing the minimum distance between GluA1 and PSD95 nanodomains. (E) Cumulative distribution of data shown in D. (F, G) Summary data and cumulative distribution of the overlap area between GluA1 and PSD95 nanodomains in dendritic spine heads across genotypes. Asterisks in F show statistical significance for Tukey\u2019s multiple comparison tests after one-way ANOVA; asterisks in G reflect statistical significance for Bonferroni post-hoc comparisons after Kolmogorov-Smirnov tests. (H) The ratio of overlap area between GluA1 and PSD95 to the PSD95 area for +/+, +/RC, and +/GS iSPNs. (I-K) Correlation plots of overlap areas versus PSD95 area for iSPNs across genotypes. *p<0.05, **p<0.01, ***p<0.001.\n\nGiven that the PSD95 area in +/GS dSPNs showed a trend towards decrease (+/RC, 94% of control, +/GS, 83% of control, one-way ANOVA p=0.0904, post-hoc +/+ vs +/GS p=0.075) (Figure 2\u2014figure supplement 1A,B), we evaluated the percentage of the GluA1-PSD95 overlap relative to the total PSD95 area across genotypes. 32% of total PSD95 area contained GluA1 in +/RC dSPNs, compared to 23% in +/+ neurons, and 26% in +/GS neurons (one-way ANOVA p=0.0015, post hoc tests as noted) (Figure 2H). These data strongly suggest increased levels of GluA1 at the synapses of +/RC dSPNs. Correlation analysis was performed to investigate the association between GluA1-PSD95 overlap nanodomain area and PSD95 area. A positive correlation was observed in all three genotypes (control, Spearman r\u00a0=\u00a00.5822, p-value<0.0001, +/RC, r\u00a0=\u00a00.6522, p<0.0001 and +/GS r\u00a0=\u00a00.6569, p-value<0.0001). The correlation was stronger in LRRK2 mutant SPNs (Figure 2I\u2013K).\n\nA similar synaptic nanoscale organization analysis was performed for Drd2-eGFP control and mutant LRRK2 SPNs. The neurons were immunostained with GluA1 (purple), and PSD95 (orange) (Figure 3A\u2013B) and minimum distance summary data (+/RC, 87% of control, +/GS, 89% of control, one-way ANOVA, p=0.6435 n\u00a0=\u00a072\u201388 dendritic spines/genotype), as well as cumulative distribution of the distance between the GluA1 and PSD95 nanodomains, showed no difference across genotypes (Figure 3C\u2013D,E). We observed that the overlap GluA1 and PSD95 area was increased in +/GS SPNs (+/RC, 105% of control, +/GS, 155% of control, one-way ANOVA, p<0.0001; post hoc tests as noted, p=72\u201388 dendritic spines/genotype) (Figure 3F). Further analysis showed an increase in the mean PSD95 area in the +/GS neurons (+/RC, 123% of control, +/GS, 137% of control, one-way ANOVA, p=0.0008, post hoc tests as noted) (Figure 2\u2014figure supplement 1C), as well as in cumulative frequency (Figure 2\u2014figure supplement 1D). However, the percentage of the total PSD95 area containing GluA1 nanodomains +/GS iSPNs compared to controls was similar (one-way ANOVA, p=0.469) (Figure 3H). Thus, the increased size of GluA1-PSD95 overlapping domains in the +/GS iSPNs reflects the elevated PSD95 area of these neurons (Figure 2\u2014figure supplement 1C-D), and not synaptic GluA1 incorporation, as found in +/RC.\n\nWe aimed to further investigate the relationship between overlapping nanodomains size and PSD95 area in the iSPNs dendritic spines. In general, PSD95 area correlated with the overlap GluA1-PSD95 domain size in all genotypes (control, Spearman r\u00a0=\u00a00.7817, p<0.0001, +/RC, r\u00a0=\u00a00.4040, p=0.0003 and +/GS, r\u00a0=\u00a00.7349, p<0.0001) (Figure 3I\u2013K). Based on Figure 2I, we found that for larger PSD95 domains, mutant LRRK2 dSPNs show a tendency towards larger overlap between GluA1 and PSD95. However, this was not the case for iSPNs of +/RC genotype. In fact, in +/RC iSPNs, some high overlap GluA1-PSD95 domains were characterized by smaller PSD95 areas. This detailed high-resolution imaging analysis points to different GluA1 subsynaptic distribution in the iSPNs of +/RC SPNs, compared to +/+ and +/GS. Taken together, these single synapse imaging findings in pathway identified SPNs demonstrate an increased number of GluA1 receptors in the synapses of +/RC dSPNs, pointing toward cell type and mutant-specific LRRK2 functions. These observations suggest highly specific and likely regulated nanoscale organization of GluA1 receptors in SPN dendritic spines.\n\n### Pathway-specific functional alterations in the synapses of R1441C and G2019S SPNs\n\nSince the effects of LRRK2 mutations appear to alter excitatory synapse subunits, next we carried out recordings of pharmacologically isolated miniature excitatory post-synaptic currents (mEPSCs) in acute brain slices from mice of the three genotypes. SPN pathway identity was determined based on the presence or absence of Drd2-eGFP (Kozorovitskiy et al., 2015). Neurons were held at \u221270 mV in voltage clamp, and pharmacologically isolated mEPSCs were recorded in the presence of tetrodotoxin (TTX). For dSPNs, the mean frequency of mEPSCs, averaged within each neuron, was decreased relative to controls for both LRRK2 mutations (GFP-, RC 60% of control, GS, 47% of control; two-way ANOVA, genotype main effect, p<0.001, post-hoc tests as noted) (Figure 4A\u2013B). For iSPNs, lower mean frequency of mEPSCs, averaged within each neuron, was observed in both RC and GS neurons (GFP-, RC 60% of control, GS, 52% of control; two-way ANOVA, genotype main effect, p<0.001, post-hoc tests as noted). In contrast to the mean frequency of mEPSCs, no significant differences in the mean within-cell response amplitude were observed across all six genotype/cell type combinations on post-hoc comparisons, despite a modest main effect of genotype (GFP-, RC 107% of control, GS, 92% of control; GFP+, RC 108% of control, GS 94% of control; two-way ANOVA, genotype main effect, p=0.041, N\u00a0=\u00a013\u201314 neurons/group) (Figure 4C). To evaluate the distribution of individual mEPSC features across genotypes, rather than within-neuron averages, we computed cumulative distributions of inter-event intervals (IEIs) and mEPSC amplitudes, along with histograms of response amplitudes (Figure 4D\u2013E). Amplitude data were fitted with a gamma distribution, a non-negative asymmetrical distribution, because the mEPSC amplitudes were not normally or lognormally distributed (Figure 4, Figure 4\u2014figure supplement 1A), failing D'Agostino and Pearson, Shapiro-Wilk, and KS normality tests, p<0.0001, for raw and log-transformed data. Skew and kurtosis across the 6 datasets were 2.19\u00a0\u00b1\u00a00.16 and 6.34\u00a0\u00b1\u00a00.1, respectively, appropriate the gamma distribution. Akaike information criterion (AIC) values as goodness-of-fit criteria confirmed superior fit of gamma family distribution over Gaussian. To compare the distributions of mEPSC amplitudes, we estimated mEPSC amplitude means across different genotypes for GFP- and GFP+ cell types using generalized linear modeling (GLM) with a gamma family distribution. mEPSC amplitudes in RC dSPNs were shifted toward larger events, and smaller events in GS dSPNs, with no differences in iSPNs (dSPNs, Bonferroni post-hoc comparisons, p<0.0001; iSPNs, p>0.7) (Figure 4, Figure 4\u2014figure supplement 1B).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/58997/elife-58997-fig4-v2.jpg)\n\n**Figure 4.:** (A) Example miniature excitatory postsynaptic current (mEPSC) traces from individual neurons of six genotype-pathway combinations. GFP-, dSPNs; GFP+, iSPNs; color, as defined in the figure. Scale bars, 10 pA and 2.5 s. (B)\u00a0Summary graph showing the frequency of pharmacologically isolated mEPSCs, in GFP- and GFP+ SPNs in controls, compared to both RC and GS mutations. Asterisks reflect statistical significance for Bonferroni post hoc comparisons after two-way ANOVA. (C) Same as B, but for mEPSC amplitude. (D) Left, cumulative distribution of inter-event intervals (IEI) for mEPSCs across genotypes for GFP- SPNs. Right, same as left, but for GFP+ SPNs. (E) Binned histograms and cumulative distribution of mEPSC amplitude data. X axis starts at 5 pA, reflecting the amplitude threshold for mEPSC identification. *p<0.05, **p<0.01.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/58997/elife-58997-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Left, gamma curve fits to density histogram of mEPSC amplitudes by genotype and cell type (bin width, 1 pA). Gamma AIC for GFP- controls +/+, +/RC, and +/GS was 11813, 7721, and 4920. Gamma AIC for GFP+ controls +/+, +/RC, and +/GS was 9477, 6825, and 4881. Right, overlaid gamma curve fits by genotype and cell type. (B) Amplitudes estimates from GLM using the gamma family of curves, 95% confidence intervals in blue. Bonferroni corrected post-hoc pairwise comparisons, GPF- neurons, ***p<0.0001 for all comparisons; GFP+ neurons, p>0.7.\n\n### Overall dendritic spine density and morphology is conserved in mutant LRRK2 SPNs\n\nTo investigate whether the observed decrease in the mEPSC frequency was associated with global changes in dendritic spine number and morphology, we relied on identifying pathway-specific SPNs by injecting a Cre-dependent adeno-associated virus (AAV) expressing eGFP virus (AAV8/Flex-GFP) in the striatum of neonatal pups. Drd1-Cre and Adora2a-Cre mice were crossed with +/RC and +/GS mice, as well as controls (Figure 5A, Figure 5\u2014video 1). We then analyzed dendritic fragments of d- and iSPNs to determine dendritic spine density, spine head width, and spine length. No differences in any of these parameters were observed for all six genotype/cell type combinations (two-way ANOVA, n\u00a0=\u00a09\u201312 SPNs from 3 to 4 mice/genotype) (Figure 5B\u2013E). Further dendritic spine classification showed no difference in dendritic spine type in SPNs of either pathway (two-way ANOVA, n\u00a0=\u00a09\u201314 SPNs for 3\u20134 mice/genotype) (Figure 5F). Overall, these data suggest that the functional synaptic alterations (Figure 4) observed in +/RC and +/GS mutant SPNs are not reflected in uniform changes in dendritic spine number or morphology.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/58997/elife-58997-fig5-v2.jpg)\n\n**Figure 5.:** (A) Example confocal maximum projection image of a +/RC;Adora2a-Cre iSPN expressing AAV8/Flex-GFP. Representative dendritic fragment with dendritic spines and the corresponding 3D Imaris generated filament. (B) Summary graph showing the dendritic spine density in pathway-identified SPNs across genotypes. Quantification of dendritic spine head width (C), and dendritic spine length (D) in d- and iSPNs. (E) Confocal maximum projection image and the corresponding 3D Imaris generated filament with classified dendritic spines. Red, stubby; green, mushroom; purple, filopodia. (F) Left, summary data showing the density of each dendritic spine category in dSPNs. Right, same as left, but for iSPNs.\n\n### Enhanced single synapse glutamate uncaging-evoked currents in dSPNs of LRRK2 R1441C mutant SPNs\n\nOur results indicate that the abundance of GluA1 subunits is selectively increased in dendritic spines of +/RC dSPNs, along with synaptic AMPAR presence and the prevalence of larger amplitude mEPSCs. This is consistent with a possibility that a specific fraction of +/RC excitatory synapses are functionally stronger. In order to evaluate the physiology of single dendritic spines in pathway-identified SPNs across three genotypes, we used two-photon dual laser glutamate uncaging and imaging, combined with whole-cell electrophysiology in voltage clamp mode (Figure 6A). Drd2-eGFP mice were crossed into G2019S and R1441C KI lines, and maintained on a WT background for control groups. SPNs were filled with a cesium-based internal and Alexa 594 for imaging dendrites and dendritic spines at\u00a0~910 nm (Figure 6B\u2013C); the presence or absence of GFP labeling was used to assign pathway identity. Uncaging evoked EPSCs (uEPSCs) were elicited using 0.5 ms long pulses of 725 nm laser light, directed near dendritic spines (~0.5\u20131 \u00b5m away), in order to drive focal uncaging of MNI-glutamate. Locations of peak responses, sampled for three sites near each dendritic spine, were chosen for data acquisition for every synapse. Recordings were carried out in the presence of blockers of GABAARs, NMDARs, muscarinic receptors, and sodium channels, for isolation of single synapse AMPAR responses. We found that single spine glutamate uEPSCs were increased in amplitude selectively in dSPNs of RC genotype mice (GFP-, +/RC 196% of control, GS, 102% of control; one-way ANOVA, p<0.05, post hoc tests, as noted; n\u00a0=\u00a018\u201328 dendritic spines/group) (Figure 6D\u2013F). For Drd2-eGFP+ SPNs (iSPNs), no uEPSC amplitude differences were observed (GFP+, RC 70% of control, GS, 80% of control; one-way ANOVA, p=0.1682; n\u00a0=\u00a021\u201365 dendritic spines/group), suggesting a pathway-specific effect on single synapse function in the RC genotype.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/58997/elife-58997-fig6-v2.jpg)\n\n**Figure 6.:** (A) Schematic illustrating experimental design. (B) Example projection of a two-photon laser scanning microscopy stack showing an +/RC; GFP+ SPN (iSPN). Scale bar, 20 \u00b5m. (C) Close up images of representative dendrites from SPNs in the six genotype-pathway combinations, shown using inverse greyscale LUT. (D) Example single synapse AMPA-receptor-mediated currents, evoked by focal uncaging of MNI-glutamate. Scale bar, 20 pA and 100 ms. (E) Summary graph showing uncaging-evoked EPSCs (uEPSCs) for GFP-SPNs in controls, RC, and GS mutants. Asterisks reflect statistical significance for Tukey post-hoc comparisons after one-way ANOVA. (F) Same as E, but for GFP+ SPNs. (G) Summary schematic for the study, illustrating changes in synaptic content of glutamate receptors in LRRK2 mutations.\n\n## Discussion\n\nIn the present study, we characterized synaptic dysfunctions caused by mutant LRRK2 (RC and GS) in pathway-identified SPNs. To our knowledge, this is the first comparative approach focusing on more than one PD related LRRK2 mutation and employing both global and single synapse approaches for the study of LRRK2 driven striatal remodeling. By studying RC and GS KI mouse lines side by side, we were able to demonstrate that the two most common LRRK2 gain-of-function pathogenic mutations (Hernandez et al., 2016) alter the function of SPN excitatory synapses in largely similar ways, with several potentially important differences. The observed changes were frequently stronger for the RC mutations, and more exaggerated in the direct pathway. For example, while whole cell electrophysiology recordings revealed decreases in the mESPCs frequency across both +/RC and +/GS mice, two-photon dual laser glutamate uncaging and imaging, combined with whole-cell electrophysiology, demonstrated larger amplitude in uEPSCs selectively for +/RC dSPNs. This observation paralleled higher synaptic GluA1 receptors levels in the same subtype +/RC SPNs (Figure 6G).\n\nBased on the current knowledge, it remains unclear why the RC mutation is associated with somewhat more pronounced effects on sculpting striatal synapses. The GS mutation, which has been the main focus of the current literature, is found in the kinase domain of LRRK2, whereas the RC mutation is located in the GTPase domain of the protein (Pais\u00e1n-Ruiz et al., 2013), (Cookson, 2012). It has been previously proposed that all pathogenic mutations lead to increased LRRK2 kinase activity, although the mechanism by which RC does this still remains unclear (Alessi and Sammler, 2018; Nguyen and Moore, 2017). Moreover, it is not known whether aberrant LRRK2 substrate phosphorylation is the predominant pathogenic mechanism in LRRK2 mediated striatal changes. Recent findings have revealed a subset of Rab family of proteins as the long awaited bona fide LRRK2 substrates (Steger et al., 2016). Notably, the RC mutation, mainly in the context of heterologous cell lines, leads to higher increase in Rab phosphorylation compared to the GS mutation, which is localized to the kinase domain (Liu et al., 2018), (Purlyte et al., 2018). Similarly, the evidence of increased synaptic PKA activities was observed in +/RC and not +/GS striatal synaptic fractions. This increased PKA activity in the RC synapses is expected to positively correlate with elevations in dSPNs signaling (Zhai et al., 2019). Specifically, phosphorylation of GluA1 at Ser 845 by PKA facilitates the targeting of the receptors to extrasynaptic membranes and their \u2018priming\u2019 for synaptic insertion and this results in elevated GluA1 synaptic incorporation (Diering and Huganir, 2018). Indeed, our biochemical and SIM imaging data in RC mice support this notion. In contrast to dSPNs, PKA-driven signaling requirements for iSPNs are more complex, due to the involvement of adenosine. This molecule can be released by neurons or glia (Surmeier et al., 2007), (Zhang et al., 2019), complicating predictions for PKA involvement in mutant LRRK2 function in iSPNs.\n\nSeveral prior reports demonstrate a LRRK2 mediated presynaptic regulation of glutamatergic transmission (Matikainen-Ankney et al., 2016; Volta et al., 2017; Beccano-Kelly et al., 2015; Piccoli et al., 2011), while emerging evidence emphasizes a postsynaptic role for LRRK2\u00a0(Parisiadou et al., 2014; Matikainen-Ankney et al., 2016). Our previous and current findings showed that LRRK2 contributes to glutamatergic synaptic functions by directing PKA signaling events in SPNs, leading to altered GluA1 synaptic incorporation in the striatum of RC mice (Parisiadou et al., 2014). Despite the elevated GluA1 levels in the synapses of +/RC dSPNs, there were no alterations in mean mEPSCs amplitude in these neurons. However, cumulative probability analysis demonstrated that the amplitude shifted toward larger values in the +/RC dSPNs, suggesting an inhomogeneity of synaptic function, where a fraction of synapses exhibit larger GluA1-dependent responses and single-synapse uncaging-evoked EPSCs. This scenario, on top of overall dampening of mEPSC frequency, is expected to bias mutant dSPN responses to be driven by a narrower set of glutamatergic inputs than is normally the case. Overtime, a small bias could be amplified through the recurrent circuitry of basal ganglia loops (Kozorovitskiy et al., 2012). While there are some differences in the age of preparation and in recording conditions, our consistent finding of substantial miniature EPSC frequency decreases for both mutations in pathway-identified SPNs are in disagreement with prior recordings of spontaneous events in the GS mutant mice. One recent report showed elevations in spontaneous EPSCs events frequency in GS KI mice at 1\u20133 months (Volta et al., 2017), while another reported changes in spontaneous but not miniature events with the GS mutation in pre-weaning mutants (Matikainen-Ankney et al., 2016), although recordings were primarily performed in a mixed population of direct and indirect pathway SPNs, and neither study thoroughly compared the two mutations. Such differences in spontaneous event frequency point to a potential circuit-level compensatory mechanism that may be driven by disturbances in a subset of SPN excitatory synapses. Surprisingly, in the presence of clear functional and nano-architecture abnormalities, aggregate dendritic spine density and morphology, at least at the ages we evaluated, appeared normal. One possible explanation for this mismatch that requires further investigation is the possibility of higher occurrence of nonfunctional or differently functioning spines in LRRK2 mutant SPNs.\n\nGiven the critical role of LRRK2 in excitatory glutamatergic synapses (Parisiadou et al., 2014; Volta et al., 2017; Matikainen-Ankney et al., 2016), a more nuanced understanding of LRRK2-mediated synaptic alterations should facilitate the search for more targeted PD therapies. Here, we focused primarily on interrogating cell type specific LRRK2-based responses. Why does this pathway specificity matter? It is well-established that dopamine loss causes pathway-specific morphological and functional changes in SPNs (Kravitz et al., 2010; Fieblinger et al., 2014; Gertler et al., 2008). Moreover, dSPNs and iSPNs exhibit opposing PKA pathway signaling properties after dopamine receptor activation (Gerfen and Surmeier, 2011; Surmeier et al., 2007). Given the critical role of LRRK2 in synaptic PKA activities (Parisiadou et al., 2014; Tozzi et al., 2018b), these mutations are poised to have pathway specific effects and present distinct opportunities for pathway-targeted therapies. Over the past years, a number of transgenic mouse models was generated to study LRRK2 function (Volta and Melrose, 2017; Xiong et al., 2017); however, the results were found to be inconsistent across studies. Gene-targeted mutant LRRK2 KI mice represent the most physiologically relevant model to investigate LRRK2 mediated alterations and unravel disease mechanisms. Here, we attempt to synthesize and further the existing knowledge by employing a comparative approach focusing on two distinct mutations, combined with a powerful suite of techniques allowing for both global and single synapse study of LRRK2 SPNs.\n\nThe clinical phenotypes that define PD arise after a substantial loss of nigrostriatal dopamine signaling. Thus, the identification of pre-symptomatic dysfunctions offers a potential window of opportunity for the development of neuroprotective therapies in PD. Human asymptomatic LRRK2 mutation carriers represent an appropriate population to define these preclinical symptoms. Indeed, emerging evidence suggests that asymptomatic LRRK2 mutation carriers do show subtle motor and non-motor symptoms, including alterations of corticostriatal circuit organization, in comparison to asymptomatic non-carriers (PPMI Investigators et al., 2020; LRRK2 Ashkenazi Jewish Consortium et al., 2015). Accordingly, cellular and synaptic dysfunctions in etiologically relevant LRRK2 mutant KI mice allow investigations of the early events that precede neuronal death and may be predictive of future dysfunction. Several studies have suggested a central role for LRRK2 in striatal SPNs (Volta et al., 2017), (Parisiadou et al., 2014; Xenias, 2020). Here, we show that the presence of LRRK2 mutations can influence SPN function in a pathway-specific context, in the absence of dopamine neurodegeneration. Examining PD-relevant cellular functions in the absence of DA depletion represents a move away from the classical ways of studying PD in small rodent models, where basal ganglia cellular and network properties have been examined using several methods for dopamine depletion (Gerfen and Surmeier, 2011; Kreitzer and Malenka, 2008). While there is evidence that at first iSPNs show the primary structural and functional synaptic and dendritic changes in response to dopamine loss (Gerfen, 2006; Gertler et al., 2008; Day et al., 2006; Villalba et al., 2009), with time both SPNs types undergo substantial adaptations (Suarez et al., 2018), (Gagnon et al., 2017). Here, we find that some early changes in LRRK2 mutant dSPNs \u2013 including those observed at the single synapse level \u2013 are poised to contribute to the fragility of the system to lower levels of DA loss/variation. Because the well-described recurrent circuitry of the basal ganglia (Kozorovitskiy et al., 2012), (Kravitz et al., 2010; Oldenburg and Sabatini, 2015) enables the output of direct and indirect pathways to feed back to regulate cortico-striatal glutamate release, minor synaptic defects in LRRK2 mutant SPNs could be amplified over time, contributing to the life-time risk of the disorder. The presence of early corticostriatal alterations in LRRK2 carriers (LRRK2 Ashkenazi Jewish Consortium et al., 2015; Vilas et al., 2015; the Barcelona LRRK2 Study Group et al., 2016), along with the evidence for finer scale synaptic dysfunctions reported in this study, open the possibilities for future personalized medicine approaches that take into account the specific LRRK2 mutation and emphasize protecting the health of striatal neurons prior to potential DA losses.\n\n## Materials and methods\n\n### Mouse strains and genotyping\n\nAll mouse related experiments followed the guidelines approved by the Northwestern University Animal Care and Use Committee. Young adult male and female mice (postnatal days 30\u201350) were used in this study. Approximately equal numbers of males and females were used for every experiment. All mice were group-housed, with standard feeding, light-dark cycle, and enrichment procedures. C57BL/6 (wild-type), RC (Tong et al., 2009), and GS (Yue et al., 2015) heterozygous knock in mice were used for subcellular fractionation experiments. For electrophysiological and imaging approaches RC or GS mice were crossed with Drd1-dTomato and/or Drd2-eGFP mice. Heterozygotes for RC and GS allele and hemizygotes for Drd1-dTomato and/or Drd2-eGFP were used in all experiments. For dendritic spine analysis, hemizygous Drd1-Cre, and Adora2a-Cre mice crossed with RC and GS KI mice were used. All animals were backcrossed to C57BL/6 for several generations.\n\n### Subcellular fractionation and western blot analysis\n\nSubcellular fractionation of mouse striatum was performed as previously described (Bermejo et al., 2014), (Parisiadou et al., 2014;\u00a0Figure 1B). Specifically, mouse striata were dissected (three striata per experiment were pooled) and rapidly homogenized in four volumes of ice-cold Buffer A (0.32 M sucrose, 5 mM HEPES, pH7.4, 1 mM MgCl2, 0.5 mM CaCl2) supplemented with Halt protease and phosphatase inhibitor cocktail (Thermo) using a Teflon homogenizer (12 strokes). Homogenized brain extract was centrifuged at 1400 g for 10 min. Supernatant (S1) was saved and pellet (P1) was homogenized in buffer A with a Teflon homogenizer (five strokes). After centrifugation at 700 g for 10 min, the supernatant (S1\u2019) was pooled with S1. Pooled S1 and S1\u2032 were centrifuged at 13,800 g for 10 min to the crude synaptosomal pellet (P2) and the supernatant (S2). P2 was resuspended in Buffer B (0.32 M sucrose, 6 mM Tris, pH 8.0) supplemented with protease and phosphatase inhibitors cocktail with Teflon homogenizer (five strokes) and was carefully loaded onto a discontinuous sucrose gradient (0.8 M/1 M/1.2 M sucrose solution in 6 mM Tris, pH 8.0) with a Pasteur pippete, followed by centrifugation in a swinging bucket rotor for 2 hr at 82,500 g. The synaptic plasma membrane fraction (SPM) in the interphase between 1 M and 1.2 M sucrose fractions was collected using a syringe and transferred to clean ultracentrifuge tubes. 6 mM Tris buffer was added to each sample to adjust the sucrose concentration from 1.2 M to 0.32 M and the samples were centrifuged in a swinging bucket rotor at 200,000 g for 30 min. The supernatant was removed and discarded and the SPM pellet was resuspended in 500 \u03bcl of 6 mM Tris/2 mM EDTA/0.5% Triton X-100 solution and rotated for 30 min at 4\u00b0C. In turn, the samples were centrifuged at 32,800 g for 20 min. The supernatant contains the Triton-soluble fraction (TSF), whereas the pellet represents the postsynaptic pellet (PSD).\n\nS1, P2, presynaptic and PSD fractions were separated by 4\u201312% NuPage Bis-Tris PAGE (Invitrogen) and transferred to membranes using the iBlot nitrocellulose membrane Blotting system (Invitrogen) by following manufacture protocol. Primary antibodies specific for GluA1 (Cell Signaling Technology #13185), pGluA1 (Cell Signaling Technology #8084), phospho-PKA substrates (Cell Signaling Technologies #9624), phospho-Rab8A (Abcam, ab188574), total Rab 8A (Abcam, ab230260),\u00a0phospho-Rab10 (Abcam ab230261) and total Rab10 (Cell Signaling Technologies #8127) as well as secondary anti-mouse and anti-rabbit (Thermo Fischer Scientific) Membranes were incubated with Immobilon ECL Ultra Western HRP Substrate (Millipore) for 3 min prior to image acquisition. Chemiluminescent blots were imaged with iBright CL1000 imaging system (Thermo Fisher Scientific). For quantitative analysis, images were analyzed using iBright Analysis Software (Thermo Fisher Scientific).\n\n### Primary neuronal cultures\n\nPrimary corticostriatal co-cultures were prepared as described previously (Parisiadou et al., 2014), (Tian et al., 2010). In brief, striatal cultures were prepared from P0 pups of Drd1-Tomato or Drd2-eGFP mice crossed with mutant KI LRRK2 lines (G2019S and R1441C). Tissues were digested by papain (Worthington Biochemical Corporation) and the striatal and cortical cells were mixed at a ratio of 1:2. The neurons were placed on coveslips with plating medium (Medium I) containing Basal Eagle Medium (Sigma-Aldrich) supplemented with 1 x GlutaMAX (Gibco), 1\u00a0\u00d7\u00a0B27 (Gibco), 1 x N-2 (Gibco), 1 x Antibiotic Antimycotic (Sigma-Aldrich), 5% horse serum (Gibco) and 5% FBS (Gibco) at a density of 4 \u00d7 105 for about one hour. After initial plating, medium was changed to Medium I without the horse serum and the FBS supplemented with 2.5 \u03bcM arabinosylcytosine (Sigma-Aldrich) (Medium II). Half of the medium was changed with fresh Medium II every 7 days; experiments were conducted 28\u201330 days after plating.\n\n### SIM imaging and analysis\n\nMultichannel SIM images were obtained with a Nikon Structured Illumination super-resolution microscope using a 100x, 1.4 NA objective as previously described (Smith et al., 2014). The acquisition was set to 10 MHz, 16 bit depth with EM gain and no binning. Exposure was between 100\u00a0and\u00a0500 ms and the EM gain multiplier restrained below 1500. Conversion gain was held at 1x. Laser power was adjusted to keep LUTs within the first quarter of the scale. Single images were processed and analyzed using Nikon Elements software. Reconstruction parameters (Illumination Modulation Contrast, High Resolution Noise Suppression, and Out of Focus Blur Suppression) (0.94, 0.98, and 0.07) for GluA1/PSD95 and (1.2, 3.0, and 0.07) for GFP/tdTomato were kept consistent across all acquisitions and experiments. Single spine analyses were carried out on 72\u201395 spines across 9\u201312 neurons per genotype. Images of dendritic fragments were collected from secondary to tertiary dendrites across genotypes. All the spines on the fragments were analyzed. GFP/tdTomato signal (Thermo Fischer Scientific, #A10262/#M11217) was used to generate a mask to identify the spine shape, subsequent analysis were done with the nanodomains of GluA1 (NeuroMab #75327) and PSD95 (Thermo Fischer Scientific, #51\u20136900) within the mask. 3D reconstructions in a single plane used nine images captured with 2D SIM and reconstructed with 3D SIM utilizes 15 to increase xy and z resolution were generated by Nikon Element and the illumination modulation contrast was set automatically by the software. Nikon Elements software (general analysis) was used for quantification of colocalization of GluA1 and PSD95 proteins. The images were thresholded for each channel and kept constant across experiments. The regions of interest (puncta) were outlined, and total immunofluorescence number and binary area for each region per channel were measured automatically. Regions in one channel were overlayed on the other channel. The minimum distances between puncta (e.g. PSD95 to GluA1) were measured from surface to surface automatically by the software.\n\n### Intracranial injections\n\nIntracranial injections were performed as previously described (Kozorovitskiy et al., 2012). Briefly, P4-5-day-old pups were placed into a stereotaxic frame under cryoanesthesia. 200 nl of AAV8/Flex-GFP virus (6.2*1012 used at 1:3 dilution, UNC Vector Core, Chapel Hill, NC) were delivered into the dorsal striatum at a rate of 100 nl min\u22121 using microprocessor-based controller, Micro4 (WPI). In order to ensure targeting of the dorsal striatum the needle was placed 1 mm anterior to midpoint between ear and eye, 1.5 mm from midline and 1.8 mm ventral to brain surface.\n\n### Confocal microscopy and dendritic spine analysis\n\nConfocal images of fixed 80-\u03bcm-thick brain sections of P30 pups injected with the AAV8/Flex-GFP virus were obtained with the Nikon A1R scope. Fluorescence projection images of dendrites and the corresponding spines were acquired with a 60x oil immersion objective (NA\u00a0=\u00a01.4) at 0.1 \u03bcm intervals with 1024 \u00d7 1024 pixel resolution. For each genotype, 2\u20134 segments per neuron, 9\u201314 neurons from 3 to 4 animals were used to generate z-stacks. Fragments between secondary to tertiary dendrites without overlap with other neurons or discontinuous were chosen for analysis. Dendritic spine density and morphology was performed using Imaris 9.21 software (Bitplane, Concord, USA). Images of dendritic fragments were collected from secondary to tertiary dendrites, for tracing of the dendritic fragments the autopath mode of the filament tracer and default settings were selected. The following settings were used for spine detection: 0.5 \u03bcm minimal head size, 1.8 \u03bcm maximum length, seed point threshold approx. 10, no branched spines were allowed. Spine detection was manually corrected if necessary. Classification of spines into stubby, mushroom-like and filopodia was performed using the Imaris XTension classify spines with following definitions: stubby: spine length\u00a0<0.75 \u03bcm; mushroom: spine length\u00a0<3.5 \u03bcm, spine head width\u00a0>0.35 \u03bcm and spine head width\u00a0>spine neck width; filopodia: when it did not fit the criteria mentioned above (Schier et al., 2017).\n\n### Electrophysiological recordings\n\nTwo hundred and fifty \u00b5m thick acute coronal brain slices were prepared as described previously (Kozorovitskiy et al., 2015), (Xiao et al., 2017) and incubated in artificial cerebral spinal fluid (ACSF) containing (in mM) 127 NaCl, 2.5 KCl, 25 NaHCO3, 1.25 NaH2PO4, 2.0 CaCl2, 1.0 MgCl2, and 25 glucose (osmolarity\u00a0~310 mOsm/L). Slices were recovered at 34\u00b0C for 15 min, followed by 30 min at RT, and transferred to a recording chamber perfused with oxygenated ACSF at a flow rate of 2\u20133 mL/min. Whole-cell recordings were obtained from dorsolateral striatal neurons visualized under infrared Dodt or DIC contrast video microscopy using patch pipettes of\u00a0~4\u20136 M\u03a9 resistance. Drd2 BAC GFP signal visualized under epifluorescence was used to target iSPNs, while Drd2 GFP-negative neurons with spiny dendrites and electrophysiological properties of SPNs (holding current, input resistance) were considered dSPNs (Gagnon et al., 2017), (Gittis et al., 2010). Both fluorescent and non-fluorescent neurons were targeted for recording. Internal solution consisted of (in mM): 120 CsMeSO4, 15 CsCl, 10 HEPES, 2 QX-314 Chloride, 2 Mg-ATP, 0.3 Na-GTP, 1 EGTA (pH\u00a0~7.2,~295 mOsm). Morphology was confirmed using 20 \u00b5M Alexa 594 in the recording pipette. Recordings were made using a Multiclamp 700B amplifier (Molecular Devices). Data were sampled at 10 kHz and filtered at 4 kHz, acquired in MATLAB (MathWorks). Series resistance, measured with a 5 mV hyperpolarizing pulse in voltage clamp, averaged under 20 M\u03a9 and was left uncompensated. Miniature EPSCs were recorded from voltage clamped SPNs held at \u221270 mV in the absence of stimulation. Over 2 min of recording per neuron was used for analyses. For recordings of miniature EPSCs, 50 \u00b5M gabazine, 10 \u00b5M scopolamine, 10 \u00b5M CPP, and 1 \u00b5M TTX were added to the ACSF.\n\n### Two-photon imaging and uncaging\n\nTwo-photon laser-scanning microscopy and two-photon laser photoactivation were accomplished on a modified Scientifica microscope with a 60X (1.0 NA) objective. Two mode-locked Ti:Sapphire lasers (Mai-Tai eHP Deep See and Mai-Tai eHP; Spectra Physics) were separately tuned, with beam power controlled by independent Pockels cells (ConOptics). The beams were separately shuttered, recombined using a polarization-sensitive beam-splitting cube (Thorlabs), and guided into the same galvanometer scanhead (Cambridge). The Mai Tai eHP Deep See was tuned to\u00a0~910 nm for excitation of genetically encoded GFP and Alexa 594, and the Mai Tai eHP was tuned to 725 nm for photoactivation of recirculated caged MNI-L-glutamate (2 mM, Tocris) (Xiao et al., 2018; Banala et al., 2018). Neurons in the dorsolateral striatum were targeted for recording, as for other electrophysiology assays, with secondary and tertiary dendrites targeted for uncaging. All 2P uncaging voltage clamp recordings were made at a holding potential of \u221270 mV. Internal solution contained (in mM) 115 K-gluconate, 20 KCl, 4 MgCl2, 10 HEPES, 4 Mg-ATP, 0.3 Na-GTP, 7 phosphocreatine, 0.1 EGTA, (pH 7.2, 290 mOSm). Alexa Fluor 594 (10\u201320 \u03bcM) was added to the internal solution to visualize cell morphology for uncaging/imaging with physiology experiments. Uncaging evoked EPSCs were elicited by 0.5 ms pulses of 725 nm laser light (~20 mW at the focal plane). Up to three locations in a single field of view were stimulated (1 s apart) in a single sweep. Stimulation of a single location occurred with a minimum 10 s ISI. A spot diameter of\u00a0\u22640.8 \u03bcm, based on measurements of 0.5 \u03bcm beads (17152\u201310; Polysciences Inc) was used for all two-photon laser flash photolysis experiments. Two GaAsP photosensors (Hamamatsu, H7422) with 520/28 nm band pass filters (Semrock), mounted above and below the sample, were used for imaging fluorescence signals. A modified version of ScanImage was used for data acquisition (Pologruto et al., 2003), (Kozorovitskiy et al., 2015).\n\n### Statistical analyses\n\nGroup statistical analyses were done using GraphPad Prism seven software (GraphPad, LaJolla, CA). For n sizes, both the number of trials recorded and the number of animals are provided. All data are expressed as mean + SEM, or individual plots. For two-group comparisons, statistical significance was determined by two-tailed Student\u2019s t-tests. For multiple group comparisons, one-way analysis of variance (ANOVA) tests were used for normally distributed data, followed by post-hoc analyses. For non-normally distributed data, non-parametric tests for the appropriate group numbers were used, such as the Mann-Whitney test. For the analysis of mEPSC amplitude distributions, data were fit with a gamma distribution, a non-negative asymmetrical distribution, because the mEPSC amplitude data were not normally or lognormally distributed but displayed appropriate skew and kurtosis to match the gamma distribution. Generalized linear modeling (GLM) with a gamma family distribution was used to estimate and compare mEPSC amplitudes, with Bonferroni corrections for multiple posthoc comparisons. All mEPSC distribution analyses were done in R, using fitdistrplus library and the emmeans package. Spearman correlation was used to detect correlation between two groups of data. p<0.05 was considered statistically significant.\n",
+      "created_at": "2025-12-02T20:21:48.113786Z"
+    },
+    {
+      "id": "6b235657-1a6b-4e5b-86df-63c9f5405499",
+      "submission_id": "0e605b34-a7b6-463c-a032-5aba67eedc57",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Carl Lupica, National Institute on Drug Abuse, National Institutes of Health Baltimore United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.58997.sa1](https://doi.org/10.7554/eLife.58997.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nThe reviewers felt that your study nicely integrated several approaches to compare indirect and direct striatal output pathways, and to show distinctions in these pathways in 2 LRRK2 mutations.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Pathway-specific deregulation of striatal excitatory synapses in LRRK2 mutations\" for consideration by eLife. Your article has been reviewed by two peer reviewers, including Carl Lupica as the Reviewing Editor and Reviewer #1, and the evaluation has been overseen by John Huguenard as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Michael J Beckstead (Reviewer #2).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nWe would like to draw your attention to changes in our revision policy that we have made in response to COVID-19 (https://elifesciences.org/articles/57162). Specifically, we are asking editors to accept without delay manuscripts, like yours, that they judge can stand as eLife papers without additional data, even if they feel that they would make the manuscript stronger. Thus the revisions requested below only address clarity and presentation.\n\nSummary:\n\nThis is a report on the effects of 2 common LRRK2 gain of function mutations expressed in mouse lines on the properties of striatal neurons comprising either indirect (iSPNs) or direct pathway projections (dSPNs). The authors use structured illumination super-resolution and 2-photon microscopy, patch clamp electrophysiology, and Western blots to explore the effects of the GS and RC LRRK2 mutations on striatal synapses. Both structural and functional changes are identified, and there are differences reported both between the types of LRRK2 mutations and between indirect and direct striatal pathways. More specifically, the authors observe increased expression and altered organization of glutamatergic AMPA receptors in LRRK2 mutants and an associated decreased in the frequency of EPSCs at these synapses. This was accompanied by changes in the nano-architecture of dendritic spines and ionotropic currents activated with 2-photon glutamate uncaging. In general, the reviewers felt that the study nicely integrates several approaches to evaluate and compare how indirect and direct striatal output pathway synapses are altered in 2 relevant LRRK2 mutations. The attention to both functional and structural changes within these pathways represents a significant experimental advance in our understanding of the implications of LRKK2 and its role in heritable Parkinson's disease.\n\nRevisions:\n\n1) Results, paragraph one. This information regarding Rab8A isn't very clear. Has the Rab8A protein been identified in SPNs previously? If not, then its identification should be reported first, followed by the description of experiments showing its phosphorylation in the mutant mice.\n\n2) Results, subsection \u201cPathway specific functional alterations in the synapses of R1441C and G2019S SPNs\u201d. The sentence describing differences in mEPSC frequency for the mutant mice in the dSPN pathway should be reworded for clarity. In this instance, the frequency was lower than the control genotype. However, the authors are using the word \"decreased\" as a noun, indicating that a change was observed within an experiment, which is clearly not the case.\n\n3) In the same subsection the authors should indicate that no changes in \"mean mEPSC\" amplitudes were noted because they report below that changes were observed in subsets of these mEPSCs.\n\n4) Results, subsection \u201cPathway specific functional alterations in the synapses of R1441C and G2019S SPNs\u201d, last sentences. The authors report that whereas no changes in averaged mEPSC amplitudes were noted across genotypes, there were changes in subsets of these events that could be discerned using cumulative amplitude distributions. A satisfactory exploration of this is central to the work because of the complex relationship between GluA1 (increased) and the changes in mEPSC frequency (decreased) and amplitude (maybe an increase?) reported by the authors. Currently, the change in mEPSC amplitude is not clear from the way these data are presented in Figure 4, and the statistical evaluation of these data (K-S- test with Bonferroni post-hoc) does not permit an evaluation of where in the distribution of amplitudes these changes occur. The changes in amplitude distribution would best be evaluated by re-plotting the data using non-cumulative amplitude histograms for individual cells (or groups), and by estimating mean mEPSC amplitude modes using either Gaussian, or other statistical curves that fit the data more appropriately. Non-cumulative histograms should then be shown to demonstrate the differences in mEPSC sub-sets, and the number of cells showing a significant shift toward larger amplitude mEPSCs should be reported.\n\n5) The statistical handling of the data in Figures 1F, 1G, and Figure 1\u2014figure supplement 1C is inappropriate. Normalizing to the mean of the control group and getting rid of the error bar in that group negates a potentially important source of error. Use of a non-parametric analysis does not mitigate this concern. These data should be reanalyzed and re-graphed with the actual ratio values, which are already normalized to PSD95 or Homer1 expression. Sample sizes here were low, therefore this could require running additional samples if certain results drop out of significance upon re-analysis.\n\n6) Currently, the discussion is very LRRK2-centric and doesn't venture as it should outside of models with this gene to larger questions concerning PD and basal ganglia circuitry, therefore it's not entirely clear where this work fits in with the larger field. Conspicuously absent is any link between this work and what is known about the direct and indirect pathway SPNs in PD. The discussion would therefore benefit from information previously published with regard to PD in humans or in animal models integrated with the present work.\n\n[Editors' note: further revisions were suggested prior to acceptance, as described below.]\n\nThank you for resubmitting your article \"Pathway-specific dysregulation of striatal excitatory synapses by LRRK2 mutations\" for consideration by eLife.\n\nSummary:\n\nIn this revision the authors have made several changes in-line with comments from the earlier review and this has improved the manuscript. However, an issue remains with the implementation of curvilinear fits to the mEPSC data that should be addressed.\n\nRevisions:\n\n1) Figure 4 and Figure 4\u2014figure supplement 1 and Materials and methods: A description of how the Gaussian fits were obtained as well as the statistical analysis that was used to evaluate them should be included in the Materials and methods.\n\n2) Figure 4\u2014figure supplement 1: \"Bin Center\" is not an adequate label. This should be re-labeled either \"Amplitude (pA)\" or \"Bin center (pA). Additionally, the pertinent data for these fits (mean amplitude, S.D. or S.E.M.) and goodness of fit information should be provided.\n\n3) Figure 4\u2014figure supplement 1: Why are the complete gaussian curves not shown? It is the peak of the inverted U-shaped curve that defines the mean amplitude of the responses falling into that bin. This is not easily observed without the full curve. Also, the means and errors (SEM or SD) of the amplitudes defined by the Gaussian curves should be given.\n",
+      "created_at": "2025-12-02T20:21:48.113786Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T20:21:48.113786Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T20:21:48.113786Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "9fcbcfd9-825c-4919-aa26-0c996b880202",
+      "content_id": "2084b190-a1fc-46a8-8457-96cbdf66972d",
+      "claim_id": "C1",
+      "claim": "LRRK2 is a kinase expressed in striatal spiny projection neurons (SPNs).",
+      "claim_type": "EXPLICIT",
+      "source": "LRRK2 is a kinase expressed in striatal spiny projection neurons (SPNs), cells which lose dopaminergic input in Parkinson's disease (PD).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior literature establishing LRRK2 expression patterns",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:21:48.113786Z"
+    },
+    {
+      "id": "4cc0347a-7c6d-48de-9a7d-fb394f61ec33",
+      "content_id": "2084b190-a1fc-46a8-8457-96cbdf66972d",
+      "claim_id": "C2",
+      "claim": "SPNs lose dopaminergic input in Parkinson's disease.",
+      "claim_type": "EXPLICIT",
+      "source": "LRRK2 is a kinase expressed in striatal spiny projection neurons (SPNs), cells which lose dopaminergic input in Parkinson's disease (PD).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Established fact about PD pathology",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:21:48.113786Z"
+    },
+    {
+      "id": "80c24295-f79e-4f2a-bef3-ca5db527a1ee",
+      "content_id": "2084b190-a1fc-46a8-8457-96cbdf66972d",
+      "claim_id": "C3",
+      "claim": "R1441C and G2019S are the most common pathogenic mutations of LRRK2.",
+      "claim_type": "EXPLICIT",
+      "source": "R1441C and G2019S are the most common pathogenic mutations of LRRK2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Established knowledge in the field, supported by citations elsewhere in the manuscript",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:21:48.113786Z"
+    },
+    {
+      "id": "9253d09c-88b5-40de-adb3-3b5a0d81e8c0",
+      "content_id": "2084b190-a1fc-46a8-8457-96cbdf66972d",
+      "claim_id": "C4",
+      "claim": "R1441C and G2019S knock-in mice enabled thorough evaluation of dendritic spines and synapses on pathway-identified SPNs.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, R1441C and G2019S knock-in mice enabled thorough evaluation of dendritic spines and synapses on pathway-identified SPNs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Describes the experimental approach used in the study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:21:48.113786Z"
+    },
+    {
+      "id": "eb34f8ad-9896-42eb-b57d-8db5929fc633",
+      "content_id": "2084b190-a1fc-46a8-8457-96cbdf66972d",
+      "claim_id": "C5",
+      "claim": "Biochemical synaptic preparations and super-resolution imaging revealed increased levels and altered organization of glutamatergic AMPA receptors in LRRK2 mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "Biochemical synaptic preparations and super-resolution imaging revealed increased levels and altered organization of glutamatergic AMPA receptors in LRRK2 mutants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Primary finding from experimental data presented in the manuscript",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:21:48.113786Z"
+    },
+    {
+      "id": "eaec49ba-6843-4b9d-bb78-215a017ca2e8",
+      "content_id": "2084b190-a1fc-46a8-8457-96cbdf66972d",
+      "claim_id": "C6",
+      "claim": "Decreased frequency of miniature excitatory post-synaptic currents accompanied changes in dendritic spine nano-architecture in LRRK2 mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "Relatedly, decreased frequency of miniature excitatory post-synaptic currents accompanied changes in dendritic spine nano-architecture, and single-synapse currents, evaluated using two-photon glutamate uncaging.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Primary finding from electrophysiological recordings and imaging data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:21:48.113786Z"
+    },
+    {
+      "id": "ad034690-75b9-4225-aafe-7872e61126ed",
+      "content_id": "2084b190-a1fc-46a8-8457-96cbdf66972d",
+      "claim_id": "C7",
+      "claim": "LRRK2 mutations reshaped synaptic structure and function, an effect exaggerated in R1441C dSPNs.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, LRRK2 mutations reshaped synaptic structure and function, an effect exaggerated in R1441C dSPNs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary conclusion based on multiple experimental findings",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:21:48.113786Z"
+    },
+    {
+      "id": "2649d304-b9e3-4d60-8466-f17c3c482c69",
+      "content_id": "2084b190-a1fc-46a8-8457-96cbdf66972d",
+      "claim_id": "C8",
+      "claim": "Gain-of-function mutations in the leucine-rich repeat kinase 2 (LRRK2) gene represent the most common cause of familial Parkinson's disease (PD).",
+      "claim_type": "EXPLICIT",
+      "source": "Gain-of-function mutations in the leucine-rich repeat kinase 2 (LRRK2) gene represent the most common cause of familial Parkinson's disease (PD) (Alessi and Sammler, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Established knowledge supported by citation",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:21:48.113786Z"
+    },
+    {
+      "id": "1991957b-4e4c-4453-9861-ac9618a7174f",
+      "content_id": "2084b190-a1fc-46a8-8457-96cbdf66972d",
+      "claim_id": "C9",
+      "claim": "LRRK2 mutation carriers are at risk for late onset PD, which is clinically indistinguishable from sporadic PD.",
+      "claim_type": "EXPLICIT",
+      "source": "Carriers are at risk for late onset PD, which is clinically indistinguishable from sporadic PD, consistent with a possibility of common disease mechanisms (Kluss et al., 2019; Italian Parkinson's Genetics Network et al., 2006; Haugarvoll et al., 2008; Di Maio et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations to clinical studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:21:48.113786Z"
+    },
+    {
+      "id": "6fc439e6-a605-41fd-923b-68b1bd20b677",
+      "content_id": "2084b190-a1fc-46a8-8457-96cbdf66972d",
+      "claim_id": "C10",
+      "claim": "LRRK2 gene product is a large multi-domain protein with two catalytic domains: a GTPase (ROC-COR) domain and a serine/threonine-directed protein kinase domain.",
+      "claim_type": "EXPLICIT",
+      "source": "LRRK2 gene product is a large multi-domain protein with two catalytic domains: a GTPase (ROC-COR) domain and a serine/threonine-directed protein kinase domain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Established structural knowledge about LRRK2 protein",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:21:48.113786Z"
+    },
+    {
+      "id": "31e82d4a-44ee-4f8c-bcd6-9ee5b9466fea",
+      "content_id": "2084b190-a1fc-46a8-8457-96cbdf66972d",
+      "claim_id": "C11",
+      "claim": "Pathogenic mutations are found predominantly in the GTPase and kinase domains of LRRK2.",
+      "claim_type": "EXPLICIT",
+      "source": "Pathogenic mutations are found predominantly in these two domains, suggesting that LRRK2 enzymatic activities are involved in PD pathogenesis (Cookson, 2010), (Esteves et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior research",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:21:48.113786Z"
+    },
+    {
+      "id": "735c916e-2661-45e2-a177-65d269593bba",
+      "content_id": "2084b190-a1fc-46a8-8457-96cbdf66972d",
+      "claim_id": "C12",
+      "claim": "LRRK2 enzymatic activities are involved in PD pathogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Pathogenic mutations are found predominantly in these two domains, suggesting that LRRK2 enzymatic activities are involved in PD pathogenesis (Cookson, 2010), (Esteves et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on mutation location, supported by citations",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:21:48.113786Z"
+    },
+    {
+      "id": "c5c8df04-f82a-46c4-bc40-9a0a1f3adc9e",
+      "content_id": "2084b190-a1fc-46a8-8457-96cbdf66972d",
+      "claim_id": "C13",
+      "claim": "The G2019S mutation in the kinase domain confers enhanced LRRK2 kinase activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Enhanced LRRK2 kinase activity conferred by the G2019S (GS) mutation in the kinase domain is the most extensively studied property of mutant LRRK2 (Cookson, 2010), (Steger et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior biochemical studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:21:48.113786Z"
+    },
+    {
+      "id": "3aeec36a-935a-4678-89a1-f7702cfe8466",
+      "content_id": "2084b190-a1fc-46a8-8457-96cbdf66972d",
+      "claim_id": "C14",
+      "claim": "The R1441C substitution in the GTPase domain results in impaired GTP hydrolysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Meanwhile, the R1441C (RC) substitution in the GTPase domain results in impaired GTP hydrolysis, which is thought to indirectly enhance kinase activity through mechanisms that remain to be determined (Nguyen and Moore, 2017), (Xiong et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior biochemical studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:21:48.113786Z"
+    },
+    {
+      "id": "21f59fdf-a62f-42fe-9054-ef38a4c8480b",
+      "content_id": "2084b190-a1fc-46a8-8457-96cbdf66972d",
+      "claim_id": "C15",
+      "claim": "The R1441C mutation is thought to indirectly enhance kinase activity through mechanisms that remain to be determined.",
+      "claim_type": "EXPLICIT",
+      "source": "Meanwhile, the R1441C (RC) substitution in the GTPase domain results in impaired GTP hydrolysis, which is thought to indirectly enhance kinase activity through mechanisms that remain to be determined (Nguyen and Moore, 2017), (Xiong et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative mechanism supported by citations",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:21:48.113786Z"
+    },
+    {
+      "id": "01db8701-ce22-4fe8-814d-7d569c340d23",
+      "content_id": "2084b190-a1fc-46a8-8457-96cbdf66972d",
+      "claim_id": "C16",
+      "claim": "LRRK2 is highly expressed in the spiny projection neurons (SPNs) of the striatum.",
+      "claim_type": "EXPLICIT",
+      "source": "This kinase is highly expressed in the spiny projection neurons (SPNs) of the striatum (Nguyen and Moore, 2017; West et al., 2014; Parisiadou et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations including authors' prior work",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:21:48.113786Z"
+    },
+    {
+      "id": "1f45941f-6b99-4d67-9ff8-9e0eec446241",
+      "content_id": "2084b190-a1fc-46a8-8457-96cbdf66972d",
+      "claim_id": "C17",
+      "claim": "LRRK2 expression peaks in a developmental time window of extensive glutamatergic excitatory synapse formation.",
+      "claim_type": "EXPLICIT",
+      "source": "LRRK2 expression peaks in a developmental time window of extensive glutamatergic excitatory synapse formation, suggesting that LRRK2 may regulate the development or function of excitatory synaptic networks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observation from expression studies leading to inference about function",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:21:48.113786Z"
+    },
+    {
+      "id": "508cd32f-8f2d-4169-8001-6bf7b9b20142",
+      "content_id": "2084b190-a1fc-46a8-8457-96cbdf66972d",
+      "claim_id": "C18",
+      "claim": "LRRK2 may regulate the development or function of excitatory synaptic networks.",
+      "claim_type": "EXPLICIT",
+      "source": "LRRK2 expression peaks in a developmental time window of extensive glutamatergic excitatory synapse formation, suggesting that LRRK2 may regulate the development or function of excitatory synaptic networks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on expression timing",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:21:48.113786Z"
+    },
+    {
+      "id": "290751c8-4b3d-4309-88fb-0c7dc767208d",
+      "content_id": "2084b190-a1fc-46a8-8457-96cbdf66972d",
+      "claim_id": "C19",
+      "claim": "Loss of LRRK2 alters striatal circuits during postnatal development.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistently, several lines of evidence suggest that loss of LRRK2 alters striatal circuits during postnatal development (Parisiadou et al., 2014), and the GS pathogenic mutation increases glutamatergic activity in cultured cortical neurons (Beccano-Kelly et al., 2015) as well as in acute striatal slices (Matikainen-Ankney et al., 2016), (Volta et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations including authors' prior work",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:21:48.113786Z"
+    },
+    {
+      "id": "bfb427ef-7c7d-4799-99ab-208c1f50ad7f",
+      "content_id": "2084b190-a1fc-46a8-8457-96cbdf66972d",
+      "claim_id": "C20",
+      "claim": "The GS pathogenic mutation increases glutamatergic activity in cultured cortical neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistently, several lines of evidence suggest that loss of LRRK2 alters striatal circuits during postnatal development (Parisiadou et al., 2014), and the GS pathogenic mutation increases glutamatergic activity in cultured cortical neurons (Beccano-Kelly et al., 2015) as well as in acute striatal slices (Matikainen-Ankney et al., 2016), (Volta et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to prior study",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:21:48.113786Z"
+    },
+    {
+      "id": "6d61e357-a34c-4df7-8fe3-98ed9bd9592e",
+      "content_id": "2084b190-a1fc-46a8-8457-96cbdf66972d",
+      "claim_id": "C21",
+      "claim": "The GS pathogenic mutation increases glutamatergic activity in acute striatal slices.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistently, several lines of evidence suggest that loss of LRRK2 alters striatal circuits during postnatal development (Parisiadou et al., 2014), and the GS pathogenic mutation increases glutamatergic activity in cultured cortical neurons (Beccano-Kelly et al., 2015) as well as in acute striatal slices (Matikainen-Ankney et al., 2016), (Volta et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:21:48.113786Z"
+    },
+    {
+      "id": "57eeb970-bbe9-4fad-9e1b-13849b688c9c",
+      "content_id": "2084b190-a1fc-46a8-8457-96cbdf66972d",
+      "claim_id": "C22",
+      "claim": "LRRK2 plays a critical role in presynaptic terminal vesicle function.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent studies assign a critical role of LRRK2 in presynaptic terminal vesicle function (Pan et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to prior study",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:21:48.113786Z"
+    },
+    {
+      "id": "ffea7c95-f4c4-42a0-9a05-9c9676e9215b",
+      "content_id": "2084b190-a1fc-46a8-8457-96cbdf66972d",
+      "claim_id": "C23",
+      "claim": "The GS mutation impairs presynaptic glutamatergic release.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, the GS mutation impairs presynaptic glutamatergic release, suggested to underlie changes in glutamatergic activity of striatal neurons (Volta et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to prior study",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:21:48.113786Z"
+    },
+    {
+      "id": "856d8710-6d21-4143-a154-d858c5d2fd7c",
+      "content_id": "2084b190-a1fc-46a8-8457-96cbdf66972d",
+      "claim_id": "C24",
+      "claim": "The RC mutation impedes normal striatal protein kinase A (PKA) signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "We have previously shown that the RC mutation impedes normal striatal protein kinase A (PKA) signaling, which in turn results in increased GluA1 phosphorylation in developing SPNs, consistent with a postsynaptic mechanism of action (Parisiadou et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Authors' prior published work",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:21:48.113786Z"
+    },
+    {
+      "id": "88e21cba-ba12-4dd7-9358-2742d798206c",
+      "content_id": "2084b190-a1fc-46a8-8457-96cbdf66972d",
+      "claim_id": "C25",
+      "claim": "The RC mutation results in increased GluA1 phosphorylation in developing SPNs.",
+      "claim_type": "EXPLICIT",
+      "source": "We have previously shown that the RC mutation impedes normal striatal protein kinase A (PKA) signaling, which in turn results in increased GluA1 phosphorylation in developing SPNs, consistent with a postsynaptic mechanism of action (Parisiadou et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Authors' prior published work",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:21:48.113786Z"
+    },
+    {
+      "id": "a45b6ee7-12d3-4aa6-b74d-45ca89714bbf",
+      "content_id": "2084b190-a1fc-46a8-8457-96cbdf66972d",
+      "claim_id": "C26",
+      "claim": "Glutamate receptor trafficking perturbations were observed in GS knock-in mice in response to plasticity induction protocols.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, glutamate receptor trafficking perturbations were observed in GS knock-in (KI) mice in response to plasticity induction protocols (Matikainen-Ankney et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to prior study",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:21:48.113786Z"
+    },
+    {
+      "id": "0a6fd4ff-3569-4338-8dd5-0c9267bd0285",
+      "content_id": "2084b190-a1fc-46a8-8457-96cbdf66972d",
+      "claim_id": "C27",
+      "claim": "An increase in spontaneous excitatory postsynaptic currents has been reported for the dorsomedial striatum in GS mutant mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, although an increase in spontaneous excitatory postsynaptic currents has been reported for the dorsomedial striatum, a recent report failed to show this phenotype for the ventral striatum (Huntley, 2020), despite LRRK2 expression in that region (West et al., 2014), (Giesert et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to prior study",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:21:48.113786Z"
+    },
+    {
+      "id": "7fcbda74-7660-4897-aa14-5760e744c084",
+      "content_id": "2084b190-a1fc-46a8-8457-96cbdf66972d",
+      "claim_id": "C28",
+      "claim": "A recent report failed to show increased spontaneous excitatory postsynaptic currents for the ventral striatum in GS mutant mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, although an increase in spontaneous excitatory postsynaptic currents has been reported for the dorsomedial striatum, a recent report failed to show this phenotype for the ventral striatum (Huntley, 2020), despite LRRK2 expression in that region (West et al., 2014), (Giesert et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to prior study",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:21:48.113786Z"
+    },
+    {
+      "id": "185e556c-3221-4dbd-901e-a39fc6a58472",
+      "content_id": "2084b190-a1fc-46a8-8457-96cbdf66972d",
+      "claim_id": "C29",
+      "claim": "LRRK2 is expressed in the ventral striatum.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, although an increase in spontaneous excitatory postsynaptic currents has been reported for the dorsomedial striatum, a recent report failed to show this phenotype for the ventral striatum (Huntley, 2020), despite LRRK2 expression in that region (West et al., 2014), (Giesert et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:21:48.113786Z"
+    },
+    {
+      "id": "c82639ca-3ec4-4cb3-8785-62d826451c0a",
+      "content_id": "2084b190-a1fc-46a8-8457-96cbdf66972d",
+      "claim_id": "C30",
+      "claim": "LRRK2 mutations may shape the corticostriatal synaptic function in a synapse-, cell- and area-specific manner.",
+      "claim_type": "EXPLICIT",
+      "source": "These observations suggest that LRRK2 mutations may shape the corticostriatal synaptic function in a synapse-, cell- and area-specific manner.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on prior observations of regional differences",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:21:48.113786Z"
+    },
+    {
+      "id": "469c0e03-f98c-4e3e-8141-9c21ca7b87be",
+      "content_id": "2084b190-a1fc-46a8-8457-96cbdf66972d",
+      "claim_id": "C31",
+      "claim": "Direct and indirect striatal pathways play complementary roles in behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "Given the complementary role of direct and indirect striatal pathways in behavior (Kravitz et al., 2010; Fieblinger et al., 2014; Kozorovitskiy et al., 2012) the lack of pathway specificity in prior studies limits our understanding of disease related mechanisms associated with LRRK2 mutations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Established knowledge supported by citations",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:21:48.113786Z"
+    },
+    {
+      "id": "bd8bacb6-16e8-4783-81aa-0149b3dd9530",
+      "content_id": "2084b190-a1fc-46a8-8457-96cbdf66972d",
+      "claim_id": "C32",
+      "claim": "PKA activity was found elevated in the P2 crude synaptosomal preparation of +/RC but not +/GS striatal extracts.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with our previous data, PKA activity was found elevated in the P2 crude synaptosomal preparation of +/RC but not +/GS striatal extracts, when phospho-PKA substrate antibody was used to detect phosphorylation of downstream PKA targets.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental data from western blot analysis shown in Figure 1D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:21:48.113786Z"
+    },
+    {
+      "id": "5e558019-9961-48aa-a594-43c4ba3121aa",
+      "content_id": "2084b190-a1fc-46a8-8457-96cbdf66972d",
+      "claim_id": "C33",
+      "claim": "Increased PKA activity in +/RC was confirmed by an increase in phosphorylation of GluA1.",
+      "claim_type": "EXPLICIT",
+      "source": "The increased PKA activity in +/RC was further confirmed by an increase in phosphorylation of GluA1, a key downstream target of PKA.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental data from western blot analysis shown in Figure 1D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:21:48.113786Z"
+    },
+    {
+      "id": "86ae2605-3555-4c8a-87ed-bd68adc1641a",
+      "content_id": "2084b190-a1fc-46a8-8457-96cbdf66972d",
+      "claim_id": "C34",
+      "claim": "Phosphorylation of Rab8A and Rab10 was selectively increased in the synaptic fraction (P2) of the RC striatal extracts.",
+      "claim_type": "EXPLICIT",
+      "source": "To directly evaluate LRRK2 function, we examined the phosphorylation of two known targets of this kinase, Rab8A and Rab10. Phosphorylation of both targets was selectively increased in the synaptic fraction (P2) of the RC striatal extracts (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental data from western blot analysis shown in Figure 1D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:21:48.113786Z"
+    },
+    {
+      "id": "70e6e4ae-eb1a-48a1-a64a-9414b120ab6e",
+      "content_id": "2084b190-a1fc-46a8-8457-96cbdf66972d",
+      "claim_id": "C35",
+      "claim": "Rab8A is a known physiological target of LRRK2 kinase activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, while Rab8A is a known physiological target of LRRK2 kinase activity (Steger et al., 2016), (Bonet-Ponce and Cookson, 2019), it was unclear whether this is the case in the striatum, since only low levels of Rab8A transcripts are found in dSPNs and iSPNs at the single-cell level (dropviz.org) (Saunders et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:21:48.113786Z"
+    },
+    {
+      "id": "0968c894-ce11-4185-946a-d7a3ec56536c",
+      "content_id": "2084b190-a1fc-46a8-8457-96cbdf66972d",
+      "claim_id": "C36",
+      "claim": "Only low levels of Rab8A transcripts are found in dSPNs and iSPNs at the single-cell level.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, while Rab8A is a known physiological target of LRRK2 kinase activity (Steger et al., 2016), (Bonet-Ponce and Cookson, 2019), it was unclear whether this is the case in the striatum, since only low levels of Rab8A transcripts are found in dSPNs and iSPNs at the single-cell level (dropviz.org) (Saunders et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to single-cell transcriptomics database",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:21:48.113786Z"
+    },
+    {
+      "id": "bde89afe-97ec-4cf8-8c29-5725b1b332db",
+      "content_id": "2084b190-a1fc-46a8-8457-96cbdf66972d",
+      "claim_id": "C37",
+      "claim": "The RC and other mutations found in the GTPase domain of LRRK2 result in greater increase kinase activity, compared to the GS mutation.",
+      "claim_type": "EXPLICIT",
+      "source": "Our finding stands in accordance with two recent studies in cell lines, showing that the RC and other mutations found in the GTPase domain of LRRK2 result in greater increase kinase activity, compared to the GS mutation (Purlyte et al., 2018; Liu et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to recent studies in cell lines",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:21:48.113786Z"
+    },
+    {
+      "id": "d42e0d90-942d-4fb6-9c0d-9e9afbb92f10",
+      "content_id": "2084b190-a1fc-46a8-8457-96cbdf66972d",
+      "claim_id": "C38",
+      "claim": "GluA1 levels were significantly increased in the PSD fraction from +/RC mice compared to wild-type control.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed a significant increase in the GluA1 levels in the PSD fraction from +/RC, but not +/GS mice, compared to wild-type control (+/RC: 47% increase of control; +/GS: 19% increase relative to control, one-way ANOVA p=0.0397, post-hoc tests as noted, n = 6 per group) (Figure 1E,F)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental data from western blot analysis with statistical testing shown in Figure 1E,F",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:21:48.113786Z"
+    },
+    {
+      "id": "8276b75e-72c2-423f-b038-9f3308a151c8",
+      "content_id": "2084b190-a1fc-46a8-8457-96cbdf66972d",
+      "claim_id": "C39",
+      "claim": "PKA activity was elevated specifically in the PSD fractions in +/RC but not +/GS mice.",
+      "claim_type": "EXPLICIT",
+      "source": "which was paralleled by elevated PKA activity specifically in the PSD fractions in +/RC (+/RC, 167% of control, one-way ANOVA p=0.0486, post-hoc tests as noted, n = 6) but not +/GS mice (+/GS, 118% of control, n = 6) (Figure 1E,G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental data from western blot analysis with statistical testing shown in Figure 1E,G",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:21:48.113786Z"
+    },
+    {
+      "id": "9c71bfc4-adbb-4727-8f9d-9af4abc04718",
+      "content_id": "2084b190-a1fc-46a8-8457-96cbdf66972d",
+      "claim_id": "C40",
+      "claim": "PSD95 band intensities across fractions and genotypes showed no difference.",
+      "claim_type": "EXPLICIT",
+      "source": "PSD95 band intensities across fractions and genotypes showed no difference.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental data from western blot analysis shown in Figure 1\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:21:48.113786Z"
+    },
+    {
+      "id": "3903de03-ba92-4069-b478-55c0ff9aeffa",
+      "content_id": "2084b190-a1fc-46a8-8457-96cbdf66972d",
+      "claim_id": "C41",
+      "claim": "The distance between GluA1 and PSD95 was smaller in +/RC dSPNs compared to control dSPNs.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, the distance between GluA1 and PSD95 was smaller in +/RC dSPNs compared to control dSPNs, while no difference was observed between +/GS and +/+ neurons (+/RC, 63% of control, +/GS 85% of control one-way ANOVA, p=0.0208, post-hoc tests as noted, n = 75\u201393 dendritic spines/genotype) (Figure 2C\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental data from SIM imaging with statistical testing shown in Figure 2C-D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:21:48.113786Z"
+    },
+    {
+      "id": "29940af0-398a-4005-a74f-6894b37605b7",
+      "content_id": "2084b190-a1fc-46a8-8457-96cbdf66972d",
+      "claim_id": "C42",
+      "claim": "The overlap area of GluA1 and PSD95 nanodomains was found elevated in the dendritic spines of +/RC dSPNs.",
+      "claim_type": "EXPLICIT",
+      "source": "While the overlap area of GluA1 and PSD95 nanodomains was found elevated in the dendritic spines of +/RC dSPNs, no differences were observed in +/GS neurons, compared to +/+ neurons (+/RC, 137% of control, +/GS, 102% of control one-way ANOVA p=0.0215, post hoc tests as noted, n = 75\u201393 dendritic spines/genotype) (Figure 2F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental data from SIM imaging with statistical testing shown in Figure 2F",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:21:48.113786Z"
+    },
+    {
+      "id": "5d5000f0-a625-4809-990b-a38b1c503911",
+      "content_id": "2084b190-a1fc-46a8-8457-96cbdf66972d",
+      "claim_id": "C43",
+      "claim": "32% of total PSD95 area contained GluA1 in +/RC dSPNs, compared to 23% in +/+ neurons, and 26% in +/GS neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "32% of total PSD95 area contained GluA1 in +/RC dSPNs, compared to 23% in +/+ neurons, and 26% in +/GS neurons (one-way ANOVA p=0.0015, post hoc tests as noted) (Figure 2H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental data from SIM imaging with statistical testing shown in Figure 2H",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:21:48.113786Z"
+    },
+    {
+      "id": "427782a0-cb4a-4245-b5f0-2d8903f84888",
+      "content_id": "2084b190-a1fc-46a8-8457-96cbdf66972d",
+      "claim_id": "C44",
+      "claim": "A positive correlation was observed between GluA1-PSD95 overlap nanodomain area and PSD95 area in all three genotypes of dSPNs.",
+      "claim_type": "EXPLICIT",
+      "source": "A positive correlation was observed in all three genotypes (control, Spearman r = 0.5822, p-value<0.0001, +/RC, r = 0.6522, p<0.0001 and +/GS r = 0.6569, p-value<0.0001).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Statistical correlation analysis of SIM imaging data shown in Figure 2I-K",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:21:48.113786Z"
+    },
+    {
+      "id": "4cc97996-169d-453d-8299-dba93e74595c",
+      "content_id": "2084b190-a1fc-46a8-8457-96cbdf66972d",
+      "claim_id": "C45",
+      "claim": "The correlation between GluA1-PSD95 overlap and PSD95 area was stronger in LRRK2 mutant SPNs.",
+      "claim_type": "EXPLICIT",
+      "source": "The correlation was stronger in LRRK2 mutant SPNs (Figure 2I\u2013K).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Statistical correlation analysis of SIM imaging data shown in Figure 2I-K",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:21:48.113786Z"
+    },
+    {
+      "id": "6ab155d0-32a3-4850-9505-4ec3142f609c",
+      "content_id": "2084b190-a1fc-46a8-8457-96cbdf66972d",
+      "claim_id": "C46",
+      "claim": "The overlap GluA1 and PSD95 area was increased in +/GS iSPNs.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that the overlap GluA1 and PSD95 area was increased in +/GS SPNs (+/RC, 105% of control, +/GS, 155% of control, one-way ANOVA, p<0.0001; post hoc tests as noted, p=72\u201388 dendritic spines/genotype) (Figure 3F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental data from SIM imaging with statistical testing shown in Figure 3F",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:21:48.113786Z"
+    },
+    {
+      "id": "bc7d0220-9355-4c04-b91a-7df6ffa31c30",
+      "content_id": "2084b190-a1fc-46a8-8457-96cbdf66972d",
+      "claim_id": "C47",
+      "claim": "The mean PSD95 area was increased in the +/GS iSPNs.",
+      "claim_type": "EXPLICIT",
+      "source": "Further analysis showed an increase in the mean PSD95 area in the +/GS neurons (+/RC, 123% of control, +/GS, 137% of control, one-way ANOVA, p=0.0008, post hoc tests as noted) (Figure 2\u2014figure supplement 1C)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental data from SIM imaging with statistical testing shown in Figure 2\u2014figure supplement 1C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:21:48.113786Z"
+    },
+    {
+      "id": "429e581a-61d0-4ac8-aa0e-59ed1e347711",
+      "content_id": "2084b190-a1fc-46a8-8457-96cbdf66972d",
+      "claim_id": "C48",
+      "claim": "The percentage of the total PSD95 area containing GluA1 nanodomains in +/GS iSPNs compared to controls was similar.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the percentage of the total PSD95 area containing GluA1 nanodomains +/GS iSPNs compared to controls was similar (one-way ANOVA, p=0.469) (Figure 3H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental data from SIM imaging with statistical testing shown in Figure 3H",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:21:48.113786Z"
+    },
+    {
+      "id": "bebe04cb-2bc2-4361-b41f-93101a5ac1e7",
+      "content_id": "2084b190-a1fc-46a8-8457-96cbdf66972d",
+      "claim_id": "C49",
+      "claim": "The increased size of GluA1-PSD95 overlapping domains in the +/GS iSPNs reflects the elevated PSD95 area of these neurons, and not synaptic GluA1 incorporation.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the increased size of GluA1-PSD95 overlapping domains in the +/GS iSPNs reflects the elevated PSD95 area of these neurons (Figure 2\u2014figure supplement 1C-D), and not synaptic GluA1 incorporation, as found in +/RC.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inference based on comparison of multiple measurements from SIM imaging data",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:21:48.113786Z"
+    },
+    {
+      "id": "186897d8-4581-40d6-99d4-6e2002e3615a",
+      "content_id": "2084b190-a1fc-46a8-8457-96cbdf66972d",
+      "claim_id": "C50",
+      "claim": "PSD95 area correlated with the overlap GluA1-PSD95 domain size in all iSPN genotypes.",
+      "claim_type": "EXPLICIT",
+      "source": "In general, PSD95 area correlated with the overlap GluA1-PSD95 domain size in all genotypes (control, Spearman r = 0.7817, p<0.0001, +/RC, r = 0.4040, p=0.0003 and +/GS, r = 0.7349, p<0.0001) (Figure 3I\u2013K).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Statistical correlation analysis of SIM imaging data shown in Figure 3I-K",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:21:48.113786Z"
+    },
+    {
+      "id": "2305289f-de43-4312-b9e8-75528547aa15",
+      "content_id": "2084b190-a1fc-46a8-8457-96cbdf66972d",
+      "claim_id": "C51",
+      "claim": "For larger PSD95 domains, mutant LRRK2 dSPNs show a tendency towards larger overlap between GluA1 and PSD95.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on Figure 2I, we found that for larger PSD95 domains, mutant LRRK2 dSPNs show a tendency towards larger overlap between GluA1 and PSD95.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inference from correlation analysis shown in Figure 2I",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:21:48.113786Z"
+    },
+    {
+      "id": "149527b3-b76e-4d8b-bdc6-d8c72c7becaa",
+      "content_id": "2084b190-a1fc-46a8-8457-96cbdf66972d",
+      "claim_id": "C52",
+      "claim": "In +/RC iSPNs, some high overlap GluA1-PSD95 domains were characterized by smaller PSD95 areas.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, in +/RC iSPNs, some high overlap GluA1-PSD95 domains were characterized by smaller PSD95 areas.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Observation from correlation analysis shown in Figure 3J",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:21:48.113786Z"
+    },
+    {
+      "id": "f276e02d-c165-49aa-89da-7f5892e67a88",
+      "content_id": "2084b190-a1fc-46a8-8457-96cbdf66972d",
+      "claim_id": "C53",
+      "claim": "The mean frequency of mEPSCs was decreased relative to controls for both LRRK2 mutations in dSPNs.",
+      "claim_type": "EXPLICIT",
+      "source": "For dSPNs, the mean frequency of mEPSCs, averaged within each neuron, was decreased relative to controls for both LRRK2 mutations (GFP-, RC 60% of control, GS, 47% of control; two-way ANOVA, genotype main effect, p<0.001, post-hoc tests as noted) (Figure 4A\u2013B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental data from electrophysiological recordings with statistical testing shown in Figure 4A-B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:21:48.113786Z"
+    },
+    {
+      "id": "1b36f332-7008-4bd6-8f06-4e00c66d82f6",
+      "content_id": "2084b190-a1fc-46a8-8457-96cbdf66972d",
+      "claim_id": "C54",
+      "claim": "Lower mean frequency of mEPSCs was observed in both RC and GS iSPNs.",
+      "claim_type": "EXPLICIT",
+      "source": "For iSPNs, lower mean frequency of mEPSCs, averaged within each neuron, was observed in both RC and GS neurons (GFP-, RC 60% of control, GS, 52% of control; two-way ANOVA, genotype main effect, p<0.001, post-hoc tests as noted).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental data from electrophysiological recordings with statistical testing shown in Figure 4",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:21:48.113786Z"
+    },
+    {
+      "id": "cadc5680-57b1-4ee8-8d5f-3cfd099815fd",
+      "content_id": "2084b190-a1fc-46a8-8457-96cbdf66972d",
+      "claim_id": "C55",
+      "claim": "No significant differences in the mean within-cell mEPSC response amplitude were observed across all six genotype/cell type combinations on post-hoc comparisons.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to the mean frequency of mEPSCs, no significant differences in the mean within-cell response amplitude were observed across all six genotype/cell type combinations on post-hoc comparisons, despite a modest main effect of genotype (GFP-, RC 107% of control, GS, 92% of control; GFP+, RC 108% of control, GS 94% of control; two-way ANOVA, genotype main effect, p=0.041, N = 13\u201314 neurons/group) (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental data from electrophysiological recordings with statistical testing shown in Figure 4C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:21:48.113786Z"
+    },
+    {
+      "id": "ec0cd116-f3cd-413a-ae06-76b50ac6ac48",
+      "content_id": "2084b190-a1fc-46a8-8457-96cbdf66972d",
+      "claim_id": "C56",
+      "claim": "mEPSC amplitudes in RC dSPNs were shifted toward larger events.",
+      "claim_type": "EXPLICIT",
+      "source": "mEPSC amplitudes in RC dSPNs were shifted toward larger events, and smaller events in GS dSPNs, with no differences in iSPNs (dSPNs, Bonferroni post-hoc comparisons, p<0.0001; iSPNs, p>0.7) (Figure 4, Figure 4\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Statistical analysis using generalized linear modeling shown in Figure 4 and Figure 4\u2014figure supplement 1B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:21:48.113786Z"
+    },
+    {
+      "id": "e3b0ac71-aadf-43de-9e6e-6ed14f56f8a9",
+      "content_id": "2084b190-a1fc-46a8-8457-96cbdf66972d",
+      "claim_id": "C57",
+      "claim": "mEPSC amplitudes in GS dSPNs were shifted toward smaller events.",
+      "claim_type": "EXPLICIT",
+      "source": "mEPSC amplitudes in RC dSPNs were shifted toward larger events, and smaller events in GS dSPNs, with no differences in iSPNs (dSPNs, Bonferroni post-hoc comparisons, p<0.0001; iSPNs, p>0.7) (Figure 4, Figure 4\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Statistical analysis using generalized linear modeling shown in Figure 4 and Figure 4\u2014figure supplement 1B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:21:48.113786Z"
+    },
+    {
+      "id": "2503403d-2da7-4586-a44a-597b413fd326",
+      "content_id": "2084b190-a1fc-46a8-8457-96cbdf66972d",
+      "claim_id": "C58",
+      "claim": "No differences in dendritic spine density were observed for all six genotype/cell type combinations.",
+      "claim_type": "EXPLICIT",
+      "source": "No differences in any of these parameters were observed for all six genotype/cell type combinations (two-way ANOVA, n = 9\u201312 SPNs from 3 to 4 mice/genotype) (Figure 5B\u2013E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental data from confocal imaging with statistical testing shown in Figure 5B-E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:21:48.113786Z"
+    },
+    {
+      "id": "41d05e94-916f-479f-b2f0-a03b12f5192a",
+      "content_id": "2084b190-a1fc-46a8-8457-96cbdf66972d",
+      "claim_id": "C59",
+      "claim": "No differences in spine head width were observed for all six genotype/cell type combinations.",
+      "claim_type": "EXPLICIT",
+      "source": "No differences in any of these parameters were observed for all six genotype/cell type combinations (two-way ANOVA, n = 9\u201312 SPNs from 3 to 4 mice/genotype) (Figure 5B\u2013E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental data from confocal imaging with statistical testing shown in Figure 5B-E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:21:48.113786Z"
+    },
+    {
+      "id": "9d04c46e-0668-4b36-8ca9-9ce4edfc2777",
+      "content_id": "2084b190-a1fc-46a8-8457-96cbdf66972d",
+      "claim_id": "C60",
+      "claim": "No differences in spine length were observed for all six genotype/cell type combinations.",
+      "claim_type": "EXPLICIT",
+      "source": "No differences in any of these parameters were observed for all six genotype/cell type combinations (two-way ANOVA, n = 9\u201312 SPNs from 3 to 4 mice/genotype) (Figure 5B\u2013E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental data from confocal imaging with statistical testing shown in Figure 5B-E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:21:48.113786Z"
+    },
+    {
+      "id": "70947ef3-0f55-4841-9d5d-dd5da7a3f6c1",
+      "content_id": "2084b190-a1fc-46a8-8457-96cbdf66972d",
+      "claim_id": "C61",
+      "claim": "No difference in dendritic spine type was observed in SPNs of either pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "Further dendritic spine classification showed no difference in dendritic spine type in SPNs of either pathway (two-way ANOVA, n = 9\u201314 SPNs for 3\u20134 mice/genotype) (Figure 5F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental data from confocal imaging with statistical testing shown in Figure 5F",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:21:48.113786Z"
+    },
+    {
+      "id": "c9094ed7-ec3a-48b6-bfa1-8acacd3b6e16",
+      "content_id": "2084b190-a1fc-46a8-8457-96cbdf66972d",
+      "claim_id": "C62",
+      "claim": "The functional synaptic alterations observed in +/RC and +/GS mutant SPNs are not reflected in uniform changes in dendritic spine number or morphology.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, these data suggest that the functional synaptic alterations (Figure 4) observed in +/RC and +/GS mutant SPNs are not reflected in uniform changes in dendritic spine number or morphology.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on comparison of functional and morphological data",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:21:48.113786Z"
+    },
+    {
+      "id": "ecb03b8c-61a2-4ce1-81e4-4e17b6182b06",
+      "content_id": "2084b190-a1fc-46a8-8457-96cbdf66972d",
+      "claim_id": "C63",
+      "claim": "Single spine glutamate uEPSCs were increased in amplitude selectively in dSPNs of RC genotype mice.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that single spine glutamate uEPSCs were increased in amplitude selectively in dSPNs of RC genotype mice (GFP-, +/RC 196% of control, GS, 102% of control; one-way ANOVA, p<0.05, post hoc tests, as noted; n = 18\u201328 dendritic spines/group) (Figure 6D\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental data from two-photon glutamate uncaging with statistical testing shown in Figure 6D-F",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:21:48.113786Z"
+    },
+    {
+      "id": "ae360999-c7e1-4274-826c-44b6aad3e272",
+      "content_id": "2084b190-a1fc-46a8-8457-96cbdf66972d",
+      "claim_id": "C64",
+      "claim": "No uEPSC amplitude differences were observed in iSPNs across genotypes.",
+      "claim_type": "EXPLICIT",
+      "source": "For Drd2-eGFP+ SPNs (iSPNs), no uEPSC amplitude differences were observed (GFP+, RC 70% of control, GS, 80% of control; one-way ANOVA, p=0.1682; n = 21\u201365 dendritic spines/group), suggesting a pathway-specific effect on single synapse function in the RC genotype.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental data from two-photon glutamate uncaging with statistical testing shown in Figure 6F",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:21:48.113786Z"
+    },
+    {
+      "id": "e2e1cee8-4f70-4efb-bcd5-ede2f919ff92",
+      "content_id": "2084b190-a1fc-46a8-8457-96cbdf66972d",
+      "claim_id": "C65",
+      "claim": "The two most common LRRK2 gain-of-function pathogenic mutations alter the function of SPN excitatory synapses in largely similar ways, with several potentially important differences.",
+      "claim_type": "EXPLICIT",
+      "source": "By studying RC and GS KI mouse lines side by side, we were able to demonstrate that the two most common LRRK2 gain-of-function pathogenic mutations (Hernandez et al., 2016) alter the function of SPN excitatory synapses in largely similar ways, with several potentially important differences.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary conclusion based on multiple experimental findings with citation",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:21:48.113786Z"
+    },
+    {
+      "id": "71d865e7-50a1-4c29-af6f-5f77f8d36fd5",
+      "content_id": "2084b190-a1fc-46a8-8457-96cbdf66972d",
+      "claim_id": "C66",
+      "claim": "The observed changes were frequently stronger for the RC mutations, and more exaggerated in the direct pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "The observed changes were frequently stronger for the RC mutations, and more exaggerated in the direct pathway.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary conclusion based on multiple experimental findings",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:21:48.113786Z"
+    },
+    {
+      "id": "68610968-066b-4bf2-a576-5246e8d9fd80",
+      "content_id": "2084b190-a1fc-46a8-8457-96cbdf66972d",
+      "claim_id": "C67",
+      "claim": "PKA-driven signaling requirements for iSPNs are more complex than for dSPNs, due to the involvement of adenosine.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to dSPNs, PKA-driven signaling requirements for iSPNs are more complex, due to the involvement of adenosine. This molecule can be released by neurons or glia (Surmeier et al., 2007), (Zhang et al., 2019), complicating predictions for PKA involvement in mutant LRRK2 function in iSPNs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on established knowledge about adenosine signaling, supported by citations",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:21:48.113786Z"
+    },
+    {
+      "id": "eb6705e0-938a-4d3f-9ff3-55ffde4bcad9",
+      "content_id": "2084b190-a1fc-46a8-8457-96cbdf66972d",
+      "claim_id": "C68",
+      "claim": "Adenosine can be released by neurons or glia.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to dSPNs, PKA-driven signaling requirements for iSPNs are more complex, due to the involvement of adenosine. This molecule can be released by neurons or glia (Surmeier et al., 2007), (Zhang et al., 2019), complicating predictions for PKA involvement in mutant LRRK2 function in iSPNs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:21:48.113786Z"
+    },
+    {
+      "id": "67a4d5c9-cf79-4fbc-ac14-67406f818e82",
+      "content_id": "2084b190-a1fc-46a8-8457-96cbdf66972d",
+      "claim_id": "C69",
+      "claim": "Several prior reports demonstrate a LRRK2 mediated presynaptic regulation of glutamatergic transmission.",
+      "claim_type": "EXPLICIT",
+      "source": "Several prior reports demonstrate a LRRK2 mediated presynaptic regulation of glutamatergic transmission (Matikainen-Ankney et al., 2016; Volta et al., 2017; Beccano-Kelly et al., 2015; Piccoli et al., 2011), while emerging evidence emphasizes a postsynaptic role for LRRK2 (Parisiadou et al., 2014; Matikainen-Ankney et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to multiple prior studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:21:48.113786Z"
+    },
+    {
+      "id": "6586939e-68e9-4cda-a1e7-be36025a31fd",
+      "content_id": "2084b190-a1fc-46a8-8457-96cbdf66972d",
+      "claim_id": "C70",
+      "claim": "Emerging evidence emphasizes a postsynaptic role for LRRK2.",
+      "claim_type": "EXPLICIT",
+      "source": "Several prior reports demonstrate a LRRK2 mediated presynaptic regulation of glutamatergic transmission (Matikainen-Ankney et al., 2016; Volta et al., 2017; Beccano-Kelly et al., 2015; Piccoli et al., 2011), while emerging evidence emphasizes a postsynaptic role for LRRK2 (Parisiadou et al., 2014; Matikainen-Ankney et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior studies including authors' work",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:21:48.113786Z"
+    },
+    {
+      "id": "ec84dc4b-01d3-4b28-9391-0f2377407192",
+      "content_id": "2084b190-a1fc-46a8-8457-96cbdf66972d",
+      "claim_id": "C71",
+      "claim": "Despite the elevated GluA1 levels in the synapses of +/RC dSPNs, there were no alterations in mean mEPSCs amplitude in these neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite the elevated GluA1 levels in the synapses of +/RC dSPNs, there were no alterations in mean mEPSCs amplitude in these neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of findings from multiple experiments",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:21:48.113786Z"
+    },
+    {
+      "id": "e78becfd-095e-4282-aa5a-1a2576330591",
+      "content_id": "2084b190-a1fc-46a8-8457-96cbdf66972d",
+      "claim_id": "C72",
+      "claim": "Cumulative probability analysis demonstrated that the mEPSC amplitude shifted toward larger values in the +/RC dSPNs.",
+      "claim_type": "EXPLICIT",
+      "source": "However, cumulative probability analysis demonstrated that the amplitude shifted toward larger values in the +/RC dSPNs, suggesting an inhomogeneity of synaptic function, where a fraction of synapses exhibit larger GluA1-dependent responses and single-synapse uncaging-evoked EPSCs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of statistical analysis from electrophysiology data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:21:48.113786Z"
+    },
+    {
+      "id": "f533fb82-5313-400d-8497-2b191fc1e9c1",
+      "content_id": "2084b190-a1fc-46a8-8457-96cbdf66972d",
+      "claim_id": "C73",
+      "claim": "A fraction of synapses in +/RC dSPNs exhibit larger GluA1-dependent responses and single-synapse uncaging-evoked EPSCs.",
+      "claim_type": "EXPLICIT",
+      "source": "However, cumulative probability analysis demonstrated that the amplitude shifted toward larger values in the +/RC dSPNs, suggesting an inhomogeneity of synaptic function, where a fraction of synapses exhibit larger GluA1-dependent responses and single-synapse uncaging-evoked EPSCs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on distribution analysis of electrophysiology data",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:21:48.113786Z"
+    },
+    {
+      "id": "9b8347b3-2928-4ba1-8d24-e015465b8804",
+      "content_id": "2084b190-a1fc-46a8-8457-96cbdf66972d",
+      "claim_id": "C74",
+      "claim": "The scenario of inhomogeneous synaptic function is expected to bias mutant dSPN responses to be driven by a narrower set of glutamatergic inputs than is normally the case.",
+      "claim_type": "EXPLICIT",
+      "source": "This scenario, on top of overall dampening of mEPSC frequency, is expected to bias mutant dSPN responses to be driven by a narrower set of glutamatergic inputs than is normally the case.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference about functional consequences based on experimental findings",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:21:48.113786Z"
+    },
+    {
+      "id": "17da7aa0-c3ed-42a4-917b-885a8a235b06",
+      "content_id": "2084b190-a1fc-46a8-8457-96cbdf66972d",
+      "claim_id": "C75",
+      "claim": "Over time, a small bias in synaptic function could be amplified through the recurrent circuitry of basal ganglia loops.",
+      "claim_type": "EXPLICIT",
+      "source": "Overtime, a small bias could be amplified through the recurrent circuitry of basal ganglia loops (Kozorovitskiy et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculation about long-term consequences supported by citation about circuit organization",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:21:48.113786Z"
+    },
+    {
+      "id": "1a9675d6-7889-4311-b24e-272da0695ced",
+      "content_id": "2084b190-a1fc-46a8-8457-96cbdf66972d",
+      "claim_id": "C76",
+      "claim": "One recent report showed elevations in spontaneous EPSCs events frequency in GS KI mice at 1\u20133 months.",
+      "claim_type": "EXPLICIT",
+      "source": "One recent report showed elevations in spontaneous EPSCs events frequency in GS KI mice at 1\u20133 months (Volta et al., 2017), while another reported changes in spontaneous but not miniature events with the GS mutation in pre-weaning mutants (Matikainen-Ankney et al., 2016), although recordings were primarily performed in a mixed population of direct and indirect pathway SPNs, and neither study thoroughly compared the two mutations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to prior study",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:21:48.113786Z"
+    },
+    {
+      "id": "ca5c1a0b-cdc6-4624-bd3f-a4c587c31e64",
+      "content_id": "2084b190-a1fc-46a8-8457-96cbdf66972d",
+      "claim_id": "C77",
+      "claim": "Another report showed changes in spontaneous but not miniature events with the GS mutation in pre-weaning mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "One recent report showed elevations in spontaneous EPSCs events frequency in GS KI mice at 1\u20133 months (Volta et al., 2017), while another reported changes in spontaneous but not miniature events with the GS mutation in pre-weaning mutants (Matikainen-Ankney et al., 2016), although recordings were primarily performed in a mixed population of direct and indirect pathway SPNs, and neither study thoroughly compared the two mutations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to prior study",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:21:48.113786Z"
+    },
+    {
+      "id": "5e56b30c-96d6-4e3a-9d54-993e7e59cddb",
+      "content_id": "2084b190-a1fc-46a8-8457-96cbdf66972d",
+      "claim_id": "C78",
+      "claim": "Prior studies primarily performed recordings in a mixed population of direct and indirect pathway SPNs.",
+      "claim_type": "EXPLICIT",
+      "source": "One recent report showed elevations in spontaneous EPSCs events frequency in GS KI mice at 1\u20133 months (Volta et al., 2017), while another reported changes in spontaneous but not miniature events with the GS mutation in pre-weaning mutants (Matikainen-Ankney et al., 2016), although recordings were primarily performed in a mixed population of direct and indirect pathway SPNs, and neither study thoroughly compared the two mutations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Critique of prior studies based on their methods",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:21:48.113786Z"
+    },
+    {
+      "id": "d4ce4cb1-e86d-4d42-86f4-8fe480b1a53d",
+      "content_id": "2084b190-a1fc-46a8-8457-96cbdf66972d",
+      "claim_id": "C79",
+      "claim": "Differences in spontaneous event frequency point to a potential circuit-level compensatory mechanism that may be driven by disturbances in a subset of SPN excitatory synapses.",
+      "claim_type": "EXPLICIT",
+      "source": "Such differences in spontaneous event frequency point to a potential circuit-level compensatory mechanism that may be driven by disturbances in a subset of SPN excitatory synapses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculation about mechanisms based on comparison of findings",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:21:48.113786Z"
+    },
+    {
+      "id": "157a23bc-08c0-441d-a61a-62d6db7d10fa",
+      "content_id": "2084b190-a1fc-46a8-8457-96cbdf66972d",
+      "claim_id": "C80",
+      "claim": "In the presence of clear functional and nano-architecture abnormalities, aggregate dendritic spine density and morphology appeared normal.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, in the presence of clear functional and nano-architecture abnormalities, aggregate dendritic spine density and morphology, at least at the ages we evaluated, appeared normal.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of findings from multiple experiments",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:21:48.113786Z"
+    },
+    {
+      "id": "cc1fd085-92dc-45d9-87e4-b945e2f51863",
+      "content_id": "2084b190-a1fc-46a8-8457-96cbdf66972d",
+      "claim_id": "C81",
+      "claim": "One possible explanation for the mismatch between functional abnormalities and normal spine morphology is the possibility of higher occurrence of nonfunctional or differently functioning spines in LRRK2 mutant SPNs.",
+      "claim_type": "EXPLICIT",
+      "source": "One possible explanation for this mismatch that requires further investigation is the possibility of higher occurrence of nonfunctional or differently functioning spines in LRRK2 mutant SPNs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculation about potential explanation for observed findings",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:21:48.113786Z"
+    },
+    {
+      "id": "50a46d6d-9616-487b-bf64-1b8ea4d53c53",
+      "content_id": "2084b190-a1fc-46a8-8457-96cbdf66972d",
+      "claim_id": "C82",
+      "claim": "Dopamine loss causes pathway-specific morphological and functional changes in SPNs.",
+      "claim_type": "EXPLICIT",
+      "source": "It is well-established that dopamine loss causes pathway-specific morphological and functional changes in SPNs (Kravitz et al., 2010; Fieblinger et al., 2014; Gertler et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Established knowledge supported by citations",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:21:48.113786Z"
+    },
+    {
+      "id": "b4592bce-a683-458e-94c9-f4bc2aed12d8",
+      "content_id": "2084b190-a1fc-46a8-8457-96cbdf66972d",
+      "claim_id": "C83",
+      "claim": "dSPNs and iSPNs exhibit opposing PKA pathway signaling properties after dopamine receptor activation.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, dSPNs and iSPNs exhibit opposing PKA pathway signaling properties after dopamine receptor activation (Gerfen and Surmeier, 2011; Surmeier et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Established knowledge supported by citations",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:21:48.113786Z"
+    },
+    {
+      "id": "79396479-be0e-4a74-89a7-825ca406a910",
+      "content_id": "2084b190-a1fc-46a8-8457-96cbdf66972d",
+      "claim_id": "C84",
+      "claim": "LRRK2 plays a critical role in synaptic PKA activities.",
+      "claim_type": "EXPLICIT",
+      "source": "Given the critical role of LRRK2 in synaptic PKA activities (Parisiadou et al., 2014; Tozzi et al., 2018b), these mutations are poised to have pathway specific effects and present distinct opportunities for pathway-targeted therapies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations including authors' prior work",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:21:48.113786Z"
+    },
+    {
+      "id": "34766d42-8d5c-42a9-ad84-0b9f50cba09e",
+      "content_id": "2084b190-a1fc-46a8-8457-96cbdf66972d",
+      "claim_id": "C85",
+      "claim": "LRRK2 mutations are poised to have pathway specific effects and present distinct opportunities for pathway-targeted therapies.",
+      "claim_type": "EXPLICIT",
+      "source": "Given the critical role of LRRK2 in synaptic PKA activities (Parisiadou et al., 2014; Tozzi et al., 2018b), these mutations are poised to have pathway specific effects and present distinct opportunities for pathway-targeted therapies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on established knowledge and current findings",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:21:48.113786Z"
+    },
+    {
+      "id": "c2d6b97c-2097-4d44-897b-710b97b40947",
+      "content_id": "2084b190-a1fc-46a8-8457-96cbdf66972d",
+      "claim_id": "C86",
+      "claim": "Gene-targeted mutant LRRK2 KI mice represent the most physiologically relevant model to investigate LRRK2 mediated alterations and unravel disease mechanisms.",
+      "claim_type": "EXPLICIT",
+      "source": "Gene-targeted mutant LRRK2 KI mice represent the most physiologically relevant model to investigate LRRK2 mediated alterations and unravel disease mechanisms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Assertion about model validity based on general principles",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:21:48.113786Z"
+    },
+    {
+      "id": "ea3d7024-2f21-4035-ac32-eae084ca622f",
+      "content_id": "2084b190-a1fc-46a8-8457-96cbdf66972d",
+      "claim_id": "C87",
+      "claim": "The clinical phenotypes that define PD arise after a substantial loss of nigrostriatal dopamine signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "The clinical phenotypes that define PD arise after a substantial loss of nigrostriatal dopamine signaling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Established knowledge about PD pathophysiology",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:21:48.113786Z"
+    },
+    {
+      "id": "f92588be-ea72-4363-8779-525110dd70bb",
+      "content_id": "2084b190-a1fc-46a8-8457-96cbdf66972d",
+      "claim_id": "C88",
+      "claim": "The identification of pre-symptomatic dysfunctions offers a potential window of opportunity for the development of neuroprotective therapies in PD.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the identification of pre-symptomatic dysfunctions offers a potential window of opportunity for the development of neuroprotective therapies in PD.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference about therapeutic implications",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:21:48.113786Z"
+    },
+    {
+      "id": "fdce4449-d65b-4edf-a52f-bf6e537eeb6d",
+      "content_id": "2084b190-a1fc-46a8-8457-96cbdf66972d",
+      "claim_id": "C89",
+      "claim": "Asymptomatic LRRK2 mutation carriers show subtle motor and non-motor symptoms.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, emerging evidence suggests that asymptomatic LRRK2 mutation carriers do show subtle motor and non-motor symptoms, including alterations of corticostriatal circuit organization, in comparison to asymptomatic non-carriers (PPMI Investigators et al., 2020; LRRK2 Ashkenazi Jewish Consortium et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to clinical studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:21:48.113786Z"
+    },
+    {
+      "id": "e0e5a219-31d3-4c1d-ac3c-afb87a07d3b3",
+      "content_id": "2084b190-a1fc-46a8-8457-96cbdf66972d",
+      "claim_id": "C90",
+      "claim": "Asymptomatic LRRK2 mutation carriers show alterations of corticostriatal circuit organization.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, emerging evidence suggests that asymptomatic LRRK2 mutation carriers do show subtle motor and non-motor symptoms, including alterations of corticostriatal circuit organization, in comparison to asymptomatic non-carriers (PPMI Investigators et al., 2020; LRRK2 Ashkenazi Jewish Consortium et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to clinical studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:21:48.113786Z"
+    },
+    {
+      "id": "ee6aa9d2-94c5-4e11-8f91-f893d07fea1e",
+      "content_id": "2084b190-a1fc-46a8-8457-96cbdf66972d",
+      "claim_id": "C91",
+      "claim": "Cellular and synaptic dysfunctions in etiologically relevant LRRK2 mutant KI mice allow investigations of the early events that precede neuronal death and may be predictive of future dysfunction.",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, cellular and synaptic dysfunctions in etiologically relevant LRRK2 mutant KI mice allow investigations of the early events that precede neuronal death and may be predictive of future dysfunction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference about the value of the model system",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:21:48.113786Z"
+    },
+    {
+      "id": "1dc02d4d-d464-4853-9d6b-7b9683336fe6",
+      "content_id": "2084b190-a1fc-46a8-8457-96cbdf66972d",
+      "claim_id": "C92",
+      "claim": "Several studies have suggested a central role for LRRK2 in striatal SPNs.",
+      "claim_type": "EXPLICIT",
+      "source": "Several studies have suggested a central role for LRRK2 in striatal SPNs (Volta et al., 2017), (Parisiadou et al., 2014; Xenias, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior studies including authors' work",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:21:48.113786Z"
+    },
+    {
+      "id": "6ed64528-7f45-4e2f-b9bd-a3f6097dbea1",
+      "content_id": "2084b190-a1fc-46a8-8457-96cbdf66972d",
+      "claim_id": "C93",
+      "claim": "The presence of LRRK2 mutations can influence SPN function in a pathway-specific context, in the absence of dopamine neurodegeneration.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we show that the presence of LRRK2 mutations can influence SPN function in a pathway-specific context, in the absence of dopamine neurodegeneration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary conclusion based on experimental findings",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:21:48.113786Z"
+    },
+    {
+      "id": "9189c68a-eb54-4ddd-ad82-f3da9ef8c71b",
+      "content_id": "2084b190-a1fc-46a8-8457-96cbdf66972d",
+      "claim_id": "C94",
+      "claim": "At first iSPNs show the primary structural and functional synaptic and dendritic changes in response to dopamine loss.",
+      "claim_type": "EXPLICIT",
+      "source": "While there is evidence that at first iSPNs show the primary structural and functional synaptic and dendritic changes in response to dopamine loss (Gerfen, 2006; Gertler et al., 2008; Day et al., 2006; Villalba et al., 2009), with time both SPNs types undergo substantial adaptations (Suarez et al., 2018), (Gagnon et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:21:48.113786Z"
+    },
+    {
+      "id": "912fa1a6-a9fd-467c-ad83-09890d32f2fe",
+      "content_id": "2084b190-a1fc-46a8-8457-96cbdf66972d",
+      "claim_id": "C95",
+      "claim": "With time both dSPNs and iSPNs types undergo substantial adaptations in response to dopamine loss.",
+      "claim_type": "EXPLICIT",
+      "source": "While there is evidence that at first iSPNs show the primary structural and functional synaptic and dendritic changes in response to dopamine loss (Gerfen, 2006; Gertler et al., 2008; Day et al., 2006; Villalba et al., 2009), with time both SPNs types undergo substantial adaptations (Suarez et al., 2018), (Gagnon et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:21:48.113786Z"
+    },
+    {
+      "id": "ca740147-292d-4ec1-888e-c215f1f38687",
+      "content_id": "2084b190-a1fc-46a8-8457-96cbdf66972d",
+      "claim_id": "C96",
+      "claim": "Some early changes in LRRK2 mutant dSPNs are poised to contribute to the fragility of the system to lower levels of DA loss/variation.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we find that some early changes in LRRK2 mutant dSPNs \u2013 including those observed at the single synapse level \u2013 are poised to contribute to the fragility of the system to lower levels of DA loss/variation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference about functional consequences based on experimental findings",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:21:48.113786Z"
+    },
+    {
+      "id": "3e8c38d5-8609-4a6f-b73d-30a2d275ffb6",
+      "content_id": "2084b190-a1fc-46a8-8457-96cbdf66972d",
+      "claim_id": "C97",
+      "claim": "The recurrent circuitry of the basal ganglia enables the output of direct and indirect pathways to feed back to regulate cortico-striatal glutamate release.",
+      "claim_type": "EXPLICIT",
+      "source": "Because the well-described recurrent circuitry of the basal ganglia (Kozorovitskiy et al., 2012), (Kravitz et al., 2010; Oldenburg and Sabatini, 2015) enables the output of direct and indirect pathways to feed back to regulate cortico-striatal glutamate release, minor synaptic defects in LRRK2 mutant SPNs could be amplified over time, contributing to the life-time risk of the disorder.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Established knowledge supported by citations",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:21:48.113786Z"
+    },
+    {
+      "id": "49713d05-f755-4b9d-b3ca-3853650d35a6",
+      "content_id": "2084b190-a1fc-46a8-8457-96cbdf66972d",
+      "claim_id": "C98",
+      "claim": "Minor synaptic defects in LRRK2 mutant SPNs could be amplified over time, contributing to the life-time risk of the disorder.",
+      "claim_type": "EXPLICIT",
+      "source": "Because the well-described recurrent circuitry of the basal ganglia (Kozorovitskiy et al., 2012), (Kravitz et al., 2010; Oldenburg and Sabatini, 2015) enables the output of direct and indirect pathways to feed back to regulate cortico-striatal glutamate release, minor synaptic defects in LRRK2 mutant SPNs could be amplified over time, contributing to the life-time risk of the disorder.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculation about disease mechanism based on circuit properties",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:21:48.113786Z"
+    },
+    {
+      "id": "dd872a01-9f28-4658-88d1-4df6ac5c39dd",
+      "content_id": "2084b190-a1fc-46a8-8457-96cbdf66972d",
+      "claim_id": "C99",
+      "claim": "LRRK2 carriers show early corticostriatal alterations.",
+      "claim_type": "EXPLICIT",
+      "source": "The presence of early corticostriatal alterations in LRRK2 carriers (LRRK2 Ashkenazi Jewish Consortium et al., 2015; Vilas et al., 2015; the Barcelona LRRK2 Study Group et al., 2016), along with the evidence for finer scale synaptic dysfunctions reported in this study, open the possibilities for future personalized medicine approaches that take into account the specific LRRK2 mutation and emphasize protecting the health of striatal neurons prior to potential DA losses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to clinical studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:21:48.113786Z"
+    },
+    {
+      "id": "64307800-abec-4832-9858-9d17aba20c08",
+      "content_id": "2084b190-a1fc-46a8-8457-96cbdf66972d",
+      "claim_id": "C100",
+      "claim": "The evidence for finer scale synaptic dysfunctions opens the possibilities for future personalized medicine approaches that take into account the specific LRRK2 mutation.",
+      "claim_type": "EXPLICIT",
+      "source": "The presence of early corticostriatal alterations in LRRK2 carriers (LRRK2 Ashkenazi Jewish Consortium et al., 2015; Vilas et al., 2015; the Barcelona LRRK2 Study Group et al., 2016), along with the evidence for finer scale synaptic dysfunctions reported in this study, open the possibilities for future personalized medicine approaches that take into account the specific LRRK2 mutation and emphasize protecting the health of striatal neurons prior to potential DA losses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculation about therapeutic implications based on current findings",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:21:48.113786Z"
+    },
+    {
+      "id": "4d89cf27-6aaf-449c-b45d-30f56d68d253",
+      "content_id": "2084b190-a1fc-46a8-8457-96cbdf66972d",
+      "claim_id": "C101",
+      "claim": "Young adult male and female mice (postnatal days 30\u201350) were used in this study.",
+      "claim_type": "EXPLICIT",
+      "source": "Young adult male and female mice (postnatal days 30\u201350) were used in this study.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Methods description",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:21:48.113786Z"
+    },
+    {
+      "id": "b27e3995-fd22-42b7-98ef-396436a17f22",
+      "content_id": "2084b190-a1fc-46a8-8457-96cbdf66972d",
+      "claim_id": "C102",
+      "claim": "Approximately equal numbers of males and females were used for every experiment.",
+      "claim_type": "EXPLICIT",
+      "source": "Approximately equal numbers of males and females were used for every experiment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Methods description",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:21:48.113786Z"
+    },
+    {
+      "id": "43ef38b3-41e7-41de-91a4-7ecc5bff8f08",
+      "content_id": "2084b190-a1fc-46a8-8457-96cbdf66972d",
+      "claim_id": "C103",
+      "claim": "The PSD fraction showed enrichment of the postsynaptic marker PSD95, but not presynaptic protein synaptophysin.",
+      "claim_type": "EXPLICIT",
+      "source": "The PSD fraction showed enrichment of the postsynaptic marker PSD95, but not presynaptic protein synaptophysin (svp38) (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental validation of fractionation method shown in Figure 1C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:21:48.113786Z"
+    },
+    {
+      "id": "91c3aef6-f229-492b-b5da-7df4d8903dd3",
+      "content_id": "2084b190-a1fc-46a8-8457-96cbdf66972d",
+      "claim_id": "C104",
+      "claim": "PKA mediated phosphorylation of S845 in GluA1 has a significant impact on synaptic trafficking of GluA1.",
+      "claim_type": "EXPLICIT",
+      "source": "Given that PKA mediated phosphorylation of S845 in GluA1 has a significant impact on synaptic trafficking of GluA1 (Parisiadou et al., 2014), (Roche et al., 1996), we examined the levels of GluA1 in the PSD fractions of KI mice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Established knowledge supported by citations",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:21:48.113786Z"
+    },
+    {
+      "id": "e34240ec-81a4-464e-9467-c8a0e3f4fbd5",
+      "content_id": "2084b190-a1fc-46a8-8457-96cbdf66972d",
+      "claim_id": "C105",
+      "claim": "Phosphorylation of GluA1 at Ser 845 by PKA facilitates the targeting of the receptors to extrasynaptic membranes and their 'priming' for synaptic insertion.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, phosphorylation of GluA1 at Ser 845 by PKA facilitates the targeting of the receptors to extrasynaptic membranes and their 'priming' for synaptic insertion and this results in elevated GluA1 synaptic incorporation (Diering and Huganir, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Established mechanism supported by citation",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:21:48.113786Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "b5c0291d-fbe7-4afd-9c61-59b0c850010a",
+      "content_id": "2084b190-a1fc-46a8-8457-96cbdf66972d",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The manuscript establishes background knowledge about LRRK2, its expression in striatal SPNs, the two most common pathogenic mutations (R1441C and G2019S), and their biochemical properties. These claims describe established facts about LRRK2 structure, function, and role in Parkinson's disease pathogenesis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims represent well-established background knowledge supported by appropriate citations to prior literature. The claims accurately describe LRRK2 protein structure, mutation locations, expression patterns, and known biochemical effects. This foundational information is appropriately cited and provides necessary context for the experimental work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:21:48.113786Z"
+    },
+    {
+      "id": "13b9cfbb-199c-4035-b89d-6374ed9dda30",
+      "content_id": "2084b190-a1fc-46a8-8457-96cbdf66972d",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Prior studies have shown that LRRK2 mutations affect glutamatergic synaptic function through both presynaptic and postsynaptic mechanisms, with evidence for region-specific and pathway-specific effects. The literature shows inconsistent findings across different brain regions and experimental systems.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims accurately summarize prior work on LRRK2 function at glutamatergic synapses, appropriately citing relevant studies. The authors correctly identify gaps and inconsistencies in the literature, including regional differences and the lack of pathway-specific analyses. This provides strong justification for their experimental approach.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:21:48.113786Z"
+    },
+    {
+      "id": "fa00471c-584a-4794-a84b-dba5f9a4a6bf",
+      "content_id": "2084b190-a1fc-46a8-8457-96cbdf66972d",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Biochemical fractionation of striatal tissue reveals elevated PKA activity and increased phosphorylation of LRRK2 substrates (Rab8A, Rab10) specifically in the synaptic fraction of R1441C mutant mice. GluA1 levels and PKA activity are significantly increased in the postsynaptic density (PSD) fraction of R1441C but not G2019S mice.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C40 and C103 are well-supported by western blot data with appropriate statistical testing (one-way ANOVA with post-hoc tests, n=6 per group). The fractionation protocol is validated (C103), and PSD95 levels are shown to be unchanged across genotypes (C40), providing an appropriate normalization control. The selective effects in R1441C mice are consistently demonstrated across multiple readouts.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:21:48.113786Z"
+    },
+    {
+      "id": "5ca6716d-aac5-467d-b0eb-b5e368f3f335",
+      "content_id": "2084b190-a1fc-46a8-8457-96cbdf66972d",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The manuscript discusses the relationship between Rab8A as a LRRK2 substrate and the mechanism by which PKA-mediated phosphorylation of GluA1 at Ser845 regulates synaptic trafficking.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims represent established mechanistic knowledge appropriately cited from prior literature. The authors correctly note uncertainty about whether Rab8A phosphorylation occurs in striatum given low transcript levels (C36), demonstrating appropriate caution. The GluA1 phosphorylation mechanism (C104-C105) is well-established and properly cited.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:21:48.113786Z"
+    },
+    {
+      "id": "c8cf10ff-93c8-4103-85e6-258ac1385d78",
+      "content_id": "2084b190-a1fc-46a8-8457-96cbdf66972d",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Super-resolution structured illumination microscopy (SIM) reveals altered nanoscale organization of GluA1 and PSD95 in R1441C dSPNs, including decreased distance between GluA1 and PSD95, increased overlap area, and a higher percentage of PSD95 area containing GluA1. The correlation between GluA1-PSD95 overlap and PSD95 area is stronger in LRRK2 mutant dSPNs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41-C45 and C51 are supported by quantitative SIM imaging data with appropriate statistical testing (one-way ANOVA, Spearman correlation, n=75-93 spines per genotype from 9-12 neurons). The findings are internally consistent and align with the biochemical data showing increased GluA1 in R1441C PSDs. The correlation analysis (C44-C45, C51) provides additional support for mutation-specific effects on synaptic organization.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:21:48.113786Z"
+    },
+    {
+      "id": "d7cf6aaf-4a5b-4c88-a0f8-6b45bf56ee43",
+      "content_id": "2084b190-a1fc-46a8-8457-96cbdf66972d",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "In indirect pathway SPNs (iSPNs), G2019S mutation increases GluA1-PSD95 overlap area and PSD95 area, but the percentage of PSD95 containing GluA1 remains unchanged. The increased overlap reflects larger PSD95 domains rather than increased GluA1 incorporation. R1441C iSPNs show distinct patterns with some high-overlap domains having smaller PSD95 areas.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46-C52 are supported by SIM imaging data with appropriate statistics (one-way ANOVA, Spearman correlation, n=72-88 spines per genotype). The interpretation that G2019S effects reflect PSD95 size rather than GluA1 incorporation (C49) is well-reasoned based on the percentage analysis (C48). The observation about R1441C iSPNs (C52) adds nuance to the pathway-specific effects.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:21:48.113786Z"
+    },
+    {
+      "id": "a9acda87-72e4-40f3-92f6-71accc11b4e5",
+      "content_id": "2084b190-a1fc-46a8-8457-96cbdf66972d",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Electrophysiological recordings reveal decreased miniature EPSC (mEPSC) frequency in both dSPNs and iSPNs of R1441C and G2019S mice. Mean mEPSC amplitude shows no significant differences on post-hoc tests, but distribution analysis reveals that R1441C dSPNs show a shift toward larger amplitude events while G2019S dSPNs shift toward smaller events.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53-C57 are supported by whole-cell patch-clamp recordings with appropriate statistical methods (two-way ANOVA for frequency and amplitude means, generalized linear modeling with gamma distribution for amplitude distributions, n=13-14 neurons per group). The use of GLM with gamma distribution is justified based on the non-normal distribution of mEPSC amplitudes. The findings reveal important genotype- and pathway-specific differences in synaptic function.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:21:48.113786Z"
+    },
+    {
+      "id": "dc59e136-3457-4a5c-9703-4ee1904ae943",
+      "content_id": "2084b190-a1fc-46a8-8457-96cbdf66972d",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Despite clear functional and nanoscale structural abnormalities, aggregate measures of dendritic spine density, head width, length, and spine type classification show no differences across genotypes in either dSPNs or iSPNs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-C62 and C80 are supported by confocal imaging analysis with appropriate statistics (two-way ANOVA, n=9-14 SPNs from 3-4 mice per genotype). The lack of gross morphological changes despite functional alterations (C62, C80) is an important finding that suggests LRRK2 mutations affect synaptic function through molecular reorganization rather than structural remodeling. This is appropriately noted as surprising by the authors.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:21:48.113786Z"
+    },
+    {
+      "id": "083aeda4-f7dc-4808-aff2-342afae9d610",
+      "content_id": "2084b190-a1fc-46a8-8457-96cbdf66972d",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Two-photon glutamate uncaging reveals that single-spine uncaging-evoked EPSCs are selectively increased in amplitude in R1441C dSPNs (196% of control) but not in G2019S dSPNs or in iSPNs of either genotype.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C63-C64 are supported by two-photon uncaging experiments with appropriate statistics (one-way ANOVA with post-hoc tests, n=18-65 spines per group). This single-synapse functional assay provides direct evidence for pathway-specific and mutation-specific effects on synaptic strength, complementing the structural and electrophysiological findings. The selective effect in R1441C dSPNs is consistent with the biochemical and imaging data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:21:48.113786Z"
+    },
+    {
+      "id": "7fab1f5a-d11b-4318-b8ee-aeebab56bb62",
+      "content_id": "2084b190-a1fc-46a8-8457-96cbdf66972d",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The two most common LRRK2 mutations (R1441C and G2019S) alter SPN excitatory synapse function in largely similar ways but with important differences. Effects are frequently stronger for R1441C mutations and more exaggerated in the direct pathway, reshaping synaptic structure and function in a pathway-specific manner.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C65-C66, C7, and C93 represent the main conclusions of the study, synthesizing findings from multiple experimental approaches. These conclusions are well-supported by the convergent evidence from biochemistry, super-resolution imaging, electrophysiology, and single-synapse uncaging. The pathway-specific and mutation-specific effects are consistently demonstrated across multiple assays.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:21:48.113786Z"
+    },
+    {
+      "id": "390d079b-498b-435f-aad4-2f67137c0bd8",
+      "content_id": "2084b190-a1fc-46a8-8457-96cbdf66972d",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "PKA signaling requirements differ between dSPNs and iSPNs due to adenosine involvement in iSPNs, and the two SPN types exhibit opposing PKA pathway signaling properties after dopamine receptor activation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C67-C68 and C83 represent established knowledge about striatal circuitry, appropriately cited. This provides important context for interpreting the pathway-specific effects of LRRK2 mutations. The authors appropriately note that adenosine signaling complicates predictions for PKA involvement in iSPNs.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:21:48.113786Z"
+    },
+    {
+      "id": "fe554210-c087-4c19-b2d9-8643570f4ea1",
+      "content_id": "2084b190-a1fc-46a8-8457-96cbdf66972d",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Prior literature demonstrates both presynaptic and postsynaptic roles for LRRK2 in glutamatergic transmission, with LRRK2 playing a critical role in synaptic PKA activities.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C69-C70 and C84 accurately summarize prior work with appropriate citations, including the authors' own previous studies. This provides context for the current findings and supports the focus on postsynaptic mechanisms in the present study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:21:48.113786Z"
+    },
+    {
+      "id": "100ac0c4-6be5-4c5d-83ce-7cde71004c9e",
+      "content_id": "2084b190-a1fc-46a8-8457-96cbdf66972d",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Despite elevated GluA1 levels in R1441C dSPN synapses, mean mEPSC amplitude is unchanged. However, cumulative probability analysis reveals a shift toward larger amplitudes, suggesting inhomogeneous synaptic function where a fraction of synapses exhibit larger responses. This could bias mutant dSPN responses to be driven by a narrower set of inputs, potentially amplified over time through basal ganglia circuitry.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C71-C73 are well-supported by the electrophysiology data and represent an important mechanistic insight. The interpretation of inhomogeneous synaptic function (C73) is reasonable given the distribution analysis. However, claims C74-C75 are increasingly speculative about functional consequences and long-term effects. While plausible, these predictions about circuit-level effects and disease progression require future experimental validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:21:48.113786Z"
+    },
+    {
+      "id": "bba5e9db-4983-4140-942f-0a1cd7dc4eaa",
+      "content_id": "2084b190-a1fc-46a8-8457-96cbdf66972d",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The current findings of decreased miniature EPSC frequency differ from some prior reports showing increased spontaneous EPSC frequency in G2019S mice. Prior studies used mixed SPN populations and did not compare both mutations, potentially explaining discrepancies. Differences may point to circuit-level compensatory mechanisms.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C76-C78 accurately cite and critique prior literature, appropriately noting methodological differences (mixed populations, lack of mutation comparison). The speculation about compensatory mechanisms (C79) is reasonable but requires further investigation. The authors appropriately acknowledge the discrepancy with prior work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:21:48.113786Z"
+    },
+    {
+      "id": "acf3f94a-e0b0-4e33-9eb9-ef99ac7e254f",
+      "content_id": "2084b190-a1fc-46a8-8457-96cbdf66972d",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "One possible explanation for the mismatch between functional abnormalities and normal spine morphology is higher occurrence of nonfunctional or differently functioning spines in LRRK2 mutant SPNs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C81 is explicitly speculative and acknowledged by the authors as requiring further investigation. While this is a reasonable hypothesis to explain the apparent discrepancy between functional and morphological findings, it lacks direct experimental support in the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:21:48.113786Z"
+    },
+    {
+      "id": "e023081d-b2f5-4c8a-8306-84dc3d584d71",
+      "content_id": "2084b190-a1fc-46a8-8457-96cbdf66972d",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Dopamine loss causes pathway-specific morphological and functional changes in SPNs, with iSPNs showing primary changes initially and both SPN types undergoing adaptations over time. The recurrent circuitry of the basal ganglia enables pathway outputs to feed back and regulate corticostriatal glutamate release.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C82, C94-C95, and C97 represent established knowledge about striatal circuitry and responses to dopamine depletion, appropriately cited. This provides important context for understanding how LRRK2 mutations might interact with dopamine loss in disease progression.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:21:48.113786Z"
+    },
+    {
+      "id": "07bfc0aa-fa9a-49b1-bf6b-d8b19c8f0648",
+      "content_id": "2084b190-a1fc-46a8-8457-96cbdf66972d",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "LRRK2 mutations are poised to have pathway-specific effects presenting opportunities for targeted therapies. Gene-targeted knock-in mice represent physiologically relevant models for investigating early pre-symptomatic dysfunctions. Early changes in LRRK2 mutant dSPNs may contribute to system fragility and could be amplified over time through basal ganglia circuitry, contributing to lifetime disease risk. These findings open possibilities for personalized medicine approaches.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C85-C86, C88, C91, C96, C98, and C100 represent a mix of reasonable inferences and speculations about therapeutic implications and disease mechanisms. While the model system is appropriate (C86) and the identification of pre-symptomatic changes is valuable (C88, C91), the predictions about disease progression (C96, C98) and therapeutic opportunities (C85, C100) are speculative and require future validation. These represent important hypotheses but are not directly tested in the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:21:48.113786Z"
+    },
+    {
+      "id": "15e8acac-4aa4-4fd7-b213-4507e7aaf72b",
+      "content_id": "2084b190-a1fc-46a8-8457-96cbdf66972d",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Clinical PD phenotypes arise after substantial dopamine loss. Asymptomatic LRRK2 carriers show subtle symptoms and corticostriatal alterations. Several studies suggest a central role for LRRK2 in striatal SPNs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C87, C89-C90, C92, and C99 represent established clinical and experimental knowledge, appropriately cited. This provides important context linking the mouse model findings to human disease and supporting the translational relevance of the work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:21:48.113786Z"
+    },
+    {
+      "id": "2477f455-3b51-437e-9f99-4c072b58ad4b",
+      "content_id": "2084b190-a1fc-46a8-8457-96cbdf66972d",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "The study used R1441C and G2019S knock-in mice crossed with pathway-specific reporter lines to enable thorough evaluation of dendritic spines and synapses on pathway-identified SPNs. Young adult mice (P30-50) of both sexes were used with approximately equal numbers of males and females.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4-C6, C101-C102 describe the experimental approach and are supported by the methods and results. The use of pathway-specific reporters, multiple complementary techniques, and balanced sex representation are strengths of the study design. The age range is appropriate for examining synaptic function before potential dopamine loss.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:21:48.113786Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "9fcbcfd9-825c-4919-aa26-0c996b880202",
+      "result_id": "b5c0291d-fbe7-4afd-9c61-59b0c850010a"
+    },
+    {
+      "claim_id": "4cc0347a-7c6d-48de-9a7d-fb394f61ec33",
+      "result_id": "b5c0291d-fbe7-4afd-9c61-59b0c850010a"
+    },
+    {
+      "claim_id": "80c24295-f79e-4f2a-bef3-ca5db527a1ee",
+      "result_id": "b5c0291d-fbe7-4afd-9c61-59b0c850010a"
+    },
+    {
+      "claim_id": "2649d304-b9e3-4d60-8466-f17c3c482c69",
+      "result_id": "b5c0291d-fbe7-4afd-9c61-59b0c850010a"
+    },
+    {
+      "claim_id": "1991957b-4e4c-4453-9861-ac9618a7174f",
+      "result_id": "b5c0291d-fbe7-4afd-9c61-59b0c850010a"
+    },
+    {
+      "claim_id": "6fc439e6-a605-41fd-923b-68b1bd20b677",
+      "result_id": "b5c0291d-fbe7-4afd-9c61-59b0c850010a"
+    },
+    {
+      "claim_id": "31e82d4a-44ee-4f8c-bcd6-9ee5b9466fea",
+      "result_id": "b5c0291d-fbe7-4afd-9c61-59b0c850010a"
+    },
+    {
+      "claim_id": "735c916e-2661-45e2-a177-65d269593bba",
+      "result_id": "b5c0291d-fbe7-4afd-9c61-59b0c850010a"
+    },
+    {
+      "claim_id": "c5c8df04-f82a-46c4-bc40-9a0a1f3adc9e",
+      "result_id": "b5c0291d-fbe7-4afd-9c61-59b0c850010a"
+    },
+    {
+      "claim_id": "3aeec36a-935a-4678-89a1-f7702cfe8466",
+      "result_id": "b5c0291d-fbe7-4afd-9c61-59b0c850010a"
+    },
+    {
+      "claim_id": "21f59fdf-a62f-42fe-9054-ef38a4c8480b",
+      "result_id": "b5c0291d-fbe7-4afd-9c61-59b0c850010a"
+    },
+    {
+      "claim_id": "01db8701-ce22-4fe8-814d-7d569c340d23",
+      "result_id": "b5c0291d-fbe7-4afd-9c61-59b0c850010a"
+    },
+    {
+      "claim_id": "1f45941f-6b99-4d67-9ff8-9e0eec446241",
+      "result_id": "b5c0291d-fbe7-4afd-9c61-59b0c850010a"
+    },
+    {
+      "claim_id": "508cd32f-8f2d-4169-8001-6bf7b9b20142",
+      "result_id": "b5c0291d-fbe7-4afd-9c61-59b0c850010a"
+    },
+    {
+      "claim_id": "290751c8-4b3d-4309-88fb-0c7dc767208d",
+      "result_id": "13b9cfbb-199c-4035-b89d-6374ed9dda30"
+    },
+    {
+      "claim_id": "bfb427ef-7c7d-4799-99ab-208c1f50ad7f",
+      "result_id": "13b9cfbb-199c-4035-b89d-6374ed9dda30"
+    },
+    {
+      "claim_id": "6d61e357-a34c-4df7-8fe3-98ed9bd9592e",
+      "result_id": "13b9cfbb-199c-4035-b89d-6374ed9dda30"
+    },
+    {
+      "claim_id": "57eeb970-bbe9-4fad-9e1b-13849b688c9c",
+      "result_id": "13b9cfbb-199c-4035-b89d-6374ed9dda30"
+    },
+    {
+      "claim_id": "ffea7c95-f4c4-42a0-9a05-9c9676e9215b",
+      "result_id": "13b9cfbb-199c-4035-b89d-6374ed9dda30"
+    },
+    {
+      "claim_id": "856d8710-6d21-4143-a154-d858c5d2fd7c",
+      "result_id": "13b9cfbb-199c-4035-b89d-6374ed9dda30"
+    },
+    {
+      "claim_id": "88e21cba-ba12-4dd7-9358-2742d798206c",
+      "result_id": "13b9cfbb-199c-4035-b89d-6374ed9dda30"
+    },
+    {
+      "claim_id": "a45b6ee7-12d3-4aa6-b74d-45ca89714bbf",
+      "result_id": "13b9cfbb-199c-4035-b89d-6374ed9dda30"
+    },
+    {
+      "claim_id": "0a6fd4ff-3569-4338-8dd5-0c9267bd0285",
+      "result_id": "13b9cfbb-199c-4035-b89d-6374ed9dda30"
+    },
+    {
+      "claim_id": "7fcbda74-7660-4897-aa14-5760e744c084",
+      "result_id": "13b9cfbb-199c-4035-b89d-6374ed9dda30"
+    },
+    {
+      "claim_id": "185e556c-3221-4dbd-901e-a39fc6a58472",
+      "result_id": "13b9cfbb-199c-4035-b89d-6374ed9dda30"
+    },
+    {
+      "claim_id": "c82639ca-3ec4-4cb3-8785-62d826451c0a",
+      "result_id": "13b9cfbb-199c-4035-b89d-6374ed9dda30"
+    },
+    {
+      "claim_id": "469c0e03-f98c-4e3e-8141-9c21ca7b87be",
+      "result_id": "13b9cfbb-199c-4035-b89d-6374ed9dda30"
+    },
+    {
+      "claim_id": "bd8bacb6-16e8-4783-81aa-0149b3dd9530",
+      "result_id": "fa00471c-584a-4794-a84b-dba5f9a4a6bf"
+    },
+    {
+      "claim_id": "5e558019-9961-48aa-a594-43c4ba3121aa",
+      "result_id": "fa00471c-584a-4794-a84b-dba5f9a4a6bf"
+    },
+    {
+      "claim_id": "86ae2605-3555-4c8a-87ed-bd68adc1641a",
+      "result_id": "fa00471c-584a-4794-a84b-dba5f9a4a6bf"
+    },
+    {
+      "claim_id": "bde89afe-97ec-4cf8-8c29-5725b1b332db",
+      "result_id": "fa00471c-584a-4794-a84b-dba5f9a4a6bf"
+    },
+    {
+      "claim_id": "d42e0d90-942d-4fb6-9c0d-9e9afbb92f10",
+      "result_id": "fa00471c-584a-4794-a84b-dba5f9a4a6bf"
+    },
+    {
+      "claim_id": "8276b75e-72c2-423f-b038-9f3308a151c8",
+      "result_id": "fa00471c-584a-4794-a84b-dba5f9a4a6bf"
+    },
+    {
+      "claim_id": "9c71bfc4-adbb-4727-8f9d-9af4abc04718",
+      "result_id": "fa00471c-584a-4794-a84b-dba5f9a4a6bf"
+    },
+    {
+      "claim_id": "43ef38b3-41e7-41de-91a4-7ecc5bff8f08",
+      "result_id": "fa00471c-584a-4794-a84b-dba5f9a4a6bf"
+    },
+    {
+      "claim_id": "70e6e4ae-eb1a-48a1-a64a-9414b120ab6e",
+      "result_id": "5ca6716d-aac5-467d-b0eb-b5e368f3f335"
+    },
+    {
+      "claim_id": "0968c894-ce11-4185-946a-d7a3ec56536c",
+      "result_id": "5ca6716d-aac5-467d-b0eb-b5e368f3f335"
+    },
+    {
+      "claim_id": "91c3aef6-f229-492b-b5da-7df4d8903dd3",
+      "result_id": "5ca6716d-aac5-467d-b0eb-b5e368f3f335"
+    },
+    {
+      "claim_id": "e34240ec-81a4-464e-9467-c8a0e3f4fbd5",
+      "result_id": "5ca6716d-aac5-467d-b0eb-b5e368f3f335"
+    },
+    {
+      "claim_id": "3903de03-ba92-4069-b478-55c0ff9aeffa",
+      "result_id": "c8cf10ff-93c8-4103-85e6-258ac1385d78"
+    },
+    {
+      "claim_id": "29940af0-398a-4005-a74f-6894b37605b7",
+      "result_id": "c8cf10ff-93c8-4103-85e6-258ac1385d78"
+    },
+    {
+      "claim_id": "5d5000f0-a625-4809-990b-a38b1c503911",
+      "result_id": "c8cf10ff-93c8-4103-85e6-258ac1385d78"
+    },
+    {
+      "claim_id": "427782a0-cb4a-4245-b5f0-2d8903f84888",
+      "result_id": "c8cf10ff-93c8-4103-85e6-258ac1385d78"
+    },
+    {
+      "claim_id": "4cc97996-169d-453d-8299-dba93e74595c",
+      "result_id": "c8cf10ff-93c8-4103-85e6-258ac1385d78"
+    },
+    {
+      "claim_id": "2305289f-de43-4312-b9e8-75528547aa15",
+      "result_id": "c8cf10ff-93c8-4103-85e6-258ac1385d78"
+    },
+    {
+      "claim_id": "6ab155d0-32a3-4850-9505-4ec3142f609c",
+      "result_id": "d7cf6aaf-4a5b-4c88-a0f8-6b45bf56ee43"
+    },
+    {
+      "claim_id": "bc7d0220-9355-4c04-b91a-7df6ffa31c30",
+      "result_id": "d7cf6aaf-4a5b-4c88-a0f8-6b45bf56ee43"
+    },
+    {
+      "claim_id": "429e581a-61d0-4ac8-aa0e-59ed1e347711",
+      "result_id": "d7cf6aaf-4a5b-4c88-a0f8-6b45bf56ee43"
+    },
+    {
+      "claim_id": "bebe04cb-2bc2-4361-b41f-93101a5ac1e7",
+      "result_id": "d7cf6aaf-4a5b-4c88-a0f8-6b45bf56ee43"
+    },
+    {
+      "claim_id": "186897d8-4581-40d6-99d4-6e2002e3615a",
+      "result_id": "d7cf6aaf-4a5b-4c88-a0f8-6b45bf56ee43"
+    },
+    {
+      "claim_id": "149527b3-b76e-4d8b-bdc6-d8c72c7becaa",
+      "result_id": "d7cf6aaf-4a5b-4c88-a0f8-6b45bf56ee43"
+    },
+    {
+      "claim_id": "f276e02d-c165-49aa-89da-7f5892e67a88",
+      "result_id": "a9acda87-72e4-40f3-92f6-71accc11b4e5"
+    },
+    {
+      "claim_id": "1b36f332-7008-4bd6-8f06-4e00c66d82f6",
+      "result_id": "a9acda87-72e4-40f3-92f6-71accc11b4e5"
+    },
+    {
+      "claim_id": "cadc5680-57b1-4ee8-8d5f-3cfd099815fd",
+      "result_id": "a9acda87-72e4-40f3-92f6-71accc11b4e5"
+    },
+    {
+      "claim_id": "ec0cd116-f3cd-413a-ae06-76b50ac6ac48",
+      "result_id": "a9acda87-72e4-40f3-92f6-71accc11b4e5"
+    },
+    {
+      "claim_id": "e3b0ac71-aadf-43de-9e6e-6ed14f56f8a9",
+      "result_id": "a9acda87-72e4-40f3-92f6-71accc11b4e5"
+    },
+    {
+      "claim_id": "2503403d-2da7-4586-a44a-597b413fd326",
+      "result_id": "dc59e136-3457-4a5c-9703-4ee1904ae943"
+    },
+    {
+      "claim_id": "41d05e94-916f-479f-b2f0-a03b12f5192a",
+      "result_id": "dc59e136-3457-4a5c-9703-4ee1904ae943"
+    },
+    {
+      "claim_id": "9d04c46e-0668-4b36-8ca9-9ce4edfc2777",
+      "result_id": "dc59e136-3457-4a5c-9703-4ee1904ae943"
+    },
+    {
+      "claim_id": "70947ef3-0f55-4841-9d5d-dd5da7a3f6c1",
+      "result_id": "dc59e136-3457-4a5c-9703-4ee1904ae943"
+    },
+    {
+      "claim_id": "c9094ed7-ec3a-48b6-bfa1-8acacd3b6e16",
+      "result_id": "dc59e136-3457-4a5c-9703-4ee1904ae943"
+    },
+    {
+      "claim_id": "157a23bc-08c0-441d-a61a-62d6db7d10fa",
+      "result_id": "dc59e136-3457-4a5c-9703-4ee1904ae943"
+    },
+    {
+      "claim_id": "ecb03b8c-61a2-4ce1-81e4-4e17b6182b06",
+      "result_id": "083aeda4-f7dc-4808-aff2-342afae9d610"
+    },
+    {
+      "claim_id": "ae360999-c7e1-4274-826c-44b6aad3e272",
+      "result_id": "083aeda4-f7dc-4808-aff2-342afae9d610"
+    },
+    {
+      "claim_id": "e2e1cee8-4f70-4efb-bcd5-ede2f919ff92",
+      "result_id": "7fab1f5a-d11b-4318-b8ee-aeebab56bb62"
+    },
+    {
+      "claim_id": "71d865e7-50a1-4c29-af6f-5f77f8d36fd5",
+      "result_id": "7fab1f5a-d11b-4318-b8ee-aeebab56bb62"
+    },
+    {
+      "claim_id": "ad034690-75b9-4225-aafe-7872e61126ed",
+      "result_id": "7fab1f5a-d11b-4318-b8ee-aeebab56bb62"
+    },
+    {
+      "claim_id": "6ed64528-7f45-4e2f-b9bd-a3f6097dbea1",
+      "result_id": "7fab1f5a-d11b-4318-b8ee-aeebab56bb62"
+    },
+    {
+      "claim_id": "68610968-066b-4bf2-a576-5246e8d9fd80",
+      "result_id": "390d079b-498b-435f-aad4-2f67137c0bd8"
+    },
+    {
+      "claim_id": "eb6705e0-938a-4d3f-9ff3-55ffde4bcad9",
+      "result_id": "390d079b-498b-435f-aad4-2f67137c0bd8"
+    },
+    {
+      "claim_id": "b4592bce-a683-458e-94c9-f4bc2aed12d8",
+      "result_id": "390d079b-498b-435f-aad4-2f67137c0bd8"
+    },
+    {
+      "claim_id": "67a4d5c9-cf79-4fbc-ac14-67406f818e82",
+      "result_id": "fe554210-c087-4c19-b2d9-8643570f4ea1"
+    },
+    {
+      "claim_id": "6586939e-68e9-4cda-a1e7-be36025a31fd",
+      "result_id": "fe554210-c087-4c19-b2d9-8643570f4ea1"
+    },
+    {
+      "claim_id": "79396479-be0e-4a74-89a7-825ca406a910",
+      "result_id": "fe554210-c087-4c19-b2d9-8643570f4ea1"
+    },
+    {
+      "claim_id": "ec84dc4b-01d3-4b28-9391-0f2377407192",
+      "result_id": "100ac0c4-6be5-4c5d-83ce-7cde71004c9e"
+    },
+    {
+      "claim_id": "e78becfd-095e-4282-aa5a-1a2576330591",
+      "result_id": "100ac0c4-6be5-4c5d-83ce-7cde71004c9e"
+    },
+    {
+      "claim_id": "f533fb82-5313-400d-8497-2b191fc1e9c1",
+      "result_id": "100ac0c4-6be5-4c5d-83ce-7cde71004c9e"
+    },
+    {
+      "claim_id": "9b8347b3-2928-4ba1-8d24-e015465b8804",
+      "result_id": "100ac0c4-6be5-4c5d-83ce-7cde71004c9e"
+    },
+    {
+      "claim_id": "17da7aa0-c3ed-42a4-917b-885a8a235b06",
+      "result_id": "100ac0c4-6be5-4c5d-83ce-7cde71004c9e"
+    },
+    {
+      "claim_id": "1a9675d6-7889-4311-b24e-272da0695ced",
+      "result_id": "bba5e9db-4983-4140-942f-0a1cd7dc4eaa"
+    },
+    {
+      "claim_id": "ca5c1a0b-cdc6-4624-bd3f-a4c587c31e64",
+      "result_id": "bba5e9db-4983-4140-942f-0a1cd7dc4eaa"
+    },
+    {
+      "claim_id": "5e56b30c-96d6-4e3a-9d54-993e7e59cddb",
+      "result_id": "bba5e9db-4983-4140-942f-0a1cd7dc4eaa"
+    },
+    {
+      "claim_id": "d4ce4cb1-e86d-4d42-86f4-8fe480b1a53d",
+      "result_id": "bba5e9db-4983-4140-942f-0a1cd7dc4eaa"
+    },
+    {
+      "claim_id": "cc1fd085-92dc-45d9-87e4-b945e2f51863",
+      "result_id": "acf3f94a-e0b0-4e33-9eb9-ef99ac7e254f"
+    },
+    {
+      "claim_id": "50a46d6d-9616-487b-bf64-1b8ea4d53c53",
+      "result_id": "e023081d-b2f5-4c8a-8306-84dc3d584d71"
+    },
+    {
+      "claim_id": "9189c68a-eb54-4ddd-ad82-f3da9ef8c71b",
+      "result_id": "e023081d-b2f5-4c8a-8306-84dc3d584d71"
+    },
+    {
+      "claim_id": "912fa1a6-a9fd-467c-ad83-09890d32f2fe",
+      "result_id": "e023081d-b2f5-4c8a-8306-84dc3d584d71"
+    },
+    {
+      "claim_id": "3e8c38d5-8609-4a6f-b73d-30a2d275ffb6",
+      "result_id": "e023081d-b2f5-4c8a-8306-84dc3d584d71"
+    },
+    {
+      "claim_id": "34766d42-8d5c-42a9-ad84-0b9f50cba09e",
+      "result_id": "07bfc0aa-fa9a-49b1-bf6b-d8b19c8f0648"
+    },
+    {
+      "claim_id": "c2d6b97c-2097-4d44-897b-710b97b40947",
+      "result_id": "07bfc0aa-fa9a-49b1-bf6b-d8b19c8f0648"
+    },
+    {
+      "claim_id": "f92588be-ea72-4363-8779-525110dd70bb",
+      "result_id": "07bfc0aa-fa9a-49b1-bf6b-d8b19c8f0648"
+    },
+    {
+      "claim_id": "ee6aa9d2-94c5-4e11-8f91-f893d07fea1e",
+      "result_id": "07bfc0aa-fa9a-49b1-bf6b-d8b19c8f0648"
+    },
+    {
+      "claim_id": "ca740147-292d-4ec1-888e-c215f1f38687",
+      "result_id": "07bfc0aa-fa9a-49b1-bf6b-d8b19c8f0648"
+    },
+    {
+      "claim_id": "49713d05-f755-4b9d-b3ca-3853650d35a6",
+      "result_id": "07bfc0aa-fa9a-49b1-bf6b-d8b19c8f0648"
+    },
+    {
+      "claim_id": "64307800-abec-4832-9858-9d17aba20c08",
+      "result_id": "07bfc0aa-fa9a-49b1-bf6b-d8b19c8f0648"
+    },
+    {
+      "claim_id": "ea3d7024-2f21-4035-ac32-eae084ca622f",
+      "result_id": "15e8acac-4aa4-4fd7-b213-4507e7aaf72b"
+    },
+    {
+      "claim_id": "fdce4449-d65b-4edf-a52f-bf6e537eeb6d",
+      "result_id": "15e8acac-4aa4-4fd7-b213-4507e7aaf72b"
+    },
+    {
+      "claim_id": "e0e5a219-31d3-4c1d-ac3c-afb87a07d3b3",
+      "result_id": "15e8acac-4aa4-4fd7-b213-4507e7aaf72b"
+    },
+    {
+      "claim_id": "1dc02d4d-d464-4853-9d6b-7b9683336fe6",
+      "result_id": "15e8acac-4aa4-4fd7-b213-4507e7aaf72b"
+    },
+    {
+      "claim_id": "dd872a01-9f28-4658-88d1-4df6ac5c39dd",
+      "result_id": "15e8acac-4aa4-4fd7-b213-4507e7aaf72b"
+    },
+    {
+      "claim_id": "9253d09c-88b5-40de-adb3-3b5a0d81e8c0",
+      "result_id": "2477f455-3b51-437e-9f99-4c072b58ad4b"
+    },
+    {
+      "claim_id": "eb34f8ad-9896-42eb-b57d-8db5929fc633",
+      "result_id": "2477f455-3b51-437e-9f99-4c072b58ad4b"
+    },
+    {
+      "claim_id": "eaec49ba-6843-4b9d-bb78-215a017ca2e8",
+      "result_id": "2477f455-3b51-437e-9f99-4c072b58ad4b"
+    },
+    {
+      "claim_id": "4d89cf27-6aaf-449c-b45d-30f56d68d253",
+      "result_id": "2477f455-3b51-437e-9f99-4c072b58ad4b"
+    },
+    {
+      "claim_id": "b27e3995-fd22-42b7-98ef-396436a17f22",
+      "result_id": "2477f455-3b51-437e-9f99-4c072b58ad4b"
+    }
+  ],
+  "comparisons": []
+}

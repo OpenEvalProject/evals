@@ -1,0 +1,2040 @@
+{
+  "submission": {
+    "id": "489da6f7-ddc7-4438-a46e-40f92503eba5",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T17:48:56.660902Z",
+    "updated_at": "2025-12-02T17:48:56.660902Z"
+  },
+  "content": [
+    {
+      "id": "26fd38c6-eb2e-4522-b570-4c1186cfadce",
+      "submission_id": "489da6f7-ddc7-4438-a46e-40f92503eba5",
+      "content_type": "manuscript",
+      "content_text": "# Delineating the early transcriptional specification of the mammalian trachea and esophagus\n\n## Authors\n\n- Akela Kuwahara<sup>1</sup>\n- Ace E Lewis<sup>1</sup>\n- Coohleen Coombes<sup>1</sup>\n- Fang-Shiuan Leung<sup>1</sup>\n- Michelle Percharde<sup>7</sup>\n- Jeffrey O Bush<sup>1</sup> ([ORCID: 0000-0002-6053-8756](https://orcid.org/0000-0002-6053-8756)) \u2020\n\n### Affiliations\n\n1. Program in Craniofacial Biology, University of California San Francisco San Francisco United States\n2. Department of Cell and Tissue Biology, University of California San Francisco San Francisco United States\n3. Institute for Human Genetics, University of California San Francisco San Francisco United States\n4. Eli and Edythe Broad Center of Regeneration Medicine and Stem Cell Research, University of California San Francisco San Francisco United States\n5. Developmental and Stem Cell Biology Graduate Program, University of California San Francisco San Francisco United States\n6. Department of Biology, San Francisco State University San Francisco United States\n7. MRC London Institute of Medical Sciences (LMS) London United Kingdom\n8. Institute of Clinical Sciences (ICS), Faculty of Medicine, Imperial College London London United Kingdom\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe genome-scale transcriptional programs that specify the mammalian trachea and esophagus are unknown. Though NKX2-1 and SOX2 are hypothesized to be co-repressive master regulators of tracheoesophageal fates, this is untested at a whole transcriptomic scale and their downstream networks remain unidentified. By combining single-cell RNA-sequencing with bulk RNA-sequencing of Nkx2-1 mutants and NKX2-1 ChIP-sequencing in mouse embryos, we delineate the NKX2-1 transcriptional program in tracheoesophageal specification, and discover that the majority of the tracheal and esophageal transcriptome is NKX2-1 independent. To decouple the NKX2-1 transcriptional program from regulation by SOX2, we interrogate the expression of newly-identified tracheal and esophageal markers in Sox2/Nkx2-1 compound mutants. Finally, we discover that NKX2-1 binds directly to Shh and Wnt7b and regulates their expression to control mesenchymal specification to cartilage and smooth muscle, coupling epithelial identity with mesenchymal specification. These findings create a new framework for understanding early tracheoesophageal fate specification at the genome-wide level.\n\n## Introduction\n\nProper specification of the trachea and esophagus is critical for the function of the respiratory and digestive systems. Formation of the trachea and esophagus requires signals from the splanchnic mesenchyme which specify ventral and dorsal domains of the foregut endoderm tube, resulting in lung bud outgrowth and the initiation of physical separation of the trachea and esophagus (Billmyre et al., 2015; Cardoso and L\u00fc, 2006; Domyan et al., 2011; Goss et al., 2009; Harris-Johnson et al., 2009; Morrisey et al., 2013; Rankin et al., 2018; Rankin et al., 2016; Shannon et al., 1998; Stevens et al., 2017). Ultimately, the tracheal epithelium is composed of multi-ciliated, secretory, and basal cells within a pseudostratified columnar monolayer which is surrounded by mesenchyme-derived ventral cartilaginous rings, and dorsal smooth muscle of the trachealis. The esophagus consists ultimately of a stratified squamous keratinized epithelium surrounded by smooth muscle. Early failure of tracheoesophageal (TE) fate specification can result in an unseparated common foregut endoderm tube, producing common congenital pathologies known as tracheoesophageal fistula (TEF) or tracheal agenesis (TA) (Billmyre et al., 2015; Morrisey and Hogan, 2010; Sher and Liu, 2016). Other anomalies of foregut development, such as tracheomalacia and congenital tracheal stenosis, involve the improper formation of the adjacent tracheal mesenchyme-derived cartilage and smooth muscle (Morrisey and Hogan, 2010; Sher and Liu, 2016). While foregut malformations in humans are common, we know very little of the genetic causes of these defects, in part due to a paucity of information of normal tracheoesophageal transcriptional patterning.\n\nThe earliest marker of tracheal and lung fate is the transcription factor NKX2-1 (TTF1) which is expressed in the ventral foregut in a pattern complementary to the dorsally enriched expression of the transcription factor SOX2 (Guazzi et al., 1990; Minoo et al., 1999; Mizuno et al., 1991; Que et al., 2007). Disruption of Nkx2-1 in mice resulted in upregulation of SOX2 in the ventral endoderm and differentiation of the adjacent mesenchyme into smooth muscle rather than tracheal cartilage (Minoo et al., 1999; Que et al., 2007). Conversely, hypomorphic disruption of Sox2 in mice resulted in upregulation of dorsal NKX2-1 and a conversion of the stratified esophageal epithelium to a simple columnar epithelium surrounded by smooth muscle that histologically resembles that of the trachea (Que et al., 2007; Teramoto et al., 2019). Similarly, knockdown of SOX2 in human induced pluripotent stem cell (hiPSC)-derived dorsal foregut cells resulted in upregulation of NKX2-1, and forced expression of SOX2 in hiPSC-derived ventral foregut cells repressed NKX2-1 (Trisno et al., 2018). Together these data have given rise to a model in which NKX2-1 and SOX2 form a co-repressive master regulatory switch to define tracheal and esophageal cell fates (Billmyre et al., 2015; Domyan et al., 2011; Que et al., 2007; Teramoto et al., 2019; Trisno et al., 2018). The regulatory programs downstream of NKX2-1 and SOX2 are not known and, therefore, the extent to which each promotes or represses tracheal and esophageal cell fates is not clear. Moreover, beyond these two transcription factors, we currently know very little about the transcriptional identity of the early dorsoventral endodermal populations that ultimately give rise to the trachea and esophagus.\n\nThe mechanisms coupling epithelial and mesenchymal fate specification in the trachea and esophagus are not well understood, but involve epithelial to mesenchymal signaling. For example, loss of WNT signaling from the endoderm to the tracheal mesenchyme results in a loss of tracheal cartilage and a corresponding expansion of smooth muscle (Hou et al., 2019; Kishimoto et al., 2019; Snowball et al., 2015). SHH signaling regulates smooth muscle specification in multiple contexts (Huycke et al., 2019; Mao et al., 2010) and loss of SHH signaling from the airway and intestinal epithelium results in loss of smooth muscle formation (Kim et al., 2015; Litingtung et al., 1998; Pepicelli et al., 1998) and mispatterning of tracheal cartilage (Miller et al., 2004; Sala et al., 2011). Thus, while WNT and SHH signaling are critical for foregut mesenchymal differentiation, how these signals are transcriptionally regulated in the tracheal and esophageal epithelium is currently unknown.\n\nIn this study, we dissect the transcriptional regulation of tracheal and esophageal fate specification by combining multiple genomic approaches. By single cell RNA-sequencing (scRNA-seq) we define the transcriptional identity of the trachea, esophagus, and lung at their initial stages of development, and identify new and robust markers of tracheoesophageal specification. We then dissect the NKX2-1 regulatory program that specifies TE identity using our scRNA-seq datasets, in combination with bulk RNA-sequencing of Nkx2-1-/- mutant tracheas, and NKX2-1 chromatin immunoprecipitation and sequencing (ChIP-seq) of wild type tracheas. We discover a previously unknown NKX2-1-independent transcriptional program that encompasses the majority of the newly-identified tracheal and esophageal transcriptomes. We assay the NKX2-1 transcriptional program in functional compound mouse mutant experiments to test whether NKX2-1 regulates these TE genes through repression of SOX2 or independently of SOX2. These data uncover a role for NKX2-1 in regulating epithelial-to-mesenchymal signaling, thereby coupling TE epithelial identity with cartilage and smooth muscle fate specification. This study therefore establishes a new framework for understanding key regulators of early cell fate specification in the trachea and esophagus.\n\n## Results\n\n### Single cell transcriptomics identifies dorsoventral populations of the foregut\n\nTo understand how the trachea and esophagus are specified on a transcriptome-wide scale, we performed droplet-based single-cell RNA sequencing (scRNA-seq) on E10.5 mid-separation and E11.5 post-separation dissected mouse foregut epithelial cells. We generated 6407 single-cell transcriptomes at E10.5, comprising 5 cell clusters, and 10,493 single-cell transcriptomes at E11.5, comprising 7 cell clusters, and visualized these clusters using Uniform Manifold Approximation and Projection (UMAP) dimensional reduction (Becht et al., 2019; Stuart et al., 2018; Figure 1a,b). We delineated the dorsoventral axis in our scRNA-seq data at E10.5 and E11.5 by projecting the expression levels of Nkx2-1 and Sox2 on the UMAP (Figure 1\u2014figure supplement 1c,d). Similarly, Sox9, a marker of developing lung epithelium (Herriges et al., 2012; Perl et al., 2005; Rockich et al., 2013), marked a subset of Nkx2-1-positive respiratory cells, enabling us to distinguish distal lung from trachea (Figure 1\u2014figure supplement 1c,d). Using differential expression analysis for each cell cluster and RNAscope fluorescent in-situ hybridization, we defined cell clusters as lung, trachea, esophagus, and pharynx (Figure 1a\u2013l\u2019\u2019, Figure 1\u2014figure supplement 2a\u2013m, Figure 1\u2014figure supplement 3a\u2013c, Figure 1\u2014figure supplement 4a) as well as a cluster corresponding to the ultimobranchial body, a derivative of the pharyngeal endoderm that gives rise to the follicular cells of the thyroid (Nilsson and Fagman, 2017; Figure 1\u2014figure supplement 4b). Within the E11.5 lung, we identified a cluster with unique expression of known distal lung markers such as Bmp4 (Weaver et al., 1999; Figure 1\u2014figure supplement 3c, Figure 1\u2014source data 1), demonstrating that the proximodistal lung axis can be identified by markers in our dataset. Signatures of proliferation also divided both the trachea and lung clusters at E11.5 (Figure 1b, Figure 1\u2014source data 1).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/55526/elife-55526-fig1-v1.jpg)\n\n**Figure 1.:** Dissected, FACS-purified foregut epithelial cells were subjected to droplet-based single-cell RNA sequencing at E10.5 and E11.5. (a) UMAP representation of 6,407 cells identified at E10.5 and (b) 10,493 cells identified at E11.5. Colors represent cell populations identified using shared nearest neighbor clustering. vFG: ventral foregut, dFG: dorsal foregut, Ph: pharynx, UBB: ultimobranchial body, Tr: trachea, Es: esophagus. (c) Heatmap of selected marker gene expression across 100 E10.5 cells each of ventral foregut/trachea, lung, and esophagus/dorsal foregut as identified by scRNA-seq. Selected genes are markers of respiratory, lung, ventral FG/trachea, and dorsal FG/esophagus cells (top to bottom). n\u00a0=\u00a01 biological replicate/timepoint with 20 pooled embryos at E10.5 and 28 pooled embryos at E11.5. See also: Figure 1\u2014source data 1. (d-l) RNA localization of pan-respiratory marker gene Irx2, ventral FG/trachea marker gene Tppp3, and dorsal FG/esophagus marker gene Krt19 identified from differential expression analysis of cell populations in scRNA-seq data at E10.5. First column shows projection of RNA expression level as determined by scRNA-seq on UMAP. Second-fourth columns show RNA expression of marker gene (green) and NKX2-1 expression (magenta) in the undivided region of E10.5 embryonic foreguts (I) as indicated by the positions of the schematic in a). Last two columns show staining in the lung and distal esophagus (II) as indicated by the positions of the schematic in a). All images were captured at 20X magnification and displayed at the same scale. Scale bar\u00a0=\u00a050 um.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/55526/elife-55526-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (a)\u00a0Representative gating strategy for FACS of mouse embryonic foreguts. Top row shows gating for single cells, and bottom row shows gating for sytox-negative live cells (left) and epCAM-positive epithelial cells (right). (b) Quality control metrics of scRNA-seq experiments identified with CellRanger. (c\u2013d) Immunofluorescent staining of NKX2-1 (magenta), SOX2 (cyan), and SOX9 (green) in c) E10.5 and d) E11.5 foregut and lung. First column shows UMAP of gene expression level of Nkx2-1, Sox2, and Sox9 as detected by scRNA-seq. Second and third columns represent regions of the foregut along the rostral-caudal axis as depicted in the schematic of Figure 1a and b). Scale bar\u00a0=\u00a050 um.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/55526/elife-55526-fig1-figsupp2-v1.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (a-m) RNA localization of additional marker genes Wnt7b, Pcdh10, Ly6h, and Klf5 identified from differential expression analysis of cell populations in scRNA-seq data at E10.5. First column shows projection of RNA expression level as determined by E10.5 scRNA-seq on UMAP. Second-fourth show staining of marker gene RNA expression (green) and NKX2-1 immunofluorescence (magenta) in the unseparated foregut at E10.5 (position I as indicated in schematic of Figure 1a). Last two columns show staining in the lung and distal esophagus (position II as indicated in schematic of Figure 1a). Scale bar = 50um.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/55526/elife-55526-fig1-figsupp3-v1.jpg)\n\n**Figure 1\u2014figure supplement 3.:** (a) RNA localization of marker genes identified from differential expression analysis of cell populations in scRNA-seq data at E11.5 with immunofluorescent staining of NKX2-1. First three columns (I) show staining in the trachea and esophagus of an E11.5 embryonic foregut, and last three columns (II) show staining in the lung and distal esophagus. Scale bar = 50um. (b) Projection of RNA expression level as determined by E11.5 scRNA-seq on UMAP. c. Heatmap of selected marker gene expression across 100 E11.5 cells each of distal lung, lung, trachea, and esophagus as identified by scRNA-seq. Selected genes are markers of respiratory, lung, distal lung, trachea, and esophagus cells (top to bottom).\n\n![Figure 1\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/55526/elife-55526-fig1-figsupp4-v1.jpg)\n\n**Figure 1\u2014figure supplement 4.:** RNA localization of esophageal markers genes Klf5, Krt19, and Dcn and protein localization of LRIG1 (green) with immunofluorescent staining of NKX2-1 (magenta) and SOX2 (cyan) in the unseparated foregut of E10.5 embryos. Arrowheads demarcate NKX2-1 expression boundary. Scale=50um.\n\n![Figure 1\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/55526/elife-55526-fig1-figsupp5-v1.jpg)\n\n**Figure 1\u2014figure supplement 5.:** (a) RNA localization of pharynx marker gene Foxe1 identified from differential expression analysis of cell populations in scRNA-seq data at E10.5 and E11.5. Top row: RNA-localization of Foxe1 (green) in E10.5 and E11.5 pharynx (Ph). Bottom row: Projection of Foxe1 RNA expression level as determined by E10.5 and E11.5 scRNA-seq on UMAP. (b) RNA localization of ultimobranchial body (UBB) marker gene Crabp1 identified from differential expression analysis of cell populations in scRNA-seq data at E10.5. Top row: RNA-localization of Crabp1 (green) in E10.5 UBB. Scale bar = 50um. Bottom row: Projection of Crabp1 RNA expression level as determined by E10.5 scRNA-seq on UMAP.\n\nOur scRNA-seq data revealed a wealth of genes previously unknown to mark cell types of the ventral and dorsal foregut prior to TE separation (Figure 1c, Figure 1\u2014source data 1), as well as new genes that distinguish the trachea, lung, and esophagus after TE separation (Figure 1\u2014figure supplement 3c, Figure 1\u2014source data 1). To visualize their spatial expression, we performed RNAscope for several genes marking each of these cell types in the undivided E10.5 foregut and lung (Figure 1d\u2013l; Figure 1\u2014figure supplement 2a\u2013m), and the E11.5 trachea, esophagus, and lung (Figure 1\u2014figure supplement 3). In all cases, RNAscope analysis confirmed our scRNA-seq finding and provided additional information about the spatial patterns of marker gene expression. We found many genes, including Klf5, Krt19, Dcn, Pitx1, and Lrig1 that exhibited expression specifically within the dorsal foregut/esophageal cells (Figure 1c,j\u2013l\u2019\u2019; Figure 1\u2014figure supplement 2k\u2013m\u201d, Figure 1\u2014figure supplement 3, Figure 3\u2014figure supplement 1b). Interestingly, within the foregut endoderm, all of these genes were more dorsally restricted than SOX2 and were more precisely complementary to NKX2-1, indicating that they may serve as better markers of the esophagus during its early development (Figure 1\u2014figure supplement 4). Notably, we also discovered genes such as Tppp3, Pcdh10, Ly6h, and Cldn18 that exhibited enrichment in the ventral foregut at E10.5 (Figure 1c,g\u2013i\u201d, Figure 1\u2014figure supplement 2e-j') and specifically marked the trachea and proximal airway at E11.5 (Figure 1\u2014figure supplement 3). Our discovery of this gene class indicates that the trachea and proximal airway are actively transcriptionally specified and at least somewhat distinct from the lung during early respiratory development. All tracheal and esophageal markers we identified and validated were dorsoventrally restricted in the common foregut of E10.5 embryos prior to physical separation of the trachea and esophagus, consistent with extensive fate specification before TE separation (Billmyre et al., 2015). Together, these data uncover a multitude of previously unknown genes that define initial dorsoventral patterning of the foregut and the earliest stages of the trachea, lung, and esophagus.\n\n### Identification of the NKX2-1 transcriptional program and an independent program of TE specification\n\nGiven our discovery of a broad network of previously unknown genes expressed during early TE specification, we sought to examine how tracheoesophageal fates are dysregulated upon Nkx2-1 loss at the transcriptome-wide scale. We performed RNA-sequencing (RNA-seq) of dissected and FACS-purified foregut epithelium from E11.5 Nkx2-1-/- and wild-type (WT) embryos. Differential expression analysis between Nkx2-1-/- and WT foregut epithelium identified 257 NKX2-1-dependent genes, with 109 genes upregulated and 148 genes downregulated in Nkx2-1-/- foreguts (Figure 2a, Figure 2\u2014source data 1). We examined the expression of these NKX2-1-dependent genes in our scRNA-seq dataset at E11.5 to determine, on a global-scale, where they were expressed in the developing foregut. We found that genes that were upregulated in Nkx2-1-/- mutants were enriched in cells of the esophagus and pharynx (Figure 2b, Figure 2\u2014figure supplement 1a), and genes that were downregulated in Nkx2-1-/- mutants were enriched in tracheal and lung cells (Figure 2c, Figure 2\u2014figure supplement 1b). Together, these data define the NKX2-1 transcriptional program in early TE development and support the hypothesis that, within this program, NKX2-1 positively regulates tracheal genes and negatively regulates esophageal genes.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/55526/elife-55526-fig2-v1.jpg)\n\n**Figure 2.:** (a)\u00a0Dissected, FACS-purified epithelium from E11.5 Nkx2-1-/- and WT foreguts was sequenced and analyzed for differential gene expression. 109 genes were increased and 148 genes were decreased in Nkx2-1-/- foreguts compared to WT (DESeq2, log2FC\u00a0>\u00a00.7, padj\u00a0<\u00a00.05). Labeled genes show examples of tracheal genes that decrease in Nkx2-1-/- mutants (Tppp3, Pcdh10, Wnt7b, Nkx2-1), and esophageal genes that increase in Nkx2-1-/- mutants (Klf5, Has2, Shh). n\u00a0=\u00a03 biological replicates with two pooled embryos/replicate. See also: Figure 2\u2014source data 1. (b-c) Combined expression of all genes that increase (b) or decrease (c) in Nkx2-1-/- foreguts as a percentage of all reads in E11.5 scRNA-seq data. Cells are grouped by their assigned cluster and clusters were subsampled to 600 cells/cluster for visualization.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/55526/elife-55526-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (a-b)\u00a0Combined expression of all genes that increase (a) or decrease (b) in Nkx2-1-/- foreguts as a percentage of all reads in E11.5 scRNA-seq data, projected onto the E11.5 UMAP.\n\nSurprisingly, our scRNA-seq dataset identified many genes that mark tracheal and esophageal cells that did not appear to exhibit a change in expression in our Nkx2-1-/- mutant RNA-seq analysis (Figure 1\u2014source data 1, Figure 2\u2014source data 1). We examined the spatial expression of several of these NKX2-1-independent genes using an Nkx2.5-cre strain which mediates recombination in the ventral foregut (Figure 3\u2014figure supplement 1a; Stanley et al., 2004) to generate Nkx2-1lox/lox; Nkx2.5cre/+ (Nkx2-1-TrKO) embryos lacking NKX2-1 in the trachea. All Nkx2-1-TrKO embryos we examined exhibited a complete failure of foregut separation (n\u00a0=\u00a08/8 embryos). Using RNAscope, we found Irx2, Ly6h, and Nrp2 to be tracheal-specific and maintained in the ventral epithelium of the unseparated foregut tube in E11.5 Nkx2-1-TrKO embryos (Figure 3a\u2013f\u2019; Figure 3\u2014figure supplement 1b). Likewise, we found Dcn, Ackr3, and Meis2 to be esophageal-specific and maintained in the dorsal region of the common foregut tube in Nkx2-1-TrKO foreguts (Figure 3g\u2013l\u2019; Figure 3\u2014figure supplement 1b). Immunofluorescent staining also showed that the esophageal genes LRIG1 and PITX1 were maintained in the dorsal region of Nkx2-1-/- foreguts (Figure 3\u2014figure supplement 1b). These data indicate the presence of an NKX2-1-independent transcriptional program within the developing trachea and esophagus, and suggest that Nkx2-1-/- mutant foreguts do not undergo a complete tracheal-to-esophageal fate conversion.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/55526/elife-55526-fig3-v1.jpg)\n\n**Figure 3.:** (a-l)\u00a0RNA localization of NKX2-1-independent tracheal (Irx2, Ly6h) and esophageal (Dcn, Ackr3) makers identified by scRNA-seq and Nkx2-1-/-\u00a0mutant RNA-seq data at E11.5. First column shows projection of RNA expression level as determined by scRNA-seq on UMAP. Second-fifth columns show RNA localization (green) in E11.5 control and Nkx2-1-TrKO embryos with immunofluorescent staining of NKX2-1 (magenta) and SOX2 (cyan). 8/8 Nkx2-1-TrKO embryos had TEF phenotype, n\u00a0=\u00a03 embryos/staining combination. All images were captured at 20X magnification and displayed at the same scale. Scale bar\u00a0=\u00a050 um. (m) Schematic of experimental procedures for RNA-seq and differential expression analysis of WT trachea and esophagus for comparison with Nkx2-1-/- mutant RNA-seq data. n\u00a0=\u00a03 biological replicates with four pooled embryos/replicate. See also: Figure 3\u2014source data 1. (n). NKX2-1-dependent genes as a portion of genes enriched in WT trachea (left) and esophagus (right). NKX2-1-independent genes make up 89% of tracheal-enriched genes and 94% of esophageal enriched genes.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/55526/elife-55526-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (a)\u00a0Lineage trace of Nkx2.5-cre recombination pattern in E10.5 (top) and E11.5 (bottom) foreguts using the ROSA26mTmG reporter (red/green) and NKX2-1 immunofluorescent staining (magenta). (b) RNA localization (green) of additional NKX2-1-independent genes Nrp2 in the trachea (row 1) and Meis2 in the esophagus (row 2) of E11.5 scRNA-seq data (left), E11.5 control embryos (middle) and Nkx2-1-TrKO; Sox2-TrKO embryos (right) with immunofluorescent staining of NKX2-1 (magenta) and SOX2 (cyan). Bottom panel: Protein expression of NKX2-1-independent genes LRIG1 and PITX1 in E11.5 control and Nkx2-1-/- embryos. Scale bar\u00a0=\u00a050 um.\n\nWe therefore examined the extent to which tracheoesophageal patterning is independent of NKX2-1 by generating bulk transcriptional profiles of WT tracheal and esophageal epithelium at E11.5 to compare with our Nkx2-1-/- mutant bulk RNA-seq dataset (Figure 3m). Differential expression analysis identified 1126 genes enriched in the trachea and 809 genes enriched in the esophagus of WT embryos (Figure 3n, Figure 3\u2014source data 1). Notably, only 11% of tracheal-enriched genes and 6% of esophageal-enriched genes in WT foreguts were affected by loss of NKX2-1, and the majority of tracheal- or esophageal-enriched genes were unchanged in Nkx2-1-/- foreguts (Figure 3n). Together, these findings define relevant NKX2-1 transcriptional targets during early tracheoesophageal development and uncover a significant NKX2-1-independent gene regulatory program.\n\n### NKX2-1 directly regulates foregut genes, with variable dependency on SOX2\n\nTo identify direct targets of NKX2-1 during TE specification, we performed NKX2-1 chromatin immunoprecipitation followed by sequencing (ChIP-seq) on dissected E11.5 WT trachea. We identified 15,861 genomic regions (peaks) shared between two biological replicates that showed NKX2-1 binding (Figure 4a, FDR\u00a0<\u00a00.00001) and were centrally enriched for the known NKX2-1 motif (Figure 4b, p=3.4e-37). We next looked closely at NKX2-1 binding at or near the loci of select NKX2-1-dependent tracheal and esophageal genes. We observed NKX2-1 binding at the Nkx2-1 promoter and five binding sites within 10 kb of the Nkx2-1 gene, consistent with previous data suggesting that NKX2-1 autoregulates its own expression (Nakazato et al., 1997; Oguchi and Kimura, 1998; Tagne et al., 2012), and also observed binding of NKX2-1 at the Sox2 promoter and four binding sites within the Sox2 locus, suggesting direct repression of Sox2 by NKX2-1 (Figure 4c). In addition, NKX2-1 binding was observed at the promoter of genes such as Pcdh10, Tppp3, and Klf5 that we identified as specific markers of the tracheal and esophageal lineages by scRNA-seq (Figure 4c), suggesting that these genes may also be direct targets of NKX2-1 regulation. Genome-wide comparison of NKX2-1-bound genes with the Nkx2-1-/- de-regulated transcriptome revealed that NKX2-1-dependent genes were associated with NKX2-1 ChIP-seq peaks at a higher frequency than observed at random (Figure 4d, Fisher\u2019s exact test, p<0.0001). Furthermore, when we divided NKX2-1-dependent genes into those that were upregulated or downregulated in Nkx2-1-/- mutants, we found that genes that are downregulated in Nkx2-1-/- mutants are more frequently associated with NKX2-1 ChIP-seq peaks (Figure 4d, Fisher\u2019s exact test, p<0.0001). These data suggest that whereas NKX2-1 is a direct positive regulator of tracheal-specific genes, repression of esophageal-specific genes may more often be indirect.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/55526/elife-55526-fig4-v1.jpg)\n\n**Figure 4.:** (a)\u00a0ChIP-seq for NKX2-1 in E11.5 foreguts identified 15,861 NKX2-1-bound genomic regions (peaks) shared between replicates (FDR\u00a0<\u00a00.00001). n\u00a0=\u00a02 biological replicates with 175 pooled embryos/replicate. (b) Motif analysis of NKX2-1 ChIP-seq data shows peaks are enriched for the NKX2-1 motif (p=3.4e-37). (c) NKX2-1 ChIP-seq (black) and input (grey) tracks near loci of select NKX2-1-dependent genes (blue) Nkx2-1, Sox2, Pcdh10, Tppp3, and Klf5 visualized in IGV. Input and NKX2-1 IP tracks are displayed at the same linear scale, as indicated by IGV Data Range on the y-axis. Horizontal scale bar\u00a0=\u00a010 kb. (d) Genome-wide comparison of NKX2-1 ChIP-seq with Nkx2-1-/- mutant RNA-seq. Overlap of NKX2-1 ChIP-seq associated genes with NKX2-1-dependent genes (top), genes increased in Nkx2-1-/- mutants (middle) and genes decreased in Nkx2-1-/- mutants (lower). *asterisk\u00a0= p < 0.0001, Fisher\u2019s exact test.\n\nBased on previous studies, NKX2-1 indirect regulation may be mediated through its repression of Sox2 (Billmyre et al., 2015). Indeed, given the well-established genetically co-repressive relationship of SOX2 and NKX2-1 in the foregut (Domyan et al., 2011; Que et al., 2007; Teramoto et al., 2019; Trisno et al., 2018), it is challenging to determine whether the transcriptional changes we observed in Nkx2-1-/- mutants are solely due to the loss of NKX2-1 or also due to the subsequent gain of SOX2. Thus, we devised a genetic strategy to uncouple NKX2-1 and SOX2 regulation of tracheal and esophageal genes by generating Nkx2-1; Sox2 compound mutant embryos. To achieve this, we again utilized Nkx2.5-cre to generate Nkx2-1lox/lox; Nkx2.5cre/+ (Nkx2-1-TrKO) embryos lacking NKX2-1, and Nkx2-1lox/lox; Sox2lox/lox; Nkx2.5cre/+ (Nkx2-1-TrKO; Sox2-TrKO) embryos lacking both NKX2-1 and SOX2 in the ventral foregut/trachea cells (Figure 5a\u2013c). Similar to the Nkx2-1-TrKO embryos, all Nkx2-1-TrKO; Sox2-TrKO embryos we examined exhibited a complete failure of foregut separation (n\u00a0=\u00a06/6 embryos). We then examined NKX2-1-regulated genes that were determined by our scRNA-seq analysis to be markers of E11.5 trachea or esophagus. The expression of the tracheal-specific genes Pcdh10 and Tppp3 was decreased in Nkx2-1-TrKO and Nkx2-1-TrKO; Sox2-TrKO ventral foreguts indicating that their expression requires NKX2-1 but not upregulation of SOX2 (Figure 5d\u2013i\u2019), Conversely, expression of the esophageal-specific genes Klf5 and Has2 was upregulated in the ventral foreguts of Nkx2-1-TrKO, as predicted from our RNA-seq analysis (Figure 5j\u2013o\u2019). Interestingly, whereas Klf5 expression was also increased in the ventral foregut of Nkx2-1tr/tr; Sox2tr/tr mutants (arrowhead Figure 5l,l\u2019), Has2 expression was not, with the exception of a few cells that retain SOX2 expression ventrally (arrowhead in Figure 5o,o\u2019). Thus, while Klf5 and Has2 were both repressed by NKX2-1, upregulation of Has2 in the ventral foregut of Nkx2-1-TrKO embryos appears to also depend on the upregulation of SOX2 in this region. Together, these results revealed that NKX2-1 regulation results from both direct activation of tracheal genes and repression of esophageal genes, as well as the indirect suppression of target genes through the repression of Sox2, illustrating the complex relationship between these two transcription factors with opposing expression patterns.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/55526/elife-55526-fig5-v1.jpg)\n\n**Figure 5.:** (a-c)\u00a0Schematic of Nkx2-1; Sox2 compound mutant analysis phenotypes and resulting NKX2-1 and SOX2 expression patterns in E11.5 control embryos (a), Nkx2-1-TrKO mutants (b), Nkx2-1-TrKO; Sox2-TrKO mutants (c). 8/8 Nkx2-1-TrKO embryos and 6/6 Nkx2-1-TrKO; Sox2-TrKO embryos examined had TEF phenotype. (d-f) RNA localization of NKX2-1-dependent, SOX2-independent gene Pcdh10 in control (d), Nkx2-1-TrKO (e), and Nkx2-1-TrKO; Sox2-TrKO (f) embryos with immunofluorescent staining of NKX2-1 (magenta) and SOX2 (cyan). (g\u2013i) Tracheal, NKX2-1-dependent, SOX2-independent gene Tppp3. (j\u2013l) Esophageal, NKX2-1-dependent, SOX2-independent gene Klf5. Solid arrowheads indicate SOX2-negative, Klf5-positive ventral cell. (m\u2013o) Esophageal, NKX2-1-dependent, SOX2-dependent gene Has2. Arrowheads indicate ventral SOX2-positive, Has2-positive cells. n\u00a0=\u00a03 embryos/staining combination. All images were captured at 20X magnification and displayed at the same scale. Scale\u00a0=\u00a050 um.\n\n### NKX2-1 regulates Wnt7b and Shh to couple tracheal endoderm identity to mesenchymal cell fate\n\nThe apparent fate transformation of Nkx2-1-/- mutant trachea to esophagus is supported by the conversion of ventral mesenchymal cell fates from tracheal cartilage to smooth muscle (Minoo et al., 1999; Que et al., 2007; Yuan et al., 2000). We confirmed previous reports of a dramatic reduction and disorganization of tracheal cartilage with expansion of the smooth muscle in Nkx2-1-/- mutants, and additionally observed malformation of the thyroid and cricoid cartilage (n\u00a0=\u00a03/3 embryos, Figure 6a,o,p). Our finding that the endoderm in Nkx2-1-/- mutants did not exhibit a complete fate transformation led us to ask whether we could uncover the specific NKX2-1 targets that impact epithelial to mesenchymal signaling amongst this more limited set of candidates. Notably, Wnt7b expression decreased and Shh increased in Nkx2-1-/- foregut epithelium compared to WT (Figure 2a), and both signaling genes have known functions in tracheal cartilage and smooth muscle formation. In WT E11.5 and E13.5 embryos, Wnt7b is expressed in the tracheal epithelium and Shh is expressed more strongly in the esophageal epithelium (Gerhardt et al., 2018; Litingtung et al., 1998; Rajagopal et al., 2008; Snowball et al., 2015; Figure 6c,f,i,m). We examined our NKX2-1 ChIP-seq data to determine whether NKX2-1 binds directly to Wnt7b and Shh in the trachea and observed binding at three sites 20 kb and 60 kb upstream and 20 kb downstream of the Wnt7b gene. Though a previous study detected binding of NKX2-1 to the Wnt7b promoter in a lung epithelial cell line (Weidenfeld et al., 2002), we instead observe binding at three sites 20 kb and 60 kb upstream and 20 kb downstream of the Wnt7b gene. We also observed two NKX2-1 ChIP-seq peaks within the Shh gene, and two additional peaks 50 kb and 150 kb upstream of Shh, consistent with the possibility of direct regulation by NKX2-1 (Figure 6b). Together, these data indicate that Wnt7b and Shh are targets of NKX2-1 regulation in the developing foregut.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/55526/elife-55526-fig6-v1.jpg)\n\n**Figure 6.:** (a)\u00a0Alcian blue staining of tracheal cartilage in E18.5 control and Nkx2-1-/- embryos. 3/3 embryos examined exhibited similar cartilage phenotype. (b) ChIP-seq of direct NKX2-1 binding near Wnt7b and Shh loci. Input and NKX2-1 IP tracks are displayed at the same linear scale, as indicated by IGV Data Range on the y-axis. Horizontal scale bar\u00a0=\u00a010 kb. (c\u2013h) RNA localization (green) of Wnt7b (c\u2013e) and Shh (f\u2013h) in control (left), Nkx2-1-TrKO (middle), and Nkx2-1-TrKO; Sox2-TrKO (right) E11.5 embryos with immunofluorescent staining of NKX2-1 (magenta) and SOX2 (cyan). (i\u2013j) RNA localization of Wnt7b (red) and Axin2 (yellow) in WT and Nkx2-1-/- E13.5 foreguts. 3/3 embryos display phenotype. (k\u2013l) SOX9 staining (green) of cartilage progenitors in WT and Nkx2-1-/- E13.5 foreguts. 3/3 embryos display phenotype. (m\u2013n) RNA localization of Shh (red) and Ptch1 (yellow) in WT and Nkx2-1-/- E13.5 foreguts. 2/2 embryos display phenotype. (o\u2013p) Smooth muscle actin (SMA) staining (cyan) of smooth muscle in WT and Nkx2-1-/- E13.5 foreguts. 3/3 embryos display phenotype. All images were captured at 20X magnification and images within each staining panel are at the same scale. Scale\u00a0=\u00a050 um.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/55526/elife-55526-fig6-figsupp1-v1.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (a)\u00a0RNA localization of Wnt7b (red) and Axin2 (yellow), and (b) Shh (red) and Ptch1 (yellow) in WT and Nkx2-1-/- E11.5 foreguts. (c) Schematic of rostral-caudal position of images in (d-g). (d-g) RNA localization of Wnt7b and Axin2 (d), Shh and Ptch1 (f), and protein localization of SOX9 (e), and smooth muscle actin (SMA) (g) along the rostral-caudal axis of E13.5 WT and Nkx2-1-/- foreguts.\n\nTo determine whether NKX2-1 regulates Wnt7b and Shh through a change in SOX2 expression, we examined Nkx2-1; Sox2 compound mutants. Wnt7b expression was lost in both Nkx2-1-TrKO and Nkx2-1-TrKO; Sox2-TrKO foreguts, suggesting that NKX2-1 regulates Wnt7b independently of regulation by SOX2 (Figure 6c\u2013e\u2019). However, the increase in Shh expression in the ventral foregut observed in Nkx2-1-TrKO embryos was not observed in Nkx2-1-TrKO; Sox2-TrKO foreguts (Figure 6f\u2013h\u2019), indicating that SOX2 is required for upregulation of Shh in the ventral foregut. Thus, Wnt7b expression is positively regulated by NKX2-1 but not subject to regulation by SOX2, whereas the dorsally restricted expression of Shh is mediated by the combined action of NKX2-1 and SOX2.\n\nTo determine whether NKX2-1 regulation of Wnt7b and Shh impacts epithelial-mesenchymal signaling, we first examined the expression of Wnt7b and downstream canonical WNT signaling transcriptional target Axin2 in E11.5 and E13.5 Nkx2-1-/- and WT foreguts. Whereas in WT embryos Axin2 expression was localized to the ventral tracheal mesenchyme where SOX9+ cartilage progenitor cells are found, in Nkx2-1-/- mutants Axin2 expression was decreased and correlated with disorganized SOX9 expression (Figure 6i\u2013l, Figure 6\u2014figure supplement 1a). This decrease in Axin2 expression was more dramatic in the caudal foregut, consistent with the increased severity of cartilage specification defects in this region seen in skeletal preparations (Figure 6a) and as visualized by SOX9 localization in\u00a0Nkx2-1-/- foreguts (Figure 6\u2014figure supplement 1c\u2013e). We next examined the expression of Shh and downstream transcriptional target Ptch1 in Nkx2-1-/- mutant and WT foreguts. In E11.5 and E13.5 Nkx2-1-/- foreguts, increased expression of Shh in the ventral foregut epithelium compared to WT was mirrored by an increase in Ptch1 expression in the surrounding mesenchyme (Figure 6m,n; Figure 6\u2014figure supplement 1b). This increase in Ptch1 expression also corresponded with the increase in smooth muscle as visualized by ACTA2 (i.e. \u03b1-SMA) surrounding Nkx2-1-/- foreguts compared to WT (Figure 6m\u2013p, S8c,f,g). Thus, our data show that in addition to regulating a subset of genes that define tracheoesophageal epithelial identity at this stage, NKX2-1 and SOX2 regulate epithelial-mesenchymal crosstalk via WNT and SHH signaling to instruct mesenchymal differentiation, explaining this aspect of the observed TE fate transformation in Nkx2-1-/- mutant foreguts (Figure 7).\n\n![Figure 7.](https://cdn.elifesciences.org/articles/55526/elife-55526-fig7-v1.jpg)\n\n**Figure 7.:** (a) Schematic of NKX2-1 and SOX2 regulation of gene expression in WT trachea and esophagus, and epithelial-mesenchymal signaling downstream of NKX2-1. NKX2-1 negatively regulates esophageal genes Shh, Klf5 and Has2, and positively regulates tracheal genes Wnt7b, Tppp3, and Pcdh10. SOX2 is required for expression of Shh and Has2. NKX2-1 regulation of Shh and Wnt7b influences mesenchymal SHH and WNT response required for smooth muscle and tracheal cartilage development. (b) Schematic of Nkx2-1-/- mutant phenotype. Maintenance of the NKX2-1-independent transcriptional program includes dorsal expression of Dcn, Ackr3, Meis2, Pitx1, and Lrig1 and ventral expression of Irx2, Ly6h, and Nrp2. NKX2-1-dependent transcriptional changes include increased expression of esophageal genes and decreased expression of tracheal genes in the ventral foregut, accompanied by changes in epithelial-mesenchymal signaling and mesenchymal differentiation.\n\n## Discussion\n\nNKX2-1 is a critical regulator of respiratory development across vertebrates (Minoo et al., 1999; Rankin et al., 2018; Small et al., 2000; Yuan et al., 2000), but how it directs TE specification was unknown. It has been previously demonstrated in adenocarcinoma and in the adult distal lung, that loss of NKX2-1 leads to adoption of a gastric transcriptional phenotype (Little et al., 2019; Snyder et al., 2013). Further, mesenchymal cues that induce lung and trachea development converge to establish ventral NKX2-1 expression, and Nkx2-1-/- mutant embryos exhibit dramatic epithelial and mesenchymal phenotypes. Together, these findings have led to the proposal that NKX2-1 is a master regulator of initial tracheal fate specification (Billmyre et al., 2015; Domyan et al., 2011; Goss et al., 2009; Harris-Johnson et al., 2009; Morrisey and Hogan, 2010; Que et al., 2007). By performing scRNA-seq profiling on the endoderm at the onset of tracheal and esophageal development, and comparing this profile to Nkx2-1-/- mutant embryos, we find that NKX2-1 loss does not cause a transcriptome-wide tracheal-to-esophageal conversion, but rather results in changes in expression of a key subset of dorsoventrally restricted genes that can explain apparent fate-conversion phenotypes in the mesenchyme (Figure 7).\n\nThe functional significance of the NKX2-1-independent tracheal program, and how it is established, remains to be explored. It is possible that mesenchymal signals such as WNT and BMP induce other tracheal transcriptional regulators in parallel. Interestingly, the ISL1 transcription factor has been recently identified to exhibit ventrally-restricted expression in the trachea and is required for normal NKX2-1 expression (Kim et al., 2019). Further, our data reveal that Isl1 is independent of NKX2-1 (Figure 2\u2014source data 1), indicating that it resides hierarchically upstream of NKX2-1. It remains to be determined, however, the extent to which ISL1 regulates tracheal transcriptional identity. Our profiling of tracheoesophageal specification, combined with genomic analyses of additional mouse mutants, provide an exciting opportunity for further exploration of additional regulators of tracheoesophageal specification within the foregut epithelium.\n\nOur scRNA-seq profiling reveals many new markers of dorsoventral foregut identity beyond Nkx2-1 and Sox2. This of particular importance for human iPSC/ESC-derived models where Nkx2-1 and Sox2 expression are often used to indicate respiratory or esophageal/gut fate decisions (Dye et al., 2015; Hawkins et al., 2017; Trisno et al., 2018; Zhang et al., 2018). Our data suggest that in addition to using Nkx2-1 as a marker of respiratory fate, differentiation protocols might be more thoroughly characterized using a panel of NKX2-1-dependent and -independent respiratory markers. Further, though we have not explored it in depth, we also provide here the first scRNA-seq dataset characterizing the lung at early stages of branching morphogenesis, which may additionally aid in more precise characterization of early lung development. Our study therefore provides a rich resource for expanding our understanding of early cell fate decisions in stem cell models of human foregut and lung development.\n\nBy defining the NKX2-1-dependent transcriptomic profile, we elucidate how NKX2-1 regulates initial tracheal and esophageal development at the genome-wide level. A dual repressive genetic relationship with SOX2 has been previously demonstrated, and our ChIP-seq data support direct repression of Sox2 by NKX2-1. We find, however, that direct binding of NKX2\u20131\u00a0occurs more often at genes that are normally expressed in the trachea, and loss of tracheal gene expression in Nkx2-1-/- mutants is not indirectly mediated by upregulation of SOX2. Together, these findings broadly support a model in which NKX2-1 more often positively regulates the tracheal gene expression program directly. While we demonstrate that SOX2 is a mediator of NKX2-1-indirect regulation of some genes, SOX2 targets in the foregut have not been identified at the transciptomic level, and it is therefore unclear the extent to which SOX2 controls TE fates. Additionally, our identification of other NKX2-1-dependent transcription factors such as KLF5 provides candidates potentially\u00a0mediating\u00a0NKX2-1 indirect repression of esophageal genes.\n\nTracheal cartilage and smooth muscle phenotypes in Nkx2-1-/- embryos support a TE fate conversion phenotype (Minoo et al., 1999; Que et al., 2007); here we provide a likely explanation of these phenotypes and reveal how NKX2-1 may regulate development of the tracheal cartilage and restrict smooth muscle formation. Normal tracheal cartilage specification requires WNT signaling from the tracheal epithelium to the mesenchyme (Hou et al., 2019; Kishimoto et al., 2019; Snowball et al., 2015). We find that NKX2-1 positively regulates Wnt7b resulting in activation of a canonical WNT-signaling response in the adjacent ventral tracheal mesenchyme. A recent report suggested that epithelial-mesenchymal WNT signaling during cartilage specification occurs through NKX2-1-independent mechanisms (Kishimoto et al., 2019). Our results differ from this finding but do support the possibility that an NKX2-1 independent mechanism also contributes to tracheal cartilage specification, as some disorganized cartilage still forms in Nkx2-1-/- mutants.\n\nIn addition to regulating WNT signaling, we found that NKX2-1 loss resulted in upregulation of Shh and increased SHH signal reception in the ventral mesenchyme. As HH signaling is a key regulator of smooth muscle formation in multiple contexts, and its disruption also results in perturbation of tracheal cartilage formation (Huycke et al., 2019; Mao et al., 2010; Miller et al., 2004; Sala et al., 2011), it is likely that this upregulation also contributes to disruption of tracheal cartilage and expansion of smooth muscle formation. Notably, similar to the other trachea and esophagus markers we examined, NKX2-1 regulation of Wnt7b does not depend on SOX2, whereas the upregulation of Shh in Nkx2-1-/- mutants does. This fits with the broader model of NKX2-1 directly activating a defined tracheal program, but more often repressing an esophageal program through ventral repression of SOX2.\n\nWhile few genetic causes of foregut anomalies in humans have been identified, human stem cell models have indicated that key players in respiratory and gut specification are conserved between mice and humans (Ostrin et al., 2018; Trisno et al., 2018). Therefore, future work to understand genetic causes of foregut malformations in humans including tracheoesophageal fistula (TEF), tracheal agenesis, esophageal atresia, tracheomalacia, and tracheal stenosis will benefit greatly from the improved understanding of normal tracheal and esophageal specification presented in this study. Together, these findings dramatically advance our understanding of the earliest stages of tracheoesophageal development, while revising our perspective on the role of NKX2-1 in this process.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Strain, strain background (mouse)</td>\n      <td>CD1</td>\n      <td>Harlan/Envigo</td>\n      <td>Cat#: 030</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (mouse)</td>\n      <td>Nkx2-1fl/fl</td>\n      <td>Kusakabe et al., 2006</td>\n      <td>MGI: 3653645</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (mouse)</td>\n      <td>Sox2fl/fl</td>\n      <td>Shaham et al., 2009</td>\n      <td>MGI: 4366453</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (mouse)</td>\n      <td>Tmem163Tg(Actincre)</td>\n      <td>Lewandoski et al., 1997</td>\n      <td>MGI: 2176050</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (mouse)</td>\n      <td>Nkx2.5cre</td>\n      <td>Stanley et al., 2004</td>\n      <td>MGI: 2448972</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>\u03b1-NKX2-1 (rabbit polyconal)</td>\n      <td>Millipore</td>\n      <td>Cat#: 07601</td>\n      <td>1:200 for IF, 5ug for ChIP</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>\u03b1-SOX2 (goat polyclonal)</td>\n      <td>Neuromics</td>\n      <td>Cat#: GT15098</td>\n      <td>1:250 for IF</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>\u03b1-SOX9 (Rabbit polyclonal)</td>\n      <td>Santa Cruz</td>\n      <td>Cat#: sc-20095</td>\n      <td>1:250 for IF</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>\u03b1-PITX1 (Rabbit polyclonal)</td>\n      <td>NovusBio</td>\n      <td>Cat: NBP188644</td>\n      <td>1:200 for IF</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>\u03b1-LRIG1 (Goat polyclonal)</td>\n      <td>R&amp;D Systems</td>\n      <td>Cat#: AF3688</td>\n      <td>1:250 for IF</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>\u03b1-SMA (Rabbit polyclonal)</td>\n      <td>Abcam</td>\n      <td>AB5694</td>\n      <td>1:300 for IF</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>\u03b1-SMA-cy3 (mouse monoclonal)</td>\n      <td>Sigma</td>\n      <td>C6198</td>\n      <td>1:300 for IF</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>\u03b1-EpCAM (rat polyclonal)</td>\n      <td>BioLegend</td>\n      <td>Cat#: 118219</td>\n      <td>1:200 for FACS</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>RNAscope probe mm-Irx2</td>\n      <td>Advanced Cell Diagnostics</td>\n      <td>Cat#: 519901</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>RNAscope probe mm-Wnt7b</td>\n      <td>Advanced Cell Diagnostics</td>\n      <td>Cat#: 401131</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>RNAscope probe mm-Pcdh10</td>\n      <td>Advanced Cell Diagnostics</td>\n      <td>Cat#: 477781-C3</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>RNAscope probe mm-Tppp3</td>\n      <td>Advanced Cell Diagnostics</td>\n      <td>Cat#: 586631</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>RNAscope probe mm-Ly6h</td>\n      <td>Advanced Cell Diagnostics</td>\n      <td>Cat#: 587811</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>RNAscope probe mm-Krt19</td>\n      <td>Advanced Cell Diagnostics</td>\n      <td>Cat#: 402941</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>RNAscope probe mm-Klf5</td>\n      <td>Advanced Cell Diagnostics</td>\n      <td>Cat#: 444081</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>RNAscope probe mm-Foxe1</td>\n      <td>Advanced Cell Diagnostics</td>\n      <td>Cat#: 509641</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>RNAscope probe mm-Crabp1</td>\n      <td>Advanced Cell Diagnostics</td>\n      <td>Cat#: 474711-C3</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>RNAscope probe mm-Bmp4</td>\n      <td>Advanced Cell Diagnostics</td>\n      <td>Cat#: 401301-C2</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>RNAscope probe mm-Nrp2</td>\n      <td>Advanced Cell Diagnostics</td>\n      <td>Cat#: 500661</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>RNAscope probe mm-Dcn</td>\n      <td>Advanced Cell Diagnostics</td>\n      <td>Cat#: 413281-C3</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>RNAscope probe mm-Has2</td>\n      <td>Advanced Cell Diagnostics</td>\n      <td>Cat#: 465171-C2</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>RNAscope probe mm-Meis2</td>\n      <td>Advanced Cell Diagnostics</td>\n      <td>Cat#: 436371-C3</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>RNAscope probe mm-Ackr3</td>\n      <td>Advanced Cell Diagnostics</td>\n      <td>Cat#: 482561-C2</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>RNAscope probe mm-Axin2</td>\n      <td>Advanced Cell Diagnostics</td>\n      <td>Cat#: 400331-C3</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>RNAscope probe mm-Shh</td>\n      <td>Advanced Cell Diagnostics</td>\n      <td>Cat#: 314361</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>RNAscope probe mm-Ptch1</td>\n      <td>Advanced Cell Diagnostics</td>\n      <td>Cat#: 402811-C2</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Nkx2-1-geno1</td>\n      <td>This paper</td>\n      <td>PCR primer</td>\n      <td>5'-CTA-GGG-AGG-CTA -GGA-ACT-CGG-3'</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Nkx2-1-geno2</td>\n      <td>This paper</td>\n      <td>PCR primer</td>\n      <td>5'-CCG-ACC-CAC-GTA-GAG-CC-3'</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Nkx2-1-geno3</td>\n      <td>This paper</td>\n      <td>PCR primer</td>\n      <td>5'-CTC-TTA-TCT-GGG-ATC-GCC-TGA-G-3'</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Sox2-flox-geno1</td>\n      <td>Steevens et al., 2019</td>\n      <td>PCR primer</td>\n      <td>5'-TGG-AAT-CAG-GCT-GCC-GAG-AAT-CC-3'</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Sox2-flox-geno2</td>\n      <td>Steevens et al., 2019</td>\n      <td>PCR primer</td>\n      <td>5'-TCG-TTG-TGG-CAA-CAA-GTG-CTA-AAG-C-3'</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Sox2-flox-geno3</td>\n      <td>Steevens et al., 2019</td>\n      <td>PCR primer</td>\n      <td>5'-CTG-CCA-TAG-CCA-CTC-GAG-AAG-3'</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Cre-geno1</td>\n      <td>Liang et al., 2005; Vauclair et al., 2005</td>\n      <td>PCR primer</td>\n      <td>5'-GTT-CGC-AAG-AAC-CTG-ATG-GAC-A-3'</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Cre-geno2</td>\n      <td>Liang et al., 2005; Vauclair et al., 2005</td>\n      <td>PCR primer</td>\n      <td>5'-CTA-GAG-CCT-GTT-TTG-CAC-GTT-C-3'</td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>MicroChIP Diapure columns</td>\n      <td>Diagenode</td>\n      <td>Cat#: C03040001</td>\n      <td>DNA extraction (ChIP)</td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>Microplex Library Preparation Kit v2</td>\n      <td>Diagenode</td>\n      <td>Cat#: C05010012</td>\n      <td>ChIP library prep</td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>Rneasy Micro kit</td>\n      <td>Qiagen</td>\n      <td>Cat# 74004</td>\n      <td>RNA extraction (bulk)</td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>SMARTer Stranded Total RNAseq kit V2</td>\n      <td>Takara</td>\n      <td>Cat#: 634411</td>\n      <td>Bulk RNAseq library prep</td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>RNA 6000 Pico Bioanalyzer kit</td>\n      <td>Agilent</td>\n      <td>Cat# 5067-1513</td>\n      <td>Bioanalyzer (RNA)</td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>High Sensitivity DNA Bioanalyzer kit</td>\n      <td>Agilent</td>\n      <td>Cat#: 5067-4626</td>\n      <td>Bioanalyzer (DNA)</td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>QuBit dsDNA HS Assay kit</td>\n      <td>Invitrogen</td>\n      <td>Cat#: Q32854</td>\n      <td>DNA quantification</td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>Chromium Single Cell ' Reagent Kit V2</td>\n      <td>10X Genomics</td>\n      <td>Cat#: PN-120237, PN-120236, PN-120262</td>\n      <td>Single cell RNA-seq</td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>Sytox Blue nuclei acid stain</td>\n      <td>Thermo</td>\n      <td>Cat: S11348</td>\n      <td>Live/dead stain for FACS, use at 1uM</td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>TSAplus Fluoresceine</td>\n      <td>Akoya Biosciences</td>\n      <td>NEL741001KT</td>\n      <td>RNAscope, 1:1500</td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>TSAplus Cy3</td>\n      <td>Akoya Biosciences</td>\n      <td>NEL744001KT</td>\n      <td>RNAscope, 1:1500</td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>TSAplus Cy5</td>\n      <td>Akoya Biosciences</td>\n      <td>NEL745001KT</td>\n      <td>RNAscope, 1:1500</td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>DynaBeads, protein G</td>\n      <td>Invitrogen</td>\n      <td>Cat#: 10003D</td>\n      <td>ChIP</td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>AMPure XP beads</td>\n      <td>Beckman Coulter</td>\n      <td>Cat#: A63881</td>\n      <td>Library cleanup</td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>TrypLE Express</td>\n      <td>Thermo</td>\n      <td>Cat# 12604013</td>\n      <td>Tissue dissociation</td>\n    </tr>\n  </tbody>\n</table>\n\n### Mice\n\nAll animal procedures were performed at the University of California San Francisco (UCSF) under approval from the UCSF Institutional Animal Care and Use Committee (mouse protocol # AN164190). Mouse embryos were collected from pregnant females via cesarean section at the described timepoint following observation of a vaginal plug. Noon the day of the plug was considered embryonic day 0.5. For single cell sequencing experiments, timed-pregnant CD1 female mice were obtained from Harlan/Envigo (Cat: 030) and embryos were staged using somite counts. For mutant analysis, the following alleles were used: Nkx2-1lox/lox (MGI: 3653645), Sox2lox/lox (MGI: 4366453), Nkx2.5-Cre (MGI: 2448972), Actin-Cre (MGI: 2176050).\n\n### Immunofluorescence\n\nMouse embryos were dissected at E10.5 or E11.5 in cold PBS and fixed overnight in 4% paraformaldehyde at 4C. For cryopreservation, embryos were subjected to a sucrose gradient of 12.5% sucrose in PBS for 8 hr, followed by 25% sucrose in PBS overnight at 4\u00b0C, and embedded in OCT. Tissue sections of 12 um were cut using a cryostat and used for immunofluorescence, or in-situ hybridization followed by immunofluorescence with standard protocols. Primary antibodies used for immunofluorescence were: NKX2-1 (Millipore 07601, 1:200), SOX2 (Neuromics GT15098, 1:250), SOX9 (Santa Cruz, sc-20095, 1:250), LRIG1 (R&D, AF3688, 1:200), PITX1 (NovusBio, NBP188644, 1:250).\n\n### In-situ hybridization\n\nFor in-situ hybridization, 12 \u00b5m cryosections were stained using the RNAscope Multiplex Fluorescent Reagent Kit v2 (Advanced Cell Diagnostics, cat# 323100) with the following adjustments to the manufacturer\u2019s protocol: antigen retrieval step was bypassed, protease step used ProteasePlus for 10 min. Following in-situ hybridization, slides were washed 2x in PBS and subjected to immunofluorescent staining as described in \u2018Immunofluorescence\u2019 above. Probes used for in-situ hybridization against mouse RNA were obtained from Advanced Cell Diagnostics as follows: Irx2 (519901), Wnt7b (401131), Pcdh10 (477781-C3), Tppp3 (586631), Ly6h (587811), Krt19 (402941), Klf5 (444081), Foxe1 (509641), Crabp1 (474711-C3), Bmp4 (401301-C2), Nrp2 (500661), Dcn (413281-C3), Has2 (465171-C2), Meis2 (436371-C3), Ackr3 (482561-C2), Axin2 (400331-C3), Shh (314361), Ptch1 (402811-C2).\n\n### Skeletal preparation\n\nSkeletal preps were performed as previously described (Martin et al., 1995).\n\n### Dissociation and FACS of embryonic tissue\n\nForegut tissue was dissected in cold PBS and dissociated to single cells using TrypLE Express (phenol-red free, Thermo cat# 12604013) at 37\u00b0C for 5 min, followed by trituration for 1\u20133 min at 37\u00b0C. Cells were washed twice with FACS buffer (2 mM EDTA and 5% fetal bovine serum in phenol-red free HBSS). To identify epithelial cells, cells were stained with PerCP/Cy5.5 anti-mouse CD326/EpCAM (BioLegend, cat# 118219, used at 1:100) at 4\u00b0C for 30 min followed by two washes with FACS buffer. Cells were resuspended in FACS buffer with Sytox Blue nucleic acid stain (Thermo, S11348, used at 1 \u00b5M) to stain dead cells, and passed through a 35 \u00b5m cell strainer. Cells were sorted using a BD FACS Aria II. Single live epithelial cells were collected after size selection and gating for Sytox-negative, EpCAM-positive cells. For scRNA-seq, cells were sorted into EDTA-free FACS buffer and processed as described below. For bulk-RNA-seq, cells were sorted directly into RNA lysis buffer (Qiagen RNeasy Micro kit, cat# 74004) with 1% beta-mercaptoethanol and processed as described below.\n\n### Single-cell RNA sequencing\n\nForegut tissue was dissected from 20 embryos at E10.5 (6-9ts) and 28 embryos at E11.5 (16-20ts). To ensure for representation of tracheal and esophageal cells at E11.5, lung tissue was separated from E11.5 foreguts and processed in parallel. Tissue from each timepoint was pooled and single-cell suspension and epithelial purification was performed as described above. 25,000 live epithelial cells from each sample were loaded into individual wells for single-cell capture using the Chromium Single Cell 3\u2019 Reagent Kit V2 (10X Genomics). Library preparation for each sample was also performed using the Chromium Single Cell 3\u2019 Reagent Kit V2, and each sample was given a unique i7 index. Libraries were pooled and subjected to sequencing in a single lane of an Illumina NovaSeq6000. Sequencing data were processed, and downstream analysis performed as described below.\n\n### RNA sequencing\n\nFor bulk RNA-sequencing experiments, whole foregut tissue was dissected from E11.5 Nkx2-1-/- or WT embryos, and lungs were removed at the time of dissection. For RNA-sequencing of wild type (WT) trachea and esophagus, trachea and esophagus were manually separated at the time of dissection. Foreguts of individual embryos were dissociated, stained, and sorted as described above. Each biological replicate consisted of RNA pooled from two Nkx2-1-/- or WT embryos, with a total of 3 biological replicates from different litters. RNA was purified using the RNeasy Micro kit (Qiagen, cat# 74004) and quantification was performed using the RNA 6000 Pico kit (Agilent, cat# 5067\u20131513) on an Agilent 2100 Bioanalyzer. RNA-sequencing libraries were prepared from 4 ng of input RNA using the SMARTer Stranded Total RNAseq kit V2 (Takara, cat# 634411) with 13 amplification cycles. Library size and quality was checked using an Agilent 2100 Bioanalyzer with the High Sensitivity DNA kit (Agilent, cat# 5067\u20134626), and library concentration was determined with the QuBit dsDNA HS Assay kit (Invitrogen, cat# Q32854). Libraries were normalized to 7 nM, pooled, and sequenced across two lanes of an Illumina HiSeq 4000 to generate 50 base pair single-end reads. Data processing and downstream analysis was performed as described below.\n\n### Chromatin immunoprecipitation and sequencing\n\nFor ChIP-seq experiments, tracheas were dissected from WT E11.5 mouse embryos and cross-linked with 1% cold PFA for 9 min. Crosslinking was stopped with glycine for a final concentration of 0.125M. The crosslinked tissue was washed 2x in PBS and stored at \u221280\u00b0C. For each replicate 175 trachea were pooled and the tissue was thawed and dissociated in cold PBS by passing through a 25G needle until fully dissociated. The cells were lysed in 500 \u00b5l lysis buffer (50 mM Tris-HCl pH8, 2 mM EDTA pH8, 0.1% NP-40, 10% glycerol in DNase/RNase-free water) with protease inhibitors (Aprotinin, Pepstatin A, Leupeptin, 1 mM PMSF) for 5 min on ice. Nuclei were pelleted by spinning cells at 845xg for 5 min at 8\u00b0C, then lysed with 500 \u00b5l SDS lysis buffer (50 mM Tris-HCl + 10 mM EDTA + 1% SDS in sterile water) for 5 min on ice. The chromatin from lysed nuclei in SDS lysis buffer was sheared to obtain 200\u2013500 bp DNA fragments using a Diagenode Bioruptor with 35 cycles (30 s on/off) submerged in cold water. Fragment sizes were determined by running a 20 \u00b5l aliquot of reverse-crosslinked chromatin on a 1.5% agarose gel. The sheared chromatin was diluted 1:10 with ChIP dilution buffer (50 mM Tris-HCl, 2 mM EDTA, 0.5M NaCl, 0.1% SDS in sterile water) then pre-cleared with washed Dynabeads Protein G for 1 hr at 4\u00b0C. The Dynabeads were magnetically isolated from chromatin and 1% of chromatin was separated and reverse crosslinked to be used as input. The remaining sample was incubated with Nkx2-1 antibody (Millipore 07601) overnight at 4\u00b0C. To isolate antibody-bound DNA, washed Dynabeads Protein G were added to each sample (50 ul beads/sample) and incubated for 30 min at 4\u00b0C.The Dynabeads with antibody-bound chromatin were isolated magnetically and subjected to 3x washes each with wash buffer (10 mM Tris-HCl, 2 mM EDTA, 0.5M NaCl, 0.1% SDS, 1% NP-40 in sterile water), LiCl buffer (10 mM Tris-HCl, 2 mM EDTA, 0.5M LiCl, 0.1% SDS, 1% NP-40), and TE buffer (1 mM Tris-HCl, 1 mM EDTA) for 5 min on ice. The chromatin was eluted in 100 \u00b5l of 2% SDS in TE on a 65\u00b0C heatblock with vigorous shaking (1400 rpm) for 15 min. Input DNA and immunoprecipitated DNA were reverse crosslinked by adding 5 \u00b5l 5M NaCl to 100 \u00b5l eluate and incubating overnight at 65\u00b0C, followed by a 30 min treatment with RNase. The reverse crosslinked DNA was purified using MicroChIP Diapure columns (Diagenode, cat# C03040001) and eluted in 10 \u00b5l of elution buffer. The entire eluate of Nkx2-1 immunoprecipitated DNA and 0.5 ng of input DNA were used to prepare ChIP libraries. The libraries were prepared using the Microplex Library Preparation Kit v2 (Diagenode, cat# C05010012) according to manufacturer's instructions with 14 amplification cycles. Library quality and size were calculated using an Agilent 2100 Bioanalyzer with the High Sensitivity DNA kit (Agilent, cat# 5067\u20134626), and library concentration was quantified with the QuBit dsDNA HS Assay kit (Invitrogen, cat# Q32854). The libraries were pooled to 5 nM and sequenced in one lane of an Illumina HiSeq 4000. The sequencing data were processed and downstream analysis was performed as described below.\n\n### Analysis of scRNA-seq data\n\nWe used the Cell Ranger v2.1.1 pipeline from 10X Genomics for initial processing of raw sequencing reads. Briefly, raw sequencing reads were demultiplexed, aligned to the mouse genome (mm10), filtered for quality using default parameters, and UMI counts were calculated for each gene per cell. Filtered gene-barcode matrices were then analyzed using the Seurat v3.0 R package\u00a0(Stuart et al., 2018). Seurat objects were generated with CreateSuratObject (min.cells\u00a0=\u00a010, min.features\u00a0=\u00a0200) for E10.5 foregut and lung cells, E11.5 foregut cells, and E11.5 lung cells. E11.5 foregut and lung cells were merged to create a single gene-barcode matrix. Cells were further filtered based on the distribution of number of genes (nFeature) and percent mitochondrial genes (percent.mito) per cell across the dataset as follows. nFeature_RNA (E10.5):>2000,<7000, nFeature_RNA (E11.5):>2500,<8500, percent.mito:>0.5,<7.5. Data were normalized for sequencing depth, log-transformed, and multiplied by a scale factor of 10000 using the default parameters of NormalizeData. Linear regression was performed to eliminate variability across cell cycle stage (CellCycleScoring) and mitochondrial content using ScaleData. For E11.5 merged foregut and lung, nCount_RNA was also regressed out as these datasets retained slight variability in sequence depth that was not eliminated with ScaleData. The top 2000 variable genes within each dataset were selected based on a variance stabilizing transformation (FindVariableGenes, selection.method = \u2018vst\u2019) and used in downstream principal component analysis (PCA). The principal components (PCs) were identified with RunPCA and PCs to include in downstream analysis were empirically determined with visualization of PCs in an ElbowPlot. Cell clusters were identified by construction of a shared nearest neighbor graph (FindNeighbors) and a modularity optimization-based clustering algorithm (FindClusters) using the PCs determined by PCA (E10.5 dims\u00a0=\u00a01:20, E11.5 dims\u00a0=\u00a01:12). Clustering was performed at multiple resolutions between 0.2 and 2, and optimal resolution was determined empirically based on the expression of known population markers and the FindMarkers function (E10.5 resolution\u00a0=\u00a00.55, E11.5 resolution\u00a0=\u00a00.45). Several outlying clusters of mesenchymal contamination were removed, and cells were re-clustered for visualization purposes. Cells and clustering were visualized using Uniform Manifold Approximation and Projection (UMAP) dimensional reduction (RunUMAP). Markers for each cluster were identified with FindAllMarkers using default parameters, and cluster identity was determined based on the presence of known markers, as well as experimental evidence of RNA localization in specific cell types.\n\n### Analysis of bulk RNA-seq data\n\nAnalysis of RNA-seq reads was performed as described previously (Percharde et al., 2018). Differential expression analysis (Nkx2-1-/- vs WT, WT trachea vs WT esophagus) was performed using DESeq2 (Love et al., 2014) (test\u00a0=\u00a0c(\u2018Wald\u2019), betaPrior\u00a0=\u00a0T) and genes with a log2 fold change\u00a0>\u00a00.7 or<\u22120.7 and an adjusted p-value<0.05 were determined to be differentially expressed. Differential expression results were visualized using the ggplot2 package.\n\n### Analysis of ChIP-seq data\n\nFASTQ files of raw sequencing reads for NKX2-1 ChIP and input libraries were processed using a custom script (github.com/akelakuwahara/foregut/run\u00a0ChIPseq). Quality and length trimming and generation of fastqc files to examine sequence quality were performed using Trim Galore (Krueger, 2014). Trimmed reads were aligned to the mouse genome (mm9) using bowtie2 and sorted deduplicated bam files were generated using samtools. Peak calling was performed with MACS2 (Zhang et al., 2008) using a false discovery rate less than 1e-5 (macs2 callpeak -t chip.sorted.bam -c input.sorted.bam -f BAM -q 0.00001 g mm -n nkx_peaks --outdir macs/). Peaks shared between both replicates were identified by finding the intersection of both replicates using the Intersect tool in Galaxy (usegalaxy.org). Motif analysis to test for the enrichment of the NKX2-1 motif was performed with MEME ChIP using a 500 bp region flanking the peak summit for all peaks shared between both replicates. NKX2-1 binding at specific loci was visualized in the Integrative Genomics Viewer. Peak-gene associations were generated with GREAT using the basal-plus-extension rule (McLean et al., 2010).\n\n### Code availability\n\nAll code used for data analysis is available at https://github.com/akelakuwahara/foregut (Kuwahara, 2020; copy archived at https://github.com/elifesciences-publications/foregut).\n",
+      "created_at": "2025-12-02T17:48:56.660902Z"
+    },
+    {
+      "id": "52d48958-c59f-4d4e-b4a1-3d38e5dada17",
+      "submission_id": "489da6f7-ddc7-4438-a46e-40f92503eba5",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Valerie Horsley, Yale University United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.55526.sa1](https://doi.org/10.7554/eLife.55526.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nThis manuscript provides a significant amount of new information about how NKX2.1 and SOX2 act in concert to regulate the esophageal and tracheal developmental programs. A particular strength of the manuscript is the coupling of functional genetic experiments with the sequencing data.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Delineating the early transcriptional specification of the mammalian trachea and esophagus\" for consideration by eLife. Your article has been reviewed by two peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Edward Morrisey as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nWe would like to draw your attention to changes in our revision policy that we have made in response to COVID-19 (https://elifesciences.org/articles/57162). Specifically, we are asking editors to accept without delay manuscripts, like yours, that they judge can stand as eLife papers without additional data, even if they feel that they would make the manuscript stronger. Thus, the revisions requested below only address clarity and presentation.\n\nSummary:\n\nThis manuscript provides new information about how NKX2.1 and SOX2 act in concert to regulate the esophageal and tracheal developmental programs. Overall the manuscript is compelling in that the conclusions are well supported by strong single cell sequencing and mouse genetic experiments.\n\nRevisions:\n\n1) Provide information on numbers for mouse genetic experiments. How many replicate embryos were examined, and how much heterogeneity in phenotype there is across embryos. It will be important to report how many embryos were examined in each case. It will also be helpful if some quantification of the phenotypes is presented \u2013 i.e. what proportion of the embryos examined displayed a similar phenotype?\n\n2) Scale bars are generally not reported or lack units \u2013 both of these will be helpful for the reader.\n\ni.e. IF/FISH images lack scale bars. ChIP-seq data lack scale and are important for judging the size of peaks, especially between different genes, heatmaps (i.e. Figure 1C) have a scale bar, but units are not reported \u2013 are these z-scores?\n\n3) Provide code for the analysis.\n",
+      "created_at": "2025-12-02T17:48:56.660902Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T17:48:56.660902Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T17:48:56.660902Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "e7b0ea17-66d0-480b-80b5-2254b43f1214",
+      "content_id": "26fd38c6-eb2e-4522-b570-4c1186cfadce",
+      "claim_id": "C1",
+      "claim": "The genome-scale transcriptional programs that specify the mammalian trachea and esophagus are unknown.",
+      "claim_type": "EXPLICIT",
+      "source": "The genome-scale transcriptional programs that specify the mammalian trachea and esophagus are unknown.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as a knowledge gap that the study addresses.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:48:56.660902Z"
+    },
+    {
+      "id": "bf902928-8670-4f5e-a913-e2a0366a793d",
+      "content_id": "26fd38c6-eb2e-4522-b570-4c1186cfadce",
+      "claim_id": "C2",
+      "claim": "NKX2-1 and SOX2 are hypothesized to be co-repressive master regulators of tracheoesophageal fates.",
+      "claim_type": "EXPLICIT",
+      "source": "Though NKX2-1 and SOX2 are hypothesized to be co-repressive master regulators of tracheoesophageal fates, this is untested at a whole transcriptomic scale and their downstream networks remain unidentified.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract states this as a hypothesis that has not been tested at the transcriptomic scale.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:48:56.660902Z"
+    },
+    {
+      "id": "1abbbccb-909f-4f30-ab49-2b31e6e583c0",
+      "content_id": "26fd38c6-eb2e-4522-b570-4c1186cfadce",
+      "claim_id": "C3",
+      "claim": "The majority of the tracheal and esophageal transcriptome is NKX2-1 independent.",
+      "claim_type": "EXPLICIT",
+      "source": "we delineate the NKX2-1 transcriptional program in tracheoesophageal specification, and discover that the majority of the tracheal and esophageal transcriptome is NKX2-1 independent.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the abstract and supported by RNA-seq data comparing Nkx2-1-/- mutants to wild type.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:48:56.660902Z"
+    },
+    {
+      "id": "c47e8b33-be44-489d-b212-77af934625aa",
+      "content_id": "26fd38c6-eb2e-4522-b570-4c1186cfadce",
+      "claim_id": "C4",
+      "claim": "NKX2-1 binds directly to Shh and Wnt7b.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we discover that NKX2-1 binds directly to Shh and Wnt7b and regulates their expression to control mesenchymal specification to cartilage and smooth muscle, coupling epithelial identity with mesenchymal specification.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by ChIP-seq data showing NKX2-1 binding at these loci.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:48:56.660902Z"
+    },
+    {
+      "id": "f932ab45-c8b9-4ab0-963f-85a5beb54598",
+      "content_id": "26fd38c6-eb2e-4522-b570-4c1186cfadce",
+      "claim_id": "C5",
+      "claim": "NKX2-1 regulates Shh and Wnt7b expression to control mesenchymal specification to cartilage and smooth muscle.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we discover that NKX2-1 binds directly to Shh and Wnt7b and regulates their expression to control mesenchymal specification to cartilage and smooth muscle, coupling epithelial identity with mesenchymal specification.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by expression analysis in mutants and observation of mesenchymal phenotypes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:48:56.660902Z"
+    },
+    {
+      "id": "7b19b4c8-c292-40ae-9d05-3bf99748ffad",
+      "content_id": "26fd38c6-eb2e-4522-b570-4c1186cfadce",
+      "claim_id": "C6",
+      "claim": "Formation of the trachea and esophagus requires signals from the splanchnic mesenchyme which specify ventral and dorsal domains of the foregut endoderm tube.",
+      "claim_type": "EXPLICIT",
+      "source": "Formation of the trachea and esophagus requires signals from the splanchnic mesenchyme which specify ventral and dorsal domains of the foregut endoderm tube, resulting in lung bud outgrowth and the initiation of physical separation of the trachea and esophagus (Billmyre et al., 2015; Cardoso and L\u00fc, 2006; Domyan et al., 2011; Goss et al., 2009; Harris-Johnson et al., 2009; Morrisey et al., 2013; Rankin et al., 2018; Rankin et al., 2016; Shannon et al., 1998; Stevens et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:48:56.660902Z"
+    },
+    {
+      "id": "969c0422-149f-40a0-b896-357cac934e18",
+      "content_id": "26fd38c6-eb2e-4522-b570-4c1186cfadce",
+      "claim_id": "C7",
+      "claim": "The tracheal epithelium is composed of multi-ciliated, secretory, and basal cells within a pseudostratified columnar monolayer.",
+      "claim_type": "EXPLICIT",
+      "source": "Ultimately, the tracheal epithelium is composed of multi-ciliated, secretory, and basal cells within a pseudostratified columnar monolayer which is surrounded by mesenchyme-derived ventral cartilaginous rings, and dorsal smooth muscle of the trachealis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the known cellular composition of the mature trachea.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:48:56.660902Z"
+    },
+    {
+      "id": "09cf8f39-9d87-4266-9326-bd3c32ea4eef",
+      "content_id": "26fd38c6-eb2e-4522-b570-4c1186cfadce",
+      "claim_id": "C8",
+      "claim": "The tracheal epithelium is surrounded by mesenchyme-derived ventral cartilaginous rings and dorsal smooth muscle of the trachealis.",
+      "claim_type": "EXPLICIT",
+      "source": "Ultimately, the tracheal epithelium is composed of multi-ciliated, secretory, and basal cells within a pseudostratified columnar monolayer which is surrounded by mesenchyme-derived ventral cartilaginous rings, and dorsal smooth muscle of the trachealis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the known mesenchymal structures surrounding the trachea.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:48:56.660902Z"
+    },
+    {
+      "id": "42053930-e764-4b1a-991c-882b197c0220",
+      "content_id": "26fd38c6-eb2e-4522-b570-4c1186cfadce",
+      "claim_id": "C9",
+      "claim": "The esophagus consists of a stratified squamous keratinized epithelium surrounded by smooth muscle.",
+      "claim_type": "EXPLICIT",
+      "source": "The esophagus consists ultimately of a stratified squamous keratinized epithelium surrounded by smooth muscle.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the known structure of the mature esophagus.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:48:56.660902Z"
+    },
+    {
+      "id": "4f443bb3-5d51-4c3d-99bd-5c90ae22163d",
+      "content_id": "26fd38c6-eb2e-4522-b570-4c1186cfadce",
+      "claim_id": "C10",
+      "claim": "Early failure of tracheoesophageal fate specification can result in tracheoesophageal fistula (TEF) or tracheal agenesis (TA).",
+      "claim_type": "EXPLICIT",
+      "source": "Early failure of tracheoesophageal (TE) fate specification can result in an unseparated common foregut endoderm tube, producing common congenital pathologies known as tracheoesophageal fistula (TEF) or tracheal agenesis (TA) (Billmyre et al., 2015; Morrisey and Hogan, 2010; Sher and Liu, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work on congenital pathologies.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:48:56.660902Z"
+    },
+    {
+      "id": "a7743665-926a-4800-be47-1db9b644fb42",
+      "content_id": "26fd38c6-eb2e-4522-b570-4c1186cfadce",
+      "claim_id": "C11",
+      "claim": "NKX2-1 (TTF1) is the earliest marker of tracheal and lung fate.",
+      "claim_type": "EXPLICIT",
+      "source": "The earliest marker of tracheal and lung fate is the transcription factor NKX2-1 (TTF1) which is expressed in the ventral foregut in a pattern complementary to the dorsally enriched expression of the transcription factor SOX2 (Guazzi et al., 1990; Minoo et al., 1999; Mizuno et al., 1991; Que et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:48:56.660902Z"
+    },
+    {
+      "id": "0ae63221-70bd-4693-b3e4-82c472abe692",
+      "content_id": "26fd38c6-eb2e-4522-b570-4c1186cfadce",
+      "claim_id": "C12",
+      "claim": "NKX2-1 is expressed in the ventral foregut in a pattern complementary to the dorsally enriched expression of SOX2.",
+      "claim_type": "EXPLICIT",
+      "source": "The earliest marker of tracheal and lung fate is the transcription factor NKX2-1 (TTF1) which is expressed in the ventral foregut in a pattern complementary to the dorsally enriched expression of the transcription factor SOX2 (Guazzi et al., 1990; Minoo et al., 1999; Mizuno et al., 1991; Que et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:48:56.660902Z"
+    },
+    {
+      "id": "8fdfbf24-2b7c-4e1d-96d5-7e8f70f3bb02",
+      "content_id": "26fd38c6-eb2e-4522-b570-4c1186cfadce",
+      "claim_id": "C13",
+      "claim": "Disruption of Nkx2-1 in mice resulted in upregulation of SOX2 in the ventral endoderm.",
+      "claim_type": "EXPLICIT",
+      "source": "Disruption of Nkx2-1 in mice resulted in upregulation of SOX2 in the ventral endoderm and differentiation of the adjacent mesenchyme into smooth muscle rather than tracheal cartilage (Minoo et al., 1999; Que et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:48:56.660902Z"
+    },
+    {
+      "id": "bd2b13a4-8638-4a5e-bcdd-5ad3ad905b69",
+      "content_id": "26fd38c6-eb2e-4522-b570-4c1186cfadce",
+      "claim_id": "C14",
+      "claim": "Disruption of Nkx2-1 in mice resulted in differentiation of the adjacent mesenchyme into smooth muscle rather than tracheal cartilage.",
+      "claim_type": "EXPLICIT",
+      "source": "Disruption of Nkx2-1 in mice resulted in upregulation of SOX2 in the ventral endoderm and differentiation of the adjacent mesenchyme into smooth muscle rather than tracheal cartilage (Minoo et al., 1999; Que et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:48:56.660902Z"
+    },
+    {
+      "id": "89c82430-030f-4e84-9b24-24c96910bd63",
+      "content_id": "26fd38c6-eb2e-4522-b570-4c1186cfadce",
+      "claim_id": "C15",
+      "claim": "Hypomorphic disruption of Sox2 in mice resulted in upregulation of dorsal NKX2-1.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, hypomorphic disruption of Sox2 in mice resulted in upregulation of dorsal NKX2-1 and a conversion of the stratified esophageal epithelium to a simple columnar epithelium surrounded by smooth muscle that histologically resembles that of the trachea (Que et al., 2007; Teramoto et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:48:56.660902Z"
+    },
+    {
+      "id": "32b03408-c0ec-4a30-812c-d6ef11794201",
+      "content_id": "26fd38c6-eb2e-4522-b570-4c1186cfadce",
+      "claim_id": "C16",
+      "claim": "Hypomorphic disruption of Sox2 in mice resulted in conversion of the stratified esophageal epithelium to a simple columnar epithelium surrounded by smooth muscle that histologically resembles that of the trachea.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, hypomorphic disruption of Sox2 in mice resulted in upregulation of dorsal NKX2-1 and a conversion of the stratified esophageal epithelium to a simple columnar epithelium surrounded by smooth muscle that histologically resembles that of the trachea (Que et al., 2007; Teramoto et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:48:56.660902Z"
+    },
+    {
+      "id": "dbb8dce6-61aa-462e-b80c-dbd742e304e6",
+      "content_id": "26fd38c6-eb2e-4522-b570-4c1186cfadce",
+      "claim_id": "C17",
+      "claim": "Knockdown of SOX2 in human induced pluripotent stem cell (hiPSC)-derived dorsal foregut cells resulted in upregulation of NKX2-1.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, knockdown of SOX2 in human induced pluripotent stem cell (hiPSC)-derived dorsal foregut cells resulted in upregulation of NKX2-1, and forced expression of SOX2 in hiPSC-derived ventral foregut cells repressed NKX2-1 (Trisno et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:48:56.660902Z"
+    },
+    {
+      "id": "fe65c04e-f178-475b-81d0-2563e3c20c2e",
+      "content_id": "26fd38c6-eb2e-4522-b570-4c1186cfadce",
+      "claim_id": "C18",
+      "claim": "Forced expression of SOX2 in hiPSC-derived ventral foregut cells repressed NKX2-1.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, knockdown of SOX2 in human induced pluripotent stem cell (hiPSC)-derived dorsal foregut cells resulted in upregulation of NKX2-1, and forced expression of SOX2 in hiPSC-derived ventral foregut cells repressed NKX2-1 (Trisno et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:48:56.660902Z"
+    },
+    {
+      "id": "d17c458b-6745-498a-81a5-0ec6ec306653",
+      "content_id": "26fd38c6-eb2e-4522-b570-4c1186cfadce",
+      "claim_id": "C19",
+      "claim": "NKX2-1 and SOX2 form a co-repressive master regulatory switch to define tracheal and esophageal cell fates.",
+      "claim_type": "EXPLICIT",
+      "source": "Together these data have given rise to a model in which NKX2-1 and SOX2 form a co-repressive master regulatory switch to define tracheal and esophageal cell fates (Billmyre et al., 2015; Domyan et al., 2011; Que et al., 2007; Teramoto et al., 2019; Trisno et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a model based on previous work, supported by multiple citations.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:48:56.660902Z"
+    },
+    {
+      "id": "851ce3d6-9c4c-428f-8fc9-f1ce92db09ea",
+      "content_id": "26fd38c6-eb2e-4522-b570-4c1186cfadce",
+      "claim_id": "C20",
+      "claim": "Loss of WNT signaling from the endoderm to the tracheal mesenchyme results in a loss of tracheal cartilage and a corresponding expansion of smooth muscle.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, loss of WNT signaling from the endoderm to the tracheal mesenchyme results in a loss of tracheal cartilage and a corresponding expansion of smooth muscle (Hou et al., 2019; Kishimoto et al., 2019; Snowball et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:48:56.660902Z"
+    },
+    {
+      "id": "dc8311c9-0966-4bee-b7ec-301a6d504e9a",
+      "content_id": "26fd38c6-eb2e-4522-b570-4c1186cfadce",
+      "claim_id": "C21",
+      "claim": "SHH signaling regulates smooth muscle specification in multiple contexts.",
+      "claim_type": "EXPLICIT",
+      "source": "SHH signaling regulates smooth muscle specification in multiple contexts (Huycke et al., 2019; Mao et al., 2010)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:48:56.660902Z"
+    },
+    {
+      "id": "cd1c22a9-c983-47e6-b557-cb3df8544b2a",
+      "content_id": "26fd38c6-eb2e-4522-b570-4c1186cfadce",
+      "claim_id": "C22",
+      "claim": "Loss of SHH signaling from the airway and intestinal epithelium results in loss of smooth muscle formation.",
+      "claim_type": "EXPLICIT",
+      "source": "and loss of SHH signaling from the airway and intestinal epithelium results in loss of smooth muscle formation (Kim et al., 2015; Litingtung et al., 1998; Pepicelli et al., 1998)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:48:56.660902Z"
+    },
+    {
+      "id": "c44c727b-5664-4652-8101-5b6e73c0ed80",
+      "content_id": "26fd38c6-eb2e-4522-b570-4c1186cfadce",
+      "claim_id": "C23",
+      "claim": "Loss of SHH signaling results in mispatterning of tracheal cartilage.",
+      "claim_type": "EXPLICIT",
+      "source": "and loss of SHH signaling from the airway and intestinal epithelium results in loss of smooth muscle formation (Kim et al., 2015; Litingtung et al., 1998; Pepicelli et al., 1998) and mispatterning of tracheal cartilage (Miller et al., 2004; Sala et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:48:56.660902Z"
+    },
+    {
+      "id": "945cb142-2894-498d-b6c6-c108244be2ec",
+      "content_id": "26fd38c6-eb2e-4522-b570-4c1186cfadce",
+      "claim_id": "C24",
+      "claim": "6407 single-cell transcriptomes were generated at E10.5, comprising 5 cell clusters.",
+      "claim_type": "EXPLICIT",
+      "source": "We generated 6407 single-cell transcriptomes at E10.5, comprising 5 cell clusters, and 10,493 single-cell transcriptomes at E11.5, comprising 7 cell clusters",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct report of the scRNA-seq data generated.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:48:56.660902Z"
+    },
+    {
+      "id": "ddbfd4cc-5ce7-427d-a81c-99d20af53c6e",
+      "content_id": "26fd38c6-eb2e-4522-b570-4c1186cfadce",
+      "claim_id": "C25",
+      "claim": "10,493 single-cell transcriptomes were generated at E11.5, comprising 7 cell clusters.",
+      "claim_type": "EXPLICIT",
+      "source": "We generated 6407 single-cell transcriptomes at E10.5, comprising 5 cell clusters, and 10,493 single-cell transcriptomes at E11.5, comprising 7 cell clusters",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct report of the scRNA-seq data generated.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:48:56.660902Z"
+    },
+    {
+      "id": "0eb236d6-be13-4a03-b1f7-9122219fbca6",
+      "content_id": "26fd38c6-eb2e-4522-b570-4c1186cfadce",
+      "claim_id": "C26",
+      "claim": "Sox9 is a marker of developing lung epithelium.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, Sox9, a marker of developing lung epithelium (Herriges et al., 2012; Perl et al., 2005; Rockich et al., 2013), marked a subset of Nkx2-1-positive respiratory cells, enabling us to distinguish distal lung from trachea",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:48:56.660902Z"
+    },
+    {
+      "id": "07a7a5b8-56ad-49e4-973d-e98c8d487991",
+      "content_id": "26fd38c6-eb2e-4522-b570-4c1186cfadce",
+      "claim_id": "C27",
+      "claim": "Cell clusters were defined as lung, trachea, esophagus, and pharynx using differential expression analysis and RNAscope fluorescent in-situ hybridization.",
+      "claim_type": "EXPLICIT",
+      "source": "Using differential expression analysis for each cell cluster and RNAscope fluorescent in-situ hybridization, we defined cell clusters as lung, trachea, esophagus, and pharynx (Figure 1a\u2013l'', Figure 1\u2014figure supplement 2a\u2013m, Figure 1\u2014figure supplement 3a\u2013c, Figure 1\u2014figure supplement 4a)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methods used to identify cell clusters.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:48:56.660902Z"
+    },
+    {
+      "id": "bf09143f-4259-4557-9320-b95cf97bbd7c",
+      "content_id": "26fd38c6-eb2e-4522-b570-4c1186cfadce",
+      "claim_id": "C28",
+      "claim": "A cluster corresponding to the ultimobranchial body was identified in the scRNA-seq data.",
+      "claim_type": "EXPLICIT",
+      "source": "as well as a cluster corresponding to the ultimobranchial body, a derivative of the pharyngeal endoderm that gives rise to the follicular cells of the thyroid (Nilsson and Fagman, 2017; Figure 1\u2014figure supplement 4b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation and figure reference.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:48:56.660902Z"
+    },
+    {
+      "id": "35d229fb-6bc4-49bd-803d-2e65693c91a6",
+      "content_id": "26fd38c6-eb2e-4522-b570-4c1186cfadce",
+      "claim_id": "C29",
+      "claim": "Within the E11.5 lung, a cluster with unique expression of known distal lung markers such as Bmp4 was identified.",
+      "claim_type": "EXPLICIT",
+      "source": "Within the E11.5 lung, we identified a cluster with unique expression of known distal lung markers such as Bmp4 (Weaver et al., 1999; Figure 1\u2014figure supplement 3c, Figure 1\u2014source data 1)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation and figure reference.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:48:56.660902Z"
+    },
+    {
+      "id": "abc7323f-7dfb-471a-940c-1a3c2de9a499",
+      "content_id": "26fd38c6-eb2e-4522-b570-4c1186cfadce",
+      "claim_id": "C30",
+      "claim": "The proximodistal lung axis can be identified by markers in the scRNA-seq dataset.",
+      "claim_type": "EXPLICIT",
+      "source": "demonstrating that the proximodistal lung axis can be identified by markers in our dataset.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the identification of distal lung markers.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:48:56.660902Z"
+    },
+    {
+      "id": "4a097a7b-53f4-43cc-aa9b-fc5905d81187",
+      "content_id": "26fd38c6-eb2e-4522-b570-4c1186cfadce",
+      "claim_id": "C31",
+      "claim": "Signatures of proliferation divided both the trachea and lung clusters at E11.5.",
+      "claim_type": "EXPLICIT",
+      "source": "Signatures of proliferation also divided both the trachea and lung clusters at E11.5 (Figure 1b, Figure 1\u2014source data 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by figure reference and source data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:48:56.660902Z"
+    },
+    {
+      "id": "18e7ce78-feea-4e12-a17a-dfe03c4e5693",
+      "content_id": "26fd38c6-eb2e-4522-b570-4c1186cfadce",
+      "claim_id": "C32",
+      "claim": "Irx2, Tppp3, and Ly6h exhibit enrichment in the ventral foregut at E10.5.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, we also discovered genes such as Tppp3, Pcdh10, Ly6h, and Cldn18 that exhibited enrichment in the ventral foregut at E10.5 (Figure 1c,g\u2013i\", Figure 1\u2014figure supplement 2e-j')",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by figure references showing expression patterns.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:48:56.660902Z"
+    },
+    {
+      "id": "a3fd9eb4-ecd1-45b4-b01b-da1ec383380b",
+      "content_id": "26fd38c6-eb2e-4522-b570-4c1186cfadce",
+      "claim_id": "C33",
+      "claim": "Tppp3, Pcdh10, Ly6h, and Cldn18 specifically mark the trachea and proximal airway at E11.5.",
+      "claim_type": "EXPLICIT",
+      "source": "and specifically marked the trachea and proximal airway at E11.5 (Figure 1\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by figure reference showing expression patterns.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:48:56.660902Z"
+    },
+    {
+      "id": "790638d6-1bea-4cf6-94ff-8bc4810ad4c8",
+      "content_id": "26fd38c6-eb2e-4522-b570-4c1186cfadce",
+      "claim_id": "C34",
+      "claim": "The trachea and proximal airway are actively transcriptionally specified and at least somewhat distinct from the lung during early respiratory development.",
+      "claim_type": "EXPLICIT",
+      "source": "Our discovery of this gene class indicates that the trachea and proximal airway are actively transcriptionally specified and at least somewhat distinct from the lung during early respiratory development.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the identification of trachea-specific markers.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:48:56.660902Z"
+    },
+    {
+      "id": "f0ca6954-fd8c-4ea3-a4f6-0c38287ad72b",
+      "content_id": "26fd38c6-eb2e-4522-b570-4c1186cfadce",
+      "claim_id": "C35",
+      "claim": "All tracheal and esophageal markers identified were dorsoventrally restricted in the common foregut of E10.5 embryos prior to physical separation of the trachea and esophagus.",
+      "claim_type": "EXPLICIT",
+      "source": "All tracheal and esophageal markers we identified and validated were dorsoventrally restricted in the common foregut of E10.5 embryos prior to physical separation of the trachea and esophagus, consistent with extensive fate specification before TE separation (Billmyre et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the expression patterns observed in the data and citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:48:56.660902Z"
+    },
+    {
+      "id": "dcfd5b8d-46b0-46f8-8c9a-c948805f284c",
+      "content_id": "26fd38c6-eb2e-4522-b570-4c1186cfadce",
+      "claim_id": "C36",
+      "claim": "Differential expression analysis between Nkx2-1-/- and WT foregut epithelium identified 257 NKX2-1-dependent genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Differential expression analysis between Nkx2-1-/- and WT foregut epithelium identified 257 NKX2-1-dependent genes, with 109 genes upregulated and 148 genes downregulated in Nkx2-1-/- foreguts (Figure 2a, Figure 2\u2014source data 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct report of the RNA-seq analysis results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:48:56.660902Z"
+    },
+    {
+      "id": "b8f9f9ba-1f09-4d40-b70d-235f93de6721",
+      "content_id": "26fd38c6-eb2e-4522-b570-4c1186cfadce",
+      "claim_id": "C37",
+      "claim": "109 genes were upregulated in Nkx2-1-/- foreguts compared to WT.",
+      "claim_type": "EXPLICIT",
+      "source": "Differential expression analysis between Nkx2-1-/- and WT foregut epithelium identified 257 NKX2-1-dependent genes, with 109 genes upregulated and 148 genes downregulated in Nkx2-1-/- foreguts (Figure 2a, Figure 2\u2014source data 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct report of the RNA-seq analysis results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:48:56.660902Z"
+    },
+    {
+      "id": "39811233-6c94-415d-b422-bdaca4cc260e",
+      "content_id": "26fd38c6-eb2e-4522-b570-4c1186cfadce",
+      "claim_id": "C38",
+      "claim": "148 genes were downregulated in Nkx2-1-/- foreguts compared to WT.",
+      "claim_type": "EXPLICIT",
+      "source": "Differential expression analysis between Nkx2-1-/- and WT foregut epithelium identified 257 NKX2-1-dependent genes, with 109 genes upregulated and 148 genes downregulated in Nkx2-1-/- foreguts (Figure 2a, Figure 2\u2014source data 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct report of the RNA-seq analysis results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:48:56.660902Z"
+    },
+    {
+      "id": "2da35f55-57b1-4fa4-bf73-f49f9e8fe69e",
+      "content_id": "26fd38c6-eb2e-4522-b570-4c1186cfadce",
+      "claim_id": "C39",
+      "claim": "Genes that were upregulated in Nkx2-1-/- mutants were enriched in cells of the esophagus and pharynx.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that genes that were upregulated in Nkx2-1-/- mutants were enriched in cells of the esophagus and pharynx (Figure 2b, Figure 2\u2014figure supplement 1a)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by analysis of the scRNA-seq data and figure references.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:48:56.660902Z"
+    },
+    {
+      "id": "5d4eeea9-11af-4530-b36f-0042fc4bc81c",
+      "content_id": "26fd38c6-eb2e-4522-b570-4c1186cfadce",
+      "claim_id": "C40",
+      "claim": "Genes that were downregulated in Nkx2-1-/- mutants were enriched in tracheal and lung cells.",
+      "claim_type": "EXPLICIT",
+      "source": "and genes that were downregulated in Nkx2-1-/- mutants were enriched in tracheal and lung cells (Figure 2c, Figure 2\u2014figure supplement 1b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by analysis of the scRNA-seq data and figure references.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:48:56.660902Z"
+    },
+    {
+      "id": "ca8ea6dd-94f2-4828-8cd4-e7794981f580",
+      "content_id": "26fd38c6-eb2e-4522-b570-4c1186cfadce",
+      "claim_id": "C41",
+      "claim": "NKX2-1 positively regulates tracheal genes and negatively regulates esophageal genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these data define the NKX2-1 transcriptional program in early TE development and support the hypothesis that, within this program, NKX2-1 positively regulates tracheal genes and negatively regulates esophageal genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the differential expression analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:48:56.660902Z"
+    },
+    {
+      "id": "a788626a-c688-4692-a805-d2a29001dc1b",
+      "content_id": "26fd38c6-eb2e-4522-b570-4c1186cfadce",
+      "claim_id": "C42",
+      "claim": "All Nkx2-1-TrKO embryos examined exhibited a complete failure of foregut separation.",
+      "claim_type": "EXPLICIT",
+      "source": "All Nkx2-1-TrKO embryos we examined exhibited a complete failure of foregut separation (n = 8/8 embryos).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct observation from the mutant analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:48:56.660902Z"
+    },
+    {
+      "id": "a1c06e09-ffe2-47ff-b17e-5782006feff9",
+      "content_id": "26fd38c6-eb2e-4522-b570-4c1186cfadce",
+      "claim_id": "C43",
+      "claim": "Irx2, Ly6h, and Nrp2 are tracheal-specific and maintained in the ventral epithelium of the unseparated foregut tube in E11.5 Nkx2-1-TrKO embryos.",
+      "claim_type": "EXPLICIT",
+      "source": "Using RNAscope, we found Irx2, Ly6h, and Nrp2 to be tracheal-specific and maintained in the ventral epithelium of the unseparated foregut tube in E11.5 Nkx2-1-TrKO embryos (Figure 3a\u2013f'; Figure 3\u2014figure supplement 1b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by RNAscope data and figure references.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:48:56.660902Z"
+    },
+    {
+      "id": "1b854db9-1c59-45ad-925c-a53449079ee1",
+      "content_id": "26fd38c6-eb2e-4522-b570-4c1186cfadce",
+      "claim_id": "C44",
+      "claim": "Dcn, Ackr3, and Meis2 are esophageal-specific and maintained in the dorsal region of the common foregut tube in Nkx2-1-TrKO foreguts.",
+      "claim_type": "EXPLICIT",
+      "source": "Likewise, we found Dcn, Ackr3, and Meis2 to be esophageal-specific and maintained in the dorsal region of the common foregut tube in Nkx2-1-TrKO foreguts (Figure 3g\u2013l'; Figure 3\u2014figure supplement 1b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by RNAscope data and figure references.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:48:56.660902Z"
+    },
+    {
+      "id": "a0c7db08-82bb-491a-bcd1-84c92a571ac7",
+      "content_id": "26fd38c6-eb2e-4522-b570-4c1186cfadce",
+      "claim_id": "C45",
+      "claim": "The esophageal genes LRIG1 and PITX1 were maintained in the dorsal region of Nkx2-1-/- foreguts.",
+      "claim_type": "EXPLICIT",
+      "source": "Immunofluorescent staining also showed that the esophageal genes LRIG1 and PITX1 were maintained in the dorsal region of Nkx2-1-/- foreguts (Figure 3\u2014figure supplement 1b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by immunofluorescence data and figure reference.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:48:56.660902Z"
+    },
+    {
+      "id": "7ba2495b-f8fa-41a1-be58-ed9c3d8182a7",
+      "content_id": "26fd38c6-eb2e-4522-b570-4c1186cfadce",
+      "claim_id": "C46",
+      "claim": "Nkx2-1-/- mutant foreguts do not undergo a complete tracheal-to-esophageal fate conversion.",
+      "claim_type": "EXPLICIT",
+      "source": "These data indicate the presence of an NKX2-1-independent transcriptional program within the developing trachea and esophagus, and suggest that Nkx2-1-/- mutant foreguts do not undergo a complete tracheal-to-esophageal fate conversion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the maintenance of tracheal and esophageal markers in mutants.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:48:56.660902Z"
+    },
+    {
+      "id": "9a78f8b4-cf8b-42fd-ac62-811356b25847",
+      "content_id": "26fd38c6-eb2e-4522-b570-4c1186cfadce",
+      "claim_id": "C47",
+      "claim": "Differential expression analysis identified 1126 genes enriched in the trachea of WT embryos.",
+      "claim_type": "EXPLICIT",
+      "source": "Differential expression analysis identified 1126 genes enriched in the trachea and 809 genes enriched in the esophagus of WT embryos (Figure 3n, Figure 3\u2014source data 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct report of the differential expression analysis results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:48:56.660902Z"
+    },
+    {
+      "id": "7044095b-19be-47a1-a798-7cee207da55c",
+      "content_id": "26fd38c6-eb2e-4522-b570-4c1186cfadce",
+      "claim_id": "C48",
+      "claim": "Differential expression analysis identified 809 genes enriched in the esophagus of WT embryos.",
+      "claim_type": "EXPLICIT",
+      "source": "Differential expression analysis identified 1126 genes enriched in the trachea and 809 genes enriched in the esophagus of WT embryos (Figure 3n, Figure 3\u2014source data 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct report of the differential expression analysis results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:48:56.660902Z"
+    },
+    {
+      "id": "307bd0dd-ecff-4271-bee6-55511f33bc7f",
+      "content_id": "26fd38c6-eb2e-4522-b570-4c1186cfadce",
+      "claim_id": "C49",
+      "claim": "Only 11% of tracheal-enriched genes in WT foreguts were affected by loss of NKX2-1.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, only 11% of tracheal-enriched genes and 6% of esophageal-enriched genes in WT foreguts were affected by loss of NKX2-1, and the majority of tracheal- or esophageal-enriched genes were unchanged in Nkx2-1-/- foreguts (Figure 3n).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct report of the comparison between WT and mutant transcriptomes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:48:56.660902Z"
+    },
+    {
+      "id": "600d1f60-828c-42d6-8767-113b40b91c7e",
+      "content_id": "26fd38c6-eb2e-4522-b570-4c1186cfadce",
+      "claim_id": "C50",
+      "claim": "Only 6% of esophageal-enriched genes in WT foreguts were affected by loss of NKX2-1.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, only 11% of tracheal-enriched genes and 6% of esophageal-enriched genes in WT foreguts were affected by loss of NKX2-1, and the majority of tracheal- or esophageal-enriched genes were unchanged in Nkx2-1-/- foreguts (Figure 3n).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct report of the comparison between WT and mutant transcriptomes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:48:56.660902Z"
+    },
+    {
+      "id": "1cd1049a-18b1-4c9c-973a-75a34220ea96",
+      "content_id": "26fd38c6-eb2e-4522-b570-4c1186cfadce",
+      "claim_id": "C51",
+      "claim": "15,861 genomic regions (peaks) shared between two biological replicates showed NKX2-1 binding.",
+      "claim_type": "EXPLICIT",
+      "source": "We identified 15,861 genomic regions (peaks) shared between two biological replicates that showed NKX2-1 binding (Figure 4a, FDR < 0.00001)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct report of the ChIP-seq analysis results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:48:56.660902Z"
+    },
+    {
+      "id": "168ae63b-9a0d-4107-a6de-bc6fb037c3ea",
+      "content_id": "26fd38c6-eb2e-4522-b570-4c1186cfadce",
+      "claim_id": "C52",
+      "claim": "NKX2-1 ChIP-seq peaks are centrally enriched for the known NKX2-1 motif.",
+      "claim_type": "EXPLICIT",
+      "source": "and were centrally enriched for the known NKX2-1 motif (Figure 4b, p=3.4e-37).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by motif analysis of the ChIP-seq data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:48:56.660902Z"
+    },
+    {
+      "id": "056dd897-fec4-4c27-9ded-dc70c7a91012",
+      "content_id": "26fd38c6-eb2e-4522-b570-4c1186cfadce",
+      "claim_id": "C53",
+      "claim": "NKX2-1 binding was observed at the Nkx2-1 promoter and five binding sites within 10 kb of the Nkx2-1 gene.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed NKX2-1 binding at the Nkx2-1 promoter and five binding sites within 10 kb of the Nkx2-1 gene, consistent with previous data suggesting that NKX2-1 autoregulates its own expression (Nakazato et al., 1997; Oguchi and Kimura, 1998; Tagne et al., 2012)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by ChIP-seq data and citations to previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:48:56.660902Z"
+    },
+    {
+      "id": "02b1318a-dacb-4ae9-9012-1faf2fb6a33b",
+      "content_id": "26fd38c6-eb2e-4522-b570-4c1186cfadce",
+      "claim_id": "C54",
+      "claim": "NKX2-1 autoregulates its own expression.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed NKX2-1 binding at the Nkx2-1 promoter and five binding sites within 10 kb of the Nkx2-1 gene, consistent with previous data suggesting that NKX2-1 autoregulates its own expression (Nakazato et al., 1997; Oguchi and Kimura, 1998; Tagne et al., 2012)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by ChIP-seq data and citations to previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:48:56.660902Z"
+    },
+    {
+      "id": "42fac0e5-890a-4ec1-b396-efde2d0bacb1",
+      "content_id": "26fd38c6-eb2e-4522-b570-4c1186cfadce",
+      "claim_id": "C55",
+      "claim": "NKX2-1 binding was observed at the Sox2 promoter and four binding sites within the Sox2 locus.",
+      "claim_type": "EXPLICIT",
+      "source": "and also observed binding of NKX2-1 at the Sox2 promoter and four binding sites within the Sox2 locus, suggesting direct repression of Sox2 by NKX2-1 (Figure 4c).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by ChIP-seq data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:48:56.660902Z"
+    },
+    {
+      "id": "3592e539-0219-44e3-9dfa-aa0989ba03b6",
+      "content_id": "26fd38c6-eb2e-4522-b570-4c1186cfadce",
+      "claim_id": "C56",
+      "claim": "NKX2-1 directly represses Sox2.",
+      "claim_type": "EXPLICIT",
+      "source": "and also observed binding of NKX2-1 at the Sox2 promoter and four binding sites within the Sox2 locus, suggesting direct repression of Sox2 by NKX2-1 (Figure 4c).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from ChIP-seq data showing binding and the known repressive relationship.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:48:56.660902Z"
+    },
+    {
+      "id": "f2581121-dd46-4a10-8534-46d6252b44b1",
+      "content_id": "26fd38c6-eb2e-4522-b570-4c1186cfadce",
+      "claim_id": "C57",
+      "claim": "NKX2-1 binding was observed at the promoter of Pcdh10, Tppp3, and Klf5.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, NKX2-1 binding was observed at the promoter of genes such as Pcdh10, Tppp3, and Klf5 that we identified as specific markers of the tracheal and esophageal lineages by scRNA-seq (Figure 4c)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by ChIP-seq data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:48:56.660902Z"
+    },
+    {
+      "id": "060ef4d5-ba8c-4d37-b2b6-a1ce4c638941",
+      "content_id": "26fd38c6-eb2e-4522-b570-4c1186cfadce",
+      "claim_id": "C58",
+      "claim": "Pcdh10, Tppp3, and Klf5 may be direct targets of NKX2-1 regulation.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, NKX2-1 binding was observed at the promoter of genes such as Pcdh10, Tppp3, and Klf5 that we identified as specific markers of the tracheal and esophageal lineages by scRNA-seq (Figure 4c), suggesting that these genes may also be direct targets of NKX2-1 regulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from ChIP-seq data showing binding.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:48:56.660902Z"
+    },
+    {
+      "id": "5a9d922d-2172-4dbe-8fae-1ba42be8273c",
+      "content_id": "26fd38c6-eb2e-4522-b570-4c1186cfadce",
+      "claim_id": "C59",
+      "claim": "NKX2-1-dependent genes were associated with NKX2-1 ChIP-seq peaks at a higher frequency than observed at random.",
+      "claim_type": "EXPLICIT",
+      "source": "Genome-wide comparison of NKX2-1-bound genes with the Nkx2-1-/- de-regulated transcriptome revealed that NKX2-1-dependent genes were associated with NKX2-1 ChIP-seq peaks at a higher frequency than observed at random (Figure 4d, Fisher's exact test, p<0.0001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by statistical analysis of ChIP-seq and RNA-seq data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:48:56.660902Z"
+    },
+    {
+      "id": "e10fd301-757f-41cd-b593-b5e2ce8decb6",
+      "content_id": "26fd38c6-eb2e-4522-b570-4c1186cfadce",
+      "claim_id": "C60",
+      "claim": "Genes that are downregulated in Nkx2-1-/- mutants are more frequently associated with NKX2-1 ChIP-seq peaks.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, when we divided NKX2-1-dependent genes into those that were upregulated or downregulated in Nkx2-1-/- mutants, we found that genes that are downregulated in Nkx2-1-/- mutants are more frequently associated with NKX2-1 ChIP-seq peaks (Figure 4d, Fisher's exact test, p<0.0001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by statistical analysis of ChIP-seq and RNA-seq data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:48:56.660902Z"
+    },
+    {
+      "id": "cfa02c7d-c2a2-4461-87ee-24045ae8aea6",
+      "content_id": "26fd38c6-eb2e-4522-b570-4c1186cfadce",
+      "claim_id": "C61",
+      "claim": "NKX2-1 is a direct positive regulator of tracheal-specific genes.",
+      "claim_type": "EXPLICIT",
+      "source": "These data suggest that whereas NKX2-1 is a direct positive regulator of tracheal-specific genes, repression of esophageal-specific genes may more often be indirect.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the ChIP-seq and RNA-seq data showing more frequent binding at downregulated genes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:48:56.660902Z"
+    },
+    {
+      "id": "c4de7250-63ff-4f8d-ada2-f92f3e645855",
+      "content_id": "26fd38c6-eb2e-4522-b570-4c1186cfadce",
+      "claim_id": "C62",
+      "claim": "Repression of esophageal-specific genes by NKX2-1 may more often be indirect.",
+      "claim_type": "EXPLICIT",
+      "source": "These data suggest that whereas NKX2-1 is a direct positive regulator of tracheal-specific genes, repression of esophageal-specific genes may more often be indirect.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the ChIP-seq and RNA-seq data showing less frequent binding at upregulated genes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:48:56.660902Z"
+    },
+    {
+      "id": "4d79de34-426c-448c-ac93-742b0971981e",
+      "content_id": "26fd38c6-eb2e-4522-b570-4c1186cfadce",
+      "claim_id": "C63",
+      "claim": "All Nkx2-1-TrKO; Sox2-TrKO embryos examined exhibited a complete failure of foregut separation.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to the Nkx2-1-TrKO embryos, all Nkx2-1-TrKO; Sox2-TrKO embryos we examined exhibited a complete failure of foregut separation (n = 6/6 embryos).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct observation from the compound mutant analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:48:56.660902Z"
+    },
+    {
+      "id": "3011582b-933a-493d-abd9-7745e707e780",
+      "content_id": "26fd38c6-eb2e-4522-b570-4c1186cfadce",
+      "claim_id": "C64",
+      "claim": "Expression of Pcdh10 and Tppp3 requires NKX2-1 but not upregulation of SOX2.",
+      "claim_type": "EXPLICIT",
+      "source": "The expression of the tracheal-specific genes Pcdh10 and Tppp3 was decreased in Nkx2-1-TrKO and Nkx2-1-TrKO; Sox2-TrKO ventral foreguts indicating that their expression requires NKX2-1 but not upregulation of SOX2 (Figure 5d\u2013i')",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by expression analysis in compound mutants.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:48:56.660902Z"
+    },
+    {
+      "id": "cea557ad-1dc3-4292-bc19-b82a1ed1bbb3",
+      "content_id": "26fd38c6-eb2e-4522-b570-4c1186cfadce",
+      "claim_id": "C65",
+      "claim": "Expression of Klf5 was upregulated in the ventral foreguts of Nkx2-1-TrKO embryos.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, expression of the esophageal-specific genes Klf5 and Has2 was upregulated in the ventral foreguts of Nkx2-1-TrKO, as predicted from our RNA-seq analysis (Figure 5j\u2013o').",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by expression analysis in mutants.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:48:56.660902Z"
+    },
+    {
+      "id": "a773b27d-7bc1-445c-8d0d-485106b54965",
+      "content_id": "26fd38c6-eb2e-4522-b570-4c1186cfadce",
+      "claim_id": "C66",
+      "claim": "Expression of Has2 was upregulated in the ventral foreguts of Nkx2-1-TrKO embryos.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, expression of the esophageal-specific genes Klf5 and Has2 was upregulated in the ventral foreguts of Nkx2-1-TrKO, as predicted from our RNA-seq analysis (Figure 5j\u2013o').",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by expression analysis in mutants.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:48:56.660902Z"
+    },
+    {
+      "id": "228bdb5d-1110-4ab9-a667-a369a15f43e5",
+      "content_id": "26fd38c6-eb2e-4522-b570-4c1186cfadce",
+      "claim_id": "C67",
+      "claim": "Klf5 expression was increased in the ventral foregut of Nkx2-1-TrKO; Sox2-TrKO mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, whereas Klf5 expression was also increased in the ventral foregut of Nkx2-1tr/tr; Sox2tr/tr mutants (arrowhead Figure 5l,l'), Has2 expression was not, with the exception of a few cells that retain SOX2 expression ventrally (arrowhead in Figure 5o,o').",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by expression analysis in compound mutants.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:48:56.660902Z"
+    },
+    {
+      "id": "51ef8c42-2a61-4264-a33b-c97d2fffc132",
+      "content_id": "26fd38c6-eb2e-4522-b570-4c1186cfadce",
+      "claim_id": "C68",
+      "claim": "Has2 expression was not increased in the ventral foregut of Nkx2-1-TrKO; Sox2-TrKO mutants, with the exception of a few cells that retain SOX2 expression ventrally.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, whereas Klf5 expression was also increased in the ventral foregut of Nkx2-1tr/tr; Sox2tr/tr mutants (arrowhead Figure 5l,l'), Has2 expression was not, with the exception of a few cells that retain SOX2 expression ventrally (arrowhead in Figure 5o,o').",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by expression analysis in compound mutants.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:48:56.660902Z"
+    },
+    {
+      "id": "aabe3f07-e551-4fb6-9239-05a9f3a03ca1",
+      "content_id": "26fd38c6-eb2e-4522-b570-4c1186cfadce",
+      "claim_id": "C69",
+      "claim": "Upregulation of Has2 in the ventral foregut of Nkx2-1-TrKO embryos depends on the upregulation of SOX2 in this region.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, while Klf5 and Has2 were both repressed by NKX2-1, upregulation of Has2 in the ventral foregut of Nkx2-1-TrKO embryos appears to also depend on the upregulation of SOX2 in this region.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the compound mutant analysis showing Has2 requires SOX2 for upregulation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:48:56.660902Z"
+    },
+    {
+      "id": "d7d558f9-b675-446c-9c96-70c12d1744fd",
+      "content_id": "26fd38c6-eb2e-4522-b570-4c1186cfadce",
+      "claim_id": "C70",
+      "claim": "NKX2-1 regulation results from both direct activation of tracheal genes and repression of esophageal genes, as well as the indirect suppression of target genes through the repression of Sox2.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these results revealed that NKX2-1 regulation results from both direct activation of tracheal genes and repression of esophageal genes, as well as the indirect suppression of target genes through the repression of Sox2, illustrating the complex relationship between these two transcription factors with opposing expression patterns.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary inference from the compound mutant analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:48:56.660902Z"
+    },
+    {
+      "id": "63a4f055-e8c1-40b1-8050-643113311393",
+      "content_id": "26fd38c6-eb2e-4522-b570-4c1186cfadce",
+      "claim_id": "C71",
+      "claim": "Nkx2-1-/- mutants exhibit a dramatic reduction and disorganization of tracheal cartilage with expansion of the smooth muscle.",
+      "claim_type": "EXPLICIT",
+      "source": "We confirmed previous reports of a dramatic reduction and disorganization of tracheal cartilage with expansion of the smooth muscle in Nkx2-1-/- mutants, and additionally observed malformation of the thyroid and cricoid cartilage (n = 3/3 embryos, Figure 6a,o,p).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by skeletal preparations and immunofluorescence data.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:48:56.660902Z"
+    },
+    {
+      "id": "1fe4b6e3-e670-456f-bd35-fbeebb875d66",
+      "content_id": "26fd38c6-eb2e-4522-b570-4c1186cfadce",
+      "claim_id": "C72",
+      "claim": "Nkx2-1-/- mutants exhibit malformation of the thyroid and cricoid cartilage.",
+      "claim_type": "EXPLICIT",
+      "source": "We confirmed previous reports of a dramatic reduction and disorganization of tracheal cartilage with expansion of the smooth muscle in Nkx2-1-/- mutants, and additionally observed malformation of the thyroid and cricoid cartilage (n = 3/3 embryos, Figure 6a,o,p).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by skeletal preparations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:48:56.660902Z"
+    },
+    {
+      "id": "3540251d-b751-48b2-9b43-4712aa345a9a",
+      "content_id": "26fd38c6-eb2e-4522-b570-4c1186cfadce",
+      "claim_id": "C73",
+      "claim": "Wnt7b expression decreased in Nkx2-1-/- foregut epithelium compared to WT.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, Wnt7b expression decreased and Shh increased in Nkx2-1-/- foregut epithelium compared to WT (Figure 2a)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by RNA-seq data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:48:56.660902Z"
+    },
+    {
+      "id": "4ef10c9d-a8fa-4ebb-bd24-a7018e6c09af",
+      "content_id": "26fd38c6-eb2e-4522-b570-4c1186cfadce",
+      "claim_id": "C74",
+      "claim": "Shh expression increased in Nkx2-1-/- foregut epithelium compared to WT.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, Wnt7b expression decreased and Shh increased in Nkx2-1-/- foregut epithelium compared to WT (Figure 2a)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by RNA-seq data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:48:56.660902Z"
+    },
+    {
+      "id": "41b84fe9-7f57-4a86-9127-ed1477c06f08",
+      "content_id": "26fd38c6-eb2e-4522-b570-4c1186cfadce",
+      "claim_id": "C75",
+      "claim": "Wnt7b is expressed in the tracheal epithelium in WT E11.5 and E13.5 embryos.",
+      "claim_type": "EXPLICIT",
+      "source": "In WT E11.5 and E13.5 embryos, Wnt7b is expressed in the tracheal epithelium and Shh is expressed more strongly in the esophageal epithelium (Gerhardt et al., 2018; Litingtung et al., 1998; Rajagopal et al., 2008; Snowball et al., 2015; Figure 6c,f,i,m).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by in situ hybridization data and citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:48:56.660902Z"
+    },
+    {
+      "id": "6bb8755e-d98c-4897-8056-4ac399c16797",
+      "content_id": "26fd38c6-eb2e-4522-b570-4c1186cfadce",
+      "claim_id": "C76",
+      "claim": "Shh is expressed more strongly in the esophageal epithelium in WT E11.5 and E13.5 embryos.",
+      "claim_type": "EXPLICIT",
+      "source": "In WT E11.5 and E13.5 embryos, Wnt7b is expressed in the tracheal epithelium and Shh is expressed more strongly in the esophageal epithelium (Gerhardt et al., 2018; Litingtung et al., 1998; Rajagopal et al., 2008; Snowball et al., 2015; Figure 6c,f,i,m).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by in situ hybridization data and citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:48:56.660902Z"
+    },
+    {
+      "id": "418950e2-7804-423a-b36b-ec06ce0f519e",
+      "content_id": "26fd38c6-eb2e-4522-b570-4c1186cfadce",
+      "claim_id": "C77",
+      "claim": "NKX2-1 binds at three sites 20 kb and 60 kb upstream and 20 kb downstream of the Wnt7b gene.",
+      "claim_type": "EXPLICIT",
+      "source": "We examined our NKX2-1 ChIP-seq data to determine whether NKX2-1 binds directly to Wnt7b and Shh in the trachea and observed binding at three sites 20 kb and 60 kb upstream and 20 kb downstream of the Wnt7b gene.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by ChIP-seq data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:48:56.660902Z"
+    },
+    {
+      "id": "78b783f8-216b-4121-a5b5-fb685bdfa7e2",
+      "content_id": "26fd38c6-eb2e-4522-b570-4c1186cfadce",
+      "claim_id": "C78",
+      "claim": "NKX2-1 binds at two sites within the Shh gene, and two additional peaks 50 kb and 150 kb upstream of Shh.",
+      "claim_type": "EXPLICIT",
+      "source": "We also observed two NKX2-1 ChIP-seq peaks within the Shh gene, and two additional peaks 50 kb and 150 kb upstream of Shh, consistent with the possibility of direct regulation by NKX2-1 (Figure 6b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by ChIP-seq data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:48:56.660902Z"
+    },
+    {
+      "id": "202fbf01-0791-4569-98e5-2184eaf8a204",
+      "content_id": "26fd38c6-eb2e-4522-b570-4c1186cfadce",
+      "claim_id": "C79",
+      "claim": "Wnt7b and Shh are targets of NKX2-1 regulation in the developing foregut.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these data indicate that Wnt7b and Shh are targets of NKX2-1 regulation in the developing foregut.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from ChIP-seq and expression data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:48:56.660902Z"
+    },
+    {
+      "id": "57fdb205-0ab3-47d9-8b37-06402da31e3d",
+      "content_id": "26fd38c6-eb2e-4522-b570-4c1186cfadce",
+      "claim_id": "C80",
+      "claim": "Wnt7b expression was lost in both Nkx2-1-TrKO and Nkx2-1-TrKO; Sox2-TrKO foreguts.",
+      "claim_type": "EXPLICIT",
+      "source": "Wnt7b expression was lost in both Nkx2-1-TrKO and Nkx2-1-TrKO; Sox2-TrKO foreguts, suggesting that NKX2-1 regulates Wnt7b independently of regulation by SOX2 (Figure 6c\u2013e').",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by expression analysis in compound mutants.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:48:56.660902Z"
+    },
+    {
+      "id": "ba8566d3-533d-4c50-9191-46bd1ff2ad1f",
+      "content_id": "26fd38c6-eb2e-4522-b570-4c1186cfadce",
+      "claim_id": "C81",
+      "claim": "NKX2-1 regulates Wnt7b independently of regulation by SOX2.",
+      "claim_type": "EXPLICIT",
+      "source": "Wnt7b expression was lost in both Nkx2-1-TrKO and Nkx2-1-TrKO; Sox2-TrKO foreguts, suggesting that NKX2-1 regulates Wnt7b independently of regulation by SOX2 (Figure 6c\u2013e').",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the compound mutant analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:48:56.660902Z"
+    },
+    {
+      "id": "d135d340-da07-46e0-affd-d79676980712",
+      "content_id": "26fd38c6-eb2e-4522-b570-4c1186cfadce",
+      "claim_id": "C82",
+      "claim": "The increase in Shh expression in the ventral foregut observed in Nkx2-1-TrKO embryos was not observed in Nkx2-1-TrKO; Sox2-TrKO foreguts.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the increase in Shh expression in the ventral foregut observed in Nkx2-1-TrKO embryos was not observed in Nkx2-1-TrKO; Sox2-TrKO foreguts (Figure 6f\u2013h')",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by expression analysis in compound mutants.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:48:56.660902Z"
+    },
+    {
+      "id": "9ac223ca-170f-42a8-930f-9280954f0947",
+      "content_id": "26fd38c6-eb2e-4522-b570-4c1186cfadce",
+      "claim_id": "C83",
+      "claim": "SOX2 is required for upregulation of Shh in the ventral foregut.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the increase in Shh expression in the ventral foregut observed in Nkx2-1-TrKO embryos was not observed in Nkx2-1-TrKO; Sox2-TrKO foreguts (Figure 6f\u2013h'), indicating that SOX2 is required for upregulation of Shh in the ventral foregut.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the compound mutant analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:48:56.660902Z"
+    },
+    {
+      "id": "d5c023c2-6649-4596-8cc5-458584207cde",
+      "content_id": "26fd38c6-eb2e-4522-b570-4c1186cfadce",
+      "claim_id": "C84",
+      "claim": "Wnt7b expression is positively regulated by NKX2-1 but not subject to regulation by SOX2.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, Wnt7b expression is positively regulated by NKX2-1 but not subject to regulation by SOX2, whereas the dorsally restricted expression of Shh is mediated by the combined action of NKX2-1 and SOX2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary inference from the compound mutant analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:48:56.660902Z"
+    },
+    {
+      "id": "5b70cbd0-f99e-4dab-9ced-d8f9364789e7",
+      "content_id": "26fd38c6-eb2e-4522-b570-4c1186cfadce",
+      "claim_id": "C85",
+      "claim": "The dorsally restricted expression of Shh is mediated by the combined action of NKX2-1 and SOX2.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, Wnt7b expression is positively regulated by NKX2-1 but not subject to regulation by SOX2, whereas the dorsally restricted expression of Shh is mediated by the combined action of NKX2-1 and SOX2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary inference from the compound mutant analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:48:56.660902Z"
+    },
+    {
+      "id": "a7299e6b-3346-4d0f-88b5-92d98b45f0f6",
+      "content_id": "26fd38c6-eb2e-4522-b570-4c1186cfadce",
+      "claim_id": "C86",
+      "claim": "In WT embryos, Axin2 expression was localized to the ventral tracheal mesenchyme where SOX9+ cartilage progenitor cells are found.",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas in WT embryos Axin2 expression was localized to the ventral tracheal mesenchyme where SOX9+ cartilage progenitor cells are found, in Nkx2-1-/- mutants Axin2 expression was decreased and correlated with disorganized SOX9 expression (Figure 6i\u2013l, Figure 6\u2014figure supplement 1a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by in situ hybridization and immunofluorescence data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:48:56.660902Z"
+    },
+    {
+      "id": "c609d5c8-c116-40ca-9abc-bf6f7eaa039a",
+      "content_id": "26fd38c6-eb2e-4522-b570-4c1186cfadce",
+      "claim_id": "C87",
+      "claim": "In Nkx2-1-/- mutants, Axin2 expression was decreased and correlated with disorganized SOX9 expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas in WT embryos Axin2 expression was localized to the ventral tracheal mesenchyme where SOX9+ cartilage progenitor cells are found, in Nkx2-1-/- mutants Axin2 expression was decreased and correlated with disorganized SOX9 expression (Figure 6i\u2013l, Figure 6\u2014figure supplement 1a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by in situ hybridization and immunofluorescence data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:48:56.660902Z"
+    },
+    {
+      "id": "efa8e2fc-0f2f-420a-b003-74b1c0958388",
+      "content_id": "26fd38c6-eb2e-4522-b570-4c1186cfadce",
+      "claim_id": "C88",
+      "claim": "The decrease in Axin2 expression was more dramatic in the caudal foregut, consistent with the increased severity of cartilage specification defects in this region.",
+      "claim_type": "EXPLICIT",
+      "source": "This decrease in Axin2 expression was more dramatic in the caudal foregut, consistent with the increased severity of cartilage specification defects in this region seen in skeletal preparations (Figure 6a) and as visualized by SOX9 localization in Nkx2-1-/- foreguts (Figure 6\u2014figure supplement 1c\u2013e).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by in situ hybridization and skeletal preparation data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:48:56.660902Z"
+    },
+    {
+      "id": "253fcc1c-99a2-4ca7-aa75-de03f53648b2",
+      "content_id": "26fd38c6-eb2e-4522-b570-4c1186cfadce",
+      "claim_id": "C89",
+      "claim": "In E11.5 and E13.5 Nkx2-1-/- foreguts, increased expression of Shh in the ventral foregut epithelium compared to WT was mirrored by an increase in Ptch1 expression in the surrounding mesenchyme.",
+      "claim_type": "EXPLICIT",
+      "source": "In E11.5 and E13.5 Nkx2-1-/- foreguts, increased expression of Shh in the ventral foregut epithelium compared to WT was mirrored by an increase in Ptch1 expression in the surrounding mesenchyme (Figure 6m,n; Figure 6\u2014figure supplement 1b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by in situ hybridization data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:48:56.660902Z"
+    },
+    {
+      "id": "f1688f5d-e532-456f-87ff-270f0a0d17c2",
+      "content_id": "26fd38c6-eb2e-4522-b570-4c1186cfadce",
+      "claim_id": "C90",
+      "claim": "The increase in Ptch1 expression corresponded with the increase in smooth muscle as visualized by ACTA2 (i.e. \u03b1-SMA) surrounding Nkx2-1-/- foreguts compared to WT.",
+      "claim_type": "EXPLICIT",
+      "source": "This increase in Ptch1 expression also corresponded with the increase in smooth muscle as visualized by ACTA2 (i.e. \u03b1-SMA) surrounding Nkx2-1-/- foreguts compared to WT (Figure 6m\u2013p, S8c,f,g).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by in situ hybridization and immunofluorescence data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:48:56.660902Z"
+    },
+    {
+      "id": "ea9984d1-3584-43a8-9bfa-d974dfbade7e",
+      "content_id": "26fd38c6-eb2e-4522-b570-4c1186cfadce",
+      "claim_id": "C91",
+      "claim": "NKX2-1 and SOX2 regulate epithelial-mesenchymal crosstalk via WNT and SHH signaling to instruct mesenchymal differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, our data show that in addition to regulating a subset of genes that define tracheoesophageal epithelial identity at this stage, NKX2-1 and SOX2 regulate epithelial-mesenchymal crosstalk via WNT and SHH signaling to instruct mesenchymal differentiation, explaining this aspect of the observed TE fate transformation in Nkx2-1-/- mutant foreguts (Figure 7).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary inference from the signaling and mesenchymal phenotype data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:48:56.660902Z"
+    },
+    {
+      "id": "53cce106-fc63-4136-af65-c9f1ed53911d",
+      "content_id": "26fd38c6-eb2e-4522-b570-4c1186cfadce",
+      "claim_id": "C92",
+      "claim": "NKX2-1 loss does not cause a transcriptome-wide tracheal-to-esophageal conversion.",
+      "claim_type": "EXPLICIT",
+      "source": "By performing scRNA-seq profiling on the endoderm at the onset of tracheal and esophageal development, and comparing this profile to Nkx2-1-/- mutant embryos, we find that NKX2-1 loss does not cause a transcriptome-wide tracheal-to-esophageal conversion, but rather results in changes in expression of a key subset of dorsoventrally restricted genes that can explain apparent fate-conversion phenotypes in the mesenchyme (Figure 7).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the main finding from the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:48:56.660902Z"
+    },
+    {
+      "id": "c3cd172b-c120-48a6-a9ba-69b2f3e88634",
+      "content_id": "26fd38c6-eb2e-4522-b570-4c1186cfadce",
+      "claim_id": "C93",
+      "claim": "Loss of NKX2-1 leads to adoption of a gastric transcriptional phenotype in adenocarcinoma and in the adult distal lung.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been previously demonstrated in adenocarcinoma and in the adult distal lung, that loss of NKX2-1 leads to adoption of a gastric transcriptional phenotype (Little et al., 2019; Snyder et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:48:56.660902Z"
+    },
+    {
+      "id": "c2491074-b8d3-41d7-abad-ea1daec23a15",
+      "content_id": "26fd38c6-eb2e-4522-b570-4c1186cfadce",
+      "claim_id": "C94",
+      "claim": "Mesenchymal cues that induce lung and trachea development converge to establish ventral NKX2-1 expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, mesenchymal cues that induce lung and trachea development converge to establish ventral NKX2-1 expression, and Nkx2-1-/- mutant embryos exhibit dramatic epithelial and mesenchymal phenotypes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by previous work and observations in this study.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:48:56.660902Z"
+    },
+    {
+      "id": "5d76c1b7-7223-4e6f-a44a-fc9bba555d5a",
+      "content_id": "26fd38c6-eb2e-4522-b570-4c1186cfadce",
+      "claim_id": "C95",
+      "claim": "ISL1 transcription factor exhibits ventrally-restricted expression in the trachea and is required for normal NKX2-1 expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the ISL1 transcription factor has been recently identified to exhibit ventrally-restricted expression in the trachea and is required for normal NKX2-1 expression (Kim et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to recent work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:48:56.660902Z"
+    },
+    {
+      "id": "1b6ed831-7256-4ca2-a648-67aab215ff1b",
+      "content_id": "26fd38c6-eb2e-4522-b570-4c1186cfadce",
+      "claim_id": "C96",
+      "claim": "Isl1 is independent of NKX2-1.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, our data reveal that Isl1 is independent of NKX2-1 (Figure 2\u2014source data 1), indicating that it resides hierarchically upstream of NKX2-1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by RNA-seq data showing no change in Isl1 expression in Nkx2-1 mutants.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:48:56.660902Z"
+    },
+    {
+      "id": "59f27624-f913-4372-b233-2a0f79707e3e",
+      "content_id": "26fd38c6-eb2e-4522-b570-4c1186cfadce",
+      "claim_id": "C97",
+      "claim": "ISL1 resides hierarchically upstream of NKX2-1.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, our data reveal that Isl1 is independent of NKX2-1 (Figure 2\u2014source data 1), indicating that it resides hierarchically upstream of NKX2-1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the independence of Isl1 from NKX2-1 and its requirement for NKX2-1 expression.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:48:56.660902Z"
+    },
+    {
+      "id": "5a1260e5-0dc1-42eb-9f0f-8471b0b94247",
+      "content_id": "26fd38c6-eb2e-4522-b570-4c1186cfadce",
+      "claim_id": "C98",
+      "claim": "Direct binding of NKX2\u20131 occurs more often at genes that are normally expressed in the trachea.",
+      "claim_type": "EXPLICIT",
+      "source": "We find, however, that direct binding of NKX2\u20131 occurs more often at genes that are normally expressed in the trachea, and loss of tracheal gene expression in Nkx2-1-/- mutants is not indirectly mediated by upregulation of SOX2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by ChIP-seq and compound mutant analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:48:56.660902Z"
+    },
+    {
+      "id": "217214e7-bb25-4fd2-9bfb-1cf7c63131ee",
+      "content_id": "26fd38c6-eb2e-4522-b570-4c1186cfadce",
+      "claim_id": "C99",
+      "claim": "Loss of tracheal gene expression in Nkx2-1-/- mutants is not indirectly mediated by upregulation of SOX2.",
+      "claim_type": "EXPLICIT",
+      "source": "We find, however, that direct binding of NKX2\u20131 occurs more often at genes that are normally expressed in the trachea, and loss of tracheal gene expression in Nkx2-1-/- mutants is not indirectly mediated by upregulation of SOX2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by compound mutant analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:48:56.660902Z"
+    },
+    {
+      "id": "9faf5a1b-be26-4fcb-87ae-30bff438a20f",
+      "content_id": "26fd38c6-eb2e-4522-b570-4c1186cfadce",
+      "claim_id": "C100",
+      "claim": "NKX2-1 more often positively regulates the tracheal gene expression program directly.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these findings broadly support a model in which NKX2-1 more often positively regulates the tracheal gene expression program directly.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary inference from the ChIP-seq and mutant analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:48:56.660902Z"
+    },
+    {
+      "id": "bc5c387c-d933-468a-9d97-da887490c25e",
+      "content_id": "26fd38c6-eb2e-4522-b570-4c1186cfadce",
+      "claim_id": "C101",
+      "claim": "Normal tracheal cartilage specification requires WNT signaling from the tracheal epithelium to the mesenchyme.",
+      "claim_type": "EXPLICIT",
+      "source": "Normal tracheal cartilage specification requires WNT signaling from the tracheal epithelium to the mesenchyme (Hou et al., 2019; Kishimoto et al., 2019; Snowball et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:48:56.660902Z"
+    },
+    {
+      "id": "724c38c2-4437-403b-96b1-bc2c90ac6786",
+      "content_id": "26fd38c6-eb2e-4522-b570-4c1186cfadce",
+      "claim_id": "C102",
+      "claim": "NKX2-1 positively regulates Wnt7b resulting in activation of a canonical WNT-signaling response in the adjacent ventral tracheal mesenchyme.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that NKX2-1 positively regulates Wnt7b resulting in activation of a canonical WNT-signaling response in the adjacent ventral tracheal mesenchyme.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by expression analysis and Axin2 expression in the mesenchyme.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:48:56.660902Z"
+    },
+    {
+      "id": "0a2030c4-cf5c-40ac-8d2c-e4f9feaf5c44",
+      "content_id": "26fd38c6-eb2e-4522-b570-4c1186cfadce",
+      "claim_id": "C103",
+      "claim": "An NKX2-1 independent mechanism also contributes to tracheal cartilage specification, as some disorganized cartilage still forms in Nkx2-1-/- mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results differ from this finding but do support the possibility that an NKX2-1 independent mechanism also contributes to tracheal cartilage specification, as some disorganized cartilage still forms in Nkx2-1-/- mutants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation of residual cartilage in mutants.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:48:56.660902Z"
+    },
+    {
+      "id": "bac071a3-ed78-44ab-ae2d-f14b6bc4aaeb",
+      "content_id": "26fd38c6-eb2e-4522-b570-4c1186cfadce",
+      "claim_id": "C104",
+      "claim": "NKX2-1 loss resulted in upregulation of Shh and increased SHH signal reception in the ventral mesenchyme.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to regulating WNT signaling, we found that NKX2-1 loss resulted in upregulation of Shh and increased SHH signal reception in the ventral mesenchyme.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by expression analysis of Shh and Ptch1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:48:56.660902Z"
+    },
+    {
+      "id": "ea028f6d-7cd5-44aa-801b-00259dd9e582",
+      "content_id": "26fd38c6-eb2e-4522-b570-4c1186cfadce",
+      "claim_id": "C105",
+      "claim": "Upregulation of Shh in Nkx2-1 mutants likely contributes to disruption of tracheal cartilage and expansion of smooth muscle formation.",
+      "claim_type": "EXPLICIT",
+      "source": "As HH signaling is a key regulator of smooth muscle formation in multiple contexts, and its disruption also results in perturbation of tracheal cartilage formation (Huycke et al., 2019; Mao et al., 2010; Miller et al., 2004; Sala et al., 2011), it is likely that this upregulation also contributes to disruption of tracheal cartilage and expansion of smooth muscle formation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the known role of HH signaling and the observed phenotypes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:48:56.660902Z"
+    },
+    {
+      "id": "3118748a-9427-497a-800e-15d82d41f556",
+      "content_id": "26fd38c6-eb2e-4522-b570-4c1186cfadce",
+      "claim_id": "C106",
+      "claim": "Key players in respiratory and gut specification are conserved between mice and humans.",
+      "claim_type": "EXPLICIT",
+      "source": "While few genetic causes of foregut anomalies in humans have been identified, human stem cell models have indicated that key players in respiratory and gut specification are conserved between mice and humans (Ostrin et al., 2018; Trisno et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:48:56.660902Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "b5f10862-c4f2-4268-98be-6523e44295ba",
+      "content_id": "26fd38c6-eb2e-4522-b570-4c1186cfadce",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The study addresses a knowledge gap regarding genome-scale transcriptional programs specifying the mammalian trachea and esophagus, and tests the hypothesis that NKX2-1 and SOX2 are co-repressive master regulators at the transcriptomic scale.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1 and C2 establish the context and motivation for the study. The manuscript successfully addresses this gap through scRNA-seq, bulk RNA-seq, and ChIP-seq approaches, providing genome-wide data on tracheoesophageal specification.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:48:56.660902Z"
+    },
+    {
+      "id": "c0d8de59-59e9-4ab4-a947-95cd6bbccfac",
+      "content_id": "26fd38c6-eb2e-4522-b570-4c1186cfadce",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Single-cell RNA sequencing at E10.5 and E11.5 identified distinct cell populations (lung, trachea, esophagus, pharynx, ultimobranchial body) and revealed novel tracheal and esophageal markers that are dorsoventrally restricted prior to physical separation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24-C35 describe the scRNA-seq dataset generation and analysis. The data are well-documented with appropriate cell numbers, clustering methods, and validation by RNAscope. The identification of novel markers (Tppp3, Pcdh10, Ly6h, Klf5, etc.) is supported by both computational and experimental validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:48:56.660902Z"
+    },
+    {
+      "id": "d6fdc1c9-542e-4509-a2b4-7d5ee510abfa",
+      "content_id": "26fd38c6-eb2e-4522-b570-4c1186cfadce",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Bulk RNA-seq of Nkx2-1-/- versus WT foregut epithelium identified 257 NKX2-1-dependent genes (109 upregulated, 148 downregulated), with upregulated genes enriched in esophagus/pharynx and downregulated genes enriched in trachea/lung.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36-C41 report the differential expression analysis results. The data are clearly presented with appropriate statistical thresholds (log2FC > 0.7, padj < 0.05) and biological replicates (n=3). Integration with scRNA-seq data strengthens the interpretation of tissue-specific enrichment.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:48:56.660902Z"
+    },
+    {
+      "id": "daccfa78-3646-413f-bd9c-5feccded3687",
+      "content_id": "26fd38c6-eb2e-4522-b570-4c1186cfadce",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The majority of tracheal and esophageal transcriptomes are NKX2-1 independent, with only 11% of tracheal-enriched and 6% of esophageal-enriched genes affected by NKX2-1 loss, and many markers maintained in Nkx2-1 mutants.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C50 and C3 establish a major finding that challenges the prevailing model. The evidence is strong: RNAscope validation of marker maintenance in mutants (C43-C45), bulk RNA-seq comparison of WT trachea/esophagus versus mutant (C47-C50), and appropriate sample sizes (n=8/8 for TrKO, n=3 for other experiments).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:48:56.660902Z"
+    },
+    {
+      "id": "9de07d40-74f0-4dcf-b0b8-8efac1835a77",
+      "content_id": "26fd38c6-eb2e-4522-b570-4c1186cfadce",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "NKX2-1 ChIP-seq identified 15,861 binding sites enriched for the NKX2-1 motif, including binding at Nkx2-1 (autoregulation), Sox2 (direct repression), and tracheal/esophageal markers (Pcdh10, Tppp3, Klf5).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C58 describe the ChIP-seq results. The data quality is good with two biological replicates, appropriate FDR threshold (< 0.00001), and motif enrichment validation (p=3.4e-37). The identification of specific binding sites is well-documented with IGV tracks.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:48:56.660902Z"
+    },
+    {
+      "id": "de863422-013c-405c-9c54-26fefd107d9d",
+      "content_id": "26fd38c6-eb2e-4522-b570-4c1186cfadce",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "NKX2-1-dependent genes are enriched for NKX2-1 binding, with downregulated genes more frequently associated with ChIP-seq peaks than upregulated genes, suggesting direct activation of tracheal genes and indirect repression of esophageal genes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59-C62 integrate ChIP-seq and RNA-seq data. The statistical analysis (Fisher's exact test, p<0.0001) appropriately tests for enrichment. The interpretation that NKX2-1 directly activates tracheal genes but indirectly represses esophageal genes is reasonable given the differential binding frequencies.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:48:56.660902Z"
+    },
+    {
+      "id": "946ff87d-8456-45fe-b4a5-4f2fb9c11044",
+      "content_id": "26fd38c6-eb2e-4522-b570-4c1186cfadce",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Compound Nkx2-1/Sox2 mutant analysis reveals that NKX2-1 regulates genes through both direct mechanisms (Pcdh10, Tppp3, Klf5) and indirect mechanisms via SOX2 repression (Has2), demonstrating complex regulatory interactions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C63-C70 describe elegant genetic experiments to dissect NKX2-1 and SOX2 regulatory relationships. The compound mutant approach is well-designed with appropriate controls and sample sizes (n=6/6 for compound mutants). The differential effects on Klf5 versus Has2 provide clear evidence for both direct and SOX2-dependent regulation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:48:56.660902Z"
+    },
+    {
+      "id": "d175ed6e-835c-47d3-a39e-8afd45f04a53",
+      "content_id": "26fd38c6-eb2e-4522-b570-4c1186cfadce",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "NKX2-1 directly binds and regulates Wnt7b (independently of SOX2) and Shh (requiring SOX2 for ventral upregulation), controlling epithelial-to-mesenchymal signaling.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C73-C85 establish NKX2-1 regulation of key signaling molecules. ChIP-seq shows direct binding (C77-C78), RNA-seq shows expression changes (C73-C74), and compound mutant analysis dissects SOX2 dependence (C80-C83). The data are consistent across multiple experimental approaches.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:48:56.660902Z"
+    },
+    {
+      "id": "1e7912bd-ac0d-4e43-9a49-8dd5dc973c9f",
+      "content_id": "26fd38c6-eb2e-4522-b570-4c1186cfadce",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "NKX2-1 regulates mesenchymal specification through WNT7B (promoting cartilage via Axin2) and SHH (promoting smooth muscle via Ptch1), coupling epithelial identity with mesenchymal differentiation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C71-C72, C86-C91, C102, C104 link epithelial NKX2-1 function to mesenchymal phenotypes. The evidence includes skeletal preparations (C71-C72), expression analysis of signaling readouts (Axin2, Ptch1, SOX9, SMA) in mutants (C86-C90), and appropriate sample sizes (n=3/3 for skeletal preps, n=2-3 for expression analysis).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:48:56.660902Z"
+    },
+    {
+      "id": "63268ec1-e721-4e91-9089-5792f7ad9f4f",
+      "content_id": "26fd38c6-eb2e-4522-b570-4c1186cfadce",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "NKX2-1 loss does not cause a transcriptome-wide tracheal-to-esophageal conversion but rather affects a key subset of dorsoventrally restricted genes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C92 summarizes the main conclusion of the study. This is well-supported by the comprehensive data showing that only 11% of tracheal and 6% of esophageal genes are NKX2-1-dependent (C49-C50), with maintenance of many markers in mutants (C43-C45).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:48:56.660902Z"
+    },
+    {
+      "id": "c7e69437-14b4-42cb-b110-2460b6f0c0c8",
+      "content_id": "26fd38c6-eb2e-4522-b570-4c1186cfadce",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Isl1 is independent of NKX2-1 and resides hierarchically upstream of NKX2-1 in the regulatory network.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C96-C97 establish the hierarchical relationship between ISL1 and NKX2-1. The independence of Isl1 from NKX2-1 is supported by RNA-seq data (C96), and the upstream position is inferred from this independence combined with prior work showing ISL1 is required for NKX2-1 expression (C95).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:48:56.660902Z"
+    },
+    {
+      "id": "d12c60ee-1a81-410e-b50f-4e2abb19bfcb",
+      "content_id": "26fd38c6-eb2e-4522-b570-4c1186cfadce",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "NKX2-1 more often positively regulates the tracheal gene expression program directly, with loss of tracheal gene expression not mediated by SOX2 upregulation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C98-C100 synthesize findings from ChIP-seq (more frequent binding at tracheal genes, C60) and compound mutant analysis (tracheal gene loss independent of SOX2, C64). The model is well-supported by the integrated data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:48:56.660902Z"
+    },
+    {
+      "id": "701e6972-17ac-4254-ab15-c8eeaabba069",
+      "content_id": "26fd38c6-eb2e-4522-b570-4c1186cfadce",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "An NKX2-1-independent mechanism contributes to tracheal cartilage specification, and upregulation of Shh in Nkx2-1 mutants likely contributes to cartilage disruption and smooth muscle expansion.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C103 and C105 provide mechanistic interpretations. C103 is supported by observation of residual disorganized cartilage in mutants (C71). C105 is a reasonable inference based on known HH signaling roles (cited) and observed Shh/Ptch1 upregulation (C89-C90), though direct causality is not tested.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:48:56.660902Z"
+    },
+    {
+      "id": "c377e7eb-1167-4499-bb5a-cb634ea0c14d",
+      "content_id": "26fd38c6-eb2e-4522-b570-4c1186cfadce",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Background knowledge claims establish the developmental context, prior findings on NKX2-1/SOX2 regulation, signaling pathways, and conservation between mice and humans.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6-C23, C26, C93-C95, C101, C106 are background claims supported by appropriate citations to prior work. These establish the foundation for the current study and are appropriately referenced.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:48:56.660902Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "e7b0ea17-66d0-480b-80b5-2254b43f1214",
+      "result_id": "b5f10862-c4f2-4268-98be-6523e44295ba"
+    },
+    {
+      "claim_id": "bf902928-8670-4f5e-a913-e2a0366a793d",
+      "result_id": "b5f10862-c4f2-4268-98be-6523e44295ba"
+    },
+    {
+      "claim_id": "945cb142-2894-498d-b6c6-c108244be2ec",
+      "result_id": "c0d8de59-59e9-4ab4-a947-95cd6bbccfac"
+    },
+    {
+      "claim_id": "ddbfd4cc-5ce7-427d-a81c-99d20af53c6e",
+      "result_id": "c0d8de59-59e9-4ab4-a947-95cd6bbccfac"
+    },
+    {
+      "claim_id": "07a7a5b8-56ad-49e4-973d-e98c8d487991",
+      "result_id": "c0d8de59-59e9-4ab4-a947-95cd6bbccfac"
+    },
+    {
+      "claim_id": "bf09143f-4259-4557-9320-b95cf97bbd7c",
+      "result_id": "c0d8de59-59e9-4ab4-a947-95cd6bbccfac"
+    },
+    {
+      "claim_id": "35d229fb-6bc4-49bd-803d-2e65693c91a6",
+      "result_id": "c0d8de59-59e9-4ab4-a947-95cd6bbccfac"
+    },
+    {
+      "claim_id": "abc7323f-7dfb-471a-940c-1a3c2de9a499",
+      "result_id": "c0d8de59-59e9-4ab4-a947-95cd6bbccfac"
+    },
+    {
+      "claim_id": "4a097a7b-53f4-43cc-aa9b-fc5905d81187",
+      "result_id": "c0d8de59-59e9-4ab4-a947-95cd6bbccfac"
+    },
+    {
+      "claim_id": "18e7ce78-feea-4e12-a17a-dfe03c4e5693",
+      "result_id": "c0d8de59-59e9-4ab4-a947-95cd6bbccfac"
+    },
+    {
+      "claim_id": "a3fd9eb4-ecd1-45b4-b01b-da1ec383380b",
+      "result_id": "c0d8de59-59e9-4ab4-a947-95cd6bbccfac"
+    },
+    {
+      "claim_id": "790638d6-1bea-4cf6-94ff-8bc4810ad4c8",
+      "result_id": "c0d8de59-59e9-4ab4-a947-95cd6bbccfac"
+    },
+    {
+      "claim_id": "f0ca6954-fd8c-4ea3-a4f6-0c38287ad72b",
+      "result_id": "c0d8de59-59e9-4ab4-a947-95cd6bbccfac"
+    },
+    {
+      "claim_id": "dcfd5b8d-46b0-46f8-8c9a-c948805f284c",
+      "result_id": "d6fdc1c9-542e-4509-a2b4-7d5ee510abfa"
+    },
+    {
+      "claim_id": "b8f9f9ba-1f09-4d40-b70d-235f93de6721",
+      "result_id": "d6fdc1c9-542e-4509-a2b4-7d5ee510abfa"
+    },
+    {
+      "claim_id": "39811233-6c94-415d-b422-bdaca4cc260e",
+      "result_id": "d6fdc1c9-542e-4509-a2b4-7d5ee510abfa"
+    },
+    {
+      "claim_id": "2da35f55-57b1-4fa4-bf73-f49f9e8fe69e",
+      "result_id": "d6fdc1c9-542e-4509-a2b4-7d5ee510abfa"
+    },
+    {
+      "claim_id": "5d4eeea9-11af-4530-b36f-0042fc4bc81c",
+      "result_id": "d6fdc1c9-542e-4509-a2b4-7d5ee510abfa"
+    },
+    {
+      "claim_id": "ca8ea6dd-94f2-4828-8cd4-e7794981f580",
+      "result_id": "d6fdc1c9-542e-4509-a2b4-7d5ee510abfa"
+    },
+    {
+      "claim_id": "a788626a-c688-4692-a805-d2a29001dc1b",
+      "result_id": "daccfa78-3646-413f-bd9c-5feccded3687"
+    },
+    {
+      "claim_id": "a1c06e09-ffe2-47ff-b17e-5782006feff9",
+      "result_id": "daccfa78-3646-413f-bd9c-5feccded3687"
+    },
+    {
+      "claim_id": "1b854db9-1c59-45ad-925c-a53449079ee1",
+      "result_id": "daccfa78-3646-413f-bd9c-5feccded3687"
+    },
+    {
+      "claim_id": "a0c7db08-82bb-491a-bcd1-84c92a571ac7",
+      "result_id": "daccfa78-3646-413f-bd9c-5feccded3687"
+    },
+    {
+      "claim_id": "7ba2495b-f8fa-41a1-be58-ed9c3d8182a7",
+      "result_id": "daccfa78-3646-413f-bd9c-5feccded3687"
+    },
+    {
+      "claim_id": "9a78f8b4-cf8b-42fd-ac62-811356b25847",
+      "result_id": "daccfa78-3646-413f-bd9c-5feccded3687"
+    },
+    {
+      "claim_id": "7044095b-19be-47a1-a798-7cee207da55c",
+      "result_id": "daccfa78-3646-413f-bd9c-5feccded3687"
+    },
+    {
+      "claim_id": "307bd0dd-ecff-4271-bee6-55511f33bc7f",
+      "result_id": "daccfa78-3646-413f-bd9c-5feccded3687"
+    },
+    {
+      "claim_id": "600d1f60-828c-42d6-8767-113b40b91c7e",
+      "result_id": "daccfa78-3646-413f-bd9c-5feccded3687"
+    },
+    {
+      "claim_id": "1abbbccb-909f-4f30-ab49-2b31e6e583c0",
+      "result_id": "daccfa78-3646-413f-bd9c-5feccded3687"
+    },
+    {
+      "claim_id": "1cd1049a-18b1-4c9c-973a-75a34220ea96",
+      "result_id": "9de07d40-74f0-4dcf-b0b8-8efac1835a77"
+    },
+    {
+      "claim_id": "168ae63b-9a0d-4107-a6de-bc6fb037c3ea",
+      "result_id": "9de07d40-74f0-4dcf-b0b8-8efac1835a77"
+    },
+    {
+      "claim_id": "056dd897-fec4-4c27-9ded-dc70c7a91012",
+      "result_id": "9de07d40-74f0-4dcf-b0b8-8efac1835a77"
+    },
+    {
+      "claim_id": "02b1318a-dacb-4ae9-9012-1faf2fb6a33b",
+      "result_id": "9de07d40-74f0-4dcf-b0b8-8efac1835a77"
+    },
+    {
+      "claim_id": "42fac0e5-890a-4ec1-b396-efde2d0bacb1",
+      "result_id": "9de07d40-74f0-4dcf-b0b8-8efac1835a77"
+    },
+    {
+      "claim_id": "3592e539-0219-44e3-9dfa-aa0989ba03b6",
+      "result_id": "9de07d40-74f0-4dcf-b0b8-8efac1835a77"
+    },
+    {
+      "claim_id": "f2581121-dd46-4a10-8534-46d6252b44b1",
+      "result_id": "9de07d40-74f0-4dcf-b0b8-8efac1835a77"
+    },
+    {
+      "claim_id": "060ef4d5-ba8c-4d37-b2b6-a1ce4c638941",
+      "result_id": "9de07d40-74f0-4dcf-b0b8-8efac1835a77"
+    },
+    {
+      "claim_id": "5a9d922d-2172-4dbe-8fae-1ba42be8273c",
+      "result_id": "de863422-013c-405c-9c54-26fefd107d9d"
+    },
+    {
+      "claim_id": "e10fd301-757f-41cd-b593-b5e2ce8decb6",
+      "result_id": "de863422-013c-405c-9c54-26fefd107d9d"
+    },
+    {
+      "claim_id": "cfa02c7d-c2a2-4461-87ee-24045ae8aea6",
+      "result_id": "de863422-013c-405c-9c54-26fefd107d9d"
+    },
+    {
+      "claim_id": "c4de7250-63ff-4f8d-ada2-f92f3e645855",
+      "result_id": "de863422-013c-405c-9c54-26fefd107d9d"
+    },
+    {
+      "claim_id": "4d79de34-426c-448c-ac93-742b0971981e",
+      "result_id": "946ff87d-8456-45fe-b4a5-4f2fb9c11044"
+    },
+    {
+      "claim_id": "3011582b-933a-493d-abd9-7745e707e780",
+      "result_id": "946ff87d-8456-45fe-b4a5-4f2fb9c11044"
+    },
+    {
+      "claim_id": "cea557ad-1dc3-4292-bc19-b82a1ed1bbb3",
+      "result_id": "946ff87d-8456-45fe-b4a5-4f2fb9c11044"
+    },
+    {
+      "claim_id": "a773b27d-7bc1-445c-8d0d-485106b54965",
+      "result_id": "946ff87d-8456-45fe-b4a5-4f2fb9c11044"
+    },
+    {
+      "claim_id": "228bdb5d-1110-4ab9-a667-a369a15f43e5",
+      "result_id": "946ff87d-8456-45fe-b4a5-4f2fb9c11044"
+    },
+    {
+      "claim_id": "51ef8c42-2a61-4264-a33b-c97d2fffc132",
+      "result_id": "946ff87d-8456-45fe-b4a5-4f2fb9c11044"
+    },
+    {
+      "claim_id": "aabe3f07-e551-4fb6-9239-05a9f3a03ca1",
+      "result_id": "946ff87d-8456-45fe-b4a5-4f2fb9c11044"
+    },
+    {
+      "claim_id": "d7d558f9-b675-446c-9c96-70c12d1744fd",
+      "result_id": "946ff87d-8456-45fe-b4a5-4f2fb9c11044"
+    },
+    {
+      "claim_id": "c47e8b33-be44-489d-b212-77af934625aa",
+      "result_id": "d175ed6e-835c-47d3-a39e-8afd45f04a53"
+    },
+    {
+      "claim_id": "3540251d-b751-48b2-9b43-4712aa345a9a",
+      "result_id": "d175ed6e-835c-47d3-a39e-8afd45f04a53"
+    },
+    {
+      "claim_id": "4ef10c9d-a8fa-4ebb-bd24-a7018e6c09af",
+      "result_id": "d175ed6e-835c-47d3-a39e-8afd45f04a53"
+    },
+    {
+      "claim_id": "418950e2-7804-423a-b36b-ec06ce0f519e",
+      "result_id": "d175ed6e-835c-47d3-a39e-8afd45f04a53"
+    },
+    {
+      "claim_id": "78b783f8-216b-4121-a5b5-fb685bdfa7e2",
+      "result_id": "d175ed6e-835c-47d3-a39e-8afd45f04a53"
+    },
+    {
+      "claim_id": "202fbf01-0791-4569-98e5-2184eaf8a204",
+      "result_id": "d175ed6e-835c-47d3-a39e-8afd45f04a53"
+    },
+    {
+      "claim_id": "57fdb205-0ab3-47d9-8b37-06402da31e3d",
+      "result_id": "d175ed6e-835c-47d3-a39e-8afd45f04a53"
+    },
+    {
+      "claim_id": "ba8566d3-533d-4c50-9191-46bd1ff2ad1f",
+      "result_id": "d175ed6e-835c-47d3-a39e-8afd45f04a53"
+    },
+    {
+      "claim_id": "d135d340-da07-46e0-affd-d79676980712",
+      "result_id": "d175ed6e-835c-47d3-a39e-8afd45f04a53"
+    },
+    {
+      "claim_id": "9ac223ca-170f-42a8-930f-9280954f0947",
+      "result_id": "d175ed6e-835c-47d3-a39e-8afd45f04a53"
+    },
+    {
+      "claim_id": "d5c023c2-6649-4596-8cc5-458584207cde",
+      "result_id": "d175ed6e-835c-47d3-a39e-8afd45f04a53"
+    },
+    {
+      "claim_id": "5b70cbd0-f99e-4dab-9ced-d8f9364789e7",
+      "result_id": "d175ed6e-835c-47d3-a39e-8afd45f04a53"
+    },
+    {
+      "claim_id": "f932ab45-c8b9-4ab0-963f-85a5beb54598",
+      "result_id": "1e7912bd-ac0d-4e43-9a49-8dd5dc973c9f"
+    },
+    {
+      "claim_id": "63a4f055-e8c1-40b1-8050-643113311393",
+      "result_id": "1e7912bd-ac0d-4e43-9a49-8dd5dc973c9f"
+    },
+    {
+      "claim_id": "1fe4b6e3-e670-456f-bd35-fbeebb875d66",
+      "result_id": "1e7912bd-ac0d-4e43-9a49-8dd5dc973c9f"
+    },
+    {
+      "claim_id": "a7299e6b-3346-4d0f-88b5-92d98b45f0f6",
+      "result_id": "1e7912bd-ac0d-4e43-9a49-8dd5dc973c9f"
+    },
+    {
+      "claim_id": "c609d5c8-c116-40ca-9abc-bf6f7eaa039a",
+      "result_id": "1e7912bd-ac0d-4e43-9a49-8dd5dc973c9f"
+    },
+    {
+      "claim_id": "efa8e2fc-0f2f-420a-b003-74b1c0958388",
+      "result_id": "1e7912bd-ac0d-4e43-9a49-8dd5dc973c9f"
+    },
+    {
+      "claim_id": "253fcc1c-99a2-4ca7-aa75-de03f53648b2",
+      "result_id": "1e7912bd-ac0d-4e43-9a49-8dd5dc973c9f"
+    },
+    {
+      "claim_id": "f1688f5d-e532-456f-87ff-270f0a0d17c2",
+      "result_id": "1e7912bd-ac0d-4e43-9a49-8dd5dc973c9f"
+    },
+    {
+      "claim_id": "ea9984d1-3584-43a8-9bfa-d974dfbade7e",
+      "result_id": "1e7912bd-ac0d-4e43-9a49-8dd5dc973c9f"
+    },
+    {
+      "claim_id": "724c38c2-4437-403b-96b1-bc2c90ac6786",
+      "result_id": "1e7912bd-ac0d-4e43-9a49-8dd5dc973c9f"
+    },
+    {
+      "claim_id": "bac071a3-ed78-44ab-ae2d-f14b6bc4aaeb",
+      "result_id": "1e7912bd-ac0d-4e43-9a49-8dd5dc973c9f"
+    },
+    {
+      "claim_id": "53cce106-fc63-4136-af65-c9f1ed53911d",
+      "result_id": "63268ec1-e721-4e91-9089-5792f7ad9f4f"
+    },
+    {
+      "claim_id": "1b6ed831-7256-4ca2-a648-67aab215ff1b",
+      "result_id": "c7e69437-14b4-42cb-b110-2460b6f0c0c8"
+    },
+    {
+      "claim_id": "59f27624-f913-4372-b233-2a0f79707e3e",
+      "result_id": "c7e69437-14b4-42cb-b110-2460b6f0c0c8"
+    },
+    {
+      "claim_id": "5a1260e5-0dc1-42eb-9f0f-8471b0b94247",
+      "result_id": "d12c60ee-1a81-410e-b50f-4e2abb19bfcb"
+    },
+    {
+      "claim_id": "217214e7-bb25-4fd2-9bfb-1cf7c63131ee",
+      "result_id": "d12c60ee-1a81-410e-b50f-4e2abb19bfcb"
+    },
+    {
+      "claim_id": "9faf5a1b-be26-4fcb-87ae-30bff438a20f",
+      "result_id": "d12c60ee-1a81-410e-b50f-4e2abb19bfcb"
+    },
+    {
+      "claim_id": "0a2030c4-cf5c-40ac-8d2c-e4f9feaf5c44",
+      "result_id": "701e6972-17ac-4254-ab15-c8eeaabba069"
+    },
+    {
+      "claim_id": "ea028f6d-7cd5-44aa-801b-00259dd9e582",
+      "result_id": "701e6972-17ac-4254-ab15-c8eeaabba069"
+    },
+    {
+      "claim_id": "7b19b4c8-c292-40ae-9d05-3bf99748ffad",
+      "result_id": "c377e7eb-1167-4499-bb5a-cb634ea0c14d"
+    },
+    {
+      "claim_id": "969c0422-149f-40a0-b896-357cac934e18",
+      "result_id": "c377e7eb-1167-4499-bb5a-cb634ea0c14d"
+    },
+    {
+      "claim_id": "09cf8f39-9d87-4266-9326-bd3c32ea4eef",
+      "result_id": "c377e7eb-1167-4499-bb5a-cb634ea0c14d"
+    },
+    {
+      "claim_id": "42053930-e764-4b1a-991c-882b197c0220",
+      "result_id": "c377e7eb-1167-4499-bb5a-cb634ea0c14d"
+    },
+    {
+      "claim_id": "4f443bb3-5d51-4c3d-99bd-5c90ae22163d",
+      "result_id": "c377e7eb-1167-4499-bb5a-cb634ea0c14d"
+    },
+    {
+      "claim_id": "a7743665-926a-4800-be47-1db9b644fb42",
+      "result_id": "c377e7eb-1167-4499-bb5a-cb634ea0c14d"
+    },
+    {
+      "claim_id": "0ae63221-70bd-4693-b3e4-82c472abe692",
+      "result_id": "c377e7eb-1167-4499-bb5a-cb634ea0c14d"
+    },
+    {
+      "claim_id": "8fdfbf24-2b7c-4e1d-96d5-7e8f70f3bb02",
+      "result_id": "c377e7eb-1167-4499-bb5a-cb634ea0c14d"
+    },
+    {
+      "claim_id": "bd2b13a4-8638-4a5e-bcdd-5ad3ad905b69",
+      "result_id": "c377e7eb-1167-4499-bb5a-cb634ea0c14d"
+    },
+    {
+      "claim_id": "89c82430-030f-4e84-9b24-24c96910bd63",
+      "result_id": "c377e7eb-1167-4499-bb5a-cb634ea0c14d"
+    },
+    {
+      "claim_id": "32b03408-c0ec-4a30-812c-d6ef11794201",
+      "result_id": "c377e7eb-1167-4499-bb5a-cb634ea0c14d"
+    },
+    {
+      "claim_id": "dbb8dce6-61aa-462e-b80c-dbd742e304e6",
+      "result_id": "c377e7eb-1167-4499-bb5a-cb634ea0c14d"
+    },
+    {
+      "claim_id": "fe65c04e-f178-475b-81d0-2563e3c20c2e",
+      "result_id": "c377e7eb-1167-4499-bb5a-cb634ea0c14d"
+    },
+    {
+      "claim_id": "d17c458b-6745-498a-81a5-0ec6ec306653",
+      "result_id": "c377e7eb-1167-4499-bb5a-cb634ea0c14d"
+    },
+    {
+      "claim_id": "851ce3d6-9c4c-428f-8fc9-f1ce92db09ea",
+      "result_id": "c377e7eb-1167-4499-bb5a-cb634ea0c14d"
+    },
+    {
+      "claim_id": "dc8311c9-0966-4bee-b7ec-301a6d504e9a",
+      "result_id": "c377e7eb-1167-4499-bb5a-cb634ea0c14d"
+    },
+    {
+      "claim_id": "cd1c22a9-c983-47e6-b557-cb3df8544b2a",
+      "result_id": "c377e7eb-1167-4499-bb5a-cb634ea0c14d"
+    },
+    {
+      "claim_id": "c44c727b-5664-4652-8101-5b6e73c0ed80",
+      "result_id": "c377e7eb-1167-4499-bb5a-cb634ea0c14d"
+    },
+    {
+      "claim_id": "0eb236d6-be13-4a03-b1f7-9122219fbca6",
+      "result_id": "c377e7eb-1167-4499-bb5a-cb634ea0c14d"
+    },
+    {
+      "claim_id": "c3cd172b-c120-48a6-a9ba-69b2f3e88634",
+      "result_id": "c377e7eb-1167-4499-bb5a-cb634ea0c14d"
+    },
+    {
+      "claim_id": "c2491074-b8d3-41d7-abad-ea1daec23a15",
+      "result_id": "c377e7eb-1167-4499-bb5a-cb634ea0c14d"
+    },
+    {
+      "claim_id": "5d76c1b7-7223-4e6f-a44a-fc9bba555d5a",
+      "result_id": "c377e7eb-1167-4499-bb5a-cb634ea0c14d"
+    },
+    {
+      "claim_id": "bc5c387c-d933-468a-9d97-da887490c25e",
+      "result_id": "c377e7eb-1167-4499-bb5a-cb634ea0c14d"
+    },
+    {
+      "claim_id": "3118748a-9427-497a-800e-15d82d41f556",
+      "result_id": "c377e7eb-1167-4499-bb5a-cb634ea0c14d"
+    }
+  ],
+  "comparisons": []
+}

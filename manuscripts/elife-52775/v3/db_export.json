@@ -1,0 +1,1357 @@
+{
+  "submission": {
+    "id": "0a454845-35c2-4d5b-bd73-dd0f7ee53042",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T14:20:07.970472Z",
+    "updated_at": "2025-12-02T14:20:07.970472Z"
+  },
+  "content": [
+    {
+      "id": "e588af89-7025-488e-bca5-13c033e2ed8f",
+      "submission_id": "0a454845-35c2-4d5b-bd73-dd0f7ee53042",
+      "content_type": "manuscript",
+      "content_text": "# Nucleotide inhibition of the pancreatic ATP-sensitive K+ channel explored with patch-clamp fluorometry\n\n## Authors\n\n- Samuel G Usher<sup>1</sup> ([ORCID: 0000-0002-2487-6547](https://orcid.org/0000-0002-2487-6547))\n- Frances M Ashcroft<sup>1</sup> ([ORCID: 0000-0002-6970-1767](https://orcid.org/0000-0002-6970-1767)) \u2020\n- Michael C Puljung<sup>1</sup> ([ORCID: 0000-0002-9335-0936](https://orcid.org/0000-0002-9335-0936)) \u2020\n\n### Affiliations\n\n1. Department of Physiology, Anatomy and Genetics University of Oxford Oxford United Kingdom\n\n\u2020 Corresponding author\n\n## Abstract\n\nPancreatic ATP-sensitive K+ channels (KATP) comprise four inward rectifier subunits (Kir6.2), each associated with a sulphonylurea receptor (SUR1). ATP/ADP binding to Kir6.2 shuts KATP. Mg-nucleotide binding to SUR1 stimulates KATP. In the absence of Mg2+, SUR1 increases the apparent affinity for nucleotide inhibition at Kir6.2 by an unknown mechanism. We simultaneously measured channel currents and nucleotide binding to Kir6.2. Fits to combined data sets suggest that KATP closes with only one nucleotide molecule bound. A Kir6.2 mutation (C166S) that increases channel activity did not affect nucleotide binding, but greatly perturbed the ability of bound nucleotide to inhibit KATP. Mutations at position K205 in SUR1 affected both nucleotide affinity and the ability of bound nucleotide to inhibit KATP. This suggests a dual role for SUR1 in KATP inhibition, both in directly contributing to nucleotide binding and in stabilising the nucleotide-bound closed state.\n\n## Introduction\n\nATP-sensitive K+ channels (KATP) couple the metabolic state of a cell to its electrical activity (Ashcroft and Rorsman, 2013). In\u00a0pancreatic \u03b2-cells, closure of KATP in response to glucose uptake triggers insulin secretion. As such, mutations in KATP that affect its response to changes in cellular metabolism cause diseases of insulin secretion, for\u00a0example neonatal diabetes and persistent hyperinsulinemic hypoglycaemia of infancy (PHHI; Quan et al., 2011; Ashcroft et al., 2017). KATP is composed of four inwardly rectifying K+ channel subunits (Kir6.2 in pancreatic \u03b2-cells), which form the channel pore, and four modulatory sulphonylurea receptor subunits (SUR1 in \u03b2-cells; Figure 1A; Aguilar-Bryan et al., 1995; Inagaki et al., 1995; Sakura et al., 1995; Inagaki et al., 1997). SUR1 is a member of the ABC transporter family but lacks any transport activity (Aguilar-Bryan et al., 1995; Tusn\u00e1dy et al., 1997). KATP responds to metabolism via adenine nucleotide binding to three distinct classes of intracellular nucleotide-binding site (one on each Kir6.2 subunit and two on each SUR1 subunit\u2014making twelve sites in total [Vedovato et al., 2015]). Binding of ATP or ADP to Kir6.2 inhibits KATP channel activity (Tucker et al., 1997; Proks et al., 2010), whereas binding of nucleotides to SUR1 stimulates KATP (Nichols et al., 1996; Tucker et al., 1997). The stimulatory activity of nucleotides on KATP depends on Mg2+\u00a0(Gribble et al., 1998), whereas their inhibitory effect on Kir6.2 does not (Tucker et al., 1997).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/52775/elife-52775-fig1-v3.jpg)\n\n**Figure 1.:** (A) Cartoon illustrating the topology of KATP. Two (of four) Kir6.2 and two (of four) SUR1 subunits are shown for clarity.\u00a0The inhibitory nucleotide-binding site on Kir6.2 is shown in red; the stimulatory nucleotide-binding sites on SUR1 are shown in green. The three transmembrane domains of SUR1 are designated TMD0, TMD1, and TMD2. The loop connecting TMD0 to TMD1 is designated L0. The nucleotide binding domains of SUR1 are labelled NBD1 and NBD2. (B) Chemical structures of ANAP and TNP-ATP. The fluorescent moieties are highlighted. (C) Side view of the structure of the cytosolic domains of Kir6.2 (PDB accession #6BAA) and one SUR1 subunit (PDB accession #6PZI). TNP-ATP (red, from PDB accession #5XW6) was docked into the nucleotide-binding site of Kir6.2 and positioned in NBS1 of SUR1 (green, from PDB accession #3AR7) by alignment as described in Materials and methods. Distances from the centre of mass of the six-membered ring of the native tryptophan at position 311 in Kir6.2 to the centre of mass of the trinitrophenyl moieties of the TNP-ATPs are displayed in \u00c5. (D) Theoretical FRET efficiency between ANAP and TNP-ATP as a function of distance, calculated from the F\u00f6rster equation. The distances and corresponding FRET efficiencies between ANAP at position 311 and TNP-ATP bound to Kir6.2 (EKir) and SUR1 (ESUR) are indicated. Our calculated R0 (the distance at which FRET efficiency is half maximal) for ANAP and TNP-ATP is 38.4 \u00c5. (E) Spectral images acquired from an unroofed membrane expressing Kir6.2*-GFP + SUR1 and exposed to increasing concentrations of TNP-ATP. The y-dimension in each image represents distance. The x-dimension represents wavelength. (F) Line-averaged, background-subtracted spectra from E displayed with increasing concentrations of TNP-ATP coloured from purple to orange. The three fluorophores have distinct peaks: ANAP at 472\u00a0nm, GFP at 508\u00a0nm, and TNP-ATP at 561\u00a0nm. The shaded rectangle indicates the wavelength range used to measure ANAP intensity. (G) Concentration-response relationship for binding of TNP-ATP to Kir6.2*-GFP + SUR1 in unroofed membranes. Data were plotted as $F/F_{m\u2062a\u2062x}$, where $F_{m\u2062a\u2062x}$ is the fluorescence intensity of ANAP in the absence of nucleotide. The smooth curve is a descriptive Hill fit. $EC_{50}=25.6\\muM$, $h=0.82$, $E_{m\u2062a\u2062x}=0.93$, n\u00a0=\u00a018. (H) Concentration-response relationship for binding of TNP-ATP to Kir6.2*,G334D-GFP + SUR1 in unroofed membranes. The dashed blue curve is the fit from G. The orange curve is a descriptive Hill fit to the G334D data. $EC_{50}=493\\muM$, $h=2.63$, $E_{m\u2062a\u2062x}=0.08$, n\u00a0=\u00a09. The inset shows the location of G334D (green) in relation to the inhibitory ATP binding site on Kir6.2 (PDB accession #6BAA). TNP-ATP (PDB accession #5XW6) shown in red sticks.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/52775/elife-52775-fig1-figsupp1-v3.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Confocal images of HEK-293T cells transfected with Kir6.2*-GFP + SUR1 (top panel) or Kir6.2-GFP + SUR1 (bottom panel). Cells were stained with Cell Mask Deep Red to label the plasma membrane. The grey band in the merged image is a 5\u00a0pixel-width line scan. (B) Averaged intensities of the line scans shown in A. The intensity of each channel is shown as a differently coloured line: Cell Mask in red, ANAP in blue and GFP in green. The notches on the x-axis mark the location of the plasma membrane. (C) Two separate western blots against Kir6.2*-HA (left) and Kir6.2*-HA-GFP (right) constructs. The HA tag is in the extracellular region following helix M1 of Kir6.2, and is present in constructs in C, D, and E unless otherwise stated. Cells were co-transfected with pANAP, eRF1-E55D, and SUR1 unless otherwise indicated. Full-length Kir6.2 constructs are indicated on each gel with a dashed box. The doublets represent an N-terminally truncated product - see Materials and methods. (D) Each lane from the Kir6.2*-HA-GFP gel is displayed normalised to its highest intensity accompanied by the line-averaged density trace. The density peak corresponding to ANAP-labelled Kir6.2 is filled in blue. The density peak for C-terminally truncated Kir6.2 is filled in orange. (E) Chemiluminescence-based surface expression assay for HA-tagged\u00a0Kir6.2 constructs. Each data point represents an individual coverslip of transfected HEK-293T cells. n\u00a0=\u00a03\u20136 for each condition. Note the logarithmic scale on the vertical axis.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/52775/elife-52775-fig1-figsupp2-v3.jpg)\n\n**Figure 1\u2014figure supplement 2.:** A. Concentration-response curve for ATP inhibition of Kir6.2-GFP + SUR1 or Kir6.2*-GFP + SUR1, measured in excised, inside-out patches. The smooth curves are descriptive Hill fits to the data. Kir6.2-GFP + SUR1: $IC_{50}=62.7\\muM$, $h=1.28$, $I_{m\u2062a\u2062x}=0.99$, n\u00a0=\u00a03; Kir6.2*-GFP + SUR1: $IC_{50}=79.5\\muM$, $h=1.42$, $I_{m\u2062a\u2062x}=1.00$, n\u00a0=\u00a04. (B, C) Concentration-response relationships for current inhibition in excised, inside-out patches expressing Kir6.2-GFP + SUR1 (C) or Kir6.2*-GFP + SUR1 (D) exposed to either ATP or TNP-ATP. The smooth curves are descriptive Hill fits to the data. Kir6.2-GFP + SUR1 (TNP-ATP): $IC_{50}=1.17\\muM$, $h=1.14$, $I_{m\u2062a\u2062x}=0.97$, n\u00a0=\u00a07, Kir6.2*-GFP + SUR1 (TNP-ATP): $IC_{50}=6.23\\muM$, $h=0.92$, $I_{m\u2062a\u2062x}=0.96$, n\u00a0=\u00a09. Data and fits for inhibition of Kir6.2*-GFP + SUR1 by TNP-ATP are the same as in Figure 2. (D) Fractional current inhibition by 100\u00a0\u00b5M tolbutamide measured in excised, inside-out patches. Data were normalised to the average current in control solution before and after tolbutamide exposure. Each data point represents an individual patch. Kir6.2-GFP without SUR1, n\u00a0=\u00a05; Kir6.2-GFP + SUR1, n\u00a0=\u00a03; Kir6.2*-GFP + SUR1, n\u00a0=\u00a04.\n\nIn addition to nucleotide-dependent activation, SUR1 confers several other properties on Kir6.2. First, association with SUR1 increases the open probability ($P_{o\u2062p\u2062e\u2062n}$) of Kir6.2 (Babenko and Bryan, 2003; Chan, 2003; Fang et al., 2006). Despite this increase in $P_{o\u2062p\u2062e\u2062n}$, SUR1 also paradoxically increases the apparent affinity for nucleotide inhibition at Kir6.2 by an unknown mechanism (Tucker et al., 1997). SUR1 is also responsible for high-affinity inhibition of KATP by antidiabetic sulphonylureas and glinides as well as activation by KATP-specific K+ channel openers (Tucker et al., 1997). Finally, SUR1 and Kir6.2 must co-assemble to ensure mutual exit from the endoplasmic reticulum and correct trafficking to the plasma membrane (Zerangue et al., 1999).\n\nTo date, the primary means of studying nucleotide-dependent effects on KATP channel function has been with electrophysiological approaches, which measure the summed activity of all three classes of binding site acting in concert. Thus, it can be difficult to separate the contributions of each class of site to the opening and closing of the channel pore and to properly distinguish between changes in nucleotide binding and channel gating. To overcome these limitations, we have applied a novel approach to directly measure nucleotide binding to each individual class of site in KATP\u00a0(Puljung et al., 2019). This method utilizes F\u00f6rster resonance energy transfer (FRET) between channels labelled with the fluorescent unnatural amino acid 3-(6-acetylnaphthalen-2-ylamino)\u22122-aminopropanoic acid (ANAP) and fluorescent trinitrophenyl (TNP) analogues of adenine nucleotides (Figure 1B). As we show here, this method is readily combined with patch-clamp electrophysiology so that nucleotide binding and regulation of current can be measured simultaneously. This has enabled us to quantitatively assess nucleotide binding to Kir6.2 and explore how this is coupled to channel inhibition in both wild-type KATP and KATP carrying mutations that impair ATP inhibition.\n\n## Results\n\n### Measuring nucleotide binding to Kir6.2\n\nWe previously used this FRET-based binding assay to measure nucleotide binding to the second nucleotide-binding site of SUR1 (Puljung et al., 2019). To measure binding to Kir6.2 in the complete KATP complex (four full-length Kir6.2 subunits co-expressed with four full-length SUR1 subunits), we replaced a tryptophan at position 311 (W311) of Kir6.2\u00a0that is 26 \u00c5\u00a0from the location of the inhibitory nucleotide-binding site with ANAP (Figure 1C) such that each subunit is labelled with one ANAP molecule. We designate this construct Kir6.2*. Based on the theoretical FRET efficiency calculated from the F\u00f6rster equation and available cryo-EM structures (Martin et al., 2017; Martin et al., 2019), we expect 91% FRET efficiency between ANAP at position 311 and a TNP-ATP molecule bound to Kir6.2, and only 4% FRET efficiency to TNP-ATP bound to the closest nucleotide-binding site on SUR1 (nucleotide binding site 1; Figure 1C; Figure 1D). We also expect very little FRET between ANAP at position 311 and TNP-ATP bound to neighbouring Kir6.2 subunits (see Materials and methods for more details on our calculations).\n\nANAP incorporation into Kir6.2 was achieved as described previously (Chatterjee et al., 2013; Zagotta et al., 2016; Puljung et al., 2019). Briefly, HEK-293T cells were co-transfected with a plasmid encoding a Kir6.2 construct with a C-terminal GFP tag and an amber stop codon (TAG) replacing the codon corresponding to amino acid position 311 (W311TAG-GFP) and a plasmid encoding an ANAP-specific tRNA/tRNA synthetase pair (pANAP). We also included a dominant negative eukaryotic ribosomal release factor (eRF-E55D) in our transfections, which has been shown to increase the yield of full-length, ANAP-labelled protein (Schmied et al., 2014; Puljung et al., 2019). When cultured in the presence of ANAP, full length, fully ANAP-labelled Kir6.2 protein was produced and successfully trafficked to the membrane in the presence of SUR1 (Figure 1\u2014figure supplement 1; see Materials and methods). We used GFP-tagged Kir6.2 constructs throughout this study unless otherwise indicated, to help identify cells or membranes expressing KATP.\n\nCurrents were measured from patches from cells expressing KATP\u00a0that were\u00a0excised\u00a0in the absence of Mg2+. Under such conditions, nucleotides can bind to both sites on SUR1, but no activation occurs, allowing inhibitory currents to be measured in isolation (Gribble et al., 1998; Ueda et al., 1999; Puljung et al., 2019). Kir6.2*-GFP + SUR1 exhibited nearly identical sensitivity to ATP inhibition as Kir6.2-GFP + SUR1 (Figure 1\u2014figure supplement 2A), indicating that replacement of W311 with ANAP did not affect inhibition of KATP. Whereas both constructs were inhibited by TNP-ATP with a higher apparent affinity relative to ATP, incorporation of ANAP resulted in channels with a slightly lower TNP-ATP sensitivity relative to wild-type ($I\u2062C_{50}$ of 6.2\u00a0\u00b5M compared to an $I\u2062C_{50}$ of 1.2\u00a0\u00b5M, Figure 1\u2014figure supplement 2B,C).\n\nKir6.2-GFP has been demonstrated to traffic to the plasma membrane in the absence of SUR1 and form functional channels (John et al., 1998; Makhina and Nichols, 1998). In a luminescence-based, surface-expression assay, we did not detect HA-tagged Kir6.2*-GFP at the plasma membrane in the absence of SUR1 (Figure 1\u2014figure supplement 1E). To verify that the currents measured in our experiments in which Kir6.2*-GFP was co-transfected with SUR1 were the result of Kir6.2*-GFP + SUR1 and not Kir6.2*-GFP alone, we measured the sensitivity of currents to inhibition by the sulphonylurea tolbutamide, a property conferred by the SUR1 subunit. Whereas currents from unlabelled wild-type Kir6.2-GFP expressed in the absence of SUR1 were not affected by 100\u00a0\u00b5M tolbutamide, both wild-type Kir6.2-GFP and Kir6.2*-GFP currents were inhibited to a similar extent when expressed with SUR1 (46.5%\u00a0\u00b10.04% and 57.7%\u00a0\u00b10.02%, respectively; Figure 1\u2014figure supplement 2D). The extent of inhibition was similar to previous measurements of tolbutamide inhibition (Tucker et al., 1997), confirming that Kir6.2*-GFP was co-assembled with SUR1 at the plasma membrane.\n\nTo measure nucleotide binding, cells transfected with Kir6.2*-GFP + SUR1 were briefly sonicated, leaving behind unroofed plasma membrane fragments (Heuser, 2000; Zagotta et al., 2016; Puljung et al., 2019) containing ANAP-labelled KATP channels with the intracellular nucleotide-binding sites exposed to the bath solution. The sample was excited with a 385\u00a0nm LED and emitted fluorescence from the membrane fragments was passed through a spectrometer, allowing us to separate ANAP, GFP, and TNP-ATP fluorescence by peak wavelength (Figure 1E,F). As expected from FRET, increasing the concentration of TNP-ATP caused a decrement in the ANAP peak at 472\u00a0nm and a concomitant increase in the TNP-ATP peak at 561\u00a0nm (Figure 1F). We used the quenching of the ANAP peak as a direct measure of TNP-ATP binding as this signal was specific to KATP. In contrast, the peak TNP-ATP fluorescence may include contributions from both specific and non-specific nucleotide binding, as well as direct excitation of TNP-ATP in solution by the 385\u00a0nm excitation light. Due to the sharp cut-off of the GFP emission spectrum at shorter wavelengths, our measurements of peak ANAP fluorescence were unaffected by the presence of the GFP tag on Kir6.2.\n\nWe fit concentration-response data for ANAP quenching by TNP-ATP with the Hill equation, to produce estimates of apparent affinity ($E\u2062C_{50}$, the half maximal effective concentration) and $E_{m\u2062a\u2062x}$ (ANAP quenching at saturating concentrations of TNP-ATP; Figure 1G). $E_{m\u2062a\u2062x}$ was 93%, in good agreement with the 91% predicted by the F\u00f6rster equation and theoretical distance measurements (Figure 1D), suggesting that we were able to measure binding directly to the inhibitory site at Kir6.2. To confirm this, we introduced a well-studied neonatal diabetes mutation (G334D) into the Kir6.2 binding site, which drastically reduces the sensitivity of the channel to inhibition by nucleotides (Drain et al., 1998; Masia et al., 2007; Proks et al., 2010). Based on the cryo-electron microscopy structures of KATP, this mutation is expected to interfere with nucleotide binding directly (Figure 1H inset, Martin et al., 2017). The resulting construct Kir6.2*,G334D-GFP + SUR1 displayed drastically reduced ANAP quenching over the range of TNP-ATP concentrations tested. We therefore conclude that our binding measurements were specific for the inhibitory nucleotide-binding site on Kir6.2. This observation is consistent with the interpretation that the G334D mutation causes neonatal diabetes by preventing nucleotide binding.\n\n### Measuring current inhibition and nucleotide binding simultaneously\n\nThe apparent affinity of Kir6.2*-GFP + SUR1 for TNP-ATP in unroofed membranes was 25.6\u00a0\u00b5M (Figure 1G and Table 1). This value is higher than the apparent affinity for nucleotide inhibition (6.2\u00a0\u00b5M) measured using patch-clamp (Figure 1\u2014figure supplement 2C). However, both binding and current measurement are a function of the intrinsic binding affinity, the channel $P_{o\u2062p\u2062e\u2062n}$, and the ability of agonist, once bound, to close the channel. Furthermore, the functional state of KATP in unroofed membranes is unclear. This is a particular problem with KATP channels, which run down due to slow dissociation of phosphatidylinositol 4,5-bisphosphate (PIP2), reducing the $P_{o\u2062p\u2062e\u2062n}$ over time even in the absence of nucleotides (Proks et al., 2016).\n\n**Table 1.**\n Hill fit parameters from unroofed membranes.$E\u2062C_{50}$ values and their standard errors are reported as $log_{10}\u2061M$. $E\u2062C_{50}$ values are also provided as \u00b5M in parentheses.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Fluorescence quenching</th>\n      <th>Construct</th>\n      <th>Term</th>\n      <th>Estimate</th>\n      <th>Standard error</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>TNP-ATP</td>\n      <td>Kir6.2*-GFP+SUR1</td>\n      <td>E\u2062C50</td>\n      <td>\u22124.59 (25.7)</td>\n      <td>0.05</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>n\u00a0=\u00a018</td>\n      <td>h</td>\n      <td>0.82</td>\n      <td>0.05</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td></td>\n      <td>Em\u2062a\u2062x</td>\n      <td>0.93</td>\n      <td>0.03</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>Kir6.2*,G334D-GFP+SUR1</td>\n      <td>E\u2062C50</td>\n      <td>\u22123.31 (490)</td>\n      <td>2.23</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>n\u00a0=\u00a09</td>\n      <td>h</td>\n      <td>2.63</td>\n      <td>17.70</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td></td>\n      <td>Em\u2062a\u2062x</td>\n      <td>0.08</td>\n      <td>0.26</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>Kir6.2*,C166S-GFP+SUR1</td>\n      <td>E\u2062C50</td>\n      <td>\u22124.50 (31.6)</td>\n      <td>0.05</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>n\u00a0=\u00a012</td>\n      <td>h</td>\n      <td>0.92</td>\n      <td>0.08</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td></td>\n      <td>Em\u2062a\u2062x</td>\n      <td>0.87</td>\n      <td>0.03</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>Kir6.2*-GFP</td>\n      <td>E\u2062C50</td>\n      <td>\u22124.42 (38.0)</td>\n      <td>0.05</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>n\u00a0=\u00a014</td>\n      <td>h</td>\n      <td>0.83</td>\n      <td>0.05</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td></td>\n      <td>Em\u2062a\u2062x</td>\n      <td>0.92</td>\n      <td>0.03</td>\n    </tr>\n  </tbody>\n</table>\n\nAs measuring either nucleotide binding or ionic currents in isolation only offers limited mechanistic insight into inhibition of KATP, we turned to patch-clamp fluorometry (PCF, Zheng and Zagotta, 2003). Using PCF, we can measure TNP-ATP binding to Kir6.2 and channel activity simultaneously (Figure 2), providing us with direct access to the relationship between nucleotide binding and channel function. We simultaneously measured fluorescence emission spectra and ionic currents for Kir6.2*-GFP + SUR1 in inside-out, excised membrane patches. The apparent negative fluorescence intensities at high TNP-ATP concentrations are due to imperfect background subtraction, and do not affect our measurements of ANAP intensities (see Materials and methods). As before, all measurements were performed in the presence of Mg2+ chelators, such that nucleotide inhibition could be measured in the absence of activation (Tucker et al., 1997; Gribble et al., 1998). Strikingly, current inhibition occurred at a lower range of concentrations compared to nucleotide binding (Figure 2C,D). The apparent $I\u2062C_{50}$ for inhibition calculated from Hill fits was an order of magnitude lower than the $E\u2062C_{50}$ for binding measured in the same patches (Figure 2C, Table 2). We considered several different gating models to explain this observation. In each model, we assumed the channel pore was able to open and close in the absence of ligand with an equilibrium constant $L$, where $P_{o\u2062p\u2062e\u2062n}=L/(L+1)$ and $L>0$, reflecting the ability of KATP to open and close in the absence of nucleotides. This excludes the possibility of induced-fit models which would not predict unliganded channel closings. Induced-fit models also cannot account for separation between the binding and gating curves which we observe in Figure 2C,D (Changeux and Edelstein, 2011). Each model also had parameters representing the intrinsic binding affinity to the closed state ($K_{A}$, where $K_{A}>0$) and the factor by which nucleotide binding favours channel closure ($D$, where $D<1$).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/52775/elife-52775-fig2-v3.jpg)\n\n**Figure 2.:** (A) Brightfield and fluorescence images of a patch pipette and excised, inside out patch expressing Kir6.2*-GFP + SUR1, with the location of the centre of the spectrometer slit overlaid as a white, vertical line. (B) Current (left) and spectra (right) acquired from the same excised, inside-out patch exposed to TNP-ATP and coloured according to concentration. (C) Concentration-response (n\u00a0=\u00a09) for TNP-ATP inhibition of Kir6.2*-GFP + SUR1 currents ($I/I_{m\u2062a\u2062x}$) and for quenching of ANAP fluorescence ($F/F_{m\u2062a\u2062x}$). Both current inhibition and fluorescence quenching were fit to the Hill equation. Current inhibition: $IC_{50}=6.23\\muM$, $h=0.92$, $I_{m\u2062a\u2062x}=0.96$, fluorescence quenching: $EC_{50}=77.7\\muM$, $h=0.87$, $E_{m\u2062a\u2062x}=1.00$. (D) The same data as in C fit to an MWC-type model. Solid curves represent the median fit; shaded areas represent the 95% quantile interval. Values for the fits are reported in the text and in Table 3. (E) MWC-type model for inhibition of KATP by nucleotides. Open subunits are shown as circles; closed are shown as squares. Nucleotide-bound subunits are represented by filled symbols. $L$, $D$, and $K_{A}$ are defined in the text. (F) Posterior probability distributions for the MWC-type model generated by MCMC fits to the data in C overlaid on the prior probability distribution (dashed line) for each parameter.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/52775/elife-52775-fig2-figsupp1-v3.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Fixing $L$ does not affect estimates of $D$ and $K_{A}$.(A) Pairwise correlation plots of $L$, $D$ and $K_{A}$ from the full MWC-type model fit to Kir6.2*-GFP + SUR1. (B) Pairwise correlation plots of $D$ and $K_{A}$ from the full MWC-type model with $L$ fixed to 0.8 ($P_{o\u2062p\u2062e\u2062n}=0.45$).\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/52775/elife-52775-fig2-figsupp2-v3.jpg)\n\n**Figure 2\u2014figure supplement 2.:** Fits to PCF data from Figure 2 with the full MWC-type model (A), single-binding model (B) and negative-cooperativity model (C) are shown on the left with the diagrammatic formulation of each model on the right. The Bayes factor and leave-one-out cross-validation (LOO-CV) scores for each model compared to the full MWC-type model are displayed. More detail on these fit indices is provided in the Discussion section. $L$, $D$, $C$, and $K_{A}$ are defined in the text. (D) Posterior probability distributions for the each of the models generated by MCMC fits to the data in Figure 2 overlaid on the prior probability distribution (dashed line) for each parameter. For $L$ and $K_{A}$, the distributions for the MWC-type and single-binding model were virtually identical. The MWC-type densities are hidden behind the single-binding densities.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/52775/elife-52775-fig2-figsupp3-v3.jpg)\n\n**Figure 2\u2014figure supplement 3.:** (A) Raw ANAP fluorescence intensities (left) and corrected ANAP fluorescence intensities (right) from a representative PCF experiment with Kir6.2*-GFP + SUR1 plotted against the exposure time. The fit to Equation 1 is shown as a black dashed line. To minimise artifacts from our bleaching corrections we performed experiments from both high-to-low and low-to-high TNP-ATP concentrations. (B) The parameters from fits to Equation 1 for each PCF experiment in Figure 2 are shown individually. (C) The fraction of ANAP fluorescence intensity remaining at the end of each PCF experiment in Figure 2 is shown by dividing the raw ANAP intensity of the last exposure by that of the first. The mean fractional remaining intensity of 0.34 is shown as a horizontal blue line.\n\n**Table 2.**\n Hill fit parameters from excised patches.$E\u2062C_{50}$ and $I\u2062C_{50}$ values and their standard errors are reported as $log_{10}\u2061M$. $E\u2062C_{50}$ and $I\u2062C_{50}$ values are also provided as \u00b5M in parentheses.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Current inhibition</th>\n      <th>Construct</th>\n      <th>Term</th>\n      <th>Estimate</th>\n      <th>Standard error</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>ATP</td>\n      <td>Kir6.2-GFP\u00a0+\u00a0SUR1</td>\n      <td>I\u2062C50</td>\n      <td>\u22124.20 (63.1)</td>\n      <td>0.07</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>n\u00a0=\u00a03</td>\n      <td>h</td>\n      <td>1.28</td>\n      <td>0.21</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td></td>\n      <td>Im\u2062a\u2062x</td>\n      <td>0.99</td>\n      <td>0.06</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>Kir6.2-GFP</td>\n      <td>I\u2062C50</td>\n      <td>\u22123.31 (490)</td>\n      <td>0.05</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>n\u00a0=\u00a02</td>\n      <td>h</td>\n      <td>1.15</td>\n      <td>0.12</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td></td>\n      <td>Im\u2062a\u2062x</td>\n      <td>0.93</td>\n      <td>0.03</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>Kir6.2*-GFP\u00a0+\u00a0SUR1</td>\n      <td>I\u2062C50</td>\n      <td>\u22124.10 (79.4)</td>\n      <td>0.06</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>n\u00a0=\u00a04</td>\n      <td>h</td>\n      <td>1.42</td>\n      <td>0.21</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td></td>\n      <td>Im\u2062a\u2062x</td>\n      <td>1.00</td>\n      <td>0.05</td>\n    </tr>\n    <tr>\n      <td>TNP-ATP</td>\n      <td>Kir6.2-GFP\u00a0+\u00a0SUR1</td>\n      <td>I\u2062C50</td>\n      <td>\u22125.93 (1.17)</td>\n      <td>0.04</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>n\u00a0=\u00a07</td>\n      <td>h</td>\n      <td>1.14</td>\n      <td>0.11</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td></td>\n      <td>Im\u2062a\u2062x</td>\n      <td>0.97</td>\n      <td>0.02</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>Kir6.2-GFP</td>\n      <td>I\u2062C50</td>\n      <td>\u22123.56 (275)</td>\n      <td>0.64</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>n = 3</td>\n      <td>h</td>\n      <td>1.09</td>\n      <td>0.85</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td></td>\n      <td>Im\u2062a\u2062x</td>\n      <td>1.00</td>\n      <td>0.53</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>Kir6.2*-GFP\u00a0+\u00a0SUR1</td>\n      <td>I\u2062C50</td>\n      <td>\u22125.21 (6.17)</td>\n      <td>0.10</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>n\u00a0=\u00a09</td>\n      <td>h</td>\n      <td>0.92</td>\n      <td>0.18</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td></td>\n      <td>Im\u2062a\u2062x</td>\n      <td>0.96</td>\n      <td>0.05</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>Kir6.2*,C166S-GFP\u00a0+\u00a0SUR1</td>\n      <td>I\u2062C50</td>\n      <td>\u22123.11 (776)</td>\n      <td>0.23</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>n\u00a0=\u00a06</td>\n      <td>h</td>\n      <td>1.35</td>\n      <td>1.16</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td></td>\n      <td>Im\u2062a\u2062x</td>\n      <td>0.55</td>\n      <td>0.11</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>Kir6.2*-GFP\u00a0+\u00a0SUR-K205A</td>\n      <td>I\u2062C50</td>\n      <td>\u22123.78 (166)</td>\n      <td>0.45</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>n\u00a0=\u00a09</td>\n      <td>h</td>\n      <td>0.75</td>\n      <td>0.30</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td></td>\n      <td>Im\u2062a\u2062x</td>\n      <td>1.00</td>\n      <td>0.29</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>Kir6.2*-GFP\u00a0+\u00a0SUR-K205E</td>\n      <td>I\u2062C50</td>\n      <td>\u22123.20 (631)</td>\n      <td>2.15</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>n\u00a0=\u00a09</td>\n      <td>h</td>\n      <td>0.79</td>\n      <td>0.84</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td></td>\n      <td>Im\u2062a\u2062x</td>\n      <td>1.00</td>\n      <td>1.77</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td>Fluorescence Quenching</td>\n    </tr>\n    <tr>\n      <td>TNP-ATP</td>\n      <td>Kir6.2*-GFP\u00a0+\u00a0SUR1</td>\n      <td>E\u2062C50</td>\n      <td>\u22124.11 (77.6)</td>\n      <td>0.09</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>n\u00a0=\u00a09</td>\n      <td>h</td>\n      <td>0.87</td>\n      <td>0.11</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td></td>\n      <td>Em\u2062a\u2062x</td>\n      <td>1.00</td>\n      <td>0.06</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>Kir6.2*,C166S-GFP\u00a0+\u00a0SUR1</td>\n      <td>E\u2062C50</td>\n      <td>\u22124.17 (67.6)</td>\n      <td>0.23</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>n\u00a0=\u00a06</td>\n      <td>h</td>\n      <td>0.84</td>\n      <td>0.27</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td></td>\n      <td>Em\u2062a\u2062x</td>\n      <td>1.00</td>\n      <td>0.14</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>Kir6.2*-GFP\u00a0+\u00a0SUR-K205A</td>\n      <td>E\u2062C50</td>\n      <td>\u22123.69 (204)</td>\n      <td>0.42</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>n\u00a0=\u00a09</td>\n      <td>h</td>\n      <td>0.73</td>\n      <td>0.25</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td></td>\n      <td>Em\u2062a\u2062x</td>\n      <td>1.00</td>\n      <td>0.27</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>Kir6.2*-GFP\u00a0+\u00a0SUR-K205E</td>\n      <td>E\u2062C50</td>\n      <td>\u22123.37 (427)</td>\n      <td>1.10</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>n\u00a0=\u00a09</td>\n      <td>h</td>\n      <td>0.74</td>\n      <td>0.47</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td></td>\n      <td>Em\u2062a\u2062x</td>\n      <td>1.00</td>\n      <td>0.79</td>\n    </tr>\n  </tbody>\n</table>\n\nOur simultaneous binding and current measurements were well fit with a Monod-Wyman-Changeux (MWC)-type model (Figure 2D,E; Monod et al., 1965) which has been previously proposed to explain KATP channel inhibition (Enkvetchakul and Nichols, 2003; Craig et al., 2008; Vedovato et al., 2015). In our MWC-type model, each ligand binding event ($K_{A}$) is independent and each bound ligand favours the closed state by the same factor ($D$). Simultaneous measurement of binding (fluorescence) and gating (current) allowed us to obtain well constrained fits to our model. To obtain free parameter ($L$, $K_{A}$, $D$) estimates and verify that each parameter was well and uniquely determined, we employed a Bayesian Markov chain Monte Carlo (MCMC) method previously employed by Hines et al. (2014). Using this approach, we constructed posterior probability distributions for the free parameters of our MWC-type model (Figure 2F, Table 3). Based on these distributions, we estimated $K_{A}=2.1\\times10^{4}M^{\u22121}$ ($K_{D}=47.9\\muM$), $L=0.09$ ($P_{o\u2062p\u2062e\u2062n}=0.08$), and $D=0.04$. The very low $D$ value indicates that nucleotide binding was tightly coupled to channel closure; that\u00a0is nucleotides have a very strong preference for the closed state of the channel. The low value for $D$ also explains why the channels were nearly completely inhibited at TNP-ATP concentrations at which not all the binding sites were occupied, as well as the degree to which channel inhibition is complete at saturating concentrations of TNP-ATP. Our estimate of $L$ was quite low and broadly distributed. We repeated our fits with $L$ fixed to a value consistent with previous single channel measurements (0.8, $P_{o\u2062p\u2062e\u2062n}=0.45$; John et al., 1998; Enkvetchakul et al., 2000; Ribalet et al., 2006). This had only a very small effect on our estimates of $D$ and $K_{A}$ (Figure 2\u2014figure supplement 1). The broad distribution of $L$ in our fit may represent current rundown which occurs during our patch-clamp recordings and is expected to affect the open-closed equilibrium. Cross-correlation plots (in parameter space) of the values derived from our fits produced well bounded ellipsoids, indicating that our parameters were uniquely determined (Figure 2\u2014figure supplement 1A).\n\n**Table 3.**\n Fitted parameters for the MWC-type models.$L$, $K_{A}$ and their associated quantiles are reported as $log_{10}$ values.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Full MWC</th>\n      <th></th>\n      <th></th>\n      <th></th>\n      <th></th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Construct</td>\n      <td>Term</td>\n      <td>Estimate</td>\n      <td>2.5% Quantile</td>\n      <td>97.5% Quantile</td>\n    </tr>\n    <tr>\n      <td>Kir6.2*-GFP\u00a0+\u00a0SUR1</td>\n      <td>L</td>\n      <td>\u22121.05</td>\n      <td>\u22121.85</td>\n      <td>\u22120.45</td>\n    </tr>\n    <tr>\n      <td>n = 9</td>\n      <td>D</td>\n      <td>0.04</td>\n      <td>0.00</td>\n      <td>0.19</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>KA</td>\n      <td>4.32</td>\n      <td>4.21</td>\n      <td>4.44</td>\n    </tr>\n    <tr>\n      <td>Kir6.2*,C166S-GFP\u00a0+\u00a0SUR1</td>\n      <td>L</td>\n      <td>0.29</td>\n      <td>\u22121.04</td>\n      <td>1.41</td>\n    </tr>\n    <tr>\n      <td>n = 6</td>\n      <td>D</td>\n      <td>0.84</td>\n      <td>0.52</td>\n      <td>0.95</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>KA</td>\n      <td>4.18</td>\n      <td>3.93</td>\n      <td>4.47</td>\n    </tr>\n    <tr>\n      <td>Kir6.2*-GFP\u00a0+\u00a0SUR-K205A</td>\n      <td>L</td>\n      <td>\u22120.37</td>\n      <td>\u22121.34</td>\n      <td>0.41</td>\n    </tr>\n    <tr>\n      <td>n = 9</td>\n      <td>D</td>\n      <td>0.55</td>\n      <td>0.39</td>\n      <td>0.65</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>KA</td>\n      <td>3.76</td>\n      <td>3.59</td>\n      <td>3.95</td>\n    </tr>\n    <tr>\n      <td>Kir6.2*-GFP\u00a0+\u00a0SUR-K205E</td>\n      <td>L</td>\n      <td>\u22120.18</td>\n      <td>\u22121.25</td>\n      <td>0.70</td>\n    </tr>\n    <tr>\n      <td>n = 9</td>\n      <td>D</td>\n      <td>0.62</td>\n      <td>0.42</td>\n      <td>0.74</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>KA</td>\n      <td>3.40</td>\n      <td>3.21</td>\n      <td>3.62</td>\n    </tr>\n    <tr>\n      <td>Single-site</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Kir6.2*-GFP\u00a0+\u00a0SUR1</td>\n      <td>L</td>\n      <td>\u22121.06</td>\n      <td>\u22121.84</td>\n      <td>\u22120.47</td>\n    </tr>\n    <tr>\n      <td>n = 9</td>\n      <td>D</td>\n      <td>0.05</td>\n      <td>0.01</td>\n      <td>0.10</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>KA</td>\n      <td>4.33</td>\n      <td>4.22</td>\n      <td>4.44</td>\n    </tr>\n    <tr>\n      <td>Kir6.2*,C166S-GFP\u00a0+\u00a0SUR1</td>\n      <td>L</td>\n      <td>0.09</td>\n      <td>\u22121.15</td>\n      <td>1.05</td>\n    </tr>\n    <tr>\n      <td>n = 6</td>\n      <td>D</td>\n      <td>0.70</td>\n      <td>0.29</td>\n      <td>0.91</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>KA</td>\n      <td>4.15</td>\n      <td>3.88</td>\n      <td>4.43</td>\n    </tr>\n    <tr>\n      <td>Kir6.2*-GFP\u00a0+\u00a0SUR-K205A</td>\n      <td>L</td>\n      <td>\u22120.25</td>\n      <td>\u22121.30</td>\n      <td>0.53</td>\n    </tr>\n    <tr>\n      <td>n = 9</td>\n      <td>D</td>\n      <td>0.18</td>\n      <td>0.06</td>\n      <td>0.32</td>\n    </tr>\n    <tr>\n      <td>KA</td>\n      <td>3.62</td>\n      <td>3.45</td>\n      <td>3.83</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Kir6.2*-GFP\u00a0+\u00a0SUR-K205E</td>\n      <td>L</td>\n      <td>\u22120.19</td>\n      <td>\u22121.19</td>\n      <td>0.52</td>\n    </tr>\n    <tr>\n      <td>n = 9</td>\n      <td>D</td>\n      <td>0.30</td>\n      <td>0.13</td>\n      <td>0.47</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>KA</td>\n      <td>3.31</td>\n      <td>3.13</td>\n      <td>3.50</td>\n    </tr>\n    <tr>\n      <td>Negative cooperativity</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Kir6.2*-GFP\u00a0+\u00a0SUR1</td>\n      <td>L</td>\n      <td>\u22120.42</td>\n      <td>\u22121.38</td>\n      <td>0.48</td>\n    </tr>\n    <tr>\n      <td>n = 9</td>\n      <td>D</td>\n      <td>0.15</td>\n      <td>0.02</td>\n      <td>0.29</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>KA</td>\n      <td>4.82</td>\n      <td>4.54</td>\n      <td>5.29</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>C</td>\n      <td>0.17</td>\n      <td>0.06</td>\n      <td>0.36</td>\n    </tr>\n    <tr>\n      <td>Kir6.2*,C166S-GFP\u00a0+\u00a0SUR1</td>\n      <td>L</td>\n      <td>0.32</td>\n      <td>\u22120.96</td>\n      <td>1.47</td>\n    </tr>\n    <tr>\n      <td>n = 6</td>\n      <td>D</td>\n      <td>0.83</td>\n      <td>0.50</td>\n      <td>0.94</td>\n    </tr>\n    <tr>\n      <td>KA</td>\n      <td>4.43</td>\n      <td>4.04</td>\n      <td>5.14</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>C</td>\n      <td>0.52</td>\n      <td>0.09</td>\n      <td>0.97</td>\n    </tr>\n    <tr>\n      <td>Kir6.2*-GFP\u00a0+\u00a0SUR-K205A</td>\n      <td>L</td>\n      <td>\u22120.16</td>\n      <td>\u22121.18</td>\n      <td>0.64</td>\n    </tr>\n    <tr>\n      <td>n = 9</td>\n      <td>D</td>\n      <td>0.52</td>\n      <td>0.32</td>\n      <td>0.64</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>KA</td>\n      <td>4.10</td>\n      <td>3.73</td>\n      <td>4.68</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>C</td>\n      <td>0.35</td>\n      <td>0.10</td>\n      <td>0.91</td>\n    </tr>\n    <tr>\n      <td>Kir6.2*-GFP\u00a0+\u00a0SUR-K205E</td>\n      <td>L</td>\n      <td>\u22121.11</td>\n      <td>0.99</td>\n    </tr>\n    <tr>\n      <td>n = 9</td>\n      <td>D</td>\n      <td>0.58</td>\n      <td>0.32</td>\n      <td>0.73</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>KA</td>\n      <td>3.71</td>\n      <td>3.34</td>\n      <td>4.41</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>C</td>\n      <td>0.45</td>\n      <td>0.10</td>\n      <td>0.96</td>\n    </tr>\n  </tbody>\n</table>\n\nIn addition to the full MWC-type model we considered alternate models (Figure 2\u2014figure supplement 2). These included a model in which only the first binding event influences the open-closed equilibrium of the channel (single-binding model; Figure 2\u2014figure supplement 2B, Table 3), and an MWC-style model with an additional parameter $C$ to allow for direct negative cooperativity between binding sites (negative cooperativity model; Figure 2\u2014figure supplement 2C, Table 3). The single-binding model yielded very similar parameter estimates to our full MWC-type model (Figure 2\u2014figure supplement 2D, Table 3). This is a consequence of $D$ being so low that even in the MWC-type model most channels are closed when only a single nucleotide is bound. The cooperative model improved our fits, but not enough to justify the inclusion of an additional free parameter (see Discussion).\n\n### Kir6.2-C166S affects the ability of bound nucleotides to close KATP\n\nTo provide a rigorous test as to whether our experimental system was capable of separating nucleotide binding from subsequent channel gating, we introduced a mutation (Kir6.2-C166S) which increases $P_{o\u2062p\u2062e\u2062n}$ of KATP and decreases sensitivity of the channel to inhibition by nucleotides (Trapp et al., 1998). C166 is located near the bundle-crossing gate of Kir6.2 (Figure 3A). Other mutations at this site cause neonatal diabetes (Flanagan et al., 2006; Gloyn et al., 2006).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/52775/elife-52775-fig3-v3.jpg)\n\n**Figure 3.:** (A) Cartoon (from PDB accession #6BAA) showing the location of Kir6.2-C166 (purple) relative to the inhibitory nucleotide binding site (TNP-ATP from PDB accession #5XW6 shown in red). W311 is shown as blue spheres. (B) Concentration dependence of TNP-ATP binding to unroofed membrane fragments expressing Kir6.2*,C166S-GFP + SUR1 shown in green, expressed as quenching of ANAP fluorescence. The Hill fits shown previously for Kir6.2*-GFP + SUR1 and Kir6.2*,G334D-GFP + SUR1 are shown in blue and orange dashed curves, respectively. Kir6.2*,C166S-GFP + SUR1: $EC_{50}=32.0\\muM$, $h=0.92$, $E_{m\u2062a\u2062x}=0.96$, n\u00a0=\u00a012. (C) Representative current and fluorescence traces recorded simultaneously from an excised patch expressing Kir6.2*,C166S-GFP + SUR1. Exposure to different concentrations of TNP-ATP are shown by colour. (D) Concentration-response (n\u00a0=\u00a06) for TNP-ATP inhibition of Kir6.2*,C166S-GFP + SUR1 currents ($I/I_{m\u2062a\u2062x}$) and for quenching of ANAP fluorescence ($F/F_{m\u2062a\u2062x}$). Data were fit with the MWC-type model. Solid curves represent the median fits and shaded areas indicate the 95% quantile intervals. Dashed curves represent the previous median fits of the MWC-type model to the Kir6.2*-GFP + SUR1 data from Figure 2D. Parameter estimates are reported in Table 3. The open data point represents current inhibition by $10\u2062mM$ ATP and was not included in the model fitting. (E) Posterior probability distributions for the full MWC-type model fit to Kir6.2*,C166S-GFP + SUR1 or Kir6.2*-GFP + SUR1 (data from Figure 2F) overlaid on the prior probability distribution.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/52775/elife-52775-fig3-figsupp1-v3.jpg)\n\n**Figure 3\u2014figure supplement 1.:** A. Representative current trace from an excised patch expressing Kir6.2*,C166S-GFP\u00a0+\u00a0SUR1 exposed to triethylamine (shown as shades of red) and $10\u2062mM$ ATP (shown in black). B. Concentration dependence of triethylamine inhibition for Kir6.2*-GFP\u00a0+\u00a0SUR1 (blue data points) or Kir6.2*,C166S-GFP\u00a0+\u00a0SUR1 (green data points) in excised patches. The solid curves are descriptive Hill fits to the data with $1-I_{m\u2062a\u2062x}$ set to 0. Kir6.2*-GFP + SUR1: $IC_{50}=63.1mM$, $h=0.87$, n\u00a0=\u00a03, Kir6.2*,C166S-GFP + SUR1: $IC_{50}=120mM$, $h=1.12$, n\u00a0=\u00a03. (C, D) Predictions of our full MWC-type model for a range of values of $L$ (C) or $D$ (D). Fluorescence quenching ($F/F_{m\u2062a\u2062x}$) is shown as solid curves and current inhibition ($I/I_{m\u2062a\u2062x}$) is shown as dashed curves. The blue curves represent values taken from the fit to Kir6.2*,C166S-GFP\u00a0+\u00a0SUR1 shown in Figure 3D rounded to the nearest significant figure. Notably, the model predicts that if nucleotide inhibition is shifted to the right of nucleotide binding, we should expect to see a current plateau proportional to the unliganded open probability of the channel.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/52775/elife-52775-fig3-figsupp2-v3.jpg)\n\n**Figure 3\u2014figure supplement 2.:** Fixing $L$ does not affect the other two parameters.(A) Pairwise correlation plots of $L$, $D$ and $K_{A}$ from the full MWC-type model fit to Kir6.2*-GFP + SUR1 and Kir6.2*,C166S-GFP + SUR1. (B) Pairwise correlation plots of $D$ and $K_{A}$ from the full MWC-type with $L$ fixed to 0.8 for Kir6.2*-GFP + SUR1 ($P_{o\u2062p\u2062e\u2062n}=0.45$) or 6.0 for Kir6.2*,C166S-GFP + SUR1 ($P_{o\u2062p\u2062e\u2062n}=0.86$).\n\nIn unroofed membranes, Kir6.2*,C166S-GFP + SUR1 bound TNP-ATP with an $E\u2062C_{50}$ very similar to that of Kir6.2*-GFP + SUR1 (Figure 3B, 32.0\u00a0\u00b5M and 25.6\u00a0\u00b5M, respectively), which suggests only a small change in apparent\u00a0nucleotide affinity. This is an unexpected finding, as one might expect that an increase in $P_{o\u2062p\u2062e\u2062n}$ would allosterically cause a decrease in the apparent affinity for inhibitory nucleotide binding. To resolve this conflict, we again turned to PCF (Figure 3C,D). Rundown was much slower for Kir6.2*,C166S-GFP + SUR1, which may reflect the increased $P_{o\u2062p\u2062e\u2062n}$ of this construct. Measuring current inhibition in combination with nucleotide binding confirmed that whereas the apparent nucleotide binding\u00a0affinity was unchanged by the C166S mutation, current inhibition occurred at much higher concentrations compared to binding and was incomplete (Figure 3D). How can we explain this paradox? Fits of the data with our MWC-type model (Figure 3D,E) suggest that, in addition to the expected effect on $L$, the C166S mutation profoundly affects the ability of bound ligand to stabilise the closed state of the channel ($D$) without affecting $K_{A}$ (Figure 3E, Table 3). We propose that, in addition to increasing the $P_{o\u2062p\u2062e\u2062n}$ of the channel, C166 is also important in the transduction pathway from the inhibitory nucleotide binding site on Kir6.2 to the channel gate.\n\nOur MWC-type model predicts a nucleotide-insensitive current plateau at high concentrations, with the height of the plateau at saturating nucleotide concentrations given by $\\frac{L\u22c5D^{4}}{1+L\u22c5D^{4}}$. For example, when $L\u22c5D^{4}=0.05$ we see a current plateau of just under 5%, and as $L\u22c5D^{4}$ increases (as we see with Kir6.2*,C166S-GFP + SUR1)\u00a0so does the plateau (Figure 3\u2014figure supplement 1C,D). We attempted to confirm the existence of a nucleotide-insentitive current plateau for Kir6.2*,C166S-GFP + SUR1 at high concentrations of TNP-ATP, but were unable to test inhibition at concentrations of over 1\u00a0mM as our stocks of TNP-ATP were prepared from triethylammonium salts. Triethylamine concentrations of over 1\u00a0mM inhibited KATP and influenced our results (Figure 3\u2014figure supplement 1A,B). However, we saw only partial inhibition of Kir6.2*,C166S-GFP + SUR1 by 10\u00a0mM ATP, which supports the existence of a nucleotide-insensitive current fraction at high concentrations. This observation has been previously reported for mutations at Kir6.2-C166 in some constructs (Trapp et al., 1998; Ribalet et al., 2006) but not others (Enkvetchakul et al., 2001).\n\n### Exploring the effect of SUR1 on nucleotide inhibition of KATP\n\nSUR1 plays a complex role in the regulation of Kir6.2. It increases the $P_{o\u2062p\u2062e\u2062n}$ of the channel and allows for the activation of the channel by Mg-nucleotides (Nichols et al., 1996; Tucker et al., 1997; Babenko and Bryan, 2003; Chan, 2003; Fang et al., 2006). However, it also increases the sensitivity of Kir6.2 to nucleotide inhibition (Babenko and Bryan, 2003; Chan, 2003; Fang et al., 2006). To understand the effect of SUR1 on nucleotide inhibition of KATP, we expressed Kir6.2*-GFP in the absence of SUR1 in unroofed membranes and measured TNP-ATP binding (Figure 4\u2014figure supplement 1A). We found only a small increase (approximately 1.5-fold) in apparent $E\u2062C_{50}$ compared to the same construct in the presence of SUR1 (37.6\u00a0\u00b5M and 25.6\u00a0\u00b5M respectively). Unfortunately, we were unable to achieve high enough expression of Kir6.2*-GFP alone to carry out PCF experiments in the absence of SUR1. However, we were able to measure currents from unlabelled Kir6.2-GFP alone (Figure 4\u2014figure supplement 1B). As expected Kir6.2-GFP alone was much less sensitive to inhibition by TNP-ATP than Kir6.2-GFP + SUR1.\n\nAs Kir6.2*-GFP expression in the absence of SUR1 was not sufficient for PCF recordings, we took a mutational approach to better understand the role of SUR1 in inhibitory nucleotide binding. SUR1-K205 is located in the L0 linker of SUR1, which connects the first set of transmembrane domains (TMD0) to the ABC core structure (Figure 1A, Figure 4A; Martin et al., 2017; Puljung, 2018). This loop is adjacent to the inhibitory nucleotide-binding site on Kir6.2 and the interface between neighbouring Kir6.2 subunits. Mutations at SUR1-K205 were previously shown to reduce sensitivity of KATP to nucleotide-dependent inhibition (Pratt et al., 2012; Ding et al., 2019), and a recent cryo-EM stucture suggests that SUR1-K205 may directly coordinate the phosphates of ATP bound to Kir6.2 (Ding et al., 2019). Other mutations in L0 are associated with neonatal diabetes (Ashcroft et al., 2017) and PHHI (Snider et al., 2013).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/52775/elife-52775-fig4-v3.jpg)\n\n**Figure 4.:** (A) Hydrophobic surface representation of Kir6.2 (yellow, PDB accession #6BAA) and SUR1 (blue, PDB accession #6PZI). Residue K205 on SUR1 is highlighted in pink. As this residue was built as an alanine in the structure, we used the mutagenesis tool in PyMol to insert the native lysine residue. A docked TNP-ATP molecule is shown in red. (B) Representative current and fluorescence traces acquired simultaneously from excised patches expressing Kir6.2*-GFP with SUR1-K205A or SUR1-K205E. (C,D) Concentration-response for TNP-ATP inhibition of currents ($I/I_{m\u2062a\u2062x}$) and for quenching of ANAP fluorescence ($F/F_{m\u2062a\u2062x}$) in excised inside-out membrane patches expressing Kir6.2*-GFP + SUR1-K205A (C, n\u00a0=\u00a09) or Kir6.2*-GFP + SUR1-K205E (D, n\u00a0=\u00a09). Data were fit to the MWC-type model. Solid curves represent the median fits and shaded areas indicate the 95% quantile intervals. Fits to Kir6.2*-GFP + wild-type SUR1 are shown as dashed curves. (E) Posterior probability distributions for the full MWC-type model fit to Kir6.2*-GFP co-expressed with wild-type SUR1 (fits from Figure 2), SUR1-K205A and SUR1-K205E overlaid on the prior probability distribution.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/52775/elife-52775-fig4-figsupp1-v3.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Concentration dependence of TNP-ATP binding to unroofed membrane fragments expressing Kir6.2*-GFP without SUR1 (brown), expressed as quenching of ANAP fluorescence. The smooth curve is a descriptive Hill fit. Kir6.2*-GFP (no SUR1): $EC_{50}=37.6\\muM$, $h=0.83$, $E_{m\u2062a\u2062x}=0.92$, n\u00a0=\u00a014. The Hill fit to Kir6.2*-GFP + SUR1 is shown as a blue dashed curve. (B) Concentration-response curve for TNP-ATP inhibition of Kir6.2-GFP (no ANAP label) with or without co-expression of SUR1, measured in excised, inside-out patches. Kir6.2-GFP + SUR1: $EC_{50}=1.17\\muM$, $h=1.14$, $E_{m\u2062a\u2062x}=0.97$, n\u00a0=\u00a07; Kir6.2-GFP (no SUR1): $EC_{50}=273\\muM$, $h=1.09$, $E_{m\u2062a\u2062x}=1.00$, n\u00a0=\u00a03.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/52775/elife-52775-fig4-figsupp2-v3.jpg)\n\n**Figure 4\u2014figure supplement 2.:** Fixing the $L$ parameter does not drastically affect the fits to the SUR1-K205A or SUR1-K205E data.(A) Pairwise correlation plots of $L$, $D$ and $K_{A}$ from the full MWC-type model fit to Kir6.2*-GFP co-expressed with wild-type SUR1, SUR1-K205A, and SUR1-K205E. (B) Pairwise correlation plots of $D$ and $K_{A}$ from the full MWC-type as above with $L$ fixed to 0.8 (Trapp et al., 1998).\n\n![Figure 4\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/52775/elife-52775-fig4-figsupp3-v3.jpg)\n\n**Figure 4\u2014figure supplement 3.:** Fits for each construct with each model (MWC-type, single-binding, negative-cooperativity) are displayed with the solid curve representing the median fit, the shaded area representing the 95% quantiles, and the dashed curve representing the median fit if the $L$ parameter is fixed (to 6.0 for Kir6.2*,C166S-GFP + SUR1 and to 0.8 for the other three constructs). As the two fits were very similar, the dashed curve mostly overlays the solid curve. The most notable differences between the fits are that the negative cooperativity model allows for non-sigmoidal curves, and the single-binding model predicts much larger plateaus of current at saturating concentrations of TNP-ATP than either of the other two models.\n\n![Figure 4\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/52775/elife-52775-fig4-figsupp4-v3.jpg)\n\n**Figure 4\u2014figure supplement 4.:** (A) We generated more informative priors (dashed lines) based on our posterior probability distributions for Kir6.2*-GFP + SUR1 (in grey) by fitting the posterior distribution for each parameter with a normal distribution. In addition to this narrow informative prior, we generated a broad informative prior still centered on the Kir6.2*-GFP + SUR1 posterior probability density by increasing the standard deviation of the fitted normal distribution by a factor of ten. (B) Fits to the PCF data for all constructs tested using either the neutral priors reported earlier (shown as dashed lines), or priors based on the fits to Kir6.2*-GFP\u00a0+\u00a0SUR with the solid curves representing the median fit and the shaded area representing the 95% quantiles. (C) The posterior probability distributions corresponding to the fits shown in B are shown for each parameter.\n\nWe introduced a charge neutralization (alanine, K205A) and a charge reversal (glutamate, K205E) mutation at this position and measured simultaneous nucleotide binding and current inhibition with PCF (Figure 4B,C,D). The binding and inhibition curves for TNP-ATP almost perfectly overlaid for the SUR1-K205A mutant (Figure 4C). The same was also true for SUR1-K205E (Figure 4D). Data were fit with the MWC-type model as before. Mutating K205 to an alanine or a glutamate resulted in an apparent decrease in nucleotide binding affinity (Figure 4C,D,E). This was reflected by a decrease in the estimated $K_{A}$ for TNP-ATP, which correlated with the degree of conservation of the mutation, that\u00a0is we observed a larger effect for the charge reversal compared to the charge neutralization mutation (Figure 4E). However, in addition to direct effects of K205 on nucleotide binding, we also observed a shift in $D$ for both mutations (Figure 4E). This suggests a dual role for SUR1 in KATP inhibition, both in contributing to nucleotide binding and in stabilising the nucleotide-bound closed state.\n\n## Discussion\n\nWe have developed a novel approach that allows for site-specific measurement of nucleotide binding to KATP and concomitant measurements of channel current. Performing these measurements simultaneously allowed us to examine nucleotide regulation of KATP function in great detail. We used a Bayesian approach to fit models to our combined fluorescence/current data sets to extract meaningful functional parameters with a minimum of prior assumptions. Such insights would not be possible from experiments in which macroscopic currents or binding were measured in isolation.\n\nPCF has been used successfully by other labs to simultaneously measure ligand binding and gating in HCN channels (Biskup et al., 2007; Kusch et al., 2010; Wu et al., 2011). These groups measured fluorescence from a cyclic nucleotide analogue that increased its quantum yield when bound, minimizing background fluorescence from unbound ligand. Additional background subtraction could be performed by imaging the patches using confocal microscopy such that a region corresponding to the patch membrane could be computationally selected, thus omitting background fluorescence from the surrounding solution (Biskup et al., 2007; Kusch et al., 2010). In our PCF experiments, we used a FRET-based approach to measure ligand binding. We acquired fluorescence emission spectra, such that donor fluorescence could be separated from acceptor fluorescence by wavelength. This allowed us to directly assess binding from the quenching of donor fluorescence, which was specific to KATP. FRET also provided the spatial sensitivity necessary to discriminate between nucleotide binding directly to Kir6.2 and to the nucleotide-binding sites of SUR1. We assume that any TNP-ATP bound non-specifically to our membranes would be too far from Kir6.2 to cause appreciable FRET. This assumption was confirmed by the lack of FRET between TNP-ATP and a Kir6.2*-GFP mutant (G334D), in which nucleotide binding was severely disrupted (Figure 1H).\n\nPrevious studies have suggested that KATP inhibition follows an MWC-type model (Trapp et al., 1998; Enkvetchakul and Nichols, 2003; Drain et al., 2004; Craig et al., 2008; Vedovato et al., 2015). The majority of this earlier work was performed using single-channel measurements of mutated and/or concatenated channel subunits. In this study, we confirm these results using minimally perturbed channels with nucleotide sensitivity similar to that of wild-type KATP (Figure 1\u2014figure supplement 2A). By using an MCMC approach to model fitting, we can also evaluate our models to assess how well the derived parameters were determined by the data. MCMC fits provide a basis for determining credible intervals for our parameter estimates. This allows for direct comparison of values derived from wild-type and different mutant constructs.\n\nAlthough we did not explicitly include the effects of PIP2 on KATP gating in our model formulations, we assumed that the effects of PIP2 on $P_{o\u2062p\u2062e\u2062n}$ were implicitly modelled in our parameter $L$; rundown due to dissociation of PIP2 manifests as a decrease in $L$ rather than a change in the number of channels. Although we were able to extract identifiable parameter estimates for $L$, $D$ and $K_{A}$, our estimates of $L$ for each model we considered were appreciably less well constrained than for the other parameters. We expect that this uncertainty arises from measuring a heterogeneous population of channels with regard to PIP2 binding. Fixing $L$ to values obtained from the literature (Figure 2\u2014figure supplement 1, Figure 3\u2014figure supplement 2, Figure 4\u2014figure supplement 2, Figure 4\u2014figure supplement 3) allowed us to extract estimates for $D$ and $K_{A}$ that were functionally identical to those derived from unconstrained fits, suggesting that the uncertainty of $L$ does not affect our inferences for these other parameters. Although the value for $L$ that we obtained from the literature for Kir6.2*-GFP + SUR1 (0.8) is on the extreme end of the posterior probability distribution for $L$ from our fits, we would not expect it to change our estimates of $K_{A}$ or $D$ as these values were stable over a broad range of values of $L$ (Figure 2\u2014figure supplement 1) for this construct. Therefore, PCF represents a robust means to compare $K_{A}$ and $D$ between different mutated KATP constructs without worrying about the confounding effects of rundown.\n\nPrevious studies suggest that, whereas KATP closure occurs via a concerted mechanism, individual nucleotide binding events at Kir6.2 are not equivalent (Markworth et al., 2000). Earlier attempts to determine the stoichiometry of inhibitory nucleotide binding to Kir6.2 (i.e. how many ATPs must bind to induce channel closure) have produced models ranging from those in which binding of a single nucleotide completely shuts KATP to an MWC-type model in which each binding event is independent and contributes equally to channel closure (Trapp et al., 1998; Markworth et al., 2000; Enkvetchakul and Nichols, 2003; Drain et al., 2004; Wang et al., 2007; Craig et al., 2008; Vedovato et al., 2015). To resolve this controversy, we fit our data with both single-binding and MWC-type models. At very low values for $D$, such as we derived from our experiments, the predictions of both models are functionally very similar. Even in our MWC-type model, we expect most KATP channels to be closed when just one molecule of nucleotide is bound.\n\nIt has been proposed that there is direct negative cooperativity between binding events at different subunits on Kir6.2 (Wang et al., 2007). We fit our data to an extended MWC-type model including an additional free parameter ($C$), representing negative binding cooperativity between subunits (Figure 2\u2014figure supplement 2). Not surprisingly this model improved the fit to our data as assessed by the Bayes factor, which represents the marginal likelihood of one model over another to explain our observations (Wagenmakers, 2007; Gronau et al., 2017). We also tested the cooperative model using approximate leave-one-out cross validation, which assesses the ability of a model to predict new or out-of-sample data using in-sample fits (Vehtari et al., 2017). Although in this work, we are primarily concerned with the inferences made from our fits, the ability of a model to make predictions is a good measure of its usefulness. Based on this criterion, the cooperative model has no more predictive accuracy than either the MWC-type model or the single-binding model. Therefore, the inclusion of an additional free parameter is not justified. Furthermore, whereas the cooperative model yielded good fits with identifiable parameters for Kir6.2*-GFP + SUR1 channels, it failed to yield identifiable parameters for all the mutants considered. Thus, this model did not allow for direct comparison between constructs. However, it remains a possibility that these mutations function in part by abolishing binding cooperativity between subunits.\n\nWe performed all our experiments on mutated, tagged channels using a fluorescent derivative of ATP. This allowed us to fit mechanistic models and readily compare between mutated constructs that affect nucleotide inhibition of KATP. This raises an obvious question: how relevant are our findings to inhibition of wild-type KATP by ATP? In a previous paper, we estimated $D$ and $K_{A}$ from an MWC-type model based on fits to published data for ATP inhibition of wild-type Kir6.2 + SUR1 (Proks et al., 2010; Vedovato et al., 2015). The value we obtained for $D$ (0.03) was quite similar to that we report here from our PCF measurements (0.04). We also obtained a similar estimate for $K_{A}$ in our previous model (3.0\u00a0\u00d7\u00a0104\u00a0M-1 vs 2.1\u00a0\u00d7\u00a0104\u00a0M-1 from our PCF experiments). Despite obtaining similar parameters, past experiments in which only ionic currents were measured, did not allow us to distinguish between competing gating models. Measuring currents and fluorescence simultaneously allowed for better model selection and aided in our ability to identify constrained parameters.\n\nWe compared the parameters derived for inhibitory nucleotide binding to those estimated for nucleotide activation of KATP based on experiments in which currents and binding were measured in separate preparations (Puljung et al., 2019). In those experiments, we estimated a value for $E$, the factor by which binding of MgTNP-ADP to SUR1 stabilied channel opening, of 2.2. Although this value was derived using a different nucleotide, it still provides an approximate basis for comparing the coupling of nucleotide stimulation through SUR1 to nucleotide inhibition via binding to Kir6.2. If both activation and inhibition proceed via MWC-type models, the open closed equilibrium at saturating nucleotide concentrations is given by $L$ multiplied by $E^{4}$ or $D^{4}$, respectively. The degree of stabiliation of the open state of KATP can be calculated as $-R\u2062T\u2062ln\u2061E^{4}$ for activation. Stabiliation of the closed state is given by $-R\u2062T\u2062ln\u2061D^{4}$. Based on our observations, saturating concentrations of MgTNP-ADP stabilied the open state by \u22121.9\u00a0kcal\u00a0mol-1 (\u22127.9\u00a0kJ\u00a0mol-1). At saturating concentrations, TNP-ATP stabilied the closed state of KATP by \u22127.9\u00a0kcal\u00a0mol-1 (31.8\u00a0kJ\u00a0mol-1). Thus, assuming excitatory and inhibitory processes are independent, inhibition would be expected to dominate under conditions at which all the nucleotide binding sites are occupied. This is consistent with published measurements of wild-type KATP in the presence of Mg2+(Proks et al., 2010). In our previous study, we estimated $K_{A}$ for MgTNP-ADP binding to the stimulatory second nucleotide binding site of SUR1 to be 5.8\u00a0\u00d7\u00a0104\u00a0M-1\u00a0($K_{D}=17\\muM$), higher affinity than the $K_{A}$ we report here for TNP-ATP binding to the inhibitory site on Kir6.2 (2.1\u00a0\u00d7\u00a0104\u00a0M-1, $K_{D}=48\\muM$). Higher affinity binding to the stimulatory site may explain the ability of MgADP to increase KATP currents in the presence of ATP (Gribble et al., 1998). This phenomenon may also explain the bell-shaped MgADP concentration-response curve for KATP, which shows an increase in current at low concentrations, followed by inhibition at higher concentrations (Proks et al., 2010; Vedovato et al., 2015). Future experiments in which activation and inhibition are measured by PCF for the same ligand will allow us to model the complex response of KATP under conditions where all three nucleotide binding sites simultaneously affect channel gating (i.e. in the presence of Mg2+).\n\nMutations that cause neonatal diabetes reduce the sensitivity of KATP to nucleotide inhibition, and reduction in nucleotide sensitivity is broadly correlated with disease severity (McTaggart et al., 2010). We studied two residues on Kir6.2 that have been implicated in diabetes and have been proposed to affect nucleotide sensitivity via different mechanisms. We find that G334D drastically reduced the apparent affinity for nucleotide binding to KATP in unroofed membranes. In our MWC-type models, this could only be explained by a dramatic decrease in $K_{A}$. This corroborates earlier hypotheses that mutating G334 directly disrupts inhibitory nucleotide binding to Kir6.2 (Drain et al., 1998). Due to poor expression, we were unable to test this construct using PCF. Therefore, we could not obtain accurate estimates of $K_{A}$ and $D$.\n\nIn contrast to G334D, the C166S mutation does not directly affect nucleotide binding to Kir6.2, but rather disrupts the ability of bound nucleotide to close the channel. This contributes to the decreased nucleotide sensitivity which was previously attributed solely to an increased $P_{o\u2062p\u2062e\u2062n}$. In the future, we hope to use this rigorous approach to assess a whole panel of neonatal diabetes mutations in Kir6.2 to better understand the mechanism by which they cause disease.\n\nUsing PCF allowed us to probe more deeply into the role of SUR1 in regulating nucleotide inhibition of KATP. The cytoplasmic L0 loop of SUR1 was previously implicated in modulation of $P_{o\u2062p\u2062e\u2062n}$ and nucleotide sensitivity of Kir6.2 (Babenko and Bryan, 2003; Chan, 2003; Pratt et al., 2012). We find that, in addition to directly contributing to tighter nucleotide binding at Kir6.2, SUR1 plays a critical role in preferentially stabilising the closed state of the channel when nucleotides are bound. Whereas a single nucleotide-binding event is sufficient for channel closure when Kir6.2 is associated with wild-type SUR1, mutating residue K205 reduced the ability of a single nucleotide to close the channel. This difference manifests in both our MWC-type and single-binding models (Figure 4\u2014figure supplement 3\u00a0and\u00a0Table 3).\n\nIn addition to providing mechanistic insights into disease-associated mutations in Kir6.2, our PCF-based approach allows us to probe the interactions between Kir6.2 and SUR1 on two different levels. As we show here, we can use this method to examine the effects of SUR1 on inhibitory nucleotide binding to Kir6.2. We can also adapt this method to study activation of Kir6.2 by nucleotides bound to the stimulatory sites on SUR1. Mutations in SUR1 that cause neonatal diabetes may do so by disrupting inhibitory binding/gating or enhancing the stimulatory effects of nucleotides. The formalism developed in this study provides a rigorous way to mechanistically assess the effects of these mutations. Our approach should be readily adaptable to the study of other nucleotide-gated channels including the cystic fibrosis transmembrane conductance regulator (CFTR, also an ABC-family protein) and purinergic P2X receptors.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Cell line</td>\n      <td>HEK-293T (H. sapiens)</td>\n      <td>LGC Standards (ATCC CRL-3216)</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Transfected construct (Escherichia. coli)</td>\n      <td>pANAP</td>\n      <td>Addgene</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Transfected construct</td>\n      <td>pcDNA4/TO</td>\n      <td>Addgene</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Transfected construct (Aequorea victoria)</td>\n      <td>pCGFP_EU</td>\n      <td>Gouaux Laboratory (Vollum Institute, Portland OR USA)</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Transfected construct (Homo sapiens)</td>\n      <td>peRF1-E55D</td>\n      <td>Chin Laboratory (MRC Laboratory of Molecular Biology, Cambridge UK)</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-HA High Affinity; Rat monoclonal antibody (clone 3F10)</td>\n      <td>Roche</td>\n      <td>(Roche Cat# 11867423001, RRID:AB_10094468)</td>\n      <td>(1:1000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Peroxidase-AffiniPure Goat Anti-Rat IgG (H + L) antibody</td>\n      <td>Jackson ImmunoResearch Labs</td>\n      <td>(Jackson ImmunoResearch Labs Cat# 112-035-003, RRID:AB_2338128)</td>\n      <td>Western blots: (1:20,000) Surface expression: (1:2000)</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>trinitrophenyl-ATP (TNP-ATP)</td>\n      <td>Jena Bioscience (Jena, Germany)</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>L-3-(6-acetylnaphthalen-2-ylamino)\u22122-aminopropionic acid</td>\n      <td>Asis Chemicals (Waltham, MA)</td>\n      <td></td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### Molecular biology\n\nHuman Kir6.2 and SUR1 were subcloned into pcDNA4/TO and pCGFP_EU vectors for expression of wild-type and GFP-tagged constructs, respectively. pcDNA4/TO and pANAP were obtained from Addgene. peRF1-E55D and pCGFP_EU were kind gifts from the Chin Laboratory (MRC Laboratory of Molecular Biology, Cambridge, UK) and the Gouaux Laboratory (Vollum Institute, Oregon, USA) respectively. Amber stop codons and point mutations were introduced using the QuikChange XL system (Stratagene; San Diego, CA). All constructs were confirmed by DNA sequencing (DNA Sequencing and Services, University of Dundee, Scotland).\n\n### Cell culture and channel expression\n\nHEK-293T cells were obtained from and verified/tested for mycoplasma by LGC standards (ATTC CRL-3216, Middlesex, UK). Our working stock tested negative for mycoplasma contamination using the MycoAlert Mycoplasma Detection Kit (Lonza Bioscience; Burton on Trent, UK). Cells were plated onto either poly-L-lysine coated borosilicate glass coverslips (VWR International; Radnor, PA) or poly-D-lysine coated glass-bottomed FluoroDishes (FD35-PDL-100, World Precision Instruments). ANAP-tagged Kir6.2 constructs were labelled using amber stop codon suppression as described by Chatterjee et al. (2013). Transfections were carried out 24 hr after plating using TransIT-LT1 (Mirus Bio LLC; Madison, WI) at a ratio of 3\u00a0\u00b5l per \u00b5g of DNA. Unless specified otherwise, all transfections included a Kir6.2 construct with an amber stop codon (TAG) at position 311 (Kir6.2-W311TAG), SUR1, pANAP and eRF1-E55D in the ratio 0.5:1.5:1:1. Transfected cells were cultured in Dulbecco\u2019s Modified Eagle Medium (Sigma; St. Louis, MO) + 10% foetal bovine serum, 100\u00a0U\u00a0ml-1 penicillin and 100\u00a0\u00b5g\u00a0ml-1 streptomycin (Thermo Fisher Scientific; Waltham, MA) supplemented with 20 \u03bcM ANAP (free acid, AsisChem; Waltham, MA). Cells were incubated at 33\u00a0\u00b0C and in the presence of\u00a0300\u00a0\u00b5M tolbutamide to enhance protein expression and channel trafficking to the plasma membrane (Yan et al., 2007; Lin et al., 2015). eRF1-E55D was included to increase efficiency of ANAP incorporation (Schmied et al., 2014). Experiments were carried out 2\u20134 days after transfection. We also expressed constructs labelled with ANAP at positions I182, F183, F198, and I210. Kir6.2-F183*, Kir6.2-F198*, and Kir6.2-I210* co-expressed with SUR1 did not produce sufficient currents for subsequent experimentation. Mutations at I182 are known to produce profound effects on nucleotide inhibition of KATP\u00a0(Li et al., 2000). Thus, we did not consider this site for further experimentation.\n\n### Western blots\n\nTo confirm our ability to express full-length Kir6.2*-GFP, we performed western blots for HA-tagged Kir6.2 constructs in detergent-solubilized HEK-293T cells (Figure 1\u2014figure supplement 1C). The HA tag plus a short linker (YAYMEKGITDLAYPYDVPDY) was inserted in the extracellular region following helix M1 of Kir6.2 between L100 and A101. Transfected HEK-293T cells grown in 6-well plates were harvested in cold PBS (Life Technologies Limited; Paisley, UK), pelleted at 0.2 x g for 2.5 min and resuspended in lysis buffer containing 0.5% Triton X-100, 100\u00a0mM potassium acetate, and a cOmplete protease inhibitor tablet (one tablet/50\u00a0ml, Roche; Basel, Switzerland), buffered to pH 7.4. After a 30 min benzonase (Sigma) treatment at room temperature, samples were mixed with a DTT containing reducing agent and loading buffer (NuPAGE, Invitrogen; Carlsbad, CA) and run on a precast Bis-Tris 4\u201312% poly-acrylamide gel at 200\u00a0V for 40 min. Proteins were wet transferred overnight onto polyvinylidene difluoride (PVDF) membranes (Immobilon P, Merck Millipore; Burlington, VT) in 25\u00a0mM Tris, 192\u00a0mM glycine, 20% methanol, and 0.1% SDS at 10\u00a0V on ice. Membranes were blocked with 5% milk in TBS-Tw (150\u00a0mM NaCl, 0.05% Tween 20, 25\u00a0mM Tris, pH 7.2) before staining for 30 min with a 1:1000 dilution of rat anti-HA monoclonal antibody in TBS-Tw (clone 3F10, Roche). After washing with TBS-Tw, membranes were incubated for 30 min with a 1:20,000 dilution of HRP-conjugated goat anti-rat polyclonal antibodies in TBS-Tw (Jackson ImmunoResearch; Ely, UK). Detection was performed using the SuperSignal West Pico Chemiluminescent Substrate (Thermo Fisher) and a C-DiGit Blot Scanner (Licor Biosciences; Lincoln, NE). Analysis was performed using custom code written in Python.\n\nTransfection of wild-type Kir6.2-HA or Kir6.2-HA-GFP resulted in two bands on the western blots. The upper bands were close to the expected sizes for full-length Kir6.2-HA and Kir6.2-HA-GFP (46\u00a0kDa and 77kDa, respectively).\u00a0We consistently observed a lower molecular weight band as well. This band must correspond to an N-terminally truncated Kir6.2 product, as the apparent molecular weight shifted with addition of the C-terminal GFP tag. Based on the molecular weight, we predict that the truncated protein product initiated from a start codon in the first transmembrane domain. Therefore, we believe it is unlikely that this protein would form functional channels or traffic to the plasma membrane. When Kir6.2-W311TAG-HA or Kir6.2-W311TAG-HA-GFP were co-transfected with SUR1, pANAP, and eRF1-E55D, and cells were cultured in the presence of ANAP, the western blots were similar to wild-type Kir6.2-HA or Kir6.2-HA-GFP. Over 90% full-length Kir6.2*-HA-GFP was produced under these conditions (Figure 1\u2014figure supplement 1D). We were unable to quantify the percentage of full-length Kir6.2*-HA produced as the C-terminally truncated band resulting from termination at the TAG codon was very similar in size to the N-terminally truncated band. Co-expression with SUR1 increased the percentage of full-length Kir6.2*-HA-GFP produced (Figure 1\u2014figure supplement 1D). In the absence of ANAP, we did not observe any full-length Kir6.2, indicating that there was no read-through of the amber (TAG) stop codon (Figure 1\u2014figure supplement 1D).\n\n### Confocal microscopy\n\nConfocal imaging was performed using a spinning-disk system (Ultra-VIEW VoX, PerkinElmer; Waltham, MA) mounted on an IX81 microscope (Olympus; Southend-on-Sea, UK) with a Plan Apo 60x oil immersion objective (NA\u00a0=\u00a01.4), provided by the Micron Advanced Bioimaging Unit, Oxford. Transfected HEK-293T cells were incubated for 15 min with 1\u00a0nM CellMask Deep Red (Thermo Fisher) to stain plasma membranes before washing with PBS and imaging. ANAP was excited with a solid-state laser at 405\u00a0nm. GFP and CellMask were excited with an argon laser at 488\u00a0nm and 633\u00a0nm respectively. Images were captured on an EMCCD camera (ImagEM; Hamamatsu Photonics; Welwyn Garden City, UK) binned at 2 \u00d7 2 pixels and analysed using Python. A median filter with a box size of 32 \u00d7 32 pixels was applied to improve the signal-to-noise ratio by reducing background fluorescence.\n\nWe examined the surface expression of our ANAP-labelled constructs using confocal microscopy (Figure 1\u2014figure supplement 1A,B). When Kir6.2-W311TAG-GFP was co-transfected with SUR1 along with pANAP and eRF1-E55D in the presence of ANAP, the ANAP and GFP fluorescence were co-localized at the plasma membrane. When wild-type Kir6.2-GFP was transfected under the same conditions, only GFP fluorescence was observed at the plasma membrane. ANAP fluorescence was diffuse and confined to the cytoplasm or intracellular structures. Thus, the plasma-membrane ANAP signal was specific for Kir6.2*-GFP.\n\n### Surface expression assays\n\nWe measured surface expression of HA-tagged Kir6.2 subunits using an approach outlined by Zerangue et al. (1999)\u00a0( Puljung et al., 2019). Cells were plated on 19\u00a0mm coverslips coated with poly-L-lysine and transfected as described above. Following incubation, cells were rinsed with PBS before fixation with 10% formalin for 30 min at room temperature. After washing again, cells were blocked with 1% BSA in PBS for 30 min at 4\u00a0\u00b0C before a 1 hr incubation at 4\u00a0\u00b0C with a 1:1000 dilution (in PBS) of rat anti-HA monoclonal antibodies. Cells were then washed 5 times on ice with 1% BSA in PBS followed by a 30 min incubation at 4\u00a0\u00b0C with a 1:2000 dilution of HRP-conjugated goat anti-rat polyclonal antibodies. Cells were washed 5 times in PBS + 1% BSA and 4 times in PBS. Coverslips were removed from the culture dishes and placed in clean, untreated dishes for measurement. 300\u00a0\u00b5l of SuperSignal ELISA Femto Maximum Sensitivity Substrate (Thermo Fisher) was added to each sample and the luminescence was measured using a Glomax 20/20 Luminometer (Promega; Madison, WI) after a 10 s incubation.\n\nHEK-293T cells were transfected with Kir6.2 constructs with or without a TAG stop codon corresponding to position 311. Cells were co-transfected with pANAP and eRF1-E55D in the presence or absence of SUR1 and cultured with or without ANAP. Wild-type Kir6.2-HA and Kir6.2-HA-GFP in the presence of SUR1 were included as positive controls. Kir6.2 constructs with no HA tag served as negative controls. In the presence of ANAP, we observed strong trafficking of Kir6.2*-HA-GFP to the plasma membrane, but much less trafficking of Kir6.2*-HA (Figure 1\u2014figure supplement 1E). When cells were cultured in the absence of ANAP, we observed little to no Kir6.2 surface expression from cells that were transfected with Kir6.2-W311TAG-HA or Kir6.2-W311TAG-HA-GFP, suggesting that prematurely truncated constructs did not traffic to the plasma membrane. In the absence of SUR1, surface expression was weak for both wild-type and tagged constructs, despite the reported ability of Kir6.2-GFP to traffic to the plasma membrane in the absence of SUR1 (John et al., 1998; Makhina and Nichols, 1998).\n\n### Epifluorescence imaging and spectroscopy\n\nEpifluorescence imaging and spectroscopy were performed using a Nikon Eclipse TE2000-U microscope with a 60x water immersion objective (Plan Apo VC, NA\u00a0=\u00a01.2, Nikon; Kingston upon Thames, UK) or a 100x oil immersion objective (Nikon, Apo TIRF, NA\u00a0=\u00a01.49). Imaging of ANAP was performed using a 385\u00a0nm LED source (ThorLabs; Newton, NJ) with a 390/18\u00a0nm band-pass excitation filter, an MD416 dichroic and a 479/40\u00a0nm band-pass emission filter (all from ThorLabs). GFP was imaged using a 490\u00a0nm LED source (ThorLabs) with a 480/40\u00a0nm band-pass excitation filter, a DM505 dichroic, and a\u00a0510\u00a0nm long-pass emission filter (all from Chroma; Bellows Falls, VT). Fluorescence spectra were collected by exciting ANAP as above but using a 400\u00a0nm long-pass emission filter (ThorLabs), then passing emitted light through an IsoPlane 160 Spectrometer (Princeton Instruments; Trenton, NJ) with a\u00a0300 grooves mm-1 grating. Images were collected with 1\u00a0s exposures on a Pixis 400BR_eXcelon CCD (Princeton Instruments).\n\n### Electrophysiology\n\nPatch pipettes were pulled from thick-walled borosilicate glass capillaries (GC150F-15, Harvard Apparatus; Holliston, MA) to a resistance of 1.5 M\u03a9 to 2.5 M\u03a9 when filled with pipette solution. Currents were recorded at \u221260\u00a0mV from excised inside-out patches using an Axopatch 200B amplifier equipped with a Digidata 1322A digitizer and using pClamp 10 software (Molecular Devices; San Jose, CA). Currents were low-pass filtered at 5\u00a0kHz and digitized at 20\u00a0kHz. The bath solution (intracellular) contained 140\u00a0mM KCl, 10\u00a0mM HEPES, 1\u00a0mM EDTA and 1\u00a0mM EGTA (pH 7.3 with KOH). The pipette solution (extracellular) contained 140\u00a0mM KCl, 10\u00a0mM HEPES and 1\u00a0mM EDTA (pH 7.4 with KOH). All experiments were carried out in Mg2+-free conditions. Currents were leak corrected using the current remaining in bath solution containing 5\u00a0mM barium acetate at 60\u00a0mV, assuming a linear leak with a reversal potential of 0\u00a0mV. Inhibition was calculated and corrected for rundown by alternating test concentrations of nucleotide solution with nucleotide-free solution, then expressing the test currents as a fraction of the average of the control currents before and after the test solution as described previously (Proks et al., 2010).\n\n### FRET calculations\n\nWe calculated the expected FRET efficiency between ANAP incorporated at amino acid position 311 and a docked TNP-ATP molecule as described previously (Puljung et al., 2019). The equivalency between FRET efficiency (measured as ANAP quenching) and nucleotide binding is based on two main assumptions. Firstly, we assume that the observed quenching from a bound nucleotide does not differ dramatically between open and closed states of the channel. As there is no open-state structure of KATP, we do not know exactly how much relative movement would occur between a bound TNP-ATP and Kir6.2-W311. However, based on cryo-EM structures of apo and nucleotide-bound Kir6.2 we do not expect to see a change in the distance between these two positions (Martin et al., 2019).\n\nSecondly, we assume that the ANAP and TNP-ATP molecules on each subunit do not undergo energy transfer with those on other subunits to an extent which would dramatically change the observed quenching. At saturating TNP-ATP concentrations, where each ANAP-labelled site on Kir6.2 is occupied, FRET between ANAP and the closest acceptor will be kinetically favoured and the overall FRET efficiency will not be affected by cross-talk between neighbouring sites (Corry et al., 2005). In the limiting case, at low TNP-ATP concentrations, one would expect a large proportion of Kir6.2 tetramers (with four ANAP-labelled binding sites) bound to only a single TNP-ATP molecule. In this case, we expect a 4% overestimation of nucleotide binding as calculated using a numerical method to simulate a single TNP-ATP acceptor with multiple ANAP donors based on the distances calculated from our docking (Figure 1C; Deplazes et al., 2012). This may have resulted in our binding curves becoming artifically shallow at low concentrations. However, this difference is not significant in the context of our measurements as it is smaller than the observed error of our measurements at low TNP-ATP concentrations.\n\n### Unroofed binding measurements\n\nUnroofed membranes were prepared as described previously (Heuser, 2000; Zagotta et al., 2016; Puljung et al., 2019). A coverslip plated with transfected HEK-293T cells was removed from the culture media and rinsed with PBS. The coverslip was then briefly sonicated using a probe sonicator (Vibra-cell; Newtown, CT) leaving behind adherent plasma membrane fragments. Cells cultured on FluoroDishes were rinsed and sonicated directly in the dish. Unroofed membrane fragments were nearly invisible in bright-field images and identified by their GFP and ANAP fluorescence. Fluorescent TNP-nucleotides (Jena Bioscience; Jena, Germany) were diluted in bath solution and perfused onto unroofed membranes using a valve- controlled microvolume superfusion system (\u00b5Flow, ALA Scientific Instruments; Farmingdale, NY).\n\nFluorescence spectra were collected as described above. A region of interest corresponding to the membrane fragment was manually selected and line-averaged for each wavelength. A similarly sized region of background was selected and averaged, then subtracted from the spectrum of interest. After subtraction, ANAP intensity was calculated by averaging the fluorescence intensity measured between 469.5\u00a0nm and 474.5\u00a0nm. Bleaching was corrected by fitting the normalised ANAP intensity of exposures taken during perfusion with nucleotide-free solution to a single exponential decay of the form\n\n$$\n\\frac{F}{F_{m\u2062a\u2062x}}=a\u2062e^{k\u2062t}+(1-a)\n$$\n\nthen using the fit to correct the intensity of exposures taken during perfusion with test nucleotide solutions.\n\nSome experiments were excluded from further analysis due to obvious cross-contamination between different solutions within the \u00b5Flow superfusion system. These were identified by noticeable colour changes in the solution in the delivery tubes.\n\n### Patch-clamp fluorometry\n\nThe tip of the patch pipette was centred on the slit of the spectrometer immediately after patch excision. Currents were measured as described above. Fluorescence emission spectra from the excised patch were acquired concurrently with current measurements, both during test solution application as well as nucleotide-free solution. Background subtraction was slightly imperfect due to the exclusion of TNP-ATP from the\u00a0volume of the glass of the pipette, resulting in spectra that have negative intensities at the TNP-ATP peak at high nucleotide concentrations. However, this over-subtraction does not affect the size of the ANAP peak, which we used to quantify nucleotide binding.\n\nANAP bleaching was corrected as for the unroofed binding experiments with Equation 1 (Figure 2\u2014figure supplement 3A). Due to the lower signal-to-noise ratio for PCF compared to the unroofed membranes, we performed experiments from both high-to-low and low-to-high TNP-ATP concentrations to minimise artifacts from our bleaching corrections. Kir6.2*-GFP + SUR1 showed consistent bleaching time courses (Figure 2\u2014figure supplement 3B) and an average of 34% of the initial ANAP fluorescence intensity remained at the end of each experiment (Figure 2\u2014figure supplement 3C).\n\nSome experiments were excluded from further analysis due to low fluorescence intensity, as we were concerned about a low signal to noise ratio influencing our results.\n\n### Data processing and presentation\n\nRaw spectrographic images and current traces were pre-processed in Python and Clampfit (Axon) before analysis with R (R Development Core Team, 2019). Where applicable, all experimental data points are displayed in each figure. The number of experiments is reported in the figure legends and tables. To help visualise uncertainty and prevent some data points being hidden, points are arranged with a small amount of horizontal jitter; vertical position remains unaffected. Unless otherwise stated, summary statistics are overlaid as the mean with error bars representing the standard error of the mean. Where these error bars are not visible, they are smaller than the size of the point used for the mean.\n\nHill fits to fluorescence quenching were nonlinear least-squares fits to the following equation:\n\n$$\n\\frac{y}{y_{m\u2062a\u2062x}}=E_{m\u2062a\u2062x}+\\frac{1-E_{m\u2062a\u2062x}}{1+10^{(E\u2062C_{50}-[T\u2062N\u2062P\u2062A\u2062T\u2062P])\u22c5h}}\n$$\n\nwhere $y$ represents normalised fluorescence intensity and $E\u2062C_{50}$ and $[T\u2062N\u2062P\u2062A\u2062T\u2062P]$ are $log_{10}$ values. Current inhibition data were fit to the same equation but with $y$ representing normalised current magnitude, $I\u2062C_{50}$ instead of $E\u2062C_{50}$, and $I_{m\u2062a\u2062x}$ instead of $E_{m\u2062a\u2062x}$.\n\n### Bayesian model fitting\n\nThe MWC-type models considered (Figure 2 and Figure 2\u2014figure supplement 2) were formulated as follows:\n\n$$\n\\frac{F}{F_{m\u2062a\u2062x}}=\\frac{K_{A}\u2062[T\u2062N\u2062P\u2062A\u2062T\u2062P]\u2062(1+K_{A}\u2062[T\u2062N\u2062P\u2062A\u2062T\u2062P])^{3}+L\u2062D\u2062K_{A}\u2062[T\u2062N\u2062P\u2062A\u2062T\u2062P]\u2062(1+D\u2062K_{A}\u2062[T\u2062N\u2062P\u2062A\u2062T\u2062P])^{3}}{(1+K_{A}\u2062[T\u2062N\u2062P\u2062A\u2062T\u2062P])^{4}+L\u2062(1+D\u2062K_{A}\u2062[T\u2062N\u2062P\u2062A\u2062T\u2062P])^{4}}\n$$\n\n\n\n$$\n\\frac{open channels}{total channels}=\\frac{L\u2062(1+D\u2062K_{A}\u2062[T\u2062N\u2062P\u2062A\u2062T\u2062P])^{4}}{(1+K_{A}\u2062[T\u2062N\u2062P\u2062A\u2062T\u2062P])^{4}+L\u2062(1+D\u2062K_{A}\u2062[T\u2062N\u2062P\u2062A\u2062T\u2062P])^{4}}\n$$\n\nWhen no ligand is present (i.e. when $[T\u2062N\u2062P\u2062A\u2062T\u2062P]=0$), Equation 4 becomes:\n\n$$\n\\frac{open channels}{total channels}=\\frac{L}{1+L}\n$$\n\nWe can use this to normalise the predicted changes in the open fraction to an observed change in current as:\n\n$$\n\\frac{I}{I_{m\u2062a\u2062x}}=\\frac{L\u2062(1+D\u2062K_{A}\u2062[T\u2062N\u2062P\u2062A\u2062T\u2062P])^{4}}{(1+K_{A}\u2062[T\u2062N\u2062P\u2062A\u2062T\u2062P])^{4}+L\u2062(1+D\u2062K_{A}\u2062[T\u2062N\u2062P\u2062A\u2062T\u2062P])^{4}}\u22c5\\frac{1+L}{L}\n$$\n\nTwo variations on the full MWC model were also considered, and diagrammatic formulations are shown in Figure 2\u2014figure supplement 2. The first was similar to the MWC-type model, except that the channels close after one molecule of TNP-ATP binding with subsequent binding events having no effect.\n\n$$\n\\frac{F}{F_{max}}=\\frac{LDK_{A}[TNPATP](1+3K_{A}[TNPATP]+3K_{A}^{2}[TNPATP]^{2}+K_{A}^{3}[TNPATP]^{3})+K_{A}[TNPATP](1+K_{A}[TNPATP])^{3}}{L(1+4DK_{A}[TNPATP]+6DK_{A}^{2}[TNPATP]^{2}+4DK_{A}^{3}[TNPATP]^{3}+DK_{A}^{4}[TNPATP]^{4})+(1+K_{A}[TNPATP])^{4}}\n$$\n\n\n\n$$\n\\frac{I}{I_{max}}=\\frac{L(1+4DK_{A}[TNPATP]+6DK_{A}^{2}[TNPATP]^{2}+4DK_{A}^{3}[TNPATP]^{3}+DK_{A}^{4}[TNPATP]^{4})}{L(1+4DK_{A}[TNPATP]+6DK_{A}^{2}[TNPATP]^{2}+4DK_{A}^{3}[TNPATP]^{3}+DK_{A}^{4}[TNPATP]^{4})+(1+K_{A}[TNPATP])^{4}}\u22c5\\frac{1+L}{L}\n$$\n\nThe second alternate model was the same as the full MWC model, but with an additional term $C$ describing binding cooperativity between Kir6.2 subunits.\n\n$$\n\\frac{F}{F_{max}}=\\frac{LDK_{A}[TNPATP](1+3CDK_{A}[TNPATP]+3C^{2}D^{2}K_{A}^{2}[TNPATP]^{2}+C^{3}D^{3}K_{A}^{3}[TNPATP]^{3})+K_{A}[TNPATP](1+3CK_{A}[TNPATP])+3C^{2}K_{A}^{2}[TNPATP]^{2}+C^{3}K_{A}^{3}[TNPATP]^{3})}{L(1+4DK_{A}[TNPATP]+6CD^{2}K_{A}^{2}[TNPATP]^{2}+4C^{2}D^{3}K_{A}^{3}[TNPATP]^{3}+C^{3}D^{4}K_{A}^{4}[TNPATP]^{4})+1+4K_{A}[TNPATP]+6CK_{A}^{2}[TNPATP]^{2}+4C^{2}K_{A}^{3}[TNPATP]^{3}+C^{3}K_{A}^{4}[TNPATP]^{4}}\n$$\n\n\n\n$$\n\\frac{I}{I_{max}}=\\frac{L(1+4DK_{A}[TNPATP]+6CD^{2}K_{A}^{2}[TNPATP]^{2}+4C^{2}D^{3}K_{A}^{3}[TNPATP]^{3}+C^{3}D^{4}K_{A}^{4}[TNPATP]^{4})}{L(1+4DK_{A}[TNPATP]+6CD^{2}K_{A}^{2}[TNPATP]^{2}+4C^{2}D^{3}K_{A}^{3}[TNPATP]^{3}+C^{3}D^{4}K_{A}^{4}[TNPATP]^{4})+1+4K_{A}[TNPATP]+6C^{2}K_{A}^{2}[TNPATP]^{2}+4C^{2}K_{A}^{3}[TNPATP]^{3}+C^{3}K_{A}^{4}[TNPATP]^{4}}\u22c5\\frac{1+L}{L}\n$$\n\nEach model was fit to the combined patch-clamp fluorometry datasets using the brms package (Gelman et al., 2015; Burkner, 2017) in R. Prior probability distributions for each parameter were supplied as:\n\n$$\nlog_{10}\u2061(L)\u223cNormal(\\mu:0,\\sigma^{2}:0.7)D\u223cUniform(min:0,max:1)log_{10}\u2061(K_{A})\u223cUniform(min:2,max:6)C\u223cUniform(min:0,max:1)\n$$\n\nso that all priors are flat apart from L, which is weakly informative with 99% of its density falling between unliganded open probabilities of 0.01 and 0.99, and 85% falling between 0.1 and 0.9.\n\nWe considered two alternative sets of priors for fitting the MWC-type model to our mutant constructs (Figure 4\u2014figure supplement 4). We generated a narrow informative prior by fitting normal distributions to the posterior probability density of our fits to Kir6.2*-GFP + SUR1, and a broad informative prior by increasing the standard deviation of the fitted normal distribution by a factor of ten (Figure 4\u2014figure supplement 4A). Using narrow informative priors results in poorer fits as it does not allow for high enough values of $D$ to explain the data, whereas the broad informative priors result in fits which do not visibly differ much from the neutral priors (Figure 4\u2014figure supplement 4B). Whereas the fits using the broad informative priors were visually similar to those using neutral priors, the posterior probability distributions for the parameters were slightly different (Figure 4\u2014figure supplement 4C). Notably, due to the broad prior distribution supplied for $L$, the posterior probability distribution for $L$ is also very broad for each construct, with a large amount of probability density over unlikely values, that\u00a0is over half the probability density for Kir6.2*-GFP + SUR1-K205A and Kir6.2*-GFP + SUR1-K205E was for $L$ values lower than 0.01 (corresponding to a biologically implausible unliganded $P_{o\u2062p\u2062e\u2062n}<0.01$).\n\nEach model was run with four independent chains for 10,000 iterations each after a burn-in period of 20,000 iterations, saving every 10th sample for a total of 4000 samples per model. Each model parameter achieved a minimum effective sample size of 3500 and a potential scale reduction statistic ($R^$) of 1.00. Where applicable, the posterior probabilities of each parameter are reported as the median and the 95% equal-tailed interval. Bayes factors were calculated using bridge-sampling (Gronau et al., 2017), and leave-one-out cross-validation (LOO-CV) was performed using the loo package (Vehtari et al., 2017).\n\n### Docking\n\nComputational docking of TNP-ATP into the nucleotide binding site of Kir6.2 was performed using AutoDock-Vina (Trott and Olson, 2010) and Pymol (Schr\u00f6dinger, LLC; New York, NY). 11 TNP-ATP structures from the Protein Data Bank (PDB accession #s 1I5D, 3AR7, 5NCQ, 5SVQ, 5XW6, 2GVD, 5A3S, 2PMK, and 3B5J) were used as starting poses and a 15\u00a0\u00c5 \u00d7 11.25\u00a0\u00c5\u00a0\u00d7\u00a015\u00a0\u00c5 box was centred on the ATP bound to Kir6.2 in PDB accession #6BAA (Martin et al., 2017). Protonation states for each residue were assigned using PDB2PQR and PROPKA 3.0 (Dolinsky et al., 2004). The modal highest-scoring pose from the docking run was selected (PDB accession #5XW6, Kasuya et al., 2017) and distances were measured from a pseudo atom at the centre of the fluorescent moiety. TNP-ATP (PDB #3AR7, Toyoshima et al., 2011) was positioned into the first nucleotide binding domain of SUR1 (PDB #6PZI, Martin et al., 2019) using the alignment tool in Pymol.\n\n### Chemicals and stock solutions\n\nUnless otherwise noted, all chemicals were obtained from Sigma. TNP-ATP was obtained as a 10\u00a0mM aqueous stock from Jena Bioscience and stored at \u221220\u00b0\u00a0C aqueous stocks of ANAP-TFA were prepared by dissolving the free acid in 30\u00a0mM NaOH, and were stored at \u221220\u00b0\u00a0C. Tolbutamide stocks (50\u00a0mM) were prepared in 100\u00a0mM KOH and stored at \u221220\u00b0\u00a0C.\n",
+      "created_at": "2025-12-02T14:20:07.970472Z"
+    },
+    {
+      "id": "7a787bff-3f1b-4f0f-9fd2-c65d1d7ab0a6",
+      "submission_id": "0a454845-35c2-4d5b-bd73-dd0f7ee53042",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Gary Yellen, Harvard Medical School United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.52775.sa1](https://doi.org/10.7554/eLife.52775.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nThis paper describes experiments to investigate the mechanism of nucleotide inhibition of KATP channels important for insulin secretion from the pancreas and neonatal diabetes. KATP channels are heteromers of KIR6.2 pore-forming subunits and SUR1 modulatory subunits, and they contain 3 different classes of ATP binding sites, two excitatory sites on SUR1 and one inhibitory site on KIR6.2. This study uses a set of powerful methods including noncanonical amino acid incorporation, fluorescence resonance energy transfer (FRET), and patch-clamp fluorometry (PCF) to simultaneously measure the binding of a fluorescent derivative of ATP (TNP-ATP) specifically to the inhibitory site in KIR6.2, and the inhibition of the ionic current. Somewhat surprisingly, the authors found that the inhibition of the current occurs with an affinity about an order of magnitude higher than the binding affinity of ATP to the inhibitory site. This seemingly paradoxical result is explained using a gating model based on the allosteric mechanism of Monod-Wyman-Changeux (MWC) for protein allostery where the binding of just the first ATP almost completely inhibits the channel. They then go on to use their experimental and analysis methods to determine the effects of two different childhood diabetes mutations and the effect of the SUR1 subunit on gating.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Nucleotide inhibition of the pancreatic ATP-sensitive K+ channel explored with patch-clamp fluorometry\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Richard Aldrich as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThis manuscript describes experiments to investigate the mechanism of nucleotide inhibition of KATP channels important for insulin secretion from the pancreas and neonatal diabetes. KATP channels are heteromers of KIR6.2 pore forming subunits and SUR1 modulatory subunits and contain 3 different classes of ATP binding sites, two excitatory sites on SUR1 and one inhibitory site on KIR6.2. This study uses a set of powerful methods including noncanonical amino acid incorporation, fluorescence resonance energy transfer (FRET), and patch-clamp fluorometry (PCF) to simultaneously measure the binding of a fluorescent derivative of ATP (TNP-ATP) specifically to the inhibitory site in KIR6.2, and the inhibition of the ionic current. These authors found, somewhat surprisingly, that the inhibition of the current occurs with an affinity about an order of magnitude higher than the binding affinity of ATP to the inhibitory site. This seemingly paradoxical result is explained using a gating model based on the allosteric mechanism of Monod-Wyman-Changeux (MWC) for protein allostery where the binding of just the first ATP almost completely inhibits the channel. They then go on to use their experimental and analysis methods to determine the effects of two different childhood diabetes mutations and the effect of the SUR1 subunit on gating.\n\nThe PCF data are beautiful and the paper is very well-written.\n\nEssential revisions:\n\n1) Please address the discrepancy between your conclusion that inhibition by TNP-ATP is weak and incomplete for the C166S mutation, and previous reports that (unmodified) ATP at 10 mM produces complete inhibition of this mutant (for instance, in pmid 11159439 and other papers). Your raw data in Figure 3D are compatible with strong inhibition at high concentration, but your model results are not (Figure 3D/E). It seems important that you address this, ideally with some new data at higher [TNP-ATP], but at the very least by discussion and perhaps additional modeling to learn how more complete inhibition would affect the conclusions.\n\nRelated to this, please explain the basis for selecting the prior distribution of the parameters for the modeling. Might it make sense to include information about the WT parameters in the prior distribution when fitting the mutant data?\n\n2) The kinetics work is the weakest part of the paper. There are no controls for the minimum time required to exchange the solution by perfusion, there is barely one time point to constrain the on rate at 100 \u00b5M, and the assignment of the rates are model dependent. We think that this section should be removed.\n",
+      "created_at": "2025-12-02T14:20:07.970472Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T14:20:07.970472Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T14:20:07.970472Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "e68ca93c-9ca8-4105-ae9b-13ee01509039",
+      "content_id": "e588af89-7025-488e-bca5-13c033e2ed8f",
+      "claim_id": "C1",
+      "claim": "Pancreatic ATP-sensitive K+ channels (KATP) comprise four inward rectifier subunits (Kir6.2), each associated with a sulphonylurea receptor (SUR1).",
+      "claim_type": "EXPLICIT",
+      "source": "Pancreatic ATP-sensitive K+ channels (KATP) comprise four inward rectifier subunits (Kir6.2), each associated with a sulphonylurea receptor (SUR1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about KATP channel structure, supported by citations in the introduction.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:20:07.970472Z"
+    },
+    {
+      "id": "611460b2-b6c6-42df-91cf-9c215fcd358a",
+      "content_id": "e588af89-7025-488e-bca5-13c033e2ed8f",
+      "claim_id": "C2",
+      "claim": "ATP/ADP binding to Kir6.2 shuts KATP.",
+      "claim_type": "EXPLICIT",
+      "source": "ATP/ADP binding to Kir6.2 shuts KATP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge cited in the introduction with references to Tucker et al., 1997 and Proks et al., 2010.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:20:07.970472Z"
+    },
+    {
+      "id": "d285e7f0-a225-421b-9c4b-23a3bea1955d",
+      "content_id": "e588af89-7025-488e-bca5-13c033e2ed8f",
+      "claim_id": "C3",
+      "claim": "Mg-nucleotide binding to SUR1 stimulates KATP.",
+      "claim_type": "EXPLICIT",
+      "source": "Mg-nucleotide binding to SUR1 stimulates KATP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge cited in the introduction with references to Nichols et al., 1996 and Tucker et al., 1997.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:20:07.970472Z"
+    },
+    {
+      "id": "3b159fb5-1215-4b41-aea1-d2778e2b1b2f",
+      "content_id": "e588af89-7025-488e-bca5-13c033e2ed8f",
+      "claim_id": "C4",
+      "claim": "In the absence of Mg2+, SUR1 increases the apparent affinity for nucleotide inhibition at Kir6.2 by an unknown mechanism.",
+      "claim_type": "EXPLICIT",
+      "source": "In the absence of Mg2+, SUR1 increases the apparent affinity for nucleotide inhibition at Kir6.2 by an unknown mechanism.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited knowledge from Tucker et al., 1997, and the unknown mechanism is what the study aims to investigate.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:20:07.970472Z"
+    },
+    {
+      "id": "baf1c0d1-43e5-4967-a757-951230c174a2",
+      "content_id": "e588af89-7025-488e-bca5-13c033e2ed8f",
+      "claim_id": "C5",
+      "claim": "Fits to combined data sets suggest that KATP closes with only one nucleotide molecule bound.",
+      "claim_type": "EXPLICIT",
+      "source": "Fits to combined data sets suggest that KATP closes with only one nucleotide molecule bound.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the study's data analysis using MWC-type models.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:20:07.970472Z"
+    },
+    {
+      "id": "0ccf8fae-9969-4344-90a4-186b4fc15c39",
+      "content_id": "e588af89-7025-488e-bca5-13c033e2ed8f",
+      "claim_id": "C6",
+      "claim": "A Kir6.2 mutation (C166S) that increases channel activity did not affect nucleotide binding, but greatly perturbed the ability of bound nucleotide to inhibit KATP.",
+      "claim_type": "EXPLICIT",
+      "source": "A Kir6.2 mutation (C166S) that increases channel activity did not affect nucleotide binding, but greatly perturbed the ability of bound nucleotide to inhibit KATP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the study's experimental data on the C166S mutant.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:20:07.970472Z"
+    },
+    {
+      "id": "513b48ed-b382-4144-9a0c-530e216c98b1",
+      "content_id": "e588af89-7025-488e-bca5-13c033e2ed8f",
+      "claim_id": "C7",
+      "claim": "Mutations at position K205 in SUR1 affected both nucleotide affinity and the ability of bound nucleotide to inhibit KATP.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutations at position K205 in SUR1 affected both nucleotide affinity and the ability of bound nucleotide to inhibit KATP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the study's experimental data on SUR1-K205 mutants.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:20:07.970472Z"
+    },
+    {
+      "id": "ff113699-191c-4c9d-8e69-01fc409d94f1",
+      "content_id": "e588af89-7025-488e-bca5-13c033e2ed8f",
+      "claim_id": "C8",
+      "claim": "SUR1 has a dual role in KATP inhibition, both in directly contributing to nucleotide binding and in stabilising the nucleotide-bound closed state.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests a dual role for SUR1 in KATP inhibition, both in directly contributing to nucleotide binding and in stabilising the nucleotide-bound closed state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the experimental data on SUR1-K205 mutants.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:20:07.970472Z"
+    },
+    {
+      "id": "763f647c-3df9-49c8-940e-56bca3645921",
+      "content_id": "e588af89-7025-488e-bca5-13c033e2ed8f",
+      "claim_id": "C9",
+      "claim": "In pancreatic \u03b2-cells, closure of KATP in response to glucose uptake triggers insulin secretion.",
+      "claim_type": "EXPLICIT",
+      "source": "In pancreatic \u03b2-cells, closure of KATP in response to glucose uptake triggers insulin secretion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about KATP channel function in \u03b2-cells.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:20:07.970472Z"
+    },
+    {
+      "id": "f088c17b-52cd-487d-b08a-e83e1871eefb",
+      "content_id": "e588af89-7025-488e-bca5-13c033e2ed8f",
+      "claim_id": "C10",
+      "claim": "Mutations in KATP that affect its response to changes in cellular metabolism cause diseases of insulin secretion, for example neonatal diabetes and persistent hyperinsulinemic hypoglycaemia of infancy (PHHI; Quan et al., 2011; Ashcroft et al., 2017).",
+      "claim_type": "EXPLICIT",
+      "source": "As such, mutations in KATP that affect its response to changes in cellular metabolism cause diseases of insulin secretion, for example neonatal diabetes and persistent hyperinsulinemic hypoglycaemia of infancy (PHHI; Quan et al., 2011; Ashcroft et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited knowledge about disease-causing mutations in KATP.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:20:07.970472Z"
+    },
+    {
+      "id": "71ebe038-f542-4284-a945-86a44235222b",
+      "content_id": "e588af89-7025-488e-bca5-13c033e2ed8f",
+      "claim_id": "C11",
+      "claim": "KATP is composed of four inwardly rectifying K+ channel subunits (Kir6.2 in pancreatic \u03b2-cells), which form the channel pore, and four modulatory sulphonylurea receptor subunits (SUR1 in \u03b2-cells; Figure 1A; Aguilar-Bryan et al., 1995; Inagaki et al., 1995; Sakura et al., 1995; Inagaki et al., 1997).",
+      "claim_type": "EXPLICIT",
+      "source": "KATP is composed of four inwardly rectifying K+ channel subunits (Kir6.2 in pancreatic \u03b2-cells), which form the channel pore, and four modulatory sulphonylurea receptor subunits (SUR1 in \u03b2-cells; Figure 1A; Aguilar-Bryan et al., 1995; Inagaki et al., 1995; Sakura et al., 1995; Inagaki et al., 1997).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is cited knowledge about KATP channel structure, also illustrated in Figure 1A.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:20:07.970472Z"
+    },
+    {
+      "id": "13402ef2-b882-4de5-8527-54c2c9df148b",
+      "content_id": "e588af89-7025-488e-bca5-13c033e2ed8f",
+      "claim_id": "C12",
+      "claim": "SUR1 is a member of the ABC transporter family but lacks any transport activity (Aguilar-Bryan et al., 1995; Tusn\u00e1dy et al., 1997).",
+      "claim_type": "EXPLICIT",
+      "source": "SUR1 is a member of the ABC transporter family but lacks any transport activity (Aguilar-Bryan et al., 1995; Tusn\u00e1dy et al., 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited knowledge about SUR1's classification and function.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:20:07.970472Z"
+    },
+    {
+      "id": "dacf4b44-b0f3-4865-bddf-238b8c06d158",
+      "content_id": "e588af89-7025-488e-bca5-13c033e2ed8f",
+      "claim_id": "C13",
+      "claim": "KATP responds to metabolism via adenine nucleotide binding to three distinct classes of intracellular nucleotide-binding site (one on each Kir6.2 subunit and two on each SUR1 subunit\u2014making twelve sites in total [Vedovato et al., 2015]).",
+      "claim_type": "EXPLICIT",
+      "source": "KATP responds to metabolism via adenine nucleotide binding to three distinct classes of intracellular nucleotide-binding site (one on each Kir6.2 subunit and two on each SUR1 subunit\u2014making twelve sites in total [Vedovato et al., 2015]).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited knowledge about the nucleotide binding sites on KATP.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:20:07.970472Z"
+    },
+    {
+      "id": "42444d65-0f67-46eb-b6db-67a6abdb73e8",
+      "content_id": "e588af89-7025-488e-bca5-13c033e2ed8f",
+      "claim_id": "C15",
+      "claim": "Binding of nucleotides to SUR1 stimulates KATP (Nichols et al., 1996; Tucker et al., 1997).",
+      "claim_type": "EXPLICIT",
+      "source": "whereas binding of nucleotides to SUR1 stimulates KATP (Nichols et al., 1996; Tucker et al., 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited knowledge about nucleotide stimulation of KATP.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:20:07.970472Z"
+    },
+    {
+      "id": "8816c08c-db81-407a-9585-c4efd3acdfb6",
+      "content_id": "e588af89-7025-488e-bca5-13c033e2ed8f",
+      "claim_id": "C16",
+      "claim": "The stimulatory activity of nucleotides on KATP depends on Mg2+ (Gribble et al., 1998).",
+      "claim_type": "EXPLICIT",
+      "source": "The stimulatory activity of nucleotides on KATP depends on Mg2+ (Gribble et al., 1998)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited knowledge about the Mg2+ dependence of nucleotide stimulation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:20:07.970472Z"
+    },
+    {
+      "id": "3aacf4ff-b4c0-43e9-93ac-331690524136",
+      "content_id": "e588af89-7025-488e-bca5-13c033e2ed8f",
+      "claim_id": "C17",
+      "claim": "The inhibitory effect of nucleotides on Kir6.2 does not depend on Mg2+ (Tucker et al., 1997).",
+      "claim_type": "EXPLICIT",
+      "source": "whereas their inhibitory effect on Kir6.2 does not (Tucker et al., 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited knowledge about the Mg2+ independence of nucleotide inhibition.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:20:07.970472Z"
+    },
+    {
+      "id": "bb75b6f2-c11d-4ce9-bd75-9e20a421d904",
+      "content_id": "e588af89-7025-488e-bca5-13c033e2ed8f",
+      "claim_id": "C20",
+      "claim": "SUR1 is responsible for high-affinity inhibition of KATP by antidiabetic sulphonylureas and glinides as well as activation by KATP-specific K+ channel openers (Tucker et al., 1997).",
+      "claim_type": "EXPLICIT",
+      "source": "SUR1 is also responsible for high-affinity inhibition of KATP by antidiabetic sulphonylureas and glinides as well as activation by KATP-specific K+ channel openers (Tucker et al., 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited knowledge about SUR1's role in drug sensitivity.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:20:07.970472Z"
+    },
+    {
+      "id": "248fcfce-4059-4230-ae1e-9a3352d4eee5",
+      "content_id": "e588af89-7025-488e-bca5-13c033e2ed8f",
+      "claim_id": "C21",
+      "claim": "SUR1 and Kir6.2 must co-assemble to ensure mutual exit from the endoplasmic reticulum and correct trafficking to the plasma membrane (Zerangue et al., 1999).",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, SUR1 and Kir6.2 must co-assemble to ensure mutual exit from the endoplasmic reticulum and correct trafficking to the plasma membrane (Zerangue et al., 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited knowledge about SUR1 and Kir6.2 trafficking.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:20:07.970472Z"
+    },
+    {
+      "id": "0bf55493-803c-4dd8-a398-92e353339dc0",
+      "content_id": "e588af89-7025-488e-bca5-13c033e2ed8f",
+      "claim_id": "C22",
+      "claim": "ANAP was replaced at position 311 (W311) of Kir6.2, which is 26 \u00c5 from the location of the inhibitory nucleotide-binding site.",
+      "claim_type": "EXPLICIT",
+      "source": "To measure binding to Kir6.2 in the complete KATP complex (four full-length Kir6.2 subunits co-expressed with four full-length SUR1 subunits), we replaced a tryptophan at position 311 (W311) of Kir6.2 that is 26 \u00c5 from the location of the inhibitory nucleotide-binding site with ANAP (Figure 1C)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on structural data and shown in Figure 1C.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:20:07.970472Z"
+    },
+    {
+      "id": "2737b998-5afc-4aa6-8498-aa40d3cc989f",
+      "content_id": "e588af89-7025-488e-bca5-13c033e2ed8f",
+      "claim_id": "C23",
+      "claim": "91% FRET efficiency is expected between ANAP at position 311 and a TNP-ATP molecule bound to Kir6.2.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on the theoretical FRET efficiency calculated from the F\u00f6rster equation and available cryo-EM structures (Martin et al., 2017; Martin et al., 2019), we expect 91% FRET efficiency between ANAP at position 311 and a TNP-ATP molecule bound to Kir6.2",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is calculated from the F\u00f6rster equation using structural data.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:20:07.970472Z"
+    },
+    {
+      "id": "76eda8d4-f4cf-4249-ad99-c500501be9dc",
+      "content_id": "e588af89-7025-488e-bca5-13c033e2ed8f",
+      "claim_id": "C24",
+      "claim": "Only 4% FRET efficiency is expected between ANAP at position 311 and TNP-ATP bound to the closest nucleotide-binding site on SUR1.",
+      "claim_type": "EXPLICIT",
+      "source": "and only 4% FRET efficiency to TNP-ATP bound to the closest nucleotide-binding site on SUR1 (nucleotide binding site 1; Figure 1C; Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is calculated from the F\u00f6rster equation using structural data and shown in Figure 1D.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:20:07.970472Z"
+    },
+    {
+      "id": "e6ece320-fa98-4d8d-a2a1-9b9b78c9e06b",
+      "content_id": "e588af89-7025-488e-bca5-13c033e2ed8f",
+      "claim_id": "C25",
+      "claim": "Full length, fully ANAP-labelled Kir6.2 protein was produced and successfully trafficked to the membrane in the presence of SUR1.",
+      "claim_type": "EXPLICIT",
+      "source": "When cultured in the presence of ANAP, full length, fully ANAP-labelled Kir6.2 protein was produced and successfully trafficked to the membrane in the presence of SUR1 (Figure 1\u2014figure supplement 1; see Materials and methods).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by western blots and confocal microscopy shown in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:20:07.970472Z"
+    },
+    {
+      "id": "e5f44e79-31d1-4c39-aa59-472a3c5b735b",
+      "content_id": "e588af89-7025-488e-bca5-13c033e2ed8f",
+      "claim_id": "C26",
+      "claim": "Kir6.2*-GFP + SUR1 exhibited nearly identical sensitivity to ATP inhibition as Kir6.2-GFP + SUR1.",
+      "claim_type": "EXPLICIT",
+      "source": "Kir6.2*-GFP + SUR1 exhibited nearly identical sensitivity to ATP inhibition as Kir6.2-GFP + SUR1 (Figure 1\u2014figure supplement 2A)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by patch-clamp data shown in Figure 1\u2014figure supplement 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:20:07.970472Z"
+    },
+    {
+      "id": "fea869ab-1f7f-41b6-be29-214c67adcb9e",
+      "content_id": "e588af89-7025-488e-bca5-13c033e2ed8f",
+      "claim_id": "C27",
+      "claim": "Replacement of W311 with ANAP did not affect inhibition of KATP by ATP.",
+      "claim_type": "EXPLICIT",
+      "source": "indicating that replacement of W311 with ANAP did not affect inhibition of KATP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the similar ATP sensitivity of Kir6.2*-GFP + SUR1 and Kir6.2-GFP + SUR1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:20:07.970472Z"
+    },
+    {
+      "id": "5e6c9548-5d4a-400e-9391-97a4194b9aec",
+      "content_id": "e588af89-7025-488e-bca5-13c033e2ed8f",
+      "claim_id": "C29",
+      "claim": "Kir6.2*-GFP was not detected at the plasma membrane in the absence of SUR1 in a luminescence-based surface-expression assay.",
+      "claim_type": "EXPLICIT",
+      "source": "In a luminescence-based, surface-expression assay, we did not detect HA-tagged Kir6.2*-GFP at the plasma membrane in the absence of SUR1 (Figure 1\u2014figure supplement 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by the surface expression assay shown in Figure 1\u2014figure supplement 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:20:07.970472Z"
+    },
+    {
+      "id": "1de6bc3c-6c66-4b71-8d20-6ea654aae4c5",
+      "content_id": "e588af89-7025-488e-bca5-13c033e2ed8f",
+      "claim_id": "C30",
+      "claim": "Both wild-type Kir6.2-GFP and Kir6.2*-GFP currents were inhibited to a similar extent by 100 \u00b5M tolbutamide when expressed with SUR1 (46.5% \u00b10.04% and 57.7% \u00b10.02%, respectively).",
+      "claim_type": "EXPLICIT",
+      "source": "both wild-type Kir6.2-GFP and Kir6.2*-GFP currents were inhibited to a similar extent when expressed with SUR1 (46.5% \u00b10.04% and 57.7% \u00b10.02%, respectively; Figure 1\u2014figure supplement 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by patch-clamp data shown in Figure 1\u2014figure supplement 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:20:07.970472Z"
+    },
+    {
+      "id": "ee6cb1eb-05cf-4999-8f90-1bccceed662a",
+      "content_id": "e588af89-7025-488e-bca5-13c033e2ed8f",
+      "claim_id": "C31",
+      "claim": "Kir6.2*-GFP was co-assembled with SUR1 at the plasma membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "confirming that Kir6.2*-GFP was co-assembled with SUR1 at the plasma membrane.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the tolbutamide sensitivity data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:20:07.970472Z"
+    },
+    {
+      "id": "efa0ff5a-0203-469a-8aae-db33fe896ce5",
+      "content_id": "e588af89-7025-488e-bca5-13c033e2ed8f",
+      "claim_id": "C32",
+      "claim": "Increasing the concentration of TNP-ATP caused a decrement in the ANAP peak at 472 nm and a concomitant increase in the TNP-ATP peak at 561 nm.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected from FRET, increasing the concentration of TNP-ATP caused a decrement in the ANAP peak at 472 nm and a concomitant increase in the TNP-ATP peak at 561 nm (Figure 1F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by spectroscopy data shown in Figure 1F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:20:07.970472Z"
+    },
+    {
+      "id": "4b12971c-552a-499a-a2c6-9044d1c48cf0",
+      "content_id": "e588af89-7025-488e-bca5-13c033e2ed8f",
+      "claim_id": "C34",
+      "claim": "The binding measurements were specific for the inhibitory nucleotide-binding site on Kir6.2.",
+      "claim_type": "EXPLICIT",
+      "source": "We therefore conclude that our binding measurements were specific for the inhibitory nucleotide-binding site on Kir6.2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the high Emax and the effect of the G334D mutation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:20:07.970472Z"
+    },
+    {
+      "id": "53a2862b-8ad5-48c9-8c4f-6868823f6b25",
+      "content_id": "e588af89-7025-488e-bca5-13c033e2ed8f",
+      "claim_id": "C35",
+      "claim": "The G334D mutation causes neonatal diabetes by preventing nucleotide binding.",
+      "claim_type": "EXPLICIT",
+      "source": "This observation is consistent with the interpretation that the G334D mutation causes neonatal diabetes by preventing nucleotide binding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the drastically reduced ANAP quenching in the G334D mutant.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:20:07.970472Z"
+    },
+    {
+      "id": "b2a1f5aa-ee9b-4fb1-a6ad-3f64f13fabaa",
+      "content_id": "e588af89-7025-488e-bca5-13c033e2ed8f",
+      "claim_id": "C36",
+      "claim": "The apparent affinity of Kir6.2*-GFP + SUR1 for TNP-ATP in unroofed membranes was 25.6 \u00b5M.",
+      "claim_type": "EXPLICIT",
+      "source": "The apparent affinity of Kir6.2*-GFP + SUR1 for TNP-ATP in unroofed membranes was 25.6 \u00b5M (Figure 1G and Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is determined from Hill fits to the binding data shown in Figure 1G and Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:20:07.970472Z"
+    },
+    {
+      "id": "aea3d700-157c-4ea7-a6db-c54612bab0ab",
+      "content_id": "e588af89-7025-488e-bca5-13c033e2ed8f",
+      "claim_id": "C37",
+      "claim": "The apparent affinity for nucleotide inhibition measured using patch-clamp was 6.2 \u00b5M.",
+      "claim_type": "EXPLICIT",
+      "source": "This value is higher than the apparent affinity for nucleotide inhibition (6.2 \u00b5M) measured using patch-clamp (Figure 1\u2014figure supplement 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is determined from Hill fits to the current inhibition data shown in Figure 1\u2014figure supplement 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:20:07.970472Z"
+    },
+    {
+      "id": "b7b418af-68f9-4151-8445-541ea2df2656",
+      "content_id": "e588af89-7025-488e-bca5-13c033e2ed8f",
+      "claim_id": "C38",
+      "claim": "Current inhibition occurred at a lower range of concentrations compared to nucleotide binding.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, current inhibition occurred at a lower range of concentrations compared to nucleotide binding (Figure 2C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by the patch-clamp fluorometry data shown in Figure 2C,D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:20:07.970472Z"
+    },
+    {
+      "id": "e1366c54-6c98-4326-a6b7-c5294a694015",
+      "content_id": "e588af89-7025-488e-bca5-13c033e2ed8f",
+      "claim_id": "C40",
+      "claim": "The MWC-type model fit the simultaneous binding and current measurements well.",
+      "claim_type": "EXPLICIT",
+      "source": "Our simultaneous binding and current measurements were well fit with a Monod-Wyman-Changeux (MWC)-type model (Figure 2D,E; Monod et al., 1965)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by the model fits shown in Figure 2D,E.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:20:07.970472Z"
+    },
+    {
+      "id": "1c79be99-f24f-4c9f-91f4-df546cbb483c",
+      "content_id": "e588af89-7025-488e-bca5-13c033e2ed8f",
+      "claim_id": "C47",
+      "claim": "C166 is located near the bundle-crossing gate of Kir6.2.",
+      "claim_type": "EXPLICIT",
+      "source": "C166 is located near the bundle-crossing gate of Kir6.2 (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on structural data shown in Figure 3A.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:20:07.970472Z"
+    },
+    {
+      "id": "a6230800-5962-44f6-abbb-834b3d89ccfe",
+      "content_id": "e588af89-7025-488e-bca5-13c033e2ed8f",
+      "claim_id": "C48",
+      "claim": "Other mutations at the C166 site cause neonatal diabetes (Flanagan et al., 2006; Gloyn et al., 2006).",
+      "claim_type": "EXPLICIT",
+      "source": "Other mutations at this site cause neonatal diabetes (Flanagan et al., 2006; Gloyn et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited knowledge about disease-causing mutations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:20:07.970472Z"
+    },
+    {
+      "id": "0d27e15c-353e-490b-a3e5-c7056ca3bce4",
+      "content_id": "e588af89-7025-488e-bca5-13c033e2ed8f",
+      "claim_id": "C50",
+      "claim": "The C166S mutation suggests only a small change in apparent nucleotide affinity.",
+      "claim_type": "EXPLICIT",
+      "source": "which suggests only a small change in apparent nucleotide affinity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the similar EC50 values for Kir6.2*,C166S-GFP + SUR1 and Kir6.2*-GFP + SUR1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:20:07.970472Z"
+    },
+    {
+      "id": "65b7bb62-0ef3-43af-829a-f177e9aa9440",
+      "content_id": "e588af89-7025-488e-bca5-13c033e2ed8f",
+      "claim_id": "C52",
+      "claim": "Whereas the apparent nucleotide binding affinity was unchanged by the C166S mutation, current inhibition occurred at much higher concentrations compared to binding and was incomplete.",
+      "claim_type": "EXPLICIT",
+      "source": "Measuring current inhibition in combination with nucleotide binding confirmed that whereas the apparent nucleotide binding affinity was unchanged by the C166S mutation, current inhibition occurred at much higher concentrations compared to binding and was incomplete (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by the patch-clamp fluorometry data shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:20:07.970472Z"
+    },
+    {
+      "id": "81d9c3db-1dd7-4fef-8c22-57f6a87a6670",
+      "content_id": "e588af89-7025-488e-bca5-13c033e2ed8f",
+      "claim_id": "C55",
+      "claim": "Only partial inhibition of Kir6.2*,C166S-GFP + SUR1 by 10 mM ATP was observed, which supports the existence of a nucleotide-insensitive current fraction at high concentrations.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we saw only partial inhibition of Kir6.2*,C166S-GFP + SUR1 by 10 mM ATP, which supports the existence of a nucleotide-insensitive current fraction at high concentrations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by the patch-clamp data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:20:07.970472Z"
+    },
+    {
+      "id": "c2f7fc92-c9b2-4721-a695-1f7fd8c15843",
+      "content_id": "e588af89-7025-488e-bca5-13c033e2ed8f",
+      "claim_id": "C56",
+      "claim": "Partial inhibition at high nucleotide concentrations has been previously reported for mutations at Kir6.2-C166 in some constructs (Trapp et al., 1998; Ribalet et al., 2006) but not others (Enkvetchakul et al., 2001).",
+      "claim_type": "EXPLICIT",
+      "source": "This observation has been previously reported for mutations at Kir6.2-C166 in some constructs (Trapp et al., 1998; Ribalet et al., 2006) but not others (Enkvetchakul et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited knowledge about previous observations of C166 mutations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:20:07.970472Z"
+    },
+    {
+      "id": "59a25e61-5191-41da-a172-754adfe02b84",
+      "content_id": "e588af89-7025-488e-bca5-13c033e2ed8f",
+      "claim_id": "C58",
+      "claim": "SUR1 increases the sensitivity of Kir6.2 to nucleotide inhibition (Babenko and Bryan, 2003; Chan, 2003; Fang et al., 2006).",
+      "claim_type": "EXPLICIT",
+      "source": "However, it also increases the sensitivity of Kir6.2 to nucleotide inhibition (Babenko and Bryan, 2003; Chan, 2003; Fang et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited knowledge about SUR1's effects on KATP.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:20:07.970472Z"
+    },
+    {
+      "id": "587e9598-0460-4d54-a3ff-c4cc11285ed6",
+      "content_id": "e588af89-7025-488e-bca5-13c033e2ed8f",
+      "claim_id": "C60",
+      "claim": "Kir6.2-GFP alone was much less sensitive to inhibition by TNP-ATP than Kir6.2-GFP + SUR1.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected Kir6.2-GFP alone was much less sensitive to inhibition by TNP-ATP than Kir6.2-GFP + SUR1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by the patch-clamp data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:20:07.970472Z"
+    },
+    {
+      "id": "bcdf2a70-192e-4960-a782-ed99ae0f6a69",
+      "content_id": "e588af89-7025-488e-bca5-13c033e2ed8f",
+      "claim_id": "C61",
+      "claim": "SUR1-K205 is located in the L0 linker of SUR1, which connects the first set of transmembrane domains (TMD0) to the ABC core structure (Figure 1A, Figure 4A; Martin et al., 2017; Puljung, 2018).",
+      "claim_type": "EXPLICIT",
+      "source": "SUR1-K205 is located in the L0 linker of SUR1, which connects the first set of transmembrane domains (TMD0) to the ABC core structure (Figure 1A, Figure 4A; Martin et al., 2017; Puljung, 2018).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on structural data shown in Figure 1A and Figure 4A.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:20:07.970472Z"
+    },
+    {
+      "id": "08f740a0-8f7c-41bb-becd-5b02dd46562c",
+      "content_id": "e588af89-7025-488e-bca5-13c033e2ed8f",
+      "claim_id": "C62",
+      "claim": "The L0 loop is adjacent to the inhibitory nucleotide-binding site on Kir6.2 and the interface between neighbouring Kir6.2 subunits.",
+      "claim_type": "EXPLICIT",
+      "source": "This loop is adjacent to the inhibitory nucleotide-binding site on Kir6.2 and the interface between neighbouring Kir6.2 subunits.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on structural data.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:20:07.970472Z"
+    },
+    {
+      "id": "2212c4b9-6758-46ba-8c97-d40950dd1c30",
+      "content_id": "e588af89-7025-488e-bca5-13c033e2ed8f",
+      "claim_id": "C63",
+      "claim": "Mutations at SUR1-K205 were previously shown to reduce sensitivity of KATP to nucleotide-dependent inhibition (Pratt et al., 2012; Ding et al., 2019).",
+      "claim_type": "EXPLICIT",
+      "source": "Mutations at SUR1-K205 were previously shown to reduce sensitivity of KATP to nucleotide-dependent inhibition (Pratt et al., 2012; Ding et al., 2019)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited knowledge about the effects of SUR1-K205 mutations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:20:07.970472Z"
+    },
+    {
+      "id": "982e76f8-18ac-4e33-bc6d-3218a0c902c1",
+      "content_id": "e588af89-7025-488e-bca5-13c033e2ed8f",
+      "claim_id": "C64",
+      "claim": "A recent cryo-EM structure suggests that SUR1-K205 may directly coordinate the phosphates of ATP bound to Kir6.2 (Ding et al., 2019).",
+      "claim_type": "EXPLICIT",
+      "source": "and a recent cryo-EM stucture suggests that SUR1-K205 may directly coordinate the phosphates of ATP bound to Kir6.2 (Ding et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited knowledge from a recent structural study.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:20:07.970472Z"
+    },
+    {
+      "id": "aa29d229-0e5c-4042-94b9-c2f44f7cd6b1",
+      "content_id": "e588af89-7025-488e-bca5-13c033e2ed8f",
+      "claim_id": "C65",
+      "claim": "Other mutations in L0 are associated with neonatal diabetes (Ashcroft et al., 2017) and PHHI (Snider et al., 2013).",
+      "claim_type": "EXPLICIT",
+      "source": "Other mutations in L0 are associated with neonatal diabetes (Ashcroft et al., 2017) and PHHI (Snider et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited knowledge about disease-causing mutations in L0.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:20:07.970472Z"
+    },
+    {
+      "id": "9b4b5c30-464a-4fdf-8f53-27faa7e91501",
+      "content_id": "e588af89-7025-488e-bca5-13c033e2ed8f",
+      "claim_id": "C66",
+      "claim": "The binding and inhibition curves for TNP-ATP almost perfectly overlaid for the SUR1-K205A mutant.",
+      "claim_type": "EXPLICIT",
+      "source": "The binding and inhibition curves for TNP-ATP almost perfectly overlaid for the SUR1-K205A mutant (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by the patch-clamp fluorometry data shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:20:07.970472Z"
+    },
+    {
+      "id": "90689cf3-5ab9-40e5-a854-c099d8ef080e",
+      "content_id": "e588af89-7025-488e-bca5-13c033e2ed8f",
+      "claim_id": "C67",
+      "claim": "The binding and inhibition curves for TNP-ATP almost perfectly overlaid for the SUR1-K205E mutant.",
+      "claim_type": "EXPLICIT",
+      "source": "The same was also true for SUR1-K205E (Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by the patch-clamp fluorometry data shown in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:20:07.970472Z"
+    },
+    {
+      "id": "85e282d8-da23-487d-ab6c-80f824a1fc03",
+      "content_id": "e588af89-7025-488e-bca5-13c033e2ed8f",
+      "claim_id": "C68",
+      "claim": "Mutating K205 to an alanine or a glutamate resulted in an apparent decrease in nucleotide binding affinity.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutating K205 to an alanine or a glutamate resulted in an apparent decrease in nucleotide binding affinity (Figure 4C,D,E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by the patch-clamp fluorometry data and model fits shown in Figure 4C,D,E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:20:07.970472Z"
+    },
+    {
+      "id": "270b9006-b053-4f59-8296-808bb24b1ea3",
+      "content_id": "e588af89-7025-488e-bca5-13c033e2ed8f",
+      "claim_id": "C71",
+      "claim": "Mutating residue K205 reduced the ability of a single nucleotide to close the channel.",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas a single nucleotide-binding event is sufficient for channel closure when Kir6.2 is associated with wild-type SUR1, mutating residue K205 reduced the ability of a single nucleotide to close the channel.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the model fits and the shift in D.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:20:07.970472Z"
+    },
+    {
+      "id": "952e7317-774f-4e06-a069-2363e768494a",
+      "content_id": "e588af89-7025-488e-bca5-13c033e2ed8f",
+      "claim_id": "C72",
+      "claim": "PCF allowed for site-specific measurement of nucleotide binding to KATP and concomitant measurements of channel current.",
+      "claim_type": "EXPLICIT",
+      "source": "We have developed a novel approach that allows for site-specific measurement of nucleotide binding to KATP and concomitant measurements of channel current.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the methodological contribution of the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:20:07.970472Z"
+    },
+    {
+      "id": "f393f63c-958d-4db3-8f23-9a0ab7169896",
+      "content_id": "e588af89-7025-488e-bca5-13c033e2ed8f",
+      "claim_id": "C73",
+      "claim": "Performing binding and current measurements simultaneously allowed examination of nucleotide regulation of KATP function in great detail.",
+      "claim_type": "EXPLICIT",
+      "source": "Performing these measurements simultaneously allowed us to examine nucleotide regulation of KATP function in great detail.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the advantage of the PCF approach.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:20:07.970472Z"
+    },
+    {
+      "id": "90c98b4b-1019-4c4c-a4ce-de51327d4b87",
+      "content_id": "e588af89-7025-488e-bca5-13c033e2ed8f",
+      "claim_id": "C74",
+      "claim": "Such insights would not be possible from experiments in which macroscopic currents or binding were measured in isolation.",
+      "claim_type": "EXPLICIT",
+      "source": "Such insights would not be possible from experiments in which macroscopic currents or binding were measured in isolation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a claim about the limitations of previous approaches.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:20:07.970472Z"
+    },
+    {
+      "id": "9261b62d-9239-4e06-93cb-c9ed0ccbc274",
+      "content_id": "e588af89-7025-488e-bca5-13c033e2ed8f",
+      "claim_id": "C77",
+      "claim": "Saturating concentrations of MgTNP-ADP stabilized the open state by \u22121.9 kcal mol^-1 (\u22127.9 kJ mol^-1).",
+      "claim_type": "EXPLICIT",
+      "source": "Based on our observations, saturating concentrations of MgTNP-ADP stabilied the open state by \u22121.9 kcal mol-1 (\u22127.9 kJ mol-1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is calculated from the E parameter derived from previous experiments.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:20:07.970472Z"
+    },
+    {
+      "id": "2c476959-80ea-43b6-9fbf-c35772731355",
+      "content_id": "e588af89-7025-488e-bca5-13c033e2ed8f",
+      "claim_id": "C78",
+      "claim": "At saturating concentrations, TNP-ATP stabilized the closed state of KATP by \u22127.9 kcal mol^-1 (31.8 kJ mol^-1).",
+      "claim_type": "EXPLICIT",
+      "source": "At saturating concentrations, TNP-ATP stabilied the closed state of KATP by \u22127.9 kcal mol-1 (31.8 kJ mol-1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is calculated from the D parameter derived from PCF experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:20:07.970472Z"
+    },
+    {
+      "id": "1bd216f1-f651-4737-b22a-4787cb665339",
+      "content_id": "e588af89-7025-488e-bca5-13c033e2ed8f",
+      "claim_id": "C79",
+      "claim": "Assuming excitatory and inhibitory processes are independent, inhibition would be expected to dominate under conditions at which all the nucleotide binding sites are occupied.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, assuming excitatory and inhibitory processes are independent, inhibition would be expected to dominate under conditions at which all the nucleotide binding sites are occupied.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the calculated stabilization energies.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:20:07.970472Z"
+    },
+    {
+      "id": "1600dd2a-d0a9-45b0-ac10-1363c1e4fc99",
+      "content_id": "e588af89-7025-488e-bca5-13c033e2ed8f",
+      "claim_id": "C80",
+      "claim": "This is consistent with published measurements of wild-type KATP in the presence of Mg2+ (Proks et al., 2010).",
+      "claim_type": "EXPLICIT",
+      "source": "This is consistent with published measurements of wild-type KATP in the presence of Mg2+(Proks et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison to cited knowledge.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:20:07.970472Z"
+    },
+    {
+      "id": "f8406367-8d94-412c-8c97-701109035923",
+      "content_id": "e588af89-7025-488e-bca5-13c033e2ed8f",
+      "claim_id": "C82",
+      "claim": "Higher affinity binding to the stimulatory site may explain the ability of MgADP to increase KATP currents in the presence of ATP (Gribble et al., 1998).",
+      "claim_type": "EXPLICIT",
+      "source": "Higher affinity binding to the stimulatory site may explain the ability of MgADP to increase KATP currents in the presence of ATP (Gribble et al., 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation based on the KA values and cited knowledge.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:20:07.970472Z"
+    },
+    {
+      "id": "bb5501f2-8da9-481d-bb3a-1c17266cc8d8",
+      "content_id": "e588af89-7025-488e-bca5-13c033e2ed8f",
+      "claim_id": "C83",
+      "claim": "This phenomenon may also explain the bell-shaped MgADP concentration-response curve for KATP, which shows an increase in current at low concentrations, followed by inhibition at higher concentrations (Proks et al., 2010; Vedovato et al., 2015).",
+      "claim_type": "EXPLICIT",
+      "source": "This phenomenon may also explain the bell-shaped MgADP concentration-response curve for KATP, which shows an increase in current at low concentrations, followed by inhibition at higher concentrations (Proks et al., 2010; Vedovato et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation based on the KA values and cited knowledge.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:20:07.970472Z"
+    },
+    {
+      "id": "0d6f8fba-4edd-4dff-bac4-2a62827c1dcc",
+      "content_id": "e588af89-7025-488e-bca5-13c033e2ed8f",
+      "claim_id": "C84",
+      "claim": "Mutations that cause neonatal diabetes reduce the sensitivity of KATP to nucleotide inhibition, and reduction in nucleotide sensitivity is broadly correlated with disease severity (McTaggart et al., 2010).",
+      "claim_type": "EXPLICIT",
+      "source": "Mutations that cause neonatal diabetes reduce the sensitivity of KATP to nucleotide inhibition, and reduction in nucleotide sensitivity is broadly correlated with disease severity (McTaggart et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited knowledge about neonatal diabetes mutations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:20:07.970472Z"
+    },
+    {
+      "id": "c5164345-320b-4d6e-89a8-0ee1fcb9b6af",
+      "content_id": "e588af89-7025-488e-bca5-13c033e2ed8f",
+      "claim_id": "C86",
+      "claim": "This corroborates earlier hypotheses that mutating G334 directly disrupts inhibitory nucleotide binding to Kir6.2 (Drain et al., 1998).",
+      "claim_type": "EXPLICIT",
+      "source": "This corroborates earlier hypotheses that mutating G334 directly disrupts inhibitory nucleotide binding to Kir6.2 (Drain et al., 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison to cited hypotheses.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:20:07.970472Z"
+    },
+    {
+      "id": "1930dd4a-3c50-46aa-ad17-8fb2cf0a7a52",
+      "content_id": "e588af89-7025-488e-bca5-13c033e2ed8f",
+      "claim_id": "C87",
+      "claim": "The C166S mutation does not directly affect nucleotide binding to Kir6.2, but rather disrupts the ability of bound nucleotide to close the channel.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to G334D, the C166S mutation does not directly affect nucleotide binding to Kir6.2, but rather disrupts the ability of bound nucleotide to close the channel.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the PCF data and model fits.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:20:07.970472Z"
+    },
+    {
+      "id": "ab2a95e3-9572-499b-a5d6-c756060a6bba",
+      "content_id": "e588af89-7025-488e-bca5-13c033e2ed8f",
+      "claim_id": "C90",
+      "claim": "In addition to directly contributing to tighter nucleotide binding at Kir6.2, SUR1 plays a critical role in preferentially stabilising the closed state of the channel when nucleotides are bound.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that, in addition to directly contributing to tighter nucleotide binding at Kir6.2, SUR1 plays a critical role in preferentially stabilising the closed state of the channel when nucleotides are bound.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the effects of SUR1-K205 mutations on both KA and D.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:20:07.970472Z"
+    },
+    {
+      "id": "c4029e6d-b19e-4bff-97e1-e3ff7df94f08",
+      "content_id": "e588af89-7025-488e-bca5-13c033e2ed8f",
+      "claim_id": "C91",
+      "claim": "Mutations in SUR1 that cause neonatal diabetes may do so by disrupting inhibitory binding/gating or enhancing the stimulatory effects of nucleotides.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutations in SUR1 that cause neonatal diabetes may do so by disrupting inhibitory binding/gating or enhancing the stimulatory effects of nucleotides.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about the mechanisms of disease-causing mutations.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:20:07.970472Z"
+    },
+    {
+      "id": "c43910b1-2ca8-4c86-95c4-476084db55e7",
+      "content_id": "e588af89-7025-488e-bca5-13c033e2ed8f",
+      "claim_id": "C92",
+      "claim": "The formalism developed in this study provides a rigorous way to mechanistically assess the effects of these mutations.",
+      "claim_type": "EXPLICIT",
+      "source": "The formalism developed in this study provides a rigorous way to mechanistically assess the effects of these mutations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a claim about the utility of the study's approach.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:20:07.970472Z"
+    },
+    {
+      "id": "a1f52828-5883-4020-a869-f4a404bf02c7",
+      "content_id": "e588af89-7025-488e-bca5-13c033e2ed8f",
+      "claim_id": "C93",
+      "claim": "The PCF approach should be readily adaptable to the study of other nucleotide-gated channels including the cystic fibrosis transmembrane conductance regulator (CFTR, also an ABC-family protein) and purinergic P2X receptors.",
+      "claim_type": "EXPLICIT",
+      "source": "Our approach should be readily adaptable to the study of other nucleotide-gated channels including the cystic fibrosis transmembrane conductance regulator (CFTR, also an ABC-family protein) and purinergic P2X receptors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about the broader applicability of the method.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:20:07.970472Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "25d28478-43e1-4547-91a0-557c7ea7cd02",
+      "content_id": "e588af89-7025-488e-bca5-13c033e2ed8f",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors developed a FRET-based patch-clamp fluorometry (PCF) method using ANAP labeling at position 311 of Kir6.2 to simultaneously measure nucleotide binding and channel currents in KATP channels. The ANAP-labeled construct (Kir6.2*-GFP) exhibited similar functional properties to wild-type channels and successfully trafficked to the membrane only when co-expressed with SUR1.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C34 and C72 collectively demonstrate successful development and validation of the PCF method. The FRET efficiency calculations (C23, C24), functional validation showing similar ATP sensitivity (C26, C27), tolbutamide sensitivity confirming SUR1 co-assembly (C30, C31), and FRET measurements showing specific binding (C32, C34) provide converging evidence that the method works as intended.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:20:07.970472Z"
+    },
+    {
+      "id": "33b869f6-0ad4-48a1-a2c7-6d0964843fca",
+      "content_id": "e588af89-7025-488e-bca5-13c033e2ed8f",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Using PCF, the authors found that current inhibition occurred at lower TNP-ATP concentrations than nucleotide binding, with apparent IC50 of 6.2 \u00b5M for inhibition versus EC50 of 25.6-77.7 \u00b5M for binding. MWC-type model fits to the combined data suggest that KATP closes with only one nucleotide molecule bound.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36-C40 and C5 are well-supported by the simultaneous binding and current measurements shown in Figure 2. The separation between binding and inhibition curves (C38) is clearly demonstrated, and the MWC-type model provides good fits to the data (C40). The very low D value (0.04) from the model supports the conclusion that single nucleotide binding is sufficient for channel closure (C5).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:20:07.970472Z"
+    },
+    {
+      "id": "faf97899-89eb-4f46-9755-1820a12910c2",
+      "content_id": "e588af89-7025-488e-bca5-13c033e2ed8f",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The C166S mutation in Kir6.2 did not affect nucleotide binding affinity but greatly impaired the ability of bound nucleotide to close the channel, as evidenced by unchanged EC50 for binding but dramatically increased IC50 for current inhibition and incomplete inhibition at high nucleotide concentrations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C50, C52, C55, and C87 are strongly supported by the PCF data in Figure 3. The similar binding curves but rightward-shifted inhibition curves, combined with model fits showing increased D parameter while KA remained unchanged, provide clear evidence that C166S affects gating rather than binding. The partial inhibition at 10 mM ATP (C55) further supports this interpretation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:20:07.970472Z"
+    },
+    {
+      "id": "15f46bfa-ddce-4639-b2d8-48b04c3710d1",
+      "content_id": "e588af89-7025-488e-bca5-13c033e2ed8f",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Mutations at SUR1-K205 (K205A and K205E) affected both nucleotide binding affinity and the ability of bound nucleotide to close the channel, demonstrating a dual role for SUR1 in KATP inhibition: directly contributing to nucleotide binding at Kir6.2 and stabilizing the nucleotide-bound closed state.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7, C8, C66-C68, C71, and C90 are well-supported by the PCF data in Figure 4. The overlapping binding and inhibition curves for both K205 mutants (C66, C67), combined with model fits showing changes in both KA (decreased binding affinity, C68) and D (reduced coupling to closure, C71), provide strong evidence for the dual role of SUR1 (C8, C90). The structural context (C61-C65) supports the mechanistic interpretation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:20:07.970472Z"
+    },
+    {
+      "id": "4e72a156-ec93-4385-892e-ac03d207daea",
+      "content_id": "e588af89-7025-488e-bca5-13c033e2ed8f",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The G334D mutation causes neonatal diabetes by preventing nucleotide binding to Kir6.2, as evidenced by drastically reduced ANAP quenching (Emax = 0.08) compared to wild-type (Emax = 0.93).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35 and C86 are supported by the binding data in Figure 1H showing minimal FRET signal for the G334D mutant. The very low Emax value and high EC50 (493 \u00b5M vs 25.6 \u00b5M for wild-type) provide strong evidence that this mutation disrupts nucleotide binding. This corroborates prior hypotheses (C86) with direct binding measurements.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:20:07.970472Z"
+    },
+    {
+      "id": "bdb0a33f-cd2a-4f69-9109-e76fdd272a93",
+      "content_id": "e588af89-7025-488e-bca5-13c033e2ed8f",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Simultaneous measurement of binding and current by PCF provides insights into nucleotide regulation of KATP that would not be possible from isolated measurements of currents or binding alone.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C73 and C74 are supported by the entire body of work, particularly the ability to distinguish binding from gating effects (as shown with C166S) and to constrain model parameters that would be poorly determined from either measurement alone. The separation of binding and inhibition curves and the ability to extract both KA and D parameters demonstrate the unique advantages of the method.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:20:07.970472Z"
+    },
+    {
+      "id": "9d46c959-f96e-4042-8365-b4e2ffb3bd01",
+      "content_id": "e588af89-7025-488e-bca5-13c033e2ed8f",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Thermodynamic calculations show that saturating TNP-ATP stabilizes the closed state by -7.9 kcal/mol while saturating MgTNP-ADP stabilizes the open state by -1.9 kcal/mol, indicating that inhibition dominates when all binding sites are occupied, consistent with published measurements.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C77-C80 are supported by calculations based on the D and E parameters derived from model fits. The comparison to prior work (C80) provides additional validation. However, these calculations rely on the assumption that activation and inhibition processes are independent (C79), which may be an oversimplification.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:20:07.970472Z"
+    },
+    {
+      "id": "a44a3ee8-21c7-4b7c-8c29-53e3ca4ab69a",
+      "content_id": "e588af89-7025-488e-bca5-13c033e2ed8f",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Higher affinity binding of MgADP to the stimulatory site on SUR1 compared to the inhibitory site on Kir6.2 may explain the ability of MgADP to increase KATP currents in the presence of ATP and the bell-shaped MgADP concentration-response curve.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C82 and C83 are speculative interpretations based on comparing KA values from different experiments with different nucleotides (MgTNP-ADP vs TNP-ATP). While the hypothesis is reasonable, it lacks direct experimental support in this manuscript. The authors appropriately use cautious language ('may explain'), but additional experiments would be needed to test this hypothesis.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:20:07.970472Z"
+    },
+    {
+      "id": "101474e0-d8fb-4ecb-a70b-5c6073b1c86b",
+      "content_id": "e588af89-7025-488e-bca5-13c033e2ed8f",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The PCF approach and modeling framework developed in this study can be used to mechanistically assess disease-causing mutations in KATP and should be adaptable to other nucleotide-gated channels including CFTR and P2X receptors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C91-C93 are forward-looking statements about potential applications. While the successful application to C166S and K205 mutations (C92) provides some support, the broader applicability to other mutations (C91) and other channel types (C93) remains to be demonstrated. These are reasonable predictions but require future validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:20:07.970472Z"
+    },
+    {
+      "id": "811a8cdd-2336-4721-8d20-b25ac08456dc",
+      "content_id": "e588af89-7025-488e-bca5-13c033e2ed8f",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Background knowledge about KATP channel structure, function, nucleotide regulation, and disease-causing mutations is established through citations to prior literature.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C4, C9-C13, C15-C17, C20-C21, C47-C48, C58, C60-C65, and C84 represent established knowledge from the literature, appropriately cited throughout the manuscript. These provide the necessary context for interpreting the novel findings. The accuracy of these citations is assumed based on the references provided.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:20:07.970472Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "0bf55493-803c-4dd8-a398-92e353339dc0",
+      "result_id": "25d28478-43e1-4547-91a0-557c7ea7cd02"
+    },
+    {
+      "claim_id": "2737b998-5afc-4aa6-8498-aa40d3cc989f",
+      "result_id": "25d28478-43e1-4547-91a0-557c7ea7cd02"
+    },
+    {
+      "claim_id": "76eda8d4-f4cf-4249-ad99-c500501be9dc",
+      "result_id": "25d28478-43e1-4547-91a0-557c7ea7cd02"
+    },
+    {
+      "claim_id": "e6ece320-fa98-4d8d-a2a1-9b9b78c9e06b",
+      "result_id": "25d28478-43e1-4547-91a0-557c7ea7cd02"
+    },
+    {
+      "claim_id": "e5f44e79-31d1-4c39-aa59-472a3c5b735b",
+      "result_id": "25d28478-43e1-4547-91a0-557c7ea7cd02"
+    },
+    {
+      "claim_id": "fea869ab-1f7f-41b6-be29-214c67adcb9e",
+      "result_id": "25d28478-43e1-4547-91a0-557c7ea7cd02"
+    },
+    {
+      "claim_id": "5e6c9548-5d4a-400e-9391-97a4194b9aec",
+      "result_id": "25d28478-43e1-4547-91a0-557c7ea7cd02"
+    },
+    {
+      "claim_id": "1de6bc3c-6c66-4b71-8d20-6ea654aae4c5",
+      "result_id": "25d28478-43e1-4547-91a0-557c7ea7cd02"
+    },
+    {
+      "claim_id": "ee6cb1eb-05cf-4999-8f90-1bccceed662a",
+      "result_id": "25d28478-43e1-4547-91a0-557c7ea7cd02"
+    },
+    {
+      "claim_id": "efa0ff5a-0203-469a-8aae-db33fe896ce5",
+      "result_id": "25d28478-43e1-4547-91a0-557c7ea7cd02"
+    },
+    {
+      "claim_id": "4b12971c-552a-499a-a2c6-9044d1c48cf0",
+      "result_id": "25d28478-43e1-4547-91a0-557c7ea7cd02"
+    },
+    {
+      "claim_id": "952e7317-774f-4e06-a069-2363e768494a",
+      "result_id": "25d28478-43e1-4547-91a0-557c7ea7cd02"
+    },
+    {
+      "claim_id": "b2a1f5aa-ee9b-4fb1-a6ad-3f64f13fabaa",
+      "result_id": "33b869f6-0ad4-48a1-a2c7-6d0964843fca"
+    },
+    {
+      "claim_id": "aea3d700-157c-4ea7-a6db-c54612bab0ab",
+      "result_id": "33b869f6-0ad4-48a1-a2c7-6d0964843fca"
+    },
+    {
+      "claim_id": "b7b418af-68f9-4151-8445-541ea2df2656",
+      "result_id": "33b869f6-0ad4-48a1-a2c7-6d0964843fca"
+    },
+    {
+      "claim_id": "e1366c54-6c98-4326-a6b7-c5294a694015",
+      "result_id": "33b869f6-0ad4-48a1-a2c7-6d0964843fca"
+    },
+    {
+      "claim_id": "baf1c0d1-43e5-4967-a757-951230c174a2",
+      "result_id": "33b869f6-0ad4-48a1-a2c7-6d0964843fca"
+    },
+    {
+      "claim_id": "0ccf8fae-9969-4344-90a4-186b4fc15c39",
+      "result_id": "faf97899-89eb-4f46-9755-1820a12910c2"
+    },
+    {
+      "claim_id": "1c79be99-f24f-4c9f-91f4-df546cbb483c",
+      "result_id": "faf97899-89eb-4f46-9755-1820a12910c2"
+    },
+    {
+      "claim_id": "a6230800-5962-44f6-abbb-834b3d89ccfe",
+      "result_id": "faf97899-89eb-4f46-9755-1820a12910c2"
+    },
+    {
+      "claim_id": "0d27e15c-353e-490b-a3e5-c7056ca3bce4",
+      "result_id": "faf97899-89eb-4f46-9755-1820a12910c2"
+    },
+    {
+      "claim_id": "65b7bb62-0ef3-43af-829a-f177e9aa9440",
+      "result_id": "faf97899-89eb-4f46-9755-1820a12910c2"
+    },
+    {
+      "claim_id": "81d9c3db-1dd7-4fef-8c22-57f6a87a6670",
+      "result_id": "faf97899-89eb-4f46-9755-1820a12910c2"
+    },
+    {
+      "claim_id": "c2f7fc92-c9b2-4721-a695-1f7fd8c15843",
+      "result_id": "faf97899-89eb-4f46-9755-1820a12910c2"
+    },
+    {
+      "claim_id": "1930dd4a-3c50-46aa-ad17-8fb2cf0a7a52",
+      "result_id": "faf97899-89eb-4f46-9755-1820a12910c2"
+    },
+    {
+      "claim_id": "513b48ed-b382-4144-9a0c-530e216c98b1",
+      "result_id": "15f46bfa-ddce-4639-b2d8-48b04c3710d1"
+    },
+    {
+      "claim_id": "ff113699-191c-4c9d-8e69-01fc409d94f1",
+      "result_id": "15f46bfa-ddce-4639-b2d8-48b04c3710d1"
+    },
+    {
+      "claim_id": "bcdf2a70-192e-4960-a782-ed99ae0f6a69",
+      "result_id": "15f46bfa-ddce-4639-b2d8-48b04c3710d1"
+    },
+    {
+      "claim_id": "08f740a0-8f7c-41bb-becd-5b02dd46562c",
+      "result_id": "15f46bfa-ddce-4639-b2d8-48b04c3710d1"
+    },
+    {
+      "claim_id": "2212c4b9-6758-46ba-8c97-d40950dd1c30",
+      "result_id": "15f46bfa-ddce-4639-b2d8-48b04c3710d1"
+    },
+    {
+      "claim_id": "982e76f8-18ac-4e33-bc6d-3218a0c902c1",
+      "result_id": "15f46bfa-ddce-4639-b2d8-48b04c3710d1"
+    },
+    {
+      "claim_id": "aa29d229-0e5c-4042-94b9-c2f44f7cd6b1",
+      "result_id": "15f46bfa-ddce-4639-b2d8-48b04c3710d1"
+    },
+    {
+      "claim_id": "9b4b5c30-464a-4fdf-8f53-27faa7e91501",
+      "result_id": "15f46bfa-ddce-4639-b2d8-48b04c3710d1"
+    },
+    {
+      "claim_id": "90689cf3-5ab9-40e5-a854-c099d8ef080e",
+      "result_id": "15f46bfa-ddce-4639-b2d8-48b04c3710d1"
+    },
+    {
+      "claim_id": "85e282d8-da23-487d-ab6c-80f824a1fc03",
+      "result_id": "15f46bfa-ddce-4639-b2d8-48b04c3710d1"
+    },
+    {
+      "claim_id": "270b9006-b053-4f59-8296-808bb24b1ea3",
+      "result_id": "15f46bfa-ddce-4639-b2d8-48b04c3710d1"
+    },
+    {
+      "claim_id": "ab2a95e3-9572-499b-a5d6-c756060a6bba",
+      "result_id": "15f46bfa-ddce-4639-b2d8-48b04c3710d1"
+    },
+    {
+      "claim_id": "53a2862b-8ad5-48c9-8c4f-6868823f6b25",
+      "result_id": "4e72a156-ec93-4385-892e-ac03d207daea"
+    },
+    {
+      "claim_id": "c5164345-320b-4d6e-89a8-0ee1fcb9b6af",
+      "result_id": "4e72a156-ec93-4385-892e-ac03d207daea"
+    },
+    {
+      "claim_id": "f393f63c-958d-4db3-8f23-9a0ab7169896",
+      "result_id": "bdb0a33f-cd2a-4f69-9109-e76fdd272a93"
+    },
+    {
+      "claim_id": "90c98b4b-1019-4c4c-a4ce-de51327d4b87",
+      "result_id": "bdb0a33f-cd2a-4f69-9109-e76fdd272a93"
+    },
+    {
+      "claim_id": "9261b62d-9239-4e06-93cb-c9ed0ccbc274",
+      "result_id": "9d46c959-f96e-4042-8365-b4e2ffb3bd01"
+    },
+    {
+      "claim_id": "2c476959-80ea-43b6-9fbf-c35772731355",
+      "result_id": "9d46c959-f96e-4042-8365-b4e2ffb3bd01"
+    },
+    {
+      "claim_id": "1bd216f1-f651-4737-b22a-4787cb665339",
+      "result_id": "9d46c959-f96e-4042-8365-b4e2ffb3bd01"
+    },
+    {
+      "claim_id": "1600dd2a-d0a9-45b0-ac10-1363c1e4fc99",
+      "result_id": "9d46c959-f96e-4042-8365-b4e2ffb3bd01"
+    },
+    {
+      "claim_id": "f8406367-8d94-412c-8c97-701109035923",
+      "result_id": "a44a3ee8-21c7-4b7c-8c29-53e3ca4ab69a"
+    },
+    {
+      "claim_id": "bb5501f2-8da9-481d-bb3a-1c17266cc8d8",
+      "result_id": "a44a3ee8-21c7-4b7c-8c29-53e3ca4ab69a"
+    },
+    {
+      "claim_id": "c4029e6d-b19e-4bff-97e1-e3ff7df94f08",
+      "result_id": "101474e0-d8fb-4ecb-a70b-5c6073b1c86b"
+    },
+    {
+      "claim_id": "c43910b1-2ca8-4c86-95c4-476084db55e7",
+      "result_id": "101474e0-d8fb-4ecb-a70b-5c6073b1c86b"
+    },
+    {
+      "claim_id": "a1f52828-5883-4020-a869-f4a404bf02c7",
+      "result_id": "101474e0-d8fb-4ecb-a70b-5c6073b1c86b"
+    },
+    {
+      "claim_id": "e68ca93c-9ca8-4105-ae9b-13ee01509039",
+      "result_id": "811a8cdd-2336-4721-8d20-b25ac08456dc"
+    },
+    {
+      "claim_id": "611460b2-b6c6-42df-91cf-9c215fcd358a",
+      "result_id": "811a8cdd-2336-4721-8d20-b25ac08456dc"
+    },
+    {
+      "claim_id": "d285e7f0-a225-421b-9c4b-23a3bea1955d",
+      "result_id": "811a8cdd-2336-4721-8d20-b25ac08456dc"
+    },
+    {
+      "claim_id": "3b159fb5-1215-4b41-aea1-d2778e2b1b2f",
+      "result_id": "811a8cdd-2336-4721-8d20-b25ac08456dc"
+    },
+    {
+      "claim_id": "763f647c-3df9-49c8-940e-56bca3645921",
+      "result_id": "811a8cdd-2336-4721-8d20-b25ac08456dc"
+    },
+    {
+      "claim_id": "f088c17b-52cd-487d-b08a-e83e1871eefb",
+      "result_id": "811a8cdd-2336-4721-8d20-b25ac08456dc"
+    },
+    {
+      "claim_id": "71ebe038-f542-4284-a945-86a44235222b",
+      "result_id": "811a8cdd-2336-4721-8d20-b25ac08456dc"
+    },
+    {
+      "claim_id": "13402ef2-b882-4de5-8527-54c2c9df148b",
+      "result_id": "811a8cdd-2336-4721-8d20-b25ac08456dc"
+    },
+    {
+      "claim_id": "dacf4b44-b0f3-4865-bddf-238b8c06d158",
+      "result_id": "811a8cdd-2336-4721-8d20-b25ac08456dc"
+    },
+    {
+      "claim_id": "42444d65-0f67-46eb-b6db-67a6abdb73e8",
+      "result_id": "811a8cdd-2336-4721-8d20-b25ac08456dc"
+    },
+    {
+      "claim_id": "8816c08c-db81-407a-9585-c4efd3acdfb6",
+      "result_id": "811a8cdd-2336-4721-8d20-b25ac08456dc"
+    },
+    {
+      "claim_id": "3aacf4ff-b4c0-43e9-93ac-331690524136",
+      "result_id": "811a8cdd-2336-4721-8d20-b25ac08456dc"
+    },
+    {
+      "claim_id": "bb75b6f2-c11d-4ce9-bd75-9e20a421d904",
+      "result_id": "811a8cdd-2336-4721-8d20-b25ac08456dc"
+    },
+    {
+      "claim_id": "248fcfce-4059-4230-ae1e-9a3352d4eee5",
+      "result_id": "811a8cdd-2336-4721-8d20-b25ac08456dc"
+    },
+    {
+      "claim_id": "1c79be99-f24f-4c9f-91f4-df546cbb483c",
+      "result_id": "811a8cdd-2336-4721-8d20-b25ac08456dc"
+    },
+    {
+      "claim_id": "a6230800-5962-44f6-abbb-834b3d89ccfe",
+      "result_id": "811a8cdd-2336-4721-8d20-b25ac08456dc"
+    },
+    {
+      "claim_id": "59a25e61-5191-41da-a172-754adfe02b84",
+      "result_id": "811a8cdd-2336-4721-8d20-b25ac08456dc"
+    },
+    {
+      "claim_id": "587e9598-0460-4d54-a3ff-c4cc11285ed6",
+      "result_id": "811a8cdd-2336-4721-8d20-b25ac08456dc"
+    },
+    {
+      "claim_id": "bcdf2a70-192e-4960-a782-ed99ae0f6a69",
+      "result_id": "811a8cdd-2336-4721-8d20-b25ac08456dc"
+    },
+    {
+      "claim_id": "08f740a0-8f7c-41bb-becd-5b02dd46562c",
+      "result_id": "811a8cdd-2336-4721-8d20-b25ac08456dc"
+    },
+    {
+      "claim_id": "2212c4b9-6758-46ba-8c97-d40950dd1c30",
+      "result_id": "811a8cdd-2336-4721-8d20-b25ac08456dc"
+    },
+    {
+      "claim_id": "982e76f8-18ac-4e33-bc6d-3218a0c902c1",
+      "result_id": "811a8cdd-2336-4721-8d20-b25ac08456dc"
+    },
+    {
+      "claim_id": "aa29d229-0e5c-4042-94b9-c2f44f7cd6b1",
+      "result_id": "811a8cdd-2336-4721-8d20-b25ac08456dc"
+    },
+    {
+      "claim_id": "0d6f8fba-4edd-4dff-bac4-2a62827c1dcc",
+      "result_id": "811a8cdd-2336-4721-8d20-b25ac08456dc"
+    }
+  ],
+  "comparisons": []
+}

@@ -1,0 +1,412 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "TRP channels are a diverse family of cation-permeable ion channels with widespread biological functions and clinical significance. The family comprises seven subfamilies with 136 structures available at the time of analysis, representing a landmark achievement in cryo-EM structural biology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C7 are well-supported by extensive citations to established literature. These background claims provide context from prior work and are appropriately referenced, establishing the foundation for the current structural analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "TRP channels adopt a conserved tetrameric architecture with six transmembrane helices per subunit, featuring a domain-swapped arrangement where S1-S4 domains interact with adjacent S5-S6 pore domains, and most contain a TRP box helix extension.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C11 describe well-established structural features of TRP channels supported by the analyzed structures and Figure 1. These architectural features are consistently observed across the 120 structures examined and are supported by prior structural studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C12",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "A structure-based alignment of 120 TRP channel transmembrane domains was constructed using Fr-TM-Align, addressing the challenge of low sequence identity (16%) across the family.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C19 describe the methodological approach clearly with appropriate citations. The selection of 120 structures from 136 available (resolution \u22645\u00c5) and use of Fr-TM-Align for structure-based alignment is well-justified given the low sequence identity problem cited from prior work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "TRP channel transmembrane domains share similar global folds (TM-scores >0.6) and cluster according to subfamily assignments, with structural similarity extending to voltage-gated potassium channels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C22 are supported by the TM-score analysis shown in Figure 2. The hierarchical clustering successfully recapitulates known subfamily relationships despite varied experimental conditions, validating the structural alignment approach. The comparison to Kv channels (TM-scores 0.46-0.78) appropriately establishes evolutionary relationships.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Pore domains are highly conserved across TRP subfamilies at the sequence level, while S1-S4 domains are more variable, with subfamily clustering more robust when based on S1-S4 domain structure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C25 are supported by sequence analysis (Figure 2\u2014figure supplement 1) and clustering comparisons (Figure 2\u2014figure supplements 2-3). The observation that S1-S4 domains better distinguish subfamilies despite lower sequence conservation is an interesting finding supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C26",
+      "C27"
+    ],
+    "result": "Xenopus laevis TRPV4 and rTRPV6 L495Q mutant structures are notable exceptions in clustering analysis, with the latter adopting a non-domain-swapped architecture.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C27 identify important outliers in the structural alignment. The low TM-scores for these structures and the explanation for rTRPV6 L495Q based on its non-domain-swapped architecture (supported by citations) are well-documented. However, the reason for TRPV4's distinct clustering remains unclear, appropriately noted as requiring additional structures.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "The intracellular end of S6 helices contains constrictions at four positions spanning three helical turns that likely function as a cytoplasmic gate. In 38 of 55 apo structures, pore radii \u22641.0 \u00c5 indicate non-conducting states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C32 are supported by HOLE analysis (Figures 3-4) and functional studies (C28-C29 cite prior work). The identification of four constriction sites and quantification of pore radii in apo structures provides strong evidence for closed states. The inference that hydrophobic-lined narrow pores represent non-conducting states is reasonable given biophysical principles.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C33",
+      "C34"
+    ],
+    "result": "Wild-type human TRPV6 structures with S6 gate radii of 2.7-3.1 \u00c5 may represent open states, though this is smaller than expected given the channel's high open probability (0.25-0.9) in cellular membranes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C33-C34 present an interesting case but with uncertainty. While TRPV6's high open probability (C33, cited) suggests structures should capture open states, the observed gate radii (2.7-3.1 \u00c5) are at the lower limit for hydrated ion permeation. The authors appropriately express uncertainty about whether these dimensions can support the measured single-channel conductance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C35",
+      "C36"
+    ],
+    "result": "Among activator-bound structures, 16 of 35 have pore radii <1.0 \u00c5 suggesting non-conducting states, while zebrafish TRPM2 bound to ADP-ribose and Ca2+ (4.4 \u00c5 radius) most likely represents an open state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C36 are supported by pore radius analysis (Figures 3-4). The identification that nearly half of activator-bound structures appear closed is an important finding. The comparison of TRPM2 gate dimensions (4.4 \u00c5) to open Kv channels (4.2-15 \u00c5) provides strong evidence for this being an open state.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C37",
+      "C38"
+    ],
+    "result": "TRPV1 has high single-channel conductance (90-100 pS) and must accommodate quaternary ammonium blockers up to 10 \u00c5 diameter, suggesting the open pore exceeds 3 \u00c5 radius.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C38 are well-supported by citations to functional studies. These constraints from electrophysiology provide important benchmarks for evaluating whether structural models represent open states, strengthening the argument that most current structures are closed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C39",
+      "C40"
+    ],
+    "result": "There is no striking correlation between internal pore dimensions and the presence of activators or inhibitors, but the prevalence of cytoplasmic constrictions supports S6 functioning as a universal gate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C40 are supported by analysis in Figure 3\u2014figure supplement 3. The lack of correlation between ligand binding and pore opening is a surprising and important negative result. The conclusion about S6 as a universal gate is appropriately conservative, acknowledging that open states remain to be determined for most channels.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C41",
+      "C42"
+    ],
+    "result": "The extracellular selectivity filter region is narrow across TRP subfamilies, consistent with its role in ion selectivity. TRP channels exhibit three selectivity patterns: Ca2+-selective (TRPV5/6), monovalent-selective (TRPM4/5), and non-selective.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C42 are supported by structural analysis (Figures 3-5) and citation to prior classification. The observation of narrow extracellular regions across subfamilies is consistent with selectivity filter function, though some structures (e.g., TRPM8) show poor resolution in this region.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Non-selective TRP channels share three conserved structural features in their selectivity filters: a conserved Gly enabling backbone bending, two backbone carbonyls positioned toward the filter base, and an acidic residue or Gln at the extracellular filter end.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C46 identify conserved structural features supported by analysis in Figures 4-5. The functional importance of the conserved Asp is validated by cited mutagenesis studies (C46). These features provide a structural framework for understanding non-selective permeation, though the authors appropriately note that filter dimensions vary considerably.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Ca2+-selective TRPV5 and TRPV6 channels differ from non-selective channels in three key features: Thr instead of Gly after the pore helix, an extended filter with three backbone carbonyls, and a consistently narrower pore with observed divalent ion density.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C51 are well-supported by structural analysis (Figure 5) and functional validation through mutagenesis (C50, cited). The identification of ion density in the TRPV6 X-ray structure (C51) provides direct evidence for the proposed selectivity mechanism involving ion coordination and partial dehydration.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Monovalent-selective TRPM4 channels share features with non-selective channels but contain a conserved Gln that hydrogen bonds with adjacent backbone carbonyls, proposed to stabilize a filter permeable to hydrated monovalent but not divalent ions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C54 present a mechanistic hypothesis for monovalent selectivity supported by structural observations and functional validation. The mutagenesis data (C54, cited) showing that Gln mutations disrupt selectivity strongly supports the proposed mechanism. However, C53 appropriately identifies this as a hypothesis from cited work rather than proven mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Selectivity filters adopt distinct conformations in apo versus activator-bound states. In TRPV1, the filter expands from ~0.5 \u00c5 to 2.5 \u00c5 radius upon toxin binding, but functional studies show Ag+ ions can permeate in the closed state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C57 document conformational changes in selectivity filters with important functional implications. The structural observation (C56) is clear, but the functional data (C57, cited) showing ion permeation in closed states challenges the hypothesis that the filter acts as a gate. This appropriately highlights the complexity of filter dynamics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "The vanilloid-binding pocket in TRPV1/TRPV2 is located at the S1-S4/S5-S6 interface and contacts 19 residues. Similar hydrophobic cavities exist in all TRP subfamilies, and vanilloids can inhibit TRPM8.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C62 characterize the vanilloid-binding site with structural detail (Figures 6-7) and identify its conservation across subfamilies. The observation of similar pockets in all TRP subfamilies (C61) is an important finding. C62's citation of vanilloid effects on TRPM8 supports the functional relevance of these conserved pockets.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C63",
+      "C64"
+    ],
+    "result": "DkTx binds to the outer pore domain perimeter of TRPV1, interacting with the extracellular S6 end and pore helix, and is selective for TRPV1 over other TRP channels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C64 describe DkTx binding supported by structural data (Figure 7) and citations. The selectivity data (C64, cited) is important for understanding why this binding site differs from the more conserved vanilloid pocket. The large interaction surface (655-556 \u00c5\u00b2) and lipid interactions distinguish this from small molecule binding sites.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "The cooling-agent-binding pocket in TRPM8 is located entirely within the S1-S4 domain, distinct from but near the vanilloid site. Residues lining this pocket are highly conserved in TRPM2 and TRPM4.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C67 characterize a distinct ligand-binding site supported by structural analysis (Figures 6, 8). The conservation analysis (C67) showing high conservation in TRPM2/4 but not other subfamilies is well-documented. This raises the interesting question of why TRPM2/4 are not cooling-agent sensitive despite pocket conservation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C68",
+      "C69"
+    ],
+    "result": "Ca2+ binding sites in TRPM2, TRPM4, and TRPM8 involve acidic and polar residues in S2-S3. In TRPM8, the Ca2+ site is contiguous with but does not directly contact the cooling-agent pocket.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C69 identify Ca2+ binding sites supported by structural data (Figure 8) and extensive citations. The spatial relationship between Ca2+ and cooling-agent sites in TRPM8 (C69) suggests potential allosteric mechanisms. The structural evidence for Ca2+ binding is strong, though the authors note these are density attributions rather than definitively identified ions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "2-APB binds at three distinct sites in TRPV3 and one site in TRPV6. All sites show poor sequence conservation across TRP channels, despite 2-APB modulating many different TRP channels as agonist or antagonist.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C76 document multiple 2-APB binding sites with structural and functional validation. The lack of sequence conservation (C75) despite broad functional effects (C76, cited) is surprising and well-documented. The authors appropriately suggest that side-chain character rather than specific sequence may determine 2-APB binding, and note potential complications from 2-APB chemical instability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C77",
+      "C78"
+    ],
+    "result": "CBD binds TRPV2 and ML-SA1 binds TRPML1 in a pocket at the interface between S6 and neighboring pore loop/S5/S6 helices, lined by hydrophobic residues including bulky aromatics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C78 identify another conserved ligand-binding site supported by structural data (Figure 9\u2014figure supplement 1) and citations to functional validation. The hydrophobic character of this pocket and its conservation suggest it may be a general lipid-binding site that can accommodate various hydrophobic ligands.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C79",
+      "C80"
+    ],
+    "result": "\u03c0-helix elements are frequently observed in a narrow region of S6 across TRP structures. There is a slight positive correlation between pore radius and S6 \u03c0-helix length.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C79-C80 identify \u03c0-helices in S6 using DSSP analysis (Figure 10). While the observation of \u03c0-helices is supported, the correlation analysis (C80) is limited by lack of structures with large pore radii and the DSSP requirement for minimum helix length. The authors appropriately express caution about interpreting the functional role of \u03c0-helices in gating.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C81",
+      "C82"
+    ],
+    "result": "310 helices are commonly found at the intracellular end of S4 helices across all TRP subfamilies, regardless of activator presence, similar to voltage-gated ion channels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C82 document 310 helices in S4 supported by DSSP analysis (Figure 10). The observation that these occur regardless of activation state and their similarity to voltage-gated channels is interesting, though the functional significance remains unclear. The structural analysis is sound but interpretation is appropriately limited.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "The analysis strongly supports that the intracellular S6 region functions as a conserved gate with constrictions at four positions. Open states remain to be determined for most TRP channels, with zebrafish TRPM2 (4.4 \u00c5 radius) most likely representing an open state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C85 present major conclusions from the structural analysis. The evidence for S6 as a universal gate is strong (multiple constrictions across subfamilies). The conclusion that open states are lacking for most channels is well-supported by pore radius analysis. The identification of TRPM2 as likely open is appropriately based on comparison to Kv channels.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C86",
+      "C87"
+    ],
+    "result": "Structures of TRPV6 and TRPM4 have led to working hypotheses for divalent and monovalent selectivity mechanisms, with TRPV6 showing ion binding in a narrow filter region requiring partial dehydration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C87 summarize mechanistic hypotheses appropriately identified as working models. The observation of ion density in TRPV6 (C87) provides direct structural evidence for the dehydration mechanism. The authors appropriately note these are hypotheses requiring further validation through higher-resolution structures and MD simulations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C88"
+    ],
+    "result": "The S1-S4 domain and its interface with the S5-S6 pore domain and TRP box functions as a hot spot for ligand binding that promotes channel opening.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C88 synthesizes the ligand-binding site analysis into a unifying conclusion. The identification of this region as a ligand hot spot is well-supported by the multiple binding sites documented (vanilloids, cooling agents, Ca2+, 2-APB, etc.). This represents an important structural principle for understanding TRP channel pharmacology.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Well-defined phospholipid densities interact with TRPV1 and DkTx in nanodisc structures. PIP2 binds TRPM8 near Ca2+ and cooling-agent sites and is required for TRPM2 and TRPM8 activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C91 document lipid interactions supported by structural observations and functional studies (C91, cited). The PIP2 binding site in TRPM8 (C90) is particularly well-resolved and involves multiple domains. These observations highlight the importance of lipid regulation, though the authors appropriately note that most lipid densities are insufficiently resolved for definitive identification.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C92",
+      "C93"
+    ],
+    "result": "Despite analyzing 120 structures, the study identifies the need for additional structures, particularly fully open states for most TRP channels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C93 present important conclusions about gaps in structural coverage. The identification that open states are lacking despite extensive structural work is a key finding supported by the pore radius analysis. This appropriately frames future research directions and acknowledges limitations of current structural data.",
+    "result_type": "MAJOR"
+  }
+]

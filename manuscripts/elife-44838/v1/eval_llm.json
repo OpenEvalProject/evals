@@ -1,0 +1,250 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Monkeys performed a probabilistic choice task where reward probabilities varied continuously based on their choices, without explicit cues, and their behavior conformed to the matching law.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C16 and C77-C80 collectively describe the experimental task design and demonstrate that animals successfully performed matching behavior. The behavioral data (Figures 1C-E) show clear matching between choice ratios and reward ratios, and adaptation to uncued probability changes, supporting the task design and behavioral performance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "DLPFC neurons encoded objective risk (variance derived from true reward probability) for specific objects and actions, with approximately 50% of task-related neurons showing object-risk coding and 28% showing action-risk coding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C25 are supported by multiple linear regression analyses controlling for confounding variables (choice, action, cue position, reward probability). Single-neuron examples (Figures 2A-B, 2E) and population analyses (Figure 2D) demonstrate risk coding across task periods. The classification approach (C22) provides additional validation of object-specific risk coding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Animals exhibited risk-seeking behavior, with choices influenced by both subjective value and subjective risk derived from the variance of recent reward experiences over approximately 10 trials.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C32 are supported by logistic regression analyses (Figure 3A-F) showing declining influences of past rewards/choices and significant positive effects of risk on choice independent of value. Model comparison (Table 1, C32) demonstrates that the subjective value+risk model outperforms alternatives including models without risk and reinforcement learning variants.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "DLPFC neurons encoded subjective object risk (variance from recent reward history) for specific objects, with 46% of task-related neurons showing this coding. These signals occurred before choice, were independent of object value, and followed the characteristic inverted-U relationship with reward probability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C41 are supported by multiple regression analyses controlling for value (C34, shared variance R\u00b2=0.148), choice independence tests (C35, 92% choice-independent), and population analyses showing inverted-U relationships (C39, Figure 4E) and appropriate trial-by-trial updating (C40-C41, Figure 4F). Single-neuron examples (Figure 4A-B) demonstrate the coding pattern.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Subjective risk measures better explained neuronal activity than objective risk measures, with more neurons identified as coding subjective risk in competitive stepwise regression models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C44 are supported by multiple control analyses: sliding-window regression identified similar numbers of risk neurons (C42), direct comparison showed significantly different distributions of explained variance (C43, p=0.0015 K-S test, p=0.0406 Wilcoxon), and stepwise regression identified more subjective risk neurons (107 vs 83, C44). These converging analyses support the superiority of subjective risk measures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "DLPFC neurons encoded subjective action risk for specific saccade directions, with 44% of task-related neurons showing this coding. These signals were action-specific, choice-independent, and followed the inverted-U relationship with reward value.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C52 are supported by regression analyses (Equation 14), single-neuron examples (Figure 5A-B), classification analyses (C49), and population analyses showing inverted-U relationships (C51, Figure 5E) and appropriate updating (C52, Figure 5F). The high proportion of choice-independent responses (90%, C50) supports the interpretation as decision inputs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Object risk and action risk were encoded by largely distinct neuronal populations in DLPFC, with neurons intermingled anatomically without apparent clustering.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C55 are supported by separate regression analyses showing 21% of neurons encoded only object risk and 19% encoded only action risk. Anatomical reconstruction (Figure 4\u2014figure supplement 1, C55) shows intermingling consistent with previous studies of object-selective and location-selective neurons.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Population decoding using support vector machines achieved up to 85% accuracy for discriminating risk levels from unselected DLPFC neurons, with accuracy depending on population size and individual neuron sensitivities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C61 are supported by systematic decoding analyses (Figure 6A-E) showing accuracy increases with neuron number (C57), differential accuracy for object vs action risk (C58), dependence on individual neuron sensitivities (C59), separation of object and action risk information (C60), and robustness to controlling for other variables (C61). The leave-one-out cross-validation approach is appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "DLPFC neurons dynamically combined risk signals with reward history, value, and choice within trials, with risk and value signals arising earlier than choice signals, and most neurons showing mixed selectivity rather than pure coding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C66 are supported by sliding-window regression analyses (Equation 11) showing joint coding patterns (Figure 7A-F), latency analyses demonstrating temporal ordering (C65, p<0.0001, Figure 7G), and prevalence of mixed selectivity (C66, p<1.6\u00d710\u207b\u00b9\u00b3, Figure 7I). The dynamic transitions are consistent with theoretical predictions of decision models.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Some DLPFC neurons encoded utility (weighted combination of value and risk), but utility coding did not account for the main finding of risk coding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C69 are supported by regression analyses identifying 97 utility-coding neurons (C67), significant population decoding (C68, Figure 7\u2014figure supplement 2E), and control analyses showing that 34 neurons coded risk but not utility and that stepwise regression identified more risk responses (222) than utility responses (186) (C69). This demonstrates that risk and utility are separately encoded.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C70"
+    ],
+    "result": "Prefrontal neurons signal reward variance as object risk and action risk, calculated internally from recent experience rather than from explicit cues, with neuronal signals transitioning from reward to risk to choice within trials.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This summary result integrates the major findings from claims C2-C6 and C70. The evidence from neurophysiological recordings, regression analyses, population decoding (up to 85% accuracy), and sliding-window analyses of temporal dynamics collectively support this conclusion. The experimental design with uncued probabilities (C3, C14) ensures risk must be calculated internally.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C81"
+    ],
+    "result": "Risk is defined as variance of reward probability distributions, representing the most basic form of economic risk, with variance following an inverted-U function of probability when reward magnitude is constant.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C7-C10, and C81 establish the theoretical framework for the study. These are well-established concepts in economics and statistics, supported by appropriate citations (C7, C9) and mathematical properties (C81, Figure 1A). The inverted-U relationship is a fundamental property of variance for binary outcomes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C17",
+      "C18"
+    ],
+    "result": "Previous neurophysiological studies used explicit risk-descriptive cues, whereas naturalistic decision-making requires animals to estimate risk from experience without such cues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C18 are supported by extensive citations to previous studies (C17) and represent a valid conceptual distinction motivating the current study design. This establishes the novelty of the current approach compared to prior work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C71",
+      "C72"
+    ],
+    "result": "Variance-sensing neurons in prefrontal cortex may provide a physiological basis for computing abstract risk representations and provide distinct risk inputs to economic decision processes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C71-C72 are speculative interpretations of the functional significance of the findings. While the neurophysiological data support the existence of risk-coding neurons, the causal role in decision-making and the mechanistic basis for variance computation require additional experiments (e.g., inactivation studies, simultaneous recordings from multiple areas) to be definitively established.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C84",
+      "C85"
+    ],
+    "result": "The study used appropriate methods including ethical approval, two experimentally naive macaque monkeys, histological verification of recording sites, and standard statistical criteria for neuronal analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C76 and C84-C85 describe methodological details that are standard for neurophysiological studies. Ethical approval is documented (C73), sample size is typical for single-unit recording studies (C74), histological verification is appropriate (C76), and statistical criteria are clearly stated (C84-C85).",
+    "result_type": "MINOR"
+  }
+]

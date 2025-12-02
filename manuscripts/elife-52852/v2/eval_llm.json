@@ -1,0 +1,309 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C18",
+      "C19",
+      "C20",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "Picrotoxin (PTX) acts as a use-dependent antagonist at GABAergic synapses in rat hippocampal cultures. PTX at 50 \u00b5M completely abolishes mIPSCs within 5 minutes and causes faster decay times in both spontaneous and evoked currents. The block occurs as a function of stimulation number rather than time, demonstrating use-dependency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C18-C20, and C83-C85 provide converging evidence from multiple experimental approaches (decay time analysis, dose-response, and stimulation-dependent block) with appropriate statistical tests. The data in Figures 1 and 1-supplement 1 clearly demonstrate use-dependent block with significant p-values (p<0.0001 for multiple comparisons).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "The rate of PTX-mediated GABAAR block is proportional to presynaptic release probability at inhibitory synapses. Increasing extracellular Ca2+ concentration (0.5-8 mM) increases release probability (measured by paired-pulse ratio and initial amplitude) and accelerates the rate of GABAAR block by PTX.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C26 and C91-C93 demonstrate a clear relationship between release probability and block rate using Ca2+ manipulation. The statistical analyses (one-way and two-way ANOVAs with post-hoc tests) show significant effects across multiple Ca2+ concentrations. This validates PTX as a tool for measuring release probability, analogous to MK801 at glutamatergic synapses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "Approximately 40% of the evoked GABAergic response in hippocampal cultures is mediated by receptors exclusively activated by evoked neurotransmission. After 5 minutes of PTX treatment at rest (which blocks all spontaneously activated receptors), 40.1\u00b19.6% of the evoked response remains, similar to the 39.7\u00b14.6% remaining after 8 minutes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C33 and C94-C96 provide strong evidence for partial segregation using multiple controls (high Cl- internal solution, TTX validation, time course analysis). The quantitative estimate of ~40% is well-supported by statistical analysis (one-way ANOVA, p=0.0032) and the plateau in block after 5 minutes indicates complete block of spontaneously activated receptors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "PTX acts as a use-dependent blocker in hippocampal slices, with block rate proportional to release probability. Increasing extracellular Ca2+ (0.5-2 mM) increases release probability (decreased paired-pulse ratio, increased fIPSP amplitude) and accelerates GABAAR block.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C36 and C101-C103 replicate the culture findings in acute slices with appropriate statistical tests (repeated measures two-way ANOVA, one-way ANOVA). The consistency between culture and slice preparations strengthens the conclusion that PTX is use-dependent in physiologically relevant preparations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C104",
+      "C105"
+    ],
+    "result": "In hippocampal slices, approximately 34% of the evoked GABAergic response is mediated by receptors exclusively activated by evoked neurotransmission. Following 10 minutes of PTX application at rest, 34.05\u00b15.37% of the baseline response remains, similar to the ~40% observed in cultures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C38 and C104-C105 demonstrate partial segregation in slices with strong statistical support (one-way ANOVA, p<0.0001). The consistency between slice (34%) and culture (40%) preparations provides robust evidence for partial segregation across experimental systems. The 10-minute timepoint in slices likely accounts for slower drug perfusion compared to cultures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "Recovery of mIPSCs following GABAAR block with KCl and PTX is significantly enhanced by evoked stimulation, indicating partial overlap between receptors activated by spontaneous and evoked release. Without stimulation, recovery is minimal, consistent with low spontaneous release rates (~1 vesicle/min/synapse).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C46 and C106-C108 provide complementary evidence for partial overlap using a recovery paradigm. The statistical analysis (Sum-of-squares F test, p=0.0014) demonstrates significant differences between stimulated and unstimulated conditions. The use-dependent unblock (Figure 5-supplement 1) further validates the mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C109"
+    ],
+    "result": "Using muscimol instead of KCl to block GABAARs, stimulation significantly increases mIPSC recovery, confirming partial overlap of receptors activated by spontaneous and evoked release. This validates that the findings are not specific to depolarization-induced block.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C48 and C109 replicate the KCl findings using an alternative blocking method (muscimol), strengthening the conclusion. The statistical analysis (Sum-of-squares F test, p=0.0107) shows significant enhancement of recovery with stimulation. This control addresses potential concerns about KCl-specific effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C65"
+    ],
+    "result": "Evoked and spontaneous neurotransmission are partially segregated at inhibitory synapses, with 34-40% of evoked responses mediated by receptors exclusively activated by evoked release. This represents a distinct organizing principle compared to the near-complete segregation at excitatory synapses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C53 and C65 synthesize the major findings from both culture and slice experiments. The quantitative estimates are well-supported by multiple experimental approaches (block at rest, recovery experiments) and consistent across preparations. The conclusion of partial (not complete) segregation is appropriately cautious given the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C49",
+      "C50"
+    ],
+    "result": "PTX binds within the GABAAR pore to stabilize a closed state rather than simply blocking conductance, and recovery from PTX block is only partially use-dependent.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C50 are supported by citations to structural studies (Masiulis et al., 2019) and prior pharmacological work (Newland and Cull-Candy, 1992). These caveats are important for interpreting the experimental results and are appropriately acknowledged by the authors.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C58",
+      "C64",
+      "C66",
+      "C110"
+    ],
+    "result": "The partial segregation at inhibitory synapses may arise through spatial separation within synapses or specialization across different synapses. This may reflect greater molecular overlap in spontaneous/evoked machinery at inhibitory versus excitatory synapses, or reduced necessity for segregation given fewer chloride-mediated signaling targets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C55-C56, C58, C64, C66, and C110 are explicitly speculative models proposed to explain the findings. While these are reasonable hypotheses based on the data and prior literature, they lack direct experimental support in this manuscript. The authors appropriately present these as possibilities rather than conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C1",
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "At excitatory synapses, glutamatergic receptors (AMPA and NMDA) activated by spontaneous and evoked neurotransmission show near-complete segregation, with distinct downstream signaling consequences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C9-C12 summarize established knowledge from prior work, supported by multiple citations (Melom et al., 2013; Peled et al., 2014; Sara et al., 2011; Atasoy et al., 2008; Reese and Kavalali, 2016; Autry et al., 2011; and others). This provides important context for the current findings at inhibitory synapses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "At inhibitory synapses, spontaneous release is partly coupled to voltage-activated Ca2+ channels and regulated by synaptotagmin-1, unlike at excitatory synapses where these processes are more distinct.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C61 are supported by citations to prior studies (Chung et al., 2010; Tsintsadze et al., 2017; Vyleta and Smith, 2011; Williams and Smith, 2018; Courtney et al., 2018). This provides mechanistic context for why inhibitory synapses might show less segregation than excitatory synapses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C28",
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "TTX application does not affect spontaneous event amplitudes or frequencies in the experimental conditions used, confirming that recorded events are bona fide mIPSCs and that mIPSCs are unaffected by the metabolic rundown observed in evoked recordings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28, C97-C100 provide important methodological validation. The statistical tests (unpaired t-tests, p>0.05) confirm no effect of TTX, supporting that network activity is already suppressed by blocking excitatory transmission. This validates the experimental approach and addresses potential confounds.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "50 \u00b5M PTX blocks mIPSCs more completely than 10 \u00b5M PTX, with 50 \u00b5M causing drastic decreases in both frequency and amplitude within 8 minutes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C90 provide dose-response data supporting the choice of 50 \u00b5M PTX for subsequent experiments. The statistical analyses (paired t-tests with significant p-values) demonstrate concentration-dependent effects. This is important methodological validation shown in Figure 1-supplement 1.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Methodological details for cell culture preparation, electrophysiology recording conditions, hippocampal slice preparation, and field recording procedures are provided.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C82 describe standard methodological procedures that are appropriately detailed for reproducibility. The validation that bicuculline did not further decrease responses after PTX (C78) confirms complete GABAAR block. These are essential methodological details but not primary findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C2",
+      "C6",
+      "C7",
+      "C8",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "Background knowledge about inhibitory versus excitatory synapses, evoked versus spontaneous neurotransmission, and PTX pharmacology is established from prior literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C6-C8, C13-C17 provide essential background context supported by appropriate citations. Claim C17's critical assessment that prior PTX studies used exogenous GABA (not synaptic release) appropriately motivates the current work. These establish the rationale for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C54",
+      "C57",
+      "C62",
+      "C63"
+    ],
+    "result": "Synapses are organized into nano-columns where single vesicles activate juxtaposed receptors. Excitatory synapses can exhibit both or exclusively spontaneous/evoked release. Chloride flow through GABAARs has fewer biochemical signaling targets than Ca2+ through NMDA receptors, though GABAergic transmission can indirectly regulate dendritic Ca2+ signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54, C57, C62-C63 summarize relevant prior work (Biederer et al., 2017; Maschi and Klyachko, 2017; Tang et al., 2016; Leitz and Kavalali, 2014; Chen et al., 2019; Heubl et al., 2017; Piala et al., 2014; Chiu et al., 2013; Higley, 2014) that provides context for interpreting the partial segregation findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C21"
+    ],
+    "result": "Stimulation in the absence of PTX leads to a small decrease in eIPSC peak amplitude, far less than with PTX, which may reflect metabolic rundown.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C21 is supported by experimental observation (Figure 1E) and includes appropriate speculation about metabolic rundown. This control is important for demonstrating that the PTX-induced decrease is not simply due to recording conditions. The speculation is appropriately qualified with 'may reflect.'",
+    "result_type": "MINOR"
+  }
+]

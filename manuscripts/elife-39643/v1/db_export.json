@@ -1,0 +1,1531 @@
+{
+  "submission": {
+    "id": "9fd49b1e-1e55-4474-be20-b2e296f5d560",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T10:30:25.803683Z",
+    "updated_at": "2025-12-02T10:30:25.803683Z"
+  },
+  "content": [
+    {
+      "id": "e2011ab7-edd0-4f52-8e62-4150861051ec",
+      "submission_id": "9fd49b1e-1e55-4474-be20-b2e296f5d560",
+      "content_type": "manuscript",
+      "content_text": "# Maintenance of homeostatic plasticity at the Drosophila neuromuscular synapse requires continuous IP3-directed signaling\n\n## Authors\n\n- Thomas D James<sup>1</sup> ([ORCID: 0000-0003-0949-4783](https://orcid.org/0000-0003-0949-4783))\n- Danielle J Zwiefelhofer<sup>1</sup> ([ORCID: 0000-0001-7555-2908](https://orcid.org/0000-0001-7555-2908))\n- C Andrew Frank<sup>1</sup> ([ORCID: 0000-0001-9599-421X](https://orcid.org/0000-0001-9599-421X)) \u2020\n\n### Affiliations\n\n1. Department of Anatomy and Cell Biology University of Iowa Carver College of Medicine Iowa City United States\n2. Interdisciplinary Graduate Program in Neuroscience University of Iowa Iowa City United States\n3. Interdisciplinary Programs in Neuroscience, Genetics and Molecular Medicine University of Iowa Iowa City United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nSynapses and circuits rely on neuroplasticity to adjust output and meet physiological needs. Forms of homeostatic synaptic plasticity impart stability at synapses by countering destabilizing perturbations. The Drosophila melanogaster larval neuromuscular junction (NMJ) is a model synapse with robust expression of homeostatic plasticity. At the NMJ, a homeostatic system detects impaired postsynaptic sensitivity to neurotransmitter and activates a retrograde signal that restores synaptic function by adjusting neurotransmitter release. This process has been separated into temporally distinct phases, induction and maintenance. One prevailing hypothesis is that a shared mechanism governs both phases. Here, we show the two phases are separable. Combining genetics, pharmacology, and electrophysiology, we find that a signaling system consisting of PLC\u03b2, inositol triphosphate (IP3), IP3 receptors, and Ryanodine receptors is required only for the maintenance of homeostatic plasticity. We also find that the NMJ is capable of inducing homeostatic signaling even when its sustained maintenance process is absent.Editorial note: This article has been through an editorial process in which the authors decide how to respond to the issues raised during peer review. The Reviewing Editor's assessment is that all the issues have been addressed (see decision letter).\n\n## Introduction\n\nSynaptic plasticity is a fundamental property of neurons that underlies the activities of neuronal circuits and behaviors. Neurons have a remarkable capacity to adjust outputs in response to external cues. Depending upon context, those adjustments can be stabilizing or destabilizing to overall function. Hebbian forms of neuroplasticity are generally thought to promote destabilizing changes. A great deal is known about the molecular mechanisms underlying Hebbian paradigms of synaptic plasticity like Long-Term Potentiation (LTP, e.g. Lisman et al., 2012) \u2013 and how Hebbian plasticity might underlie long-lasting processes like memory formation and consolidation (Andersen et al., 2017; Poo et al., 2016). Less is understood about homeostatic forms of neuroplasticity, which work to stabilize synapse function and keep activity levels within an acceptable physiological range (Davis, 2006; Davis and M\u00fcller, 2015; Delvendahl and M\u00fcller, 2019; Pozo and Goda, 2010; Turrigiano, 2017). For homeostatic plasticity, it is generally thought that coordinated actions of neurons and their targets work to maintain a set point functional parameter.\n\nWell-studied examples of homeostatic synaptic plasticity (HSP) include synaptic scaling (O'Brien et al., 1998; Turrigiano et al., 1998; Turrigiano and Nelson, 2004), and the maintenance of evoked excitation at neuromuscular junctions (NMJs) (Cull-Candy et al., 1980; Davis and M\u00fcller, 2015; Frank, 2014a; Petersen et al., 1997). For both, the time course of implementation has been of longstanding interest. Synaptic scaling was initially shown to be a slow, chronically executed process (O'Brien et al., 1998; Turrigiano et al., 1998), but it is also possible for faster scaling mechanisms to be mobilized if multiple synaptic sites are concurrently inhibited (Sutton et al., 2006). For the NMJ, homeostatic signaling is triggered by short-term challenges to synapse function (Frank et al., 2006; Wang et al., 2016b), but it is also maintained for extended developmental time in the face of chronic challenges (Cull-Candy et al., 1980; Davis et al., 1998; DiAntonio et al., 1999; Petersen et al., 1997; Plomp et al., 1992).\n\nThe Drosophila melanogaster NMJ is an ideal model synapse for studying the basic question of how synapses work to counter destabilizing perturbations (Frank, 2014a). At this NMJ, reduced sensitivity to single vesicles of glutamate initiates a retrograde, muscle-to-nerve signaling cascade that induces increased neurotransmitter vesicle release, or quantal content (QC). As a result, the NMJ maintains a normal postsynaptic response level (Frank et al., 2006; Petersen et al., 1997). Mechanistically, this increase in QC depends upon the successful execution of discrete presynaptic events, such as increases in neuronal Ca2+ influx and an increase in the size of the readily releasable pool (RRP) of synaptic vesicles (Frank et al., 2006; M\u00fcller and Davis, 2012; M\u00fcller et al., 2012). The field has termed this compensatory signaling process as presynaptic homeostatic potentiation (PHP) (Delvendahl and M\u00fcller, 2019). Two factors that govern the expression of PHP are the nature of the NMJ synaptic challenge and the amount of time elapsed after presentation of the challenge. Acute pharmacological inhibition of postsynaptic glutamate receptors initiates a rapid induction of PHP that restores synaptic output in minutes (Frank et al., 2006). By contrast, genetic lesions and other long-term reductions of NMJ sensitivity to neurotransmitter induce PHP in a way that is sustained throughout life (Brusich et al., 2015; Davis et al., 1998; DiAntonio et al., 1999; Paradis et al., 2001; Petersen et al., 1997).\n\nWe previously identified the Plc21C gene as a factor needed for PHP (Brusich et al., 2015). Plc21C encodes a Drosophila Phospholipase C\u03b2 (PLC\u03b2) homolog known to be neuronally expressed (Shortridge et al., 1991) \u2013 but recent ribosomal profiling data also indicates possible muscle expression of Plc21C (Chen and Dickman, 2017). In canonical signaling pathways, once PLC\u03b2 is activated by G\u03b1q, it cleaves the membrane lipid phosphatidylinositol 4,5-bisphosphate (PIP2) into diacylglycerol (DAG) and inositol triphosphate (IP3). DAG can affect synaptic function by activating Protein Kinase C (PKC), while IP3 binds its receptor (IP3R) to trigger release of calcium from intracellular stores (Kadamur and Ross, 2013; Philip et al., 2010; Tedford and Zamponi, 2006). It is not understood which aspects of this signaling machinery are mobilized during PHP. Potential downstream consequences of PLC\u03b2 activity at the NMJ include phosphorylation of neuronal proteins, modulation of ion channel activity, and changes in localization of neurotransmission machinery (Cremona and De Camilli, 2001; Go\u00f1i and Alonso, 1999; Huang et al., 2006; Peters et al., 2001; Rohrbough and Broadie, 2005; Wu et al., 2002).\n\nFor this study, we scrutinized PLC\u03b2-directed signaling further. We tested whether PLC\u03b2-directed signaling was required solely for the maintenance of PHP or if it could also be required for induction. In addition to PLC\u03b2, we identified the IP3 Receptor (Drosophila Itpr, herein IP3R) and Ryanodine receptor (Drosophila RyR) as being part of the same signaling process. We found that neither PLC\u03b2, nor IP3R, nor RyR are required for the rapid induction of PHP. Additionally, we found that the rapid induction of PHP is still possible in synapses already sustaining PHP. Surprisingly, we found that NMJs are capable of rapidly inducing PHP \u2013 even when the sustained expression of PHP is already blocked by impairments in PLC\u03b2, IP3R, or RyR signaling. Taken together, our data show that the induction and maintenance of PHP are separable. Even though there is compelling evidence that parts of the induction and maintenance signaling mechanisms overlap (Goel et al., 2017), it is also true that acute PHP is possible in scenarios where long-term PHP is not.\n\n## Results\n\n### PLC\u03b2 loss uncouples the short-term induction of homeostatic plasticity from its long-term maintenance\n\nPreviously, we demonstrated that loss\u00a0of\u00a0function of Plc21C, a Drosophila melanogaster PLC\u03b2 gene, could dampen or eliminate the long-term maintenance of PHP (Brusich et al., 2015). We repeated some of those experiments. We used a fruit fly line containing both neuron- and muscle-GAL4 drivers as well as a UAS-GluRIII[RNAi] transgenic construct to provide a chronic homeostatic challenge to reduce quantal size (Brusich et al., 2015). Pre-+Post Gal4>>UAS-GluRIII[RNAi] NMJs have decreased quantal size (mEPSP, Figure 1A) and an offsetting, homeostatic increase in quantal content (QC, Figure 1C). This increase in release keeps excitatory postsynaptic potentials (EPSPs) at control levels (Figure 1B). By contrast, concurrent knockdown of GluRIII and Plc21C gene functions by RNAi (Pre-+Post Gal4>>UAS-GluRIII[RNAi]+Plc21C[RNAi]) leaves this form of homeostatic potentiation only partly intact (Figure 1A\u2013C). There is a small QC increase compared to baseline (Figure 1C), but this QC increase is blunted compared to the homeostatic challenge, resulting in evoked potentials that are smaller than controls (Figure 1B and D). These data are consistent with the prior results (Brusich et al., 2015) (Supplementary file 1 for summary Figure 1 data) (Figure 1\u2014source data 1 for raw data).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/39643/elife-39643-fig1-v1.jpg)\n\n**Figure 1.:** (A) GluRIII knockdown induces a significant decrease in quantal size for both driver control and Plc21C knockdown genetic backgrounds. (B) EPSP amplitudes are maintained with GluRIII knockdown alone but dampened with concurrent GluRIII and Plc21C knockdown. (C) There is significant PHP (Presynaptic Homeostatic Potentiation, measured as an increase in quantal content) in response to GluRIII knockdown. (D) Representative electrophysiological traces of EPSPs (above) and mEPSPs (below). The evoked events show full PHP in the GluRIII RNAi knock down background and partial PHP with concurrent Plc21C knock down. (E) 10-min incubation with 20 \u03bcM PhTox diminishes quantal size for all conditions. (F) EPSP amplitudes after acute PhTox incubation are maintained at or near normal levels. (G) The data in (F) are because PHP is rapidly induced in wild-type and Plc21C RNAi NMJs after PhTox incubation. (H) Representative electrophysiological traces show fully intact PHP induction. (I) With dual PHP maintenance (GluRIII knockdown) and induction (PhTox application), quantal size is further decreased. (J) EPSP amplitudes after dual maintenance and induction. (K) Quantal is content further increased in by PhTox treatment in GluRIII RNAi synapses compared to untreated synapses; this expression of PHP does not require full PLC\u03b2 function. (L) Representative electrophysiological traces illustrate that even though PHP maintenance is impaired with PLC\u03b2 knockdown, PHP induction is not impaired. Violin plots have horizontal lines signifying the 0th, 25th, 50th, 75th, and 100th percentiles of the data distribution; the distribution itself is delineated by the shapes of the plots. *p<0.05, **p<0.01, ***p<0.001 by Student\u2019s T-Test versus non-challenged genetic control or by one-way ANOVA with a Bonferroni post-hoc test in the case of comparing degree of compensation with GluRIII RNAi and Plc21C RNAi\u00a0+\u00a0GluRIII RNAi. Scale bars for all traces are y\u00a0=\u00a010 mV (1 mV), x\u00a0=\u00a020 ms (500 ms) for EPSPs (mEPSPs).\n\nThe GluRIII RNAi knock down manipulation in muscle is a days-long, chronic homeostatic challenge to the maintenance of NMJ function (Brusich et al., 2015). We tested if Plc21C gene knock down blocks or impairs the acute induction of PHP. For acute induction, we applied 20 \u03bcM of the glutamate receptor antagonist Philanthotoxin-433 (PhTox) to both wild-type and to Pre-+Post Gal4>>Plc21C[RNAi] knock down NMJs. PhTox application decreased quantal size for both conditions (Figure 1E) (Frank et al., 2006). For both conditions, evoked potentials remained largely steady compared to non-PhTox controls (Figure 1F and H) because there was a significant, compensatory increase in quantal content (Figure 1G). Thus, partial loss of Plc21C gene function is not a sufficient condition to block the rapid induction of PHP.\n\n### The induction of PHP is possible, even when PHP maintenance is impaired\n\nWe used Plc21C loss and PhTox to test whether the capacity to maintain PHP for extended developmental time is required for rapid PHP induction. The most common modes of assessing PHP at the Drosophila NMJ are a lifelong, genetic GluRIIASP16 null mutation for PHP maintenance (Petersen et al., 1997) and acute PhTox application for PHP induction (Frank et al., 2006). For both cases, mEPSP amplitudes are decreased and QC is increased helping to maintain evoked potentials at (or nearly at) normal levels. PhTox targets the function of GluRIIA-containing receptors; thus, adding PhTox to a GluRIIASP16 null background does not further decrease quantal size (Frank et al., 2006). This fact presents a difficulty in using PhTox and GluRIIASP16 together to test whether additional PHP can be acutely induced in a chronic glutamate receptor loss genetic condition already sustaining PHP. We reasoned that by applying PhTox to UAS-GluRIII[RNAi] knock down synapses, we could circumvent this limitation. Partial loss of the essential subunit-encoding GluRIII gene leaves some GluRIIA-containing receptors intact (Brusich et al., 2015). In turn, those GluRIIA-containing receptors could be subject to the secondary PhTox challenge.\n\nWe applied PhTox to UAS-GluRIII[RNAi] synapses, and we observed a further decrease in quantal amplitude \u2013 significantly below mEPSP size recorded for UAS-GluRIII[RNAi] alone (Figure 1I). Evoked potentials were only slightly lower than the non-PhTox levels (Figure 1J,L) because there was a robust increase in QC (Figure 1K). This result indicated that a rapid induction of PHP was possible at a synapse already undergoing a sustained maintenance of PHP.\n\nWe next tested whether compromised ability to sustain PHP throughout life would also preclude acute induction of PHP. PhTox applied to NMJs simultaneously expressing both UAS-GluRIII[RNAi] and Plc21C[RNAi] constructs induced a significant decrease in mEPSP amplitude relative to non-PhTox-treated control synapses (Figure 1I). Yet we also observed a significant increase in QC (i.e. PHP induction) (Figure 1K), which kept evoked NMJ potentials similar to their non-PhTox levels (Figure 1J,L). Collectively, these data suggest that acute PHP induction does not require intact PHP maintenance and that PLC\u03b2 plays a maintenance role.\n\n### IP3 function is required for the maintenance of PHP but not its induction\n\nWe sought to identify potential PLC\u03b2 signaling effectors that could mediate the long-term maintenance of PHP. We screened targets by electrophysiology. Based on canonical signaling functions of PLC\u03b2, we conducted a directed screen, targeting molecules such as PKC, CaMKII, Unc-13, related signaling molecules, as well several potential G-protein-coupled receptors (GPCRs). Additionally, we tested molecules implicated in intracellular calcium signaling, intracellular ion channel function, and synaptic ion channel function.\n\nWe used a screening paradigm designed to find factors needed for the maintenance of PHP: combining pre- and postsynaptic GAL4 expression with UAS-GluRIII[RNAi] with a tested genetic manipulation (Brusich et al., 2015). We targeted factors for this screen using either UAS-gene misexpression or UAS-gene[RNAi] constructs. We also used loss-of-function mutations. For an additional screening condition for some mutations, we constructed double mutant lines with a GluRIIASP16 null deletion allele (Petersen et al., 1997). For any test, we analyzed two conditions: a baseline neurotransmission condition (e.g. GAL4\u00a0+genetic manipulation alone) and a homeostatically challenged condition (e.g. GAL4\u00a0+genetic manipulation+UAS-GluRIII[RNAi]). Any homeostatically challenged condition that failed to increase QC over its own baseline condition was designated as a potential positive.\n\nWe examined 28 distinct genetic manipulations (comprising 23 distinct genes), including controls (Figure 2A) (Supplementary file 2 for summary Figure 2 data) (Figure 2\u2014source data 1 for raw data). We plotted the relative QC values for the screen as \u2018% baseline\u2019 (Figure 2A), indicating how much of a QC change the UAS-GluRIII[RNAi] challenge yielded. We set a cutoff for a \u2018screen positive\u2019 as a QC smaller than one standard deviation below the expected QC given the UAS-GluRIII[RNAi] homeostatic challenge (Figure 2A, red dashed line).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/39643/elife-39643-fig2-v1.jpg)\n\n**Figure 2.:** (A) Screen data, plotting baseline quantal content (QC, x-axis, genetic manipulation alone) versus QC of the homeostatically challenged condition (y-axis, GluRIII RNAi or GluRIIA mutant). Blue\u00a0=\u00a0GluRIIA alone. Green\u00a0=\u00a0GluRIII RNAi alone. Red\u00a0=\u00a0GluRIII RNAi+UAS-IP3-sponge. Dotted line\u00a0=\u00a0one standard deviation below the mean QC of GluRIII RNAi. (B) Representative electrophysiological traces (EPSPs above; mEPSPs below), demonstrating diminished evoked potentials in the GluRIII RNAi\u00a0+UAS-IP3-sponge (presynaptic\u00a0+postsynaptic expression) condition. (C) GluRIII knockdown induces a significant decrease in quantal size for all genetic backgrounds. (D) EPSP amplitudes are maintained with GluRIII knockdown alone but significantly diminished with concurrent GluRIII knockdown and expression of either UAS-IP3-sponge line. (E) By quantal content, sustained PHP expression is abolished when UAS-IP3-sponge is expressed using concurrent pre- and postsynaptic GAL4 drivers. (F) 10-min incubation with 20 \u03bcM PhTox diminishes quantal size for all conditions. (G) EPSP amplitudes after acute PhTox incubation are maintained at or near normal levels for all conditions. (H) Failure to sustain PHP following IP3 sequestration does not preclude its rapid induction. The data in (G) are because PhTox treatment results in a compensatory increase in QC for conditions shown. (I) Representative electrophysiological traces showing full homeostatic compensation with PhTox application (as in Frank et al., 2006). (J) Representative traces of the experimental data in (F\u2013H). Violin plots used as in Figure 1. *p<0.05, **p<0.01, ***p<0.001 by Student\u2019s T-Test versus non-challenged genetic control. Scale bars for all traces are y\u00a0=\u00a010 mV (1 mV), x\u00a0=\u00a020 ms (500 ms) for EPSPs (mEPSPs).\n\nTwo genetic manipulations showed no statistically significant QC increase upon homeostatic challenge (Figure 2A, red). For both manipulations, the screened target molecule was inositol 1,4,5-triphosphate (IP3). IP3 is a second-messenger signaling molecule. We examined it because PLC\u03b2 cleaves the phospholipid PIP2 into soluble IP3 and membrane-bound diacylglycerol (DAG) during canonical signaling. We targeted cellular IP3 by expressing UAS-IP3-sponge, a transgene that expresses a peptide that binds and sequesters IP3 (Usui-Aoki et al., 2005). Concomitant pre-and postsynaptic expression of UAS-IP3-sponge transgenes completely blocked the long-term expression of PHP (Figure 2B\u2013E). This resulted in significantly smaller EPSP amplitudes in the UAS-GluRIII[RNAi] PHP-challenge genetic background. (Figure 2B,D).\n\nWe used the full block of sustained PHP by UAS-IP3-sponge expression to re-test the relationship between the rapid induction of PHP and its long-term maintenance. First, we tested if UAS-IP3-sponge expression alone could block the rapid induction of PHP. Following PhTox treatment, synapses expressing UAS-IP3-sponge in pre- and postsynaptic tissues showed a significant decrease in mEPSP amplitude compared to non-PhTox controls (Figure 2F), and yet they had steady EPSP amplitudes (Figure 2G) because of a robust increase in QC (Figure 2H). This result indicated that UAS-IP3-sponge expression left the rapid induction mechanisms of PHP intact.\n\nWe next tested if the rapid induction of PHP was possible for third instar larval NMJs that had blocked PHP maintenance throughout life. To do this, we applied PhTox to NMJs expressing UAS-IP3-sponge in a UAS-GluRIII[RNAi] background. Even in this genetic background, we found that the rapid induction of PHP remained intact following PhTox treatment (Figure 2F\u2013H). PhTox treatment resulted in a further decrease in mEPSP amplitude compared to non-PhTox-treated synapses expressing both UAS-GluRIII[RNAi] and UAS-IP3-sponge (Figure 2F), but there was an offsetting increase in QC (Figure 2H). The evoked event amplitudes were at the level of genetically identical, non-PhTox-treated synapses (Figure 2G), because of successful induction of PHP in a genetic background that was unable to sustain PHP throughout development.\n\n### IP3 sequestration does not impair synapse growth\n\nChronic expression of the UAS-IP3-sponge transgene blocked the long-term expression of PHP. In principle, this result could be a secondary consequence of aberrant NMJ development. To check this possibility, we co-immunostained third instar larval Drosophila NMJs with anti-Synapsin (Syn, presynaptic vesicles), anti-Discs Large (Dlg, postsynaptic density), and anti-Horseradish Peroxidase (HRP, presynaptic membrane) antibodies. This allowed us to examine synaptic growth by counting NMJ boutons. We quantified bouton growth for synapse 6/7, muscle segments A2 and A3. We examined control conditions and conditions with blocked PHP maintenance due to UAS-IP3-sponge expression (Figure 3A\u2013E). We observed no significant differences versus control in bouton number for any condition, for either segment A2 or A3 \u2013 including the genetic background where we co-expressed UAS-IP3-sponge and UAS-GluRIII[RNAi] (Figure 3F). There were also no significant differences versus control in bouton number normalized per unit muscle area (Figure 3G) (Figure 3\u2014source data 1 for raw bouton count and muscle size data). These data indicate that when IP3 is sequestered, synapse undergrowth is not causal for a PHP block.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/39643/elife-39643-fig3-v1.jpg)\n\n**Figure 3.:** (A\u2013E) NMJs were co-stained with anti-DLG (red) and anti-Synapsin antibodies (green) to visualize synaptic boutons, with anti-HRP (blue) to visualize presynaptic membranes. Genotypes or conditions as indicated. All scale bars, 10 \u03bcm. (F) NMJ growth was assessed by bouton counting at abdominal segments A2 and A3, muscle 6/7, based on postsynaptic DLG staining and double checked for presynaptic Synapsin. No statistically significant differences in NMJ growth versus driver control were observed for any of the experimental conditions (p>0.1 vs. control, regardless of segment). (G) Bouton counts were normalized per unit of muscle 6/7 area. No statistically significant differences versus control were observed (p>0.2 vs. control, regardless of segment). Violin plots used as in Figure 1. For both F and G, data were compared for each segment individually using the Kruskal-Wallis ANOVA test followed by Dunn\u2019s multiple comparisons test.\n\n### Pharmacology targeting IP3 receptors uncouples the induction and maintenance of PHP\n\nWe tested if the temporal requirements of PHP could be uncoupled by pharmacological disruption of Drosophila IP3 receptor function (Itpr in Drosophila). IP3Rs are localized to the endoplasmic reticulum (ER) and function to mediate calcium efflux from internal stores (Berridge, 1984; Berridge, 1987). ER is known to localize throughout neurons in Drosophila, including synaptic terminals (Summerville et al., 2016). Recent studies have implicated ER resident proteins in the execution of PHP\u00a0(Gen\u00e7 et al., 2017) or in baseline neurotransmission and synapse growth (Kikuma et al., 2017) at the Drosophila NMJ. To target IP3Rs, we turned to two reagents known to impair function: Xestospongin C and 2-APB (2-Aminoethoxydiphenyl Borate) and applied those drugs to GluRIIA loss-of-function mutants.\n\nXestospongin C is a membrane-permeable drug that disrupts intracellular calcium release directly via non-competitive inhibition of IP3Rs (Gafni et al., 1997; Wilcox et al., 1998). Xestospongin C has been previously shown to inhibit Drosophila IP3Rs (V\u00e1zquez-Mart\u00ednez et al., 2003). There are caveats to its use; Xestospongin C may act indirectly by inhibiting SERCA, which could lead to depletion of intracellular calcium stores (Castonguay and Robitaille, 2002). Moreover, Xestospongin C has been demonstrated to impair voltage-gated Ca2+ and K+ currents in guinea pig smooth muscle (Ozaki et al., 2002). In principle, these latter activities on intact fly NMJ tissue could impact baseline neurotransmission parameters (Bergquist et al., 2010; Brusich et al., 2015; Jan et al., 1977; Peng and Wu, 2007).\n\nGluRIIASP16 null mutant NMJs have a marked decrease in quantal size (Figure 4A) (Petersen et al., 1997). This homozygous null condition does not perfectly maintain control EPSP amplitudes (Figure 4B) (Brusich et al., 2015; Frank et al., 2006; Frank et al., 2009; Spring et al., 2016; Yeates et al., 2017). However, the null does induce a robust increase in QC, which signifies a long-term implementation of PHP (Figure 4C). GluRIIASP16 NMJ preparations acutely treated with 20 \u03bcM Xestospongin C (10 min) displayed an expected decrease in mEPSP amplitude compared to non-GluRIIASP16 controls (Figure 4A). However, these drug-treated NMJs failed to show an increase in QC (Figure 4C). This resulted in markedly decreased evoked amplitudes (Figure 4B,G). Thus, not only did 20 \u03bcM Xestospongin C induce a block of PHP maintenance, but it was capable of extinguishing this long-term maintenance process on a timescale of minutes.\n\nImportantly, 20 \u03bcM Xestospongin C did not impair baseline neurotransmission in a wild-type background (Figure 4B,G); this suggests that 20 \u03bcM Xestospongin C does not impair the function of other important voltage-gated channels at the Drosophila NMJ. Finally, in the GluRIIA null background, neither a lower dose (5 \u03bcM Xestospongin C) nor vehicle application alone inhibited the expression of PHP (Figure 4A\u2013C) (Supplementary file 3 for summary Figure 4 data) (Figure 4\u2014source data 1 for raw data).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/39643/elife-39643-fig4-v1.jpg)\n\n**Figure 4.:** Xestospongin C acutely applied to NMJs to impair IP3R function. (A) The GluRIIASP16 deletion mutation diminishes quantal size for all experimental conditions. (B) EPSP amplitudes are somewhat impaired versus non-GluRIIA control in all cases but most severely impaired when GluRIIA deletion is combined with 20 \u00b5M Xestospongin C incubation. (C) By quantal content, sustained PHP expression is abolished with acute NMJ exposure to 20 \u00b5M Xestospongin C. (D) Acute incubation 20 \u03bcM PhTox diminishes quantal size for all conditions (PhTox\u00a0+DMSO vehicle or PhTox\u00a0+20 \u00b5M Xestospongin C). (E) EPSP amplitudes are normal or near normal for all conditions. (F) Rapid PHP induction by PhTox not blocked by 20 \u00b5M Xestospongin C. (G) Representative electrophysiological traces (EPSPs above; mEPSPs below) for 20 \u00b5M Xestospongin C (or control) conditions in (A\u2013F). Violin plots used as in Figure 1. *p<0.05, **p<0.01, ***p<0.001 by Student\u2019s T-Test versus non-challenged genetic control. Scale bars for all traces are y\u00a0=\u00a010 mV (1 mV), x\u00a0=\u00a020 ms (500 ms) for EPSPs (mEPSPs).\n\nNext, we tested if acute application of 20 \u03bcM Xestospongin C could block the rapid induction of PHP. We applied 20 \u03bcM Xestospongin C to wild-type NMJs concurrently with 20 \u03bcM PhTox. Quantal size was markedly diminished compared to the non-PhTox control (Figure 4D; vehicle control dataset same as in 4A-C). Yet evoked amplitudes remained near control levels (Figure 4E,G) because the rapid induction of PHP was intact (Figure 4F).\n\nWe used 2-APB as a second reagent to target IP3Rs. 2-APB is a membrane-permeable drug that has variable effects. It is known to impair IP3R (Diver et al., 2001; Maruyama et al., 1997). There are also reports that 2-APB can impair targets such as Transient Receptor Potential (TRP) channels (Bootman et al., 2002; Xu et al., 2005). If continuous IP3R function were required for the maintenance PHP at NMJs, we reasoned that acute application of 2-APB (as with Xestospongin C) should also extinguish this form of neuroplasticity.\n\nWe applied both 1 \u03bcM and 10 \u03bcM 2-APB to GluRIIASP16 null NMJs. Both drug concentrations resulted in a failure to increase QC compared to drug-treated wild-type controls; this resulted in small evoked events for the drug-treated GluRIIASP16 NMJs because PHP maintenance was blocked (Figure 5A\u2013C,G) (Supplementary file 4 for summary Figure 5 data) (Figure 5\u2014source data 1 for raw data). Next, we tested if 2-APB blocks the PhTox-induced rapid induction of PHP. We applied 1 \u03bcM 2-APB concurrently with 20 \u03bcM PhTox. Evoked potentials remained near the level of 2-APB-treated NMJs without PhTox (Figure 5E,H) because 1 \u03bcM 2-APB left the rapid induction of PHP intact (Figure 5D\u2013F).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/39643/elife-39643-fig5-v1.jpg)\n\n**Figure 5.:** 2-APB acutely applied to NMJs to impair IP3R function. Wild-type and GluRIIA control data sets are replotted from Figure 4 for visual comparison. (A) The GluRIIASP16 deletion mutation diminishes quantal size for all experimental conditions. (B) EPSP amplitudes are somewhat impaired versus non-GluRIIA control in all cases but severely impaired when GluRIIA deletion is combined with either 1 \u00b5M or 10 \u00b5M 2-APB incubation. (C) By quantal content, sustained PHP expression is abolished with acute NMJ exposure to 1 \u00b5M or 10 \u00b5M 2-APB. (D) Acute incubation 20 \u03bcM PhTox diminishes quantal size for all conditions (PhTox\u00a0+DMSO vehicle or PhTox\u00a0+1 \u00b5M 2-APB). (E) EPSP amplitudes are normal or near normal for all conditions. (F) Rapid PHP induction by PhTox not blocked by 1 \u00b5M 2-APB. (G) Representative electrophysiological traces (EPSPs above; mEPSPs below) for 10 \u00b5M 2-APB (or control) conditions in (A-C). (H) Representative electrophysiological traces for 1 \u00b5M 2-APB (or control) conditions in (D-F). Violin plots used as in Figure 1. *p<0.05, **p<0.01, ***p<0.001 by Student\u2019s T-Test versus non-challenged genetic control. Scale bars in (G) also apply to (H) and are y\u00a0=\u00a010 mV (1 mV), x\u00a0=\u00a020 ms (500 ms) for EPSPs (mEPSPs).\n\nWe note that 2-APB potentiated baseline neurotransmission, seemingly in a dose-dependent way (Figure 5B,G). This potentiation likely means that 2-APB had off-target effects at the NMJ in addition to IP3Rs. We considered that 2-APB could exert effects though TRP channels, like Drosophila Inactive (Iav). Iav plays a role in NMJ neurotransmission and controls Ca2+ levels in motor neurons (Wong et al., 2014). However, knock down of iav gene function by RNAi did not impair PHP in our screen (Supplementary file 2), and the effects of 2-APB on baseline neurotransmission appear to be the opposite of those reported for strong iav loss of function (Wong et al., 2014). Taken together, our pharmacological data show that with acute drug application of either Xestospongin C or 2-APB, it is acutely possible to erase a lifelong, GluRIIASP16-induced long-term expression of PHP. Since this erasure is accomplished with known inhibitors of IP3R, our data are consistent with the hypothesis that the maintenance of PHP requires continuous IP3R function.\n\n### Pharmacology targeting ryanodine receptors uncouples the induction and maintenance of PHP\n\nRyanodine receptors (RyRs) also mediate release of calcium from ER stores (Berridge, 1998; Simkus and Stricker, 2002). RyRs are localized to the ER in excitable tissues like neurons and muscle (Santulli and Marks, 2015; Santulli et al., 2017). Therefore, we tested whether RyRs are also required for the maintenance of PHP at the NMJ. We repeated the same types of experiments executed with the IP3R pharmacological blockade \u2013 this time targeting Drosophila RyRs by utilizing Ryanodine (Murmu et al., 2010) and Dantrolene (V\u00e1zquez-Mart\u00ednez et al., 2003; Zhao et al., 2001) at concentrations previously reported to block RyRs. We acquired similar results as with IP3R blockade. Acute application of either 100 \u03bcM Ryanodine or 10 \u03bcM Dantrolene to GluRIIA null preparations resulted in failure of PHP maintenance. QC did not increase for the homeostatically challenged condition (GluRIIA\u00a0+drug) versus the unchallenged condition (wild-type\u00a0+drug) (Figure 6A\u2013C) (Supplementary file 5 for summary Figure 6 data) (Figure 6\u2014source data 1 for raw data).\n\nNext, we tested whether RyR inhibition could block the rapid induction of PHP. As was the case with IP3R inhibition, acute application of 10 \u03bcM Dantrolene to PhTox-treated NMJs did not disrupt the short-term induction of PHP (Figure 6D\u2013F). We extended our analysis by re-examining the condition where we combined a long-term homeostatic challenge (GluRIII[RNAi]) with a short-term challenge (PhTox) to further decrease quantal size (as in Figure 1I\u2013L). In this double-challenge condition, addition of 10 \u03bcM Dantrolene left the rapid induction portion of PHP intact (Figure 6D\u2013G). Collectively, these experiments demonstrate that acute pharmacological perturbations targeting RyRs are capable of uncoupling the short-term induction and the long-term maintenance of PHP.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/39643/elife-39643-fig6-v1.jpg)\n\n**Figure 6.:** Ryanodine or Dantrolene acutely applied to NMJs to impair RyR function. Wild-type and GluRIIA control data sets are replotted from Figures 4 and 5 for visual comparison. (A) The GluRIIASP16 deletion mutation diminishes quantal size for all experimental conditions. (B) EPSP amplitudes are somewhat impaired versus non-GluRIIA control in all cases but most severely impaired when GluRIIA deletion is combined with 10 \u00b5M Dantrolene. (C) By quantal content, sustained PHP expression is abolished with acute NMJ exposure to 100 \u00b5M Ryanodine or 10 \u00b5M Dantrolene. (D) Acute incubation 20 \u03bcM PhTox diminishes quantal size for all conditions shown. (E) EPSP amplitudes remain near genetic control levels for all conditions with PhTox application. (F) Rapid PHP induction by PhTox is intact in the presence of 10 \u00b5M Dantrolene, even when GluRIII has been knocked down throughout life. (G) Representative electrophysiological traces for the conditions in (D\u2013F). Violin plots used as in Figure 1. Statistical comparisons are by Student\u2019s T-Test vs. unchallenged controls. *p<0.05, **p<0.01, ***p<0.001. Scale bars for all traces are y\u00a0=\u00a010 mV (1 mV), x\u00a0=\u00a020 ms (500 ms) for EPSPs (mEPSPs).\n\n### Dual IP3 sequestration and RyR blockade are not additive\n\nIn some tissues, RyR is activated by IP3R-mediated Ca2+ release, in a signaling process termed Calcium-Induced Calcium Release (CICR) (Berridge, 1998). IP3Rs and RyRs have been placed together in CICR signaling processes in other systems, and our group has also identified overlapping functions of IP3R and RyR at the NMJ (Brusich et al., 2018). Thus, we tested if IP3 signaling and RyR functions might support the maintenance of PHP at the Drosophila NMJ via a shared process. The expectation for a shared process would be that a dual block of PHP (consisting of IP3 sequestration\u00a0+RyR pharmacological blockade) would not depress evoked transmission or quantal content below either individual manipulation.\n\nA chronic GluRIII[RNAi]-expression NMJ challenge is amenable both to pharmacology and dual-tissue UAS-IP3-sponge expression (Pre-+Post Gal4). In the GluRIII[RNAi] genetic background, both 10 \u03bcM Dantrolene application and UAS-IP3-sponge expression blocked the long-term maintenance of PHP (Figure 7A\u2013C). This resulted in EPSPs that were blunted compared to GluRIII[RNAi]-alone controls (Figure 7B,D). When we combined Dantrolene application and UAS-IP3-sponge expression in the GluRIII[RNAi] background, the PHP impairment was indistinguishable from the impairment elicited by Dantrolene alone or UAS-IP3-sponge alone (Figure 7A\u2013D) (Supplementary file 6 for summary Figure 7 data) (Figure 7\u2014source data 1 for raw data). The data are consistent with a model in which IP3 sequestration and RyR blockade disrupt the long-term maintenance of PHP as part of a shared process, either via a single linear pathway or convergent pathways.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/39643/elife-39643-fig7-v1.jpg)\n\n**Figure 7.:** (A) GluRIII knockdown diminishes quantal size for all experimental conditions. (B) When challenged with GluRIII knockdown, EPSP amplitudes are maintained for the GAL4 driver control background but impaired for all other experimental backgrounds. The dual manipulation of 10 \u00b5M Dantrolene\u00a0+UAS-IP3-sponge is indistinguishable from the single manipulations alone. (C) By quantal content, sustained PHP expression is abolished with chronic IP3 sequestration, acute 10 \u00b5M Dantrolene application, or both. (D) Representative electrophysiological traces for the conditions in (A\u2013C). (E) Acute incubation 20 \u03bcM PhTox diminishes quantal size for all conditions shown. (F) EPSP amplitudes remain near genetic control levels for all conditions with PhTox application. There is a slight diminishment for the condition in which UAS-IP3-sponge is expressed and PhTox application is performed only after nerve dissection. (G) Full, rapid PHP induction or partial PHP induction by PhTox is present for all conditions shown. (H) Representative electrophysiological traces for the conditions in (E\u2013G). Violin plots used as in Figure 1. Statistical comparisons for (A\u2013C) and for wild type vs. wild type\u00a0+PhTox are by Student\u2019s T-Test vs. unchallenged controls. Statistical comparisons across three data sets are by one-way ANOVA followed by Bonferroni post-hoc test across genotypes shown. *p<0.05, **p<0.01, ***p<0.001. Scale bars for all traces are y\u00a0=\u00a010 mV (1 mV), x\u00a0=\u00a020 ms (500 ms) for EPSPs (mEPSPs).\n\n### Axotomy does not block rapid PHP, even when IP3 signaling is impaired\n\nFor larval NMJ electrophysiology, motor neurons are severed several minutes before recording (Jan and Jan, 1976). Although standard practice, this procedure requires special attention in our study because store-operated calcium release mediates a variety of cellular responses after axotomy in rodent (Rigaud et al., 2009) and nematode models (Sun et al., 2014). For the rapid induction of PHP at the NMJ, PhTox is typically applied to intact synapses, prior to motor nerve severing and recording (Frank et al., 2006). This allows for endogenous spontaneous activity to drive PhTox to bind to open channels prior to recording (Frank et al., 2006). Nevertheless, rapid induction of PHP still works effectively when the motor nerves are severed prior to PhTox exposure (Frank et al., 2006).\n\nTo test for a possible synergistic interaction between axotomy, IP3-directed signaling, and ER function during the acute induction phase of PHP, we applied PhTox to NMJs with intact motor nerves or with cut motor nerves (central nervous system (CNS) excised). We did this in a genetic background while expressing UAS-IP3-sponge construct pre- and postsynaptically. For controls, we treated the preparations identically and used GAL4 drivers alone for the genetic background. We found that rapid PHP induction still worked in the UAS-IP3-sponge-expressing background, regardless of whether the motor nerve was severed prior to PhTox application (Figure 7E\u2013G). The evoked events were slightly diminished for the UAS-IP3-sponge expressing NMJs where the CNS was cut out of the preparation prior to PhTox application (Figure 7F,H). However, by quantal content measures, the rapid induction of PHP was not blocked by this dual treatment (Figure 7G).\n\n### Neuron and muscle IP3 signaling both contribute to long-term homeostatic potentiation\n\nInsofar, none of the genetic or pharmacological manipulations impairing PHP maintenance in this study have been tissue specific. In principle, all PHP-blocking manipulations described could operate either in neuronal or muscle substrates \u2013 or upon both tissues. Our prior work showed that chronic Plc21C gene knockdown in the muscle alone is not sufficient to impair PHP (Brusich et al., 2015). That result suggested a neuronal component to this signaling system for PHP maintenance. Yet further tests are needed. We wished to understand whether a pre- or postsynaptic mechanism (or a dual-tissue mechanism) governs IP3-mediated Ca2+ store release signaling in order to support long-term maintenance of PHP.\n\nWe turned again to the UAS-IP3-sponge transgene because it can be expressed in a tissue-specific manner, and it conveyed a full block of PHP when dually expressed in the neuron and muscle (Figure 2). We expressed UAS-IP3-sponge in a GAL4 driver (neuron or muscle alone) or a driver\u00a0+GluRIIASPSP16 null genetic background. We then quantified PHP by NMJ electrophysiology, considering neuronal (Figure 8A\u2013C) or muscle (Figure 8D\u2013F) expression (Supplementary file 7 for summary Figure 8 data) (Figure 8\u2014source data 1 for raw data). Surprisingly, we did not localize the full block of PHP maintenance to a single tissue. For expression in either tissue alone, there was still a small increase in QC in a Gal4\u00a0>>UAS-IP3-sponge\u00a0+\u00a0GluRIIASPSP16 genetic condition, compared to control Gal4\u00a0>>UAS-IP3-sponge expression in an unchallenged background (Figure 8C,F). EPSP values were depressed when UAS-IP3-sponge was expressed neuronally in the GluRIIA null background (Figure 8B,G), consistent with an important neuronal component to PHP (Brusich et al., 2015). Combined with our prior data (Figure 2), we conclude that the maintenance of PHP can be fully erased by IP3 sequestration \u2013 but only if this is done in a dual tissue manner.\n\n![Figure 8.](https://cdn.elifesciences.org/articles/39643/elife-39643-fig8-v1.jpg)\n\n**Figure 8.:** UAS-IP3-sponge transgene expression in single tissue types impairs PHP maintenance, but does not block it. IP3-sponge either in neurons (A\u2013C) or muscle (D\u2013F). Wild-type and GluRIIA control data sets are replotted from Figures 4\u20136 for visual comparison. (A) The GluRIIASP16 deletion mutation diminishes quantal size for all experimental conditions. (B) EPSP amplitudes are somewhat impaired versus non-GluRIIA control in all cases but most severely impaired when GluRIIA deletion is combined with presynaptic IP3-sponge expression. (C) By quantal content, sustained PHP is still present for all conditions shown. (D) The GluRIIASP16 deletion mutation diminishes quantal size for all experimental conditions. (E) EPSP amplitudes are somewhat impaired versus non-GluRIIA control. (F) By quantal content, sustained PHP is still present for all conditions shown. (G) Representative electrophysiological traces for conditions in (A\u2013F). (H) UAS-IP3-sponge transgene expression does not impair calcium cooperativity of release. (I) Representative electrophysiological trances for conditions in (H). Violin plots used as in Figure 1. Statistical comparisons are by one-way ANOVA followed by Bonferroni post-hoc test across genotypes shown. *p<0.05, **p<0.01, ***p<0.001. Scale bars in (G) apply to all traces in (G) and (I) and are y\u00a0=\u00a010 mV (1 mV), x\u00a0=\u00a020 ms (500 ms) for EPSPs (mEPSPs).\n\nOur data indicate that IP3 functions in a shared process with Ca2+ store release. Presynaptic neurotransmitter release at the NMJ and other synapses is highly sensitive to changes in intracellular Ca2+ concentration after influx through voltage-gated CaV2 channels. Therefore, we checked if IP3 signaling and its effects on intracellular Ca2+ release might impinge upon the Ca2+ sensing machinery in the presynaptic cleft, which could potentially influence PHP. We conducted NMJ recordings over a range of low extracellular [Ca2+] and calculated the Ca2+ cooperativity of release for the dual-tissue expression UAS-IP3-sponge NMJs, as well as wild-type NMJs and GAL4 driver control NMJs. The Ca2+ cooperativity of release was steady between the three conditions (Figure 8H,I), indicating that sequestration of cellular IP3 at the NMJ does not directly alter the Ca2+-dependence of synaptic release at the presynaptic NMJ.\n\n## Discussion\n\nIn this study, we divided the acute induction and chronic maintenance stages of presynaptic homeostatic potentiation. Our data support two core findings. The first is that the short-term induction and long-term maintenance of PHP are separable by genetic and pharmacological manipulations. The second is that an IP3-mediated signaling system is specifically required for the maintenance of PHP (Figure 9).\n\n![Figure 9.](https://cdn.elifesciences.org/articles/39643/elife-39643-fig9-v1.jpg)\n\n**Figure 9.:** At the Drosophila NMJ, PLC\u03b2 and effectors IP3R and RyR are required for the maintenance of HSP. Left: PLC\u03b2 signaling components depicted in both muscle and neuron at the Drosophila NMJ. We detected no apparent role for PLC\u03b2, IP3R, or RyR in baseline neurotransmission. Right: Reduced postsynaptic glutamate receptor function \u2013 either due to deletion of the GluRIIA gene or expression of UAS-GluRIII[RNAi] \u2013 drives a chronic form of PHP that is maintained throughout life. A retrograde, muscle-to-nerve signal instructs the neuron to increase the number of neurotransmitter vesicles released (quantal content). Our data support a model in which long-term maintenance of PHP requires PLC\u03b2 and its effectors in both the presynaptic neuron and postsynaptic muscle, but these factors are dispensable for the rapid induction of PHP.\n\n### Acute versus chronic PHP expression\n\nFor several years, one assumption has been that both the acute and chronic forms of PHP are executed in a similar way \u2013 and possibly by shared mechanisms. The issue has been clouded by the fact that both PhTox and a GluRIIA deletion mutant \u2013 the primary reagents utilized to induce PHP \u2013 have the same molecular target, that\u00a0is GluRIIA-containing glutamate receptors (Frank et al., 2006; Petersen et al., 1997). The process of combining these acute and chronic forms of plasticity within a single genotypic background was cumbersome due to a lack of reagents available to conduct temporally separate targeting experiments.\n\nSeveral groups ascertained insights into temporal requirements by targeting potential homeostatic signaling genes. The main finding has been that the majority of molecules identified are essential to both the acute and chronic forms of PHP (Davis and M\u00fcller, 2015; Frank, 2014a). Neurons tightly control neurotransmitter release probability, and the core presynaptic machinery directly responsible for increasing quantal content is shared. These shared components include the CaV2-type voltage-gated calcium channel or factors gating influx through the channel (Frank et al., 2006; Frank et al., 2009; M\u00fcller and Davis, 2012; Wang et al., 2014; Wang et al., 2016a; Younger et al., 2013). They also include factors that regulate the size of the readily releasable pool (RRP) of presynaptic vesicles (Harris et al., 2015; M\u00fcller et al., 2015; M\u00fcller et al., 2012; Wang et al., 2016a; Wentzel et al., 2018; Weyhersm\u00fcller et al., 2011) or factors that control the baseline excitability or plasticity\u00a0of the presynaptic motor neuron (Bergquist et al., 2010;\u00a0Kiragasi et al., 2017; Orr et al., 2017b; Parrish et al., 2014; Younger et al., 2013) \u2013 and neurotransmitter fusion events themselves (Dickman and Davis, 2009; Dickman et al., 2012;\u00a0M\u00fcller et al., 2011; Ortega et al., 2018). As a result, both the acute and chronic forms of PHP signaling cause increases in readily releasable pool (RRP) size and CaV2-mediated calcium influx; and in turn, these presynaptic mechanisms underlie the increases in QC which constitute PHP (Davis and M\u00fcller, 2015; M\u00fcller and Davis, 2012; M\u00fcller et al., 2012).\n\nHere, we show that although the acute and chronic processes might overlap, they are functionally separable. The fact that they are separable is not necessarily surprising. This finding mirrors data for discrete molecules required for long-term PHP maintenance, such as Target of Rapamycin (Tor) (Goel et al., 2017; Kauwe et al., 2016; Penney et al., 2012), the Rho-type guanine exchange factor Ephexin (Frank et al., 2009), the transcription factor Gooseberry (Marie et al., 2010), C-terminal Src Kinase (Spring et al., 2016), innate immune signals molecules IMD, IKK\u03b2, Relish (Harris et al., 2018) and the kinesin adaptor Arl8 (Goel et al., 2019a; Vukoja et al., 2018). Importantly, this list contains molecules implicated both in neuron and muscle. We have added PLC\u03b2 (Brusich et al., 2015) and its effectors IP3R and RyR to this list.\n\nRecent studies have augmented the idea of overlapping signaling pathways and added a degree of specificity. Both acute and chronic forms of PHP begin as instructive retrograde signals after perturbations are detected in the muscle (Hauswirth et al., 2018;\u00a0Orr et al., 2017a). These forms of PHP\u00a0involve a\u00a0decrease in phosphorylation of muscle CaMKII levels, and converge upon the same signaling components in the presynaptic neuron (Goel et al., 2017; Li et al., 2018; Newman et al., 2017). These studies suggest that Tor signaling\u00a0converges on the same molecular targets as acute forms of PHP (Goel et al., 2017). However, the precise roles for Tor and CaMKII in either form of PHP are as yet unknown.\n\nOur data appear to contradict the idea of PHP pathway convergence (Goel et al., 2017). Yet, our findings are not incompatible with this idea. Multiple lines of evidence indicate discrete signaling requirements for acute forms of PHP on both sides of the synapse. A convergence point is undefined. Accounting for the separation of acute and chronic forms of PHP \u2013 as well as their discrete signaling requirements \u2013 long-term maintenance of PHP might integrate multiple signals between the muscle and neuron over time. For future studies, it will be important to clearly define roles of signaling systems underlying PHP and how distinct signaling systems might be linked.\n\n### Unexpected findings about PHP stage separation\n\nOur work presents unexpected findings. The first is that even in the face of a chronic impairment or block of homeostatic potentiation, the NMJ is nevertheless capable of a full rapid induction of PHP (Figures 1, 2 and 7). Given that most molecules required for PHP identified to date are needed for both phases, we did not expect significant functional separation between them. We expected a\u00a0priori that a failure of the chronic maintenance of PHP would make core machinery unavailable for its acute induction. The second unexpected finding is how quickly the chronic maintenance of PHP can be nullified by pharmacology (10 min), resulting in a return to baseline neurotransmitter release probability after only minutes of drug exposure (Figures 4\u20136). We showed that homeostatic potentiation in GluRIIA mutant larvae or GluRIII knock-down larvae was abrogated by four different reagents previously known to block IP3R (Figures 4 and 5) or RyR (Figure 6). Those findings are reminiscent of prior work showing that acute blockade of DAG/ENaC channels with the drug benzamil abolishes PHP in both a GluRIIA mutant background, as well as in the presence of PhTox (Younger et al., 2013). A difference between benzamil application and the pharmacological agents used in our study is that the drugs we employed only abolished PHP in a chronically challenged background.\n\n### Does PHP induction lead to maintenance?\n\nIt is unclear how signaling systems that drive homeostatic plasticity transition from a state of induction to a state of maintenance. It is also not understood how interdependent short-term and long-term HSP implementation mechanisms are. A more complete understanding of the timing and perdurance of these properties could have important implications for neurological conditions where synapse stability is episodically lost (Russell et al., 2013).\n\nOur findings parallel recent data examining active zone protein intensities in the contexts of induction of PHP and maintenance of PHP at the NMJ. There are multiple results informative to our study. First, the expression of any form of PHP (acute or chronic) appears to correlate with an increased intensity of active zone protein levels, such as CaV2/Cacophony (Gratz et al., 2019), UNC-13 (B\u00f6hme et al., 2019), and the Drosophila CAST/ELKS homolog Bruchpilot (B\u00f6hme et al., 2019; Goel et al., 2019a; Gratz et al., 2019). Unexpectedly, however, two of these studies also reported that the rapid induction of PHP does not require this protein increase in order to be functionally executed (B\u00f6hme et al., 2019; Goel et al., 2019a). These are conundrums for future work. How does rapid active zone remodeling happen in minutes on a mechanistic level? In the absence of such remodeling, how is\u00a0PHP able to be induced rapidly? Moreover, is the observed short-term active zone remodeling the kernel for the longer-term changes to the active zone and release probability \u2013 or is some other compensatory system triggered over long periods of developmental time (e.g., see multiple mechanisms described by\u00a0Goel et al., 2019b)?\n\nOur findings add a new dimension to those puzzles with the data that IP3 signaling is continuously required to maintain PHP. If active zone remodeling truly is instructive for PHP maintenance, then it will be interesting to test what roles IP3 signaling and intracellular calcium release play in that process. Our screen did include a UAS-RNAi line against unc-13 and an upstream GPCR-encoding gene methuselah (Supplementary file 2). Moreover, we previously published a study of PHP using a UAS-cac[RNAi] line (Brusich et al., 2015). Chronic PHP maintenance was intact for all of those manipulations. Those findings are not necessarily contradictory to the recent work from other groups. For instance, knockdown of an active zone protein by RNAi is not a null condition. As such, RNAi-mediated knockdown should leave residual wild-type protein around. In theory, that residual protein could be scaled with homeostatic need.\n\n### PLC\u03b2- and IP3-directed Signaling is Required for PHP Maintenance\n\nOur data strongly suggest that intracellular calcium channel activation and store release fine tune neurotransmitter release that is implemented by PHP. The exact mechanism by which IP3R and RyR function to maintain PHP at the NMJ is unclear. It appears to be a shared process with IP3 (Figure 7). If these store-release channels are acting downstream of IP3 activity, then our data suggest that this would be a coordinated activity involving both the muscle and the neuron (Figures 8 and 9) \u2013 with loss of IP3 signaling in the neuron being more detrimental to evoked release (Figure 8G).\n\nIt remains unclear what signals are acting upstream. PLC\u03b2 is canonically activated by G\u03b1q signaling. From our prior work, we garnered evidence that a Drosophila Gq protein plays a role in the long-term maintenance of HSP (Brusich et al., 2015). Logically, there may exist a G-protein-coupled receptor (GPCR) that functions upstream of PLC\u03b2/IP3 signaling. Our screen did not positively identify such a GPCR. We did examine several genes encoding GPCRs, including TkR86C, mAChR-A, GABA-B-R1, PK2-R2, methuselah, AdoR, and mGluR (Supplementary file 2). We also examined genes encoding G\u03b2 subunits or putative scaffolding molecules, including CG7611 (a WD40-repeat-encoding gene), G\u03b213F, and G\u03b276C, again with no positive screen hits (Supplementary file 2).\n\nOur data are consistent with dual pre- and postsynaptic functions of IP3. This could mean dual pre- and postsynaptic roles for calcium store release \u2013 through an undetermined combination of RyR and IP3R activities, again either pre- or postsynaptic. Both RyR and IP3R have been shown to be critical for specific aspects of neuroplasticity and neurotransmission (Berridge, 2016). Activities of both RyR and IP3R can activate molecules that drive plasticity, such as Calcineurin (Victor et al., 1995) and CaMKII (Shakiryanova et al., 2011). At rodent hippocampal synapses, electrophysiological measures like paired-pulse facilitation and frequency of spontaneous neurotransmitter release (Emptage et al., 2001) are modulated by RyR and/or IP3R function, as is facilitation of evoked neurotransmitter at the rat neocortex (Mathew and Hablitz, 2008). In addition to vesicle fusion apparatus, activity of presynaptic voltage-gated calcium channels is modulated by intracellular calcium (Catterall, 2011; Lee et al., 2000). Our own work at the NMJ has shown that impairing factors needed for store-operated calcium release can mollify hyperexcitability phenotypes caused by gain-of-function CaV2 amino-acid substitutions (Brusich et al., 2018).\n\nWithin the presynaptic neuron, IP3R and RyR could activate any number of calcium-dependent molecules to propagate homeostatic signaling. We tested some candidates in our screen (Figure 2, Supplementary file 2), but none of those tests blocked PHP. One possibility is that the reagents we utilized did not sufficiently diminish the function of target molecules enough to impact PHP in this directed screen. Detection of downstream effectors specific to muscle or neuron might also be hampered by the fact that attenuation of IP3 signaling in a single tissue is insufficient to abrogate PHP. Another possibility is that presynaptic store calcium efflux via IP3R and RyR may directly potentiate neurotransmitter release, either by potentiating basal calcium levels or synchronously with CaV2-type voltage-gated calcium channels (Frank et al., 2006; M\u00fcller and Davis, 2012).\n\nBoth pre- and postsynaptic voltage-gated calcium channels are critical for the expression of several forms of homeostatic synaptic plasticity (Frank, 2014b). Much evidence supports the hypothesis that store-operated channels and voltage gated calcium channels interact to facilitate PHP. In various neuronal populations, both RyR and IP3R interact with L-type calcium channels physically and functionally to reciprocally impact the opening of the other channel (Chavis et al., 1996; Kim et al., 2007; Ouardouz et al., 2003). In presynaptic boutons, RyR calcium release follows action potential firing (Emptage et al., 2001). Calcium imaging experiments show that both the acute expression and sustained maintenance of PHP requires an increase in presynaptic calcium following an action potential (M\u00fcller and Davis, 2012). Because IP3Rs are activated by both free calcium and IP3, elevated IP3 levels in the case of chronically expressed PHP could allow IP3Rs and RyRs to open in a way that is time-locked with CaV2-mediated calcium influx or in a way to facilitate the results of later CaV2-mediated influx.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Genetic Reagent (Drosophila melanogaster)</td>\n      <td>GluRIII[RNAi] or UAS-GluRIII[RNAi]</td>\n      <td>PMID: 25859184</td>\n      <td>FlyBase ID:FlyBase_FBtp0110520</td>\n      <td>UAS-pWiz transgene knocking downGluRIII gene function. This lab (CAF) is the source (Brusich et al., 2015).</td>\n    </tr>\n    <tr>\n      <td>Genetic Reagent (D. melanogaster)</td>\n      <td>Plc21C[RNAi] or UAS-Plc21C[RNAi]</td>\n      <td>Vienna Drosophila Resource Center (GD11359); PMID: 17625558</td>\n      <td>RRID:FlyBase_FBst0456476</td>\n      <td>UAS-RNAi transgene</td>\n    </tr>\n    <tr>\n      <td>Genetic Reagent (D. melanogaster)</td>\n      <td>Plc21C[RNAi] or UAS-Plc21C[RNAi]</td>\n      <td>Vienna Drosophila Resource Center (GD11359); PMID: 17625558</td>\n      <td>RRID:FlyBase_FBst0456477</td>\n      <td>UAS-RNAi transgene</td>\n    </tr>\n    <tr>\n      <td>Genetic Reagent (D. melanogaster)</td>\n      <td>UAS-IP3-sponge.m30</td>\n      <td>PMID: 16540404</td>\n      <td>FlyBase ID:FlyBase_FBtp0068098</td>\n      <td>also referred to as UAS-IP3-sponge</td>\n    </tr>\n    <tr>\n      <td>Genetic Reagent (D. melanogaster)</td>\n      <td>UAS-IP3-sponge.m49</td>\n      <td>PMID: 16540404</td>\n      <td>FlyBase ID:FlyBase_FBtp0068099</td>\n      <td>also referred to as UAS-IP3-sponge</td>\n    </tr>\n    <tr>\n      <td>Genetic Reagent (D. melanogaster)</td>\n      <td>GluRIIASP16</td>\n      <td>PMID: 9427247</td>\n      <td>RRID:BDSC_64202</td>\n      <td>deletion allele; also referred to as GluRIIA</td>\n    </tr>\n    <tr>\n      <td>Genetic Reagent (D. melanogaster)</td>\n      <td>w1118</td>\n      <td>PMID: 6319027</td>\n      <td>RRID:BDSC_3605</td>\n      <td>wild-type genetic background</td>\n    </tr>\n    <tr>\n      <td>Genetic Reagent (D. melanogaster)</td>\n      <td>elaV(C155)-Gal4</td>\n      <td>PMID: 7917288</td>\n      <td>RRID:BDSC_458</td>\n      <td>also known as C155-Gal4</td>\n    </tr>\n    <tr>\n      <td>Genetic Reagent (D. melanogaster)</td>\n      <td>Sca-Gal4</td>\n      <td>PMID: 8893021</td>\n      <td>FlyBase ID:FlyBase_FBtp0007534</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic Reagent (D. melanogaster)</td>\n      <td>BG57-Gal4</td>\n      <td>PMID: 8893021</td>\n      <td>FlyBase ID:FlyBase_FBti0016293</td>\n      <td>also known as C57-Gal4</td>\n    </tr>\n    <tr>\n      <td>Chemical Compound, Drug</td>\n      <td>Philanthotoxin-433; PhTox</td>\n      <td>Sigma-Aldrich (MilliporeSigma); Santa Cruz Biotechnology</td>\n      <td>CAS Number:(Sigma-Aldrich and Santa Cruz Biotechnology)_276684-27-6</td>\n      <td>product P207 discontinued by Sigma-Aldrich</td>\n    </tr>\n    <tr>\n      <td>Chemical Compound, Drug</td>\n      <td>Xestospongin C</td>\n      <td>Abcam</td>\n      <td>CAS Number:Abcam_88903-69-9</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical Compound, Drug</td>\n      <td>2-APB</td>\n      <td>Tocris</td>\n      <td>CAS Number:Tocris_524-95-8</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical Compound, Drug</td>\n      <td>Ryanodine</td>\n      <td>Tocris</td>\n      <td>CAS Number:Tocris_15662-33-6</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical Compound, Drug</td>\n      <td>Dantrolene</td>\n      <td>Tocris</td>\n      <td>CAS Number:Tocris_14663-23-1</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Monoclonal mouse anti-Synapsin</td>\n      <td>DSHB (3C11)</td>\n      <td>Cat#: DSHB_3C11; RRID:AB_2313867</td>\n      <td>(1:50)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Polyclonal rabbit anti-Dlg</td>\n      <td>PMID: 8893021</td>\n      <td></td>\n      <td>(1:15,000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Polyclonal goat anti-mouse 488 (DyLight)</td>\n      <td>Jackson ImmunoResearch</td>\n      <td>Cat #:Jackson_ 115-485-003; (no RRID)</td>\n      <td>(1:1000) discontinued; substitute with Cat# 115-485-068; RRID:AB_2338804</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Polyclonal goat anti-rabbit 549 (DyLight)</td>\n      <td>Jackson ImmunoResearch</td>\n      <td>Cat#:Jackson_111-505-003; RRID:AB_2493180</td>\n      <td>(1:2000) discontinued; substitute with Cat# 111-165-003; RRID:AB_2338000</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Polyclonal goat anti-HRP (Alexa-647)</td>\n      <td>Jackson ImmunoResearch</td>\n      <td>Cat#:Jackson_123-605-021; RRID:AB_2338967</td>\n      <td>(1:250)</td>\n    </tr>\n    <tr>\n      <td>Software, Algorithm</td>\n      <td>pClamp</td>\n      <td>Molecular Devices</td>\n      <td>RRID:SCR_011323</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, Algorithm</td>\n      <td>MiniAnalysis Program</td>\n      <td>Synaptosoft</td>\n      <td>RRID:SCR_002184</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, Algorithm</td>\n      <td>GraphPad Prism</td>\n      <td>GraphPad</td>\n      <td>RRID:SCR_002798</td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### Drosophila husbandry\n\nDrosophila melanogaster fruit flies were raised on Cornmeal, Molasses and Yeast Medium prepared according to the Bloomington Drosophila Stock Center (BDSC, Bloomington, IN) recipe. Drosophila husbandry was performed according to standard practices (Greenspan, 2004). Larvae were raised at 25\u00b0C or 29\u00b0C in humidity controlled and light-controlled Percival DR-36VL incubators (Geneva Scientific).\n\n### Drosophila genetic lines\n\nw1118 (Hazelrigg et al., 1984) was used as a non-transgenic wild type stock. The deletion GluRIIA allele (GluRIIASP16) was generated previously (Petersen et al., 1997). UAS-IP3-sponge lines (UAS-IP3-sponge.m30 and UAS-IP3-sponge.m49) were provided by Drs. Masayuki Koganezawa and Daisuke Yamamoto (Usui-Aoki et al., 2005). The UAS-GluRIII[RNAi] line utilized to screen homeostatic candidate molecules was described previously (Brusich et al., 2015). GAL4 drivers simultaneously utilized for the \u2018Pre-+Post-Gal4\u2019 conditions were elaV(C155)-Gal4 (Lin and Goodman, 1994), Sca-Gal4 (Budnik et al., 1996), and BG57-Gal4 (Budnik et al., 1996).\n\nIn addition to the UAS-IP3-sponge lines, several UAS-RNAi or genetic mutant lines were obtained either from the BDSC or the Vienna Drosophila Resource Center (VDRC, Vienna, Austria). Those specific mutations and lines are detailed in Supplementary file 2. Procedures for how the UAS-RNAi lines were generated have been published (Dietzl et al., 2007; Ni et al., 2009).\n\n### Electrophysiology and pharmacology\n\nWandering third instar larvae were collected and filleted for NMJ analysis. Control and experimental samples were collected in parallel, using identical conditions. Activity in abdominal muscle 6 from segments 2 and 3 was recorded in a modified HL3 saline (70 mM NaCl, 5 mM KCl, 5 mM HEPES, 10 mM NaHCO3, 115 mM sucrose, 0.5 mM CaCl2 (unless otherwise noted), 10 mM MgCl2, 4.2 mM trehalose, pH 7.2) (see Stewart et al., 1994 for original parameters). Sharp electrode recordings of miniature excitatory postsynaptic potentials (mEPSPs) and excitatory postsynaptic potentials (EPSPs) were conducted as previously described (Brusich et al., 2015; Spring et al., 2016; Yeates et al., 2017) and analyzed using MiniAnalysis (Synaptosoft) and pClamp10 (Molecular Devices) software, blind to genotype or treatment. Uncorrected quantal content (QC) was estimated per NMJ as average EPSP/average mEPSP and was also reported as corrected for non-linear summation as done previously (Martin, 1955). For the correction factor formula (Martin, 1955), we used a reversal potential of\u00a0+10 mV (Supplemental Excel File).\n\nPharmacological agents were bath applied in recording saline at the final concentrations indicated in the text, figures, and tables. The agents included Philanthotoxin-433 (PhTox, Sigma-Aldrich and Santa Cruz Biotechnology), Xestospongin C (Abcam), 2-APB (Tocris, Bio-Techne Corporation), Ryanodine (Tocris), and Dantrolene (Tocris).\n\nTo render mEPSP and EPSP traces for figures, we pulled (x,y) coordinates from the Clampfit program (Molecular Devices) and imported those coordinates into GraphPad Prism (GraphPad) software. For all traces, we chose a recording that was at (or closest to) the calculated average. For mEPSPs, we picked a representative selection of minis. For EPSPs, the final trace that was rendered was an average of all the EPSP traces from that particular NMJ.\n\n### Immunostaining and analyses\n\nImmunostaining and image analyses of NMJ 6/7 in segments A2 and A3 were performed as previously described (Spring et al., 2016; Yeates et al., 2017). Briefly, fileted larvae were fixed in Bouin\u2019s fixative for 4 min, washed, incubated in primary antibodies for 2 hr, washed, and incubated in secondary antibodies for an additional 2 hr. Bouton staining was performed to assess NMJ growth by using the following primary antibodies: mouse anti-Synapsin (anti-Syn; 3C11) 1:50 (Developmental Studies Hybridoma Bank, Iowa City, IA) and rabbit anti-Dlg 1:15,000 (Budnik et al., 1996). The following fluorophore conjugated secondary antibodies were also used (Jackson ImmunoResearch Laboratories): goat anti-mouse 488 1:1000 (DyLight) and goat anti\u2013rabbit 549 1:2000 (DyLight). Goat anti-HRP 1:250 (Alexa-647) was utilized to stain neuronal membranes. Larval preparations were mounted in Vectashield (Vector Laboratories) and imaged at room temperature using Zen software on a Zeiss 880 Laser Scanning Microscope with an EC Plan-Neofluar 40X Oil DIC Objective (aperture 1.30) or an EC Plan-Apochromat 63X Oil DIC Objective (aperture 1.40; Zeiss). Experimental and control larval preps were imaged using identical acquisition settings and analyzed blind to genotype using the same procedure and thresholds. Images were prepared for publication in Adobe Photoshop using identical procedures for experimental and control images. Anti-Dlg bouton counts were completed in a blinded fashion to quantify synapse growth. For each anti-Dlg\u2013positive bouton counted in muscle, it was verified that there was a corresponding cluster of anti-Syn staining in neurons.\n\n### Statistical analyses\n\nFor electrophysiological data, statistical significance was tested either by Student\u2019s T-Test if one experimental data set was being directly compared to a control data set, or by one-way ANOVA with a Bonferroni post-hoc test if multiple data sets were being compared. For bouton counting, significance was tested utilizing a Kruskal-Wallis ANOVA test followed by Dunn\u2019s post-hoc test. Specific p value ranges and tests are noted in the Figures and Figure Legends and Supplementary Files and shown in graphs as follows: *p<0.05, **p<0.01, and ***p<0.001. All statistical analyses were conducted using GraphPad Prism Software. Most figure data are plotted as violin plots from GraphPad Prism; the violin plot shapes signify data distribution, n values are below those shapes, and horizontal lines signify the 0th, 25th, 50th, 75th, and 100th percentiles of the data.\n",
+      "created_at": "2025-12-02T10:30:25.803683Z"
+    },
+    {
+      "id": "f6fb0e5c-fb76-4392-945b-2e4719c69868",
+      "submission_id": "9fd49b1e-1e55-4474-be20-b2e296f5d560",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- K VijayRaghavan, National Centre for Biological Sciences, Tata Institute of Fundamental Research India\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.39643.028](https://doi.org/10.7554/eLife.39643.028)\n\nIn the interests of transparency, eLife includes the editorial decision letter, peer reviews, and accompanying author responses.\n\n[Editorial note: This article has been through an editorial process in which the authors decide how to respond to the issues raised during peer review. The Reviewing Editor's assessment is that all the issues have been addressed.]\n\nThank you for submitting your article \"Maintenance of homeostatic plasticity at the Drosophila neuromuscular synapse requires continuous IP3-directed signaling\" for consideration by eLife. Your article has been reviewed by two peer reviewers, and the evaluation has been overseen by K VijayRaghavan as the Reviewing Editor and Senior Editor. The reviewers have opted to remain anonymous.\n\nThe Reviewing Editor has highlighted the concerns that require revision and/or responses, and we have included the separate reviews below for your consideration. If you have any questions, please do not hesitate to contact us.\n\nSummary (From Reviewer #1):\n\nSynaptic homeostasis comprises a number of processes that help to maintain the strength of synaptic transmission at an optimal level through a variety of conditions. One accessible model for this is the Drosophila NMJ, at which a reduction in postsynaptic receptor capacity (typically measured as mEPSPs) leads to a compensatory increase in the number of synaptic vesicles released (QC, quantal content), so as to maintain overall synaptic strength. Both acute (pharmacologically induced) and chronic (genetically induced) homeostatic responses to lowered postsynaptic receptor capacity can be observed at the NMJ, but the extent to which they share similar mechanisms has not been extensively investigated.\n\nJames et al. present strong evidence that the two responses can be separated \u2013 most strikingly that in some circumstances that impair the response to chronic receptor blockage, the response to acute blockage remains intact. They also present evidence for a partial mechanism, using both genetics and pharmacology to implicate release from both presynaptic and postsynaptic ER calcium stores in the mechanism, and also provide evidence that both pre- and post-synaptic mechanisms are involved.\n\nThe main strength of the work is that it is potentially a valuable contribution to dissecting the two responses (acute and chronic), and their molecular mechanisms; it should, therefore, be of wide interest, and also suggests directions for future mechanistic work on the area. My main criticism is that the authors' conclusions depend critically on their quantitative and statistical analyses, and these are not currently explicit or complete enough for me to give my wholehearted support to the paper. These shortcomings would, therefore, need to be addressed \u2013 I've elaborated in more depth in the section below on data and statistics.\n\nSeparate reviews (please respond to each point):\n\nReviewer #1:\n\nIntroductory Paragraph of Reviewer 1 is the summary above.\n\nMinor Comments:\n\nSubsection \u201cPharmacology targeting Ryanodine Receptors uncouples the induction and maintenance of PHP\u201d and Discussion. The authors argue that IP3R and RyR function in a common pathway. But if blockage of either abolishes chronic homeostasis, is it not equally plausible that they function independently, but that both are necessary for homeostasis?\n\nSubsection \u201cPLCb- and IP3-directed Signaling is Required for PHP Maintenance\u201d: The downstream consequences of blocking RyR and IP3R signaling are discussed at length here, but hardly anything about the possible upstream events. And is it plausible that one of these could be acting (more) presynaptically and the other (more) postsynaptically?\n\nFigure 6A. One of the important comparisons should be GluRIIA driver control with GluRIIA IP3-sponge? This comparison is shown for only 3 of the 4 graphs in A and B, but not for the left graph in A. Presumably it should also be shown in A? And why is there a comparison here of driver control with IP3 sponge, but not in the other graphs?\n\nIntroduction, sentence four: has > have\n\nIntroduction paragraph four: previously identified Plc21 \u2013 as what?\n\nIntroduction paragraph five: Drosophila in italics (maybe elsewhere too, I just noticed it here)\n\nSubsection \u201cPharmacology targeting IP3 receptors uncouples the induction and maintenance of PHP\u201d: throughout the soma (including synapses) \u2013 soma does not include synapses\n\nAdditional data files and statistical comments (important):\n\n1) Instead of showing graphs with mean + SEM superimposed on a bar, graphs should show mean + SEM, or box and whiskers (median and interquartile range, with 5/95 or 10/90 percentiles) for non-parametric distributions, superimposed on all datapoints. Number of datapoints should be stated for each mean + SEM or box/whiskers.\n\n2) Comparisons would be easier to visualize if the same quantities were always graphed together, e.g. all mEPSPs together across genotypes or treatments, or all QCs together, as in Figure 6 \u2013 instead of grouping genotypes or treatments, as in other figures.\n\n3) A corollary of points 1 and 2 is that the distribution of control datapoints should also be shown for all graphs, rather than just showing the non-control readings expressed as numbers normalized to controls.\n\n4) A corollary or points 1, 2 and 3 is that all readings in graphs should be expressed as raw units, e.g. mV, not normalized to 100. This is necessary for the reader to assess how the authors' values compare with those of other workers, and even across the paper.\n\n5) The authors also leave a lot up to the faith of the reader by presenting \"typical\" plots of EPSPs and mini-EPSPs. For a paper where so much hangs by the quantitative comparisons, I'd rather see plots of mean EPSPs (although this may not be possible for mEPSPs).\n\n6) When the authors show graphs of mEPSPs and QC, they should also show an equivalent graph for EPSPs across genotypes or treatments. The authors' conclusions depend critically on their estimates of QC, and because of the non-linear relationship of QC with increasing EPSP magnitude, the correction required makes QC estimate less accurate for large EPSPs than for small ones. This intrinsic inaccuracy also a reason why the authors must do better at showing their raw data and analyses. The ideal solution would be to use 2-electrode voltage clamping to measure mEPSCs and EPSCs, so that no correction is required to estimate QC \u2013 although the authors' approach might still be enough if they improve the rigor used to show and explain their measurements and analyses.\n\n7) Since the authors' quantitative analyses are so critical to their conclusions, they should also deposit all their supporting raw datapoints and analyses (not just summarized parameters as in current Supplementary files), either in supplementary info, or with a permanent DOI in a public data repository, linked to the paper. Datapoints should be deposited in a file format that allows any reader to analyze them, e.g. csv/tsv, Excel, Graphpad or a common stats package. GraphPad Prism files are convenient since they also show analyses, but since not all readers may have the relevant software, datapoints should also be provided in a widely accessible format like tsv/csv/Excel.\n\nReviewer #2:\n\nThe study by James el al follows up on their previous identification of PLC\u03b2 as a key enzyme for maintenance of PHP. Here they dissect the signaling downstream PLC\u03b2 and show that IP3 and Ryanodine receptor (RyR) are part of the same signaling pathway required to maintain PHP. Interestingly, synapses with impairements in PLC\u03b2, IP3 or RyR signaling respond to acute pharmacological challenges (such as PhTox) albeit thay cannot sustain expression of PHP. The authors combine genetics and pharmacological manipulations to document the separation of induction vs. maintenance processes in presynaptic homeostatic plasticity.\n\nStrengths:\n\n1) Molecular pinning of the short-term induction and long-term maintenance processes during PHP. The authors have already contributed to the conceptual separation of the two processes as well as the basis for acute and chronic synaptic homeostasis. Here they take these studies further and describe a signaling pathway and pharmacological tools that differentiate between PHP induction and maintenance.\n\n2) Clever use of genetics and pharmacological manipulations to challenge the system and isolate different responses.\n\n3) The authors show that release of calcium from intracellular stores is required for the maintenance of PHP; this is separate from the presynaptic neurotransmitter release, which is highly sensitive to Ca2+ influx through voltage-gated Cav2 channels.\n\n4) They report that PHP adjusts neurotransmission release independent of the mechanisms that set baseline levels.\n\n5) Well written manuscript, with strong arguments and clearly described contributions to the field.\n\nWeaknesses:\n\n1) The authors find that IP3 signaling in both neuron and muscle contribute to the long-term homeostatic potentiation, but the underlyining pre- or postsynaptic mechanisms remain unknown. At the least, the athors should measure the RRP size. Ideally, Ca2+ influx should also be determined.\n\n2) As described in the text, once PLC\u03b2 is activated by G\u03b1q, it cleaves the PIP2 into DAG and IP3. In here, the authors only address the role of IP3-directed signaling. What about DAG? In C. elegans, DAG is thought to recruit UNC-13 at release sites, potentiating synaptic transmission (McMullan et al., Genes Dev. 2006).\n\n3) Previous studies (including by these authors) have demonstrated that motoneuron activity is not required for the rapid induction of synaptic homeostasis. Severing the axon does not disrupt the PHP induction; however, the ER and the RyR activity should be greatly altered. Is the induction of PHP in severed axons less efficient in the absence of PLC\u03b2, IP3 or RyR? How do the authors reconcile their observations?\n\n4) Xestospongin-C appears to inhibit voltage-dependent Ca2+ and K+ currents at a concentration range similar to that at which it inhibits the IP3 receptor in intact smooth muscle in rodents (Ozaki et al., 2002). Thus, Xestospongin-C is a selective blocker of the IP3 receptor in permeabilized cells but is likely less efficient in cells with intact plasma membrane such as Drosophila NMJ. Are there any inhibitory effects of Xestospongin-C on pre- and/or postsynaptic voltage-dependent Ca2+ and K+ currents at larval NMJ?\n\n5) 2-APB impairs IP3R but also other targets such as TRP channels. A TRPV channel, Inactive (Iav), maintains presynaptic resting Ca2+ concentration by promoting Ca2+ release from the ER in Drosophila motor neurons, and is required for both synapse development and neurotransmission (Wong et al., 2014). Did the authors measure any effects of 2-APB on Inactive (or other Drosophila TRP channels)? How could they rule out that 2-APB influences the TRP channels-mediated basal neurotransmission and/or synaptic homeostasis?\n\nMinor Comments:\n\nFigure 3. The number of boutons should be reported per muscle area.\n",
+      "created_at": "2025-12-02T10:30:25.803683Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T10:30:25.803683Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T10:30:25.803683Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "b6b1a374-b6b4-442a-a1f6-d2d9989162ec",
+      "content_id": "e2011ab7-edd0-4f52-8e62-4150861051ec",
+      "claim_id": "C1",
+      "claim": "At the Drosophila melanogaster larval neuromuscular junction (NMJ), a homeostatic system detects impaired postsynaptic sensitivity to neurotransmitter and activates a retrograde signal that restores synaptic function by adjusting neurotransmitter release.",
+      "claim_type": "EXPLICIT",
+      "source": "At the NMJ, a homeostatic system detects impaired postsynaptic sensitivity to neurotransmitter and activates a retrograde signal that restores synaptic function by adjusting neurotransmitter release.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about the homeostatic plasticity mechanism at the NMJ, supported by the broader literature and the experimental context of the study.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:30:25.803683Z"
+    },
+    {
+      "id": "6cbd953e-1cd7-4bbf-926d-a558dd3ab776",
+      "content_id": "e2011ab7-edd0-4f52-8e62-4150861051ec",
+      "claim_id": "C2",
+      "claim": "Homeostatic plasticity at the NMJ has been separated into temporally distinct phases: induction and maintenance.",
+      "claim_type": "EXPLICIT",
+      "source": "This process has been separated into temporally distinct phases, induction and maintenance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement describes the conceptual framework used in the field and in this study.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:30:25.803683Z"
+    },
+    {
+      "id": "472dee32-e388-4aa6-a346-b915abd9035c",
+      "content_id": "e2011ab7-edd0-4f52-8e62-4150861051ec",
+      "claim_id": "C3",
+      "claim": "A signaling system consisting of PLC\u03b2, inositol triphosphate (IP3), IP3 receptors, and Ryanodine receptors is required only for the maintenance of homeostatic plasticity.",
+      "claim_type": "EXPLICIT",
+      "source": "Combining genetics, pharmacology, and electrophysiology, we find that a signaling system consisting of PLC\u03b2, inositol triphosphate (IP3), IP3 receptors, and Ryanodine receptors is required only for the maintenance of homeostatic plasticity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study, supported by multiple genetic and pharmacological experiments presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:30:25.803683Z"
+    },
+    {
+      "id": "c6fd97d3-49ab-4ce7-b0a1-2dd2b11b9d35",
+      "content_id": "e2011ab7-edd0-4f52-8e62-4150861051ec",
+      "claim_id": "C4",
+      "claim": "The NMJ is capable of inducing homeostatic signaling even when its sustained maintenance process is absent.",
+      "claim_type": "EXPLICIT",
+      "source": "We also find that the NMJ is capable of inducing homeostatic signaling even when its sustained maintenance process is absent.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding supported by experiments showing PHP induction in conditions where maintenance is blocked.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:30:25.803683Z"
+    },
+    {
+      "id": "49ba9a1a-b673-4210-a6c2-132c3e5e009e",
+      "content_id": "e2011ab7-edd0-4f52-8e62-4150861051ec",
+      "claim_id": "C5",
+      "claim": "Concurrent knockdown of GluRIII and Plc21C gene functions by RNAi leaves homeostatic potentiation only partly intact.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, concurrent knockdown of GluRIII and Plc21C gene functions by RNAi (Pre-+Post Gal4>>UAS-GluRIII[RNAi]+Plc21C[RNAi]) leaves this form of homeostatic potentiation only partly intact (Figure 1A\u2013C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by electrophysiological data presented in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:30:25.803683Z"
+    },
+    {
+      "id": "2c3420be-f140-4ff3-b1d2-9a80edd72419",
+      "content_id": "e2011ab7-edd0-4f52-8e62-4150861051ec",
+      "claim_id": "C6",
+      "claim": "Partial loss of Plc21C gene function is not sufficient to block the rapid induction of PHP.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, partial loss of Plc21C gene function is not a sufficient condition to block the rapid induction of PHP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is drawn from experiments showing that PhTox-induced PHP occurs normally in Plc21C knockdown backgrounds (Figure 1E-H).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:30:25.803683Z"
+    },
+    {
+      "id": "1cc6f8cc-ad2a-4508-9dec-2dcda7cad22e",
+      "content_id": "e2011ab7-edd0-4f52-8e62-4150861051ec",
+      "claim_id": "C7",
+      "claim": "A rapid induction of PHP is possible at a synapse already undergoing a sustained maintenance of PHP.",
+      "claim_type": "EXPLICIT",
+      "source": "This result indicated that a rapid induction of PHP was possible at a synapse already undergoing a sustained maintenance of PHP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experiments applying PhTox to UAS-GluRIII[RNAi] synapses (Figure 1I-L).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:30:25.803683Z"
+    },
+    {
+      "id": "f06df672-b066-4a03-ae4c-e081009d94d0",
+      "content_id": "e2011ab7-edd0-4f52-8e62-4150861051ec",
+      "claim_id": "C8",
+      "claim": "Acute PHP induction does not require intact PHP maintenance and PLC\u03b2 plays a maintenance role.",
+      "claim_type": "EXPLICIT",
+      "source": "Collectively, these data suggest that acute PHP induction does not require intact PHP maintenance and that PLC\u03b2 plays a maintenance role.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is drawn from experiments showing PHP induction in conditions where maintenance is impaired by Plc21C knockdown.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:30:25.803683Z"
+    },
+    {
+      "id": "22892ecc-7b53-461e-8978-a740c3896ec2",
+      "content_id": "e2011ab7-edd0-4f52-8e62-4150861051ec",
+      "claim_id": "C9",
+      "claim": "Concomitant pre-and postsynaptic expression of UAS-IP3-sponge transgenes completely blocked the long-term expression of PHP.",
+      "claim_type": "EXPLICIT",
+      "source": "Concomitant pre-and postsynaptic expression of UAS-IP3-sponge transgenes completely blocked the long-term expression of PHP (Figure 2B\u2013E).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by electrophysiological data in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:30:25.803683Z"
+    },
+    {
+      "id": "a9aad1d6-f3b3-43af-a6e2-012141690ac4",
+      "content_id": "e2011ab7-edd0-4f52-8e62-4150861051ec",
+      "claim_id": "C10",
+      "claim": "UAS-IP3-sponge expression alone does not block the rapid induction of PHP.",
+      "claim_type": "EXPLICIT",
+      "source": "Following PhTox treatment, synapses expressing UAS-IP3-sponge in pre- and postsynaptic tissues showed a significant decrease in mEPSP amplitude compared to non-PhTox controls (Figure 2F), and yet they had steady EPSP amplitudes (Figure 2G) because of a robust increase in QC (Figure 2H). This result indicated that UAS-IP3-sponge expression left the rapid induction mechanisms of PHP intact.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by electrophysiological data showing successful PHP induction despite IP3 sequestration (Figure 2F-H).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:30:25.803683Z"
+    },
+    {
+      "id": "c42ffd0c-6721-4f00-9f21-1f67fa5b0a91",
+      "content_id": "e2011ab7-edd0-4f52-8e62-4150861051ec",
+      "claim_id": "C11",
+      "claim": "The rapid induction of PHP is possible for third instar larval NMJs that had blocked PHP maintenance throughout life.",
+      "claim_type": "EXPLICIT",
+      "source": "We next tested if the rapid induction of PHP was possible for third instar larval NMJs that had blocked PHP maintenance throughout life. To do this, we applied PhTox to NMJs expressing UAS-IP3-sponge in a UAS-GluRIII[RNAi] background. Even in this genetic background, we found that the rapid induction of PHP remained intact following PhTox treatment (Figure 2F\u2013H).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by electrophysiological data showing PHP induction in a double-challenged condition (Figure 2F-H).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:30:25.803683Z"
+    },
+    {
+      "id": "35c55bd3-9b69-4f5f-b68c-3083733d6e0d",
+      "content_id": "e2011ab7-edd0-4f52-8e62-4150861051ec",
+      "claim_id": "C12",
+      "claim": "Chronic expression of the UAS-IP3-sponge transgene does not cause aberrant NMJ development or synapse undergrowth.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed no significant differences versus control in bouton number for any condition, for either segment A2 or A3 \u2013 including the genetic background where we co-expressed UAS-IP3-sponge and UAS-GluRIII[RNAi] (Figure 3F). There were also no significant differences versus control in bouton number normalized per unit muscle area (Figure 3G) (Figure 3\u2014source data 1 for raw bouton count and muscle size data). These data indicate that when IP3 is sequestered, synapse undergrowth is not causal for a PHP block.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by immunostaining and bouton counting data (Figure 3).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:30:25.803683Z"
+    },
+    {
+      "id": "1e50c6ce-55fb-43f9-8d0a-3666f94fb9df",
+      "content_id": "e2011ab7-edd0-4f52-8e62-4150861051ec",
+      "claim_id": "C13",
+      "claim": "Acute application of 20 \u03bcM Xestospongin C to GluRIIASP16 null mutant NMJs blocks the long-term maintenance of PHP.",
+      "claim_type": "EXPLICIT",
+      "source": "GluRIIASP16 NMJ preparations acutely treated with 20 \u03bcM Xestospongin C (10 min) displayed an expected decrease in mEPSP amplitude compared to non-GluRIIASP16 controls (Figure 4A). However, these drug-treated NMJs failed to show an increase in QC (Figure 4C). This resulted in markedly decreased evoked amplitudes (Figure 4B,G). Thus, not only did 20 \u03bcM Xestospongin C induce a block of PHP maintenance, but it was capable of extinguishing this long-term maintenance process on a timescale of minutes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by electrophysiological data showing loss of PHP with Xestospongin C treatment (Figure 4).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:30:25.803683Z"
+    },
+    {
+      "id": "2658eef8-ff3f-4bb2-ba71-9c2bfe625c23",
+      "content_id": "e2011ab7-edd0-4f52-8e62-4150861051ec",
+      "claim_id": "C14",
+      "claim": "20 \u03bcM Xestospongin C does not impair baseline neurotransmission in a wild-type background.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, 20 \u03bcM Xestospongin C did not impair baseline neurotransmission in a wild-type background (Figure 4B,G); this suggests that 20 \u03bcM Xestospongin C does not impair the function of other important voltage-gated channels at the Drosophila NMJ.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by electrophysiological data showing normal baseline transmission with drug treatment (Figure 4).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:30:25.803683Z"
+    },
+    {
+      "id": "82ee0c6a-c2fd-4529-8e38-26ba046d7813",
+      "content_id": "e2011ab7-edd0-4f52-8e62-4150861051ec",
+      "claim_id": "C15",
+      "claim": "Acute application of 20 \u03bcM Xestospongin C does not block the rapid induction of PHP.",
+      "claim_type": "EXPLICIT",
+      "source": "Next, we tested if acute application of 20 \u03bcM Xestospongin C could block the rapid induction of PHP. We applied 20 \u03bcM Xestospongin C to wild-type NMJs concurrently with 20 \u03bcM PhTox. Quantal size was markedly diminished compared to the non-PhTox control (Figure 4D; vehicle control dataset same as in 4A-C). Yet evoked amplitudes remained near control levels (Figure 4E,G) because the rapid induction of PHP was intact (Figure 4F).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by electrophysiological data showing successful PHP induction with concurrent Xestospongin C and PhTox treatment (Figure 4D-F).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:30:25.803683Z"
+    },
+    {
+      "id": "60d84e27-af7d-4de3-9bb7-e123ddfde36a",
+      "content_id": "e2011ab7-edd0-4f52-8e62-4150861051ec",
+      "claim_id": "C16",
+      "claim": "Acute application of both 1 \u03bcM and 10 \u03bcM 2-APB to GluRIIASP16 null NMJs blocks the maintenance of PHP.",
+      "claim_type": "EXPLICIT",
+      "source": "We applied both 1 \u03bcM and 10 \u03bcM 2-APB to GluRIIASP16 null NMJs. Both drug concentrations resulted in a failure to increase QC compared to drug-treated wild-type controls; this resulted in small evoked events for the drug-treated GluRIIASP16 NMJs because PHP maintenance was blocked (Figure 5A\u2013C,G) (Supplementary file 4 for summary Figure 5 data) (Figure 5\u2014source data 1 for raw data).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by electrophysiological data showing loss of PHP with 2-APB treatment (Figure 5).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:30:25.803683Z"
+    },
+    {
+      "id": "dde4ea2e-53f8-4e1d-af61-b7234cc33aa8",
+      "content_id": "e2011ab7-edd0-4f52-8e62-4150861051ec",
+      "claim_id": "C17",
+      "claim": "1 \u03bcM 2-APB does not block the PhTox-induced rapid induction of PHP.",
+      "claim_type": "EXPLICIT",
+      "source": "Next, we tested if 2-APB blocks the PhTox-induced rapid induction of PHP. We applied 1 \u03bcM 2-APB concurrently with 20 \u03bcM PhTox. Evoked potentials remained near the level of 2-APB-treated NMJs without PhTox (Figure 5E,H) because 1 \u03bcM 2-APB left the rapid induction of PHP intact (Figure 5D\u2013F).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by electrophysiological data showing successful PHP induction with concurrent 2-APB and PhTox treatment (Figure 5D-F).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:30:25.803683Z"
+    },
+    {
+      "id": "f04328bc-0077-4c63-bdc0-e696473a672b",
+      "content_id": "e2011ab7-edd0-4f52-8e62-4150861051ec",
+      "claim_id": "C18",
+      "claim": "2-APB potentiated baseline neurotransmission in a dose-dependent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "We note that 2-APB potentiated baseline neurotransmission, seemingly in a dose-dependent way (Figure 5B,G). This potentiation likely means that 2-APB had off-target effects at the NMJ in addition to IP3Rs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by electrophysiological data showing increased EPSP amplitudes with 2-APB treatment (Figure 5B,G).",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:30:25.803683Z"
+    },
+    {
+      "id": "a8654022-056b-4566-ad68-c6492a2f5e9a",
+      "content_id": "e2011ab7-edd0-4f52-8e62-4150861051ec",
+      "claim_id": "C19",
+      "claim": "Acute application of either 100 \u03bcM Ryanodine or 10 \u03bcM Dantrolene to GluRIIA null preparations results in failure of PHP maintenance.",
+      "claim_type": "EXPLICIT",
+      "source": "Acute application of either 100 \u03bcM Ryanodine or 10 \u03bcM Dantrolene to GluRIIA null preparations resulted in failure of PHP maintenance. QC did not increase for the homeostatically challenged condition (GluRIIA +drug) versus the unchallenged condition (wild-type +drug) (Figure 6A\u2013C) (Supplementary file 5 for summary Figure 6 data) (Figure 6\u2014source data 1 for raw data).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by electrophysiological data showing loss of PHP with RyR inhibitor treatment (Figure 6).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:30:25.803683Z"
+    },
+    {
+      "id": "681108b4-ed94-45b6-be08-bc1f82ad6977",
+      "content_id": "e2011ab7-edd0-4f52-8e62-4150861051ec",
+      "claim_id": "C20",
+      "claim": "Acute application of 10 \u03bcM Dantrolene does not disrupt the short-term induction of PHP.",
+      "claim_type": "EXPLICIT",
+      "source": "Next, we tested whether RyR inhibition could block the rapid induction of PHP. As was the case with IP3R inhibition, acute application of 10 \u03bcM Dantrolene to PhTox-treated NMJs did not disrupt the short-term induction of PHP (Figure 6D\u2013F).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by electrophysiological data showing successful PHP induction with Dantrolene treatment (Figure 6D-F).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:30:25.803683Z"
+    },
+    {
+      "id": "8ce6e790-8d61-44ab-9b83-5fe9f3a281f7",
+      "content_id": "e2011ab7-edd0-4f52-8e62-4150861051ec",
+      "claim_id": "C21",
+      "claim": "In the GluRIII[RNAi] genetic background with dual Dantrolene application and UAS-IP3-sponge expression, the PHP impairment is indistinguishable from the impairment elicited by Dantrolene alone or UAS-IP3-sponge alone.",
+      "claim_type": "EXPLICIT",
+      "source": "When we combined Dantrolene application and UAS-IP3-sponge expression in the GluRIII[RNAi] background, the PHP impairment was indistinguishable from the impairment elicited by Dantrolene alone or UAS-IP3-sponge alone (Figure 7A\u2013D) (Supplementary file 6 for summary Figure 7 data) (Figure 7\u2014source data 1 for raw data).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by electrophysiological data showing non-additive effects of dual manipulation (Figure 7).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:30:25.803683Z"
+    },
+    {
+      "id": "4f87dd51-5c87-4157-bfdf-2abfd3d48143",
+      "content_id": "e2011ab7-edd0-4f52-8e62-4150861051ec",
+      "claim_id": "C22",
+      "claim": "IP3 sequestration and RyR blockade disrupt the long-term maintenance of PHP as part of a shared process, either via a single linear pathway or convergent pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "The data are consistent with a model in which IP3 sequestration and RyR blockade disrupt the long-term maintenance of PHP as part of a shared process, either via a single linear pathway or convergent pathways.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the non-additive effects observed in the dual manipulation experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:30:25.803683Z"
+    },
+    {
+      "id": "551ec696-d3b1-41eb-8453-4471b6595936",
+      "content_id": "e2011ab7-edd0-4f52-8e62-4150861051ec",
+      "claim_id": "C24",
+      "claim": "Chronic Plc21C gene knockdown in the muscle alone is not sufficient to impair PHP.",
+      "claim_type": "EXPLICIT",
+      "source": "Our prior work showed that chronic Plc21C gene knockdown in the muscle alone is not sufficient to impair PHP (Brusich et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a reference to prior published work by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:30:25.803683Z"
+    },
+    {
+      "id": "28480aeb-e0f6-444c-9e93-e521ace0b6fd",
+      "content_id": "e2011ab7-edd0-4f52-8e62-4150861051ec",
+      "claim_id": "C25",
+      "claim": "Expression of UAS-IP3-sponge in either neuron or muscle alone does not fully block PHP maintenance.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, we did not localize the full block of PHP maintenance to a single tissue. For expression in either tissue alone, there was still a small increase in QC in a Gal4 >>UAS-IP3-sponge + GluRIIASPSP16 genetic condition, compared to control Gal4 >>UAS-IP3-sponge expression in an unchallenged background (Figure 8C,F).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by electrophysiological data showing partial PHP with single-tissue IP3 sequestration (Figure 8).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:30:25.803683Z"
+    },
+    {
+      "id": "6e3b01dd-e4bb-4589-b383-7904e299be38",
+      "content_id": "e2011ab7-edd0-4f52-8e62-4150861051ec",
+      "claim_id": "C26",
+      "claim": "The maintenance of PHP can be fully erased by IP3 sequestration only if this is done in a dual tissue manner.",
+      "claim_type": "EXPLICIT",
+      "source": "Combined with our prior data (Figure 2), we conclude that the maintenance of PHP can be fully erased by IP3 sequestration \u2013 but only if this is done in a dual tissue manner.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is drawn from comparing dual-tissue and single-tissue IP3 sequestration effects.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:30:25.803683Z"
+    },
+    {
+      "id": "2648cc6c-ab5f-48e8-9560-fab3bf122ca1",
+      "content_id": "e2011ab7-edd0-4f52-8e62-4150861051ec",
+      "claim_id": "C27",
+      "claim": "Sequestration of cellular IP3 at the NMJ does not directly alter the Ca2+-dependence of synaptic release at the presynaptic NMJ.",
+      "claim_type": "EXPLICIT",
+      "source": "The Ca2+ cooperativity of release was steady between the three conditions (Figure 8H,I), indicating that sequestration of cellular IP3 at the NMJ does not directly alter the Ca2+-dependence of synaptic release at the presynaptic NMJ.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by calcium cooperativity measurements (Figure 8H,I).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:30:25.803683Z"
+    },
+    {
+      "id": "fd10571e-cbc0-4ef9-a662-1c132891462e",
+      "content_id": "e2011ab7-edd0-4f52-8e62-4150861051ec",
+      "claim_id": "C28",
+      "claim": "The short-term induction and long-term maintenance of PHP are separable by genetic and pharmacological manipulations.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data support two core findings. The first is that the short-term induction and long-term maintenance of PHP are separable by genetic and pharmacological manipulations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the primary findings of the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:30:25.803683Z"
+    },
+    {
+      "id": "b77c5a81-20dd-4aa1-bf63-f3e15a21084c",
+      "content_id": "e2011ab7-edd0-4f52-8e62-4150861051ec",
+      "claim_id": "C29",
+      "claim": "An IP3-mediated signaling system is specifically required for the maintenance of PHP.",
+      "claim_type": "EXPLICIT",
+      "source": "The second is that an IP3-mediated signaling system is specifically required for the maintenance of PHP (Figure 9).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the primary findings of the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:30:25.803683Z"
+    },
+    {
+      "id": "42c66d61-7131-4663-9369-a227323f8c2c",
+      "content_id": "e2011ab7-edd0-4f52-8e62-4150861051ec",
+      "claim_id": "C30",
+      "claim": "Synaptic scaling was initially shown to be a slow, chronically executed process.",
+      "claim_type": "EXPLICIT",
+      "source": "Synaptic scaling was initially shown to be a slow, chronically executed process (O'Brien et al., 1998; Turrigiano et al., 1998), but it is also possible for faster scaling mechanisms to be mobilized if multiple synaptic sites are concurrently inhibited (Sutton et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement references prior published work on synaptic scaling.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:30:25.803683Z"
+    },
+    {
+      "id": "edc637ac-b72e-4772-9f70-7bc897cfec0f",
+      "content_id": "e2011ab7-edd0-4f52-8e62-4150861051ec",
+      "claim_id": "C31",
+      "claim": "For the NMJ, homeostatic signaling is triggered by short-term challenges to synapse function.",
+      "claim_type": "EXPLICIT",
+      "source": "For the NMJ, homeostatic signaling is triggered by short-term challenges to synapse function (Frank et al., 2006; Wang et al., 2016b), but it is also maintained for extended developmental time in the face of chronic challenges (Cull-Candy et al., 1980; Davis et al., 1998; DiAntonio et al., 1999; Petersen et al., 1997; Plomp et al., 1992).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement references prior published work on NMJ homeostatic plasticity.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:30:25.803683Z"
+    },
+    {
+      "id": "1a36a092-583a-43a0-ab72-882dd416c0a6",
+      "content_id": "e2011ab7-edd0-4f52-8e62-4150861051ec",
+      "claim_id": "C32",
+      "claim": "At the Drosophila NMJ, reduced sensitivity to single vesicles of glutamate initiates a retrograde, muscle-to-nerve signaling cascade that induces increased neurotransmitter vesicle release.",
+      "claim_type": "EXPLICIT",
+      "source": "At this NMJ, reduced sensitivity to single vesicles of glutamate initiates a retrograde, muscle-to-nerve signaling cascade that induces increased neurotransmitter vesicle release, or quantal content (QC). As a result, the NMJ maintains a normal postsynaptic response level (Frank et al., 2006; Petersen et al., 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement describes the basic mechanism of PHP at the NMJ, referencing prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:30:25.803683Z"
+    },
+    {
+      "id": "c7a6aef9-7711-4bf6-b1be-44c4acdd487f",
+      "content_id": "e2011ab7-edd0-4f52-8e62-4150861051ec",
+      "claim_id": "C33",
+      "claim": "The increase in quantal content during PHP depends upon the successful execution of discrete presynaptic events, such as increases in neuronal Ca2+ influx and an increase in the size of the readily releasable pool (RRP) of synaptic vesicles.",
+      "claim_type": "EXPLICIT",
+      "source": "Mechanistically, this increase in QC depends upon the successful execution of discrete presynaptic events, such as increases in neuronal Ca2+ influx and an increase in the size of the readily releasable pool (RRP) of synaptic vesicles (Frank et al., 2006; M\u00fcller and Davis, 2012; M\u00fcller et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement describes the presynaptic mechanisms underlying PHP, referencing prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:30:25.803683Z"
+    },
+    {
+      "id": "c8341450-cbce-4381-a2fc-665ea82d23da",
+      "content_id": "e2011ab7-edd0-4f52-8e62-4150861051ec",
+      "claim_id": "C34",
+      "claim": "Acute pharmacological inhibition of postsynaptic glutamate receptors initiates a rapid induction of PHP that restores synaptic output in minutes.",
+      "claim_type": "EXPLICIT",
+      "source": "Acute pharmacological inhibition of postsynaptic glutamate receptors initiates a rapid induction of PHP that restores synaptic output in minutes (Frank et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement describes the acute induction of PHP, referencing prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:30:25.803683Z"
+    },
+    {
+      "id": "a3a9985d-3132-4045-8ed7-d2cc1d89d31b",
+      "content_id": "e2011ab7-edd0-4f52-8e62-4150861051ec",
+      "claim_id": "C35",
+      "claim": "Genetic lesions and other long-term reductions of NMJ sensitivity to neurotransmitter induce PHP in a way that is sustained throughout life.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, genetic lesions and other long-term reductions of NMJ sensitivity to neurotransmitter induce PHP in a way that is sustained throughout life (Brusich et al., 2015; Davis et al., 1998; DiAntonio et al., 1999; Paradis et al., 2001; Petersen et al., 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement describes the chronic maintenance of PHP, referencing prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:30:25.803683Z"
+    },
+    {
+      "id": "8d20f3dd-3ad3-4844-b052-e97fbe81efc5",
+      "content_id": "e2011ab7-edd0-4f52-8e62-4150861051ec",
+      "claim_id": "C36",
+      "claim": "Plc21C encodes a Drosophila Phospholipase C\u03b2 (PLC\u03b2) homolog known to be neuronally expressed.",
+      "claim_type": "EXPLICIT",
+      "source": "Plc21C encodes a Drosophila Phospholipase C\u03b2 (PLC\u03b2) homolog known to be neuronally expressed (Shortridge et al., 1991) \u2013 but recent ribosomal profiling data also indicates possible muscle expression of Plc21C (Chen and Dickman, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement describes the expression pattern of Plc21C, referencing prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:30:25.803683Z"
+    },
+    {
+      "id": "0c3824ad-0d04-470f-8b79-b13e88d84372",
+      "content_id": "e2011ab7-edd0-4f52-8e62-4150861051ec",
+      "claim_id": "C37",
+      "claim": "Once PLC\u03b2 is activated by G\u03b1q, it cleaves the membrane lipid phosphatidylinositol 4,5-bisphosphate (PIP2) into diacylglycerol (DAG) and inositol triphosphate (IP3).",
+      "claim_type": "EXPLICIT",
+      "source": "In canonical signaling pathways, once PLC\u03b2 is activated by G\u03b1q, it cleaves the membrane lipid phosphatidylinositol 4,5-bisphosphate (PIP2) into diacylglycerol (DAG) and inositol triphosphate (IP3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement describes the canonical function of PLC\u03b2, drawing on established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:30:25.803683Z"
+    },
+    {
+      "id": "bf84f170-6793-4189-af58-418270c80327",
+      "content_id": "e2011ab7-edd0-4f52-8e62-4150861051ec",
+      "claim_id": "C38",
+      "claim": "DAG can affect synaptic function by activating Protein Kinase C (PKC), while IP3 binds its receptor (IP3R) to trigger release of calcium from intracellular stores.",
+      "claim_type": "EXPLICIT",
+      "source": "DAG can affect synaptic function by activating Protein Kinase C (PKC), while IP3 binds its receptor (IP3R) to trigger release of calcium from intracellular stores (Kadamur and Ross, 2013; Philip et al., 2010; Tedford and Zamponi, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement describes the downstream effects of PLC\u03b2 signaling, referencing prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:30:25.803683Z"
+    },
+    {
+      "id": "7ac3e7d2-7764-484a-a8c5-678156eec217",
+      "content_id": "e2011ab7-edd0-4f52-8e62-4150861051ec",
+      "claim_id": "C39",
+      "claim": "Neither PLC\u03b2, nor IP3R, nor RyR are required for the rapid induction of PHP.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that neither PLC\u03b2, nor IP3R, nor RyR are required for the rapid induction of PHP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study, supported by multiple experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:30:25.803683Z"
+    },
+    {
+      "id": "c619fe54-650a-4982-a7a3-aa97b3a251c2",
+      "content_id": "e2011ab7-edd0-4f52-8e62-4150861051ec",
+      "claim_id": "C40",
+      "claim": "NMJs are capable of rapidly inducing PHP even when the sustained expression of PHP is already blocked by impairments in PLC\u03b2, IP3R, or RyR signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, we found that NMJs are capable of rapidly inducing PHP \u2013 even when the sustained expression of PHP is already blocked by impairments in PLC\u03b2, IP3R, or RyR signaling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study, supported by multiple experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:30:25.803683Z"
+    },
+    {
+      "id": "c61ec320-2dfc-436e-819d-9c43ad4808da",
+      "content_id": "e2011ab7-edd0-4f52-8e62-4150861051ec",
+      "claim_id": "C41",
+      "claim": "Even though there is compelling evidence that parts of the induction and maintenance signaling mechanisms overlap, it is also true that acute PHP is possible in scenarios where long-term PHP is not.",
+      "claim_type": "EXPLICIT",
+      "source": "Even though there is compelling evidence that parts of the induction and maintenance signaling mechanisms overlap (Goel et al., 2017), it is also true that acute PHP is possible in scenarios where long-term PHP is not.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary statement reconciling the findings with prior work.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:30:25.803683Z"
+    },
+    {
+      "id": "287a801d-2dac-4b35-835e-0d4bdd694c86",
+      "content_id": "e2011ab7-edd0-4f52-8e62-4150861051ec",
+      "claim_id": "C42",
+      "claim": "Pre-+Post Gal4>>UAS-GluRIII[RNAi] NMJs have decreased quantal size (mEPSP) and an offsetting, homeostatic increase in quantal content (QC).",
+      "claim_type": "EXPLICIT",
+      "source": "Pre-+Post Gal4>>UAS-GluRIII[RNAi] NMJs have decreased quantal size (mEPSP, Figure 1A) and an offsetting, homeostatic increase in quantal content (QC, Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by electrophysiological data presented in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:30:25.803683Z"
+    },
+    {
+      "id": "e4bdc880-776c-4597-979e-f0b8782005d3",
+      "content_id": "e2011ab7-edd0-4f52-8e62-4150861051ec",
+      "claim_id": "C43",
+      "claim": "The homeostatic increase in quantal content in Pre-+Post Gal4>>UAS-GluRIII[RNAi] NMJs keeps excitatory postsynaptic potentials (EPSPs) at control levels.",
+      "claim_type": "EXPLICIT",
+      "source": "This increase in release keeps excitatory postsynaptic potentials (EPSPs) at control levels (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by electrophysiological data presented in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:30:25.803683Z"
+    },
+    {
+      "id": "86290f62-9fbf-44cb-8521-dc3985ecce0e",
+      "content_id": "e2011ab7-edd0-4f52-8e62-4150861051ec",
+      "claim_id": "C44",
+      "claim": "Xestospongin C is a membrane-permeable drug that disrupts intracellular calcium release directly via non-competitive inhibition of IP3Rs.",
+      "claim_type": "EXPLICIT",
+      "source": "Xestospongin C is a membrane-permeable drug that disrupts intracellular calcium release directly via non-competitive inhibition of IP3Rs (Gafni et al., 1997; Wilcox et al., 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement describes the known mechanism of Xestospongin C, referencing prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:30:25.803683Z"
+    },
+    {
+      "id": "f124c434-cc0b-4980-9d29-159d725a6410",
+      "content_id": "e2011ab7-edd0-4f52-8e62-4150861051ec",
+      "claim_id": "C45",
+      "claim": "Xestospongin C has been previously shown to inhibit Drosophila IP3Rs.",
+      "claim_type": "EXPLICIT",
+      "source": "Xestospongin C has been previously shown to inhibit Drosophila IP3Rs (V\u00e1zquez-Mart\u00ednez et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement references prior work demonstrating the effect of Xestospongin C on Drosophila IP3Rs.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:30:25.803683Z"
+    },
+    {
+      "id": "98914b51-b237-469c-bb3c-eeb82649cc50",
+      "content_id": "e2011ab7-edd0-4f52-8e62-4150861051ec",
+      "claim_id": "C46",
+      "claim": "Xestospongin C may act indirectly by inhibiting SERCA, which could lead to depletion of intracellular calcium stores.",
+      "claim_type": "EXPLICIT",
+      "source": "There are caveats to its use; Xestospongin C may act indirectly by inhibiting SERCA, which could lead to depletion of intracellular calcium stores (Castonguay and Robitaille, 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement describes a potential off-target effect of Xestospongin C, referencing prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:30:25.803683Z"
+    },
+    {
+      "id": "fedfec29-7f68-469b-9b7f-c7b50ee4d587",
+      "content_id": "e2011ab7-edd0-4f52-8e62-4150861051ec",
+      "claim_id": "C47",
+      "claim": "Xestospongin C has been demonstrated to impair voltage-gated Ca2+ and K+ currents in guinea pig smooth muscle.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, Xestospongin C has been demonstrated to impair voltage-gated Ca2+ and K+ currents in guinea pig smooth muscle (Ozaki et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement describes a potential off-target effect of Xestospongin C, referencing prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:30:25.803683Z"
+    },
+    {
+      "id": "a56ebb93-4c34-43a9-8897-3e5201454fc5",
+      "content_id": "e2011ab7-edd0-4f52-8e62-4150861051ec",
+      "claim_id": "C48",
+      "claim": "2-APB is a membrane-permeable drug that is known to impair IP3R.",
+      "claim_type": "EXPLICIT",
+      "source": "2-APB is a membrane-permeable drug that has variable effects. It is known to impair IP3R (Diver et al., 2001; Maruyama et al., 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement describes the known mechanism of 2-APB, referencing prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:30:25.803683Z"
+    },
+    {
+      "id": "69a96ffe-e185-4915-b44b-4c6dbc42640d",
+      "content_id": "e2011ab7-edd0-4f52-8e62-4150861051ec",
+      "claim_id": "C49",
+      "claim": "2-APB can impair targets such as Transient Receptor Potential (TRP) channels.",
+      "claim_type": "EXPLICIT",
+      "source": "There are also reports that 2-APB can impair targets such as Transient Receptor Potential (TRP) channels (Bootman et al., 2002; Xu et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement describes a potential off-target effect of 2-APB, referencing prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:30:25.803683Z"
+    },
+    {
+      "id": "4d3d9bc4-3c3b-4216-9754-f7796360c930",
+      "content_id": "e2011ab7-edd0-4f52-8e62-4150861051ec",
+      "claim_id": "C50",
+      "claim": "Ryanodine receptors (RyRs) mediate release of calcium from ER stores.",
+      "claim_type": "EXPLICIT",
+      "source": "Ryanodine receptors (RyRs) also mediate release of calcium from ER stores (Berridge, 1998; Simkus and Stricker, 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement describes the known function of RyRs, referencing prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:30:25.803683Z"
+    },
+    {
+      "id": "8fa1853c-c4f1-47ef-ab9e-378521f0625f",
+      "content_id": "e2011ab7-edd0-4f52-8e62-4150861051ec",
+      "claim_id": "C51",
+      "claim": "RyRs are localized to the ER in excitable tissues like neurons and muscle.",
+      "claim_type": "EXPLICIT",
+      "source": "RyRs are localized to the ER in excitable tissues like neurons and muscle (Santulli and Marks, 2015; Santulli et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement describes the localization of RyRs, referencing prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:30:25.803683Z"
+    },
+    {
+      "id": "b1edf589-41ce-4d6b-a963-ae5a20f04471",
+      "content_id": "e2011ab7-edd0-4f52-8e62-4150861051ec",
+      "claim_id": "C52",
+      "claim": "In some tissues, RyR is activated by IP3R-mediated Ca2+ release, in a signaling process termed Calcium-Induced Calcium Release (CICR).",
+      "claim_type": "EXPLICIT",
+      "source": "In some tissues, RyR is activated by IP3R-mediated Ca2+ release, in a signaling process termed Calcium-Induced Calcium Release (CICR) (Berridge, 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement describes a known signaling mechanism involving RyR and IP3R, referencing prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:30:25.803683Z"
+    },
+    {
+      "id": "2f3b2c59-7d54-418a-a116-f1f1a5fe840a",
+      "content_id": "e2011ab7-edd0-4f52-8e62-4150861051ec",
+      "claim_id": "C53",
+      "claim": "IP3Rs and RyRs have been placed together in CICR signaling processes in other systems.",
+      "claim_type": "EXPLICIT",
+      "source": "IP3Rs and RyRs have been placed together in CICR signaling processes in other systems, and our group has also identified overlapping functions of IP3R and RyR at the NMJ (Brusich et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement references prior work on CICR and the authors' own prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:30:25.803683Z"
+    },
+    {
+      "id": "0a9af4f8-7fa3-45f5-beba-176333f11112",
+      "content_id": "e2011ab7-edd0-4f52-8e62-4150861051ec",
+      "claim_id": "C54",
+      "claim": "ER is known to localize throughout neurons in Drosophila, including synaptic terminals.",
+      "claim_type": "EXPLICIT",
+      "source": "ER is known to localize throughout neurons in Drosophila, including synaptic terminals (Summerville et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement describes the localization of ER in Drosophila neurons, referencing prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:30:25.803683Z"
+    },
+    {
+      "id": "db3cd4e1-4968-4404-95d4-2bbb6164762f",
+      "content_id": "e2011ab7-edd0-4f52-8e62-4150861051ec",
+      "claim_id": "C55",
+      "claim": "Recent studies have implicated ER resident proteins in the execution of PHP at the Drosophila NMJ.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent studies have implicated ER resident proteins in the execution of PHP (Gen\u00e7 et al., 2017) or in baseline neurotransmission and synapse growth (Kikuma et al., 2017) at the Drosophila NMJ.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement references recent work on ER proteins and PHP.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:30:25.803683Z"
+    },
+    {
+      "id": "a96b1e28-32a8-444f-837a-3dd51d3e2540",
+      "content_id": "e2011ab7-edd0-4f52-8e62-4150861051ec",
+      "claim_id": "C56",
+      "claim": "Both acute and chronic forms of PHP begin as instructive retrograde signals after perturbations are detected in the muscle.",
+      "claim_type": "EXPLICIT",
+      "source": "Both acute and chronic forms of PHP begin as instructive retrograde signals after perturbations are detected in the muscle (Hauswirth et al., 2018; Orr et al., 2017a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement references recent work on the initiation of PHP.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:30:25.803683Z"
+    },
+    {
+      "id": "416614a2-34e5-4b16-8b7a-efddd20ef917",
+      "content_id": "e2011ab7-edd0-4f52-8e62-4150861051ec",
+      "claim_id": "C57",
+      "claim": "Both acute and chronic forms of PHP involve a decrease in phosphorylation of muscle CaMKII levels, and converge upon the same signaling components in the presynaptic neuron.",
+      "claim_type": "EXPLICIT",
+      "source": "These forms of PHP involve a decrease in phosphorylation of muscle CaMKII levels, and converge upon the same signaling components in the presynaptic neuron (Goel et al., 2017; Li et al., 2018; Newman et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement references recent work on the signaling mechanisms of PHP.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:30:25.803683Z"
+    },
+    {
+      "id": "020f2d46-9422-45d3-8a0b-7eba11044684",
+      "content_id": "e2011ab7-edd0-4f52-8e62-4150861051ec",
+      "claim_id": "C58",
+      "claim": "Tor signaling converges on the same molecular targets as acute forms of PHP.",
+      "claim_type": "EXPLICIT",
+      "source": "These studies suggest that Tor signaling converges on the same molecular targets as acute forms of PHP (Goel et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement references recent work on Tor signaling and PHP.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:30:25.803683Z"
+    },
+    {
+      "id": "5cd5cbd8-cf64-4512-8f22-796e2125e12c",
+      "content_id": "e2011ab7-edd0-4f52-8e62-4150861051ec",
+      "claim_id": "C59",
+      "claim": "The expression of any form of PHP (acute or chronic) appears to correlate with an increased intensity of active zone protein levels, such as CaV2/Cacophony, UNC-13, and the Drosophila CAST/ELKS homolog Bruchpilot.",
+      "claim_type": "EXPLICIT",
+      "source": "First, the expression of any form of PHP (acute or chronic) appears to correlate with an increased intensity of active zone protein levels, such as CaV2/Cacophony (Gratz et al., 2019), UNC-13 (B\u00f6hme et al., 2019), and the Drosophila CAST/ELKS homolog Bruchpilot (B\u00f6hme et al., 2019; Goel et al., 2019a; Gratz et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement references recent work on active zone remodeling during PHP.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:30:25.803683Z"
+    },
+    {
+      "id": "fbb78d45-d153-4264-b4d1-6a8aa85416ac",
+      "content_id": "e2011ab7-edd0-4f52-8e62-4150861051ec",
+      "claim_id": "C60",
+      "claim": "The rapid induction of PHP does not require active zone protein increase in order to be functionally executed.",
+      "claim_type": "EXPLICIT",
+      "source": "Unexpectedly, however, two of these studies also reported that the rapid induction of PHP does not require this protein increase in order to be functionally executed (B\u00f6hme et al., 2019; Goel et al., 2019a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement references recent work showing that active zone remodeling is not required for acute PHP.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:30:25.803683Z"
+    },
+    {
+      "id": "0b20ada4-050c-4c82-940b-2ccb5ff6ffa3",
+      "content_id": "e2011ab7-edd0-4f52-8e62-4150861051ec",
+      "claim_id": "C61",
+      "claim": "Both RyR and IP3R have been shown to be critical for specific aspects of neuroplasticity and neurotransmission.",
+      "claim_type": "EXPLICIT",
+      "source": "Both RyR and IP3R have been shown to be critical for specific aspects of neuroplasticity and neurotransmission (Berridge, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement references prior work on the roles of RyR and IP3R in neuroplasticity.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:30:25.803683Z"
+    },
+    {
+      "id": "6d69f366-0abb-4d44-a525-d61b6c45e1a6",
+      "content_id": "e2011ab7-edd0-4f52-8e62-4150861051ec",
+      "claim_id": "C62",
+      "claim": "Activities of both RyR and IP3R can activate molecules that drive plasticity, such as Calcineurin and CaMKII.",
+      "claim_type": "EXPLICIT",
+      "source": "Activities of both RyR and IP3R can activate molecules that drive plasticity, such as Calcineurin (Victor et al., 1995) and CaMKII (Shakiryanova et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement references prior work on downstream effectors of RyR and IP3R.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:30:25.803683Z"
+    },
+    {
+      "id": "14ae147f-6fd5-4119-898d-09528308254b",
+      "content_id": "e2011ab7-edd0-4f52-8e62-4150861051ec",
+      "claim_id": "C63",
+      "claim": "At rodent hippocampal synapses, electrophysiological measures like paired-pulse facilitation and frequency of spontaneous neurotransmitter release are modulated by RyR and/or IP3R function.",
+      "claim_type": "EXPLICIT",
+      "source": "At rodent hippocampal synapses, electrophysiological measures like paired-pulse facilitation and frequency of spontaneous neurotransmitter release (Emptage et al., 2001) are modulated by RyR and/or IP3R function, as is facilitation of evoked neurotransmitter at the rat neocortex (Mathew and Hablitz, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement references prior work on the roles of RyR and IP3R in mammalian synapses.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:30:25.803683Z"
+    },
+    {
+      "id": "c6893b34-7aa4-4c6c-8c6d-7a2d5a29a3c0",
+      "content_id": "e2011ab7-edd0-4f52-8e62-4150861051ec",
+      "claim_id": "C64",
+      "claim": "Activity of presynaptic voltage-gated calcium channels is modulated by intracellular calcium.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to vesicle fusion apparatus, activity of presynaptic voltage-gated calcium channels is modulated by intracellular calcium (Catterall, 2011; Lee et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement references prior work on calcium channel modulation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:30:25.803683Z"
+    },
+    {
+      "id": "d01b5fb1-bf76-4ee2-acab-c15479fbfb27",
+      "content_id": "e2011ab7-edd0-4f52-8e62-4150861051ec",
+      "claim_id": "C65",
+      "claim": "Impairing factors needed for store-operated calcium release can mollify hyperexcitability phenotypes caused by gain-of-function CaV2 amino-acid substitutions.",
+      "claim_type": "EXPLICIT",
+      "source": "Our own work at the NMJ has shown that impairing factors needed for store-operated calcium release can mollify hyperexcitability phenotypes caused by gain-of-function CaV2 amino-acid substitutions (Brusich et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement references the authors' own prior work on store-operated calcium release.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:30:25.803683Z"
+    },
+    {
+      "id": "941f2e1a-b482-489a-b999-bfe0c8f989cb",
+      "content_id": "e2011ab7-edd0-4f52-8e62-4150861051ec",
+      "claim_id": "C66",
+      "claim": "Both pre- and postsynaptic voltage-gated calcium channels are critical for the expression of several forms of homeostatic synaptic plasticity.",
+      "claim_type": "EXPLICIT",
+      "source": "Both pre- and postsynaptic voltage-gated calcium channels are critical for the expression of several forms of homeostatic synaptic plasticity (Frank, 2014b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement references prior work on the role of calcium channels in homeostatic plasticity.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:30:25.803683Z"
+    },
+    {
+      "id": "22e2e378-858e-421b-aa07-c036f348d469",
+      "content_id": "e2011ab7-edd0-4f52-8e62-4150861051ec",
+      "claim_id": "C67",
+      "claim": "In various neuronal populations, both RyR and IP3R interact with L-type calcium channels physically and functionally to reciprocally impact the opening of the other channel.",
+      "claim_type": "EXPLICIT",
+      "source": "In various neuronal populations, both RyR and IP3R interact with L-type calcium channels physically and functionally to reciprocally impact the opening of the other channel (Chavis et al., 1996; Kim et al., 2007; Ouardouz et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement references prior work on interactions between store-operated and voltage-gated calcium channels.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:30:25.803683Z"
+    },
+    {
+      "id": "5ef9b57a-d5f8-44a0-ab6d-bdcc67b58707",
+      "content_id": "e2011ab7-edd0-4f52-8e62-4150861051ec",
+      "claim_id": "C68",
+      "claim": "In presynaptic boutons, RyR calcium release follows action potential firing.",
+      "claim_type": "EXPLICIT",
+      "source": "In presynaptic boutons, RyR calcium release follows action potential firing (Emptage et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement references prior work on the timing of RyR-mediated calcium release.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:30:25.803683Z"
+    },
+    {
+      "id": "b1caa04a-9238-4042-a7d7-0ba33fe4771d",
+      "content_id": "e2011ab7-edd0-4f52-8e62-4150861051ec",
+      "claim_id": "C69",
+      "claim": "Calcium imaging experiments show that both the acute expression and sustained maintenance of PHP requires an increase in presynaptic calcium following an action potential.",
+      "claim_type": "EXPLICIT",
+      "source": "Calcium imaging experiments show that both the acute expression and sustained maintenance of PHP requires an increase in presynaptic calcium following an action potential (M\u00fcller and Davis, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement references prior work on calcium dynamics during PHP.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:30:25.803683Z"
+    },
+    {
+      "id": "00504ecd-e25f-47ea-881f-e55878f8a4b6",
+      "content_id": "e2011ab7-edd0-4f52-8e62-4150861051ec",
+      "claim_id": "C70",
+      "claim": "Elevated IP3 levels in the case of chronically expressed PHP could allow IP3Rs and RyRs to open in a way that is time-locked with CaV2-mediated calcium influx or in a way to facilitate the results of later CaV2-mediated influx.",
+      "claim_type": "EXPLICIT",
+      "source": "Because IP3Rs are activated by both free calcium and IP3, elevated IP3 levels in the case of chronically expressed PHP could allow IP3Rs and RyRs to open in a way that is time-locked with CaV2-mediated calcium influx or in a way to facilitate the results of later CaV2-mediated influx.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about how IP3 signaling might interact with calcium influx during PHP.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:30:25.803683Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "bede3ddc-8647-4099-83a9-8a0daf670a55",
+      "content_id": "e2011ab7-edd0-4f52-8e62-4150861051ec",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The study demonstrates that the induction and maintenance phases of presynaptic homeostatic potentiation (PHP) at the Drosophila NMJ are temporally and mechanistically separable. PLC\u03b2, IP3, IP3 receptors, and Ryanodine receptors are specifically required for PHP maintenance but not for its rapid induction, and acute PHP can be induced even when long-term maintenance is blocked.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C28, C29, C39, C40, and C41 collectively establish the core finding through multiple complementary experiments. The genetic (Plc21C RNAi, IP3-sponge) and pharmacological (Xestospongin C, 2-APB, Ryanodine, Dantrolene) manipulations consistently show that blocking these signaling components eliminates PHP maintenance while leaving acute induction intact. The data are internally consistent across multiple experimental paradigms.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:30:25.803683Z"
+    },
+    {
+      "id": "bb9810de-866f-49f8-9b45-d77fa86963ee",
+      "content_id": "e2011ab7-edd0-4f52-8e62-4150861051ec",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Concurrent knockdown of GluRIII and Plc21C by RNAi partially impairs PHP maintenance, but Plc21C knockdown alone does not block the rapid induction of PHP by PhTox treatment.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C6, C8, C42, and C43 are supported by electrophysiological data in Figure 1 showing that while dual knockdown reduces quantal content increases compared to GluRIII knockdown alone, PhTox can still induce PHP in Plc21C knockdown backgrounds. The data demonstrate partial impairment of maintenance without affecting induction.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:30:25.803683Z"
+    },
+    {
+      "id": "72f8fdd9-25be-4066-b742-0610d3e78241",
+      "content_id": "e2011ab7-edd0-4f52-8e62-4150861051ec",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Rapid PHP induction can occur at synapses already undergoing sustained PHP maintenance, demonstrating that the two processes can operate simultaneously.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7 and C4 are supported by experiments (Figure 1I-L) showing that PhTox application to GluRIII RNAi synapses further decreases quantal size and induces additional compensatory increases in quantal content. This demonstrates that induction mechanisms remain functional during ongoing maintenance.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:30:25.803683Z"
+    },
+    {
+      "id": "3e8a4237-6746-4c5f-bea3-b5c9baf1e668",
+      "content_id": "e2011ab7-edd0-4f52-8e62-4150861051ec",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Dual pre- and postsynaptic expression of UAS-IP3-sponge completely blocks long-term PHP maintenance but does not impair rapid PHP induction by PhTox, even in synapses with lifelong blocked maintenance.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9, C10, and C11 are supported by electrophysiological data in Figure 2 showing that IP3 sequestration eliminates the sustained increase in quantal content in GluRIII RNAi backgrounds, yet PhTox treatment still induces robust PHP. The data demonstrate clear separation of induction and maintenance mechanisms.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:30:25.803683Z"
+    },
+    {
+      "id": "a23119fe-fc52-4a05-925e-7e355af4ee6c",
+      "content_id": "e2011ab7-edd0-4f52-8e62-4150861051ec",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Chronic IP3 sequestration does not cause aberrant NMJ development or synapse undergrowth, indicating that the PHP maintenance block is not a secondary consequence of developmental defects.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C12 is supported by immunostaining and bouton counting data (Figure 3) showing no significant differences in bouton number or normalized bouton density across conditions including dual IP3-sponge and GluRIII RNAi expression. This control experiment rules out developmental confounds.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:30:25.803683Z"
+    },
+    {
+      "id": "45611a31-0ccd-4388-8277-d1ece4786afb",
+      "content_id": "e2011ab7-edd0-4f52-8e62-4150861051ec",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Acute application of 20 \u03bcM Xestospongin C rapidly extinguishes PHP maintenance in GluRIIA mutants within minutes but does not impair baseline neurotransmission in wild-type or block rapid PHP induction.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C13, C14, and C15 are supported by electrophysiological data in Figure 4 showing that Xestospongin C eliminates the quantal content increase in GluRIIA mutants, does not affect wild-type baseline transmission, and does not prevent PhTox-induced PHP. The pharmacological approach complements the genetic findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:30:25.803683Z"
+    },
+    {
+      "id": "1cdd36db-917f-4150-9b17-09e224079ca9",
+      "content_id": "e2011ab7-edd0-4f52-8e62-4150861051ec",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Acute application of 2-APB (1 \u03bcM and 10 \u03bcM) blocks PHP maintenance in GluRIIA mutants but does not prevent rapid PHP induction, though 2-APB shows dose-dependent potentiation of baseline neurotransmission suggesting off-target effects.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16, C17, and C18 are supported by electrophysiological data in Figure 5. While 2-APB effectively blocks maintenance and spares induction (consistent with other manipulations), the observed baseline potentiation (C18) indicates potential off-target effects that should be considered when interpreting these results. The core finding remains valid but with noted caveats.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:30:25.803683Z"
+    },
+    {
+      "id": "bb4f2315-c467-4fdf-95ce-5e9a09e792fe",
+      "content_id": "e2011ab7-edd0-4f52-8e62-4150861051ec",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Acute pharmacological blockade of Ryanodine receptors with either Ryanodine (100 \u03bcM) or Dantrolene (10 \u03bcM) eliminates PHP maintenance but does not disrupt rapid PHP induction.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C19 and C20 are supported by electrophysiological data in Figure 6 showing that RyR inhibitors block the quantal content increase in GluRIIA mutants but do not prevent PhTox-induced PHP. This extends the findings from IP3R to RyR, suggesting a shared calcium release mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:30:25.803683Z"
+    },
+    {
+      "id": "1554d557-d798-469d-8bbf-cde9dcf24bef",
+      "content_id": "e2011ab7-edd0-4f52-8e62-4150861051ec",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Dual manipulation with Dantrolene and IP3-sponge in the GluRIII RNAi background produces non-additive effects on PHP impairment, suggesting IP3 and RyR function in a shared or convergent pathway for PHP maintenance.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21 and C22 are supported by electrophysiological data in Figure 7 showing that combined IP3 sequestration and RyR blockade does not produce greater PHP impairment than either manipulation alone. The non-additivity is consistent with a shared pathway, though the data cannot distinguish between linear and convergent models.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:30:25.803683Z"
+    },
+    {
+      "id": "9a3ef462-c801-44d4-b492-54059fad441e",
+      "content_id": "e2011ab7-edd0-4f52-8e62-4150861051ec",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Single-tissue expression of IP3-sponge (neuron or muscle alone) only partially impairs PHP maintenance, while dual-tissue expression is required for complete blockade, indicating both pre- and postsynaptic IP3 signaling contribute to PHP maintenance.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25 and C26 are supported by electrophysiological data in Figure 8 showing that neuronal or muscle-specific IP3 sequestration allows residual PHP, while dual expression (Figure 2) completely blocks it. This demonstrates distributed requirements across both tissues, though neuronal expression appears more critical based on EPSP amplitudes.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:30:25.803683Z"
+    },
+    {
+      "id": "e604da2f-4d38-4976-b5fa-53e6b7b96809",
+      "content_id": "e2011ab7-edd0-4f52-8e62-4150861051ec",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "IP3 sequestration does not alter the calcium cooperativity of neurotransmitter release, indicating that IP3 signaling does not directly modulate the calcium-dependence of the presynaptic release machinery.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C27 is supported by calcium cooperativity measurements (Figure 8H,I) showing no significant differences between IP3-sponge expressing and control NMJs. This control experiment helps define the mechanism by ruling out direct effects on calcium sensing.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:30:25.803683Z"
+    },
+    {
+      "id": "ec6aed3d-7a2f-4b5b-aa38-fae12679b8ec",
+      "content_id": "e2011ab7-edd0-4f52-8e62-4150861051ec",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Prior work showed that chronic Plc21C knockdown in muscle alone is insufficient to impair PHP.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C24 references the authors' prior published work (Brusich et al., 2015) and is appropriately cited. This prior finding is consistent with the current study's demonstration of dual-tissue requirements for IP3 signaling.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:30:25.803683Z"
+    },
+    {
+      "id": "9a1dd458-441a-43ed-a789-b343b7605ac2",
+      "content_id": "e2011ab7-edd0-4f52-8e62-4150861051ec",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Xestospongin C is a membrane-permeable IP3R inhibitor that has been shown to work in Drosophila, though it has potential off-target effects including SERCA inhibition and effects on voltage-gated channels in other systems.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44, C45, C46, and C47 appropriately cite prior literature on Xestospongin C's mechanism and caveats. The authors acknowledge potential off-target effects and address them by showing no impairment of baseline transmission in wild-type (C14), which helps validate the specificity of the drug's effects in their system.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:30:25.803683Z"
+    },
+    {
+      "id": "8679ac17-3f24-4035-b961-01b147ca815b",
+      "content_id": "e2011ab7-edd0-4f52-8e62-4150861051ec",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "2-APB is a membrane-permeable IP3R inhibitor with known off-target effects on TRP channels and other targets.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48 and C49 appropriately cite prior literature on 2-APB's mechanism and off-target effects. The authors acknowledge these limitations, and the observed baseline potentiation (C18) is consistent with off-target activity. The use of multiple independent reagents (Xestospongin C, 2-APB, IP3-sponge) strengthens confidence in the IP3R-specific findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:30:25.803683Z"
+    },
+    {
+      "id": "16b2a7fc-7805-4156-99c3-2f01c7c4f503",
+      "content_id": "e2011ab7-edd0-4f52-8e62-4150861051ec",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Ryanodine receptors mediate calcium release from ER stores in neurons and muscle, can be activated by IP3R-mediated calcium release in CICR signaling, and have been shown to have overlapping functions with IP3R at the NMJ.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50, C51, C52, and C53 appropriately cite established knowledge about RyR function and localization, as well as the authors' own prior work on overlapping IP3R/RyR functions. This background provides context for testing RyR involvement in PHP maintenance.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:30:25.803683Z"
+    },
+    {
+      "id": "062a172e-c125-4a2a-8f97-229add62c6e3",
+      "content_id": "e2011ab7-edd0-4f52-8e62-4150861051ec",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The manuscript provides background on homeostatic plasticity at the Drosophila NMJ, including the distinction between rapid induction and long-term maintenance phases, and the presynaptic mechanisms underlying PHP.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C2, C30, C31, C32, C33, C34, and C35 appropriately summarize established knowledge from prior literature about NMJ homeostatic plasticity, its temporal phases, and underlying mechanisms. These claims provide necessary context for the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:30:25.803683Z"
+    },
+    {
+      "id": "fdcd5524-6fd8-4a9e-a9d8-813ab01c9c0e",
+      "content_id": "e2011ab7-edd0-4f52-8e62-4150861051ec",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Plc21C encodes a Drosophila PLC\u03b2 homolog with neuronal and possibly muscle expression, which canonically cleaves PIP2 into DAG and IP3, leading to PKC activation and calcium release from intracellular stores.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36, C37, and C38 appropriately cite prior literature on Plc21C expression and canonical PLC\u03b2 signaling. This background establishes the rationale for investigating downstream effectors like IP3 and calcium release channels.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:30:25.803683Z"
+    },
+    {
+      "id": "41159fbb-adbd-42d9-9fa1-3462edb6db2f",
+      "content_id": "e2011ab7-edd0-4f52-8e62-4150861051ec",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Recent work has shown that both acute and chronic PHP begin with retrograde signals from muscle, involve decreased muscle CaMKII phosphorylation, converge on presynaptic components, and that Tor signaling converges on the same targets as acute PHP.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56, C57, and C58 appropriately cite recent literature on PHP signaling mechanisms. The authors use this context to discuss how their findings relate to proposed pathway convergence, noting that their data showing separability may require reconciliation with these prior models.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:30:25.803683Z"
+    },
+    {
+      "id": "b78d7e6a-09bd-46e0-97de-8d110f5b6d9a",
+      "content_id": "e2011ab7-edd0-4f52-8e62-4150861051ec",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "Recent studies show that PHP expression correlates with increased active zone protein levels (CaV2, UNC-13, Bruchpilot), but rapid PHP induction does not require these protein increases to be functionally executed.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59 and C60 appropriately cite very recent literature on active zone remodeling during PHP. The authors use this to contextualize their findings about separable induction and maintenance phases, suggesting that active zone remodeling may be part of maintenance but not induction.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:30:25.803683Z"
+    },
+    {
+      "id": "9d678b2e-8255-4b83-95ac-524e7da13459",
+      "content_id": "e2011ab7-edd0-4f52-8e62-4150861051ec",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "Prior work has established roles for RyR and IP3R in neuroplasticity and neurotransmission, including activation of plasticity-related molecules, modulation of synaptic properties, regulation of voltage-gated calcium channels, and involvement in homeostatic plasticity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C61-C69 appropriately cite extensive prior literature on RyR and IP3R functions in synaptic physiology and plasticity. This background establishes the biological plausibility of these channels playing roles in PHP maintenance and provides mechanistic context for the findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:30:25.803683Z"
+    },
+    {
+      "id": "8c0bca6e-4431-49d3-92d7-8cc87b02137a",
+      "content_id": "e2011ab7-edd0-4f52-8e62-4150861051ec",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "The authors speculate that elevated IP3 levels during chronic PHP could allow IP3Rs and RyRs to open in coordination with CaV2-mediated calcium influx.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C70 is explicitly speculative and not directly tested in the study. While it represents a reasonable mechanistic hypothesis based on known IP3R properties and prior calcium imaging data (C69), it remains unvalidated. The speculation is appropriately presented as such in the discussion.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:30:25.803683Z"
+    },
+    {
+      "id": "df4148e2-2b35-45bc-b175-38dc3a27bb79",
+      "content_id": "e2011ab7-edd0-4f52-8e62-4150861051ec",
+      "result_id": "R22",
+      "result_category": "llm",
+      "result": "ER localizes throughout Drosophila neurons including synaptic terminals, and recent studies have implicated ER resident proteins in PHP execution or baseline neurotransmission at the NMJ.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54 and C55 appropriately cite prior work on ER localization and recent studies on ER proteins in NMJ function. This provides anatomical and functional context for why ER-localized IP3R and RyR could mediate PHP maintenance.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:30:25.803683Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "472dee32-e388-4aa6-a346-b915abd9035c",
+      "result_id": "bede3ddc-8647-4099-83a9-8a0daf670a55"
+    },
+    {
+      "claim_id": "fd10571e-cbc0-4ef9-a662-1c132891462e",
+      "result_id": "bede3ddc-8647-4099-83a9-8a0daf670a55"
+    },
+    {
+      "claim_id": "b77c5a81-20dd-4aa1-bf63-f3e15a21084c",
+      "result_id": "bede3ddc-8647-4099-83a9-8a0daf670a55"
+    },
+    {
+      "claim_id": "7ac3e7d2-7764-484a-a8c5-678156eec217",
+      "result_id": "bede3ddc-8647-4099-83a9-8a0daf670a55"
+    },
+    {
+      "claim_id": "c619fe54-650a-4982-a7a3-aa97b3a251c2",
+      "result_id": "bede3ddc-8647-4099-83a9-8a0daf670a55"
+    },
+    {
+      "claim_id": "c61ec320-2dfc-436e-819d-9c43ad4808da",
+      "result_id": "bede3ddc-8647-4099-83a9-8a0daf670a55"
+    },
+    {
+      "claim_id": "49ba9a1a-b673-4210-a6c2-132c3e5e009e",
+      "result_id": "bb9810de-866f-49f8-9b45-d77fa86963ee"
+    },
+    {
+      "claim_id": "2c3420be-f140-4ff3-b1d2-9a80edd72419",
+      "result_id": "bb9810de-866f-49f8-9b45-d77fa86963ee"
+    },
+    {
+      "claim_id": "f06df672-b066-4a03-ae4c-e081009d94d0",
+      "result_id": "bb9810de-866f-49f8-9b45-d77fa86963ee"
+    },
+    {
+      "claim_id": "287a801d-2dac-4b35-835e-0d4bdd694c86",
+      "result_id": "bb9810de-866f-49f8-9b45-d77fa86963ee"
+    },
+    {
+      "claim_id": "e4bdc880-776c-4597-979e-f0b8782005d3",
+      "result_id": "bb9810de-866f-49f8-9b45-d77fa86963ee"
+    },
+    {
+      "claim_id": "1cc6f8cc-ad2a-4508-9dec-2dcda7cad22e",
+      "result_id": "72f8fdd9-25be-4066-b742-0610d3e78241"
+    },
+    {
+      "claim_id": "c6fd97d3-49ab-4ce7-b0a1-2dd2b11b9d35",
+      "result_id": "72f8fdd9-25be-4066-b742-0610d3e78241"
+    },
+    {
+      "claim_id": "22892ecc-7b53-461e-8978-a740c3896ec2",
+      "result_id": "3e8a4237-6746-4c5f-bea3-b5c9baf1e668"
+    },
+    {
+      "claim_id": "a9aad1d6-f3b3-43af-a6e2-012141690ac4",
+      "result_id": "3e8a4237-6746-4c5f-bea3-b5c9baf1e668"
+    },
+    {
+      "claim_id": "c42ffd0c-6721-4f00-9f21-1f67fa5b0a91",
+      "result_id": "3e8a4237-6746-4c5f-bea3-b5c9baf1e668"
+    },
+    {
+      "claim_id": "35c55bd3-9b69-4f5f-b68c-3083733d6e0d",
+      "result_id": "a23119fe-fc52-4a05-925e-7e355af4ee6c"
+    },
+    {
+      "claim_id": "1e50c6ce-55fb-43f9-8d0a-3666f94fb9df",
+      "result_id": "45611a31-0ccd-4388-8277-d1ece4786afb"
+    },
+    {
+      "claim_id": "2658eef8-ff3f-4bb2-ba71-9c2bfe625c23",
+      "result_id": "45611a31-0ccd-4388-8277-d1ece4786afb"
+    },
+    {
+      "claim_id": "82ee0c6a-c2fd-4529-8e38-26ba046d7813",
+      "result_id": "45611a31-0ccd-4388-8277-d1ece4786afb"
+    },
+    {
+      "claim_id": "60d84e27-af7d-4de3-9bb7-e123ddfde36a",
+      "result_id": "1cdd36db-917f-4150-9b17-09e224079ca9"
+    },
+    {
+      "claim_id": "dde4ea2e-53f8-4e1d-af61-b7234cc33aa8",
+      "result_id": "1cdd36db-917f-4150-9b17-09e224079ca9"
+    },
+    {
+      "claim_id": "f04328bc-0077-4c63-bdc0-e696473a672b",
+      "result_id": "1cdd36db-917f-4150-9b17-09e224079ca9"
+    },
+    {
+      "claim_id": "a8654022-056b-4566-ad68-c6492a2f5e9a",
+      "result_id": "bb4f2315-c467-4fdf-95ce-5e9a09e792fe"
+    },
+    {
+      "claim_id": "681108b4-ed94-45b6-be08-bc1f82ad6977",
+      "result_id": "bb4f2315-c467-4fdf-95ce-5e9a09e792fe"
+    },
+    {
+      "claim_id": "8ce6e790-8d61-44ab-9b83-5fe9f3a281f7",
+      "result_id": "1554d557-d798-469d-8bbf-cde9dcf24bef"
+    },
+    {
+      "claim_id": "4f87dd51-5c87-4157-bfdf-2abfd3d48143",
+      "result_id": "1554d557-d798-469d-8bbf-cde9dcf24bef"
+    },
+    {
+      "claim_id": "28480aeb-e0f6-444c-9e93-e521ace0b6fd",
+      "result_id": "9a3ef462-c801-44d4-b492-54059fad441e"
+    },
+    {
+      "claim_id": "6e3b01dd-e4bb-4589-b383-7904e299be38",
+      "result_id": "9a3ef462-c801-44d4-b492-54059fad441e"
+    },
+    {
+      "claim_id": "2648cc6c-ab5f-48e8-9560-fab3bf122ca1",
+      "result_id": "e604da2f-4d38-4976-b5fa-53e6b7b96809"
+    },
+    {
+      "claim_id": "551ec696-d3b1-41eb-8453-4471b6595936",
+      "result_id": "ec6aed3d-7a2f-4b5b-aa38-fae12679b8ec"
+    },
+    {
+      "claim_id": "86290f62-9fbf-44cb-8521-dc3985ecce0e",
+      "result_id": "9a1dd458-441a-43ed-a789-b343b7605ac2"
+    },
+    {
+      "claim_id": "f124c434-cc0b-4980-9d29-159d725a6410",
+      "result_id": "9a1dd458-441a-43ed-a789-b343b7605ac2"
+    },
+    {
+      "claim_id": "98914b51-b237-469c-bb3c-eeb82649cc50",
+      "result_id": "9a1dd458-441a-43ed-a789-b343b7605ac2"
+    },
+    {
+      "claim_id": "fedfec29-7f68-469b-9b7f-c7b50ee4d587",
+      "result_id": "9a1dd458-441a-43ed-a789-b343b7605ac2"
+    },
+    {
+      "claim_id": "a56ebb93-4c34-43a9-8897-3e5201454fc5",
+      "result_id": "8679ac17-3f24-4035-b961-01b147ca815b"
+    },
+    {
+      "claim_id": "69a96ffe-e185-4915-b44b-4c6dbc42640d",
+      "result_id": "8679ac17-3f24-4035-b961-01b147ca815b"
+    },
+    {
+      "claim_id": "4d3d9bc4-3c3b-4216-9754-f7796360c930",
+      "result_id": "16b2a7fc-7805-4156-99c3-2f01c7c4f503"
+    },
+    {
+      "claim_id": "8fa1853c-c4f1-47ef-ab9e-378521f0625f",
+      "result_id": "16b2a7fc-7805-4156-99c3-2f01c7c4f503"
+    },
+    {
+      "claim_id": "b1edf589-41ce-4d6b-a963-ae5a20f04471",
+      "result_id": "16b2a7fc-7805-4156-99c3-2f01c7c4f503"
+    },
+    {
+      "claim_id": "2f3b2c59-7d54-418a-a116-f1f1a5fe840a",
+      "result_id": "16b2a7fc-7805-4156-99c3-2f01c7c4f503"
+    },
+    {
+      "claim_id": "b6b1a374-b6b4-442a-a1f6-d2d9989162ec",
+      "result_id": "062a172e-c125-4a2a-8f97-229add62c6e3"
+    },
+    {
+      "claim_id": "6cbd953e-1cd7-4bbf-926d-a558dd3ab776",
+      "result_id": "062a172e-c125-4a2a-8f97-229add62c6e3"
+    },
+    {
+      "claim_id": "42c66d61-7131-4663-9369-a227323f8c2c",
+      "result_id": "062a172e-c125-4a2a-8f97-229add62c6e3"
+    },
+    {
+      "claim_id": "edc637ac-b72e-4772-9f70-7bc897cfec0f",
+      "result_id": "062a172e-c125-4a2a-8f97-229add62c6e3"
+    },
+    {
+      "claim_id": "1a36a092-583a-43a0-ab72-882dd416c0a6",
+      "result_id": "062a172e-c125-4a2a-8f97-229add62c6e3"
+    },
+    {
+      "claim_id": "c7a6aef9-7711-4bf6-b1be-44c4acdd487f",
+      "result_id": "062a172e-c125-4a2a-8f97-229add62c6e3"
+    },
+    {
+      "claim_id": "c8341450-cbce-4381-a2fc-665ea82d23da",
+      "result_id": "062a172e-c125-4a2a-8f97-229add62c6e3"
+    },
+    {
+      "claim_id": "a3a9985d-3132-4045-8ed7-d2cc1d89d31b",
+      "result_id": "062a172e-c125-4a2a-8f97-229add62c6e3"
+    },
+    {
+      "claim_id": "8d20f3dd-3ad3-4844-b052-e97fbe81efc5",
+      "result_id": "fdcd5524-6fd8-4a9e-a9d8-813ab01c9c0e"
+    },
+    {
+      "claim_id": "0c3824ad-0d04-470f-8b79-b13e88d84372",
+      "result_id": "fdcd5524-6fd8-4a9e-a9d8-813ab01c9c0e"
+    },
+    {
+      "claim_id": "bf84f170-6793-4189-af58-418270c80327",
+      "result_id": "fdcd5524-6fd8-4a9e-a9d8-813ab01c9c0e"
+    },
+    {
+      "claim_id": "a96b1e28-32a8-444f-837a-3dd51d3e2540",
+      "result_id": "41159fbb-adbd-42d9-9fa1-3462edb6db2f"
+    },
+    {
+      "claim_id": "416614a2-34e5-4b16-8b7a-efddd20ef917",
+      "result_id": "41159fbb-adbd-42d9-9fa1-3462edb6db2f"
+    },
+    {
+      "claim_id": "020f2d46-9422-45d3-8a0b-7eba11044684",
+      "result_id": "41159fbb-adbd-42d9-9fa1-3462edb6db2f"
+    },
+    {
+      "claim_id": "5cd5cbd8-cf64-4512-8f22-796e2125e12c",
+      "result_id": "b78d7e6a-09bd-46e0-97de-8d110f5b6d9a"
+    },
+    {
+      "claim_id": "fbb78d45-d153-4264-b4d1-6a8aa85416ac",
+      "result_id": "b78d7e6a-09bd-46e0-97de-8d110f5b6d9a"
+    },
+    {
+      "claim_id": "0b20ada4-050c-4c82-940b-2ccb5ff6ffa3",
+      "result_id": "9d678b2e-8255-4b83-95ac-524e7da13459"
+    },
+    {
+      "claim_id": "6d69f366-0abb-4d44-a525-d61b6c45e1a6",
+      "result_id": "9d678b2e-8255-4b83-95ac-524e7da13459"
+    },
+    {
+      "claim_id": "14ae147f-6fd5-4119-898d-09528308254b",
+      "result_id": "9d678b2e-8255-4b83-95ac-524e7da13459"
+    },
+    {
+      "claim_id": "c6893b34-7aa4-4c6c-8c6d-7a2d5a29a3c0",
+      "result_id": "9d678b2e-8255-4b83-95ac-524e7da13459"
+    },
+    {
+      "claim_id": "d01b5fb1-bf76-4ee2-acab-c15479fbfb27",
+      "result_id": "9d678b2e-8255-4b83-95ac-524e7da13459"
+    },
+    {
+      "claim_id": "941f2e1a-b482-489a-b999-bfe0c8f989cb",
+      "result_id": "9d678b2e-8255-4b83-95ac-524e7da13459"
+    },
+    {
+      "claim_id": "22e2e378-858e-421b-aa07-c036f348d469",
+      "result_id": "9d678b2e-8255-4b83-95ac-524e7da13459"
+    },
+    {
+      "claim_id": "5ef9b57a-d5f8-44a0-ab6d-bdcc67b58707",
+      "result_id": "9d678b2e-8255-4b83-95ac-524e7da13459"
+    },
+    {
+      "claim_id": "b1caa04a-9238-4042-a7d7-0ba33fe4771d",
+      "result_id": "9d678b2e-8255-4b83-95ac-524e7da13459"
+    },
+    {
+      "claim_id": "00504ecd-e25f-47ea-881f-e55878f8a4b6",
+      "result_id": "8c0bca6e-4431-49d3-92d7-8cc87b02137a"
+    },
+    {
+      "claim_id": "0a9af4f8-7fa3-45f5-beba-176333f11112",
+      "result_id": "df4148e2-2b35-45bc-b175-38dc3a27bb79"
+    },
+    {
+      "claim_id": "db3cd4e1-4968-4404-95d4-2bbb6164762f",
+      "result_id": "df4148e2-2b35-45bc-b175-38dc3a27bb79"
+    }
+  ],
+  "comparisons": []
+}

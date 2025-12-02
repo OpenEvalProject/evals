@@ -1,0 +1,1775 @@
+{
+  "submission": {
+    "id": "edeeece1-e358-4516-b10d-f718d6db0828",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T11:02:36.163178Z",
+    "updated_at": "2025-12-02T11:02:36.163178Z"
+  },
+  "content": [
+    {
+      "id": "e67e0261-4560-434d-96fd-aece016a9d47",
+      "submission_id": "edeeece1-e358-4516-b10d-f718d6db0828",
+      "content_type": "manuscript",
+      "content_text": "# An explanation for origin unwinding in eukaryotes\n\n## Authors\n\n- Lance D Langston<sup>1</sup> ([ORCID: 0000-0002-2736-9284](https://orcid.org/0000-0002-2736-9284))\n- Michael E O'Donnell<sup>1</sup> ([ORCID: 0000-0001-9002-4214](https://orcid.org/0000-0001-9002-4214)) \u2020\n\n### Affiliations\n\n1. The Rockefeller University New York United States\n2. Howard Hughes Medical Institute New York United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nTwin CMG complexes are assembled head-to-head around duplex DNA at eukaryotic origins of replication. Mcm10 activates CMGs to form helicases that encircle single-strand (ss) DNA and initiate bidirectional forks. How the CMGs melt duplex DNA while encircling it is unknown. Here we show that S. cerevisiae CMG tracks with force while encircling double-stranded (ds) DNA and that in the presence of Mcm10 the CMG melts long blocks of dsDNA while it encircles dsDNA. We demonstrate that CMG tracks mainly on the 3\u2019\u22125\u2019 strand during duplex translocation, predicting that head-to-head CMGs at an origin exert force on opposite strands. Accordingly, we show that CMGs that encircle double strand DNA in a head-to-head orientation melt the duplex in an Mcm10-dependent reaction.\n\n## Introduction\n\nCellular replicative DNA helicases are hexameric ring-shaped motors that track on single-strand (ss) DNA, acting as a wedge to unwind the duplex (Lyubimov et al., 2011). In bacteria, the circular helicase is a homohexamer that directly assembles onto an AT-rich ssDNA region melted by initiator proteins, but in eukaryotes the origin recognition complex (ORC) does not unwind DNA (Bleichert et al., 2017). Instead, in G1-phase, two Mcm2-7 hexamer rings are assembled head-to-head (N-to-N) around double-strand (ds) DNA by ORC, Cdt1 and Cdc6 (Bell and Labib, 2016; Evrin et al., 2009; O'Donnell et al., 2013; Remus et al., 2009). In S-phase, additional factors assemble Cdc45 and GINS onto each Mcm2-7 to form two replicative helicases on dsDNA oriented head-to-head (Ilves et al., 2010; Moyer et al., 2006; Parker et al., 2017). Each helicase contains 11 different subunits, and the term CMG (Cdc45, Mcm2-7, GINS) was coined because it contains Cdc45, Mcm2-7, and the four subunit GINS complex (Ilves et al., 2010; Moyer et al., 2006; Parker et al., 2017). Mcm10 is required to activate each CMG to encircle ssDNA for bidirectional replication (Douglas et al., 2018; Heller et al., 2011; Kanke et al., 2012; van Deursen et al., 2012; Watase et al., 2012; Yeeles et al., 2015). However, the detailed processes of origin melting and the transition of CMG from dsDNA to ssDNA translocation are unknown. In particular, it is not clear whether CMG and Mcm10 alone are sufficient to mediate this transition or whether other factors required for CMG assembly are also involved.\n\nRecent electron microscopy (EM) studies of Saccharomyces cerevisiae (S.c.) CMG at a replication fork show that CMG tracks on ssDNA with its N-tier facing the fork (Douglas et al., 2018; Georgescu et al., 2017). N-first movement of CMG implies that head-to-head CMGs at the origin are directed toward one another when assembled around duplex DNA. Thus, each CMG blocks the forward movement of the other, and the duplex must be unwound a sufficient distance for both CMGs to expel one strand for their transition from dsDNA to ssDNA, which they must do to pass one another and form bidirectional forks (Figure 1). These last steps of origin initiation require the Mcm10 protein (Douglas et al., 2018; Kanke et al., 2012; van Deursen et al., 2012; Watase et al., 2012; Yeeles et al., 2015). Mcm10 contains a DNA binding region (Warren et al., 2008) and interaction with the N-terminal regions of Mcm2 and Mcm6 has been demonstrated (Douglas and Diffley, 2016; L\u00f5oke et al., 2017). Recent cross-linking/mass spectrometry studies reveal a large surface area of CMG-Mcm10 interaction that includes 6 of the 11 CMG subunits, mostly at the N-surface of CMG but also many sites at the edges and C-surface of CMG (Mayle et al., 2019).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/46515/elife-46515-fig1-v2.jpg)\n\n**Figure 1.:** CMG complexes, which appear as stacked rings with separate N- and C-domains, translocate in the N-first direction. Initially, two N-to-N (head-to-head) CMGs (purple and yellow) are assembled surrounding dsDNA (blue lines) at origins (left), and the tight connection of the inactive Mcm2-7 double hexamer is lost (Abid Ali and Costa, 2016; Costa et al., 2014), depicted as a separation between the CMGs (left). Upon addition of Mcm10 (green, middle) both CMGs switch to opposite strands of ssDNA and can pass one another to form bidirectional forks (right).\n\nThe mechanism of CMG\u00a0+\u00a0Mcm10 (CMGM) function in the final step of origin initiation has been difficult to probe experimentally. Recent studies of CMG formation at origins demonstrate a disruption of tight connections between the Mcm2-7 hexamers upon maturation to CMGs and untwisting of\u00a0~0.7 turns of the double helix per CMG (Douglas et al., 2018). However, even if the observed untwisting was due to actual DNA melting, it is too little for CMG to transition to ssDNA (Douglas et al., 2018). Thus, the mechanism of how CMG opens the duplex a sufficient length to transition to ssDNA and the role of Mcm10 in this process remain open questions. In this report we use recombinant CMG and Mcm10 and find that, together, they produce sufficient force to open several turns of the duplex while encircling dsDNA, a sufficient length that would enable CMGs to transition onto ssDNA. Hence, initial unwinding of DNA by CMG-Mcm10 can occur without the participation of other replication initiation factors.\n\n## Results\n\nTo investigate the activity of the CMG motor while encircling dsDNA, we designed three T-shaped DNA substrates that block passive sliding over the two non-homologous arms at the T-junction (Figure 2A and Figure 2\u2014figure supplement 1). If CMG is not passive, but instead CMG motors on dsDNA with force, it may melt the T-junction arms and produce unwound products, provided the arms are not too long for CMG to melt. Similar substrates have been used to study ring-shaped helicases that track on dsDNA with force including E. coli DnaB helicase and the FtsK chromosome segregation motor (Bigot et al., 2005; Crozat and Grainge, 2010; Kaplan and O'Donnell, 2004; Lyubimov et al., 2011). The T-substrates contain a 3\u2019 ssDNA dT tail that is required for CMG loading (Figure 2a and Figure 2\u2014figure supplement 2) followed by a flush ss/dsDNA junction that enables CMG to move onto dsDNA without unwinding it (Kang et al., 2012; Langston and O'Donnell, 2017) after which it encounters the T-junction block of non-homologous arms (Figure 2a). The three T-shaped DNAs are identical except for the length of the branched arms (20, 30 or 60 bp). The non-homologous arms are annealed to a 32P-radiolabeled \u2018C\u2019 oligo. Proceeding through the T-arm blocks requires that CMG translocates with force while surrounding dsDNA to simultaneously melt both arms, so a T-substrate with 30 bp arms requires melting a total of 60 bp to release the 32P-C oligo.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/46515/elife-46515-fig2-v2.jpg)\n\n**Figure 2.:** (A) Schematic of reactions using T-substrates with a 3\u2019 dT30 ssDNA tail for CMG loading, a flush ss/ds junction and 35 bp of dsDNA (green) preceding the non-homologous arm blocks (blue and orange). See Figure 2\u2014figure supplement 1 for details on the substrates. Unwinding the 32P-cross-bar oligo (labeled with a *) requires CMG to track with force while encircling dsDNA. (B) Native PAGE gel of time course reactions using CMG (no Mcm10) on T-substrates with different length arms. (C) Repeat of (B) with addition of Mcm10. (D) Plots of the data from (B) and (C). Values shown are the average of three independent experiments and the error bars show one standard deviation. The asterisks to the right of the gels indicate gel-shift of the substrate by CMG and Mcm10. See also Figure 2\u2014figure supplements 2\u20133.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/46515/elife-46515-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** These substrates, used in Figure 2 to demonstrate duplex DNA translocation with force by CMG \u00b1 Mcm10, consist of three partially complementary oligonucleotides, denoted as A, B and C. Oligo A contains a 3\u2019 dT30 tail required for CMG loading (Figure 2\u2014figure supplement 2) and Oligo B forms a flush duplex with oligo A (green) to allow CMG to thread onto dsDNA without unwinding it. The duplex formed by oligos A and B is followed by two regions of non-complementarity (shown in blue and orange) that vary in length depending on the substrate, as indicated. These non-complementary arms are bound by a third oligo, C, which is complementary to the upper B arm (blue) and the lower A arm (orange). Active duplex translocation by CMG \u00b1 Mcm10 is required to dislodge the C oligo by breaking the base pairs in the upper and lower arms. Oligo C is radiolabeled in the experiments of Figure 2 and complete unwinding of oligo C is monitored by its altered migration in a native PAGE gel. See Supplementary file 1 for sequences of the oligos used to construct the T20, T30 and T60 substrates.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/46515/elife-46515-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** The experiment from Figure 2C (CMG+Mcm10) was repeated using a T20 substrate with no 3\u2019 dT30 loading tail by substituting oligo \u201cT20A no 3\u2019 tail\u201d (see Supplementary file 1 for sequence) for oligo T20A. A schematic of the substrate is shown (top) as are gels from two separate trials of the experiment using this substrate (middle). The graph below shows a comparison of unwinding using the substrate with no 3\u2019 tail to that of the 3\u2019-tailed T20 substrate (data from Figure 2C, (D). The * next to the gels indicates gel-shift of the substrate by CMG+Mcm10.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/46515/elife-46515-fig2-figsupp3-v2.jpg)\n\n**Figure 2\u2014figure supplement 3.:** The experiments of Figure 2C were repeated using Mcm10 (no CMG) with the T20 substrate (lanes 3-6), the T30 substrate (lanes 9-12) and the T60 substrate (lanes 15-18). The unreacted substrate is shown in lanes 2, 8, and 14 and lanes 1, 7, and 13 show the migration of the unwound product by boiling. The * next to the gels indicates gel-shift of the substrates by Mcm10.\n\nCMG was pre-incubated with the T-substrates for 10\u2019 and then ATP was added to initiate unwinding as illustrated in Figure 2A. An excess of unlabeled C oligo was added 1\u2019 later as a trap to prevent re-annealing of any unwound 32P-C oligo. CMG has only weak activity in melting the 20 bp arms and cannot destabilize the 30 bp or 60 bp arms (Figure 2B,D). However, upon adding Mcm10, CMG unwound all three T-substrates (Figure 2C,D). Mcm10 alone has no activity in these assays (Figure 2\u2014figure supplement 3). The results are consistent with prior studies showing Mcm10 stimulates CMG helicase activity, enhances CMG processivity during unwinding (Langston et al., 2017; L\u00f5oke et al., 2017), and is required to activate CMG unwinding at origins (Douglas et al., 2018; Kanke et al., 2012; van Deursen et al., 2012; Watase et al., 2012; Yeeles et al., 2015). Possible roles of Mcm10 in promoting CMG unwinding while encircling dsDNA are presented in the Discussion. The extent of unwinding decreases as the length of the non-homologous arms increases, suggesting either limited processivity of CMG\u00a0+\u00a0Mcm10 in directional dsDNA translocation or that CMG expels the non-tracking strand and transitions to ssDNA translocation while unwinding the longer T-substrates; strand expulsion would result in only partial unwinding followed by rapid intramolecular reannealing to reform the starting substrate, a topic we examine later.\n\nPrevious studies of multi-subunit, ring-shaped motors that surround and track on dsDNA show that they primarily contact one strand of the duplex. Two of the most well-studied examples are the phi29 DNA packaging motor, which tracks on only one strand while encircling dsDNA (Aathavan et al., 2009) and the bacterial clamp loader that also surrounds dsDNA but contacts only one strand (Simonetta et al., 2009) (Figure 3\u2014figure supplement 1). Similarly, the cryoEM structure of CMG on forked DNA shows that the translocation strand adopts a B-form spiral shape in the motor domains (Figure 3\u2014figure supplement 1), implying that the motors need not alter conformation to encircle dsDNA (Abid Ali et al., 2016; Georgescu et al., 2017). A corresponding spiral of ssDNA in the central channel is a common feature of all replicative helicase structures examined thus far (Gao et al., 2019; O'Donnell and Li, 2018; Parker et al., 2017). These findings suggest CMG may track on one strand while encircling dsDNA. Translocases bind the negative phosphate backbone for mobility (Kaplan and O'Donnell, 2004; Lyubimov et al., 2011; Parker et al., 2017), and thus to test CMG for tracking on one strand of dsDNA we placed ten neutral methylphosphonate linkages on either strand of the duplex preceding the T-substrate arms (Figure 3A and Figure 3\u2014figure supplement 2), a strategy used to identify the tracking strand for the phi29 motor (Aathavan et al., 2009). When the methylphosphonate linkages were on the 3\u2019\u22125\u2019 strand in the direction of unwinding, duplex unwinding was significantly reduced compared to methylphosphonate linkages on the opposite strand (Figure 3B,C). This result is consistent with CMG tracking mainly on the 3\u2019\u22125\u2019 strand while surrounding dsDNA, which is also the tracking strand for helicase activity while encircling ssDNA. This is noteworthy given that in the inactive Mcm2-7 double hexamer, each ring makes an equal number of contacts with the 3'\u22125' and 5'\u22123' strands (Abid Ali et al., 2017; Noguchi et al., 2017). Hence, duplex DNA interaction by the MCM and by the CMG is fundamentally different.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/46515/elife-46515-fig3-v2.jpg)\n\n**Figure 3.:** (A) Diagram of the naturally occurring negatively charged phosphodiester linkage in the phosphate backbone of a DNA chain (left) and the uncharged methylphosphonate linkages used in these experiments (right). (B) The experiment from Figure 2C (CMG+Mcm10) was repeated using a T30 substrate with 10 neutral methylphosphonate linkages (shown in pink in the schematics above the gel) in the 5\u2019-3\u2019 strand (left) or in the 3\u2019-5\u2019 strand (right) of the duplex. See Figure 3\u2014figure supplement 2 and Supplementary file 1 for further details on the substrate. The * next to the gels indicates gel-shift of the substrate by CMG+Mcm10. (C) A plot of the data from (B) shows the averages of three independent trials using these substrates. The error bars show the standard deviations. Also see Figure 3\u2014figure supplement 1.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/46515/elife-46515-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) The E. coli clamp loader binds only one strand during action on dsDNA. (B) CMG motor domains bind ssDNA in a B-form conformation. (C) Little to no conformation change would be needed for CMG motors to bind B-form ssDNA and then slide onto dsDNA (flush end) and continue tracking on the same 3\u2019\u22125\u2019 strand.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/46515/elife-46515-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** To investigate how the CMG+Mcm10 motor interacts with the duplex DNA in its central channel, we used derivatives of oligos T30A or T30B (sequences in Supplementary file 1) in which a stretch of ten bases (shown in green in the DNA sequence) is connected by neutral methylphosphonate linkages (chemical schematic at top) instead of the normal negatively charged phosphodiester linkages on one strand or the other. The methylphosphonate derivate oligos are designated \u201cT30A MP\u201d and \u201cT30B MP\u201d (Supplementary file 1).\n\nThe studies of Figures 2 and 3 show that CMG\u00a0+\u00a0Mcm10 tracks on dsDNA with force and interacts with the 3\u2019\u22125\u2019 strand more than the 5\u2019\u22123\u2019 strand. On the basis of these observations, we hypothesized that head-to-head CMGs encircling dsDNA and pushing against one another at origins would pull on opposite strands of the duplex, providing the force necessary to melt the origin. To test this, we designed a linear duplex with CMG loading sites at either end to simulate an origin in which two CMGs are oriented head-to-head on dsDNA (Figure 4A). The substrate supports loading of two (at least) oppositely oriented CMG complexes onto duplex DNA that will translocate toward one another and collide in the same way that CMGs do at an origin but without the need for CMG helicase assembly by multiple initiation factors (Figure 4A, middle). This allows us to determine if the duplex melting activity required at origins is inherent in head-to-head CMG\u00a0+\u00a0Mcm10 complexes or if additional factors are needed. In this assay, if the substrate is unwound, the trap oligo prevents reannealing by forming a fork with the unwound 32P-labeled strand and the fork structure migrates more slowly in the gel than the initial substrate (Figure 4A, bottom).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/46515/elife-46515-fig4-v2.jpg)\n\n**Figure 4.:** (A) Scheme of the reaction with the double tailed substrate, and two possible processes that could result in unwinding the DNA. The color scheme is the same as in Figure 1. CMG is mixed with the substrate on ice and then incubated at 30\u00b0 C in the absence of ATP (top) to allow the reaction to reach temperature. 1\u2019 later, ATP is added to allow CMGs to load onto the duplex in opposite orientations and block each other\u2019s progress (middle). At the same time as ATP, Mcm10 is added to initiate the duplex unwinding reaction. 45\u2019 later, an ssDNA trap oligo (orange) is added that quenches further CMG loading (Figure 4\u2014figure supplement 1) and also anneals to the unwound radiolabeled product, creating a forked structure (bottom) that migrates at a distinct position in the gel from the substrate. Unwinding may occur either by: strand shearing (left arrow), or by strand expulsion (right arrow) to form CMGs that encircle ssDNA for conventional helicase activity. (B) Native PAGE gel time course of results using CMG\u00a0+\u00a0Mcm10. Lanes 1\u20135 show the reaction using the two-tailed substrate described in (A) while lanes 6\u201310 and 11\u201315 show control reactions using the same duplex with only a single tail at one end or the other. The migration of the substrates and unwound/trapped product are indicated to the left and right of the gel. (C) A plot of the data from (B) shows the averages of three independent trials using these substrates. The error bars show the standard deviations. See also Figure 4\u2014figure supplements 2\u20133.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/46515/elife-46515-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** The experiment in Figure 4B was repeated with addition of the oligo trap prior to addition of ATP/Mcm10 (left gel) or 45\u201d after addition of ATP/Mcm10 (right gel) as in Figure 4B. The reaction scheme is shown above the gels, indicating the two different points of trap addition, and the data are plotted below. The values shown are the average of three independent experiments and the error bars show one standard deviation.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/46515/elife-46515-fig4-figsupp2-v2.jpg)\n\n**Figure 4\u2014figure supplement 2.:** The experiment in Figure 4B, lanes 1-5, was repeated with CMG alone (no Mcm10). Because Mcm10 was not added, the experimental design was streamlined to an initial 2\u2019 incubation with CMG, ATP, and the substrate (for CMG loading) after which the trap oligo was added to monitor product formation (scheme at top). Shown are the native PAGE gels from two separate experiments.\n\n![Figure 4\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/46515/elife-46515-fig4-figsupp3-v2.jpg)\n\n**Figure 4\u2014figure supplement 3.:** The experiment in Figure 4B, lanes 1-5, was repeated to demonstrate that unwinding of the two-tailed substrate by the complete system (lanes 2-6, with CMG, Mcm10 and ATP) is dependent upon both CMG (lanes 12-16, no CMG) and ATP (lanes 7-11, no ATP). This experiment also demonstrates that Mcm10 alone does not unwind the substrate (lanes 12-16). For these experiments, CMG was pre-incubated with the substrate in the presence of ATP (where indicated) for 10\u2019 before the addition of Mcm10.\n\nConsidering that circular helicases like CMG are inefficient in threading onto DNA, we assume that binding of two CMG to a single substrate is probably a rare event. To further reduce the probability of\u00a0>2 CMG loading, we minimized the opportunity for CMG to bind to the substrate as follows. First, CMG was mixed with the substrate on ice and then incubated for 1 min at 30\u00b0C in the absence of ATP to allow the mixture to reach the reaction temperature. Next, ATP was added to initiate CMG loading and duplex translocation along with Mcm10 to initiate duplex melting (Douglas et al., 2018; Kanke et al., 2012; van Deursen et al., 2012; Watase et al., 2012; Yeeles et al., 2015). Then 45 s after adding ATP and Mcm10, we added the trap oligo which quenches further CMG loading (Figure 4\u2014figure supplement 1). As shown in Figure 4B (lanes 1\u20135), CMG readily unwinds the two-tailed substrate in the presence of Mcm10. Moreover, unwinding continues well beyond the time of addition of the trap, thereby excluding the possibility that additional CMG loading events are required for unwinding (see Figure 4B and C; also see Figure 4\u2014figure supplement 1 for effectiveness of the trap). The reaction is absolutely dependent on addition of Mcm10 (Figure 4\u2014figure supplement 2) and also requires ATP and CMG (Figure 4\u2014figure supplement 3), showing that the observed unwinding is the product of CMG\u2019s ATP-dependent motor activity coupled to Mcm10 function rather than the product of either CMG or Mcm10 acting separately. The reaction also requires loading of head-to-head CMG complexes because duplexes with only a single CMG loading tail at one end or the other were essentially inactive compared to the two-tailed substrate (Figure 4B, lanes 6\u201315 and Figure 4C). In overview, these results demonstrate that head-to-head CMG complexes, along with Mcm10, can perform the DNA melting required at origins of replication without the participation of any other factors. Furthermore, the results are consistent with the action of two independent CMGs colliding with one another on dsDNA, in contrast to the highly interconnected and interdependent but inactive Mcm2-7 complexes within the double hexamer.\n\nTwo explanations for unwinding by head-to-head CMG-Mcm10s are illustrated in Figure 4A. One process involves strand shearing (Figure 4A, left arrow) as observed in the reactions using the T-substrate in which the two non-homologous arms are sheared apart (Figures 2 and 3). An alternative process is that once sufficient dsDNA is unwound, the non-tracking strand may be expelled from the inner chamber of CMG, enabling completion of unwinding by conventional CMG helicase activity in which the CMGs encircle and translocate 3\u2019\u22125\u2019 on ssDNA (Figure 4A, right arrow).\n\nIn an effort to address whether strand expulsion occurs during unwinding, we constructed a modified T-substrate in which the two 50 bp non-complementary arms of the T-substrate are annealed to separate oligos with 5\u2019 flaps, allowing us to monitor unwinding of each arm independently of the other (Figure 5A). This is in contrast to the substrate in Figure 2 where both T-arms had to be melted in order to observe unwinding (see Figure 5\u2014figure supplement 1). For the substrate in Figure 5, the 5\u2019 flap in the \u2018C\u2019 oligo on the upper arm of the substrate (Figure 5A, left) was created by using a reverse polarity 3\u2019\u22123\u2019 linkage near the base of the flap to prevent CMG loading onto what would otherwise be a 3\u2019 flap (Figure 5\u2014figure supplement 2). The other 5\u2019 flapped oligo, on the lower arm, is referred to here as the \u2018D\u2019 oligo. For these reactions, two trap oligos are used to prevent unwound products from reannealing: trapE prevents unwound oligo C from reannealing to oligo B while trapA is an unlabeled version of oligo A that prevents unwound oligos B and/or D from reannealing to radiolabeled oligo A (Figure 5A, right). This experimental design enables visualization of all possible product outcomes of CMGM translocation on dsDNA, including whether CMG continually encircles dsDNA or whether it might expel one strand to encircle only the tracking strand at some point in the process (see Figure 5A,D).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/46515/elife-46515-fig5-v2.jpg)\n\n**Figure 5.:** (A) Scheme of the substrate and possible reaction products depending on the pathway of unwinding. Oligo A is radiolabeled at the 5\u2019 end (32P) and oligo C contains a reverse polarity (3\u2019\u22123\u2019) linkage to create a 5\u2019 flap that prevents CMG loading onto oligo C (Figure 5\u2014figure supplement 2). Two traps are used in the reaction, each in 40-fold excess over the substrate: one is unlabeled oligo A (trapA, green and orange), which prevents unwound oligos D or B from re-annealing to unwound 32P-oligo A; the other is oligo E (trapE, blue), which is complementary to oligo C and thus prevents unwound oligo C from re-annealing to oligo B. These traps are shown annealed to the possible products (right). (B) Representative native PAGE gel of the assay time course using CMG\u00a0+\u00a0Mcm10. The migration positions of the indicated DNA makers are shown at the left and the time course of the reaction is on the right. (C) Plot of the data from (B). The values shown are the average of three independent experiments and the error bars show one standard deviation. (D) Scheme of the strand expulsion pathway. CMG partially unwinds the two heterologous arms, creating ssDNA (top middle) and then the non-tracking strand B is expelled to the exterior of the ring (top right), followed by CMG encircling ssDNA (bottom right) and finishing unwinding of the lower flapped arm (bottom left). (E) Schematic of the DNA shearing pathway. CMG melts both arms (top middle) but at unequal rates (top right) such that the lower arm with the tracking strand is fully unwound before the upper arm (bottom right), leaving CMG encircling the non-tracking ssDNA (bottom left). See also Figure 5\u2014figure supplement 1.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/46515/elife-46515-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** If CMG loads onto the 3\u2019 end, threads onto the duplex (green), partially unwinds the arms, and then expels the non-tracking strand (1, left), the two non-homologous arms would be only partially unwound and could re-anneal after passage of CMG, re-forming the starting substrate. Duplex translocation without strand expulsion (2, middle) results in unwinding of both arms, displacing the radiolabeled C oligo. This is the only unwinding product observed in Figure 2. If CMG were to \u201clift up\u201d the 5\u2019 end of the green duplex and translocate exclusively along ssDNA (3, right), this would unwind the lower/left arm (orange) but not the upper/right arm (blue), and the radiolabeled C oligo would remain bound to the B oligo. This product was not observed in Figure 2. The trap used in Figure 2 is an excess of unlabeled oligo C, which prevents fully unwound oligo A or B from re-annealing to the unwound radiolabeled oligo C.\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/46515/elife-46515-fig5-figsupp2-v2.jpg)\n\n**Figure 5\u2014figure supplement 2.:** The oligo used to form a 5\u2019 dT flap on the upper arm of the substrate used for Figure 5 is examined for its ability to prevent CMG+Mcm10 loading. The substrate used here was formed by annealing oligo T50C to radiolabeled T50B (schematic at top; See Supplementary file 1 for oligo sequences) and the reaction was performed exactly as described for the experiment of Figure 5. The * next to the gel indicates gel-shift of the substrate by CMG+Mcm10. The graph (bottom) shows the averages of three separate trials using this substrate. The error bars show the standard deviations.\n\nWhen CMG loads onto the initial duplex segment of the modified substrate it can follow one of two pathways. If CMG translocates exclusively on duplex DNA during the reaction and melts both non-homologous arms, then both flapped oligos (oligos C and D in Figure 5A, middle right) will be released by the action of the CMG motor. Alternatively, it is possible that CMG will melt only oligo D (Figure 5A, top right). For example, if CMG initially translocates on dsDNA and melts a portion of the non-homologous arms and then expels the non-tracking strand, only the lower flapped oligo D will be unwound (Figure 5A,D). This same outcome could also arise if CMG remains on dsDNA but is faster in melting oligo D compared to oligo C (Figure 5A,E). Alternatively, despite the lack of a 5\u2019 flap on the initial flush duplex segment, CMG might take advantage of thermal fraying at the flush end and unwind the 3\u2019-tailed oligo (32P-oligo A in Figure 5A, bottom right) from the rest of the substrate. Previous experiments with similar substrates indicate that unwinding of flush duplexes is negligible (Langston and O'Donnell, 2017). By radiolabeling the 3\u2019-tailed \u2018A\u2019 oligo, these potential products are observed as separate bands in a native gel (Figure 5B). The reaction conditions are identical to those of the experiments in Figure 2C (CMG\u00a0+\u00a0Mcm10) except for the modified substrate design and the use of two traps to prevent unwound substrates from reanealing (see Figure 5A, right).\n\nThe results of the experiment with the modified substrate reveal that melting of oligo D is the most prominent product of the reaction, appearing as a clear and distinct band in the gel as early as 90\u2019 after starting the reaction (band labeled *ABC in Figure 5B) and occurring on 40% of substrates over the full time course (Figure 5C). In contrast, the product expected for CMG encircling dsDNA and melting both arms simultaneously was\u00a0~10% of total substrate (*AB in Figure 5B,C), as observed in Figure 2 for the 60 bp arm substrate. Continuous ssDNA translocation during the entire experiment was a minor outcome (~5%, *A in Figure 5B,C) as expected because there is no 5\u2019 flap on the initial duplex segment, further supporting the conclusion that CMG moves smoothly from ssDNA onto a flush duplex without unwinding it, as previously observed (Langston and O'Donnell, 2017).\n\nAs discussed above, the melting of oligo D may be explained either by CMG\u00a0+Mcm10 expelling the non-tracking strand (Figure 5D) or by CMG\u00a0+Mcm10 continuously encircling dsDNA but melting oligo D faster than oligo C (Figure 5E). While we cannot distinguish between these two mechanisms, we note that an ssDNA gate was previously demonstrated for Drosophila CMG (Ilves et al., 2010; Moyer et al., 2006), and subsequently shown to generalize to human CMG and S. cerevisiae CMG (Kang et al., 2012; Langston and O'Donnell, 2017). Also, in recent single molecule studies, we show that CMGMs act as individual particles and that CMGM on dsDNA, upon encountering an RPA-coated fork, expels one strand and transitions to encircle ssDNA where it moves slowly to unwind the duplex (Wasserman et al., 2018). Regardless, the ensemble experiments of Figure 5 cannot rigorously distinguish whether CMG\u00a0+Mcm10 expels the non-tracking strand or continuously encircles dsDNA to melt oligo D to form the ABC product.\n\n## Discussion\n\nThe results presented in this report demonstrate that CMG\u00a0+\u00a0Mcm10 translocates on dsDNA with sufficient force to melt at least 60 bp (Figure 2), and that head-to-head CMGs can melt up to 150 bp (Figure 4). The head-to-head CMGs can be added individually and thus are uncoupled and do not need to be intimately connected as in the Mcm2-7 double hexamer. The experiments further demonstrate that Mcm10 is required for these CMG actions and that no other origin firing factors are needed. CMGM tracking on dsDNA with force preferentially interacts with the 3'\u22125' strand more than the 5'\u22123' strand, unlike the inactive Mcm2-7 double hexamer that does not unwind DNA and has an equal number of contacts with each strand of duplex DNA (Abid Ali et al., 2017; Noguchi et al., 2017). DNA melting by head-to-head CMGs directed against one another is expected to require a force of 65 pN, the force demonstrated to melt dsDNA in single-molecule experiments with optical traps attached to the ends of opposite strands of a linear duplex (King et al., 2016; van Mameren et al., 2009). Generation of 50\u201360 pN force has precedent in the ring-shaped FtsK segregation motor (Pease et al., 2005) and in phage packaging motors (Smith et al., 2001). In the case of origin melting, two CMG\u00a0+\u00a0Mcm10 are utilized and thus each CMG would only need half the 65 pN required for the ds-to-ssDNA phase transition.\n\nDNA melting at an origin is a necessity for replication in all cell types, but occurs in different ways in bacteria and eukaryotes (reviewed in Lyubimov et al., 2011\u00a0and Parker et al., 2017). While bacterial origin binding proteins melt enough DNA for two hexameric helicases to assemble directly onto ssDNA, eukaryotic ORC (Origin Recognition Complex) does not unwind DNA and instead conspires with many other factors to assemble two CMG helicases on dsDNA that are oriented head-to-head (Bell and Labib, 2016). Each CMG is demonstrated to untwist about 0.7 turns apiece (Douglas et al., 2018), but how the CMGs lead to sufficient DNA melting for strand expulsion and pass one another has been unknown except that Mcm10 is required (reviewed in Bell and Labib, 2016).\n\nWhile the studies of this report provide a mechanistic overview of the origin unwinding step, additional details of this step remain to be determined. Mainly, we do not know the basis by which Mcm10 provides CMG the ability to unwind duplex while encircling duplex DNA. One possibility is that Mcm10 prevents slippage or backtracking by CMG, as backtracking in a ring shaped helicase has been documented previously (Sun et al., 2011). Indeed, recent studies show that the two CMGs at an origin can drift apart in buffer lacking ATP, indicating they are no longer tightly attached as in the Mcm2-7 double hexamer and are capable of backward slippage (Douglas et al., 2018). If Mcm10 were to prevent CMG backtracking it might more efficiently utilize the intrinsic force generated by ATP-driven CMG translocation. We do not know if Mcm10 acts on CMG at origins the same way as it acts upon CMG at replication forks. Unfortunately, CMG-Mcm10 complex with or without a replication fork shows no additional Mcm10 density in cryoEM suggesting Mcm10 flexibility on CMG or multiple conformers of Mcm10 on CMG (Douglas et al., 2018; Mayle et al., 2019), and therefore additional studies will be needed to understand how Mcm10 acts upon CMG. For example, as an alternative to preventing backtracking, Mcm10 may induce a change in DNA structure that makes it easier to melt, as observed in monomeric helicases that orient the ssDNA and dsDNA at nearly right angles (Gao et al., 2019; Lee and Yang, 2006). In practice, the challenge to studying this process is that once two CMGs are formed, Mcm10 binding to the CMGs does not form a stable intermediate to examine because the CMGs quickly pass one another and form replication forks. The structure of CMG-Mcm10 intermediate species at an origin must await further studies. Hence, we propose below a plausible mechanism for Mcm10-dependent origin melting by CMG that utilizes the facts as we know them thus far.\n\nWe have shown previously that the N-terminal zinc fingers of CMG encircle and interact with both strands of duplex DNA just prior to the split point and that the duplex proceeds nearly straight into CMG before the leading strand enters the central channel (Georgescu et al., 2017; O'Donnell and Li, 2018). Furthermore, observations of Mcm2-7 head-to-head double hexamers on DNA show they are nearly in-line with one another while they encircle dsDNA (Abid Ali et al., 2017; Li et al., 2015; Noguchi et al., 2017; Remus et al., 2009). Thus we propose a model in Figure 6 for origin melting assuming two in-line head-to-head CMGs (+Mcm10) at an origin. The length of the central channel of each CMG is about 110 \u00c5 which can enclose 20\u201330 bp of dsDNA. Thus, significant melting is required to provide ssDNA of sufficient length for one strand to be excluded from the central channel to the outside of the CMG particle. The motors of CMG are within the C-terminal domains and are separated by the N-terminal domains in a head-to-head orientation (Figure 6). Recent studies show that each CMG can untwist about 7 bp without Mcm10, probably within the C-terminal domains containing the ATP sites, but whether this is unwound DNA or untwisted DNA is not certain (Douglas et al., 2018). While this is insufficient for the dsDNA-to-ssDNA transition, it may be expected to facilitate the transition. Like other ring-shaped oligomers that encircle dsDNA (Aathavan et al., 2009; Simonetta et al., 2009), if CMG tracks primarily on one strand of dsDNA, as indicated by data of Figure 3, the dsDNA will come under tension, each strand being pulled in the opposite direction. Upon reaching the threshold tension for melting, the dsDNA between the CMGs will be sheared to ssDNAs and further tracking will produce additional ssDNA (Figure 6). The disposition of this sheared DNA is not clear, but one possibility is that the ssDNA might be stored within the N-tier by a conserved MCM-ssDNA binding motif, as revealed in a structure of the N-tier of an archaeal MCM bound to ssDNA (Froelich et al., 2014). Alternatively, DNA melting may occur within individual CMG-Mcm10 molecules, leaving DNA between them as duplex. These various possible intermediate states are indicated by the question mark in Figure 6.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/46515/elife-46515-fig6-v2.jpg)\n\n**Figure 6.:** (i) Two head-to-head CMGs (purple and yellow) are formed at an origin surrounding dsDNA (blue and red). (ii) Addition of Mcm10 (green) promotes movement of the two CMGs toward one another (gray arrows). (iii) Upon colliding, the two CMG motors continue to exert force on their respective tracking strands and may continue to rotate (curved gray arrows), placing tension on the dsDNA between them and causing it to unwind. The presence of Mcm10 promotes significant shearing and melting of dsDNA. Small black arrows show the direction of DNA strand movement through the respective CMGs. While ssDNA is illustrated both inside and between CMGMs, it remains possible that DNA unwinding occurs within the N-and C-tiers of individual CMGs or some other process. The question mark reflects this uncertainty. (iv) The unwinding of dsDNA by CMGM observed in the current study provides a sufficient length of ssDNA for CMGs to expel the non-tracking strand and thus transition from encircling dsDNA to ssDNA and track 3\u2019\u22125\u2019 on their respective ssDNA past one another to form bidirectional forks (see also Figure 1).\n\nOnce sufficient DNA is unwound, the CMGs must expel one strand of ssDNA from the central channel to become bone fide helicases that can pass one another to initiate two divergent replication forks. Expulsion of a ssDNA implies a ssDNA gate within CMG. A ssDNA gate intrinsic to CMG is consistent with the demonstrated ability of CMG to self-load onto circular ssDNA for removal of 5\u2019 flap oligonucleotides bound to the circular DNA, demonstrated for Drosophila CMG and later for human and budding yeast CMG (Ilves et al., 2010; Kang et al., 2012; Langston et al., 2014). Turns in the ssDNA strands that remain after melting the dsDNA would not encumber these transitions because the turns can diffuse into the flanking dsDNA and be removed by topoisomerases (Postow et al., 1999). For example, the two CMG-Mcm10 complexes may rotate in opposite directions relative to one another, following the contour of the DNA (Figure 6), or the DNAs may rotate while the head-to-head CMG-Mcm10\u2019s remain stationary. In either case, the turns in the melted DNA will be pushed out the C-face of each CMG-Mcm10 complex to yield supercoils for topoisomerase action. Once the CMGs pass one another, they have been demonstrated to recruit Pol\u00a0\u03b1-primase to form primed sites that, upon extension, become leading strands (Aria and Yeeles, 2019).\n\nDespite the knowledge gained by the current report, it will require further study to understand the exact details in these last steps in origin initiation in which the CMGs unwind DNA while encircling dsDNA and transition to encircling ssDNA for bidirectional replication. Not only do we require further information on the exact role of Mcm10, but the presumed ssDNA gate has yet to be identified. In fact, many of the preceding steps leading up to assembly of CMG are still not characterized in molecular detail. These include the structural transitions of Mcm2-7 that occur upon DDK phosphorylation that enable it to bind Sld3/7 and Cdc45; the structure of the Mcm2-7-Sld3/7-Cdc45 intermediate; and the structure of the Dbp11-Sld2-Sld3 complex and its interaction with GINS and Pol \u03b5, all of which are required to form CMG from its component parts. Clearly, there is much more to be learned about origin initiation, and given the conservation of the factors involved in higher eukaryotes, the processes discovered in S. cerevisiae will likely generalize.\n\n## Materials and methods\n\n### Reagents and proteins\n\nRadioactive nucleotides were from Perkin Elmer and unlabeled nucleotides were from GE Healthcare. DNA modification enzymes were from New England Biolabs. DNA oligonucleotides were from Integrated DNA Technologies except for those with methylphosphonate linkages which were from Biosynthesis (Lewisville, TX). CMG and Mcm10 were overexpressed and purified as previously described (Georgescu et al., 2014; Langston et al., 2017; Langston et al., 2014). Protein concentrations were determined using the Bio-Rad Bradford Protein stain using BSA as a standard.\n\n### DNA substrates\n\nFor all radiolabeled oligonucleotides, 10 pmol of oligonucleotide was labeled at the 5\u2019 terminus with 0.05 mCi [\u03b3-32P]-ATP using T4 Polynucleotide Kinase (New England Biolabs) in a 25 \u03bcl reaction for 30\u2019 at 37\u00b0C according to the manufacturer\u2019s instructions. The kinase was heat inactivated for 20\u2019 at 80\u00b0C.\n\nFor annealing, 4 pmol of the radiolabeled strand was mixed with 6 pmol of unlabeled complementary strand(s), NaCl was added to a final concentration of 200 mM, and the mixture was heated to 90\u00b0C and then cooled to room temperature over a time frame of\u00a0>1 hr. DNA oligonucleotides used in this study are listed in Supplementary file 1.\n\nThe T20 substrate in Figure 2 was made by annealing unlabeled oligos T20A and T20B to radiolabeled T20C. Likewise, the T30 substrate was made by annealing unlabeled T30A and T30B to radiolabeled T30C; and the T60 substrate was made by annealing unlabeled T60A and T60B to radiolabeled T60C. See Supplementary file 1 for oligo sequences.\n\nThe substrates in Figure 3B were made exactly as the T30 substrate in Figure 2 except that oligo \u2018T30B MP\u2019 was substituted for T30B for the substrate with methylphosphonates in the 5\u2019\u22123\u2019 strand and oligo \u2018T30A MP\u2019 was substituted for T30A for the substrate with methylphosphonates in the 3\u2019\u22125\u2019 strand. See Supplementary file 1 for oligo sequences.\n\nThe substrates in Figure 4B were made by annealing unlabeled \u2018ORI Bottom 3\u2019 tail\u2019 to radiolabeled \u2018ORI Top 3\u2019 tail\u2019 (lanes 1\u20135); unlabeled \u2018ORI Bottom no tail\u2019 to radiolabeled \u2018ORI Top 3\u2019 tail\u2019 (lanes 6\u201310); and unlabeled \u2018ORI Top no tail\u2019 to radiolabeled \u2018ORI Bottom 3\u2019 tail\u2019 (lanes 11\u201315). See Supplementary file 1 for oligo sequences.\n\nThe substrate in Figure 5 was made in two stages. First, unlabeled T50B was annealed to radiolabeled T50A as indicated above. Then T50C and T50D were added and the mixture was incubated 10\u2019 at 30\u00b0C to form the full T50ABCD substrate.\n\n### DNA unwinding assays\n\nUnless otherwise noted, all reactions were performed at 30\u00b0C and contained (final concentrations) 20 nM CMG and 40 nM Mcm10 with 0.5 nM radiolabeled DNA substrate in a buffer consisting of 20 mM Tris Acetate pH 7.6, 5 mM DTT, 0.1 mM EDTA, 10 mM MgSO4, 20 mM KCl, 40 \u03bcg/ml BSA and 1 mM ATP.\n\nFor the T-substrate assays in Figures 2 and 3, CMG was pre-incubated with the DNA substrate for 10\u2019 at 30\u00b0C in the absence of ATP and the reaction was started by addition of ATP and, where indicated, Mcm10, in a final volume of 80 \u03bcl. To prevent re-annealing of the unwound radiolabeled DNA, an unlabeled version of the radiolabeled oligo (T20C, T30C or T60C depending on the substrate; see Supplementary file 1 for oligo sequences) was added as a trap 1\u2019 after starting the reaction to a final concentration of 20 nM. At the indicated times, 12 \u03bcl reaction aliquots were removed, stopped with 4 \u03bcl STOP/LOAD buffer containing 0.1M EDTA, 5% SDS, 25% glycerol, and 0.01% each of xylene cyanol and bromophenol blue, and flash frozen in liquid nitrogen. Upon completion of the reaction, flash frozen reaction products were thawed quickly in water at room temperature and separated on 10% native PAGE minigels by electrophoresis at 100V for 75 min in TBE buffer. Gels were washed in distilled water, mounted on Whatman 3 MM paper, wrapped in plastic and exposed to a phosphor screen that was scanned on a Typhoon 9400 laser imager (GE Healthcare). Scanned gels were analyzed using ImageQuant TL v2005 software.\n\nReactions using the flapped substrate in Figure 5 were performed as described for Figure 2 except the reaction volume was 110 \u03bcl and two unlabeled trap oligos (T50A and T50E, see Supplementary file 1) were used to prevent re-annealing of any unwound substituents and preserve the three potential products of the reaction. Reaction aliquots (10 \u03bcl) were stopped at the indicated times by addition of 4 \u03bcl of buffer containing 150 mM EDTA/7% SDS. 1 \u03bcl Proteinase K was added and the mixture was incubated 10\u2019 at 30\u00b0 C after which 3 \u03bcl STOP/LOAD buffer was added and the sample was flash frozen in liquid nitrogen. Upon completion of the reaction, frozen reaction products were thawed and processed as described above. Samples were separated on 5% native PAGE minigels by electrophoresis at 80V for 80 min in TBE buffer.\n\nFor the reactions in Figure 4, 40 nM CMG was pre-incubated with the DNA substrate for 1\u2019 at 30\u00b0C in the absence of ATP and then ATP was added to allow CMG to load onto the 3\u2019 tails and thread onto the duplex DNA substrate. The total reaction volume was 55 \u03bcl. Mcm10 was added along with ATP to a final concentration of 80 nM followed 45\u2019 later by addition of an unlabeled trap oligo (\u2018ORI Bottom 5\u2019 tail\u2019 at 20 nM final, see Supplementary file 1) that binds to the unwound radiolabeled DNA and shifts it to a unique position in the native PAGE gel. For the reaction in lanes 11\u201316, the trap was \u2018ORI Top 5\u2019 tail\u2019 (Supplementary file 1). At the indicated times following ATP/Mcm10 addition, 10 \u03bcl reaction aliquots were removed and stopped by addition of 4 \u03bcl of buffer containing 150 mM EDTA/7% SDS. 1 \u03bcl Proteinase K was added and the mixture was incubated 10\u2019 at 30\u00b0 C after which 3 \u03bcl STOP/LOAD buffer was added and the sample was flash frozen in liquid nitrogen. Upon completion of the reaction, frozen reaction products were thawed and processed as described above for the reactions of Figure 2 except that electrophoresis was at 100V for 120 min.\n",
+      "created_at": "2025-12-02T11:02:36.163178Z"
+    },
+    {
+      "id": "69430eeb-a0f7-41f1-ab5f-57396a08e58c",
+      "submission_id": "edeeece1-e358-4516-b10d-f718d6db0828",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- James M Berger, Johns Hopkins University School of Medicine United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.46515.021](https://doi.org/10.7554/eLife.46515.021)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"An explanation for origin unwinding in eukaryotes\" for consideration by eLife. Your article has been reviewed by two peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Cynthia Wolberger as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThe present paper investigates the mechanism of origin unwinding by the S. cerevisiae CMG helicase and role of MCM10 using a number of clever biochemical experiments. The major conclusions drawn from these studies are that the CMG tracks mainly along the 3'-5' strand of dsDNA to unwind the strands, and that MCM10 helps the CMG in creating added force to unwind a long stretch of dsDNA, which in turn enables the CMG to switch from dsDNA to ssDNA. While some of these conclusions are well supported by experiments, others such as CMG switching strands and added force production by MCM10 require additional considerations.\n\nEssential revisions:\n\n1) There is no direct evidence that MCM10 provides additional force to unwind the DNA per se. Figure 2 shows that CMG unwinds the T-junction substrate with a higher efficiency in the presence of MCM10, and from these results, it is concluded that CMG+MCM10 translocates with more force than CMG alone while encircling dsDNA. This is an intellectual jump, as the assay simply shows an increase in the yield of the unwound products, which could simply be due to more active or stable CMG and DNA complexes in the presence of MCM10. Controls should be performed to rule out this possibility. The authors should also elaborate what is meant by force production. Is it that the processivity of CMG is greater with MCM10, or is it that the ATPase is more efficient, translocation along DNA is faster, etc.? If controls cannot be done then force production explanation should be toned down and other possible explanations provided.\n\n2) Figure 4 shows that the CMG and MCM10 can unwind a 150 bp dsDNA with two ssDNA tails and the cartoon shows that this happens with two opposing MCMs. This may be misleading. There is no evidence that only two MCMs are loaded on the DNA and not an array of MCMs. Also, the cartoon shows that unwinding happens by a strand switching mechanism. However, opposing MCMs could unwind without strand switching by pulling the two DNA strands in the opposite 3'-5' directions to shearing the base pairs. Evidence should be provided that only two CMGs are loaded on the 150 bp duplex DNA under the conditions of the experiment, as illustrated in the figure, otherwise the figure and the interpretation should be revised.\n\n3) Figure 5 shows that CMG unwinds a broken T-junction substrate to produce mainly the ABC product. This is interpreted to be due to strand switching, but again MCM might be able to pull in the 3'-5 direction on strand A (as shown in Figure 2A) and since C and D are not linked, the reaction will unwind strand D without strand switching. For example, the helicase might pull on the 3'-5' strand while still encircling dsDNA and catalyzing unwinding, which would cause the yellow colored DNA arm in the 3'-3' experiment to give the ABC (strand switch) product. It's unclear whether there is a straightforward experiment to prove strand switching, but the authors should discuss alternative ways in which their substrates could be unwound in the assay that does not involve such a mechanism.\n\nBy way of illustration, consider the effects of the addition of trap C (as mentioned in the Results), which could give rise to the product expected from the strand switching model (see the attached annotated copy of the model for clarification). This experiment should be run and evaluated without trap C. Also, please indicate, within the figures in the main text, which traps were used in the experiments and how much of them, and what final products would be formed from trap annealing to the unwinding products.\n\n4) Regardless whether all of the requested controls can be performed, then the phrase 'strand switching' is probably not the most accurate way to describe the authors' preferred process. The model as depicted doesn't show any change in the strands that the CMG translocates along \u2013 it's always the same 3'-5' strand (e.g., 'Watson'). To truly switch, the CMG would have to jump tracks to operate on 'Crick,' as has been proposed for SF1 and SF2 helicases based on certain some single molecule experiments. What the authors seem to be proposing is really 'strand expulsion', not switching. This phrasing should be clarified.\n",
+      "created_at": "2025-12-02T11:02:36.163178Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T11:02:36.163178Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T11:02:36.163178Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "7d416577-abc0-4fc7-aad5-3d6bd01bd4da",
+      "content_id": "e67e0261-4560-434d-96fd-aece016a9d47",
+      "claim_id": "C1",
+      "claim": "Twin CMG complexes are assembled head-to-head around duplex DNA at eukaryotic origins of replication.",
+      "claim_type": "EXPLICIT",
+      "source": "Twin CMG complexes are assembled head-to-head around duplex DNA at eukaryotic origins of replication.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by citations in the introduction regarding CMG assembly at origins.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:02:36.163178Z"
+    },
+    {
+      "id": "59c9ec78-41ae-4e59-8376-14d01f043882",
+      "content_id": "e67e0261-4560-434d-96fd-aece016a9d47",
+      "claim_id": "C2",
+      "claim": "Mcm10 activates CMGs to form helicases that encircle single-strand (ss) DNA and initiate bidirectional forks.",
+      "claim_type": "EXPLICIT",
+      "source": "Mcm10 activates CMGs to form helicases that encircle single-strand (ss) DNA and initiate bidirectional forks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by multiple citations in the introduction (Douglas et al., 2018; Heller et al., 2011; Kanke et al., 2012; van Deursen et al., 2012; Watase et al., 2012; Yeeles et al., 2015).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:02:36.163178Z"
+    },
+    {
+      "id": "ab5945f9-bdea-44d1-95c1-6b815bb4f27d",
+      "content_id": "e67e0261-4560-434d-96fd-aece016a9d47",
+      "claim_id": "C3",
+      "claim": "S. cerevisiae CMG tracks with force while encircling double-stranded (ds) DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we show that S. cerevisiae CMG tracks with force while encircling double-stranded (ds) DNA",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated experimentally in Figure 2 using T-substrates that require force to melt non-homologous arms.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:02:36.163178Z"
+    },
+    {
+      "id": "e1e7f3ae-ae1d-4125-82e5-1c3afc5bdb56",
+      "content_id": "e67e0261-4560-434d-96fd-aece016a9d47",
+      "claim_id": "C4",
+      "claim": "In the presence of Mcm10, CMG melts long blocks of dsDNA while it encircles dsDNA.",
+      "claim_type": "EXPLICIT",
+      "source": "in the presence of Mcm10 the CMG melts long blocks of dsDNA while it encircles dsDNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated experimentally in Figures 2 and 4, showing CMG+Mcm10 can melt up to 60 bp (Figure 2) and 150 bp (Figure 4) of dsDNA.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:02:36.163178Z"
+    },
+    {
+      "id": "9c0dcf67-3dda-4f89-9758-c682b1b4689b",
+      "content_id": "e67e0261-4560-434d-96fd-aece016a9d47",
+      "claim_id": "C5",
+      "claim": "CMG tracks mainly on the 3'\u22125' strand during duplex translocation.",
+      "claim_type": "EXPLICIT",
+      "source": "We demonstrate that CMG tracks mainly on the 3'\u22125' strand during duplex translocation",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated experimentally in Figure 3 using methylphosphonate linkages on either strand, showing reduced unwinding when methylphosphonates are on the 3'-5' strand.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:02:36.163178Z"
+    },
+    {
+      "id": "4614c313-360d-4b03-a499-fd088c372565",
+      "content_id": "e67e0261-4560-434d-96fd-aece016a9d47",
+      "claim_id": "C6",
+      "claim": "Head-to-head CMGs at an origin exert force on opposite strands.",
+      "claim_type": "EXPLICIT",
+      "source": "predicting that head-to-head CMGs at an origin exert force on opposite strands.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the finding that CMG tracks mainly on the 3'-5' strand and the head-to-head orientation of CMGs at origins.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:02:36.163178Z"
+    },
+    {
+      "id": "218c82c5-a269-41a6-add1-5d998c001c3e",
+      "content_id": "e67e0261-4560-434d-96fd-aece016a9d47",
+      "claim_id": "C7",
+      "claim": "CMGs that encircle double strand DNA in a head-to-head orientation melt the duplex in an Mcm10-dependent reaction.",
+      "claim_type": "EXPLICIT",
+      "source": "we show that CMGs that encircle double strand DNA in a head-to-head orientation melt the duplex in an Mcm10-dependent reaction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated experimentally in Figure 4 using a two-tailed substrate that allows loading of head-to-head CMGs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:02:36.163178Z"
+    },
+    {
+      "id": "d872ab7c-dee1-4e4e-95ad-acc8d09cab26",
+      "content_id": "e67e0261-4560-434d-96fd-aece016a9d47",
+      "claim_id": "C8",
+      "claim": "Cellular replicative DNA helicases are hexameric ring-shaped motors that track on single-strand (ss) DNA, acting as a wedge to unwind the duplex.",
+      "claim_type": "EXPLICIT",
+      "source": "Cellular replicative DNA helicases are hexameric ring-shaped motors that track on single-strand (ss) DNA, acting as a wedge to unwind the duplex (Lyubimov et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Lyubimov et al., 2011.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:02:36.163178Z"
+    },
+    {
+      "id": "ea071e62-c607-47db-902d-e34e32d20e61",
+      "content_id": "e67e0261-4560-434d-96fd-aece016a9d47",
+      "claim_id": "C9",
+      "claim": "In bacteria, the circular helicase is a homohexamer that directly assembles onto an AT-rich ssDNA region melted by initiator proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "In bacteria, the circular helicase is a homohexamer that directly assembles onto an AT-rich ssDNA region melted by initiator proteins",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about bacterial replication initiation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:02:36.163178Z"
+    },
+    {
+      "id": "2c1603d5-e3e3-4124-afcb-5c6711fbc72b",
+      "content_id": "e67e0261-4560-434d-96fd-aece016a9d47",
+      "claim_id": "C10",
+      "claim": "In eukaryotes, the origin recognition complex (ORC) does not unwind DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "but in eukaryotes the origin recognition complex (ORC) does not unwind DNA (Bleichert et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Bleichert et al., 2017.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:02:36.163178Z"
+    },
+    {
+      "id": "27168516-385c-4a49-abc1-aaada7322394",
+      "content_id": "e67e0261-4560-434d-96fd-aece016a9d47",
+      "claim_id": "C11",
+      "claim": "In G1-phase, two Mcm2-7 hexamer rings are assembled head-to-head (N-to-N) around double-strand (ds) DNA by ORC, Cdt1 and Cdc6.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, in G1-phase, two Mcm2-7 hexamer rings are assembled head-to-head (N-to-N) around double-strand (ds) DNA by ORC, Cdt1 and Cdc6 (Bell and Labib, 2016; Evrin et al., 2009; O'Donnell et al., 2013; Remus et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations (Bell and Labib, 2016; Evrin et al., 2009; O'Donnell et al., 2013; Remus et al., 2009).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:02:36.163178Z"
+    },
+    {
+      "id": "1f17fb29-c236-4273-9965-d424675ebc37",
+      "content_id": "e67e0261-4560-434d-96fd-aece016a9d47",
+      "claim_id": "C12",
+      "claim": "In S-phase, additional factors assemble Cdc45 and GINS onto each Mcm2-7 to form two replicative helicases on dsDNA oriented head-to-head.",
+      "claim_type": "EXPLICIT",
+      "source": "In S-phase, additional factors assemble Cdc45 and GINS onto each Mcm2-7 to form two replicative helicases on dsDNA oriented head-to-head (Ilves et al., 2010; Moyer et al., 2006; Parker et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations (Ilves et al., 2010; Moyer et al., 2006; Parker et al., 2017).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:02:36.163178Z"
+    },
+    {
+      "id": "b1535e58-4a28-42e7-8c26-397a23191805",
+      "content_id": "e67e0261-4560-434d-96fd-aece016a9d47",
+      "claim_id": "C13",
+      "claim": "Each CMG helicase contains 11 different subunits.",
+      "claim_type": "EXPLICIT",
+      "source": "Each helicase contains 11 different subunits",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a fact about CMG composition.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:02:36.163178Z"
+    },
+    {
+      "id": "61b66539-800c-40cf-a853-64a7a5ec4bf9",
+      "content_id": "e67e0261-4560-434d-96fd-aece016a9d47",
+      "claim_id": "C14",
+      "claim": "The term CMG was coined because it contains Cdc45, Mcm2-7, and the four subunit GINS complex.",
+      "claim_type": "EXPLICIT",
+      "source": "the term CMG (Cdc45, Mcm2-7, GINS) was coined because it contains Cdc45, Mcm2-7, and the four subunit GINS complex (Ilves et al., 2010; Moyer et al., 2006; Parker et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations (Ilves et al., 2010; Moyer et al., 2006; Parker et al., 2017).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:02:36.163178Z"
+    },
+    {
+      "id": "38ac36b0-d117-4315-8d40-c8c3c7cc2464",
+      "content_id": "e67e0261-4560-434d-96fd-aece016a9d47",
+      "claim_id": "C15",
+      "claim": "Mcm10 is required to activate each CMG to encircle ssDNA for bidirectional replication.",
+      "claim_type": "EXPLICIT",
+      "source": "Mcm10 is required to activate each CMG to encircle ssDNA for bidirectional replication (Douglas et al., 2018; Heller et al., 2011; Kanke et al., 2012; van Deursen et al., 2012; Watase et al., 2012; Yeeles et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations (Douglas et al., 2018; Heller et al., 2011; Kanke et al., 2012; van Deursen et al., 2012; Watase et al., 2012; Yeeles et al., 2015).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:02:36.163178Z"
+    },
+    {
+      "id": "16c39b53-87da-4fb0-b16a-6047c2ad42a3",
+      "content_id": "e67e0261-4560-434d-96fd-aece016a9d47",
+      "claim_id": "C16",
+      "claim": "Recent electron microscopy (EM) studies of Saccharomyces cerevisiae (S.c.) CMG at a replication fork show that CMG tracks on ssDNA with its N-tier facing the fork.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent electron microscopy (EM) studies of Saccharomyces cerevisiae (S.c.) CMG at a replication fork show that CMG tracks on ssDNA with its N-tier facing the fork (Douglas et al., 2018; Georgescu et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to EM studies (Douglas et al., 2018; Georgescu et al., 2017).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:02:36.163178Z"
+    },
+    {
+      "id": "aaa51fbb-6371-47c7-aa70-f0732b4a496b",
+      "content_id": "e67e0261-4560-434d-96fd-aece016a9d47",
+      "claim_id": "C17",
+      "claim": "N-first movement of CMG implies that head-to-head CMGs at the origin are directed toward one another when assembled around duplex DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "N-first movement of CMG implies that head-to-head CMGs at the origin are directed toward one another when assembled around duplex DNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference from the N-first movement observation.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:02:36.163178Z"
+    },
+    {
+      "id": "01c6a69b-1ab5-4a04-9f9a-3aaf5873e3be",
+      "content_id": "e67e0261-4560-434d-96fd-aece016a9d47",
+      "claim_id": "C18",
+      "claim": "Each CMG blocks the forward movement of the other when oriented head-to-head at origins.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, each CMG blocks the forward movement of the other",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the head-to-head orientation and N-first movement.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:02:36.163178Z"
+    },
+    {
+      "id": "1a705f67-7b07-45df-ae9b-43ed933e53de",
+      "content_id": "e67e0261-4560-434d-96fd-aece016a9d47",
+      "claim_id": "C19",
+      "claim": "The duplex must be unwound a sufficient distance for both CMGs to expel one strand for their transition from dsDNA to ssDNA.",
+      "claim_type": "EXPLICIT",
+      "source": "and the duplex must be unwound a sufficient distance for both CMGs to expel one strand for their transition from dsDNA to ssDNA, which they must do to pass one another and form bidirectional forks",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference about the requirements for CMG to transition from dsDNA to ssDNA.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:02:36.163178Z"
+    },
+    {
+      "id": "53fd5681-cc73-460a-b27a-ee91df439029",
+      "content_id": "e67e0261-4560-434d-96fd-aece016a9d47",
+      "claim_id": "C20",
+      "claim": "The last steps of origin initiation require the Mcm10 protein.",
+      "claim_type": "EXPLICIT",
+      "source": "These last steps of origin initiation require the Mcm10 protein (Douglas et al., 2018; Kanke et al., 2012; van Deursen et al., 2012; Watase et al., 2012; Yeeles et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations (Douglas et al., 2018; Kanke et al., 2012; van Deursen et al., 2012; Watase et al., 2012; Yeeles et al., 2015).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:02:36.163178Z"
+    },
+    {
+      "id": "5269ee5d-d17a-4219-a62f-684c4f3864b9",
+      "content_id": "e67e0261-4560-434d-96fd-aece016a9d47",
+      "claim_id": "C21",
+      "claim": "Mcm10 contains a DNA binding region.",
+      "claim_type": "EXPLICIT",
+      "source": "Mcm10 contains a DNA binding region (Warren et al., 2008)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Warren et al., 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:02:36.163178Z"
+    },
+    {
+      "id": "c385ab7a-7d4a-48ad-89c5-0e22badfb7c5",
+      "content_id": "e67e0261-4560-434d-96fd-aece016a9d47",
+      "claim_id": "C22",
+      "claim": "Interaction between Mcm10 and the N-terminal regions of Mcm2 and Mcm6 has been demonstrated.",
+      "claim_type": "EXPLICIT",
+      "source": "and interaction with the N-terminal regions of Mcm2 and Mcm6 has been demonstrated (Douglas and Diffley, 2016; L\u00f5oke et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations (Douglas and Diffley, 2016; L\u00f5oke et al., 2017).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:02:36.163178Z"
+    },
+    {
+      "id": "3c9afe99-c9e7-4f55-a26b-b574a30be5a4",
+      "content_id": "e67e0261-4560-434d-96fd-aece016a9d47",
+      "claim_id": "C23",
+      "claim": "Cross-linking/mass spectrometry studies reveal a large surface area of CMG-Mcm10 interaction that includes 6 of the 11 CMG subunits.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent cross-linking/mass spectrometry studies reveal a large surface area of CMG-Mcm10 interaction that includes 6 of the 11 CMG subunits, mostly at the N-surface of CMG but also many sites at the edges and C-surface of CMG (Mayle et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Mayle et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:02:36.163178Z"
+    },
+    {
+      "id": "19a43dc7-707e-4eb4-9442-4bb7903cdc03",
+      "content_id": "e67e0261-4560-434d-96fd-aece016a9d47",
+      "claim_id": "C24",
+      "claim": "Recent studies demonstrate a disruption of tight connections between the Mcm2-7 hexamers upon maturation to CMGs.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent studies of CMG formation at origins demonstrate a disruption of tight connections between the Mcm2-7 hexamers upon maturation to CMGs and untwisting of ~0.7 turns of the double helix per CMG (Douglas et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Douglas et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:02:36.163178Z"
+    },
+    {
+      "id": "bec16705-e674-47d6-8f16-c991cd596d3a",
+      "content_id": "e67e0261-4560-434d-96fd-aece016a9d47",
+      "claim_id": "C25",
+      "claim": "CMG formation at origins results in untwisting of ~0.7 turns of the double helix per CMG.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent studies of CMG formation at origins demonstrate a disruption of tight connections between the Mcm2-7 hexamers upon maturation to CMGs and untwisting of ~0.7 turns of the double helix per CMG (Douglas et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Douglas et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:02:36.163178Z"
+    },
+    {
+      "id": "4e5bf35f-4f61-4970-98a5-f5a366c44408",
+      "content_id": "e67e0261-4560-434d-96fd-aece016a9d47",
+      "claim_id": "C26",
+      "claim": "The observed untwisting of 0.7 turns per CMG is too little for CMG to transition to ssDNA.",
+      "claim_type": "EXPLICIT",
+      "source": "However, even if the observed untwisting was due to actual DNA melting, it is too little for CMG to transition to ssDNA (Douglas et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the data from Douglas et al., 2018.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:02:36.163178Z"
+    },
+    {
+      "id": "608feb38-dabb-40ee-b232-ceebda7b5176",
+      "content_id": "e67e0261-4560-434d-96fd-aece016a9d47",
+      "claim_id": "C27",
+      "claim": "CMG and Mcm10 together produce sufficient force to open several turns of the duplex while encircling dsDNA.",
+      "claim_type": "EXPLICIT",
+      "source": "In this report we use recombinant CMG and Mcm10 and find that, together, they produce sufficient force to open several turns of the duplex while encircling dsDNA",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated experimentally in Figures 2 and 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:02:36.163178Z"
+    },
+    {
+      "id": "0e8cfd58-0071-4350-8b4d-c9db230a92b6",
+      "content_id": "e67e0261-4560-434d-96fd-aece016a9d47",
+      "claim_id": "C28",
+      "claim": "Initial unwinding of DNA by CMG-Mcm10 can occur without the participation of other replication initiation factors.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, initial unwinding of DNA by CMG-Mcm10 can occur without the participation of other replication initiation factors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated experimentally in Figure 4 using only recombinant CMG and Mcm10.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:02:36.163178Z"
+    },
+    {
+      "id": "fd60e060-5a97-4430-88ff-02027681037c",
+      "content_id": "e67e0261-4560-434d-96fd-aece016a9d47",
+      "claim_id": "C29",
+      "claim": "CMG has only weak activity in melting 20 bp arms and cannot destabilize 30 bp or 60 bp arms without Mcm10.",
+      "claim_type": "EXPLICIT",
+      "source": "CMG has only weak activity in melting the 20 bp arms and cannot destabilize the 30 bp or 60 bp arms (Figure 2B,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated experimentally in Figure 2B and 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:02:36.163178Z"
+    },
+    {
+      "id": "1e5110e4-c1c9-4702-aa8f-0c1045ab98bc",
+      "content_id": "e67e0261-4560-434d-96fd-aece016a9d47",
+      "claim_id": "C30",
+      "claim": "Upon adding Mcm10, CMG unwound all three T-substrates (T20, T30, and T60).",
+      "claim_type": "EXPLICIT",
+      "source": "However, upon adding Mcm10, CMG unwound all three T-substrates (Figure 2C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated experimentally in Figure 2C and 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:02:36.163178Z"
+    },
+    {
+      "id": "73e3d65a-d694-4d74-8c8a-3a0c221dfa60",
+      "content_id": "e67e0261-4560-434d-96fd-aece016a9d47",
+      "claim_id": "C31",
+      "claim": "Mcm10 alone has no activity in T-substrate unwinding assays.",
+      "claim_type": "EXPLICIT",
+      "source": "Mcm10 alone has no activity in these assays (Figure 2\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated experimentally in Figure 2\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:02:36.163178Z"
+    },
+    {
+      "id": "ad6c4394-95e9-42e2-8853-88a42d6cb233",
+      "content_id": "e67e0261-4560-434d-96fd-aece016a9d47",
+      "claim_id": "C32",
+      "claim": "Mcm10 stimulates CMG helicase activity.",
+      "claim_type": "EXPLICIT",
+      "source": "The results are consistent with prior studies showing Mcm10 stimulates CMG helicase activity",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is consistent with prior studies and supported by the current experimental data.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:02:36.163178Z"
+    },
+    {
+      "id": "7010a070-fe3c-4f76-ae6a-0021d629a4e9",
+      "content_id": "e67e0261-4560-434d-96fd-aece016a9d47",
+      "claim_id": "C33",
+      "claim": "Mcm10 enhances CMG processivity during unwinding.",
+      "claim_type": "EXPLICIT",
+      "source": "enhances CMG processivity during unwinding (Langston et al., 2017; L\u00f5oke et al., 2017)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations (Langston et al., 2017; L\u00f5oke et al., 2017).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:02:36.163178Z"
+    },
+    {
+      "id": "a2e827bb-7282-497a-ab19-b805fa1cb34b",
+      "content_id": "e67e0261-4560-434d-96fd-aece016a9d47",
+      "claim_id": "C34",
+      "claim": "The extent of unwinding decreases as the length of the non-homologous arms increases.",
+      "claim_type": "EXPLICIT",
+      "source": "The extent of unwinding decreases as the length of the non-homologous arms increases",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in the experimental data from Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:02:36.163178Z"
+    },
+    {
+      "id": "7d8c57f0-a4f2-435d-a163-20896f3e0a4d",
+      "content_id": "e67e0261-4560-434d-96fd-aece016a9d47",
+      "claim_id": "C35",
+      "claim": "The phi29 DNA packaging motor tracks on only one strand while encircling dsDNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Two of the most well-studied examples are the phi29 DNA packaging motor, which tracks on only one strand while encircling dsDNA (Aathavan et al., 2009)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Aathavan et al., 2009.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:02:36.163178Z"
+    },
+    {
+      "id": "cff07a9d-3a0b-4507-b4fa-bd060219284a",
+      "content_id": "e67e0261-4560-434d-96fd-aece016a9d47",
+      "claim_id": "C36",
+      "claim": "The bacterial clamp loader surrounds dsDNA but contacts only one strand.",
+      "claim_type": "EXPLICIT",
+      "source": "and the bacterial clamp loader that also surrounds dsDNA but contacts only one strand (Simonetta et al., 2009)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Simonetta et al., 2009.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:02:36.163178Z"
+    },
+    {
+      "id": "807cb263-661e-42dd-9cb6-c791a42f4120",
+      "content_id": "e67e0261-4560-434d-96fd-aece016a9d47",
+      "claim_id": "C37",
+      "claim": "The cryoEM structure of CMG on forked DNA shows that the translocation strand adopts a B-form spiral shape in the motor domains.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, the cryoEM structure of CMG on forked DNA shows that the translocation strand adopts a B-form spiral shape in the motor domains (Figure 3\u2014figure supplement 1), implying that the motors need not alter conformation to encircle dsDNA (Abid Ali et al., 2016; Georgescu et al., 2017).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by citations to cryoEM structures (Abid Ali et al., 2016; Georgescu et al., 2017) and shown in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"CITATION\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:02:36.163178Z"
+    },
+    {
+      "id": "ec520005-9769-439c-8039-310578738689",
+      "content_id": "e67e0261-4560-434d-96fd-aece016a9d47",
+      "claim_id": "C38",
+      "claim": "A spiral of ssDNA in the central channel is a common feature of all replicative helicase structures examined thus far.",
+      "claim_type": "EXPLICIT",
+      "source": "A corresponding spiral of ssDNA in the central channel is a common feature of all replicative helicase structures examined thus far (Gao et al., 2019; O'Donnell and Li, 2018; Parker et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations (Gao et al., 2019; O'Donnell and Li, 2018; Parker et al., 2017).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:02:36.163178Z"
+    },
+    {
+      "id": "fe834e8a-edc5-4acb-871f-ddd8cb3f6688",
+      "content_id": "e67e0261-4560-434d-96fd-aece016a9d47",
+      "claim_id": "C39",
+      "claim": "When methylphosphonate linkages were on the 3'\u22125' strand, duplex unwinding was significantly reduced compared to methylphosphonate linkages on the opposite strand.",
+      "claim_type": "EXPLICIT",
+      "source": "When the methylphosphonate linkages were on the 3'\u22125' strand in the direction of unwinding, duplex unwinding was significantly reduced compared to methylphosphonate linkages on the opposite strand (Figure 3B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated experimentally in Figure 3B and 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:02:36.163178Z"
+    },
+    {
+      "id": "4727c481-3004-4de8-97e4-ffdc20e5a245",
+      "content_id": "e67e0261-4560-434d-96fd-aece016a9d47",
+      "claim_id": "C40",
+      "claim": "In the inactive Mcm2-7 double hexamer, each ring makes an equal number of contacts with the 3'\u22125' and 5'\u22123' strands.",
+      "claim_type": "EXPLICIT",
+      "source": "This is noteworthy given that in the inactive Mcm2-7 double hexamer, each ring makes an equal number of contacts with the 3'\u22125' and 5'\u22123' strands (Abid Ali et al., 2017; Noguchi et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations (Abid Ali et al., 2017; Noguchi et al., 2017).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:02:36.163178Z"
+    },
+    {
+      "id": "1779d7e5-0d64-4106-92e3-7b895d61b54d",
+      "content_id": "e67e0261-4560-434d-96fd-aece016a9d47",
+      "claim_id": "C41",
+      "claim": "Duplex DNA interaction by the MCM and by the CMG is fundamentally different.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, duplex DNA interaction by the MCM and by the CMG is fundamentally different.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the difference in strand contacts between inactive Mcm2-7 and active CMG.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:02:36.163178Z"
+    },
+    {
+      "id": "e1612db1-55b6-4316-85b2-4b649d428de5",
+      "content_id": "e67e0261-4560-434d-96fd-aece016a9d47",
+      "claim_id": "C42",
+      "claim": "CMG readily unwinds the two-tailed substrate in the presence of Mcm10.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 4B (lanes 1\u20135), CMG readily unwinds the two-tailed substrate in the presence of Mcm10.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated experimentally in Figure 4B, lanes 1-5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:02:36.163178Z"
+    },
+    {
+      "id": "5074bbd3-325b-44d3-b548-98fcc205e6bd",
+      "content_id": "e67e0261-4560-434d-96fd-aece016a9d47",
+      "claim_id": "C43",
+      "claim": "Unwinding of the two-tailed substrate continues well beyond the time of addition of the trap oligo.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, unwinding continues well beyond the time of addition of the trap, thereby excluding the possibility that additional CMG loading events are required for unwinding (see Figure 4B and C; also see Figure 4\u2014figure supplement 1 for effectiveness of the trap).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated experimentally in Figure 4B, 4C, and Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:02:36.163178Z"
+    },
+    {
+      "id": "716076c0-7a81-466c-b9e1-a1bb6dc2a592",
+      "content_id": "e67e0261-4560-434d-96fd-aece016a9d47",
+      "claim_id": "C44",
+      "claim": "The unwinding reaction is absolutely dependent on addition of Mcm10.",
+      "claim_type": "EXPLICIT",
+      "source": "The reaction is absolutely dependent on addition of Mcm10 (Figure 4\u2014figure supplement 2)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated experimentally in Figure 4\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:02:36.163178Z"
+    },
+    {
+      "id": "5380dd53-e467-40a4-bc37-72dcb515f15f",
+      "content_id": "e67e0261-4560-434d-96fd-aece016a9d47",
+      "claim_id": "C45",
+      "claim": "The unwinding reaction requires ATP and CMG.",
+      "claim_type": "EXPLICIT",
+      "source": "and also requires ATP and CMG (Figure 4\u2014figure supplement 3)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated experimentally in Figure 4\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:02:36.163178Z"
+    },
+    {
+      "id": "b17befcc-7b58-4ff6-bf19-8ead40ef2c0b",
+      "content_id": "e67e0261-4560-434d-96fd-aece016a9d47",
+      "claim_id": "C46",
+      "claim": "The observed unwinding is the product of CMG's ATP-dependent motor activity coupled to Mcm10 function rather than the product of either CMG or Mcm10 acting separately.",
+      "claim_type": "EXPLICIT",
+      "source": "showing that the observed unwinding is the product of CMG's ATP-dependent motor activity coupled to Mcm10 function rather than the product of either CMG or Mcm10 acting separately.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the experimental controls showing both CMG and Mcm10 are required.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:02:36.163178Z"
+    },
+    {
+      "id": "33c39cb3-9ff5-4624-b227-d8fa969ca247",
+      "content_id": "e67e0261-4560-434d-96fd-aece016a9d47",
+      "claim_id": "C47",
+      "claim": "The reaction requires loading of head-to-head CMG complexes because duplexes with only a single CMG loading tail at one end or the other were essentially inactive compared to the two-tailed substrate.",
+      "claim_type": "EXPLICIT",
+      "source": "The reaction also requires loading of head-to-head CMG complexes because duplexes with only a single CMG loading tail at one end or the other were essentially inactive compared to the two-tailed substrate (Figure 4B, lanes 6\u201315 and Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated experimentally in Figure 4B (lanes 6-15) and Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:02:36.163178Z"
+    },
+    {
+      "id": "f8574ef6-1fe9-41f2-be89-73797d23875c",
+      "content_id": "e67e0261-4560-434d-96fd-aece016a9d47",
+      "claim_id": "C48",
+      "claim": "Head-to-head CMG complexes, along with Mcm10, can perform the DNA melting required at origins of replication without the participation of any other factors.",
+      "claim_type": "EXPLICIT",
+      "source": "In overview, these results demonstrate that head-to-head CMG complexes, along with Mcm10, can perform the DNA melting required at origins of replication without the participation of any other factors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated experimentally in Figure 4 using only recombinant CMG and Mcm10.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:02:36.163178Z"
+    },
+    {
+      "id": "9200e31d-a421-4f04-9a94-dc1a9e1ccba3",
+      "content_id": "e67e0261-4560-434d-96fd-aece016a9d47",
+      "claim_id": "C49",
+      "claim": "The results are consistent with the action of two independent CMGs colliding with one another on dsDNA, in contrast to the highly interconnected and interdependent but inactive Mcm2-7 complexes within the double hexamer.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the results are consistent with the action of two independent CMGs colliding with one another on dsDNA, in contrast to the highly interconnected and interdependent but inactive Mcm2-7 complexes within the double hexamer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the experimental results showing independent CMG loading and activity.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:02:36.163178Z"
+    },
+    {
+      "id": "533f53bc-fc3b-43b9-80c9-2cc847cce5d8",
+      "content_id": "e67e0261-4560-434d-96fd-aece016a9d47",
+      "claim_id": "C51",
+      "claim": "The product expected for CMG encircling dsDNA and melting both arms simultaneously was ~10% of total substrate.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the product expected for CMG encircling dsDNA and melting both arms simultaneously was ~10% of total substrate (*AB in Figure 5B,C), as observed in Figure 2 for the 60 bp arm substrate.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated experimentally in Figure 5B and 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:02:36.163178Z"
+    },
+    {
+      "id": "14b4ae7e-7dd2-44a7-9d6c-5da51ed78b77",
+      "content_id": "e67e0261-4560-434d-96fd-aece016a9d47",
+      "claim_id": "C52",
+      "claim": "Continuous ssDNA translocation during the entire experiment was a minor outcome (~5%).",
+      "claim_type": "EXPLICIT",
+      "source": "Continuous ssDNA translocation during the entire experiment was a minor outcome (~5%, *A in Figure 5B,C)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated experimentally in Figure 5B and 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:02:36.163178Z"
+    },
+    {
+      "id": "cf525ba0-b168-4fc7-974f-a51e53261f66",
+      "content_id": "e67e0261-4560-434d-96fd-aece016a9d47",
+      "claim_id": "C53",
+      "claim": "A ssDNA gate was previously demonstrated for Drosophila CMG.",
+      "claim_type": "EXPLICIT",
+      "source": "While we cannot distinguish between these two mechanisms, we note that an ssDNA gate was previously demonstrated for Drosophila CMG (Ilves et al., 2010; Moyer et al., 2006)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations (Ilves et al., 2010; Moyer et al., 2006).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:02:36.163178Z"
+    },
+    {
+      "id": "c42c7d94-50bc-4213-bda2-39238c93caa2",
+      "content_id": "e67e0261-4560-434d-96fd-aece016a9d47",
+      "claim_id": "C54",
+      "claim": "The ssDNA gate has been shown to generalize to human CMG and S. cerevisiae CMG.",
+      "claim_type": "EXPLICIT",
+      "source": "and subsequently shown to generalize to human CMG and S. cerevisiae CMG (Kang et al., 2012; Langston and O'Donnell, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations (Kang et al., 2012; Langston and O'Donnell, 2017).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:02:36.163178Z"
+    },
+    {
+      "id": "2a60006e-d123-44fc-b4d6-0836f9d6c293",
+      "content_id": "e67e0261-4560-434d-96fd-aece016a9d47",
+      "claim_id": "C55",
+      "claim": "In single molecule studies, CMGM on dsDNA, upon encountering an RPA-coated fork, expels one strand and transitions to encircle ssDNA where it moves slowly to unwind the duplex.",
+      "claim_type": "EXPLICIT",
+      "source": "Also, in recent single molecule studies, we show that CMGMs act as individual particles and that CMGM on dsDNA, upon encountering an RPA-coated fork, expels one strand and transitions to encircle ssDNA where it moves slowly to unwind the duplex (Wasserman et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Wasserman et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:02:36.163178Z"
+    },
+    {
+      "id": "e00656ac-df70-457b-9acb-75fde0387b3c",
+      "content_id": "e67e0261-4560-434d-96fd-aece016a9d47",
+      "claim_id": "C56",
+      "claim": "CMG + Mcm10 translocates on dsDNA with sufficient force to melt at least 60 bp.",
+      "claim_type": "EXPLICIT",
+      "source": "The results presented in this report demonstrate that CMG + Mcm10 translocates on dsDNA with sufficient force to melt at least 60 bp (Figure 2)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated experimentally in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:02:36.163178Z"
+    },
+    {
+      "id": "3340e2e0-cc91-4abc-8875-dc28a663728d",
+      "content_id": "e67e0261-4560-434d-96fd-aece016a9d47",
+      "claim_id": "C57",
+      "claim": "Head-to-head CMGs can melt up to 150 bp.",
+      "claim_type": "EXPLICIT",
+      "source": "and that head-to-head CMGs can melt up to 150 bp (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated experimentally in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:02:36.163178Z"
+    },
+    {
+      "id": "203e2cb3-aeda-416c-b6fc-00c784a73e20",
+      "content_id": "e67e0261-4560-434d-96fd-aece016a9d47",
+      "claim_id": "C58",
+      "claim": "The head-to-head CMGs can be added individually and thus are uncoupled and do not need to be intimately connected as in the Mcm2-7 double hexamer.",
+      "claim_type": "EXPLICIT",
+      "source": "The head-to-head CMGs can be added individually and thus are uncoupled and do not need to be intimately connected as in the Mcm2-7 double hexamer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated experimentally in Figure 4 where CMGs are loaded independently.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:02:36.163178Z"
+    },
+    {
+      "id": "ef934d28-f77a-4d24-b501-44ae88ebea90",
+      "content_id": "e67e0261-4560-434d-96fd-aece016a9d47",
+      "claim_id": "C59",
+      "claim": "DNA melting by head-to-head CMGs directed against one another is expected to require a force of 65 pN.",
+      "claim_type": "EXPLICIT",
+      "source": "DNA melting by head-to-head CMGs directed against one another is expected to require a force of 65 pN, the force demonstrated to melt dsDNA in single-molecule experiments with optical traps attached to the ends of opposite strands of a linear duplex (King et al., 2016; van Mameren et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on citations to single-molecule experiments (King et al., 2016; van Mameren et al., 2009).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:02:36.163178Z"
+    },
+    {
+      "id": "98d20d5c-8996-4ae8-ab5e-0d1eef4d2901",
+      "content_id": "e67e0261-4560-434d-96fd-aece016a9d47",
+      "claim_id": "C60",
+      "claim": "Generation of 50\u201360 pN force has precedent in the ring-shaped FtsK segregation motor.",
+      "claim_type": "EXPLICIT",
+      "source": "Generation of 50\u201360 pN force has precedent in the ring-shaped FtsK segregation motor (Pease et al., 2005)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Pease et al., 2005.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:02:36.163178Z"
+    },
+    {
+      "id": "464e5497-a076-4a91-9559-e5461ccf3fe8",
+      "content_id": "e67e0261-4560-434d-96fd-aece016a9d47",
+      "claim_id": "C61",
+      "claim": "Generation of 50\u201360 pN force has precedent in phage packaging motors.",
+      "claim_type": "EXPLICIT",
+      "source": "and in phage packaging motors (Smith et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Smith et al., 2001.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:02:36.163178Z"
+    },
+    {
+      "id": "a2385b42-f625-4398-bae6-62167867ceca",
+      "content_id": "e67e0261-4560-434d-96fd-aece016a9d47",
+      "claim_id": "C62",
+      "claim": "In the case of origin melting, two CMG + Mcm10 are utilized and thus each CMG would only need half the 65 pN required for the ds-to-ssDNA phase transition.",
+      "claim_type": "EXPLICIT",
+      "source": "In the case of origin melting, two CMG + Mcm10 are utilized and thus each CMG would only need half the 65 pN required for the ds-to-ssDNA phase transition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference based on the force requirements and the presence of two CMGs.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:02:36.163178Z"
+    },
+    {
+      "id": "f8bf3b7f-8f67-47d8-b827-2304db67cc73",
+      "content_id": "e67e0261-4560-434d-96fd-aece016a9d47",
+      "claim_id": "C63",
+      "claim": "Bacterial origin binding proteins melt enough DNA for two hexameric helicases to assemble directly onto ssDNA.",
+      "claim_type": "EXPLICIT",
+      "source": "While bacterial origin binding proteins melt enough DNA for two hexameric helicases to assemble directly onto ssDNA",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about bacterial replication initiation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:02:36.163178Z"
+    },
+    {
+      "id": "1763ddc1-ae91-46c7-bc8d-aa71d3398e34",
+      "content_id": "e67e0261-4560-434d-96fd-aece016a9d47",
+      "claim_id": "C64",
+      "claim": "Eukaryotic ORC does not unwind DNA and instead conspires with many other factors to assemble two CMG helicases on dsDNA that are oriented head-to-head.",
+      "claim_type": "EXPLICIT",
+      "source": "eukaryotic ORC (Origin Recognition Complex) does not unwind DNA and instead conspires with many other factors to assemble two CMG helicases on dsDNA that are oriented head-to-head (Bell and Labib, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Bell and Labib, 2016.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:02:36.163178Z"
+    },
+    {
+      "id": "caa2ec45-493b-4481-a34a-992451c8ab45",
+      "content_id": "e67e0261-4560-434d-96fd-aece016a9d47",
+      "claim_id": "C65",
+      "claim": "Each CMG is demonstrated to untwist about 0.7 turns apiece.",
+      "claim_type": "EXPLICIT",
+      "source": "Each CMG is demonstrated to untwist about 0.7 turns apiece (Douglas et al., 2018)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Douglas et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:02:36.163178Z"
+    },
+    {
+      "id": "bd6d21bf-8869-4982-8a24-9515eb842ef4",
+      "content_id": "e67e0261-4560-434d-96fd-aece016a9d47",
+      "claim_id": "C66",
+      "claim": "Recent studies show that the two CMGs at an origin can drift apart in buffer lacking ATP, indicating they are no longer tightly attached as in the Mcm2-7 double hexamer and are capable of backward slippage.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, recent studies show that the two CMGs at an origin can drift apart in buffer lacking ATP, indicating they are no longer tightly attached as in the Mcm2-7 double hexamer and are capable of backward slippage (Douglas et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Douglas et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:02:36.163178Z"
+    },
+    {
+      "id": "467465f6-1648-4941-a1c8-de3be89a21c4",
+      "content_id": "e67e0261-4560-434d-96fd-aece016a9d47",
+      "claim_id": "C67",
+      "claim": "CMG-Mcm10 complex with or without a replication fork shows no additional Mcm10 density in cryoEM suggesting Mcm10 flexibility on CMG or multiple conformers of Mcm10 on CMG.",
+      "claim_type": "EXPLICIT",
+      "source": "Unfortunately, CMG-Mcm10 complex with or without a replication fork shows no additional Mcm10 density in cryoEM suggesting Mcm10 flexibility on CMG or multiple conformers of Mcm10 on CMG (Douglas et al., 2018; Mayle et al., 2019)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations (Douglas et al., 2018; Mayle et al., 2019).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:02:36.163178Z"
+    },
+    {
+      "id": "0d28f122-05c5-4363-9791-94e667048654",
+      "content_id": "e67e0261-4560-434d-96fd-aece016a9d47",
+      "claim_id": "C68",
+      "claim": "The N-terminal zinc fingers of CMG encircle and interact with both strands of duplex DNA just prior to the split point.",
+      "claim_type": "EXPLICIT",
+      "source": "We have shown previously that the N-terminal zinc fingers of CMG encircle and interact with both strands of duplex DNA just prior to the split point and that the duplex proceeds nearly straight into CMG before the leading strand enters the central channel (Georgescu et al., 2017; O'Donnell and Li, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations (Georgescu et al., 2017; O'Donnell and Li, 2018).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:02:36.163178Z"
+    },
+    {
+      "id": "26c745fc-ba7d-4c4f-a00c-81a472b767ea",
+      "content_id": "e67e0261-4560-434d-96fd-aece016a9d47",
+      "claim_id": "C69",
+      "claim": "The duplex proceeds nearly straight into CMG before the leading strand enters the central channel.",
+      "claim_type": "EXPLICIT",
+      "source": "We have shown previously that the N-terminal zinc fingers of CMG encircle and interact with both strands of duplex DNA just prior to the split point and that the duplex proceeds nearly straight into CMG before the leading strand enters the central channel (Georgescu et al., 2017; O'Donnell and Li, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations (Georgescu et al., 2017; O'Donnell and Li, 2018).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:02:36.163178Z"
+    },
+    {
+      "id": "ad7e5884-4157-479c-8802-aaff37a56bdc",
+      "content_id": "e67e0261-4560-434d-96fd-aece016a9d47",
+      "claim_id": "C70",
+      "claim": "Observations of Mcm2-7 head-to-head double hexamers on DNA show they are nearly in-line with one another while they encircle dsDNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, observations of Mcm2-7 head-to-head double hexamers on DNA show they are nearly in-line with one another while they encircle dsDNA (Abid Ali et al., 2017; Li et al., 2015; Noguchi et al., 2017; Remus et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations (Abid Ali et al., 2017; Li et al., 2015; Noguchi et al., 2017; Remus et al., 2009).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:02:36.163178Z"
+    },
+    {
+      "id": "2c4a677d-3b94-46dd-bbfc-23a77715d1da",
+      "content_id": "e67e0261-4560-434d-96fd-aece016a9d47",
+      "claim_id": "C71",
+      "claim": "The length of the central channel of each CMG is about 110 \u00c5 which can enclose 20\u201330 bp of dsDNA.",
+      "claim_type": "EXPLICIT",
+      "source": "The length of the central channel of each CMG is about 110 \u00c5 which can enclose 20\u201330 bp of dsDNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on structural knowledge of CMG.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:02:36.163178Z"
+    },
+    {
+      "id": "1e63bdab-0ef4-41c4-b8fb-954700692973",
+      "content_id": "e67e0261-4560-434d-96fd-aece016a9d47",
+      "claim_id": "C72",
+      "claim": "Significant melting is required to provide ssDNA of sufficient length for one strand to be excluded from the central channel to the outside of the CMG particle.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, significant melting is required to provide ssDNA of sufficient length for one strand to be excluded from the central channel to the outside of the CMG particle.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference based on the size of the CMG central channel.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:02:36.163178Z"
+    },
+    {
+      "id": "d938d795-4011-4647-b0da-d5f9a3c2fe7a",
+      "content_id": "e67e0261-4560-434d-96fd-aece016a9d47",
+      "claim_id": "C73",
+      "claim": "The motors of CMG are within the C-terminal domains and are separated by the N-terminal domains in a head-to-head orientation.",
+      "claim_type": "EXPLICIT",
+      "source": "The motors of CMG are within the C-terminal domains and are separated by the N-terminal domains in a head-to-head orientation (Figure 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on structural knowledge of CMG and illustrated in Figure 6.",
+      "evidence_type": "[\"KNOWLEDGE\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:02:36.163178Z"
+    },
+    {
+      "id": "64961559-3bc8-44bd-86f8-272a5c436d4d",
+      "content_id": "e67e0261-4560-434d-96fd-aece016a9d47",
+      "claim_id": "C74",
+      "claim": "Each CMG can untwist about 7 bp without Mcm10, probably within the C-terminal domains containing the ATP sites.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent studies show that each CMG can untwist about 7 bp without Mcm10, probably within the C-terminal domains containing the ATP sites, but whether this is unwound DNA or untwisted DNA is not certain (Douglas et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Douglas et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:02:36.163178Z"
+    },
+    {
+      "id": "e79c1003-0b93-4de4-acb6-cf19ad969970",
+      "content_id": "e67e0261-4560-434d-96fd-aece016a9d47",
+      "claim_id": "C75",
+      "claim": "The ssDNA might be stored within the N-tier by a conserved MCM-ssDNA binding motif, as revealed in a structure of the N-tier of an archaeal MCM bound to ssDNA.",
+      "claim_type": "EXPLICIT",
+      "source": "The disposition of this sheared DNA is not clear, but one possibility is that the ssDNA might be stored within the N-tier by a conserved MCM-ssDNA binding motif, as revealed in a structure of the N-tier of an archaeal MCM bound to ssDNA (Froelich et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative possibility supported by citation to Froelich et al., 2014.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:02:36.163178Z"
+    },
+    {
+      "id": "a38177c5-f5db-4bdc-a46d-dd7a4db575e5",
+      "content_id": "e67e0261-4560-434d-96fd-aece016a9d47",
+      "claim_id": "C76",
+      "claim": "Turns in the ssDNA strands that remain after melting the dsDNA would not encumber transitions because the turns can diffuse into the flanking dsDNA and be removed by topoisomerases.",
+      "claim_type": "EXPLICIT",
+      "source": "Turns in the ssDNA strands that remain after melting the dsDNA would not encumber these transitions because the turns can diffuse into the flanking dsDNA and be removed by topoisomerases (Postow et al., 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Postow et al., 1999.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:02:36.163178Z"
+    },
+    {
+      "id": "360058c2-67fe-41f2-992c-657dfdb36659",
+      "content_id": "e67e0261-4560-434d-96fd-aece016a9d47",
+      "claim_id": "C77",
+      "claim": "Once the CMGs pass one another, they have been demonstrated to recruit Pol \u03b1-primase to form primed sites that, upon extension, become leading strands.",
+      "claim_type": "EXPLICIT",
+      "source": "Once the CMGs pass one another, they have been demonstrated to recruit Pol \u03b1-primase to form primed sites that, upon extension, become leading strands (Aria and Yeeles, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Aria and Yeeles, 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:02:36.163178Z"
+    },
+    {
+      "id": "9d32e7ce-bb38-4805-836e-0ba7bce0c637",
+      "content_id": "e67e0261-4560-434d-96fd-aece016a9d47",
+      "claim_id": "C78",
+      "claim": "The processes discovered in S. cerevisiae will likely generalize to higher eukaryotes given the conservation of the factors involved.",
+      "claim_type": "EXPLICIT",
+      "source": "Clearly, there is much more to be learned about origin initiation, and given the conservation of the factors involved in higher eukaryotes, the processes discovered in S. cerevisiae will likely generalize.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation based on the conservation of replication factors.",
+      "evidence_type": "[\"SPECULATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:02:36.163178Z"
+    },
+    {
+      "id": "1bd7cd7f-3197-4da1-93d2-08339f38f24f",
+      "content_id": "e67e0261-4560-434d-96fd-aece016a9d47",
+      "claim_id": "C81",
+      "claim": "The tight connection of the inactive Mcm2-7 double hexamer is lost upon CMG formation.",
+      "claim_type": "IMPLICIT",
+      "source": "and the tight connection of the inactive Mcm2-7 double hexamer is lost (Abid Ali and Costa, 2016; Costa et al., 2014), depicted as a separation between the CMGs (left).",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "This is illustrated in Figure 1 and supported by citations (Abid Ali and Costa, 2016; Costa et al., 2014).",
+      "evidence_type": "[\"IMAGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:02:36.163178Z"
+    },
+    {
+      "id": "352a96f2-ef34-45db-8110-d32d3f1de154",
+      "content_id": "e67e0261-4560-434d-96fd-aece016a9d47",
+      "claim_id": "C83",
+      "claim": "T-substrates contain a 3' ssDNA dT tail that is required for CMG loading.",
+      "claim_type": "EXPLICIT",
+      "source": "The T-substrates contain a 3' ssDNA dT tail that is required for CMG loading (Figure 2a and Figure 2\u2014figure supplement 2)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 2a and Figure 2\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:02:36.163178Z"
+    },
+    {
+      "id": "52ce0c92-4ac1-4c32-8a9b-9bffe51ed052",
+      "content_id": "e67e0261-4560-434d-96fd-aece016a9d47",
+      "claim_id": "C84",
+      "claim": "T-substrates contain a flush ss/dsDNA junction that enables CMG to move onto dsDNA without unwinding it.",
+      "claim_type": "EXPLICIT",
+      "source": "followed by a flush ss/dsDNA junction that enables CMG to move onto dsDNA without unwinding it (Kang et al., 2012; Langston and O'Donnell, 2017)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations (Kang et al., 2012; Langston and O'Donnell, 2017).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:02:36.163178Z"
+    },
+    {
+      "id": "3cc4ff84-c910-432d-ab73-258af74b279e",
+      "content_id": "e67e0261-4560-434d-96fd-aece016a9d47",
+      "claim_id": "C85",
+      "claim": "Proceeding through the T-arm blocks requires that CMG translocates with force while surrounding dsDNA to simultaneously melt both arms.",
+      "claim_type": "EXPLICIT",
+      "source": "Proceeding through the T-arm blocks requires that CMG translocates with force while surrounding dsDNA to simultaneously melt both arms",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference about the requirements for unwinding T-substrates.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:02:36.163178Z"
+    },
+    {
+      "id": "f053d51d-8e4b-414c-b06d-a898e6391b45",
+      "content_id": "e67e0261-4560-434d-96fd-aece016a9d47",
+      "claim_id": "C86",
+      "claim": "A T-substrate with 30 bp arms requires melting a total of 60 bp to release the 32P-C oligo.",
+      "claim_type": "EXPLICIT",
+      "source": "so a T-substrate with 30 bp arms requires melting a total of 60 bp to release the 32P-C oligo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference based on the substrate design.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:02:36.163178Z"
+    },
+    {
+      "id": "48b029d2-a858-40dc-bb53-8f19f44ab663",
+      "content_id": "e67e0261-4560-434d-96fd-aece016a9d47",
+      "claim_id": "C87",
+      "claim": "Mcm10 prevents backtracking by CMG.",
+      "claim_type": "EXPLICIT",
+      "source": "One possibility is that Mcm10 prevents slippage or backtracking by CMG, as backtracking in a ring shaped helicase has been documented previously (Sun et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative possibility supported by citation to Sun et al., 2011.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:02:36.163178Z"
+    },
+    {
+      "id": "e1d4ffcc-ea40-4fad-a206-abac45631399",
+      "content_id": "e67e0261-4560-434d-96fd-aece016a9d47",
+      "claim_id": "C88",
+      "claim": "If Mcm10 were to prevent CMG backtracking it might more efficiently utilize the intrinsic force generated by ATP-driven CMG translocation.",
+      "claim_type": "EXPLICIT",
+      "source": "If Mcm10 were to prevent CMG backtracking it might more efficiently utilize the intrinsic force generated by ATP-driven CMG translocation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative inference about how Mcm10 might function.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:02:36.163178Z"
+    },
+    {
+      "id": "3dcd837a-11f7-4ab2-a5e2-b09eee5bbb5a",
+      "content_id": "e67e0261-4560-434d-96fd-aece016a9d47",
+      "claim_id": "C89",
+      "claim": "Mcm10 may induce a change in DNA structure that makes it easier to melt, as observed in monomeric helicases that orient the ssDNA and dsDNA at nearly right angles.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, as an alternative to preventing backtracking, Mcm10 may induce a change in DNA structure that makes it easier to melt, as observed in monomeric helicases that orient the ssDNA and dsDNA at nearly right angles (Gao et al., 2019; Lee and Yang, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative possibility supported by citations (Gao et al., 2019; Lee and Yang, 2006).",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:02:36.163178Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "6c3b7b83-309e-4156-977e-11fe54dd7547",
+      "content_id": "e67e0261-4560-434d-96fd-aece016a9d47",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "CMG tracks with force on dsDNA in an Mcm10-dependent manner. CMG alone shows weak activity melting 20 bp arms and cannot destabilize 30 bp or 60 bp arms, but upon adding Mcm10, CMG unwound all three T-substrates (T20, T30, T60). Mcm10 alone has no activity, demonstrating that Mcm10 stimulates CMG helicase activity and processivity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C29-C34, and C56 are well-supported by experimental data in Figure 2 showing differential unwinding activity of CMG alone versus CMG+Mcm10 on T-substrates of varying arm lengths. The controls (C31) and quantitative data (C34) strengthen the conclusion that Mcm10 is required for CMG to translocate with sufficient force to melt dsDNA.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:02:36.163178Z"
+    },
+    {
+      "id": "f068c807-1a06-4783-9c8f-3329ab192c8e",
+      "content_id": "e67e0261-4560-434d-96fd-aece016a9d47",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "CMG tracks mainly on the 3'-5' strand during duplex translocation. Methylphosphonate linkages on the 3'-5' strand significantly reduced duplex unwinding compared to linkages on the opposite strand. This differs from the inactive Mcm2-7 double hexamer, which makes equal contacts with both strands.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C39-C41 are supported by experimental data in Figure 3 using methylphosphonate substitutions to identify the tracking strand. The comparison to inactive Mcm2-7 (C40) is supported by citations and strengthens the conclusion that CMG's interaction with dsDNA is fundamentally different from the inactive complex.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:02:36.163178Z"
+    },
+    {
+      "id": "6335013e-d109-4334-8c9a-4a2eb2ea74b7",
+      "content_id": "e67e0261-4560-434d-96fd-aece016a9d47",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Head-to-head CMGs encircling dsDNA melt the duplex in an Mcm10-dependent reaction without requiring other factors. Using a two-tailed substrate allowing independent loading of oppositely oriented CMGs, unwinding was observed that required both CMG and Mcm10, continued beyond trap addition, and was dependent on head-to-head orientation. Head-to-head CMGs can melt up to 150 bp.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7, C42-C49, C57-C58 are strongly supported by experimental data in Figure 4 with appropriate controls. The two-tailed substrate design allows testing of head-to-head CMG function, and controls demonstrate absolute dependence on Mcm10, ATP, CMG, and head-to-head orientation. The trap experiment (C43) excludes alternative explanations involving additional loading events.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:02:36.163178Z"
+    },
+    {
+      "id": "f6d7cf38-5b5e-4dc0-9d52-992e3eb14b87",
+      "content_id": "e67e0261-4560-434d-96fd-aece016a9d47",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "CMG and Mcm10 together produce sufficient force to open several turns of duplex DNA while encircling dsDNA, and this initial unwinding can occur without participation of other replication initiation factors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C27-C28 are supported by the combined experimental evidence from Figures 2 and 4, demonstrating that recombinant CMG and Mcm10 alone are sufficient for DNA melting. The use of only purified components (C28) is a key strength of the experimental design.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:02:36.163178Z"
+    },
+    {
+      "id": "c8a80574-6420-42e1-8807-55432cbb39fc",
+      "content_id": "e67e0261-4560-434d-96fd-aece016a9d47",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Using a modified T-substrate with independently monitored arms, melting of the lower arm (tracking strand) was the most prominent product (~40%), while simultaneous melting of both arms was ~10% and continuous ssDNA translocation was ~5%.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C52 are supported by quantitative data from Figure 5B-C. The substrate design allows discrimination between different unwinding pathways, and the quantification provides clear evidence for the relative frequencies of different products.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:02:36.163178Z"
+    },
+    {
+      "id": "22f0769b-714b-4f14-bc68-9236b7680475",
+      "content_id": "e67e0261-4560-434d-96fd-aece016a9d47",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "A ssDNA gate has been demonstrated for CMG from multiple organisms (Drosophila, human, S. cerevisiae), and single molecule studies show CMG on dsDNA can expel one strand and transition to encircle ssDNA upon encountering an RPA-coated fork.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53-C55 are supported by appropriate citations to prior work. These claims provide important context from the literature that supports the interpretation of the current results, though they are not findings of the present study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:02:36.163178Z"
+    },
+    {
+      "id": "a9a4a96a-5012-4ee2-aa3e-e968d3f70af1",
+      "content_id": "e67e0261-4560-434d-96fd-aece016a9d47",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "DNA melting by head-to-head CMGs is expected to require 65 pN force based on single-molecule experiments, and generation of 50-60 pN force has precedent in other ring-shaped motors. With two CMG+Mcm10 complexes, each would only need to generate half the required force.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59-C62 are supported by appropriate citations to force measurements from other systems. The inference that two CMGs would each contribute half the required force (C62) is logical and reasonable, though not directly tested in this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:02:36.163178Z"
+    },
+    {
+      "id": "554545c4-2c61-4eff-8300-12172a280ee2",
+      "content_id": "e67e0261-4560-434d-96fd-aece016a9d47",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Possible mechanisms for Mcm10 function include preventing CMG backtracking to more efficiently utilize ATP-driven translocation force, or inducing DNA structural changes that facilitate melting.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C87-C89 are explicitly speculative (marked as SPECULATION in evidence_type) and represent hypotheses rather than demonstrated findings. While supported by citations to related phenomena, these mechanisms remain untested in the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:02:36.163178Z"
+    },
+    {
+      "id": "3556b504-8ea8-440d-a280-455cf768a12a",
+      "content_id": "e67e0261-4560-434d-96fd-aece016a9d47",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "CMG-Mcm10 complex shows no additional Mcm10 density in cryoEM, suggesting Mcm10 flexibility or multiple conformers on CMG.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C67 is supported by citations to cryoEM studies. This represents a limitation in current structural understanding that motivates the biochemical approach taken in this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:02:36.163178Z"
+    },
+    {
+      "id": "c98cce2a-2158-45fd-a6ff-15cdc88eb5e3",
+      "content_id": "e67e0261-4560-434d-96fd-aece016a9d47",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The ssDNA generated by melting might be stored within the N-tier by a conserved MCM-ssDNA binding motif, as revealed in archaeal MCM structures.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C75 is explicitly speculative and represents one possible mechanism for ssDNA disposition during melting. While supported by citation to archaeal MCM structures, this remains untested for eukaryotic CMG.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:02:36.163178Z"
+    },
+    {
+      "id": "73abd027-0ec6-4afc-9686-811147427561",
+      "content_id": "e67e0261-4560-434d-96fd-aece016a9d47",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Twin CMG complexes are assembled head-to-head around duplex DNA at eukaryotic origins. EM studies show CMG tracks N-first on ssDNA, implying head-to-head CMGs at origins are directed toward one another, blocking each other's forward movement. The duplex must be unwound sufficiently for both CMGs to expel one strand and transition from dsDNA to ssDNA.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C11-C12, C16-C19 are supported by extensive citations to prior work establishing the head-to-head orientation and N-first movement of CMG. The logical inferences (C17-C19) about the requirements for CMG transition are reasonable given the established facts.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:02:36.163178Z"
+    },
+    {
+      "id": "dec0ec33-aa7d-4cd5-8a2e-6d0121f4aa44",
+      "content_id": "e67e0261-4560-434d-96fd-aece016a9d47",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Mcm10 is required to activate CMG to encircle ssDNA for bidirectional replication, and the last steps of origin initiation require Mcm10.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C15, C20 are supported by multiple citations to prior work establishing Mcm10's essential role in CMG activation. This provides important background context for the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:02:36.163178Z"
+    },
+    {
+      "id": "6badf9f6-e95c-450f-b31e-dbd76a686c9b",
+      "content_id": "e67e0261-4560-434d-96fd-aece016a9d47",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Mcm10 contains a DNA binding region and interacts with N-terminal regions of Mcm2 and Mcm6. Cross-linking/mass spectrometry reveals extensive CMG-Mcm10 interaction involving 6 of 11 CMG subunits.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21-C23 are supported by appropriate citations characterizing Mcm10 structure and CMG-Mcm10 interactions. This provides important molecular context for understanding Mcm10 function.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:02:36.163178Z"
+    },
+    {
+      "id": "38f0a1b3-7864-4faf-a174-4a59ee408753",
+      "content_id": "e67e0261-4560-434d-96fd-aece016a9d47",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "CMG formation at origins results in disruption of tight Mcm2-7 connections and untwisting of ~0.7 turns per CMG, but this is insufficient for CMG transition to ssDNA. Each CMG can untwist about 7 bp without Mcm10. CMGs at origins can drift apart in buffer lacking ATP, indicating they are no longer tightly attached and are capable of backward slippage.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24-C26, C65-C66, C74 are supported by citations to prior work (Douglas et al., 2018). These findings establish the gap in understanding that the current study addresses\u2014how CMGs achieve sufficient DNA melting for the transition to ssDNA.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:02:36.163178Z"
+    },
+    {
+      "id": "b348b553-0bac-417e-8641-2ca2f7309e95",
+      "content_id": "e67e0261-4560-434d-96fd-aece016a9d47",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Other ring-shaped motors that encircle dsDNA (phi29 packaging motor, bacterial clamp loader) track on only one strand. CryoEM structures show CMG's translocation strand adopts a B-form spiral in motor domains, and a spiral of ssDNA in the central channel is common to all replicative helicases.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C38 are supported by appropriate citations to structural and biochemical studies of other motor proteins. This provides important comparative context for interpreting CMG's mechanism.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:02:36.163178Z"
+    },
+    {
+      "id": "23ea9ef5-d9b8-407a-8acf-ccc530d2aae9",
+      "content_id": "e67e0261-4560-434d-96fd-aece016a9d47",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The N-terminal zinc fingers of CMG encircle both DNA strands just prior to the split point, and duplex proceeds nearly straight into CMG. Mcm2-7 double hexamers are nearly in-line on dsDNA. The CMG central channel (~110 \u00c5) can enclose 20-30 bp of dsDNA, requiring significant melting for strand exclusion. CMG motors are in C-terminal domains separated by N-terminal domains in head-to-head orientation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C68-C73 are supported by citations to structural studies and represent established structural knowledge of CMG. These provide the structural framework for interpreting the biochemical results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:02:36.163178Z"
+    },
+    {
+      "id": "4af41cdc-a8e5-43a2-991b-711c18892895",
+      "content_id": "e67e0261-4560-434d-96fd-aece016a9d47",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Cellular replicative helicases are hexameric rings that track on ssDNA. Bacterial helicases assemble onto ssDNA melted by initiator proteins, but eukaryotic ORC does not unwind DNA. Instead, ORC and other factors assemble two CMG helicases (11 subunits each, containing Cdc45, Mcm2-7, and GINS) on dsDNA in head-to-head orientation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8-C10, C13-C14, C63-C64 are supported by appropriate citations and represent established knowledge about replication initiation in different organisms. This provides essential background context.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:02:36.163178Z"
+    },
+    {
+      "id": "fb7710cf-92d6-4eed-a767-bf076a50a6f9",
+      "content_id": "e67e0261-4560-434d-96fd-aece016a9d47",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Turns in ssDNA remaining after melting would not encumber CMG transitions because they can diffuse into flanking dsDNA and be removed by topoisomerases. After CMGs pass one another, they recruit Pol \u03b1-primase to form primed sites that become leading strands.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C76-C77 are supported by appropriate citations. C76 addresses a potential topological concern with the proposed mechanism, while C77 describes the next step after origin firing.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:02:36.163178Z"
+    },
+    {
+      "id": "60613a5e-63bc-43e4-94f9-8aa44385e93a",
+      "content_id": "e67e0261-4560-434d-96fd-aece016a9d47",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "The processes discovered in S. cerevisiae will likely generalize to higher eukaryotes given conservation of replication factors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C78 is explicitly speculative. While the conservation of replication factors supports this prediction, generalization to other organisms remains to be tested experimentally.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:02:36.163178Z"
+    },
+    {
+      "id": "2ea44d02-cf9d-4acb-b9ff-f718478a18b5",
+      "content_id": "e67e0261-4560-434d-96fd-aece016a9d47",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "The tight connection of inactive Mcm2-7 double hexamer is lost upon CMG formation. T-substrates contain a 3' ssDNA tail for CMG loading and a flush ss/dsDNA junction enabling CMG to move onto dsDNA without unwinding. Proceeding through T-arm blocks requires CMG to translocate with force while surrounding dsDNA to simultaneously melt both arms.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C81, C83-C86 describe the experimental design and substrate properties. C81 is supported by citations and Figure 1. C83-C84 are supported by citations and substrate design. C85-C86 are logical inferences about substrate requirements that are validated by the experimental results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:02:36.163178Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "ab5945f9-bdea-44d1-95c1-6b815bb4f27d",
+      "result_id": "6c3b7b83-309e-4156-977e-11fe54dd7547"
+    },
+    {
+      "claim_id": "fd60e060-5a97-4430-88ff-02027681037c",
+      "result_id": "6c3b7b83-309e-4156-977e-11fe54dd7547"
+    },
+    {
+      "claim_id": "1e5110e4-c1c9-4702-aa8f-0c1045ab98bc",
+      "result_id": "6c3b7b83-309e-4156-977e-11fe54dd7547"
+    },
+    {
+      "claim_id": "73e3d65a-d694-4d74-8c8a-3a0c221dfa60",
+      "result_id": "6c3b7b83-309e-4156-977e-11fe54dd7547"
+    },
+    {
+      "claim_id": "ad6c4394-95e9-42e2-8853-88a42d6cb233",
+      "result_id": "6c3b7b83-309e-4156-977e-11fe54dd7547"
+    },
+    {
+      "claim_id": "7010a070-fe3c-4f76-ae6a-0021d629a4e9",
+      "result_id": "6c3b7b83-309e-4156-977e-11fe54dd7547"
+    },
+    {
+      "claim_id": "a2e827bb-7282-497a-ab19-b805fa1cb34b",
+      "result_id": "6c3b7b83-309e-4156-977e-11fe54dd7547"
+    },
+    {
+      "claim_id": "e00656ac-df70-457b-9acb-75fde0387b3c",
+      "result_id": "6c3b7b83-309e-4156-977e-11fe54dd7547"
+    },
+    {
+      "claim_id": "9c0dcf67-3dda-4f89-9758-c682b1b4689b",
+      "result_id": "f068c807-1a06-4783-9c8f-3329ab192c8e"
+    },
+    {
+      "claim_id": "fe834e8a-edc5-4acb-871f-ddd8cb3f6688",
+      "result_id": "f068c807-1a06-4783-9c8f-3329ab192c8e"
+    },
+    {
+      "claim_id": "4727c481-3004-4de8-97e4-ffdc20e5a245",
+      "result_id": "f068c807-1a06-4783-9c8f-3329ab192c8e"
+    },
+    {
+      "claim_id": "1779d7e5-0d64-4106-92e3-7b895d61b54d",
+      "result_id": "f068c807-1a06-4783-9c8f-3329ab192c8e"
+    },
+    {
+      "claim_id": "4614c313-360d-4b03-a499-fd088c372565",
+      "result_id": "6335013e-d109-4334-8c9a-4a2eb2ea74b7"
+    },
+    {
+      "claim_id": "218c82c5-a269-41a6-add1-5d998c001c3e",
+      "result_id": "6335013e-d109-4334-8c9a-4a2eb2ea74b7"
+    },
+    {
+      "claim_id": "e1612db1-55b6-4316-85b2-4b649d428de5",
+      "result_id": "6335013e-d109-4334-8c9a-4a2eb2ea74b7"
+    },
+    {
+      "claim_id": "5074bbd3-325b-44d3-b548-98fcc205e6bd",
+      "result_id": "6335013e-d109-4334-8c9a-4a2eb2ea74b7"
+    },
+    {
+      "claim_id": "716076c0-7a81-466c-b9e1-a1bb6dc2a592",
+      "result_id": "6335013e-d109-4334-8c9a-4a2eb2ea74b7"
+    },
+    {
+      "claim_id": "5380dd53-e467-40a4-bc37-72dcb515f15f",
+      "result_id": "6335013e-d109-4334-8c9a-4a2eb2ea74b7"
+    },
+    {
+      "claim_id": "b17befcc-7b58-4ff6-bf19-8ead40ef2c0b",
+      "result_id": "6335013e-d109-4334-8c9a-4a2eb2ea74b7"
+    },
+    {
+      "claim_id": "33c39cb3-9ff5-4624-b227-d8fa969ca247",
+      "result_id": "6335013e-d109-4334-8c9a-4a2eb2ea74b7"
+    },
+    {
+      "claim_id": "f8574ef6-1fe9-41f2-be89-73797d23875c",
+      "result_id": "6335013e-d109-4334-8c9a-4a2eb2ea74b7"
+    },
+    {
+      "claim_id": "9200e31d-a421-4f04-9a94-dc1a9e1ccba3",
+      "result_id": "6335013e-d109-4334-8c9a-4a2eb2ea74b7"
+    },
+    {
+      "claim_id": "3340e2e0-cc91-4abc-8875-dc28a663728d",
+      "result_id": "6335013e-d109-4334-8c9a-4a2eb2ea74b7"
+    },
+    {
+      "claim_id": "203e2cb3-aeda-416c-b6fc-00c784a73e20",
+      "result_id": "6335013e-d109-4334-8c9a-4a2eb2ea74b7"
+    },
+    {
+      "claim_id": "e1e7f3ae-ae1d-4125-82e5-1c3afc5bdb56",
+      "result_id": "f6d7cf38-5b5e-4dc0-9d52-992e3eb14b87"
+    },
+    {
+      "claim_id": "608feb38-dabb-40ee-b232-ceebda7b5176",
+      "result_id": "f6d7cf38-5b5e-4dc0-9d52-992e3eb14b87"
+    },
+    {
+      "claim_id": "0e8cfd58-0071-4350-8b4d-c9db230a92b6",
+      "result_id": "f6d7cf38-5b5e-4dc0-9d52-992e3eb14b87"
+    },
+    {
+      "claim_id": "533f53bc-fc3b-43b9-80c9-2cc847cce5d8",
+      "result_id": "c8a80574-6420-42e1-8807-55432cbb39fc"
+    },
+    {
+      "claim_id": "14b4ae7e-7dd2-44a7-9d6c-5da51ed78b77",
+      "result_id": "c8a80574-6420-42e1-8807-55432cbb39fc"
+    },
+    {
+      "claim_id": "cf525ba0-b168-4fc7-974f-a51e53261f66",
+      "result_id": "22f0769b-714b-4f14-bc68-9236b7680475"
+    },
+    {
+      "claim_id": "c42c7d94-50bc-4213-bda2-39238c93caa2",
+      "result_id": "22f0769b-714b-4f14-bc68-9236b7680475"
+    },
+    {
+      "claim_id": "2a60006e-d123-44fc-b4d6-0836f9d6c293",
+      "result_id": "22f0769b-714b-4f14-bc68-9236b7680475"
+    },
+    {
+      "claim_id": "ef934d28-f77a-4d24-b501-44ae88ebea90",
+      "result_id": "a9a4a96a-5012-4ee2-aa3e-e968d3f70af1"
+    },
+    {
+      "claim_id": "98d20d5c-8996-4ae8-ab5e-0d1eef4d2901",
+      "result_id": "a9a4a96a-5012-4ee2-aa3e-e968d3f70af1"
+    },
+    {
+      "claim_id": "464e5497-a076-4a91-9559-e5461ccf3fe8",
+      "result_id": "a9a4a96a-5012-4ee2-aa3e-e968d3f70af1"
+    },
+    {
+      "claim_id": "a2385b42-f625-4398-bae6-62167867ceca",
+      "result_id": "a9a4a96a-5012-4ee2-aa3e-e968d3f70af1"
+    },
+    {
+      "claim_id": "48b029d2-a858-40dc-bb53-8f19f44ab663",
+      "result_id": "554545c4-2c61-4eff-8300-12172a280ee2"
+    },
+    {
+      "claim_id": "e1d4ffcc-ea40-4fad-a206-abac45631399",
+      "result_id": "554545c4-2c61-4eff-8300-12172a280ee2"
+    },
+    {
+      "claim_id": "3dcd837a-11f7-4ab2-a5e2-b09eee5bbb5a",
+      "result_id": "554545c4-2c61-4eff-8300-12172a280ee2"
+    },
+    {
+      "claim_id": "467465f6-1648-4941-a1c8-de3be89a21c4",
+      "result_id": "3556b504-8ea8-440d-a280-455cf768a12a"
+    },
+    {
+      "claim_id": "e79c1003-0b93-4de4-acb6-cf19ad969970",
+      "result_id": "c98cce2a-2158-45fd-a6ff-15cdc88eb5e3"
+    },
+    {
+      "claim_id": "7d416577-abc0-4fc7-aad5-3d6bd01bd4da",
+      "result_id": "73abd027-0ec6-4afc-9686-811147427561"
+    },
+    {
+      "claim_id": "27168516-385c-4a49-abc1-aaada7322394",
+      "result_id": "73abd027-0ec6-4afc-9686-811147427561"
+    },
+    {
+      "claim_id": "1f17fb29-c236-4273-9965-d424675ebc37",
+      "result_id": "73abd027-0ec6-4afc-9686-811147427561"
+    },
+    {
+      "claim_id": "16c39b53-87da-4fb0-b16a-6047c2ad42a3",
+      "result_id": "73abd027-0ec6-4afc-9686-811147427561"
+    },
+    {
+      "claim_id": "aaa51fbb-6371-47c7-aa70-f0732b4a496b",
+      "result_id": "73abd027-0ec6-4afc-9686-811147427561"
+    },
+    {
+      "claim_id": "01c6a69b-1ab5-4a04-9f9a-3aaf5873e3be",
+      "result_id": "73abd027-0ec6-4afc-9686-811147427561"
+    },
+    {
+      "claim_id": "1a705f67-7b07-45df-ae9b-43ed933e53de",
+      "result_id": "73abd027-0ec6-4afc-9686-811147427561"
+    },
+    {
+      "claim_id": "59c9ec78-41ae-4e59-8376-14d01f043882",
+      "result_id": "dec0ec33-aa7d-4cd5-8a2e-6d0121f4aa44"
+    },
+    {
+      "claim_id": "38ac36b0-d117-4315-8d40-c8c3c7cc2464",
+      "result_id": "dec0ec33-aa7d-4cd5-8a2e-6d0121f4aa44"
+    },
+    {
+      "claim_id": "53fd5681-cc73-460a-b27a-ee91df439029",
+      "result_id": "dec0ec33-aa7d-4cd5-8a2e-6d0121f4aa44"
+    },
+    {
+      "claim_id": "5269ee5d-d17a-4219-a62f-684c4f3864b9",
+      "result_id": "6badf9f6-e95c-450f-b31e-dbd76a686c9b"
+    },
+    {
+      "claim_id": "c385ab7a-7d4a-48ad-89c5-0e22badfb7c5",
+      "result_id": "6badf9f6-e95c-450f-b31e-dbd76a686c9b"
+    },
+    {
+      "claim_id": "3c9afe99-c9e7-4f55-a26b-b574a30be5a4",
+      "result_id": "6badf9f6-e95c-450f-b31e-dbd76a686c9b"
+    },
+    {
+      "claim_id": "19a43dc7-707e-4eb4-9442-4bb7903cdc03",
+      "result_id": "38f0a1b3-7864-4faf-a174-4a59ee408753"
+    },
+    {
+      "claim_id": "bec16705-e674-47d6-8f16-c991cd596d3a",
+      "result_id": "38f0a1b3-7864-4faf-a174-4a59ee408753"
+    },
+    {
+      "claim_id": "4e5bf35f-4f61-4970-98a5-f5a366c44408",
+      "result_id": "38f0a1b3-7864-4faf-a174-4a59ee408753"
+    },
+    {
+      "claim_id": "caa2ec45-493b-4481-a34a-992451c8ab45",
+      "result_id": "38f0a1b3-7864-4faf-a174-4a59ee408753"
+    },
+    {
+      "claim_id": "bd6d21bf-8869-4982-8a24-9515eb842ef4",
+      "result_id": "38f0a1b3-7864-4faf-a174-4a59ee408753"
+    },
+    {
+      "claim_id": "64961559-3bc8-44bd-86f8-272a5c436d4d",
+      "result_id": "38f0a1b3-7864-4faf-a174-4a59ee408753"
+    },
+    {
+      "claim_id": "7d8c57f0-a4f2-435d-a163-20896f3e0a4d",
+      "result_id": "b348b553-0bac-417e-8641-2ca2f7309e95"
+    },
+    {
+      "claim_id": "cff07a9d-3a0b-4507-b4fa-bd060219284a",
+      "result_id": "b348b553-0bac-417e-8641-2ca2f7309e95"
+    },
+    {
+      "claim_id": "807cb263-661e-42dd-9cb6-c791a42f4120",
+      "result_id": "b348b553-0bac-417e-8641-2ca2f7309e95"
+    },
+    {
+      "claim_id": "ec520005-9769-439c-8039-310578738689",
+      "result_id": "b348b553-0bac-417e-8641-2ca2f7309e95"
+    },
+    {
+      "claim_id": "0d28f122-05c5-4363-9791-94e667048654",
+      "result_id": "23ea9ef5-d9b8-407a-8acf-ccc530d2aae9"
+    },
+    {
+      "claim_id": "26c745fc-ba7d-4c4f-a00c-81a472b767ea",
+      "result_id": "23ea9ef5-d9b8-407a-8acf-ccc530d2aae9"
+    },
+    {
+      "claim_id": "ad7e5884-4157-479c-8802-aaff37a56bdc",
+      "result_id": "23ea9ef5-d9b8-407a-8acf-ccc530d2aae9"
+    },
+    {
+      "claim_id": "2c4a677d-3b94-46dd-bbfc-23a77715d1da",
+      "result_id": "23ea9ef5-d9b8-407a-8acf-ccc530d2aae9"
+    },
+    {
+      "claim_id": "1e63bdab-0ef4-41c4-b8fb-954700692973",
+      "result_id": "23ea9ef5-d9b8-407a-8acf-ccc530d2aae9"
+    },
+    {
+      "claim_id": "d938d795-4011-4647-b0da-d5f9a3c2fe7a",
+      "result_id": "23ea9ef5-d9b8-407a-8acf-ccc530d2aae9"
+    },
+    {
+      "claim_id": "d872ab7c-dee1-4e4e-95ad-acc8d09cab26",
+      "result_id": "4af41cdc-a8e5-43a2-991b-711c18892895"
+    },
+    {
+      "claim_id": "ea071e62-c607-47db-902d-e34e32d20e61",
+      "result_id": "4af41cdc-a8e5-43a2-991b-711c18892895"
+    },
+    {
+      "claim_id": "2c1603d5-e3e3-4124-afcb-5c6711fbc72b",
+      "result_id": "4af41cdc-a8e5-43a2-991b-711c18892895"
+    },
+    {
+      "claim_id": "b1535e58-4a28-42e7-8c26-397a23191805",
+      "result_id": "4af41cdc-a8e5-43a2-991b-711c18892895"
+    },
+    {
+      "claim_id": "61b66539-800c-40cf-a853-64a7a5ec4bf9",
+      "result_id": "4af41cdc-a8e5-43a2-991b-711c18892895"
+    },
+    {
+      "claim_id": "f8bf3b7f-8f67-47d8-b827-2304db67cc73",
+      "result_id": "4af41cdc-a8e5-43a2-991b-711c18892895"
+    },
+    {
+      "claim_id": "1763ddc1-ae91-46c7-bc8d-aa71d3398e34",
+      "result_id": "4af41cdc-a8e5-43a2-991b-711c18892895"
+    },
+    {
+      "claim_id": "a38177c5-f5db-4bdc-a46d-dd7a4db575e5",
+      "result_id": "fb7710cf-92d6-4eed-a767-bf076a50a6f9"
+    },
+    {
+      "claim_id": "360058c2-67fe-41f2-992c-657dfdb36659",
+      "result_id": "fb7710cf-92d6-4eed-a767-bf076a50a6f9"
+    },
+    {
+      "claim_id": "9d32e7ce-bb38-4805-836e-0ba7bce0c637",
+      "result_id": "60613a5e-63bc-43e4-94f9-8aa44385e93a"
+    },
+    {
+      "claim_id": "1bd7cd7f-3197-4da1-93d2-08339f38f24f",
+      "result_id": "2ea44d02-cf9d-4acb-b9ff-f718478a18b5"
+    },
+    {
+      "claim_id": "352a96f2-ef34-45db-8110-d32d3f1de154",
+      "result_id": "2ea44d02-cf9d-4acb-b9ff-f718478a18b5"
+    },
+    {
+      "claim_id": "52ce0c92-4ac1-4c32-8a9b-9bffe51ed052",
+      "result_id": "2ea44d02-cf9d-4acb-b9ff-f718478a18b5"
+    },
+    {
+      "claim_id": "3cc4ff84-c910-432d-ab73-258af74b279e",
+      "result_id": "2ea44d02-cf9d-4acb-b9ff-f718478a18b5"
+    },
+    {
+      "claim_id": "f053d51d-8e4b-414c-b06d-a898e6391b45",
+      "result_id": "2ea44d02-cf9d-4acb-b9ff-f718478a18b5"
+    }
+  ],
+  "comparisons": []
+}

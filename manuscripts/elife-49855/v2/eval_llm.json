@@ -1,0 +1,135 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C15",
+      "C17",
+      "C18"
+    ],
+    "result": "The authors demonstrate that heavily diffusion-weighted MRI signals become sensitive to axon radii when confounding factors are eliminated, and that the power law scaling breaks down at sufficiently strong diffusion weighting. Confocal microscopy validation in rat corpus callosum confirms that the signal arises mainly from the intra-axonal space and that MR-derived axon radius metrics are in good quantitative agreement with histology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C15, C17, and C18 collectively demonstrate the core finding through both theoretical predictions and experimental validation. The breakdown of power law scaling is shown in both rodent and human data (Figure 3), and confocal microscopy provides direct histological validation showing 5-21% error between MR-derived and histology-derived effective radii (C18, Figure 4). The convergence of theory, MRI measurements, and histological validation provides strong support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "The authors conclude that diffusion MRI can only estimate a single metric\u2014the effective radius\u2014that represents the entire axon radius distribution within a voxel and emphasizes larger axons. This metric is complementary to histology, which probes the bulk of smaller axons with high precision, particularly in human MRI where voxels are significantly larger than histological samples.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C69, C70, and C71 are well-supported by the theoretical framework (Equations 8-9 showing r_eff depends on <r^6>/<r^2>) and empirical observations. Figure 7 demonstrates that MR-derived effective radii fall within the range of histology-derived values but emphasize the tail of the distribution. The complementary nature is substantiated by the analysis of mesoscopic fluctuations and sampling differences between the modalities.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C19",
+      "C87"
+    ],
+    "result": "The same signal signatures observed in rodents are reproduced in living human brain on the Connectom 3T scanner, and MR-derived effective radii show good quantitative agreement with histology from the literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19 and C87 are supported by Figure 3 showing consistent power law breakdown in both species, and Figure 7 demonstrating that human MR-derived r_MR values (2.48-2.82 \u03bcm in CC midbody) fall within the range of histology-derived r_eff from literature (0.91-2.9 \u03bcm). The translation from rodent validation to human application is convincingly demonstrated, though direct histological validation in humans is not possible.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C82"
+    ],
+    "result": "A consistent residual overestimation of axon radius (5-21%) was observed in MRI compared to histology, contrary to simulation predictions. Potential confounding factors include astrocytic processes and cell bodies (each ~5% volume fraction), and along-axon undulations and curvature that might increase apparent radial diffusivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42, C43, and C82 identify systematic biases and confounding factors. The overestimation is documented in Figure 4 and Figure 5, and the presence of astrocytic processes with diameters up to 7 \u03bcm is shown in confocal microscopy (Figure 5). However, the relative contributions of each confounding factor remain unquantified, and the authors acknowledge that compartmental T2-weighted signal fractions are unknown, limiting definitive interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C66",
+      "C68"
+    ],
+    "result": "The tail of the axon radius distribution is typically coarsely sampled in histology due to small sampling sizes, with only a few observations of large axons. For rodent MRI, where voxel sizes match histological patch sizes, the precision in estimating effective radius is similar for both modalities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66 and C68 are supported by Figure 7 showing high variability in histology-derived r_eff (0.91-2.9 \u03bcm) despite consistent r\u0304 (0.54-0.69 \u03bcm), and Figure 5 showing comparable precision between MRI and histology in rodents. The statistical argument about Poissonian fluctuations for rare large axons is sound, though the authors do not provide formal statistical analysis of the sampling variance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C84",
+      "C85"
+    ],
+    "result": "The effective MR radius in humans was significantly higher than in rats when comparing similar regions of interest, consistent with literature showing that large brains have more large axons and increased maximal radius while the bulk of axons remains unaltered.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84 and C85 are supported by the data (human CC midbody: 2.48-2.82 \u03bcm vs. rat CC: 1.22-1.25 \u03bcm) and agreement with cited comparative studies across species. The observation is consistent with the method's sensitivity to the tail of the distribution, which would amplify inter-species differences in large axon populations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C86",
+      "C61"
+    ],
+    "result": "The stick assumption does not hold in cortical gray matter, where an anisotropic exchange model fits the data better than all other evaluated models according to AIC analysis, with estimated neurite residence times of 10-30 ms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C86 and C61 are based on the convex signal decay in gray matter (Figure 9) and AIC analysis (data not shown). While the qualitative observation of deviation from the stick model is clear, the exchange model parameters depend on assumed values of D_e^\u22a5 (0.5 or 1.0 \u03bcm\u00b2/ms), introducing uncertainty. The authors acknowledge that dedicated experiments are required for precise measurement, and confounding factors like cell bodies are not fully accounted for.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C75",
+      "C76"
+    ],
+    "result": "Previous studies demonstrated that in vivo dMRI is practically insensitive (<0.2%) to immobile water signal contributions in healthy white matter of living human brain, while the dot compartment has been observed in fixed brain samples.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75 and C76 are supported by multiple citations to previous work. The authors appropriately distinguish between in vivo and ex vivo conditions, measuring f_im = 8-17% in their fixed samples while setting f_im = 0 for human data based on prior literature. This methodological choice is justified but introduces potential bias if the dot compartment is underestimated in vivo.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C49"
+    ],
+    "result": "The qualitative trends in axon radius maps show larger axons in the body of the corpus callosum compared to the genu and splenium, in agreement with previously reported observations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C49 is supported by the parameter maps in Figure 6 and citation to Barazany et al. (2009). The spatial patterns are consistent across three rat samples, suggesting biological validity rather than measurement artifact. However, the small sample size (n=3 rats, n=4 humans) limits generalizability.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C90"
+    ],
+    "result": "Clinical applications should focus on pathologies that specifically target larger axons until other methods are developed that probe smaller axon diameters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C90 is a logical recommendation based on the demonstrated bias of the method toward larger axons (r_eff weighted by <r^6>/<r^2>). The recommendation is appropriately conservative given the method's limitations, though it is a forward-looking statement rather than an empirical finding.",
+    "result_type": "MINOR"
+  }
+]

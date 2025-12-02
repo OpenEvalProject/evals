@@ -1,0 +1,1863 @@
+{
+  "submission": {
+    "id": "dbf288c0-801a-4e8a-91e3-c1c622fb3110",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T12:58:35.492325Z",
+    "updated_at": "2025-12-02T12:58:35.492325Z"
+  },
+  "content": [
+    {
+      "id": "677ae846-a866-4e2c-8b82-b69c5935fe83",
+      "submission_id": "dbf288c0-801a-4e8a-91e3-c1c622fb3110",
+      "content_type": "manuscript",
+      "content_text": "# Extensive impact of low-frequency variants on the phenotypic landscape at population-scale\n\n## Authors\n\n- T\u00e9o Fournier<sup>1</sup> ([ORCID: 0000-0002-4860-6728](https://orcid.org/0000-0002-4860-6728))\n- Omar Abou Saada<sup>1</sup>\n- Jing Hou<sup>1</sup>\n- Jackson Peter<sup>1</sup>\n- Elodie Caudal<sup>1</sup>\n- Joseph Schacherer<sup>1</sup> ([ORCID: 0000-0002-6606-6884](https://orcid.org/0000-0002-6606-6884)) \u2020\n\n### Affiliations\n\n1. Universit\u00e9 de Strasbourg, CNRS, GMGM UMR 7156 Strasbourg France\n\n\u2020 Corresponding author\n\n## Abstract\n\nGenome-wide association studies (GWAS) allow to dissect complex traits and map genetic variants, which often explain relatively little of the heritability. One potential reason is the preponderance of undetected low-frequency variants. To increase their allele frequency and assess their phenotypic impact in a population, we generated a diallel panel of 3025 yeast hybrids, derived from pairwise crosses between natural isolates and examined a large number of traits. Parental versus hybrid regression analysis showed that while most phenotypic variance is explained by additivity, a third is governed by non-additive effects, with complete dominance having a key role. By performing GWAS on the diallel panel, we found that associated variants with low frequency in the initial population are overrepresented and explain a fraction of the phenotypic variance as well as an effect size similar to common variants. Overall, we highlighted the relevance of low-frequency variants on the phenotypic variation.\n\n## Introduction\n\nNatural populations are characterized by an astonishing phenotypic diversity. Variation observed among individuals of the same species represents a powerful raw material to develop better insight into the relationship existing between genetic variants and complex traits (Mackay et al., 2009). The recent advances in high-throughput sequencing and phenotyping technologies greatly enhance the ability to determine the genetic basis of traits in various organisms (Alonso-Blanco et al., 2016; Auton et al., 2015; Mackay et al., 2012; Peter et al., 2018). Dissection of the genetic mechanisms underlying natural phenotypic diversity is within easy reach when using classical mapping approaches such as linkage analysis and genome-wide association studies (GWAS) (Mackay et al., 2009; Visscher et al., 2017). Alongside these major advances, however, it must be noted that there are some limitations. All genotype-phenotype correlation studies in humans and other model eukaryotes have identified causal loci in GWAS explaining relatively little of the observed phenotypic variance of most complex traits (Eichler et al., 2010; Hindorff et al., 2009; Manolio et al., 2009; Shi et al., 2016; Stahl et al., 2012; Wood et al., 2014; Zuk et al., 2014).\n\nDespite the efforts made to find the genetic variants responsible for complex traits, the variants found explain only a small part of the heritability, that\u00a0is of the fraction of the phenotypic variance explained by the underlying genetic variability. One of the most striking examples is observed with human height. This trait is estimated to be 60\u201380% heritable (Speed et al., 2017; Visscher et al., 2008) but close to 700 variants found in an analysis based on more than 250,000 individuals only explain 20% of this total heritability (Wood et al., 2014). Multiple justifications for this so-called missing heritability have been suggested, including the presence of low-frequency variants, (Gibson, 2012; Hindorff et al., 2009; Manolio et al., 2009; Pritchard, 2001; Walter et al., 2015), structural variants (e.g. copy number variants) (Peter et al., 2018), small effect variants, as well as the low power to estimate non-additive effects (Cordell, 2009; Mackay, 2014; Zuk et al., 2012).\n\nVariants present in less than 5% of the individuals are coined as low-frequency variants and are known to be involved in a large number of rare Mendelian disorders (Gibson, 2012). However, implication of rare variants is also pervasive in common diseases and other complex traits. Assessing the impact and effect of low-frequency variants at a population scale and on a large phenotypic spectrum will allow to gain better insight into the genetic architecture of the phenotypic variation in a species. As GWAS cannot deal with low-frequency and rare variants due to statistical limitations, except for very large sample sizes, their effect has often been overlooked.\n\nAmong model organisms, the budding yeast Saccharomyces cerevisiae is especially well suited to dissect variations observed across natural populations (Fay, 2013; Peter and Schacherer, 2016). S. cerevisiae isolates can be found in a broad array of biotopes both human-associated (e.g. wine, sake, beer and other fermented beverages, food, human body) or wild (e.g. plants, soil, insects) and are distributed world-wide (Peter et al., 2018). Phenotypic diversity among yeast isolates is significant and the S. cerevisiae species presents a high level of genetic diversity (\u03c0\u00a0=\u00a03\u00d710\u22123), much greater than that found in humans (Lek et al., 2016). Because of their small and compact genomes, an unprecedented number of 1,011 S. cerevisiae natural isolates has recently been sequenced (Peter et al., 2018). Yeast genome-wide association analyses have revealed functional Single Nucleotide Polymorphisms (SNPs), explaining a small fraction of the phenotypic variance (Peter et al., 2018). However, these analyses highlighted the importance of the copy number variants (CNVs), which account for a larger proportion of the phenotypic variance and have greater effects on phenotypes compared to the SNPs. Nevertheless, even when CNVs and SNPs are taken together, the phenotypic variance explained is still low (approximately 17% on average) and consequently a large part of it is unexplained.\n\nInterestingly, much of the detected genetic polymorphisms in the 1011 yeast genomes dataset are low-frequency variants with almost 92.7% of the polymorphic sites associated with a minor allele frequency (MAF) lower than 0.05. This trend is similar to that observed in the human population (Auton et al., 2015; Walter et al., 2015) and definitely raised a question regarding the impact of low-frequency variants on the phenotypic landscape within a population and on the missing heritability (Zuk et al., 2014). Here, we investigated the underlying genetic architecture of phenotypic variation as well as unraveling part of the missing heritability by accounting for low-frequency genetic variants at a population-wide scale and non-additive effects controlled by a single locus. For this purpose, we generated and examined a large set of traits in 3025 hybrids, derived from pairwise crosses between a subset of natural isolates from the 1,011 S. cerevisiae population. This diallel crossing scheme allowed us to capture the fraction of the phenotypic variance controlled by both additive and non-additive phenomena as well as infer the main modes of inheritance for each trait. We also took advantage of the intrinsic power of this diallel design to perform GWAS and assess the role of the low-frequency variants on complex traits.\n\n## Results\n\n### Diallel panel and phenotypic landscape\n\nBased on the genomic and phenotypic data from the 1,011\u00a0S. cerevisiae isolate collection (Peter et al., 2018), we selected a subset of 55 isolates that were diploid, homozygous, genetically diverse (Figure 1a), and originated from a broad range of ecological sources (Figure 1b) (e.g. tree exudates, Drosophila, fruits, fermentation processes, clinical isolates) as well as geographical origins (Europe, America, Africa and Asia) (Figure 1c and Supplementary file 1). A full diallel cross panel was constructed by systematically crossing the 55 selected isolates in a pairwise manner (Figure 1d). In total, we generated 3025 hybrids, representing 2970 heterozygous hybrids with a unique parental combination and 55 homozygous hybrids. All 3025 hybrids were viable, indicating no dominant lethal interactions existed between the parental isolates. We then screened the entire set of the parental isolates and hybrids for quantification of mitotic growth abilities across 49 conditions that induce various physiological and cellular responses (Figure 1\u2014figure supplement 1, Figure 1\u2014figure supplement 2, Supplementary file 2). We used growth as a proxy for fitness traits (see Materials\u00a0and\u00a0methods). Ultimately, this phenotyping step led to the characterization of 148,225 hybrid/trait combinations.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/49258/elife-49258-fig1-v2.jpg)\n\n**Figure 1.:** (a) Pairwise sequence diversity between each pair of parental strains. (b) Ecological origins of the selected strains. See also Supplementary file 1. (c) Geographical origins of the selected strains. (d) Generation of the diallel hybrid panel. 55 natural isolates available as both mating types as stable haploids were crossed in a pairwise manner to obtain 3025 hybrids. This panel was then phenotyped on 49 growth conditions impacting various cellular processes.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/49258/elife-49258-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (a)\u00a0Phenotypic distribution for all hybrids in the different growth conditions. Conditions are organized by type of stress in each panel. (b) Blue bars show the phenotypic variance of the growth ratio for the hybrids in each condition (mean\u00a0=\u00a00.027). Orange bars represent the variance due to noise between each plate (mean\u00a0=\u00a00.006). Noise has been measured as the mean variance of every parental replicates across all plates for each condition (two replicate per plate, 27 plates, that\u00a0is 54 replicate per parental isolate). Error bars represent interquartile range.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/49258/elife-49258-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** Correlogram of all tested growth conditions. Numbers in each cell represent 100 x Pearson\u2019s r value.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/49258/elife-49258-fig1-figsupp3-v2.jpg)\n\n**Figure 1\u2014figure supplement 3.:** (a)\u00a0Correlation between growth ratio of different mating types for all parental strains across all conditions. (b) Correlation between mating types by strain. Pearson\u2019s r and corresponding p-values are indicated for each strain. The growth ratio used is the median of 54 replicates for each strain.\n\n### Estimation of genetic variance components using the diallel panel (additive vs. non-additive)\n\nThe diallel cross design allows for the estimation of additive vs. non-additive genetic components contributing to the variation in each trait by calculating the combining abilities following Griffing\u2019s model (Griffing, 1956). For each trait, the General Combining Ability (GCA) for a given parent refers to the average fitness contribution of this parental isolate across all of its corresponding hybrid combinations, whereas the Specific Combining Ability (SCA) corresponds to the residual variation unaccounted for from the sum of GCAs from the parental combination. Consequently, the phenotype of a given hybrid can be formulated as \u00b5 + GCAparent1 + GCAparent2 + SCAhybrid, where \u00b5 is the mean fitness of the population for a given trait. We found a near perfect correlation (Pearson\u2019s r\u00a0=\u00a00.995, p-value<2.2e-16) between expected and observed phenotypic values, confirming the accuracy of the model used (see Materials\u00a0and\u00a0methods). Using GCA and SCA values, we estimated both broad- (H2) and narrow-sense (h2) heritabilities for each trait (Figure 1). Broad-sense heritability is the fraction of phenotypic variance explained by genetic contribution. In a diallel cross, the total genetic variance is equal to the sum of the GCA variance of both parents and the SCA variance in each condition. Narrow-sense heritability refers to the fraction of phenotypic variance that can be explained only by additive effects and corresponds to the variance of the GCA in each condition (Figure 2a). The H2 values for each condition ranged from 0.64 to 0.98, with the lowest value observed for fluconazole (1 \u00b5g.ml\u22121) and the highest for sodium meta-arsenite (2.5 mM), respectively. The additive part (h2 values) ranged from 0.12 to 0.86, with the lowest value for fluconazole (1 \u00b5g.ml\u22121) and the highest for sodium meta-arsenite (2.5 mM), respectively. While broad- and narrow-sense heritabilities are variable across conditions, we also observed that on average, most of the phenotypic variance can be explained by additive effects (mean h2\u00a0=\u00a00.55). However, non-additive components contribute significantly to some traits, explaining on average one third of the phenotypic variance observed (mean H2 - h2\u00a0=\u00a00.29) (Figure 2b). Despite a good correlation between broad- and narrow-sense heritabilities (Pearson\u2019s r\u00a0=\u00a00.809, p-value=1.921e-12) (Figure 2c), some traits display a larger non-additive contribution, such as in galactose (2%) or ketoconazole (10 \u00b5g/ml). Interestingly, we revealed that these two conditions revealed to be mainly controlled by dominance (see below). Altogether, our results highlight the main role of additive effects in shaping complex traits at a population-scale and clearly show that this is not restricted to the single yeast cross where this trend was first observed (Bloom et al., 2013; Bloom et al., 2015). Nonetheless, non-additive effects still explain a third of the observed phenotypic variance. This result also corroborates at a species-wide level the extensive impact of non-additive effects on phenotypic variance (Forsberg et al., 2017; Yadav et al., 2016).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/49258/elife-49258-fig2-v2.jpg)\n\n**Figure 2.:** (a) The whole bar represents the overall heritability (H2) for each condition tested. Orange part of the bars represents the narrow-sense heritability h2, that\u00a0is the fraction of phenotypic variance explained by additive effects, while blue part depicts the fraction of phenotypic variance explained by non-additive effects. (b) Overall mean additive and non-additive effects for every tested growth condition. (c) Representation of H2 as a function of h2 showing the relative additive versus non-additive effects for each condition. Outlier conditions in terms of non-additive variance will lie further away from the linear regression line. Person\u2019s r (95% confidence interval: 0.684\u20130.889) with the corresponding p-value is displayed.\n\n### Relevance of dominance for non-additive effects\n\nTo have a precise view of the non-additive components, the mode of inheritance and the relevance of dominance for genetic variance, we focused on the deviation of the hybrid phenotypes from the expected value under a full additive model. Under this model, the hybrid phenotype is expected to be equal to the mean between the two parental phenotypes, hereinafter referred as Mean Parental Value or Mid-Parent Value (MPV). Deviation from this MPV allowed us to infer the respective mode of inheritance for each hybrid/condition combination (Lippman and Zamir, 2007), that\u00a0is additivity, partial or complete dominance towards one or the other parent and finally overdominance or underdominance (Figure 3a\u2013b, see Materials\u00a0and\u00a0methods). Only 17.4% of all hybrid/condition combinations showed enough phenotypic separation between the parents and the corresponding hybrid, allowing the complete partitioning in the seven above-mentioned modes of inheritance. For the 82.6% remaining cases, only a separation of overdominance and underdominance can be achieved (Figure 3c). Interestingly, these events are not as rare as previously described (Z\u00f6rg\u00f6 et al., 2012), with 11.6% of overdominance and 10.1% of underdominance (Figure 3d). When a clear separation is possible (Figure 3e), one third of the condition/cross combinations detected were purely additive whereas the rest displayed a deviation towards one of the two parents, with no bias (Figure 3e). When looking at the inheritance mode in each condition, most of the studied growth conditions (32 out of 49) showed a prevalence of additive effects (Figure 3f). However, 17 conditions were not predominantly additive throughout the population. Indeed, a total of 12 conditions were detected as mostly dominant with 4 cases of best parent dominance, including galactose (2%) and ketoconazole (10 \u00b5g.ml\u22121), and 8 of worst parent dominance. The remaining five conditions displayed a majority of partial dominance (Figure 3f). These results confirm the importance of additivity in the global architecture of traits, but more importantly, they clearly demonstrate the major role of dominance as a driver for non-additive effects. Nevertheless, the presence of conditions with a high proportion of partial dominance combined with the cases of over and underdominance may indicate a strong and pervasive impact of epistasis on phenotypic variation.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/49258/elife-49258-fig3-v2.jpg)\n\n**Figure 3.:** (a) Representation of the different mode of inheritance depending on the hybrid value when a separation can be achieved between parental strains and (b) if a clear separation cannot be achieved between parental strains. (c) Percentage of parental phenotypes separated from each other for which a complete partition of different inheritance modes can be achieved. (d) Inheritance modes for every cross and condition where no separation can be achieved between the two homozygous parents. e. Inheritance modes for every cross and condition where a clear phenotypic separation can be achieved between the two homozygous parents. (f) The number of conditions in each main inheritance mode.\n\n### Diallel design allows mapping of low-frequency variants in the population using GWAS\n\nNext, we explored the contribution of low-frequency genetic variants (MAF\u00a0<0.05) to the observed phenotypic variation in our population. Genetic variants considered by GWAS must have a relatively high frequency in the population to be detectable, usually over 0.05 for relatively small datasets (Visscher et al., 2017). Consequently, low-frequency variants are evicted from classical GWAS. However, the diallel crossing scheme stands as a powerful design to assess the phenotypic impact of low-frequency variants present in the initial population as each parental genome is presented several times, creating haplotype mixing across the matrix and preserving the detection power in GWAS.\n\nTo avoid issues due to population structure, we selected a subset of hybrids from 34 unrelated isolates in the original panel to perform GWAS (see Materials\u00a0and\u00a0methods, Supplementary file 1). By combining known parental genomes, we constructed 595 hybrid genotypes in silico, matching one half matrix of the diallel plus the 34 homozygous diploids. We built a matrix of genetic variants for this panel and filtered SNPs to only retain biallelic variants with no missing calls. In addition, due to the small number of unique parental genotypes, extensive long-distance linkage disequilibrium was also removed (see Materials\u00a0and\u00a0methods), leaving a total of 31,632 polymorphic sites in the diallel population. Overall, 3.8% (a total of 1,180 SNPs) had a MAF lower than 0.05 in the initial population of the 1,011\u00a0S. cerevisiae isolates but surpassed this threshold in the diallel panel, reaching a MAF of 0.32 (Figure 4a\u2013b).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/49258/elife-49258-fig4-v2.jpg)\n\n**Figure 4.:** (a) Comparison of MAF for each SNP between the whole population (1011 strains) and the hybrid diallel matrix used for GWAS. Hollow blue circles represent the MAF of all SNPs common to the initial population and the diallel hybrids (31,632). Full orange circles show the MAF of significantly associated SNPs. Vertical orange line shows the 5% MAF threshold. (b) Proportion of SNPs with a MAF below 0.05. (c) Proportion of significantly associated SNPs with a MAF below 0.05. (d) Fraction of heritability explained for common and low-frequency variants. P-value was calculated using a two-sided Mann-Whitney-Wilcoxon test, difference in location of \u22124.5e\u22123 (95% confidence interval \u22127.9e\u22123 -1.4e\u22123). (e) Absolute effect size of common and low-frequency variants.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/49258/elife-49258-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (a) Variance explained for each significantly associated SNPs, for rare (MAF\u00a0<1%), low-frequency (MAF\u00a0<5%) and common (MAF\u00a0>5%) variants for both encoding models (in gray), additive encoding only (in orange) and overdominant encoding (in blue). All p-values are calculated using a two-sided Mann-Whitney-Wilcoxon test. (b) Position of the unique significantly associated SNPs. (c) Venn diagram comparing the overlap between the 546 unique genes in our dataset with the 178 known QTGs (Peltier et al., 2019)\u00a0and 195 QTGs recently highlighted (Bloom et al., 2019).\n\nTo map additive as well as non-additive variants impacting phenotypic variation, we performed GWA using two different models (Seymour et al., 2016) (see Materials\u00a0and\u00a0methods). We used a classical additive model, encoding for SNPs where linear relationship between trait and genotype is assessed, that\u00a0is every locus has a different encoding for each genotype. To account for non-additive inheritance, we also used an overdominant model, which only considers differences between heterozygous and homozygous thus revealing overdominant and dominant effects. For each of these two models, we performed mixed-model association analysis of the 49 growth conditions with FaST-LMM (Lippert et al., 2011; Widmer et al., 2015). Overall, GWAS revealed 1723 significantly associated SNPs (Figure 4\u2014source data 1) by detecting from 2 to 103 significant SNPs by condition, with an average of 39 SNPs per condition. Minor allele frequencies of the significantly associated SNPs were determined in the 1011 sequenced genomes, from which the diallel parents were selected (Figure 4). Interestingly, 16.3% of the significant SNPs (281 in total) corresponded to low-frequency variants (MAF\u00a0<0.05), with 19.5% of them (55 SNPs) being rare variants (MAF\u00a0<0.01). This trend is the same and maintained for both models, with 19.3% and 15.2% of low-frequency variants for the additive and overdominant models, respectively. Due to the scheme used, it is important to note that it is possible to increase the MAF of low-frequency variants at a detectable threshold in the diallel panel and to query their effects but it is still difficult for truly rare variants (MAF\u00a0<0.01), probably leading to an underestimation. However, these results clearly show that low-frequency variants indeed play a significant part in the phenotypic variance at the population-scale. We then estimated the contribution of the significant variants to total phenotypic variation (see Materials\u00a0and\u00a0methods) in our panel and found that detected SNPs could explained 15% to 32% of the variance, with a median of 20% (Figure 4d). When looking at the variance explained by each variant over their respective allele frequency, it is noteworthy that low-frequency variants explained roughly the same proportion of the phenotypic variation (median of 20.2%) than the common SNPs (median of 19.6%) (Figure 4d). In addition, the variance explained by the associated rare variants were also higher on average than the rest of the detected SNPs (Figure 4\u2014figure supplement 1a). It is noteworthy that this trend was robust and conserved across the two encoding models implemented, accounting for additive and overdominant effects (Figure 4\u2014figure supplement 1a). However, these results cannot be extrapolated to the whole population and only hold in the scope of our diallel population where these variants are now overrepresented compared to the natural population. Indeed, variance explained is related to the surveyed population because its value relies on the MAF of the variants. Therefore, in the whole natural population of 1011 isolates, their contribution to the phenotypic variance will be less important because of their lower MAF. To obtain a value that is unrelated to the studied population, we measured their respective effect size (Figure 4e). Here again we found that on average, low-frequency variant have about the same effect size (mean of 0.23 sd) than the common variants (mean of 0.25 sd).\n\nTo gain insight into the biological relevance of the set of associated SNPs, we first examined their distribution across the genome and found that 62.5% of them are in coding regions (with coding regions representing a total of 72.9% of the S. cerevisiae genome) (Figure 4\u2014figure supplement 1b), with all of these SNPs distributed over a set of 546 genes. Over the last decade, an impressive number of quantitative trait locus (QTL) mapping experiments were performed on a myriad of phenotypes in yeast leading to the identification of 145 quantitative trait genes (QTG) (Peltier et al., 2019) and we found that 19 of the genes we detected are included in this list (Figure 4\u2014figure supplement 1c). In addition, 22 associated genes were also found as overlapping with a recent large-scale linkage mapping survey in yeast (Bloom et al., 2019) (Figure 4\u2014figure supplement 1c). We then asked whether the associated genes were enriched for specific gene ontology (GO) categories (Supplementary file 3). This analysis revealed an enrichment (p-value=5.39\u00d710\u22125) in genes involved in \u2018response to stimulus\u2019 and \u2018response to stress\u2019, which is in line with the different tested conditions leading to various physiological and cellular responses.\n\n### SGD1 and the mapping of a low-frequency variant\n\nFinally, we focused on one of the most strongly associated genetic variant out of the 281 low-frequency variants significantly associated with a phenotype. The chosen variant was characterized by two adjacent SNPs in the SGD1 gene and was detected in 6-azauracile (100 \u00b5g.ml\u22121) with a p-value of 2.75e-8 with the overdominant encoding and 6.26e-5 with the additive encoding. Their MAF in the initial population is only 2.5% and reached 9% in the diallel panel with three genetically distant strains carrying it (Figure 5a). The SNPs are in the coding sequence of SGD1, an essential gene encoding a nuclear protein. The minor allele (AA) induces a synonymous change (TTG (Leu) \u2192 TTA (Leu)) for the first position and a non-synonymous mutation (GAA (Glu)\u2192 AAA (Lys)) for the second position (Figure 5a). The phenotypic advantage conferred by this allele was observed with a significant difference between the homozygous for the minor allele, heterozygous and homozygous for the major allele (Figure 5b). To functionally validate the phenotypic effect of this low-frequency variant, CRISPR-Cas9 genome-editing was used in the three strains carrying the minor allele (AA) in order to switch it to the major allele (GG) and assess its phenotypic impact. Both mating types have been assessed for each strain. When phenotyping the wildtype strains containing the minor allele and the mutated strains with the major allele, we observed that the minor allele confers a phenotypic advantage of 0.2 in growth ratio compared to the major allele (Figure 5c) therefore validating the important phenotypic impact of this low-frequency variant. However, no assumptions can be made regarding the exact effect of this allele at the protein-level because no precise characterization has ever been carried out on Sgd1p and no particular domain has been highlighted.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/49258/elife-49258-fig5-v2.jpg)\n\n**Figure 5.:** (a) Schematic representation of SGD1 with the relative position of the detected SNPs. The minor allele is represented in orange with its MAF in the population and in the diallel cross panel. (b) boxplot and density plot of the normalized growth ratios for each genotype on 6-azauracil 100 \u00b5g.ml\u22121. Number of observation is displayed in the boxplots. (c) Phenotypic validation after allele replacement of the minor allele with the major allele using CRISPR-Cas9 in the strains carrying the minor allele. Error bars represent median absolute deviation (four replicates).\n\n## Discussion\n\nUnderstanding the source of the missing heritability is essential to precisely address and dissect the genetic architecture of complex traits. Over the years, the diallel hybrid panel design has proven its strength to dissect part of the genetic architecture of traits in populations. One of the main advantages of using such experimental design is the ability to precisely isolate the part of phenotypic variance that is controlled by additive effects from the one controlled by non-additive effects. While our analysis revealed that an important part of the phenotypic variance is linked to additive effects, about a third remains ruled by non-additive interactions encompassing dominance and epistasis. These results are in line with previous findings.\n\nHowever, care should be taken with the classification of the mode of inheritance. Indeed, as we do not know how many loci are involved for each hybrid\u2019s phenotype, we can only assess the final phenotypic outcome of all the genetic variants involved and not on a locus by locus basis. This classification does not take into account their number, effect size and interactions. Consequently, the mode of inheritance that we described here solely reflects how the phenotype of the hybrid varies with respect to its parents. For example, several interactions could take place with opposite effect, leading to a final phenotype that appears as being controlled by an additive mode of inheritance (i.e. the hybrid phenotype equal to the mid parent value). However, in the cases where dominance was detected as a mode of inheritance, this might reflect the presence of a single locus having a strong phenotypic impact acting dominantly thus being responsible by itself for the phenotype. Yet, if two hybrids show a complete dominance in the same condition, it does not mean that the same alleles are involved in both.\n\nAlthough few low-frequency and rare variants were considered in our GWAS (4%) due to stringent filtering conditions, a strong enrichment in these variants has been observed in the significantly associated ones (16%), demonstrating the ubiquity of low-frequency variants with important phenotypic impact. However, when looking at the population level, even though they do have effect sizes similar to common variants, they are not going to explain an important part of variance because it relies both on effect size and allele frequency. A good example of this phenomenon has been seen with a study of human height in more than 700,000 individuals. A total of 83 significantly associated rare and low-frequency variants with effect sizes up to 2 cm have been mapped (Marouli et al., 2017). On average, they explained the same amount of phenotypic variation as common variants, which displayed much smaller effect sizes of about 1 mm. Our results suggest that a high number of low-frequency variants play a decisive role in the phenotypic landscape of a population both in term of number and effect size. Taken one by one, they do not explain a lot of phenotypic variance in a large population. Yet, altogether, they might actually explain a greater part of the variation than the one explained by common variants.\n\nThe contribution of rare and low-frequency variants to traits is largely unexplored. In humans, these genetic variants are widespread but only a few of them have been associated with specific traits and diseases (Walter et al., 2015). Recently, it has been shown that the missing heritability of height and body mass index is accounted for by rare variants (Wainschtein et al., 2019). We also recently found in yeast that most of the previously identified Quantitative Trait Nucleotides (QTNs) using linkage mapping were at low allele frequency in the 1,011\u00a0S. cerevisiae population (Hou et al., 2016; Hou et al., 2019; Peltier et al., 2019; Peter et al., 2018). A total of 284 QTNs were identified by linkage mapping and 150 of them are present at a low frequency in the population of 1011 isolates (Peltier et al., 2019; Peter et al., 2018). However, these QTNs were mapped with mostly closely related genetic backgrounds, encompassing a total of 59 strains with 30% of them coming from laboratory and 41% coming from the wine cluster, which has a very low genetic diversity (Peter et al., 2018). Moreover, experimentally validated QTNs are, most of the time, genetic variants with the most important phenotypic impact, which has been previously recognized as inducing an ascertainment bias (Rockman, 2012). It also raised the question of whether these rare and large effect size alleles discovered in specific crosses are really relevant to the variation across most of the population.\n\nHere, we quantified the contribution of low-frequency variants across a large number of growth conditions and found that among all the genetic variants detected by GWAS on a diallel panel, 16.3% of them have a low-frequency in the initial population and explain a significant part of the phenotypic variance (21% on average). This particular diallel design also presents an intrinsic power to evaluate the additive vs. non-additive genetic components contributing to the phenotypic variation. We assessed the effect of intra-locus dominance on the non-additive genetic component and showed that dominance at the single locus level contributed to the phenotypic variation observed. However, other more complicated inter-loci interactions may still be involved. Altogether, these results have major implications for our understanding of the genetic architecture of traits in the context of unexplained heritability. In parallel to a recent large-scale linkage mapping survey in yeast (Bloom et al., 2019), our study highlights the extensive role of low-frequency variants on the phenotypic variation.\n\n## Materials and methods\n\n### Construction of the diallel panel\n\n#### Selection of the S. cerevisiae isolates\n\nOut of the collection of 1011 strains (Peter et al., 2018), a total of 53 natural isolates were carefully selected to be representative of the S. cerevisiae species. We selected isolates from a broad ecological origins and we prioritized for strains that were diploid, homozygous, euploid and genetically as diverse as possible, that\u00a0is up to 1% of sequence divergence. All the isolate details, including ecological and geographical origins, are listed in Supplementary file 1. In addition to these 53 isolates, we included two laboratory strains, namely \u22111278b and the reference S288c strain.\n\n### Generation of stable haploids\n\nFor each selected parental strain, stable haploid strains were obtained by deleting the HO locus. The HO deletions were performed using PCR fragments containing drug resistance markers flanked by homology regions up and down stream of the HO locus, using standard yeast transformation method. Two resistance cassettes, KanMX and NatMX, were used for MATa and MAT\u03b1 haploids, respectively. The mating-type (MATa and MAT\u03b1) of antibiotic-resistant clones was determined using testers of well-known mating type. For each genetic background, we selected a MATa and MAT\u03b1 clone that are resistant to G418 or nourseothricin, respectively.\n\nPhenotyping of the parental haploid strains was performed to check for mating type-specific fitness effects. All MATa and MAT\u03b1 parental strains were tested on all 49 growth conditions (see below) using the same procedure as the phenotyping assay of the hybrid matrix. The overall correlation between the MATa and MAT\u03b1 parental strains was 0.967 (Pearson, p-value<1e-324), with an average correlation per strain of 0.976 across different conditions (Figure 1\u2014figure supplement 3). No significant mating type specificity was identified.\n\n### Diallel scheme\n\nParental strains were arrayed and pregrown in liquid YPD (1% yeast extract, 2% peptone and 2% glucose) overnight. Mating was performed with ROTOR (Singer Instruments) by pinning and mixing MATa over MAT\u03b1 parental strains on solid YPD. The parental strains, that\u00a0is 55 MATa HO::\u2206KanMX and 55 MAT\u03b1 HO::\u2206NatMX strains were arrayed and mated in a pairwise manner on YPD for 24 hr at 30\u00b0C. The mating mixtures were replicated on YPD supplemented with G418 (200 \u00b5g.ml\u22121) and nourseothricin (100 \u00b5g.ml\u22121) for double selection of hybrid individuals. After 24 hr, plates were replicated again on the same media to eliminate potential residuals of non-hybrids cells. In total, we generated 3025 hybrids, representing 2970 heterozygous hybrids with a unique parental combination and 55 homozygous hybrids.\n\n### High-throughput phenotyping and growth quantification\n\nQuantitative phenotyping was performed using endpoint colony growth on solid media. Strains were pregrown in liquid YPD medium and pinned onto a solid SC (Yeast Nitrogen Base with ammonium sulfate 6.7 g.l\u22121, amino acid mixture 2 g.l\u22121, agar 20 g.l\u22121, glucose 20 g.l\u22121) matrix plate to a 1536 density format using the replicating ROTOR robot (Singer Instruments). Two biological replicates (coming from independent cultures) of each parental haploid strain were present on every plate and six biological replicates were present for each hybrid. As 27 plates were used in order to phenotype all the hybrids, 27 technical replicates (same culture in different plates) of the parents were present. The resulting matrix plates were incubated overnight to allow sufficient growth, which were then replicated onto 49 media conditions, plus SC as a pinning control (Figure 1\u2014figure supplement 1, Supplementary file 2). The selected conditions impact a broad range of cellular responses, and multiple concentrations were tested for each compound (Figure 1\u2014figure supplement 2). Most tested conditions displayed distinctive phenotypic patterns, suggesting different genetic basis for each of them (Figure 1\u2014figure supplement 2). The plates were incubated for 24 hr at 30\u00b0C (except for 14\u00b0C phenotyping) and were scanned with a resolution of 600 dpi at 16-bit grayscale. Quantification of the colony size was performed using the R package Gitter (Wagih and Parts, 2014) and the fitness of each strain on the corresponding condition was measured by calculating the normalized growth ratio between the colony size on a condition and the colony size on SC. As each hybrid is present in six replicates, the value considered for its phenotype is the median of all its replicates, thus smoothing the effects of pinning defect or contamination. This phenotyping step led to the determination of 148,225 hybrid/trait combinations (Figure 1\u2014source data 1).\n\n### Diallel combining abilities and heritabilities\n\nCombining ability values were calculated using half diallel with unique parental combinations, excluding homozygous hybrids from identical parental strains. For each hybrid individual, the fitness value is expressed using Griffing\u2019s model (Griffing, 1956):\n\n$$\nz_{ij}=\\mu+g_{i}+\u00a0g_{j}+s_{ij}+e\n$$\n\nWhere $z_{ij}$ is the fitness value of the hybrid resulting from the combination of ith and jth parental strains, $z_{ij}$ is the mean population fitness, $\\mu$ and $g_{i}$ are the general combining ability for the ith and jth parental strains, $g_{j}$ is the specific combining ability associated with the $s_{ij}$ hybrid, and e is the error term (i = 1...N, j = 1\u2026N, N = 55). General combining ability for the ith parent is calculated as:\n\n$$\ni\\timesj\n$$\n\nWhere N is the total number of parental types, $g_{i}^=\\frac{N-1}{N-2}\\timesz_{i\u2219}\u00af-\\mu$ is the mean fitness value of all half sibling hybrids involving the ith parent, and $z_{i\u2219}-$ is the population mean. The error term associated with $\\mu$ is:\n\n$$\ng_{i}\n$$\n\nWhere N is the total number of parental types, n is the number of replicates for the $e_{g_{i}}=\\sqrt{\\frac{N-1\\times\\sigma^{2}z_{ij\u2219}}{n\\timesN\\timesN-2}}$ hybrid, and $i\\timesj$ is the variance of fitness values from a full-sib family involving the ith and jth parents, which is expressed as:\n\n$$\n\\sigma^{2}z_{ij\u2219}\n$$\n\nSpecific combining ability for the $\\sigma^{2}z_{ij\u2219}=\\sigma^{2}z_{i}+\\sigma^{2}z_{j}+\\sigma^{2}z_{ij}+2\\timescovz_{i},z_{j}$ hybrid combination therefore:\n\n$$\ni\\timesj\n$$\n\nThe error term associated with $s_{ij}^=z_{ij\u2219}--g_{i}^-g_{j}^-\\mu$ is:\n\n$$\ns_{ij}^\n$$\n\nUsing combining ability estimates, broad- and narrow-sense heritabilities can be calculated. Narrow sense heritability (h2) accounts for the part of phenotypic variance explained only by additive variance, expressed as the additive variance ($e_{s_{ij}}=\\sqrt{\\frac{N-3\\times\\sigma^{2}z_{ij\u2219}}{n\\timesN-1}}$) over the total phenotypic variance observed ($\\sigma_{A}^{2}$):\n\n$$\n\\sigma_{P}^{2}\n$$\n\nWhere $h^{2}=\\frac{\\sigma_{A}^{2}}{\\sigma_{P}^{2}}=\\frac{\\sigma_{(g_{i}+g_{j})}^{2}}{\\sigma_{(g_{i}+g_{j})}^{2}+\\sigma_{s_{ij}}^{2}+\\sigma_{e}^{2}}$ is the sum of GCA variances, $\\sigma_{(g_{i}+g_{j})}^{2}$ is the SCA variance and $\\sigma_{s_{ij}}^{2}$ is the variance due to measurement error, which is expressed as:\n\n$$\n\\sigma_{e}^{2}\n$$\n\nOn the other hand, broad-sense heritability (H2) depicts the part of the phenotypic variance explained by the total genetic variance $\\sigma_{e}^{2}=N-2e_{g_{i}}-+e_{g_{j}}--^{2}+\\frac{\\frac{N^{2}-N}{2}-1}{\\frac{N^{2}-N}{2}+N-3}\\timese_{s_{ij}}-^{2}$:\n\n$$\n\\sigma_{G}^{2}\n$$\n\nPhenotypic variance explained by non-additive variance is therefore equal to the difference between H2 and h2. All calculations were performed in R using custom scripts.\n\n### Calculation of mid-parent values and classification of mode of inheritance\n\nMid-Parent Value (MPV) is expressed as the mean fitness value of both diploid homozygous parental phenotypes:\n\n$$\nH^{2}=\\frac{\\sigma_{G}^{2}}{\\sigma_{P}^{2}}=\\frac{\\sigma_{g_{i}+g_{j}}^{2}+\\sigma_{s_{ij}}^{2}}{\\sigma_{(g_{i}+g_{j})}^{2}+\\sigma_{s_{ij}}^{2}+\\sigma_{e}^{2}}\n$$\n\nComparing the hybrid phenotypic value (Hyb) to its respective parents\u2019 allows for an inference of the mode of inheritance for each hybrid/trait combination (Figure 3a\u2013b). To obtain a robust classification, confidence intervals for each class were based on the standard deviation of hybrid (six replicates) and parents (54 replicates). P2 is the phenotypic value of the fittest parent while P1 is the phenotypic value of the least fit parent.\n\n<table>\n  <thead>\n    <tr>\n      <th>Inheritance mode</th>\n      <th>Formula</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Underdominance</td>\n      <td>Hyb&lt;P1\u2212(\u03c3P1+\u03c3Hyb)</td>\n    </tr>\n    <tr>\n      <td>Dominance P1</td>\n      <td>P1\u2212(\u03c3P1+\u03c3Hyb)&lt;Hyb&lt;P1+(\u03c3P1+\u03c3Hyb)</td>\n    </tr>\n    <tr>\n      <td>Partial dominance P1</td>\n      <td>P1+(\u03c3P1+\u03c3Hyb)&lt;Hyb&lt;MPV\u2212(\u03c3P1+\u03c3P22+\u03c3Hyb)</td>\n    </tr>\n    <tr>\n      <td>Additivity</td>\n      <td>MPV+(\u03c3P1+\u03c3P22+\u03c3Hyb)&lt;Hyb&lt;P2\u2212(\u03c3P2+\u03c3Hyb)</td>\n    </tr>\n    <tr>\n      <td>Partial dominance P2</td>\n      <td>MPV\u2212(\u03c3P1+\u03c3P22+\u03c3Hyb)&lt;Hyb&lt;MPV+(\u03c3P1+\u03c3P22+\u03c3Hyb)</td>\n    </tr>\n    <tr>\n      <td>Dominance P2</td>\n      <td>P2\u2212(\u03c3P2+\u03c3Hyb)&lt;Hyb&lt;P2+(\u03c3P2+\u03c3Hyb)</td>\n    </tr>\n    <tr>\n      <td>Overdominance</td>\n      <td>P2+(\u03c3P2+\u03c3Hyb)&lt;Hyb</td>\n    </tr>\n  </tbody>\n</table>\n\nWhen a clear separation is possible between the two parental phenotypic values ($P1+\\sigma_{P1}<P2\u2212\\sigma_{P2}$),the full decomposition in the seven above mentioned categories is possible (Figure 3a). However, in most of the cases, the two parental phenotypic values are not separated enough to achieve this but it is still possible to distinguish between overdominance and underdominance (Figure 3b, Figure 3d). All calculations were performed in R using custom scripts.\n\n### Genome-wide association studies on the diallel panel\n\nWhole genome sequences for the parental strains were obtained from the 1002 yeast genome project (Peter et al., 2018). Sequencing was performed by Illumina Hiseq 2000 with 102 bases read length. Reads were then mapped to S288c reference genome using bwa (v0.7.4-r385) (Li and Durbin, 2009). Local realignment around indels and variant calling has been performed with GATK (v3.3\u20130) (McKenna et al., 2010). The genotypes of the F1 hybrids were constructed in silico using 34 parental genome sequences. We retained only the biallelic polymorphic sites, resulting in a matrix containing 295,346 polymorphic sites encoded using the \u2018recode12\u2019 function in PLINK (Chang et al., 2015). Those genotypes correspond to a half-matrix of pairwise crosses with unique parental combinations, including the diagonal,that\u00a0is\u00a0the 34 homozygous parental genotypes. For each cross, we combined the genotypes of both parents to generate the hybrid diploid genome. As a result, heterozygous sites correspond to sites for which the two parents had different allelic versions. We removed long-range linkage disequilibrium sites in the diallel matrix due to the low number of founder parental genotypes by removing haplotype blocks that are shared more than twice across the population, resulting in a final dataset containing 31,632 polymorphic sites.\n\nWe performed GWA analyses with different encodings (Seymour et al., 2016). In the additive model, the genotypes of the F1 progeny were simply the concatenation of the genotypes from the parents. As homozygous parental alleles were encoded as 1 or 2, the possible alleles for each site in the F1 genotype were \u201811\u2019 and \u201822\u2019 for homozygous sites and \u201812\u2019 for heterozygous sites. We also used an overdominant genotype encoding, where both the homozygous minor and homozygous major alleles were encoded as \u201811\u2019 and the heterozygous genotype was encoded as \u201822\u2019.\n\nMixed-model association analysis was performed using the FaST-LMM python library version 0.2.32 (https://github.com/MicrosoftGenomics/FaST-LMM) (Widmer et al., 2015). We used the normalized phenotypes by replacing the observed value by the corresponding quantile from a standard normal distribution, as FaST-LMM expects normally distributed phenotypes. The command used for association testing was the following: single_snp(bedFiles, pheno_fn, count_A1\u00a0=\u00a0True), where bedFiles is the path to the PLINK formatted SNP data and pheno_fn is the PLINK formatted phenotype file. By default, for each SNP tested, this method excludes the chromosome in which the SNP is found from the analysis in order to avoid proximal contamination. Fast-LMM also computes the fraction of heritability explained for each SNP. The mixed model adds a polygenic term to the standard linear regression designed to circumvent the effects of relatedness and population stratification.\n\nWe estimated a condition-specific p-value threshold for each condition by permuting phenotypic values between individuals 100 times. The significance threshold was the 5% quantile (the 5th lowest p-value from the permutations). With that method, variants passing this threshold will have a 5% family-wise error rate. However, we do not have any estimation of the false positive rate. Taken together, GWA revealed 1723 significantly associated SNPs (Figure 4\u2014source data 1), with 1273 and 450 SNPs for overdominant and additive model, respectively.\n\n### Variance explained and effect size\n\nVariance explained by each SNP is calculated by PLINK. Care must be taken that in order to obtain the variance explained by all SNPs, it is not possible to sum up the variance explained by each individual SNP based on the fact that SNPs are not completely independent from one another.\n\nThe effect size was calculated using the formula for Cohen's d:\n\n$$\nP1+\\sigma_{P1}<P2-\\sigma_{P2}\n$$\n\nWhere the pooled standard deviation is calculated with the following formula:\n\n$$\nsd_{Pooled}=\\sqrt{\\frac{sd_{1}^{2}+sd_{2}^{2}}{2}}\n$$\n\nUnder the additive model, the heterozygote phenotype is equidistant to both possible homozygote phenotypes (minor allele and major allele), so our calculation of the effect size could either compare the heterozygotes with the homozygotes in the minor allele, or the heterozygotes with the homozygotes in the major alleles. We chose to use the latter since the major allele grants us more statistical power. The formula we used to obtain the effect size for a given SNP under this model is the following:\n\n$$\nsd_{Pooled}=\\sqrt{\\frac{sd_{1}^{2}+sd_{2}^{2}}{2}}\n$$\n\nUnder the overdominant model, the heterozygote phenotype is compared to the phenotype of the group of both homozygotes (minor and major), so the formula we used to obtain the effect size for a given SNP under this model is the following:\n\n$$\nEffectsize=\\frac{x_{Heterozygous}--x_{Major}-}{sd_{Pooled}}\n$$\n\n### Gene ontology analysis\n\nGO term enrichment was performed using SGD GO Term Finder (https://www.yeastgenome.org/goTermFinder) with the 546 unique genes containing significantly associated SNPs (Figure 4\u2014source data 1 and Supplementary file 3). Significant enrichment is considered under \u2018Process\u2019 ontology with a p-value cutoff of 0.05.\n\n### CRISPR-Cas9 allele editing\n\npAEF5 plasmid containing Cas9 endonuclease and the guide RNA targeting SGD1 was co-transformed with the repair fragment of 100 nucleotides containing the desired allele. Transformed cells were then plated on YPD supplemented with 200 \u00b5g.ml\u22121 hygromycin at 30\u00b0C to select for transformants. Colonies were then arrayed on a 96 well plate with 100 \u00b5l YPD and grown for 24 hr to induce plasmid loss. The plate was then pinned back onto solid YPD for 24 hr then replica plated to YPD supplemented with 200 \u00b5g.ml\u22121 hygromycin to check for plasmid loss. Allele specific PCR was performed on colonies that lost the plasmid (Wangkumhang et al., 2007) to distinguish correctly edited allele from wildtype allele. Strains who showed amplification for the edited allele and no amplification for the wildtype allele were phenotyped (four technical replicates and four biological replicates) on the corresponding condition to measure differences with their wildtype counterparts.\n\n### Statistical tests\n\nPerson\u2019s correlation test was used to assess linear correlation between two sets.\n\nWilcoxon Mann Whitney was used to determine if two independent samples have the same distribution.\n\nCorrelogram of all tested growth conditions. Numbers in each cell represent 100 x Pearson\u2019s r value.\n",
+      "created_at": "2025-12-02T12:58:35.492325Z"
+    },
+    {
+      "id": "d46af873-3a00-400a-9a82-7ef3e9033dab",
+      "submission_id": "dbf288c0-801a-4e8a-91e3-c1c622fb3110",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Christian R Landry, Universit\u00e9 Laval Canada\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.49258.020](https://doi.org/10.7554/eLife.49258.020)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nThe authors examine the relationship between the frequency of genetic variants in natural populations and their effects on complex growth traits using the budding yeast as a model. They find that high-impact variants tend to be rare and that their effects often combine in a non-additive manner. Their results contribute to a better understanding of phenotypic diversity and will help future developments in the use of natural populations for the mapping of genetic variation underlying complex traits such as those using GWAS in which low-frequency variants represent a particular challenge. Their observations are therefore of interest to a large community of scientists interested in evolution, genetics and particularly in the architecture of complex traits. The data produced and approach developed also represent an important resource for the community.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Extensive impact of low-frequency variants on the phenotypic landscape at population-scale\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Naama Barkai as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nYour paper examines the correlation between allele frequencies and their effects on quantitative characters using QTL mapping and the analysis of a large number of genomes. You find that rare variants explain an unexpectedly large proportion of phenotypic variance. Your study is one of the first to examine this association systematically. Overall, the reviewers found the work of interest and to be a potentially important contribution. One major concern that emerged from the reviews and the discussions among the reviewers is that the importance of the work will not be obvious for non-specialists. One reviewer also mentions that similar conclusions could have been obtained from a meta-analysis of the existing literature. Since eLife is a generalist journal, it would be crucial to better articulate why the study is important and how the findings will impact the field of genetics and maybe evolution in general. More theoretical background as to why variants with large impacts on phenotypes should be rare or vice-versa would be useful. The manuscript is currently very short so you have plenty of space to extend on these points in the Introduction and in the Discussion. One reviewer also suggested you extend the analysis and text on the implication of the conditions tested for yeast biology, which I believe would strengthen the paper as well in terms of impact.\n\nI collated below the other comments of the reviewers that are essential points to consider if you want to submit a revised version.\n\nEssential revisions:\n\n1) For a polygenic trait, the distinction between dominance and additivity isn't a relevant one. For example, you could have 100 loci, each is completely dominance, but if they are additive between loci, the hybrid test will appear additive. The latter results by GWAS suggest that a lot of variants have over-dominant effect (at least some over-dominant component). I can see what the authors are trying to do here, i.e., to assess the contribution of additivity versus other non-additive effects, but I think as long as there are many loci and there is some degree of additivity between loci, everything will appear additive. I think the distinction between additive and non-additive effects are only relevant when discussing one locus. If you had a panel of near-isogenic lines, a diallel experiment could answer the question of additivity versus non-additivity. The results from this analysis are still useful and I would suggest the authors simply report the results without invoking the term of additivity versus dominance. Alternatively, clearly state the caveats so readers don't mis-read the interpretation.\n\n2) I have a somewhat different interpretation of the rare versus common comparison. There are a few facts nicely presented. 1) although there are fewer rare variants in the diallel than common ones, rare variants are more likely to be associated with the traits. This is a major finding. 2) On a per variant basis, common and low-frequency variants explain about the same amount of variation. This means the effect size should be larger for rare variants than common variants. I don't think the statistical significance in Figure 4D is worth highlighting, the difference was minimal (20.2% versus 19.6% with a large variance). Power is proportional to variance explained so it's expected that these two groups produce more or less equal variance on a per variant basis if using the same threshold. However, in the diallel, there are way more common variants than rare variants. This means in the diallel, more variance is explained by common variants as a whole. I can see that if rare variants are more likely to be associated with traits, then in an outbred population, they could also be disproportionally associated with traits but more difficult to detect. I would appreciate some discussion on the contribution by a per-variant basis and overall contribution.\n\n3) The main conclusion of the manuscript is that rare variants significantly contribute to genetic variance. In my view, this conclusion is biased as these rare causal variants are being analyzed in genetic backgrounds in which they are no longer rare; actually, these variants are biallelic. Several studies have shown that a rare variant of MKT1(89A) is a significant contributor to phenotypic variation whenever it is present in segregating populations. However, MKT1(89A) allele hardly identified when one of the parents is not S288c, the strain which harbours this allele. So the extension that if the rare variant has a significant effect in a sub-population, its effect size would be similar in a large heterogeneous population is false. Furthermore, the authors conclude that their larger 55 strain population, a representative distribution of 1000 strain collection, most of the variants have additive effects. This the authors claim is revalidation of other previous studies (Bloom et al., 2013, 2015), where they identified most of the causal variants between BYxRM had additive effects. However, subsequent papers (Frosberg et al. 2017, PMID 28250458; Yadav et al. 2016) showed that variance mapping in BYxRM segregants helped to account for genetic interactions and showed how non-additive interactions also contribute significantly to phenotypic variation. One of the results in the manuscript that non-additive effects contribute 1/3rd to phenotypic variance indicates that additive effects do not explain all effects with dominance, a non-additive interaction, being a significant contributor. Also, the authors fail to explain why dominance is so frequently observed in their diallelic panel. A possible reason could be that one variant is selected for a trait better than the other, and in combination with a weaker or neutral allele, it shows dominance.\n\n4) I find that just doing a few more strains does not make this manuscript a significant advance over the previous studies. One can argue that taking into account all causal variants identified to date (Fay, 2013), one can identify what frequency of rare variants have been identified, e.g. a typical example being MKT1(89A) allele as causal, even though their effect size will not be identified using this strategy. Peltier et al., 2019, show that 284 rare QTNs variants have been identified to date and these functional variants being private to a subpopulation, possibly due to their adaptive role to a specific environment. Moreover, this conclusion can be made without these extensive experimental crosses.\n",
+      "created_at": "2025-12-02T12:58:35.492325Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T12:58:35.492325Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T12:58:35.492325Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "3dc7e65e-03eb-4cbd-830b-dcaf63edd889",
+      "content_id": "677ae846-a866-4e2c-8b82-b69c5935fe83",
+      "claim_id": "C1",
+      "claim": "A diallel panel of 3025 yeast hybrids was generated from pairwise crosses between 55 natural isolates.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on the genomic and phenotypic data from the 1,011 S. cerevisiae isolate collection (Peter et al., 2018), we selected a subset of 55 isolates that were diploid, homozygous, genetically diverse (Figure 1a), and originated from a broad range of ecological sources (Figure 1b) (e.g. tree exudates, Drosophila, fruits, fermentation processes, clinical isolates) as well as geographical origins (Europe, America, Africa and Asia) (Figure 1c and Supplementary file 1). A full diallel cross panel was constructed by systematically crossing the 55 selected isolates in a pairwise manner (Figure 1d). In total, we generated 3025 hybrids, representing 2970 heterozygous hybrids with a unique parental combination and 55 homozygous hybrids.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the experimental design and reports the number of hybrids generated from the diallel cross.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:58:35.492325Z"
+    },
+    {
+      "id": "a9b070eb-8692-4cd9-8672-bb5cf0091b35",
+      "content_id": "677ae846-a866-4e2c-8b82-b69c5935fe83",
+      "claim_id": "C2",
+      "claim": "All 3025 hybrids were viable, indicating no dominant lethal interactions existed between the parental isolates.",
+      "claim_type": "EXPLICIT",
+      "source": "All 3025 hybrids were viable, indicating no dominant lethal interactions existed between the parental isolates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports the observation that all hybrids were viable.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:58:35.492325Z"
+    },
+    {
+      "id": "761ffa0a-cae7-4646-8e07-2e19c145d4bc",
+      "content_id": "677ae846-a866-4e2c-8b82-b69c5935fe83",
+      "claim_id": "C3",
+      "claim": "The diallel panel was phenotyped across 49 growth conditions that induce various physiological and cellular responses.",
+      "claim_type": "EXPLICIT",
+      "source": "We then screened the entire set of the parental isolates and hybrids for quantification of mitotic growth abilities across 49 conditions that induce various physiological and cellular responses (Figure 1\u2014figure supplement 1, Figure 1\u2014figure supplement 2, Supplementary file 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript describes the phenotyping experiment and references figures showing the conditions tested.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:58:35.492325Z"
+    },
+    {
+      "id": "50eaefeb-67f5-4c03-9580-a82c44435938",
+      "content_id": "677ae846-a866-4e2c-8b82-b69c5935fe83",
+      "claim_id": "C4",
+      "claim": "The phenotyping step led to the characterization of 148,225 hybrid/trait combinations.",
+      "claim_type": "EXPLICIT",
+      "source": "Ultimately, this phenotyping step led to the characterization of 148,225 hybrid/trait combinations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports the total number of hybrid/trait combinations characterized.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:58:35.492325Z"
+    },
+    {
+      "id": "9798b8f5-1c67-49d6-8a10-9ce1a51d0aa3",
+      "content_id": "677ae846-a866-4e2c-8b82-b69c5935fe83",
+      "claim_id": "C5",
+      "claim": "The 55 selected isolates were diploid, homozygous, and genetically diverse.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on the genomic and phenotypic data from the 1,011 S. cerevisiae isolate collection (Peter et al., 2018), we selected a subset of 55 isolates that were diploid, homozygous, genetically diverse (Figure 1a), and originated from a broad range of ecological sources (Figure 1b) (e.g. tree exudates, Drosophila, fruits, fermentation processes, clinical isolates) as well as geographical origins (Europe, America, Africa and Asia) (Figure 1c and Supplementary file 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript describes the selection criteria for the parental isolates and references a figure showing genetic diversity.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:58:35.492325Z"
+    },
+    {
+      "id": "81f10e84-11a1-4314-a968-55d1221c5773",
+      "content_id": "677ae846-a866-4e2c-8b82-b69c5935fe83",
+      "claim_id": "C6",
+      "claim": "The selected isolates originated from a broad range of ecological sources including tree exudates, Drosophila, fruits, fermentation processes, and clinical isolates.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on the genomic and phenotypic data from the 1,011 S. cerevisiae isolate collection (Peter et al., 2018), we selected a subset of 55 isolates that were diploid, homozygous, genetically diverse (Figure 1a), and originated from a broad range of ecological sources (Figure 1b) (e.g. tree exudates, Drosophila, fruits, fermentation processes, clinical isolates) as well as geographical origins (Europe, America, Africa and Asia) (Figure 1c and Supplementary file 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript lists the ecological sources of the selected isolates and references a figure showing this information.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:58:35.492325Z"
+    },
+    {
+      "id": "a7e42af8-f2bd-4bbc-9f42-3b5c732ea568",
+      "content_id": "677ae846-a866-4e2c-8b82-b69c5935fe83",
+      "claim_id": "C7",
+      "claim": "The selected isolates originated from geographical origins including Europe, America, Africa and Asia.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on the genomic and phenotypic data from the 1,011 S. cerevisiae isolate collection (Peter et al., 2018), we selected a subset of 55 isolates that were diploid, homozygous, genetically diverse (Figure 1a), and originated from a broad range of ecological sources (Figure 1b) (e.g. tree exudates, Drosophila, fruits, fermentation processes, clinical isolates) as well as geographical origins (Europe, America, Africa and Asia) (Figure 1c and Supplementary file 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript lists the geographical origins and references a figure showing this information.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:58:35.492325Z"
+    },
+    {
+      "id": "9f4ca46f-9e2e-4c14-ad32-6bca0cf9d1a8",
+      "content_id": "677ae846-a866-4e2c-8b82-b69c5935fe83",
+      "claim_id": "C8",
+      "claim": "Broad-sense heritability (H2) values for each condition ranged from 0.64 to 0.98.",
+      "claim_type": "EXPLICIT",
+      "source": "The H2 values for each condition ranged from 0.64 to 0.98, with the lowest value observed for fluconazole (1 \u00b5g.ml\u22121) and the highest for sodium meta-arsenite (2.5 mM), respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports the range of H2 values calculated from the diallel analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:58:35.492325Z"
+    },
+    {
+      "id": "fbd84133-b947-4b48-9040-868db44c52f1",
+      "content_id": "677ae846-a866-4e2c-8b82-b69c5935fe83",
+      "claim_id": "C9",
+      "claim": "The lowest broad-sense heritability value was observed for fluconazole (1 \u00b5g.ml\u22121).",
+      "claim_type": "EXPLICIT",
+      "source": "The H2 values for each condition ranged from 0.64 to 0.98, with the lowest value observed for fluconazole (1 \u00b5g.ml\u22121) and the highest for sodium meta-arsenite (2.5 mM), respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript identifies the condition with the lowest H2 value.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:58:35.492325Z"
+    },
+    {
+      "id": "bf5632a8-7aaf-42cc-8271-5c47363d3342",
+      "content_id": "677ae846-a866-4e2c-8b82-b69c5935fe83",
+      "claim_id": "C10",
+      "claim": "The highest broad-sense heritability value was observed for sodium meta-arsenite (2.5 mM).",
+      "claim_type": "EXPLICIT",
+      "source": "The H2 values for each condition ranged from 0.64 to 0.98, with the lowest value observed for fluconazole (1 \u00b5g.ml\u22121) and the highest for sodium meta-arsenite (2.5 mM), respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript identifies the condition with the highest H2 value.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:58:35.492325Z"
+    },
+    {
+      "id": "87c9069e-b948-45fb-8636-3569512e7971",
+      "content_id": "677ae846-a866-4e2c-8b82-b69c5935fe83",
+      "claim_id": "C11",
+      "claim": "Narrow-sense heritability (h2) values ranged from 0.12 to 0.86.",
+      "claim_type": "EXPLICIT",
+      "source": "The additive part (h2 values) ranged from 0.12 to 0.86, with the lowest value for fluconazole (1 \u00b5g.ml\u22121) and the highest for sodium meta-arsenite (2.5 mM), respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports the range of h2 values calculated from the diallel analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:58:35.492325Z"
+    },
+    {
+      "id": "fdf3e26c-cfd0-44d9-808b-3e5b1ba92421",
+      "content_id": "677ae846-a866-4e2c-8b82-b69c5935fe83",
+      "claim_id": "C12",
+      "claim": "The lowest narrow-sense heritability value was observed for fluconazole (1 \u00b5g.ml\u22121).",
+      "claim_type": "EXPLICIT",
+      "source": "The additive part (h2 values) ranged from 0.12 to 0.86, with the lowest value for fluconazole (1 \u00b5g.ml\u22121) and the highest for sodium meta-arsenite (2.5 mM), respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript identifies the condition with the lowest h2 value.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:58:35.492325Z"
+    },
+    {
+      "id": "471a3ae7-7dd8-438c-a3b4-89e10cf97c7f",
+      "content_id": "677ae846-a866-4e2c-8b82-b69c5935fe83",
+      "claim_id": "C13",
+      "claim": "The highest narrow-sense heritability value was observed for sodium meta-arsenite (2.5 mM).",
+      "claim_type": "EXPLICIT",
+      "source": "The additive part (h2 values) ranged from 0.12 to 0.86, with the lowest value for fluconazole (1 \u00b5g.ml\u22121) and the highest for sodium meta-arsenite (2.5 mM), respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript identifies the condition with the highest h2 value.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:58:35.492325Z"
+    },
+    {
+      "id": "575bbd41-f411-488b-a4a9-1e9a6389e327",
+      "content_id": "677ae846-a866-4e2c-8b82-b69c5935fe83",
+      "claim_id": "C14",
+      "claim": "On average, most of the phenotypic variance can be explained by additive effects (mean h2 = 0.55).",
+      "claim_type": "EXPLICIT",
+      "source": "While broad- and narrow-sense heritabilities are variable across conditions, we also observed that on average, most of the phenotypic variance can be explained by additive effects (mean h2 = 0.55).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports the mean narrow-sense heritability across all conditions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:58:35.492325Z"
+    },
+    {
+      "id": "44e214e9-1247-413d-ac75-8844bb88d927",
+      "content_id": "677ae846-a866-4e2c-8b82-b69c5935fe83",
+      "claim_id": "C15",
+      "claim": "Non-additive components contribute significantly to some traits, explaining on average one third of the phenotypic variance observed (mean H2 - h2 = 0.29).",
+      "claim_type": "EXPLICIT",
+      "source": "However, non-additive components contribute significantly to some traits, explaining on average one third of the phenotypic variance observed (mean H2 - h2 = 0.29) (Figure 2b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports the mean contribution of non-additive effects calculated from the difference between H2 and h2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:58:35.492325Z"
+    },
+    {
+      "id": "124ed075-6ee3-4a13-ac75-df7e78072a3a",
+      "content_id": "677ae846-a866-4e2c-8b82-b69c5935fe83",
+      "claim_id": "C16",
+      "claim": "There is a good correlation between broad- and narrow-sense heritabilities (Pearson's r = 0.809, p-value=1.921e-12).",
+      "claim_type": "EXPLICIT",
+      "source": "Despite a good correlation between broad- and narrow-sense heritabilities (Pearson's r = 0.809, p-value=1.921e-12) (Figure 2c), some traits display a larger non-additive contribution, such as in galactose (2%) or ketoconazole (10 \u00b5g/ml).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports the correlation coefficient and p-value from statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:58:35.492325Z"
+    },
+    {
+      "id": "3c9eecfc-5d66-4964-a078-8218cc9cdd98",
+      "content_id": "677ae846-a866-4e2c-8b82-b69c5935fe83",
+      "claim_id": "C17",
+      "claim": "Some traits display a larger non-additive contribution, such as in galactose (2%) or ketoconazole (10 \u00b5g/ml).",
+      "claim_type": "EXPLICIT",
+      "source": "Despite a good correlation between broad- and narrow-sense heritabilities (Pearson's r = 0.809, p-value=1.921e-12) (Figure 2c), some traits display a larger non-additive contribution, such as in galactose (2%) or ketoconazole (10 \u00b5g/ml).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript identifies specific conditions with larger non-additive contributions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:58:35.492325Z"
+    },
+    {
+      "id": "f009738c-992e-4f9f-ad3f-0f53aa5c0c7c",
+      "content_id": "677ae846-a866-4e2c-8b82-b69c5935fe83",
+      "claim_id": "C18",
+      "claim": "Galactose (2%) and ketoconazole (10 \u00b5g/ml) conditions are mainly controlled by dominance.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, we revealed that these two conditions revealed to be mainly controlled by dominance (see below).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states that these conditions are controlled by dominance based on further analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:58:35.492325Z"
+    },
+    {
+      "id": "ff58eb83-fbda-4ec6-a6d0-aa41ea84a8f8",
+      "content_id": "677ae846-a866-4e2c-8b82-b69c5935fe83",
+      "claim_id": "C19",
+      "claim": "Additive effects play a main role in shaping complex traits at a population-scale.",
+      "claim_type": "EXPLICIT",
+      "source": "Altogether, our results highlight the main role of additive effects in shaping complex traits at a population-scale and clearly show that this is not restricted to the single yeast cross where this trend was first observed (Bloom et al., 2013; Bloom et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript interprets the heritability results and cites previous studies showing similar trends.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:58:35.492325Z"
+    },
+    {
+      "id": "266ae312-7aa7-438b-9d36-d45c829d1b0c",
+      "content_id": "677ae846-a866-4e2c-8b82-b69c5935fe83",
+      "claim_id": "C20",
+      "claim": "The extensive impact of non-additive effects on phenotypic variance is corroborated at a species-wide level.",
+      "claim_type": "EXPLICIT",
+      "source": "This result also corroborates at a species-wide level the extensive impact of non-additive effects on phenotypic variance (Forsberg et al., 2017; Yadav et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites previous studies showing non-additive effects and states that the current results corroborate these findings.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:58:35.492325Z"
+    },
+    {
+      "id": "0e3a9623-50f5-4dc4-9b91-6923bb97da57",
+      "content_id": "677ae846-a866-4e2c-8b82-b69c5935fe83",
+      "claim_id": "C21",
+      "claim": "Only 17.4% of all hybrid/condition combinations showed enough phenotypic separation between the parents and the corresponding hybrid to allow complete partitioning into seven modes of inheritance.",
+      "claim_type": "EXPLICIT",
+      "source": "Only 17.4% of all hybrid/condition combinations showed enough phenotypic separation between the parents and the corresponding hybrid, allowing the complete partitioning in the seven above-mentioned modes of inheritance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports the percentage of cases where complete mode of inheritance classification was possible.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:58:35.492325Z"
+    },
+    {
+      "id": "12d9bec9-1560-4e1b-b87c-e4d143b2c73c",
+      "content_id": "677ae846-a866-4e2c-8b82-b69c5935fe83",
+      "claim_id": "C22",
+      "claim": "For 82.6% of cases, only a separation of overdominance and underdominance can be achieved.",
+      "claim_type": "EXPLICIT",
+      "source": "For the 82.6% remaining cases, only a separation of overdominance and underdominance can be achieved (Figure 3c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports the percentage of cases where only partial classification was possible.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:58:35.492325Z"
+    },
+    {
+      "id": "497dcfc2-1a22-49b4-bc96-9050b543ae34",
+      "content_id": "677ae846-a866-4e2c-8b82-b69c5935fe83",
+      "claim_id": "C23",
+      "claim": "11.6% of hybrid/condition combinations showed overdominance.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, these events are not as rare as previously described (Z\u00f6rg\u00f6 et al., 2012), with 11.6% of overdominance and 10.1% of underdominance (Figure 3d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports the percentage of overdominance cases and cites a previous study for comparison.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:58:35.492325Z"
+    },
+    {
+      "id": "9976b56e-b450-44bc-aba2-18fe79096a01",
+      "content_id": "677ae846-a866-4e2c-8b82-b69c5935fe83",
+      "claim_id": "C24",
+      "claim": "10.1% of hybrid/condition combinations showed underdominance.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, these events are not as rare as previously described (Z\u00f6rg\u00f6 et al., 2012), with 11.6% of overdominance and 10.1% of underdominance (Figure 3d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports the percentage of underdominance cases and cites a previous study for comparison.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:58:35.492325Z"
+    },
+    {
+      "id": "a9847147-65eb-4181-9181-daf9f967ef00",
+      "content_id": "677ae846-a866-4e2c-8b82-b69c5935fe83",
+      "claim_id": "C25",
+      "claim": "When a clear separation is possible, one third of the condition/cross combinations detected were purely additive.",
+      "claim_type": "EXPLICIT",
+      "source": "When a clear separation is possible (Figure 3e), one third of the condition/cross combinations detected were purely additive whereas the rest displayed a deviation towards one of the two parents, with no bias (Figure 3e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports the proportion of additive cases when clear separation is possible.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:58:35.492325Z"
+    },
+    {
+      "id": "e1baaf2c-e57f-48ab-9f28-59e5f9c2123c",
+      "content_id": "677ae846-a866-4e2c-8b82-b69c5935fe83",
+      "claim_id": "C26",
+      "claim": "When a clear separation is possible, the rest of the condition/cross combinations displayed a deviation towards one of the two parents, with no bias.",
+      "claim_type": "EXPLICIT",
+      "source": "When a clear separation is possible (Figure 3e), one third of the condition/cross combinations detected were purely additive whereas the rest displayed a deviation towards one of the two parents, with no bias (Figure 3e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports the proportion of non-additive cases and notes the lack of bias.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:58:35.492325Z"
+    },
+    {
+      "id": "8e60dc30-307c-43af-85e8-f7e94b041b4c",
+      "content_id": "677ae846-a866-4e2c-8b82-b69c5935fe83",
+      "claim_id": "C27",
+      "claim": "Most of the studied growth conditions (32 out of 49) showed a prevalence of additive effects.",
+      "claim_type": "EXPLICIT",
+      "source": "When looking at the inheritance mode in each condition, most of the studied growth conditions (32 out of 49) showed a prevalence of additive effects (Figure 3f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports the number of conditions showing predominantly additive effects.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:58:35.492325Z"
+    },
+    {
+      "id": "2668bd21-b38b-41d0-b94d-b230eebf7c79",
+      "content_id": "677ae846-a866-4e2c-8b82-b69c5935fe83",
+      "claim_id": "C28",
+      "claim": "17 conditions were not predominantly additive throughout the population.",
+      "claim_type": "EXPLICIT",
+      "source": "However, 17 conditions were not predominantly additive throughout the population.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports the number of conditions not showing predominantly additive effects.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:58:35.492325Z"
+    },
+    {
+      "id": "6dc8dbc2-8803-4c19-8b34-e266fe80d9f2",
+      "content_id": "677ae846-a866-4e2c-8b82-b69c5935fe83",
+      "claim_id": "C29",
+      "claim": "A total of 12 conditions were detected as mostly dominant with 4 cases of best parent dominance and 8 of worst parent dominance.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, a total of 12 conditions were detected as mostly dominant with 4 cases of best parent dominance, including galactose (2%) and ketoconazole (10 \u00b5g.ml\u22121), and 8 of worst parent dominance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports the number of conditions showing dominance and breaks down the types of dominance.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:58:35.492325Z"
+    },
+    {
+      "id": "1665c49c-0faf-4cac-be5b-f9090c3a07ba",
+      "content_id": "677ae846-a866-4e2c-8b82-b69c5935fe83",
+      "claim_id": "C30",
+      "claim": "Five conditions displayed a majority of partial dominance.",
+      "claim_type": "EXPLICIT",
+      "source": "The remaining five conditions displayed a majority of partial dominance (Figure 3f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports the number of conditions showing partial dominance.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:58:35.492325Z"
+    },
+    {
+      "id": "c7fdfeb2-655a-442a-889f-a66b1160348f",
+      "content_id": "677ae846-a866-4e2c-8b82-b69c5935fe83",
+      "claim_id": "C31",
+      "claim": "Dominance plays a major role as a driver for non-additive effects.",
+      "claim_type": "EXPLICIT",
+      "source": "These results confirm the importance of additivity in the global architecture of traits, but more importantly, they clearly demonstrate the major role of dominance as a driver for non-additive effects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript interprets the mode of inheritance results to conclude about the role of dominance.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:58:35.492325Z"
+    },
+    {
+      "id": "8720eb89-d000-4354-81e2-b2450c5eb4b2",
+      "content_id": "677ae846-a866-4e2c-8b82-b69c5935fe83",
+      "claim_id": "C32",
+      "claim": "The presence of conditions with a high proportion of partial dominance combined with cases of over and underdominance may indicate a strong and pervasive impact of epistasis on phenotypic variation.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, the presence of conditions with a high proportion of partial dominance combined with the cases of over and underdominance may indicate a strong and pervasive impact of epistasis on phenotypic variation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript speculates about the role of epistasis based on the observed patterns of inheritance.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:58:35.492325Z"
+    },
+    {
+      "id": "bc832c33-8bfc-4eeb-83b8-cf622cebc7bd",
+      "content_id": "677ae846-a866-4e2c-8b82-b69c5935fe83",
+      "claim_id": "C33",
+      "claim": "A subset of hybrids from 34 unrelated isolates was selected to perform GWAS to avoid issues due to population structure.",
+      "claim_type": "EXPLICIT",
+      "source": "To avoid issues due to population structure, we selected a subset of hybrids from 34 unrelated isolates in the original panel to perform GWAS (see Materials and methods, Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the selection of a subset for GWAS analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:58:35.492325Z"
+    },
+    {
+      "id": "7a7db691-b767-45f2-9484-4b6ec77d24ac",
+      "content_id": "677ae846-a866-4e2c-8b82-b69c5935fe83",
+      "claim_id": "C34",
+      "claim": "595 hybrid genotypes were constructed in silico by combining known parental genomes.",
+      "claim_type": "EXPLICIT",
+      "source": "By combining known parental genomes, we constructed 595 hybrid genotypes in silico, matching one half matrix of the diallel plus the 34 homozygous diploids.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the construction of hybrid genotypes for GWAS.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:58:35.492325Z"
+    },
+    {
+      "id": "1f27ec47-ce97-44bc-b61a-37f99d74cc0a",
+      "content_id": "677ae846-a866-4e2c-8b82-b69c5935fe83",
+      "claim_id": "C35",
+      "claim": "A total of 31,632 polymorphic sites remained after filtering SNPs to retain biallelic variants with no missing calls and removing extensive long-distance linkage disequilibrium.",
+      "claim_type": "EXPLICIT",
+      "source": "We built a matrix of genetic variants for this panel and filtered SNPs to only retain biallelic variants with no missing calls. In addition, due to the small number of unique parental genotypes, extensive long-distance linkage disequilibrium was also removed (see Materials and methods), leaving a total of 31,632 polymorphic sites in the diallel population.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the filtering process and reports the final number of SNPs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:58:35.492325Z"
+    },
+    {
+      "id": "dd6a49ee-17a1-4ac7-a603-b4db2e2bad5e",
+      "content_id": "677ae846-a866-4e2c-8b82-b69c5935fe83",
+      "claim_id": "C36",
+      "claim": "3.8% (a total of 1,180 SNPs) had a MAF lower than 0.05 in the initial population but surpassed this threshold in the diallel panel, reaching a MAF of 0.32.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, 3.8% (a total of 1,180 SNPs) had a MAF lower than 0.05 in the initial population of the 1,011 S. cerevisiae isolates but surpassed this threshold in the diallel panel, reaching a MAF of 0.32 (Figure 4a\u2013b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports the percentage and number of SNPs that increased in frequency in the diallel panel.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:58:35.492325Z"
+    },
+    {
+      "id": "1cba4182-522b-4a3e-879a-00a87e0691cc",
+      "content_id": "677ae846-a866-4e2c-8b82-b69c5935fe83",
+      "claim_id": "C37",
+      "claim": "GWAS revealed 1723 significantly associated SNPs.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, GWAS revealed 1723 significantly associated SNPs (Figure 4\u2014source data 1) by detecting from 2 to 103 significant SNPs by condition, with an average of 39 SNPs per condition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports the total number of significantly associated SNPs from GWAS.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:58:35.492325Z"
+    },
+    {
+      "id": "013b9297-414b-4606-bee1-0c6d032e26df",
+      "content_id": "677ae846-a866-4e2c-8b82-b69c5935fe83",
+      "claim_id": "C38",
+      "claim": "GWAS detected from 2 to 103 significant SNPs by condition, with an average of 39 SNPs per condition.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, GWAS revealed 1723 significantly associated SNPs (Figure 4\u2014source data 1) by detecting from 2 to 103 significant SNPs by condition, with an average of 39 SNPs per condition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports the range and average number of significant SNPs per condition.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:58:35.492325Z"
+    },
+    {
+      "id": "8c97ec99-2732-4ebb-a317-a884bcf9fc8e",
+      "content_id": "677ae846-a866-4e2c-8b82-b69c5935fe83",
+      "claim_id": "C39",
+      "claim": "16.3% of the significant SNPs (281 in total) corresponded to low-frequency variants (MAF <0.05).",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, 16.3% of the significant SNPs (281 in total) corresponded to low-frequency variants (MAF <0.05), with 19.5% of them (55 SNPs) being rare variants (MAF <0.01).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports the percentage and number of low-frequency variants among significant SNPs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:58:35.492325Z"
+    },
+    {
+      "id": "e3346565-8649-4737-90e6-94905f3fddd5",
+      "content_id": "677ae846-a866-4e2c-8b82-b69c5935fe83",
+      "claim_id": "C40",
+      "claim": "19.5% of the low-frequency significant SNPs (55 SNPs) were rare variants (MAF <0.01).",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, 16.3% of the significant SNPs (281 in total) corresponded to low-frequency variants (MAF <0.05), with 19.5% of them (55 SNPs) being rare variants (MAF <0.01).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports the percentage and number of rare variants among low-frequency significant SNPs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:58:35.492325Z"
+    },
+    {
+      "id": "28bc7588-cee0-4ad6-b2f1-af8b018c3744",
+      "content_id": "677ae846-a866-4e2c-8b82-b69c5935fe83",
+      "claim_id": "C41",
+      "claim": "The trend of low-frequency variant enrichment is maintained for both additive and overdominant models, with 19.3% and 15.2% of low-frequency variants respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "This trend is the same and maintained for both models, with 19.3% and 15.2% of low-frequency variants for the additive and overdominant models, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports the percentages of low-frequency variants for each encoding model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:58:35.492325Z"
+    },
+    {
+      "id": "6a9d9b07-750b-4bfe-8f93-1154d34aff91",
+      "content_id": "677ae846-a866-4e2c-8b82-b69c5935fe83",
+      "claim_id": "C42",
+      "claim": "Low-frequency variants indeed play a significant part in the phenotypic variance at the population-scale.",
+      "claim_type": "EXPLICIT",
+      "source": "However, these results clearly show that low-frequency variants indeed play a significant part in the phenotypic variance at the population-scale.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript interprets the GWAS results to conclude about the role of low-frequency variants.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:58:35.492325Z"
+    },
+    {
+      "id": "278c3d32-d7db-4cde-b392-fb7bce7bcee2",
+      "content_id": "677ae846-a866-4e2c-8b82-b69c5935fe83",
+      "claim_id": "C43",
+      "claim": "Detected SNPs could explain 15% to 32% of the variance, with a median of 20%.",
+      "claim_type": "EXPLICIT",
+      "source": "We then estimated the contribution of the significant variants to total phenotypic variation (see Materials and methods) in our panel and found that detected SNPs could explained 15% to 32% of the variance, with a median of 20% (Figure 4d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports the range and median of variance explained by detected SNPs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:58:35.492325Z"
+    },
+    {
+      "id": "b79e4139-0261-4d71-8d5d-0df2a49571dc",
+      "content_id": "677ae846-a866-4e2c-8b82-b69c5935fe83",
+      "claim_id": "C44",
+      "claim": "Low-frequency variants explained roughly the same proportion of the phenotypic variation (median of 20.2%) as common SNPs (median of 19.6%).",
+      "claim_type": "EXPLICIT",
+      "source": "When looking at the variance explained by each variant over their respective allele frequency, it is noteworthy that low-frequency variants explained roughly the same proportion of the phenotypic variation (median of 20.2%) than the common SNPs (median of 19.6%) (Figure 4d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports the median variance explained by low-frequency and common variants.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:58:35.492325Z"
+    },
+    {
+      "id": "ceb6f835-3af9-4fdd-8a6b-7957dee4b718",
+      "content_id": "677ae846-a866-4e2c-8b82-b69c5935fe83",
+      "claim_id": "C45",
+      "claim": "The variance explained by the associated rare variants was higher on average than the rest of the detected SNPs.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the variance explained by the associated rare variants were also higher on average than the rest of the detected SNPs (Figure 4\u2014figure supplement 1a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports the comparison of variance explained by rare variants versus other SNPs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:58:35.492325Z"
+    },
+    {
+      "id": "e15133b9-2e7d-48c8-b9cf-7796b40691e1",
+      "content_id": "677ae846-a866-4e2c-8b82-b69c5935fe83",
+      "claim_id": "C46",
+      "claim": "The trend of rare variants explaining more variance is robust and conserved across the two encoding models implemented, accounting for additive and overdominant effects.",
+      "claim_type": "EXPLICIT",
+      "source": "It is noteworthy that this trend was robust and conserved across the two encoding models implemented, accounting for additive and overdominant effects (Figure 4\u2014figure supplement 1a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports that the trend holds across different models.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:58:35.492325Z"
+    },
+    {
+      "id": "4b77485e-0d5a-4a97-8279-24efe44cadcc",
+      "content_id": "677ae846-a866-4e2c-8b82-b69c5935fe83",
+      "claim_id": "C47",
+      "claim": "On average, low-frequency variants have about the same effect size (mean of 0.23 sd) as common variants (mean of 0.25 sd).",
+      "claim_type": "EXPLICIT",
+      "source": "Here again we found that on average, low-frequency variant have about the same effect size (mean of 0.23 sd) than the common variants (mean of 0.25 sd).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports the mean effect sizes for low-frequency and common variants.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:58:35.492325Z"
+    },
+    {
+      "id": "e8daaf1d-bd2a-417e-8879-58ef75ec6704",
+      "content_id": "677ae846-a866-4e2c-8b82-b69c5935fe83",
+      "claim_id": "C48",
+      "claim": "62.5% of the associated SNPs are in coding regions.",
+      "claim_type": "EXPLICIT",
+      "source": "To gain insight into the biological relevance of the set of associated SNPs, we first examined their distribution across the genome and found that 62.5% of them are in coding regions (with coding regions representing a total of 72.9% of the S. cerevisiae genome) (Figure 4\u2014figure supplement 1b), with all of these SNPs distributed over a set of 546 genes.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports the percentage of associated SNPs in coding regions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:58:35.492325Z"
+    },
+    {
+      "id": "6b0c6746-2a18-4214-b65e-342beed0b87d",
+      "content_id": "677ae846-a866-4e2c-8b82-b69c5935fe83",
+      "claim_id": "C49",
+      "claim": "Coding regions represent a total of 72.9% of the S. cerevisiae genome.",
+      "claim_type": "EXPLICIT",
+      "source": "To gain insight into the biological relevance of the set of associated SNPs, we first examined their distribution across the genome and found that 62.5% of them are in coding regions (with coding regions representing a total of 72.9% of the S. cerevisiae genome) (Figure 4\u2014figure supplement 1b), with all of these SNPs distributed over a set of 546 genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports the percentage of the genome that is coding.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:58:35.492325Z"
+    },
+    {
+      "id": "8d853b8a-575c-4ef3-951c-15447802443f",
+      "content_id": "677ae846-a866-4e2c-8b82-b69c5935fe83",
+      "claim_id": "C50",
+      "claim": "The associated SNPs are distributed over a set of 546 genes.",
+      "claim_type": "EXPLICIT",
+      "source": "To gain insight into the biological relevance of the set of associated SNPs, we first examined their distribution across the genome and found that 62.5% of them are in coding regions (with coding regions representing a total of 72.9% of the S. cerevisiae genome) (Figure 4\u2014figure supplement 1b), with all of these SNPs distributed over a set of 546 genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports the number of genes containing associated SNPs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:58:35.492325Z"
+    },
+    {
+      "id": "2c7533ab-39b3-4f35-acda-1ada040e35b4",
+      "content_id": "677ae846-a866-4e2c-8b82-b69c5935fe83",
+      "claim_id": "C51",
+      "claim": "19 of the genes detected are included in a list of 145 quantitative trait genes (QTG) identified over the last decade.",
+      "claim_type": "EXPLICIT",
+      "source": "Over the last decade, an impressive number of quantitative trait locus (QTL) mapping experiments were performed on a myriad of phenotypes in yeast leading to the identification of 145 quantitative trait genes (QTG) (Peltier et al., 2019) and we found that 19 of the genes we detected are included in this list (Figure 4\u2014figure supplement 1c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript compares the detected genes with a list of known QTGs from a cited study.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:58:35.492325Z"
+    },
+    {
+      "id": "5a0ec87c-8e96-4e09-82f5-4f1bd6906df0",
+      "content_id": "677ae846-a866-4e2c-8b82-b69c5935fe83",
+      "claim_id": "C52",
+      "claim": "22 associated genes overlap with a recent large-scale linkage mapping survey in yeast.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, 22 associated genes were also found as overlapping with a recent large-scale linkage mapping survey in yeast (Bloom et al., 2019) (Figure 4\u2014figure supplement 1c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript compares the detected genes with results from a cited study.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:58:35.492325Z"
+    },
+    {
+      "id": "ae204488-9bbc-4307-90d3-2dfd846db7ee",
+      "content_id": "677ae846-a866-4e2c-8b82-b69c5935fe83",
+      "claim_id": "C53",
+      "claim": "The associated genes are enriched for genes involved in 'response to stimulus' and 'response to stress' (p-value=5.39\u00d710\u22125).",
+      "claim_type": "EXPLICIT",
+      "source": "This analysis revealed an enrichment (p-value=5.39\u00d710\u22125) in genes involved in 'response to stimulus' and 'response to stress', which is in line with the different tested conditions leading to various physiological and cellular responses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports the results of gene ontology enrichment analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:58:35.492325Z"
+    },
+    {
+      "id": "6458ec9c-e534-47a9-8a05-1b34477c5c2a",
+      "content_id": "677ae846-a866-4e2c-8b82-b69c5935fe83",
+      "claim_id": "C54",
+      "claim": "A low-frequency variant in the SGD1 gene was detected in 6-azauracile (100 \u00b5g.ml\u22121) with a p-value of 2.75e-8 with the overdominant encoding and 6.26e-5 with the additive encoding.",
+      "claim_type": "EXPLICIT",
+      "source": "The chosen variant was characterized by two adjacent SNPs in the SGD1 gene and was detected in 6-azauracile (100 \u00b5g.ml\u22121) with a p-value of 2.75e-8 with the overdominant encoding and 6.26e-5 with the additive encoding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports the detection of a specific variant with associated p-values.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:58:35.492325Z"
+    },
+    {
+      "id": "8624f6b9-264e-4564-824f-5138dd4fab3b",
+      "content_id": "677ae846-a866-4e2c-8b82-b69c5935fe83",
+      "claim_id": "C55",
+      "claim": "The MAF of the SGD1 variant in the initial population is only 2.5% and reached 9% in the diallel panel.",
+      "claim_type": "EXPLICIT",
+      "source": "Their MAF in the initial population is only 2.5% and reached 9% in the diallel panel with three genetically distant strains carrying it (Figure 5a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports the MAF of the SGD1 variant in both populations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:58:35.492325Z"
+    },
+    {
+      "id": "2b4452c5-c9b0-4f7b-bb2e-bb502cea2191",
+      "content_id": "677ae846-a866-4e2c-8b82-b69c5935fe83",
+      "claim_id": "C56",
+      "claim": "Three genetically distant strains carry the SGD1 minor allele.",
+      "claim_type": "EXPLICIT",
+      "source": "Their MAF in the initial population is only 2.5% and reached 9% in the diallel panel with three genetically distant strains carrying it (Figure 5a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports the number of strains carrying the variant.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:58:35.492325Z"
+    },
+    {
+      "id": "5d7d063f-0b4e-4ec4-9e8f-4c611772f5cf",
+      "content_id": "677ae846-a866-4e2c-8b82-b69c5935fe83",
+      "claim_id": "C57",
+      "claim": "The SGD1 SNPs are in the coding sequence of SGD1, an essential gene encoding a nuclear protein.",
+      "claim_type": "EXPLICIT",
+      "source": "The SNPs are in the coding sequence of SGD1, an essential gene encoding a nuclear protein.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the location and function of the gene containing the variant.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:58:35.492325Z"
+    },
+    {
+      "id": "7f7c927d-3f68-478b-901c-136845a6b887",
+      "content_id": "677ae846-a866-4e2c-8b82-b69c5935fe83",
+      "claim_id": "C58",
+      "claim": "The minor allele (AA) of SGD1 induces a synonymous change (TTG (Leu) \u2192 TTA (Leu)) for the first position and a non-synonymous mutation (GAA (Glu)\u2192 AAA (Lys)) for the second position.",
+      "claim_type": "EXPLICIT",
+      "source": "The minor allele (AA) induces a synonymous change (TTG (Leu) \u2192 TTA (Leu)) for the first position and a non-synonymous mutation (GAA (Glu)\u2192 AAA (Lys)) for the second position (Figure 5a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript describes the molecular consequences of the variant.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:58:35.492325Z"
+    },
+    {
+      "id": "cc1ef294-dd84-436a-9a09-367fa94ea395",
+      "content_id": "677ae846-a866-4e2c-8b82-b69c5935fe83",
+      "claim_id": "C59",
+      "claim": "The phenotypic advantage conferred by the SGD1 minor allele was observed with a significant difference between the homozygous for the minor allele, heterozygous and homozygous for the major allele.",
+      "claim_type": "EXPLICIT",
+      "source": "The phenotypic advantage conferred by this allele was observed with a significant difference between the homozygous for the minor allele, heterozygous and homozygous for the major allele (Figure 5b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports the phenotypic differences between genotypes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:58:35.492325Z"
+    },
+    {
+      "id": "f96701e8-76b0-4a0d-b540-98a84f62943b",
+      "content_id": "677ae846-a866-4e2c-8b82-b69c5935fe83",
+      "claim_id": "C60",
+      "claim": "CRISPR-Cas9 genome-editing was used to switch the SGD1 minor allele (AA) to the major allele (GG) in the three strains carrying the minor allele.",
+      "claim_type": "EXPLICIT",
+      "source": "To functionally validate the phenotypic effect of this low-frequency variant, CRISPR-Cas9 genome-editing was used in the three strains carrying the minor allele (AA) in order to switch it to the major allele (GG) and assess its phenotypic impact.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the experimental validation approach.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:58:35.492325Z"
+    },
+    {
+      "id": "03ec01d9-fe7f-4565-90a0-dddec4e11818",
+      "content_id": "677ae846-a866-4e2c-8b82-b69c5935fe83",
+      "claim_id": "C61",
+      "claim": "The SGD1 minor allele confers a phenotypic advantage of 0.2 in growth ratio compared to the major allele.",
+      "claim_type": "EXPLICIT",
+      "source": "When phenotyping the wildtype strains containing the minor allele and the mutated strains with the major allele, we observed that the minor allele confers a phenotypic advantage of 0.2 in growth ratio compared to the major allele (Figure 5c) therefore validating the important phenotypic impact of this low-frequency variant.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports the phenotypic difference observed in the validation experiment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:58:35.492325Z"
+    },
+    {
+      "id": "40da428e-9082-4118-9f28-98e8e4e65375",
+      "content_id": "677ae846-a866-4e2c-8b82-b69c5935fe83",
+      "claim_id": "C62",
+      "claim": "An important part of the phenotypic variance is linked to additive effects, while about a third remains ruled by non-additive interactions encompassing dominance and epistasis.",
+      "claim_type": "EXPLICIT",
+      "source": "While our analysis revealed that an important part of the phenotypic variance is linked to additive effects, about a third remains ruled by non-additive interactions encompassing dominance and epistasis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript summarizes the findings about additive and non-additive effects.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:58:35.492325Z"
+    },
+    {
+      "id": "0e021f6a-3af5-4865-b9a4-3863a0facb1e",
+      "content_id": "677ae846-a866-4e2c-8b82-b69c5935fe83",
+      "claim_id": "C63",
+      "claim": "A strong enrichment in low-frequency variants has been observed in the significantly associated SNPs (16%), demonstrating the ubiquity of low-frequency variants with important phenotypic impact.",
+      "claim_type": "EXPLICIT",
+      "source": "Although few low-frequency and rare variants were considered in our GWAS (4%) due to stringent filtering conditions, a strong enrichment in these variants has been observed in the significantly associated ones (16%), demonstrating the ubiquity of low-frequency variants with important phenotypic impact.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript interprets the enrichment of low-frequency variants among significant SNPs.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:58:35.492325Z"
+    },
+    {
+      "id": "b56b12f1-40c2-4f2b-be84-f15a3d575b08",
+      "content_id": "677ae846-a866-4e2c-8b82-b69c5935fe83",
+      "claim_id": "C64",
+      "claim": "At the population level, low-frequency variants have effect sizes similar to common variants but do not explain an important part of variance because variance relies both on effect size and allele frequency.",
+      "claim_type": "EXPLICIT",
+      "source": "However, when looking at the population level, even though they do have effect sizes similar to common variants, they are not going to explain an important part of variance because it relies both on effect size and allele frequency.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explains the relationship between effect size, allele frequency, and variance explained.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:58:35.492325Z"
+    },
+    {
+      "id": "9fc69bb3-6ecf-44fe-b355-d5b76e2548cf",
+      "content_id": "677ae846-a866-4e2c-8b82-b69c5935fe83",
+      "claim_id": "C65",
+      "claim": "A study of human height in more than 700,000 individuals mapped 83 significantly associated rare and low-frequency variants with effect sizes up to 2 cm.",
+      "claim_type": "EXPLICIT",
+      "source": "A good example of this phenomenon has been seen with a study of human height in more than 700,000 individuals. A total of 83 significantly associated rare and low-frequency variants with effect sizes up to 2 cm have been mapped (Marouli et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites a study on human height to illustrate the phenomenon.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:58:35.492325Z"
+    },
+    {
+      "id": "c82ea303-757c-4a45-8493-02d18725edf2",
+      "content_id": "677ae846-a866-4e2c-8b82-b69c5935fe83",
+      "claim_id": "C66",
+      "claim": "In the human height study, rare and low-frequency variants explained the same amount of phenotypic variation as common variants on average, despite common variants having much smaller effect sizes of about 1 mm.",
+      "claim_type": "EXPLICIT",
+      "source": "On average, they explained the same amount of phenotypic variation as common variants, which displayed much smaller effect sizes of about 1 mm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites findings from a human height study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:58:35.492325Z"
+    },
+    {
+      "id": "37b10c21-8772-4136-8640-ba878aaa776f",
+      "content_id": "677ae846-a866-4e2c-8b82-b69c5935fe83",
+      "claim_id": "C67",
+      "claim": "A high number of low-frequency variants play a decisive role in the phenotypic landscape of a population both in term of number and effect size.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results suggest that a high number of low-frequency variants play a decisive role in the phenotypic landscape of a population both in term of number and effect size.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript interprets the results to make a conclusion about low-frequency variants.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:58:35.492325Z"
+    },
+    {
+      "id": "40aade7f-67f9-4efa-85e6-a0400a9d693c",
+      "content_id": "677ae846-a866-4e2c-8b82-b69c5935fe83",
+      "claim_id": "C68",
+      "claim": "Taken one by one, low-frequency variants do not explain a lot of phenotypic variance in a large population, but altogether, they might actually explain a greater part of the variation than the one explained by common variants.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken one by one, they do not explain a lot of phenotypic variance in a large population. Yet, altogether, they might actually explain a greater part of the variation than the one explained by common variants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript speculates about the collective contribution of low-frequency variants.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:58:35.492325Z"
+    },
+    {
+      "id": "b9549c58-31b7-4e9c-a7da-02e0a918c98a",
+      "content_id": "677ae846-a866-4e2c-8b82-b69c5935fe83",
+      "claim_id": "C69",
+      "claim": "The missing heritability of height and body mass index is accounted for by rare variants.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently, it has been shown that the missing heritability of height and body mass index is accounted for by rare variants (Wainschtein et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites a recent study on missing heritability.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:58:35.492325Z"
+    },
+    {
+      "id": "a34035d1-384e-44ae-aaad-91a512094016",
+      "content_id": "677ae846-a866-4e2c-8b82-b69c5935fe83",
+      "claim_id": "C70",
+      "claim": "Most of the previously identified Quantitative Trait Nucleotides (QTNs) using linkage mapping were at low allele frequency in the 1,011 S. cerevisiae population.",
+      "claim_type": "EXPLICIT",
+      "source": "We also recently found in yeast that most of the previously identified Quantitative Trait Nucleotides (QTNs) using linkage mapping were at low allele frequency in the 1,011 S. cerevisiae population (Hou et al., 2016; Hou et al., 2019; Peltier et al., 2019; Peter et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites previous studies showing that QTNs are at low frequency.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:58:35.492325Z"
+    },
+    {
+      "id": "3b1bb331-72fd-4032-9aa8-830bcb930d07",
+      "content_id": "677ae846-a866-4e2c-8b82-b69c5935fe83",
+      "claim_id": "C71",
+      "claim": "A total of 284 QTNs were identified by linkage mapping and 150 of them are present at a low frequency in the population of 1011 isolates.",
+      "claim_type": "EXPLICIT",
+      "source": "A total of 284 QTNs were identified by linkage mapping and 150 of them are present at a low frequency in the population of 1011 isolates (Peltier et al., 2019; Peter et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites studies reporting the number of QTNs and their frequencies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:58:35.492325Z"
+    },
+    {
+      "id": "703b4f4a-b51c-401c-99b9-37116d49f124",
+      "content_id": "677ae846-a866-4e2c-8b82-b69c5935fe83",
+      "claim_id": "C72",
+      "claim": "The QTNs were mapped with mostly closely related genetic backgrounds, encompassing a total of 59 strains with 30% from laboratory and 41% from the wine cluster.",
+      "claim_type": "EXPLICIT",
+      "source": "However, these QTNs were mapped with mostly closely related genetic backgrounds, encompassing a total of 59 strains with 30% of them coming from laboratory and 41% coming from the wine cluster, which has a very low genetic diversity (Peter et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the genetic backgrounds used in previous QTN mapping studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:58:35.492325Z"
+    },
+    {
+      "id": "7c0d5d80-ed82-414e-8424-9331e3419a14",
+      "content_id": "677ae846-a866-4e2c-8b82-b69c5935fe83",
+      "claim_id": "C73",
+      "claim": "Experimentally validated QTNs are, most of the time, genetic variants with the most important phenotypic impact, which induces an ascertainment bias.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, experimentally validated QTNs are, most of the time, genetic variants with the most important phenotypic impact, which has been previously recognized as inducing an ascertainment bias (Rockman, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites a study discussing ascertainment bias in QTN validation.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:58:35.492325Z"
+    },
+    {
+      "id": "03bc7697-bef6-4adf-bd40-f2052acd2c10",
+      "content_id": "677ae846-a866-4e2c-8b82-b69c5935fe83",
+      "claim_id": "C74",
+      "claim": "Among all the genetic variants detected by GWAS on a diallel panel, 16.3% of them have a low-frequency in the initial population and explain a significant part of the phenotypic variance (21% on average).",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we quantified the contribution of low-frequency variants across a large number of growth conditions and found that among all the genetic variants detected by GWAS on a diallel panel, 16.3% of them have a low-frequency in the initial population and explain a significant part of the phenotypic variance (21% on average).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript summarizes the findings about low-frequency variants from GWAS.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:58:35.492325Z"
+    },
+    {
+      "id": "5d9c925c-4524-4c3a-a443-1ab280af9776",
+      "content_id": "677ae846-a866-4e2c-8b82-b69c5935fe83",
+      "claim_id": "C75",
+      "claim": "The diallel design presents an intrinsic power to evaluate the additive vs. non-additive genetic components contributing to the phenotypic variation.",
+      "claim_type": "EXPLICIT",
+      "source": "This particular diallel design also presents an intrinsic power to evaluate the additive vs. non-additive genetic components contributing to the phenotypic variation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the advantages of the diallel design.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:58:35.492325Z"
+    },
+    {
+      "id": "261ca6d6-cf51-4df6-8d1f-f10b4f52372d",
+      "content_id": "677ae846-a866-4e2c-8b82-b69c5935fe83",
+      "claim_id": "C76",
+      "claim": "Dominance at the single locus level contributed to the phenotypic variation observed.",
+      "claim_type": "EXPLICIT",
+      "source": "We assessed the effect of intra-locus dominance on the non-additive genetic component and showed that dominance at the single locus level contributed to the phenotypic variation observed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript summarizes the findings about dominance effects.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:58:35.492325Z"
+    },
+    {
+      "id": "670f8db2-e610-4433-82a0-42889132b839",
+      "content_id": "677ae846-a866-4e2c-8b82-b69c5935fe83",
+      "claim_id": "C77",
+      "claim": "Other more complicated inter-loci interactions may still be involved in phenotypic variation.",
+      "claim_type": "EXPLICIT",
+      "source": "However, other more complicated inter-loci interactions may still be involved.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript speculates about the potential role of epistasis.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:58:35.492325Z"
+    },
+    {
+      "id": "454ca0e7-2468-4c5e-acca-40b4bda8134d",
+      "content_id": "677ae846-a866-4e2c-8b82-b69c5935fe83",
+      "claim_id": "C78",
+      "claim": "The study highlights the extensive role of low-frequency variants on the phenotypic variation.",
+      "claim_type": "EXPLICIT",
+      "source": "Altogether, these results have major implications for our understanding of the genetic architecture of traits in the context of unexplained heritability. In parallel to a recent large-scale linkage mapping survey in yeast (Bloom et al., 2019), our study highlights the extensive role of low-frequency variants on the phenotypic variation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript summarizes the main conclusion of the study and cites a parallel study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:58:35.492325Z"
+    },
+    {
+      "id": "9acc8c38-5e10-4408-bde6-8385d61a7661",
+      "content_id": "677ae846-a866-4e2c-8b82-b69c5935fe83",
+      "claim_id": "C79",
+      "claim": "92.7% of the polymorphic sites in the 1011 yeast genomes dataset are associated with a minor allele frequency (MAF) lower than 0.05.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, much of the detected genetic polymorphisms in the 1011 yeast genomes dataset are low-frequency variants with almost 92.7% of the polymorphic sites associated with a minor allele frequency (MAF) lower than 0.05.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports the proportion of low-frequency variants in the 1011 genomes dataset.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:58:35.492325Z"
+    },
+    {
+      "id": "07217588-b12b-4d3e-9372-9f7aa7e4969d",
+      "content_id": "677ae846-a866-4e2c-8b82-b69c5935fe83",
+      "claim_id": "C80",
+      "claim": "The trend of low-frequency variants is similar to that observed in the human population.",
+      "claim_type": "EXPLICIT",
+      "source": "This trend is similar to that observed in the human population (Auton et al., 2015; Walter et al., 2015) and definitely raised a question regarding the impact of low-frequency variants on the phenotypic landscape within a population and on the missing heritability (Zuk et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript compares the yeast findings to human population genetics studies.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:58:35.492325Z"
+    },
+    {
+      "id": "8424e28b-2af4-4d78-8e99-74e28dd2aac9",
+      "content_id": "677ae846-a866-4e2c-8b82-b69c5935fe83",
+      "claim_id": "C81",
+      "claim": "Human height is estimated to be 60\u201380% heritable.",
+      "claim_type": "EXPLICIT",
+      "source": "This trait is estimated to be 60\u201380% heritable (Speed et al., 2017; Visscher et al., 2008) but close to 700 variants found in an analysis based on more than 250,000 individuals only explain 20% of this total heritability (Wood et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites studies on the heritability of human height.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:58:35.492325Z"
+    },
+    {
+      "id": "a4bb2255-6202-4327-ad16-000bf2018d90",
+      "content_id": "677ae846-a866-4e2c-8b82-b69c5935fe83",
+      "claim_id": "C82",
+      "claim": "Close to 700 variants found in an analysis based on more than 250,000 individuals only explain 20% of the total heritability of human height.",
+      "claim_type": "EXPLICIT",
+      "source": "This trait is estimated to be 60\u201380% heritable (Speed et al., 2017; Visscher et al., 2008) but close to 700 variants found in an analysis based on more than 250,000 individuals only explain 20% of this total heritability (Wood et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites a study on the explained heritability of human height.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:58:35.492325Z"
+    },
+    {
+      "id": "e2fda53b-8f60-472f-9c41-4469c8b46f39",
+      "content_id": "677ae846-a866-4e2c-8b82-b69c5935fe83",
+      "claim_id": "C83",
+      "claim": "Multiple justifications for missing heritability have been suggested, including the presence of low-frequency variants, structural variants, small effect variants, and low power to estimate non-additive effects.",
+      "claim_type": "EXPLICIT",
+      "source": "Multiple justifications for this so-called missing heritability have been suggested, including the presence of low-frequency variants, (Gibson, 2012; Hindorff et al., 2009; Manolio et al., 2009; Pritchard, 2001; Walter et al., 2015), structural variants (e.g. copy number variants) (Peter et al., 2018), small effect variants, as well as the low power to estimate non-additive effects (Cordell, 2009; Mackay, 2014; Zuk et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites multiple studies discussing potential explanations for missing heritability.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:58:35.492325Z"
+    },
+    {
+      "id": "ab41b324-a9bc-48aa-8f84-9f7e34467e08",
+      "content_id": "677ae846-a866-4e2c-8b82-b69c5935fe83",
+      "claim_id": "C84",
+      "claim": "Variants present in less than 5% of the individuals are coined as low-frequency variants.",
+      "claim_type": "EXPLICIT",
+      "source": "Variants present in less than 5% of the individuals are coined as low-frequency variants and are known to be involved in a large number of rare Mendelian disorders (Gibson, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript defines low-frequency variants and cites a study on their involvement in disorders.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:58:35.492325Z"
+    },
+    {
+      "id": "83b6e3fd-84b5-4d60-984c-1965977c26e3",
+      "content_id": "677ae846-a866-4e2c-8b82-b69c5935fe83",
+      "claim_id": "C85",
+      "claim": "Low-frequency variants are known to be involved in a large number of rare Mendelian disorders.",
+      "claim_type": "EXPLICIT",
+      "source": "Variants present in less than 5% of the individuals are coined as low-frequency variants and are known to be involved in a large number of rare Mendelian disorders (Gibson, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites a study on the role of low-frequency variants in Mendelian disorders.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:58:35.492325Z"
+    },
+    {
+      "id": "943d47de-e334-4d70-a798-9d6718e91ef8",
+      "content_id": "677ae846-a866-4e2c-8b82-b69c5935fe83",
+      "claim_id": "C86",
+      "claim": "Implication of rare variants is pervasive in common diseases and other complex traits.",
+      "claim_type": "EXPLICIT",
+      "source": "However, implication of rare variants is also pervasive in common diseases and other complex traits.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states the broader relevance of rare variants beyond Mendelian disorders.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:58:35.492325Z"
+    },
+    {
+      "id": "d5ad8fa3-42c9-4666-930a-5ab854cccaea",
+      "content_id": "677ae846-a866-4e2c-8b82-b69c5935fe83",
+      "claim_id": "C87",
+      "claim": "GWAS cannot deal with low-frequency and rare variants due to statistical limitations, except for very large sample sizes.",
+      "claim_type": "EXPLICIT",
+      "source": "As GWAS cannot deal with low-frequency and rare variants due to statistical limitations, except for very large sample sizes, their effect has often been overlooked.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explains the limitations of GWAS for detecting low-frequency variants.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:58:35.492325Z"
+    },
+    {
+      "id": "2515561d-6971-4dd8-be5c-5b9959480acc",
+      "content_id": "677ae846-a866-4e2c-8b82-b69c5935fe83",
+      "claim_id": "C88",
+      "claim": "S. cerevisiae isolates can be found in a broad array of biotopes both human-associated and wild and are distributed world-wide.",
+      "claim_type": "EXPLICIT",
+      "source": "S. cerevisiae isolates can be found in a broad array of biotopes both human-associated (e.g. wine, sake, beer and other fermented beverages, food, human body) or wild (e.g. plants, soil, insects) and are distributed world-wide (Peter et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the ecological distribution of S. cerevisiae and cites a study.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:58:35.492325Z"
+    },
+    {
+      "id": "f7a2d586-96cf-4bb8-905d-8697023b13e0",
+      "content_id": "677ae846-a866-4e2c-8b82-b69c5935fe83",
+      "claim_id": "C89",
+      "claim": "The S. cerevisiae species presents a high level of genetic diversity (\u03c0 = 3\u00d710\u22123), much greater than that found in humans.",
+      "claim_type": "EXPLICIT",
+      "source": "Phenotypic diversity among yeast isolates is significant and the S. cerevisiae species presents a high level of genetic diversity (\u03c0 = 3\u00d710\u22123), much greater than that found in humans (Lek et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports the genetic diversity of S. cerevisiae and compares it to humans, citing a study.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:58:35.492325Z"
+    },
+    {
+      "id": "95527c21-4ce1-4d48-ad59-153c5b351db4",
+      "content_id": "677ae846-a866-4e2c-8b82-b69c5935fe83",
+      "claim_id": "C90",
+      "claim": "An unprecedented number of 1,011 S. cerevisiae natural isolates has been sequenced.",
+      "claim_type": "EXPLICIT",
+      "source": "Because of their small and compact genomes, an unprecedented number of 1,011 S. cerevisiae natural isolates has recently been sequenced (Peter et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites a study that sequenced 1,011 yeast isolates.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:58:35.492325Z"
+    },
+    {
+      "id": "8499fbfc-ed0e-478b-93b0-1329cdf56cd1",
+      "content_id": "677ae846-a866-4e2c-8b82-b69c5935fe83",
+      "claim_id": "C91",
+      "claim": "Yeast genome-wide association analyses have revealed functional Single Nucleotide Polymorphisms (SNPs), explaining a small fraction of the phenotypic variance.",
+      "claim_type": "EXPLICIT",
+      "source": "Yeast genome-wide association analyses have revealed functional Single Nucleotide Polymorphisms (SNPs), explaining a small fraction of the phenotypic variance (Peter et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites a study on yeast GWAS findings.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:58:35.492325Z"
+    },
+    {
+      "id": "76fc34d0-9431-408b-87bf-d005cc8a3702",
+      "content_id": "677ae846-a866-4e2c-8b82-b69c5935fe83",
+      "claim_id": "C92",
+      "claim": "Copy number variants (CNVs) account for a larger proportion of the phenotypic variance and have greater effects on phenotypes compared to SNPs in yeast.",
+      "claim_type": "EXPLICIT",
+      "source": "However, these analyses highlighted the importance of the copy number variants (CNVs), which account for a larger proportion of the phenotypic variance and have greater effects on phenotypes compared to the SNPs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes findings about CNVs from previous yeast GWAS studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:58:35.492325Z"
+    },
+    {
+      "id": "f862d73c-9eba-4c34-bc89-73395a94410b",
+      "content_id": "677ae846-a866-4e2c-8b82-b69c5935fe83",
+      "claim_id": "C93",
+      "claim": "Even when CNVs and SNPs are taken together, the phenotypic variance explained is still low (approximately 17% on average) in yeast.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, even when CNVs and SNPs are taken together, the phenotypic variance explained is still low (approximately 17% on average) and consequently a large part of it is unexplained.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports the combined variance explained by CNVs and SNPs from previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:58:35.492325Z"
+    },
+    {
+      "id": "297760c5-907a-4274-8c85-f5673dd23b14",
+      "content_id": "677ae846-a866-4e2c-8b82-b69c5935fe83",
+      "claim_id": "C94",
+      "claim": "There was a near perfect correlation (Pearson's r = 0.995, p-value<2.2e-16) between expected and observed phenotypic values in the diallel model.",
+      "claim_type": "EXPLICIT",
+      "source": "We found a near perfect correlation (Pearson's r = 0.995, p-value<2.2e-16) between expected and observed phenotypic values, confirming the accuracy of the model used (see Materials and methods).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports the correlation between model predictions and observations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:58:35.492325Z"
+    },
+    {
+      "id": "3a246ab3-30bc-4d86-bc53-0223c075f3a2",
+      "content_id": "677ae846-a866-4e2c-8b82-b69c5935fe83",
+      "claim_id": "C95",
+      "claim": "The overall correlation between the MATa and MAT\u03b1 parental strains was 0.967 (Pearson, p-value<1e-324).",
+      "claim_type": "EXPLICIT",
+      "source": "The overall correlation between the MATa and MAT\u03b1 parental strains was 0.967 (Pearson, p-value<1e-324), with an average correlation per strain of 0.976 across different conditions (Figure 1\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports the correlation between mating types.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:58:35.492325Z"
+    },
+    {
+      "id": "17312474-4207-41ad-8d4b-77ca48ad9865",
+      "content_id": "677ae846-a866-4e2c-8b82-b69c5935fe83",
+      "claim_id": "C96",
+      "claim": "The average correlation per strain between MATa and MAT\u03b1 was 0.976 across different conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "The overall correlation between the MATa and MAT\u03b1 parental strains was 0.967 (Pearson, p-value<1e-324), with an average correlation per strain of 0.976 across different conditions (Figure 1\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports the average per-strain correlation between mating types.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:58:35.492325Z"
+    },
+    {
+      "id": "bb99ad07-84be-4fcd-af8e-50d8446664e0",
+      "content_id": "677ae846-a866-4e2c-8b82-b69c5935fe83",
+      "claim_id": "C97",
+      "claim": "No significant mating type specificity was identified.",
+      "claim_type": "EXPLICIT",
+      "source": "No significant mating type specificity was identified.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports the conclusion from the mating type comparison.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:58:35.492325Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "20137d4b-c93b-4731-8efe-f15168a18617",
+      "content_id": "677ae846-a866-4e2c-8b82-b69c5935fe83",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "A diallel panel of 3025 viable yeast hybrids was generated from pairwise crosses between 55 genetically diverse, diploid, homozygous natural isolates from varied ecological and geographical origins. The panel was phenotyped across 49 growth conditions, yielding 148,225 hybrid/trait combinations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C7 describe the experimental design and panel construction with clear methodological details. The viability of all hybrids (C2), the diversity criteria (C5), and the phenotyping scope (C3-C4) are well-documented. The selection criteria and origins (C6-C7) are supported by referenced figures and supplementary data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:58:35.492325Z"
+    },
+    {
+      "id": "db4c4127-0eef-448e-87dd-efae1e0556eb",
+      "content_id": "677ae846-a866-4e2c-8b82-b69c5935fe83",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Heritability analysis using Griffing's diallel model revealed that additive effects explain on average 55% of phenotypic variance (h\u00b2=0.55), while non-additive effects account for approximately one-third (mean H\u00b2-h\u00b2=0.29). Broad-sense heritability ranged from 0.64 to 0.98, and narrow-sense heritability from 0.12 to 0.86 across conditions. The model showed near-perfect correlation (r=0.995) between expected and observed values.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8-C20 and C94 collectively demonstrate robust heritability estimates using an established diallel model. The near-perfect model fit (C94) validates the approach. The reported ranges and means for H\u00b2 and h\u00b2 are internally consistent, and the correlation between broad- and narrow-sense heritability (C16) is statistically significant. The interpretation about additive effects (C19-C20) is appropriately supported by citations to prior work.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:58:35.492325Z"
+    },
+    {
+      "id": "75be2f77-0d27-4b14-8006-955bbe153412",
+      "content_id": "677ae846-a866-4e2c-8b82-b69c5935fe83",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Mode of inheritance analysis revealed that 32 of 49 conditions showed predominantly additive effects, while 17 conditions displayed non-additive patterns including dominance. Overdominance (11.6%) and underdominance (10.1%) were more common than previously reported. Dominance was identified as a major driver of non-additive effects, though epistasis may also contribute.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21-C32 describe a systematic classification of inheritance modes with clear quantitative results. The methodology accounts for phenotypic separation limitations (C21-C22), and the frequencies of different modes are well-documented (C23-C30). The conclusion about dominance (C31) is directly supported by the data, while the speculation about epistasis (C32) is appropriately qualified as uncertain.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:58:35.492325Z"
+    },
+    {
+      "id": "f0098926-6c4f-4552-9825-52f509c0970b",
+      "content_id": "677ae846-a866-4e2c-8b82-b69c5935fe83",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "GWAS on a subset of 595 hybrids from 34 unrelated isolates identified 1,723 significantly associated SNPs across 31,632 polymorphic sites. Notably, 16.3% of significant SNPs were low-frequency variants (MAF<0.05) in the original population, with the diallel design increasing their MAF to detectable levels (up to 0.32). This enrichment was consistent across both additive and overdominant models.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-C42 describe the GWAS methodology and key findings. The subset selection to avoid population structure (C33) is methodologically sound. The enrichment of low-frequency variants among significant SNPs (C39-C41) is a key finding supported by clear quantitative data. The conclusion that low-frequency variants play a significant role (C42) is justified by the 4-fold enrichment (4% input vs 16.3% significant).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:58:35.492325Z"
+    },
+    {
+      "id": "56168a7e-b580-4adb-9e78-dd2e23e5a430",
+      "content_id": "677ae846-a866-4e2c-8b82-b69c5935fe83",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Detected SNPs explained 15-32% of phenotypic variance (median 20%). Low-frequency variants explained similar proportions of variance (median 20.2%) as common variants (median 19.6%), and had comparable effect sizes (mean 0.23 sd vs 0.25 sd). Rare variants explained higher variance on average than other detected SNPs, a trend robust across both encoding models.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C47 quantify the contribution of variants to phenotypic variance. The similar variance explained and effect sizes between low-frequency and common variants (C44, C47) is a key finding. However, the interpretation requires caution: variance explained depends on allele frequency in the studied population (the diallel panel), not the original population, which the authors acknowledge in the Discussion. The data support the claims within the diallel context.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:58:35.492325Z"
+    },
+    {
+      "id": "4f15e9cc-fff4-4eb6-8d26-af08628ed8f1",
+      "content_id": "677ae846-a866-4e2c-8b82-b69c5935fe83",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The 1,723 associated SNPs were distributed across 546 genes, with 62.5% in coding regions. These genes showed significant enrichment for 'response to stimulus' and 'response to stress' (p=5.39\u00d710\u207b\u2075). Overlap with previously identified QTGs was modest: 19 genes matched a curated list of 145 QTGs, and 22 overlapped with a recent large-scale survey.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48-C53 characterize the biological relevance of associated SNPs. The proportion in coding regions (C48) is slightly lower than the genome-wide coding proportion (C49), suggesting no strong bias. The GO enrichment (C53) is statistically significant and biologically coherent with the tested conditions. The modest overlap with known QTGs (C51-C52) is honestly reported and may reflect the focus on low-frequency variants or different genetic backgrounds.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:58:35.492325Z"
+    },
+    {
+      "id": "50b82746-f943-4b51-aaf7-275ebebfd70c",
+      "content_id": "677ae846-a866-4e2c-8b82-b69c5935fe83",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "A low-frequency variant in SGD1 (MAF 2.5% in population, 9% in diallel) was validated using CRISPR-Cas9 allele replacement. The minor allele, containing a synonymous and a non-synonymous mutation (Glu\u2192Lys), conferred a significant phenotypic advantage of 0.2 growth ratio units in 6-azauracil compared to the major allele.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54-C61 describe experimental validation of a specific low-frequency variant. The GWAS detection (C54), allele frequency increase in the diallel (C55), and molecular characterization (C58) are well-documented. The CRISPR validation (C60-C61) provides strong causal evidence for the phenotypic effect. The use of both mating types strengthens the validation. This is a clear example of a functional low-frequency variant.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:58:35.492325Z"
+    },
+    {
+      "id": "ba6b43a5-88b4-479f-8e12-c5a6638e19fe",
+      "content_id": "677ae846-a866-4e2c-8b82-b69c5935fe83",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The study demonstrates that low-frequency variants play a decisive role in phenotypic variation at population scale. While individual low-frequency variants have effect sizes similar to common variants, they are enriched among significantly associated SNPs (16.3% vs 4% input), and collectively may explain substantial phenotypic variance despite low individual contributions in large populations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C62-C68, C74, and C78 synthesize the main conclusions. The enrichment of low-frequency variants (C63, C74) is well-supported. The interpretation about effect sizes and variance explained (C64, C67) correctly distinguishes between individual and collective contributions. The speculation that low-frequency variants collectively may explain more variance than common variants (C68) is appropriately qualified as uncertain and represents a hypothesis for future work.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:58:35.492325Z"
+    },
+    {
+      "id": "d293bbd9-a22f-4b23-aa3c-c9ef2842e1b7",
+      "content_id": "677ae846-a866-4e2c-8b82-b69c5935fe83",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The findings are contextualized within the broader literature on missing heritability. Previous studies in humans and yeast have shown that low-frequency variants contribute to complex traits, though prior yeast QTN mapping used closely related genetic backgrounds (30% laboratory, 41% wine cluster) which may have introduced ascertainment bias.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C65-C66, C69-C73, C80-C83 appropriately cite and interpret prior work. The citations to human height studies (C65-C66, C81-C82) and yeast QTN studies (C70-C73) are relevant. The acknowledgment of ascertainment bias in prior yeast studies (C73) and the limited genetic diversity of previous mapping populations (C72) appropriately contextualizes the current work's contribution.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:58:35.492325Z"
+    },
+    {
+      "id": "9b3b86fd-7081-4fb5-b6b7-aabbc95f9dc6",
+      "content_id": "677ae846-a866-4e2c-8b82-b69c5935fe83",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The diallel design provides intrinsic power to evaluate additive versus non-additive genetic components. Dominance at the single-locus level was shown to contribute to phenotypic variation, though more complex inter-loci interactions (epistasis) may also be involved.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C75-C77 discuss the advantages and limitations of the diallel approach. The power to partition additive and non-additive effects (C75) is a well-established property of diallel designs. The conclusion about dominance (C76) is supported by the mode of inheritance analysis. The acknowledgment that epistasis may be involved (C77) is appropriately cautious given that the mode of inheritance classification reflects net phenotypic outcomes rather than locus-specific effects.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:58:35.492325Z"
+    },
+    {
+      "id": "ff78fe45-0af0-4c8d-ab62-6b8c95e8d34b",
+      "content_id": "677ae846-a866-4e2c-8b82-b69c5935fe83",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Background context establishes that low-frequency variants (MAF<0.05) are prevalent in populations, known to affect Mendelian and complex traits, but difficult to detect in GWAS due to statistical limitations. S. cerevisiae is an appropriate model with high genetic diversity (\u03c0=3\u00d710\u207b\u00b3), 1,011 sequenced isolates, and prior GWAS showing that CNVs and SNPs together explain only ~17% of phenotypic variance.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C84-C93 provide background knowledge and cite appropriate literature. The definition of low-frequency variants (C84), their role in disease (C85-C86), and GWAS limitations (C87) are standard knowledge appropriately cited. The characterization of S. cerevisiae diversity (C88-C89) and prior GWAS findings (C90-C93) correctly cite the Peter et al. 2018 study and establish the motivation for the current work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:58:35.492325Z"
+    },
+    {
+      "id": "f9e0bcb5-3302-4db3-9a19-bed11981bc74",
+      "content_id": "677ae846-a866-4e2c-8b82-b69c5935fe83",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Mating type effects were assessed by comparing MATa and MAT\u03b1 parental strains across all conditions. The overall correlation was 0.967 (p<1e-324), with an average per-strain correlation of 0.976, indicating no significant mating type-specific fitness effects.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C95-C97 document an important control experiment. The high correlation between mating types (C95-C96) and the conclusion of no mating type specificity (C97) are well-supported by the data. This validates that observed phenotypic differences are due to genetic background rather than mating type, which is essential for interpreting the diallel results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:58:35.492325Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "3dc7e65e-03eb-4cbd-830b-dcaf63edd889",
+      "result_id": "20137d4b-c93b-4731-8efe-f15168a18617"
+    },
+    {
+      "claim_id": "a9b070eb-8692-4cd9-8672-bb5cf0091b35",
+      "result_id": "20137d4b-c93b-4731-8efe-f15168a18617"
+    },
+    {
+      "claim_id": "761ffa0a-cae7-4646-8e07-2e19c145d4bc",
+      "result_id": "20137d4b-c93b-4731-8efe-f15168a18617"
+    },
+    {
+      "claim_id": "50eaefeb-67f5-4c03-9580-a82c44435938",
+      "result_id": "20137d4b-c93b-4731-8efe-f15168a18617"
+    },
+    {
+      "claim_id": "9798b8f5-1c67-49d6-8a10-9ce1a51d0aa3",
+      "result_id": "20137d4b-c93b-4731-8efe-f15168a18617"
+    },
+    {
+      "claim_id": "81f10e84-11a1-4314-a968-55d1221c5773",
+      "result_id": "20137d4b-c93b-4731-8efe-f15168a18617"
+    },
+    {
+      "claim_id": "a7e42af8-f2bd-4bbc-9f42-3b5c732ea568",
+      "result_id": "20137d4b-c93b-4731-8efe-f15168a18617"
+    },
+    {
+      "claim_id": "9f4ca46f-9e2e-4c14-ad32-6bca0cf9d1a8",
+      "result_id": "db4c4127-0eef-448e-87dd-efae1e0556eb"
+    },
+    {
+      "claim_id": "fbd84133-b947-4b48-9040-868db44c52f1",
+      "result_id": "db4c4127-0eef-448e-87dd-efae1e0556eb"
+    },
+    {
+      "claim_id": "bf5632a8-7aaf-42cc-8271-5c47363d3342",
+      "result_id": "db4c4127-0eef-448e-87dd-efae1e0556eb"
+    },
+    {
+      "claim_id": "87c9069e-b948-45fb-8636-3569512e7971",
+      "result_id": "db4c4127-0eef-448e-87dd-efae1e0556eb"
+    },
+    {
+      "claim_id": "fdf3e26c-cfd0-44d9-808b-3e5b1ba92421",
+      "result_id": "db4c4127-0eef-448e-87dd-efae1e0556eb"
+    },
+    {
+      "claim_id": "471a3ae7-7dd8-438c-a3b4-89e10cf97c7f",
+      "result_id": "db4c4127-0eef-448e-87dd-efae1e0556eb"
+    },
+    {
+      "claim_id": "575bbd41-f411-488b-a4a9-1e9a6389e327",
+      "result_id": "db4c4127-0eef-448e-87dd-efae1e0556eb"
+    },
+    {
+      "claim_id": "44e214e9-1247-413d-ac75-8844bb88d927",
+      "result_id": "db4c4127-0eef-448e-87dd-efae1e0556eb"
+    },
+    {
+      "claim_id": "124ed075-6ee3-4a13-ac75-df7e78072a3a",
+      "result_id": "db4c4127-0eef-448e-87dd-efae1e0556eb"
+    },
+    {
+      "claim_id": "3c9eecfc-5d66-4964-a078-8218cc9cdd98",
+      "result_id": "db4c4127-0eef-448e-87dd-efae1e0556eb"
+    },
+    {
+      "claim_id": "f009738c-992e-4f9f-ad3f-0f53aa5c0c7c",
+      "result_id": "db4c4127-0eef-448e-87dd-efae1e0556eb"
+    },
+    {
+      "claim_id": "ff58eb83-fbda-4ec6-a6d0-aa41ea84a8f8",
+      "result_id": "db4c4127-0eef-448e-87dd-efae1e0556eb"
+    },
+    {
+      "claim_id": "266ae312-7aa7-438b-9d36-d45c829d1b0c",
+      "result_id": "db4c4127-0eef-448e-87dd-efae1e0556eb"
+    },
+    {
+      "claim_id": "297760c5-907a-4274-8c85-f5673dd23b14",
+      "result_id": "db4c4127-0eef-448e-87dd-efae1e0556eb"
+    },
+    {
+      "claim_id": "0e3a9623-50f5-4dc4-9b91-6923bb97da57",
+      "result_id": "75be2f77-0d27-4b14-8006-955bbe153412"
+    },
+    {
+      "claim_id": "12d9bec9-1560-4e1b-b87c-e4d143b2c73c",
+      "result_id": "75be2f77-0d27-4b14-8006-955bbe153412"
+    },
+    {
+      "claim_id": "497dcfc2-1a22-49b4-bc96-9050b543ae34",
+      "result_id": "75be2f77-0d27-4b14-8006-955bbe153412"
+    },
+    {
+      "claim_id": "9976b56e-b450-44bc-aba2-18fe79096a01",
+      "result_id": "75be2f77-0d27-4b14-8006-955bbe153412"
+    },
+    {
+      "claim_id": "a9847147-65eb-4181-9181-daf9f967ef00",
+      "result_id": "75be2f77-0d27-4b14-8006-955bbe153412"
+    },
+    {
+      "claim_id": "e1baaf2c-e57f-48ab-9f28-59e5f9c2123c",
+      "result_id": "75be2f77-0d27-4b14-8006-955bbe153412"
+    },
+    {
+      "claim_id": "8e60dc30-307c-43af-85e8-f7e94b041b4c",
+      "result_id": "75be2f77-0d27-4b14-8006-955bbe153412"
+    },
+    {
+      "claim_id": "2668bd21-b38b-41d0-b94d-b230eebf7c79",
+      "result_id": "75be2f77-0d27-4b14-8006-955bbe153412"
+    },
+    {
+      "claim_id": "6dc8dbc2-8803-4c19-8b34-e266fe80d9f2",
+      "result_id": "75be2f77-0d27-4b14-8006-955bbe153412"
+    },
+    {
+      "claim_id": "1665c49c-0faf-4cac-be5b-f9090c3a07ba",
+      "result_id": "75be2f77-0d27-4b14-8006-955bbe153412"
+    },
+    {
+      "claim_id": "c7fdfeb2-655a-442a-889f-a66b1160348f",
+      "result_id": "75be2f77-0d27-4b14-8006-955bbe153412"
+    },
+    {
+      "claim_id": "8720eb89-d000-4354-81e2-b2450c5eb4b2",
+      "result_id": "75be2f77-0d27-4b14-8006-955bbe153412"
+    },
+    {
+      "claim_id": "bc832c33-8bfc-4eeb-83b8-cf622cebc7bd",
+      "result_id": "f0098926-6c4f-4552-9825-52f509c0970b"
+    },
+    {
+      "claim_id": "7a7db691-b767-45f2-9484-4b6ec77d24ac",
+      "result_id": "f0098926-6c4f-4552-9825-52f509c0970b"
+    },
+    {
+      "claim_id": "1f27ec47-ce97-44bc-b61a-37f99d74cc0a",
+      "result_id": "f0098926-6c4f-4552-9825-52f509c0970b"
+    },
+    {
+      "claim_id": "dd6a49ee-17a1-4ac7-a603-b4db2e2bad5e",
+      "result_id": "f0098926-6c4f-4552-9825-52f509c0970b"
+    },
+    {
+      "claim_id": "1cba4182-522b-4a3e-879a-00a87e0691cc",
+      "result_id": "f0098926-6c4f-4552-9825-52f509c0970b"
+    },
+    {
+      "claim_id": "013b9297-414b-4606-bee1-0c6d032e26df",
+      "result_id": "f0098926-6c4f-4552-9825-52f509c0970b"
+    },
+    {
+      "claim_id": "8c97ec99-2732-4ebb-a317-a884bcf9fc8e",
+      "result_id": "f0098926-6c4f-4552-9825-52f509c0970b"
+    },
+    {
+      "claim_id": "e3346565-8649-4737-90e6-94905f3fddd5",
+      "result_id": "f0098926-6c4f-4552-9825-52f509c0970b"
+    },
+    {
+      "claim_id": "28bc7588-cee0-4ad6-b2f1-af8b018c3744",
+      "result_id": "f0098926-6c4f-4552-9825-52f509c0970b"
+    },
+    {
+      "claim_id": "6a9d9b07-750b-4bfe-8f93-1154d34aff91",
+      "result_id": "f0098926-6c4f-4552-9825-52f509c0970b"
+    },
+    {
+      "claim_id": "278c3d32-d7db-4cde-b392-fb7bce7bcee2",
+      "result_id": "56168a7e-b580-4adb-9e78-dd2e23e5a430"
+    },
+    {
+      "claim_id": "b79e4139-0261-4d71-8d5d-0df2a49571dc",
+      "result_id": "56168a7e-b580-4adb-9e78-dd2e23e5a430"
+    },
+    {
+      "claim_id": "ceb6f835-3af9-4fdd-8a6b-7957dee4b718",
+      "result_id": "56168a7e-b580-4adb-9e78-dd2e23e5a430"
+    },
+    {
+      "claim_id": "e15133b9-2e7d-48c8-b9cf-7796b40691e1",
+      "result_id": "56168a7e-b580-4adb-9e78-dd2e23e5a430"
+    },
+    {
+      "claim_id": "4b77485e-0d5a-4a97-8279-24efe44cadcc",
+      "result_id": "56168a7e-b580-4adb-9e78-dd2e23e5a430"
+    },
+    {
+      "claim_id": "e8daaf1d-bd2a-417e-8879-58ef75ec6704",
+      "result_id": "4f15e9cc-fff4-4eb6-8d26-af08628ed8f1"
+    },
+    {
+      "claim_id": "6b0c6746-2a18-4214-b65e-342beed0b87d",
+      "result_id": "4f15e9cc-fff4-4eb6-8d26-af08628ed8f1"
+    },
+    {
+      "claim_id": "8d853b8a-575c-4ef3-951c-15447802443f",
+      "result_id": "4f15e9cc-fff4-4eb6-8d26-af08628ed8f1"
+    },
+    {
+      "claim_id": "2c7533ab-39b3-4f35-acda-1ada040e35b4",
+      "result_id": "4f15e9cc-fff4-4eb6-8d26-af08628ed8f1"
+    },
+    {
+      "claim_id": "5a0ec87c-8e96-4e09-82f5-4f1bd6906df0",
+      "result_id": "4f15e9cc-fff4-4eb6-8d26-af08628ed8f1"
+    },
+    {
+      "claim_id": "ae204488-9bbc-4307-90d3-2dfd846db7ee",
+      "result_id": "4f15e9cc-fff4-4eb6-8d26-af08628ed8f1"
+    },
+    {
+      "claim_id": "6458ec9c-e534-47a9-8a05-1b34477c5c2a",
+      "result_id": "50b82746-f943-4b51-aaf7-275ebebfd70c"
+    },
+    {
+      "claim_id": "8624f6b9-264e-4564-824f-5138dd4fab3b",
+      "result_id": "50b82746-f943-4b51-aaf7-275ebebfd70c"
+    },
+    {
+      "claim_id": "2b4452c5-c9b0-4f7b-bb2e-bb502cea2191",
+      "result_id": "50b82746-f943-4b51-aaf7-275ebebfd70c"
+    },
+    {
+      "claim_id": "5d7d063f-0b4e-4ec4-9e8f-4c611772f5cf",
+      "result_id": "50b82746-f943-4b51-aaf7-275ebebfd70c"
+    },
+    {
+      "claim_id": "7f7c927d-3f68-478b-901c-136845a6b887",
+      "result_id": "50b82746-f943-4b51-aaf7-275ebebfd70c"
+    },
+    {
+      "claim_id": "cc1ef294-dd84-436a-9a09-367fa94ea395",
+      "result_id": "50b82746-f943-4b51-aaf7-275ebebfd70c"
+    },
+    {
+      "claim_id": "f96701e8-76b0-4a0d-b540-98a84f62943b",
+      "result_id": "50b82746-f943-4b51-aaf7-275ebebfd70c"
+    },
+    {
+      "claim_id": "03ec01d9-fe7f-4565-90a0-dddec4e11818",
+      "result_id": "50b82746-f943-4b51-aaf7-275ebebfd70c"
+    },
+    {
+      "claim_id": "40da428e-9082-4118-9f28-98e8e4e65375",
+      "result_id": "ba6b43a5-88b4-479f-8e12-c5a6638e19fe"
+    },
+    {
+      "claim_id": "0e021f6a-3af5-4865-b9a4-3863a0facb1e",
+      "result_id": "ba6b43a5-88b4-479f-8e12-c5a6638e19fe"
+    },
+    {
+      "claim_id": "b56b12f1-40c2-4f2b-be84-f15a3d575b08",
+      "result_id": "ba6b43a5-88b4-479f-8e12-c5a6638e19fe"
+    },
+    {
+      "claim_id": "37b10c21-8772-4136-8640-ba878aaa776f",
+      "result_id": "ba6b43a5-88b4-479f-8e12-c5a6638e19fe"
+    },
+    {
+      "claim_id": "40aade7f-67f9-4efa-85e6-a0400a9d693c",
+      "result_id": "ba6b43a5-88b4-479f-8e12-c5a6638e19fe"
+    },
+    {
+      "claim_id": "03bc7697-bef6-4adf-bd40-f2052acd2c10",
+      "result_id": "ba6b43a5-88b4-479f-8e12-c5a6638e19fe"
+    },
+    {
+      "claim_id": "454ca0e7-2468-4c5e-acca-40b4bda8134d",
+      "result_id": "ba6b43a5-88b4-479f-8e12-c5a6638e19fe"
+    },
+    {
+      "claim_id": "9fc69bb3-6ecf-44fe-b355-d5b76e2548cf",
+      "result_id": "d293bbd9-a22f-4b23-aa3c-c9ef2842e1b7"
+    },
+    {
+      "claim_id": "c82ea303-757c-4a45-8493-02d18725edf2",
+      "result_id": "d293bbd9-a22f-4b23-aa3c-c9ef2842e1b7"
+    },
+    {
+      "claim_id": "b9549c58-31b7-4e9c-a7da-02e0a918c98a",
+      "result_id": "d293bbd9-a22f-4b23-aa3c-c9ef2842e1b7"
+    },
+    {
+      "claim_id": "a34035d1-384e-44ae-aaad-91a512094016",
+      "result_id": "d293bbd9-a22f-4b23-aa3c-c9ef2842e1b7"
+    },
+    {
+      "claim_id": "3b1bb331-72fd-4032-9aa8-830bcb930d07",
+      "result_id": "d293bbd9-a22f-4b23-aa3c-c9ef2842e1b7"
+    },
+    {
+      "claim_id": "703b4f4a-b51c-401c-99b9-37116d49f124",
+      "result_id": "d293bbd9-a22f-4b23-aa3c-c9ef2842e1b7"
+    },
+    {
+      "claim_id": "7c0d5d80-ed82-414e-8424-9331e3419a14",
+      "result_id": "d293bbd9-a22f-4b23-aa3c-c9ef2842e1b7"
+    },
+    {
+      "claim_id": "07217588-b12b-4d3e-9372-9f7aa7e4969d",
+      "result_id": "d293bbd9-a22f-4b23-aa3c-c9ef2842e1b7"
+    },
+    {
+      "claim_id": "8424e28b-2af4-4d78-8e99-74e28dd2aac9",
+      "result_id": "d293bbd9-a22f-4b23-aa3c-c9ef2842e1b7"
+    },
+    {
+      "claim_id": "a4bb2255-6202-4327-ad16-000bf2018d90",
+      "result_id": "d293bbd9-a22f-4b23-aa3c-c9ef2842e1b7"
+    },
+    {
+      "claim_id": "e2fda53b-8f60-472f-9c41-4469c8b46f39",
+      "result_id": "d293bbd9-a22f-4b23-aa3c-c9ef2842e1b7"
+    },
+    {
+      "claim_id": "5d9c925c-4524-4c3a-a443-1ab280af9776",
+      "result_id": "9b3b86fd-7081-4fb5-b6b7-aabbc95f9dc6"
+    },
+    {
+      "claim_id": "261ca6d6-cf51-4df6-8d1f-f10b4f52372d",
+      "result_id": "9b3b86fd-7081-4fb5-b6b7-aabbc95f9dc6"
+    },
+    {
+      "claim_id": "670f8db2-e610-4433-82a0-42889132b839",
+      "result_id": "9b3b86fd-7081-4fb5-b6b7-aabbc95f9dc6"
+    },
+    {
+      "claim_id": "ab41b324-a9bc-48aa-8f84-9f7e34467e08",
+      "result_id": "ff78fe45-0af0-4c8d-ab62-6b8c95e8d34b"
+    },
+    {
+      "claim_id": "83b6e3fd-84b5-4d60-984c-1965977c26e3",
+      "result_id": "ff78fe45-0af0-4c8d-ab62-6b8c95e8d34b"
+    },
+    {
+      "claim_id": "943d47de-e334-4d70-a798-9d6718e91ef8",
+      "result_id": "ff78fe45-0af0-4c8d-ab62-6b8c95e8d34b"
+    },
+    {
+      "claim_id": "d5ad8fa3-42c9-4666-930a-5ab854cccaea",
+      "result_id": "ff78fe45-0af0-4c8d-ab62-6b8c95e8d34b"
+    },
+    {
+      "claim_id": "2515561d-6971-4dd8-be5c-5b9959480acc",
+      "result_id": "ff78fe45-0af0-4c8d-ab62-6b8c95e8d34b"
+    },
+    {
+      "claim_id": "f7a2d586-96cf-4bb8-905d-8697023b13e0",
+      "result_id": "ff78fe45-0af0-4c8d-ab62-6b8c95e8d34b"
+    },
+    {
+      "claim_id": "95527c21-4ce1-4d48-ad59-153c5b351db4",
+      "result_id": "ff78fe45-0af0-4c8d-ab62-6b8c95e8d34b"
+    },
+    {
+      "claim_id": "8499fbfc-ed0e-478b-93b0-1329cdf56cd1",
+      "result_id": "ff78fe45-0af0-4c8d-ab62-6b8c95e8d34b"
+    },
+    {
+      "claim_id": "76fc34d0-9431-408b-87bf-d005cc8a3702",
+      "result_id": "ff78fe45-0af0-4c8d-ab62-6b8c95e8d34b"
+    },
+    {
+      "claim_id": "f862d73c-9eba-4c34-bc89-73395a94410b",
+      "result_id": "ff78fe45-0af0-4c8d-ab62-6b8c95e8d34b"
+    },
+    {
+      "claim_id": "3a246ab3-30bc-4d86-bc53-0223c075f3a2",
+      "result_id": "f9e0bcb5-3302-4db3-9a19-bed11981bc74"
+    },
+    {
+      "claim_id": "17312474-4207-41ad-8d4b-77ca48ad9865",
+      "result_id": "f9e0bcb5-3302-4db3-9a19-bed11981bc74"
+    },
+    {
+      "claim_id": "bb99ad07-84be-4fcd-af8e-50d8446664e0",
+      "result_id": "f9e0bcb5-3302-4db3-9a19-bed11981bc74"
+    }
+  ],
+  "comparisons": []
+}

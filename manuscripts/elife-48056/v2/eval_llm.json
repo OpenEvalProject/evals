@@ -1,0 +1,398 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C20",
+      "C21",
+      "C22",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Drosophila neuroblasts express opposing temporal gradients of RNA-binding proteins Imp and Syp, which post-transcriptionally regulate Chinmo translation to produce a descending protein gradient in newborn neurons. This gradient is expressed in relatively shallow, opposing patterns in mushroom body neuroblasts, and modulation of Imp or Syp expression results in shifts in neuronal temporal fate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C20-C22, C26-C28 collectively establish the Imp/Syp gradient system and its regulation of Chinmo. These claims are supported by prior published work (Liu et al., 2015) and are presented as established findings that form the foundation for the current study. The gradient mechanism is well-documented with both citation evidence and data from Figure 1A.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C23",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Chinmo levels correlate with specification of multiple neuronal temporal fates in mushroom body lineages, where \u03b3 neurons are produced in a high Chinmo window, \u03b1'/\u03b2' neurons in a low Chinmo window, and \u03b1/\u03b2 neurons in a Chinmo-absent window. Altering Chinmo levels can shift temporal fate, suggesting dose-dependent, morphogen-like actions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23, C29-C33 describe the established relationship between Chinmo levels and neuronal fate specification. These are supported by prior work (Zhu et al., 2006) and provide the context for investigating Mamo as a downstream effector. The morphogen-like characterization (C33) is presented as an inference but is reasonable given the dose-dependent effects.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Mamo is a BTB zinc finger transcription factor expressed in a temporal window that trails weak Chinmo expression in mushroom body lineages. Mamo expression is initiated around 84 hr ALH in young/maturing neurons destined to become \u03b1'/\u03b2' neurons, is absent in prospective \u03b3 or \u03b1/\u03b2 neurons, and can be inhibited by both high Chinmo levels and loss of chinmo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C36, C44-C49 establish Mamo's expression pattern and its relationship to Chinmo levels. These claims are well-supported by immunostaining data (Figures 1B-D, Figure 1\u2014figure supplement 1A-C) showing temporal and spatial expression patterns. The use of \u03b3 neuron-specific drivers (C48) provides strong evidence for cell-type specificity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Weak Chinmo expression is both necessary and sufficient to activate Mamo in young/maturing mushroom body neurons. Both overexpressing and eliminating Chinmo abolish Mamo expression, while premature reduction of Chinmo through RNAi initiates early Mamo expression and greatly expands the number of Mamo-positive cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C54 demonstrate Chinmo's transcriptional control of Mamo through loss-of-function, gain-of-function, and RNAi experiments (Figures 2B-G, Figure 2\u2014figure supplement 1A). The cell autonomy evidence from MARCM clones (C51) strengthens the conclusion. The quantification showing ~3-fold expansion of Mamo-positive cells with chinmo-RNAi provides robust statistical support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Mamo requires post-transcriptional regulation by Syp in addition to transcriptional control by weak Chinmo. Despite chinmo-RNAi reducing Chinmo levels early, Mamo expression is only shifted to 60 hr ALH, correlating with Syp onset. Repressing Syp abolishes Mamo expression even with weak Chinmo present, while ectopic Syp increases Mamo-positive cells. Without Syp, weak Chinmo is insufficient to promote Mamo expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C63 establish the requirement for both Chinmo and Syp in Mamo regulation through systematic genetic manipulations (Figure 3, Figure 3\u2014figure supplements 1-2). The double RNAi experiment (Syp-RNAi + chinmo-RNAi) provides critical evidence that both factors are necessary. The correlation with Syp onset timing (C57) is supported by prior work (Liu et al., 2015).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Single-molecule FISH reveals that mamo transcription initiates at 72 hr ALH in newborn neurons, with mature transcripts accumulating in young/maturing neurons. Syp is required post-transcriptionally for mamo mRNA maturation and sustained transcription. Loss of Syp blocks accumulation of mature transcripts and results in short-lived transcription sites that do not survive beyond the newborn neuron stage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C70 are strongly supported by smFISH data (Figure 4D-K, Figure 4\u2014figure supplement 1) that directly visualizes nascent and mature transcripts. The use of intron and exon probes allows clear distinction between transcription and post-transcriptional regulation. The observation that Syp-RNAi blocks mature transcript accumulation without preventing transcription initiation (C67-C69) provides compelling mechanistic evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C116"
+    ],
+    "result": "Mamo expression is positively autoregulated. mamo-RNAi does not inhibit mamo induction in newborn neurons but prevents mamo mRNA maturation and sustained transcription, suggesting that Mamo protein feeds back to maintain its own transcription.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C73, C116 demonstrate Mamo autoregulation through smFISH experiments with mamo-RNAi (Figure 4L-M, Figure 4\u2014figure supplement 1). The observation that transcription initiates normally but is not sustained without Mamo protein provides strong evidence for positive feedback. However, C71 is presented as speculation ('may be due to'), which is appropriate given that direct binding evidence is not provided.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C82",
+      "C83"
+    ],
+    "result": "Mamo is essential for \u03b1'/\u03b2' temporal fate determination in mushroom body neurons. mamo-RNAi causes \u03b1'/\u03b2' lobes to vanish and eliminates Trio expression characteristic of \u03b1'/\u03b2' neurons. The combination of mamo-RNAi and chinmo-RNAi completely eliminates \u03b1'/\u03b2' neuronal features, substantiating Mamo's essential role.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C78, C82-C83 demonstrate Mamo's necessity for \u03b1'/\u03b2' fate through loss-of-function experiments (Figure 5C, C', E, E'). The use of multiple markers (Trio, Abrupt, Fas-II) and the complete elimination of \u03b1'/\u03b2' features with double RNAi provide strong evidence. The pleiotropic effect on \u03b3 neurons (C78) is acknowledged, which strengthens the evaluation by noting complexity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Premature weak Chinmo (chinmo-RNAi) significantly decreases \u03b3 neuron production from 38\u00b10.3% to 18\u00b11.6% (p<0.001) and increases \u03b1/\u03b2 neurons from 41\u00b10.5% to 64\u00b11.1% (p<0.001). The window of \u03b1'/\u03b2' production is shifted earlier rather than prolonged, consistent with early Mamo transcription initiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C81 provide quantitative analysis of cell fate shifts with chinmo-RNAi (Figure 5D, D', Figure 5\u2014figure supplement 3). The statistical significance is clearly stated with p-values, and the interpretation that the \u03b1'/\u03b2' window shifts rather than expands is supported by the lack of increase in \u03b1'/\u03b2' percentage. This is consistent with the smFISH data showing early Mamo transcription.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "The mamo gene has seven splice isoforms producing four protein variants. Only the 4ZF Mamo variant (corresponding to mamo-RF or mamo-RG isoforms) produces mushroom bodies with altered Fas-II labeling reminiscent of temporal fate shifts, can override the mamo-RNAi phenotype, and lies downstream of Imp/Syp gradients and Chinmo. 4ZF Mamo overexpression does not alter Imp, Syp, or Chinmo levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C88 systematically test different Mamo isoforms to identify the functional variant (Figure 5\u2014figure supplement 1, Figure 5\u2014figure supplement 2). The rescue experiment (C86) provides strong evidence that the 4ZF construct is functional. The observation that Mamo overexpression doesn't affect upstream factors (C88) supports the hierarchical model. The use of codon-optimized constructs lacking UTRs and introns is appropriate for testing protein function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "Mamo is both necessary and sufficient to determine the middle \u03b1'/\u03b2' temporal fate. Continuous Mamo expression enlarges \u03b1'/\u03b2' lobes and reduces \u03b1/\u03b2 lobes, with \u03b1'/\u03b2' cells increasing from 20\u00b10.8% to 32\u00b11.8% (p<0.005) and \u03b1/\u03b2 cells decreasing from 41\u00b10.5% to 2\u00b10.4% (p<0.001). Mamo can transform \u03b3 neurons to \u03b1'/\u03b2' fate when combined with Syp-RNAi, without affecting neuroblast division.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C98 demonstrate Mamo sufficiency through gain-of-function experiments (Figure 5F-H). The quantitative data with statistical significance (C91-C92) supports the conclusions. The Syp-RNAi + Mamo-GOF experiment (C93-C96) is particularly compelling as it shows Mamo can override the 'forever young' phenotype and transform \u03b3 neurons to \u03b1'/\u03b2' fate. The observation that neuroblast division continues (C96) indicates Mamo acts specifically on fate determination.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "Mamo is required to maintain \u03b1'/\u03b2' cell-type specific Trio expression in adult neurons. Mamo continues to be expressed in adult \u03b1'/\u03b2' neurons, and expression of mamo-RNAi for 21 days after adult eclosion effectively reduces Mamo protein and completely eliminates \u03b1'/\u03b2'-characteristic cytoplasmic Trio (22\u00b11.6% control vs 0\u00b10% mamo-RNAi, p<0.0005).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C102 demonstrate Mamo's role in fate maintenance through adult-specific RNAi using temperature-sensitive GAL80 (Figure 6C, C', Figure 6\u2014figure supplement 1). The temporal control is well-designed, and the 21-day requirement for effective knockdown is documented. The complete loss of cytoplasmic Trio with significant p-value provides strong quantitative support. This extends Mamo's function beyond specification to maintenance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "Mamo acts as a terminal selector transcription factor for \u03b1'/\u03b2' neuronal fate, in part by regulating Trio gene expression. Overexpressing Mamo in adult neurons results in a modest but significant increase in \u03b1'/\u03b2' characteristic gene expression (22\u00b11.6% control vs 42\u00b14.1% Mamo-GOF, p=0.01), though the ability to transform neurons diminishes over time.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C105 show Mamo can induce \u03b1'/\u03b2' characteristics in mature neurons through adult-specific overexpression (Figure 6D, D', Figure 6\u2014figure supplement 2). The statistical significance (p=0.01) supports the conclusion. The observation that transformation ability diminishes over time (C104) is important and suggests temporal constraints on fate plasticity. The characterization as a terminal selector (C105) is well-supported by the combined specification and maintenance data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "Weak Chinmo and Syp specifically guide Mamo expression in defined temporal windows of diverse lineages beyond mushroom body. In antennal lobe lineages, Mamo is expressed in at least two of four labeled lineages at 84 hr ALH, weak Chinmo induces precocious Mamo expression, and Mamo expression is lost when Syp is repressed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C112 extend the Mamo regulation mechanism to antennal lobe lineages (Figure 7). The observation that the same regulatory logic applies in AL lineages with different gradient characteristics (steep vs. shallow) strengthens the generality of the mechanism. The data showing similar responses to chinmo-RNAi and Syp-RNAi in AL as in MB (C110-C111) provides strong support for conservation across lineages.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C113",
+      "C114"
+    ],
+    "result": "ChIP-chip performed in embryos found five Chinmo binding sites within the mamo gene, consistent with direct activation of mamo transcription by Chinmo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113-C114 cite published ChIP-chip data (Roy et al., 2010) showing Chinmo binding sites in the mamo gene. While this is cited evidence rather than new data, it provides important support for direct transcriptional regulation. The inference of direct activation (C114) is reasonable given the binding sites and the functional data showing Chinmo is necessary for mamo transcription.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C115"
+    ],
+    "result": "In the testis, Chinmo is suspected to function as a transcriptional repressor, suggesting context-dependent activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C115 cites published work (Flaherty et al., 2010; Grmai et al., 2018) suggesting Chinmo can act as a repressor in different contexts. This is relevant for understanding how Chinmo might have concentration-dependent effects (activator at low levels, repressor at high levels) as discussed for mamo regulation. The claim is appropriately presented as 'suspected' given the cited evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "Syp (homolog of mammalian SYNCRIP) is involved in multiple facets of mRNA regulation including splicing, maturation, localization, stabilization, and translation control. Syp directly binds mamo mRNA and aids in its splicing, maturation and/or stabilization, as evidenced by the failure of mature transcripts to accumulate without Syp, and the ability of a mamo cDNA lacking UTRs and introns to promote cell fate changes despite Syp repression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C117-C124 integrate published knowledge about SYNCRIP/Syp function (C117-C122) with the current study's findings (C123-C124). The inference that Syp directly binds mamo mRNA (C123) is reasonable given the smFISH data showing post-transcriptional regulation and the known functions of Syp. The cDNA rescue experiment (C124, Figure 5H) provides strong support that Syp acts on mamo mRNA sequences rather than protein.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130"
+    ],
+    "result": "Chinmo functions in newborn neurons to promote temporal fate, as weak Chinmo expression directly precedes Mamo transcription, and Mamo is essential for specification and maintenance of \u03b1'/\u03b2' fate. This contrasts with alternative models suggesting Chinmo acts primarily through ecdysone receptor signaling, which is highly pleiotropic and has ligand-independent functions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C125-C130 address an alternative model from Marchetti and Tavosanis (2017) and argue for direct Chinmo action in neurons. The temporal sequence (weak Chinmo \u2192 Mamo transcription \u2192 \u03b1'/\u03b2' fate) shown in Figures 3-6 provides strong support. The discussion of ecdysone receptor complexity (C126-C129) appropriately acknowledges limitations of prior interpretations. The integration of current findings (C130) is well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C131",
+      "C132",
+      "C133",
+      "C134"
+    ],
+    "result": "Analogous mechanisms to the multilayered hierarchical system described likely underlie temporal patterning in mammalian brains. Imp and Syp homologs are highly expressed in developing mouse brain and play vital roles in neural development. The opposing functions of Imp and Syp appear conserved, as murine IMP1 and SYNCRIP bind identical RNA to promote or repress axon growth, respectively. IMP1 expression in fetal mouse neural stem cells plays important roles in stem cell maintenance and proper temporal progression of neurogenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C131-C134 discuss evolutionary conservation based on published literature. C131 is appropriately presented as speculation ('likely underlie'). The cited evidence for mammalian homologs (C132-C134) supports the possibility of conservation. However, direct evidence for temporal patterning roles in mammals is limited. The claim is reasonable as a discussion point but would require experimental validation in mammalian systems.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141"
+    ],
+    "result": "Chinmo and Mamo are BTB-ZF transcription factors, a family critical for developmental processes including neural development. The BTB domain mediates protein interactions and binds transcriptional regulators, while C2H2 zinc fingers provide DNA-binding specificity. The mammalian BTB-ZF protein Zbtb20 is essential for early-to-late neuronal identity in mouse cortex, is temporally expressed in cortical progenitors, and knockout results in cortical layering defects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C135-C141 provide context for the BTB-ZF protein family and potential mammalian parallels. The structural information (C135-C137) is well-established. The discussion of Zbtb20 (C139-C140) cites published work (Tonchev et al., 2016) showing temporal expression and layering defects, which is relevant for potential conservation. The acknowledgment that temporal patterning roles haven't been explored for other BTB-ZF proteins (C141) is appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147"
+    ],
+    "result": "A layered series of temporal protein gradients guide expression of terminal selector genes in a hierarchical fate specification process. First-tier temporal gradients are expressed in neural stem cells, followed by restricted expression in newborn neurons, finally inducing terminal selector genes in maturing neurons. Multi-tiered, bimodal regulation ensures only progeny with both weak Chinmo and significant Syp levels can activate mamo. This paradigm provides considerable complexity of gene network regulation, leading to abundant neural cell diversity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C142-C147 synthesize the study's findings into a comprehensive model (Figure 8). The hierarchical organization (stem cell gradients \u2192 newborn neuron factors \u2192 terminal selectors) is well-supported by the experimental data. The bimodal regulation requiring both Chinmo and Syp (C145) is strongly demonstrated. The analogy to A/P axis patterning (C146) is appropriate. The conclusions about complexity and diversity (C147) are reasonable inferences from the demonstrated mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "First and second-layer temporal factors define a temporal expression window of Mamo through both transcriptional and post-transcriptional regulation. This layered regulation is utilized in both mushroom body and antennal lobe lineages, resulting in a discrete window of Mamo expression in young, post-mitotic neurons that corresponds to the middle window of neurogenesis in mushroom body lineages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C4, C38-C40 summarize the key regulatory mechanism. These claims integrate findings from multiple experiments showing Chinmo-mediated transcriptional control (Figures 2-3) and Syp-mediated post-transcriptional regulation (Figures 3-4). The demonstration in both MB and AL lineages (C38) strengthens the generality. The temporal correspondence to the middle neurogenesis window (C40) is well-documented through developmental time course experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Mamo is essential for the temporally defined, terminal identity and maintenance of \u03b1'/\u03b2' mushroom body neurons. \u03b1'/\u03b2' neuronal characteristics are lost when Mamo levels are reduced, ectopic Mamo drives an increase in \u03b1'/\u03b2' neuron production, and Mamo deciphers the upstream temporal specification code to act as a terminal selector determining neuronal fate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C6, C41-C43 represent the central conclusions about Mamo's function. These are strongly supported by loss-of-function experiments (Figures 5C-E, 6C), gain-of-function experiments (Figures 5F-H, 6D), and adult-specific manipulations (Figure 6). The characterization as a terminal selector (C43) is well-justified by the combined specification and maintenance functions, continuous expression, and autoregulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C7"
+    ],
+    "result": "The neurodevelopmental roles of orthologous/related mammalian genes suggest a fundamental conservation of this mechanism in brain development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C7 proposes conservation in mammalian brain development based on orthologous genes. While the discussion provides evidence for mammalian homologs of Imp and Syp having neurodevelopmental roles (C132-C134), and BTB-ZF proteins like Zbtb20 affecting cortical development (C139-C140), direct evidence for the specific hierarchical temporal patterning mechanism in mammals is not provided. This remains a reasonable hypothesis requiring experimental validation.",
+    "result_type": "MAJOR"
+  }
+]

@@ -1,0 +1,1286 @@
+{
+  "submission": {
+    "id": "f03c759f-67c8-46f3-95e9-bb118963595b",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T20:18:52.840492Z",
+    "updated_at": "2025-12-02T20:18:52.840492Z"
+  },
+  "content": [
+    {
+      "id": "db9c46a9-7547-4cee-990d-8186e068cf63",
+      "submission_id": "f03c759f-67c8-46f3-95e9-bb118963595b",
+      "content_type": "manuscript",
+      "content_text": "# Modelling the emergence of whisker barrels\n\n## Authors\n\n- Sebastian S James<sup>1</sup> ([ORCID: 0000-0003-0208-0588](https://orcid.org/0000-0003-0208-0588)) \u2020\n- Leah A Krubitzer<sup>2</sup>\n- Stuart P Wilson<sup>1</sup> ([ORCID: 0000-0001-8125-5133](https://orcid.org/0000-0001-8125-5133))\n\n### Affiliations\n\n1. Department of Psychology, The University of Sheffield Sheffield United Kingdom\n2. Center for Neuroscience, The University of California, Davis Davis United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nBrain development relies on an interplay between genetic specification and self-organization. Striking examples of this relationship can be found in the somatosensory brainstem, thalamus, and cortex of rats and mice, where the arrangement of the facial whiskers is preserved in the arrangement of cell aggregates to form precise somatotopic maps. We show in simulation how realistic whisker maps can self-organize, by assuming that information is exchanged between adjacent cells only, under the guidance of gene expression gradients. The resulting model provides a simple account of how patterns of gene expression can constrain spontaneous pattern formation to faithfully reproduce functional maps in subsequent brain structures.\n\n## Introduction\n\nSpatial patterns in neural connectivity provide clues about the constraints under which brains evolve and develop (Purves et al., 1992). Perhaps the most distinctive pattern can be found in the barrel cortex of many rodent species (Woolsey and Van der Loos, 1970). The barrels are identifiable soon after birth in layer 4 of primary somatosensory cortex as dense clusters of thalamocortical axons, which are enclosed by borders a few neurons thick from postnatal day 3 (Erzurumlu and Gaspar, 2012). In the plane tangential to the cortical surface the barrels constitute a somatotopic map of the whiskers, with cells within adjacent barrels responding most strongly and quickly to deflection of adjacent whiskers (Armstrong-James et al., 1992). Barrel patterning reflects subcortical whisker maps comprising cell aggregates called barrelettes in the brainstem and barreloids in the thalamus (Ma, 1991; Van Der Loos, 1976).\n\nBarrel formation requires afferent input from whisker stimulation and thalamic calcium waves (Ant\u00f3n-Bola\u00f1os et al., 2019), and depends on a complex network of axon guidance molecules such as ephrin-A5 and A7 and adhesion molecules such as cadherin-6 and 8 (Vanderhaeghen et al., 2000; Miller et al., 2006). This network is orchestrated by interactions between morphogens Fgf8 and Fgf17 and transcription factors Emx2, Pax6, Sp8, and Coup-tf1 (Shimogori and Grove, 2005; Bishop et al., 2000), which are expressed in gradients spanning the cortical sheet that mark orthogonal axes and can be manipulated to stretch, shrink, shift, and even duplicate barrels (Assimacopoulos et al., 2012).\n\nThe barrel boundaries form a Voronoi tessellation (Senft and Woolsey, 1991; Figure 1A), suggesting that barreloid topology is preserved in the projection of thalamocortical axons into the cortex, and that a barrel forms by lateral axon branching from an initial centre-point that ceases upon contact with axons branching from adjacent centres. However, the assumption of pre-arranged centre-points is difficult to resolve with the observation that axons arrive in the cortical plate as an undifferentiated bundle, prior to barreloid formation (Agmon et al., 1993). In mice, axons from the trigeminal ganglion arrive in the principal division of the trigeminal nucleus (PrV) at E12, then axons from the PrV arrive in the ventroposteromedial nucleus of the thalamus (VPM) at E17, then axons from the VPM arrive in the cortical plate at E18/P0. Distinct whisker-related clusters then become apparent in the PrV at P0-P1, in the VPM at P2-P3, and in the cortex at P3-P5 (Erzurumlu and Gaspar, 2012; Sehara and Kawasaki, 2011).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/55588/elife-55588-fig1-v1.jpg)\n\n**Figure 1.:** (A) Left shows a cytochrome oxidase\u00a0(CO) stain obtained from rat S1 by Zheng et al., 2001, with black lines to delineate barrels and to measure departure (Honda-\u03b4; see Senft and Woolsey, 1991) from a perfect Voronoi tessellation. Right shows the initial distribution of axon branching density (a) for one thalamocortical projection, and two molecular guidance fields (\u03c1), where the domain S has been traced from the\u00a0CO\u00a0stain. (B) The strengths of interaction \u03b3 with fields $\u03c1_{1}$ and $\u03c1_{2}$ are indicated for each of 41 projections by the lengths of green and blue arrows respectively, assuming that similar fields aligned to the posterior-anterior and medial-lateral axes in the ventroposterior medial nucleus of the thalamus are sampled at the locations of putative barreloid centres (reconstructed from Haidarliu and Ahissar, 2001, their Figure 5b). (C) Results for the example simulation, with parameters $N=41$, $\\alpha=3.6$, $\\beta=16.67$, $k=3$, $D=0.5$, $\\gamma\\in\\pm2$, $\u03f5=1.2$ and $\\delta\u2062t=0.0001$. Colours indicate the thalamic projection for which the connection density is maximal, barrel labels are located at the centroid of each region and black lines delineate boundaries (see Figure 1\u2014video 1). (D) Red dots show the Honda\u2013$\\delta\u2062(t)$ metric obtained from the simulation approaching that obtained from the real barrels in A (dotted line); black squares show the pattern difference metric $\u03b7\u2062(t)$, and reveal the emergence of a correspondence between the real and simulated barrel shapes (units mm3); grey hexagons show how selectively each cortical site is innervated; $\\omega(t)=\u222f_{S}\\mu(x,t)dS$, where $\\mu\u2062(\ud835\udc31)\u2261max_{i}\u2062(c_{i}\u2062(\ud835\udc31,t))/\\sum_{j=1}^{N}c_{j}\u2062(\ud835\udc31,t)$. (E) Plotted across the cortical sheet, the selectivity develops to reveal an alignment with the emergent barrel boundary shapes. Greyscale colour indicates values of $\\mu\u2062(\ud835\udc31)$. All scale bars 1 mm.\n\nAlternatively, reaction-diffusion dynamics could generate a Voronoi tessellation without pre-arranged centres, by amplifying characteristic modes in a noisy initial distribution of axon branches, as a net effect of short-range cooperative and long-range competitive interactions. Accordingly, the barrel pattern would be determined by the relative strength of these interactions and by the shape of the cortical field boundary. However, intrinsic cortical dynamics alone cannot account for the topographic correspondence between thalamic and cortical domains, the irregular sizes and specific arrangement of the barrels in rows and arcs, or the influence of gene expression gradients.\n\nThe centre-point and reaction-diffusion models are not mutually exclusive. Pre-organized centres could bias reaction-diffusion processes to generate specific arrangements more reliably, and mechanisms of lateral axon branching may constitute the tension between cooperation and competition required for self-organization. However, proof that barrel patterning can emerge from an undifferentiated bundle of axons, based only on local interactions, would show that a separate stage and/or extrinsic mechanism for pre-organizing thalamocortical connections need not be assumed. To this end, we ask whether barrel maps can emerge in a system with reaction-diffusion dynamics, under the guidance of signalling gradients, and in the absence of pre-defined centres.\n\n### Models\n\nKarbowski and Ermentrout, 2004 developed a reaction-diffusion style model of how extrinsic signalling gradients can constrain the emergence of distinct fields from intrinsic cortical dynamics. Their model defines how the fraction of occupied synapses $c_{i}\u2062(x,t)$ and the density of axon branches $a_{i}\u2062(x,t)$ interact at time t, along a 1D anterior-posterior axis x, for N thalamocortical projections indexed by i. The model was derived from the assumption that the rates at which ai and ci grow are reciprocally coupled. Extending the original 1D model to simulate arealization on a 2D cortical sheet, we use $a_{i}\u2062(\ud835\udc31,t)$ and $c_{i}\u2062(\ud835\udc31,t)$, and model synaptogenesis as\n\n$$\n\\frac{\\partial\u2061c_{i}}{\\partial\u2061t}=-\\alpha\u2062c_{i}+\\beta\u2062(1-\\sumj=1Nc_{j})\u2062[a_{i}]^{k}.\n$$\n\nAccordingly, where the total fraction of synaptic connections sums to one, connections decay at rate \u03b1. Otherwise, $c_{i}\u2062(\ud835\udc31,t)$ increases non-linearly ($k>1$) with the density of axon branching. Axon branching is modelled as\n\n$$\n\\frac{\u2202a_{i}}{\u2202t}=\u00a0\u2207\u00a0\u22c5\u00a0(D\u2207a_{i}\u2212a_{i}\\sumj=1M\\gamma_{i,j}\u2207\u03c1_{j}(x)+\u03c7_{i})\u2212\\frac{\u2202c_{i}}{\u2202t}.\n$$\n\nThe first term on the right describes the divergence (indicated by $\u2207\u22c5$) of the quantity in parentheses, which is referred to as the \u2018flux\u2019 of axonal branching. The flux represents diffusion across the cortical sheet, at rate D, and the influence of M molecular signalling fields, $\u03c1\u2062(\ud835\udc31)$. The influence of a given field (indexed by j) on a given thalamic projection (indexed by i), is determined by $\\gamma_{i,j}$, which may be positive or negative in order that axons may branch in the direction of either higher or lower concentrations. Note that computing the divergence in simulation requires cells on the cortical sheet to communicate with immediately adjacent cells only (see Methods). Here $\u03c7_{i}=0$ is a placeholder. The second term on the right represents the coupling between axon branching and synaptogenesis, and an assumption that the spatial distribution of synaptic density across the cortical sheet is broadly homogeneous. As such, the quantity ci can be thought of as the connection density.\n\n## Results\n\nFirst, we verified that all results established by Karbowski and Ermentrout, 2004 for a 1D axis could be reproduced using our extension to a 2D cortical sheet. Using an elliptical domain, S, with $M=3$ offset guidance gradients aligned to the longer axis, $N=5$ thalamocortical projections gave rise to five distinct cortical fields at locations that preserved the topographic ordering defined by the original \u03b3 values. However, we found that specifying N ordered areas required $M\u2248(N+1)/2$ signalling fields. This is because localization of axon densities occurs only when projections are influenced by interactions with two or more signalling gradients that encourage migration in opposing directions. As the number of guidance fields is unlikely to approach the number of individual barrels, modifications to the model were required.\n\nWe reasoned that an arbitrary number of distinct field locations may be determined by a minimum of two guidance gradients, if the concentration of the projection densities is influenced by competition between projections, and if a projection that interacts more strongly with a given guidance gradient migrates further in the direction of that gradient. Accordingly, projections that interact most strongly with a given guidance gradient would come to occupy cortical locations at which that field has extreme values, leaving adjacent locations available to be occupied by projections with the next strongest interactions, and so forth. This would in principle allow the relative locations of the fields to be specified by the relative values of the interaction parameters, \u03b3, and hence for a topological map in the cortex to be specified by a spatial ordering of the \u03b3 values at the level of the thalamus.\n\nSuch dynamics are quite unlike those described by classic chemospecificity models (Sperry, 1963), which essentially assume centre-points by specifying conditions in the target tissue that instruct pre-identified afferents to stop growing. Consider, for example, that when simulated in isolation from one-another, all projections in the model described would simply migrate to the extrema of the cortical guidance fields.\n\nTesting this reasoning required increasing the strength of the competition between simulated thalamocortical projections for cortical territory, by increasing the tendency for each projection to compete for cortical space in which to branch and make connections. The major modification required was thus to introduce into the model an additional source of competition between thalamic projections. The term in parentheses in Equation 1 represents competition between thalamocortical projections for a limited availability of cortical connections. To introduce competition also in terms of axon branching, whilst ensuring that ai is conserved over time, we redefined\n\n$$\n\u03c7_{i}(x,t)=\\frac{\u03f5a_{i}}{N\u22121}\u2207\\sumj\\neqiNa_{j}.\n$$\n\nThis term contributes to the flux of axonal branching as an additional source of diffusion, scaled by $\u03f5$, which reduces the branching density for a given projection where the branches of other projections are dense. Note that this operation is local to individual afferent projections.\n\nIn addition, the model we have outlined requires that molecular guidance gradients in the cortex are complemented by graded values of the interaction strengths, \u03b3, at the level of the thalamus. While the precise mechanisms by which thalamic and cortical gradients interact during development have not been fully characterised, the presence of complementary thalamic and cortical guidance gradients has been well established experimentally. In particular, the EphA4 receptor and its ligand ephrin-A5 are distributed in complementary gradients in the somatosensory thalamus and cortex (Vanderhaeghen et al., 2000; Miller et al., 2006).\u00a0Cells originating in VPM express high levels of EphA receptors and project to the lateral part of S1, which expresses low levels of ephrin-A5, and cells originating in the VPL express low levels of EphA receptors and project to the medial part of S1, which expresses high levels of ephrin-A5 (see Gao et al., 1998; Dufour et al., 2003; Vanderhaeghen and Polleux, 2004; Speer and Chapman, 2005; Torii et al., 2013). We assume that such patterning arises because the relative strengths of interaction with guidance molecules (e.g., ephrin-A5) in the cortex are correlated with the relative concentrations of complementary molecules (e.g., EphA4) in the thalamus, and thus with thalamic position along the axis to which their gradients are aligned.\n\nFor simplicity, the two simulated thalamic interaction gradients, as well as the two cortical guidance gradients, were initially chosen to be linear and orthogonal. Hence a given pair of \u03b3 values corresponds to the coordinate of a barreloid centre in the VPM. Coordinates, in a reference plane defined by the anterior-posterior and medial-lateral axes, were estimated from Figure 5d of Haidarliu and Ahissar, 2001, and scaled such that $\\gamma\\in\\pm2$. Note that this scaling is arbitrary because according to the model the coordinates provide relative position information only.\n\nA cortical boundary enclosing barrels for 41 macrovibrissae was traced from a cytochrome oxidase stain from Zheng et al., 2001 (using original data kindly supplied by the authors), and Equations 1\u20133 were solved for $N=41$ projections on the resulting domain, S, using $M=2$ linear signalling gradients aligned with the anterior-posterior and medial-lateral axes. These gradients are shown with the barrel field boundary in Figure 1A for clarity, though like ephrin-A5 they may be thought of as extending across the cortical hemisphere (Miller et al., 2006). Simulations were stepped through 30000 iterations of Equations 1\u20133 ($\\delta\u2062t=0.0001$).\n\nAcross a wide range of parameter values, random initial conditions (a uniform random distribution for $a\u2062(\ud835\udc31,0)\\in(0.2,0.4)$, $c\u2062(\ud835\udc31,0)=0$) eventually yielded a clear Voronoi-like tessellation of topographically organized thalamocortical projections, confirming that barrel maps can self-organize in the absence of pre-specified centre points. The organization is apparent in a plot of the identity of the projection for which the connection density is maximal at each simulated cortical location, as shown in Figure 1C. Parameter values for this example simulation (see also Figure 1\u2014video 1) were obtained by conducting a full parameter sweep and choosing a combination ($\\alpha=3.6$, $\\beta=16.67$, $k=3$, $D=0.5$, $\u03f5=1.2$) that scored well against the following three measures.\n\nFirst, we used an algorithm introduced by Honda to measure the discrepancy of each barrel shape from a Dirichlet domain shape (Honda, 1983). Low overall values of this Honda-\u03b4 metric obtained from simulated barrels indicate a close correspondence of the simulated barrel field with a Voronoi tessellation, and thus with a biological barrel field (for mice $\\delta\u22480.054$, Senft and Woolsey, 1991, and our analysis of data from Zheng et al., 2001 indicates that the value for rats is similar). For the tessellation that is overlaid on the real barrel field in Figure 1A, $\\delta=0.025$, and a reduction in \u03b4 in the example simulation over time confirmed that an equivalent \u2018good\u2019 Voronoi pattern can emerge within \u2248 20000 iterations (Figure 1D, red circles). Second, we devised a pattern difference measure that is sensitive to deviations in the component shapes and overall topographic registration between two tessellations, \u03b7, and we used this measure to compare the simulated barrel fields to the real barrel field from which the boundary shape applied to the simulation was obtained (see Methods for details). A similar reduction in \u03b7 in the development of the example simulation confirmed that the shapes and arrangement of emergent connection fields came to match those of the real barrel field by around 20000 iterations (Figure 1D, black squares). Third, we measured the connection selectivity, \u03c9, at each location on the cortical sheet, as the connection density of the most dense projection divided by the sum over all projection densities. The overall connection selectivity increased as the barrel map self-organized in the example simulation (Figure 1D, grey hexagons), and the selectivity became concentrated in regions overlapping with the emergent barrel centres (Figure 1E).\n\nAgainst these three metrics we are also able to characterise the robustness of self-organization to the model parameters, and to investigate the sensitivity of the model to variation in its inputs. Figure 2A shows values of \u03b4, \u03b7 and \u03c9 obtained after 30000 iterations, from 216 independent simulations, each representing a unique combination of the model parameters D, $\u03f5$, and the ratio $\\alpha/\\beta$. First, we observe that self-organization is highly robust to the ratio $\\alpha/\\beta$, across five orders of magnitude, with respect to all three metrics. Second, the most strongly Voronoi-conforming\u00a0patterns (low Honda-\u03b4) were generated by simulations in which the diffusion constant D and the strength of competition $\u03f5$ were high. Third, strongest overall connection selectivities, \u03c9, were obtained for lower values of D. Fourth, variation in the pattern difference metric, \u03b7, indicated that the alignment between real and simulated patterns was greatest for intermediate rates of diffusion, $D\u22480.5$. Together these results indicate that when competition is strong, the rate of diffusion determines a trade-off such that fields emerge to be barrel-shaped when diffusion is fast and they emerge to be more selectively innervated when diffusion is slow.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/55588/elife-55588-fig2-v1.jpg)\n\n**Figure 2.:** (A) Colour indicates the quality of the pattern at $t=30000$ steps, against three measures: Low values of Honda\u2013\u03b4 (top row) suggest a Voronoi-like pattern of fields. The pattern difference, \u03b7 (middle row) measures the difference in the area and arrangement of barrels in real and simulated fields. The connection\u00a0selectivity, \u03c9 (bottom row), measures the specificity with which the cortical sheet is innervated. Colour maps are chosen so that lighter (orange and yellow) colours indicate higher quality patterns against each measure. White squares indicate combinations of parameters for which simulations were numerically unstable. The parameter space explored is three dimensional with the ratio $\\alpha/\\beta$ varying between plots, and the competition parameter $\u03f5$ and the diffusion constant D varying within plots. An asterisk (*) marks the parameters used in Figure 1. Boxes (i), (ii) and (iii) mark parameter sets for which corresponding patterns are shown in B (for $t=30000$ steps). (B) Varying the diffusion constant D generates qualitatively different patterns. Higher values cause expansions of the peripheral barrels and a corresponding compression of the inner barrels (i). Lower values instead cause an expansion of the central barrels and compression of the peripheral barrels (ii). Further reducing the rate of diffusion (iii), which is equivalent to increasing the size of the domain and hence simulating development in an animal with a larger cortex, causes a large area to be occupied by projections with intermediate interaction parameters; those with strong interaction parameters are compressed around the edge of the domain, and consequently a barrel pattern fails to form.\n\nThe parameters of the example simulation are indicated in Figure 2A using an asterisk. In Figure 2B, we also present examples of alternative patterns that emerge for different choices of D. Decreasing the rate of diffusion may be considered equivalent to increasing the overall size of the domain, S. Hence, insights into barrel development in species with a larger representation of the vibrissae, which do not have barrel fields, may be gained by studying pattern formation when D is small. In this context, it is interesting to note that for small D, the organization is predicted to be topological but highly irregular, with a general expansion in the territory occupied by the central versus peripheral domains that would presumably manifest as an absence of identifiable barrel fields (Figure 2Biii).\n\nNext we conducted a sensitivity analysis to determine the extent to which the quality of the pattern (after $t=30000$ iterations) is affected by perturbations to (i) the magnitude and offset of the noise applied to ai at $t=0$; (ii) noise applied to the interaction parameters, $\\gamma_{i,j}$; (iii) noise (at various length scales) applied to the guidance fields; and (iv) the magnitude and orientation of one cortical guidance field relative to the other (Figure 1A).\n\nUsing the parameters of the example simulation (Figure 1C) we established baseline mean and standard deviations from ten independent simulations with initial uniform random values for $a\u2062(\ud835\udc31,0)\\in(0.2,0.4)$, to be $\\delta=0.089\\pm0.004$, $\u03b7=0.2108\\pm0.002$, and $\\omega=0.2165\\pm0.0001$. Repeating with the variation in the initial noise doubled ($a\u2062(\ud835\udc31,0)\\in(0.1,0.5)$), or removed altogether ($a\u2062(\ud835\udc31,0)=0.3$), generated distributions of \u03b4, \u03b7, and \u03c9 that were not statistically different, as established using paired two-sample t-tests. Adding noise to the interaction parameters (\u03b3) affected neither the Honda-\u03b4 or the connection selectivity measures substantially (see Figure 3A), and an increase in the pattern difference reflected an increase in the occurrence of topological defects only when perturbations became so large as to cause the ordering of \u03b3 values from neighbouring thalamic sites to be switched (see example map Figure 3Bi). Adding noise to the cortical guidance field values, $\u03c1_{1}\u2062(\ud835\udc31)$ and $\u03c1_{2}\u2062(\ud835\udc31)$, disrupted pattern formation only for high levels of noise applied at short length scales, which manifested as non-straight edges at the domain boundaries (Figure 3Bii). Varying the slope of one linear gradient $\u03c1_{1}\u2062(\ud835\udc31)$ while keeping that of the other constant caused elongation of the emergent domains along the corresponding axis (Figure 3Biii), while pattern formation was not strongly influenced by relaxing the assumption that the gradients of the two cortical guidance fields are orthogonal (Figure 3Biv). Overall, the sensitivity analysis revealed that self-organization of barrel-like fields in the model is highly robust to a wide range of sources of perturbation.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/55588/elife-55588-fig3-v1.jpg)\n\n**Figure 3.:** (A) Metrics of map quality $\\delta\u2062(t)$ (top row), $\\omega\u2062(t)$ (middle row) and $\u03b7\u2062(t)$ (bottom row), were evaluated at $t=30000$ steps. The y-axes and colour scales have identical ranges to the colour scales in Figure 2, for easy comparison. Left column: The effect of adding noise drawn from a uniform distribution, $(\\gamma_{m\u2062a\u2062x}-\\gamma_{m\u2062i\u2062n})\u2062U\u2062(0,\u03bd_{\\gamma})$, to the values of the interaction parameters, \u03b3 used in Figure 1. Middle column: The effect of changing the magnitude and the length scale of noise applied to the guidance fields. Uniform random noise $(\u03c1_{m\u2062a\u2062x}-\u03c1_{m\u2062i\u2062n})\u2062U\u2062(0,\u03bd_{\u03c1})$ was added to each (hexagonal) element of $\u03c1_{1}\u2062(\ud835\udc31)$ and $\u03c1_{2}\u2062(\ud835\udc31)$ and the result was smoothed by convolution with a symmetric 2D Gaussian kernel of width $\\sigma_{\u03c1}$. Right column: The effect of setting the rotational angle of the linearly varying guidance field, $\u03c1_{1}\u2062(\ud835\udc31)$, to $\u03d5_{\u03c1_{1}}$, and modifying its overall gain to $G_{\u03c1_{1}}$, whilst keeping the parameters of $\u03c1_{2}\u2062(\ud835\udc31)$ unchanged from those used in the example simulation, for which $\u03d5_{\u03c1_{2}}=84$\u00b0\u00a0and $G_{\u03c1_{2}}=1$. (B) Four ways in which the perturbations in A affect the patterns. (i) The effect of significant interaction parameter noise is\u00a0to\u00a0introduce topological defects. (ii) High magnitude, short length\u00a0scale noise in $\u03c1\u2062(\ud835\udc31)$ leads to non-straight edges between adjacent barrels. (iii) Reducing the slope of gradient $\u03c1_{1}$ (by a factor of 10) causes barrel rows B, C and D to become \u2018crushed\u2019 down the centre line, and edge barrels to dominate. (iv) Rotating $\u03c1_{1}$ by 20\u00b0 causes a slight distortion of the pattern, resulting in an overall anticlockwise rotation of the field locations.\n\nTo further investigate the interplay of genes intrinsic to the developing neocortex and extrinsic factors such as thalamocortical input, we simulated two well known experimental manipulations of barrel development. First, we simulated a seminal barrel duplication paradigm (Shimogori and Grove, 2005; Assimacopoulos et al., 2012) in which the growth factor Fgf8, which is normally expressed at the anterior end of the cortical subplate from around E9.5 (Crossley and Martin, 1995), is ectopically expressed (by electroporation) also at the posterior pole. We assume that this results in a mirror of the primary barrel cortex boundary along the rostrocaudal axis (Assimacopoulos et al., 2012) and a mirroring of the anterior-posterior guidance gradient $\u03c1_{1}$ at the border between them (Figure 4A). The result after 30000 iterations, and otherwise using the parameters of the example simulation, was two mirror-symmetrical barrel fields comprising $2\u2062N$ barrels (Figure 4B), consistent with the outcome of the original experiments.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/55588/elife-55588-fig4-v1.jpg)\n\n**Figure 4.:** Guidance fields (A) and emergent barrel pattern (B) in a Fgf8 misexpression experiment (Assimacopoulos et al., 2012), simulated by reflecting $\u03c1_{1}$ from Figure 1A at the join of the original boundary with its mirror. All other model parameters match those in Figure 1C. C Simulating whisker trimming by reducing the competitiveness, $\u03f5$, of one projection. For C3 only, $\u03f5$ was multiplied by $m\\in(0,1)$. The pattern shown is that formed after 30000 steps with $m=0.86$, which reduces the size of the C3 field to 65% of its original size, matching the average barrel area reduction observed by Kossut, 1992. D The area of the C3 barrel (black squares) reduces as m is reduced, whereas the mean area of neighbouring barrels (B3, C2, C4, D2 and D3, grey circles) increases. The dotted grey line indicates $m=0.86$ for comparison with panel C. If the $\u03f5$ value is instead reduced for all row C projections (including the interstitial \u03b3 projection), the mean row C barrel area is only slightly reduced (light grey triangles). In this case, the mean area of a simulated row C barrel at $m=0.86$ is 91% of that for $m=1$.\n\nFinally, to investigate the response of the model to environmental manipulation, we simulated a whisker deprivation experiment. In a critical period comprising the first postnatal days, removal of the whiskers by electrocauterization, plucking, or trimming leads to observable changes in brain structures, including the barrel field (Jeanmonod et al., 1981). Amongst other changes, deprivation of individual whiskers leads to smaller barrels (Kossut, 1992). We simulated trimming of the individual whisker C3 during the critical period by reducing the competitiveness of the C3 thalamocortical projection, $\u03f5$. As a result, the corresponding field size was smaller (Figure 3C), and the size of the fields representing the neighbours of C3 increased in size. A reduction in area to 65%, comparable to that induced by Kossut, 1992, was obtained in simulation when $\u03f5$ was reduced to 86% of its default value (Figure 3D), and the C3 barrel disappeared altogether when $\u03f5$ was less than half of its original value.\n\nAlthough individual whisker trimming reduces barrel size, if an entire row is trimmed, barrel sizes for the trimmed row are not obviously changed (Land and Simons, 1985). We investigated with a simulation in which we varied $\u03f5$ for all of the row C projections. Although the barrels which formed for row C did show some reduction in area (Figure 4D), this reduction was small when compared with the individually trimmed C3 simulation. If the effect of trimming any whisker is to reduce its $\u03f5$ (the competitiveness of its projection) to 86% of its original value, then the model predicts that the cortical barrels for the trimmed C row will retain 91% of their area on average.\n\nTogether with the results of simulated misexpression, the consistency of the simulated whisker trimming results with those of the original studies demonstrates how the model can be used to investigate the contribution of intrinsic and extrinsic factors to the development of cortical fields.\n\n## Discussion\n\nThe present results suggest that the key requirements for the emergence of realistic barrel patterning are (i) at each cortical location thalamocortical projections compete for a limited number of available synaptic connections (Equations 1\u20132), (ii) at each location the branching rate of a given projection is reduced by the density of other projections (Equation 3), and (iii) the branch density of each projection is conserved over time.\n\nThe emergence of barrels in simulation required competition between thalamic projections in terms of synaptic connectivity and also competition in terms of cortical space, as represented by \u03c7, with an implicit requirement for a self/other identifier amongst projections. This latter form of competition may account for the absence of barrels in rodents with larger brains, such as capybara, for which competition for space is presumably weaker (Woolsey et al., 1975). Hence, irrespective of whether barrels are necessary for adaptive whisker function, the emergence of somatotopically ordered modular structures may be an inevitable consequence of local competition for cortical territory driven by input from an array of discrete sensory organs (Purves et al., 1992).\n\nIn reality, the Voronoi tessellation is extended by scores of smaller barrels alongside the E-row barrels, which represent the microvibrissae, and presumably form via the same competitive processes. Enforcing here the same boundary condition as used to represent the true edges of the barrel field was necessary to ensure the stability of the simulation, though we acknowledge that this region of the boundary was enforced primarily to keep the number of simulated projections, and hence the overall computational complexity of the simulation, manageable (simulating an extra projection introduces 13030 new dynamical variables).\n\nIt is important to emphasize that the formulation of the model is entirely local, insofar as simulation requires no information to be communicated from a given cortical grid cell to any but those immediately adjacent (via diffusion). Hence the simulations demonstrate how a self-organizing system, constrained by genetically specified guidance cues and by the shape of the cortical field boundary, can faithfully reproduce an arrangement of cell aggregates in one neural structure as a topographic map in another.\n\nMoreover, the present results confirm that somatotopic map formation does not require the pre-specification of centre-points by as yet undetermined additional developmental mechanisms.\n\n## Methods\n\nWe concentrated on the representation of the forty-one macrovibrissae that constitute a given barrel field, because their thalamic and cortical correlates are easily identifiable and consistently located, excluding the five rhinal whiskers as their cortical representation is isolated from the main barrel field. We excluded the representation of the microvibrissae to limit the overall complexity of the simulations.\n\nThe cortical sheet was modelled as a two dimensional hexagonal lattice, which simplifies the computation of the 2D Laplacian. Within a boundary traced around the edge of a rat barrel field (Figure 1A) we set the hex-to-hex distance d to 0.03 mm, which resulted in a lattice containing 6515 hexes for the simulations shown in Figure 1A,C and D and 12739 hexes for the Fgf8 misexpression study shown in Figure 3. Each hex contained 82 time-dependent variables: 41 branching densities (ai) and 41 connection densities (ci). The rate of change of each of the time-dependent variables (Equations 1 and 2) was computed using a fourth-order Runge-Kutta method.\n\nThe most involved part of this computation is to find the divergence of the flux of axonal branching, $\ud835\udc09_{i}\u2062(\ud835\udc31,t)$, the term in parentheses in Equation 2:\n\n$$\n\u2207\u22c5J_{i}(x,t)=\u2207\u22c5(D\u2207a_{i}\u2212a_{i}\\sumj=1M\\gamma_{i,j}\u2207\u03c1_{j}(x)+\\frac{\u03f5a_{i}}{N\u22121}\u2207a^_{i}),\n$$\n\nwhere $a^_{i}\u2261\\sum_{j\\neqi}^{N}a_{j}$. Note that the sum of the guidance gradients is time-independent and define $\ud835\udc20_{i}\u2062(\ud835\udc31)\u2261\\sum_{j=1}^{M}\\gamma_{i,j}\u2062\\nabla\u2061\u03c1_{j}\u2062(\ud835\udc31)$. Because the divergence operator is distributive, Equation 4 can be expanded using vector calculus identities (dropping references to $\ud835\udc31$ and t for clarity):\n\n$$\n\u2207\u22c5J_{i}=\u2207\u22c5(D\u2207a_{i})\u2212\u2207\u22c5(a_{i}g_{i})+\\frac{\u03f5}{N\u22121}\u2207\u22c5(a_{i}\u2207a^_{i}).\n$$\n\nApplying the vector calculus product rule identity yields\n\n$$\n\u2207\u22c5J_{i}=D\u2207\u22c5\u2207a_{i}\u2212a_{i}\u2207\u22c5g_{i}\u2212g_{i}\u22c5\u2207a_{i}+\\frac{\u03f5a_{i}}{N\u22121}\u2207\u22c5\u2207a^_{i}+\\frac{\u03f5}{N\u22121}\u2207a^_{i}\u22c5\u2207a_{i},\n$$\n\nwhich has five elements to compute: (i) $D\u2207\u22c5\u2207a_{i}$ (the Laplacian of ai); (ii) a time-independent modulator of ai (because $\u2207\u22c5g_{i}$ is a time-independent static field); (iii) the scalar product of the static vector field $\ud835\udc20_{i}$ and the gradient of ai; (iv) the Laplacian of $a^_{i}$; and (v) a term involving the gradients of ai and $a^_{i}$. Each of the divergences can be simplified by means of Gauss\u2019s Theorem following Lee et al., 2014.\n\nBy separating the computation of Equation 4 into parts (i)\u2013(v), the no-flux boundary condition,\n\n$$\n\ud835\udc09_{i}(\ud835\udc31,t)|_{boundary}=0,\n$$\n\ncan be fulfilled. On the boundary, the contribution to $\ud835\udc09$ resulting from the first term of Equation 6 can be fixed to 0 by the \u2018ghost cell method\u2019 in which, during the evaluation of (i), a hex outside the boundary containing the same value as the hex inside the boundary is imagined to exist such that the flux of $\ud835\udc09$ across the boundary is 0. Then, $\ud835\udc20_{i}\u2062(\ud835\udc31)$ can be tailored so that it, and its normal derivative, approach 0 at the boundary, ensuring that the second and third terms of Equation 6 also contribute nothing to $\ud835\udc09$. This is achieved by multiplying $\ud835\udc20_{i}\u2062(\ud835\udc31)$ by a sharp logistic function of the distance, db, from $\ud835\udc31$ to the boundary, of the form $1/[1+exp\u2061(100\u2062(d_{f}-d_{b}))]$, where $d_{f}=0.1$\u2009mm $\u22483\u2062d$ is the boundary fall-off distance.\n\nThe pattern difference metric, \u03b7, incorporates information about the differences in the areas of simulated and experimentally determined (real) barrels ($\ud835\udc9c_{i}^{sim}$ and $\ud835\udc9c_{i}^{exp}$), as well as information contained in the \u2018adjacency vector\u2019 for each barrel, $\ud835\udcb1_{i}$, the j-th element of which is the length of the border between barrel i and j. For a well-formed barrel pattern, $\ud835\udcb1_{i}$ is a sparse vector. A dimensionless quantity can be obtained from the scalar product of the simulated and experimental adjacency vectors: $\\frac{1}{N}\\sumi\\frac{\ud835\udcb1_{i}^{sim}}{b_{i}^{sim}}\u00a0\u22c5\u00a0\\frac{\ud835\udcb1_{i}^{exp}}{b_{i}^{exp}}$, where for\u00a0example $b_{i}^{exp}$, is the total length of the border around real barrel i. This quantity is small when the fields that form in simulation have dissimilar neighbour relations to those of the real barrels (e.g., Figure 1C, $t=1000$), and maximal for a precise topological map ($t=10000$). A second comparison considers the mean magnitude of the difference between the simulated and experimental vectors: $\\frac{1}{N}\u2062\\sum_{i}\u2225\ud835\udcb1_{i}^{sim}-\ud835\udcb1_{i}^{exp}\u2225$. This tends to 0 for a perfect match and can separate patterns with straight boundaries from those with \u2018noisy edges\u2019 (as in Figure 3Bii). We combined these terms into a single metric:\n\n$$\n\u03b7=\\frac{\\frac{1}{N}\\sumi\u2016\ud835\udc9c_{i}^{sim}\u2212\ud835\udc9c_{i}^{exp}\u2016\\times\\frac{1}{N}\\sumi\u2016\ud835\udcb1_{i}^{sim}\u2212\ud835\udcb1_{i}^{exp}\u2016}{\\frac{1}{N}\\sumi\\frac{\ud835\udcb1_{i}^{sim}}{b_{i}^{sim}}\u00a0\u22c5\u00a0\\frac{\ud835\udcb1_{i}^{exp}}{b_{i}^{exp}}},\n$$\n\nwhich has units of mm3.\n\nThe code required to reproduce these results is available at https://github.com/ABRG-Models/BarrelEmerge/tree/eLife (James, 2020, copy archived at https://github.com/elifesciences-publications/BarrelEmerge). The computations described in (i)\u2013(v) may be found in the class method RD_James_comp2::compute_divJ() which calculates term1, term2, term3, term1_1 and term1_2, respectively. BarrelEmerge depends on the software library morphologica (RRID:SCR_018813), which must also be compiled.\n",
+      "created_at": "2025-12-02T20:18:52.840492Z"
+    },
+    {
+      "id": "3b7bbfc9-75a2-4b67-939e-17258fd43dd2",
+      "submission_id": "f03c759f-67c8-46f3-95e9-bb118963595b",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Upinder Singh Bhalla, Tata Institute of Fundamental Research India\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.55588.sa1](https://doi.org/10.7554/eLife.55588.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nThe study proposes a compact self-organization model for formation of whisker barrels in the absence of pre-defined centers for the barrels. Further, the authors have come up with a biologically plausible rule for competition and conservation of axonal density.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Modelling the emergence of whisker barrels\" for consideration by eLife. Your article has been reviewed by three peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation has been overseen by Timothy Behrens as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Bard Ermentrout (Reviewer #2).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nAs the editors have judged that your manuscript is of interest, but as described below that additional analyses are required before it is published, we would like to draw your attention to changes in our revision policy that we have made in response to COVID-19 (https://elifesciences.org/articles/57162). First, because many researchers have temporarily lost access to the labs, we will give authors as much time as they need to submit revised manuscripts. We are also offering, if you choose, to post the manuscript to bioRxiv (if it is not already there) along with this decision letter and a formal designation that the manuscript is 'in revision at eLife'. Please let us know if you would like to pursue this option. (If your work is more suitable for medRxiv, you will need to post the preprint yourself, as the mechanisms for us to do so are still in development.)\n\nSummary:\n\nThis compact paper proposes a self-organization model for formation of whisker barrels. The key idea is that reaction-diffusion dynamics can lead to the observed topology, in the absence of pre-defined centers for the barrels.\n\nEssential revisions:\n\n1) How do the authors obtain 41 pairs of \u03b3 values (Results, third paragraph)? Are these parameters or were they inferred from experiments? This must be better motivated.\n\n2) The competition term \u03c7i requires renormalization, which seems biologically implausible. The authors may wish to try a form such asXai\u22071N\u22121\u2211j\u2260iajwhich does not need renormalization. Several other points about this competition term are unclear as mentioned in the reviewer comments.\n\n3) There should be more exploration of the model: some parameter exploration and sensitivity analysis, and some more predictions.\n\nReviewer #1:\n\nThis compact paper proposes a self-organization model for formation of whisker barrels. The key idea is that reaction-diffusion dynamics can lead to the observed topology, in the absence of pre-defined centers for the barrels.\n\nThe model is well presented and the motivation of mathematical choices is mostly clear. It may be worth expanding on the motivation for competition for axonal branching (Equations 3 and 4).\n\nIt is a little unclear how the misexpression experiment (Shimogori and Grove, 2005) in Figure 1E was done. The simulation approach and outcome for this section is described very tersely.\n\nThe authors also mention another easily modeled experiment, in which capybara brains lack barrels because they are big. It should be a simple matter to do this run.\n\nOverall I feel this study presents an attractive and compact model for the formation of whisker barrels, which has good biological motivation, and does a good job of reducing assumptions and molecular guidance cues.\n\nReviewer #2:\n\nThis is an interesting paper that with a few assumptions shows that an old model for areal formation in cortex is sufficient to quantitatively reproduce the patterns of barrels observed in mouse S1. It would appear from the model that the key is the parameters \u03b3ij that are presumably (hypothesized) to be assigned at the level of the thalamus. I have a few questions about the paper.\n\n1) Does the same model work with respect to projections from the brain stem (barrelettes) to the thalamus (barreloids)? This would be a good way to check the ideas. Related to this, is it true that the barrelettes (barreloids) precede the development of the barreloids (barrels)? It would seem to be necessary? Or perhaps, starting with a double gradient in the thalamus and cortex and a prepattern in the barelettes, would the correct patterns emerge simultaneously?\n\n2) There seems to be a strong prediction in this concerning the development of the patterns over time. Figure 1C indicates that early on there are large distortions in the shape of the barrels particularly in Figure 1D, E rows. is this known to occur?\n\n3) It seems to me that without the chi, then possible connections plus axons are conserved which is reasonable. But with the necessary competition, there seems to be a flaw in the model if they have to renormalize at each point. If axons make connections should they not be lost from the pool forever (this is the -dci/dt the model). For example, since the gradient has no flux in the original K&E model, there is conservation of the total number of connections and axons of a given type (int ai+ci dx = constant). This principle seems to make sense to me. However, the competition term \u03c7i seems to disrupt this. Is there a way to introduce the axonal competition in a way the prevents the unrealistic (or biologically implausible, at least) renormalization at each step? I'd be more comfortable with the model if there were a more physiological way to renormalize. For example, I don\u2019t know if the authors considered something like an additional flux of the form:Xai\u22071N\u22121\u2211j\u2260iaj\n\nThis makes the axons of type i move away from type j while at the same time enforcing conservation without recourse to some sort of post normalization.\n\nReviewer #3:\n\nThe manuscript studies a theoretical model within the framework of reaction-diffusion equations coupled to signalling gradients to possibly explain the emergence of whisker barrels in the cortex.\n\n1) The model considered by the authors is identical to the one studied by Karbowski and Ermentrout, 2004. The only new features are the extension of the original 1D model to 2D and the addition of an extra term to represent competition in axonal branching.\n\n2) The authors consider 2 guiding fields. What are their explicit spatial profiles? Notice that since these fields essentially guide the emergent pattern and hence their profiles, in relation to the geometry of the 2D domain, are crucial. A different profile would certainly lead to a different pattern. I feel that it is not enough to say '\u2026linear signalling gradients aligned with the anterior-posterior and medial-lateral axes\u2026.' since the domain is 2D and of non-rectangular shape.\n\n3) The justification for the introduction of the extra term for competition amongst axons (Equation 3) is missing. Why that form? What is the reasoning for introducing axonal competition? What essential features of the resultant patterns are missed out if this term is absent? Or has a different form? In the Discussion section, the authors mention, without any justification, that the conservation of branch density in each projection is a key requirement for the emergence of barrel patterns. This is totally unclear.\n\n4) Related to the above point, the authors mention that the axonal branch density is bounded by their dynamics. I presume that the integrations on the RHS of Equation 4 are spatial integrals over the domain. Then how come a spatial index survives in the LHS of this equation? How did the authors arrive at this equation? Is there a continuous-time version of this equation (like a conservation law), i.e., one that does not make a reference to the discrete time-stepping dynamics?\n\n5) A typical mathematical modelling study should explore the space of relevant parameters to demonstrate the possible range of behaviours that the model can exhibit. This is usually presented as a phase-diagram. The authors do not explore the parameter space (or the possible spatial profiles of the guiding fields) in their study.\n\n6) Throughout, the authors emphasize the spatial-locality of their mathematical model and conclude 'Hence the simulations demonstrate how a self-organizing system\u2026'. A mathematical model with spatial-locality alone does not imply self-organized dynamics. With a sufficiently large number of spatio-temporal fields (N=42), and the concomitant parameters, and non-autonomous guiding fields, it is possible to reproduce any desired pattern. As such, it is crucial in the mathematical modelling of living systems to delineate the essential requirements from the incidental.\n",
+      "created_at": "2025-12-02T20:18:52.840492Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T20:18:52.840492Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T20:18:52.840492Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "0192fd87-3830-4fc6-b685-6ef563f26ec2",
+      "content_id": "db9c46a9-7547-4cee-990d-8186e068cf63",
+      "claim_id": "C1",
+      "claim": "Brain development relies on an interplay between genetic specification and self-organization.",
+      "claim_type": "EXPLICIT",
+      "source": "Brain development relies on an interplay between genetic specification and self-organization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement in the abstract that frames the study's context.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:18:52.840492Z"
+    },
+    {
+      "id": "c680fb72-86bb-4233-9c29-ae037d2f7e08",
+      "content_id": "db9c46a9-7547-4cee-990d-8186e068cf63",
+      "claim_id": "C2",
+      "claim": "In the somatosensory brainstem, thalamus, and cortex of rats and mice, the arrangement of the facial whiskers is preserved in the arrangement of cell aggregates to form precise somatotopic maps.",
+      "claim_type": "EXPLICIT",
+      "source": "Striking examples of this relationship can be found in the somatosensory brainstem, thalamus, and cortex of rats and mice, where the arrangement of the facial whiskers is preserved in the arrangement of cell aggregates to form precise somatotopic maps.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an established fact about whisker barrel organization in rodents, supported by existing scientific literature.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:18:52.840492Z"
+    },
+    {
+      "id": "53ddafa7-469d-4f08-b38d-26c9128f5260",
+      "content_id": "db9c46a9-7547-4cee-990d-8186e068cf63",
+      "claim_id": "C3",
+      "claim": "Realistic whisker maps can self-organize by assuming that information is exchanged between adjacent cells only, under the guidance of gene expression gradients.",
+      "claim_type": "EXPLICIT",
+      "source": "We show in simulation how realistic whisker maps can self-organize, by assuming that information is exchanged between adjacent cells only, under the guidance of gene expression gradients.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study demonstrated through computational simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:18:52.840492Z"
+    },
+    {
+      "id": "2cb9c09f-9036-4c54-8b58-c3e5cbaac927",
+      "content_id": "db9c46a9-7547-4cee-990d-8186e068cf63",
+      "claim_id": "C4",
+      "claim": "Spatial patterns in neural connectivity provide clues about the constraints under which brains evolve and develop.",
+      "claim_type": "EXPLICIT",
+      "source": "Spatial patterns in neural connectivity provide clues about the constraints under which brains evolve and develop (Purves et al., 1992).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Purves et al., 1992.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:18:52.840492Z"
+    },
+    {
+      "id": "16af7f00-9693-4196-8e87-762e39ab7e78",
+      "content_id": "db9c46a9-7547-4cee-990d-8186e068cf63",
+      "claim_id": "C5",
+      "claim": "The most distinctive pattern in neural connectivity can be found in the barrel cortex of many rodent species.",
+      "claim_type": "EXPLICIT",
+      "source": "Perhaps the most distinctive pattern can be found in the barrel cortex of many rodent species (Woolsey and Van der Loos, 1970).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Woolsey and Van der Loos, 1970.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:18:52.840492Z"
+    },
+    {
+      "id": "2c822545-d1bb-4bf2-9638-a8b681205662",
+      "content_id": "db9c46a9-7547-4cee-990d-8186e068cf63",
+      "claim_id": "C6",
+      "claim": "Barrels are identifiable soon after birth in layer 4 of primary somatosensory cortex as dense clusters of thalamocortical axons.",
+      "claim_type": "EXPLICIT",
+      "source": "The barrels are identifiable soon after birth in layer 4 of primary somatosensory cortex as dense clusters of thalamocortical axons, which are enclosed by borders a few neurons thick from postnatal day 3 (Erzurumlu and Gaspar, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Erzurumlu and Gaspar, 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:18:52.840492Z"
+    },
+    {
+      "id": "5b7ac407-986e-4967-88f2-4d5fd440bcb8",
+      "content_id": "db9c46a9-7547-4cee-990d-8186e068cf63",
+      "claim_id": "C7",
+      "claim": "Barrels are enclosed by borders a few neurons thick from postnatal day 3.",
+      "claim_type": "EXPLICIT",
+      "source": "The barrels are identifiable soon after birth in layer 4 of primary somatosensory cortex as dense clusters of thalamocortical axons, which are enclosed by borders a few neurons thick from postnatal day 3 (Erzurumlu and Gaspar, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Erzurumlu and Gaspar, 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:18:52.840492Z"
+    },
+    {
+      "id": "89175b0e-e27b-4473-87fe-4c794ec50dc0",
+      "content_id": "db9c46a9-7547-4cee-990d-8186e068cf63",
+      "claim_id": "C8",
+      "claim": "In the plane tangential to the cortical surface, the barrels constitute a somatotopic map of the whiskers.",
+      "claim_type": "EXPLICIT",
+      "source": "In the plane tangential to the cortical surface the barrels constitute a somatotopic map of the whiskers, with cells within adjacent barrels responding most strongly and quickly to deflection of adjacent whiskers (Armstrong-James et al., 1992).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Armstrong-James et al., 1992.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:18:52.840492Z"
+    },
+    {
+      "id": "25494e55-400c-4690-a028-abd8ce3f6288",
+      "content_id": "db9c46a9-7547-4cee-990d-8186e068cf63",
+      "claim_id": "C9",
+      "claim": "Cells within adjacent barrels respond most strongly and quickly to deflection of adjacent whiskers.",
+      "claim_type": "EXPLICIT",
+      "source": "In the plane tangential to the cortical surface the barrels constitute a somatotopic map of the whiskers, with cells within adjacent barrels responding most strongly and quickly to deflection of adjacent whiskers (Armstrong-James et al., 1992).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Armstrong-James et al., 1992.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:18:52.840492Z"
+    },
+    {
+      "id": "c1a357fe-4e00-4df0-8fda-d015764237b3",
+      "content_id": "db9c46a9-7547-4cee-990d-8186e068cf63",
+      "claim_id": "C10",
+      "claim": "Barrel patterning reflects subcortical whisker maps comprising cell aggregates called barrelettes in the brainstem and barreloids in the thalamus.",
+      "claim_type": "EXPLICIT",
+      "source": "Barrel patterning reflects subcortical whisker maps comprising cell aggregates called barrelettes in the brainstem and barreloids in the thalamus (Ma, 1991; Van Der Loos, 1976).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Ma, 1991 and Van Der Loos, 1976.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:18:52.840492Z"
+    },
+    {
+      "id": "1408bd56-d861-4c21-bb1c-c678ddf59ce5",
+      "content_id": "db9c46a9-7547-4cee-990d-8186e068cf63",
+      "claim_id": "C11",
+      "claim": "Barrel formation requires afferent input from whisker stimulation and thalamic calcium waves.",
+      "claim_type": "EXPLICIT",
+      "source": "Barrel formation requires afferent input from whisker stimulation and thalamic calcium waves (Ant\u00f3n-Bola\u00f1os et al., 2019), and depends on a complex network of axon guidance molecules such as ephrin-A5 and A7 and adhesion molecules such as cadherin-6 and 8 (Vanderhaeghen et al., 2000; Miller et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Ant\u00f3n-Bola\u00f1os et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:18:52.840492Z"
+    },
+    {
+      "id": "f0b57f4a-1a8d-4fd6-89fd-8d571d91c602",
+      "content_id": "db9c46a9-7547-4cee-990d-8186e068cf63",
+      "claim_id": "C12",
+      "claim": "Barrel formation depends on a complex network of axon guidance molecules such as ephrin-A5 and A7 and adhesion molecules such as cadherin-6 and 8.",
+      "claim_type": "EXPLICIT",
+      "source": "Barrel formation requires afferent input from whisker stimulation and thalamic calcium waves (Ant\u00f3n-Bola\u00f1os et al., 2019), and depends on a complex network of axon guidance molecules such as ephrin-A5 and A7 and adhesion molecules such as cadherin-6 and 8 (Vanderhaeghen et al., 2000; Miller et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Vanderhaeghen et al., 2000 and Miller et al., 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:18:52.840492Z"
+    },
+    {
+      "id": "cbf0d963-4a89-4e5e-a65d-e93cf9ed3c14",
+      "content_id": "db9c46a9-7547-4cee-990d-8186e068cf63",
+      "claim_id": "C13",
+      "claim": "The network of axon guidance and adhesion molecules is orchestrated by interactions between morphogens Fgf8 and Fgf17 and transcription factors Emx2, Pax6, Sp8, and Coup-tf1.",
+      "claim_type": "EXPLICIT",
+      "source": "This network is orchestrated by interactions between morphogens Fgf8 and Fgf17 and transcription factors Emx2, Pax6, Sp8, and Coup-tf1 (Shimogori and Grove, 2005; Bishop et al., 2000), which are expressed in gradients spanning the cortical sheet that mark orthogonal axes and can be manipulated to stretch, shrink, shift, and even duplicate barrels (Assimacopoulos et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Shimogori and Grove, 2005 and Bishop et al., 2000.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:18:52.840492Z"
+    },
+    {
+      "id": "3db3c9d1-efe8-412f-b0e9-7e24761e99a0",
+      "content_id": "db9c46a9-7547-4cee-990d-8186e068cf63",
+      "claim_id": "C14",
+      "claim": "Morphogens and transcription factors are expressed in gradients spanning the cortical sheet that mark orthogonal axes.",
+      "claim_type": "EXPLICIT",
+      "source": "This network is orchestrated by interactions between morphogens Fgf8 and Fgf17 and transcription factors Emx2, Pax6, Sp8, and Coup-tf1 (Shimogori and Grove, 2005; Bishop et al., 2000), which are expressed in gradients spanning the cortical sheet that mark orthogonal axes and can be manipulated to stretch, shrink, shift, and even duplicate barrels (Assimacopoulos et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Shimogori and Grove, 2005 and Bishop et al., 2000.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:18:52.840492Z"
+    },
+    {
+      "id": "afa74ddf-d92f-4d4e-b3fa-b412741754e5",
+      "content_id": "db9c46a9-7547-4cee-990d-8186e068cf63",
+      "claim_id": "C15",
+      "claim": "Gene expression gradients can be manipulated to stretch, shrink, shift, and even duplicate barrels.",
+      "claim_type": "EXPLICIT",
+      "source": "This network is orchestrated by interactions between morphogens Fgf8 and Fgf17 and transcription factors Emx2, Pax6, Sp8, and Coup-tf1 (Shimogori and Grove, 2005; Bishop et al., 2000), which are expressed in gradients spanning the cortical sheet that mark orthogonal axes and can be manipulated to stretch, shrink, shift, and even duplicate barrels (Assimacopoulos et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Assimacopoulos et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:18:52.840492Z"
+    },
+    {
+      "id": "af5fbf7a-6b09-4a7a-a445-c56a35413e62",
+      "content_id": "db9c46a9-7547-4cee-990d-8186e068cf63",
+      "claim_id": "C16",
+      "claim": "The barrel boundaries form a Voronoi tessellation.",
+      "claim_type": "EXPLICIT",
+      "source": "The barrel boundaries form a Voronoi tessellation (Senft and Woolsey, 1991; Figure 1A), suggesting that barreloid topology is preserved in the projection of thalamocortical axons into the cortex, and that a barrel forms by lateral axon branching from an initial centre-point that ceases upon contact with axons branching from adjacent centres.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by a citation to Senft and Woolsey, 1991 and reference to Figure 1A.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:18:52.840492Z"
+    },
+    {
+      "id": "062b5357-c58f-4123-8189-bd4863a36e6d",
+      "content_id": "db9c46a9-7547-4cee-990d-8186e068cf63",
+      "claim_id": "C17",
+      "claim": "Barreloid topology is preserved in the projection of thalamocortical axons into the cortex.",
+      "claim_type": "IMPLICIT",
+      "source": "The barrel boundaries form a Voronoi tessellation (Senft and Woolsey, 1991; Figure 1A), suggesting that barreloid topology is preserved in the projection of thalamocortical axons into the cortex, and that a barrel forms by lateral axon branching from an initial centre-point that ceases upon contact with axons branching from adjacent centres.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference suggested by the Voronoi tessellation pattern.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:18:52.840492Z"
+    },
+    {
+      "id": "fcf5b9e0-59c9-4d0f-ba85-98c9807e476d",
+      "content_id": "db9c46a9-7547-4cee-990d-8186e068cf63",
+      "claim_id": "C18",
+      "claim": "A barrel forms by lateral axon branching from an initial centre-point that ceases upon contact with axons branching from adjacent centres.",
+      "claim_type": "IMPLICIT",
+      "source": "The barrel boundaries form a Voronoi tessellation (Senft and Woolsey, 1991; Figure 1A), suggesting that barreloid topology is preserved in the projection of thalamocortical axons into the cortex, and that a barrel forms by lateral axon branching from an initial centre-point that ceases upon contact with axons branching from adjacent centres.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference suggested by the Voronoi tessellation pattern.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:18:52.840492Z"
+    },
+    {
+      "id": "24701e5c-482a-495c-9fc1-8e4a0c82fce1",
+      "content_id": "db9c46a9-7547-4cee-990d-8186e068cf63",
+      "claim_id": "C19",
+      "claim": "The assumption of pre-arranged centre-points is difficult to resolve with the observation that axons arrive in the cortical plate as an undifferentiated bundle, prior to barreloid formation.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the assumption of pre-arranged centre-points is difficult to resolve with the observation that axons arrive in the cortical plate as an undifferentiated bundle, prior to barreloid formation (Agmon et al., 1993).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Agmon et al., 1993.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:18:52.840492Z"
+    },
+    {
+      "id": "64dac8dc-286a-421b-a749-6699feb6a545",
+      "content_id": "db9c46a9-7547-4cee-990d-8186e068cf63",
+      "claim_id": "C20",
+      "claim": "Axons arrive in the cortical plate as an undifferentiated bundle, prior to barreloid formation.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the assumption of pre-arranged centre-points is difficult to resolve with the observation that axons arrive in the cortical plate as an undifferentiated bundle, prior to barreloid formation (Agmon et al., 1993).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Agmon et al., 1993.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:18:52.840492Z"
+    },
+    {
+      "id": "2aa68f97-7727-4892-9b78-b592894414f7",
+      "content_id": "db9c46a9-7547-4cee-990d-8186e068cf63",
+      "claim_id": "C21",
+      "claim": "In mice, axons from the trigeminal ganglion arrive in the principal division of the trigeminal nucleus (PrV) at E12.",
+      "claim_type": "EXPLICIT",
+      "source": "In mice, axons from the trigeminal ganglion arrive in the principal division of the trigeminal nucleus (PrV) at E12, then axons from the PrV arrive in the ventroposteromedial nucleus of the thalamus (VPM) at E17, then axons from the VPM arrive in the cortical plate at E18/P0.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Erzurumlu and Gaspar, 2012 and Sehara and Kawasaki, 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:18:52.840492Z"
+    },
+    {
+      "id": "5655f444-4471-4554-a7e8-aa82b173d2b8",
+      "content_id": "db9c46a9-7547-4cee-990d-8186e068cf63",
+      "claim_id": "C22",
+      "claim": "Axons from the PrV arrive in the ventroposteromedial nucleus of the thalamus (VPM) at E17.",
+      "claim_type": "EXPLICIT",
+      "source": "In mice, axons from the trigeminal ganglion arrive in the principal division of the trigeminal nucleus (PrV) at E12, then axons from the PrV arrive in the ventroposteromedial nucleus of the thalamus (VPM) at E17, then axons from the VPM arrive in the cortical plate at E18/P0.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Erzurumlu and Gaspar, 2012 and Sehara and Kawasaki, 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:18:52.840492Z"
+    },
+    {
+      "id": "36bb99a1-e7d8-46f6-8604-a67dd461a390",
+      "content_id": "db9c46a9-7547-4cee-990d-8186e068cf63",
+      "claim_id": "C23",
+      "claim": "Axons from the VPM arrive in the cortical plate at E18/P0.",
+      "claim_type": "EXPLICIT",
+      "source": "In mice, axons from the trigeminal ganglion arrive in the principal division of the trigeminal nucleus (PrV) at E12, then axons from the PrV arrive in the ventroposteromedial nucleus of the thalamus (VPM) at E17, then axons from the VPM arrive in the cortical plate at E18/P0.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Erzurumlu and Gaspar, 2012 and Sehara and Kawasaki, 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:18:52.840492Z"
+    },
+    {
+      "id": "c2c260b0-6bc4-49aa-b967-ee294154b715",
+      "content_id": "db9c46a9-7547-4cee-990d-8186e068cf63",
+      "claim_id": "C24",
+      "claim": "Distinct whisker-related clusters become apparent in the PrV at P0-P1.",
+      "claim_type": "EXPLICIT",
+      "source": "Distinct whisker-related clusters then become apparent in the PrV at P0-P1, in the VPM at P2-P3, and in the cortex at P3-P5 (Erzurumlu and Gaspar, 2012; Sehara and Kawasaki, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Erzurumlu and Gaspar, 2012 and Sehara and Kawasaki, 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:18:52.840492Z"
+    },
+    {
+      "id": "13a52490-311b-447e-bb40-0620f27609a1",
+      "content_id": "db9c46a9-7547-4cee-990d-8186e068cf63",
+      "claim_id": "C25",
+      "claim": "Distinct whisker-related clusters become apparent in the VPM at P2-P3.",
+      "claim_type": "EXPLICIT",
+      "source": "Distinct whisker-related clusters then become apparent in the PrV at P0-P1, in the VPM at P2-P3, and in the cortex at P3-P5 (Erzurumlu and Gaspar, 2012; Sehara and Kawasaki, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Erzurumlu and Gaspar, 2012 and Sehara and Kawasaki, 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:18:52.840492Z"
+    },
+    {
+      "id": "4ae6f3b4-b8f7-4aa0-a7d2-f6f747edcc99",
+      "content_id": "db9c46a9-7547-4cee-990d-8186e068cf63",
+      "claim_id": "C26",
+      "claim": "Distinct whisker-related clusters become apparent in the cortex at P3-P5.",
+      "claim_type": "EXPLICIT",
+      "source": "Distinct whisker-related clusters then become apparent in the PrV at P0-P1, in the VPM at P2-P3, and in the cortex at P3-P5 (Erzurumlu and Gaspar, 2012; Sehara and Kawasaki, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Erzurumlu and Gaspar, 2012 and Sehara and Kawasaki, 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:18:52.840492Z"
+    },
+    {
+      "id": "0bcff0c7-1602-4e11-9958-be3f66c2d338",
+      "content_id": "db9c46a9-7547-4cee-990d-8186e068cf63",
+      "claim_id": "C27",
+      "claim": "Karbowski and Ermentrout, 2004 developed a reaction-diffusion style model of how extrinsic signalling gradients can constrain the emergence of distinct fields from intrinsic cortical dynamics.",
+      "claim_type": "EXPLICIT",
+      "source": "Karbowski and Ermentrout, 2004 developed a reaction-diffusion style model of how extrinsic signalling gradients can constrain the emergence of distinct fields from intrinsic cortical dynamics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a citation to prior work by Karbowski and Ermentrout, 2004.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:18:52.840492Z"
+    },
+    {
+      "id": "a4313311-ce8b-46f7-b13d-d48d3e0696a9",
+      "content_id": "db9c46a9-7547-4cee-990d-8186e068cf63",
+      "claim_id": "C28",
+      "claim": "All results established by Karbowski and Ermentrout, 2004 for a 1D axis could be reproduced using the extension to a 2D cortical sheet.",
+      "claim_type": "EXPLICIT",
+      "source": "First, we verified that all results established by Karbowski and Ermentrout, 2004 for a 1D axis could be reproduced using our extension to a 2D cortical sheet.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the authors' simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:18:52.840492Z"
+    },
+    {
+      "id": "70dc913f-bd2a-4f88-85b2-7dc28f18accb",
+      "content_id": "db9c46a9-7547-4cee-990d-8186e068cf63",
+      "claim_id": "C31",
+      "claim": "Localization of axon densities occurs only when projections are influenced by interactions with two or more signalling gradients that encourage migration in opposing directions.",
+      "claim_type": "EXPLICIT",
+      "source": "This is because localization of axon densities occurs only when projections are influenced by interactions with two or more signalling gradients that encourage migration in opposing directions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the simulation results.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:18:52.840492Z"
+    },
+    {
+      "id": "be5eb1c0-a7d1-4449-847e-4762cb31eba3",
+      "content_id": "db9c46a9-7547-4cee-990d-8186e068cf63",
+      "claim_id": "C32",
+      "claim": "The number of guidance fields is unlikely to approach the number of individual barrels.",
+      "claim_type": "EXPLICIT",
+      "source": "As the number of guidance fields is unlikely to approach the number of individual barrels, modifications to the model were required.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a reasoning based on biological plausibility.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:18:52.840492Z"
+    },
+    {
+      "id": "a8f8be01-9aa5-42d5-a671-c358945e896a",
+      "content_id": "db9c46a9-7547-4cee-990d-8186e068cf63",
+      "claim_id": "C33",
+      "claim": "An arbitrary number of distinct field locations may be determined by a minimum of two guidance gradients if the concentration of the projection densities is influenced by competition between projections.",
+      "claim_type": "EXPLICIT",
+      "source": "We reasoned that an arbitrary number of distinct field locations may be determined by a minimum of two guidance gradients, if the concentration of the projection densities is influenced by competition between projections, and if a projection that interacts more strongly with a given guidance gradient migrates further in the direction of that gradient.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical reasoning by the authors.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:18:52.840492Z"
+    },
+    {
+      "id": "3b72c442-1cdc-41ef-bcff-6e4046f2de36",
+      "content_id": "db9c46a9-7547-4cee-990d-8186e068cf63",
+      "claim_id": "C34",
+      "claim": "Projections that interact most strongly with a given guidance gradient would come to occupy cortical locations at which that field has extreme values.",
+      "claim_type": "IMPLICIT",
+      "source": "Accordingly, projections that interact most strongly with a given guidance gradient would come to occupy cortical locations at which that field has extreme values, leaving adjacent locations available to be occupied by projections with the next strongest interactions, and so forth.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical prediction based on the model's logic.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:18:52.840492Z"
+    },
+    {
+      "id": "8a17bd2e-552c-4bed-b5d6-c0b843245c05",
+      "content_id": "db9c46a9-7547-4cee-990d-8186e068cf63",
+      "claim_id": "C35",
+      "claim": "A topological map in the cortex can be specified by a spatial ordering of the \u03b3 values at the level of the thalamus.",
+      "claim_type": "IMPLICIT",
+      "source": "This would in principle allow the relative locations of the fields to be specified by the relative values of the interaction parameters, \u03b3, and hence for a topological map in the cortex to be specified by a spatial ordering of the \u03b3 values at the level of the thalamus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical prediction based on the model's logic.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:18:52.840492Z"
+    },
+    {
+      "id": "6e755135-2ba0-4e64-bf7d-01d28ba7ca89",
+      "content_id": "db9c46a9-7547-4cee-990d-8186e068cf63",
+      "claim_id": "C36",
+      "claim": "When simulated in isolation from one-another, all projections in the model would simply migrate to the extrema of the cortical guidance fields.",
+      "claim_type": "EXPLICIT",
+      "source": "Consider, for example, that when simulated in isolation from one-another, all projections in the model described would simply migrate to the extrema of the cortical guidance fields.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the authors' simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:18:52.840492Z"
+    },
+    {
+      "id": "61cde775-009a-4619-9a41-8f359fbebfdd",
+      "content_id": "db9c46a9-7547-4cee-990d-8186e068cf63",
+      "claim_id": "C37",
+      "claim": "The EphA4 receptor and its ligand ephrin-A5 are distributed in complementary gradients in the somatosensory thalamus and cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, the EphA4 receptor and its ligand ephrin-A5 are distributed in complementary gradients in the somatosensory thalamus and cortex (Vanderhaeghen et al., 2000; Miller et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Vanderhaeghen et al., 2000 and Miller et al., 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:18:52.840492Z"
+    },
+    {
+      "id": "f7b1b535-f603-4f9b-9754-b2e1ad500746",
+      "content_id": "db9c46a9-7547-4cee-990d-8186e068cf63",
+      "claim_id": "C38",
+      "claim": "Cells originating in VPM express high levels of EphA receptors and project to the lateral part of S1, which expresses low levels of ephrin-A5.",
+      "claim_type": "EXPLICIT",
+      "source": "Cells originating in VPM express high levels of EphA receptors and project to the lateral part of S1, which expresses low levels of ephrin-A5, and cells originating in the VPL express low levels of EphA receptors and project to the medial part of S1, which expresses high levels of ephrin-A5 (see Gao et al., 1998; Dufour et al., 2003; Vanderhaeghen and Polleux, 2004; Speer and Chapman, 2005; Torii et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:18:52.840492Z"
+    },
+    {
+      "id": "fcd128e5-8f6a-4dd4-9b7d-bfb392fa3fb4",
+      "content_id": "db9c46a9-7547-4cee-990d-8186e068cf63",
+      "claim_id": "C39",
+      "claim": "Cells originating in the VPL express low levels of EphA receptors and project to the medial part of S1, which expresses high levels of ephrin-A5.",
+      "claim_type": "EXPLICIT",
+      "source": "Cells originating in VPM express high levels of EphA receptors and project to the lateral part of S1, which expresses low levels of ephrin-A5, and cells originating in the VPL express low levels of EphA receptors and project to the medial part of S1, which expresses high levels of ephrin-A5 (see Gao et al., 1998; Dufour et al., 2003; Vanderhaeghen and Polleux, 2004; Speer and Chapman, 2005; Torii et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:18:52.840492Z"
+    },
+    {
+      "id": "1b62cb6e-d603-457e-a7a6-ee969ec281cc",
+      "content_id": "db9c46a9-7547-4cee-990d-8186e068cf63",
+      "claim_id": "C40",
+      "claim": "The relative strengths of interaction with guidance molecules in the cortex are correlated with the relative concentrations of complementary molecules in the thalamus.",
+      "claim_type": "EXPLICIT",
+      "source": "We assume that such patterning arises because the relative strengths of interaction with guidance molecules (e.g., ephrin-A5) in the cortex are correlated with the relative concentrations of complementary molecules (e.g., EphA4) in the thalamus, and thus with thalamic position along the axis to which their gradients are aligned.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an assumption made by the authors for their model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:18:52.840492Z"
+    },
+    {
+      "id": "20f79019-cc14-43ce-a6b3-834f7c66f718",
+      "content_id": "db9c46a9-7547-4cee-990d-8186e068cf63",
+      "claim_id": "C47",
+      "claim": "The shapes and arrangement of emergent connection fields came to match those of the real barrel field by around 20000 iterations.",
+      "claim_type": "EXPLICIT",
+      "source": "A similar reduction in \u03b7 in the development of the example simulation confirmed that the shapes and arrangement of emergent connection fields came to match those of the real barrel field by around 20000 iterations (Figure 1D, black squares).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the simulation shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:18:52.840492Z"
+    },
+    {
+      "id": "ffe7107b-eac8-4972-9151-ab879700b70b",
+      "content_id": "db9c46a9-7547-4cee-990d-8186e068cf63",
+      "claim_id": "C48",
+      "claim": "The overall connection selectivity increased as the barrel map self-organized in the example simulation.",
+      "claim_type": "EXPLICIT",
+      "source": "The overall connection selectivity increased as the barrel map self-organized in the example simulation (Figure 1D, grey hexagons), and the selectivity became concentrated in regions overlapping with the emergent barrel centres (Figure 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the simulation shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:18:52.840492Z"
+    },
+    {
+      "id": "46e534bc-315a-4727-a8ed-baa68c823a57",
+      "content_id": "db9c46a9-7547-4cee-990d-8186e068cf63",
+      "claim_id": "C49",
+      "claim": "The selectivity became concentrated in regions overlapping with the emergent barrel centres.",
+      "claim_type": "EXPLICIT",
+      "source": "The overall connection selectivity increased as the barrel map self-organized in the example simulation (Figure 1D, grey hexagons), and the selectivity became concentrated in regions overlapping with the emergent barrel centres (Figure 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the simulation shown in Figure 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:18:52.840492Z"
+    },
+    {
+      "id": "e33f945e-2578-4c73-bc75-e18a9dff91b5",
+      "content_id": "db9c46a9-7547-4cee-990d-8186e068cf63",
+      "claim_id": "C52",
+      "claim": "Strongest overall connection selectivities, \u03c9, were obtained for lower values of D.",
+      "claim_type": "EXPLICIT",
+      "source": "Third, strongest overall connection selectivities, \u03c9, were obtained for lower values of D.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the parameter sweep shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:18:52.840492Z"
+    },
+    {
+      "id": "b0052e03-e7ba-4fde-957c-1c0e9a4b464f",
+      "content_id": "db9c46a9-7547-4cee-990d-8186e068cf63",
+      "claim_id": "C54",
+      "claim": "When competition is strong, the rate of diffusion determines a trade-off such that fields emerge to be barrel-shaped when diffusion is fast and they emerge to be more selectively innervated when diffusion is slow.",
+      "claim_type": "EXPLICIT",
+      "source": "Together these results indicate that when competition is strong, the rate of diffusion determines a trade-off such that fields emerge to be barrel-shaped when diffusion is fast and they emerge to be more selectively innervated when diffusion is slow.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the parameter sweep results.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:18:52.840492Z"
+    },
+    {
+      "id": "d928f1ed-a5db-456a-bd86-d92f6533f88b",
+      "content_id": "db9c46a9-7547-4cee-990d-8186e068cf63",
+      "claim_id": "C55",
+      "claim": "Adding noise to the interaction parameters (\u03b3) affected neither the Honda-\u03b4 or the connection selectivity measures substantially.",
+      "claim_type": "EXPLICIT",
+      "source": "Adding noise to the interaction parameters (\u03b3) affected neither the Honda-\u03b4 or the connection selectivity measures substantially (see Figure 3A), and an increase in the pattern difference reflected an increase in the occurrence of topological defects only when perturbations became so large as to cause the ordering of \u03b3 values from neighbouring thalamic sites to be switched (see example map Figure 3Bi).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the sensitivity analysis shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:18:52.840492Z"
+    },
+    {
+      "id": "419555fd-977f-44cf-a1bb-480e9d5b6965",
+      "content_id": "db9c46a9-7547-4cee-990d-8186e068cf63",
+      "claim_id": "C56",
+      "claim": "An increase in the pattern difference reflected an increase in the occurrence of topological defects only when perturbations became so large as to cause the ordering of \u03b3 values from neighbouring thalamic sites to be switched.",
+      "claim_type": "EXPLICIT",
+      "source": "Adding noise to the interaction parameters (\u03b3) affected neither the Honda-\u03b4 or the connection selectivity measures substantially (see Figure 3A), and an increase in the pattern difference reflected an increase in the occurrence of topological defects only when perturbations became so large as to cause the ordering of \u03b3 values from neighbouring thalamic sites to be switched (see example map Figure 3Bi).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the sensitivity analysis shown in Figure 3A and 3Bi.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:18:52.840492Z"
+    },
+    {
+      "id": "b5263cee-aeca-4909-b9d8-6bf2d50f56e8",
+      "content_id": "db9c46a9-7547-4cee-990d-8186e068cf63",
+      "claim_id": "C60",
+      "claim": "Self-organization of barrel-like fields in the model is highly robust to a wide range of sources of perturbation.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, the sensitivity analysis revealed that self-organization of barrel-like fields in the model is highly robust to a wide range of sources of perturbation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from the sensitivity analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:18:52.840492Z"
+    },
+    {
+      "id": "d17c6b64-ff1c-45c7-ac6e-ae477eb9243b",
+      "content_id": "db9c46a9-7547-4cee-990d-8186e068cf63",
+      "claim_id": "C64",
+      "claim": "Removal of whiskers by electrocauterization, plucking, or trimming leads to observable changes in brain structures, including the barrel field.",
+      "claim_type": "EXPLICIT",
+      "source": "In a critical period comprising the first postnatal days, removal of the whiskers by electrocauterization, plucking, or trimming leads to observable changes in brain structures, including the barrel field (Jeanmonod et al., 1981).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Jeanmonod et al., 1981.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:18:52.840492Z"
+    },
+    {
+      "id": "a60000d3-2c51-43af-8f24-52674b084cd0",
+      "content_id": "db9c46a9-7547-4cee-990d-8186e068cf63",
+      "claim_id": "C65",
+      "claim": "Deprivation of individual whiskers leads to smaller barrels.",
+      "claim_type": "EXPLICIT",
+      "source": "Amongst other changes, deprivation of individual whiskers leads to smaller barrels (Kossut, 1992).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Kossut, 1992.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:18:52.840492Z"
+    },
+    {
+      "id": "6b423319-c8b2-4efe-aabd-98b5572450a0",
+      "content_id": "db9c46a9-7547-4cee-990d-8186e068cf63",
+      "claim_id": "C70",
+      "claim": "If an entire row of whiskers is trimmed, barrel sizes for the trimmed row are not obviously changed.",
+      "claim_type": "EXPLICIT",
+      "source": "Although individual whisker trimming reduces barrel size, if an entire row is trimmed, barrel sizes for the trimmed row are not obviously changed (Land and Simons, 1985).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Land and Simons, 1985.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:18:52.840492Z"
+    },
+    {
+      "id": "9f794496-ca00-46c4-b4e5-1b09c68b4960",
+      "content_id": "db9c46a9-7547-4cee-990d-8186e068cf63",
+      "claim_id": "C73",
+      "claim": "The key requirements for the emergence of realistic barrel patterning are (i) at each cortical location thalamocortical projections compete for a limited number of available synaptic connections, (ii) at each location the branching rate of a given projection is reduced by the density of other projections, and (iii) the branch density of each projection is conserved over time.",
+      "claim_type": "EXPLICIT",
+      "source": "The present results suggest that the key requirements for the emergence of realistic barrel patterning are (i) at each cortical location thalamocortical projections compete for a limited number of available synaptic connections (Equations 1\u20132), (ii) at each location the branching rate of a given projection is reduced by the density of other projections (Equation 3), and (iii) the branch density of each projection is conserved over time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from the modeling results.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:18:52.840492Z"
+    },
+    {
+      "id": "b54cd5db-4477-473a-8527-c8a4b9120557",
+      "content_id": "db9c46a9-7547-4cee-990d-8186e068cf63",
+      "claim_id": "C74",
+      "claim": "The emergence of barrels in simulation required competition between thalamic projections in terms of synaptic connectivity and also competition in terms of cortical space.",
+      "claim_type": "EXPLICIT",
+      "source": "The emergence of barrels in simulation required competition between thalamic projections in terms of synaptic connectivity and also competition in terms of cortical space, as represented by \u03c7, with an implicit requirement for a self/other identifier amongst projections.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from the modeling results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:18:52.840492Z"
+    },
+    {
+      "id": "77e4fbc6-05c7-483d-94a8-7ecc0e848d9f",
+      "content_id": "db9c46a9-7547-4cee-990d-8186e068cf63",
+      "claim_id": "C75",
+      "claim": "Competition for cortical space requires an implicit self/other identifier amongst projections.",
+      "claim_type": "EXPLICIT",
+      "source": "The emergence of barrels in simulation required competition between thalamic projections in terms of synaptic connectivity and also competition in terms of cortical space, as represented by \u03c7, with an implicit requirement for a self/other identifier amongst projections.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the model structure.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:18:52.840492Z"
+    },
+    {
+      "id": "ef6b57cd-050f-45bc-8087-9ea164972551",
+      "content_id": "db9c46a9-7547-4cee-990d-8186e068cf63",
+      "claim_id": "C76",
+      "claim": "Competition for space may account for the absence of barrels in rodents with larger brains, such as capybara.",
+      "claim_type": "EXPLICIT",
+      "source": "This latter form of competition may account for the absence of barrels in rodents with larger brains, such as capybara, for which competition for space is presumably weaker (Woolsey et al., 1975).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation based on the model and supported by a citation to Woolsey et al., 1975.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:18:52.840492Z"
+    },
+    {
+      "id": "e9435b3b-86e3-48bb-b000-9610531677dc",
+      "content_id": "db9c46a9-7547-4cee-990d-8186e068cf63",
+      "claim_id": "C77",
+      "claim": "The emergence of somatotopically ordered modular structures may be an inevitable consequence of local competition for cortical territory driven by input from an array of discrete sensory organs.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, irrespective of whether barrels are necessary for adaptive whisker function, the emergence of somatotopically ordered modular structures may be an inevitable consequence of local competition for cortical territory driven by input from an array of discrete sensory organs (Purves et al., 1992).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation based on the model results and supported by a citation to Purves et al., 1992.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:18:52.840492Z"
+    },
+    {
+      "id": "5f3047d3-a058-4cd5-ad1c-89af9d9ca86e",
+      "content_id": "db9c46a9-7547-4cee-990d-8186e068cf63",
+      "claim_id": "C78",
+      "claim": "The Voronoi tessellation is extended by scores of smaller barrels alongside the E-row barrels, which represent the microvibrissae.",
+      "claim_type": "EXPLICIT",
+      "source": "In reality, the Voronoi tessellation is extended by scores of smaller barrels alongside the E-row barrels, which represent the microvibrissae, and presumably form via the same competitive processes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about biological reality.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:18:52.840492Z"
+    },
+    {
+      "id": "5f092966-7895-492e-9844-49520566d0b1",
+      "content_id": "db9c46a9-7547-4cee-990d-8186e068cf63",
+      "claim_id": "C79",
+      "claim": "Smaller barrels representing the microvibrissae presumably form via the same competitive processes as the macrovibrissae barrels.",
+      "claim_type": "EXPLICIT",
+      "source": "In reality, the Voronoi tessellation is extended by scores of smaller barrels alongside the E-row barrels, which represent the microvibrissae, and presumably form via the same competitive processes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation based on the model.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:18:52.840492Z"
+    },
+    {
+      "id": "f6781256-78a0-4b2f-9412-2b6553778c50",
+      "content_id": "db9c46a9-7547-4cee-990d-8186e068cf63",
+      "claim_id": "C80",
+      "claim": "The formulation of the model is entirely local, insofar as simulation requires no information to be communicated from a given cortical grid cell to any but those immediately adjacent.",
+      "claim_type": "EXPLICIT",
+      "source": "It is important to emphasize that the formulation of the model is entirely local, insofar as simulation requires no information to be communicated from a given cortical grid cell to any but those immediately adjacent (via diffusion).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the model's properties.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:18:52.840492Z"
+    },
+    {
+      "id": "c6ce049c-c201-4e84-9c6e-68efae7af8ad",
+      "content_id": "db9c46a9-7547-4cee-990d-8186e068cf63",
+      "claim_id": "C81",
+      "claim": "The simulations demonstrate how a self-organizing system, constrained by genetically specified guidance cues and by the shape of the cortical field boundary, can faithfully reproduce an arrangement of cell aggregates in one neural structure as a topographic map in another.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence the simulations demonstrate how a self-organizing system, constrained by genetically specified guidance cues and by the shape of the cortical field boundary, can faithfully reproduce an arrangement of cell aggregates in one neural structure as a topographic map in another.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from the modeling results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:18:52.840492Z"
+    },
+    {
+      "id": "ecd1dfbc-cb79-4d35-bfec-d2ebaca6972f",
+      "content_id": "db9c46a9-7547-4cee-990d-8186e068cf63",
+      "claim_id": "C82",
+      "claim": "Somatotopic map formation does not require the pre-specification of centre-points by as yet undetermined additional developmental mechanisms.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the present results confirm that somatotopic map formation does not require the pre-specification of centre-points by as yet undetermined additional developmental mechanisms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from the modeling results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:18:52.840492Z"
+    },
+    {
+      "id": "ef489381-0690-440b-bb10-c1f278b1a753",
+      "content_id": "db9c46a9-7547-4cee-990d-8186e068cf63",
+      "claim_id": "C83",
+      "claim": "The cortical sheet was modelled as a two dimensional hexagonal lattice.",
+      "claim_type": "EXPLICIT",
+      "source": "The cortical sheet was modelled as a two dimensional hexagonal lattice, which simplifies the computation of the 2D Laplacian.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the modeling method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:18:52.840492Z"
+    },
+    {
+      "id": "ea52330a-bd67-41f5-b02a-b5ce64c6ab7c",
+      "content_id": "db9c46a9-7547-4cee-990d-8186e068cf63",
+      "claim_id": "C84",
+      "claim": "A hexagonal lattice simplifies the computation of the 2D Laplacian.",
+      "claim_type": "EXPLICIT",
+      "source": "The cortical sheet was modelled as a two dimensional hexagonal lattice, which simplifies the computation of the 2D Laplacian.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about computational methods.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:18:52.840492Z"
+    },
+    {
+      "id": "33fb9ad7-2843-4422-8cad-be6be0610a9c",
+      "content_id": "db9c46a9-7547-4cee-990d-8186e068cf63",
+      "claim_id": "C85",
+      "claim": "The hex-to-hex distance d was set to 0.03 mm.",
+      "claim_type": "EXPLICIT",
+      "source": "Within a boundary traced around the edge of a rat barrel field (Figure 1A) we set the hex-to-hex distance d to 0.03 mm, which resulted in a lattice containing 6515 hexes for the simulations shown in Figure 1A,C and D and 12739 hexes for the Fgf8 misexpression study shown in Figure 3.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the modeling parameters.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:18:52.840492Z"
+    },
+    {
+      "id": "263301ba-83f7-447e-8a3d-b402df298bb8",
+      "content_id": "db9c46a9-7547-4cee-990d-8186e068cf63",
+      "claim_id": "C86",
+      "claim": "The lattice contained 6515 hexes for the simulations shown in Figure 1A,C and D.",
+      "claim_type": "EXPLICIT",
+      "source": "Within a boundary traced around the edge of a rat barrel field (Figure 1A) we set the hex-to-hex distance d to 0.03 mm, which resulted in a lattice containing 6515 hexes for the simulations shown in Figure 1A,C and D and 12739 hexes for the Fgf8 misexpression study shown in Figure 3.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the modeling parameters.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:18:52.840492Z"
+    },
+    {
+      "id": "f7866ee2-958b-4d78-a7fd-394e14dd9863",
+      "content_id": "db9c46a9-7547-4cee-990d-8186e068cf63",
+      "claim_id": "C87",
+      "claim": "The lattice contained 12739 hexes for the Fgf8 misexpression study shown in Figure 3.",
+      "claim_type": "EXPLICIT",
+      "source": "Within a boundary traced around the edge of a rat barrel field (Figure 1A) we set the hex-to-hex distance d to 0.03 mm, which resulted in a lattice containing 6515 hexes for the simulations shown in Figure 1A,C and D and 12739 hexes for the Fgf8 misexpression study shown in Figure 3.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the modeling parameters (note: likely Figure 4 based on context).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:18:52.840492Z"
+    },
+    {
+      "id": "26fb72d0-76c1-44ef-bfed-5e61018d73a9",
+      "content_id": "db9c46a9-7547-4cee-990d-8186e068cf63",
+      "claim_id": "C88",
+      "claim": "Each hex contained 82 time-dependent variables: 41 branching densities (ai) and 41 connection densities (ci).",
+      "claim_type": "EXPLICIT",
+      "source": "Each hex contained 82 time-dependent variables: 41 branching densities (ai) and 41 connection densities (ci).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the modeling structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:18:52.840492Z"
+    },
+    {
+      "id": "2ccb06e5-cb54-4a47-817f-17bb5d9f0b97",
+      "content_id": "db9c46a9-7547-4cee-990d-8186e068cf63",
+      "claim_id": "C89",
+      "claim": "The rate of change of each of the time-dependent variables was computed using a fourth-order Runge-Kutta method.",
+      "claim_type": "EXPLICIT",
+      "source": "The rate of change of each of the time-dependent variables (Equations 1 and 2) was computed using a fourth-order Runge-Kutta method.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the computational method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:18:52.840492Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "ccfaae74-63f4-4fe0-958c-7bdc2f02c099",
+      "content_id": "db9c46a9-7547-4cee-990d-8186e068cf63",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors extended a 1D reaction-diffusion model to 2D and demonstrated that an arbitrary number of distinct cortical fields can emerge from just two guidance gradients when projections compete for cortical space, with field locations determined by relative interaction strengths (\u03b3 values) rather than requiring pre-specified center points.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28, C31, C36 provide direct simulation evidence, while C33-C35 establish the theoretical framework. The model successfully reproduces prior 1D results (C28) and demonstrates that competition between projections allows two gradients to specify multiple fields (C31, C33), avoiding the biological implausibility of requiring numerous guidance fields (C32).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:18:52.840492Z"
+    },
+    {
+      "id": "98b7102b-7a16-4e25-9cf9-c59f2e930b9b",
+      "content_id": "db9c46a9-7547-4cee-990d-8186e068cf63",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Simulations demonstrate that realistic whisker barrel maps self-organize by ~20,000 iterations, with emergent patterns matching real barrel field topology (Honda-\u03b4 and pattern difference metrics), and reveal a trade-off where strong competition with fast diffusion produces barrel-shaped fields while slow diffusion produces more selective innervation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47-C49 are directly supported by quantitative metrics shown in Figure 1D-E, demonstrating convergence to realistic patterns. Claims C52 and C54 are supported by systematic parameter sweeps in Figure 2A, revealing the diffusion-competition trade-off. The multiple independent metrics (Honda-\u03b4, pattern difference, connection selectivity) provide converging evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:18:52.840492Z"
+    },
+    {
+      "id": "90347190-ee00-49fd-8849-dceaf791c1a7",
+      "content_id": "db9c46a9-7547-4cee-990d-8186e068cf63",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Sensitivity analysis reveals that barrel field self-organization is highly robust to perturbations in interaction parameters (\u03b3), initial conditions, and guidance field noise, with topological defects only appearing when perturbations are large enough to reverse the ordering of neighboring thalamic \u03b3 values.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55-C56 are directly supported by systematic perturbation analysis shown in Figure 3A, testing multiple noise sources. The conclusion (C60) is well-justified by the comprehensive sensitivity testing across initial conditions, interaction parameters, and guidance fields, demonstrating that the model's behavior is not dependent on fine-tuning.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:18:52.840492Z"
+    },
+    {
+      "id": "ddc45b0f-b528-4265-8a55-c821d5646f70",
+      "content_id": "db9c46a9-7547-4cee-990d-8186e068cf63",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The model successfully replicates experimental whisker deprivation results: simulated trimming of individual whisker C3 (by reducing its competitiveness parameter \u03b5) produces smaller barrels matching experimental observations, while trimming an entire row produces minimal size changes, consistent with published experimental findings.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C64-C65, C70 cite established experimental results, while the simulation results shown in Figure 4C-D quantitatively match these biological observations. The model predicts 65% barrel area reduction for individual trimming (matching Kossut 1992) and 91% retention for row trimming (matching Land and Simons 1985), providing strong validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:18:52.840492Z"
+    },
+    {
+      "id": "d87ec6c8-ca8f-4773-b088-d4c614cdae64",
+      "content_id": "db9c46a9-7547-4cee-990d-8186e068cf63",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The authors conclude that realistic barrel patterning requires three key mechanisms: (i) competition for synaptic connections, (ii) density-dependent branching reduction, and (iii) branch density conservation. Critically, the model demonstrates that somatotopic maps can self-organize through purely local interactions without pre-specified center points.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C73-C75 identify the minimal mechanistic requirements validated by the simulation results. Claims C81-C82 represent well-justified conclusions from the modeling work, directly addressing the central question posed in the introduction (C19-C20). The local-only computation (C80) and successful pattern formation without center points provide strong support.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:18:52.840492Z"
+    },
+    {
+      "id": "f2f220a0-4581-440c-a934-0bc538625d37",
+      "content_id": "db9c46a9-7547-4cee-990d-8186e068cf63",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The model predicts that barrel absence in larger-brained rodents (e.g., capybara) results from weaker spatial competition, and suggests that somatotopically ordered modular structures may inevitably emerge from local competition for cortical territory driven by discrete sensory organ arrays.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C76-C77 are speculative extrapolations from the model, supported by simulation results showing pattern loss at low diffusion rates (Figure 2Biii, equivalent to larger cortex) and cited observations in capybara. However, these remain predictions requiring experimental validation. The mechanistic logic is sound but the biological predictions are untested.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:18:52.840492Z"
+    },
+    {
+      "id": "d5a44478-9a45-43bb-b76c-a27d9915764e",
+      "content_id": "db9c46a9-7547-4cee-990d-8186e068cf63",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The model assumes that complementary gradients of EphA4 receptors in thalamus and ephrin-A5 ligands in cortex create correlated interaction strengths (\u03b3 values) that guide thalamocortical projection targeting, with VPM cells (high EphA4) projecting to lateral S1 (low ephrin-A5) and VPL cells (low EphA4) projecting to medial S1 (high ephrin-A5).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-C39 cite well-established experimental findings about complementary molecular gradients. Claim C40 represents a reasonable modeling assumption connecting these gradients to the \u03b3 parameters. While the precise mechanistic link is assumed rather than proven, it is grounded in established biology and enables the model to work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:18:52.840492Z"
+    },
+    {
+      "id": "04656630-084f-4b21-ae4c-4c69fe9d336e",
+      "content_id": "db9c46a9-7547-4cee-990d-8186e068cf63",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The manuscript reviews established knowledge about rodent barrel cortex development, including the somatotopic organization of whisker representations, developmental timeline, molecular guidance mechanisms (ephrin-A5/A7, cadherin-6/8, Fgf8/17, Emx2, Pax6), Voronoi tessellation structure, and the tension between pre-specified center points versus self-organization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims are well-supported by extensive citations to established literature (Woolsey and Van der Loos 1970, Erzurumlu and Gaspar 2012, Armstrong-James et al. 1992, Vanderhaeghen et al. 2000, Miller et al. 2006, Shimogori and Grove 2005, Assimacopoulos et al. 2012, Agmon et al. 1993, and others). They provide essential context but represent prior knowledge rather than novel findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:18:52.840492Z"
+    },
+    {
+      "id": "1ffd7460-bae0-4089-a929-e0710a639dc0",
+      "content_id": "db9c46a9-7547-4cee-990d-8186e068cf63",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The computational implementation uses a 2D hexagonal lattice (hex-to-hex distance 0.03 mm) containing 6,515-12,739 hexes depending on domain size, with 82 time-dependent variables per hex (41 branching densities, 41 connection densities), solved using fourth-order Runge-Kutta integration.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These methodological claims (C83-C89) describe the technical implementation details that are standard computational approaches. The hexagonal lattice choice (C83-C84) is justified for simplifying Laplacian computation. The specific parameters (C85-C87) and numerical methods (C89) are clearly stated and appropriate for the problem.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:18:52.840492Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "53ddafa7-469d-4f08-b38d-26c9128f5260",
+      "result_id": "ccfaae74-63f4-4fe0-958c-7bdc2f02c099"
+    },
+    {
+      "claim_id": "a4313311-ce8b-46f7-b13d-d48d3e0696a9",
+      "result_id": "ccfaae74-63f4-4fe0-958c-7bdc2f02c099"
+    },
+    {
+      "claim_id": "70dc913f-bd2a-4f88-85b2-7dc28f18accb",
+      "result_id": "ccfaae74-63f4-4fe0-958c-7bdc2f02c099"
+    },
+    {
+      "claim_id": "be5eb1c0-a7d1-4449-847e-4762cb31eba3",
+      "result_id": "ccfaae74-63f4-4fe0-958c-7bdc2f02c099"
+    },
+    {
+      "claim_id": "a8f8be01-9aa5-42d5-a671-c358945e896a",
+      "result_id": "ccfaae74-63f4-4fe0-958c-7bdc2f02c099"
+    },
+    {
+      "claim_id": "3b72c442-1cdc-41ef-bcff-6e4046f2de36",
+      "result_id": "ccfaae74-63f4-4fe0-958c-7bdc2f02c099"
+    },
+    {
+      "claim_id": "8a17bd2e-552c-4bed-b5d6-c0b843245c05",
+      "result_id": "ccfaae74-63f4-4fe0-958c-7bdc2f02c099"
+    },
+    {
+      "claim_id": "6e755135-2ba0-4e64-bf7d-01d28ba7ca89",
+      "result_id": "ccfaae74-63f4-4fe0-958c-7bdc2f02c099"
+    },
+    {
+      "claim_id": "1b62cb6e-d603-457e-a7a6-ee969ec281cc",
+      "result_id": "ccfaae74-63f4-4fe0-958c-7bdc2f02c099"
+    },
+    {
+      "claim_id": "20f79019-cc14-43ce-a6b3-834f7c66f718",
+      "result_id": "98b7102b-7a16-4e25-9cf9-c59f2e930b9b"
+    },
+    {
+      "claim_id": "ffe7107b-eac8-4972-9151-ab879700b70b",
+      "result_id": "98b7102b-7a16-4e25-9cf9-c59f2e930b9b"
+    },
+    {
+      "claim_id": "46e534bc-315a-4727-a8ed-baa68c823a57",
+      "result_id": "98b7102b-7a16-4e25-9cf9-c59f2e930b9b"
+    },
+    {
+      "claim_id": "e33f945e-2578-4c73-bc75-e18a9dff91b5",
+      "result_id": "98b7102b-7a16-4e25-9cf9-c59f2e930b9b"
+    },
+    {
+      "claim_id": "b0052e03-e7ba-4fde-957c-1c0e9a4b464f",
+      "result_id": "98b7102b-7a16-4e25-9cf9-c59f2e930b9b"
+    },
+    {
+      "claim_id": "d928f1ed-a5db-456a-bd86-d92f6533f88b",
+      "result_id": "90347190-ee00-49fd-8849-dceaf791c1a7"
+    },
+    {
+      "claim_id": "419555fd-977f-44cf-a1bb-480e9d5b6965",
+      "result_id": "90347190-ee00-49fd-8849-dceaf791c1a7"
+    },
+    {
+      "claim_id": "b5263cee-aeca-4909-b9d8-6bf2d50f56e8",
+      "result_id": "90347190-ee00-49fd-8849-dceaf791c1a7"
+    },
+    {
+      "claim_id": "d17c6b64-ff1c-45c7-ac6e-ae477eb9243b",
+      "result_id": "ddc45b0f-b528-4265-8a55-c821d5646f70"
+    },
+    {
+      "claim_id": "a60000d3-2c51-43af-8f24-52674b084cd0",
+      "result_id": "ddc45b0f-b528-4265-8a55-c821d5646f70"
+    },
+    {
+      "claim_id": "6b423319-c8b2-4efe-aabd-98b5572450a0",
+      "result_id": "ddc45b0f-b528-4265-8a55-c821d5646f70"
+    },
+    {
+      "claim_id": "9f794496-ca00-46c4-b4e5-1b09c68b4960",
+      "result_id": "d87ec6c8-ca8f-4773-b088-d4c614cdae64"
+    },
+    {
+      "claim_id": "b54cd5db-4477-473a-8527-c8a4b9120557",
+      "result_id": "d87ec6c8-ca8f-4773-b088-d4c614cdae64"
+    },
+    {
+      "claim_id": "77e4fbc6-05c7-483d-94a8-7ecc0e848d9f",
+      "result_id": "d87ec6c8-ca8f-4773-b088-d4c614cdae64"
+    },
+    {
+      "claim_id": "c6ce049c-c201-4e84-9c6e-68efae7af8ad",
+      "result_id": "d87ec6c8-ca8f-4773-b088-d4c614cdae64"
+    },
+    {
+      "claim_id": "ecd1dfbc-cb79-4d35-bfec-d2ebaca6972f",
+      "result_id": "d87ec6c8-ca8f-4773-b088-d4c614cdae64"
+    },
+    {
+      "claim_id": "ef6b57cd-050f-45bc-8087-9ea164972551",
+      "result_id": "f2f220a0-4581-440c-a934-0bc538625d37"
+    },
+    {
+      "claim_id": "e9435b3b-86e3-48bb-b000-9610531677dc",
+      "result_id": "f2f220a0-4581-440c-a934-0bc538625d37"
+    },
+    {
+      "claim_id": "5f092966-7895-492e-9844-49520566d0b1",
+      "result_id": "f2f220a0-4581-440c-a934-0bc538625d37"
+    },
+    {
+      "claim_id": "61cde775-009a-4619-9a41-8f359fbebfdd",
+      "result_id": "d5a44478-9a45-43bb-b76c-a27d9915764e"
+    },
+    {
+      "claim_id": "f7b1b535-f603-4f9b-9754-b2e1ad500746",
+      "result_id": "d5a44478-9a45-43bb-b76c-a27d9915764e"
+    },
+    {
+      "claim_id": "fcd128e5-8f6a-4dd4-9b7d-bfb392fa3fb4",
+      "result_id": "d5a44478-9a45-43bb-b76c-a27d9915764e"
+    },
+    {
+      "claim_id": "1b62cb6e-d603-457e-a7a6-ee969ec281cc",
+      "result_id": "d5a44478-9a45-43bb-b76c-a27d9915764e"
+    },
+    {
+      "claim_id": "c680fb72-86bb-4233-9c29-ae037d2f7e08",
+      "result_id": "04656630-084f-4b21-ae4c-4c69fe9d336e"
+    },
+    {
+      "claim_id": "2cb9c09f-9036-4c54-8b58-c3e5cbaac927",
+      "result_id": "04656630-084f-4b21-ae4c-4c69fe9d336e"
+    },
+    {
+      "claim_id": "16af7f00-9693-4196-8e87-762e39ab7e78",
+      "result_id": "04656630-084f-4b21-ae4c-4c69fe9d336e"
+    },
+    {
+      "claim_id": "2c822545-d1bb-4bf2-9638-a8b681205662",
+      "result_id": "04656630-084f-4b21-ae4c-4c69fe9d336e"
+    },
+    {
+      "claim_id": "5b7ac407-986e-4967-88f2-4d5fd440bcb8",
+      "result_id": "04656630-084f-4b21-ae4c-4c69fe9d336e"
+    },
+    {
+      "claim_id": "89175b0e-e27b-4473-87fe-4c794ec50dc0",
+      "result_id": "04656630-084f-4b21-ae4c-4c69fe9d336e"
+    },
+    {
+      "claim_id": "25494e55-400c-4690-a028-abd8ce3f6288",
+      "result_id": "04656630-084f-4b21-ae4c-4c69fe9d336e"
+    },
+    {
+      "claim_id": "c1a357fe-4e00-4df0-8fda-d015764237b3",
+      "result_id": "04656630-084f-4b21-ae4c-4c69fe9d336e"
+    },
+    {
+      "claim_id": "1408bd56-d861-4c21-bb1c-c678ddf59ce5",
+      "result_id": "04656630-084f-4b21-ae4c-4c69fe9d336e"
+    },
+    {
+      "claim_id": "f0b57f4a-1a8d-4fd6-89fd-8d571d91c602",
+      "result_id": "04656630-084f-4b21-ae4c-4c69fe9d336e"
+    },
+    {
+      "claim_id": "cbf0d963-4a89-4e5e-a65d-e93cf9ed3c14",
+      "result_id": "04656630-084f-4b21-ae4c-4c69fe9d336e"
+    },
+    {
+      "claim_id": "3db3c9d1-efe8-412f-b0e9-7e24761e99a0",
+      "result_id": "04656630-084f-4b21-ae4c-4c69fe9d336e"
+    },
+    {
+      "claim_id": "afa74ddf-d92f-4d4e-b3fa-b412741754e5",
+      "result_id": "04656630-084f-4b21-ae4c-4c69fe9d336e"
+    },
+    {
+      "claim_id": "af5fbf7a-6b09-4a7a-a445-c56a35413e62",
+      "result_id": "04656630-084f-4b21-ae4c-4c69fe9d336e"
+    },
+    {
+      "claim_id": "062b5357-c58f-4123-8189-bd4863a36e6d",
+      "result_id": "04656630-084f-4b21-ae4c-4c69fe9d336e"
+    },
+    {
+      "claim_id": "fcf5b9e0-59c9-4d0f-ba85-98c9807e476d",
+      "result_id": "04656630-084f-4b21-ae4c-4c69fe9d336e"
+    },
+    {
+      "claim_id": "24701e5c-482a-495c-9fc1-8e4a0c82fce1",
+      "result_id": "04656630-084f-4b21-ae4c-4c69fe9d336e"
+    },
+    {
+      "claim_id": "64dac8dc-286a-421b-a749-6699feb6a545",
+      "result_id": "04656630-084f-4b21-ae4c-4c69fe9d336e"
+    },
+    {
+      "claim_id": "2aa68f97-7727-4892-9b78-b592894414f7",
+      "result_id": "04656630-084f-4b21-ae4c-4c69fe9d336e"
+    },
+    {
+      "claim_id": "5655f444-4471-4554-a7e8-aa82b173d2b8",
+      "result_id": "04656630-084f-4b21-ae4c-4c69fe9d336e"
+    },
+    {
+      "claim_id": "36bb99a1-e7d8-46f6-8604-a67dd461a390",
+      "result_id": "04656630-084f-4b21-ae4c-4c69fe9d336e"
+    },
+    {
+      "claim_id": "c2c260b0-6bc4-49aa-b967-ee294154b715",
+      "result_id": "04656630-084f-4b21-ae4c-4c69fe9d336e"
+    },
+    {
+      "claim_id": "13a52490-311b-447e-bb40-0620f27609a1",
+      "result_id": "04656630-084f-4b21-ae4c-4c69fe9d336e"
+    },
+    {
+      "claim_id": "4ae6f3b4-b8f7-4aa0-a7d2-f6f747edcc99",
+      "result_id": "04656630-084f-4b21-ae4c-4c69fe9d336e"
+    },
+    {
+      "claim_id": "ef489381-0690-440b-bb10-c1f278b1a753",
+      "result_id": "1ffd7460-bae0-4089-a929-e0710a639dc0"
+    },
+    {
+      "claim_id": "ea52330a-bd67-41f5-b02a-b5ce64c6ab7c",
+      "result_id": "1ffd7460-bae0-4089-a929-e0710a639dc0"
+    },
+    {
+      "claim_id": "33fb9ad7-2843-4422-8cad-be6be0610a9c",
+      "result_id": "1ffd7460-bae0-4089-a929-e0710a639dc0"
+    },
+    {
+      "claim_id": "263301ba-83f7-447e-8a3d-b402df298bb8",
+      "result_id": "1ffd7460-bae0-4089-a929-e0710a639dc0"
+    },
+    {
+      "claim_id": "f7866ee2-958b-4d78-a7fd-394e14dd9863",
+      "result_id": "1ffd7460-bae0-4089-a929-e0710a639dc0"
+    },
+    {
+      "claim_id": "26fb72d0-76c1-44ef-bfed-5e61018d73a9",
+      "result_id": "1ffd7460-bae0-4089-a929-e0710a639dc0"
+    },
+    {
+      "claim_id": "2ccb06e5-cb54-4a47-817f-17bb5d9f0b97",
+      "result_id": "1ffd7460-bae0-4089-a929-e0710a639dc0"
+    }
+  ],
+  "comparisons": []
+}

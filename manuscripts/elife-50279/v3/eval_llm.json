@@ -1,0 +1,307 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "Class A GPCRs are a large and diverse family of receptors that influence virtually every aspect of human physiology, with over 800 family members including 388 olfactory and 286 non-olfactory receptors. About one-third of all marketed drugs (475 drugs targeting 108 members) target this family, and GPCRs are involved in many diseases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C15-C19 are well-established facts about GPCRs supported by extensive citations to the literature. These are background claims that provide context for the study and are not novel findings of this work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "Class A GPCRs share a seven-transmembrane helices domain with ligand-binding pockets and G-protein-binding regions at opposite ends. GPCR activation is an allosteric process coupling agonist binding to G-protein recruitment, with the hallmark outward movement of TM6. While ligand-binding pockets and G-protein-binding regions are highly diverse, residues connecting them are significantly more conserved.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C4, C20-C24 describe well-established structural and functional features of GPCRs supported by extensive prior literature. These provide the scientific foundation for the study but are not novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "The study analyzed 234 structures from 45 class A GPCRs (as of October 1, 2018) with resolution better than 3.8 \u00c5, covering 71% of class A GPCRs. These structures were classified into three states: inactive (142 structures from 38 receptors), active (27 structures from 8 receptors), and intermediate (65 structures from 15 receptors).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C25-C27 describe the dataset used in the study. The dataset is clearly defined and the classification criteria are stated. This is a straightforward methodological description that is well-supported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "The study developed a residue-residue contact score (RRCS) to quantify the strength of contact between residue pairs by summing atomic distance-based calculations. \u0394RRCS quantifies conformational changes between receptor states. Two types of conformational changes were defined: switching contacts (contacts present in one state but lost in another) and repacking contacts (changes in residue packing strength).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C30 describe the methodological framework developed in this study. The RRCS approach is clearly defined and represents a conceptual advance over Boolean contact descriptors. The method is well-documented in the Materials and Methods section.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C6",
+      "C31",
+      "C32"
+    ],
+    "result": "A common GPCR activation pathway comprising 34 residue pairs and 35 residues was discovered through analysis of conformational changes. Only six of these 34 residue pairs were discovered before in prior work.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C31-C32 describe a major finding of the study. The identification of 34 residue pairs is based on rigorous statistical criteria (same sign of \u0394RRCS with |\u0394RRCS| > 0.2 for six receptors, and p<0.001 for family-wide comparison). The novelty is established by comparison with prior work (Venkatakrishnan et al., 2016).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "The common activation pathway unifies previous findings into a common activation mechanism by connecting key motifs (CWxP, DRY, Na+ pocket, NPxxY, PIF) and directly linking the ligand-binding pocket with the G-protein coupling region. The pathway is modular in nature and involves conformational changes in four layers: Layer 1 (signal initiation at ligand-binding pocket and Na+ pocket), Layer 2 (opening of hydrophobic lock), Layer 3 (rewiring of microswitch residues), and Layer 4 (rewiring of R3\u00d750 and G-protein contacting positions).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C9, C33-C37 describe the organization and functional interpretation of the common activation pathway. The layered organization is supported by structural analysis of the 34 residue pairs and their spatial arrangement. The connection of previously known motifs into a unified pathway represents a significant conceptual advance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C38",
+      "C39"
+    ],
+    "result": "Recently released cryo-EM structures of four receptors (5-HT1B, rhodopsin, A1R, \u00b5OR) in complex with Gi/o support the conservation of contacts involving the 34 residue pairs. The common activation pathway is conserved regardless of the subtypes of intracellular effectors (Gs, Gi/o, arrestin, or G-protein mimetic nanobody/peptide).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C39 provide validation of the pathway using independent structural data not included in the original analysis. The conservation across different effector types strengthens the claim of a common activation mechanism. Figure 4 and supplements show the RRCS data for these structures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "No ligand-residue pair exhibits conserved rearrangements upon activation. Conserved conformational changes were only observed at the very bottom of the ligand-binding pocket (positions 6\u00d748, 3\u00d740, 6\u00d744). Diverse agonist binding converges to trigger identical alterations of the transmission switch (3\u00d740, 5\u00d751, 6\u00d744, 6\u00d748) and Na+ pocket (2\u00d750, 3\u00d739, 7\u00d745, 7\u00d749).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C42 describe how diverse ligands converge on a common activation mechanism. The lack of conserved ligand-residue contacts is consistent with the known diversity of GPCR ligands. The convergence at the transmission switch and Na+ pocket is supported by \u0394RRCS analysis shown in Figure 3 and supplements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C43"
+    ],
+    "result": "A recent NMR study on A2AR demonstrated strong coupling between allosteric switch D2\u00d750 and toggle switch W6\u00d748, consistent with the present observations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C43 cites external validation from an independent NMR study (Eddy et al., 2018) that supports the coupling between residues identified in the pathway. This provides orthogonal experimental support for the computational findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Residues at 3\u00d743, 6\u00d740, and 6\u00d741 form a hydrophobic lock. Opening of this lock loosens TM3-TM6 packing and facilitates outward movement of TM6. Y7\u00d753 switching strengthens TM3-TM7 packing while TM3-TM6 packing is loosened. Switching contacts between R3\u00d750 and residue at 6\u00d737 are essential for R3\u00d750 release, breaking remaining TM3-TM6 contacts and driving TM6 outward movement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C47 provide mechanistic interpretation of specific residue-level changes in the pathway. The hydrophobic lock is a known concept (supported by citations), and the specific role of Y7\u00d753 and R3\u00d750 is supported by RRCS analysis. The interpretations are consistent with structural data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C48",
+      "C49"
+    ],
+    "result": "Receptor activation occurs as a harmonious process of inter-helical contact changes: elimination of TM3-TM6 contacts, formation of TM3-TM7 contacts, and repacking of TM5-TM6. Diverse agonist binding converges to trigger outward movement of TM6 and inward movement of TM7 toward TM3, creating an intracellular crevice for G-protein coupling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C49 describe the global conformational changes underlying activation. Figure 5 shows clear clustering of inactive and active states in the RRCS space, with distinct patterns of TM3-TM6 vs TM3-TM7 contacts. This provides strong support for the proposed mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Site-directed mutagenesis experiments on A2AR validated the common activation pathway. 6/15 designed CAMs and 15/20 designed CIMs were validated by cAMP accumulation assays, none previously reported for A2AR. Specific mutations in different layers of the pathway produced predictable effects on basal activity and agonist potency consistent with their proposed roles in activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C11, C50-C63 describe experimental validation of the pathway through rational mutagenesis. The success rate (6/15 CAMs, 15/20 CIMs) is reasonable for this type of study. The functional effects are consistent with the proposed mechanisms. However, 14 unsuccessful predictions are noted but not fully explained in the main text.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C64",
+      "C65"
+    ],
+    "result": "Most A2AR mutants retain agonist binding ability (except W2466\u00d748A and N2847\u00d745K), suggesting the common activation pathway is modular and allows residues involved in agonist binding to be uncoupled from receptor activation/inactivation and G-protein binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C65 are supported by radioligand binding assays (Figure 6b,c). The retention of binding despite altered activation supports the modular organization of the pathway. This is an important finding demonstrating functional independence of binding and activation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "The pathway-guided mutagenesis approach was validated in additional receptors: 5-HT7 (Gs-coupled) and 5-HT1B (Gi-coupled). Mutations at conserved positions (3\u00d740, 3\u00d743, 6\u00d744, 7\u00d749) produced consistent effects across different receptors and G-protein coupling types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C68 extend the validation to other receptors and G-protein subtypes. The consistency of effects across different receptors strengthens the claim of a common pathway. However, the sample size is limited (only a few mutations tested in each receptor).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C12",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "The common activation pathway provides mechanistic interpretation of disease mutations and CAMs/CIMs. Of 435 disease-associated mutations collected, 28% map to the pathway (vs 20% to ligand-binding and 7% to G-protein-binding regions). The average number of disease mutations in the pathway is 2.5-3.5-fold higher than other regions. For certain residues (D2\u00d750, Y7\u00d753), only loss-of-function mutations were observed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12, C69-C73 demonstrate the pathway's utility for interpreting disease mutations. The enrichment of disease mutations in the pathway is statistically significant and biologically meaningful. The analysis of 272 CAMs/CIMs from literature provides additional support. However, the mechanistic interpretations are largely post-hoc.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "The 35 residues constituting the pathway are highly conserved across class A GPCRs (66.2% sequence similarity), significantly higher than ligand-binding pockets (31.9%) or G-protein-coupling regions (35.1%). The modular organization allows decoupling of ligand-binding, G-protein-binding, and activation mechanism, facilitating functional diversity while retaining common activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C77 are supported by sequence analysis across 286 non-olfactory class A receptors (Figure 7\u2014figure supplement 2). The differential conservation is statistically significant and supports the modular organization hypothesis. The evolutionary interpretation (C77) is reasonable but somewhat speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C78",
+      "C79"
+    ],
+    "result": "Key residues connecting different modules allow decoupling of ligand-binding, G-protein-binding, and activation pathway residues. This modular organization may have facilitated rapid GPCR expansion through duplication and divergence, allowing independent evolution and diverse ligand binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C78-C79 present evolutionary interpretations of the modular organization. While the modular organization is well-supported by the data, the evolutionary implications are speculative and not directly tested. The claims are plausible but would require phylogenetic analysis or other evolutionary evidence for full support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C13",
+      "C14"
+    ],
+    "result": "The common pathway allows decoupling of ligand-binding site and G-protein-binding region evolution. This modular architecture might have facilitated GPCRs to emerge as a highly successful family for signal transduction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C13-C14 present evolutionary interpretations similar to C78-C79. While the modular organization is supported, the evolutionary implications are speculative. The claim about GPCR success is reasonable but not directly tested in this study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C80",
+      "C81"
+    ],
+    "result": "The common activation pathway represents the shared activation mechanism across all class A GPCRs and various intracellular effectors. Individual receptors naturally have intrinsic activation mechanisms due to diversified sequences, ligands, and physiological functions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C81 clarify the scope and limitations of the study. The authors appropriately acknowledge that the common pathway does not represent the complete activation mechanism for any individual receptor. This is an important caveat that strengthens the overall interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "The knowledge from this study can be used to mechanistically interpret mutations and rationally introduce mutations in other receptors. Protein engineering approaches may enable making receptors in specific conformational states for structure determination. The method could be adapted to other biological systems (kinases, ion channels, transcription factors).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C82-C85 describe potential applications of the work. While the mutagenesis results (C50-C68) provide proof-of-concept for rational design, the broader applications are speculative and not demonstrated in this study. These are reasonable future directions but not validated results.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,1651 @@
+{
+  "submission": {
+    "id": "dec5207d-b0c3-4c3a-b890-9d0ed7927308",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T12:54:26.839586Z",
+    "updated_at": "2025-12-02T12:54:26.839586Z"
+  },
+  "content": [
+    {
+      "id": "1854091c-a2b4-432a-bac2-e5e811eafdbd",
+      "submission_id": "dec5207d-b0c3-4c3a-b890-9d0ed7927308",
+      "content_type": "manuscript",
+      "content_text": "# Experimental investigation of ant traffic under crowded conditions\n\n## Authors\n\n- Laure-Anne Poissonnier<sup>1</sup>\n- Sebastien Motsch<sup>2</sup>\n- Jacques Gautrais<sup>1</sup> ([ORCID: 0000-0002-7002-9920](https://orcid.org/0000-0002-7002-9920))\n- Camille Buhl<sup>3</sup>\n- Audrey Dussutour<sup>1</sup> ([ORCID: 0000-0002-1377-3550](https://orcid.org/0000-0002-1377-3550)) \u2020\n\n### Affiliations\n\n1. Research Center on Animal Cognition (CRCA), Center for Integrative Biology (CBI) Toulouse University, CNRS, UPS 31062 Toulouse France\n2. Arizona State University Tempe United States\n3. School of Agriculture, Food and Wine The University of Adelaide Adelaide Australia\n\n\u2020 Corresponding author\n\n## Abstract\n\nEfficient transportation is crucial for urban mobility, cell function and the survival of animal groups. From humans driving on the highway, to ants running on a trail, the main challenge faced by all collective systems is how to prevent traffic jams in crowded environments. Here, we show that ants, despite their behavioral simplicity, have managed the tour de force of avoiding the formation of traffic jams at high density. At the macroscopic level, we demonstrated that ant traffic is best described by a two-phase flow function. At low densities there is a clear linear relationship between ant density and the flow, while at large density, the flow remains constant and no congestion occurs. From a microscopic perspective, the individual tracking of ants under varying densities revealed that ants adjust their speed and avoid time consuming interactions at large densities. Our results point to strategies by which ant colonies solve the main challenge of transportation by self-regulating their behavior.\n\n## Introduction\n\nMany organisms such as herds of migrating wildebeests, swarms of insects and bacteria, starling flocks, fish shoals or pedestrian crowds take part in flow-like collective movements (Ball, 2004; Berdahl et al., 2013; Berdahl et al., 2018; Buhl et al., 2006; Chowdhury et al., 2005; Fourcassi\u00e9 et al., 2010; Giardina, 2008; John et al., 2009; Moussa\u00efd et al., 2011; Sumpter, 2010; Vicsek and Zafeiris, 2012; Zhou et al., 2008). In most cases, all individuals cruise along the same path in a unique direction, which facilitates coordination. The task of maintaining a smooth and efficient movement becomes more challenging when individuals travel in opposite directions and are bound to collide (Fourcassi\u00e9 et al., 2010). Along with humans (Helbing et al., 2005; Moussa\u00efd et al., 2011), ants are one of the rare animals in which collective movements are bidirectional. Ants are central-place foragers, which entails a succession of journeys between their nest and their foraging site. When exploiting large food sources, many species lay chemical trails along which individuals commute back and forth (Czaczkes et al., 2015; Gordon, 2014). The flow of individuals on these trails can reach several hundred ants per minute (Couzin and Franks, 2003). Yet, ants seem to fare better than us when it comes to traffic management (Burd et al., 2002; Dussutour et al., 2004; Fourcassi\u00e9 et al., 2010; H\u00f6nicke et al., 2015). However, we lack direct experimental evidence showing that ants do not get stuck in traffic jam at high density (Burd et al., 2002; H\u00f6nicke et al., 2015; John et al., 2009).\n\nIn traffic engineering, the relation between the density of individuals k and the flow q (the speed v times the density k) is often described via the fundamental diagrams (Chowdhury, 2000; Greenshields et al., 1935; Helbing, 2009; Helbing, 2001; Helbing and Huberman, 1998; Hoogendoorn and Bovy, 2001; Pipes, 1953; Underwood, 1960) (Figure 1A). The speed-density and flow-density diagrams vary depending on the system under scrutiny but share similar properties. First, the flow q increases with the density k from zero to a maximum value and then decays until it goes back to zero at the so-called maximum jam density kj. The flow-density curves are usually concave with an optimal value for k on the path at which maximum flow or capacity is reached (Helbing and Huberman, 1998). Second, the speed is maximum when an individual is traveling alone (free flow speed vf) and decreases with the density k. The speed becomes zero and individuals stop at jam density that\u00a0is v(kj)=0 (Nagatani, 2002; Treiber et al., 2000).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/48945/elife-48945-fig1-v1.jpg)\n\n**Figure 1.:** (A) Three functions are often used to describe vehicular, fluid or pedestrian flows. The Greenshields function (Greenshields et al., 1935) was the first speed-density relation function used to analyze data recorded for vehicular traffic in the field. This function assumes a linear relationship between v and k leading to a parabolic shape relation between q and k. There are two parameters to be determined: the free speed vf corresponding to the speed of an individual without contact and the jam density kj, which is a threshold over which q becomes null. In the Pipes-Munjal function (Pipes, 1953), used for both pedestrians and car traffic, the relationship v - k is given by a power-law. This function requires a third parameter \u03b1 to describe the function. The third function is the Underwood function (Underwood, 1960), which often describes well pedestrians or fluids traffic, where v decays exponentially rather than linearly. These functions made no a priori assumptions as to the behavior of the individuals and speed-density relationships are only obtained by fitting function to observed traffic data. (B) Experimental set-up. During an experiment, an ant colony (400 to 25,600 workers, 35 colonies in total) had access to a source of food (1M sucrose solution) placed at the end of a bridge (width: 5, 10 or 20 mm). The colonies were starved for five days before each experiment. The sucrose solution was spread over a large surface so that all ants had access to the food. The traffic on the bridge was recorded by a video camera for one hour. Inbound and outbound ants were counted over 1\u00b7sec intervals. Counting began as soon as the first ant crossed the middle of the bridge. A total of 170 experiments were performed.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/48945/elife-48945-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** In average 94% of the ants fed once at the food source. N\u00a0=\u00a04200 ants followed across 42 experiments, two experiments for each experimental colony size and each bridge width (glmm, replicate and colony as a random factors, model for binomial data with logit function, Bridge width effect F\u00a0=\u00a00.67 p=0.521, Colony size effect F\u00a0=\u00a00.20 p=0.972, Bridge width*colony size F\u00a0=\u00a00.60 p=0.816). Error bars are CI95.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/48945/elife-48945-fig1-figsupp2-v1.jpg)\n\n**Figure 1\u2014figure supplement 2.:** N\u00a0=\u00a02133 ants traveling a 2 cm section in the middle of the bridge in both directions; N\u00a0=\u00a034 experiments; one or two experiments for each experimental colony size and each bridge width. (glmm, replicate and colony as a random factors, Bridge effect F\u00a0=\u00a00.10 p=0.757, Colony size effect F\u00a0=\u00a02.88 p=0.090, Direction effect F\u00a0=\u00a02.83 p=0.092, all interactions were non significant). Error bars are SD.\n\nDespite their apparent efficiency in traffic management, few studies have investigated the relation between density, speed and flow in ants (Burd et al., 2002; Gravish et al., 2015; H\u00f6nicke et al., 2015; John et al., 2009). In leaf-cutting ants (Burd et al., 2002) and fire ants (Gravish et al., 2015) speed decreases when density increases while for wood ants (H\u00f6nicke et al., 2015) and mass raiding ants (John et al., 2009) the speed remains constant when density increases. However, the range of densities tested was large enough to observe traffic jams only in the study conducted with fire ants traveling in tunnels (Gravish et al., 2015). The highest densities as well as the estimated occupancy (fraction of area covered by ants), recorded in leaf-cutting ants (Burd et al., 2002), wood ants (H\u00f6nicke et al., 2015) and mass raiding ants (John et al., 2009) were relatively low: 0.8 ants.cm\u22122 (occupancy 0.20), 0.6 ants.cm\u22122 (0.13) and 0.3 ants.cm\u22122 (0.10) and not sufficiently high to generate a traffic jam as ants never exceeded the capacity of the trail,\u00a0that\u00a0is the maximum value of the flow allowed by the trail width.\n\nHere, we investigated if ants succeed in maintaining a smooth traffic flow and avoid traffic congestion under the widest possible range of densities. We used the European supercolony of Argentine ants Linepithema humile, which is a major pest around the world and the largest recorded society of multicellular organisms (Giraud et al., 2002). In our experiment, a colony was connected to a food source using a bridge (Figure 1B). To manipulate density, we used a combination of bridges of different widths (5, 10 and 20 mm) and experimental colonies of different sizes (from 400 to 25,600 ants). We conducted a total of 170 experiments. The flow q and the density k were recorded on each experiment every second for one hour giving us 612,000 flow/density (non-independent) observations pairs. We succeeded in generating large variations of density (from 0 to 18 ants.cm\u22122) and occupancy (from 0 to 0.8).\n\n## Results\n\nBefore pooling the data of all the 170 experiments to analyze the fundamental diagrams, we assessed the reliability of our experimental protocol with regard to foraging behavior. First, we verified that feeding behavior was not affected by the number of ants reaching the food (Figure 1\u2014figure supplement 1). Most ants ate once at the food source, precluding the existence of a negative feedback caused by crowding at the feeding site that could affect food exploitation and recruitment behavior (Gr\u00fcter et al., 2012). Second, we controlled that the bridge width itself did not affect ant speed. In absence of interactions and when ants were traveling alone, their speed was similar regardless of the bridge width (Figure 1\u2014figure supplement 2).\n\n### Macroscopic traffic dynamics in ants\n\nWe first studied ant traffic at a macroscopic level. The flow of ants q heading in both directions was plotted as a function of density in Figure 2A. The flow q increased with the density k to a certain point and then it remained constant. We analyzed the relationship between k and q using three different macroscopic traffic functions (Greenshields et al., 1935; Pipes, 1953; Underwood, 1960) (Figure 2B). All the parameters of the functions were fitted using a nonlinear least squares fit procedure (Figure 2B, Supplementary file 1). All the statistical models performed similarly well but failed at predicting the data at intermediate and large densities. Thus, based on experimental data, we introduced a two-phase flow function to describe the relationship q-k as a piecewise linear function, with first a linear increase of the flow, followed by a constant value when the jamming density was reached.\n\n$$\nTwo\u2212phaseflowfunction:q(k)=k\u22c5vifk\\leqk_{j}andq(k)=k_{j}\u22c5v=q_{j}ifk>k_{j}\n$$\n\n![Figure 2.](https://cdn.elifesciences.org/articles/48945/elife-48945-fig2-v1.jpg)\n\n**Figure 2.:** (A) Density flow relationship. Both the density and the flow were measured over a time interval of one second and each point in the diagram corresponds to one data point (N\u00a0=\u00a0612000 in total, N\u00a0=\u00a010303 for k\u00a0>\u00a08). Black dots indicate the mean and bars are standard deviations. (B) Non-linear fitting of the fundamental diagrams for the four functions tested (see\u00a0Supplementary file 1). White dots represent the experimental mean flow and the gray region its standard deviation. (C) Illustration of a two phase flow diagram. At low density, the flow increases linearly with the density, whereas at large density the flow saturates and remains constant. Phase 1 (k\u00a0<\u00a08): q increases linearly with k, ants move freely. Phase 2 (k\u00a0>\u00a08): q stops increasing with k, but does not decay.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/48945/elife-48945-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Unlike the Figure 2B, no weights have been used to estimate the parameters of the four functions (see table S2). Only the two-phase flow function was able to capture the behavior for large density k when the flow reached a plateau for k\u00a0>\u00a08 ant.cm-2. White dots represent the experimental mean flow and the gray region its standard deviation.\n\nThen, we conducted a model selection analysis using Akaike weights to assign conditional probabilities to all statistical models. Thanks to our large dataset, the result was unequivocal: the two-phase statistical model was selected (Figure 2C, Figure 2\u2014figure supplement 1, Supplementary file 1).\n\nWhy did the ants not jam or clog, as one would expect in usual traffic situations? This could result from a spatiotemporal organization of the flow at high density (Fourcassi\u00e9 et al., 2010). The traffic is considered as spatially organized when the flows of inbound and outbound ants are not completely intermingled and lane segregation occurs (Couzin and Franks, 2003; Fourcassi\u00e9 et al., 2010). Temporal organization arises when oscillatory changes in the flow direction are observed and the traffic becomes intermittently unidirectional that\u00a0is alternating clusters of inbound and outbound ants occurs (Fourcassi\u00e9 et al., 2010). Both type of organizations limits the rate of time-consuming contacts (collisions) and allows ants to maintain a smooth traffic (Fourcassi\u00e9 et al., 2010). However, in our experiments, no clear evidence of such organizations was observed. In contrast, when ant density reached a critical threshold, inbound and outbound flows became intermingled temporally (Figure 3\u2014figure supplement 1) and spatially (Figure 3A, Figure 3\u2014figure supplement 2, Video 1 and Video 2). In addition, contrary to pedestrian traffic (Helbing et al., 2005; Moussa\u00efd et al., 2011), the relationship between density k and flow q was only marginally influenced by the degree of asymmetry in the flows (Figure 3B, Figure 3\u2014figure supplement 3). Simply put, it did not increase faster with the density k when traffic was mostly unidirectional (i.e. proportion of outbound flow qo close to 1 or 0, traffic considered as asymmetric) than when it was entirely bidirectional (i.e. proportion of outbound flow qo close to 0.5, traffic considered as symmetric). This is illustrated in Figure 3B by the tendency for the isoclines to run parallel to the y-axis (Figure 3B). Therefore, we focused our next analyses on individual behavior to understand how ants maintained a constant flow despite the increasing density.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/48945/elife-48945-fig3-v1.jpg)\n\n**Figure 3.:** (A) Illustration of the ants\u2019 spatial distribution on the 10 mm and 5 mm bridge. Colored dots correspond to travel direction.\u00a0(B) Flow q (color scale) as a function of density k (x-axis) and asymmetry in the flows (y-axis). Traffic asymmetry was computed as the number of ants going to the food source per second (outbound flow) divided by the total number of ants traveling on the bridge (total flow q). When the proportion of outbound flow is 1 or 0 the traffic is unidirectional that\u00a0is\u00a0asymmetric, while if it is close to 0.5 the traffic is bidirectional that\u00a0is symmetric. Red indicates the highest values for q on the response surface, with values descending to lowest values in dark blue regions. Response surfaces were visualized using non-parametric thin-plate splines, which were fitted using the fields package (Furrer et al., 2009) in the statistical software R version 3.5.0. The response surface regression analyses yielded significant relationships as follows: R2\u00a0=\u00a00.82, p<0.001. The density is the main parameter affecting the flow while traffic asymmetry has only a marginal effect. Main effects: standardized beta \u03b2density\u00a0=\u00a00.980, \u03b2density2\u00a0=\u00a0\u20130.126; Marginal effects: \u03b2Asymmetry2\u00a0=\u00a0\u20130.040, \u03b2Asymmetry\u00a0=\u00a00.026 and \u03b2Density*Asymmetry =\u00a00.02. Flow isoclines run parallel to the Y-axis indicating that the flow depends mainly on density and is independent of traffic asymmetry.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/48945/elife-48945-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** For all experiments, we noted the travel direction for all successive ants crossing a line drawn on the middle (+1 for inbound ants, \u22121 for outbound ants). A group is defined as a succession of ant belonging to the same category (+1 or \u20131) and is delimited at both ends by ant belonging to the other category. The mean group size gives an indication of whether or not the sequence is random or if we can observe the formation of alternating groups of ants traveling in opposite direction. The mean group size (=2) obtained with a random sequence of ants generated on the basis of an equal probability of occurrence of nestbound and outbound ants is also represented as red line. Mean group sizes greater than two suggests the formation of alternating groups of inbound and outbound ants (sequence +1+1+1 \u22121-1-1 +1+1+1+1\u2026) that\u00a0is a temporal desynchronization of inbound and outbound traffic. Mean group size\u00a0<<2 indicates that the outbound flow and the inbound flow are entirely intermingled (sequence +1\u20131+1\u20131+1\u20131+1\u20131+1\u2026). N\u00a0=\u00a0621,613 groups from 170 Experiments in total. Error bars are CI95.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/48945/elife-48945-fig3-figsupp2-v1.jpg)\n\n**Figure 3\u2014figure supplement 2.:** For a subset of experiments (N\u00a0=\u00a012) characterized by a high traffic, we noted the travel direction for all ants crossing a line drawn on the middle (+one for inbound ants, \u22121 for outbound ants) and their y-position on this line for 240 consecutive seconds (using ImageJ). The measurements began 10\u00b7min after the beginning of the experiment, when the outbound and nestbound flows of ants were at equilibrium.\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/48945/elife-48945-fig3-figsupp3-v1.jpg)\n\n**Figure 3\u2014figure supplement 3.:** Traffic asymmetry was computed as the number of ants going to the food source per second (outbound flow) divided by the total number of ants traveling on the bridge (total flow q). When the proportion of outbound flow is 1 or 0 the traffic is unidirectional that\u00a0is asymmetric while if it is close to 0.5 the traffic is bidirectional that\u00a0is symmetric. Error bars are standard deviation and black dot represent the mean flow.\n\n![Video 1.](https://cdn.elifesciences.org/articles/48945/elife-48945-video1.mp4.jpg)\n\n**Video 1.:** The video shows ants traveling between their nest and a food source 10\u00b7min after the beginning of the experiment, when the outbound and nestbound flows of ants were at equilibrium.\n\n![Video 2.](https://cdn.elifesciences.org/articles/48945/elife-48945-video2.mp4.jpg)\n\n**Video 2.:** The video shows ants traveling between their nest and a food source 10\u00b7min after the beginning of the experiment, when the outbound and nestbound flows of ants were at equilibrium.\n\n### Microscopic traffic dynamics in ants\n\nFrom an individual behavior perspective, most traffic-flow functions (Greenshields et al., 1935; Pipes, 1953; Underwood, 1960) suggest that individual speed decreases non-linearly with the density due to friction between individuals. However, the two-phase flow traffic function suggested that there was no evidence of such friction between ants when the density was below eight ants.cm\u22122\u00a0that\u00a0is the flow increased linearly, whereas above eight ants.cm\u22122 frictions appeared but increased only linearly with the density that\u00a0is the flow remained constant over a wide range of densities. How can we quantify such friction at the individual level?\n\nA key factor determining ant speed is the number of contacts (i.e. collisions) experienced with nestmates, which makes ants stop and thus decays their overall speed (Burd and Aranwela, 2003; Dussutour et al., 2005; Gravish et al., 2015; Wang et al., 2018). To test if the number of contacts played the role of a hidden variable linking density and speed, we measured the number of contacts C, the density k and the traveling time T for a sample of 7900 ants individually tracked on a 2 cm section of the bridge. As density k grew, the number of contacts C increased linearly (C\u00a0=\u00a00. 61 k Figure 4A) that\u00a0is the larger the density, the higher the number of contacts. We observed a linear effect of the number of contacts C on traveling time T, that\u00a0is each contact slowed down the ants. (T\u00a0=\u00a0T0 + C \u00b7 \u2206T with T0\u00a0=\u00a00.95 s and \u2206T\u00a0=\u00a00.24 s, Figure 4B). T0 can be interpreted as the traveling time to cross the bridge without contacts (free flow traveling time), whereas \u2206T is the time lost per contact.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/48945/elife-48945-fig4-v1.jpg)\n\n**Figure 4.:** (A) Number of contacts C an ant incurred during the crossing of the bridge depending on the density k. C increased linearly with k (C\u00a0=\u00a00.61\u00b7k, R2\u00a0=\u00a00.77). (B) Individual traveling time T as a function of the number of contacts C. T increased linearly with C (T\u00a0=\u00a0T0 + C \u00b7 \u2206T with free traveling time T0\u00a0=\u00a00.95 s and time incurred by contact \u2206T\u00a0=\u00a00.24 s, R2\u00a0=\u00a00.55). We measured C along with k and the traveling time T for a sample of 7900 ants individually tracked on a 2 cm section at the center of the bridge (98 to 364 ants followed for each direction, each experimental group size and each bridge width). Data were collected 10\u00b7min after the beginning of the experiment, when the outbound and nestbound flows of ants were at equilibrium. Data were issued from 42 experiments in total. White dots represent average. Error bars are standard deviations.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/48945/elife-48945-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Collisions obtained from the tracking of 5724 ants traveling a 2 cm section in the middle of the bridge in both directions. Data were issued from 38 experiments; one or two experiments for each experimental colony size and each bridge width. (glmm p=0.61, X2\u00a0=\u00a00.25, random factors: experiment and individual).\n\nSo far, density k only had a negative impact on the speed v: it increased the number of contacts C which in return increased traveling time T. However, in our two-phase diagram, density k had no or minor effect on speed v in the phase 1. Therefore, there had to be a positive effect of density k on speed v in this regime. Thus, the interplay between T, k and C had to be more subtle. To combine multiple effects, we estimated the expected traveling time T depending on both density k and number of contacts C. For a given number of contacts C, we visualized the average traveling time T (see Figure 5A) for various values of density k, using local regression fitting. The vertical distance between two neighbors\u2019 curves was given by \u2206T. As expected, traveling time T increased with the number of contacts C, but the key information is that density k actually made traveling time T decay initially (up to k \u2248 5). For a given number of contacts C, ants moved faster on the bridge at intermediate density k (i.e. k \u2248 5). To further visualize this positive effect of the density, we estimated the free flow speed vf,\u00a0that\u00a0is speed without contact vf\u00a0= L/(T-C\u00b7\u0394T), where L=2cm is the length of the recording section on the bridge (Figure 5B). vf is first increasing with density k up to k\u22485 ants.cm\u22122 and then decays back to its initial value. This phenomenon might be explained by a pheromone effect. It is well known that Argentine ants deposit pheromones both when leaving and when returning to the nest and travel faster on a well-marked trail (Deneubourg et al., 1990).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/48945/elife-48945-fig5-v1.jpg)\n\n**Figure 5.:** (A) Traveling time T depending on the density k for a given number of contacts C. Higher C induced longer T and T decreased until k reached 6.\u00a0(B) Free flow velocity vf as a function of density. Free flow velocity is computed as the distance (L) divided by free traveling time T0 (traveling time without contact)\u00a0that\u00a0is\u00a0vf\u00a0=\u00a0L/(T0) where L (2 cm) is the length of the monitoring section on the bridge. Hence, vf\u00a0=\u00a0L/(T-C\u00b7\u0394T) as T0\u00a0=\u00a0T C \u00b7 \u2206T (Figure 4B) where T is the individual traveling time, C is the number of contacts and \u0394T (0.24 s) is the time incurred by contact. Data were collected for a sample of 7900 ants individually tracked on a 2 cm section (L) at the center of the bridge (98 to 364 ants followed for each direction, each experimental group size and each bridge width). Data were collected 10 min after the beginning of the experiment, when the outbound and nestbound flows of ants were at equilibrium. Data were issued from 42 experiments in total. Each curve was obtained by local regression fitting with R command loess.\n\nTo incorporate both effects of the density, we proposed the following formula for the speed:\n\n$$\nvk=\\frac{L}{T_{0}+\u0394T\u22c5Ck}\u22c5\\alpha+\\beta\u22c5k\u22c5e^{-\\gamma\u22c5k}\n$$\n\nwhere C(k)=0.61\u00b7k is the average number of collisions, the three other parameters \u03b1, \u03b2 and \u03b3 model the pheromone effect: \u03b1 corresponds to the intrinsic attractiveness of the unmarked bridge, \u03b2 represents the positive effect of k and \u03b3 measures the range where the pheromone effect might occur. These three parameters were estimated using a non-linear regression algorithm (\u03b1=0.812\u00a0\u00b1\u00a0.009, \u03b2=0.160\u00a0\u00b1\u00a0.010, \u03b3=0.156\u00a0\u00b1\u00a0.007). We observed a decay of the speed v when k increased (Figure 6A). From this estimation of the speed, we deduced the following formula for the flow:\n\n$$\nqk=k\u22c5vk\n$$\n\nWe plotted in Figure 6B the predicted flow q and the experimental observations of the sub-sample dataset (N\u00a0=\u00a07900 observations) used for the estimation. We noticed a clear agreement between the data and the model predictions. The plateau reached was q \u2248 10 ants.cm\u22121.s\u22121. Thus, even though increasing density k generated more contacts impacting negatively the flow q through their effect on traveling time T, when k\u00a0<\u00a05 ant.cm\u22122 ants moved faster, which positively impacted the flow q. These two effects counterbalanced, leading to a linear increase of the flow q with density k (phase 1). For k\u00a0>\u00a08 ants.cm\u22122, despite the crowdedness of the trail, ants maintained a constant flow q. The speed v(k) continued to decay due to the increase of contacts, but this negative effect on the flow q(k) was offset by the increase of k. We recovered this phenomenon from our model by estimating the limit flow q as the density k increases:\n\n$$\nlimk\u2192\u221e\u2061qk=\\frac{L}{\u0394T\u22c50.61}\u22c5\\alpha\u224811.09\n$$\n\nIn other words, the flow in Figure 6B would merely increase for larger values of density k. However, experimentally the flow would have to decay eventually as the ant occupancy on the bridge cannot increase indefinitely. Given that the unoccupied portion of the bridge decayed with the density, it is remarkable that the number of contacts increased only linearly with the density according to Figure 4A (or one could argue even sub-linearly for k\u00a0>\u00a010 ants.cm\u22122). Interestingly, we also observed that ants restrained themselves from leaving the nest to prevent overcrowding as k never exceeded 18 ant.cm\u22122 even though we increased colony size and reduced bridge width (number of ants entering the bridge for the largest colonies\u00a0\u00b1\u00a0CI95: 2.69\u00a0\u00b1\u00a00.04, 4.34\u00a0\u00b1\u00a00.03 and 5.05\u00a0\u00b1\u00a00.03 ants.sec\u22121 for the 5, 10 and 20 mm bridges). Furthermore, U-turns were seldom once the ants were traveling on the bridge (probability of turning back once on the bridge\u00a0=\u00a00.01).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/48945/elife-48945-fig6-v1.jpg)\n\n**Figure 6.:** (A) Estimation of the speed v as a function of the density k. We combined positive and negative effects of the density k on v using Equation (2). Parameter estimation was done using non-linear regression method (R command nls). (B) Predicted flow q as a function of the density k using Figure 4 and Equation (3). We observed a linear growth of q (for k\u00a0<\u00a05\u20136), followed by a plateau (for k\u00a0>\u00a08). Experimental data correspond to the observations of a sub-sample dataset (7900 observations) from the full data set (612000 observations; Figure 2A) used to quantify the individual behavior. The gray shaded region represents the standard deviations. White dots are average computed from experimental data (N\u00a0=\u00a07,900). Data were collected 10 min after the beginning of the experiment, when the outbound and nestbound flows of ants were at equilibrium.\n\n## Discussion\n\nTraffic jams are ubiquitous in human society where individuals are pursuing their own personal objective (Youn et al., 2008). In contrast, ants share a common goal: the survival of the colony, thus they are expected to act cooperatively to optimize food return. In pedestrian and car traffic (Banks, 1999; Helbing et al., 2005), at occupancy levels above 0.4 the flow starts to decline, while in ants, the flow showed no sign of declining even when occupancy reached 0.8. Here, by investigating traffic dynamics on a large range of densities, we demonstrated that ants seem to be immune to traffic congestion.\n\nThe traffic of pedestrians or vehicles is often ruled by external constraints (enforced rules), time consuming interactions (avoidance behavior) and negative feedbacks (jamming). In contrast, in ants, traffic is governed by positive feed-backs (trail following and reinforcement) and interactions which are time consuming but often beneficial for the colony as they promotes information transfer (Bouchebti et al., 2015; Burd and Aranwela, 2003; Farji-Brener et al., 2010; Fourcassi\u00e9 et al., 2010; Gordon, 2019). Nonetheless, time spent interacting with other ants has strong consequences on traffic dynamics (Gravish et al., 2015). Short interaction time allows a smooth traffic over a wide range of densities whereas long interaction time promotes rapid slowing of traffic (Gravish et al., 2015). In fire ants, Gravish et al. (2015) found that interaction time was relatively short (0.45 s) and that the flow was relatively unaffected by density up to a certain critical value beyond which they observed the formation of traffic jams (Gravish et al., 2015). Here, we found that Argentine ants have an interaction time approximately twice shorter than fire ants, which could explain why we observed a smooth and efficient mixing of opposite flows over a broader range of densities.\n\nThe exact nature of the mechanisms used by Argentine ants to keep the traffic flowing in this study remains elusive, yet when density on the trail increases, ants seemed to be able to assess crowding locally, and adjusted their speed accordingly to avoid any interruption of traffic flow. Moreover, ants restrained themselves from entering a crowded path and ensured that the capacity of the bridge was never exceeded that\u00a0is the maximum value of the flow allowed by the bridge width. Traffic regulation on trails ultimately allows Argentine ants to maintain a high rate of food return to the nest, an essential asset in the context of food competition occurring in natural environments. This balance between positive feedback and negative feedback appears to be generic in ants. For instance, in the nest-building context, behaviors such as \u2018individual idleness and retreating\u2019 at overcrowded digging sites supports an optimal accessibility of space facilitating excavation during nest construction in fire ants (Aguilar et al., 2018). Similarly, carpenter ants placed under threat and forced to escape through a narrow door distribute themselves uniformly over the space available instead of rushing toward the door and trampling on others (Parisi et al., 2015). As a result, contrary to humans (Helbing et al., 2000), they avoid clogging and evacuate efficiently (Parisi et al., 2015). Lastly, in garden ants, the interplay between trail following behavior and collisions allows ants to cope with bottleneck situations (Dussutour et al., 2006; Dussutour et al., 2005; Dussutour et al., 2004).\n\nOverall, our results extend previous research on ant traffic organization (Aguilar et al., 2018; Burd et al., 2002; Fourcassi\u00e9 et al., 2010; Gravish et al., 2015; H\u00f6nicke et al., 2015; John et al., 2009) and show that ant prevented traffic jams from occurring and behaved as a self-organized biological adaptive system (Camazine et al., 2003; Hemelrijk, 2005). Similar phenomena of self-regulation ought to be found in other complex systems such as migrating animals (Buhl et al., 2006), cell machinery (Leduc et al., 2012), swarm of robots (Aguilar et al., 2018) and data traffic (Valverde and Sol\u00e9, 2004) and could provide inspiration in all disciplines, ranging from molecular biology to automotive engineering. Although comparing ant traffic to human traffic might be a delicate task, as traffic in humans is neatly separated into unidirectional roadways, the rise of autonomous vehicles paves the way for new strategies to optimize traffic flow.\n\n## Materials and methods\n\n### Biological model\n\nWe used the Argentine ant Linepithema humile, an invasive species that uses mass recruitment through pheromone trails to exploit abundant food sources. Argentine ants have multiple queens and form supercolonies. Established supercolonies can contain up to 108 workers (Giraud et al., 2002). Usually, foraging in Argentine ants is associated with high traffic between the nest and the food source in order to provide food for the whole colony. These ants are monomorphic (2.5 mm long). The ants were collected in Toulouse (France).\n\n### Experimental design\n\n#### Colonies\n\nAnts were subdivided into 35 experimental colonies of different sizes by weighing the ants: 400, 800, 1600, 3200, 6400, 12800 and 25600 ants. A few thousands workers were kept into \u2018stock colonies\u2019 in order to maintain a stable number of ants in the experimental colonies throughout the duration of the experiment. The experimental colonies were installed in test tube nests placed in a rearing box (L x W x H: 25 \u00d7 10\u00d79 cm for the small colony sizes 400, 800, 1600 and 3200 ants and 29 \u00d7 27.5\u00d79 cm for the larger colony sizes 6400, 12800 and 25600) with walls coated with Fluon to prevent ants from escaping. The experimental colonies were kept at room temperature (25 \u00b1 1\u00b0C) with a 12:12 L:D photoperiod. We supplied each experimental colony with water and a mixed diet of vitamin-enriched food twice a week (Dussutour and Simpson, 2008). Before each experiment, the experimental colonies were starved for five days, and the experiment started when the ants were given access to a food source placed on a platform (120 \u00d7 120 mm for small colonies - up to 3200, or 230 \u00d7 230 mm for the larger colonies) at the other end of a plastic bridge. The total length of the bridge was 170 mm and the bridge width was either 5 mm (narrow bridge), 10 mm (medium bridge) or 20 mm (large bridge). The food consisted of a 1M sucrose solution contained in small grooves (100 mm long for small colonies and 185 mm for large colonies) carved in a block of Plexiglas. To prevent crowding effects at the food source, the grooves were numerous enough (nine for small colonies, and 16 for large colonies) to give food access to a very large number of ants. The whole experimental set-up was isolated from any sources of disturbance by surrounding it with white paper walls. Throughout the experiments the traffic on the bridge was filmed from above for 60 min starting as soon as the first ant crossed the middle of the bridge. The number of replicates for each bridge width and each colony size ranged between 4 and 10 leading to a total of 170 experiments. Replicates on the same experimental colony were run at three weeks intervals. The temperature of the experimental room was 25\u00b0C.\n\n### Data collection \u2013 Collective level\n\n#### Flow q\n\nThe flow represents the number of ants crossing a line per unit of time. The ant flow on the bridge was counted over a 1\u00b7sec period during 1\u00b7h for all the experiments. Counting began as soon as the first ant crossed a line drawn in the middle of the bridge. Ants seldom climbed on top of each other that\u00a0is the flow remained two-dimensional in all experiments.\n\n#### Density K\n\nThe density represents the number of ants per unit of surface. The number of ants over a one cm2 section encompassing the line drawn in the middle of the bridge was measured with ImageJ using the Analyze/Analyze Particles command, every half a second for one hour. Images were converted in binary images. Ants appeared black while the bridge appeared white. When the ant density was too high for the Analyze Particles command to discriminate the ants from one another, we divided the total area covered by black pixels by the mean area of a single ant. The mean area covered by a single ant on the bridge was measured on a total of 60 isolated ants on 10 experiments picked randomly. Ants covered on average 3.5 mm2 excluding legs and antennae and 4.4 mm2 with legs and antennae. For high densities (k\u00a0>\u00a08) we also analyzed visually a sample of 5000 pictures (i.e. by counting each ant) and compared it with automatically analyzed pictures. We found a good agreement although automatic analysis had a slight tendency to underestimate densities but only when density was higher than six ant.cm\u22122 (difference between manual and automatic \u22120.36 ant.cm\u22122+\u00a0/-\u00a0IC95 0.02).\n\n#### Occupancy\n\nFor the sake of a comparison, we estimated occupancy (fraction of area covered by ants) obtained in previous studies (Burd et al., 2002; Gravish et al., 2015; H\u00f6nicke et al., 2015; John et al., 2009) based on density and ant size. We approximated the surface of an ant to a rectangle (body length x head width) and multiplied this area by 1.25 (ratio found in our experiment when dividing the area without legs and antennas by the area with legs and antennas) to include legs and antenna. We found that one ant cover a surface of 25 mm2 in leaf-cutting ants (ant size: 8\u201312 mm, head width: 1.4\u20132.6 mm; Burd et al., 2002; Nichols-Orians and Schultz, 1989), 4.8 mm2 in fire ants (ant size: 2.6\u20136.1 mm, mean 3.8 mm; head width: 0.6\u20131.4 mm; Tschinkel, 2013; Tschinkel et al., 2003), 22.25 mm2 in wood ants (ant size: 7.7 mm, head width 2.3 mm; H\u00f6nicke et al., 2015), and 33.75 mm2 in mass raiding ants (ant size: 18 mm, head width: 1.5 mm; John et al., 2009) giving us occupancy level of 0.20, 0.48, 0.13 and 0.10 corresponding to the densities: 0.8 ants.cm\u22122, 10 ants.cm\u22122, 0.6 ants.cm\u22122 and 0.3 ants.cm\u22122 respectively.\n\n### Data collection \u2013 Individual level\n\n#### Experimental design assessment\n\nTo ensure that ants did not experience overcrowding at the food source which could affect the recruitment dynamic (Gr\u00fcter et al., 2012), we measured the probability of feeding when an ant reached the food. In other words, we recorded if the ants fed before leaving the platform to return to the nest. This was done by following 4200 ants arriving at the food source (100 ants for two replicates for each experimental colony size and each bridge width).\n\nTo check that the ant traveling time was not affected by the experimental set-ups (i.e. the bridge width itself), we followed a total of 2133 ants that did not experience any collision while traveling on the bridge (706, 693 and 734 ants followed for the 5 mm, 10 mm and 20 mm bridges respectively on 34 different experiments; Figure 1\u2014figure supplement 2).\n\n#### Traveling time T and number of contacts C\n\nAll individual behaviors were observed on a 20 mm section at the center of the bridge. The measurements began 10\u00b7min after the beginning of the experiment, when the outbound and nestbound flows of ants were at equilibrium. To test if the density affected the traveling time on the bridge, we recorded the travel duration T and the number of physical contacts C incurred while traveling. A contact was the result of either a head-on collision or a rear-end collision (when the head of an ant enters in contact with the gaster of the ant preceding it). Once the ant followed had crossed the 20 mm section of the bridge, we followed the next ant entering the section and so on. We followed 98 to 364 ants for each direction, each experimental group size and each bridge width, leading to total number of 7980 ants, of which 80 made a U-turn. Data were issued from 38 experiments in total. Head-on collisions and rear-on collisions were pooled together, as the time lost in each physical contact did not differ significantly (Figure 4\u2014figure supplement 1). A physical contact lasted between 0.1 and 3.2\u00b7s (mean\u00a0\u00b1\u00a0SD 0.18\u00a0\u00b1\u00a00.14 s). Automatic tracking was impossible due to high ant density, so all data were recorded semi-manually by two different persons using a homemade software AntEthoc-Combe-CRCA-CNRS (available upon request). We pressed various keys on a keyboard when an ant 1) entered or left the observation zone, 2) contacted another ant and 3) made a U-turn. Thus for each ant followed, the software gave us the travel time and the number of contacts.\n\n### Statistical analysis\n\nAll the statistical analysis were done using R version R 3.5.0 (Crawley, 2012). All the parameters of the fundamental diagrams were fitted using a nonlinear least squares fit procedure (command nls; Baty et al., 2015). This procedure used Gauss-Newton algorithm to find the parameters that minimize the mean square error between the experimental data and the model prediction. The results of the estimations for the four functions are given in Supplementary file 1. A model selection using the Akaike weights (AW) has been conducted to assign a conditional probability for each statistical model. Source codes are available (Poissonnier et al., 2019).\n\n### Data and materials availability\n\nData are available from the Dryad Digital Repository: https://doi.org/10.5061/dryad.8q58jg3 (Poissonnier et al., 2019).\n",
+      "created_at": "2025-12-02T12:54:26.839586Z"
+    },
+    {
+      "id": "cc597eab-19d7-4912-85b7-f35a1e308231",
+      "submission_id": "dec5207d-b0c3-4c3a-b890-9d0ed7927308",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- David Donoso, Escuela Polit\u00e9cnica Nacional Ecuador\n\nReviewers:\n- Daniel I Goldman, Georgia Institute of Technology United States\n\n## Review text\n\nDOI: [10.7554/eLife.48945.023](https://doi.org/10.7554/eLife.48945.023)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Still flowing, experimental investigation of ant traffic under crowded conditions\" for consideration by eLife. Your article has been reviewed by three peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation has been overseen by Andrew King as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Daniel Goldman (Reviewer #3).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nThis is a nice manuscript looking at how crowding affects ant traffic, based on experimental results for self-organization of traffic in foraging Argentine ant colonies. In this study, the authors collected video recordings of the bidirectional movement of ants on a bridge connecting the nest to a foraging area. Varying the colony size and the bridge width, they collected data on speed, flow, and contacts between ants for a large range of densities. On the basis of these data, the authors proposed a model to explain ant traffic, with good agreement between the model and the data.\n\nEssential revisions:\n\n1) One of the reviewers found that part of the presentation of the model is not sufficiently clear and had the following comments.\n\n* The parameters of Equation 2 need further explanation. It is not clear which type of mechanism is intended to be included with the parameter \u03b1 and what effects \u03b1 has on the model. In general, the second term of Equation 2 looks over complicated and some further justification for these parameters would be helpful (as for example Equation 2 could be reduced to Exp[-k*0.08]*2.1).\n\n* \"We observed a small decay of the speed v up to k = 5 followed by a more drastic decay (Figure 6A)\". I do not agree with this statement, as it actually seems that the effect of density is lower for large k (than for small k).\n\n* \"Ants might have actively avoided meeting new nestmate as the bridge became crowded\". How does this relate to the decay in speed? Active ant avoidance could be a cost that requires moving at a slower speed. Could you comment on this?\n\n* Figure 3 is very unclear. The authors should use the parameters and metrics settings consistently, e.g., density is named k and not d. These letters should be also included on the plot axes and legend. The vertical axis quantity is not clear and the caption should be rephrased to help the reader to understand the figure.\n\n* It seems that Figure 4A is also a two-phase function (similar to Figure 2A) for k > 10.\n\n* What do the white dots in Figure 4 represent? Average and std. deviation? Please include this information in the caption.\n\n* Figure 5B \u2013 how has the reported quantity been computed? Please explain.\n\n* Caption of Figure 5B \u2013 it is not clear what this means: \"vf = L/(T0) i.e. L/(T-C \u0394T)\".\n\n* I expected that the data points of Figure 2A and 6B would be the same but they look different. Why?\n\n2) The reviewers believe the paper is missing citations to relevant work which should be commented on (and compared with) on bidirectional flow in ants. For example, take a look at Gravish et al., 2015, for an analogous study in which fire ants trafficked (foraged) in confined (tunnel tubes, models of subterranean foraging networks) environments and a glass-like picture was proposed. Look in the SI for fundamental diagram plots. A major point in that paper is similar to that in the paper under consideration, namely how ants can modulate interaction times (antennation) to avoid clogging. For that matter, many of the conclusions regarding ants in their reference (Aguilar et al., 2018) also discuss how bidirectional trafficking ants can mitigate clogging and maintain their density at the peak of the fundamental diagram (and help avoid dropping of flow rate). The authors should also review Parisi, Soria and Josens, 2014, in which ants must escape from exits and do so without clogging and dropping flow.\n\n3) The reviewers do not think your model should be referred to as a two-phase \"model\" \u2013 the equations for q(v) should be thought of as fitting functions, while the CA \"models\" in some of the papers the authors cite (and those they should, see above) are models in that a system or scheme is presented and then integrated, calculated, etc. to make predictions. This point should be addressed.\n",
+      "created_at": "2025-12-02T12:54:26.839586Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T12:54:26.839586Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T12:54:26.839586Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "7aa1ad13-cd53-4c50-99c8-b0842db3069a",
+      "content_id": "1854091c-a2b4-432a-bac2-e5e811eafdbd",
+      "claim_id": "C1",
+      "claim": "Efficient transportation is crucial for urban mobility, cell function and the survival of animal groups.",
+      "claim_type": "EXPLICIT",
+      "source": "Efficient transportation is crucial for urban mobility, cell function and the survival of animal groups.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement drawing from established scientific understanding about the importance of transportation in various systems.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:54:26.839586Z"
+    },
+    {
+      "id": "581ff070-55b8-46e2-808f-528f9440cbd7",
+      "content_id": "1854091c-a2b4-432a-bac2-e5e811eafdbd",
+      "claim_id": "C2",
+      "claim": "Ants avoid the formation of traffic jams at high density despite their behavioral simplicity.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we show that ants, despite their behavioral simplicity, have managed the tour de force of avoiding the formation of traffic jams at high density.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data presented in the manuscript showing flow remains constant at high densities.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:54:26.839586Z"
+    },
+    {
+      "id": "f0b07963-97c1-4357-b92d-eb2c61e70bf5",
+      "content_id": "1854091c-a2b4-432a-bac2-e5e811eafdbd",
+      "claim_id": "C3",
+      "claim": "At low densities there is a clear linear relationship between ant density and the flow.",
+      "claim_type": "EXPLICIT",
+      "source": "At low densities there is a clear linear relationship between ant density and the flow, while at large density, the flow remains constant and no congestion occurs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2 and the two-phase flow model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:54:26.839586Z"
+    },
+    {
+      "id": "6f9e4716-c905-4eb8-8c32-042f196b0ca9",
+      "content_id": "1854091c-a2b4-432a-bac2-e5e811eafdbd",
+      "claim_id": "C4",
+      "claim": "At large density, the flow remains constant and no congestion occurs.",
+      "claim_type": "EXPLICIT",
+      "source": "At low densities there is a clear linear relationship between ant density and the flow, while at large density, the flow remains constant and no congestion occurs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2 demonstrating a plateau in flow at high densities.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:54:26.839586Z"
+    },
+    {
+      "id": "6ef37950-015d-4c4f-ba82-56c11e12eeab",
+      "content_id": "1854091c-a2b4-432a-bac2-e5e811eafdbd",
+      "claim_id": "C5",
+      "claim": "Ants adjust their speed at large densities.",
+      "claim_type": "EXPLICIT",
+      "source": "From a microscopic perspective, the individual tracking of ants under varying densities revealed that ants adjust their speed and avoid time consuming interactions at large densities.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by individual tracking data showing speed changes with density (Figure 6A).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:54:26.839586Z"
+    },
+    {
+      "id": "e844d122-2951-4125-8b83-fd80b6105949",
+      "content_id": "1854091c-a2b4-432a-bac2-e5e811eafdbd",
+      "claim_id": "C6",
+      "claim": "Ants avoid time consuming interactions at large densities.",
+      "claim_type": "EXPLICIT",
+      "source": "From a microscopic perspective, the individual tracking of ants under varying densities revealed that ants adjust their speed and avoid time consuming interactions at large densities.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that contact time remains short and flow remains constant despite high density.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:54:26.839586Z"
+    },
+    {
+      "id": "102d310d-e204-420e-8399-96ae7d8b1c78",
+      "content_id": "1854091c-a2b4-432a-bac2-e5e811eafdbd",
+      "claim_id": "C7",
+      "claim": "Many organisms take part in flow-like collective movements.",
+      "claim_type": "EXPLICIT",
+      "source": "Many organisms such as herds of migrating wildebeests, swarms of insects and bacteria, starling flocks, fish shoals or pedestrian crowds take part in flow-like collective movements (Ball, 2004; Berdahl et al., 2013; Berdahl et al., 2018; Buhl et al., 2006; Chowdhury et al., 2005; Fourcassi\u00e9 et al., 2010; Giardina, 2008; John et al., 2009; Moussa\u00efd et al., 2011; Sumpter, 2010; Vicsek and Zafeiris, 2012; Zhou et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:54:26.839586Z"
+    },
+    {
+      "id": "f50f155c-285a-4d06-ac35-b58a6102d4ee",
+      "content_id": "1854091c-a2b4-432a-bac2-e5e811eafdbd",
+      "claim_id": "C8",
+      "claim": "Along with humans, ants are one of the rare animals in which collective movements are bidirectional.",
+      "claim_type": "EXPLICIT",
+      "source": "Along with humans (Helbing et al., 2005; Moussa\u00efd et al., 2011), ants are one of the rare animals in which collective movements are bidirectional.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research on human and ant traffic.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:54:26.839586Z"
+    },
+    {
+      "id": "42ba4abd-4730-4b37-b058-d6a66f8789df",
+      "content_id": "1854091c-a2b4-432a-bac2-e5e811eafdbd",
+      "claim_id": "C9",
+      "claim": "Ants are central-place foragers, which entails a succession of journeys between their nest and their foraging site.",
+      "claim_type": "EXPLICIT",
+      "source": "Ants are central-place foragers, which entails a succession of journeys between their nest and their foraging site.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about ant foraging behavior.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:54:26.839586Z"
+    },
+    {
+      "id": "578fa01f-4f68-43c0-857b-eee50d4c2fc3",
+      "content_id": "1854091c-a2b4-432a-bac2-e5e811eafdbd",
+      "claim_id": "C10",
+      "claim": "When exploiting large food sources, many ant species lay chemical trails along which individuals commute back and forth.",
+      "claim_type": "EXPLICIT",
+      "source": "When exploiting large food sources, many species lay chemical trails along which individuals commute back and forth (Czaczkes et al., 2015; Gordon, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research on ant trail-laying behavior.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:54:26.839586Z"
+    },
+    {
+      "id": "b4d8a29a-9590-49e6-afcb-0cfa96e0f884",
+      "content_id": "1854091c-a2b4-432a-bac2-e5e811eafdbd",
+      "claim_id": "C11",
+      "claim": "The flow of individuals on ant trails can reach several hundred ants per minute.",
+      "claim_type": "EXPLICIT",
+      "source": "The flow of individuals on these trails can reach several hundred ants per minute (Couzin and Franks, 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:54:26.839586Z"
+    },
+    {
+      "id": "e4cf34e0-01e0-4fb3-a205-5f6aead3333e",
+      "content_id": "1854091c-a2b4-432a-bac2-e5e811eafdbd",
+      "claim_id": "C12",
+      "claim": "Ants seem to fare better than humans when it comes to traffic management.",
+      "claim_type": "EXPLICIT",
+      "source": "Yet, ants seem to fare better than us when it comes to traffic management (Burd et al., 2002; Dussutour et al., 2004; Fourcassi\u00e9 et al., 2010; H\u00f6nicke et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research on ant traffic.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:54:26.839586Z"
+    },
+    {
+      "id": "b8bc14fd-b5af-4a9e-b82b-a2e4d40eb1f8",
+      "content_id": "1854091c-a2b4-432a-bac2-e5e811eafdbd",
+      "claim_id": "C13",
+      "claim": "There is a lack of direct experimental evidence showing that ants do not get stuck in traffic jam at high density.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we lack direct experimental evidence showing that ants do not get stuck in traffic jam at high density (Burd et al., 2002; H\u00f6nicke et al., 2015; John et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations indicating gaps in previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:54:26.839586Z"
+    },
+    {
+      "id": "9b2c0c9d-9471-4c3c-9932-4b3c3486803a",
+      "content_id": "1854091c-a2b4-432a-bac2-e5e811eafdbd",
+      "claim_id": "C14",
+      "claim": "The Greenshields function was the first speed-density relation function used to analyze data recorded for vehicular traffic in the field.",
+      "claim_type": "EXPLICIT",
+      "source": "The Greenshields function (Greenshields et al., 1935) was the first speed-density relation function used to analyze data recorded for vehicular traffic in the field.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by a citation and described in Figure 1A.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:54:26.839586Z"
+    },
+    {
+      "id": "89c8f3f4-4ddf-4837-ba8c-70dc1e9008f7",
+      "content_id": "1854091c-a2b4-432a-bac2-e5e811eafdbd",
+      "claim_id": "C15",
+      "claim": "The Greenshields function assumes a linear relationship between v and k leading to a parabolic shape relation between q and k.",
+      "claim_type": "EXPLICIT",
+      "source": "This function assumes a linear relationship between v and k leading to a parabolic shape relation between q and k.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a description of the mathematical properties of the Greenshields function shown in Figure 1A.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:54:26.839586Z"
+    },
+    {
+      "id": "4c778a5e-185a-4657-acba-99738c11258b",
+      "content_id": "1854091c-a2b4-432a-bac2-e5e811eafdbd",
+      "claim_id": "C16",
+      "claim": "A total of 170 experiments were performed.",
+      "claim_type": "EXPLICIT",
+      "source": "A total of 170 experiments were performed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the experimental design.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:54:26.839586Z"
+    },
+    {
+      "id": "0d99316c-10d4-4ef5-a1d0-1847aeb35b55",
+      "content_id": "1854091c-a2b4-432a-bac2-e5e811eafdbd",
+      "claim_id": "C17",
+      "claim": "In average 94% of the ants fed once at the food source.",
+      "claim_type": "EXPLICIT",
+      "source": "In average 94% of the ants fed once at the food source.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:54:26.839586Z"
+    },
+    {
+      "id": "d6ef81ea-0b36-4960-9d08-2609f12c335a",
+      "content_id": "1854091c-a2b4-432a-bac2-e5e811eafdbd",
+      "claim_id": "C18",
+      "claim": "Bridge width does not affect ant speed when ants are traveling alone.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, we controlled that the bridge width itself did not affect ant speed. In absence of interactions and when ants were traveling alone, their speed was similar regardless of the bridge width (Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:54:26.839586Z"
+    },
+    {
+      "id": "61071500-1e92-4960-83da-3041760b3af3",
+      "content_id": "1854091c-a2b4-432a-bac2-e5e811eafdbd",
+      "claim_id": "C19",
+      "claim": "The flow q increased with the density k to a certain point and then it remained constant.",
+      "claim_type": "EXPLICIT",
+      "source": "The flow q increased with the density k to a certain point and then it remained constant.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:54:26.839586Z"
+    },
+    {
+      "id": "bf817064-42bb-4578-9ece-0a454a7a1bc2",
+      "content_id": "1854091c-a2b4-432a-bac2-e5e811eafdbd",
+      "claim_id": "C20",
+      "claim": "All the statistical models performed similarly well but failed at predicting the data at intermediate and large densities.",
+      "claim_type": "EXPLICIT",
+      "source": "All the statistical models performed similarly well but failed at predicting the data at intermediate and large densities.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the analysis of model fits shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:54:26.839586Z"
+    },
+    {
+      "id": "7ceb3e6b-9dbe-4071-ab14-2777f5efa3d8",
+      "content_id": "1854091c-a2b4-432a-bac2-e5e811eafdbd",
+      "claim_id": "C21",
+      "claim": "The two-phase statistical model was selected based on model selection analysis using Akaike weights.",
+      "claim_type": "EXPLICIT",
+      "source": "Then, we conducted a model selection analysis using Akaike weights to assign conditional probabilities to all statistical models. Thanks to our large dataset, the result was unequivocal: the two-phase statistical model was selected (Figure 2C, Figure 2\u2014figure supplement 1, Supplementary file 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by statistical analysis and shown in Figure 2C and supplementary materials.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:54:26.839586Z"
+    },
+    {
+      "id": "437d0766-e121-4269-8bbe-c615f0006912",
+      "content_id": "1854091c-a2b4-432a-bac2-e5e811eafdbd",
+      "claim_id": "C22",
+      "claim": "No clear evidence of spatiotemporal organization was observed in ant traffic at high density.",
+      "claim_type": "EXPLICIT",
+      "source": "However, in our experiments, no clear evidence of such organizations was observed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on experimental observations described in the text and shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:54:26.839586Z"
+    },
+    {
+      "id": "c78af34a-17c0-4c38-a98a-3a5f8b2570d4",
+      "content_id": "1854091c-a2b4-432a-bac2-e5e811eafdbd",
+      "claim_id": "C23",
+      "claim": "When ant density reached a critical threshold, inbound and outbound flows became intermingled temporally.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, when ant density reached a critical threshold, inbound and outbound flows became intermingled temporally (Figure 3\u2014figure supplement 1) and spatially (Figure 3A, Figure 3\u2014figure supplement 2, Video 1 and Video 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:54:26.839586Z"
+    },
+    {
+      "id": "34a03424-514a-4d60-b91f-d8cfae3cc6e3",
+      "content_id": "1854091c-a2b4-432a-bac2-e5e811eafdbd",
+      "claim_id": "C24",
+      "claim": "When ant density reached a critical threshold, inbound and outbound flows became intermingled spatially.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, when ant density reached a critical threshold, inbound and outbound flows became intermingled temporally (Figure 3\u2014figure supplement 1) and spatially (Figure 3A, Figure 3\u2014figure supplement 2, Video 1 and Video 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3A, Figure 3\u2014figure supplement 2, and videos.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:54:26.839586Z"
+    },
+    {
+      "id": "d8d94e94-7461-4cbc-ae9e-db743e5619a5",
+      "content_id": "1854091c-a2b4-432a-bac2-e5e811eafdbd",
+      "claim_id": "C25",
+      "claim": "The relationship between density k and flow q was only marginally influenced by the degree of asymmetry in the flows.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, contrary to pedestrian traffic (Helbing et al., 2005; Moussa\u00efd et al., 2011), the relationship between density k and flow q was only marginally influenced by the degree of asymmetry in the flows (Figure 3B, Figure 3\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3B and Figure 3\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:54:26.839586Z"
+    },
+    {
+      "id": "89085ffb-e6e1-487a-bf12-a889ab192df5",
+      "content_id": "1854091c-a2b4-432a-bac2-e5e811eafdbd",
+      "claim_id": "C26",
+      "claim": "As density k grew, the number of contacts C increased linearly (C = 0.61 k).",
+      "claim_type": "EXPLICIT",
+      "source": "As density k grew, the number of contacts C increased linearly (C = 0. 61 k Figure 4A) that is the larger the density, the higher the number of contacts.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4A with a linear regression.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:54:26.839586Z"
+    },
+    {
+      "id": "6e1ff957-2555-41fa-abf8-47cdd31854bd",
+      "content_id": "1854091c-a2b4-432a-bac2-e5e811eafdbd",
+      "claim_id": "C27",
+      "claim": "Each contact slowed down the ants with a linear effect on traveling time T (T = T0 + C \u00b7 \u2206T with T0 = 0.95 s and \u2206T = 0.24 s).",
+      "claim_type": "EXPLICIT",
+      "source": "We observed a linear effect of the number of contacts C on traveling time T, that is each contact slowed down the ants. (T = T0 + C \u00b7 \u2206T with T0 = 0.95 s and \u2206T = 0.24 s, Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4B with a linear regression.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:54:26.839586Z"
+    },
+    {
+      "id": "8c5b8621-622e-49bd-bd4d-2cfe58e205ae",
+      "content_id": "1854091c-a2b4-432a-bac2-e5e811eafdbd",
+      "claim_id": "C28",
+      "claim": "T0 can be interpreted as the traveling time to cross the bridge without contacts (free flow traveling time).",
+      "claim_type": "EXPLICIT",
+      "source": "T0 can be interpreted as the traveling time to cross the bridge without contacts (free flow traveling time), whereas \u2206T is the time lost per contact.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the parameter T0 from the linear regression model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:54:26.839586Z"
+    },
+    {
+      "id": "6fef1ff4-2342-48d2-aa4d-5c94902bf867",
+      "content_id": "1854091c-a2b4-432a-bac2-e5e811eafdbd",
+      "claim_id": "C29",
+      "claim": "\u2206T is the time lost per contact.",
+      "claim_type": "EXPLICIT",
+      "source": "T0 can be interpreted as the traveling time to cross the bridge without contacts (free flow traveling time), whereas \u2206T is the time lost per contact.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the parameter \u2206T from the linear regression model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:54:26.839586Z"
+    },
+    {
+      "id": "4f3337b4-4004-4536-9647-dae3f8aba797",
+      "content_id": "1854091c-a2b4-432a-bac2-e5e811eafdbd",
+      "claim_id": "C30",
+      "claim": "For a given number of contacts C, ants moved faster on the bridge at intermediate density k (i.e. k \u2248 5).",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, traveling time T increased with the number of contacts C, but the key information is that density k actually made traveling time T decay initially (up to k \u2248 5). For a given number of contacts C, ants moved faster on the bridge at intermediate density k (i.e. k \u2248 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:54:26.839586Z"
+    },
+    {
+      "id": "07c47abe-5e79-4a8d-bebe-ffa643669636",
+      "content_id": "1854091c-a2b4-432a-bac2-e5e811eafdbd",
+      "claim_id": "C31",
+      "claim": "Free flow speed vf is first increasing with density k up to k\u22485 ants.cm\u22122 and then decays back to its initial value.",
+      "claim_type": "EXPLICIT",
+      "source": "vf is first increasing with density k up to k\u22485 ants.cm\u22122 and then decays back to its initial value.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:54:26.839586Z"
+    },
+    {
+      "id": "98cf99cc-f28d-4802-98c2-e07da4299b7e",
+      "content_id": "1854091c-a2b4-432a-bac2-e5e811eafdbd",
+      "claim_id": "C32",
+      "claim": "The positive effect of density on speed might be explained by a pheromone effect.",
+      "claim_type": "EXPLICIT",
+      "source": "This phenomenon might be explained by a pheromone effect.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative explanation for the observed positive effect of density on speed.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:54:26.839586Z"
+    },
+    {
+      "id": "835ef315-db7a-4fd5-b9aa-2cabadfb2da0",
+      "content_id": "1854091c-a2b4-432a-bac2-e5e811eafdbd",
+      "claim_id": "C33",
+      "claim": "Argentine ants deposit pheromones both when leaving and when returning to the nest and travel faster on a well-marked trail.",
+      "claim_type": "EXPLICIT",
+      "source": "It is well known that Argentine ants deposit pheromones both when leaving and when returning to the nest and travel faster on a well-marked trail (Deneubourg et al., 1990).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:54:26.839586Z"
+    },
+    {
+      "id": "941ef7ee-4a14-4f35-870d-8a72799725bc",
+      "content_id": "1854091c-a2b4-432a-bac2-e5e811eafdbd",
+      "claim_id": "C34",
+      "claim": "The plateau reached for flow was q \u2248 10 ants.cm\u22121.s\u22121.",
+      "claim_type": "EXPLICIT",
+      "source": "The plateau reached was q \u2248 10 ants.cm\u22121.s\u22121.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:54:26.839586Z"
+    },
+    {
+      "id": "eae3bf63-019c-4b07-a23c-427ba4f38cf6",
+      "content_id": "1854091c-a2b4-432a-bac2-e5e811eafdbd",
+      "claim_id": "C35",
+      "claim": "When k < 5 ant.cm\u22122 ants moved faster, which positively impacted the flow q.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, even though increasing density k generated more contacts impacting negatively the flow q through their effect on traveling time T, when k < 5 ant.cm\u22122 ants moved faster, which positively impacted the flow q.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the combined analysis of speed and contact data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:54:26.839586Z"
+    },
+    {
+      "id": "4d592884-6b52-4806-846f-0e654a928b09",
+      "content_id": "1854091c-a2b4-432a-bac2-e5e811eafdbd",
+      "claim_id": "C36",
+      "claim": "For k > 8 ants.cm\u22122, despite the crowdedness of the trail, ants maintained a constant flow q.",
+      "claim_type": "EXPLICIT",
+      "source": "For k > 8 ants.cm\u22122, despite the crowdedness of the trail, ants maintained a constant flow q.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2 and Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:54:26.839586Z"
+    },
+    {
+      "id": "70bf6da7-05ed-432d-abec-b5e9cc01e111",
+      "content_id": "1854091c-a2b4-432a-bac2-e5e811eafdbd",
+      "claim_id": "C37",
+      "claim": "The number of contacts increased only linearly with the density according to Figure 4A.",
+      "claim_type": "EXPLICIT",
+      "source": "Given that the unoccupied portion of the bridge decayed with the density, it is remarkable that the number of contacts increased only linearly with the density according to Figure 4A (or one could argue even sub-linearly for k > 10 ants.cm\u22122).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on the linear relationship shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:54:26.839586Z"
+    },
+    {
+      "id": "eb65dc70-721e-4c30-a834-91f8ef6ad924",
+      "content_id": "1854091c-a2b4-432a-bac2-e5e811eafdbd",
+      "claim_id": "C38",
+      "claim": "Ants restrained themselves from leaving the nest to prevent overcrowding as k never exceeded 18 ant.cm\u22122.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, we also observed that ants restrained themselves from leaving the nest to prevent overcrowding as k never exceeded 18 ant.cm\u22122 even though we increased colony size and reduced bridge width (number of ants entering the bridge for the largest colonies \u00b1 CI95: 2.69 \u00b1 0.04, 4.34 \u00b1 0.03 and 5.05 \u00b1 0.03 ants.sec\u22121 for the 5, 10 and 20 mm bridges).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental observations across different colony sizes and bridge widths.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:54:26.839586Z"
+    },
+    {
+      "id": "ddcf7b23-4162-4b7a-8ca2-dabd5c682c6e",
+      "content_id": "1854091c-a2b4-432a-bac2-e5e811eafdbd",
+      "claim_id": "C39",
+      "claim": "U-turns were seldom once the ants were traveling on the bridge (probability of turning back once on the bridge = 0.01).",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, U-turns were seldom once the ants were traveling on the bridge (probability of turning back once on the bridge = 0.01).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental observations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:54:26.839586Z"
+    },
+    {
+      "id": "6d7f55d4-89cb-4c0b-b17d-fa68efeb6aa2",
+      "content_id": "1854091c-a2b4-432a-bac2-e5e811eafdbd",
+      "claim_id": "C40",
+      "claim": "In pedestrian and car traffic, at occupancy levels above 0.4 the flow starts to decline.",
+      "claim_type": "EXPLICIT",
+      "source": "In pedestrian and car traffic (Banks, 1999; Helbing et al., 2005), at occupancy levels above 0.4 the flow starts to decline, while in ants, the flow showed no sign of declining even when occupancy reached 0.8.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research on human traffic.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:54:26.839586Z"
+    },
+    {
+      "id": "c6c47feb-27b9-4567-b8cc-633a47139b70",
+      "content_id": "1854091c-a2b4-432a-bac2-e5e811eafdbd",
+      "claim_id": "C41",
+      "claim": "In ants, the flow showed no sign of declining even when occupancy reached 0.8.",
+      "claim_type": "EXPLICIT",
+      "source": "In pedestrian and car traffic (Banks, 1999; Helbing et al., 2005), at occupancy levels above 0.4 the flow starts to decline, while in ants, the flow showed no sign of declining even when occupancy reached 0.8.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data from the current study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:54:26.839586Z"
+    },
+    {
+      "id": "411b5bbb-fcf8-47c9-80a2-080ea92f3612",
+      "content_id": "1854091c-a2b4-432a-bac2-e5e811eafdbd",
+      "claim_id": "C42",
+      "claim": "Ants seem to be immune to traffic congestion.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, by investigating traffic dynamics on a large range of densities, we demonstrated that ants seem to be immune to traffic congestion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion supported by all experimental data showing constant flow at high densities.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:54:26.839586Z"
+    },
+    {
+      "id": "cf16d50f-4092-4206-bef4-4fc52317a420",
+      "content_id": "1854091c-a2b4-432a-bac2-e5e811eafdbd",
+      "claim_id": "C43",
+      "claim": "In ants, traffic is governed by positive feed-backs (trail following and reinforcement).",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, in ants, traffic is governed by positive feed-backs (trail following and reinforcement) and interactions which are time consuming but often beneficial for the colony as they promotes information transfer (Bouchebti et al., 2015; Burd and Aranwela, 2003; Farji-Brener et al., 2010; Fourcassi\u00e9 et al., 2010; Gordon, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research on ant behavior.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:54:26.839586Z"
+    },
+    {
+      "id": "93259bdd-d9a0-465e-8b85-232eee4b1291",
+      "content_id": "1854091c-a2b4-432a-bac2-e5e811eafdbd",
+      "claim_id": "C44",
+      "claim": "Interactions in ants are time consuming but often beneficial for the colony as they promote information transfer.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, in ants, traffic is governed by positive feed-backs (trail following and reinforcement) and interactions which are time consuming but often beneficial for the colony as they promotes information transfer (Bouchebti et al., 2015; Burd and Aranwela, 2003; Farji-Brener et al., 2010; Fourcassi\u00e9 et al., 2010; Gordon, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:54:26.839586Z"
+    },
+    {
+      "id": "2ce4ddb0-1b82-44e0-9b5c-85c77e1c6494",
+      "content_id": "1854091c-a2b4-432a-bac2-e5e811eafdbd",
+      "claim_id": "C45",
+      "claim": "Time spent interacting with other ants has strong consequences on traffic dynamics.",
+      "claim_type": "EXPLICIT",
+      "source": "Nonetheless, time spent interacting with other ants has strong consequences on traffic dynamics (Gravish et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:54:26.839586Z"
+    },
+    {
+      "id": "3dcb20cd-d697-4672-a324-f67dc5517fd8",
+      "content_id": "1854091c-a2b4-432a-bac2-e5e811eafdbd",
+      "claim_id": "C46",
+      "claim": "Short interaction time allows a smooth traffic over a wide range of densities whereas long interaction time promotes rapid slowing of traffic.",
+      "claim_type": "EXPLICIT",
+      "source": "Short interaction time allows a smooth traffic over a wide range of densities whereas long interaction time promotes rapid slowing of traffic (Gravish et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:54:26.839586Z"
+    },
+    {
+      "id": "f806e182-7186-4866-ac2c-1075598a30cc",
+      "content_id": "1854091c-a2b4-432a-bac2-e5e811eafdbd",
+      "claim_id": "C47",
+      "claim": "In fire ants, Gravish et al. (2015) found that interaction time was relatively short (0.45 s).",
+      "claim_type": "EXPLICIT",
+      "source": "In fire ants, Gravish et al. (2015) found that interaction time was relatively short (0.45 s) and that the flow was relatively unaffected by density up to a certain critical value beyond which they observed the formation of traffic jams (Gravish et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:54:26.839586Z"
+    },
+    {
+      "id": "0ff04a71-090a-4e24-9b98-920a3ae0ee65",
+      "content_id": "1854091c-a2b4-432a-bac2-e5e811eafdbd",
+      "claim_id": "C48",
+      "claim": "Argentine ants have an interaction time approximately twice shorter than fire ants.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we found that Argentine ants have an interaction time approximately twice shorter than fire ants, which could explain why we observed a smooth and efficient mixing of opposite flows over a broader range of densities.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from comparing the interaction time data (0.24 s from Figure 4B) with fire ant data (0.45 s) from Gravish et al.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:54:26.839586Z"
+    },
+    {
+      "id": "f4e212e8-501b-4bee-9cd1-f5cdf952da0f",
+      "content_id": "1854091c-a2b4-432a-bac2-e5e811eafdbd",
+      "claim_id": "C49",
+      "claim": "When density on the trail increases, ants seemed to be able to assess crowding locally, and adjusted their speed accordingly to avoid any interruption of traffic flow.",
+      "claim_type": "EXPLICIT",
+      "source": "The exact nature of the mechanisms used by Argentine ants to keep the traffic flowing in this study remains elusive, yet when density on the trail increases, ants seemed to be able to assess crowding locally, and adjusted their speed accordingly to avoid any interruption of traffic flow.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observed speed adjustments with density shown in Figure 6A.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:54:26.839586Z"
+    },
+    {
+      "id": "f97cc2a5-18ed-4d25-9dc7-9d54d3c81542",
+      "content_id": "1854091c-a2b4-432a-bac2-e5e811eafdbd",
+      "claim_id": "C50",
+      "claim": "Ants restrained themselves from entering a crowded path and ensured that the capacity of the bridge was never exceeded.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, ants restrained themselves from entering a crowded path and ensured that the capacity of the bridge was never exceeded that is the maximum value of the flow allowed by the bridge width.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the observation that density never exceeded 18 ant.cm\u22122.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:54:26.839586Z"
+    },
+    {
+      "id": "f425e530-b99e-43ae-b93d-f7c5798300a4",
+      "content_id": "1854091c-a2b4-432a-bac2-e5e811eafdbd",
+      "claim_id": "C51",
+      "claim": "Traffic regulation on trails ultimately allows Argentine ants to maintain a high rate of food return to the nest.",
+      "claim_type": "EXPLICIT",
+      "source": "Traffic regulation on trails ultimately allows Argentine ants to maintain a high rate of food return to the nest, an essential asset in the context of food competition occurring in natural environments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the adaptive significance of the observed traffic regulation.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:54:26.839586Z"
+    },
+    {
+      "id": "45733f92-c276-4cb4-8a5d-a3a3062876ed",
+      "content_id": "1854091c-a2b4-432a-bac2-e5e811eafdbd",
+      "claim_id": "C52",
+      "claim": "In fire ants, behaviors such as 'individual idleness and retreating' at overcrowded digging sites supports an optimal accessibility of space facilitating excavation during nest construction.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, in the nest-building context, behaviors such as 'individual idleness and retreating' at overcrowded digging sites supports an optimal accessibility of space facilitating excavation during nest construction in fire ants (Aguilar et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:54:26.839586Z"
+    },
+    {
+      "id": "4d7e2362-761e-4211-b9d1-5894a6aa6574",
+      "content_id": "1854091c-a2b4-432a-bac2-e5e811eafdbd",
+      "claim_id": "C53",
+      "claim": "Carpenter ants placed under threat and forced to escape through a narrow door distribute themselves uniformly over the space available instead of rushing toward the door.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, carpenter ants placed under threat and forced to escape through a narrow door distribute themselves uniformly over the space available instead of rushing toward the door and trampling on others (Parisi et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:54:26.839586Z"
+    },
+    {
+      "id": "8dc5eb3e-2e34-4152-ba7c-a80342f16bfb",
+      "content_id": "1854091c-a2b4-432a-bac2-e5e811eafdbd",
+      "claim_id": "C54",
+      "claim": "Carpenter ants avoid clogging and evacuate efficiently, contrary to humans.",
+      "claim_type": "EXPLICIT",
+      "source": "As a result, contrary to humans (Helbing et al., 2000), they avoid clogging and evacuate efficiently (Parisi et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:54:26.839586Z"
+    },
+    {
+      "id": "66d4caf4-d063-471f-9e5c-e151656e0121",
+      "content_id": "1854091c-a2b4-432a-bac2-e5e811eafdbd",
+      "claim_id": "C55",
+      "claim": "In garden ants, the interplay between trail following behavior and collisions allows ants to cope with bottleneck situations.",
+      "claim_type": "EXPLICIT",
+      "source": "Lastly, in garden ants, the interplay between trail following behavior and collisions allows ants to cope with bottleneck situations (Dussutour et al., 2006; Dussutour et al., 2005; Dussutour et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:54:26.839586Z"
+    },
+    {
+      "id": "61a3d446-1f5f-444a-a53f-44ba966eec80",
+      "content_id": "1854091c-a2b4-432a-bac2-e5e811eafdbd",
+      "claim_id": "C56",
+      "claim": "Ants behaved as a self-organized biological adaptive system.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, our results extend previous research on ant traffic organization (Aguilar et al., 2018; Burd et al., 2002; Fourcassi\u00e9 et al., 2010; Gravish et al., 2015; H\u00f6nicke et al., 2015; John et al., 2009) and show that ant prevented traffic jams from occurring and behaved as a self-organized biological adaptive system (Camazine et al., 2003; Hemelrijk, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion supported by the experimental data and citations to theoretical frameworks.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:54:26.839586Z"
+    },
+    {
+      "id": "b3fc5041-6597-4fae-bebc-70f5f35f39d7",
+      "content_id": "1854091c-a2b4-432a-bac2-e5e811eafdbd",
+      "claim_id": "C57",
+      "claim": "Similar phenomena of self-regulation ought to be found in other complex systems such as migrating animals, cell machinery, swarm of robots and data traffic.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar phenomena of self-regulation ought to be found in other complex systems such as migrating animals (Buhl et al., 2006), cell machinery (Leduc et al., 2012), swarm of robots (Aguilar et al., 2018) and data traffic (Valverde and Sol\u00e9, 2004) and could provide inspiration in all disciplines, ranging from molecular biology to automotive engineering.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about potential applications, supported by citations.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:54:26.839586Z"
+    },
+    {
+      "id": "6c53e615-7522-4e65-b7d4-ebc2ccaa4d79",
+      "content_id": "1854091c-a2b4-432a-bac2-e5e811eafdbd",
+      "claim_id": "C58",
+      "claim": "The Argentine ant Linepithema humile is a major pest around the world.",
+      "claim_type": "EXPLICIT",
+      "source": "We used the European supercolony of Argentine ants Linepithema humile, which is a major pest around the world and the largest recorded society of multicellular organisms (Giraud et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:54:26.839586Z"
+    },
+    {
+      "id": "e1ba944a-42f8-4e17-b96a-79bce83d6078",
+      "content_id": "1854091c-a2b4-432a-bac2-e5e811eafdbd",
+      "claim_id": "C59",
+      "claim": "The Argentine ant is the largest recorded society of multicellular organisms.",
+      "claim_type": "EXPLICIT",
+      "source": "We used the European supercolony of Argentine ants Linepithema humile, which is a major pest around the world and the largest recorded society of multicellular organisms (Giraud et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:54:26.839586Z"
+    },
+    {
+      "id": "d965193a-f3b2-4418-8deb-de48296e7ee8",
+      "content_id": "1854091c-a2b4-432a-bac2-e5e811eafdbd",
+      "claim_id": "C60",
+      "claim": "Argentine ants use mass recruitment through pheromone trails to exploit abundant food sources.",
+      "claim_type": "EXPLICIT",
+      "source": "We used the Argentine ant Linepithema humile, an invasive species that uses mass recruitment through pheromone trails to exploit abundant food sources.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about Argentine ant foraging behavior.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:54:26.839586Z"
+    },
+    {
+      "id": "957c8702-775c-4798-86c7-d4d5173d88fe",
+      "content_id": "1854091c-a2b4-432a-bac2-e5e811eafdbd",
+      "claim_id": "C61",
+      "claim": "Argentine ants have multiple queens and form supercolonies.",
+      "claim_type": "EXPLICIT",
+      "source": "Argentine ants have multiple queens and form supercolonies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about Argentine ant social structure.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:54:26.839586Z"
+    },
+    {
+      "id": "b9cce367-aeac-4197-ba29-e98d4ea947c4",
+      "content_id": "1854091c-a2b4-432a-bac2-e5e811eafdbd",
+      "claim_id": "C62",
+      "claim": "Established Argentine ant supercolonies can contain up to 108 workers.",
+      "claim_type": "EXPLICIT",
+      "source": "Established supercolonies can contain up to 108 workers (Giraud et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:54:26.839586Z"
+    },
+    {
+      "id": "55870918-2831-42c1-a2c1-3dc35606c6fc",
+      "content_id": "1854091c-a2b4-432a-bac2-e5e811eafdbd",
+      "claim_id": "C63",
+      "claim": "Argentine ants are monomorphic (2.5 mm long).",
+      "claim_type": "EXPLICIT",
+      "source": "These ants are monomorphic (2.5 mm long).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual description of the study organism.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:54:26.839586Z"
+    },
+    {
+      "id": "a14d91a2-f943-4dda-95ce-49713b1e3e5c",
+      "content_id": "1854091c-a2b4-432a-bac2-e5e811eafdbd",
+      "claim_id": "C64",
+      "claim": "The experimental colonies were starved for five days before each experiment.",
+      "claim_type": "EXPLICIT",
+      "source": "Before each experiment, the experimental colonies were starved for five days, and the experiment started when the ants were given access to a food source placed on a platform (120 \u00d7 120 mm for small colonies - up to 3200, or 230 \u00d7 230 mm for the larger colonies) at the other end of a plastic bridge.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental protocol.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:54:26.839586Z"
+    },
+    {
+      "id": "d55325d9-bfbc-42d8-952d-c0dcda34aba1",
+      "content_id": "1854091c-a2b4-432a-bac2-e5e811eafdbd",
+      "claim_id": "C65",
+      "claim": "The total length of the bridge was 170 mm.",
+      "claim_type": "EXPLICIT",
+      "source": "The total length of the bridge was 170 mm and the bridge width was either 5 mm (narrow bridge), 10 mm (medium bridge) or 20 mm (large bridge).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental setup.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:54:26.839586Z"
+    },
+    {
+      "id": "ce100848-13b6-4153-9eef-6f12796b9699",
+      "content_id": "1854091c-a2b4-432a-bac2-e5e811eafdbd",
+      "claim_id": "C66",
+      "claim": "The food consisted of a 1M sucrose solution.",
+      "claim_type": "EXPLICIT",
+      "source": "The food consisted of a 1M sucrose solution contained in small grooves (100 mm long for small colonies and 185 mm for large colonies) carved in a block of Plexiglas.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental setup.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:54:26.839586Z"
+    },
+    {
+      "id": "1df54e14-2ca5-486a-bf33-b1a11ff21cb3",
+      "content_id": "1854091c-a2b4-432a-bac2-e5e811eafdbd",
+      "claim_id": "C67",
+      "claim": "The number of replicates for each bridge width and each colony size ranged between 4 and 10.",
+      "claim_type": "EXPLICIT",
+      "source": "The number of replicates for each bridge width and each colony size ranged between 4 and 10 leading to a total of 170 experiments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental design.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:54:26.839586Z"
+    },
+    {
+      "id": "254fdf65-8c86-462b-ba4e-713c5ffec67b",
+      "content_id": "1854091c-a2b4-432a-bac2-e5e811eafdbd",
+      "claim_id": "C68",
+      "claim": "Ants seldom climbed on top of each other that is the flow remained two-dimensional in all experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "Ants seldom climbed on top of each other that is the flow remained two-dimensional in all experiments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:54:26.839586Z"
+    },
+    {
+      "id": "63c9ed3a-86d9-4679-9c81-b243e17c5368",
+      "content_id": "1854091c-a2b4-432a-bac2-e5e811eafdbd",
+      "claim_id": "C69",
+      "claim": "Ants covered on average 3.5 mm2 excluding legs and antennae and 4.4 mm2 with legs and antennae.",
+      "claim_type": "EXPLICIT",
+      "source": "Ants covered on average 3.5 mm2 excluding legs and antennae and 4.4 mm2 with legs and antennae.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a measurement from the experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:54:26.839586Z"
+    },
+    {
+      "id": "1f086a66-a4ef-4b25-8452-9fb3dc830ce8",
+      "content_id": "1854091c-a2b4-432a-bac2-e5e811eafdbd",
+      "claim_id": "C70",
+      "claim": "Automatic analysis had a slight tendency to underestimate densities but only when density was higher than six ant.cm\u22122 (difference between manual and automatic \u22120.36 ant.cm\u22122+ /- IC95 0.02).",
+      "claim_type": "EXPLICIT",
+      "source": "We found a good agreement although automatic analysis had a slight tendency to underestimate densities but only when density was higher than six ant.cm\u22122 (difference between manual and automatic \u22120.36 ant.cm\u22122+ /- IC95 0.02).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a validation of the measurement method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:54:26.839586Z"
+    },
+    {
+      "id": "ea4c1da8-2759-4310-9249-f9ade5da00a4",
+      "content_id": "1854091c-a2b4-432a-bac2-e5e811eafdbd",
+      "claim_id": "C71",
+      "claim": "A physical contact lasted between 0.1 and 3.2\u00b7s (mean \u00b1 SD 0.18 \u00b1 0.14 s).",
+      "claim_type": "EXPLICIT",
+      "source": "A physical contact lasted between 0.1 and 3.2\u00b7s (mean \u00b1 SD 0.18 \u00b1 0.14 s).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a measurement from the experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:54:26.839586Z"
+    },
+    {
+      "id": "402e99c9-82fd-4f97-bd3d-1cf1005c2a75",
+      "content_id": "1854091c-a2b4-432a-bac2-e5e811eafdbd",
+      "claim_id": "C72",
+      "claim": "The flow q increases with the density k from zero to a maximum value and then decays until it goes back to zero at the so-called maximum jam density kj in typical traffic systems.",
+      "claim_type": "EXPLICIT",
+      "source": "First, the flow q increases with the density k from zero to a maximum value and then decays until it goes back to zero at the so-called maximum jam density kj.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a description of typical traffic flow patterns from traffic engineering literature, illustrated in Figure 1A.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:54:26.839586Z"
+    },
+    {
+      "id": "8fb3ae0a-9a6e-487a-ad6c-e96d070a0c63",
+      "content_id": "1854091c-a2b4-432a-bac2-e5e811eafdbd",
+      "claim_id": "C73",
+      "claim": "The speed is maximum when an individual is traveling alone (free flow speed vf) in typical traffic systems.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, the speed is maximum when an individual is traveling alone (free flow speed vf) and decreases with the density k.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a description of typical traffic flow patterns from traffic engineering literature.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:54:26.839586Z"
+    },
+    {
+      "id": "07166925-4a32-4746-91f8-ddb99d797f2c",
+      "content_id": "1854091c-a2b4-432a-bac2-e5e811eafdbd",
+      "claim_id": "C74",
+      "claim": "The speed becomes zero and individuals stop at jam density that is v(kj)=0 in typical traffic systems.",
+      "claim_type": "EXPLICIT",
+      "source": "The speed becomes zero and individuals stop at jam density that is v(kj)=0 (Nagatani, 2002; Treiber et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to traffic engineering literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:54:26.839586Z"
+    },
+    {
+      "id": "9fdef378-a2f8-4f19-8f89-42191b3bc843",
+      "content_id": "1854091c-a2b4-432a-bac2-e5e811eafdbd",
+      "claim_id": "C75",
+      "claim": "In leaf-cutting ants, speed decreases when density increases.",
+      "claim_type": "EXPLICIT",
+      "source": "In leaf-cutting ants (Burd et al., 2002) and fire ants (Gravish et al., 2015) speed decreases when density increases while for wood ants (H\u00f6nicke et al., 2015) and mass raiding ants (John et al., 2009) the speed remains constant when density increases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:54:26.839586Z"
+    },
+    {
+      "id": "fcd00f62-3671-44ff-8040-ef6075e32007",
+      "content_id": "1854091c-a2b4-432a-bac2-e5e811eafdbd",
+      "claim_id": "C76",
+      "claim": "In fire ants, speed decreases when density increases.",
+      "claim_type": "EXPLICIT",
+      "source": "In leaf-cutting ants (Burd et al., 2002) and fire ants (Gravish et al., 2015) speed decreases when density increases while for wood ants (H\u00f6nicke et al., 2015) and mass raiding ants (John et al., 2009) the speed remains constant when density increases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:54:26.839586Z"
+    },
+    {
+      "id": "9a2ed5fd-3c40-4919-8db6-ffa0ddc7b0a0",
+      "content_id": "1854091c-a2b4-432a-bac2-e5e811eafdbd",
+      "claim_id": "C77",
+      "claim": "For wood ants, the speed remains constant when density increases.",
+      "claim_type": "EXPLICIT",
+      "source": "In leaf-cutting ants (Burd et al., 2002) and fire ants (Gravish et al., 2015) speed decreases when density increases while for wood ants (H\u00f6nicke et al., 2015) and mass raiding ants (John et al., 2009) the speed remains constant when density increases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:54:26.839586Z"
+    },
+    {
+      "id": "cd323152-3d5a-489e-afb6-19b283bc50f4",
+      "content_id": "1854091c-a2b4-432a-bac2-e5e811eafdbd",
+      "claim_id": "C78",
+      "claim": "For mass raiding ants, the speed remains constant when density increases.",
+      "claim_type": "EXPLICIT",
+      "source": "In leaf-cutting ants (Burd et al., 2002) and fire ants (Gravish et al., 2015) speed decreases when density increases while for wood ants (H\u00f6nicke et al., 2015) and mass raiding ants (John et al., 2009) the speed remains constant when density increases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:54:26.839586Z"
+    },
+    {
+      "id": "bdc45537-3691-4b6d-867a-68802b9ef7f1",
+      "content_id": "1854091c-a2b4-432a-bac2-e5e811eafdbd",
+      "claim_id": "C79",
+      "claim": "The range of densities tested was large enough to observe traffic jams only in the study conducted with fire ants traveling in tunnels.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the range of densities tested was large enough to observe traffic jams only in the study conducted with fire ants traveling in tunnels (Gravish et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:54:26.839586Z"
+    },
+    {
+      "id": "5015649c-391a-4544-ace1-6c246737d496",
+      "content_id": "1854091c-a2b4-432a-bac2-e5e811eafdbd",
+      "claim_id": "C80",
+      "claim": "The highest densities recorded in leaf-cutting ants, wood ants and mass raiding ants were not sufficiently high to generate a traffic jam.",
+      "claim_type": "EXPLICIT",
+      "source": "The highest densities as well as the estimated occupancy (fraction of area covered by ants), recorded in leaf-cutting ants (Burd et al., 2002), wood ants (H\u00f6nicke et al., 2015) and mass raiding ants (John et al., 2009) were relatively low: 0.8 ants.cm\u22122 (occupancy 0.20), 0.6 ants.cm\u22122 (0.13) and 0.3 ants.cm\u22122 (0.10) and not sufficiently high to generate a traffic jam as ants never exceeded the capacity of the trail, that is the maximum value of the flow allowed by the trail width.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on analysis of data from cited previous research.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:54:26.839586Z"
+    },
+    {
+      "id": "514e3dc8-3148-4704-80d5-a9e96bad579e",
+      "content_id": "1854091c-a2b4-432a-bac2-e5e811eafdbd",
+      "claim_id": "C81",
+      "claim": "The study succeeded in generating large variations of density (from 0 to 18 ants.cm\u22122) and occupancy (from 0 to 0.8).",
+      "claim_type": "EXPLICIT",
+      "source": "We succeeded in generating large variations of density (from 0 to 18 ants.cm\u22122) and occupancy (from 0 to 0.8).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental achievement.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:54:26.839586Z"
+    },
+    {
+      "id": "583c727b-de40-432c-9eb4-284ad70bc2b8",
+      "content_id": "1854091c-a2b4-432a-bac2-e5e811eafdbd",
+      "claim_id": "C82",
+      "claim": "The study conducted 612,000 flow/density (non-independent) observations pairs.",
+      "claim_type": "EXPLICIT",
+      "source": "The flow q and the density k were recorded on each experiment every second for one hour giving us 612,000 flow/density (non-independent) observations pairs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the data collected.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:54:26.839586Z"
+    },
+    {
+      "id": "00e0381d-291f-46c7-adf8-77a6f4640529",
+      "content_id": "1854091c-a2b4-432a-bac2-e5e811eafdbd",
+      "claim_id": "C83",
+      "claim": "Ant traffic is best described by a two-phase flow function at the macroscopic level.",
+      "claim_type": "EXPLICIT",
+      "source": "At the macroscopic level, we demonstrated that ant traffic is best described by a two-phase flow function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main finding supported by model selection analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:54:26.839586Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "a4a54f91-1d15-4221-85fc-5f74bcd5cdde",
+      "content_id": "1854091c-a2b4-432a-bac2-e5e811eafdbd",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Argentine ants exhibit a two-phase traffic flow pattern where flow increases linearly with density at low densities (k < 8 ants/cm\u00b2) and remains constant at high densities (k > 8 ants/cm\u00b2), avoiding traffic congestion even at occupancy levels up to 0.8. This two-phase model was selected as the best fit through Akaike weight analysis of 612,000 flow-density observation pairs from 170 experiments.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2-C4, C19, C21, C83 provide converging evidence from macroscopic traffic analysis showing constant flow at high density. The two-phase model was rigorously selected using Akaike weights (C21) from a large dataset (170 experiments, 612,000 observations). Claims C41-C42 contextualize this finding by comparing to human traffic systems. The experimental design appears sound with appropriate controls (C17, C18) and the statistical model selection is well-justified.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:54:26.839586Z"
+    },
+    {
+      "id": "724fb3c6-c9e0-4ba0-baf3-d4670248e287",
+      "content_id": "1854091c-a2b4-432a-bac2-e5e811eafdbd",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "At the microscopic level, ants adjust their speed with density and maintain short interaction times (\u0394T = 0.24 s per contact, approximately half that of fire ants). The number of contacts increases linearly with density (C = 0.61k), and each contact adds 0.24 s to travel time. Notably, free flow speed initially increases with density up to k \u2248 5 ants/cm\u00b2, likely due to pheromone effects, before declining.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26-C31 present clear linear relationships with specified parameters from individual tracking data (N=7900 ants). The comparison to fire ants (C48) is appropriately supported by citing Gravish et al.'s 0.45 s interaction time. The pheromone explanation (C32-C33) for the initial speed increase is speculative but reasonable. The microscopic data effectively explains the macroscopic two-phase pattern observed.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:54:26.839586Z"
+    },
+    {
+      "id": "f0525fc5-f841-4d9f-9955-369f247dba3b",
+      "content_id": "1854091c-a2b4-432a-bac2-e5e811eafdbd",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "At high densities, ant traffic becomes spatially and temporally intermingled without clear lane segregation or temporal oscillations, and flow is only marginally influenced by traffic asymmetry (proportion of inbound vs. outbound ants), contrasting with pedestrian traffic patterns.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C24 are supported by experimental observations shown in Figure 3 and supplementary materials including videos. Claim C25 is supported by statistical analysis (Figure 3B) showing flow isoclines parallel to the asymmetry axis, indicating density is the primary determinant. The contrast with pedestrian traffic is appropriately cited. However, the lack of spatiotemporal organization makes the congestion avoidance mechanism less clear.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:54:26.839586Z"
+    },
+    {
+      "id": "c831236f-7f33-477f-8192-585be9ca3ba6",
+      "content_id": "1854091c-a2b4-432a-bac2-e5e811eafdbd",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Ants maintain constant flow at high densities through multiple mechanisms: the positive pheromone effect on speed at intermediate densities counterbalances increased contacts (k < 5 ants/cm\u00b2), contacts increase only linearly (or sub-linearly) with density despite crowding, ants self-regulate entry to prevent density exceeding 18 ants/cm\u00b2, and U-turns are rare (probability = 0.01).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C39 and C50 describe complementary mechanisms supported by experimental data. The self-regulation claim (C38) is supported by observations across different colony sizes and bridge widths. The linear increase in contacts (C37) despite decreasing unoccupied space is remarkable and well-documented in Figure 4A. However, the exact mechanisms of local density assessment (C49, C50) remain somewhat speculative as the sensory/behavioral basis is not directly tested.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:54:26.839586Z"
+    },
+    {
+      "id": "354ae374-7cea-46a9-8841-ce5428fb6e61",
+      "content_id": "1854091c-a2b4-432a-bac2-e5e811eafdbd",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The experimental design involved 170 experiments with 35 colonies (400-25,600 ants), three bridge widths (5, 10, 20 mm), and 5-day starvation periods. The study achieved density ranges of 0-18 ants/cm\u00b2 and occupancy of 0-0.8, with 612,000 flow-density observations. Controls confirmed 94% feeding rate, no bridge width effect on solo ant speed, and validated automatic density measurements.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16-C18, C64-C71, C81-C82 describe the experimental methodology comprehensively. The large sample size and range of densities achieved (C81) address the gap identified in prior work (C13, C80). Control experiments (C17, C18) appropriately validate the setup. The validation of automatic vs. manual density measurements (C70) shows good agreement with only slight underestimation at high densities. The experimental design appears rigorous and well-controlled.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:54:26.839586Z"
+    },
+    {
+      "id": "37fb3f16-72a0-4e90-bc4d-75cb49c13569",
+      "content_id": "1854091c-a2b4-432a-bac2-e5e811eafdbd",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Traditional traffic flow models (Greenshields, Pipes-Munjal, Underwood) performed similarly but failed to predict ant traffic at intermediate and large densities, leading to selection of a novel two-phase flow model through Akaike weight analysis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C20-C21 describe the model selection process. The failure of traditional models (C20) is shown in Figure 2B, and the two-phase model selection (C21) is supported by Akaike weights analysis. The statistical approach is appropriate, though the manuscript could benefit from reporting the actual Akaike weights. The large dataset (612,000 observations) provides strong statistical power for model discrimination.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:54:26.839586Z"
+    },
+    {
+      "id": "567d7be4-2417-4edb-95c6-c643ff7e44d4",
+      "content_id": "1854091c-a2b4-432a-bac2-e5e811eafdbd",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The positive effect of density on speed at intermediate densities (k \u2248 5 ants/cm\u00b2) is hypothesized to result from pheromone accumulation, as Argentine ants deposit pheromones bidirectionally and travel faster on well-marked trails. The flow plateau reaches approximately 10 ants\u00b7cm\u207b\u00b9\u00b7s\u207b\u00b9.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C32 is explicitly speculative, and while C33 cites established knowledge about Argentine ant pheromone behavior, the causal link to the observed speed increase is not directly tested. No experiments manipulated pheromone levels or controlled for pheromone effects. The plateau value (C34) is well-supported by data in Figure 6B. The pheromone hypothesis is plausible but requires experimental validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:54:26.839586Z"
+    },
+    {
+      "id": "65f337c7-7914-4cd0-839a-766c8f98b986",
+      "content_id": "1854091c-a2b4-432a-bac2-e5e811eafdbd",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Comparison with prior work shows that in human traffic, flow declines above 0.4 occupancy, while ants maintain flow up to 0.8 occupancy. Previous ant studies (leaf-cutting, wood, mass raiding ants) tested lower densities (0.3-0.8 ants/cm\u00b2, occupancy 0.10-0.20) insufficient to generate jams, except fire ants in tunnels which showed congestion.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40-C41 and C75-C80 appropriately contextualize the current findings within prior literature. The comparisons are well-cited and the occupancy calculations for prior studies (C80) appear reasonable. The contrast with human traffic (C40-C41) is supported by appropriate citations. This effectively establishes the novelty and significance of achieving high-density observations without congestion.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:54:26.839586Z"
+    },
+    {
+      "id": "3e1ad09b-2d72-41bb-8012-058efaa15beb",
+      "content_id": "1854091c-a2b4-432a-bac2-e5e811eafdbd",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Ant traffic differs fundamentally from human traffic through positive feedbacks (trail following) and beneficial interactions that promote information transfer. Similar self-regulatory behaviors preventing congestion have been observed in other ant contexts: fire ant nest construction, carpenter ant evacuation, and garden ant bottleneck navigation. Ants function as self-organized biological adaptive systems.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C47 and C52-C56 synthesize the current findings with broader literature on ant collective behavior. All claims are appropriately supported by citations to prior work. The characterization as a self-organized adaptive system (C56) is justified by the experimental data showing emergent traffic regulation without central control. The cross-species comparisons strengthen the generality of the findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:54:26.839586Z"
+    },
+    {
+      "id": "1b45dca7-3b81-4601-8b9b-28f9c17cba44",
+      "content_id": "1854091c-a2b4-432a-bac2-e5e811eafdbd",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The authors speculate that similar self-regulatory phenomena may exist in other complex systems (migrating animals, cell machinery, robot swarms, data traffic) and that traffic regulation allows Argentine ants to maintain high food return rates, providing competitive advantages.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C51 and C57 are explicitly speculative about broader implications and adaptive significance. While C57 cites examples of other complex systems, no direct evidence is provided that similar mechanisms operate in those systems. Claim C51 about food return rates and competitive advantage is a reasonable inference but not directly tested\u2014no measurements of actual food return rates or competitive outcomes are presented. These represent interesting hypotheses for future work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:54:26.839586Z"
+    },
+    {
+      "id": "71a0be14-5df1-49d7-9055-3bef9d15c25a",
+      "content_id": "1854091c-a2b4-432a-bac2-e5e811eafdbd",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The study used Argentine ants (Linepithema humile), described as a major global pest and the largest recorded society of multicellular organisms, with supercolonies containing up to 10\u2078 workers. These monomorphic ants (2.5 mm) use mass recruitment via pheromone trails.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-C63 describe the study organism with appropriate citations. The characterization as a major pest (C58) and largest society (C59) are supported by citation to Giraud et al. 2002. The biological details (C60-C63) represent established knowledge about Argentine ants. This information appropriately contextualizes the study system.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:54:26.839586Z"
+    },
+    {
+      "id": "649a89ef-8cee-487c-99b7-e17272737dd0",
+      "content_id": "1854091c-a2b4-432a-bac2-e5e811eafdbd",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The introduction establishes that efficient transportation is crucial across biological systems, many organisms exhibit flow-like movements, and ants are among the rare animals with bidirectional traffic. While ants appear superior to humans in traffic management, direct experimental evidence for jam avoidance at high density was previously lacking.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1 and C7-C13 establish context and motivation, all appropriately supported by citations to prior work. Claim C13 correctly identifies the knowledge gap that motivates the current study. These background claims are well-supported by the cited literature and effectively frame the research question.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:54:26.839586Z"
+    },
+    {
+      "id": "8d72af99-895a-4885-a113-84ffbef1a85b",
+      "content_id": "1854091c-a2b4-432a-bac2-e5e811eafdbd",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The manuscript describes fundamental traffic flow relationships from traffic engineering: the Greenshields function (linear speed-density, parabolic flow-density), and general properties that flow increases then decreases with density, speed is maximal when traveling alone, and speed becomes zero at jam density.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C14-C15 and C72-C74 accurately describe established traffic engineering concepts with appropriate citations. These are well-established principles used as a framework for analyzing the ant data. The descriptions are accurate and properly attributed to the traffic engineering literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:54:26.839586Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "581ff070-55b8-46e2-808f-528f9440cbd7",
+      "result_id": "a4a54f91-1d15-4221-85fc-5f74bcd5cdde"
+    },
+    {
+      "claim_id": "f0b07963-97c1-4357-b92d-eb2c61e70bf5",
+      "result_id": "a4a54f91-1d15-4221-85fc-5f74bcd5cdde"
+    },
+    {
+      "claim_id": "6f9e4716-c905-4eb8-8c32-042f196b0ca9",
+      "result_id": "a4a54f91-1d15-4221-85fc-5f74bcd5cdde"
+    },
+    {
+      "claim_id": "61071500-1e92-4960-83da-3041760b3af3",
+      "result_id": "a4a54f91-1d15-4221-85fc-5f74bcd5cdde"
+    },
+    {
+      "claim_id": "7ceb3e6b-9dbe-4071-ab14-2777f5efa3d8",
+      "result_id": "a4a54f91-1d15-4221-85fc-5f74bcd5cdde"
+    },
+    {
+      "claim_id": "00e0381d-291f-46c7-adf8-77a6f4640529",
+      "result_id": "a4a54f91-1d15-4221-85fc-5f74bcd5cdde"
+    },
+    {
+      "claim_id": "411b5bbb-fcf8-47c9-80a2-080ea92f3612",
+      "result_id": "a4a54f91-1d15-4221-85fc-5f74bcd5cdde"
+    },
+    {
+      "claim_id": "c6c47feb-27b9-4567-b8cc-633a47139b70",
+      "result_id": "a4a54f91-1d15-4221-85fc-5f74bcd5cdde"
+    },
+    {
+      "claim_id": "6ef37950-015d-4c4f-ba82-56c11e12eeab",
+      "result_id": "724fb3c6-c9e0-4ba0-baf3-d4670248e287"
+    },
+    {
+      "claim_id": "e844d122-2951-4125-8b83-fd80b6105949",
+      "result_id": "724fb3c6-c9e0-4ba0-baf3-d4670248e287"
+    },
+    {
+      "claim_id": "89085ffb-e6e1-487a-bf12-a889ab192df5",
+      "result_id": "724fb3c6-c9e0-4ba0-baf3-d4670248e287"
+    },
+    {
+      "claim_id": "6e1ff957-2555-41fa-abf8-47cdd31854bd",
+      "result_id": "724fb3c6-c9e0-4ba0-baf3-d4670248e287"
+    },
+    {
+      "claim_id": "8c5b8621-622e-49bd-bd4d-2cfe58e205ae",
+      "result_id": "724fb3c6-c9e0-4ba0-baf3-d4670248e287"
+    },
+    {
+      "claim_id": "6fef1ff4-2342-48d2-aa4d-5c94902bf867",
+      "result_id": "724fb3c6-c9e0-4ba0-baf3-d4670248e287"
+    },
+    {
+      "claim_id": "4f3337b4-4004-4536-9647-dae3f8aba797",
+      "result_id": "724fb3c6-c9e0-4ba0-baf3-d4670248e287"
+    },
+    {
+      "claim_id": "07c47abe-5e79-4a8d-bebe-ffa643669636",
+      "result_id": "724fb3c6-c9e0-4ba0-baf3-d4670248e287"
+    },
+    {
+      "claim_id": "0ff04a71-090a-4e24-9b98-920a3ae0ee65",
+      "result_id": "724fb3c6-c9e0-4ba0-baf3-d4670248e287"
+    },
+    {
+      "claim_id": "f4e212e8-501b-4bee-9cd1-f5cdf952da0f",
+      "result_id": "724fb3c6-c9e0-4ba0-baf3-d4670248e287"
+    },
+    {
+      "claim_id": "437d0766-e121-4269-8bbe-c615f0006912",
+      "result_id": "f0525fc5-f841-4d9f-9955-369f247dba3b"
+    },
+    {
+      "claim_id": "c78af34a-17c0-4c38-a98a-3a5f8b2570d4",
+      "result_id": "f0525fc5-f841-4d9f-9955-369f247dba3b"
+    },
+    {
+      "claim_id": "34a03424-514a-4d60-b91f-d8cfae3cc6e3",
+      "result_id": "f0525fc5-f841-4d9f-9955-369f247dba3b"
+    },
+    {
+      "claim_id": "d8d94e94-7461-4cbc-ae9e-db743e5619a5",
+      "result_id": "f0525fc5-f841-4d9f-9955-369f247dba3b"
+    },
+    {
+      "claim_id": "eae3bf63-019c-4b07-a23c-427ba4f38cf6",
+      "result_id": "c831236f-7f33-477f-8192-585be9ca3ba6"
+    },
+    {
+      "claim_id": "4d592884-6b52-4806-846f-0e654a928b09",
+      "result_id": "c831236f-7f33-477f-8192-585be9ca3ba6"
+    },
+    {
+      "claim_id": "70bf6da7-05ed-432d-abec-b5e9cc01e111",
+      "result_id": "c831236f-7f33-477f-8192-585be9ca3ba6"
+    },
+    {
+      "claim_id": "eb65dc70-721e-4c30-a834-91f8ef6ad924",
+      "result_id": "c831236f-7f33-477f-8192-585be9ca3ba6"
+    },
+    {
+      "claim_id": "ddcf7b23-4162-4b7a-8ca2-dabd5c682c6e",
+      "result_id": "c831236f-7f33-477f-8192-585be9ca3ba6"
+    },
+    {
+      "claim_id": "f97cc2a5-18ed-4d25-9dc7-9d54d3c81542",
+      "result_id": "c831236f-7f33-477f-8192-585be9ca3ba6"
+    },
+    {
+      "claim_id": "4c778a5e-185a-4657-acba-99738c11258b",
+      "result_id": "354ae374-7cea-46a9-8841-ce5428fb6e61"
+    },
+    {
+      "claim_id": "0d99316c-10d4-4ef5-a1d0-1847aeb35b55",
+      "result_id": "354ae374-7cea-46a9-8841-ce5428fb6e61"
+    },
+    {
+      "claim_id": "d6ef81ea-0b36-4960-9d08-2609f12c335a",
+      "result_id": "354ae374-7cea-46a9-8841-ce5428fb6e61"
+    },
+    {
+      "claim_id": "a14d91a2-f943-4dda-95ce-49713b1e3e5c",
+      "result_id": "354ae374-7cea-46a9-8841-ce5428fb6e61"
+    },
+    {
+      "claim_id": "d55325d9-bfbc-42d8-952d-c0dcda34aba1",
+      "result_id": "354ae374-7cea-46a9-8841-ce5428fb6e61"
+    },
+    {
+      "claim_id": "ce100848-13b6-4153-9eef-6f12796b9699",
+      "result_id": "354ae374-7cea-46a9-8841-ce5428fb6e61"
+    },
+    {
+      "claim_id": "1df54e14-2ca5-486a-bf33-b1a11ff21cb3",
+      "result_id": "354ae374-7cea-46a9-8841-ce5428fb6e61"
+    },
+    {
+      "claim_id": "254fdf65-8c86-462b-ba4e-713c5ffec67b",
+      "result_id": "354ae374-7cea-46a9-8841-ce5428fb6e61"
+    },
+    {
+      "claim_id": "63c9ed3a-86d9-4679-9c81-b243e17c5368",
+      "result_id": "354ae374-7cea-46a9-8841-ce5428fb6e61"
+    },
+    {
+      "claim_id": "1f086a66-a4ef-4b25-8452-9fb3dc830ce8",
+      "result_id": "354ae374-7cea-46a9-8841-ce5428fb6e61"
+    },
+    {
+      "claim_id": "ea4c1da8-2759-4310-9249-f9ade5da00a4",
+      "result_id": "354ae374-7cea-46a9-8841-ce5428fb6e61"
+    },
+    {
+      "claim_id": "514e3dc8-3148-4704-80d5-a9e96bad579e",
+      "result_id": "354ae374-7cea-46a9-8841-ce5428fb6e61"
+    },
+    {
+      "claim_id": "583c727b-de40-432c-9eb4-284ad70bc2b8",
+      "result_id": "354ae374-7cea-46a9-8841-ce5428fb6e61"
+    },
+    {
+      "claim_id": "bf817064-42bb-4578-9ece-0a454a7a1bc2",
+      "result_id": "37fb3f16-72a0-4e90-bc4d-75cb49c13569"
+    },
+    {
+      "claim_id": "7ceb3e6b-9dbe-4071-ab14-2777f5efa3d8",
+      "result_id": "37fb3f16-72a0-4e90-bc4d-75cb49c13569"
+    },
+    {
+      "claim_id": "98cf99cc-f28d-4802-98c2-e07da4299b7e",
+      "result_id": "567d7be4-2417-4edb-95c6-c643ff7e44d4"
+    },
+    {
+      "claim_id": "835ef315-db7a-4fd5-b9aa-2cabadfb2da0",
+      "result_id": "567d7be4-2417-4edb-95c6-c643ff7e44d4"
+    },
+    {
+      "claim_id": "941ef7ee-4a14-4f35-870d-8a72799725bc",
+      "result_id": "567d7be4-2417-4edb-95c6-c643ff7e44d4"
+    },
+    {
+      "claim_id": "6d7f55d4-89cb-4c0b-b17d-fa68efeb6aa2",
+      "result_id": "65f337c7-7914-4cd0-839a-766c8f98b986"
+    },
+    {
+      "claim_id": "c6c47feb-27b9-4567-b8cc-633a47139b70",
+      "result_id": "65f337c7-7914-4cd0-839a-766c8f98b986"
+    },
+    {
+      "claim_id": "9fdef378-a2f8-4f19-8f89-42191b3bc843",
+      "result_id": "65f337c7-7914-4cd0-839a-766c8f98b986"
+    },
+    {
+      "claim_id": "fcd00f62-3671-44ff-8040-ef6075e32007",
+      "result_id": "65f337c7-7914-4cd0-839a-766c8f98b986"
+    },
+    {
+      "claim_id": "9a2ed5fd-3c40-4919-8db6-ffa0ddc7b0a0",
+      "result_id": "65f337c7-7914-4cd0-839a-766c8f98b986"
+    },
+    {
+      "claim_id": "cd323152-3d5a-489e-afb6-19b283bc50f4",
+      "result_id": "65f337c7-7914-4cd0-839a-766c8f98b986"
+    },
+    {
+      "claim_id": "bdc45537-3691-4b6d-867a-68802b9ef7f1",
+      "result_id": "65f337c7-7914-4cd0-839a-766c8f98b986"
+    },
+    {
+      "claim_id": "5015649c-391a-4544-ace1-6c246737d496",
+      "result_id": "65f337c7-7914-4cd0-839a-766c8f98b986"
+    },
+    {
+      "claim_id": "cf16d50f-4092-4206-bef4-4fc52317a420",
+      "result_id": "3e1ad09b-2d72-41bb-8012-058efaa15beb"
+    },
+    {
+      "claim_id": "93259bdd-d9a0-465e-8b85-232eee4b1291",
+      "result_id": "3e1ad09b-2d72-41bb-8012-058efaa15beb"
+    },
+    {
+      "claim_id": "2ce4ddb0-1b82-44e0-9b5c-85c77e1c6494",
+      "result_id": "3e1ad09b-2d72-41bb-8012-058efaa15beb"
+    },
+    {
+      "claim_id": "3dcb20cd-d697-4672-a324-f67dc5517fd8",
+      "result_id": "3e1ad09b-2d72-41bb-8012-058efaa15beb"
+    },
+    {
+      "claim_id": "f806e182-7186-4866-ac2c-1075598a30cc",
+      "result_id": "3e1ad09b-2d72-41bb-8012-058efaa15beb"
+    },
+    {
+      "claim_id": "45733f92-c276-4cb4-8a5d-a3a3062876ed",
+      "result_id": "3e1ad09b-2d72-41bb-8012-058efaa15beb"
+    },
+    {
+      "claim_id": "4d7e2362-761e-4211-b9d1-5894a6aa6574",
+      "result_id": "3e1ad09b-2d72-41bb-8012-058efaa15beb"
+    },
+    {
+      "claim_id": "8dc5eb3e-2e34-4152-ba7c-a80342f16bfb",
+      "result_id": "3e1ad09b-2d72-41bb-8012-058efaa15beb"
+    },
+    {
+      "claim_id": "66d4caf4-d063-471f-9e5c-e151656e0121",
+      "result_id": "3e1ad09b-2d72-41bb-8012-058efaa15beb"
+    },
+    {
+      "claim_id": "61a3d446-1f5f-444a-a53f-44ba966eec80",
+      "result_id": "3e1ad09b-2d72-41bb-8012-058efaa15beb"
+    },
+    {
+      "claim_id": "b3fc5041-6597-4fae-bebc-70f5f35f39d7",
+      "result_id": "1b45dca7-3b81-4601-8b9b-28f9c17cba44"
+    },
+    {
+      "claim_id": "f425e530-b99e-43ae-b93d-f7c5798300a4",
+      "result_id": "1b45dca7-3b81-4601-8b9b-28f9c17cba44"
+    },
+    {
+      "claim_id": "6c53e615-7522-4e65-b7d4-ebc2ccaa4d79",
+      "result_id": "71a0be14-5df1-49d7-9055-3bef9d15c25a"
+    },
+    {
+      "claim_id": "e1ba944a-42f8-4e17-b96a-79bce83d6078",
+      "result_id": "71a0be14-5df1-49d7-9055-3bef9d15c25a"
+    },
+    {
+      "claim_id": "d965193a-f3b2-4418-8deb-de48296e7ee8",
+      "result_id": "71a0be14-5df1-49d7-9055-3bef9d15c25a"
+    },
+    {
+      "claim_id": "957c8702-775c-4798-86c7-d4d5173d88fe",
+      "result_id": "71a0be14-5df1-49d7-9055-3bef9d15c25a"
+    },
+    {
+      "claim_id": "b9cce367-aeac-4197-ba29-e98d4ea947c4",
+      "result_id": "71a0be14-5df1-49d7-9055-3bef9d15c25a"
+    },
+    {
+      "claim_id": "55870918-2831-42c1-a2c1-3dc35606c6fc",
+      "result_id": "71a0be14-5df1-49d7-9055-3bef9d15c25a"
+    },
+    {
+      "claim_id": "7aa1ad13-cd53-4c50-99c8-b0842db3069a",
+      "result_id": "649a89ef-8cee-487c-99b7-e17272737dd0"
+    },
+    {
+      "claim_id": "102d310d-e204-420e-8399-96ae7d8b1c78",
+      "result_id": "649a89ef-8cee-487c-99b7-e17272737dd0"
+    },
+    {
+      "claim_id": "f50f155c-285a-4d06-ac35-b58a6102d4ee",
+      "result_id": "649a89ef-8cee-487c-99b7-e17272737dd0"
+    },
+    {
+      "claim_id": "42ba4abd-4730-4b37-b058-d6a66f8789df",
+      "result_id": "649a89ef-8cee-487c-99b7-e17272737dd0"
+    },
+    {
+      "claim_id": "578fa01f-4f68-43c0-857b-eee50d4c2fc3",
+      "result_id": "649a89ef-8cee-487c-99b7-e17272737dd0"
+    },
+    {
+      "claim_id": "b4d8a29a-9590-49e6-afcb-0cfa96e0f884",
+      "result_id": "649a89ef-8cee-487c-99b7-e17272737dd0"
+    },
+    {
+      "claim_id": "e4cf34e0-01e0-4fb3-a205-5f6aead3333e",
+      "result_id": "649a89ef-8cee-487c-99b7-e17272737dd0"
+    },
+    {
+      "claim_id": "b8bc14fd-b5af-4a9e-b82b-a2e4d40eb1f8",
+      "result_id": "649a89ef-8cee-487c-99b7-e17272737dd0"
+    },
+    {
+      "claim_id": "9b2c0c9d-9471-4c3c-9932-4b3c3486803a",
+      "result_id": "8d72af99-895a-4885-a113-84ffbef1a85b"
+    },
+    {
+      "claim_id": "89c8f3f4-4ddf-4837-ba8c-70dc1e9008f7",
+      "result_id": "8d72af99-895a-4885-a113-84ffbef1a85b"
+    },
+    {
+      "claim_id": "402e99c9-82fd-4f97-bd3d-1cf1005c2a75",
+      "result_id": "8d72af99-895a-4885-a113-84ffbef1a85b"
+    },
+    {
+      "claim_id": "8fb3ae0a-9a6e-487a-ad6c-e96d070a0c63",
+      "result_id": "8d72af99-895a-4885-a113-84ffbef1a85b"
+    },
+    {
+      "claim_id": "07166925-4a32-4746-91f8-ddb99d797f2c",
+      "result_id": "8d72af99-895a-4885-a113-84ffbef1a85b"
+    }
+  ],
+  "comparisons": []
+}

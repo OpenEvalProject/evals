@@ -1,0 +1,253 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "During in vitro evolution with fluconazole, 7 of 14 evolved isolates acquired novel 'complex CNVs' with high copy numbers (up to 13 copies), occurring within single chromosome arms, flanked by distinct long inverted repeat sequences, and exhibiting symmetric stair-step amplification patterns that are neither chromosome- nor strain-specific.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C33 provide comprehensive sequencing data (read depth, breakpoint analysis) demonstrating the acquisition and structural features of complex CNVs. The observation of identical stair-step patterns (2-6-9-6-2) on different chromosomes in different genetic backgrounds (C30) strongly supports the mechanistic generality (C31). All breakpoints map to previously identified long repeat sequences (C27), and CHEF analysis confirms intra-chromosomal amplification (C39-C40).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C82"
+    ],
+    "result": "Complex CNVs arise via a dicentric chromosome intermediate and breakage-fusion-bridge (BFB) cycles that are repaired using multiple distinct long inverted repeat sequences, as evidenced by CHEF karyotyping, Southern blotting, and long-read sequencing showing fold-back inversions at repeat sequences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C62 provide strong evidence for dicentric chromosomes through CHEF and Southern blot analysis showing bands consistent with dicentric structures. Long-read sequencing (C63-C68) directly demonstrates fold-back inversions at the repeat sequences, supporting NAHR as the mechanism. The isogenic colony analysis (C56-C59) showing variable copy numbers with shared breakpoints strongly supports successive BFB cycles. The mechanistic model (C82) is well-supported by multiple orthogonal lines of evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Complex CNVs are reversible: removal of antifungal drug selection leads to dicentric chromosome resolution through recombination, resulting in either retention of the CNV on a monocentric chromosome or reversion to the euploid progenitor genotype, while continued drug selection maintains the dicentric chromosome.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C78 provide comprehensive evidence for CNV reversibility through colony morphology analysis, whole genome sequencing, and karyotyping. The observation of heterogeneous colony sizes in the absence of drug (C70), with large colonies having resolved dicentrics (C72-C74) and small colonies retaining them (C71), is well-documented. The stability under continued drug selection (C76-C77) versus instability without selection (C78) demonstrates the selective pressure dependence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C79",
+      "C88",
+      "C89"
+    ],
+    "result": "Complex CNVs confer increased fitness (growth rate and MIC50) and tolerance (supra-MIC growth) to azole antifungal drugs without major fitness costs in the absence of drug, with all seven isolates showing increased tolerance to one or more azoles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C50 are supported by comprehensive growth curve analysis and MIC measurements across multiple azole drugs. The data show similar growth rates in rich medium (C43) but improved growth in drug (C44), supporting minimal fitness cost (C46, C88). Supra-MIC growth measurements (C47-C49) quantitatively demonstrate increased tolerance. The consistency across all seven isolates with complex CNVs (C50) strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Complex CNVs amplify genes involved in drug resistance and tolerance, including MRR1 (up to 13 copies), CDR1, CDR2, and CRZ1, with 'nuclear microtubule' being the only significantly enriched GO term across all CNVs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C54 are supported by copy number analysis showing amplification of known drug resistance genes. The observation that MRR1 is always at the highest copy number (C53) is consistent across isolates. The GO analysis (C55) is appropriately conducted with multiple testing correction (Bonferroni, p<0.008), though the biological significance of 'nuclear microtubule' enrichment is unclear and may warrant further investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "CNV breakpoints are recurrent across independent evolution experiments and genetic backgrounds, occurring at long repeat sequences (median 1513 bp) with high sequence identity (median 96.1%), with some CNVs amplifying common genomic regions despite different breakpoints.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C36 document recurrent breakpoints through comparative analysis of multiple isolates. The characterization of repeat sequence properties (C37-C38) is based on computational analysis of the sequences. The recurrence of breakpoints and amplified regions across different genetic backgrounds supports selection for specific genomic regions, though the manuscript does not definitively identify which genes drive selection in all cases.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "Loss of heterozygosity (LOH) can arise via the same dicentric chromosome mechanism that generates complex CNVs, with new LOH regions identified during dicentric resolution, and complex CNVs frequently occurring in already-homozygous regions possibly due to prior CNV-LOH cycles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C103-C104 are supported by allele ratio analysis showing new LOH during dicentric resolution. However, the proposal that pre-existing homozygous regions result from prior CNV-LOH cycles (C106) is speculative and lacks direct evidence. While plausible, this interpretation cannot be distinguished from other mechanisms of LOH without additional data such as analysis of intermediate isolates or population-level studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C41",
+      "C42"
+    ],
+    "result": "Complex CNVs tend to occur in homozygous regions of progenitor genomes, but when occurring in heterozygous regions, amplify only one haplotype with allele ratios scaling proportionally with copy number.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C42 are supported by allele ratio analysis across multiple isolates. The observation that allele ratios scale with copy number (e.g., 50-62-71-64-50% for 2-3-4-3-2 copies in C42) provides strong evidence for single-haplotype amplification. The predominance of CNVs in homozygous regions (C41) is well-documented in Figure 1\u2014figure supplement 3.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C39",
+      "C40"
+    ],
+    "result": "CHEF karyotype analysis demonstrates that complex CNVs are intra-chromosomal rather than extra-chromosomal amplifications, as evidenced by dramatic increases in chromosome size.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C40 are supported by CHEF gel data showing increased chromosome sizes consistent with intra-chromosomal amplification. However, the authors acknowledge that this analysis is limited to chromosomes small enough to resolve by CHEF (Chr4), and that eccDNA cannot be completely ruled out for all isolates. The conclusion is reasonable but has acknowledged limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C83",
+      "C85",
+      "C87",
+      "C95",
+      "C96",
+      "C108",
+      "C112"
+    ],
+    "result": "The authors propose that complex CNVs and BFB cycles may explain clinical heterogeneity in drug susceptibility assays, may occur in vivo, and represent a major route to generate population heterogeneity and drug tolerance, though these remain hypotheses requiring further validation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C83, C85, C87, C95, C96, C108, and C112 are explicitly speculative proposals and hypotheses. While supported by the in vitro findings and citations to prior work showing dicentric chromosomes in clinical isolates (C84) and CNVs in mouse models (C86), direct evidence for these mechanisms operating in vivo or explaining clinical heterogeneity is lacking. These are reasonable hypotheses that require future experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C1",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "The manuscript establishes the context of antifungal drug resistance as a major health threat, reviews known mechanisms of genome plasticity and CNV formation in fungi and other organisms, and cites prior work identifying long repeat sequences as sites of genome rearrangements in C. albicans.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C6-C21 are background claims supported by appropriate citations to prior literature. These establish the scientific context and prior knowledge upon which the current work builds. The citations appear appropriate and the claims represent established knowledge in the field, though detailed verification of each cited claim is beyond the scope of this review.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "The authors compare their findings to BFB mechanisms in human cancers, noting that while similar stair-step amplifications occur, C. albicans shows a preference for longer repeat sequences (median 1513 bp, 96.1% identity) compared to microhomology in human cells, and that CNV rates exceed SNV rates by several orders of magnitude.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C93 are supported by appropriate citations to cancer genomics literature and by the authors' own sequence analysis. The comparison highlights both similarities and differences between fungal and human BFB mechanisms. The mutation rate comparison (C94) is supported by citation to prior work, though the specific rates cited are from different organisms/contexts and should be interpreted cautiously.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C107",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "The authors discuss the broader implications of CNVs for adaptive evolution, including increased mutation target size, recurrent SNVs in resistance genes, drug-induced LOH, and the relationship between drug exposure and chromosome missegregation, supported by citations to prior literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C102 and C107-C111 are primarily discussion points supported by appropriate citations to prior literature. These claims contextualize the findings within broader evolutionary and mechanistic frameworks. The claims about increased mutation target size (C99-C100) are logical inferences supported by citations, though not directly tested in this study.",
+    "result_type": "MINOR"
+  }
+]

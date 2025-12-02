@@ -1,0 +1,445 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "The authors developed a BEAST2 package implementing dynamic homology for morphological characters. The method uses alternative character coding alignments (homology alignments) as inputs, with a homology state parameter determining which alignment is used during MCMC. The package includes HomologyTreeLikelihood and HomologyMultiplexer classes, plus specialized tree operators.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C64 provide a coherent description of the software implementation with appropriate technical detail. The methodology is clearly described with reference to Figure 2 and Figure 3, and the software is made available on GitHub. The approach is conceptually sound for implementing dynamic homology in a Bayesian framework.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C98"
+    ],
+    "result": "The Bayesian dynamic homology analysis strongly supports (pp = 0.984) the hypothesis that placoderm supragnathal bones are homologous to premaxillae and maxillae rather than to vomers and dermopalatines. Homology alignment 1 has a mean log likelihood of \u221279.883 compared to \u221285.099 for alignment 0.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C68-C71, and C98 present consistent quantitative results from the Bayesian analysis with clear posterior probabilities and likelihood values. The strong posterior probability (0.984) and the difference in log likelihoods (~5.2 units) provide robust statistical support. Figure 5 corroborates these findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "The phylogenetic analysis recovers core placoderms as monophyletic with posterior probability 1.0. Maxillate placoderms (Entelognathus and Qilinyu) are sister to core placoderms with weak support (pp = 0.70), and Janusiscus is a stem osteichthyan with weak support (pp = 0.57).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C67 report phylogenetic results with appropriate posterior probabilities. The strong support for core placoderm monophyly (pp = 1.0) contrasts with weak support for the placement of maxillate placoderms and Janusiscus. The authors appropriately acknowledge the weak support for these latter relationships. Figure 4 supports these findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C5",
+      "C82",
+      "C83",
+      "C84",
+      "C72",
+      "C74",
+      "C75",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Phenetic analysis using principal coordinates analysis and distance measures shows that maxillate placoderms are morphologically most similar to reconstructed gnathostome ancestors. Maxillate placoderms were the closest taxon to reconstructed ancestors in 95% of posterior samples. However, the first two PCO axes account for less than 10% of total variance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C5, C72-C84 present phenetic analysis results supported by Figure 6. While the distance-based measures consistently identify maxillate placoderms as most similar to ancestors (95% of samples, C83), the very low variance explained by the PCO axes (<10%, C81) substantially undermines confidence in the PCO visualization. The raw distance measures (Figure 6C) provide more reliable support, but the overall interpretation requires caution given the low explanatory power of the ordination.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C103",
+      "C107"
+    ],
+    "result": "Ancestral state reconstruction indicates the gnathostome ancestor possessed premaxillae and maxillae with both facial and palatal laminae (pp = 0.93-1.0), lacked vomers and dermopalatines (pp = 0.93-0.95), and had anterior/ventral nasal capsules and lateral orbits (pp = 0.94-0.96). Putative core placoderm synapomorphies (claspers, optic fissure) are reconstructed as absent with moderate support (pp = 0.78-0.79).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C95, C103, and C107 present ancestral state reconstruction results from Table 1 with appropriate posterior probabilities. The high posterior probabilities for jaw bone characters (0.93-1.0) provide strong support for the main conclusions. The moderate support for claspers and optic fissure is appropriately acknowledged, with C96 noting this likely reflects missing data. The results are internally consistent and well-supported by the Bayesian analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C99",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "The study proposes that the gnathostome ancestor possessed maxillae and premaxillae with both facial and palatal laminae, with facial laminae subsequently lost in core placoderms and palatal laminae lost in osteichthyans, representing divergent evolutionary trajectories.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C8, C99, and C103-C105 present the main evolutionary scenario, which is well-supported by the ancestral state reconstruction (C85-C92) and the phylogenetic results (C65-C67). The scenario is logically consistent with the data and represents a parsimonious interpretation given the phylogenetic framework. Figure 7 illustrates this evolutionary scenario clearly.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C124",
+      "C125",
+      "C126"
+    ],
+    "result": "Under the hypothesis of placoderm monophyly, the gnathostome ancestor had anterior-ventral nasal capsules and lateral eyes, making the dorsal nasal capsules of some placoderms convergent with jawless fishes rather than plesiomorphic. The shared cranial architecture of arthrodires, maxillate placoderms, and osteichthyans represents shared plesiomorphies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C124-C126 present evolutionary interpretations that follow logically from the phylogenetic results (C65) and ancestral state reconstructions (C91-C92). The inference is contingent on placoderm monophyly but is well-supported within that framework. The authors appropriately cite supporting literature (King et al., 2017; Dupret et al., 2014).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150"
+    ],
+    "result": "The morphological data matrix was based on King et al., 2017 with 13 taxa added and 4 removed. Characters concerning premaxillae, maxillae, dermopalatines, and vomers were coded into two alternative homology alignments corresponding to traditional and alternative interpretations. The final matrix had 489 fixed characters and 18 with variable homology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C144-C150 describe the data matrix construction with appropriate detail. The matrix is provided in supplementary materials, and the two homology alignments are clearly defined corresponding to the competing hypotheses illustrated in Figure 1. The methodology is transparent and reproducible.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C155",
+      "C156",
+      "C157",
+      "C158",
+      "C159",
+      "C160",
+      "C161",
+      "C162",
+      "C163",
+      "C164",
+      "C165",
+      "C166",
+      "C167",
+      "C168",
+      "C169",
+      "C170",
+      "C171"
+    ],
+    "result": "The Bayesian analysis used BEAST2.6.2 with homoplasy-based partitioning, a sampled ancestor birth-death model, and an uncorrelated lognormal relaxed clock. The analysis ran for 800 million generations across four independent runs, with convergence confirmed using Tracer and RWTY. Ancestral sequence logging generated 1801 reconstructed ancestors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C151-C171 provide comprehensive methodological details with appropriate software citations. The analysis parameters are clearly specified, including priors, run length, sampling frequency, and convergence diagnostics. The methodology follows best practices for Bayesian tip-dating analysis. The XML file is provided in supplementary materials, enhancing reproducibility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C172",
+      "C173",
+      "C174",
+      "C175",
+      "C176",
+      "C177",
+      "C178",
+      "C179",
+      "C180",
+      "C181"
+    ],
+    "result": "Distance-based phenetic analysis used principal coordinates analysis in the R package Claddis with the Maximum-Observable Rescaled Distance (Gower coefficient). Ordination included gnathostome fossils and 90 reconstructed ancestors, with a second ordination using only placoderms. Raw distance measures were calculated for all 1801 reconstructed ancestors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C172-C181 describe the phenetic analysis methodology with appropriate detail and software citations. The choice of distance metric is appropriate for morphological data with missing values. The methodology is clearly described and appears reproducible, though the low variance explained by PCO axes (C81) limits the interpretability of the ordination plots.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C106",
+      "C109",
+      "C110",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C123"
+    ],
+    "result": "The homology hypothesis is consistent with comparative anatomy. Stem osteichthyans (Lophosteus, Andreolepis) show intermediate conditions with more developed internal laminae. Recently described acanthothoracids and Lophosteus show jaw morphologies unlike arthrodires. The snouts of maxillate placoderms and arthrodires are similar in gross morphology, differing mainly in dermal bone cover.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106, C109-C110, and C118-C121, C123 present comparative anatomical observations supported by appropriate citations to prior work. These observations provide independent support for the homology hypothesis beyond the statistical analysis. The anatomical comparisons are reasonable and well-documented in the cited literature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "The divergent evolutionary trajectories of jaw bones in placoderms and osteichthyans may be associated with different ecological roles. Early osteichthyans included large predators (Megamastax), while maxillate placoderms lacked large teeth and had immovable eyes. Loss of facial laminae in placoderms may relate to crushing invertebrate prey, analogous to lungfish evolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C111-C117 present ecological hypotheses that are speculative (C111, C115-C117 are marked as SPECULATION). While the observations about Megamastax (C112) and Entelognathus eyes (C114) are supported by citations, the causal links between ecology and jaw bone evolution are not directly tested. These represent plausible hypotheses for future investigation rather than demonstrated results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134"
+    ],
+    "result": "Maxillate placoderms are not directly ancestral to other gnathostomes. They are highly derived from the common ancestor (distance 0.2-0.3) and are contemporaneous with early osteichthyans. The analysis suggests gnathostome divergence during the Ordovician, with tentative support from enigmatic fossils (Skiichthys, Mongolepidae).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C128-C134 appropriately qualify the interpretation of the phenetic results. The authors correctly note that morphological similarity to ancestors does not imply direct ancestry, especially given temporal constraints (C133) and the derived nature of maxillate placoderms (C129, C134). The Ordovician divergence (C130) follows from the tip-dating analysis (Figure 4), though support from enigmatic fossils (C131) is appropriately described as tentative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C135",
+      "C136",
+      "C137",
+      "C138"
+    ],
+    "result": "The results are contingent on the phylogenetic hypothesis of core placoderm monophyly, which is only strongly supported under Bayesian tip-dating methods. Under the alternative hypothesis of placoderm paraphyly, maxillate placoderms would not be representative of ancestral conditions, implying a radically different evolutionary scenario.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C135-C138 appropriately acknowledge the key assumption underlying the evolutionary interpretations. The authors transparently discuss how alternative phylogenetic hypotheses would change the conclusions, citing relevant literature (Brazeau, 2009; Davis et al., 2012; Dupret et al., 2014). This represents appropriate scientific caution about the dependence of results on phylogenetic framework.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143"
+    ],
+    "result": "The authors discuss criticisms of simultaneous analysis of primary and secondary homology, arguing that dynamic homology should only be used when alternative homology statements are equally plausible. They note that supporting the best-fitting homology statement is preferable to arbitrary choice, and that arbitrary choices could lead to suboptimal trees when alternatives support different topologies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C139-C143 present a balanced discussion of methodological considerations, citing criticism from Simmons (2004) and providing reasoned responses. The arguments about when dynamic homology is appropriate (C140-C141) and potential problems with arbitrary choices (C142-C143) are logically sound, though some statements are speculative (C142-C143). This represents appropriate methodological reflection.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C1",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "The authors review established concepts in homology testing, including the two-step process of primary and secondary homology, homology criteria (similarity, conjunction), and the potential circularity in the traditional approach. Dynamic homology is presented as a solution to this circularity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C9-C14, C34-C37 accurately summarize established concepts in phylogenetic methodology, supported by appropriate citations to foundational literature (Patterson, 1982a, 1988; Pinna, 1991; Rieppel, 1996). These claims provide necessary background for understanding the methodological contribution of the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "The authors review prior work on dynamic homology, noting implementations for molecular data in POY and Bali-Phy, limited application to morphological data (Agolin and D'Haese, 2009; Ram\u00edrez, 2007), and that morphological characters are often not amenable to molecular alignment models. Dynamic homology for morphological data has been rarely explored and restricted to parsimony approaches.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C45 accurately review the state of the field regarding dynamic homology methods, with appropriate citations to prior work. The characterization of morphological characters as not amenable to molecular alignment models (C41) is reasonable, and the statement that morphological dynamic homology has been rarely explored (C44-C45) appears accurate based on the cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "The authors propose that a Bayesian approach to dynamic homology would allow alternative homology statements or tree topology to be treated as nuisance parameters, and would enable comparative analyses while accounting for uncertainty in both tree topology and primary homology statements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C49 present the conceptual motivation for the Bayesian dynamic homology approach. While some aspects are speculative (C46-C47), the logic is sound and C48 is supported by citation to prior work (Lee et al., 2018). The proposed advantages are reasonable and are demonstrated by the empirical application in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "The authors review the homology problem for placoderm jaw bones, describing the traditional hypothesis (supragnathals homologous to vomers/dermopalatines) and the alternative hypothesis from Zhu et al., 2016 (supragnathals homologous to premaxillae/maxillae), noting that both hypotheses continue to be discussed and represent two opposing possibilities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C3, C15-C30 accurately describe the competing homology hypotheses with appropriate citations and anatomical detail supported by Figure 1. The description of the test of conjunction (C28) correctly applies homology criteria. This provides essential context for the empirical analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "The authors review prior approaches to distinguishing between conflicting homology hypotheses, including Jardine's (1969) method based on spatial relationships, Lee's (1998) parsimony approach on fixed topologies, and note that Zhu et al., 2016 essentially used the latter approach.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C33 accurately describe prior methodological approaches with appropriate citations. The characterization of Zhu et al., 2016's approach (C33) is reasonable based on the cited work, though it involves some inference about their methodology.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "The authors explain the significance of placoderm jaw bone homology for understanding early vertebrate evolution, noting that homology with marginal jaw bones suggests deep origins. They discuss the phylogenetic context, noting that Zhu et al., 2016 worked within placoderm paraphyly, while placoderm monophyly is supported by equivalent morphological data and Bayesian methods, but implications within monophyly have not been discussed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C55 appropriately frame the research question and its significance, with accurate characterization of prior work and competing phylogenetic hypotheses. The citations to supporting literature (King et al., 2017; Brazeau, 2009; Davis et al., 2012) are appropriate. This establishes the gap in knowledge that the study addresses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C96",
+      "C97"
+    ],
+    "result": "The moderate support for absence of putative core placoderm synapomorphies (claspers, optic fissure) at the gnathostome node is likely due to high proportions of missing data, and it is unknown whether maxillate placoderms possessed these features.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C97 provide reasonable explanations for uncertainty in ancestral state reconstruction. The inference about missing data (C96) is plausible and the statement about unknown character states in maxillate placoderms (C97) is factually accurate. These appropriately qualify the interpretation of results in C93-C95.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C108",
+      "C122"
+    ],
+    "result": "The authors contrast their evolutionary scenario with that of Zhu et al., 2016, who proposed plesiomorphic palatal maxillae/premaxillae (arthrodiran condition) with facial laminae gained in maxillate placoderms + crown gnathostomes and palatal laminae lost in osteichthyans. The authors' scenario suggests arthrodires exhibit a specialized rather than plesiomorphic condition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C102, C108, and C122 accurately describe the alternative evolutionary scenario from Zhu et al., 2016 and contrast it with the authors' interpretation. The characterization is supported by appropriate citations and represents a fair comparison of competing hypotheses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C127"
+    ],
+    "result": "The authors speculate that among jawless fishes, heterostracan braincase proportions may represent the plesiomorphic gnathostome condition more closely than osteostracans or galeaspids, noting that heterostracans probably possess paired anterior nasal capsules.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C127 presents a speculative comparison supported by citations (Halstead, 1973; Janvier, 1996). While the speculation is reasonable given the ancestral state reconstruction results, it is not directly tested and represents a hypothesis for future investigation rather than a demonstrated result.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,294 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "COX6B2 is expressed in LUAD tumors and cell lines but not in normal lung tissue, and elevated COX6B2 expression correlates with significantly reduced overall survival and time to first progression in LUAD patients. This correlation is specific to LUAD and not observed in lung squamous carcinoma (LUSC).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple independent lines of evidence support this result: TCGA RNA-seq data (C39), immunoblot analysis of tumor tissues (C40-C41), IHC staining (C43), and Kaplan-Meier survival analysis with statistically significant p-values (C2, C36, C37). The specificity to LUAD versus LUSC (C38) strengthens the finding. Immunofluorescence confirms mitochondrial localization (C48).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C64",
+      "C67"
+    ],
+    "result": "COX6B2 overexpression enhances complex IV activity by approximately 25%, leading to significant increases in oxidative phosphorylation (basal, ATP-linked, maximal, and reserve OCR), total ATP production, and NAD+/NADH ratio in LUAD cell lines.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The result is well-supported by direct complex IV activity measurements (C64), comprehensive Seahorse OCR analysis across multiple parameters (C54-C57), replication in two independent cell lines (C58), and biochemical measurements of ATP (C59) and NAD+/NADH ratio (C60). The ~25% increase in complex IV activity without increased complex IV abundance (C66) supports the rate-limiting interpretation (C67).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C12",
+      "C63",
+      "C65",
+      "C79"
+    ],
+    "result": "COX6B1 overexpression does not enhance complex IV activity or OXPHOS, showing minimal or slightly decreased OCR and no increase in DNA synthesis, contrasting with COX6B2's effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The differential effects of COX6B1 versus COX6B2 are consistently demonstrated across multiple assays: complex IV activity (C65), OCR measurements (C63), and EdU incorporation (C79). This is consistent with prior literature showing COX6B1 removal enhances complex IV activity (C29, C63), supporting a negative regulatory role for COX6B1.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C74",
+      "C75"
+    ],
+    "result": "COX6B2 preferentially integrates into dimeric complex IV and supercomplexes (>85-90%), while COX6B1 is predominantly found in monomeric complex IV (>98%). COX6B2 expression promotes the incorporation of complex IV into supercomplexes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "BN-PAGE analysis provides direct evidence for differential distribution patterns of COX6B2 versus COX6B1 (C68-C71). The shift in COXIV distribution upon COX6B2 but not COX6B1 overexpression (C72) demonstrates that COX6B2 actively promotes supercomplex formation. The lack of increased ROS despite enhanced OXPHOS (C73) is consistent with the proposed supercomplex function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C6",
+      "C77",
+      "C78",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "COX6B2 expression confers a proliferative advantage to cancer cells, increasing DNA synthesis by 38-50%, enhancing population doubling rates by 30-37%, promoting anchorage-independent growth, and maintaining proliferation under hypoxic conditions (2.5% O2).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple complementary assays demonstrate the proliferative advantage: EdU incorporation (C77-C78), population doubling rates (C80-C81), soft agar colony formation (C83), and hypoxia experiments (C84-C85). The pyruvate rescue experiment (C82) provides mechanistic insight linking the effect to NAD+ metabolism. The proliferative advantage is observed in both normoxia and hypoxia (C86).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "COX6B2 expression is upregulated by hypoxia through HIF-1 binding near the COX6B2 promoter, with COX6B2 mRNA increasing >2-fold and protein stabilizing after 12 hours at 2.5% oxygen, while COX6B1 expression remains unchanged.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The result is supported by ChIP-seq data showing HIF-1 binding (C87), identification of 11 putative HREs (C88), qPCR data showing selective COX6B2 upregulation (C89-C90), and immunoblot confirmation of protein stabilization (C91). The independence of COX6B1 and COX6B2 regulation is confirmed by overexpression experiments (C92-C93).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C7",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "Depletion of COX6B2 by shRNA, siRNA, or CRISPR significantly attenuates OXPHOS (decreased basal, ATP-linked, maximal, and reserve OCR), reduces NAD+/NADH ratio and total ATP, collapses mitochondrial membrane potential, and increases intracellular hydrogen peroxide.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The loss-of-function phenotype is robustly demonstrated using three independent depletion methods (shRNA, siRNA, CRISPR) across multiple cell lines (C97-C102). Comprehensive metabolic characterization includes OCR (C97-C102), NAD+/NADH ratio (C103), ATP levels (C104), mitochondrial membrane potential (C105), and ROS production (C106). The consistency across methods and cell lines strongly supports the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C109",
+      "C110",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "COX6B2 depletion leads to cell death through apoptosis (increased cleaved caspase-3, PARP, and Annexin-V staining) and senescence (increased \u03b2-galactosidase), with decreased proliferation and anchorage-independent growth. ROS scavenging with NAC partially rescues these phenotypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple markers of cell death are consistently observed: caspase activation (C112, C114), PARP cleavage (C114), Annexin-V staining (C116), and senescence markers (C117). The phenotypes are replicated across different depletion methods (shRNA, siRNA, CRISPR) (C111, C115). The NAC rescue experiment (C119-C120) provides mechanistic insight linking the phenotype to ROS generation. However, pyruvate/uridine supplementation failed to rescue (C118), suggesting the mechanism is more complex than simple metabolic insufficiency.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C122",
+      "C123",
+      "C124",
+      "C125"
+    ],
+    "result": "COX6B2 is both necessary and sufficient for tumor growth in vivo, with COX6B2 overexpression increasing tumor mass 4-fold and COX6B2 depletion severely reducing tumor growth and final mass in xenograft models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The in vivo data provide strong evidence for both gain-of-function (C11, C122) and loss-of-function (C10, C123-C124) phenotypes in xenograft models. The 4-fold increase in tumor mass with overexpression and near-complete ablation of tumor growth with depletion demonstrate the critical role of COX6B2 in tumor growth. The experiments were conducted in nude mice with appropriate sample sizes (n=5) and statistical analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "COX6B2 expression in tumors does not correlate with COX6B1 presence/absence, and depletion or overexpression of either isoform does not affect the other, suggesting independent regulatory mechanisms. COX6B2 shows moderate correlation with COXIV, suggesting association with increased mitochondrial content.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The independence of COX6B1 and COX6B2 regulation is directly demonstrated by overexpression/depletion experiments (C46). The lack of correlation between COX6B2 and COX6B1 in tumors (C44) and the moderate correlation with COXIV (C45) are supported by immunoblot analysis and Pearson correlation. This supports the conclusion of independent regulation (C47).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C62",
+      "C66"
+    ],
+    "result": "COX6B2 overexpression enhances OXPHOS without increasing mitochondrial DNA content, total mitochondria number, complex IV abundance, or glycolytic activity (ECAR).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The result is supported by multiple negative controls: mitochondrial DNA quantification (C52), MitoTracker staining (C53), COXIV immunofluorescence (C66), and ECAR measurements (C62). These controls are important for establishing that COX6B2's effects are due to enhanced complex IV activity rather than increased mitochondrial biogenesis or metabolic reprogramming.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C73",
+      "C76"
+    ],
+    "result": "COX6B2 overexpression does not increase superoxide production despite enhanced OXPHOS, consistent with the hypothesis that supercomplex formation enhances electron transport while limiting oxidative stress.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "MitoSOX Red measurements (C73) directly demonstrate no increase in superoxide with COX6B2 overexpression. This observation, combined with the supercomplex formation data, supports the proposed mechanism (C76). However, C76 is explicitly labeled as a proposal/speculation, so while the data support the observation, the mechanistic interpretation remains somewhat speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C118",
+      "C132",
+      "C133",
+      "C134",
+      "C135"
+    ],
+    "result": "COX6B2-depleted cells cannot be rescued by pyruvate and uridine supplementation, suggesting high dependence on OXPHOS for survival despite the theoretical ability of glycolysis and COX6B1 to compensate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The failed rescue experiment (C118) is a negative result but provides important mechanistic insight. The observation that cells die despite COX6B1 presence and potential glycolytic compensation (C132-C134) supports the conclusion of OXPHOS dependence (C135). However, the mechanistic understanding remains incomplete, as the claims acknowledge these are theoretical expectations that were not met.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131"
+    ],
+    "result": "The authors propose that COX6B2 and COX6B1 have distinct functions, with COX6B1 serving a negative regulatory role in normal tissues to prevent excessive energy generation and ROS, while COX6B2 promotes efficient OXPHOS in high-energy-demand contexts like sperm and tumors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the differential effects of COX6B2 versus COX6B1 are well-documented (C126), the proposed mechanistic models for their physiological roles (C127-C131) are explicitly speculative hypotheses. The data support functional differences but do not directly test the proposed roles in normal tissues, sperm, or early tumorigenesis. These remain plausible but unproven hypotheses requiring future investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149"
+    ],
+    "result": "The authors propose that COX6B2 represents a tumor-specific vulnerability for therapeutic targeting, either through OXPHOS inhibitors (using COX6B2 as a biomarker), small molecule inhibitors targeting COX6B2-specific structural elements, or immunotherapy approaches exploiting sequence differences between COX6B2 and COX6B1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The therapeutic proposals (C145-C149) are speculative and not directly tested in this study. While the data establish COX6B2's importance for tumor growth and OXPHOS, the specific therapeutic strategies proposed remain hypothetical. The citations to prior work (C137-C143) establish the general importance of OXPHOS in cancer and limitations of current inhibitors (C144), providing context but not direct validation of the proposed COX6B2-targeting strategies.",
+    "result_type": "MINOR"
+  }
+]

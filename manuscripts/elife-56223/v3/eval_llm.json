@@ -1,0 +1,552 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6"
+    ],
+    "result": "Down syndrome (DS) is caused by trisomy 21, occurring in ~1/800 live births. Most cases (95%) involve complete trisomy, with smaller percentages showing partial trisomy (3%) or mosaicism (2%). Translocation and mosaic DS typically present milder phenotypes. People with DS exhibit intellectual disabilities, congenital heart disease, leukemia risk, and early-onset dementia.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C6 are well-supported by appropriate citations to peer-reviewed literature and population-based studies (Driscoll and Gross 2009; Shin et al. 2010; Prasher 1995; Chandra et al. 2010). These represent established clinical and epidemiological knowledge about DS that provides necessary background context for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "Ts65Dn was the first viable DS mouse model and has been widely used for over two decades. Multiple pharmaceuticals showed promise in Ts65Dn but failed to translate to humans, exemplified by the RG1662 clinical trial termination in Phase IIa.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C11 provide well-documented historical context supported by appropriate citations (Davisson et al. 1990, 1993; Reeves et al. 1995; Braudeau et al. 2011; Fernandez and Reeves 2015). The RG1662 trial failure is documented in clinical trial registries. This establishes the rationale for developing improved DS models.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "Current annotation of HSA21 identifies 17 PCGs on HSA21p and 213 on HSA21q. However, BLASTN analysis reveals that 15 of 17 HSA21p PCGs are base-perfect duplications of HSA21q, with only BAGE2 and TPTE being unique to HSA21p.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C14 are supported by specific genome annotation databases (GRCh38.p12, BioMart-Ensembl, May 2019) and BLASTN analysis presented in Table 1. The bioinformatic analysis is straightforward and the data are clearly presented, supporting the conclusion that most HSA21p genes are duplications.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "Tc1 is the only existing transchromosomic DS mouse model carrying HSA21, but it has significant limitations. The HSA21 in Tc1 was irradiated during creation, disrupting >50 PCGs, leaving only 158 of 213 functionally trisomic HSA21q PCGs. All Tc1 mice are mosaic for HSA21, making each mouse unique. Mosaicism is common in transchromosomic models due to variable retention rates of human chromosomes, linked to centromere function and chromosomal instability in interspecific hybrids.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C21 are well-supported by multiple citations (Gribble et al. 2013; O'Doherty et al. 2005; Choong et al. 2015; Besson 2005; Roper and Reeves 2006; Shinohara et al. 2000; Tomizuka et al. 1997; Takiguchi et al. 2014; Lerit and Poulton 2016; Metcalfe et al. 2007). This establishes the critical limitations of existing models and provides strong rationale for the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "TcMAC21 was created using MAC1 vector containing MMU11 centromere. A loxP site was introduced at HSA21 position 13,021,348-13,028,858, followed by MMCT into CHO cells and Cre-mediated reciprocal translocation to generate HSA21q-MAC. The construct contains MMU11 centromere plus 2.5 kb peri-centromeric region and HSA21q. Selection yielded 16/18 PCR-positive clones, with 2/8 confirmed by FISH. TcMAC21 contains a nearly complete, freely segregating HSA21q with no detectable mosaicism and represents the most complete genetic DS model (93% HSA21q PCGs, 79% non-PCGs).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C30 describe the chromosome engineering methodology supported by Figure 1 and supplementary figures. The approach is well-documented with appropriate citations (Takiguchi et al. 2014; Kazuki et al. 2011, 2019; Tomizuka et al. 1997). The stepwise construction is clearly presented with verification at each stage (PCR, FISH). This represents a major technical achievement.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "WGS confirmed HSA21q in TcMAC21 extends from loxP site (bp 13,021,348) to telomere (46,691,226), containing all annotated PCGs from POTED to PRMT2 except one non-PCG (AP001464.1). Four deletions encompass ~29% of HSA21q but occur in PCG-poor regions, affecting only 14/213 PCGs. WGS identified 91 SNVs, with 90/91 being known alternative alleles. One novel SNV in SON gene (P1682Q) is predicted tolerated by SIFT, with SON mRNA detected by RNA-Seq.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C38 are strongly supported by WGS data presented in Figure 1E-F and supplementary data. The sequencing depth (25.5\u00d7) is adequate for variant calling. The analysis appropriately distinguishes known variants from novel ones and uses SIFT prediction for functional assessment. RNA-Seq validation of SON expression strengthens the conclusion that the SNV is likely tolerated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "RNA-Seq analysis of P1 forebrain shows HSA21 genes are expressed in TcMAC21. Neither 49 KRTAPs nor their mouse orthologs were expressed in brain. In TcMAC21, 66.5% of HSA21 PCGs and 11.1% non-PCGs had medium/high expression (FPKM >0.5), with 36.5% PCGs and 1.2% non-PCGs highly expressed (FPKM >5). Expression was detected from most proximal (ANKRD30BP2, POTED) to most distal (DSTNP1, PRMT2) genes. Genes in deleted regions showed no transcripts. The HSA21q-MAC spans the entire long arm without MAC interference with transcription.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C46 are well-supported by RNA-Seq data (Figure 2A-B, n=2 per group). Detection of expression from proximal to distal genes with absence in deleted regions provides strong evidence for chromosome integrity. However, the small sample size (n=2) is a limitation. The conclusion about MAC non-interference is reasonable but somewhat inferential.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Most HSA21 non-PCGs (476/487) lack mouse orthologs. Four HSA21 microRNAs have mouse orthologs but show extremely low/undetectable expression. Of 160 HSA21q PCGs with mouse orthologs (excluding KRTAPs), 117 mouse orthologs were expressed (FPKM \u22651) in Eu. Mouse ortholog expression was largely unaffected by HSA21q presence: 106/117 expressed at 80-120% of Eu levels. Two orthologs (Erg, Prdm15) showed reduced expression (<0.8-fold), while nine showed increased expression (>1.2-fold).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C53 are supported by RNA-Seq data and annotation analysis (Figure 2C, Figure 2\u2014source data 1). The finding that most mouse orthologs maintain normal expression levels is important for model interpretation. The data are clearly presented, though the biological significance of the few altered orthologs is not explored.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "HSA21 PCG transcript levels averaged ~50% of mouse orthologs in Eu (expected for single copy), but with considerable variation. Total expression (HSA21 + mouse ortholog) analysis showed: 34.6% of intact HSA21 PCGs in low overexpression range (<1.3-fold), 29.9% in expected range (1.3-1.7-fold), and 35.5% highly overexpressed (>1.7-fold).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C57 are supported by RNA-Seq analysis (Figure 2C). The variation in expression ratios is interesting and biologically relevant, though the mechanisms underlying this variation are not explored. The categorization into expression ranges is somewhat arbitrary but provides useful descriptive information about dosage effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Among 13,976 mouse genes with FPKM \u22651 in Eu, 712 were down-regulated (<0.8-fold) and 1,191 up-regulated (>1.2-fold) in TcMAC21. This indicates genome-wide perturbation of steady-state RNA levels, consistent with other DS mouse models and people with trisomy 21.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C60 are supported by RNA-Seq data (Figure 2\u2014source data 2). The genome-wide transcriptional changes are expected and consistent with prior DS research. However, the comparison to other models and humans (C60) is stated but not directly demonstrated in this study\u2014it relies on established knowledge and inference.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Taqman RT-PCR validation showed significant correlation with RNA-Seq (R=0.96, p<0.0001). Analysis of different P1 tissues revealed HSA21 PCG expression in forebrain and hindbrain were similar but frequently different from heart, consistent with tissue-specific regulation. These results indicate HSA21q is actively transcribed and regulated to produce dosage imbalance in TcMAC21.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C64 are well-supported by Taqman RT-PCR validation (Figure 2D-E, n=2-3). The high correlation (R=0.96) validates RNA-Seq findings. Tissue-specific expression patterns (C62-C63) are clearly demonstrated and biologically expected. The conclusion about active transcription and regulation (C64) is well-supported by the combined data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C65"
+    ],
+    "result": "GFP appears to be a reliable marker for genotyping TcMAC21, based on 100% concordance between GFP and HSA21q gene expression across the chromosome with zero false positives among fifteen pairs tested.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C65 is supported by validation data showing perfect concordance between GFP fluorescence and HSA21q gene expression in 15 mouse pairs (Figure 3\u2014source data 1, Figure 3\u2014figure supplement 1A). This is important for practical use of the model, though the sample size is modest.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Multiple assays demonstrate minimal mosaicism in TcMAC21. FISH detected HSA21q-MAC in \u226596% of cells across several dissociated tissues. FCM showed >92% GFP-positive lymphocytes. Immunostaining revealed all Purkinje cells in TcMAC21 were GFP-positive while Eu were negative. Together, these findings indicate mosaicism is rare in TcMAC21, if it occurs at all.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C69 are strongly supported by multiple complementary assays (FISH, FCM, immunostaining) across different tissues (Figure 3C-F, n=1-4 per assay). The high retention rates (>92-96%) across methods and tissues provide convincing evidence for minimal mosaicism. This represents a major improvement over Tc1 and is critical for model validity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "CHDs occur in nearly half of DS newborns and in several DS mouse models. In TcMAC21, 28.6% had structural heart defects (wet dissection and histology combined). VSD was predominant (21.4%), with AVSD at 2.4%. The 24% septal defect frequency is substantially greater than Ts65Dn (4%) but less than Tc1 (38-55%). AVSD occurs in 20% of DS newborns but is rare in DS mouse models except with additional genetic modifiers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C76 are supported by systematic cardiac analysis (Figure 4A-C, Eu n=19-20, TcMAC21 n=21) and appropriate citations. The CHD frequency in TcMAC21 is intermediate between other models, which is reasonable given its genetic composition. The presence of AVSD, though rare (2.4%), is notable. Sample sizes are adequate for detecting major defects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Cerebellar hypoplasia is present in every person with DS. Analysis of Ts65Dn identified cerebellar granule cell deficit and correctly predicted its occurrence in people with DS. This deficit is present in several DS mouse models. Ventricle enlargement is associated with neurodegenerative diseases and aneuploidies including DS, and was found in previous DS mouse models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C80 provide well-documented background supported by appropriate citations (Aylward et al. 1997; Baxter et al. 2000; Olson et al. 2004; Dutka et al. 2015; Lana-Elola et al. 2016; Raveau et al. 2017; Ishihara et al. 2010). This establishes the rationale for examining these phenotypes in TcMAC21.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "MRI analysis of ~4.5-month-old mice showed TcMAC21 had slightly larger total brain volume than Eu (487.9\u00b117.6 vs 467.3\u00b114.6 mm\u00b3, p<0.05). Absolute volumes of lateral ventricles (p<0.003), thalamus (p<0.04), hypothalamus (p<0.02), and superior colliculus (p<0.0001) were significantly increased. Percentage volumes of lateral ventricles (p=0.005) and superior colliculus (p<0.0001) were enlarged, neocortex was unchanged (p=0.43), but cerebellum was decreased (13.58% vs 12.76%, p<0.0005). The TcMAC21 brain shows altered configurations with enlarged lateral ventricles and superior colliculus, and smaller cerebellum. The impact is somewhat less than observed in Ts65Dn.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C87 are well-supported by MRI data (Figure 4D, Figure 4\u2014source data 1-2, n=7 per group). Statistical analyses are appropriate with clear p-values. The finding of cerebellar hypoplasia is consistent with DS phenotype. The comparison to Ts65Dn (C87) is stated but not directly demonstrated\u2014it relies on citation to prior work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "The impact of trisomy on skull development in DS individuals and mouse models is well-documented. PCA of 3D geometric morphometric analysis showed separation between TcMAC21 and Eu cranial shape. TcMAC21 mice have relatively more antero-posteriorly retracted and medio-laterally expanded (short and wide) snouts than Eu. TcMAC21 neurocranium is slightly more globular than Eu. These differences are analogous to but somewhat less pronounced than those in other DS mouse models (Ts65Dn, Dp(16)1Yey).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C92 are supported by 3D geometric morphometric analysis (Figure 4E-F, Eu n=10, TcMAC21 n=9) and appropriate citations (Richtsmeier et al. 2000; Starbuck et al. 2011, 2014; Singh et al. 2016). The PCA shows clear separation between groups. The comparison to other models (C92) is stated but not quantitatively demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "Individuals with trisomy 21 invariably display Alzheimer disease plaques and tangles from early age, linked to extra APP copy on HSA21. In P1 forebrain, APP was the most highly expressed HSA21 PCG in TcMAC21, with total APP transcripts ~2\u00d7 Eu levels (FPKM 216 vs 436). In 15-24-month-old mice, total APP protein in hippocampus and cortex was ~2\u00d7 Eu (p<0.001). Both A\u03b240 and A\u03b242 levels were significantly increased, but A\u03b240/A\u03b242 ratio was not different. Despite elevated APP, TcMAC21 did not show amyloid plaque formation by 15-24 months, like other DS mouse models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C101 are supported by RNA-Seq, Western blot, ELISA, and immunostaining data (Figure 5A-C, n=6 per group). The ~2-fold increase in APP at both transcript and protein levels is consistent with gene dosage. Increased A\u03b2 levels without plaque formation is consistent with other DS mouse models. The lack of plaques may reflect species differences or require longer aging.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "Children with DS have elevated leukemia risk and hematopoietic disorders. Peripheral blood analysis showed significantly increased platelet counts in TcMAC21 vs Eu (112.3\u00b17.8 vs 101.2\u00b16.8, p<0.033). TcMAC21 exhibited splenomegaly and white pulp hypertrophy. Colony-forming assays showed significantly reduced GM frequency in bone marrow and reduced GM and GEMM colony formation in spleen, consistent with hematopoietic abnormalities in other trisomic mouse models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C107 are supported by peripheral blood analysis (Figure 5\u2014source data 1, n=5-6), histology (Figure 5\u2014figure supplement 1), and colony-forming assays (Figure 5D, n=6 per group). Statistical analyses are appropriate. The findings are consistent with DS hematopoietic phenotypes and other models (Birger et al. 2013). This represents a novel characterization for this model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "Cultured lymphocytes from DS individuals show increased sensitivity to X-rays and DNA-damaging compounds. Radiation-induced suppression of hematopoietic stem cell clonogenic activity is associated with increased DNA double-strand breaks. Following X-ray irradiation, TcMAC21 bone marrow cells had significantly higher frequency of aberrations and exchanges in chromatids and chromosomes than Eu.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C110 are supported by radiosensitivity testing (Figure 5E-G, n=3 per group) and appropriate citations (Sasaki and Tonomura 1969; Wang et al. 2016). The increased chromosomal aberrations after irradiation recapitulate a known DS phenotype. Sample size is modest (n=3) but adequate for this type of analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "BDF1.TcMAC21 females are fertile. Four females backcrossed to B6 males produced 15 litters with 90 pups (average 6 pups, range 2-9), with 48% TcMAC21 offspring. No fertile TcMAC21 males were produced in B6;D2 mixed background. TcMAC21 females showed better pup care than Ts65Dn females with no apparent pup loss between birth and weaning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111-C116 are supported by breeding data (Figure 6\u2014source data 1). The 48% transmission rate is close to expected Mendelian ratio. Male infertility in mixed background is noted but not extensively characterized. The comparison to Ts65Dn maternal care is observational but practically important.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C117",
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "A selectively bred Ts65Dn subline has 42% fertile trisomic males, producing 28% trisomic offspring at weaning (vs 40% from females). When euploid males from this line were crossed to TcMAC21, fertile males were produced. TcMAC21 male trisomic progeny frequency was 28%, lower than 50% from TcMAC21 females.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C117-C120 are supported by breeding data and citation (Moore et al. 2010). The strategy to obtain fertile TcMAC21 males through crossing with the fertile Ts65Dn line is clever. The reduced transmission from males (28% vs 50% from females) is consistent with Ts65Dn and suggests meiotic or developmental selection against trisomic sperm or embryos.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125"
+    ],
+    "result": "Individuals with DS show slower growth with delayed developmental milestones, reflected in several DS mouse models. TcMAC21 cohort was consistently smaller than Eu from P1 through P90. Both male and female trisomic mice were smaller than Eu counterparts, with most P90 TcMAC21 females and males weighing <20g and <24g, respectively. On average, adult TcMAC21 mice were ~25% smaller than Eu at P90.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C121-C125 are supported by growth data (Figure 6A, Figure 6\u2014source data 2A, n\u22659 per group) and citation (Hatch-Stein et al. 2016). The consistent growth deficit across development and both sexes is clear and statistically significant (p<0.0001). This recapitulates a key DS phenotype.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C126",
+      "C127",
+      "C128"
+    ],
+    "result": "Nest construction is a complex task requiring coordination of hippocampus, prefrontal cortex, and cerebellum. Ts65Dn mice show nesting defects. However, TcMAC21 nest quality was equivalent to Eu when tested at 3-4 months old.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C126-C128 are supported by nesting test data (Figure 6B, Figure 6\u2014source data 2B, females n=13-19, males n=7 per group) and appropriate citations. The lack of nesting deficit in TcMAC21 contrasts with Ts65Dn, which may reflect differences in genetic composition or the specific genes affected. Statistical analysis shows no significant difference (p=0.95-1.0).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C129",
+      "C130",
+      "C131",
+      "C132"
+    ],
+    "result": "TcMAC21 exploratory activity (total distance traveled) was not significantly different from Eu in open field, contrasting with Ts65Dn hyperactivity. Repeated measures ANOVA of time in center showed significant HSA21 effect (p=0.0009) but not gender (p=0.6) or interaction (p=0.3), indicating less anxiety in TcMAC21.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C129-C132 are supported by open field data (Figure 6C-D, Figure 6\u2014source data 2C, females n=11-12, males n=11-12) and citation (Faizi et al. 2011). The lack of hyperactivity differs from Ts65Dn. The increased time in center suggests reduced anxiety, though this interpretation should be made cautiously as center time can reflect multiple behavioral states.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C133",
+      "C134",
+      "C135"
+    ],
+    "result": "Visual discrimination task showed no significant difference between TcMAC21 and Eu in escape latency (p=0.27) or escape distance (p=0.19), indicating normal visual ability and goal-directed behavior. Swimming speed in MWM was not significantly different between groups.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C133-C135 are supported by visual discrimination and MWM data (Figure 7\u2014figure supplement 1-2, females n=10-13, males n=11-12). These control experiments are important for interpreting subsequent learning and memory tests, ruling out sensory or motor confounds.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143"
+    ],
+    "result": "Repeated measures ANOVA showed significant HSA21 effects on MWM acquisition (p=0.015), short delay probe (p<0.002), and long delay probe (p<0.0001), with minimal gender or interaction effects. Post-hoc analysis revealed HSA21 had significant effects on all MWM parameters in males (acquisition p<0.05, short delay p<0.009, long delay p<0.0001). In females, effects were less significant but still present overall (acquisition p=0.19, short delay p=0.065, long delay p<0.02). Poor MWM performance occurs in both sexes, though female cohorts may require larger sample sizes for equivalent statistical power.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C136-C143 are supported by comprehensive MWM analysis (Figure 7A, Figure 7\u2014figure supplement 2, Figure 7\u2014source data 1B, females n=10-11, males n=11-12). Statistical analyses are appropriate with repeated measures ANOVA and post-hoc tests. The sex differences in effect size are interesting and appropriately noted. The learning and memory deficits are clear, particularly in long delay probes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150"
+    ],
+    "result": "Forgetting non-essential memory is an important learning component assessable by reversal water maze. Female APP/PS1 mice showed deficits in this paradigm. After RRWM day 1 training, retained memory of old platform (SE) was significantly reduced in Eu (>50%, p<0.001) but not TcMAC21 (<15%, p=0.4), indicating TcMAC21 forgets non-essential memory slower than Eu. In long delay probe trials, TcMAC21 spent significantly less time in new target (NW) than Eu (p<0.0045), indicating deficits in learning and memorizing new platform position. TcMAC21 performed slightly worse in RRWM acquisition (p<0.05 escape latency, p=0.15 escape distance).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C144-C150 are supported by RRWM data (Figure 7B-D, Figure 7\u2014figure supplement 3, Figure 7\u2014source data 1C, females n=8-9) and appropriate citations. The slower forgetting of old platform position combined with impaired learning of new position suggests specific deficits in cognitive flexibility. This is a sophisticated behavioral analysis revealing nuanced cognitive phenotypes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C151",
+      "C152",
+      "C153"
+    ],
+    "result": "Diminished learning and memory ability is strongly correlated with decreased LTP, a measure of synaptic plasticity. TcMAC21 had significant reduction in TBS-LTP at SC-CA1 synapses compared to Eu littermates. Together, behavioral and physiological results show TcMAC21 has significant deficits in learning, memory, and synaptic plasticity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C151-C153 are supported by electrophysiology data (Figure 7E-F, males n=5 per group, 13-14 slices). The LTP deficit provides a cellular mechanism for the observed behavioral deficits. The correlation between LTP and learning/memory (C151) is well-established in neuroscience. The integration of behavioral and physiological data strengthens the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R30",
+    "claim_ids": [
+      "C154",
+      "C155",
+      "C156",
+      "C157",
+      "C158",
+      "C159",
+      "C160",
+      "C161",
+      "C162",
+      "C163"
+    ],
+    "result": "Comparison of DS mouse models shows TcMAC21 contains 199 (93.4%) trisomic HSA21q PCGs, compared to Tc1 (158, 74.2%), Ts65Dn (110, 51.6%), Ts1Cje (68, 31.9%), Dp(16)1Yey/Dp1Tyb (122, 57.3%), and triple Dp(10)1Yey/+;Dp(16)1Yey/+;Dp(17)1Yey/+ (180, 84.5%). TcMAC21 has 0 trisomic mouse PCGs without human orthologs (vs 7 in Ts65Dn) and 0 trisomic/monosomic non-HSA21 ortholog PCGs (vs ~44 trisomic MMU17 PCGs in Ts65Dn).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C154-C163 are supported by comprehensive comparison in Table 2 with appropriate citations. This clearly demonstrates TcMAC21's superior genetic representation of DS compared to other models. The absence of non-HSA21 trisomic genes is particularly important for model specificity. Only the triple mouse approaches TcMAC21's completeness but lacks the freely segregating chromosome and human genes without mouse orthologs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R31",
+    "claim_ids": [
+      "C164",
+      "C165",
+      "C166",
+      "C167"
+    ],
+    "result": "Among non-humanized models, only DP10/16/17 triple mouse has comparable gene content to TcMAC21, containing all 160 HSA21 orthologs. However, the two-generation breeding scheme is inefficient with rare live-born triple pups (only 8/191 in authors' lab). DP10/16/17 is not formally aneuploid (no extra centromere on freely segregating chromosome). HSA21 genes without mouse orthologs are not represented in DP10/16/17.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C164-C167 are supported by citation (Yu et al. 2010) and authors' breeding data. The comparison highlights TcMAC21's advantages: easier breeding, true aneuploidy, and inclusion of human-specific genes. The breeding inefficiency data (8/191) from the authors' lab provides direct evidence of DP10/16/17's practical limitations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R32",
+    "claim_ids": [
+      "C168"
+    ],
+    "result": "Over-expression of human genes in TcMAC21 results in numerous phenotypes occurring in people with trisomy 21 and other DS mouse models, including small size, brain dysmorphology with cerebellar hypoplasia, craniofacial retrusion, congenital heart defects, elevated APP expression and cleavage products, and deficits in learning, memory, and LTP.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C168 is a summary statement supported by the comprehensive phenotypic characterization presented throughout the manuscript (Claims C72-C153). The multiple converging lines of evidence across anatomical, molecular, cellular, and behavioral domains provide strong support for this conclusion. This represents the major finding of the paper.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R33",
+    "claim_ids": [
+      "C169",
+      "C170",
+      "C171",
+      "C172"
+    ],
+    "result": "More than 50 HSA21 PCGs lack mouse orthologs, raising questions about their function in a foreign genome. Human genes with orthologs may not function precisely the same in mice. The working hypothesis is that many molecular, cellular, and developmental processes will be similarly affected by dosage imbalance for orthologous genes, though end phenotypes will necessarily not be identical in mice and people.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C169-C172 represent thoughtful discussion of model limitations and interpretation. C169 is supported by comparative genomics data. C170-C172 are reasonable caveats based on general principles of comparative biology. This appropriately acknowledges that while TcMAC21 is the best current model, it has inherent limitations as a mouse model of a human condition.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R34",
+    "claim_ids": [
+      "C173",
+      "C174",
+      "C175",
+      "C176"
+    ],
+    "result": "Before segmental trisomy models, gene dosage effects were assessed gene-by-gene using single gene transgenics, interpreted through a reductionist assumption that DS is the sum of additive, independent effects of HSA21 genes. A more nuanced view has emerged with trisomic models, showing HSA21 gene interactions, genome-wide transcriptional perturbations, and genetic interactions with disomic modifiers. TcMAC21 provides the best current representation of gene dosage comparable to DS and should prove valuable for preclinical studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C173-C176 provide historical context and perspective supported by appropriate citations (Epstein 1986; Li et al. 2016; Antonarakis et al. 2020). The evolution from reductionist to systems-level understanding is well-documented. The conclusion that TcMAC21 is the best current model (C176) is justified by the comprehensive characterization presented, though the claim about value for preclinical studies is prospective.",
+    "result_type": "MINOR"
+  }
+]

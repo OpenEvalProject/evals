@@ -1,0 +1,522 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4"
+    ],
+    "result": "The study recruited 25 participants (19\u201331 years, mean 24.6 years) with self-reported normal hearing and no history of neurological or otological disease. Participants provided written informed consent, were compensated, and the study received ethical approval from the University of L\u00fcbeck.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1\u2013C4 provide standard methodological details about participant recruitment, consent, and ethical approval. These are straightforward descriptive statements that are well-documented and typical for human research studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "The experimental setup included auditory stimulus presentation via in-ear headphones at ~60 dB SPL, 420 trials across 10 blocks, EEG recording with a 64-channel system (1 kHz sampling, impedances <10 k\u03a9), and pupillometry at 500 Hz. Tone-to-tone intervals varied between individuals (9.14 \u00b1 1.04 s) due to real-time brain-state-dependent triggering.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5\u2013C12 describe the experimental apparatus and recording parameters in detail. These are standard methodological specifications that are clearly stated and internally consistent, providing adequate information for replication.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "A subject-specific spatial filter was constructed using singular value decomposition on auditory localizer data, with the first eigenvector used as filter weights to create a virtual EEG channel reflecting auditory cortical activity. Source projection confirmed predominantly auditory cortical generators.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13\u2013C17 describe a well-established spatial filtering approach with appropriate citations (C15) and validation through source localization (C17). The methodology is sound and the validation with source projection provides empirical support for the filter's specificity to auditory cortex.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "A real-time closed-loop algorithm calculated weighted permutation entropy (WPE) from spatially filtered EEG using a 200-sample moving window (100 Hz effective sampling). States were classified when 10 consecutive samples exceeded 90% of a continuously updated 30-s distribution, with blink-related data excluded. Each tone was presented equally often (30 times) during high and low states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18\u2013C24 describe the real-time algorithm in detail with appropriate methodological citations (C19). The continuously updating criterion (C21) and balanced presentation design (C24) are well-justified. The artifact rejection procedure (C23) is appropriate, though the specific 1-s mute window duration lacks justification.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Pupil data preprocessing included cubic spline interpolation around blinks, low-pass filtering (<20 Hz), downsampling to 50 Hz, and visual inspection with rejection of 1.3 \u00b1 1.6% of trials. One subject was excluded from pupillometry analyses. EEG preprocessing rejected on average 1 channel, 68.9% of ICA components, and 1.4% of trials.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25\u2013C28 describe standard preprocessing procedures with appropriate quality control. The low rejection rates (C26, C28) suggest good data quality. The exclusion of one subject (C27) is appropriately documented. Visual inspection (C26) is subjective but standard practice.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Time-frequency analysis used frequency-adaptive Hann-tapers (4 cycles, 100 Hz resolution) to obtain single-trial Fourier representations. Power was calculated from 1\u201370 Hz and expressed in dB relative to whole-trial average. Inter-trial phase coherence (ITC) and single-trial jackknife-ITC (jITC) were computed to quantify phase consistency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29\u2013C32 describe standard time-frequency analysis methods with appropriate citations for the jITC measure (C32). The methods are well-established and clearly described. The use of whole-trial baseline (C30) is appropriate for the experimental design.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "The real-time algorithm successfully dissociated high and low entropy states (p<0.001 in pre-stimulus window), while pupil diameter did not differ between these states (all p>0.1). Entropy and pupil size were weakly positively correlated (\u03b2=0.02, p=0.02) with <1% shared variance. Autocorrelation analysis revealed different timescales: entropy states were self-similar at ~500 ms while pupil states extended over several seconds.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33\u2013C37 demonstrate successful state classification and independence of entropy and pupil measures. The statistical tests are appropriate with clear p-values (C33, C34, C35). The autocorrelation analysis (C37) provides strong evidence for distinct timescales. The weak correlation (C35, C36) supports the independence claim despite statistical significance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Pre-stimulus entropy showed strong negative relationships with oscillatory power across multiple frequency bands: low-frequency (1\u20138 Hz: \u03b2=\u22120.18, p<0.001), alpha (8\u201312 Hz: \u03b2=\u22120.29, p<0.001), beta (14\u201330 Hz: \u03b2=\u22120.32, p<0.001), and gamma (40\u201370 Hz: \u03b2=\u22120.18, p<0.001). Gamma power was lowest at intermediate entropy levels (quadratic: \u03b2=0.06, p<0.001).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38\u2013C43 report consistent negative relationships between entropy and power with appropriate statistics and citations (C38). The quadratic relationship for gamma (C41) adds nuance. All effects are highly significant with effect sizes and standard errors reported. The pattern is consistent with entropy as a measure of desynchronization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "Pupil size showed weaker relationships with pre-stimulus power than entropy: negative with low-frequency power (1\u20138 Hz: \u03b2=\u22120.04, p<0.001), positive with beta power (\u03b2=0.04, p<0.001), but no relationship with gamma (p>0.2) or alpha power (p>0.3). Wald test confirmed entropy had a stronger link to low-frequency power than pupil size (Z=9.1, p<0.001).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44\u2013C48 demonstrate differential effects of pupil size versus entropy on ongoing activity. The Wald test (C48) provides appropriate statistical comparison. The pattern of results is internally consistent and supports the independence of the two measures. Effect sizes for pupil are notably smaller than for entropy.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Low-frequency single-trial phase coherence (1\u20138 Hz, 0\u2013400 ms post-stimulus) increased with pre-stimulus entropy (\u03b2=0.05, p<0.001) and saturated at intermediate levels (quadratic: \u03b2=\u22120.02, p=0.02). Pupil size showed no comparable relationship with phase coherence (\u03b2=\u22120.005, p=0.5; Wald Z=1.5, p=0.1).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49\u2013C51 demonstrate a specific effect of entropy on phase-locked responses with appropriate statistics. The quadratic relationship (C50) is interesting but the effect size is small. The lack of pupil effect (C51) is well-documented with both direct test and Wald comparison. This supports distinct mechanisms for entropy and arousal.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Post-stimulus low-frequency power (1\u20138 Hz, 0\u2013400 ms) decreased linearly with pre-stimulus entropy (\u03b2=\u22120.02, p=0.017) but was not affected by pupil size (\u03b2=0.015, p=0.2). Wald test confirmed this differential effect (Z=2.6, p=0.009).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52\u2013C54 show entropy-specific effects on evoked low-frequency power with appropriate statistics and direct comparison (C54). The effect size for entropy is small (C52) and the interpretation that this reflects post-stimulus desynchronization is reasonable but speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Post-stimulus alpha power (8\u201312 Hz) increased linearly with pupil-linked arousal (\u03b2=0.033, p<0.005) but not with desynchronization (\u03b2=\u22120.008, p=0.5). Beta power was not substantially linked to either measure (all p>0.2).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55\u2013C57 demonstrate frequency-specific dissociation between arousal and desynchronization effects. The statistics are clear and the pattern supports distinct mechanisms. The lack of beta effects (C57) is appropriately reported as a null result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Post-stimulus gamma power (40\u201370 Hz, 0\u2013400 ms) increased linearly with pre-stimulus entropy (\u03b2=0.04, p<0.001) but showed a non-significant trend to decrease with pupil size (\u03b2=\u22120.016, p=0.1). Wald test confirmed opposite influences (Z=3.6, p=0.0003).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58\u2013C60 demonstrate opposing effects of entropy and arousal on gamma power. The entropy effect is strong (C58), while the pupil effect is marginal (C59). The Wald test (C60) appropriately compares the two effects despite one being non-significant, which is statistically valid but interpretively cautious.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C61"
+    ],
+    "result": "Neither local desynchronization nor pupil size affected tone-evoked activity when expressed as event-related potentials.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C61 reports an important null result with figure reference. This suggests that effects are specific to time-frequency domain measures rather than time-domain ERPs, which is theoretically meaningful. However, no statistics are provided for this null result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Response criterion and speed showed inverted-U relationships with pre-stimulus entropy: criterion (quadratic: log OR=\u22120.06, p=0.02) and speed (quadratic: \u03b2=\u22120.012, p=0.002) were optimal at intermediate desynchronization. This resulted in 50\u201360 ms faster responses at intermediate versus extreme entropy levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62\u2013C65 demonstrate behaviorally relevant effects of desynchronization with appropriate statistics. The quadratic relationships are well-supported and the effect size for response time (C64, C65) is meaningful (~50\u201360 ms). The pattern is consistent across both measures, strengthening the interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Pupil size showed negative linear and quadratic relationships with sensitivity (linear: log OR=\u22120.232, p=0.001; quadratic: log OR=\u22120.153, p<0.001), indicating highest sensitivity at intermediate arousal. Pupil size did not affect response speed (\u03b2=\u22120.004, p=0.1) but showed a linear decrease in response criterion with increasing arousal (log OR=\u22120.115, p<0.001).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66\u2013C68 demonstrate arousal effects on sensitivity with strong statistics. The inverted-U for sensitivity (C66) parallels the Yerkes-Dodson law. The linear criterion effect (C68) differs from the quadratic entropy effect, supporting distinct mechanisms. The lack of speed effect (C67) is appropriately reported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C69",
+      "C70"
+    ],
+    "result": "Wald tests confirmed differential effects: response criterion was predicted by entropy following an inverted-U but not by pupil size (Z=\u22122.9, p=0.004), while response speed was predominantly influenced by entropy (Z=\u22121.94, p=0.05).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69\u2013C70 provide direct statistical comparisons between entropy and pupil effects using appropriate Wald tests. The results support distinct contributions to behavior, though the speed comparison (C70) is marginal (p=0.05).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C71",
+      "C72"
+    ],
+    "result": "A model including stimulus difficulty alone explained 56.4% of behavioral variance, while adding pre-stimulus entropy and pupil size increased explained variance to 63.2%.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71\u2013C72 quantify the contribution of brain state measures to behavior. The 6.8% increase in variance explained is modest but meaningful. However, no formal model comparison statistics (e.g., likelihood ratio test) are provided to assess whether this improvement is significant.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C73",
+      "C74"
+    ],
+    "result": "Pre-stimulus oscillatory power was not significantly linked to behavior (all p>0.15) and did not explain additional variance beyond entropy (Bayes factor BF=98 favoring entropy-only model).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73\u2013C74 demonstrate that entropy provides unique information beyond oscillatory power. The Bayes factor (C74) provides strong evidence for this conclusion. This is an important control analysis showing entropy is not simply the inverse of power.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Visual cortex entropy was correlated with auditory entropy (\u03b2=0.40, p<0.001) but shared only 15% variance. Visual entropy was a markedly weaker predictor of auditory stimulus-evoked activity (phase coherence: BF=1416; low-frequency power: BF=1977; gamma power: BF=39) and showed no relationship with response criterion (log OR=0.009, p=0.66) or speed (\u03b2=\u22120.002, p=0.50). Auditory entropy better explained response speed (BF=10.8).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75\u2013C82 provide strong evidence for spatial specificity of desynchronization effects through systematic control analyses. The Bayes factors are large and consistent (C77\u2013C79, C82), and the null behavioral effects (C80, C81) are well-documented. This addresses a critical alternative explanation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "EEG entropy aligns with the spectral exponent (a measure of E/I balance) and tracks changes in excitatory/inhibitory cortical activity under different anesthetics in an independent dataset. This indicates entropy captures both basic features of desynchronization (reduced oscillatory power) and underlying E/I balance mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101\u2013C104 provide important validation of entropy as a measure of E/I balance using external data (C102) and comparison to established measures (C101). However, the anesthesia data analysis is not described in detail, and the inference about E/I balance (C103, C104) relies on this external validation and theoretical considerations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "Local cortical desynchronization and pupil-linked arousal, though weakly correlated, differentially influenced sensory processing and behavior. Phase-locked activity and gamma power were highest at intermediate desynchronization, while low-frequency power increased with arousal. Response criterion and speed showed inverted-U relationships with desynchronization, while sensitivity showed an inverted-U with arousal.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106\u2013C111 summarize the main findings. These summary claims are well-supported by the detailed results presented in earlier claim groups. The pattern of dissociations is internally consistent and supports the central thesis of distinct mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C114",
+      "C136",
+      "C137"
+    ],
+    "result": "The data support a model where global arousal states (via afferent noradrenergic projections) predominantly influence sensitivity, while local cortical desynchronization (via attention-dependent feedback connections) impacts response criterion and speed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C114, C136, C137 present an interpretive model that goes beyond the data. While the behavioral dissociations are well-documented, the mechanistic claims about noradrenergic projections and feedback connections are speculative inferences not directly tested. The model is plausible and consistent with cited literature, but requires additional experiments for validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C115",
+      "C116"
+    ],
+    "result": "The auditory discrimination task required participants to compare each tone to an implicit standard (the median pitch of the set), yielding valid psychometric functions in all participants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C115\u2013C116 describe the task design and validation. The task is well-designed for studying perceptual decision-making, and the validation with psychometric functions (C116) confirms participants understood and performed the task appropriately.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "The introduction reviews prior literature on arousal and desynchronization, noting that pupil-linked arousal captures LC-NE activity and influences sensory processing, with optimal performance typically at intermediate arousal levels. Neural desynchronization improves sensory encoding in animals, likely through changes in E/I balance and thalamo-cortical interactions. The relationship between pupil size and desynchronization is unclear, with conflicting reports of tight coupling versus independence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83\u2013C100 summarize prior literature with appropriate citations. The review accurately represents the state of knowledge and identifies key gaps (C96, C97) that motivate the current study. The conflicting findings about arousal-desynchronization relationships (C98, C99) are appropriately noted.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "Prior work in rodents linked desynchronization to enhanced auditory encoding, reliable responses, and improved performance, while optogenetic synchronization impaired perception. Arousal increased sensory processing in mice and humans, with performance highest at intermediate or maximum arousal. Pre-stimulus alpha power has been linked to response criterion and baseline excitability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C117\u2013C124 review relevant prior findings with appropriate citations. The summary accurately represents the literature and provides context for interpreting the current results. The conflicting findings about optimal arousal levels (C122) are appropriately noted.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135"
+    ],
+    "result": "The discussion proposes mechanistic interpretations: desynchronization effects may trace back to attention-specific input changing net inhibition (C125), entropy may be more sensitive than power (C126), and desynchronization/arousal may separately affect phase resetting versus additive activity (C127). Intermediate desynchronization led to stronger phase-reset (C128), suggesting precision changes (C129). Intermediate arousal may optimize integration via feedback connections (C130, C131). High arousal could cause detrimental over-amplification (C132\u2013C135).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C125\u2013C135 present speculative mechanistic interpretations that go beyond the data. While these interpretations are plausible and grounded in cited literature, they are not directly tested. The proposals about phase resetting (C127, C128), precision (C129), and over-amplification (C132\u2013C135) are reasonable inferences but require additional experiments for validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143"
+    ],
+    "result": "The discussion proposes that shared variability in neuronal populations is shaped by additive and multiplicative gain factors. Desynchronization is believed to have additive effects while LC-NE activity exerts multiplicative influence. The authors predict that attention/desynchronization primarily exert additive influence while LC-NE/arousal impact gain multiplicatively, though recent findings challenge the view that arousal sharpens tuning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C138\u2013C143 present a theoretical framework based on prior work (C138\u2013C142) and make a testable prediction (C143). However, this is speculative and not directly tested in the current study. The framework is plausible but the prediction (C143) requires future experiments. The acknowledgment of conflicting findings (C141) is appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C155",
+      "C156",
+      "C157",
+      "C158",
+      "C159",
+      "C160"
+    ],
+    "result": "The discussion reviews neurophysiological mechanisms: pupil size reflects LC-NE activity (C144, C145), while desynchronization may arise from glutamatergic feedback connections (C146, C153, C154). Widespread NE projections suggest arousal should not differ between sensory regions (C147, C148), but context-dependent effects are observed (C149). The weak correlation may reflect focus on auditory cortex (C150). The authors propose two partially related mechanisms: desynchronization from attention-related feedback (C158) and arousal from LC-NE activity (C159, C160).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C144\u2013C160 discuss potential mechanisms with extensive citations. While the review is thorough and the proposed model (C157\u2013C160) is plausible, these are largely speculative inferences not directly tested. The discussion appropriately acknowledges complexity (C149, C156) and limitations in mechanistic understanding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R30",
+    "claim_ids": [
+      "C161",
+      "C162",
+      "C163",
+      "C164",
+      "C165",
+      "C166",
+      "C167"
+    ],
+    "result": "The discussion contextualizes the closed-loop approach within neurofeedback applications and recent studies. Fast fluctuations may reflect synaptic/thalamo-cortical activity while slow fluctuations reflect arousal/neuromodulation. Desynchronization operates on ~500 ms timescales while arousal extends over seconds.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C161\u2013C167 provide methodological context with appropriate citations (C161\u2013C165) and connect to the autocorrelation findings (C166, C167). The timescale interpretation is well-supported by the data (C37) and consistent with cited literature (C164, C165).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R31",
+    "claim_ids": [
+      "C168",
+      "C169",
+      "C170"
+    ],
+    "result": "The negative relationship between desynchronization and low-frequency power replicates previous findings. The link between arousal and beta power differs from reports of positive gamma-pupil relationships in LFP, likely due to methodological differences (EEG vs. LFP, different analysis approaches).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C168\u2013C170 appropriately contextualize findings relative to prior work. The replication (C168) strengthens confidence, and the methodological explanation for discrepancies (C169, C170) is reasonable, though speculative without direct comparison.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R32",
+    "claim_ids": [
+      "C105"
+    ],
+    "result": "Closed-loop setups allow selective stimulation during specific brain states while accounting for state changes, representing a powerful tool for research and therapy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C105 describes the general utility of closed-loop approaches with appropriate citations. This is a well-established methodological point supported by the cited literature and demonstrated by the current study.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,253 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "Giardia lamblia has eight flagella organized as four bilaterally symmetric pairs with four different equilibrium lengths. The total axoneme lengths range from 16.2 to 20.5 \u00b5m, and membrane-bound regions range from 8.1 to 13.7 \u00b5m.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2 and C8-C15 provide direct measurements of flagellar lengths for all four pairs, with error estimates and sample sizes (n\u226535). The data are shown in Figure 1 and Figure 1\u2014figure supplement 1, and measurements are consistent with prior work (C12-C15 cite Hoeng et al., 2008). The statistical analysis confirms significant differences between pairs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C75",
+      "C76"
+    ],
+    "result": "Each Giardia axoneme has a cytoplasmic region extending from the basal body that transitions to a membrane-bound flagellum at the flagellar pore. The flagellar pores are sites of IFT accumulation and injection, functioning as diffusion barriers analogous to the transition zone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C4 and C22-C29 are supported by fluorescence intensity measurements (Figure 2B-C) showing maximum IFT81mNG at flagellar pores, and FRAP experiments (Figure 3, Videos 1-2) demonstrating dynamic IFT protein turnover. The effective diffusion constants (C27-C28) are quantified with error estimates. The model (C29) is supported by a 3.8\u00b10.7 fold difference in recovery rates matching theoretical predictions (3\u00b11 fold).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C87"
+    ],
+    "result": "IFT-A, IFT-B, kinesin-2, and BBSome homologs localize to basal bodies, flagellar pores, and along cytoplasmic and membrane-bound axoneme regions. Single-copy integrated IFT81mNG is at least 3-fold brighter than IFT81GFP.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C21 are supported by fluorescence microscopy of tagged proteins (Figure 2A) showing consistent localization patterns. C87 is supported by direct comparison (Figure 2\u2014figure supplement 2). Integration of tags was verified by PCR (Figure 2\u2014figure supplement 1). The localization patterns are consistent with prior work (citations to Hoeng et al., 2008).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C5"
+    ],
+    "result": "IFT train speed, injection frequency, and most size parameters are similar between flagellar pairs of different lengths, indicating length-independent IFT-mediated assembly. Average anterograde and retrograde speeds are ~3.0-3.2 \u00b5m/sec, and injection times are 1.0-1.3 seconds.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C41 are supported by kymograph analysis (Figure 4) with n=22-42 cells from five independent experiments. Statistical tests show no significant differences in speed or frequency between flagellar pairs. The exponential distribution of injection times (C38) indicates a single rate-limiting step. However, C33 shows 24% larger anterograde trains in anterior vs. caudal flagella, suggesting some length-dependence that is not fully explained.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Total IFT train content scales linearly with flagellar length (R\u00b2=0.89), and this relationship is maintained after Taxol-induced elongation (19-61% length increase). This supports length-independent IFT injection rates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C47 are supported by 3D-SIM quantification (Figure 5) showing strong linear correlation between IFT81GFP intensity and length. Taxol experiments (C44-C46) show differential elongation between pairs, yet the linear relationship persists (Figure 5E, R\u00b2=0.92-0.93). Sample sizes are adequate (n=10 cells from three experiments). The interpretation (C43, C47) logically follows from the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C6"
+    ],
+    "result": "Kinesin-13 knockdown (~60%) increases flagellar length in all pairs (0.9-3.1 \u00b5m increases). Kinesin-13mNG localizes primarily to flagellar tips with maximum intensity at the distal tip, and fluorescence intensity is inversely correlated with flagellar length (significantly greater at caudal vs. anterior tips).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C57 are supported by CRISPRi knockdown experiments (Figure 6A-B, n\u226530 cells) and fluorescence intensity measurements (Figure 6C-E, n\u226523 cells). The inverse correlation (C6, C56) is statistically significant for caudal vs. anterior (p<0.05), though not for posteriolateral vs. anterior (C57). The data extend prior work (McInally et al., 2019) to all flagellar pairs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C90",
+      "C91"
+    ],
+    "result": "After five hours of Taxol treatment, all flagellar pairs elongate (4.1-5.4 \u00b5m), with caudal flagella showing significantly greater elongation. Kinesin-13mNG tip intensity and decay rate remain unchanged with elongation, and FRAP shows ~30% mobile fraction at tips with similar recovery rates across flagellar types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C66 and C90-C91 are supported by time-course measurements (Figure 8A-B, n\u226535 cells) and fluorescence analysis (Figure 8D-H). The exponential decay rate (lambda) is constant across flagellar pairs and unchanged by Taxol (Figure 8E-F), consistent with theoretical predictions. FRAP data (Figure 8G-H, n\u226510 cells) show limited recovery (~30%), indicating most kinesin-13 is immobilized at tips.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C7",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "A length-dependent disassembly mechanism controls multiple flagellar lengths within the same cell. Kinesin-13 is transported to tips via IFT, accumulates during elongation until reaching critical concentration, and diffuses back with recapture by anterograde IFT, creating exponential decay from tips.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7 and C79-C85 present the main model supported by: (1) length-independent IFT injection (C5, C36-C37), (2) inverse correlation of kinesin-13 with length (C6, C56), (3) exponential decay from tips (C84-C85, Figure 8E-F), (4) length-independent decay rate matching flagellar radius (Figure 8F), and (5) mathematical modeling (Figure 7, Materials and methods). The model is internally consistent and explains all major observations, though direct visualization of kinesin-13 transport is lacking.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C73",
+      "C74",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "Giardia lacks transition zone proteins but encodes IFT components and motors. Each axoneme has the canonical 9+2 structure with cytoplasmic and membrane-bound regions. This represents evolutionary variation in conserved flagellar assembly mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C68 and C73-C74 are supported by prior genomic and structural studies (citations to Avidor-Reiss and Leroux, 2015; Barker et al., 2014; McInally and Dawson, 2016). Claims C110-C114 provide established background knowledge with appropriate citations. The unique architecture is well-documented and forms the basis for the study's significance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "Kinesin-2 and kinesin-13 regulate flagellar assembly/disassembly in Giardia. During cell division, four axonemes are inherited and four assembled de novo, with cytoplasmic regions assembled prior to cytokinesis, possibly via IFT-independent mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C72 cite prior work (Dawson et al., 2007; Hardin et al., 2017; Nohynkov\u00e1 et al., 2006) establishing regulatory mechanisms and inheritance patterns. Claims C96-C99 are supported by prior studies (Hoeng et al., 2008; McInally et al., 2019) and the current observation of no active IFT transport on cytoplasmic regions. The speculation about IFT-independent assembly (C99) is appropriately qualified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "IFT particle maturation may occur at flagellar pores, kinesin-13 may be an IFT cargo, and kinesin-13 activity may indirectly affect assembly by modulating cytoplasmic tubulin pools via the median body.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C77, C78, C93, and C99 are explicitly stated as speculation or possibilities. C77 acknowledges lack of direct spatial resolution. C78 is proposed based on absence of other transport mechanisms (inference). C93-C95 cite prior work (Dawson et al., 2007; Hardin et al., 2017) but remain speculative regarding mechanism. These hypotheses are reasonable but require direct experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C92"
+    ],
+    "result": "Background on atypical ciliogenesis in other organisms, the balance-point model of flagellar length control, kinesin-13 function across species, and Giardia's 198 uncharacterized Nek proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C122 and C92 provide literature context with appropriate citations to establish the field's current understanding. These are well-documented facts from prior work (multiple citations provided) that frame the significance of the current findings. The information is accurate and properly attributed.",
+    "result_type": "MINOR"
+  }
+]

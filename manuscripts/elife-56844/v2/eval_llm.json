@@ -1,0 +1,527 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C40",
+      "C41"
+    ],
+    "result": "The authors engineered a regulatable fluorescent vacuolar cargo by modifying a secretory cargo construct with the addition of a QRPL vacuolar targeting signal. The construct consists of DsRed-Express2 fused to a dimerizing FKBP variant, with ER targeting and export signals, and forms aggregates in the ER that can be dissolved with the ligand SLF.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C33-C37, C40-C41 collectively describe the design and construction of the vacuolar cargo system. The experimental design is clearly documented with appropriate controls (Figure 1), and the construct successfully forms ER aggregates that can be dissolved, as demonstrated by microscopy data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C43",
+      "C44"
+    ],
+    "result": "The vacuolar cargo accumulates in the vacuole in a Vps10-dependent manner and is not secreted, unlike the secretory cargo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C44 are supported by microscopy quantification (Figure 1D,E) and immunoblot data (Figure 1F) showing differential localization and secretion patterns between secretory and vacuolar cargoes in wild-type versus vps10\u0394 strains.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Traffic of the vacuolar cargo from ER to vacuole is slow, requiring 40+ minutes for completion, with significant cell-to-cell variability. Cycloheximide treatment confirms these kinetics reflect traffic of pre-existing aggregated cargo rather than newly synthesized protein.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C49 are supported by quantitative 4D microscopy data (Figure 2B-D) and cycloheximide control experiments (Figure 2\u2014figure supplement 1). The kinetic measurements are appropriately quantified across multiple cells, and the cycloheximide control validates the interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C58"
+    ],
+    "result": "The vacuolar cargo rapidly transits through the Golgi (1-10 min) and accumulates in PVE compartments, demonstrating that the rate-limiting step for vacuolar delivery is transfer from PVE to vacuole rather than Golgi transit.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C56, C58 are supported by three-color 4D microscopy tracking cargo through Golgi markers (GFP-Vrg4, Sec7-HaloTag) to PVE markers (Vps8-GFP) (Figure 3). The kinetic analysis clearly demonstrates rapid Golgi transit followed by slow PVE-to-vacuole transfer.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C64",
+      "C66"
+    ],
+    "result": "The vacuolar cargo begins to exit Golgi cisternae near the midpoint of maturation in a Vps10-dependent manner, contrasting with secretory cargo that persists throughout maturation. In vps10\u0394 cells, the vacuolar cargo no longer exits during the early-to-late transition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C62, C64, C66 are supported by detailed kinetic analysis of cargo behavior during cisternal maturation (Figure 4). The comparison between wild-type and vps10\u0394 strains provides strong evidence for Vps10-dependent early exit. However, C61 is speculative and should be considered an interpretation rather than a direct observation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C25",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "GGA adaptors (Gga2) arrive at Golgi cisternae simultaneously with Sec7 and approximately 20-40 seconds before AP-1 (Apl2). GGA arrival coincides with the onset of vacuolar cargo departure from the Golgi.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25, C67-C69 are supported by three-color kinetic microscopy comparing Sec7, Gga2, and Apl2 dynamics (Figure 5). The temporal resolution (2-second intervals) is sufficient to resolve the ~20-40 second differences in arrival times. The correlation between GGA arrival and cargo departure is well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C76",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "GGAs, but not AP-1, are required for vacuolar cargo exit from the Golgi. In gga1\u0394 gga2\u0394 cells, vacuolar cargo persists through the late Golgi stage and is secreted, while apl4\u0394 cells show normal cargo sorting. The vacuolar cargo is sorted to PVE compartments with the aid of Vps10 and GGAs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C74, C76, C78-C80 are supported by genetic analysis comparing wild-type, apl4\u0394, and gga1\u0394 gga2\u0394 strains using microscopy (Figure 6) and immunoblotting (Figure 6\u2014figure supplement 2). The data clearly demonstrate GGA requirement for cargo sorting. A caveat noted in C75 is that gga1\u0394 gga2\u0394 shows altered Golgi maturation kinetics, but maturation events remain identifiable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "The vacuolar cargo moves from long-lived PVE compartments to the vacuole through a series of kiss-and-run fusion events, characterized by gradual fluorescence decline punctuated by occasional large discrete transfer events. PVE compartments marked by Vps8-GFP persist and never completely disappear.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C85 are supported by photobleaching experiments and time-lapse microscopy (Figure 7). The observation of gradual transfer with occasional bursts, combined with persistent Vps8-GFP signal, supports the kiss-and-run interpretation. However, the mechanism remains inferential from fluorescence data and would benefit from additional validation by other techniques, as the authors acknowledge.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "The transmembrane cargo Mup1 also transfers from PVE compartments to the vacuole via apparent kiss-and-run events, with gradual transfer punctuated by bursts (~every 5 min) transferring ~35-40% of remaining cargo per burst. Complete loss of Vps8 signal was never observed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C92 are supported by quantitative analysis of Mup1-mScarlet trafficking (Figure 8). The quantification of burst frequency and cargo transfer amounts provides strong support for the kiss-and-run model. The observation that Vps8 signal persists (C88) argues against complete fusion, though the authors acknowledge alternative explanations involving PVE clusters.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C27",
+      "C96",
+      "C99"
+    ],
+    "result": "The late/TGN stage of Golgi maturation can be subdivided into two sequential sub-stages: first, GGA-dependent exit of vacuolar cargoes to PVE compartments (occurring near the midpoint of maturation), followed by AP-1-dependent intra-Golgi recycling and secretory cargo exit.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27, C96, C99 represent the major conceptual conclusion integrating the kinetic data on cargo exit, GGA/AP-1 arrival, and genetic requirements. This model is well-supported by the combined evidence from Figures 4-6 showing temporal separation of GGA and AP-1 activities and their differential effects on cargo sorting.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5"
+    ],
+    "result": "Traffic of the vacuolar cargo requires GGA clathrin adaptors that arrive during the early-to-late Golgi transition, and the cargo begins to exit near the midpoint of maturation, before secretory cargo exit.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C5 summarize key findings supported by the genetic analysis (Figure 6) and kinetic microscopy (Figures 4-5). These claims are well-supported by the experimental data showing GGA requirement and timing of cargo exit relative to Golgi maturation markers.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C6",
+      "C31",
+      "C32"
+    ],
+    "result": "PVE compartments are stable organelles that undergo fission and homotypic fusion but persist indefinitely, and they repeatedly deliver material to the vacuole by a kiss-and-run mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C6 represents the second major conclusion about PVE-to-vacuole traffic. Claims C31-C32 provide supporting context from prior work. The kiss-and-run model is supported by the photobleaching experiments (Figures 7-8), though the authors appropriately note this inference would benefit from validation by additional techniques such as electron microscopy.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C1",
+      "C7",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "S. cerevisiae is a well-established system for studying membrane traffic by live-cell fluorescence microscopy, with advantages including a non-stacked Golgi where individual cisternae are optically resolvable.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C7-C10 provide background context supported by established knowledge and citations to prior literature. These are well-accepted facts about the yeast system that provide justification for the experimental approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "The established model of Golgi cisternal maturation involves cisternae arising at ER exit sites, maturing through COPI- and AP-1-mediated recycling of resident proteins, with biosynthetic cargoes present throughout, and terminal fragmentation into secretory vesicles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C16 describe the established cisternal maturation model based on prior literature. These are well-supported by citations and represent accepted knowledge that provides context for the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C17",
+      "C18"
+    ],
+    "result": "S. cerevisiae has a minimal endomembrane system where the late Golgi/TGN functions as an early and recycling endosome, and cells contain two types of endosomes: the late Golgi/TGN and vacuole-associated PVE compartments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C18 describe a model from the authors' prior work (Day et al., 2018) that provides conceptual framework for the current study. This is supported by citation to their previous publication.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "Prior studies established that the QRPL tetrapeptide directs CPY to PVE compartments via Vps10 and GGA adaptors, while some vacuolar proteins use AP-3 for direct Golgi-to-vacuole traffic. PVE compartments contain both biosynthetic and endocytic cargoes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C24 summarize prior literature on vacuolar protein sorting pathways. These are well-supported by multiple citations and provide essential background for understanding the experimental design.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C38",
+      "C39"
+    ],
+    "result": "Prior work showed that the regulatable secretory cargo persists through the early-to-late Golgi transition and undergoes AP-1-dependent recycling within the Golgi.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C39 reference the authors' prior work (Casler et al., 2019) establishing the behavior of the secretory cargo, which provides the basis for comparison with the vacuolar cargo in the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C50",
+      "C51"
+    ],
+    "result": "Secretory cargo molecules transit from ER to plasma membrane within 5-10 minutes with secretion complete by 20 minutes. Without a sorting receptor, vacuolar cargo behaves like secretory cargo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C51 provide comparative kinetic data from prior studies and the current vps10\u0394 experiments. This comparison is important for establishing that vacuolar cargo traffic is slower than secretory traffic.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C52",
+      "C53"
+    ],
+    "result": "Tagged Vps8 is a reliable marker for PVE compartments, showing strong colocalization with other PVE markers and similar dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C53 validate the use of Vps8-GFP as a PVE marker based on prior work (Day et al., 2018). This validation is important for interpreting the trafficking experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C57"
+    ],
+    "result": "Some PVE compartments can be temporarily quiescent with regard to cargo delivery, not immediately transferring cargo to the vacuole even after cargo accumulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C57 is supported by observations in Figures 2B,D and 3 showing variable timing of cargo transfer from PVE to vacuole. This observation helps explain the cell-to-cell variability in trafficking kinetics.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C63"
+    ],
+    "result": "The rate of vacuolar cargo signal decline during Golgi maturation varies between cells and is slower in cells expressing very high cargo levels, likely due to saturation of sorting machinery.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C63 is supported by qualitative observations during the kinetic analysis. The interpretation about machinery saturation is reasonable, and the authors appropriately focused subsequent analysis on cells with moderate expression levels.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C65"
+    ],
+    "result": "In vps10\u0394 cells, the vacuolar cargo shows a transient increase during the early-to-late transition, likely due to AP-1-dependent recycling from older cisternae.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C65 is supported by microscopy data (Figure 4D-F) and comparison to prior observations with secretory cargo. The interpretation about AP-1-dependent recycling is reasonable based on the prior work cited.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C70",
+      "C71"
+    ],
+    "result": "The vacuolar cargo signal sometimes begins to decline slightly before Gga2 becomes visible at the Golgi, potentially because newly recruited GGAs are immediately packaged into vesicles, keeping the Golgi-associated pool initially low.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C70 is an observation from microscopy data, but C71 is explicitly labeled as speculative by the authors. While the observation is valid, the mechanistic explanation remains uncertain and would require additional experiments to validate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C75"
+    ],
+    "result": "The gga1\u0394 gga2\u0394 strain displays altered Vrg4 and Sec7 maturation kinetics with abnormally shallow slopes for arrival and departure curves.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C75 is supported by data in Figure 6F. The authors appropriately note this as a caveat while arguing that maturation events remain identifiable. This observation is important for interpreting the genetic analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C77"
+    ],
+    "result": "Loss of GGAs is hypothesized to cause secretion of vacuolar cargo, similar to native CPY.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C77 is presented as a hypothesis based on prior studies of CPY secretion, which is then tested and confirmed by the immunoblot data in Figure 6\u2014figure supplement 2A. The hypothesis and its validation are appropriately handled.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "The artificial vacuolar cargo is a tetramer with four copies of the Vps10 recognition signal and additional Vps10 binding through quality control domains, potentially causing slower dissociation from Vps10 and slower PVE-to-vacuole delivery compared to native CPY.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C94 describe structural features of the cargo supported by citations. Claim C95 is appropriately presented as speculation about a potential caveat. The authors correctly note this may affect kinetics but should not compromise pathway interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C100"
+    ],
+    "result": "Mammalian cells have ~6 early Golgi cisternae and a single TGN cisterna, while in yeast the late Golgi/TGN occupies ~half the maturation time. Mammalian TGN structures likely undergo similar kinetic evolution of adaptor activities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C98 are supported by citations to structural studies and the kinetic data from the current manuscript. Claim C100 is an inference about mammalian cells based on similarities in adaptor interactions, supported by citation. The comparative analysis is reasonable but remains somewhat speculative for mammalian cells.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C101"
+    ],
+    "result": "A unified model proposes that GGA-dependent export from the TGN begins prior to secretory vesicle formation and AP-1-dependent recycling in both yeast and mammalian cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C101 represents a proposed unified model integrating the current findings with prior work. The model is well-supported for yeast but remains more speculative for mammalian cells. The authors appropriately present this as a proposed view.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C102",
+      "C103"
+    ],
+    "result": "Mammalian cells use kiss-and-run fusion between lysosomes and late endosomes, and electron tomography shows tubular membrane connections between yeast PVE compartments and vacuoles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C102 is supported by citations to mammalian studies. Claim C103 is supported by citation to prior electron microscopy work (McNatt et al., 2007) and an image reprinted in the manuscript (Figure 8\u2014figure supplement 2). These provide supporting evidence for the kiss-and-run model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R30",
+    "claim_ids": [
+      "C104"
+    ],
+    "result": "Tubular connections between PVE compartments and vacuoles should be common based on the kiss-and-run model, and their prevalence could be quantified in future studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C104 is an inference from the kiss-and-run model with a suggestion for future work. This is appropriately presented as a prediction that could be tested by additional morphological studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R31",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "PVE compartments sometimes form clusters, which could theoretically yield false impressions of kiss-and-run fusion if individual compartments fused completely. However, this seems unlikely because solitary PVE compartments also never disappear completely.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C107 address a potential alternative explanation for the observations. C105 is supported by citation to prior EM work. C106 describes the alternative scenario, and C107 provides a counterargument based on the authors' observations. This represents appropriate consideration of alternative explanations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R32",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "Kiss-and-run fusion could permit exchange of transmembrane proteins between PVE compartments and vacuoles. Prior studies show that some PVE proteins reach the vacuole membrane while others are retained, potentially through saturable retention mechanisms. The kiss-and-run model can explain this selectivity better than complete fusion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C112 discuss implications of the kiss-and-run model for protein sorting. C108 and C111 are speculative, while C109-C110 cite prior observations. C112 presents a logical argument favoring kiss-and-run over complete fusion. This represents appropriate discussion of model implications and consistency with prior observations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R33",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "PVE-to-vacuole cargo transfer is slow (30+ min) relative to other trafficking steps (ER-to-PVE or PM-to-PVE in ~10 min). Prior pulse-chase measurements may be misleading if kiss-and-run fusion allows vacuolar proteases into PVE compartments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113, C115-C116 compare trafficking kinetics based on the current data and prior studies. Claim C114 raises an important caveat about interpreting prior pulse-chase experiments in light of the kiss-and-run model. This represents appropriate critical evaluation of prior methods.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R34",
+    "claim_ids": [
+      "C117",
+      "C118"
+    ],
+    "result": "The slow PVE-to-vacuole traffic may allow cells to recycle membrane proteins from PVE compartments rather than degrading them, while the AP-3 pathway provides an alternative for rapid vacuolar delivery.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C117-C118 discuss potential biological significance of the slow kinetics and alternative pathways. C117 is speculative but supported by citation. C118 is supported by citation to prior work on AP-3. This represents appropriate discussion of biological implications.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R35",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "Prior assumptions that yeast early endosomes mature into PVE compartments are challenged by the lack of observed PVE maturation and the proposed absence of distinct early endosomes in yeast.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C30 discuss prior assumptions and their logical implications. C28 describes prior assumptions with citations. C29-C30 present the authors' alternative view based on their prior work. This represents appropriate discussion of how the current model differs from prior assumptions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R36",
+    "claim_ids": [
+      "C26"
+    ],
+    "result": "Sec7 is an Arf guanine nucleotide exchange factor recruited and activated during the early-to-late Golgi transition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C26 provides background information about Sec7 supported by citations to prior studies. This is established knowledge important for interpreting the kinetic comparisons with GGAs and AP-1.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R37",
+    "claim_ids": [
+      "C42"
+    ],
+    "result": "Some cargo molecules were present in the vacuole prior to aggregate dissolution, presumably due to signal-dependent ER exit allowing escape before aggregation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C42 is an observation from microscopy (Figure 1C) with a reasonable interpretation based on prior work. This represents appropriate characterization of the cargo system's behavior.",
+    "result_type": "MINOR"
+  }
+]

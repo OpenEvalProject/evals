@@ -1,0 +1,414 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2"
+    ],
+    "result": "HQ461 was discovered through high-throughput screening for NRF2 suppressors and exhibits potent cytotoxicity to A549 cells with an IC50 of 1.3 \u00b5M.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1 and C2 are directly supported by experimental data. The compound's origin from phenotype-based screening is stated, and the IC50 value is measured and reported with reference to Figure 1B and source data, providing clear quantitative evidence of cytotoxicity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5"
+    ],
+    "result": "Genome-wide CRISPR-Cas9 screening identified components of the ubiquitin-proteasome system, particularly DDB1-CUL4-RBX1 E3 ligase complex members, as top-ranking genes for HQ461 resistance, suggesting HQ461 exerts cytotoxicity through proteasomal degradation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C5 are well-supported by the MAGeCK analysis of CRISPR screening data (C3) and validation experiments showing that depletion of DDB1, RBX1, or UBE2G1 confers resistance (C4). The hypothesis in C5 logically follows from the screening results, though it remains a hypothesis requiring further validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9"
+    ],
+    "result": "HQ461-resistant HCT-116 clones harbor recurrent CDK12 mutations at position G731 (G731E and G731R), identified through whole-exome sequencing of resistant clones.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C9 are supported by multiple lines of evidence: IC50 measurements showing 3-fold resistance (C6), whole-exome sequencing identifying G731E as the top variant (C7), Sanger sequencing confirming mutations in specific clones (C8), and discovery of the G731R allele (C9). The convergence of independent resistant clones on the same codon provides strong genetic evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "CRISPR-Cas9 knock-in and overexpression of CDK12 G731E or G731R mutations confer HQ461 resistance in A549 cells, with 9-13 fold reduced sensitivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C12 provide strong functional validation through multiple approaches: CRISPR knock-in experiments (C10), quantification of resistance in isolated clones (C11), and overexpression studies (C12). The consistency across different experimental methods strengthens the conclusion that these mutations causally confer resistance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C13"
+    ],
+    "result": "The G731 residue is located in the kinase domain of CDK12.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C13 is a straightforward structural observation supported by the domain architecture shown in Figure 2F. This is established structural knowledge that can be verified against protein databases.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "HQ461 treatment causes rapid and dramatic degradation of CCNK (>8-fold reduction in 4 hr) with only modest effects on CDK12 protein levels (50% reduction in 8 hr), and this degradation is blocked by CDK12 G731E/R mutations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C17 are supported by western blotting data showing differential effects on CDK12 and CCNK (C14-C15), protection by G731E/R mutations (C16), and the relationship between CCNK and CDK12 stability (C17). The time-course and quantitative measurements provide strong evidence for selective CCNK degradation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C23"
+    ],
+    "result": "HQ461-dependent CCNK degradation requires the DDB1-CUL4-RBX1 E3 ubiquitin ligase complex and proteasome function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C19 and C23 are supported by pharmacological inhibition (bortezomib and MLN4924) and genetic depletion experiments showing that disrupting the ubiquitin-proteasome system prevents CCNK degradation. The convergence of multiple approaches provides strong mechanistic evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C24"
+    ],
+    "result": "HQ461 triggers polyubiquitination of CCNK but not CDK12 in cells expressing wild-type CDK12, while G731E/R mutations prevent CCNK polyubiquitination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C22 and C24 are supported by in vivo ubiquitination assays showing selective CCNK ubiquitination and protection by CDK12 mutations. The specificity for CCNK over CDK12 is clearly demonstrated, supporting the molecular glue mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "The kinase domain of CDK12 is sufficient to mediate HQ461-dependent CCNK degradation and polyubiquitination, and G731E/R mutations in this domain block these effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C27 are supported by domain mapping experiments. C25 cites established knowledge, while C26-C27 demonstrate that the kinase domain alone is sufficient for the effect and that mutations block it. This narrows the mechanism to the kinase domain.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "CDK13, a paralog of CDK12 with 90.5% kinase domain identity, can also mediate CCNK degradation, and equivalent mutations (G709E/R) block this effect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C30 extend the findings to CDK13, demonstrating that the mechanism is conserved in a closely related kinase. The structural similarity (C28) and functional conservation (C29-C30) support a common mechanism and validate the importance of the glycine residue.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "HQ461 mediates recruitment of the CDK12/CCNK complex to DDB1 in an HQ461-dependent manner, and G731E/R mutations impede this recruitment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C34 are supported by co-immunoprecipitation experiments showing that CDK12-CCNK interaction is constitutive (C31), DDB1 association is HQ461-dependent (C32), and mutations block DDB1 recruitment (C34). This provides direct evidence for the molecular glue mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "In vitro reconstitution demonstrates that HQ461 promotes CDK12/CCNK recruitment to DDB1-CUL4-RBX1 for CCNK polyubiquitination, with all components being essential, and this occurs without requiring a DCAF substrate receptor.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C39 are strongly supported by in vitro reconstitution experiments. The all-minus-one experiment (C36) demonstrates essentiality of all components, mutation studies (C37) confirm specificity, and the absence of DCAFs in the CRISPR screen (C39) supports a DCAF-independent mechanism. This is a key mechanistic finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "HQ461 induces formation of a CDK12KD/CCNK\u0394C/DDB1 complex with an EC50 of 1.9 \u00b5M, and G731E/R mutations prevent complex formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C42 are supported by pull-down assays and AlphaScreen measurements providing quantitative binding data. The EC50 value is consistent with the cellular IC50, and the mutation studies confirm the importance of G731 for complex formation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Chemical cross-linking mass spectrometry identified a single inter-protein cross-link between CDK12 K745 and DDB1 K867, both near the ATP-binding pocket, suggesting HQ461 binds this pocket to create a DDB1-binding surface.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C44 are supported by CXMS data identifying specific cross-linked residues. However, C45 is explicitly stated as a hypothesis ('suggesting') based on structural location. While the structural reasoning is sound, direct binding evidence is needed to fully support this model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C46",
+      "C47"
+    ],
+    "result": "HQ461 directly binds to CDK12KD/CCNK\u0394C, as evidenced by a 1.4\u00b0C increase in melting temperature by differential scanning fluorimetry.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C47 are supported by DSF experiments showing thermal stabilization. While the 1.4\u00b0C shift is modest, it is consistent with direct binding. The inference of direct binding (C47) is reasonable but could be strengthened with additional biophysical methods.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "HQ461 does not directly bind to DDB1, as demonstrated by lack of thermal stabilization of DDB1\u0394BPB, while an HBx peptide known to bind the BPC domain increases DDB1 stability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C52 are supported by DSF experiments with appropriate positive control (HBx peptide). The lack of thermal stabilization of DDB1 by HQ461 (C51) supports the conclusion that HQ461 does not directly bind DDB1 (C52), consistent with the molecular glue model where HQ461 binds CDK12 to create a neo-interface.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C53",
+      "C54"
+    ],
+    "result": "HQ461 can bind to CDK12 kinase domain containing G731E/R mutations, as shown by concentration-dependent thermal stabilization of mutant proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C54 are supported by nanoDSF experiments showing that mutant CDK12 is still thermally stabilized by HQ461. This important finding indicates that the mutations do not prevent HQ461 binding but rather disrupt the induced DDB1-binding interface, supporting the molecular glue mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "THZ531 and dinaciclib, known CDK12 inhibitors, compete with HQ461 for binding to the ATP-binding pocket, preventing complex formation and CCNK degradation without causing degradation themselves.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C59 are supported by competition experiments and western blotting. The ability of ATP-competitive inhibitors to block HQ461's effects (C56, C58) without causing degradation themselves (C57) strongly supports that HQ461 binds the ATP pocket (C59) and that this binding is essential for the molecular glue activity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C104",
+      "C105"
+    ],
+    "result": "Structure-activity relationship analysis identified the 5-methylthiazol-2-amine moiety as crucial for activity, with the 5-position on the pyridine ring being sensitive to steric effects, and led to HQ005 with 3-fold improved potency (DC50 = 41 nM).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C64 and C104-C105 are supported by systematic SAR studies with quantitative DC50 measurements. The identification of key pharmacophores (C60, C104) and the improved analog HQ005 (C63, C105) are well-documented. However, the speculation about hydroxyl group interactions (C64) remains unvalidated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "CCNK depletion reduces cell viability, and this effect can be rescued by expressing an sgRNA-resistant CCNK variant, confirming that CCNK is essential for cell survival through its role in CDK12 and CDK13 complexes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C66 are supported by colony formation assays with appropriate rescue controls. Claims C67-C69 cite established knowledge about CCNK's role in CDK12/13 complexes. Together, these support that CCNK depletion is responsible for cell death, validating the therapeutic relevance of HQ461's mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "HQ461 treatment reduces POLII CTD Serine 2 phosphorylation and downregulates DNA damage response genes (BRCA1, BRCA2, ATR, ERCC4), effects that are abolished in cells with CDK12 G731E/R mutations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C75 are supported by western blotting (C71) and RT-qPCR (C73) data, with C70 citing established knowledge. The rescue by G731E/R mutations (C74-C75) confirms on-target effects. However, statistical significance is only indicated for C73, and the RT-qPCR shows only 3 technical replicates rather than biological replicates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C79",
+      "C103"
+    ],
+    "result": "HQ461 functions as a molecular glue by binding CDK12's ATP-binding pocket to create an altered surface that interacts with DDB1's BPC domain, converting CDK12 into a substrate-specific receptor for CRL4 without requiring a DCAF.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C77, C79, and C103 represent the central mechanistic model supported by multiple lines of evidence: direct binding to CDK12 (DSF), induced DDB1 interaction (co-IP, AlphaScreen), CXMS mapping, selective CCNK ubiquitination, and absence of DCAF requirement. This is a well-supported and novel mechanism for molecular glue degraders.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C80",
+      "C81"
+    ],
+    "result": "Modest CDK12 downregulation by CRISPRi (5-10 fold) does not cause cell death or proliferation defects, indicating that the modest CDK12 reduction by HQ461 is not the direct cause of cytotoxicity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C81 are supported by CRISPRi experiments with 10 independent sgRNAs showing no effect on viability despite efficient CDK12 depletion. This important control demonstrates that CCNK degradation, rather than CDK12 reduction, is responsible for HQ461's cytotoxicity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C82"
+    ],
+    "result": "The CDK12-DDB1 interface is a hotspot for molecular glues, as three independent studies with distinct chemical scaffolds converged on the same mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C82 is supported by the convergence of multiple independent studies (referenced in the discussion). This meta-observation strengthens confidence in the mechanism and suggests the interface has favorable properties for molecular glue binding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "HQ461-mediated CCNK depletion phenotypically mimics dual CDK12/13 inhibition, causing reduced expression of DNA damage response genes and potentially sensitizing cells to PARP inhibitors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C83-C86 combine experimental data (C86) with cited knowledge (C84-C85) and inference (C83). While C86 is supported by RT-qPCR data, the phenotypic mimicry of THZ531 (C83) is stated but not directly demonstrated with comparative data. The potential for PARP inhibitor sensitization is speculative and requires experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "Molecular glues are rare compounds discovered serendipitously that typically bind target proteins with modest affinity, can target transcription factors and splicing factors, and possess favorable pharmacological properties, as exemplified by auxin, thalidomide, and indisulam.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C96 represent background knowledge about molecular glues, all appropriately cited from the literature. These claims provide context for the significance of HQ461 as a new molecular glue but are not novel findings of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "HQ461 acts by promoting CDK12-DDB1 interaction leading to CCNK degradation, which compromises CDK12 function, reduces substrate phosphorylation, downregulates DNA damage response genes, and causes cell death.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C102 represent the overall summary of the mechanism and are supported by the collective evidence from multiple experiments throughout the study. Each component (CDK12-DDB1 interaction, CCNK degradation, functional consequences, cell death) is individually supported by experimental data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C78"
+    ],
+    "result": "Several viruses have evolved to use viral proteins as facultative substrate-specific receptors for DDB1 to degrade host restriction factors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C78 is established knowledge appropriately cited from the literature. This provides an interesting parallel to HQ461's mechanism but is not a finding of this study.",
+    "result_type": "MINOR"
+  }
+]

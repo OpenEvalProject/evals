@@ -1,0 +1,1102 @@
+{
+  "submission": {
+    "id": "0c8f91d9-e19c-44f4-9a51-6b9518fb2763",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T14:27:48.877435Z",
+    "updated_at": "2025-12-02T14:27:48.877435Z"
+  },
+  "content": [
+    {
+      "id": "beaf5991-9e81-407f-96a2-a4c5172f5397",
+      "submission_id": "0c8f91d9-e19c-44f4-9a51-6b9518fb2763",
+      "content_type": "manuscript",
+      "content_text": "# Rank orders and signed interactions in evolutionary biology\n\n## Authors\n\n- Kristina Crona<sup>1</sup> ([ORCID: 0000-0003-1819-474X](https://orcid.org/0000-0003-1819-474X)) \u2020\n\n### Affiliations\n\n1. Mathematics and Statistics American University Washington DC United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nRank orders have been studied in evolutionary biology for almost a hundred years. Constraints on the order in which mutations accumulate are known from cancer drug treatment, and order constraints for species invasions are important in ecology. However, current theory on rank orders in biology is somewhat fragmented. Here, we show how our previous work on inferring genetic interactions from comparative fitness data (Crona et al., 2017) is related to an influential approach to rank orders based on sign epistasis. Our approach depends on order perturbations that indicate interactions. We apply our results to malaria parasites and find that order perturbations beyond sign epistasis are prevalent in the antimalarial drug-resistance landscape. This finding agrees with the observation that reversed evolution back to the ancestral type is difficult. Another application concerns the adaptation of bacteria to a methanol environment.\n\n## Introduction\n\nRank orders of genotypes with respect to fitness are central in evolutionary biology. Key concepts, such as peaks and mutational trajectories, refer to an underlying rank order. The impact of suboptimal peaks has been discussed ever since fitness landscapes were introduced (Wright, 1932). A major advantage with rank orders, as compared to other statistics for fitness landscape, is that order data is robust for variation in experimental methods and measurements. In fact, one does not necessarily need to measure fitness at all. If a rank order can be established by a competition experiment or by\u00a0any type of rank order preserving fitness proxy, then one can apply theory on rank orders. Results from different empirical studies can therefore be compared; fitness or log-fitness, radius or area, change per minute or generation, makes no difference if rank orders are considered.\n\nThe concept of sign epistasis introduced by Weinreich et al. (2005), has been important for recent work on rank orders in evolutionary biology (Kaznatcheev, 2019; Crona et al., 2017; Wu et al., 2016; de Visser and Krug, 2014; Crona et al., 2013; Poelwijk et al., 2011). A system has sign epistasis if the sign of the effect of a mutation, whether positive or negative, depends on genetic background. The graphs in Figure 1 illustrate the\u00a0absence of sign epistasis (A), sign epistasis (B), and reciprocal sign epistasis (C) for two-locus systems. Each arrow points toward the genotype of higher fitness. The importance of rank order data for two-locus subsystems is that they carry information about global aspects of fitness landscapes, and therefore about\u00a0long-term evolution. For instance, all multi-peaked fitness landscapes have reciprocal sign epistasis (Poelwijk et al., 2011). Conversely, if subsystems of type C exist, but no systems of type B, then the landscape is multi-peaked (Crona et al., 2013).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/51004/elife-51004-fig1-v2.jpg)\n\n**Figure 1.:** The peaks are marked red. Under the assumption that 00 has minimal fitness, and that the genotypes are positioned as in the figure, the three types can be characterized as graphs with no arrows down, one arrow down, or two arrows down.\n\nThe squares representing a\u00a0two-locus subsystem (see the orange square in Figure 2) are clearly informative. However larger rectangles can improve the precision of the analysis. Each arrow in Figure 2 points toward the genotype of higher fitness. The undirected edges connect mutational neighbors, that\u00a0is genotypes that differ at one locus only. The blue rectangles in Figure 2 concern replacements of the type $00\u21a611$ for the second and third loci. If the sign of the effect of such a replacement depends on background, then the long arrows have different directions (Figure 2B and D). Such a perturbation is similar to sign epistasis, except that two loci are replaced.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/51004/elife-51004-fig2-v2.jpg)\n\n**Figure 2.:** The undirected edges connect mutational neighbors and carry no information about fitness differences. The graph 2A is compatible with additive fitness. The other graphs are not\u00a0compatible with additive fitness\u00a0because at least one pair of parallel arrows point in different directions. The lower graphs indicate sign epistasis, as is\u00a0clear from the short arrows. The right graphs indicate size two perturbations, as is\u00a0clear from the long arrows.\n\nWe propose a broader perspective on perturbations, that takes advantage of all rectangles in the cube (or hypercube). Differently expressed, in addition to single mutations it is sometimes useful to consider the effects of double mutations\u00a0and any higher order mutations, as well as replacements $0\u21a61$ and $1\u21a60$ for any selected subset of loci. If the sign of the effect of such a replacement depends on background, then the system has a rectangular perturbation. As proof of principle, we demonstrate that the large rectangles give new insights for two empirical studies (as compared to an analysis of sign epistasis). The first concerns antimalarial drug resistance (Ogbunugafor and Hartl, 2016), whereas the second example\u00a0involves\u00a0bacteria adapting to a methanol environment (Chou et al., 2011).\n\nAs in Crona et al. (2017), fitness is additive if the fitness effects of individual mutations sum, otherwise the system has epistasis (or gene interactions). By a rank order induced, or signed, interaction, we mean that the rank order reveals epistasis. Questions about how different approaches to signed interactions relate and how it is possible to determine whether a rank order is compatible with additive fitness were briefly discussed by the authors. As eLife reviewers pointed out, the signed interactions in Crona et al. (2017) are not generalizations of sign epistasis but there is clearly some connection.\u00a0The remaining open problems were the starting point for this work. The main idea for resolving the problems was to consider rectangles such\u00a0as those\u00a0in Figure 2 (no knowledge of Walsh-coefficient, polytopes, or similarly is assumed here).\n\n## Results\n\nWe consider biallelic $n$-locus systems. The fitness of a genotype $g$ is denoted $w_{g}$. For simplicity, we assume that there exists a total order of the genotypes with respect to fitness, here referred to as a rank order (no two genotypes have equal fitness).\n\nFor two-locus systems, the expression $u=w_{00}+w_{11}-w_{10}-w_{01}$ measures epistasis. If it easy to verify that $u=0$ if fitness is additive. By definition, the system has an interaction if $u\\neq0$, and a signed interaction if the rank order implies that $u>0$ or $u<0$. For instance the order $w_{11}>w_{00}>w_{10}>w_{01}$ implies that $u>0$.\n\nFor a systematic treatment of order perturbations, it is necessary to write the information in compact form. Notice that a rank order where $w_{00}>w_{10}$\u00a0and\u00a0$w_{01}<w_{11}$\u00a0implies sign epistasis, as the effect of a mutation at the first locus can increase or decrease fitness. Reciprocal sign epistasis for a two-locus system can be defined as a system with two peaks (Figure 1C). In particular, parallel arrows point in different directions.\n\nIt is straightforward to a check that a two-locus system has sign epistasis exactly if at least one of the following expressions is negative, and reciprocal sign epistasis if both of them are negative (Figure 1).\n\n$$\n(w_{00}-w_{10})\u2062(w_{01}-w_{11})\n$$\n\n\n\n$$\n(w_{00}-w_{01})\u2062(w_{10}-w_{11})\n$$\n\nA negative sign corresponds to that a pair of parallel arrows that\u00a0point in different directions.\u00a0Large systems can be analyzed similarly.\n\nA system has a rectangular perturbation if the sign of the effect of replacing a subset of loci, according to the rule $0\u21a61$ and $1\u21a60$, depends on background. The size of the perturbation refers to the number of loci replaced.\n\nIn particular, a rectangular perturbation of size 1 is a case of sign epistasis. The expression $u$ was used to analyze gene interactions in the two-locus case, and a similar approach works in general. We define $\ud835\udc9e$ as the set of all expressions of the type\n\n$$\nr=w_{g}+w_{g^{\u2032}}-w_{g^{\u2032\u2032}}-w_{g^{\u2032\u2032\u2032}},\n$$\n\nfor genotypes $g,g^{\u2032},g^{\u2032\u2032},g^{\u2032\u2032\u2032}$ such that $r=0$ if fitness is additive. For instance, for n\u00a0=\u00a03, the expressions\n\n$$\nw_{110}+w_{000}\u2212w_{100}\u2212w_{010}\u00a0and\u00a0w_{111}+w_{000}\u2212w_{100}\u2212w_{011}\n$$\n\nassociated with two of\u00a0the\u00a0rectangles in Figure 2 (i.e., the leftmost side and the blue rectangle) are included in $\ud835\udc9e$. Note that each expression in $\ud835\udc9e$ can be obtained by going around a rectangle in the cube and assigning coefficients with alternating signs along the way (each $w$-coefficient is +1\u00a0or \u20131).\n\nWe call the elements in $\ud835\udc9e$ circuits, with reference to theory presented\u00a0in Beerenwinkel et al. (2007b)\u00a0(see also 'Materials and methods'; no knowledge of circuits is assumed). By a rank-order-induced circuit, or signed circuit, we mean that the rank order implies that the circuit is positive or negative (exactly as in the two-locus case).\n\nFor $n=3$, consider the circuit $w_{111}+w_{000}-w_{100}-w_{011}$ and the related expressions (the four genotypes from the circuit can be combined in two different ways):\n\n$$\n(w_{000}-w_{100})\u2062(w_{011}-w_{111})\n$$\n\n\n\n$$\n(w_{000}-w_{011})\u2062(w_{100}-w_{111}).\n$$\n\nIf the rank order implies that expression\u00a0(3) is negative, then the system has sign epistasis, and if expression\u00a0(4) is negative, the system has an order perturbation of size 2. The short blue arrows in Figure 2 point in different directions in the first case, and the long blue arrows do so in the latter. Similarly, any rectangular perturbation corresponds to two parallel arrows (along opposite sides of a rectangle) that\u00a0point in different directions.\n\nRemark 1.\u00a0The relation between signed circuits and sign epistasis can be summarized as follows for $n=2$.\n\nRemark 2. A similar observation holds for signed circuits and any $n$.\n\nIn particular, in order to check a three-locus system for perturbations it is sufficient to check the signs of 24 expressions, including expression\u00a0(3) and (4), associated with 12 circuits (see 'Materials and methods').\n\n### Applications\n\nThe first application concerns a study of the malaria-causing parasite Plasmodium vivax (Ogbunugafor and Hartl, 2016). The original study investigates a four-locus system exposed to different concentrations of the anti-malarial drug pyrimethamine (PYR). The quadruple mutant denoted 1111 has the highest degree of drug resistance, whereas the genotype 0000 has the highest fitness among all genotypes in the drug-free environment. Several concentrations of the drug were tested in the original study. We compared the highest concentration of the drug and the drug-free environment. Sign epistasis was equally frequent in both fitness landscapes. However, the drug-free environment had about twice as many perturbations of size 2 and 3, as the drug-exposed environment. The summary statistic indicates that (Table 1) adaptation is more difficult in the drug-free environment, because few replacements of pieces of code (regardless of size) are universally beneficial.\n\n**Table 1.**\n Rectangular perturbations for drug-exposed and drug-free malaria fitness landscapes.The third line shows the total number of expressions checked. The prevalence of sign epistasis is similar for the landscapes, whereas the remaining perturbations differ by a factor of\u00a0two.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Perturbation size</th>\n      <th>1</th>\n      <th>2</th>\n      <th>3</th>\n      <th>Size (1-3)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Drug-exposed</td>\n      <td>55</td>\n      <td>21</td>\n      <td>5</td>\n      <td>81</td>\n    </tr>\n    <tr>\n      <td>Drug-free</td>\n      <td>54</td>\n      <td>39</td>\n      <td>9</td>\n      <td>102</td>\n    </tr>\n    <tr>\n      <td>Expressions checked</td>\n      <td>112</td>\n      <td>72</td>\n      <td>16</td>\n      <td>200</td>\n    </tr>\n  </tbody>\n</table>\n\nThis finding agrees well with the authors\u2019 observation that resistance development is a relatively straightforward process, whereas reversed evolution from the mutant 1111 back to the ancestral type is difficult. Interestingly, the complete statistics of order perturbations was better able\u00a0to\u00a0distinguish the landscapes\u00a0than sign epistasis alone.\n\nThe second application concerns a study of the bacterium Methylobacterium extorquens,\u00a0which\u00a0adapts to a methanol environment (Chou et al., 2011). For the sake of the argument, we assume that the published measurements are exact (a discussion about the impact of measurement errors can\u00a0be\u00a0found in 'Materials and methods'). The fitness landscape does not have sign epistasis. However, the system has size 2 perturbations\u00a0(Table 2). In particular $w_{1000}>w_{0100}$ and $w_{1011}<w_{0111}$, so that the sign of the effect of the change $10\u21a601$ at the first pair of loci depends on background. The perturbations show that the rank order is incompatible with additive fitness.\n\n**Table 2.**\n Order perturbations of size 1 and 2 for Methylobacterium extorquens.The landscape has no sign epistasis. However, perturbations of size 2 reveal that the landscape is not additive.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Perturbation of size</th>\n      <th>1</th>\n      <th>2</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Number of perturbations</td>\n      <td>0</td>\n      <td>3</td>\n    </tr>\n    <tr>\n      <td>Expressions checked</td>\n      <td>112</td>\n      <td>72</td>\n    </tr>\n  </tbody>\n</table>\n\nA complete analysis of perturbations for an $n$-locus system requires an investigation of $2\u2062(\\frac{6^{n}}{8}-4^{n-1}+2^{n-3})$ expressions for $n\\geq3$ (Theorem\u00a01, 'Materials and methods'). Statistics on order perturbations should always be considered estimates because of measurement errors. However, that is true for all rank-order-based concepts, and a peak count is sensitive to noise. One could naively believe that a broader perspective makes the problem worse. By contrast, rectangular perturbations can sometimes be helpful in separating signal and noise.\n\nFor instance, assume that fitness is additive and that all mutations decrease fitness (Figure 3). The graphs show the proportion of unexpected observations, that\u00a0is increased fitness, for replacements of the type $0\u21a61$, $00\u21a611$ and $000\u21a6111$ for two error distributions (errors follow a normal distribution in the upper graph and the Student\u2019s t-distribution with df\u00a0=\u00a03 in the lower, see 'Materials and methods' for more details). In both cases, the proportion of unexpected results decreases by the number of loci replaced. The reason is that the noise level is similar in all cases, whereas the effect size is not.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/51004/elife-51004-fig3-v2.jpg)\n\n**Figure 3.:** The fitness landscapes are additive and each mutation $0\u21a61$ decreases fitness.The graphs compare replacements $0\u21a61,00\u21a611$ and $000\u21a6111$. Because of measurement errors, some replacements appear to increase fitness. The graphs show the proportion of such cases.\n\nThis observation can be useful. For instance, it is difficult to exclude additive fitness for a collection of detrimental mutations by observing sign epistasis alone (apparent sign epistasis can result\u00a0from noise). However, an investigation of the three types of replacements described could be conclusive. In particular, similar proportions of unexpected results would constitute a strong argument against additive fitness.\n\nRank orders and perturbations are important for problems beyond natural selection. Constraints on the\u00a0orders in which mutation occur are known for development of cancer drug resistance (Hosseini et al., 2019; Beerenwinkel et al., 2007a). In brief, a typical case would be that some mutation $B$ is not selected for unless a mutation $A$ has occurred, even though $A\u2062B$ has high fitness. If the constraint holds universally, it can be described as: $w_{01\u2063\u2217}<w_{00\u2063\u2217}<w_{10\u2063\u2217}<w_{11\u2063\u2217}$, where *\u00a0is an arbitrary sequence. For an $n$-locus system, such a constraint implies $2^{n-2}$ order perturbations if fitness is additive for the remaining loci.\n\n### Additivity and rank orders\n\nThe problem of determining if rank orders are compatible with additive fitness is already interesting\u00a0for $n=3$.\n\nFor the fitness landscape\n\n$$\nw_{000}=1,w_{100}=1.1,w_{010}=1.12,w_{001}=1.09,\n$$\n\n\n\n$$\nw_{110}=1.2,w_{101}=1.22,w_{011}=1.19,w_{111}=1.3,\n$$\n\nthe rank order is $w_{111}>w_{101}>w_{110}>w_{011}>w_{010}>w_{100}>w_{001}>w_{000}.$ The change $0\u21a61$ at any locus increases fitness regardless of background, so there is no sign epistasis. However, the sign of the effect of the change $10\u21a601$ at the first pair of loci depends on background,\u00a0as $w_{100}<w_{010}$ and $w_{101}>w_{011}$. In particular, the rank order is not compatible with additive fitness.\n\nAs remarked in Crona et al. (2017), exactly 384 orders are compatible with the\u00a0absence of sign epistasis for $n=3$. By applying order perturbations (and by inspection), we verified that exactly 96 out of the 384 orders are compatible with additive fitness, or 0.24 percent of all 40,320 rank orders for three-locus systems. After relabeling (see 'Materials and methods' for details), only the following two orders are compatible with additive fitness:\n\n$$\nw_{111}>w_{110}>w_{101}>w_{011}>w_{100}>w_{010}>w_{001}>w_{000}\n$$\n\n\n\n$$\nw_{111}>w_{110}>w_{101}>w_{100}>w_{011}>w_{010}>w_{001}>w_{000}.\n$$\n\nTheory on rank orders and additivity has been developed independent of biological application and is still an active research area (Searles and Slinko, 2015; Maclagan, 1998). In principle, one can determine whether a specific rank order is compatible with additive fitness by solving a system of linear inequalities obtained from the order. It is straightforward to verify that a rank order is compatible with additive fitness unless it has rectangular perturbations for $n$=4. However, counterexamples to the analogous statement for $n=5$ exist (Kraft et al., 1959)\u00a0(see Materials and methods for more details).\n\n## Discussion\n\nA rank order of genotypes, from highest to lowest fitness, is informative about gene interactions (Crona et al., 2017). We introduced rectangular perturbations to\u00a0resolve problems on how different approaches to rank order induced (or signed) interactions relate. Sign epistasis concerns the\u00a0effects of single mutations, and the new perturbations also concern\u00a0the effects of multiple mutations.\n\nWe have established that sign epistasis implies that a system has signed circuit interactions, but the converse is not true. Strictly speaking, signed circuits are not generalizations of sign epistasis, neither are signed circuits refinements of sign epistasis. However, sign epistasis can be seen as rectangular perturbations of minimal size.\n\nA rank order is compatible with additive fitness unless there is sign epistasis for a\u00a0two-locus system. We have provided a counterexample for the analogous claim for three loci. For four-locus systems, a rank order is compatible with additive fitness\u00a0unless there are rectangular perturbations. However, counterexamples exist for five loci (Maclagan, 1998; Kraft et al., 1959). In general, only a very small proportion of all rank orders are compatible with additive fitness, and the theoretical understanding for the property is limited.\n\nAs a proof of principle, we applied rectangular perturbations to empirical studies on antimalarial drug resistance (Ogbunugafor and Hartl, 2016) and on\u00a0bacteria adapting to a methanol environment (Chou et al., 2011). Rectangular perturbations have the capacity to detect epistasis when conventional rank-order-based methods cannot. The perturbations capture evolutionary important properties beyond local aspects. A complete analysis of rectangular perturbations requires an investigation of a large number of expressions (of the order $6^{n}$). Often, it is meaningful to consider selected perturbations, depending on the context.\n\nIn general, rank orders are quite informative about gene interactions, and also regarding evolutionary potential (in a qualitative sense) provided one assumes the Strong Selection Weak Mutation regime (Gillespie, 1984). If the available information from an empirical study is a rank order, for instance from a competition experiment, then it is obviously useful to have methods for interpreting rank orders (further motivations are discussed in Crona et al., 2017). However, rank-orders methods have obvious limitations. Rank orders are insufficient for determining the effect of genetic recombination (de Visser et al., 2009; Otto and Lenormand, 2002). Evolutionary predictability is sensitive for population parameters, and the importance of accessible mutational trajectories is not universal (de Visser and Krug, 2014; Krug, 2019).\n\nIt would be interesting to determine the\u00a0extent to\u00a0which\u00a0rectangular perturbations are helpful for relating local and global properties of fitness landscapes, similar to results on sign epistasis (Weinreich et al., 2005; Poelwijk et al., 2011; Crona et al., 2013), and also in analyzing statistical aspects further. Algorithms and exact formulas for potential perturbations are provided in\u00a0the 'Materials and methods'.\n\n## Materials and methods\n\n### General circuits\n\nFor a biallelic $n$-locus system, we have discussed a set $\ud835\udc9e$ defined as all expressions of the form\n\n$$\nr=w_{g}+w_{g^{\u2032}}-w_{g^{\u2032\u2032}}-w_{g^{\u2032\u2032\u2032}},\n$$\n\nfor genotypes $g,g^{\u2032},g^{\u2032\u2032},g^{\u2032\u2032\u2032}$, such that $r=0$ if fitness is additive. In order to connect to general theory, we need some concepts. Starting with the two-locus case, for the genotypes $00,10,01,11$, one can form vectors in $\u211d^{3}$ by adding an extra coordinate one for each genotype\n\n$$\n(0,0,1),(1,0,1),(0,1,1),(1,1,1).\n$$\n\nThe four vectors are linearly dependent since\n\n$$\n(1,1,1)+(0,0,1)-(1,0,1)-(0,1,1)=(0,0,0).\n$$\n\nThe dependence relation corresponds exactly to the linear form\n\n$$\nu=w_{11}+w_{00}-w_{10}-w_{01}.\n$$\n\nSimilarly, one can form vectors in $\u211d^{n+1}$ from the vertices of the $n$-cube by adding a coordinate 1. Circuits are defined as the minimal dependence relations, in the sense that each proper subset of the vectors (with non-zero coefficients) are linearly independent.\n\nThere are in total 20 circuits for $n=3$, including $\ud835\udc9e$, but also for instance the circuit\n\n$$\nw_{000}+2\u2062w_{111}-w_{110}-w_{101}-w_{011}.\n$$\n\nIn this terminology, one can describe $\ud835\udc9e$ as the set of circuits that have exactly four non-zero coefficients for the variables $w_{g}$. Note that all circuits are zero if fitness is additive. In that sense, circuits measure epistasis. An analysis of all circuits provides very complete information on gene interactions (Beerenwinkel et al., 2007b).\n\n### Counting rectangular perturbation\n\nTo count rectangular perturbations, one needs to find all rectangles with vertices in an $n$-cube. We provide an explicit formula with proof for the reader\u2019s convenience, even though the result is elementary. The proof depends on Stirling numbers of the second kind. The Stirling number $S\u2062(n,k)$ is defined as the number of ways to partition a set of $n$ objects into $k$ non-empty subsets. We refer to Grimaldi (2006) for more background.\n\nTheorem\u00a01.\u00a0The total number of (potential) rectangular perturbations for an $n$-locus system is\n\n$$\n2(\\frac{6^{n}}{8}\u22124^{n\u22121}+2^{n\u22123})forn\\geq3.\n$$\n\nMoreover, the number of rectangular perturbations of size $k$ (exactly $k$ loci are replaced) equals\n\n$$\n2^{k-1}\u2062(\\frac{n}{k})\u2062(\\frac{2^{n-k}}{2}).\n$$\n\nCorollary.\u00a0A complete investigation of sign epistasis for an $n$-locus system requires that one checks the signs of $n\u2062(\\frac{2^{n-1}}{2})$ expressions.\n\nLemma\u00a01.\u00a0For Stirling numbers of the second kind $S\u2062(n,k)$, the following identities hold.\n\n$$\nS\u2062(n,2)=2^{n-1}-1\n$$\n\n\n\n$$\nS\u2062(n,3)=\\frac{1}{6}\u2062(3^{n}-3\u22c52^{n}+3).\n$$\n\nProof.\u00a0The first formula holds since there are $2^{n}-2$ non-empty proper subsets of $n$ elements, and each partition corresponds to exactly two subsets. Similarly, the second formula can be derived from the observation that one can construct three labeled subsets of $n$ elements in $3^{n}$ ways. After reducing for all cases with empty sets, the number of alternatives is\n\n$$\n3^{n}-3\u2062(2^{n}-2)-3=3^{n}-3\u22c52^{n}+3.\n$$\n\nEach partition corresponds to six alternatives, which completes the argument.\n\nLemma 2.\u00a0Let $n\\geq3$. There are\n\n$$\n6^{n}/8-4^{n-1}+2^{n-3}\n$$\n\nrectangles with vertices in an $n$-cube.\n\nProof.\u00a0For each vertex $s_{1}\u2062\u2026\u2062s_{n}$ in an $n$-cube, one can construct a rectangle with vertices on the $n$-cube as follows. Distribute the set of $n$ loci into three subsets $S_{1},S_{2}$ and $S_{3}$, where the intersection of each pair of sets is empty, and where $S_{1}$ and $S_{2}$ are non-empty.\n\nFrom the vertex $s_{1}\u2062\u2026\u2062s_{n}$, one constructs the remaining vertices by replacing sets of loci, according to the rule $0\u21a61$, and $1\u21a60$. Specifically, one vertex is obtained by replacing all elements in $S_{1}$, one by replacing all elements in $S_{2}$, and the last by replacing all elements in $S_{1}\u2062\u22c3S_{2}$. If $S_{3}$ is empty, one can construct $S\u2062(n,2)$ rectangles. If all three sets are non-empty, then one can choose $S_{3}$ in three ways, and consequently construct $3\u22c5S\u2062(n,3)$ rectangles. In total, one obtains $3\u22c5S\u2062(n,3)+S\u2062(n,2)$ rectangles starting from a particular vertex. There are $2^{n}$ vertices in the $n$-cube and each rectangle has four vertices. By the previous lemma, the number of rectangles is\n\n$$\n\\frac{2^{n}}{4}\u22c5(3\u22c5S\u2062(n,3)+S\u2062(n,2))=6^{n}/8-4^{n-1}+2^{n-3},\n$$\n\nwhich completes the proof.\n\nWe can now prove the main result.\n\nProof of Theorem\u00a01. The total number of (potential) rectangular perturbations for an $n$-locus system is\n\n$$\n2\u2062(\\frac{6^{n}}{8}-4^{n-1}+2^{n-3}).\n$$\n\nA rectangle with vertices in the $n$-cube corresponds to exactly two rectangular perturbations, one for each pair of parallel edges. Consequently, the result follows from Lemma 2.\n\nThe second part of the theorem states that the number of rectangular perturbations where exactly $k$ loci are replaced is\u00a0equal\u00a0to\n\n$$\n2^{k-1}\u2062(\\frac{n}{k})\u2062(\\frac{2^{n-k}}{2}).\n$$\n\nThe positions of the $k$ loci that change can be chosen in $(\\frac{n}{k})$ different ways. There are $2^{k}$ words of length $k$, and therefore $2^{k-1}$ pairs consisting of a word and its replacement (for instance, the replacement of 110 is 001). Finally, there are $2^{n-k}$ different backgrounds, so that a pair of backgrounds can be chosen in $(\\frac{2^{n-k}}{2})$ ways.\n\nAs mentioned, a single signed circuit may correspond to two cases of sign epistasis. Indeed, a two-locus system with reciprocal sign epistasis is an example. It is thus of interest to identify all order perturbations, rather than identifying signed circuits only. Theorem 1 and its proof indicate how one can find all order perturbations. In particular, the complete list for identifying rectangular perturbations for $n=3$ consists of the following 24 expressions, where the first 18 expressions concern sign epistasis, and the remaining six size 2 perturbations.\n\n$$\n(w_{000}-w_{100})\u2062(w_{010}-w_{110}),(w_{000}-w_{100})\u2062(w_{001}-w_{101}),(w_{000}-w_{100})\u2062(w_{011}-w_{111}),\n$$\n\n\n\n$$\n(w_{010}-w_{110})\u2062(w_{001}-w_{101}),(w_{010}-w_{110})\u2062(w_{011}-w_{111}),(w_{001}-w_{101})\u2062(w_{011}-w_{111}),\n$$\n\n\n\n$$\n(w_{000}-w_{010})\u2062(w_{100}-w_{110}),(w_{000}-w_{010})\u2062(w_{001}-w_{011}),(w_{000}-w_{010})\u2062(w_{101}-w_{111}),\n$$\n\n\n\n$$\n(w_{100}-w_{110})\u2062(w_{001}-w_{011}),(w_{100}-w_{110})\u2062(w_{101}-w_{111}),(w_{001}-w_{011})\u2062(w_{101}-w_{111}),\n$$\n\n\n\n$$\n(w_{000}-w_{001})\u2062(w_{100}-w_{101}),(w_{000}-w_{001})\u2062(w_{010}-w_{011}),(w_{000}-w_{001})\u2062(w_{110}-w_{111}),\n$$\n\n\n\n$$\n(w_{100}-w_{101})\u2062(w_{010}-w_{011}),(w_{100}-w_{101})\u2062(w_{110}-w_{111}),(w_{010}-w_{011})\u2062(w_{110}-w_{111}),\n$$\n\n\n\n$$\n(w_{000}-w_{110})\u2062(w_{001}-w_{111}),(w_{000}-w_{101})\u2062(w_{010}-w_{111}),(w_{000}-w_{011})\u2062(w_{100}-w_{111}),\n$$\n\n\n\n$$\n(w_{100}-w_{010})\u2062(w_{101}-w_{011}),(w_{100}-w_{001})\u2062(w_{110}-w_{011}),(w_{010}-w_{001})\u2062(w_{110}-w_{101}).\n$$\n\n### Rank orders compatible with additive fitness\n\nDifferent rank orders may differ only 'by labels\u2019. For instance, the rank orders\n\n$$\nw_{11}>w_{10}>w_{01}>w_{00}andw_{00}>w_{01}>w_{10}>w_{11}\n$$\n\ndiffer by the map $0\u21a61$ and $1\u21a60$, applied to both loci for each genotype. By definition, a cube isomorphism preserves the adjacency structure of the cube (a pair of mutational neighbors is mapped to a pair of neighbors).\n\nTwo rank orders are considered equivalent if a cube isomorphism induces a map between them. Differently expressed, for any given rank order (for a two-locus system), one can obtain an equivalent order by assigning the label 00 to a genotype of choice (among four alternatives) and then 10 to one of its neighbors (among two alternatives). After that, the adjacency condition determines the labels of the remaining genotypes. The new rank order is identical to the original one, except that the genotypes have new labels as described. It follows that each equivalence class consists of $8=4\u22c52$ orders. The 24 rank orders for a two-locus systems can be partitioned into $\\frac{24}{8}=3$ equivalence classes.\n\nFor general $n$, each equivalence class consists of $2^{n}\u22c5(n!)$ rank orders by a similar argument. In particular, for $n=3$, each equivalence class consists of 48 rank orders, and the $8!$ rank orders can be partitioned into 840 equivalence classes. Questions on rank orders for $n=3$ are manageable as it suffices to check 840 orders.\n\nTo\u00a0determine\u00a0whether a specific rank order is compatible with additive fitness, one has to solve a system of inequalities. For simplicity, we illustrate the argument for a two-locus system. Consider the order $w_{10}>w_{01}>w_{11}>w_{00}.$ We can assume that\n\n$$\nw_{00}=1,w_{10}=1+a_{1},w_{01}=1+a_{2},wherea_{1},a_{2}>0.\n$$\n\nAdditive fitness would imply $w_{11}=1+a_{1}+a_{2}$, and then the rank order implies $1+a_{1}>1+a_{1}+a_{2}$, which is a contradiction. It follows that the rank order is incompatible with additive fitness. In general, a rank order combined with an additive assumption determines a system of linear inequalities. The rank order is compatible with additive fitness exactly if the system has a solution. It is not difficult to find software for solving such a system of inequalities. In particular any software for solving linear programming problems can be used.\n\nThe case $n\\leq3$ was discussed in the main text. For $n=4$, one can verify computationally that there exist 14 rank orders (up to equivalence) with no order perturbations. As outlined, one can verify that all 14 rank orders are compatible with additive fitness. For $n=5$, the analogous statement is not true, which was first shown by Kraft et al. (1959). An explicit counterexample is given in Maclagan (1998). This author studies Boolean term orders, in our terminology perturbation free rank orders, and refers to an\u00a0order\u00a0as being\u00a0coherent if it is compatible with additive fitness. (The counterexample is described in slightly different notation, and the translation to our notation is\n\n$$\n\u2205\u21a600000,{1}\u21a610000,{2}\u21a601000,{3}\u21a600100,{1,2}\u21a611000,{1,2,3}\u21a611100,\n$$\n\nand analogously.)\n\nAs explained, in principle,\u00a0one can check\u00a0whether a given rank order is compatible with additive fitness. However, the theoretical understanding of rank orders and additive fitness is still limited.\n\n### Rank orders and statistical significance\n\nAs noted in the main text, rank-order methods are sensitive for measurement errors. A sufficient number of tests is necessary for reliable results, and elementary probability theory provides some guidance. If, for instance, genotype $g$ beats genotype $g^{\u2032}$ in 9 out of 10 comparisons, then it is reasonable to reject a null hypothesis of equal fitness.\n\nResearch on inferring rank orders from pairwise comparisons has a long history because of applications to sports and games (Wauthier et al., 2013; Boyd and Silk, 1983; Albers and de Vries, 2001; Bradley and Terry, 1952; Thurstone, 1927). However, statistical significance for rank orders has received considerably less attention, and it would be interesting to develop more theory on the topic.\n\nSimulations. The upper graph in Figure 3 was obtained by assuming additive fitness, a fitness decrease by 0.01 for each mutation, and errors sampled from a Gaussian distribution, where the magnitude of the errors is a value on the list 0.0010, 0.0011, 0.0012, \u2026, 0.01. The assumptions were the same for the lower graph, except that a Student\u2019s t-distribution with df\u00a0=\u00a03 was used.\n",
+      "created_at": "2025-12-02T14:27:48.877435Z"
+    },
+    {
+      "id": "1761bc3a-605e-44dc-9674-de7de1529a43",
+      "submission_id": "0c8f91d9-e19c-44f4-9a51-6b9518fb2763",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Joachim Krug, University of Cologne Germany\n\nReviewers:\n- Joachim Krug, University of Cologne Germany\n- Luca Ferretti, The Pirbright Institute\n\n## Review text\n\nDOI: [10.7554/eLife.51004.sa1](https://doi.org/10.7554/eLife.51004.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nThis work extends a previous paper in eLife, where it was shown how the sign of certain epistatic interaction coefficients can be inferred from partial rank orders of fitness values. The purpose of the manuscript is to clarify the relation of this inference with the concept of sign epistasis; Crona et al., 2017, had shown that sign epistasis was a sufficient, but not necessary, condition for rank order to be informative about at least some signed interactions. Here the range of informative rank orders is extended by introducing the concept of rectangular perturbations, which generalizes the concept of sign epistasis by asking for the background dependence of the effect of mutational events that modify several loci at once. In the revision, the presentation was improved so that it has become more accessible for (evolutionary) biologists with a non-mathematical background.\n\nDecision letter after peer review:\n\nThank you for submitting your article \u201cRank orders and signed interactions in evolutionary biology\u201d for consideration by eLife. Your article has been reviewed by three peer reviewers, including Joachim Krug as the Reviewing Editor and Reviewer #1, and the evaluation has been overseen by Diethard Tautz as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Luca Ferretti (Reviewer #3).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThis submission refers to the authors' previous eLife publication, Crona et al., 2017, where it was shown how the sign of certain epistatic interaction coefficients can be inferred from partial rank orders of fitness values. The purpose of the manuscript is to clarify the relation of this inference with the concept of sign epistasis. Crona et al., 2017 showed that sign epistasis is a sufficient condition for a rank order to be informative about at least some signed interactions, however it is not a necessary condition. Here the range of informative rank orders is extended by introducing the concept of rectangular perturbations, which generalizes the concept of sign epistasis by asking for the background dependence of the effect of mutational events that modify several loci at once. The exploratory application of the new concept to two empirical data sets suggests that it does give access to additional information about the topography of the landscape.\n\nOverall, the reviewers found that, while the manuscript contains some interesting ideas and results that are worth to be reported in the form of a Research Advance, substantial revisions are necessary. Most importantly, the results should be presented in a way that is reasonably accessible for (evolutionary) biologists with a non-mathematical background, and the presentation also needs to be more systematic. A detailed list of the issues that should be addressed is given below.\n\nEssential revisions:\n\n1) All three reviewers found that the manuscript was lacking in clarity and context. Specifically, they felt that both the motivating question of the manuscript (as it arises from the original eLife publication of Krona et al., 2017), and the final answer that is achieved need to be spelled out more clearly and concisely. Moreover, it was not clearly stated how the new method of epistasis analysis goes beyond more established approaches, and in what sense it \u201cadd(s) precision to the analysis\u201d.\n\n2) Reviewers #2 and #3 addressed the generalizability of the results. One was concerned that the scaling of the number of perturbations as 6n would limit the practical applicability of the method, and both asked whether and how the approach is generalizable to multi-allelic sequence spaces.\n\n3) Another issue related to the practical application of the approach concerns the effect of measurement error. If measurement errors are not considered and there are many values close to each other, then the ranks could change significantly and the rank order could be heavily influenced by random noise, generating spuriously inferred interactions. The author states that \u201cthe results are not sensitive for a few false positives or negatives\u201d, but this statement is not supported in the text aside from its assertion. This must be addressed (maybe through simulation?) before publication.\n\n4) Reviewers #1 and #3 were concerned that the text assumes too much previous knowledge about fitness landscapes and specifically the polytope theory of Beerenwinkel et al., 2007, on the part of the reader. One reviewer found that the introduction of the \u201ccircuits from polytope theory\u201d is not helpful and probably incomprehensible to readers who are not already familiar with the concept, and the other wondered how to understand remark 2.3 about \u201cthe class of circuits with non-zero coefficients for exactly four elements\u201d when the word \u201celement\u201d has never been used before in the text. Perhaps a formal definition of circuits can be avoided by simply saying that circuits are linear combinations of the 4 genotypic fitness values that with coefficients +/-1 arranged in such a way that the expression vanishes when fitness is additive?\n\n5) Reviewers #1 and #2 found that the discussion of the two rank orders that are compatible with additive fitness in the n=3 case in \u201cExample 2.4\u201d requires further clarification. What is \u201crelabeling\u201d in this context? And is it correct that the allowed orders are those where either the fitness is monotonic in the number of mutations, or at most one pair of genotypes violates this monotonicity, and this is a pair of genotypes with 1 and 2 mutations?\n\n6) Reviewers #2 and #3 addressed the comparison to empirical data. Reviewer #2 was not convinced that the proposed method allows one to gain \u201cnew insights\u201d beyond previous findings, and asks for further specification of the unique contribution of the method. Reviewer #3 suggests to place the results into the context of previous analyses of the same empirical landscapes [Ferretti et al., JTB 2016; Blanquart and Bataillon, Genetics 2016]. Moreover, it was not clear whether the proposed method (as applied to empirical landscapes) singles out the wild type sequence, or whether it treats all genotypes on the same footing.\n\n7) Reviewer #1 requested further clarification of the precise relation between sign epistasis and signed interactions for different values of n (\u201cExample 2.4\u201d). It appears that the information contained in the manuscript regarding this point can be summarized as follows:\n\ni) For n=2 loci instances of sign epistasis and signed interaction coincide.\n\nii) For n=3 and 4, any signed interaction corresponds either to an instance of sign epistasis or to a rectangular perturbation of higher order. If neither of these are present, the rank order is compatible with additive fitness.\n\niii) For more than 4 loci, the characterization by rectangular perturbations is insufficient to decide whether a rank order is compatible with additive fitness.\n\nStatement (i) is obvious and well known, and the case n=3 has apparently been covered by the author through exhaustive enumeration. However, it is clear neither where the statement for n=4 comes from, nor in what sense the paper of Kraft et al., 1959, is relevant in the present context. Is there a characterization beyond rectangular perturbations that would apply for n > 4, and what kind of objects would it involve?\n\n[Editors' note: further revisions were suggested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \"Rank orders and signed interactions in evolutionary biology\" for further consideration by eLife. Your revised article has been evaluated by Diethard Tautz (Senior Editor) and a Reviewing Editor.\n\nThe manuscript has been improved but there are some remaining issues that need to be addressed before acceptance, as outlined below:\n\nMajor issue\n\nThe Results section does not read well in its present form and needs to be reorganized. Presently the section begins with a partial explanation of the theory, followed by the discussion of experimental and hypothetical examples, and the complete account of the theory is found at the end. As a consequence, several concepts and definitions (e.g., the expression for the interaction u and the conditions for sign epistasis and rectangular perturbations) are introduced twice. I suggest to subdivide the section into subsections to improve readability, and to present the theory fully in the first subsection. I would also suggest to emphasize the simple geometric meaning of the various expressions in terms of the squares and rectangles in Figures 1 and 2: The circuits in the set C are obtained by going around one of the square or rectangle and giving the genotype fitness values alternating signs along the way. Similarly the conditions for sign epistasis and higher order perturbations amount to comparing fitness differences (= directions of arrows) on two opposite sides of a square/rectangle. Regarding the hypothetical examples, there is something wrong with landscape B, since the genotypes with 3 1's are not peaks. Also, I did not find the discussion of the epistasis measure of Ferretti et al. very illuminating (and I did not understand why it is called \\lambda instead of \\gamma as in the original paper). It seems to me that both the hypothetical examples and the discussion of Ferretti et al. could be omitted without losing much content.\n",
+      "created_at": "2025-12-02T14:27:48.877435Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T14:27:48.877435Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T14:27:48.877435Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "d5c713c2-c108-486d-a231-eea14941a408",
+      "content_id": "beaf5991-9e81-407f-96a2-a4c5172f5397",
+      "claim_id": "C1",
+      "claim": "Rank orders have been studied in evolutionary biology for almost a hundred years.",
+      "claim_type": "EXPLICIT",
+      "source": "Rank orders have been studied in evolutionary biology for almost a hundred years.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a historical claim about the field of evolutionary biology without specific supporting data or citations in this sentence.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:27:48.877435Z"
+    },
+    {
+      "id": "f14ddac0-a250-4eeb-a7f5-fe0c56ae960a",
+      "content_id": "beaf5991-9e81-407f-96a2-a4c5172f5397",
+      "claim_id": "C2",
+      "claim": "Constraints on the order in which mutations accumulate are known from cancer drug treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "Constraints on the order in which mutations accumulate are known from cancer drug treatment",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is presented as established knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:27:48.877435Z"
+    },
+    {
+      "id": "ac1b387a-78fb-416a-8403-74e7bcd11be2",
+      "content_id": "beaf5991-9e81-407f-96a2-a4c5172f5397",
+      "claim_id": "C3",
+      "claim": "Order constraints for species invasions are important in ecology.",
+      "claim_type": "EXPLICIT",
+      "source": "order constraints for species invasions are important in ecology",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about ecological systems.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:27:48.877435Z"
+    },
+    {
+      "id": "316c8675-2263-4096-9994-9c02a11b499a",
+      "content_id": "beaf5991-9e81-407f-96a2-a4c5172f5397",
+      "claim_id": "C4",
+      "claim": "Order perturbations beyond sign epistasis are prevalent in the antimalarial drug-resistance landscape.",
+      "claim_type": "EXPLICIT",
+      "source": "We apply our results to malaria parasites and find that order perturbations beyond sign epistasis are prevalent in the antimalarial drug-resistance landscape.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the authors' analysis of malaria parasite data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:27:48.877435Z"
+    },
+    {
+      "id": "428a40ff-140a-4b3f-8078-b1fc5812c76d",
+      "content_id": "beaf5991-9e81-407f-96a2-a4c5172f5397",
+      "claim_id": "C5",
+      "claim": "The finding that order perturbations beyond sign epistasis are prevalent agrees with the observation that reversed evolution back to the ancestral type is difficult.",
+      "claim_type": "EXPLICIT",
+      "source": "This finding agrees with the observation that reversed evolution back to the ancestral type is difficult.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference connecting the authors' findings to previously observed phenomena.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:27:48.877435Z"
+    },
+    {
+      "id": "9323882c-195b-4a86-931b-dc8d63b76b0a",
+      "content_id": "beaf5991-9e81-407f-96a2-a4c5172f5397",
+      "claim_id": "C6",
+      "claim": "Fitness landscapes were introduced by Wright in 1932.",
+      "claim_type": "EXPLICIT",
+      "source": "The impact of suboptimal peaks has been discussed ever since fitness landscapes were introduced (Wright, 1932).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Wright, 1932.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:27:48.877435Z"
+    },
+    {
+      "id": "860667f5-1cd0-45f4-bf6d-c635fbf57c15",
+      "content_id": "beaf5991-9e81-407f-96a2-a4c5172f5397",
+      "claim_id": "C7",
+      "claim": "A major advantage with rank orders, as compared to other statistics for fitness landscape, is that order data is robust for variation in experimental methods and measurements.",
+      "claim_type": "EXPLICIT",
+      "source": "A major advantage with rank orders, as compared to other statistics for fitness landscape, is that order data is robust for variation in experimental methods and measurements.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is presented as an established property of rank orders based on knowledge of their characteristics.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:27:48.877435Z"
+    },
+    {
+      "id": "2953e4a1-70cb-464f-b117-bc2c056f5eeb",
+      "content_id": "beaf5991-9e81-407f-96a2-a4c5172f5397",
+      "claim_id": "C8",
+      "claim": "The concept of sign epistasis was introduced by Weinreich et al. (2005).",
+      "claim_type": "EXPLICIT",
+      "source": "The concept of sign epistasis introduced by Weinreich et al. (2005), has been important for recent work on rank orders in evolutionary biology (Kaznatcheev, 2019; Crona et al., 2017; Wu et al., 2016; de Visser and Krug, 2014; Crona et al., 2013; Poelwijk et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Weinreich et al., 2005.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:27:48.877435Z"
+    },
+    {
+      "id": "900d6d9c-4e11-4dbb-9664-a10bed7aafd4",
+      "content_id": "beaf5991-9e81-407f-96a2-a4c5172f5397",
+      "claim_id": "C9",
+      "claim": "A system has sign epistasis if the sign of the effect of a mutation, whether positive or negative, depends on genetic background.",
+      "claim_type": "EXPLICIT",
+      "source": "A system has sign epistasis if the sign of the effect of a mutation, whether positive or negative, depends on genetic background.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definition of sign epistasis based on established knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:27:48.877435Z"
+    },
+    {
+      "id": "42df3699-df9e-45d6-b197-1487a4d99fe4",
+      "content_id": "beaf5991-9e81-407f-96a2-a4c5172f5397",
+      "claim_id": "C10",
+      "claim": "All multi-peaked fitness landscapes have reciprocal sign epistasis.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, all multi-peaked fitness landscapes have reciprocal sign epistasis (Poelwijk et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Poelwijk et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:27:48.877435Z"
+    },
+    {
+      "id": "263d45be-0a97-4132-bf6b-6ac50a91aeb2",
+      "content_id": "beaf5991-9e81-407f-96a2-a4c5172f5397",
+      "claim_id": "C11",
+      "claim": "If subsystems of type C exist, but no systems of type B, then the landscape is multi-peaked.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, if subsystems of type C exist, but no systems of type B, then the landscape is multi-peaked (Crona et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Crona et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:27:48.877435Z"
+    },
+    {
+      "id": "166ec767-4a67-4f9c-ae17-f40a8df85aac",
+      "content_id": "beaf5991-9e81-407f-96a2-a4c5172f5397",
+      "claim_id": "C12",
+      "claim": "The drug-free environment had about twice as many perturbations of size 2 and 3 as the drug-exposed environment for malaria parasites.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the drug-free environment had about twice as many perturbations of size 2 and 3, as the drug-exposed environment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the data presented in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:27:48.877435Z"
+    },
+    {
+      "id": "61dab1b5-6239-4628-9565-80cdce034079",
+      "content_id": "beaf5991-9e81-407f-96a2-a4c5172f5397",
+      "claim_id": "C13",
+      "claim": "Sign epistasis was equally frequent in both drug-exposed and drug-free malaria fitness landscapes.",
+      "claim_type": "EXPLICIT",
+      "source": "Sign epistasis was equally frequent in both fitness landscapes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the data in Table 1 showing 55 and 54 perturbations of size 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:27:48.877435Z"
+    },
+    {
+      "id": "90c7b256-cf0e-4037-9b0d-30541708da14",
+      "content_id": "beaf5991-9e81-407f-96a2-a4c5172f5397",
+      "claim_id": "C14",
+      "claim": "The summary statistic indicates that adaptation is more difficult in the drug-free environment, because few replacements of pieces of code (regardless of size) are universally beneficial.",
+      "claim_type": "EXPLICIT",
+      "source": "The summary statistic indicates that (Table 1) adaptation is more difficult in the drug-free environment, because few replacements of pieces of code (regardless of size) are universally beneficial.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference drawn from the data presented in Table 1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:27:48.877435Z"
+    },
+    {
+      "id": "5c1500e2-e99c-4249-85e6-c8083e428873",
+      "content_id": "beaf5991-9e81-407f-96a2-a4c5172f5397",
+      "claim_id": "C15",
+      "claim": "The finding that adaptation is more difficult in the drug-free environment agrees well with the authors' observation that resistance development is a relatively straightforward process, whereas reversed evolution from the mutant 1111 back to the ancestral type is difficult.",
+      "claim_type": "EXPLICIT",
+      "source": "This finding agrees well with the authors' observation that resistance development is a relatively straightforward process, whereas reversed evolution from the mutant 1111 back to the ancestral type is difficult.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This connects the current findings to observations from the original study by Ogbunugafor and Hartl, 2016.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:27:48.877435Z"
+    },
+    {
+      "id": "62feec3b-bcb8-451a-a87f-f815fe2e1c9f",
+      "content_id": "beaf5991-9e81-407f-96a2-a4c5172f5397",
+      "claim_id": "C16",
+      "claim": "The complete statistics of order perturbations was better able to distinguish the landscapes than sign epistasis alone.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the complete statistics of order perturbations was better able to distinguish the landscapes than sign epistasis alone.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on comparing the discriminatory power of different analytical approaches on the data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:27:48.877435Z"
+    },
+    {
+      "id": "cf88f6c1-bf3c-46b4-b158-6c19e6a95546",
+      "content_id": "beaf5991-9e81-407f-96a2-a4c5172f5397",
+      "claim_id": "C17",
+      "claim": "The fitness landscape of Methylobacterium extorquens adapting to methanol does not have sign epistasis.",
+      "claim_type": "EXPLICIT",
+      "source": "The fitness landscape does not have sign epistasis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the analysis of data from Chou et al., 2011, as shown in Table 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:27:48.877435Z"
+    },
+    {
+      "id": "36708cc5-58ee-4224-b65b-d86310579d33",
+      "content_id": "beaf5991-9e81-407f-96a2-a4c5172f5397",
+      "claim_id": "C18",
+      "claim": "The Methylobacterium extorquens system has size 2 perturbations.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the system has size 2 perturbations (Table 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the data analysis presented in Table 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:27:48.877435Z"
+    },
+    {
+      "id": "c8f34538-a20f-43ca-bdb5-c3a53aca2056",
+      "content_id": "beaf5991-9e81-407f-96a2-a4c5172f5397",
+      "claim_id": "C20",
+      "claim": "The perturbations in Methylobacterium extorquens show that the rank order is incompatible with additive fitness.",
+      "claim_type": "EXPLICIT",
+      "source": "The perturbations show that the rank order is incompatible with additive fitness.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the presence of size 2 perturbations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:27:48.877435Z"
+    },
+    {
+      "id": "a14bc741-602b-4038-838c-83f662fffa92",
+      "content_id": "beaf5991-9e81-407f-96a2-a4c5172f5397",
+      "claim_id": "C22",
+      "claim": "For additive fitness where all mutations decrease fitness, the proportion of unexpected results (increased fitness) decreases by the number of loci replaced.",
+      "claim_type": "EXPLICIT",
+      "source": "In both cases, the proportion of unexpected results decreases by the number of loci replaced.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the simulation results shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:27:48.877435Z"
+    },
+    {
+      "id": "7dc0fc3a-0b49-419d-a82d-01457bfe4695",
+      "content_id": "beaf5991-9e81-407f-96a2-a4c5172f5397",
+      "claim_id": "C23",
+      "claim": "The reason that the proportion of unexpected results decreases with more loci replaced is that the noise level is similar in all cases, whereas the effect size is not.",
+      "claim_type": "EXPLICIT",
+      "source": "The reason is that the noise level is similar in all cases, whereas the effect size is not.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference explaining the pattern observed in the simulations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:27:48.877435Z"
+    },
+    {
+      "id": "3539b27c-0018-4edd-a94f-247b25132164",
+      "content_id": "beaf5991-9e81-407f-96a2-a4c5172f5397",
+      "claim_id": "C24",
+      "claim": "Constraints on the orders in which mutation occur are known for development of cancer drug resistance.",
+      "claim_type": "EXPLICIT",
+      "source": "Constraints on the orders in which mutation occur are known for development of cancer drug resistance (Hosseini et al., 2019; Beerenwinkel et al., 2007a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Hosseini et al., 2019 and Beerenwinkel et al., 2007a.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:27:48.877435Z"
+    },
+    {
+      "id": "f00733c7-d29d-4a0c-94ea-7e5e50198b43",
+      "content_id": "beaf5991-9e81-407f-96a2-a4c5172f5397",
+      "claim_id": "C26",
+      "claim": "Exactly 384 orders are compatible with the absence of sign epistasis for n=3.",
+      "claim_type": "EXPLICIT",
+      "source": "As remarked in Crona et al. (2017), exactly 384 orders are compatible with the absence of sign epistasis for n=3.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Crona et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:27:48.877435Z"
+    },
+    {
+      "id": "d0077259-7ecb-4d5f-8025-1d5865041c4d",
+      "content_id": "beaf5991-9e81-407f-96a2-a4c5172f5397",
+      "claim_id": "C27",
+      "claim": "Exactly 96 out of the 384 orders compatible with absence of sign epistasis are compatible with additive fitness for n=3.",
+      "claim_type": "EXPLICIT",
+      "source": "By applying order perturbations (and by inspection), we verified that exactly 96 out of the 384 orders are compatible with additive fitness",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the authors' computational verification.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:27:48.877435Z"
+    },
+    {
+      "id": "d0a84aab-f4c0-45c9-bc2d-787977dfcab9",
+      "content_id": "beaf5991-9e81-407f-96a2-a4c5172f5397",
+      "claim_id": "C28",
+      "claim": "Only 0.24 percent of all 40,320 rank orders for three-locus systems are compatible with additive fitness.",
+      "claim_type": "EXPLICIT",
+      "source": "or 0.24 percent of all 40,320 rank orders for three-locus systems.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is calculated from the data that 96 out of 40,320 orders are compatible with additive fitness.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:27:48.877435Z"
+    },
+    {
+      "id": "6d77fcb6-3b41-4a3c-96de-5abe0f5c04f1",
+      "content_id": "beaf5991-9e81-407f-96a2-a4c5172f5397",
+      "claim_id": "C29",
+      "claim": "It is straightforward to verify that a rank order is compatible with additive fitness unless it has rectangular perturbations for n=4.",
+      "claim_type": "EXPLICIT",
+      "source": "It is straightforward to verify that a rank order is compatible with additive fitness unless it has rectangular perturbations for n=4.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a verifiable mathematical property.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:27:48.877435Z"
+    },
+    {
+      "id": "0a3df5db-def8-43c5-8b5e-974119871551",
+      "content_id": "beaf5991-9e81-407f-96a2-a4c5172f5397",
+      "claim_id": "C30",
+      "claim": "Counterexamples to the statement that a rank order is compatible with additive fitness unless it has rectangular perturbations exist for n=5.",
+      "claim_type": "EXPLICIT",
+      "source": "However, counterexamples to the analogous statement for n=5 exist (Kraft et al., 1959)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Kraft et al., 1959.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:27:48.877435Z"
+    },
+    {
+      "id": "14c2a01e-a5b1-4f09-afae-a570268f2aae",
+      "content_id": "beaf5991-9e81-407f-96a2-a4c5172f5397",
+      "claim_id": "C31",
+      "claim": "Sign epistasis implies that a system has signed circuit interactions, but the converse is not true.",
+      "claim_type": "EXPLICIT",
+      "source": "We have established that sign epistasis implies that a system has signed circuit interactions, but the converse is not true.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical relationship established through the authors' theoretical analysis.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:27:48.877435Z"
+    },
+    {
+      "id": "d465fc60-5973-4021-afea-2486bb65ef0e",
+      "content_id": "beaf5991-9e81-407f-96a2-a4c5172f5397",
+      "claim_id": "C32",
+      "claim": "A rank order is compatible with additive fitness unless there is sign epistasis for a two-locus system.",
+      "claim_type": "EXPLICIT",
+      "source": "A rank order is compatible with additive fitness unless there is sign epistasis for a two-locus system.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mathematical property that can be verified.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:27:48.877435Z"
+    },
+    {
+      "id": "e08a32f4-267d-4e81-8443-dc5051c5ee90",
+      "content_id": "beaf5991-9e81-407f-96a2-a4c5172f5397",
+      "claim_id": "C33",
+      "claim": "For four-locus systems, a rank order is compatible with additive fitness unless there are rectangular perturbations.",
+      "claim_type": "EXPLICIT",
+      "source": "For four-locus systems, a rank order is compatible with additive fitness unless there are rectangular perturbations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a verifiable mathematical property.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:27:48.877435Z"
+    },
+    {
+      "id": "114161a1-b435-451e-9c18-071a5ff2708a",
+      "content_id": "beaf5991-9e81-407f-96a2-a4c5172f5397",
+      "claim_id": "C34",
+      "claim": "Only a very small proportion of all rank orders are compatible with additive fitness.",
+      "claim_type": "EXPLICIT",
+      "source": "In general, only a very small proportion of all rank orders are compatible with additive fitness",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the specific calculations for n=3 and general mathematical considerations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:27:48.877435Z"
+    },
+    {
+      "id": "5fd4976b-f6be-43a2-9ae4-ba076f7a4ddd",
+      "content_id": "beaf5991-9e81-407f-96a2-a4c5172f5397",
+      "claim_id": "C35",
+      "claim": "Rectangular perturbations have the capacity to detect epistasis when conventional rank-order-based methods cannot.",
+      "claim_type": "EXPLICIT",
+      "source": "Rectangular perturbations have the capacity to detect epistasis when conventional rank-order-based methods cannot.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by the Methylobacterium extorquens example where size 2 perturbations detected epistasis in the absence of sign epistasis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:27:48.877435Z"
+    },
+    {
+      "id": "0cc49a65-474d-4113-9d6b-2ea6bec4dfca",
+      "content_id": "beaf5991-9e81-407f-96a2-a4c5172f5397",
+      "claim_id": "C36",
+      "claim": "Rank orders are insufficient for determining the effect of genetic recombination.",
+      "claim_type": "EXPLICIT",
+      "source": "Rank orders are insufficient for determining the effect of genetic recombination (de Visser et al., 2009; Otto and Lenormand, 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to de Visser et al., 2009 and Otto and Lenormand, 2002.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:27:48.877435Z"
+    },
+    {
+      "id": "75b57125-1858-4268-8fed-2559393b176c",
+      "content_id": "beaf5991-9e81-407f-96a2-a4c5172f5397",
+      "claim_id": "C37",
+      "claim": "Evolutionary predictability is sensitive for population parameters.",
+      "claim_type": "EXPLICIT",
+      "source": "Evolutionary predictability is sensitive for population parameters",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge in evolutionary biology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:27:48.877435Z"
+    },
+    {
+      "id": "2ef71bb8-0366-425b-b8a1-998d2d0ad074",
+      "content_id": "beaf5991-9e81-407f-96a2-a4c5172f5397",
+      "claim_id": "C38",
+      "claim": "The importance of accessible mutational trajectories is not universal.",
+      "claim_type": "EXPLICIT",
+      "source": "the importance of accessible mutational trajectories is not universal (de Visser and Krug, 2014; Krug, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to de Visser and Krug, 2014 and Krug, 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:27:48.877435Z"
+    },
+    {
+      "id": "99f9d3cb-5db9-4840-98f5-12dab4396483",
+      "content_id": "beaf5991-9e81-407f-96a2-a4c5172f5397",
+      "claim_id": "C39",
+      "claim": "There are in total 20 circuits for n=3.",
+      "claim_type": "EXPLICIT",
+      "source": "There are in total 20 circuits for n=3",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mathematical fact about the number of circuits in a 3-locus system.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:27:48.877435Z"
+    },
+    {
+      "id": "d13f51e5-8dae-4926-ad6a-23dd01946e06",
+      "content_id": "beaf5991-9e81-407f-96a2-a4c5172f5397",
+      "claim_id": "C40",
+      "claim": "All circuits are zero if fitness is additive.",
+      "claim_type": "EXPLICIT",
+      "source": "Note that all circuits are zero if fitness is additive.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mathematical property of circuits and additive fitness.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:27:48.877435Z"
+    },
+    {
+      "id": "0fd80895-7e4a-4782-a5d6-2c1d7bf8872b",
+      "content_id": "beaf5991-9e81-407f-96a2-a4c5172f5397",
+      "claim_id": "C44",
+      "claim": "A rectangle with vertices in the n-cube corresponds to exactly two rectangular perturbations, one for each pair of parallel edges.",
+      "claim_type": "EXPLICIT",
+      "source": "A rectangle with vertices in the n-cube corresponds to exactly two rectangular perturbations, one for each pair of parallel edges.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical relationship between geometric rectangles and perturbations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:27:48.877435Z"
+    },
+    {
+      "id": "8e7af6b8-da10-47b5-a274-a815167cdd97",
+      "content_id": "beaf5991-9e81-407f-96a2-a4c5172f5397",
+      "claim_id": "C47",
+      "claim": "For n=3, each equivalence class consists of 48 rank orders.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, for n=3, each equivalence class consists of 48 rank orders",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is calculated from the general formula 2^3 \u00b7 3! = 48.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:27:48.877435Z"
+    },
+    {
+      "id": "a89be04a-88f4-4d99-ac78-74dcecc39856",
+      "content_id": "beaf5991-9e81-407f-96a2-a4c5172f5397",
+      "claim_id": "C48",
+      "claim": "The 8! rank orders for n=3 can be partitioned into 840 equivalence classes.",
+      "claim_type": "EXPLICIT",
+      "source": "and the 8! rank orders can be partitioned into 840 equivalence classes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is calculated as 8!/48 = 840.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:27:48.877435Z"
+    },
+    {
+      "id": "901f4cd4-aa08-40f1-b13c-97817aed5e66",
+      "content_id": "beaf5991-9e81-407f-96a2-a4c5172f5397",
+      "claim_id": "C49",
+      "claim": "For n=4, there exist 14 rank orders (up to equivalence) with no order perturbations.",
+      "claim_type": "EXPLICIT",
+      "source": "For n=4, one can verify computationally that there exist 14 rank orders (up to equivalence) with no order perturbations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on computational verification by the authors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:27:48.877435Z"
+    },
+    {
+      "id": "fb70f4f5-dc86-43b8-9468-87625e9bc2d4",
+      "content_id": "beaf5991-9e81-407f-96a2-a4c5172f5397",
+      "claim_id": "C50",
+      "claim": "All 14 rank orders with no order perturbations for n=4 are compatible with additive fitness.",
+      "claim_type": "EXPLICIT",
+      "source": "As outlined, one can verify that all 14 rank orders are compatible with additive fitness.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is verified computationally by the authors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:27:48.877435Z"
+    },
+    {
+      "id": "c4c40e95-979d-4af9-b685-b700106831b2",
+      "content_id": "beaf5991-9e81-407f-96a2-a4c5172f5397",
+      "claim_id": "C51",
+      "claim": "For n=5, there exist rank orders with no perturbations that are not compatible with additive fitness.",
+      "claim_type": "EXPLICIT",
+      "source": "For n=5, the analogous statement is not true, which was first shown by Kraft et al. (1959).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Kraft et al., 1959.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:27:48.877435Z"
+    },
+    {
+      "id": "37f1df7f-5dfc-4a7b-88aa-fa7f52c69fc8",
+      "content_id": "beaf5991-9e81-407f-96a2-a4c5172f5397",
+      "claim_id": "C52",
+      "claim": "An explicit counterexample for n=5 is given in Maclagan (1998).",
+      "claim_type": "EXPLICIT",
+      "source": "An explicit counterexample is given in Maclagan (1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Maclagan, 1998.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:27:48.877435Z"
+    },
+    {
+      "id": "3462a07a-19c3-4ee5-bfce-ef0306d370a3",
+      "content_id": "beaf5991-9e81-407f-96a2-a4c5172f5397",
+      "claim_id": "C53",
+      "claim": "Figure 1A shows a two-locus system with no sign epistasis.",
+      "claim_type": "IMPLICIT",
+      "source": "The graphs in Figure 1 illustrate the absence of sign epistasis (A), sign epistasis (B), and reciprocal sign epistasis (C) for two-locus systems.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly stated in the text and shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:27:48.877435Z"
+    },
+    {
+      "id": "59387aae-8a52-4e93-86f6-a065c5903c68",
+      "content_id": "beaf5991-9e81-407f-96a2-a4c5172f5397",
+      "claim_id": "C54",
+      "claim": "Figure 1B shows a two-locus system with sign epistasis.",
+      "claim_type": "IMPLICIT",
+      "source": "The graphs in Figure 1 illustrate the absence of sign epistasis (A), sign epistasis (B), and reciprocal sign epistasis (C) for two-locus systems.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly stated in the text and shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:27:48.877435Z"
+    },
+    {
+      "id": "97254854-a0dd-4935-aaac-9a4724b18a61",
+      "content_id": "beaf5991-9e81-407f-96a2-a4c5172f5397",
+      "claim_id": "C55",
+      "claim": "Figure 1C shows a two-locus system with reciprocal sign epistasis.",
+      "claim_type": "IMPLICIT",
+      "source": "The graphs in Figure 1 illustrate the absence of sign epistasis (A), sign epistasis (B), and reciprocal sign epistasis (C) for two-locus systems.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly stated in the text and shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:27:48.877435Z"
+    },
+    {
+      "id": "a37b2103-005d-4dc4-a897-e6f2217252b2",
+      "content_id": "beaf5991-9e81-407f-96a2-a4c5172f5397",
+      "claim_id": "C56",
+      "claim": "Under the assumption that 00 has minimal fitness and that genotypes are positioned as in Figure 1, the three types can be characterized as graphs with no arrows down, one arrow down, or two arrows down.",
+      "claim_type": "EXPLICIT",
+      "source": "Under the assumption that 00 has minimal fitness, and that the genotypes are positioned as in the figure, the three types can be characterized as graphs with no arrows down, one arrow down, or two arrows down.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the caption of Figure 1 and can be verified from the figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:27:48.877435Z"
+    },
+    {
+      "id": "f47efdf9-f501-4d02-92f9-9e5f5081eb9a",
+      "content_id": "beaf5991-9e81-407f-96a2-a4c5172f5397",
+      "claim_id": "C57",
+      "claim": "Graph 2A is compatible with additive fitness.",
+      "claim_type": "EXPLICIT",
+      "source": "The graph 2A is compatible with additive fitness.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the caption of Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:27:48.877435Z"
+    },
+    {
+      "id": "d2f2fa14-8f3b-4669-b406-c30c0d761146",
+      "content_id": "beaf5991-9e81-407f-96a2-a4c5172f5397",
+      "claim_id": "C58",
+      "claim": "Graphs 2B, 2C, and 2D are not compatible with additive fitness because at least one pair of parallel arrows point in different directions.",
+      "claim_type": "EXPLICIT",
+      "source": "The other graphs are not compatible with additive fitness because at least one pair of parallel arrows point in different directions.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the caption of Figure 2 and can be verified from the figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:27:48.877435Z"
+    },
+    {
+      "id": "e5edcf8b-45fb-4e63-9f6c-c32f467954a1",
+      "content_id": "beaf5991-9e81-407f-96a2-a4c5172f5397",
+      "claim_id": "C59",
+      "claim": "The lower graphs in Figure 2 indicate sign epistasis, as is clear from the short arrows.",
+      "claim_type": "EXPLICIT",
+      "source": "The lower graphs indicate sign epistasis, as is clear from the short arrows.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the caption of Figure 2 and can be verified from the figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:27:48.877435Z"
+    },
+    {
+      "id": "fc27f4ce-2927-448d-b030-e0a133d727c5",
+      "content_id": "beaf5991-9e81-407f-96a2-a4c5172f5397",
+      "claim_id": "C60",
+      "claim": "The right graphs in Figure 2 indicate size two perturbations, as is clear from the long arrows.",
+      "claim_type": "EXPLICIT",
+      "source": "The right graphs indicate size two perturbations, as is clear from the long arrows.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the caption of Figure 2 and can be verified from the figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:27:48.877435Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "346c7a63-294b-45d1-9c1e-f973c02a6f34",
+      "content_id": "beaf5991-9e81-407f-96a2-a4c5172f5397",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors establish the theoretical relationship between sign epistasis and signed circuit interactions. Sign epistasis implies signed circuit interactions, but the converse is not true, meaning signed circuits are not generalizations of sign epistasis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31, C9, and C8 establish the theoretical framework and relationship between sign epistasis and signed circuits. The logical relationship is clearly stated (C31) with proper definition (C9) and attribution (C8), forming a coherent theoretical contribution.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:27:48.877435Z"
+    },
+    {
+      "id": "0fec86f1-ecce-4ebb-b09f-95cded18fdde",
+      "content_id": "beaf5991-9e81-407f-96a2-a4c5172f5397",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Analysis of malaria parasite fitness landscapes reveals that order perturbations beyond sign epistasis are prevalent in antimalarial drug-resistance, with the drug-free environment showing twice as many size 2 and 3 perturbations as the drug-exposed environment, indicating adaptation is more difficult in the drug-free environment.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C12-C16 form a coherent analysis of malaria data with quantitative support from Table 1. The finding that drug-free environments have more perturbations (C12) while sign epistasis is equal (C13) supports the conclusion about adaptation difficulty (C14), which aligns with prior observations (C15). The superior discriminatory power of complete perturbation statistics (C16) strengthens the result.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:27:48.877435Z"
+    },
+    {
+      "id": "8bf9dc12-0d7f-43e4-9757-e07c28cf9342",
+      "content_id": "beaf5991-9e81-407f-96a2-a4c5172f5397",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Analysis of Methylobacterium extorquens adapting to methanol demonstrates that rectangular perturbations can detect epistasis when conventional sign epistasis methods cannot, as the system has size 2 perturbations but no sign epistasis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C17-C18 and C20 present an interesting case where size 2 perturbations reveal epistasis despite absence of sign epistasis. However, the authors explicitly state they assume published measurements are exact, which is a strong assumption. The manuscript acknowledges measurement error sensitivity but does not provide statistical validation of the perturbations detected. Without error analysis or replication, the detection of epistasis remains uncertain.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:27:48.877435Z"
+    },
+    {
+      "id": "03d36b83-0203-4da9-bba7-9eacb58c89b0",
+      "content_id": "beaf5991-9e81-407f-96a2-a4c5172f5397",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "For three-locus systems, only 96 out of 384 orders compatible with absence of sign epistasis are compatible with additive fitness, representing 0.24% of all 40,320 possible rank orders, demonstrating that very few rank orders are compatible with additive fitness.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26-C28 provide specific computational results with clear numerical support. C26 cites prior work, C27 describes the authors' verification, and C28 provides the calculated percentage. The generalization to all systems (C34) follows logically from these specific calculations and is appropriately qualified as an inference.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:27:48.877435Z"
+    },
+    {
+      "id": "5575ac93-78aa-40cd-9b0a-258f97d00de1",
+      "content_id": "beaf5991-9e81-407f-96a2-a4c5172f5397",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The relationship between rectangular perturbations and additive fitness varies by system size: for n=2, sign epistasis is necessary and sufficient; for n=4, rectangular perturbations are necessary and sufficient; but for n\u22655, counterexamples exist where rank orders without perturbations are incompatible with additive fitness.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C33 establish the pattern for smaller systems, while C29-C30 and C51-C52 document the breakdown for n=5 with proper citations to Kraft et al. (1959) and Maclagan (1998). This progression from simple to complex cases is well-supported by both the authors' work and cited literature.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:27:48.877435Z"
+    },
+    {
+      "id": "783bea72-602f-4816-b155-2aaa7c71e20d",
+      "content_id": "beaf5991-9e81-407f-96a2-a4c5172f5397",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Simulations demonstrate that for additive fitness with deleterious mutations, the proportion of unexpected results (apparent fitness increases due to measurement error) decreases with the number of loci replaced, because noise levels remain similar while effect sizes increase.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C23 are supported by simulation results in Figure 3 showing the pattern for both normal and Student's t-distributions. The explanation (C23) is mechanistically sound: larger replacements have larger effect sizes while noise remains constant, improving signal-to-noise ratio. The simulation methodology is described in Materials and Methods.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:27:48.877435Z"
+    },
+    {
+      "id": "0edc5f5b-8d3c-4317-a305-ab0d68599057",
+      "content_id": "beaf5991-9e81-407f-96a2-a4c5172f5397",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "For four-locus systems, computational verification identifies exactly 14 rank orders (up to equivalence) with no order perturbations, and all are compatible with additive fitness.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49-C50 present computational verification results that are internally consistent and follow from the theoretical framework. The verification method is described (solving systems of linear inequalities), and the result aligns with the pattern established for smaller systems before the breakdown at n=5.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:27:48.877435Z"
+    },
+    {
+      "id": "51d710b1-674e-4639-81cb-cf1114537097",
+      "content_id": "beaf5991-9e81-407f-96a2-a4c5172f5397",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "For three-locus systems, each equivalence class of rank orders consists of 48 orders, and the 8! total rank orders partition into 840 equivalence classes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47-C48 present straightforward mathematical calculations (2^3 \u00d7 3! = 48 and 8!/48 = 840) that follow from the definition of equivalence classes under cube isomorphisms. The calculations are verifiable and internally consistent.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:27:48.877435Z"
+    },
+    {
+      "id": "65ab6bbe-37f4-4cc3-a60f-0b011ac6f1ba",
+      "content_id": "beaf5991-9e81-407f-96a2-a4c5172f5397",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Figure 1 illustrates the three types of two-locus systems: absence of sign epistasis (A), sign epistasis (B), and reciprocal sign epistasis (C), which can be characterized by the number of downward-pointing arrows (0, 1, or 2 respectively) when 00 has minimal fitness.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53-C56 accurately describe Figure 1, which provides clear visual representation of the three epistasis types. The characterization by arrow direction (C56) is a valid simplification under the stated assumptions and aids in understanding the concepts.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:27:48.877435Z"
+    },
+    {
+      "id": "6c0f7158-5839-467e-9a4b-386e38cc2c9a",
+      "content_id": "beaf5991-9e81-407f-96a2-a4c5172f5397",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Figure 2 demonstrates that compatibility with additive fitness requires all pairs of parallel arrows to point in the same direction, with graph 2A being compatible while 2B-2D are not, and illustrates both sign epistasis (short arrows) and size 2 perturbations (long arrows).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57-C60 accurately describe Figure 2 and its caption. The visual representation effectively illustrates the key concepts of rectangular perturbations and their relationship to additive fitness, supporting the theoretical framework developed in the manuscript.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:27:48.877435Z"
+    },
+    {
+      "id": "694353e9-0881-4ab9-b355-cadcb1b912a7",
+      "content_id": "beaf5991-9e81-407f-96a2-a4c5172f5397",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The manuscript establishes context by reviewing the history and established knowledge of rank orders in evolutionary biology, including their robustness, applications across multiple fields, and known limitations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C3, C6-C8, C10-C11, C24, C36-C38 provide appropriate background context with proper citations. These establish the historical foundation (Wright 1932, Weinreich et al. 2005) and acknowledge limitations of rank-order methods, demonstrating scholarly awareness of the field.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:27:48.877435Z"
+    },
+    {
+      "id": "283ca20a-6eb3-4478-a860-642786de471a",
+      "content_id": "beaf5991-9e81-407f-96a2-a4c5172f5397",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The manuscript establishes mathematical properties of circuits, including that there are 20 circuits for n=3, all circuits are zero for additive fitness, and each rectangle corresponds to exactly two rectangular perturbations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39-C40 and C44 present mathematical facts that are verifiable and consistent with the circuit theory framework. These provide necessary technical foundations for the perturbation analysis, though they are supporting rather than primary contributions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:27:48.877435Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "14c2a01e-a5b1-4f09-afae-a570268f2aae",
+      "result_id": "346c7a63-294b-45d1-9c1e-f973c02a6f34"
+    },
+    {
+      "claim_id": "900d6d9c-4e11-4dbb-9664-a10bed7aafd4",
+      "result_id": "346c7a63-294b-45d1-9c1e-f973c02a6f34"
+    },
+    {
+      "claim_id": "2953e4a1-70cb-464f-b117-bc2c056f5eeb",
+      "result_id": "346c7a63-294b-45d1-9c1e-f973c02a6f34"
+    },
+    {
+      "claim_id": "316c8675-2263-4096-9994-9c02a11b499a",
+      "result_id": "0fec86f1-ecce-4ebb-b09f-95cded18fdde"
+    },
+    {
+      "claim_id": "166ec767-4a67-4f9c-ae17-f40a8df85aac",
+      "result_id": "0fec86f1-ecce-4ebb-b09f-95cded18fdde"
+    },
+    {
+      "claim_id": "61dab1b5-6239-4628-9565-80cdce034079",
+      "result_id": "0fec86f1-ecce-4ebb-b09f-95cded18fdde"
+    },
+    {
+      "claim_id": "90c7b256-cf0e-4037-9b0d-30541708da14",
+      "result_id": "0fec86f1-ecce-4ebb-b09f-95cded18fdde"
+    },
+    {
+      "claim_id": "5c1500e2-e99c-4249-85e6-c8083e428873",
+      "result_id": "0fec86f1-ecce-4ebb-b09f-95cded18fdde"
+    },
+    {
+      "claim_id": "62feec3b-bcb8-451a-a87f-f815fe2e1c9f",
+      "result_id": "0fec86f1-ecce-4ebb-b09f-95cded18fdde"
+    },
+    {
+      "claim_id": "cf88f6c1-bf3c-46b4-b158-6c19e6a95546",
+      "result_id": "8bf9dc12-0d7f-43e4-9757-e07c28cf9342"
+    },
+    {
+      "claim_id": "36708cc5-58ee-4224-b65b-d86310579d33",
+      "result_id": "8bf9dc12-0d7f-43e4-9757-e07c28cf9342"
+    },
+    {
+      "claim_id": "c8f34538-a20f-43ca-bdb5-c3a53aca2056",
+      "result_id": "8bf9dc12-0d7f-43e4-9757-e07c28cf9342"
+    },
+    {
+      "claim_id": "5fd4976b-f6be-43a2-9ae4-ba076f7a4ddd",
+      "result_id": "8bf9dc12-0d7f-43e4-9757-e07c28cf9342"
+    },
+    {
+      "claim_id": "f00733c7-d29d-4a0c-94ea-7e5e50198b43",
+      "result_id": "03d36b83-0203-4da9-bba7-9eacb58c89b0"
+    },
+    {
+      "claim_id": "d0077259-7ecb-4d5f-8025-1d5865041c4d",
+      "result_id": "03d36b83-0203-4da9-bba7-9eacb58c89b0"
+    },
+    {
+      "claim_id": "d0a84aab-f4c0-45c9-bc2d-787977dfcab9",
+      "result_id": "03d36b83-0203-4da9-bba7-9eacb58c89b0"
+    },
+    {
+      "claim_id": "114161a1-b435-451e-9c18-071a5ff2708a",
+      "result_id": "03d36b83-0203-4da9-bba7-9eacb58c89b0"
+    },
+    {
+      "claim_id": "d465fc60-5973-4021-afea-2486bb65ef0e",
+      "result_id": "5575ac93-78aa-40cd-9b0a-258f97d00de1"
+    },
+    {
+      "claim_id": "e08a32f4-267d-4e81-8443-dc5051c5ee90",
+      "result_id": "5575ac93-78aa-40cd-9b0a-258f97d00de1"
+    },
+    {
+      "claim_id": "6d77fcb6-3b41-4a3c-96de-5abe0f5c04f1",
+      "result_id": "5575ac93-78aa-40cd-9b0a-258f97d00de1"
+    },
+    {
+      "claim_id": "0a3df5db-def8-43c5-8b5e-974119871551",
+      "result_id": "5575ac93-78aa-40cd-9b0a-258f97d00de1"
+    },
+    {
+      "claim_id": "c4c40e95-979d-4af9-b685-b700106831b2",
+      "result_id": "5575ac93-78aa-40cd-9b0a-258f97d00de1"
+    },
+    {
+      "claim_id": "37f1df7f-5dfc-4a7b-88aa-fa7f52c69fc8",
+      "result_id": "5575ac93-78aa-40cd-9b0a-258f97d00de1"
+    },
+    {
+      "claim_id": "a14bc741-602b-4038-838c-83f662fffa92",
+      "result_id": "783bea72-602f-4816-b155-2aaa7c71e20d"
+    },
+    {
+      "claim_id": "7dc0fc3a-0b49-419d-a82d-01457bfe4695",
+      "result_id": "783bea72-602f-4816-b155-2aaa7c71e20d"
+    },
+    {
+      "claim_id": "901f4cd4-aa08-40f1-b13c-97817aed5e66",
+      "result_id": "0edc5f5b-8d3c-4317-a305-ab0d68599057"
+    },
+    {
+      "claim_id": "fb70f4f5-dc86-43b8-9468-87625e9bc2d4",
+      "result_id": "0edc5f5b-8d3c-4317-a305-ab0d68599057"
+    },
+    {
+      "claim_id": "8e7af6b8-da10-47b5-a274-a815167cdd97",
+      "result_id": "51d710b1-674e-4639-81cb-cf1114537097"
+    },
+    {
+      "claim_id": "a89be04a-88f4-4d99-ac78-74dcecc39856",
+      "result_id": "51d710b1-674e-4639-81cb-cf1114537097"
+    },
+    {
+      "claim_id": "3462a07a-19c3-4ee5-bfce-ef0306d370a3",
+      "result_id": "65ab6bbe-37f4-4cc3-a60f-0b011ac6f1ba"
+    },
+    {
+      "claim_id": "59387aae-8a52-4e93-86f6-a065c5903c68",
+      "result_id": "65ab6bbe-37f4-4cc3-a60f-0b011ac6f1ba"
+    },
+    {
+      "claim_id": "97254854-a0dd-4935-aaac-9a4724b18a61",
+      "result_id": "65ab6bbe-37f4-4cc3-a60f-0b011ac6f1ba"
+    },
+    {
+      "claim_id": "a37b2103-005d-4dc4-a897-e6f2217252b2",
+      "result_id": "65ab6bbe-37f4-4cc3-a60f-0b011ac6f1ba"
+    },
+    {
+      "claim_id": "f47efdf9-f501-4d02-92f9-9e5f5081eb9a",
+      "result_id": "6c0f7158-5839-467e-9a4b-386e38cc2c9a"
+    },
+    {
+      "claim_id": "d2f2fa14-8f3b-4669-b406-c30c0d761146",
+      "result_id": "6c0f7158-5839-467e-9a4b-386e38cc2c9a"
+    },
+    {
+      "claim_id": "e5edcf8b-45fb-4e63-9f6c-c32f467954a1",
+      "result_id": "6c0f7158-5839-467e-9a4b-386e38cc2c9a"
+    },
+    {
+      "claim_id": "fc27f4ce-2927-448d-b030-e0a133d727c5",
+      "result_id": "6c0f7158-5839-467e-9a4b-386e38cc2c9a"
+    },
+    {
+      "claim_id": "d5c713c2-c108-486d-a231-eea14941a408",
+      "result_id": "694353e9-0881-4ab9-b355-cadcb1b912a7"
+    },
+    {
+      "claim_id": "f14ddac0-a250-4eeb-a7f5-fe0c56ae960a",
+      "result_id": "694353e9-0881-4ab9-b355-cadcb1b912a7"
+    },
+    {
+      "claim_id": "ac1b387a-78fb-416a-8403-74e7bcd11be2",
+      "result_id": "694353e9-0881-4ab9-b355-cadcb1b912a7"
+    },
+    {
+      "claim_id": "9323882c-195b-4a86-931b-dc8d63b76b0a",
+      "result_id": "694353e9-0881-4ab9-b355-cadcb1b912a7"
+    },
+    {
+      "claim_id": "860667f5-1cd0-45f4-bf6d-c635fbf57c15",
+      "result_id": "694353e9-0881-4ab9-b355-cadcb1b912a7"
+    },
+    {
+      "claim_id": "2953e4a1-70cb-464f-b117-bc2c056f5eeb",
+      "result_id": "694353e9-0881-4ab9-b355-cadcb1b912a7"
+    },
+    {
+      "claim_id": "42df3699-df9e-45d6-b197-1487a4d99fe4",
+      "result_id": "694353e9-0881-4ab9-b355-cadcb1b912a7"
+    },
+    {
+      "claim_id": "263d45be-0a97-4132-bf6b-6ac50a91aeb2",
+      "result_id": "694353e9-0881-4ab9-b355-cadcb1b912a7"
+    },
+    {
+      "claim_id": "3539b27c-0018-4edd-a94f-247b25132164",
+      "result_id": "694353e9-0881-4ab9-b355-cadcb1b912a7"
+    },
+    {
+      "claim_id": "0cc49a65-474d-4113-9d6b-2ea6bec4dfca",
+      "result_id": "694353e9-0881-4ab9-b355-cadcb1b912a7"
+    },
+    {
+      "claim_id": "75b57125-1858-4268-8fed-2559393b176c",
+      "result_id": "694353e9-0881-4ab9-b355-cadcb1b912a7"
+    },
+    {
+      "claim_id": "2ef71bb8-0366-425b-b8a1-998d2d0ad074",
+      "result_id": "694353e9-0881-4ab9-b355-cadcb1b912a7"
+    },
+    {
+      "claim_id": "99f9d3cb-5db9-4840-98f5-12dab4396483",
+      "result_id": "283ca20a-6eb3-4478-a860-642786de471a"
+    },
+    {
+      "claim_id": "d13f51e5-8dae-4926-ad6a-23dd01946e06",
+      "result_id": "283ca20a-6eb3-4478-a860-642786de471a"
+    },
+    {
+      "claim_id": "0fd80895-7e4a-4782-a5d6-2c1d7bf8872b",
+      "result_id": "283ca20a-6eb3-4478-a860-642786de471a"
+    }
+  ],
+  "comparisons": []
+}

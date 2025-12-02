@@ -1,0 +1,377 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C31",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "The study generated a comprehensive single-cell atlas of the murine epididymis and vas deferens using 10X Chromium single-cell RNA-Seq, profiling 8880 cells from four anatomical regions (caput, corpus, cauda, vas deferens) pooled from four mice. Bulk RNA-Seq from at least 10 samples per region confirmed expected region-specific gene expression patterns and recapitulated prior microarray studies at improved genomic resolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C31, C36-C41 collectively describe the experimental design and dataset generation. The methods are clearly described with appropriate sample sizes (4 mice, 8 tissue samples pooled per region), technical replicates for bulk RNA-Seq (n\u226510), and quality metrics (8880 cells, median 1965 UMIs/cell). The bulk RNA-Seq validation against prior microarray data (Johnston et al., 2005) provides orthogonal confirmation of the approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "The single-cell atlas identified all major epididymal cell types including principal cells, clear cells, basal cells, and support cells (fibroblasts, smooth muscle, macrophages, immune cells). Cells are distinguished by two molecular features: cell-type-specific marker genes (e.g., V-ATPase genes in clear cells) and region-specific gene expression in principal cells, suggesting specialized microenvironments along the epididymis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C5, C45-C50 describe cell type identification using established marker genes and differential expression analysis. The identification of known cell types validates the technical quality of the dataset. The two-feature distinction (cell type vs. regional specialization) is well-supported by the clustering analysis and marker gene expression patterns shown in Figures 2-3.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C6",
+      "C32",
+      "C33",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C128",
+      "C129"
+    ],
+    "result": "Principal cells exhibit extensive regional specialization across the epididymis, with roughly eight distinct gene expression signatures corresponding to anatomical segments. Subclustering identified 3-4 subtypes within each anatomical region (caput, corpus, cauda, vas deferens), concordant with prior microarray studies and supporting the notion that anatomical segmentation generates multiple distinct microenvironments for sperm maturation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C32-C33, C53-C60, C128-C129 describe regional specialization of principal cells. The subclustering analysis (Figure 3) shows clear separation by anatomical origin, with further subdivision within regions. Comparison to Johnston et al. 2005 microarray data validates the segment assignments. The inference about distinct microenvironments (C50, C60) is reasonable given the extensive regional gene expression differences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C133"
+    ],
+    "result": "Region-specific genes in principal cells are predominantly members of multi-gene families organized in genomic clusters, including \u03b2-defensins, aldo-keto reductases, lipocalins, serine protease inhibitors, cysteine-rich peptides, and RNaseA family members.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C62, C133 describe the genomic organization of region-specific genes. This is supported by the single-cell RNA-seq data (Figure 3\u2014figure supplement 2) and extensive citations to prior studies documenting these gene families. The observation is consistent with established knowledge of epididymal gene regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C8",
+      "C34",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C156",
+      "C157",
+      "C159",
+      "C160",
+      "C161"
+    ],
+    "result": "The study identified two distinct populations of clear cells, with one subpopulation (Cluster 2) confined to caput and corpus epididymis expressing Iapp (encoding Amylin). Immunofluorescence confirmed Amylin-positive and Amylin-negative clear cells cohabiting within the same region. These Amylin-positive cells are unlikely to correspond to previously described 'narrow' or 'apical' cells as they are found outside the initial segment and lack Carbonic Anhydrase II enrichment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C34, C82-C88, C156-C157, C159-C161 describe the discovery of Amylin-positive clear cells. The subclustering analysis (Figure 4B-D) shows clear separation based on Iapp expression, and immunofluorescence validation (Figure 4E, Figure 4\u2014figure supplement 1C) confirms the presence of both Amylin-positive and Amylin-negative clear cells. The distinction from narrow/apical cells is supported by anatomical distribution data and lack of Car2 enrichment.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Clear cells are responsible for luminal acidification via high-level expression of V-ATPase genes (Atp6v0c, Atpv1e1, Atp6v1a) and are enriched for genes involved in energy metabolism (to provide ATP for acidification) and membrane trafficking (consistent with V-ATPase localization to microvilli).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C81 describe clear cell function and gene expression. The identification of clear cells by V-ATPase marker genes is well-established and confirmed by the scRNA-seq data (Figure 2B-C). The enrichment for energy metabolism and membrane trafficking genes is supported by the data and represents logical inferences about the cellular requirements for luminal acidification.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "Basal cells were identified by expression of Itga6 and Krt14, with co-expression of cell adhesion and intercellular signaling genes. Subclustering revealed limited diversity, with one major division based on ribosomal protein gene expression that correlated with UMI counts. Basal cells are distinct from immune cells based on gene expression patterns and immunofluorescence co-staining.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C94, C97-C101 describe basal cell characterization. The identification by established markers and the distinction from immune cells are well-supported by subclustering analysis (Figure 5\u2014figure supplement 1) and immunofluorescence (Figure 5\u2014figure supplement 1C-D). The RPG high/low division correlating with UMI counts suggests potential technical artifacts, which the authors appropriately acknowledge.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C102",
+      "C103"
+    ],
+    "result": "The biological significance of RPG-low basal cells and a minor basal cell cluster expressing Notch2, Spry2, Pecam1, Slc39a1, Ccl7, Cd93, and Penk remains uncertain, as these may represent technical artifacts or novel subpopulations requiring further validation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C102-C103 acknowledge uncertainty about specific basal cell subpopulations. The authors appropriately note that RPG-low cells may be technical artifacts due to correlation with UMI counts, and that followup staining for the Notch2+ cluster was inconclusive. This represents honest reporting of uncertain findings that require additional validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Vas deferens principal cells differ from epididymal principal cells in gene expression patterns, with enrichment for transmembrane transporters, signaling molecules, and mitochondrial genes rather than large multi-gene families. Notably, Abcg2 (a xenobiotic transporter) is highly expressed and localized to the apical surface, suggesting a role in concentrating factors in the vas deferens lumen.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C75 describe vas deferens-specific gene expression. The scRNA-seq data clearly shows distinct gene expression patterns in vas deferens principal cells. The Abcg2 localization is confirmed by immunofluorescence (Figure 3\u2014figure supplement 4), and the inference about luminal concentration (C74-C75) is reasonable based on known ABC transporter function and apical localization, though the specific substrates remain unknown.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "Support cells include muscle cells (primarily from vas deferens), fibroblasts, endothelial cells, and immune cells (macrophages, dendritic cells, lymphocytes). Subclustering revealed limited variation in muscle cells (distinguished by ribosomal protein gene expression) and immune cell populations concordant with prior histological studies, though insufficient cell numbers prevented identification of B cells or T cell subpopulations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C111 describe support cell populations. The identification of these cell types by established markers is well-supported by the clustering analysis (Figures 2, 6). The concordance with prior studies validates the findings. The authors appropriately acknowledge limitations in resolving rare cell types (B cells) and subpopulations (T cell subtypes) due to insufficient cell numbers.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C7",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "Stromal cell subclustering identified functionally specialized subpopulations, including myoid cells (high muscle marker expression) and two vas deferens-specific subtypes: 'stem-like' cells expressing stem cell markers (Angpt1, Lgr5, Tspan8) and 'secretory fibroblasts' expressing numerous intercellular signaling molecules (Il6, Cxcl1, Cxcl2, Cxcl12, Ccl2, Ccl7, Vcam1, Igf1, Ptx3, Tslp). Immunofluorescence confirmed distinct spatial localization of these populations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C112-C116 describe stromal cell diversity. The subclustering analysis (Figure 6D-F) shows clear separation of stromal subtypes with distinct marker gene expression. The immunofluorescence validation (Figure 6\u2014figure supplement 2) confirms the spatial organization with Lgr5+ cells at the periphery and Ptx3/Tslp+ cells closer to the lumen. The functional annotations are reasonable hypotheses based on marker gene expression.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C35",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "Ligand-receptor analysis predicted intercellular signaling networks between cell types, identifying significant interactions (p<0.01) including complementary ligand-receptor expression between basal cells and endothelial cells, and reciprocal connections between macrophages and secretory fibroblasts in the vas deferens (where macrophages were enriched, p<10\u207b\u2077).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35, C117-C123 describe predicted cell-cell communication networks. The ligand-receptor analysis uses an established database (Ramilowski et al., 2015) and appropriate statistical testing (hypergeometric test, p<0.01). The spatial juxtaposition of basal cells and endothelial cells supports the predicted interaction. The macrophage enrichment in vas deferens is statistically significant. However, these remain predictions requiring experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C130",
+      "C131",
+      "C132"
+    ],
+    "result": "Within principal cell clusters, individual cells show heterogeneous expression of marker genes consistent with prior immunostaining studies of patchy protein expression. These highly variable markers exhibit little co-expression, suggesting stochastic expression of individual genes rather than coordinated programs, though whether this reflects stable subspecialization or transient asynchronous expression requires future live-cell imaging studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C130-C132 describe cell-to-cell heterogeneity within principal cell clusters. The observation is supported by the scRNA-seq data (Figure 3\u2014figure supplement 1, Supplementary file 3) and is consistent with prior immunostaining studies. The inference about stochastic vs. coordinated expression is reasonable based on lack of co-expression. The authors appropriately acknowledge that distinguishing stable vs. transient heterogeneity requires additional experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C164",
+      "C165",
+      "C166",
+      "C167",
+      "C168"
+    ],
+    "result": "The study presents a comprehensive single-cell atlas of the murine epididymis and vas deferens that recovers all previously described cell types, documents complete molecular profiles, identifies markers for potentially novel cell types (Amylin-positive clear cells, vas deferens-specific fibroblast subtypes), and provides a resource for hypothesis generation and future studies of epididymal biology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C124-C127, C164-C168 summarize the overall contribution of the study. The comprehensive nature of the dataset is well-supported by the recovery of known cell types, identification of novel subpopulations with validation, and detailed molecular characterization. The dataset represents a significant advance in understanding epididymal cellular composition and provides a valuable resource for the field.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C51",
+      "C52",
+      "C53",
+      "C63",
+      "C64",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C105",
+      "C148",
+      "C153",
+      "C154"
+    ],
+    "result": "The manuscript provides extensive background on established knowledge of epididymal biology, including sperm maturation processes, anatomical organization, regional gene expression, cell types, and functional roles. This contextualizes the single-cell atlas within the broader field of reproductive biology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C9-C30, C51-C53, C63-C64, C89-C92, C105, C148, C153-C154 represent established knowledge in reproductive biology, supported by extensive citations throughout the manuscript. These claims provide essential context for interpreting the single-cell data and are appropriately referenced to prior literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147"
+    ],
+    "result": "The Discussion contextualizes region-specific gene families within known epididymal functions including sperm membrane/glycocalyx remodeling, antimicrobial defense, redox regulation, biosynthesis of signaling molecules (prostaglandins), small molecule binding (lipocalins), protease regulation (serine protease inhibitors), and RNA processing (RNases producing tRNA fragments).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C134-C147 synthesize the functional implications of region-specific gene expression patterns. These interpretations are well-supported by extensive citations to prior research and represent reasonable connections between the observed gene expression patterns and known epididymal functions. Some claims (C136, C141-C142, C144-C147) include speculative elements appropriately qualified by the authors.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C149",
+      "C150",
+      "C151",
+      "C152"
+    ],
+    "result": "The Discussion draws parallels between epididymal gene expression gradients and kidney nephrons/collecting ducts, noting shared expression of genes (Aqp, Fxyd, Cry, Akr, Tspan families) and similar cell types (V-ATPase+ cells, Krt5+ basal-like cells), while identifying epididymis-specific genes (Rnase9-12, Cst family) that may be specific to sperm maturation functions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C149-C152 compare epididymis to kidney biology. The comparison is supported by citations to kidney single-cell studies (Ransick et al., 2019) and represents a reasonable inference based on shared tubular architecture and pH regulation functions. The identification of epididymis-specific genes provides a useful framework for distinguishing general tubular epithelial functions from sperm maturation-specific processes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C158",
+      "C162",
+      "C163"
+    ],
+    "result": "The Discussion notes that Amylin-positive clear cells are enriched in the caput epididymis where morphologically distinctive 'narrow' and 'apical' clear cells have been described, and suggests future studies should investigate functional differences between Amylin-positive and -negative clear cells, particularly given Amylin's role in systemic metabolism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C158, C162-C163 provide context for the Amylin-positive clear cell discovery and suggest future directions. The historical context is appropriately cited, and the suggestion for future functional studies is reasonable given the novelty of the finding. The speculation about local vs. systemic Amylin signaling is appropriately qualified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C169",
+      "C170"
+    ],
+    "result": "The study used 10-12 week old male FVB/NJ mice with all procedures approved by the University of Massachusetts Medical School IACUC (Protocol # A-1833-18).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C169-C170 describe the experimental animals and ethical compliance. These are straightforward methodological details that are appropriately documented.",
+    "result_type": "MINOR"
+  }
+]

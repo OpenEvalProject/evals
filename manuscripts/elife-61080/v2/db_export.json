@@ -1,0 +1,2075 @@
+{
+  "submission": {
+    "id": "d0a31af0-2d9d-4d4c-a768-2feaf360691a",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T20:26:58.470429Z",
+    "updated_at": "2025-12-02T20:26:58.470429Z"
+  },
+  "content": [
+    {
+      "id": "8d5c2a89-5193-48dc-a67b-aca95a42e582",
+      "submission_id": "d0a31af0-2d9d-4d4c-a768-2feaf360691a",
+      "content_type": "manuscript",
+      "content_text": "# A versatile system to record cell-cell interactions\n\n## Authors\n\n- Rui Tang<sup>1</sup> ([ORCID: 0000-0002-6950-9580](https://orcid.org/0000-0002-6950-9580)) \u2020\n- Christopher W Murray<sup>2</sup> ([ORCID: 0000-0002-6551-2053](https://orcid.org/0000-0002-6551-2053))\n- Ian L Linde<sup>3</sup>\n- Nicholas J Kramer<sup>1</sup> ([ORCID: 0000-0003-4557-8343](https://orcid.org/0000-0003-4557-8343))\n- Zhonglin Lyu<sup>5</sup>\n- Min K Tsai<sup>1</sup>\n- Leo C Chen<sup>1</sup> ([ORCID: 0000-0002-4950-0757](https://orcid.org/0000-0002-4950-0757))\n- Hongchen Cai<sup>1</sup>\n- Aaron D Gitler<sup>1</sup> ([ORCID: 0000-0001-8603-1526](https://orcid.org/0000-0001-8603-1526))\n- Edgar Engleman<sup>2</sup> ([ORCID: 0000-0002-2096-9279](https://orcid.org/0000-0002-2096-9279))\n- Wonjae Lee<sup>5</sup>\n- Monte M Winslow<sup>1</sup> ([ORCID: 0000-0002-5730-9573](https://orcid.org/0000-0002-5730-9573)) \u2020\n\n### Affiliations\n\n1. Department of Genetics, Stanford University School of Medicine Stanford United States\n2. Cancer Biology Program, Stanford University School of Medicine Stanford United States\n3. Immunology Program, Stanford University School of Medicine Stanford United States\n4. Neuroscience Program, Stanford University School of Medicine Stanford United States\n5. Department of Neurosurgery, Stanford University School of Medicine Stanford United States\n6. Department of Pathology, Stanford University School of Medicine Stanford United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nCell-cell interactions influence all aspects of development, homeostasis, and disease. In cancer, interactions between cancer cells and stromal cells play a major role in nearly every step of carcinogenesis. Thus, the ability to record cell-cell interactions would facilitate mechanistic delineation of the role of the cancer microenvironment. Here, we describe GFP-based Touching Nexus (G-baToN) which relies upon nanobody-directed fluorescent protein transfer to enable sensitive and specific labeling of cells after cell-cell interactions. G-baToN is a generalizable system that enables physical contact-based labeling between various human and mouse cell types, including endothelial cell-pericyte, neuron-astrocyte, and diverse cancer-stromal cell pairs. A suite of orthogonal baToN tools enables reciprocal cell-cell labeling, interaction-dependent cargo transfer, and the identification of higher order cell-cell interactions across a wide range of cell types. The ability to track physically interacting cells with these simple and sensitive systems will greatly accelerate our understanding of the outputs of cell-cell interactions in cancer as well as across many biological processes.\n\n## Introduction\n\nCell-cell interactions contribute to almost all physiological and pathological states (Deb, 2014; Komohara and Takeya, 2017; Konry et al., 2016; Zhang and Liu, 2019). Despite the explosion of interest in uncovering and understanding cellular heterogeneity in tissues and across disease states, the extent to which cell-cell interactions influence cell state, drive heterogeneity, and enable proper tissue function remains poorly understood (Konry et al., 2016; Tsioris et al., 2014; Zhang and Liu, 2019). Detailed analysis of the impact of defined cell-cell interactions has illuminated critical aspects of biology; however, these analyses have been limited to a small number of juxtacrine signaling axes that are tractable to study (Dustin and Choudhuri, 2016; Meurette and Mehlen, 2018; Yaron and Sprinzak, 2012).\n\nInteractions between cancer cells and stromal cells play central roles in cancer initiation, progression, and metastasis (Kitadai, 2010; Orimo and Weinberg, 2006). While secreted factors relaying pro- or anti-tumorigenic signals have been extensively investigated, the impact of direct physical interactions between cancer cells and stromal cells remains understudied (Bendas and Borsig, 2012; Dittmer and Leyh, 2014; Nagarsheth et al., 2017). A greater understanding of the constellation of direct interactions that cancer cells undergo will not only deepen our understanding of tumor ecology but also has the potential to uncover novel therapeutic opportunities (Nagarsheth et al., 2017; Swartz et al., 2012). Furthermore, how diverse cell-cell interactions differentially impact cancer cells at different stages of carcinogenesis and within different organ environments remains largely uncharacterized.\n\nMolecular methods to profile cell state, including in situ approaches within intact tissues, largely fail to uncover the causal relationship between cell-cell interactions and the underlying biology (Giladi et al., 2020; Halpern et al., 2018). Computational and experimental methods to characterize cell-cell interactions yield additional layers of dimensionality; however, modalities to capture cell-cell interactions are limited (Boisset et al., 2018; Morsut et al., 2016; Pasqual et al., 2018). Much as diverse systems to detect and quantify protein-protein interactions have revolutionized our biochemical understanding of molecular systems, the development of novel systems to detect and quantify cell-cell interactions will accelerate the mapping of the interaction networks of multicellular systems.\n\nEndogenous cell-cell interactions can result in transfer of surface proteins between cells, mainly through either trans-endocytosis or trogocytosis (Langridge and Struhl, 2017; Li et al., 2019; Ovcinnikovs et al., 2019). Thus, we sought to integrate this phenomenon with fluorescent protein tagging to label cells that have undergone direct interactions. We describe a surprisingly robust system (which we term GFP-based Touching Nexus or G-baToN) that enables sensitive and specific interaction-dependent labeling of cancer cells and various primary stromal cells, including endothelial cells, T cells and neurons. We extensively characterize this approach and describe several novel applications of this versatile system.\n\n## Results\n\n### G-baToN enables cell-cell interaction-dependent labeling\n\nTo create a system in\u00a0which a fluorescent signal could be transferred between neighboring cells, we adapted a synthetic ligand-receptor system based on the expression of surface GFP (sGFP) on sender cells and a cell surface anti-GFP (\u03b1GFP) nanobody on receiver cells (Fridy et al., 2014; Lim et al., 2013; Morsut et al., 2016). Co-culturing sGFP sender cells with \u03b1GFP receiver cells led to GFP transfer and labeling of the receiver cells (Figure 1A,B and Figure 1\u2014figure supplement 1A). Receiver cell labeling required direct cell-cell contact, active membrane dynamics, and pairing between sGFP and its cognate \u03b1GFP receptor (Figure 1C,D and Figure 1\u2014figure supplement 1B, C). Notably, sGFP transfer was accompanied by reduced GFP on the sender cells, downregulation of \u03b1GFP from the surface of the receiver cells and was partially blocked by chemical inhibitors of endocytosis \u2013 all consistent with active GFP transfer and internalization into receiver cells (Figure 1\u2014figure supplement 1D\u2013F).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/61080/elife-61080-fig1-v2.jpg)\n\n**Figure 1.:** (a) Schematic of the G-baToN system. Surface GFP (sGFP) on a sender cell is transferred to a receiver cell expressing a cell surface anti-GFP nanobody (\u03b1GFP) leading to GFP labeling of the \u2018touched\u2019 receiver cell. (b) GFP transfer from sGFP-expressing KPT lung cancer sender cells (marked by intracellular tdTomato) to \u03b1GFP-expressing 293 receiver cells. Receiver cell labeling is sGFP- and \u03b1GFP- dependent. Control sender cells do not express sGFP. Control receiver cells do not express \u03b1GFP. Cytoplasmic GFP (Cyto-GFP) is not transferred to receiver cells. Sender and receiver cells were seeded at a 1:1 ratio and co-cultured for 24 hr. Receiver cells were defined as TomatonegPIneg cells. (c) GFP transfer to 293 receiver cells requires direct cell-cell contact. Receiver cells separated from sender cells by a transwell chamber are not labeled. Sender and receiver cells were seeded in upper and lower chambers respectively at a 1:1 ratio and cultured for 24 hr. Receiver cells were defined as TomatonegPIneg cells. (d) GFP transfer to 293 receiver cells requires sGFP-\u03b1GFP interaction and is blocked by an anti-GFP antibody in a dose-dependent manner. sGFP sender cells were pre-incubated with the indicated concentration of anti-GFP antibody for 2 hr, washed with PBS, and then co-cultured with receiver cells at a 1:1 ratio for 24 hr. Receiver cells were defined as TomatonegPIneg cells. (e) Time-lapse imaging of GFP transfer from a sGFP-expressing sender cell to an \u03b1GFP-expressing receiver cell. Time after contact is indicated. Receiver cell is outlined with white dashed line. Scale bar: 10 \u03bcm. (f) Analysis of GFP Mean Fluorescence Intensity (MFI) of \u03b1GFP receiver cells (marked by intracellular BFP) co-cultured with sGFP sender cells (marked by intracellular tdTomato) co-cultured for the indicated amount of time. Sender and receiver cells were seeded at a 1:1 ratio. Receiver cells were defined as TomatonegPInegBFPpos cells. (g) Percentage of labeled \u03b1GFP receiver cells after co-culture with different numbers of sender cells for 24 hr. Receiver cells were defined as TomatonegPInegBFPpos cells. (h) Detection of rare labeled \u03b1GFP receiver cells after co-culture with sGFP sender cells at approximately a 1:105 ratio for 24 hr. Receiver cells were defined as TomatonegPInegBFPpos cells.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/61080/elife-61080-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (a) GFP protein is transferred to receiver cells. Western blot analysis of FACS purified Control and \u03b1GFP receiver 293 cells cultured in isolation or co-culture with sGFP Tomato-positive sender cells (mouse KPT lung cancer cells) for 24 hr. sGFP but not Tomato is present in touched \u03b1GFP receiver cells. Human mitochondrial antigen (hu-Mito) is a marker for receiver cells. GAPDH shows loading. Rightmost lane is sGFP sender cells. (b) GFP cannot be transferred from fixed sGFP sender cells to live \u03b1GFP receiver cells. sGFP sender cells were fixed in 1% PFA for 5 min and washed with PBS before co-cultured with \u03b1GFP receiver cells at a 1:1 ratio for 24 hr. Receiver cells were defined as TomatonegPInegBFPpos cells. (c) GFP transfer to 293 receiver cells required sGFP-\u03b1GFP recognition. GFP is transferred from sGFP sender cells to \u03b1GFP-receiver cells but not from sGFP sender cells to \u03b1mCherry-receiver cells. Control receiver cells do not express any nanobody. Sender and receiver cells were co-cultured at a 1:1 ratio for 24 hr. Receiver cells were defined as TomatonegPInegBFPpos cells. (d) GFP transfer to receiver cells is accompanied by a reduction of GFP on the sender cells. GFP expression on sender cells after 24 hr co-culture with control or \u03b1GFP-expressing 293 receiver cells at a 1:1 ratio. Co-culture with \u03b1GFP expressing but not control receiver cells reduced GFP on sGFP sender cells. Sender cells were defined as TomatoposDAPInegBFPneg cells. (e) GFP transfer is accompanied with \u03b1GFP internalization on receiver cells. Analysis of surface \u03b1GFP (Myc-tag) on 293 receiver cell co-cultured for 24 hr with sGFP sender cells. Receiver cells were defined as TomatonegPIneg cells. (f) GFP transfer to 293 receiver cells is partially dependent on membrane dynamics of endocytosis. Both a clathrin inhibitor (Pitstop, 20 \u03bcM) and a dynamin inhibitor (Dyngo 4a, 10 \u03bcM) partially inhibit GFP transfer from sGFP sender cells to \u03b1GFP receiver cells. Inhibitors were present during the 24 hr co-culture. Receiver cells were defined as TomatonegPIneg cells. (g) Analysis of GFP Mean Fluorescence Intensity (MFI) of \u03b1GFP receiver cells (marked by intracellular BFP) co-cultured with sGFP sender cells (marked by intracellular tdTomato) co-cultured for the indicated amount of time in the first 12 hr. Sender and receiver cells were seeded at a 1:1 ratio. Receiver cells were defined as TomatonegPInegBFPpos cells. (h) GFP transfer to \u03b1GFP 293 receiver cells can be very rapid. A shift in GFP MFI was detected 5 min after mixing sGFP sender cells with \u03b1GFP receiver cell. Receiver cells were defined as TomatonegPInegBFPpos cells. MFI mean +/-\u00a0SD of triplicate cultures is shown. (i) Rapid GFP degradation in touched receiver cells after removal of the sGFP sender cells. After 6 hr co-culture, GFP-positive receiver cells were purified by FACS followed by culture without sender cells. Receiver cells were defined as mCherrynegPInegBFPpos cells. GFP MFI in receiver cells reduced rapidly (T1/2 approximately 2 hr). MFI mean +/-\u00a0SD of triplicate cultures is shown.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/61080/elife-61080-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** Overview of systems that enable labeling of cells after cell-cell contact.\n\nTo characterize the kinetics of G-baToN-mediated receiver cell labeling, we performed co-culture time course experiments with time-lapse imaging and flow cytometry readouts. Time-lapse imaging showed rapid transfer and internalization of GFP by receiver cells (Figure 1E and Video 1). GFP transfer could be detected within five minutes of co-culture and was half-maximal after 6 hr (Figure 1F and Figure 1\u2014figure supplement 1G-H). Importantly, GFP fluorescence in receiver cells decayed rapidly after isolation of touched receiver cells from sender cells, thus documenting the transient labeling of receiver cells (Figure 1\u2014figure supplement 1I). To determine the sensitivity of this system, we co-cultured receiver cells with different ratios of sender cells. The fraction of labeled receiver cells was proportional to the number of sender cells, and even the addition of very few sender cells (representing less than one sender cell to 105 receiver cells) was sufficient to label rare receiver cells (Figure 1G,H). Thus, the transfer of GFP to \u03b1GFP-expressing cells is a rapid and sensitive method to mark cells that have physically interacted with a predefined sender population.\n\n![Video 1.](https://cdn.elifesciences.org/articles/61080/elife-61080-video1.mp4.jpg)\n\n### Fluorescence transfer efficiency is modulated by transmembrane domains and nanobody affinity\n\nTo further characterize the interaction reporter system, we deconstructed the G-baToN design into three functional modules: (1) the transmembrane domain of \u03b1GFP on the receiver cells; (2) the pairing between GFP and \u03b1GFP; and (3) the transmembrane domain of sGFP on the sender cells. We initially used a published sGFP-\u03b1GFP pair in\u00a0which the Notch1 transmembrane domain links the LaG17-\u03b1GFP nanobody onto the receiver cell surface\u00a0and the PDGFR transmembrane domain links sGFP onto the sender cell\u00a0surface (Morsut et al., 2016). Replacement of the Notch1 transmembrane domain of \u03b1GFP with different transmembrane domains allowed us to quantify their impact on GFP transfer efficiency. The VEGFR2 transmembrane domain enabled the highest transfer efficiency, resulting in about a threefold increase relative to the original design (Figure 2A\u2013C). We next replaced the LaG17-\u03b1GFP nanobody with \u03b1GFP nanobodies with varying affinity for GFP (Figure 2D,E). While nanobodies exhibiting the highest affinities performed similarly, we noted a minimal affinity required for GFP transfer (Figure 2F). Overall, the efficiency of GFP transfer correlated with GFP affinity. Lastly, permutation of the\u00a0transmembrane domain of sGFP on the sender cell revealed that the rate of retrograde transfer of \u03b1GFP-VEGFR2-BFP from receiver to sender cells was influenced by the sGFP transmembrane domain (Figure 2G\u2013I). The PDGFR transmembrane domain minimized bidirectional transfer and thus was the optimal design for minimizing retrograde transfer which could generate false-positive signals (Figure 2G\u2013I). Collectively, the permutation of the transmembrane domains anchoring sGFP and \u03b1GFP, as well as varying the \u03b1GFP nanobody affinity identified designs that maximized unidirectional receiver cell labeling.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/61080/elife-61080-fig2-v2.jpg)\n\n**Figure 2.:** (a) Schematic of the sender and receiver cells used to determine the impact of different \u03b1GFP transmembrane (TM) domains. TM domains contain the TM domain itself as well as membrane proximal regions from the indicated mouse (m) and human (h) proteins. (b) Different TM domains impact cell surface \u03b1GFP expression on 293 receiver cells. Membrane \u03b1GFP was quantified by anti-Myc staining. Control receiver cells do not express any nanobody. Mean +/-\u00a0SD of Myc MFI of triplicate cultures is shown. (c) VEGFR2 TM domain on \u03b1GFP receiver cells enable highest GFP transfer efficiency. Receiver cells expressing \u03b1GFP linked to different TM domains were co-cultured with sGFP sender cells at a 1:1 ratio for 6 hr. Receiver cells were defined as TomatonegPIneg cells. (d) Schematic of the sender and receiver cells used to determine the impact of different \u03b1GFP nanobodies on G-baToN-based labeling. (e) Different nanobodies exhibit different levels of expression on 293 receiver cells. Total \u03b1GFP expression was assessed by BFP intensity. Mean +/-\u00a0SD of GFP MFI of triplicate cultures is shown. (f) \u03b1GFP affinity influences transfer of GFP to touched 293 receiver cells. Receiver cells expressing different \u03b1GFP nanobodies were co-cultured with sGFP sender cells at a 1:1 ratio for 6 hr. GFP transfer was assessed by flow cytometry. GFP intensity on TomatonegPInegBFPpos receiver cells is shown as mean +/-\u00a0SD of triplicate cultures. (g) Schematic of the sender and receiver cells used to determine the impact of different sGFP TM domains on G-baToN-based labeling. TM domains contain the TM domain itself as well as membrane proximal regions from the indicated mouse (m) proteins. (h) Different TM domains on sGFP impact its expression in 293 sender cells. sGFP expression in sender cells was assessed by flow cytometry for GFP. Mean +/- SD of GFP MFI of triplicate cultures is shown. (i) PDGFR TM domain on sGFP minimized retrograde transfer of \u03b1GFP from receiver cells to 293 sGFP sender cells. \u03b1GFP transfer to sGFP sender cells was determined as the percentage of mCherryposGFPpos sender cells that were also BFPpos. Cells were co-cultured for 6 hr at a 1:1 ratio. Mean +/- SD of triplicate cultures is shown.\n\n### Tracking cancer-stroma interactions using G-baToN\n\nCancer cells interact with a variety of stromal cells at both the primary and metastatic sites (Kota et al., 2017; Nielsen et al., 2016). Thus, we employed the G-baToN system to record various cancer-stroma interactions in conventional 2D and 3D microfluidic culture systems as well as in vivo. Co-culturing sGFP-expressing lung adenocarcinoma cells with primary human umbilical vein endothelial cells (HUVECs) in a 2D format led to robust endothelial cell labeling (Figure 3A,B). Additionally, within 3D microfluidic chips, pre-seeded HUVECs expressing \u03b1GFP were robustly labeled following co-incubation with sGFP-expressing lung adenocarcinoma cells (Figure 3E\u2013G). Thus, the G-baToN system is able to efficiently record cancer cell-endothelial cell interactions across multiple culture conditions.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/61080/elife-61080-fig3-v2.jpg)\n\n**Figure 3.:** (a, b) G-baToN can detect cancer cell-endothelial cell (EC) interactions. HUVECs expressing \u03b1GFP were co-cultured with or without Tomatopos sGFP-expressing lung cancer sender cells at a 1:1 ratio for 24 hr. (a) Representative images of Tomatopos sGFP-expressing lung cancer sender cells co-cultured with either control HUVEC receiver cells (HUVECs expressing BFP) or \u03b1GFP HUVEC receiver cells at a 1:1 ratio for 24 hr. Scale bars\u00a0=\u00a050 \u03bcm. (b) MFI of GFP on PInegTomatonegBFPposCD31pos Receiver cells was assessed by flow cytometry and is shown as mean +/-\u00a0SD of triplicate cultures. **p<0.01, n\u00a0=\u00a03. (c,d) G-baToN can detect endothelial cell (EC)-smooth muscle cell (SMC) interactions. Primary human umbilical artery smooth muscle cells (HUASMC) expressing \u03b1GFP were co-cultured with or without sGFP-expressing HUVEC sender cells at a 1:1 ratio for 24 hr. (c) Representative images of sGFP-expressing HUVEC sender cells co-cultured with either control HUASMC receiver cells (expressing BFP) or \u03b1GFP HUASMC receiver cells at a 1:1 ratio for 24 hr. Scale bars\u00a0=\u00a050 \u03bcm. (d) MFI of GFP on PInegBFPpos receiver cells was assessed by flow cytometry and is shown as mean +/-\u00a0SD of triplicate cultures. **p<0.01, n\u00a0=\u00a03. (e,f,g) G-baToN can detect cancer cell-endothelial cell interactions in 3D-microfluidic culture. (e) Details on design of 3D-microfluidic devices for cancer cell-endothelial cell co-culture. (f) Representative images of Tomatopos sGFP-expressing lung cancer sender cells co-cultured with either control HUVEC receiver cells (HUVECs expressing BFP) or \u03b1GFP HUVEC receiver cells at a 1:10 ratio for 24 hr. Scale bars\u00a0=\u00a0200 \u03bcm. (g) Average number of GFPpos HUVEC after co-culture with cancer cells for 24 hr. 10 areas from three chips with 200X magnification were used for the quantification. **p<0.01, n\u00a0=\u00a010.\n\nGiven the importance of interactions with adaptive immune cells during carcinogenesis (Crespo et al., 2013; Joyce and Fearon, 2015), we assessed the ability of the G-baToN system to track the interaction of primary human CD4 and CD8 T cells with lung cancer cells. \u03b1GFP-expressing CD4 and CD8 T cells that interacted with sGFP-expressing lung cancer cells in culture were specifically labeled (Figure 4A\u2013C). To test the ability of the G-baToN system to capture cancer cell-T cell interactions in vivo, we established lung tumors from a sGFP-expressing lung adenocarcinoma cell line prior to intravenous transplantation of \u03b1GFP-expressing CD4 T cells. 24 hr after T cell transplantation, over 60% of \u03b1GFP-expressing CD4 T cells within the tumor-bearing lungs were labeled with GFP, while control CD4 T cells remained unlabeled (Figure 4D,E). Thus, the G-baToN system is capable of recording cancer cell-T cell interactions both in vitro and in vivo.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/61080/elife-61080-fig4-v2.jpg)\n\n**Figure 4.:** (a,b,c) G-baToN can detect cancer cell-T cell interactions in vitro. (a) Primary human CD4pos T cells were co-cultured with sGFP-expressing lung cancer sender cells (A549 cells) at a 2:1 ratio for 24 hr. Representative image of A549 cell and CD4 T cell interactions. Scale bars\u00a0=\u00a010 \u03bcm.\u00a0BF\u00a0= bright field (b,c) A549 cells expressing sGFP can transfer GFP to \u03b1GFP primary human CD4pos (b) or CD8pos (c) T cells after co-culture at a 1:1 ratio for 24 hr. Receiver cells were defined as Near-IRnegBFPposCD4pos or CD8pos T cells. (d,e) G-baToN can detect cancer cell-T cell interactions in vivo. (d) Experiment design for cancer cell-T cell interactions in vivo. 1 \u00d7 106 sGFP-expressing lung cancer sender cells were transplanted into NSG mice at day 0. 4 \u00d7 106 \u03b1GFP primary human CD4pos T cell were transplanted into tumor-bearing mice at day 21. One day after T cell transplantation (day 22), T cells in the mouse lung were analyzed by FACS. (e) sGFP-expressing cancer cell can transfer GFP to \u03b1GFP-expressing primary human CD4pos T cells. Receive cells were defined as PInegBFPposCD4posT cells.\n\nRecent studies have demonstrated a supportive role for neurons within the primary and metastatic niche in the context of brain (Venkatesh et al., 2019; Zeng et al., 2019). To determine whether G-baToN can record cancer cell-neuron interactions, we co-cultured sGFP-expressing lung adenocarcinoma cells with primary cortical neurons expressing \u03b1GFP. Physical contact between cancer cells and neuronal axons led to punctate-like GFP granule transport into receiver neurons (Figure 5A\u2013B). These results demonstrate the successful application of G-baToN system to record a variety of cancer cell-stromal cell interactions.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/61080/elife-61080-fig5-v2.jpg)\n\n**Figure 5.:** (a) Representative image of sGFP-expressing cancer sender cells co-cultured with either control neuron receiver cells or \u03b1GFP neuron receiver cells at a 1:1 ratio for 24 hr. Neurons were stained with Microtubule Associated Protein 2 (Map2). Scale bars\u00a0=\u00a050 \u03bcm. (b) Quantification of a using images from 10 different fields. Each dot represents a field. The bar indicates the mean +/-\u00a0SD. GFPpos neurons were defined as Map2posTomatoneg cells with GFP. **p<0.01, n\u00a0=\u00a010. (c) Representative images of sGFP-expressing astrocyte sender cells co-cultured with either control neuron receiver cells or \u03b1GFP neuron receiver cells at a 1:2 ratio for 24 hr. Neurons were stained with Map2. Scale bars\u00a0=\u00a050 \u03bcm. Higher magnification of the boxed areas are shown on the right. (d) Quantification of c using images from 10 different fields. Each dot represents a field. The bar indicates the mean +/-\u00a0SD. GFPpos neurons were defined as Map2pos cells with GFP. **p<0.01, n\u00a0=\u00a010.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/61080/elife-61080-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (a) Many different cell lines and primary cell types can serve as receiver cells. Receiver cells expressing \u03b1GFP were co-cultured with sGFP-expressing KPT sender cells for 24 hr. MFI of GFP on TomatonegPInegBFPpos receiver cells was assessed by FACS analysis and is shown as fold change relative to monocultured receiver cells. For lung epithelial cells and kidney epithelial cells MFI of GFP on TomatonegPInegBFPposEpCAMpos cells are shown as mean +/-\u00a0SD of triplicate cultures. SkMC: skeletal muscle cells. Astro: Astocytes. Hepato: hepatocytes. Spleno: splenocytes. (b) Many different cell lines and primary cell types can serve as sender cells. Sender cells expressing sGFP were co-cultured with \u03b1GFP 293 receiver cells for 24 hr. MFI of GFP on mCherrynegPInegBFPpos receiver cells was assessed by FACS and is shown as fold change relative to monocultured 293 receiver cells. Mean +/-\u00a0SD of triplicate cultures is shown. (c,d,e,f) Diverse primary mouse cells expressing sGFP can transfer GFP to \u03b1GFP 293 receiver cells. Different primary sender cells were first sorted based on their cell surface markers, then transduced with lentiviral vectors expressing sGFP before being co-cultured with \u03b1GFP 293 receiver cells for 24 hr. Percentage of mCherrynegPInegBFPposGFPpos receiver cells was assessed by flow cytometry. For each primary sender, approximate sGFPpos sender: \u03b1GFPpos receiver ratio is indicated: (c) Lung epithelial cells (1:180) (sorted EpCampos cells from dissociated adult lung); (d) Kidney epithelial cells (1:20) (sorted EpCampos cells from dissociated adult kidney); (e) Splenocyte (1:20); (f) Cardiomyocyte (1:5) (sorted Sirpapos cells from dissociated adult heart). Percent of labeled cells is indicated as mean +/-\u00a0SD of triplicate cultures.\n\n### G-baToN can be applied in a wide range of cell types\n\nTo assess the generalizability of the G-baToN system across cell types, we expressed \u03b1GFP in a panel of cell lines and primary cells. Each receiver cell type was able to uptake GFP from sGFP-expressing lung cancer sender cells upon cell-cell contact (Figure 5\u2014figure supplement 1A). Furthermore, diverse cancer cell lines and primary cell types expressing sGFP were able to transfer GFP to \u03b1GFP-expressing HEK293 receiver cells (Figure 5\u2014figure supplement 1B\u2013F). As anticipated, receiver cell labeling required sGFP-expression on the sender cell and \u03b1GFP expression on the receiver cells. Thus, G-baToN-based labeling extends beyond transformed cell types and can label diverse primary cell types in co-culture.\n\nTo further test the generalizability of the system and determine whether primary cells can serve as both sender and receiver cells, we assessed GFP transfer between interacting primary cells in the context of two well-established heterotypic cell-cell interactions: endothelial cells interacting with smooth muscle cells and astrocytes interacting with neurons. Co-culturing sGFP-expressing HUVEC and \u03b1GFP-expressing primary human umbilical vein smooth muscle cells (HUVSMC) resulted in efficient receiver smooth muscle cell labeling (Figure 3C,D). Furthermore, sGFP-expressing astrocytes were able to transfer GFP to \u03b1GFP-expressing cortical neurons (Figure 5C,D). Collectively, these results document the efficiency of G-baToN-based cell labeling across diverse cell types.\n\n### Multicolor labeling enables recording of reciprocal and higher-order interactions\n\nGiven the high efficiency with which sGFP labels receiver cells upon interaction with cognate sender cells, we tested whether other surface antigen/antibody pairs could lead to protein transfer and labeling. Due to the cross reactivity of \u03b1GFP with BFP, co-culture of surface BFP (sBFP) sender cells with \u03b1GFP receiver cells generated BFP-labeled receiver cells (Fridy et al., 2014;\u00a0Figure 6\u2014figure supplement 1A, B). Orthogonal systems consisting of surface-mCherry/\u03b1mCherry (LaM4)(Fridy et al., 2014) and surface-GCN4-GFP/\u03b1GCN4 (single-chain variable fragment, scFV)(Tanenbaum et al., 2014) also led to efficient and specific receiver cell labeling (Figure 6\u2014figure supplement 1C\u2013F). Thus, the G-baToN labeling system can be extended to additional antigen/antibody pairs.\n\nWe next integrated these orthogonal systems to enable reciprocal labeling and detection of\u00a0higher order multi-cellular interactions. Engineering cells with these orthogonal systems in an anti-parallel fashion should enable reciprocal labeling of both interacting cells. Co-culture of cells expressing sGFP and \u03b1mCherry with cells expressing smCherry and \u03b1GFP resulted in reciprocal labeling of both interacting cell types (Figure 6A,B, and Figure 6\u2014figure supplement 2A). This reciprocal labeling system may be particularly useful when the interaction elicits\u00a0changes in both interacting cell types. Using orthogonal ligand-receptor pairs, we also created an AND gate dual labeling strategy. Specifically, co-expression of \u03b1mCherry and \u03b1GFP on receiver cells enabled dual color labeling of receiver cells that had interacted with smCherry-expressing, sGFP-expressing, or both sender cell types (Figure 6C,D, and Figure 6\u2014figure supplement 2B). Analogously, we achieved dual-color labeling of receiver cells by leveraging the ability of \u03b1GFP to bind\u00a0to both sGFP and sBFP (Figure 6E,F). Thus, derivatives of the G-baToN system allow for additional degrees of resolution of complex cell-cell interactions.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/61080/elife-61080-fig6-v2.jpg)\n\n**Figure 6.:** (a) Diagram of the reciprocal\u00a0baToN system. Cell A expresses sGFP and \u03b1mCherry (tagged by intracellular BFP), Cell B expresses smCherry and \u03b1GFP (tagged by Myc-tag). (b) Representative FACS plots of cell A and cell B monocultures (left two panels) and after co-culture at a 5:1 ratio for 24 hr. Percent of labeled cells is indicated as mean +/-\u00a0SD of triplicate cultures. (c) Schematic of the AND gate-baToN system. sGFP and smCherry sender cells express either sGFP or mCherry. Dual receiver cells express both \u03b1GFP (LaG17, tagged by Myc-tag) and \u03b1mCherry (LaM4, tagged by intracellular BFP). (d) Representative FACS plots of dual receiver 293 cells cultured with the indicated 293 sender cells at 1:1 (for single sender cell) or 1:1:1 (for dual sender cells) ratios. Percent of labeled receiver cells (defined as BFPpos) after 24 hr of co-culture is indicated as mean +/-\u00a0SD of triplicate cultures. (e) Diagram of the BFP/GFP AND gate\u00a0baToN system. sBFP sender cells express intracellular Tomato and surface BFP, sGFP sender cells express intracellular Tomato and surface GFP. Common receiver cells expressed \u03b1GFP. (f) Representative FACS plots of common receiver 293 cells cultured with the indicated Tomatopos sender cells at 1:1 (for single sender cell) or 1:1:1 (for dual sender cells) ratios. Receiver cells were defined as TomatonegPIneg. Percent of labeled common receiver cells after 24 hr of co-culture is indicated as mean +/-\u00a0SD of triplicate cultures.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/61080/elife-61080-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (a) Schematic of the surface BFP (sBFP)-baToN system. Sender cells (marked by intracellular tdTomato) express sBFP and receiver cells express \u03b1GFP. (b) The cross reactivity of \u03b1GFP with BFP allows BFP to be transferred from sBFP sender cells to \u03b1GFP receiver cells. sBFP sender cells and \u03b1GFP receiver cells were co-cultured at 1:1 ratio for 24 hr. Receiver cells were defined as toTomatonegPIneg cells. BFP MFI of receiver cells is shown as mean +/-\u00a0SD of triplicate cultures. (c) Schematic of the surface mCherry (smCherry)-baToN system. Sender cells (marked by intracellular GFP) express smCherry and receiver cells express \u03b1mCherry (tagged by intracellular BFP) (d) The pairing between mCherry and \u03b1mCherry enable mCherry transfer from smCherry 293 sender cells to \u03b1mCherry-expressing 293 receiver cells. smCherry sender cells are not able to transfer mCherry to \u03b1GFP receiver cells. smCherry sender cells were co-cultured with \u03b1GFP or \u03b1mCherry receiver cells at a 1:1 ratio for 24 hr. Receiver cells were defined as GFPnegBFPpos cells. mCherry MFI of receiver cell is shown as mean +/-\u00a0SD of triplicate cultures. smCherry 293 sender cells are not able to transfer mCherry to \u03b1GFP 293 receiver cells. (e) Schematic of the surface GCN4 (sGCN4)-baToN system. Sender cells (marked by intracellular 2A-mCherry) express cell surface 4X GCN4 peptide fused with GFP. Receiver cells express a cell surface anti-GCN4 single-chain variable fragment (scFV; \u03b1GCN4, tagged by intracellular BFP). (f) The pairing between GCN4 and \u03b1GCN4 enables co-transfer of GFP from 4X sGCN4-GFP sender cells to \u03b1GCN4 receiver cells 24 hr after co-culture at a 1:1 ratio. Receiver cells were defined as mCherrynegPInegBFPpos cells. GFP MFI of receiver cells is shown as mean +/-\u00a0SD of triplicate cultures. sGFP sender cells are not able to transfer GFP to \u03b1GCN4 receiver cells.\n\n![Figure 6\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/61080/elife-61080-fig6-figsupp2-v2.jpg)\n\n**Figure 6\u2014figure supplement 2.:** (a) Representative image of reciprocal labeling of cell A and cell B co-cultured for 24 hr. Cells are outlined with a white dashed line. Cell A is BFP and GFP double positive and Cell B is mCherry positive. Touched cell A is BFP, GFP and mCherry triple positive and touched cell B is GFP and mCherry double positive (pointed out by white letter). Scale bar: 10 \u03bcm. (b) Representative image of dual receiver cells co-cultured with indicated sender cells. Cells are outlined with a white dashed line. Dual receiver cells are BFP positive and sender touched dual receiver cells are pointed out by white arrows. Scale bar: 10 \u03bcm.\n\n### Labeling with HaloTag-conjugated fluorophores enhances sensitivity and signal persistence\n\nWe next extended our labeling system further by generating sender cells expressing the HaloTag protein fused to sGFP (sHalo-GFP; Figure 7A;\u00a0Los et al., 2008). Covalent attachment of a synthetic fluorophore to sHalo-GFP enabled specific loading onto sender cells (Figure 7B). Co-culture of Alexa Fluor 660 (AF660)-loaded sHalo-GFP sender cells with \u03b1GFP receiver cells enabled co-transfer of both GFP and AF660 (Figure 7C). Compared to GFP, transfer of the chemical fluorophore using sHalo-GFP-based labeling of receiver cells led to increased signal-to-noise ratio and higher sensitivity (Figure 7C,D). Importantly, changing from a protein (GFP) to a chemical fluorophore also extended the half-life of labeling, thus enabling partially tunable persistence of labeling after touching (Figure 7E).\n\n![Figure 7.](https://cdn.elifesciences.org/articles/61080/elife-61080-fig7-v2.jpg)\n\n**Figure 7.:** (a) Diagram of HaloTag-baToN system. Sender cells (marked by intracellular 2A-mCherry) express surface HaloTag-GFP fusion which can be loaded with HaloTag ligands (in this example AF660). Receiver cells express \u03b1GFP (LaG17, tagged by intracellular BFP). (b) Labeling of HaloTag-expressing sender cells with AF660 fluorophore. Representative FACS plots of KP (lung adenocarcinoma) sender cells expressing either sGFP or sGFP-sHaloTag incubated with AF660-conjugated HaloTag ligand for 5 min on ice. AF660 specifically labeled sHaloTag-GFP sender cells but not sGFP sender cells. (c) Representative plot of GFP and AF660 intensity in \u03b1GFP 293 receiver cells co-cultured with HaloTag-GFP KP sender cells at a 1:1 ratio for 6 hr. Receiver cells were defined as mCherrynegPInegBFPpos cells. (d) AF660 transfer to \u03b1GFP 293 receiver cells is rapid after cell-cell interaction. AF660 MFI shift was detected after mixing sHalo-GFP sender cells and \u03b1GFP receiver cells and co-culture for 10 min. AF660 MFI shift was more dramatic than GFP. Receiver cells were defined as mCherrynegPInegBFPpos cells. (e) Slower AF660 quenching in touched receiver cells after removing sHalo-GFP sender cells. After 6 hr co-culture, GFP/AF660-positive receiver cells were purified via FACS. Analysis of GFP/AF660 MFI in purified receiver cells showed rapid GFP degradation but slower AF660 quenching. Receiver cells were defined as mCherrynegPInegBFPpos cells. (f) Diagram of dual color GCN4-HaloTag-baToN system. Sender cells (marked by intracellular 2A-mCherry) express surface 4XGCN4 associated with HaloTag, loaded with either AF488- or AF660- conjugated HaloTag ligand. Receiver cells express \u03b1GCN4 (tagged by intracellular BFP). (g) Representative FACS plots of \u03b1GCN4 receiver cells co-cultured with the indicated sender cells at 1:1 (for single sender cell) or 1:1:1 (for dual sender cells) ratios. Percent of labeled receiver cells (gated as mCherrynegPInegBFPpos) after 6 hr of co-culture is indicated as mean +/-\u00a0SD of triplicate cultures. (h) AF488/AF660 GCN4-HaloTag sender ratio in the co-culture directly proportional to AF488/AF660 intensity (MFI) of \u03b1GCN4 receiver after 6 hr of co-culture. Receiver cells were defined as mCherrynegPInegBFPpos cells.\n\nNext, we coupled the enhanced properties of chemical fluorophore-based labeling with the generalizability of the GCN4-baToN system to assemble a robust and versatile system to label receiver cells that have interacted with two or more different sender cell types (Figure 7F). Co-culturing \u03b1GCN4 receiver cells with AF488- and AF660-loaded sGCN4-Halo sender cells generated a spectrum of receiver cells with varying degrees of AF488 and AF660 labeling (Figure 7G). Importantly, the ratio of AF488 to AF660 transferred to the dually labeled receiver cells strongly correlated with the ratio of the two sGCN4-Halo sender populations within the co-culture, suggesting that this system can quantitively measure higher\u00a0order cell-cell interactions (Figure 7H).\n\n### The G-baToN system can function as a vehicle for molecular cargo\n\nGiven the high efficiency of protein transfer using the G-baToN system, we investigated whether cargo molecules could be co-transferred with GFP from sender cells to receiver cells. In addition to the co-transfer of Halo-Tag with sGFP, we also generated sender cells with surface expression of a GFP-tdTomato fusion protein (sGFP-Tom) and uncovered stoichiometric tdTomato and GFP transfer to \u03b1GFP receiver cells (Figure 8A,B). Beyond fluorescent labels, we tested whether other cargo could be transferred to receiver cells. We generated sGFP-PuroR-expressing sender cells and found that co-culture of sGFP-PuroR sender cells with \u03b1GFP receiver cells led to moderate puromycin resistance of touched receiver cells (Figure 8C,D). Finally, loading of sGCN4-HaloTag sender cells with HaloTag-conjugated, AF647-coupled ssDNA prior to co-culture with \u03b1GCN4 receiver cells revealed successful co-transfer of fluorescently labeled ssDNA to receiver cells (Figure 8E\u2013G). Thus, baToN systems enable contact-dependent transport of different macromolecules between cells.\n\n![Figure 8.](https://cdn.elifesciences.org/articles/61080/elife-61080-fig8-v2.jpg)\n\n**Figure 8.:** (a) Diagram of surface tdTomato-GFP (sGFP-Tom) co-transfer into touched receiver cells. Sender cells express sGFP-tdTomato and receiver cells express \u03b1GFP (tagged by intracellular BFP). (b) Representative FACS plots of \u03b1GFP 293 receiver cells cultured with the indicated sender cells at 1:1 ratio for 24 hr. Percent of GFP/Tomato dual-labeled receiver cells is indicated as mean +/-\u00a0SD of BFPpos cells from triplicate cultures. (c) Diagram of GFP-PuroR co-transfer system. Sender cells express surface GFP associated with PuroR (marked by intracellular tdTomato), receiver cells express \u03b1GFP (tagged by intracellular BFP). PuroR: Gcn5-related N-acetyltransferase. (d) Co-transfer of GFP-PuroR from sGFP-PuroR sender cells to \u03b1GFP 293 receiver cells confers modest puromycin resistance to receiver cells. sGFP or sGFP-PuroR sender cells were co-cultured with \u03b1GFP 293 receiver cells for 24 hr at a 4:1 ratio before treatment with different doses of puromycin for 48 hr. tdTomatonegPInegBFPpos cell numbers were counted via FACS. (e) Diagram of using GCN4-HaloTag sender to transfer ssDNA into \u03b1GCN4 receiver cells. Sender cells (marked by intracellular 2A-mCherry) express surface 4XGCN4 associated with a\u00a0HaloTag, loaded with 5\u2019 HaloTag ligand, 3\u2019 biotin dual conjugated ssDNA (21 nt), then stained with Avidin-AF647. Receiver cells express \u03b1GCN4 (tagged by intracellular BFP). (f) Loading of sender cells with ssDNA. Representative FACS plots of 293 sender cells expressing either sGCN4 or sGCN4-Halo were loaded with 5\u2019 HaloTag-ligand, 3\u2019 biotin dual-conjugated ssDNA (21nt), then stained with Avidin-AF647. AF647 specifically labeled loaded sGCN4-Halo sender cells but not sGCN4 sender cells. (g) Representative plot of AF647 intensity in \u03b1GCN4 293 receiver cells co-cultured with GCN4-HaloTag 293 sender cells at a 1:1 ratio for 6 hr. Receiver cells were defined as mCherrynegPInegBFPpos cells.\n\n## Discussion\n\nHere, we developed and optimized a novel cell-cell interaction reporter system and showed that this G-baToN system can record diverse cell-cell interactions in a specific and sensitive manner. Our data document the ability of diverse primary cell types to serve as both sender and receiver cells, suggesting that the G-baToN system is not only simple, sensitive and rapid, but also generalizable. Multicolor derivatives of G-baToN enable qualitative and quantitative analyses of higher\u00a0order interactions involving more than two cell types. Finally, the ability to co-transfer protein, DNA and chemical cargo suggests that this platform could be leveraged to manipulate target cell function.\n\nCancer cell-stromal cell interactions can be relatively stable (such as a\u00a0cancer cell interacts with other cancer cells or stromal cells) or transient (such as cancer cell-immune cell interactions and circulating tumor cell (CTC) interactions with endothelial cells during metastasis). The G-baToN system labels receiver cells through transfer of cell surface GFP which, due to its lability, ensures only transient labeling. This is similar to other cell-cell interaction labeling systems (Figure 1\u2014figure supplement 2). Transient labeling is sufficient to label stable cancer cell-stromal cell interactions and many other diverse cell-cell interactions when sender cells consistently express GFP (Figure 1F). This transient labeling should allow dynamic interactions to be detected, ensuring that the labeled receiver cells either are in contact with, or have recently interacted with sender cells.\n\nFurther optimization of the G-baToN systems could allow shorter or longer term labeling within different biological systems. For example, a G-baToN system where sGFP is inducible may allow physical interactions between cancer cells and stromal cells to be captured with even more precise temporal control. Conversely, we have shown that using chemical fluorophores significantly extends label persistence within receiver cells (Figure 7E), which can be used for longer term labeling of receiver cells that undergo dynamic interactions. Finally, due to the intrinsic attribute of G-baToN as a cell-cell contact dependent cargo transfer system (Figure 8), it should be possible to develop systems that allow for stable receiver cell labeling, perhaps through the transfer of site-specific recombinases (e.g. Cre or FLP) or programmable nucleases (e.g. Cas9) to genetically modify receiver cells\u00a0upon\u00a0contact. There will likely be some challenges when combing NLS-signal with sGFP. Nevertheless, additional G-baToN systems will greatly facilitate study of cell-cell interaction induced cell fate determination via contact-dependent lineage tracing.\n\nAs with other cell-cell interaction reporter systems, the G-baToN system relies on cell surface ligand-receptor recognition (Supplementary files 1\u20132). While LIPSTIC-based labeling is driven by endogenous ligand-receptor interactions, SynNotch and G-baToN systems rely on exogenous ligand-receptor pairs (Morsut et al., 2016; Pasqual et al., 2018). Consequently, these systems could stabilize normal cell-cell interactions. It is possible that tuning the affinity or expression level of the nanobody could minimize this effect. Inducible G-baToN systems may circumvent these issues, thus ensuring the recording of only bona\u00a0fide interactions. Given that G-baToN-based cell-cell interaction reporter systems can be used as a discovery approach, the consequences of these interactions can be validated by orthogonal methods in the absence of exogenous ligand-receptor pairs. A recent paper used secreted cell-permeable mCherry for proximity labeling of cells. This system circumvents the problem of abnormal cell-cell interactions caused by ligand-receptor binding; however, this system labels all cells in proximity and lacks true cell-cell interaction labeling (Ombrato et al., 2019).\n\nAn interesting advantage of the G-baToN system is its ability to mediate cargo transfer. We demonstrated the feasibility of transferring small molecules (HaloTag ligand, Figure 7), functional proteins (puromycin resistant protein, Figure 8C\u2013D), and non-protein macromolecules (ssDNA, Figure 8E\u2013G). Transferred cargo proteins may be able to modify receiver cell signaling or promote cell death. In the future, additional design features could allow cancer cell-stromal cell interaction dependent drug delivery, cell-cell interaction facilitated sgRNA transfer between interacting cells, and digital recording of cell-cell interaction via DNA-barcode transfer. Thus, we expect the G-baToN system to facilitate an even wider array of discoveries about cell-cell interactions in cancer, across other physiological or pathological processes, and within different model organisms.\n\nThe simplicity of this two-component system, combined with its generalizability across cell types, excellent foreground to background\u00a0ratio, and rapid labeling, should enable facile analysis of the dynamics of cellular interaction. These types of approaches have the potential to have a broad impact on our ability to understand the outputs of cell-cell interactions in cancer and various other biological systems.\n\n## Materials and methods\n\n### Cells, plasmids, and reagents\n\nHEK-293T, B16-F10, A549, H460, and HUVEC cells were originally purchased from ATCC; HUASMC were purchased from PromoCell (C-12500); H82 cells were kindly provided by Julien Sage (Stanford School of Medicine); KP (238N1) and KPT (2985T2) lung adenocarcinoma cells were generated previously from tumors in KrasLSL-G12D;\u00a0p53f/f and KrasLSL-G12D;\u00a0p53f/f;\u00a0R26LSL-Tom\u00a0mice. HEK-293T, 238N1, 2985T2 and B16-F10 cells were cultured in DMEM containing 10% FBS, 100 units/mL penicillin and 100 \u03bcg/mL streptomycin. A549, H460 and H82 cells were cultured in RPMI1640 media containing 10% FBS, 100 units/mL penicillin and 100 \u03bcg/mL streptomycin. HUVECs were cultured in Vascular Cell Basal Medium (ATCC, PCS-100\u2013030) with Endothelial Cell Growth Kit (ATCC, PCS-100\u2013041); HUASMC were cultured in Smooth Muscle Cell Growth Medium 2 (PromoCell, C-22062). All cell lines were confirmed to be mycoplasma negative (MycoAlert Detection Kit, Lonza).\n\nPitstop (ab120687) and Dyngo 4a (ab120689) were purchased from Abcam.\n\nAll plasmids used in this study are listed in Supplementary file 1 and key plasmids for multiple G-baToN systems will be available on Addgene.\n\n### Antibodies\n\nAnti-GFP antibody was purchased from MyBioSource (MBS560494), anti-RFP antibody was purchased from Rockland (600-401-379), anti-human mitochondria antibody was purchased from Abcam (ab92824), anti-GAPDH antibody was purchased from Cell Signaling Technology (5174S).\n\n### Lentiviral vector packaging\n\nLentiviral vectors were produced using polyethylenimine (PEI)-based transfection of 293 T cells with the plasmids indicated in Supplementary file 1, along with delta8.2 and VSV-G packaging plasmids in 150 mm cell culture plates. Sodium butyrate (Sigma Aldrich, B5887) was added 8 hr after transfection to achieve a final concentration of 20 mM. Medium was refreshed 24 hr after transfection. 20 mL of virus-containing supernatant was collected 36, 48, and 60 hr after transfection. The three collections were then pooled and concentrated by ultracentrifugation (25,000 rpm for 1.5 hr), resuspended overnight in 100 \u00b5L PBS, then frozen at \u221280\u00b0C.\n\n### Generation of stable cell lines\n\nParental cells were seeded at 50% confluency in a six-well plate the day before transduction (day 0). The cell culture medium was replaced with 2 mL fresh medium containing 8 \u00b5g/mL hexadimethrine bromide (Sigma Aldrich, H9268-5G), 20 \u00b5L ViralPlus Transduction Enhancer (Applied Biological Materials Inc, G698) and 40 \u00b5L concentrated lentivirus and cultured overnight (Day 1). The medium was then replaced with complete medium and cultured for another 24 hr (Day 2). Cells were transferred into a 100 mm cell culture dish with appropriate amounts of puromycin (Dose used: 293T: 2 \u00b5g/mL; 238N1: 3 \u00b5g/mL; 2985T2: 2 \u00b5g/mL) and selected for 48 hr (Day 3). After selection, FACS analysis was performed using fluorescent markers indicated in Supplementary file 2 for validation of selection efficiency.\n\n### Transwell co-culture assay\n\nThe Corning Transwell polycarbonate membrane cell culture inserts were purchased from Corning Inc (3422: CS, Corning, NY). sGFP sender cells were seeded in the upper chamber inserts of the transwell (1\u00a0\u00d7\u00a0105/insert). The inserts were then placed back into the plate pre-seeded with 1\u00a0\u00d7\u00a0105/well \u03b1GFP receiver cells and cultured in a humidified incubator at 37\u00b0C, with 5% CO2 for 24 hr. sGFP sender and \u03b1GFP receiver cells co-cultured in the same plate under the same conditions were used as control. After 24 hr, the upper chamber inserts were removed, cells in the lower chamber were trypsinized and analyzed by flow cytometry.\n\n### Live and fixed cell imaging\n\nFor live cell microscopy, 2\u00a0\u00d7\u00a0104 sGFP sender and 2\u00a0\u00d7\u00a0104 \u03b1GFP receiver cells were seeded into 35 mm FluoroDish Cell Culture Dishes (World Precision Instruments, FD35-100) and immediately imaged under a DeltaVision OMX (GE Healthcare) microscope with a 60x oil objective lens (Olympus) in a humidified chamber at 37\u00b0C with 5% CO2. One image was taken per minute for 3 hr. Images were collected with a cooled back-thinned EM-CCD camera (Evolve; Photometrics).\n\nFor fixed cell microscopy, sender and receiver cells were seeded at the ratios indicated in Supplementary file 2 with a total number of 1\u00a0\u00d7\u00a0105 cells onto Neuvitro-coated cover slips (Thermo Fisher Scientific, NC0301187) in a 12-well cell culture plate. 24 hr after co-culture, cells were fixed in 4% paraformaldehyde (PFA) PBS solution at room temperature for 10 min and washed with PBS and distilled water three times each, before mounting onto slides using 50% glycerol. Images were captured using a Leica DMI6000B inverted microscope with an 40x oil objective lens. For quantification, GFP-containing receiver cells were counted. Multiple coverslips were analyzed across independent experiments (n\u00a0=\u00a010).\n\n### Western blot\n\n5\u00a0\u00d7\u00a0106 sGFP sender and 5\u00a0\u00d7\u00a0106 \u03b1GFP receiver cells were co-cultured in a 100 mm cell culture dish for 24 hr. Cells were trypsinized, resuspended in FACS buffer containing propidium iodide (PI) (PBS, 2% FBS, 1 mM EDTA, and 1.5 \u00b5M PI). tdTomatonegPIneg cells were sorted and lysed in RIPA buffer (50 mM Tris-HCl (pH 7.4), 150 mM NaCl, 1% Nonidet P-40, and 0.1% SDS) and incubated at 4\u00b0C with continuous rotation for 30 min, followed by centrifugation at 12,000\u00a0\u00d7\u00a0rcf for 10 min. The supernatant was collected, and the protein concentration was determined by BCA assay (Thermo Fisher Scientific, 23250). Protein extracts (20\u201350 \u03bcg) were dissolved in 10% SDS-PAGE and transferred onto PVDF membranes. The membranes were blocked with 5% non-fat milk in TBS with 0.1% Tween 20 (TBST) at room temperature for 1 hr, followed by incubation with primary antibodies diluted in TBST (1:1000 for anti-GFP, anti-Tomato (RFP) and anti-human mitochondria (hu-Mito), 1:5000 for anti-GAPDH) at 4\u00b0C overnight. After three 10 min washes with TBST, the membranes were incubated with the appropriate secondary antibody conjugated to HRP diluted in TBST (1:10000) at room temperature for 1 hr. After three 10 min washes with TBST, Protein expression was quantified with enhanced chemiluminescence reagents (Fisher Scientific, PI80196).\n\n### GFP/AF660 stability\n\nTo assess the stability of GFP and AF660 in touched receiver cells, 1\u00a0\u00d7\u00a0107 sGFP or sHalo-GFP sender cells were co-cultured with 1\u00a0\u00d7\u00a0107 \u03b1GFP receiver cells in a 150 mm cell culture dish for 6 hr. Cells were then trypsinized and resuspended in FACS buffer containing propidium iodide. mCherrynegPInegBFPpos cells were sorted and 1\u00a0\u00d7\u00a0105 cells were re-plated in 12-well plate and cultured for 2, 4, 6, 8, 12, 24, and 48 hr in DMEM containing 10% FBS, 100 units/mL penicillin and 100 \u03bcg/mL streptomycin. GFP or AF660 intensity was assessed via FACS analysis of mCherrynegPInegBFPpos cells and shown as Mean +/-\u00a0SD of GFP/AF660 MFI in triplicate cultures.\n\n### Puromycin-resistant protein transfer assay\n\nTo validate puromycin-resistant protein (GCN5-Related N-Acetyltransferases, PuroR) function in sender cells, 5 \u00d7 106 HEK-293T cells were transfected with sGFP-PuroR-PDGFR, sGFP-PDGFR or sGFP-PDGFR-IRES-PuroR in 100 mm cell culture dishes for 12 hr before re-plating into a 12-well plate (1 \u00d7 105 cells/well). 24 hr after transfection, cells were treated with 1, 2, or 5 \u00b5g/mL puromycin for 24 hr. To count the number of viable receiver cells co-cultured with sGFP-PuroR sender cells, 2 \u00d7 105 \u03b1GFP receiver cells were co-cultured with 8 \u00d7 105 sGFP or sGFP-PuroR sender cells in a six-well plate. 24 hr after co-culture, cells were treated with 0, 1, and 3 \u00b5g/mL puromycin for 48 hr. Viable tdTomatonegPInegBFPpos receiver cells were counted via FACS.\n\n### Primary mouse cell isolation\n\nMouse (C57BL/6J, The Jackson Laboratory) lung, kidney, heart, hindlimb skeleton muscle, spleen, and liver tissue were dissected, cut into small pieces and digested in 5 mL tissue digest media (3.5 mL HBSS-Ca2+ free, 0.5 mL Trypsin-EDTA [0.25%], 5 mg Collagenase IV [Worthington], 25 U Dispase [Corning]) for 30 min in hybridization chamber at 37\u00b0C with rotation. Digestion is then neutralized by adding 5 mL ice cold Quench Solution (4.5 mL L15 media, 0.5 mL FBS, 94 \u00b5g DNase). Single-cell suspensions were generated by filtering through a 40 \u00b5M cell strainer, spinning down at 500 rcf for 5 min and washed with PBS twice.\n\nFor primary mouse lung epithelial cells, kidney epithelial cells and cardiomyocyte isolation and culture, the single-cell pellets were resuspended in 1 mL FACS buffer containing 1:300 dilution of anti-EpCam-AF467 (Biolegend, 118211) (for lung and kidney epithelial cell) or anti-Sirpa-AF467 (Biolegend, 144027) (for cardiomyocyte) antibody and incubated on ice for 20 min before FACS sorting. DAPInegEpCampos or DAPInegSirpapos cells were sorted and seeded onto a 100 mm culture dish precoated with 5 \u00b5g/cm2 Bovine Plasma Fibronectin (ScienCell, 8248).\n\nFor primary skeleton muscle cell, splenocyte and hepatocyte culture, the single cell pellets were resuspended in DMEM containing 20% FBS, 200 units/mL penicillin and 200 \u03bcg/mL streptomycin, amphotericin and cultured in 100 mm culture dish at 37\u00b0C for 1 hr to remove fibroblast cells. The supernatant containing primary skeletal muscle cells, splenocytes and hepatocytes was then transferred into a new 100 mm culture dish precoated with 5 \u00b5g/cm2 Bovine Plasma Fibronectin (ScienCell, 8248).\n\n### Conjugation of HaloTag ligand to oligonucleotides\n\nOligonucleotides to be conjugated with the HaloTag ligand were synthesized with a 5\u2019 C12-linked amine and a 3\u2019 biotin group (IDT). Oligonucleotides were initially ethanol-precipitated and subsequently resuspended to 1 mM in conjugation buffer (100 mM Na2HPO4 (Sigma-Aldrich S9763), 150 mM NaCl (Thermo Fisher Scientific S271), pH 8.5). Resuspended oligos were combined with an equal volume of the HaloTag ligand succinimidyl ester (O4) (Promega P6751) resuspended in N,N- dimethylformamide (Sigma-Aldrich D4551) with a 30-fold molar excess of the ligand. Conjugation reactions were conducted overnight at room temperature with constant agitation prior to final cleanup via ethanol precipitation.\n\n### Loading of HaloTag-expressing sender cells\n\nPrior to loading with HaloTag-conjugated elements, sender cells were washed once in cold PBS following detachment and subsequently resuspended in cold Cell Staining Buffer (BioLegend 42021). For loading of HaloTag-conjugated fluorophores, sender cells were stained at a density of 1.00E+07 cells/mL on ice for 5 min in the presence of either 1 \u00b5M HaloTag-Alexa Fluor 488 (Promega G1001) or 3.5 \u00b5M HaloTag-Alexa Fluor 660 (Promega G8471). Stained sender cells were then washed twice in Cell Staining Buffer (500 rcf for 5 min at 4\u00b0C) prior to resuspension in growth media in preparation for co-culture.\n\nFor loading with HaloTag-conjugated oligonucleotides, sender cells were initially resuspended and incubated with 100 \u00b5g/mL salmon sperm DNA (Thermo Fisher Scientific 15632011). Sender cells were then incubated with 3.5 \u00b5M HaloTag-conjugated oligonucleotides (5AmMC12/TCTAGGCGCCCGGAATTAGAT/3Bio) and subsequently washed once. Oligonucleotide-loaded sender cells were then stained with 5 \u00b5g/mL streptavidin-conjugated Alexa Fluor 647 (Thermo Fisher Scientific S32357) for 30 min on ice. The loaded, stained sender cells were then washed twice and resuspended in growth media in preparation for co-culture.\n\n### 3D-microfluidic cancer cell-endothelial cell co-culture\n\nThe master mold of microfluidic chips was fabricated using a 3D printer (Titan HD, Kudo3D Inc Dublin, CA). The surface of the molds was spray-coated with silicone mold release (CRC, cat. No.: 03300) and PDMS (poly-dimethyl siloxane, Sylgard 182, Dow Corning) was poured on it. After heat curing at 65\u00b0C for approximately 5 hr, the solidified PDMS replica was peeled off from the mold. Holes were made at both ends of each channel in the PDMS replica using a biopsy punch. The PDMS replica was then bonded to precleaned microscope glass slides (Fisher Scientific) through plasma treatment (Harrick Plasma PDC-32G, Ithaca, NY). Microfluidic chips were UV-treated overnight for sterilization before cell seeding.\n\nA basement membrane extract (BME) hydrogel (Cultrex reduced growth factor basement membrane matrix type R1, Trevigen, Cat #: 3433\u2013001 R1) was injected into the middle hydrogel channel of the chips placed on a cold pack and then transferred to rectangular 4-well cell culture plates (Thermo Scientific, Cat #: 267061) followed by incubation at 37\u00b0C\u00a0in a cell culture incubator for 30 min for gelation. After gelation, 10 \u00b5L of human umbilical vein endothelial cells\u00a0(HUVECs) resuspended at the density of\u00a0~1\u00a0\u00d7\u00a0106 cells/mL was injected to the blood channel of the chips and endothelial cell growth medium was added to the other side channel. After incubation for 3 hr for cells to adhere, medium in both side channels was replaced with fresh medium. The next day, samples were placed on a rocking see-saw shaker (OrganoFlow L, Mimetas) that generates a pulsatile bidirectional flow to mimic the dynamic native environment and cultured for 4 more days to form a complete endothelium. Cell culture medium was changed every other day. Then, medium in the blood channel of the chips was removed and 10 \u00b5L of sGFP-expressing lung adenocarcinoma cell at the density of\u00a0~1\u00a0\u00d7\u00a0105 cells/mL was injected and cultured for 24 hr before imaging. Images were captured using an EVOS fl auto imaging system (Life Technologies).\n\n### Primary neuron and astrocyte cultures\n\nPrimary cortical neurons were dissociated from mouse (C57BL/6J, The Jackson Laboratory) E16.5 embryonic cortices into single-cell suspensions with a papain dissociation system (Worthington Biochemical Corporation). Tissue culture plates were coated with poly-L-lysine (0.1% w/v) before seeding cells. Neurons were grown in Neurobasal media (Gibco) supplemented with B-27 serum-free supplement (Gibco), GlutaMAX (Gibco), and penicillin-streptomycin (Gibco) in a humidified incubator at 37\u00b0C, with 5% CO2. Half media changes were performed every 4\u20135 days. Primary astrocytes were dissociated from P0-P1 mouse cortices using the same papain dissociation methods as neurons, except the single-cell suspensions were then plated onto tissue culture plates without poly-L-lysine in DMEM with 10% FBS and penicillin-streptomycin. Primary astrocyte cultures were passaged using Accutase (Stemcell Technologies).\n\n### Primary human T cell cultures\n\nBlood from healthy donors collected in leukoreduction system (LRS) chambers was separated by Ficoll-Paque density gradient to obtain peripheral blood mononuclear cells (PBMCs). CD4pos and CD8pos T cells were isolated by negative selection using EasySep Human CD4+ T Cell Isolation Kit and EasySep Human CD8+ T Cell Isolation Kit (STEMCELL Technologies), respectively, according to the manufacturer\u2019s instructions. T cells were cultured for 3 days with CD3/CD28 Dynabeads (ThermoFisher Scientific) with 40 IU/mL IL-2 and spinoculated with lentivirus for 2 hr at 400 rcf in the presence of 8 \u00b5g/mL polybrene. T cells were expanded following transduction for two days in the presence of CD3/CD28 Dynabeads and 300 IU/mL IL-2 prior to use in assays. Transduced or untransduced CD4pos or CD8 pos T cells were co-cultured for 24 hr together with A549 cells. Following co-culture, cells were harvested, stained with antibodies against CD45, CD4, or CD8 (BioLegend) and analyzed on a LSRFortessa flow cytometer (BD Biosciences). Each condition was run in triplicate, and two independent experiments were conducted using T cells from different donors. For microscopy, A549 cells were co-cultured with CD4 pos T cells in glass-bottom plates (MatTek Corporation) and imaged on an LSM 700 confocal microscope (Zeiss).\n\n### Statistical analysis\n\nSample or experiment sizes were estimated based on similar experiments previously performed in our laboratory, as well as in the literature. For the experiments in which two or more cell types are co-cultured, we used at least three samples per group for FACS analysis, at least 10 images were taken per group for image quantification. For the experiments in which cancer cells and T cells were transplanted into mice, we used at least three mice per group. In all the experiments reported in this study, no data points were excluded. No randomization was used in this study. There was no blinding method used to assign individuals to experimental groups.\n\nEach experiment was repeated at least three times. All values are presented as mean\u00a0\u00b1\u00a0SEM, with individual data points shown in the figure. Comparisons of parameters between two groups were made by two-tailed Student\u2019s t-tests. The differences among several groups was evaluated by one-way ANOVA with Tukey-Kramer post hoc evaluation. p-Values less than 0.05 and 0.01 were considered significant (*) or very significant (**), respectively.\n",
+      "created_at": "2025-12-02T20:26:58.470429Z"
+    },
+    {
+      "id": "883652da-b378-4236-9b7a-dcde59fd98d7",
+      "submission_id": "d0a31af0-2d9d-4d4c-a768-2feaf360691a",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Matthew G Vander Heiden, Massachusetts Institute of Technology United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.61080.sa1](https://doi.org/10.7554/eLife.61080.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nThis manuscript describes a reporter system for studying cell-cell interactions. Multiple specific cell-cell interactions are examined to provide proof of principle for reporter use, including multi-color systems for reporting on complex interactions between 3 or more cell types. One could envision this system being used for a wide variety of downstream applications, in both biological and bioengineering studies.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"G-baToN: a versatile reporter system for cancer cell-stromal cell interactions\" for consideration by eLife. Your article has been reviewed by Richard White as the Senior Editor, a Reviewing Editor, and three reviewers. The following individuals involved in review of your submission have agreed to reveal their identity: Reuben Shaw (Reviewer #1); Francisco Sanchez-Rivera (Reviewer #2); K\u0131van\u00e7 Birsoy (Reviewer #3).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nWe would like to draw your attention to changes in our revision policy that we have made in response to COVID-19 (https://elifesciences.org/articles/57162). Specifically, we are asking editors to accept without delay manuscripts, like yours, that they judge can stand as eLife papers without additional data, even if they feel that they would make the manuscript stronger. Thus the revisions requested below only address clarity and presentation.\n\nSummary:\n\nThis manuscript describes a reporter system for studying cell-cell interactions. Multiple specific cell-cell interactions are examined to provide proof of principle for reporter use, including multi-color systems for reporting on complex interactions between 3 or more cell types. One could envision this system being used for a wide variety of downstream applications, in both biological and bioengineering studies.\n\nRevisions:\n\nThe reviewers make some experimental suggestions, which could be included at your discretion, but are not required. Please revise the manuscript at a minimum to address the points listed next. Full reviewer comments are then provided for your information only and do not require a full response as you prepare your revised manuscript.\n\n1. Please provide any additional detail on the 1-6 hour timepoints in Figure 1f. Is there a burst of transfer around 2 hour or any specific average of time after first contact? (see comment from Reviewer 1).\n\n2. Please comment on whether it might be possible to transfer the Cre-recombinase to a different cell population to turn on a floxed reporter in a neighboring cell. Along these lines, also please comment on the point from Reviewer 2 regarding only a minor population of cells being active as receivers. Can you comment whether this is because the system inefficient, or short lived, or the transferred proteins are not stable?\n\n3. Comment on single copy (low MOI) versus multiple copy (high MOI) lentiviral transduction used for the system as Reviewer 2 points out this is relevant for future applications. Also comment on leakiness of the system, and issues are half-life of fluorophores to highlight additional potential limitations of this system.\n\n4. Consider mentioning in the abstract that the system could be used for studying neuron-astrocytes interactions to broaden impact.\n\n5. Please include plasmid sequences in the supplementary material.\n\n6. Reviewer 3 commented the resistance to puromycin in Figure 8 was weak, please comment on this in the revised manuscript.\n\nReviewer #1:\n\nIn this interesting technology development manuscript from the Winslow lab, the authors have created a very adaptable and flexible reporter system for studying cell-cell interactions. The authors have extensively controlled for each feature of the reporter and the data is quantitative and compelling throughout. Multiple specific kinds of cell-cell interactions are examined in this tour-de-force of proof of principle examples. Cancer cell \u2013 neuron, cancer cell \u2013 T cells, cancer cell- endothelial cells, and even neurons \u2013 astrocytes are examined here. Multi-color systems for reporting on complex interactions between 3 or more cell types are examined, which speaks to the more likely functionality one would observe in vivo. Beyond the initial nanobody design, the authors end the study with HaloTag baton systems and very interesting data reporting the co-transfer of cargo molecules into target cells, including Tomato, PuroR, and ssDNA. One could envision this system being used for a wide variety of downstream applications, in a wide variety of biological and bioengineering fields. It is that last point which makes this manuscript a compelling one to publish in eLife, as it will be of broad interest to several fields.\n\nReviewer #2:\n\nI) Relevance\n\nCell-cell interactions play critical roles across all of biology, including during normal organismal development and disease initiation, progression, and resolution. Achieving a comprehensive mechanistic understanding of how specific cell-cell interactions are established and disentangling the biological processes that are regulated by such cell-cell interactions ultimately requires that one is able to (1) track and quantitatively measure the initiation of specific cell-cell interactions; (2) follow the fate of interacting cells over time; (3) isolate and characterize interacting cells; (4) probe interacting cells; and (5) ideally be able to do all of the above in a spatiotemporal manner. Progress in this area has been limited by the lack of faithful experimental tools that allow for rapid, specific, and ideally long-lived labeling of cell-cell interactions, particularly in the in vivo setting. Recent advances in the areas of synthetic biology (e.g. synNotch receptors; PMID: 26830878 and 27693353) and chemical biology (e.g. Sortase-based LIPSTIC labeling approaches; PMID: 29342141) have opened the door for mechanistically probing cell-cell interactions in a reasonably specific manner. More recently, a system that employed secreted fluorescent proteins (sLP-mCherry; PMID: 31462798) was developed to label neighboring groups of cells in specific niches, some of which were shown to interact directly. All of these systems have drawbacks, including the requirement for multiple complementary components expressed in each of the interacting cells and potential unspecific labeling of artificial cell-cell interactions due to inappropriate expression or activity or some of the modular components that form these systems.\n\nII) General concept and approach\n\nIn this manuscript, Tang et al., present G-baToN, a novel cell-cell interaction platform that relies on direct cell to cell transfer of a fluorescent protein by a 'Sender' cell, which leads to rapid (but temporary) labeling of a 'Receiver' cell. G-baToN is largely based on the synNotch concept, whereby a 'Sender' cell expresses a fluorescent reporter (Surface GFP, or sGFP) in the surface and a 'Receiver' cell expresses a synthetic Notch-based nanobody that recognizes sGFP, which in turn leads to activation of the Notch pathway, intracellular cleavage and release of a transcription factor, and induction of a synthetic gene reporter. However, instead of relying on a synthetic gene reporter in 'Receiver' cells, G-baToN exploits the concept of ligand internalization, whereby a nanobody-sGFP complex is internalized into cells, leading to sGFP-based labeling of the 'Receiving' cell. Thus, G-baToN does not need an additional reporter component in 'Receiver' cells; it only requires that they express the sGFP nanobody in their surface. Furthermore, the sGFP nanobody does not need to be engineered as a synNotch receptor (i.e. it does not need to be fused to a cleavable Notch-based transcription factor). Therefore, G-baToN is a simpler and more versatile system relative to the original synNotch system and also to the Sortase-based LIPSTIC system (which relies on specific receptor-ligand pairs and in exogenous substrates for cell-cell interaction labeling).\n\nIII) Novelty and comparison to other similar methods\n\nAs mentioned above, G-baToN is largely based on the synNotch concept, relying on sGFP and anti-sGFP nanobody expression in the surface of 'Sender' and 'Receiver' cells, respectively. Therefore, G-baToN is not novel from that point of view, even though it employs carefully optimized engineered versions of these components (see Figure 2). Where G-baToN really shines is in its simplicity relative to both synNotch and LIPSTIC systems. Although G-baToN still relies on expression of specific synthetic components in the surface of 'Sender' and 'Receiver' cells, it dramatically simplifies the identification and isolation of 'Receiver' cells since (1) no reporter gene needs to be turned on in 'Receiver' cells; (2) no exogenous substrate needs to be provided in order for cell labeling to take place; and (3) due to being a 2-component system, it is less prone to 'system breakdown' (e.g. synNotch systems can easily break via spontaneous mutations in the internal cleavage sites, in the transcription factor that turns on the reporter gene in 'Receiver' cells, or in the promoter or coding sequence of the reporter gene itself). Furthermore, due to its simplicity and modularity, G-baToN can be seamlessly expanded to allow for isolation of both 'Sender' and 'Receiver' interacting cells by essentially endowing 'Receiver' cells with 'Sender' capability and vice versa (see Figure 6). Specifically, one can simply engineer 'Sender' cells to express (1) a specific antibody in the surface targeting a surface fluorescent protein encoded in the 'Receiver' cell and (2) a different fluorescent protein expressed in its own cell surface. On the other hand, 'Receiver' cells can be engineered to express (1) a surface antibody targeting the 'Sender' surface fluorescent protein and (2) a fluorescent protein expressed in its cell surface recognized by the 'Sender' surface antibody (see. Figure 6). Furthermore, the authors show that one can append synthetic tags and fluorophores to the fluorescent proteins, which can increase both the half-life and the dynamic range of cell-cell interaction labeling, and that the inherent modularity and combinatorial nature of the system allows for further detection and isolation of higher-order cell-cell interactions (e.g. 'Receiver' cells that have interacted with 2 independent 'Sender' cells) (see Figure 7). Collectively, this allows for efficient bidirectional reporting and isolation of both simple and higher-order cell-cell interactions, which will undoubtedly open the door for more comprehensive molecular and cellular characterization of each cell within an interaction unit. Lastly, the authors show that the modular nature of G-baToN can allow for interaction-dependent transfer of various types of molecular cargoes (antibiotic resistance cassettes, ssDNA molecules), albeit with an apparent variable efficiency. Thus, G-baToN is indeed a much, much more versatile system when compared to synNotch and LIPSTIC.\n\nIn a very similar vein, a recent study in Nature described a novel system based on local secretion of fluorescent proteins (in this case a secreted lipid permeable mCherry, called sLP-mCherry; PMID: 31462798) that also allows for labeling of cell-cell interactions, albeit with lower specificity than that achieved by synNotch, LIPSTIC, and G-baToN. To my surprise, there was no mention of this study, which should definitely be referenced and embedded within the discussion and benchmarking of G-baToN (see Figure 1\u2014figure supplement 2), as it is of direct relevance to this and future approaches, particularly in the context of in vivo cancer studies. Furthermore, this would allow readers to think more creatively about how to potentially integrate these complementary systems to further advance the concepts behind mapping cell-cell interactions.\n\nIV) Specific comments\n\nI think this is overall a very good study that warrants publication as a Tools and Resources Article in eLife. Even though it builds upon existing concepts and approaches (e.g. synNotch), it does so in an intelligent and systematic manner, leading to a significantly optimized and highly versatile platform that can be deployed across a variety of scenarios to detect, isolate, and characterize cell-cell interactions, as well as leveraged for perturbing interacting cells via cell-to-cell cargo transfer. Due to its versatility and modularity, the system could easily be combined with inducible-reversible technologies (e.g. Tet-inducible promoters, Cre/loxP, Flp/Frt, degrons, etc.) to allow for exquisite spatiotemporal control of cell-cell interaction labeling, isolation, and perturbation.\n\nReviewer #3:\n\nIn this manuscript, the authors describe a new reporter system that exploits a cell surface antigen and a nanobody interaction enabling directional labeling between diverse cell types. The authors present sufficient evidence for the utility of the technique (different cell types, different cargos, wide range of fluorophores). This is a rigorous study that deserves to be published in eLife. While there have been previous attempts to provide solutions for studying cell-cell interaction (The authors mentioned some of these tools), I believe this will be a useful tool as well. Time will tell the practical aspect of this and previous methods.\n\n- One aspect that is lacking in the paper is whether cell-cell interaction through their method identifies functional differences between cells that interact vs others that do not. It is not really clear whether cells being close to each other, if labeled, is sufficient to cause any functional change in both cells. Are these interactions productive or are they just randomly choosing cells proximal to each other? I understand that the manuscript does not focus on a particular phenotype, however, even a simple RNA-seq of sorted populations would answer this question.\n\n- Given the half-life of the fluorophores, one should expect a decrease in labeling over time, which may lead to missing many interacting cells. It would be a great if the authors discuss potential limitations of using cargo as a way to label cells.\n",
+      "created_at": "2025-12-02T20:26:58.470429Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T20:26:58.470429Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T20:26:58.470429Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "5ae22fbb-9406-45dd-b66f-f96bef6de6b6",
+      "content_id": "8d5c2a89-5193-48dc-a67b-aca95a42e582",
+      "claim_id": "C1",
+      "claim": "G-baToN relies upon nanobody-directed fluorescent protein transfer to enable sensitive and specific labeling of cells after cell-cell interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we describe GFP-based Touching Nexus (G-baToN) which relies upon nanobody-directed fluorescent protein transfer to enable sensitive and specific labeling of cells after cell-cell interactions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract directly states this as a description of the system's mechanism.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:26:58.470429Z"
+    },
+    {
+      "id": "3b869f48-a07e-4d90-824b-e3fef5e1fdcc",
+      "content_id": "8d5c2a89-5193-48dc-a67b-aca95a42e582",
+      "claim_id": "C2",
+      "claim": "G-baToN is a generalizable system that enables physical contact-based labeling between various human and mouse cell types.",
+      "claim_type": "EXPLICIT",
+      "source": "G-baToN is a generalizable system that enables physical contact-based labeling between various human and mouse cell types, including endothelial cell-pericyte, neuron-astrocyte, and diverse cancer-stromal cell pairs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract explicitly states the system's generalizability across multiple cell types with specific examples.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:26:58.470429Z"
+    },
+    {
+      "id": "bb22d42c-1c74-4088-b0df-eeb6c5e7ccee",
+      "content_id": "8d5c2a89-5193-48dc-a67b-aca95a42e582",
+      "claim_id": "C3",
+      "claim": "Cell-cell interactions contribute to almost all physiological and pathological states.",
+      "claim_type": "EXPLICIT",
+      "source": "Cell-cell interactions contribute to almost all physiological and pathological states (Deb, 2014; Komohara and Takeya, 2017; Konry et al., 2016; Zhang and Liu, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by multiple citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:26:58.470429Z"
+    },
+    {
+      "id": "1504c641-87d2-43b0-8eed-546e92ee1900",
+      "content_id": "8d5c2a89-5193-48dc-a67b-aca95a42e582",
+      "claim_id": "C4",
+      "claim": "The extent to which cell-cell interactions influence cell state, drive heterogeneity, and enable proper tissue function remains poorly understood.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite the explosion of interest in uncovering and understanding cellular heterogeneity in tissues and across disease states, the extent to which cell-cell interactions influence cell state, drive heterogeneity, and enable proper tissue function remains poorly understood (Konry et al., 2016; Tsioris et al., 2014; Zhang and Liu, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations indicating a gap in current knowledge.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:26:58.470429Z"
+    },
+    {
+      "id": "9eaac6f8-7a7e-47e6-920e-4dc6b6c09012",
+      "content_id": "8d5c2a89-5193-48dc-a67b-aca95a42e582",
+      "claim_id": "C5",
+      "claim": "Interactions between cancer cells and stromal cells play central roles in cancer initiation, progression, and metastasis.",
+      "claim_type": "EXPLICIT",
+      "source": "Interactions between cancer cells and stromal cells play central roles in cancer initiation, progression, and metastasis (Kitadai, 2010; Orimo and Weinberg, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:26:58.470429Z"
+    },
+    {
+      "id": "90720846-6dfa-4971-9506-b510275f4c1b",
+      "content_id": "8d5c2a89-5193-48dc-a67b-aca95a42e582",
+      "claim_id": "C6",
+      "claim": "The impact of direct physical interactions between cancer cells and stromal cells remains understudied.",
+      "claim_type": "EXPLICIT",
+      "source": "While secreted factors relaying pro- or anti-tumorigenic signals have been extensively investigated, the impact of direct physical interactions between cancer cells and stromal cells remains understudied (Bendas and Borsig, 2012; Dittmer and Leyh, 2014; Nagarsheth et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations and contrasts with the state of research on secreted factors.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:26:58.470429Z"
+    },
+    {
+      "id": "e3a0eefb-dca4-4d6a-aa20-cf1a2e4cb6fa",
+      "content_id": "8d5c2a89-5193-48dc-a67b-aca95a42e582",
+      "claim_id": "C7",
+      "claim": "Endogenous cell-cell interactions can result in transfer of surface proteins between cells through trans-endocytosis or trogocytosis.",
+      "claim_type": "EXPLICIT",
+      "source": "Endogenous cell-cell interactions can result in transfer of surface proteins between cells, mainly through either trans-endocytosis or trogocytosis (Langridge and Struhl, 2017; Li et al., 2019; Ovcinnikovs et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by multiple citations to prior research.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:26:58.470429Z"
+    },
+    {
+      "id": "f545dd85-fb83-4252-b6a1-7ecd29603d41",
+      "content_id": "8d5c2a89-5193-48dc-a67b-aca95a42e582",
+      "claim_id": "C8",
+      "claim": "Co-culturing sGFP sender cells with \u03b1GFP receiver cells led to GFP transfer and labeling of the receiver cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Co-culturing sGFP sender cells with \u03b1GFP receiver cells led to GFP transfer and labeling of the receiver cells (Figure 1A,B and Figure 1\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in the referenced figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:26:58.470429Z"
+    },
+    {
+      "id": "d5ab8325-52fa-4386-8f88-2065ad55e70d",
+      "content_id": "8d5c2a89-5193-48dc-a67b-aca95a42e582",
+      "claim_id": "C9",
+      "claim": "Receiver cell labeling required direct cell-cell contact.",
+      "claim_type": "EXPLICIT",
+      "source": "Receiver cell labeling required direct cell-cell contact, active membrane dynamics, and pairing between sGFP and its cognate \u03b1GFP receptor (Figure 1C,D and Figure 1\u2014figure supplement 1B, C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data including transwell experiments shown in the referenced figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:26:58.470429Z"
+    },
+    {
+      "id": "3099c298-5b8b-4b4d-83c6-b8312782900a",
+      "content_id": "8d5c2a89-5193-48dc-a67b-aca95a42e582",
+      "claim_id": "C10",
+      "claim": "sGFP transfer was accompanied by reduced GFP on the sender cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, sGFP transfer was accompanied by reduced GFP on the sender cells, downregulation of \u03b1GFP from the surface of the receiver cells and was partially blocked by chemical inhibitors of endocytosis \u2013 all consistent with active GFP transfer and internalization into receiver cells (Figure 1\u2014figure supplement 1D\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in the referenced figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:26:58.470429Z"
+    },
+    {
+      "id": "88882dc2-65b2-4c76-b29b-0f4918c9da02",
+      "content_id": "8d5c2a89-5193-48dc-a67b-aca95a42e582",
+      "claim_id": "C11",
+      "claim": "GFP transfer could be detected within five minutes of co-culture.",
+      "claim_type": "EXPLICIT",
+      "source": "GFP transfer could be detected within five minutes of co-culture and was half-maximal after 6 hr (Figure 1F and Figure 1\u2014figure supplement 1G-H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by time-course experimental data shown in the referenced figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:26:58.470429Z"
+    },
+    {
+      "id": "4ede80c7-3c7d-4699-9141-41624bacd00c",
+      "content_id": "8d5c2a89-5193-48dc-a67b-aca95a42e582",
+      "claim_id": "C12",
+      "claim": "GFP fluorescence in receiver cells decayed rapidly after isolation of touched receiver cells from sender cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, GFP fluorescence in receiver cells decayed rapidly after isolation of touched receiver cells from sender cells, thus documenting the transient labeling of receiver cells (Figure 1\u2014figure supplement 1I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data showing fluorescence decay over time.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:26:58.470429Z"
+    },
+    {
+      "id": "b622c3f6-0351-4076-afda-7e56ba92f700",
+      "content_id": "8d5c2a89-5193-48dc-a67b-aca95a42e582",
+      "claim_id": "C13",
+      "claim": "The fraction of labeled receiver cells was proportional to the number of sender cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The fraction of labeled receiver cells was proportional to the number of sender cells, and even the addition of very few sender cells (representing less than one sender cell to 105 receiver cells) was sufficient to label rare receiver cells (Figure 1G,H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data showing dose-response relationship.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:26:58.470429Z"
+    },
+    {
+      "id": "2f367371-e3ca-4c6e-aa87-fa3e6806808c",
+      "content_id": "8d5c2a89-5193-48dc-a67b-aca95a42e582",
+      "claim_id": "C14",
+      "claim": "The VEGFR2 transmembrane domain enabled the highest transfer efficiency, resulting in about a threefold increase relative to the original design.",
+      "claim_type": "EXPLICIT",
+      "source": "The VEGFR2 transmembrane domain enabled the highest transfer efficiency, resulting in about a threefold increase relative to the original design (Figure 2A\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by comparative experimental data shown in the referenced figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:26:58.470429Z"
+    },
+    {
+      "id": "5a012117-786d-42bd-ba82-594a424a8c24",
+      "content_id": "8d5c2a89-5193-48dc-a67b-aca95a42e582",
+      "claim_id": "C15",
+      "claim": "The efficiency of GFP transfer correlated with GFP affinity.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, the efficiency of GFP transfer correlated with GFP affinity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion drawn from the nanobody affinity experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:26:58.470429Z"
+    },
+    {
+      "id": "291554ce-18f8-41d5-aa3c-f3337b64a38c",
+      "content_id": "8d5c2a89-5193-48dc-a67b-aca95a42e582",
+      "claim_id": "C16",
+      "claim": "The PDGFR transmembrane domain minimized bidirectional transfer.",
+      "claim_type": "EXPLICIT",
+      "source": "The PDGFR transmembrane domain minimized bidirectional transfer and thus was the optimal design for minimizing retrograde transfer which could generate false-positive signals (Figure 2G\u2013I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data comparing different transmembrane domains.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:26:58.470429Z"
+    },
+    {
+      "id": "2604271c-a946-481e-9ea3-ff27c231f11b",
+      "content_id": "8d5c2a89-5193-48dc-a67b-aca95a42e582",
+      "claim_id": "C17",
+      "claim": "Co-culturing sGFP-expressing lung adenocarcinoma cells with primary human umbilical vein endothelial cells in a 2D format led to robust endothelial cell labeling.",
+      "claim_type": "EXPLICIT",
+      "source": "Co-culturing sGFP-expressing lung adenocarcinoma cells with primary human umbilical vein endothelial cells (HUVECs) in a 2D format led to robust endothelial cell labeling (Figure 3A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in the referenced figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:26:58.470429Z"
+    },
+    {
+      "id": "d4fa7dff-5498-42e1-a572-cc1a38a4ae37",
+      "content_id": "8d5c2a89-5193-48dc-a67b-aca95a42e582",
+      "claim_id": "C18",
+      "claim": "Within 3D microfluidic chips, pre-seeded HUVECs expressing \u03b1GFP were robustly labeled following co-incubation with sGFP-expressing lung adenocarcinoma cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, within 3D microfluidic chips, pre-seeded HUVECs expressing \u03b1GFP were robustly labeled following co-incubation with sGFP-expressing lung adenocarcinoma cells (Figure 3E\u2013G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data from 3D culture systems.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:26:58.470429Z"
+    },
+    {
+      "id": "d1779d08-d837-46f0-8fb8-a22e33f12b56",
+      "content_id": "8d5c2a89-5193-48dc-a67b-aca95a42e582",
+      "claim_id": "C19",
+      "claim": "\u03b1GFP-expressing CD4 and CD8 T cells that interacted with sGFP-expressing lung cancer cells in culture were specifically labeled.",
+      "claim_type": "EXPLICIT",
+      "source": "\u03b1GFP-expressing CD4 and CD8 T cells that interacted with sGFP-expressing lung cancer cells in culture were specifically labeled (Figure 4A\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data from T cell co-culture experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:26:58.470429Z"
+    },
+    {
+      "id": "46d5fa4d-292e-44ef-967b-9a2b64bd7707",
+      "content_id": "8d5c2a89-5193-48dc-a67b-aca95a42e582",
+      "claim_id": "C20",
+      "claim": "Over 60% of \u03b1GFP-expressing CD4 T cells within the tumor-bearing lungs were labeled with GFP 24 hr after T cell transplantation.",
+      "claim_type": "EXPLICIT",
+      "source": "24 hr after T cell transplantation, over 60% of \u03b1GFP-expressing CD4 T cells within the tumor-bearing lungs were labeled with GFP, while control CD4 T cells remained unlabeled (Figure 4D,E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by in vivo experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:26:58.470429Z"
+    },
+    {
+      "id": "e43bd388-a6bd-4e0c-8603-39bacab1e662",
+      "content_id": "8d5c2a89-5193-48dc-a67b-aca95a42e582",
+      "claim_id": "C21",
+      "claim": "Physical contact between cancer cells and neuronal axons led to punctate-like GFP granule transport into receiver neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Physical contact between cancer cells and neuronal axons led to punctate-like GFP granule transport into receiver neurons (Figure 5A\u2013B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by imaging data from neuron co-culture experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:26:58.470429Z"
+    },
+    {
+      "id": "87232012-a980-4608-9751-f2c30d11b39d",
+      "content_id": "8d5c2a89-5193-48dc-a67b-aca95a42e582",
+      "claim_id": "C22",
+      "claim": "Each receiver cell type was able to uptake GFP from sGFP-expressing lung cancer sender cells upon cell-cell contact.",
+      "claim_type": "EXPLICIT",
+      "source": "Each receiver cell type was able to uptake GFP from sGFP-expressing lung cancer sender cells upon cell-cell contact (Figure 5\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data testing multiple cell types.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:26:58.470429Z"
+    },
+    {
+      "id": "06f8a07b-b352-42b3-b640-0062a24ba3c4",
+      "content_id": "8d5c2a89-5193-48dc-a67b-aca95a42e582",
+      "claim_id": "C23",
+      "claim": "Diverse cancer cell lines and primary cell types expressing sGFP were able to transfer GFP to \u03b1GFP-expressing HEK293 receiver cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, diverse cancer cell lines and primary cell types expressing sGFP were able to transfer GFP to \u03b1GFP-expressing HEK293 receiver cells (Figure 5\u2014figure supplement 1B\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data testing multiple sender cell types.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:26:58.470429Z"
+    },
+    {
+      "id": "41904e76-04e9-4bce-a6c1-3cad6c7cfc82",
+      "content_id": "8d5c2a89-5193-48dc-a67b-aca95a42e582",
+      "claim_id": "C24",
+      "claim": "Co-culturing sGFP-expressing HUVEC and \u03b1GFP-expressing primary human umbilical vein smooth muscle cells resulted in efficient receiver smooth muscle cell labeling.",
+      "claim_type": "EXPLICIT",
+      "source": "Co-culturing sGFP-expressing HUVEC and \u03b1GFP-expressing primary human umbilical vein smooth muscle cells (HUVSMC) resulted in efficient receiver smooth muscle cell labeling (Figure 3C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data from endothelial-smooth muscle cell co-cultures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:26:58.470429Z"
+    },
+    {
+      "id": "5abfc004-b6f4-480c-a091-8e1c40350581",
+      "content_id": "8d5c2a89-5193-48dc-a67b-aca95a42e582",
+      "claim_id": "C25",
+      "claim": "sGFP-expressing astrocytes were able to transfer GFP to \u03b1GFP-expressing cortical neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, sGFP-expressing astrocytes were able to transfer GFP to \u03b1GFP-expressing cortical neurons (Figure 5C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data from astrocyte-neuron co-cultures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:26:58.470429Z"
+    },
+    {
+      "id": "62cf7cc0-d95e-40fd-948c-70fd302ddd1e",
+      "content_id": "8d5c2a89-5193-48dc-a67b-aca95a42e582",
+      "claim_id": "C26",
+      "claim": "Co-culture of surface BFP sender cells with \u03b1GFP receiver cells generated BFP-labeled receiver cells due to cross reactivity of \u03b1GFP with BFP.",
+      "claim_type": "EXPLICIT",
+      "source": "Due to the cross reactivity of \u03b1GFP with BFP, co-culture of surface BFP (sBFP) sender cells with \u03b1GFP receiver cells generated BFP-labeled receiver cells (Fridy et al., 2014; Figure 6\u2014figure supplement 1A, B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data and a citation explaining the cross-reactivity.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:26:58.470429Z"
+    },
+    {
+      "id": "f2e95f92-752c-429f-9fcd-01d849674298",
+      "content_id": "8d5c2a89-5193-48dc-a67b-aca95a42e582",
+      "claim_id": "C27",
+      "claim": "Orthogonal systems consisting of surface-mCherry/\u03b1mCherry and surface-GCN4-GFP/\u03b1GCN4 led to efficient and specific receiver cell labeling.",
+      "claim_type": "EXPLICIT",
+      "source": "Orthogonal systems consisting of surface-mCherry/\u03b1mCherry (LaM4)(Fridy et al., 2014) and surface-GCN4-GFP/\u03b1GCN4 (single-chain variable fragment, scFV)(Tanenbaum et al., 2014) also led to efficient and specific receiver cell labeling (Figure 6\u2014figure supplement 1C\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data testing orthogonal labeling systems.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:26:58.470429Z"
+    },
+    {
+      "id": "a1fcbf0e-24c8-4ac0-abfd-84dab2dab2d1",
+      "content_id": "8d5c2a89-5193-48dc-a67b-aca95a42e582",
+      "claim_id": "C28",
+      "claim": "Co-culture of cells expressing sGFP and \u03b1mCherry with cells expressing smCherry and \u03b1GFP resulted in reciprocal labeling of both interacting cell types.",
+      "claim_type": "EXPLICIT",
+      "source": "Co-culture of cells expressing sGFP and \u03b1mCherry with cells expressing smCherry and \u03b1GFP resulted in reciprocal labeling of both interacting cell types (Figure 6A,B, and Figure 6\u2014figure supplement 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data demonstrating bidirectional labeling.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:26:58.470429Z"
+    },
+    {
+      "id": "b7cee03a-4e4c-4b13-872e-47235de04316",
+      "content_id": "8d5c2a89-5193-48dc-a67b-aca95a42e582",
+      "claim_id": "C29",
+      "claim": "Co-expression of \u03b1mCherry and \u03b1GFP on receiver cells enabled dual color labeling of receiver cells that had interacted with smCherry-expressing, sGFP-expressing, or both sender cell types.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, co-expression of \u03b1mCherry and \u03b1GFP on receiver cells enabled dual color labeling of receiver cells that had interacted with smCherry-expressing, sGFP-expressing, or both sender cell types (Figure 6C,D, and Figure 6\u2014figure supplement 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data demonstrating AND gate logic.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:26:58.470429Z"
+    },
+    {
+      "id": "95c1bcbf-6f4c-4ce7-a3cc-009e89db24a4",
+      "content_id": "8d5c2a89-5193-48dc-a67b-aca95a42e582",
+      "claim_id": "C30",
+      "claim": "Co-culture of Alexa Fluor 660-loaded sHalo-GFP sender cells with \u03b1GFP receiver cells enabled co-transfer of both GFP and AF660.",
+      "claim_type": "EXPLICIT",
+      "source": "Co-culture of Alexa Fluor 660 (AF660)-loaded sHalo-GFP sender cells with \u03b1GFP receiver cells enabled co-transfer of both GFP and AF660 (Figure 7C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data showing dual transfer of protein and chemical fluorophore.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:26:58.470429Z"
+    },
+    {
+      "id": "ebe5b134-2604-4861-8cb7-aa1796c84158",
+      "content_id": "8d5c2a89-5193-48dc-a67b-aca95a42e582",
+      "claim_id": "C31",
+      "claim": "Transfer of the chemical fluorophore using sHalo-GFP-based labeling of receiver cells led to increased signal-to-noise ratio and higher sensitivity compared to GFP.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared to GFP, transfer of the chemical fluorophore using sHalo-GFP-based labeling of receiver cells led to increased signal-to-noise ratio and higher sensitivity (Figure 7C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by comparative experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:26:58.470429Z"
+    },
+    {
+      "id": "0ad341da-1d18-4c11-bc9e-eaaff017fc99",
+      "content_id": "8d5c2a89-5193-48dc-a67b-aca95a42e582",
+      "claim_id": "C32",
+      "claim": "Changing from a protein (GFP) to a chemical fluorophore extended the half-life of labeling.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, changing from a protein (GFP) to a chemical fluorophore also extended the half-life of labeling, thus enabling partially tunable persistence of labeling after touching (Figure 7E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data showing differential decay rates.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:26:58.470429Z"
+    },
+    {
+      "id": "d340e494-b998-4267-82b8-be836e9a1aa2",
+      "content_id": "8d5c2a89-5193-48dc-a67b-aca95a42e582",
+      "claim_id": "C33",
+      "claim": "The ratio of AF488 to AF660 transferred to the dually labeled receiver cells strongly correlated with the ratio of the two sGCN4-Halo sender populations within the co-culture.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, the ratio of AF488 to AF660 transferred to the dually labeled receiver cells strongly correlated with the ratio of the two sGCN4-Halo sender populations within the co-culture, suggesting that this system can quantitively measure higher order cell-cell interactions (Figure 7H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data showing quantitative correlation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:26:58.470429Z"
+    },
+    {
+      "id": "8f27ac8f-d28f-4693-9673-095ec8cc11ed",
+      "content_id": "8d5c2a89-5193-48dc-a67b-aca95a42e582",
+      "claim_id": "C34",
+      "claim": "Co-culture of sGFP-tdTomato sender cells with \u03b1GFP receiver cells resulted in stoichiometric tdTomato and GFP transfer to receiver cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to the co-transfer of Halo-Tag with sGFP, we also generated sender cells with surface expression of a GFP-tdTomato fusion protein (sGFP-Tom) and uncovered stoichiometric tdTomato and GFP transfer to \u03b1GFP receiver cells (Figure 8A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data showing co-transfer of fusion proteins.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:26:58.470429Z"
+    },
+    {
+      "id": "28d742e0-06ab-4418-9727-419cdec51da3",
+      "content_id": "8d5c2a89-5193-48dc-a67b-aca95a42e582",
+      "claim_id": "C35",
+      "claim": "Co-culture of sGFP-PuroR sender cells with \u03b1GFP receiver cells led to moderate puromycin resistance of touched receiver cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We generated sGFP-PuroR-expressing sender cells and found that co-culture of sGFP-PuroR sender cells with \u03b1GFP receiver cells led to moderate puromycin resistance of touched receiver cells (Figure 8C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data showing functional cargo transfer.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:26:58.470429Z"
+    },
+    {
+      "id": "5331bb6b-d3db-4890-add4-a318c211374a",
+      "content_id": "8d5c2a89-5193-48dc-a67b-aca95a42e582",
+      "claim_id": "C36",
+      "claim": "Loading of sGCN4-HaloTag sender cells with HaloTag-conjugated, AF647-coupled ssDNA prior to co-culture with \u03b1GCN4 receiver cells revealed successful co-transfer of fluorescently labeled ssDNA to receiver cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, loading of sGCN4-HaloTag sender cells with HaloTag-conjugated, AF647-coupled ssDNA prior to co-culture with \u03b1GCN4 receiver cells revealed successful co-transfer of fluorescently labeled ssDNA to receiver cells (Figure 8E\u2013G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data showing DNA cargo transfer.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:26:58.470429Z"
+    },
+    {
+      "id": "2c4623d3-7a91-4b3e-9dc3-96589e0df462",
+      "content_id": "8d5c2a89-5193-48dc-a67b-aca95a42e582",
+      "claim_id": "C37",
+      "claim": "The G-baToN system can record diverse cell-cell interactions in a specific and sensitive manner.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we developed and optimized a novel cell-cell interaction reporter system and showed that this G-baToN system can record diverse cell-cell interactions in a specific and sensitive manner.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary statement in the Discussion supported by all the experimental data presented.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:26:58.470429Z"
+    },
+    {
+      "id": "cddde51a-56a1-4f53-b2b4-cb0b7cc452c4",
+      "content_id": "8d5c2a89-5193-48dc-a67b-aca95a42e582",
+      "claim_id": "C38",
+      "claim": "The ability of diverse primary cell types to serve as both sender and receiver cells suggests that the G-baToN system is generalizable.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data document the ability of diverse primary cell types to serve as both sender and receiver cells, suggesting that the G-baToN system is not only simple, sensitive and rapid, but also generalizable.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data showing multiple cell types can use the system.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:26:58.470429Z"
+    },
+    {
+      "id": "d3277a62-90bf-4847-b184-579657624e27",
+      "content_id": "8d5c2a89-5193-48dc-a67b-aca95a42e582",
+      "claim_id": "C39",
+      "claim": "Multicolor derivatives of G-baToN enable qualitative and quantitative analyses of higher order interactions involving more than two cell types.",
+      "claim_type": "EXPLICIT",
+      "source": "Multicolor derivatives of G-baToN enable qualitative and quantitative analyses of higher order interactions involving more than two cell types.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary statement supported by the multicolor labeling experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:26:58.470429Z"
+    },
+    {
+      "id": "eadada04-925f-4ab9-8223-dab4ed992533",
+      "content_id": "8d5c2a89-5193-48dc-a67b-aca95a42e582",
+      "claim_id": "C40",
+      "claim": "The G-baToN system labels receiver cells through transfer of cell surface GFP which ensures only transient labeling due to its lability.",
+      "claim_type": "EXPLICIT",
+      "source": "The G-baToN system labels receiver cells through transfer of cell surface GFP which, due to its lability, ensures only transient labeling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion and supported by the GFP decay experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:26:58.470429Z"
+    },
+    {
+      "id": "2d486e96-4a6b-4427-b1fb-a0daf02b43bb",
+      "content_id": "8d5c2a89-5193-48dc-a67b-aca95a42e582",
+      "claim_id": "C41",
+      "claim": "Using chemical fluorophores significantly extends label persistence within receiver cells compared to GFP.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, we have shown that using chemical fluorophores significantly extends label persistence within receiver cells (Figure 7E), which can be used for longer term labeling of receiver cells that undergo dynamic interactions.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data comparing GFP and chemical fluorophore decay rates.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:26:58.470429Z"
+    },
+    {
+      "id": "4f773f10-2856-4167-94f8-6a9081dbb23e",
+      "content_id": "8d5c2a89-5193-48dc-a67b-aca95a42e582",
+      "claim_id": "C42",
+      "claim": "The G-baToN system relies on cell surface ligand-receptor recognition.",
+      "claim_type": "EXPLICIT",
+      "source": "As with other cell-cell interaction reporter systems, the G-baToN system relies on cell surface ligand-receptor recognition (Supplementary files 1\u20132).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion as a characteristic of the system.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:26:58.470429Z"
+    },
+    {
+      "id": "f478f33f-0392-4f85-8cd1-8550c33ae43d",
+      "content_id": "8d5c2a89-5193-48dc-a67b-aca95a42e582",
+      "claim_id": "C43",
+      "claim": "G-baToN systems could stabilize normal cell-cell interactions due to exogenous ligand-receptor pairs.",
+      "claim_type": "EXPLICIT",
+      "source": "Consequently, these systems could stabilize normal cell-cell interactions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a potential limitation discussed by the authors based on the system design.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:26:58.470429Z"
+    },
+    {
+      "id": "b5029ee9-d7aa-48a5-b796-053fdd6c2420",
+      "content_id": "8d5c2a89-5193-48dc-a67b-aca95a42e582",
+      "claim_id": "C44",
+      "claim": "Transferred cargo proteins may be able to modify receiver cell signaling or promote cell death.",
+      "claim_type": "EXPLICIT",
+      "source": "Transferred cargo proteins may be able to modify receiver cell signaling or promote cell death.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about potential applications based on the cargo transfer capability.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:26:58.470429Z"
+    },
+    {
+      "id": "dcea641d-b89d-465f-8706-014b3d0a2dca",
+      "content_id": "8d5c2a89-5193-48dc-a67b-aca95a42e582",
+      "claim_id": "C45",
+      "claim": "GFP protein is transferred to receiver cells, not just fluorescence signal.",
+      "claim_type": "EXPLICIT",
+      "source": "Western blot analysis of FACS purified Control and \u03b1GFP receiver 293 cells cultured in isolation or co-culture with sGFP Tomato-positive sender cells (mouse KPT lung cancer cells) for 24 hr. sGFP but not Tomato is present in touched \u03b1GFP receiver cells.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Western blot data in Figure 1\u2014figure supplement 1a demonstrates protein transfer.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:26:58.470429Z"
+    },
+    {
+      "id": "0bac7904-7eb6-43a5-a9d0-174179139042",
+      "content_id": "8d5c2a89-5193-48dc-a67b-aca95a42e582",
+      "claim_id": "C46",
+      "claim": "GFP cannot be transferred from fixed sGFP sender cells to live \u03b1GFP receiver cells.",
+      "claim_type": "EXPLICIT",
+      "source": "GFP cannot be transferred from fixed sGFP sender cells to live \u03b1GFP receiver cells. sGFP sender cells were fixed in 1% PFA for 5 min and washed with PBS before co-cultured with \u03b1GFP receiver cells at a 1:1 ratio for 24 hr.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental data shows that fixed cells cannot transfer GFP, indicating active process requirement.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:26:58.470429Z"
+    },
+    {
+      "id": "4ed8f2f0-aa76-41eb-a3b1-5ef07140ec4d",
+      "content_id": "8d5c2a89-5193-48dc-a67b-aca95a42e582",
+      "claim_id": "C47",
+      "claim": "GFP transfer to receiver cells is accompanied by a reduction of GFP on the sender cells.",
+      "claim_type": "EXPLICIT",
+      "source": "GFP transfer to receiver cells is accompanied by a reduction of GFP on the sender cells. GFP expression on sender cells after 24 hr co-culture with control or \u03b1GFP-expressing 293 receiver cells at a 1:1 ratio. Co-culture with \u03b1GFP expressing but not control receiver cells reduced GFP on sGFP sender cells.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Flow cytometry data shows decreased GFP on sender cells after co-culture with \u03b1GFP receivers.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:26:58.470429Z"
+    },
+    {
+      "id": "3cb750c0-fd52-46b2-b7f9-ddca6e5fea7c",
+      "content_id": "8d5c2a89-5193-48dc-a67b-aca95a42e582",
+      "claim_id": "C48",
+      "claim": "GFP transfer is accompanied with \u03b1GFP internalization on receiver cells.",
+      "claim_type": "EXPLICIT",
+      "source": "GFP transfer is accompanied with \u03b1GFP internalization on receiver cells. Analysis of surface \u03b1GFP (Myc-tag) on 293 receiver cell co-cultured for 24 hr with sGFP sender cells.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Flow cytometry data shows decreased surface \u03b1GFP after co-culture with sGFP senders.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:26:58.470429Z"
+    },
+    {
+      "id": "008f7390-c52a-459e-9afb-7c4b7924e4ea",
+      "content_id": "8d5c2a89-5193-48dc-a67b-aca95a42e582",
+      "claim_id": "C49",
+      "claim": "GFP transfer to receiver cells is partially dependent on membrane dynamics of endocytosis.",
+      "claim_type": "EXPLICIT",
+      "source": "GFP transfer to 293 receiver cells is partially dependent on membrane dynamics of endocytosis. Both a clathrin inhibitor (Pitstop, 20 \u03bcM) and a dynamin inhibitor (Dyngo 4a, 10 \u03bcM) partially inhibit GFP transfer from sGFP sender cells to \u03b1GFP receiver cells.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Chemical inhibitor experiments demonstrate partial dependence on endocytic machinery.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:26:58.470429Z"
+    },
+    {
+      "id": "742d5c97-e85f-4f3a-ab9b-ded15a6c3362",
+      "content_id": "8d5c2a89-5193-48dc-a67b-aca95a42e582",
+      "claim_id": "C50",
+      "claim": "A shift in GFP MFI was detected 5 min after mixing sGFP sender cells with \u03b1GFP receiver cells.",
+      "claim_type": "EXPLICIT",
+      "source": "GFP transfer to \u03b1GFP 293 receiver cells can be very rapid. A shift in GFP MFI was detected 5 min after mixing sGFP sender cells with \u03b1GFP receiver cell.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Flow cytometry time course data shows rapid GFP transfer within 5 minutes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:26:58.470429Z"
+    },
+    {
+      "id": "7d4ec20b-8052-485a-88a9-e8621037d456",
+      "content_id": "8d5c2a89-5193-48dc-a67b-aca95a42e582",
+      "claim_id": "C51",
+      "claim": "GFP in receiver cells has a half-life of approximately 2 hours after removal of sender cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Rapid GFP degradation in touched receiver cells after removal of the sGFP sender cells. After 6 hr co-culture, GFP-positive receiver cells were purified by FACS followed by culture without sender cells. Receiver cells were defined as mCherrynegPInegBFPpos cells. GFP MFI in receiver cells reduced rapidly (T1/2 approximately 2 hr).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Time course data after FACS purification shows rapid GFP decay with calculated half-life.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:26:58.470429Z"
+    },
+    {
+      "id": "6486a61d-9f19-41fd-8db8-04bc8b4ccb86",
+      "content_id": "8d5c2a89-5193-48dc-a67b-aca95a42e582",
+      "claim_id": "C52",
+      "claim": "The G-baToN system adapted a synthetic ligand-receptor system based on surface GFP on sender cells and a cell surface anti-GFP nanobody on receiver cells.",
+      "claim_type": "EXPLICIT",
+      "source": "To create a system in which a fluorescent signal could be transferred between neighboring cells, we adapted a synthetic ligand-receptor system based on the expression of surface GFP (sGFP) on sender cells and a cell surface anti-GFP (\u03b1GFP) nanobody on receiver cells (Fridy et al., 2014; Lim et al., 2013; Morsut et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the design basis of the system with supporting citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:26:58.470429Z"
+    },
+    {
+      "id": "cebecb9d-ad6f-4e54-a820-e7278dd821a4",
+      "content_id": "8d5c2a89-5193-48dc-a67b-aca95a42e582",
+      "claim_id": "C53",
+      "claim": "Receiver cell labeling required active membrane dynamics.",
+      "claim_type": "EXPLICIT",
+      "source": "Receiver cell labeling required direct cell-cell contact, active membrane dynamics, and pairing between sGFP and its cognate \u03b1GFP receptor (Figure 1C,D and Figure 1\u2014figure supplement 1B, C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experiments with fixed cells and endocytosis inhibitors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:26:58.470429Z"
+    },
+    {
+      "id": "3db11543-93f4-4fc4-8227-a2254043cdc3",
+      "content_id": "8d5c2a89-5193-48dc-a67b-aca95a42e582",
+      "claim_id": "C54",
+      "claim": "Receiver cell labeling required pairing between sGFP and its cognate \u03b1GFP receptor.",
+      "claim_type": "EXPLICIT",
+      "source": "Receiver cell labeling required direct cell-cell contact, active membrane dynamics, and pairing between sGFP and its cognate \u03b1GFP receptor (Figure 1C,D and Figure 1\u2014figure supplement 1B, C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experiments showing no transfer with mismatched receptors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:26:58.470429Z"
+    },
+    {
+      "id": "2e560729-89f6-40ab-9828-6f46cf043fcc",
+      "content_id": "8d5c2a89-5193-48dc-a67b-aca95a42e582",
+      "claim_id": "C55",
+      "claim": "sGFP transfer was partially blocked by chemical inhibitors of endocytosis.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, sGFP transfer was accompanied by reduced GFP on the sender cells, downregulation of \u03b1GFP from the surface of the receiver cells and was partially blocked by chemical inhibitors of endocytosis \u2013 all consistent with active GFP transfer and internalization into receiver cells (Figure 1\u2014figure supplement 1D\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Chemical inhibitor experiments demonstrate partial dependence on endocytosis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:26:58.470429Z"
+    },
+    {
+      "id": "0fa137fc-c480-4c19-bf86-28d944735f1e",
+      "content_id": "8d5c2a89-5193-48dc-a67b-aca95a42e582",
+      "claim_id": "C56",
+      "claim": "GFP transfer was half-maximal after 6 hr of co-culture.",
+      "claim_type": "EXPLICIT",
+      "source": "GFP transfer could be detected within five minutes of co-culture and was half-maximal after 6 hr (Figure 1F and Figure 1\u2014figure supplement 1G-H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Time course experiments quantified the kinetics of GFP transfer.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:26:58.470429Z"
+    },
+    {
+      "id": "addfbe13-6290-4b45-b10a-614dfc1b0a7a",
+      "content_id": "8d5c2a89-5193-48dc-a67b-aca95a42e582",
+      "claim_id": "C57",
+      "claim": "Even the addition of very few sender cells (representing less than one sender cell to 10^5 receiver cells) was sufficient to label rare receiver cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The fraction of labeled receiver cells was proportional to the number of sender cells, and even the addition of very few sender cells (representing less than one sender cell to 105 receiver cells) was sufficient to label rare receiver cells (Figure 1G,H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Sensitivity experiments demonstrate detection of rare interactions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:26:58.470429Z"
+    },
+    {
+      "id": "abc8d317-ef33-4339-bc02-20e8ecda8d54",
+      "content_id": "8d5c2a89-5193-48dc-a67b-aca95a42e582",
+      "claim_id": "C58",
+      "claim": "The transfer of GFP to \u03b1GFP-expressing cells is a rapid and sensitive method to mark cells that have physically interacted with a predefined sender population.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the transfer of GFP to \u03b1GFP-expressing cells is a rapid and sensitive method to mark cells that have physically interacted with a predefined sender population.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion based on the kinetics and sensitivity experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:26:58.470429Z"
+    },
+    {
+      "id": "ded2e1a7-72e1-4a54-b0ad-9dbb135fa87d",
+      "content_id": "8d5c2a89-5193-48dc-a67b-aca95a42e582",
+      "claim_id": "C59",
+      "claim": "The original G-baToN design used the Notch1 transmembrane domain to link the LaG17-\u03b1GFP nanobody onto the receiver cell surface.",
+      "claim_type": "EXPLICIT",
+      "source": "We initially used a published sGFP-\u03b1GFP pair in which the Notch1 transmembrane domain links the LaG17-\u03b1GFP nanobody onto the receiver cell surface and the PDGFR transmembrane domain links sGFP onto the sender cell surface (Morsut et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the initial design with a citation to the source.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:26:58.470429Z"
+    },
+    {
+      "id": "2f16dacd-2125-4a72-864f-4a6ebfb61beb",
+      "content_id": "8d5c2a89-5193-48dc-a67b-aca95a42e582",
+      "claim_id": "C60",
+      "claim": "The original G-baToN design used the PDGFR transmembrane domain to link sGFP onto the sender cell surface.",
+      "claim_type": "EXPLICIT",
+      "source": "We initially used a published sGFP-\u03b1GFP pair in which the Notch1 transmembrane domain links the LaG17-\u03b1GFP nanobody onto the receiver cell surface and the PDGFR transmembrane domain links sGFP onto the sender cell surface (Morsut et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the initial design with a citation to the source.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:26:58.470429Z"
+    },
+    {
+      "id": "c883dd36-4d12-4a89-a177-e7d3dbf2d255",
+      "content_id": "8d5c2a89-5193-48dc-a67b-aca95a42e582",
+      "claim_id": "C61",
+      "claim": "A minimal affinity was required for GFP transfer between nanobodies and GFP.",
+      "claim_type": "EXPLICIT",
+      "source": "While nanobodies exhibiting the highest affinities performed similarly, we noted a minimal affinity required for GFP transfer (Figure 2F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experiments with different affinity nanobodies showed a threshold effect.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:26:58.470429Z"
+    },
+    {
+      "id": "7106de58-562c-46a3-a3b6-7f451b5c953f",
+      "content_id": "8d5c2a89-5193-48dc-a67b-aca95a42e582",
+      "claim_id": "C62",
+      "claim": "The rate of retrograde transfer of \u03b1GFP-VEGFR2-BFP from receiver to sender cells was influenced by the sGFP transmembrane domain.",
+      "claim_type": "EXPLICIT",
+      "source": "Lastly, permutation of the transmembrane domain of sGFP on the sender cell revealed that the rate of retrograde transfer of \u03b1GFP-VEGFR2-BFP from receiver to sender cells was influenced by the sGFP transmembrane domain (Figure 2G\u2013I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experiments testing different transmembrane domains showed differential retrograde transfer.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:26:58.470429Z"
+    },
+    {
+      "id": "353ff5e6-5d22-465f-b559-b1c8b94f6352",
+      "content_id": "8d5c2a89-5193-48dc-a67b-aca95a42e582",
+      "claim_id": "C63",
+      "claim": "The G-baToN system is able to efficiently record cancer cell-endothelial cell interactions across multiple culture conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the G-baToN system is able to efficiently record cancer cell-endothelial cell interactions across multiple culture conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion based on experiments in 2D and 3D culture systems.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:26:58.470429Z"
+    },
+    {
+      "id": "459efe57-7749-4965-9bba-7480db0575ff",
+      "content_id": "8d5c2a89-5193-48dc-a67b-aca95a42e582",
+      "claim_id": "C64",
+      "claim": "The G-baToN system is capable of recording cancer cell-T cell interactions both in vitro and in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the G-baToN system is capable of recording cancer cell-T cell interactions both in vitro and in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion based on in vitro co-culture and in vivo transplantation experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:26:58.470429Z"
+    },
+    {
+      "id": "50416193-ca0a-42ad-904d-73a3c2d770a9",
+      "content_id": "8d5c2a89-5193-48dc-a67b-aca95a42e582",
+      "claim_id": "C65",
+      "claim": "G-baToN-based labeling extends beyond transformed cell types and can label diverse primary cell types in co-culture.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, G-baToN-based labeling extends beyond transformed cell types and can label diverse primary cell types in co-culture.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion based on experiments with multiple primary cell types.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:26:58.470429Z"
+    },
+    {
+      "id": "d81b5f5c-534c-42c2-acbe-90af09a2e8e1",
+      "content_id": "8d5c2a89-5193-48dc-a67b-aca95a42e582",
+      "claim_id": "C66",
+      "claim": "Receiver cell labeling required sGFP-expression on the sender cell and \u03b1GFP expression on the receiver cells.",
+      "claim_type": "EXPLICIT",
+      "source": "As anticipated, receiver cell labeling required sGFP-expression on the sender cell and \u03b1GFP expression on the receiver cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a requirement demonstrated by control experiments throughout the paper.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:26:58.470429Z"
+    },
+    {
+      "id": "3eadc69f-c241-41f1-a49b-58328be7b8b5",
+      "content_id": "8d5c2a89-5193-48dc-a67b-aca95a42e582",
+      "claim_id": "C67",
+      "claim": "The results document the efficiency of G-baToN-based cell labeling across diverse cell types.",
+      "claim_type": "EXPLICIT",
+      "source": "Collectively, these results document the efficiency of G-baToN-based cell labeling across diverse cell types.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion based on experiments with endothelial-smooth muscle and astrocyte-neuron interactions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:26:58.470429Z"
+    },
+    {
+      "id": "48edc62d-c067-4717-9f03-1c7864439261",
+      "content_id": "8d5c2a89-5193-48dc-a67b-aca95a42e582",
+      "claim_id": "C68",
+      "claim": "The G-baToN labeling system can be extended to additional antigen/antibody pairs beyond GFP/\u03b1GFP.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the G-baToN labeling system can be extended to additional antigen/antibody pairs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is based on successful experiments with BFP, mCherry, and GCN4 systems.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:26:58.470429Z"
+    },
+    {
+      "id": "00df5a5a-e58e-4113-b73e-eddca5cca8d7",
+      "content_id": "8d5c2a89-5193-48dc-a67b-aca95a42e582",
+      "claim_id": "C69",
+      "claim": "Engineering cells with orthogonal systems in an anti-parallel fashion enables reciprocal labeling of both interacting cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Engineering cells with these orthogonal systems in an anti-parallel fashion should enable reciprocal labeling of both interacting cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a design principle and demonstrated experimentally.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:26:58.470429Z"
+    },
+    {
+      "id": "0f624b27-f8bd-4630-ba85-4e11588c0e65",
+      "content_id": "8d5c2a89-5193-48dc-a67b-aca95a42e582",
+      "claim_id": "C70",
+      "claim": "Derivatives of the G-baToN system allow for additional degrees of resolution of complex cell-cell interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, derivatives of the G-baToN system allow for additional degrees of resolution of complex cell-cell interactions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion based on reciprocal and AND gate labeling experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:26:58.470429Z"
+    },
+    {
+      "id": "0395c13c-e1ea-4d91-9002-9b0cb09d6591",
+      "content_id": "8d5c2a89-5193-48dc-a67b-aca95a42e582",
+      "claim_id": "C71",
+      "claim": "Covalent attachment of a synthetic fluorophore to sHalo-GFP enabled specific loading onto sender cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Covalent attachment of a synthetic fluorophore to sHalo-GFP enabled specific loading onto sender cells (Figure 7B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental data shows specific labeling of HaloTag-expressing cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:26:58.470429Z"
+    },
+    {
+      "id": "fc994ea6-0a7b-4111-b442-c2b5081240da",
+      "content_id": "8d5c2a89-5193-48dc-a67b-aca95a42e582",
+      "claim_id": "C72",
+      "claim": "Co-culture of AF660-loaded sHalo-GFP sender cells with \u03b1GFP receiver cells enabled co-transfer of both GFP and AF660.",
+      "claim_type": "EXPLICIT",
+      "source": "Co-culture of Alexa Fluor 660 (AF660)-loaded sHalo-GFP sender cells with \u03b1GFP receiver cells enabled co-transfer of both GFP and AF660 (Figure 7C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Flow cytometry data shows dual labeling of receiver cells with both fluorophores.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:26:58.470429Z"
+    },
+    {
+      "id": "363840b1-4c19-4044-b113-c1c68d8feb87",
+      "content_id": "8d5c2a89-5193-48dc-a67b-aca95a42e582",
+      "claim_id": "C73",
+      "claim": "baToN systems enable contact-dependent transport of different macromolecules between cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, baToN systems enable contact-dependent transport of different macromolecules between cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion based on experiments transferring proteins, DNA, and small molecules.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:26:58.470429Z"
+    },
+    {
+      "id": "30a498f4-a736-4670-b24f-3e7788572761",
+      "content_id": "8d5c2a89-5193-48dc-a67b-aca95a42e582",
+      "claim_id": "C74",
+      "claim": "The simplicity of the G-baToN two-component system, combined with its generalizability across cell types, excellent foreground to background ratio, and rapid labeling, enables facile analysis of the dynamics of cellular interaction.",
+      "claim_type": "EXPLICIT",
+      "source": "The simplicity of this two-component system, combined with its generalizability across cell types, excellent foreground to background ratio, and rapid labeling, should enable facile analysis of the dynamics of cellular interaction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary statement of the system's advantages based on all experimental results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:26:58.470429Z"
+    },
+    {
+      "id": "338c43f7-87f5-4010-b500-7cb6215c405c",
+      "content_id": "8d5c2a89-5193-48dc-a67b-aca95a42e582",
+      "claim_id": "C75",
+      "claim": "The ability to track physically interacting cells with these systems will greatly accelerate understanding of the outputs of cell-cell interactions in cancer and across many biological processes.",
+      "claim_type": "EXPLICIT",
+      "source": "The ability to track physically interacting cells with these simple and sensitive systems will greatly accelerate our understanding of the outputs of cell-cell interactions in cancer as well as across many biological processes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a forward-looking statement about the potential impact of the technology.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:26:58.470429Z"
+    },
+    {
+      "id": "d78397ab-a6e2-465a-80aa-9e327b0c51fc",
+      "content_id": "8d5c2a89-5193-48dc-a67b-aca95a42e582",
+      "claim_id": "C76",
+      "claim": "Molecular methods to profile cell state largely fail to uncover the causal relationship between cell-cell interactions and the underlying biology.",
+      "claim_type": "EXPLICIT",
+      "source": "Molecular methods to profile cell state, including in situ approaches within intact tissues, largely fail to uncover the causal relationship between cell-cell interactions and the underlying biology (Giladi et al., 2020; Halpern et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations indicating limitations of current methods.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:26:58.470429Z"
+    },
+    {
+      "id": "f2e14255-d46c-454e-9e4c-089a7bebed2d",
+      "content_id": "8d5c2a89-5193-48dc-a67b-aca95a42e582",
+      "claim_id": "C77",
+      "claim": "Modalities to capture cell-cell interactions are limited.",
+      "claim_type": "EXPLICIT",
+      "source": "Computational and experimental methods to characterize cell-cell interactions yield additional layers of dimensionality; however, modalities to capture cell-cell interactions are limited (Boisset et al., 2018; Morsut et al., 2016; Pasqual et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations and describes a gap in available methods.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:26:58.470429Z"
+    },
+    {
+      "id": "105dfac3-8f97-4e99-93dd-b76c8ddf335a",
+      "content_id": "8d5c2a89-5193-48dc-a67b-aca95a42e582",
+      "claim_id": "C78",
+      "claim": "The development of novel systems to detect and quantify cell-cell interactions will accelerate the mapping of the interaction networks of multicellular systems.",
+      "claim_type": "EXPLICIT",
+      "source": "Much as diverse systems to detect and quantify protein-protein interactions have revolutionized our biochemical understanding of molecular systems, the development of novel systems to detect and quantify cell-cell interactions will accelerate the mapping of the interaction networks of multicellular systems.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an analogy-based argument for the importance of developing new tools.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:26:58.470429Z"
+    },
+    {
+      "id": "32daa3fd-34f3-4a17-9c0e-a653255443b5",
+      "content_id": "8d5c2a89-5193-48dc-a67b-aca95a42e582",
+      "claim_id": "C79",
+      "claim": "A suite of orthogonal baToN tools enables reciprocal cell-cell labeling, interaction-dependent cargo transfer, and the identification of higher order cell-cell interactions across a wide range of cell types.",
+      "claim_type": "EXPLICIT",
+      "source": "A suite of orthogonal baToN tools enables reciprocal cell-cell labeling, interaction-dependent cargo transfer, and the identification of higher order cell-cell interactions across a wide range of cell types.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as a summary of the system's capabilities.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:26:58.470429Z"
+    },
+    {
+      "id": "05f04769-06f3-48a9-ada1-3681c9086e16",
+      "content_id": "8d5c2a89-5193-48dc-a67b-aca95a42e582",
+      "claim_id": "C80",
+      "claim": "Recent studies have demonstrated a supportive role for neurons within the primary and metastatic niche in the context of brain.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent studies have demonstrated a supportive role for neurons within the primary and metastatic niche in the context of brain (Venkatesh et al., 2019; Zeng et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to recent literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:26:58.470429Z"
+    },
+    {
+      "id": "7aee9a55-62f6-45c8-8f8d-1690a2312ce6",
+      "content_id": "8d5c2a89-5193-48dc-a67b-aca95a42e582",
+      "claim_id": "C81",
+      "claim": "Transient labeling is sufficient to label stable cancer cell-stromal cell interactions when sender cells consistently express GFP.",
+      "claim_type": "EXPLICIT",
+      "source": "Transient labeling is sufficient to label stable cancer cell-stromal cell interactions and many other diverse cell-cell interactions when sender cells consistently express GFP (Figure 1F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a conclusion based on the kinetics data and system design.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:26:58.470429Z"
+    },
+    {
+      "id": "70f64952-a0d0-41b1-81e6-b1fa32165300",
+      "content_id": "8d5c2a89-5193-48dc-a67b-aca95a42e582",
+      "claim_id": "C82",
+      "claim": "Transient labeling should allow dynamic interactions to be detected, ensuring that the labeled receiver cells either are in contact with, or have recently interacted with sender cells.",
+      "claim_type": "EXPLICIT",
+      "source": "This transient labeling should allow dynamic interactions to be detected, ensuring that the labeled receiver cells either are in contact with, or have recently interacted with sender cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference based on the transient nature of the labeling.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:26:58.470429Z"
+    },
+    {
+      "id": "1a723b9b-497f-4fbf-bb62-3c5074f89c9d",
+      "content_id": "8d5c2a89-5193-48dc-a67b-aca95a42e582",
+      "claim_id": "C83",
+      "claim": "A G-baToN system where sGFP is inducible may allow physical interactions between cancer cells and stromal cells to be captured with even more precise temporal control.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, a G-baToN system where sGFP is inducible may allow physical interactions between cancer cells and stromal cells to be captured with even more precise temporal control.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about potential future improvements.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:26:58.470429Z"
+    },
+    {
+      "id": "5da460dc-5f20-4124-9b64-dce4c3384a89",
+      "content_id": "8d5c2a89-5193-48dc-a67b-aca95a42e582",
+      "claim_id": "C84",
+      "claim": "It should be possible to develop systems that allow for stable receiver cell labeling through the transfer of site-specific recombinases or programmable nucleases to genetically modify receiver cells upon contact.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, due to the intrinsic attribute of G-baToN as a cell-cell contact dependent cargo transfer system (Figure 8), it should be possible to develop systems that allow for stable receiver cell labeling, perhaps through the transfer of site-specific recombinases (e.g. Cre or FLP) or programmable nucleases (e.g. Cas9) to genetically modify receiver cells upon contact.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a speculative statement about potential future applications based on the cargo transfer capability.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:26:58.470429Z"
+    },
+    {
+      "id": "7cb9b6a0-b281-4991-8fb0-4da23fdc9426",
+      "content_id": "8d5c2a89-5193-48dc-a67b-aca95a42e582",
+      "claim_id": "C85",
+      "claim": "LIPSTIC-based labeling is driven by endogenous ligand-receptor interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "While LIPSTIC-based labeling is driven by endogenous ligand-receptor interactions, SynNotch and G-baToN systems rely on exogenous ligand-receptor pairs (Morsut et al., 2016; Pasqual et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison statement supported by citations to the respective systems.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:26:58.470429Z"
+    },
+    {
+      "id": "8a43ae99-3df8-4fb1-8551-5d8816355101",
+      "content_id": "8d5c2a89-5193-48dc-a67b-aca95a42e582",
+      "claim_id": "C86",
+      "claim": "SynNotch and G-baToN systems rely on exogenous ligand-receptor pairs.",
+      "claim_type": "EXPLICIT",
+      "source": "While LIPSTIC-based labeling is driven by endogenous ligand-receptor interactions, SynNotch and G-baToN systems rely on exogenous ligand-receptor pairs (Morsut et al., 2016; Pasqual et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison statement supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:26:58.470429Z"
+    },
+    {
+      "id": "2ed1d8b6-0cb2-4cd0-a328-6dc23fac1a0f",
+      "content_id": "8d5c2a89-5193-48dc-a67b-aca95a42e582",
+      "claim_id": "C87",
+      "claim": "Tuning the affinity or expression level of the nanobody could minimize the effect of stabilizing normal cell-cell interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "It is possible that tuning the affinity or expression level of the nanobody could minimize this effect.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about potential optimization strategies.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:26:58.470429Z"
+    },
+    {
+      "id": "ef7c1d40-203e-434a-892e-6d1e6fd03434",
+      "content_id": "8d5c2a89-5193-48dc-a67b-aca95a42e582",
+      "claim_id": "C88",
+      "claim": "Inducible G-baToN systems may circumvent issues of stabilizing cell-cell interactions, thus ensuring the recording of only bona fide interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "Inducible G-baToN systems may circumvent these issues, thus ensuring the recording of only bona fide interactions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about potential system improvements.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:26:58.470429Z"
+    },
+    {
+      "id": "3024ae1e-6ca7-4c45-8eb2-6bb563db5600",
+      "content_id": "8d5c2a89-5193-48dc-a67b-aca95a42e582",
+      "claim_id": "C89",
+      "claim": "A recent paper used secreted cell-permeable mCherry for proximity labeling of cells, but this system labels all cells in proximity and lacks true cell-cell interaction labeling.",
+      "claim_type": "EXPLICIT",
+      "source": "A recent paper used secreted cell-permeable mCherry for proximity labeling of cells. This system circumvents the problem of abnormal cell-cell interactions caused by ligand-receptor binding; however, this system labels all cells in proximity and lacks true cell-cell interaction labeling (Ombrato et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison to another system with a citation, highlighting a limitation of that approach.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:26:58.470429Z"
+    },
+    {
+      "id": "a3177fbb-0b43-47af-8bdd-52e5de8b439b",
+      "content_id": "8d5c2a89-5193-48dc-a67b-aca95a42e582",
+      "claim_id": "C90",
+      "claim": "Additional design features could allow cancer cell-stromal cell interaction dependent drug delivery.",
+      "claim_type": "EXPLICIT",
+      "source": "In the future, additional design features could allow cancer cell-stromal cell interaction dependent drug delivery, cell-cell interaction facilitated sgRNA transfer between interacting cells, and digital recording of cell-cell interaction via DNA-barcode transfer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about potential future applications.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:26:58.470429Z"
+    },
+    {
+      "id": "31a3f95c-e71b-4563-8d63-754620eddbf5",
+      "content_id": "8d5c2a89-5193-48dc-a67b-aca95a42e582",
+      "claim_id": "C91",
+      "claim": "Additional design features could allow cell-cell interaction facilitated sgRNA transfer between interacting cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In the future, additional design features could allow cancer cell-stromal cell interaction dependent drug delivery, cell-cell interaction facilitated sgRNA transfer between interacting cells, and digital recording of cell-cell interaction via DNA-barcode transfer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about potential future applications.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:26:58.470429Z"
+    },
+    {
+      "id": "0e0a31f5-c0c9-49e1-b65a-c5d55296ef39",
+      "content_id": "8d5c2a89-5193-48dc-a67b-aca95a42e582",
+      "claim_id": "C92",
+      "claim": "Additional design features could allow digital recording of cell-cell interaction via DNA-barcode transfer.",
+      "claim_type": "EXPLICIT",
+      "source": "In the future, additional design features could allow cancer cell-stromal cell interaction dependent drug delivery, cell-cell interaction facilitated sgRNA transfer between interacting cells, and digital recording of cell-cell interaction via DNA-barcode transfer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about potential future applications.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:26:58.470429Z"
+    },
+    {
+      "id": "7774a6bf-48b8-4ab7-94dd-480f90c480e8",
+      "content_id": "8d5c2a89-5193-48dc-a67b-aca95a42e582",
+      "claim_id": "C93",
+      "claim": "The G-baToN system has the potential to have a broad impact on the ability to understand the outputs of cell-cell interactions in cancer and various other biological systems.",
+      "claim_type": "EXPLICIT",
+      "source": "These types of approaches have the potential to have a broad impact on our ability to understand the outputs of cell-cell interactions in cancer and various other biological systems.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a forward-looking statement about the potential impact of the technology.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:26:58.470429Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "0f64f667-c1d2-4be1-aaeb-00f1352c165d",
+      "content_id": "8d5c2a89-5193-48dc-a67b-aca95a42e582",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The G-baToN system enables cell-cell interaction-dependent labeling through nanobody-directed GFP transfer. Co-culturing sGFP sender cells with \u03b1GFP receiver cells led to GFP protein transfer that required direct cell-cell contact, active membrane dynamics, and cognate sGFP-\u03b1GFP pairing.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8, C9, C45, C46, C53, C54 provide strong experimental evidence including Western blot, transwell assays, fixed cell experiments, and receptor specificity controls that collectively demonstrate the mechanism requires physical contact and active processes. The data converge to support the core mechanism described in C1 and C52.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:26:58.470429Z"
+    },
+    {
+      "id": "6c9d50e8-8bf2-4fc7-9930-0458fff22a16",
+      "content_id": "8d5c2a89-5193-48dc-a67b-aca95a42e582",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "GFP transfer involves active internalization into receiver cells accompanied by reduction of GFP on sender cells, downregulation of \u03b1GFP from receiver cell surfaces, and partial dependence on endocytic machinery.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47, C48, and C49 provide flow cytometry data showing decreased GFP on senders, decreased surface \u03b1GFP on receivers, and partial inhibition by endocytosis inhibitors. These mechanistic details are consistent with active protein transfer rather than passive diffusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:26:58.470429Z"
+    },
+    {
+      "id": "7485277c-b32d-4e4a-bb1d-dfeb1cd4b297",
+      "content_id": "8d5c2a89-5193-48dc-a67b-aca95a42e582",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "GFP transfer is rapid, detectable within 5 minutes of co-culture and reaching half-maximal levels after 6 hours.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11, C50, and C56 are supported by time-course flow cytometry and live imaging data (Figure 1E-F and supplements) showing both rapid onset and kinetic progression of GFP transfer.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:26:58.470429Z"
+    },
+    {
+      "id": "165c6843-a4fe-4345-9690-6bbdca33f7d8",
+      "content_id": "8d5c2a89-5193-48dc-a67b-aca95a42e582",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "GFP fluorescence in receiver cells decays rapidly after isolation from sender cells with a half-life of approximately 2 hours, documenting transient labeling.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C12 and C51 are supported by FACS purification experiments followed by time-course analysis showing rapid GFP decay (Figure 1\u2014figure supplement 1I), providing quantitative evidence for the transient nature of labeling.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:26:58.470429Z"
+    },
+    {
+      "id": "1e205775-bcdf-4d19-9fda-c785b32570a8",
+      "content_id": "8d5c2a89-5193-48dc-a67b-aca95a42e582",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The G-baToN system is highly sensitive, with the fraction of labeled receiver cells proportional to sender cell number, and capable of detecting rare interactions at ratios as low as 1:10^5.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C13 and C57 are supported by dose-response experiments (Figure 1G-H) demonstrating both proportionality and extreme sensitivity, establishing the system's utility for detecting rare cell-cell interactions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:26:58.470429Z"
+    },
+    {
+      "id": "25876837-97f3-401f-b4e0-aeec873b487f",
+      "content_id": "8d5c2a89-5193-48dc-a67b-aca95a42e582",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Optimization of transmembrane domains revealed that the VEGFR2 transmembrane domain on \u03b1GFP receivers enabled the highest transfer efficiency (threefold increase over the original Notch1/PDGFR design).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C14 is supported by systematic comparison experiments (Figure 2A-C) testing multiple transmembrane domains. Claims C59 and C60 provide appropriate citation and context for the starting design.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:26:58.470429Z"
+    },
+    {
+      "id": "8c1d6506-ad19-4a34-87f1-484b2456d463",
+      "content_id": "8d5c2a89-5193-48dc-a67b-aca95a42e582",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The efficiency of GFP transfer correlated with nanobody affinity for GFP, with a minimal affinity threshold required for transfer.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C15 and C61 are supported by experiments testing multiple nanobodies with varying affinities (Figure 2D-F), demonstrating both correlation and threshold effects.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:26:58.470429Z"
+    },
+    {
+      "id": "384f2056-eaee-4811-af9d-fae756f9ea85",
+      "content_id": "8d5c2a89-5193-48dc-a67b-aca95a42e582",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The PDGFR transmembrane domain on sGFP minimized bidirectional retrograde transfer from receiver to sender cells, optimizing unidirectional labeling.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16 and C62 are supported by experiments testing different sGFP transmembrane domains (Figure 2G-I) and quantifying retrograde transfer, identifying the optimal design to minimize false-positive signals.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:26:58.470429Z"
+    },
+    {
+      "id": "b6b809a4-ca12-4962-b527-a4c5b98c8fd3",
+      "content_id": "8d5c2a89-5193-48dc-a67b-aca95a42e582",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The G-baToN system efficiently records cancer cell-endothelial cell interactions in both 2D culture and 3D microfluidic systems.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C17 and C18 are supported by experiments in conventional 2D culture (Figure 3A-B) and 3D microfluidic chips (Figure 3E-G), with C63 providing appropriate summary. The data demonstrate system functionality across different culture formats.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:26:58.470429Z"
+    },
+    {
+      "id": "38acf457-b3d4-4638-9484-b51aae81c3f9",
+      "content_id": "8d5c2a89-5193-48dc-a67b-aca95a42e582",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The G-baToN system records cancer cell-T cell interactions both in vitro and in vivo, with over 60% of \u03b1GFP-expressing CD4 T cells labeled 24 hours after transplantation into tumor-bearing mice.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C19 and C20 are supported by in vitro co-culture experiments (Figure 4A-C) and in vivo transplantation experiments (Figure 4D-E). The quantitative in vivo data demonstrates robust labeling efficiency in a physiologically relevant context.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:26:58.470429Z"
+    },
+    {
+      "id": "078a9db2-3778-42f6-9517-43ee319c2011",
+      "content_id": "8d5c2a89-5193-48dc-a67b-aca95a42e582",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Physical contact between cancer cells and neuronal axons led to punctate GFP granule transport into receiver neurons.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C21 is supported by imaging data (Figure 5A-B) showing specific labeling patterns in neurons after co-culture with cancer cells, demonstrating the system's applicability to neuron-cancer cell interactions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:26:58.470429Z"
+    },
+    {
+      "id": "33707bbe-d557-41fb-821d-559d1f50b91e",
+      "content_id": "8d5c2a89-5193-48dc-a67b-aca95a42e582",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "G-baToN-based labeling is generalizable across diverse cell types, with multiple receiver and sender cell types (including primary cells) capable of GFP transfer.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22 and C23 are supported by systematic testing of multiple cell lines and primary cell types (Figure 5\u2014figure supplement 1), demonstrating broad applicability. However, the extent of optimization required for each cell type is not fully characterized.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:26:58.470429Z"
+    },
+    {
+      "id": "766d2712-e47f-41d7-b6b9-a52fb8079ba4",
+      "content_id": "8d5c2a89-5193-48dc-a67b-aca95a42e582",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Primary endothelial-smooth muscle cell and astrocyte-neuron interactions can be efficiently recorded using G-baToN, demonstrating functionality with primary cells as both senders and receivers.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24 and C25 are supported by experiments with primary HUVECs/HUASMCs (Figure 3C-D) and astrocytes/neurons (Figure 5C-D), establishing that the system works bidirectionally with primary cells.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:26:58.470429Z"
+    },
+    {
+      "id": "38381d3d-b993-4649-b54f-3426c9621b3c",
+      "content_id": "8d5c2a89-5193-48dc-a67b-aca95a42e582",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The G-baToN system can be extended to orthogonal antigen/antibody pairs including BFP/\u03b1GFP, mCherry/\u03b1mCherry, and GCN4/\u03b1GCN4.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26 and C27 are supported by experimental data (Figure 6\u2014figure supplement 1) demonstrating efficient and specific labeling with alternative ligand-receptor pairs, establishing system modularity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:26:58.470429Z"
+    },
+    {
+      "id": "228bb6fc-1a8b-4a8a-939a-357c821f9ca2",
+      "content_id": "8d5c2a89-5193-48dc-a67b-aca95a42e582",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Engineering cells with orthogonal systems in anti-parallel fashion enables reciprocal labeling of both interacting cell types.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C28 is supported by experiments (Figure 6A-B and supplement 2A) showing dual labeling when cells express complementary sender/receiver components, demonstrating bidirectional interaction recording.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:26:58.470429Z"
+    },
+    {
+      "id": "d8dbdb07-a4f1-4df8-8c09-dbe6fd2eb5e4",
+      "content_id": "8d5c2a89-5193-48dc-a67b-aca95a42e582",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Co-expression of \u03b1mCherry and \u03b1GFP on receiver cells enables AND-gate logic for dual-color labeling to identify higher-order interactions with multiple sender cell types.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C29 is supported by experiments (Figure 6C-D and supplement 2B) demonstrating that receiver cells can be labeled with different colors depending on which sender(s) they contact, enabling complex interaction mapping.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:26:58.470429Z"
+    },
+    {
+      "id": "ff36edec-2374-4563-96fb-67382fc3923a",
+      "content_id": "8d5c2a89-5193-48dc-a67b-aca95a42e582",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "HaloTag fusion enables co-transfer of chemical fluorophores (AF660) along with GFP from sender to receiver cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30, C71, and C72 are supported by experiments (Figure 7B-C) showing specific loading of HaloTag-expressing senders and subsequent dual transfer of both protein and chemical fluorophore to receivers.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:26:58.470429Z"
+    },
+    {
+      "id": "976cc30b-ac33-4f56-b798-eb3009f91db8",
+      "content_id": "8d5c2a89-5193-48dc-a67b-aca95a42e582",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Chemical fluorophore transfer using sHalo-GFP provides increased signal-to-noise ratio and higher sensitivity compared to GFP alone.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C31 is supported by comparative data (Figure 7C-D) showing enhanced detection with AF660 versus GFP, though the magnitude of improvement and statistical analysis could be more thoroughly documented.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:26:58.470429Z"
+    },
+    {
+      "id": "a4e818ab-446d-492f-934c-f38479242a14",
+      "content_id": "8d5c2a89-5193-48dc-a67b-aca95a42e582",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "Chemical fluorophores significantly extend label persistence (half-life) in receiver cells compared to GFP protein.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32 and C41 are supported by time-course experiments (Figure 7E) comparing GFP and AF660 decay rates after sender removal, demonstrating tunable labeling persistence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:26:58.470429Z"
+    },
+    {
+      "id": "b2ccc833-5455-45a6-81b8-196704100b69",
+      "content_id": "8d5c2a89-5193-48dc-a67b-aca95a42e582",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "The ratio of AF488 to AF660 in dually labeled receiver cells strongly correlates with the ratio of the two sender populations, enabling quantitative measurement of higher-order interactions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C33 is supported by experiments (Figure 7H) showing R\u00b2=0.99 correlation between sender ratios and receiver fluorophore ratios, demonstrating quantitative capability. However, the dynamic range and limitations are not fully explored.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:26:58.470429Z"
+    },
+    {
+      "id": "4c3aa25b-54df-427a-976e-c7749c53b79e",
+      "content_id": "8d5c2a89-5193-48dc-a67b-aca95a42e582",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "Fusion proteins (sGFP-tdTomato) transfer stoichiometrically to receiver cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C34 is supported by experiments (Figure 8A-B) showing co-transfer of both fluorescent proteins, though the precise stoichiometry and potential for differential degradation are not quantitatively assessed.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:26:58.470429Z"
+    },
+    {
+      "id": "a583977c-ad07-49ab-b3ae-3f862eebff50",
+      "content_id": "8d5c2a89-5193-48dc-a67b-aca95a42e582",
+      "result_id": "R22",
+      "result_category": "llm",
+      "result": "Transfer of sGFP-PuroR fusion protein confers moderate puromycin resistance to touched receiver cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C35 is supported by functional assays (Figure 8C-D) showing increased survival of receiver cells co-cultured with sGFP-PuroR senders under puromycin selection. The 'moderate' resistance is appropriate given the partial protection observed.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:26:58.470429Z"
+    },
+    {
+      "id": "9325c569-0a6a-4617-8319-272cdac4fb62",
+      "content_id": "8d5c2a89-5193-48dc-a67b-aca95a42e582",
+      "result_id": "R23",
+      "result_category": "llm",
+      "result": "HaloTag-conjugated, fluorescently labeled ssDNA can be successfully co-transferred from sender to receiver cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C36 is supported by experiments (Figure 8E-G) showing AF647-labeled DNA transfer, demonstrating cargo versatility. However, the functionality and fate of transferred DNA in receivers is not assessed.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:26:58.470429Z"
+    },
+    {
+      "id": "72abc257-8923-47a8-afc1-0cc65a550250",
+      "content_id": "8d5c2a89-5193-48dc-a67b-aca95a42e582",
+      "result_id": "R24",
+      "result_category": "llm",
+      "result": "The G-baToN system is a generalizable, simple, sensitive, and rapid method for recording diverse cell-cell interactions across multiple cell types.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These summary claims (C2, C37, C38, C58, C74) are well-supported by the collective experimental evidence demonstrating functionality across multiple cell types, culture systems, and interaction types. The characterization of kinetics, sensitivity, and generalizability is thorough.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:26:58.470429Z"
+    },
+    {
+      "id": "c91b20e0-ab0b-4b89-ba33-d7d014eea30a",
+      "content_id": "8d5c2a89-5193-48dc-a67b-aca95a42e582",
+      "result_id": "R25",
+      "result_category": "llm",
+      "result": "Multicolor derivatives enable qualitative and quantitative analysis of higher-order interactions involving more than two cell types.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39 and C79 are supported by reciprocal labeling, AND-gate, and dual-fluorophore experiments (Figures 6-7) demonstrating both qualitative identification and quantitative measurement of complex interactions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:26:58.470429Z"
+    },
+    {
+      "id": "431b6b15-e0e1-4f07-9653-868647deb4f9",
+      "content_id": "8d5c2a89-5193-48dc-a67b-aca95a42e582",
+      "result_id": "R26",
+      "result_category": "llm",
+      "result": "The transient nature of GFP labeling (due to protein lability) is sufficient for stable interactions and ensures labeled receivers are currently or recently in contact with senders.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40, C81, and C82 are supported by GFP decay kinetics data (Figure 1\u2014figure supplement 1I) and time-course experiments. The ~2 hour half-life provides appropriate temporal resolution for many biological interactions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:26:58.470429Z"
+    },
+    {
+      "id": "3fad9758-a213-4fea-a21d-6bfe01b7698a",
+      "content_id": "8d5c2a89-5193-48dc-a67b-aca95a42e582",
+      "result_id": "R27",
+      "result_category": "llm",
+      "result": "baToN systems enable contact-dependent transport of diverse macromolecules (proteins, DNA, small molecules) between cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C73 is supported by experiments demonstrating transfer of fusion proteins (C34), functional proteins (C35), and DNA (C36). This establishes cargo transfer capability, though functional consequences in receivers require further investigation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:26:58.470429Z"
+    },
+    {
+      "id": "e9235679-6414-4c08-8273-6fc50d9cbe29",
+      "content_id": "8d5c2a89-5193-48dc-a67b-aca95a42e582",
+      "result_id": "R28",
+      "result_category": "llm",
+      "result": "The G-baToN system relies on exogenous ligand-receptor pairs which could potentially stabilize cell-cell interactions, though this may be minimized through affinity tuning or inducible expression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C42, C43, C86 accurately describe the system design. However, claims C43, C87, and C88 about potential artifacts and mitigation strategies are speculative without experimental validation. The extent to which exogenous receptors perturb native interactions is not empirically tested.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:26:58.470429Z"
+    },
+    {
+      "id": "e95240b9-a389-4887-8f90-4c9a9f175dd2",
+      "content_id": "8d5c2a89-5193-48dc-a67b-aca95a42e582",
+      "result_id": "R29",
+      "result_category": "llm",
+      "result": "Cell-cell interactions are important but poorly understood, current methods have limitations, and new tools are needed to map interaction networks.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These background claims (C3-C7, C76-C78) are appropriately supported by citations to prior literature and accurately frame the scientific context and motivation for developing G-baToN.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:26:58.470429Z"
+    },
+    {
+      "id": "adb4681c-8bfe-455b-86b4-0fecc47b91ed",
+      "content_id": "8d5c2a89-5193-48dc-a67b-aca95a42e582",
+      "result_id": "R30",
+      "result_category": "llm",
+      "result": "The G-baToN system has potential for future applications including functional cargo delivery, genetic modification of receivers, and broad impact on understanding cell-cell interactions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "These claims (C44, C75, C83, C84, C90-C93) are speculative statements about future applications and impact. While the demonstrated cargo transfer capability (C73) provides proof-of-principle, the specific applications mentioned require additional development and validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:26:58.470429Z"
+    },
+    {
+      "id": "691f0de9-c87a-4084-8063-0d7e9ca389a1",
+      "content_id": "8d5c2a89-5193-48dc-a67b-aca95a42e582",
+      "result_id": "R31",
+      "result_category": "llm",
+      "result": "Recent studies have demonstrated a supportive role for neurons in primary and metastatic brain niches.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C80 is a background statement appropriately supported by citations (Venkatesh et al., 2019; Zeng et al., 2019) providing context for cancer-neuron interaction experiments.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:26:58.470429Z"
+    },
+    {
+      "id": "35f1d26a-56ef-4784-b2ae-e05e16312b88",
+      "content_id": "8d5c2a89-5193-48dc-a67b-aca95a42e582",
+      "result_id": "R32",
+      "result_category": "llm",
+      "result": "A recent secreted cell-permeable mCherry system labels all cells in proximity and lacks true cell-cell interaction specificity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C89 is a comparative statement supported by citation (Ombrato et al., 2019) that accurately distinguishes G-baToN's contact-dependent mechanism from proximity-based approaches.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:26:58.470429Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "5ae22fbb-9406-45dd-b66f-f96bef6de6b6",
+      "result_id": "0f64f667-c1d2-4be1-aaeb-00f1352c165d"
+    },
+    {
+      "claim_id": "f545dd85-fb83-4252-b6a1-7ecd29603d41",
+      "result_id": "0f64f667-c1d2-4be1-aaeb-00f1352c165d"
+    },
+    {
+      "claim_id": "d5ab8325-52fa-4386-8f88-2065ad55e70d",
+      "result_id": "0f64f667-c1d2-4be1-aaeb-00f1352c165d"
+    },
+    {
+      "claim_id": "dcea641d-b89d-465f-8706-014b3d0a2dca",
+      "result_id": "0f64f667-c1d2-4be1-aaeb-00f1352c165d"
+    },
+    {
+      "claim_id": "0bac7904-7eb6-43a5-a9d0-174179139042",
+      "result_id": "0f64f667-c1d2-4be1-aaeb-00f1352c165d"
+    },
+    {
+      "claim_id": "6486a61d-9f19-41fd-8db8-04bc8b4ccb86",
+      "result_id": "0f64f667-c1d2-4be1-aaeb-00f1352c165d"
+    },
+    {
+      "claim_id": "cebecb9d-ad6f-4e54-a820-e7278dd821a4",
+      "result_id": "0f64f667-c1d2-4be1-aaeb-00f1352c165d"
+    },
+    {
+      "claim_id": "3db11543-93f4-4fc4-8227-a2254043cdc3",
+      "result_id": "0f64f667-c1d2-4be1-aaeb-00f1352c165d"
+    },
+    {
+      "claim_id": "3099c298-5b8b-4b4d-83c6-b8312782900a",
+      "result_id": "6c9d50e8-8bf2-4fc7-9930-0458fff22a16"
+    },
+    {
+      "claim_id": "4ed8f2f0-aa76-41eb-a3b1-5ef07140ec4d",
+      "result_id": "6c9d50e8-8bf2-4fc7-9930-0458fff22a16"
+    },
+    {
+      "claim_id": "3cb750c0-fd52-46b2-b7f9-ddca6e5fea7c",
+      "result_id": "6c9d50e8-8bf2-4fc7-9930-0458fff22a16"
+    },
+    {
+      "claim_id": "008f7390-c52a-459e-9afb-7c4b7924e4ea",
+      "result_id": "6c9d50e8-8bf2-4fc7-9930-0458fff22a16"
+    },
+    {
+      "claim_id": "2e560729-89f6-40ab-9828-6f46cf043fcc",
+      "result_id": "6c9d50e8-8bf2-4fc7-9930-0458fff22a16"
+    },
+    {
+      "claim_id": "88882dc2-65b2-4c76-b29b-0f4918c9da02",
+      "result_id": "7485277c-b32d-4e4a-bb1d-dfeb1cd4b297"
+    },
+    {
+      "claim_id": "742d5c97-e85f-4f3a-ab9b-ded15a6c3362",
+      "result_id": "7485277c-b32d-4e4a-bb1d-dfeb1cd4b297"
+    },
+    {
+      "claim_id": "0fa137fc-c480-4c19-bf86-28d944735f1e",
+      "result_id": "7485277c-b32d-4e4a-bb1d-dfeb1cd4b297"
+    },
+    {
+      "claim_id": "4ede80c7-3c7d-4699-9141-41624bacd00c",
+      "result_id": "165c6843-a4fe-4345-9690-6bbdca33f7d8"
+    },
+    {
+      "claim_id": "7d4ec20b-8052-485a-88a9-e8621037d456",
+      "result_id": "165c6843-a4fe-4345-9690-6bbdca33f7d8"
+    },
+    {
+      "claim_id": "b622c3f6-0351-4076-afda-7e56ba92f700",
+      "result_id": "1e205775-bcdf-4d19-9fda-c785b32570a8"
+    },
+    {
+      "claim_id": "addfbe13-6290-4b45-b10a-614dfc1b0a7a",
+      "result_id": "1e205775-bcdf-4d19-9fda-c785b32570a8"
+    },
+    {
+      "claim_id": "2f367371-e3ca-4c6e-aa87-fa3e6806808c",
+      "result_id": "25876837-97f3-401f-b4e0-aeec873b487f"
+    },
+    {
+      "claim_id": "ded2e1a7-72e1-4a54-b0ad-9dbb135fa87d",
+      "result_id": "25876837-97f3-401f-b4e0-aeec873b487f"
+    },
+    {
+      "claim_id": "2f16dacd-2125-4a72-864f-4a6ebfb61beb",
+      "result_id": "25876837-97f3-401f-b4e0-aeec873b487f"
+    },
+    {
+      "claim_id": "5a012117-786d-42bd-ba82-594a424a8c24",
+      "result_id": "8c1d6506-ad19-4a34-87f1-484b2456d463"
+    },
+    {
+      "claim_id": "c883dd36-4d12-4a89-a177-e7d3dbf2d255",
+      "result_id": "8c1d6506-ad19-4a34-87f1-484b2456d463"
+    },
+    {
+      "claim_id": "291554ce-18f8-41d5-aa3c-f3337b64a38c",
+      "result_id": "384f2056-eaee-4811-af9d-fae756f9ea85"
+    },
+    {
+      "claim_id": "7106de58-562c-46a3-a3b6-7f451b5c953f",
+      "result_id": "384f2056-eaee-4811-af9d-fae756f9ea85"
+    },
+    {
+      "claim_id": "2604271c-a946-481e-9ea3-ff27c231f11b",
+      "result_id": "b6b809a4-ca12-4962-b527-a4c5b98c8fd3"
+    },
+    {
+      "claim_id": "d4fa7dff-5498-42e1-a572-cc1a38a4ae37",
+      "result_id": "b6b809a4-ca12-4962-b527-a4c5b98c8fd3"
+    },
+    {
+      "claim_id": "353ff5e6-5d22-465f-b559-b1c8b94f6352",
+      "result_id": "b6b809a4-ca12-4962-b527-a4c5b98c8fd3"
+    },
+    {
+      "claim_id": "d1779d08-d837-46f0-8fb8-a22e33f12b56",
+      "result_id": "38acf457-b3d4-4638-9484-b51aae81c3f9"
+    },
+    {
+      "claim_id": "46d5fa4d-292e-44ef-967b-9a2b64bd7707",
+      "result_id": "38acf457-b3d4-4638-9484-b51aae81c3f9"
+    },
+    {
+      "claim_id": "459efe57-7749-4965-9bba-7480db0575ff",
+      "result_id": "38acf457-b3d4-4638-9484-b51aae81c3f9"
+    },
+    {
+      "claim_id": "e43bd388-a6bd-4e0c-8603-39bacab1e662",
+      "result_id": "078a9db2-3778-42f6-9517-43ee319c2011"
+    },
+    {
+      "claim_id": "87232012-a980-4608-9751-f2c30d11b39d",
+      "result_id": "33707bbe-d557-41fb-821d-559d1f50b91e"
+    },
+    {
+      "claim_id": "06f8a07b-b352-42b3-b640-0062a24ba3c4",
+      "result_id": "33707bbe-d557-41fb-821d-559d1f50b91e"
+    },
+    {
+      "claim_id": "50416193-ca0a-42ad-904d-73a3c2d770a9",
+      "result_id": "33707bbe-d557-41fb-821d-559d1f50b91e"
+    },
+    {
+      "claim_id": "41904e76-04e9-4bce-a6c1-3cad6c7cfc82",
+      "result_id": "766d2712-e47f-41d7-b6b9-a52fb8079ba4"
+    },
+    {
+      "claim_id": "5abfc004-b6f4-480c-a091-8e1c40350581",
+      "result_id": "766d2712-e47f-41d7-b6b9-a52fb8079ba4"
+    },
+    {
+      "claim_id": "3eadc69f-c241-41f1-a49b-58328be7b8b5",
+      "result_id": "766d2712-e47f-41d7-b6b9-a52fb8079ba4"
+    },
+    {
+      "claim_id": "62cf7cc0-d95e-40fd-948c-70fd302ddd1e",
+      "result_id": "38381d3d-b993-4649-b54f-3426c9621b3c"
+    },
+    {
+      "claim_id": "f2e95f92-752c-429f-9fcd-01d849674298",
+      "result_id": "38381d3d-b993-4649-b54f-3426c9621b3c"
+    },
+    {
+      "claim_id": "48edc62d-c067-4717-9f03-1c7864439261",
+      "result_id": "38381d3d-b993-4649-b54f-3426c9621b3c"
+    },
+    {
+      "claim_id": "a1fcbf0e-24c8-4ac0-abfd-84dab2dab2d1",
+      "result_id": "228bb6fc-1a8b-4a8a-939a-357c821f9ca2"
+    },
+    {
+      "claim_id": "00df5a5a-e58e-4113-b73e-eddca5cca8d7",
+      "result_id": "228bb6fc-1a8b-4a8a-939a-357c821f9ca2"
+    },
+    {
+      "claim_id": "b7cee03a-4e4c-4b13-872e-47235de04316",
+      "result_id": "d8dbdb07-a4f1-4df8-8c09-dbe6fd2eb5e4"
+    },
+    {
+      "claim_id": "0f624b27-f8bd-4630-ba85-4e11588c0e65",
+      "result_id": "d8dbdb07-a4f1-4df8-8c09-dbe6fd2eb5e4"
+    },
+    {
+      "claim_id": "95c1bcbf-6f4c-4ce7-a3cc-009e89db24a4",
+      "result_id": "ff36edec-2374-4563-96fb-67382fc3923a"
+    },
+    {
+      "claim_id": "0395c13c-e1ea-4d91-9002-9b0cb09d6591",
+      "result_id": "ff36edec-2374-4563-96fb-67382fc3923a"
+    },
+    {
+      "claim_id": "fc994ea6-0a7b-4111-b442-c2b5081240da",
+      "result_id": "ff36edec-2374-4563-96fb-67382fc3923a"
+    },
+    {
+      "claim_id": "ebe5b134-2604-4861-8cb7-aa1796c84158",
+      "result_id": "976cc30b-ac33-4f56-b798-eb3009f91db8"
+    },
+    {
+      "claim_id": "0ad341da-1d18-4c11-bc9e-eaaff017fc99",
+      "result_id": "a4e818ab-446d-492f-934c-f38479242a14"
+    },
+    {
+      "claim_id": "2d486e96-4a6b-4427-b1fb-a0daf02b43bb",
+      "result_id": "a4e818ab-446d-492f-934c-f38479242a14"
+    },
+    {
+      "claim_id": "d340e494-b998-4267-82b8-be836e9a1aa2",
+      "result_id": "b2ccc833-5455-45a6-81b8-196704100b69"
+    },
+    {
+      "claim_id": "8f27ac8f-d28f-4693-9673-095ec8cc11ed",
+      "result_id": "4c3aa25b-54df-427a-976e-c7749c53b79e"
+    },
+    {
+      "claim_id": "28d742e0-06ab-4418-9727-419cdec51da3",
+      "result_id": "a583977c-ad07-49ab-b3ae-3f862eebff50"
+    },
+    {
+      "claim_id": "5331bb6b-d3db-4890-add4-a318c211374a",
+      "result_id": "9325c569-0a6a-4617-8319-272cdac4fb62"
+    },
+    {
+      "claim_id": "3b869f48-a07e-4d90-824b-e3fef5e1fdcc",
+      "result_id": "72abc257-8923-47a8-afc1-0cc65a550250"
+    },
+    {
+      "claim_id": "2c4623d3-7a91-4b3e-9dc3-96589e0df462",
+      "result_id": "72abc257-8923-47a8-afc1-0cc65a550250"
+    },
+    {
+      "claim_id": "cddde51a-56a1-4f53-b2b4-cb0b7cc452c4",
+      "result_id": "72abc257-8923-47a8-afc1-0cc65a550250"
+    },
+    {
+      "claim_id": "abc8d317-ef33-4339-bc02-20e8ecda8d54",
+      "result_id": "72abc257-8923-47a8-afc1-0cc65a550250"
+    },
+    {
+      "claim_id": "30a498f4-a736-4670-b24f-3e7788572761",
+      "result_id": "72abc257-8923-47a8-afc1-0cc65a550250"
+    },
+    {
+      "claim_id": "d3277a62-90bf-4847-b184-579657624e27",
+      "result_id": "c91b20e0-ab0b-4b89-ba33-d7d014eea30a"
+    },
+    {
+      "claim_id": "32daa3fd-34f3-4a17-9c0e-a653255443b5",
+      "result_id": "c91b20e0-ab0b-4b89-ba33-d7d014eea30a"
+    },
+    {
+      "claim_id": "eadada04-925f-4ab9-8223-dab4ed992533",
+      "result_id": "431b6b15-e0e1-4f07-9653-868647deb4f9"
+    },
+    {
+      "claim_id": "7aee9a55-62f6-45c8-8f8d-1690a2312ce6",
+      "result_id": "431b6b15-e0e1-4f07-9653-868647deb4f9"
+    },
+    {
+      "claim_id": "70f64952-a0d0-41b1-81e6-b1fa32165300",
+      "result_id": "431b6b15-e0e1-4f07-9653-868647deb4f9"
+    },
+    {
+      "claim_id": "363840b1-4c19-4044-b113-c1c68d8feb87",
+      "result_id": "3fad9758-a213-4fea-a21d-6bfe01b7698a"
+    },
+    {
+      "claim_id": "4f773f10-2856-4167-94f8-6a9081dbb23e",
+      "result_id": "e9235679-6414-4c08-8273-6fc50d9cbe29"
+    },
+    {
+      "claim_id": "f478f33f-0392-4f85-8cd1-8550c33ae43d",
+      "result_id": "e9235679-6414-4c08-8273-6fc50d9cbe29"
+    },
+    {
+      "claim_id": "7cb9b6a0-b281-4991-8fb0-4da23fdc9426",
+      "result_id": "e9235679-6414-4c08-8273-6fc50d9cbe29"
+    },
+    {
+      "claim_id": "8a43ae99-3df8-4fb1-8551-5d8816355101",
+      "result_id": "e9235679-6414-4c08-8273-6fc50d9cbe29"
+    },
+    {
+      "claim_id": "2ed1d8b6-0cb2-4cd0-a328-6dc23fac1a0f",
+      "result_id": "e9235679-6414-4c08-8273-6fc50d9cbe29"
+    },
+    {
+      "claim_id": "ef7c1d40-203e-434a-892e-6d1e6fd03434",
+      "result_id": "e9235679-6414-4c08-8273-6fc50d9cbe29"
+    },
+    {
+      "claim_id": "bb22d42c-1c74-4088-b0df-eeb6c5e7ccee",
+      "result_id": "e95240b9-a389-4887-8f90-4c9a9f175dd2"
+    },
+    {
+      "claim_id": "1504c641-87d2-43b0-8eed-546e92ee1900",
+      "result_id": "e95240b9-a389-4887-8f90-4c9a9f175dd2"
+    },
+    {
+      "claim_id": "9eaac6f8-7a7e-47e6-920e-4dc6b6c09012",
+      "result_id": "e95240b9-a389-4887-8f90-4c9a9f175dd2"
+    },
+    {
+      "claim_id": "90720846-6dfa-4971-9506-b510275f4c1b",
+      "result_id": "e95240b9-a389-4887-8f90-4c9a9f175dd2"
+    },
+    {
+      "claim_id": "e3a0eefb-dca4-4d6a-aa20-cf1a2e4cb6fa",
+      "result_id": "e95240b9-a389-4887-8f90-4c9a9f175dd2"
+    },
+    {
+      "claim_id": "d78397ab-a6e2-465a-80aa-9e327b0c51fc",
+      "result_id": "e95240b9-a389-4887-8f90-4c9a9f175dd2"
+    },
+    {
+      "claim_id": "f2e14255-d46c-454e-9e4c-089a7bebed2d",
+      "result_id": "e95240b9-a389-4887-8f90-4c9a9f175dd2"
+    },
+    {
+      "claim_id": "105dfac3-8f97-4e99-93dd-b76c8ddf335a",
+      "result_id": "e95240b9-a389-4887-8f90-4c9a9f175dd2"
+    },
+    {
+      "claim_id": "b5029ee9-d7aa-48a5-b796-053fdd6c2420",
+      "result_id": "adb4681c-8bfe-455b-86b4-0fecc47b91ed"
+    },
+    {
+      "claim_id": "338c43f7-87f5-4010-b500-7cb6215c405c",
+      "result_id": "adb4681c-8bfe-455b-86b4-0fecc47b91ed"
+    },
+    {
+      "claim_id": "1a723b9b-497f-4fbf-bb62-3c5074f89c9d",
+      "result_id": "adb4681c-8bfe-455b-86b4-0fecc47b91ed"
+    },
+    {
+      "claim_id": "5da460dc-5f20-4124-9b64-dce4c3384a89",
+      "result_id": "adb4681c-8bfe-455b-86b4-0fecc47b91ed"
+    },
+    {
+      "claim_id": "a3177fbb-0b43-47af-8bdd-52e5de8b439b",
+      "result_id": "adb4681c-8bfe-455b-86b4-0fecc47b91ed"
+    },
+    {
+      "claim_id": "31a3f95c-e71b-4563-8d63-754620eddbf5",
+      "result_id": "adb4681c-8bfe-455b-86b4-0fecc47b91ed"
+    },
+    {
+      "claim_id": "0e0a31f5-c0c9-49e1-b65a-c5d55296ef39",
+      "result_id": "adb4681c-8bfe-455b-86b4-0fecc47b91ed"
+    },
+    {
+      "claim_id": "7774a6bf-48b8-4ab7-94dd-480f90c480e8",
+      "result_id": "adb4681c-8bfe-455b-86b4-0fecc47b91ed"
+    },
+    {
+      "claim_id": "05f04769-06f3-48a9-ada1-3681c9086e16",
+      "result_id": "691f0de9-c87a-4084-8063-0d7e9ca389a1"
+    },
+    {
+      "claim_id": "3024ae1e-6ca7-4c45-8eb2-6bb563db5600",
+      "result_id": "35f1d26a-56ef-4784-b2ae-e05e16312b88"
+    }
+  ],
+  "comparisons": []
+}

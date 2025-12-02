@@ -1,0 +1,1684 @@
+{
+  "submission": {
+    "id": "caaa0c07-0b87-4925-8cda-b4181c1f677d",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T06:22:34.720231Z",
+    "updated_at": "2025-12-02T06:22:34.720231Z"
+  },
+  "content": [
+    {
+      "id": "a92f06e7-d68e-4f0c-9aa6-824c717e099c",
+      "submission_id": "caaa0c07-0b87-4925-8cda-b4181c1f677d",
+      "content_type": "manuscript",
+      "content_text": "# Optogenetics enables real-time spatiotemporal control over spiral wave dynamics in an excitable cardiac system\n\n## Authors\n\n- Rupamanjari Majumder<sup>1</sup> ([ORCID: 0000-0002-3851-9225](https://orcid.org/0000-0002-3851-9225))\n- Iolanda Feola<sup>1</sup> ([ORCID: 0000-0001-9645-6384](https://orcid.org/0000-0001-9645-6384))\n- Alexander S Teplenin<sup>1</sup> ([ORCID: 0000-0001-7841-376X](https://orcid.org/0000-0001-7841-376X))\n- Antoine AF de Vries<sup>1</sup>\n- Alexander V Panfilov<sup>2</sup> \u2020\n- Daniel A Pijnappels<sup>1</sup> ([ORCID: 0000-0001-6731-4125](https://orcid.org/0000-0001-6731-4125)) \u2020\n\n### Affiliations\n\n1. Laboratory of Experimental Cardiology, Department of Cardiology, Heart Lung Center Leiden University Medical Center Leiden The Netherlands\n2. Department of Physics and Astronomy Gent University Gent Belgium\n3. Laboratory of Computational Biology and Medicine Ural Federal University Ekaterinburg Russia\n\n\u2020 Corresponding author\n\n## Abstract\n\nPropagation of non-linear waves is key to the functioning of diverse biological systems. Such waves can organize into spirals, rotating around a core, whose properties determine the overall wave dynamics. Theoretically, manipulation of a spiral wave core should lead to full spatiotemporal control over its dynamics. However, this theory lacks supportive evidence (even at a conceptual level), making it thus a long-standing hypothesis. Here, we propose a new phenomenological concept that involves artificially dragging spiral waves by their cores, to prove the aforementioned hypothesis in silico, with subsequent in vitro validation in optogenetically modified monolayers of rat atrial cardiomyocytes. We thereby connect previously established, but unrelated concepts of spiral wave attraction, anchoring and unpinning to demonstrate that core manipulation, through controlled displacement of heterogeneities in excitable media, allows forced movement of spiral waves along pre-defined trajectories. Consequently, we impose real-time spatiotemporal control over spiral wave dynamics in a biological system.\n\n## Introduction\n\nSelf-organization of macroscopic structures through atomic, molecular or cellular interactions is characteristic of many non-equilibrium systems. Such emergent dynamic ordering often reveals fundamental universalities (Cross and Hohenberg, 1993). One example is the occurrence of rotating spiral waves. Spiral waves are found in diverse natural systems: from active galaxies (Schulman and Seiden, 1986), to simple oscillatory chemical reactions (Belousov, 1985; Zhabotinsky, 1991), to social waves in colonies of giant honey bees (Kastberger et al., 2008), to Min protein gradients in bacterial cell division (Caspi and Dekker, 2016), and to the formation of vortices in fluids flowing past obstacles (Karman, 1937). While being beneficial to some systems, for\u00a0example slime molds, where they guide morphogenesis, such activity has detrimental consequences for other systems including the heart, where they underlie lethal cardiac arrhythmias (Davidenko et al., 1990). Understanding the dynamics of spiral waves in order to establish functional control over a system, has intrigued researchers for many decades. It has been reported that irrespective of the nature of the excitable medium, spiral wave activity organizes around an unexcitable center (core), whose properties determine its overall dynamics (Krinsky, 1978; Beaumont et al., 1998). Theorists attribute such particle-like behavior of a spiral wave to an underlying topological charge, which controls its short-range interaction, annihilation, and the ability to form intricate bound states with other spirals (Ermakova et al., 1989; Schebesch and Engel, 1999; Steinbock et al., 1992).\n\nRotational activity similar to spiral waves can also occur around small structural or functional heterogeneities (e.g. areas of conduction block). In this case, the dynamics of the rotating wave and its spatial position are determined by the location and properties of the heterogeneity. Thus, in theory, by controlling the position and size of spiral wave cores, one can precisely and directly control the dynamics of spiral waves in general. In order to achieve such control, it is therefore logical, to consider as a first step, possible core-targeting via the conversion of a free spiral wave to an anchored rotational activity. To this end, a detailed mechanistic study was performed by Steinbock et al. (1993), who demonstrated the possibility to forcibly anchor meandering spiral waves in an excitable light-sensitive Belousov-Zhabotinsky (BZ) reaction system. Furthermore, Ke et al. (2015) demonstrated in a three-dimensional BZ reaction setting, that forced anchoring of scroll waves to thin glass rods, followed by subsequent movement of the rods themselves, could enable scroll wave relocation. On a broader perspective, this could have significant meaning for the heart, where controlling the dynamics of scroll waves could add to the treatment of cardiac arrhythmias sustained by such waves.\n\nIn cardiac tissue, the analogs of a classical spiral wave and a wave rotating around a heterogeneity, are, respectively, functional and anatomical reentry, both of which are recognized as drivers of arrhythmias. Interestingly, functional and anatomical reentrant waves are closely related to each other. Seminal findings by Davidenko et al. (1991) demonstrated that a drifting spiral wave could anchor to an obstacle and thereby make a transition from functional to anatomical reentry. Conversely, Ripplinger et al. (2006) showed that small electric shocks could unpin a reentrant wave rotating around an obstacle, bringing about the reverse transition from anatomical to functional reentry. Nakouzi et al. (2016) and Zykov et al. (2010) demonstrated that the transitions between anchored and free spiral states may be accompanied by hysteresis near the heterogeneities. Furthermore, Defauw et al. (2014) showed that small-sized anatomical heterogeneities could attract spiral waves from a close distance, and even lead to their termination if located near an unexcitable boundary. However, to date, all studies dedicated to spiral wave attraction and anchoring involved the presence of anatomically predefined, permanent heterogeneities, or continuous-in-time processes, thereby making it impossible to manipulate spiral wave cores in a flexible, systematic and dynamical manner. In the present study, we propose a new phenomenological concept to demonstrate real-time spatiotemporal control over spiral wave dynamics through discrete, systematic, manipulation of spiral wave cores in a spatially extended biological medium, that\u00a0is cardiac tissue. We establish such control through optogenetics (Boyden et al., 2005; Bi et al., 2006; Deisseroth, 2015; McNamara et al., 2016), which allows the creation of spatially and temporally predefined heterogeneities at superb resolution at any location within an excitable medium. Previous studies for\u00a0example by Arrenberg et al. (2010); Bruegmann et al. (2010); Jia et al. (2011); Bingen et al. (2014); Entcheva and Bub (2016) and Burton et al. (2015), demonstrate the power of optogenetics in cardiac systems. Thus, the same technology was chosen to strategically exploit fundamental dynamical properties of spiral waves, like attraction, anchoring and unpinning, to discretely and effectively steer spiral wave cores along any desired path within an excitable monolayer of cardiac cells. These findings are highly relevant for understanding non-linear wave dynamics and pattern formation in excitable biological media, as they enable, for the first time, real-time discrete dynamic control over processes that are associated with self-sustained spiraling phenomena, for\u00a0example reentrant electrical activity, cAMP cycles and movement of cytosolic free Ca2+, to name a few. In particular, in the heart, tight control of spiral waves may allow restoration of normal wave propagation.\n\n## Results\n\nSelf-sustained spiral waves can be actively generated in most natural excitable media. In this study, we induced spiral waves of period $60\\pm5$ ms in silico and of period $63\\pm11$ ms in vitro in confluent monolayers of optogenetically modified neonatal rat atrial cardiomyocytes (see Materials\u00a0and\u00a0methods for details). Targeted application of light to the monolayers led to the sequential occurrence of two events: (i) creation of a spatially predefined temporal heterogeneity (i.e. a reversible conduction block) near the core of a spiral wave, and (ii) emergence of a wave from the spot of illumination. In a previous study (Feola et al., 2017), we demonstrated the possibility to create such a temporal heterogeneity with optical control over the size, location and duration of the block. Here, we show how creation of a light-induced block close to the core of a spiral wave, can attract the spiral wave tip, causing it to eventually anchor to the block. Subsequent movement of the light spot to different locations within the monolayer, results in dragging of the spiral wave along a predefined pathway of illumination, thereby giving rise to, what we call Attract-Anchor-Drag-based (AAD) control. Figure 1A illustrates a schematic diagram of the experimental setup that we used for our in vitro studies, whereas the sequence of light patterns used for real-time AAD control is described in Figure 1B. Figure 1 (C1-4) and 1(D1-4) show representative examples of AAD control of spiral wave dynamics in silico and in vitro, respectively, where the spiral wave core is dragged along a predefined $9$-step triangular path (see also Video 1). Our results demonstrate the possibility to capture a spiral wave, to manipulate its trajectory in a spatiotemporally precise manner (Figures 1 C2\u20133\u00a0and D2 , and, finally, to release it in order to rotate freely again (Figure 1 C4, D4). Thus, we prove that it is indeed possible to directly and precisely manipulate the spatial location of a stable spiral wave core, and thereby overcome the constraints imposed by internal and external factors that shape the natural meander and drift trajectories. Such control is very important because it provides a direct and effective handle over the spatiotemporal patterning of the system, which would affect its general functionality. Natural systems currently suffer from the lack of such a handle (Mikhailov and Showalter, 2006; Mikhailov and Loskutov, 1996). Spiral wave dragging seeks to fill this lacuna at the simplest level.\n\n![Video 1.](https://cdn.elifesciences.org/articles/41076/elife-41076-video1.mp4.jpg)\n\n**Video 1.:** In vitro A emphasizes the shape of the wave front. In vitro B shows the same data, but processed to show more clearly, what happens during the application of the light spots.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/41076/elife-41076-fig1-v2.jpg)\n\n**Figure 1.:** (A) Schematic diagram of our in vitro setup, showing how we project light patterns on an optogenetically modified monolayer. (B) The sequence of light spots that constitute the desired triangular trajectory of the spiral core. (C1\u2013C4) In silico AAD control data recorded at subsequent times; (D1\u2013D4) In vitro corroboration of our in silico findings (n\u00a0=\u00a09). In panels (C) and (D), the current location of the applied light spot is indicated with a filled blue circle, whereas, the schematic movement of the tip of the spiral wave, as it is anchored to the location of the light spot at previous time points, is indicated in each frame by means of dashed red (in silico) and white (in vitro) lines. The location of the phase singularity of the spiral wave is marked in the first and last frame of panels (C) and (D) with a red (in silico) or white (in vitro) asterisk. a.u., arbitrary units. A video demonstrating the process of dragging a spiral wave core along a triangular trajectory is presented in Video 1.\n\nAn immediate application of such a process, that follows dynamic manipulation of spiral waves, involves using this technique to terminate complex spiral wave activity. We first focus on removing a single spiral wave in silico (Figures 2 A1\u20135; see also Video 2). With a five-step drag sequence of circular light spots of $0.275$ cm diameter and $250$ ms illumination time per spot, we demonstrate the possibility to remove a spiral wave from a monolayer, by capturing its core somewhere near the middle of the simulation domain and subsequently dragging it all the way to the unexcitable boundary on the left, causing the phase singularity to collide with the border and annihilate. The representative trajectory of the spiral wave, as it is dragged to termination, is shown in Figure 2 (A2-4) with dashed red lines. The direction of movement of the spiral is indicated in each frame with red arrows. Inspired by the outcome of our in silico experiments, we tested the same principle in vitro, with a five-step drag sequence of circular light spots with similar characteristics as those applied in silico. Our in vitro findings corroborate the in silico results (Figures 2 B1\u20135; see also Video 2). The representative trajectory of this spiral wave, as it is dragged to termination, is shown in Figure 2 (B2-4) with dashed white lines. In each frame of Figure 2, the location of the light spot is marked with a transparent blue circle.\n\n![Video 2.](https://cdn.elifesciences.org/articles/41076/elife-41076-video2.mp4.jpg)\n\n**Video 2.:** In vitro A emphasizes the shape of the wave front. In vitro B shows the same data, but processed to show more clearly, what happens during the application of the light spots.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/41076/elife-41076-fig2-v2.jpg)\n\n**Figure 2.:** The upper panel (A1\u2013A6) shows successful removal of a spiral wave in silico, by capturing its core from the center of the simulation domain, and dragging it to the left boundary in a stepwise fashion (\u00a0$\\tau_{light}=250\u00a0ms$\u00a0and $\\tau_{dark}=1\u00a0ms$ per spot, period of the reentry around the spot is\u00a0$78\\pm2\u00a0ms$). The lower panel (B1\u2013B6) shows in vitro proof of the results presented in panel (A) (n\u00a0=\u00a09). For each light spot, the current location of the applied light spot is indicated with a filled blue circle ($\\tau_{light}=250\u00a0ms$ and $\\tau_{dark}=15\u00a0ms$, period of the reentry around the spot is\u00a0$90\\pm12\u00a0ms$). The schematic movement of the tip of the spiral wave, as it is anchored to the location of the light spot at previous time points, is indicated in each frame by means of dashed red (in silico) and white (in vitro) lines. The location of the phase singularity of the spiral wave is marked in the first frame of each panel with a red (in silico) or white (in vitro) asterisk. a.u., arbitrary units. A video demonstrating the complete process of dragging a spiral wave core from the center of the monolayer to the left border, causing its termination, is presented in Video 2. (Time t\u00a0=\u00a00\u00a0ms\u00a0denotes the moment when the light is applied).\n\nHaving proven the possibility to drag single spiral waves to unexcitable tissue borders in favor of termination, we attempt to develop an in-depth in silico qualitative understanding of the parameters that play a crucial role in the dragging process. We focus on the previously described case: linear five-step dragging from the center of the simulation domain to a point on the periphery, with continuous illumination, and start by investigating the dependence of the probability of successful dragging ($P_{drag}$), on the diameter ($d$) of a continuously illuminated moving spot (i.e. without a finite time gap between successive applications of light). Our study reveals a positive correlation between $P_{drag}$ and $d$. At $d\u22723$ mm, the minimum time ($\\tau_{min}$) required for relocation of a spiral wave to the next position decreases abruptly with increasing $d$. However, at $d>3$ mm, $\\tau_{min}$ decreases slowly, trending towards a possible saturation value. These results are illustrated in Figure 3. Traces of the spiral tip trajectory (indicated by means of red lines on top of a representative frame depicted in Figure 3 A1\u2013A3) demonstrate that the ease with which a spiral core can be dragged, from the center of the domain to a border, increases with increasing $d$. At small $d$, the spiral tip is dragged along a cycloidal path, in which, the diameter of the loop is $O(d)$. As $d$ increases, the spiral tends to translate linearly, without executing rotational movement about the core.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/41076/elife-41076-fig3-v2.jpg)\n\n**Figure 3.:** Panel A shows representative dragging events as a spiral wave core is relocated from the center of the simulation domain to the periphery, with light spots of diameter $d$=$0.175$, $0.275$ and $0.4$ cm, respectively. In each case, the real trajectories of the spiral tip is marked with solid red lines on top of the voltage map. When $d$ is large, the spiral tip exhibits a tendency to move along a linear path, as opposed to the cycloidal trajectory at small $d$. With $d=0.275cm$, (B) probability of successful dragging ($P_{drag}$) increases, and (C) spiral core relocation time ($\\tau_{min}$) decreases, with increasing $d$. In each of the afore-mentioned cases, the dragging process is illustrated with zero dark interval ($\\tau_{dark}$) and minimal light interval ($\\tau_{light}$). (D) With finite non-zero $\\tau_{dark}$, $P_{drag}$ increases with shortening of $\\tau_{dark}$, for light stimulation of afixed cycle length ($200$ ms). (E) Dependence of $P_{drag}$ on $\\tau_{dark}$, for three different light intervals ($\\tau_{light}$). (F) Schematic representation of the drag angle $\\theta$ and the distance ($r$) between the starting location of the spiral tip and the location of the applied light spot. (G) Distribution of $P_{drag}$ at different $\\theta$ and $r$, thresholded at 50%. (H) AAD control is effectuated by alternate transitions between functional (free wave) and anatomical (anchored wave) reentry. The phase singularity of the free spiral is marked with a black asterisk, whereas, the point of attachment of the anchored wave to the heterogeneity is marked with a black dot.\n\nTo investigate the conditions that allow spiral wave dragging with discrete light pulses, we apply a series of circular light spots of duration $\\tau_{light}$. These spots appear sequentially in time, and are physically separated in space, with gradually decreasing distance from the boundary. For simplicity, we apply all spots along the same line, drawn from the center of the simulation domain to the boundary. We define the time gap between successive light pulses (when the light is off everywhere) as the dark interval $\\tau_{dark}$. Thus, effectively, our optical stimulation protocol is periodic in time (with period $\\tau_{light}+\\tau_{dark}$), but not in space. We perform two sets of studies for the case of linear dragging. In the first set, we fix $\\tau_{light}+\\tau_{dark}$ at $200$ ms and tune $\\tau_{dark}$. In the second set, we fix $\\tau_{light}$ (three different values) and tune $\\tau_{dark}$. Our results indeed demonstrate the occurrence of AAD control with discrete illumination ($\\tau_{dark}\\neq0$ ms). Figure 3D shows, for example, that at $\\tau_{dark}=0$, $80$, $120$, and $180$ ms, respectively, $P_{drag}$ decreases from 80% to 20% to 10%. Interestingly, $\\tau_{dark}=80ms$ appears to be as effective as continuous illumination ($\\tau_{dark}=0$ ms, Figure 3D). Thus, our findings confirm that, for a fixed cycle length of optical stimulation by a spot of light of diameter $d=0.275$ cm, $P_{drag}$ increases with decreasing $\\tau_{dark}$.\n\nIf, however, we tune to explore the dependence of $P_{drag}$ on $\\tau_{light}$ at flexible cycle lengths, there is no clear relationship between $P_{drag}$ and $\\tau_{light}$ (Figure 3E), despite an increase in the ease of attraction of the spiral tip towards the illuminated spot at short $\\tau_{dark}$. In general, $\\tau_{light}\u2243O(0.1\\tau_{dark}$) does not lead to effective AAD control, whereas, $\\tau_{light}\u2243\ud835\udcaa(10\\tau_{dark},\\tau_{dark}\\neq0)$ does. However, exceptional cases also exist. For example, (i) $P_{drag}$\u00a0can be large (i.e. $70%$) when a short light pulse ($\\tau_{light}=20$ ms) is followed by a long dark interval ($\\tau_{dark}=100$ ms); and, (ii) combinations of abbreviated $\\tau_{light}$ and $\\tau_{dark}$ (i.e. $\\tau_{light}=20$ ms, $\\tau_{dark}=20$ ms)\u00a0can lead to lower $P_{drag}$ than pulse combinations with shorter or longer $\\tau_{dark}$.\n\nWe find that probability of attraction also depends on the phase of the spiral wave rotation at the moment of light exposure. This dependence, in simple terms, can be quantified as dependence on the angle between the vector along the instantaneous direction of motion of the spiral tip $a\u2192$ and the vector $r\u2192$ of the displacement of the center of the circular light spot, in polar coordinate system. This is illustrated in Figure 3F. Our results demonstrate that spiral wave dragging occurs most efficiently if the spot of light is applied sufficiently close to the location of the spiral tip and within an angular spread of $\u0394\\theta_{X}$ in the direction of drift of the spiral core (Figure 3G). Here, $X$ denotes the cutoff probability for the occurrence of dragging, that\u00a0is\u00a0$\u0394\\theta_{50%}$ refers to an angular spread of $\u0394\\theta$ for which $P_{drag}\\geq50%$. A spiral wave cannot be dragged when $r$ > $5.63$ mm. When $4.7$ mm < $r$ < $5.63$ mm, $\u0394\\theta_{50%}$ = $150^{\u2218}$. $P_{drag}$ increases to $240^{\u2218}$ when $3.44$ mm < $r$ < $4.7$ mm, and to $360^{\u2218}$\u00a0when $r$ < $3.44$ mm. Furthermore, to develop a detailed understanding of the physical mechanisms involved in spiral wave dragging, the nature of the process itself is analyzed. Our in silico findings indicate that successful control necessitates the spiral wave to make alternate transitions between functional (free) and anatomical (anchored) types of reentry. When a spot of light is applied reasonably close to the core of a spiral wave, within the allowed $\u0394\\theta$, it creates a region of light-induced depolarization that attracts and anchors the core of the free spiral, thereby effectuating a transition from functional to anatomical reentry. When the light spot is now moved to a different location, still within the basin of attraction of the first light spot, the previously depolarized region recovers, forcing the anchored spiral to unpin and make a reverse transition to functional reentry. The larger the value of $\\tau_{dark}$, the more visible the transition. Finally, at the new location of the light spot, a zone of depolarization is created, which either attracts and anchors the spiral tip, or produces a new wave of excitation that replaces the existing spiral wave with a new one, still followed by attraction and anchoring. A sequence of in silico voltage maps in support of the proposed mechanism, is shown in Figure 3H.\n\nWith a detailed understanding of the parameters involved in the process of spiral wave dragging, we explore the possibility to apply this phenomenon to tackle more challenging problems, such as, termination of complex patterns of reentry. We specifically target two patterns: (i) figure-of-eight type reentry, and (ii) reentry characterized by multiple spiral waves, that\u00a0is multiple phase singularities. In silico, we find that figure-of-eight type reentry can be removed efficiently by dragging the cores of both spiral waves towards each other, till their phase singularities collide, leading to self-annihilation.\n\nFigure 4 (A1-6) (see also Video 3) show subsequent steps in the process of removal of a figure-of-eight type reentry via AAD control, when the reentry pattern comprises two spirals of opposite chirality, rotating in phase with each other. Figure 4 (B1-6) (see also Video 3) show successful experimental (in vitro) validation of our in silico findings, following the same termination protocol. When the figure-of-eight type reentry comprises two spirals of opposite chirality that do not rotate exactly in phase, the strategy should be to capture the cores of the pair of spirals with light spots of unequal sizes, so as to compensate for the difference in phases, at the very first step of the control method. A representative example of such a scenario is presented in the Figure 4\u2014figure supplement 1.\n\n![Video 3.](https://cdn.elifesciences.org/articles/41076/elife-41076-video3.mp4.jpg)\n\n**Video 3.:** In vitro A emphasizes the shape of the wave front. In vitro B shows the same data, but processed to show more clearly, what happens during the application of the light spot.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/41076/elife-41076-fig4-v2.jpg)\n\n**Figure 4.:** The upper panel (A1\u2013A6) shows representative in silico voltage maps of the drag-to-termination process, at subsequent times. The lower panel\u00a0(B1-B6) provides experimental (in vitro) validation of the findings presented in panel (A) (n\u00a0=\u00a06). In each case, the locations of the phase singularities are marked on the first frame of each panel with a red (in silico) or a white (in vitro) asterisk. The current location of the applied spot of light is indicated with a filled blue circle. The schematic movement of the tip of the spiral wave, as it is anchored to the location of the light spot at previous time points, is indicated in each frame by means of dashed red (in silico) and white (in vitro) lines. The direction of dragging is indicated in panel (A) with red arrows. In our studies, we terminated figure-of-eight type reentry by dragging $2$ spiral cores toward each other to make them collide and annihilate. a.u., arbitrary units. A video demonstrating AAD control (with eventual termination) of a figure-of-eight type reentry is presented in Video 3. (Time t\u00a0=\u00a0$0\u00a0ms$\u00a0denotes the moment when the light is applied.).\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/41076/elife-41076-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A1) Positions of phase singularities of the initial reentrant pattern are marked with red asterisks. (A2) Phase correction of spirals by anchoring to light spots of different sizes. (A3-5) Formation of a single multi-arm spiral. (A6-9) Dragging the multi-arm spiral to termination. In each frame, the current position of the light spot is marked with a filled blue circle. The approximate trajectory of the dragged reentrant pattern is shown with dashed red lines.\n\nIn order to terminate reentry characterized by multiple phase singularities, we try different approaches. Figure 5 (A1-7) and (B1-7) (see also Video 4) illustrate two examples of such attempts in silico with reentry characterized by three and seven\u00a0phase singularities, respectively. With three spiral cores, we follow a strategy which is a combination of the cases presented in Figures 4\u00a0and 2 that\u00a0is\u00a0we capture all three cores (Figure 5A2), drag them toward each other (Figure 5A3), reduce complexity via annihilation of two colliding phase singularities (Figure 5 A4\u20135), and drag the remaining spiral core to termination via collision of its phase singularity with the unexcitable boundary (Figures 5 A6\u20137). However, with higher complexity, there is no unique optimal approach that leads to the termination of reentry. In the example presented in Figure 5 (B1-7), we rely on reducing the complexity of the reentrant pattern itself, via strategic application of two light spots, prior to the actual dragging process. New waves emerging from the locations of the applied light spots interact with the existing electrical activity in the monolayer to produce new phase singularities, which collide with some of the preexisting ones to lower the complexity of the reentrant pattern. With reduced complexity, we drag the spiral cores toward each other, till they merge to form a single two-armed spiral, anchored to the applied light spot. We then drag this spiral to the boundary of the monolayer causing its termination. A similar strategy applied in vitro enabled successful termination of a complex reentry pattern characterized by four\u00a0phase singularities. This is illustrated in Figure 5 (C1-7). At the instant when the first set of light spots is applied, reentry is characterized by four\u00a0phase singularities (Figure 5C1). Note that, of the four\u00a0phase singularities, two\u00a0coincide with the locations of two of the applied light spots and two are located away from the third light spot (Figure 5C2). These first two\u00a0phase singularities anchor immediately to the applied light spots. However, the other two interact with the new wave generated by the third applied light spot and reduce to one\u00a0phase singularity, which remains free (unanchored) (Figure 5C3). When the next set of light spots are applied (in a complex pattern of three overlapping circles), this phase singularity displays attraction to the new light spot, thus effectively producing a three-armed spiral (Figure 5C4). Finally, when the complex light pattern is replaced by a smaller circular spot of light, the three-armed spiral loses two of its arms through interaction with the emergent new wave from the location of the applied light spot (Figure 5C5). The single spiral can then be dragged to termination (Figures 5 C6\u20137) as in Figure 2.\n\n![Video 4.](https://cdn.elifesciences.org/articles/41076/elife-41076-video4.mp4.jpg)\n\n![Video 5.](https://cdn.elifesciences.org/articles/41076/elife-41076-video5.mp4.jpg)\n\n**Video 5.:** This video was produced in the same manner as described above for In vitro A.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/41076/elife-41076-fig5-v2.jpg)\n\n**Figure 5.:** Panels (A) and (B) show representative in silico voltage maps of the drag-to-termination process for stable reentrant activity with\u00a0three\u00a0and seven\u00a0phase singularities, respectively. Panel (C) shows representative in vitro voltage maps of the drag-to-termination process for stable reentrant activity with four\u00a0phase singularities. Number and the position of the light spots, indicated with blue filled circles, are strategically applied to first capture the existing spiral waves, and then drag them to termination, following the same principle as in Figure 2 (A5-6) and (B5-6). In the process, it is possible to reduce the complexity of the reentrant pattern through annihilation of some of the existing phase singularities by new waves emerging from the location of the applied light spot. The schematic movement of the tip of the spiral wave, as it is anchored to the location of the light spot at previous time points, is indicated by means of dashed red (white) lines in silico (in vitro), and the direction of dragging is illustrated with red (white) arrows. Video 4 shows a video of computer simulations demonstrating AAD control of complex reentrant patterns with three and four spiral waves, in favor of their eventual termination. Video 5 shows the same process, in vitro, but for stable reentry with four-phase singularities. (Time t\u00a0=\u00a0$0\u00a0ms$denotes the moment when the light is applied).\n\nTaken together, our results show that core positions of spiral waves can be strategically manipulated with the help of optogenetics to establish direct spatiotemporal control over a highly nonlinear system. We demonstrate that application of well-timed and spaced light pulses can result in successful dragging of a spiral wave from one location to another within a monolayer, along any desired path and even to cause its termination. Spiral wave dragging can also be employed to terminate complex reentrant patterns characterized by multiple phase singularities, through appropriate AAD control. However, the probability of its occurrence is subject to two key parameters: (i) size $d$ and (ii) drag angle ($\u0394\\theta$).\n\n## Discussion\n\nSpiral waves occur in diverse natural excitable systems, where they impact the functioning of the system in a beneficial or detrimental manner. Given their dynamic and unpredictable nature, direct control over these nonlinear waves remains a longstanding scientific challenge. While it is an established theory that the properties of the core of a spiral wave determine its overall dynamics (Krinsky, 1978; Beaumont et al., 1998), the corollary that manipulation of spiral wave cores should lead to full spatiotemporal control over wave dynamics in excitable media, appears to be unexpectedly non-obvious and understudied (see below). In this paper, we prove the aforementioned consequence using the remarkable features of optogenetics. Our study is one of the first to demonstrate the establishment of real-time spatiotemporal control over spiral wave dynamics in spatially extended biological (cardiac) tissue. The only other study that shows effective dynamic spatiotemporal control (as opposed to elimination) of spiral waves is that of (Burton et al., 2015). However, Burton et al. (2015) use dynamic control to modulate spiral wave chirality, which is markedly different from what we study and prove, namely spiral wave dragging.\n\nIn this research, we demonstrate a new phenomenological concept to steer spiral waves in excitable media, thereby enabling precise and direct spatiotemporal control over spiral wave dynamics. This so-called AAD control involves a feedback interaction between three fundamental dynamical properties of spiral waves: attraction, anchoring and unpinning. In the past, researchers also employed different kinds of spatiotemporal feedback interactions to control spiral wave dynamics, albeit in non-biological media (Sakurai et al., 2002). Their methods, while effective, relied on delivering timed pulses falling in defined phases of the spiral. Although feasible in simple chemical systems, phase-based pulse delivery can be quite challenging in complex biological tissue, where temporal precision is a major subtlety and therefore difficult to achieve. The study by Ke et al. (2015) bypasses this issue by forcing scroll wave filaments to anchor to physical heterogeneities, which can be moved subsequently to steer the waves. However, Ke et al. (2015)\u00a0demonstrate a process that is continuous in time, as opposed to the discrete nature of our method, which makes it more flexible.\n\nPrevious studies have explored the concept of spiral attraction in human cardiac tissue (Defauw et al., 2014). According to these findings, the mechanism of attraction of spiral waves to localized heterogeneities is a generic phenomenon, observed among spiral waves in heterogeneous tissue. Some studies (Defauw et al., 2014; Panfilov and Vasiev, 1991; Rudenko and Panfilov, 1983) show that spiral waves tend to drift to regions with longer rotational periods, that\u00a0is where the duration of an action potential is longer than elsewhere in the medium. This is in consonance with our simulations, where application of a spot of light to a monolayer of excitable, optogenetically modified cardiomyocytes causes the cells in this region to depolarize, bearing a direct influence on the action potential duration of cells in the immediate neighborhood. Once attracted, the spiral anchors to the location of the light spot, thereby making a transition from functional to anatomical reentry. Again, when the light at the current location is switched off and a new location is illuminated, in the next step of the drag sequence, the spiral reverts back to functional reentry, from its anatomical variant. If the new location is such that the spiral core overlaps with the basin of attraction of the optogenetically depolarized area, then it anchors to the new location and makes a transition back to anatomical reentry. Thus, AAD control is associated with repeated alternative transitions between functional and anatomical reentry. However, if the core of the spiral wave does not overlap with the basin of attraction of the next location in the drag sequence, or, if the drag sequence is executed too fast for the spiral to establish a stable core at subsequent new locations, then the spiral detaches, breaks up, or destabilizes without being successfully dragged.\n\nA mechanism, somewhat along the same lines as AAD control, was demonstrated by Krinsky et al. (1995), using topological considerations. When an existing vortex interacts with a circular wave emerging from a stimulus applied close to the vortex core, they fail to annihilate each other. However, the emergent wave quenches the vortex, resulting in its displacement by the order of half a wavelength. This displacement may occur in any direction, as demonstrated by Krinsky et al. In our system, we observe similar emergence of a new (circular) wave from the temporal heterogeneity. This new wave fails to annihilate the existing spiral wave, in line with Krinsky\u2019s findings, but leads to the displacement of the core toward the temporal heterogeneity, indicating the existence of a factor of attraction, which determines the direction of drift.\n\nIn another study (Guo et al., 2010), control of spiral wave turbulence was investigated in a self-regulation system that spontaneously eliminated vortex cores, by trapping the latter with localized inhomogeneities. This study used computer simulations and a light-sensitive BZ reaction with a Doppler instability. Movement of a spiral wave along a line of predefined obstacles was also observed by Andreev (2005). However, unlike Krinsky et al. and Guo et al. (2010), their study uses inactive defects, which do not lead to quenching of the spiral wave. Further topological considerations with respect to movement of spiral waves can be found in the seminal work of Winfree and Strogatz (1984). In our studies of spiral wave dragging with light spots of different sizes (Figure 3), a small-sized spot leads to dragging via a cycloidal trajectory, whereas, a large spot is associated with a linear trajectory. In our subsequent investigations, however, cycloidal trajectories were observed even for large spots. This is because, in the data presented in Figure 3, we investigate dragging at the fastest possible rate. The drag trajectories obtained in that study apply for minimal relocation time ($\\tau_{light}=\\tau_{min}$, $\\tau_{dark}=0$ ms). The larger the value of $d$, the bigger is the area of light-induced depolarization. Consequently, the higher is the chance for the tip of the spiral wave to fall within the basin of attraction of the illuminated area, causing it to remain anchored to the spot at all times. When the spot of light is moved with $\\tau_{dark}=0$ ms and $\\tau_{light}=\\tau_{min}$, the location of the new light spot forms a composite anchor point in combination with the location of the previous light spot; the effective depolarized region resembles an elongated ellipse, with elongation along the direction of movement of the light spot. This causes the spiral tip to trace a nearly linear path, along the boundary of the elongated ellipse. However, at slower dragging rates, that\u00a0is longer $\\tau_{light}$, as used in the subsequent studies (Figure 3), the spiral wave gets ample time to execute one or more complete rotations around the region of light-induced depolarization, before being relocated to the next spot. Hence, the cycloidal trajectory at large $d$. The tendency for the spiral tip to move along a cycloidal trajectory at small $d$ can be explained by the establishment of\u00a0a very small basin of attraction, which results in an increased demand for $\\tau_{min}$. Thus the spiral requires execution of at least one complete rotation around the region of light-induced depolarization before it can relocate to the next spot.\n\nThese findings are in consonance with the fundamental view of excitable media as dynamical systems. Based on their experimental, computational and theoretical studies, Zykov et al. (2010) and Nakouzi et al. (2016) reported the involvement of bistability and hysteresis in the transitions from anchoring to unpinning of a wave rotating around an anatomical hole. Bistability, or coexistence of two dynamical attractors in the system, indicates dependence of the outcome of the transition on initial conditions. In our case, the most important choice of initial conditions can be restricted to the phase of the freely rotating spiral wave or the rigidly anchored reentrant wave. Thus, proper timing of the applied perturbation is crucial regarding the efficacy of control. In this sense our results deceptively remind us of the phenomenon of spiral wave drift, which can be induced by periodic modulation of excitability (Steinbock et al., 1993). However, such drift arises from an interplay between Hopf bifurcation of spiral wave solutions, and rotational and translationally symmetric planar (Lie) groups (Wulff, 1996). In our studies, we rely on completely different nonlinear dynamical phenomena, namely, bistability of the rotating wave solutions and its interplay with spatial and temporal degrees of freedom of the dynamically applied light spot (i.e. its position, size, period and timing). This combination gives rise to novel interesting spiral wave dynamics, which opens broad avenues for further theoretical and experimental investigation.\n\nAlthough apparently straightforward, and, to some extent, predictable on the basis of generic spiral wave theory, our results are not at all obvious. Compared to other systems, such as the BZ reaction, cardiac tissue (i) possesses an inherently irregular discrete cellular structure, underlying the absence of spatial symmetries, (ii) lacks inhibitor diffusion and (iii) has different dimensions. Moreover, since the probability of attraction of a spiral wave to a heterogeneity is determined by the initial conditions and by the strength of successive perturbations, it is not a foregone conclusion that discrete application of light spots outside the core of a spiral wave should always end up in an anchored state. By showing, in cultured cardiac tissue, that spiral wave dynamics can be controlled by targeting the spiral wave core, we have been able to experimentally confirm pre-existing ideas about the behavior of spiral waves in complex systems.\n\nPrevious studies also demonstrated alternative methods to \u2018control\u2019 spiral-wave dynamics in excitable media, for example, by periodic forcing to induce resonant drift (Agladze et al., 1987; Biktasheva et al., 1999; Agladze et al., 2007), or by periodic modulation of excitability to manipulate spiral tip trajectories (Steinbock et al., 1993). These studies do demonstrate the potential to drive a spiral wave out of an excitable medium, or to force spiral waves to execute complex meander patterns, thereby making landmark contributions to the knowledge of pattern formation or even to cardiac arrhythmia management. However, the principal limitation of these methods is that they are indirect, giving reasonable control over the initial and final states of the system, with little or no control in between. It is herein where lies the advantage of AAD control, which allows precise and complete spatiotemporal control over spiral wave dynamics in two-dimensional excitable media.\n\n### Clinical translation\n\nSince we demonstrate AAD control method in a cardiac tissue system, a logical question would be, how to envision the application of this principle to the real heart in order to treat arrhythmias? Currently this topic faces major challenges. The practical application of optogenetics in cardiology is, in itself, a debatable issue. However, with recent advances in cardiac optogenetics (Nussinovitch and Gepstein, 2015; Crocini et al., 2016; Nyns et al., 2017; Bruegmann et al., 2018; Boyle et al., 2018), the future holds much promise. Firstly, we envision the usage of AAD control method in treating arrhythmias that are associated with scroll waves. Since the penetration depth of light in cardiac tissue is relatively short (Bruegmann et al., 2016), full transmural illumination might\u00a0be challenging, particularly in ventricles of large mammals like pig, monkey or human. There, AAD control may provide a powerful tool to regulate scroll wave dynamics by epicardial or endocardial illumination. Furthermore, we expect the method to prove most useful when dealing with \u2018hidden\u2019 spiral waves, that\u00a0is spiral waves in remote locations of the heart that are unaccessible by ablation catheters. Ideally, one should build upon the concept introduced by Entcheva and Bub (2016). With live spacetime optogenetic actuation of the electrical activity in different parts of the heart, the first step is to detect the location of the instability. Next, one can use a catheter with an in-built LED to attract the scroll wave filament and steer it towards the nearest tissue border for termination. The advantage of this method lies in that one does not require to ablate, and thereby destroy, excitable cardiac tissue, thus avoiding the possibility to create permanent damage to the heart. In addition, as our study demonstrates, anchoring of the spiral core (scroll filament) can occur even if the \u2018precise\u2019 location of the core is not identified. Lastly, the discrete nature of our method allows temporal flexibility in steering the spiral core (scroll filament), in that, temporary loss of communication between the catheter and the spiral core will not lead to failure of the technique in general. The reversible nature of the AAD control technique makes it unsuitable for terminating arrhythmias that rely on the establishment of a permanent conduction block as can be produced via conventional catheter ablation. However, this special feature of AAD may come with certain unique advantages that should be explored in more detail in future studies. For example, in younger patients that are expected to undergo periodic repetitive ablation for termination of reoccurring arrhythmias of unknown origin, the non-destructive nature of AAD may prove to be more desirable than the cumulative widespread destruction of cardiac tissue by radiofrequency or cryoballoon ablation. Alternatively, other methods could be developed and explored for AAD control without the need of optogenetic modification, while still relying on the creation of spatiotemporally controlled heterogeneities for attraction, anchoring and dragging of spiral waves.\n\nIn this study, we focus on spiral waves in cardiac excitable media, as these abnormal waves have been associated with lethal heart rhythm disturbances, while their management and termination remain a serious challenge. The insights gained from our results, as well as the AAD control method itself, may not only improve our understanding of spiral wave\u2019s dynamics in favor of restoring normal cardiac rhythm, but also create incentive to explore these principles in other excitable media prone to spiral wave development.\n\n## Materials and methods\n\nThe electrophysiological properties of neonatal rat atrial cardiomyocytes were modeled according to Majumder et al. (2016), whereby, the transmembrane potential $V$ of a single cell evolved in time as follows:\n\n$$\n\\frac{dV}{dt}=\u2212\\frac{I_{ion}+I_{stim}}{C_{m}}\n$$\n\n$I_{ion}$ is the total ionic current, expressed as a sum of $10$ major ionic currents, namely, the fast $Na^{+}$ current ($I_{Na}$), the $L\u2212type$\u00a0$Ca^{2+}$ current ($I_{CaL}$), the inward rectifier $K^{+}$ current ($I_{K1}$), the transient outward $K^{+}$ current ($I_{to}$), the sustained outward $K^{+}$ current ($I_{Ksus}$), the background $K^{+}$ ($I_{Kb}$), the background $Na^{+}$ ($I_{Nab}$) and the background $Ca^{2+}$ ($I_{Cab}$) currents, the hyperpolarization-activated funny current ($I_{f}$), and the acetylcholine-mediated $K^{+}$ current ($I_{K,ACh}$). In two dimensions, these cells were coupled such that $V$ evolved spatiotemporally, obeying the following reaction-diffusion equation:\n\n$$\n\\frac{\\partialV}{\\partialt}=\\nabla\u22c5(D\\nablaV)\u2212\\frac{I_{ion}+I_{stim}}{C_{m}},\n$$\n\nwhere $D$ is the diffusion tensor. In simple two-dimensional (2D) monolayer systems, in the absence of anisotropy, the diffusion tensor takes on a diagonal form with identical elements. Thus, $D$ reduced to a scalar in our calculations, with value\u00a0$0.00012\u00a0cm^{2}/\u00a0ms$. This resulted in a signal conduction velocity of\u00a0$22.2\\pm3.4\u00a0cm/s$. Furthermore, in 2D, $I_{K,ACh}$ was considered to be constitutively active, in consonance with the results from in vitro experiments (Majumder et al., 2016).\n\nThe optogenetic tool used in the numerical studies was a model of Chlamydomonas reinhardtii channelrhodopsin-2 mutant H134R, adopted from the studies of Boyle et al. (2013) The parameter set used in our studies was exactly the same as that reported by Boyle et al. (2013), with irradiation intensity $0.30\u00a0mW/\u00a0mm^{2}$ to qualitatively mimic the large photocurrent produced upon illuminating a neonatal rat atrial cardiomyocyte monolayer.\n\nIn order to\u00a0be\u00a0consistent with the in vitro experiments, we prepared 10 different simulation domains, composed of neonatal rat atrial cardiomyocytes with $17%$ randomly distributed cardiac fibroblasts (MacCannell et al., 2007) and with natural cellular\u00a0heterogeneity, modelled as per (Majumder et al., 2016). Our analysis was performed by taking into consideration the results obtained from all $10$\u00a0in silico monolayers. In order to demonstrate phenomena such as manipulation of spiral core size and position, we designed several\u00a0'illumination' patterns, in the form of a sequence of filled circles of desired radii and projected these patterns on to each of our in silico monolayers. Depending on the aim of the study, we adjusted the durations for which the light was \u2018on\u2019 (i.e. light interval), or \u2018off\u2019 (i.e. dark interval).\n\n### Preparation of CatCh-expressing monolayers\n\nAll animal experiments were reviewed and approved by the Animal Experiments Committee of the Leiden University Medical Center and conformed to the Guide for the Care and Use of Laboratory Animals as stated by the US National Institutes of Health. Monolayers of neonatal rat atrial cardiomyocytes expressing $\u00a0Ca^{2^{+}}$-translocating channelrhodopsin (CatCh) were established as previously described (Feola et al., 2017). Briefly, the hearts were excised from anesthetized 2-day-old Wistar rats. The atria were cut into small pieces and dissociated in a solution containing collagenase type I (Worthington, Lakewood, NJ) and 18,75 Kunitz/ml DNase I (Sigma-Aldrich, St. Louis, MO). The resulting cell suspension was enriched for cardiomyocytes by preplating for 120 min in a humidified incubator at $37^{\u2218}$C and $5$% CO$_{2}$ using Primaria culture dishes (Becton Dickinson, Breda, the Netherlands). Finally, the cells were seeded on round glass coverslips ($d=15\u00a0mm$; Gerhard Menzel, Braunschweig, Germany) coated with fibronectin (100 $\\mu$g/ml; Sigma-Aldrich) to establish confluent monolayers. After incubation overnight in an atmosphere of humidified $95$% air- $5$% CO$_{2}$ at $37^{\u2218}$C, these monolayers were treated with Mitomycin-C (10 \u03bcg/ml; Sigma-Aldrich) for 2 hr to minimize proliferation of the non-cardiomyocytes. At day 4 of culture,\u00a0the neonatal rat atrial cardiomyocyte monolayers were incubated for 20\u00a0\u2013\u00a024 hr with CatCh-encoding lentiviral particles at a dose resulting in homogeneous transduction of nearly $100$% of the cells. Next, the cultures were washed once with phosphate-buffer saline, given fresh culture medium and kept under culture conditions for 3\u00a0\u2013\u00a04 additional days.\n\n### Optical mapping and optogenetic manipulation\n\nOptical voltage mapping was used to investigate optogenetic manipulation of spiral wave dynamics in the CatCh-expressing monolayers on day 7 of culture by using the voltage-sensitive dye di-4-ANBDQBS (52.5 $\\mu$M final concentration; ITK diagnostics, Uithoorn, the Netherlands), as described previously (Feola et al., 2017). In summary, optical data were acquired using a MiCAM ULTIMA-L imaging system (SciMedia, Costa Mesa, CA) and analyzed with BrainVision Analyzer 1101 software (Brain vision, Tokyo, Japan). Only monolayers characterized by uniform AP propagation at 1 Hz pacing and homogeneous transgene expression were included for the following optogenetic investigation. CatCh was locally activated by using a patterned illumination device (Polygon400; Mightex Systems, Toronto, ON) connected to a 470-nm, high-power collimator light-emitting diode (LED) source (type-H, also from Mightex Systems). PolyLite software (Mightex Systems) was used to control the location and movement of the areas of illumination. Before local optogenetic manipulation, reentry was induced by light-based stimulations (n\u00a0=\u00a018). Reentrant waves that were stable for\u00a0>1 s were exposed to a circular light spot ($d=3\u00a0mm$) at different targeted locations within the monolayer for $200\u2212250\u00a0ms$ at $0.3\u00a0mW/\u00a0mm^{2}$.\n\n### Image processing for the videos in vitro A\n\nOptical voltage signal was processed with spatial and temporal derivative filters to allow visualization of electrical wave propagation during the application of the light spots.\n\n### Image processing for the videos in vitro B\n\nThe data were sampled according to the location of the applied light spot. Next, for each sample set, we obtained the lowest background intensity recorded by the individual pixels over time and constructed a two-dimensional array with these values as elements. Next, we subtracted this array from each frame in the sample set and reassembled the processed datasets to make a complete video.\n",
+      "created_at": "2025-12-02T06:22:34.720231Z"
+    },
+    {
+      "id": "11bdc3f7-c4ca-4c22-a017-64e0ede071fa",
+      "submission_id": "caaa0c07-0b87-4925-8cda-b4181c1f677d",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Leon Glass, McGill University Canada\n- Arup K Chakraborty, Massachusetts Institute of Technology United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.41076.017](https://doi.org/10.7554/eLife.41076.017)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\n[Editors\u2019 note: this article was originally rejected, but the authors appealed and revised for further consideration.]\n\nThank you for submitting your work entitled \"Optogenetics enables real-time spatiotemporal control over spiral wave dynamics in an excitable cardiac system\" for consideration by eLife. Your article has been reviewed by two peer reviewers, and the evaluation has been overseen by a Reviewing Editor and a Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Gil Bub (Reviewer #2).\n\nOur decision has been reached after consultation between the reviewers, the Reviewing Editor, and the Senior Editor. Based on these discussions and the individual reviews below, we regret to inform you that your work will not be considered further for publication in eLife.\n\nThe work shows the ability to move spirals waves of cardiac activity in tissue culture using optogenetic methods to hyperpolarize and modify excitability in localized regions of the culture. The optogenetic techniques were used by the same group in earlier papers to terminate spiral waves. However, this specific technique to move the core location of spiral wave rotation in cardiac tissue had not been used previously. Motion of the spiral to the boundary of a region is a novel finding. The experimental work is accompanied by simulations that show similar behaviors to the experiments. These results do appear to be valid, but they could have been expected based on earlier work in this field by this group and others.\n\nThe paper also did not provide adequate citation to other work dealing with control of spirals in excitable medium, and did not develop ways in which the work could be implemented in vivo to help control arrhythmia in people.\n\nAfter a good deal of back and forth, and consultation with an eLife Senior Editor concerning eLife editorial policies, the consensus opinion is that this is not sufficiently novel to merit publication in eLife.\n\nReviewer #1:\n\nThe authors use patterned optogenetic stimulation to drag spiral wave cores in cultured monolayers of cardiomyocytes. They call the protocol the \"Attract-Anchor-Drag\" (AAD) technique. The authors combine experiments with extensive numerical simulations of a conductance-based cardiac model. They explore the conditions under which the spiral core follows the optical stimulus, by varying (in silico) the radius, duty cycle, and timing of the illumination pulses relative to the rotor circulation. They show that spiral waves can be suppressed either by mutual annihilation of two counter-rotating waves or by dragging a wave to an inexcitable boundary.\n\nTechnical merits:\n\nFrom a technical perspective, this work is a modest variation on several other published works on optogenetic control of excitable cells. The authors cite their own prior work (Feola et al., 2017), but not with sufficient prominence to make clear that the entire technical setup has already been published. The authors neglect to cite several other closely related works:\n\nFrom the authors' group:\n\nBingen et al., 2014.\n\nFrom other groups:\n\nBurton et al., 2015.\n\nEntcheva and Bub, 2016.\n\nThe authors cite a work by Zhang et al. on optical electrophysiology in HEK cells, but that paper did not have any spatial control. A more appropriate citation would be:\n\nMcNamara et al., 2016.\n\nScientific merits:\n\nThe scientific justification for the study is the experimental demonstration that spiral waves can be manipulated by dragging an inexcitable core. The authors portray this as an important discovery, but in truth the degree of surprise here is limited: given that a spiral wave can anchor at an inexcitable defect, one should not be surprised that gradual motion of the defect will drag the spiral wave.\n\nWhile the authors are to be commended for exploring (in silico) the impact of the size, timing, and motion parameters of the spot on the spiral wave motion (Figure 3), all results are reported in physical units, giving little insight into how these parameters might change in a different system, e.g. real cardiac tissue where conduction velocity and gap junction coupling are very different from in vitro. It is not clear what generalizable insights can be gained from these results.\n\nThe other experimental results demonstrate that spiral waves can be annihilated by dragging to the boundary of a dish (Figure 2), or by coalescing two counter-propagating waves (Figure 4). These results are interesting, but also not particularly surprising and of uncertain relevance to treatment of spiral wave defects in vivo.\n\nOverall, the experimental work and analysis seems thin and anecdotal, comprising video stills from three videos (Figures 1, 2, 4). It is disappointing that the simulations in Figure 5 are not accompanied by experiments.\n\nThe broader scientific justification is a general statement that these techniques \"could have significant meaning in terms of a better mechanistic understanding of cardiac arrhythmias and improvement of existing and development of new treatment modalities.\" (stated again at the end of the Introduction and Discussion). While it is generally true that optical control of cardiac dynamics is an interesting topic, these statements seem to be insufficiently justified by the present work. It is not clear how one would apply the learning from the present experiments to work in vivo or to improved therapies.\n\nPrevious work from the senior authors showed that widefield optogenetic stimulation could eliminate spiral wave patterns (Bingen et al., 2014). If the authors want to emphasize the utility of their new approach for spiral wave abolition, they should discuss the relative advantages or limitations of these two strategies. Moreover, many examples of AAD spiral wave elimination described here rely on colliding the spiral core with a boundary. It is not obvious how such a strategy would be implemented in vivo.\n\nThe simulation work in Figure 4 (Video 4) is beginning to approach interesting questions, e.g. under what circumstances does combining two spirals lead to multiarm spirals vs. elimination? If brought together and released, how do rotors interact with each other? How does this interaction depend on phase offset, direction of circulation, and number of arms? A more thorough experimental exploration of these questions would considerably improve the overall scholarship and impact of the work.\n\nReviewer #2:\n\nThe article by Majumder et al. demonstrate a novel control method for steering spiral waves in a biological excitable medium. The experiments and theory are convincing.\n\nMy only major concern is that the authors may have misstated the impact of previous studies. The authors state in their final paragraph:\n\n\"Previous studies also demonstrated alternative methods to 'control' spiral-wave dynamics in excitable media, for example,\u2026 However, the principal limitation of these methods is that they are indirect, giving reasonable control over the initial and final states of the system, with little or no control in between.\"\n\nI don't agree with this statement. First, the submitted work does not show a higher degree of control than other published studies as the authors apply a perturbation and observe the results as opposed to using closed loop feedback control. The authors may mean that previous control systems rely on delivering timed pulses which fall in defined phases of the spiral wave (but I don't see why this indicates a lack of control of the system). Also, there are un-referenced published examples of feedback control of spiral wave motion (e.g. Schlesner et al., 2008; Sakurai et al., 2002) that show very precise spiral wave control. In addition, the general idea of anchoring a spiral with light has been demonstrated in an experimental system which would require relatively small modification to show spiral wave steering (Steinbock and Muller, 1993).\n\nThe figures should be clarified. For example, in Figure 2, panels are shown without indicating the precise timing (i.e. B1, B2, B3 etc.), which would help readers understand the observed dynamics. Also, exactly how the spiral translates linearly is unclear from the figure, as the speed of the moving spot is unknown. It would be helpful to note the speed of the spot relative to the speed of wave propagation.\n",
+      "created_at": "2025-12-02T06:22:34.720231Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T06:22:34.720231Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T06:22:34.720231Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "f0ac8c1e-f8aa-4fbc-a94c-c044cd94e522",
+      "content_id": "a92f06e7-d68e-4f0c-9aa6-824c717e099c",
+      "claim_id": "C1",
+      "claim": "Propagation of non-linear waves is key to the functioning of diverse biological systems.",
+      "claim_type": "EXPLICIT",
+      "source": "Propagation of non-linear waves is key to the functioning of diverse biological systems.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about biological systems presented in the abstract without specific experimental data in this manuscript, but draws on established scientific knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:22:34.720231Z"
+    },
+    {
+      "id": "d670dbf1-e5e6-4dd2-9a12-3764d5015c26",
+      "content_id": "a92f06e7-d68e-4f0c-9aa6-824c717e099c",
+      "claim_id": "C2",
+      "claim": "Non-linear waves can organize into spirals, rotating around a core, whose properties determine the overall wave dynamics.",
+      "claim_type": "EXPLICIT",
+      "source": "Such waves can organize into spirals, rotating around a core, whose properties determine the overall wave dynamics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations in the introduction and represents established knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:22:34.720231Z"
+    },
+    {
+      "id": "441305e0-dc3f-45c9-beca-a512ee9720ca",
+      "content_id": "a92f06e7-d68e-4f0c-9aa6-824c717e099c",
+      "claim_id": "C3",
+      "claim": "The theory that manipulation of a spiral wave core should lead to full spatiotemporal control over its dynamics lacks supportive evidence.",
+      "claim_type": "EXPLICIT",
+      "source": "Theoretically, manipulation of a spiral wave core should lead to full spatiotemporal control over its dynamics. However, this theory lacks supportive evidence (even at a conceptual level), making it thus a long-standing hypothesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The authors state this as a gap in existing knowledge that their work addresses.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:22:34.720231Z"
+    },
+    {
+      "id": "0651ae74-19f9-4491-a0d9-3bf25b1fc080",
+      "content_id": "a92f06e7-d68e-4f0c-9aa6-824c717e099c",
+      "claim_id": "C4",
+      "claim": "The study proposes a new phenomenological concept that involves artificially dragging spiral waves by their cores.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we propose a new phenomenological concept that involves artificially dragging spiral waves by their cores, to prove the aforementioned hypothesis in silico, with subsequent in vitro validation in optogenetically modified monolayers of rat atrial cardiomyocytes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main claim of the study, supported by both computational and experimental data presented throughout the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:22:34.720231Z"
+    },
+    {
+      "id": "da3c6aaa-cde3-4554-99b5-04d0f8c4af6e",
+      "content_id": "a92f06e7-d68e-4f0c-9aa6-824c717e099c",
+      "claim_id": "C5",
+      "claim": "Core manipulation through controlled displacement of heterogeneities in excitable media allows forced movement of spiral waves along pre-defined trajectories.",
+      "claim_type": "EXPLICIT",
+      "source": "We thereby connect previously established, but unrelated concepts of spiral wave attraction, anchoring and unpinning to demonstrate that core manipulation, through controlled displacement of heterogeneities in excitable media, allows forced movement of spiral waves along pre-defined trajectories.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the experimental and computational results shown in Figures 1-5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:22:34.720231Z"
+    },
+    {
+      "id": "3d60706f-8bc0-4731-b606-32e942dc1b65",
+      "content_id": "a92f06e7-d68e-4f0c-9aa6-824c717e099c",
+      "claim_id": "C6",
+      "claim": "The study imposes real-time spatiotemporal control over spiral wave dynamics in a biological system.",
+      "claim_type": "EXPLICIT",
+      "source": "Consequently, we impose real-time spatiotemporal control over spiral wave dynamics in a biological system.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is supported by the in vitro experiments with optogenetically modified cardiomyocytes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:22:34.720231Z"
+    },
+    {
+      "id": "0a578be7-1814-4025-bfe7-15d5cc33d949",
+      "content_id": "a92f06e7-d68e-4f0c-9aa6-824c717e099c",
+      "claim_id": "C7",
+      "claim": "Spiral waves are found in diverse natural systems including active galaxies.",
+      "claim_type": "EXPLICIT",
+      "source": "Spiral waves are found in diverse natural systems: from active galaxies (Schulman and Seiden, 1986), to simple oscillatory chemical reactions (Belousov, 1985; Zhabotinsky, 1991), to social waves in colonies of giant honey bees (Kastberger et al., 2008), to Min protein gradients in bacterial cell division (Caspi and Dekker, 2016), and to the formation of vortices in fluids flowing past obstacles (Karman, 1937).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Schulman and Seiden, 1986.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:22:34.720231Z"
+    },
+    {
+      "id": "cd1ae919-4d0d-4698-a3c7-41a01eb817d7",
+      "content_id": "a92f06e7-d68e-4f0c-9aa6-824c717e099c",
+      "claim_id": "C8",
+      "claim": "Spiral waves are found in simple oscillatory chemical reactions.",
+      "claim_type": "EXPLICIT",
+      "source": "Spiral waves are found in diverse natural systems: from active galaxies (Schulman and Seiden, 1986), to simple oscillatory chemical reactions (Belousov, 1985; Zhabotinsky, 1991), to social waves in colonies of giant honey bees (Kastberger et al., 2008), to Min protein gradients in bacterial cell division (Caspi and Dekker, 2016), and to the formation of vortices in fluids flowing past obstacles (Karman, 1937).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Belousov, 1985 and Zhabotinsky, 1991.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:22:34.720231Z"
+    },
+    {
+      "id": "2c41b9c7-319d-4c8f-afc3-aef6a1f1e56b",
+      "content_id": "a92f06e7-d68e-4f0c-9aa6-824c717e099c",
+      "claim_id": "C9",
+      "claim": "Spiral waves are found in social waves in colonies of giant honey bees.",
+      "claim_type": "EXPLICIT",
+      "source": "Spiral waves are found in diverse natural systems: from active galaxies (Schulman and Seiden, 1986), to simple oscillatory chemical reactions (Belousov, 1985; Zhabotinsky, 1991), to social waves in colonies of giant honey bees (Kastberger et al., 2008), to Min protein gradients in bacterial cell division (Caspi and Dekker, 2016), and to the formation of vortices in fluids flowing past obstacles (Karman, 1937).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Kastberger et al., 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:22:34.720231Z"
+    },
+    {
+      "id": "711d1200-b08e-41a2-ba48-e75b48d66b6c",
+      "content_id": "a92f06e7-d68e-4f0c-9aa6-824c717e099c",
+      "claim_id": "C10",
+      "claim": "Spiral waves are found in Min protein gradients in bacterial cell division.",
+      "claim_type": "EXPLICIT",
+      "source": "Spiral waves are found in diverse natural systems: from active galaxies (Schulman and Seiden, 1986), to simple oscillatory chemical reactions (Belousov, 1985; Zhabotinsky, 1991), to social waves in colonies of giant honey bees (Kastberger et al., 2008), to Min protein gradients in bacterial cell division (Caspi and Dekker, 2016), and to the formation of vortices in fluids flowing past obstacles (Karman, 1937).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Caspi and Dekker, 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:22:34.720231Z"
+    },
+    {
+      "id": "0608bf08-7530-49b6-ad75-fad46bc70967",
+      "content_id": "a92f06e7-d68e-4f0c-9aa6-824c717e099c",
+      "claim_id": "C11",
+      "claim": "Spiral waves are found in the formation of vortices in fluids flowing past obstacles.",
+      "claim_type": "EXPLICIT",
+      "source": "Spiral waves are found in diverse natural systems: from active galaxies (Schulman and Seiden, 1986), to simple oscillatory chemical reactions (Belousov, 1985; Zhabotinsky, 1991), to social waves in colonies of giant honey bees (Kastberger et al., 2008), to Min protein gradients in bacterial cell division (Caspi and Dekker, 2016), and to the formation of vortices in fluids flowing past obstacles (Karman, 1937).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Karman, 1937.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:22:34.720231Z"
+    },
+    {
+      "id": "c7ac666a-8cbb-4d86-966b-4df9cb88bbab",
+      "content_id": "a92f06e7-d68e-4f0c-9aa6-824c717e099c",
+      "claim_id": "C12",
+      "claim": "Spiral waves guide morphogenesis in slime molds.",
+      "claim_type": "EXPLICIT",
+      "source": "While being beneficial to some systems, for example slime molds, where they guide morphogenesis, such activity has detrimental consequences for other systems including the heart, where they underlie lethal cardiac arrhythmias (Davidenko et al., 1990).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about slime molds.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:22:34.720231Z"
+    },
+    {
+      "id": "f26b032d-2099-4c66-b753-d5ae5fb04cc1",
+      "content_id": "a92f06e7-d68e-4f0c-9aa6-824c717e099c",
+      "claim_id": "C13",
+      "claim": "Spiral waves underlie lethal cardiac arrhythmias in the heart.",
+      "claim_type": "EXPLICIT",
+      "source": "While being beneficial to some systems, for example slime molds, where they guide morphogenesis, such activity has detrimental consequences for other systems including the heart, where they underlie lethal cardiac arrhythmias (Davidenko et al., 1990).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Davidenko et al., 1990.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:22:34.720231Z"
+    },
+    {
+      "id": "e2e96f90-c5bc-4080-ae2e-1486f9c7270a",
+      "content_id": "a92f06e7-d68e-4f0c-9aa6-824c717e099c",
+      "claim_id": "C14",
+      "claim": "Spiral wave activity organizes around an unexcitable center (core), whose properties determine its overall dynamics.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been reported that irrespective of the nature of the excitable medium, spiral wave activity organizes around an unexcitable center (core), whose properties determine its overall dynamics (Krinsky, 1978; Beaumont et al., 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Krinsky, 1978 and Beaumont et al., 1998.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:22:34.720231Z"
+    },
+    {
+      "id": "d2a1f8dc-b2b5-4f25-b940-0adbd09759eb",
+      "content_id": "a92f06e7-d68e-4f0c-9aa6-824c717e099c",
+      "claim_id": "C15",
+      "claim": "Spiral waves exhibit particle-like behavior attributed to an underlying topological charge.",
+      "claim_type": "EXPLICIT",
+      "source": "Theorists attribute such particle-like behavior of a spiral wave to an underlying topological charge, which controls its short-range interaction, annihilation, and the ability to form intricate bound states with other spirals (Ermakova et al., 1989; Schebesch and Engel, 1999; Steinbock et al., 1992).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Ermakova et al., 1989; Schebesch and Engel, 1999; Steinbock et al., 1992.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:22:34.720231Z"
+    },
+    {
+      "id": "fcdb72f8-3ed6-4542-890d-034f0c52f202",
+      "content_id": "a92f06e7-d68e-4f0c-9aa6-824c717e099c",
+      "claim_id": "C16",
+      "claim": "Steinbock et al. (1993) demonstrated the possibility to forcibly anchor meandering spiral waves in an excitable light-sensitive Belousov-Zhabotinsky (BZ) reaction system.",
+      "claim_type": "EXPLICIT",
+      "source": "To this end, a detailed mechanistic study was performed by Steinbock et al. (1993), who demonstrated the possibility to forcibly anchor meandering spiral waves in an excitable light-sensitive Belousov-Zhabotinsky (BZ) reaction system.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Steinbock et al., 1993.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:22:34.720231Z"
+    },
+    {
+      "id": "cd6e60d0-0c27-4d4d-8c64-a23430903239",
+      "content_id": "a92f06e7-d68e-4f0c-9aa6-824c717e099c",
+      "claim_id": "C17",
+      "claim": "Ke et al. (2015) demonstrated that forced anchoring of scroll waves to thin glass rods, followed by subsequent movement of the rods themselves, could enable scroll wave relocation in a three-dimensional BZ reaction setting.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, Ke et al. (2015) demonstrated in a three-dimensional BZ reaction setting, that forced anchoring of scroll waves to thin glass rods, followed by subsequent movement of the rods themselves, could enable scroll wave relocation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Ke et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:22:34.720231Z"
+    },
+    {
+      "id": "0d3c5986-a1dd-480b-8155-f8c91d71e1d3",
+      "content_id": "a92f06e7-d68e-4f0c-9aa6-824c717e099c",
+      "claim_id": "C18",
+      "claim": "Functional and anatomical reentry are recognized as drivers of cardiac arrhythmias.",
+      "claim_type": "EXPLICIT",
+      "source": "In cardiac tissue, the analogs of a classical spiral wave and a wave rotating around a heterogeneity, are, respectively, functional and anatomical reentry, both of which are recognized as drivers of arrhythmias.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge in cardiac electrophysiology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:22:34.720231Z"
+    },
+    {
+      "id": "92554120-3f64-4b5a-8c7a-9cb308ff2079",
+      "content_id": "a92f06e7-d68e-4f0c-9aa6-824c717e099c",
+      "claim_id": "C19",
+      "claim": "Davidenko et al. (1991) demonstrated that a drifting spiral wave could anchor to an obstacle and thereby make a transition from functional to anatomical reentry.",
+      "claim_type": "EXPLICIT",
+      "source": "Seminal findings by Davidenko et al. (1991) demonstrated that a drifting spiral wave could anchor to an obstacle and thereby make a transition from functional to anatomical reentry.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Davidenko et al., 1991.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:22:34.720231Z"
+    },
+    {
+      "id": "bbfdee10-b119-49c2-a682-c06d21d97d00",
+      "content_id": "a92f06e7-d68e-4f0c-9aa6-824c717e099c",
+      "claim_id": "C20",
+      "claim": "Ripplinger et al. (2006) showed that small electric shocks could unpin a reentrant wave rotating around an obstacle, bringing about the reverse transition from anatomical to functional reentry.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, Ripplinger et al. (2006) showed that small electric shocks could unpin a reentrant wave rotating around an obstacle, bringing about the reverse transition from anatomical to functional reentry.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Ripplinger et al., 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:22:34.720231Z"
+    },
+    {
+      "id": "822570ce-deb7-4cf1-8e66-91461a7ed6e1",
+      "content_id": "a92f06e7-d68e-4f0c-9aa6-824c717e099c",
+      "claim_id": "C21",
+      "claim": "Nakouzi et al. (2016) and Zykov et al. (2010) demonstrated that the transitions between anchored and free spiral states may be accompanied by hysteresis near the heterogeneities.",
+      "claim_type": "EXPLICIT",
+      "source": "Nakouzi et al. (2016) and Zykov et al. (2010) demonstrated that the transitions between anchored and free spiral states may be accompanied by hysteresis near the heterogeneities.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Nakouzi et al., 2016 and Zykov et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:22:34.720231Z"
+    },
+    {
+      "id": "a365ae34-f1ff-41e6-8e3c-8c421bcce3cc",
+      "content_id": "a92f06e7-d68e-4f0c-9aa6-824c717e099c",
+      "claim_id": "C22",
+      "claim": "Defauw et al. (2014) showed that small-sized anatomical heterogeneities could attract spiral waves from a close distance, and even lead to their termination if located near an unexcitable boundary.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, Defauw et al. (2014) showed that small-sized anatomical heterogeneities could attract spiral waves from a close distance, and even lead to their termination if located near an unexcitable boundary.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Defauw et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:22:34.720231Z"
+    },
+    {
+      "id": "4a21586d-f66b-434a-84c6-88d69821bc8d",
+      "content_id": "a92f06e7-d68e-4f0c-9aa6-824c717e099c",
+      "claim_id": "C23",
+      "claim": "All studies dedicated to spiral wave attraction and anchoring involved the presence of anatomically predefined, permanent heterogeneities, or continuous-in-time processes.",
+      "claim_type": "EXPLICIT",
+      "source": "However, to date, all studies dedicated to spiral wave attraction and anchoring involved the presence of anatomically predefined, permanent heterogeneities, or continuous-in-time processes, thereby making it impossible to manipulate spiral wave cores in a flexible, systematic and dynamical manner.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary statement about the limitations of previous studies, based on the authors' review of the literature.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:22:34.720231Z"
+    },
+    {
+      "id": "7fc34e7b-a548-467b-8123-0cdddd5493ff",
+      "content_id": "a92f06e7-d68e-4f0c-9aa6-824c717e099c",
+      "claim_id": "C24",
+      "claim": "Optogenetics allows the creation of spatially and temporally predefined heterogeneities at superb resolution at any location within an excitable medium.",
+      "claim_type": "EXPLICIT",
+      "source": "We establish such control through optogenetics (Boyden et al., 2005; Bi et al., 2006; Deisseroth, 2015; McNamara et al., 2016), which allows the creation of spatially and temporally predefined heterogeneities at superb resolution at any location within an excitable medium.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Boyden et al., 2005; Bi et al., 2006; Deisseroth, 2015; McNamara et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:22:34.720231Z"
+    },
+    {
+      "id": "77f185aa-6995-471c-9d26-93d2b499963f",
+      "content_id": "a92f06e7-d68e-4f0c-9aa6-824c717e099c",
+      "claim_id": "C25",
+      "claim": "Previous studies demonstrate the power of optogenetics in cardiac systems.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies for example by Arrenberg et al. (2010); Bruegmann et al. (2010); Jia et al. (2011); Bingen et al. (2014); Entcheva and Bub (2016) and Burton et al. (2015), demonstrate the power of optogenetics in cardiac systems.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Arrenberg et al. (2010); Bruegmann et al. (2010); Jia et al. (2011); Bingen et al. (2014); Entcheva and Bub (2016) and Burton et al. (2015).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:22:34.720231Z"
+    },
+    {
+      "id": "25d5dcad-3f99-467f-99a7-ebbc6ef10b1a",
+      "content_id": "a92f06e7-d68e-4f0c-9aa6-824c717e099c",
+      "claim_id": "C26",
+      "claim": "Self-sustained spiral waves of period 60\u00b15 ms were induced in silico in confluent monolayers of optogenetically modified neonatal rat atrial cardiomyocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "In this study, we induced spiral waves of period 60\u00b15 ms in silico and of period 63\u00b111 ms in vitro in confluent monolayers of optogenetically modified neonatal rat atrial cardiomyocytes (see Materials and methods for details).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by computational data from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:22:34.720231Z"
+    },
+    {
+      "id": "24a01d16-06cc-4319-9669-96cadff9fd9a",
+      "content_id": "a92f06e7-d68e-4f0c-9aa6-824c717e099c",
+      "claim_id": "C27",
+      "claim": "Self-sustained spiral waves of period 63\u00b111 ms were induced in vitro in confluent monolayers of optogenetically modified neonatal rat atrial cardiomyocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "In this study, we induced spiral waves of period 60\u00b15 ms in silico and of period 63\u00b111 ms in vitro in confluent monolayers of optogenetically modified neonatal rat atrial cardiomyocytes (see Materials and methods for details).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:22:34.720231Z"
+    },
+    {
+      "id": "ac2d6fc5-570d-4ab4-bdf3-c942e81753ef",
+      "content_id": "a92f06e7-d68e-4f0c-9aa6-824c717e099c",
+      "claim_id": "C28",
+      "claim": "Targeted application of light to the monolayers led to the creation of a spatially predefined temporal heterogeneity (i.e. a reversible conduction block) near the core of a spiral wave.",
+      "claim_type": "EXPLICIT",
+      "source": "Targeted application of light to the monolayers led to the sequential occurrence of two events: (i) creation of a spatially predefined temporal heterogeneity (i.e. a reversible conduction block) near the core of a spiral wave, and (ii) emergence of a wave from the spot of illumination.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the experimental observations described in the Results section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:22:34.720231Z"
+    },
+    {
+      "id": "c1042dec-4689-4624-b563-b9087e9f16cf",
+      "content_id": "a92f06e7-d68e-4f0c-9aa6-824c717e099c",
+      "claim_id": "C29",
+      "claim": "Targeted application of light to the monolayers led to the emergence of a wave from the spot of illumination.",
+      "claim_type": "EXPLICIT",
+      "source": "Targeted application of light to the monolayers led to the sequential occurrence of two events: (i) creation of a spatially predefined temporal heterogeneity (i.e. a reversible conduction block) near the core of a spiral wave, and (ii) emergence of a wave from the spot of illumination.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the experimental observations described in the Results section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:22:34.720231Z"
+    },
+    {
+      "id": "8161bc45-b8ea-40bb-a9ab-07ab8e0510a5",
+      "content_id": "a92f06e7-d68e-4f0c-9aa6-824c717e099c",
+      "claim_id": "C30",
+      "claim": "Feola et al. (2017) demonstrated the possibility to create a temporal heterogeneity with optical control over the size, location and duration of the block.",
+      "claim_type": "EXPLICIT",
+      "source": "In a previous study (Feola et al., 2017), we demonstrated the possibility to create such a temporal heterogeneity with optical control over the size, location and duration of the block.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Feola et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:22:34.720231Z"
+    },
+    {
+      "id": "834f3d4d-874d-4054-83cd-87a976119524",
+      "content_id": "a92f06e7-d68e-4f0c-9aa6-824c717e099c",
+      "claim_id": "C31",
+      "claim": "Creation of a light-induced block close to the core of a spiral wave can attract the spiral wave tip, causing it to eventually anchor to the block.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we show how creation of a light-induced block close to the core of a spiral wave, can attract the spiral wave tip, causing it to eventually anchor to the block.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the experimental and computational data presented in the Results section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:22:34.720231Z"
+    },
+    {
+      "id": "12bba360-8841-4750-8a55-54cfe96310fb",
+      "content_id": "a92f06e7-d68e-4f0c-9aa6-824c717e099c",
+      "claim_id": "C32",
+      "claim": "Subsequent movement of the light spot to different locations within the monolayer results in dragging of the spiral wave along a predefined pathway of illumination.",
+      "claim_type": "EXPLICIT",
+      "source": "Subsequent movement of the light spot to different locations within the monolayer, results in dragging of the spiral wave along a predefined pathway of illumination, thereby giving rise to, what we call Attract-Anchor-Drag-based (AAD) control.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the experimental and computational data presented in Figures 1-5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:22:34.720231Z"
+    },
+    {
+      "id": "4366de4e-c139-42b0-b7bc-420ee3a54c1e",
+      "content_id": "a92f06e7-d68e-4f0c-9aa6-824c717e099c",
+      "claim_id": "C35",
+      "claim": "It is possible to directly and precisely manipulate the spatial location of a stable spiral wave core.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, we prove that it is indeed possible to directly and precisely manipulate the spatial location of a stable spiral wave core, and thereby overcome the constraints imposed by internal and external factors that shape the natural meander and drift trajectories.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the experimental and computational results presented throughout the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:22:34.720231Z"
+    },
+    {
+      "id": "c69f39eb-b3c1-400b-8d57-3b1e39584e3d",
+      "content_id": "a92f06e7-d68e-4f0c-9aa6-824c717e099c",
+      "claim_id": "C36",
+      "claim": "Figure-of-eight type reentry can be removed efficiently by dragging the cores of both spiral waves towards each other, till their phase singularities collide, leading to self-annihilation.",
+      "claim_type": "EXPLICIT",
+      "source": "In silico, we find that figure-of-eight type reentry can be removed efficiently by dragging the cores of both spiral waves towards each other, till their phase singularities collide, leading to self-annihilation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by computational data shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:22:34.720231Z"
+    },
+    {
+      "id": "e9597323-1865-45fb-bb6f-47f263145420",
+      "content_id": "a92f06e7-d68e-4f0c-9aa6-824c717e099c",
+      "claim_id": "C40",
+      "claim": "At small d, the spiral tip is dragged along a cycloidal path, in which, the diameter of the loop is O(d).",
+      "claim_type": "EXPLICIT",
+      "source": "At small d, the spiral tip is dragged along a cycloidal path, in which, the diameter of the loop is O(d).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by computational data shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:22:34.720231Z"
+    },
+    {
+      "id": "93a52613-caf4-4399-a1ea-2cccc143b412",
+      "content_id": "a92f06e7-d68e-4f0c-9aa6-824c717e099c",
+      "claim_id": "C41",
+      "claim": "As d increases, the spiral tends to translate linearly, without executing rotational movement about the core.",
+      "claim_type": "EXPLICIT",
+      "source": "As d increases, the spiral tends to translate linearly, without executing rotational movement about the core.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by computational data shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:22:34.720231Z"
+    },
+    {
+      "id": "d556620f-86ad-4a69-8269-b81b76d24b3b",
+      "content_id": "a92f06e7-d68e-4f0c-9aa6-824c717e099c",
+      "claim_id": "C45",
+      "claim": "Probability of attraction depends on the phase of the spiral wave rotation at the moment of light exposure.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that probability of attraction also depends on the phase of the spiral wave rotation at the moment of light exposure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by computational analysis presented in the Results section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:22:34.720231Z"
+    },
+    {
+      "id": "cc24bdc7-6875-4451-9c17-7c92d5241187",
+      "content_id": "a92f06e7-d68e-4f0c-9aa6-824c717e099c",
+      "claim_id": "C47",
+      "claim": "A spiral wave cannot be dragged when r > 5.63 mm.",
+      "claim_type": "EXPLICIT",
+      "source": "A spiral wave cannot be dragged when r > 5.63 mm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by computational data shown in Figure 3G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:22:34.720231Z"
+    },
+    {
+      "id": "766b1bc2-44d0-4e77-9e4e-6a8196d792cc",
+      "content_id": "a92f06e7-d68e-4f0c-9aa6-824c717e099c",
+      "claim_id": "C51",
+      "claim": "Successful AAD control necessitates the spiral wave to make alternate transitions between functional (free) and anatomical (anchored) types of reentry.",
+      "claim_type": "EXPLICIT",
+      "source": "Our in silico findings indicate that successful control necessitates the spiral wave to make alternate transitions between functional (free) and anatomical (anchored) types of reentry.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by computational analysis shown in Figure 3H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:22:34.720231Z"
+    },
+    {
+      "id": "5c4a9698-8288-49bc-9285-bfa100858632",
+      "content_id": "a92f06e7-d68e-4f0c-9aa6-824c717e099c",
+      "claim_id": "C52",
+      "claim": "When a spot of light is applied reasonably close to the core of a spiral wave, within the allowed \u0394\u03b8, it creates a region of light-induced depolarization that attracts and anchors the core of the free spiral, thereby effectuating a transition from functional to anatomical reentry.",
+      "claim_type": "EXPLICIT",
+      "source": "When a spot of light is applied reasonably close to the core of a spiral wave, within the allowed \u0394\u03b8, it creates a region of light-induced depolarization that attracts and anchors the core of the free spiral, thereby effectuating a transition from functional to anatomical reentry.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by computational analysis and represents a mechanistic explanation of the observed phenomenon.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:22:34.720231Z"
+    },
+    {
+      "id": "3cf4e912-bfa7-42b0-984e-00e0e976ccdc",
+      "content_id": "a92f06e7-d68e-4f0c-9aa6-824c717e099c",
+      "claim_id": "C53",
+      "claim": "When the light spot is moved to a different location, still within the basin of attraction of the first light spot, the previously depolarized region recovers, forcing the anchored spiral to unpin and make a reverse transition to functional reentry.",
+      "claim_type": "EXPLICIT",
+      "source": "When the light spot is now moved to a different location, still within the basin of attraction of the first light spot, the previously depolarized region recovers, forcing the anchored spiral to unpin and make a reverse transition to functional reentry.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by computational analysis and represents a mechanistic explanation of the observed phenomenon.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:22:34.720231Z"
+    },
+    {
+      "id": "d8ceba4f-7dfb-4121-86bc-f94bb7059dec",
+      "content_id": "a92f06e7-d68e-4f0c-9aa6-824c717e099c",
+      "claim_id": "C54",
+      "claim": "The study is one of the first to demonstrate the establishment of real-time spatiotemporal control over spiral wave dynamics in spatially extended biological (cardiac) tissue.",
+      "claim_type": "EXPLICIT",
+      "source": "Our study is one of the first to demonstrate the establishment of real-time spatiotemporal control over spiral wave dynamics in spatially extended biological (cardiac) tissue.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a claim about the novelty of the work, based on the authors' assessment of the literature.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:22:34.720231Z"
+    },
+    {
+      "id": "8136a152-dfe8-45ab-926b-754eb45cce0e",
+      "content_id": "a92f06e7-d68e-4f0c-9aa6-824c717e099c",
+      "claim_id": "C55",
+      "claim": "Burton et al. (2015) use dynamic control to modulate spiral wave chirality, which is markedly different from spiral wave dragging.",
+      "claim_type": "EXPLICIT",
+      "source": "The only other study that shows effective dynamic spatiotemporal control (as opposed to elimination) of spiral waves is that of (Burton et al., 2015). However, Burton et al. (2015) use dynamic control to modulate spiral wave chirality, which is markedly different from what we study and prove, namely spiral wave dragging.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Burton et al., 2015 and comparison with the current work.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:22:34.720231Z"
+    },
+    {
+      "id": "9291daa7-5464-49d2-8adf-18ca61227578",
+      "content_id": "a92f06e7-d68e-4f0c-9aa6-824c717e099c",
+      "claim_id": "C56",
+      "claim": "Previous researchers employed different kinds of spatiotemporal feedback interactions to control spiral wave dynamics in non-biological media.",
+      "claim_type": "EXPLICIT",
+      "source": "In the past, researchers also employed different kinds of spatiotemporal feedback interactions to control spiral wave dynamics, albeit in non-biological media (Sakurai et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Sakurai et al., 2002.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:22:34.720231Z"
+    },
+    {
+      "id": "6605ffbd-4897-43c3-9740-11bcd38b2219",
+      "content_id": "a92f06e7-d68e-4f0c-9aa6-824c717e099c",
+      "claim_id": "C57",
+      "claim": "Phase-based pulse delivery methods can be quite challenging in complex biological tissue, where temporal precision is a major subtlety and therefore difficult to achieve.",
+      "claim_type": "EXPLICIT",
+      "source": "Although feasible in simple chemical systems, phase-based pulse delivery can be quite challenging in complex biological tissue, where temporal precision is a major subtlety and therefore difficult to achieve.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the authors' understanding of the challenges in biological systems.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:22:34.720231Z"
+    },
+    {
+      "id": "fea85725-d324-4d83-abc8-25d83a3980c8",
+      "content_id": "a92f06e7-d68e-4f0c-9aa6-824c717e099c",
+      "claim_id": "C58",
+      "claim": "Ke et al. (2015) demonstrate a process that is continuous in time, as opposed to the discrete nature of the AAD method.",
+      "claim_type": "EXPLICIT",
+      "source": "The study by Ke et al. (2015) bypasses this issue by forcing scroll wave filaments to anchor to physical heterogeneities, which can be moved subsequently to steer the waves. However, Ke et al. (2015) demonstrate a process that is continuous in time, as opposed to the discrete nature of our method, which makes it more flexible.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on comparison with the cited work and the current study.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:22:34.720231Z"
+    },
+    {
+      "id": "446d3c9f-ba95-4ee0-b698-13b15dcd940c",
+      "content_id": "a92f06e7-d68e-4f0c-9aa6-824c717e099c",
+      "claim_id": "C59",
+      "claim": "The mechanism of attraction of spiral waves to localized heterogeneities is a generic phenomenon, observed among spiral waves in heterogeneous tissue.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies have explored the concept of spiral attraction in human cardiac tissue (Defauw et al., 2014). According to these findings, the mechanism of attraction of spiral waves to localized heterogeneities is a generic phenomenon, observed among spiral waves in heterogeneous tissue.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Defauw et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:22:34.720231Z"
+    },
+    {
+      "id": "1e6ce53d-9202-4353-845d-407dd6cbdfd2",
+      "content_id": "a92f06e7-d68e-4f0c-9aa6-824c717e099c",
+      "claim_id": "C60",
+      "claim": "Spiral waves tend to drift to regions with longer rotational periods, that is where the duration of an action potential is longer than elsewhere in the medium.",
+      "claim_type": "EXPLICIT",
+      "source": "Some studies (Defauw et al., 2014; Panfilov and Vasiev, 1991; Rudenko and Panfilov, 1983) show that spiral waves tend to drift to regions with longer rotational periods, that is where the duration of an action potential is longer than elsewhere in the medium.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Defauw et al., 2014; Panfilov and Vasiev, 1991; Rudenko and Panfilov, 1983.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:22:34.720231Z"
+    },
+    {
+      "id": "d8a57371-653f-428a-a8ed-4b7a82640b5a",
+      "content_id": "a92f06e7-d68e-4f0c-9aa6-824c717e099c",
+      "claim_id": "C61",
+      "claim": "Application of a spot of light to a monolayer of excitable, optogenetically modified cardiomyocytes causes the cells in this region to depolarize, bearing a direct influence on the action potential duration of cells in the immediate neighborhood.",
+      "claim_type": "EXPLICIT",
+      "source": "This is in consonance with our simulations, where application of a spot of light to a monolayer of excitable, optogenetically modified cardiomyocytes causes the cells in this region to depolarize, bearing a direct influence on the action potential duration of cells in the immediate neighborhood.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the computational simulations described in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:22:34.720231Z"
+    },
+    {
+      "id": "876f705a-5172-4df7-8296-941c22d010fb",
+      "content_id": "a92f06e7-d68e-4f0c-9aa6-824c717e099c",
+      "claim_id": "C62",
+      "claim": "AAD control is associated with repeated alternative transitions between functional and anatomical reentry.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, AAD control is associated with repeated alternative transitions between functional and anatomical reentry.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mechanistic explanation based on the computational and experimental observations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:22:34.720231Z"
+    },
+    {
+      "id": "b4a5dc07-b453-4c13-ad81-e4e0d39977e4",
+      "content_id": "a92f06e7-d68e-4f0c-9aa6-824c717e099c",
+      "claim_id": "C63",
+      "claim": "When an existing vortex interacts with a circular wave emerging from a stimulus applied close to the vortex core, they fail to annihilate each other according to Krinsky et al. (1995).",
+      "claim_type": "EXPLICIT",
+      "source": "A mechanism, somewhat along the same lines as AAD control, was demonstrated by Krinsky et al. (1995), using topological considerations. When an existing vortex interacts with a circular wave emerging from a stimulus applied close to the vortex core, they fail to annihilate each other.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Krinsky et al., 1995.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:22:34.720231Z"
+    },
+    {
+      "id": "571f19cf-fdc9-41bb-b396-39af6e71e0c6",
+      "content_id": "a92f06e7-d68e-4f0c-9aa6-824c717e099c",
+      "claim_id": "C64",
+      "claim": "The emergent wave quenches the vortex, resulting in its displacement by the order of half a wavelength according to Krinsky et al. (1995).",
+      "claim_type": "EXPLICIT",
+      "source": "However, the emergent wave quenches the vortex, resulting in its displacement by the order of half a wavelength.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Krinsky et al., 1995.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:22:34.720231Z"
+    },
+    {
+      "id": "f7183b03-b8e0-4379-a8a5-4e065e4c3401",
+      "content_id": "a92f06e7-d68e-4f0c-9aa6-824c717e099c",
+      "claim_id": "C65",
+      "claim": "Guo et al. (2010) investigated control of spiral wave turbulence in a self-regulation system that spontaneously eliminated vortex cores, by trapping the latter with localized inhomogeneities.",
+      "claim_type": "EXPLICIT",
+      "source": "In another study (Guo et al., 2010), control of spiral wave turbulence was investigated in a self-regulation system that spontaneously eliminated vortex cores, by trapping the latter with localized inhomogeneities.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Guo et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:22:34.720231Z"
+    },
+    {
+      "id": "88c460a1-7f05-4b77-b4f4-ff456846fbd7",
+      "content_id": "a92f06e7-d68e-4f0c-9aa6-824c717e099c",
+      "claim_id": "C66",
+      "claim": "Movement of a spiral wave along a line of predefined obstacles was observed by Andreev (2005).",
+      "claim_type": "EXPLICIT",
+      "source": "Movement of a spiral wave along a line of predefined obstacles was also observed by Andreev (2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Andreev, 2005.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:22:34.720231Z"
+    },
+    {
+      "id": "8ca112a8-71b4-4512-801b-1ecb616db4da",
+      "content_id": "a92f06e7-d68e-4f0c-9aa6-824c717e099c",
+      "claim_id": "C67",
+      "claim": "Zykov et al. (2010) and Nakouzi et al. (2016) reported the involvement of bistability and hysteresis in the transitions from anchoring to unpinning of a wave rotating around an anatomical hole.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on their experimental, computational and theoretical studies, Zykov et al. (2010) and Nakouzi et al. (2016) reported the involvement of bistability and hysteresis in the transitions from anchoring to unpinning of a wave rotating around an anatomical hole.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Zykov et al., 2010 and Nakouzi et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:22:34.720231Z"
+    },
+    {
+      "id": "ba8c2722-1ec2-4f50-a4ed-dffdd6ce4d1f",
+      "content_id": "a92f06e7-d68e-4f0c-9aa6-824c717e099c",
+      "claim_id": "C68",
+      "claim": "Cardiac tissue possesses an inherently irregular discrete cellular structure, underlying the absence of spatial symmetries.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared to other systems, such as the BZ reaction, cardiac tissue (i) possesses an inherently irregular discrete cellular structure, underlying the absence of spatial symmetries, (ii) lacks inhibitor diffusion and (iii) has different dimensions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about cardiac tissue structure.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:22:34.720231Z"
+    },
+    {
+      "id": "c8db354c-267c-4da0-b6ff-fc58118b8045",
+      "content_id": "a92f06e7-d68e-4f0c-9aa6-824c717e099c",
+      "claim_id": "C69",
+      "claim": "Cardiac tissue lacks inhibitor diffusion.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared to other systems, such as the BZ reaction, cardiac tissue (i) possesses an inherently irregular discrete cellular structure, underlying the absence of spatial symmetries, (ii) lacks inhibitor diffusion and (iii) has different dimensions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about cardiac tissue properties.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:22:34.720231Z"
+    },
+    {
+      "id": "cf72632a-2ad2-4a7c-816e-d644c526e2ca",
+      "content_id": "a92f06e7-d68e-4f0c-9aa6-824c717e099c",
+      "claim_id": "C70",
+      "claim": "Previous studies demonstrated alternative methods to 'control' spiral-wave dynamics in excitable media by periodic forcing to induce resonant drift.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies also demonstrated alternative methods to 'control' spiral-wave dynamics in excitable media, for example, by periodic forcing to induce resonant drift (Agladze et al., 1987; Biktasheva et al., 1999; Agladze et al., 2007), or by periodic modulation of excitability to manipulate spiral tip trajectories (Steinbock et al., 1993).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Agladze et al., 1987; Biktasheva et al., 1999; Agladze et al., 2007.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:22:34.720231Z"
+    },
+    {
+      "id": "35d6a979-513f-4f40-adba-a32ed40d1cc1",
+      "content_id": "a92f06e7-d68e-4f0c-9aa6-824c717e099c",
+      "claim_id": "C71",
+      "claim": "Previous studies demonstrated alternative methods to 'control' spiral-wave dynamics in excitable media by periodic modulation of excitability to manipulate spiral tip trajectories.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies also demonstrated alternative methods to 'control' spiral-wave dynamics in excitable media, for example, by periodic forcing to induce resonant drift (Agladze et al., 1987; Biktasheva et al., 1999; Agladze et al., 2007), or by periodic modulation of excitability to manipulate spiral tip trajectories (Steinbock et al., 1993).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Steinbock et al., 1993.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:22:34.720231Z"
+    },
+    {
+      "id": "2569e62c-d654-4676-9bf2-c0fe8a0fd05d",
+      "content_id": "a92f06e7-d68e-4f0c-9aa6-824c717e099c",
+      "claim_id": "C72",
+      "claim": "The principal limitation of previous control methods is that they are indirect, giving reasonable control over the initial and final states of the system, with little or no control in between.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the principal limitation of these methods is that they are indirect, giving reasonable control over the initial and final states of the system, with little or no control in between.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the authors' analysis of previous methods.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:22:34.720231Z"
+    },
+    {
+      "id": "08615b5c-6ba4-4773-9df3-f34d2c73a9de",
+      "content_id": "a92f06e7-d68e-4f0c-9aa6-824c717e099c",
+      "claim_id": "C73",
+      "claim": "AAD control allows precise and complete spatiotemporal control over spiral wave dynamics in two-dimensional excitable media.",
+      "claim_type": "EXPLICIT",
+      "source": "It is herein where lies the advantage of AAD control, which allows precise and complete spatiotemporal control over spiral wave dynamics in two-dimensional excitable media.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the experimental and computational results presented throughout the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:22:34.720231Z"
+    },
+    {
+      "id": "82f6c38b-f687-4ad9-bee7-25a86fb13d5c",
+      "content_id": "a92f06e7-d68e-4f0c-9aa6-824c717e099c",
+      "claim_id": "C74",
+      "claim": "The penetration depth of light in cardiac tissue is relatively short.",
+      "claim_type": "EXPLICIT",
+      "source": "Since the penetration depth of light in cardiac tissue is relatively short (Bruegmann et al., 2016), full transmural illumination might be challenging, particularly in ventricles of large mammals like pig, monkey or human.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Bruegmann et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:22:34.720231Z"
+    },
+    {
+      "id": "f0840695-96e5-4cb8-95c9-1f152f8687d7",
+      "content_id": "a92f06e7-d68e-4f0c-9aa6-824c717e099c",
+      "claim_id": "C75",
+      "claim": "Full transmural illumination might be challenging in ventricles of large mammals like pig, monkey or human.",
+      "claim_type": "EXPLICIT",
+      "source": "Since the penetration depth of light in cardiac tissue is relatively short (Bruegmann et al., 2016), full transmural illumination might be challenging, particularly in ventricles of large mammals like pig, monkey or human.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the limited penetration depth of light in cardiac tissue.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:22:34.720231Z"
+    },
+    {
+      "id": "70319ce4-e226-4959-9ec0-e6b1dc9d345f",
+      "content_id": "a92f06e7-d68e-4f0c-9aa6-824c717e099c",
+      "claim_id": "C76",
+      "claim": "AAD control may provide a powerful tool to regulate scroll wave dynamics by epicardial or endocardial illumination.",
+      "claim_type": "EXPLICIT",
+      "source": "There, AAD control may provide a powerful tool to regulate scroll wave dynamics by epicardial or endocardial illumination.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative claim about potential future applications.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:22:34.720231Z"
+    },
+    {
+      "id": "4b7e4d8e-e2bf-4365-b6f6-eaee8f1571c7",
+      "content_id": "a92f06e7-d68e-4f0c-9aa6-824c717e099c",
+      "claim_id": "C77",
+      "claim": "The electrophysiological properties of neonatal rat atrial cardiomyocytes were modeled according to Majumder et al. (2016).",
+      "claim_type": "EXPLICIT",
+      "source": "The electrophysiological properties of neonatal rat atrial cardiomyocytes were modeled according to Majumder et al. (2016), whereby, the transmembrane potential V of a single cell evolved in time as follows:",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Majumder et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:22:34.720231Z"
+    },
+    {
+      "id": "76b5cfaa-8813-4410-84a9-82a922e7c8d7",
+      "content_id": "a92f06e7-d68e-4f0c-9aa6-824c717e099c",
+      "claim_id": "C79",
+      "claim": "The signal conduction velocity in the simulations was 22.2\u00b13.4 cm/s.",
+      "claim_type": "EXPLICIT",
+      "source": "This resulted in a signal conduction velocity of 22.2\u00b13.4 cm/s.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the computational simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:22:34.720231Z"
+    },
+    {
+      "id": "7b45a4c5-8d16-4aa0-912e-5e327d89f21e",
+      "content_id": "a92f06e7-d68e-4f0c-9aa6-824c717e099c",
+      "claim_id": "C80",
+      "claim": "The optogenetic tool used in the numerical studies was a model of Chlamydomonas reinhardtii channelrhodopsin-2 mutant H134R, adopted from the studies of Boyle et al. (2013).",
+      "claim_type": "EXPLICIT",
+      "source": "The optogenetic tool used in the numerical studies was a model of Chlamydomonas reinhardtii channelrhodopsin-2 mutant H134R, adopted from the studies of Boyle et al. (2013)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Boyle et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:22:34.720231Z"
+    },
+    {
+      "id": "0e0784bd-0c51-46be-bd76-ff9fbd244c60",
+      "content_id": "a92f06e7-d68e-4f0c-9aa6-824c717e099c",
+      "claim_id": "C82",
+      "claim": "The simulation domains were composed of neonatal rat atrial cardiomyocytes with 17% randomly distributed cardiac fibroblasts.",
+      "claim_type": "EXPLICIT",
+      "source": "In order to be consistent with the in vitro experiments, we prepared 10 different simulation domains, composed of neonatal rat atrial cardiomyocytes with 17% randomly distributed cardiac fibroblasts (MacCannell et al., 2007) and with natural cellular heterogeneity, modelled as per (Majumder et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the composition of the computational model, supported by citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:22:34.720231Z"
+    },
+    {
+      "id": "d2d22131-f4a2-44b0-b852-75640345c1e3",
+      "content_id": "a92f06e7-d68e-4f0c-9aa6-824c717e099c",
+      "claim_id": "C83",
+      "claim": "All animal experiments were reviewed and approved by the Animal Experiments Committee of the Leiden University Medical Center.",
+      "claim_type": "EXPLICIT",
+      "source": "All animal experiments were reviewed and approved by the Animal Experiments Committee of the Leiden University Medical Center and conformed to the Guide for the Care and Use of Laboratory Animals as stated by the US National Institutes of Health.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about ethical approval for the experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:22:34.720231Z"
+    },
+    {
+      "id": "37138da2-b1e3-41a0-99ad-acf1a8d381a9",
+      "content_id": "a92f06e7-d68e-4f0c-9aa6-824c717e099c",
+      "claim_id": "C85",
+      "claim": "The neonatal rat atrial cardiomyocyte monolayers were incubated for 20-24 hr with CatCh-encoding lentiviral particles at a dose resulting in homogeneous transduction of nearly 100% of the cells.",
+      "claim_type": "EXPLICIT",
+      "source": "At day 4 of culture, the neonatal rat atrial cardiomyocyte monolayers were incubated for 20 \u2013 24 hr with CatCh-encoding lentiviral particles at a dose resulting in homogeneous transduction of nearly 100% of the cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental protocol used to create the optogenetically modified cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:22:34.720231Z"
+    },
+    {
+      "id": "e710de08-ae5b-435e-abfe-cc46aadc2450",
+      "content_id": "a92f06e7-d68e-4f0c-9aa6-824c717e099c",
+      "claim_id": "C86",
+      "claim": "Optical voltage mapping was used to investigate optogenetic manipulation of spiral wave dynamics in the CatCh-expressing monolayers on day 7 of culture.",
+      "claim_type": "EXPLICIT",
+      "source": "Optical voltage mapping was used to investigate optogenetic manipulation of spiral wave dynamics in the CatCh-expressing monolayers on day 7 of culture by using the voltage-sensitive dye di-4-ANBDQBS (52.5 \u03bcM final concentration; ITK diagnostics, Uithoorn, the Netherlands), as described previously (Feola et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental method used, supported by citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:22:34.720231Z"
+    },
+    {
+      "id": "d4bfaf1b-5798-4add-89f7-280355c38c24",
+      "content_id": "a92f06e7-d68e-4f0c-9aa6-824c717e099c",
+      "claim_id": "C87",
+      "claim": "CatCh was locally activated by using a patterned illumination device (Polygon400; Mightex Systems, Toronto, ON) connected to a 470-nm, high-power collimator light-emitting diode (LED) source.",
+      "claim_type": "EXPLICIT",
+      "source": "CatCh was locally activated by using a patterned illumination device (Polygon400; Mightex Systems, Toronto, ON) connected to a 470-nm, high-power collimator light-emitting diode (LED) source (type-H, also from Mightex Systems).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental equipment used for optogenetic stimulation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:22:34.720231Z"
+    },
+    {
+      "id": "5f936549-8493-477f-8a4e-6ea05f498c75",
+      "content_id": "a92f06e7-d68e-4f0c-9aa6-824c717e099c",
+      "claim_id": "C88",
+      "claim": "Reentry was induced by light-based stimulations in 18 monolayers.",
+      "claim_type": "EXPLICIT",
+      "source": "Before local optogenetic manipulation, reentry was induced by light-based stimulations (n = 18).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental protocol and sample size.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:22:34.720231Z"
+    },
+    {
+      "id": "cdb57f58-c479-490d-afe9-fe5c3d484b60",
+      "content_id": "a92f06e7-d68e-4f0c-9aa6-824c717e099c",
+      "claim_id": "C90",
+      "claim": "The spiral wave core can be dragged along a predefined 9-step triangular path in silico and in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 1 (C1-4) and 1(D1-4) show representative examples of AAD control of spiral wave dynamics in silico and in vitro, respectively, where the spiral wave core is dragged along a predefined 9-step triangular path (see also Video 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 1 and Video 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:22:34.720231Z"
+    },
+    {
+      "id": "cf74bea1-bcc7-4b10-89ab-1710a03054a7",
+      "content_id": "a92f06e7-d68e-4f0c-9aa6-824c717e099c",
+      "claim_id": "C91",
+      "claim": "A single spiral wave can be removed in silico with a five-step drag sequence of circular light spots of 0.275 cm diameter and 250 ms illumination time per spot.",
+      "claim_type": "EXPLICIT",
+      "source": "We first focus on removing a single spiral wave in silico (Figures 2 A1\u20135; see also Video 2). With a five-step drag sequence of circular light spots of 0.275 cm diameter and 250 ms illumination time per spot, we demonstrate the possibility to remove a spiral wave from a monolayer, by capturing its core somewhere near the middle of the simulation domain and subsequently dragging it all the way to the unexcitable boundary on the left, causing the phase singularity to collide with the border and annihilate.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by computational data shown in Figure 2A and Video 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:22:34.720231Z"
+    },
+    {
+      "id": "6909d58b-60df-40a1-a419-458786426c9d",
+      "content_id": "a92f06e7-d68e-4f0c-9aa6-824c717e099c",
+      "claim_id": "C92",
+      "claim": "In vitro findings corroborate the in silico results for single spiral wave termination.",
+      "claim_type": "EXPLICIT",
+      "source": "Inspired by the outcome of our in silico experiments, we tested the same principle in vitro, with a five-step drag sequence of circular light spots with similar characteristics as those applied in silico. Our in vitro findings corroborate the in silico results (Figures 2 B1\u20135; see also Video 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2B and Video 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:22:34.720231Z"
+    },
+    {
+      "id": "d02b7c46-38ec-4c80-866b-57b61a93d73f",
+      "content_id": "a92f06e7-d68e-4f0c-9aa6-824c717e099c",
+      "claim_id": "C93",
+      "claim": "Figure-of-eight type reentry can be terminated in vitro by dragging the cores of both spiral waves toward each other to make them collide and annihilate.",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 4 (B1-6) (see also Video 3) show successful experimental (in vitro) validation of our in silico findings, following the same termination protocol.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4B and Video 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:22:34.720231Z"
+    },
+    {
+      "id": "8192a795-8123-4640-be6b-663d62de7523",
+      "content_id": "a92f06e7-d68e-4f0c-9aa6-824c717e099c",
+      "claim_id": "C94",
+      "claim": "Complex reentry pattern characterized by four phase singularities can be terminated in vitro using AAD control.",
+      "claim_type": "EXPLICIT",
+      "source": "A similar strategy applied in vitro enabled successful termination of a complex reentry pattern characterized by four phase singularities. This is illustrated in Figure 5 (C1-7).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:22:34.720231Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "d947db90-1de2-4f3c-a279-d0698f04328b",
+      "content_id": "a92f06e7-d68e-4f0c-9aa6-824c717e099c",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Spiral waves are ubiquitous phenomena found in diverse natural systems ranging from galaxies to chemical reactions to biological systems, where they can be beneficial (e.g., morphogenesis in slime molds) or detrimental (e.g., cardiac arrhythmias).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C2 and C7-C13 establish the widespread occurrence and biological significance of spiral waves through multiple citations to established literature. These are well-documented phenomena serving as background context for the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:22:34.720231Z"
+    },
+    {
+      "id": "0237b439-dd37-495c-b548-080dd8eb9add",
+      "content_id": "a92f06e7-d68e-4f0c-9aa6-824c717e099c",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "While spiral wave cores are known to determine overall wave dynamics through their topological properties, the hypothesis that core manipulation enables full spatiotemporal control lacks experimental evidence.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C14-C15 correctly identify a gap in the literature: although the theoretical relationship between core properties and wave dynamics is established (C14-C15 with citations), experimental validation of controlled core manipulation is absent (C3). This motivates the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:22:34.720231Z"
+    },
+    {
+      "id": "42a8fbcf-8d8b-495f-9daf-191836a5528a",
+      "content_id": "a92f06e7-d68e-4f0c-9aa6-824c717e099c",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Previous studies demonstrated spiral wave anchoring, unpinning, and attraction to heterogeneities in chemical and cardiac systems, but all involved permanent or continuous heterogeneities, preventing flexible dynamic manipulation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16-C17, C19-C23 accurately summarize prior work on spiral wave control with appropriate citations. Claim C23 correctly identifies the limitation that previous approaches lacked temporal flexibility, establishing the novelty of the current approach.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:22:34.720231Z"
+    },
+    {
+      "id": "ff94a81f-b891-4b50-b4a6-3d34e8d5804f",
+      "content_id": "a92f06e7-d68e-4f0c-9aa6-824c717e099c",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Optogenetics enables creation of spatially and temporally predefined heterogeneities with high resolution in excitable media, with demonstrated applications in cardiac systems.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24-C25 are well-supported by multiple citations to established optogenetics literature. This provides the methodological foundation for the experimental approach.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:22:34.720231Z"
+    },
+    {
+      "id": "8a3d6f98-c7db-48d5-ae61-7ddc92b9547f",
+      "content_id": "a92f06e7-d68e-4f0c-9aa6-824c717e099c",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The study demonstrates a new Attract-Anchor-Drag (AAD) control method that enables real-time spatiotemporal manipulation of spiral wave cores along predefined trajectories in both computational simulations and optogenetically modified cardiac tissue.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4-C6, C26-C29, C31-C32, C35, and C90 collectively describe the core finding with convergent evidence from both in silico (C26) and in vitro (C27) experiments. Figure 1 demonstrates successful dragging along a triangular path in both systems with consistent spiral wave periods (60\u00b15 ms in silico, 63\u00b111 ms in vitro), providing strong validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:22:34.720231Z"
+    },
+    {
+      "id": "fb86f0de-38ad-4e2d-8380-de2988aba974",
+      "content_id": "a92f06e7-d68e-4f0c-9aa6-824c717e099c",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Single spiral waves can be terminated by dragging their cores to unexcitable boundaries using a five-step sequence of light spots, validated both computationally and experimentally.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C91-C92 are directly supported by Figure 2 and Video 2, showing successful termination in both in silico and in vitro systems. The experimental validation (C92, n=9) corroborates the computational predictions with similar protocols.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:22:34.720231Z"
+    },
+    {
+      "id": "6577d8c9-da08-497f-9371-d330eac50396",
+      "content_id": "a92f06e7-d68e-4f0c-9aa6-824c717e099c",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Figure-of-eight reentry patterns can be terminated by dragging both spiral wave cores toward each other until collision and annihilation, demonstrated in silico and validated in vitro.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36 and C93 are supported by Figure 4 and Video 3, showing successful termination of figure-of-eight reentry in both computational (C36) and experimental (C93, n=6) systems using the same protocol.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:22:34.720231Z"
+    },
+    {
+      "id": "174e5b64-5a58-412a-a7b5-58b97e64ed76",
+      "content_id": "a92f06e7-d68e-4f0c-9aa6-824c717e099c",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Complex reentry patterns with four phase singularities can be terminated in vitro using strategic AAD control involving complexity reduction followed by dragging.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C94 is supported by Figure 5C showing successful termination of complex reentry with four phase singularities. The approach involves strategic light spot application to reduce complexity before final dragging to termination.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:22:34.720231Z"
+    },
+    {
+      "id": "de36f204-8374-49ce-a4e8-d3922c333f97",
+      "content_id": "a92f06e7-d68e-4f0c-9aa6-824c717e099c",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The trajectory of dragged spiral waves depends on light spot diameter: small spots produce cycloidal paths with loop diameter O(d), while larger spots enable linear translation without rotation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40-C41 are supported by computational data in Figure 3A showing distinct trajectory patterns at different spot sizes. The mechanistic explanation is consistent with the observed basin of attraction effects.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:22:34.720231Z"
+    },
+    {
+      "id": "5f1343eb-714d-407c-ba6f-ef2e1c0f1a66",
+      "content_id": "a92f06e7-d68e-4f0c-9aa6-824c717e099c",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Successful spiral wave dragging depends on the phase of spiral rotation at light exposure and the distance from the spiral tip, with dragging impossible when r > 5.63 mm.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45 and C47 are supported by computational analysis in Figure 3G showing phase-dependent attraction probability and distance limitations. The angular spread analysis (\u0394\u03b8) provides quantitative characterization of the attraction basin.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:22:34.720231Z"
+    },
+    {
+      "id": "a3044a5c-60f3-4729-963f-d239392fe48f",
+      "content_id": "a92f06e7-d68e-4f0c-9aa6-824c717e099c",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "AAD control operates through alternating transitions between functional (free) and anatomical (anchored) reentry, mediated by light-induced depolarization that attracts and anchors spiral cores, followed by unpinning when light is moved.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C53 and C62 provide a mechanistic explanation supported by computational analysis in Figure 3H. The proposed mechanism of alternating transitions is consistent with the observed dynamics and explains the discrete nature of the control method.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:22:34.720231Z"
+    },
+    {
+      "id": "c9b4bb94-dc79-466c-90fd-10d65235e84a",
+      "content_id": "a92f06e7-d68e-4f0c-9aa6-824c717e099c",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "This study is among the first to demonstrate real-time spatiotemporal control over spiral wave dynamics in biological tissue, distinct from prior work on chirality modulation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54-C55 appropriately position the novelty of the work. The comparison with Burton et al. (2015) correctly distinguishes spiral wave dragging from chirality modulation, supporting the claim of novelty.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:22:34.720231Z"
+    },
+    {
+      "id": "d8a53fd7-8099-4379-8652-538056cf04dd",
+      "content_id": "a92f06e7-d68e-4f0c-9aa6-824c717e099c",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Previous control methods using spatiotemporal feedback or physical heterogeneities have limitations: phase-based approaches are challenging in biological tissue, and continuous-time methods lack the flexibility of the discrete AAD approach.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56-C58 provide appropriate context by comparing with prior methods (Sakurai et al. 2002, Ke et al. 2015). The assessment of limitations is reasonable, though C57 involves some inference about biological complexity.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:22:34.720231Z"
+    },
+    {
+      "id": "62e4bd1c-fbea-4af0-a428-53cc42e2fcc4",
+      "content_id": "a92f06e7-d68e-4f0c-9aa6-824c717e099c",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The attraction mechanism is consistent with the generic phenomenon that spiral waves drift toward regions with longer action potential duration, which occurs in the light-induced depolarized regions in optogenetically modified cardiomyocytes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59-C61 connect the observed attraction to established principles (Defauw et al. 2014, Panfilov and Vasiev 1991) and computational results from this study. The mechanistic explanation is consistent with known spiral wave behavior.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:22:34.720231Z"
+    },
+    {
+      "id": "bd6eb0f5-4b40-47b0-aa0c-dad956c802fd",
+      "content_id": "a92f06e7-d68e-4f0c-9aa6-824c717e099c",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The AAD mechanism shares features with previously described phenomena including vortex displacement by emergent waves, spiral trapping by inhomogeneities, and bistability in anchoring-unpinning transitions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C63-C67 appropriately relate the current findings to prior theoretical and experimental work (Krinsky et al. 1995, Guo et al. 2010, Andreev 2005, Zykov et al. 2010, Nakouzi et al. 2016), providing theoretical context.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:22:34.720231Z"
+    },
+    {
+      "id": "5573efd2-2d23-4ea2-99d1-d7c7a69c1fc0",
+      "content_id": "a92f06e7-d68e-4f0c-9aa6-824c717e099c",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Cardiac tissue differs from chemical systems like BZ reactions in possessing irregular discrete cellular structure without spatial symmetries and lacking inhibitor diffusion.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C68-C69 accurately describe established differences between cardiac tissue and chemical excitable media. These distinctions are important for understanding why the results are non-trivial despite theoretical predictions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:22:34.720231Z"
+    },
+    {
+      "id": "2c771b76-bf4e-47a7-831a-c8aab286b83e",
+      "content_id": "a92f06e7-d68e-4f0c-9aa6-824c717e099c",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "AAD control provides advantages over previous indirect control methods by enabling precise and complete spatiotemporal control throughout the manipulation process, not just at initial and final states.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C70-C73 appropriately compare AAD with prior methods (Agladze et al., Steinbock et al.). The assessment that previous methods provide limited intermediate control (C72) is reasonable, and C73 is supported by the experimental demonstrations throughout the manuscript.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:22:34.720231Z"
+    },
+    {
+      "id": "dc88c6ce-3cde-4cf8-8c27-929d19492154",
+      "content_id": "a92f06e7-d68e-4f0c-9aa6-824c717e099c",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Limited light penetration depth in cardiac tissue may challenge full transmural illumination in large mammalian ventricles, but AAD control could regulate scroll waves via epicardial or endocardial illumination.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C74 is supported by citation (Bruegmann et al. 2016), and C75 is a reasonable inference. However, C76 is speculative about future applications without experimental validation in 3D systems or large mammals. The extension from 2D to 3D scroll waves requires additional validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:22:34.720231Z"
+    },
+    {
+      "id": "31888c4c-8bcf-4036-a7eb-d4eae6a5173b",
+      "content_id": "a92f06e7-d68e-4f0c-9aa6-824c717e099c",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "The computational model uses established neonatal rat atrial cardiomyocyte electrophysiology with CatCh channelrhodopsin, achieving signal conduction velocity of 22.2\u00b13.4 cm/s in domains with 17% fibroblasts.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C77, C79-C80, C82 describe the computational methodology with appropriate citations (Majumder et al. 2016, Boyle et al. 2013, MacCannell et al. 2007). The reported conduction velocity is within physiological range for neonatal rat atrial tissue.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:22:34.720231Z"
+    },
+    {
+      "id": "97eb63e6-0cc2-49e2-9a65-be48d52eab69",
+      "content_id": "a92f06e7-d68e-4f0c-9aa6-824c717e099c",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "The experimental system used optogenetically modified neonatal rat atrial cardiomyocyte monolayers with nearly 100% CatCh transduction, optical voltage mapping, and patterned illumination to induce and manipulate reentry in 18 monolayers.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C83, C85-C88 describe the experimental methodology with appropriate detail and ethical approval. The sample size (n=18) is stated, and methods reference prior work (Feola et al. 2017). The experimental design is appropriate for the research questions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:22:34.720231Z"
+    },
+    {
+      "id": "3029789d-5e65-4404-83e6-cfdd101d8fe2",
+      "content_id": "a92f06e7-d68e-4f0c-9aa6-824c717e099c",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "Previous work by the authors demonstrated optical control over size, location, and duration of temporal heterogeneities (conduction blocks).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C30 appropriately cites prior work (Feola et al. 2017) establishing the foundation for the current study. This builds on established capabilities of the research group.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:22:34.720231Z"
+    },
+    {
+      "id": "6fbeee13-beaa-42a5-9a70-bcdbafa57cd8",
+      "content_id": "a92f06e7-d68e-4f0c-9aa6-824c717e099c",
+      "result_id": "R22",
+      "result_category": "llm",
+      "result": "Functional and anatomical reentry in cardiac tissue correspond to spiral waves and waves rotating around heterogeneities, both recognized as arrhythmia drivers.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C18 accurately describes established cardiac electrophysiology concepts. This provides important context for understanding the clinical relevance of spiral wave control.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:22:34.720231Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "f0ac8c1e-f8aa-4fbc-a94c-c044cd94e522",
+      "result_id": "d947db90-1de2-4f3c-a279-d0698f04328b"
+    },
+    {
+      "claim_id": "d670dbf1-e5e6-4dd2-9a12-3764d5015c26",
+      "result_id": "d947db90-1de2-4f3c-a279-d0698f04328b"
+    },
+    {
+      "claim_id": "0a578be7-1814-4025-bfe7-15d5cc33d949",
+      "result_id": "d947db90-1de2-4f3c-a279-d0698f04328b"
+    },
+    {
+      "claim_id": "cd1ae919-4d0d-4698-a3c7-41a01eb817d7",
+      "result_id": "d947db90-1de2-4f3c-a279-d0698f04328b"
+    },
+    {
+      "claim_id": "2c41b9c7-319d-4c8f-afc3-aef6a1f1e56b",
+      "result_id": "d947db90-1de2-4f3c-a279-d0698f04328b"
+    },
+    {
+      "claim_id": "711d1200-b08e-41a2-ba48-e75b48d66b6c",
+      "result_id": "d947db90-1de2-4f3c-a279-d0698f04328b"
+    },
+    {
+      "claim_id": "0608bf08-7530-49b6-ad75-fad46bc70967",
+      "result_id": "d947db90-1de2-4f3c-a279-d0698f04328b"
+    },
+    {
+      "claim_id": "c7ac666a-8cbb-4d86-966b-4df9cb88bbab",
+      "result_id": "d947db90-1de2-4f3c-a279-d0698f04328b"
+    },
+    {
+      "claim_id": "f26b032d-2099-4c66-b753-d5ae5fb04cc1",
+      "result_id": "d947db90-1de2-4f3c-a279-d0698f04328b"
+    },
+    {
+      "claim_id": "441305e0-dc3f-45c9-beca-a512ee9720ca",
+      "result_id": "0237b439-dd37-495c-b548-080dd8eb9add"
+    },
+    {
+      "claim_id": "e2e96f90-c5bc-4080-ae2e-1486f9c7270a",
+      "result_id": "0237b439-dd37-495c-b548-080dd8eb9add"
+    },
+    {
+      "claim_id": "d2a1f8dc-b2b5-4f25-b940-0adbd09759eb",
+      "result_id": "0237b439-dd37-495c-b548-080dd8eb9add"
+    },
+    {
+      "claim_id": "fcdb72f8-3ed6-4542-890d-034f0c52f202",
+      "result_id": "42a8fbcf-8d8b-495f-9daf-191836a5528a"
+    },
+    {
+      "claim_id": "cd6e60d0-0c27-4d4d-8c64-a23430903239",
+      "result_id": "42a8fbcf-8d8b-495f-9daf-191836a5528a"
+    },
+    {
+      "claim_id": "92554120-3f64-4b5a-8c7a-9cb308ff2079",
+      "result_id": "42a8fbcf-8d8b-495f-9daf-191836a5528a"
+    },
+    {
+      "claim_id": "bbfdee10-b119-49c2-a682-c06d21d97d00",
+      "result_id": "42a8fbcf-8d8b-495f-9daf-191836a5528a"
+    },
+    {
+      "claim_id": "822570ce-deb7-4cf1-8e66-91461a7ed6e1",
+      "result_id": "42a8fbcf-8d8b-495f-9daf-191836a5528a"
+    },
+    {
+      "claim_id": "a365ae34-f1ff-41e6-8e3c-8c421bcce3cc",
+      "result_id": "42a8fbcf-8d8b-495f-9daf-191836a5528a"
+    },
+    {
+      "claim_id": "4a21586d-f66b-434a-84c6-88d69821bc8d",
+      "result_id": "42a8fbcf-8d8b-495f-9daf-191836a5528a"
+    },
+    {
+      "claim_id": "7fc34e7b-a548-467b-8123-0cdddd5493ff",
+      "result_id": "ff94a81f-b891-4b50-b4a6-3d34e8d5804f"
+    },
+    {
+      "claim_id": "77f185aa-6995-471c-9d26-93d2b499963f",
+      "result_id": "ff94a81f-b891-4b50-b4a6-3d34e8d5804f"
+    },
+    {
+      "claim_id": "0651ae74-19f9-4491-a0d9-3bf25b1fc080",
+      "result_id": "8a3d6f98-c7db-48d5-ae61-7ddc92b9547f"
+    },
+    {
+      "claim_id": "da3c6aaa-cde3-4554-99b5-04d0f8c4af6e",
+      "result_id": "8a3d6f98-c7db-48d5-ae61-7ddc92b9547f"
+    },
+    {
+      "claim_id": "3d60706f-8bc0-4731-b606-32e942dc1b65",
+      "result_id": "8a3d6f98-c7db-48d5-ae61-7ddc92b9547f"
+    },
+    {
+      "claim_id": "25d5dcad-3f99-467f-99a7-ebbc6ef10b1a",
+      "result_id": "8a3d6f98-c7db-48d5-ae61-7ddc92b9547f"
+    },
+    {
+      "claim_id": "24a01d16-06cc-4319-9669-96cadff9fd9a",
+      "result_id": "8a3d6f98-c7db-48d5-ae61-7ddc92b9547f"
+    },
+    {
+      "claim_id": "ac2d6fc5-570d-4ab4-bdf3-c942e81753ef",
+      "result_id": "8a3d6f98-c7db-48d5-ae61-7ddc92b9547f"
+    },
+    {
+      "claim_id": "c1042dec-4689-4624-b563-b9087e9f16cf",
+      "result_id": "8a3d6f98-c7db-48d5-ae61-7ddc92b9547f"
+    },
+    {
+      "claim_id": "834f3d4d-874d-4054-83cd-87a976119524",
+      "result_id": "8a3d6f98-c7db-48d5-ae61-7ddc92b9547f"
+    },
+    {
+      "claim_id": "12bba360-8841-4750-8a55-54cfe96310fb",
+      "result_id": "8a3d6f98-c7db-48d5-ae61-7ddc92b9547f"
+    },
+    {
+      "claim_id": "4366de4e-c139-42b0-b7bc-420ee3a54c1e",
+      "result_id": "8a3d6f98-c7db-48d5-ae61-7ddc92b9547f"
+    },
+    {
+      "claim_id": "cdb57f58-c479-490d-afe9-fe5c3d484b60",
+      "result_id": "8a3d6f98-c7db-48d5-ae61-7ddc92b9547f"
+    },
+    {
+      "claim_id": "cf74bea1-bcc7-4b10-89ab-1710a03054a7",
+      "result_id": "fb86f0de-38ad-4e2d-8380-de2988aba974"
+    },
+    {
+      "claim_id": "6909d58b-60df-40a1-a419-458786426c9d",
+      "result_id": "fb86f0de-38ad-4e2d-8380-de2988aba974"
+    },
+    {
+      "claim_id": "c69f39eb-b3c1-400b-8d57-3b1e39584e3d",
+      "result_id": "6577d8c9-da08-497f-9371-d330eac50396"
+    },
+    {
+      "claim_id": "d02b7c46-38ec-4c80-866b-57b61a93d73f",
+      "result_id": "6577d8c9-da08-497f-9371-d330eac50396"
+    },
+    {
+      "claim_id": "8192a795-8123-4640-be6b-663d62de7523",
+      "result_id": "174e5b64-5a58-412a-a7b5-58b97e64ed76"
+    },
+    {
+      "claim_id": "e9597323-1865-45fb-bb6f-47f263145420",
+      "result_id": "de36f204-8374-49ce-a4e8-d3922c333f97"
+    },
+    {
+      "claim_id": "93a52613-caf4-4399-a1ea-2cccc143b412",
+      "result_id": "de36f204-8374-49ce-a4e8-d3922c333f97"
+    },
+    {
+      "claim_id": "d556620f-86ad-4a69-8269-b81b76d24b3b",
+      "result_id": "5f1343eb-714d-407c-ba6f-ef2e1c0f1a66"
+    },
+    {
+      "claim_id": "cc24bdc7-6875-4451-9c17-7c92d5241187",
+      "result_id": "5f1343eb-714d-407c-ba6f-ef2e1c0f1a66"
+    },
+    {
+      "claim_id": "766b1bc2-44d0-4e77-9e4e-6a8196d792cc",
+      "result_id": "a3044a5c-60f3-4729-963f-d239392fe48f"
+    },
+    {
+      "claim_id": "5c4a9698-8288-49bc-9285-bfa100858632",
+      "result_id": "a3044a5c-60f3-4729-963f-d239392fe48f"
+    },
+    {
+      "claim_id": "3cf4e912-bfa7-42b0-984e-00e0e976ccdc",
+      "result_id": "a3044a5c-60f3-4729-963f-d239392fe48f"
+    },
+    {
+      "claim_id": "876f705a-5172-4df7-8296-941c22d010fb",
+      "result_id": "a3044a5c-60f3-4729-963f-d239392fe48f"
+    },
+    {
+      "claim_id": "d8ceba4f-7dfb-4121-86bc-f94bb7059dec",
+      "result_id": "c9b4bb94-dc79-466c-90fd-10d65235e84a"
+    },
+    {
+      "claim_id": "8136a152-dfe8-45ab-926b-754eb45cce0e",
+      "result_id": "c9b4bb94-dc79-466c-90fd-10d65235e84a"
+    },
+    {
+      "claim_id": "9291daa7-5464-49d2-8adf-18ca61227578",
+      "result_id": "d8a53fd7-8099-4379-8652-538056cf04dd"
+    },
+    {
+      "claim_id": "6605ffbd-4897-43c3-9740-11bcd38b2219",
+      "result_id": "d8a53fd7-8099-4379-8652-538056cf04dd"
+    },
+    {
+      "claim_id": "fea85725-d324-4d83-abc8-25d83a3980c8",
+      "result_id": "d8a53fd7-8099-4379-8652-538056cf04dd"
+    },
+    {
+      "claim_id": "446d3c9f-ba95-4ee0-b698-13b15dcd940c",
+      "result_id": "62e4bd1c-fbea-4af0-a428-53cc42e2fcc4"
+    },
+    {
+      "claim_id": "1e6ce53d-9202-4353-845d-407dd6cbdfd2",
+      "result_id": "62e4bd1c-fbea-4af0-a428-53cc42e2fcc4"
+    },
+    {
+      "claim_id": "d8a57371-653f-428a-a8ed-4b7a82640b5a",
+      "result_id": "62e4bd1c-fbea-4af0-a428-53cc42e2fcc4"
+    },
+    {
+      "claim_id": "b4a5dc07-b453-4c13-ad81-e4e0d39977e4",
+      "result_id": "bd6eb0f5-4b40-47b0-aa0c-dad956c802fd"
+    },
+    {
+      "claim_id": "571f19cf-fdc9-41bb-b396-39af6e71e0c6",
+      "result_id": "bd6eb0f5-4b40-47b0-aa0c-dad956c802fd"
+    },
+    {
+      "claim_id": "f7183b03-b8e0-4379-a8a5-4e065e4c3401",
+      "result_id": "bd6eb0f5-4b40-47b0-aa0c-dad956c802fd"
+    },
+    {
+      "claim_id": "88c460a1-7f05-4b77-b4f4-ff456846fbd7",
+      "result_id": "bd6eb0f5-4b40-47b0-aa0c-dad956c802fd"
+    },
+    {
+      "claim_id": "8ca112a8-71b4-4512-801b-1ecb616db4da",
+      "result_id": "bd6eb0f5-4b40-47b0-aa0c-dad956c802fd"
+    },
+    {
+      "claim_id": "ba8c2722-1ec2-4f50-a4ed-dffdd6ce4d1f",
+      "result_id": "5573efd2-2d23-4ea2-99d1-d7c7a69c1fc0"
+    },
+    {
+      "claim_id": "c8db354c-267c-4da0-b6ff-fc58118b8045",
+      "result_id": "5573efd2-2d23-4ea2-99d1-d7c7a69c1fc0"
+    },
+    {
+      "claim_id": "cf72632a-2ad2-4a7c-816e-d644c526e2ca",
+      "result_id": "2c771b76-bf4e-47a7-831a-c8aab286b83e"
+    },
+    {
+      "claim_id": "35d6a979-513f-4f40-adba-a32ed40d1cc1",
+      "result_id": "2c771b76-bf4e-47a7-831a-c8aab286b83e"
+    },
+    {
+      "claim_id": "2569e62c-d654-4676-9bf2-c0fe8a0fd05d",
+      "result_id": "2c771b76-bf4e-47a7-831a-c8aab286b83e"
+    },
+    {
+      "claim_id": "08615b5c-6ba4-4773-9df3-f34d2c73a9de",
+      "result_id": "2c771b76-bf4e-47a7-831a-c8aab286b83e"
+    },
+    {
+      "claim_id": "82f6c38b-f687-4ad9-bee7-25a86fb13d5c",
+      "result_id": "dc88c6ce-3cde-4cf8-8c27-929d19492154"
+    },
+    {
+      "claim_id": "f0840695-96e5-4cb8-95c9-1f152f8687d7",
+      "result_id": "dc88c6ce-3cde-4cf8-8c27-929d19492154"
+    },
+    {
+      "claim_id": "70319ce4-e226-4959-9ec0-e6b1dc9d345f",
+      "result_id": "dc88c6ce-3cde-4cf8-8c27-929d19492154"
+    },
+    {
+      "claim_id": "4b7e4d8e-e2bf-4365-b6f6-eaee8f1571c7",
+      "result_id": "31888c4c-8bcf-4036-a7eb-d4eae6a5173b"
+    },
+    {
+      "claim_id": "76b5cfaa-8813-4410-84a9-82a922e7c8d7",
+      "result_id": "31888c4c-8bcf-4036-a7eb-d4eae6a5173b"
+    },
+    {
+      "claim_id": "7b45a4c5-8d16-4aa0-912e-5e327d89f21e",
+      "result_id": "31888c4c-8bcf-4036-a7eb-d4eae6a5173b"
+    },
+    {
+      "claim_id": "0e0784bd-0c51-46be-bd76-ff9fbd244c60",
+      "result_id": "31888c4c-8bcf-4036-a7eb-d4eae6a5173b"
+    },
+    {
+      "claim_id": "d2d22131-f4a2-44b0-b852-75640345c1e3",
+      "result_id": "97eb63e6-0cc2-49e2-9a65-be48d52eab69"
+    },
+    {
+      "claim_id": "37138da2-b1e3-41a0-99ad-acf1a8d381a9",
+      "result_id": "97eb63e6-0cc2-49e2-9a65-be48d52eab69"
+    },
+    {
+      "claim_id": "e710de08-ae5b-435e-abfe-cc46aadc2450",
+      "result_id": "97eb63e6-0cc2-49e2-9a65-be48d52eab69"
+    },
+    {
+      "claim_id": "d4bfaf1b-5798-4add-89f7-280355c38c24",
+      "result_id": "97eb63e6-0cc2-49e2-9a65-be48d52eab69"
+    },
+    {
+      "claim_id": "5f936549-8493-477f-8a4e-6ea05f498c75",
+      "result_id": "97eb63e6-0cc2-49e2-9a65-be48d52eab69"
+    },
+    {
+      "claim_id": "8161bc45-b8ea-40bb-a9ab-07ab8e0510a5",
+      "result_id": "3029789d-5e65-4404-83e6-cfdd101d8fe2"
+    },
+    {
+      "claim_id": "0d3c5986-a1dd-480b-8155-f8c91d71e1d3",
+      "result_id": "6fbeee13-beaa-42a5-9a70-bcdbafa57cd8"
+    }
+  ],
+  "comparisons": []
+}

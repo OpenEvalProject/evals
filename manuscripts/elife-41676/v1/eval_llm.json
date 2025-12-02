@@ -1,0 +1,357 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C106",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "The authors developed and deployed SciScore, a Named Entity Recognition algorithm, to identify cell line mentions in ~2 million PubMed Central articles. SciScore was trained on 1,457 curator annotations and achieved 87.3% precision and 61.9% recall. The algorithm identified 305,161 unique cell line names in 150,459 articles (7.7% of the corpus), with an average of two cell lines per methods section.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The claims provide comprehensive methodological details (C41-C43, C117-C123) and quantitative results (C44-C45, C124-C127) that are internally consistent. The performance metrics (C43) are reasonable for NER tasks, and the validation study (discussed in other claims) provides independent verification. The approach is well-documented with appropriate technical details.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Validation of SciScore on 1,003 papers from Scientific Reports showed 95.01% agreement with human curator. SciScore had a 4% false positive rate (6/138), with false positives including crystallography parameters, reagents, bacterial strains, and plant cell lines. Of 33 curator-identified papers missed by SciScore, 14 were curator errors and 19 were legitimate false negatives.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The validation study (C56-C62) provides detailed performance metrics with specific error categorization. The 95% agreement rate (C57) and low false positive rate (C60) support the algorithm's reliability. Importantly, the analysis reveals that curator errors (C59, C62) were substantial, suggesting SciScore may actually outperform human curation in some cases. The transparent reporting of errors strengthens confidence in the results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C47",
+      "C48",
+      "C52",
+      "C128",
+      "C129",
+      "C130"
+    ],
+    "result": "Using three matching criteria (strict, loose, and edit distance), the authors estimated that 8.6-8.7% of cell lines detected in the general literature matched the ICLAC problematic list, corresponding to 16.1% of papers. The edit distance method, which ignored special characters, was used as the primary metric as a compromise between strict and loose criteria.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The claims describe a methodologically sound approach using multiple matching criteria (C47-C48, C129-C130) to bound estimates. The edit distance method (C52, C129-C130) is well-defined and appropriate for handling naming variations. The quantitative results (C5, C52) are consistent across claims. The use of the Cellosaurus database (C128) as the reference is appropriate and well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C131",
+      "C132",
+      "C133",
+      "C134"
+    ],
+    "result": "The authors identified 1,502 cell lines with RRIDs in 634 papers published between 2016-2018 through manual curation and semi-automated tools (SciBot). Papers were identified by monitoring multiple databases weekly for four years for mentions of 'RRID'.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The RRID dataset collection methodology (C131-C133) is clearly described with appropriate quality control (manual verification). The quantitative results (C65-C67, C134) are internally consistent. The four-year monitoring period and use of semi-automated tools (C132-C133) demonstrate systematic data collection. The exclusion of papers without PMIDs (C66) is a reasonable quality control measure.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C135",
+      "C136"
+    ],
+    "result": "Only 3.3% of cell lines in RRID papers were on the problematic list, significantly lower than 8.6-8.7% in the general literature (p<0.00001). This difference remained significant when controlling for publication year (2016-2018: 5.25% vs 3.3%, p<0.001). The authors conclude that RRID use is associated with lower reported use of problematic cell lines.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The statistical comparison (C68-C70, C135) uses appropriate tests (population proportion z-test) with highly significant p-values. The temporal control (C70) addresses potential confounding by publication year. However, the one-tailed assumption (C136) may be overly optimistic. The conclusion (C7) is appropriately stated as an association rather than causation, though the natural experiment design (C37) provides some basis for causal inference.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "The 3.3% problematic rate for RRID papers was lower than 96 of the top 100 journals. The weighted average contamination rate for journals publishing RRID papers was 17.1%, slightly higher than the overall average of 16.1%, suggesting that RRID inclusion is due to an intervention rather than journal-level differences in cell line authentication practices.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The weighted average analysis (C72) is an appropriate method to control for journal-level confounding. The finding that RRID journals have slightly higher baseline contamination rates (C72) strengthens the argument that RRIDs represent an intervention effect (C74) rather than selection bias. The comparison to individual journals (C71) provides additional context. The inference (C73-C74) is reasonable given the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "Detailed examination of the 50 RRID papers with problematic cell lines revealed that most cases were not actually problematic: 1 was a typo, 13 were partially contaminated SH-SY5Y (11 obtained from authentic stock centers), 10 used U-87MG (glioblastoma of unknown origin but still glioblastoma), and 11 used Hep-G2 (hepatoblastoma mislabeled as hepatocarcinoma, but often described generically). Only ~10 cases warranted further investigation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The detailed case-by-case analysis (C78-C86) demonstrates that presence on the problematic list does not necessarily indicate improper use, as emphasized in C38-C40, C75-C77. The categorization is clear and well-documented. The conclusion that only ~10 cases are truly problematic (C87) is a reasonable inference from the detailed examination. This analysis strengthens the overall findings by showing that even the 3.3% rate may overestimate actual problems.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C91"
+    ],
+    "result": "Temporal analysis showed that from 1997-2012, the percentage of problematic cell lines appeared to increase (weak R\u00b2=0.404-0.648), but from 2013-2018, the trend reversed (weak R\u00b2=0.479-0.498), suggesting ICLAC efforts may be having an effect on reducing misidentified cell line use.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the temporal analysis shows trend reversal after 2012 (C50-C51), the weak R\u00b2 values (all <0.65) indicate substantial unexplained variance. The choice of 2012 as a breakpoint (C49) is justified by ICLAC formation, but the weak correlations limit confidence in the trend interpretation. The conclusion (C91) is appropriately cautious ('appear to be having an effect'), but the evidence is not strong enough to definitively support a causal relationship. Additional confounders (publication volume, field composition changes) are not fully addressed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "The smallest number of problematic cell lines was found in virology and botany journals, while the largest was in cancer journals. This pattern is consistent with the composition of the problematic list, which is enriched for human cancer cell lines, and the aggressive growth properties of cancer cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The observation (C53) is consistent with the known composition of the ICLAC list (C54) and biological properties of cancer cells (C13). The inference (C55) logically follows from these factors. However, this is a relatively minor descriptive finding that confirms expected patterns rather than revealing new insights.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "Researchers using RRIDs must look up cell lines in a database that displays warning messages for problematic cell lines. The authors speculate that researchers seeing these warnings likely act in good faith, though some may copy RRIDs from other papers without seeing the warning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The description of the RRID system (C63-C64, C93) is factual and supported. However, the speculation about researcher behavior (C94-C95) is not empirically tested. The authors acknowledge they cannot determine what percentage of researchers copy RRIDs without looking them up (C95), which is a critical limitation for understanding the mechanism. The proposed mechanism is plausible but unverified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C75",
+      "C76",
+      "C77",
+      "C96",
+      "C97"
+    ],
+    "result": "The authors emphasize that presence on the problematic list does not automatically indicate improper use. Examples include partially contaminated cell lines from stock centers, cell lines with wrong cancer type labels but known true identity, and cases where exact origin is irrelevant to the experiment. The 8.6% estimate should not be interpreted as indicating that all these papers need review.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These caveats (C38-C40, C75-C77, C96-C97) are important for proper interpretation of the quantitative findings. The examples provided are concrete and reasonable. This nuanced interpretation is supported by the detailed case analysis of RRID papers (C78-C87), which showed most 'problematic' cases were actually appropriate uses. The authors appropriately acknowledge limitations of their estimates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "The authors acknowledge limitations including uneven paper distribution across years affecting temporal analysis accuracy, potential higher error rates in older papers (pre-2000) entered manually into PubMed Central, and that character errors would reduce matching to problematic cell lines given stringent criteria.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These are appropriate acknowledgments of methodological limitations. The temporal limitation (C107) is particularly relevant given the weak R\u00b2 values in the trend analysis. The speculation about older paper quality (C108) is reasonable but unquantified. The observation about character errors (C109) suggests the 8.6% estimate may be conservative, which is consistent with the overall findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C1",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C22",
+      "C88",
+      "C89"
+    ],
+    "result": "The manuscript establishes the ongoing problem of cell line misidentification in biomedical research, noting that testing is commonly not performed, contamination (especially by HeLa) is problematic, and the overall rate has not fallen despite ICLAC register availability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These background claims (C1, C10-C13, C22, C88-C89) are well-supported by citations and represent established knowledge in the field. They provide appropriate context for the study but are not novel findings from this work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C3"
+    ],
+    "result": "The manuscript describes the establishment of ICLAC in 2012 to create a register of problematic cell lines and increase awareness, the recommendation of STR profiling for authentication, and the Cellosaurus database containing information on >100,000 cell lines including misidentification problems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C14-C21, C3) describe established resources and recommendations in the field, supported by appropriate citations. They provide necessary background but are not findings from this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "The manuscript describes RRIDs as unique identifiers for research resources introduced to address antibody identification problems, issued by naming authorities for different resource types, with cell line RRIDs incorporated in 2016 and synchronized with Cellosaurus to provide contamination information.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C25-C36) accurately describe the RRID system and are supported by citations. They provide essential background for understanding the study design but are not novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "The manuscript reviews prior literature showing that misidentification rates vary from 10-50% depending on source, with tens of thousands of papers potentially affected. Previous estimates used search strategies with limitations including difficulty with short names, generic words, and ambiguity between cell lines and other entities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C99-C105) accurately summarize prior literature with appropriate citations and identify limitations of previous approaches that motivate the current study's methodology. This is standard literature review material.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C2",
+      "C24",
+      "C37",
+      "C92"
+    ],
+    "result": "The authors hypothesized that RRIDs would reduce problematic cell line prevalence by alerting researchers, and that the RRID requirement creates a natural experiment. The study concludes that RRID use is correlated with decreased reporting of problematic cell lines.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The hypothesis (C2, C24) is clearly stated and testable. The natural experiment framing (C37) is appropriate given that RRID adoption was not randomized but created by journal policies. The conclusion (C92) is appropriately stated as correlation rather than definitive causation. The evidence from C68-C70 supports this conclusion, though alternative explanations cannot be fully ruled out.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "The authors note that understanding of cell lines continues to change, with cell lines being added or removed from problematic lists based on new evidence. They suggest RRIDs could enable literature annotation tools to provide updated information when cell line status changes, and predict RRIDs will improve reporting.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The observations about dynamic cell line knowledge (C110-C113) are valid and important caveats. The suggestions about future applications (C114-C115) and predictions (C116) are speculative but reasonable. However, these are forward-looking statements without empirical support in the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C23",
+      "C90"
+    ],
+    "result": "The manuscript notes that publisher checking can eliminate misidentified cell line use but requires significant time and cost, and that NIH adopted stricter authentication guidelines in 2015.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C23, C90) are factual statements supported by citations, providing context for alternative approaches to the problem. They are not findings from this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C98"
+    ],
+    "result": "The authors claim their estimate of problematic cell line use is better than previous attempts based on literature search strategies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This claim (C98) is reasonable given the NER-based approach addresses limitations of simple search strategies (C104-C105) and the validation study (C56-C62) demonstrates good performance. However, 'better' is somewhat subjective without direct comparison to previous methods on the same corpus.",
+    "result_type": "MINOR"
+  }
+]

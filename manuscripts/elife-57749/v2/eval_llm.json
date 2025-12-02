@@ -1,0 +1,389 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2"
+    ],
+    "result": "The Chatires-Cre mouse line faithfully reports Chat expression in cortex, with 97% of Chat+ neurons expressing Cre and 100% of Cre+ neurons expressing Chat. However, neurons in the subiculum are labeled but do not express Chat in adults.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "C1 is well-supported by FISH data (n=32/33 Chat+ neurons, n=32/32 Cre+ neurons from 2 mice). However, C2 states that subiculum neurons do not express Chat in adults but explicitly notes 'data not shown,' making this claim unverifiable and the overall result uncertain.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5"
+    ],
+    "result": "Cortical ChAT+ neurons express the molecular machinery necessary for ACh synthesis and release, including Chat, Slc18a3 (VAChT), and Slc5a7 (choline transporter).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3 and C4 are supported by FISH data showing co-expression in the majority of cortical ChAT+ neurons (147/170 for Slc18a3, 72/113 for Slc5a7). C5 is a reasonable inference from these molecular data, though it does not demonstrate actual ACh release.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9"
+    ],
+    "result": "Cortical ChAT+ neurons display vertically-oriented morphology (66% bipolar, 34% multipolar) and cluster in superficial layers near the layer 1/2 border, with median cell body depth of 274 \u03bcm from pia.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "All claims are supported by morphological analysis and quantification from n=1059 neurons from 3 mice. The percentages, laminar distribution, and depth measurements are clearly documented with appropriate sample sizes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "Cortical ChAT+ neurons comprise approximately 33% of VIP+ interneurons and do not co-label with parvalbumin or somatostatin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "C10 is supported by both immunohistochemistry (127/147 ChAT+ are VIP+) and FISH (278/283 Chat+ are Vip+). C11 and C12 show minimal co-labeling with PV (1/180) and Sst (2/360), effectively demonstrating exclusivity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "Cortical ChAT+ neurons express GABAergic machinery including Slc32a1 (VGAT) and Gad1/2, indicating potential for GABA release in addition to ACh.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "C13 and C14 are strongly supported by FISH data showing nearly complete co-expression (101/102 for Slc32a1, 102/102 for Gad1/2). C15 is a reasonable inference about potential for dual neurotransmitter release based on molecular machinery expression.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C16"
+    ],
+    "result": "Single-cell RNA sequencing data corroborate that VIP+ cortical interneurons express both cholinergic and GABAergic genes but not glutamatergic genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The claim is supported by analysis of published Allen Institute scRNA-seq data (Tasic et al., 2016) shown in Figure 2\u2014figure supplement 2, providing independent validation of the molecular phenotype.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "VIP+/ChAT+ neurons predominantly release GABA onto postsynaptic targets, with most responsive neurons showing GABAAR-mediated currents. A smaller subset shows nAChR-mediated responses, and individual postsynaptic neurons receive either GABA or ACh but not both.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims are supported by systematic optogenetic connectivity analysis (n=195 neurons from 24 mice). The observation that 47/49 responsive neurons showed only one type of response (C20) supports the differential targeting model (C21), though the sample size for dual responses is small.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C30",
+      "C31"
+    ],
+    "result": "VIP+/ChAT+ neurons show high rates of GABAergic connectivity especially to Sst+ interneurons, while nAChR-mediated responses are rare and primarily target layer 1 interneurons and other VIP+/ChAT+ neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims are supported by connectivity analysis across multiple interneuron subtypes (Figure 3G) showing robust GABAergic connectivity to Sst+ cells and sparse cholinergic responses. The specificity of ACh targeting is demonstrated in Figures 3D and 3K.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C28",
+      "C29"
+    ],
+    "result": "The GABAergic connectivity pattern from VIP+/ChAT+ neurons is consistent with previous VIP+ interneuron studies, indicating their main circuit function is disinhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "C28 is supported by comparison to published literature (Pfeffer et al., 2013; Karnani et al., 2016a). C29 is a reasonable inference from the pattern of GABAergic connectivity onto inhibitory interneurons, though direct demonstration of disinhibition would require additional experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C32"
+    ],
+    "result": "GABA release from cortical ChAT+ neurons is monosynaptic.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The claim is supported by TTX/4AP experiments (Figure 3C and supplements) demonstrating that responses are blocked by TTX and rescued by 4AP, confirming monosynaptic transmission across multiple interneuron subtypes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C33"
+    ],
+    "result": "VIP+/ChAT+ neurons show low overall connectivity to pyramidal neurons, which is entirely GABAAR-mediated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The claim is supported by electrophysiological data from n=58 pyramidal neurons from 14 mice (Figure 3\u2014figure supplement 2). However, pyramidal neuron identification was based on morphology and laminar position rather than molecular markers.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C34"
+    ],
+    "result": "Optogenetic stimulation of VIP+/ChAT+ neurons does not significantly affect presynaptic glutamate release.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The claim is based on sEPSC measurements from only n=5 neurons from 2 mice (Figure 3\u2014figure supplement 4), which is insufficient sample size to definitively conclude no effect. The negative result contradicts von Engelhardt et al. but requires larger sample size for certainty.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C35"
+    ],
+    "result": "ACh release from VIP+ interneurons is not necessary for optogenetic- or sensory-evoked vasodilation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The claim is supported by in vivo imaging experiments using conditional VAChT knockout mice (Vipires-Cre x Slc18a3fl/fl) showing that vasodilation persists in the absence of ACh release from VIP+ neurons (Figure 3\u2014figure supplement 5).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C36",
+      "C37"
+    ],
+    "result": "VIP+/ChAT+ neurons largely release GABA onto each other, but a subset receives nAChR-mediated input from other VIP+/ChAT+ neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims are supported by electrophysiological data from n=76 neurons from 8 mice using mosaic ChR2 expression strategy (Figures 3I-K). The approach effectively isolates VIP+/ChAT+ to VIP+/ChAT+ connectivity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C38",
+      "C39"
+    ],
+    "result": "Array tomography shows that VGAT and VAChT are enriched while PSD-95 and VGLUT1 are depleted in cortical ChAT+ interneuron terminals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims are supported by quantitative array tomography colocalization analysis (Figure 4G) with validation using conditional knockouts of VGAT and VAChT. The z-score analysis provides rigorous quantification of enrichment/depletion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C24"
+    ],
+    "result": "Individual VIP+/ChAT+ terminals show heterogeneous VAChT expression, with some axon stretches entirely lacking VAChT, others entirely positive, and some with mixed terminals. The majority of terminals express both VGAT and VAChT, while a subset expresses only VGAT.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims are supported by immunohistochemistry analysis of n=12,356 terminals from 3 mice (Figures 5B-G). The quantification shows clear heterogeneity in VAChT expression while VGAT is more uniformly expressed, supporting the model of two terminal populations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C46",
+      "C47"
+    ],
+    "result": "Layer 1 neurons in mPFC receive significantly more cholinergic input and less GABAergic input from local ChAT+ neurons compared to M1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims are supported by regional comparison of connectivity (n=174 neurons from 9 mice, Figure 6F-H) showing 20/131 nAChR responses in mPFC vs 1/43 in M1 (p=0.0301) and 9/131 GABAAR responses in mPFC vs 13/43 in M1 (p=0.0002).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C48"
+    ],
+    "result": "VIP+ interneurons (including ChAT+ and ChAT- cells) show predominantly GABAergic connectivity with only a single cholinergic response identified across mPFC and M1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The claim is supported by connectivity analysis from Vipires-Cre x Rosa26lsl-ChR2-EYFP mice (n=64 neurons from 7 mice, Figure 6J-L), demonstrating that the broader VIP+ population does not account for regional cholinergic differences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C25",
+      "C26"
+    ],
+    "result": "A sparse population of non-VIP ChAT+ neurons (3-5 per brain) exists specifically in mPFC, derives from Nkx2.1-expressing progenitors, and is distinct from VIP+/ChAT+ interneurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims are supported by FISH (Figure 7B) and genetic lineage tracing using Chatires-Cre x Nkx2.1ires-Flp x RC:FLTG mice (Figure 7C-D). The developmental origin differs from VIP+ neurons (CGE vs MGE), and the extreme sparsity is well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C52",
+      "C27"
+    ],
+    "result": "Non-VIP ChAT+ neurons in mPFC provide nicotinic cholinergic input to layer 1 interneurons without GABAergic transmission.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims are supported by targeted recordings near morphologically identified non-VIP ChAT+ neurons (n=30 neurons from 6 mice, Figure 7F) showing exclusively nAChR-mediated responses with no GABAAR currents, contrasting with VIP+/ChAT+ connectivity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "VIP+/ChAT+ interneurons co-transmit GABA and ACh in a target-specific manner, with ACh transmission being sparse and targeting layer 1 and VIP+/ChAT+ interneurons, while GABA transmission is widespread onto inhibitory interneurons, especially Sst+ cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This summary result integrates multiple lines of evidence from molecular (Figures 1-2), electrophysiological (Figure 3), and anatomical (Figures 4-5) experiments. The target-specific co-transmission is well-supported by the observation that postsynaptic neurons receive either GABA or ACh but rarely both.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C56"
+    ],
+    "result": "The majority of VIP+/ChAT+ synapses are competent to release both ACh and GABA based on molecular machinery expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The claim is supported by array tomography and immunohistochemistry showing that most terminals express both VGAT and VAChT (Figures 4-5). However, the discrepancy between molecular competence and functional connectivity (sparse ACh responses) remains unexplained.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C57"
+    ],
+    "result": "The authors propose a model where ACh-mediated excitation of layer 1 and VIP+/ChAT+ disinhibitory interneurons, combined with GABA-mediated disinhibition, provides a powerful activating signal to local cortical areas.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "This is a proposed model based on connectivity patterns but lacks direct experimental validation. The model is reasonable given the data, but C58-C59 note that optogenetic activation actually decreases responses to sensory stimuli (Dudai et al., 2020), suggesting additional complexity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C58",
+      "C59"
+    ],
+    "result": "Cortical ChAT+ neurons in barrel cortex are strongly activated by sensory stimuli, but optogenetic activation slightly decreases responses to whisker deflections.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Both claims are supported by citation to Dudai et al., 2020. However, these are not original findings from this manuscript but rather cited results that complicate the proposed model in C57.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C60",
+      "C61"
+    ],
+    "result": "VIP+/ChAT+ interneurons represent a local, sparse, and highly targeted source of ACh that contrasts with basal forebrain projections, and demonstrate specialized presynaptic terminals for differential neurotransmitter targeting.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "C60 is a reasonable inference from the connectivity data showing sparse, specific ACh targeting. C61 is supported by the molecular heterogeneity of terminals (Figures 4-5) showing differential VAChT expression. Both represent valid interpretations of the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Multiple levels of heterogeneity exist within cortical ChAT+ neurons, including distinct subtypes (VIP+ CGE-derived vs non-VIP MGE-derived) that differ in developmental origins, molecular profiles, and synaptic connectivity, with non-VIP ChAT+ neurons found only in mPFC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims are supported by the discovery of two distinct ChAT+ populations with different developmental origins (Figures 7C-D), molecular markers (VIP expression), and connectivity patterns (Figures 6-7). The regional specificity to mPFC is documented by whole-brain survey.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C65"
+    ],
+    "result": "The presence of non-VIP ChAT+ neurons in mPFC explains differences in connectivity between this study and Obermayer et al., 2019.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The claim is a reasonable inference supported by the discovery that mPFC contains non-VIP ChAT+ neurons that provide predominantly cholinergic signaling (Figure 7), which would be included in ChAT-Cre based approaches but not VIP-Cre approaches.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C66",
+      "C67"
+    ],
+    "result": "Studies using ChAT-BAC-ChR2 mice risk confounding effects from VAChT overexpression and incidental manipulation of cortical VIP+ interneurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "C66 is supported by citation to Kolisnyk et al., 2013 regarding VAChT overexpression effects. C67 is a valid inference from this study's finding that cortical ChAT+ neurons are VIP+ interneurons with significant GABAergic function.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C68"
+    ],
+    "result": "Future studies of cortical cholinergic signaling must differentiate between basal forebrain projections and local cholinergic interneurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This is a reasonable recommendation based on the findings of the study demonstrating the existence and functional properties of local cortical cholinergic interneurons. It represents a valid conclusion about future experimental design.",
+    "result_type": "MINOR"
+  }
+]

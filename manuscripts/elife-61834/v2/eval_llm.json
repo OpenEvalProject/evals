@@ -1,0 +1,522 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6"
+    ],
+    "result": "The authors analyzed a 15-minute Neuropixels recording from a head-fixed mouse with 246 active channels at 30 kHz sampling frequency, recording from cortex (V1), hippocampus (CA1), dentate gyrus, and thalamus (LP) during visual stimulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C6 provide comprehensive methodological details about the dataset including source, technical specifications, brain regions, and experimental conditions. These are explicitly stated with appropriate citations and identifiers, making the dataset description reproducible and verifiable.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "Six spike sorters (HerdingSpikes2, Kilosort2, IronClust, SpyKING Circus, Tridesclous, HDSort) showed large variability in detected unit counts on the real Neuropixels dataset, ranging from 187 (Tridesclous) to 628 (SpyKING Circus) units, with no clear consensus on neuron count.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C14 document the spike sorter selection and their outputs with specific unit counts. The data is presented in Figure 1B and explicitly stated in text. The conclusion about lack of consensus (C14) logically follows from the 3.4-fold variation in unit counts across sorters.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "Agreement among the six spike sorters on the real dataset was remarkably low: only 33 of 2031 total units (1.6%) were agreed upon by all six sorters, and only 263 units (13%) by two or more sorters, with most sorters finding >50% units not matched by any other sorter.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C20 define the agreement criteria (50% spike match, 0.4 ms window) and report specific agreement statistics shown in Figure 1C-D. The high agreement scores (>0.8) for matched units (C20) validates the matching method, while the low overall agreement demonstrates substantial sorter disagreement.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "A 10-minute simulated Neuropixels recording was generated using MEArec with 250 biophysically detailed neurons (200 excitatory, 50 inhibitory) exhibiting independent Poisson firing patterns and 10 \u03bcV Gaussian noise.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C22 and C87-C89 provide complete specifications of the simulated dataset including neuron count, cell types, firing patterns, noise characteristics, duration, and generation method. These details are explicitly stated with appropriate citations, enabling reproducibility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "On the simulated dataset, the six sorters again showed large variability in unit detection, ranging from 189 (Tridesclous) to 458 (HDSort) units, with HerdingSpikes2 finding 233, Kilosort2 finding 415, IronClust finding 283, and SpyKING Circus finding 343 units.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C28 report specific unit counts for each sorter on the simulated dataset, shown in Figure 2C. The 2.4-fold variation demonstrates continued lack of consensus even with ground truth available, consistent with the real data findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Spike sorters showed different precision-recall tradeoffs, with accuracy modulated by SNR for all sorters except Kilosort2, which achieved near-perfect performance on low-SNR units and significantly higher scores than other sorters for most ground-truth units.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C31 describe performance characteristics shown in Figure 2D and Figure 2\u2014figure supplement 1. The exceptional performance of Kilosort2 on low-SNR units is a notable finding, though the mechanism is not explained. The claims are supported by the presented data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "Kilosort2 detected the most well-detected units (245) but also had high false positives (147) and redundant units (21), while Tridesclous had very few false positives/redundant units with many well-detected units, and HDSort had the most false positives.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C36 characterize the unit classification breakdown for different sorters shown in Figure 2E. The data reveals important tradeoffs between sensitivity and specificity across sorters, with Kilosort2's high detection rate coming at the cost of many false positives.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C37"
+    ],
+    "result": "On the simulated dataset, only 139 of 1921 total units (7.24%) were in agreement among all six sorters, demonstrating large disagreement similar to the real dataset.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C37 reports the agreement statistic for the simulated dataset shown in Figure 3A. The low agreement (7.24%) is consistent with the real dataset findings (1.6%), validating that sorter disagreement is not dataset-specific.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Almost all false positive units were found by only a single sorter while most real units were matched by multiple sorters; using pairs of sorters can isolate false positives but may misclassify true positives found by only one sorter when fewer than four sorters are compared.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C42 describe the relationship between sorter agreement and unit validity shown in Figure 3C and Figure 3\u2014figure supplement 1. The analysis demonstrates that ensemble agreement can identify false positives but requires careful consideration of the number of sorters used to avoid losing true positives.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Higher SNR units showed higher agreement among sorters, but for Kilosort2, SNR was not a good predictor of false positives as many false positives had high estimated SNR.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C45 describe the relationship between SNR and sorter agreement/false positives shown in Figure 3D and Figure 3\u2014figure supplement 2. The finding that SNR doesn't predict Kilosort2 false positives is important for understanding the limitations of quality metrics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C46"
+    ],
+    "result": "Ensemble agreement among multiple sorters can be used to remove false positive units from sorter outputs or inform manual curation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C46 is a conclusion drawn from the ground-truth analysis (C38-C45). The evidence shows that false positives are predominantly found by single sorters, supporting this inference. However, the practical implementation and validation on diverse datasets would strengthen this claim.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Two experts manually curated Kilosort2 output using Phy, with 226 of 351 units (64.2%) agreed upon by both experts, and 174 units discarded by both, indicating substantial false positives and inter-curator variability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C49 describe the manual curation process and results shown in Figure 4A. The 64.2% agreement between experts demonstrates the subjective nature of manual curation, supporting the motivation for automated approaches. The 174 jointly discarded units validate the false positive problem.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C50",
+      "C51"
+    ],
+    "result": "IronClust had the highest match with both curated datasets (59.83% and 61.1%), surprisingly higher than Kilosort2 (50.67% and 56.25%) despite curation being performed on Kilosort2 output.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C51 report the matching percentages shown in Figure 4B. The finding that IronClust matches better than Kilosort2 to curations of Kilosort2 output is counterintuitive and suggests IronClust may have fewer false positives, though this interpretation is not explicitly tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Consensus units (k\u22652) showed >70% match with curated datasets for all sorters, with Kilosort2 highest (84.55%, 89.55%) and IronClust slightly lower (82.63%, 83.83%), while non-consensus units had very small matches with curated datasets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C55 demonstrate that consensus-based filtering substantially improves agreement with manual curation, shown in Figure 4C-D. The high match percentages for consensus units and low percentages for non-consensus units provide strong evidence for the utility of ensemble approaches.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C56"
+    ],
+    "result": "A consensus-based approach to curation could allow for identification of real neurons from spike sorted data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C56 is a conclusion supported by the manual curation analysis (C47-C55). The >70% agreement between consensus units and manual curation, combined with the low agreement for non-consensus units, provides evidence for this approach. However, this remains a suggestion requiring further validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Consensus-based or ensemble spike sorting appears to be a viable alternative to manual curation, which suffers from high inter-operator variability, and is especially attractive given increasing recording density and channel counts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C78 synthesize the findings into a broader conclusion about ensemble spike sorting. The evidence from both ground-truth and manual curation analyses supports this conclusion, though the term 'viable alternative' may be overstated without more extensive validation across diverse datasets and applications.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "SpikeInterface consists of five main Python packages (spikeextractors, spiketoolkit, spikesorters, spikecomparison, spikewidgets) with core objects RecordingExtractor and SortingExtractor, supporting 19 recording formats, 18 sorting formats, and 10 spike sorters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C60 describe the architecture and capabilities of SpikeInterface. These are factual statements about the software with specific numbers that can be verified. The claims are well-supported by the manuscript text and tables.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "SpikeInterface defines spike matching as occurring within 0.4 ms (adjustable), and classifies units as well-detected (agreement >0.8), false positive (unmatched or agreement <0.2), redundant (agreement >0.2 with one ground-truth unit but not best match), or overmerged (agreement >0.2 with multiple ground-truth units).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C66 define the methodological framework for spike train comparison and unit classification. These definitions are clearly stated and provide the foundation for the ground-truth analysis. The thresholds (0.4 ms, 0.8, 0.2) are explicitly stated as adjustable.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C67",
+      "C68"
+    ],
+    "result": "SpikeInterface is being used in SpikeForest for benchmarking spike sorting algorithms and by Neurodata Without Borders in their nwb-conversion-tools package for file format conversion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C68 describe current applications of SpikeInterface with appropriate citations. These demonstrate real-world adoption and utility of the framework, though the extent of integration and usage is not quantified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Manual spike sorting is nearly impossible to standardize due to operator bias, high-density devices have made manual intervention impractical, no clear standards exist for spike sorting, and the fragmented software ecosystem challenges reproducibility and collaboration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C73 establish the motivation for SpikeInterface by describing problems in the field. These are supported by appropriate citations and represent generally accepted knowledge in the spike sorting community, though some statements are somewhat broad generalizations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C74",
+      "C75"
+    ],
+    "result": "SpikeInterface is the first open-source, Python-based framework exclusively designed to encapsulate all steps in the spike sorting pipeline, using Python because it is open-source, free, and increasingly popular in neuroscience.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C74-C75 assert SpikeInterface is the 'first' such framework. While the manuscript cites other frameworks and explains their limitations, the claim of being 'first' to exclusively focus on spike sorting in Python is difficult to verify without comprehensive knowledge of all existing tools. The Python justification is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "Klusta, WaveClus, Kilosort, and MountainSort4 were excluded from analysis because Klusta handles only up to 64 channels, WaveClus is designed for low channel counts, Kilosort is superseded by Kilosort2, and MountainSort4 scales quadratically with channel count.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C83 justify the exclusion of certain spike sorters from the analysis. These are factual statements about software limitations that can be verified from the cited references and software documentation. The exclusion criteria are reasonable for a high-density probe analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "Kilosort2's automated curation step (removing units with >20% contamination rate) reduces but does not eliminate false positives and redundant units, yielding 241 well-detected, 93 false positive, and 18 redundant units, with 2 overmerged units in both cases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C86 report the effect of Kilosort2's built-in curation on unit classification. The data shows automated curation helps but is insufficient, supporting the need for additional curation methods. The specific numbers are clearly stated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "The analysis was performed with spikeinterface version 0.10.0, datasets are publicly available in NWB format on DANDI archive, and analysis code is available at https://spikeinterface.github.io/.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C92 provide reproducibility information including software version, data availability, and code availability. These are explicitly stated and verifiable, meeting standards for computational reproducibility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "RecordingExtractor queries four pieces of information (traces, sampling frequency, frames, channel indices), SortingExtractor queries two pieces (unit indices, spike trains), both can lazily query data to reduce memory footprint, and can be serialized to json/pickle/dictionary for provenance and parallel processing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C96 describe the core functionality of the Extractor objects. These are design features of the software that are clearly documented and represent good software engineering practices for handling large-scale electrophysiology data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C97",
+      "C98"
+    ],
+    "result": "SpikeInterface has integrated NEO's I/O system to support additional file formats, with Neuralynx and Plexon formats already added through this integration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C98 describe ongoing development to expand file format support through NEO integration. The integration is stated as started ('have started to integrate') with two formats already added, indicating active development.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "Pre-processing functions can be chained together, the postprocessing module can export to Phy format for manual curation (extending Phy support beyond its native sorters), and curated data can be re-imported using PhySortingExtractor.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C103 describe the preprocessing and postprocessing capabilities, particularly the Phy integration. The ability to export any sorter's output to Phy and re-import curated results represents a valuable contribution to workflow flexibility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C104",
+      "C105"
+    ],
+    "result": "Quality metrics in SpikeInterface are re-implementations of historical and modern approaches by Allen Institute and SpikeInterface team, and curation functions can be chained together.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C105 describe the validation and curation modules. The quality metrics are documented in Table 2 with appropriate citations. The chaining capability is consistent with the overall design philosophy of the framework.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "Spike sorters are built in various languages (C, C++, MATLAB, Python) with different dependencies (CUDA, CLIs), so spikesorters provides Python wrappers using a BaseSorter class, logs all parameters and outputs for reproducibility, and can be deployed on HPC via multiprocessing or dask.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C112 describe the spikesorters package design and functionality. The wrapper approach addresses real heterogeneity in spike sorting software, and the provenance/logging features support reproducibility. The HPC deployment capability is important for scalability.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R30",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "spikecomparison provides three core functions (compare_two_sorters using Hungarian method, compare_multiple_sorters, compare_sorter_with_ground_truth using Hungarian or best-match method), with SpikeForest using the best-match strategy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113-C118 describe the comparison functionality with appropriate methodological details. The Hungarian method citation and distinction between matching strategies are clearly explained. The SpikeForest reference validates the utility of these methods.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R31",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "spikewidgets provides four categories of visualization widgets: using RecordingExtractor, SortingExtractor, both extractors together, or comparison objects from spikecomparison.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C119-C123 describe the organization of visualization widgets. The categorization by input type is logical and consistent with the overall framework design, facilitating appropriate visualization for different analysis stages.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R32",
+    "claim_ids": [
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128"
+    ],
+    "result": "spikely is a PyQt-based GUI that uses SpikeInterface's Python API, grows organically with SpikeInterface functionality, allows saving/loading pipelines, and is cross-platform and user-friendly.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C124-C128 describe the spikely GUI. The design of building on the Python API ensures consistency and reduces maintenance burden. The save/load functionality supports reproducibility, though 'user-friendly' is somewhat subjective.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R33",
+    "claim_ids": [
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133"
+    ],
+    "result": "Spike sorting remains an open problem with no completely solved steps or universal sorter, but SpikeInterface allows researchers to quickly build, run, and evaluate workflows to determine what works best, with full provenance for sharing and reuse.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C129-C133 provide perspective on the state of spike sorting and SpikeInterface's role. The characterization of spike sorting as an open problem is supported by the results showing sorter disagreement. The claimed benefits of SpikeInterface are supported by the demonstrated functionality.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R34",
+    "claim_ids": [
+      "C134",
+      "C135",
+      "C136"
+    ],
+    "result": "SpikeInterface is a powerful tool for developers to test new methods using comprehensive comparison functions and integrate their work to access a large user community and automatic file I/O.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C134-C136 describe benefits for developers. The comparison functions demonstrated in the Results support the testing capability. The integration benefits are logical given the framework's design, though the size of the user community is not quantified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R35",
+    "claim_ids": [
+      "C137"
+    ],
+    "result": "SpikeForest includes ten spike sorting algorithms and more than 300 extracellular recordings with ground-truth firing information.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C137 describes the scope of SpikeForest with specific numbers. This is supported by the citation to Magland et al., 2020 and represents an important application of SpikeInterface for benchmarking.",
+    "result_type": "MINOR"
+  }
+]

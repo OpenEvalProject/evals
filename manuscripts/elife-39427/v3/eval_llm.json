@@ -1,0 +1,286 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C42",
+      "C43"
+    ],
+    "result": "dSTORM imaging provided superior spatial resolution (~21 nm localization precision) compared to confocal and SIM microscopy, enabling detailed assessment of RyR organization within CRUs that was not discernable with lower resolution techniques.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42 and C43 are well-supported by Figure 1, which directly demonstrates the improved resolution of dSTORM compared to confocal and SIM imaging. The technical specifications and visual evidence clearly show that dSTORM enables visualization of individual RyR clusters.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Super-resolution dSTORM imaging revealed that RyR clusters are fragmented and dispersed in failing cardiomyocytes, resulting in more numerous but smaller clusters, increased clusters per CRU, reduced inter-cluster distance, decreased RyRs per CRU, and reduced CRU solidity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C3, C47-C55 are strongly supported by quantitative dSTORM measurements presented in Figure 2. Multiple structural parameters consistently demonstrate RyR cluster fragmentation and CRU dispersion in HF. The data include appropriate sample sizes (46 Sham, 50 HF cells) and statistical comparisons.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Overall RyR expression and labeling density were similar between Sham and HF groups, and both showed predominantly transverse, striated RyR staining patterns at the macroscale.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C46 are supported by Western blot data (Figure 2\u2014figure supplement 1) and dSTORM measurements showing equivalent RyR density (41.9 vs 40.4 RyR/\u00b5m). This establishes that observed nanoscale changes reflect reorganization rather than changes in total RyR expression.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Total RyR-mediated Ca2+ leak was markedly increased in HF microsomes despite slowed SR Ca2+ uptake and reduced SR Ca2+ content.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C58 are supported by microsomal Ca2+ flux measurements shown in Figure 3A-D. The experimental approach using thapsigargin to isolate RyR leak is appropriate, and results show statistically significant differences. Sample sizes are adequate (n=8 Sham, 7 HF from 3 hearts each).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Ca2+ spark mass was increased in HF cells, but spark frequency tended to be lower, resulting in similar overall spark-mediated leak between HF and Sham. This discrepancy with increased total leak is consistent with augmented silent, non-spark mediated leak in HF.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C62 are supported by confocal linescan imaging data (Figure 3E-H). The inference of increased silent leak (C62) is logical given the discrepancy between increased total leak (C56) and unchanged spark-mediated leak (C61). Sample sizes are adequate (43 Sham, 50 HF cells).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C67"
+    ],
+    "result": "Mathematical modeling demonstrated that small CRUs (\u22644 RyRs) never produced detectable Ca2+ sparks, with spark fidelity progressively increasing as RyR number increased in idealized geometries. This supports that increased small CRUs in HF promote silent leak.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63, C64, and C67 are supported by modeling results in Figure 4A. The model appropriately uses an experimentally determined detection threshold (\u0394F/F0 \u22650.4) and demonstrates clear relationship between CRU size and spark detectability. The conclusion linking small CRUs to silent leak is well-justified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C68"
+    ],
+    "result": "Mathematical modeling using real dSTORM-derived CRU geometries showed that single-cluster CRUs exhibited high spark fidelity, while dispersed multi-cluster CRUs showed lower spark generation probability, supporting that CRU dispersion in HF promotes silent leak.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65, C66, and C68 are supported by modeling results in Figure 4B using actual dSTORM geometries. The approach of comparing CRUs with similar total RyR numbers but different cluster arrangements isolates the effect of dispersion. Results clearly show reduced spark fidelity with increased cluster dispersion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Ca2+ spark kinetics in HF cells exhibited broader distributions and prolonged mean rise time and duration compared to Sham, with some HF sparks showing markedly slow kinetics while others remained fast.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C72 are supported by experimental measurements in Figure 5. The data show statistically significant increases in mean spark rise time and duration in HF, with broader distributions indicating increased heterogeneity. Sample sizes are adequate (130 Sham sparks, 100 HF sparks).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Mathematical modeling showed that RyR opening times were delayed in dispersed multi-cluster CRUs compared to single-cluster CRUs, resulting in slowed and more variable spark kinetics that reproduced experimental observations. Simply reducing RyR number without changing geometry did not alter spark kinetics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C75 are supported by modeling results in Figure 6. The simulations using dSTORM-derived geometries successfully reproduce experimental spark kinetics. The control simulation (C75) showing that RyR number alone doesn't affect kinetics strengthens the conclusion that dispersion is the key factor.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Field-stimulated Ca2+ transients in HF cells were significantly slower to rise and exhibited marked desynchronization compared to Sham, as quantified by increased dyssynchrony index.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C78 are supported by confocal linescan measurements in Figure 7A-D. The dyssynchrony index provides appropriate quantification of Ca2+ release synchrony. Sample sizes are adequate (43 Sham, 57 HF cells) and statistical significance is demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Local Ca2+ transients at sites with slow spontaneous sparks (rise time >13 ms) exhibited markedly slower kinetics during action potentials compared to sites with fast sparks, demonstrating that CRU dispersion slows and desynchronizes the overall Ca2+ transient.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C84 are supported by paired measurements of spark and local transient kinetics shown in Figure 7E-G. The correlation between slow spark locations and slow local transients provides direct evidence linking nanoscale CRU structure to whole-cell Ca2+ release kinetics. The analysis approach is appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Quantitative analysis of dSTORM images from Sham cells revealed that average RyR clusters contain ~14 RyRs, and average CRUs contain 3-4 clusters with ~30 RyRs total (150 nm definition) or ~25 RyRs (100 nm definition), in close agreement with previous estimates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C88 are supported by quantitative dSTORM analysis with appropriate citations to prior work. The authors acknowledge potential methodological limitations (grid-based counting assumptions) and compare results using two different CRU definitions (100 nm vs 150 nm), demonstrating rigor.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C93",
+      "C94"
+    ],
+    "result": "Mathematical modeling demonstrated that decreased spark fidelity in dispersed CRUs results from increased spacing between clusters (inhibiting cooperative triggering) and easier Ca2+ escape from less densely packed structures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93 and C94 are supported by modeling results in Figure 4\u2014figure supplement 1B,C. The simulations systematically vary inter-cluster distance and jSR geometry to isolate these effects. The mechanistic explanations are well-justified by the modeling data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C112",
+      "C115"
+    ],
+    "result": "JPH-2 and BIN1 protein levels were not reduced in the rat HF model used in this study, suggesting that downregulation of these proteins is not a prerequisite for CRU or t-tubule reorganization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112 and C115 are supported by Western blot data in Figure 2\u2014figure supplement 1. The authors appropriately acknowledge that other studies have found different results in other HF models, and correctly conclude that these proteins are not required for the observed reorganization.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C79",
+      "C120",
+      "C121"
+    ],
+    "result": "T-tubule structure was markedly remodeled in HF, including loss of transverse elements and appearance of additional longitudinal tubules, consistent with previous findings in this post-infarction rat model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79, C120, and C121 are supported by t-tubule imaging data in Figure 7\u2014figure supplement 1 and appropriate citations. This establishes the context that both t-tubule and RyR reorganization occur in this HF model, though the authors suggest these may be independent processes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "The post-infarction HF rat model was created by coronary artery ligation in ~300g male Wistar-Hannover rats, with HF verified by echocardiography at 6 weeks and inclusion based on established criteria including left atrial dilation (>5 mm), ventricular dilation, and increased lung weight (>2.5 g).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C117-C119 describe the experimental model with appropriate methodological detail and citations. The inclusion criteria are well-established for this model. This provides necessary context for interpreting all experimental results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C1",
+      "C9"
+    ],
+    "result": "Nanoscale RyR reorganization during HF augments Ca2+ leak and slows Ca2+ release kinetics, leading to weakened contraction in this disease.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1 and C9 represent the main conclusion synthesizing all experimental and modeling results. This conclusion is well-supported by the convergent evidence from structural imaging (RyR dispersion), functional measurements (increased leak, slow sparks), and mathematical modeling linking structure to function. The chain of evidence is strong.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C5",
+      "C6"
+    ],
+    "result": "An increased fraction of small CRUs and larger multi-cluster CRUs with dispersed configurations in HF were linked to augmented silent Ca2+ leak not visible as sparks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5 and C6 synthesize findings from structural imaging (Figure 2), functional measurements (Figure 3), and mathematical modeling (Figure 4). The link between structure and function is supported by convergent experimental and computational evidence. This represents a key mechanistic finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C7",
+      "C8"
+    ],
+    "result": "Sparks in failing cells displayed slow kinetics as Ca2+ spread across dispersed CRUs, and these slow sparks protracted and desynchronized the overall Ca2+ transient during the action potential.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7 and C8 are supported by experimental measurements (Figures 5 and 7) and mathematical modeling (Figure 6). The correlation between slow sparks and slow local transients (Figure 7E-G) provides direct evidence linking CRU-level and whole-cell phenomena.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C4"
+    ],
+    "result": "Functional groupings of RyR clusters (CRUs) became less solid in HF, as measured by convex hull analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C4 is supported by quantitative convex hull analysis shown in Figure 2G. This metric appropriately captures the degree of CRU fragmentation and dispersion. The result is statistically significant and consistent with other structural measurements.",
+    "result_type": "MAJOR"
+  }
+]

@@ -1,0 +1,311 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C23",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C34",
+      "C35"
+    ],
+    "result": "The authors identified lncRNAs enriched in postmitotic motor neurons through strand-specific RNA-seq of ESC-derived motor neuron differentiation stages. They discovered 10,177 lncRNAs (752 novel), with 117 candidates enriched in postmitotic MNs, including Meg3, Rian, and Mirg from the Dlk1-Dio3 locus. lncRNAs showed higher cell-type specificity than protein-coding genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C23, C28-C32, C34-C35 are well-supported by RNA-seq data (Figure 1), qPCR validation (Figure 1\u2014figure supplement 1C), and in situ hybridization (Figure 2E-F). The experimental design appropriately used FACS to isolate specific cell populations, and multiple validation methods corroborate the findings. Statistical analysis (Kolmogorov-Smirnov test, p<10^-7) supports the cell-type specificity claim.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "The authors demonstrate that Meg3 expression in motor neurons is directly activated by MN-specific transcription factors (Lhx3, Isl1) and RA/RAR signaling. Meg3 exhibits rostral-high, caudal-low asymmetry along the spinal cord axis and is enriched in postmitotic MNs after E12.5 without columnar subtype preference.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C45 are supported by multiple lines of evidence: ChIP-seq data showing MN-TF binding at the Meg3 locus (Figure 2D), RAR binding and Pol2 recruitment upon RA treatment (Figure 2G-H), overexpression experiments in IG-DMRmat\u0394 ESCs (Figure 2\u2014figure supplement 1B-C), and in situ hybridization showing spatial expression patterns (Figure 2E-F). The convergence of these independent approaches provides strong support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C49"
+    ],
+    "result": "Meg3 is localized to the nucleus and is chromatin-associated in motor neurons, suggesting a role in chromatin regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C47, C49 are supported by single molecule RNA FISH showing nuclear speckled pattern (Figure 2\u2014figure supplement 1D) and subcellular fractionation with qPCR demonstrating chromatin association (Figure 2\u2014figure supplement 1E). Appropriate controls (Gapdh, Rnu1, Kcnq1ot1) were used to validate fractionation quality.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Meg3 and Rian interact with PRC2 complex components (Ezh2, Suz12) and cofactor Jarid2 in postmitotic motor neurons. Two Meg3 isoforms (v1 and v5) with mutually exclusive exons account for >99% of Meg3 transcripts and both bind Ezh2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C58 are supported by RNA immunoprecipitation (RIP) showing specific retrieval of Meg3, Rian, and Mirg by Ezh2/Suz12/Jarid2 antibodies with appropriate negative controls (Rnu1, Malat1) (Figure 3A), RNA-seq data showing Jarid2 reactivation and Meg3/Rian abundance (Figure 3\u2014figure supplement 1A), isoform analysis (Figure 3\u2014figure supplement 1B-E), and RNA pull-down assays (Figure 3B). Multiple independent biochemical approaches converge on the same conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Meg3 facilitates the interaction between Ezh2 and Jarid2 without affecting their protein levels. Meg3v5 isoform is a stronger facilitator of Ezh2-Jarid2 binding than Meg3v1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C66 are supported by co-immunoprecipitation experiments showing reduced Ezh2-Jarid2 interaction upon Meg3 KD (Figure 3C) and increased interaction upon Meg3v5 overexpression (Figure 3G), with Western blots confirming unchanged protein levels (Figure 3C, F, Figure 3\u2014figure supplement 1F). The use of inducible Meg3 overexpression lines (iMeg3v1 and iMeg3v5) provides controlled comparison between isoforms. Statistical significance is demonstrated (p<0.05).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Loss of Meg3 (via shRNA knockdown achieving ~90% reduction) leads to global H3K27me3 reduction and dysregulation of 585 genes showing both decreased H3K27me3 and increased expression. These genes are enriched for progenitor markers (Pax6, Irx3) and caudal Hox genes (Hox8-13), with imbalanced 3' and 5' Hox gene expression across all Hox clusters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C76 are supported by integrated ChIP-seq and microarray analysis (Figure 4A-C), with validation by qPCR in three independent Meg3 KD lines (Figure 4\u2014figure supplement 1A, E). GO analysis shows significant enrichment (FDR q\u22640.05) for relevant gene categories (Figure 4\u2014figure supplement 1D). The use of two independent shRNAs and comparison with IG-DMRmat\u0394 ESC-MNs strengthens the findings. However, the global H3K27me3 reduction is described as a \"trend\" which suggests it may not reach statistical significance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "The H3K27me3 landscape changes at progenitor and caudal Hox genes are concordant with Ezh2 enrichment, and Meg3 KD reduces Ezh2/Jarid2 binding to these loci. This supports a model where Meg3 bridges PRC2/Jarid2 to maintain rostral MN fate by silencing progenitor and caudal Hox genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C79 are supported by comparison with published ChIP-seq data (Figure 4\u2014figure supplement 2A-B) and ChIP-qPCR showing reduced Ezh2/Jarid2 binding at Pax6, Irx3, and Hoxc8 loci upon Meg3 KD (Figure 4\u2014figure supplement 2C-E). The mechanistic model is well-supported by the convergence of biochemical (co-IP), genomic (ChIP-seq), and expression (microarray) data. Statistical significance is shown (p<0.05).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "IG-DMRmat\u0394 embryos lack Meg3 expression and show ectopic expression of progenitor genes Pax6 (45% penetrance, n=5/11) and Irx3 (100% penetrance, n=8/8) in postmitotic MNs (Isl1/2+) along the entire RC axis, while ventral progenitor patterning and overall MN production remain unaffected.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C86 are supported by in situ hybridization confirming Meg3 absence (Figure 5\u2014figure supplement 1A), immunostaining showing normal Olig2/Nkx2.2 patterning (Figure 5\u2014figure supplement 1B-C) and ectopic Pax6/Irx3 in Isl1/2+ cells (Figure 5A-D), and quantification showing comparable MN numbers (Figure 5E-F). The partial penetrance for Pax6 is appropriately reported. Sample sizes are adequate (n=5-11 embryos) with statistical analysis (p<0.01).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "In IG-DMRmat\u0394 embryos, segmental Hox protein expression and columnar MN identities are largely preserved, but Hoxc8 expands rostrally into Hoxa5 territory in brachial LMC neurons, with increased downstream motor pool markers Pea3 and Scip. This represents a persistent, non-transient cell fate switch.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C92 are supported by immunostaining and quantification showing comparable segmental (Hoxc6, Hoxc9, Hoxd10) and columnar (Lhx3, Foxp1) markers (Figure 5\u2014figure supplement 1D-G), but altered Hoxa5/Hoxc8 distribution with increased Pea3/Scip (Figure 6A-F, n=5 embryos). The exclusion of apoptosis as a mechanism is noted but data not shown. Statistical significance is demonstrated (p<0.05). The inference of \"non-transient\" fate switch is reasonable given persistent changes across developmental stages.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "IG-DMRmat\u0394 mutants display deficient peripheral innervation with reduced arborization of suprascapular and axillary nerves innervating proximal muscles, and increased complexity of distal muscle-innervating posterior brachial cutaneous nerves.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C95 are supported by light sheet microscopy and Imaris quantification (Figure 7B-E, n=6, p<0.01, Mann-Whitney U test). The use of 3D imaging and semi-automatic quantification provides robust analysis. The inference that this is a consequence of Hox dysregulation is reasonable given the known role of Hox genes in motor pool specification, though the claim acknowledges uncertainty (\"might be\").",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "CRISPR-mediated deletion of Rian or Mirg individually does not recapitulate the Meg3 KD phenotype. Rian\u0394/\u0394 ESCs show compromised Rian but intact Meg3/Mirg, while Mirg\u0394/\u0394 ESCs show impaired Mirg but intact Meg3/Rian. Neither deletion affects Hoxa5, Pax6, or Hoxc8 expression in ESC-MNs, suggesting Meg3 is the major regulatory lncRNA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C99 are supported by qPCR data from CRISPR-generated deletion lines (Figure 8B-C). The experimental design appropriately tests individual lncRNA contributions. However, the conclusion that Meg3 is \"the major\" regulatory lncRNA is somewhat overstated, as the study does not test all possible combinations or rule out synergistic effects. The claim is presented as an inference (\"might be\") which is appropriate. Sample sizes appear adequate (n=3-5) with statistical analysis (p<0.05).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "Meg3 and other Dlk1-Dio3 locus-derived lncRNAs facilitate Ezh2/Jarid2 interactions, and their loss compromises the H3K27me3 landscape, leading to aberrant expression of progenitor and caudal Hox genes. These lncRNAs maintain postmitotic MN cell fate by repressing progenitor genes and shape MN subtype identity by regulating Hox genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This is the central conclusion of the manuscript, synthesizing findings from multiple result groups. Claims C3-C8 are well-supported by the convergence of biochemical (RIP, co-IP, RNA pull-down), genomic (ChIP-seq, RNA-seq), expression (microarray, qPCR), and in vivo (immunostaining, light sheet microscopy) data across multiple experimental systems (ESC-MNs, Meg3 KD, IG-DMRmat\u0394 embryos). The mechanistic model is coherent and supported by multiple independent lines of evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C27",
+      "C36",
+      "C50",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C127",
+      "C128",
+      "C129"
+    ],
+    "result": "The manuscript provides extensive background on lncRNAs, PRC2 function, motor neuron development, Hox gene regulation, the Dlk1-Dio3 locus structure, and connections to human disease (Kagami-Ogata syndrome). These claims establish context and cite prior work appropriately.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These background claims (C9-C22, C27, C36, C50, C100-C129) are appropriately supported by citations to published literature and represent established knowledge in the field. The citations appear relevant and accurate. The connection to Kagami-Ogata syndrome (C120-C123, C126) is speculative but appropriately presented as such. The discussion of prior Meg3 knockout studies (C113-C118) provides important context for interpreting the current results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "The authors used an ESC differentiation system with Hb9::GFP reporter to generate motor neurons, collecting sequential stages by FACS, and performed strand-specific RNA-seq preserving non-polyadenylated transcripts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C26 describe the experimental approach, which is well-established and appropriately applied. The use of strand-specific RNA-seq preserving non-polyadenylated transcripts is justified given that many lncRNAs lack poly(A) tails (C27). The sequential collection of defined cell populations by FACS enables stage-specific analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C33",
+      "C48",
+      "C59",
+      "C70",
+      "C76",
+      "C79",
+      "C86",
+      "C92",
+      "C95",
+      "C99",
+      "C126"
+    ],
+    "result": "The manuscript includes several inferential claims connecting observations to functional interpretations, including that lncRNAs play specific roles in cell types, that Meg3 facilitates PRC2/Jarid2 association, that dysregulation is due to loss of epigenetic robustness, and connections to human disease.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These inferential claims (C33, C48, C59, C70, C76, C79, C86, C92, C95, C99, C126) are appropriately presented as interpretations or suggestions rather than definitive conclusions. They are reasonable inferences based on the data presented, though they represent hypotheses that could benefit from additional direct testing. The authors appropriately use qualifying language (\"might,\" \"suggesting,\" \"likely\") for most of these claims.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C80",
+      "C105",
+      "C119"
+    ],
+    "result": "Supporting observations include that IG-DMRmat\u0394 embryos die after E16 (limiting analysis window), that H3K27me3 demethylases Kdm6a and Kdm6b are reactivated in postmitotic MNs, and that Mirg does not bind Ezh2/Suz12/Jarid2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80, C105, C119 provide supporting details. C80 is supported by citation to prior work and explains the experimental timeline. C105 is based on RNA-seq data (though not shown in figures) and provides context for the need for active H3K27me3 maintenance. C119 is supported by RIP data (Figure 3A) and helps distinguish Mirg from Meg3/Rian functionally.",
+    "result_type": "MINOR"
+  }
+]

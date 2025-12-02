@@ -1,0 +1,271 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Enhanced STN spike-to-cortical gamma phase coupling precedes faster reaction times, suggesting a role in motor preparation. This effect was present at the time of the Go signal (approximately 0.39-0.69s before movement onset) and was spatially specific to primary motor cortical areas. Coupling strength correlated negatively with reaction times (mean R = -0.16, p=0.019), while firing rates showed no such correlation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C61-C64, and C79-C81 provide converging evidence from multiple analyses (median-split comparison, within-subjects correlations) showing that gamma coupling strength predicts reaction times. The temporal specificity (present at Go signal, disappearing at grip onset) and spatial specificity (motor cortical sites) strengthen the finding. The independence from firing rate changes (C65, C82) is well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C56",
+      "C57",
+      "C58",
+      "C82",
+      "C83",
+      "C93"
+    ],
+    "result": "STN spike-to-cortical gamma coupling occurs independently of changes in mean firing rates. Gamma coupling was observed across all firing rate response types (stable 47%, increased 21%, decreased 32%), with no correlation between firing rate changes and coupling strength (mean R = 0.01, p=0.969). Average firing rates showed no significant task-related modulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C56-C58, C82-C83, and C93 consistently demonstrate independence of coupling from firing rates through multiple lines of evidence: lack of correlation (C58), presence across all response types (C57), and absence of task-related firing rate changes (C56, C93). This is a robust finding supported by appropriate statistical tests.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C7",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C96",
+      "C97"
+    ],
+    "result": "The preferred gamma phase of STN spikes differs systematically between contralateral and ipsilateral movements by approximately 180\u00b0. In recordings with significant coupling (n=11), the offset was ~210\u00b0 (mean -2.6 rad, 95% CI = [-3.9, -1.4]), while in a larger set (n=23), the offset was ~180\u00b0 (mean 3.1 rad, 95% CI = [2.1, 4.0]). This phase difference was temporally specific to movement onset.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C75-C78, C96-C97 provide consistent evidence for systematic phase offsets between contra- and ipsilateral movements. The finding is replicated in two different sample sizes with appropriate confidence intervals. The temporal specificity (C77) and V-test results strengthen the conclusion. The ~180\u00b0 offset is biologically meaningful and consistent across analyses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C60"
+    ],
+    "result": "STN firing shows spatially and temporally specific phase-locking to cortical gamma oscillations at the onset of contralateral movement. Coupling was constrained to a narrow spectral window (60-80 Hz gamma band) and centered on movement onset. During ipsilateral gripping, no significant gamma coupling or power increase was observed in the same ECoG sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C54 and C60 demonstrate movement-specific gamma coupling using appropriate permutation testing. The spectral and temporal specificity (C52) and absence during ipsilateral movements (C53-C54) provide strong evidence. The cluster-based permutation procedure controls for multiple comparisons appropriately.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C84"
+    ],
+    "result": "STN spiking probability is significantly modulated relative to the cortical gamma phase during movement. A 4-bin \u00d7 2-effector ANOVA showed significant interaction (F3,81 = 5.2, p=0.003), with differential modulation during contralateral (BIN2 vs. BIN4) and ipsilateral gripping (BIN1 vs. BIN2/3/4). Spiking probability in BIN4 was significantly lower during contralateral compared to ipsilateral gripping (p=0.008).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C74 and C84 provide statistical evidence for phase-dependent spiking modulation using appropriate ANOVA and post-hoc tests. The significant interaction and specific bin differences demonstrate consistent phase preferences across recordings. The analysis appropriately controls for multiple comparisons with FDR correction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "Movement-related gamma power increases are spatially localized to motor and somatosensory cortical areas during contralateral gripping. The sites showing strongest STN spike-to-cortical gamma coupling were concentrated in lateral precentral gyrus, corresponding well to the primary hand motor cortex identified in previous MEG studies. Sites with significant coupling during ipsilateral gripping were more widely dispersed and shifted toward somatosensory cortex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C48 demonstrate spatial specificity of gamma coupling using topographic analysis. The correspondence with MEG findings (C47) provides external validation, though this relies on comparison across different modalities and studies. The spatial distribution differences between contra- and ipsilateral movements are clearly documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C124"
+    ],
+    "result": "Differences in gamma coupling were linked to reaction time fluctuations but not to movement velocity or force. No correlation was found between reaction times and firing rates (mean R = -0.02, p=0.594), and no firing characteristics differed between fast and slow RT trials. When trials were split by peak yank or peak grip force, no significant effects were found.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C67 and C124 demonstrate specificity of the coupling-RT relationship through appropriate control analyses. The lack of correlation with force and velocity (C67, C124) is well-documented with negative results. However, the authors acknowledge task limitations (C127) that may have restricted the range of these variables.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C55",
+      "C114"
+    ],
+    "result": "Cortical high-frequency activity (HFA, >300 Hz) was significantly higher during contralateral versus ipsilateral gripping (p=0.001). This HFA serves as a proxy for local discharge activity and was used to standardize the polarity of gamma phase measurements across recordings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55 and C114 provide evidence for differential cortical activity during contra- vs. ipsilateral movements using HFA as a measure. The statistical test is appropriate (Wilcoxon signed-rank test). The methodological use of HFA for polarity standardization is well-justified and described in detail in the methods.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C59",
+      "C94",
+      "C121"
+    ],
+    "result": "The only consistent cue-related change in STN firing characteristics at the group level was a reduction in interspike interval coefficient of variation (ISI CV) after the preparatory cue and during ipsilateral gripping. This indicates increased regularity of spike timing without changes in mean firing rate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59, C94, and C121 consistently report changes in spike timing regularity using appropriate measures (ISI CV). The finding is based on group-level analysis with proper baseline comparisons. This supports the broader conclusion about the importance of spike timing over firing rate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C122"
+    ],
+    "result": "STN neurons dynamically lock to both gamma oscillations during movement and beta oscillations after movement completion. When the cue indicated ipsilateral grip, pre-movement cortical beta power was significantly elevated throughout the pre-Go signal delay period, consistent with an anti-kinetic influence on contralateral output. These findings support a model where distinct rhythms (beta and gamma) entrain neuronal spikes at different stages to facilitate or restrict motor output.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C115, C119-C122 provide evidence for dynamic coupling to different frequency bands at different task stages. The beta elevation during ipsilateral preparation (C119-C120) is well-documented. However, the functional interpretation (C118, C122) is somewhat speculative, as acknowledged by the authors ('remains to be tested').",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C8",
+      "C21",
+      "C83",
+      "C99",
+      "C104"
+    ],
+    "result": "The relative timing of STN spikes is as relevant as firing rate for understanding cortico-basal ganglia information transfer. The phase offset between contra- and ipsilateral movements may provide a mechanism to dynamically modify the functional consequences of STN spikes, potentially avoiding co-activation of competing effectors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C8, C21, C83, C99, and C104 represent interpretations and inferences about the functional significance of the observed phase relationships. While the data on phase offsets and independence from firing rates are solid, the mechanistic interpretations (C99, C104) are speculative. The claims appropriately use cautious language ('may be', 'could provide'), but direct causal evidence is lacking.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Behavioral performance in the gripping task showed no significant difference in mean reaction times between contralateral (0.53 \u00b1 0.21 s) and ipsilateral (0.55 \u00b1 0.18 s) grips (p=0.435). Within-patient RT variability (0.19 \u00b1 0.09 s for contralateral, 0.23 \u00b1 0.12 s for ipsilateral) allowed median-split analyses. The delay between cue and Go signal did not differ between fast and slow RT trials (p=0.116).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C43 provide comprehensive behavioral characterization with appropriate statistical tests. The lack of RT differences between conditions (C36) and the control for cue-Go delay (C42) are important for interpreting the neural findings. The RT variability (C37-C38) justified the median-split approach used in subsequent analyses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C26",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C151",
+      "C152"
+    ],
+    "result": "The study recorded STN unit activity and electrocorticography simultaneously from 12 Parkinson's disease patients during deep brain stimulation surgery. Patients performed a visually-cued hand gripping task after overnight withdrawal from or reduced dopaminergic medication. The analysis included 28 spike recordings (12 single-unit, 16 multi-unit) from sites where spike-phase coupling to lower frequencies had been previously described.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26, C30-C33, C151-C152 accurately describe the experimental design and dataset. The methods are clearly documented with appropriate ethical approval (C152). The inclusion of both single- and multi-unit recordings is acknowledged (C148) with justification provided (C149).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C89",
+      "C92",
+      "C102",
+      "C105"
+    ],
+    "result": "Several mechanistic hypotheses are proposed: gamma-rhythmic STN firing could enhance cortical gamma by switching GPi from tonic to oscillating inhibition; coupling may occur through cortico-STN-cortical network effects; the striatum may be gamma-entrained; and loss of temporal structuring mechanisms might lead to uncontrolled movements in disease states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C89, C92, C102, and C105 are explicitly speculative hypotheses ('could', 'may', 'might') about mechanisms. While these are reasonable interpretations based on known circuit anatomy, they lack direct experimental support in this study. The authors appropriately acknowledge these as speculations requiring future testing.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C90",
+      "C132",
+      "C139",
+      "C140",
+      "C142",
+      "C145",
+      "C146",
+      "C147",
+      "C150"
+    ],
+    "result": "The study has several acknowledged limitations: inability to determine directionality of coupling (basal ganglia vs. cortex origin); variable and limited ECoG coverage across patients; indirect electrode localization; recordings from Parkinson's disease patients rather than healthy subjects; potential confound of worse symptom severity on ipsilateral side; and correlative rather than causal nature of results.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90, C132, C139-C140, C142, C145-C147, and C150 represent appropriate acknowledgment of study limitations. The authors transparently discuss these constraints and their potential impact on interpretation. The limitation regarding causality (C150) is particularly important for interpreting the functional claims.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C68",
+      "C69"
+    ],
+    "result": "Primary motor cortical gamma power tended to be higher when reaction times were shorter, although this effect did not reach statistical significance. The RT-dependent difference in coupling was spatially specific and not present in ECoG sites showing greatest coupling during ipsilateral gripping.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C69 appropriately report a non-significant trend (C68) and demonstrate spatial specificity through control analyses (C69). The negative result for gamma power (C68) contrasts with the positive result for coupling, suggesting that phase relationships may be more sensitive than power measures for predicting behavior.",
+    "result_type": "MINOR"
+  }
+]

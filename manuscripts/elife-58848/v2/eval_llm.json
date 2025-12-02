@@ -1,0 +1,418 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C7",
+      "C8",
+      "C22",
+      "C23",
+      "C26"
+    ],
+    "result": "M1 exhibits low-dimensional rotational dynamics during reaching movements. Single neurons show diverse activity patterns that collectively produce rotational dynamics at the population level, with significant variance explained by rotational dynamical systems (FVE difference p=4.67e-13).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C7, C8, C22, C23, and C26 converge on the well-established finding that M1 exhibits rotational dynamics during reaching. The jPCA analysis (Figure 1C,E) demonstrates this quantitatively with highly significant statistical support, replicating prior findings in the field.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C24",
+      "C25",
+      "C27",
+      "C28",
+      "C29",
+      "C50",
+      "C65"
+    ],
+    "result": "M1 does not exhibit low-dimensional linear dynamics during grasping movements. While individual neurons show diverse response profiles during grasp, rotational dynamics are weak or absent at the population level, and linear dynamical systems poorly predict neural state derivatives (FVE difference p=1.57e-14).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C24, C25, C27, C28, C29, C50, and C65 collectively establish the primary finding through multiple analytical approaches (jPCA, linear dynamics fitting). The statistical evidence is highly significant, and extensive control analyses (C29) rule out methodological artifacts. This is the central novel finding of the manuscript.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C162"
+    ],
+    "result": "LFADS analysis reveals that exploiting latent dynamics substantially improves kinematic decoding for reaching (R\u00b2=0.93 vs 0.57) but provides minimal improvement for grasping (R\u00b2=0.46 and 0.37), even when allowing high-dimensional and nonlinear dynamics. This difference is statistically significant (t(311)=7.07, p=5.11e-12).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C41 and C162 demonstrate through LFADS analysis that the absence of dynamics during grasp is not due to constraints on dimensionality or linearity. The quantitative decoding results and statistical tests provide strong evidence. Control analyses varying latent dimensionality and external inputs strengthen the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Tangling analysis shows that M1 neural activity during reaching is much less tangled than arm kinematics (consistent with autonomous dynamics), but during grasping, M1 activity is as tangled as hand kinematics or more so. Furthermore, M1 and somatosensory cortex show similar tangling during grasp.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C49 provide converging evidence from tangling analysis that M1 does not exhibit autonomous dynamical system properties during grasp. The comparison to somatosensory cortex (C48) is particularly compelling, as SCx is known to be input-driven. The results are shown across multiple dimensionalities (Figure 3, Figure 3\u2014figure supplement 1).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C19",
+      "C20"
+    ],
+    "result": "Grasp-related neuronal dynamics in M1 are similar to somatosensory cortex, which is primarily driven by afferent inputs rather than intrinsic dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C5, C19, and C20 establish the comparison to somatosensory cortex. The tangling analysis (C48, Figure 3C) directly demonstrates similar tangling in M1 and SCx during grasp. The characterization of SCx as input-driven is well-established in the literature (C5, C20) and supported by citations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C6",
+      "C51",
+      "C66"
+    ],
+    "result": "The basic structure of neuronal activity underlying hand control is fundamentally different from that underlying arm control, consistent with emerging views that cortical circuits controlling the hand differ from those controlling the proximal limb.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C51, and C66 represent the main conclusion synthesizing all findings. This is well-supported by the convergent evidence from jPCA, linear dynamics, LFADS, and tangling analyses. The interpretation is appropriately cautious and contextualized within the broader literature (C66).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "Despite the hand having many degrees of freedom, hand kinematics can be largely accounted for within a small subspace, suggesting that low-dimensional neural dynamics might be expected during hand movements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10, C11, and C12 establish the motivation for the study. C11 is well-supported by multiple citations to prior work. C12 represents the hypothesis that was tested and ultimately not supported by the data, which is appropriate for framing the research question.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C17",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Neural recordings were obtained from M1 and SCx in multiple monkeys performing a grasping task where objects were presented by a robotic arm while the arm was held still. Behavioral events were automatically detected using kinematic data, and hand kinematics were tracked using motion capture and inverse kinematics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C17 and C67-C82 describe the experimental methods for the grasping task. The methods are clearly described with appropriate technical detail, including recording technologies, behavioral task design, kinematic tracking, and event detection procedures. Quantitative behavioral timing data are provided for all monkeys.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C18",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "Previously published M1 neural recordings from two monkeys performing a center-out reaching task were analyzed for comparison, with quantitative behavioral timing data provided.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18 and C83-C86 describe the reaching data used for comparison. The use of previously published data is appropriate and properly cited (Hatsopoulos et al., 2007). Behavioral parameters are quantitatively described, enabling proper comparison to the grasping task.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "Despite differences in task design between reach and grasp (cueing, timing), these differences should not account for the observed differences in neural dynamics. Kinematics (ranges of motion and speeds) were similar between tasks, and prior work shows that movement speed and preparation time do not affect rotational dynamics during reaching.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C95 address potential confounds in comparing reach and grasp tasks. The kinematic similarity (C91, Figure 1\u2014figure supplement 1C-D,G) is empirically demonstrated. The arguments about timing and speed effects (C89, C90, C94, C95) are supported by citations to prior work showing these factors don't affect dynamics during reaching.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "The grasping behavior exhibited hallmarks of natural grasping including maximum aperture and hand pre-shaping, with object-specific kinematics emerging progressively during the trial. Grasping kinematics are robust to different types of reaches.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C100 validate that the grasping task elicited natural grasping behavior despite the constrained arm position. The progressive emergence of object-specific kinematics (C97, C99, Figure 1\u2014figure supplement 1E) provides quantitative evidence. C100 is supported by citation to prior work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C118"
+    ],
+    "result": "Data preprocessing for jPCA analysis included alignment, resampling, trial-averaging, smoothing, normalization, subtraction of condition-invariant responses, and PCA dimensionality reduction to 10 dimensions. Objects were clustered into 8 groups for grasp analysis. Alignment to maximum aperture yielded strongest (though still weak) dynamics for grasp.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C118 describe the jPCA preprocessing pipeline. The methods follow established procedures (C102, citing Churchland et al., 2012). The rationale for each step is provided (e.g., C104, C107, C116, C118). The choice to subtract condition-invariant responses is justified by prior work (C105, C106).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "Extensive control analyses ruled out alternative explanations for the lack of dynamics during grasp, including differences in peak firing rates, neuronal modulation, sample size, sampling of movement space, smoothing parameters, and trial-to-trial variability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C119-C124 describe critical control analyses that strengthen the main findings. Each control addresses a specific potential confound with quantitative results (e.g., C119 shows higher firing rates for hand than arm). These controls are essential for establishing that the observed differences are not methodological artifacts.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132"
+    ],
+    "result": "LFADS and Kalman filter decoding methods were implemented with careful parameter selection and cross-validation. The same number of neurons was used for reach and grasp, and latent dimensionality was set to 30 where performance leveled off. External inputs were allowed in LFADS models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C125-C132 describe the LFADS and decoding methodology. The methods are clearly described with appropriate technical detail. Key methodological choices are justified (e.g., C127 on dimensionality, C128 on external inputs). The use of separate decoders for fair comparison (C132) is appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142"
+    ],
+    "result": "Tangling analysis was performed on neural and kinematic data reduced to appropriate dimensionalities (6 PCs for reach, 20 PCs for grasp) selected where the tangling metric leveled off. The analysis was applied to both neural and kinematic trajectories over specific time windows around movement events.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C133-C142 describe the tangling analysis methodology. The method is properly cited (C133, Russo et al., 2018). The dimensionality selection procedure (C140) appropriately addresses the dependence of tangling on dimensionality (C139). The application to both neural and kinematic data (C136) enables meaningful comparisons.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C155",
+      "C156"
+    ],
+    "result": "Multiple analyses demonstrate that the sample size was sufficient to recover high-dimensional dynamics if present. The eigenvalue spectrum is not flat, neurons approximate random projections (Gine-Ajne test p>0.5), LFADS performance leveled off at ~10 factors, and behaviorally relevant signals were distributed across many dimensions with above-chance classification and decoding after removing dozens of PCs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C143-C156 address the critical question of whether the failure to observe dynamics stems from insufficient sampling. Multiple converging lines of evidence (eigenvalue spectrum, Gine-Ajne test, LFADS dimensionality, classification/decoding across dimensions) support the conclusion that the sample was adequate. This is essential for ruling out a major alternative explanation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C157",
+      "C158",
+      "C159",
+      "C160",
+      "C161"
+    ],
+    "result": "Statistical analyses used two-sided t-tests for normally distributed data and non-parametric tests for right-skewed data. Kinematic comparisons showed no significant differences in mean joint angular speed or range of motion between reach and grasp, with overlapping distributions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C157-C161 describe statistical methods and kinematic comparisons. The choice of statistical tests is appropriate for the data characteristics (C157, C158). The kinematic similarity between reach and grasp (C159, C160, C161) is important for ruling out trivial kinematic explanations for the neural differences.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C163",
+      "C164",
+      "C165",
+      "C166"
+    ],
+    "result": "Two monkeys showed different behavioral complexity (84% vs 33% object classification accuracy), reflected in different neural response dimensionality, but dynamical systems analyses yielded identical conclusions for both datasets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C163-C166 demonstrate the robustness of the findings across different levels of behavioral complexity. The fact that both monkeys showed similar absence of dynamics despite different behavioral strategies (C166) strengthens the generalizability of the conclusions. This is shown in Figure 3\u2014figure supplement 2.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "The possibility that M1 dynamics during grasp are much higher dimensional or more nonlinear than during reach was considered but ruled out by LFADS and tangling analyses that can accommodate high-dimensional and nonlinear systems. However, the possibility of dynamics in extremely high-dimensional space cannot be completely excluded and would require larger-scale recordings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C59 appropriately discuss alternative explanations and limitations. The authors provide evidence against the high-dimensionality explanation (C56, C57) while acknowledging what cannot be definitively ruled out (C58, C59). This represents appropriate scientific caution and suggests future directions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "An alternative explanation is that M1 dynamics during grasp are under greater influence from extrinsic inputs than during reach. M1 receives inputs from multiple brain areas with their own dynamics, and external inputs can disrupt intrinsic dynamics and cause tangling. The findings are consistent with grasp involving more or more disruptive inputs to M1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C60-C64 present a plausible alternative mechanistic explanation for the findings. While the hypothesis is consistent with the data (C64) and supported by knowledge of M1 connectivity (C62, C63), it remains speculative (C60 uses 'may be'). The mechanism by which inputs cause tangling (C61) is theoretically sound but not directly tested in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C2",
+      "C9"
+    ],
+    "result": "M1 population-level behavior during reaching is consistent with a role for M1 as an autonomous pattern generator, though this is presented as one possible interpretation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2 and C9 present the pattern generator interpretation of rotational dynamics. This is appropriately framed as an interpretation (C9) rather than a definitive conclusion. The interpretation is consistent with the observed dynamics and supported by the broader literature, though alternative interpretations exist.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C30"
+    ],
+    "result": "M1 population activity during reach-grasp-manipulate tasks is higher dimensional than during reach alone, according to prior work.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C30 accurately cites prior work (Rouse and Schieber, 2018) to motivate the use of LFADS, which can handle high-dimensional dynamics. This contextualizes the current findings within the existing literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Dynamics are observed for reach-like finger movements, and rotational dynamics in reach-to-grasp likely reflect the reaching component. Movement signals are broadcast widely throughout motor cortex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C54 interpret the findings in light of prior work. C52 and C54 are supported by citations. C53 is a reasonable inference about reach-to-grasp based on the current findings and prior observations. These claims help distinguish effector-specific from movement-type-specific explanations.",
+    "result_type": "MINOR"
+  }
+]

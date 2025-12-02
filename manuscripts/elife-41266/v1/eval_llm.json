@@ -1,0 +1,260 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "The HbP2 enhancer drives sharp expression in Drosophila embryos with a Hill coefficient of 5.2\u00b10.3, comparable to endogenous hb expression (Hill coefficient 6.2\u00b11.1). HbP2 is one of three enhancers regulating hb, driving early expression at nuclear cycle 14.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C6-C10 establish the experimental system and provide quantitative measurements of HbP2 activity. The Hill coefficients are measured with appropriate error estimates and are consistent with cited literature (C8). The reporter system is well-characterized and controls for contributions from other enhancers.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C38",
+      "C45"
+    ],
+    "result": "The classical model predicting that n binding sites yield a Hill coefficient of n is incorrect for HbP2. Removing Bcd binding sites sequentially decreases the Hill coefficient by ~0.5 per site (not 1.0), and removing all 6 canonical sites does not abolish expression, indicating additional binding sites or TFs contribute.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C17, C38, C45 provide systematic experimental evidence from binding site deletion series with quantitative measurements. The data clearly contradict the classical model (C12) and are internally consistent. The observation that expression persists after removing all 6 sites (C13) is supported by additional sequence analysis (C58-C60).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C50"
+    ],
+    "result": "All six Bcd binding sites (three strong, three weak affinity) contribute roughly equally to the GRF shape, despite variations in affinity, position, orientation, and clustering.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C19, C50 are supported by experiments testing individual and clustered binding site deletions (Figure 2C). The conclusion is consistent with cited work (C19) and represents a systematic test of binding site properties in the endogenous enhancer context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "A synthetic HbP2 (SynHbP2) containing only Bcd binding sites with 7 bp flanking sequences drives sharp expression (similar Hill coefficient to WTHbP2) but at an anteriorly shifted position, indicating Bcd alone can mediate sharpness while other TFs (Hb, Zelda) affect boundary position.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C25 describe a well-designed synthetic enhancer experiment with appropriate controls testing different flanking sequence lengths (C22). The anterior shift in SynHbP2 (C23) provides clear evidence that other TFs influence position (C25), supported by subsequent RNAi experiments (C26-C27).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "RNAi knockdown of hb or Zelda shifts WTHbP2 expression anteriorly by 8% and 5% respectively, without significantly changing Hill coefficient, confirming these TFs affect boundary position but not steepness.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C28 provide quantitative RNAi data with error estimates that support the interpretation from SynHbP2 experiments. The results are consistent with previous qualitative observations (C28) but add quantitative GRF analysis. The differential effects on position vs. steepness are clearly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Knockdown of histone modifiers CBP and HDAC6 shifts WTHbP2 expression anteriorly without substantially changing Hill coefficient, suggesting chromatin accessibility affects boundary position.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C33 provide quantitative RNAi data for chromatin modifiers with appropriate error estimates. The interpretation is supported by established knowledge about CBP function (C31-C33) and is consistent with the hypothesis that chromatin accessibility affects Bcd binding efficiency.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C34"
+    ],
+    "result": "Knockdown of different Mediator subunits has three distinct effects on WTHbP2 GRF: some reduce expression level (MED14), some affect position but not steepness (MED20, MED22), and some affect steepness but not position (MED11, MED27).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C34 summarizes systematic RNAi experiments targeting multiple Mediator subunits (Figure 5). The data show clear differential effects on GRF parameters, demonstrating that different cofactor subunits can independently modulate distinct aspects of the transcriptional response.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Comparison of experimental GRFs to thermodynamic equilibrium theory shows that WTHbP2 and SynHbP2 lie at the boundary of the position-steepness region, pairwise cooperativities are inadequate to explain the data, and deletion constructs yield steepness values exceeding model predictions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C37 compare experimental data to theoretical predictions (Figure 6). The position-steepness analysis provides a rigorous biophysical framework for evaluating mechanisms. The conclusion that pairwise cooperativity is insufficient is well-supported by the data falling outside or at the boundary of predicted regions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C2",
+      "C39",
+      "C71",
+      "C77"
+    ],
+    "result": "The prevailing model of pairwise cooperative Bcd binding is inadequate; instead, Bcd, other TFs, and cofactors (Mediator, CBP) collaborate to shape the GRF through largely separable effects on steepness and position, challenging the TF-centric view of gene regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C39, C71, C77 represent the main conclusions synthesized from multiple experimental results (binding site deletions, synthetic enhancers, RNAi screens). The evidence from diverse approaches converges on the conclusion that multiple molecular mechanisms beyond pairwise TF cooperativity are required.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C4",
+      "C40",
+      "C49",
+      "C72",
+      "C73"
+    ],
+    "result": "Comparison to theory reveals that higher-order cooperativity and/or energy expenditure (non-equilibrium mechanisms) are required to explain HbP2's sharp response. Either unrecognized Bcd sites contribute, or thermodynamic equilibrium models are insufficient even with higher-order cooperativity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C4, C40, C49, C72-C73 propose mechanistic interpretations based on theory-experiment comparison. While the inadequacy of pairwise cooperativity is well-supported, distinguishing between additional cryptic binding sites, higher-order cooperativity, and non-equilibrium mechanisms remains uncertain. The data are consistent with multiple explanations (C40, C49), and definitive tests would require additional experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Bcd binding site activity requires 7 bp of endogenous flanking sequence beyond the core TAATCC motif, possibly due to DNA shape recognition, as 12 bp flanks provide no additional benefit.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C55 describe systematic testing of flanking sequence requirements in SynHbP2 constructs. The experimental observations (C53-C54) are clear, though the mechanistic interpretation involving DNA shape (C55) is speculative but supported by analogy to other homeodomain proteins.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Additional predicted Bcd binding sites exist in WTHbP2 and the hb promoter beyond the canonical six. Deleting these further reduces but does not abolish expression. The conclusion that pairwise cooperativity is inadequate holds regardless of the exact number of sites, though additional sites allow higher-order cooperativity models to better match data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C62 address the complexity of identifying all functional Bcd sites. The experimental observations (C56-C60) are clear, and the theoretical analysis (C61-C62) appropriately considers how additional sites affect model predictions. The robustness of the main conclusion to site number uncertainty is an important control.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Multiple perturbations shift expression position by affecting WTHbP2 accessibility and Bcd binding efficiency. Zelda removal may decrease accessibility, Hb may facilitate Bcd binding through collaborative cooperativity, and CBP may modify nucleosomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C63-C68 propose a unifying hypothesis to explain position shifts from various perturbations. While the experimental observations (C63) are well-supported and consistent with prior work (C68), the mechanistic interpretations (C64-C67) are speculative. Direct tests of accessibility or binding efficiency are not provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C46",
+      "C47"
+    ],
+    "result": "The current study improves upon previous work by preserving enhancer length and binding site positions in deletion constructs, using the native hb promoter, employing quantitative imaging, and isolating HbP2 from other enhancers in a reporter system.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C44, C46-C47 describe important methodological improvements that strengthen the study's conclusions. The comparison to previous work is fair and the advantages of the current approach are clearly articulated. These methodological advances enable more rigorous quantitative analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C74",
+      "C76",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Cofactors are candidates for implementing higher-order cooperativity or energy dissipation through direct or indirect mechanisms. Cofactor-mediated cooperativity may explain rapid regulatory DNA evolution, as it allows integration of dispersed binding sites without requiring direct TF-TF contacts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C74, C76, C78-C80 propose broader implications and evolutionary hypotheses. While the role of cofactors in shaping GRFs is supported by experimental data, the specific mechanisms (C74) and evolutionary implications (C78-C80) are speculative. The consistency with in vitro data (C76) provides some support but is not definitive.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C5",
+      "C69",
+      "C70",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "The bacterial view of transcription regulation dominated by pairwise TF interactions must be reexamined in animals. Coupling quantitative measurements to biophysical models, as demonstrated here in Drosophila, can reveal fundamental differences between bacterial and animal transcription and will enable prediction and engineering of enhancer activities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C69-C70, C81-C86 place the work in broader context and discuss methodological approaches. The conclusion that animal transcription differs fundamentally from bacterial systems (C5, C85) is well-supported by the experimental results. The discussion of methodological approaches (C81-C84) appropriately cites relevant work, though future applications (C86) are speculative.",
+    "result_type": "MAJOR"
+  }
+]

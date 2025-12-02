@@ -1,0 +1,373 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9"
+    ],
+    "result": "Background claims establish that Shigella causes significant global disease burden, particularly in children, with symptoms including inflammatory diarrhea and bloody stool. Despite low infectious doses in humans (10-100 CFU), mice are naturally resistant to oral Shigella challenge. Shigella pathogenesis involves invasion and replication in intestinal epithelial cells via a T3SS and IcsA-mediated actin-based motility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C9 are all supported by appropriate citations to prior literature and represent well-established background knowledge about Shigella epidemiology, pathogenesis, and species-specific susceptibility. These claims provide necessary context for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "The NAIP-NLRC4 inflammasome is activated by Shigella T3SS components (MxiH and MxiI), leading to CASP1 activation, cytokine processing, pyroptosis, and expulsion of infected intestinal epithelial cells. In macrophages, inflammasome-mediated pyroptosis is generally thought to promote Shigella pathogenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C14 are well-supported by citations to prior work establishing the molecular mechanisms of NAIP-NLRC4 inflammasome activation and its known roles in both IECs and macrophages. These provide essential mechanistic background for the study's hypothesis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Shigella appears to suppress the human NAIP-NLRC4 inflammasome. While WT Shigella induces CASP1-dependent cell death in mouse cells that is NLRC4-dependent, human THP1 cells show NLRC4-independent cell death upon Shigella infection. NeedleTox (LFn-MxiH) can activate human NAIP-NLRC4, but prior WT Shigella infection specifically suppresses this activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C17-C25 present intriguing data suggesting Shigella suppresses human NAIP-NLRC4, but the evidence has limitations. The use of colchicine-treated AIM2-/- THP1 cells (C22-C23) to isolate NAIP-NLRC4 activity is indirect, and the suppression assay (C23) shows reduction but not complete ablation. The authors acknowledge (C25) this is preliminary and requires future mechanistic studies. The conclusion of species-specific suppression is plausible but not definitively proven.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "Antibiotic pretreatment enables Shigella colonization of the mouse intestinal lumen, but WT mice and Casp1/11-/- mice remain resistant to disease despite high bacterial loads, indicating that neither CASP1 nor CASP11 alone are essential for resistance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C29 are supported by data in Figure 2 and supplements showing that antibiotic treatment allows colonization but not disease in WT or Casp1/11-/- mice. The inference that these caspases are not essential is logical given the resistance phenotype, though the possibility of redundancy with other pathways is appropriately noted.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "B6.\u0394Naip mice, but not WT mice, develop severe shigellosis upon oral Shigella infection, including altered stool consistency, cecum shrinkage, tissue thickening, edema, epithelial hyperplasia, inflammatory infiltrate, and dramatically increased fecal MPO, indicating robust neutrophilic inflammation consistent with human disease.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C35 are strongly supported by comprehensive data in Figure 2 showing multiple disease parameters exclusively in \u0394Naip mice. The histological analysis (C31), MPO measurements (C33), and appropriate controls with avirulent BS103 strain (C32) provide robust evidence. The inference that this recapitulates human shigellosis (C35) is reasonable given the neutrophilic infiltrate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "B6.Nlrc4-/- mice phenocopy the disease susceptibility of B6.\u0394Naip mice, exhibiting intestinal mucosa thickening, cecum shrinkage, increased fecal MPO, weight loss, and diarrhea. This strongly suggests the NAIP-NLRC4 inflammasome mediates mouse resistance to Shigella infection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C39 are well-supported by Figure 3 data showing consistent disease phenotypes in Nlrc4-/- mice that match \u0394Naip mice. The use of littermate and co-housed controls (C36) strengthens the findings by controlling for microbiome effects. The inference that NAIP-NLRC4 mediates resistance (C39) is strongly supported by the genetic evidence from two independent knockout models.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C40",
+      "C41"
+    ],
+    "result": "In Shigella-infected mice, IL-18 levels are similarly elevated in both Nlrc4+ and Nlrc4-/- mice, while IL-1\u03b2 and KC levels are significantly elevated specifically in Nlrc4-/- mice, consistent with neutrophilic inflammation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C41 are supported by ELISA data in Figure 3F. The differential cytokine profiles suggest NLRC4-independent IL-18 production but NLRC4-dependent control of IL-1\u03b2 and KC, which aligns with the observed neutrophilic inflammation. Statistical significance is shown for the relevant comparisons.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Despite clear disease differences, whole tissue bacterial burdens are similar between Nlrc4+ and Nlrc4-/- mice. However, IEC-enriched fractions show ~20-fold higher bacterial burdens in Nlrc4-/- mice, indicating that disease correlates with IEC invasion and replication rather than overall tissue colonization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C45 are supported by CFU data in Figure 3G-H. The IEC enrichment protocol provides a more specific measure of epithelial colonization, and the dramatic difference (C43) despite similar whole tissue burdens (C42) is compelling. The inference that disease correlates with IEC invasion (C44-C45) is logical, though the enrichment method may not perfectly isolate IECs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "129.Nlrc4-/- mice exhibit severe shigellosis including edema, epithelial hyperplasia, cecum shrinkage, diarrhea, 8-18% weight loss, and massive fecal MPO increases. Similar to B6 mice, whole tissue bacterial burdens are comparable between genotypes, but IECs from 129.Nlrc4-/- mice show ~20-fold higher bacterial burdens.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C51 are supported by comprehensive data in Figure 4A-H. The 129 background replicates the B6 findings, strengthening the conclusion that NAIP-NLRC4 deficiency causes susceptibility across genetic backgrounds. The consistency of the ~20-fold IEC colonization difference (C51) with B6 results (C43) is particularly compelling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "129.Nlrc4-/- mice develop bloody stool (dysentery), with 4/5 mice showing occult blood in one experiment and 80% (8/10) showing bloody stool in a subsequent experiment, recapitulating a hallmark of severe human shigellosis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C54 are supported by data in Figure 4I-J showing occult and macroscopic blood in feces of 129.Nlrc4-/- but not B6.Nlrc4-/- mice. The reproducibility across experiments and the specificity to the 129 background (which lacks Casp11) is notable. This represents a key advance in modeling human disease, though the mechanism for the background-specific difference requires further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C55",
+      "C56"
+    ],
+    "result": "IEC-specific expression of NLRC4 (in Vil1-Cre+ iNlrc4 mice) is sufficient to protect mice from Shigella-induced intestinal inflammation to a similar extent as Nlrc4+/- controls, demonstrating that epithelial NLRC4 alone can prevent shigellosis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C56 are supported by data in Figure 5B-F showing protection in Vil1-Cre+ iNlrc4 mice but not Cre- littermates. This is a critical experiment demonstrating cell-type-specific sufficiency. The use of littermate controls and comparison to Nlrc4+/- mice strengthens the conclusion. This establishes that IEC-intrinsic NLRC4 is sufficient for protection.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Ex vivo IEC organoid monolayer infections show that WT Shigella cannot be recovered from WT IECs but replicates in Nlrc4-/- IECs. The icsA mutant shows reduced colonization consistent with impaired cell-to-cell spread. Immunostaining reveals intracellular replication and actin tail formation exclusively in Nlrc4-/- IECs, faithfully recapitulating in vivo differences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C62 are supported by data in Figure 6A-B. The organoid system provides a clean ex vivo model that recapitulates the in vivo phenotype. The CFU data (C57-C59) and immunofluorescence (C60) provide complementary evidence. The inference that Shigella virulence factors are functional in mouse cells when NAIP-NLRC4 is absent (C62) is well-supported and addresses a key question about species specificity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Confocal microscopy of infected IEC monolayers shows more PI-positive cells in WT versus Nlrc4-/- cultures, with PI-positive cells positioned significantly above the monolayer in WT cultures, suggesting that NAIP-NLRC4 prevents Shigella invasion by coordinating expulsion of infected IECs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C65 are supported by quantitative microscopy data in Figure 6C-E. The increased cell death (C63) and elevated z-position (C64) in WT cultures provide direct evidence for cell expulsion. The inference about the mechanism (C65) is supported by these data and prior work (Rauch et al., 2017), though the causal relationship could be further strengthened with additional mechanistic experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "129.Nlrc4-/- mice infected with WT Shigella exhibit weight loss, diarrhea, increased fecal MPO, and bloody stool that peaks at 2-3 days and resolves by ~7 days, consistent with human disease progression. In contrast, icsA mutant infection causes no weight loss, diarrhea, or blood, though mild MPO elevation occurs, suggesting icsA-dependent cell-to-cell spread drives severe disease.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C70 are supported by longitudinal data in Figure 7A-D. The time course of disease and resolution (C67) matches human shigellosis. The icsA mutant phenotype (C68-C69) demonstrates the importance of bacterial spread, with the mild MPO increase suggesting initial colonization can trigger some inflammation. The inference about cell-to-cell spread driving severe disease (C70) is well-supported and consistent with human studies cited.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Dose-response experiments show that all inocula (2\u00d710\u2074 to 2\u00d710\u2076 CFU) result in similar lumenal colonization (>10\u2078 CFU/g feces) by days 1-2, suggesting rapid expansion from small populations. Disease is fully penetrant in Nlrc4-/- mice at all doses tested, with delayed MPO kinetics at lower doses suggesting dose correlates with disease onset. IEC colonization shows 100-fold differences between genotypes regardless of dose, with disease fully penetrant at 2\u00d710\u2074 CFU.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C78 are supported by dose-response data in Figure 8. The similar lumenal colonization regardless of inoculum (C71) supports the inference of rapid expansion (C72). The consistent disease in Nlrc4-/- mice across doses (C73) with delayed kinetics at lower doses (C74-C75) is well-documented. The IEC colonization data (C76-C77) reinforces that epithelial invasion, not lumenal burden, determines disease. The conclusion about the infectious dose (C78) is reasonable though the comparison to human doses should be interpreted cautiously given the antibiotic pretreatment requirement.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "The authors conclude that the NAIP-NLRC4 inflammasome is a species-specific barrier to Shigella invasion of intestinal epithelium, and that NAIP-NLRC4-deficient mice provide the first physiologically relevant mouse model of bacillary dysentery, recapitulating key features of human shigellosis including IEC invasion, inflammatory disease, and bloody diarrhea.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C81 represent the main conclusions of the study. These are well-supported by the comprehensive data showing: (1) species-specific differences in inflammasome activation (C17-C25), (2) susceptibility of NAIP-NLRC4-deficient mice across genetic backgrounds (C30-C54), (3) IEC-specific sufficiency (C55-C56), (4) correlation with IEC invasion (C42-C45), and (5) recapitulation of human disease features including bloody diarrhea (C52-C54). The model represents a significant advance despite requiring antibiotic pretreatment.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "The authors acknowledge that even genetically susceptible mice require antibiotic pretreatment to allow Shigella colonization, though this is common in enteric infection models. They note that S. sonnei encodes a type VI secretion system for interbacterial competition, suggesting microbiome interactions may be important selective pressures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C84 are appropriately supported by citations and represent honest discussion of model limitations. The speculation about interbacterial interactions (C85) is reasonable given the cited evidence about type VI secretion systems, though it remains speculative regarding its role in species-specific colonization resistance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "The authors note that human experimental infections show variable disease outcomes even at high doses (39% at 100 CFU, 64% resistant at 10\u2075-10\u2078 CFU), and that rapid bacterial expansion in antibiotic-treated mice suggests a threshold dose for infection establishment beyond which inoculum size may be less important.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C87 are supported by appropriate citations to human challenge studies. The observation of rapid expansion (C88) is supported by the dose-response data (C71). The speculation about a threshold dose (C89) is reasonable given the data, though it remains speculative and would benefit from additional experiments to define this threshold more precisely.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "The authors propose that Shigella has evolved to inhibit/evade human NAIP-NLRC4 to limit IEC death, and that NAIP-NLRC4 plays a critical role in host defense by restricting Shigella replication in IECs through cell expulsion. They conclude that epithelial inflammasomes coordinate expulsion of infected IECs as a general defense strategy, similar to Salmonella.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The speculation about Shigella evolution (C90) is reasonable given the suppression data (C22-C25) though mechanistic details are lacking. The conclusion about NAIP-NLRC4's role in restricting replication (C91) is well-supported by IEC colonization data (C43, C51). The organoid data (C92) and expulsion evidence (C63-C65) support the mechanism (C93). The comparison to Salmonella (C94-C95) is appropriately cited and suggests a conserved defense mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C96"
+    ],
+    "result": "Elevated IL-1\u03b2 and KC in Nlrc4-/- mice suggest Shigella may encounter multiple inflammasomes at different infection stages with opposing consequences for bacterial replication and pathogenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C96 is a reasonable inference from the cytokine data (C41) showing elevated pro-inflammatory cytokines in Nlrc4-/- mice. This suggests other inflammasomes (possibly in macrophages) may be active and contribute to pathogenesis when NAIP-NLRC4 is absent. The speculation about opposing consequences is logical though not directly tested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "Bloody diarrhea occurs only in 129.Nlrc4-/- mice, which naturally lack Casp11. The authors speculate both NAIP-NLRC4 and CASP11 may mediate IEC protection, though they note these inflammasomes are not strictly redundant since B6 NAIP-NLRC4-deficient (CASP11+) mice are susceptible and Casp1/11-/- mice are resistant.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C98 are factual observations supported by the data and literature. The speculation about dual protection (C99) is reasonable given the background-specific phenotype, though the authors appropriately note (C100) that the genetic evidence suggests non-redundancy. The resistance of Casp1/11-/- mice (C28) is puzzling and suggests complex interactions that require further investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C101",
+      "C102"
+    ],
+    "result": "IEC-expressed CASP4 protects against other human bacterial pathogens, and the finding that Shigella suppresses human NAIP-NLRC4 implies inflammasome evasion/antagonism is a general virulence strategy during human infections.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C101 is supported by appropriate citations. The inference about general virulence strategy (C102) is reasonable given the suppression data (C22-C25) and the known role of OspC3 in antagonizing CASP4 (C15), though the mechanism of NAIP-NLRC4 suppression remains to be elucidated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "There is no licensed Shigella vaccine and limited knowledge of protective immune responses. NAIP-NLRC4-deficient mice clear the attenuated icsA strain (derivatives of which are in human vaccine trials), demonstrating the model's readiness for testing Shigella therapeutics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C104 are supported by appropriate citations. The observation that icsA mutants are cleared (C105) is supported by Figure 7 data showing no disease with this strain. The statement about vaccine trials (C106) is appropriately cited. The inference about model utility is reasonable, though actual vaccine testing would be needed to fully validate this claim.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C107"
+    ],
+    "result": "The authors conclude that their results provide a striking example of how inflammasomes provide an important species-specific barrier against infection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C107 is a well-supported conclusion given the comprehensive evidence for species-specific differences in susceptibility linked to NAIP-NLRC4 function. The data showing apparent suppression in human cells (C19-C25), susceptibility of mouse knockouts (C30-C54), and IEC-specific protection (C55-C56) collectively support this broad conclusion about species-specific immunity.",
+    "result_type": "MAJOR"
+  }
+]

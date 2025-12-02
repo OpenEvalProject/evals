@@ -1,0 +1,390 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "The study employed an MEG-based experimental design where 18 participants (after exclusions) performed a 4-alternative forced-choice word comprehension task on sentences presented either acoustically (with background noise) or visually (lip reading). Behavioral performance was approximately 70% correct in both conditions with no significant difference between modalities, though visual performance showed greater inter-individual variability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C28 and C101-C108 collectively describe a well-designed experiment with appropriate controls (noise added to equalize performance), adequate sample size (n=18 for MEG), and clear behavioral outcomes. The statistical comparison (t(19)=-0.42, p=0.68) appropriately demonstrates no performance difference between conditions, validating the experimental manipulation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C29",
+      "C30"
+    ],
+    "result": "Representational similarity analysis revealed that participants' behavioral responses were influenced by both semantic and phonological features in both auditory and visual conditions, with phonological features showing stronger influence than semantic features in both modalities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C30 report results from an exploratory RSA analysis with appropriate statistical testing (repeated-measures ANOVA and post-hoc Wilcoxon tests). However, the authors acknowledge the limited number of word identities (n=9 in two categories) precludes strong conclusions about the relationship between these features and brain activity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Multivariate classification of MEG source activity revealed that auditory speech was represented bilaterally in fronto-temporal areas (with significant lateralization), while visual speech was represented in bilateral occipital areas and left parietal/frontal regions. Regions representing word identity overlapped in middle/inferior temporal gyrus, postcentral/supramarginal gyri, and left inferior frontal gyrus, though Bayes factor analysis showed substantial evidence for modality differences in sensory cortices and evidence for no difference in some overlap regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C38 describe stimulus classification results using appropriate methods (LCMV beamformer, searchlight analysis, cluster-based permutation testing at p<0.001 FWE). The combination of frequentist and Bayesian statistics strengthens the conclusions. Classification performance (~10% above chance) is consistent with similar neuroimaging studies. The lateralization analysis provides additional rigor.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Neurobehavioral analysis revealed that auditory comprehension was driven by five distinct clusters (left ITG, IFG, MOG, right SMA, right AG) while visual comprehension was driven by four clusters (left IFG, right STG, SFG, AG). Critically, these perception-relevant representations did not overlap, though some occurred in adjacent regions in IFG and AG. Bayes factor analysis showed substantial evidence for modality specialization in auditory-predictive regions but not in visual-predictive regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C45 describe neurobehavioral prediction results using regularized logistic regression linking single-trial neural representations to behavior. The analysis is methodologically sound with appropriate corrections (p<0.05 FWE). The lack of overlap between auditory and visual comprehension-relevant regions is a key finding, though the authors appropriately note this analysis is primarily driven by correctly encoded trials due to the 4-AFC design.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "Cross-classification analysis found no evidence for significant cross-classification between auditory and visual conditions at the whole-brain level, with Bayes factors providing substantial evidence for no cross-classification. However, significant cross-classification was found between unisensory and multisensory (audiovisual) conditions in temporal and occipital regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C48 report cross-decoding results using appropriate statistical methods. The negative result (no cross-classification between auditory and visual) is strengthened by Bayes factor analysis showing evidence for the null hypothesis. The positive control (successful cross-classification with audiovisual condition) demonstrates the method can detect cross-modal representations when present.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Brain regions where sensory representations shape speech comprehension are mostly distinct from those allowing best prediction of the actual stimulus. Only limited regions (parts of left ITG for auditory, right STG for visual, and left IFG for both) showed both high stimulus classification and a driving role for comprehension. Regression analysis found no consistent relationship between stimulus classification performance and neurobehavioral weights across all grid points.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C52 describe a critical dissociation between stimulus encoding and behavioral relevance, supported by within-participant robust regression analysis. The statistical results (auditory: b=0.05\u00b10.11, t(17)=0.50, pFDR=0.81; visual: b=0.03\u00b10.11, t(14)=0.25, pFDR=0.81) and Bayes factors (bf10=0.27 for both) provide strong evidence for no consistent relationship. This is a key conceptual finding of the paper.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C53",
+      "C54"
+    ],
+    "result": "Stimulus classification performance was not significantly correlated with behavioral performance across participants, with Bayes factors confirming substantial evidence for no correlation in the large majority of brain regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C54 report negative correlation results (all ps>0.11) strengthened by Bayes factor analysis. This finding complements the within-participant regression analysis and supports the conclusion that strong stimulus encoding does not necessarily predict behavioral performance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "The cerebral representations of auditory and visual speech are mediated by both modality-specific and overlapping representations. While several parietal, temporal, and frontal regions encoded both acoustically and visually conveyed word identities, comprehension in both modalities was driven mostly by distinct networks. Only the inferior frontal and anterior angular gyrus contained adjacent regions contributing to both auditory and visual comprehension, suggesting cerebral representations encoding word identities may be more modality-specific than often upheld.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C5 and C55-C60 represent the main conclusions of the paper, synthesizing results from stimulus classification and neurobehavioral analyses. These conclusions are well-supported by the convergent evidence from multiple analyses (classification, neurobehavioral prediction, cross-decoding, Bayes factors). The distinction between stimulus-driven and comprehension-relevant representations is a key conceptual advance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Middle occipital and posterior angular representations specifically drive auditory comprehension, while superior frontal and temporal regions are engaged in lip reading (though without strong evidence for modality preference). None of the comprehension-relevant regions was strictly lateralized.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C63 describe specific regional findings from the neurobehavioral analysis. The lateralization analysis (all pFDR\u22650.15) appropriately shows no strict lateralization. The finding of occipital involvement in auditory comprehension is unexpected but supported by the data and discussed in relation to top-down attention mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "The inability to cross-classify auditory and visual speech from local activity supports the conclusion that the nature of local representations of acoustic and visual speech is relatively distinct. The activity patterns by which auditory and visual speech are encoded may be partly distinct, even within regions that represent both acoustically and visually mediated word information.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C66 draw appropriate inferences from the cross-classification results. The interpretation that local activity could encode words using distinct activity patterns for different modalities is reasonable, though C65 is appropriately marked as speculative. The conclusion is strengthened by the Bayes factor evidence for no cross-classification.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "The segregation of comprehension-relevant auditory and visual representations provides a possible neural explanation for the behavioral finding that auditory/verbal skills and visual lip reading are uncorrelated in normal-hearing adults, and that lip reading skills are unrelated to reading abilities in the typical adult population.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C70 connect the neural findings to established behavioral literature (cited appropriately). The neural dissociation observed in the study provides a plausible mechanistic explanation for the behavioral dissociations reported in prior work. However, this remains an inference rather than a direct demonstration of the link.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Visual speech comprehension is mediated by parietal and inferior frontal regions that likely contribute to both auditory and visual speech comprehension, but also engage superior temporal and superior frontal regions. The results support a route of visual speech into auditory cortical and temporal regions but provide no evidence for an overlap of speech representations in the temporal lobe that would facilitate both lip-reading and acoustic speech comprehension.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C77 synthesize findings about visual speech processing. The conclusions are supported by the neurobehavioral analysis showing IFG and anterior angular gyrus involvement in both modalities. The contrast with Hickok et al. (2018) is appropriate, though the authors acknowledge their results cannot directly address multisensory integration.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "Acoustic comprehension was related to occipital brain activity. This unexpected finding is interpreted as potentially reflecting top-down semantic information entering occipital regions that would encode lip-movement trajectories in multisensory contexts, facilitated by attention to maximize task performance. The lack of cross-classification suggests this top-down representation differs from that induced by direct lip-movement information.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C82-C86 describe an unexpected finding (occipital activity during auditory comprehension) with a speculative interpretation. While C82 is supported by the data (Figure 3), the mechanistic explanation in C85 is explicitly speculative and supported only by citations to related work. The inference in C86 is reasonable but indirect. This interpretation requires further validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "Brain regions allowing sub-optimal read-out of the actual stimulus are predictive of perceptual outcome, whereas areas allowing the best read-out do not necessarily predict behavior. This dissociation between stimulus encoding and behavioral prediction is emerging in several recent studies and suggests that networks mediating speech comprehension cannot be understood by mapping speech representations during passive perception or task performance without analysis geared toward revealing perception-relevant representations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C92 articulate a key conceptual contribution of the paper, supported by the dissociation between stimulus classification and neurobehavioral prediction results. The conclusion is strengthened by citations to converging evidence from other recent studies. This represents an important methodological and conceptual advance for the field.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C93",
+      "C94"
+    ],
+    "result": "Classification performance was highly significant and reached about 10% above chance level, consistent with other neuroimaging studies. By design, the neurobehavioral analysis was primarily driven by trials in which brain activity encoded the sensory stimulus correctly.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C94 acknowledge important methodological considerations. C93 appropriately contextualizes the classification performance with citations. C94 transparently acknowledges a limitation of the 4-AFC design - the analysis cannot specifically link incorrect stimulus encoding with behavior. This is an important caveat for interpreting the neurobehavioral results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "The specific task imposed may shape the behavioral relevance of local sensory representations. Studies showing perceptual relevance of optimally encoding neurons used tasks dependent on low-level features, while studies showing behavioral relevance of high-level regions relied on high-level information. This suggests that discussion of relevant networks underlying speech perception should always be task-focused, with predictions that changing task demands would shift the perceptual relevance of different brain regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C100 discuss task-dependence of neural representations, supported by appropriate citations. While C98-C99 are speculative predictions, they are reasonable extrapolations from the current findings and cited literature. The conclusion in C100 is an important conceptual point about interpreting neural mechanisms of perception.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "MEG source reconstruction was performed using standard methods (LCMV beamformer, 6mm grid spacing, 6490 cortical grid points). Multivariate classification used spatial searchlights (1.2cm radius, typically 31 neighbors) on 500ms windows of activity following target word onset, rebinned at 20ms resolution. A correlation-based nearest-neighbor classifier was selected after testing multiple classifiers, with linear classifiers chosen for interpretability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C119 describe the methodological pipeline with appropriate detail and citations. The choice of parameters (spatial smoothing, temporal binning, searchlight size, classifier type) is justified by testing alternatives and citing relevant literature. The methods are standard for MEG source analysis and multivariate classification.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125"
+    ],
+    "result": "Neurobehavioral analysis quantified the relationship between single-trial representational distances (within-target minus between-target correlations) and behavioral performance using regularized logistic regression. Phonological and semantic distances were computed using standard tools. Statistical analysis used cluster-based permutation testing with appropriate corrections (FWE p=0.001 for stimulus classification, p<0.05 for neurobehavioral analysis).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C120-C125 describe the neurobehavioral analysis methods with appropriate detail and citations. The use of representational distance as a link between neural activity and behavior is well-established. The statistical methods (cluster-based permutation, FWE correction) are appropriate for the multiple comparisons problem in whole-brain analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C1",
+      "C2"
+    ],
+    "result": "Visual speech carried by lip movements is an integral part of communication, yet it remains unclear to what extent visual and acoustic speech comprehension are mediated by the same brain regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2 establish the background and motivation for the study. C1 is a well-established fact about communication. C2 accurately identifies a gap in current understanding that the study addresses. These claims appropriately frame the research question.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "Prior literature establishes that visual speech provides redundant and complementary information to acoustic cues and enhances intelligibility in noise, yet behavioral studies show auditory and visual speech comprehension are uncorrelated with high inter-individual variability in lip reading. Neuroimaging studies have suggested convergence of acoustic and visual speech in specific brain regions, though alternative accounts propose largely distinct representations. Recent work emphasizes distinguishing stimulus-driven activity from activity contributing to perception.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C23 comprehensively review relevant prior literature with appropriate citations. The review accurately characterizes the tension between behavioral dissociation and proposed neural convergence, setting up the study's contribution. The emphasis on distinguishing stimulus encoding from perceptual relevance (C19-C23) establishes the methodological framework.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C67",
+      "C71"
+    ],
+    "result": "The widespread stimulus classification may capture processes related to attention or motor preparation rather than specific word representations. Visual speech may activate many regions unspecifically without engaging specific semantic or lexical representations, possibly due to attentional engagement or feedback.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C67 and C71 offer speculative interpretations of widespread activation patterns. While supported by citations to related work, these remain alternative explanations that are not directly tested in the current study. The authors appropriately present these as possibilities rather than conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Previous work has implicated the IFG and anterior angular gyrus in visual facilitation of auditory speech-in-noise perception and lip-reading. Behavioral studies show lip-reading drives improvement of speech perception in noise, suggesting these regions may be central for hearing in noisy environments. These regions resemble the left-lateralized dorsal pathway activated in deaf signers viewing signed verbs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C81 connect the current findings to prior literature with appropriate citations. The inference in C80 about the role of these regions in noisy environments is reasonable given the cited behavioral work, though it extends beyond the current data. The comparison to sign language processing (C81) is interesting but remains speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C72",
+      "C73"
+    ],
+    "result": "Prior studies show auditory cortical areas are equally activated by visual words and pseudo-words, and demonstrate cross-modal activations in early sensory regions for simplistic stimuli.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C73 cite relevant prior work supporting the interpretation that visual speech may activate auditory regions non-specifically. These citations appropriately support the discussion of why widespread activation may not reflect specific word representations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "At the single neuron level, some studies propose only optimally encoding neurons drive behavior, while others suggest sensory information and choice-predictive information can be decoupled across neurons. The intersection of brain activity predictive of stimulus and choice is difficult to quantify for high-dimensional data due to computational costs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C89 review relevant theoretical and methodological literature with appropriate citations. These claims establish the conceptual framework for understanding the dissociation between stimulus encoding and behavioral prediction observed in the current study.",
+    "result_type": "MINOR"
+  }
+]

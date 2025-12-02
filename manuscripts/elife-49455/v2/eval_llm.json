@@ -1,0 +1,320 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C4",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C56"
+    ],
+    "result": "The authors developed a method to study mature Drosophila oocyte aging by controlling follicle development through nutrient manipulation. Feeding virgin females yeast paste for 24 hours stimulates exactly two follicles per ovariole to mature, and withdrawal of yeast prevents additional follicles from developing while maintaining oocyte and maternal physiology. Stored oocytes show reproducible, temperature-dependent sigmoidal decay in developmental capacity over 1-4 weeks, with loss of function correlating with storage duration but not maternal age.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C53 and C56 collectively establish a well-controlled experimental system with reproducible aging kinetics. The method is supported by microscopy data (Figure 1B), hatch rate measurements (Figure 1D), protein content analysis (Figure 1E), and maternal age controls (Figure 1F). The sigmoidal decay curves at different temperatures provide quantitative characterization of the aging process.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C23",
+      "C57",
+      "C58",
+      "C59",
+      "C102",
+      "C103"
+    ],
+    "result": "Stored mature Drosophila oocytes are transcriptionally inactive and maintain stable mRNA levels during aging. Total mRNA levels and composition remain unchanged between 2 and 12 days of storage at 25\u00b0C, as measured by spike-in normalized mRNA-seq showing high correlation (R\u00b2=0.97) between timepoints. This stability indicates that mRNA degradation is not responsible for the loss of oocyte function during aging.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C6, C23, C57-C59, C102-C103 are well-supported by mRNA-seq data with D. pseudoobscura spike-in controls (Figure 2A, 2B). The use of spike-in normalization allows absolute quantification, and the high correlation between timepoints provides strong evidence for mRNA stability. The conclusion that mRNA decline does not drive functional decay is logically sound given the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C60",
+      "C61",
+      "C62",
+      "C104",
+      "C110"
+    ],
+    "result": "Translation declines progressively during oocyte storage, with bulk translation reduced to 59% and 43% of initial levels at 8 and 12 days respectively, representing a 2.3-fold overall decline. This decline in translational efficiency correlates with loss of oocyte developmental capacity. The reduction in translation was validated using an R-GFP reporter system, which showed ~30% decrease in nascent protein levels in aged oocytes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C8, C60-C62, C104, C110 are strongly supported by ribosome profiling data with spike-in controls (Figure 2C, 2D) and independent validation using the R-GFP reporter (Figure 2F). The correlation between translation decline and functional decay is demonstrated across multiple timepoints. The R-GFP validation provides orthogonal evidence that reduced ribosome footprints reflect decreased translation initiation rather than increased elongation rates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "The decline in translation during oocyte aging is global and affects all classes of genes, including those involved in spindle assembly, meiotic/mitotic spindle organization, chaperone-dependent protein folding, electron transport chain, and mRNA binding proteins. This occurs in the absence of bulk changes to mRNA levels and is not due to premature egg activation, as genes upregulated at embryogenesis (CycB, CycA, bora) do not increase in aged oocytes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C42, C63-C66 are supported by comprehensive ribosome profiling and mRNA-seq data (Figures 2D, 3A, 3B, 3C, Supplementary file 1). The global nature of the decline is demonstrated by volcano plots and GO analysis. The control showing no premature activation (C64) strengthens the interpretation that this is a general aging phenomenon rather than developmental progression.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C79",
+      "C80"
+    ],
+    "result": "A small subset of 243 genes (6% of oocyte mRNAs) are preferentially translated during oocyte arrest compared to early embryos, despite overall lower translation in oocytes. These 'pilot light genes' are enriched for cell cycle-related processes including mitotic cell cycle, spindle organization, and DNA repair. Notable examples include small heat shock proteins Hsp26 and Hsp27, and kinetochore/spindle assembly checkpoint genes (Ndc80, Nek2, Zw10, gnu, mos).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C70, C79-C80 are supported by ribosome profiling comparisons between oocytes and embryos with spike-in controls (Figure 4A, 4B, Supplementary file 2) and GO analysis (Figure 4D, 4E). The identification of pilot light genes is methodologically sound, using quantitative comparisons of translation levels normalized for total translation differences between developmental stages.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Small heat shock proteins Hsp26 and Hsp27 are important for oocyte survival during prolonged storage. Homozygous deletion of these genes (Df(sHSP)) causes accelerated loss of developmental capacity during storage compared to wild-type. These proteins are induced in stage 10 egg chambers before oocyte maturation, suggesting developmental preparation for prolonged arrest.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C76 are supported by genetic analysis showing accelerated aging in Df(sHSP) mutants (Figure 4C), immunostaining showing developmental induction (Figure 4\u2014figure supplement 1B), and ribosome profiling data. The genetic evidence provides functional validation of the importance of these pilot light genes, though the mechanism of protection remains unclear.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C39",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "Meiotic spindle defects increase progressively during oocyte storage. Normal bipolar spindles predominate during the first week, but by day 13, many spindles show abnormalities including tripolar, unipolar, and fragmented morphologies. The proportion of oocytes with bipolar spindles correlates strikingly with the fraction able to support development to hatching, and the observed defects resemble those seen in mutants of spindle maintenance genes whose translation declined during aging.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C10, C39, C82-C85 are strongly supported by microscopy data using \u03b1-tubulin-GFP (Figure 5A-D) and quantitative correlation analysis (Figure 5E). The correlation between spindle morphology and developmental capacity (C85) provides compelling evidence that spindle defects are a primary cause of oocyte failure. The connection to genes with declining translation (C84) is inferential but well-reasoned.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C11",
+      "C38",
+      "C40",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "Embryos from stored oocytes fail to develop due to chromosome segregation errors during meiotic and early mitotic divisions, leading to lethal aneuploidy. Embryos from aged oocytes show a bimodal distribution: some develop normally to stages 8-12, while others arrest during pre-blastoderm cleavage divisions. By 17 days of storage, almost all embryos arrest at pre-blastoderm stages, indicating that completing meiosis successfully becomes the major factor limiting oocyte viability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11, C38, C40, C86-C94 are supported by developmental staging analysis (Figure 5J) and microscopy of chromosome segregation errors (Figure 5F-I). The bimodal distribution of developmental outcomes and the correlation between storage duration and pre-blastoderm arrest provide strong evidence that meiotic/mitotic defects cause embryonic lethality. However, direct demonstration of aneuploidy (e.g., by chromosome counting) would strengthen the conclusion that aneuploidy is the specific cause.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C12",
+      "C43",
+      "C124"
+    ],
+    "result": "Meiotic chromosome segregation in mature Drosophila oocytes is uniquely sensitive to prolonged storage. Storage of highly functional mature oocytes in vivo is sufficient to destabilize chromosome segregation, suggesting that defects arising during storage of fully grown oocytes have been under-appreciated as a source of meiotic and early embryonic mitotic instability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12, C43, C124 represent major conclusions drawn from the collective experimental evidence on spindle defects, translation decline, and developmental failure. These conclusions are well-supported by the data, though the claim of 'unique sensitivity' (C12) is somewhat overstated as comparative data from other systems is limited. The conclusion that storage-related defects have been under-appreciated (C124) is a reasonable inference.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C13",
+      "C44",
+      "C128",
+      "C129"
+    ],
+    "result": "The authors suggest that chromosome instability in human embryos could be mitigated by reducing the storage period of mature oocytes prior to ovulation. They propose that a significant fraction of human chromosome instability may be caused by the duration of late storage rather than defects at the primordial follicle stage, implying that intervention may be more feasible than previously believed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C13, C44, C128-C129 are speculative extrapolations from Drosophila to human biology. While the Drosophila findings are robust, the relevance to human oocyte biology is uncertain. The authors acknowledge (C127) that insufficient data exists on the duration and consequences of mature oocyte storage in mammals. These claims represent interesting hypotheses but lack direct supporting evidence in mammalian systems.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C111",
+      "C114",
+      "C118"
+    ],
+    "result": "The authors propose several potential mechanisms for translation decline and its consequences. Translation may decline due to mRNA damage, ribosome changes, RNP granule dysfunction, or alterations in trans-acting factors. They suggest that dose-sensitive spindle genes affected by 2-fold expression changes could explain spindle instability, and hypothesize that P bodies and stress granules may preserve stored mRNAs by decreasing aggregation or damage, though specialized stabilization mechanisms must exist.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C105-C107, C111, C114, C118 are mechanistic hypotheses not directly tested in this study. While these are reasonable speculations based on the data and prior knowledge, they remain uncertain without experimental validation. The connection between dose-sensitive genes and spindle defects (C106-C107) is inferential, and the proposed roles of P bodies and mRNA stabilization mechanisms (C114, C118) are hypothetical.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C131",
+      "C132"
+    ],
+    "result": "The ribosome profiling experiments were highly reproducible, and the D. pseudoobscura spike-in method was validated by showing that 97% of potential 30mer footprints from top translated genes contained at least one polymorphism distinguishing D. melanogaster from D. pseudoobscura sequences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C131-C132 are supported by replicate correlation data (Figure 2\u2014figure supplement 1A-F) and sequence analysis. The high reproducibility and validation of the spike-in approach strengthen confidence in the quantitative translation measurements throughout the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C81"
+    ],
+    "result": "The translation of putative pilot light genes declined during aging slightly more than bulk translation as a whole.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C81 is supported by data in Figure 4\u2014figure supplement 2A,B. This finding indicates that even genes preferentially translated in oocytes are subject to the general decline in translational efficiency, though the biological significance of the slightly greater decline is unclear.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C45",
+      "C54",
+      "C55",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C108",
+      "C109",
+      "C112",
+      "C113",
+      "C115",
+      "C116",
+      "C117",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C125",
+      "C127",
+      "C130"
+    ],
+    "result": "The manuscript includes extensive background knowledge and established facts about oocyte biology, meiosis, chromosome segregation, mRNA stability, and reproductive biology in various organisms. These claims provide context for the experimental work but do not represent new findings from this study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C1-C2, C14-C35, C45, C54-C55, C96-C100, C108-C109, C112-C113, C115-C117, C119-C123, C125, C127, C130) are primarily citations of prior work or statements of established knowledge. They are appropriately referenced and provide necessary context, but are not novel results from this manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C95",
+      "C101"
+    ],
+    "result": "The authors present their Drosophila oocyte storage system as a tractable model for studying oocyte aging, mRNA maintenance, and the limits of cellular mechanisms that maintain oocyte function. They suggest this system can provide insights into why some species like humans cannot maintain functional oocytes throughout adulthood, and can be used to study mRNA preservation mechanisms relevant to oocytes, neurons, and sperm.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C37, C95, C101 describe the utility and potential applications of the experimental system. These are reasonable assertions supported by the demonstrated reproducibility and tractability of the system, though the broader claims about providing insights into human fertility (C95) and mRNA maintenance mechanisms (C101) represent future potential rather than current findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C77",
+      "C78"
+    ],
+    "result": "The manuscript notes that small heat shock proteins are highly expressed during yeast meiosis, suggesting potential conserved function during gametogenesis, and cites prior work showing that Fmr1 is required for oocyte maintenance and that dhd is required for sperm protamine removal.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C72, C77-C78 are appropriately cited references to prior work that provide context for the pilot light gene findings. The suggestion of conserved function (C72) is speculative but reasonable given the expression patterns.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C126"
+    ],
+    "result": "The authors infer that during the period of transcriptional inactivity in mammalian oocytes, oocytes would be largely or entirely dependent on their existing mRNA pool, similar to stored Drosophila mature oocytes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C126 is a reasonable inference based on the parallel between Drosophila and mammalian oocyte biology regarding transcriptional inactivity. This inference is illustrated in the model (Figure 6) and is logically sound, though direct experimental evidence in mammalian systems is lacking.",
+    "result_type": "MINOR"
+  }
+]

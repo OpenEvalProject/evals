@@ -1,0 +1,1862 @@
+{
+  "submission": {
+    "id": "6e184a98-a3c5-43f7-b80a-a2ab914887b5",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T07:59:06.212170Z",
+    "updated_at": "2025-12-02T07:59:06.212170Z"
+  },
+  "content": [
+    {
+      "id": "2042951b-bc93-46a4-bcb6-985d44624800",
+      "submission_id": "6e184a98-a3c5-43f7-b80a-a2ab914887b5",
+      "content_type": "manuscript",
+      "content_text": "# The elemental mechanism of transcriptional pausing\n\n## Authors\n\n- Jason Saba<sup>1</sup> ([ORCID: 0000-0001-7273-2970](https://orcid.org/0000-0001-7273-2970))\n- Xien Yu Chua<sup>1</sup> ([ORCID: 0000-0003-2455-9493](https://orcid.org/0000-0003-2455-9493))\n- Tatiana V Mishanina<sup>1</sup>\n- Dhananjaya Nayak<sup>1</sup>\n- Tricia A Windgassen<sup>1</sup>\n- Rachel Anne Mooney<sup>1</sup>\n- Robert Landick<sup>1</sup> ([ORCID: 0000-0002-5042-0383](https://orcid.org/0000-0002-5042-0383)) \u2020\n\n### Affiliations\n\n1. Department of Biochemistry University of Wisconsin-Madison Madison United States\n2. Department of Bacteriology University of Wisconsin-Madison Madison United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nTranscriptional pausing underlies regulation of cellular RNA biogenesis. A consensus pause sequence that acts on RNA polymerases (RNAPs) from bacteria to mammals halts RNAP in an elemental paused state from which longer-lived pauses can arise. Although the structural foundations of pauses prolonged by backtracking or nascent RNA hairpins are recognized, the fundamental mechanism of the elemental pause is less well-defined. Here we report a mechanistic dissection that establishes the elemental pause signal (i) is multipartite; (ii) causes a modest conformational shift that puts \u03b3-proteobacterial RNAP in an off-pathway state in which template base loading but not RNA translocation is inhibited; and (iii) allows RNAP to enter pretranslocated and one-base-pair backtracked states easily even though the half-translocated state observed in paused cryo-EM structures rate-limits pause escape. Our findings provide a mechanistic basis for the elemental pause and a framework to understand how pausing is modulated by sequence, cellular conditions, and regulators.\n\n## Introduction\n\nDuring the first step in gene expression, transcription by RNA polymerase (RNAP) at\u00a0~30 nt/s or faster is interrupted by\u00a0\u22651 s pause events every 100\u2013200 bp (Landick, 2006; Larson et al., 2014; Chen et al., 2015). These pauses underlie diverse mechanisms that regulate gene expression in both prokaryotes and eukaryotes (Figure 1A), including attenuation, antitermination, and promoter-proximal pausing (Jonkers and Lis, 2015; Zhang and Landick, 2016; Mayer et al., 2017). Pausing also couples transcription to translation in bacteria or to mRNA splicing in eukaryotes (Landick et al., 1985; Proshkin et al., 2010; Mayer et al., 2017); defines temporal and positional windows for binding of small molecules, regulatory proteins, or regulatory RNAs to the nascent RNA transcript (Wickiser et al., 2005; Artsimovitch and Landick, 2002); mediates nascent RNA folding (Pan et al., 1999; Pan and Sosnick, 2006; Steinert et al., 2017); and enables termination (Gusarov and Nudler, 1999; Proudfoot, 2016). Conversely, RNA folding and the interactions of cellular molecules and complexes (e.g., ribosomes) with the elongating transcription complex (EC) modulate pausing (Toulokhonov et al., 2001; Artsimovitch and Landick, 2002; Yakhnin et al., 2016; Zhang and Landick, 2016). Despite its crucial role in cellular information processing, the biophysical mechanism of pausing remains incompletely defined.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/40981/elife-40981-fig1-v2.jpg)\n\n**Figure 1.:** (A) The simplest elemental pause kinetic scheme and the biological roles of pausing. (B) Model of RNAP active site during the normal nucleotide addition cycle (green) consisting of RNA-DNA translocation, NTP substrate binding, active-site closing and NTP alignment (mediated by the trigger loop [TL] and bridge helix [BH]), phosphoryl transfer (catalysis), and PPi release. Catalysis is reversible when PPi remains present. Pausing (red) occurs when altered RNAP-DNA-RNA interactions create a barrier to completion of translocation that blocks entry of the next template nucleotide into the active site, creating the elemental pause state. The elemental pause state can rearrange further into backtracked or hairpin-stabilized pauses depending on other RNA-DNA sequences. (C) Central region of the RNA:DNA scaffold used for pause assays (complete scaffold is in Figure 1\u2014figure supplement 1A). The \u221211U mismatch substitution was used to test possible contributions of backtracking (see panels J and K). (D) Pause assay and kinetic scheme consistent with biphasic pause escape intermediates. (E) Example of pause assay products separated by denaturing gel electrophoresis (radiolabeled by 32P-G16 incorporation; C17 is the pause RNA). (F) Observed levels of C17 RNA as a function of time in a simple elemental pause assay at 37\u00b0C and 100 \u00b5M GTP. Pause fractions (f) and apparent escape rates (k) are shown for the pause and slow pause species. (G) Effect of delayed addition of 10 \u00b5M or 100 \u00b5M GTP after formation of C17 PECs. Additional data documenting the offline elemental pause states are in Figure 1\u2014figure supplement 1B\u2013G and Figure 1\u2014figure supplement 2. (H) Effect of GreA (1 \u00b5M) on elemental pausing at 10 \u00b5M GTP. The dotted lines indicate the rates of 2-nt or 3-nt cleavage in the presence of GreA based on appearance of cleavage products (see panel I). (I) Rate of appearance of GreA-induced cleavage products during pause assay in panel H. (see Figure 1\u2014figure supplement 3A,B,C,D for measurements of GreA/B cleavage rates and effects on pausing). (J) Rates of intrinsic cleavage of C17 halted ePECs matched with pause assays shown in panel (K). The \u221211U substitution reduced intrinsic cleavage in the \u22121 backtrack register by a factor of\u00a0>50 (see Figure 1\u2014figure supplement 3E,F for measurement of intrinsic cleavage rates). (K) Effect of \u221211 U mismatch on the elemental pause at 100 \u00b5M GTP with pause prone-RNAP.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/40981/elife-40981-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) The complete consensus elemental pause scaffold (ntDNA #9563, tDNA #8334, RNA #8342; Supplementary file 1), identical to that used in Larson et al. (2014), except the template and nontemplate DNA strands are fully complementary (the noncomplementary, nontemplate strand bases in the Larson et al. scaffold are indicated in purple; ntDNA #8333). (B) Pause RNA as a function of time and kinetic fractions for three different RNAP preparations. (C) Effect of GTP concentration on partition of C17 between bypass and pause states in experiments also reported in Larson et al. (2014). (D) The pause scaffold defined by Bochkareva et al. (2012) (black; ntDNA #8195, tDNA #8196, RNA, #7974; Supplementary file 1) and the 10 bp downstream duplex extension to move the duplex end outside the RNAP footprint (purple on gray background; black; ntDNA #8289, tDNA #8196). Steps in a minimal pause assay and the constrained offline pause pathway (red) are shown on the right. (E) Estimation of pause fractions and apparent pause escape rates at 10 mM ATP for the Bochkareva et al. scaffold with (long) and without (short) the additional 10 bp downstream duplex. (F) Best fit by numerical integration and residuals for on-pathway (unbranched) and off-line mechanisms for the consensus ePEC scaffold (panel A) at 10 mM GTP. The fits shown were calculated using the average of data from three experimental repeats, including error (SD) in the fitting. The residuals were calculating by performing individual fits to the three replicate datasets and then averaging and calculating SD for the residuals for each fit. The sinusoidally varying residuals for the unbranched mechanism vs. their random and within-error variation for the branched mechanism establishes that pausing occurs by the branched mechanism. (G) Best fit by numerical integration and residuals for on-pathway (unbranched) and off-line (distinct pause species at C15) mechanisms for the Bochkareva et al. (2012) ePEC scaffold (panel B) at 10 mM ATP. The fits and residuals were calculated as described for panel E, except that data from six experimental repeats were used, and by the same reasoning establish that pausing occurs by the branched mechanism.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/40981/elife-40981-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (B) Pause assays on single or tandem consensus pause scaffold (Single Pause; left time course) or Tandem Pause Scaffold (right time course). Transcription was initiated by addition of NTPs to 100 \u00b5M each ATP, UTP, and CTP, and 10 \u00b5M GTP. The gel image is representative of triplicate assays. (C) Quantitation of the C17 pause band (P1) on the single or tandem pause scaffold. (D) Tandem scaffold pause P2 fit to a kinetic model with a single pause species (constant EC fraction in slow pause, SP, state). The fit was calculated by first modeling the arrival of ECs at the second pause, plotted as escape from the region before the pause (red line). This flux of ECs arriving at the second pause was subjected to least-squares fitting using numerical integration to a model of pausing involving only a single pause species. Residuals show the difference between the actual and predicted P2 pause RNA amounts. (E) Tandem scaffold pause P2 fit to a kinetic model with two pause species (EC resets so SP reforms at second site). Fitting was conducted as described for panel E, except the pause model included two pause species, with a slow pause arising from the faster pause.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/40981/elife-40981-fig1-figsupp3-v2.jpg)\n\n**Figure 1\u2014figure supplement 3.:** Fast extension of ECsU14-G16 and fast interchange of half-translocated, pre-translocated, frayed, and 1 bp backtracked ePECs enables generation of 2-nt cleavage products even when the half-translocated ePEC (in which the block to pause escape is manifest) is the predominant species. Observed rates of GreA cleavage and intrinsic cleavage are indicated in green (from panels D and F). (B) Pause assays to test the effect of Gre factors. The RNA was 3\u2032 end-labeled with 10 \u00b5M [\u03b1-32P]GTP (constant specific activity throughout the experiment; * indicates 32P label). Transcription was initiated by addition of NTPs (final concentration of 100 \u00b5M CTP, 100 \u00b5M UTP, \u2013 or\u00a0+Gre factors (1 \u00b5M final of each), as indicated). The gel image is representative of results obtained in at least triplicate assays. (C) Quantitation of pause fraction in B as a function of time. Error bars are SD of at least triplicates. (D) Quantitation of cleavage products in B as a function of time. Error bars are SD of at least triplicates. Cleavage rates too slow to measure (<0.005 s\u22121) are indicated in the table as dashes. (E) Intrinsic exo- and endonuclease activity on consensus pause scaffolds with \u221211G or \u221211U RNA (related to Figure 1J,K). After forming ECs and 3\u2032-end labeling with [\u03b1-32P]CMP, the ECs were simultaneously used for pause assays (Figure 1K) and the intrinsic cleavage assays shown here. See Materials\u00a0and\u00a0methods for experimental details. (F) Quantitation of cleavage products in panel E as a function of time. The data were fitted to a double-exponential function. The rate constants for the major kinetic fractions are shown in the inset table.\n\nMultiple pause mechanisms exist, but most pauses that mediate gene regulation are triggered initially by sequence-specific interactions of DNA and RNA with RNAP. An increasingly accepted view is that these initial interactions interrupt the nucleotide addition cycle by promoting entry of RNAP into a state termed the elemental pause (Landick, 2006), creating an elemental paused elongation complex (ePEC; Figure 1B). The ePEC can then rearrange into long-lived pause states by backtracking (reverse translocation of RNA and DNA), by pause hairpin (PH) formation in the RNA exit channel that alters RNAP conformation (at least in bacteria), or by interactions of diffusible regulators with the ePEC. Recent cryoEM structures of artificially assembled PECs suggest the ePEC is half-translocated with a tilted RNA\u2013DNA hybrid, meaning that the RNA but not the DNA is translocated and the next template base is still sequestered in the downstream DNA duplex (Kang et al., 2018a; Guo et al., 2018; Vos et al., 2018). The hairpin-stabilized PEC is additionally inhibited by a rotation of the swivel module (including the clamp, shelf, and SI3) that inhibits trigger-loop folding (Kang et al., 2018a; Guo et al., 2018).\n\nHigh-throughput sequencing of nascent RNAs from bacteria (NET-seq) reveals a consensus elemental pause sequence conserved among diverse bacterial RNAPs and mammalian RNAPII whose effects on pausing in vitro are consistent with a block in template DNA translocation sometimes accompanied by modest backtracking (Larson et al., 2014; Vvedenskaya et al., 2014; Imashimizu et al., 2015). Although earlier work establishes contributions of multiple pause signal components (upstream RNA, RNA\u2013DNA hybrid, downstream fork junction, and downstream DNA) to hairpin-stabilized pausing (Chan and Landick, 1993; Wang et al., 1995; Chan et al., 1997), the definition of the consensus elemental pause signal has varied and it is unknown if the discrete components affect a common step in the elemental pause mechanism.\n\nAdditionally, questions remain about the structure and properties of the ePEC. A longstanding debate is whether the ePEC is an on-pathway state unable to translocate DNA or RNA in a largely unchanged RNAP due to the thermodynamic properties of the RNA\u2013DNA scaffold (i.e., a pretranslocated pause; Bai et al., 2004; Bochkareva et al., 2012) or if it represents an offline state generated by conformational rearrangement of RNAP that forms in kinetic competition with the on-pathway steps (Landick, 2006; Herbert et al., 2006; Kireeva and Kashlev, 2009; Imashimizu et al., 2013; Kang et al., 2018a). Uncertainty also exists as to whether the elemental pause is non-backtracked (Landick, 2006; Herbert et al., 2006; Kireeva and Kashlev, 2009; Kang et al., 2018a) or must be backtracked one or more registers (Dangkulwanich et al., 2013; Forde et al., 2002; Galburt et al., 2007; Mejia et al., 2015; Tadigotla et al., 2006; \u00d3 Maoil\u00e9idigh et al., 2011).\n\nTo address these questions, we combined kinetic analyses of pausing using elemental pause sequence variants or mutant RNAPs with precise structural probes of translocation, trigger-loop folding, and clamp conformation. Our results lead us to propose a multistate model of elemental pausing in which template-base loading in a half-translocated offline intermediate limits pause escape.\n\n## Results\n\n### The ePEC is an offline state formed in a branched kinetic mechanism\n\nTo probe the elemental pause mechanism, we used kinetic analyses of ECs reconstituted on a synthetic RNA-DNA scaffold encoding a consensus elemental pause sequence (Figure 1C and Figure 1\u2014figure supplement 1A; Larson et al., 2014). We first asked if the pause signal always causes ECs to bifurcate into paused and rapidly elongating (bypass) fractions. We measured C17 pause RNA as a function of time when radiolabeled G16 ECs were extended with 100 \u00b5M each CTP and GTP (Figure 1D,E,F). Most ECs (80% at 37\u00b0C) entered a paused state (lifetime 5 s; a, Figure 1D,F), whereas some ECs (20%) transcribed past C17 rapidly (lifetime 0.1 s; bypass, Figure 1D,F). Invariably, a minor ePEC population (typically 15%) escaped more slowly (lifetime 100 s; b, Figure 1D,F), requiring double-exponential fitting of the escape rate. Pause bypass was evident from y-intercepts\u00a0<1 in the double-exponentials fits (Figure 1F). Interestingly, the amounts of slow ePEC and bypass fractions varied among RNAP preparations (Figure 1\u2014figure supplement 1B). This kinetic malleability of ePECs differed from the reproducible kinetics typically observed for hairpin-stabilized pauses like the hisPEC (Toulokhonov et al., 2001; Kyzer et al., 2007; Kang et al., 2018a).\n\nTo confirm that the ePEC is an offline state formed in competition with bypass nucleotide addition (i.e., in a branched kinetic mechanism; Figure 1D), we performed three additional tests. First, we asked whether the fraction of ECs entering the ePEC state increased if GTP (the NTP required for pause escape) were withheld to allow more time for ePEC formation. Unlike for the hairpin-stabilized hisPEC (Toulokhonov et al., 2007), halting ECs at C17 for 15 s before GTP addition did not change the 10\u201320% EC that bypassed the pause (Figure 1G). However, the bypass fraction was shifted from\u00a0~22% at 100 \u00b5M GTP to\u00a0~7% at 10 \u00b5M GTP, suggesting that GTP can affect a partition between the on-pathway EC and offline elemental pause state. Second, using data from Larson et al., 2014, we found that the bypass fraction varied but appeared to plateau at high GTP (Figure 1\u2014figure supplement 1C). Because extrapolation of bypass from bi-exponential fits is an approximation, we next used numerical integration of rate equations as a third test to ask if reaction progress curves are better fit by an unbranched or branched kinetic mechanism at saturating GTP (10 mM; Figure 1\u2014figure supplement 1A,F; Materials\u00a0and\u00a0methods). The unbranched (on-pathway pause) mechanism did not fit the data well, thus favoring a branched mechanism (Figure 1\u2014figure supplement 1F).\n\nWe also used kinetic modeling to reexamine the proposed on-pathway pausing reported by Bochkareva et al., 2012. Using their optimal pause scaffold sequence, we replicated the reported high-efficiency pausing (Figure 1\u2014figure supplement 1D,E). However, this scaffold positions the downstream DNA end (+17) within RNAP, so that forward translocation reduces downstream DNA-RNAP interaction. Consistent with a prior finding that downstream DNA truncation increases pausing (Kyzer et al., 2007), pause bypass was readily detected when the downstream DNA end was positioned outside RNAP as in natural ECs (Figure 1\u2014figure supplement 1D,E). This result highlights why highly efficient pauses, even if they isomerize to an offline state, may appear to be on-pathway when bypass falls below\u00a0~5%. We confirmed the branched kinetic pause mechanism on the Bochkareva et al. scaffold at saturating GTP by kinetic modeling (Figure 1\u2014figure supplement 1G). In agreement with most prior ensemble (Kassavetis and Chamberlin, 1981; Kyzer et al., 2007; Toulokhonov et al., 2007; Strobel and Roberts, 2015) and single-molecule (Herbert et al., 2006; Larson et al., 2014; Gabizon et al., 2018) analyses of pausing, we conclude that the elemental pause is an offline state that forms in competition with on-pathway nucleotide addition (i.e., in a branched kinetic mechanism).\n\n### The consensus ePEC readily backtracks by one bp but reversal of one-bp backtracking does not limit the rate of pause escape\n\nThe existence of a minor, variable, slowly escaping ePEC population has been a consistent and puzzling feature of pause assays using synthetic scaffolds (Figure 1F). We wondered if the slow pause population could be explained by backtracking, an EC conformational change, or a subpopulation of chemically altered RNAP. Variation of the slow ePEC fraction among RNAP preparations (Figure 1\u2014figure supplement 1B) seemed to favor a chemically altered subpopulation. We found that absence of neither the \u03c9 subunit nor the \u03b1CTDs changed the slow ePEC fraction (not shown). More definitively, transcription through tandem consensus pause sequences revealed formation of the slow fraction from all RNAPs arriving at the second pause site rather than a chemically altered, slow subpopulation of RNAP that would be filtered out by the first pause site (Figure 1\u2014figure supplement 2).\n\nWe next used GreA- or GreB-induced cleavage to ask if the minor slow ePEC fraction was backtracked. Either or both GreA or GreB had little effect on pause lifetimes, even though 2-nt cleavage products, indicative of a 1 bp backtracked state, appeared much faster than the rate of ePEC escape and 3-nt cleavage products, indicative of a 2 bp backtracked state, were detectable (Figure 1H,I; Figure 1\u2014figure supplement 3B,D). Thus, even though the scaffold structure disfavors\u00a0\u22652 bp backtracking due to a \u201312 rU\u2013dG mismatch, ePECs may shift from the 1 bp backtracked state to\u00a0\u22652 bp backtracked states, at least in the presence of GreA, GreB, or both. We next tested the effect on both pausing and intrinsic cleavage of a \u221211rU-dC mismatch that would disfavor even 1 bp backtracking using an RNAP that formed a high level of slow fraction (Figure 1C,K,J; Figure 1\u2014figure supplement 3E,F). The \u221211rU-dC mismatch virtually eliminated\u00a0\u22652 nt cleavage indicative of backtracking, reduced 1-nt cleavage indicative of the pretranslocated register, and modestly decreased the slow pause fraction.\n\nThe relative ease with which ePECs entered backtracked registers is notable given the half-translocated state observed in ePEC cryo-EM structures (Kang et al., 2018a; Guo et al., 2018; Vos et al., 2018). Backtracking of ePECs is detectable both in vivo and in vitro (Larson et al., 2014; Imashimizu et al., 2015), but the half-translocated or pretranslocated states appears to be predominant (Figure 1J; Larson et al., 2014). Our GreA/B and intrinsic cleavage results establish that slow escape from a 1 bp backtrack state explains neither the major nor the minor pause fractions even though the 1 bp backtrack state is accessible. A parsimonious explanation is that the ePEC readily equilibrates among several active-site states, including half-translocated, pretranslocated, and backtracked, with the half-translocated state being the dominant species in which the kinetic block to pause escape is manifest. The slow pause state may be backtracked by\u00a0\u22652 bp (since 0.007 s\u22121 3-nt cleavage is close to the 0.002 s\u22121 escape rate; Figure 1H,I), but its persistence in the \u221211U mutant suggests other changes to the ePEC must also contribute (see Discussion).\n\n### The elemental pause signal is multipartite\n\nAvailable NET-seq data have been interpreted to suggest an elemental pause signal involving just the upstream fork-junction (usFJ) and downstream fork-junction (dsFJ) sequences or a multipartite signal that additionally depends on the hybrid (Hyb) and downstream DNA (dsDNA) sequences (Larson et al., 2014; Vvedenskaya et al., 2014; Imashimizu et al., 2015). To test the proposed roles of Hyb and dsDNA sequences and additionally to ask if the different pause signal elements combine additively to define a single energetic barrier to pause escape, as observed for the hairpin-stabilized his pause signal (Wang et al., 1995; Chan et al., 1997), we analyzed effects on pausing of substitutions in each element separately and in combination (Figure 2A,B).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/40981/elife-40981-fig2-v2.jpg)\n\n**Figure 2.:** (A,B) The consensus ePEC. The ePEC structure (pdb 6bjs; Kang et al., 2018a) is shown above the consensus pause sequence (Larson et al., 2014) color-coded as usFJ (blue), Hyb (red), dsFJ (green), and dsDNA (purple). Scaffold substitutions tested for effects on pausing are shown below the location of the changes. (C) Two-component pause mechanism, equations used to calculate pause efficiencies and pause strengths, and example plot of pause assay data. The pause assay data shown are for the \u2018wild-type\u2019 (unsubstituted) consensus pause scaffold at 37\u00b0C and 10 \u00b5M GTP. Pause fractions (fast fraction a, slow fraction b) and escape rates k-p,app and k-sp,app were obtained by nonlinear regression using a double-exponential equation (see Materials and methods). (D) Plot of pause strength (PSP) vs. bypass for each scaffold variant. Combinations are indicated by \u2018+\u201d (e.g., usFJ\u00a0+\u00a0Hyb). The magenta brackets show the predicted range of PSP values (95% confidence interval) for combinations of substitutions in individual pause signal elements assuming the pause signal elements additively and independently affect a single energy barrier to pause escape (additive effects on \u2206G\u2021 are multiplicative in PSP). Additional data for the wild-type and mutant pause signals are in Figure 2\u2014figure supplement 1.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/40981/elife-40981-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** All pause assays were performed with the same RNAP preparation. (B) Plot of fast species lifetime (1/k-p, app) vs. slow species life (1/k-sp, app) for each scaffold variant. The high positive correlation between the two species rates is consistent with a model in which a single kinetic barrier limits escape from either pause species. (C) Summary table of pause strength (PS), efficiency (E), fast species fraction (Ea), slow species fraction (Eb), fast species rate (k-p, app), and slow species rate (k-sp, app).\n\nWe measured pause lifetimes and the bypass, pause, and slow pause fractions using two-exponential fits of C17 RNA vs. time at 10 \u00b5M GTP (Figure 2C; Figure 2\u2014figure supplement 1A). Because a translocation barrier would affect both pause formation and escape, we plotted pause strength (PS; pause efficiency times the lifetime [\u03c4] of the major pause species) vs. pause bypass fraction (Figure 2D). Alone, the usFJ, dsFJ, and dsDNA mutants reduced PS by a factor of\u00a0~5, whereas the Hyb mutant decreased PS by a factor or\u00a0~1.4 fold (but see larger effects in Bochkareva et al., 2012). Combinations of mutants produced additive effects on pause strength (Figure 2D, magenta brackets; additive effects on an energy barrier are multiplicative in \u03c4 or PS; e.g., reduction of PS by factors of 1.4 and 3.7 for the Hyb and dsDNA substitutions predicts a combined reduction by a factor of 5.1 vs. the factor of 5.2 observed). Additive effects are expected if pause signal components independently affect the same energetic barrier to pause escape (e.g., translocation of the template base).\n\nThe lifetimes of the major and minor pause states were highly correlated for the pause-sequence variants (Figure 2\u2014figure supplement 1B). In contrast, the slow pause fraction (Eb; Figure 2\u2014figure supplement 1C) was uncorrelated with the major pause escape rate (k-spapp), the major pause fraction (Ea), and the total ePEC fraction (E). These results are consistent with a model in which both the major pause species and the minor, slowly escaping pause species pass through a common barrier for pause escape (e.g., template-base loading). The significant variation in the amount of slow pause species provides additional evidence that the slow species arises by kinetic partitioning of a single RNAP population and not from a chemically distinct \u2018slow\u2019 subpopulation of RNAP.\n\nWe conclude that the elemental pause signal is indeed multipartite with significant contributions from sequences in the usFJ, Hyb, dsFJ, and dsDNA to a common kinetic barrier to escape from multiple paused states.\n\n### Hybrid translocation is not rate-limiting for elemental pause escape\n\nTo ask if the barrier to elemental pause escape corresponds to the half-translocated intermediate identified by cryoEM (Kang et al., 2018a; Guo et al., 2018), we next tested for ePEC translocation at the usFJ and dsFJ using a fluorescence-based translocation assay developed by Belogurov and co-workers (Figures 3A and 4A; Malinen et al., 2012). In this assay, the fluorescent guanine analog 6-methylisoxanthopterin (6-MI) is located in the template DNA (usFJ) or nontemplate DNA (dsFJ) such that an adjacent guanine unstacks from 6-MI upon translocation of the hybrid or the dsDNA; this unstacking increases 6-MI fluorescence (Figure 3A). We compared translocation of the hybrid or the dsDNA leading to increased 6-MI fluorescence on ePEC scaffolds to a control scaffold previously found to translocate rapidly upon 3\u2032-CMP addition (Figure 3B; Malinen et al., 2012; Hein et al., 2014). Because both the control and ePEC scaffold encode C as the RNA 3\u2032 nucleotide and G as the next nucleotide after translocation (Figures 3B,C and and 4A,B), differences in their behavior can be attributed to the usFJ, Hyb, and dsDNA. To calibrate the 6-MI signal change from the posttranslocated hybrid, we compared the effects of CMP, 3\u2032dCMP, or 2\u2032dCMP (Figure 3D\u2013F). A 3\u2032deoxy ribonucleotide shifts the hybrid toward the pretranslocated register, whereas a 2\u2032deoxy ribonucleotide shifts the hybrid toward the posttranslocated register (Malinen et al., 2012). For both scaffolds, 2\u2032dCMP gave a 6-MI signal increase comparable to CMP, whereas 3\u2032dCMP reduced the signal increase. These results suggested that addition of CMP shifts both hybrids toward the posttranslocated register, although the absolute fluorescence change for the ePEC scaffold was about half that of the control scaffold. Rapid-quench and stopped-flow kinetic measurements revealed that CMP added rapidly (~300 s\u22121) followed by a rapid (~200 s\u22121) rise in fluorescence signal indicating translocation on both scaffolds. In contrast, subsequent extension to G18 of the ePEC but not the control EC was slow (~0.2 s\u22121 vs. 40 s\u22121; Figure 3D,E).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/40981/elife-40981-fig3-v2.jpg)\n\n**Figure 3.:** (A) Scheme for translocation following CTP addition to control EC or ePEC scaffolds. The locations of 6-MI for both usFJ and dsFJ probes are indicated, but a probe was present in only one location in the scaffolds used (see panels B and C and Figure 4A and B). 6-MI is a GMP base analog that fluoresces unless quenched by stacking with an adjacent GMP. (B and C) Scaffolds used to reconstitute control EC and ePEC for fluorescence experiments. M, position of 6-MI. Full scaffold sequences and additional data characterizing pause behaviors of these scaffolds are in Figure 3\u2014figure supplement 1 and Figure 3\u2014figure supplement 2. (D) Equilibrium fluorescence changes (blue bars) upon addition of incoming NTP or NTP analog to the non-pausing EC scaffold measured at 37\u00b0C. Nucleotide addition (orange and green traces) and translocation (blue trace) rates were determined using KinTek quenched-flow (RQF-3) or stopped-flow (SF-300X) instruments, respectively. C17+\u00a0represents the fraction of RNA at or beyond C17. G18+\u00a0represents the fraction of RNA at or beyond G18. 6-MI fluorescence was normalized to that observed after 2\u2032dCMP addition to G16. (E) Experiments performed as in D but on an ePEC scaffold. (F) Data from (D) and (E). Mean times for CMP addition, translocation, and subsequent GMP addition for the ePEC and control EC. (G,H) Pause kinetics at 100 \u00b5M GTP for the 6-MI-containing ePEC scaffolds (G), us6MI; (H), ds6MI) compared to the consensus pause scaffold. f, kinetic fractions. k, rate constants for pause fractions.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/40981/elife-40981-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Full sequences of oligonucleotides are given in Supplementary file 1. 6-MI is present at the locations indicated in Figures 3 and 4.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/40981/elife-40981-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** (A) Experimental schematic for the assay of translocation and nucleotide addition. (B) Nucleotide addition for samples used in translocation assays of usFJ 6MI complexes (EC, left; ePEC, right). Percentages above extension lanes indicate the fraction of RNA extended (vs. the prediction of 50% based on reconstitution ratios). Error is range for n\u00a0=\u00a02 or SD for n\u00a0\u2265\u00a03. (C) Nucleotide addition for samples used in translocation assays of dsFJ 6MI complexes (EC, left; ePEC, right). Percentages above extension lanes indicate the fraction of RNA extended (vs. the prediction of 50% based on reconstitution ratios). Error is range for n\u00a0=\u00a02 or SD for n\u00a0\u2265\u00a03.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/40981/elife-40981-fig4-v2.jpg)\n\n**Figure 4.:** (A and B) Scaffolds used to reconstitute control EC and ePEC for fluorescence experiments. M, position of 6-MI. (C and D) Equilibrium fluorescence changes of control EC and ePEC, respectively, upon reaction with NTP or NTP analog or binding of GTP to 3\u2032deoxyC-containing complexes. RNA extension was verified by quantifying radiolabeled RNAs (see Figure 3\u2014figure supplement 2). Inset, GTP-binding curve fit for the 3\u2032dC17 EC (black line) and the 3\u2032dC-ePEC (dotted red line; no binding evident). Error bars are SD of triplicate measurements.\n\nBecause the 6-MI and \u201310 substitutions in the ePEC scaffold could affect pausing, we verified that the 6-MI ePEC scaffold produced pause fractions (~85%) and lifetimes similar to the unmodified consensus scaffold (Figure 3G,H). Thus, the ePEC fluorescence signal could not be explained by the\u00a0~15% bypass fraction and must have arisen in significant part from the paused species. We also verified that CMP addition occurred fully in the fluorescence assay (Figure 3\u2014figure supplement 2). We conclude that the ePEC hybrid translocates rapidly after CMP addition, resembling the control scaffold. The reduced level of unquenching (~50% of the control scaffold) could reflect lower 6-MI fluorescence in a half-translocated hybrid, since the ePEC cryoEM structure suggests \u201310 dC (vs. \u201310 dG in the assay scaffold) remains at least partially paired in the hybrid with an altered interaction with the lid (Kang et al., 2018a). Alternatively, \u201310 dG may unstack in our assay at 37\u00b0C but the pretranslocated and half-translocated hybrids may be in dynamic equilibrium (consistent with intrinsic hydrolysis readout; Figure 1J). These results also confirm that most ePECs are not backtracked, which would not unquench 6-MI (Figure 1I and Figure 1\u2014figure supplement 3). Together the data are fully consistent with a view that the ePEC, once formed, may easily fluctuate among multiple translocation states.\n\n### Downstream DNA translocation is rate-limiting for elemental pause escape\n\nTo test whether dsDNA fails to translocate in the ePEC (as predicted from the ePEC structure), we used an ePEC scaffold for which translocation of the\u00a0+1 dC\u2013dG bp would generate a\u00a0+2 6-MI fluorescence signal (+1 dG would shift into an RNAP pocket that aids pause escape; Vvedenskaya et al., 2014). Placement of a dT\u2013dA bp at\u00a0+3 was necessary to generate a strong\u00a0+2 6-MI signal. The changes needed for the 6-MI assay weakened the elemental pause signal but still allowed ECs to enter the pause state (Figure 3H), possibly to greater extent prior to GTP addition (e.g., see effect of GTP in Figure 1G). For the control scaffold, addition of CMP or 2\u2032dCMP or extension with CTP\u00a0+\u00a0GTP to G19 gave a large 6-MI signal indicating translocation after C17 nucleotide addition (Figure 4C). In contrast, the ePEC scaffold gave minimal 6-MI signal after CMP or 2\u2032dCMP addition (consistent with translocation in only a bypass fraction) compared to extension to G19, which produced a strong 6-MI signal (Figure 4D). These data confirm that the dsDNA in the ePEC does not translocate. Since the dsDNA in the ePEC did not translocate, we used GTP binding to 3\u2032dCMP-ePEC and control 3\u2032dCMP-EC to assess translocation propensity. For the control EC, a clear increase in 6-MI signal was evident as GTP bound in the active site with apparent Kd \u2248 400 \u00b5M (Figure 4D, inset). This signal, which was reduced by interference from the high levels of GTP present, indicated that the post-translocated register was stabilized by GTP binding to the control EC (Figure 4C; Malinen et al., 2014). However, even a high GTP concentration was unable to shift the 3\u2032dC17 ePEC to the post-translocated register (Figure 4D). We conclude that even the weakened elemental pause signal in the dsFJ ePEC assay scaffold prevented dsDNA translocation and thus template-base loading. Taken together, the usFJ and dsFJ 6-MI data confirm that the half-translocated state detected in ePEC cryoEM structure also forms in actively transcribing complexes, and that template-base loading is the relevant barrier to nucleotide addition in the ePEC.\n\n### NTP binding rather than TL folding limits escape from the elemental pause\n\nAs a second approach to interrogate the status of the RNAP active site in the ePEC, we tested the effect of the consensus pause sequence on formation of disulfide bonds between Cys substitutions engineered to report TL conformation (Cys-pair reporters, CPRs; Nayak et al., 2013). Previous studies established that a \u03b2\u2032 937 Cys substitution in the trigger helix near the active site crosslinks efficiently to a Cys substitution at \u03b2\u2032 736 when the trigger helices formed (folded CPR, F937-736; Figure 5A). Other CPRs (P937-687, U937-1135, or U937-1139) report the partially folded (P) or unfolded (U) conformations of the TL (Figure 5A). The CPRs are sensitive to TL conformation when oxidized by cystamine (CSSC) because the CPR disulfide competes with formation of mixed disulfides (Figure 5B). These CPRs combined with other probes and a cryoEM structure revealed that the hairpin-stabilized hisPEC fails to add the next nucleotide because it forms a swiveled PEC conformation that inhibits TL folding (Hein et al., 2014; Nayak et al., 2013; Kang et al., 2018a). In contrast, the ePEC, whose cryoEM structure is not swiveled, did not exhibit constraints on TL conformation (compare to control EC; Figure 5C,D,E). If anything, the ePEC accessed the folded TH conformation more readily than did the control EC, consistent with ePEC access to the pretranslocated register (Figure 1J) that is thought to increase TL folding (Malinen et al., 2014; Liu et al., 2016). Thus, inhibition of TL folding does not appear to limit escape from the elemental pause.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/40981/elife-40981-fig5-v2.jpg)\n\n**Figure 5.:** Scaffolds used for these experiments are shown in Figure 5\u2014figure supplement 1. (A) Location of F937-736, P937-687, U937-1137, and U937-1139 Cys-pair reporters to test various conformations of the TL. The SI3 domain inserted in the EcoRNAP TL is not shown. A complete description of these reporters is published elsewhere (Nayak et al., 2013; Windgassen et al., 2014). (B) Example CPR reaction showing SDS-PAGE mobility of uncrosslinked and crosslinked \u03b2\u2032 as a function of redox potential generated by increasing concentrations of cystamine. Reaction scheme for crosslink generation by cystamine. (C) Fraction crosslink formed by CPRs for the EC, ePEC, and hairpin-stabilized hisPEC in which TL mobility is restricted. Data are mean\u00a0\u00b1\u00a0range from two replicates. (D) Ratio of crosslinks to the U1135 crosslink. A high ratio indicates a greater degree of crosslinking (E) F937-736 crosslink as a function of GTP or ATP concentration in 3\u2032dC- or 3\u2032dU-containing EC, ePEC, and hisPEC. (F) P937-687 crosslink as a function of GTP or ATP concentration in 3\u2032dC- or 3\u2032dU-containing EC, ePEC, and hisPEC.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/40981/elife-40981-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** Full sequences of oligonucleotides are given in Supplementary file 1. (A\u2013C) For experiments on RNA 3\u2032 OH-containing EC and PECs (Figure 5B\u2013D), the full-length RNAs were used. For experiments on 3\u2032deoxyEC and 3\u2032deoxyPECs (Figure 5E,F), RNAs lacking the 3\u2032 nucleotide were used for reconstitution and then extended with a 3\u2032dNMP by RNAP-mediated catalysis. (D) hisPEC scaffold used in Figure 5C (ntDNA#10924, tDNA #10919, RNA #6593+#6594). In this scaffold, the his pause hairpin is mimicked by a 8 bp duplex that stabilizes the pause indistinguishably from the natural his pause hairpin (Hein et al., 2014).\n\nIncorporation of a 3\u2032-dNMP in ECs and PECs allows the CPRs to detect TL folding stimulated by NTP binding in the EC and its inhibition in the hisPEC (Nayak et al., 2013). Consistent with results of the 6-MI dsFJ translocation assay, F937-736 and P937-687 crosslinking in 3\u2032dCMP-ePEC, and therefore TL conformation, were unaffected by high GTP concentration even though the crosslinks formed readily. In contrast, CPR crosslinking in control 3\u2032dCMP-EC exhibited an obvious shift toward TL folding upon ATP binding (Figure 5E,F; Nayak et al., 2013). These results are consistent with the ePEC cryoEM structure and translocation assay results, supporting a view that inability to load the template base inhibits NTP binding in the ePEC.\n\n### Clamp loosening but not extensive clamp opening accompanies elemental pausing\n\nThe role of clamp conformation in elemental pausing is uncertain. Although a crystal structure of TthRNAP on a partial ePEC scaffold suggested the clamp could open in the ePEC (Weixlbaumer et al., 2013), more recent cryoEM structures and biochemical probing suggested the clamp remains closed in the ePEC but can swivel upon pause hairpin formation (Guo et al., 2018; Kang et al., 2018a). To probe the role of clamp conformation in elemental pausing, we examined the effect of stabilizing the clamp in the closed (unswiveled) conformation using an engineered disulfide bond between the lid and flap (\u03b2\u2032258i-\u03b21044; Figure 6A and B; Kang et al., 2018a). In contrast to suppression of pausing for the hairpin-stabilized hisPEC (Figure 6C; Hein et al., 2014; Kang et al., 2018a), the closed-clamp disulfide had minimal effect on the ePEC lifetime (Figure 6D). We conclude that, unlike for hairpin-stabilized pausing and consistent with the cryoEM structure, clamp swiveling (or opening) is not required in the ePEC.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/40981/elife-40981-fig6-v2.jpg)\n\n**Figure 6.:** (A) Location of disulfides used to restrict clamp movement or generate the Cys-triplet reporter (CTR; described in Hein et al., 2014; Kang et al., 2018b). (B) Example \u03b2-\u03b2\u2032 disulfide mobilities during SDS-PAGE illustrating the identification of the closed (\u03b21044-\u03b2\u2032258i, (c) or swiveled (\u03b2843-\u03b2\u2032258i, (s) disulfides. (C) Effect of the closed clamp crosslink on pausing by the hairpin-stabilized hisPEC (scaffold shown in Figure 6\u2014figure supplement 1A). (D) Effect of the closed clamp crosslink on pausing by the ePEC (scaffold shown in Figure 1\u2014figure supplement 1A). (E) CTR assay on an EC scaffold illustrating the formation of the closed and swiveled crosslinks as a function of redox potential generated by increasing concentrations of cystamine (Figure 6\u2014figure supplement 1F). (F) CTR assay of clamp swiveling in EC, ePEC, and hisPEC (scaffolds shown in Figure 6\u2014figure supplement 1B,C,D, respectively).\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/40981/elife-40981-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** Full sequences of oligonucleotides are given in Supplementary file 1. (A) Control EC scaffold used in Figure 6E,F (ntDNA#8847, tDNA #8848, RNA #8855). (B) ePEC scaffold used in Figure 6F (ntDNA#8833, tDNA #8834, RNA #8374). (C) hisPEC scaffold used in Figure 6F (ntDNA#8847, tDNA #8851, RNA #4865).\n\nEven though full clamp swiveling is not required for elemental pausing, we wondered if any change in clamp conformation accompanied formation of the ePEC. To investigate this question, we used a variant of the disulfide bond probing strategy in which three Cys residues were positioned in RNAP such that either the closed-clamp disulfide (\u03b2\u2032258i-\u03b21044) or the swiveled-clamp disulfide (\u03b2\u2032258i-\u03b2843) could form (Kang et al., 2018a). This Cys-triplet reporter (CTR) enabled a convenient measure of the energetic balance between closed and swiveled clamp conformations because the different crosslinked \u03b2\u2032-\u03b2 polypeptides could be readily distinguished by denaturing gel electrophoresis (Figure 6B; Kang et al., 2018a). The ratio of closed-to-swiveled crosslinks shifts during oxidation with cystamine likely because the mixed disulfide intermediates destabilize the closed-clamp conformation (Figure 6E). Thus, cystamine oxidation shifts the unswiveled-to-swiveled equilibrium toward the swiveled conformation, making it a sensitive assay of clamp conformation. This shift is greater for the hisPEC (which favors clamp swiveling; Kang et al., 2018a), but intermediate between the EC and hisPEC for the ePEC (Figure 6F). We conclude that formation of the ePEC is accompanied by a loosening of clamp contacts.\n\n### A conserved arg in fork loop two may help inhibit DNA translocation at an elemental pause\n\nWe wondered if specific amino acids in RNAP inhibit template base translocation in the ePEC. Two candidates were \u03b2\u2032K334 and \u03b2R542 (Figure 7A). \u03b2\u2032K334 in switch two contacts the template DNA backbone adjacent to a dC blocked from active-site loading in half-translocated SceRNAPII EC and TthEC crystal structures (Brueckner and Cramer, 2008; Weixlbaumer et al., 2013) and the ePEC cryoEM structure. \u03b2R542 in fork loop two appears to contact the\u00a0+1dC\u2013dG bp in the ePEC cryoEM structure. Although the modest resolution of the cryoEM structure makes this assignment tentative and apparent H-bonding patterns differ, interaction of this conserved Arg with a pretranslocated template\u00a0+1C also is seen in the half-translocated TthRNAP crystal structure (Weixlbaumer et al., 2013), in a crystal structure of a TthRNAP open complex formed on the B. subtilis pyrG promoter (Murakami et al., 2017), and in a 1 bp backtracked TthRNAP PEC (Sekine et al., 2015). To ask if either \u03b2\u2032K334 or \u03b2R542 played a key role in inhibiting template-base loading in the ePEC, we generated Ala substitution mutants and compared their pausing behaviors to wild-type RNAP. Because the strong consensus pause sequence could mask the effect of a single amino-acid contact, we also assayed the Ala mutants on the usFJ and dsFJ mutant templates that display weaker pausing behavior (Figure 2B). Strikingly, \u03b2\u2032K334A resembled the wild-type enzyme on both consensus and mutant pause scaffolds, whereas \u03b2R542A decreased pausing by a factor of 2 on the consensus pause and dsFJ templates, but significantly more on the usFJ template (13X effect of usFJ vs. 6X for wild-type RNAP; Figure 7B). Given that \u03b2R542 interacts with the dsFJ, these data suggest that \u03b2R542 contributes to elemental pausing but less on a mutant template altered near its contact. We conclude that \u03b2R542 may help inhibit template dC loading in the ePEC.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/40981/elife-40981-fig7-v2.jpg)\n\n**Figure 7.:** (A) Locations of \u03b2\u2032K334 and \u03b2R542 in the ePEC. Relevant components of the ePEC are colored and labeled in a cutaway view of the active-site region of the ePEC. (B) Relative pause strength (PSP, Figure 2B) for wild type, \u03b2\u2032K334A, and \u03b2R542A RNAPs on the consensus pause scaffold (Cons), the usFJ mutant scaffold, and the dsFJ mutant scaffold (see Figure 2A). The factor decrease relative to the wild-type RNAP on the consensus pause scaffold or relative to the consensus pause for the different RNAPs is given above the bars and depicted using colored arrows. Error is SD from\u00a0\u22653 replicates.\n\n## Discussion\n\nOur mechanistic study of elemental pausing documents key features of this fundamental regulatory behavior of RNAP. The elemental pause is an offline state that forms in competition with rapid elongation; thus, the pause mechanism requires distinct EC and pause conformations rather than a single state with an energetic barrier to translocation. The elemental pause signal is multipartite. RNAP interactions with the usFJ, Hyb, dsFJ, and dsDNA contribute to the key barrier to pause escape: template-base loading from a half-translocated state that involves clamp loosening and \u03b2R542 interactions. Other translocation states that can prolong ePEC lifetime form readily. Based on these results, we will describe a model for ePEC formation and escape and discuss its implications for gene regulation.\n\n### A model for elemental pause formation and escape\n\nTo explain how RNAP responds to an elemental pause signal, we propose a multi-state pause mechanism in which pause escape is principally inhibited by inability to load the template base into the active site of RNAP in a half-translocated, off-line intermediate (Figure 8A,B). When RNAP encounters an elemental pause signal, a modest shift in the mobile modules of RNAP that are in contact with RNA and DNA (the clamp, shelf, lid, rudder, switch regions, lobe, protrusion, fork loop 2, and \u03b2DloopII) occurs during translocation. This shift creates or reinforces an energetic barrier to completion of translocation from a half-translocated state in which the RNA transcript has translocated but the DNA template has not, corresponding to the tilted hybrid intermediate observed in cryo-EM structures (Kang et al., 2018a; Guo et al., 2018; Vos et al., 2018). Comparison of ePEC and posttranslocated EC cryoEM structures reveals movements that slightly reposition these key mobile modules (compare green EC to magenta ePEC positions, Figure 8A). Key contacts preventing DNA translocation involve the lid, rudder, and switch 2 (Kang et al., 2018a; Guo et al., 2018) as well as apparent H-bonds of R542 in fork loop two to the\u00a0+1dC\u2013dG bp that may hinder its translocation into the active site (Figures 7A and 8; compare to the conserved Arg in a TthEC, which contacts the backbone phosphate of a template nucleotide loaded into the active site; Vassylyev et al., 2007). Notably the apparent R542 H-bonding contacts to the\u00a0+1 dC\u2013dG bp as well as to an unpaired but pretranslocated\u00a0+1 dC in an initiation complex (Murakami et al., 2017) are not feasible for other\u00a0+1 bases, possibly suggesting multiple ways R542 could inhibit template DNA translocation in an ePEC. The fraction of EC that partitions into the ePEC state and the height of the energetic barrier to completion of translocation and pause escape are both functions of the specific sequences present in the elemental pause signal (i.e., a suboptimal signal will capture fewer ECs for a shorter overall dwell time).\n\n![Figure 8.](https://cdn.elifesciences.org/articles/40981/elife-40981-fig8-v2.jpg)\n\n**Figure 8.:** (A) The small shift in RNAP modules observed in the ePEC (pdb 6bjs; magenta) relative to an EC (pdb 6alf; green) is depicted in the top central panel (Kang et al., 2018a; Kang et al., 2017). The locations of K334 in the EC (faint green) and ePEC (magenta) and the locations of R542 in a TthRNAP EC (pdb 2o5i, yellow; Vassylyev et al., 2007), EC, and ePEC are shown in expanded view on the right. The\u00a0+1 dC nucleotide trapped in the downstream DNA is magenta. (B) Discrete states present during formation of and escape from an elemental pause. The kinetic block is the loading of the template base, but the ePEC can assume other translocation registers depending on the sequences surrounding the pause. Examples of structures occupying the different translocation registers are shown in the close-ups below the active-site schematics (\u00d3 Maoil\u00e9idigh et al., 2011; Wang et al., 2009; Sosunova et al., 2013; Sekine et al., 2015; Liu et al., 2016; Kang et al., 2018a;\u00a0Turtola et al., 2018).\n\nDNA and RNA in the ePEC can move backwards to form pretranslocated, frayed, 1 bp backtracked, and, much more slowly,\u00a0\u22652 bp backtracked states (Figure 8B). At least at the consensus pause, the half-translocated, pretranslocated, and 1 bp backtracked states equilibrate but these equilibria are biased toward the half-translocated state. This bias explains why we observed a fast translocation signal for the RNA:DNA hybrid (Figure 3) and why the half-translocated intermediate forms in reconstituted ePECs analyzed by cryo-EM (Kang et al., 2018a; Guo et al., 2018; Vos et al., 2018). The fast equilibria explain why GreA rapidly cleaves a 1 bp backtracked ePEC state (Figure 1H\u00a0and\u00a0I; Figure 1\u2014figure supplement 3); the 1 bp backtracked state quickly repopulates after cleavage even though it is only a small fraction of the total ePEC states. It is possible that GreA shifts the bias toward the 1 bp backtracked state, but mass action \u2018pulling\u2019 of ePECs into the 1 bp backtracked state is a sufficient explanation. Because the cleaved ePEC re-encounters a strong pause signal, we observed little effect of GreA cleavage on pause lifetime. Our Gre A/B cleavage data also suggest a much slower entry into\u00a0\u22652 bp backtracked states, which may be related to the minor but variable slow fraction of ePECs (see below).\n\nThis multistate model of the elemental pause predicts that the pretranslocated and 1 bp backtracked states can contribute significantly to pause lifetime at some pause sequences despite being in rapid equilibrium with the half-translocated intermediate in which the kinetic barrier to pause escape (template-base loading) is manifest. If an ePEC spends only 50% of the time half-translocated and 50% pre-translocated or backtracked, then the pause dwell time will increase by a factor of\u00a0~2 relative to an ePEC that spends\u00a0>95% of the time half-translocated. This is true despite the rapid equilibria because only the half-translocated intermediate can escape the pause and the other states diminish its effective concentration. Shifting to 25% or 10% half-translocated would lengthen the pause by factors of\u00a0~3 or~9, respectively, for the same reason. Thus, an elemental pause signal that favors the 1 bp backtracked state, although different from the consensus signal we studied, would increase pause lifetime. These behaviors have been observed in vitro directly (Gabizon et al., 2018) or by biasing ePECs using opposing force (Galburt et al., 2007; Dangkulwanich et al., 2013), as well as in vivo (Imashimizu et al., 2015). Further, multiple locations of the 1 bp backtracked RNA 3\u2032 nucleotide have been observed or proposed (Figure 8B; Sekine et al., 2015; Wang et al., 2009; Sosunova et al., 2013;\u00a0Turtola et al., 2018). From a mechanistic standpoint, possible entry into multiple 1 bp backtracked states means that their contribution to pause dwell times may be both increased and highly variable as a function of sequence. The multistate elemental pause model makes the distinction between backtrack pausing and non-backtrack pausing a matter of degree rather than a clear-cut division.\n\nOur results do not address the important question of whether the half-translocated state also is a significant kinetic intermediate during on-pathway nucleotide addition, although other studies suggest this possibility. Translocation can affect overall elongation rate (Imashimizu et al., 2013; Gabizon et al., 2018), and a half-translocated intermediate has been directly observed during in crystallo nucleotide addition by RNA-dependent RNAP (Shu and Gong, 2016). On-pathway translocation may proceed via initial RNA translocation then template DNA loading; the second step may be naturally slower at a pause signal, allowing time for formation of the ePEC conformation in which template-base loading becomes strongly inhibited (Gabizon et al., 2018).\n\nThe multistate model (Figure 8) has important regulatory implications. Just as different regulators can exert distinct effects on the multistep mechanism of transcription initiation by stabilizing or destabilizing different intermediates (Hubin et al., 2017), the existence of multiple elemental pause states affords multiple targets for regulators even when these intermediates are in equilibrium. For example, ppGpp is known to stimulate pausing (Kingston et al., 1981) and to promote backtracking (Kamarthapu et al., 2016); ppGpp could stimulate pausing by stabilizing a pretranslocated or backtracked PEC. Further,\u00a0\u22651 bp backtracking may become more significant for other sequence contexts, conditions, or RNAPs (e.g., eukaryotic RNAPII).\n\n### Multipartite RNAP contacts, not RNA-DNA energetics alone, drive elemental pausing\n\nOur results (Figure 2) confirm that, like the hairpin-stabilized hisPEC (Chan et al., 1997), the elemental pause signal is multipartite and involves significant contributions from the usFJ, hybrid, dsFJ, and dsDNA. Although strong evidence of significant contributions by the hybrid and dsDNA exists (Bochkareva et al., 2012; Larson et al., 2014; Palangat and Landick, 2001; Palangat et al., 2004), some descriptions of pausing focus only on the usFJ and dsFJ (Vvedenskaya et al., 2014; Imashimizu et al., 2015). The inhibitory contributions of the usFJ and dsFJ to hybrid unwinding and NTP binding, respectively, have been known since the earliest studies of pausing (Gilbert et al., 1974; Aivazashvili et al., 1981) but alone are inadequate to predict pause strength.\n\nAt least three factors may contribute to underestimation of the importance of hybrid and downstream DNA sequences in pausing. First, the widespread use of sequence logos to represent nucleic acid signals places undue weight on simple, independent interactions and underweights contributions of complex sequence interactions that affect energetics through nucleic-acid conformation or alternative side-chain contacts. Thus, a logo representing information content as single bp can cause complex, multipartite sequences to appear less important (Figure 2A). Although more sophisticated algorithms hold promise to characterize complex, multipartite signals like the elemental pause (Siebert and S\u00f6ding, 2016), direct analyses of sequence variants remain the most reliable way to define relevant contributions. Direct mutational analyses establish the key contributions of the hybrid and downstream DNA in the elemental pause signal (Figure 2; Bochkareva et al., 2012; Larson et al., 2014; Palangat and Landick, 2001; Palangat et al., 2004).\n\nSecond, using NET-seq to identify a consensus pause signal requires rapid capture of PECs by quick-freezing actively growing cells in liquid N2 (Churchman and Weissman, 2012; Larson et al., 2014). Quick-freezing reveals the modest sequence signatures of the hybrid and dsDNA in sequence logos and energetic analyses (Figure 2A; Larson et al., 2014). However, some studies that detected little if any hybrid or dsDNA contribution recovered cells by centrifugation before freezing, which may allow RNAP to escape all but the strongest pause sites and thus could over-represent contributions of the usFJ and dsFJ components (Vvedenskaya et al., 2014; Imashimizu et al., 2015).\n\nFinally, the hybrid and dsDNA contact multiple RNAP modules (e.g., rudder, switch 2, clamp, etc.) and may principally affect the complex and modest conformational rearrangement into the ePEC state. Because this conformation is still incompletely understood, the contributions of the hybrid and dsDNA, which may involve specific duplex conformations, may be difficult to characterize.\n\nOur findings taken together with earlier demonstrations of usFJ, hybrid, dsFJ, and dsDNA sequences that contribute to pausing should solidify a model of elemental pausing that depends on a multipartite pause signal.\n\n### Structure of the elemental pause\n\nThe elemental pause is a distinct offline state, not an on-pathway elongation intermediate. Our study uncovered evidence for a modestly rearranged multistate ePEC in which the clamp is loosened and template-base loading is inhibited as well as a slower ePEC state entered by a minor but variable fraction of ECs (Figures 1 and 2, and Figure 2\u2014figure supplement 1). The lack of effect of rapid GreA cleavage ruled out 1 bp backtracking as an explanation of the slow ePEC state, but the GreA/B experiments could not definitively rule out\u00a0\u22652 bp backtracking because the maximal\u00a0\u22653 nt cleavage rate (Zhang et al., 2010; Sosunova et al., 2013) is too close to slow ePEC escape rate. Alternatively or additionally, the slow ePEC state could involve RNAP swiveling, which is observed in the hairpin-stabilized PEC (Kang et al., 2018b). Swiveling involves a near-rigid body rotation of the clamp, shelf, SI3, and jaw, and inhibits nucleotide addition by a factor of\u00a0~10 by interfering with TL folding. Interestingly, the lifetime of the minor slow ePEC is\u00a0~10 times that of the majority ePEC state. Variations in susceptibility to swiveling,\u00a0\u22652 bp backtracking, or both could explain why the slow fraction varies among RNAP preparations. Further studies will be needed to establish the structure and importance of the slow ePEC fraction, including detection with non-reconstituted transcription complexes or in vivo.\n\nThe multistate model of elemental pausing involving small changes in RNAP conformation and half-translocated, pretranslocated, and multiple 1 bp backtracked states described here will be difficult to test fully using ensemble biochemistry, single-molecule biochemistry, or crystallography. These methods are encumbered by the perturbing effects of probes and experimental configurations, the number of intermediates involved, and the rapid time-scale of their interchange. Time-resolved cryo-EM (Frank, 2017) promises an attractive approach if methods to distinguish intermediates during particle classification can be developed.\n\n## Materials and methods\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Strain, strain background (E. coli)</td>\n      <td>BL21\u03bbDE3</td>\n      <td>Novagene-EMD Millipore</td>\n      <td></td>\n      <td>expression strain</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>6-MI-containing oligonucleotides</td>\n      <td>Fidelity Systems</td>\n      <td></td>\n      <td>see Supplementary file 1 for sequences</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>DNA and RNA oligos</td>\n      <td>Intergrated DNA Technologies (IDT)</td>\n      <td></td>\n      <td>see Supplementary file 1 for sequences</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Cystamine dihydrochloride</td>\n      <td>MP Biomedicals</td>\n      <td>Cat# ICN10049205</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Dithiothreitol (DTT)</td>\n      <td>Gold Biotechnology</td>\n      <td>Cat# DTT100</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Iodoacetamide</td>\n      <td>Sigma-Aldrich</td>\n      <td>Cat# I6125</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Heparin, Na salt</td>\n      <td>Sigma-Aldrich</td>\n      <td>Cat# H-3393</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Ribonucleotide triphosphates</td>\n      <td>Promega</td>\n      <td>Cat# P1221</td>\n      <td>grade I-A (181 USP units/mg)</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Guanosine triphosphate (GTP)</td>\n      <td>GE Healthcare</td>\n      <td>Cat# 27-2076-01</td>\n      <td>Low background flouresence</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>[\u03b3-32P]ATP</td>\n      <td>PerkinElmer Life Sciences</td>\n      <td>Cat# BLU002Z</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>[\u03b1-32P]CTP</td>\n      <td>PerkinElmer Life Sciences</td>\n      <td>Cat# BLU006H</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>[\u03b1-32P]GTP</td>\n      <td>PerkinElmer Life Sciences</td>\n      <td>Cat# BLU006H</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Acrylamide-Bisacrylamide</td>\n      <td>Bio-Rad</td>\n      <td>Cat# 1610145</td>\n      <td>(19:1, 40% solution)</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>ImageJ</td>\n      <td>NIH (https://imagej.nih.gov/ij/)</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Kaleidagraph</td>\n      <td>Synergy Software</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Excel</td>\n      <td>Microsoft</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>ImageQuant</td>\n      <td>GE Healthcare</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>KinTek Explorer v6.1</td>\n      <td>KinTek Corp.</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>Phast gels</td>\n      <td>GE Healthcare</td>\n      <td>Cat# 17\u2013067801</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>HiTrap Heparin HP column</td>\n      <td>GE Healthcare</td>\n      <td>Cat# 17-0406-01</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>HisTrap HP column</td>\n      <td>GE Healthcare</td>\n      <td>Cat# 17-5247-01</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>Streptactin 5 ml High Capacity Column</td>\n      <td>IBA</td>\n      <td>Cat# 2-1238-001</td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### Reagents and materials\n\nPlasmids and oligonucleotides are listed in Supplementary file 1. RNA and DNA oligonucleotides were obtained from Integrated DNA Technologies (IDT; Coralville, IA) and purified by denaturing polyacrylamide gel electrophoresis (PAGE) before use. GreA, GreB, and RNAPs were purified as described previously (Larson et al., 2014; Windgassen et al., 2014). Briefly, His-tagged RNAPs were overexpressed in E. coli BL21 \u03bbDE3 and cells were lysed by sonication. RNAPs were enriched by PEI and ammonium sulfate precipitation, then purified by sequential nickel (5 mL HisTrap) and heparin (5 mL HiTrap) column chromatography, dialyzed into storage buffer (20 mM Tris-Cl, pH 8, 250 mM NaCl, 20 \u03bcM ZnCl2, 1 mM MgCl2, 0.1 mM EDTA, 1 mM DTT, and 25% glycerol), and stored in small aliquots at \u201380\u00b0 C.\n\n### In vitro transcription pause assays\n\nPAGE-purified 15-mer RNA with 3\u2032 end two nt upstream from the pause site (5 \u00b5M) and template DNA (10 \u00b5M) were annealed in transcription buffer 1 (TB1; 20 mM Tris-OAc pH 7.7, 5 mM Mg(OAc)2, 40 mM KOAc, 1 mM DTT; sequences of RNAs and DNAs are in Supplementary file 1). Scaffolds were incubated with RNAP for 15 min at 37\u00b0C in TB1, then non-template DNA was added and incubation continued for 15 min at 37\u00b0C. The ratio of RNA:tDNA:RNAP:ntDNA was 1:2:3:5 (0.5 \u00b5M, 1 \u00b5M, 1.5 \u00b5M, 2.5 \u00b5M, respectively). ECs were diluted to 0.1 \u00b5M with TB1\u00a0+\u00a0heparin (0.1 mg/ml), incubated for 3 min at 37\u00b0C, labeled by the incorporation of [\u03b1-32P]GMP at 10 \u00b5M total GTP for 1 min at 37\u00b0C, and then placed on ice for 30\u201360 min. ECs were incubated for 3 min at 37\u00b0C before initiating the pause assay by addition of CTP to 100 \u00b5M and GTP to 10 or 100 \u00b5M in TB1 at 37\u00b0C. Reaction samples were removed at various time points and quenched with an equal volume of 2X stop buffer (8 M urea, 50 mM EDTA, 90 mM Tris-borate buffer, pH 8.3, 0.02% each bromophenol blue and xylene cyanol). All remaining active ECs were chased to product by incubation with GTP at 1 mM for 1 min at 37\u00b0C. RNAs in each quenched reaction sample were separated by PAGE (15%; 19:1 acrylamide:bis-acrylamide) in 44 mM Tris-borate, pH 8.3, 1.25 mM Na2EDTA, 8 M urea. The gel was exposed to a PhosphorImager screen, and the screen was scanned using Typhoon PhosphorImager software and quantified in ImageQuant. The averaged fraction of RNA at the position of the pause over time was fit to single- or double-exponential decay functions in KaleidaGraph to estimate pause efficiencies (amplitudes) and rate constants of pause escape. All pause kinetic parameters were determined from replicate (n\u00a0\u2265\u00a03) assays using error-weighted (SD) fits. For experiments comparing RNAPs, wild-type and variant RNAPs were purified side-by-side to avoid variable effects of different RNAP preparations on pausing kinetics.\n\n### Rapid quench-flow measurement of nucleotide addition\n\nTo measure rates of C17 and G18 addition, G16 ECs were formed essentially as described for the pause transcription assay, but with 5\u2032-[32P]RNA limiting such that RNA:tDNA:RNAP:ntDNA was 1:1.3:2:3.3. To obtain nucleotide addition rates using a quench-flow apparatus (RQF-3; KinTek Corporation, Snow Shoe, PA), 400 nM G16 ECs were injected in one sample loop and 200 \u00b5M each CTP and GTP in TB1, in the other sample loop. Reactions were performed at 37\u00b0C for the designated times and quenched with 2 M HCl, then neutralized immediately to pH 7.8 with 3 M Tris base (supplemented with 250 \u00b5g torula yeast RNA/mL). RNA products were purified by phenol:chloroform extraction followed by ethanol precipitation, and resuspended in 1X stop buffer to a constant specific activity. RNA products from all timepoints were resolved by denaturing PAGE and quantified as described for pause transcription assays.\n\nReaction progress curves were generated for each RNA length (G16, C17+, and G18+) using KaleidaGraph (Synergy Software) by calculating the fraction of total RNA for each condition as a function of time. C17 and all RNAs longer than C17 were combined to give the C17+ fraction; G18 and all RNAs longer than G18 were combined to give the G18+ fraction. The averaged fraction at each time-point was then fit to a single-exponential equation.\n\n### Kinetic modeling\n\nTo test whether the elemental pause is on online or offline state (i.e., involves a linear or branched kinetic mechanism; Figure 1\u2014figure supplement 1F,G) and to test whether the slow fraction of ePECs was evident at only the first or at both pause sites on the tandem pause scaffold (Figure 1\u2014figure supplement 2), we used kinetic modeling by numerical integration of pre-steady state rate equations using the program KinTek Explorer v6.1 (KinTek Corp., Snow Shoe, PA; Johnson et al., 2009). In both cases, to test whether the simpler mechanism was adequate to explain the data, we used replicate datasets (triplicate or greater) to generate a kinetic model for the rates of arrival at the pause site using the rate at which all RNAs before the pause site converted to RNAs at the pause site and beyond. We then held these rates constant and tested the simple kinetic models (linear, online pause (Figure 1\u2014figure supplement 1F,G) or two populations of RNAP, fast and slow pausing (Figure 1\u2014figure supplement 2D,E), including error for replicates to obtain the best fit and the residuals between the best fit and the observed data. We concluded that the more complex models (branched for Figure 1\u2014figure supplement 1F,G or dynamic formation of the slow pause species for Figure 1\u2014figure supplement 2D,E) were favored because the residuals for the simpler mechanism exhibited large, systematic variations whereas the more complex mechanisms exhibited smaller, random variations. We did not attempt to determine which mechanism best fit the data, and limited our conclusion to rejection of the simpler mechanism. For the dataset using the template from Bochkareva et al. (2012) (Figure 1\u2014figure supplement 1G), for which we had six replicates, we determined error in the fits and residuals by individually fitting each dataset and calculating the average and error for the six fits.\n\n### GreA- and GreB-stimulated cleavage assays\n\nGreA- and GreB-stimulated cleavage and effects on pausing were assayed essentially as described earlier (Larson et al., 2014). Briefly, for pause assays (Figure 1H and Figure 1\u2014figure supplement 3B,C), [\u03b1-32P]GTP (10 \u00b5M) was maintained at constant specific activity throughout the labeling and pause assay GreA, GreB, or both (1 \u00b5M each, final) were added concurrently with the CTP and UTP (100 \u00b5M each, final). The assays were performed in triplicate and analyzed as described above. To assay the rate of cleavage product accumulation (Figure 1I and Figure 1\u2014figure supplement 3B,D), accumulating small RNAs were quantified from short phosphorimager screen exposures to avoid saturating the signal.\n\n### Intrinsic cleavage assay\n\nIntrinsic cleavage was assayed essentially as described earlier (Mishanina et al., 2017). Briefly, 3\u2032-end labeled C17 ePECs (#9563 NT DNA, #8334 T DNA, #8401 RNA; Supplementary file 1) were formed and immobilized on Ni2+-NTA beads, then washed to remove unincorporated [\u03b1-32P]CTP. Cleavage was initiated at 37\u00b0C by resuspending washed ePECs with Cleavage Buffer (CB; 25 mM Tris\u00b7HCl pH 9.0, 50 mM KCl, 20 mM MgCl2, 1 mM DTT, 5% glycerol, and 25 \u03bcg acetylated BSA/mL), and samples were collected at designated timepoints by mixing with 2X stop buffer. Cleavage products were separated by denaturing PAGE as described for transcription pause assays.\n\n### Stopped-flow fluorescence translocation assay\n\nTo measure translocation rates of the hybrid (Figure 3), we used the assay developed by Belogurov and co-workers (Malinen et al., 2012; Malinen et al., 2014). PAGE-purified template DNA and RNA were annealed in TB1 (see Supplementary file 1). This scaffold was incubated with RNAP for 15 min at 37\u00b0C in TB, then non-template DNA was added such that the final ratio of tDNA:RNA:RNAP:ntDNA was 1:2:3:5 (2 \u00b5M: 4 \u00b5M: 6 \u00b5M: 10 \u00b5M, respectively). This solution was diluted to 0.4 \u00b5M RNAP with TB1.\n\nECs were then injected into one loading syringe of a stopped-flow apparatus (SF-300X; KinTek Corporation, Snow Shoe, PA) and 200 \u00b5M CTP in TB1 was loaded in the other syringe. Upon initiating rapid mixing at 37\u00b0C, 6-MI fluorescence was excited at 340 nm (2.4 nm bandwidth), and emission was monitored in real time through a 400 nm long-pass filter (Edmund Optics Inc., Barrington, NJ). The kinetics of 6-MI fluorescence unquenching was determined by fitting the average fluorescence (n\u00a0\u2265\u00a06 traces), normalized from 0 to 1, to a double exponential Equation 1:\n\n$$\nF_{t}=A(1\u2212e^{\u2212k_{1,obs}t})+B(1\u2212e^{\u2212k_{2,obs}t})\n$$\n\nwhere, t\u00a0=\u00a0time (s); A\u00a0=\u00a0fast kinetic species signal amplitude; B\u00a0=\u00a0slow kinetic species signal amplitude; k1,obs = observed rate of fluorescence increase for the fast kinetic species; k2,obs\u00a0=\u00a0observed rate of fluorescence increase for the slow kinetic species. The fast species rate is reported as the translocation rate (Malinen et al., 2012).\n\n### Equilibrium fluorescence measurement of translocation\n\nTo measure equilibrium translocation of downstream DNA (Figure 4), G16 ECs were formed in TB1 as described for the quench-flow experiment but without Mg(OAc)2 to stabilize ECs and with the fluorescent ntDNA as the limiting component (ntDNA:tDNA:RNA:RNAP\u00a0=\u00a01:1.5:2:3 with ntDNA at 300 nM). For equilibrium measurements of hybrid translocation (Figure 3), G16 ECs were formed similarly but with the tDNA as the limiting component (see description in stopped-flow assay section). Fluorescence measurements were conducted using a PTI-spectrofluorometer (Model QM-4/2003, Photon Technology International) with 5 mM path length and 45 uL quartz cuvettes (Hellma Analytics, M\u00fcllheim, Germany). Emission spectra were obtained by exciting at 340 nm (5 nm bandwidth) and monitoring fluorescence between 360 and 500 nm (5 nm bandwidth).\n\nFor each substrate addition experiment, 60 \u00b5L EC was added to the cuvette and incubated for 2 min at 37\u00b0C in the cuvette holder before performing an emission scan (average of 3 traces at 0.25 nm step size). Then, NTPs were added (concurrently with 5 mM Mg(OAc)2 plus additional Mg(OAc)2 equal to the NTP concentration in the assay) and the incubation was continued for 1 min (5 min for 2\u2032dCTP) at 37\u00b0C before performing an emission scan. Between fluorescence measurements, an aliquot was removed to 2X stop buffer to subjected to denaturing PAGE to confirm nucleotide addition. For the GTP titration condition, aliquots were only removed to confirm initial G16 RNA, 3\u2032dC addition, and failure of 20 mM GTP to incorporate following 3\u2032dC addition.\n\n6-MI fluorescence was quantified at 425 nm. Background fluorescence from a GTP contaminant was subtracted using signal from GTP alone in buffer. We found that the level of fluorescence from the contaminant varied significantly among vendors and GTP lot, with GTP from GE Healthcare containing the least amount. Reported increases in fluorescence are fold changes relative to the initial signal in G16 EC.\n\n### Cys-pair reporter (CPR) crosslinking assays\n\nCPR crosslinking assays (Figure 5) were performed as described previously (Nayak et al., 2013). Nucleic acid scaffolds were prepared by annealing RNA, template DNA (T-DNA) and 15 \u03bcM non-template DNA (NT-DNA) at 10 \u00b5M, 12 \u00b5M, and 15 \u00b5M final concentrations, respectively, in reconstitution buffer (RB; 20 mM Tris-HCl pH 8, 20 mM NaCl, and 1 mM EDTA). ECs, ePECs, and his PEC were formed by incubating 1 \u03bcM RNAP and scaffold (2 \u03bcM, based on RNA) in buffer A (50 mM Tris-HCl pH 8, 20 mM NaCl, 10 mM MgCl2, 1 mM EDTA, and 2.5 ug acetylated bovine serum albumin/mL for 15 min at room temperature (RT). For crosslinking reactions with NTP, 3\u2032deoxyECs formed by reaction with 3\u2032dNTP were incubated for 15 min at RT with 0, 0.005, 0.01, 0.025, 0.05, 0.1, 0.25, 0.5, 1, 2.5, 5, and 10 mM GTP or ATP. Next, EC, ePEC, or his-PEC (final RNAP 0.8 uM and scaffold 1.6 uM) were incubated for 60 min with 2.5 mM CSSC and 0.05 mM DTT (E = \u20130.16) and stopped with 50 mM iodoacetamide. Samples were separated by native PAGE to verify reconstitution efficiency and by sodium dodecyl sulfate (SDS)-PAGE using 4\u201315% GE Healthcare PhastGel to quantify formation of crosslinks. Gels were stained with Coomassie Blue and imaged with a CCD camera. The fraction cross-linked was quantified with ImageJ software.\n\n### Pause assays with CPR RNAPs\n\nFor crosslinked CPR transcription assays, nucleic-acid scaffolds containing RNA and template DNA (1:2 ratio of RNA to DNA) were used to reconstitute ePECs or control hisPECs (Figure 6C and D) as described in Kang et al., 2018a. The U15 ePECs containing limiting CPR RNAP (1 \u03bcM) were reconstituted on 2 \u00b5M scaffold (based on RNA) for 15 min at 37\u00b0C in Elongation Buffer (EB; 25 mM HEPES-KOH, pH 8.0, 130 mM KCl, 5 mM MgCl2, 1 mM DTT, 0.15 mM EDTA, 5% glycerol, and 25 \u03bcg acetylated bovine serum albumin/mL), followed by addition of 6 \u03bcM non-template DNA and further incubation for 10 min at 37\u00b0C to complete assembly of the transcription complexes. Wild-type RNAP was tested as a control side-by-side with CPR RNAPs. Crosslinking of 1 \u03bcM ePECs was performed in the presence of 1 mM cystamine as the oxidant and 0.8 mM DTT, for 15 min at 37\u00b0C. An aliquot of the crosslinking reaction was quenched with 15 mM iodoacetamide (final concentration) and analyzed by non-reducing SDS-PAGE to confirm formation of the crosslink.\n\nThe crosslinked U15 ePECs were diluted to 0.2 \u03bcM with EB (without DTT, for crosslinked samples) and incubated with heparin (0.1 mg/mL final) for 3 min at 37\u00b0C. The U15 ePECs were then radiolabeled by extension with 20 \u03bcM [\u03b1-32P]GTP for 1 min at 37\u00b0C, to poise the complexes one nucleotide before the pause sequence. The resulting G16 ePECs were further diluted to 0.1 \u03bcM (based on RNAP) and assayed at 37\u00b0C for pause-escape kinetics at 10 \u00b5M GTP by addition of CTP in EB to 100 \u00b5M (without DTT, for crosslinked samples). Reaction samples were removed at various time points and quenched with an equal volume of 2X stop buffer. All active ePECs were chased out of the pause with 500 \u03bcM GTP and CTP, each, for 5 min at 37\u00b0C. RNAs in each quenched reaction sample were separated on a 15% urea-PAGE gel. Gels were visualized and quantified as described for in vitro transcription assays.\n\n### Cys Triplet Reporter assays\n\nFor Cys triplet reporter (CTR) cross-linking assays (Figure 6B,E and F), ECs and PECs were assembled on purified DNA and RNA scaffolds specified in the figure legend and as described previously (Kang et al., 2018a). Briefly, 10 \u03bcM RNA, 12 \u03bcM template DNA, and 15 \u03bcM non-template DNA (Supplementary file 1) were annealed in RB. To assemble complexes, scaffold (2 \u03bcM) was mixed with limiting CTR RNAP (1 \u03bcM; CTR RNAP: \u03b2\u20321045iC 258iC, \u03b2843C) in 50 mM Tris-HCl, pH 7.9, 20 mM NaCl, 10 mM MgCl2, 0.1 mM EDTA, 5% glycerol, and 2.5 \u03bcg of acetylated bovine serum albumin/mL, and added to mixtures of cystamine and DTT to generate redox potentials that ranged from \u22120.314 to \u22120.424. Complexes were incubated for 60 min at room temperature and then were quenched with the addition of iodoacetamide to 15 mM. The formation of cysteine-pair cross-links was then evaluated by non-reducing SDS-PAGE (4%\u201315% gradient Phastgel; GE Healthcare) as described previously (Nayak et al., 2013). Gels were stained with Coomassie Blue and imaged with a CCD camera. The fraction cross-linked was quantified with ImageJ software. The experimental error was determined as the standard deviation of measurements from three or more independent replicates.\n",
+      "created_at": "2025-12-02T07:59:06.212170Z"
+    },
+    {
+      "id": "1204954a-1950-4254-bf74-df35e2d0096b",
+      "submission_id": "6e184a98-a3c5-43f7-b80a-a2ab914887b5",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Jerry L Workman, Stowers Institute for Medical Research United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.40981.024](https://doi.org/10.7554/eLife.40981.024)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"The elemental mechanism of transcriptional pausing\" for consideration by eLife. Your article has been reviewed by two peer reviewers, and the evaluation has been overseen by Jerry Workman as Reviewing Editor and James Manley as the Senior Editor. One of the two reviewers has agreed to reveal their identity: Dong Wang.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThis comprehensive study is focused on understanding the fundamental mechanism of the elemental paused state during bacterial transcription. Several longstanding unresolved issues related to elemental pausing include: whether the elemental paused elongation complex (ePEC) is an on-pathway state or an offline state; whether the elemental pause is non-backtracked or backtracked; what is the nature the elemental pause signal? Using multiple biochemical (kinetic) and biophysical approaches, the authors revealed that the RNAP elemental pause state is an off-pathway with a branched kinetic mechanism. While previous CryoEM structures showed that the ePEC is in a half-translocated state such that RNA is translocated but the template is not loading, the current authors found that this ePEC can easily enter pretranslocated and one base-pair backtracked states. Furthermore, the authors revealed that the RNAP elemental pause signal is multipartite. Taken together, the authors proposed a multistate model that provides an important framework to understand how transcriptional pausing is modulated. The data are solid and the manuscript is well-written. It will be of general interest for the transcription field and readers of eLife.\n\nWe only have a few minor comments:\n\n\"the bypass fraction was shifted from ~22% at 10 \u03bcM GTP to ~7% at 100 \u03bcM GTP\". Why is the bypass fraction lower at higher GTP here? This is inconsistent with Figure 1\u2014figure supplement 1C that bypass fraction increases at higher GTP.\n\n\"upstream fork-junction (usFJ\" should be \"upstream fork-junction (usFJ)\".\n\nSubsection \u201cHybrid translocation is not rate-limiting for elemental pause escape\u201d, first paragraph; please change to \"(Figures 3D-F)\", as Figure 3F is not cited in the manuscript.\n\nSubsection \u201cHybrid translocation is not rate-limiting for elemental pause escape\u201d, first paragraph: the reference should be (Malinen et al., 2012) instead.\n\n\"control EC (Figure 4C; (Malinen et al., 2014).\" should be \"control EC (Figure 4C; Malinen et al., 2014).\"\n\n\"(compare to control EC; Figure 4C, D, E)\" it shall be Figure 5C, D, E instead?\n\nSubsection \u201cClamp loosening but not extensive clamp opening accompanies elemental pausing\u201d, first paragraph: \"Figure 5D\". should be Figure 6D instead.\n\n\"apparent H-bonds of R542 in fork loop 2 to the template dC that may hinder its translocation into the active site\". Could the authors comment whether R452 can interact with other +1 template bases, is this interaction sequence-specific?\n\n\"15% PAG\" should be \"15% PAGE\".\n",
+      "created_at": "2025-12-02T07:59:06.212170Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T07:59:06.212170Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T07:59:06.212170Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "5e491dc9-3944-488b-b4a4-4cdeb4b9fe81",
+      "content_id": "2042951b-bc93-46a4-bcb6-985d44624800",
+      "claim_id": "C1",
+      "claim": "Transcriptional pausing underlies regulation of cellular RNA biogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Transcriptional pausing underlies regulation of cellular RNA biogenesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement in the abstract that is supported by the broader scientific literature and the regulatory mechanisms described in the paper.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:59:06.212170Z"
+    },
+    {
+      "id": "2e8ae93c-fcc4-42ad-b2bb-2f42ea20f54d",
+      "content_id": "2042951b-bc93-46a4-bcb6-985d44624800",
+      "claim_id": "C2",
+      "claim": "A consensus pause sequence acts on RNA polymerases (RNAPs) from bacteria to mammals.",
+      "claim_type": "EXPLICIT",
+      "source": "A consensus pause sequence that acts on RNA polymerases (RNAPs) from bacteria to mammals halts RNAP in an elemental paused state from which longer-lived pauses can arise.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by references to prior work on consensus pause sequences (Larson et al., 2014) and is a foundational premise of the study.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:59:06.212170Z"
+    },
+    {
+      "id": "c8edf3c0-a8f7-4092-bdba-6dd6a99da5fd",
+      "content_id": "2042951b-bc93-46a4-bcb6-985d44624800",
+      "claim_id": "C3",
+      "claim": "The consensus pause sequence halts RNAP in an elemental paused state from which longer-lived pauses can arise.",
+      "claim_type": "EXPLICIT",
+      "source": "A consensus pause sequence that acts on RNA polymerases (RNAPs) from bacteria to mammals halts RNAP in an elemental paused state from which longer-lived pauses can arise.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a key finding supported by the experimental data and kinetic analyses presented in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:59:06.212170Z"
+    },
+    {
+      "id": "98f30a97-713b-495a-93be-55f819a2a10a",
+      "content_id": "2042951b-bc93-46a4-bcb6-985d44624800",
+      "claim_id": "C4",
+      "claim": "The structural foundations of pauses prolonged by backtracking or nascent RNA hairpins are recognized.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the structural foundations of pauses prolonged by backtracking or nascent RNA hairpins are recognized, the fundamental mechanism of the elemental pause is less well-defined.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement refers to established knowledge in the field, as indicated by the contrast with the less well-defined elemental pause mechanism.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:59:06.212170Z"
+    },
+    {
+      "id": "abf9eb3b-b869-4cf3-870e-ce24a58979e7",
+      "content_id": "2042951b-bc93-46a4-bcb6-985d44624800",
+      "claim_id": "C5",
+      "claim": "The fundamental mechanism of the elemental pause is less well-defined.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the structural foundations of pauses prolonged by backtracking or nascent RNA hairpins are recognized, the fundamental mechanism of the elemental pause is less well-defined.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of the knowledge gap that the study aims to address.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:59:06.212170Z"
+    },
+    {
+      "id": "e1499f91-407b-4a01-9b09-3a82aa17878c",
+      "content_id": "2042951b-bc93-46a4-bcb6-985d44624800",
+      "claim_id": "C6",
+      "claim": "The elemental pause signal is multipartite.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we report a mechanistic dissection that establishes the elemental pause signal (i) is multipartite",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study, supported by mutational analyses shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:59:06.212170Z"
+    },
+    {
+      "id": "4caf65cc-8132-4b75-a1eb-8ba734a2abd9",
+      "content_id": "2042951b-bc93-46a4-bcb6-985d44624800",
+      "claim_id": "C7",
+      "claim": "The elemental pause signal causes a modest conformational shift that puts \u03b3-proteobacterial RNAP in an off-pathway state.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we report a mechanistic dissection that establishes the elemental pause signal (i) is multipartite; (ii) causes a modest conformational shift that puts \u03b3-proteobacterial RNAP in an off-pathway state in which template base loading but not RNA translocation is inhibited",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This finding is supported by kinetic modeling, fluorescence assays, and structural comparisons presented in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:59:06.212170Z"
+    },
+    {
+      "id": "c90c8533-3d5b-403f-a6ef-052e99030521",
+      "content_id": "2042951b-bc93-46a4-bcb6-985d44624800",
+      "claim_id": "C8",
+      "claim": "In the elemental pause state, template base loading but not RNA translocation is inhibited.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we report a mechanistic dissection that establishes the elemental pause signal (i) is multipartite; (ii) causes a modest conformational shift that puts \u03b3-proteobacterial RNAP in an off-pathway state in which template base loading but not RNA translocation is inhibited",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the 6-MI fluorescence translocation assays shown in Figures 3 and 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:59:06.212170Z"
+    },
+    {
+      "id": "de6259dc-3a7a-466b-822d-eb9ee46f7eac",
+      "content_id": "2042951b-bc93-46a4-bcb6-985d44624800",
+      "claim_id": "C9",
+      "claim": "The elemental pause allows RNAP to enter pretranslocated and one-base-pair backtracked states easily.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we report a mechanistic dissection that establishes the elemental pause signal (i) is multipartite; (ii) causes a modest conformational shift that puts \u03b3-proteobacterial RNAP in an off-pathway state in which template base loading but not RNA translocation is inhibited; and (iii) allows RNAP to enter pretranslocated and one-base-pair backtracked states easily even though the half-translocated state observed in paused cryo-EM structures rate-limits pause escape.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by GreA/B cleavage assays and intrinsic cleavage data shown in Figure 1 and Figure 1\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:59:06.212170Z"
+    },
+    {
+      "id": "6b856eb9-b8ec-4de7-b00f-c4f1f2559b27",
+      "content_id": "2042951b-bc93-46a4-bcb6-985d44624800",
+      "claim_id": "C10",
+      "claim": "The half-translocated state observed in paused cryo-EM structures rate-limits pause escape.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we report a mechanistic dissection that establishes the elemental pause signal (i) is multipartite; (ii) causes a modest conformational shift that puts \u03b3-proteobacterial RNAP in an off-pathway state in which template base loading but not RNA translocation is inhibited; and (iii) allows RNAP to enter pretranslocated and one-base-pair backtracked states easily even though the half-translocated state observed in paused cryo-EM structures rate-limits pause escape.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the kinetic data and comparison with cryo-EM structures (Kang et al., 2018a; Guo et al., 2018; Vos et al., 2018).",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:59:06.212170Z"
+    },
+    {
+      "id": "7514f75b-c7de-4437-a4e2-b843c5d798df",
+      "content_id": "2042951b-bc93-46a4-bcb6-985d44624800",
+      "claim_id": "C11",
+      "claim": "During transcription, RNAP at ~30 nt/s or faster is interrupted by \u22651 s pause events every 100\u2013200 bp.",
+      "claim_type": "EXPLICIT",
+      "source": "During the first step in gene expression, transcription by RNA polymerase (RNAP) at ~30 nt/s or faster is interrupted by \u22651 s pause events every 100\u2013200 bp (Landick, 2006; Larson et al., 2014; Chen et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior studies (Landick, 2006; Larson et al., 2014; Chen et al., 2015).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:59:06.212170Z"
+    },
+    {
+      "id": "cf93b36f-44e6-46d6-98d8-dfa14833875e",
+      "content_id": "2042951b-bc93-46a4-bcb6-985d44624800",
+      "claim_id": "C12",
+      "claim": "Pauses underlie diverse mechanisms that regulate gene expression in both prokaryotes and eukaryotes.",
+      "claim_type": "EXPLICIT",
+      "source": "These pauses underlie diverse mechanisms that regulate gene expression in both prokaryotes and eukaryotes (Figure 1A), including attenuation, antitermination, and promoter-proximal pausing (Jonkers and Lis, 2015; Zhang and Landick, 2016; Mayer et al., 2017).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by citations and illustrated in Figure 1A.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:59:06.212170Z"
+    },
+    {
+      "id": "3b6a6c57-7d15-45e1-885c-e4eb671686c1",
+      "content_id": "2042951b-bc93-46a4-bcb6-985d44624800",
+      "claim_id": "C13",
+      "claim": "Pausing couples transcription to translation in bacteria.",
+      "claim_type": "EXPLICIT",
+      "source": "Pausing also couples transcription to translation in bacteria or to mRNA splicing in eukaryotes (Landick et al., 1985; Proshkin et al., 2010; Mayer et al., 2017)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior studies (Landick et al., 1985; Proshkin et al., 2010; Mayer et al., 2017).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:59:06.212170Z"
+    },
+    {
+      "id": "a59e33fe-be6e-4908-96fe-883bd93d8dc0",
+      "content_id": "2042951b-bc93-46a4-bcb6-985d44624800",
+      "claim_id": "C14",
+      "claim": "Pausing couples transcription to mRNA splicing in eukaryotes.",
+      "claim_type": "EXPLICIT",
+      "source": "Pausing also couples transcription to translation in bacteria or to mRNA splicing in eukaryotes (Landick et al., 1985; Proshkin et al., 2010; Mayer et al., 2017)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior studies (Landick et al., 1985; Proshkin et al., 2010; Mayer et al., 2017).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:59:06.212170Z"
+    },
+    {
+      "id": "77baa364-24dd-4913-ad7c-ea1eb6e0a011",
+      "content_id": "2042951b-bc93-46a4-bcb6-985d44624800",
+      "claim_id": "C15",
+      "claim": "Pausing defines temporal and positional windows for binding of small molecules, regulatory proteins, or regulatory RNAs to the nascent RNA transcript.",
+      "claim_type": "EXPLICIT",
+      "source": "Pausing also couples transcription to translation in bacteria or to mRNA splicing in eukaryotes (Landick et al., 1985; Proshkin et al., 2010; Mayer et al., 2017); defines temporal and positional windows for binding of small molecules, regulatory proteins, or regulatory RNAs to the nascent RNA transcript (Wickiser et al., 2005; Artsimovitch and Landick, 2002)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior studies (Wickiser et al., 2005; Artsimovitch and Landick, 2002).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:59:06.212170Z"
+    },
+    {
+      "id": "c47904a3-9266-4a15-a4a9-c603081c85bb",
+      "content_id": "2042951b-bc93-46a4-bcb6-985d44624800",
+      "claim_id": "C16",
+      "claim": "Pausing mediates nascent RNA folding.",
+      "claim_type": "EXPLICIT",
+      "source": "Pausing also couples transcription to translation in bacteria or to mRNA splicing in eukaryotes (Landick et al., 1985; Proshkin et al., 2010; Mayer et al., 2017); defines temporal and positional windows for binding of small molecules, regulatory proteins, or regulatory RNAs to the nascent RNA transcript (Wickiser et al., 2005; Artsimovitch and Landick, 2002); mediates nascent RNA folding (Pan et al., 1999; Pan and Sosnick, 2006; Steinert et al., 2017)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior studies (Pan et al., 1999; Pan and Sosnick, 2006; Steinert et al., 2017).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:59:06.212170Z"
+    },
+    {
+      "id": "09c070bf-9312-4c5c-8c19-d8a5c01310c8",
+      "content_id": "2042951b-bc93-46a4-bcb6-985d44624800",
+      "claim_id": "C17",
+      "claim": "Pausing enables termination.",
+      "claim_type": "EXPLICIT",
+      "source": "Pausing also couples transcription to translation in bacteria or to mRNA splicing in eukaryotes (Landick et al., 1985; Proshkin et al., 2010; Mayer et al., 2017); defines temporal and positional windows for binding of small molecules, regulatory proteins, or regulatory RNAs to the nascent RNA transcript (Wickiser et al., 2005; Artsimovitch and Landick, 2002); mediates nascent RNA folding (Pan et al., 1999; Pan and Sosnick, 2006; Steinert et al., 2017); and enables termination (Gusarov and Nudler, 1999; Proudfoot, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior studies (Gusarov and Nudler, 1999; Proudfoot, 2016).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:59:06.212170Z"
+    },
+    {
+      "id": "907e3376-f503-4189-8b79-fc301a1a38a8",
+      "content_id": "2042951b-bc93-46a4-bcb6-985d44624800",
+      "claim_id": "C18",
+      "claim": "RNA folding and interactions of cellular molecules and complexes with the elongating transcription complex modulate pausing.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, RNA folding and the interactions of cellular molecules and complexes (e.g., ribosomes) with the elongating transcription complex (EC) modulate pausing (Toulokhonov et al., 2001; Artsimovitch and Landick, 2002; Yakhnin et al., 2016; Zhang and Landick, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior studies (Toulokhonov et al., 2001; Artsimovitch and Landick, 2002; Yakhnin et al., 2016; Zhang and Landick, 2016).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:59:06.212170Z"
+    },
+    {
+      "id": "8d9de123-a92f-4703-bd90-368e3bf1982a",
+      "content_id": "2042951b-bc93-46a4-bcb6-985d44624800",
+      "claim_id": "C19",
+      "claim": "The biophysical mechanism of pausing remains incompletely defined.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite its crucial role in cellular information processing, the biophysical mechanism of pausing remains incompletely defined.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of the knowledge gap that motivates the study.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:59:06.212170Z"
+    },
+    {
+      "id": "e4cad058-c83a-4efc-9beb-9da5db873b14",
+      "content_id": "2042951b-bc93-46a4-bcb6-985d44624800",
+      "claim_id": "C20",
+      "claim": "Most ECs (80% at 37\u00b0C) entered a paused state with a lifetime of 5 s.",
+      "claim_type": "EXPLICIT",
+      "source": "Most ECs (80% at 37\u00b0C) entered a paused state (lifetime 5 s; a, Figure 1D,F), whereas some ECs (20%) transcribed past C17 rapidly (lifetime 0.1 s; bypass, Figure 1D,F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly measured from pause assay data shown in Figure 1F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:59:06.212170Z"
+    },
+    {
+      "id": "9a3a69c6-6a67-4661-98d6-af8d1ff39ce1",
+      "content_id": "2042951b-bc93-46a4-bcb6-985d44624800",
+      "claim_id": "C21",
+      "claim": "Some ECs (20%) transcribed past C17 rapidly with a lifetime of 0.1 s (bypass).",
+      "claim_type": "EXPLICIT",
+      "source": "Most ECs (80% at 37\u00b0C) entered a paused state (lifetime 5 s; a, Figure 1D,F), whereas some ECs (20%) transcribed past C17 rapidly (lifetime 0.1 s; bypass, Figure 1D,F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly measured from pause assay data shown in Figure 1F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:59:06.212170Z"
+    },
+    {
+      "id": "c8476582-5987-459b-8190-7f0baf179f72",
+      "content_id": "2042951b-bc93-46a4-bcb6-985d44624800",
+      "claim_id": "C22",
+      "claim": "A minor ePEC population (typically 15%) escaped more slowly with a lifetime of 100 s.",
+      "claim_type": "EXPLICIT",
+      "source": "Invariably, a minor ePEC population (typically 15%) escaped more slowly (lifetime 100 s; b, Figure 1D,F), requiring double-exponential fitting of the escape rate.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly measured from pause assay data shown in Figure 1F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:59:06.212170Z"
+    },
+    {
+      "id": "da7422da-e895-4326-b8cb-4d8bb99ae7fa",
+      "content_id": "2042951b-bc93-46a4-bcb6-985d44624800",
+      "claim_id": "C23",
+      "claim": "The amounts of slow ePEC and bypass fractions varied among RNAP preparations.",
+      "claim_type": "EXPLICIT",
+      "source": "This kinetic malleability of ePECs differed from the reproducible kinetics typically observed for hairpin-stabilized pauses like the hisPEC (Toulokhonov et al., 2001; Kyzer et al., 2007; Kang et al., 2018a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in Figure 1\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:59:06.212170Z"
+    },
+    {
+      "id": "f2b4da74-9487-4b0d-871a-102afd9648a5",
+      "content_id": "2042951b-bc93-46a4-bcb6-985d44624800",
+      "claim_id": "C24",
+      "claim": "Halting ECs at C17 for 15 s before GTP addition did not change the 10\u201320% EC that bypassed the pause.",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike for the hairpin-stabilized hisPEC (Toulokhonov et al., 2007), halting ECs at C17 for 15 s before GTP addition did not change the 10\u201320% EC that bypassed the pause (Figure 1G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly measured from the experiment shown in Figure 1G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:59:06.212170Z"
+    },
+    {
+      "id": "4cd4c480-b24f-4413-b860-554b12651366",
+      "content_id": "2042951b-bc93-46a4-bcb6-985d44624800",
+      "claim_id": "C25",
+      "claim": "The bypass fraction was shifted from ~22% at 100 \u00b5M GTP to ~7% at 10 \u00b5M GTP.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the bypass fraction was shifted from ~22% at 100 \u00b5M GTP to ~7% at 10 \u00b5M GTP, suggesting that GTP can affect a partition between the on-pathway EC and offline elemental pause state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly measured from the experiment shown in Figure 1G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:59:06.212170Z"
+    },
+    {
+      "id": "04a92ce5-601e-42ea-9642-751eb1d5ed32",
+      "content_id": "2042951b-bc93-46a4-bcb6-985d44624800",
+      "claim_id": "C26",
+      "claim": "GTP can affect a partition between the on-pathway EC and offline elemental pause state.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the bypass fraction was shifted from ~22% at 100 \u00b5M GTP to ~7% at 10 \u00b5M GTP, suggesting that GTP can affect a partition between the on-pathway EC and offline elemental pause state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observed GTP concentration-dependent change in bypass fraction.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:59:06.212170Z"
+    },
+    {
+      "id": "c8a9470d-1901-4f35-9a14-77fc0819f855",
+      "content_id": "2042951b-bc93-46a4-bcb6-985d44624800",
+      "claim_id": "C27",
+      "claim": "The unbranched (on-pathway pause) mechanism did not fit the data well, thus favoring a branched mechanism.",
+      "claim_type": "EXPLICIT",
+      "source": "The unbranched (on-pathway pause) mechanism did not fit the data well, thus favoring a branched mechanism (Figure 1\u2014figure supplement 1F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is determined by kinetic modeling shown in Figure 1\u2014figure supplement 1F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:59:06.212170Z"
+    },
+    {
+      "id": "a4ecbfaf-6f32-45f0-bcba-f1d8a0d83ccc",
+      "content_id": "2042951b-bc93-46a4-bcb6-985d44624800",
+      "claim_id": "C28",
+      "claim": "The elemental pause is an offline state that forms in competition with on-pathway nucleotide addition (i.e., in a branched kinetic mechanism).",
+      "claim_type": "EXPLICIT",
+      "source": "In agreement with most prior ensemble (Kassavetis and Chamberlin, 1981; Kyzer et al., 2007; Toulokhonov et al., 2007; Strobel and Roberts, 2015) and single-molecule (Herbert et al., 2006; Larson et al., 2014; Gabizon et al., 2018) analyses of pausing, we conclude that the elemental pause is an offline state that forms in competition with on-pathway nucleotide addition (i.e., in a branched kinetic mechanism).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is supported by kinetic modeling and is consistent with prior studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:59:06.212170Z"
+    },
+    {
+      "id": "6907c05e-22de-4a25-8f4d-c7b75e44ecb4",
+      "content_id": "2042951b-bc93-46a4-bcb6-985d44624800",
+      "claim_id": "C29",
+      "claim": "Either or both GreA or GreB had little effect on pause lifetimes.",
+      "claim_type": "EXPLICIT",
+      "source": "Either or both GreA or GreB had little effect on pause lifetimes, even though 2-nt cleavage products, indicative of a 1 bp backtracked state, appeared much faster than the rate of ePEC escape and 3-nt cleavage products, indicative of a 2 bp backtracked state, were detectable (Figure 1H,I; Figure 1\u2014figure supplement 3B,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly measured from the GreA/GreB cleavage assays shown in Figure 1H,I and Figure 1\u2014figure supplement 3B,D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:59:06.212170Z"
+    },
+    {
+      "id": "684498eb-6bad-4303-91bc-f45e9b1e81ad",
+      "content_id": "2042951b-bc93-46a4-bcb6-985d44624800",
+      "claim_id": "C30",
+      "claim": "2-nt cleavage products, indicative of a 1 bp backtracked state, appeared much faster than the rate of ePEC escape.",
+      "claim_type": "EXPLICIT",
+      "source": "Either or both GreA or GreB had little effect on pause lifetimes, even though 2-nt cleavage products, indicative of a 1 bp backtracked state, appeared much faster than the rate of ePEC escape and 3-nt cleavage products, indicative of a 2 bp backtracked state, were detectable (Figure 1H,I; Figure 1\u2014figure supplement 3B,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly measured from the GreA/GreB cleavage assays shown in Figure 1H,I and Figure 1\u2014figure supplement 3B,D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:59:06.212170Z"
+    },
+    {
+      "id": "19f547b9-6770-410f-9225-8242386b83bd",
+      "content_id": "2042951b-bc93-46a4-bcb6-985d44624800",
+      "claim_id": "C31",
+      "claim": "3-nt cleavage products, indicative of a 2 bp backtracked state, were detectable.",
+      "claim_type": "EXPLICIT",
+      "source": "Either or both GreA or GreB had little effect on pause lifetimes, even though 2-nt cleavage products, indicative of a 1 bp backtracked state, appeared much faster than the rate of ePEC escape and 3-nt cleavage products, indicative of a 2 bp backtracked state, were detectable (Figure 1H,I; Figure 1\u2014figure supplement 3B,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly measured from the GreA/GreB cleavage assays shown in Figure 1H,I and Figure 1\u2014figure supplement 3B,D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:59:06.212170Z"
+    },
+    {
+      "id": "74f58cf4-318b-444c-a7e2-3d30631bf32e",
+      "content_id": "2042951b-bc93-46a4-bcb6-985d44624800",
+      "claim_id": "C32",
+      "claim": "The \u221211rU-dC mismatch virtually eliminated \u22652 nt cleavage indicative of backtracking.",
+      "claim_type": "EXPLICIT",
+      "source": "The \u221211rU-dC mismatch virtually eliminated \u22652 nt cleavage indicative of backtracking, reduced 1-nt cleavage indicative of the pretranslocated register, and modestly decreased the slow pause fraction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly measured from the intrinsic cleavage assays shown in Figure 1J and Figure 1\u2014figure supplement 3E,F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:59:06.212170Z"
+    },
+    {
+      "id": "1b7fa01f-1fce-43df-af2e-21e60b9329b0",
+      "content_id": "2042951b-bc93-46a4-bcb6-985d44624800",
+      "claim_id": "C33",
+      "claim": "The \u221211rU-dC mismatch reduced 1-nt cleavage indicative of the pretranslocated register.",
+      "claim_type": "EXPLICIT",
+      "source": "The \u221211rU-dC mismatch virtually eliminated \u22652 nt cleavage indicative of backtracking, reduced 1-nt cleavage indicative of the pretranslocated register, and modestly decreased the slow pause fraction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly measured from the intrinsic cleavage assays shown in Figure 1J and Figure 1\u2014figure supplement 3E,F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:59:06.212170Z"
+    },
+    {
+      "id": "1be98852-f988-4201-8978-804f4cf99792",
+      "content_id": "2042951b-bc93-46a4-bcb6-985d44624800",
+      "claim_id": "C34",
+      "claim": "The \u221211rU-dC mismatch modestly decreased the slow pause fraction.",
+      "claim_type": "EXPLICIT",
+      "source": "The \u221211rU-dC mismatch virtually eliminated \u22652 nt cleavage indicative of backtracking, reduced 1-nt cleavage indicative of the pretranslocated register, and modestly decreased the slow pause fraction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly measured from the pause assays shown in Figure 1K.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:59:06.212170Z"
+    },
+    {
+      "id": "9efe2284-4efb-4cfe-b09a-870096ecb2dc",
+      "content_id": "2042951b-bc93-46a4-bcb6-985d44624800",
+      "claim_id": "C35",
+      "claim": "The ePEC readily equilibrates among several active-site states, including half-translocated, pretranslocated, and backtracked, with the half-translocated state being the dominant species.",
+      "claim_type": "EXPLICIT",
+      "source": "A parsimonious explanation is that the ePEC readily equilibrates among several active-site states, including half-translocated, pretranslocated, and backtracked, with the half-translocated state being the dominant species in which the kinetic block to pause escape is manifest.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the GreA/B and intrinsic cleavage data combined with the cryo-EM structures.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:59:06.212170Z"
+    },
+    {
+      "id": "9118dc97-8b55-478c-af45-ef7ebd2d5624",
+      "content_id": "2042951b-bc93-46a4-bcb6-985d44624800",
+      "claim_id": "C36",
+      "claim": "The kinetic block to pause escape is manifest in the half-translocated state.",
+      "claim_type": "EXPLICIT",
+      "source": "A parsimonious explanation is that the ePEC readily equilibrates among several active-site states, including half-translocated, pretranslocated, and backtracked, with the half-translocated state being the dominant species in which the kinetic block to pause escape is manifest.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the GreA/B and intrinsic cleavage data combined with the cryo-EM structures and translocation assays.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:59:06.212170Z"
+    },
+    {
+      "id": "cd02d974-a596-475f-a97f-0389df0267cb",
+      "content_id": "2042951b-bc93-46a4-bcb6-985d44624800",
+      "claim_id": "C37",
+      "claim": "Alone, the usFJ, dsFJ, and dsDNA mutants reduced PS by a factor of ~5.",
+      "claim_type": "EXPLICIT",
+      "source": "Alone, the usFJ, dsFJ, and dsDNA mutants reduced PS by a factor of ~5, whereas the Hyb mutant decreased PS by a factor or ~1.4 fold (but see larger effects in Bochkareva et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly measured from the pause assays shown in Figure 2D and Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:59:06.212170Z"
+    },
+    {
+      "id": "031b5fee-c809-4cf5-9082-f040ca23de89",
+      "content_id": "2042951b-bc93-46a4-bcb6-985d44624800",
+      "claim_id": "C38",
+      "claim": "The Hyb mutant decreased PS by a factor of ~1.4 fold.",
+      "claim_type": "EXPLICIT",
+      "source": "Alone, the usFJ, dsFJ, and dsDNA mutants reduced PS by a factor of ~5, whereas the Hyb mutant decreased PS by a factor or ~1.4 fold (but see larger effects in Bochkareva et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly measured from the pause assays shown in Figure 2D and Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:59:06.212170Z"
+    },
+    {
+      "id": "973b2eb8-d4bc-4d35-a186-fec4c6b8564b",
+      "content_id": "2042951b-bc93-46a4-bcb6-985d44624800",
+      "claim_id": "C39",
+      "claim": "Combinations of mutants produced additive effects on pause strength.",
+      "claim_type": "EXPLICIT",
+      "source": "Combinations of mutants produced additive effects on pause strength (Figure 2D, magenta brackets; additive effects on an energy barrier are multiplicative in \u03c4 or PS; e.g., reduction of PS by factors of 1.4 and 3.7 for the Hyb and dsDNA substitutions predicts a combined reduction by a factor of 5.1 vs. the factor of 5.2 observed).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly measured from the pause assays shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:59:06.212170Z"
+    },
+    {
+      "id": "f55fc8f2-7b90-4e40-a8ec-83364e6864e9",
+      "content_id": "2042951b-bc93-46a4-bcb6-985d44624800",
+      "claim_id": "C40",
+      "claim": "Additive effects are expected if pause signal components independently affect the same energetic barrier to pause escape.",
+      "claim_type": "EXPLICIT",
+      "source": "Additive effects are expected if pause signal components independently affect the same energetic barrier to pause escape (e.g., translocation of the template base).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical expectation based on thermodynamic principles.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:59:06.212170Z"
+    },
+    {
+      "id": "5cc73a63-59a2-4e7a-b824-e1ae8be84868",
+      "content_id": "2042951b-bc93-46a4-bcb6-985d44624800",
+      "claim_id": "C41",
+      "claim": "The lifetimes of the major and minor pause states were highly correlated for the pause-sequence variants.",
+      "claim_type": "EXPLICIT",
+      "source": "The lifetimes of the major and minor pause states were highly correlated for the pause-sequence variants (Figure 2\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 2\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:59:06.212170Z"
+    },
+    {
+      "id": "65f9102f-e85e-445b-9d0e-e66a3f6291a1",
+      "content_id": "2042951b-bc93-46a4-bcb6-985d44624800",
+      "claim_id": "C42",
+      "claim": "The slow pause fraction (Eb) was uncorrelated with the major pause escape rate (k-spapp), the major pause fraction (Ea), and the total ePEC fraction (E).",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the slow pause fraction (Eb; Figure 2\u2014figure supplement 1C) was uncorrelated with the major pause escape rate (k-spapp), the major pause fraction (Ea), and the total ePEC fraction (E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 2\u2014figure supplement 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:59:06.212170Z"
+    },
+    {
+      "id": "0aabf4ba-4917-434e-9475-d238f070c04a",
+      "content_id": "2042951b-bc93-46a4-bcb6-985d44624800",
+      "claim_id": "C43",
+      "claim": "Both the major pause species and the minor, slowly escaping pause species pass through a common barrier for pause escape.",
+      "claim_type": "EXPLICIT",
+      "source": "These results are consistent with a model in which both the major pause species and the minor, slowly escaping pause species pass through a common barrier for pause escape (e.g., template-base loading).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the correlation of lifetimes shown in Figure 2\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:59:06.212170Z"
+    },
+    {
+      "id": "8bba89c7-10ae-48f5-806a-3fc133151dca",
+      "content_id": "2042951b-bc93-46a4-bcb6-985d44624800",
+      "claim_id": "C44",
+      "claim": "The elemental pause signal is multipartite with significant contributions from sequences in the usFJ, Hyb, dsFJ, and dsDNA to a common kinetic barrier to escape from multiple paused states.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that the elemental pause signal is indeed multipartite with significant contributions from sequences in the usFJ, Hyb, dsFJ, and dsDNA to a common kinetic barrier to escape from multiple paused states.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is supported by the mutational analyses shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:59:06.212170Z"
+    },
+    {
+      "id": "1364084b-e7f6-4fe5-b079-2befbda87c5e",
+      "content_id": "2042951b-bc93-46a4-bcb6-985d44624800",
+      "claim_id": "C45",
+      "claim": "For both scaffolds, 2\u2032dCMP gave a 6-MI signal increase comparable to CMP, whereas 3\u2032dCMP reduced the signal increase.",
+      "claim_type": "EXPLICIT",
+      "source": "For both scaffolds, 2\u2032dCMP gave a 6-MI signal increase comparable to CMP, whereas 3\u2032dCMP reduced the signal increase.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly measured from the fluorescence experiments shown in Figure 3D,E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:59:06.212170Z"
+    },
+    {
+      "id": "c04517f5-28d3-4bc7-953e-25c0751e2c0b",
+      "content_id": "2042951b-bc93-46a4-bcb6-985d44624800",
+      "claim_id": "C46",
+      "claim": "Addition of CMP shifts both hybrids toward the posttranslocated register.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggested that addition of CMP shifts both hybrids toward the posttranslocated register, although the absolute fluorescence change for the ePEC scaffold was about half that of the control scaffold.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the 6-MI fluorescence data shown in Figure 3D,E.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:59:06.212170Z"
+    },
+    {
+      "id": "efc5b0ab-43b8-429c-9835-84708bde4340",
+      "content_id": "2042951b-bc93-46a4-bcb6-985d44624800",
+      "claim_id": "C47",
+      "claim": "CMP added rapidly (~300 s\u22121) followed by a rapid (~200 s\u22121) rise in fluorescence signal indicating translocation on both scaffolds.",
+      "claim_type": "EXPLICIT",
+      "source": "Rapid-quench and stopped-flow kinetic measurements revealed that CMP added rapidly (~300 s\u22121) followed by a rapid (~200 s\u22121) rise in fluorescence signal indicating translocation on both scaffolds.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly measured from the rapid-quench and stopped-flow experiments shown in Figure 3D,E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:59:06.212170Z"
+    },
+    {
+      "id": "b44b4daf-6338-45be-9ec0-5c90f188addd",
+      "content_id": "2042951b-bc93-46a4-bcb6-985d44624800",
+      "claim_id": "C48",
+      "claim": "Subsequent extension to G18 of the ePEC but not the control EC was slow (~0.2 s\u22121 vs. 40 s\u22121).",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, subsequent extension to G18 of the ePEC but not the control EC was slow (~0.2 s\u22121 vs. 40 s\u22121; Figure 3D,E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly measured from the rapid-quench and stopped-flow experiments shown in Figure 3D,E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:59:06.212170Z"
+    },
+    {
+      "id": "cc68d8e8-fee9-4bbe-8a81-f292ca6ca56b",
+      "content_id": "2042951b-bc93-46a4-bcb6-985d44624800",
+      "claim_id": "C49",
+      "claim": "The 6-MI ePEC scaffold produced pause fractions (~85%) and lifetimes similar to the unmodified consensus scaffold.",
+      "claim_type": "EXPLICIT",
+      "source": "Because the 6-MI and \u201310 substitutions in the ePEC scaffold could affect pausing, we verified that the 6-MI ePEC scaffold produced pause fractions (~85%) and lifetimes similar to the unmodified consensus scaffold (Figure 3G,H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly measured from the pause assays shown in Figure 3G,H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:59:06.212170Z"
+    },
+    {
+      "id": "e2259bf6-0c12-42f8-ab29-947dd9fe5b08",
+      "content_id": "2042951b-bc93-46a4-bcb6-985d44624800",
+      "claim_id": "C50",
+      "claim": "The ePEC hybrid translocates rapidly after CMP addition, resembling the control scaffold.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that the ePEC hybrid translocates rapidly after CMP addition, resembling the control scaffold.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is based on the 6-MI fluorescence data shown in Figure 3D,E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:59:06.212170Z"
+    },
+    {
+      "id": "2924cb55-65c3-4f34-8f96-ae5bb986549c",
+      "content_id": "2042951b-bc93-46a4-bcb6-985d44624800",
+      "claim_id": "C51",
+      "claim": "Most ePECs are not backtracked.",
+      "claim_type": "EXPLICIT",
+      "source": "These results also confirm that most ePECs are not backtracked, which would not unquench 6-MI (Figure 1I and Figure 1\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the 6-MI fluorescence data and the GreA/B cleavage data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:59:06.212170Z"
+    },
+    {
+      "id": "3f9de0a9-0cde-434c-870c-e11ff6d8e0ca",
+      "content_id": "2042951b-bc93-46a4-bcb6-985d44624800",
+      "claim_id": "C52",
+      "claim": "The ePEC, once formed, may easily fluctuate among multiple translocation states.",
+      "claim_type": "EXPLICIT",
+      "source": "Together the data are fully consistent with a view that the ePEC, once formed, may easily fluctuate among multiple translocation states.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the combined 6-MI fluorescence, GreA/B cleavage, and intrinsic cleavage data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:59:06.212170Z"
+    },
+    {
+      "id": "525b8343-eb1b-4460-a5c0-befe50064bc6",
+      "content_id": "2042951b-bc93-46a4-bcb6-985d44624800",
+      "claim_id": "C53",
+      "claim": "For the control scaffold, addition of CMP or 2\u2032dCMP or extension with CTP + GTP to G19 gave a large 6-MI signal indicating translocation after C17 nucleotide addition.",
+      "claim_type": "EXPLICIT",
+      "source": "For the control scaffold, addition of CMP or 2\u2032dCMP or extension with CTP + GTP to G19 gave a large 6-MI signal indicating translocation after C17 nucleotide addition (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly measured from the fluorescence experiments shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:59:06.212170Z"
+    },
+    {
+      "id": "d7a8f5f4-bc71-4ea6-851f-cea032569874",
+      "content_id": "2042951b-bc93-46a4-bcb6-985d44624800",
+      "claim_id": "C54",
+      "claim": "The ePEC scaffold gave minimal 6-MI signal after CMP or 2\u2032dCMP addition compared to extension to G19, which produced a strong 6-MI signal.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the ePEC scaffold gave minimal 6-MI signal after CMP or 2\u2032dCMP addition (consistent with translocation in only a bypass fraction) compared to extension to G19, which produced a strong 6-MI signal (Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly measured from the fluorescence experiments shown in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:59:06.212170Z"
+    },
+    {
+      "id": "6b807d4b-6168-4873-982d-32bb2fa8aeee",
+      "content_id": "2042951b-bc93-46a4-bcb6-985d44624800",
+      "claim_id": "C55",
+      "claim": "The dsDNA in the ePEC does not translocate.",
+      "claim_type": "EXPLICIT",
+      "source": "These data confirm that the dsDNA in the ePEC does not translocate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is based on the 6-MI fluorescence data shown in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:59:06.212170Z"
+    },
+    {
+      "id": "0b11e841-7101-45a1-8920-1a4a37311a2a",
+      "content_id": "2042951b-bc93-46a4-bcb6-985d44624800",
+      "claim_id": "C56",
+      "claim": "For the control EC, a clear increase in 6-MI signal was evident as GTP bound in the active site with apparent Kd \u2248 400 \u00b5M.",
+      "claim_type": "EXPLICIT",
+      "source": "For the control EC, a clear increase in 6-MI signal was evident as GTP bound in the active site with apparent Kd \u2248 400 \u00b5M (Figure 4D, inset).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly measured from the GTP titration experiment shown in Figure 4D inset.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:59:06.212170Z"
+    },
+    {
+      "id": "4143fa92-e0f4-4acd-82cf-1019b24d0bcc",
+      "content_id": "2042951b-bc93-46a4-bcb6-985d44624800",
+      "claim_id": "C57",
+      "claim": "Even a high GTP concentration was unable to shift the 3\u2032dC17 ePEC to the post-translocated register.",
+      "claim_type": "EXPLICIT",
+      "source": "However, even a high GTP concentration was unable to shift the 3\u2032dC17 ePEC to the post-translocated register (Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly measured from the GTP titration experiment shown in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:59:06.212170Z"
+    },
+    {
+      "id": "817ba20a-4e4d-4b50-a4c4-b360fae1ca0e",
+      "content_id": "2042951b-bc93-46a4-bcb6-985d44624800",
+      "claim_id": "C58",
+      "claim": "The half-translocated state detected in ePEC cryoEM structure also forms in actively transcribing complexes.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that even the weakened elemental pause signal in the dsFJ ePEC assay scaffold prevented dsDNA translocation and thus template-base loading. Taken together, the usFJ and dsFJ 6-MI data confirm that the half-translocated state detected in ePEC cryoEM structure also forms in actively transcribing complexes, and that template-base loading is the relevant barrier to nucleotide addition in the ePEC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is based on the combined 6-MI fluorescence data from Figures 3 and 4.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:59:06.212170Z"
+    },
+    {
+      "id": "dfdd3b0c-ac9e-44d6-aeaf-e1461c44c44c",
+      "content_id": "2042951b-bc93-46a4-bcb6-985d44624800",
+      "claim_id": "C59",
+      "claim": "Template-base loading is the relevant barrier to nucleotide addition in the ePEC.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that even the weakened elemental pause signal in the dsFJ ePEC assay scaffold prevented dsDNA translocation and thus template-base loading. Taken together, the usFJ and dsFJ 6-MI data confirm that the half-translocated state detected in ePEC cryoEM structure also forms in actively transcribing complexes, and that template-base loading is the relevant barrier to nucleotide addition in the ePEC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is based on the combined 6-MI fluorescence data from Figures 3 and 4.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:59:06.212170Z"
+    },
+    {
+      "id": "4ff2380a-46ef-42df-9a95-fee875c7f2c0",
+      "content_id": "2042951b-bc93-46a4-bcb6-985d44624800",
+      "claim_id": "C60",
+      "claim": "The ePEC did not exhibit constraints on TL conformation compared to control EC.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the ePEC, whose cryoEM structure is not swiveled, did not exhibit constraints on TL conformation (compare to control EC; Figure 5C,D,E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly measured from the CPR crosslinking assays shown in Figure 5C,D,E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:59:06.212170Z"
+    },
+    {
+      "id": "bb21ab0d-b283-4992-96a3-25c6c5484b56",
+      "content_id": "2042951b-bc93-46a4-bcb6-985d44624800",
+      "claim_id": "C61",
+      "claim": "The ePEC accessed the folded TH conformation more readily than did the control EC.",
+      "claim_type": "EXPLICIT",
+      "source": "If anything, the ePEC accessed the folded TH conformation more readily than did the control EC, consistent with ePEC access to the pretranslocated register (Figure 1J) that is thought to increase TL folding (Malinen et al., 2014; Liu et al., 2016).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly measured from the CPR crosslinking assays shown in Figure 5C,D,E and is consistent with prior studies (Malinen et al., 2014; Liu et al., 2016).",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:59:06.212170Z"
+    },
+    {
+      "id": "b96001a7-569b-4906-a4c4-c95c071cd0d9",
+      "content_id": "2042951b-bc93-46a4-bcb6-985d44624800",
+      "claim_id": "C62",
+      "claim": "Inhibition of TL folding does not appear to limit escape from the elemental pause.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, inhibition of TL folding does not appear to limit escape from the elemental pause.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is based on the CPR crosslinking data shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:59:06.212170Z"
+    },
+    {
+      "id": "f73b48f5-60d9-4173-ba23-09fd369369c8",
+      "content_id": "2042951b-bc93-46a4-bcb6-985d44624800",
+      "claim_id": "C63",
+      "claim": "F937-736 and P937-687 crosslinking in 3\u2032dCMP-ePEC, and therefore TL conformation, were unaffected by high GTP concentration.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with results of the 6-MI dsFJ translocation assay, F937-736 and P937-687 crosslinking in 3\u2032dCMP-ePEC, and therefore TL conformation, were unaffected by high GTP concentration even though the crosslinks formed readily.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly measured from the CPR crosslinking assays shown in Figure 5E,F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:59:06.212170Z"
+    },
+    {
+      "id": "394bd706-bc10-482c-a412-843e8a2f25b7",
+      "content_id": "2042951b-bc93-46a4-bcb6-985d44624800",
+      "claim_id": "C64",
+      "claim": "CPR crosslinking in control 3\u2032dCMP-EC exhibited an obvious shift toward TL folding upon ATP binding.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, CPR crosslinking in control 3\u2032dCMP-EC exhibited an obvious shift toward TL folding upon ATP binding (Figure 5E,F; Nayak et al., 2013).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly measured from the CPR crosslinking assays shown in Figure 5E,F and is consistent with prior studies (Nayak et al., 2013).",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:59:06.212170Z"
+    },
+    {
+      "id": "1a937e9e-5373-4307-b3be-d70177deb7fe",
+      "content_id": "2042951b-bc93-46a4-bcb6-985d44624800",
+      "claim_id": "C65",
+      "claim": "Inability to load the template base inhibits NTP binding in the ePEC.",
+      "claim_type": "EXPLICIT",
+      "source": "These results are consistent with the ePEC cryoEM structure and translocation assay results, supporting a view that inability to load the template base inhibits NTP binding in the ePEC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the CPR crosslinking data shown in Figure 5 combined with the 6-MI translocation data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:59:06.212170Z"
+    },
+    {
+      "id": "86faf8d2-041d-4106-8bfa-8bdd6388b0f8",
+      "content_id": "2042951b-bc93-46a4-bcb6-985d44624800",
+      "claim_id": "C66",
+      "claim": "The closed-clamp disulfide had minimal effect on the ePEC lifetime.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to suppression of pausing for the hairpin-stabilized hisPEC (Figure 6C; Hein et al., 2014; Kang et al., 2018a), the closed-clamp disulfide had minimal effect on the ePEC lifetime (Figure 6D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly measured from the pause assays shown in Figure 6D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:59:06.212170Z"
+    },
+    {
+      "id": "c5b91636-edf1-4b01-a6fd-37516994a9ff",
+      "content_id": "2042951b-bc93-46a4-bcb6-985d44624800",
+      "claim_id": "C67",
+      "claim": "Clamp swiveling (or opening) is not required in the ePEC.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that, unlike for hairpin-stabilized pausing and consistent with the cryoEM structure, clamp swiveling (or opening) is not required in the ePEC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is based on the closed-clamp disulfide data shown in Figure 6D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:59:06.212170Z"
+    },
+    {
+      "id": "bd087f96-2e83-49a5-a6ac-9f8a8dd1ad05",
+      "content_id": "2042951b-bc93-46a4-bcb6-985d44624800",
+      "claim_id": "C68",
+      "claim": "Formation of the ePEC is accompanied by a loosening of clamp contacts.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that formation of the ePEC is accompanied by a loosening of clamp contacts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is based on the CTR assay data shown in Figure 6F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:59:06.212170Z"
+    },
+    {
+      "id": "eced3f69-6335-4402-a582-5906c9b86ac7",
+      "content_id": "2042951b-bc93-46a4-bcb6-985d44624800",
+      "claim_id": "C69",
+      "claim": "\u03b2\u2032K334A resembled the wild-type enzyme on both consensus and mutant pause scaffolds.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, \u03b2\u2032K334A resembled the wild-type enzyme on both consensus and mutant pause scaffolds, whereas \u03b2R542A decreased pausing by a factor of 2 on the consensus pause and dsFJ templates, but significantly more on the usFJ template (13X effect of usFJ vs. 6X for wild-type RNAP; Figure 7B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly measured from the pause assays shown in Figure 7B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:59:06.212170Z"
+    },
+    {
+      "id": "5b6928a3-6ae8-485e-a6a1-1db22d341175",
+      "content_id": "2042951b-bc93-46a4-bcb6-985d44624800",
+      "claim_id": "C70",
+      "claim": "\u03b2R542A decreased pausing by a factor of 2 on the consensus pause and dsFJ templates.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, \u03b2\u2032K334A resembled the wild-type enzyme on both consensus and mutant pause scaffolds, whereas \u03b2R542A decreased pausing by a factor of 2 on the consensus pause and dsFJ templates, but significantly more on the usFJ template (13X effect of usFJ vs. 6X for wild-type RNAP; Figure 7B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly measured from the pause assays shown in Figure 7B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:59:06.212170Z"
+    },
+    {
+      "id": "32ab6901-bd69-450a-8163-0d8e786457fc",
+      "content_id": "2042951b-bc93-46a4-bcb6-985d44624800",
+      "claim_id": "C71",
+      "claim": "\u03b2R542A decreased pausing significantly more on the usFJ template (13X effect of usFJ vs. 6X for wild-type RNAP).",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, \u03b2\u2032K334A resembled the wild-type enzyme on both consensus and mutant pause scaffolds, whereas \u03b2R542A decreased pausing by a factor of 2 on the consensus pause and dsFJ templates, but significantly more on the usFJ template (13X effect of usFJ vs. 6X for wild-type RNAP; Figure 7B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly measured from the pause assays shown in Figure 7B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:59:06.212170Z"
+    },
+    {
+      "id": "04e2b7f7-b9e2-4551-b61b-275d9fcfea55",
+      "content_id": "2042951b-bc93-46a4-bcb6-985d44624800",
+      "claim_id": "C72",
+      "claim": "\u03b2R542 may help inhibit template dC loading in the ePEC.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that \u03b2R542 may help inhibit template dC loading in the ePEC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the \u03b2R542A mutant data shown in Figure 7B.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:59:06.212170Z"
+    },
+    {
+      "id": "cad4c44e-088a-4260-909f-3e71152e9d4f",
+      "content_id": "2042951b-bc93-46a4-bcb6-985d44624800",
+      "claim_id": "C73",
+      "claim": "The elemental pause is a distinct offline state, not an on-pathway elongation intermediate.",
+      "claim_type": "EXPLICIT",
+      "source": "The elemental pause is a distinct offline state, not an on-pathway elongation intermediate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion based on the kinetic modeling and experimental data presented throughout the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:59:06.212170Z"
+    },
+    {
+      "id": "949bff32-5cd3-4ed9-9bd8-4b084a28d4ac",
+      "content_id": "2042951b-bc93-46a4-bcb6-985d44624800",
+      "claim_id": "C74",
+      "claim": "The elemental pause involves a modestly rearranged multistate ePEC in which the clamp is loosened and template-base loading is inhibited.",
+      "claim_type": "EXPLICIT",
+      "source": "Our study uncovered evidence for a modestly rearranged multistate ePEC in which the clamp is loosened and template-base loading is inhibited as well as a slower ePEC state entered by a minor but variable fraction of ECs (Figures 1 and 2, and Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a summary conclusion based on the combined data from Figures 1, 2, 3, 4, 5, and 6.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:59:06.212170Z"
+    },
+    {
+      "id": "6771a39c-3f69-41ad-8aed-2651f0f1eef7",
+      "content_id": "2042951b-bc93-46a4-bcb6-985d44624800",
+      "claim_id": "C75",
+      "claim": "A slower ePEC state is entered by a minor but variable fraction of ECs.",
+      "claim_type": "EXPLICIT",
+      "source": "Our study uncovered evidence for a modestly rearranged multistate ePEC in which the clamp is loosened and template-base loading is inhibited as well as a slower ePEC state entered by a minor but variable fraction of ECs (Figures 1 and 2, and Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly observed in the pause assay data shown in Figures 1 and 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:59:06.212170Z"
+    },
+    {
+      "id": "ff0c8dc4-e64b-40c1-ac20-6b6b7416984d",
+      "content_id": "2042951b-bc93-46a4-bcb6-985d44624800",
+      "claim_id": "C76",
+      "claim": "When RNAP encounters an elemental pause signal, a modest shift in the mobile modules of RNAP occurs during translocation.",
+      "claim_type": "EXPLICIT",
+      "source": "To explain how RNAP responds to an elemental pause signal, we propose a multi-state pause mechanism in which pause escape is principally inhibited by inability to load the template base into the active site of RNAP in a half-translocated, off-line intermediate (Figure 8A,B). When RNAP encounters an elemental pause signal, a modest shift in the mobile modules of RNAP that are in contact with RNA and DNA (the clamp, shelf, lid, rudder, switch regions, lobe, protrusion, fork loop 2, and \u03b2DloopII) occurs during translocation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a model proposed based on the combined experimental data and comparison with cryo-EM structures.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:59:06.212170Z"
+    },
+    {
+      "id": "d0247f2d-3632-4bc7-8c4e-4e5348d3308b",
+      "content_id": "2042951b-bc93-46a4-bcb6-985d44624800",
+      "claim_id": "C77",
+      "claim": "This shift creates or reinforces an energetic barrier to completion of translocation from a half-translocated state.",
+      "claim_type": "EXPLICIT",
+      "source": "This shift creates or reinforces an energetic barrier to completion of translocation from a half-translocated state in which the RNA transcript has translocated but the DNA template has not, corresponding to the tilted hybrid intermediate observed in cryo-EM structures (Kang et al., 2018a; Guo et al., 2018; Vos et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a model proposed based on the combined experimental data and comparison with cryo-EM structures (Kang et al., 2018a; Guo et al., 2018; Vos et al., 2018).",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:59:06.212170Z"
+    },
+    {
+      "id": "b4c484e1-2db6-4b74-a661-fb4e49fa6c92",
+      "content_id": "2042951b-bc93-46a4-bcb6-985d44624800",
+      "claim_id": "C78",
+      "claim": "Key contacts preventing DNA translocation involve the lid, rudder, and switch 2.",
+      "claim_type": "EXPLICIT",
+      "source": "Key contacts preventing DNA translocation involve the lid, rudder, and switch 2 (Kang et al., 2018a; Guo et al., 2018) as well as apparent H-bonds of R542 in fork loop two to the +1dC\u2013dG bp that may hinder its translocation into the active site (Figures 7A and 8; compare to the conserved Arg in a TthEC, which contacts the backbone phosphate of a template nucleotide loaded into the active site; Vassylyev et al., 2007).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the combined experimental data, structural comparisons, and prior studies (Kang et al., 2018a; Guo et al., 2018; Vassylyev et al., 2007).",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:59:06.212170Z"
+    },
+    {
+      "id": "72e9f454-b9dc-45f7-ad44-335f4be1b51b",
+      "content_id": "2042951b-bc93-46a4-bcb6-985d44624800",
+      "claim_id": "C79",
+      "claim": "Apparent H-bonds of R542 in fork loop two to the +1dC\u2013dG bp may hinder its translocation into the active site.",
+      "claim_type": "EXPLICIT",
+      "source": "Key contacts preventing DNA translocation involve the lid, rudder, and switch 2 (Kang et al., 2018a; Guo et al., 2018) as well as apparent H-bonds of R542 in fork loop two to the +1dC\u2013dG bp that may hinder its translocation into the active site (Figures 7A and 8; compare to the conserved Arg in a TthEC, which contacts the backbone phosphate of a template nucleotide loaded into the active site; Vassylyev et al., 2007).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the \u03b2R542A mutant data and structural comparisons.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:59:06.212170Z"
+    },
+    {
+      "id": "ce61db1f-f06d-482f-bd0f-e57144518c6c",
+      "content_id": "2042951b-bc93-46a4-bcb6-985d44624800",
+      "claim_id": "C80",
+      "claim": "DNA and RNA in the ePEC can move backwards to form pretranslocated, frayed, 1 bp backtracked, and, much more slowly, \u22652 bp backtracked states.",
+      "claim_type": "EXPLICIT",
+      "source": "DNA and RNA in the ePEC can move backwards to form pretranslocated, frayed, 1 bp backtracked, and, much more slowly, \u22652 bp backtracked states (Figure 8B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the GreA/B cleavage and intrinsic cleavage data shown in Figure 1 and Figure 1\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:59:06.212170Z"
+    },
+    {
+      "id": "33ce882b-4636-4aae-a152-7e46f3610604",
+      "content_id": "2042951b-bc93-46a4-bcb6-985d44624800",
+      "claim_id": "C81",
+      "claim": "At least at the consensus pause, the half-translocated, pretranslocated, and 1 bp backtracked states equilibrate but these equilibria are biased toward the half-translocated state.",
+      "claim_type": "EXPLICIT",
+      "source": "At least at the consensus pause, the half-translocated, pretranslocated, and 1 bp backtracked states equilibrate but these equilibria are biased toward the half-translocated state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the combined 6-MI fluorescence, GreA/B cleavage, and intrinsic cleavage data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:59:06.212170Z"
+    },
+    {
+      "id": "4929284b-3d7b-43a5-ad04-7e9edad90377",
+      "content_id": "2042951b-bc93-46a4-bcb6-985d44624800",
+      "claim_id": "C82",
+      "claim": "The multistate model of the elemental pause makes the distinction between backtrack pausing and non-backtrack pausing a matter of degree rather than a clear-cut division.",
+      "claim_type": "EXPLICIT",
+      "source": "The multistate elemental pause model makes the distinction between backtrack pausing and non-backtrack pausing a matter of degree rather than a clear-cut division.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conceptual conclusion based on the multistate model proposed in the Discussion.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:59:06.212170Z"
+    },
+    {
+      "id": "26ff55cd-e19a-4e2a-859f-f216bfa4a975",
+      "content_id": "2042951b-bc93-46a4-bcb6-985d44624800",
+      "claim_id": "C83",
+      "claim": "The existence of multiple elemental pause states affords multiple targets for regulators even when these intermediates are in equilibrium.",
+      "claim_type": "EXPLICIT",
+      "source": "The multistate model (Figure 8) has important regulatory implications. Just as different regulators can exert distinct effects on the multistep mechanism of transcription initiation by stabilizing or destabilizing different intermediates (Hubin et al., 2017), the existence of multiple elemental pause states affords multiple targets for regulators even when these intermediates are in equilibrium.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a speculative implication of the multistate model, supported by analogy to transcription initiation (Hubin et al., 2017).",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:59:06.212170Z"
+    },
+    {
+      "id": "e46dc8e4-2cf8-4759-968d-e17ac9211885",
+      "content_id": "2042951b-bc93-46a4-bcb6-985d44624800",
+      "claim_id": "C84",
+      "claim": "ppGpp is known to stimulate pausing.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, ppGpp is known to stimulate pausing (Kingston et al., 1981) and to promote backtracking (Kamarthapu et al., 2016); ppGpp could stimulate pausing by stabilizing a pretranslocated or backtracked PEC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior studies (Kingston et al., 1981; Kamarthapu et al., 2016).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:59:06.212170Z"
+    },
+    {
+      "id": "23513713-4480-4352-b608-03b203222281",
+      "content_id": "2042951b-bc93-46a4-bcb6-985d44624800",
+      "claim_id": "C85",
+      "claim": "ppGpp is known to promote backtracking.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, ppGpp is known to stimulate pausing (Kingston et al., 1981) and to promote backtracking (Kamarthapu et al., 2016); ppGpp could stimulate pausing by stabilizing a pretranslocated or backtracked PEC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior studies (Kingston et al., 1981; Kamarthapu et al., 2016).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:59:06.212170Z"
+    },
+    {
+      "id": "86fcd0ac-40fa-42e5-ad02-ff51017fd103",
+      "content_id": "2042951b-bc93-46a4-bcb6-985d44624800",
+      "claim_id": "C86",
+      "claim": "ppGpp could stimulate pausing by stabilizing a pretranslocated or backtracked PEC.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, ppGpp is known to stimulate pausing (Kingston et al., 1981) and to promote backtracking (Kamarthapu et al., 2016); ppGpp could stimulate pausing by stabilizing a pretranslocated or backtracked PEC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative mechanism proposed based on the multistate model and prior knowledge of ppGpp effects.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:59:06.212170Z"
+    },
+    {
+      "id": "2497ee41-0857-45a5-8748-9ff6f990a046",
+      "content_id": "2042951b-bc93-46a4-bcb6-985d44624800",
+      "claim_id": "C87",
+      "claim": "The elemental pause signal involves significant contributions from the usFJ, hybrid, dsFJ, and dsDNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results (Figure 2) confirm that, like the hairpin-stabilized hisPEC (Chan et al., 1997), the elemental pause signal is multipartite and involves significant contributions from the usFJ, hybrid, dsFJ, and dsDNA.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly measured from the mutational analyses shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:59:06.212170Z"
+    },
+    {
+      "id": "40a660f7-9e75-4c64-8321-a422806e63ac",
+      "content_id": "2042951b-bc93-46a4-bcb6-985d44624800",
+      "claim_id": "C88",
+      "claim": "Strong evidence of significant contributions by the hybrid and dsDNA exists.",
+      "claim_type": "EXPLICIT",
+      "source": "Although strong evidence of significant contributions by the hybrid and dsDNA exists (Bochkareva et al., 2012; Larson et al., 2014; Palangat and Landick, 2001; Palangat et al., 2004), some descriptions of pausing focus only on the usFJ and dsFJ (Vvedenskaya et al., 2014; Imashimizu et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior studies (Bochkareva et al., 2012; Larson et al., 2014; Palangat and Landick, 2001; Palangat et al., 2004).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:59:06.212170Z"
+    },
+    {
+      "id": "6bbe357d-61f1-4e9d-b830-353b4977a1af",
+      "content_id": "2042951b-bc93-46a4-bcb6-985d44624800",
+      "claim_id": "C89",
+      "claim": "The inhibitory contributions of the usFJ and dsFJ to hybrid unwinding and NTP binding, respectively, have been known since the earliest studies of pausing.",
+      "claim_type": "EXPLICIT",
+      "source": "The inhibitory contributions of the usFJ and dsFJ to hybrid unwinding and NTP binding, respectively, have been known since the earliest studies of pausing (Gilbert et al., 1974; Aivazashvili et al., 1981) but alone are inadequate to predict pause strength.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to early studies (Gilbert et al., 1974; Aivazashvili et al., 1981).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:59:06.212170Z"
+    },
+    {
+      "id": "bf6cb8b6-857e-4758-b73e-e79bdfe5f04d",
+      "content_id": "2042951b-bc93-46a4-bcb6-985d44624800",
+      "claim_id": "C90",
+      "claim": "The usFJ and dsFJ alone are inadequate to predict pause strength.",
+      "claim_type": "EXPLICIT",
+      "source": "The inhibitory contributions of the usFJ and dsFJ to hybrid unwinding and NTP binding, respectively, have been known since the earliest studies of pausing (Gilbert et al., 1974; Aivazashvili et al., 1981) but alone are inadequate to predict pause strength.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the mutational analyses shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:59:06.212170Z"
+    },
+    {
+      "id": "baad9398-8db9-43cb-ad16-6e3699097ea2",
+      "content_id": "2042951b-bc93-46a4-bcb6-985d44624800",
+      "claim_id": "C91",
+      "claim": "Quick-freezing reveals the modest sequence signatures of the hybrid and dsDNA in sequence logos and energetic analyses.",
+      "claim_type": "EXPLICIT",
+      "source": "Quick-freezing reveals the modest sequence signatures of the hybrid and dsDNA in sequence logos and energetic analyses (Figure 2A; Larson et al., 2014).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the NET-seq data and analysis from Larson et al., 2014.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:59:06.212170Z"
+    },
+    {
+      "id": "b55e625b-6b12-4161-8215-3cae716e59fb",
+      "content_id": "2042951b-bc93-46a4-bcb6-985d44624800",
+      "claim_id": "C92",
+      "claim": "Some studies that detected little if any hybrid or dsDNA contribution recovered cells by centrifugation before freezing, which may allow RNAP to escape all but the strongest pause sites.",
+      "claim_type": "EXPLICIT",
+      "source": "However, some studies that detected little if any hybrid or dsDNA contribution recovered cells by centrifugation before freezing, which may allow RNAP to escape all but the strongest pause sites and thus could over-represent contributions of the usFJ and dsFJ components (Vvedenskaya et al., 2014; Imashimizu et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a critical assessment of prior studies (Vvedenskaya et al., 2014; Imashimizu et al., 2015) based on methodological differences.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:59:06.212170Z"
+    },
+    {
+      "id": "120cb896-f8fc-4d9a-914f-7a10e620143d",
+      "content_id": "2042951b-bc93-46a4-bcb6-985d44624800",
+      "claim_id": "C93",
+      "claim": "The hybrid and dsDNA contact multiple RNAP modules and may principally affect the complex and modest conformational rearrangement into the ePEC state.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, the hybrid and dsDNA contact multiple RNAP modules (e.g., rudder, switch 2, clamp, etc.) and may principally affect the complex and modest conformational rearrangement into the ePEC state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the structural data and the mutational analyses.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:59:06.212170Z"
+    },
+    {
+      "id": "37cd8910-5693-4c9c-8398-9d335d15227a",
+      "content_id": "2042951b-bc93-46a4-bcb6-985d44624800",
+      "claim_id": "C94",
+      "claim": "The elemental pause is a modestly rearranged multistate ePEC in which the clamp is loosened and template-base loading is inhibited.",
+      "claim_type": "EXPLICIT",
+      "source": "Our study uncovered evidence for a modestly rearranged multistate ePEC in which the clamp is loosened and template-base loading is inhibited as well as a slower ePEC state entered by a minor but variable fraction of ECs (Figures 1 and 2, and Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a summary conclusion based on the combined data from Figures 1, 2, 3, 4, 5, and 6.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:59:06.212170Z"
+    },
+    {
+      "id": "08418af2-091f-49f3-b391-e32c38661e47",
+      "content_id": "2042951b-bc93-46a4-bcb6-985d44624800",
+      "claim_id": "C95",
+      "claim": "The multistate model of elemental pausing involves small changes in RNAP conformation and half-translocated, pretranslocated, and multiple 1 bp backtracked states.",
+      "claim_type": "EXPLICIT",
+      "source": "The multistate model of elemental pausing involving small changes in RNAP conformation and half-translocated, pretranslocated, and multiple 1 bp backtracked states described here will be difficult to test fully using ensemble biochemistry, single-molecule biochemistry, or crystallography.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the proposed model and a statement about the challenges of testing it.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:59:06.212170Z"
+    },
+    {
+      "id": "e51cbeb6-ca9c-4829-a68f-ecf7a49c8f43",
+      "content_id": "2042951b-bc93-46a4-bcb6-985d44624800",
+      "claim_id": "C96",
+      "claim": "Time-resolved cryo-EM promises an attractive approach if methods to distinguish intermediates during particle classification can be developed.",
+      "claim_type": "EXPLICIT",
+      "source": "Time-resolved cryo-EM (Frank, 2017) promises an attractive approach if methods to distinguish intermediates during particle classification can be developed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about future experimental approaches, supported by a citation (Frank, 2017).",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:59:06.212170Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "35d8e949-2b8c-4c63-a6a0-2f3598ee1035",
+      "content_id": "2042951b-bc93-46a4-bcb6-985d44624800",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The elemental pause is an offline state that forms in competition with on-pathway nucleotide addition via a branched kinetic mechanism. Most ECs (80%) enter a paused state with a 5 s lifetime, while 20% bypass the pause rapidly. A minor fraction (~15%) escapes more slowly with a ~100 s lifetime. GTP concentration affects the partition between on-pathway and offline pause states, and kinetic modeling favors a branched over an unbranched mechanism.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C20-C28 collectively establish the branched kinetic mechanism through direct pause assay measurements (C20-C22), GTP concentration effects (C24-C26), and kinetic modeling that rejects the unbranched mechanism (C27). The data from Figure 1 and Figure 1\u2014figure supplement 1 provide converging evidence for the offline pause state.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:59:06.212170Z"
+    },
+    {
+      "id": "2bf4878a-7eae-4ad4-96d8-06682903f83f",
+      "content_id": "2042951b-bc93-46a4-bcb6-985d44624800",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The ePEC readily equilibrates among multiple translocation states including half-translocated, pretranslocated, and 1 bp backtracked states, with the half-translocated state being dominant and rate-limiting for pause escape. GreA/GreB cleavage assays show rapid formation of 2-nt cleavage products (1 bp backtrack) but minimal effect on pause lifetimes. A -11U mismatch reduces backtracking and modestly decreases the slow pause fraction.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29-C36 are well-supported by GreA/B cleavage data (Figure 1H,I, Figure 1\u2014figure supplement 3) and intrinsic cleavage assays (Figure 1J,K). The rapid appearance of 2-nt cleavage products without affecting pause lifetime (C29-C30) combined with the -11U mismatch effects (C32-C34) support the multistate equilibrium model with the half-translocated state as the kinetic barrier (C35-C36).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:59:06.212170Z"
+    },
+    {
+      "id": "b04290ec-c02e-4097-80f0-aba226732606",
+      "content_id": "2042951b-bc93-46a4-bcb6-985d44624800",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The elemental pause signal is multipartite with significant contributions from the usFJ, Hyb, dsFJ, and dsDNA sequences. Individual mutations in these elements reduce pause strength by factors of ~1.4 (Hyb) to ~5 (usFJ, dsFJ, dsDNA), and combinations produce additive effects. The major and minor pause species lifetimes are highly correlated, consistent with a common kinetic barrier to escape.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C37-C44, C87, C90 are strongly supported by systematic mutational analysis shown in Figure 2. The additive effects of combined mutations (C39) and correlation of pause lifetimes (C41) provide compelling evidence for independent contributions to a single energetic barrier. The data directly demonstrate that usFJ and dsFJ alone are inadequate (C90).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:59:06.212170Z"
+    },
+    {
+      "id": "2476481f-3da2-46bf-abeb-8e940fb7fa34",
+      "content_id": "2042951b-bc93-46a4-bcb6-985d44624800",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The RNA:DNA hybrid in the ePEC translocates rapidly after CMP addition, similar to control scaffolds. Both 2'dCMP and CMP produce comparable 6-MI fluorescence increases, while 3'dCMP reduces the signal. CMP addition and translocation occur rapidly (~300 s\u207b\u00b9 and ~200 s\u207b\u00b9), but subsequent extension to G18 is slow (~0.2 s\u207b\u00b9) in the ePEC. The ePEC can fluctuate among multiple translocation states.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C52 are well-supported by 6-MI fluorescence translocation assays (Figure 3D,E) and rapid-quench/stopped-flow kinetic measurements. The control experiments with 2'dCMP and 3'dCMP (C45) validate the assay, and the verification that the 6-MI scaffold retains pause behavior (C49) strengthens the conclusions about hybrid translocation (C50) and multistate fluctuation (C52).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:59:06.212170Z"
+    },
+    {
+      "id": "3211a343-b903-4d7f-844f-05973c1d6248",
+      "content_id": "2042951b-bc93-46a4-bcb6-985d44624800",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The downstream DNA in the ePEC does not translocate, confirming that template-base loading is the relevant barrier to nucleotide addition. The control scaffold shows strong 6-MI signal after CMP addition, while the ePEC scaffold shows minimal signal. GTP binding to control EC produces a clear 6-MI signal increase (Kd \u2248 400 \u00b5M), but high GTP concentrations cannot shift the ePEC to the post-translocated register.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53-C59 are strongly supported by dsFJ 6-MI fluorescence data (Figure 4C,D). The contrast between control and ePEC scaffolds (C53-C54) and the GTP titration experiments (C56-C57) provide direct evidence that dsDNA translocation is blocked (C55) and that template-base loading is the barrier (C59). The conclusion that the half-translocated state forms in actively transcribing complexes (C58) is well-supported by combining usFJ and dsFJ data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:59:06.212170Z"
+    },
+    {
+      "id": "d54beea2-debf-4640-bf6a-f201f0d1c3bb",
+      "content_id": "2042951b-bc93-46a4-bcb6-985d44624800",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The ePEC does not exhibit constraints on trigger loop (TL) conformation and may access the folded TH conformation more readily than control EC. TL conformation in the ePEC is unaffected by high GTP concentration, while control EC shows an obvious shift toward TL folding upon ATP binding. These results indicate that inability to load the template base, rather than TL folding inhibition, limits pause escape.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C60-C65 are well-supported by CPR crosslinking assays (Figure 5C-F). The lack of TL constraints in the ePEC (C60) contrasts with the hairpin-stabilized hisPEC, and the differential response to NTP binding between ePEC and control EC (C63-C64) supports the conclusion that template-base loading inhibits NTP binding (C65) rather than TL folding limiting escape (C62).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:59:06.212170Z"
+    },
+    {
+      "id": "ade6ead9-8b4a-491e-9238-0305e782dcf7",
+      "content_id": "2042951b-bc93-46a4-bcb6-985d44624800",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Clamp swiveling or opening is not required for the elemental pause, as a closed-clamp disulfide has minimal effect on ePEC lifetime. However, formation of the ePEC is accompanied by a loosening of clamp contacts, as shown by the Cys-triplet reporter (CTR) assay.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C66-C68 are supported by closed-clamp disulfide experiments (Figure 6D) and CTR assays (Figure 6F). The contrast with the hairpin-stabilized hisPEC (C66) and the intermediate CTR behavior of the ePEC (C68) provide clear evidence that full clamp swiveling is not required (C67) but some clamp loosening occurs.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:59:06.212170Z"
+    },
+    {
+      "id": "3052a1f6-6468-4f7a-8c7f-7345d160b7d7",
+      "content_id": "2042951b-bc93-46a4-bcb6-985d44624800",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The conserved residue \u03b2R542 in fork loop 2 contributes to elemental pausing by helping to inhibit template dC loading. \u03b2R542A decreases pausing by a factor of 2 on consensus and dsFJ templates, but more significantly (13X vs. 6X for wild-type) on the usFJ template. In contrast, \u03b2'K334A resembles wild-type RNAP on all scaffolds tested.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C69-C72 are supported by pause assays with RNAP mutants (Figure 7B). The differential effects of \u03b2R542A on different pause scaffolds (C70-C71), particularly the enhanced effect on the usFJ template, support the conclusion that \u03b2R542 helps inhibit template-base loading (C72). The lack of effect for \u03b2'K334A (C69) serves as an important negative control.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:59:06.212170Z"
+    },
+    {
+      "id": "024a51dd-03d7-4314-bf3a-9796375d4230",
+      "content_id": "2042951b-bc93-46a4-bcb6-985d44624800",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The authors propose a multistate model of elemental pausing in which the pause involves a modestly rearranged ePEC with clamp loosening and inhibited template-base loading in a half-translocated offline intermediate. When RNAP encounters an elemental pause signal, modest shifts in mobile modules create an energetic barrier to translocation completion. Key contacts involve the lid, rudder, switch 2, and apparent H-bonds of R542 to the +1dC-dG bp. The ePEC can move backwards to form pretranslocated, frayed, 1 bp backtracked, and \u22652 bp backtracked states, with equilibria biased toward the half-translocated state.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C73-C81, C94-C95 present the integrated mechanistic model supported by the combined experimental data from Figures 1-7. The model is well-supported by: (1) kinetic data establishing the offline state (C73), (2) structural and biochemical evidence for clamp loosening and template-base loading inhibition (C74), (3) 6-MI translocation data (C76-C77), (4) mutant RNAP data (C78-C79), and (5) GreA/B cleavage data (C80-C81). The model synthesizes multiple lines of evidence into a coherent mechanistic framework.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:59:06.212170Z"
+    },
+    {
+      "id": "6e0beacd-f0e4-4da6-9510-dd2d9098176d",
+      "content_id": "2042951b-bc93-46a4-bcb6-985d44624800",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The multistate model has regulatory implications: it makes the distinction between backtrack and non-backtrack pausing a matter of degree, affords multiple targets for regulators even when intermediates are in equilibrium, and suggests that ppGpp could stimulate pausing by stabilizing pretranslocated or backtracked states.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C82-C83, C86 present speculative implications of the multistate model. While C82 is a logical inference from the model, C83 and C86 are explicitly speculative (marked as SPECULATION in evidence_type). The ppGpp mechanism (C86) is proposed based on prior knowledge but not tested in this study. These implications are reasonable but require experimental validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:59:06.212170Z"
+    },
+    {
+      "id": "80bbf28b-c6f2-468d-b8f8-f4aa53541f92",
+      "content_id": "2042951b-bc93-46a4-bcb6-985d44624800",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Transcriptional pausing underlies diverse regulatory mechanisms in gene expression across prokaryotes and eukaryotes. A consensus pause sequence acts on RNAPs from bacteria to mammals, halting RNAP in an elemental paused state. Pausing couples transcription to translation/splicing, defines windows for regulatory molecule binding, mediates RNA folding, and enables termination. Despite its importance, the fundamental mechanism of the elemental pause remains incompletely defined.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C5, C11-C19 provide background context supported by extensive prior literature (multiple citations throughout). These claims establish the biological importance of pausing and the knowledge gap addressed by the study. The claims are well-supported by cited work and represent established knowledge in the field.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:59:06.212170Z"
+    },
+    {
+      "id": "80a90ba8-e129-4702-8767-6f994c32bf6f",
+      "content_id": "2042951b-bc93-46a4-bcb6-985d44624800",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Strong evidence for hybrid and dsDNA contributions to pausing exists in prior literature, though some studies focus only on usFJ and dsFJ. The inhibitory contributions of usFJ and dsFJ have been known since early studies but are inadequate alone to predict pause strength. Quick-freezing reveals modest sequence signatures of hybrid and dsDNA, while studies using centrifugation before freezing may over-represent usFJ and dsFJ contributions. The hybrid and dsDNA contact multiple RNAP modules and may affect conformational rearrangement into the ePEC state.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C88-C93 provide critical assessment of prior work and methodological considerations. C88-C89 are supported by citations to prior studies. C91 is supported by NET-seq data from Larson et al., 2014. C92 provides a critical methodological assessment of prior studies with different cell harvesting methods. C93 is a reasonable inference from structural and mutational data. These claims contextualize the current findings within the broader literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:59:06.212170Z"
+    },
+    {
+      "id": "4020e1a2-764b-4caf-8f6e-deec9d738c10",
+      "content_id": "2042951b-bc93-46a4-bcb6-985d44624800",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "ppGpp is known to stimulate pausing and promote backtracking based on prior studies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C84-C85 are statements of prior knowledge supported by citations (Kingston et al., 1981; Kamarthapu et al., 2016). These are factual claims about established findings used to motivate the speculative mechanism in C86.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:59:06.212170Z"
+    },
+    {
+      "id": "c3794763-13e8-42c1-a3ca-4f92a6cdab3b",
+      "content_id": "2042951b-bc93-46a4-bcb6-985d44624800",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Time-resolved cryo-EM promises an attractive approach for testing the multistate model if methods to distinguish intermediates during particle classification can be developed.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C96 is a speculative statement about future experimental approaches. While supported by a citation to Frank, 2017, it represents a suggestion for future work rather than a finding of the current study. The feasibility of the proposed approach remains to be demonstrated.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:59:06.212170Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "e4cad058-c83a-4efc-9beb-9da5db873b14",
+      "result_id": "35d8e949-2b8c-4c63-a6a0-2f3598ee1035"
+    },
+    {
+      "claim_id": "9a3a69c6-6a67-4661-98d6-af8d1ff39ce1",
+      "result_id": "35d8e949-2b8c-4c63-a6a0-2f3598ee1035"
+    },
+    {
+      "claim_id": "c8476582-5987-459b-8190-7f0baf179f72",
+      "result_id": "35d8e949-2b8c-4c63-a6a0-2f3598ee1035"
+    },
+    {
+      "claim_id": "da7422da-e895-4326-b8cb-4d8bb99ae7fa",
+      "result_id": "35d8e949-2b8c-4c63-a6a0-2f3598ee1035"
+    },
+    {
+      "claim_id": "f2b4da74-9487-4b0d-871a-102afd9648a5",
+      "result_id": "35d8e949-2b8c-4c63-a6a0-2f3598ee1035"
+    },
+    {
+      "claim_id": "4cd4c480-b24f-4413-b860-554b12651366",
+      "result_id": "35d8e949-2b8c-4c63-a6a0-2f3598ee1035"
+    },
+    {
+      "claim_id": "04a92ce5-601e-42ea-9642-751eb1d5ed32",
+      "result_id": "35d8e949-2b8c-4c63-a6a0-2f3598ee1035"
+    },
+    {
+      "claim_id": "c8a9470d-1901-4f35-9a14-77fc0819f855",
+      "result_id": "35d8e949-2b8c-4c63-a6a0-2f3598ee1035"
+    },
+    {
+      "claim_id": "a4ecbfaf-6f32-45f0-bcba-f1d8a0d83ccc",
+      "result_id": "35d8e949-2b8c-4c63-a6a0-2f3598ee1035"
+    },
+    {
+      "claim_id": "6907c05e-22de-4a25-8f4d-c7b75e44ecb4",
+      "result_id": "2bf4878a-7eae-4ad4-96d8-06682903f83f"
+    },
+    {
+      "claim_id": "684498eb-6bad-4303-91bc-f45e9b1e81ad",
+      "result_id": "2bf4878a-7eae-4ad4-96d8-06682903f83f"
+    },
+    {
+      "claim_id": "19f547b9-6770-410f-9225-8242386b83bd",
+      "result_id": "2bf4878a-7eae-4ad4-96d8-06682903f83f"
+    },
+    {
+      "claim_id": "74f58cf4-318b-444c-a7e2-3d30631bf32e",
+      "result_id": "2bf4878a-7eae-4ad4-96d8-06682903f83f"
+    },
+    {
+      "claim_id": "1b7fa01f-1fce-43df-af2e-21e60b9329b0",
+      "result_id": "2bf4878a-7eae-4ad4-96d8-06682903f83f"
+    },
+    {
+      "claim_id": "1be98852-f988-4201-8978-804f4cf99792",
+      "result_id": "2bf4878a-7eae-4ad4-96d8-06682903f83f"
+    },
+    {
+      "claim_id": "9efe2284-4efb-4cfe-b09a-870096ecb2dc",
+      "result_id": "2bf4878a-7eae-4ad4-96d8-06682903f83f"
+    },
+    {
+      "claim_id": "9118dc97-8b55-478c-af45-ef7ebd2d5624",
+      "result_id": "2bf4878a-7eae-4ad4-96d8-06682903f83f"
+    },
+    {
+      "claim_id": "e1499f91-407b-4a01-9b09-3a82aa17878c",
+      "result_id": "b04290ec-c02e-4097-80f0-aba226732606"
+    },
+    {
+      "claim_id": "cd02d974-a596-475f-a97f-0389df0267cb",
+      "result_id": "b04290ec-c02e-4097-80f0-aba226732606"
+    },
+    {
+      "claim_id": "031b5fee-c809-4cf5-9082-f040ca23de89",
+      "result_id": "b04290ec-c02e-4097-80f0-aba226732606"
+    },
+    {
+      "claim_id": "973b2eb8-d4bc-4d35-a186-fec4c6b8564b",
+      "result_id": "b04290ec-c02e-4097-80f0-aba226732606"
+    },
+    {
+      "claim_id": "f55fc8f2-7b90-4e40-a8ec-83364e6864e9",
+      "result_id": "b04290ec-c02e-4097-80f0-aba226732606"
+    },
+    {
+      "claim_id": "5cc73a63-59a2-4e7a-b824-e1ae8be84868",
+      "result_id": "b04290ec-c02e-4097-80f0-aba226732606"
+    },
+    {
+      "claim_id": "65f9102f-e85e-445b-9d0e-e66a3f6291a1",
+      "result_id": "b04290ec-c02e-4097-80f0-aba226732606"
+    },
+    {
+      "claim_id": "0aabf4ba-4917-434e-9475-d238f070c04a",
+      "result_id": "b04290ec-c02e-4097-80f0-aba226732606"
+    },
+    {
+      "claim_id": "8bba89c7-10ae-48f5-806a-3fc133151dca",
+      "result_id": "b04290ec-c02e-4097-80f0-aba226732606"
+    },
+    {
+      "claim_id": "2497ee41-0857-45a5-8748-9ff6f990a046",
+      "result_id": "b04290ec-c02e-4097-80f0-aba226732606"
+    },
+    {
+      "claim_id": "bf6cb8b6-857e-4758-b73e-e79bdfe5f04d",
+      "result_id": "b04290ec-c02e-4097-80f0-aba226732606"
+    },
+    {
+      "claim_id": "1364084b-e7f6-4fe5-b079-2befbda87c5e",
+      "result_id": "2476481f-3da2-46bf-abeb-8e940fb7fa34"
+    },
+    {
+      "claim_id": "c04517f5-28d3-4bc7-953e-25c0751e2c0b",
+      "result_id": "2476481f-3da2-46bf-abeb-8e940fb7fa34"
+    },
+    {
+      "claim_id": "efc5b0ab-43b8-429c-9835-84708bde4340",
+      "result_id": "2476481f-3da2-46bf-abeb-8e940fb7fa34"
+    },
+    {
+      "claim_id": "b44b4daf-6338-45be-9ec0-5c90f188addd",
+      "result_id": "2476481f-3da2-46bf-abeb-8e940fb7fa34"
+    },
+    {
+      "claim_id": "cc68d8e8-fee9-4bbe-8a81-f292ca6ca56b",
+      "result_id": "2476481f-3da2-46bf-abeb-8e940fb7fa34"
+    },
+    {
+      "claim_id": "e2259bf6-0c12-42f8-ab29-947dd9fe5b08",
+      "result_id": "2476481f-3da2-46bf-abeb-8e940fb7fa34"
+    },
+    {
+      "claim_id": "2924cb55-65c3-4f34-8f96-ae5bb986549c",
+      "result_id": "2476481f-3da2-46bf-abeb-8e940fb7fa34"
+    },
+    {
+      "claim_id": "3f9de0a9-0cde-434c-870c-e11ff6d8e0ca",
+      "result_id": "2476481f-3da2-46bf-abeb-8e940fb7fa34"
+    },
+    {
+      "claim_id": "525b8343-eb1b-4460-a5c0-befe50064bc6",
+      "result_id": "3211a343-b903-4d7f-844f-05973c1d6248"
+    },
+    {
+      "claim_id": "d7a8f5f4-bc71-4ea6-851f-cea032569874",
+      "result_id": "3211a343-b903-4d7f-844f-05973c1d6248"
+    },
+    {
+      "claim_id": "6b807d4b-6168-4873-982d-32bb2fa8aeee",
+      "result_id": "3211a343-b903-4d7f-844f-05973c1d6248"
+    },
+    {
+      "claim_id": "0b11e841-7101-45a1-8920-1a4a37311a2a",
+      "result_id": "3211a343-b903-4d7f-844f-05973c1d6248"
+    },
+    {
+      "claim_id": "4143fa92-e0f4-4acd-82cf-1019b24d0bcc",
+      "result_id": "3211a343-b903-4d7f-844f-05973c1d6248"
+    },
+    {
+      "claim_id": "817ba20a-4e4d-4b50-a4c4-b360fae1ca0e",
+      "result_id": "3211a343-b903-4d7f-844f-05973c1d6248"
+    },
+    {
+      "claim_id": "dfdd3b0c-ac9e-44d6-aeaf-e1461c44c44c",
+      "result_id": "3211a343-b903-4d7f-844f-05973c1d6248"
+    },
+    {
+      "claim_id": "4ff2380a-46ef-42df-9a95-fee875c7f2c0",
+      "result_id": "d54beea2-debf-4640-bf6a-f201f0d1c3bb"
+    },
+    {
+      "claim_id": "bb21ab0d-b283-4992-96a3-25c6c5484b56",
+      "result_id": "d54beea2-debf-4640-bf6a-f201f0d1c3bb"
+    },
+    {
+      "claim_id": "b96001a7-569b-4906-a4c4-c95c071cd0d9",
+      "result_id": "d54beea2-debf-4640-bf6a-f201f0d1c3bb"
+    },
+    {
+      "claim_id": "f73b48f5-60d9-4173-ba23-09fd369369c8",
+      "result_id": "d54beea2-debf-4640-bf6a-f201f0d1c3bb"
+    },
+    {
+      "claim_id": "394bd706-bc10-482c-a412-843e8a2f25b7",
+      "result_id": "d54beea2-debf-4640-bf6a-f201f0d1c3bb"
+    },
+    {
+      "claim_id": "1a937e9e-5373-4307-b3be-d70177deb7fe",
+      "result_id": "d54beea2-debf-4640-bf6a-f201f0d1c3bb"
+    },
+    {
+      "claim_id": "86faf8d2-041d-4106-8bfa-8bdd6388b0f8",
+      "result_id": "ade6ead9-8b4a-491e-9238-0305e782dcf7"
+    },
+    {
+      "claim_id": "c5b91636-edf1-4b01-a6fd-37516994a9ff",
+      "result_id": "ade6ead9-8b4a-491e-9238-0305e782dcf7"
+    },
+    {
+      "claim_id": "bd087f96-2e83-49a5-a6ac-9f8a8dd1ad05",
+      "result_id": "ade6ead9-8b4a-491e-9238-0305e782dcf7"
+    },
+    {
+      "claim_id": "eced3f69-6335-4402-a582-5906c9b86ac7",
+      "result_id": "3052a1f6-6468-4f7a-8c7f-7345d160b7d7"
+    },
+    {
+      "claim_id": "5b6928a3-6ae8-485e-a6a1-1db22d341175",
+      "result_id": "3052a1f6-6468-4f7a-8c7f-7345d160b7d7"
+    },
+    {
+      "claim_id": "32ab6901-bd69-450a-8163-0d8e786457fc",
+      "result_id": "3052a1f6-6468-4f7a-8c7f-7345d160b7d7"
+    },
+    {
+      "claim_id": "04e2b7f7-b9e2-4551-b61b-275d9fcfea55",
+      "result_id": "3052a1f6-6468-4f7a-8c7f-7345d160b7d7"
+    },
+    {
+      "claim_id": "cad4c44e-088a-4260-909f-3e71152e9d4f",
+      "result_id": "024a51dd-03d7-4314-bf3a-9796375d4230"
+    },
+    {
+      "claim_id": "949bff32-5cd3-4ed9-9bd8-4b084a28d4ac",
+      "result_id": "024a51dd-03d7-4314-bf3a-9796375d4230"
+    },
+    {
+      "claim_id": "6771a39c-3f69-41ad-8aed-2651f0f1eef7",
+      "result_id": "024a51dd-03d7-4314-bf3a-9796375d4230"
+    },
+    {
+      "claim_id": "ff0c8dc4-e64b-40c1-ac20-6b6b7416984d",
+      "result_id": "024a51dd-03d7-4314-bf3a-9796375d4230"
+    },
+    {
+      "claim_id": "d0247f2d-3632-4bc7-8c4e-4e5348d3308b",
+      "result_id": "024a51dd-03d7-4314-bf3a-9796375d4230"
+    },
+    {
+      "claim_id": "b4c484e1-2db6-4b74-a661-fb4e49fa6c92",
+      "result_id": "024a51dd-03d7-4314-bf3a-9796375d4230"
+    },
+    {
+      "claim_id": "72e9f454-b9dc-45f7-ad44-335f4be1b51b",
+      "result_id": "024a51dd-03d7-4314-bf3a-9796375d4230"
+    },
+    {
+      "claim_id": "ce61db1f-f06d-482f-bd0f-e57144518c6c",
+      "result_id": "024a51dd-03d7-4314-bf3a-9796375d4230"
+    },
+    {
+      "claim_id": "33ce882b-4636-4aae-a152-7e46f3610604",
+      "result_id": "024a51dd-03d7-4314-bf3a-9796375d4230"
+    },
+    {
+      "claim_id": "37cd8910-5693-4c9c-8398-9d335d15227a",
+      "result_id": "024a51dd-03d7-4314-bf3a-9796375d4230"
+    },
+    {
+      "claim_id": "08418af2-091f-49f3-b391-e32c38661e47",
+      "result_id": "024a51dd-03d7-4314-bf3a-9796375d4230"
+    },
+    {
+      "claim_id": "4929284b-3d7b-43a5-ad04-7e9edad90377",
+      "result_id": "6e0beacd-f0e4-4da6-9510-dd2d9098176d"
+    },
+    {
+      "claim_id": "26ff55cd-e19a-4e2a-859f-f216bfa4a975",
+      "result_id": "6e0beacd-f0e4-4da6-9510-dd2d9098176d"
+    },
+    {
+      "claim_id": "86fcd0ac-40fa-42e5-ad02-ff51017fd103",
+      "result_id": "6e0beacd-f0e4-4da6-9510-dd2d9098176d"
+    },
+    {
+      "claim_id": "5e491dc9-3944-488b-b4a4-4cdeb4b9fe81",
+      "result_id": "80bbf28b-c6f2-468d-b8f8-f4aa53541f92"
+    },
+    {
+      "claim_id": "2e8ae93c-fcc4-42ad-b2bb-2f42ea20f54d",
+      "result_id": "80bbf28b-c6f2-468d-b8f8-f4aa53541f92"
+    },
+    {
+      "claim_id": "c8edf3c0-a8f7-4092-bdba-6dd6a99da5fd",
+      "result_id": "80bbf28b-c6f2-468d-b8f8-f4aa53541f92"
+    },
+    {
+      "claim_id": "98f30a97-713b-495a-93be-55f819a2a10a",
+      "result_id": "80bbf28b-c6f2-468d-b8f8-f4aa53541f92"
+    },
+    {
+      "claim_id": "abf9eb3b-b869-4cf3-870e-ce24a58979e7",
+      "result_id": "80bbf28b-c6f2-468d-b8f8-f4aa53541f92"
+    },
+    {
+      "claim_id": "7514f75b-c7de-4437-a4e2-b843c5d798df",
+      "result_id": "80bbf28b-c6f2-468d-b8f8-f4aa53541f92"
+    },
+    {
+      "claim_id": "cf93b36f-44e6-46d6-98d8-dfa14833875e",
+      "result_id": "80bbf28b-c6f2-468d-b8f8-f4aa53541f92"
+    },
+    {
+      "claim_id": "3b6a6c57-7d15-45e1-885c-e4eb671686c1",
+      "result_id": "80bbf28b-c6f2-468d-b8f8-f4aa53541f92"
+    },
+    {
+      "claim_id": "a59e33fe-be6e-4908-96fe-883bd93d8dc0",
+      "result_id": "80bbf28b-c6f2-468d-b8f8-f4aa53541f92"
+    },
+    {
+      "claim_id": "77baa364-24dd-4913-ad7c-ea1eb6e0a011",
+      "result_id": "80bbf28b-c6f2-468d-b8f8-f4aa53541f92"
+    },
+    {
+      "claim_id": "c47904a3-9266-4a15-a4a9-c603081c85bb",
+      "result_id": "80bbf28b-c6f2-468d-b8f8-f4aa53541f92"
+    },
+    {
+      "claim_id": "09c070bf-9312-4c5c-8c19-d8a5c01310c8",
+      "result_id": "80bbf28b-c6f2-468d-b8f8-f4aa53541f92"
+    },
+    {
+      "claim_id": "907e3376-f503-4189-8b79-fc301a1a38a8",
+      "result_id": "80bbf28b-c6f2-468d-b8f8-f4aa53541f92"
+    },
+    {
+      "claim_id": "8d9de123-a92f-4703-bd90-368e3bf1982a",
+      "result_id": "80bbf28b-c6f2-468d-b8f8-f4aa53541f92"
+    },
+    {
+      "claim_id": "40a660f7-9e75-4c64-8321-a422806e63ac",
+      "result_id": "80a90ba8-e129-4702-8767-6f994c32bf6f"
+    },
+    {
+      "claim_id": "6bbe357d-61f1-4e9d-b830-353b4977a1af",
+      "result_id": "80a90ba8-e129-4702-8767-6f994c32bf6f"
+    },
+    {
+      "claim_id": "baad9398-8db9-43cb-ad16-6e3699097ea2",
+      "result_id": "80a90ba8-e129-4702-8767-6f994c32bf6f"
+    },
+    {
+      "claim_id": "b55e625b-6b12-4161-8215-3cae716e59fb",
+      "result_id": "80a90ba8-e129-4702-8767-6f994c32bf6f"
+    },
+    {
+      "claim_id": "120cb896-f8fc-4d9a-914f-7a10e620143d",
+      "result_id": "80a90ba8-e129-4702-8767-6f994c32bf6f"
+    },
+    {
+      "claim_id": "e46dc8e4-2cf8-4759-968d-e17ac9211885",
+      "result_id": "4020e1a2-764b-4caf-8f6e-deec9d738c10"
+    },
+    {
+      "claim_id": "23513713-4480-4352-b608-03b203222281",
+      "result_id": "4020e1a2-764b-4caf-8f6e-deec9d738c10"
+    },
+    {
+      "claim_id": "e51cbeb6-ca9c-4829-a68f-ecf7a49c8f43",
+      "result_id": "c3794763-13e8-42c1-a3ca-4f92a6cdab3b"
+    }
+  ],
+  "comparisons": []
+}

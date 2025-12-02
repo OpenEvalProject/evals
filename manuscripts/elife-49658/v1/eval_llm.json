@@ -1,0 +1,380 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "Nanopore DRS was successfully applied to Arabidopsis and can sequence very long mRNAs. The longest reads were 12.7-12.8 kb spanning 58-63 exons, representing some of the longest contiguous mRNAs sequenced from Arabidopsis. The method also detected short structured non-coding RNAs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C18-C22 provide clear experimental evidence with specific read lengths and exon counts shown in figures. The methodology is well-documented and the results are directly observable from the sequencing data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "Nanopore DRS has ~92% sequence identity when measured against ERCC spike-ins, with base-specific error patterns where guanine is under-represented and uracil over-represented. Error correction using proovread and Illumina RNAseq data was implemented.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C27 are supported by quantitative measurements against known ERCC controls and detailed error analysis shown in supplementary figures. The error correction methodology is clearly described with appropriate citations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "Over-splitting artifacts occur in nanopore DRS where MinKNOW software splits single molecule signals into multiple reads. This generally occurs at <2% frequency but can affect up to 20% of reads at specific loci like RH3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C30 identify a technical limitation with quantified frequencies. The locus-specific susceptibility is documented with figure references, providing clear evidence of this artifact.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "Spurious antisense reads are rare or absent in nanopore DRS (0.02% for ERCC, 0% for RCA). The method can identify authentic antisense RNAs at PIN4 and PIN7, validated by Illumina RNAseq showing 13-fold enrichment in the hen2-2 exosome mutant.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C36 provide quantitative evidence from multiple sources (ERCC controls, specific genes, orthogonal validation). The low false-positive rate is well-documented and authentic antisense RNAs are validated by independent methods.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Nanopore DRS can estimate poly(A) tail lengths using nanopolish-polyA. Validation with ERCC controls shows median estimates accurate within a few bases (23.3 nt vs 24 nt expected). Arabidopsis mRNA median poly(A) tail length is 68 nt, with organellar transcripts having shorter tails (13 nt chloroplast, 20 nt mitochondrial). Poly(A) tail length correlates negatively with gene expression (\u03c1=-0.34).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C45 are well-supported with validation using known controls, quantitative measurements with confidence intervals, and statistical correlation analysis. The wide margin of error for individual reads is appropriately acknowledged.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Nanopore DRS accurately maps 3' ends with close agreement to Helicos DRS (median distance 0\u00b113 nt). 97% of 3' ends map to annotated 3'UTRs or downstream regions. Internal priming is rare or absent (only 4 of 10,116 oligo(A)6 sequences in coding regions had terminating reads). The method identifies known regulatory polyadenylation sites at FPA and IBM1, and novel sites at PTM.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C54 provide strong orthogonal validation with Helicos DRS, quantitative distribution analysis, and systematic assessment of internal priming artifacts. Known regulatory sites serve as positive controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Standard nanopore DRS has 3' bias due to truncation before transcription start sites. Cap-dependent 5' adapter ligation reduces median 3' bias from 0.45 to 0.08. Adapter-ligated reads map within 5 nt of known TSSs for 41% (RIKEN) and 75% (nanoPARE) of reads. Reads with adapters recover ~11 nt more 5' sequence, likely lost due to motor protein control issues at RNA ends.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C65 document a technical limitation and its solution with quantitative improvements. Validation against two orthogonal TSS datasets (RIKEN and nanoPARE) provides strong support. The 11 nt loss is consistently observed across multiple RNA types.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C66"
+    ],
+    "result": "Nanopore DRS can reveal regions of internal mRNA and ncRNA cleavage, including miRNA cleavage sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C66 is supported by detection of known miRNA cleavage products at multiple genes (HAM1, NAC1, ARF, SPL, TAS RNAs) as documented in the text and supplementary files.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Uncorrected nanopore DRS has high splice junction error rates (58% unsupported), but error correction reduces this to 13%. The method captures 75% of Araport11 and 69% of AtRTD2 splice sites. 3,234 novel canonical splicing events supported by Illumina RNAseq were identified, with 74% classified as canonical U2/U12 sites. 8,659 novel splicing patterns were detected, with 50% using known splice sites in new combinations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C77 demonstrate the importance of error correction with clear before/after quantification. Novel splice junctions are validated by Illumina RNAseq and splice site classification. RT-PCR validation of three novel events provides additional support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "Differential error rate analysis identifies 17,491 m6A sites in VIR-complemented vs vir-1 mutant. 99.4% map to protein-coding genes, enriched in 3'UTRs. The motif DRAYH matches established m6A consensus, with AAm6ACU and AAm6ACA most frequent. 66% of sites fall within 5 nt of miCLIP peaks. Detection requires >200 reads per condition at 50% stoichiometry.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C85 provide comprehensive validation: motif matches known m6A consensus, 66% agreement with orthogonal miCLIP, appropriate genomic distribution, and systematic power analysis. The statistical approach is transparent and well-validated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "Loss of m6A in vir-1 causes global reduction in expression of methylated transcripts, consistent with m6A protecting Arabidopsis mRNAs from degradation. The vir-1 mutant shows lengthened circadian period, with m6A detected at clock component mRNAs (PRR7, GI, LNK1/2). Changes in poly(A) tail length distribution and altered expression of circadian and flowering time genes (FLC reduced 40-fold) were observed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C93 connect molecular changes to phenotypic consequences with multiple lines of evidence: transcriptome-wide expression analysis, circadian phenotype measurements, detection of m6A at relevant genes, and quantification of specific gene expression changes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "Loss of m6A causes major defects in 3' end formation. 3,579 genes show altered 3' position profiles in vir-1, with 3,008 showing proximal poly(A) site usage (59% contain m6A sites) and 571 showing readthrough (72% contain m6A sites). 327 error sites are phased with 3' end position, with 72% showing statistically detectable 3' end changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C100 provide strong statistical evidence with appropriate tests (Kolmogorov-Smirnov), significant enrichment of m6A at affected genes (p<1\u00d710^-16), and demonstration of phasing between m6A sites and poly(A) site selection.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "The canonical poly(A) signal AAUAAA peaks 19 nt upstream of cleavage sites and closely overlaps with m6A motifs. This suggests adenosines within or adjacent to AAUAAA may be methylated, and loss of m6A activates upstream poly(A) signals, consistent with m6A inhibiting poly(A) signal recognition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C104 integrate spatial distribution analysis with functional data. The overlap between AAUAAA and m6A motifs is quantitatively demonstrated, and the functional interpretation is consistent with the observed shift to proximal poly(A) sites in vir-1.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "Loss of m6A causes formation of 523 chimeric RNAs from readthrough transcription, but only 33% of upstream genes have detectable m6A sites. The predominant impact of m6A loss is suppression of proximal poly(A) sites rather than readthrough.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C108 quantify chimeric RNA formation with validation by RT-PCR. The low percentage of m6A at chimeric RNA genes (33%) appropriately suggests indirect effects or m6A-independent roles for VIR, which is acknowledged in the discussion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C7",
+      "C109",
+      "C111",
+      "C120"
+    ],
+    "result": "Nanopore DRS can map m6A and reveal combinatorial diversity of RNA processing (TSS, splicing, poly(A) sites, poly(A) tail length) in full-length single molecule reads. A simple statistical test of basecalling error rate can identify m6A. The approach has potential to refine Arabidopsis genome annotation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C3, C7, C109, C111, C120 represent the overarching conclusions supported by the comprehensive results presented throughout the manuscript. Each component (m6A detection, TSS mapping, splicing, 3' ends, poly(A) tails) has been individually validated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C115",
+      "C116"
+    ],
+    "result": "Loss of m6A from 3'UTRs is associated with decreased transcript abundance and defective RNA 3' end formation. m6A can suppress proximal poly(A) site selection, with the predominant effect being activation of proximal sites in the absence of m6A.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C5, C115, C116 synthesize the functional consequences of m6A loss. These are well-supported by the transcriptome-wide expression analysis, 3' end profiling, and statistical enrichment of m6A at affected genes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C6"
+    ],
+    "result": "Disrupted m6A causes lengthening of the circadian period.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C6 is supported by delayed fluorescence measurements showing statistically significant period lengthening in vir-1 compared to Col-0 and VIRc controls, with m6A detected at clock component genes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C8",
+      "C121"
+    ],
+    "result": "Nanopore DRS findings can refine Arabidopsis genome annotation, and the combination of nanopore DRS with other sequencing approaches will improve genome annotation more broadly.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8 and C121 are supported by the identification of novel splice junctions, alternative TSS, poly(A) sites, and antisense RNAs throughout the manuscript. The widespread overestimation of 5'UTR length in Araport11 provides specific examples.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C9"
+    ],
+    "result": "Applying nanopore DRS to less well-studied species could transform understanding of what their genomes encode.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C9 is speculative about future applications. While the Arabidopsis results suggest this potential, and the authors mention applying the method to water yam, no data from less well-studied species is presented to support this claim.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C110"
+    ],
+    "result": "Improvements in nanopore DRS utility likely depend on more accurate base-calling, refined signal splitting, increased read depth, and development of splice-aware alignment software.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C110 is supported by the documented limitations throughout the manuscript: base-calling errors requiring correction, over-splitting artifacts, depth requirements for m6A detection, and splice junction misidentification issues.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "Alternative m6A detection methods have significant limitations: antibody-based approaches cannot define stoichiometry and may underrepresent 3' end sites; MAZTER-Seq is limited to ACA context; EpiNano cannot call m6A in k-mers with multiple adenosines (92% of Arabidopsis m6A sites).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C114 accurately describe limitations of alternative methods based on appropriate citations and the authors' own analysis showing 92% of their identified sites would be undetectable by EpiNano.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "Arabidopsis expresses a CPSF30 isoform with a YTH domain that could bind m6A. m6A is almost exclusively found in mRNA 3'UTRs in steady-state analyses. Arabidopsis has 13 YTH domain-containing proteins with potential to bind m6A.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C117-C119 are supported by appropriate citations and the authors' own data showing 3'UTR enrichment. These provide context for interpreting the functional role of m6A in 3' end formation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C37",
+      "C50",
+      "C51",
+      "C88",
+      "C101"
+    ],
+    "result": "Background knowledge claims about RNA biology, sequencing methods, and established regulatory mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C17, C37, C50, C51, C88, C101 represent established knowledge appropriately cited from the literature. These provide necessary context but are not novel findings of this study.",
+    "result_type": "MINOR"
+  }
+]

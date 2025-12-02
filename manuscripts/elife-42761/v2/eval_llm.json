@@ -1,0 +1,291 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C28",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "The authors developed mCI, a monomeric C-terminal fragment of the \u03bb repressor, as a novel fluorescent probe that specifically binds RecA* filaments on ssDNA. In vitro characterization using SPR and smFRET demonstrated that mCI binds RecA* with high affinity (KD = 36 \u00b1 10 nM, Hill coefficient = 2.4 \u00b1 0.2), exhibits slow dissociation kinetics (t1/2 = 850 s for untagged mCI), and stabilizes RecA* in the active conformation. At low concentrations (10-100 nM), mCI does not significantly affect RecA* activities, while at high concentrations (5-10 \u03bcM) it can inhibit ATP hydrolysis, strand exchange, and delay LexA cleavage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The development and characterization of mCI as a RecA* probe is well-supported by multiple complementary in vitro assays (C34-C37, C39). The binding affinity and kinetics are quantified using SPR and smFRET (C34, C35, C39), and the functional effects at different concentrations are systematically tested (C40, C41). The data demonstrate that mCI is suitable for use at low concentrations where it does not perturb RecA* function, validating its utility as a probe.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C42",
+      "C141",
+      "C142",
+      "C153",
+      "C154"
+    ],
+    "result": "mCI inhibits SOS induction in a concentration-dependent manner in live cells. At low L-arabinose concentrations (<10\u207b\u00b3%), cells exhibit SOS induction comparable to wild-type, while at 10\u207b\u00b2 % L-arabinose, SOS induction is nearly completely inhibited. Despite weaker affinity of tagged mCI variants compared to untagged mCI, their effects on SOS induction were comparable. The data suggest that mCI competes with LexA for binding to RecA* in cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The concentration-dependent inhibition of SOS induction by mCI is clearly demonstrated through time-lapse imaging experiments (C42, C141). The comparison between tagged and untagged mCI variants (C142) and the interpretation that mCI competes with LexA (C154) are supported by the experimental data. The concentration estimates (C153) are based on prior work, which is appropriately cited.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C81",
+      "C82",
+      "C84",
+      "C85",
+      "C86",
+      "C151",
+      "C152",
+      "C147",
+      "C148",
+      "C149"
+    ],
+    "result": "Using live-cell PALM imaging with PAmCherry-mCI, the authors found that RecA* foci are present in 20% of wild-type cells during normal growth, with only 24% co-localizing with replisomes. Upon UV exposure, 56% of cells exhibited RecA* foci at 60 min, with up to 35% co-localizing with replisomes. The number of RecA* foci increased approximately five-fold from 0.3 \u00b1 0.6 per cell before UV to 1.4 \u00b1 0.25 per cell at 60 min, while replisome numbers remained constant. Co-localization was significantly greater than chance (<1%), indicating that most RecA* filaments form at locations distal to replisomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The co-localization analysis is well-supported by quantitative PALM imaging data (C44-C47, C147-C149, C151-C152). The statistical analysis demonstrating that co-localization is greater than chance (C84) strengthens the conclusion. The interpretation that most RecA* foci form distal to replisomes (C86) is directly supported by the low co-localization percentages. The data are internally consistent and appropriately quantified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C145",
+      "C146",
+      "C150"
+    ],
+    "result": "In lexA3(Ind-) cells expressing non-cleavable LexA, only 1.5% of cells exhibited PAmCherry-mCI foci in the absence of UV (compared to 19% in wild-type), and only 21% at 60 min after UV (compared to 56% in wild-type). The number of PAmCherry-mCI foci remained consistently low (0.03 \u00b1 0.25 before UV to 0.3 \u00b1 0.7 at 60 min). These results suggest that non-cleavable LexA competes with mCI for RecA* binding sites in vivo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The comparison between lexA+ and lexA3(Ind-) cells provides strong evidence that LexA cleavage is required for efficient mCI binding to RecA* in cells (C77-C78, C150). The interpretation that non-cleavable LexA competes with mCI (C79-C80) is reasonable given that both proteins bind to the RecA* filament groove. The quantitative data support the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C95",
+      "C96",
+      "C97",
+      "C48"
+    ],
+    "result": "RecA forms large cell-spanning bundles after UV irradiation that are stained by mCI probes. These bundles evolve from RecA foci and are visualized by RecA-GFP, PAmCherry-mCI, and YPet-mCI. Cells carrying the inactive recA1 allele (G160D) did not exhibit foci or bundles that bound mCI, demonstrating that bundle formation requires wild-type RecA capable of forming RecA* on ssDNA. The data suggest that RecA bundles consist of RecA in a conformation resembling RecA* and contain ordered assemblies of RecA bound to DNA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The formation of RecA bundles is well-documented through multiple imaging approaches (C87-C90). The critical control using the recA1 mutant (C91-C92) demonstrates that functional RecA is required for bundle formation and mCI binding, supporting the conclusion that bundles contain RecA* (C95-C97, C48). The convergence of evidence from different fluorescent probes strengthens the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C161",
+      "C162",
+      "C163"
+    ],
+    "result": "Cells lacking UvrD exhibited large RecA bundles and extensive cell filamentation characteristic of constitutive SOS even in the absence of external DNA damage. These observations are consistent with the hypothesis that UvrD plays a role in disassembling persistent RecA* filaments in wild-type cells, and that RecA* filaments are stabilized by YPet-mCI.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The observation of constitutive RecA bundles in \u0394uvrD cells (C93) is consistent with prior work showing that UvrD limits RecA filament formation (C161-C163). The interpretation that UvrD disassembles RecA* filaments (C94) is reasonable given the phenotype, though it remains a hypothesis. The data support the conclusion but additional experiments would strengthen the mechanistic understanding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C2",
+      "C51",
+      "C52",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "RecA is sequestered in storage structures during normal metabolism. The size of these storage structures is determined by the amount of cellular RecA, as demonstrated by comparing cells with different RecA expression levels. Electron microscopy with immunogold-labeled anti-RecA antibody confirmed that excess RecA is stored in membrane-associated, phase-separated storage structures even in cells carrying untagged wild-type RecA. Storage structures are positioned outside the nucleoid and do not cause cell filamentation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The existence of RecA storage structures is well-supported by both fluorescence microscopy (C51, C98-C101) and electron microscopy (C52, C102). The dependence of storage structure size on RecA expression level (C51, C100) provides strong evidence that these structures serve as RecA reservoirs. The EM data demonstrating membrane association in cells with untagged RecA (C52, C102) is particularly important for validating observations made with RecA-GFP fusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C3",
+      "C53",
+      "C54",
+      "C55",
+      "C103",
+      "C5"
+    ],
+    "result": "Upon DNA damage, RecA storage structures dissolve within one hour, with half of the structures lost within 45 \u00b1 5 min after UV damage in recA-gfp/pG353C-recA cells. After repair is complete, storage structures reform, with half of the population appearing by 135 \u00b1 5 min after UV. At later time points (2 hr 45 min), storage structures re-appeared at locations close to the poles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The dynamics of storage structure dissolution and reformation are quantitatively characterized through time-lapse imaging (C53-C55, C103). The measurements provide specific timescales for both processes, supporting the model that RecA is released from storage upon damage and re-sequestered after repair. The data are internally consistent and well-quantified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C56",
+      "C104",
+      "C105"
+    ],
+    "result": "YPet-mCI was cytosolic in the absence of DNA damage, suggesting lack of stable association with RecA storage structures. However, in response to UV irradiation, cytosolic YPet-mCI formed foci and bundles. Observations of cells expressing plasmid-based mCI in recA-gfp/pG353C-recA cells revealed no detectable influence of mCI on storage structure morphology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The differential localization of mCI before and after DNA damage (C56, C104) supports the conclusion that storage structures do not contain RecA in the RecA* conformation. The lack of mCI effect on storage structure morphology (C105) further confirms that mCI does not interact with storage structures. These observations are consistent with the model that storage structures contain DNA-free RecA.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C57",
+      "C63"
+    ],
+    "result": "Half of all RecA bundles in recA-gfp cells appear by 60 min after UV. The timing of RecA bundle formation in UV experiments coincided closely with that observed upon induction of site-specific double-strand breaks in the chromosome, despite differences in the nature of DNA damage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The timing of bundle formation is quantified (C57) and compared to prior work on DSB-induced bundles (C63). The similarity in timing despite different damage types is interesting and suggests common mechanisms. However, the claim would be strengthened by more detailed mechanistic investigation of what determines bundle formation kinetics.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C107",
+      "C165"
+    ],
+    "result": "DinI promotes the formation of RecA storage structures in cells. In the absence of DNA damage, fewer \u0394dinI cells (27%) exhibited storage structures compared to dinI+ cells (43%). Over-expression of DinI from pBAD-dinI in \u0394dinI cells recovered storage structures in the presence of L-arabinose.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The role of DinI in promoting storage structure formation is supported by comparison of dinI+ and \u0394dinI cells (C58) and by complementation experiments (C59). The observation is consistent with prior knowledge that DinI interacts with monomeric RecA (C107, C165). However, the mechanism by which DinI promotes storage structure formation remains unclear and would benefit from further investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C83"
+    ],
+    "result": "RecA* foci that co-localize with replisomes are likely associated with replisomes stalled at sites of DNA damage. RecA* foci that do not co-localize with replisomes are postulated to form in DNA gaps left behind by the replisome. RecA* filaments formed at replisomes in the absence of UV might reflect replication forks engaged in recombination-dependent DNA restart pathways or stalled at sites of bulky endogenous DNA damage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These claims represent interpretations and hypotheses (C60, C61, C83) rather than directly demonstrated results. While the interpretations are reasonable and consistent with prior work on gap formation and replication fork restart, they are not directly tested in this study. Additional experiments would be needed to definitively establish the molecular nature of the DNA substrates at RecA* foci.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C64"
+    ],
+    "result": "RecA bundles may be nucleated by RecA binding to either gaps or resected double-strand breaks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "This is a hypothesis (C64) based on the timing of bundle formation but is not directly tested. The claim is speculative and would require additional experiments to determine the DNA substrates that nucleate bundle formation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "GFP fluorescence in recA-gfp cells increased after DNA damage and peaked at approximately 130 min, with kinetics matching those of a plasmid-based gfpmut2 reporter under control of the recA promoter. The accumulation of fluorescent reporter protein reaches a maximum only after more than two hours after UV exposure, defining the time period during which cellular RecA concentration is increasing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The kinetics of RecA expression are well-characterized through time-lapse imaging (C67, C115-C116). The comparison between RecA-GFP and the gfpmut2 reporter (C68) validates the RecA-GFP fusion as a reporter of recA promoter activity. The interpretation that this defines the period of increasing RecA concentration (C117) is reasonable.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C76"
+    ],
+    "result": "The fitness of HG267 (dnaQ-YPet/pBAD-PAmCherry-mcI) was indistinguishable from that of wild-type MG1655 at the UV doses tested in the UV-survival assay.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The UV-survival assay (C76) demonstrates that the two-color strain used for co-localization experiments behaves like wild-type, validating its use for studying RecA* dynamics. This is an important control for the co-localization experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C157"
+    ],
+    "result": "Introduction of a single point mutation (G353C) in the ribosome binding site reduced the constitutive expression of mKate2 by half. Based on these results, the expression of RecA from the pG353C-recA plasmid is expected to be half of that from pConst-recA in cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The effect of the RBS mutation on mKate2 expression is directly measured (C108, C157), and the inference that this mutation has a similar effect on RecA expression (C109) is reasonable. This provides a validated method for modulating RecA expression levels.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C106",
+      "C57"
+    ],
+    "result": "Upon UV irradiation, cytosolic RecA-GFP forms foci that progress to form large, cell-spanning bundles over the course of several tens of minutes, with half of all bundles appearing by 60 min after UV.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The progression from foci to bundles is documented through time-lapse imaging (C106), and the timing is quantified (C57). This characterizes the temporal evolution of RecA structures during the SOS response.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C111",
+      "C110"
+    ],
+    "result": "The extent of co-localization of RecA* and replisomes detected in E. coli cells growing in media that supports multi-fork replication is lower both before and after UV irradiation compared to Bacillus subtilis, where a previous report showed basal co-localization of 74.8 \u00b1 8.4% increasing to 84.3 \u00b1 5.8% at 5 min after UV.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The comparison with prior work in B. subtilis (C110, C111) highlights species-specific differences in RecA* localization. The lower co-localization in E. coli may reflect differences in replication dynamics (multi-fork vs. single-fork replication) or RecA regulation between species. This is an important observation for understanding RecA biology across bacteria.",
+    "result_type": "MINOR"
+  }
+]

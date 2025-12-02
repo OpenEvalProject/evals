@@ -1,0 +1,1845 @@
+{
+  "submission": {
+    "id": "bb866b5a-4218-43bb-8942-ab2a09131d50",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T18:54:44.465770Z",
+    "updated_at": "2025-12-02T18:54:44.465770Z"
+  },
+  "content": [
+    {
+      "id": "2e481940-60b8-4df6-8ac6-9591c26a4c65",
+      "submission_id": "bb866b5a-4218-43bb-8942-ab2a09131d50",
+      "content_type": "manuscript",
+      "content_text": "# The structural determinants of PH domain-mediated regulation of Akt revealed by segmental labeling\n\n## Authors\n\n- Nam Chu<sup>1</sup> ([ORCID: 0000-0001-9717-5007](https://orcid.org/0000-0001-9717-5007))\n- Thibault Viennet<sup>2</sup> ([ORCID: 0000-0001-5349-0179](https://orcid.org/0000-0001-5349-0179))\n- Hwan Bae<sup>1</sup> ([ORCID: 0000-0001-5252-252X](https://orcid.org/0000-0001-5252-252X))\n- Antonieta Salguero<sup>1</sup>\n- Andras Boeszoermenyi<sup>2</sup>\n- Haribabu Arthanari<sup>2</sup> \u2020\n- Philip A Cole<sup>1</sup> ([ORCID: 0000-0001-6873-7824](https://orcid.org/0000-0001-6873-7824)) \u2020\n\n### Affiliations\n\n1. Division of Genetics, Department of Medicine, Brigham and Women's Hospital Boston United States\n2. Department of Biological Chemistry and Molecular Pharmacology, Harvard Medical School Boston United States\n3. Department of Pharmacology and Molecular Sciences, Johns Hopkins School of Medicine Baltimore United States\n4. Department of Cancer Biology, Dana-Farber Cancer Institute Boston United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nAkt is a critical protein kinase that governs cancer cell growth and metabolism. Akt appears to be autoinhibited by an intramolecular interaction between its N-terminal pleckstrin homology (PH) domain and kinase domain, which is relieved by C-tail phosphorylation, but the precise molecular mechanisms remain elusive. Here, we use a combination of protein semisynthesis, NMR, and enzymological analysis to characterize structural features of the PH domain in its autoinhibited and activated states. We find that Akt autoinhibition depends on the length/flexibility of the PH-kinase linker. We identify a role for a dynamic short segment in the PH domain that appears to regulate autoinhibition and PDK1-catalyzed phosphorylation of Thr308 in the activation loop. We determine that Akt allosteric inhibitor MK2206 drives distinct PH domain structural changes compared to baseline autoinhibited Akt. These results highlight how the conformational plasticity of Akt governs the delicate control of its catalytic properties.\n\n## Introduction\n\nAkt1 (termed Akt in the present work) is a Ser/Thr kinase that is a critical node in cell signaling and connects growth factor receptor activation to cell growth and metabolic regulation (Manning and Toker, 2017; Liao and Hung, 2010; Fruman et al., 2017). The Akt subfamily of kinases includes closely related paralogs Akt1-3 and are members of the larger AGC kinase family, comprised of about 60 members of the kinome (Leroux et al., 2018; Pearce et al., 2010). Akt is a 480 amino acid protein that contains an N-terminal PH (pleckstrin homology) domain followed by a catalytic (kinase) domain and culminates in a regulatory C-terminal disordered tail (C-tail) (Figure 1A). Our current understanding of Akt activation is that, in response to growth factor stimulation, phosphatidyl inositol diphosphate (PIP2) is converted to PIP3 by PI3-kinase and PIP3 recruits Akt to the plasma membrane via its PH domain (Manning and Toker, 2017; Haeusler et al., 2018). Upon recruitment, Akt is phosphorylated by both mTORC2 kinase at Ser473 and PDK1 kinase at Thr308 and this dual phosphorylation leads to activation of Akt (Sarbassov, 2005; Alessi et al., 1996). Additionally, Akt can also be phosphorylated at Ser473 by DNA-PK upon activation of DNA damage response in the nucleus (Bozulic et al., 2008). In an alternative pathway of Akt activation, Akt may be phosphorylated on Ser477 and Thr479 by Cdk2/cyclinA instead of Ser473 and this may happen in the cell nucleus (Liu et al., 2014). Excluding Thr308, the three other phosphorylations (Ser473, Ser477 and Thr479) are located in the disordered C-terminal tail.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/59151/elife-59151-fig1-v2.jpg)\n\n**Figure 1.:** (A) Schematic representation of Akt domains with phosphorylation sites of interest highlighted as red balls. (B) Cartoon model depicted for two distinct Akt activation mechanisms induced by phospho-Ser473 and dual phospho-Ser477/Thr479 (Chu et al., 2018). Without C-tail phosphorylations, Akt remains in an inactive autoinhibited\u00a0state where the PH and kinase domains interact intramolecularly. The mTORC2-mediated Ser473 phosphorylation activates Akt by inducing an interaction between the C-tail and the PH-kinase domain linker, dislodging the PH domain from the kinase domain. Alternatively, the dual Cdk2/cyclinA-mediated pSer477/pThr479 is presumed to activate Akt by interaction with the activation loop and PH domain. Note that, although C-terminal phosphorylation is shown preceding activation loop Thr308 phosphorylation by PDK1, it is uncertain in normal cell signaling whether C-terminal phosphorylation or Thr308 phosphorylation comes first in Akt activation or if it is in\u00a0random order. (C) Crystal structure of Akt (aa 1\u2013443) bound to allosteric inhibitor compound VIII (left, PDB: 3O96, [Wu et al., 2010]) and cartoon model illustrating the current model of the allosteric drug-induced autoinhibited form of Akt with the non-phosphorylated C-tail.\n\nOver the past two decades, several aspects of the regulatory mechanisms of Akt have been described. An autoinhibitory mechanism involving an intramolecular interaction between its N-terminal PH domain and C-terminal kinase domain is generally accepted (Bellacosa et al., 1998; Calleja et al., 2009; Calleja et al., 2007; Cole et al., 2019; Figure 1B). The structural basis for this autoinhibitory conformation has been proposed based on high resolution X-ray crystal structures of near full-length Akt in complex with small molecule catalytic inhibitors such as compound VIII (Wu et al., 2010; Lapierre et al., 2016; Ashwell et al., 2012; Figure 1C). A mechanistically related allosteric inhibitor of compound VIII, MK2206, has been widely used in cancer therapeutic clinical trials aimed to block Akt action (Hirai et al., 2010; Sangai et al., 2012; Yap et al., 2011; Nitulescu et al., 2016).\n\nWhile phosphorylation at Thr308 is important for kinase activity in the context of the isolated Akt kinase domain, C-terminal phosphorylation shows significant impact only in the context of full-length Akt (Chu et al., 2018; Cole et al., 2019; Alessi et al., 1996; Calleja et al., 2009; Yang et al., 2002a; Yang et al., 2002b). Recent structural studies suggest that phosphorylation at Ser473 concurrently interacts with a PH-kinase domain linker basic patch, especially the sidechain of Arg144, and the kinase N-lobe via Gln218 (Chu et al., 2018; Figure 1B). A model based on these structural interactions postulates that these interactions with phosphorylated Ser473 (pSer473) help to displace the PH domain from the kinase domain thereby stimulating catalytic activity. Phosphorylation of Ser477/Thr479 is suggested to relieve autoinhibition of Akt in a distinct fashion, potentially by interaction with the activation loop and/or the PH domain (Chu et al., 2018; Figure 1B).\n\nHowever, the roles and conformational status of the PH domain in the active and inactive states of Akt have been controversial. It has been suggested that PIP3 activates Akt not simply by membrane recruitment but by dislodging the PH domain from the kinase domain independent of promoting Akt phosphorylation by upstream kinases (Ebner et al., 2017; Lu\u010di\u0107 et al., 2018). In contrast to these studies, this allosteric mechanism of Akt activation by PIP3 was not confirmed by our group where neither soluble nor vesicle-embedded PIP3 stimulated Akt kinase activity (Chu et al., 2018). Moreover, the binding affinities of soluble PIP3 with pSer473 Akt vs. non-phospho C-tail Akt were essentially identical (Chu et al., 2018). In comparison, soluble PIP3 binding to pSer477/pThr479 was attenuated by about fourfold compared to pSer473 and non-C-terminally phosphorylated Akt (Chu et al., 2018). Remarkably, crystal structures of near full-length Akt in complex with compound VIII and related allosteric inhibitors reveal that the PIP3 binding pocket on the PH domain is occluded by its interactions with the kinase domain (Wu et al., 2010; Figure 1C).\n\nX-ray crystal structures of near full-length Akt in the absence of allosteric inhibitors, as well as of active Akt including the PH domain have not yet been reported. Thus, our understanding of the structure and conformation of the PH domain in the context of the full-length Akt protein is incomplete. In this study, we have used a combination of enzymatic analysis of linker-altered Akts and solution NMR analysis of segmentally isotopically labeled semisynthetic Akt forms to characterize the structural features of the PH domain within the full-length protein in differentially phosphorylated states. These structural measurements combined with biochemical data highlight regions in the PH domain that appear to show distinct changes in the context of C-terminal phosphorylation and allosteric drug inhibition.\n\n## Results\n\n### Role of linker length and flexibility in autoinhibition and activation of Akt\n\nIntramolecular interactions between the Akt PH and kinase domains are presumed to enforce autoinhibition of Akt's enzymatic activity. Interaction of pSer473 with the linker basic patch, particularly Arg144, appears to help relieve such autoinhibition. We have attempted to determine the role of linker length and flexibility that may contribute to how the pSer473-Arg144 interaction influences the relief of autoinhibition. A prior cellular study meant to investigate this possibility by inserting a flexible hexa-Gly segment in the middle of the PH-kinase linker showed reduced Akt signaling in response to growth factors. The results of these experiments were complicated to interpret, however, because hexa-Gly insertion led to reduced pSer473 levels (Chu et al., 2018).\n\nTo characterize the role of linker flexibility in more depth, we prepared the semisynthetic wt and hexa-Gly insertion Akt forms containing C-terminal phosphorylation using expressed protein ligation (Muir et al., 1998; Figure 2\u2014figure supplement 1). In this procedure, aa1-459 of wt Akt and the hexa-Gly insertion segments fused to an intein were expressed in insect cells along with PDK1 and phosphatase inhibitor okadaic acid to ensure complete Thr308 phosphorylation. The C-terminal thioester fragments were ligated to N-Cys C-tail peptides (aa460-480) containing pSer473, pSer477/pThr479, or no C-tail phosphorylation and the semisynthetic proteins further purified to greater than 80%. Near stoichiometric Thr308 phosphorylation of these Akt forms was confirmed by western blot. It should be noted that Thr450 phosphorylation which is necessary for Akt stability occurs in insect cells concurrently with Akt production (Chu et al., 2018).\n\nWe then analyzed the catalytic properties of the wild type (wt) and hexaGly mutant proteins (Figure 2A). It should be noted that the apparent wt catalytic efficiencies (kcat/Km values) were relatively similar to those reported previously for wt Akt in various states of phosphorylation generated in this fashion (within\u00a0~3-fold, [Chu et al., 2018]). Some variation in kinase activities between different preparations can be explained by possible post-translational modification differences in the recombinant protein portion of the semisynthetic Akts which may occur in insect cells. To minimize the effects of catalytic differences among insect cell preparations, where possible we compared Akt forms with distinct C-terminal phosphorylation status prepared from the same batch of recombinant Akt thioester. Moreover, the small contamination (~10%) of slightly truncated Akt in these preps (Figure 2\u2014figure supplement 1) is not expected to alter significantly the kcat/Km values measured (see Materials and methods).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/59151/elife-59151-fig2-v2.jpg)\n\n**Figure 2.:** (A) Schematic illustration for radiometric kinase assay using a biotinylated GSK3 peptide as Akt substrate and steady-state kinetic plots for v/[E] versus [ATP] with 20 \u00b5M GSK3 peptide for semisynthetic pThr308 Akt proteins WT (blue) versus the linker 6xGly insertion (red) with non-p C-tail (left), pSer473 (middle) and dual-pSer477/pThr479 (right), n\u00a0=\u00a02. (B) Enzyme catalytic efficiencies (apparent kcat/Km) obtained from (A) for each semisynthetic Akt protein, WT (left) and 6xGly insertion (right), two independent repeats were performed for each assay, S.D. shown.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/59151/elife-59151-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A\u2013C) MALDI-MS analysis of synthetic Akt C-tail peptides that were used in this work. (D) Full length, 6xGly insertion, pThr308-Akt proteins with non-p C-tail (lanes 1\u20133), pSer473 (lanes 4\u20136) and di-pSer477/pThr479 (lanes 7\u20139) obtained from 2-piece expressed protein ligation strategy, diluted 10-fold, and loaded 2.5, 5 and 10 \u00b5l, respectively; lanes 10\u201314: BSA standards.\n\nThere was a 3.4-fold reduction in kcat/Km of hexaGly pSer473 Akt relative to that of wt pSer473 Akt (Figure 2B). In contrast, the non-phosphorylated C-tail hexaGly Akt was\u00a0~8 fold more active compared with the corresponding wt Akt. These results support a role for linker length or flexibility as a contributing factor to activation of Akt orchestrated by pSer473-basic linker patch interaction. This also indicates that autoinhibition is alleviated in the non-C-tail phosphorylated state if this linker is too flexible.\n\nIn contrast to the results with pSer473, the activity of the dual C-terminal phosphorylated (pSer477/pThr479) Akt showed only a minor difference (<2 fold) when comparing the hexaGly linker insertion vs. wt Akt (Figure 2B). These findings suggest that linker length or flexibility is not an important factor in pSer477/pThr479-mediated Akt activation, consistent with an alternative mode of regulation for this dual phosphorylated C-tail form.\n\n### Segmental isotopic labeling of Akt by protein semisynthesis\n\nWe embarked on an effort to further characterize the domain structural interactions between the PH domain and the kinase domain within Akt using solution NMR. However, given the size of full-length Akt (56 kDa), the poor expression yields and low activity of E. coli-expressed kinase domain and the difficulty of achieving site-specific phosphorylation, we chose to develop a new three-piece expressed protein ligation-based segmental labeling protocol (Liu et al., 2009; Xu et al., 1999; Figure 3A and see Materials and methods).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/59151/elife-59151-fig3-v2.jpg)\n\n**Figure 3.:** (A) Schematic representation of the semisynthesis strategy. (B) Alignment of Akt1 (aa 118\u2013127) and Akt2 (aa 119\u2013129) linkers with Akt1 Ser122 (ligation site, mutated to Cys in our study) and Akt2 Cys124 highlighted (red). (C\u2013D) SDS-PAGE analyses of EPL reaction between S122C, \u0394121, pThr308, pSer473 Akt fragment and isotopically labeled PH thioester fragment (C); and segmentally isotopically labeled pThr308, pSer473 full-length Akt purified from (C) using size exclusion chromatography (D), lanes 2\u20134: purified full-length Akt diluted 10-fold from stock, loaded volumes are 2.5, 5 and 10 \u00b5l, respectively, lanes 5\u20139: BSA standards 0.25, 0.5, 1, 2, 4 \u00b5g, dashed line: deletion of unrelated samples. M: protein markers (kDa).\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/59151/elife-59151-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) 15N, 13C, 2H isotopically labeled PH domain purified from 1 L of E. coli expression, diluted 20-fold, and loaded 5 and 10 \u00b5l (lanes 1\u20132); lanes: 3\u20137. (B\u2013C) Pure segmentally isotopically labeled full-length pThr308 Akt proteins with non-p C-tail (B, lanes 1\u20133: 2.5, 5, 10 \u00b5l) and di-pSer477/pThr479 (C, lanes 1\u20132: 5, 10 \u00b5l) diluted 10-fold; lanes 4\u20137: BSA standards. (D) Steady-state kinetic plots v/[E] versus [ATP] with 20 \u00b5M GSK3 peptide for semisynthetic pThr308, pSer473 Akt proteins from two-piece (blue) and three-piece (magenta) expressed protein ligation strategies, n\u00a0=\u00a02. Note that, Akt protein obtained from three-piece ligation is lacking the N-terminal tags: Flag, HA and 6xHis. The obtained catalytic efficiencies (apparent kcat/Km values) expressed in the table (right) from at least two independent repeats performed for each assay, S.D. shown.\n\nThe PH domain (aa 1\u2013121) is expressed in E. coli and isotopically labeled with (13C), 15N and 2H to ensure optimal relaxation properties (Figure 3\u2014figure supplement 1A). The linker-kinase domain segment (aa 122\u2013459) was expressed in Sf9 insect cells using the baculovirus system and phosphorylated at Thr308 in vitro using recombinant GST-PDK1, achieving site-selective phosphorylation and baseline activity. The kinase domain was not isotopically labeled, thus greatly reducing spectral crowding in context of the full-length Akt. The C-terminal tails (aa 460\u2013480) were prepared by solid phase peptide synthesis in order to efficiently generate the desired phospho-forms of Akts: pSer473, pSer477/pThr479 or the non-phosphorylated C-tail variants (Figure 2\u2014figure supplement 1A\u2013C).\n\nTo obtain segmental labeling of full-length Akt, both the PH and kinase domains were fused to GyrA inteins, allowing C-terminal thioester formation. The C-terminal thioester form of the Akt kinase domain was then reacted with the requisite C-terminal peptides possessing an N-terminal Cys residue. Then, a N-Cys on the kinase domain was exposed after TEV protease cleavage, and reacted with the PH domain C-terminal thioester. Note that the natural Ser122 of Akt1 was replaced by Cys at this position \u2013 as needed for chemoselective ligation during the assembly of the semisynthetic protein \u2013 but the corresponding native residue in Akt2 is a Cys, indicating that this substitution should be well-tolerated (Figure 3b). This sequential three-piece ligation strategy facilitated the production of milligram quantities of highly pure (monomeric), full-length Akt, which was triply labeled in the PH domain, with phosphorylation at Thr308 and specific and stoichiometric C-terminal phosphorylation states (Figure 3C and D, and Figure 3\u2014figure supplement 1B and C). Kinase assays with segmentally labeled pSer473 Akt revealed that its enzymatic activity was within twofold of that of the unlabeled semisynthetic enzyme prepared in a two-piece ligation of aa1-459 with aa460-480 as described previously (Chu et al., 2018; Figure 3\u2014figure supplement 1D).\n\n### NMR analysis of segmentally labeled Akt forms\n\nGiven the limited solubility and stability of these full-length Akt forms under suitable NMR conditions, assignments were obtained for the isolated PH domain (see Materials and methods) and were subsequently transferred to the corresponding peaks in spectra of the segmentally labeled Akt proteins. About 60% of backbone hydrogen and nitrogen chemical shifts of residues in the segmentally labeled Akt forms could be unambiguously assigned using this procedure.\n\nThe interaction of the PH domain with the various phospho variants of the C-tail, in the context of the segmentally labeled full-length Akt, was initially assessed by 15N-1H-HQSC spectra using combined chemical shift perturbations (CSP) and peak broadening (Figure 4 and Figure 5). It is clear from a comparison of spectra of the isolated PH domain with that of the PH domain the context of full-length Akt (Figure 5\u2014figure supplement 1) that the PH domain undergoes extensive interactions with the kinase domain and/or the C-tail, and potential conformational rearrangements. The CSP and line broadening are spread throughout the PH domain, including regions that interact with the PIP3 analog inositol hexaphosphate (IP6) (Figure 5\u2014figure supplement 2B and E). Note that the CSPs observed on the PH domain are on average three-fold higher in the context of full-length Akt than those induced on the free PH domain by IP6 or the addition of the kinase domain in trans (Figure 5\u2014figure supplement 1 and Figure 5\u2014figure supplement 2A and D). These findings highlight the importance of the intramolecular PH-kinase domain interactions in intact Akt that can be captured only in the context of the full-length protein.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/59151/elife-59151-fig4-v2.jpg)\n\n**Figure 4.:** (A) Overlay of 15N-1H HSQC spectra of the PH domain in the context of full-length semisynthetic Akt with non-phosphorylated C-tail (blue) and pSer473 (red). Select residue-specific assignments are shown. (B) Overlay of 15N-1H HSQC spectra of the PH domain in the context of full-length semisynthetic Akt with non-phosphorylated C-tail (blue) and pSer477/pThr479 (green). Select residue-specific assignments are shown. (C) Expanded spectra around the peaks assigned to Ile6, Gln43, Asp44, Thr65 and Thr101. Overlay of all three spectra, same color coding. Arrows indicate chemical shift perturbations. Note that contour levels have been plotted lower for the non-p-C Gln43 and pSer477/pThr479 Asp44 peaks.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/59151/elife-59151-fig5-v2.jpg)\n\n**Figure 5.:** (A) Cartoon representation of secondary structure elements (rectangle for \u03b2-strands, zigzag for \u03b1-helices) in Akt PH domain. Color coding represents regions with distinct binding modes to the kinase domain. Star indicates that the \u03b1-helix is present only when Akt is bound to IP4. (B\u2013C) Combined chemical shift perturbations derived from spectra in Figure 4 and plotted along the PH domain primary sequence for pSer473 (B) and pSer477/pThr479 (C) referenced to non-p-C. Dashed red line corresponds to the standard deviation to the mean, excluding outliers (higher than 3xStDev). Grey bars indicate peaks that disappeared from the spectrum, also indicating strong interaction. Red area highlights the short hinge primarily studied here. Negative bars (\u22120.05) indicate non-assigned residues, negative bars (\u22120.025) indicate residues which assignment could not be easily transferred or recovered in the context of full-length Akt. (D) Structure of allosteric drug inhibited Akt (PDB: 3O96, [Wu et al., 2010]) with PH domain as ribbon in the front and kinase domain as surface in the back (N-lobe in light blue, C-lobe in dark blue). Color coding of secondary structure elements in the PH domain corresponds to (A). Allosteric inhibitor MK2206 is displayed in white. Main Akt domains are labeled. (E\u2013F) Same structure representation as in (D) with the most significantly affected residues (chemical shift perturbations higher than the standard deviation) colored in red in the PH domain in case of pSer473 (E) and pSer477/pThr479 (F). Non-affected residues are shown in light orange and non-assigned residues in grey. Representations rotated by 180\u00b0 are shown. (G) Statistical bar and whisker plots of saturation transfer efficiencies from CST data (Figure 5\u2014figure supplement 3) for each C-tail phospho-state, categorized and color coded according to secondary structure elements as in (A) and (D). A ratio of 0 indicates maximum saturation transfer efficiency (very tight interaction) whereas a ratio of 1 indicate no saturation transfer (no interaction).\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/59151/elife-59151-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) 15N-1H HSQC spectra of the isolated PH domain (black) and the PH domain in the context of full-length semisynthetic Akt with pS473 C-tail (red). Select residue-specific assignments are shown, color coded according to (B). (B) Cartoon representation of secondary structure elements (rectangle for \u03b2-strands, zigzag for \u03b1-helices) in Akt PH domain. Color coding represents regions with distinct binding modes to the kinase domain. Star indicates that the \u03b1-helix is present only when Akt is bound to IP4. (C) Combined chemical shift perturbations derived from spectra in (A) and plotted along the PH domain primary sequence. Dashed red line corresponds to the standard deviation to the mean, excluding outliers (higher than 3xStDev). Grey bars indicate peaks that disappeared from the spectrum, also indicating strong interaction. Red area highlights the short hinge primarily studied here. Negative bars (\u22120.05) indicate non-assigned residues. (D) Structure of allosteric drug-inhibited Akt (PDB: 3O96, [Wu et al., 2010]) with PH domain as carton on top and kinase domain as surface in the back. Color coding of secondary structure elements in the PH domain corresponds to (B). Allosteric inhibitor MK2206 is displayed in white.\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/59151/elife-59151-fig5-figsupp2-v2.jpg)\n\n**Figure 5\u2014figure supplement 2.:** (A\u2013B) 15N-1H HSQC spectra of the isolated PH domain (black) in the absence and in the presence of kinase domain (A, red) or IP6 (B, red). Select residue-specific assignments are shown, color coded according to (C). (C) Cartoon representation of secondary structure elements (rectangle for \u03b2-strands, zigzag for \u03b1-helices) in Akt PH domain. Color coding represents regions with distinct binding modes to the kinase domain. Star indicates that the \u03b1-helix is present only when Akt is bound to IP4. (D\u2013E) Combined chemical shift perturbations derived from spectra in (A\u2013B) and plotted along the PH domain primary sequence for PH domain in the presence of kinase domain (D) or IP6 (E), respectively, referenced to the isolated PH domain. Dashed red line corresponds to the standard deviation to the mean, excluding outliers (higher than 3xStDev). Grey bars indicate peaks that disappeared from the spectrum, also indicating strong interaction. Red area highlights the short hinge primarily studied here. Negative bars indicate non-assigned residues. (F\u2013G) Crystal structures of the isolated PH domain (F, PDB:1UNP) and IP4-bound PH domain (G, PDB: 1UNQ) (Milburn et al., 2003). IP4 is shown in magenta. The short hinge shown in red is folded as a short \u03b1-helix. (H) Structure of allosteric drug-inhibited Akt (PDB:3O96, [Wu et al., 2010]) with PH domain as a ribbon cartoon and the kinase domain as a surface representation (purple). The allosteric inhibitor MK2206 is displayed in white. It is evident that IP4 and the kinase domain partially overlap in their interactions with the PH domain.\n\n![Figure 5\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/59151/elife-59151-fig5-figsupp3-v2.jpg)\n\n**Figure 5\u2014figure supplement 3.:** (A\u2013C) 15N-1H cross-saturation transfer spectra of the deuterated PH domain in the context of the semisynthetic full-length protonated Akt. Spectra where the kinase domain\u2019s protons have been saturated are shown in red and their unsaturated reference in black for the non-phosphorylated C-tail (A), pSer473 (B) and pSer477/pThr479 (C) forms, respectively. Select residue-specific assignments are shown, color coded according to (E). (D) Structure of allosteric drug-inhibited Akt (PDB:3O96, [Wu et al., 2010]) with the PH domain as a ribbon cartoon on top and the kinase domain as a surface representation in the back. Color coding of secondary structure elements in the PH domain corresponds to (E). Allosteric inhibitor MK2206 is displayed in white. (E) Cartoon representation of secondary structure elements (rectangle for \u03b2-strands, zigzag for \u03b1-helices) in Akt PH domain. Color coding highlights regions with distinct binding modes to the kinase domain. Star indicates that the \u03b1-helix is present only when Akt is bound to IP4. (F\u2013H) Saturation transfer efficiency derived from (A\u2013C) plotted as the ratio of peak intensities of saturated over unsaturated spectra against the PH domain primary sequence for non-p (F), pSer473 (G) and pSer477/pThr479 (H) forms, respectively. A ratio of 0 indicates maximum saturation transfer efficiency, whereas a ratio of 1 indicate no saturation transfer. An indicative dashed red line has been drawn at 0.5. Red area highlights the short hinge primarily studied here. Negative ratios indicate non-assigned residues. Residues that were not present in 70% 2H2O have ratios set to 0.\n\nNext we focused on comparing the spectral differences in the PH domains among the three C-tail phospho-states: pSer473, pSer477/pThr479, and non-phosphorylated C-tail (non-p-C) (Figure 4 and Figure 5). While the N-terminus (aa 1\u201341, \u03b2-strands 1 to 3) seems to show relatively minor differences in response to variations in the C-tail phospho-states, the region encompassing \u03b2-strands 4 and 5 (aa 72\u201390) show comparatively larger perturbations depending on which C-tail phospho-states are present. The effects of CSP and line broadening can be induced by a direct interaction or an allosteric change, both of which result in changes in the electronic environment of the observed proton. To distinguish between direct and indirect binding interactions between the kinase and PH domains among the different Akt forms, we employed cross saturation transfer (CST) NMR measurements, which exclusively provides information on the direct interaction interface (W\u00fcthrich, 2000; Takahashi et al., 2000). Perdeuterated, 15N-labeled, PH domain was expressed and covalently linked to the protonated kinase domain (and the various phospho-variants) as discussed above. In a CST experiment, we selectively magnetize the protonated protein in the aliphatic region, in this case the kinase domain, and monitor the transfer of magnetization to the perdeuterated partner, the PH domain. Since CST experiments are performed in 70% 2H2O (30% H2O) solvent to minimize non-specific effects due to spin diffusion, the inherent sensitivity of the experiment, which is concentration limited, is further reduced. Hence, we considered the CST effect in a contiguous stretch of amino acids as a true positive. Upon saturation of the kinase domain, peak intensities of select resonances in the PH domain were effectively reduced by as much as 90% (Figure 5G and Figure 5\u2014figure supplement 3), underscoring the direct intramolecular interaction between the PH and kinase domains among the various Akt phospho-forms. The results from CST the experiments along with those derived from the CSP analysis are discussed below.\n\nAligning with the CSP data, no striking differences, in a contiguous stretch of amino acids were observed in the regions encompassing \u03b2-strands 1\u20133 and 4\u20137 (Figure 5G and Figure 5\u2014figure supplement 3). This indicates that the modes of activation of Akt may depend on subtle changes in the binding interface rather than on major differences in binding affinity. However, a small but distinct difference in the CST was observed for \u03b2-strands 4\u20137 across the three tested forms of Akt (Figure 5G). Specifically, the CST for \u03b2-strands 4\u20137 of pSer473 is lower than that of the non-phosphorylated and pSer477/pThr479 forms. This difference could be the result of a marginally weaker interaction of \u03b2-strands 4\u20137 of the PH domain with the kinase domain in the pSer473 form. This is consistent with the biochemical data.\n\nFocusing on the strong CST effects, the C-terminal alpha-helix (aa 100\u2013109) of the PH domain showed a significant CSP between the pSer473 and pSer477/pThr479 forms (Figure 4 and Figure 5B\u2013E). There were no significant changes in the chemical shifts of the C-terminal alpha-helix PH domain between the non-p-C and pSer473. On the contrary, the spectrum of pS477/pThr479 shows marked CSPs compared to the non-p-C form on the residues corresponding to the C-terminal helix. Thus, we surmise that this PH domain C-terminal alpha-helix plays a specific role in the mode of activation of Akt by the dual pSer477/pThr479 modifications. Notably, results from the CST experiments reinforced this possibility since the peaks of residues corresponding to the C-terminal helix exhibit marked reduction in intensity (near-complete disappearance) in the pSer477/pThr479 form (Figure 5G and Figure 5\u2014figure supplement 3).\n\nFurthermore, residues Gln43 and Asp44 of the PH domain which are in an extended loop between \u03b2-strands 3 and 4 show either relatively large CSPs or marked peak broadening beyond detection in the phospho-C-tail forms relative to the non-phospho-C-tail form (Figure 4 and Figure 5B and C). Similarly, the CST behavior for Gln43 and Asp44 was closely linked the phospho-state of the C-tail (Figure 5G and Figure 5\u2014figure supplement 3) with an apparent loosening of the interaction for pSer473 but an apparent tightening for pSer477/pThr479. We therefore posit that this region plays a role in governing Akt regulation and investigated this possibility below.\n\n### Role of a short hinge, aa 44\u201346, in Akt regulation\n\nPrior X-ray crystal structures of the Akt PH domain have shown that aa 44\u201346 (DVD) located between \u03b2-strands 3 and 4 undergo a helix to loop transition between the inositol tetraphosphate-bound PH domain and the apo form (Thomas et al., 2002; Milburn et al., 2003; Meuillet, 2011; Carpten et al., 2007; Figure 5\u2014figure supplement 2F and G). Given the fact that peaks assigned to Gln43 and Asp44 show either the highest CSP or extensive peak broadening as a function of C-tail phosphorylation status described above (Figure 4), we hypothesized that this conformational change contributes to Akt regulation in the intact protein. To test the hypothesis that this short hinge affects the capacity of Akt to bind PIP3, we recombinantly expressed a triple mutant \u2013 D44G/V45P/D46G \u2013 of the isolated PH domain aimed at disrupting the potential of this segment to form a stable helix with Gly and Pro residues that favor a random coil secondary structure (Pace and Scholtz, 1998). We then measured the affinity of wt and triple mutant PH domains to bind PIP3, using a fluorescence anisotropy assay; however, we did not detect any significant difference in the binding affinity (Figure 6\u2014figure supplement 1A).\n\nTo characterize the effect of the short hinge further, we produced wt and triple mutant semisynthetic Akt variants using a standard expressed protein ligation strategy in which recombinant aa 1\u2013459 thioester was generated in Sf9 insect cells along with co-overexpression with PDK1 to afford Thr308 phosphorylation. Using western blotting, we noted that the degree of phosphorylation at Thr308 was reduced compared to wt Akt prepared under the same conditions (Figure 6\u2014figure supplement 1B and C). We thus treated partially Thr308 phosphorylated triple mutant (D44G/V45P/D46G) Akt1 aa 1\u2013459 with PDK1 in an in vitro kinase reaction which appeared to complete the phosphorylation of Thr308 to a level matching that of wt Akt1 obtained simply from PDK1 co-expression (Figure 6\u2014figure supplement 1E). Achieving similar pThr308 levels for wt and D44G/V45P/D46G Akt is necessary to determine how the PH hinge mutation affects catalysis in the same context.\n\nWe then ligated Akt aa 1\u2013459 recombinant thioesters with synthetic peptides containing aa 460\u2013480 monophosphorylated at Ser473, diphosphorylated at Ser477 and Thr479, or non-phosphorylated (Figure 6\u2014figure supplement 1D). Kinase assays performed with the triple mutant pSer473 full-length Akt semisynthetic protein showed that its catalytic efficiency, kcat/Km, is reduced\u00a0~10 fold relative to wt pSer473 under these conditions (Figure 6A and B). In contrast, the pSer477/pThr479 activation was essentially unaffected by the PH domain triple mutation (DVD -\u00a0>\u00a0GPG). The differences in sensitivity of the DVD triple mutation to the two C-tail phosphorylated forms are consistent with the distinct CST behaviors noted above (Figure 5G and Figure 5\u2014figure supplement 3).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/59151/elife-59151-fig6-v2.jpg)\n\n**Figure 6.:** (A) Steady-state kinetic plots v/[E] versus [ATP] with 20 \u00b5M GSK3 peptide for semisynthetic pThr308 Akt proteins WT (blue) versus D44G/V45P/D46G (GPG) mutant with non-P C-tail (left), pSer473 (middle) and pSer477/pThr479 (right), n\u00a0=\u00a02. (B) Catalytic efficiencies (apparent kcat/Km values) for each semisynthetic Akt phospho form of WT (left) and GPG mutant (right) obtained from kinase assays in (A), two independent repeats were performed for each assay, S.D. shown. (C) Cellular analysis of the effect of GPG mutant on Akt phosphorylation. Left, Akt and GAPDH antibodies western blot of cell lysate at different time points after stimulation, as indicated, Neg.: non-transfected cells stimulated with insulin/IGF-1; (-): transfected with DNA plasmid but not stimulated with insulin/IGF-1 (left). Right, quantification of Akt Thr308 phosphorylation level (blue for WT and green for GPG mutant) using ImageJ2 (n\u00a0=\u00a05, SEM shown, 0.01\u00a0< p < 0.05). (D) Time course kinase assay for PDK1-catalyzed Akt Thr308 phosphorylation (schematic illustration). Left, western blot of semisynthetic pSer473 Akt (WT or GPG) after incubation with PDK1 for different times, as indicated. Right, corresponding calculated half-time of completion obtained from two independent repeats and S.D. shown.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/59151/elife-59151-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (A) Fluorescence anisotropy measurements of Akt PH domains WT and GPG mutant with fluorescein-labeled soluble PIP3 (n\u00a0=\u00a02).\u00a0The obtained PIP3 Kd values expressed in the table (right) with S.D. shown. (B) Western blot analysis of pThr308 level for WT and GPG-Akt with pThr308 obtained from Sf9 co-expressed Akt(aa 1\u2013459)-MxeIntein-CBD and GST-PDK1, and treated with okadaic acid (in vivo pThr308). Lane 1: truncated Akt(aa 2\u2013459) without pThr308, lane 2: full-length WT Akt following in vitro PDK1-catalyzed pThr308 (WT-Akt in vitro), lane 3: full-length WT Akt pThr308 obtained with PDK1 co-expression and okadaic acid treatment (WT-Akt in vivo), lane 4: full-length GPG Akt mutant with in vivo pThr308 (GPG-Akt in vivo). (C) Quantification of western blot intensities in (B). (D) Semisynthesis of pThr308 GPG-Akt proteins with pSer473 (lanes 1\u20133), dual-pSer477/pThr479 (lanes 4\u20136) and non-p C-tail (lanes 7\u20139), lanes 10\u201314: BSA standards. Regarding to partial GPG-Akt Thr308 phosphorylation shown in (B) and (C), truncated GPG-Akt(aa 1\u2013459) thioester fragment was further treated with PDK1 in in vitro kinase reaction to reach similar pThr308 level for WT-Akt. (E) Western blot analysis of pThr308 level for GPG (lanes 1\u20132, obtained from D) and WT (lanes 3\u20134) Akt proteins with pSer473 with different loading amounts 25 ng (lanes 1, 3) and 50 ng (lanes 2, 4).\n\nTo examine the cellular significance of the D44G/V45P/D46G triple mutation, we transfected the full-length Akt triple mutant into an Akt1/Akt2 knockout HCT116 human colon cancer cell line. Cells were treated with insulin and IGF1 to stimulate the PI3K/Akt pathway that classically leads to phosphorylation of Thr308 as part of the activation mechanism. Interestingly, Thr308 phosphorylation was significantly impaired in the D44G/V45P/D46G triple mutant relative to transfected wt Akt (Figure 6C). These results are consistent with the insect cell expression experiments described above and suggest that the intramolecular PH domain-kinase domain interactions are altered in a way that interferes with PDK1-catalyzed phosphorylation of the activation loop.\n\nTo examine this in more depth, we performed an in vitro analysis of the kinetics of PDK1-mediated Thr308 phosphorylation of wt and GPG triple mutant pSer473 Akt. This revealed a\u00a0~\u00a02.5-fold reduction in Thr308 phosphorylation of the mutant protein, suggesting the reduced accessibility of Thr308 to PDK1 (Figure 6D).\n\n### Structural changes in Akt induced by allosteric inhibitors\n\nCrystal structures of near full-length Akt1 in complex with various allosteric inhibitors have been widely accepted to represent the inactive conformation of Akt, because the PH and kinase domains are glued together (Wu et al., 2010; Calleja et al., 2009; Parikh et al., 2012; Lapierre et al., 2016; Ashwell et al., 2012). In these inhibitor-bound structures, the PIP3-binding pocket of the PH domain is obstructed which would be expected to reduce PIP3-binding affinity. Our recent work has revealed that PIP3-binding affinity is similar for the pSer473 and non-C-tail phosphorylated Akt forms. In this light, it has been difficult to reconcile the structural studies. To investigate this further, we measured PIP3 affinity to Akt in the context of either MK2206 or compound VIII allosteric Akt inhibitors (Figure 7, Figure 7\u2014figure supplement 1A). These experiments have shown that the allosteric inhibitors dramatically weaken the binding of PIP3 to Akt, by more than 20-fold (Figure 7).\n\n![Figure 7.](https://cdn.elifesciences.org/articles/59151/elife-59151-fig7-v2.jpg)\n\n**Figure 7.:** (A) Binding assays of phospholipid PIP3 with full-length Akt in presence of 20 \u00b5M MK2206. Chemical structure of MK2206 is shown on the right. The fluorescence anisotropy measurements (n\u00a0=\u00a02) were carried out and fit to quadratic binding isotherms, and Kd values shown\u00a0\u00b1\u00a0S.D. (B) Cartoon model illustrated the distinct conformational structure of PH domain of allosteric drug-bound Akt when compared to that of natural autoinhibited form.\n\n![Figure 7\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/59151/elife-59151-fig7-figsupp1-v2.jpg)\n\n**Figure 7\u2014figure supplement 1.:** (A) Binding assays of soluble phospholipid PIP3 with full-length Akt in presence of 10 \u00b5M compound VIII (compd.\u00a0VIII), fluorescence anisotropy measurements (n\u00a0=\u00a02) were carried out and fit to quadratic binding isotherms, and Kd values shown\u00a0\u00b1\u00a0S.D. (B\u2013C) MST measurements (n\u00a0=\u00a02) for trans-binding of varied amounts of PH domain with N-terminally Cy5-labeled Akt (aa 122\u2013480) fragment without (B) and with 20 \u00b5M MK2206 (C), the obtained Kd values expressed in the inset boxes, S.D. shown.\n\nWe then used NMR to assess the impact of MK2206 on the conformation of the PH domain with non-C-tail phosphorylated Akt, where the PH domain was segmentally labeled. Based on the 15N-1H HSQC analysis, there were marked chemical shift changes throughout the PH domain (Figure 8A,D). The amplitudes of these chemical shift perturbations were generally much larger than those observed when comparing different C-terminal phospho-forms of Akt. Notably, some of the most significant chemical shift perturbations were detected in the PIP3-binding interface (e.g. aa Trp11, Leu12) (Figure 8D). We also performed a CST experiment in the same manner as described above, in the presence of MK2206 (Figure 8B,E and F) and observed two principal effects mediated by the compound. The short hinge of aa 44\u201346 seems to separate further from the kinase domain and/or C-terminal tail while the C-terminal alpha-helix, in contrast, appears to interact more tightly with the kinase domain or C-tail. These inhibitor-induced changes likely result from a combination of altered structural and dynamic features relative to the baseline autoinhibited form of Akt. These could include a reorientation of the PH domain with respect to the kinase domain or C-tail (placing the C-terminal helix closer) as well as conformational and dynamic rearrangements within the PH domain itself. In a complementary approach, we performed a fluorescence trans binding assay of split Akt (separate PH and kinase domains) that MK2206 can enhance the binding affinity between the two domains in an intermolecular fashion (Figure 7\u2014figure supplement 1B and C). This is consistent with a related study that showed that allosteric inhibitors indeed can stimulate kinase-PH domain interaction (Parikh et al., 2012; Weisner et al., 2015).\n\n![Figure 8.](https://cdn.elifesciences.org/articles/59151/elife-59151-fig8-v2.jpg)\n\n**Figure 8.:** (A) Overlay of 15N-1H HSQC spectra of the PH domain in the context of full-length semisynthetic Akt with non-phosphorylated C-tail in the presence of the allosteric inhibitor MK2206 (red) or in its absence (blue). Select residue-specific assignments are shown. (B) Expanded 15N-1H HSQC cross saturation transfer (CST) spectra around the peaks assigned to Phe27, Thr65 and Ala102. Reference (unsaturated) spectrum is shown in blue and its saturated counterpart in red. (C) Cartoon representation of secondary structure elements (rectangle for \u03b2-strands, zigzag for \u03b1-helices) in Akt PH domain. Color coding represents regions with distinct binding modes to the kinase domain. Star indicates that the \u03b1-helix is present only when Akt is bound to IP4. (D) Combined chemical shift perturbations corresponding to spectra in (A) plotted along the primary sequence for the PH domain in the context of semisynthetic full-length Akt with non-p C-tail with MK2206, referenced to the control without drug. Dashed red line corresponds to the standard deviation to the mean, excluding outliers (higher than 3xStDev). Grey bars indicate peaks that disappeared from the spectrum, also indicating strong interaction. Red area highlights the short hinge primarily studied here. Negative bars (\u22120.05) indicate non-assigned residues, negative bars (\u22120.025) indicate residues which assignment could not be easily transferred or recovered in the context of full-length Akt. (E) Saturation transfer efficiency derived from spectra in (B) plotted as the ratio of peak intensities of saturated over unsaturated spectra against the PH domain primary sequence. A ratio of 0 indicates maximum saturation transfer efficiency (very tight interaction), whereas a ratio of 1 indicate no saturation transfer (no interaction). An indicative dashed red line has been drawn at 0.5. Red area highlights the short hinge primarily studied here. Negative ratios (\u22120.05) indicate non-assigned residues, negative ratios (\u22120.025) indicate residues that were not present in 70% 2H2O spectra. (F) Statistical bar and whisker plots of saturation transfer efficiencies from CST data (B,E), categorized and color coded according to secondary structure elements as in (C). (G) Structure of allosteric drug inhibited Akt (PDB: 3O96, [Wu et al., 2010]) with PH domain as ribbon in the front and kinase domain as surface in the back (N-lobe in light blue, C-lobe in dark blue). Significantly affected residues (chemical shift perturbations higher than the standard deviation) are colored in red. Non-affected residues are shown in light orange and non-assigned residues in grey. A representation rotated by 180\u00b0 is shown.\n\n## Discussion\n\nOur understanding of the molecular basis of Akt regulation by its PH domain have primarily derived from Akt crystal structures that either lack the PH domain or contain an allosteric inhibitor, although HD-exchange studies have also been performed on S473D Akt (Lu\u010di\u0107 et al., 2018). We note that prior studies have indicated that Asp473 is a poor mimic of pSer473 in kinase activity studies (Chu et al., 2018) suggesting that Asp473 may not relieve autoinhibition efficiently. Here, we look directly at the Akt PH domain in the context of full-length protein by solution NMR using a segmental labeling approach. These experiments show that specific regions in the PH domain show chemical shift perturbations in the presence of C-terminal phosphorylation that can stimulate Akt activity. Moreover, there are distinct changes in Akt that is phosphorylated on Ser473 versus Ser477/Thr479, consistent with differential interactions of the phospho-sites and the kinase domain and linker dependence on the phosphorylation state (Chu et al., 2018).\n\nThese studies highlight the value of segmental labeling using semisynthesis to make larger proteins dependent on insect cell expression amenable to NMR. The simplified spectra of the\u00a0~120 aa PH domain, prepared in E. coli, embedded in the 480 aa Akt protein, mostly produced in Sf9 cells, was straightforward to assign by correlation with the isolated PH domain. We suggest that such segmental labeling strategies be considered for solution phase structural studies of big proteins requiring eukaryotic expression that are now commonly considered out of reach by NMR.\n\nWe focused on one short segment in the PH domain based on the NMR studies which is the short hinge consisting of the three amino acid motif aa 44\u201346, DVD, henceforth referred to as the DVD motif. This hinge region was sharply affected by C-terminal phosphorylation. Prior crystal structures of the isolated PH domain have shown that this DVD motif transitions between alpha-helix and loop depending on whether the domains were complexed with the PIP3 mimic, IP4 (Thomas et al., 2002; Milburn et al., 2003; Askham et al., 2010; Meuillet, 2011). By mutating DVD to GPG to destabilize possible helix formation, we showed that C-terminal phosphorylation of Ser473 was poorly able to stimulate Akt kinase activity. This suggests that the normal dynamics (loop to helix transition) of this DVD motif is necessary for allowing the PH domain to dislodge from the kinase domain in response to pSer473. In contrast, activation of Akt by pSer477/pThr479 was insensitive to this mutation, despite changes in chemical shift in the hinge region (aa 43\u201344). These findings can be interpreted as consistent with a distinct mode of activation by these non-classical phosphorylation events (Chu et al., 2018; Liu et al., 2014). The GPG mutation in the isolated PH domain did not influence its ability to bind PIP3 indicating that the dynamics of this DVD segment is not intimately connected to the thermodynamics of PIP3 binding. Interestingly, our results show that the DVD motif can also impact PDK1's ability to phosphorylate Thr308 in Akt's activation loop. We surmise that the helical state of aa 44\u201346 in Akt may facilitate a catalytically competent interaction between PDK1 and Akt.\n\nOur results also show how flexibility/length in the linker between the kinase domain and PH domain can modulate the ability of C-terminal phosphorylation to activate Akt. Insertion of a hexaGly linker led to reduced activation in the case of pSer473, but only minimally in the case of pSer477/pThr479. The results with the pSer473 form of Akt suggests that engagement of Arg144 by pSer473 may tug on the linker to weaken the PH domain-kinase domain interaction and that this effect is attenuated by increasing linker flexibility which could reduce linker tension (Chu et al., 2018). Prior cellular studies revealed that growth factor induced pSer473 phosphorylation is decreased in the hexaGly mutant, presumably because the C-tail phosphorylation is not as shielded from cellular phosphatases when the linker is less rigid. Notably, the baseline activity of non-C-tail-phosphorylated Akt is elevated in the hexaGly insertion mutant relative to the wt Akt enzyme. This can be understood to result from a floppier linker, enlarging the volume sampled by the PH domain, lowering its effective concentration relative to the kinase domain.\n\nOur NMR analysis helps explain the paradox that crystal structures of allosteric inhibitors in complex with Akt show that the PH domain PIP3 pocket is obstructed but the non-phospho-C-tail form of Akt binds PIP3 potently. Indeed, we confirm here that in the presence of allosteric inhibitor, PIP3 affinity of Akt is markedly reduced. These results indicate that the conformation of the baseline non-phosphorylated-C-tail form of Akt is not identical to the allosteric-bound conformation. NMR data show dramatic chemical shift changes in the PH domain between the non-phosphorylated-C-tail and the inhibitor-bound form of Akt that likely reflect these differences. It is possible that the non-phosphorylated-C-tail Akt state is comprised of an ensemble of conformations, and one of the minor populations binds to allosteric inhibitors via conformational selection. Although NMR dynamics experiments, due to their very long measurement times are not feasible with our current experimental system, future alternative approaches may allow this to be investigated.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Gene (human)</td>\n      <td>Akt1</td>\n      <td>Addgene and DOI:10.1093/nar/gkh238</td>\n      <td>Addgene # 9021</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (E. coli)</td>\n      <td>Rosetta 2(DE3) pLysS</td>\n      <td>Novagen</td>\n      <td>Cat. No.: 71400</td>\n      <td>Competent cells</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (E. coli)</td>\n      <td>DH10Bac</td>\n      <td>Invitrogen</td>\n      <td>Cat. No.: 18297010</td>\n      <td>Competent cells</td>\n    </tr>\n    <tr>\n      <td>Cell line (insect cell)</td>\n      <td>Sf21</td>\n      <td>Invitrogen</td>\n      <td>11497\u2013013</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cell line (insect cell)</td>\n      <td>f9</td>\n      <td>Invitrogen</td>\n      <td>11496\u2013015</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cell line (human)</td>\n      <td>Akt1/2-/- HCT116</td>\n      <td>DOI:10.1073/pnas.0914018107</td>\n      <td></td>\n      <td>Colon cancer cell line; The Akt1-/-and Akt2-/-HCT116 colon cancer cell line was a gift from Dr. Bert Vogelstein (Johns Hopkins University) (Ericson et al., 2010). These cells were authenticated by western blot showing the absence of Akt and by the lack of signaling response to growth factors. They were also shown to be mycoplasma-free by PCR testing.</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>pan-Akt (11E7) (Rabbit monoclonal)</td>\n      <td>Cell Signaling Technology</td>\n      <td>Cat. No.: 4685S, RRID:AB_10698888</td>\n      <td>WB (1:1000 for cell-based assays; 1:20000 for activation assays)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Akt phospho-Thr308 (D25E6) (Rabbit monoclonal)</td>\n      <td>Cell Signaling Technology</td>\n      <td>Cat. No.: 13038S, RRID:AB_2629447</td>\n      <td>WB (1:1000, for cell-based assays; 1:10000 for activation assays)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Akt phospho-Ser473 [EP2109Y] (Rabbit monoclonal)</td>\n      <td>AbCam</td>\n      <td>Cat. No.: ab81283, RRID:AB_2224551</td>\n      <td>WB (1:1000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>GAPDH (14C10) (Rabbit monoclonal)</td>\n      <td>Cell Signaling Technology</td>\n      <td>Cat. No.: 2118S, RRID:AB_561053</td>\n      <td>WB (1:5000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>HRP conjugated, anti-Rabbit IgG (Goat monoclonal)</td>\n      <td>Cell Signaling Technology</td>\n      <td>Cat. No.: 7074S, RRID:AB_2099233</td>\n      <td>WB (1:5000)</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Deuterium oxide (D, 99.8%)</td>\n      <td>Cambridge Isotope Laboratories</td>\n      <td>DLM-4\u201399.8-1000</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Ammonium chloride (15N, 99%)</td>\n      <td>Cambridge Isotope Laboratories</td>\n      <td>NLM-467\u20131</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>D-Glucose (U-13C6, 99%; 1,2,3,4,5,6,6-D7, 97\u201398%)</td>\n      <td>Cambridge Isotope Laboratories</td>\n      <td>CDLM-3813\u20132</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Celtone base powder (13C, 98%+; D, 97%+; 15N, 98%+)</td>\n      <td>Cambridge Isotope Laboratories</td>\n      <td>CGM-1030P-CDN-1</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>D-Glucose (U-13C6, 99%)</td>\n      <td>Cambridge Isotope Laboratories</td>\n      <td>CLM-1396\u20132</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>20 Fmoc-amino acids, Fmoc-Ser(HPO3Bzl)-OH, and Fmoc-Thr(HPO3Bzl)-OH</td>\n      <td>P3Bio systems</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Sulfo-Cy5-NHS ester</td>\n      <td>Lumiprobe</td>\n      <td>Cat. No.: 43320</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>32P-ATP</td>\n      <td>Perkin Elmer</td>\n      <td>Cat. No.: NEG002Z2-50UC</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Pierce avidin</td>\n      <td>Thermo Scientific</td>\n      <td>Cat. No.: 21128</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Recombinant human insulin</td>\n      <td>Thermo Scientific</td>\n      <td>Cat. No.: 12585014</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Human insulin-like growth factor 1 (hIGF-1)</td>\n      <td>Cell Signaling Technology</td>\n      <td>Cat. No.: 8917SC</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>ImageJ2</td>\n      <td>DOI:10.1186/s12859-017-1934-z</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>GraphPad Prism version 8.2.1</td>\n      <td>GraphPad</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>NmrPipe</td>\n      <td>DOI:10.1007/BF00197809</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>CCPNmr Analysis version 2.4</td>\n      <td>DOI:10.1002/prot.20449</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>hmsIST</td>\n      <td>DOI:10.1007/s10858-012-9611-z</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Topspin version 3.6</td>\n      <td>Bruker</td>\n      <td></td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### Peptide synthesis\n\nPeptides corresponding to residues 460\u2013480 of Akt1 (CVDSERRPHFPQFSYSASGTA) and kinase substrate peptide N-\u03b5-biotin-lysine GSK3 (RSGRARTSSFAEPGGK) were synthesized according to an Fmoc-based solid phase strategy previously described (Chu et al., 2018). The peptides were purified using reverse-phase C18 HPLC (VYDAC) using a gradient of 30% to 50% (v/v) of acetonitrile mixed with water containing 0.05% trifluoroacetic acid at a flow rate of 10 mL/min for 40 min. Pure fractions (>95%) were identified by MALDI mass spectrometry, combined and concentrated on a rotovap and then lyophilized to dryness. Peptide concentrations were determined by amino acid analysis.\n\n### Expression of Akt proteins and GST-PDK1\n\nThe baculovirus-insect cell system was employed to express Akt-Mxeintein-CBD (CBD: chitin binding domain) constructs (Akt1 aa 2\u2013459 and 122\u2013459) and GST-PDK1 according to the procedures previously reported (Chu et al., 2018). In particular, the in vivo Akt Thr308 phosphorylation was obtained by co-expression of the Akt(2-459)-Mxeintein-CBD fusion construct with GST-PDK1 in Sf9 insect cells with M.O.I.s (multiplicity of infections) of 5.0 and 1.0 for the baculovirus containing Akt and GST-PDK1, respectively. After growing infected Sf9 cells for\u00a0~36 hr at 27\u00b0C, 25 nM of the phosphatase inhibitor okadaic acid (Cell signaling technology-CST) was added, and the cells permitted to grow for an additional 16 hr, and then harvested.\n\nTo obtain triply labeled 15N, 13C, 2H Akt PH domain, the pTXB1 plasmid containing Akt (aa 1\u2013121)-MxeIntein-CBD was expressed in E. coli Rosetta (DE3)/pLysS (Invitrogen) following the established protocol (Gronenborn et al., 1991; Coote et al., 2018). Briefly, the E. coli cells were grown in 1 L of M9 minimal medium (6 g/L Na2HPO4 (Sigma if not stated otherwise), 3 g/L KH2PO4, 0.5 g/L NaCl, 0.25 g/L MgSO4, 11 mg/L CaCl2, 2 g/L deuterated-13C-glucose (Cambridge Isotopes), 1 g/L 15NH4Cl (Cambridge Isotopes), 100 mg/L ampicillin and 20 mg/L chloramphenicol) in D2O, and was further supplemented with trace elements (50 mg/L EDTA, 8 mg/L FeCl3, 0.1 mg/L CuCl2, 0.1 mg/L CoCl2, 0.1 mg/L H3BO3, and 0.02 mg/L MnCl2) and the vitamins biotin (0.5 mg/L) and thiamin (0.5 mg/L) in shaker flasks at 37\u00b0C until OD600\u00a0=\u00a00.5, then 1 mL of 0.5 M IPTG was added to induce the expression and the cultures were further incubated for 24 hr at 16 \u00b0C. Cells were pelleted and stored in \u221280 \u00b0C freezer for the next steps.\n\n### Semisynthesis of segmentally isotopically labeled Akt\n\nTo produce full-length Akt containing segmentally triply labeled 15N, 13C, 2H PH domain and the C-tail site-specific phosphorylations at either Ser473, Ser477/Thr479 or no phosphorylations on these residues, a sequential expressed protein ligation (EPL) strategy involving three peptide/protein pieces was developed. After resuspending the E. coli cells expressing isotopically labeled PH domain-MxeIntein-CBD in lysis buffer (50 mM HEPES pH 7.5, 150 mM NaCl, 1 mM EDTA, 10% Glycerol, 0.1% Triton X-100, one protease inhibitor tablet (Roche)), the cells were lysed by french press and the mixture was clarified by centrifugation at 17,500 g for 40 min at 4\u00b0C. The unlabeled insect cells expressing Akt (aa122-459-MxeIntein-CBD) were suspended in lysis buffer and lysed in a 40 ml Dounce homogenizer on ice, and the mixture was clarified as described above for the PH domain. The insect cell expressed protein was also passed through fibrous cellulose to remove chitinase as described previously (Bolduc et al., 2013). Next, both N-Tags-TEV-S122C-Akt kinase domain (aa 122\u2013459)-MxeIntein-CBD (N-tags: N-terminal Flag-HA-6xHis) and triply labeled Akt PH domain (aa 1\u2013121)-MxeIntein-CBD proteins were purified by affinity chromatography from the cell lysates using chitin beads. After loading onto chitin beads, elution of the protein C-terminal thioester forms of both the Akt kinase and PH domains via intein cleavage using MESNA (sodium mercaptoethylsulfonate) according to established protocols (Chu et al., 2018). The obtained N-Tags-TEV-S122C-Akt kinase domain thioester was phosphorylated at Thr308 in vitro using recombinant GST-PDK1 (Chu et al., 2018), and then ligated with the synthetic N-Cys containing C-terminal Akt peptides (aa 460\u2013480) containing variable phosphorylations in the first ligation buffer (50 mM HEPES pH 7.5, 150 mM NaCl, 1 mM TCEP, 100 mM MESNA, 10 mM EDTA, 10% glycerol, 1 mM PMSF) for 5 hr at room temperature and then maintained overnight at 4\u00b0C. The ligation product N-Tags-TEV-S122C-Akt aa 122\u2013480 fragment was purified by size exclusion chromatography (SEC) on a Superdex 75 10/300 GL column (GE Healthcare) with the second ligation buffer (100 mM HEPES pH 7.8, 500 mM NaCl, 100 mM MESNA, 0.5 mM IP6 (phytic acid sodium salt, Sigma), 1 mM TCEP, 1 mM PMSF). The purified fractions (>90%) were combined, concentrated and mixed with triply labeled Akt PH domain thioester at the concentration of 5 mg/mL, 300 \u00b5g of TEV protease was added to initialize the second EPL at 4 \u00b0C for 65 hr. The ligation yields were assessed by coomassie-stained SDS-PAGE and typically shown to be greater than 90%. The resulting full-length Akt (aa 1\u2013480) was separated from the excess of Akt PH domain thioester by using SEC purification on a Superdex 200 10/300 GL column (GE Healthcare) and buffer (50 mM HEPES pH 7.5, 150 mM NaCl, 2 mM beta-mercaptoethanol, 0.5 mM PMSF, 10% glycerol), concentrated, fast frozen and stored at \u221280\u00b0C.\n\nSemisynthetic Akt proteins (wt, hexaGly, DVD mutant) used for kinase assays were generated by the previously described two-piece EPL strategy (co-overexpression with GST-PDK1 and okadaic acid treatment during insect cell expression) with the intein-mediated Akt (aa 1\u2013459)-thioester fragment was reacted with the synthetic N-Cys containing C-terminal Akt peptides (aa 460\u2013480) in the first ligation buffer as described above to afford semisynthetic full-length Akt proteins. The semisynthetic Akt proteins were purified by SEC with the Akt purification and storage buffer. The small contamination (~10%) of slightly truncated Akt proteins in these likely results from incomplete ligation or slight proteolytic cleavage of the ca. 40 aa N-terminal tag. As the C-terminal tail is critical in supporting Akt catalytic activity and the absence or presence of the N-terminal tag does not appear to affect catalytic activity (Chu et al., 2018), we do\u00a0not think this contamination will have a big impact on the measured catalytic efficiencies.\n\n### NMR experiments\n\nAll NMR experiments were conducted on a Bruker spectrometer operating at 750 MHz, equipped with a TCI cryoprobe and z-shielded gradients. All data were processed using Topspin (Bruker) or NmrPipe (Delaglio et al., 1995) and analyzed with CCPNmr (Vranken et al., 2005). Samples of approximately 600 \u03bcM 2H, 13C, 15N-labeled Akt PH domain (aa 1\u2013121) in 50 mM HEPES pH 6.5, 500 mM NaCl, 2 mM IP6, 0.5 mM TCEP and 5% v/v 2H2O were prepared for backbone resonance assignment (Auguin et al., 2004). Standard triple resonance backbone experiments: HSQC, HNCA, HNCOCA, HNCO, HNCACO, HNCACB were used. For all the backbone triple resonance experiments, 10% Nyquist grid, in the indirect dimension, was sampled using Poisson-Gap sampling. The resulting non-uniformly sample spectrum was reconstructed using the hmsIST (Hyberts et al., 2012). The NMR experiments were performed at 20\u00b0C. An additional HNCA spectrum was measured at 13\u00b0C, as well as a temperature titration (from 13\u00b0C to 20\u00b0C), allowed us to leverage the previously published assignments from Auguin et al., 2004. 66% of non-proline backbone resonances could be assigned.\n\nHSQC spectra of 100\u2013120 \u03bcM segmentally isotopically labeled full-length Akt were measured in 50 mM HEPES pH 6.5, 50 mM NaCl, 0.5 mM TCEP (NMR buffer) and 5% v/v 2H2O using TROSY-HSQC (Pervushin et al., 1997). Recycle delays of 1 s were used and 768 transients (and 256 increments in the indirect dimension) were accumulated, leading to measurement times of 54 hr. Chemical shifts were calibrated using internal water calibration in NmrPipe. Combined chemical shift perturbations and associated standard deviations were calculated according to the protocol from Schumann et al., 2007.\n\nCross saturation transfer experiments (Shimada, 2005) were measured with on (0 ppm) and off-resonance saturation (\u221230 ppm) in an interleaved fashion using 100\u2013120 \u03bcM samples in NMR buffer. The samples were prepared in 70% v/v 2H2O to minimize spin-diffusion through solvent. Saturation time was set to 3 s and recycle delays to 1 s. Composite WURST pulses (25 milliseconds in duration) were used for saturation. Number of transients was approximately 400 and number of increments to 232 leading to measurement time of about 100 hr.\n\n### Kinase activity assays\n\nThe steady-state kinetic parameters of semisynthetic Akt proteins were determined by phosphorylating N-\u03b5-biotin-lysine GSK3 peptide (RSGRARTSSFAEPGGK) in radiometric reactions as described elsewhere (Qiu et al., 2009; Chu et al., 2018), with minor modification. The biotinylated GSK3 peptide substrate concentration was kept at 20 \u00b5M (5\u201310-fold above the peptide substrate Km values for Akt protein phosphorylated on Thr308 [Chu et al., 2018]) in all the assays. The buffer used contains 50 mM HEPES pH 7.5, 10 mM MgCl2, 1 mM EGTA, 2 mM DTT, 1 mM sodium orthovanadate, 0.5 mg/mL BSA (kinase reaction buffer),~0.42 \u00b5Ci \u03b3-32P-ATP, and varying amounts of ATP (0\u20132 mM). All the Akt proteins used in this assay contain N-terminal affinity tags Flag, HA and 6xHis unless otherwise noted. The kinase reactions were performed at 30\u00b0C for 10 min and quenched by adding 50 mM EDTA, and then 100 \u00b5g of Avidin (Pierce) was added to each sample and incubated for 20 min at room temperature. Samples were transferred to centrifugal 10 kDa MWCO filtration units (Nanosep 10K, PALL) and washed five times with 120 \u03bcl of washing buffer (0.5 M sodium phosphate, 0.5 M NaCl, pH 8.5). The filtration units were placed in 5 mL scintillation fluid and counted by Beckman liquid scintillation counter (Beckman LS6500). The kcat/Km (ATP) values were calculated using the standard Michaelis-Menten equation using a non-linear fit with Prism (TM) and can be considered \u2018apparent\u2019 values performed at a fixed, although most likely near-saturating peptide substrate concentration (Chu et al., 2018).\n\n### Fluorescence anisotropy measurements\n\nThe binding affinity of Akt PH domain with phospholipid PIP3 was determined using fluorescence anisotropy. Varying amounts of Akt PH domain were mixed with 50 nM fluorescein-labeled soluble PIP3 (Cayman Chemical) in binding buffer (50 mM HEPES pH 7.5, 2 mM DTT, 0.05 mg/ml ovalbumin) and incubated at room temperature for 30 min. Fluorescent anisotropy spectra were recorded by Multi-Mode Microplate Reader (Biotek Instruments) at 23\u00b0C with three different replicates. The Kd values were obtained by fitting the data to quadratic binding equation as described before (Seamon et al., 2015; Weiser et al., 2017; Chu et al., 2018).\n\n### Microscale thermophoresis (MST) analysis\n\nFor use in MST analysis, N-terminally Cy5 labeled, PH-deleted S122C Akt (aa 122\u2013480) was prepared by pretreating Sulfo-Cy5-NHS ester (Lumiprobe) with MESNA to efficiently convert NHS ester into thioester that can selectively react with N-terminal Cysteine 122 as described in Dempsey et al., 2018. The binding affinity of Cy5 labeled, S122C Akt (aa 122\u2013480) and Akt PH domain (aa 1\u2013121) in a binding buffer containing 50 mM HEPES pH 7.5, 150 mM NaCl, 5% (v/v) glycerol, 0.05% (v/v) Triton X-100, 0.1 mg/mL ovalbumin, 5 mM DTT was carried out by MST using MONOLITH NT.115 (NanoTemper). The Cy5-labeled Akt (aa 122\u2013480) (20 nM) was mixed 1:1 with different amounts of Akt PH domain in a two-fold dilution series from 19.8 nM to 650,000 nM for the measurement at 23\u00b0C. For the binding assays with the presence of Akt allosteric inhibitor MK2206, 20 nM Cy5-labeled Akt (aa 122\u2013480) was pre-incubated with 40 \u00b5M MK2206 on ice for 30 min and then mixed 1:1 with Akt PH domain as described above. Each binding assay was repeated twice.\n\n### PDK1 phosphorylation of Akt assays\n\nThe PDK1 phosphorylation of Akt assays were carried out following the protocol previously described (Chu et al., 2018). Briefly, 1 \u03bcM Akt was mixed with 10 nM GST-PDk1 in the activation buffer (50 mM HEPES, pH 7.5, 2 mM DTT, 10 mM MgCl2) and incubated at 30\u00b0C, the reaction was triggered by adding 1 mM ATP. 10 \u03bcl of the reaction was collected at the indicated time points and quenched by the addition of 4xSDS-loading buffer. The SDS samples were loaded on SDS-PAGE gel for western blot analysis with anti-pT308 or pan-Akt primary antibodies.\n\n### Western blots\n\nAfter transferring protein from SDS-PAGE gels to nitrocellulose membranes using an iBlot (Thermo Fisher) system, the membranes were blocked with 5% (w/v) BSA in TBS-T buffer at room temperature for 30 min. Membranes were incubated with anti-Akt (pan or phospho) primary antibodies (CST) at a 1:10,000 dilution with 5% (w/v) BSA in TBS-T buffer overnight at 4\u00b0C, washed three times of 10 min with TBS-T buffer, and incubated with secondary HRP-linked antibody (CST) for 1 hr at room temperature and following with three washing times. Membranes were developed with Amersham ECL Western blotting detection reagents (GE Healthcare) and imaged by a GeneSys (G:BOX, SynGene) imaging system.\n\n### Mammalian cell signaling assays\n\nThe Akt1-/- and Akt2-/- HCT116 colon cancer cell line was a gift from Dr. Bert Vogelstein (Johns Hopkins University) (Ericson et al., 2010). These cells were authenticated by western blot showing the absence of Akt and by the lack of signaling response to growth factors. They were also shown to be mycoplasma-free by PCR testing. Cells were cultured in McCoy\u2019s 5A (Invitrogen) supplemented with 10% (v/v) FBS (Sigma) and 1% (v/v) penicillin/streptomycin (Gibco) at 37\u00b0C and 5% CO2. When the cell reached\u00a0~70% confluence in six-well plates, the cells were transfected with 1 \u03bcg of pcDNA3.1-Flag-HA-Akt plasmids complexed with 2 \u03bcL Lipofectamine 3000 (Invitrogen) and 2 \u03bcL P3000 reagent (Invitrogen) in Opti-MEM medium (Gibco) for 24 hr at 37\u00b0C and 5% CO2. When indicated, the cells were rinsed twice by PBS and serum-starved for 18 hr in McCoy\u2019s 5A with 0.5% FBS and 1% penicillin/streptomycin, and stimulated with 100 ng/mL of insulin (Thermo Fisher Scientific) and 60 ng/mL human IGF-1 (CST) for variable times (5, 10, 20, and 40 min) at 37\u00b0C and 5% CO2. The cells were lysed by adding 180 \u03bcL RIPA buffer (CST) containing 1x complete protease inhibitor tablet and 1 mM PMSF, and gently shook for 30 min at 4 \u00b0C. 50 \u03bcg of total protein (BCA assay) was loaded on SDS-PAGE gels. Membrane transfer and Western blotting was carried out as described above with 1:1000 dilution for primary antibodies: Akt1, phospho Akt1.\n",
+      "created_at": "2025-12-02T18:54:44.465770Z"
+    },
+    {
+      "id": "a7f68042-bb59-4e70-81c3-c6002bfc33f7",
+      "submission_id": "bb866b5a-4218-43bb-8942-ab2a09131d50",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- John Kuriyan, University of California, Berkeley United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.59151.sa1](https://doi.org/10.7554/eLife.59151.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nThank you for submitting your article \"The Structural Determinants of PH Domain-Mediated Regulation of Akt Revealed by Segmental Labeling\" for consideration by eLife. Your article has been evaluated favorably by three peer reviewers, and John Kuriyan has overseen the evaluation as the Reviewing and Senior Editor. The following individuals involved in the review of your submission have agreed to reveal their identity: Kevin N. Dalby (Reviewer #1); Neel Shah (Reviewer #3).\n\nThe reviewers have discussed the reviews with one another, and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nWe would like to draw your attention to changes in our revision policy that we have made in response to COVID-19 (https://elifesciences.org/articles/57162). Specifically, we are asking editors to accept without delay manuscripts, like yours, that they judge can stand as eLife papers without additional data, even if they feel that they would make the manuscript stronger. Thus the revisions requested below only address clarity and presentation.\n\nThe manuscript by Cole, Arthanari, and co-workers aims to enhance our understanding of activation and autoinhibition of the protein kinase Akt1 (AKT). The authors use a combination of protein semisynthesis, enzymological assays, and NMR spectroscopy to identify structural changes that distinguish variously autoinhibited and activated states of AKT.\n\nThree particularly notable conclusions stand out from this work. First, the authors lay out an elegant route to making segmentally-isotopically labeled and site-specifically phosphorylated samples of a multi-domain protein that has mostly eluded NMR studies, thus far. Second, the NMR experiments with different phospho-forms of AKT, which could only have been obtained through their synthetic methods, substantiate the hypothesis that distinct phosphorylation events activate AKT via different mechanisms. Finally, their NMR data show that the auto-inhibited state of AKT observed in crystal structures is almost certainly a drug-induced conformation, and is unlikely to be the predominant structure in solution in the absence of an allosteric inhibitor. The study provides good evidence that the conformational dynamics of the linker (or \"tension\", but note that reviewers object to this word) between the PH domain of AKT and the kinase domain plays a role in mediating the activation of AKT by phosphorylation of Ser473. Moreover, it suggests this is not the case for the phosphorylation of Ser477/Thr479. The authors identify a small region within the PH domain that adopts a helical state and mediates the phosphorylation of Thr308 by PDK1 in intact cells.\n\nThe work presented here provides new methods to study kinase structure/function, and the results are likely to guide future biological investigations, and drug discovery efforts focused on AKT.\n\nThe review process did perceive weaknesses in the manuscript. Some aspects of the work may be considered incremental, as it focuses on linker length (which was partly examined in previous work from this group) and a single loop region in the PH domain. Given the tools at this group's disposal, it seems the data in this paper are underutilized, and in some cases, the experimental design seems ill-conceived (see comment #5 below). There is a concern that, as presented, the authors provide interesting observations, but the data are not interpreted in a manner that yields a definitive advance in our mechanistic understanding of AKT regulation.\n\nDespite these weaknesses, the reviewers agreed that the impressive demonstration of segmental labeling to probe the effects of phosphorylation and to investigate PH domain conformation are important advances. The finding that the drug-induced conformation of Akt may not represent the physiological conformation is also important. The paper should become acceptable for publication in eLife once it is revised to take into account the comments below. Note that under the present circumstances we are only asking for textual revisions, but if additional data that support the claims are available, they could be included.\n\nComments to address:\n\n1) Work by Lucic et al. https://doi.org/10.1073/pnas.1716109115 contains important contributions to understanding AKT regulation and yet is not described or referenced in the submitted manuscript. Please include it in the revised manuscript.\n\n2) The authors suggest that the putative regulatory interaction between pSer473 and R144 \"exerts tension on the PH-kinase domain linker, thereby pulling on the PH domain and severing its contacts\u2026\" The use of the word \"tension\" throughout is misleading as the authors have not measured force in any of their experiments. Instead, it seems more appropriate to think about the pSer473/R144 interaction as promoting a shift in the conformational ensemble of the full-length protein that leads to destabilization of the PH/kinase interface.\n\n3) The authors claim the results of increasing linker length (addition of the hexaGly insert) \"support a role for linker tension,\" but really linker length has been probed. A simple explanation may be that the increased linker length and flexibility in the region adjacent to R144 might create an increased entropic cost in forming the pSer473/R144 contact. There seems to be an assumption in these experiments that the pSer473/R144 interaction is unchanged upon the insertion of hexaGly.\n\n4) The NMR data, as presented in Figure 4 are difficult to see. Perhaps the spectra could be expanded to show key spectral changes. More importantly, the NMR changes are never mapped on the PH domain structure. Figure 4F simply shows regions of secondary structure, but the data itself (Figure 4D and E) could be significantly more informative if mapped onto the PH domain structure. This is true for all of the HSQC data throughout the paper.\n\n5) What are the phosphorylation states at T308 for all of the protein samples generated via semisynthesis? It appears that Thr308 is phosphorylated in the protein samples prepared for the NMR work. This is puzzling as the authors are probing the transition from autoinhibited to activated AKT via C-tail phosphorylation. So it seems that as long as the activation loop is phosphorylated they won't capture the fully autoinhibited form. Moreover, the scheme in Figure 1B indicates that C-tail phosphorylation occurs before activation loop phosphorylation providing another reason to study C-tail phosphorylation effects in the absence of activation loop phosphorylation. Please clarify and comment on this issue. Can the authors provide MS data confirming the identities (and purity) of all semisynthetic products generated in this study? If additional data supporting the analysis are available, it might be worth including in the manuscript.\n\n6) The structural distinction between the natural auto-inhibited state and the drug-induced state is interesting but poorly defined here. A potentially important finding is that the AKT crystal structures containing small molecules that \u201cstaple\u201d the PH domain to the kinase domain may not be revealing the native autoinhibitory interface. The NMR mapping in this paper could provide insight into the PH/kinase interface in the absence of drug, but the authors stop short of using their data in this way. Is there some reason that the data have not been pushed to provide a more definitive understanding of the PH-kinase interaction? It would be illustrative and helpful to see the residues with significant chemical shift perturbations in Figure 6 highlighted on the structure of the drug-bound autoinhibited state. A discussion of how the extended interface upon drug binding differs from the native autoinhibited state is warranted. What can be inferred from the cross saturation transfer experiments? Was such an experiment done in the presence of the allosteric inhibitor? This experiment isn't necessary, but a general discussion of structural models that can be inferred from the data in this manuscript would strengthen the manuscript.\n\n7) Cross-saturation transfer NMR data are also underutilized. Examining the quantitative differences between non-p-C and pS475 should provide more precise insight into how serine phosphorylation might be affecting the conformational preference of the PH domain. It's difficult to see from Figure 4\u2014figure supplement 3 how the cross-saturation transfer effect is stronger for non-phosphorylated versus tail-phosphorylated samples, as stated in the text. Could this be quantified in some way \u2013 perhaps showing the mean peak intensity ratios for each sample or a distribution of these ratios across all samples?\n\n8) The heavy focus on the loop following b3 (residues Gln43 and Asp44) seems driven (according to the text) by more dramatic chemical shift perturbation and more extensive line broadening in the phosphorylated forms compared to non-p-C. This seems a stretch as there are certainly other regions that show equally or nearly the same extent of spectral change (it's possible that the HSQC data itself makes the differences more evident, but expanded spectral data showing individual HSQC peaks are not provided).\n\n9) The remainder of the paper focuses on a mutation of the native DVD sequence (residues 44-46) to GPG in an effort to \"favor a random coil secondary structure in this region.\" The authors do not characterize this mutant to determine whether the mutation successfully shifted secondary structure preference of the PH domain but instead put the mutation directly into their full-length semi-synthetic AKT. Despite the lack of characterization of the mutant, this is the one place in this paper where the authors see a dramatic result; Figure 5A shows that the mutation of the DVD motif causes a large decrease in the steady-state kinetics of AKT in its pSer473 form compared to wild type. The other phosphorylated form of AKT (pSer477/pThr497) is unaffected by the mutation in the PH domain. Clearly understanding the mechanistic basis for this difference would be an advance in this field but the manuscript as presented does not sufficiently explain the observations.\n\n10) In the Discussion, the authors interpret the failure of pSer473 to stimulate AKT activity as being due to changes in the \"normal dynamics\" of the DVD motif. Dynamics can be directly measured by NMR to support this conclusion, but this is surprisingly not included in the manuscript. The observation that activation loop phosphorylation (at Thr308) is also diminished upon mutation of the DVD motif to GPG might suggest that the mutation in the PH domain enhances the autoinhibitory contact between PH and kinase domains and/or alters the accessibility of the activation loop to PDK-1. Unfortunately, as presented, the manuscript provides little to advance our understanding of the precise role of this region of the PH domain in AKT regulation.\n\n11) In the final part of this work the authors explore the effects of drug binding on PIP3 binding as well as PH domain NMR chemical shifts. The data are not interpreted in a satisfactory manner; the authors state that \"Notably, some of the most significant chemical shift perturbations were detected in the PIP3-binding interface\u2026\" but there are significant changes elsewhere in the PH domain as well. There is also no attempt to take into account the likely significant spectral changes that will arise from the drug itself.\n\n12) Finally, the last sentence of the paper suggests conformational heterogeneity might be present in the non-phosphorylated C-tail form of AKT. This is very logical and raises the question of whether the authors see any evidence for the existence of multiple states in solution for any of the segmentally labeled forms they have studied in this submitted paper or the previous 2018 publication?\n\n13) Some of the kinetic parameters for the WT semi-synthetic AKT proteins shown in Figure 2 seem to differ a little from the parameters reported earlier in Chu et al., 2018. For example, the kcat/Km for A2 (full-length AKT phosphorylated on T308) in Figure 2 of Chu et al. is 28-fold smaller than the value reported in the current manuscript. In the present manuscript, the concentration range of ATP used is 0-2000 \u00b5M, whereas the Km values reported for A2, A1, and A6 (Figure 2 of Chu et al.) are 200, 5100, and 3700 \u00b5M, respectively. Perhaps the authors could clarify the apparent discrepancy.\n\n14) Perhaps mention that the reported kcat/Km's are apparent values as the second substrate (the peptide in this case) is not present at a saturating concentration.\n\n15) It would be helpful in Figure 1 if the various states were labeled as \"active\" or \"inactive.\" In Figure 1B, the ribbon diagram of the PH-kinase unit is drawn upside. In this and other figures (e.g., 4F), it would be helpful if structural components and parts were clearly labeled on the figures.\n\n16) Can the authors comment on the purity of the samples used in Figure 2? Based on the figure supplement SDS-PAGE analysis, there appears to be a ~10-20% impurity. Can this be identified by MS analysis of the full-length protein to confirm that it isn't a species that will interfere with the analysis of enzyme kinetics?\n",
+      "created_at": "2025-12-02T18:54:44.465770Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T18:54:44.465770Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T18:54:44.465770Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "6e80db84-8da2-4468-af36-77c2c0876031",
+      "content_id": "2e481940-60b8-4df6-8ac6-9591c26a4c65",
+      "claim_id": "C1",
+      "claim": "Akt is a critical protein kinase that governs cancer cell growth and metabolism.",
+      "claim_type": "EXPLICIT",
+      "source": "Akt is a critical protein kinase that governs cancer cell growth and metabolism.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about Akt's biological role, supported by established scientific knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:54:44.465770Z"
+    },
+    {
+      "id": "e04a779b-216c-4c4f-9916-81682faffad4",
+      "content_id": "2e481940-60b8-4df6-8ac6-9591c26a4c65",
+      "claim_id": "C2",
+      "claim": "Akt appears to be autoinhibited by an intramolecular interaction between its N-terminal pleckstrin homology (PH) domain and kinase domain.",
+      "claim_type": "EXPLICIT",
+      "source": "Akt appears to be autoinhibited by an intramolecular interaction between its N-terminal pleckstrin homology (PH) domain and kinase domain, which is relieved by C-tail phosphorylation, but the precise molecular mechanisms remain elusive.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by references to prior research and is part of the established understanding of Akt regulation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:54:44.465770Z"
+    },
+    {
+      "id": "4888e25e-7181-402c-ac9b-992ae66a60ee",
+      "content_id": "2e481940-60b8-4df6-8ac6-9591c26a4c65",
+      "claim_id": "C3",
+      "claim": "Akt autoinhibition is relieved by C-tail phosphorylation.",
+      "claim_type": "EXPLICIT",
+      "source": "Akt appears to be autoinhibited by an intramolecular interaction between its N-terminal pleckstrin homology (PH) domain and kinase domain, which is relieved by C-tail phosphorylation, but the precise molecular mechanisms remain elusive.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a known mechanism, though the precise molecular details are noted as elusive.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:54:44.465770Z"
+    },
+    {
+      "id": "d0bf7aab-8e37-4437-bd0b-b23f70bba5aa",
+      "content_id": "2e481940-60b8-4df6-8ac6-9591c26a4c65",
+      "claim_id": "C4",
+      "claim": "Akt autoinhibition depends on the length/flexibility of the PH-kinase linker.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that Akt autoinhibition depends on the length/flexibility of the PH-kinase linker.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study, supported by experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:54:44.465770Z"
+    },
+    {
+      "id": "96b60355-059c-405c-8334-5facd9ab4d6f",
+      "content_id": "2e481940-60b8-4df6-8ac6-9591c26a4c65",
+      "claim_id": "C5",
+      "claim": "A dynamic short segment in the PH domain appears to regulate autoinhibition and PDK1-catalyzed phosphorylation of Thr308 in the activation loop.",
+      "claim_type": "EXPLICIT",
+      "source": "We identify a role for a dynamic short segment in the PH domain that appears to regulate autoinhibition and PDK1-catalyzed phosphorylation of Thr308 in the activation loop.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study, supported by experimental data including NMR and enzymatic analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:54:44.465770Z"
+    },
+    {
+      "id": "f93fd37a-81a1-40d2-8e6f-1b4cd7e371a1",
+      "content_id": "2e481940-60b8-4df6-8ac6-9591c26a4c65",
+      "claim_id": "C6",
+      "claim": "Akt allosteric inhibitor MK2206 drives distinct PH domain structural changes compared to baseline autoinhibited Akt.",
+      "claim_type": "EXPLICIT",
+      "source": "We determine that Akt allosteric inhibitor MK2206 drives distinct PH domain structural changes compared to baseline autoinhibited Akt.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study, supported by NMR data comparing MK2206-bound and unbound Akt.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:54:44.465770Z"
+    },
+    {
+      "id": "b4ebcd58-5669-40a5-84cb-8da33b944ae7",
+      "content_id": "2e481940-60b8-4df6-8ac6-9591c26a4c65",
+      "claim_id": "C7",
+      "claim": "Akt1 is a Ser/Thr kinase that is a critical node in cell signaling and connects growth factor receptor activation to cell growth and metabolic regulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Akt1 (termed Akt in the present work) is a Ser/Thr kinase that is a critical node in cell signaling and connects growth factor receptor activation to cell growth and metabolic regulation (Manning and Toker, 2017; Liao and Hung, 2010; Fruman et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by multiple citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:54:44.465770Z"
+    },
+    {
+      "id": "9205dae5-c3b6-4539-8c33-5cdf472c6532",
+      "content_id": "2e481940-60b8-4df6-8ac6-9591c26a4c65",
+      "claim_id": "C8",
+      "claim": "The Akt subfamily of kinases includes closely related paralogs Akt1-3.",
+      "claim_type": "EXPLICIT",
+      "source": "The Akt subfamily of kinases includes closely related paralogs Akt1-3 and are members of the larger AGC kinase family, comprised of about 60 members of the kinome (Leroux et al., 2018; Pearce et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:54:44.465770Z"
+    },
+    {
+      "id": "da930b8c-a8f8-46c5-b6d3-d2351be4007b",
+      "content_id": "2e481940-60b8-4df6-8ac6-9591c26a4c65",
+      "claim_id": "C9",
+      "claim": "Akt subfamily kinases are members of the larger AGC kinase family, comprised of about 60 members of the kinome.",
+      "claim_type": "EXPLICIT",
+      "source": "The Akt subfamily of kinases includes closely related paralogs Akt1-3 and are members of the larger AGC kinase family, comprised of about 60 members of the kinome (Leroux et al., 2018; Pearce et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:54:44.465770Z"
+    },
+    {
+      "id": "b6c62319-ba07-4168-9e21-0b0e0a6fb9db",
+      "content_id": "2e481940-60b8-4df6-8ac6-9591c26a4c65",
+      "claim_id": "C10",
+      "claim": "Akt is a 480 amino acid protein that contains an N-terminal PH (pleckstrin homology) domain followed by a catalytic (kinase) domain and culminates in a regulatory C-terminal disordered tail (C-tail).",
+      "claim_type": "EXPLICIT",
+      "source": "Akt is a 480 amino acid protein that contains an N-terminal PH (pleckstrin homology) domain followed by a catalytic (kinase) domain and culminates in a regulatory C-terminal disordered tail (C-tail) (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This structural description is supported by reference to Figure 1A and is based on established knowledge of Akt structure.",
+      "evidence_type": "[\"KNOWLEDGE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:54:44.465770Z"
+    },
+    {
+      "id": "ad820307-8d3c-497c-b063-db114e000713",
+      "content_id": "2e481940-60b8-4df6-8ac6-9591c26a4c65",
+      "claim_id": "C11",
+      "claim": "In response to growth factor stimulation, phosphatidyl inositol diphosphate (PIP2) is converted to PIP3 by PI3-kinase.",
+      "claim_type": "EXPLICIT",
+      "source": "Our current understanding of Akt activation is that, in response to growth factor stimulation, phosphatidyl inositol diphosphate (PIP2) is converted to PIP3 by PI3-kinase and PIP3 recruits Akt to the plasma membrane via its PH domain (Manning and Toker, 2017; Haeusler et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is part of the established understanding of Akt activation, supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:54:44.465770Z"
+    },
+    {
+      "id": "0bf4af2f-914d-4cd8-bcce-23bd2a4e7066",
+      "content_id": "2e481940-60b8-4df6-8ac6-9591c26a4c65",
+      "claim_id": "C12",
+      "claim": "PIP3 recruits Akt to the plasma membrane via its PH domain.",
+      "claim_type": "EXPLICIT",
+      "source": "Our current understanding of Akt activation is that, in response to growth factor stimulation, phosphatidyl inositol diphosphate (PIP2) is converted to PIP3 by PI3-kinase and PIP3 recruits Akt to the plasma membrane via its PH domain (Manning and Toker, 2017; Haeusler et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is part of the established understanding of Akt activation, supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:54:44.465770Z"
+    },
+    {
+      "id": "a44abfd0-ecfb-4eb4-905b-4edd65a2f70f",
+      "content_id": "2e481940-60b8-4df6-8ac6-9591c26a4c65",
+      "claim_id": "C13",
+      "claim": "Upon recruitment, Akt is phosphorylated by both mTORC2 kinase at Ser473 and PDK1 kinase at Thr308.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon recruitment, Akt is phosphorylated by both mTORC2 kinase at Ser473 and PDK1 kinase at Thr308 and this dual phosphorylation leads to activation of Akt (Sarbassov, 2005; Alessi et al., 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:54:44.465770Z"
+    },
+    {
+      "id": "607464d0-934d-44bf-9d81-707088d4e758",
+      "content_id": "2e481940-60b8-4df6-8ac6-9591c26a4c65",
+      "claim_id": "C14",
+      "claim": "Dual phosphorylation at Ser473 and Thr308 leads to activation of Akt.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon recruitment, Akt is phosphorylated by both mTORC2 kinase at Ser473 and PDK1 kinase at Thr308 and this dual phosphorylation leads to activation of Akt (Sarbassov, 2005; Alessi et al., 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:54:44.465770Z"
+    },
+    {
+      "id": "f9cfb5a6-3f95-462f-af0f-e7c7ccae1e17",
+      "content_id": "2e481940-60b8-4df6-8ac6-9591c26a4c65",
+      "claim_id": "C15",
+      "claim": "Akt can also be phosphorylated at Ser473 by DNA-PK upon activation of DNA damage response in the nucleus.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, Akt can also be phosphorylated at Ser473 by DNA-PK upon activation of DNA damage response in the nucleus (Bozulic et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:54:44.465770Z"
+    },
+    {
+      "id": "afefa7a0-6f0e-42d8-9114-6e2010c531af",
+      "content_id": "2e481940-60b8-4df6-8ac6-9591c26a4c65",
+      "claim_id": "C16",
+      "claim": "In an alternative pathway of Akt activation, Akt may be phosphorylated on Ser477 and Thr479 by Cdk2/cyclinA instead of Ser473.",
+      "claim_type": "EXPLICIT",
+      "source": "In an alternative pathway of Akt activation, Akt may be phosphorylated on Ser477 and Thr479 by Cdk2/cyclinA instead of Ser473 and this may happen in the cell nucleus (Liu et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:54:44.465770Z"
+    },
+    {
+      "id": "927c327c-741a-4f85-b27b-dc2001f9bad5",
+      "content_id": "2e481940-60b8-4df6-8ac6-9591c26a4c65",
+      "claim_id": "C17",
+      "claim": "Phosphorylation on Ser477 and Thr479 by Cdk2/cyclinA may happen in the cell nucleus.",
+      "claim_type": "EXPLICIT",
+      "source": "In an alternative pathway of Akt activation, Akt may be phosphorylated on Ser477 and Thr479 by Cdk2/cyclinA instead of Ser473 and this may happen in the cell nucleus (Liu et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior literature and involves speculative language ('may').",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:54:44.465770Z"
+    },
+    {
+      "id": "161ba194-e849-47ce-b179-659c3df1b134",
+      "content_id": "2e481940-60b8-4df6-8ac6-9591c26a4c65",
+      "claim_id": "C18",
+      "claim": "Excluding Thr308, the three other phosphorylations (Ser473, Ser477 and Thr479) are located in the disordered C-terminal tail.",
+      "claim_type": "EXPLICIT",
+      "source": "Excluding Thr308, the three other phosphorylations (Ser473, Ser477 and Thr479) are located in the disordered C-terminal tail.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a structural description based on established knowledge of Akt structure.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:54:44.465770Z"
+    },
+    {
+      "id": "1d56647b-3b08-4023-9f1d-13c7f1fd10cf",
+      "content_id": "2e481940-60b8-4df6-8ac6-9591c26a4c65",
+      "claim_id": "C19",
+      "claim": "An autoinhibitory mechanism involving an intramolecular interaction between Akt's N-terminal PH domain and C-terminal kinase domain is generally accepted.",
+      "claim_type": "EXPLICIT",
+      "source": "An autoinhibitory mechanism involving an intramolecular interaction between its N-terminal PH domain and C-terminal kinase domain is generally accepted (Bellacosa et al., 1998; Calleja et al., 2009; Calleja et al., 2007; Cole et al., 2019; Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by multiple citations and reference to Figure 1B.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:54:44.465770Z"
+    },
+    {
+      "id": "ae01bba5-db61-427a-a75f-c5be3c44959a",
+      "content_id": "2e481940-60b8-4df6-8ac6-9591c26a4c65",
+      "claim_id": "C20",
+      "claim": "The structural basis for the autoinhibitory conformation has been proposed based on high resolution X-ray crystal structures of near full-length Akt in complex with small molecule catalytic inhibitors such as compound VIII.",
+      "claim_type": "EXPLICIT",
+      "source": "The structural basis for this autoinhibitory conformation has been proposed based on high resolution X-ray crystal structures of near full-length Akt in complex with small molecule catalytic inhibitors such as compound VIII (Wu et al., 2010; Lapierre et al., 2016; Ashwell et al., 2012; Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by multiple citations and reference to Figure 1C.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:54:44.465770Z"
+    },
+    {
+      "id": "89ca4531-810b-4077-a380-cc74fa288cfe",
+      "content_id": "2e481940-60b8-4df6-8ac6-9591c26a4c65",
+      "claim_id": "C21",
+      "claim": "MK2206 is a mechanistically related allosteric inhibitor of compound VIII.",
+      "claim_type": "EXPLICIT",
+      "source": "A mechanistically related allosteric inhibitor of compound VIII, MK2206, has been widely used in cancer therapeutic clinical trials aimed to block Akt action (Hirai et al., 2010; Sangai et al., 2012; Yap et al., 2011; Nitulescu et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:54:44.465770Z"
+    },
+    {
+      "id": "c0c156e5-5091-4175-bc9e-c12e08f49a77",
+      "content_id": "2e481940-60b8-4df6-8ac6-9591c26a4c65",
+      "claim_id": "C22",
+      "claim": "MK2206 has been widely used in cancer therapeutic clinical trials aimed to block Akt action.",
+      "claim_type": "EXPLICIT",
+      "source": "A mechanistically related allosteric inhibitor of compound VIII, MK2206, has been widely used in cancer therapeutic clinical trials aimed to block Akt action (Hirai et al., 2010; Sangai et al., 2012; Yap et al., 2011; Nitulescu et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:54:44.465770Z"
+    },
+    {
+      "id": "cb78a4bb-53f6-4752-a03d-9d11a8a8427f",
+      "content_id": "2e481940-60b8-4df6-8ac6-9591c26a4c65",
+      "claim_id": "C23",
+      "claim": "Phosphorylation at Thr308 is important for kinase activity in the context of the isolated Akt kinase domain.",
+      "claim_type": "EXPLICIT",
+      "source": "While phosphorylation at Thr308 is important for kinase activity in the context of the isolated Akt kinase domain, C-terminal phosphorylation shows significant impact only in the context of full-length Akt (Chu et al., 2018; Cole et al., 2019; Alessi et al., 1996; Calleja et al., 2009; Yang et al., 2002a; Yang et al., 2002b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:54:44.465770Z"
+    },
+    {
+      "id": "e3abab25-c0ec-4d46-b50f-192431570fa7",
+      "content_id": "2e481940-60b8-4df6-8ac6-9591c26a4c65",
+      "claim_id": "C24",
+      "claim": "C-terminal phosphorylation shows significant impact only in the context of full-length Akt.",
+      "claim_type": "EXPLICIT",
+      "source": "While phosphorylation at Thr308 is important for kinase activity in the context of the isolated Akt kinase domain, C-terminal phosphorylation shows significant impact only in the context of full-length Akt (Chu et al., 2018; Cole et al., 2019; Alessi et al., 1996; Calleja et al., 2009; Yang et al., 2002a; Yang et al., 2002b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:54:44.465770Z"
+    },
+    {
+      "id": "3bc9ff49-fe0b-4d5e-b907-a05683494482",
+      "content_id": "2e481940-60b8-4df6-8ac6-9591c26a4c65",
+      "claim_id": "C25",
+      "claim": "Phosphorylation at Ser473 concurrently interacts with a PH-kinase domain linker basic patch, especially the sidechain of Arg144, and the kinase N-lobe via Gln218.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent structural studies suggest that phosphorylation at Ser473 concurrently interacts with a PH-kinase domain linker basic patch, especially the sidechain of Arg144, and the kinase N-lobe via Gln218 (Chu et al., 2018; Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by a citation and reference to Figure 1B.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:54:44.465770Z"
+    },
+    {
+      "id": "7a4ecde6-8284-48ee-8f4e-50d739f901e7",
+      "content_id": "2e481940-60b8-4df6-8ac6-9591c26a4c65",
+      "claim_id": "C26",
+      "claim": "Interactions with phosphorylated Ser473 help to displace the PH domain from the kinase domain thereby stimulating catalytic activity.",
+      "claim_type": "EXPLICIT",
+      "source": "A model based on these structural interactions postulates that these interactions with phosphorylated Ser473 (pSer473) help to displace the PH domain from the kinase domain thereby stimulating catalytic activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a model based on structural data, involving inference from prior studies.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:54:44.465770Z"
+    },
+    {
+      "id": "1c81bf79-b3c1-4dc0-be94-ae7b3e51940c",
+      "content_id": "2e481940-60b8-4df6-8ac6-9591c26a4c65",
+      "claim_id": "C27",
+      "claim": "Phosphorylation of Ser477/Thr479 is suggested to relieve autoinhibition of Akt in a distinct fashion, potentially by interaction with the activation loop and/or the PH domain.",
+      "claim_type": "EXPLICIT",
+      "source": "Phosphorylation of Ser477/Thr479 is suggested to relieve autoinhibition of Akt in a distinct fashion, potentially by interaction with the activation loop and/or the PH domain (Chu et al., 2018; Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by a citation and reference to Figure 1B, and involves speculative language.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:54:44.465770Z"
+    },
+    {
+      "id": "ce4aefe5-8972-4b9c-b3b9-7f04f4136afc",
+      "content_id": "2e481940-60b8-4df6-8ac6-9591c26a4c65",
+      "claim_id": "C28",
+      "claim": "It has been suggested that PIP3 activates Akt not simply by membrane recruitment but by dislodging the PH domain from the kinase domain independent of promoting Akt phosphorylation by upstream kinases.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been suggested that PIP3 activates Akt not simply by membrane recruitment but by dislodging the PH domain from the kinase domain independent of promoting Akt phosphorylation by upstream kinases (Ebner et al., 2017; Lu\u010di\u0107 et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:54:44.465770Z"
+    },
+    {
+      "id": "98cca596-5bb9-4de1-bf0e-94d565ded5d4",
+      "content_id": "2e481940-60b8-4df6-8ac6-9591c26a4c65",
+      "claim_id": "C29",
+      "claim": "This allosteric mechanism of Akt activation by PIP3 was not confirmed by our group where neither soluble nor vesicle-embedded PIP3 stimulated Akt kinase activity.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to these studies, this allosteric mechanism of Akt activation by PIP3 was not confirmed by our group where neither soluble nor vesicle-embedded PIP3 stimulated Akt kinase activity (Chu et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior work by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:54:44.465770Z"
+    },
+    {
+      "id": "97973724-55a2-4209-8015-e37fc4393495",
+      "content_id": "2e481940-60b8-4df6-8ac6-9591c26a4c65",
+      "claim_id": "C30",
+      "claim": "The binding affinities of soluble PIP3 with pSer473 Akt vs. non-phospho C-tail Akt were essentially identical.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the binding affinities of soluble PIP3 with pSer473 Akt vs. non-phospho C-tail Akt were essentially identical (Chu et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior work by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:54:44.465770Z"
+    },
+    {
+      "id": "c6eb20be-2c7e-401b-a2fa-e5d8aa921d22",
+      "content_id": "2e481940-60b8-4df6-8ac6-9591c26a4c65",
+      "claim_id": "C31",
+      "claim": "Soluble PIP3 binding to pSer477/pThr479 was attenuated by about fourfold compared to pSer473 and non-C-terminally phosphorylated Akt.",
+      "claim_type": "EXPLICIT",
+      "source": "In comparison, soluble PIP3 binding to pSer477/pThr479 was attenuated by about fourfold compared to pSer473 and non-C-terminally phosphorylated Akt (Chu et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior work by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:54:44.465770Z"
+    },
+    {
+      "id": "4667fa5c-e88f-489d-abe8-138c92a84e21",
+      "content_id": "2e481940-60b8-4df6-8ac6-9591c26a4c65",
+      "claim_id": "C32",
+      "claim": "Crystal structures of near full-length Akt in complex with compound VIII and related allosteric inhibitors reveal that the PIP3 binding pocket on the PH domain is occluded by its interactions with the kinase domain.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, crystal structures of near full-length Akt in complex with compound VIII and related allosteric inhibitors reveal that the PIP3 binding pocket on the PH domain is occluded by its interactions with the kinase domain (Wu et al., 2010; Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by a citation and reference to Figure 1C.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:54:44.465770Z"
+    },
+    {
+      "id": "1c084034-6520-4995-b1da-f01dcadd8c9e",
+      "content_id": "2e481940-60b8-4df6-8ac6-9591c26a4c65",
+      "claim_id": "C33",
+      "claim": "X-ray crystal structures of near full-length Akt in the absence of allosteric inhibitors, as well as of active Akt including the PH domain have not yet been reported.",
+      "claim_type": "EXPLICIT",
+      "source": "X-ray crystal structures of near full-length Akt in the absence of allosteric inhibitors, as well as of active Akt including the PH domain have not yet been reported.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the absence of certain structural data in the literature.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:54:44.465770Z"
+    },
+    {
+      "id": "d4c44ff0-efe6-4c5e-a9b4-bf14bebf2298",
+      "content_id": "2e481940-60b8-4df6-8ac6-9591c26a4c65",
+      "claim_id": "C34",
+      "claim": "There was a 3.4-fold reduction in kcat/Km of hexaGly pSer473 Akt relative to that of wt pSer473 Akt.",
+      "claim_type": "EXPLICIT",
+      "source": "There was a 3.4-fold reduction in kcat/Km of hexaGly pSer473 Akt relative to that of wt pSer473 Akt (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding supported by experimental data shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:54:44.465770Z"
+    },
+    {
+      "id": "7af55f91-eb02-40e5-9099-056164f9522d",
+      "content_id": "2e481940-60b8-4df6-8ac6-9591c26a4c65",
+      "claim_id": "C35",
+      "claim": "The non-phosphorylated C-tail hexaGly Akt was ~8 fold more active compared with the corresponding wt Akt.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the non-phosphorylated C-tail hexaGly Akt was ~8 fold more active compared with the corresponding wt Akt.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding supported by experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:54:44.465770Z"
+    },
+    {
+      "id": "203139e6-41b1-4976-91a5-7515a17519d5",
+      "content_id": "2e481940-60b8-4df6-8ac6-9591c26a4c65",
+      "claim_id": "C36",
+      "claim": "Linker length or flexibility is a contributing factor to activation of Akt orchestrated by pSer473-basic linker patch interaction.",
+      "claim_type": "EXPLICIT",
+      "source": "These results support a role for linker length or flexibility as a contributing factor to activation of Akt orchestrated by pSer473-basic linker patch interaction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the experimental data, involving inference.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:54:44.465770Z"
+    },
+    {
+      "id": "b15a71f0-36e8-462f-8280-58fb0cadd22e",
+      "content_id": "2e481940-60b8-4df6-8ac6-9591c26a4c65",
+      "claim_id": "C37",
+      "claim": "Autoinhibition is alleviated in the non-C-tail phosphorylated state if the linker is too flexible.",
+      "claim_type": "EXPLICIT",
+      "source": "This also indicates that autoinhibition is alleviated in the non-C-tail phosphorylated state if this linker is too flexible.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the experimental data, involving inference.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:54:44.465770Z"
+    },
+    {
+      "id": "6bc9926c-a196-465d-9080-4690b2589522",
+      "content_id": "2e481940-60b8-4df6-8ac6-9591c26a4c65",
+      "claim_id": "C38",
+      "claim": "The activity of the dual C-terminal phosphorylated (pSer477/pThr479) Akt showed only a minor difference (<2 fold) when comparing the hexaGly linker insertion vs. wt Akt.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to the results with pSer473, the activity of the dual C-terminal phosphorylated (pSer477/pThr479) Akt showed only a minor difference (<2 fold) when comparing the hexaGly linker insertion vs. wt Akt (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding supported by experimental data shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:54:44.465770Z"
+    },
+    {
+      "id": "64fbbda6-0f7b-4a13-87d3-971bbd348b25",
+      "content_id": "2e481940-60b8-4df6-8ac6-9591c26a4c65",
+      "claim_id": "C39",
+      "claim": "Linker length or flexibility is not an important factor in pSer477/pThr479-mediated Akt activation.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings suggest that linker length or flexibility is not an important factor in pSer477/pThr479-mediated Akt activation, consistent with an alternative mode of regulation for this dual phosphorylated C-tail form.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the experimental data, involving inference.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:54:44.465770Z"
+    },
+    {
+      "id": "f0d85bef-2db4-4fe9-bcc1-49aa0ab058e1",
+      "content_id": "2e481940-60b8-4df6-8ac6-9591c26a4c65",
+      "claim_id": "C40",
+      "claim": "About 60% of backbone hydrogen and nitrogen chemical shifts of residues in the segmentally labeled Akt forms could be unambiguously assigned.",
+      "claim_type": "EXPLICIT",
+      "source": "About 60% of backbone hydrogen and nitrogen chemical shifts of residues in the segmentally labeled Akt forms could be unambiguously assigned using this procedure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological result from the NMR experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:54:44.465770Z"
+    },
+    {
+      "id": "96e24229-6391-4758-956a-172b115d60b4",
+      "content_id": "2e481940-60b8-4df6-8ac6-9591c26a4c65",
+      "claim_id": "C41",
+      "claim": "The PH domain undergoes extensive interactions with the kinase domain and/or the C-tail, and potential conformational rearrangements.",
+      "claim_type": "EXPLICIT",
+      "source": "It is clear from a comparison of spectra of the isolated PH domain with that of the PH domain the context of full-length Akt (Figure 5\u2014figure supplement 1) that the PH domain undergoes extensive interactions with the kinase domain and/or the C-tail, and potential conformational rearrangements.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an interpretation of NMR data comparing isolated and full-length Akt.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:54:44.465770Z"
+    },
+    {
+      "id": "1d6397a6-f9bf-4911-a9bd-7d898a3823b9",
+      "content_id": "2e481940-60b8-4df6-8ac6-9591c26a4c65",
+      "claim_id": "C42",
+      "claim": "The CSPs observed on the PH domain are on average three-fold higher in the context of full-length Akt than those induced on the free PH domain by IP6 or the addition of the kinase domain in trans.",
+      "claim_type": "EXPLICIT",
+      "source": "Note that the CSPs observed on the PH domain are on average three-fold higher in the context of full-length Akt than those induced on the free PH domain by IP6 or the addition of the kinase domain in trans (Figure 5\u2014figure supplement 1 and Figure 5\u2014figure supplement 2A and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative comparison of NMR data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:54:44.465770Z"
+    },
+    {
+      "id": "d31df24d-213b-4406-929a-b264a168ae9f",
+      "content_id": "2e481940-60b8-4df6-8ac6-9591c26a4c65",
+      "claim_id": "C43",
+      "claim": "The intramolecular PH-kinase domain interactions in intact Akt can be captured only in the context of the full-length protein.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings highlight the importance of the intramolecular PH-kinase domain interactions in intact Akt that can be captured only in the context of the full-length protein.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the NMR data, involving inference.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:54:44.465770Z"
+    },
+    {
+      "id": "4943181c-169d-4204-b5aa-a8383143d377",
+      "content_id": "2e481940-60b8-4df6-8ac6-9591c26a4c65",
+      "claim_id": "C44",
+      "claim": "Residues Gln43 and Asp44 of the PH domain show either relatively large CSPs or marked peak broadening beyond detection in the phospho-C-tail forms relative to the non-phospho-C-tail form.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, residues Gln43 and Asp44 of the PH domain which are in an extended loop between \u03b2-strands 3 and 4 show either relatively large CSPs or marked peak broadening beyond detection in the phospho-C-tail forms relative to the non-phospho-C-tail form (Figure 4 and Figure 5B and C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding from NMR data shown in Figures 4 and 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:54:44.465770Z"
+    },
+    {
+      "id": "7ee67d6a-8a9a-465c-b8fb-fa83a6a7b81d",
+      "content_id": "2e481940-60b8-4df6-8ac6-9591c26a4c65",
+      "claim_id": "C45",
+      "claim": "Prior X-ray crystal structures of the Akt PH domain have shown that aa 44\u201346 (DVD) undergo a helix to loop transition between the inositol tetraphosphate-bound PH domain and the apo form.",
+      "claim_type": "EXPLICIT",
+      "source": "Prior X-ray crystal structures of the Akt PH domain have shown that aa 44\u201346 (DVD) located between \u03b2-strands 3 and 4 undergo a helix to loop transition between the inositol tetraphosphate-bound PH domain and the apo form (Thomas et al., 2002; Milburn et al., 2003; Meuillet, 2011; Carpten et al., 2007; Figure 5\u2014figure supplement 2F and G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by citations to prior structural studies and reference to Figure 5\u2014figure supplement 2F and G.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:54:44.465770Z"
+    },
+    {
+      "id": "ba17a76d-0dd5-483c-a35b-fefa77f2577d",
+      "content_id": "2e481940-60b8-4df6-8ac6-9591c26a4c65",
+      "claim_id": "C46",
+      "claim": "The triple mutant D44G/V45P/D46G of the isolated PH domain did not show any significant difference in binding affinity to PIP3 compared to wild type.",
+      "claim_type": "EXPLICIT",
+      "source": "To test the hypothesis that this short hinge affects the capacity of Akt to bind PIP3, we recombinantly expressed a triple mutant \u2013 D44G/V45P/D46G \u2013 of the isolated PH domain aimed at disrupting the potential of this segment to form a stable helix with Gly and Pro residues that favor a random coil secondary structure (Pace and Scholtz, 1998). We then measured the affinity of wt and triple mutant PH domains to bind PIP3, using a fluorescence anisotropy assay; however, we did not detect any significant difference in the binding affinity (Figure 6\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding from fluorescence anisotropy experiments shown in Figure 6\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:54:44.465770Z"
+    },
+    {
+      "id": "35e742f5-6f3e-4b7b-bdc8-48357dc70fc6",
+      "content_id": "2e481940-60b8-4df6-8ac6-9591c26a4c65",
+      "claim_id": "C47",
+      "claim": "The degree of phosphorylation at Thr308 was reduced in the D44G/V45P/D46G triple mutant compared to wt Akt prepared under the same conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Using western blotting, we noted that the degree of phosphorylation at Thr308 was reduced compared to wt Akt prepared under the same conditions (Figure 6\u2014figure supplement 1B and C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding from western blot experiments shown in Figure 6\u2014figure supplement 1B and C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:54:44.465770Z"
+    },
+    {
+      "id": "b303f164-d5e6-4372-bfe5-2247ffef55f2",
+      "content_id": "2e481940-60b8-4df6-8ac6-9591c26a4c65",
+      "claim_id": "C48",
+      "claim": "The triple mutant pSer473 full-length Akt semisynthetic protein showed that its catalytic efficiency, kcat/Km, is reduced ~10 fold relative to wt pSer473.",
+      "claim_type": "EXPLICIT",
+      "source": "Kinase assays performed with the triple mutant pSer473 full-length Akt semisynthetic protein showed that its catalytic efficiency, kcat/Km, is reduced ~10 fold relative to wt pSer473 under these conditions (Figure 6A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding from kinase assays shown in Figure 6A and B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:54:44.465770Z"
+    },
+    {
+      "id": "a5086bfe-7e1a-41d7-9330-acdc2e69b91f",
+      "content_id": "2e481940-60b8-4df6-8ac6-9591c26a4c65",
+      "claim_id": "C49",
+      "claim": "The pSer477/pThr479 activation was essentially unaffected by the PH domain triple mutation (DVD -> GPG).",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the pSer477/pThr479 activation was essentially unaffected by the PH domain triple mutation (DVD - > GPG).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from kinase assays.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:54:44.465770Z"
+    },
+    {
+      "id": "18bfa80f-a28b-4c56-bbfa-26765566ae92",
+      "content_id": "2e481940-60b8-4df6-8ac6-9591c26a4c65",
+      "claim_id": "C50",
+      "claim": "The differences in sensitivity of the DVD triple mutation to the two C-tail phosphorylated forms are consistent with the distinct CST behaviors noted.",
+      "claim_type": "EXPLICIT",
+      "source": "The differences in sensitivity of the DVD triple mutation to the two C-tail phosphorylated forms are consistent with the distinct CST behaviors noted above (Figure 5G and Figure 5\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an interpretation connecting enzymatic and NMR data, involving inference.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:54:44.465770Z"
+    },
+    {
+      "id": "152af8a6-b0d4-4933-a225-47d818098bc6",
+      "content_id": "2e481940-60b8-4df6-8ac6-9591c26a4c65",
+      "claim_id": "C51",
+      "claim": "Thr308 phosphorylation was significantly impaired in the D44G/V45P/D46G triple mutant relative to transfected wt Akt in cells treated with insulin and IGF1.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, Thr308 phosphorylation was significantly impaired in the D44G/V45P/D46G triple mutant relative to transfected wt Akt (Figure 6C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding from cellular experiments shown in Figure 6C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:54:44.465770Z"
+    },
+    {
+      "id": "51dc4cc1-7a00-4d3b-9fa1-dad262e4a436",
+      "content_id": "2e481940-60b8-4df6-8ac6-9591c26a4c65",
+      "claim_id": "C52",
+      "claim": "In vitro analysis revealed a ~ 2.5-fold reduction in Thr308 phosphorylation of the GPG mutant protein by PDK1, suggesting the reduced accessibility of Thr308 to PDK1.",
+      "claim_type": "EXPLICIT",
+      "source": "To examine this in more depth, we performed an in vitro analysis of the kinetics of PDK1-mediated Thr308 phosphorylation of wt and GPG triple mutant pSer473 Akt. This revealed a ~ 2.5-fold reduction in Thr308 phosphorylation of the mutant protein, suggesting the reduced accessibility of Thr308 to PDK1 (Figure 6D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding from in vitro kinase assays shown in Figure 6D, with an interpretation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:54:44.465770Z"
+    },
+    {
+      "id": "1b2ac7e9-3db0-482f-bce5-4a567fce5c6b",
+      "content_id": "2e481940-60b8-4df6-8ac6-9591c26a4c65",
+      "claim_id": "C53",
+      "claim": "Crystal structures of near full-length Akt1 in complex with various allosteric inhibitors have been widely accepted to represent the inactive conformation of Akt.",
+      "claim_type": "EXPLICIT",
+      "source": "Crystal structures of near full-length Akt1 in complex with various allosteric inhibitors have been widely accepted to represent the inactive conformation of Akt, because the PH and kinase domains are glued together (Wu et al., 2010; Calleja et al., 2009; Parikh et al., 2012; Lapierre et al., 2016; Ashwell et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to prior structural studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:54:44.465770Z"
+    },
+    {
+      "id": "cbb77c57-0163-4ded-a54b-16155ad2f4dc",
+      "content_id": "2e481940-60b8-4df6-8ac6-9591c26a4c65",
+      "claim_id": "C54",
+      "claim": "In inhibitor-bound structures, the PIP3-binding pocket of the PH domain is obstructed which would be expected to reduce PIP3-binding affinity.",
+      "claim_type": "EXPLICIT",
+      "source": "In these inhibitor-bound structures, the PIP3-binding pocket of the PH domain is obstructed which would be expected to reduce PIP3-binding affinity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on structural observations from crystal structures.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:54:44.465770Z"
+    },
+    {
+      "id": "d11409f8-5bfd-4f16-84aa-c47d68c99ea9",
+      "content_id": "2e481940-60b8-4df6-8ac6-9591c26a4c65",
+      "claim_id": "C55",
+      "claim": "PIP3-binding affinity is similar for the pSer473 and non-C-tail phosphorylated Akt forms.",
+      "claim_type": "EXPLICIT",
+      "source": "Our recent work has revealed that PIP3-binding affinity is similar for the pSer473 and non-C-tail phosphorylated Akt forms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by reference to prior work by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:54:44.465770Z"
+    },
+    {
+      "id": "94693a94-44ef-43aa-822d-b261a85b3da0",
+      "content_id": "2e481940-60b8-4df6-8ac6-9591c26a4c65",
+      "claim_id": "C56",
+      "claim": "Allosteric inhibitors dramatically weaken the binding of PIP3 to Akt, by more than 20-fold.",
+      "claim_type": "EXPLICIT",
+      "source": "These experiments have shown that the allosteric inhibitors dramatically weaken the binding of PIP3 to Akt, by more than 20-fold (Figure 7).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding from binding assays shown in Figure 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:54:44.465770Z"
+    },
+    {
+      "id": "8ff0672f-8fe2-4379-9fc6-f47be6cc511d",
+      "content_id": "2e481940-60b8-4df6-8ac6-9591c26a4c65",
+      "claim_id": "C57",
+      "claim": "There were marked chemical shift changes throughout the PH domain in the presence of MK2206.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on the 15N-1H HSQC analysis, there were marked chemical shift changes throughout the PH domain (Figure 8A,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding from NMR experiments shown in Figure 8A and D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:54:44.465770Z"
+    },
+    {
+      "id": "7b5f6a15-b427-499f-a651-3dc3b8a983ff",
+      "content_id": "2e481940-60b8-4df6-8ac6-9591c26a4c65",
+      "claim_id": "C58",
+      "claim": "The amplitudes of chemical shift perturbations induced by MK2206 were generally much larger than those observed when comparing different C-terminal phospho-forms of Akt.",
+      "claim_type": "EXPLICIT",
+      "source": "The amplitudes of these chemical shift perturbations were generally much larger than those observed when comparing different C-terminal phospho-forms of Akt.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison of NMR data from different experimental conditions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:54:44.465770Z"
+    },
+    {
+      "id": "7291d80b-c654-4433-8ba5-643e22801915",
+      "content_id": "2e481940-60b8-4df6-8ac6-9591c26a4c65",
+      "claim_id": "C59",
+      "claim": "Some of the most significant chemical shift perturbations induced by MK2206 were detected in the PIP3-binding interface (e.g. aa Trp11, Leu12).",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, some of the most significant chemical shift perturbations were detected in the PIP3-binding interface (e.g. aa Trp11, Leu12) (Figure 8D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding from NMR experiments shown in Figure 8D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:54:44.465770Z"
+    },
+    {
+      "id": "af4ae368-2fdf-4d56-98e9-9c6e97df7d22",
+      "content_id": "2e481940-60b8-4df6-8ac6-9591c26a4c65",
+      "claim_id": "C60",
+      "claim": "In the presence of MK2206, the short hinge of aa 44\u201346 seems to separate further from the kinase domain and/or C-terminal tail.",
+      "claim_type": "EXPLICIT",
+      "source": "The short hinge of aa 44\u201346 seems to separate further from the kinase domain and/or C-terminal tail while the C-terminal alpha-helix, in contrast, appears to interact more tightly with the kinase domain or C-tail.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of CST NMR data in the presence of MK2206.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:54:44.465770Z"
+    },
+    {
+      "id": "6e6bd78d-a60d-414d-8a06-c63bacf2471c",
+      "content_id": "2e481940-60b8-4df6-8ac6-9591c26a4c65",
+      "claim_id": "C61",
+      "claim": "In the presence of MK2206, the C-terminal alpha-helix appears to interact more tightly with the kinase domain or C-tail.",
+      "claim_type": "EXPLICIT",
+      "source": "The short hinge of aa 44\u201346 seems to separate further from the kinase domain and/or C-terminal tail while the C-terminal alpha-helix, in contrast, appears to interact more tightly with the kinase domain or C-tail.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of CST NMR data in the presence of MK2206.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:54:44.465770Z"
+    },
+    {
+      "id": "08ef3fd6-c80a-4b5a-944a-e4122e9df75c",
+      "content_id": "2e481940-60b8-4df6-8ac6-9591c26a4c65",
+      "claim_id": "C62",
+      "claim": "MK2206 can enhance the binding affinity between the PH and kinase domains in an intermolecular fashion.",
+      "claim_type": "EXPLICIT",
+      "source": "In a complementary approach, we performed a fluorescence trans binding assay of split Akt (separate PH and kinase domains) that MK2206 can enhance the binding affinity between the two domains in an intermolecular fashion (Figure 7\u2014figure supplement 1B and C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding from fluorescence binding assays shown in Figure 7\u2014figure supplement 1B and C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:54:44.465770Z"
+    },
+    {
+      "id": "029c503a-73e6-456d-b8cc-33d3bb914b23",
+      "content_id": "2e481940-60b8-4df6-8ac6-9591c26a4c65",
+      "claim_id": "C63",
+      "claim": "Allosteric inhibitors can stimulate kinase-PH domain interaction.",
+      "claim_type": "EXPLICIT",
+      "source": "This is consistent with a related study that showed that allosteric inhibitors indeed can stimulate kinase-PH domain interaction (Parikh et al., 2012; Weisner et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:54:44.465770Z"
+    },
+    {
+      "id": "ceb9022a-8d7b-41bd-8315-e52b80cb9df6",
+      "content_id": "2e481940-60b8-4df6-8ac6-9591c26a4c65",
+      "claim_id": "C64",
+      "claim": "Segmental labeling using semisynthesis is valuable for making larger proteins dependent on insect cell expression amenable to NMR.",
+      "claim_type": "EXPLICIT",
+      "source": "These studies highlight the value of segmental labeling using semisynthesis to make larger proteins dependent on insect cell expression amenable to NMR.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological conclusion drawn from the study's approach.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:54:44.465770Z"
+    },
+    {
+      "id": "d849ba81-a146-4347-8b75-81ea4c81e17c",
+      "content_id": "2e481940-60b8-4df6-8ac6-9591c26a4c65",
+      "claim_id": "C65",
+      "claim": "The DVD motif transitions between alpha-helix and loop depending on whether the PH domain is complexed with the PIP3 mimic, IP4.",
+      "claim_type": "EXPLICIT",
+      "source": "Prior crystal structures of the isolated PH domain have shown that this DVD motif transitions between alpha-helix and loop depending on whether the domains were complexed with the PIP3 mimic, IP4 (Thomas et al., 2002; Milburn et al., 2003; Askham et al., 2010; Meuillet, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior structural studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:54:44.465770Z"
+    },
+    {
+      "id": "6f8b94ca-610c-4ad7-961f-c15e9eab0835",
+      "content_id": "2e481940-60b8-4df6-8ac6-9591c26a4c65",
+      "claim_id": "C66",
+      "claim": "C-terminal phosphorylation of Ser473 was poorly able to stimulate Akt kinase activity when DVD was mutated to GPG.",
+      "claim_type": "EXPLICIT",
+      "source": "By mutating DVD to GPG to destabilize possible helix formation, we showed that C-terminal phosphorylation of Ser473 was poorly able to stimulate Akt kinase activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from kinase assays.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:54:44.465770Z"
+    },
+    {
+      "id": "04761a87-c3fa-45be-b5a3-8375b6edd232",
+      "content_id": "2e481940-60b8-4df6-8ac6-9591c26a4c65",
+      "claim_id": "C67",
+      "claim": "The normal dynamics (loop to helix transition) of the DVD motif is necessary for allowing the PH domain to dislodge from the kinase domain in response to pSer473.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that the normal dynamics (loop to helix transition) of this DVD motif is necessary for allowing the PH domain to dislodge from the kinase domain in response to pSer473.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the experimental data, involving inference.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:54:44.465770Z"
+    },
+    {
+      "id": "8ca3b85e-8117-4c3d-891b-28930b66828d",
+      "content_id": "2e481940-60b8-4df6-8ac6-9591c26a4c65",
+      "claim_id": "C68",
+      "claim": "Activation of Akt by pSer477/pThr479 was insensitive to the DVD to GPG mutation.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, activation of Akt by pSer477/pThr479 was insensitive to this mutation, despite changes in chemical shift in the hinge region (aa 43\u201344).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from kinase assays.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:54:44.465770Z"
+    },
+    {
+      "id": "86e3ac00-7b03-4d57-b478-9c3b4a46eb45",
+      "content_id": "2e481940-60b8-4df6-8ac6-9591c26a4c65",
+      "claim_id": "C69",
+      "claim": "The GPG mutation in the isolated PH domain did not influence its ability to bind PIP3.",
+      "claim_type": "EXPLICIT",
+      "source": "The GPG mutation in the isolated PH domain did not influence its ability to bind PIP3 indicating that the dynamics of this DVD segment is not intimately connected to the thermodynamics of PIP3 binding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from binding assays.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:54:44.465770Z"
+    },
+    {
+      "id": "df8fbb9d-c866-4d08-b594-c26feb9f9a0b",
+      "content_id": "2e481940-60b8-4df6-8ac6-9591c26a4c65",
+      "claim_id": "C70",
+      "claim": "The DVD motif can impact PDK1's ability to phosphorylate Thr308 in Akt's activation loop.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, our results show that the DVD motif can also impact PDK1's ability to phosphorylate Thr308 in Akt's activation loop.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from cellular and in vitro experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:54:44.465770Z"
+    },
+    {
+      "id": "d1fe74dc-d148-40ea-9072-233cd2e9a6c3",
+      "content_id": "2e481940-60b8-4df6-8ac6-9591c26a4c65",
+      "claim_id": "C71",
+      "claim": "The helical state of aa 44\u201346 in Akt may facilitate a catalytically competent interaction between PDK1 and Akt.",
+      "claim_type": "EXPLICIT",
+      "source": "We surmise that the helical state of aa 44\u201346 in Akt may facilitate a catalytically competent interaction between PDK1 and Akt.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation of the experimental data.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:54:44.465770Z"
+    },
+    {
+      "id": "ecd147bf-d08a-4f8e-866d-2aa383c7574c",
+      "content_id": "2e481940-60b8-4df6-8ac6-9591c26a4c65",
+      "claim_id": "C72",
+      "claim": "Flexibility/length in the linker between the kinase domain and PH domain can modulate the ability of C-terminal phosphorylation to activate Akt.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results also show how flexibility/length in the linker between the kinase domain and PH domain can modulate the ability of C-terminal phosphorylation to activate Akt.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the hexaGly insertion experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:54:44.465770Z"
+    },
+    {
+      "id": "859998f8-56bf-4eac-92c8-6b7d392b6d7e",
+      "content_id": "2e481940-60b8-4df6-8ac6-9591c26a4c65",
+      "claim_id": "C73",
+      "claim": "Insertion of a hexaGly linker led to reduced activation in the case of pSer473, but only minimally in the case of pSer477/pThr479.",
+      "claim_type": "EXPLICIT",
+      "source": "Insertion of a hexaGly linker led to reduced activation in the case of pSer473, but only minimally in the case of pSer477/pThr479.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from kinase assays.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:54:44.465770Z"
+    },
+    {
+      "id": "5ffd4c4c-7459-4404-b264-357403fd8fab",
+      "content_id": "2e481940-60b8-4df6-8ac6-9591c26a4c65",
+      "claim_id": "C74",
+      "claim": "Engagement of Arg144 by pSer473 may tug on the linker to weaken the PH domain-kinase domain interaction.",
+      "claim_type": "EXPLICIT",
+      "source": "The results with the pSer473 form of Akt suggests that engagement of Arg144 by pSer473 may tug on the linker to weaken the PH domain-kinase domain interaction and that this effect is attenuated by increasing linker flexibility which could reduce linker tension (Chu et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the experimental data, involving speculation and citation.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:54:44.465770Z"
+    },
+    {
+      "id": "c723f7ce-4db8-4851-a351-6cde9bed2476",
+      "content_id": "2e481940-60b8-4df6-8ac6-9591c26a4c65",
+      "claim_id": "C75",
+      "claim": "Growth factor induced pSer473 phosphorylation is decreased in the hexaGly mutant, presumably because the C-tail phosphorylation is not as shielded from cellular phosphatases when the linker is less rigid.",
+      "claim_type": "EXPLICIT",
+      "source": "Prior cellular studies revealed that growth factor induced pSer473 phosphorylation is decreased in the hexaGly mutant, presumably because the C-tail phosphorylation is not as shielded from cellular phosphatases when the linker is less rigid.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of prior cellular studies, involving speculation.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:54:44.465770Z"
+    },
+    {
+      "id": "7905f223-daf6-4fe9-a3d5-d3c00cc644d8",
+      "content_id": "2e481940-60b8-4df6-8ac6-9591c26a4c65",
+      "claim_id": "C76",
+      "claim": "The baseline activity of non-C-tail-phosphorylated Akt is elevated in the hexaGly insertion mutant relative to the wt Akt enzyme.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, the baseline activity of non-C-tail-phosphorylated Akt is elevated in the hexaGly insertion mutant relative to the wt Akt enzyme.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from kinase assays.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:54:44.465770Z"
+    },
+    {
+      "id": "c009a423-15bc-4ad8-b7b7-15a66c878df3",
+      "content_id": "2e481940-60b8-4df6-8ac6-9591c26a4c65",
+      "claim_id": "C77",
+      "claim": "A floppier linker enlarges the volume sampled by the PH domain, lowering its effective concentration relative to the kinase domain.",
+      "claim_type": "EXPLICIT",
+      "source": "This can be understood to result from a floppier linker, enlarging the volume sampled by the PH domain, lowering its effective concentration relative to the kinase domain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the experimental data, involving inference.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:54:44.465770Z"
+    },
+    {
+      "id": "3019d805-cd78-4605-97eb-b01d64e61913",
+      "content_id": "2e481940-60b8-4df6-8ac6-9591c26a4c65",
+      "claim_id": "C78",
+      "claim": "In the presence of allosteric inhibitor, PIP3 affinity of Akt is markedly reduced.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, we confirm here that in the presence of allosteric inhibitor, PIP3 affinity of Akt is markedly reduced.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from binding assays.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:54:44.465770Z"
+    },
+    {
+      "id": "9b58daa6-7299-4a14-a873-99990afe686f",
+      "content_id": "2e481940-60b8-4df6-8ac6-9591c26a4c65",
+      "claim_id": "C79",
+      "claim": "The conformation of the baseline non-phosphorylated-C-tail form of Akt is not identical to the allosteric-bound conformation.",
+      "claim_type": "EXPLICIT",
+      "source": "These results indicate that the conformation of the baseline non-phosphorylated-C-tail form of Akt is not identical to the allosteric-bound conformation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the NMR and binding data, involving inference.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:54:44.465770Z"
+    },
+    {
+      "id": "48603462-dd77-4c8a-8377-6cc58d8bc4a8",
+      "content_id": "2e481940-60b8-4df6-8ac6-9591c26a4c65",
+      "claim_id": "C80",
+      "claim": "NMR data show dramatic chemical shift changes in the PH domain between the non-phosphorylated-C-tail and the inhibitor-bound form of Akt that likely reflect conformational differences.",
+      "claim_type": "EXPLICIT",
+      "source": "NMR data show dramatic chemical shift changes in the PH domain between the non-phosphorylated-C-tail and the inhibitor-bound form of Akt that likely reflect these differences.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of NMR data, involving inference.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:54:44.465770Z"
+    },
+    {
+      "id": "785e16cb-f902-48bf-bda5-643dd5b0fae9",
+      "content_id": "2e481940-60b8-4df6-8ac6-9591c26a4c65",
+      "claim_id": "C81",
+      "claim": "The non-phosphorylated-C-tail Akt state may be comprised of an ensemble of conformations, and one of the minor populations binds to allosteric inhibitors via conformational selection.",
+      "claim_type": "EXPLICIT",
+      "source": "It is possible that the non-phosphorylated-C-tail Akt state is comprised of an ensemble of conformations, and one of the minor populations binds to allosteric inhibitors via conformational selection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation of the data.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:54:44.465770Z"
+    },
+    {
+      "id": "7802f64e-fa9c-4b03-bbea-9ba9c7a6d009",
+      "content_id": "2e481940-60b8-4df6-8ac6-9591c26a4c65",
+      "claim_id": "C82",
+      "claim": "The N-terminus (aa 1\u201341, \u03b2-strands 1 to 3) of the PH domain shows relatively minor differences in response to variations in the C-tail phospho-states.",
+      "claim_type": "EXPLICIT",
+      "source": "While the N-terminus (aa 1\u201341, \u03b2-strands 1 to 3) seems to show relatively minor differences in response to variations in the C-tail phospho-states, the region encompassing \u03b2-strands 4 and 5 (aa 72\u201390) show comparatively larger perturbations depending on which C-tail phospho-states are present.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from NMR data comparing different phospho-states.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:54:44.465770Z"
+    },
+    {
+      "id": "b356582b-5237-4be5-8e6e-4de0fa8fb94a",
+      "content_id": "2e481940-60b8-4df6-8ac6-9591c26a4c65",
+      "claim_id": "C83",
+      "claim": "The region encompassing \u03b2-strands 4 and 5 (aa 72\u201390) of the PH domain shows comparatively larger perturbations depending on which C-tail phospho-states are present.",
+      "claim_type": "EXPLICIT",
+      "source": "While the N-terminus (aa 1\u201341, \u03b2-strands 1 to 3) seems to show relatively minor differences in response to variations in the C-tail phospho-states, the region encompassing \u03b2-strands 4 and 5 (aa 72\u201390) show comparatively larger perturbations depending on which C-tail phospho-states are present.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from NMR data comparing different phospho-states.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:54:44.465770Z"
+    },
+    {
+      "id": "3cf6c376-43a0-4fcc-9a2b-1d5b62f35468",
+      "content_id": "2e481940-60b8-4df6-8ac6-9591c26a4c65",
+      "claim_id": "C84",
+      "claim": "The C-terminal alpha-helix (aa 100\u2013109) of the PH domain showed a significant CSP between the pSer473 and pSer477/pThr479 forms.",
+      "claim_type": "EXPLICIT",
+      "source": "Focusing on the strong CST effects, the C-terminal alpha-helix (aa 100\u2013109) of the PH domain showed a significant CSP between the pSer473 and pSer477/pThr479 forms (Figure 4 and Figure 5B\u2013E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding from NMR data shown in Figures 4 and 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:54:44.465770Z"
+    },
+    {
+      "id": "cfffb4f0-aadb-4066-9cb8-9307cf8e6d2b",
+      "content_id": "2e481940-60b8-4df6-8ac6-9591c26a4c65",
+      "claim_id": "C85",
+      "claim": "There were no significant changes in the chemical shifts of the C-terminal alpha-helix PH domain between the non-p-C and pSer473.",
+      "claim_type": "EXPLICIT",
+      "source": "There were no significant changes in the chemical shifts of the C-terminal alpha-helix PH domain between the non-p-C and pSer473.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from NMR data comparing different phospho-states.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:54:44.465770Z"
+    },
+    {
+      "id": "ab1783e9-b6a9-4d68-9b89-cbb72a21286f",
+      "content_id": "2e481940-60b8-4df6-8ac6-9591c26a4c65",
+      "claim_id": "C86",
+      "claim": "The spectrum of pS477/pThr479 shows marked CSPs compared to the non-p-C form on the residues corresponding to the C-terminal helix.",
+      "claim_type": "EXPLICIT",
+      "source": "On the contrary, the spectrum of pS477/pThr479 shows marked CSPs compared to the non-p-C form on the residues corresponding to the C-terminal helix.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from NMR data comparing different phospho-states.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:54:44.465770Z"
+    },
+    {
+      "id": "ff86a955-61e0-45df-8046-82c4d93a6bad",
+      "content_id": "2e481940-60b8-4df6-8ac6-9591c26a4c65",
+      "claim_id": "C87",
+      "claim": "The PH domain C-terminal alpha-helix plays a specific role in the mode of activation of Akt by the dual pSer477/pThr479 modifications.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, we surmise that this PH domain C-terminal alpha-helix plays a specific role in the mode of activation of Akt by the dual pSer477/pThr479 modifications.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the NMR data, involving inference.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:54:44.465770Z"
+    },
+    {
+      "id": "dde87929-17a2-4a91-965b-573f210c43fb",
+      "content_id": "2e481940-60b8-4df6-8ac6-9591c26a4c65",
+      "claim_id": "C88",
+      "claim": "The CST for \u03b2-strands 4\u20137 of pSer473 is lower than that of the non-phosphorylated and pSer477/pThr479 forms.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, the CST for \u03b2-strands 4\u20137 of pSer473 is lower than that of the non-phosphorylated and pSer477/pThr479 forms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from CST NMR data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:54:44.465770Z"
+    },
+    {
+      "id": "70e8834f-0f75-4bbd-8174-942a3aa2980e",
+      "content_id": "2e481940-60b8-4df6-8ac6-9591c26a4c65",
+      "claim_id": "C89",
+      "claim": "The difference in CST for \u03b2-strands 4\u20137 could be the result of a marginally weaker interaction of \u03b2-strands 4\u20137 of the PH domain with the kinase domain in the pSer473 form.",
+      "claim_type": "EXPLICIT",
+      "source": "This difference could be the result of a marginally weaker interaction of \u03b2-strands 4\u20137 of the PH domain with the kinase domain in the pSer473 form.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the CST data, involving inference.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:54:44.465770Z"
+    },
+    {
+      "id": "f17413f5-85b7-40da-9d08-8ced1ffa8655",
+      "content_id": "2e481940-60b8-4df6-8ac6-9591c26a4c65",
+      "claim_id": "C90",
+      "claim": "The modes of activation of Akt may depend on subtle changes in the binding interface rather than on major differences in binding affinity.",
+      "claim_type": "EXPLICIT",
+      "source": "This indicates that the modes of activation of Akt may depend on subtle changes in the binding interface rather than on major differences in binding affinity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the NMR data, involving inference.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:54:44.465770Z"
+    },
+    {
+      "id": "94ba6fb5-bb32-4a14-83d7-f760ce2c32c1",
+      "content_id": "2e481940-60b8-4df6-8ac6-9591c26a4c65",
+      "claim_id": "C91",
+      "claim": "The CST behavior for Gln43 and Asp44 was closely linked the phospho-state of the C-tail.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, the CST behavior for Gln43 and Asp44 was closely linked the phospho-state of the C-tail (Figure 5G and Figure 5\u2014figure supplement 3) with an apparent loosening of the interaction for pSer473 but an apparent tightening for pSer477/pThr479.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from CST NMR data shown in Figure 5G and Figure 5\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:54:44.465770Z"
+    },
+    {
+      "id": "4740d412-dcc9-44e1-acac-4ab98f955f88",
+      "content_id": "2e481940-60b8-4df6-8ac6-9591c26a4c65",
+      "claim_id": "C92",
+      "claim": "There is an apparent loosening of the interaction of Gln43 and Asp44 with the kinase domain for pSer473.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, the CST behavior for Gln43 and Asp44 was closely linked the phospho-state of the C-tail (Figure 5G and Figure 5\u2014figure supplement 3) with an apparent loosening of the interaction for pSer473 but an apparent tightening for pSer477/pThr479.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an interpretation of CST NMR data shown in Figure 5G and Figure 5\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:54:44.465770Z"
+    },
+    {
+      "id": "0e46a896-6062-496d-bb49-678e26187d7e",
+      "content_id": "2e481940-60b8-4df6-8ac6-9591c26a4c65",
+      "claim_id": "C93",
+      "claim": "There is an apparent tightening of the interaction of Gln43 and Asp44 with the kinase domain for pSer477/pThr479.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, the CST behavior for Gln43 and Asp44 was closely linked the phospho-state of the C-tail (Figure 5G and Figure 5\u2014figure supplement 3) with an apparent loosening of the interaction for pSer473 but an apparent tightening for pSer477/pThr479.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an interpretation of CST NMR data shown in Figure 5G and Figure 5\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:54:44.465770Z"
+    },
+    {
+      "id": "548aeab0-e1d9-4cd1-858c-2b12c45110bf",
+      "content_id": "2e481940-60b8-4df6-8ac6-9591c26a4c65",
+      "claim_id": "C94",
+      "claim": "The region encompassing Gln43 and Asp44 plays a role in governing Akt regulation.",
+      "claim_type": "EXPLICIT",
+      "source": "We therefore posit that this region plays a role in governing Akt regulation and investigated this possibility below.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis based on NMR observations, involving inference.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:54:44.465770Z"
+    },
+    {
+      "id": "34626bdf-6c91-4da1-95d2-f1b4ab5c03ce",
+      "content_id": "2e481940-60b8-4df6-8ac6-9591c26a4c65",
+      "claim_id": "C95",
+      "claim": "Asp473 is a poor mimic of pSer473 in kinase activity studies.",
+      "claim_type": "EXPLICIT",
+      "source": "We note that prior studies have indicated that Asp473 is a poor mimic of pSer473 in kinase activity studies (Chu et al., 2018) suggesting that Asp473 may not relieve autoinhibition efficiently.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior work by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:54:44.465770Z"
+    },
+    {
+      "id": "d6fa3fae-d7f2-44d6-9e8a-4233ca8f733a",
+      "content_id": "2e481940-60b8-4df6-8ac6-9591c26a4c65",
+      "claim_id": "C96",
+      "claim": "Asp473 may not relieve autoinhibition efficiently.",
+      "claim_type": "EXPLICIT",
+      "source": "We note that prior studies have indicated that Asp473 is a poor mimic of pSer473 in kinase activity studies (Chu et al., 2018) suggesting that Asp473 may not relieve autoinhibition efficiently.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on prior kinase activity studies, involving speculation.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:54:44.465770Z"
+    },
+    {
+      "id": "eef46176-d4a2-43d8-a044-621ade4c957e",
+      "content_id": "2e481940-60b8-4df6-8ac6-9591c26a4c65",
+      "claim_id": "C97",
+      "claim": "Specific regions in the PH domain show chemical shift perturbations in the presence of C-terminal phosphorylation that can stimulate Akt activity.",
+      "claim_type": "EXPLICIT",
+      "source": "These experiments show that specific regions in the PH domain show chemical shift perturbations in the presence of C-terminal phosphorylation that can stimulate Akt activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of primary findings from NMR experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:54:44.465770Z"
+    },
+    {
+      "id": "26edc62e-3928-4f15-9113-a3413a3d9ddc",
+      "content_id": "2e481940-60b8-4df6-8ac6-9591c26a4c65",
+      "claim_id": "C98",
+      "claim": "There are distinct changes in Akt that is phosphorylated on Ser473 versus Ser477/Thr479.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, there are distinct changes in Akt that is phosphorylated on Ser473 versus Ser477/Thr479, consistent with differential interactions of the phospho-sites and the kinase domain and linker dependence on the phosphorylation state (Chu et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of primary findings from NMR experiments, with citation to prior work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:54:44.465770Z"
+    },
+    {
+      "id": "6a7183f5-f83d-4008-811a-86f3cd3f23e7",
+      "content_id": "2e481940-60b8-4df6-8ac6-9591c26a4c65",
+      "claim_id": "C99",
+      "claim": "Segmental labeling strategies should be considered for solution phase structural studies of big proteins requiring eukaryotic expression that are now commonly considered out of reach by NMR.",
+      "claim_type": "EXPLICIT",
+      "source": "We suggest that such segmental labeling strategies be considered for solution phase structural studies of big proteins requiring eukaryotic expression that are now commonly considered out of reach by NMR.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological recommendation based on the study's approach.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:54:44.465770Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "2ff7c975-543b-422f-a083-f673e8ae1795",
+      "content_id": "2e481940-60b8-4df6-8ac6-9591c26a4c65",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors demonstrate that Akt autoinhibition depends on the length and flexibility of the PH-kinase linker. Insertion of a hexaGly linker reduced pSer473-mediated activation (~3.4-fold) but increased baseline activity of non-phosphorylated Akt (~8-fold), while having minimal effect on pSer477/pThr479-mediated activation. These findings suggest that linker flexibility modulates pSer473-dependent activation through a mechanism involving linker tension, but is not critical for pSer477/pThr479-mediated activation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C39 and C72-C77 provide converging experimental evidence from kinase assays showing differential effects of hexaGly insertion on different phospho-forms of Akt. The data are internally consistent and support the interpretation that linker properties modulate Akt activation in a phosphorylation-state-dependent manner. The mechanistic interpretation (C74, C77) is reasonable given the data, though speculative elements are appropriately qualified.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:54:44.465770Z"
+    },
+    {
+      "id": "eb149455-1839-4d1d-9c65-24852cf86f87",
+      "content_id": "2e481940-60b8-4df6-8ac6-9591c26a4c65",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The authors identify a dynamic short segment (DVD motif, aa 44-46) in the PH domain that regulates Akt autoinhibition and PDK1-catalyzed Thr308 phosphorylation. The D44G/V45P/D46G (GPG) triple mutant showed ~10-fold reduced catalytic efficiency for pSer473 Akt but no effect on pSer477/pThr479 activation. The GPG mutation impaired Thr308 phosphorylation both in cells and in vitro (~2.5-fold reduction by PDK1), without affecting PIP3 binding of the isolated PH domain.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44-C52 and C65-C71 provide multiple lines of evidence (NMR, kinase assays, cellular experiments, in vitro phosphorylation) that converge on the DVD motif playing a regulatory role. The data show consistent effects across different experimental systems. The mechanistic interpretation (C67, C71) involves reasonable inference from the data, though some aspects remain speculative. The finding that the GPG mutation affects Thr308 phosphorylation but not PIP3 binding (C69) helps distinguish direct from indirect effects.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:54:44.465770Z"
+    },
+    {
+      "id": "5f69386d-aff1-4944-b985-503403285aa1",
+      "content_id": "2e481940-60b8-4df6-8ac6-9591c26a4c65",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The authors demonstrate that the allosteric inhibitor MK2206 drives distinct PH domain structural changes compared to baseline autoinhibited Akt. MK2206 dramatically weakens PIP3 binding (>20-fold), induces large chemical shift perturbations throughout the PH domain (larger than those from C-terminal phosphorylation), and causes the DVD hinge to separate from the kinase domain while the C-terminal \u03b1-helix interacts more tightly. These findings indicate that the drug-bound conformation differs from the natural autoinhibited state.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56-C63 and C78-C81 provide complementary NMR and binding data showing that MK2206 induces a distinct conformational state. The PIP3 binding data (C56) directly demonstrate functional consequences, while NMR data (C57-C61) provide structural detail. The interpretation that the drug-bound state differs from natural autoinhibition (C79-C80) is well-supported by the combined data, though the conformational ensemble model (C81) remains speculative.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:54:44.465770Z"
+    },
+    {
+      "id": "e51b5c5b-8020-4e1d-848d-8aeb3f9625f9",
+      "content_id": "2e481940-60b8-4df6-8ac6-9591c26a4c65",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The authors successfully developed a segmental isotopic labeling strategy using three-piece expressed protein ligation to produce full-length Akt with the PH domain triply labeled (15N, 13C, 2H) and site-specific C-terminal phosphorylation. This approach enabled NMR analysis of the ~56 kDa protein, with ~60% of PH domain backbone resonances assigned. The method revealed that intramolecular PH-kinase interactions in full-length Akt are more extensive than those observed with isolated domains or trans interactions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40-C43 and C64 describe the methodological development and validation. The approach is technically sound and the data (C42) demonstrate that full-length protein captures interactions not seen in isolated domains. Claims C97-C99 appropriately summarize the value of this approach. This represents a significant methodological advance for studying large, post-translationally modified proteins by NMR.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:54:44.465770Z"
+    },
+    {
+      "id": "82b6f606-9979-4437-8c0a-0f4f35622bc7",
+      "content_id": "2e481940-60b8-4df6-8ac6-9591c26a4c65",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "NMR analysis reveals that different C-terminal phosphorylation states induce distinct structural changes in specific PH domain regions. The C-terminal \u03b1-helix (aa 100-109) shows significant differences between pSer473 and pSer477/pThr479 forms, with the latter showing marked chemical shift perturbations and tighter interaction with the kinase domain. The \u03b2-strands 4-7 region shows subtle differences in cross-saturation transfer, with pSer473 exhibiting marginally weaker interaction than non-phosphorylated or pSer477/pThr479 forms.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C82-C93 describe detailed NMR observations (chemical shift perturbations and cross-saturation transfer) that are internally consistent and support the conclusion that different phosphorylation states induce distinct structural changes. The interpretations (C87, C89-C90) are reasonable inferences from the data. The findings align with the differential functional effects observed in kinase assays, providing structural context for the biochemical observations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:54:44.465770Z"
+    },
+    {
+      "id": "271726d2-bb50-40c0-b6a6-2d5875f97fd4",
+      "content_id": "2e481940-60b8-4df6-8ac6-9591c26a4c65",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The authors provide comprehensive background on Akt structure, regulation, and activation mechanisms based on prior literature. This includes the domain architecture, phosphorylation sites, upstream kinases, autoinhibitory mechanisms, and existing structural data. The authors also note controversies regarding PIP3's allosteric activation mechanism and the absence of crystal structures for active, full-length Akt without inhibitors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C33 represent background information supported by extensive citations to prior literature. These claims accurately summarize established knowledge and identify gaps (C33) that motivate the current study. The authors appropriately note their own prior work that contradicts some published findings (C29-C31), providing context for the current investigation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:54:44.465770Z"
+    },
+    {
+      "id": "075be743-6c15-4667-b7c9-a9b02d48cf94",
+      "content_id": "2e481940-60b8-4df6-8ac6-9591c26a4c65",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The authors discuss prior structural and biochemical work on allosteric inhibitor-bound Akt and phosphomimetic mutants, noting that inhibitor-bound structures show occluded PIP3 binding pockets, that PIP3 affinity is similar for pSer473 and non-phosphorylated forms, and that Asp473 is a poor mimic of pSer473 in activity assays.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53-C55 and C95-C96 accurately represent prior findings from the literature and the authors' previous work. These claims provide important context for interpreting the current results, particularly regarding the relationship between inhibitor binding, PIP3 affinity, and the limitations of phosphomimetic approaches.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:54:44.465770Z"
+    },
+    {
+      "id": "13f36f95-1cb3-4ca1-a716-8b047b33c6c1",
+      "content_id": "2e481940-60b8-4df6-8ac6-9591c26a4c65",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Prior cellular studies showed that growth factor-induced pSer473 phosphorylation is decreased in the hexaGly mutant, presumably because C-tail phosphorylation is less shielded from cellular phosphatases when the linker is less rigid.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C75 references prior cellular work but the interpretation involves speculation about phosphatase accessibility. While the observation is cited, the mechanistic explanation remains uncertain without direct evidence of altered phosphatase activity or accessibility. This represents a plausible but unproven hypothesis.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:54:44.465770Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "d0bf7aab-8e37-4437-bd0b-b23f70bba5aa",
+      "result_id": "2ff7c975-543b-422f-a083-f673e8ae1795"
+    },
+    {
+      "claim_id": "d4c44ff0-efe6-4c5e-a9b4-bf14bebf2298",
+      "result_id": "2ff7c975-543b-422f-a083-f673e8ae1795"
+    },
+    {
+      "claim_id": "7af55f91-eb02-40e5-9099-056164f9522d",
+      "result_id": "2ff7c975-543b-422f-a083-f673e8ae1795"
+    },
+    {
+      "claim_id": "203139e6-41b1-4976-91a5-7515a17519d5",
+      "result_id": "2ff7c975-543b-422f-a083-f673e8ae1795"
+    },
+    {
+      "claim_id": "b15a71f0-36e8-462f-8280-58fb0cadd22e",
+      "result_id": "2ff7c975-543b-422f-a083-f673e8ae1795"
+    },
+    {
+      "claim_id": "6bc9926c-a196-465d-9080-4690b2589522",
+      "result_id": "2ff7c975-543b-422f-a083-f673e8ae1795"
+    },
+    {
+      "claim_id": "64fbbda6-0f7b-4a13-87d3-971bbd348b25",
+      "result_id": "2ff7c975-543b-422f-a083-f673e8ae1795"
+    },
+    {
+      "claim_id": "ecd147bf-d08a-4f8e-866d-2aa383c7574c",
+      "result_id": "2ff7c975-543b-422f-a083-f673e8ae1795"
+    },
+    {
+      "claim_id": "859998f8-56bf-4eac-92c8-6b7d392b6d7e",
+      "result_id": "2ff7c975-543b-422f-a083-f673e8ae1795"
+    },
+    {
+      "claim_id": "5ffd4c4c-7459-4404-b264-357403fd8fab",
+      "result_id": "2ff7c975-543b-422f-a083-f673e8ae1795"
+    },
+    {
+      "claim_id": "7905f223-daf6-4fe9-a3d5-d3c00cc644d8",
+      "result_id": "2ff7c975-543b-422f-a083-f673e8ae1795"
+    },
+    {
+      "claim_id": "c009a423-15bc-4ad8-b7b7-15a66c878df3",
+      "result_id": "2ff7c975-543b-422f-a083-f673e8ae1795"
+    },
+    {
+      "claim_id": "96b60355-059c-405c-8334-5facd9ab4d6f",
+      "result_id": "eb149455-1839-4d1d-9c65-24852cf86f87"
+    },
+    {
+      "claim_id": "4943181c-169d-4204-b5aa-a8383143d377",
+      "result_id": "eb149455-1839-4d1d-9c65-24852cf86f87"
+    },
+    {
+      "claim_id": "7ee67d6a-8a9a-465c-b8fb-fa83a6a7b81d",
+      "result_id": "eb149455-1839-4d1d-9c65-24852cf86f87"
+    },
+    {
+      "claim_id": "ba17a76d-0dd5-483c-a35b-fefa77f2577d",
+      "result_id": "eb149455-1839-4d1d-9c65-24852cf86f87"
+    },
+    {
+      "claim_id": "35e742f5-6f3e-4b7b-bdc8-48357dc70fc6",
+      "result_id": "eb149455-1839-4d1d-9c65-24852cf86f87"
+    },
+    {
+      "claim_id": "b303f164-d5e6-4372-bfe5-2247ffef55f2",
+      "result_id": "eb149455-1839-4d1d-9c65-24852cf86f87"
+    },
+    {
+      "claim_id": "a5086bfe-7e1a-41d7-9330-acdc2e69b91f",
+      "result_id": "eb149455-1839-4d1d-9c65-24852cf86f87"
+    },
+    {
+      "claim_id": "18bfa80f-a28b-4c56-bbfa-26765566ae92",
+      "result_id": "eb149455-1839-4d1d-9c65-24852cf86f87"
+    },
+    {
+      "claim_id": "152af8a6-b0d4-4933-a225-47d818098bc6",
+      "result_id": "eb149455-1839-4d1d-9c65-24852cf86f87"
+    },
+    {
+      "claim_id": "51dc4cc1-7a00-4d3b-9fa1-dad262e4a436",
+      "result_id": "eb149455-1839-4d1d-9c65-24852cf86f87"
+    },
+    {
+      "claim_id": "d849ba81-a146-4347-8b75-81ea4c81e17c",
+      "result_id": "eb149455-1839-4d1d-9c65-24852cf86f87"
+    },
+    {
+      "claim_id": "6f8b94ca-610c-4ad7-961f-c15e9eab0835",
+      "result_id": "eb149455-1839-4d1d-9c65-24852cf86f87"
+    },
+    {
+      "claim_id": "04761a87-c3fa-45be-b5a3-8375b6edd232",
+      "result_id": "eb149455-1839-4d1d-9c65-24852cf86f87"
+    },
+    {
+      "claim_id": "8ca3b85e-8117-4c3d-891b-28930b66828d",
+      "result_id": "eb149455-1839-4d1d-9c65-24852cf86f87"
+    },
+    {
+      "claim_id": "86e3ac00-7b03-4d57-b478-9c3b4a46eb45",
+      "result_id": "eb149455-1839-4d1d-9c65-24852cf86f87"
+    },
+    {
+      "claim_id": "df8fbb9d-c866-4d08-b594-c26feb9f9a0b",
+      "result_id": "eb149455-1839-4d1d-9c65-24852cf86f87"
+    },
+    {
+      "claim_id": "d1fe74dc-d148-40ea-9072-233cd2e9a6c3",
+      "result_id": "eb149455-1839-4d1d-9c65-24852cf86f87"
+    },
+    {
+      "claim_id": "548aeab0-e1d9-4cd1-858c-2b12c45110bf",
+      "result_id": "eb149455-1839-4d1d-9c65-24852cf86f87"
+    },
+    {
+      "claim_id": "f93fd37a-81a1-40d2-8e6f-1b4cd7e371a1",
+      "result_id": "5f69386d-aff1-4944-b985-503403285aa1"
+    },
+    {
+      "claim_id": "94693a94-44ef-43aa-822d-b261a85b3da0",
+      "result_id": "5f69386d-aff1-4944-b985-503403285aa1"
+    },
+    {
+      "claim_id": "8ff0672f-8fe2-4379-9fc6-f47be6cc511d",
+      "result_id": "5f69386d-aff1-4944-b985-503403285aa1"
+    },
+    {
+      "claim_id": "7b5f6a15-b427-499f-a651-3dc3b8a983ff",
+      "result_id": "5f69386d-aff1-4944-b985-503403285aa1"
+    },
+    {
+      "claim_id": "7291d80b-c654-4433-8ba5-643e22801915",
+      "result_id": "5f69386d-aff1-4944-b985-503403285aa1"
+    },
+    {
+      "claim_id": "af4ae368-2fdf-4d56-98e9-9c6e97df7d22",
+      "result_id": "5f69386d-aff1-4944-b985-503403285aa1"
+    },
+    {
+      "claim_id": "6e6bd78d-a60d-414d-8a06-c63bacf2471c",
+      "result_id": "5f69386d-aff1-4944-b985-503403285aa1"
+    },
+    {
+      "claim_id": "08ef3fd6-c80a-4b5a-944a-e4122e9df75c",
+      "result_id": "5f69386d-aff1-4944-b985-503403285aa1"
+    },
+    {
+      "claim_id": "029c503a-73e6-456d-b8cc-33d3bb914b23",
+      "result_id": "5f69386d-aff1-4944-b985-503403285aa1"
+    },
+    {
+      "claim_id": "3019d805-cd78-4605-97eb-b01d64e61913",
+      "result_id": "5f69386d-aff1-4944-b985-503403285aa1"
+    },
+    {
+      "claim_id": "9b58daa6-7299-4a14-a873-99990afe686f",
+      "result_id": "5f69386d-aff1-4944-b985-503403285aa1"
+    },
+    {
+      "claim_id": "48603462-dd77-4c8a-8377-6cc58d8bc4a8",
+      "result_id": "5f69386d-aff1-4944-b985-503403285aa1"
+    },
+    {
+      "claim_id": "785e16cb-f902-48bf-bda5-643dd5b0fae9",
+      "result_id": "5f69386d-aff1-4944-b985-503403285aa1"
+    },
+    {
+      "claim_id": "f0d85bef-2db4-4fe9-bcc1-49aa0ab058e1",
+      "result_id": "e51b5c5b-8020-4e1d-848d-8aeb3f9625f9"
+    },
+    {
+      "claim_id": "96e24229-6391-4758-956a-172b115d60b4",
+      "result_id": "e51b5c5b-8020-4e1d-848d-8aeb3f9625f9"
+    },
+    {
+      "claim_id": "1d6397a6-f9bf-4911-a9bd-7d898a3823b9",
+      "result_id": "e51b5c5b-8020-4e1d-848d-8aeb3f9625f9"
+    },
+    {
+      "claim_id": "d31df24d-213b-4406-929a-b264a168ae9f",
+      "result_id": "e51b5c5b-8020-4e1d-848d-8aeb3f9625f9"
+    },
+    {
+      "claim_id": "ceb9022a-8d7b-41bd-8315-e52b80cb9df6",
+      "result_id": "e51b5c5b-8020-4e1d-848d-8aeb3f9625f9"
+    },
+    {
+      "claim_id": "eef46176-d4a2-43d8-a044-621ade4c957e",
+      "result_id": "e51b5c5b-8020-4e1d-848d-8aeb3f9625f9"
+    },
+    {
+      "claim_id": "26edc62e-3928-4f15-9113-a3413a3d9ddc",
+      "result_id": "e51b5c5b-8020-4e1d-848d-8aeb3f9625f9"
+    },
+    {
+      "claim_id": "6a7183f5-f83d-4008-811a-86f3cd3f23e7",
+      "result_id": "e51b5c5b-8020-4e1d-848d-8aeb3f9625f9"
+    },
+    {
+      "claim_id": "7802f64e-fa9c-4b03-bbea-9ba9c7a6d009",
+      "result_id": "82b6f606-9979-4437-8c0a-0f4f35622bc7"
+    },
+    {
+      "claim_id": "b356582b-5237-4be5-8e6e-4de0fa8fb94a",
+      "result_id": "82b6f606-9979-4437-8c0a-0f4f35622bc7"
+    },
+    {
+      "claim_id": "3cf6c376-43a0-4fcc-9a2b-1d5b62f35468",
+      "result_id": "82b6f606-9979-4437-8c0a-0f4f35622bc7"
+    },
+    {
+      "claim_id": "cfffb4f0-aadb-4066-9cb8-9307cf8e6d2b",
+      "result_id": "82b6f606-9979-4437-8c0a-0f4f35622bc7"
+    },
+    {
+      "claim_id": "ab1783e9-b6a9-4d68-9b89-cbb72a21286f",
+      "result_id": "82b6f606-9979-4437-8c0a-0f4f35622bc7"
+    },
+    {
+      "claim_id": "ff86a955-61e0-45df-8046-82c4d93a6bad",
+      "result_id": "82b6f606-9979-4437-8c0a-0f4f35622bc7"
+    },
+    {
+      "claim_id": "dde87929-17a2-4a91-965b-573f210c43fb",
+      "result_id": "82b6f606-9979-4437-8c0a-0f4f35622bc7"
+    },
+    {
+      "claim_id": "70e8834f-0f75-4bbd-8174-942a3aa2980e",
+      "result_id": "82b6f606-9979-4437-8c0a-0f4f35622bc7"
+    },
+    {
+      "claim_id": "f17413f5-85b7-40da-9d08-8ced1ffa8655",
+      "result_id": "82b6f606-9979-4437-8c0a-0f4f35622bc7"
+    },
+    {
+      "claim_id": "94ba6fb5-bb32-4a14-83d7-f760ce2c32c1",
+      "result_id": "82b6f606-9979-4437-8c0a-0f4f35622bc7"
+    },
+    {
+      "claim_id": "4740d412-dcc9-44e1-acac-4ab98f955f88",
+      "result_id": "82b6f606-9979-4437-8c0a-0f4f35622bc7"
+    },
+    {
+      "claim_id": "0e46a896-6062-496d-bb49-678e26187d7e",
+      "result_id": "82b6f606-9979-4437-8c0a-0f4f35622bc7"
+    },
+    {
+      "claim_id": "6e80db84-8da2-4468-af36-77c2c0876031",
+      "result_id": "271726d2-bb50-40c0-b6a6-2d5875f97fd4"
+    },
+    {
+      "claim_id": "e04a779b-216c-4c4f-9916-81682faffad4",
+      "result_id": "271726d2-bb50-40c0-b6a6-2d5875f97fd4"
+    },
+    {
+      "claim_id": "4888e25e-7181-402c-ac9b-992ae66a60ee",
+      "result_id": "271726d2-bb50-40c0-b6a6-2d5875f97fd4"
+    },
+    {
+      "claim_id": "b4ebcd58-5669-40a5-84cb-8da33b944ae7",
+      "result_id": "271726d2-bb50-40c0-b6a6-2d5875f97fd4"
+    },
+    {
+      "claim_id": "9205dae5-c3b6-4539-8c33-5cdf472c6532",
+      "result_id": "271726d2-bb50-40c0-b6a6-2d5875f97fd4"
+    },
+    {
+      "claim_id": "da930b8c-a8f8-46c5-b6d3-d2351be4007b",
+      "result_id": "271726d2-bb50-40c0-b6a6-2d5875f97fd4"
+    },
+    {
+      "claim_id": "b6c62319-ba07-4168-9e21-0b0e0a6fb9db",
+      "result_id": "271726d2-bb50-40c0-b6a6-2d5875f97fd4"
+    },
+    {
+      "claim_id": "ad820307-8d3c-497c-b063-db114e000713",
+      "result_id": "271726d2-bb50-40c0-b6a6-2d5875f97fd4"
+    },
+    {
+      "claim_id": "0bf4af2f-914d-4cd8-bcce-23bd2a4e7066",
+      "result_id": "271726d2-bb50-40c0-b6a6-2d5875f97fd4"
+    },
+    {
+      "claim_id": "a44abfd0-ecfb-4eb4-905b-4edd65a2f70f",
+      "result_id": "271726d2-bb50-40c0-b6a6-2d5875f97fd4"
+    },
+    {
+      "claim_id": "607464d0-934d-44bf-9d81-707088d4e758",
+      "result_id": "271726d2-bb50-40c0-b6a6-2d5875f97fd4"
+    },
+    {
+      "claim_id": "f9cfb5a6-3f95-462f-af0f-e7c7ccae1e17",
+      "result_id": "271726d2-bb50-40c0-b6a6-2d5875f97fd4"
+    },
+    {
+      "claim_id": "afefa7a0-6f0e-42d8-9114-6e2010c531af",
+      "result_id": "271726d2-bb50-40c0-b6a6-2d5875f97fd4"
+    },
+    {
+      "claim_id": "927c327c-741a-4f85-b27b-dc2001f9bad5",
+      "result_id": "271726d2-bb50-40c0-b6a6-2d5875f97fd4"
+    },
+    {
+      "claim_id": "161ba194-e849-47ce-b179-659c3df1b134",
+      "result_id": "271726d2-bb50-40c0-b6a6-2d5875f97fd4"
+    },
+    {
+      "claim_id": "1d56647b-3b08-4023-9f1d-13c7f1fd10cf",
+      "result_id": "271726d2-bb50-40c0-b6a6-2d5875f97fd4"
+    },
+    {
+      "claim_id": "ae01bba5-db61-427a-a75f-c5be3c44959a",
+      "result_id": "271726d2-bb50-40c0-b6a6-2d5875f97fd4"
+    },
+    {
+      "claim_id": "89ca4531-810b-4077-a380-cc74fa288cfe",
+      "result_id": "271726d2-bb50-40c0-b6a6-2d5875f97fd4"
+    },
+    {
+      "claim_id": "c0c156e5-5091-4175-bc9e-c12e08f49a77",
+      "result_id": "271726d2-bb50-40c0-b6a6-2d5875f97fd4"
+    },
+    {
+      "claim_id": "cb78a4bb-53f6-4752-a03d-9d11a8a8427f",
+      "result_id": "271726d2-bb50-40c0-b6a6-2d5875f97fd4"
+    },
+    {
+      "claim_id": "e3abab25-c0ec-4d46-b50f-192431570fa7",
+      "result_id": "271726d2-bb50-40c0-b6a6-2d5875f97fd4"
+    },
+    {
+      "claim_id": "3bc9ff49-fe0b-4d5e-b907-a05683494482",
+      "result_id": "271726d2-bb50-40c0-b6a6-2d5875f97fd4"
+    },
+    {
+      "claim_id": "7a4ecde6-8284-48ee-8f4e-50d739f901e7",
+      "result_id": "271726d2-bb50-40c0-b6a6-2d5875f97fd4"
+    },
+    {
+      "claim_id": "1c81bf79-b3c1-4dc0-be94-ae7b3e51940c",
+      "result_id": "271726d2-bb50-40c0-b6a6-2d5875f97fd4"
+    },
+    {
+      "claim_id": "ce4aefe5-8972-4b9c-b3b9-7f04f4136afc",
+      "result_id": "271726d2-bb50-40c0-b6a6-2d5875f97fd4"
+    },
+    {
+      "claim_id": "98cca596-5bb9-4de1-bf0e-94d565ded5d4",
+      "result_id": "271726d2-bb50-40c0-b6a6-2d5875f97fd4"
+    },
+    {
+      "claim_id": "97973724-55a2-4209-8015-e37fc4393495",
+      "result_id": "271726d2-bb50-40c0-b6a6-2d5875f97fd4"
+    },
+    {
+      "claim_id": "c6eb20be-2c7e-401b-a2fa-e5d8aa921d22",
+      "result_id": "271726d2-bb50-40c0-b6a6-2d5875f97fd4"
+    },
+    {
+      "claim_id": "4667fa5c-e88f-489d-abe8-138c92a84e21",
+      "result_id": "271726d2-bb50-40c0-b6a6-2d5875f97fd4"
+    },
+    {
+      "claim_id": "1c084034-6520-4995-b1da-f01dcadd8c9e",
+      "result_id": "271726d2-bb50-40c0-b6a6-2d5875f97fd4"
+    },
+    {
+      "claim_id": "1b2ac7e9-3db0-482f-bce5-4a567fce5c6b",
+      "result_id": "075be743-6c15-4667-b7c9-a9b02d48cf94"
+    },
+    {
+      "claim_id": "cbb77c57-0163-4ded-a54b-16155ad2f4dc",
+      "result_id": "075be743-6c15-4667-b7c9-a9b02d48cf94"
+    },
+    {
+      "claim_id": "d11409f8-5bfd-4f16-84aa-c47d68c99ea9",
+      "result_id": "075be743-6c15-4667-b7c9-a9b02d48cf94"
+    },
+    {
+      "claim_id": "34626bdf-6c91-4da1-95d2-f1b4ab5c03ce",
+      "result_id": "075be743-6c15-4667-b7c9-a9b02d48cf94"
+    },
+    {
+      "claim_id": "d6fa3fae-d7f2-44d6-9e8a-4233ca8f733a",
+      "result_id": "075be743-6c15-4667-b7c9-a9b02d48cf94"
+    },
+    {
+      "claim_id": "c723f7ce-4db8-4851-a351-6cde9bed2476",
+      "result_id": "13f36f95-1cb3-4ca1-a716-8b047b33c6c1"
+    }
+  ],
+  "comparisons": []
+}

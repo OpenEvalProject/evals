@@ -1,0 +1,1782 @@
+{
+  "submission": {
+    "id": "a3d45d61-e554-4683-a58c-eb193542d6ca",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T16:40:22.654523Z",
+    "updated_at": "2025-12-02T16:40:22.654523Z"
+  },
+  "content": [
+    {
+      "id": "62859123-c3f7-4697-abe1-ce9ada4dcceb",
+      "submission_id": "a3d45d61-e554-4683-a58c-eb193542d6ca",
+      "content_type": "manuscript",
+      "content_text": "# The dynamic interplay of host and viral enzymes in type III CRISPR-mediated cyclic nucleotide signalling\n\n## Authors\n\n- Januka S Athukoralage<sup>1</sup> ([ORCID: 0000-0002-1666-0180](https://orcid.org/0000-0002-1666-0180))\n- Shirley Graham<sup>1</sup> ([ORCID: 0000-0002-2608-3815](https://orcid.org/0000-0002-2608-3815))\n- Christophe Rouillon<sup>1</sup>\n- Sabine Gr\u00fcschow<sup>1</sup>\n- Clarissa M Czekster<sup>1</sup>\n- Malcolm F White<sup>1</sup> ([ORCID: 0000-0003-1543-9342](https://orcid.org/0000-0003-1543-9342)) \u2020\n\n### Affiliations\n\n1. Biomedical Sciences Research Complex, School of Biology, University of St Andrews St Andrews United Kingdom\n\n\u2020 Corresponding author\n\n## Abstract\n\nCyclic nucleotide second messengers are increasingly implicated in prokaryotic anti-viral defence systems. Type III CRISPR systems synthesise cyclic oligoadenylate (cOA) upon detecting foreign RNA, activating ancillary nucleases that can be toxic to cells, necessitating mechanisms to remove cOA in systems that operate via immunity rather than abortive infection. Previously, we demonstrated that the Sulfolobus solfataricus type III-D CRISPR complex generates cyclic tetra-adenylate (cA4), activating the ribonuclease Csx1, and showed that subsequent RNA cleavage and dissociation acts as an \u2018off-switch\u2019 for the cyclase activity. Subsequently, we identified the cellular ring nuclease Crn1, which slowly degrades cA4 to reset the system (Rouillon et al., 2018), and demonstrated that viruses can subvert type III CRISPR immunity by means of a potent anti-CRISPR ring nuclease variant AcrIII-1. Here, we present a comprehensive analysis of the dynamic interplay between these enzymes, governing cyclic nucleotide levels and infection outcomes in virus-host conflict.\n\n## Introduction\n\nCRISPR systems are widespread in archaea and bacteria, providing adaptive immunity against invading mobile genetic elements (MGE) (Sorek et al., 2013; Makarova et al., 2020). Type III CRISPR systems (Figure 1) are multi-functional effector proteins that have specialised in the detection of foreign RNA (Tamulaitis et al., 2017; Zhu et al., 2018). The large subunit, Cas10, harbours two enzyme active sites that are activated by target RNA binding: a DNA-cleaving HD nuclease domain (Samai et al., 2015; Elmore et al., 2016; Estrella et al., 2016; Kazlauskiene et al., 2016) and a cyclase domain for cyclic oligoadenylate (cOA) synthesis (Kazlauskiene et al., 2017; Niewoehner et al., 2017; Rouillon et al., 2018). The third enzymatic activity of type III systems is situated in the Cas7 subunit of the complex, which cleaves bound RNA targets and in turn regulates Cas10 enzymatic activities (Tamulaitis et al., 2014; Rouillon et al., 2018; Johnson et al., 2019; Nasef et al., 2019). The cyclase domain polymerises ATP into cOA species consisting of between 3\u00a0and\u00a06 AMP subunits (denoted cA3, cA4 etc.), in varying proportions (Kazlauskiene et al., 2017; Niewoehner et al., 2017; Rouillon et al., 2018; Gr\u00fcschow et al., 2019; Nasef et al., 2019). cOA second messengers activate CRISPR ancillary nucleases of the Csx1/Csm6, Can1 (CRISPR associated nuclease 1) and NucC families, which drive the immune response against MGEs (Kazlauskiene et al., 2017; Niewoehner et al., 2017; Rouillon et al., 2018; Gr\u00fcschow et al., 2019; Lau et al., 2020; McMahon et al., 2020). To date, cA4 appears to be the most widely used signalling molecule by type III CRISPR systems (Gr\u00fcschow et al., 2019). The ribonuclease activity of Csx1/Csm6 is crucial for the clearance of MGEs (Hatoum-Aslan et al., 2014; Foster et al., 2019; Gr\u00fcschow et al., 2019), particularly when viral genes are transcribed late in infection, at low levels or mutated (Hatoum-Aslan et al., 2014; Jiang et al., 2016; Rost\u00f8l and Marraffini, 2019).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/55852/elife-55852-fig1-v2.jpg)\n\n**Figure 1.:** The Cas10 subunit of the type III CRISPR complex synthesises cyclic tetra-adenylate (cA4) when viral RNA transcripts are detected. Target RNA cleavage shuts-off cA4 synthesis. cA4 binds to the CARF (CRISPR associated Rossmann Fold) domain of CRISPR ancillary nuclease Csx1 and allosterically activates its HEPN (Higher Eukaryotes and Prokaryotes Nucleotide binding) domain, which degrades RNA non-specifically within the cell. Extant cA4 is degraded slowly by CRISPR ring nucleases (Crn1 family) which likely facilitate cell recovery after clearing the virus. Viral anti-CRISPR ring nucleases (AcrIII-1 family) degrade cA4 rapidly to stop activation of ancillary defence enzymes such as Csx1 and supress antiviral immunity.\n\nIn our previous study, we demonstrated that the type III-D system from Sulfolobus solfataricus synthesises predominantly cA4, which activates the CRISPR ancillary ribonuclease Csx1. We examined the first regulatory step in cOA synthesis in detail and demonstrated that target RNA cleavage and dissociation from the complex shut-off cOA synthesis (Rouillon et al., 2018). Since CRISPR ancillary nucleases degrade nucleic acids non-specifically, cellular as well as viral targets are destroyed. Collateral cleavage of self-transcripts by a Csm6 enzyme has previously been shown to result in cell growth arrest (Rost\u00f8l and Marraffini, 2019). Therefore, in addition to regulating the synthesis of cOA, cells need a mechanism to remove extant cOA if they are to return to normal growth. To solve this problem, S. solfataricus encodes CRISPR-associated ring nuclease 1 (Crn1) family enzymes (Athukoralage et al., 2018). Crn1 enzymes slowly degrade cA4 to yield di-adenylate products incapable of activating Csx1. In other species Csm6 proteins have evolved catalytic CARF domains capable of degrading cA4, thereby acting as their own \u2018off-switches\u2019 to their RNase activity (Athukoralage et al., 2019; Jia et al., 2019). Unsurprisingly, archaeal viruses and bacteriophage have co-opted this regulatory strategy in order to subvert type III CRISPR defence. Many archaeal viruses and bacteriophage encode a ring nuclease anti-CRISPR (AcrIII-1), unrelated to Crn1, which neutralises the type III response by rapidly degrading cA4 to prevent ancillary nuclease activation (Athukoralage et al., 2020).\n\nIt is clear that the cA4 antiviral second messenger is at the centre of a network of interactions that are crucial for effective type III CRISPR defence against MGE. Here, we show that detection of even a single molecule of invading RNA has the potential to generate a large signal amplification via synthesis of cA4 that in turn activates the non-specific degradative ribonuclease Csx1. We explore how a cellular ring nuclease can return the cell to a basal state and how viruses can subvert the system. By quantifying and modelling the equilibria and reactions that take place in the arena of type III CRISPR defence, we build a comprehensive model of this dynamic, life or death process.\n\n## Results\n\nWhile the control of cOA synthesis by target RNA binding and cleavage is now understood reasonably well, the full implications of cOA generation in a virally-infected cell are not. This requires a detailed knowledge of the levels of cOA produced, consequences for antiviral defence enzymes and the effects of cOA degrading enzymes from cellular and viral sources. These were the aims of our study.\n\n### Signal amplification on cA4 production\n\nWe first investigated the extent of signal amplification that occurs in a cell from detection of a single viral RNA and generation of the cA4 second messenger. Using the S. solfataricus type III-D CRISPR effector, we varied the concentration of target RNA and quantified the resultant cA4 production. As previously observed (Rouillon et al., 2018), increasing the target RNA concentration resulted in increased cA4 production (Figure 2). Quantification of the concentration of cA4 generated was accomplished by using \u03b1-32P-ATP and quantification of products using a phosphorimager in comparison to standards (Figure 2\u2014figure supplement 1). We observed that approximately 1000 molecules (980\u00a0\u00b1\u00a024) of cA4 were generated per molecule of RNA, over a range of 10\u2013100 nM target RNA (Figure 2). When a poorly-cleavable target RNA species containing phosphorothioates was used as the substrate, the amount of cA4 generated increased approximately 3-fold (3100\u00a0\u00b1\u00a0750, Figure 2), confirming the important role of RNA cleavage for deactivation of the cyclase domain (Rouillon et al., 2018; Nasef et al., 2019). Additionally, analysis of previously published data enabled us to determine the catalytic rate constant (k) of cA4 synthesis by the S. solfataricus type III effector as 0.04\u00a0\u00b1\u00a00.01 min\u22121 at 70\u00b0C (Figure 2\u2014figure supplement 2).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/55852/elife-55852-fig2-v2.jpg)\n\n**Figure 2.:** (A) Upper panel shows phosphorimages of thin-layer chromatography of cyclic tetra-adenylate (cA4) made by S. solfataricus (Sso) Csm complex (470 nM carrying the CRISPR RNA A26) across a range of RNA target concentrations (0.1, 1, 10, 25,100 nM) complementary to the A26 CRISPR RNA at 70\u00b0C. Lower panel shows cA4 synthesised with a cleavage resistant (phosphorothioate) form of the RNA target. (B) Bar graph of the concentration of cA4 generated with increasing cleavable and cleavage-resistant RNA target generated by quantifying the densiometric signals from A, with an \u03b1-32P-ATP standard curve (Figure 2\u2014figure supplement 1). Error bars indicate the standard deviation of the mean of three technical replicates, with individual data points shown as clear circles. No data are shown for 1 nM cleavable RNA target as cA4 generated was below detection limits. (C) Bar chart quantifying the number of molecules of cA4 generated per molecule of cleavable or cleavage resistant target RNA across a range of RNA target concentrations. On average SsoCsm synthesised 980\u00a0\u00b1\u00a024 and 3100\u00a0\u00b1\u00a0750 molecules of cA4 per molecule of cleavable and cleavage resistant target RNA, respectively. (D) Cartoon depicting the cellular implications of\u00a0~1000 molecules of cA4 generated per molecule of RNA target, which in S. solfataricus would equate to\u00a0~6 \u00b5M cA4 within the cell.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/55852/elife-55852-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Left-hand side panel shows duplicate serial dilution of 32P-\u03b1-ATP (5 nM) and ATP (500 \u00b5M) mix spotted (1 \u00b5l) on a thin-layer chromatography (TLC) plate. The right-hand side panel is a plot of the densiometric signal quantified from the TLC plate after phosphorimaging. The mean densiometric signal is plotted and errors bars showing the standard deviation are plotted but not visible due to their scale. The densiometric signal corresponding to cA4 was compared to the standard curve to determine the concentration of ATP converted. Duplicate standard curves were carried out for each replicate assay examining cA4 synthesis.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/55852/elife-55852-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** Plot showing the concentration of cA4 generated by SsoCsm (~4.2 \u00b5M) over time in the presence of 25 nM RNA target, 0.5 mM ATP and 2 nM 32P-\u03b1-ATP at 70\u00b0C. The data were originally reported in Rouillon et al. (2018) and here were fitted to an exponential equation to determine the kinetic rate constant of cA4 synthesis (0.04\u00a0\u00b1\u00a00.01 min\u22121). Error bars show the standard deviation of the mean of three technical replicates.\n\nGiven that S. solfataricus cells are cocci with a diameter of approximately 0.7 \u00b5m, the volume of an average cell can be calculated as approximately 0.3 fL (by comparison, E. coli has a cell volume of 1 fL [Kubitschek and Friske, 1986]). Using Avogadro\u2019s number, 1000 molecules equates to an intracellular concentration of 6 \u00b5M cA4 in S. solfataricus. Thus, detection of one viral RNA in the cell could result in the synthesis of 6 \u00b5M cA4, 10 RNAs \u2013 60 \u00b5M, etc. The upper limits of cA4 generation could be defined by the number of viral target RNAs present, the number of type III effectors carrying a crRNA matching that target, or even conceivably the amount of ATP available for cA4 generation.\n\n### Kinetic parameters of the Csx1 ribonuclease\n\nThe cA4 second messenger binds to CARF family proteins to elicit an immune response. To understand the concentration of cA4 required to activate an antiviral response, we determined the dissociation constant of the major ancillary ribonuclease Csx1 for the cA4 activator. Using radioactive cA4, we titrated an increasing concentration of Csx1 protein and subjected the mixture to native gel electrophoresis (Figure 3A,B). cA4 was bound by Csx1 with a dissociation constant (KD) of 130\u00a0\u00b1\u00a020 nM. Thus, even one viral target RNA detected by the type III CRISPR system should generate enough cA4 (6 \u00b5M) to fully activate the Csx1 ribonuclease for defence. We proceeded to estimate the binding affinity of a ribonuclease-deficient Csx1 variant for its RNA target, yielding an apparent dissociation constant of approximately 5 \u00b5M (Figure 3C). Finally, we measured the initial velocity of RNA degradation at a variety of RNA concentrations under steady state conditions and determined the multiple-turnover kinetic constant (kcat) for cA4-activated RNA cleavage by Csx1 as 0.44\u00a0\u00b1\u00a00.03 min\u22121 at 70\u00b0C (Figure 4).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/55852/elife-55852-fig3-v2.jpg)\n\n**Figure 3.:** (A) Phosphorimage of native gel electrophoresis visualising cA4 (20 nM) binding by Csx1 (concentrations as indicated in the figure). The other bands visible are due to unreacted ATP and other linear nucleotide products. (B) Plot of fraction of cA4 bound by Csx1. Error bars indicate the standard deviation of the mean of four technical replicates and the data were fitted to a quadratic equation incorporating a term for non-specific binding. The inset plot is a magnification of cA4 binding between 0.01 and 5 \u00b5M Csx1 dimer concentrations. (C) Phosphorimage of native gel electrophoresis visualising A1 substrate RNA binding by Csx1 H345N protein dimer in the absence (left hand-side) or presence (right hand-side) of unlabelled cA4 (20 \u00b5M). The image shown is representative of three technical replicates. Control c \u2013 RNA alone.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/55852/elife-55852-fig4-v2.jpg)\n\n**Figure 4.:** Analysis of multiple-turnover, steady state kinetics of A1 RNA cleavage by Csx1 (125 nM dimer) at 70\u00b0C. The data were fitted to the Michaelis-Menten equation and error bars show the standard deviation of the mean of three technical replicates.\n\n### Kinetic and equilibrium constants of the ring nucleases Crn1 and AcrIII-1\n\nWe have previously established that Crn1 cleaved cA4 at a rate of 0.089\u00a0\u00b1\u00a00.003 min\u22121 at 50\u00b0C, while AcrIII-1 cleaved cA4 at a rate of 5.4\u00a0\u00b1\u00a00.38 min\u22121, about 60-fold faster (Athukoralage et al., 2020). The difference in reaction rates probably reflects the different roles of the two enzymes, with Crn1 working in conjunction with the type III CRISPR defence and AcrIII-1 opposing it. To quantify the interaction between ring nucleases and cA4, we titrated radioactively labelled cA4 with either Crn1 or AcrIII-1 and visualised cA4 binding by phosphorimaging following native gel electrophoresis. Crn1 bound cA4 with an apparent KD of\u00a0~50 nM, while the inactive H47A variant of AcrIII-1 bound cA4 with an apparent KD of\u00a0~25 nM (Figure 5). Thus, both ring nucleases bound cA4 three to four-fold more tightly than Csx1.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/55852/elife-55852-fig5-v2.jpg)\n\n**Figure 5.:** Phosphorimages of native gel electrophoresis visualising radiolabelled cyclic oligoadenylate (cOA) binding by (A) Crn1 (B) and catalytically inactive AcrIII-1 (SIRV1 gp29 H47A). Crn1 binds cA4 (10 nM) with an apparent dissociation constant (KD) of\u00a0~50 nM, whereas AcrIII-1 binds cA4 with an apparent KD of\u00a0~25 nM. The images shown are representative of three technical replicates. Control c \u2013 cOA alone. The other bands near the bottom of the gel are caused by unreacted ATP and other linear products.\n\n### Kinetic modelling of the antiviral signalling pathway and its regulation by cA4 degrading enzymes\n\nWe entered the experimentally determined kinetic and equilibria parameters into the KinTek Global Kinetic Explorer software package and generated a model to simulate RNA degradation by Csx1 and the effects of ring nucleases over time (Figure 6A). Enzyme concentrations were set initially at 1 \u00b5M, based on published studies of transcript levels (Ortmann et al., 2008; Wurtzel et al., 2010), but were varied during modelling to assess the influence of enzyme concentration on RNA cleavage. We standardised the reaction temperature at 70\u00b0C, close to the growth temperature of S. solfataricus. This necessitated an estimation of the rate constants of Crn1 and AcrIII-1, which were measured at lower temperatures, based on a 2-fold increase in activity for each 10\u00b0C rise in temperature, in line with our previous studies of these enzymes (Athukoralage et al., 2018; Athukoralage et al., 2020). To model the generation of cA4 by the Csm:target RNA complex, we set the concentration of that complex at 6, 60 or 600 \u00b5M (equivalent to low, medium and high levels of infection), allowing the generation of the equivalent concentration of cA4 with the measured rate constant of 0.04 min\u22121 (Figure 6A). Henceforth, this will be referred to as 6, 60 or 600 \u00b5M cA4 for simplicity.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/55852/elife-55852-fig6-v2.jpg)\n\n**Figure 6.:** (A) Schematic showing kinetic and equilibrium parameters inserted into the KinTek Global Kinetic Explorer software for modelling the type III CRISPR defence illustrated in Figure 1. Parameters have been determined in this study with the following exceptions: Crn1 rate constant of 0.46 min\u22121 at 70\u00b0C estimated from rate of 0.23 min\u22121 measured at 60\u00b0C and AcrIII-1 rate constant of 21.6 min\u22121 at 70\u00b0C estimated from rate of 5.4 min\u22121 measured at 50\u00b0C (Athukoralage et al., 2020). The parameter \u2018target-Csm-ATP\u2019 was set at 6, 60 or 600 \u00b5M in simulations. Underscores connecting two variables indicate their relationship in a complex. cA4, cyclic tetra-adenylate; Crn1, CRISPR ring nuclease 1; AcrIII-1, viral ring nuclease anti-CRISPR SIRV1 gp29; Csx1, CRISPR ancillary ribonuclease; A2\u00a0>P, di-adenylate containing 2\u2019,3\u2019 cyclic phosphate (product of cA4 cleavage). (B) Free cA4 (600 \u00b5M, blue; 60 \u00b5M, red; 6 \u00b5M, green) concentration and (C), RNA cleavage in presence of 1 \u00b5M Crn1 and 1 \u00b5M Csx1. (D) and (E) show equivalent plots in the presence of 1 \u00b5M AcrIII-1. Insets where present show a magnified view of the start of each plot. (F) 3D plot visualising concentration of RNA (1000 \u00b5M at start) cleaved by Csx1 in response to 60 \u00b5M cA4 made by Csm complex, 1 \u00b5M Crn1 and varying amounts of AcrIII-1 across a range of doubling endpoints. (G) 3D plot visualising concentration of RNA (1000 \u00b5M at start) cleaved by Csx1 in response to 60 \u00b5M cA4 made by Csm complex, and varying concentrations of Csx1, Crn1 and AcrIII-1 enzymes.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/55852/elife-55852-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** Plot of RNA (1000 \u00b5M) cleaved by 1 \u00b5M Csx1 in the presence of 6, 60 or 600 \u00b5M cA4 and no ring nuclease. Identical amounts of RNA are cleaved when cA4 synthesised is in excess of Csx1 concentration and all the RNA present is eventually degraded.\n\n![Figure 6\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/55852/elife-55852-fig6-figsupp2-v2.jpg)\n\n**Figure 6\u2014figure supplement 2.:** (A)\u00a0Active fraction of 1 \u00b5M Csx1 (dotted lines, left-hand side y-axis; cA4_Csx1 and cA4_Csx1_RNA) plotted together with cleaved RNA (solid lines, right-hand side axis) in response to varying cA4 concentrations (600 \u00b5M, blue; 60 \u00b5M, red; 6 \u00b5M, green) made by target:Csm complex when 1 \u00b5M Crn1 is present. (B) Active fraction of 1 \u00b5M Csx1 and cleaved RNA over time in response to varying cA4 concentrations when 1 \u00b5M Crn1 and 1 \u00b5M AcrIII-1 is present, as colour coded previously.\n\n![Figure 6\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/55852/elife-55852-fig6-figsupp3-v2.jpg)\n\n**Figure 6\u2014figure supplement 3.:** 3D plot visualising concentration of RNA (1000 \u00b5M at start) cleaved by Csx1 in the presence of 600 \u00b5M cA4, 1 \u00b5M Crn1 and varying amounts of AcrIII-1 over time. Maximal RNA cleavage negatively correlates with AcrIII-1 concentration.\n\nIn the absence of any ring nuclease activity, 1 \u00b5M Csx1 was fully activated, degrading all 1000 \u00b5M RNA provided in the simulation within 2400 min, regardless of the simulated level of infection (Figure 6\u2014figure supplement 1). The lack of titration of Csx1 activity observed here is due to its high affinity for cA4, resulting in full activation even at very low simulated infection levels. We observed a rapid initial increase in the levels of cA4 due to synthesis by the activated Csm complex (Figure 6B). In the simulations, 1 \u00b5M Crn1 degraded 60 \u00b5M cA4 within 120 min, but took over 1200 min to degrade 600 \u00b5M cA4 (Figure 6B). These differences were reflected in the levels of Csx1-mediated RNA degradation, which were much higher for 600 \u00b5M cA4 than for the lower concentrations (Figure 6C). Thus, the kinetic modelling demonstrated that addition of a ring nuclease activity allows the cell to respond differently to varied levels of infection, and therefore cA4 concentration, resulting in a range of RNA degradation levels.\n\nWe next introduced the AcrIII-1 enzyme to the simulation, to model the effect of the Acr on the host defence system. Strikingly, when AcrIII-1 was present at 1 \u00b5M, even 600 \u00b5M cA4 was degraded rapidly (the bulk within 10 min). As a result, Csx1 activity and therefore RNA degradation were strongly supressed (Figure 6D,E). The long tail of cA4 observed in these simulations represents cA4 bound to the Csx1 enzyme and thus unavailable for degradation by AcrIII-1, reflected in the persistence of active Csx1-cA4 complex in the simulations over an extended period (Figure 6\u2014figure supplement 2). Notably, at the highest simulated infection level of 600 \u00b5M cA4, Csx1 persists in a 100% activated form for over 1200 min in the absence of AcrIII-1, but is reduced to 50% activated within 150 min in its presence, with similar effects seen at lower cA4 concentrations (Figure 6\u2014figure supplement 2).\n\nThe concentration of AcrIII-1 within S. solfataricus cells during infection is not known. We therefore varied AcrIII-1 concentration in the model (with 60 \u00b5M cA4, 1 \u00b5M Csx1 and Crn1) and simulated RNA cleavage (Figure 6F). AcrIII-1 concentrations as low as 100 nM reduced RNA cleavage by about 30%, and higher levels reduced RNA cleavage by Csx1 markedly (Figure 6F). This relationship held in simulations with 600 \u00b5M cA4 (Figure 6F, Figure 6\u2014figure supplement 3). During infection, a positive correlation between AcrIII-1 concentration and viral transcript levels would be required for continued escape from Csx1-mediated CRISPR defence \u2013 a reasonable assumption. Finally, we simulated the effects of increasing Csx1 on RNA cleavage in our infection model. Increasing Csx1 concentration 10-fold led to a significantly more robust immune response (reflected in high levels of RNA degradation) (Figure 6G) that could not be fully overcome by increasing the concentrations of Crn1 or AcrIII-1 in proportion (compare for example 10,10,10 with 1,1,1 \u00b5M in Figure 6G). Hence, increasing the expression levels of defence nucleases such as Csx1 in response to viral infection could provide an effective means for cells to combat viruses armed with Acrs such as AcrIII-1, but perhaps with the cost of increased toxicity.\n\n## Discussion\n\n### Signal amplification in type III CRISPR defence\n\nIn this study, we used biochemical data to build a kinetic model of the type III CRISPR antiviral signalling pathway within S. solfataricus cells and examined the capacity of CRISPR and anti-CRISPR ring nucleases for its regulation. Quantification of cA4 generated by the SsoCsm complex in vitro revealed that\u00a0~\u00a01000 molecules of cA4 are made per RNA target, amounting to a concentration of 6 \u00b5M in the cell if replicated in vivo. This large degree of signal amplification would ensure that detection of 1 RNA target could generate sufficient amounts of cA4 to fully activate the ribonuclease effector protein Csx1, which has a dissociation constant for cA4 of 0.13 \u00b5M. Given the large signal amplification observed here, it seems likely that some means of cOA degradation, either via self-limiting ribonucleases (Athukoralage et al., 2019; Jia et al., 2019) or dedicated ring nucleases (Athukoralage et al., 2018), will be essential for type III CRISPR systems to provide immunity rather than elicit abortive infection. Indeed, growth arrest has been observed for cOA activated Csm6 during bacteriophage infection (Rost\u00f8l and Marraffini, 2019). This life or death decision in response to genotoxic stress has also been observed in S. islandicus, which becomes dormant upon viral infection and subsequently dies if virus remains in culture (Bautista et al., 2015). In recent years, diverse CRISPR systems have been implicated in abortive infection or cell dormancy. The Type I-F CRISPR system of Pectobacterium atrosepticum was found to provide population protection by aborting infection when infected by virulent phage (Watson et al., 2019). Likewise, the in-trans collateral RNA cleavage of Listeria seeligeri Cas13a resulted in cell dormancy, providing herd immunity to the bacterial population (Meeske et al., 2019). Similarly, in ecological contexts, it is possible that different multiplicities of viral infection illicit different outcomes from the type III CRISPR response that benefit either the individual cell or the population.\n\n### Cellular and viral ring nucleases reset the system in fundamentally different ways\n\nBiochemical comparison of Crn1 and AcrIII-1 revealed that both enzymes bind cA4 with dissociation constants around 40 nM, around 3-fold tighter than observed for Csx1. However, Crn1 is a much slower enzyme. Kinetic modelling of the antiviral signalling pathway confirms that Crn1 is effective only at low levels of viral gene expression, where it has the potential to neutralise the toxicity associated with cA4-activated ribonucleases to offer a route for cell recovery without abrogating immunity. In contrast, the much faster reaction kinetics of the anti-CRISPR ring nuclease means it can rapidly deactivate Csx1 and immunosuppress cells even under very high RNA target (and thus cA4) levels.\n\nOur modelling suggests that the rapid turnover of cA4 by AcrIII-1 over a wide concentration range greatly limits RNA cleavage by deactivating defence enzymes. Therefore, the deployment of AcrIII-1 upon viral infection may not only promote viral propagation but also safeguard cellular integrity until viral release by lysis. Recent studies have uncovered that sequentially infecting phage evade CRISPR defences by exploiting the immunosuppression achieved by Acr enzymes from failed infections (Borges et al., 2018; Landsberger et al., 2018). Further, these immunosuppressed cells have been shown to be susceptible to Acr-negative phage infections, highlighting the complex ecological consequences of supressing CRISPR immunity (Chevallereau et al., 2020). In Sulfolobus Turreted Icosahedral virus (STIV), the AcrIII-1 gene B116 is expressed early in the viral life cycle (Ortmann et al., 2008). Therefore, AcrIII-1 accumulation in the cell, possibly from early expression by unsuccessful viruses may, as our models demonstrate, favour the success of latter viral infections. Type III CRISPR systems also conditionally tolerate prophage (Goldberg et al., 2014), and unsurprisingly, AcrIII-1 is found in a number of prophages and integrative and conjugative elements. In these cases, constitutively expressed AcrIII-1 may further immunocompromise cells, and sensitise them to infection by phage otherwise eradicated by type III CRISPR defence. In the ongoing virus-host conflict, while increasing Csx1 concentration may allow better immunity when faced with AcrIII-1, upregulating AcrIII-1 expression in cells will undoubtedly offer viruses an avenue for counter offence.\n\nIt should be noted that the type III CRISPR locus of S. solfataricus contains a number of CARF domain proteins and their contribution to immunity has not yet been studied. In particular, the CARF-family putative transcription factor Csa3 appears to be involved in transcriptional regulation of CRISPR loci, including the adaptation and type I-A effector genes, when activated by cA4 (Liu et al., 2015; Liu et al., 2017). These observations suggest that the cA4 signal may transcend type III CRISPR defence in some cell types by activating multiple defence systems. However, by degrading the second messenger, AcrIII-1 has the potential to neutralise all of these.\n\n### Cyclic nucleotides in prokaryotic defence systems\n\nCyclic nucleotide-based defence systems are emerging as powerful cellular sentinels against parasitic elements in prokaryotes. Mirroring the role of cyclic GMP-AMP synthase (cGAS) in eukaryotic defence against viruses as part of the cGAS-STING pathway, bacterial cGAS enzymes have recently been discovered that abort infection by activating phospholipases through cGAMP signaling (Cohen et al., 2019). Termed the cyclic-oligonucleotide-based antiphage signaling system (CBASS), a large number of additional cOA sensing effector proteins associated with CBASS loci remain uncharacterised, highlighting great diversity in the cellular arsenal used for defence (Burroughs et al., 2015; Cohen et al., 2019). Furthermore, diverse nucleotide cyclases have been identified that generate a range of cyclic nucleotides including cUMP-AMP, c-di-UMP and cAAG, which are also likely to function in novel antiviral signal transduction pathways (Whiteley et al., 2019). Type III systems also generate cyclic tri-adenylate (cA3) and cyclic penta-adenylate (cA5) molecules. Whereas no signalling role has yet been ascribed to cA5, cA3 has been demonstrated to activate a family of DNases termed NucC which abort infection by degrading the host genome prior to completion of the phage replication cycle (Lau et al., 2020).\n\nThe balance between immunity, abortive infection and successful pathogen replication is likely to be governed by enzymes that synthesise and degrade these cyclic nucleotide second messengers. Just as prokaryotes with type III CRISPR require a means to degrade cOA in appropriate circumstances, eukaryotic cells have enzymes that degrade cGAMP to regulate cGAS-STING mediated immunity (Li et al., 2014). Likewise, while prokaryotic viruses utilise AcrIII-1 to rapidly degrade cA4, eukaryotic poxviruses utilise Poxins to subvert host immunity by destroying cGAMP (Eaglesham et al., 2019), and pathogenic Group B Streptococci degrade host c-di-AMP using the CndP enzyme to circumvent innate immunity (Andrade et al., 2016). The rate of discovery of new defence pathways and cyclic nucleotide signals is breath-taking. Analysis of the dynamic interplay between enzymes that leads to fluctuations in the levels of these second messengers is therefore of crucial importance if we are to achieve an understanding of these processes.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Gene (Sulfolobus solfataricus)</td>\n      <td>Csm complex (eight subunits)</td>\n      <td>PMID:24119402</td>\n      <td></td>\n      <td>virus expression construct</td>\n    </tr>\n    <tr>\n      <td>Gene (Sulfolobus solfataricus)</td>\n      <td>Csx1</td>\n      <td>PMID:29963983</td>\n      <td>UniProtKB - Q97YD5</td>\n      <td>plasmid expression construct</td>\n    </tr>\n    <tr>\n      <td>Gene (Sulfolobus solfataricus)</td>\n      <td>Crn1</td>\n      <td>PMID:30232454</td>\n      <td>UniProtKB - Q7LYJ6</td>\n      <td>plasmid expression construct</td>\n    </tr>\n    <tr>\n      <td>Gene (Sulfolobus islandicus rod-shaped virus 1)</td>\n      <td>AcrIII-1</td>\n      <td>PMID:31942067</td>\n      <td>UniProtKB - Q8QL27</td>\n      <td>plasmid expression construct</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>KinTek Kinetic Explorer</td>\n      <td>PMID:19897109</td>\n      <td></td>\n      <td>model constructed for this paper</td>\n    </tr>\n  </tbody>\n</table>\n\n### Cyclic oligoadenylate (cOA) synthesis and visualisation\n\nCyclic tetra-adenylate (cA4) made per RNA target (0.01, 0.1, 1, 10, 25 or 50 nM) was investigated in a 20 \u03bcl reaction volume incubating A26 RNA target or A26 phosphorothioate RNA target (Table 1) with 13.5 \u03bcg Sulfolobus solfataricus (Sso)Csm complex (~470 nM carrying A26 CRISPR RNA) in Csx1 buffer containing 20 mM MES pH 5.5, 100 mM K-glutamate, 1 mM DTT and 3 units SUPERase\u2022In Inhibitor supplemented with 1 mM ATP, 5 nM \u03b1-32P-ATP and 2 mM MgCl2 at 70\u00b0C for 2 hr. All samples were deproteinised by phenol-chloroform extraction (Ambion) followed by chloroform (Sigma-Aldrich) extraction prior to separating the cOA products by thin-layer chromatography (TLC). TLC was carried out as previously described (Rouillon et al., 2019). In brief, 1 \u03bcl of radiolabelled cOA product was spotted 1 cm from the bottom of a 20 \u00d7 20 cm silica gel TLC plate (Supelco Sigma-Aldrich). The TLC plate was placed in a sealed glass chamber pre-warmed at 37\u00b0C containing 0.5 cm of a running buffer composed of 30% H2O, 70% ethanol and 0.2 M ammonium bicarbonate, pH 9.2. After TLC the plate was air dried and sample migration visualised by phosphor imaging. For analysis, densiometric signals corresponding to cA4 was quantified as previously described (Rouillon et al., 2019).\n\n**Table 1.**\n Oligonucleotides.CRISPR RNA A26 is shown 3\u2019 to 5\u2019. Phosphorothioate linkages are indicated with an asterisk. Regions complementary to CRISPR RNA A26 are italicized.\n\n\n<table>\n  <tbody>\n    <tr>\n      <td>Crispr rna a26</td>\n      <td>3\u2019-GCAACAATTCTTGCTGCAACAATCTTCAACCCATACCAGAAAGUUA</td>\n    </tr>\n    <tr>\n      <td>Name</td>\n      <td>Sequence (5\u2019\u22123\u2019)</td>\n    </tr>\n    <tr>\n      <td>Target RNA A26</td>\n      <td>AGGGUCGUUGUUAAGAACGACGUUGUUAGAAGUUGGGUAUGGUGGAGA</td>\n    </tr>\n    <tr>\n      <td>Phosphorothioate target RNA A26</td>\n      <td>AGGGUCGUUGUUAAGAACGACGUUGU*U*A*GAAGUUGGGU*A*U*GGUGGAGA</td>\n    </tr>\n    <tr>\n      <td>A1 substrate RNA</td>\n      <td>AGGGUAUUAUUUGUUUGUUUCUUCUAAACUAUAAGCUAGUUCUGGAGA</td>\n    </tr>\n  </tbody>\n</table>\n\n### Generation of \u03b1-32P-ATP standard curves\n\ncA4 synthesis was visualised by incorporation of 5 nM \u03b1-32P-ATP added together with 0.5 mM ATP at the start of the reaction. Therefore, to calculate the concentration of ATP used for cA4 synthesis, \u03b1-32P-ATP standard curves were generated in duplicate, starting with 5 nM \u03b1-32P-ATP within a 20 \u03bcl volume to represent the densiometric signal corresponding to the complete conversion of 0.5 mM ATP into cOA. Serial two-fold dilutions of 5 nM \u03b1-32P-ATP and 0.5 mM ATP starting from a 20 \u03bcl volume were made and 1 \u03bcl of each dilution was spotted on a silica plate and phosphorimaged alongside TLC separating cOA made with varying RNA target concentrations. After phosphorimaging, the densiometric signals of the serial dilutions were quantified, averaged and plotted against ATP concentration starting from 0.5 mM and halving with each two-fold dilution. A line of best fit was then drawn. The concentration of ATP used to synthesise cA4 was calculated by entering the densiometric signal of the cA4 product into to equation of the line of best fit for the \u03b1-32P-ATP standard curve. The concentration of cA4 generated was derived by dividing the concentration of ATP incorporated by four to account for polymerisation of four ATP molecules to generate one molecule of cA4. Finally, the molecules of cA4 made per RNA was calculated by dividing the cA4 concentration generated by the concentration A26 RNA target used for cOA synthesis.\n\nCalculation determining the concentration of cA4 made when one RNA target is detected\u00a0within a S. solfataricus cell of \u2248 0.8 \u00b5m (0.6\u20131.0 \u00b5m) diameter.\n\n$$\nVolume\u00a0(V)=\\frac{4}{3}\\pir^{3}andr=\\frac{1}{2}d\n$$\n\n\n\n$$\nr=\\frac{1}{2}\u00a0\\times\u00a00.8\\mum\n$$\n\n\n\n$$\nr=0.4\\mum\n$$\n\n\n\n$$\nV=\\frac{4}{3}\\pi\\times(0.4\\mum)^{3}\n$$\n\n\n\n$$\nV=0.268\\mum^{3}\n$$\n\n\n\n$$\n1\\mum^{3}=1fL\n$$\n\n\n\n$$\n0.268\\mum^{3}=0.268fL=2.68\\times10^{\u221213}mL\n$$\n\n\n\n$$\n1moleofRNA=6.022\\times10^{23}moleculesofRNA\n$$\n\n\n\n$$\n1moleculeofRNA=1\\div6.022\\times10^{23}=1.661\\times10^{\u221224}molesofRNA\n$$\n\nAs\u00a0~1000 molecules of cA4 is made per 1 molecule of RNA\n\n$$\n1.661\u00a0\\times10^{\u221224\u00a0}moles\u00a0\\times\u00a01000\u00a0=1.661\u00a0\\times10^{\u221221}\u00a0molesofcA_{4}\n$$\n\nConcentration (M)\u00a0=\u00a0moles / Volume (L)\n\n$$\n1.661\u00a0\\times10^{\u221221}\u00a0moles\u00a0\\div\u00a02.68\\times10^{\u221216}L=6.20\\times10^{\u22126}Mor6.20\\muMcA_{4}\n$$\n\n### Electrophoretic mobility shift assays to determine cA4 equilibrium binding constants\n\n~20 nM radioactively-labelled cA4 generated using the SsoCsm was incubated with increasing concentrations of Csx1 (0.01, 0.05, 0.10, 0.20, 0.40, 0.60, 0.80, 1,0, 2.0, 4.0, 8.0, 10.0, 20.0 \u03bcM protein dimer) in buffer containing 20 mM Tris-HCl pH 7.5, 150 mM NaCl, 2 mM MgCl2 supplemented with 2 \u00b5M Ultrapure Bovine Serum Albumin (Invitrogen) for 10 min at 25\u00b0C. A reaction volume equivalent of 20% (v/v) glycerol was then added prior to loading the samples on a 15% polyacrylamide, 1 X TBE gel. Electrophoresis was carried out at 28\u00b0C and 250 V. Gels were phosphor imaged overnight at \u221280\u00b0C. For investigating RNA binding, 50 nM 5\u2019-end radiolabelled and gel purified A1 RNA was incubated with Csx1 variant H345N (0.01, 0.10, 1.0, 5.0, 10.0, 20.0 \u03bcM protein dimer) in the presence or absence of 20 \u00b5M cA4 for 15 min at 40\u00b0C. To examine cA4 binding by Crn1,~10 nM radiolabelled SsoCsm cA4 was incubated with Sso2081 (0.01, 0.05, 0.10, 0.20, 0.40, 0.60, 0.80, 1,0, 2.0, 4.0, 8.0, 10.0, 20.0 \u03bcM protein dimer) on ice for 15 min before gel electrophoresis as described above but at 300V and at 4\u00b0C. cA4 binding by AcrIII-1 was examined by incubating\u00a0~10 nM radiolabelled SsoCsm cA4 with SIRV1 gp49 H47A (0.001, 0.01, 0.02, 0.03, 0.04, 0.05, 0.06, 0.08, 0.10, 1.0, 10.0, 20.0 \u00b5M protein dimer) for 10 min at 25\u00b0C before gel electrophoresis at 30\u00b0C as described above. For analysis densiometric signal corresponding to cA4 bound protein was quantified. The densiometric count corresponding to cA4 bound to 20 \u00b5M Csx1 dimer was used to represent 100% binding and densiometric counts from other lanes were normalised to this value within each replicate. Error of the 100% bound (20 \u00b5M Csx1 dimer) densiometric count was derived by calculating the area adjusted count for each replicate and then the standard deviation of their mean, reporting the standard deviation as a fraction of the mean set as 100% bound. The data were fitted to a quadratic equation with an adjust for nonspecific binding (Y\u00a0= (ymax-ymin)*((x + [ligand] + Kd) - ((x+[ligand]+Kd)^2\u20134*x*[ligand])^0.5)/(2*[ligand]) +a*x+b) using GraphPad Prism 8.\n\n### Multiple turnover kinetics of RNA cleavage by Csx1\n\nMultiple turnover kinetic experiments were carried out by incubating Csx1 (0.125 \u00b5M dimer) with radiolabelled (50 nM) and unlabelled RNA A1 to a final concentration of 1.25, 1.5, 2.0, 5.0, 10.0, or 20.0 \u03bcM RNA in Csx1 buffer at 70\u00b0C. Control reactions with no protein and with protein and RNA in the absence of cA4 were included. 10 \u03bcl reaction aliquots were quenched by adding to phenol-chloroform and vortexing and the different time-points at which reactions were quenched for each RNA concentration is indicated in data transparency. Deproteinised products were run on a 7 M urea, 20% acrylamide, 1 X TBE gel at 45\u00b0C as previously described (Rouillon et al., 2019), and phosphorimaged overnight at \u221280\u00b0C. Each experiment was carried out in triplicate. Fraction of RNA cut was plotted against time and a linear regression was carried out on the linear portion of each plot to determine the initial rate of RNA cleavage at each RNA concentration. To determine the parameters kcat and KM, the average initial rate of RNA cleavage was plotted against RNA concentration and fitted to the Michaelis-Menten equation using GraphPad Prism 8.\n\n### Modelling antiviral signalling and its control by ring nucleases\n\nModelling was carried out using the KinTek Explorer eight software package (Johnson, 2009), which is available from (https://kintekcorp.com/software). Experiments were modelled and simulated using kinetic and equilibrium paramters detemined experimentally as described in Figure 6A. The following steps were inserted to generate the model:\n\nSimulations were carried out varying target_Csm_ATP concentration (6, 60 and 600 \u00b5M) while Csx1, Crn1 (Sso2081) and AcrIII-1 concentrations were fixed at 1 \u00b5M dimer, or varied depending on the simulation, with total substrate RNA in the cell fixed at 1000 \u00b5M.\n",
+      "created_at": "2025-12-02T16:40:22.654523Z"
+    },
+    {
+      "id": "23f86926-6c35-40d9-a707-f28c6478190f",
+      "submission_id": "a3d45d61-e554-4683-a58c-eb193542d6ca",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Blake Wiedenheft, Montana State University United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.55852.sa1](https://doi.org/10.7554/eLife.55852.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nThank you for submitting your article \"The dynamic interplay of host and viral enzymes in type III CRISPR-mediated cyclic nucleotide signalling\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Gisela Storz as the Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Philip Kranzusch (Reviewer #1); Martin Lawrence (Reviewer #2); Rotem Sorek (Reviewer #3).\n\nThe reviewers universally agree that this work is nearly ready for publication. No additional experiments are requested.\n\nSummary:\n\nIt is becoming increasingly clear that cyclic nucleotides play a critical role in the host response to a viral infection and that viruses have evolved mechanisms to intercept these signaling molecules. In this work, the authors focused on the synthesis of cyclic-oligo-adenylate (cA4) produced by the type-III CRISPR system in Sulfolobus solfataricus, the immune proteins that are activated by cA4, and viral anti-CRISPR proteins that degrade cA4. Biochemical data is used to build a kinetic model, which helps explains how cyclases and ring nucleases govern cyclic nucleotide levels and determine infection outcomes in virus-host conflict.\n\nEssential revisions:\n\n1) Rates of cA4 synthesis by the S. solfataricus Csm complex have been previously measured (Rouillon et al., 2018; Rouillon et al., 2019). These rates should be incorporated into the mathematical model to understand how the relative rates of cA4 synthesis and cA4 degradation may influence effector function dynamics.\n\n2) The current model does not take into account previously observations from the lab demonstrating that cA4 synthesis wanes after ~10 min if no new activating RNA is delivered to the system. Please discuss this in the context of your model.\n",
+      "created_at": "2025-12-02T16:40:22.654523Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T16:40:22.654523Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T16:40:22.654523Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "89456034-98d5-4294-a333-97ebea87213c",
+      "content_id": "62859123-c3f7-4697-abe1-ce9ada4dcceb",
+      "claim_id": "C1",
+      "claim": "Type III CRISPR systems synthesise cyclic oligoadenylate (cOA) upon detecting foreign RNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Type III CRISPR systems synthesise cyclic oligoadenylate (cOA) upon detecting foreign RNA, activating ancillary nucleases that can be toxic to cells, necessitating mechanisms to remove cOA in systems that operate via immunity rather than abortive infection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a well-established finding in the field, supported by multiple citations throughout the manuscript.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:40:22.654523Z"
+    },
+    {
+      "id": "430915ab-eefe-40a5-80f6-1d23dd75464d",
+      "content_id": "62859123-c3f7-4697-abe1-ce9ada4dcceb",
+      "claim_id": "C2",
+      "claim": "cOA activates ancillary nucleases that can be toxic to cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Type III CRISPR systems synthesise cyclic oligoadenylate (cOA) upon detecting foreign RNA, activating ancillary nucleases that can be toxic to cells, necessitating mechanisms to remove cOA in systems that operate via immunity rather than abortive infection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The toxicity of activated ancillary nucleases is referenced and discussed throughout the manuscript.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:40:22.654523Z"
+    },
+    {
+      "id": "7f5af910-5cfa-48c2-9fda-dc92484f890b",
+      "content_id": "62859123-c3f7-4697-abe1-ce9ada4dcceb",
+      "claim_id": "C3",
+      "claim": "The Sulfolobus solfataricus type III-D CRISPR complex generates cyclic tetra-adenylate (cA4).",
+      "claim_type": "EXPLICIT",
+      "source": "Previously, we demonstrated that the Sulfolobus solfataricus type III-D CRISPR complex generates cyclic tetra-adenylate (cA4), activating the ribonuclease Csx1, and showed that subsequent RNA cleavage and dissociation acts as an 'off-switch' for the cyclase activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a previously published finding by the authors, cited as Rouillon et al., 2018.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:40:22.654523Z"
+    },
+    {
+      "id": "89457c44-54f3-41a5-92a0-54861c619e6c",
+      "content_id": "62859123-c3f7-4697-abe1-ce9ada4dcceb",
+      "claim_id": "C4",
+      "claim": "cA4 activates the ribonuclease Csx1.",
+      "claim_type": "EXPLICIT",
+      "source": "Previously, we demonstrated that the Sulfolobus solfataricus type III-D CRISPR complex generates cyclic tetra-adenylate (cA4), activating the ribonuclease Csx1, and showed that subsequent RNA cleavage and dissociation acts as an 'off-switch' for the cyclase activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a previously published finding by the authors.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:40:22.654523Z"
+    },
+    {
+      "id": "c1f02019-f6ca-4514-bf86-badfe3827d19",
+      "content_id": "62859123-c3f7-4697-abe1-ce9ada4dcceb",
+      "claim_id": "C5",
+      "claim": "RNA cleavage and dissociation acts as an 'off-switch' for the cyclase activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Previously, we demonstrated that the Sulfolobus solfataricus type III-D CRISPR complex generates cyclic tetra-adenylate (cA4), activating the ribonuclease Csx1, and showed that subsequent RNA cleavage and dissociation acts as an 'off-switch' for the cyclase activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a previously published finding by the authors, cited as Rouillon et al., 2018.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:40:22.654523Z"
+    },
+    {
+      "id": "790f80a4-e95b-4209-a09a-3b49c6fd2475",
+      "content_id": "62859123-c3f7-4697-abe1-ce9ada4dcceb",
+      "claim_id": "C6",
+      "claim": "The cellular ring nuclease Crn1 slowly degrades cA4 to reset the system.",
+      "claim_type": "EXPLICIT",
+      "source": "Subsequently, we identified the cellular ring nuclease Crn1, which slowly degrades cA4 to reset the system (Rouillon et al., 2018), and demonstrated that viruses can subvert type III CRISPR immunity by means of a potent anti-CRISPR ring nuclease variant AcrIII-1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a previously published finding by the authors, cited as Rouillon et al., 2018.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:40:22.654523Z"
+    },
+    {
+      "id": "9ef2ed1b-25ad-48f7-b1a0-f586e94333ef",
+      "content_id": "62859123-c3f7-4697-abe1-ce9ada4dcceb",
+      "claim_id": "C7",
+      "claim": "Viruses can subvert type III CRISPR immunity by means of a potent anti-CRISPR ring nuclease variant AcrIII-1.",
+      "claim_type": "EXPLICIT",
+      "source": "Subsequently, we identified the cellular ring nuclease Crn1, which slowly degrades cA4 to reset the system (Rouillon et al., 2018), and demonstrated that viruses can subvert type III CRISPR immunity by means of a potent anti-CRISPR ring nuclease variant AcrIII-1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a previously published finding by the authors.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:40:22.654523Z"
+    },
+    {
+      "id": "6da0753b-c31a-4520-84fe-5ed41d8b3d99",
+      "content_id": "62859123-c3f7-4697-abe1-ce9ada4dcceb",
+      "claim_id": "C8",
+      "claim": "CRISPR systems are widespread in archaea and bacteria.",
+      "claim_type": "EXPLICIT",
+      "source": "CRISPR systems are widespread in archaea and bacteria, providing adaptive immunity against invading mobile genetic elements (MGE) (Sorek et al., 2013; Makarova et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Sorek et al., 2013 and Makarova et al., 2020.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:40:22.654523Z"
+    },
+    {
+      "id": "d390b1b4-29ed-4dd8-ba25-50dc534131cb",
+      "content_id": "62859123-c3f7-4697-abe1-ce9ada4dcceb",
+      "claim_id": "C9",
+      "claim": "CRISPR systems provide adaptive immunity against invading mobile genetic elements (MGE).",
+      "claim_type": "EXPLICIT",
+      "source": "CRISPR systems are widespread in archaea and bacteria, providing adaptive immunity against invading mobile genetic elements (MGE) (Sorek et al., 2013; Makarova et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Sorek et al., 2013 and Makarova et al., 2020.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:40:22.654523Z"
+    },
+    {
+      "id": "4716928f-78b4-4f38-a51f-214387f1dab0",
+      "content_id": "62859123-c3f7-4697-abe1-ce9ada4dcceb",
+      "claim_id": "C10",
+      "claim": "Type III CRISPR systems are multi-functional effector proteins that have specialised in the detection of foreign RNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Type III CRISPR systems (Figure 1) are multi-functional effector proteins that have specialised in the detection of foreign RNA (Tamulaitis et al., 2017; Zhu et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Tamulaitis et al., 2017 and Zhu et al., 2018.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:40:22.654523Z"
+    },
+    {
+      "id": "7193dcc5-34eb-45b0-b25c-bd401a8c38ef",
+      "content_id": "62859123-c3f7-4697-abe1-ce9ada4dcceb",
+      "claim_id": "C11",
+      "claim": "The large subunit Cas10 harbours two enzyme active sites that are activated by target RNA binding: a DNA-cleaving HD nuclease domain and a cyclase domain for cyclic oligoadenylate (cOA) synthesis.",
+      "claim_type": "EXPLICIT",
+      "source": "The large subunit, Cas10, harbours two enzyme active sites that are activated by target RNA binding: a DNA-cleaving HD nuclease domain (Samai et al., 2015; Elmore et al., 2016; Estrella et al., 2016; Kazlauskiene et al., 2016) and a cyclase domain for cyclic oligoadenylate (cOA) synthesis (Kazlauskiene et al., 2017; Niewoehner et al., 2017; Rouillon et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to published studies.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:40:22.654523Z"
+    },
+    {
+      "id": "2969e01f-2d9c-48c4-8c9e-0dd69ba6f883",
+      "content_id": "62859123-c3f7-4697-abe1-ce9ada4dcceb",
+      "claim_id": "C12",
+      "claim": "The third enzymatic activity of type III systems is situated in the Cas7 subunit of the complex, which cleaves bound RNA targets.",
+      "claim_type": "EXPLICIT",
+      "source": "The third enzymatic activity of type III systems is situated in the Cas7 subunit of the complex, which cleaves bound RNA targets and in turn regulates Cas10 enzymatic activities (Tamulaitis et al., 2014; Rouillon et al., 2018; Johnson et al., 2019; Nasef et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to published studies.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:40:22.654523Z"
+    },
+    {
+      "id": "002cd47e-a7e1-4a59-aa42-7828aa49dc2f",
+      "content_id": "62859123-c3f7-4697-abe1-ce9ada4dcceb",
+      "claim_id": "C13",
+      "claim": "The Cas7 subunit regulates Cas10 enzymatic activities.",
+      "claim_type": "EXPLICIT",
+      "source": "The third enzymatic activity of type III systems is situated in the Cas7 subunit of the complex, which cleaves bound RNA targets and in turn regulates Cas10 enzymatic activities (Tamulaitis et al., 2014; Rouillon et al., 2018; Johnson et al., 2019; Nasef et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to published studies.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:40:22.654523Z"
+    },
+    {
+      "id": "bebcea08-fc6a-48cd-9994-4e0487679e35",
+      "content_id": "62859123-c3f7-4697-abe1-ce9ada4dcceb",
+      "claim_id": "C14",
+      "claim": "The cyclase domain polymerises ATP into cOA species consisting of between 3 and 6 AMP subunits in varying proportions.",
+      "claim_type": "EXPLICIT",
+      "source": "The cyclase domain polymerises ATP into cOA species consisting of between 3 and 6 AMP subunits (denoted cA3, cA4 etc.), in varying proportions (Kazlauskiene et al., 2017; Niewoehner et al., 2017; Rouillon et al., 2018; Gr\u00fcschow et al., 2019; Nasef et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to published studies.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:40:22.654523Z"
+    },
+    {
+      "id": "a3411989-ab4c-4ade-8ed2-696b71850e8b",
+      "content_id": "62859123-c3f7-4697-abe1-ce9ada4dcceb",
+      "claim_id": "C15",
+      "claim": "cOA second messengers activate CRISPR ancillary nucleases of the Csx1/Csm6, Can1 (CRISPR associated nuclease 1) and NucC families.",
+      "claim_type": "EXPLICIT",
+      "source": "cOA second messengers activate CRISPR ancillary nucleases of the Csx1/Csm6, Can1 (CRISPR associated nuclease 1) and NucC families, which drive the immune response against MGEs (Kazlauskiene et al., 2017; Niewoehner et al., 2017; Rouillon et al., 2018; Gr\u00fcschow et al., 2019; Lau et al., 2020; McMahon et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to published studies.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:40:22.654523Z"
+    },
+    {
+      "id": "9d90ec7d-a4ad-422c-b195-342234d03a8b",
+      "content_id": "62859123-c3f7-4697-abe1-ce9ada4dcceb",
+      "claim_id": "C16",
+      "claim": "cA4 appears to be the most widely used signalling molecule by type III CRISPR systems.",
+      "claim_type": "EXPLICIT",
+      "source": "To date, cA4 appears to be the most widely used signalling molecule by type III CRISPR systems (Gr\u00fcschow et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Gr\u00fcschow et al., 2019.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:40:22.654523Z"
+    },
+    {
+      "id": "87cfca8a-fa6d-407e-b47c-959a1186947a",
+      "content_id": "62859123-c3f7-4697-abe1-ce9ada4dcceb",
+      "claim_id": "C17",
+      "claim": "The ribonuclease activity of Csx1/Csm6 is crucial for the clearance of MGEs.",
+      "claim_type": "EXPLICIT",
+      "source": "The ribonuclease activity of Csx1/Csm6 is crucial for the clearance of MGEs (Hatoum-Aslan et al., 2014; Foster et al., 2019; Gr\u00fcschow et al., 2019), particularly when viral genes are transcribed late in infection, at low levels or mutated (Hatoum-Aslan et al., 2014; Jiang et al., 2016; Rost\u00f8l and Marraffini, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to published studies.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:40:22.654523Z"
+    },
+    {
+      "id": "8752a4a6-d31d-4037-a661-a2ef596abbd1",
+      "content_id": "62859123-c3f7-4697-abe1-ce9ada4dcceb",
+      "claim_id": "C18",
+      "claim": "The type III-D system from Sulfolobus solfataricus synthesises predominantly cA4.",
+      "claim_type": "EXPLICIT",
+      "source": "In our previous study, we demonstrated that the type III-D system from Sulfolobus solfataricus synthesises predominantly cA4, which activates the CRISPR ancillary ribonuclease Csx1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a previously published finding by the authors.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:40:22.654523Z"
+    },
+    {
+      "id": "67269c20-a1be-406a-858e-7ef7c3993131",
+      "content_id": "62859123-c3f7-4697-abe1-ce9ada4dcceb",
+      "claim_id": "C19",
+      "claim": "Target RNA cleavage and dissociation from the complex shut-off cOA synthesis.",
+      "claim_type": "EXPLICIT",
+      "source": "We examined the first regulatory step in cOA synthesis in detail and demonstrated that target RNA cleavage and dissociation from the complex shut-off cOA synthesis (Rouillon et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a previously published finding by the authors, cited as Rouillon et al., 2018.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:40:22.654523Z"
+    },
+    {
+      "id": "1559518e-2a96-4165-a4b4-aeea374c8e74",
+      "content_id": "62859123-c3f7-4697-abe1-ce9ada4dcceb",
+      "claim_id": "C20",
+      "claim": "CRISPR ancillary nucleases degrade nucleic acids non-specifically.",
+      "claim_type": "EXPLICIT",
+      "source": "Since CRISPR ancillary nucleases degrade nucleic acids non-specifically, cellular as well as viral targets are destroyed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a known property of these nucleases, discussed in the context of their mechanism.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:40:22.654523Z"
+    },
+    {
+      "id": "1c641661-5a9d-4752-92f3-b27a23f4899b",
+      "content_id": "62859123-c3f7-4697-abe1-ce9ada4dcceb",
+      "claim_id": "C21",
+      "claim": "Collateral cleavage of self-transcripts by a Csm6 enzyme has previously been shown to result in cell growth arrest.",
+      "claim_type": "EXPLICIT",
+      "source": "Collateral cleavage of self-transcripts by a Csm6 enzyme has previously been shown to result in cell growth arrest (Rost\u00f8l and Marraffini, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Rost\u00f8l and Marraffini, 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:40:22.654523Z"
+    },
+    {
+      "id": "8421dcda-32ab-4db2-9388-cb01d4c29517",
+      "content_id": "62859123-c3f7-4697-abe1-ce9ada4dcceb",
+      "claim_id": "C22",
+      "claim": "S. solfataricus encodes CRISPR-associated ring nuclease 1 (Crn1) family enzymes.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, in addition to regulating the synthesis of cOA, cells need a mechanism to remove extant cOA if they are to return to normal growth. To solve this problem, S. solfataricus encodes CRISPR-associated ring nuclease 1 (Crn1) family enzymes (Athukoralage et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Athukoralage et al., 2018.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:40:22.654523Z"
+    },
+    {
+      "id": "f49ba014-61b8-4ee8-aad6-1addf03dc050",
+      "content_id": "62859123-c3f7-4697-abe1-ce9ada4dcceb",
+      "claim_id": "C23",
+      "claim": "Crn1 enzymes slowly degrade cA4 to yield di-adenylate products incapable of activating Csx1.",
+      "claim_type": "EXPLICIT",
+      "source": "Crn1 enzymes slowly degrade cA4 to yield di-adenylate products incapable of activating Csx1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the authors' previous work.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:40:22.654523Z"
+    },
+    {
+      "id": "b0bf414f-a96f-4255-9329-ab826f7d7a88",
+      "content_id": "62859123-c3f7-4697-abe1-ce9ada4dcceb",
+      "claim_id": "C24",
+      "claim": "In other species Csm6 proteins have evolved catalytic CARF domains capable of degrading cA4.",
+      "claim_type": "EXPLICIT",
+      "source": "In other species Csm6 proteins have evolved catalytic CARF domains capable of degrading cA4, thereby acting as their own 'off-switches' to their RNase activity (Athukoralage et al., 2019; Jia et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Athukoralage et al., 2019 and Jia et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:40:22.654523Z"
+    },
+    {
+      "id": "c79831b8-327f-4d88-a136-29658930ac96",
+      "content_id": "62859123-c3f7-4697-abe1-ce9ada4dcceb",
+      "claim_id": "C25",
+      "claim": "Many archaeal viruses and bacteriophage encode a ring nuclease anti-CRISPR (AcrIII-1).",
+      "claim_type": "EXPLICIT",
+      "source": "Many archaeal viruses and bacteriophage encode a ring nuclease anti-CRISPR (AcrIII-1), unrelated to Crn1, which neutralises the type III response by rapidly degrading cA4 to prevent ancillary nuclease activation (Athukoralage et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Athukoralage et al., 2020.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:40:22.654523Z"
+    },
+    {
+      "id": "3ea69d04-60e9-4bea-843d-d985708764ed",
+      "content_id": "62859123-c3f7-4697-abe1-ce9ada4dcceb",
+      "claim_id": "C26",
+      "claim": "AcrIII-1 neutralises the type III response by rapidly degrading cA4 to prevent ancillary nuclease activation.",
+      "claim_type": "EXPLICIT",
+      "source": "Many archaeal viruses and bacteriophage encode a ring nuclease anti-CRISPR (AcrIII-1), unrelated to Crn1, which neutralises the type III response by rapidly degrading cA4 to prevent ancillary nuclease activation (Athukoralage et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Athukoralage et al., 2020.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:40:22.654523Z"
+    },
+    {
+      "id": "d2fb1c0d-f41d-4748-860c-af8c030fc39e",
+      "content_id": "62859123-c3f7-4697-abe1-ce9ada4dcceb",
+      "claim_id": "C27",
+      "claim": "Detection of even a single molecule of invading RNA has the potential to generate a large signal amplification via synthesis of cA4.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we show that detection of even a single molecule of invading RNA has the potential to generate a large signal amplification via synthesis of cA4 that in turn activates the non-specific degradative ribonuclease Csx1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a key finding of the current study, supported by experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:40:22.654523Z"
+    },
+    {
+      "id": "87db00cd-f4fa-4960-b63d-cf08683499f1",
+      "content_id": "62859123-c3f7-4697-abe1-ce9ada4dcceb",
+      "claim_id": "C28",
+      "claim": "Approximately 1000 molecules (980 \u00b1 24) of cA4 were generated per molecule of RNA over a range of 10\u2013100 nM target RNA.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that approximately 1000 molecules (980 \u00b1 24) of cA4 were generated per molecule of RNA, over a range of 10\u2013100 nM target RNA (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly measured experimental data shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:40:22.654523Z"
+    },
+    {
+      "id": "3e2c9838-4217-46f9-9785-1038f3b6bfc2",
+      "content_id": "62859123-c3f7-4697-abe1-ce9ada4dcceb",
+      "claim_id": "C29",
+      "claim": "When a poorly-cleavable target RNA species containing phosphorothioates was used as the substrate, the amount of cA4 generated increased approximately 3-fold (3100 \u00b1 750).",
+      "claim_type": "EXPLICIT",
+      "source": "When a poorly-cleavable target RNA species containing phosphorothioates was used as the substrate, the amount of cA4 generated increased approximately 3-fold (3100 \u00b1 750, Figure 2), confirming the important role of RNA cleavage for deactivation of the cyclase domain (Rouillon et al., 2018; Nasef et al., 2019).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly measured experimental data shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:40:22.654523Z"
+    },
+    {
+      "id": "04dee7df-4b46-4f95-88a4-ef5c71fb6260",
+      "content_id": "62859123-c3f7-4697-abe1-ce9ada4dcceb",
+      "claim_id": "C30",
+      "claim": "The catalytic rate constant (k) of cA4 synthesis by the S. solfataricus type III effector is 0.04 \u00b1 0.01 min\u22121 at 70\u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, analysis of previously published data enabled us to determine the catalytic rate constant (k) of cA4 synthesis by the S. solfataricus type III effector as 0.04 \u00b1 0.01 min\u22121 at 70\u00b0C (Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is derived from analysis of previously published data, shown in Figure 2\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:40:22.654523Z"
+    },
+    {
+      "id": "436f83fe-471f-4355-a58e-16ac81e59a76",
+      "content_id": "62859123-c3f7-4697-abe1-ce9ada4dcceb",
+      "claim_id": "C31",
+      "claim": "S. solfataricus cells are cocci with a diameter of approximately 0.7 \u00b5m.",
+      "claim_type": "EXPLICIT",
+      "source": "Given that S. solfataricus cells are cocci with a diameter of approximately 0.7 \u00b5m, the volume of an average cell can be calculated as approximately 0.3 fL (by comparison, E. coli has a cell volume of 1 fL [Kubitschek and Friske, 1986]).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a known property of S. solfataricus cells, with a comparison to E. coli cited from Kubitschek and Friske, 1986.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:40:22.654523Z"
+    },
+    {
+      "id": "dbdb6ebb-d268-480a-be06-0c0275e60190",
+      "content_id": "62859123-c3f7-4697-abe1-ce9ada4dcceb",
+      "claim_id": "C32",
+      "claim": "The volume of an average S. solfataricus cell can be calculated as approximately 0.3 fL.",
+      "claim_type": "EXPLICIT",
+      "source": "Given that S. solfataricus cells are cocci with a diameter of approximately 0.7 \u00b5m, the volume of an average cell can be calculated as approximately 0.3 fL (by comparison, E. coli has a cell volume of 1 fL [Kubitschek and Friske, 1986]).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is calculated from the cell diameter using standard geometric formulas.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:40:22.654523Z"
+    },
+    {
+      "id": "977f4c8e-169b-440e-a436-024c8ed1addd",
+      "content_id": "62859123-c3f7-4697-abe1-ce9ada4dcceb",
+      "claim_id": "C33",
+      "claim": "1000 molecules equates to an intracellular concentration of 6 \u00b5M cA4 in S. solfataricus.",
+      "claim_type": "EXPLICIT",
+      "source": "Using Avogadro's number, 1000 molecules equates to an intracellular concentration of 6 \u00b5M cA4 in S. solfataricus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is calculated using Avogadro's number and the cell volume.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:40:22.654523Z"
+    },
+    {
+      "id": "82a57930-3910-4f4a-880e-4672ad798531",
+      "content_id": "62859123-c3f7-4697-abe1-ce9ada4dcceb",
+      "claim_id": "C34",
+      "claim": "Detection of one viral RNA in the cell could result in the synthesis of 6 \u00b5M cA4.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, detection of one viral RNA in the cell could result in the synthesis of 6 \u00b5M cA4, 10 RNAs \u2013 60 \u00b5M, etc.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the experimental data on cA4 production per RNA molecule and cell volume calculations.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:40:22.654523Z"
+    },
+    {
+      "id": "cb15832b-ecd6-48f1-bac1-2e0b2282011d",
+      "content_id": "62859123-c3f7-4697-abe1-ce9ada4dcceb",
+      "claim_id": "C35",
+      "claim": "Csx1 binds cA4 with a dissociation constant (KD) of 130 \u00b1 20 nM.",
+      "claim_type": "EXPLICIT",
+      "source": "cA4 was bound by Csx1 with a dissociation constant (KD) of 130 \u00b1 20 nM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly measured experimental data from native gel electrophoresis experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:40:22.654523Z"
+    },
+    {
+      "id": "a4378140-bea0-4413-9a5b-bb5fef18d38e",
+      "content_id": "62859123-c3f7-4697-abe1-ce9ada4dcceb",
+      "claim_id": "C36",
+      "claim": "Even one viral target RNA detected by the type III CRISPR system should generate enough cA4 (6 \u00b5M) to fully activate the Csx1 ribonuclease for defence.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, even one viral target RNA detected by the type III CRISPR system should generate enough cA4 (6 \u00b5M) to fully activate the Csx1 ribonuclease for defence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the comparison of cA4 concentration generated (6 \u00b5M) and the KD of Csx1 for cA4 (130 nM).",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:40:22.654523Z"
+    },
+    {
+      "id": "e5f61860-bd32-4fd6-ba1f-35f98b58473c",
+      "content_id": "62859123-c3f7-4697-abe1-ce9ada4dcceb",
+      "claim_id": "C37",
+      "claim": "A ribonuclease-deficient Csx1 variant binds its RNA target with an apparent dissociation constant of approximately 5 \u00b5M.",
+      "claim_type": "EXPLICIT",
+      "source": "We proceeded to estimate the binding affinity of a ribonuclease-deficient Csx1 variant for its RNA target, yielding an apparent dissociation constant of approximately 5 \u00b5M (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly measured experimental data shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:40:22.654523Z"
+    },
+    {
+      "id": "426d6bf7-65c5-4657-a4a8-5b8a93059a29",
+      "content_id": "62859123-c3f7-4697-abe1-ce9ada4dcceb",
+      "claim_id": "C38",
+      "claim": "The multiple-turnover kinetic constant (kcat) for cA4-activated RNA cleavage by Csx1 is 0.44 \u00b1 0.03 min\u22121 at 70\u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we measured the initial velocity of RNA degradation at a variety of RNA concentrations under steady state conditions and determined the multiple-turnover kinetic constant (kcat) for cA4-activated RNA cleavage by Csx1 as 0.44 \u00b1 0.03 min\u22121 at 70\u00b0C (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly measured experimental data shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:40:22.654523Z"
+    },
+    {
+      "id": "0874f348-be96-4fba-9df3-0e21e60091bc",
+      "content_id": "62859123-c3f7-4697-abe1-ce9ada4dcceb",
+      "claim_id": "C39",
+      "claim": "Crn1 cleaved cA4 at a rate of 0.089 \u00b1 0.003 min\u22121 at 50\u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "We have previously established that Crn1 cleaved cA4 at a rate of 0.089 \u00b1 0.003 min\u22121 at 50\u00b0C, while AcrIII-1 cleaved cA4 at a rate of 5.4 \u00b1 0.38 min\u22121, about 60-fold faster (Athukoralage et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a previously published finding by the authors, cited as Athukoralage et al., 2020.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:40:22.654523Z"
+    },
+    {
+      "id": "731fa06f-8582-4cef-97e1-0534f8b83fd7",
+      "content_id": "62859123-c3f7-4697-abe1-ce9ada4dcceb",
+      "claim_id": "C40",
+      "claim": "AcrIII-1 cleaved cA4 at a rate of 5.4 \u00b1 0.38 min\u22121, about 60-fold faster than Crn1.",
+      "claim_type": "EXPLICIT",
+      "source": "We have previously established that Crn1 cleaved cA4 at a rate of 0.089 \u00b1 0.003 min\u22121 at 50\u00b0C, while AcrIII-1 cleaved cA4 at a rate of 5.4 \u00b1 0.38 min\u22121, about 60-fold faster (Athukoralage et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a previously published finding by the authors, cited as Athukoralage et al., 2020.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:40:22.654523Z"
+    },
+    {
+      "id": "04d73fd7-be13-497f-8d72-c64a1e464198",
+      "content_id": "62859123-c3f7-4697-abe1-ce9ada4dcceb",
+      "claim_id": "C41",
+      "claim": "The difference in reaction rates between Crn1 and AcrIII-1 probably reflects the different roles of the two enzymes.",
+      "claim_type": "EXPLICIT",
+      "source": "The difference in reaction rates probably reflects the different roles of the two enzymes, with Crn1 working in conjunction with the type III CRISPR defence and AcrIII-1 opposing it.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the experimental data on reaction rates.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:40:22.654523Z"
+    },
+    {
+      "id": "1da8a8e2-847e-481f-81a8-6f98bc9a38d6",
+      "content_id": "62859123-c3f7-4697-abe1-ce9ada4dcceb",
+      "claim_id": "C42",
+      "claim": "Crn1 bound cA4 with an apparent KD of ~50 nM.",
+      "claim_type": "EXPLICIT",
+      "source": "Crn1 bound cA4 with an apparent KD of ~50 nM, while the inactive H47A variant of AcrIII-1 bound cA4 with an apparent KD of ~25 nM (Figure 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly measured experimental data shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:40:22.654523Z"
+    },
+    {
+      "id": "5382d649-1f01-4ee3-9f83-c38a33f5f1a6",
+      "content_id": "62859123-c3f7-4697-abe1-ce9ada4dcceb",
+      "claim_id": "C43",
+      "claim": "The inactive H47A variant of AcrIII-1 bound cA4 with an apparent KD of ~25 nM.",
+      "claim_type": "EXPLICIT",
+      "source": "Crn1 bound cA4 with an apparent KD of ~50 nM, while the inactive H47A variant of AcrIII-1 bound cA4 with an apparent KD of ~25 nM (Figure 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly measured experimental data shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:40:22.654523Z"
+    },
+    {
+      "id": "0d843932-2cf1-4cf7-914c-07a2b0a5571b",
+      "content_id": "62859123-c3f7-4697-abe1-ce9ada4dcceb",
+      "claim_id": "C44",
+      "claim": "Both ring nucleases bound cA4 three to four-fold more tightly than Csx1.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, both ring nucleases bound cA4 three to four-fold more tightly than Csx1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from comparing the KD values of Crn1 (~50 nM), AcrIII-1 (~25 nM), and Csx1 (130 nM).",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:40:22.654523Z"
+    },
+    {
+      "id": "5306df3e-919c-4316-85e0-d1632848dfee",
+      "content_id": "62859123-c3f7-4697-abe1-ce9ada4dcceb",
+      "claim_id": "C45",
+      "claim": "Kinetic modelling demonstrates that addition of a ring nuclease activity allows the cell to respond differently to varied levels of infection.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the kinetic modelling demonstrated that addition of a ring nuclease activity allows the cell to respond differently to varied levels of infection, and therefore cA4 concentration, resulting in a range of RNA degradation levels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from the kinetic modeling simulations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:40:22.654523Z"
+    },
+    {
+      "id": "8c292a10-5f87-4691-aacd-c83a15052a7b",
+      "content_id": "62859123-c3f7-4697-abe1-ce9ada4dcceb",
+      "claim_id": "C46",
+      "claim": "When AcrIII-1 was present at 1 \u00b5M, even 600 \u00b5M cA4 was degraded rapidly (the bulk within 10 min).",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, when AcrIII-1 was present at 1 \u00b5M, even 600 \u00b5M cA4 was degraded rapidly (the bulk within 10 min).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the kinetic modeling simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:40:22.654523Z"
+    },
+    {
+      "id": "6868c382-9bbc-428d-9a52-a6195fa05f04",
+      "content_id": "62859123-c3f7-4697-abe1-ce9ada4dcceb",
+      "claim_id": "C47",
+      "claim": "At the highest simulated infection level of 600 \u00b5M cA4, Csx1 persists in a 100% activated form for over 1200 min in the absence of AcrIII-1.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, at the highest simulated infection level of 600 \u00b5M cA4, Csx1 persists in a 100% activated form for over 1200 min in the absence of AcrIII-1, but is reduced to 50% activated within 150 min in its presence, with similar effects seen at lower cA4 concentrations (Figure 6\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from the kinetic modeling simulations shown in Figure 6\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:40:22.654523Z"
+    },
+    {
+      "id": "aec1258e-07f5-4a60-a548-96cf3cbd63fb",
+      "content_id": "62859123-c3f7-4697-abe1-ce9ada4dcceb",
+      "claim_id": "C48",
+      "claim": "In the presence of AcrIII-1, Csx1 is reduced to 50% activated within 150 min at 600 \u00b5M cA4.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, at the highest simulated infection level of 600 \u00b5M cA4, Csx1 persists in a 100% activated form for over 1200 min in the absence of AcrIII-1, but is reduced to 50% activated within 150 min in its presence, with similar effects seen at lower cA4 concentrations (Figure 6\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from the kinetic modeling simulations shown in Figure 6\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:40:22.654523Z"
+    },
+    {
+      "id": "14ed1011-1211-4c79-8f0b-9e96d3573d27",
+      "content_id": "62859123-c3f7-4697-abe1-ce9ada4dcceb",
+      "claim_id": "C49",
+      "claim": "AcrIII-1 concentrations as low as 100 nM reduced RNA cleavage by about 30%.",
+      "claim_type": "EXPLICIT",
+      "source": "AcrIII-1 concentrations as low as 100 nM reduced RNA cleavage by about 30%, and higher levels reduced RNA cleavage by Csx1 markedly (Figure 6F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from the kinetic modeling simulations shown in Figure 6F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:40:22.654523Z"
+    },
+    {
+      "id": "8b6abf00-1dd0-46d0-b76f-7672bac52a72",
+      "content_id": "62859123-c3f7-4697-abe1-ce9ada4dcceb",
+      "claim_id": "C50",
+      "claim": "Increasing Csx1 concentration 10-fold led to a significantly more robust immune response.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we simulated the effects of increasing Csx1 on RNA cleavage in our infection model. Increasing Csx1 concentration 10-fold led to a significantly more robust immune response (reflected in high levels of RNA degradation) (Figure 6G) that could not be fully overcome by increasing the concentrations of Crn1 or AcrIII-1 in proportion (compare for example 10,10,10 with 1,1,1 \u00b5M in Figure 6G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from the kinetic modeling simulations shown in Figure 6G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:40:22.654523Z"
+    },
+    {
+      "id": "ed69f947-55dc-440e-80b3-37f6007470dc",
+      "content_id": "62859123-c3f7-4697-abe1-ce9ada4dcceb",
+      "claim_id": "C51",
+      "claim": "Increasing the expression levels of defence nucleases such as Csx1 in response to viral infection could provide an effective means for cells to combat viruses armed with Acrs such as AcrIII-1.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, increasing the expression levels of defence nucleases such as Csx1 in response to viral infection could provide an effective means for cells to combat viruses armed with Acrs such as AcrIII-1, but perhaps with the cost of increased toxicity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation based on the modeling results.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:40:22.654523Z"
+    },
+    {
+      "id": "7c7a2330-ac0e-4e10-9f9e-01d6fcce5fe5",
+      "content_id": "62859123-c3f7-4697-abe1-ce9ada4dcceb",
+      "claim_id": "C52",
+      "claim": "The large degree of signal amplification would ensure that detection of 1 RNA target could generate sufficient amounts of cA4 to fully activate the ribonuclease effector protein Csx1.",
+      "claim_type": "EXPLICIT",
+      "source": "This large degree of signal amplification would ensure that detection of 1 RNA target could generate sufficient amounts of cA4 to fully activate the ribonuclease effector protein Csx1, which has a dissociation constant for cA4 of 0.13 \u00b5M.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the experimental data on signal amplification and Csx1 binding affinity.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:40:22.654523Z"
+    },
+    {
+      "id": "7c27e16c-2141-4056-a42f-4b40c66daec9",
+      "content_id": "62859123-c3f7-4697-abe1-ce9ada4dcceb",
+      "claim_id": "C53",
+      "claim": "Some means of cOA degradation will be essential for type III CRISPR systems to provide immunity rather than elicit abortive infection.",
+      "claim_type": "EXPLICIT",
+      "source": "Given the large signal amplification observed here, it seems likely that some means of cOA degradation, either via self-limiting ribonucleases (Athukoralage et al., 2019; Jia et al., 2019) or dedicated ring nucleases (Athukoralage et al., 2018), will be essential for type III CRISPR systems to provide immunity rather than elicit abortive infection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the signal amplification data and known toxicity of activated nucleases.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:40:22.654523Z"
+    },
+    {
+      "id": "37500f01-d47d-4397-bb78-4444e9334d37",
+      "content_id": "62859123-c3f7-4697-abe1-ce9ada4dcceb",
+      "claim_id": "C54",
+      "claim": "Growth arrest has been observed for cOA activated Csm6 during bacteriophage infection.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, growth arrest has been observed for cOA activated Csm6 during bacteriophage infection (Rost\u00f8l and Marraffini, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Rost\u00f8l and Marraffini, 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:40:22.654523Z"
+    },
+    {
+      "id": "c2a4141e-dc4f-451c-a644-d02a412de8ff",
+      "content_id": "62859123-c3f7-4697-abe1-ce9ada4dcceb",
+      "claim_id": "C55",
+      "claim": "S. islandicus becomes dormant upon viral infection and subsequently dies if virus remains in culture.",
+      "claim_type": "EXPLICIT",
+      "source": "This life or death decision in response to genotoxic stress has also been observed in S. islandicus, which becomes dormant upon viral infection and subsequently dies if virus remains in culture (Bautista et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Bautista et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:40:22.654523Z"
+    },
+    {
+      "id": "37c95d93-40d6-4d2c-897f-cb06aedc57af",
+      "content_id": "62859123-c3f7-4697-abe1-ce9ada4dcceb",
+      "claim_id": "C56",
+      "claim": "The Type I-F CRISPR system of Pectobacterium atrosepticum was found to provide population protection by aborting infection when infected by virulent phage.",
+      "claim_type": "EXPLICIT",
+      "source": "The Type I-F CRISPR system of Pectobacterium atrosepticum was found to provide population protection by aborting infection when infected by virulent phage (Watson et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Watson et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:40:22.654523Z"
+    },
+    {
+      "id": "6ecfc412-0a66-490f-bae4-73272f652acb",
+      "content_id": "62859123-c3f7-4697-abe1-ce9ada4dcceb",
+      "claim_id": "C57",
+      "claim": "The in-trans collateral RNA cleavage of Listeria seeligeri Cas13a resulted in cell dormancy, providing herd immunity to the bacterial population.",
+      "claim_type": "EXPLICIT",
+      "source": "Likewise, the in-trans collateral RNA cleavage of Listeria seeligeri Cas13a resulted in cell dormancy, providing herd immunity to the bacterial population (Meeske et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Meeske et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:40:22.654523Z"
+    },
+    {
+      "id": "bf6eae36-3dde-4fe1-bb51-f800754cea93",
+      "content_id": "62859123-c3f7-4697-abe1-ce9ada4dcceb",
+      "claim_id": "C58",
+      "claim": "Kinetic modelling confirms that Crn1 is effective only at low levels of viral gene expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Kinetic modelling of the antiviral signalling pathway confirms that Crn1 is effective only at low levels of viral gene expression, where it has the potential to neutralise the toxicity associated with cA4-activated ribonucleases to offer a route for cell recovery without abrogating immunity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from the kinetic modeling simulations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:40:22.654523Z"
+    },
+    {
+      "id": "f9bd7963-1385-4d8f-a160-20a93760dbca",
+      "content_id": "62859123-c3f7-4697-abe1-ce9ada4dcceb",
+      "claim_id": "C59",
+      "claim": "The rapid turnover of cA4 by AcrIII-1 over a wide concentration range greatly limits RNA cleavage by deactivating defence enzymes.",
+      "claim_type": "EXPLICIT",
+      "source": "Our modelling suggests that the rapid turnover of cA4 by AcrIII-1 over a wide concentration range greatly limits RNA cleavage by deactivating defence enzymes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from the kinetic modeling simulations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:40:22.654523Z"
+    },
+    {
+      "id": "d161c466-938c-487f-98a1-53cb96ffa1e5",
+      "content_id": "62859123-c3f7-4697-abe1-ce9ada4dcceb",
+      "claim_id": "C60",
+      "claim": "Sequentially infecting phage evade CRISPR defences by exploiting the immunosuppression achieved by Acr enzymes from failed infections.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent studies have uncovered that sequentially infecting phage evade CRISPR defences by exploiting the immunosuppression achieved by Acr enzymes from failed infections (Borges et al., 2018; Landsberger et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Borges et al., 2018 and Landsberger et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:40:22.654523Z"
+    },
+    {
+      "id": "2c29142d-dac4-4a43-83b1-b7ab4fd75925",
+      "content_id": "62859123-c3f7-4697-abe1-ce9ada4dcceb",
+      "claim_id": "C61",
+      "claim": "Immunosuppressed cells have been shown to be susceptible to Acr-negative phage infections.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, these immunosuppressed cells have been shown to be susceptible to Acr-negative phage infections, highlighting the complex ecological consequences of supressing CRISPR immunity (Chevallereau et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Chevallereau et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:40:22.654523Z"
+    },
+    {
+      "id": "26b84155-694d-4632-9560-36d857b0bd72",
+      "content_id": "62859123-c3f7-4697-abe1-ce9ada4dcceb",
+      "claim_id": "C62",
+      "claim": "In Sulfolobus Turreted Icosahedral virus (STIV), the AcrIII-1 gene B116 is expressed early in the viral life cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "In Sulfolobus Turreted Icosahedral virus (STIV), the AcrIII-1 gene B116 is expressed early in the viral life cycle (Ortmann et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Ortmann et al., 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:40:22.654523Z"
+    },
+    {
+      "id": "8cac73b4-cdfc-4f25-852e-b94236420721",
+      "content_id": "62859123-c3f7-4697-abe1-ce9ada4dcceb",
+      "claim_id": "C63",
+      "claim": "Type III CRISPR systems conditionally tolerate prophage.",
+      "claim_type": "EXPLICIT",
+      "source": "Type III CRISPR systems also conditionally tolerate prophage (Goldberg et al., 2014), and unsurprisingly, AcrIII-1 is found in a number of prophages and integrative and conjugative elements.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Goldberg et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:40:22.654523Z"
+    },
+    {
+      "id": "caf3d32d-d07d-4aec-9835-5817c245ab3c",
+      "content_id": "62859123-c3f7-4697-abe1-ce9ada4dcceb",
+      "claim_id": "C64",
+      "claim": "AcrIII-1 is found in a number of prophages and integrative and conjugative elements.",
+      "claim_type": "EXPLICIT",
+      "source": "Type III CRISPR systems also conditionally tolerate prophage (Goldberg et al., 2014), and unsurprisingly, AcrIII-1 is found in a number of prophages and integrative and conjugative elements.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a known distribution of AcrIII-1 genes.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:40:22.654523Z"
+    },
+    {
+      "id": "bd10e0a3-39b3-443e-ab42-52eb8085c950",
+      "content_id": "62859123-c3f7-4697-abe1-ce9ada4dcceb",
+      "claim_id": "C65",
+      "claim": "The type III CRISPR locus of S. solfataricus contains a number of CARF domain proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "It should be noted that the type III CRISPR locus of S. solfataricus contains a number of CARF domain proteins and their contribution to immunity has not yet been studied.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a known feature of the S. solfataricus genome.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:40:22.654523Z"
+    },
+    {
+      "id": "98aa3495-4a17-4ffc-a6c9-b731e78b123d",
+      "content_id": "62859123-c3f7-4697-abe1-ce9ada4dcceb",
+      "claim_id": "C66",
+      "claim": "The CARF-family putative transcription factor Csa3 appears to be involved in transcriptional regulation of CRISPR loci when activated by cA4.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, the CARF-family putative transcription factor Csa3 appears to be involved in transcriptional regulation of CRISPR loci, including the adaptation and type I-A effector genes, when activated by cA4 (Liu et al., 2015; Liu et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Liu et al., 2015 and Liu et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:40:22.654523Z"
+    },
+    {
+      "id": "d4c99bcd-2113-41e4-b9fc-6d2751878598",
+      "content_id": "62859123-c3f7-4697-abe1-ce9ada4dcceb",
+      "claim_id": "C67",
+      "claim": "The cA4 signal may transcend type III CRISPR defence in some cell types by activating multiple defence systems.",
+      "claim_type": "EXPLICIT",
+      "source": "These observations suggest that the cA4 signal may transcend type III CRISPR defence in some cell types by activating multiple defence systems.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation based on the observations about Csa3 and other CARF proteins.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:40:22.654523Z"
+    },
+    {
+      "id": "1e92bd7b-d171-4157-be25-20f9659be4f1",
+      "content_id": "62859123-c3f7-4697-abe1-ce9ada4dcceb",
+      "claim_id": "C68",
+      "claim": "By degrading the second messenger, AcrIII-1 has the potential to neutralise all cA4-activated defence systems.",
+      "claim_type": "EXPLICIT",
+      "source": "However, by degrading the second messenger, AcrIII-1 has the potential to neutralise all of these.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the mechanism of AcrIII-1 action.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:40:22.654523Z"
+    },
+    {
+      "id": "64e0faf5-dc2d-4aea-a834-32d91d3ca696",
+      "content_id": "62859123-c3f7-4697-abe1-ce9ada4dcceb",
+      "claim_id": "C69",
+      "claim": "Cyclic nucleotide-based defence systems are emerging as powerful cellular sentinels against parasitic elements in prokaryotes.",
+      "claim_type": "EXPLICIT",
+      "source": "Cyclic nucleotide-based defence systems are emerging as powerful cellular sentinels against parasitic elements in prokaryotes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about the field, supported by the discussion of various systems.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:40:22.654523Z"
+    },
+    {
+      "id": "a7b01a41-43b6-4d3a-83e6-3412e58427f8",
+      "content_id": "62859123-c3f7-4697-abe1-ce9ada4dcceb",
+      "claim_id": "C70",
+      "claim": "Bacterial cGAS enzymes have recently been discovered that abort infection by activating phospholipases through cGAMP signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "Mirroring the role of cyclic GMP-AMP synthase (cGAS) in eukaryotic defence against viruses as part of the cGAS-STING pathway, bacterial cGAS enzymes have recently been discovered that abort infection by activating phospholipases through cGAMP signaling (Cohen et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Cohen et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:40:22.654523Z"
+    },
+    {
+      "id": "482f775a-3606-46de-93b3-18593ad1c246",
+      "content_id": "62859123-c3f7-4697-abe1-ce9ada4dcceb",
+      "claim_id": "C71",
+      "claim": "A large number of additional cOA sensing effector proteins associated with CBASS loci remain uncharacterised.",
+      "claim_type": "EXPLICIT",
+      "source": "Termed the cyclic-oligonucleotide-based antiphage signaling system (CBASS), a large number of additional cOA sensing effector proteins associated with CBASS loci remain uncharacterised, highlighting great diversity in the cellular arsenal used for defence (Burroughs et al., 2015; Cohen et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Burroughs et al., 2015 and Cohen et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:40:22.654523Z"
+    },
+    {
+      "id": "4107d640-ea0c-4de4-9c54-bfd5e374eea4",
+      "content_id": "62859123-c3f7-4697-abe1-ce9ada4dcceb",
+      "claim_id": "C72",
+      "claim": "Diverse nucleotide cyclases have been identified that generate a range of cyclic nucleotides including cUMP-AMP, c-di-UMP and cAAG.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, diverse nucleotide cyclases have been identified that generate a range of cyclic nucleotides including cUMP-AMP, c-di-UMP and cAAG, which are also likely to function in novel antiviral signal transduction pathways (Whiteley et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Whiteley et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:40:22.654523Z"
+    },
+    {
+      "id": "169ebc73-a67e-4c23-ab68-d1a78fcce917",
+      "content_id": "62859123-c3f7-4697-abe1-ce9ada4dcceb",
+      "claim_id": "C73",
+      "claim": "Type III systems also generate cyclic tri-adenylate (cA3) and cyclic penta-adenylate (cA5) molecules.",
+      "claim_type": "EXPLICIT",
+      "source": "Type III systems also generate cyclic tri-adenylate (cA3) and cyclic penta-adenylate (cA5) molecules.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a known property of type III CRISPR systems.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:40:22.654523Z"
+    },
+    {
+      "id": "85dfae97-2b5c-42f3-ae87-dcae6363bd86",
+      "content_id": "62859123-c3f7-4697-abe1-ce9ada4dcceb",
+      "claim_id": "C74",
+      "claim": "cA3 has been demonstrated to activate a family of DNases termed NucC which abort infection by degrading the host genome prior to completion of the phage replication cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas no signalling role has yet been ascribed to cA5, cA3 has been demonstrated to activate a family of DNases termed NucC which abort infection by degrading the host genome prior to completion of the phage replication cycle (Lau et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Lau et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:40:22.654523Z"
+    },
+    {
+      "id": "ac2573e8-4651-4e84-8c4a-0f06a24d06b8",
+      "content_id": "62859123-c3f7-4697-abe1-ce9ada4dcceb",
+      "claim_id": "C75",
+      "claim": "Eukaryotic cells have enzymes that degrade cGAMP to regulate cGAS-STING mediated immunity.",
+      "claim_type": "EXPLICIT",
+      "source": "Just as prokaryotes with type III CRISPR require a means to degrade cOA in appropriate circumstances, eukaryotic cells have enzymes that degrade cGAMP to regulate cGAS-STING mediated immunity (Li et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Li et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:40:22.654523Z"
+    },
+    {
+      "id": "df3acc30-75dd-4293-a87f-d81f104e3563",
+      "content_id": "62859123-c3f7-4697-abe1-ce9ada4dcceb",
+      "claim_id": "C76",
+      "claim": "Eukaryotic poxviruses utilise Poxins to subvert host immunity by destroying cGAMP.",
+      "claim_type": "EXPLICIT",
+      "source": "Likewise, while prokaryotic viruses utilise AcrIII-1 to rapidly degrade cA4, eukaryotic poxviruses utilise Poxins to subvert host immunity by destroying cGAMP (Eaglesham et al., 2019), and pathogenic Group B Streptococci degrade host c-di-AMP using the CndP enzyme to circumvent innate immunity (Andrade et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Eaglesham et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:40:22.654523Z"
+    },
+    {
+      "id": "9c0ee298-c05c-4e64-801e-d2efe43c8870",
+      "content_id": "62859123-c3f7-4697-abe1-ce9ada4dcceb",
+      "claim_id": "C77",
+      "claim": "Pathogenic Group B Streptococci degrade host c-di-AMP using the CndP enzyme to circumvent innate immunity.",
+      "claim_type": "EXPLICIT",
+      "source": "Likewise, while prokaryotic viruses utilise AcrIII-1 to rapidly degrade cA4, eukaryotic poxviruses utilise Poxins to subvert host immunity by destroying cGAMP (Eaglesham et al., 2019), and pathogenic Group B Streptococci degrade host c-di-AMP using the CndP enzyme to circumvent innate immunity (Andrade et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Andrade et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:40:22.654523Z"
+    },
+    {
+      "id": "2418ee76-8817-4a0d-9a06-fa66708c14ea",
+      "content_id": "62859123-c3f7-4697-abe1-ce9ada4dcceb",
+      "claim_id": "C78",
+      "claim": "The Cas10 subunit of the type III CRISPR complex synthesises cyclic tetra-adenylate (cA4) when viral RNA transcripts are detected.",
+      "claim_type": "EXPLICIT",
+      "source": "The Cas10 subunit of the type III CRISPR complex synthesises cyclic tetra-adenylate (cA4) when viral RNA transcripts are detected.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 1 and described in the text.",
+      "evidence_type": "[\"KNOWLEDGE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:40:22.654523Z"
+    },
+    {
+      "id": "679698d8-ee8d-49a6-b520-b69072af5150",
+      "content_id": "62859123-c3f7-4697-abe1-ce9ada4dcceb",
+      "claim_id": "C79",
+      "claim": "Target RNA cleavage shuts-off cA4 synthesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Target RNA cleavage shuts-off cA4 synthesis.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 1 and described in the text.",
+      "evidence_type": "[\"KNOWLEDGE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:40:22.654523Z"
+    },
+    {
+      "id": "328664cd-4e61-49bd-b300-609e35b0ec08",
+      "content_id": "62859123-c3f7-4697-abe1-ce9ada4dcceb",
+      "claim_id": "C80",
+      "claim": "cA4 binds to the CARF domain of CRISPR ancillary nuclease Csx1 and allosterically activates its HEPN domain.",
+      "claim_type": "EXPLICIT",
+      "source": "cA4 binds to the CARF (CRISPR associated Rossmann Fold) domain of CRISPR ancillary nuclease Csx1 and allosterically activates its HEPN (Higher Eukaryotes and Prokaryotes Nucleotide binding) domain, which degrades RNA non-specifically within the cell.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 1 and described in the text.",
+      "evidence_type": "[\"KNOWLEDGE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:40:22.654523Z"
+    },
+    {
+      "id": "a54df68f-9d48-4a23-91ed-0afac30d0cdc",
+      "content_id": "62859123-c3f7-4697-abe1-ce9ada4dcceb",
+      "claim_id": "C81",
+      "claim": "The HEPN domain of Csx1 degrades RNA non-specifically within the cell.",
+      "claim_type": "EXPLICIT",
+      "source": "cA4 binds to the CARF (CRISPR associated Rossmann Fold) domain of CRISPR ancillary nuclease Csx1 and allosterically activates its HEPN (Higher Eukaryotes and Prokaryotes Nucleotide binding) domain, which degrades RNA non-specifically within the cell.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 1 and described in the text.",
+      "evidence_type": "[\"KNOWLEDGE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:40:22.654523Z"
+    },
+    {
+      "id": "f1d051d2-bdf9-48ef-b667-fbd1cba0f254",
+      "content_id": "62859123-c3f7-4697-abe1-ce9ada4dcceb",
+      "claim_id": "C82",
+      "claim": "Extant cA4 is degraded slowly by CRISPR ring nucleases (Crn1 family) which likely facilitate cell recovery after clearing the virus.",
+      "claim_type": "EXPLICIT",
+      "source": "Extant cA4 is degraded slowly by CRISPR ring nucleases (Crn1 family) which likely facilitate cell recovery after clearing the virus.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 1 and described in the text.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:40:22.654523Z"
+    },
+    {
+      "id": "b473f593-e5b6-4f0e-b318-f19d54db5968",
+      "content_id": "62859123-c3f7-4697-abe1-ce9ada4dcceb",
+      "claim_id": "C83",
+      "claim": "Viral anti-CRISPR ring nucleases (AcrIII-1 family) degrade cA4 rapidly to stop activation of ancillary defence enzymes such as Csx1 and supress antiviral immunity.",
+      "claim_type": "EXPLICIT",
+      "source": "Viral anti-CRISPR ring nucleases (AcrIII-1 family) degrade cA4 rapidly to stop activation of ancillary defence enzymes such as Csx1 and supress antiviral immunity.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 1 and described in the text.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:40:22.654523Z"
+    },
+    {
+      "id": "716bd4af-2e6d-4db0-a1b8-e7a55b3a4465",
+      "content_id": "62859123-c3f7-4697-abe1-ce9ada4dcceb",
+      "claim_id": "C84",
+      "claim": "Increasing target RNA concentration resulted in increased cA4 production.",
+      "claim_type": "EXPLICIT",
+      "source": "As previously observed (Rouillon et al., 2018), increasing the target RNA concentration resulted in increased cA4 production (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 2 and described in the text.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:40:22.654523Z"
+    },
+    {
+      "id": "f0cf8ad4-46e4-43d3-a2cb-803754dc2be0",
+      "content_id": "62859123-c3f7-4697-abe1-ce9ada4dcceb",
+      "claim_id": "C86",
+      "claim": "In the absence of any ring nuclease activity, 1 \u00b5M Csx1 was fully activated, degrading all 1000 \u00b5M RNA provided in the simulation within 2400 min.",
+      "claim_type": "EXPLICIT",
+      "source": "In the absence of any ring nuclease activity, 1 \u00b5M Csx1 was fully activated, degrading all 1000 \u00b5M RNA provided in the simulation within 2400 min, regardless of the simulated level of infection (Figure 6\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from the kinetic modeling simulations shown in Figure 6\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:40:22.654523Z"
+    },
+    {
+      "id": "b077bd2d-b9fb-4646-824e-34cd20e00608",
+      "content_id": "62859123-c3f7-4697-abe1-ce9ada4dcceb",
+      "claim_id": "C87",
+      "claim": "1 \u00b5M Crn1 degraded 60 \u00b5M cA4 within 120 min in the simulations.",
+      "claim_type": "EXPLICIT",
+      "source": "In the simulations, 1 \u00b5M Crn1 degraded 60 \u00b5M cA4 within 120 min, but took over 1200 min to degrade 600 \u00b5M cA4 (Figure 6B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from the kinetic modeling simulations shown in Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:40:22.654523Z"
+    },
+    {
+      "id": "a349f297-bd77-4915-81ea-daadfae1e885",
+      "content_id": "62859123-c3f7-4697-abe1-ce9ada4dcceb",
+      "claim_id": "C88",
+      "claim": "1 \u00b5M Crn1 took over 1200 min to degrade 600 \u00b5M cA4 in the simulations.",
+      "claim_type": "EXPLICIT",
+      "source": "In the simulations, 1 \u00b5M Crn1 degraded 60 \u00b5M cA4 within 120 min, but took over 1200 min to degrade 600 \u00b5M cA4 (Figure 6B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from the kinetic modeling simulations shown in Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:40:22.654523Z"
+    },
+    {
+      "id": "e59b7a50-537d-4da9-8b80-b4e2d33acbbb",
+      "content_id": "62859123-c3f7-4697-abe1-ce9ada4dcceb",
+      "claim_id": "C89",
+      "claim": "During infection, a positive correlation between AcrIII-1 concentration and viral transcript levels would be required for continued escape from Csx1-mediated CRISPR defence.",
+      "claim_type": "EXPLICIT",
+      "source": "During infection, a positive correlation between AcrIII-1 concentration and viral transcript levels would be required for continued escape from Csx1-mediated CRISPR defence \u2013 a reasonable assumption.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about the relationship between AcrIII-1 and viral transcripts during infection.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:40:22.654523Z"
+    },
+    {
+      "id": "3574706d-c207-47c9-b105-e27cceda34fc",
+      "content_id": "62859123-c3f7-4697-abe1-ce9ada4dcceb",
+      "claim_id": "C90",
+      "claim": "Increasing the expression levels of defence nucleases such as Csx1 may come with the cost of increased toxicity.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, increasing the expression levels of defence nucleases such as Csx1 in response to viral infection could provide an effective means for cells to combat viruses armed with Acrs such as AcrIII-1, but perhaps with the cost of increased toxicity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about the potential cost of upregulating Csx1.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:40:22.654523Z"
+    },
+    {
+      "id": "c7d3f679-b65c-4a2d-8078-d6effd6b8980",
+      "content_id": "62859123-c3f7-4697-abe1-ce9ada4dcceb",
+      "claim_id": "C91",
+      "claim": "AcrIII-1 accumulation in the cell from early expression by unsuccessful viruses may favour the success of latter viral infections.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, AcrIII-1 accumulation in the cell, possibly from early expression by unsuccessful viruses may, as our models demonstrate, favour the success of latter viral infections.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation based on the modeling results and known expression patterns.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:40:22.654523Z"
+    },
+    {
+      "id": "611af1d3-8165-4d17-8a13-c770854c1734",
+      "content_id": "62859123-c3f7-4697-abe1-ce9ada4dcceb",
+      "claim_id": "C92",
+      "claim": "Constitutively expressed AcrIII-1 may further immunocompromise cells and sensitise them to infection by phage otherwise eradicated by type III CRISPR defence.",
+      "claim_type": "EXPLICIT",
+      "source": "In these cases, constitutively expressed AcrIII-1 may further immunocompromise cells, and sensitise them to infection by phage otherwise eradicated by type III CRISPR defence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about the effects of constitutive AcrIII-1 expression.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:40:22.654523Z"
+    },
+    {
+      "id": "6285609d-4351-4255-8a1e-b843d8a4f359",
+      "content_id": "62859123-c3f7-4697-abe1-ce9ada4dcceb",
+      "claim_id": "C93",
+      "claim": "Upregulating AcrIII-1 expression in cells will undoubtedly offer viruses an avenue for counter offence.",
+      "claim_type": "EXPLICIT",
+      "source": "In the ongoing virus-host conflict, while increasing Csx1 concentration may allow better immunity when faced with AcrIII-1, upregulating AcrIII-1 expression in cells will undoubtedly offer viruses an avenue for counter offence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about viral counter-strategies.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:40:22.654523Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "d01cf1e0-b283-40e7-a4aa-f6d34a7c1658",
+      "content_id": "62859123-c3f7-4697-abe1-ce9ada4dcceb",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The S. solfataricus type III CRISPR system exhibits substantial signal amplification, generating approximately 1000 molecules of cA4 per target RNA molecule (980 \u00b1 24 over 10-100 nM RNA range). This amplification increases ~3-fold (3100 \u00b1 750) with cleavage-resistant RNA, confirming RNA cleavage as a regulatory mechanism. The catalytic rate constant for cA4 synthesis is 0.04 \u00b1 0.01 min\u207b\u00b9 at 70\u00b0C. Given S. solfataricus cell volume (~0.3 fL), detection of a single viral RNA could generate ~6 \u00b5M intracellular cA4.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C34 and C84 are well-supported by direct experimental measurements shown in Figure 2 and supplementary figures. The quantification methodology using radioactive ATP and standard curves is appropriate. The cell volume calculation and concentration extrapolation are mathematically sound. The 3-fold increase with phosphorothioate RNA provides strong validation of the RNA cleavage regulatory mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:40:22.654523Z"
+    },
+    {
+      "id": "71b00f90-ea60-461c-aaf4-05e5f84e1bf1",
+      "content_id": "62859123-c3f7-4697-abe1-ce9ada4dcceb",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Csx1 binds cA4 with high affinity (KD = 130 \u00b1 20 nM) and binds RNA substrate with lower affinity (apparent KD ~5 \u00b5M). The signal amplification ensures that even one viral RNA target generating 6 \u00b5M cA4 would fully activate Csx1, as this concentration is ~46-fold higher than the KD for cA4 binding.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C37 and C52 are supported by direct binding measurements using native gel electrophoresis (Figure 3). The KD determination for cA4 binding appears rigorous with appropriate replicates and fitting. The inference that 6 \u00b5M cA4 would fully activate Csx1 is mathematically sound given the 130 nM KD. The RNA binding measurement provides important context for substrate recognition.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:40:22.654523Z"
+    },
+    {
+      "id": "f0fe6216-6255-4021-bbd5-e0ed9b5dbf76",
+      "content_id": "62859123-c3f7-4697-abe1-ce9ada4dcceb",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The multiple-turnover kinetic constant (kcat) for cA4-activated RNA cleavage by Csx1 is 0.44 \u00b1 0.03 min\u207b\u00b9 at 70\u00b0C, with a KM of 0.90 \u00b1 0.40 \u00b5M.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C38 is supported by steady-state kinetic measurements shown in Figure 4. The experimental design measuring initial velocities at various RNA concentrations is appropriate for determining kcat. The Michaelis-Menten fitting appears sound with reasonable error estimates from three technical replicates.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:40:22.654523Z"
+    },
+    {
+      "id": "a432357f-0b9c-4e30-9605-c1724e9075fa",
+      "content_id": "62859123-c3f7-4697-abe1-ce9ada4dcceb",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Crn1 and AcrIII-1 ring nucleases exhibit distinct kinetic properties reflecting their different biological roles. Crn1 cleaves cA4 at 0.089 \u00b1 0.003 min\u207b\u00b9 (50\u00b0C) and binds with KD ~50 nM, while AcrIII-1 cleaves ~60-fold faster (5.4 \u00b1 0.38 min\u207b\u00b9) and binds with KD ~25 nM. Both ring nucleases bind cA4 3-4-fold more tightly than Csx1.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39-C44 are supported by a combination of current measurements (Figure 5 for binding) and previously published data (cited as Athukoralage et al., 2020 for kinetics). The binding measurements using native gel electrophoresis appear appropriate. The interpretation that kinetic differences reflect functional roles (C41) is reasonable inference. The comparison showing tighter binding by ring nucleases versus Csx1 is mathematically correct.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:40:22.654523Z"
+    },
+    {
+      "id": "201b812f-53bf-4757-8f55-d22cdb15c07c",
+      "content_id": "62859123-c3f7-4697-abe1-ce9ada4dcceb",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Kinetic modeling demonstrates that Crn1 enables graded cellular responses to different infection levels. Without ring nucleases, 1 \u00b5M Csx1 degrades all RNA within 2400 min regardless of cA4 concentration. With 1 \u00b5M Crn1, 60 \u00b5M cA4 is degraded within 120 min, but 600 \u00b5M cA4 requires >1200 min, resulting in differential RNA degradation levels corresponding to infection severity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45, C58, C86-C88 are supported by kinetic modeling simulations (Figure 6 and supplements) using experimentally determined parameters. The modeling approach using KinTek software with measured rate constants and equilibrium constants is appropriate. The conclusion that Crn1 allows graded responses is well-supported by the simulation results showing concentration-dependent effects.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:40:22.654523Z"
+    },
+    {
+      "id": "6fc574c4-c732-4088-be82-db74c447783e",
+      "content_id": "62859123-c3f7-4697-abe1-ce9ada4dcceb",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "AcrIII-1 potently suppresses CRISPR immunity across a wide range of cA4 concentrations. At 1 \u00b5M AcrIII-1, even 600 \u00b5M cA4 is degraded rapidly (bulk within 10 min). At high infection levels (600 \u00b5M cA4), Csx1 remains 100% activated for >1200 min without AcrIII-1 but is reduced to 50% activation within 150 min in its presence. Even 100 nM AcrIII-1 reduces RNA cleavage by ~30%.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46-C49 and C59 are supported by kinetic modeling simulations shown in Figure 6 and supplements. The dramatic difference in cA4 degradation kinetics between Crn1 and AcrIII-1 scenarios is consistent with the ~60-fold difference in catalytic rates. The modeling predictions about Csx1 activation states and RNA cleavage inhibition appear internally consistent with the input parameters.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:40:22.654523Z"
+    },
+    {
+      "id": "fcc7f01c-7434-4bf0-8820-a37de4491324",
+      "content_id": "62859123-c3f7-4697-abe1-ce9ada4dcceb",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Modeling suggests that increasing Csx1 concentration 10-fold produces a more robust immune response that cannot be fully overcome by proportional increases in Crn1 or AcrIII-1. This suggests upregulating defense nucleases could combat Acr-armed viruses, though potentially at the cost of increased cellular toxicity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C50-C51 and C90 are based on modeling simulations (Figure 6G) but represent speculative interpretations about potential cellular strategies. While the modeling shows that 10-fold Csx1 increase enhances RNA degradation, the biological feasibility and actual toxicity costs are not experimentally demonstrated. The speculation about toxicity (C51, C90) lacks direct experimental support.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:40:22.654523Z"
+    },
+    {
+      "id": "27a7e0bf-4686-4f15-83d5-d2f9705b2e53",
+      "content_id": "62859123-c3f7-4697-abe1-ce9ada4dcceb",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The substantial signal amplification observed necessitates cOA degradation mechanisms for type III CRISPR systems to provide immunity rather than trigger abortive infection. Growth arrest and cell dormancy in response to CRISPR activation have been observed in multiple systems, supporting the importance of regulatory mechanisms.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C53 is a reasonable inference from the signal amplification data combined with known toxicity of activated nucleases. Claims C54-C57 provide supporting context from the literature (properly cited) showing that uncontrolled CRISPR activation can lead to growth arrest or abortive infection in various systems. The logic connecting signal amplification to the need for degradation mechanisms is sound.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:40:22.654523Z"
+    },
+    {
+      "id": "9d5204e9-1a7a-481a-9039-34f32528adf2",
+      "content_id": "62859123-c3f7-4697-abe1-ce9ada4dcceb",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "AcrIII-1 has complex ecological implications for viral-host dynamics. Sequential phage infections can exploit immunosuppression from prior Acr expression, and immunosuppressed cells become susceptible to Acr-negative phage. AcrIII-1 is expressed early in STIV infection and is found in prophages and mobile genetic elements, potentially enabling constitutive immunosuppression and favoring subsequent viral infections.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C60-C64 are supported by appropriate citations to published work. However, claims C89, C91-C93 are largely speculative interpretations about infection dynamics, viral strategies, and ecological consequences. While these speculations are reasonable given the modeling results and known AcrIII-1 properties, they lack direct experimental validation in the current study. The modeling supports plausibility but does not demonstrate these scenarios occur in vivo.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:40:22.654523Z"
+    },
+    {
+      "id": "25e8864f-ec76-4b6b-830b-ad71934ac8b7",
+      "content_id": "62859123-c3f7-4697-abe1-ce9ada4dcceb",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Background and context claims establishing the type III CRISPR system mechanism, including cOA synthesis upon RNA detection, activation of ancillary nucleases, regulatory mechanisms via RNA cleavage, and the roles of cellular (Crn1) and viral (AcrIII-1) ring nucleases in cA4 degradation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims (C1-C26, C78-C83) represent established knowledge from prior work, properly cited throughout the manuscript. They provide essential context for interpreting the current study's findings. The claims are well-supported by the cited literature and serve as the foundation for the experimental work presented.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:40:22.654523Z"
+    },
+    {
+      "id": "e2e82f73-cf8f-4f70-b895-0eceaa6c1dea",
+      "content_id": "62859123-c3f7-4697-abe1-ce9ada4dcceb",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The S. solfataricus type III CRISPR locus contains additional CARF domain proteins whose contributions to immunity remain unstudied. The transcription factor Csa3 may activate multiple defense systems when bound to cA4, suggesting the cA4 signal could transcend type III CRISPR defense. AcrIII-1 could potentially neutralize all cA4-activated systems by degrading the second messenger.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C65-C66 are factual statements about S. solfataricus genome content and Csa3 function (properly cited). However, claims C67-C68 are speculative inferences about broader signaling roles and AcrIII-1 effects that lack experimental validation in this study. While plausible, these represent hypotheses for future investigation rather than demonstrated findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:40:22.654523Z"
+    },
+    {
+      "id": "2d918235-5f52-4edd-8375-d31eb80ea450",
+      "content_id": "62859123-c3f7-4697-abe1-ce9ada4dcceb",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Cyclic nucleotide-based defense systems represent a widespread and diverse prokaryotic defense strategy, with parallels to eukaryotic cGAS-STING immunity. Multiple cyclic nucleotide species (cA3, cA4, cA5, cGAMP, c-di-AMP, etc.) function as second messengers in various defense pathways. Both cellular and pathogen-encoded enzymes regulate these signals, highlighting evolutionary arms races across domains of life.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C69-C77 provide broader context about cyclic nucleotide signaling in immunity, properly supported by citations to recent literature. These claims establish the significance of the current work within the larger field of innate immunity and host-pathogen interactions. The parallels drawn between prokaryotic and eukaryotic systems are well-documented in the cited literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:40:22.654523Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "d2fb1c0d-f41d-4748-860c-af8c030fc39e",
+      "result_id": "d01cf1e0-b283-40e7-a4aa-f6d34a7c1658"
+    },
+    {
+      "claim_id": "87db00cd-f4fa-4960-b63d-cf08683499f1",
+      "result_id": "d01cf1e0-b283-40e7-a4aa-f6d34a7c1658"
+    },
+    {
+      "claim_id": "3e2c9838-4217-46f9-9785-1038f3b6bfc2",
+      "result_id": "d01cf1e0-b283-40e7-a4aa-f6d34a7c1658"
+    },
+    {
+      "claim_id": "04dee7df-4b46-4f95-88a4-ef5c71fb6260",
+      "result_id": "d01cf1e0-b283-40e7-a4aa-f6d34a7c1658"
+    },
+    {
+      "claim_id": "436f83fe-471f-4355-a58e-16ac81e59a76",
+      "result_id": "d01cf1e0-b283-40e7-a4aa-f6d34a7c1658"
+    },
+    {
+      "claim_id": "dbdb6ebb-d268-480a-be06-0c0275e60190",
+      "result_id": "d01cf1e0-b283-40e7-a4aa-f6d34a7c1658"
+    },
+    {
+      "claim_id": "977f4c8e-169b-440e-a436-024c8ed1addd",
+      "result_id": "d01cf1e0-b283-40e7-a4aa-f6d34a7c1658"
+    },
+    {
+      "claim_id": "82a57930-3910-4f4a-880e-4672ad798531",
+      "result_id": "d01cf1e0-b283-40e7-a4aa-f6d34a7c1658"
+    },
+    {
+      "claim_id": "716bd4af-2e6d-4db0-a1b8-e7a55b3a4465",
+      "result_id": "d01cf1e0-b283-40e7-a4aa-f6d34a7c1658"
+    },
+    {
+      "claim_id": "cb15832b-ecd6-48f1-bac1-2e0b2282011d",
+      "result_id": "71b00f90-ea60-461c-aaf4-05e5f84e1bf1"
+    },
+    {
+      "claim_id": "a4378140-bea0-4413-9a5b-bb5fef18d38e",
+      "result_id": "71b00f90-ea60-461c-aaf4-05e5f84e1bf1"
+    },
+    {
+      "claim_id": "e5f61860-bd32-4fd6-ba1f-35f98b58473c",
+      "result_id": "71b00f90-ea60-461c-aaf4-05e5f84e1bf1"
+    },
+    {
+      "claim_id": "7c7a2330-ac0e-4e10-9f9e-01d6fcce5fe5",
+      "result_id": "71b00f90-ea60-461c-aaf4-05e5f84e1bf1"
+    },
+    {
+      "claim_id": "426d6bf7-65c5-4657-a4a8-5b8a93059a29",
+      "result_id": "f0fe6216-6255-4021-bbd5-e0ed9b5dbf76"
+    },
+    {
+      "claim_id": "0874f348-be96-4fba-9df3-0e21e60091bc",
+      "result_id": "a432357f-0b9c-4e30-9605-c1724e9075fa"
+    },
+    {
+      "claim_id": "731fa06f-8582-4cef-97e1-0534f8b83fd7",
+      "result_id": "a432357f-0b9c-4e30-9605-c1724e9075fa"
+    },
+    {
+      "claim_id": "04d73fd7-be13-497f-8d72-c64a1e464198",
+      "result_id": "a432357f-0b9c-4e30-9605-c1724e9075fa"
+    },
+    {
+      "claim_id": "1da8a8e2-847e-481f-81a8-6f98bc9a38d6",
+      "result_id": "a432357f-0b9c-4e30-9605-c1724e9075fa"
+    },
+    {
+      "claim_id": "5382d649-1f01-4ee3-9f83-c38a33f5f1a6",
+      "result_id": "a432357f-0b9c-4e30-9605-c1724e9075fa"
+    },
+    {
+      "claim_id": "0d843932-2cf1-4cf7-914c-07a2b0a5571b",
+      "result_id": "a432357f-0b9c-4e30-9605-c1724e9075fa"
+    },
+    {
+      "claim_id": "5306df3e-919c-4316-85e0-d1632848dfee",
+      "result_id": "201b812f-53bf-4757-8f55-d22cdb15c07c"
+    },
+    {
+      "claim_id": "bf6eae36-3dde-4fe1-bb51-f800754cea93",
+      "result_id": "201b812f-53bf-4757-8f55-d22cdb15c07c"
+    },
+    {
+      "claim_id": "f0cf8ad4-46e4-43d3-a2cb-803754dc2be0",
+      "result_id": "201b812f-53bf-4757-8f55-d22cdb15c07c"
+    },
+    {
+      "claim_id": "b077bd2d-b9fb-4646-824e-34cd20e00608",
+      "result_id": "201b812f-53bf-4757-8f55-d22cdb15c07c"
+    },
+    {
+      "claim_id": "a349f297-bd77-4915-81ea-daadfae1e885",
+      "result_id": "201b812f-53bf-4757-8f55-d22cdb15c07c"
+    },
+    {
+      "claim_id": "8c292a10-5f87-4691-aacd-c83a15052a7b",
+      "result_id": "6fc574c4-c732-4088-be82-db74c447783e"
+    },
+    {
+      "claim_id": "6868c382-9bbc-428d-9a52-a6195fa05f04",
+      "result_id": "6fc574c4-c732-4088-be82-db74c447783e"
+    },
+    {
+      "claim_id": "aec1258e-07f5-4a60-a548-96cf3cbd63fb",
+      "result_id": "6fc574c4-c732-4088-be82-db74c447783e"
+    },
+    {
+      "claim_id": "14ed1011-1211-4c79-8f0b-9e96d3573d27",
+      "result_id": "6fc574c4-c732-4088-be82-db74c447783e"
+    },
+    {
+      "claim_id": "f9bd7963-1385-4d8f-a160-20a93760dbca",
+      "result_id": "6fc574c4-c732-4088-be82-db74c447783e"
+    },
+    {
+      "claim_id": "8b6abf00-1dd0-46d0-b76f-7672bac52a72",
+      "result_id": "fcc7f01c-7434-4bf0-8820-a37de4491324"
+    },
+    {
+      "claim_id": "ed69f947-55dc-440e-80b3-37f6007470dc",
+      "result_id": "fcc7f01c-7434-4bf0-8820-a37de4491324"
+    },
+    {
+      "claim_id": "3574706d-c207-47c9-b105-e27cceda34fc",
+      "result_id": "fcc7f01c-7434-4bf0-8820-a37de4491324"
+    },
+    {
+      "claim_id": "7c27e16c-2141-4056-a42f-4b40c66daec9",
+      "result_id": "27a7e0bf-4686-4f15-83d5-d2f9705b2e53"
+    },
+    {
+      "claim_id": "37500f01-d47d-4397-bb78-4444e9334d37",
+      "result_id": "27a7e0bf-4686-4f15-83d5-d2f9705b2e53"
+    },
+    {
+      "claim_id": "c2a4141e-dc4f-451c-a644-d02a412de8ff",
+      "result_id": "27a7e0bf-4686-4f15-83d5-d2f9705b2e53"
+    },
+    {
+      "claim_id": "37c95d93-40d6-4d2c-897f-cb06aedc57af",
+      "result_id": "27a7e0bf-4686-4f15-83d5-d2f9705b2e53"
+    },
+    {
+      "claim_id": "6ecfc412-0a66-490f-bae4-73272f652acb",
+      "result_id": "27a7e0bf-4686-4f15-83d5-d2f9705b2e53"
+    },
+    {
+      "claim_id": "d161c466-938c-487f-98a1-53cb96ffa1e5",
+      "result_id": "9d5204e9-1a7a-481a-9039-34f32528adf2"
+    },
+    {
+      "claim_id": "2c29142d-dac4-4a43-83b1-b7ab4fd75925",
+      "result_id": "9d5204e9-1a7a-481a-9039-34f32528adf2"
+    },
+    {
+      "claim_id": "26b84155-694d-4632-9560-36d857b0bd72",
+      "result_id": "9d5204e9-1a7a-481a-9039-34f32528adf2"
+    },
+    {
+      "claim_id": "8cac73b4-cdfc-4f25-852e-b94236420721",
+      "result_id": "9d5204e9-1a7a-481a-9039-34f32528adf2"
+    },
+    {
+      "claim_id": "caf3d32d-d07d-4aec-9835-5817c245ab3c",
+      "result_id": "9d5204e9-1a7a-481a-9039-34f32528adf2"
+    },
+    {
+      "claim_id": "e59b7a50-537d-4da9-8b80-b4e2d33acbbb",
+      "result_id": "9d5204e9-1a7a-481a-9039-34f32528adf2"
+    },
+    {
+      "claim_id": "c7d3f679-b65c-4a2d-8078-d6effd6b8980",
+      "result_id": "9d5204e9-1a7a-481a-9039-34f32528adf2"
+    },
+    {
+      "claim_id": "611af1d3-8165-4d17-8a13-c770854c1734",
+      "result_id": "9d5204e9-1a7a-481a-9039-34f32528adf2"
+    },
+    {
+      "claim_id": "6285609d-4351-4255-8a1e-b843d8a4f359",
+      "result_id": "9d5204e9-1a7a-481a-9039-34f32528adf2"
+    },
+    {
+      "claim_id": "89456034-98d5-4294-a333-97ebea87213c",
+      "result_id": "25e8864f-ec76-4b6b-830b-ad71934ac8b7"
+    },
+    {
+      "claim_id": "430915ab-eefe-40a5-80f6-1d23dd75464d",
+      "result_id": "25e8864f-ec76-4b6b-830b-ad71934ac8b7"
+    },
+    {
+      "claim_id": "7f5af910-5cfa-48c2-9fda-dc92484f890b",
+      "result_id": "25e8864f-ec76-4b6b-830b-ad71934ac8b7"
+    },
+    {
+      "claim_id": "89457c44-54f3-41a5-92a0-54861c619e6c",
+      "result_id": "25e8864f-ec76-4b6b-830b-ad71934ac8b7"
+    },
+    {
+      "claim_id": "c1f02019-f6ca-4514-bf86-badfe3827d19",
+      "result_id": "25e8864f-ec76-4b6b-830b-ad71934ac8b7"
+    },
+    {
+      "claim_id": "790f80a4-e95b-4209-a09a-3b49c6fd2475",
+      "result_id": "25e8864f-ec76-4b6b-830b-ad71934ac8b7"
+    },
+    {
+      "claim_id": "9ef2ed1b-25ad-48f7-b1a0-f586e94333ef",
+      "result_id": "25e8864f-ec76-4b6b-830b-ad71934ac8b7"
+    },
+    {
+      "claim_id": "6da0753b-c31a-4520-84fe-5ed41d8b3d99",
+      "result_id": "25e8864f-ec76-4b6b-830b-ad71934ac8b7"
+    },
+    {
+      "claim_id": "d390b1b4-29ed-4dd8-ba25-50dc534131cb",
+      "result_id": "25e8864f-ec76-4b6b-830b-ad71934ac8b7"
+    },
+    {
+      "claim_id": "4716928f-78b4-4f38-a51f-214387f1dab0",
+      "result_id": "25e8864f-ec76-4b6b-830b-ad71934ac8b7"
+    },
+    {
+      "claim_id": "7193dcc5-34eb-45b0-b25c-bd401a8c38ef",
+      "result_id": "25e8864f-ec76-4b6b-830b-ad71934ac8b7"
+    },
+    {
+      "claim_id": "2969e01f-2d9c-48c4-8c9e-0dd69ba6f883",
+      "result_id": "25e8864f-ec76-4b6b-830b-ad71934ac8b7"
+    },
+    {
+      "claim_id": "002cd47e-a7e1-4a59-aa42-7828aa49dc2f",
+      "result_id": "25e8864f-ec76-4b6b-830b-ad71934ac8b7"
+    },
+    {
+      "claim_id": "bebcea08-fc6a-48cd-9994-4e0487679e35",
+      "result_id": "25e8864f-ec76-4b6b-830b-ad71934ac8b7"
+    },
+    {
+      "claim_id": "a3411989-ab4c-4ade-8ed2-696b71850e8b",
+      "result_id": "25e8864f-ec76-4b6b-830b-ad71934ac8b7"
+    },
+    {
+      "claim_id": "9d90ec7d-a4ad-422c-b195-342234d03a8b",
+      "result_id": "25e8864f-ec76-4b6b-830b-ad71934ac8b7"
+    },
+    {
+      "claim_id": "87cfca8a-fa6d-407e-b47c-959a1186947a",
+      "result_id": "25e8864f-ec76-4b6b-830b-ad71934ac8b7"
+    },
+    {
+      "claim_id": "8752a4a6-d31d-4037-a661-a2ef596abbd1",
+      "result_id": "25e8864f-ec76-4b6b-830b-ad71934ac8b7"
+    },
+    {
+      "claim_id": "67269c20-a1be-406a-858e-7ef7c3993131",
+      "result_id": "25e8864f-ec76-4b6b-830b-ad71934ac8b7"
+    },
+    {
+      "claim_id": "1559518e-2a96-4165-a4b4-aeea374c8e74",
+      "result_id": "25e8864f-ec76-4b6b-830b-ad71934ac8b7"
+    },
+    {
+      "claim_id": "1c641661-5a9d-4752-92f3-b27a23f4899b",
+      "result_id": "25e8864f-ec76-4b6b-830b-ad71934ac8b7"
+    },
+    {
+      "claim_id": "8421dcda-32ab-4db2-9388-cb01d4c29517",
+      "result_id": "25e8864f-ec76-4b6b-830b-ad71934ac8b7"
+    },
+    {
+      "claim_id": "f49ba014-61b8-4ee8-aad6-1addf03dc050",
+      "result_id": "25e8864f-ec76-4b6b-830b-ad71934ac8b7"
+    },
+    {
+      "claim_id": "b0bf414f-a96f-4255-9329-ab826f7d7a88",
+      "result_id": "25e8864f-ec76-4b6b-830b-ad71934ac8b7"
+    },
+    {
+      "claim_id": "c79831b8-327f-4d88-a136-29658930ac96",
+      "result_id": "25e8864f-ec76-4b6b-830b-ad71934ac8b7"
+    },
+    {
+      "claim_id": "3ea69d04-60e9-4bea-843d-d985708764ed",
+      "result_id": "25e8864f-ec76-4b6b-830b-ad71934ac8b7"
+    },
+    {
+      "claim_id": "2418ee76-8817-4a0d-9a06-fa66708c14ea",
+      "result_id": "25e8864f-ec76-4b6b-830b-ad71934ac8b7"
+    },
+    {
+      "claim_id": "679698d8-ee8d-49a6-b520-b69072af5150",
+      "result_id": "25e8864f-ec76-4b6b-830b-ad71934ac8b7"
+    },
+    {
+      "claim_id": "328664cd-4e61-49bd-b300-609e35b0ec08",
+      "result_id": "25e8864f-ec76-4b6b-830b-ad71934ac8b7"
+    },
+    {
+      "claim_id": "a54df68f-9d48-4a23-91ed-0afac30d0cdc",
+      "result_id": "25e8864f-ec76-4b6b-830b-ad71934ac8b7"
+    },
+    {
+      "claim_id": "f1d051d2-bdf9-48ef-b667-fbd1cba0f254",
+      "result_id": "25e8864f-ec76-4b6b-830b-ad71934ac8b7"
+    },
+    {
+      "claim_id": "b473f593-e5b6-4f0e-b318-f19d54db5968",
+      "result_id": "25e8864f-ec76-4b6b-830b-ad71934ac8b7"
+    },
+    {
+      "claim_id": "bd10e0a3-39b3-443e-ab42-52eb8085c950",
+      "result_id": "e2e82f73-cf8f-4f70-b895-0eceaa6c1dea"
+    },
+    {
+      "claim_id": "98aa3495-4a17-4ffc-a6c9-b731e78b123d",
+      "result_id": "e2e82f73-cf8f-4f70-b895-0eceaa6c1dea"
+    },
+    {
+      "claim_id": "d4c99bcd-2113-41e4-b9fc-6d2751878598",
+      "result_id": "e2e82f73-cf8f-4f70-b895-0eceaa6c1dea"
+    },
+    {
+      "claim_id": "1e92bd7b-d171-4157-be25-20f9659be4f1",
+      "result_id": "e2e82f73-cf8f-4f70-b895-0eceaa6c1dea"
+    },
+    {
+      "claim_id": "64e0faf5-dc2d-4aea-a834-32d91d3ca696",
+      "result_id": "2d918235-5f52-4edd-8375-d31eb80ea450"
+    },
+    {
+      "claim_id": "a7b01a41-43b6-4d3a-83e6-3412e58427f8",
+      "result_id": "2d918235-5f52-4edd-8375-d31eb80ea450"
+    },
+    {
+      "claim_id": "482f775a-3606-46de-93b3-18593ad1c246",
+      "result_id": "2d918235-5f52-4edd-8375-d31eb80ea450"
+    },
+    {
+      "claim_id": "4107d640-ea0c-4de4-9c54-bfd5e374eea4",
+      "result_id": "2d918235-5f52-4edd-8375-d31eb80ea450"
+    },
+    {
+      "claim_id": "169ebc73-a67e-4c23-ab68-d1a78fcce917",
+      "result_id": "2d918235-5f52-4edd-8375-d31eb80ea450"
+    },
+    {
+      "claim_id": "85dfae97-2b5c-42f3-ae87-dcae6363bd86",
+      "result_id": "2d918235-5f52-4edd-8375-d31eb80ea450"
+    },
+    {
+      "claim_id": "ac2573e8-4651-4e84-8c4a-0f06a24d06b8",
+      "result_id": "2d918235-5f52-4edd-8375-d31eb80ea450"
+    },
+    {
+      "claim_id": "df3acc30-75dd-4293-a87f-d81f104e3563",
+      "result_id": "2d918235-5f52-4edd-8375-d31eb80ea450"
+    },
+    {
+      "claim_id": "9c0ee298-c05c-4e64-801e-d2efe43c8870",
+      "result_id": "2d918235-5f52-4edd-8375-d31eb80ea450"
+    }
+  ],
+  "comparisons": []
+}

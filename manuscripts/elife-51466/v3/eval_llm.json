@@ -1,0 +1,278 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C30"
+    ],
+    "result": "Virulent Mycobacterium tuberculosis strain H37Rv causes DNA damage in host cells, as evidenced by \u03b3H2AX induction across multiple cell types (THP-1, RAW264.7, peritoneal macrophages), detectable from 1 hour to 72 hours post-infection, and dependent on live bacteria.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C21-C26, and C30 collectively demonstrate DNA damage through consistent \u03b3H2AX elevation across three independent cell types (Figures 1a-c), temporal persistence (Figures 1a-b), and requirement for live bacteria (Figure 1d). The immunofluorescence data (Figure 1h) provides orthogonal validation through \u03b3H2AX foci visualization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C27",
+      "C28",
+      "C29",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Non-virulent H37Ra strain triggers single-stranded DNA generation in host cells, activating the ATR-Chk1 pathway, as shown by RPA2 foci formation and ATR-Chk1 phosphorylation, though with differential kinetics compared to H37Rv.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C31-C33 are supported by RPA2 foci formation (Figure 2c) and ATR-Chk1 activation (Figure 2b right panel). Claims C27-C29 show that while Ra induces \u03b3H2AX, the levels and kinetics differ from Rv (Figures 1e-g), supporting distinct damage mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "SecA2 secretome effectors are necessary and sufficient for DSB generation in host cells, as demonstrated by loss of \u03b3H2AX induction in Rv\u0394secA2 mutant and its culture filtrate, while Rv\u0394RD1 retains this activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C48, C50, C52 show that Rv\u0394secA2 fails to induce DNA damage markers (Figures 4e-h), while C47, C49, C51 demonstrate that Rv\u0394RD1 retains activity comparable to wild-type (Figures 4d, 4g). Claims C45-C46 show culture filtrate is sufficient (Figures 4b-c). The genetic and biochemical evidence converges to support necessity and sufficiency of SecA2 secretome.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C4",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "H37Rv infection activates the ATM-Chk2 DNA damage response pathway, leading to DSB formation, as evidenced by ATM and Chk2 phosphorylation, pATM foci formation, and activation of downstream DDR mediators (Nbs1, MDC1, 53BP1).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C34-C38 are well-supported by western blot data showing ATM-Chk2 phosphorylation (Figures 2b, 2d), immunofluorescence showing pATM foci (Figure 2e), and colocalization of \u03b3H2AX with 53BP1 (Figure 2f). The activation of multiple DDR mediators (Figure 2\u2014figure supplement 1b-c) provides comprehensive evidence for pathway activation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Continuous generation of DSBs occurs during prolonged H37Rv infection, as demonstrated by persistent \u03b3H2AX levels that decrease only upon bacterial clearance with isoniazid treatment, indicating ongoing DNA damage rather than repair deficiency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C41 are supported by the correlation between bacterial clearance (Figure 3b) and reduction in DNA damage markers (Figure 3c). The time-dependent decrease in \u03b3H2AX, pATM, and pChk2 upon INH treatment, concomitant with CFU reduction, provides strong evidence for continuous DSB generation by live bacteria.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "H37Rv infection causes cell cycle perturbations in infected cells, characterized by decreased G1 phase accumulation at early time points and increased sub-G1 population (cell death) at later stages, accompanied by elevated p53 and p21 levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C44 are supported by flow cytometry data (Figure 3e) showing altered cell cycle distribution specifically in GFP+ infected cells, and western blot data (Figure 3g) showing molecular markers of cell cycle arrest and apoptosis. The temporal progression from cell cycle alteration to cell death is logically consistent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C5",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Mtb gains survival advantage through ATM activation rather than classical ATM-Chk2 DDR, as ATM inhibition reduces bacterial survival in a dose-dependent manner while Chk2 inhibition has no effect, and ATM-I does not directly affect bacterial viability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C57-C60 are strongly supported by differential effects of ATM-I versus Chk2-I on bacterial survival (Figures 5c, 5e), with ATM-I showing dose-dependent reduction in CFUs while Chk2-I has no effect. Claim C58 (Figure 5\u2014figure supplement 1) rules out direct antimicrobial effects. Claims C54-C56 confirm on-target ATM inhibition. This demonstrates ATM-dependent but Chk2-independent survival signaling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "H37Rv activates an ATM-Akt signaling axis that promotes bacterial survival by inhibiting apoptosis, as demonstrated by Akt phosphorylation downstream of ATM, reduced bacterial survival with Akt inhibition, and increased apoptosis upon ATM or Akt inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C76 form a coherent mechanistic model supported by multiple lines of evidence: Akt activation upon infection (C66, Figure 6d), epistasis showing ATM upstream of Akt (C67-C69, Figure 6e), similar effects of ATM-I and Akt-I on bacterial survival (C70-C72, Figure 6f), and increased apoptosis with inhibitor treatment (C74-C75, Figure 6g). The greater effect of Akt-I suggests additional pathways (C73), which is appropriately acknowledged.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C6",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "In vivo Mtb infection leads to sustained DSBs and ATM activation during chronic tuberculosis in mice, with elevated \u03b3H2AX, pATM, pChk2, and pAkt in lungs and spleen at 56 days post-infection, demonstrating pathological relevance of ex vivo findings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C77-C82 are supported by in vivo data showing chronic infection establishment (Figure 7a, 7\u2014figure supplement 1a) and elevated DNA damage/DDR markers in infected tissues (Figure 7b). The presence of markers in both lungs and spleen (C80-C81) indicates systemic effects. This validates the ex vivo findings in a physiologically relevant model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "ATM inhibitor enhances isoniazid-mediated Mtb clearance in both ex vivo macrophages (~11-fold reduction) and in vivo mouse infection model (~1 log additional reduction in lungs and spleen), suggesting potential for host-directed adjunct therapy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C8, C83-C91 demonstrate therapeutic potential through ex vivo data (Figure 7c) showing synergistic effects of ATM-I+INH, and in vivo data (Figures 7e-f) showing enhanced clearance in both lungs and spleen. The greater effect in spleen (C89) suggests reduced dissemination (C90). However, C91's proposal for HDT is appropriately cautious as this represents proof-of-concept requiring further validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "DNA-PKcs is activated at lower levels and later time points than ATM during H37Rv infection, contributes to residual \u03b3H2AX phosphorylation, but does not influence bacterial survival.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C65 are supported by DNA-PKcs activation data (Figure 6a), additive effect of DNA-PK-I with ATM-I on \u03b3H2AX (Figure 6b), but lack of effect on CFUs (Figure 6c). This demonstrates DNA-PKcs activation but functional irrelevance for bacterial survival, appropriately distinguishing between biochemical activation and biological consequence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C104",
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "Mtb-mediated DNA damage is not ROS-dependent, as NAC treatment does not reduce \u03b3H2AX levels, and Rv\u0394secA2 fails to induce DSBs despite expected higher ROS levels due to compromised SodA secretion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104 and C111 are directly supported by NAC experiment (Figure 7\u2014figure supplement 1c). Claims C108-C110 provide mechanistic context from literature and logical inference about Rv\u0394secA2. The convergence of experimental data (NAC, Rv\u0394secA2) and mechanistic reasoning provides strong evidence against ROS-mediated damage.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "Background knowledge claims about DNA damage response mechanisms: ATM activation and recruitment, DNA-PKcs recruitment, ATR-ATRIP recruitment, and \u03b3H2AX as a DNA damage marker.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C14 represent established scientific knowledge appropriately cited from the literature (Lee and Paull 2005; Gottlieb and Jackson 1993; Ball et al. 2005; Burma et al. 2001; Rogakou et al. 1998). These provide necessary context for interpreting the experimental results and are well-established in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "Background knowledge about bacterial pathogen manipulation of host DDR: E. coli, H. pylori, C. trachomatis, L. monocytogenes, and N. gonorrhoeae employ various strategies to induce DNA damage and/or impair DDR.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C20 represent prior work appropriately cited to establish context for the current study. These citations demonstrate that bacterial manipulation of host DDR is an established phenomenon, providing rationale for investigating Mtb's effects on host DNA damage responses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "Background knowledge and discussion context: characteristics of H37Ra, SecA2 secretome composition, ATM substrate diversity, DDR-Akt crosstalk, apoptosis effects on Mtb, and speculation about lipoproteins as genotoxic effectors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C107 represent a mix of established knowledge (appropriately cited), discussion of prior work, and speculation (C107 appropriately labeled as such). These provide necessary context for interpreting results and proposing mechanisms. The speculation about lipoproteins (C107) is reasonable given the data but appropriately tentative.",
+    "result_type": "MINOR"
+  }
+]

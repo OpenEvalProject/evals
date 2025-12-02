@@ -1,0 +1,363 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Puromycin treatment validates the polysome gradient fractionation method by causing dissociation of polysomes and shifting RNA distribution from heavy polysome fractions (3 and 4) to lighter fractions (1 and 2), confirming that fractions 3 and 4 contain actively translated transcripts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C35 provide methodological validation through puromycin treatment showing expected polysome dissociation (C33), quantitative RNA redistribution across all RNA groups (C34), and correct interpretation that fractions 3/4 represent active translation (C35). The data in Figure 1B-D directly support these conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Disrupting peripheral localization of APC-dependent RNAs through either competitive UTR overexpression or parthenolide-mediated disruption of detyrosinated microtubules does not significantly affect their translational efficiency, suggesting lack of coupling between RNA transport and translational control.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C41 demonstrate that two independent methods of disrupting RNA localization (cUTR competition and parthenolide treatment) both reduce peripheral RNA enrichment (C36-C38) without affecting polysome profiles (C39) or translation state of the analyzed RNAs (C40). The conclusion of uncoupled transport and translation (C41) is well-supported by Figures 1C-D and 2A-B, though the authors note small non-significant shifts in heavy polysome fractions that may warrant further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "The SunTag-based translation reporter system enables single-molecule visualization of RNA and nascent protein in live cells, with validation showing specific detection of RNA molecules via PP7-mCherry and active translation via GFP signal that is sensitive to translation inhibitors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C49 establish the SunTag reporter system with appropriate controls. RNA detection specificity is validated by comparing +PP7 vs -PP7 constructs (C46-C47), translation signal is confirmed by puromycin sensitivity (C48), and active translation is distinguished from stalled ribosomes using harringtonine/lactimidomycin vs cycloheximide (C49). Figure 3 and supplementary data provide comprehensive validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Localized translation reporters carrying Rab13 or Pkp4 UTRs show peripheral enrichment with ~50% of molecules within 3-7 \u03bcm of cell edge, exist predominantly as single molecules, and exhibit mostly static or oscillatory motion with a small subset showing directed movement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C56 characterize reporter RNA distribution and dynamics. Peripheral enrichment is quantified (C50-C51), single-molecule status confirmed by intensity distributions (C52), and detection limitations acknowledged (C53-C54). Motion characteristics are described from live imaging (C55-C56). Figure 4 and supplements provide supporting data, though the authors appropriately note limitations in detecting fast-moving molecules.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Translation efficiency of APC-dependent RNAs is independent of their distance from the cell periphery, with Pearson correlation coefficients near zero for all reporters, and some RNAs can be translated while undergoing directed movement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C59 present the key finding that translation efficiency is uncorrelated with position (r \u2248 0 for all reporters), supported by Figure 4A data. Claims C60-C61 provide additional observation of translation during transport, though the authors appropriately note this is too infrequent for definitive conclusions. The main conclusion of position-independent translation is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Endogenous APC-dependent RNAs exist in two states: as single molecules or as heterogeneous clusters containing multiple RNA species at the tips of protrusions in a 2\u03bcm peripheral region, with clusters overlapping polyA RNA accumulations and representing only a small fraction of total RNA in a subset of protrusions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C73 comprehensively characterize peripheral RNA clusters. FISH intensity quantification confirms multiple RNAs per cluster (C67), co-localization experiments show heterogeneity (C68-C69), and low individual RNA copy numbers support the inference of additional species in polyA-positive clusters (C70-C71). The spatial specificity is demonstrated by comparison to non-localized RNAs (C73). Figure 5 and supplements provide extensive supporting data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "The clustering behavior of endogenous APC-dependent RNAs is recapitulated by exogenous reporter RNAs carrying Rab13 or Net1 3'UTRs, with live imaging showing smaller RNA particles trafficking toward and incorporating into larger peripheral clusters, demonstrating that clustering is mediated by 3'UTR signals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C77 extend the clustering observations to reporter systems. MS2-tagged reporters show similar clustering patterns (C74-C75), live imaging directly demonstrates RNA incorporation into clusters (C76), and the conclusion that 3'UTRs mediate this behavior (C77) is well-supported by Figure 5 supplement 3 and Videos 7-8.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Translation reporters at protrusion tips form RNA clusters that are translationally silent, as measured by reduced GFP/mCherry ratios, leading to the conclusion that while APC-dependent RNAs are translated with similar efficiency in internal and peripheral locations, a subset at protrusion tips coalesces into translationally silent clusters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C82 demonstrate translational silencing in peripheral clusters using the SunTag reporters. The reduced GFP/mCherry ratio in clustered vs single RNAs (C80) provides direct evidence of silencing. The synthesis of findings (C81-C82) is well-supported by Figure 6 data, though the authors acknowledge clusters are less pronounced than endogenous due to brief induction (C79).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "The puro-PLA assay specifically detects nascent Rab13 protein in primary human dermal fibroblasts, revealing approximately 40 translation sites per cell that match the ~40-50 Rab13 RNA molecules detected by FISH, indicating a large fraction of Rab13 RNAs are actively translated, with translation occurring in both peripheral and perinuclear locations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C90 validate the puro-PLA method and apply it to endogenous Rab13. Specificity is confirmed by knockdown and translation inhibitor controls (C83), CHX pretreatment distinguishes translation sites from released protein (C84-C85), and the agreement between translation sites and RNA copy numbers (C86-C88) supports high translation activity. Figure 7B-C provides supporting data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "Rab13 translation signal is less peripheral than Rab13 RNA signal and becomes progressively less peripheral over time during cell spreading, correlating with decreased spreading rate, suggesting peripheral translation is reduced as cells stop extending.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C97 reveal a temporal pattern in translation distribution. PDI measurements show translation is less peripheral than RNA (C91), this difference increases over time (C92-C93), and is not due to protein trafficking (C94). The correlation with spreading rate (C96-C97) provides mechanistic insight. Figure 7D-F supports these observations, though causality is not established.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "In MDA-MB-231 cells, Rab13 RNA is present in both extending lamellipodia and retracting protrusions, but Rab13 translation is readily detected in lamellipodia and drastically reduced in retracting protrusions despite similar RNA levels, demonstrating that APC-dependent RNAs are translated in extending protrusions and silenced upon retraction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C107 resolve the paradox of peripheral silencing by identifying protrusion dynamics as the key variable. The characterization of retracting tails (C98-C100), validation of puro-PLA in MDA-MB-231 cells (C102), and quantification showing RNA presence but translation absence in retracting protrusions (C103-C106) provide strong evidence. Figure 8 comprehensively supports the conclusion that translation is coupled to protrusion extension/retraction (C107).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "In MDA-MB-231 cells, Rab13 RNA exists predominantly as single molecules in lamellipodia but forms clusters of multiple molecules in retracting protrusions, with the presence of single silent RNAs in retracting protrusions indicating that clustering is not required for silencing but may be a consequence of it.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C111 characterize RNA organization in different protrusion states. FISH intensity distributions distinguish single molecules in lamellipodia (C108) from clusters in retracting protrusions (C109). The inference that clustering is a consequence rather than cause of silencing (C111) is supported by the observation of single silent RNAs (C110). Figure 9B-C provides supporting data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "MDA-MB-231 retracting protrusions contain a spectrum of Rab13 RNA cluster types, with ~30% showing Rab13 clusters without polyA accumulation and ~28% showing heterogeneous polyA-positive assemblies, with differences between cell types likely reflecting granule dynamics related to retraction speed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C114 quantify cluster heterogeneity in MDA-MB-231 cells, showing a spectrum of cluster sizes. The speculation about dynamics (C115) is appropriately presented as a possibility based on observed differences in retraction kinetics between cell types. Figure 9D and comparison with NIH/3T3 cells support these observations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "In NIH/3T3 cells, 25-30% of protrusions contain peripheral polyA granules that are more reliably detected than individual RNA species; these granules are not disrupted by translation inhibition but are promoted by cycloheximide/puromycin treatment and reduced by microtubule disruption, indicating they result from RNA transport and that translational inhibition is a limiting step in their formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C116-C124 characterize peripheral granule formation requirements. The use of polyA as a cluster marker is justified (C116-C117), quantification establishes baseline frequency (C118), and the differential effects of translation inhibitors vs microtubule disruptors (C119-C123) support the model that transport is required and silencing promotes cluster formation (C121, C124). Figure 10 and supplement provide comprehensive supporting data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C125",
+      "C126",
+      "C127",
+      "C128"
+    ],
+    "result": "The translational regulation of APC-dependent RNAs differs from the canonical model of transport-coupled silencing, with proteins being produced in internal regions without deleterious effects, and the authors propose that translation in different local environments could generate protein copies with different properties depending on the local microenvironment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C125 is well-supported by the data showing position-independent translation. However, claims C126-C128 are speculative proposals about functional implications. While the speculation is reasonable and grounded in literature about co-translational processes, there is no direct experimental evidence in this study that proteins translated in different locations have different properties or that this has functional consequences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C129",
+      "C130",
+      "C131",
+      "C132"
+    ],
+    "result": "Translation of APC-dependent RNAs is suppressed in retracting protrusions with associated formation of multimeric heterogeneous clusters; cluster formation is reduced by preventing RNA transport and increased by translational inhibition, with silencing occurring both within and outside clusters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C129-C132 synthesize the major findings. The suppression in retracting protrusions and cluster formation (C129) is supported by Figures 8-9. The effects of transport disruption and translation inhibition on cluster formation (C130-C131) are supported by Figure 10. The observation that silencing can occur outside clusters (C132) is supported by Figure 9 showing single silent RNAs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C133",
+      "C134",
+      "C135",
+      "C136"
+    ],
+    "result": "Peripheral RNA clusters share properties with phase-separated RNA granules like stress granules and P-bodies, but are distinguished by spatial control of their assembly/disassembly in specific subcellular regions associated with protrusion retraction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C133-C136 contextualize the findings within the RNA granule literature. The comparison to phase-separated granules (C133) and stress granules/P-bodies (C134-C135) is supported by appropriate citations. The distinction of spatial control (C136) is a reasonable inference from the data showing clusters specifically at retracting protrusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C137",
+      "C138",
+      "C139"
+    ],
+    "result": "Given that APC-dependent RNA localization is important for cell migration, the spatial segregation of translation between extending and retracting regions could have a functional role, implying a dynamic regulatory mechanism coordinating translation with protrusion/retraction cycles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C137 about the importance of RNA localization for migration is supported by prior work (citation). However, claims C138-C139 about functional roles and regulatory mechanisms are speculative. While the speculation is reasonable and well-motivated by the data, no functional experiments are performed to test whether the observed translation regulation actually impacts migration or protein function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C140",
+      "C141",
+      "C142"
+    ],
+    "result": "Spatially restricted phosphorylation/dephosphorylation events could underlie local silencing and granule formation, potentially involving local modifications of FMRP or FUS, which are known to associate with APC-dependent RNAs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C140-C142 propose potential mechanisms. While FMRP and FUS association with APC-dependent RNAs is supported by prior work (C141), the proposals about phosphorylation-mediated regulation (C140) and local modifications (C142) are speculative. These are reasonable hypotheses based on literature about RNA granule regulation, but no experimental evidence is provided in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C143",
+      "C144",
+      "C145"
+    ],
+    "result": "The extent of cluster formation may be influenced by retraction rate, with slowly retracting NIH/3T3 protrusions showing large heterogeneous polyA-positive granules, while faster retracting MDA-MB-231 protrusions may have more transient granules that rapidly disassemble.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C143-C145 propose a model for cluster dynamics. The observation of different cluster compositions between cell types (C144) is supported by Figures 5 and 9. However, the proposed relationship to retraction rate (C143, C145) is speculative, based on correlation rather than experimental manipulation of retraction speed. Alternative explanations (e.g., deadenylated transcripts) are acknowledged but not tested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C146",
+      "C147",
+      "C148"
+    ],
+    "result": "Peripheral RNA clusters likely account for some APC-dependent RNA found in heavier gradient fractions, and reduction of cluster formation by parthenolide could explain the apparent shift toward lighter polysome fractions observed in the gradient experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C146-C148 provide a mechanistic explanation for the subtle gradient shifts noted earlier. The principle that silent RNP complexes sediment in heavier fractions (C146) is supported by literature. The inference that peripheral clusters contribute to heavy fractions (C147) and that their reduction explains the parthenolide effect (C148) is reasonable and connects observations from Figures 1-2 with Figure 10.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C149",
+      "C150",
+      "C151"
+    ],
+    "result": "APC-dependent RNAs in FUS-mutant-induced internal granules are translationally active, contrasting with their silencing in peripheral clusters, suggesting that physical partitioning into granules is not the sole determinant of translation status but acts in combination with local environment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C149-C151 integrate prior findings from the authors' laboratory with current results. The observation of active translation in FUS granules (C149-C150) is supported by citation to prior work. The inference about context-dependent effects of granule partitioning (C151) is reasonable given the contrasting translation states in different granule types, though mechanistic understanding is limited.",
+    "result_type": "MINOR"
+  }
+]

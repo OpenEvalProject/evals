@@ -1,0 +1,1455 @@
+{
+  "submission": {
+    "id": "aea1634d-57ea-4cca-97b3-10b053b0200e",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T11:11:07.732446Z",
+    "updated_at": "2025-12-02T11:11:07.732446Z"
+  },
+  "content": [
+    {
+      "id": "6d9638a7-21ef-4d61-bf7d-4f4f5e29986a",
+      "submission_id": "aea1634d-57ea-4cca-97b3-10b053b0200e",
+      "content_type": "manuscript",
+      "content_text": "# Electroporated recombinant proteins as tools for in vivo functional complementation, imaging and chemical biology\n\n## Authors\n\n- Amal Alex<sup>1</sup> ([ORCID: 0000-0001-9801-1274](https://orcid.org/0000-0001-9801-1274))\n- Valentina Piano<sup>1</sup> ([ORCID: 0000-0002-9539-561X](https://orcid.org/0000-0002-9539-561X))\n- Soumitra Polley<sup>1</sup>\n- Marchel Stuiver<sup>2</sup> ([ORCID: 0000-0003-3437-4468](https://orcid.org/0000-0003-3437-4468))\n- Stephanie Voss<sup>3</sup>\n- Giuseppe Ciossani<sup>1</sup>\n- Katharina Overlack<sup>1</sup>\n- Beate Voss<sup>1</sup>\n- Sabine Wohlgemuth<sup>1</sup>\n- Arsen Petrovic<sup>1</sup>\n- Yaowen Wu<sup>3</sup> ([ORCID: 0000-0002-2573-8736](https://orcid.org/0000-0002-2573-8736))\n- Philipp Selenko<sup>2</sup>\n- Andrea Musacchio<sup>1</sup> ([ORCID: 0000-0003-2362-8784](https://orcid.org/0000-0003-2362-8784)) \u2020\n- Stefano Maffini<sup>1</sup> ([ORCID: 0000-0001-6380-6560](https://orcid.org/0000-0001-6380-6560)) \u2020\n\n### Affiliations\n\n1. Department of Mechanistic Cell Biology Max Planck Institute of Molecular Physiology Dortmund Germany\n2. In-Cell NMR Laboratory Leibniz Institute of Molecular Pharmacology (FMP Berlin) Berlin Germany\n3. Chemical Genomics Centre Max Planck Society Dortmund Germany\n4. Department of Chemistry Ume\u00e5 University Ume\u00e5 Sweden\n5. Department of Biological Regulation Weizmann Institute of Science Rehovot Israel\n6. Centre for Medical Biotechnology, Faculty of Biology University Duisburg-Essen Essen Germany\n\n\u2020 Corresponding author\n\n## Abstract\n\nDelivery of native or chemically modified recombinant proteins into mammalian cells shows promise for functional investigations and various technological applications, but concerns that sub-cellular localization and functional integrity of delivered proteins may be affected remain high. Here, we surveyed batch electroporation as a delivery tool for single polypeptides and multi-subunit protein assemblies of the kinetochore, a spatially confined and well-studied subcellular structure. After electroporation into human cells, recombinant fluorescent Ndc80 and Mis12 multi-subunit complexes exhibited native localization, physically interacted with endogenous binding partners, and functionally complemented depleted endogenous counterparts to promote mitotic checkpoint signaling and chromosome segregation. Farnesylation is required for kinetochore localization of the Dynein adaptor Spindly. In cells with chronically inhibited farnesyl transferase activity, in vitro farnesylation and electroporation of recombinant Spindly faithfully resulted in robust kinetochore localization. Our data show that electroporation is well-suited to deliver synthetic and chemically modified versions of functional proteins, and, therefore, constitutes a promising tool for applications in chemical and synthetic biology.\n\n## Introduction\n\nThe traditional divide between in vivo, in cellulo and in vitro approaches in modern molecular cell biology has progressively been overcome in recent years largely due to new conceptual and technical advancements. For instance, dissection and biochemical reconstitution of complex cellular pathways in vitro demonstrated great predictive value, facilitating and directing functional characterizations aiming to understand the endogenous cellular counterpart (e.g. Faesen et al., 2017; Yeeles et al., 2015). Chemical and synthetic biology, on the other hand, have generated tools for studying and manipulating biological pathways in creative new ways, with innovations that include, amongst others, genetic code expansion to introduce unnatural aminoacids with new functionalities into a protein of interest (Davis and Chin, 2012), the development of fluorescent dyes with potential for single molecule sensitivity and spanning a greater spectral range compared to genetically encoded proteins (Huang et al., 2009), and the design of allelic mutants of crucial enzymes that are specifically inhibited by small\u00a0molecules that will\u00a0not target the wild type allele (Bishop et al., 2001).\n\nCells are surrounded by plasma membranes, which constitute essential protective barriers for cellular integrity but impede the targeted delivery of biological macromolecules such as proteins. In turn, the controlled intracellular transduction of proteins has remained highly challenging. Historically, introduction of protein variants into cells has been achieved by transient transfection of DNA plasmids encoding these entities. Recipient cells then typically express the desired proteins at levels that vary between cell lines and individual cells (Kim and Eberwine, 2010). Owing to the ease of transient transfection procedures, the method is widely used. Stable transfection of cultured mammalian cells offers more uniform protein expression but the generation of stable clones is labor-intensive and time-consuming (Kim and Eberwine, 2010).\n\nA significant fraction of cellular proteins exist within stable or dynamic multi-subunit assemblies (Charbonnier et al., 2008; Vidal et al., 2011; Aloy et al., 2004). Functional characterization of protein complexes in mammalian cells remains laborious especially when multiple subunits need to be manipulated (e.g. mutations or the introduction of fluorescent probes) for functional complementation studies. In such cases, multiple subunits must be co-expressed to similar levels while endogenous counterparts ought to be depleted, which is technically challenging and exposes a potential limitation of direct DNA-based delivery methods. Because robust tools for recombinant expression of protein complexes in heterologous systems, including bacteria and insect cells, are available in structural biology (Perrakis et al., 2011), the prospect of directly delivering these specimens into cells is highly attractive. In addition, defined protein modifications may be introduced in a target protein before intracellular delivery, thus enabling the exploitation of a repertoire of chemical biology tools for in-cell investigations.\n\nThe tools available for protein delivery, however, remain insufficiently explored (Fu et al., 2014). Historically, microinjection first emerged as the method of choice for the introduction of recombinant proteins into mammalian cells (Komarova et al., 2007). However, it requires considerable handling skills and a dedicated setup that are not routinely available, and is a low-throughput approach that limits delivery to a small number of targeted cells (typically in the range of tens to hundreds). For higher throughput, batch delivery methods such as cell-penetrating peptide (CPP) tags (Inomata et al., 2009), pore-forming bacterial toxins (Teng et al., 2016; Ogino et al., 2009) or osmocytosis (D'Astolfo et al., 2015) are available, but present uncertainties with regard to protein uptake efficiencies, undefined routes of internalization and intracellular localization, as well as varying degrees of cytotoxicity.\n\nBatch electroporation (EP) is an alternative method to directly deliver proteins into cultured mammalian cells (Lambert et al., 1990; Chakrabarti et al., 1989; Vienken et al., 1978; Shi et al., 2018; Furuhata et al., 2019). EP-mediated protein transduction has surged in recent years with applications ranging from, cellular structural biology and the delivery of isotopically labeled proteins for in-cell NMR measurements (Theillet et al., 2016) to the introduction of immunoglobulins for targeting and degradation of endogenous proteins (Clift et al., 2017), and the delivery of ribonucleotide particles (RNPs) for CRISPR-Cas9-mediated gene editing (Kim et al., 2014; Lin et al., 2014; Liang et al., 2015; Hashimoto and Takemoto, 2015).\n\nWhile these approaches seem promising, more experimental evidences regarding the structural and functional intactness of delivered proteins in cells and a comprehensive analysis of the robustness and reproducibility with which different mammalian cells can be targeted are needed. Here, we test EP as a delivery method for various proteins that work in the kinetochore, a multi-subunit assembly required for chromosome segregation (Musacchio and Desai, 2017). The kinetochore consists of at least 30 core subunits organized in various protein assemblies and structured in layers that emanate from a specialized centromeric chromatin interface, the inner kinetochore, and terminate at the outer kinetochore, where spindle microtubules are bound (Figure 1A). The primary function of kinetochores is to link chromosomes and spindle microtubules (MTs) (Pesenti et al., 2018). Kinetochores function also as signaling platforms for the spindle assembly checkpoint (SAC, also named mitotic or metaphase checkpoint), a feedback surveillance mechanism that monitors the correct state of kinetochore-microtubule (KT-MT) attachment to ensure timely and faithful chromosome segregation (Musacchio, 2015).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/48287/elife-48287-fig1-v3.jpg)\n\n**Figure 1.:** (A) Schematic outline of a mitotic cell with condensed chromosomes (gray) and centromeres (blue). The inner kinetochore (red) recruits several outer kinetochore proteins (orange gradient box), including the MIS12 (MIS12C) and the microtubule (MT) binding complex NDC80 (NDC80C). In turn, these complexes recruit the protein KNL1, the spindle assembly checkpoint (SAC) components BUB1, BUBR1, MAD1 and MAD2, and the outer kinetochore proteins RZZ and Spindly. (B) Overview of the electroporation (EP) work-flow using adherent cells. (1) Cells are cultured under defined growth conditions according to experimental requirements. (2) Prior to EP, cells are harvested by trypsinization, washed in PBS, counted and resuspended in EP buffer. (3) Recombinant protein diluted in EP buffer is added to cell slurries at desired concentrations (this stage is called EP slurry). (4) Cells are pulsed between 1 and 3-times to allow for efficient delivery of recombinant proteins. (5) Cells are tripsinised and then washed twice to remove non-incorporated proteins, and then plated on cover slips or culture flasks to allow for recovery. (6) After a recovery period, cells are suitable for analysis with a number of different read-outs and applications, including, amongst others, imaging, western blotting, immunoprecititaion (IP) and FACS analysis. (C) Following EP of CFP-BUBR11-571 and over-night recovery, cells were treated for 6 hr with nocodazole and then prepared for immunofluorescence analysis. Kinetochores were stained with the marker CREST and DNA with SiR-Hoechst-647. Insets represent magnifications of the boxed kinetochores. Scale bar\u00a0=\u00a05 \u00b5m. (D) CFP alone, CFP-BUBR11-571 and the BUB1-binding-deficient mutant CFP-BUBR11-571-\u0394Helix were electroporated under the same conditions used in C. Protein extracts generated from electroporated cells were subjected to western blotting analysis with the indicated antibodies. (E) CFP-BUBR11-571-\u0394Helix fails to localize to kinetochores. Kinetochores were stained with the marker CREST and DNA with SiR-Hoechst-647. Scale bar\u00a0=\u00a05 \u03bcm. (F) Quantification of KT levels for electroporated CFP proteins from cells shown in E. Each symbol represents a single cell. Yellow lines indicate median values\u00a0\u00b1\u00a0interquartile range. (G) SAC protein MAD2TAMRA electroporated into cells display proper localization to unattached kinetochores. Kinetochores were stained with the marker CREST and DNA with DAPI. Scale bar\u00a0=\u00a05 \u03bcm. Insets represent magnifications of the indicated KT.\u00a0(H) Simultaneous electroporation of CFP-BUBR11-571 and MAD2TAMRA results in proper localization to kinetochores of nocodazole-treated HeLa cells. Insets represent magnifications of the indicated kinetochore. Scale bar\u00a0=\u00a05 \u00b5m.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/48287/elife-48287-fig1-figsupp1-v3.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Quantification of EP-mediated protein uptake by flow cytometry across different cell lines. Median fluorescence intensities (MFI) determined by flow cytometry of EP-processed cells harboring Atto488-labeled \u03b1-synuclein (\u03b1SYN) plotted against \u03b1SYN input concentrations in the respective EP mixtures. Linear uptake efficiencies are evident for all cell lines despite cell-type specific differences in general uptake properties. MFI values were corrected for average cell sizes and corresponding volumes. Lines correspond to linear fits connecting individual measurement points. Error bars are SDM from four independent samples. (B) Quantification of EP-mediated protein uptake by fluorimetric analysis. Extracts from HeLa cells electroporated with mCherry and analyzed with a fluorimeter show that uptake is proportional to the input protein concentration. Fluorescence intensity of protein extracts generated from a known number of cells that were electroporated with different amounts of recombinant mCherry were quantified with a fluorimeter and plotted against an input titration curve. The values obtained were subtracted for the intensity values measured from a mock EP sample. Graph represents mean values\u00a0\u00b1\u00a0SD.\u00a0(C) Western blotting analysis of whole cell lysates to detect endogenous \u03b1SYN levels in A2780, HeLa, SK-N-SH, early- and late-passage SH-SY5Y and undifferentiated LUHMES cells. Defined concentrations of recombinant N-terminally acetylated \u03b1SYN serve as input control. Average intracellular concentrations are in the range of 0.05 to 0.5 \u00b5M, calculated based on experimentally determined cell volumes (Theillet et al., 2016). (D) By comparison to the endogenous levels determined in panel C, cells electroporated with 400 \u00b5M \u03b1SYN in the EP slurry harbor\u00a0~100 fold higher levels of the recombinant protein (see input concentrations for reference).\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/48287/elife-48287-fig1-figsupp2-v3.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A) Electroporation of \u03b1SYN in A2780 cells produces low levels of cell damage. Panels show anti-\u03b1SYN immunofluorescence detection in A2780 cells at different time-points following batch EP and recovery. DNA is shown in blue (DAPI), actin in green (phalloidin) and \u03b1SYN in red. Note that most cells harbor \u03b1SYN (high penetrance) and that intracellular protein levels are similar between cells (uniform delivery efficiency). 22 hr after EP, adherent cells regain their physiological cell morphologies, an indication that EP caused low cytotoxicity. Mock EP was carried out without recombinant \u03b1SYN in the EP mixture. (B) EP does not have major cytotoxic effects across different cell lines. Bright field analysis of neuronal (RCSN-3, B65, SK-N-SH) and non-neuronal (A2780, HeLa) cell lines electroporated with \u03b1-synuclein (\u03b1SYN) to inspect cell morphology and viability. (C) Viability of RPE, HEK293 and U2OS cells is sensitive to EP voltage. Cell lines were electroporated with recombinant CFP and then stained with Trypan blue to measure viability at 5 hr after EP. Settings used for the delivery were either 800V/2 \u00d7 25 msec pulses or 1000 V/2 \u00d7 35 msec pulses. (D) Western blotting analysis of whole cell lysates from HeLa cells electroporated with CFP-BUBR11-571 and with voltage settings as in panel C. (E) Effect of the number of EP pulses on cell viability. Cells electroporated with recombinant CFP and using an increasing number of EP pulses were stained with Trypan blue to measure viability at the indicated time points after EP. HeLa cells were subjected to 1000 V/35 msec pulses while RPE, HEK293 and U2OS to 800 V/25 msec pulses. Values indicated for the two pulses/5 hr time points are the same shown in panel C. (F) Correlation between number of EP pulses and the cellular intake of recombinant protein. Western blotting analysis of HeLa cells electroporated with recombinant CFP-BUBR11-571 using 1000 V and an increasing number of 35 msec pulses. Endog.\u00a0=\u00a0endogenous. (G) Effects of the EP buffers on cell viability. HeLa cells electroporated with CFP using the indicated buffers and settings of 1000 V/2 \u00d7 35 msec were analysed for viability with Trypan blues staining at 5 hr following EP. (H) Effect of different EP buffer on cellular intake of recombinant protein. Western blotting analysis of whole cell lysates from cells in G.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/48287/elife-48287-fig1-figsupp3-v3.jpg)\n\n**Figure 1\u2014figure supplement 3.:** Protein samples employed in this study were run on an acrylamide gel and imaged by coomassie staining or for the indicated fluorophore. Note: the gel representing fluorescent CFP-MIS12 was run with a sample that was not boiled (to preserve fluorescence) and this resulted in a faster migration.\n\n![Figure 1\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/48287/elife-48287-fig1-figsupp4-v3.jpg)\n\n**Figure 1\u2014figure supplement 4.:** (A) representative imaging field shows HeLa cells electroporated with either CFP-BUBR1 (A) or CFP-MIS12C (B) and, after recovery, treated with nocodazole for 4 hr. Insets in B represent magnification of the indicated cells. KTs were stained with the marker CREST. Scale bar\u00a0=\u00a05 \u03bcm. (C) Quantification of KT levels for electroporated CFP-MIS12C from cells in panel B. Individual cell numbers are indicated in the small inset. Cell phases were assigned based on cell morphology and size. Each symbol represents a single KT. Yellow lines indicate median.\n\n![Figure 1\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/48287/elife-48287-fig1-figsupp5-v3.jpg)\n\n**Figure 1\u2014figure supplement 5.:** (A) Schematic representation of the activation of the membrane-bound EGFP-TF3-KRAS FRET-sensor. Treatment with EGF results in a conformational change which results in a loss of FRET between the fluorescent moieties of the sensor and an increase in the donor fluorescence lifetime measured by FLIM-FRET live microscopy. (B) Membrane localization of EP-delivered EGFP-TF3-KRAS in serum-starved MDCK interphase cells. Scale bar\u00a0=\u00a05 \u03bcm. (C) Analysis of spatiotemporal dynamics of electroporated EGFP-TF3-KRAS signaling by live-cell FLIM-FRET imaging. Upon EGF stimulation, the conformational switch in intracellular EGFP-TF3-KRAS results in loss of FRET signal and a subsequent increase in the lifetime of the GFP-donor. Lifetime values for each pixel are shown color-coded. Scale bar\u00a0=\u00a05 \u03bcm. (D) Activity of electroporated EGFP-TF3-KRAS is qualitatively and quantitatively identical to the one obtained in EGFP-TF3-KRAS microinjection experiments (Voss et al., 2016). Graph shows single cell readouts of fluorescence lifetime profiles. Gray traces represent individual measurements while orange line represents the mean. Error bars are SDM. Scale bar\u00a0=\u00a05 \u03bcm.\n\nThe advantage of using kinetochores in this study is that they form small, discrete cellular structures with a very recognizable punctuate pattern and several markers are available to probe their native composition, thus making it very easy to assess correct localization of exogenously introduced variants. Therefore, thecorrect assembly of kinetochore complexes upon subunit delivery by EP can be inspected at different levels of structural and functional resolution (Musacchio and Desai, 2017). Here, we report the suitability of electroporation to deliver individual kinetochore proteins into different mammalian cell types and their correct assembly into native kinetochore complexes. We further show that electroporation can be used to transduce pre-assembled kinetochore components to functionally complement depleted KT subunits. Collectively, our results provide very encouraging evidence that EP can be used to deliver recombinant proteins of interest, even when chemically modified, into target cells for functional complementation in a non-invasive manner.\n\n## Results and discussion\n\n### Electroporation: an outline\n\nAs outlined in Figure 1B and as described in detail in the Methods section, intracellular protein delivery by EP is a simple procedure that does not require specialized handling skills or dedicated instrumental set-ups, making it easy to establish in any laboratory. Briefly, in preparation for EP, cells can be treated under various experimental regimes, for\u00a0example for cell cycle synchronization (Ciossani et al., 2018), before being harvested, washed, and resuspended in an electroporation buffer containing the diluted protein (the \u2018EP slurry\u2019). The EP slurry is subjected to multiple electric pulses that create reversible ruptures in the cell\u2019s membrane and allow intracellular protein delivery. Following EP, we subjected cells to mild trypsinization to remove non-internalized, membrane-associated proteins and then allowed cells to recover, typically between 16 and 18 hr, but earlier times are possible (e.g. 4 hr), before being prepared for the desired analysis, such as live imaging, immunofluorescence, immunoprecipitation or western blotting experiments. Using model recombinant protein like \u03b1-Synuclein (made fluorescent by labeling with the synthetic dye Atto488) or mCherry, which can reach very high concentrations, we determined that intracellular uptake scaled linearly with input concentrations irrespective of the manipulated cell types (Figure 1\u2014figure supplement 1A\u2013B). These results suggested that EP maybe broadly applicable to transduce defined amounts of recombinant proteins into cultured mammalian cells, with individual cells harboring uniform concentrations of exogenously delivered proteins (Figure 1\u2014figure supplement 1C\u2013D). Importantly, EP is efficient across multiple cell lines and different electroporation conditions, and treated cells usually showed limited damage or toxicity (Figure 1\u2014figure supplement 2A\u2013B). However, the post EP recovery is important to restore normal cell physiology and morphology and to allow for adhesion to be re-established (if required). The latter may require at least four hours. EP parameters used for delivery, such as composition of the EP buffer or settings of the EP pulse (voltage strength, duration, and number of repetitions) are specific for each different electroporation system and must be optimized accordingly. Because the electroporation systems used for this study is proprietary, some of the electroporation settings are not known (e.g EP buffer composition). A comparison of the effects of different parameters on electroporation efficiency is presented in Figure 1\u2014figure supplement 2C\u2013H.\n\nPreviously, we generated various recombinant versions of stable sub-complexes of the human kinetochore, and demonstrated that they could be used to reconstitute large parts of the kinetochore and of the spindle assembly checkpoint (SAC) in vitro (Huis In 't Veld et al., 2016; Faesen et al., 2017; Weir et al., 2016; Pesenti et al., 2018). This library of high-quality recombinant samples (Figure 1\u2014figure supplement 3) already extensively characterized in vitro represented an excellent resource to address the general suitability of EP for in vivo delivery and functional analysis. We initially tested this approach on BUBR1 (BUB1-related), a multi-domain protein that operates in the SAC. Recombinant BUBR11-571 (encompassing residues 1\u2013571 of the 1050-residue BUBR1 protein, which are sufficient for checkpoint function) (Faesen et al., 2017) fused to a cyan fluorescent protein (CFP) was introduced into HeLa cells at an EP slurry concentration of 10 \u03bcM. In mitotically arrested cells (by addition of the spindle poison nocodazole, a condition that activates the SAC), CFP-BUBR11-571 distinctly localized to kinetochores, as revealed by the typical punctuate staining and by co-localization with CREST, an established kinetochore marker (Figure 1C). We have shown previously that BUBR1 kinetochore recruitment in human cells requires dimerization with kinetochore-bound BUB1, a BUBR1 paralog, through segments that encompass a predicted helical domain in the two proteins (Overlack et al., 2015). In agreement with these previous observations, recombinant CFP-BUBR11-571-\u2206Helix, a deletion mutant of BUBR1 lacking the BUB1 binding helix (deletion of residues 432\u2013484) was unable to localize to kinetochores (Figure 1D\u2013F). These results demonstrated that EP delivery of functional CFP-BUBR11-571 resulted in kinetochore localization, whereas transduction of a KT binding-compromised mutant of BUBR1 did not. The efficiency of CFP-BUBR11-571 delivery was high and most cells displayed uniform levels of the recombinant protein (Figure 1\u2014figure supplement 4A). Thus, electroporation can deliver very similar amounts of recombinant protein into each cell. In the course of this study, this became to be recognized as a general feature of this approach, largely independently of the protein used.\n\nWe used the Sortase-ligation method (Popp et al., 2009) to fuse a fluorescent peptide modified with the dye tetra-methyl-rhodamine (TAMRA) to the C-terminus of MAD2, another SAC protein. The resulting MAD2TAMRA was delivered by EP in HeLa cells at an EP-slurry concentration of 5 \u03bcM. Like CFP-BUBR11-571, MAD2TAMRA was found to localize effectively at kinetochores of nocodazole-treated cells, as shown by co-localization with CREST (Figure 1G). Furthermore, we performed co-delivery of CFP-BUBR11-571 with MAD2TAMRA, and found both proteins at unattached KTs in nocodazole-arrested cells (Figure 1H). Thus, individual or multiple fluorophore-tagged components of the human KT are faithfully targeted to their respective binding sites after EP.\n\nBesides protein localization, we asked whether EP-delivery of fluorescently labeled samples can be exploited for spectroscopic applications such as FLIM-FRET microscopy (Bastiaens and Squire, 1999), to study the spatiotemporal dynamics of proteins in cells. To this end, we focused on KRAS/p21, a small, globular GTPase with important regulatory functions in many signaling pathways (Schmick et al., 2014). We studied KRAS signaling in live cells electroporated with GFP-tagged and Tide Fluor 3 (TF3)-labeled human KRAS (i.e. EGFP-TF3-KRAS, final size\u00a0~50 kDa), a conformational sensor for GTPase activity (COSGA) obtained by chemical labeling of recombinant protein (Voss et al., 2016) (Figure 1\u2014figure supplement 5A). Activation and conformational switching of EGFP-TF3-KRAS occurs upon epidermal growth factor (EGF) stimulation and causes the spatial separation of the fluorescence moieties and a concomitant loss of intramolecular FRET signal, which ultimately results in an increase of the donor fluorescence lifetime measured by FLIM-FRET microscopy (Voss et al., 2016). Upon EP-delivery, we found that EGFP-TF3-KRAS, but not EGFP, predominantly localize to the plasma membrane (Figure 1\u2014figure supplement 5B), with a pattern indistinguishable from endogenous, over-expressed, or microinjected KRAS (Voss et al., 2016; Schmick et al., 2014; Schmick et al., 2015). Following addition of EGF, we observed the predicted increase in the donor lifetime of EGFP-TF3-KRAS (Figure 1\u2014figure supplement 5C\u2013D). Importantly, our EP-based results were qualitatively and quantitatively identical to the ones that were observed in EGFP-TF3-KRAS microinjection experiments (Voss et al., 2016), demonstrating the suitability of EP for FRET-based assays in living cells as a valid alternative to protein delivery by microinjection.\n\n### Electroporated MIS12 complex targets kinetochores and functionally complements depletion of the endogenous complex\n\nThe experiments discussed in the previous section described the\u00a0delivery of single polypeptides. Next, we tested the suitability of EP for the\u00a0delivery of multi-subunit protein complexes. To this end, we started with the Mis12 complex (MIS12C, where \u2018C\u2019 stands for \u2018complex\u2019), an extremely stable four-subunit kinetochore assembly of the DSN1, NSL1, MIS12, and PMF1 subunits with a molecular mass of\u00a0~120 kDa. In previous studies, we demonstrated that the stability of the MIS12C requires co-expression of all four constituent subunits and reported the development of various co-expression vectors for its heterologous reconstitution in insect cells (Petrovic et al., 2016; Petrovic et al., 2014; Petrovic et al., 2010). Here, we generated a fluorescence version of MIS12C by fusing the coding sequence of cyan fluorescent protein (CFP) to that of the PMF1 subunit. We then co-expressed the subunits in insect cells and purified the resulting complex (CFP-MIS12C) to homogeneity (Figure 1\u2014figure supplement 3).\n\nWe electroporated CFP-MIS12C into cycling HeLa cells and monitored CFP-MIS12C levels by fluorescent microscopy. At an EP slurry concentration of 8 \u03bcM, CFP-MIS12C was clearly visible at kinetochores in the large majority of electroporated cells and with remarkably similar kinetochore levels within the same cell and between different cells (Figure 1\u2014figure supplement 4B and C). These findings further indicated that assembled CFP-MIS12C remained intact during the electroporation procedure and reached the cytoplasm in a kinetochore-binding competent, functional state.\n\nIn a more stringent test, we also asked if CFP-MIS12C retained its expected kinetochore function after electroporation. MIS12C is as an assembly hub for the kinetochore, being responsible for the recruitment of a subset of the microtubule-binding NDC80 complexes as well as of KNL1, a signaling platform for the SAC (Petrovic et al., 2010; Kiyomitsu et al., 2011) (Figure 1A). These functions make MIS12C necessary for timely chromosome congression and faithful cell division. To test the functionality of the recombinant CFP-MIS12 complex, we performed a complementation assay in HeLa cells depleted of endogenous MIS12 complex by the RNA interference (RNAi) methods using silencing RNAs (siRNAs) against multiple subunits, as previously described (Kim and Yu, 2015). Effective depletion of MIS12C subunits and uptake of fluorescent proteins was demonstrated by western blotting (Figure 2A). This is noteworthy, as it exposes a fundamental advantage of EP over another protein targeting technique such as microinjection, which is limited to a small number of target cells and therefore unsuitable to biochemical analyses. In agreement with previous reports, depletion of MIS12C compromised chromosome congression (Figure 2B\u2013C), a consequence of reduced kinetochore levels of NDC80 and KNL1 (Kim and Yu, 2015). As shown by live-cell microscopy, EP delivery of CFP-MIS12C into depleted cells, but not of a CFP control, rescued chromosome congression essentially to the levels observed in control cells, indicating that the recombinant complex is functionally active (Figure 2B\u2013C and Videos 1\u20134). Complete functional rescue of MIS12 activity appeared to require somewhat higher intracellular levels of recombinant MIS12 than those of the endogenous counterpart (Figure 2\u2014figure supplement 1). The reasons for this are unclear, but may include limited proteolysis of residues relevant for MIS12 function and localization, or, alternatively, a rate-limiting addition of important post-translational modifications.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/48287/elife-48287-fig2-v3.jpg)\n\n**Figure 2.:** (A) The indicated proteins, including CFP-labeled recombinant MIS12C, were electroporated in mCherry-H2B-expressing HeLa cells previously treated with siRNAs to deplete the endogenous MIS12C. Western blotting of cellular protein levels in extracts was performed and showed a depletion in MIS12 and PMF1 levels of 93,7% and 87,6% respectively.\u00a0(B) Frames collected at the indicated time points (min) of time-lapse live-cell fluorescence microscopy movies depict chromosome congression and segregation of cells from A. Two representative phenotypes observed in cells with depleted MIS12C that were concomitantly electroporated with CFP as control are shown. Green and red signal represent, respectively, CFP proteins and DNA. Scale bar\u00a0=\u00a05 \u00b5m. (C) Quantification of chromosome segregation timing and defects in cells from A-B. Each symbol represents a measure of a single cell mitotic duration until anaphase onset (based on DNA and cell morphology). Yellow lines indicate mean values\u00a0\u00b1\u00a0SD. (D) Electroporated CFP-MIS12C rescues SAC defects in H2B-mCherry HeLa cells depleted for endogenous MIS12C. Duration of mitosis (based on DNA and cell morphology) of individual cells treated as in A but imaged in the presence of nocodazole 0.3 \u03bcM. Yellow lines indicate mean values\u00a0\u00b1\u00a0SD.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/48287/elife-48287-fig2-figsupp1-v3.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Quantification of chromosome segregation timing in H2B-mCherry HeLa cells depleted for endogenous MIS12C and electroporated with decreasing concentrations of recombinant CFP-MIS12C in the EP-slurry.\u00a0Each symbol represents a measure of a single cell mitotic duration until anaphase onset (based on DNA and cell morphology). Yellow lines indicate mean values\u00a0\u00b1\u00a0SD. Values indicated for Control/CFP, siRNA/CFP and siRNA/CFP-MIS12C 8 \u03bcM are the same shown in Figure 2C. (B) Duration of mitosis (based on DNA and cell morphology) of H2B-mCherry HeLa cells treated as in A but imaged in the presence of nocodazole 0.3 \u03bcM. Yellow lines indicate mean values\u00a0\u00b1\u00a0SD. Values indicated for Control/CFP, siRNA/CFP and siRNA/CFP-MIS12C 8 \u03bcM are the same shown in Figure 2D. (C) Western blotting of MIS12 cellular levels in extracts from A-B.\n\n![Video 1.](https://cdn.elifesciences.org/articles/48287/elife-48287-video1.mp4.jpg)\n\n**Video 1.:** Images show GFP-signal in green and DNA signal in red.\n\n![Video 2.](https://cdn.elifesciences.org/articles/48287/elife-48287-video2.mp4.jpg)\n\n![Video 3.](https://cdn.elifesciences.org/articles/48287/elife-48287-video3.mp4.jpg)\n\n![Video 4.](https://cdn.elifesciences.org/articles/48287/elife-48287-video4.mp4.jpg)\n\nImproperly attached kinetochores trigger the spindle assembly checkpoint (SAC), causing a mitotic arrest that delays entry into anaphase (Musacchio, 2015). The checkpoint pathway exhausts its function only after all chromosomes have achieved bi-orientation on the mitotic spindle. Despite causing dramatic chromosome congression failures, depletion of endogenous MIS12C is hardly compatible with checkpoint function because cells lacking the MIS12C also fail to recruit KNL1, which is required for SAC signaling. Thus, MIS12C-depleted cells have a strongly weakened SAC and enter anaphase prematurely (Hara et al., 2018; Kim and Yu, 2015). To assess SAC function under our siRNA conditions, we treated cells with 0.3 \u03bcM nocodazole, a microtubule-depolymerizer, thus creating conditions that potently activate checkpoint signaling in control cells. We then measured, by live-cell video microscopy, the cells\u2019 ability to sustain a prolonged mitotic arrest. In agreement with the previous studies, cells depleted of MIS12C were unable to mount a strong mitotic arrest and underwent mitotic exit in the presence of multiple unattached or incompletely attached chromosomes, indicative of a checkpoint defect. Electroporated CFP was unable to restore the SAC response, while recombinant CFP-MIS12C restored mitotic duration to values similar to those observed in control cells, indicating a full rescue of SAC activity (Figure 2D). Collectively, these results indicate that electroporated recombinant MIS12C targeted the KTs as a functionally intact complex and that EP can be used for biological complementation assays in combination with siRNA-mediated knockdown routines.\n\n### EP of a protein complex with an exceptionally large hydrodynamic radius and its interaction with endogenous partners\n\nWith a long axis of approximately 20 nm (Petrovic et al., 2016; Petrovic et al., 2014) the MIS12C is a rather elongated molecule. Despite these features, intracellular delivery by EP was highly efficient and did not appear to be size limited. To further investigate possible limitations for EP-mediated delivery of biological assemblies with similar dimensions, we chose the four subunit NDC80C complex as our next target. With its dumbbell shape consisting of a coiled-coil shaft flanked by terminal globular domains, the four-subunit NDC80C complex reaches approximately\u00a0~60 nm in length (Huis In 't Veld et al., 2016; Wei et al., 2005). We were curious to assess if extreme elongation of NDC80C affected EP efficiency. As for the MIS12C, also the\u00a0~180 kDa NDC80C achieves stability through co-expression of its four subunits (NUF2, SPC24, SPC25, and NDC80) in insect cells (Petrovic et al., 2014; Wei et al., 2005; Figure 1A). After expression and purification of a GFP-tagged version of NDC80 from insect cells (Figure 1\u2014figure supplement 3), we electroporated GFP-NDC80 into HeLa cells at a final concentration of 5 \u00b5M. 12 hr after electroporation, cells were imaged by live cell video-microscopy. This revealed kinetochore localization of the recombinant GFP-NDC80 complex (Figure 3A), indicating that the considerable length of the complex is compatible with efficient delivery.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/48287/elife-48287-fig3-v3.jpg)\n\n**Figure 3.:** (A) GFP-labeled recombinant NDC80CWT binds to kinetochores and its localization is compatible with normal mitotic progression. Panels show timepoints of time-lapse movies for asynchronously growing HeLa cells electroporated with recombinant GFP proteins and imaged live every 10 min. DNA was stained with SiR-Hoechst-647 and is shown in red. Scale bar\u00a0=\u00a05 \u00b5m. (B) Quantification of time periods until anaphase onset for each of the conditions in panel A. Each symbol represents a single cell. Yellow lines indicate mean values\u00a0\u00b1\u00a0SD. (C) Additional human cell lines were electroporated with GFP-NDC80C. RPE1 cells are non-transformed human retinal pigmented epithelium cells. HEK293 cells are human epithelium kidney cells. U2OS cells are human osteosarcoma cells. Following recovery and staining with SiR-Hoechst-647 DNA dye, cells were imaged live and display a clearly visible kinetochore localization of the delivered GFP-NDC80C complex. Scale bar\u00a0=\u00a05 \u00b5m. (D) Immunoprecipitation analysis of protein extracts from cells treated as in A shows that EP-delivered GFP-NDC80CWT establishes normal interactions with its endogenous KT partners. Western blotting panels show immunoprecipitates performed with \u03b1-GFP beads and probed with the indicated antibodies. (E) An error correction assay for the EP-delivery of a GFP-NDC80C9A mutant shows a dominant-negative effect on the correction of improper KT-MT attachments. Panels display representative images of electroporated HeLa cells treated with STLC to accumulate erroneous synthelic KT-MT attachments, followed by STLC washout, release into MG132 (proteasome inhibitor that prevents mitotic exit), and fixation 150 min after STLC-release. Inability to correct erroneous attachments results in uncongressed chromosomes. Control cells were electroporated with GFP alone. Numbers represent the percentage of cells with uncongressed chromosomes for each condition. KTs were labeled with anti-CREST immunostaining, microtubules (MT) with an anti-TUBULIN antibody and DNA with DAPI. Insets represent magnifications of the indicated KT. Scale bar\u00a0=\u00a05 \u00b5m.\n\nManipulated HeLa cells carrying recombinant NDC80C-GFP in addition to endogenous NDC80C displayed no alterations in cell cycle progression and proceeded through the different stages of mitosis without detectable changes when compared to control cells (Figure 3A\u2013B and Videos 5\u20139). Thus, delivering exogenous GFP-NDC80C does not cause obvious cell cycle alterations or cytotoxicity. We reached similar conclusions when we delivered GFP-NDC80C into human RPE, HEK293 and U2OS cells (Figure 3C).\n\n![Video 5.](https://cdn.elifesciences.org/articles/48287/elife-48287-video5.mp4.jpg)\n\n**Video 5.:** Fluorescence time-lapse images show GFP signal (left panel), DNA signal (central panel) and a merge (right panel).\n\n![Video 6.](https://cdn.elifesciences.org/articles/48287/elife-48287-video6.mp4.jpg)\n\n![Video 7.](https://cdn.elifesciences.org/articles/48287/elife-48287-video7.mp4.jpg)\n\n**Video 7.:** Images show GFP-signal in green and DNA signal in red.\n\n![Video 8.](https://cdn.elifesciences.org/articles/48287/elife-48287-video8.mp4.jpg)\n\n![Video 9.](https://cdn.elifesciences.org/articles/48287/elife-48287-video9.mp4.jpg)\n\nTo test whether recombinant GFP-NDC80C- complexes establish their expected physical interactions after EP delivery, we performed GFP-immunoprecipitation (GFP-IP) assays on protein extracts generated from mitotic HeLa cells previously electroporated with GFP-NDC80C. Western blotting demonstrated that MIS12 and BUB1 were present in the NDC80C-GFP precipitates, but not in the precipitates of GFP (Figure 3D). Thus, the electroporated GFP-NDC80C establishes physiologic interactions with its endogenous binding partners, demonstrating the versatility of EP as a technique to probe protein interactions in living cells both through imaging and through biochemistry.\n\n### An NDC80C mutant triggers a dominant-negative chromosome alignment defect\n\nChromosome bi-orientation implies that the sister kinetochores attach to microtubules emanating from opposite spindle poles. Incorrect attachments that occur during mitosis are sensed by an error correction mechanism that, by regulating the phosphorylation state of the unstructured N-terminal region of the NDC80 subunit, causes the destabilization of incorrect attachment and the formation of new, correct ones (Monda and Cheeseman, 2018). A previously described NDC80 mutant (9A) carrying nine alanine mutations at the phosphorylation sites in the protein\u2019s N-terminus establishes hyper-stable KT-MT attachments that cannot be corrected, resulting in frequent chromosome congression errors (Sundin et al., 2011; Etemad et al., 2015; Tauchman et al., 2015). We asked if a GFP-NDC80C9A mutant electroporated in HeLa cells had dominant-negative effects in an established biorientation and error correction assay (Lampson et al., 2004). HeLa cells were allowed to enter mitosis in presence of STLC, an inhibitor of the Eg5 kinesin (Skoufias et al., 2006) whose activity is crucially required for centrosome separation and spindle bipolarization, resulting in the accumulation of monopolar spindles in which sister kinetochores frequently attach to the same microtubule organizing center (MTOC, the centrosome in this case) in a condition known as syntelic attachment. Upon washout of STLC, Eg5 reactivation, and spindle bipolarization, a functional error correction pathway is required to resolve the syntelic attachments and achieve correct metaphase alignment (Lampson et al., 2004). In this setup, control cells electroporated with GFP or GFP-NDC80CWT corrected erroneous attachments and aligned their chromosomes properly at the metaphase plate (Figure 3E). In contrast, cells electroporated with the GFP-NDC80C9A mutant were impaired in their correction pathway, and accumulated misaligned chromosomes with high frequency. Based on these findings, we concluded that EP-delivered GFP-NDC80C9A exerted a dominant-negative effect over endogenous NDC80C in its ability to correct and repair chromosome misalignments in response to STLC treatment.\n\n### In vitro farnesylation allows spindly localization when Farnesyl Transferase is inhibited\n\nSpindly is an adaptor protein that promotes the interaction of the minus-end-directed motor Dynein with its processivity factor Dynactin (Griffis et al., 2007; Gassmann et al., 2008). Spindly also interacts directly with the ROD-Zwilch-ZW10 (RZZ) complex, the main constituent of the so-called kinetochore corona, a crescent-shaped structure that assembles on kinetochores in early prometaphase to promote microtubule capture (Magidson et al., 2015) (Figure 1A). Kinetochore localization of Spindly critically depends on its ability to interact with the RZZ complex (Holland et al., 2015; Moudgil et al., 2015). The latter, in turn, requires the irreversible post-translational isoprenylation of Spindly with a farnesyl moiety on a cysteine residue near the Spindly C-terminus (Holland et al., 2015; Moudgil et al., 2015; Mosalaganti et al., 2017). Farnesylation is carried out by the enzyme farnesyl-transferase (FT), which, in addition to Spindly, also targets several members of a family of Ras-like small GTP binding proteins, including Ras itself (Appels et al., 2005). Potent FT inhibitors have been described, and previous studies demonstrated that the localization of Spindly to kinetochores is prevented when FT is inhibited (Holland et al., 2015; Moudgil et al., 2015).\n\nBecause farnesylation of Spindly has been reconstituted in vitro with purified components (Mosalaganti et al., 2017), we reasoned that we could exploit this reaction to promote kinetochore localization of recombinant Spindly in cells experiencing a long-term blockade of FT activity. Two versions of HsSpindly that were N-terminally fused to GFP or mCherry (molecular mass\u00a0~95 kDa) were expressed in insect cells and purified to homogeneity (Figure 1\u2014figure supplement 3). Our previous mass spectrometry analysis demonstrated that only trace farnesylation of Spindly takes place in insect cells (Mosalaganti et al., 2017). When we EP-delivered fluorescent recombinant mCherry-Spindly into HeLa cells, we detected a fluorescent signal at the periphery of kinetochores that was comparable to the localization described for endogenous Spindly (Figure 4A\u2013B) (Holland et al., 2015), or of Spindly introduced by microinjection (unpublished observation). mCherry-SpindlyC602A, a mutant that cannot be farnesylated, failed to show any KT localization upon EP (Figure 4A\u2013B). This indicated that wild type mCherry-Spindly becomes farnesylated after intracellular delivery. To further substantiate this, we treated cells with FTI-227, a selective farnesyl-transferase inhibitor (Appels et al., 2005). In the\u00a0presence of FTI-227, localization of recombinant mCherry-Spindly or GFP-Spindly was greatly reduced (Figure 4B\u2013C), confirming that FT activity is required for Spindly localization.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/48287/elife-48287-fig4-v3.jpg)\n\n**Figure 4.:** (A) Kinetochore localization of unmodified recombinant Spindly depends on cellular farnesylation. Panels show representative images of cells transduced with unfarnesylated mCherry-Spindly in nocodazole-treated HeLa cells. Mutation of Cys602 to alanine prevents farnesylation upon EP and reduces KT levels of the delivered protein. Kinetochores were stained with CREST antibodies and DNA with DAPI. Controls cells were electroporated with mCherry. Insets represent magnifications of the indicated kinetochores. Scale bar\u00a0=\u00a05 \u00b5m. (B) Quantification of KT levels for electroporated Spindly from cells in A and C. Each symbol represents a single cell. Yellow lines indicate mean values\u00a0\u00b1\u00a0SD. (C) In vitro farnesylation of mCherry-Spindly before EP bypasses the need of cellular farnesylation to achieve kinetochore localization. Cells treated with the farnesyl-transferase inhibitor FTI-277 were electroporated with either GFP, GFP-Spindly, mCherry, mCherry-Spindly, or in vitro pre-farnesylated mCherry-Spindly (mCherry-SpindlyF) and then processed for immunofluorescence analysis. Kinetochores were stained for CREST and DNA with DAPI. Insets represent magnifications of the indicated KT. FP\u00a0=\u00a0Fluorescent protein. Scale bar\u00a0=\u00a05 \u00b5m.\n\nWe therefore asked if in vitro farnesylation by FT rescued the localization of Spindly in cells treated with FTI-227. mCherry-Spindly was farnesylated in vitro with recombinant farnesyltransferase (FT) and farnesyl-pyrophosphate as a substrate, as described previously (Mosalaganti et al., 2017). The resulting farnesylated mCherry-Spindly (mCherry-SpindlyF) and untreated GFP-Spindly were co-electroporated at the same EP slurry concentration (10 \u00b5M) in HeLa cells that had been treated with FTI-227 for the previous 24 hr. Remarkably, mCherry-SpindlyF, but not GFP-Spindly, successfully targeted kinetochores, showing that the complementation of FT activity in vitro had bypassed the blockade of FT activity in cells by FTI-227. Although we do not provide formal proof, the persistent treatment with FT inhibitors in this experiment suggests that SpindlyF may be the only residual pervasively farnesylated protein in the target cells. Together, these findings substantiated the notion that pre-farnesylation of recombinant Spindly bypassed the need for endogenous farnesyl-transferase activity for proper kinetochore localization in HeLa cells.\n\n### Conclusions\n\nThe modification of biological macromolecules through the introduction of new functionalities has progressed at a tremendous pace in recent years, enriching the palette of tools for biological investigation with a wide spectrum of functionalities. For instance, genetic code expansion, an approach that allows to introduce chemical functionalities into proteins, ranging from synthetic, photostable fluorescent dyes with high quantum yields to reactive groups (e.g. UV-activated cross-linkers and click chemistry handles), is undergoing an explosive development (Davis and Chin, 2012; Niki\u0107 and Lemke, 2015). With rapid growth of chemical and synthetic biology, the demand for robust methods to deliver modified synthetic or semi-synthetic macromolecules into cells is growing (Lienert et al., 2014).\n\nWhile electroporation has been long recognized for its potential as a delivery approach, questions have been raised regarding the degree of its invasiveness and damage inferred on cellular structures, most notably membranes (Torchilin, 2008). Here, we have assessed the suitability of batch EP for delivering recombinant proteins into living mammalian cells for various applications in cell biology. In comparison to previous studies that focused on cytosolic proteins devoid of specific localization, our focus was on kinetochores, which are small, discrete subcellular structures. This was crucial, because it enabled a detailed assessment of the effective degree of functional complementation of the electroporated samples. Our results identify EP as a rapid, efficient, and semi-quantitative technique that enables the delivery into various cultured mammalian cell lines of proteins of variable mass and hydrodynamic radius, including the highly elongated NDC80C. Importantly, we provide clear evidence that the delivered proteins remain largely structurally and functionally intact after delivery, as witnessed by their correct kinetochore localization and, where applicable, ability to complement siRNA-based depletion, dominant negative effects, and immunoprecipitation with endogenous interacting partners. Thus, in addition to its ease of application, EP is very attractive because it allows delivery in sufficiently large cohorts of cells, and is therefore compatible with cell biochemistry, as clearly shown here.\n\nWe envision EP to be generally compatible with many macromolecular interaction approaches, from mass spectrometry to immunoprecipitation. If combined with suitable chemical modifications of the probes, for instance by introduction of acutely activatable crosslinking groups, EP may become a method of choice for the identification of elusive binding partners (for instance, low affinity substrates of enzymes) with high spatial and temporal resolution. Here, we have demonstrated how the introduction of a farnesyl chain in vitro rescued the kinetochore localization of Spindly in cells treated with a farnesyl transferase inhibitor. In the future, this approach may be extended to other lipid modifications, and may allow monitoring the behavior of only one or a few modified proteins at the time. Another obvious advantage of in vitro manipulations of macromolecules is that it allows precision labeling with small fluorescent dyes, potentially bypassing limits associated with tagging target proteins with bulky genetically encoded fluorescent proteins. In this context, EP would expand the toolbox of reagents suitable for live-cell spectroscopic applications such as FLIM-FRET microscopy or FRAP analysis. In summary, we envision that EP has the potential to become a method of choice for delivery of synthetic or semi-synthetic proteins into the cellular environment.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Cell line (Human)</td>\n      <td>HeLa</td>\n      <td>Imaging Facility, IFOM-IEO Campus, Milan, Italy</td>\n      <td></td>\n      <td>De Antoni et al., 2012. DOI: 10.1083/jcb.201205119</td>\n    </tr>\n    <tr>\n      <td>Cell line (Human)</td>\n      <td>mCherry-H2B HeLa</td>\n      <td>Imaging Facility, IFOM-IEO Campus, Milan, Italy</td>\n      <td></td>\n      <td>De Antoni et al., 2012. DOI: 10.1083/jcb.201205119</td>\n    </tr>\n    <tr>\n      <td>Cell line (Human)</td>\n      <td>RPE-Tir1</td>\n      <td>Kindly provided by the laboratory of Prof. Don Cleveland</td>\n      <td></td>\n      <td>Holland et al., 2012.DOI: 10.1073/pnas.1216880109</td>\n    </tr>\n    <tr>\n      <td>Cell line (Human)</td>\n      <td>U2OS</td>\n      <td>Kindly provided by the laboratory of Dr. Alex Bird</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cell line (Human)</td>\n      <td>HEK293</td>\n      <td>Kindly provided by the laboratory of Dr. Alex Bird</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cell line (Canine)</td>\n      <td>MDCK</td>\n      <td>Kindly provided by the laboratory of Dr. Yao-Wen Wu</td>\n      <td></td>\n      <td>Voss et al., 2016. DOI: 10.1073/pnas.1613999113</td>\n    </tr>\n    <tr>\n      <td>Cell line (Human)</td>\n      <td>A2780</td>\n      <td>Kindly provided by the laboratory of Dr. Philip Selenko</td>\n      <td></td>\n      <td>Theillet et al., 2016. DOI: 10.1038/nature16531</td>\n    </tr>\n    <tr>\n      <td>Cell line (Human)</td>\n      <td>RCSN3</td>\n      <td>Kindly provided by the laboratory of Dr. Philip Selenko</td>\n      <td></td>\n      <td>Theillet et al., 2016. DOI: 10.1038/nature16531</td>\n    </tr>\n    <tr>\n      <td>Cell line (Human)</td>\n      <td>B65</td>\n      <td>Kindly provided by the laboratory of Dr. Philip Selenko</td>\n      <td></td>\n      <td>Theillet et al., 2016. DOI: 10.1038/nature16531</td>\n    </tr>\n    <tr>\n      <td>Cell line (Human)</td>\n      <td>SKNSH</td>\n      <td>Kindly provided by the laboratory of Dr. Philip Selenko</td>\n      <td></td>\n      <td>Theillet et al., 2016. DOI: 10.1038/nature16531</td>\n    </tr>\n    <tr>\n      <td>Cell line (Human)</td>\n      <td>SHSY5Y</td>\n      <td>Kindly provided by the laboratory of Dr. Philip Selenko</td>\n      <td></td>\n      <td>Theillet et al., 2016. DOI: 10.1038/nature16531</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pBIG1 with NDC80C-9A (NDC80C9A-GFP and SPC25-HIS)</td>\n      <td>This paper</td>\n      <td></td>\n      <td>See Materials and methods</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pBIG1 with CFP-MIS12C (CFP-PMF1 and Dsn1-HIS)</td>\n      <td>This paper</td>\n      <td></td>\n      <td>See Materials and methods</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pFl- BUBR11-571(\u2206432\u2013484) (HIS-BUBR1mTurquoise2)</td>\n      <td>This paper</td>\n      <td></td>\n      <td>See Materials and methods</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>siRNA for Dsn1</td>\n      <td>Sigma-Aldrich</td>\n      <td></td>\n      <td>GUCUAUCAGUGUCGAUUUA</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>siRNA for Nsl1</td>\n      <td>Sigma-Aldrich</td>\n      <td></td>\n      <td>CAUGAGCUCUUUCUGUUUA</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>siRNA for Mis12</td>\n      <td>Sigma-Aldrich</td>\n      <td></td>\n      <td>GACGUUGACUUUCUUUGAU</td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>MAD2-TAMRA</td>\n      <td>Musacchio laboratory</td>\n      <td></td>\n      <td>Faesen et al., 2017. DOI: 10.1038/nature21384</td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>CFP-BUBR11-571</td>\n      <td>Musacchio laboratory</td>\n      <td></td>\n      <td>Faesen et al., 2017. DOI: 10.1038/nature21384</td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>NDC80C-GFP</td>\n      <td>Musacchio laboratory</td>\n      <td></td>\n      <td>Weir et al., 2016. DOI: 10.1038/nature19333</td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>SPINDLY-GFP/mCherry</td>\n      <td>Musacchio laboratory</td>\n      <td></td>\n      <td>Mosalaganti et al., 2017. DOI: 10.1083/jcb.201611060</td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>EGFP-K-RAS D30C Tf3</td>\n      <td>Kindly provided by the Wu's laboratory</td>\n      <td></td>\n      <td>Voss et al., 2016. DOI: 10.1073/pnas.1613999113</td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>\u03b1-Synuclein</td>\n      <td>Kindly provided by the Selenko's Laboratory</td>\n      <td></td>\n      <td>Theillet et al., 2016. DOI: 10.1038/nature16531</td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>NEON Transfection System</td>\n      <td>Thermo Fisher</td>\n      <td>MPK5000S</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>NEON Transfection 100 \u00b5l Kit</td>\n      <td>Thermo Fisher</td>\n      <td>MPK10025</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>Nucleofector Device</td>\n      <td>Lonza</td>\n      <td>AAB-1001</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>SiR-DNA kit</td>\n      <td>SphiroChrome</td>\n      <td>SC007</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Imaris 9</td>\n      <td>Bitplane</td>\n      <td></td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### Electroporation of living cells\n\nElectroporation (EP) was performed using either the Neon Transfection System Kit (Thermo Fisher) or the Amaxa Nucleofector I system (Lonza). For EPs with Neon Transfection System, cells were harvested by trypsinisation, washed with PBS, and resuspended in the electroporation Buffer R (Thermo Fisher) to a final volume of 90 \u00b5l. Between 2 and 3 million cells per electroporation were used in this study. Protein samples were diluted 1:1 in buffer R and then a volume of 30 \u00b5l of this mix was added to the cell suspension (the EP slurry). Volumes and protein-buffer ratios may be adjusted according to the purpose of the experiment and depending on protein solubility. Final protein concentrations in the respective EP slurry varied between 5 and 200 \u00b5M (in a final volume of 110 \u03bcL). The EP slurry was tipically loaded into a 100 \u00b5l Neon Pipette Tip (Thermo Fisher) and electroporated with two consecutive pulses at 1000V and for durations of 35 msec (with the exception of the experiments in U2OS, RPE and HEK293 cells, which were electroporated with 2 \u00d7 25 msec pulses at 800V). Following EP, the slurry was added to 50 ml of pre-warmed PBS, pelleted by a 0.5xg centrifugation and trypsinised for 5 to 7 min to remove non-internalized extracellular protein. Following one further wash in PBS and centrifugation, the cell pellet was re-suspended in complete imaging medium (without antibiotics) and transferred to a cell-imaging plate (Ibidi). Cells were returned to the incubator and allowed to recover for a minimum of 4 hr. After recovery, cells were either analyzed by fluorescence microscopy imaging or processed to generate protein extracts to be used for either immunoprecipitation analysis or western blotting. EP with the Amaxa Nucleofecto I system was performed according to the reported protocol (Theillet et al., 2016).\n\nEP conditions described above gave satisfactory results for all the cell types and proteins tested. Only a small fraction of the tested recombinant proteins proved unsuitable for EP delivery. This was due to formation of major intracellular aggregates or because the protein samples failed to localize correctly within the cell. However, for maximal performance, we advise to optimize initially the EP pulse\u2019s parameters (voltage strength, duration, and number of repetitions), the EP buffer composition, and the concentration of recombinant protein in the EP slurry (Figure 1\u2014figure supplement 2C\u2013H and Figure 2\u2014figure supplement 1). Cell-specific and protein-specific optimization of such parameter should be always carried out in order to achieve the best trade-off between cell viability and efficient protein delivery. Protein specific optimization of EP voltage is particularly important for those cell lines, such as RPE1, U2OS and HEK293, whose viability is more sensitive to high EP voltages. The following are some of the important factors to consider during optimization of protein delivery: 1) In our work, we invariably used protein samples of great purity and homogeneity (high monodispersity and solubility). Although we did not systematically analyze the relationship between protein homogeneity and efficiency of EP, we suspect that protein sample quality is an important factor. 2) Centrifugation of protein sample prior to EP is strongly recommended. 3) During the recovery phase, we recommend avoiding the use of selection antibiotics in the media as they increase cell mortality. 4) Once resuspended in EP buffer, cells should be electroporated and washed as fast as possible to reduce cytotoxicity. 5) If required, including additional trypsinization and washing steps following EP may improve the removal of persistent extracellular protein aggregates generated during EP.\n\n### Production of recombinant proteins\n\nAll recombinant proteins used in this study were of human origin. For expression and purification of recombinant proteins, synthetic codon-optimized DNA encoding human MAD2, BUBR1, SPINDLY, NDC80C and MIS12C subunits were used. All proteins used in this study were full length, except mTurquoise2-BUBR11-571 (which we refer to as CFP-BUBR11-571) and mTurquoise2-BUBR11-571(\u2206432\u2013484) (which we refer to as CFP-BUBR11-571-\u2206Helix). Fluorescent MAD2TAMRA, CFP-BUBR11-571, mCherry/GFP-Spindly constructs, NDC80CWT-GFP complex and EGFP-K-RAS D30C Tf3 were expressed, purified, and labeled as previously described (Faesen et al., 2017; Mosalaganti et al., 2017; Weir et al., 2016; Voss et al., 2016). Recombinant NDC80C9A-GFP complex was generated by fusing a C-terminal GFP and a His6-tag to SPC25. Construct for insect cell expression exploited the MultiBac baculovirus expression system (Bieniossek et al., 2012). A Bacmid was then produced from EMBacY cells and subsequently used to transfect Sf9 cells and produce baculovirus. Baculovirus was amplified through three rounds of amplification and used to infect Tnao38 cells. Cells infected with virus were cultured for 72 hr before harvesting. Cell pellets were resuspended in buffer A (50 mM HEPES pH 8, 200 mM NaCl, 20 mM Imidazole, 5% glycerol, 2 mM TCEP) supplemented with protease-inhibitor mix (Serva) and 0.2% Triton, lysed by sonication and cleared by centrifugation. NDC80C9A-GFP was then eluted in buffer B (50 mM HEPES pH 8, 200 mM NaCl, 300 mM Imidazole, 5% glycerol, 2 mM TCEP) and the eluate was diluted six times in volume using ion exchange buffer C (50 mM HEPES pH 8, 25 mM NaCl, 5% glycerol, 2 mM TCEP, 1 mM EDTA) and applied to a 6 mL Resource Q anion-exchange column pre-equilibrated in the same buffer. Elution of bound protein was achieved by a linear gradient (25\u2013400 mM NaCl in 25 column volumes). Relevant fractions were concentrated in 10 kDa molecular mass cut-off Amicon concentrators and applied to a Superose 6 16/70 column equilibrated in size-exclusion chromatography buffer D (50 mM HEPES pH 8, 250 mM NaCl, 5% glycerol, 2 mM TCEP). Peak fractions containing the NDC80C9A-GFP complex were collected and further concentrated in a 10 kDa cut-off Amicon concentrator before being flash frozen in liquid N2 and stored at \u221280\u00b0C. Recombinant CFP-MIS12 complex was generated by fusing N-terminal CFP to PMF1. Baculoviral transfer vectors encoding CFP-Mis12C expression were generated using biGBac platform (Weissmann et al., 2016). Baculoviruses were generated in Sf9 cells, and expression of CFP-tagged MIS12C was carried out in Tnao38 cells for 72 h-96h, at 27\u00b0C. CFP-Mis12C was purified by a three-step protocol, as described previously for the non-fluorescent version (Petrovic et al., 2016): i) affinity purification of filtered supernatant with 5 ml HisTrap FF column (GE Healthcare) and step elution with 300 mM imidazole; ii) anion-exchange of the dialyzed eluate with 6 ml Resource Q column, elution with linear NaCl gradient; and iii) final polishing step via size-exclusion on a Superdex 200 10/300 column (GE Healthcare) equilibrated in 20 mM Tris-HCl (pH 8.0), 0.15 M NaCl, and 1 mM TCEP. Relevant fractions were pooled, concentrated, flash-frozen in liquid nitrogen and stored at \u221280\u00b0C. Recombinant CFP-BUBR11-571-\u2206Helix was expressed in Tnao38 cells that were then lysed in buffer A (25 mM HEPES (pH 7.5), 300 mM NaCl, 10% glycerol, 2 mM TCEP, 1 mM PMSF). Soluble lysates were passed over a 5 ml Ni-NTA column and, after washing with 20 column volumes buffer A, the proteins were eluted by adding 300 mM imidazole to buffer A. Proteins were subsequently gel-filtered on a Superdex S200 16/60 column equilibrated against buffer B (10 mM HEPES (pH 7.5), 150 mM NaCl, 5% glycerol, 2 mM TCEP). Fractions containing purified protein were concentrated, flash-frozen and stored at \u221280\u00b0C. Recombinant N-terminally acetylated human \u03b1-SYNUCLEIN (\u03b1SYN) was purified from E. coli as reported (Theillet et al., 2016). In vitro pre-farnesylation of mCherry-Spindly (30 \u00b5M) was achieved by incubation with recombinant Farnesyltransferase (10 \u03bcM) and farnesylpyrophosphate (90 \u00b5M) for 5\u20136 hr at 20\u00b0C, followed by gel filtration (S200) purification to remove the Farnesyltransferase.\n\n### Cell culture, siRNA transfection, immunoprecipitation, immunoblotting, analysis of intracellular protein levels and viability assay\n\nThe following cell lines were cultured in DMEM (PAN Biotech) supplemented with 10% FBS (Clontech), penicillin, streptomycin (GIBCO) and 2 mM L-glutamine (PAN Biotech): HeLa, mCherry-H2B HeLa, U2OS, MDCK, HEK293, and RPE-Tir1. The following cell lines were grown in the following media (supplemented as above): Human A2780 and B65 in RPMI 1640, SK-N-SH and RCSN3 DMEM-Ham\u2019s F-12 and SH-SY5Y in DMEM. Cells were grown at 37\u00b0C in the presence of 5% CO2. All experiments requiring live imaging were performed in complemented CO2-independent medium (GIBCO) at 37\u00b0C. Cell lines were not further authenticated. Cells used in this study are regularly checked for mycoplasma contamination and test negative. Unless differently indicated, the microtubule-depolimerising drug nocodazole was used at 3.3 \u03bcM (Sigma). Endogenous farnseyltransferase inhibition was achieved at 10 \u03bcM of FTI-277 (Sigma). Cellular RAS activity was stimulated with 50 ng/ml EGF (Sigma). Were indicated, the DNA dye SiR-Hoechst-647 Dye (Spirochrome) at a concentration of 0.5 \u00b5M was added to the medium 1 hr before live imaging. Depletion of endogenous MIS12C was achieved by RNAiMax (Invitrogen) transfection of 3 combined siRNA duplexes used at 10 nM each for 48 hr (RNA oligos sequence for Dsn1 is GUCUAUCAGUGUCGAUUUA; for Nsl1 is CAUGAGCUCUUUCUGUUUA; Sigma-Aldrich) (RNA oligos sequence for MIS12 is for GACGUUGACUUUCUUUGAU; GE Healthcare Dharmacon). To generate mitotic populations for immunoprecipitation experiments after EP, cells were treated with nocodazole for 16 hr. Mitotic cells were then harvested by shake off and resuspended in lysis buffer [150 mM KCl, 75 mM Hepes, pH 7.5, 1.5 mM EGTA, 1.5 mM MgCl2, 10% glycerol, and 0.075 % NP-40 supplemented with protease inhibitor cocktail (Serva) and PhosSTOP phosphatase inhibitors (Roche)]. A total of 4 mg of protein extract per sample was then incubated with GFP-Traps beads (ChromoTek; 3 \u03bcl/mg of extract) for 3 hr at 4\u00b0C. Immunoprecipitates were washed with lysis buffer and resuspended in sample buffer, boiled and analyzed by SDS- PAGE and Western blotting using 4\u201312% gradient gels (NuPAGE). The following antibodies were used for the western blot analysis in this study: anti-Bub1 (rabbit polyclonal; Abcam9000; 1:5000), anti-Hec1 (human Ndc80; mouse clone 9G3.23; Gene- Tex, Inc; 1:250), anti-Mis12 (in house made mouse monoclonal antibody; clone QA21; 1:1000), anti-GFP (in house made rabbit polyclonal antibody; 1:1,000\u20134,000) anti-Vinculin (mouse monoclonal; clone hVIN-1; Sigma-Aldrich; 1:10000), anti PMF1/NNF1 (in house made mouse affinity purified monoclonal; clone RH25-1-54, 1:1000) and anti-Tubulin (mouse monoclonal, Sigma-Aldrich; 1:10000). Quantification of protein levels from western blots was performed with the following formula: [(LPoIsiRNA-PoIBgr)/(LVincsiRNA-VincBgr)]/[(LPoICtrl-PoIBgr)/(LVincCtrl-VincBgr)]. LPoIsiRNA\u00a0=\u00a0levels of the protein of interest for the siRNA lane; PoIBgr\u00a0=\u00a0background signal for the protein of interest; LVincsiRNA\u00a0=\u00a0levels of Vinculin for the siRNA lane; VincBgr\u00a0=\u00a0background signal for Vinculin; LPoICtrl\u00a0=\u00a0levels of the protein of interest for the Control lane; PoIBgr\u00a0=\u00a0background signal for the protein of interest; LVincCtrl\u00a0=\u00a0levels of Vinculin for the Control lane; VincBgr\u00a0=\u00a0background signal for Vinculin. Fluorimetric analysis was performed using Greiner flat-bottom plates and a Clariostar microplate reader (monochromator excitation at 587\u00a0\u00b1\u00a010 nm, emission 610\u00a0\u00b1\u00a010 nM). Fluorescence intensity from protein extracts derived from a known number of electroporated cells were measured and plotted against a calibration curve generated with defined concentrations of recombinant mCherry. Bar graphs show average intracellular concentrations and SD for two independent experiments in which every concentration was analysed in duplicate. For viability assays, the percentage of viable cells was measured by Trypan Blue staining followed by automatic counting of viable cells using the Countess automated cell counter (Thermo Fisher). Each sample was counted twice and values showed in figures represents the average of these counts. For the viability assay comparing different EP buffers, cells and protein were resuspended in the following buffers: 1) Buffer R, provided in the commercial EP kit from Thermo Fisher; 2) PBS, 5% Glycerol, 1 mM MgCl2, 2 mM TCEP; 3) 50 mM Tris pH 7.5, 5% Glycerol, 125 mM NaCl, 1 mM MgCl2, 2 mM TCEP; 4) 25 mM HEPES pH 7.5, 5% Glycerol, 125 mM NaCl, 1 mM MgCl2, 2 mM TCEP.\n\n### \u03b1-SYNUCLEIN detection and flow cytometry\n\nFor immunofluorescence imaging of delivered \u03b1SYN in fixed samples (electroporation concentration 400 \u00b5M), cells were recovered for 5 hr in the incubator on poly-L-lysine-coated 25 mm cover slips. Cells were quickly washed 3\u00a0\u00d7\u00a0with complete medium and treated briefly with diluted trypsin/EDTA (0.01 %/ 0.004%, 40 s, room temperature) to remove non-internalized \u03b1SYN, then fixed in PBS containing 4% (w/v) PFA for 15 min and permeabilized with 0.1% (v/v) Triton-X in PBS for 3 min. After washing 3\u00a0\u00d7\u00a010 min with PBS, samples were blocked with 0.13% (v/v) cold fish skin gelatin (Sigma) in PBS for 1 hr. Cells were incubated for 2 hr with anti-\u03b1SYN ab52168 (Abcam, 1:100 dilution) in blocking buffer. After washing 3\u00a0\u00d7\u00a010 min with PBS, specimens were incubated with anti-mouse IgG Atto647, (Sigma, 1:1000 dilution) and fluorescein isothiocyanate (FITC)-labeled phalloidin (Millipore, 2 mg/mL) for 1 hr in blocking buffer. Slides were washed 3\u00a0\u00d7\u00a010 min with PBS and nuclei stained with 1 \u00b5g/mL 4',6-diamidino-2-phenylindole (DAPI, Invitrogen) in PBS for 15 min. After washing once in PBS, samples were mounted with Immu-Mount (Thermo Scientific). For \u03b1SYN detection by western blotting, cell lysates were separated on commercial 4\u201318% gradient SDS-PAGE (BioRad), transferred onto PVDF membranes and fixed with 4% (w/v) paraformaldehyde (PFA) in PBS for 1 hr. Membranes were washed 2\u00a0\u00d7\u00a05 min with PBS and 2\u00a0\u00d7\u00a05 min with TBS (25 mM Tris, 136.9 mM NaCl, 2.7 mM KCl, pH 7.4). After blocking for 1 hr in 5% (w/v) milk in TBST (0.1% (v/v) Tween-20 in TBS), membranes were probed with anti-\u03b1SYN sc69977 (Santa Cruz, 1:100 dilution) and anti-Actin IgM (Merck Millipore, JLA20, 1:5000 dilution). Secondary antibodies were HRP-conjugated anti-mouse or anti-rabbit (Sigma, 1:10,000 dilutions). Membranes were developed using SuperSignal West Pico or Femto chemiluminescent substrates (Thermo Scientific). Luminescence signals were detected on a BioRad Molecular Imager and quantified with ImageLab (BioRad). Flow-cytometry and quantification (fluorescence intensity median analysis) of \u03b1SYN containing cells were performed with lysine-to-Alex488 fluorophore-coupled recombinant protein as described (Theillet et al., 2016). In brief, N-hydroxysuccinimide (NHS) ester-activated Atto488 fluorescent dye (Sigma Aldrich) was coupled to \u03b1SYN lysine side chain-amines in bicarbonate buffer at pH 8.3 according to the manufacturer\u2019s instructions. Covalently modified \u03b1SYN was separated from non-reacted dye on a Sephadex G-25 column (Amersham, GE) and concentrated with 6 kDa MW cut-off spin columns (Millipore). The final concentration of the fluorescently labeled protein was measured by UV-VIS spectrophotometry at 280 nm with E: 5690 M\u22121cm\u22121. A correction factor of 0.1 was subtracted to compensate for the intrinsic absorbance of the fluorophore. Cells containing Atto488-tagged protein (530 nm) were detected by flow cytometry on a FACSCalibur (BD Biosciences,>10,000 recorded events for each sample). Median \u03b1SYN fluorescence from all events was determined with FlowJo 8.8.6 for each sample.\n\n### Microscopy, immunofluorescence detection, live-cell imaging, FRAP analysis, FRET-FLIM imaging and chemical inhibition\n\nFor this study, the following microscopes were used. 1) A customized 3i Marianas system (Intelligent Imaging Innovations) equipped with a Axio Observer Z1 microscope chassis (Zeiss), a CSU-X1 confocal scanner unit (Yokogawa Electric Corporation), Plan-Apochromat 63\u00d7/1.4 NA objectives (Zeiss), an Orca Flash 4.0 sCMOS Camera (Hamamatsu), and a FRAP Vector High Speed Point Scanner. Images were acquired as Z sections (using Slidebook Software six from Intelligent Imaging Innovations) and converted into maximal-intensity-projection TIFF files for illustrative purposes. 2) A Deltavision Elite System (GE Healthcare) equipped with an IX-71 inverted microscope (Olympus), a UPlanFLN 40\u00d7/1.3 NA objective (Olympus) and a pco.edge sCMOS camera (PCO-TECH Inc). Images were acquired as Z sections (using the softWoRx software from Deltavision) and converted into maximal-intensity-projection TIFF files for illustrative purposes. 3) An Olympus FV1000 FlouView laser scanning confocal microscope counted in a single-photon counting avalanche photodiode (PDM Series, MPD; PicoQuant) and timed by using a time-correlated single-photon counting module (PicoHarp 300; PicoQuant) after being spectrally filtered using a narrow-band emission filter (HQ 525/15; Chroma). The microscope was also equipped with an Eppendorf Transjector 5246 and an Eppendorf Micromanipulator 5171. 4) For \u03b1SYN experiments, confocal images were taken at 40\u00a0\u00d7\u00a0magnifications and using excitation wavelengths of 405, 488, and 633 nm on a Zeiss LSM 510 META laser-scanning microscope. For immunofluorescence analysis, cells (HeLa) were grown on coverslips pre-coated with 15 \u00b5g/ml poly-d-lysine (Millipore) and then fixed with 4% paraformaldehyde in either PBS or PHEM, followed by permeabilization with either PBS or PHEM containing Tween 0.3%. The following antibodies were used for immunostaining: anti-CREST/anti-centromere antibodies (human, Antibodies Inc; 1:100) anti-Tubulin (mouse monoclonal, Sigma; 1:5000). DNA was stained with 0.5 \u00b5g/ml DAPI (Serva) and coverslips mounted with Mowiol mounting medium (Calbiochem). Quantification of kinetochore signals was performed on unmodified 16-bit z-series images using Imaris nine software (Bitplane). After background subtraction, all signals were normalized to CREST signal. Measurements were plotted with GraphPad Prism 6.0 (GraphPad Software).\n\nThe individual electroporation of HeLa cell with either the CFP-BUBR11-571 constructs or MAD2TAMRA was performed using an EP concentration of respectively 10 \u00b5M and 5 \u00b5M. After electroporation cells were allowed to recover overnight and then treated with nocodazole for imaging on the Mariana system. To determine CFP kinetochore levels for Figure 1D, between 263\u00a0and 372 KTs per condition were scored. Simultaneous electroporation of 10 \u00b5M CFP-BUBR11-571 and 5 \u00b5M MAD2TAMRA was performed on HeLa cells and imaged live on a Deltavision system. To measure mitotic duration in cells depleted for endogenous MIS12C and electroporated with recombinant CFP-MIS12C, at either 8, 5 or 2.5 \u00b5M, H2B-mCherry HeLa cells were transfected with siRNA-MIS12C oligos, twice in 24 hr, and then electroporated 6 hr after the second transfection. Following EP, cells recovered overnight before being processed for either western blotting analysis or imaged lived on the Deltavision system. Mitotic duration, with or without 330 nM nocodazole, was assessed by DNA morphology. Cells entering anaphase with their DNA not completely aligned in the metaphase plate were scored as erroneous segregations. Between 53 and 149 cells per condition were scored. Live-cell time-lapse imaging of HeLa cells electroporated with NDC80CWT-GFP at 5 \u00b5M was performed on an asynchronously growing population. Cells were then left to recover overnight before being treated with SiR-Hoechst-647 Dye for one hour before being imaged live on a Deltavision system. To determine mitotic duration, between 60 and 70 cells per condition were scored. For the error correction assay, following electroporation HeLa cells were synchronized in G2 with 9 \u00b5M RO-3306 (Millipore) for 16 hr and then released in the presence of 5 \u00b5M STLC (Sigma-Aldrich) for 3 hr. Following STLC wash-out, cells were grown for 150 min in media containing 5 \u00b5M MG132 (Calbiochem), then fixed, prepared for immunofluorescence analysis and then scored for the presence of uncongressed chromosomes on the Mariana microscope. Cells with one or more chromosomes not perfectly aligned at the metaphase plate were scored as uncongressed. Results are representing the average\u00a0\u00b1\u00a0SD of two replicated experiments. In total, between 140 and 191 cells were scored for each condition. Electroporation of NDC80CWT-GFP into RPE1, U2OS or HEK293 cells, was performed on asynchronously growing cultures. Following electroporation cells were left recover overnight and then incubated in nocodazole and SiR-Hoechst-647 Dye for 4 hr, and then imaged live on the Mariana microscope. For Spindly experiments, asynchronously growing HeLa cells were treated with farnesyltransferase inhibitor FTI for 24 hr before being electroporated with fluorescent Spindly at 10 \u00b5M. Following EP, cells were left to recover for 24 hr in FTI-277, of which the last 6 hr were in the presence of nocodazole. Immunofluorescence analysis was performed on the Mariana system. To determine kinetochore levels for fluorescent SPINDLY, between 60 and 220 KTs per condition were scored. For EGFP-KRAS D30C-TF3 experiments, microinjections and electroporations for FLIM-FRET imaging were performed on MDCK cells that were serum-starved overnight in MEM Eagle medium (Sigma) supplemented with 0.5% FBS. Following starvation, cells were either microinjected or electroporated with EGFP-KRAS D30C-TF3 at a concentration of 6\u201310 mg/mL and then left recover for 6 hr before live-cell imaging by FLIM-FRET microscopy. Microinjections and FLIM-FRET imaging were performed on an Olympus FV1000 as previously described (Voss et al., 2016). FLIM-FRET analysis of EGFP-KRAS D30C-TF3 lifetime was performed on 12 electroporated cells.\n",
+      "created_at": "2025-12-02T11:11:07.732446Z"
+    },
+    {
+      "id": "2b605761-b5b3-4041-9155-7b90a3a5c8bd",
+      "submission_id": "aea1634d-57ea-4cca-97b3-10b053b0200e",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Silke Hauf, Virginia Tech United States\n\nReviewers:\n- Yoshio Kato\n- Thomas Mayer, University of Konstanz Germany\n\n## Review text\n\nDOI: [10.7554/eLife.48287.023](https://doi.org/10.7554/eLife.48287.023)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Electroporated recombinant proteins as tools for in vivo functional complementation, imaging, and chemical biology\" for consideration by eLife. Your article has been reviewed by three peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation has been overseen by Anna Akhmanova as the Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Yoshio Kato, Thomas Mayer, Aaron Straight.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nAlex, Maffini, Musacchio et al. report on a systematic assessment of electroporation as a method to deliver recombinant proteins or protein complexes into mammalian cells. Electroporation as a technique for protein delivery is not novel, but the authors demonstrate in this manuscript that the technique is less disruptive and provides more homogenous outcomes across a cell population than previously thought.\n\nThe reviewers found that the work is very well performed and described. Important controls are included, e.g. different cell lines, titration of amount of protein used for electroporation etc. Importantly, thorough functional studies confirm that the electroporated proteins are functional and can complement the loss of endogenous proteins. The authors demonstrate that entire protein complexes can be electroporated and remain functional, and they use in vitro farnesylation to demonstrate that electroporation can introduce modified recombinant proteins into living cells. The authors also show that the efficiency of delivery is high enough to conduct bulk assays like immunoblotting or immunoprecipitation.\n\nIn summary, the authors convincingly demonstrate that electroporation has unrecognized potential as a technique, as it can deliver chemically modified proteins that cannot be easily produced in cells and allows for sophisticated cell biological or biochemical follow-up experiments. The paper is important as it will make the technique more widely known and attractive for other researchers to try.\n\nEssential revisions:\n\n1) Since the paper is meant to make the technique accessible to others, some additional information will be useful:\n\n- Please provide more information on how settings in the electroporation procedure or other relevant parameters affect the efficiency of delivery, viability of cells etc.\n\n- In addition to the phase contrast microscopy (Figure 1\u2014figure supplement 1F), a viable/dead stain to quantify the extent of damage or toxicity in the different cell lines would be useful.\n\n- Please add data for RPE1 and HEK293, which seem to be more difficult to electroporate (mentioned in the Materials and methods section).\n\n- While it is great to have the successes of the technique highlighted, the discussion of shortcomings is equally valuable. Please move the discussion of potential shortcomings to the main section of the manuscript (e.g. Discussion), where it will be easier to find than in the Materials and methods section.\n\n- In the Materials and methods section, it would be useful to mention which number or concentration of cells was used in the respective volumes (subsection \u201cElectroporation of living cells\u201d).\n\n- It may not be possible for the authors to do anything about this (since this seems proprietary information), but it would be useful to know the composition of \"buffer R\". Otherwise, it is hard to know how conditions can be adjusted if a protein of interest happens to be incompatible. Have the authors tried buffers of known composition and can comment?\n\n2) In Figure 2A, the levels of ectopic MIS12 are much higher than the ones of endogenous Mis12. Are such high levels of ectopic protein required to complement the loss of endogenous Mis12? Please comment.\n",
+      "created_at": "2025-12-02T11:11:07.732446Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T11:11:07.732446Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T11:11:07.732446Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "2d005c16-d51d-4cca-9909-e61439f6aeb8",
+      "content_id": "6d9638a7-21ef-4d61-bf7d-4f4f5e29986a",
+      "claim_id": "C1",
+      "claim": "Batch electroporation is a delivery tool for single polypeptides and multi-subunit protein assemblies of the kinetochore.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we surveyed batch electroporation as a delivery tool for single polypeptides and multi-subunit protein assemblies of the kinetochore, a spatially confined and well-studied subcellular structure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main methodological claim of the study, supported by multiple experimental demonstrations throughout the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:11:07.732446Z"
+    },
+    {
+      "id": "1181f25c-bf94-4540-a13b-a7575d73c6ac",
+      "content_id": "6d9638a7-21ef-4d61-bf7d-4f4f5e29986a",
+      "claim_id": "C2",
+      "claim": "After electroporation into human cells, recombinant fluorescent Ndc80 and Mis12 multi-subunit complexes exhibited native localization.",
+      "claim_type": "EXPLICIT",
+      "source": "After electroporation into human cells, recombinant fluorescent Ndc80 and Mis12 multi-subunit complexes exhibited native localization, physically interacted with endogenous binding partners, and functionally complemented depleted endogenous counterparts to promote mitotic checkpoint signaling and chromosome segregation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data showing kinetochore localization of these complexes after electroporation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:11:07.732446Z"
+    },
+    {
+      "id": "d0bf8e8c-61eb-4cff-84d0-4e4a48746f54",
+      "content_id": "6d9638a7-21ef-4d61-bf7d-4f4f5e29986a",
+      "claim_id": "C3",
+      "claim": "Electroporated recombinant Ndc80 and Mis12 complexes physically interacted with endogenous binding partners.",
+      "claim_type": "EXPLICIT",
+      "source": "After electroporation into human cells, recombinant fluorescent Ndc80 and Mis12 multi-subunit complexes exhibited native localization, physically interacted with endogenous binding partners, and functionally complemented depleted endogenous counterparts to promote mitotic checkpoint signaling and chromosome segregation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by immunoprecipitation experiments showing interactions with endogenous proteins.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:11:07.732446Z"
+    },
+    {
+      "id": "3d15cb6d-181b-43a4-bf3e-788d3ef9961f",
+      "content_id": "6d9638a7-21ef-4d61-bf7d-4f4f5e29986a",
+      "claim_id": "C4",
+      "claim": "Electroporated recombinant Ndc80 and Mis12 complexes functionally complemented depleted endogenous counterparts to promote mitotic checkpoint signaling and chromosome segregation.",
+      "claim_type": "EXPLICIT",
+      "source": "After electroporation into human cells, recombinant fluorescent Ndc80 and Mis12 multi-subunit complexes exhibited native localization, physically interacted with endogenous binding partners, and functionally complemented depleted endogenous counterparts to promote mitotic checkpoint signaling and chromosome segregation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by functional complementation assays showing rescue of chromosome segregation defects.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:11:07.732446Z"
+    },
+    {
+      "id": "a7164832-9cf6-4f2b-8e60-841fb0958d2e",
+      "content_id": "6d9638a7-21ef-4d61-bf7d-4f4f5e29986a",
+      "claim_id": "C5",
+      "claim": "Farnesylation is required for kinetochore localization of the Dynein adaptor Spindly.",
+      "claim_type": "EXPLICIT",
+      "source": "Farnesylation is required for kinetochore localization of the Dynein adaptor Spindly.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experiments showing that non-farnesylated Spindly mutants fail to localize to kinetochores.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:11:07.732446Z"
+    },
+    {
+      "id": "957f7f16-b7bc-4c95-b4f7-531026de42c4",
+      "content_id": "6d9638a7-21ef-4d61-bf7d-4f4f5e29986a",
+      "claim_id": "C6",
+      "claim": "In cells with chronically inhibited farnesyl transferase activity, in vitro farnesylation and electroporation of recombinant Spindly resulted in robust kinetochore localization.",
+      "claim_type": "EXPLICIT",
+      "source": "In cells with chronically inhibited farnesyl transferase activity, in vitro farnesylation and electroporation of recombinant Spindly faithfully resulted in robust kinetochore localization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by experiments showing that pre-farnesylated Spindly localizes to kinetochores even when cellular farnesyl transferase is inhibited.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:11:07.732446Z"
+    },
+    {
+      "id": "35edf2f1-a09b-4529-a973-41a0b46b197e",
+      "content_id": "6d9638a7-21ef-4d61-bf7d-4f4f5e29986a",
+      "claim_id": "C7",
+      "claim": "Electroporation is well-suited to deliver synthetic and chemically modified versions of functional proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data show that electroporation is well-suited to deliver synthetic and chemically modified versions of functional proteins, and, therefore, constitutes a promising tool for applications in chemical and synthetic biology.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is drawn from the successful delivery and function of farnesylated Spindly and other modified proteins.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:11:07.732446Z"
+    },
+    {
+      "id": "a9af7b87-c97b-4cce-8b33-a82013dd9f97",
+      "content_id": "6d9638a7-21ef-4d61-bf7d-4f4f5e29986a",
+      "claim_id": "C8",
+      "claim": "Electroporation constitutes a promising tool for applications in chemical and synthetic biology.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data show that electroporation is well-suited to deliver synthetic and chemically modified versions of functional proteins, and, therefore, constitutes a promising tool for applications in chemical and synthetic biology.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the successful demonstrations of protein delivery and function.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:11:07.732446Z"
+    },
+    {
+      "id": "fa200605-ab58-4363-ab7c-86a7e614f9a2",
+      "content_id": "6d9638a7-21ef-4d61-bf7d-4f4f5e29986a",
+      "claim_id": "C9",
+      "claim": "The kinetochore consists of at least 30 core subunits organized in various protein assemblies.",
+      "claim_type": "EXPLICIT",
+      "source": "The kinetochore consists of at least 30 core subunits organized in various protein assemblies and structured in layers that emanate from a specialized centromeric chromatin interface, the inner kinetochore, and terminate at the outer kinetochore, where spindle microtubules are bound (Figure 1A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about kinetochore structure.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:11:07.732446Z"
+    },
+    {
+      "id": "5378f287-25bc-43aa-8dfa-04aa2156c4a5",
+      "content_id": "6d9638a7-21ef-4d61-bf7d-4f4f5e29986a",
+      "claim_id": "C10",
+      "claim": "The primary function of kinetochores is to link chromosomes and spindle microtubules.",
+      "claim_type": "EXPLICIT",
+      "source": "The primary function of kinetochores is to link chromosomes and spindle microtubules (MTs) (Pesenti et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:11:07.732446Z"
+    },
+    {
+      "id": "80d68fa9-4add-4e2d-b534-cbed8b6dbf10",
+      "content_id": "6d9638a7-21ef-4d61-bf7d-4f4f5e29986a",
+      "claim_id": "C11",
+      "claim": "Kinetochores function as signaling platforms for the spindle assembly checkpoint.",
+      "claim_type": "EXPLICIT",
+      "source": "Kinetochores function also as signaling platforms for the spindle assembly checkpoint (SAC, also named mitotic or metaphase checkpoint), a feedback surveillance mechanism that monitors the correct state of kinetochore-microtubule (KT-MT) attachment to ensure timely and faithful chromosome segregation (Musacchio, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:11:07.732446Z"
+    },
+    {
+      "id": "19ad0e58-ce2e-45b3-b035-712b9c9d6cb1",
+      "content_id": "6d9638a7-21ef-4d61-bf7d-4f4f5e29986a",
+      "claim_id": "C12",
+      "claim": "Intracellular uptake of electroporated proteins scaled linearly with input concentrations irrespective of the manipulated cell types.",
+      "claim_type": "EXPLICIT",
+      "source": "Using model recombinant protein like \u03b1-Synuclein (made fluorescent by labeling with the synthetic dye Atto488) or mCherry, which can reach very high concentrations, we determined that intracellular uptake scaled linearly with input concentrations irrespective of the manipulated cell types (Figure 1\u2014figure supplement 1A\u2013B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by flow cytometry and fluorimetric analysis data shown in the supplementary figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:11:07.732446Z"
+    },
+    {
+      "id": "8107ed46-e81c-4d69-9b41-897dfc4be41c",
+      "content_id": "6d9638a7-21ef-4d61-bf7d-4f4f5e29986a",
+      "claim_id": "C13",
+      "claim": "Electroporation is efficient across multiple cell lines and different electroporation conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggested that EP maybe broadly applicable to transduce defined amounts of recombinant proteins into cultured mammalian cells, with individual cells harboring uniform concentrations of exogenously delivered proteins (Figure 1\u2014figure supplement 1C\u2013D). Importantly, EP is efficient across multiple cell lines and different electroporation conditions, and treated cells usually showed limited damage or toxicity (Figure 1\u2014figure supplement 2A\u2013B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experiments across different cell lines showing successful protein delivery.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:11:07.732446Z"
+    },
+    {
+      "id": "c564b6e8-4aef-49b3-a033-67915f124321",
+      "content_id": "6d9638a7-21ef-4d61-bf7d-4f4f5e29986a",
+      "claim_id": "C14",
+      "claim": "Electroporated cells usually showed limited damage or toxicity.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, EP is efficient across multiple cell lines and different electroporation conditions, and treated cells usually showed limited damage or toxicity (Figure 1\u2014figure supplement 2A\u2013B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by viability assays and morphological analysis of electroporated cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:11:07.732446Z"
+    },
+    {
+      "id": "9050cb73-641e-4aa7-a0ca-d2237f38f38f",
+      "content_id": "6d9638a7-21ef-4d61-bf7d-4f4f5e29986a",
+      "claim_id": "C15",
+      "claim": "CFP-BUBR11-571 distinctly localized to kinetochores in mitotically arrested cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In mitotically arrested cells (by addition of the spindle poison nocodazole, a condition that activates the SAC), CFP-BUBR11-571 distinctly localized to kinetochores, as revealed by the typical punctuate staining and by co-localization with CREST, an established kinetochore marker (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by immunofluorescence imaging showing colocalization with CREST.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:11:07.732446Z"
+    },
+    {
+      "id": "e60f0aac-6d8e-4437-83f7-c98815b42854",
+      "content_id": "6d9638a7-21ef-4d61-bf7d-4f4f5e29986a",
+      "claim_id": "C16",
+      "claim": "BUBR1 kinetochore recruitment in human cells requires dimerization with kinetochore-bound BUB1 through segments that encompass a predicted helical domain.",
+      "claim_type": "EXPLICIT",
+      "source": "We have shown previously that BUBR1 kinetochore recruitment in human cells requires dimerization with kinetochore-bound BUB1, a BUBR1 paralog, through segments that encompass a predicted helical domain in the two proteins (Overlack et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by previous work cited in the manuscript.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:11:07.732446Z"
+    },
+    {
+      "id": "9bae9cf5-d4d9-4fd4-8223-44719bdb037e",
+      "content_id": "6d9638a7-21ef-4d61-bf7d-4f4f5e29986a",
+      "claim_id": "C17",
+      "claim": "CFP-BUBR11-571-\u2206Helix, a deletion mutant lacking the BUB1 binding helix, was unable to localize to kinetochores.",
+      "claim_type": "EXPLICIT",
+      "source": "In agreement with these previous observations, recombinant CFP-BUBR11-571-\u2206Helix, a deletion mutant of BUBR1 lacking the BUB1 binding helix (deletion of residues 432\u2013484) was unable to localize to kinetochores (Figure 1D\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by immunofluorescence showing lack of kinetochore localization.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:11:07.732446Z"
+    },
+    {
+      "id": "54341c2a-4d80-4119-9512-f29083f78552",
+      "content_id": "6d9638a7-21ef-4d61-bf7d-4f4f5e29986a",
+      "claim_id": "C18",
+      "claim": "The efficiency of CFP-BUBR11-571 delivery was high and most cells displayed uniform levels of the recombinant protein.",
+      "claim_type": "EXPLICIT",
+      "source": "The efficiency of CFP-BUBR11-571 delivery was high and most cells displayed uniform levels of the recombinant protein (Figure 1\u2014figure supplement 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by imaging data demonstrating uniform fluorescence across cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:11:07.732446Z"
+    },
+    {
+      "id": "c35f0d59-542f-4407-b3e0-0fa59ea63a4b",
+      "content_id": "6d9638a7-21ef-4d61-bf7d-4f4f5e29986a",
+      "claim_id": "C19",
+      "claim": "Electroporation can deliver very similar amounts of recombinant protein into each cell.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, electroporation can deliver very similar amounts of recombinant protein into each cell. In the course of this study, this became to be recognized as a general feature of this approach, largely independently of the protein used.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the uniform protein levels observed across multiple experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:11:07.732446Z"
+    },
+    {
+      "id": "85d97e2d-b5e6-4d1a-9c90-f3086ade0777",
+      "content_id": "6d9638a7-21ef-4d61-bf7d-4f4f5e29986a",
+      "claim_id": "C20",
+      "claim": "MAD2TAMRA localized effectively at kinetochores of nocodazole-treated cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Like CFP-BUBR11-571, MAD2TAMRA was found to localize effectively at kinetochores of nocodazole-treated cells, as shown by co-localization with CREST (Figure 1G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by immunofluorescence imaging.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:11:07.732446Z"
+    },
+    {
+      "id": "26ebb544-dea9-4029-8403-a2c63c9dc4c6",
+      "content_id": "6d9638a7-21ef-4d61-bf7d-4f4f5e29986a",
+      "claim_id": "C21",
+      "claim": "Co-delivery of CFP-BUBR11-571 with MAD2TAMRA resulted in both proteins localizing at unattached kinetochores in nocodazole-arrested cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, we performed co-delivery of CFP-BUBR11-571 with MAD2TAMRA, and found both proteins at unattached KTs in nocodazole-arrested cells (Figure 1H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by dual-color imaging showing colocalization.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:11:07.732446Z"
+    },
+    {
+      "id": "634b00a7-2539-4c2d-9568-4f5c3d34ed66",
+      "content_id": "6d9638a7-21ef-4d61-bf7d-4f4f5e29986a",
+      "claim_id": "C22",
+      "claim": "EP-delivered EGFP-TF3-KRAS predominantly localized to the plasma membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon EP-delivery, we found that EGFP-TF3-KRAS, but not EGFP, predominantly localize to the plasma membrane (Figure 1\u2014figure supplement 5B), with a pattern indistinguishable from endogenous, over-expressed, or microinjected KRAS (Voss et al., 2016; Schmick et al., 2014; Schmick et al., 2015).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by imaging and comparison with previous studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:11:07.732446Z"
+    },
+    {
+      "id": "b3726ff1-c91a-4bef-bae6-0d7bd3bcf885",
+      "content_id": "6d9638a7-21ef-4d61-bf7d-4f4f5e29986a",
+      "claim_id": "C23",
+      "claim": "Following addition of EGF, an increase in the donor lifetime of EGFP-TF3-KRAS was observed.",
+      "claim_type": "EXPLICIT",
+      "source": "Following addition of EGF, we observed the predicted increase in the donor lifetime of EGFP-TF3-KRAS (Figure 1\u2014figure supplement 5C\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by FLIM-FRET measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:11:07.732446Z"
+    },
+    {
+      "id": "2fb3eb78-ea2b-458e-a9af-97d83af29c49",
+      "content_id": "6d9638a7-21ef-4d61-bf7d-4f4f5e29986a",
+      "claim_id": "C24",
+      "claim": "EP-based KRAS results were qualitatively and quantitatively identical to EGFP-TF3-KRAS microinjection experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, our EP-based results were qualitatively and quantitatively identical to the ones that were observed in EGFP-TF3-KRAS microinjection experiments (Voss et al., 2016), demonstrating the suitability of EP for FRET-based assays in living cells as a valid alternative to protein delivery by microinjection.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by comparison of FLIM-FRET data from EP and microinjection.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:11:07.732446Z"
+    },
+    {
+      "id": "dcb2c7a8-a75b-410f-a9e3-0f7a997087ab",
+      "content_id": "6d9638a7-21ef-4d61-bf7d-4f4f5e29986a",
+      "claim_id": "C25",
+      "claim": "The Mis12 complex is an extremely stable four-subunit kinetochore assembly with a molecular mass of ~120 kDa.",
+      "claim_type": "EXPLICIT",
+      "source": "To this end, we started with the Mis12 complex (MIS12C, where 'C' stands for 'complex'), an extremely stable four-subunit kinetochore assembly of the DSN1, NSL1, MIS12, and PMF1 subunits with a molecular mass of ~120 kDa.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the MIS12 complex.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:11:07.732446Z"
+    },
+    {
+      "id": "8e426269-c3e1-455e-a942-1888c8ea2361",
+      "content_id": "6d9638a7-21ef-4d61-bf7d-4f4f5e29986a",
+      "claim_id": "C26",
+      "claim": "The stability of the MIS12C requires co-expression of all four constituent subunits.",
+      "claim_type": "EXPLICIT",
+      "source": "In previous studies, we demonstrated that the stability of the MIS12C requires co-expression of all four constituent subunits and reported the development of various co-expression vectors for its heterologous reconstitution in insect cells (Petrovic et al., 2016; Petrovic et al., 2014; Petrovic et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by previous work cited in the manuscript.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:11:07.732446Z"
+    },
+    {
+      "id": "d2c99aa9-1927-4001-8eed-add19c1c5c6b",
+      "content_id": "6d9638a7-21ef-4d61-bf7d-4f4f5e29986a",
+      "claim_id": "C27",
+      "claim": "CFP-MIS12C was clearly visible at kinetochores in the large majority of electroporated cells with remarkably similar kinetochore levels within the same cell and between different cells.",
+      "claim_type": "EXPLICIT",
+      "source": "At an EP slurry concentration of 8 \u03bcM, CFP-MIS12C was clearly visible at kinetochores in the large majority of electroporated cells and with remarkably similar kinetochore levels within the same cell and between different cells (Figure 1\u2014figure supplement 4B and C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by quantitative imaging analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:11:07.732446Z"
+    },
+    {
+      "id": "f8f7ba16-410f-4435-a1a7-09ae55677b5b",
+      "content_id": "6d9638a7-21ef-4d61-bf7d-4f4f5e29986a",
+      "claim_id": "C28",
+      "claim": "Assembled CFP-MIS12C remained intact during the electroporation procedure and reached the cytoplasm in a kinetochore-binding competent, functional state.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings further indicated that assembled CFP-MIS12C remained intact during the electroporation procedure and reached the cytoplasm in a kinetochore-binding competent, functional state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the proper localization and function of the complex after EP.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:11:07.732446Z"
+    },
+    {
+      "id": "70a70c19-788e-4727-adcd-3c25833beca6",
+      "content_id": "6d9638a7-21ef-4d61-bf7d-4f4f5e29986a",
+      "claim_id": "C29",
+      "claim": "MIS12C is an assembly hub for the kinetochore, being responsible for the recruitment of a subset of the microtubule-binding NDC80 complexes as well as of KNL1.",
+      "claim_type": "EXPLICIT",
+      "source": "MIS12C is as an assembly hub for the kinetochore, being responsible for the recruitment of a subset of the microtubule-binding NDC80 complexes as well as of KNL1, a signaling platform for the SAC (Petrovic et al., 2010; Kiyomitsu et al., 2011) (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:11:07.732446Z"
+    },
+    {
+      "id": "9b5748b8-e86e-4356-b996-121f81c2ef5c",
+      "content_id": "6d9638a7-21ef-4d61-bf7d-4f4f5e29986a",
+      "claim_id": "C30",
+      "claim": "MIS12C is necessary for timely chromosome congression and faithful cell division.",
+      "claim_type": "EXPLICIT",
+      "source": "These functions make MIS12C necessary for timely chromosome congression and faithful cell division.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the known functions of MIS12C.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:11:07.732446Z"
+    },
+    {
+      "id": "95333532-10c8-4c63-a7c6-b48b8ccea929",
+      "content_id": "6d9638a7-21ef-4d61-bf7d-4f4f5e29986a",
+      "claim_id": "C31",
+      "claim": "Depletion of MIS12C compromised chromosome congression.",
+      "claim_type": "EXPLICIT",
+      "source": "In agreement with previous reports, depletion of MIS12C compromised chromosome congression (Figure 2B\u2013C), a consequence of reduced kinetochore levels of NDC80 and KNL1 (Kim and Yu, 2015).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by live-cell imaging and supported by previous studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:11:07.732446Z"
+    },
+    {
+      "id": "a01c27da-0719-4fbe-be6a-cb349743fa08",
+      "content_id": "6d9638a7-21ef-4d61-bf7d-4f4f5e29986a",
+      "claim_id": "C32",
+      "claim": "EP delivery of CFP-MIS12C into depleted cells rescued chromosome congression essentially to the levels observed in control cells.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown by live-cell microscopy, EP delivery of CFP-MIS12C into depleted cells, but not of a CFP control, rescued chromosome congression essentially to the levels observed in control cells, indicating that the recombinant complex is functionally active (Figure 2B\u2013C and Videos 1\u20134).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by live-cell imaging showing rescue of chromosome congression defects.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:11:07.732446Z"
+    },
+    {
+      "id": "08152711-664e-4c5c-b5f0-0030b90af22c",
+      "content_id": "6d9638a7-21ef-4d61-bf7d-4f4f5e29986a",
+      "claim_id": "C33",
+      "claim": "Complete functional rescue of MIS12 activity appeared to require somewhat higher intracellular levels of recombinant MIS12 than those of the endogenous counterpart.",
+      "claim_type": "EXPLICIT",
+      "source": "Complete functional rescue of MIS12 activity appeared to require somewhat higher intracellular levels of recombinant MIS12 than those of the endogenous counterpart (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed from dose-response experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:11:07.732446Z"
+    },
+    {
+      "id": "40a53524-2adb-4dff-9245-1d65334bb162",
+      "content_id": "6d9638a7-21ef-4d61-bf7d-4f4f5e29986a",
+      "claim_id": "C34",
+      "claim": "Cells depleted of MIS12C were unable to mount a strong mitotic arrest and underwent mitotic exit in the presence of multiple unattached or incompletely attached chromosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "In agreement with the previous studies, cells depleted of MIS12C were unable to mount a strong mitotic arrest and underwent mitotic exit in the presence of multiple unattached or incompletely attached chromosomes, indicative of a checkpoint defect.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by live-cell imaging in the presence of nocodazole.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:11:07.732446Z"
+    },
+    {
+      "id": "53899c2e-c54d-4bb8-9a34-f5ba718895f3",
+      "content_id": "6d9638a7-21ef-4d61-bf7d-4f4f5e29986a",
+      "claim_id": "C35",
+      "claim": "Recombinant CFP-MIS12C restored mitotic duration to values similar to those observed in control cells, indicating a full rescue of SAC activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Electroporated CFP was unable to restore the SAC response, while recombinant CFP-MIS12C restored mitotic duration to values similar to those observed in control cells, indicating a full rescue of SAC activity (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by quantification of mitotic duration in nocodazole-treated cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:11:07.732446Z"
+    },
+    {
+      "id": "17de18c8-e9eb-4152-88da-f751c4edd916",
+      "content_id": "6d9638a7-21ef-4d61-bf7d-4f4f5e29986a",
+      "claim_id": "C36",
+      "claim": "Electroporated recombinant MIS12C targeted the kinetochores as a functionally intact complex.",
+      "claim_type": "EXPLICIT",
+      "source": "Collectively, these results indicate that electroporated recombinant MIS12C targeted the KTs as a functionally intact complex and that EP can be used for biological complementation assays in combination with siRNA-mediated knockdown routines.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the functional rescue experiments.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:11:07.732446Z"
+    },
+    {
+      "id": "de691409-f53c-4ca7-82f5-d87d63f046cb",
+      "content_id": "6d9638a7-21ef-4d61-bf7d-4f4f5e29986a",
+      "claim_id": "C37",
+      "claim": "EP can be used for biological complementation assays in combination with siRNA-mediated knockdown routines.",
+      "claim_type": "EXPLICIT",
+      "source": "Collectively, these results indicate that electroporated recombinant MIS12C targeted the KTs as a functionally intact complex and that EP can be used for biological complementation assays in combination with siRNA-mediated knockdown routines.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by the successful complementation of MIS12C depletion.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:11:07.732446Z"
+    },
+    {
+      "id": "fa9bfea9-d907-48e4-b6a0-905628befcec",
+      "content_id": "6d9638a7-21ef-4d61-bf7d-4f4f5e29986a",
+      "claim_id": "C38",
+      "claim": "The four-subunit NDC80C complex reaches approximately ~60 nm in length.",
+      "claim_type": "EXPLICIT",
+      "source": "With its dumbbell shape consisting of a coiled-coil shaft flanked by terminal globular domains, the four-subunit NDC80C complex reaches approximately ~60 nm in length (Huis In 't Veld et al., 2016; Wei et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established structural knowledge supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:11:07.732446Z"
+    },
+    {
+      "id": "863e5a95-ffb1-40b9-82be-92b21e5a0490",
+      "content_id": "6d9638a7-21ef-4d61-bf7d-4f4f5e29986a",
+      "claim_id": "C39",
+      "claim": "GFP-NDC80 complex localized to kinetochores after electroporation.",
+      "claim_type": "EXPLICIT",
+      "source": "This revealed kinetochore localization of the recombinant GFP-NDC80 complex (Figure 3A), indicating that the considerable length of the complex is compatible with efficient delivery.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by live-cell imaging.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:11:07.732446Z"
+    },
+    {
+      "id": "2aef795f-1523-43f3-ba5b-cf8f3597d47f",
+      "content_id": "6d9638a7-21ef-4d61-bf7d-4f4f5e29986a",
+      "claim_id": "C40",
+      "claim": "The considerable length of the NDC80 complex is compatible with efficient delivery by electroporation.",
+      "claim_type": "EXPLICIT",
+      "source": "This revealed kinetochore localization of the recombinant GFP-NDC80 complex (Figure 3A), indicating that the considerable length of the complex is compatible with efficient delivery.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the successful delivery and localization of the complex.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:11:07.732446Z"
+    },
+    {
+      "id": "8537e9b7-37f9-4a4b-b701-92c0d1777cde",
+      "content_id": "6d9638a7-21ef-4d61-bf7d-4f4f5e29986a",
+      "claim_id": "C41",
+      "claim": "HeLa cells carrying recombinant NDC80C-GFP in addition to endogenous NDC80C displayed no alterations in cell cycle progression.",
+      "claim_type": "EXPLICIT",
+      "source": "Manipulated HeLa cells carrying recombinant NDC80C-GFP in addition to endogenous NDC80C displayed no alterations in cell cycle progression and proceeded through the different stages of mitosis without detectable changes when compared to control cells (Figure 3A\u2013B and Videos 5\u20139).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by live-cell imaging and quantification of mitotic timing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:11:07.732446Z"
+    },
+    {
+      "id": "e6e496d7-4cac-448f-9f35-f30f599a072a",
+      "content_id": "6d9638a7-21ef-4d61-bf7d-4f4f5e29986a",
+      "claim_id": "C42",
+      "claim": "Delivering exogenous GFP-NDC80C does not cause obvious cell cycle alterations or cytotoxicity.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, delivering exogenous GFP-NDC80C does not cause obvious cell cycle alterations or cytotoxicity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the normal cell cycle progression observed.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:11:07.732446Z"
+    },
+    {
+      "id": "050107fb-9017-4ccd-a8c7-e275b8c54331",
+      "content_id": "6d9638a7-21ef-4d61-bf7d-4f4f5e29986a",
+      "claim_id": "C43",
+      "claim": "Recombinant GFP-NDC80C complexes establish physiologic interactions with their endogenous binding partners.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the electroporated GFP-NDC80C establishes physiologic interactions with its endogenous binding partners, demonstrating the versatility of EP as a technique to probe protein interactions in living cells both through imaging and through biochemistry.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by immunoprecipitation experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:11:07.732446Z"
+    },
+    {
+      "id": "1c5079a0-b14a-4feb-8fb2-1768ee72fa2d",
+      "content_id": "6d9638a7-21ef-4d61-bf7d-4f4f5e29986a",
+      "claim_id": "C44",
+      "claim": "EP is versatile as a technique to probe protein interactions in living cells both through imaging and through biochemistry.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the electroporated GFP-NDC80C establishes physiologic interactions with its endogenous binding partners, demonstrating the versatility of EP as a technique to probe protein interactions in living cells both through imaging and through biochemistry.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the successful use of EP for both imaging and biochemical analysis.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:11:07.732446Z"
+    },
+    {
+      "id": "7da4da4f-64ea-4191-8668-8d3acb333e11",
+      "content_id": "6d9638a7-21ef-4d61-bf7d-4f4f5e29986a",
+      "claim_id": "C45",
+      "claim": "A previously described NDC80 mutant (9A) carrying nine alanine mutations at phosphorylation sites establishes hyper-stable KT-MT attachments that cannot be corrected.",
+      "claim_type": "EXPLICIT",
+      "source": "A previously described NDC80 mutant (9A) carrying nine alanine mutations at the phosphorylation sites in the protein's N-terminus establishes hyper-stable KT-MT attachments that cannot be corrected, resulting in frequent chromosome congression errors (Sundin et al., 2011; Etemad et al., 2015; Tauchman et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge from previous studies.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:11:07.732446Z"
+    },
+    {
+      "id": "57edf3bf-f3a8-498c-8ce8-754bd00c1d82",
+      "content_id": "6d9638a7-21ef-4d61-bf7d-4f4f5e29986a",
+      "claim_id": "C46",
+      "claim": "Control cells electroporated with GFP or GFP-NDC80CWT corrected erroneous attachments and aligned their chromosomes properly at the metaphase plate.",
+      "claim_type": "EXPLICIT",
+      "source": "In this setup, control cells electroporated with GFP or GFP-NDC80CWT corrected erroneous attachments and aligned their chromosomes properly at the metaphase plate (Figure 3E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by the error correction assay.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:11:07.732446Z"
+    },
+    {
+      "id": "b67f2f3a-13f1-41ee-8358-79b00c7b254b",
+      "content_id": "6d9638a7-21ef-4d61-bf7d-4f4f5e29986a",
+      "claim_id": "C47",
+      "claim": "Cells electroporated with the GFP-NDC80C9A mutant were impaired in their correction pathway and accumulated misaligned chromosomes with high frequency.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, cells electroporated with the GFP-NDC80C9A mutant were impaired in their correction pathway, and accumulated misaligned chromosomes with high frequency.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by the error correction assay showing increased chromosome misalignment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:11:07.732446Z"
+    },
+    {
+      "id": "b19895eb-27cd-40c6-b011-eb0ce125675d",
+      "content_id": "6d9638a7-21ef-4d61-bf7d-4f4f5e29986a",
+      "claim_id": "C48",
+      "claim": "EP-delivered GFP-NDC80C9A exerted a dominant-negative effect over endogenous NDC80C in its ability to correct and repair chromosome misalignments.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on these findings, we concluded that EP-delivered GFP-NDC80C9A exerted a dominant-negative effect over endogenous NDC80C in its ability to correct and repair chromosome misalignments in response to STLC treatment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the error correction assay results.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:11:07.732446Z"
+    },
+    {
+      "id": "cd219188-e893-457d-a17a-dd46f333093c",
+      "content_id": "6d9638a7-21ef-4d61-bf7d-4f4f5e29986a",
+      "claim_id": "C49",
+      "claim": "Spindly is an adaptor protein that promotes the interaction of the minus-end-directed motor Dynein with its processivity factor Dynactin.",
+      "claim_type": "EXPLICIT",
+      "source": "Spindly is an adaptor protein that promotes the interaction of the minus-end-directed motor Dynein with its processivity factor Dynactin (Griffis et al., 2007; Gassmann et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:11:07.732446Z"
+    },
+    {
+      "id": "c66d6521-64d6-4e07-8bf3-7049865c1f9f",
+      "content_id": "6d9638a7-21ef-4d61-bf7d-4f4f5e29986a",
+      "claim_id": "C50",
+      "claim": "Spindly interacts directly with the ROD-Zwilch-ZW10 (RZZ) complex.",
+      "claim_type": "EXPLICIT",
+      "source": "Spindly also interacts directly with the ROD-Zwilch-ZW10 (RZZ) complex, the main constituent of the so-called kinetochore corona, a crescent-shaped structure that assembles on kinetochores in early prometaphase to promote microtubule capture (Magidson et al., 2015) (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:11:07.732446Z"
+    },
+    {
+      "id": "0d088a8f-b5fb-42ec-91ce-b21e277b65e4",
+      "content_id": "6d9638a7-21ef-4d61-bf7d-4f4f5e29986a",
+      "claim_id": "C51",
+      "claim": "Kinetochore localization of Spindly critically depends on its ability to interact with the RZZ complex.",
+      "claim_type": "EXPLICIT",
+      "source": "Kinetochore localization of Spindly critically depends on its ability to interact with the RZZ complex (Holland et al., 2015; Moudgil et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:11:07.732446Z"
+    },
+    {
+      "id": "7fdb7f07-b891-466a-be7b-ab6c37319195",
+      "content_id": "6d9638a7-21ef-4d61-bf7d-4f4f5e29986a",
+      "claim_id": "C52",
+      "claim": "Interaction of Spindly with RZZ requires the irreversible post-translational isoprenylation of Spindly with a farnesyl moiety on a cysteine residue near the Spindly C-terminus.",
+      "claim_type": "EXPLICIT",
+      "source": "The latter, in turn, requires the irreversible post-translational isoprenylation of Spindly with a farnesyl moiety on a cysteine residue near the Spindly C-terminus (Holland et al., 2015; Moudgil et al., 2015; Mosalaganti et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:11:07.732446Z"
+    },
+    {
+      "id": "0ee1241d-8ff5-4e9b-8b53-e8e8835b4240",
+      "content_id": "6d9638a7-21ef-4d61-bf7d-4f4f5e29986a",
+      "claim_id": "C53",
+      "claim": "The localization of Spindly to kinetochores is prevented when farnesyl transferase is inhibited.",
+      "claim_type": "EXPLICIT",
+      "source": "Potent FT inhibitors have been described, and previous studies demonstrated that the localization of Spindly to kinetochores is prevented when FT is inhibited (Holland et al., 2015; Moudgil et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:11:07.732446Z"
+    },
+    {
+      "id": "74c33e14-56af-4e6d-b912-c3cb87e35ccb",
+      "content_id": "6d9638a7-21ef-4d61-bf7d-4f4f5e29986a",
+      "claim_id": "C54",
+      "claim": "Farnesylation of Spindly has been reconstituted in vitro with purified components.",
+      "claim_type": "EXPLICIT",
+      "source": "Because farnesylation of Spindly has been reconstituted in vitro with purified components (Mosalaganti et al., 2017), we reasoned that we could exploit this reaction to promote kinetochore localization of recombinant Spindly in cells experiencing a long-term blockade of FT activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge from previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:11:07.732446Z"
+    },
+    {
+      "id": "b7abbc53-9f54-4499-a2a8-cf037202cafd",
+      "content_id": "6d9638a7-21ef-4d61-bf7d-4f4f5e29986a",
+      "claim_id": "C55",
+      "claim": "Only trace farnesylation of Spindly takes place in insect cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Our previous mass spectrometry analysis demonstrated that only trace farnesylation of Spindly takes place in insect cells (Mosalaganti et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established from previous mass spectrometry analysis.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:11:07.732446Z"
+    },
+    {
+      "id": "89710079-bb0b-4ded-8c86-605b26726b76",
+      "content_id": "6d9638a7-21ef-4d61-bf7d-4f4f5e29986a",
+      "claim_id": "C56",
+      "claim": "EP-delivered mCherry-Spindly localized at the periphery of kinetochores comparable to endogenous Spindly.",
+      "claim_type": "EXPLICIT",
+      "source": "When we EP-delivered fluorescent recombinant mCherry-Spindly into HeLa cells, we detected a fluorescent signal at the periphery of kinetochores that was comparable to the localization described for endogenous Spindly (Figure 4A\u2013B) (Holland et al., 2015), or of Spindly introduced by microinjection (unpublished observation).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by immunofluorescence imaging.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:11:07.732446Z"
+    },
+    {
+      "id": "3c6650a8-74d7-4a71-ad26-54d65d21707b",
+      "content_id": "6d9638a7-21ef-4d61-bf7d-4f4f5e29986a",
+      "claim_id": "C57",
+      "claim": "mCherry-SpindlyC602A, a mutant that cannot be farnesylated, failed to show any kinetochore localization upon EP.",
+      "claim_type": "EXPLICIT",
+      "source": "mCherry-SpindlyC602A, a mutant that cannot be farnesylated, failed to show any KT localization upon EP (Figure 4A\u2013B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by immunofluorescence imaging.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:11:07.732446Z"
+    },
+    {
+      "id": "fc51a1fe-0e2b-493c-8f66-05b8a4a27211",
+      "content_id": "6d9638a7-21ef-4d61-bf7d-4f4f5e29986a",
+      "claim_id": "C58",
+      "claim": "Wild type mCherry-Spindly becomes farnesylated after intracellular delivery.",
+      "claim_type": "EXPLICIT",
+      "source": "This indicated that wild type mCherry-Spindly becomes farnesylated after intracellular delivery.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the localization of wild-type Spindly but not the non-farnesylatable mutant.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:11:07.732446Z"
+    },
+    {
+      "id": "18559ca2-35ef-4230-9091-acaa54df7956",
+      "content_id": "6d9638a7-21ef-4d61-bf7d-4f4f5e29986a",
+      "claim_id": "C59",
+      "claim": "In the presence of FTI-227, localization of recombinant mCherry-Spindly or GFP-Spindly was greatly reduced.",
+      "claim_type": "EXPLICIT",
+      "source": "To further substantiate this, we treated cells with FTI-227, a selective farnesyl-transferase inhibitor (Appels et al., 2005). In the presence of FTI-227, localization of recombinant mCherry-Spindly or GFP-Spindly was greatly reduced (Figure 4B\u2013C), confirming that FT activity is required for Spindly localization.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by immunofluorescence imaging with FT inhibitor treatment.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:11:07.732446Z"
+    },
+    {
+      "id": "96375939-f87d-4292-8df6-f3793bcaa84b",
+      "content_id": "6d9638a7-21ef-4d61-bf7d-4f4f5e29986a",
+      "claim_id": "C60",
+      "claim": "FT activity is required for Spindly localization.",
+      "claim_type": "EXPLICIT",
+      "source": "In the presence of FTI-227, localization of recombinant mCherry-Spindly or GFP-Spindly was greatly reduced (Figure 4B\u2013C), confirming that FT activity is required for Spindly localization.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is confirmed by the FT inhibitor experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:11:07.732446Z"
+    },
+    {
+      "id": "97564a93-cedb-4df0-aaf5-59f567f5a9cf",
+      "content_id": "6d9638a7-21ef-4d61-bf7d-4f4f5e29986a",
+      "claim_id": "C61",
+      "claim": "mCherry-SpindlyF, but not GFP-Spindly, successfully targeted kinetochores in cells treated with FTI-227.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, mCherry-SpindlyF, but not GFP-Spindly, successfully targeted kinetochores, showing that the complementation of FT activity in vitro had bypassed the blockade of FT activity in cells by FTI-227.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by immunofluorescence imaging of cells treated with FT inhibitor.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:11:07.732446Z"
+    },
+    {
+      "id": "e5b3da67-a7a7-4137-be5f-446c4d376214",
+      "content_id": "6d9638a7-21ef-4d61-bf7d-4f4f5e29986a",
+      "claim_id": "C62",
+      "claim": "Pre-farnesylation of recombinant Spindly bypassed the need for endogenous farnesyl-transferase activity for proper kinetochore localization.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these findings substantiated the notion that pre-farnesylation of recombinant Spindly bypassed the need for endogenous farnesyl-transferase activity for proper kinetochore localization in HeLa cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by the rescue of Spindly localization with pre-farnesylated protein in FT-inhibited cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:11:07.732446Z"
+    },
+    {
+      "id": "58dad931-9aea-44ac-a423-9dfe18eed70c",
+      "content_id": "6d9638a7-21ef-4d61-bf7d-4f4f5e29986a",
+      "claim_id": "C63",
+      "claim": "Electroporation is a rapid, efficient, and semi-quantitative technique for protein delivery.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results identify EP as a rapid, efficient, and semi-quantitative technique that enables the delivery into various cultured mammalian cell lines of proteins of variable mass and hydrodynamic radius, including the highly elongated NDC80C.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion based on all the experimental results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:11:07.732446Z"
+    },
+    {
+      "id": "e6302ad0-1488-46ae-ba99-da286e2eb777",
+      "content_id": "6d9638a7-21ef-4d61-bf7d-4f4f5e29986a",
+      "claim_id": "C64",
+      "claim": "Delivered proteins remain largely structurally and functionally intact after electroporation delivery.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, we provide clear evidence that the delivered proteins remain largely structurally and functionally intact after delivery, as witnessed by their correct kinetochore localization and, where applicable, ability to complement siRNA-based depletion, dominant negative effects, and immunoprecipitation with endogenous interacting partners.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion based on multiple functional assays.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:11:07.732446Z"
+    },
+    {
+      "id": "4c23edae-399b-46e1-a9b8-c6d660a27508",
+      "content_id": "6d9638a7-21ef-4d61-bf7d-4f4f5e29986a",
+      "claim_id": "C65",
+      "claim": "EP is attractive because it allows delivery in sufficiently large cohorts of cells and is compatible with cell biochemistry.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, in addition to its ease of application, EP is very attractive because it allows delivery in sufficiently large cohorts of cells, and is therefore compatible with cell biochemistry, as clearly shown here.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the successful use of EP for biochemical analyses like immunoprecipitation.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:11:07.732446Z"
+    },
+    {
+      "id": "3033d95f-f29d-4067-82dc-1f5e37f7665e",
+      "content_id": "6d9638a7-21ef-4d61-bf7d-4f4f5e29986a",
+      "claim_id": "C66",
+      "claim": "EP may be generally compatible with many macromolecular interaction approaches, from mass spectrometry to immunoprecipitation.",
+      "claim_type": "EXPLICIT",
+      "source": "We envision EP to be generally compatible with many macromolecular interaction approaches, from mass spectrometry to immunoprecipitation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on the demonstrated compatibility with immunoprecipitation.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:11:07.732446Z"
+    },
+    {
+      "id": "9f07bd73-1ca1-44b7-b411-ad274929d47e",
+      "content_id": "6d9638a7-21ef-4d61-bf7d-4f4f5e29986a",
+      "claim_id": "C67",
+      "claim": "EP may become a method of choice for the identification of elusive binding partners when combined with suitable chemical modifications.",
+      "claim_type": "EXPLICIT",
+      "source": "If combined with suitable chemical modifications of the probes, for instance by introduction of acutely activatable crosslinking groups, EP may become a method of choice for the identification of elusive binding partners (for instance, low affinity substrates of enzymes) with high spatial and temporal resolution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about future applications.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:11:07.732446Z"
+    },
+    {
+      "id": "794381e9-7eb4-488f-8b62-b87ea2c68bd0",
+      "content_id": "6d9638a7-21ef-4d61-bf7d-4f4f5e29986a",
+      "claim_id": "C68",
+      "claim": "EP would expand the toolbox of reagents suitable for live-cell spectroscopic applications such as FLIM-FRET microscopy or FRAP analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Another obvious advantage of in vitro manipulations of macromolecules is that it allows precision labeling with small fluorescent dyes, potentially bypassing limits associated with tagging target proteins with bulky genetically encoded fluorescent proteins. In this context, EP would expand the toolbox of reagents suitable for live-cell spectroscopic applications such as FLIM-FRET microscopy or FRAP analysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on the demonstrated use of EP for FLIM-FRET.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:11:07.732446Z"
+    },
+    {
+      "id": "7f3b2999-30f3-4f29-8814-6b27f305adbf",
+      "content_id": "6d9638a7-21ef-4d61-bf7d-4f4f5e29986a",
+      "claim_id": "C69",
+      "claim": "EP has the potential to become a method of choice for delivery of synthetic or semi-synthetic proteins into the cellular environment.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, we envision that EP has the potential to become a method of choice for delivery of synthetic or semi-synthetic proteins into the cellular environment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative conclusion based on all the results.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:11:07.732446Z"
+    },
+    {
+      "id": "18a8fec3-08fa-4e39-a767-85ab57d41a56",
+      "content_id": "6d9638a7-21ef-4d61-bf7d-4f4f5e29986a",
+      "claim_id": "C70",
+      "claim": "Microinjection requires considerable handling skills and a dedicated setup that are not routinely available.",
+      "claim_type": "EXPLICIT",
+      "source": "Historically, microinjection first emerged as the method of choice for the introduction of recombinant proteins into mammalian cells (Komarova et al., 2007). However, it requires considerable handling skills and a dedicated setup that are not routinely available, and is a low-throughput approach that limits delivery to a small number of targeted cells (typically in the range of tens to hundreds).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about microinjection limitations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:11:07.732446Z"
+    },
+    {
+      "id": "903e2714-1f75-4fe4-9438-c775f774799e",
+      "content_id": "6d9638a7-21ef-4d61-bf7d-4f4f5e29986a",
+      "claim_id": "C71",
+      "claim": "Microinjection is a low-throughput approach that limits delivery to a small number of targeted cells.",
+      "claim_type": "EXPLICIT",
+      "source": "However, it requires considerable handling skills and a dedicated setup that are not routinely available, and is a low-throughput approach that limits delivery to a small number of targeted cells (typically in the range of tens to hundreds).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about microinjection limitations.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:11:07.732446Z"
+    },
+    {
+      "id": "7f14ba4a-5cef-4b27-846f-9b3b536b0c7b",
+      "content_id": "6d9638a7-21ef-4d61-bf7d-4f4f5e29986a",
+      "claim_id": "C72",
+      "claim": "Batch delivery methods such as cell-penetrating peptide tags, pore-forming bacterial toxins or osmocytosis present uncertainties with regard to protein uptake efficiencies, undefined routes of internalization and intracellular localization, as well as varying degrees of cytotoxicity.",
+      "claim_type": "EXPLICIT",
+      "source": "For higher throughput, batch delivery methods such as cell-penetrating peptide (CPP) tags (Inomata et al., 2009), pore-forming bacterial toxins (Teng et al., 2016; Ogino et al., 2009) or osmocytosis (D'Astolfo et al., 2015) are available, but present uncertainties with regard to protein uptake efficiencies, undefined routes of internalization and intracellular localization, as well as varying degrees of cytotoxicity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about limitations of other delivery methods.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:11:07.732446Z"
+    },
+    {
+      "id": "84c4d063-24f1-4f6e-836a-e773e9435ac1",
+      "content_id": "6d9638a7-21ef-4d61-bf7d-4f4f5e29986a",
+      "claim_id": "C73",
+      "claim": "EP-mediated protein transduction has surged in recent years with applications ranging from cellular structural biology to CRISPR-Cas9-mediated gene editing.",
+      "claim_type": "EXPLICIT",
+      "source": "EP-mediated protein transduction has surged in recent years with applications ranging from, cellular structural biology and the delivery of isotopically labeled proteins for in-cell NMR measurements (Theillet et al., 2016) to the introduction of immunoglobulins for targeting and degradation of endogenous proteins (Clift et al., 2017), and the delivery of ribonucleotide particles (RNPs) for CRISPR-Cas9-mediated gene editing (Kim et al., 2014; Lin et al., 2014; Liang et al., 2015; Hashimoto and Takemoto, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about recent applications of EP.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:11:07.732446Z"
+    },
+    {
+      "id": "8a57f835-1de6-46fc-8567-dd04d2e45b0b",
+      "content_id": "6d9638a7-21ef-4d61-bf7d-4f4f5e29986a",
+      "claim_id": "C74",
+      "claim": "Intracellular protein delivery by EP is a simple procedure that does not require specialized handling skills or dedicated instrumental set-ups.",
+      "claim_type": "EXPLICIT",
+      "source": "As outlined in Figure 1B and as described in detail in the Methods section, intracellular protein delivery by EP is a simple procedure that does not require specialized handling skills or dedicated instrumental set-ups, making it easy to establish in any laboratory.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a claim about the practical advantages of the method.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:11:07.732446Z"
+    },
+    {
+      "id": "235d46eb-9749-4742-8dd4-6fd8dad61f65",
+      "content_id": "6d9638a7-21ef-4d61-bf7d-4f4f5e29986a",
+      "claim_id": "C75",
+      "claim": "EP exposes a fundamental advantage over microinjection, which is limited to a small number of target cells and therefore unsuitable to biochemical analyses.",
+      "claim_type": "EXPLICIT",
+      "source": "This is noteworthy, as it exposes a fundamental advantage of EP over another protein targeting technique such as microinjection, which is limited to a small number of target cells and therefore unsuitable to biochemical analyses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the successful use of EP for western blotting and immunoprecipitation.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:11:07.732446Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "f3333988-91c5-4e0c-b2c7-163c1cc27fb6",
+      "content_id": "6d9638a7-21ef-4d61-bf7d-4f4f5e29986a",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Electroporation enables rapid, efficient, and semi-quantitative delivery of recombinant proteins into multiple mammalian cell lines with linear uptake kinetics, uniform intracellular distribution, and minimal cytotoxicity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C12-14 provide quantitative data showing linear uptake across cell types with limited toxicity. C19 and C63 summarize these findings appropriately. The methodology is well-characterized with flow cytometry, fluorimetry, and viability assays providing converging evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:11:07.732446Z"
+    },
+    {
+      "id": "5db7d6d2-633c-4219-8410-795609561dd0",
+      "content_id": "6d9638a7-21ef-4d61-bf7d-4f4f5e29986a",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Electroporated single polypeptide kinetochore proteins (CFP-BUBR1 and MAD2-TAMRA) exhibit native kinetochore localization that depends on known protein-protein interactions, with high delivery efficiency and uniform protein levels across cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "C15 and C20 demonstrate proper localization via colocalization with CREST. C17 provides a critical negative control showing the helix-deletion mutant fails to localize, confirming that localization depends on the expected BUB1 interaction (C16). C21 shows co-delivery is possible. Imaging data supports all claims.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:11:07.732446Z"
+    },
+    {
+      "id": "398ff96e-892b-4606-b244-d2abb8329163",
+      "content_id": "6d9638a7-21ef-4d61-bf7d-4f4f5e29986a",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "EP-delivered EGFP-TF3-KRAS biosensor localizes to the plasma membrane and responds to EGF stimulation with FLIM-FRET measurements that are qualitatively and quantitatively identical to microinjection experiments.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "C22 shows proper membrane localization. C23 demonstrates functional response to EGF. C24 provides critical validation by comparing to established microinjection data from prior work (Voss et al., 2016), showing EP produces equivalent results. This establishes EP as suitable for spectroscopic applications.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:11:07.732446Z"
+    },
+    {
+      "id": "cd56f197-5d3d-4b47-8d68-af66c40b2f04",
+      "content_id": "6d9638a7-21ef-4d61-bf7d-4f4f5e29986a",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Electroporated recombinant CFP-MIS12C multi-subunit complex (~120 kDa) localizes to kinetochores as a functionally intact assembly and fully rescues both chromosome congression defects and spindle assembly checkpoint signaling in cells depleted of endogenous MIS12C.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "C27-28 establish proper localization and complex integrity. C31-32 demonstrate functional rescue of chromosome congression with live-cell imaging. C34-35 show rescue of SAC function via mitotic arrest duration. C33 notes higher concentrations are needed for complete rescue, which is appropriately acknowledged. The combination of localization, biochemical, and functional data strongly supports this result.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:11:07.732446Z"
+    },
+    {
+      "id": "9dad7ac9-54f3-4ed9-994d-439cb92537eb",
+      "content_id": "6d9638a7-21ef-4d61-bf7d-4f4f5e29986a",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The highly elongated NDC80C complex (~60 nm length, ~180 kDa) is efficiently delivered by EP, localizes to kinetochores, establishes physiologic interactions with endogenous binding partners via immunoprecipitation, and does not cause cell cycle alterations or cytotoxicity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "C39-40 demonstrate successful delivery despite large size. C41-42 show normal cell cycle progression. C43 provides biochemical validation via co-IP with endogenous MIS12 and BUB1. C75 correctly notes the advantage over microinjection for biochemical analyses. The convergence of imaging, biochemical, and functional data supports this result.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:11:07.732446Z"
+    },
+    {
+      "id": "3ec65582-a62d-43db-8486-349f5981eaa6",
+      "content_id": "6d9638a7-21ef-4d61-bf7d-4f4f5e29986a",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "EP-delivered GFP-NDC80C9A mutant, which cannot be properly phosphoregulated, exerts a dominant-negative effect on error correction of kinetochore-microtubule attachments, causing accumulation of misaligned chromosomes after STLC treatment.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "C45 establishes the expected phenotype from prior work. C46-47 show the error correction assay results with appropriate controls (GFP and WT NDC80C correct errors, 9A mutant does not). C48 appropriately concludes dominant-negative effect. The functional assay demonstrates that EP-delivered proteins can exert expected dominant effects.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:11:07.732446Z"
+    },
+    {
+      "id": "5390dffa-800d-402c-8d7f-498e3225f82d",
+      "content_id": "6d9638a7-21ef-4d61-bf7d-4f4f5e29986a",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "In vitro pre-farnesylation of recombinant Spindly followed by electroporation enables robust kinetochore localization in cells with chronically inhibited farnesyl transferase activity, bypassing the requirement for endogenous farnesylation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "C56-58 establish that WT Spindly localizes (likely via cellular farnesylation) while C602A mutant does not. C59-60 show FT inhibitor blocks localization of non-pre-farnesylated Spindly. C61-62 demonstrate the key finding: pre-farnesylated Spindly localizes even with FT inhibition. This elegantly demonstrates EP can deliver chemically modified proteins that retain function.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:11:07.732446Z"
+    },
+    {
+      "id": "6e3fa020-c328-42ef-9d80-51623f014656",
+      "content_id": "6d9638a7-21ef-4d61-bf7d-4f4f5e29986a",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Delivered proteins remain structurally and functionally intact after electroporation, as evidenced by correct localization, ability to complement depletion, dominant-negative effects, and immunoprecipitation with endogenous partners, with EP being compatible with biochemical analyses due to large cell numbers.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "C64-65 are summary claims appropriately supported by the totality of experimental evidence from multiple proteins (BUBR1, MAD2, MIS12C, NDC80C, Spindly, KRAS). The convergence of localization, functional complementation, biochemical interaction, and spectroscopic data across multiple systems strongly supports these conclusions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:11:07.732446Z"
+    },
+    {
+      "id": "12818425-ae55-4ee2-94cf-1f6188166844",
+      "content_id": "6d9638a7-21ef-4d61-bf7d-4f4f5e29986a",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Electroporation is well-suited to deliver synthetic and chemically modified versions of functional proteins and constitutes a promising tool for applications in chemical and synthetic biology.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "C7-8 are appropriately supported by the Spindly farnesylation experiments (C6, C61-62) and the KRAS FRET biosensor experiments (C22-24), which demonstrate successful delivery and function of chemically modified proteins. However, the scope is limited to the specific modifications tested (farnesylation, fluorescent labeling).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:11:07.732446Z"
+    },
+    {
+      "id": "9d898ba9-315d-4911-baca-59b3870a1d76",
+      "content_id": "6d9638a7-21ef-4d61-bf7d-4f4f5e29986a",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "EP may be generally compatible with macromolecular interaction approaches, could enable identification of elusive binding partners with crosslinking modifications, would expand toolboxes for spectroscopic applications, and has potential to become a method of choice for synthetic protein delivery.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "C66-69 are speculative claims about future applications. While C66 is reasonably supported by the demonstrated IP compatibility (C43), C67-68 are extrapolations beyond demonstrated data. C69 is an aspirational conclusion. These represent reasonable hypotheses but lack direct experimental validation in the manuscript.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:11:07.732446Z"
+    },
+    {
+      "id": "1c10cb44-c164-4510-961f-57245d27f05e",
+      "content_id": "6d9638a7-21ef-4d61-bf7d-4f4f5e29986a",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Electroporated recombinant Ndc80 and Mis12 complexes physically interact with endogenous binding partners and functionally complement depleted endogenous counterparts to promote mitotic checkpoint signaling and chromosome segregation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "C3 is supported by IP data (C43, Figure 3D). C4 is supported by functional complementation data for MIS12C (C32, C35, Figure 2). These are appropriately demonstrated with converging biochemical and functional evidence. Note: NDC80C complementation is not directly tested (only dominant-negative), but the claim is supported for MIS12C.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:11:07.732446Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "2d005c16-d51d-4cca-9909-e61439f6aeb8",
+      "result_id": "f3333988-91c5-4e0c-b2c7-163c1cc27fb6"
+    },
+    {
+      "claim_id": "19ad0e58-ce2e-45b3-b035-712b9c9d6cb1",
+      "result_id": "f3333988-91c5-4e0c-b2c7-163c1cc27fb6"
+    },
+    {
+      "claim_id": "8107ed46-e81c-4d69-9b41-897dfc4be41c",
+      "result_id": "f3333988-91c5-4e0c-b2c7-163c1cc27fb6"
+    },
+    {
+      "claim_id": "c564b6e8-4aef-49b3-a033-67915f124321",
+      "result_id": "f3333988-91c5-4e0c-b2c7-163c1cc27fb6"
+    },
+    {
+      "claim_id": "c35f0d59-542f-4407-b3e0-0fa59ea63a4b",
+      "result_id": "f3333988-91c5-4e0c-b2c7-163c1cc27fb6"
+    },
+    {
+      "claim_id": "58dad931-9aea-44ac-a423-9dfe18eed70c",
+      "result_id": "f3333988-91c5-4e0c-b2c7-163c1cc27fb6"
+    },
+    {
+      "claim_id": "8a57f835-1de6-46fc-8567-dd04d2e45b0b",
+      "result_id": "f3333988-91c5-4e0c-b2c7-163c1cc27fb6"
+    },
+    {
+      "claim_id": "9050cb73-641e-4aa7-a0ca-d2237f38f38f",
+      "result_id": "5db7d6d2-633c-4219-8410-795609561dd0"
+    },
+    {
+      "claim_id": "e60f0aac-6d8e-4437-83f7-c98815b42854",
+      "result_id": "5db7d6d2-633c-4219-8410-795609561dd0"
+    },
+    {
+      "claim_id": "9bae9cf5-d4d9-4fd4-8223-44719bdb037e",
+      "result_id": "5db7d6d2-633c-4219-8410-795609561dd0"
+    },
+    {
+      "claim_id": "54341c2a-4d80-4119-9512-f29083f78552",
+      "result_id": "5db7d6d2-633c-4219-8410-795609561dd0"
+    },
+    {
+      "claim_id": "85d97e2d-b5e6-4d1a-9c90-f3086ade0777",
+      "result_id": "5db7d6d2-633c-4219-8410-795609561dd0"
+    },
+    {
+      "claim_id": "26ebb544-dea9-4029-8403-a2c63c9dc4c6",
+      "result_id": "5db7d6d2-633c-4219-8410-795609561dd0"
+    },
+    {
+      "claim_id": "634b00a7-2539-4c2d-9568-4f5c3d34ed66",
+      "result_id": "398ff96e-892b-4606-b244-d2abb8329163"
+    },
+    {
+      "claim_id": "b3726ff1-c91a-4bef-bae6-0d7bd3bcf885",
+      "result_id": "398ff96e-892b-4606-b244-d2abb8329163"
+    },
+    {
+      "claim_id": "2fb3eb78-ea2b-458e-a9af-97d83af29c49",
+      "result_id": "398ff96e-892b-4606-b244-d2abb8329163"
+    },
+    {
+      "claim_id": "1181f25c-bf94-4540-a13b-a7575d73c6ac",
+      "result_id": "cd56f197-5d3d-4b47-8d68-af66c40b2f04"
+    },
+    {
+      "claim_id": "dcb2c7a8-a75b-410f-a9e3-0f7a997087ab",
+      "result_id": "cd56f197-5d3d-4b47-8d68-af66c40b2f04"
+    },
+    {
+      "claim_id": "8e426269-c3e1-455e-a942-1888c8ea2361",
+      "result_id": "cd56f197-5d3d-4b47-8d68-af66c40b2f04"
+    },
+    {
+      "claim_id": "d2c99aa9-1927-4001-8eed-add19c1c5c6b",
+      "result_id": "cd56f197-5d3d-4b47-8d68-af66c40b2f04"
+    },
+    {
+      "claim_id": "f8f7ba16-410f-4435-a1a7-09ae55677b5b",
+      "result_id": "cd56f197-5d3d-4b47-8d68-af66c40b2f04"
+    },
+    {
+      "claim_id": "70a70c19-788e-4727-adcd-3c25833beca6",
+      "result_id": "cd56f197-5d3d-4b47-8d68-af66c40b2f04"
+    },
+    {
+      "claim_id": "9b5748b8-e86e-4356-b996-121f81c2ef5c",
+      "result_id": "cd56f197-5d3d-4b47-8d68-af66c40b2f04"
+    },
+    {
+      "claim_id": "95333532-10c8-4c63-a7c6-b48b8ccea929",
+      "result_id": "cd56f197-5d3d-4b47-8d68-af66c40b2f04"
+    },
+    {
+      "claim_id": "a01c27da-0719-4fbe-be6a-cb349743fa08",
+      "result_id": "cd56f197-5d3d-4b47-8d68-af66c40b2f04"
+    },
+    {
+      "claim_id": "08152711-664e-4c5c-b5f0-0030b90af22c",
+      "result_id": "cd56f197-5d3d-4b47-8d68-af66c40b2f04"
+    },
+    {
+      "claim_id": "40a53524-2adb-4dff-9245-1d65334bb162",
+      "result_id": "cd56f197-5d3d-4b47-8d68-af66c40b2f04"
+    },
+    {
+      "claim_id": "53899c2e-c54d-4bb8-9a34-f5ba718895f3",
+      "result_id": "cd56f197-5d3d-4b47-8d68-af66c40b2f04"
+    },
+    {
+      "claim_id": "17de18c8-e9eb-4152-88da-f751c4edd916",
+      "result_id": "cd56f197-5d3d-4b47-8d68-af66c40b2f04"
+    },
+    {
+      "claim_id": "de691409-f53c-4ca7-82f5-d87d63f046cb",
+      "result_id": "cd56f197-5d3d-4b47-8d68-af66c40b2f04"
+    },
+    {
+      "claim_id": "1181f25c-bf94-4540-a13b-a7575d73c6ac",
+      "result_id": "9dad7ac9-54f3-4ed9-994d-439cb92537eb"
+    },
+    {
+      "claim_id": "fa9bfea9-d907-48e4-b6a0-905628befcec",
+      "result_id": "9dad7ac9-54f3-4ed9-994d-439cb92537eb"
+    },
+    {
+      "claim_id": "863e5a95-ffb1-40b9-82be-92b21e5a0490",
+      "result_id": "9dad7ac9-54f3-4ed9-994d-439cb92537eb"
+    },
+    {
+      "claim_id": "2aef795f-1523-43f3-ba5b-cf8f3597d47f",
+      "result_id": "9dad7ac9-54f3-4ed9-994d-439cb92537eb"
+    },
+    {
+      "claim_id": "8537e9b7-37f9-4a4b-b701-92c0d1777cde",
+      "result_id": "9dad7ac9-54f3-4ed9-994d-439cb92537eb"
+    },
+    {
+      "claim_id": "e6e496d7-4cac-448f-9f35-f30f599a072a",
+      "result_id": "9dad7ac9-54f3-4ed9-994d-439cb92537eb"
+    },
+    {
+      "claim_id": "050107fb-9017-4ccd-a8c7-e275b8c54331",
+      "result_id": "9dad7ac9-54f3-4ed9-994d-439cb92537eb"
+    },
+    {
+      "claim_id": "1c5079a0-b14a-4feb-8fb2-1768ee72fa2d",
+      "result_id": "9dad7ac9-54f3-4ed9-994d-439cb92537eb"
+    },
+    {
+      "claim_id": "235d46eb-9749-4742-8dd4-6fd8dad61f65",
+      "result_id": "9dad7ac9-54f3-4ed9-994d-439cb92537eb"
+    },
+    {
+      "claim_id": "7da4da4f-64ea-4191-8668-8d3acb333e11",
+      "result_id": "3ec65582-a62d-43db-8486-349f5981eaa6"
+    },
+    {
+      "claim_id": "57edf3bf-f3a8-498c-8ce8-754bd00c1d82",
+      "result_id": "3ec65582-a62d-43db-8486-349f5981eaa6"
+    },
+    {
+      "claim_id": "b67f2f3a-13f1-41ee-8358-79b00c7b254b",
+      "result_id": "3ec65582-a62d-43db-8486-349f5981eaa6"
+    },
+    {
+      "claim_id": "b19895eb-27cd-40c6-b011-eb0ce125675d",
+      "result_id": "3ec65582-a62d-43db-8486-349f5981eaa6"
+    },
+    {
+      "claim_id": "a7164832-9cf6-4f2b-8e60-841fb0958d2e",
+      "result_id": "5390dffa-800d-402c-8d7f-498e3225f82d"
+    },
+    {
+      "claim_id": "957f7f16-b7bc-4c95-b4f7-531026de42c4",
+      "result_id": "5390dffa-800d-402c-8d7f-498e3225f82d"
+    },
+    {
+      "claim_id": "cd219188-e893-457d-a17a-dd46f333093c",
+      "result_id": "5390dffa-800d-402c-8d7f-498e3225f82d"
+    },
+    {
+      "claim_id": "c66d6521-64d6-4e07-8bf3-7049865c1f9f",
+      "result_id": "5390dffa-800d-402c-8d7f-498e3225f82d"
+    },
+    {
+      "claim_id": "0d088a8f-b5fb-42ec-91ce-b21e277b65e4",
+      "result_id": "5390dffa-800d-402c-8d7f-498e3225f82d"
+    },
+    {
+      "claim_id": "7fdb7f07-b891-466a-be7b-ab6c37319195",
+      "result_id": "5390dffa-800d-402c-8d7f-498e3225f82d"
+    },
+    {
+      "claim_id": "0ee1241d-8ff5-4e9b-8b53-e8e8835b4240",
+      "result_id": "5390dffa-800d-402c-8d7f-498e3225f82d"
+    },
+    {
+      "claim_id": "74c33e14-56af-4e6d-b912-c3cb87e35ccb",
+      "result_id": "5390dffa-800d-402c-8d7f-498e3225f82d"
+    },
+    {
+      "claim_id": "b7abbc53-9f54-4499-a2a8-cf037202cafd",
+      "result_id": "5390dffa-800d-402c-8d7f-498e3225f82d"
+    },
+    {
+      "claim_id": "89710079-bb0b-4ded-8c86-605b26726b76",
+      "result_id": "5390dffa-800d-402c-8d7f-498e3225f82d"
+    },
+    {
+      "claim_id": "3c6650a8-74d7-4a71-ad26-54d65d21707b",
+      "result_id": "5390dffa-800d-402c-8d7f-498e3225f82d"
+    },
+    {
+      "claim_id": "fc51a1fe-0e2b-493c-8f66-05b8a4a27211",
+      "result_id": "5390dffa-800d-402c-8d7f-498e3225f82d"
+    },
+    {
+      "claim_id": "18559ca2-35ef-4230-9091-acaa54df7956",
+      "result_id": "5390dffa-800d-402c-8d7f-498e3225f82d"
+    },
+    {
+      "claim_id": "96375939-f87d-4292-8df6-f3793bcaa84b",
+      "result_id": "5390dffa-800d-402c-8d7f-498e3225f82d"
+    },
+    {
+      "claim_id": "97564a93-cedb-4df0-aaf5-59f567f5a9cf",
+      "result_id": "5390dffa-800d-402c-8d7f-498e3225f82d"
+    },
+    {
+      "claim_id": "e5b3da67-a7a7-4137-be5f-446c4d376214",
+      "result_id": "5390dffa-800d-402c-8d7f-498e3225f82d"
+    },
+    {
+      "claim_id": "e6302ad0-1488-46ae-ba99-da286e2eb777",
+      "result_id": "6e3fa020-c328-42ef-9d80-51623f014656"
+    },
+    {
+      "claim_id": "4c23edae-399b-46e1-a9b8-c6d660a27508",
+      "result_id": "6e3fa020-c328-42ef-9d80-51623f014656"
+    },
+    {
+      "claim_id": "35edf2f1-a09b-4529-a973-41a0b46b197e",
+      "result_id": "12818425-ae55-4ee2-94cf-1f6188166844"
+    },
+    {
+      "claim_id": "a9af7b87-c97b-4cce-8b33-a82013dd9f97",
+      "result_id": "12818425-ae55-4ee2-94cf-1f6188166844"
+    },
+    {
+      "claim_id": "3033d95f-f29d-4067-82dc-1f5e37f7665e",
+      "result_id": "9d898ba9-315d-4911-baca-59b3870a1d76"
+    },
+    {
+      "claim_id": "9f07bd73-1ca1-44b7-b411-ad274929d47e",
+      "result_id": "9d898ba9-315d-4911-baca-59b3870a1d76"
+    },
+    {
+      "claim_id": "794381e9-7eb4-488f-8b62-b87ea2c68bd0",
+      "result_id": "9d898ba9-315d-4911-baca-59b3870a1d76"
+    },
+    {
+      "claim_id": "7f3b2999-30f3-4f29-8814-6b27f305adbf",
+      "result_id": "9d898ba9-315d-4911-baca-59b3870a1d76"
+    },
+    {
+      "claim_id": "d0bf8e8c-61eb-4cff-84d0-4e4a48746f54",
+      "result_id": "1c10cb44-c164-4510-961f-57245d27f05e"
+    },
+    {
+      "claim_id": "3d15cb6d-181b-43a4-bf3e-788d3ef9961f",
+      "result_id": "1c10cb44-c164-4510-961f-57245d27f05e"
+    }
+  ],
+  "comparisons": []
+}

@@ -1,0 +1,1576 @@
+{
+  "submission": {
+    "id": "9f3b39de-2c0a-4dc3-933b-fc47f5898c18",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T20:45:56.089906Z",
+    "updated_at": "2025-12-02T20:45:56.089906Z"
+  },
+  "content": [
+    {
+      "id": "0a1f0437-02dc-43c3-bcff-7f3bc22d031e",
+      "submission_id": "9f3b39de-2c0a-4dc3-933b-fc47f5898c18",
+      "content_type": "manuscript",
+      "content_text": "# Structural and functional characterization of G protein\u2013coupled receptors with deep mutational scanning\n\n## Authors\n\n- Eric M Jones<sup>1</sup> ([ORCID: 0000-0002-6648-1965](https://orcid.org/0000-0002-6648-1965))\n- Nathan B Lubock<sup>1</sup> ([ORCID: 0000-0001-8064-2465](https://orcid.org/0000-0001-8064-2465))\n- AJ Venkatakrishnan<sup>2</sup> ([ORCID: 0000-0003-2819-3214](https://orcid.org/0000-0003-2819-3214))\n- Jeffrey Wang<sup>1</sup>\n- Alex M Tseng<sup>3</sup>\n- Joseph M Paggi<sup>3</sup>\n- Naomi R Latorraca<sup>3</sup>\n- Daniel Cancilla<sup>1</sup>\n- Megan Satyadi<sup>1</sup>\n- Jessica E Davis<sup>1</sup>\n- M Madan Babu<sup>2</sup>\n- Ron O Dror<sup>3</sup> \u2020\n- Sriram Kosuri<sup>1</sup> ([ORCID: 0000-0002-4661-0600](https://orcid.org/0000-0002-4661-0600)) \u2020\n\n### Affiliations\n\n1. Department of Chemistry and Biochemistry, UCLA-DOE Institute for Genomics and Proteomics, Molecular Biology Institute, Quantitative and Computational Biology Institute, Eli and Edythe Broad Center of Regenerative Medicine and Stem Cell Research, and Jonsson Comprehensive Cancer Center, UCLA Los Angeles United States\n2. MRC Laboratory of Molecular Biology Cambridge United Kingdom\n3. Department of Computer Science, Stanford University, Department of Computer Science, Institute for Computational and Mathematical Engineering, Stanford University, Department of Computer Science, Department of Molecular and Cellular Physiology, Stanford University School of Medicine, Department of Computer Science, Department of Structural Biology, Stanford University School of Medicine Stanford United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe >800 human G protein\u2013coupled receptors (GPCRs) are responsible for transducing diverse chemical stimuli to alter cell state- and are the largest class of drug targets. Their myriad structural conformations and various modes of signaling make it challenging to understand their structure and function. Here, we developed a platform to characterize large libraries of GPCR variants in human cell lines with a barcoded transcriptional reporter of G protein signal transduction. We tested 7800 of 7828 possible single amino acid substitutions to the beta-2 adrenergic receptor (\u03b22AR) at four concentrations of the agonist isoproterenol. We identified residues specifically important for \u03b22AR signaling, mutations in the human population that are potentially loss of function, and residues that modulate basal activity. Using unsupervised learning, we identify residues critical for signaling, including all major structural motifs and molecular interfaces. We also find a previously uncharacterized structural latch spanning the first two extracellular loops that is highly conserved across Class A GPCRs and is conformationally rigid in both the inactive and active states of the receptor. More broadly, by linking deep mutational scanning with engineered transcriptional reporters, we establish a generalizable method for exploring pharmacogenomics, structure and function across broad classes of drug receptors.\n\n## Introduction\n\nG-protein-coupled receptors (GPCRs) are central mediators of mammalian cells\u2019 ability to sense and respond to their environment. The\u00a0>800 human GPCRs respond to a wide range of chemical stimuli such as hormones, odors, natural products, and drugs by modulating a small set of defined pathways that affect cellular physiology\u00a0(Isberg et al., 2016; Niimura et al., 2014). Their central role in altering relevant cell states makes them ideal targets for therapeutic intervention, with\u00a0~34% of all U.S. Food and Drug Administration (FDA)-approved drugs targeting the GPCR superfamily\u00a0(Hauser et al., 2017).\n\nUnderstanding GPCR signal transduction is non-trivial for several reasons. First, GPCRs exist in a complex conformational landscape, making traditional biochemical and biophysical characterization difficult\u00a0(Deupi and Kobilka, 2010; Kobilka and Deupi, 2007). Consequently, most experimentally\u00a0determined GPCR structures are truncated, non-native, or artificially stabilized\u00a0(Isberg et al., 2016). Even when structures exist, the majority are of inactive states - GPCR conformations that cannot couple with a G protein and cause it to stimulate intracellular signaling. Second, the function of a GPCR depends on its ability to change shape. Static structures from both X-ray crystallography and cryo electron microscopy do not directly probe structural dynamics\u00a0(Granier and Kobilka, 2012). Tools such as double electron-electron resonance (DEER) spectroscopy, nuclear magnetic resonance (NMR) spectroscopy, and computational simulation have aided our understanding of GPCR dynamics, but interpreting how structural dynamics relate to function is still difficult\u00a0(Latorraca et al., 2017; Manglik and Kobilka, 2014).\n\nStructure- and dynamics-based analyses generate sets of candidate residues that are potentially critical for function and warrant further characterization. These approaches are complemented by methods that directly perturb protein function such as mutagenesis followed by functional screening. Several reporter gene and protein complementation assays measure GPCR signal transduction by activation of a transcriptional reporter, and are often used to identify and validate important structural residues\u00a0(Pei et al., 1994; Sch\u00f6negge et al., 2017; Valentin-Hansen et al., 2012). Such transcriptional reporter assays exist for most major drug receptor classes, including the major GPCR pathways: G\u0251s, G\u0251q, G\u0251i/o, and arrestin signaling\u00a0(Azimzadeh et al., 2017; Cheng et al., 2010; Kroeze et al., 2015).\n\nRecent advances in DNA synthesis, genome editing, and next-generation sequencing have enabled deep mutational scanning (DMS) approaches that functionally assay all possible missense mutants of a given protein\u00a0(Fowler and Fields, 2014; Starita et al., 2017). Several new methods allow for the generation and screening of DMS libraries in human cell lines and yeast\u00a0(Kotler et al., 2018; Lee et al., 2018; Majithia et al., 2016; Mavor et al., 2018; Starita et al., 2018). Function is usually assessed by next-generation sequencing using screens that are bespoke to each gene\u2019s function, or by more general approaches that allow characterization of expression levels rather than function\u00a0(Matreyek et al., 2018). For GPCRs, the DMS of the CXCR4, CCR5, and T1R2 GPCRs used binding to external epitopes to test expression and ligand binding\u00a0(Heredia et al., 2018; Park et al., 2019). Unfortunately, such assays tell us little about the signaling capacity of these mutants, which is the primary function of GPCRs and many other drug receptors.\n\nHere, we develop an experimental approach to simultaneously profile variant libraries with barcoded transcriptional reporters in human cell lines using RNA-seq. Methods to detect GPCR activation in multiplex have been previously described by us and others\u00a0(Botvinnik et al., 2010; Galinski et al., 2018; Jones et al., 2019). Galinski et al.\u2019s method reports on GPCR activity with a \u03b2-arrestin proximity sensor, requiring engineering of both arrestin and the GPCR, and enabling broad detection of GPCR activation across multiple signaling modalities. Our method is widely applicable to GPCRs and across the druggable genome where transcriptional reporters exist. As a proof-of-principle, we perform DMS on a prototypical GPCR, the \u03b22-adrenergic receptor (\u03b22AR) and measure the consequences of these mutations through the cyclic AMP (cAMP) dependent pathway, the primary signaling modality of Gs-coupled GPCRs.\n\n## Results\n\n### Multiplexed screening platform for Gs-coupled GPCR signaling\n\nWe developed a system to build, stably express, and assay individual variants of the \u03b22AR in human cell lines. The \u03b22AR primarily signals through the heterotrimeric Gs protein, activating adenylyl cyclase upon agonist binding. In our platform, cAMP production stimulates transcription of a barcoded reporter gene, controlled by multimerized cAMP response elements (CRE, thus referred to as the CRE reporter for the rest of the manuscript), which can be quantified by RNA-seq (Figure 1A). Initially, we generated a HEK293T-derived cell line for stable integration of the GPCR-reporter construct (Figure 1B, Figure 1\u2014figure supplement 1A,B). We also modified a previously developed Bxb1-landing pad system to allow for stable, once-only integration at the transcriptionally-silent H11 safe-harbor locus to avoid placing the CRE reporter within transcribed genes\u00a0(Cheung et al., 2019; Duportet et al., 2014; Matreyek et al., 2017). To prevent endogenous signaling, we knocked out the gene encoding for \u03b22AR, ADRB2, and verified loss of CRE reporter gene activity in response to the \u03b22AR agonist, isoproterenol (Figure 1\u2014figure supplement 1C). Our donor vector configuration ensures the receptor and resistance marker are only activated upon successful integration into the landing pad (Figure 1B). Lastly, we included several sequence elements in the donor vector to improve signal-to-noise of the assay: an insulator upstream of the CRE reporter and an N-terminal affinity tag to the receptor (Figure 1\u2014figure supplement 1D,E). As a result, upon integration of a donor vector expressing wild-type (WT) \u03b22AR, isoproterenol induces CRE reporter gene expression in a dose-dependent manner (Figure 1B).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/54895/elife-54895-fig1-v2.jpg)\n\n**Figure 1.:** (A)\u00a0Overview of the multiplexed GPCR activity assay. Plasmids encoding ADRB2 variants, a transcriptional CRE reporter of signaling activity, and 15 nucleotide barcode sequences that identify the variant are integrated into a defined genomic locus such that one variant is present per cell. Upon stimulation by isoproterenol, G-protein signaling induces transcription of the CRE genetic reporter and the barcode. Thus, the activity of a given variant is proportional to the amount of barcode mRNA which can be read out in multiplex by RNA-seq. (B) Schematic detailing the recombination of the reporter-receptor expression plasmid into the landing pad locus. Top right: activation of the CRE reporter integrated with (purple) or without (grey) exogenous ADRB2 into the landing pad when stimulated with isoproterenol in \u0394ADRB2 cells via a luciferase CRE reporter gene assay. (C) Overview of library generation and functional assay. Missense variants are synthesized on an oligonucleotide microarray, the oligos are amplified with random DNA barcode sequences appended, and the variants are cloned into wild-type background vectors. Barcode-variant pairs are mapped with next-generation sequencing and the remaining wild-type receptor and CRE reporter sequences are cloned into the vector. Next, the variant library is integrated en masse into the serine recombinase (Bxb1) landing pad engineered at the H11 locus of \u0394ADRB2 HEK293T cells. This integration strategy ensures a single pair of receptor variant and barcoded CRE reporter is integrated per cell and avoids crosstalk. After selection, the library is stimulated with various concentrations of the \u03b22AR agonist, isoproterenol. Finally, mutant activity is determined by measuring the relative abundance of each variant\u2019s barcoded reporter transcript with RNA-seq.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/54895/elife-54895-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A)\u00a0Schematic of experiment to ensure the landing pad is present at single copy in the genome and thus recombine a single donor plasmid per cell. Single copy integration is essential to prevent receptors of variable functionality to activate barcoded reporters mapped to other variants. Upon co-expression of the promoterless GFP and mCherry plasmids with bxb1 recombinase sites, a cell line with a single landing pad will exclusively integrate one cassette. Therefore, cells will be either GFP+ or mCherry+ but never both. (B) Flow cytometry plots detailing the percentage of GFP+ and mCherry+ cells when transfected with an equimolar ratio of promoterless GFP and mCherry expression cassettes with or without Bxb1 recombinase expression. (C) Activation of a cAMP-responsive luciferase reporter gene integrated in the landing pad when stimulated with isoproterenol in a WT or \u0394ADRB2 background. Activation of the reporter in the WT background emphasizes the importance of generating a \u0394ADRB2 cell line for the multiplexed assay. (D) Activation of the genetic reporter/ADRB2 expression cassette with or without a CHS4 DNA insulator upstream of the reporter gene integrated in the landing pad when stimulated with isoproterenol. (E) Fold activation of an integrated genetic reporter/ADRB2 expression cassette with a FLAG-tag or 3x-FLAG tag fused to the N-terminus of ADRB2. (F) Alterations to the processes in the multiplexed assay that improve barcode abundance estimate. Initially, we seeded 2,300,000 cells/replicate and processed\u00a0~25 \u00b5g of total RNA per replicate and observed modest correlation (r\u00a0=\u00a00.54). We then scaled up to seeding 32,000,000 cells/replicate and correlation improved (r\u00a0=\u00a00.85). Finally, we began processing\u00a0~650 \u00b5g of total RNA/replicate and noticed further improvement (r\u00a0=\u00a00.90). (G) Heatmap displaying the barcodes per variant across the genomically integrated library. (H) Histogram displaying the frequency barcodes per variant across the genomically integrated library.\n\nWe designed and synthesized the receptor\u2019s 7828 possible missense variants in eight segments on oligonucleotide microarrays (Figure 1C). We amplified the mutant oligos, attaching a random 15 nucleotide barcode sequence, and cloned them into one of eight background vectors encoding the upstream, wild-type portion of the gene. In this configuration, we mapped barcode-variant pairs with next-generation sequencing and subsequently utilized Type IIS restriction enzymes to insert the remaining sequence elements between the receptor and barcode. In the resulting mature donor vector, the barcode is located in the 3\u2019 untranslated region (UTR) of the CRE reporter gene. We integrated the library into our engineered cell line, and developed protocols to ensure proper quantification of library members, most notably vastly increasing the numbers of cells we assayed and RNA processed for the RNA-seq (Figure 1\u2014figure supplement 1F, Figure 2\u2014figure supplement 1A).\n\n### Measurement of mutant activities and comparison to evolutionary metrics\n\nWe screened the mutant library at four concentrations of the \u03b22AR full-agonist isoproterenol: vehicle control, an empirically determined half-maximal activity (EC50, 150 nM), full activity (EC100, 625 nM), and beyond saturation of the WT receptor (Emax, 5 \u00b5M). We obtained reliable measurements (coefficient of variation\u00a0<1) for 95\u201399% (7,461\u20137,749/7,828 depending on the agonist concentration) of possible missense variants (412 residues * 19 amino acids\u00a0=\u00a07828 possible missense variants) with two biological replicates at each condition (Figure 1C). We normalized these measurements against forskolin treatment, which induces cAMP signaling independent of the \u03b22AR\u00a0(Insel and Ostrom, 2003). Forskolin treatment maximally induces the CRE reporter gene, therefore the relative barcode expression is proportional to the physical composition of the library. Each cell contains a single copy of the same CRE reporter sequence, therefore any differences in maximum transcriptional output between barcodes will be due to differences in the frequency of each barcode within the cell library. Finally, we define activity as the ratio of this value to the mean frameshift (Materials\u00a0and\u00a0methods). Each variant was represented by 10 barcodes (median), with biological replicates displaying Pearson\u2019s correlations of 0.87 to 0.90 at the barcode level and 0.66 to 0.75 when summarized by individual variants (Figure 1\u2014figure supplement 1G,H, Figure 2\u2014figure supplement 1A). Of note, we aimed for 10 barcodes per variant in order to account for any effects individual barcodes will have on CRE reporter transcription and serve as statistical replicates for each variant.\n\nThe heatmap representation of the variant-activity landscape reveals global and regional trends in response to specific subtypes of mutations (Figure 2A). For example, the transmembrane domain and intracellular helix eight are more sensitive to substitution than the termini or loops, and this effect becomes more pronounced at higher agonist concentrations (Figure 2A; all p<0.001; Mann-Whitney U). The transmembrane domain and intracellular helix eight are also sensitive to helix-disrupting proline substitutions (Figure 2B, Figure 2\u2014figure supplement 1B; all p<<0.001 except TM vs Helix-8; Mann-Whitney U). Microarray-derived DNA often contains single-base deletions (47% of oligos in our library) that will introduce frameshift mutations into our library\u00a0(LeProust et al., 2010). As expected, frameshifts consistently display lower activity than missense mutations regardless of agonist concentration (Figure 2C; p<<0.001; Mann-Whitney U). Furthermore, the effect of frameshifts are markedly decreased in the C-terminus of the protein (Figure 2D; p<<0.001; Mann-Whitney U). We also built and integrated previously characterized mutants\u00a0(Elling et al., 1999; Sato et al., 1999; Shenoy et al., 2006) into our system individually and measured activity with a luciferase CRE reporter gene at the same induction conditions (Figure 2E and Figure 2\u2014figure supplement 1C). As expected, known null mutations (D113A and I135W) have significantly diminished activity relative to WT in both systems, even at Emax (all p<<0.001; Wald Test). Known hypomorphic mutations (S203A and S204A) also have a significant decrease in activity relative to WT at EC100 (all p<<0.001; Wald Test), but are not significantly different than WT at Emax as expected (all p>0.01; Wald Test).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/54895/elife-54895-fig2-v2.jpg)\n\n**Figure 2.:** (A)\u00a0Top: Secondary structure diagram of the \u03b22AR: the N and C termini are black, the transmembrane helices are purple blocks, and the intra- and extracellular domains are colored blue and green, respectively. The EVmutation track (EVmut.) displays the mean effect of mutation at each position as predicted from sequence covariation\u00a0(Hopf et al., 2017). Conservation track (Cons.) displays the sequence conservation of each residue across 55 \u03b22AR orthologs from the OMA database (Capra and Singh, 2007; Altenhoff et al., 2018). A.U. stands for arbitrary units and the scale for the EVmutation and sequence conservation tracks are individually 0\u20131 normalized. The shaded guides represent positions in the transmembrane domain. Bottom: The heatmap representation of mutant activity at each agonist condition. Variants are colored by their activity score. relative to the mean frameshift mutation. Activity is the measurement of signaling for each variant relative to the mean frameshift (see methods). (B) The distribution of mutant activity for proline substitutions is significantly different for amino acids that reside in the transmembrane domain/helix eight to those in the flexible loops and termini at EC100 (all p<<0.001 except TM vs Helix 8; Mann-Whitney U). (C) The distribution of frameshift mutant activity (red) is significantly different than the distribution of designed missense mutations (blue) across increasing isoproterenol concentrations (both p<<0.001; Mann-Whitney U). Mean frameshift activity marked with a dashed line. (D) Relative effect of the mean frameshift mutant activity per position is markedly decreased in the unstructured C-terminus of the protein (shaded region) and is consistent across agonist concentration (both p<<0.001; Mann-Whitney U). Blue line represents the LOESS fit. (E) Mutant activity measured individually with a luciferase CRE reporter gene compared to the multiplexed assay at EC100 and EMax isoproterenol induction. Known null mutations (D113A, I135W) have no dose response between EC100 and Emax and are significantly different than synonymous mutants at both concentrations in both systems (all p<<0.001; Wald test). Alternatively, known hypomorphic mutations (S203A, S204A) are significantly different than synonymous mutations at EC100 (all p<<0.001; Wald test), but are not significantly different at Emax (all p>0.01; Wald test). Bars represent mean value in the luciferase data. In the Individual facet, each dot represents a replicate measurement and in the multiplexed facet, each dot represents a different barcode.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/54895/elife-54895-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A)\u00a0The measurements between barcodes at the RNA-seq level are correlated (r\u00a0=\u00a00.89, r\u00a0=\u00a00.89, r\u00a0=\u00a00.9, r\u00a0=\u00a00.87) at all agonist concentrations (0, EC50, EC100, and EMax Iso). Similarly, the mean forskolin-normalized values for each variant are correlated at every concentration as well (r\u00a0=\u00a00.66, r\u00a0=\u00a00.69, r\u00a0=\u00a00.73, r\u00a0=\u00a00.75). Representative plots from EC100 Iso shown. Bars represent log10 counts per hex-bin. (B) Activity of proline mutations stratified by domain reveals a proline sensitivity in the transmembrane domain across all agonist conditions. (C) Mutant activity measured individually with a luciferase reporter gene compared to the multiplexed assay at EC100 and EMax isoproterenol induction. Known hypomorphic mutations (S203A, S204A, S207A, Y219A) are significantly different than WT at EC100 (all p<<0.001 except S207A in multiplex - p=0.009; Wald test), but recover to near WT activity at Emax (all p>0.01; Wald test) in both systems. Alternatively, known null mutations (D113A, I135W) are significantly different than WT regardless of the drug concentration (all p<<0.001; Wald test). Bars represent mean value in luciferase data.\n\nMetrics for sequence conservation and covariation are often used to predict the effects a mutation will have on protein function\u00a0(Adzhubei et al., 2013; Capra and Singh, 2007; Hopf et al., 2017). Mutational tolerance, the mean activity of all amino acid substitutions per residue at each agonist concentration, is highly correlated to conservation, both across species for the \u03b22AR (Figure 3\u2014figure supplement 1A; Spearman's \u03c1\u00a0=\u00a0\u22120.74; 55 orthologs, predominantly mammals but including a few other vertebrates as well as a small number of invertebrate beta-like sequences, identified from the OMA Database, Supplementary file 1), and across all Class A GPCRs (Spearman's \u03c1\u00a0=\u00a0\u22120.68; Figure 3A and Figure 3\u2014figure supplement 1B;\u00a0Altenhoff et al., 2018; Capra and Singh, 2007; Hopf et al., 2017) at EC100. From this point on, any use of the words tolerance or intolerance in this manuscript refer to mutational tolerance. Correlation between our data and both predictors increases with agonist concentration up to EC100 (Figure 3\u2014figure supplement 1A,B). We found a subset of residues in extracellular loop 2 (ECL2), including C184 and C190 that form an intraloop disulfide bridge, that were more intolerant to mutation than expected given their conservation across Class A GPCRs. This suggests a fairly specific functional role for this motif in the \u03b22AR (Figure 3A). On an individual variant level, mutational responses correlate (Spearman's \u03c1\u00a0=\u00a00.520) with EVmutation, a predictor of mutational effects from sequence covariation (Figure 3B and Figure 3\u2014figure supplement 1C;\u00a0Altenhoff et al., 2018; Capra and Singh, 2007; Hopf et al., 2017).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/54895/elife-54895-fig3-v2.jpg)\n\n**Figure 3.:** (A)\u00a0Positional conservation across Class A GPCRs correlates with mutational tolerance (Spearman's \u03c1\u00a0=\u00a0\u22120.676, Pearson\u2019s r\u00a0=\u00a0\u22120.681), the mean activity of all amino acid substitutions per residue at each agonist concentration, at EC100. However, four of the least conserved positions (C190, C184, A181, Y185) are highly sensitive to mutation and are located in ECL2, suggesting this region is uniquely important to the \u03b22AR. The blue line is a simple linear regression. (B) Individual mutant activity correlates with EVmutation (Spearman's \u03c1\u00a0=\u00a00.521, Pearson\u2019s r\u00a0=\u00a00.480) at EC100. The blue line is a simple linear regression. (C) Activity of individual mutants present in the human population from the gnomAD database stratified by allele frequency. Mutations are classified as potential loss of function (LoF) mutations (orange) are classified as such (shaded region) if the mean activity at EC100 plus the standard error of the mean (upper error bar) is more than two standard deviations below mean frameshift mutant activity (dashed line). (D) The distribution of the 100 most basally activating mutations across the \u03b22AR snake plot reveals a clustering of mutants in the termini, TM1, TM5, and TM6. (E) Top: Distribution of the 100 most basally activating mutations stratified by domain. Bottom: The distribution of the 100 most basally activating mutations across the \u03b22AR 3D structure (PDB: 3SN6). These positions (colored as in D) are concentrated on the surface of the \u03b22AR (G\u0251s shown in blue).\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/54895/elife-54895-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A)\u00a0Mutational tolerance is highly correlated with species-level sequence conservation and is maximized at EC100 (Spearman's \u03c1\u00a0=\u00a0\u22120.673, Pearsons r\u00a0=\u00a0\u22120.65; \u03c1\u00a0=\u00a0\u22120.71, r\u00a0=\u00a0\u22120.69; \u03c1\u00a0=\u00a0\u22120.74, r\u00a0=\u00a0\u22120.73; \u03c1\u00a0=\u00a0\u22120.64, r\u00a0=\u00a0\u22120.62; for -Iso, EC50 Iso, EC100 Iso, and EMax Iso, respectively; all p<<0.0001). Here, we calculated sequence conservation using the Jensen-Shannon divergence from a multiple alignment of 55 ADRB2 orthologs from the OMA database. The blue line is a simple linear regression. (B) Similarly, mutational tolerance of the individual positions is highly correlated with sequence conservation across Class A GPCRs and is also maximized at EC100 (\u03c1\u00a0=\u00a0\u22120.57, r\u00a0=\u00a0\u22120.57; \u03c1\u00a0=\u00a0\u22120.62, r\u00a0=\u00a0\u22120.63; \u03c1\u00a0=\u00a0\u22120.68, r\u00a0=\u00a0\u22120.68; \u03c1\u00a0=\u00a0\u22120.64, r\u00a0=\u00a0\u22120.65 for -Iso, EC50 Iso, EC100 Iso, and EMax Iso, respectively; all p<<0.0001). The blue line is a simple linear regression. (C) Activity measurements for individual substitutions correlates with predictions from EVMutation, and is maximized at EC100 (\u03c1\u00a0=\u00a00.37, r\u00a0=\u00a00.33; \u03c1\u00a0=\u00a00.46, r\u00a0=\u00a00.41; \u03c1\u00a0=\u00a00.52, r\u00a0=\u00a00.48; \u03c1\u00a0=\u00a00.50, r\u00a0=\u00a00.49; all p<<0.0001). The blue line is a simple linear regression. (D) The location of the 100 most deleterious mutations by activity score at EMax Iso on the \u03b22AR snake plot. Mutations are concentrated in the transmembrane domain. (E) Top: Distribution of the 100 most deleterious mutations by activity score at EMax Iso stratified by domain. Bottom: Location of these mutants on the 3D structure of the \u03b22AR. These positions (colored as in D) tend to face into the core of the \u03b22AR (PDB: 3SN6; Gs in blue).\n\n### Population genetics and structural analysis of individual variants\n\nIn addition to evolutionary metrics, understanding the functional distribution of ADRB2 variants found within the human population is important given the extensive variation found among GPCR drug targets\u00a0(Hauser et al., 2018). The Genome Aggregation Database (gnomAD) reports variants found across 141,456 individuals\u00a0(Karczewski et al., 2019), and many of the 180 ADRB2 missense variants are of unknown significance. We classified 11 of these variants as potentially loss of function, by comparing their activity to the distribution of frameshift mutations found in our assay (Figure 3C; see Materials\u00a0and\u00a0methods). Given that measurements of individual mutations are noisy (average coefficient of variation\u00a0=\u00a00.55), this analysis is best suited as a funnel to guide further characterization (see Discussion).\n\nHowever, our analysis is more robust when we aggregate the signal of multiple mutations at a given position. Therefore, we compiled a list of the 100 most activating mutations at vehicle control and the 100 least active mutations at EC100 and mapped their location on the \u03b22AR structure. As expected, the least active mutations tended to reside within the core of the transmembrane domain (Figure 3\u2014figure supplement 1D,E). Alternatively, the most activating mutations mapped to TM1, TM5, TM6, and residues that typically face away from the internal core of the receptor (Figure 3D,E). Of note, a group of these mutations in TM5 face TM6, which undergoes a large structural rearrangement during receptor activation\u00a0(Weis and Kobilka, 2018). Activating mutants are also enriched in the termini, ICL3, and Helix 8. Concentration at the termini is unsurprising, as these regions have known involvement in surface expression and our current assay does not discriminate between increased signaling potency and expression (see discussion; Dong et al., 2007). However, there are cases of constitutively active mutations in the N terminus that increase signaling potency without affecting surface expression, such as T11S of the melanocortin 4 (MC4R) (Lotta et al., 2019). Similarly, the enrichment of activating mutants in ICL3 appears to reflect its role in G-protein binding\u00a0(Ozcan et al., 2013; Ozgur et al., 2016; West et al., 2011). Lastly, we observe a number of activating mutations in the terminal residue, L413. A recent study of genetic variation in human MC4R also found a gain-of-function mutation at the terminal residue of the receptor, suggesting a possible conserved role for this position in regulating basal activity of GPCRs\u00a0(Lotta et al., 2019).\n\n### Unsupervised learning reveals functionally relevant groupings of residues\n\nGiven that our data spans thousands of mutations across several treatment conditions, we used unsupervised learning methods to reveal hidden regularities within groups of residues\u2019 response to mutation. In particular, we applied Uniform Manifold Approximation and Projection (UMAP)\u00a0(McInnes and Healy, 2018) to learn multiple different lower\u00a0dimensional representations of our data and clustered the output with density-based hierarchical clustering (HDBSCAN; Figure 4\u2014figure supplement 1;\u00a0Campello et al., 2013). We found residues consistently separated into six clusters that exhibit distinct responses to mutation (Figure 4A,B). Clusters 1 and 2 are globally intolerant to all substitutions, whereas Cluster 3 is vulnerable to proline and charged substitutions. Cluster 4 is particularly inhibited by negatively charged substitutions and Cluster five by proline substitutions, while Cluster 6 is unaffected by any mutation. Mapping these clusters onto a 2D snake plot representation shows Clusters 1\u20135 primarily comprise the transmembrane domain, while Cluster 6 resides in the loops and termini (Figure 4C). These flexible regions are often truncated before crystal structure determination to minimize conformational variability\u00a0(Rosenbaum et al., 2007). Surprisingly, a number of residues from Cluster five also map there, suggesting potential structured regions. However, Cluster 5 assignment is largely based on the response of a single proline mutation, and thus is more susceptible to noise than the other clusters (see Discussion).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/54895/elife-54895-fig4-v2.jpg)\n\n**Figure 4.:** (A)\u00a0Amino acids were segregated into classes based on their physicochemical properties and mean activity scores were reported by class for each residue. With Uniform Manifold Approximation and Projection (UMAP) a 2D representation of every residue\u2019s response to each mutation class across agonist conditions was learned. Each residue is assigned into one of six clusters using HDBSCAN (see Figure 4\u2014figure supplement 1). (B) Class averages for each of these cluster reveal distinct responses to mutation. The upper dashed line represents the mean activity of Cluster 6 and the lower solid line represents the mean activity of frameshift mutations. (C) A 2D snake plot representation of \u03b22AR secondary structure with each residue colored by cluster identity.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/54895/elife-54895-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Given the high dimensionality of the mutational responses, Uniform Manifold Approximation and Projection (UMAP)\u00a0(McInnes and Healy, 2018) was used to learn lower\u00a0dimension representations of the all the mutational data across agonist conditions summarized by amino acid class before clustering the output with HDBSCAN (minimum cluster size\u00a0=\u00a010)\u00a0(Campello et al., 2013). To ensure that the clustering results are not biased by a particular UMAP embedding, a hyperparameter search was run over the dimension and nearest neighbor parameters of UMAP. The HDBSCAN cluster assignments were plotted on a 2D UMAP embedding to ease visualization. Points that HDBSCAN does not assign to a cluster are colored powder blue. Groups of residues reliably cluster together regardless of the UMAP embedding, and residues were assigned to one of six distinct clusters.\n\nNext, we projected the clusters onto the hydroxybenzyl isoproterenol-bound structure (Figure 5\u2014figure supplement 1A; PDB: 4LDL). The globally intolerant Clusters 1 and 2 segregate to the core of the protein, while the charge-sensitive Cluster 3 is enriched in the lipid-facing portion (Figure 5\u2014figure supplement 1B). This suggests that differential patterns of response to hydrophobic and charged substitutions could correlate with side chain orientation within the transmembrane domain. Indeed, residues that are uniquely charge sensitive are significantly more lipid-facing than those that are sensitive to both hydrophobic and charged mutations at EC100 (Figure 5A, Figure 5\u2014figure supplement 1C\u2013D, p=0.000036; Mann-Whitney U)\u00a0(Mitternacht, 2016).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/54895/elife-54895-fig5-v2.jpg)\n\n**Figure 5.:** (A)\u00a0Residues within the transmembrane domain colored by their tolerance to particular classes of amino acid substitution. Teal residues are intolerant to both hydrophobic and charged amino acids (globally intolerant), and brown residues are tolerant to hydrophobic amino acids but intolerant to charged amino acids (charge intolerant). The charge-sensitive positions\u2019 side chains are enriched pointing into the membrane, while the globally intolerant positions\u2019 side chains face into the core of the protein (see Figure 5\u2014figure supplement 1). (B) The crystal structure of the hydroxybenzyl isoproterenol-activated state of the \u03b22AR (PDB: 4LDL) with residues from the mutationally intolerant Clusters 1 and 2 highlighted in maroon. (C) 412 \u03b22AR residues rank ordered by mutational tolerance at the EC100 isoproterenol condition. Residues in known structural motifs (colored points) are significantly more sensitive to mutation than other positions on the protein (p<<0.001). Dashed line demarcates the median of the ranking. The top 15 mutationally intolerant residues are listed and colored by motif association. (D-F) Selected vignettes of residues from the mutationally intolerant UMAP clusters and ranking. (D) W2866x48 of the CWxP motif and the neighboring G3157x41 are positioned in close proximity. Substitutions at G3157x41 are likely to cause a steric clash with W2866x48 (PDB: 4LDL). (E) An inactive-state water-mediated hydrogen bond network (red) associates N511x50 and Y3267x53 (PDB: 2RH1). Disruption of this network may destabilize the receptor. (F) The ligand-bound orthosteric site surface colored by mutational tolerance. Receptor-ligand contacts with the catecholamine head (present in agonist used in assay) are more intolerant to mutation than those in the hydroxybenzyl tail (not present in agonist used in assay) of the isoproterenol analog depicted in this crystal structure (PDB: 4LDL).\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/54895/elife-54895-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A)\u00a0The crystal structure of the hydroxybenzyl isoproterenol-activated state of the \u03b22AR (PDB: 4LDL) with residues colored by UMAP cluster identity. (B) Distributions of solvent-accessible surface area (SASA) for each cluster at EC100. (C) Hydrophobic versus charge sensitivity across all drug conditions. Points are colored by cluster identity. Residues are defined as globally intolerant to substitution if their hydrophobic and charge sensitivity is greater than 0. Similarly, residues are defined to be uniquely charge sensitive if their hydrophobic sensitivity is less than one and their charge sensitivity is greater than 1 (see Materials\u00a0and\u00a0methods). (D) The median SASA is significantly higher for positions in the charge-sensitive clusters when compared to the ones in the intolerant clusters across all drug concentrations (all p<0.0005). This suggests that the charge-sensitive cluster residues point toward the lipid, whereas the ones that are intolerant tend to be buried in the core of the protein.\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/54895/elife-54895-fig5-figsupp2-v2.jpg)\n\n**Figure 5\u2014figure supplement 2.:** (A)\u00a0Relative activation of an integrated CRE luciferase reporter gene for \u03b22AR missense variants mentioned in the manuscript. (B) Functional consequences of mutation for a set of residues near the G-protein coupling region involved in GPCR activation\u00a0(Venkatakrishnan et al., 2016). (C) Residues that interact with the catecholamine head (orange) of hydroxybenzyl isoproterenol have significantly lower mutational tolerance than those that interact with the hydroxybenzyl functional group on the tail (purple). In our assay, we screened with isoproterenol lacking the hydroxybenzyl tail. These differences are significantly different at EC50 (p=0.028), EC100 (p=0.016), and saturating agonist concentration (p=0.008). (D)\u00a0Functional consequences of mutation at predicted contacts of a cholesterol binding pocket determined in the timolol-bound structure of the \u03b22AR inactive state (PDB: 3D4S). As predicted, the highly conserved, across species and class A GPCRs, W1584x50 is the most constrained residue. The shaded bars represent\u00a0\u00b11 standard deviation of the mutational tolerance in the tolerant Cluster 6 (green) or the intolerant Clusters 1 and 2 (red). The mean activity of every mutation at a given position (the mutational tolerance) is shown as a blue bar. (E) Effects of mutations at residues in the Gs interface. (F) Three of the four most intolerant \u03b22AR residues at the G-protein interface (brown) from the \u03b22AR-Gs complex crystal structure (PDB: 3SN6), V2225x61, I1353x54, and Q2295x68.\n\n### Mutational tolerance stratifies the functional relevance of structural features\n\nDecades of research have revealed how ligand binding is coupled to G-protein activation through a series of conserved motifs\u00a0(Weis and Kobilka, 2018). This comprehensive, unbiased screen enables us to systematically evaluate and rank the functional importance of every implicated residue. The globally intolerant UMAP clusters (1 and 2) highlight many residues from these motifs and suggest novel residues for investigation (Figure 5B). We can further resolve the significance of individual residues within these motifs by ranking the mutational tolerance of positions in these clusters at EC100 (Figure 5C). In fact, 11 of the 15 most mutationally intolerant positions belong to the PIF, CWxP, and NPxxY motif, orthosteric site, a water-mediated bond network, an extracellular disulfide bond, and a cholesterol-binding site. Interestingly, the second most intolerant residue is the uncharacterized G3157x41 (GPCRdb numbering in superscript\u00a0Isberg et al., 2016). In the active state, G315\u2019s alpha carbon points directly at W2866x48 of the CWxP motif, the fourth most intolerant residue, and any substitution at G3157.x41 will likely clash with W2866x48 (Figure 5D). We confirmed G315\u2019s intolerance with a luciferase CRE reporter gene assay, where mutants G315T and G315L resulted in complete loss of function (Figure 5\u2014figure supplement 2A).\n\nRecent simulations suggest water-mediated hydrogen bond networks play a critical role in GPCR function\u00a0(Venkatakrishnan et al., 2018; Venkatakrishnan et al., 2019). The third most intolerant residue in our assay, Y3267x53 of the NPxxY motif, is especially important as it switches between two of these networks during receptor activation. In the inactive state, Y3267x53 contacts N511x50 and D792x50, two of the top 15 most intolerant positions (Figure 5E). N51L and N51Y also result in complete loss of function when assayed individually (Figure 5\u2014figure supplement 2A). The movement of Y3267x53 is also part of a broader rearrangement of residue contacts that are conserved across Class A GPCRs, with the majority of these residues being intolerant to mutation (Figure 5\u2014figure supplement 2B;\u00a0Venkatakrishnan et al., 2016). Aside from G3157x41, the other uncharacterized residues in the top 15 include W9923x50, S3197x46, and G832x54. Given the correlation between mutational tolerance and functional relevance, further investigation of these residues will likely reveal insights into GPCR biology.\n\nNext, we hypothesized residues in the orthosteric site that directly contact isoproterenol would respond uniquely to mutation; however, no crystal structure of \u03b22AR bound to isoproterenol exists. Using the crystal structure of the \u03b22AR bound to the analog, hydroxybenzyl isoproterenol (PDB: 4LDL), we find that residues responsible for binding the derivatized hydroxybenzyl tail have significantly higher mutational tolerance than residues that contact the catecholamine head common to both isoproterenol and hydroxybenzyl isoproterenol at EC100 (p=0.0162; Figure 5F, Figure 5\u2014figure supplement 2C). Given this discrimination, we believe DMS can be a powerful tool for mapping functional ligand-receptor contacts in GPCRs.\n\nGPCR signaling is dependent on a series of intermolecular interactions, and the numerous \u03b22AR crystal structures enable us to comprehensively evaluate residues mediating such interactions. For example, cholesterol is an important modulator of GPCR function\u00a0(Thal et al., 2018), and the timolol-bound inactive-state \u03b22AR structure elucidated the location of a cholesterol-binding site (PDB: 3D4S)\u00a0(Hanson et al., 2008). Of residues in this pocket, W1584x50 is predicted to be most important for cholesterol binding, and in agreement, W1584x50 is the most mutationally intolerant (Figure 5\u2014figure supplement 2D). Similarly, a number of studies have mutagenized residues at the G\u0251s-\u03b22AR interface\u00a0(Jensen et al., 2001; Moro et al., 1993; O'Dowd et al., 1988; Rasmussen et al., 2011; Sheikh et al., 1999; Swaminath et al., 2003; Valentin-Hansen et al., 2012; Valiquette et al., 1995), but a complete understanding of the relative contribution of each residue to maintaining the interface is unknown. Most residues are more mutationally tolerant than residues in the intolerant Clusters 1 and 2, but the four most intolerant positions are I1353x54, V2225x61, A2716x33, and Q2295x68 respectively (Figure 5\u2014figure supplement 2E). Q2295x68 appears to coordinate polar interactions between D381 and R385 of the \u03b15 helix of G\u0251s, whereas V2225x61 and I1353x54 form a hydrophobic pocket on the receptor surface (Figure 5\u2014figure supplement 2F).\n\n### A structural latch is conserved across Class A GPCRs\n\nAnalysis of the mutational tolerance data has highlighted the functional importance of previously uncharacterized residues. In particular, W9923x50 of extracellular loop 1 (ECL1) is the 13th most intolerant residue, which is unusual as mutationally intolerant residues are rare in the flexible loops. Furthermore, W9923x50 is proximal to the disulfide bond C1063x25-C19145x50, an important motif for stabilization of the receptor\u2019s active state\u00a0(Noda et al., 1994; Dohlman et al., 1990; Hulme, 2013;\u00a0Dohlman et al., 1990; Noda et al., 1994). While aromatic residues are known to facilitate disulfide bond formation, only tryptophan is tolerated at this position (Bhattacharyya et al., 2004). We hypothesize W99\u2019s indole group hydrogen bonds with the backbone carbonyl of the neighboring uncharacterized and mutationally intolerant G1023x21, positioning W9923x50 toward the disulfide bond. Other aromatic residues are unable to form this hydrogen bond and are less likely to be positioned properly. G1023x21 also hydrogen bonds with the backbone amide of C1063x25, further stabilizing this region. To verify this claim, we individually confirmed the mutational intolerance of both W9923x50 and G1023x21 (Figure 6\u2014figure supplement 1A). Additionally, we evaluated surface expression for a subset of W9923\u00d750 and G1023\u00d721 mutants (Figure 6\u2014figure supplement 1B). Relative to three previously characterized mutants with severely impaired surface expression\u00a0(Parmar et al., 2017) and wild-type \u03b22AR, the mutants exhibited mildly impaired to normal surface expression\u2014supporting a role in signaling for these residues.\n\nInterestingly, W9923x50, G1023x21, and C1063x25 are almost universally conserved across Class A GPCRs\u00a0(Vass et al., 2018; Figure 6A, Figure 6\u2014figure supplement 1C). Comparison of over 25 high-resolution structures of class A GPCRs from five functionally different sub-families and six different species revealed that these residues consistently contact each other (Figure 6B,C). Based on the evolutionary and structural conservation across Class A GPCRs, we find W9923x50, G1023x21, and the C1063x25-C19145x50 disulfide bond represent a conserved WxxGxxxC motif, forming an extracellular \u2018structural latch\u2019 that is maintained consistently throughout GPCRs spanning diverse molecular functions and phylogenetic origins. While a minority of Class A GPCRs lack the Trp/Gly combination of residues in the ECL1 region, these receptors have varying structures in ECL1: an alpha helix (sphingosine S1P receptor), beta strand (adenosine receptor), or even intrinsically disordered (viral chemokine receptor US28) (Figure 6\u2014figure supplement 1D).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/54895/elife-54895-fig6-v2.jpg)\n\n**Figure 6.:** (A)\u00a0Sequence conservation of extracellular loop 1 (ECL1) and the extracellular interface of TM3 (202 Class A GPCRs with a disulfide bridge between TM3 and ECL1). (B) Left: Depiction of the interaction of W9923x50, G1023x21, and C1063x25 in ECL1 of the \u03b22AR. Top Right: Conservation of the structure of the ECL1 region across functionally different class A GPCRs. Bottom Right: Activity of all 19 missense variants assayed for each of the three conserved residues, with the mean activity (mutational tolerance) shown as a blue bar. The shaded bars represent the mean mutational tolerance\u00a0\u00b1\u00a01 SD of residues in the tolerant Cluster 6 (green) and the intolerant Clusters 1 and 2 (red). (C) A hydrogen bond network between mutationally intolerant positions W9923x50, G1023x21, and C1063x25. Representative examples of the structural latch are shown. (D) This structural latch is maintained in both the inactive and active state structures for the \u03b22AR (inactive: 2RH1, active: 3P0G), the M2 muscarinic receptor (inactive: 3UON, active: 4MQS), the angiotensin II type one receptor (inactive: 4ZUD, active: 6OS1), and the mu-opioid receptor (inactive: 4DKL, active: 5C1M).\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/54895/elife-54895-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (A)\u00a0Individual verification of the mutational intolerance of W9923x50 and G1023x21. Relative activation of an integrated CRE luciferase reporter gene for \u03b22AR missense variants. (B) Surface expression (anti-FLAG immunostaining and flow cytometry) of \u03b22AR missense variants min-max normalized to wild-type and no receptor controls. (C) Functional and evolutionary diversity of Class A GPCRs with the WxxGxxxC motif. (D) ECL1 structures of the four Class A GPCRs lacking the WxxGxxxC Motif, S1P1R, LPAR-1, A2A, and US28.\n\nTo better understand the dynamics of the structural latch, we compared the active and inactive state crystal structures of four representative GPCRs. While the overall RMSD between the inactive and active states for the \u03b22AR, M2 muscarinic receptor, and \u03bc opioid receptorreceptor are 1 \u00c5,1.5 \u00c5, and 1.7 \u00c5respectively, the conformation of the latch in the active and inactive states is nearly identical in each receptor (Figure 6D). This suggests that the extracellular structural latch is part of a larger rigid plug present at the interface of the transmembrane and extracellular regions, which could be important for the structural integrity of the receptor and possibly guide ligand entry.\n\nIn Class A receptors lacking components of the WxxGxxxC motif, introducing the Trp-Gly interaction could increase the stability of the receptor for structural studies. In fact, in the BLT1 receptor structure, a Gly mutation at 3\u00d721 was found to be thermostabilizing\u00a0(Hori et al., 2018). Other candidate receptors lacking a Gly at 3\u00d721 include the alpha2B receptor and the neuropeptide FF2 receptor, where the R81G and D112G mutations have potential to increase receptor stability,\u00a0respectively. More broadly, these ECL1/TM3 positions conserved across Class A GPCRs could serve as candidate sites for introducing thermostabilizing mutations.\n\n## Discussion\n\nOur findings showcase a new, generalizable approach for DMS of human protein targets with transcriptional reporters. Such reporters enable precise measurements of gene-specific function that can be widely applied across the druggable genome. We show comprehensive mutagenesis can illuminate the structural organization of the protein and the local environment of individual residues. These results suggest DMS can work in concert with other techniques (e.g. X-ray crystallography, Cryo-EM, and molecular dynamics) to augment our understanding of GPCR structure-function relationships. Moreover, we identify key residues for \u03b22AR function including uncharacterized positions that inform about receptor stability and activation. Importantly, these approaches can be undertaken when direct structural information is unavailable but reporters exist, which is true for most GPCRs.\n\nThere are still a number of limitations to our current approach that we expect will improve as we develop the method. Importantly, we did not quantify cell-surface expression directly in our high-throughput functional assay, and thus we cannot distinguish between mutations that substantially affect G-protein signaling and those that affect cell-surface expression. In particular, mutations that lead to increased signal in our assays could in fact work by reducing GPCR internalization and not by increasing the intrinsic activity of the receptor. However, we express our variant library in a genomic context at a controlled copy number, dampening the effects of expression-related artifacts typically associated with assays that involve transiently transfected receptor. In addition, expression level alterations can affect the dynamics of signaling and thus may be physiologically relevant. For example, the GPCR MC4R is haploinsufficient, and rare heterozygous mutations that eliminate or reduce receptor expression are associated with obesity\u00a0(Farooqi et al., 2003; Khera et al., 2019; Lotta et al., 2019). Combining our assay with new generalized, multiplexed assays of protein expression levels in human cells can help tease apart mechanistic reasons for differences in signaling\u00a0(Matreyek et al., 2018). Secondly, the current signal-to-noise ratio of this approach at single-variant resolution restricted our analyses to mutations with extreme effects on receptor function. This made interpreting single mutations challenging. For example, several mutations within the C\u00a0terminus exhibited a sensitivity to proline substitution. This was surprising because the C\u00a0terminus is thought to be a flexible, disordered region\u00a0(Cherezov et al., 2007; Rasmussen et al., 2007). We individually synthesized and tested three of these mutations (E369P, R253P, and T360P) and found that they did not disrupt function (Figure 5\u2014figure supplement 2A). Thus, individual variant data should be confirmed by more traditional assays until the signal-to-noise ratio is improved. However, our measurements are robust in aggregate, and pointed to new receptor biology, providing structural and functional insights. Further improvements to the signal-to-noise will facilitate the exploration of more subtle aspects of individual mutations.\n\nLooking forward, our method is well-poised to investigate many outstanding questions in GPCR and drug receptor biology. First, individual GPCRs signal through multiple pathways, including pathways mediated by various G proteins and arrestins (Galandrin et al., 2007; DeWire et al., 2007; Hilger et al., 2018; Luttrell, 2008). We have only measured cAMP signaling in this manuscript, the primary signaling pathway of Gs-coupled GPCRs, but transcriptional reporters exist for the other signaling modalities and are compatible with our multiplexed approach. By leveraging transcriptional reporters for each of these pathways, we can understand the mechanisms that underpin signal transduction and biased signaling\u00a0(Reiter et al., 2012). Second, GPCRs are often targeted by synthetic molecules with either unknown or predicted binding sites, and often have no known structures. We find ligands imprint a mutational signature on their receptor contacts which could potentially reveal the binding site for allosteric ligands. However, it should be noted that variation in receptor response to chemically diverse ligands at the cell surface may not reflect differences in downstream signal\u00a0(Tsvetanova et al., 2017). We also found several regions on the external surface of the receptor where activating mutants are clustered. Since perturbations at these sites appear to increase receptor activity, they could potentially be targeted by positive allosteric modulators or allosteric agonists\u00a0(Thal et al., 2018). Third, the identification of mutations that can stabilize specific conformations or increase receptor expression can aid in GPCR structure determination\u00a0(Serrano-Vega et al., 2008; Tate and Schertler, 2009). Fourth, the development of stable cell libraries expressing human medicinally\u00a0related GPCR variants can be combined with large-scale profiling against small molecule libraries to build very large-scale empirical maps for how small molecules modulate this broad class of receptors\u00a0(Botvinik and Rossner, 2012; Galinski et al., 2018; Jones et al., 2019). Finally, our approach is generalizable to many classes of drug receptors where transcriptional reporters exist or can be developed\u00a0(O'Connell et al., 2016), enabling the functional profiling, structural characterization, and pharmacogenomic analysis for most major drug target classes.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Cell line (Homo-sapiens)</td>\n      <td>HEK293T</td>\n      <td>ATCC</td>\n      <td>CRL-3216</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cell line (Homo-sapiens)</td>\n      <td>HEK293T\u0394ADRB2 + Landing Pad</td>\n      <td>This paper</td>\n      <td></td>\n      <td>Construction Information found in Endogenous ADRB2 Deletion using CRISPR/Cas9 and Landing Pad Genome Editing Sections</td>\n    </tr>\n    <tr>\n      <td>Gene (Homo-sapiens)</td>\n      <td>ADRB2</td>\n      <td>NCBI</td>\n      <td>Gene ID 154</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Isoproterenol</td>\n      <td>Millipore Sigma</td>\n      <td>I5627</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Forskolin</td>\n      <td>Millipore Sigma</td>\n      <td>F6886</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>Dual Glo Luciferase Assay</td>\n      <td>Promega</td>\n      <td>E2920</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>TALEN plasmids</td>\n      <td>Addgene</td>\n      <td>#51554 #51555</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>SpCas9 plasmid</td>\n      <td>Addgene</td>\n      <td>pX339</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Oligonucleotide Microarray</td>\n      <td>Agilent</td>\n      <td>Custom Synthesis</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>Nextseq Mid Output 300 cycle</td>\n      <td>Illumina</td>\n      <td>20024905</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>Nextseq High Output 75 cycle</td>\n      <td>Illumina</td>\n      <td>20024906</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Escherichia coli)</td>\n      <td>Dh5 alpha</td>\n      <td>New England Biolabs</td>\n      <td>C2989K</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>AlexaFluor 488 Anti-Flag rat monoclonal</td>\n      <td>Thermo Fisher</td>\n      <td>MA1-142-A488</td>\n      <td>(1:100)</td>\n    </tr>\n    <tr>\n      <td>Transfected construct (Homo-sapiens)</td>\n      <td>ADRB2 barcoded variant-reporter library</td>\n      <td>This paper</td>\n      <td></td>\n      <td>Reagent Construction Information found in Variant Library Generation and Cloning Section</td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>RNEasy Miniprep Kit</td>\n      <td>Qiagen</td>\n      <td>74104</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>Plasmid Plus DNA Maxi Kit</td>\n      <td>Qiagen</td>\n      <td>12963</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>Superscript IV</td>\n      <td>Thermo Fisher</td>\n      <td>18091050</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>Lipofectamine 3000</td>\n      <td>Thermo Fisher</td>\n      <td>L3000001</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>D1000 DNA Screen Tape</td>\n      <td>Agilent</td>\n      <td>5067\u20135582</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>D1000 Reafents</td>\n      <td>Agilent</td>\n      <td>5067\u20135583</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>SYBR FAST QPCR Master Mix</td>\n      <td>Roche</td>\n      <td>07959362001</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>Zymo Clean Gel DNA Recovery Kit</td>\n      <td>Zymo Research</td>\n      <td>D4007</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>Zymo DNA Clean and Concentrator Kit</td>\n      <td>Zymo Research</td>\n      <td>D4013</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>CD293</td>\n      <td>Thermo Fisher Scientific</td>\n      <td>11913019</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>BBTools</td>\n      <td>Brian Bushnell</td>\n      <td>https://jgi.doe.gov/data-and-tools/bbtools/</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Jensen-Shannon Conservation</td>\n      <td>https://doi.org/10.1093/bioinformatics/btm270</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>OMA Orthology Database</td>\n      <td>https://doi.org/10.1093/nar/gkx1019</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>FreeSASA</td>\n      <td>10.12688/f1000research.7931.1</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>EVmutation</td>\n      <td>doi:10.1038/nbt.3769</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Parasail</td>\n      <td>http://dx.doi.org/10.1186/s12859-016-0930-z</td>\n      <td></td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### Cell line statement\n\nWe used HEK293T cells purchased from ATCC that were genetically modified in house. The identity of the lines have been verified with STR profiling and have tested negative for mycoplasma contamination.\n\n### Experimental methods\n\n#### Endogenous ADRB2 deletion using CRISPR/Cas9\n\nCas9 and sgRNAs targeting the sole exon of ADRB2 were cloned (addgene: pX330) and transfected into HEK293T cells according to the protocol outlined in Supplementary file 4;\u00a0Ran et al., 2013. After transfection, cells were seeded in a 96-well plate at a density of 0.5 cells/well. Wells were examined for single colonies after 3 days and expanded to 24-well plates after 7 days. Clones were screened for ADRB2 deletion by screening them for the inability to endogenously activate a cAMP genetic reporter when stimulated with the ADRB2 agonist isoproterenol. Clones were seeded side by side wild type HEK293T cells at a density of 7300 cells/well in a poly-D lysine coated 96-well plate. 24 hr later, cells were transfected with 10 ng/well of a plasmid encoding luciferase driven by a cyclic AMP response element and 5 ng/well of a plasmid encoding Renilla luciferase with lipofectamine 2000. 24 hr later, media was removed and cells were stimulated with 25 \u03bcl of a range of 0 to 10 \u03bcM isoproterenol (Sigma-Aldrich) in CD293 (Thermo Fisher Scientific) for 4 hr. After agonist stimulation, the Dual-Glo Luciferase Assay kit was administered according to the manufacturer\u2019s instructions. Luminescence was measured using the M1000 plate reader (Tecan). All luminescence values were normalized to Renilla luciferase activity to control for transfection efficiency in a given well. Data were analyzed with Microsoft Excel and R.\n\n#### Landing pad genome editing\n\nThe H11 locus was edited using TALEN plasmids received from Addgene (#51554, #51555). HEK293T cells were seeded at a density of 75 k cells in a 24-well plate. 24 hr after seeding cells were transfected with 50 ng LT plasmid, 50 ng RT plasmid, and 400 ng of the Linearized Landing Pad using Lipofectamine 2000. 2 days after transfection, cells were expanded to a six-well plate and one day after expansion 500 \u00b5g/ml hygromycin B (Thermo FIsher Scientific) was added to the media. Cells were grown under selection for 10 days. After selection, cells were seeded in a 96-well plate at a density of 0.5 cells/well. Wells were examined for single colonies after 3 days and expanded to 24-well plates after 7 days. gDNA was purified using the Quick-gDNA Miniprep kit (Zymo Research) from the colonies and PCR was performed with Hifi Master Mix to ensure the landing pad was present at the correct locus (LP001F and R). The reaction and cycling conditions are optimized as follows: 95\u00b0C for 3 min, 35 cycles of 98\u00b0C for 20 s, 63\u00b0C for 15 s, and 72\u00b0C for 40 s, followed by an extension of 72\u00b0C for 2 min. To ensure a single landing pad was present per cell, HEK293T cell lines with both singly and doubly\u00a0integrated landing pads along with untransduced (WT) HEK293T cells were plated at 4 \u00d7 10^5 cells per 6-well. All landing pad cells were transfected the next day with 1.094 \u00b5g of both an attB-containing eGFP and mCherry donor plasmid and 0.3125 \u00b5g of the Bxb1 expression vector or a pUC19 control. Two singly\u00a0integrated landing pad cell samples were also transfected with 2.1875 \u00b5g of either an attB-containing eGFP and mCherry donor plasmid with 0.3125 \u00b5g of the Bxb1 expression vector. Cells were transfected at a 1:1.5 DNA:Lipofectamine ratio with Lipofectamine 3000. 2 days later cells were passaged at 1:10 and were analyzed using flow cytometry 10 days later after four total passages. Samples were flown using the LSRII at the UCLA Eli and Edythe Broad Center of Regenerative Medicine and Stem Cell Research Flow Cytometry Core. Cytometer settings were adjusted to the settings: FSC \u2013 183 V, SSC \u2013 227 V, PE-Texas Red \u2013 336 V, Alexa Fluor 488\u2013275 V.\n\n#### Individual donor Bxb1 recombinase plasmid integrations\n\nHEK293T-derived cells engineered to contain the Bxb1 Recombinase site at the H11 locus were seeded at a density of 350 k cells in a six-well plate (Corning). 24 hr after seeding cells were transfected with 2 \u00b5g Donor plasmid and 500 ng plasmid encoding the Bxb1 recombinase using Lipofectamine 3000 (Thermo Fisher Scientific). 3 days after transfection cells were expanded to a T-75 flask (Corning) and 8 \u00b5g/ml blasticidin (Thermo Fisher Scientific) was added one day after expansion. Cells were kept under selection 7\u201310 days and passaged twice 1:10 to ensure removal of transient plasmid DNA.\n\n#### Ligand-receptor activation luciferase assay for genomically integrated receptor/reporter constructs\n\nHEK293T and HEK293T derived cells integrated with the combined receptor/reporter plasmids were plated at a density of 7300 cells/well in 100 uL DMEM in poly-D-lysine coated 96-well plates. 48 hr later, media was removed and cells were stimulated with 25 \u03bcl of a range of isoproterenol concentrations in CD293 for 4 hr. After agonist stimulation, the Dual-Glo Luciferase Assay kit was administered according to the manufacturer\u2019s instructions. Luminescence was measured using the M1000 plate reader. Data were analyzed with Microsoft Excel and R.\n\n#### Ligand-receptor activation q-RT PCR assay for genomically integrated receptor/reporter constructs\n\nHEK293T and HEK293T-derived cells integrated with the combined receptor/reporter plasmids were plated at a density of 200 k cells/well in 2 mL DMEM in 6-well plates. 48 hr after seeding, media was removed and cells were induced with various concentrations of either forskolin (Sigma-Aldrich) or isoproterenol diluted in 1 ml of OptiMEM (Thermo Fisher) per plate for 3 hr. After stimulation, media was removed and 600 \u00b5L of RLT buffer (Qiagen) was added to each well to lyse cells. Lysate from each sample were homogenized with the QIAshredder kit (Qiagen) and total RNA was prepared from each sample using the RNeasy Mini Kit with the optional on-column DNAse step (Qiagen). Of the\u00a0total RNA per sample, 5\u00a0\u00b5g\u00a0was reverse transcribed with Superscript III (Thermo-Fisher) using a gene-specific primer for the reporter gene and GAPDH (Supplementary file 4) according to the manufacturer\u2019s protocol. The reaction conditions are as follows: Annealing: [65\u00b0C for 5 min, 0\u00b0C for 1 min] Extension: [52\u00b0C for 60 min, 70\u00b0C for 15 min]. 10% of the RT reaction was amplified in triplicate for both genes, the reporter gene and GAPDH (Supplementary file 4), using the SYBR FAST qPCR Master mix (Kapa Biosystems) with a CFX Connect Thermocycler (Biorad). The reaction and cycling conditions are optimized as follows: 95\u00b0C for 3 min, 40 cycles of 95\u00b0C for 3 s and 60\u00b0C for 20 s. Reporter gene expression was normalized to GAPDH expression for each sample. Data were analyzed with Microsoft Excel and R.\n\n#### Variant library generation and cloning\n\nThe ADRB2 missense variant library was created by splitting the protein coding sequence into eight distinct segments (~52 a.a. each) and synthesizing all single amino acid substitutions for each segment separately as an oligonucleotide library (Agilent). 500 pg of the oligonucleotide library was amplified with biotinylated primers unique for each segment (Supplementary file 4) with the Real-Time Library Amplification Kit (Kapa Biosystems) on a CFX Connect Thermocycler (Biorad). The reaction and cycling conditions are as follows: 98\u00b0C for 45 s, X cycles of 98\u00b0C for 15 s, 65\u00b0C for 30 s, and 72\u00b0C for 30 s, followed by an extension of 72\u00b0C for 1 min. The number of cycles for the amplification was determined to ensure the amplification was in the exponential phase at least two cycles before the amplification reached saturation. The PCR products were cleaned up with the DNA Clean and Concentrator Kit (Zymo Research) and digested with restriction enzymes BamHI and BspQI, BbsI and BspQI, or BbsI and NheI (New England Biolabs). Digestions were cleaned up with the DNA Clean and Concentrator Kit and digested ends of the amplified library were removed by performing a streptavidin bead cleanup with the Dynabeads M-280 and the DynaMag (Thermo Fisher). Each library segment was to be cloned into a different vector that includes components of the ADRB2 reporter and the wild-type sequence portion of ADRB2 upstream of the segment being cloned. These eight different base vectors were digested (20 \u00b5g each) with restriction enzymes BamHI and BspQI, BbsI and BspQI, or BbsI and NheI. The base vectors were cleaned up with the DNA Clean and Concentrator Kit and the library segments were ligated into the base vectors (2.25 \u00b5g of vector with a 3:1 molar ratio of vector:insert, 900 \u00b5l reactions) with T4 DNA ligase (2,000,000 units/\u00b5l, New England Biolabs). The ligations were cleaned up with the DNA clean and Concentrator Kit and eluted into 25 \u00b5l. The purified ligations were placed on a 0.22 micron membrane filter (Millipore Sigma) floating in water in a 10-cm petri dish and dialyzed for 1 hr to remove excess salts that inhibit transformation. The ligations were then transformed into 5-alpha Electrocompetent cells (2 \u00b5l of ligation per bacterial aliquot, roughly five transformations per segment, New England Biolabs) directly into liquid culture. Cultures were grown at 30\u00b0C overnight to maintain library diversity and dilutions were plated on agarose plates to ensure transformation efficiency was high enough to cover the entire library (>100 transformants per library member). DNA was prepared 16 hr later with the DNA Miniprep Kit (Qiagen) and 20 mL of culture was prepped per segment. The vectors were digested (20 \u00b5g each) with BspQI and AgeI or NheI and AgeI (Qiagen). Vectors containing unique sequences corresponding to each library segment that complete the ADRB2 protein sequence and reporter were digested with the same restriction enzymes. These fragments were gel isolated from a 1% agarose gel using the Zymoclean Gel DNA Recovery Kit (Zymo Research). These secondary fragments were cloned into the library vectors with the same protocol as the previous cloning step. DNA was prepared 16 hr later with the Plasmid Plus DNA Maxiprep Kit (two maxipreps of 100 mL culture each per library, Qiagen).\n\n#### Variant-barcode mapping\n\nAfter the initial cloning of the variant fragments from the oligonucleotide library into each segment\u2019s corresponding base vector, the random barcode attached to each variant was associated to its variant with paired-end sequencing. Each plasmid was amplified with two rounds of PCRs with distinct primer sets for each segment (Supplementary file 4) with HiFi DNA Master Mix (Kapa Biosystems). For the first round of amplification, the reaction and cycling conditions were optimized as follows: 98\u00b0C for 30 s, 10 cycles of 98\u00b0C for 8 s, 64\u00b0C for 15 s, and 72\u00b0C for 10 s, followed by an extension of 72\u00b0C for 2 min. These amplicons were gel isolated from a 1% agarose gel using the Zymoclean Gel DNA Recovery Kit. Prior to the second round of amplification, the number of cycles to amplify was determined by performing qPCR with the SYBR FAST QPCR Master Mix (Kapa) on the CFX Connect Thermocycler according to the manufacturer\u2019s instructions. The Cq determined from the QPCR plus an additional two cycles was used as the number of cycles to amplify the libraries for the second round of amplification. For the second round of amplification, the reaction and cycling conditions were optimized as follows: 98\u00b0C for 30 s, X cycles of 98\u00b0C for 8 s, 62\u00b0C for 15 s, and 72\u00b0C for 10 s, followed by an extension of 72\u00b0C for 2 min. These amplicons were gel isolated from a 1% agarose gel using the Zymoclean Gel DNA Recovery Kit. Kit. Library concentrations were quantified using a TapeStation 2200 (Agilent) and a Qubit (Thermo Fisher). The libraries were sequenced with paired end 150 bp reads on a NextSeq 500 in medium-output mode and paired end 250 bp reads on a MiSeq (Illumina).\n\n#### Variant library Bxb1 recombinase plasmid integrations\n\nHEK293T-derived cells engineered to contain the Bxb1 recombinase site at the H11 locus and deletion of endogenous ADRB2 were seeded at a density of 2.13 million cells per dish in 6 100 mm x 20 mm tissue-culture treated culture dishes (Corning). 24 hr after seeding cells were transfected with 11.5 ug Donor plasmid and 2.9 \u00b5g plasmid encoding the Bxb1 recombinase using Lipofectamine 3000. Three days after transfection, cells were expanded to T-225 flasks (Corning) and 8 \u00b5g/ml blasticidin was added 1 day after expansion. Cells were kept under selection 7\u201310 days and passaged 1:10 four times to ensure removal of transient plasmid DNA.\n\n#### Multiplexed variant functional assay agonist stimulation, RNA preparation and sequencing\n\nHEK293T-derived cells engineered to contain the Bxb1 recombinase site at the H11 locus, deletion of endogenous ADRB2, and integration of the ADRB2 mutagenic library were seeded at a density of 3,200,000 cells per dish in 150 mm x 25 mm tissue-culture treated culture dishes. 10 dishes were seeded for each biological replicate of each drug condition. 48 hr after seeding, media was removed and cells were induced with various concentrations of either forskolin or isoproterenol diluted in 9 ml of OptiMEM per plate for 3 hr. After stimulation, media was removed and 3.24 ml of RLT buffer was added to each well to lyse cells. Lysate from dishes belonging to the same replicate were pooled and vortexed thoroughly. 5 ml of lysate from each sample were homogenized with the QIAshredder kit and total RNA was prepared from each sample using the RNeasy Midi Kit with the optional on-column DNAse step (Qiagen) and eluted into 500 \u00b5l H2O. 40 reverse transcriptase reactions were carried out for each sample using the Superscript IV RT kit (Thermo Fisher). For each reaction 11 ul of total RNA were added to 1 \u00b5l dNTPs (Qiagen) and 1 \u00b5l 2 uM RT primer (Supplementary file 4). The primers were annealed to the template by heating to 65\u00b0C for 5 min and cooling down to 0\u00b0C for 1 min. After annealing, 4 \u00b5l of RT buffer, 1 \u00b5l DTT, 1 \u00b5l of RNAseOUT, and 1 \u00b5l SSIV were added to the mixture and cDNA synthesis was performed. The reaction and cycling conditions are as follows: 52\u00b0C for 1 hr, 80\u00b0C for 10 min. cDNA from the same sample was pooled together and treated with 100 ug/ml RNAse A (Thermo Fisher) and 200 U of RNase H (Enzymatics) at 37\u00b0C for 30 min. cDNA was concentrated using the Amicon Ultra 0.5 mL 30 k Centrifugal Filter (Millipore) according to the manufacturer\u2019s instructions with a final spin step time of 15 min. To determine the number of cycles necessary for library amplification in preparation for RNA-seq, 1 \u00b5l of cDNA from each sample was amplified with SYBR FAST QPCR Master Mix according to the manufacturer\u2019s instructions using primers for library amplification and adaptor addition (Supplementary file 4). Each sample was subsequently amplified for four cycles more than the Cq calculated in the QPCR run adjusting for sample volume. The entire volume of concentrated cDNA for each sample was amplified with sequencing adaptors using NEB-Next High-Fidelity 2x PCR Master Mix (New England Biolabs): 25 \u00b5l Master Mix, 2.5 \u00b5l of both 10 uM forward and reverse primer (Supplementary file 4), 4 \u00b5l of cDNA, and 16 \u00b5l H2O. The reaction and cycling conditions are as follows: 98\u00b0C for 30 s, X cycles of 98\u00b0C for 8 s, 66\u00b0C for 20 s, and 72\u00b0C for 10 s, followed by an extension of 72\u00b0C for 2 min. Amplified DNA was purified with the DNA Clean and Concentrator kit and gel isolated from a 1% agarose gel with the Zymoclean Gel DNA Recovery Kit. Library concentrations were quantified using a TapeStation 2200 and a Qubit. The libraries were sequenced with an i7 index read and a single end 75 bp read on a NextSeq 500 in high-output mode. The coverage for the various experimental conditions are as follows:\n\n<table>\n  <thead>\n    <tr>\n      <th>Condition</th>\n      <th>Repeat</th>\n      <th>Reads</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>0</td>\n      <td>1</td>\n      <td>46811302</td>\n    </tr>\n    <tr>\n      <td>0</td>\n      <td>2</td>\n      <td>43527478</td>\n    </tr>\n    <tr>\n      <td>0.150</td>\n      <td>1</td>\n      <td>51795485</td>\n    </tr>\n    <tr>\n      <td>0.150</td>\n      <td>2</td>\n      <td>47528508</td>\n    </tr>\n    <tr>\n      <td>0.625</td>\n      <td>1</td>\n      <td>45295157</td>\n    </tr>\n    <tr>\n      <td>0.625</td>\n      <td>2</td>\n      <td>58560000</td>\n    </tr>\n    <tr>\n      <td>5</td>\n      <td>1</td>\n      <td>48206666</td>\n    </tr>\n    <tr>\n      <td>5</td>\n      <td>2</td>\n      <td>34977852</td>\n    </tr>\n    <tr>\n      <td>F</td>\n      <td>1</td>\n      <td>51172562</td>\n    </tr>\n    <tr>\n      <td>F</td>\n      <td>2</td>\n      <td>42013807</td>\n    </tr>\n    <tr>\n      <td>F_5</td>\n      <td>1</td>\n      <td>41727633</td>\n    </tr>\n    <tr>\n      <td>F_5</td>\n      <td>2</td>\n      <td>38259270</td>\n    </tr>\n  </tbody>\n</table>\n\n#### Immunostaining and flow cytometry for surface expression\n\n\u03b22AR variants were cloned into the mammalian expression vector pCI with an N-terminal FLAG tag. HEK293T cells were seeded in a 96-well tissue-culture-treated plate (Genesee Scientific) at 30,000 cells/well. 24 hr after seeding 50 ng of each receptor variant and 50 ng of carrier DNA (pUC19) was transfected in triplicate per variant per well with Lipofectamine 3000 (Thermo Fisher Scientific) according to the manufacturer\u2019s protocol. Negative control wells were transfected with 100 ng of carrier DNA. 48 hr after transfection, media was aspirated and each well was washed with 100 \u00b5l of Cell Dissociation Buffer, enzyme free, PBS (Thermo Fisher Scientific). 100 \u00b5l of Cell Dissociation Buffer was added to each well and plates were left at room temperature for 20 min. 100 \u00b5l of PBS+0.5% FBS was added to each well and mixed. 200 mcL of cell slurry was transferred to a U-bottom 96-well plate (NEST Scientific) and plates were spun down at 488 x g for 5 min. Supernatant was removed with a medium strength flick and cells were resuspended in AlexaFluor 488 conjugated monoclonal Anti-FLAG (diluted 1:100 v/v in PBS+0.5% FBS; Thermo Fisher Scientific). Plates were covered with foil and incubated at 4C for 30 min. After incubation, 150 \u00b5l of flow buffer was added to each well, mixed, and plates were centrifuged at 488 x g for 5 min. Supernatant was removed with a medium strength flick and cells were resuspended in 200 ul PBS+0.5% FBS. Cells were analyzed with a MACS Quant 10 Flow Cytometer. Cytometer settings were adjusted to the settings: FSC \u2013 385 V, SSC \u2013 375 V, Alexa Fluor 488\u2013375 V. Data was analyzed using FlowJo. First, singlets were gated on FSC-A vs. SSC-A and SSC-A vs. SSC-H. AlexaFluor fluorescence was initially gated on the no receptor negative control and the geometric mean of this gate was used as the measurement of surface expression. Data was plotted using R.\n\n### Quantification and statistical analysis\n\n#### Barcode mapping\n\nWe used the BBTools suite\u00a0(https://jgi.doe.gov/data-and-tools/bbtools/) of programs to process our sequencing data using the default settings unless otherwise noted. First, we used BBDuk2 to filter out any reads matching PhiX (k\u00a0=\u00a023, mink\u00a0=\u00a011, hdist\u00a0=\u00a01) and to trim off any Illumina sequencing adapters. We then used BBMerge to merge our paired end reads. We performed another round of trimming with BBDuk2 to ensure no adapters were left over after merging and to remove any sequence with an N base call. After merging and trimming the reads, we used a custom Python script (bcmap.py) to generate a consensus nucleotide sequence for each barcode.\n\nBriefly the script works as follows. First, we split each read into the 15 nt barcode and its corresponding variant. We then generate a dictionary that maps each barcode to its list of unique sequences and their counts. To enable majority basecalls, we drop any barcode that has less than three reads. We then pass the barcodes through a series of filters to eliminate potential errors introduced by barcodes that are mapped to multiple variants. Since we barcoded and mutagenized the ADRB2 gene in separate pieces, barcodes can be contaminated with variants from different parts of the ADRB2 gene. We address this case by using BBMap to align every barcode\u2019s sequences to the ADRB2 reference and consider that barcode to be contaminated if any sequence aligns\u00a0>5 nt away from the most common sequence. Another source of contamination comes from the chip-synthesized library itself, which contains a significant number of single base deletions. We consider a barcode contaminated if it has any sequences of different lengths as it is unlikely that a single base deletion will come from an Illumina sequencer by chance. However, these filters would not catch the case where a barcode is contaminated with variants from the same piece of ADRB2. As we only synthesized the missense variants, we expect variants within the same piece of ADRB2 to be a Levenshtein distance of 4 from each other on average (approximately two changes to WT and two changes to a new codon). Thus, we drop any barcode that has a sequence with\u00a0>1 read at a Levenshtein distance of 4 away from that barcode\u2019s most common sequence. Lastly, we generate a consensus sequence by taking the majority base call at each position and call an N at any ties.\n\nAfter we associate each barcode with its consensus sequence, we use a series of different alignments to determine that sequence\u2019s identity. To find the designed missense variants in our library, we use BBMap to search for barcodes that have an exact alignment to them. To find frameshift mutations, we use BBMap to align the consensus sequences to the ADRB2 reference and parse the resulting CIGAR strings for indels with a simple python script (classify-negs.py). Finding synonymous mutants required more processing as each sub-library did not start at a complete codon. We first used the rough BBMap alignment to determine what ADRB2 chunk each sequence was associated with. We then used a custom python script (synon-filter.py) to trim up to the last whole clonal codon, as the first few codons of each sequence were part of the clonal backbone and are unlikely to have any errors. Finally, we translated the resulting sequences, aligned the protein sequence to the ADRB2 coding sequence with a Smith-Waterman aligner from the Parasail library\u00a0(Daily, 2016) (https://github.com/jeffdaily/parasail, copy archived at swh:1:rev:2fee307b6209d4a26be144f3e008de0e02e1c8db), and retained perfect translations with the correct length.\n\n### Data normalization\n\nWe incubated our cellular library with forskolin to activate the cAMP reporter in each cell, providing an agonist-independent measurement of maximal reporter activity. This measurement can be used to approximate cellular copy number. To ensure that barcodes with low cellular representation are excluded from our analyses, we require all barcodes to be present in both forskolin repeats, and filter out any barcodes with a mean reads per million less than 0.2 (~8\u201310 reads at our sequencing depth). We also excluded barcodes with high forskolin counts (>=10 RPM) as they are systematically less induced in the drug conditions relative to other barcodes. Next, we require that all of the barcodes in the forskolin condition are also present in our drug conditions, and set any missing barcodes to 0. We then add a pseudocount that is scaled relative to the condition with the fewest number of reads (N/min(N)), and normalize each condition to its read depth (including added pseudocounts)\u00a0(Bloom, 2015). Finally, we divide this value by its associated forskolin value to control for variation in cellular abundance.\n\nSince each variant in our library was associated with a median of 10 barcodes, we took the average of all barcodes. We then defined activity as the ratio of these values to the value of the mean frameshift. Finally, we averaged the relative activities of our two repeats together and used propagation of uncertainty to combine their standard deviations.\n\n### Conservation, EVMutation, and gnomAD\n\nTo calculate sequence conservation at a species level, we aligned 55 ADRB2 orthologs from the OMA database (entry: HUMAN24043) using MAFFT with the default settings (mafft --reorder --auto). For Class-A GPCRs, we retrieved the multiple sequence alignment from GPCRdb. We then used the Jensen-Shannon Divergence\u00a0(Altenhoff et al., 2018; Capra and Singh, 2007; Hopf et al., 2017) to score both these alignments. We only considered conservation scores at positions in the MSA that contained residues from the \u03b22AR. For both EVMutation and gnomAD, we simply downloaded the results for ADRB2. We considered residues in gnomAD to be potentially loss of function if their mean activity plus the standard error of the mean was less than two standard deviations from the mean of the frameshift distribution.\n\n### Unsupervised learning\n\nWe performed a number of preprocessing steps before running UMAP on our data. First, we grouped amino acids into eight different classes based on their physicochemical properties ((+) - R, H, K; (-) - D, E; Aromatic - F, W, Y; Amide - N, Q; Nucleophilic - C, S, T; Hydrophobic - I, L, V, M; Small - G, A; Proline - P) and averaged their relative activities. Next, we standardized the log2 relative activity values of each group and used mean imputation to model missing data for any missing AA groups at a given position. Finally, we combined the data from every drug condition into a 412 \u00d7 32 design matrix in which the columns are an AA group at a specific condition and the rows are the positions in the protein.\n\nWith our data processed, we used the R implementation of UMAP to run hyperparameter search (https://github.com/jlmelville/uwot; copy archived at swh:1:rev:b449908402ba0ab5348c22cd2620efe23de01012; Melville, 2019)\u00a0of all combinations of UMAP embeddings with the parameters n_neighbors = (4, 8, 16, 32) and n_components = (2, 3, 4, 5, 6, 7, 8, 9, 10), holding min_dist\u00a0=\u00a00 and n_epochs\u00a0=\u00a02000 constant. This provided a variety of different representations of our data that we used HDBSCAN\u00a0(Campello et al., 2013) to search for clusters in these embeddings (R package dbscan; minPts\u00a0=\u00a010). To ease interpretation of the clustering, we plotted the HDBSCAN results onto a 2D UMAP embedding with the following parameters: n_neighbors\u00a0=\u00a04, min_dist\u00a0=\u00a00, n_components\u00a0=\u00a02, n_epochs\u00a0=\u00a02000, and random_state\u00a0=\u00a03308004 using the Python implementation\u00a0(McInnes and Healy, 2018) (https://github.com/lmcinnes/umap; copy archived at swh:1:rev:2b9a2521b4c6d5f084278b2e967040e3020dac9d). We found the cluster assignments to be largely robust across the different embeddings, and used them to guide our manual cluster assignment.\n\n### Structural modeling and solvent accessible surface area\n\nMolecular graphics and analyses were performed with UCSF Chimera\u00a0(Pettersen et al., 2004) and PyMol. To determine if a given position in the \u03b22AR points into the core of the protein or into the lipid membrane, we used FreeSASA\u00a0(Mitternacht, 2016) (version 2.0.3) to calculate the Solvent Accessible Surface Area (SASA) of the Gs-bound \u03b22AR (PDB: 3SN6). The Gs occludes the intracellular surface of the \u03b22AR thereby reducing the SASA of residues on the intracellular surface. Similarly, the extracellular surface is mostly blocked by the extracellular loops. Finally, we used the Orientations of Proteins in Membranes (OPM) database\u00a0(Lomize et al., 2012) to filter out any residues outside of the lipid membrane from our analyses. To quantify charge sensitivity, we calculated the average activity for H, K, R, D, and E substitutions at each agonist concentration for residues in the lipid membrane. We then multiplied the values by \u22121 and standardized the results within each agonist concentration group such that the values were mean-centered and scaled by their standard deviation. We calculated hydrophobic sensitivity (I, L, V, M) in an analogous manner. Next, we classified residues that had above average charge sensitivity and below average hydrophobic sensitivity as being exclusively charge sensitive. Conversely, we classified residues that had above average charge sensitivity and above average hydrophobic sensitivity as being intolerant.\n\n### Structural and sequence analysis of Class A GPCRs\n\nFor the structural analysis, the crystal structures of class A GPCRs were obtained from PDB\u00a0(Berman et al., 2000). In order to compare structures across the different sub-families of class A GPCRs, structures of representative examples from each subfamily were chosen. In order to compare structures across the conformational states in different GPCRs, the structures of beta-2 adrenergic receptor, M2 muscarinic receptor, kappa-opioid receptor, and mu-opioid receptor were chosen. A2A receptor and mammalian rhodopsin were excluded as they lacked a Trp residue in the first extracellular loop. These receptors were chosen due to the availability of pairs of inactive state and active state structures. The inactive state structures were identified based on the presence of co-crystallized antagonist/inverse-agonist and the active state structures were identified based on the presence of a co-crystallized agonist and co-complexed interacting partner at the G-protein-coupling site. Structural alignment and measurement of inter-atomic distances were performed using PyMOL (https://pymol.org). The structure alignment was performed over the sequence stretch between the conserved Trp/Phe residue in the first extracellular loop and the canonical disulfide bridge forming Cys3 \u00d7 25 (GPCRdb number) present on TM3.\n\nFor the sequence analysis, the sequence alignment of Class A GPCRs was obtained from GPCRdb\u00a0(P\u00e1ndy-Szekeres et al., 2018). The alignment was filtered for receptors that contained the canonical disulfide bridge forming on TM3 residue in ECL1, which gave a total of 202 GPCRs sequences. Using this alignment, the sequence logo was made using the Weblogo program (https://weblogo.berkeley.edu/logo.cgi).\n\n### Statistical tests\n\nAll statistical tests unless otherwise noted are the two-sided Mann-Whitney U test and were performed in R (version 3.5.x) using the wilcox.test function.\n\n### Software\n\nAll codes are available at (https://www.github.com/KosuriLab/b2-dms;\u00a0Jones, 2020\u00a0copy archived at\u00a0swh:1:dir:09b4931491e1c9f9ee2c90c5687f44efa6464373). Sequencing data can be accessed from the sequencing read archive (SRA) with the accession number SRP247450\u00a0or from the Gene Expression Omnibus (GEO) with the accession number GSE144819. To avoid potential visual distortions in the heatmap, we used perceptually uniform color maps\u00a0(Crameri, 2018). For parallelization, we employed GNU Parallel\u00a0(Tange O, 2011).\n",
+      "created_at": "2025-12-02T20:45:56.089906Z"
+    },
+    {
+      "id": "78eaba21-6883-4018-ae04-012038e3ea0a",
+      "submission_id": "9f3b39de-2c0a-4dc3-933b-fc47f5898c18",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Dan Larhammar, Uppsala University Sweden\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.54895.sa1](https://doi.org/10.7554/eLife.54895.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nA mutation scanning procedure for amino acid replacements in G protein-coupled receptors is described and the outcome detected with cAMP-induced transcription of a luciferase reporter. Using the human beta-2 adrenergic receptor as proof of principle, the authors have investigated almost every possible amino acid replacement throughout the sequence. One interesting new observation is a conserved 'latch' involving three highly conserved residues in the receptor's first extracellular loop.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Structural and Functional Characterization of G Protein-Coupled Receptors with Deep Mutational Scanning\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Richard Aldrich as the Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: James S Fraser (Reviewer #1); Aashish Manglik (Reviewer #2).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nWe would like to draw your attention to changes in our revision policy that we have made in response to COVID-19 (https://elifesciences.org/articles/57162). Specifically, we are asking editors to accept without delay manuscripts, like yours, that they judge can stand as eLife papers without additional data, even if they feel that they would make the manuscript stronger. Thus the revisions requested below only address clarity and presentation.\n\nSummary:\n\nAll three reviewers and myself agree that this manuscript describes an interesting and potentially very useful scanning procedure of amino acid replacements in G protein-coupled receptors, exemplified by an impressively extensive analysis of the human beta-2 adrenergic receptor. Almost all possible mutations were evaluated after agonist stimulation, measured as cAMP-induced transcription of a luciferase reporter. The application of the procedure on beta-2 confirms several previous observations and thereby serves as proof of concept for this approach. It adds a few new observations, especially the proposed conserved 'latch' involving three highly conserved residues in EL1.\n\nEssential revisions:\n\nDetailed conclusions about mutation outcomes are limited by the fact that the one and only assay measures functional response and hence cannot distinguish mutational impact on all the preceding steps including biosynthesis, folding, intracellular transport, ligand binding, conformational change, G protein coupling and receptor internalization. Mutations that affect the functional output in an indirect fashion are likely to occur and this possibility should be discussed further. Ideally, it would be desirable that the authors could present quantification of cell surface expression for at least a subset of the deleterious mutants. Hopefully, such data has been collected.\n\nAnother aspect that is (as noted) important is the level of noise in the system. For example, it is not at all clear why it was necessary to use on average 10 barcodes per mutant, when other studies employing DNA-level abundance of barcodes have gotten away with smaller numbers of barcodes per variant.\n\nDo all pairwise combinations exhibit equal reproducibility, or is it possible to model measurement error (e.g., making use of the number of read counts) as other studies have done to estimate error in individual measurements? Perhaps then we can be confident in some subset of residue-level measurements. Error estimates could then be propagated to higher-level aggregate summaries, e.g., average score at each given position and for the various missense variant types (hydrophobic, polar etc). Representative scatterplots between barcode replicates for a subset would be informative (ideally, with and without forskolin normalization). In addition, it would be interesting to see if sequence content of barcodes correlate with error estimates (e.g. certain barcode sequences might destabilize the transcripts, resulting in artificially lowered scores for a given mutation and vice versa). Error estimates could also be useful, e.g., in ranking the most intolerant amino acids, where ranking is based on the estimate at the more conservative end of a confidence interval. Also, with error estimates, statements like \"we obtained measurements for 99.6% (7,800/7,828) of possible missense variants\" could be replaced with statements like \"we obtained reliable measurements for X% of possible missense variants.\n\nConsidering that the output assay as mediated by cAMP, the authors might want to common if the approach is limited to receptors coupling via G-alpha-s.\n\nWhen the authors discuss which positions are conserved and which are not, it is not always clear whether they mean among ADRB2 orthologs or perhaps across adrenergic receptor subtypes or perhaps for the entire GPCR class A. Which receptors and species are compared? It is also essential to describe the range of species. The authors refer in a couple of places to 55 ADRB2 orthologs (Figure 2 legend, Figure 3\u2014figure supplement 1 legend, subsection \u201cConservation, EVMutation, and gnomAD\u201d) but do not specify which range of species was included in this data set. For instance, it makes a huge difference if it's mammals or vertebrates.\n\nOne of the major findings is the identification of the conserved EL2 motif WxxGxxxC, proposed to work as a 'latch'. It would have been very interesting indeed to see this hypothesis tested in some way, but hopefully this will come in the near future.\n\nLikewise, the observations that distal mutations in the N-terminus and C-terminus lead to constitutive activity invites further studies. Is it possible to say something about this based upon mutagenesis already reported in the literature for beta-2 or other class A receptors? It appears likely that especially the N-terminal mutations may compromise biosynthesis and handling in ER and Golgi, why the caveat should be mentioned early in the manuscript that differences in expression level may explain the observed output results.\n\nThe comparison of the latch with two receptors that are closely related to each other (opioid kappa and mu) seems a bit superfluous. It would be more interesting if a few completely different peptide receptors were included in the comparison.\n\nThe observation of the EL1 latch has some precedence, see review by Hulme in TIPS, 2013, Figure 3A. Please check if this should be cited.\n\nADRB2 variants were synthesized in oligonucleotide microarrays split into 8 segments and integrated into the cell line. Additional details on the scheme and numbers/statistics on coverage, library wt representation, and evenness would be important to discuss and show \u2013 especially for reproducibility. (Rubin et al., Genome Biology, 2017).\n\nThe authors conduct the DMS experiment under four different isoproterenol conditions and normalize measurements to forskolin treatments. Experimental details on the forskolin activation in their assay or reference for this treatment would aid in interpreting the normalization approach.\n\nWhat exactly distinguishes the globally intolerant clusters (clusters 1 and 2) in Figure 4? It seems there is a tighter range of activity to isoproterenol in cluster 2 than in 1 for all mutations and chemical properties, but does this get ranked differently than cluster 1?\n",
+      "created_at": "2025-12-02T20:45:56.089906Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T20:45:56.089906Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T20:45:56.089906Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "bcfc09c6-799f-4517-bc80-e9b6ff37af82",
+      "content_id": "0a1f0437-02dc-43c3-bcff-7f3bc22d031e",
+      "claim_id": "C1",
+      "claim": "There are more than 800 human G protein-coupled receptors (GPCRs).",
+      "claim_type": "EXPLICIT",
+      "source": "The >800 human G protein\u2013coupled receptors (GPCRs) are responsible for transducing diverse chemical stimuli to alter cell state- and are the largest class of drug targets.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge in the abstract without specific citation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:56.089906Z"
+    },
+    {
+      "id": "9d6cd459-d4ce-45c3-9de4-b19d8da39a33",
+      "content_id": "0a1f0437-02dc-43c3-bcff-7f3bc22d031e",
+      "claim_id": "C2",
+      "claim": "GPCRs are the largest class of drug targets.",
+      "claim_type": "EXPLICIT",
+      "source": "The >800 human G protein\u2013coupled receptors (GPCRs) are responsible for transducing diverse chemical stimuli to alter cell state- and are the largest class of drug targets.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge in the abstract.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:56.089906Z"
+    },
+    {
+      "id": "5f3e6c6c-99b4-4a58-8049-1849b1024edb",
+      "content_id": "0a1f0437-02dc-43c3-bcff-7f3bc22d031e",
+      "claim_id": "C3",
+      "claim": "The study tested 7800 of 7828 possible single amino acid substitutions to the beta-2 adrenergic receptor (\u03b22AR).",
+      "claim_type": "EXPLICIT",
+      "source": "We tested 7800 of 7828 possible single amino acid substitutions to the beta-2 adrenergic receptor (\u03b22AR) at four concentrations of the agonist isoproterenol.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of the experimental scope performed in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:56.089906Z"
+    },
+    {
+      "id": "d5dcd296-e316-41aa-933d-ce184e088c38",
+      "content_id": "0a1f0437-02dc-43c3-bcff-7f3bc22d031e",
+      "claim_id": "C4",
+      "claim": "The study tested \u03b22AR variants at four concentrations of the agonist isoproterenol.",
+      "claim_type": "EXPLICIT",
+      "source": "We tested 7800 of 7828 possible single amino acid substitutions to the beta-2 adrenergic receptor (\u03b22AR) at four concentrations of the agonist isoproterenol.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental conditions used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:56.089906Z"
+    },
+    {
+      "id": "58eadf4d-e9d4-4930-b966-af73f9b3ea0f",
+      "content_id": "0a1f0437-02dc-43c3-bcff-7f3bc22d031e",
+      "claim_id": "C5",
+      "claim": "The study identified residues specifically important for \u03b22AR signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "We identified residues specifically important for \u03b22AR signaling, mutations in the human population that are potentially loss of function, and residues that modulate basal activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of findings from the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:56.089906Z"
+    },
+    {
+      "id": "b4b8b294-a395-499f-bd6b-2d0048802d33",
+      "content_id": "0a1f0437-02dc-43c3-bcff-7f3bc22d031e",
+      "claim_id": "C6",
+      "claim": "The study identified mutations in the human population that are potentially loss of function.",
+      "claim_type": "EXPLICIT",
+      "source": "We identified residues specifically important for \u03b22AR signaling, mutations in the human population that are potentially loss of function, and residues that modulate basal activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from analyzing the experimental data in the context of human genetic variation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:56.089906Z"
+    },
+    {
+      "id": "249cb8b4-b1a1-4ee6-bb1d-e46dc608e532",
+      "content_id": "0a1f0437-02dc-43c3-bcff-7f3bc22d031e",
+      "claim_id": "C7",
+      "claim": "The study identified residues that modulate basal activity of \u03b22AR.",
+      "claim_type": "EXPLICIT",
+      "source": "We identified residues specifically important for \u03b22AR signaling, mutations in the human population that are potentially loss of function, and residues that modulate basal activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:56.089906Z"
+    },
+    {
+      "id": "9285472f-f7c7-48bd-8139-7a399053ec0f",
+      "content_id": "0a1f0437-02dc-43c3-bcff-7f3bc22d031e",
+      "claim_id": "C8",
+      "claim": "A previously uncharacterized structural latch spanning the first two extracellular loops is highly conserved across Class A GPCRs.",
+      "claim_type": "EXPLICIT",
+      "source": "We also find a previously uncharacterized structural latch spanning the first two extracellular loops that is highly conserved across Class A GPCRs and is conformationally rigid in both the inactive and active states of the receptor.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a novel finding from the study combining mutational data with structural and evolutionary analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:56.089906Z"
+    },
+    {
+      "id": "59eaac2c-5b90-4293-8aea-c4064df8770c",
+      "content_id": "0a1f0437-02dc-43c3-bcff-7f3bc22d031e",
+      "claim_id": "C9",
+      "claim": "The structural latch spanning the first two extracellular loops is conformationally rigid in both the inactive and active states of the receptor.",
+      "claim_type": "EXPLICIT",
+      "source": "We also find a previously uncharacterized structural latch spanning the first two extracellular loops that is highly conserved across Class A GPCRs and is conformationally rigid in both the inactive and active states of the receptor.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on structural analysis of multiple GPCR structures in different states.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:56.089906Z"
+    },
+    {
+      "id": "e9184e0a-4163-46b8-825e-5fb19d922167",
+      "content_id": "0a1f0437-02dc-43c3-bcff-7f3bc22d031e",
+      "claim_id": "C10",
+      "claim": "Approximately 34% of all U.S. Food and Drug Administration (FDA)-approved drugs target the GPCR superfamily.",
+      "claim_type": "EXPLICIT",
+      "source": "Their central role in altering relevant cell states makes them ideal targets for therapeutic intervention, with ~34% of all U.S. Food and Drug Administration (FDA)-approved drugs targeting the GPCR superfamily (Hauser et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Hauser et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:56.089906Z"
+    },
+    {
+      "id": "9a2104b9-dbd4-4c4f-b454-387559c9a0f3",
+      "content_id": "0a1f0437-02dc-43c3-bcff-7f3bc22d031e",
+      "claim_id": "C11",
+      "claim": "GPCRs exist in a complex conformational landscape.",
+      "claim_type": "EXPLICIT",
+      "source": "First, GPCRs exist in a complex conformational landscape, making traditional biochemical and biophysical characterization difficult (Deupi and Kobilka, 2010; Kobilka and Deupi, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Deupi and Kobilka, 2010 and Kobilka and Deupi, 2007.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:56.089906Z"
+    },
+    {
+      "id": "8e51416f-3d75-433e-90ac-b4609f55bce0",
+      "content_id": "0a1f0437-02dc-43c3-bcff-7f3bc22d031e",
+      "claim_id": "C12",
+      "claim": "Most experimentally determined GPCR structures are truncated, non-native, or artificially stabilized.",
+      "claim_type": "EXPLICIT",
+      "source": "Consequently, most experimentally determined GPCR structures are truncated, non-native, or artificially stabilized (Isberg et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Isberg et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:56.089906Z"
+    },
+    {
+      "id": "02882ff8-a280-4547-b1ba-29c7e24a4456",
+      "content_id": "0a1f0437-02dc-43c3-bcff-7f3bc22d031e",
+      "claim_id": "C13",
+      "claim": "The majority of GPCR structures are of inactive states.",
+      "claim_type": "EXPLICIT",
+      "source": "Even when structures exist, the majority are of inactive states - GPCR conformations that cannot couple with a G protein and cause it to stimulate intracellular signaling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about the state of GPCR structural biology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:56.089906Z"
+    },
+    {
+      "id": "4891a5a6-7cb7-44bf-b766-3b7136cba1d0",
+      "content_id": "0a1f0437-02dc-43c3-bcff-7f3bc22d031e",
+      "claim_id": "C14",
+      "claim": "The \u03b22AR primarily signals through the heterotrimeric Gs protein.",
+      "claim_type": "EXPLICIT",
+      "source": "The \u03b22AR primarily signals through the heterotrimeric Gs protein, activating adenylyl cyclase upon agonist binding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about \u03b22AR signaling.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:56.089906Z"
+    },
+    {
+      "id": "e2d845cb-9439-443f-9ba7-37d054164aff",
+      "content_id": "0a1f0437-02dc-43c3-bcff-7f3bc22d031e",
+      "claim_id": "C15",
+      "claim": "The \u03b22AR activates adenylyl cyclase upon agonist binding.",
+      "claim_type": "EXPLICIT",
+      "source": "The \u03b22AR primarily signals through the heterotrimeric Gs protein, activating adenylyl cyclase upon agonist binding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about \u03b22AR signaling mechanism.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:56.089906Z"
+    },
+    {
+      "id": "7eebd6d9-cb6c-45ff-8978-a9ef0e4c99ed",
+      "content_id": "0a1f0437-02dc-43c3-bcff-7f3bc22d031e",
+      "claim_id": "C16",
+      "claim": "The study obtained reliable measurements for 95-99% of possible missense variants depending on agonist concentration.",
+      "claim_type": "EXPLICIT",
+      "source": "We obtained reliable measurements (coefficient of variation <1) for 95\u201399% (7,461\u20137,749/7,828 depending on the agonist concentration) of possible missense variants (412 residues * 19 amino acids = 7828 possible missense variants) with two biological replicates at each condition (Figure 1C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct report of the experimental results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:56.089906Z"
+    },
+    {
+      "id": "b37d12a6-3c34-4156-af75-ec9ec9049dba",
+      "content_id": "0a1f0437-02dc-43c3-bcff-7f3bc22d031e",
+      "claim_id": "C17",
+      "claim": "The transmembrane domain and intracellular helix eight are more sensitive to substitution than the termini or loops.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the transmembrane domain and intracellular helix eight are more sensitive to substitution than the termini or loops, and this effect becomes more pronounced at higher agonist concentrations (Figure 2A; all p<0.001; Mann-Whitney U).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the experimental data with statistical support.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:56.089906Z"
+    },
+    {
+      "id": "9533dc56-cc35-4d41-9e5d-737c2ae857d0",
+      "content_id": "0a1f0437-02dc-43c3-bcff-7f3bc22d031e",
+      "claim_id": "C18",
+      "claim": "The transmembrane domain and intracellular helix eight are sensitive to helix-disrupting proline substitutions.",
+      "claim_type": "EXPLICIT",
+      "source": "The transmembrane domain and intracellular helix eight are also sensitive to helix-disrupting proline substitutions (Figure 2B, Figure 2\u2014figure supplement 1B; all p<<0.001 except TM vs Helix-8; Mann-Whitney U).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the experimental data with statistical support.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:56.089906Z"
+    },
+    {
+      "id": "3564aff2-197c-4d64-86b3-4ae2fac57a24",
+      "content_id": "0a1f0437-02dc-43c3-bcff-7f3bc22d031e",
+      "claim_id": "C19",
+      "claim": "Frameshift mutations consistently display lower activity than missense mutations regardless of agonist concentration.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, frameshifts consistently display lower activity than missense mutations regardless of agonist concentration (Figure 2C; p<<0.001; Mann-Whitney U).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the experimental data with statistical support.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:56.089906Z"
+    },
+    {
+      "id": "f59e627b-4522-4a0a-882e-1bbee4c18cb2",
+      "content_id": "0a1f0437-02dc-43c3-bcff-7f3bc22d031e",
+      "claim_id": "C20",
+      "claim": "The effect of frameshifts are markedly decreased in the C-terminus of the protein.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the effect of frameshifts are markedly decreased in the C-terminus of the protein (Figure 2D; p<<0.001; Mann-Whitney U).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the experimental data with statistical support.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:56.089906Z"
+    },
+    {
+      "id": "98e72e2f-79c7-4941-8c1f-9bc8718f94b6",
+      "content_id": "0a1f0437-02dc-43c3-bcff-7f3bc22d031e",
+      "claim_id": "C21",
+      "claim": "Known null mutations (D113A and I135W) have significantly diminished activity relative to WT in both individual and multiplexed systems, even at Emax.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, known null mutations (D113A and I135W) have significantly diminished activity relative to WT in both systems, even at Emax (all p<<0.001; Wald Test).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is validation of the assay using previously characterized mutations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:56.089906Z"
+    },
+    {
+      "id": "1681e891-961d-4ab8-86b7-a31e4367640a",
+      "content_id": "0a1f0437-02dc-43c3-bcff-7f3bc22d031e",
+      "claim_id": "C22",
+      "claim": "Known hypomorphic mutations (S203A and S204A) have a significant decrease in activity relative to WT at EC100.",
+      "claim_type": "EXPLICIT",
+      "source": "Known hypomorphic mutations (S203A and S204A) also have a significant decrease in activity relative to WT at EC100 (all p<<0.001; Wald Test), but are not significantly different than WT at Emax as expected (all p>0.01; Wald Test).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is validation of the assay using previously characterized mutations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:56.089906Z"
+    },
+    {
+      "id": "06c7105c-3303-4f76-9a39-3c3b21a2c1ea",
+      "content_id": "0a1f0437-02dc-43c3-bcff-7f3bc22d031e",
+      "claim_id": "C23",
+      "claim": "Known hypomorphic mutations (S203A and S204A) are not significantly different than WT at Emax.",
+      "claim_type": "EXPLICIT",
+      "source": "Known hypomorphic mutations (S203A and S204A) also have a significant decrease in activity relative to WT at EC100 (all p<<0.001; Wald Test), but are not significantly different than WT at Emax as expected (all p>0.01; Wald Test).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is validation of the assay using previously characterized mutations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:56.089906Z"
+    },
+    {
+      "id": "1c36e524-9115-4c5b-9ee5-b96403edbe0d",
+      "content_id": "0a1f0437-02dc-43c3-bcff-7f3bc22d031e",
+      "claim_id": "C24",
+      "claim": "Mutational tolerance is highly correlated to conservation across species for the \u03b22AR (Spearman's \u03c1 = \u22120.74).",
+      "claim_type": "EXPLICIT",
+      "source": "Mutational tolerance, the mean activity of all amino acid substitutions per residue at each agonist concentration, is highly correlated to conservation, both across species for the \u03b22AR (Figure 3\u2014figure supplement 1A; Spearman's \u03c1 = \u22120.74; 55 orthologs, predominantly mammals but including a few other vertebrates as well as a small number of invertebrate beta-like sequences, identified from the OMA Database, Supplementary file 1), and across all Class A GPCRs (Spearman's \u03c1 = \u22120.68; Figure 3A and Figure 3\u2014figure supplement 1B; Altenhoff et al., 2018; Capra and Singh, 2007; Hopf et al., 2017) at EC100.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from comparing experimental data to evolutionary conservation metrics.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:56.089906Z"
+    },
+    {
+      "id": "7e733c0b-1c80-46c6-83f1-fd8afe3a8970",
+      "content_id": "0a1f0437-02dc-43c3-bcff-7f3bc22d031e",
+      "claim_id": "C25",
+      "claim": "Mutational tolerance is correlated to conservation across all Class A GPCRs (Spearman's \u03c1 = \u22120.68) at EC100.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutational tolerance, the mean activity of all amino acid substitutions per residue at each agonist concentration, is highly correlated to conservation, both across species for the \u03b22AR (Figure 3\u2014figure supplement 1A; Spearman's \u03c1 = \u22120.74; 55 orthologs, predominantly mammals but including a few other vertebrates as well as a small number of invertebrate beta-like sequences, identified from the OMA Database, Supplementary file 1), and across all Class A GPCRs (Spearman's \u03c1 = \u22120.68; Figure 3A and Figure 3\u2014figure supplement 1B; Altenhoff et al., 2018; Capra and Singh, 2007; Hopf et al., 2017) at EC100.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from comparing experimental data to evolutionary conservation metrics.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:56.089906Z"
+    },
+    {
+      "id": "2a84ae6f-d3b9-44ba-a05e-7217a716f117",
+      "content_id": "0a1f0437-02dc-43c3-bcff-7f3bc22d031e",
+      "claim_id": "C26",
+      "claim": "A subset of residues in extracellular loop 2 (ECL2), including C184 and C190 that form an intraloop disulfide bridge, were more intolerant to mutation than expected given their conservation across Class A GPCRs.",
+      "claim_type": "EXPLICIT",
+      "source": "We found a subset of residues in extracellular loop 2 (ECL2), including C184 and C190 that form an intraloop disulfide bridge, that were more intolerant to mutation than expected given their conservation across Class A GPCRs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from comparing experimental mutational data to evolutionary conservation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:56.089906Z"
+    },
+    {
+      "id": "f0b01613-9678-4a48-a2f6-cfc70e110436",
+      "content_id": "0a1f0437-02dc-43c3-bcff-7f3bc22d031e",
+      "claim_id": "C27",
+      "claim": "Individual mutational responses correlate with EVmutation (Spearman's \u03c1 = 0.520).",
+      "claim_type": "EXPLICIT",
+      "source": "On an individual variant level, mutational responses correlate (Spearman's \u03c1 = 0.520) with EVmutation, a predictor of mutational effects from sequence covariation (Figure 3B and Figure 3\u2014figure supplement 1C; Altenhoff et al., 2018; Capra and Singh, 2007; Hopf et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from comparing experimental data to computational predictions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:56.089906Z"
+    },
+    {
+      "id": "5eccdb35-0621-46b3-9ec4-f7e29812bcf4",
+      "content_id": "0a1f0437-02dc-43c3-bcff-7f3bc22d031e",
+      "claim_id": "C28",
+      "claim": "The study classified 11 ADRB2 variants found in the human population as potentially loss of function.",
+      "claim_type": "EXPLICIT",
+      "source": "We classified 11 of these variants as potentially loss of function, by comparing their activity to the distribution of frameshift mutations found in our assay (Figure 3C; see Materials and methods).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from analyzing experimental data in the context of human genetic variation from gnomAD.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:56.089906Z"
+    },
+    {
+      "id": "d6a5013e-3531-4b04-83bd-f78b8afb9500",
+      "content_id": "0a1f0437-02dc-43c3-bcff-7f3bc22d031e",
+      "claim_id": "C29",
+      "claim": "The 100 least active mutations tended to reside within the core of the transmembrane domain.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, the least active mutations tended to reside within the core of the transmembrane domain (Figure 3\u2014figure supplement 1D,E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from mapping experimental data onto protein structure.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:56.089906Z"
+    },
+    {
+      "id": "ab80bfac-3692-4380-a5b8-412617fb7ef5",
+      "content_id": "0a1f0437-02dc-43c3-bcff-7f3bc22d031e",
+      "claim_id": "C30",
+      "claim": "The 100 most activating mutations mapped to TM1, TM5, TM6, and residues that typically face away from the internal core of the receptor.",
+      "claim_type": "EXPLICIT",
+      "source": "Alternatively, the most activating mutations mapped to TM1, TM5, TM6, and residues that typically face away from the internal core of the receptor (Figure 3D,E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from mapping experimental data onto protein structure.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:56.089906Z"
+    },
+    {
+      "id": "d55254ac-af09-4cc8-80e9-bdbb66fb8df3",
+      "content_id": "0a1f0437-02dc-43c3-bcff-7f3bc22d031e",
+      "claim_id": "C31",
+      "claim": "Activating mutants are enriched in the termini, ICL3, and Helix 8.",
+      "claim_type": "EXPLICIT",
+      "source": "Activating mutants are also enriched in the termini, ICL3, and Helix 8.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from analyzing the distribution of activating mutations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:56.089906Z"
+    },
+    {
+      "id": "60d1a660-7fbb-42e3-b5ad-e272993d181d",
+      "content_id": "0a1f0437-02dc-43c3-bcff-7f3bc22d031e",
+      "claim_id": "C32",
+      "claim": "Unsupervised learning using UMAP and HDBSCAN identified six clusters of residues that exhibit distinct responses to mutation.",
+      "claim_type": "EXPLICIT",
+      "source": "We applied Uniform Manifold Approximation and Projection (UMAP) (McInnes and Healy, 2018) to learn multiple different lower dimensional representations of our data and clustered the output with density-based hierarchical clustering (HDBSCAN; Figure 4\u2014figure supplement 1; Campello et al., 2013). We found residues consistently separated into six clusters that exhibit distinct responses to mutation (Figure 4A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from applying unsupervised machine learning methods to the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:56.089906Z"
+    },
+    {
+      "id": "f89ed784-cf95-4c2a-8d04-91863df46b4e",
+      "content_id": "0a1f0437-02dc-43c3-bcff-7f3bc22d031e",
+      "claim_id": "C33",
+      "claim": "Clusters 1 and 2 are globally intolerant to all substitutions.",
+      "claim_type": "EXPLICIT",
+      "source": "Clusters 1 and 2 are globally intolerant to all substitutions, whereas Cluster 3 is vulnerable to proline and charged substitutions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a characterization of the clusters identified by unsupervised learning.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:56.089906Z"
+    },
+    {
+      "id": "2c1a3f72-d50f-4441-911f-70f99f012fa8",
+      "content_id": "0a1f0437-02dc-43c3-bcff-7f3bc22d031e",
+      "claim_id": "C34",
+      "claim": "Cluster 3 is vulnerable to proline and charged substitutions.",
+      "claim_type": "EXPLICIT",
+      "source": "Clusters 1 and 2 are globally intolerant to all substitutions, whereas Cluster 3 is vulnerable to proline and charged substitutions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a characterization of the clusters identified by unsupervised learning.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:56.089906Z"
+    },
+    {
+      "id": "2f3f68e8-9799-4edd-8b2a-32ad0f22d491",
+      "content_id": "0a1f0437-02dc-43c3-bcff-7f3bc22d031e",
+      "claim_id": "C35",
+      "claim": "Cluster 4 is particularly inhibited by negatively charged substitutions.",
+      "claim_type": "EXPLICIT",
+      "source": "Cluster 4 is particularly inhibited by negatively charged substitutions and Cluster five by proline substitutions, while Cluster 6 is unaffected by any mutation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a characterization of the clusters identified by unsupervised learning.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:56.089906Z"
+    },
+    {
+      "id": "f121ae46-0b32-4990-90ab-cdd5b9df3bca",
+      "content_id": "0a1f0437-02dc-43c3-bcff-7f3bc22d031e",
+      "claim_id": "C36",
+      "claim": "Cluster 5 is inhibited by proline substitutions.",
+      "claim_type": "EXPLICIT",
+      "source": "Cluster 4 is particularly inhibited by negatively charged substitutions and Cluster five by proline substitutions, while Cluster 6 is unaffected by any mutation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a characterization of the clusters identified by unsupervised learning.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:56.089906Z"
+    },
+    {
+      "id": "4a1a68ad-99d9-4093-989a-d87c82d60d01",
+      "content_id": "0a1f0437-02dc-43c3-bcff-7f3bc22d031e",
+      "claim_id": "C37",
+      "claim": "Cluster 6 is unaffected by any mutation.",
+      "claim_type": "EXPLICIT",
+      "source": "Cluster 4 is particularly inhibited by negatively charged substitutions and Cluster five by proline substitutions, while Cluster 6 is unaffected by any mutation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a characterization of the clusters identified by unsupervised learning.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:56.089906Z"
+    },
+    {
+      "id": "066b66d5-4ee9-4b80-8e6c-304ace66d641",
+      "content_id": "0a1f0437-02dc-43c3-bcff-7f3bc22d031e",
+      "claim_id": "C38",
+      "claim": "Clusters 1-5 primarily comprise the transmembrane domain, while Cluster 6 resides in the loops and termini.",
+      "claim_type": "EXPLICIT",
+      "source": "Mapping these clusters onto a 2D snake plot representation shows Clusters 1\u20135 primarily comprise the transmembrane domain, while Cluster 6 resides in the loops and termini (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from mapping the unsupervised learning clusters onto protein structure.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:56.089906Z"
+    },
+    {
+      "id": "39610d7b-e9e3-4122-ae27-77b7b68863fe",
+      "content_id": "0a1f0437-02dc-43c3-bcff-7f3bc22d031e",
+      "claim_id": "C39",
+      "claim": "The globally intolerant Clusters 1 and 2 segregate to the core of the protein.",
+      "claim_type": "EXPLICIT",
+      "source": "The globally intolerant Clusters 1 and 2 segregate to the core of the protein, while the charge-sensitive Cluster 3 is enriched in the lipid-facing portion (Figure 5\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from mapping clusters onto 3D structure and analyzing solvent accessibility.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:56.089906Z"
+    },
+    {
+      "id": "b92c4f6f-2735-4e19-939c-236f961f5e02",
+      "content_id": "0a1f0437-02dc-43c3-bcff-7f3bc22d031e",
+      "claim_id": "C40",
+      "claim": "The charge-sensitive Cluster 3 is enriched in the lipid-facing portion of the transmembrane domain.",
+      "claim_type": "EXPLICIT",
+      "source": "The globally intolerant Clusters 1 and 2 segregate to the core of the protein, while the charge-sensitive Cluster 3 is enriched in the lipid-facing portion (Figure 5\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from mapping clusters onto 3D structure and analyzing solvent accessibility.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:56.089906Z"
+    },
+    {
+      "id": "f0f13491-7b64-4fd1-9b20-f13d16e971a8",
+      "content_id": "0a1f0437-02dc-43c3-bcff-7f3bc22d031e",
+      "claim_id": "C41",
+      "claim": "Residues that are uniquely charge sensitive are significantly more lipid-facing than those that are sensitive to both hydrophobic and charged mutations at EC100 (p=0.000036).",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, residues that are uniquely charge sensitive are significantly more lipid-facing than those that are sensitive to both hydrophobic and charged mutations at EC100 (Figure 5A, Figure 5\u2014figure supplement 1C\u2013D, p=0.000036; Mann-Whitney U) (Mitternacht, 2016).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from analyzing solvent-accessible surface area in relation to mutational sensitivity.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:56.089906Z"
+    },
+    {
+      "id": "a8f19012-f88e-47bb-bd4c-e4062ceee380",
+      "content_id": "0a1f0437-02dc-43c3-bcff-7f3bc22d031e",
+      "claim_id": "C42",
+      "claim": "11 of the 15 most mutationally intolerant positions belong to the PIF, CWxP, and NPxxY motif, orthosteric site, a water-mediated bond network, an extracellular disulfide bond, and a cholesterol-binding site.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, 11 of the 15 most mutationally intolerant positions belong to the PIF, CWxP, and NPxxY motif, orthosteric site, a water-mediated bond network, an extracellular disulfide bond, and a cholesterol-binding site.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from ranking residues by mutational tolerance and mapping them to known structural features.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:56.089906Z"
+    },
+    {
+      "id": "1f57c262-ff19-4ff3-9d1a-e28284cf432b",
+      "content_id": "0a1f0437-02dc-43c3-bcff-7f3bc22d031e",
+      "claim_id": "C43",
+      "claim": "G3157x41 is the second most intolerant residue and is uncharacterized.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the second most intolerant residue is the uncharacterized G3157x41 (GPCRdb numbering in superscript Isberg et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from ranking residues by mutational tolerance.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:56.089906Z"
+    },
+    {
+      "id": "cb0e7398-7eb6-43b3-a8eb-e6fb0a42f220",
+      "content_id": "0a1f0437-02dc-43c3-bcff-7f3bc22d031e",
+      "claim_id": "C44",
+      "claim": "In the active state, G315's alpha carbon points directly at W2866x48 of the CWxP motif, and any substitution at G3157x41 will likely clash with W2866x48.",
+      "claim_type": "EXPLICIT",
+      "source": "In the active state, G315's alpha carbon points directly at W2866x48 of the CWxP motif, the fourth most intolerant residue, and any substitution at G3157.x41 will likely clash with W2866x48 (Figure 5D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference from structural analysis combined with mutational data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:56.089906Z"
+    },
+    {
+      "id": "fb5e69a1-4116-4888-98bf-5061f242fc8f",
+      "content_id": "0a1f0437-02dc-43c3-bcff-7f3bc22d031e",
+      "claim_id": "C45",
+      "claim": "Mutants G315T and G315L resulted in complete loss of function when tested with a luciferase CRE reporter gene assay.",
+      "claim_type": "EXPLICIT",
+      "source": "We confirmed G315's intolerance with a luciferase CRE reporter gene assay, where mutants G315T and G315L resulted in complete loss of function (Figure 5\u2014figure supplement 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental validation of the mutational intolerance finding.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:56.089906Z"
+    },
+    {
+      "id": "7b86f51e-8088-4159-b91d-2f431ebf6232",
+      "content_id": "0a1f0437-02dc-43c3-bcff-7f3bc22d031e",
+      "claim_id": "C46",
+      "claim": "Y3267x53 is the third most intolerant residue.",
+      "claim_type": "EXPLICIT",
+      "source": "The third most intolerant residue in our assay, Y3267x53 of the NPxxY motif, is especially important as it switches between two of these networks during receptor activation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from ranking residues by mutational tolerance.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:56.089906Z"
+    },
+    {
+      "id": "f8dcf077-5277-4cb4-bf86-1dcee5e98dfc",
+      "content_id": "0a1f0437-02dc-43c3-bcff-7f3bc22d031e",
+      "claim_id": "C47",
+      "claim": "In the inactive state, Y3267x53 contacts N511x50 and D792x50, two of the top 15 most intolerant positions.",
+      "claim_type": "EXPLICIT",
+      "source": "In the inactive state, Y3267x53 contacts N511x50 and D792x50, two of the top 15 most intolerant positions (Figure 5E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from combining mutational data with structural analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:56.089906Z"
+    },
+    {
+      "id": "f2be43b6-cd59-4e97-809f-3d1d01e0ab3c",
+      "content_id": "0a1f0437-02dc-43c3-bcff-7f3bc22d031e",
+      "claim_id": "C48",
+      "claim": "N51L and N51Y result in complete loss of function when assayed individually.",
+      "claim_type": "EXPLICIT",
+      "source": "N51L and N51Y also result in complete loss of function when assayed individually (Figure 5\u2014figure supplement 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental validation of the mutational intolerance finding.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:56.089906Z"
+    },
+    {
+      "id": "2d54ba5b-22ce-4ed3-89fa-c4d0417327e2",
+      "content_id": "0a1f0437-02dc-43c3-bcff-7f3bc22d031e",
+      "claim_id": "C49",
+      "claim": "Residues responsible for binding the derivatized hydroxybenzyl tail have significantly higher mutational tolerance than residues that contact the catecholamine head common to both isoproterenol and hydroxybenzyl isoproterenol at EC100 (p=0.0162).",
+      "claim_type": "EXPLICIT",
+      "source": "Using the crystal structure of the \u03b22AR bound to the analog, hydroxybenzyl isoproterenol (PDB: 4LDL), we find that residues responsible for binding the derivatized hydroxybenzyl tail have significantly higher mutational tolerance than residues that contact the catecholamine head common to both isoproterenol and hydroxybenzyl isoproterenol at EC100 (p=0.0162; Figure 5F, Figure 5\u2014figure supplement 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from mapping mutational data onto ligand-receptor contacts in a crystal structure.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:56.089906Z"
+    },
+    {
+      "id": "8621a1d1-88ef-41e9-9479-d5f93b156bf5",
+      "content_id": "0a1f0437-02dc-43c3-bcff-7f3bc22d031e",
+      "claim_id": "C50",
+      "claim": "W1584x50 is the most mutationally intolerant residue in the cholesterol-binding pocket.",
+      "claim_type": "EXPLICIT",
+      "source": "Of residues in this pocket, W1584x50 is predicted to be most important for cholesterol binding, and in agreement, W1584x50 is the most mutationally intolerant (Figure 5\u2014figure supplement 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from analyzing mutational tolerance of residues in a known cholesterol-binding site.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:56.089906Z"
+    },
+    {
+      "id": "8943f17f-2ff8-4d20-a926-f1546d7b9771",
+      "content_id": "0a1f0437-02dc-43c3-bcff-7f3bc22d031e",
+      "claim_id": "C51",
+      "claim": "The four most intolerant positions at the G\u0251s-\u03b22AR interface are I1353x54, V2225x61, A2716x33, and Q2295x68.",
+      "claim_type": "EXPLICIT",
+      "source": "Most residues are more mutationally tolerant than residues in the intolerant Clusters 1 and 2, but the four most intolerant positions are I1353x54, V2225x61, A2716x33, and Q2295x68 respectively (Figure 5\u2014figure supplement 2E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from analyzing mutational tolerance of residues at the G-protein interface.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:56.089906Z"
+    },
+    {
+      "id": "94a8df28-4ab8-441d-87b0-f1ba3ad25457",
+      "content_id": "0a1f0437-02dc-43c3-bcff-7f3bc22d031e",
+      "claim_id": "C52",
+      "claim": "W9923x50 of extracellular loop 1 (ECL1) is the 13th most intolerant residue.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, W9923x50 of extracellular loop 1 (ECL1) is the 13th most intolerant residue, which is unusual as mutationally intolerant residues are rare in the flexible loops.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from ranking residues by mutational tolerance.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:56.089906Z"
+    },
+    {
+      "id": "f43a7873-0cad-4792-9393-bb9ce85a40ac",
+      "content_id": "0a1f0437-02dc-43c3-bcff-7f3bc22d031e",
+      "claim_id": "C53",
+      "claim": "Only tryptophan is tolerated at position 9923x50.",
+      "claim_type": "EXPLICIT",
+      "source": "While aromatic residues are known to facilitate disulfide bond formation, only tryptophan is tolerated at this position (Bhattacharyya et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the experimental mutational data combined with literature knowledge.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:56.089906Z"
+    },
+    {
+      "id": "d4dec11b-c207-444a-840b-92da43c0d735",
+      "content_id": "0a1f0437-02dc-43c3-bcff-7f3bc22d031e",
+      "claim_id": "C54",
+      "claim": "W99's indole group hydrogen bonds with the backbone carbonyl of the neighboring G1023x21.",
+      "claim_type": "EXPLICIT",
+      "source": "We hypothesize W99's indole group hydrogen bonds with the backbone carbonyl of the neighboring uncharacterized and mutationally intolerant G1023x21, positioning W9923x50 toward the disulfide bond.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis based on structural analysis and mutational data.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:56.089906Z"
+    },
+    {
+      "id": "6aa0ed5c-c1f5-45f4-ab98-447b27a8532d",
+      "content_id": "0a1f0437-02dc-43c3-bcff-7f3bc22d031e",
+      "claim_id": "C55",
+      "claim": "G1023x21 hydrogen bonds with the backbone amide of C1063x25.",
+      "claim_type": "EXPLICIT",
+      "source": "G1023x21 also hydrogen bonds with the backbone amide of C1063x25, further stabilizing this region.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from structural analysis.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:56.089906Z"
+    },
+    {
+      "id": "7b1a8129-711f-4064-ba2a-b8cfcc83d1c5",
+      "content_id": "0a1f0437-02dc-43c3-bcff-7f3bc22d031e",
+      "claim_id": "C56",
+      "claim": "W9923x50, G1023x21, and C1063x25 are almost universally conserved across Class A GPCRs.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, W9923x50, G1023x21, and C1063x25 are almost universally conserved across Class A GPCRs (Vass et al., 2018; Figure 6A, Figure 6\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from analyzing sequence conservation across Class A GPCRs.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:56.089906Z"
+    },
+    {
+      "id": "d91d270f-631e-452e-8598-2d65a47ee169",
+      "content_id": "0a1f0437-02dc-43c3-bcff-7f3bc22d031e",
+      "claim_id": "C57",
+      "claim": "Comparison of over 25 high-resolution structures of class A GPCRs from five functionally different sub-families and six different species revealed that W9923x50, G1023x21, and C1063x25 consistently contact each other.",
+      "claim_type": "EXPLICIT",
+      "source": "Comparison of over 25 high-resolution structures of class A GPCRs from five functionally different sub-families and six different species revealed that these residues consistently contact each other (Figure 6B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from comparative structural analysis across multiple GPCR structures.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:56.089906Z"
+    },
+    {
+      "id": "d7ae6e54-63b4-4975-a3b4-40955f8312ff",
+      "content_id": "0a1f0437-02dc-43c3-bcff-7f3bc22d031e",
+      "claim_id": "C58",
+      "claim": "W9923x50, G1023x21, and the C1063x25-C19145x50 disulfide bond represent a conserved WxxGxxxC motif, forming an extracellular 'structural latch'.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on the evolutionary and structural conservation across Class A GPCRs, we find W9923x50, G1023x21, and the C1063x25-C19145x50 disulfide bond represent a conserved WxxGxxxC motif, forming an extracellular 'structural latch' that is maintained consistently throughout GPCRs spanning diverse molecular functions and phylogenetic origins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a novel finding from integrating mutational, structural, and evolutionary data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:56.089906Z"
+    },
+    {
+      "id": "f6df5792-7e77-4bdd-8379-f1aa3d828a76",
+      "content_id": "0a1f0437-02dc-43c3-bcff-7f3bc22d031e",
+      "claim_id": "C59",
+      "claim": "The overall RMSD between the inactive and active states for the \u03b22AR, M2 muscarinic receptor, and \u03bc opioid receptor are 1 \u00c5, 1.5 \u00c5, and 1.7 \u00c5 respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "While the overall RMSD between the inactive and active states for the \u03b22AR, M2 muscarinic receptor, and \u03bc opioid receptorreceptor are 1 \u00c5,1.5 \u00c5, and 1.7 \u00c5respectively, the conformation of the latch in the active and inactive states is nearly identical in each receptor (Figure 6D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from structural comparison of active and inactive states.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:56.089906Z"
+    },
+    {
+      "id": "47482582-a4c3-4aea-a957-50a22be8b4ea",
+      "content_id": "0a1f0437-02dc-43c3-bcff-7f3bc22d031e",
+      "claim_id": "C60",
+      "claim": "The conformation of the structural latch in the active and inactive states is nearly identical in the \u03b22AR, M2 muscarinic receptor, and \u03bc opioid receptor.",
+      "claim_type": "EXPLICIT",
+      "source": "While the overall RMSD between the inactive and active states for the \u03b22AR, M2 muscarinic receptor, and \u03bc opioid receptorreceptor are 1 \u00c5,1.5 \u00c5, and 1.7 \u00c5respectively, the conformation of the latch in the active and inactive states is nearly identical in each receptor (Figure 6D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from structural comparison of active and inactive states.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:56.089906Z"
+    },
+    {
+      "id": "d6a0d994-a2cd-4a30-90f0-898663abbe53",
+      "content_id": "0a1f0437-02dc-43c3-bcff-7f3bc22d031e",
+      "claim_id": "C61",
+      "claim": "The extracellular structural latch is part of a larger rigid plug present at the interface of the transmembrane and extracellular regions.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that the extracellular structural latch is part of a larger rigid plug present at the interface of the transmembrane and extracellular regions, which could be important for the structural integrity of the receptor and possibly guide ligand entry.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis based on the structural rigidity observed across conformational states.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:56.089906Z"
+    },
+    {
+      "id": "dd0549ca-1b90-46ff-9fac-f6344101c389",
+      "content_id": "0a1f0437-02dc-43c3-bcff-7f3bc22d031e",
+      "claim_id": "C62",
+      "claim": "In the BLT1 receptor structure, a Gly mutation at 3\u00d721 was found to be thermostabilizing.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, in the BLT1 receptor structure, a Gly mutation at 3\u00d721 was found to be thermostabilizing (Hori et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Hori et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:56.089906Z"
+    },
+    {
+      "id": "ec0a0ed6-471e-4075-9546-f9987e3f67c0",
+      "content_id": "0a1f0437-02dc-43c3-bcff-7f3bc22d031e",
+      "claim_id": "C63",
+      "claim": "The current assay does not distinguish between mutations that substantially affect G-protein signaling and those that affect cell-surface expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, we did not quantify cell-surface expression directly in our high-throughput functional assay, and thus we cannot distinguish between mutations that substantially affect G-protein signaling and those that affect cell-surface expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an acknowledged limitation of the experimental approach.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:56.089906Z"
+    },
+    {
+      "id": "fd952d48-cf21-4c8b-8ac4-ea5ddaa11832",
+      "content_id": "0a1f0437-02dc-43c3-bcff-7f3bc22d031e",
+      "claim_id": "C64",
+      "claim": "Mutations that lead to increased signal in the assays could work by reducing GPCR internalization rather than by increasing the intrinsic activity of the receptor.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, mutations that lead to increased signal in our assays could in fact work by reducing GPCR internalization and not by increasing the intrinsic activity of the receptor.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an acknowledged limitation and alternative interpretation of the data.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:56.089906Z"
+    },
+    {
+      "id": "eeaf5b81-bdce-4a2b-b676-6376497e962b",
+      "content_id": "0a1f0437-02dc-43c3-bcff-7f3bc22d031e",
+      "claim_id": "C65",
+      "claim": "The variant library is expressed in a genomic context at a controlled copy number, dampening the effects of expression-related artifacts typically associated with transiently transfected receptor assays.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we express our variant library in a genomic context at a controlled copy number, dampening the effects of expression-related artifacts typically associated with assays that involve transiently transfected receptor.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental design intended to mitigate certain artifacts.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:56.089906Z"
+    },
+    {
+      "id": "dffbfc11-06f6-42aa-ba89-04ae6b696520",
+      "content_id": "0a1f0437-02dc-43c3-bcff-7f3bc22d031e",
+      "claim_id": "C66",
+      "claim": "The GPCR MC4R is haploinsufficient, and rare heterozygous mutations that eliminate or reduce receptor expression are associated with obesity.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the GPCR MC4R is haploinsufficient, and rare heterozygous mutations that eliminate or reduce receptor expression are associated with obesity (Farooqi et al., 2003; Khera et al., 2019; Lotta et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Farooqi et al., 2003; Khera et al., 2019; Lotta et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:56.089906Z"
+    },
+    {
+      "id": "9028fc19-f5dc-4d0e-871c-61086222117f",
+      "content_id": "0a1f0437-02dc-43c3-bcff-7f3bc22d031e",
+      "claim_id": "C67",
+      "claim": "The average coefficient of variation for single mutations is 0.55.",
+      "claim_type": "EXPLICIT",
+      "source": "Given that measurements of individual mutations are noisy (average coefficient of variation = 0.55), this analysis is best suited as a funnel to guide further characterization (see Discussion).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantification of measurement noise in the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:56.089906Z"
+    },
+    {
+      "id": "9e80dfa8-8bc1-421b-83db-46eef2910d58",
+      "content_id": "0a1f0437-02dc-43c3-bcff-7f3bc22d031e",
+      "claim_id": "C68",
+      "claim": "Three mutations within the C terminus (E369P, R253P, and T360P) did not disrupt function when individually tested.",
+      "claim_type": "EXPLICIT",
+      "source": "We individually synthesized and tested three of these mutations (E369P, R253P, and T360P) and found that they did not disrupt function (Figure 5\u2014figure supplement 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental validation showing that some predictions from the multiplexed assay did not hold up in individual testing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:56.089906Z"
+    },
+    {
+      "id": "06503434-382d-472a-9e7e-4566fca00937",
+      "content_id": "0a1f0437-02dc-43c3-bcff-7f3bc22d031e",
+      "claim_id": "C69",
+      "claim": "Transcriptional reporters exist for most major GPCR pathways: G\u0251s, G\u0251q, G\u0251i/o, and arrestin signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "Such transcriptional reporter assays exist for most major drug receptor classes, including the major GPCR pathways: G\u0251s, G\u0251q, G\u0251i/o, and arrestin signaling (Azimzadeh et al., 2017; Cheng et al., 2010; Kroeze et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Azimzadeh et al., 2017; Cheng et al., 2010; Kroeze et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:56.089906Z"
+    },
+    {
+      "id": "6724cadd-1707-4369-a5dc-7104cba8f026",
+      "content_id": "0a1f0437-02dc-43c3-bcff-7f3bc22d031e",
+      "claim_id": "C70",
+      "claim": "Microarray-derived DNA often contains single-base deletions (47% of oligos in the library).",
+      "claim_type": "EXPLICIT",
+      "source": "Microarray-derived DNA often contains single-base deletions (47% of oligos in our library) that will introduce frameshift mutations into our library (LeProust et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a characterization of the oligonucleotide library quality, supported by citation to LeProust et al., 2010.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:56.089906Z"
+    },
+    {
+      "id": "3e0abc2a-608b-4196-890d-727a6928ad1e",
+      "content_id": "0a1f0437-02dc-43c3-bcff-7f3bc22d031e",
+      "claim_id": "C71",
+      "claim": "Each variant was represented by 10 barcodes (median).",
+      "claim_type": "EXPLICIT",
+      "source": "Each variant was represented by 10 barcodes (median), with biological replicates displaying Pearson's correlations of 0.87 to 0.90 at the barcode level and 0.66 to 0.75 when summarized by individual variants (Figure 1\u2014figure supplement 1G,H, Figure 2\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a description of the experimental design and data quality.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:56.089906Z"
+    },
+    {
+      "id": "e0c4b72f-3c0d-4e5d-968b-fe74011ddf24",
+      "content_id": "0a1f0437-02dc-43c3-bcff-7f3bc22d031e",
+      "claim_id": "C72",
+      "claim": "Biological replicates displayed Pearson's correlations of 0.87 to 0.90 at the barcode level.",
+      "claim_type": "EXPLICIT",
+      "source": "Each variant was represented by 10 barcodes (median), with biological replicates displaying Pearson's correlations of 0.87 to 0.90 at the barcode level and 0.66 to 0.75 when summarized by individual variants (Figure 1\u2014figure supplement 1G,H, Figure 2\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantification of reproducibility in the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:56.089906Z"
+    },
+    {
+      "id": "5a6aeb14-adbd-42de-a0b6-6d38a3733fa7",
+      "content_id": "0a1f0437-02dc-43c3-bcff-7f3bc22d031e",
+      "claim_id": "C73",
+      "claim": "Biological replicates displayed Pearson's correlations of 0.66 to 0.75 when summarized by individual variants.",
+      "claim_type": "EXPLICIT",
+      "source": "Each variant was represented by 10 barcodes (median), with biological replicates displaying Pearson's correlations of 0.87 to 0.90 at the barcode level and 0.66 to 0.75 when summarized by individual variants (Figure 1\u2014figure supplement 1G,H, Figure 2\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantification of reproducibility in the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:56.089906Z"
+    },
+    {
+      "id": "a03717de-e214-4832-aea9-fe861fe683d6",
+      "content_id": "0a1f0437-02dc-43c3-bcff-7f3bc22d031e",
+      "claim_id": "C74",
+      "claim": "The Genome Aggregation Database (gnomAD) reports variants found across 141,456 individuals.",
+      "claim_type": "EXPLICIT",
+      "source": "The Genome Aggregation Database (gnomAD) reports variants found across 141,456 individuals (Karczewski et al., 2019), and many of the 180 ADRB2 missense variants are of unknown significance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Karczewski et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:56.089906Z"
+    },
+    {
+      "id": "9542b29d-8a72-4a3f-ac86-e1b440e341a0",
+      "content_id": "0a1f0437-02dc-43c3-bcff-7f3bc22d031e",
+      "claim_id": "C75",
+      "claim": "Many of the 180 ADRB2 missense variants in gnomAD are of unknown significance.",
+      "claim_type": "EXPLICIT",
+      "source": "The Genome Aggregation Database (gnomAD) reports variants found across 141,456 individuals (Karczewski et al., 2019), and many of the 180 ADRB2 missense variants are of unknown significance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a motivation for the study's analysis of population variants.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:56.089906Z"
+    },
+    {
+      "id": "d43a074d-6be9-4011-a4c7-5e7b9d809fb7",
+      "content_id": "0a1f0437-02dc-43c3-bcff-7f3bc22d031e",
+      "claim_id": "C76",
+      "claim": "Correlation between mutational tolerance data and evolutionary predictors increases with agonist concentration up to EC100.",
+      "claim_type": "EXPLICIT",
+      "source": "Correlation between our data and both predictors increases with agonist concentration up to EC100 (Figure 3\u2014figure supplement 1A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from comparing experimental data to evolutionary metrics across different conditions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:56.089906Z"
+    },
+    {
+      "id": "26fa431d-2334-4ed9-9b16-759930fb5255",
+      "content_id": "0a1f0437-02dc-43c3-bcff-7f3bc22d031e",
+      "claim_id": "C77",
+      "claim": "A group of activating mutations in TM5 face TM6, which undergoes a large structural rearrangement during receptor activation.",
+      "claim_type": "EXPLICIT",
+      "source": "Of note, a group of these mutations in TM5 face TM6, which undergoes a large structural rearrangement during receptor activation (Weis and Kobilka, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from mapping activating mutations onto structure, with citation to Weis and Kobilka, 2018.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:56.089906Z"
+    },
+    {
+      "id": "a3a1cb6f-92f5-4fa1-8182-7586ab3718d3",
+      "content_id": "0a1f0437-02dc-43c3-bcff-7f3bc22d031e",
+      "claim_id": "C78",
+      "claim": "There are cases of constitutively active mutations in the N terminus that increase signaling potency without affecting surface expression, such as T11S of the melanocortin 4 (MC4R).",
+      "claim_type": "EXPLICIT",
+      "source": "However, there are cases of constitutively active mutations in the N terminus that increase signaling potency without affecting surface expression, such as T11S of the melanocortin 4 (MC4R) (Lotta et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Lotta et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:56.089906Z"
+    },
+    {
+      "id": "95118e66-f066-491a-9ef1-5353b069f3a3",
+      "content_id": "0a1f0437-02dc-43c3-bcff-7f3bc22d031e",
+      "claim_id": "C79",
+      "claim": "A recent study of genetic variation in human MC4R found a gain-of-function mutation at the terminal residue of the receptor.",
+      "claim_type": "EXPLICIT",
+      "source": "Lastly, we observe a number of activating mutations in the terminal residue, L413. A recent study of genetic variation in human MC4R also found a gain-of-function mutation at the terminal residue of the receptor, suggesting a possible conserved role for this position in regulating basal activity of GPCRs (Lotta et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Lotta et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:56.089906Z"
+    },
+    {
+      "id": "1ab251ce-2c8d-419c-ab00-2a0053e49159",
+      "content_id": "0a1f0437-02dc-43c3-bcff-7f3bc22d031e",
+      "claim_id": "C80",
+      "claim": "The terminal residue may have a conserved role in regulating basal activity of GPCRs.",
+      "claim_type": "EXPLICIT",
+      "source": "A recent study of genetic variation in human MC4R also found a gain-of-function mutation at the terminal residue of the receptor, suggesting a possible conserved role for this position in regulating basal activity of GPCRs (Lotta et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis based on observations from this study and cited literature.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:56.089906Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "46db5bbd-ca27-406a-b4f7-6eb69bd8bbdc",
+      "content_id": "0a1f0437-02dc-43c3-bcff-7f3bc22d031e",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The study successfully performed deep mutational scanning of \u03b22AR, testing 7800 of 7828 possible single amino acid substitutions at four isoproterenol concentrations with reliable measurements for 95-99% of variants. Each variant was represented by a median of 10 barcodes, with biological replicates showing Pearson's correlations of 0.87-0.90 at the barcode level and 0.66-0.75 at the variant level.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C4, C16, C71, C72, and C73 collectively demonstrate successful execution of the deep mutational scanning experiment with appropriate technical replicates and quality metrics. The high barcode-level correlation (0.87-0.90) and moderate variant-level correlation (0.66-0.75) are consistent with the acknowledged noise in single-variant measurements (C67, CV=0.55), supporting the robustness of aggregate analyses.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:45:56.089906Z"
+    },
+    {
+      "id": "fb8b0083-65a2-4c58-9a18-4970eb1039b4",
+      "content_id": "0a1f0437-02dc-43c3-bcff-7f3bc22d031e",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The multiplexed assay was validated using previously characterized \u03b22AR mutations, showing that known null mutations (D113A, I135W) have significantly diminished activity at all concentrations, while known hypomorphic mutations (S203A, S204A) show reduced activity at EC100 but recover to wild-type levels at Emax.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21-C23 provide validation of the assay using well-characterized mutations with appropriate statistical testing (Wald test, p<<0.001 and p>0.01). The differential behavior of hypomorphic vs. null mutations at different agonist concentrations demonstrates the assay can distinguish between different classes of functional impairment, supporting the validity of the experimental approach.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:45:56.089906Z"
+    },
+    {
+      "id": "68425160-8f64-4b96-ab34-2a714cc736a1",
+      "content_id": "0a1f0437-02dc-43c3-bcff-7f3bc22d031e",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The transmembrane domain and intracellular helix eight show greater sensitivity to amino acid substitutions compared to termini and loops, with particular sensitivity to helix-disrupting proline substitutions. Frameshift mutations consistently show lower activity than missense mutations, with reduced effects in the C-terminus.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C17-C20 describe global patterns in the mutational landscape with appropriate statistical support (Mann-Whitney U tests, p<0.001 or p<<0.001). These findings are consistent with known structural principles of GPCRs where the transmembrane domain is critical for function and the C-terminus is less structured. The statistical significance and biological plausibility support these conclusions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:45:56.089906Z"
+    },
+    {
+      "id": "f26ee671-5851-43a8-964e-e0a49b750ec3",
+      "content_id": "0a1f0437-02dc-43c3-bcff-7f3bc22d031e",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Mutational tolerance correlates strongly with evolutionary conservation across \u03b22AR orthologs (\u03c1=-0.74) and Class A GPCRs (\u03c1=-0.68), with correlation maximizing at EC100. Individual variant effects correlate moderately with EVmutation predictions (\u03c1=0.520). A subset of ECL2 residues, including the C184-C190 disulfide bridge, showed greater intolerance than expected from conservation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24-C27 and C76 demonstrate strong agreement between experimental mutational data and evolutionary metrics, with appropriate correlation statistics. The identification of ECL2 residues (C26) as more intolerant than expected suggests \u03b22AR-specific functional constraints, which is a biologically meaningful finding. The moderate correlation with EVmutation (\u03c1=0.520) is reasonable given the complexity of GPCR function.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:45:56.089906Z"
+    },
+    {
+      "id": "97fdb0c0-2530-44b3-8247-6ddb7ffbe9cf",
+      "content_id": "0a1f0437-02dc-43c3-bcff-7f3bc22d031e",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The study classified 11 ADRB2 variants from the human population (gnomAD) as potentially loss-of-function by comparing their activity to frameshift mutations, though individual measurements have high noise (CV=0.55).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "While C28 reports classification of 11 variants as potentially loss-of-function, C67 acknowledges substantial measurement noise (CV=0.55) for individual mutations. The authors themselves state this analysis is 'best suited as a funnel to guide further characterization' and demonstrate that some predictions (C68) did not validate individually. Without additional validation or lower noise measurements, these specific variant classifications remain uncertain.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:45:56.089906Z"
+    },
+    {
+      "id": "a40d0199-97c1-4f96-baa7-fca05401f792",
+      "content_id": "0a1f0437-02dc-43c3-bcff-7f3bc22d031e",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The 100 least active mutations localize to the transmembrane domain core, while the 100 most activating mutations map to TM1, TM5, TM6 (facing away from the core), and are enriched in termini, ICL3, and Helix 8.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29-C31 describe spatial patterns of activating and inactivating mutations that are consistent with GPCR structural biology. The localization of inactivating mutations to the protein core and activating mutations to surface-exposed regions and G-protein binding interfaces (ICL3) is biologically plausible. However, the authors acknowledge (C63-C64) that activating mutations may reflect altered expression or internalization rather than intrinsic activity, which is a limitation but does not invalidate the spatial patterns observed.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:45:56.089906Z"
+    },
+    {
+      "id": "e08dc9df-1719-4676-a8aa-2246324fe512",
+      "content_id": "0a1f0437-02dc-43c3-bcff-7f3bc22d031e",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Unsupervised learning (UMAP and HDBSCAN) identified six functionally distinct clusters of residues: Clusters 1-2 are globally intolerant, Cluster 3 is sensitive to proline and charged substitutions, Cluster 4 is sensitive to negative charges, Cluster 5 is sensitive to proline, and Cluster 6 is tolerant. Clusters 1-5 primarily comprise the transmembrane domain while Cluster 6 resides in loops and termini.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C38 describe a systematic unsupervised analysis that identifies biologically meaningful patterns. The clustering approach is appropriate for high-dimensional data, and the resulting clusters show distinct mutational sensitivities that map logically to protein structure. The authors acknowledge that Cluster 5 assignment is less robust as it relies heavily on proline sensitivity, which is appropriately cautious. The overall clustering results are well-supported by the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:45:56.089906Z"
+    },
+    {
+      "id": "5d511991-3aaf-446a-bdfc-e00a15f70909",
+      "content_id": "0a1f0437-02dc-43c3-bcff-7f3bc22d031e",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The globally intolerant Clusters 1-2 localize to the protein core while charge-sensitive Cluster 3 is enriched in lipid-facing regions. Residues uniquely sensitive to charged substitutions are significantly more lipid-facing than those sensitive to both hydrophobic and charged mutations (p=0.000036).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39-C41 integrate mutational data with structural analysis (solvent-accessible surface area) to reveal that charge sensitivity correlates with lipid exposure. This is biologically sensible as charged residues in the lipid bilayer would be energetically unfavorable. The statistical significance (p=0.000036) and the use of appropriate structural metrics (SASA) support this conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:45:56.089906Z"
+    },
+    {
+      "id": "9746969d-5fd1-4e70-b39d-22547241bc3b",
+      "content_id": "0a1f0437-02dc-43c3-bcff-7f3bc22d031e",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Among the 15 most mutationally intolerant positions, 11 belong to known functional motifs (PIF, CWxP, NPxxY, orthosteric site, water-mediated networks, disulfide bonds, cholesterol-binding). The study identified previously uncharacterized critical residues including G315 (2nd most intolerant), which likely clashes with W286 of the CWxP motif when mutated, and Y326 (3rd most intolerant), which participates in water-mediated hydrogen bond networks.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C48 demonstrate that mutational intolerance successfully identifies known functional motifs and reveals novel critical residues. The structural rationalization for G315 intolerance (C44) is supported by crystal structure analysis, and experimental validation (C45, C48) confirms loss-of-function for tested mutations. The integration of mutational data with structural analysis provides strong support for these findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:45:56.089906Z"
+    },
+    {
+      "id": "02ecd7df-054b-4b02-a7ec-ab567424ffa2",
+      "content_id": "0a1f0437-02dc-43c3-bcff-7f3bc22d031e",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Residues contacting the catecholamine head of isoproterenol (present in the assay agonist) have significantly lower mutational tolerance than residues contacting the hydroxybenzyl tail (absent in the assay agonist) at EC100 (p=0.0162).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C49 demonstrates that the assay can discriminate between contacts with different parts of a ligand based on which portions are present in the agonist used. The statistical significance (p=0.0162) and biological logic (residues contacting the actual agonist used should be more critical) support this finding. This suggests DMS can map functional ligand-receptor contacts.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:45:56.089906Z"
+    },
+    {
+      "id": "b6f40528-5395-46d7-9fc0-4549b65f35d0",
+      "content_id": "0a1f0437-02dc-43c3-bcff-7f3bc22d031e",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Analysis of specific protein interfaces revealed W158 as the most intolerant residue in the cholesterol-binding pocket, and identified I135, V222, A271, and Q229 as the four most intolerant positions at the G\u03b1s-\u03b22AR interface.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50-C51 apply the mutational tolerance metric to characterize specific molecular interfaces. The identification of W158 as most critical for cholesterol binding aligns with structural predictions, and the G\u03b1s interface residues identified are consistent with known protein-protein interaction principles. These findings are supported by integration with structural data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:45:56.089906Z"
+    },
+    {
+      "id": "e950a35c-febe-4567-8545-9439c80ad310",
+      "content_id": "0a1f0437-02dc-43c3-bcff-7f3bc22d031e",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The study identified a previously uncharacterized 'structural latch' comprising W99 (13th most intolerant), G102, and the C106-C191 disulfide bond, forming a conserved WxxGxxxC motif. This motif is almost universally conserved across Class A GPCRs and these residues consistently contact each other across >25 high-resolution GPCR structures from diverse subfamilies and species.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52-C58 describe a novel structural feature identified through integration of mutational data (C52-C53), structural analysis (C54-C55, C57), and evolutionary conservation (C56). The convergence of multiple lines of evidence\u2014mutational intolerance, structural contacts across diverse GPCRs, and sequence conservation\u2014strongly supports the existence and functional importance of this structural latch. This is a major novel finding of the study.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:45:56.089906Z"
+    },
+    {
+      "id": "8be1d7dc-47cf-4373-ac4f-bc4e59b2fffd",
+      "content_id": "0a1f0437-02dc-43c3-bcff-7f3bc22d031e",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The structural latch remains conformationally rigid across receptor activation states. While overall RMSD between inactive and active states is 1-1.7 \u00c5 for \u03b22AR, M2 muscarinic, and \u03bc-opioid receptors, the latch conformation is nearly identical in both states, suggesting it is part of a larger rigid plug at the transmembrane-extracellular interface.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59-C60 provide quantitative structural evidence for the rigidity of the structural latch across conformational states in multiple GPCRs. The comparison of overall RMSD to latch-specific conformational stability is appropriate. Claim C61 is presented as a hypothesis ('suggests,' 'could be important') based on the observed rigidity, which is appropriately cautious. The structural data support the rigidity observation, though the functional implications remain speculative.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:45:56.089906Z"
+    },
+    {
+      "id": "896d89ef-3581-474a-8054-9ee87e103810",
+      "content_id": "0a1f0437-02dc-43c3-bcff-7f3bc22d031e",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The assay has a key limitation: it cannot distinguish between mutations affecting G-protein signaling versus cell-surface expression. Activating mutations could work by reducing internalization rather than increasing intrinsic activity. However, the genomic integration at controlled copy number mitigates some expression-related artifacts.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C63-C65 represent an honest assessment of experimental limitations. The authors clearly acknowledge that the assay measures a composite phenotype (C63-C64) while noting design features that partially mitigate artifacts (C65). This limitation is important for interpreting activating mutations and some loss-of-function variants, but does not invalidate the major findings about mutational intolerance patterns and structural features.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:45:56.089906Z"
+    },
+    {
+      "id": "2ac39897-2311-4b2f-8eed-1f3a462b7ae9",
+      "content_id": "0a1f0437-02dc-43c3-bcff-7f3bc22d031e",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Three C-terminal proline mutations (E369P, R253P, T360P) predicted to be disruptive in the multiplexed assay did not show loss of function when tested individually.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C68 provides important negative validation data showing that some predictions from the multiplexed assay do not hold up in individual testing. This is consistent with the acknowledged high noise in individual measurements (C67, CV=0.55) and supports the authors' statement that individual variant data should be confirmed by traditional assays. This demonstrates appropriate scientific rigor in validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:45:56.089906Z"
+    },
+    {
+      "id": "d84ed211-1c21-4506-b387-775e4a4fac88",
+      "content_id": "0a1f0437-02dc-43c3-bcff-7f3bc22d031e",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The study identified residues specifically important for \u03b22AR signaling, mutations in the human population that are potentially loss of function, and residues that modulate basal activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5-C7 are high-level summary statements of the study's findings. These are supported by the detailed results described in other claim groups: C5 is supported by the mutational intolerance analysis (C42-C48), C6 is supported by the gnomAD analysis (C28, though with caveats about noise), and C7 is supported by the identification of activating mutations (C29-C31). These represent the major outcomes of the study.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:45:56.089906Z"
+    },
+    {
+      "id": "5a531c71-be62-4d1a-8e8f-03f8212ba3ed",
+      "content_id": "0a1f0437-02dc-43c3-bcff-7f3bc22d031e",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "The study discovered a previously uncharacterized structural latch spanning the first two extracellular loops that is highly conserved across Class A GPCRs and conformationally rigid in both inactive and active receptor states.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8-C9 are high-level summary statements of the structural latch discovery, which is detailed and supported in claims C52-C61. The convergence of mutational, structural, and evolutionary evidence provides strong support for this novel finding. This represents one of the most significant discoveries of the manuscript.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:45:56.089906Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "5f3e6c6c-99b4-4a58-8049-1849b1024edb",
+      "result_id": "46db5bbd-ca27-406a-b4f7-6eb69bd8bbdc"
+    },
+    {
+      "claim_id": "d5dcd296-e316-41aa-933d-ce184e088c38",
+      "result_id": "46db5bbd-ca27-406a-b4f7-6eb69bd8bbdc"
+    },
+    {
+      "claim_id": "7eebd6d9-cb6c-45ff-8978-a9ef0e4c99ed",
+      "result_id": "46db5bbd-ca27-406a-b4f7-6eb69bd8bbdc"
+    },
+    {
+      "claim_id": "3e0abc2a-608b-4196-890d-727a6928ad1e",
+      "result_id": "46db5bbd-ca27-406a-b4f7-6eb69bd8bbdc"
+    },
+    {
+      "claim_id": "e0c4b72f-3c0d-4e5d-968b-fe74011ddf24",
+      "result_id": "46db5bbd-ca27-406a-b4f7-6eb69bd8bbdc"
+    },
+    {
+      "claim_id": "5a6aeb14-adbd-42de-a0b6-6d38a3733fa7",
+      "result_id": "46db5bbd-ca27-406a-b4f7-6eb69bd8bbdc"
+    },
+    {
+      "claim_id": "98e72e2f-79c7-4941-8c1f-9bc8718f94b6",
+      "result_id": "fb8b0083-65a2-4c58-9a18-4970eb1039b4"
+    },
+    {
+      "claim_id": "1681e891-961d-4ab8-86b7-a31e4367640a",
+      "result_id": "fb8b0083-65a2-4c58-9a18-4970eb1039b4"
+    },
+    {
+      "claim_id": "06c7105c-3303-4f76-9a39-3c3b21a2c1ea",
+      "result_id": "fb8b0083-65a2-4c58-9a18-4970eb1039b4"
+    },
+    {
+      "claim_id": "b37d12a6-3c34-4156-af75-ec9ec9049dba",
+      "result_id": "68425160-8f64-4b96-ab34-2a714cc736a1"
+    },
+    {
+      "claim_id": "9533dc56-cc35-4d41-9e5d-737c2ae857d0",
+      "result_id": "68425160-8f64-4b96-ab34-2a714cc736a1"
+    },
+    {
+      "claim_id": "3564aff2-197c-4d64-86b3-4ae2fac57a24",
+      "result_id": "68425160-8f64-4b96-ab34-2a714cc736a1"
+    },
+    {
+      "claim_id": "f59e627b-4522-4a0a-882e-1bbee4c18cb2",
+      "result_id": "68425160-8f64-4b96-ab34-2a714cc736a1"
+    },
+    {
+      "claim_id": "1c36e524-9115-4c5b-9ee5-b96403edbe0d",
+      "result_id": "f26ee671-5851-43a8-964e-e0a49b750ec3"
+    },
+    {
+      "claim_id": "7e733c0b-1c80-46c6-83f1-fd8afe3a8970",
+      "result_id": "f26ee671-5851-43a8-964e-e0a49b750ec3"
+    },
+    {
+      "claim_id": "2a84ae6f-d3b9-44ba-a05e-7217a716f117",
+      "result_id": "f26ee671-5851-43a8-964e-e0a49b750ec3"
+    },
+    {
+      "claim_id": "f0b01613-9678-4a48-a2f6-cfc70e110436",
+      "result_id": "f26ee671-5851-43a8-964e-e0a49b750ec3"
+    },
+    {
+      "claim_id": "d43a074d-6be9-4011-a4c7-5e7b9d809fb7",
+      "result_id": "f26ee671-5851-43a8-964e-e0a49b750ec3"
+    },
+    {
+      "claim_id": "5eccdb35-0621-46b3-9ec4-f7e29812bcf4",
+      "result_id": "97fdb0c0-2530-44b3-8247-6ddb7ffbe9cf"
+    },
+    {
+      "claim_id": "9028fc19-f5dc-4d0e-871c-61086222117f",
+      "result_id": "97fdb0c0-2530-44b3-8247-6ddb7ffbe9cf"
+    },
+    {
+      "claim_id": "d6a5013e-3531-4b04-83bd-f78b8afb9500",
+      "result_id": "a40d0199-97c1-4f96-baa7-fca05401f792"
+    },
+    {
+      "claim_id": "ab80bfac-3692-4380-a5b8-412617fb7ef5",
+      "result_id": "a40d0199-97c1-4f96-baa7-fca05401f792"
+    },
+    {
+      "claim_id": "d55254ac-af09-4cc8-80e9-bdbb66fb8df3",
+      "result_id": "a40d0199-97c1-4f96-baa7-fca05401f792"
+    },
+    {
+      "claim_id": "60d1a660-7fbb-42e3-b5ad-e272993d181d",
+      "result_id": "e08dc9df-1719-4676-a8aa-2246324fe512"
+    },
+    {
+      "claim_id": "f89ed784-cf95-4c2a-8d04-91863df46b4e",
+      "result_id": "e08dc9df-1719-4676-a8aa-2246324fe512"
+    },
+    {
+      "claim_id": "2c1a3f72-d50f-4441-911f-70f99f012fa8",
+      "result_id": "e08dc9df-1719-4676-a8aa-2246324fe512"
+    },
+    {
+      "claim_id": "2f3f68e8-9799-4edd-8b2a-32ad0f22d491",
+      "result_id": "e08dc9df-1719-4676-a8aa-2246324fe512"
+    },
+    {
+      "claim_id": "f121ae46-0b32-4990-90ab-cdd5b9df3bca",
+      "result_id": "e08dc9df-1719-4676-a8aa-2246324fe512"
+    },
+    {
+      "claim_id": "4a1a68ad-99d9-4093-989a-d87c82d60d01",
+      "result_id": "e08dc9df-1719-4676-a8aa-2246324fe512"
+    },
+    {
+      "claim_id": "066b66d5-4ee9-4b80-8e6c-304ace66d641",
+      "result_id": "e08dc9df-1719-4676-a8aa-2246324fe512"
+    },
+    {
+      "claim_id": "39610d7b-e9e3-4122-ae27-77b7b68863fe",
+      "result_id": "5d511991-3aaf-446a-bdfc-e00a15f70909"
+    },
+    {
+      "claim_id": "b92c4f6f-2735-4e19-939c-236f961f5e02",
+      "result_id": "5d511991-3aaf-446a-bdfc-e00a15f70909"
+    },
+    {
+      "claim_id": "f0f13491-7b64-4fd1-9b20-f13d16e971a8",
+      "result_id": "5d511991-3aaf-446a-bdfc-e00a15f70909"
+    },
+    {
+      "claim_id": "a8f19012-f88e-47bb-bd4c-e4062ceee380",
+      "result_id": "9746969d-5fd1-4e70-b39d-22547241bc3b"
+    },
+    {
+      "claim_id": "1f57c262-ff19-4ff3-9d1a-e28284cf432b",
+      "result_id": "9746969d-5fd1-4e70-b39d-22547241bc3b"
+    },
+    {
+      "claim_id": "cb0e7398-7eb6-43b3-a8eb-e6fb0a42f220",
+      "result_id": "9746969d-5fd1-4e70-b39d-22547241bc3b"
+    },
+    {
+      "claim_id": "fb5e69a1-4116-4888-98bf-5061f242fc8f",
+      "result_id": "9746969d-5fd1-4e70-b39d-22547241bc3b"
+    },
+    {
+      "claim_id": "7b86f51e-8088-4159-b91d-2f431ebf6232",
+      "result_id": "9746969d-5fd1-4e70-b39d-22547241bc3b"
+    },
+    {
+      "claim_id": "f8dcf077-5277-4cb4-bf86-1dcee5e98dfc",
+      "result_id": "9746969d-5fd1-4e70-b39d-22547241bc3b"
+    },
+    {
+      "claim_id": "f2be43b6-cd59-4e97-809f-3d1d01e0ab3c",
+      "result_id": "9746969d-5fd1-4e70-b39d-22547241bc3b"
+    },
+    {
+      "claim_id": "2d54ba5b-22ce-4ed3-89fa-c4d0417327e2",
+      "result_id": "02ecd7df-054b-4b02-a7ec-ab567424ffa2"
+    },
+    {
+      "claim_id": "8621a1d1-88ef-41e9-9479-d5f93b156bf5",
+      "result_id": "b6f40528-5395-46d7-9fc0-4549b65f35d0"
+    },
+    {
+      "claim_id": "8943f17f-2ff8-4d20-a926-f1546d7b9771",
+      "result_id": "b6f40528-5395-46d7-9fc0-4549b65f35d0"
+    },
+    {
+      "claim_id": "94a8df28-4ab8-441d-87b0-f1ba3ad25457",
+      "result_id": "e950a35c-febe-4567-8545-9439c80ad310"
+    },
+    {
+      "claim_id": "f43a7873-0cad-4792-9393-bb9ce85a40ac",
+      "result_id": "e950a35c-febe-4567-8545-9439c80ad310"
+    },
+    {
+      "claim_id": "d4dec11b-c207-444a-840b-92da43c0d735",
+      "result_id": "e950a35c-febe-4567-8545-9439c80ad310"
+    },
+    {
+      "claim_id": "6aa0ed5c-c1f5-45f4-ab98-447b27a8532d",
+      "result_id": "e950a35c-febe-4567-8545-9439c80ad310"
+    },
+    {
+      "claim_id": "7b1a8129-711f-4064-ba2a-b8cfcc83d1c5",
+      "result_id": "e950a35c-febe-4567-8545-9439c80ad310"
+    },
+    {
+      "claim_id": "d91d270f-631e-452e-8598-2d65a47ee169",
+      "result_id": "e950a35c-febe-4567-8545-9439c80ad310"
+    },
+    {
+      "claim_id": "d7ae6e54-63b4-4975-a3b4-40955f8312ff",
+      "result_id": "e950a35c-febe-4567-8545-9439c80ad310"
+    },
+    {
+      "claim_id": "f6df5792-7e77-4bdd-8379-f1aa3d828a76",
+      "result_id": "8be1d7dc-47cf-4373-ac4f-bc4e59b2fffd"
+    },
+    {
+      "claim_id": "47482582-a4c3-4aea-a957-50a22be8b4ea",
+      "result_id": "8be1d7dc-47cf-4373-ac4f-bc4e59b2fffd"
+    },
+    {
+      "claim_id": "d6a0d994-a2cd-4a30-90f0-898663abbe53",
+      "result_id": "8be1d7dc-47cf-4373-ac4f-bc4e59b2fffd"
+    },
+    {
+      "claim_id": "ec0a0ed6-471e-4075-9546-f9987e3f67c0",
+      "result_id": "896d89ef-3581-474a-8054-9ee87e103810"
+    },
+    {
+      "claim_id": "fd952d48-cf21-4c8b-8ac4-ea5ddaa11832",
+      "result_id": "896d89ef-3581-474a-8054-9ee87e103810"
+    },
+    {
+      "claim_id": "eeaf5b81-bdce-4a2b-b676-6376497e962b",
+      "result_id": "896d89ef-3581-474a-8054-9ee87e103810"
+    },
+    {
+      "claim_id": "9e80dfa8-8bc1-421b-83db-46eef2910d58",
+      "result_id": "2ac39897-2311-4b2f-8eed-1f3a462b7ae9"
+    },
+    {
+      "claim_id": "58eadf4d-e9d4-4930-b966-af73f9b3ea0f",
+      "result_id": "d84ed211-1c21-4506-b387-775e4a4fac88"
+    },
+    {
+      "claim_id": "b4b8b294-a395-499f-bd6b-2d0048802d33",
+      "result_id": "d84ed211-1c21-4506-b387-775e4a4fac88"
+    },
+    {
+      "claim_id": "249cb8b4-b1a1-4ee6-bb1d-e46dc608e532",
+      "result_id": "d84ed211-1c21-4506-b387-775e4a4fac88"
+    },
+    {
+      "claim_id": "9285472f-f7c7-48bd-8139-7a399053ec0f",
+      "result_id": "5a531c71-be62-4d1a-8e8f-03f8212ba3ed"
+    },
+    {
+      "claim_id": "59eaac2c-5b90-4293-8aea-c4064df8770c",
+      "result_id": "5a531c71-be62-4d1a-8e8f-03f8212ba3ed"
+    }
+  ],
+  "comparisons": []
+}

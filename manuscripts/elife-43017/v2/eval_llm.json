@@ -1,0 +1,366 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C7"
+    ],
+    "result": "MYOD1 ChIP-Seq in adult skeletal muscle identified 12,343 binding sites on 7,751 genes, with approximately 30% (536 genes) of circadian transcripts directly targeted by MYOD1. These MYOD1-bound circadian genes show enrichment for muscle structure/development and circadian rhythm biological processes, including binding within core clock gene regulatory regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the ChIP-Seq data (C1) and overlap analysis (C2) are quantitatively reported, the lack of a pre-immune serum control is explicitly acknowledged and raises concerns about false positives despite stringent peak calling. The GO enrichment findings (C3, C4) and binding observations (C7) support the claims, but the absence of proper negative controls undermines confidence in the specificity of the identified binding sites.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C108"
+    ],
+    "result": "Selected MYOD1-bound circadian genes (Asb2, Nrip1, Ppp1r3c, Vegfa) displayed altered temporal expression with reduced average levels in MYOD1-CE mice, with Vegfa and Nrip1 losing circadian rhythmicity, supporting that MYOD1 levels influence molecular clock transcriptional output.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The RT-PCR temporal expression data (C5) with statistical analysis (C6) from MYOD1-CE mice provide consistent evidence across multiple genes. The JTK_CYCLE analysis appropriately quantifies loss of rhythmicity, and the conclusion (C108) is well-supported by the data showing both amplitude reduction and loss of circadian patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C109"
+    ],
+    "result": "MYOD1 over-expression significantly elevated endogenous BMAL1 protein levels (~50%) and enhanced Bmal1P-Luc activity in C2C12 myotubes, primary myotubes, and adult skeletal muscle, indicating Bmal1 is under transcriptional regulation by MYOD1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The Western blot data (C8, n=3) shows significant BMAL1 protein increase with appropriate loading controls. The luciferase assays (C9, C10) demonstrate consistent transactivation across multiple experimental systems (cell lines, primary cells, in vivo). The convergence of protein and reporter data strongly supports the conclusion (C109) of transcriptional regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C11",
+      "C12"
+    ],
+    "result": "MYOD1 over-expression enhanced Bmal1P-Luc circadian amplitude ~40-fold in C2C12 myotubes, while the MYOD1mut vector (lacking transactivation domain) only increased amplitude ~8-fold, demonstrating the importance of the transactivation domain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The real-time bioluminescence data (C11, C12) with JTK_CYCLE amplitude quantification provides robust evidence. The dramatic difference between wildtype and mutant MYOD1 (40-fold vs 8-fold) with appropriate controls supports the functional requirement for the transactivation domain. Sample sizes appear adequate (n=4-7 biological replicates).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C19",
+      "C107"
+    ],
+    "result": "A non-canonical E-box motif (5'-CAGGGA-3') located at +68 to +86 downstream of the Bmal1 TSS is required for full MYOD1-mediated transactivation, as demonstrated by truncation and site-directed mutagenesis experiments showing significantly reduced response when this element is mutated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The systematic truncation analysis (C13) and site-directed mutagenesis (C15) provide strong evidence for the functional importance of this element. The identification of the non-canonical E-box (C14) and demonstration of reduced but not abolished activity (40 vs 150-fold) appropriately leads to the conclusion (C19, C107) that additional elements exist. The experimental design is sound with appropriate controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "The Bmal1Pmut-Luc reporter (with mutated non-canonical E-box) displayed reduced circadian amplitude (~50% lower at baseline, only 10% of wildtype with MYOD1 over-expression) in both C2C12 and primary myotubes, confirming the functional importance of this element for circadian regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The real-time bioluminescence recordings (C16, C17, C18) in multiple cell systems provide consistent evidence for the functional role of the non-canonical E-box in both basal and MYOD1-enhanced circadian amplitude. The quantitative comparisons are appropriate and the replication in primary cells strengthens the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "BiFC assays demonstrate that MYOD1 co-localizes with both BMAL1 and CLOCK in multiple discrete foci within myonuclei, suggesting MYOD1 interacts with a subset of BMAL1:CLOCK heterodimers, with more discrete binding patterns compared to diffuse BMAL1:CLOCK binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The BiFC experiments include appropriate positive (BMAL1:CLOCK, C20) and negative (BMAL1:BMAL2, C21) controls. The observation of MYOD1 co-localization with both CLOCK (C22) and BMAL1 (C23) is well-documented with imaging. The interpretation regarding discrete vs diffuse binding patterns (C102-C104) is reasonable based on the visual data, though quantitative analysis would strengthen these observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C79",
+      "C80"
+    ],
+    "result": "BMAL1:CLOCK enhanced TcapP-Luc activity ~2.5-fold, while mutant forms failed to transactivate the reporter, and Bmal1 knockdown reduced endogenous Tcap expression, demonstrating that a functional BMAL1:CLOCK heterodimer is necessary for Tcap promoter activation and that endogenous Tcap is regulated downstream of BMAL1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The dual-luciferase assays (C25, C26) with mutant controls provide clear evidence for BMAL1:CLOCK requirement. The siRNA knockdown data (C27) complements the overexpression studies and confirms endogenous regulation. The conclusions (C79, C80) are well-supported by converging evidence from gain-of-function and loss-of-function approaches.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C81"
+    ],
+    "result": "MYOD1 robustly activated TcapP-Luc (~280-fold), and co-expression with BMAL1:CLOCK resulted in synergistic activation (~540-fold, significantly greater than MYOD1 alone, p=0.033). This synergy was abolished by mutant forms of BMAL1 or CLOCK, demonstrating cooperative regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The dual-luciferase data (C28, C29, C30) with statistical analysis clearly demonstrate synergistic activation. The use of mutant constructs to disrupt the synergy provides mechanistic insight. The quantitative differences are substantial and statistically significant with appropriate sample sizes (n=4). The conclusion of cooperative regulation (C81) is well-justified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C82",
+      "C105"
+    ],
+    "result": "TcapP-Luc displayed robust circadian oscillation with anti-phasic pattern to Bmal1P-Luc. MYOD1 over-expression elevated circadian amplitude >20-fold (MYOD1mut failed to amplify similarly), and Tcap mRNA lost circadian rhythmicity in MYOD1-CE mice, demonstrating requirement for both MYOD1 and BMAL1 in promoting circadian Tcap expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The real-time bioluminescence data (C31, C32, C33) with amplitude quantification and the in vivo temporal expression analysis (C34) provide strong converging evidence. The anti-phasic relationship (C105) is appropriately noted. The loss of rhythmicity in MYOD1-CE mice combined with the overexpression data strongly supports the conclusion (C82) of dual requirement.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C84",
+      "C85",
+      "C106"
+    ],
+    "result": "E-box mutagenesis revealed that BMAL1:CLOCK requires the E2-3' E-box for transactivation, while MYOD1 alone can activate all three E-box mutants. However, mutation of any E-box completely abolished synergistic activation by MYOD1 and BMAL1:CLOCK, with the E1 E-box required for full synergistic responsiveness.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The systematic E-box mutagenesis experiments (C35, C36, C37) with dual-luciferase assays provide clear mechanistic insights. The differential requirements for BMAL1:CLOCK vs MYOD1 alone vs synergistic activation are well-documented. The conclusions (C84, C85, C106) appropriately interpret the complex regulatory interactions revealed by the mutagenesis data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C86"
+    ],
+    "result": "Real-time bioluminescence assays showed that the TcapP-E1-Luc mutant maintained ~24hr oscillation with ~2-fold reduced amplitude, while mutation of either tandem E-box (3' or 5') resulted in complete loss of circadian oscillation, demonstrating that Tcap's circadian expression pattern is set primarily by BMAL1:CLOCK.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The circadian bioluminescence recordings (C38, C39) clearly distinguish between amplitude effects (E1) and complete loss of rhythmicity (tandem E-boxes). The interpretation (C86) that BMAL1:CLOCK sets the circadian pattern while MYOD1 modulates amplitude is well-supported by the differential effects of E-box mutations on rhythmicity vs amplitude.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C101"
+    ],
+    "result": "ChIP-PCR in adult skeletal muscle (ZT2) showed BMAL1 was significantly enriched at both the E1 and tandem E-boxes of the Tcap promoter, while MYOD1 was enriched at the tandem E-box (albeit with lower binding strength than BMAL1) but not at E1, suggesting MYOD1 binding may be mediated through a transcription factor complex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The targeted ChIP-PCR experiments (C40, C41, C42) with appropriate IgG controls provide direct evidence for differential binding. The weaker MYOD1 binding compared to BMAL1 at the tandem E-box and absence at E1 is consistent with the functional data. The interpretation (C43, C101) of indirect binding through a complex is reasonable given the weaker ChIP signal, though direct protein-protein interaction data would strengthen this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C66",
+      "C110",
+      "C112"
+    ],
+    "result": "MYOD1 binds to an intronic enhancer within the Bmal1 promoter, functions as a direct transcriptional activator of Bmal1, and enhances the amplitude of Bmal1 expression, creating a feed-forward regulatory loop between MYOD1 and the core clock gene Bmal1 in skeletal muscle.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This integrative conclusion is well-supported by the ChIP-Seq data showing MYOD1 binding (C1, C7), the functional luciferase and protein expression data (C8-C12), the identification of the MYOD1-response element (C13-C19), and the circadian amplitude effects (C11, C16-C18). The feed-forward loop model (C59, C112) is justified by the combination of BMAL1:CLOCK regulation of MYOD1 (cited prior work C55) and the current demonstration of MYOD1 regulation of Bmal1.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C63",
+      "C83",
+      "C88"
+    ],
+    "result": "MYOD1 works synergistically with BMAL1:CLOCK to amplify circadian expression of the muscle-specific gene Tcap via a tandem E-box element (both E-boxes required for circadian regulation), with MYOD1 functioning as a peripheral rheostat controlling amplitude while BMAL1:CLOCK sets the rhythmic oscillation pattern.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This conclusion integrates multiple lines of evidence: the synergistic activation in luciferase assays (C29-C30), the E-box mutagenesis showing differential requirements (C35-C39), the ChIP-PCR binding data (C40-C43), and the loss of rhythmicity in MYOD1-CE mice (C34). The model distinguishing rhythm generation (BMAL1:CLOCK) from amplitude control (MYOD1) is well-supported by the functional data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C62",
+      "C64",
+      "C94",
+      "C111"
+    ],
+    "result": "MYOD1 functions as a clock amplifier and is a critical transcription factor in the regulation of circadian amplitude and downstream rhythmic gene expression in skeletal muscle, representing the first demonstration of MYOD1 as an upstream positive regulator of the core molecular clock and direct modulator of clock output.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This overarching conclusion is supported by the comprehensive data showing MYOD1's effects on both core clock genes (Bmal1 amplitude enhancement) and clock-controlled genes (Tcap synergistic regulation). The novelty claim (C111) appears justified as the manuscript provides the first mechanistic demonstration of these dual roles. The integration of ChIP-Seq, functional assays, and in vivo validation provides strong support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "The temporal expression profile of MYOD1 (peaking mid-to-late active phase) correlates with its role as an upstream Bmal1 regulator. This is supported by Liu et al. (2018) showing MYOD1 activation synchronizes circadian genes in fibroblasts, with the current study providing mechanistic insights that MYOD1 may synchronize the clock through direct transcriptional regulation of Bmal1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The temporal correlation (C68) is based on cited prior work (Andrews et al., 2010) and is consistent with the regulatory relationship demonstrated in the current study. The integration with Liu et al. 2018 findings (C69, C70) is appropriate, and the mechanistic interpretation (C71) is well-justified by the current data showing direct Bmal1 regulation. This represents a reasonable synthesis of prior and current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "The MYOD1-clock feed-forward loop shares mechanistic similarities with other tissue-specific peripheral modulators of clock amplitude that regulate Bmal1 expression. MYOD1 may regulate Bmal1 in a ROR\u03b1-dependent fashion, as ROR\u03b1 physically interacts with MYOD1's N-terminal activation domain, which could explain why MYOD1mut failed to fully activate Bmal1P-Luc.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The comparison to other peripheral modulators (C72) is well-supported by appropriate citations. The background on Rev-erb\u03b1/ROR\u03b1 (C73, C74) and examples (C75, C76) is accurate. However, the speculation about ROR\u03b1-dependent regulation (C78) is explicitly acknowledged as untested in the current study. While the hypothesis is reasonable given the cited ROR\u03b1-MYOD1 interaction (C77), it remains speculative without experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "MYOD1's regulation of circadian amplitude may have evolved to communicate muscle-specific time-cues (muscle contractions, nutrient signals) to the clock, as MYOD1 expression/activity is influenced by these signals. MYOD1 may also mediate phase information, as phase delays in Bmal1P-Luc rhythms were observed with MYOD1 over-expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The speculation about evolutionary function (C89) and the hypothesis about time-cue communication (C92) are reasonable given the cited literature on muscle contractions and nutrient cues (C91) and MYOD1's responsiveness to these signals. However, these remain speculative interpretations. The phase delay observation (C93) is noted but not quantitatively analyzed or statistically tested, limiting confidence in this claim.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "Given the vital role of clocks in skeletal muscle physiology and metabolism, these findings provide potential therapeutic avenues for enhancing clock function through targeting MYOD1, and may serve as a basis for understanding how core clock components interact with tissue-specific transcriptional networks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the importance of clocks in muscle is well-established by citations (C95), the therapeutic implications (C96) and broader applicability (C97) are speculative. These represent reasonable future directions and potential applications, but no therapeutic validation or mechanistic studies in other tissues are presented. These claims appropriately represent speculation about implications rather than demonstrated results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C113"
+    ],
+    "result": "A recent BMAL1 ChIP-Seq in mouse skeletal muscle revealed enrichment for the canonical MYOD1 motif (5'-CAGCTG-3') within BMAL1 binding sites, supporting the model of MYOD1-BMAL1:CLOCK cooperative interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This claim appropriately cites recent supporting literature (Dyar et al., 2018) that provides independent corroboration of the MYOD1-BMAL1 interaction model. The motif enrichment finding from an independent study strengthens the conclusions of the current work regarding cooperative binding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Background and context claims establishing the circadian clock system, MYOD1's role in skeletal muscle, and the gap in knowledge regarding muscle-specific transcriptional regulators of the clock, along with prior observations that MYOD1-CE mice show reduced Bmal1/Per2 amplitude.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These background claims (C44-C57) are appropriately supported by citations to established literature and the authors' prior work. They accurately represent current knowledge and appropriately frame the research questions. The prior observation in MYOD1-CE mice (C56) from the authors' previous work provides important context for the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C87",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "Supporting contextual information: Tcap oscillates and is bound by BMAL1 at the tandem E-box in heart tissue where MYOD1 is absent; the Tcap promoter contains three conserved canonical E-box motifs; and tandem E-box elements have been identified in core clock genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These contextual claims appropriately cite relevant literature. The heart tissue observation (C87) supports the interpretation that BMAL1:CLOCK drives the basic rhythm. The structural information about Tcap E-boxes (C98) and general knowledge about tandem E-boxes (C99, C100) provide appropriate context for the experimental design and interpretation.",
+    "result_type": "MINOR"
+  }
+]

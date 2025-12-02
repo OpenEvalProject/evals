@@ -1,0 +1,163 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "The Potts model accurately predicts drug-resistance mutation frequencies based on complex sequence backgrounds in HIV-1, demonstrating epistatic interactions involving many simultaneous mutations. The model significantly outperforms simple Hamming distance-based predictions, showing that entrenchment depends on specific mutation patterns rather than just the number of mutations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C6, C7, and C8 are well-supported by quantitative data in Figures 1B-D showing excellent agreement between predicted and observed frequencies (average absolute error is very small), ROC analysis demonstrating superior performance over Hamming distance models (TPR 0.81 vs 0.46 at FPR 0.1), and overlap analysis showing that mutation number alone is insufficient for prediction. The validation across multiple drug-resistance mutations in PR, RT, and IN strengthens these findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C10",
+      "C12",
+      "C13",
+      "C15",
+      "C16"
+    ],
+    "result": "The L90M mutation in HIV-1 protease exhibits background-dependent entrenchment, being disfavored in backgrounds with \u22648 PI-associated mutations but favored in backgrounds with \u22659 mutations. Quantitative validation shows excellent agreement between Potts model predictions and observed frequencies across different sequence backgrounds.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10, C12, C13, C15, and C16 are strongly supported by data in Figure 2A and Table 1. The box plot analysis clearly shows the transition from disfavored to entrenched states, and Table 1 provides quantitative validation with predicted vs observed frequencies showing remarkable agreement (e.g., 97.6% predicted vs 97.3% observed for highly entrenching backgrounds). The ~1907-fold enrichment calculation is directly derived from the frequency data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "NNRTI-resistance mutations show significantly less entrenchment in the population compared to resistance mutations against NRTIs, PIs, and INSTIs. Only 6.7% of NNRTI DRMs are entrenched versus 61-87% for other drug classes, with only 28.1% of sequences carrying at least one entrenched NNRTI DRM compared to ~50-65% for other classes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C24 and C27-C29 are well-supported by comprehensive comparative analysis in Tables 2 and 3. The data clearly show differential entrenchment patterns across drug classes, with NNRTI mutations being exceptional. The mechanistic hypothesis linking this to allosteric vs active site binding (C27) is reasonable but remains speculative. The IN findings (C23-C24) showing high entrenchment despite shorter drug exposure time are particularly striking and well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C31"
+    ],
+    "result": "Observed drug-resistance mutations arise with lower fitness costs than mutations to other residue types at the same sites, as demonstrated by differential distribution of Potts \u0394E scores.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C31 is supported by Figure 4 showing clear separation between distributions of observed DRMs (mean \u0394E = +2.11) versus unobserved/rare mutations (mean \u0394E = -5.58) at the same sites (p<0.001). The statistical significance and visual separation in the distributions provide strong evidence that observed DRMs are generally more favorable than alternative mutations at the same positions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "The likelihood and degree of entrenchment of primary resistance mutations in molecular clones (NL4-3, HXB2, consensus B) correlates only moderately with effects in drug-experienced patient populations, with NL4-3 being somewhat more representative than the others. Key resistance mutations are typically disfavored in molecular clones.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C36 are supported by correlation analysis in Figures 5 and 6. The moderate correlation coefficients (\u03c1 = 0.56-0.75 for different clones) quantitatively demonstrate that clone-based studies may not accurately represent patient populations. Figure 6 shows clear separation between sequences with and without mutations, with clones typically falling in the disfavored region. However, the claim that NL4-3 is 'somewhat more representative' (C35) is weakly supported given the modest differences in correlation coefficients.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "This work provides the first direct confirmations of entrenchment by the entire sequence background for all three HIV drug-target proteins (protease, reverse transcriptase, and integrase), demonstrating that mutation favorability depends on the entire genetic context and varies widely across patient populations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C52 represent the core contribution of the manuscript and are well-supported by comprehensive data across Tables 1-3 and Figures 2-6. The validation of entrenchment predictions through comparison of predicted vs observed frequencies, the demonstration of background-dependence across all three proteins, and the quantification of variability in patient populations versus molecular clones provide strong evidence for these claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "The Potts models for HIV-1 PR and RT are not overfit based on SNR analysis (SNR = 21.6 and 43.7, respectively), while the IN model may be less reliable due to smaller sample size (SNR = 0.14) but still accurately captures point mutation effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C60 are supported by SNR analysis described in Materials and methods, with specific quantitative values provided. The acknowledgment of potential limitations for the IN model (C59) while demonstrating that it still captures point mutation effects accurately (C60) through in silico validation tests shows appropriate statistical rigor. However, the manuscript would benefit from more detailed presentation of these validation results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C39",
+      "C40"
+    ],
+    "result": "The Potts model is a maximum-entropy model constrained to predict bivariate residue frequencies, and there is large overlap in resistance mutation sites among different drugs of the same class.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C40 is a methodological description that is well-established and correctly stated. Claim C39 is supported by Figure 8 and citation to Wensing et al., 2017. The overlap in mutation sites across drugs of the same class helps justify why the Potts model trained on mixed drug-experienced sequences can minimize spurious correlations from different drug regimens.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Epistasis plays a major role in HIV evolution under drug selection pressure, with entrenchment being a likely mechanism for accumulation and persistence of drug-resistance mutations. Understanding background-dependent mutation likelihood is important for interpreting mutagenesis experiments and may impact future personalized drug design strategies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C66-C69 are reasonable inferences from the entrenchment data presented, but they represent interpretations rather than direct experimental findings. Claim C70 is explicitly speculative about future applications. While the entrenchment data strongly suggest epistasis is important (C66-C67), the causal claims about mechanisms (C67) and the translational implications (C68-C70) require additional validation beyond the correlative analyses presented. These are appropriate discussion points but not definitively established results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C25",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C53",
+      "C54",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Background claims establishing the context of HIV drug resistance, including resistance rates in patients, drug targets, mutation fitness costs, epistasis concepts, and prior work on Potts models and entrenchment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C1-C3, C25, C42-C49, C53-C54, C62-C65) are primarily citations to prior work or established knowledge about HIV biology and drug resistance. They are appropriately cited and represent accurate summaries of the literature. These provide necessary context but are not novel findings of this study.",
+    "result_type": "MINOR"
+  }
+]

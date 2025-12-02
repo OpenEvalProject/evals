@@ -1,0 +1,1772 @@
+{
+  "submission": {
+    "id": "d6adc77b-1a10-4d49-9a4b-a3244b869582",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T18:09:40.396977Z",
+    "updated_at": "2025-12-02T18:09:40.396977Z"
+  },
+  "content": [
+    {
+      "id": "a048f8d3-fa2e-4e4e-988a-29dbb74d341f",
+      "submission_id": "d6adc77b-1a10-4d49-9a4b-a3244b869582",
+      "content_type": "manuscript",
+      "content_text": "# Golgi compartments enable controlled biomolecular assembly using promiscuous enzymes\n\n## Authors\n\n- Anjali Jaiman<sup>1</sup>\n- Mukund Thattai<sup>1</sup> ([ORCID: 0000-0002-2558-6517](https://orcid.org/0000-0002-2558-6517)) \u2020\n\n### Affiliations\n\n1. Simons Centre for the Study of Living Machines, National Centre for Biological Sciences, Tata Institute of Fundamental Research Bangalore India\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe synthesis of eukaryotic glycans \u2013 branched sugar oligomers attached to cell-surface proteins and lipids \u2013 is organized like a factory assembly line. Specific enzymes within successive compartments of the Golgi apparatus determine where new monomer building blocks are linked to the growing oligomer. These enzymes act promiscuously and stochastically, causing microheterogeneity (molecule-to-molecule variability) in the final oligomer products. However, this variability is tightly controlled: a given eukaryotic protein type is typically associated with a narrow, specific glycan oligomer profile. Here, we use ideas from the mathematical theory of self-assembly to enumerate the enzymatic causes of oligomer variability and show how to eliminate each cause. We rigorously demonstrate that cells can specifically synthesize a larger repertoire of glycan oligomers by partitioning promiscuous enzymes across multiple Golgi compartments. This places limits on biomolecular assembly: glycan microheterogeneity becomes unavoidable when the number of compartments is limited, or enzymes are excessively promiscuous.\n\n## Introduction\n\nThe surfaces of all living cells are decorated with information-rich oligosaccharide molecules known as glycans: branched sugar oligomers covalently linked to proteins or lipids (Varki et al., 2017). Glycans encode cell identity and mediate a variety of intercellular interactions. They play critical roles in development, species recognition, self-nonself discrimination, and host-pathogen coevolution (Varki, 2017).\n\nGlycans are composed of a small set of monosaccharide building block types (monomers) and disaccharide bond types (linkages in the branched glycan oligomer) (Adibekian et al., 2011; Figure 1A). Eukaryotic glycans are built by collections of glycosyltransferase (GTase) enzymes the ER and Golgi apparatus, a process known as glycosylation. GTase enzymes are chemically precise but contextually sloppy (Taniguchi and Honke, 2014; Biswas and Thattai, 2020): a given enzyme catalyzes a specific bond between a specific pair of monomer types, but can act promiscuously and stochastically on many oligomer types (Figure 1B). As a consequence, even a single cell with a limited set of GTase enzymes can theoretically synthesize an astronomical array of oligomeric combinations (Cummings, 2009).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/49573/elife-49573-fig1-v2.jpg)\n\n**Figure 1.:** (A) A GTase enzyme catalyzes a glycosidic linkage between a specific donor monomer type (the \u2018donor-substrate\u2019) and a specific acceptor monomer type with specific branches or roots (the \u2018acceptor-substrate\u2019). We represent distinct monomer types in an oligomer by shapes/colors, and linkages between distinct monomer carbons by distinct bond angles (Varki et al., 2017). (B) GTase enzymes can show varying degrees of promiscuity, demonstrated here by three real examples of enzymes that act on galactose acceptors (Taniguchi and Honke, 2014,\u00a0Chapter\u00a039,44,47). We represent each GTase enzyme graphically, showing its acceptor-substrate and the specific monomer-addition reaction it catalyzes (red arrow from acceptor to donor at distinct angles for distinct acceptor carbons). The root-sensitive enzyme Fut2 requires the galactose acceptor to be linked to a GlcNAc root monomer. The branch-sensitive enzyme GTB requires its galactose acceptor to have a fucose branch. The branch-insensitive enzyme \u03b24GalNT1 can act on branched or un-branched galactose monomers. (C) The localization of enzymes in successive Golgi compartments can sometimes mitigate the variability caused by enzyme promiscuity. This is demonstrated using the example of blood group B-antigen synthesis by the root-sensitive (RS) enzyme Fut2 and branch-sensitive (BS) enzyme GTB. We consider hypothetical scenarios in which these enzymes are context-free (CF). Increased enzyme promiscuity leads to tandem repeat byproducts. Placing the context-free Fut2 enzyme in a separate compartment from branch-sensitive GTB restores specific synthesis of the B-antigen. (D) Our main result is illustrated by this example (elaborated in Figure 4). We show the minimum number of compartments needed to specifically synthesize the same product oligomer from any of its sub-oligomers. We compare three broad classes of enzymes: ideal root-sensitive and branch-sensitive enzymes (ideal enzymes can read root chains or branches to arbitrary depth) or context-free enzymes. Ideal root-sensitive enzymes can distinguish the position of every acceptor monomer in an oligomer, so they can specifically synthesize any product in a single compartment. Branch-sensitive and context-free enzymes are more promiscuous; splitting such enzymes across multiple compartments increases the repertoire of oligomers they can specifically synthesize.\n\nA given glycosylated protein type in a given cell is usually associated with multiple glycan oligomers, a form of molecule-to-molecule variability known as microheterogeneity. The enormous potential for variability is exemplified by prokaryotic glycans, which are typically random heteropolymers (Varki et al., 2017,\u00a0Chapter\u00a021,22;\u00a0Adibekian et al., 2011). In contrast, eukaryotic glycoproteins are typically associated with a narrow, specific set of glycan oligomers, referred to as protein\u2019s glycan profile (Varki et al., 2017,\u00a0Chapter\u00a01;\u00a0Campbell et al., 2014). The low variability of eukaryotic glycans is functionally relevant: specific protein glycan profiles are associated with distinct species (Hamako et al., 1993; H\u00e5rd et al., 1992; Hokke et al., 1994), distinct individuals (as with ABO blood groups [Patenaude et al., 2002]) and distinct cell types in an individual [West et al., 2010]; and altered glycan profiles are implicated a variety of disorders (Freeze and Ng, 2011; Gill et al., 2013; Lo-Guidice et al., 1994).\n\nHow do eukaryotic cells generate narrow, specific protein glycan profiles despite the variability caused by promiscuous enzymes? Simulations suggest that the localization of enzymes within Golgi compartments plays a key role (Liu et al., 2008; Spahn and Lewis, 2014; Spahn et al., 2016; Fisher et al., 2019). Consider the GTases Fut2 and GTB, which specifically synthesize the blood group B-antigen (Taniguchi and Honke, 2014,\u00a0Chapter\u00a044,47). Hypothetical promiscuous versions of these enzymes, if placed in a single compartment, generate variable tandem repeat oligomers as byproducts (Figure 1C); specific synthesis of the B-antigen is restored when the promiscuous enzymes are placed in two separate compartments. However, tandem repeat synthesis is just one among many sources of\u00a0variability, and GTases can be more or less promiscuous than the enzymes in our example. We would like to understand the general conditions under which compartmentalization mitigates glycan variability.\n\nMechanisms for controlling variability are central to the field of algorithmic self-assembly, which explores how building blocks with sloppy interactions can be programmed to assemble into a desired final structure (Soloveichik and Winfree, 2007; Zeravcic and Brenner, 2014; Murugan et al., 2015). Here, we use ideas from self-assembly theory to precisely enumerate the possible sources of glycan variability. Using rigorous mathematical theorems, we demonstrate that compartmentalization mitigates variability for large classes of promiscuous enzymes (Figure 1D) (proofs of theorems are provided in Appendix 2). Since the number of distinct Golgi compartments in any cell is limited, microheterogeneity due to byproduct synthesis becomes unavoidable during the synthesis of complex oligomers. Nevertheless, multi-compartment synthesis greatly increases the set of oligomers eukaryotes can specifically synthesize (Figure 1D), complementing other mechanisms of enzymatic control such as kinetic regulation. Thus, a quintessential eukaryotic trait (intracellular compartments) provides the means to overcome a fundamental biochemical limitation (enzyme promiscuity). This capability may underlie the conservation of the Golgi across eukaryotes (Barlow et al., 2018): the idea of the Golgi apparatus as a factory assembly line is more than a metaphor, it is a mathematical and biological necessity.\n\n## Results\n\n### Glycan synthesis in Golgi compartments\n\nWe focus on the diverse class of O-glycans, which are associated with most eukaryotic cell-surface proteins (Varki et al., 2017,\u00a0Chapter\u00a010). The synthesis of O-glycan oligomers begins in the Golgi apparatus, when a root monomer is attached to a specific serine or threonine on a substrate protein. The Golgi consists of an ordered series of compositionally distinct compartments (for example, cis, medial and trans cisternae). Each compartment contains a specific set of GTase enzymes responsible for growing an oligomer on a specific protein type. Multiple models are proposed for how oligomers and enzymes are trafficked through the Golgi. In the transport model, oligomers are ferried through successive compartments; in the maturation model, oligomers remain in place while the enzymatic composition of the compartment undergoes a rapid switch-like transition between successive states (Mani and Thattai, 2016; Pantazopoulou and Glick, 2019). Under either scenario, whether transport or maturation, growing oligomers spend time within successive enzymatic compartment types. (The residence time of an oligomer within a compartment type is exponentially distributed in transport model, and sharply peaked in the maturation model; our results only depend on whether the average residence time $T$ is small or large compared to the average time for monomer addition.) The oligomer finally exits the last compartment in the series. The set of final oligomers associated with a given substrate protein makes up its glycan profile.\n\n### GTase promiscuity and stochasticity\n\nAs the growing oligomer spends time within successive Golgi compartments, it encounters distinct collections of GTase enzymes (Moremen et al., 2012; Pantazopoulou and Glick, 2019). During each such encounter, the enzyme scans the oligomer for a site that matches a structural motif (the \u2018acceptor-substrate\u2019) and attaches a single free monomer (the \u2018donor-substrate\u2019) to that site (Figure 1A; Liu et al., 2008; Moremen et al., 2012). A given GTase enzyme invariably catalyzes a glycosidic (C-O-C) linkage between specific carbons on a specific free donor monomer type and a specific acceptor monomer type within the acceptor-substrate (Figure 1A). However, these enzymes are doubly sloppy: they are both promiscuous and stochastic.\n\n#### Promiscuity\n\nThere are two strong reasons to expect GTase enzyme promiscuity. First, there are far fewer GTase enzymes than observed glycan oligomers in any given species (Narimatsu et al., 2017);\u00a0moreover, the same highly conserved enzymes are found across species with very distinct glycans (Kaneko et al., 2001; Figure 2). Therefore, by the pigeonhole principle, an individual GTase enzyme must be promiscuous and able to act on many distinct oligomer types (Narimatsu et al., 2017). Second, although oligomers can be arbitrarily large, there is a limit to the size of the motif any enzyme can recognize within it. A given enzyme could act everywhere its recognition motif is found on an oligomer; the smaller the recognition motif, the more oligomers it will be found within, and the more promiscuous the enzyme (Blixt et al., 2008; Taniguchi and Honke, 2014; Biswas and Thattai, 2020). In our analysis we consider three broad classes of enzymes, exemplifying varying degrees of promiscuity (Figure 1B). Context-free enzymes are those whose acceptor-substrates are single monomers, no matter what branches or roots they are linked to. These enzymes are maximally promiscuous. Ideal branch-sensitive enzymes are those whose acceptor-substrates are some acceptor monomer type having or lacking specific branches. These are intermediate in promiscuity. Ideal root-sensitive enzymes are those whose acceptor-substrates are some acceptor monomer type linked to a specific root chain. These enzymes can distinguish every monomer in an oligomer and are minimally promiscuous. Enzymes that read roots and branches to partial depth represent more complex types of intermediate promiscuity; we do not discuss these possibilities here.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/49573/elife-49573-fig2-v2.jpg)\n\n**Figure 2.:** (A) We compare oligomer profiles from three datasets (Lo-Guidice et al., 1994; H\u00e5rd et al., 1992; Hokke et al., 1994); observed oligomers are starred, only non-fucosylated oligomers are shown. For each profile, we show a hypothetical set of compartmentalized enzymes leading to its synthesis; cyclic arrows represent runaway reactions, blunt arrows represent the action of one enzyme blocking the action of another. Each enzyme set is associated with a reaction network; red arrows show single-monomer-addition reactions. All oligomers exit the compartment as outputs after some average residence time. The residence time of the last compartment in each series is $T$; the residence time of all other compartments is $\u221e$. (B) Effect of compartment residence time on glycan variability, quantified using Shannon entropy. The entropy of the compartment\u2019s output distribution depends on that of its input distribution, on the structure of the compartment\u2019s reaction network, and on its average residence time $T$.\n\n#### Stochasticity\n\nChemical reactions within cells are necessarily stochastic, due to the low molecule numbers involved. While the growing oligomer is within a given compartment, the order in which it encounters the available GTase enzymes is equivalent to a Markov process of random sampling with replacement, with randomly distributed time intervals between successive encounters (Gillespie, 1977). The reaction network of the compartment shows every possible oligomer growth order starting from a given input oligomer, as a result of all possible enzyme-catalyzed single-monomer-addition reactions in all possible permutations (Figure 2A). Since O-glycan oligomers are not pruned, these reactions are irreversible (Varki et al., 2017,\u00a0Chapter\u00a06). Within a reaction network, intermediate oligomers are those that can potentially be further extended by some available GTase enzyme, and terminal oligomers are those that cannot be further extended. Two identical input oligomers might take different paths in the reaction network as they encounter GTase enzymes in different random permutations and at different times. An oligomer might encounter the same enzyme repeatedly (if the enzyme is at high concentrations), or it might exit the reaction compartment without ever encountering some enzyme (if the enzyme is at low concentrations).\n\n### Patterns of glycan variability\n\nConsider any assembly-line reaction in which oligomers are built by adding one monomer at a time. We can show that there are precisely three ways for variability to occur (Appendix 2, Remark 1): truncated, runaway, and divergent reactions. Each type of reaction variability corresponds to a specific output pattern that has been observed in real glycan datasets (Figure 2; Table 1;\u00a0Varki et al., 2017,\u00a0Chapter\u00a01). These are exemplified by oligomer profiles of respiratory mucins from a cystic fibrosis patient (Lo-Guidice et al., 1994), human chorionic gonadotropin (CG) from a cell line (H\u00e5rd et al., 1992), and horse chorionic gonadotropin (Hokke et al., 1994) (datasets from UniCarbKB [Campbell et al., 2014]). These patterns can be explained by the following enzymatic causes. For the mucins, two identical input oligomers exit the reaction compartment at different stages of growth; since some reactions are truncated, this gives a combination of both intermediate and terminal oligomers as outputs. For horse CG, a compartment contains two enzymes that drive a runaway reaction; this gives oligomers with an arbitrary number of tandem repeats. For both mucins and human CG, two enzymes compete for the same acceptor-substrate; this sets up a divergent reaction, with mutually exclusive oligomer fates depending on the random order of enzyme action.\n\n**Table 1.**\n Variability caused by promiscuous, stochastic enzymes.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Observed product pattern</th>\n      <th colspan=\"3\">Type of reaction variability</th>\n      <th>Enzymatic cause</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>intermediate oligomers</td>\n      <td>\u21d4</td>\n      <td>truncated reaction</td>\n      <td>\u21d4</td>\n      <td>low concentration</td>\n    </tr>\n    <tr>\n      <td>tandem repeats</td>\n      <td>\u21d4</td>\n      <td>runaway reaction</td>\n      <td>\u21d4</td>\n      <td>linkage loop</td>\n    </tr>\n    <tr>\n      <td>mutually exclusive fates</td>\n      <td>\u21d4</td>\n      <td>divergent reaction</td>\n      <td>\u21d2</td>\n      <td>acceptor block</td>\n    </tr>\n  </tbody>\n</table>\n\nWe model stochastic assembly-line reactions as continuous-time Markov processes with constant transition probabilities per unit time. This provides a probability distribution over each possible fate of the final output oligomer. The Shannon entropy of this output distribution in bits captures the variability of the glycan profile; approximately, it is the log-base-two of the number of distinct high-abundance oligomers. Each source of variability makes a distinct contribution to the residence-time-dependent entropy, as seen for the hypothetical reaction networks in Figure 2. For horse CG, the input entropy of the final compartment is zero (since there is a unique input oligomer); for human CG and mucins the input entropy is 1.5 (since input oligomers are in a 1:1:2 ratio due to divergent reactions in earlier compartments). At short residence times, the entropy initially rises due to the exit of intermediate oligomers from truncated reactions. This corresponds to the mucin profile. At long residence times multiple intermediate oligomers converge to a few terminal oligomers, so the entropy decreases; this corresponds to the human CG profile. For the horse CG profile, the entropy stays high even at long residence times, due to synthesis of tandem repeats via runaway reactions.\n\n### Enzymatic causes of glycan variability\n\nThe examples discussed above suggest that each type of glycan variability is connected to a distinct enzymatic cause. We now make this connection\u00a0rigorous\u00a0(Table 1).\n\nA truncated reaction causes intermediate oligomers to be produced as outputs. This occurs whenever the average waiting time for monomer addition (a quantity inversely proportional to enzyme concentrations) is comparable to or greater than the compartment\u2019s residence time (Appendix 2, Remark 1). The only way all input oligomers are guaranteed to reach a terminal state (assuming no proofreading) is if enzyme concentrations are sufficiently high, or equivalently, the residence time $T$ is sufficiently long (schematically, $T\u2192\u221e$).\n\nA runaway reaction is an infinite path in the reaction network, giving oligomers with arbitrary numbers of tandem repeats as outputs. This implies at least one enzyme must act repeatedly along a single chain. Ideal root-sensitive enzymes don\u2019t permit runaway reactions, since their acceptor monomers are at a fixed depth from the root. To diagnose runaway reactions for branch-sensitive and context-free enzymes, we examine the compartment\u2019s linkage network, summarizing the allowed order of monomer linkages (Figure 3A; Appendix 2, Remark 2). A compartment contains a runaway reaction if and only if its linkage network contains one or more loops (Appendix 2, Lemma 1), since each loop corresponds to a tandem repeat. Branch-sensitive GTase enzymes can prevent linkage loops by using triggers (branched acceptor-substrates that cannot be synthesized within the compartment from a single monomer; Figure 3D).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/49573/elife-49573-fig3-v2.jpg)\n\n**Figure 3.:** (A) Runaway reactions occur whenever certain steps of oligomer growth can be iterated to produce tandem repeats. Loops in the linkage network are necessary and sufficient for runaway reactions (Appendix 2, Lemma 1).\u00a0An acyclic linkage network imposes a partial order on monomer types along any chain. $R_{i}$ represents an arbitrary oligomer. Boxes with black triangles represent the linkage network, showing all orders in which monomer types can be linked, with arrows from acceptor monomer types to donor monomer types (Appendix 2, Remark 2). Double arrows in linkage and reaction networks represent multiple reaction steps. (B) Divergent reactions occur whenever the reaction network has a fork that can never reconverge. This occurs when the action of one enzyme blocks the subsequent action of another, so the fate of the oligomer depends on the random order of enzyme action. Blunt red arrows in the linkage network represent the action of one enzyme blocking the action of another. Acceptor blocks are necessary (but not sufficient) for divergent reactions (Appendix 2, Lemma 2). Unidirectional acceptor block (only branch-sensitive enzymes): the acceptor-substrate of one enzyme is on some branch of the acceptor-substrate of another. Bidirectional acceptor block (all enzyme classes): two enzymes compete for the same acceptor-substrate. (C) We start with a compartment containing an arbitrary collection of enzymes. We can eliminate truncated reactions by ensuring high enzyme concentrations. We can eliminate runaway reactions by removing (or disabling with triggers, for branch-sensitive enzymes) at least one enzyme involved in each linkage loop. We can eliminate divergent reactions by removing all but one enzyme involved in each block. The result is an algorithmic compartment: for each possible input, it specifically synthesizes a corresponding unique output. (D) Properties of algorithmic growth, for different enzyme classes. See Appendix 3\u2014figure 1 for a detailed example of branch-sensitive algorithmic growth.\n\nA divergent reaction is a fork in the reaction network that never reconverges, with distinct paths leading to mutually exclusive oligomer fates as outputs. To diagnose divergent reactions, we examine the acceptor-substrates of every enzyme in the compartment. A fork occurs whenever distinct enzymes can act on the same oligomer to yield distinct products. If these enzymes could act in any order (for example, if they act on distinct empty acceptor monomers on the oligomer) then the reaction paths could reconverge after the fork. If a fork does not reconverge this implies that the action of one enzyme on an oligomer blocks the subsequent action of another (Appendix 2, Lemma 2). For root-sensitive and context-free enzymes, this can only occur if both enzymes compete to act on the same carbon of the same monomer (bidirectional acceptor block; Figure 3B). For branch-sensitive enzymes, there are two ways this can occur: both enzymes have the same acceptor-substrate (bidirectional acceptor block; Figure 3B) or the acceptor-substrate of the first enzyme is on a branch of the acceptor-substrate of the second (unidirectional acceptor block; Figure 3B).\n\nA compartment containing an arbitrary collection of enzymes might permit runaway and divergent reactions (Figure 3C, top). Our analysis shows that these sources of variability are not due to any individual enzyme: they arise from interactions within collections of enzymes (Figure 3A,B). We can eliminate truncated reactions by requiring high enzyme\u00a0concentrations; we can eliminate linkage loops and acceptor blocks by removing certain enzymes from the reaction compartment (Figure 3C; Appendix 2, Lemma 3). These steps result in an \u2018algorithmic compartment\u2019: for each possible input, it specifically synthesizes a corresponding unique output. If we could watch an individual oligomer growing within an algorithmic compartment, we would find that its growth order always satisfied certain special properties that are easy to check, which we collectively characterize as \u2018algorithmic growth\u2019 (Appendix 2, Lemmas 4,5). The characteristics of algorithmic growth depend on the degree of enzyme promiscuity (Figure 3D). We now discuss how the concept of algorithmic growth can be used to find the minimum number of compartments required to specifically synthesize any desired oligomer.\n\n### Controlled glycan synthesis in multiple compartments\n\nSuppose we want to specifically synthesize a given target oligomer from a given input oligomer, with no byproducts. As a first attempt, we might pick an arbitrary growth order that leads, one monomer at a time, from input to target. Each monomer-addition reaction corresponds to the action of some enzyme. We could simply load a single compartment with this set of enzymes. This guarantees that the target oligomer will be synthesized from the given input. The problem is, various byproducts might also be synthesized due truncated, runaway, or divergent reactions; and the target oligomer might itself be further extended at long residence times. Since these problems arise due to interactions within collections of enzymes, they might be avoided by splitting the enzymes across several compartments. The following theorems provide the answer to two questions (Figure 4A; Appendix 2): Is specific synthesis of the target from the given input even possible? If so, what is the minimum number of compartments required?\n\n![Figure 4.](https://cdn.elifesciences.org/articles/49573/elife-49573-fig4-v2.jpg)\n\n**Figure 4.:** (A) Outline of Theorem 1 (Appendix 2). Suppose we are given a series of compartments that specifically synthesizes a desired target oligomer from a given input oligomer. We now proceed to modify the original compartments through several steps. Step I \u2192 II: Ensure enzyme concentrations are high, to eliminate intermediate oligomers. Step II \u2192 III: Remove all enzymes with acceptor blocks, to eliminate divergent reactions. Step III \u2192 IV: Replace each compartment with a series of infinite-residence-time compartments each containing a single enzyme. At each step, at least one of the original growth orders still remains, leading to the desired target oligomer. (B) We are given a target oligomer (bottom). We list all its sub-oligomers, and connect two oligomers by a green edge if some single-enzyme compartment can specifically synthesize the lower oligomer from the higher oligomer. All single-monomer additions can be achieved with ideal root-sensitive enzymes; only a subset of these can be achieved with branch-sensitive or context-free enzymes. To find the minimum number of compartments required to synthesize the target oligomer from any sub-oligomer, we decompose allowed paths into algorithmic growth stretches (Figure 1D).\n\n#### Theorem 1\n\nA target oligomer can be specifically synthesized from an input oligomer if and only if it can be specifically synthesized from that input oligomer in a series of single-enzyme compartments.\n\n#### Theorem 2\n\nA target oligomer can be specifically synthesized from an input oligomer in a series of $N$ compartments if and only if there is a growth order from the input to the target that can be fully decomposed into $N$ algorithmic growth stretches.\n\nTheorem 1 provides an efficient protocol to search for a solution: we needn\u2019t consider all possible multi-enzyme combinations, it is sufficient to check single-enzyme compartments (Figure 4B). Once a solution is found using single-enzyme compartments, Theorem 2 provides a protocol to construct a solution using fewer multi-enzyme compartments. In this way, we are guaranteed to find the minimum number of compartments required for specific synthesis of the target (assuming a solution exists). For ideal root-sensitive enzymes a single compartment is always sufficient, since every growth order to a given terminal oligomer is algorithmic (Appendix 2, Lemma 4). The minimum-compartment path could be longer for the more promiscuous branch-sensitive or context-free enzymes (Figures 1D and 4B). There are some situations in which glycan variability is unavoidable: certain oligomers can never be synthesized without byproducts, no matter how many compartments we allow. In Appendix 3\u2014figure 1 we discuss an example of a target oligomer that cannot be synthesized using branch-sensitive enzymes in fewer than two compartments.\n\n## Discussion\n\nLiving systems excel at building complex structures using stochastic, unreliable molecular components. Macromolecules such as DNA, RNA and proteins are built by copying known target templates, so errors can be removed by proofreading (Murugan et al., 2012). However, most biological structures are encoded using a step-by-step recipe \u2013 that is, an algorithm \u2013 rather than a template (Navlakha and Bar-Joseph, 2011). This is apparent during animal development: the genome encodes a recipe to make an adult, it is not a homunculus of the adult. Eukaryotic glycan synthesis is an exquisite demonstration of the same concept: re-configurable reaction networks act as template-free recipes to specifically encode diverse glycan oligomers.\n\nIn the absence of a template, cells use a spectrum of mechanisms to limit glycan variability. At one end are quantitative kinetic mechanisms (Cardelli et al., 2018), such as the regulation of compartment residence times (Pantazopoulou and Glick, 2019), control of donor-substrate levels (Parker and Newstead, 2019), or use of heteromeric enzymes to enhance sequential reactions (Varki et al., 2017,\u00a0Chapter\u00a04). At the other end are qualitative mechanisms that constrain which biosynthetic reactions are even allowed to occur: the selectivity of enzymes for their oligomer substrates, and the compartmentalization of enzymes within the Golgi. When enzymes are promiscuous, the kinetics of distinct reactions cannot be independently regulated, leading to variability (Biswas and Thattai, 2020). We have shown that, by splitting promiscuous enzymes across different Golgi compartments, this variability can be reduced or eliminated.\n\nTo synthesize oligomers without byproducts, cells must either decrease enzyme promiscuity, or increase the number of compartment types (Figure 1D). Both these strategies come at a cost, because there is a limit to the number of proteins a cell can encode. If all enzymes were highly selective, each with one specific substrate, a single compartment would suffice; but cells would require as many enzymes as oligomer types. On the other hand, an extensive system of membrane traffic proteins is required to maintain distinct Golgi compartments (Pantazopoulou and Glick, 2019). How do cells manage this trade-off? Some GTase enzymes, such as those which synthesize the N-glycan oligomannose precursor in the ER, are highly selective and appear to act on just one or two oligomers; but most GTases are promiscuous, able to act on many oligomers or at many points on a single oligomer (Biswas and Thattai, 2020). This means having multiple compartments is crucial for limiting glycan variability in real cells. These ideas inform strategies for artificial glycan synthesis (Liu et al., 2019) and algorithmic self-assembly (Soloveichik and Winfree, 2007; Zeravcic and Brenner, 2014; Murugan et al., 2015): \u2018stop-and-go\u2019 (Liu et al., 2019) or \u2018step-assembly\u2019 (Doty, 2012) approaches, which are analogous to multi-compartment synthesis, expand the repertoire of synthesizable oligomers.\n\nThe regulation of glycan synthesis by compartmentalization has biological advantages. By redistributing enzymes within the Golgi, multicellular organisms can use the same set of enzymes to generate distinct glycan profiles in distinct cell types (Figure 2A; West et al., 2010; Fisher et al., 2019). The rapid and reversible changes in glycan profiles seen during infection and inflammation (Varki et al., 2017,\u00a0Chapter\u00a046) are more consistent with changes in enzyme localization than changes in enzyme expression. Such changes could also facilitate rapid evolution of glycan profiles in the context of host-pathogen interactions and speciation (Watanabe et al., 2020;\u00a0Varki et al., 2017,\u00a0Chapter\u00a020). But this also means small errors in Golgi localization could be pathological: glycan perturbations promoting tumor invasiveness appear to arise due to errors in enzyme localization, not mutations in the enzymes themselves (Gill et al., 2013; and congenital glycosylation disorders are often correlated with defects in Golgi structure (Freeze and Ng, 2011).\n\nThe emergence of intracellular compartments was a watershed step in eukaryotic evolution (Dacks and Field, 2018). Many hypotheses have been advanced about the adaptive function of such compartments. Here, we have shown that the compartmental organization of the Golgi apparatus allows cells to control glycan synthesis despite enzymatic promiscuity, potentially explaining why this remarkable organelle is universally conserved across all extant eukaryotic lineages (Barlow et al., 2018). The ability to generate narrow, specific glycan profiles would have been advantageous to early eukaryotes (Wetzel et al., 2018), enabling the sophisticated intercellular interactions that underlie sex, cooperation and multicellularity.\n\n## Materials and methods\n\nMethods are provided in the Appendices. Appendix 1: Definitions. Appendix 2: Proofs. Appendix 3: Detailed example of algorithmic growth.\n",
+      "created_at": "2025-12-02T18:09:40.396977Z"
+    },
+    {
+      "id": "740bcef6-04f1-43f7-9b51-593cdb63b883",
+      "submission_id": "d6adc77b-1a10-4d49-9a4b-a3244b869582",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Patricia Bassereau, Institut Curie France\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.49573.sa1](https://doi.org/10.7554/eLife.49573.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nThe manuscript addresses the interesting question of how, despite the sloppiness and promiscuity of the glycoenzymes, a limited variety of glycans are produced in the Golgi. The authors develop a complete formal theoretical framework and show that the sub-Golgi compartmentalization is key. It allows distributing the enzymatic activities through multiple processive Golgi compartments which effectively reduces the variability in the glycan output.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Golgi compartments enable controlled biomolecular assembly using sloppy enzymes\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Naama Barkai as the Senior Editor.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThe manuscript addresses the question of the control of glycan variability in the Golgi achieved by sloppy glyco-enzymes from a theoretical perspective. The authors propose that the variability issue can be solved by a spatial segregation of the enzymes, which could a posteriori provide an explanation for the functional origin of the Golgi compartmentalization.\n\nEssential revisions:\n\nThe three reviewers and myself think that your work could be of strong interest for biologists working on membrane traffic and specially on Golgi, but in its current form, the message and the predictions for practical tests on living cells are not easily accessible to the majority of eLife readers. Therefore, we consider that you should deeply revise your manuscript to address this serious concern and discuss a few practical cases. In addition, since the dynamical structure of the Golgi is still a matter of debate, we think that you should add a discussion on how your model depends on Golgi maturation, on the consequence of a continuous gradient vs discrete distribution of the enzymes, on the impact in a multiple-compartments vs. a single compartment system. Eventually, we would like that you discuss the robustness of the model to the \"uniform depth-first growth\" rule.\n\n[Editors' note: further revisions were suggested prior to acceptance, as described below.]\n\nThank you for submitting your article \"Golgi compartments enable controlled biomolecular assembly using promiscuous enzymes\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Naama Barkai as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThis manuscript addresses theoretically the question of the control of glycan variability in the Golgi achieved by sloppy glyco-enzymes. The authors propose that the variability issue can be solved by a spatial segregation of the enzymes, which could a posteriori provide some functional origin to the Golgi compartmentalization.\n\nEssential revisions:\n\nThe reviewers have appreciated your effort to facilitate the accessibility of your work to biologists reading eLife articles in your revised version. Nevertheless, we think that your paper could have a much stronger impact among biologists if you could further modify the presentation. We recommend following suggestions from reviewer #2 (see below).\n\nReviewer #2:\n\nWhat I like about the work is the element of bringing in a new dimension into the intricate biological processes in the Golgi that involve glycan synthesis, binding, and self-assembly. However, I find the choice of language in the manuscript seriously concerning. The authors have chosen to present their main idea as mathematical theorems supported by proofs and lemmata. If the aim for this choice were to give the readers the assurance that what they are seeing is unquestionable fact and not just the opinion or suggestion of theoreticians, I believe this could be done in a much more accessible way. If the aim were to purport that the authors are making a new contribution to the field of mathematical logic by proving previously unknown theorems, then the aim would be incorrect and inappropriate. This has already been done in the specific context of algorithmic self-assembly in the papers that the authors cite themselves. The authors are merely applying these ideas to the specific biological problem at hand.\n\nThe main tenet of the authors' argument is enumerating the number of mutually exclusive and complementary possibilities in polymerization. This is basically equivalent to saying that a coin has two sides. One can, of course, make this into a theorem in mathematical logic and provide a proof of it, which can take pages and pages. However, what a normal user of this theorem would want to know from it will only be that we have only two mutually exclusive possibilities when we are throwing a coin: heads and tails. If we throw a dice, we have six possibilities. That's it. I do not see why the authors have chosen the rather heavy mathematical language to motivate the use of this simple enumeration of possibilities, for this particular biological application.\n\nIn response to my previous recommendation to streamline the presentation and make it more accessible to the appropriate biological readership of the journal, the authors moved some of the theorems and proofs to the appendix. As a result, the main manuscript now starts from lemma 3 and then wanders into some other mathematical blocks along the way. The only biological analysis is done in the captions of the figures, which are excessively long. Figure 1's caption is 29 lines if I managed to count correctly.\n\nI think as it stands the manuscript will likely not attract its full potential in readership because of this confused style. My suggestion to the authors is to remove the mathematical language altogether and write the manuscript as if they are applying the enumeration argument to the biological process. They can motivate it, provide the examples next, and conclude by arguing for the generality of the principles and the arguments. I imagine this would make a wonderful paper that is also going to be read by the readers of eLife.\n\nI cannot recommend publication of the manuscript in its current style, not even with the revision.\n",
+      "created_at": "2025-12-02T18:09:40.396977Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T18:09:40.396977Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T18:09:40.396977Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "9f03dde3-d214-482b-a05d-76b80531ac13",
+      "content_id": "a048f8d3-fa2e-4e4e-988a-29dbb74d341f",
+      "claim_id": "C1",
+      "claim": "Eukaryotic glycans are branched sugar oligomers attached to cell-surface proteins and lipids.",
+      "claim_type": "EXPLICIT",
+      "source": "The synthesis of eukaryotic glycans \u2013 branched sugar oligomers attached to cell-surface proteins and lipids \u2013 is organized like a factory assembly line.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge in the abstract without specific experimental data or citations in this sentence.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:09:40.396977Z"
+    },
+    {
+      "id": "45675d63-1325-45c9-9612-0ccef1c99507",
+      "content_id": "a048f8d3-fa2e-4e4e-988a-29dbb74d341f",
+      "claim_id": "C2",
+      "claim": "The synthesis of eukaryotic glycans is organized like a factory assembly line.",
+      "claim_type": "EXPLICIT",
+      "source": "The synthesis of eukaryotic glycans \u2013 branched sugar oligomers attached to cell-surface proteins and lipids \u2013 is organized like a factory assembly line.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conceptual framework presented by the authors based on the organization of glycan synthesis.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:09:40.396977Z"
+    },
+    {
+      "id": "6a05617f-4336-4bf9-aed1-335a15212308",
+      "content_id": "a048f8d3-fa2e-4e4e-988a-29dbb74d341f",
+      "claim_id": "C3",
+      "claim": "Specific enzymes within successive compartments of the Golgi apparatus determine where new monomer building blocks are linked to the growing oligomer.",
+      "claim_type": "EXPLICIT",
+      "source": "Specific enzymes within successive compartments of the Golgi apparatus determine where new monomer building blocks are linked to the growing oligomer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about Golgi function in glycan synthesis.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:09:40.396977Z"
+    },
+    {
+      "id": "5131150a-b47f-40f4-97df-e2fbba954565",
+      "content_id": "a048f8d3-fa2e-4e4e-988a-29dbb74d341f",
+      "claim_id": "C4",
+      "claim": "Glycan synthesis enzymes act promiscuously and stochastically, causing microheterogeneity in the final oligomer products.",
+      "claim_type": "EXPLICIT",
+      "source": "These enzymes act promiscuously and stochastically, causing microheterogeneity (molecule-to-molecule variability) in the final oligomer products.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is presented as established knowledge about enzyme behavior.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:09:40.396977Z"
+    },
+    {
+      "id": "81d464b0-62d8-456d-bbdf-31ade1f44555",
+      "content_id": "a048f8d3-fa2e-4e4e-988a-29dbb74d341f",
+      "claim_id": "C5",
+      "claim": "Glycan microheterogeneity is tightly controlled, with a given eukaryotic protein type typically associated with a narrow, specific glycan oligomer profile.",
+      "claim_type": "EXPLICIT",
+      "source": "However, this variability is tightly controlled: a given eukaryotic protein type is typically associated with a narrow, specific glycan oligomer profile.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an observed phenomenon in eukaryotic glycobiology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:09:40.396977Z"
+    },
+    {
+      "id": "19d68ba6-545e-4d5d-a9df-c2c2f638e9e9",
+      "content_id": "a048f8d3-fa2e-4e4e-988a-29dbb74d341f",
+      "claim_id": "C6",
+      "claim": "Cells can specifically synthesize a larger repertoire of glycan oligomers by partitioning promiscuous enzymes across multiple Golgi compartments.",
+      "claim_type": "EXPLICIT",
+      "source": "We rigorously demonstrate that cells can specifically synthesize a larger repertoire of glycan oligomers by partitioning promiscuous enzymes across multiple Golgi compartments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main finding of the manuscript, demonstrated through mathematical theorems.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:09:40.396977Z"
+    },
+    {
+      "id": "68640de4-8fd6-450e-95a5-19461fb9c16a",
+      "content_id": "a048f8d3-fa2e-4e4e-988a-29dbb74d341f",
+      "claim_id": "C7",
+      "claim": "Glycan microheterogeneity becomes unavoidable when the number of compartments is limited.",
+      "claim_type": "EXPLICIT",
+      "source": "This places limits on biomolecular assembly: glycan microheterogeneity becomes unavoidable when the number of compartments is limited, or enzymes are excessively promiscuous.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion derived from the mathematical analysis presented in the manuscript.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:09:40.396977Z"
+    },
+    {
+      "id": "ec238469-8101-41af-8758-08503fd7fe13",
+      "content_id": "a048f8d3-fa2e-4e4e-988a-29dbb74d341f",
+      "claim_id": "C8",
+      "claim": "Glycan microheterogeneity becomes unavoidable when enzymes are excessively promiscuous.",
+      "claim_type": "EXPLICIT",
+      "source": "This places limits on biomolecular assembly: glycan microheterogeneity becomes unavoidable when the number of compartments is limited, or enzymes are excessively promiscuous.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion derived from the mathematical analysis presented in the manuscript.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:09:40.396977Z"
+    },
+    {
+      "id": "593fc38b-c168-42f7-9ed7-fbccb54e7d3b",
+      "content_id": "a048f8d3-fa2e-4e4e-988a-29dbb74d341f",
+      "claim_id": "C9",
+      "claim": "Glycans are branched sugar oligomers covalently linked to proteins or lipids.",
+      "claim_type": "EXPLICIT",
+      "source": "The surfaces of all living cells are decorated with information-rich oligosaccharide molecules known as glycans: branched sugar oligomers covalently linked to proteins or lipids (Varki et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to an established reference work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:09:40.396977Z"
+    },
+    {
+      "id": "c1c75776-a45a-446b-9ca2-428815643247",
+      "content_id": "a048f8d3-fa2e-4e4e-988a-29dbb74d341f",
+      "claim_id": "C10",
+      "claim": "Glycans encode cell identity and mediate a variety of intercellular interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "Glycans encode cell identity and mediate a variety of intercellular interactions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about glycan function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:09:40.396977Z"
+    },
+    {
+      "id": "18faeabb-7a89-4279-bbfe-9db3db2d0cf0",
+      "content_id": "a048f8d3-fa2e-4e4e-988a-29dbb74d341f",
+      "claim_id": "C11",
+      "claim": "Glycans play critical roles in development, species recognition, self-nonself discrimination, and host-pathogen coevolution.",
+      "claim_type": "EXPLICIT",
+      "source": "They play critical roles in development, species recognition, self-nonself discrimination, and host-pathogen coevolution (Varki, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to the literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:09:40.396977Z"
+    },
+    {
+      "id": "e97dbb06-81a9-41c8-bbd8-2dd15042761c",
+      "content_id": "a048f8d3-fa2e-4e4e-988a-29dbb74d341f",
+      "claim_id": "C12",
+      "claim": "Glycans are composed of a small set of monosaccharide building block types and disaccharide bond types.",
+      "claim_type": "EXPLICIT",
+      "source": "Glycans are composed of a small set of monosaccharide building block types (monomers) and disaccharide bond types (linkages in the branched glycan oligomer) (Adibekian et al., 2011; Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by a citation and reference to Figure 1A.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:09:40.396977Z"
+    },
+    {
+      "id": "0c2d6f2f-b991-48c2-9ed3-3c08f24b9673",
+      "content_id": "a048f8d3-fa2e-4e4e-988a-29dbb74d341f",
+      "claim_id": "C13",
+      "claim": "Eukaryotic glycans are built by collections of glycosyltransferase (GTase) enzymes in the ER and Golgi apparatus.",
+      "claim_type": "EXPLICIT",
+      "source": "Eukaryotic glycans are built by collections of glycosyltransferase (GTase) enzymes the ER and Golgi apparatus, a process known as glycosylation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about glycan biosynthesis.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:09:40.396977Z"
+    },
+    {
+      "id": "ada9466b-fcf6-4bce-b545-be1b33bf5393",
+      "content_id": "a048f8d3-fa2e-4e4e-988a-29dbb74d341f",
+      "claim_id": "C14",
+      "claim": "GTase enzymes are chemically precise but contextually sloppy.",
+      "claim_type": "EXPLICIT",
+      "source": "GTase enzymes are chemically precise but contextually sloppy (Taniguchi and Honke, 2014; Biswas and Thattai, 2020): a given enzyme catalyzes a specific bond between a specific pair of monomer types, but can act promiscuously and stochastically on many oligomer types (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by citations and illustrated in Figure 1B.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:09:40.396977Z"
+    },
+    {
+      "id": "dd738c33-e43c-4974-bca8-98e23541df0c",
+      "content_id": "a048f8d3-fa2e-4e4e-988a-29dbb74d341f",
+      "claim_id": "C15",
+      "claim": "A given GTase enzyme catalyzes a specific bond between a specific pair of monomer types, but can act promiscuously and stochastically on many oligomer types.",
+      "claim_type": "EXPLICIT",
+      "source": "GTase enzymes are chemically precise but contextually sloppy (Taniguchi and Honke, 2014; Biswas and Thattai, 2020): a given enzyme catalyzes a specific bond between a specific pair of monomer types, but can act promiscuously and stochastically on many oligomer types (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by citations and illustrated in Figure 1B.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:09:40.396977Z"
+    },
+    {
+      "id": "94ed40e5-d4f2-42f6-b4a0-5e35171be8b9",
+      "content_id": "a048f8d3-fa2e-4e4e-988a-29dbb74d341f",
+      "claim_id": "C16",
+      "claim": "A single cell with a limited set of GTase enzymes can theoretically synthesize an astronomical array of oligomeric combinations.",
+      "claim_type": "EXPLICIT",
+      "source": "As a consequence, even a single cell with a limited set of GTase enzymes can theoretically synthesize an astronomical array of oligomeric combinations (Cummings, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation and represents an inference from enzyme promiscuity.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:09:40.396977Z"
+    },
+    {
+      "id": "e0183aaf-b7d4-4736-95ae-aa2a28df6bb9",
+      "content_id": "a048f8d3-fa2e-4e4e-988a-29dbb74d341f",
+      "claim_id": "C17",
+      "claim": "The enzyme Fut2 requires the galactose acceptor to be linked to a GlcNAc root monomer.",
+      "claim_type": "EXPLICIT",
+      "source": "The root-sensitive enzyme Fut2 requires the galactose acceptor to be linked to a GlcNAc root monomer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a property of the Fut2 enzyme, representing established knowledge about this specific enzyme.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:09:40.396977Z"
+    },
+    {
+      "id": "5143ea41-199c-46b9-82e6-8d27e59e60be",
+      "content_id": "a048f8d3-fa2e-4e4e-988a-29dbb74d341f",
+      "claim_id": "C18",
+      "claim": "The enzyme GTB requires its galactose acceptor to have a fucose branch.",
+      "claim_type": "EXPLICIT",
+      "source": "The branch-sensitive enzyme GTB requires its galactose acceptor to have a fucose branch.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a property of the GTB enzyme, representing established knowledge about this specific enzyme.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:09:40.396977Z"
+    },
+    {
+      "id": "94a8617b-882c-4dc4-a274-7e6630996d73",
+      "content_id": "a048f8d3-fa2e-4e4e-988a-29dbb74d341f",
+      "claim_id": "C19",
+      "claim": "The enzyme \u03b24GalNT1 can act on branched or un-branched galactose monomers.",
+      "claim_type": "EXPLICIT",
+      "source": "The branch-insensitive enzyme \u03b24GalNT1 can act on branched or un-branched galactose monomers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a property of the \u03b24GalNT1 enzyme, representing established knowledge about this specific enzyme.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:09:40.396977Z"
+    },
+    {
+      "id": "5c9f2c64-47a9-4c3f-85ee-fc57ed547342",
+      "content_id": "a048f8d3-fa2e-4e4e-988a-29dbb74d341f",
+      "claim_id": "C20",
+      "claim": "Increased enzyme promiscuity leads to tandem repeat byproducts.",
+      "claim_type": "EXPLICIT",
+      "source": "Increased enzyme promiscuity leads to tandem repeat byproducts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated in Figure 1C and represents an inference from the model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:09:40.396977Z"
+    },
+    {
+      "id": "22c790c4-3e15-49f7-a13f-991e450ada4e",
+      "content_id": "a048f8d3-fa2e-4e4e-988a-29dbb74d341f",
+      "claim_id": "C21",
+      "claim": "Placing the context-free Fut2 enzyme in a separate compartment from branch-sensitive GTB restores specific synthesis of the B-antigen.",
+      "claim_type": "EXPLICIT",
+      "source": "Placing the context-free Fut2 enzyme in a separate compartment from branch-sensitive GTB restores specific synthesis of the B-antigen.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated in Figure 1C as an example of how compartmentalization mitigates variability.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:09:40.396977Z"
+    },
+    {
+      "id": "f04bd049-3d00-4ad9-9cab-28558279eabc",
+      "content_id": "a048f8d3-fa2e-4e4e-988a-29dbb74d341f",
+      "claim_id": "C22",
+      "claim": "Ideal root-sensitive enzymes can specifically synthesize any product in a single compartment.",
+      "claim_type": "EXPLICIT",
+      "source": "Ideal root-sensitive enzymes can distinguish the position of every acceptor monomer in an oligomer, so they can specifically synthesize any product in a single compartment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from the mathematical analysis presented in the manuscript.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:09:40.396977Z"
+    },
+    {
+      "id": "562c51f5-0684-456b-a9a7-60eeb3ab96bb",
+      "content_id": "a048f8d3-fa2e-4e4e-988a-29dbb74d341f",
+      "claim_id": "C23",
+      "claim": "Splitting branch-sensitive and context-free enzymes across multiple compartments increases the repertoire of oligomers they can specifically synthesize.",
+      "claim_type": "EXPLICIT",
+      "source": "Branch-sensitive and context-free enzymes are more promiscuous; splitting such enzymes across multiple compartments increases the repertoire of oligomers they can specifically synthesize.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from the mathematical analysis presented in the manuscript.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:09:40.396977Z"
+    },
+    {
+      "id": "6f83adb1-adaa-4521-b14c-256d59df316f",
+      "content_id": "a048f8d3-fa2e-4e4e-988a-29dbb74d341f",
+      "claim_id": "C24",
+      "claim": "Prokaryotic glycans are typically random heteropolymers.",
+      "claim_type": "EXPLICIT",
+      "source": "The enormous potential for variability is exemplified by prokaryotic glycans, which are typically random heteropolymers (Varki et al., 2017, Chapter 21,22; Adibekian et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to the literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:09:40.396977Z"
+    },
+    {
+      "id": "af1a1b12-02aa-4d7d-96b6-5e2d79adb6e4",
+      "content_id": "a048f8d3-fa2e-4e4e-988a-29dbb74d341f",
+      "claim_id": "C25",
+      "claim": "Eukaryotic glycoproteins are typically associated with a narrow, specific set of glycan oligomers, referred to as protein's glycan profile.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, eukaryotic glycoproteins are typically associated with a narrow, specific set of glycan oligomers, referred to as protein's glycan profile (Varki et al., 2017, Chapter 1; Campbell et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to the literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:09:40.396977Z"
+    },
+    {
+      "id": "2f7dd035-74c1-447e-a4e7-93d241fa6380",
+      "content_id": "a048f8d3-fa2e-4e4e-988a-29dbb74d341f",
+      "claim_id": "C26",
+      "claim": "Specific protein glycan profiles are associated with distinct species.",
+      "claim_type": "EXPLICIT",
+      "source": "The low variability of eukaryotic glycans is functionally relevant: specific protein glycan profiles are associated with distinct species (Hamako et al., 1993; H\u00e5rd et al., 1992; Hokke et al., 1994), distinct individuals (as with ABO blood groups [Patenaude et al., 2002]) and distinct cell types in an individual [West et al., 2010]; and altered glycan profiles are implicated a variety of disorders (Freeze and Ng, 2011; Gill et al., 2013; Lo-Guidice et al., 1994).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to the literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:09:40.396977Z"
+    },
+    {
+      "id": "dfd4efa9-56f0-4fb1-81ca-1056bd5d0c77",
+      "content_id": "a048f8d3-fa2e-4e4e-988a-29dbb74d341f",
+      "claim_id": "C27",
+      "claim": "Specific protein glycan profiles are associated with distinct individuals, as with ABO blood groups.",
+      "claim_type": "EXPLICIT",
+      "source": "The low variability of eukaryotic glycans is functionally relevant: specific protein glycan profiles are associated with distinct species (Hamako et al., 1993; H\u00e5rd et al., 1992; Hokke et al., 1994), distinct individuals (as with ABO blood groups [Patenaude et al., 2002]) and distinct cell types in an individual [West et al., 2010]; and altered glycan profiles are implicated a variety of disorders (Freeze and Ng, 2011; Gill et al., 2013; Lo-Guidice et al., 1994).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to the literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:09:40.396977Z"
+    },
+    {
+      "id": "bd011579-7fad-4d33-a463-31eb63a3d13f",
+      "content_id": "a048f8d3-fa2e-4e4e-988a-29dbb74d341f",
+      "claim_id": "C28",
+      "claim": "Specific protein glycan profiles are associated with distinct cell types in an individual.",
+      "claim_type": "EXPLICIT",
+      "source": "The low variability of eukaryotic glycans is functionally relevant: specific protein glycan profiles are associated with distinct species (Hamako et al., 1993; H\u00e5rd et al., 1992; Hokke et al., 1994), distinct individuals (as with ABO blood groups [Patenaude et al., 2002]) and distinct cell types in an individual [West et al., 2010]; and altered glycan profiles are implicated a variety of disorders (Freeze and Ng, 2011; Gill et al., 2013; Lo-Guidice et al., 1994).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to the literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:09:40.396977Z"
+    },
+    {
+      "id": "c5a3fc79-bd25-4b6c-8089-6fde8bf479f1",
+      "content_id": "a048f8d3-fa2e-4e4e-988a-29dbb74d341f",
+      "claim_id": "C29",
+      "claim": "Altered glycan profiles are implicated in a variety of disorders.",
+      "claim_type": "EXPLICIT",
+      "source": "The low variability of eukaryotic glycans is functionally relevant: specific protein glycan profiles are associated with distinct species (Hamako et al., 1993; H\u00e5rd et al., 1992; Hokke et al., 1994), distinct individuals (as with ABO blood groups [Patenaude et al., 2002]) and distinct cell types in an individual [West et al., 2010]; and altered glycan profiles are implicated a variety of disorders (Freeze and Ng, 2011; Gill et al., 2013; Lo-Guidice et al., 1994).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to the literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:09:40.396977Z"
+    },
+    {
+      "id": "4a066bae-a86b-4187-a6c9-c50669951c8d",
+      "content_id": "a048f8d3-fa2e-4e4e-988a-29dbb74d341f",
+      "claim_id": "C30",
+      "claim": "Simulations suggest that the localization of enzymes within Golgi compartments plays a key role in controlling glycan variability.",
+      "claim_type": "EXPLICIT",
+      "source": "Simulations suggest that the localization of enzymes within Golgi compartments plays a key role (Liu et al., 2008; Spahn and Lewis, 2014; Spahn et al., 2016; Fisher et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to simulation studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:09:40.396977Z"
+    },
+    {
+      "id": "4cc75832-9ab1-4f0a-88fb-8bb30d962dfc",
+      "content_id": "a048f8d3-fa2e-4e4e-988a-29dbb74d341f",
+      "claim_id": "C31",
+      "claim": "The GTases Fut2 and GTB specifically synthesize the blood group B-antigen.",
+      "claim_type": "EXPLICIT",
+      "source": "Consider the GTases Fut2 and GTB, which specifically synthesize the blood group B-antigen (Taniguchi and Honke, 2014, Chapter 44,47).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to the literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:09:40.396977Z"
+    },
+    {
+      "id": "ec4f34b3-0da2-44c3-9a74-cf97cbf265f4",
+      "content_id": "a048f8d3-fa2e-4e4e-988a-29dbb74d341f",
+      "claim_id": "C32",
+      "claim": "Hypothetical promiscuous versions of Fut2 and GTB, if placed in a single compartment, generate variable tandem repeat oligomers as byproducts.",
+      "claim_type": "EXPLICIT",
+      "source": "Hypothetical promiscuous versions of these enzymes, if placed in a single compartment, generate variable tandem repeat oligomers as byproducts (Figure 1C); specific synthesis of the B-antigen is restored when the promiscuous enzymes are placed in two separate compartments.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated in Figure 1C as a hypothetical example.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:09:40.396977Z"
+    },
+    {
+      "id": "6b92c3f1-4bda-49da-9859-6783688822e6",
+      "content_id": "a048f8d3-fa2e-4e4e-988a-29dbb74d341f",
+      "claim_id": "C33",
+      "claim": "Specific synthesis of the B-antigen is restored when promiscuous Fut2 and GTB enzymes are placed in two separate compartments.",
+      "claim_type": "EXPLICIT",
+      "source": "Hypothetical promiscuous versions of these enzymes, if placed in a single compartment, generate variable tandem repeat oligomers as byproducts (Figure 1C); specific synthesis of the B-antigen is restored when the promiscuous enzymes are placed in two separate compartments.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated in Figure 1C as a hypothetical example.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:09:40.396977Z"
+    },
+    {
+      "id": "8fac3491-4aac-4253-b365-c3b6c76ad077",
+      "content_id": "a048f8d3-fa2e-4e4e-988a-29dbb74d341f",
+      "claim_id": "C34",
+      "claim": "The synthesis of O-glycan oligomers begins in the Golgi apparatus when a root monomer is attached to a specific serine or threonine on a substrate protein.",
+      "claim_type": "EXPLICIT",
+      "source": "The synthesis of O-glycan oligomers begins in the Golgi apparatus, when a root monomer is attached to a specific serine or threonine on a substrate protein.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about O-glycan biosynthesis.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:09:40.396977Z"
+    },
+    {
+      "id": "5fb6e866-5651-4e4a-866d-eadc06476d6d",
+      "content_id": "a048f8d3-fa2e-4e4e-988a-29dbb74d341f",
+      "claim_id": "C35",
+      "claim": "The Golgi consists of an ordered series of compositionally distinct compartments.",
+      "claim_type": "EXPLICIT",
+      "source": "The Golgi consists of an ordered series of compositionally distinct compartments (for example, cis, medial and trans cisternae).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about Golgi structure.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:09:40.396977Z"
+    },
+    {
+      "id": "3e8d0077-5a7a-4c54-89e0-8fab52970d30",
+      "content_id": "a048f8d3-fa2e-4e4e-988a-29dbb74d341f",
+      "claim_id": "C36",
+      "claim": "Each Golgi compartment contains a specific set of GTase enzymes responsible for growing an oligomer on a specific protein type.",
+      "claim_type": "EXPLICIT",
+      "source": "Each compartment contains a specific set of GTase enzymes responsible for growing an oligomer on a specific protein type.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about Golgi function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:09:40.396977Z"
+    },
+    {
+      "id": "10f85f21-fce2-4110-ab16-e2d43fa694bf",
+      "content_id": "a048f8d3-fa2e-4e4e-988a-29dbb74d341f",
+      "claim_id": "C37",
+      "claim": "In the transport model, oligomers are ferried through successive Golgi compartments.",
+      "claim_type": "EXPLICIT",
+      "source": "In the transport model, oligomers are ferried through successive compartments; in the maturation model, oligomers remain in place while the enzymatic composition of the compartment undergoes a rapid switch-like transition between successive states (Mani and Thattai, 2016; Pantazopoulou and Glick, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations describing models of Golgi trafficking.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:09:40.396977Z"
+    },
+    {
+      "id": "cd3de72c-4c4f-44e0-9c13-ba32af6a4ccf",
+      "content_id": "a048f8d3-fa2e-4e4e-988a-29dbb74d341f",
+      "claim_id": "C38",
+      "claim": "In the maturation model, oligomers remain in place while the enzymatic composition of the compartment undergoes a rapid switch-like transition between successive states.",
+      "claim_type": "EXPLICIT",
+      "source": "In the transport model, oligomers are ferried through successive compartments; in the maturation model, oligomers remain in place while the enzymatic composition of the compartment undergoes a rapid switch-like transition between successive states (Mani and Thattai, 2016; Pantazopoulou and Glick, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations describing models of Golgi trafficking.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:09:40.396977Z"
+    },
+    {
+      "id": "896dad36-2746-40bd-8c4e-b0031a0d5265",
+      "content_id": "a048f8d3-fa2e-4e4e-988a-29dbb74d341f",
+      "claim_id": "C39",
+      "claim": "Growing oligomers spend time within successive enzymatic compartment types under both transport and maturation models.",
+      "claim_type": "EXPLICIT",
+      "source": "Under either scenario, whether transport or maturation, growing oligomers spend time within successive enzymatic compartment types.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the two models of Golgi trafficking.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:09:40.396977Z"
+    },
+    {
+      "id": "d6c7e958-c891-4d90-acc0-a82b638d15ff",
+      "content_id": "a048f8d3-fa2e-4e4e-988a-29dbb74d341f",
+      "claim_id": "C40",
+      "claim": "During each encounter with a GTase enzyme, the enzyme scans the oligomer for a site that matches a structural motif (the 'acceptor-substrate') and attaches a single free monomer (the 'donor-substrate') to that site.",
+      "claim_type": "EXPLICIT",
+      "source": "During each such encounter, the enzyme scans the oligomer for a site that matches a structural motif (the 'acceptor-substrate') and attaches a single free monomer (the 'donor-substrate') to that site (Figure 1A; Liu et al., 2008; Moremen et al., 2012).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by citations and illustrated in Figure 1A.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:09:40.396977Z"
+    },
+    {
+      "id": "e4d1ded6-6d28-41a8-9857-434d079ccf43",
+      "content_id": "a048f8d3-fa2e-4e4e-988a-29dbb74d341f",
+      "claim_id": "C41",
+      "claim": "A given GTase enzyme invariably catalyzes a glycosidic (C-O-C) linkage between specific carbons on a specific free donor monomer type and a specific acceptor monomer type within the acceptor-substrate.",
+      "claim_type": "EXPLICIT",
+      "source": "A given GTase enzyme invariably catalyzes a glycosidic (C-O-C) linkage between specific carbons on a specific free donor monomer type and a specific acceptor monomer type within the acceptor-substrate (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is established knowledge about GTase specificity, illustrated in Figure 1A.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:09:40.396977Z"
+    },
+    {
+      "id": "9255f609-66ae-456a-91c5-dca8eda3f311",
+      "content_id": "a048f8d3-fa2e-4e4e-988a-29dbb74d341f",
+      "claim_id": "C42",
+      "claim": "There are far fewer GTase enzymes than observed glycan oligomers in any given species.",
+      "claim_type": "EXPLICIT",
+      "source": "First, there are far fewer GTase enzymes than observed glycan oligomers in any given species (Narimatsu et al., 2017); moreover, the same highly conserved enzymes are found across species with very distinct glycans (Kaneko et al., 2001; Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by citations to the literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:09:40.396977Z"
+    },
+    {
+      "id": "d789a3af-bac9-473d-9b13-c826251f3e09",
+      "content_id": "a048f8d3-fa2e-4e4e-988a-29dbb74d341f",
+      "claim_id": "C43",
+      "claim": "The same highly conserved GTase enzymes are found across species with very distinct glycans.",
+      "claim_type": "EXPLICIT",
+      "source": "First, there are far fewer GTase enzymes than observed glycan oligomers in any given species (Narimatsu et al., 2017); moreover, the same highly conserved enzymes are found across species with very distinct glycans (Kaneko et al., 2001; Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by a citation to the literature and illustrated in Figure 2.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:09:40.396977Z"
+    },
+    {
+      "id": "186a2913-06fa-4397-91ed-a56765082e58",
+      "content_id": "a048f8d3-fa2e-4e4e-988a-29dbb74d341f",
+      "claim_id": "C44",
+      "claim": "By the pigeonhole principle, an individual GTase enzyme must be promiscuous and able to act on many distinct oligomer types.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, by the pigeonhole principle, an individual GTase enzyme must be promiscuous and able to act on many distinct oligomer types (Narimatsu et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the pigeonhole principle, supported by a citation.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:09:40.396977Z"
+    },
+    {
+      "id": "9043fa32-e528-43ee-b138-0b3fe020e45c",
+      "content_id": "a048f8d3-fa2e-4e4e-988a-29dbb74d341f",
+      "claim_id": "C45",
+      "claim": "There is a limit to the size of the motif any enzyme can recognize within an oligomer.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, although oligomers can be arbitrarily large, there is a limit to the size of the motif any enzyme can recognize within it.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general principle about enzyme recognition capabilities.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:09:40.396977Z"
+    },
+    {
+      "id": "e82778bf-2fcd-47f9-b2a2-c8ae01ba1df4",
+      "content_id": "a048f8d3-fa2e-4e4e-988a-29dbb74d341f",
+      "claim_id": "C46",
+      "claim": "A given enzyme could act everywhere its recognition motif is found on an oligomer.",
+      "claim_type": "EXPLICIT",
+      "source": "A given enzyme could act everywhere its recognition motif is found on an oligomer; the smaller the recognition motif, the more oligomers it will be found within, and the more promiscuous the enzyme (Blixt et al., 2008; Taniguchi and Honke, 2014; Biswas and Thattai, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to the literature.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:09:40.396977Z"
+    },
+    {
+      "id": "36098c8e-42e4-4555-bd3f-b53888361848",
+      "content_id": "a048f8d3-fa2e-4e4e-988a-29dbb74d341f",
+      "claim_id": "C47",
+      "claim": "The smaller the recognition motif, the more oligomers it will be found within, and the more promiscuous the enzyme.",
+      "claim_type": "EXPLICIT",
+      "source": "A given enzyme could act everywhere its recognition motif is found on an oligomer; the smaller the recognition motif, the more oligomers it will be found within, and the more promiscuous the enzyme (Blixt et al., 2008; Taniguchi and Honke, 2014; Biswas and Thattai, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to the literature and represents an inference about enzyme promiscuity.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:09:40.396977Z"
+    },
+    {
+      "id": "346b9f6f-5982-4310-ab8a-4136c740a110",
+      "content_id": "a048f8d3-fa2e-4e4e-988a-29dbb74d341f",
+      "claim_id": "C48",
+      "claim": "Context-free enzymes are maximally promiscuous.",
+      "claim_type": "EXPLICIT",
+      "source": "Context-free enzymes are those whose acceptor-substrates are single monomers, no matter what branches or roots they are linked to. These enzymes are maximally promiscuous.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definition and characterization provided by the authors.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:09:40.396977Z"
+    },
+    {
+      "id": "a8b2add0-04bb-4f72-ab5f-242c53317dfc",
+      "content_id": "a048f8d3-fa2e-4e4e-988a-29dbb74d341f",
+      "claim_id": "C49",
+      "claim": "Ideal branch-sensitive enzymes are intermediate in promiscuity.",
+      "claim_type": "EXPLICIT",
+      "source": "Ideal branch-sensitive enzymes are those whose acceptor-substrates are some acceptor monomer type having or lacking specific branches. These are intermediate in promiscuity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definition and characterization provided by the authors.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:09:40.396977Z"
+    },
+    {
+      "id": "42fc3182-b525-432d-9113-9c1657b2bba0",
+      "content_id": "a048f8d3-fa2e-4e4e-988a-29dbb74d341f",
+      "claim_id": "C50",
+      "claim": "Ideal root-sensitive enzymes are minimally promiscuous.",
+      "claim_type": "EXPLICIT",
+      "source": "Ideal root-sensitive enzymes are those whose acceptor-substrates are some acceptor monomer type linked to a specific root chain. These enzymes can distinguish every monomer in an oligomer and are minimally promiscuous.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definition and characterization provided by the authors.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:09:40.396977Z"
+    },
+    {
+      "id": "a96b0f4c-e42c-47a0-9120-cb1cc546ea50",
+      "content_id": "a048f8d3-fa2e-4e4e-988a-29dbb74d341f",
+      "claim_id": "C51",
+      "claim": "Chemical reactions within cells are necessarily stochastic, due to the low molecule numbers involved.",
+      "claim_type": "EXPLICIT",
+      "source": "Chemical reactions within cells are necessarily stochastic, due to the low molecule numbers involved.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about cellular biochemistry.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:09:40.396977Z"
+    },
+    {
+      "id": "ed2fa2cc-001e-49ec-af69-a09120e6691b",
+      "content_id": "a048f8d3-fa2e-4e4e-988a-29dbb74d341f",
+      "claim_id": "C52",
+      "claim": "While the growing oligomer is within a given compartment, the order in which it encounters the available GTase enzymes is equivalent to a Markov process of random sampling with replacement.",
+      "claim_type": "EXPLICIT",
+      "source": "While the growing oligomer is within a given compartment, the order in which it encounters the available GTase enzymes is equivalent to a Markov process of random sampling with replacement, with randomly distributed time intervals between successive encounters (Gillespie, 1977).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a modeling assumption supported by a citation to stochastic simulation methods.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:09:40.396977Z"
+    },
+    {
+      "id": "7c62b27a-880a-4565-b136-c75679e3842a",
+      "content_id": "a048f8d3-fa2e-4e4e-988a-29dbb74d341f",
+      "claim_id": "C53",
+      "claim": "O-glycan oligomers are not pruned, so their synthesis reactions are irreversible.",
+      "claim_type": "EXPLICIT",
+      "source": "Since O-glycan oligomers are not pruned, these reactions are irreversible (Varki et al., 2017, Chapter 6).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to the literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:09:40.396977Z"
+    },
+    {
+      "id": "807aff61-c0eb-4350-99e1-5d1ab33e2da9",
+      "content_id": "a048f8d3-fa2e-4e4e-988a-29dbb74d341f",
+      "claim_id": "C54",
+      "claim": "There are precisely three ways for variability to occur in assembly-line reactions: truncated, runaway, and divergent reactions.",
+      "claim_type": "EXPLICIT",
+      "source": "We can show that there are precisely three ways for variability to occur (Appendix 2, Remark 1): truncated, runaway, and divergent reactions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mathematical result proven in the appendix.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:09:40.396977Z"
+    },
+    {
+      "id": "7866505c-a37f-407d-8972-e6c0705cb3f1",
+      "content_id": "a048f8d3-fa2e-4e4e-988a-29dbb74d341f",
+      "claim_id": "C55",
+      "claim": "Each type of reaction variability corresponds to a specific output pattern that has been observed in real glycan datasets.",
+      "claim_type": "EXPLICIT",
+      "source": "Each type of reaction variability corresponds to a specific output pattern that has been observed in real glycan datasets (Figure 2; Table 1; Varki et al., 2017, Chapter 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by reference to figures, tables, and citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:09:40.396977Z"
+    },
+    {
+      "id": "60424eb2-3668-46d0-ae9b-4a92b4d58c66",
+      "content_id": "a048f8d3-fa2e-4e4e-988a-29dbb74d341f",
+      "claim_id": "C56",
+      "claim": "A truncated reaction causes intermediate oligomers to be produced as outputs.",
+      "claim_type": "EXPLICIT",
+      "source": "A truncated reaction causes intermediate oligomers to be produced as outputs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from the mathematical analysis.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:09:40.396977Z"
+    },
+    {
+      "id": "3929edb4-53f6-4336-b192-7f4d24ba9a3c",
+      "content_id": "a048f8d3-fa2e-4e4e-988a-29dbb74d341f",
+      "claim_id": "C57",
+      "claim": "Truncated reactions occur whenever the average waiting time for monomer addition is comparable to or greater than the compartment's residence time.",
+      "claim_type": "EXPLICIT",
+      "source": "This occurs whenever the average waiting time for monomer addition (a quantity inversely proportional to enzyme concentrations) is comparable to or greater than the compartment's residence time (Appendix 2, Remark 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mathematical result proven in the appendix.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:09:40.396977Z"
+    },
+    {
+      "id": "548d1679-e459-4d49-985d-514b155fd88b",
+      "content_id": "a048f8d3-fa2e-4e4e-988a-29dbb74d341f",
+      "claim_id": "C59",
+      "claim": "A runaway reaction is an infinite path in the reaction network, giving oligomers with arbitrary numbers of tandem repeats as outputs.",
+      "claim_type": "EXPLICIT",
+      "source": "A runaway reaction is an infinite path in the reaction network, giving oligomers with arbitrary numbers of tandem repeats as outputs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definition provided by the authors.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:09:40.396977Z"
+    },
+    {
+      "id": "f9a3dadb-0ffd-445a-932b-958599dee9a3",
+      "content_id": "a048f8d3-fa2e-4e4e-988a-29dbb74d341f",
+      "claim_id": "C60",
+      "claim": "Ideal root-sensitive enzymes don't permit runaway reactions, since their acceptor monomers are at a fixed depth from the root.",
+      "claim_type": "EXPLICIT",
+      "source": "Ideal root-sensitive enzymes don't permit runaway reactions, since their acceptor monomers are at a fixed depth from the root.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from the mathematical analysis.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:09:40.396977Z"
+    },
+    {
+      "id": "85b24c11-d4d3-40cf-8737-b18785f65ac3",
+      "content_id": "a048f8d3-fa2e-4e4e-988a-29dbb74d341f",
+      "claim_id": "C61",
+      "claim": "A compartment contains a runaway reaction if and only if its linkage network contains one or more loops.",
+      "claim_type": "EXPLICIT",
+      "source": "A compartment contains a runaway reaction if and only if its linkage network contains one or more loops (Appendix 2, Lemma 1), since each loop corresponds to a tandem repeat.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mathematical theorem proven in the appendix.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:09:40.396977Z"
+    },
+    {
+      "id": "93d605d8-8ff0-4d96-9da4-99317f2b3172",
+      "content_id": "a048f8d3-fa2e-4e4e-988a-29dbb74d341f",
+      "claim_id": "C62",
+      "claim": "Branch-sensitive GTase enzymes can prevent linkage loops by using triggers.",
+      "claim_type": "EXPLICIT",
+      "source": "Branch-sensitive GTase enzymes can prevent linkage loops by using triggers (branched acceptor-substrates that cannot be synthesized within the compartment from a single monomer; Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a conclusion from the mathematical analysis, illustrated in Figure 3D.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:09:40.396977Z"
+    },
+    {
+      "id": "9bd9e0d7-1fa7-45e9-aa55-9c4d408d5f80",
+      "content_id": "a048f8d3-fa2e-4e4e-988a-29dbb74d341f",
+      "claim_id": "C63",
+      "claim": "A divergent reaction is a fork in the reaction network that never reconverges, with distinct paths leading to mutually exclusive oligomer fates as outputs.",
+      "claim_type": "EXPLICIT",
+      "source": "A divergent reaction is a fork in the reaction network that never reconverges, with distinct paths leading to mutually exclusive oligomer fates as outputs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definition provided by the authors.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:09:40.396977Z"
+    },
+    {
+      "id": "c7d5e747-7710-4976-a5a4-6b518b9578d8",
+      "content_id": "a048f8d3-fa2e-4e4e-988a-29dbb74d341f",
+      "claim_id": "C64",
+      "claim": "If a fork does not reconverge, this implies that the action of one enzyme on an oligomer blocks the subsequent action of another.",
+      "claim_type": "EXPLICIT",
+      "source": "If a fork does not reconverge this implies that the action of one enzyme on an oligomer blocks the subsequent action of another (Appendix 2, Lemma 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mathematical result proven in the appendix.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:09:40.396977Z"
+    },
+    {
+      "id": "982c0976-abb1-4f3b-8735-75d5ba8df4e5",
+      "content_id": "a048f8d3-fa2e-4e4e-988a-29dbb74d341f",
+      "claim_id": "C65",
+      "claim": "For root-sensitive and context-free enzymes, a non-reconverging fork can only occur if both enzymes compete to act on the same carbon of the same monomer (bidirectional acceptor block).",
+      "claim_type": "EXPLICIT",
+      "source": "For root-sensitive and context-free enzymes, this can only occur if both enzymes compete to act on the same carbon of the same monomer (bidirectional acceptor block; Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a conclusion from the mathematical analysis, illustrated in Figure 3B.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:09:40.396977Z"
+    },
+    {
+      "id": "060dee9c-0771-427c-9c05-ac3ae98ac945",
+      "content_id": "a048f8d3-fa2e-4e4e-988a-29dbb74d341f",
+      "claim_id": "C66",
+      "claim": "For branch-sensitive enzymes, a non-reconverging fork can occur if both enzymes have the same acceptor-substrate (bidirectional acceptor block) or if the acceptor-substrate of the first enzyme is on a branch of the acceptor-substrate of the second (unidirectional acceptor block).",
+      "claim_type": "EXPLICIT",
+      "source": "For branch-sensitive enzymes, there are two ways this can occur: both enzymes have the same acceptor-substrate (bidirectional acceptor block; Figure 3B) or the acceptor-substrate of the first enzyme is on a branch of the acceptor-substrate of the second (unidirectional acceptor block; Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a conclusion from the mathematical analysis, illustrated in Figure 3B.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:09:40.396977Z"
+    },
+    {
+      "id": "2a6ee322-3e51-4eea-a81f-0bdd8e3a9334",
+      "content_id": "a048f8d3-fa2e-4e4e-988a-29dbb74d341f",
+      "claim_id": "C67",
+      "claim": "Truncated reactions can be eliminated by requiring high enzyme concentrations.",
+      "claim_type": "EXPLICIT",
+      "source": "We can eliminate truncated reactions by requiring high enzyme concentrations; we can eliminate linkage loops and acceptor blocks by removing certain enzymes from the reaction compartment (Figure 3C; Appendix 2, Lemma 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a conclusion from the mathematical analysis, illustrated in Figure 3C.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:09:40.396977Z"
+    },
+    {
+      "id": "d0c928d9-2afc-4ed5-8d11-1dbe142b2679",
+      "content_id": "a048f8d3-fa2e-4e4e-988a-29dbb74d341f",
+      "claim_id": "C68",
+      "claim": "Linkage loops and acceptor blocks can be eliminated by removing certain enzymes from the reaction compartment.",
+      "claim_type": "EXPLICIT",
+      "source": "We can eliminate truncated reactions by requiring high enzyme concentrations; we can eliminate linkage loops and acceptor blocks by removing certain enzymes from the reaction compartment (Figure 3C; Appendix 2, Lemma 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a conclusion from the mathematical analysis, illustrated in Figure 3C.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:09:40.396977Z"
+    },
+    {
+      "id": "7697156b-190c-4f2c-ab0f-1876b2914a6c",
+      "content_id": "a048f8d3-fa2e-4e4e-988a-29dbb74d341f",
+      "claim_id": "C69",
+      "claim": "An 'algorithmic compartment' specifically synthesizes a corresponding unique output for each possible input.",
+      "claim_type": "EXPLICIT",
+      "source": "These steps result in an 'algorithmic compartment': for each possible input, it specifically synthesizes a corresponding unique output.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definition provided by the authors based on their mathematical analysis.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:09:40.396977Z"
+    },
+    {
+      "id": "28e7b4c4-3180-4938-8a78-c3c2f165bb5b",
+      "content_id": "a048f8d3-fa2e-4e4e-988a-29dbb74d341f",
+      "claim_id": "C70",
+      "claim": "A target oligomer can be specifically synthesized from an input oligomer if and only if it can be specifically synthesized from that input oligomer in a series of single-enzyme compartments.",
+      "claim_type": "EXPLICIT",
+      "source": "A target oligomer can be specifically synthesized from an input oligomer if and only if it can be specifically synthesized from that input oligomer in a series of single-enzyme compartments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is Theorem 1, a mathematical result proven in the appendix.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:09:40.396977Z"
+    },
+    {
+      "id": "7804ad84-66e4-4d06-b264-053a25553b93",
+      "content_id": "a048f8d3-fa2e-4e4e-988a-29dbb74d341f",
+      "claim_id": "C72",
+      "claim": "For ideal root-sensitive enzymes a single compartment is always sufficient, since every growth order to a given terminal oligomer is algorithmic.",
+      "claim_type": "EXPLICIT",
+      "source": "For ideal root-sensitive enzymes a single compartment is always sufficient, since every growth order to a given terminal oligomer is algorithmic (Appendix 2, Lemma 4).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mathematical result proven in the appendix.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:09:40.396977Z"
+    },
+    {
+      "id": "aeec252a-3de1-4ec9-89f8-469bfd99ba58",
+      "content_id": "a048f8d3-fa2e-4e4e-988a-29dbb74d341f",
+      "claim_id": "C73",
+      "claim": "Certain oligomers can never be synthesized without byproducts, no matter how many compartments are allowed.",
+      "claim_type": "EXPLICIT",
+      "source": "There are some situations in which glycan variability is unavoidable: certain oligomers can never be synthesized without byproducts, no matter how many compartments we allow.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from the mathematical analysis.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:09:40.396977Z"
+    },
+    {
+      "id": "9b93b348-6981-4752-91d7-8941ff78fd0e",
+      "content_id": "a048f8d3-fa2e-4e4e-988a-29dbb74d341f",
+      "claim_id": "C74",
+      "claim": "Eukaryotic glycan synthesis is an exquisite demonstration of template-free recipes to specifically encode diverse glycan oligomers.",
+      "claim_type": "EXPLICIT",
+      "source": "Eukaryotic glycan synthesis is an exquisite demonstration of the same concept: re-configurable reaction networks act as template-free recipes to specifically encode diverse glycan oligomers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation by the authors based on their analysis.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:09:40.396977Z"
+    },
+    {
+      "id": "61de488c-72a9-42a2-bf5a-635e6e9263a6",
+      "content_id": "a048f8d3-fa2e-4e4e-988a-29dbb74d341f",
+      "claim_id": "C75",
+      "claim": "When enzymes are promiscuous, the kinetics of distinct reactions cannot be independently regulated, leading to variability.",
+      "claim_type": "EXPLICIT",
+      "source": "When enzymes are promiscuous, the kinetics of distinct reactions cannot be independently regulated, leading to variability (Biswas and Thattai, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:09:40.396977Z"
+    },
+    {
+      "id": "e6ed12a2-33c2-4233-aa06-3bf96e35a6a9",
+      "content_id": "a048f8d3-fa2e-4e4e-988a-29dbb74d341f",
+      "claim_id": "C76",
+      "claim": "By splitting promiscuous enzymes across different Golgi compartments, glycan variability can be reduced or eliminated.",
+      "claim_type": "EXPLICIT",
+      "source": "We have shown that, by splitting promiscuous enzymes across different Golgi compartments, this variability can be reduced or eliminated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion of the manuscript, demonstrated through mathematical theorems.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:09:40.396977Z"
+    },
+    {
+      "id": "d71e2d65-a5da-40b1-92e6-545a4d803feb",
+      "content_id": "a048f8d3-fa2e-4e4e-988a-29dbb74d341f",
+      "claim_id": "C77",
+      "claim": "To synthesize oligomers without byproducts, cells must either decrease enzyme promiscuity, or increase the number of compartment types.",
+      "claim_type": "EXPLICIT",
+      "source": "To synthesize oligomers without byproducts, cells must either decrease enzyme promiscuity, or increase the number of compartment types (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a conclusion from the mathematical analysis, illustrated in Figure 1D.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:09:40.396977Z"
+    },
+    {
+      "id": "9832e5ac-3e77-4cd0-b1e9-5c03bd7c095f",
+      "content_id": "a048f8d3-fa2e-4e4e-988a-29dbb74d341f",
+      "claim_id": "C78",
+      "claim": "If all enzymes were highly selective, each with one specific substrate, a single compartment would suffice; but cells would require as many enzymes as oligomer types.",
+      "claim_type": "EXPLICIT",
+      "source": "If all enzymes were highly selective, each with one specific substrate, a single compartment would suffice; but cells would require as many enzymes as oligomer types.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the trade-off between enzyme specificity and compartmentalization.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:09:40.396977Z"
+    },
+    {
+      "id": "d1193205-f6ee-4217-8aa2-c209897698da",
+      "content_id": "a048f8d3-fa2e-4e4e-988a-29dbb74d341f",
+      "claim_id": "C79",
+      "claim": "An extensive system of membrane traffic proteins is required to maintain distinct Golgi compartments.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, an extensive system of membrane traffic proteins is required to maintain distinct Golgi compartments (Pantazopoulou and Glick, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to the literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:09:40.396977Z"
+    },
+    {
+      "id": "a2343bd5-6166-49d7-89ba-6ff478187682",
+      "content_id": "a048f8d3-fa2e-4e4e-988a-29dbb74d341f",
+      "claim_id": "C80",
+      "claim": "Some GTase enzymes, such as those which synthesize the N-glycan oligomannose precursor in the ER, are highly selective and appear to act on just one or two oligomers.",
+      "claim_type": "EXPLICIT",
+      "source": "Some GTase enzymes, such as those which synthesize the N-glycan oligomannose precursor in the ER, are highly selective and appear to act on just one or two oligomers; but most GTases are promiscuous, able to act on many oligomers or at many points on a single oligomer (Biswas and Thattai, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to the literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:09:40.396977Z"
+    },
+    {
+      "id": "51b3b184-be85-478d-b9a5-79e850a93b26",
+      "content_id": "a048f8d3-fa2e-4e4e-988a-29dbb74d341f",
+      "claim_id": "C81",
+      "claim": "Most GTases are promiscuous, able to act on many oligomers or at many points on a single oligomer.",
+      "claim_type": "EXPLICIT",
+      "source": "Some GTase enzymes, such as those which synthesize the N-glycan oligomannose precursor in the ER, are highly selective and appear to act on just one or two oligomers; but most GTases are promiscuous, able to act on many oligomers or at many points on a single oligomer (Biswas and Thattai, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to the literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:09:40.396977Z"
+    },
+    {
+      "id": "747c1ff4-b795-453c-8fc1-0da2ec977162",
+      "content_id": "a048f8d3-fa2e-4e4e-988a-29dbb74d341f",
+      "claim_id": "C82",
+      "claim": "Having multiple compartments is crucial for limiting glycan variability in real cells.",
+      "claim_type": "EXPLICIT",
+      "source": "This means having multiple compartments is crucial for limiting glycan variability in real cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from the analysis of enzyme promiscuity and compartmentalization.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:09:40.396977Z"
+    },
+    {
+      "id": "6d0fdabb-c7f4-4490-b6ef-435da8755ce1",
+      "content_id": "a048f8d3-fa2e-4e4e-988a-29dbb74d341f",
+      "claim_id": "C83",
+      "claim": "By redistributing enzymes within the Golgi, multicellular organisms can use the same set of enzymes to generate distinct glycan profiles in distinct cell types.",
+      "claim_type": "EXPLICIT",
+      "source": "By redistributing enzymes within the Golgi, multicellular organisms can use the same set of enzymes to generate distinct glycan profiles in distinct cell types (Figure 2A; West et al., 2010; Fisher et al., 2019).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by citations and illustrated in Figure 2A.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:09:40.396977Z"
+    },
+    {
+      "id": "4937c565-2367-4745-b8be-ba0ca83ab10b",
+      "content_id": "a048f8d3-fa2e-4e4e-988a-29dbb74d341f",
+      "claim_id": "C84",
+      "claim": "The rapid and reversible changes in glycan profiles seen during infection and inflammation are more consistent with changes in enzyme localization than changes in enzyme expression.",
+      "claim_type": "EXPLICIT",
+      "source": "The rapid and reversible changes in glycan profiles seen during infection and inflammation (Varki et al., 2017, Chapter 46) are more consistent with changes in enzyme localization than changes in enzyme expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference supported by a citation about glycan changes during infection and inflammation.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:09:40.396977Z"
+    },
+    {
+      "id": "f49a0910-64dd-4867-aa56-e80c8030ff81",
+      "content_id": "a048f8d3-fa2e-4e4e-988a-29dbb74d341f",
+      "claim_id": "C85",
+      "claim": "Changes in enzyme localization could facilitate rapid evolution of glycan profiles in the context of host-pathogen interactions and speciation.",
+      "claim_type": "EXPLICIT",
+      "source": "Such changes could also facilitate rapid evolution of glycan profiles in the context of host-pathogen interactions and speciation (Watanabe et al., 2020; Varki et al., 2017, Chapter 20).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation supported by citations.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:09:40.396977Z"
+    },
+    {
+      "id": "e346b04d-c147-4660-ae89-173182d70089",
+      "content_id": "a048f8d3-fa2e-4e4e-988a-29dbb74d341f",
+      "claim_id": "C86",
+      "claim": "Small errors in Golgi localization could be pathological.",
+      "claim_type": "EXPLICIT",
+      "source": "But this also means small errors in Golgi localization could be pathological: glycan perturbations promoting tumor invasiveness appear to arise due to errors in enzyme localization, not mutations in the enzymes themselves (Gill et al., 2013; and congenital glycosylation disorders are often correlated with defects in Golgi structure (Freeze and Ng, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference supported by citations.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:09:40.396977Z"
+    },
+    {
+      "id": "5801d48c-4e05-41ac-94ae-8446e5424ca9",
+      "content_id": "a048f8d3-fa2e-4e4e-988a-29dbb74d341f",
+      "claim_id": "C87",
+      "claim": "Glycan perturbations promoting tumor invasiveness appear to arise due to errors in enzyme localization, not mutations in the enzymes themselves.",
+      "claim_type": "EXPLICIT",
+      "source": "But this also means small errors in Golgi localization could be pathological: glycan perturbations promoting tumor invasiveness appear to arise due to errors in enzyme localization, not mutations in the enzymes themselves (Gill et al., 2013; and congenital glycosylation disorders are often correlated with defects in Golgi structure (Freeze and Ng, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to the literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:09:40.396977Z"
+    },
+    {
+      "id": "05dd8179-e663-40db-84ce-651b7f54c528",
+      "content_id": "a048f8d3-fa2e-4e4e-988a-29dbb74d341f",
+      "claim_id": "C88",
+      "claim": "Congenital glycosylation disorders are often correlated with defects in Golgi structure.",
+      "claim_type": "EXPLICIT",
+      "source": "But this also means small errors in Golgi localization could be pathological: glycan perturbations promoting tumor invasiveness appear to arise due to errors in enzyme localization, not mutations in the enzymes themselves (Gill et al., 2013; and congenital glycosylation disorders are often correlated with defects in Golgi structure (Freeze and Ng, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to the literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:09:40.396977Z"
+    },
+    {
+      "id": "2c25d099-6399-42ff-8423-3df1f841ee5e",
+      "content_id": "a048f8d3-fa2e-4e4e-988a-29dbb74d341f",
+      "claim_id": "C89",
+      "claim": "The compartmental organization of the Golgi apparatus allows cells to control glycan synthesis despite enzymatic promiscuity.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we have shown that the compartmental organization of the Golgi apparatus allows cells to control glycan synthesis despite enzymatic promiscuity, potentially explaining why this remarkable organelle is universally conserved across all extant eukaryotic lineages (Barlow et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion of the manuscript, with a citation supporting the conservation of the Golgi.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:09:40.396977Z"
+    },
+    {
+      "id": "0103eefb-7c1e-4fb7-9630-03ca4f5e631b",
+      "content_id": "a048f8d3-fa2e-4e4e-988a-29dbb74d341f",
+      "claim_id": "C90",
+      "claim": "The Golgi apparatus is universally conserved across all extant eukaryotic lineages.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we have shown that the compartmental organization of the Golgi apparatus allows cells to control glycan synthesis despite enzymatic promiscuity, potentially explaining why this remarkable organelle is universally conserved across all extant eukaryotic lineages (Barlow et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to the literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:09:40.396977Z"
+    },
+    {
+      "id": "14ea004a-9d60-4917-a16d-7661e040e740",
+      "content_id": "a048f8d3-fa2e-4e4e-988a-29dbb74d341f",
+      "claim_id": "C91",
+      "claim": "The ability to generate narrow, specific glycan profiles would have been advantageous to early eukaryotes.",
+      "claim_type": "EXPLICIT",
+      "source": "The ability to generate narrow, specific glycan profiles would have been advantageous to early eukaryotes (Wetzel et al., 2018), enabling the sophisticated intercellular interactions that underlie sex, cooperation and multicellularity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:09:40.396977Z"
+    },
+    {
+      "id": "36b3717e-843c-46fd-acfc-62eb8ce8683d",
+      "content_id": "a048f8d3-fa2e-4e4e-988a-29dbb74d341f",
+      "claim_id": "C92",
+      "claim": "Narrow, specific glycan profiles enable the sophisticated intercellular interactions that underlie sex, cooperation and multicellularity.",
+      "claim_type": "EXPLICIT",
+      "source": "The ability to generate narrow, specific glycan profiles would have been advantageous to early eukaryotes (Wetzel et al., 2018), enabling the sophisticated intercellular interactions that underlie sex, cooperation and multicellularity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about the evolutionary advantages of controlled glycan synthesis.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:09:40.396977Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "44fc8c07-7b96-4cb3-9686-2d63d9cd12d2",
+      "content_id": "a048f8d3-fa2e-4e4e-988a-29dbb74d341f",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The manuscript establishes foundational knowledge about glycan structure and function. Glycans are branched sugar oligomers attached to cell-surface proteins and lipids, synthesized in an assembly-line fashion in the Golgi apparatus by glycosyltransferase (GTase) enzymes. They encode cell identity and mediate intercellular interactions critical for development, species recognition, and host-pathogen coevolution.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C3, C9-C13 present well-established background knowledge about glycan structure, biosynthesis, and function, supported by appropriate citations to the literature. These claims provide necessary context but do not represent novel findings of this work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:09:40.396977Z"
+    },
+    {
+      "id": "7afa755c-9b8a-4abd-b86b-35dc94848f3b",
+      "content_id": "a048f8d3-fa2e-4e4e-988a-29dbb74d341f",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "GTase enzymes exhibit promiscuity and stochasticity, acting on multiple oligomer types despite chemical precision. This creates potential for enormous variability, as seen in prokaryotic glycans. However, eukaryotic glycoproteins maintain narrow, specific glycan profiles. The pigeonhole principle dictates that individual GTase enzymes must be promiscuous since there are far fewer enzymes than observed glycan oligomers, and conserved enzymes are found across species with distinct glycans.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4-C5, C14-C16, C24-C25, C42-C47 establish the paradox that motivates the study: promiscuous enzymes should create high variability, yet eukaryotic glycans show controlled specificity. The pigeonhole principle argument (C44) is logically sound given the cited evidence about enzyme-to-oligomer ratios. This sets up the central question addressed by the mathematical analysis.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:09:40.396977Z"
+    },
+    {
+      "id": "53e5d34b-d126-4761-bf44-1470115479aa",
+      "content_id": "a048f8d3-fa2e-4e4e-988a-29dbb74d341f",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The manuscript defines three classes of GTase enzymes based on promiscuity levels: context-free enzymes (maximally promiscuous, recognizing single monomers), ideal branch-sensitive enzymes (intermediate promiscuity, recognizing acceptor monomers with specific branches), and ideal root-sensitive enzymes (minimally promiscuous, recognizing acceptor monomers linked to specific root chains).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C17-C19, C48-C50 establish a classification system for enzyme promiscuity that is central to the mathematical framework. The examples (Fut2, GTB, \u03b24GalNT1) are cited from the literature, and the classification scheme is clearly defined and logically consistent.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:09:40.396977Z"
+    },
+    {
+      "id": "e64aef90-dbf6-48cb-94d6-aa06e445753f",
+      "content_id": "a048f8d3-fa2e-4e4e-988a-29dbb74d341f",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The manuscript describes the mechanistic basis of glycan synthesis in the Golgi. O-glycan synthesis begins with root monomer attachment to serine/threonine residues. The Golgi consists of ordered, compositionally distinct compartments containing specific GTase enzyme sets. Oligomers encounter enzymes stochastically as a Markov process, and reactions are irreversible since O-glycans are not pruned.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C41, C51-C53 describe established mechanisms of Golgi function and glycan biosynthesis, supported by appropriate citations. The Markov process modeling assumption (C52) is standard for stochastic chemical reactions and appropriately cited (Gillespie, 1977). These provide the biological foundation for the mathematical model.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:09:40.396977Z"
+    },
+    {
+      "id": "cdb50bba-4ff5-4092-94ff-e255ed9805f2",
+      "content_id": "a048f8d3-fa2e-4e4e-988a-29dbb74d341f",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The manuscript rigorously identifies three sources of glycan variability in assembly-line reactions: truncated reactions (producing intermediate oligomers when residence time is insufficient), runaway reactions (producing tandem repeats when linkage networks contain loops), and divergent reactions (producing mutually exclusive fates when enzyme actions create acceptor blocks). Each pattern corresponds to specific enzymatic causes and has been observed in real glycan datasets.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54-C66 present the core mathematical analysis identifying sources of variability. The three-way classification is proven in Appendix 2 (C54), and each type is rigorously connected to enzymatic causes through mathematical lemmas. The correspondence to real datasets (C55, Figure 2) provides empirical validation. The mathematical reasoning appears sound and the proofs are referenced appropriately.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:09:40.396977Z"
+    },
+    {
+      "id": "dacad6db-7a6d-4dc2-ac22-8343983a8f35",
+      "content_id": "a048f8d3-fa2e-4e4e-988a-29dbb74d341f",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Variability can be systematically eliminated by: (1) requiring high enzyme concentrations to eliminate truncated reactions, (2) removing enzymes involved in linkage loops to eliminate runaway reactions, and (3) removing enzymes involved in acceptor blocks to eliminate divergent reactions. This creates an 'algorithmic compartment' that specifically synthesizes a unique output for each input.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C67-C69 present constructive solutions to eliminate each source of variability, proven in Appendix 2, Lemma 3. The concept of an 'algorithmic compartment' is well-defined and follows logically from the elimination of all three variability sources. This represents a key theoretical contribution.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:09:40.396977Z"
+    },
+    {
+      "id": "b0dc18e6-9b93-4629-a22c-4f96bb561ac9",
+      "content_id": "a048f8d3-fa2e-4e4e-988a-29dbb74d341f",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Theorem 1 establishes that a target oligomer can be specifically synthesized from an input if and only if it can be synthesized in a series of single-enzyme compartments. For ideal root-sensitive enzymes, a single compartment always suffices since every growth order is algorithmic.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C70 and C72 present the main theoretical results (Theorems 1 and 2, Lemma 4). These are proven in Appendix 2 and provide rigorous mathematical foundations for understanding compartmentalization requirements. The theorems are clearly stated and the proofs are referenced. This is the central mathematical contribution of the work.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:09:40.396977Z"
+    },
+    {
+      "id": "b210cc0e-0a1b-4164-9740-31a4b0ff2baa",
+      "content_id": "a048f8d3-fa2e-4e4e-988a-29dbb74d341f",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The main finding: cells can specifically synthesize a larger repertoire of glycan oligomers by partitioning promiscuous enzymes across multiple Golgi compartments. Ideal root-sensitive enzymes can synthesize any product in a single compartment, while more promiscuous branch-sensitive and context-free enzymes require multiple compartments. To synthesize oligomers without byproducts, cells must either decrease enzyme promiscuity or increase compartment number.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C22-C23, C76-C77 state the central conclusion demonstrated through mathematical theorems. The result is rigorously proven and illustrated in Figures 1D and 4. The trade-off between enzyme promiscuity and compartment number is a logical consequence of the mathematical framework and represents the key biological insight.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:09:40.396977Z"
+    },
+    {
+      "id": "7b2667c8-d493-443f-98ca-d5f3b9afa489",
+      "content_id": "a048f8d3-fa2e-4e4e-988a-29dbb74d341f",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Glycan microheterogeneity becomes unavoidable when the number of compartments is limited or enzymes are excessively promiscuous. Some oligomers can never be synthesized without byproducts regardless of compartment number.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7-C8, C73 present fundamental limits on controlled glycan synthesis derived from the mathematical analysis. These follow logically from the theorems about compartmentalization requirements and represent important constraints on biological glycan synthesis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:09:40.396977Z"
+    },
+    {
+      "id": "7c972215-9601-485f-9ad1-512b5cd123be",
+      "content_id": "a048f8d3-fa2e-4e4e-988a-29dbb74d341f",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Using the blood group B-antigen synthesis as an example, the manuscript demonstrates that increased enzyme promiscuity leads to tandem repeat byproducts when enzymes are in a single compartment, but specific synthesis is restored when promiscuous Fut2 and GTB enzymes are placed in separate compartments.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C20-C21, C31-C33 provide a concrete biological example (Figure 1C) illustrating the theoretical principles. The B-antigen synthesis is well-characterized (cited), and the hypothetical promiscuous versions demonstrate the compartmentalization principle. This effectively bridges theory and biology.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:09:40.396977Z"
+    },
+    {
+      "id": "34f9ef4a-ea19-4784-9fff-263a0d0b6fe9",
+      "content_id": "a048f8d3-fa2e-4e4e-988a-29dbb74d341f",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Specific glycan profiles are functionally relevant, being associated with distinct species, individuals (e.g., ABO blood groups), and cell types. Altered glycan profiles are implicated in various disorders.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26-C29 establish the biological importance of controlled glycan synthesis through multiple literature citations. This provides motivation for understanding control mechanisms but does not represent novel findings of this work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:09:40.396977Z"
+    },
+    {
+      "id": "60b8420c-6552-4082-bae3-bea6f5547c05",
+      "content_id": "a048f8d3-fa2e-4e4e-988a-29dbb74d341f",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Prior simulations suggested enzyme localization plays a key role in controlling variability. The manuscript argues that having multiple compartments is crucial for limiting glycan variability in real cells, given that most GTases are promiscuous. This represents a trade-off since maintaining distinct compartments requires extensive membrane traffic machinery.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30, C78-C82 discuss the biological context and trade-offs. The argument about compartment necessity (C82) follows logically from the mathematical results combined with empirical observations about enzyme promiscuity (C80-C81, cited). The trade-off discussion (C78-C79) is conceptually sound.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:09:40.396977Z"
+    },
+    {
+      "id": "30bba522-e28b-4c59-8de4-7cb42e8ad6ae",
+      "content_id": "a048f8d3-fa2e-4e4e-988a-29dbb74d341f",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The manuscript proposes biological implications: enzyme redistribution within the Golgi could enable cell-type-specific glycan profiles, explain rapid glycan changes during infection/inflammation, facilitate evolutionary adaptation, but also means localization errors could be pathological (as in tumor invasiveness and congenital glycosylation disorders).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C83-C88 present speculative biological implications. While C83 is supported by citations and follows from the theory, C84-C85 are explicitly speculative (C85 uses 'could facilitate'). C86-C88 cite correlations between localization errors and disease but do not establish causation. These represent plausible hypotheses requiring experimental validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:09:40.396977Z"
+    },
+    {
+      "id": "bf0a6c6a-df18-4e54-b39e-7622b62f668d",
+      "content_id": "a048f8d3-fa2e-4e4e-988a-29dbb74d341f",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The manuscript concludes that compartmental organization of the Golgi allows control of glycan synthesis despite enzymatic promiscuity, potentially explaining why the Golgi is universally conserved across eukaryotes. The ability to generate specific glycan profiles would have enabled sophisticated intercellular interactions underlying sex, cooperation, and multicellularity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C74, C89-C92 present broad evolutionary interpretations. While C90 (Golgi conservation) is cited, the causal connection to glycan control (C89) is speculative ('potentially explaining'). The evolutionary advantages (C91-C92) are plausible but speculative. These represent interesting hypotheses but go beyond what the mathematical analysis directly demonstrates.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:09:40.396977Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "9f03dde3-d214-482b-a05d-76b80531ac13",
+      "result_id": "44fc8c07-7b96-4cb3-9686-2d63d9cd12d2"
+    },
+    {
+      "claim_id": "45675d63-1325-45c9-9612-0ccef1c99507",
+      "result_id": "44fc8c07-7b96-4cb3-9686-2d63d9cd12d2"
+    },
+    {
+      "claim_id": "6a05617f-4336-4bf9-aed1-335a15212308",
+      "result_id": "44fc8c07-7b96-4cb3-9686-2d63d9cd12d2"
+    },
+    {
+      "claim_id": "593fc38b-c168-42f7-9ed7-fbccb54e7d3b",
+      "result_id": "44fc8c07-7b96-4cb3-9686-2d63d9cd12d2"
+    },
+    {
+      "claim_id": "c1c75776-a45a-446b-9ca2-428815643247",
+      "result_id": "44fc8c07-7b96-4cb3-9686-2d63d9cd12d2"
+    },
+    {
+      "claim_id": "18faeabb-7a89-4279-bbfe-9db3db2d0cf0",
+      "result_id": "44fc8c07-7b96-4cb3-9686-2d63d9cd12d2"
+    },
+    {
+      "claim_id": "e97dbb06-81a9-41c8-bbd8-2dd15042761c",
+      "result_id": "44fc8c07-7b96-4cb3-9686-2d63d9cd12d2"
+    },
+    {
+      "claim_id": "0c2d6f2f-b991-48c2-9ed3-3c08f24b9673",
+      "result_id": "44fc8c07-7b96-4cb3-9686-2d63d9cd12d2"
+    },
+    {
+      "claim_id": "5131150a-b47f-40f4-97df-e2fbba954565",
+      "result_id": "7afa755c-9b8a-4abd-b86b-35dc94848f3b"
+    },
+    {
+      "claim_id": "81d464b0-62d8-456d-bbdf-31ade1f44555",
+      "result_id": "7afa755c-9b8a-4abd-b86b-35dc94848f3b"
+    },
+    {
+      "claim_id": "ada9466b-fcf6-4bce-b545-be1b33bf5393",
+      "result_id": "7afa755c-9b8a-4abd-b86b-35dc94848f3b"
+    },
+    {
+      "claim_id": "dd738c33-e43c-4974-bca8-98e23541df0c",
+      "result_id": "7afa755c-9b8a-4abd-b86b-35dc94848f3b"
+    },
+    {
+      "claim_id": "94ed40e5-d4f2-42f6-b4a0-5e35171be8b9",
+      "result_id": "7afa755c-9b8a-4abd-b86b-35dc94848f3b"
+    },
+    {
+      "claim_id": "6f83adb1-adaa-4521-b14c-256d59df316f",
+      "result_id": "7afa755c-9b8a-4abd-b86b-35dc94848f3b"
+    },
+    {
+      "claim_id": "af1a1b12-02aa-4d7d-96b6-5e2d79adb6e4",
+      "result_id": "7afa755c-9b8a-4abd-b86b-35dc94848f3b"
+    },
+    {
+      "claim_id": "9255f609-66ae-456a-91c5-dca8eda3f311",
+      "result_id": "7afa755c-9b8a-4abd-b86b-35dc94848f3b"
+    },
+    {
+      "claim_id": "d789a3af-bac9-473d-9b13-c826251f3e09",
+      "result_id": "7afa755c-9b8a-4abd-b86b-35dc94848f3b"
+    },
+    {
+      "claim_id": "186a2913-06fa-4397-91ed-a56765082e58",
+      "result_id": "7afa755c-9b8a-4abd-b86b-35dc94848f3b"
+    },
+    {
+      "claim_id": "9043fa32-e528-43ee-b138-0b3fe020e45c",
+      "result_id": "7afa755c-9b8a-4abd-b86b-35dc94848f3b"
+    },
+    {
+      "claim_id": "e82778bf-2fcd-47f9-b2a2-c8ae01ba1df4",
+      "result_id": "7afa755c-9b8a-4abd-b86b-35dc94848f3b"
+    },
+    {
+      "claim_id": "36098c8e-42e4-4555-bd3f-b53888361848",
+      "result_id": "7afa755c-9b8a-4abd-b86b-35dc94848f3b"
+    },
+    {
+      "claim_id": "e0183aaf-b7d4-4736-95ae-aa2a28df6bb9",
+      "result_id": "53e5d34b-d126-4761-bf44-1470115479aa"
+    },
+    {
+      "claim_id": "5143ea41-199c-46b9-82e6-8d27e59e60be",
+      "result_id": "53e5d34b-d126-4761-bf44-1470115479aa"
+    },
+    {
+      "claim_id": "94a8617b-882c-4dc4-a274-7e6630996d73",
+      "result_id": "53e5d34b-d126-4761-bf44-1470115479aa"
+    },
+    {
+      "claim_id": "346b9f6f-5982-4310-ab8a-4136c740a110",
+      "result_id": "53e5d34b-d126-4761-bf44-1470115479aa"
+    },
+    {
+      "claim_id": "a8b2add0-04bb-4f72-ab5f-242c53317dfc",
+      "result_id": "53e5d34b-d126-4761-bf44-1470115479aa"
+    },
+    {
+      "claim_id": "42fc3182-b525-432d-9113-9c1657b2bba0",
+      "result_id": "53e5d34b-d126-4761-bf44-1470115479aa"
+    },
+    {
+      "claim_id": "8fac3491-4aac-4253-b365-c3b6c76ad077",
+      "result_id": "e64aef90-dbf6-48cb-94d6-aa06e445753f"
+    },
+    {
+      "claim_id": "5fb6e866-5651-4e4a-866d-eadc06476d6d",
+      "result_id": "e64aef90-dbf6-48cb-94d6-aa06e445753f"
+    },
+    {
+      "claim_id": "3e8d0077-5a7a-4c54-89e0-8fab52970d30",
+      "result_id": "e64aef90-dbf6-48cb-94d6-aa06e445753f"
+    },
+    {
+      "claim_id": "10f85f21-fce2-4110-ab16-e2d43fa694bf",
+      "result_id": "e64aef90-dbf6-48cb-94d6-aa06e445753f"
+    },
+    {
+      "claim_id": "cd3de72c-4c4f-44e0-9c13-ba32af6a4ccf",
+      "result_id": "e64aef90-dbf6-48cb-94d6-aa06e445753f"
+    },
+    {
+      "claim_id": "896dad36-2746-40bd-8c4e-b0031a0d5265",
+      "result_id": "e64aef90-dbf6-48cb-94d6-aa06e445753f"
+    },
+    {
+      "claim_id": "d6c7e958-c891-4d90-acc0-a82b638d15ff",
+      "result_id": "e64aef90-dbf6-48cb-94d6-aa06e445753f"
+    },
+    {
+      "claim_id": "e4d1ded6-6d28-41a8-9857-434d079ccf43",
+      "result_id": "e64aef90-dbf6-48cb-94d6-aa06e445753f"
+    },
+    {
+      "claim_id": "a96b0f4c-e42c-47a0-9120-cb1cc546ea50",
+      "result_id": "e64aef90-dbf6-48cb-94d6-aa06e445753f"
+    },
+    {
+      "claim_id": "ed2fa2cc-001e-49ec-af69-a09120e6691b",
+      "result_id": "e64aef90-dbf6-48cb-94d6-aa06e445753f"
+    },
+    {
+      "claim_id": "7c62b27a-880a-4565-b136-c75679e3842a",
+      "result_id": "e64aef90-dbf6-48cb-94d6-aa06e445753f"
+    },
+    {
+      "claim_id": "807aff61-c0eb-4350-99e1-5d1ab33e2da9",
+      "result_id": "cdb50bba-4ff5-4092-94ff-e255ed9805f2"
+    },
+    {
+      "claim_id": "7866505c-a37f-407d-8972-e6c0705cb3f1",
+      "result_id": "cdb50bba-4ff5-4092-94ff-e255ed9805f2"
+    },
+    {
+      "claim_id": "60424eb2-3668-46d0-ae9b-4a92b4d58c66",
+      "result_id": "cdb50bba-4ff5-4092-94ff-e255ed9805f2"
+    },
+    {
+      "claim_id": "3929edb4-53f6-4336-b192-7f4d24ba9a3c",
+      "result_id": "cdb50bba-4ff5-4092-94ff-e255ed9805f2"
+    },
+    {
+      "claim_id": "548d1679-e459-4d49-985d-514b155fd88b",
+      "result_id": "cdb50bba-4ff5-4092-94ff-e255ed9805f2"
+    },
+    {
+      "claim_id": "f9a3dadb-0ffd-445a-932b-958599dee9a3",
+      "result_id": "cdb50bba-4ff5-4092-94ff-e255ed9805f2"
+    },
+    {
+      "claim_id": "85b24c11-d4d3-40cf-8737-b18785f65ac3",
+      "result_id": "cdb50bba-4ff5-4092-94ff-e255ed9805f2"
+    },
+    {
+      "claim_id": "93d605d8-8ff0-4d96-9da4-99317f2b3172",
+      "result_id": "cdb50bba-4ff5-4092-94ff-e255ed9805f2"
+    },
+    {
+      "claim_id": "9bd9e0d7-1fa7-45e9-aa55-9c4d408d5f80",
+      "result_id": "cdb50bba-4ff5-4092-94ff-e255ed9805f2"
+    },
+    {
+      "claim_id": "c7d5e747-7710-4976-a5a4-6b518b9578d8",
+      "result_id": "cdb50bba-4ff5-4092-94ff-e255ed9805f2"
+    },
+    {
+      "claim_id": "982c0976-abb1-4f3b-8735-75d5ba8df4e5",
+      "result_id": "cdb50bba-4ff5-4092-94ff-e255ed9805f2"
+    },
+    {
+      "claim_id": "060dee9c-0771-427c-9c05-ac3ae98ac945",
+      "result_id": "cdb50bba-4ff5-4092-94ff-e255ed9805f2"
+    },
+    {
+      "claim_id": "2a6ee322-3e51-4eea-a81f-0bdd8e3a9334",
+      "result_id": "dacad6db-7a6d-4dc2-ac22-8343983a8f35"
+    },
+    {
+      "claim_id": "d0c928d9-2afc-4ed5-8d11-1dbe142b2679",
+      "result_id": "dacad6db-7a6d-4dc2-ac22-8343983a8f35"
+    },
+    {
+      "claim_id": "7697156b-190c-4f2c-ab0f-1876b2914a6c",
+      "result_id": "dacad6db-7a6d-4dc2-ac22-8343983a8f35"
+    },
+    {
+      "claim_id": "28e7b4c4-3180-4938-8a78-c3c2f165bb5b",
+      "result_id": "b0dc18e6-9b93-4629-a22c-4f96bb561ac9"
+    },
+    {
+      "claim_id": "7804ad84-66e4-4d06-b264-053a25553b93",
+      "result_id": "b0dc18e6-9b93-4629-a22c-4f96bb561ac9"
+    },
+    {
+      "claim_id": "19d68ba6-545e-4d5d-a9df-c2c2f638e9e9",
+      "result_id": "b210cc0e-0a1b-4164-9740-31a4b0ff2baa"
+    },
+    {
+      "claim_id": "f04bd049-3d00-4ad9-9cab-28558279eabc",
+      "result_id": "b210cc0e-0a1b-4164-9740-31a4b0ff2baa"
+    },
+    {
+      "claim_id": "562c51f5-0684-456b-a9a7-60eeb3ab96bb",
+      "result_id": "b210cc0e-0a1b-4164-9740-31a4b0ff2baa"
+    },
+    {
+      "claim_id": "e6ed12a2-33c2-4233-aa06-3bf96e35a6a9",
+      "result_id": "b210cc0e-0a1b-4164-9740-31a4b0ff2baa"
+    },
+    {
+      "claim_id": "d71e2d65-a5da-40b1-92e6-545a4d803feb",
+      "result_id": "b210cc0e-0a1b-4164-9740-31a4b0ff2baa"
+    },
+    {
+      "claim_id": "68640de4-8fd6-450e-95a5-19461fb9c16a",
+      "result_id": "7b2667c8-d493-443f-98ca-d5f3b9afa489"
+    },
+    {
+      "claim_id": "ec238469-8101-41af-8758-08503fd7fe13",
+      "result_id": "7b2667c8-d493-443f-98ca-d5f3b9afa489"
+    },
+    {
+      "claim_id": "aeec252a-3de1-4ec9-89f8-469bfd99ba58",
+      "result_id": "7b2667c8-d493-443f-98ca-d5f3b9afa489"
+    },
+    {
+      "claim_id": "5c9f2c64-47a9-4c3f-85ee-fc57ed547342",
+      "result_id": "7c972215-9601-485f-9ad1-512b5cd123be"
+    },
+    {
+      "claim_id": "22c790c4-3e15-49f7-a13f-991e450ada4e",
+      "result_id": "7c972215-9601-485f-9ad1-512b5cd123be"
+    },
+    {
+      "claim_id": "4cc75832-9ab1-4f0a-88fb-8bb30d962dfc",
+      "result_id": "7c972215-9601-485f-9ad1-512b5cd123be"
+    },
+    {
+      "claim_id": "ec4f34b3-0da2-44c3-9a74-cf97cbf265f4",
+      "result_id": "7c972215-9601-485f-9ad1-512b5cd123be"
+    },
+    {
+      "claim_id": "6b92c3f1-4bda-49da-9859-6783688822e6",
+      "result_id": "7c972215-9601-485f-9ad1-512b5cd123be"
+    },
+    {
+      "claim_id": "2f7dd035-74c1-447e-a4e7-93d241fa6380",
+      "result_id": "34f9ef4a-ea19-4784-9fff-263a0d0b6fe9"
+    },
+    {
+      "claim_id": "dfd4efa9-56f0-4fb1-81ca-1056bd5d0c77",
+      "result_id": "34f9ef4a-ea19-4784-9fff-263a0d0b6fe9"
+    },
+    {
+      "claim_id": "bd011579-7fad-4d33-a463-31eb63a3d13f",
+      "result_id": "34f9ef4a-ea19-4784-9fff-263a0d0b6fe9"
+    },
+    {
+      "claim_id": "c5a3fc79-bd25-4b6c-8089-6fde8bf479f1",
+      "result_id": "34f9ef4a-ea19-4784-9fff-263a0d0b6fe9"
+    },
+    {
+      "claim_id": "4a066bae-a86b-4187-a6c9-c50669951c8d",
+      "result_id": "60b8420c-6552-4082-bae3-bea6f5547c05"
+    },
+    {
+      "claim_id": "9832e5ac-3e77-4cd0-b1e9-5c03bd7c095f",
+      "result_id": "60b8420c-6552-4082-bae3-bea6f5547c05"
+    },
+    {
+      "claim_id": "d1193205-f6ee-4217-8aa2-c209897698da",
+      "result_id": "60b8420c-6552-4082-bae3-bea6f5547c05"
+    },
+    {
+      "claim_id": "a2343bd5-6166-49d7-89ba-6ff478187682",
+      "result_id": "60b8420c-6552-4082-bae3-bea6f5547c05"
+    },
+    {
+      "claim_id": "51b3b184-be85-478d-b9a5-79e850a93b26",
+      "result_id": "60b8420c-6552-4082-bae3-bea6f5547c05"
+    },
+    {
+      "claim_id": "747c1ff4-b795-453c-8fc1-0da2ec977162",
+      "result_id": "60b8420c-6552-4082-bae3-bea6f5547c05"
+    },
+    {
+      "claim_id": "6d0fdabb-c7f4-4490-b6ef-435da8755ce1",
+      "result_id": "30bba522-e28b-4c59-8de4-7cb42e8ad6ae"
+    },
+    {
+      "claim_id": "4937c565-2367-4745-b8be-ba0ca83ab10b",
+      "result_id": "30bba522-e28b-4c59-8de4-7cb42e8ad6ae"
+    },
+    {
+      "claim_id": "f49a0910-64dd-4867-aa56-e80c8030ff81",
+      "result_id": "30bba522-e28b-4c59-8de4-7cb42e8ad6ae"
+    },
+    {
+      "claim_id": "e346b04d-c147-4660-ae89-173182d70089",
+      "result_id": "30bba522-e28b-4c59-8de4-7cb42e8ad6ae"
+    },
+    {
+      "claim_id": "5801d48c-4e05-41ac-94ae-8446e5424ca9",
+      "result_id": "30bba522-e28b-4c59-8de4-7cb42e8ad6ae"
+    },
+    {
+      "claim_id": "05dd8179-e663-40db-84ce-651b7f54c528",
+      "result_id": "30bba522-e28b-4c59-8de4-7cb42e8ad6ae"
+    },
+    {
+      "claim_id": "9b93b348-6981-4752-91d7-8941ff78fd0e",
+      "result_id": "bf0a6c6a-df18-4e54-b39e-7622b62f668d"
+    },
+    {
+      "claim_id": "2c25d099-6399-42ff-8423-3df1f841ee5e",
+      "result_id": "bf0a6c6a-df18-4e54-b39e-7622b62f668d"
+    },
+    {
+      "claim_id": "0103eefb-7c1e-4fb7-9630-03ca4f5e631b",
+      "result_id": "bf0a6c6a-df18-4e54-b39e-7622b62f668d"
+    },
+    {
+      "claim_id": "14ea004a-9d60-4917-a16d-7661e040e740",
+      "result_id": "bf0a6c6a-df18-4e54-b39e-7622b62f668d"
+    },
+    {
+      "claim_id": "36b3717e-843c-46fd-acfc-62eb8ce8683d",
+      "result_id": "bf0a6c6a-df18-4e54-b39e-7622b62f668d"
+    }
+  ],
+  "comparisons": []
+}

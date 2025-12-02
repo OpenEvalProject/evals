@@ -1,0 +1,336 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "The study validated cell-type-specific expression of GFP-tagged ribosomes in different Cre driver lines. CamKIIa and PV Cre drivers showed specific neuronal expression, while GFAP and Cx3cr1CreER drivers showed predominantly astrocytic and microglial expression, respectively, with some known limitations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C16 are supported by immunofluorescence data (Figure 1) and citations to prior characterization studies. The authors appropriately acknowledge known limitations of the Cre lines (e.g., minor neuronal expression in GFAP line, macrophage expression in Cx3cr1CreER line) and demonstrate Cre-dependent GFP expression (C13).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C65",
+      "C66",
+      "C70"
+    ],
+    "result": "Terminal prion disease mice showed marked increases in glial markers (GFAP, IBA-1) but no clear changes in neuronal markers (NeuN, CamKIIa, PV), indicating pronounced gliosis without substantial neuronal loss at the terminal stage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C19, C65-C66, and C70 are consistently supported by immunohistochemistry (Figure 1) and western blot data (Figure 6g). The findings are internally consistent across multiple assays and brain regions, though the authors acknowledge this may reflect the early endpoint required by animal welfare regulations (C71).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "Ribosome profiling libraries showed high quality metrics with 5-10 million unique reads per library, low ribosomal RNA contamination (\u226410%), and predominantly coding sequence reads, with terminal disease samples indistinguishable from controls in quality.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C24 are supported by quality control data in Figure 2 and supplementary files. The metrics are appropriate for ribosome profiling and demonstrate technical consistency across samples, including those from diseased animals.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C25",
+      "C26"
+    ],
+    "result": "Principal component analysis and hierarchical clustering revealed segregation of different cell types, with Cre-negative samples most similar to GFAP samples, consistent with astrocytes being highly abundant in the CNS.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C26 are supported by PCA and clustering data (Figure 2c-d). The interpretation that Cre-negative samples resemble GFAP samples due to astrocyte abundance is reasonable and supported by citation (Miller, 2018).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Cell-type-specific ribosome profiling successfully captured the expected cell populations, as validated by comparison with published cell-type markers from bulk and single-cell RNA sequencing studies. The study identified 2,692 preferentially translated genes across five cell populations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C31 are supported by systematic comparison with published datasets (Zhang et al., 2014; Hrvatin et al., 2018) shown in Figure 3 and supplementary files. The validation approach is rigorous and demonstrates that the method captured the intended cell types.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C32"
+    ],
+    "result": "Ribosome profiling (RP) and RiboTag (RT) datasets showed overall high correlation for each cell type, though some genes deviated from the linear relationship, potentially reflecting differences in translation rates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C32 is supported by correlation analysis in Figure 3d and Figure 3\u2014figure supplement 3a. The observation of deviations is appropriately interpreted as potentially reflecting biological differences in translation efficiency, which is the key advantage of ribosome profiling over RiboTag.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Prion-induced translational changes became evident only at late disease stages (24 weeks post-inoculation and terminal), with the most pronounced changes in GFAP+ and Cx3cr1+ cells. Changes at 24 wpi showed high overlap with terminal changes, indicating alterations begin 2 months before terminal disease.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C37 are supported by differential expression analysis across time points (Figure 4a) and correlation analysis between time points (Figure 4b-c). The temporal progression is clearly demonstrated, though the claim that changes occur \"long before any PrD-related symptoms manifest\" (C37) may be overstated as symptom onset timing is not explicitly documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C81",
+      "C82"
+    ],
+    "result": "Previously identified disease-associated signatures increased during prion disease progression, including A1 and A2 astrocyte signatures and disease-associated microglia (DAM) genes, while homeostatic microglia markers decreased. These patterns are consistent with other neurodegenerative diseases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C42 and C81-C82 are supported by analysis of known gene signatures (Figure 4d-e) and comparison with published literature (Keren-Shaul et al., 2017; Liddelow et al., 2017). The findings validate the model and demonstrate consistency with broader neurodegenerative disease biology.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Neuronal cell types (CamKIIa and PV neurons) displayed very few translational changes even at terminal disease, in stark contrast to extensive glial alterations. Some neuronal changes at 24 wpi may reflect glial contamination, though a few genes (Sik1, Cyp2s1, Oprm1) showed genuine neuronal changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C3, C43-C45 are supported by differential expression analysis (Figure 4a, Figure 4\u2014figure supplement 3). The interpretation of potential glial contamination (C44) is appropriately cautious, and the authors acknowledge that even few changes might be functionally significant (C45), though this remains speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C46",
+      "C47"
+    ],
+    "result": "Five genes (Gfap, Serpina3n, Apod, Mt1, Lgals3bp) showed increased translation in all analyzed cell types, but these are highly translated in astrocytes/microglia, indicating the neuronal changes likely reflect contamination from pronounced gliosis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C47 are supported by analysis in Figure 5\u2014figure supplement 1b. The interpretation that these represent contamination rather than genuine pan-cellular changes is reasonable given the cell-type enrichment patterns and the known gliosis in the model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C48",
+      "C49"
+    ],
+    "result": "Pronounced regional differences in translation were detected within CamKIIa neurons, with cortical and hippocampal changes showing no correlation and sharing only one gene (besides common contaminating genes).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C49 are supported by comparison data in Figure 5d. This finding highlights the regional heterogeneity of disease effects and demonstrates the value of analyzing specific brain regions separately.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Most prion-induced changes were cell-type-specific, but 170 genes changed in both glia types. Gene ontology analysis revealed immune response enrichment in increasing genes across glia types, while decreasing genes were enriched for sterol/cholesterol biosynthesis in astrocytes and synaptic transmission in microglia.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C53 are supported by comparative analysis (Figure 5e) and gene ontology analysis (Figure 5f, Supplementary file 10). The functional enrichments provide biological insight into cell-type-specific disease mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C54",
+      "C55"
+    ],
+    "result": "Many microglia-specific decreasing genes were strongly enriched in neuronal cell types, indicating these changes are likely an artifact reflecting increased microglia relative to neurons rather than genuine downregulation in microglia.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C55 are supported by analysis in Figure 5\u2014figure supplement 1c showing negative correlation between microglia translational changes and neuronal enrichment. This is an important methodological insight that appropriately identifies a technical artifact arising from cell composition changes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C69"
+    ],
+    "result": "Cell-type-specific ribosome profiling identified ~1,500 novel genes with prion disease-dependent translational changes that were missed by conventional RNAseq of brain regions. Many RNAseq changes reflected microglia proliferation rather than cellular-level gene expression changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C59 and C69 are supported by comparison between ribosome profiling and RNAseq datasets (Figure 6, Figure 6\u2014figure supplement 1). The analysis clearly demonstrates the added value of cell-type-specific approaches and appropriately distinguishes between cell number changes and per-cell expression changes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Glul showed no change in cell-type-specific translation or protein expression, while Gfap showed strong increases in both translation and protein levels across all cell types, indicating astrocyte number remains constant while Gfap is upregulated per cell during prion disease.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C62 are supported by ribosome profiling data (Figure 6e) and western blot validation (Figure 6f). The inference about constant astrocyte numbers (C62) is reasonable based on the differential behavior of Glul (a general astrocyte marker) versus Gfap (a reactive marker).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C63",
+      "C64"
+    ],
+    "result": "IBA1 and MMP9 protein levels increased despite no change (Aif1) or decreased (Mmp9) translation in microglia, indicating that microglia proliferation accounts for increased protein levels and masks cell-specific translational decreases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C64 are supported by ribosome profiling (Figure 6e) and western blot data (Figure 6f). This demonstrates how bulk tissue analysis can be misleading when cell numbers change, validating the need for cell-type-specific approaches.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C67",
+      "C68"
+    ],
+    "result": "GFP levels remained constant in GFAP Cre/Rpl10a:GFP mice but increased in Cx3cr1 Cre/Rpl10a:GFP mice, consistent with stable astrocyte numbers but increased microglia numbers during disease.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C68 are supported by western blot data (Figure 6\u2014figure supplement 2b-c). These findings validate the interpretation that observed changes reflect cellular composition differences and demonstrate that the GFAP promoter activity increase does not cause additional Cre recombination.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C5",
+      "C72",
+      "C73"
+    ],
+    "result": "The authors propose that aberrant translation within glia may suffice to cause severe neurological symptoms and may be the primary driver of prion disease, though they acknowledge alternative explanations including that few neuronal changes might be sufficient or that changes in neuronal connectivity may escape detection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C5, C72, and C73 represent speculative interpretations of the data. While the extensive glial changes and minimal neuronal changes are well-documented, the causal relationship between these observations and neurological symptoms is not directly tested. The authors appropriately present these as possibilities rather than established facts, but definitive evidence would require functional manipulation experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C71"
+    ],
+    "result": "The difference in neuronal loss between mice and humans likely reflects differences in disease stage, as mice must be euthanized at an earlier endpoint due to animal welfare regulations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C71 is speculative and not directly testable given regulatory constraints. While the reasoning is plausible, the authors cannot definitively establish whether mice would eventually show neuronal loss comparable to humans if allowed to progress further. This represents a limitation of the model rather than a supported conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "The prion disease model used in this study showed different UPR marker expression compared to PrP-overexpressing models, with no differential translation of Actb, Snap25, Psd95, or Chop, only microglia showing increased Atf4 translation, and astrocytes showing increased Gadd34 translation. This reduced UPR activation might contribute to less pronounced neurodegeneration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C80 are supported by comparison with published literature (Moreno et al., 2012; Smith et al., 2020) and the current ribosome profiling data. The interpretation that reduced UPR activation contributes to less neurodegeneration (C80) is speculative but reasonable given the comparative data. This highlights important model differences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C83",
+      "C84"
+    ],
+    "result": "A1-astrocyte ablation accelerated prion disease progression in prior studies, suggesting A1 astrocytes may be neuroprotective in prion disease. Combined with increased A2 genes and Gadd34 in astrocytes, this suggests astrocytes might play a central role in limiting prion toxicity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C84 are supported by citations (Liddelow et al., 2017; Hartmann et al., 2019) and the current data showing increased A2 and Gadd34 in astrocytes. The inference about astrocyte neuroprotection (C84) is reasonable but represents an interpretation rather than direct demonstration.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C4",
+      "C42"
+    ],
+    "result": "Prion-induced alterations in glia overlapped with those identified in other neurodegenerative diseases, including disease-associated microglia and reactive astrocyte signatures, suggesting similar events occur across a broad spectrum of pathologies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4 and C42 are supported by comparison with published signatures from other neurodegenerative diseases (Keren-Shaul et al., 2017; Liddelow et al., 2017). This demonstrates the translational relevance of prion disease models for understanding broader neurodegenerative mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "The experimental design involved intraperitoneal injection of RML6 prions (8.02 log LD50/ml) into 11-week-old mice, with terminal disease mice sacrificed upon clear neurological signs at 42-43 weeks of age (31-32 weeks post-inoculation).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C87 describe the experimental procedures and are supported by the Methods section. These details are clearly documented and appropriate for the study design.",
+    "result_type": "MINOR"
+  }
+]

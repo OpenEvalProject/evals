@@ -1,0 +1,2111 @@
+{
+  "submission": {
+    "id": "5f00670f-824c-40c7-80c1-7e680d6c6c57",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T14:38:02.158377Z",
+    "updated_at": "2025-12-02T14:38:02.158377Z"
+  },
+  "content": [
+    {
+      "id": "c6ce9186-a758-4b08-b334-6076dae96782",
+      "submission_id": "5f00670f-824c-40c7-80c1-7e680d6c6c57",
+      "content_type": "manuscript",
+      "content_text": "# Transcriptional adaptation in Caenorhabditis elegans\n\n## Authors\n\n- Vahan Serobyan<sup>1</sup> ([ORCID: 0000-0001-5055-8422](https://orcid.org/0000-0001-5055-8422)) \u2020\n- Zacharias Kontarakis<sup>1</sup>\n- Mohamed A El-Brolosy<sup>1</sup>\n- Jordan M Welker<sup>1</sup>\n- Oleg Tolstenkov<sup>2</sup> ([ORCID: 0000-0002-6484-9965](https://orcid.org/0000-0002-6484-9965))\n- Amr M Saadeldein<sup>1</sup> ([ORCID: 0000-0002-5971-2083](https://orcid.org/0000-0002-5971-2083))\n- Nicholas Retzer<sup>1</sup>\n- Alexander Gottschalk<sup>2</sup> ([ORCID: 0000-0002-1197-6119](https://orcid.org/0000-0002-1197-6119))\n- Ann M Wehman<sup>5</sup> ([ORCID: 0000-0001-9826-4132](https://orcid.org/0000-0001-9826-4132))\n- Didier YR Stainier<sup>1</sup> ([ORCID: 0000-0002-0382-0026](https://orcid.org/0000-0002-0382-0026)) \u2020\n\n### Affiliations\n\n1. Department of Developmental Genetics Max Planck Institute for Heart and Lung Research Bad Nauheim Germany\n2. Institute for Biophysical Chemistry Goethe University Frankfurt Am Main Germany\n3. Cluster of Excellence Frankfurt - Macromolecular Complexes (CEF-MC) Goethe University Frankfurt Am Main Germany\n4. Buchmann Institute for Molecular Life Sciences (BMLS) Goethe University Frankfurt Am Main Germany\n5. Rudolf Virchow Center University of W\u00fcrzburg W\u00fcrzburg Germany\n\n\u2020 Corresponding author\n\n## Abstract\n\nTranscriptional adaptation is a recently described phenomenon by which a mutation in one gene leads to the transcriptional modulation of related genes, termed adapting genes. At the molecular level, it has been proposed that the mutant mRNA, rather than the loss of protein function, activates this response. While several examples of transcriptional adaptation have been reported in zebrafish embryos and in mouse cell lines, it is not known whether this phenomenon is observed across metazoans. Here we report transcriptional adaptation in C. elegans, and find that this process requires factors involved in mutant mRNA decay, as in zebrafish and mouse. We further uncover a requirement for Argonaute proteins and Dicer, factors involved in small RNA maturation and transport into the nucleus. Altogether, these results provide evidence for transcriptional adaptation in C. elegans, a powerful model to further investigate underlying molecular mechanisms.\n\n## Introduction\n\nTranscriptional adaptation is the ability of certain mutations in a gene to modulate the expression of related genes, referred to as adapting genes (El-Brolosy and Stainier, 2017; El-Brolosy et al., 2019; Ma et al., 2019). At the molecular level, the mutant mRNA, rather than the loss of protein function, is responsible for this transcriptional modulation (Rossi et al., 2015; El-Brolosy and Stainier, 2017; Sztal et al., 2018; El-Brolosy et al., 2019; Ma et al., 2019). According to one model (El-Brolosy et al., 2019), the mutant mRNA, via its degradation products, modulates the expression of adapting genes via transcriptional regulators including antisense RNAs and histone modifiers. According to another model (Ma et al., 2019), the premature termination codon (PTC) containing mutant mRNA interacts with a histone modifier complex leading to transcriptional upregulation of the adapting gene(s). Sequence similarity with the mutant mRNA determines which genes get upregulated during transcriptional adaptation (El-Brolosy et al., 2019). In some cases, the upregulated genes share functionality with the mutated gene leading to functional compensation. However, while transcriptional adaptation is often discussed in the context of genetic robustness (Rossi et al., 2015; El-Brolosy et al., 2019; Ma et al., 2019), it does not always lead to functional compensation (Rossi et al., 2015). In addition, transcriptome analyses suggest that even genes with limited sequence similarity with the mutant mRNA can be upregulated during transcriptional adaptation (El-Brolosy et al., 2019), although clearly more work is required to determine whether the upregulation of these genes is a direct or indirect effect of transcriptional adaptation.\n\nUnderstanding the mechanisms of transcriptional adaptation will help us better comprehend why for a given gene some mutations cause disease while others do not (Castel et al., 2018). However, despite the importance and growing interest in many aspects of genetic compensation, transcriptional adaptation has currently only been investigated in vertebrates. Thus, it remains unclear whether this phenomenon is observed across metazoans. The evolutionary importance of related genes that have compensatory effects has also been discussed in non-vertebrate eukaryotes (Conant and Wagner, 2004; Plata and Vitkup, 2014). However, it is not known whether these examples of compensation are due to protein feedback loops or transcriptional adaptation.\n\nOnly a few factors are known to be involved in the transcriptional adaptation response thus far, and others, including some involved in RNA processing and transport, are likely required. In addition, it is not clear whether the mechanisms of transcriptional adaptation are common or whether each particular case occurs in a different manner, especially at the step leading to transcriptional modulation. Also, as different paralogs or related genes are expressed in distinct tissues and/or at different times (Laisney et al., 2010; Kryuchkova-Mostacci and Robinson-Rechavi, 2015; Radomska et al., 2016; Pasquier et al., 2017; Jojic et al., 2018), it is currently unclear whether the expression of adapting genes can appear in tissues where, and/or at times when, they are not normally expressed.\n\nIn this study, we provide examples of transcriptional adaptation in Caenorhabditis elegans and show the ectopic expression of an extrachromosomal reporter in a tissue where it is not normally expressed. In addition, we analyze these transcriptional adaptation models after RNAi-mediated knockdown of different genes involved in RNA metabolism and find that the upregulation of the adapting genes requires factors involved in the maturation and transport into the nucleus of small RNAs (sRNAs).\n\n## Results\n\n### Examples of transcriptional adaptation in C. elegans\n\nActins are essential structural components of eukaryotic cells as they mediate a wide range of cellular processes (Pollard and Cooper, 1986). Actin genes are often present in multiple copies in higher eukaryotic genomes and hints of transcriptional adaptation modulating their expression have been reported. For example, mouse embryonic fibroblasts (MEFs) mutant for \u03b2-Actin (Actb) display increased expression of other Actins including \u03b1- and \u03b3-Actin (ACTA and ACTG1/2) as measured by Western blots (Tondeleir et al., 2012). Similarly, Actg1 knockout, but not knockdown, in MEFs leads to an increase in Acta mRNA levels (Patrinostro et al., 2017), and zebrafish actc1b mutants exhibit mild muscle defects because of the transcriptional upregulation of actc1a (Sztal et al., 2018). Furthermore, Actg1 mutant MEFs and Actb mutant mouse embryonic stem cells (mESCs) display increased mRNA levels of Actg2 and Actg1, respectively, and this upregulation is triggered not by the loss of protein function but by mutant mRNA decay (El-Brolosy et al., 2019). Thus, we decided to investigate actin genes in C. elegans to test for transcriptional adaptation. The C. elegans genome contains five actin genes which display high similarity in their DNA and protein sequences (MacQueen et al., 2005). We started by analyzing several mutant alleles for act-1, act-2, act-3 and act-5, and determined mutant transcript levels. We found significantly reduced act-5 mRNA levels in act-5(dt2019) mutants compared to wild type (Figure 1A), likely caused by nonsense-mediated decay (NMD) due to a premature termination codon (ptc) in the first exon (Figure 1A, Figure 1\u2014figure supplement 1). Most mutant alleles of act-5 cause severe phenotypes including lethality (Estes et al., 2011; MacQueen et al., 2005), sterility (Cui et al., 2004), and paralysis (Etheridge et al., 2015). However, the act-5(dt2019) allele, hereafter referred to as act-5(ptc), does not exhibit any obvious phenotype (MacQueen et al., 2005), an observation we confirmed. We analyzed the mRNA levels of all actin genes in act-5(ptc) mutants (Figure 1A, Figure 1\u2014figure supplement 2), and observed the upregulation of act-3 mRNA and pre-mRNA (Figure 1B, Figure 1\u2014figure supplement 3), consistent with a transcriptional adaptation response.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/50014/elife-50014-fig1-v1.jpg)\n\n**Figure 1.:** qPCR analysis of act-5 (A) and act-3 (B) mRNA levels in WT and act-5(ptc), act-5(\u03941), and act-5(\u03942) mutants. act-3 mRNA levels are upregulated when act-5 mutant mRNA levels are reduced (i.e., only in the act-5(ptc) allele). WT expression levels are set at 1. Data are mean\u00a0\u00b1\u00a0S.E.M.; average dCt values are shown in Figure 1\u2014source data 1. Two-tailed Student\u2019s t-test was used to calculate P values.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/50014/elife-50014-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Schematic of all known act-5 isoforms and alleles used in this study. Black boxes indicate the deletion and nonsense alleles used in this study; black arrows point to the position of the qPCR primers. The act-5(ok1397) isoform was only identified in the act-5(\u03942) allele. (B) Partial sequence of act-5 (WT, ptc and \u03941 alleles). The PTC in the act-5(ptc) allele is 264 nucleotides from the next exon-intron junction and 888 nucleotides from the stop codon. Red indicates the mutation; PTC is underlined; \u2018nnn\u2019 and \u2018---\u2019 indicate deleted nucleotides in the act-5(\u03941) allele. The dt2017 deletion leads to a PTC which is located in the last exon (153 bases from the stop codon) and is thus predicted not to trigger NMD (Kashima et al., 2010; Lindeboom et al., 2016). act-5(dt2019)\u00a0=\u00a0act-5(ptc); act-5(dt2017)\u00a0=\u00a0act-5(\u03941); act-5(ok1397)\u00a0=\u00a0act-5(\u03942).\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/50014/elife-50014-fig1-figsupp2-v1.jpg)\n\n**Figure 1\u2014figure supplement 2.:** WT expression levels are set at 1. Data are mean\u00a0\u00b1\u00a0S.E.M.; average dCt values are shown in Figure 1\u2014source data 2. Two-tailed Student\u2019s t-test was used to calculate P values.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/50014/elife-50014-fig1-figsupp3-v1.jpg)\n\n**Figure 1\u2014figure supplement 3.:** (A) qPCR analysis of act-3 pre-mRNA levels in WT and act-5(ptc) mutants. (B) Average dCt values from qPCR analysis of act-3 pre-mRNA levels in WT and act-5(ptc) mutants. WT expression levels are set at 1. Data are mean\u00a0\u00b1\u00a0S.E.M.. Two-tailed Student\u2019s t-test was used to calculate P values.\n\nWe also examined the act-5(dt2017) partial deletion allele, hereafter referred to as act-5(\u03941), (Figure 1\u2014figure supplement 1) and found no significant change in act-5 mRNA levels in homozygous mutants compared to wild type (Figure 1A). Notably, act-3 mRNA levels in act-5(\u03941) mutants were not changed compared to wild type (Figure 1B). To further test whether act-3 upregulation in act-5 mutants represents a model of transcriptional adaptation, we analyzed another act-5 deletion allele (ok1397) (Estes et al., 2011), hereafter referred to as act-5(\u03942). The ok1397 deletion removes part of the promoter region and the first two exons (Figure 1\u2014figure supplement 1). We examined this allele for the presence of any transcripts and identified a new isoform which is present in mutants but not in wild type (see Materials\u00a0and\u00a0methods) and consists of only 3\u2019 sequence (Figure 1\u2014figure supplement 1). As with the act-5(\u03941) deletion allele, we found no changes in act-5 or act-3 mRNA levels in act-5(\u03942) mutants compared to wild type (Figure 1B).\n\nIn multicellular organisms, paralogous genes are often expressed in distinct spatiotemporal patterns, an indication of subfunctionalization (Guschanski et al., 2017). For example, in C. elegans, act-3 is expressed in the pharynx (Hunt-Newbury et al., 2007) while act-5 is expressed in intestinal cells (MacQueen et al., 2005). The models of transcriptional adaptation suggest a cell-autonomous mechanism, that\u00a0is the mutant mRNA can cell-autonomously trigger transcriptional adaptation. In order to test this hypothesis, we generated transcriptional reporter constructs with the act-3 or act-5 promoter region driving the expression of a red florescent protein gene (Merzlyak et al., 2007). As expected, we observed expression of the extrachromosomal act-5p::rfp transgene in the intestine in wild-type animals (Figure 2A) as well as in act-5(ptc) mutants (Figure 2\u2014figure supplement 1). Likewise, expression of the extrachromosomal act-3p::rfp transgene was only observed in the pharynx in wild-type animals (Figure 2B), consistent with previous studies (Hunt-Newbury et al., 2007). However, extrachromosomal act-3p::rfp expression was also observed in the intestine in act-5(ptc) mutants (Figure 2C), consistent with transcriptional adaptation. In summary, we saw upregulation of expression from a synthetic and extrachromosomal act-3 promoter in tissues where act-5 is expressed, supporting the model that the mutant mRNA cell-autonomously triggers transcriptional adaptation.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/50014/elife-50014-fig2-v1.jpg)\n\n**Figure 2.:** (A) act-5p::rfp extrachromosomal reporter expression was observed in the intestine in 153 of 300 WT animals. (B) act-3p::rfp extrachromosomal reporter expression was observed in the pharynx in 182 of 400 WT animals. (C) act-3p::rfp extrachromosomal reporter expression was observed in the pharynx and intestine in 138 of 320 act-5(ptc) mutants.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/50014/elife-50014-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** act-5p::rfp extrachromosomal reporter expression was observed in the pharynx and intestine in 148 of 300 act-5(ptc) mutants.\n\nTo identify an additional example of transcriptional adaptation in C. elegans, we turned to the titin gene family (Figure 3\u2014source data 1). Due to their size, titin genes are frequent targets of random mutagenesis, and several PTC alleles have been identified (Jorgensen and Mango, 2002; Lipinski et al., 2011). We focused on unc-89 which has many nonsense alleles that do not exhibit an obvious phenotype, potentially indicating functional compensation. We identified three different unc-89 alleles (gk469156, gk509355, gk506355) which exhibit lower levels of mutant mRNA compared to wild type (Figure 3A) and lack an obvious phenotype. Analyzing the mRNA levels of 10 titin related genes (him-4, ttn-1, ketn-1, sax-3, unc-22, unc-52, sax-7, rig-6, unc-40, and unc-73), we found that sax-3 was upregulated in all three unc-89(ptc) alleles (Figure 3\u2014figure supplement 1), both at the mRNA (Figure 3B) and pre-mRNA (Figure 3\u2014figure supplement 2) levels. To test whether this upregulation of sax-3 was due to transcriptional adaptation and not to the loss of UNC-89 function, we generated a 16 kb deletion (bns7000) in unc-89, hereafter referred to as unc-89(\u0394), using CRISPR/Cas9 genome editing. This deletion removes part of the promoter region and the first several exons (Figure 3\u2014figure supplement 1). Hence, most unc-89 isoforms are not observed in unc-89(\u0394) mutants (Figure 3A). Homozygous unc-89(\u0394) worms are maternal-effect sterile and exhibit growth defects, phenotypes not observed in the unc-89(ptc) alleles. In the RNA-less unc-89(\u0394) allele, sax-3 was not upregulated (Figure 3B), indicating that sax-3 upregulation is not due to the loss of UNC-89 function and that the mutant mRNA needs to be present for the transcriptional adaptation response. Thus, sax-3 upregulation in the unc-89(ptc) alleles is a second example of transcriptional adaptation in C. elegans.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/50014/elife-50014-fig3-v1.jpg)\n\n**Figure 3.:** qPCR analysis of unc-89 (C) and sax-3 (D) mRNA levels in WT and unc-89(ptc1), unc-89(ptc2), unc-89(ptc3), and unc-89(\u0394) mutants. sax-3 mRNA levels in unc-89 alleles are upregulated when unc-89 mutant mRNA levels are reduced, except in the deletion allele. WT expression levels are set at 1. Data are mean\u00a0\u00b1\u00a0S.E.M.; average dCt values are shown in Figure 3\u2014source data 2. Two-tailed Student\u2019s t-test was used to calculate P values.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/50014/elife-50014-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Schematic of a subset of the 16 known unc-89 isoforms as well as the deletion and nonsense alleles used in this study (black boxes). Black arrows point to the position of the qPCR primers. (B) Partial sequence of the longest unc-89 isoform with the single nucleotide change causing PTCs. Red indicates the mutations; PTCs are underlined. The distance from each PTC to the next exon-intron junction and to the stop codon is shown in Figure 3\u2014source data 3. unc-89 (gk469156)\u00a0=\u00a0unc-89(ptc1); unc-89 (gk506355)\u00a0=\u00a0unc-89(ptc2); unc-89 (gk509355)\u00a0=\u00a0unc-89(ptc3); unc-89(bns7000)\u00a0=\u00a0unc-89(\u0394).\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/50014/elife-50014-fig3-figsupp2-v1.jpg)\n\n**Figure 3\u2014figure supplement 2.:** (A) qPCR analysis of sax-3 pre-mRNA levels in WT and unc-89(ptc1), unc-89(ptc2), unc-89(ptc3) mutants. (B) Average dCt values from qPCR analysis of sax-3 pre-mRNA levels in WT and unc-89(ptc1), unc-89(ptc2), unc-89(ptc3) mutants. WT expression levels are set at 1. Data are mean\u00a0\u00b1\u00a0S.E.M.. Two-tailed Student\u2019s t-test was used to calculate P values.\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/50014/elife-50014-fig3-figsupp3-v1.jpg)\n\n**Figure 3\u2014figure supplement 3.:** qPCR analysis of unc-89 (A) and sax-3 (B) mRNA levels in WT and act-5(ptc) mutants as well as of act-5 (C) and act-3 (D) in WT and unc-89(ptc1), unc-89(ptc2) and unc-89(ptc3) mutants. WT expression levels are set at 1. Data are mean\u00a0\u00b1\u00a0S.E.M.; Two-tailed Student\u2019s t-test was used to calculate P values.\n\nTo test whether the observed changes in gene expression in act-5(ptc) and unc-89(ptc) mutants were specific, we measured unc-89 and sax-3 expression in act-5(ptc) mutants as well as act-5 and act-3 expression in unc-89(ptc) mutants. We observed no significant differences (Figure 3\u2014figure supplement 3), suggesting that there is specificity to the gene expression changes.\n\n### Identifying additional regulators of transcriptional adaptation\n\nThe mutant mRNA has been reported to activate transcriptional adaptation in zebrafish embryos and mouse cell lines (El-Brolosy et al., 2019; Ma et al., 2019). In order to identify additional factors involved in transcriptional adaptation, we performed a candidate RNA interference (RNAi) screen, focusing on genes involved in RNA metabolism (Figure 4\u2014source data 1). We knocked down genes involved in mRNA processing including splicing and nonsense-mediated decay, as well as other genes involved in small RNA synthesis and maturation. We measured the mRNA levels of the mutant and adapting genes in order to position RNAi candidates upstream or downstream of mRNA decay. If the gene targeted by RNAi is required for mutant mRNA decay, we expect to see the mRNA levels of the mutant and adapting genes to be similar to wild-type levels. If the gene targeted by RNAi is involved in transcriptional adaptation downstream of mutant mRNA decay, we expect to see the levels of mutant mRNA remaining lower than in wild type, but the levels of the adapting gene\u2019s mRNA to be similar to wild-type levels. Finally, if the gene targeted by RNAi is not involved in transcriptional adaptation, we expect to see the levels of mutant mRNA remain lower than in wild type and the expression levels of the adapting gene to remain higher than in wild type. For example, when we knocked down drsh-1, a gene involved in miRNA biogenesis (Denli et al., 2004), we saw no significant changes in the mRNA levels of the mutant or adapting genes compared to control (Figure 4\u2014figure supplement 1A,B,C,D), suggesting that drsh-1 is not involved in regulating transcriptional adaptation.\n\nTranscriptional adaptation requires the activity of decay factors (El-Brolosy et al., 2019; Ma et al., 2019), and UPF1, SMG6, and XRN1 were reported to be differentially required in various zebrafish embryo and mouse cell line models of transcriptional adaptation (El-Brolosy et al., 2019). In order to test whether NMD factors are involved in regulating transcriptional adaptation in C. elegans, we knocked down several NMD genes including smg-2 (the C. elegans orthologue of Upf1), smg-4 (Upf3) and smg-6 (Smg6). Knockdown of smg-2 and smg-4 blocked the transcriptional adaptation response in all three unc-89(ptc) alleles but not in the act-5(ptc) allele (Figure 4). Conversely, knockdown of smg-6 blocked the transcriptional adaptation response in the act-5(ptc) allele but not in the three unc-89(ptc) alleles (Figure 4). A differential requirement for Upf1 and Smg6 between gene models was also observed in mouse cells (El-Brolosy et al., 2019).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/50014/elife-50014-fig4-v1.jpg)\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/50014/elife-50014-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** WT expression levels are set at 1. Data are mean\u00a0\u00b1\u00a0S.E.M.; average dCt values are shown in Figure 4\u2014source data 1. Two-tailed Student\u2019s t-test was used to calculate P values.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/50014/elife-50014-fig4-figsupp2-v1.jpg)\n\n**Figure 4\u2014figure supplement 2.:** WT expression levels are set at 1. Data are mean\u00a0\u00b1\u00a0S.E.M.; average dCt values are shown in Figure 4\u2014source data 1. Two-tailed Student\u2019s t-test was used to calculate P values.\n\n![Figure 4\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/50014/elife-50014-fig4-figsupp3-v1.jpg)\n\n**Figure 4\u2014figure supplement 3.:** WT expression levels are set at 1. Data are mean\u00a0\u00b1\u00a0S.E.M.; average dCt values are shown in Figure 4\u2014source data 1. Two-tailed Student\u2019s t-test was used to calculate P values.\n\nAs RNAi efficiency can vary in different tissues (Ratliff et al., 2006; Zhuang and Hunter, 2011), we generated double mutant strains with smg-2, smg-4, or smg-6 mutant alleles and the act-5(ptc) and unc-89(ptc) alleles to exclude the possibility of tissue-specific knockdown. Analysis of the double mutant strains confirmed the observations made in the RNAi experiments (Figure 5). For example, we found that the levels of act-5 mRNA were lower in smg-2; act-5(ptc) and smg-4; act-5(ptc) double mutants than in smg-2 and smg-4 single mutants, and that the levels of the adapting gene\u2019s mRNA were higher (Figure 5\u2014source data 1), further indicating that smg-2 and smg-4 are not required for transcriptional adaptation in the act-5 model. However, in smg-4; unc-89(ptc) animals, the mRNA levels of the mutant (unc-89) and adapting (sax-3)\u00a0genes were similar to those in smg-4 single mutants. Furthermore, these animals exhibited a mild uncoordinated phenotype and grew slowly, suggesting a lack of functional compensation. These data further indicate that smg-4 is required for transcriptional adaptation in the unc-89 model. We could not obtain smg-6; act-5(ptc) viable mutants due to severe larval lethality, possibly as a consequence of blocking the transcriptional adaptation response, that\u00a0is act-3 upregulation. smg-6; unc-89(ptc) mutants exhibited lower levels of unc-89 mRNA and higher levels of adapting gene mRNA in comparison to single smg-6 mutants (Figure 5\u2014source data 1) similar to the observations in the RNAi experiments. Thus, there are differential requirements for decay factors in different models of transcriptional adaptation.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/50014/elife-50014-fig5-v1.jpg)\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/50014/elife-50014-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** qPCR analysis of act-5 (A) and act-3 (B) mRNA levels in nrde-3(gg66) mutants and act-5(ptc); nrde-3(gg66) double mutants as well as of unc-89 (C) and sax-3 (D) mRNA levels in nrde-3(gg66) and unc-89(ptc); nrde-3(gg66) double mutants. Single mutant nrde-3(gg66) expression levels are set at 1. Data are mean\u00a0\u00b1\u00a0S.E.M.; average dCt values are shown in Figure 5\u2014source data 1. Two-tailed Student\u2019s t-test was used to calculate P values.\n\nPrevious data indicate that the exonuclease Xrn1 is involved in regulating the transcriptional adaptation response in mouse cells (El-Brolosy et al., 2019). Therefore, we tested the role of exonucleases in transcriptional adaptation in C. elegans, specifically the exonuclease gene xrn-1 (Jones et al., 2012) and the XRN-2 partner gene paxt-1 (Miki et al., 2014) (Figure 4). We found that knocking down xrn-1 or paxt-1 led to\u00a0mutant (act-5 and unc-89)\u00a0mRNA levels similar to wild-type levels. Furthermore, the transcriptional adaptation response was blocked, suggesting that the degradation and processing of mutant transcripts is important to trigger transcriptional adaptation.\n\nWe next looked for additional factors required for transcriptional adaptation. Pre-mRNA splicing and NMD are closely related processes via the positioning and use of the exon junction complex (EJC) (Lejeune and Maquat, 2005; Kashima et al., 2010; Fukumura et al., 2016). SR-protein kinases (SRPK) and their substrates, serine/arginine-rich (SR) splicing factors, are key components of the splicing machinery and are well conserved across phyla (Kuroyanagi et al., 2000; Black, 2003; Galvin et al., 2011). Multiple SR proteins are components of the EJC (Singh et al., 2012), consistent with a previously suggested role of SR proteins in mRNA surveillance (Zhang and Krainer, 2004). Knocking down the SRPK gene spk-1 resulted in mutant mRNA levels similar to wild-type levels, and blocked transcriptional adaptation in all act-5 and unc-89 ptc alleles (Figure 4\u2014figure supplement 2A,B,C,D). We also identified the SR family gene rsp-6 as a regulator of transcriptional adaptation in the act-5 model, but were unable to identify a single SR protein whose knockdown influenced the transcriptional adaptation response in the unc-89 model (Figure 4\u2014source data 1), possibly due in part to the complexity of the unc-89 gene structure including the large number of isoforms (Tourasse et al., 2017).\n\nThe next group of genes we targeted encode factors involved in small RNA (sRNA) biogenesis, maturation and transport into the nucleus. We tested several pathways (Figure 4\u2014source data 1) and observed that the argonaute proteins ERGO-1 and NRDE-3, the RNA-dependent RNA polymerase RRF-3, as well as the ribonuclease DCR-1 regulate the transcriptional adaptation response downstream of mRNA decay (i.e., the mutant mRNA was still degraded but the adapting gene was not upregulated) (Figure 4, Figure 4\u2014figure supplement 3A,B,C,D, Figure 4\u2014source data 1). These RNAi data were confirmed by analyzing double mutants of the act-5(ptc) or unc-89(ptc) alleles with ergo-1, nrde-3, and rrf-3 (Figure 5), and all these animals exhibited phenotypes comparable to the act-5 or unc-89 deletion alleles analyzed in this study including larval lethality, slow growth and uncoordinated movements, indicating lack of functional compensation. Notably, ERGO-1, NRDE-3, RRF-3, and DCR-1 are involved in 26G RNA biogenesis (Pavelec et al., 2009; Vasale et al., 2010; Fischer, 2010; Grishok, 2013; Yvert, 2014), suggesting that 26G RNAs could play a role in transcriptional adaptation.\n\nTogether, these results indicate that mRNA decay as well as small RNA biogenesis and transport are critical in triggering transcriptional adaptation.\n\n## Discussion\n\nRecent advances in reverse genetic tools have significantly expanded our ability to generate genetic modifications in a wide range of organisms (Housden et al., 2017). However, some engineered mutants exhibit no apparent phenotype, renewing interest in the concept of genetic robustness. Genetic compensation, and in particular transcriptional adaptation, have been proposed as a means to achieve genetic robustness upstream of protein feedback loops. Despite the potential importance of transcriptional adaptation, its underlying molecular mechanisms remain relatively unexplored. Here, we report two cases of transcriptional adaptation in C. elegans. By carrying out a small RNAi screen and a follow up analysis using double mutants, we identified several new factors that regulate transcriptional adaptation and further validated previously identified ones.\n\nIn the C. elegans act-5 model, the mutant gene and related adapting gene (act-5 and act-3, respectively) are primarily expressed in distinct tissues. However, using an extrachromosomal transcriptional reporter, we observed that in act-5(ptc) mutants, the act-3 promoter adapts to drive transcription in the primary site of act-5 expression, the intestine. As act-5(ptc) mutants do not exhibit any obvious phenotype when the transcriptional adaptation response is intact, we predict that ACT-3 and/or other proteins are able to compensate for the loss of ACT-5. Indeed, when we disrupted transcriptional adaptation, act-5(ptc) mutants did not survive. Thus, transcriptional adaptation can in some cases entail the change in the pattern of expression of related gene(s) and suppress phenotypes that would alter the animal\u2019s fitness.\n\nBased on the factors identified in this study, we hypothesize that the transcriptional adaptation response consists of at least three critical processes: mutant mRNA decay, sRNA maturation and sRNA transport. In terms of mutant mRNA decay, we found that the machinery can be gene-specific. In our experiments, SMG-6 is involved in act-5(ptc) mRNA decay, while SMG-2 (UPF1) and SMG-4 (UPF3) impact unc-89(ptc) mRNA decay. Similar observations were made in mouse Actb and Rela mutant cells in which siRNA-mediated knock down of SMG6 blocked the transcriptional adaptation response in Actb mutant mESCs but had little influence on Rela mutant MEFs. Conversely, siRNA-mediated knockdown of UPF1 blocked the transcriptional adaptation response in Rela mutant MEFs but not in Actb mutant mESCs (El-Brolosy et al., 2019). Consistently, mutant mRNA decay can involve different factors in the same organism (Nickless et al., 2017), possibly due to differential expression of the decay factors. However, we cannot exclude the possibility that SMG6 could function as a decay factor independent of NMD, especially since it has been reported to have NMD-independent cleavage activity (Gehring et al., 2005; Glavan et al., 2006; Huntzinger et al., 2008; Chakrabarti et al., 2014).\n\nTranscriptional adaptation can be triggered by the degradation products of the mutant mRNA (El-Brolosy et al., 2019), which could seed the generation of sRNAs (Mattick and Makunin, 2005; Boivin et al., 2018). We found that factors involved in sRNA maturation and transport, including RRF-3, DCR-1, ERGO-1 and NRDE-3, also regulate transcriptional adaptation. Transcriptional modulation of genes by sRNAs of approximately 20\u201330 nucleotides in length is a widespread and diverse feature of prokaryotes (Melamed et al., 2019) and eukaryotes (Ambros et al., 2003; Yigit et al., 2006; Hutvagner and Simard, 2008; Portnoy et al., 2011; Castel and Martienssen, 2013; Rechavi and Lev, 2017; Billmyre et al., 2019). Notably, the factors we identified are known to be involved in somatic gene regulation by sRNAs, described as the RRF-3 pathway (Gent et al., 2010). RRF-3 is an RNA-dependent RNA polymerase involved along with the DICER complex in the biogenesis of 26-nucleotide RNAs with 5' bias for\u00a0guanosine monophosphate (26G-RNAs) (Han et al., 2009;\u00a0Gent et al., 2010; Vasale et al., 2010). 26G sRNAs associate with the Argonaute protein ERGO-1, which is involved in the further maturation of sRNAs and is required to separate the sRNA duplex (Han et al., 2009; Gent et al., 2010; Fischer et al., 2011). Mature sRNAs interacting with Argonaute proteins can direct post-transcriptional gene silencing (Vasale et al., 2010; Phillips et al., 2012), or be transported into the nucleus (Guang et al., 2008; Buckley et al., 2012; Shirayama et al., 2012). NRDE-3 is another Argonaute protein involved in transporting sRNAs into the nucleus (Guang et al., 2008), and we found that knocking it down, and knocking it out, blocked transcriptional adaptation while not affecting mutant mRNA levels. While sRNAs are best known as repressors of gene expression, they can also function as activators (Li et al., 2006; Janowski et al., 2006; Turunen et al., 2009; Portnoy et al., 2011; Wedeles et al., 2013; Li, 2017), although the underlying mechanisms remain poorly understood (Portnoy et al., 2011). Some of these activating sRNAs interact with Argonaute proteins (Seth et al., 2013), and they can target gene regulatory sequences including promoters. Whether they can also interfere with antisense RNAs, which usually function to repress gene expression (Faghihi and Wahlestedt, 2009; Modarresi et al., 2012), is a hypothesis worth testing given our observations in zebrafish embryos and mouse cell lines (El-Brolosy et al., 2019) as well as the previously suggested role of Argonaute proteins in such a process (Ghanbarian et al., 2017).\n\nThe transcriptional adaptation factors identified here came from a candidate screen where we specifically targeted pathways involved in RNA metabolism. With this study, we have established C. elegans as a genetic model system to perform unbiased screens to help reveal further mechanisms of transcriptional adaptation, a newly uncovered phenomenon contributing to genetic robustness.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Gene (Caenorhabditis elegans)</td>\n      <td>act-1</td>\n      <td></td>\n      <td>CELE_T04C12.6</td>\n      <td>WormBase ID: WBGene00000063</td>\n    </tr>\n    <tr>\n      <td>Gene (Caenorhabditis elegans)</td>\n      <td>act-2</td>\n      <td></td>\n      <td>CELE_T04C12.5</td>\n      <td>WBGene00000064</td>\n    </tr>\n    <tr>\n      <td>Gene (Caenorhabditis elegans)</td>\n      <td>act-3</td>\n      <td></td>\n      <td>CELE_T04C12.4</td>\n      <td>WBGene00000065</td>\n    </tr>\n    <tr>\n      <td>Gene (Caenorhabditis elegans)</td>\n      <td>act-4</td>\n      <td></td>\n      <td>CELE_M03F4.2</td>\n      <td>WBGene00000066</td>\n    </tr>\n    <tr>\n      <td>Gene (Caenorhabditis elegans)</td>\n      <td>act-5</td>\n      <td></td>\n      <td>CELE_T25C8.2</td>\n      <td>WBGene00000067</td>\n    </tr>\n    <tr>\n      <td>Gene (Caenorhabditis elegans)</td>\n      <td>unc-89</td>\n      <td></td>\n      <td>CELE_C09D1.1</td>\n      <td>WBGene00006820</td>\n    </tr>\n    <tr>\n      <td>Gene (Caenorhabditis elegans)</td>\n      <td>sax-3</td>\n      <td></td>\n      <td>CELE_ZK377.2</td>\n      <td>WBGene00004729</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (C. elegans)</td>\n      <td>N2</td>\n      <td>CGC,\u00a0Bristol strain</td>\n      <td></td>\n      <td>wild type</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (C. elegans)</td>\n      <td>IN2049</td>\n      <td>MacQueen et al., 2005</td>\n      <td></td>\n      <td>act-5(ptc); dtIs419[act-5+ rol-6(d)]</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (C. elegans)</td>\n      <td>IN2051</td>\n      <td>MacQueen et al., 2005</td>\n      <td></td>\n      <td>act-5(\u03941); dtIs419[act-5+ rol-6(d)]</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (C. elegans)</td>\n      <td>VC971</td>\n      <td>CGC,\u00a0Estes et al., 2011</td>\n      <td></td>\n      <td>+/mT1; act-5(\u03942)/mT1 [dpy-10(e128)].</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (C. elegans)</td>\n      <td>CB4043</td>\n      <td>CGC,\u00a0Hodgkin et al., 1989</td>\n      <td></td>\n      <td>smg-2(e2008);him-5(e1490)</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (C. elegans)</td>\n      <td>CB4355</td>\n      <td>CGC,\u00a0Pulak and Anderson, 1993</td>\n      <td></td>\n      <td>smg-4(ma116);him-8(e1490)</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (C. elegans)</td>\n      <td>TR1396</td>\n      <td>CGC,\u00a0Pulak and Anderson, 1993</td>\n      <td></td>\n      <td>smg-6(r896)</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (C. elegans)</td>\n      <td>YY168</td>\n      <td>CGC,\u00a0Pavelec et al., 2009</td>\n      <td></td>\n      <td>ergo-1(gg100)</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (C. elegans)</td>\n      <td>YY158</td>\n      <td>CGC,\u00a0Guang et al., 2008</td>\n      <td></td>\n      <td>nrde-3(gg66)</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (C. elegans)</td>\n      <td>YY13</td>\n      <td>CGC,\u00a0Pavelec et al., 2009</td>\n      <td></td>\n      <td>rrf-3(mg373)</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (C. elegans)</td>\n      <td>DYS0005</td>\n      <td>This study,\u00a0crossed IN2049 to N2</td>\n      <td></td>\n      <td>act-5(ptc)</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (C. elegans)</td>\n      <td>DYS0004</td>\n      <td>This study,\u00a0crossed IN2049 to N2</td>\n      <td></td>\n      <td>+/act-5(\u03941)</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (C. elegans)</td>\n      <td>DYS0012</td>\n      <td>This study,\u00a0injected in N2</td>\n      <td></td>\n      <td>Ex[act-5p::RFP]</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (C. elegans)</td>\n      <td>DYS0014</td>\n      <td>This study,\u00a0injected in N2</td>\n      <td></td>\n      <td>Ex[act-3p::RFP]</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (C. elegans)</td>\n      <td>DYS0015</td>\n      <td>This study,\u00a0crossed DYS0014 to DYS0004</td>\n      <td></td>\n      <td>act-5(ptc);Ex[act-3p::RFP]</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (C. elegans)</td>\n      <td>DYS0042</td>\n      <td>This study,\u00a0crossed DYS0012 to DYS0005</td>\n      <td></td>\n      <td>act-5(ptc);Ex[act-5p::RFP]</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (C. elegans)</td>\n      <td>VC40114</td>\n      <td>CGC,\u00a0Million Mutation Project</td>\n      <td></td>\n      <td>unc-89(ptc1)</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (C. elegans)</td>\n      <td>VC40193</td>\n      <td>CGC,\u00a0Million Mutation Project</td>\n      <td></td>\n      <td>unc-89(ptc2)</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (C. elegans)</td>\n      <td>VC40199</td>\n      <td>CGC,\u00a0Million Mutation Project</td>\n      <td></td>\n      <td>unc-89(ptc3)</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (C. elegans)</td>\n      <td>DYS0028</td>\n      <td>This study,\u00a0crossed VC40114 to N2</td>\n      <td></td>\n      <td>unc-89(ptc1)</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (C. elegans)</td>\n      <td>DYS0030</td>\n      <td>This study,\u00a0crossed VC40193 to N2</td>\n      <td></td>\n      <td>unc-89(ptc2)</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (C. elegans)</td>\n      <td>DYS0031</td>\n      <td>This study,\u00a0crossed VC40199 to N2</td>\n      <td></td>\n      <td>unc-89(ptc3)</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (C. elegans)</td>\n      <td>DYS0037</td>\n      <td>This study,\u00a0induced by CRISPR/Cas9</td>\n      <td></td>\n      <td>unc-89(\u0394)</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (C. elegans)</td>\n      <td>DYS0008</td>\n      <td>This study,\u00a0crossed DYS0005 to CB4043</td>\n      <td></td>\n      <td>smg-2(e2008); act-5(ptc)</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (C. elegans)</td>\n      <td>DYS0057</td>\n      <td>This study,\u00a0crossed DYS0005 to CB4355</td>\n      <td></td>\n      <td>act-5(ptc); smg-4(ma116)</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (C. elegans)</td>\n      <td>DYS0047</td>\n      <td>This study,\u00a0crossed DYS0028 to CB4355</td>\n      <td></td>\n      <td>unc-89(ptc1); smg-4(ma116)</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (C. elegans)</td>\n      <td>DYS0048</td>\n      <td>This study,\u00a0crossed DYS0030 to CB4355</td>\n      <td></td>\n      <td>unc-89(ptc2); smg-4(ma116)</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (C. elegans)</td>\n      <td>DYS0050</td>\n      <td>This study,\u00a0crossed DYS0031 to CB4355</td>\n      <td></td>\n      <td>unc-89(ptc3); smg-4(ma116)</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (C. elegans)</td>\n      <td>DYS0053</td>\n      <td>This study,\u00a0crossed DYS0028 to TR1396</td>\n      <td></td>\n      <td>unc-89(ptc1); smg-6(r896)</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (C. elegans)</td>\n      <td>DYS0055</td>\n      <td>This study,\u00a0crossed DYS0030 to TR1396</td>\n      <td></td>\n      <td>unc-89(ptc2); smg-6(r896)</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (C. elegans)</td>\n      <td>DYS0056</td>\n      <td>This study,\u00a0crossed DYS0031 to TR1396</td>\n      <td></td>\n      <td>unc-89(ptc3); smg-6(r896)</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (C. elegans)</td>\n      <td>DYS0010</td>\n      <td>This study,\u00a0crossed DYS0005 to YY168</td>\n      <td></td>\n      <td>act-5(ptc); ergo-1(gg100)</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (C. elegans)</td>\n      <td>DYS0054</td>\n      <td>This study,\u00a0crossed DYS0028 to YY168</td>\n      <td></td>\n      <td>unc-89(ptc1); ergo-1(gg100)</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (C. elegans)</td>\n      <td>DYS0051</td>\n      <td>This study,\u00a0crossed DYS0030 to YY168</td>\n      <td></td>\n      <td>unc-89(ptc2); ergo-1(gg100)</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (C. elegans)</td>\n      <td>DYS0052</td>\n      <td>This study,\u00a0crossed DYS0031 to YY168</td>\n      <td></td>\n      <td>unc-89(ptc3); ergo-1(gg100)</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (C. elegans)</td>\n      <td>DYS0045</td>\n      <td>This study,\u00a0crossed DYS0005 to YY158</td>\n      <td></td>\n      <td>act-5(ptc); nrde-3(gg66)</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (C. elegans)</td>\n      <td>DYS0065</td>\n      <td>This study,\u00a0crossed DYS0028 to YY158</td>\n      <td></td>\n      <td>unc-89(ptc1); nrde-3(gg66)</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (C. elegans)</td>\n      <td>DYS0072</td>\n      <td>This study,\u00a0crossed DYS0030 to YY158</td>\n      <td></td>\n      <td>unc-89(ptc2); nrde-3(gg66)</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (C. elegans)</td>\n      <td>DYS0066</td>\n      <td>This study,\u00a0crossed DYS0031 to YY158</td>\n      <td></td>\n      <td>unc-89(ptc3); nrde-3(gg66)</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (C. elegans)</td>\n      <td>DYS0046</td>\n      <td>This study,\u00a0crossed DYS0005 to YY13</td>\n      <td></td>\n      <td>rrf-3(mg373); act-5(ptc)</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (C. elegans)</td>\n      <td>DYS0070</td>\n      <td>This study,\u00a0crossed DYS0028 to YY13</td>\n      <td></td>\n      <td>unc-89(ptc1); rrf-3(mg373)</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (C. elegans)</td>\n      <td>DYS0062</td>\n      <td>This study,\u00a0crossed DYS0030 to YY13</td>\n      <td></td>\n      <td>unc-89(ptc2); rrf-3(mg373)</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (C. elegans)</td>\n      <td>DYS0063</td>\n      <td>This study,\u00a0crossed DYS0031 to YY13</td>\n      <td></td>\n      <td>unc-89(ptc3); rrf-3(mg373)</td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>In-Fusion HD Cloning</td>\n      <td>Clontech</td>\n      <td>Clontech:639647</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>Superscript III reverse transcriptase</td>\n      <td>Takara</td>\n      <td>Cat. No: 18080\u2013044</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>SMARTer RACE cDNA Amplification Kit</td>\n      <td>Takara</td>\n      <td>Cat. N. 634860</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>Advantage 2 PCR kit</td>\n      <td>Takara</td>\n      <td>Cat. N. 639207</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>RNAi construct</td>\n      <td>mv_C18D11.4</td>\n      <td>BioScience</td>\n      <td></td>\n      <td>rsp-8</td>\n    </tr>\n    <tr>\n      <td>RNAi construct</td>\n      <td>sjj2_C18D11.4</td>\n      <td>BioScience</td>\n      <td></td>\n      <td>rsp-8</td>\n    </tr>\n    <tr>\n      <td>RNAi constructs</td>\n      <td>mv_C33H5.12</td>\n      <td>BioScience</td>\n      <td></td>\n      <td>rsp-6</td>\n    </tr>\n    <tr>\n      <td>RNAi constructs</td>\n      <td>sjj2_C33H5.12</td>\n      <td>BioScience</td>\n      <td></td>\n      <td>rsp-6</td>\n    </tr>\n    <tr>\n      <td>RNAi constructs</td>\n      <td>mv_W02B12.3</td>\n      <td>BioScience</td>\n      <td></td>\n      <td>rsp-1</td>\n    </tr>\n    <tr>\n      <td>RNAi constructs</td>\n      <td>sjj2_W02B12.3</td>\n      <td>BioScience</td>\n      <td></td>\n      <td>rsp-1</td>\n    </tr>\n    <tr>\n      <td>RNAi constructs</td>\n      <td>mv_D2089.1</td>\n      <td>BioScience</td>\n      <td></td>\n      <td>rsp-7</td>\n    </tr>\n    <tr>\n      <td>RNAi constructs</td>\n      <td>sjj2_D2089.1</td>\n      <td>BioScience</td>\n      <td></td>\n      <td>rsp-7</td>\n    </tr>\n    <tr>\n      <td>RNAi constructs</td>\n      <td>mv_B0464.5</td>\n      <td>BioScience</td>\n      <td></td>\n      <td>spk-1</td>\n    </tr>\n    <tr>\n      <td>RNAi constructs</td>\n      <td>sjj2_B0464.5</td>\n      <td>BioScience</td>\n      <td></td>\n      <td>spk-1</td>\n    </tr>\n    <tr>\n      <td>RNAi constructs</td>\n      <td>mv_R05D11.6</td>\n      <td>BioScience</td>\n      <td></td>\n      <td>paxt-1</td>\n    </tr>\n    <tr>\n      <td>RNAi constructs</td>\n      <td>sjj2_R05D11.6</td>\n      <td>BioScience</td>\n      <td></td>\n      <td>paxt-1</td>\n    </tr>\n    <tr>\n      <td>RNAi constructs</td>\n      <td>mv_F43E2.8</td>\n      <td>BioScience</td>\n      <td></td>\n      <td>hsp-4</td>\n    </tr>\n    <tr>\n      <td>RNAi constructs</td>\n      <td>sjj2_F43E2.8</td>\n      <td>BioScience</td>\n      <td></td>\n      <td>hsp-4</td>\n    </tr>\n    <tr>\n      <td>RNAi constructs</td>\n      <td>sjj2_Y39G8C.1</td>\n      <td>BioScience</td>\n      <td></td>\n      <td>xrn-1</td>\n    </tr>\n    <tr>\n      <td>RNAi constructs</td>\n      <td>mv_Y48G8AL.6</td>\n      <td>BioScience</td>\n      <td></td>\n      <td>smg-2</td>\n    </tr>\n    <tr>\n      <td>RNAi constructs</td>\n      <td>sjj2_Y48G8AL.6</td>\n      <td>BioScience</td>\n      <td></td>\n      <td>smg-2</td>\n    </tr>\n    <tr>\n      <td>RNAi constructs</td>\n      <td>sjj2_F46B6.3</td>\n      <td>BioScience</td>\n      <td></td>\n      <td>smg-4</td>\n    </tr>\n    <tr>\n      <td>RNAi constructs</td>\n      <td>mv_Y54F10AL.2</td>\n      <td>BioScience</td>\n      <td></td>\n      <td>smg-6</td>\n    </tr>\n    <tr>\n      <td>RNAi constructs</td>\n      <td>sjj2_Y54F10AL.2</td>\n      <td>BioScience</td>\n      <td></td>\n      <td>smg-6</td>\n    </tr>\n    <tr>\n      <td>RNAi constructs</td>\n      <td>mv_F26B1.2</td>\n      <td>BioScience</td>\n      <td></td>\n      <td>hrpk-1</td>\n    </tr>\n    <tr>\n      <td>RNAi constructs</td>\n      <td>sjj2_F26B1.2</td>\n      <td>BioScience</td>\n      <td></td>\n      <td>hrpk-1</td>\n    </tr>\n    <tr>\n      <td>RNAi constructs</td>\n      <td>mv_F26E4.10</td>\n      <td>BioScience</td>\n      <td></td>\n      <td>drsh-1</td>\n    </tr>\n    <tr>\n      <td>RNAi constructs</td>\n      <td>sjj2_F26E4.10</td>\n      <td>BioScience</td>\n      <td></td>\n      <td>drsh-1</td>\n    </tr>\n    <tr>\n      <td>RNAi constructs</td>\n      <td>mv_T22A3.5</td>\n      <td>BioScience</td>\n      <td></td>\n      <td>pash-1</td>\n    </tr>\n    <tr>\n      <td>RNAi constructs</td>\n      <td>sjj2_T22A3.5</td>\n      <td>BioScience</td>\n      <td></td>\n      <td>pash-1</td>\n    </tr>\n    <tr>\n      <td>RNAi constructs</td>\n      <td>sjj2_F26A3.8</td>\n      <td>BioScience</td>\n      <td></td>\n      <td>rrf-1</td>\n    </tr>\n    <tr>\n      <td>RNAi constructs</td>\n      <td>mv_ R06C7.1</td>\n      <td>BioScience</td>\n      <td></td>\n      <td>wago-1</td>\n    </tr>\n    <tr>\n      <td>RNAi constructs</td>\n      <td>sjj2_ R06C7.1</td>\n      <td>BioScience</td>\n      <td></td>\n      <td>wago-1</td>\n    </tr>\n    <tr>\n      <td>RNAi constructs</td>\n      <td>mv_F58G1.1</td>\n      <td>BioScience</td>\n      <td></td>\n      <td>wago-4</td>\n    </tr>\n    <tr>\n      <td>RNAi constructs</td>\n      <td>sjj2_F58G1.1</td>\n      <td>BioScience</td>\n      <td></td>\n      <td>wago-4</td>\n    </tr>\n    <tr>\n      <td>RNAi constructs</td>\n      <td>sjj2_F10B5.7</td>\n      <td>BioScience</td>\n      <td></td>\n      <td>rrf-3</td>\n    </tr>\n    <tr>\n      <td>RNAi constructs</td>\n      <td>mv_M88.5</td>\n      <td>BioScience</td>\n      <td></td>\n      <td>zbp-1</td>\n    </tr>\n    <tr>\n      <td>RNAi constructs</td>\n      <td>sjj2_M88.5</td>\n      <td>BioScience</td>\n      <td></td>\n      <td>zbp-1</td>\n    </tr>\n    <tr>\n      <td>RNAi constructs</td>\n      <td>sjj2_K12H4.8</td>\n      <td>BioScience</td>\n      <td></td>\n      <td>dcr-1</td>\n    </tr>\n    <tr>\n      <td>RNAi constructs</td>\n      <td>mv_T20G5.11</td>\n      <td>BioScience</td>\n      <td></td>\n      <td>rde-4</td>\n    </tr>\n    <tr>\n      <td>RNAi constructs</td>\n      <td>sjj2_T20G5.11</td>\n      <td>BioScience</td>\n      <td></td>\n      <td>rde-4</td>\n    </tr>\n    <tr>\n      <td>RNAi constructs</td>\n      <td>mv_F36H1.2</td>\n      <td>BioScience</td>\n      <td></td>\n      <td>kdin-1</td>\n    </tr>\n    <tr>\n      <td>RNAi constructs</td>\n      <td>mv_K12B6.1</td>\n      <td>BioScience</td>\n      <td></td>\n      <td>sago-1</td>\n    </tr>\n    <tr>\n      <td>RNAi constructs</td>\n      <td>sjj2_K12B6.1</td>\n      <td>BioScience</td>\n      <td></td>\n      <td>sago-1</td>\n    </tr>\n    <tr>\n      <td>RNAi constructs</td>\n      <td>mv_K08H10.7</td>\n      <td>BioScience</td>\n      <td></td>\n      <td>rde-1</td>\n    </tr>\n    <tr>\n      <td>RNAi constructs</td>\n      <td>sjj2_K08H10.7</td>\n      <td>BioScience</td>\n      <td></td>\n      <td>rde-1</td>\n    </tr>\n    <tr>\n      <td>RNAi constructs</td>\n      <td>sjj2_R09A1.1</td>\n      <td>BioScience</td>\n      <td></td>\n      <td>ergo-1</td>\n    </tr>\n    <tr>\n      <td>RNAi constructs</td>\n      <td>mv_R04A9.2</td>\n      <td>BioScience</td>\n      <td></td>\n      <td>nrde-3</td>\n    </tr>\n    <tr>\n      <td>RNAi constructs</td>\n      <td>sjj2_R04A9.2</td>\n      <td>BioScience</td>\n      <td></td>\n      <td>nrde-3</td>\n    </tr>\n  </tbody>\n</table>\n\n### Culture conditions and strains\n\nAll wild-type worms were the N2 reference strain. All C. elegans strains were kept on 6 cm plates with nematode growth medium\u00a0agar and fed with a lawn of E. coli OP50 grown in 500 \u03bcl Luria broth, except for the RNAi mediated knockdown experiments where the worms were fed with E. coli expressing the respective double-stranded RNA. Cultures were maintained at 20\u00b0C. Also, to minimize the potential for laboratory evolution of the trait, a new culture of the strains was revived annually from frozen stocks. All plates with fungal or bacterial contamination were excluded from the experiments.\n\n### Synchronization of cultures for RNA isolation\n\nWorms from healthy cultures were washed off of plates using M9 buffer and passed through a 41 \u00b5m filter (Millipore Cat. No SCNY00040) with vacuum; antibiotics (Ampicillin, Chloramphenicol) were added (50 \u00b5g/ml final concentration) to eliminate remaining food bacteria, and the worms were then incubated on a shaker at room temperature for 15 min. Worms were centrifuged at 3000 rpm for 5 min to pellet early larval stage animals. The buffer was aspirated and 1 ml of fresh buffer was added to resuspend the pellet. Samples were confirmed to be primarily L1 and L2 stage larvae by observing two 5 \u00b5l samples on a 6 cm nematode growth medium plate. Starving cultures or cultures that had more than one male were excluded from the experiments.\n\n### qPCR analysis\n\nTotal RNA from synchronized cultures or manually picked young adults was isolated using TRIzol (ambion by Takara). For reverse transcription (RT), Superscript III reverse transcriptase (Invitrogen, Cat. No: 18080\u2013044) was used following manufacturer's instructions. We used 1\u20132 \u03bcg total RNA for each RT reaction. The qPCR experiments were performed on a CFX Connect Real-Time System (Biorad-Roche Diagnostics) as described previously (El-Brolosy et al., 2019). cdc-42 and Y45F10D.4 (iscu-1) were used as reference genes as described previously (Hoogewijs et al., 2008), and the Ct values ranged from 12.3 to 28.4 for cdc-42 and 11.8 to 26 for Y45F10D.4. The Ct values for all other genes were aimed to be below 30.\n\nThe following primers were used to amplify the cDNA of target genes: Y45F10D.4\u00a0(forward 5\u2019- CGAGAACCCGCGAAATGTCGGA-3\u2019 and reverse 5\u2019- CGGTTGCCAGGGAAGATGAGGC-3\u2019), cdc-42 (forward 5\u2019-AGCCATTCTGGCCGCTCTCG-3\u2019 and reverse 5\u2019- GCAACCGCTTCTCGTTTGGC-3\u2019), act-1 (forward 5\u2019-ACGACGAGTCCGGCCCATCC-3\u2019 and reverse 5\u2019-GAAAGCTGGTGGTGACGATGGTT-3\u2019), act-2 (forward 5\u2019-GCGCAAGTACTCCGTCTGGATCG-3\u2019 and reverse 5\u2019- GGGTGTGAAAATCCGTAAGGCAGA-3\u2019), act-3 (forward 5\u2019-AAGCTCTTCGCCTTACCATTTTCTC-3\u2019 and reverse 5\u2019-ACAGAGCAAATTGTAGTGGGGTCTTC-3\u2019), act-4 (forward 5\u2019-AGAGGCTCTCTTCCAGCCATCCTTC-3\u2019 and reverse 5\u2019-TGATCTTGATCTTCATGGTGGATGG-3\u2019), act-5 (forward 5\u2019- AAGTGCGATGTCGACATCAGAAAG-3\u2019 and reverse 5\u2019- TAATCTTGATCTTCATTGTGCTTGG-3\u2019), act-5d (forward 5\u2019- AAGTGCGATGTCGACATCAGAAAG-3\u2019 and reverse 5\u2019- TAATCTTGATCTTCATTGTGCTCCGG-3\u2019), unc-89 (forward 5\u2019-AAGGCTGAACTTGTCATCGAAGGAG-3\u2019 and reverse 5\u2019-TCATCTCCACAACATTACCCTCGTG-3\u2019), sax-3 (forward 5\u2019-TGCCGTTTGTCCCGTAACAACTATG-3\u2019 and reverse 5\u2019-ATCTTCTGAAGCTGACGGGGAGAAC-3\u2019), act-3 pre-mRNA (forward 5\u2019-TTTTTCAGAACCATGAAGATCA-3\u2019 and reverse 5\u2019-GAAAATGGTAAGGCGAAGAGC-3\u2019), sax-3 pre-mRNA (forward 5\u2019-TGTAAACCGCACTGCACAAT-3\u2019 and reverse 5\u2019-TCCACCAAGAGCCTGAAAAC-3\u2019). PCR efficiency was determined using external standards on plasmid mini-preparation of cloned PCR products. Expression levels were analyzed by basic relative quantification. qPCR data are based on three biological replicates and three technical replicates for each biological replicate.\n\n### Rapid amplification of cDNA ends (RACE)\n\nTotal RNA from manually picked young wild-type and act-5(\u03942) mutant adults was isolated using TRIzol (ambion by Takara). 5\u2019 and 3\u2019 RACE ready cDNA was synthesized by reverse transcription PCR using a SMARTer RACE cDNA Amplification Kit following manufacturer's protocol (Cat. N. 634860, Takara). PCRs were performed using an Advantage 2 PCR kit (Cat. N. 639207, Takara). The following gene-specific primers and nested gene-specific primers were used to amplify 3\u2019 and 5\u2019 cDNA ends: act5GSP2 (5\u2019-ACCACCGGAATCGTTTTGGACACCGGAG-3\u2019), act5NGSP2 (5\u2019-GAAGGATATGCCCTCCCACATGCCATCC-3\u2019), act5GSP1 (5'-AAAAATCAGCTTAGAAGCACTTTCGGTG-3\u2019), act5NGSP1 (5\u2019-TCGATGGGCCGGACTCGTCGTACTCCTG-3\u2019), unc89GSP2 (5\u2019-TTTGGTACCATTTGTATAGAGGCGAGTG-3\u2019), unc89NGSP2 (5\u2019-TTCTGAACTGGACAAATCTTGCTTTTCG-3), unc89N1GSP2 (5\u2019- ACTTTCCAGTATCTCCTGGATGTTGCTTC-3\u2019), and unc89N2GSP2 (5\u2019- TTTGAATACTTTTTGATGAACCGTGTGC-3\u2019). RACE experiment revealed an isoform with an alternative start which is present only in act-5(\u03942) mutants (Figure 1\u2014figure supplement 1A). This new isoform is not affected by the large deletion, and thus the corresponding mRNA is not degraded (Figure 1A).\n\n### Plasmid construction and genetic transformation\n\nTo study the expression of act-5, we generated a reporter construct with an act-5 promoter region (2.5 kb from III:13606066 to 13608569) fused to turboRFP in a pUC19 vector. Similarly, a pUC19 vector containing turboRFP was fused with an act-3 promoter region (4.5 kb from V:11073234 to 11077791). The germ line of wild-type animals was injected with the generated plasmids (10 ng ul\u22121). The transgenic lines were subsequently crossed with act-5(ptc) mutants to transfer the extrachromosomal array to the mutant background.\n\n### Confocal microscopy\n\nA Zeiss LSM 700 confocal microscope was used to image adult worms.\n\n### RNA interference mediated knockdown\n\nRNAi was performed by feeding double-stranded RNA-expressing bacteria at 25\u00b0C from the early larval stage through adulthood (60\u201375 hr) as previously described (Fraser et al., 2000). For the genes whose knockdown from an early larval stage caused lethality or sterility, we started the RNAi treatment at later stages (L4, adult). Also, for some clones (mv_R05D11.6, sjj2_R05D11.6, sjj2_Y39G8C.1), we diluted the double-stranded RNA-expressing bacteria with empty vector (L4440)-containing bacteria, in order to obtain milder effects. RNAi constructs were obtained from available libraries (Source BioScience) and verified by sequencing. RNAi clones used in this study are listed in the key resources table.\n\n### CRISPR/Cas9 induced mutations\n\nTo generate the CRISPR/Cas9-induced unc-89 deletion allele (bns7000), two sgRNAs (final concentration 4 uM each) were injected with Cas9 protein (0.35 ug/ul), and a dpy-10 sgRNA (2.5 uM) was used as a co-injection marker along with a repair oligo (PSdpy-10-PS; 0.73 uM) (Dickinson and Goldstein, 2016).\n\nThe following primers were used for genotyping: dunc-89\u20131 forward (5\u2019-ATACCACCACATGTCTCTTC-3\u2019), dunc-89\u20132 forward (5\u2019-GCTAAAAGTCAGAGTTCCAC-3\u2019), dunc-89\u20133 reverse (5\u2019- GGATGGGTTTACATAAAAT-3\u2019), dunc-89\u20134 reverse (5\u2019-TGAAAAAGAAACAACAAAA-3\u2019), dunc-89\u20135 forward (5\u2019-TAACAAAAAGCTCAAAATG-3\u2019), dunc-89\u20136 reverse (5\u2019-GGATAGATTTCTGTTGGAGA-3\u2019).\u00a0The external primers flank a 19612 bp region in wild types and amplify a 3601 bp fragment in bns7000 mutants.\u00a0The internal primers with different combinations amplify 500-2600 bp products in wild types.\n\n### Double mutant analysis\n\nAll the double mutants exhibited gene expression levels as in the RNAi treated animals with one exception. act-5(ptc); nrde-3 double mutants exhibited act-5 mRNA levels as in the RNAi experiments but also some upregulation of the adapting gene, unlike what was observed in the RNAi experiments (Figures 4 and 5, Figure 5\u2014figure supplement 1A and B). One possible explanation is related to an alternative start site of nrde-3 (Tourasse et al., 2017) which might be used only in some tissues and thus could lead to some protein function in the allele used in our study.\n\n### Statistical evaluation\n\nTo calculate the significance of the differences for the expression data, we performed two-tailed Student\u2019s t-test. Mean\u00a0\u00b1\u00a0SEM is indicated in graphs. All statistical analyses were implemented in the program Statistica v. 9. Graphs were generated in Prism5.\n\n### Gene structure visualization\n\nThe act-5 and unc-89 loci were visualized using the GSDS gene structure visualization tool (Guo et al., 2007).\n",
+      "created_at": "2025-12-02T14:38:02.158377Z"
+    },
+    {
+      "id": "b8ab5e0e-1b97-464a-b035-84f337c7c346",
+      "submission_id": "5f00670f-824c-40c7-80c1-7e680d6c6c57",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Oliver Hobert, Howard Hughes Medical Institute, Columbia University United States\n\nReviewers:\n- Michael Petrascheck, The Scripps Research Institute United States\n- Scott Kennedy, Harvard University United States\n\n## Review text\n\nDOI: [10.7554/eLife.50014.sa1](https://doi.org/10.7554/eLife.50014.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nThe earlier discovery of what the Stainier lab calls transcriptional adaptation helped to solve confusion about discrepancies between the effects of genetic germline mutations and transient knockdowns of genes in vertebrate. This study now shows that this remarkable phenomenon is not an oddity of vertebrates, but is also detectable in invertebrates (here, nematodes). In addition to demonstrating similar genetic requirements as in vertebrates, the authors report the involvement of factors important for small RNA maturation and transport into the nucleus, which provides new mechanistic insight into transcriptional adaptation.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Transcriptional adaptation in Caenorhabditis elegans\" for consideration by eLife. Your article has been reviewed by 2 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Jessica Tyler as the Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Michael Patrascheck (Reviewer #1); Scott Kennedy (Reviewer #2).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nIn this manuscript the authors describe the discovery of transcriptional adaptation in C. elegans. They show for two independent case that mutations in mRNAs of either act-5 or unc-89 that destabilize the mRNA can lead to a compensatory increase in related genes. They then use a limited RNAi screen to identify components related to RNA metabolism to be required in different aspects of transcriptional adaptation.\n\nThe paper is generally interesting to read and certainly attractive to a wider audience. There are however some aspects \u2013 including some critical control experiments \u2013 that need to be addressed.\n\n1) Any particular reasons why the strains used in Figure 2 were not used to validate some of the identified factors in Table 1? Especially the act-3 expression in the gut is a very clear and powerful phenotype. The normalization necessary for qPCR experiments does not adequately account for global RNA levels changes which can be reasonably expected because many of the factors investigated are related to RNA stability. An independent validation seems necessary for at least some factors. The gut-miss-expression phenotype of act-3 seems ideal to validate some of the RNAi clones that prevent transcriptional adaptation.\n\n2) The authors use RNAi to implicate the NMD and nuclear RNAi RNA surveillance pathways in transcriptional activation in C. elegans. Publicly available mutant alleles need to be used to confirm a role for these pathways in transcriptional activation. The worry is that RNAi knockdown induces partial knockdowns, is differentially effective in different tissues, can trigger off-targets silencing, and might trigger indirect and pleiotropic defects due to titration of the RNAi machinery. For example it is noted that smg-2/upf1 knockdown didn't suppress NMD of the unc-89 ptc allele. SMG-2/UPF1 is an obligatory component of the NMD machinery and, therefore, a failure to block NMD after SMG-2/Upf1 RNAi is likely a consequence of partial kd- and not differential requirements for SMG-2/Upf1. This concern is fairly easy to remedy. The authors should ask if animals harboring mutations in NMD and nuclear RNAi factors fail to undergo transcriptional adaptation. qRT-PCR to measure RNA levels of act-3 or sax-3 +/- NMD/nuclear RNAi null mutations would be proper. Monitoring act-5::gfp and act-3::gfp +/- NMD/nuclear RNAi would also be proper. Finally, the authors state that act-5(ptc) and unc-89(ptc) animals do not show their expected loss-of-function phenotypes\u2026 presumably because of transcriptional upregulation of homologous genes. Therefore, loss of the adaptation machinery (NMD/nuclear RNAi) in act-5(ptc) and unc-89(ptc) animals would be expected to uncover the act-5(ptc) and unc-89(ptc) lof phenotypes.\n\n3) The data shown in Figure 4 may not be sufficient to support the author's claims that small RNAs drive transcriptional adaptation in mammals. The paper does not absolutely need this data in order to be published. Hence, one obvious option is to just remove the data from the paper. Another option would be to soften conclusions drawn from the data. Should the data stay as is, the authors should clarify the model further in the text as well as provide additional experimental support for the model. Clarification; the authors claim that the various AGO/Dicer knockdowns do not affect expression of Rela, but the data say otherwise. All four kds appear to change Rela expression and 2-3 of these changes are statistically significant (Figure 4B). Experimental support; given how AGO-1/2/3 are thought to function, I don't understand why kd of each of the three AGOs should block transcriptional adaptation. Is the idea that all AGOs act sequentially in a linear pathway to direct adaptation? Because of this perplexing result, the authors would need to provide additional data supporting the idea that mammalian AGOs drive adaptation. The authors could show that AGO depletion using an independent approach (maybe auxin/degron or Ago1/3 knockout MEFs) also blocks transcriptional adaptation. Probably easier to just edit text or remove the data.\n\nThere are three additional items that it would be nice for the authors to address, but which are not absolutely necessary for publication. These experiments are mentioned because they are all fairly straightforward and their inclusion would make the paper much stronger.\n\n1) It would be fairly simple to provide data suggesting that up-regulation of homologous genes during \"transcriptional activation\" is actually due to changes in transcription by using the RNA samples (already on hand) to conduct qRT-PCR looking at act-3/unc-89 pre-mRNA levels. If the effect is transcriptional, intron containing nascent RNAs should change predictably.\n\n2) If the model is correct, then changes in gene expression seen in animals harboring act-5/unc-89 ptc alleles should be extremely specific; i.e. limited to just homologs (because up-regulation of homologs rescues mutant phenotypes- so pleiotropic changes in gene expression should be quite minimal). An RNA-seq experiment would be an elegant way to show that this is indeed the case.\n\n3) CRISPR/Cas9-based gfp tagging of genes is a better and more accurate way to readout gene expression than repetitive arrays integrated into random sites in the genome. Figure 2 would be more convincing if an act-3::gfp CRISPR line were used in lieu of a transgene. Or, RNA FISH showing upregulation of the act-3 mRNA in the intestine in act-5 ptc animals would also be more convincing than the current data.\n",
+      "created_at": "2025-12-02T14:38:02.158377Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T14:38:02.158377Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T14:38:02.158377Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "d319079e-68d3-4af6-9d46-46deb99069e1",
+      "content_id": "c6ce9186-a758-4b08-b334-6076dae96782",
+      "claim_id": "C1",
+      "claim": "Transcriptional adaptation is a phenomenon by which a mutation in one gene leads to the transcriptional modulation of related genes, termed adapting genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Transcriptional adaptation is a recently described phenomenon by which a mutation in one gene leads to the transcriptional modulation of related genes, termed adapting genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definitional statement from the abstract that establishes what transcriptional adaptation is.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:38:02.158377Z"
+    },
+    {
+      "id": "9dac5c95-01e0-482e-b4f1-b2c1f5664a29",
+      "content_id": "c6ce9186-a758-4b08-b334-6076dae96782",
+      "claim_id": "C2",
+      "claim": "The mutant mRNA, rather than the loss of protein function, activates the transcriptional adaptation response.",
+      "claim_type": "EXPLICIT",
+      "source": "At the molecular level, it has been proposed that the mutant mRNA, rather than the loss of protein function, activates this response.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous work in the introduction.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:38:02.158377Z"
+    },
+    {
+      "id": "2d61eb2f-ab69-4986-9694-99aafbc17018",
+      "content_id": "c6ce9186-a758-4b08-b334-6076dae96782",
+      "claim_id": "C3",
+      "claim": "Transcriptional adaptation has been reported in zebrafish embryos and mouse cell lines.",
+      "claim_type": "EXPLICIT",
+      "source": "While several examples of transcriptional adaptation have been reported in zebrafish embryos and in mouse cell lines, it is not known whether this phenomenon is observed across metazoans.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement references prior work showing transcriptional adaptation in these model systems.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:38:02.158377Z"
+    },
+    {
+      "id": "daad537e-d155-482c-919a-7560eaac82c2",
+      "content_id": "c6ce9186-a758-4b08-b334-6076dae96782",
+      "claim_id": "C4",
+      "claim": "Transcriptional adaptation occurs in C. elegans.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we report transcriptional adaptation in C. elegans",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study supported by experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:38:02.158377Z"
+    },
+    {
+      "id": "f5c16d05-6bdb-4def-aa2d-94015dbfce56",
+      "content_id": "c6ce9186-a758-4b08-b334-6076dae96782",
+      "claim_id": "C5",
+      "claim": "Transcriptional adaptation in C. elegans requires factors involved in mutant mRNA decay.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we report transcriptional adaptation in C. elegans, and find that this process requires factors involved in mutant mRNA decay, as in zebrafish and mouse.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data from RNAi knockdown and mutant analysis presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:38:02.158377Z"
+    },
+    {
+      "id": "23a9c8fd-3861-49a2-ace9-808f41dd3ae2",
+      "content_id": "c6ce9186-a758-4b08-b334-6076dae96782",
+      "claim_id": "C6",
+      "claim": "Transcriptional adaptation in C. elegans requires Argonaute proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "We further uncover a requirement for Argonaute proteins and Dicer, factors involved in small RNA maturation and transport into the nucleus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data from RNAi knockdown and mutant analysis presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:38:02.158377Z"
+    },
+    {
+      "id": "e3001a7b-63f8-4517-b9e0-d56abbcbfea9",
+      "content_id": "c6ce9186-a758-4b08-b334-6076dae96782",
+      "claim_id": "C7",
+      "claim": "Transcriptional adaptation in C. elegans requires Dicer.",
+      "claim_type": "EXPLICIT",
+      "source": "We further uncover a requirement for Argonaute proteins and Dicer, factors involved in small RNA maturation and transport into the nucleus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data from RNAi knockdown and mutant analysis presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:38:02.158377Z"
+    },
+    {
+      "id": "71cfa695-5e1f-4ba9-af60-a3f3a49c0f5e",
+      "content_id": "c6ce9186-a758-4b08-b334-6076dae96782",
+      "claim_id": "C8",
+      "claim": "The mutant mRNA modulates the expression of adapting genes via transcriptional regulators including antisense RNAs and histone modifiers according to one model.",
+      "claim_type": "EXPLICIT",
+      "source": "According to one model (El-Brolosy et al., 2019), the mutant mRNA, via its degradation products, modulates the expression of adapting genes via transcriptional regulators including antisense RNAs and histone modifiers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement describes a model from prior work cited in the manuscript.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:38:02.158377Z"
+    },
+    {
+      "id": "ef326525-9e40-4a05-a943-0527c5a0bcaf",
+      "content_id": "c6ce9186-a758-4b08-b334-6076dae96782",
+      "claim_id": "C9",
+      "claim": "The premature termination codon containing mutant mRNA interacts with a histone modifier complex leading to transcriptional upregulation of adapting genes according to another model.",
+      "claim_type": "EXPLICIT",
+      "source": "According to another model (Ma et al., 2019), the premature termination codon (PTC) containing mutant mRNA interacts with a histone modifier complex leading to transcriptional upregulation of the adapting gene(s).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement describes a model from prior work cited in the manuscript.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:38:02.158377Z"
+    },
+    {
+      "id": "99114aae-9090-4696-9533-07106fac59cf",
+      "content_id": "c6ce9186-a758-4b08-b334-6076dae96782",
+      "claim_id": "C10",
+      "claim": "Sequence similarity with the mutant mRNA determines which genes get upregulated during transcriptional adaptation.",
+      "claim_type": "EXPLICIT",
+      "source": "Sequence similarity with the mutant mRNA determines which genes get upregulated during transcriptional adaptation (El-Brolosy et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:38:02.158377Z"
+    },
+    {
+      "id": "efe9c221-cf6e-4b69-800e-3d2124524656",
+      "content_id": "c6ce9186-a758-4b08-b334-6076dae96782",
+      "claim_id": "C11",
+      "claim": "Transcriptional adaptation does not always lead to functional compensation.",
+      "claim_type": "EXPLICIT",
+      "source": "However, while transcriptional adaptation is often discussed in the context of genetic robustness (Rossi et al., 2015; El-Brolosy et al., 2019; Ma et al., 2019), it does not always lead to functional compensation (Rossi et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:38:02.158377Z"
+    },
+    {
+      "id": "f15c7149-81cf-4ee1-9d34-25013ca1dc9b",
+      "content_id": "c6ce9186-a758-4b08-b334-6076dae96782",
+      "claim_id": "C12",
+      "claim": "The C. elegans genome contains five actin genes which display high similarity in their DNA and protein sequences.",
+      "claim_type": "EXPLICIT",
+      "source": "The C. elegans genome contains five actin genes which display high similarity in their DNA and protein sequences (MacQueen et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:38:02.158377Z"
+    },
+    {
+      "id": "66e5d749-8842-45e4-bff9-1e2e15d9b997",
+      "content_id": "c6ce9186-a758-4b08-b334-6076dae96782",
+      "claim_id": "C13",
+      "claim": "act-5(dt2019) mutants have significantly reduced act-5 mRNA levels compared to wild type.",
+      "claim_type": "EXPLICIT",
+      "source": "We found significantly reduced act-5 mRNA levels in act-5(dt2019) mutants compared to wild type (Figure 1A)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by qPCR data shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:38:02.158377Z"
+    },
+    {
+      "id": "71abe3f3-fcf8-4291-9e48-14674c88b948",
+      "content_id": "c6ce9186-a758-4b08-b334-6076dae96782",
+      "claim_id": "C14",
+      "claim": "The reduced act-5 mRNA levels in act-5(dt2019) mutants are likely caused by nonsense-mediated decay due to a premature termination codon in the first exon.",
+      "claim_type": "EXPLICIT",
+      "source": "We found significantly reduced act-5 mRNA levels in act-5(dt2019) mutants compared to wild type (Figure 1A), likely caused by nonsense-mediated decay (NMD) due to a premature termination codon (ptc) in the first exon (Figure 1A, Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on the presence of a PTC and knowledge of NMD mechanisms.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:38:02.158377Z"
+    },
+    {
+      "id": "8fc0c506-6b1c-4dfc-9d62-a6ea3c16217e",
+      "content_id": "c6ce9186-a758-4b08-b334-6076dae96782",
+      "claim_id": "C15",
+      "claim": "The act-5(dt2019) allele does not exhibit any obvious phenotype.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the act-5(dt2019) allele, hereafter referred to as act-5(ptc), does not exhibit any obvious phenotype (MacQueen et al., 2005), an observation we confirmed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by both a citation to prior work and the authors' own observations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:38:02.158377Z"
+    },
+    {
+      "id": "616e3816-a5a5-4f18-ad52-555c573ca3d7",
+      "content_id": "c6ce9186-a758-4b08-b334-6076dae96782",
+      "claim_id": "C16",
+      "claim": "act-3 mRNA is upregulated in act-5(ptc) mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "We analyzed the mRNA levels of all actin genes in act-5(ptc) mutants (Figure 1A, Figure 1\u2014figure supplement 2), and observed the upregulation of act-3 mRNA and pre-mRNA (Figure 1B, Figure 1\u2014figure supplement 3), consistent with a transcriptional adaptation response.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by qPCR data shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:38:02.158377Z"
+    },
+    {
+      "id": "09fced47-6db6-4161-809f-b8874e82dcd4",
+      "content_id": "c6ce9186-a758-4b08-b334-6076dae96782",
+      "claim_id": "C17",
+      "claim": "act-3 pre-mRNA is upregulated in act-5(ptc) mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "We analyzed the mRNA levels of all actin genes in act-5(ptc) mutants (Figure 1A, Figure 1\u2014figure supplement 2), and observed the upregulation of act-3 mRNA and pre-mRNA (Figure 1B, Figure 1\u2014figure supplement 3), consistent with a transcriptional adaptation response.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by qPCR data shown in Figure 1\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:38:02.158377Z"
+    },
+    {
+      "id": "5817d1fd-ce42-4ac8-929d-ebf3ef00c413",
+      "content_id": "c6ce9186-a758-4b08-b334-6076dae96782",
+      "claim_id": "C18",
+      "claim": "act-5(dt2017) mutants show no significant change in act-5 mRNA levels compared to wild type.",
+      "claim_type": "EXPLICIT",
+      "source": "We also examined the act-5(dt2017) partial deletion allele, hereafter referred to as act-5(\u03941), (Figure 1\u2014figure supplement 1) and found no significant change in act-5 mRNA levels in homozygous mutants compared to wild type (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by qPCR data shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:38:02.158377Z"
+    },
+    {
+      "id": "7ed06447-99e9-4acc-a696-85e9ff88b29d",
+      "content_id": "c6ce9186-a758-4b08-b334-6076dae96782",
+      "claim_id": "C19",
+      "claim": "act-3 mRNA levels in act-5(\u03941) mutants are not changed compared to wild type.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, act-3 mRNA levels in act-5(\u03941) mutants were not changed compared to wild type (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by qPCR data shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:38:02.158377Z"
+    },
+    {
+      "id": "a7cfb839-f933-4595-8de6-dbd4906a7d06",
+      "content_id": "c6ce9186-a758-4b08-b334-6076dae96782",
+      "claim_id": "C20",
+      "claim": "The ok1397 deletion removes part of the promoter region and the first two exons of act-5.",
+      "claim_type": "EXPLICIT",
+      "source": "The ok1397 deletion removes part of the promoter region and the first two exons (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the schematic in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:38:02.158377Z"
+    },
+    {
+      "id": "c470ace3-0d99-4da0-b5e9-0c0d83e9f7fd",
+      "content_id": "c6ce9186-a758-4b08-b334-6076dae96782",
+      "claim_id": "C21",
+      "claim": "A new act-5 isoform is present in act-5(\u03942) mutants but not in wild type.",
+      "claim_type": "EXPLICIT",
+      "source": "We examined this allele for the presence of any transcripts and identified a new isoform which is present in mutants but not in wild type (see Materials and methods) and consists of only 3' sequence (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by RACE experiments described in the methods and shown in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:38:02.158377Z"
+    },
+    {
+      "id": "f161d138-a527-43cf-87c9-bd215f1afc42",
+      "content_id": "c6ce9186-a758-4b08-b334-6076dae96782",
+      "claim_id": "C22",
+      "claim": "act-5 mRNA levels in act-5(\u03942) mutants are not changed compared to wild type.",
+      "claim_type": "EXPLICIT",
+      "source": "As with the act-5(\u03941) deletion allele, we found no changes in act-5 or act-3 mRNA levels in act-5(\u03942) mutants compared to wild type (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by qPCR data shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:38:02.158377Z"
+    },
+    {
+      "id": "00a36a1f-1d28-4687-a801-bab48c7ad65c",
+      "content_id": "c6ce9186-a758-4b08-b334-6076dae96782",
+      "claim_id": "C23",
+      "claim": "act-3 mRNA levels in act-5(\u03942) mutants are not changed compared to wild type.",
+      "claim_type": "EXPLICIT",
+      "source": "As with the act-5(\u03941) deletion allele, we found no changes in act-5 or act-3 mRNA levels in act-5(\u03942) mutants compared to wild type (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by qPCR data shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:38:02.158377Z"
+    },
+    {
+      "id": "11ff68ab-06ae-4526-ad17-f2521cb4f315",
+      "content_id": "c6ce9186-a758-4b08-b334-6076dae96782",
+      "claim_id": "C24",
+      "claim": "In C. elegans, act-3 is expressed in the pharynx.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, in C. elegans, act-3 is expressed in the pharynx (Hunt-Newbury et al., 2007)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:38:02.158377Z"
+    },
+    {
+      "id": "f480b592-57ef-451c-9082-54701679cdd7",
+      "content_id": "c6ce9186-a758-4b08-b334-6076dae96782",
+      "claim_id": "C25",
+      "claim": "In C. elegans, act-5 is expressed in intestinal cells.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, in C. elegans, act-3 is expressed in the pharynx (Hunt-Newbury et al., 2007) while act-5 is expressed in intestinal cells (MacQueen et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:38:02.158377Z"
+    },
+    {
+      "id": "82306ccd-5156-4097-a266-bb45fbc20752",
+      "content_id": "c6ce9186-a758-4b08-b334-6076dae96782",
+      "claim_id": "C26",
+      "claim": "Expression of the extrachromosomal act-5p::rfp transgene is observed in the intestine in wild-type animals.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, we observed expression of the extrachromosomal act-5p::rfp transgene in the intestine in wild-type animals (Figure 2A)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by confocal microscopy images shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:38:02.158377Z"
+    },
+    {
+      "id": "b4e347e8-95da-439c-95dd-2edea098a367",
+      "content_id": "c6ce9186-a758-4b08-b334-6076dae96782",
+      "claim_id": "C27",
+      "claim": "Expression of the extrachromosomal act-5p::rfp transgene is observed in the intestine in act-5(ptc) mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, we observed expression of the extrachromosomal act-5p::rfp transgene in the intestine in wild-type animals (Figure 2A) as well as in act-5(ptc) mutants (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by confocal microscopy images shown in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:38:02.158377Z"
+    },
+    {
+      "id": "c784dd3b-0c37-4ed0-9ea5-8a0f7a736473",
+      "content_id": "c6ce9186-a758-4b08-b334-6076dae96782",
+      "claim_id": "C28",
+      "claim": "Expression of the extrachromosomal act-3p::rfp transgene is only observed in the pharynx in wild-type animals.",
+      "claim_type": "EXPLICIT",
+      "source": "Likewise, expression of the extrachromosomal act-3p::rfp transgene was only observed in the pharynx in wild-type animals (Figure 2B), consistent with previous studies (Hunt-Newbury et al., 2007).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by confocal microscopy images shown in Figure 2B and a citation to prior work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:38:02.158377Z"
+    },
+    {
+      "id": "e2b5a2b0-c6c1-457f-bd36-1944e0daaede",
+      "content_id": "c6ce9186-a758-4b08-b334-6076dae96782",
+      "claim_id": "C29",
+      "claim": "Extrachromosomal act-3p::rfp expression is observed in the intestine in act-5(ptc) mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "However, extrachromosomal act-3p::rfp expression was also observed in the intestine in act-5(ptc) mutants (Figure 2C), consistent with transcriptional adaptation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by confocal microscopy images shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:38:02.158377Z"
+    },
+    {
+      "id": "4d251d38-4ea4-484d-8ade-ddbf42e1485c",
+      "content_id": "c6ce9186-a758-4b08-b334-6076dae96782",
+      "claim_id": "C30",
+      "claim": "The mutant mRNA cell-autonomously triggers transcriptional adaptation.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, we saw upregulation of expression from a synthetic and extrachromosomal act-3 promoter in tissues where act-5 is expressed, supporting the model that the mutant mRNA cell-autonomously triggers transcriptional adaptation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the observation that the act-3 promoter is activated in intestinal cells where act-5 is normally expressed.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:38:02.158377Z"
+    },
+    {
+      "id": "cc84701f-9081-4645-9777-996d0beb9f6c",
+      "content_id": "c6ce9186-a758-4b08-b334-6076dae96782",
+      "claim_id": "C31",
+      "claim": "Three different unc-89 alleles (gk469156, gk509355, gk506355) exhibit lower levels of mutant mRNA compared to wild type.",
+      "claim_type": "EXPLICIT",
+      "source": "We identified three different unc-89 alleles (gk469156, gk509355, gk506355) which exhibit lower levels of mutant mRNA compared to wild type (Figure 3A)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by qPCR data shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:38:02.158377Z"
+    },
+    {
+      "id": "ed4f8cea-7eed-49ec-ac63-06d5fed70534",
+      "content_id": "c6ce9186-a758-4b08-b334-6076dae96782",
+      "claim_id": "C32",
+      "claim": "Three different unc-89 alleles (gk469156, gk509355, gk506355) lack an obvious phenotype.",
+      "claim_type": "EXPLICIT",
+      "source": "We identified three different unc-89 alleles (gk469156, gk509355, gk506355) which exhibit lower levels of mutant mRNA compared to wild type (Figure 3A) and lack an obvious phenotype.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the authors' observations of the mutant animals.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:38:02.158377Z"
+    },
+    {
+      "id": "e4552c5e-f15c-4368-8051-d75d9bcd76a0",
+      "content_id": "c6ce9186-a758-4b08-b334-6076dae96782",
+      "claim_id": "C33",
+      "claim": "sax-3 is upregulated in all three unc-89(ptc) alleles.",
+      "claim_type": "EXPLICIT",
+      "source": "Analyzing the mRNA levels of 10 titin related genes (him-4, ttn-1, ketn-1, sax-3, unc-22, unc-52, sax-7, rig-6, unc-40, and unc-73), we found that sax-3 was upregulated in all three unc-89(ptc) alleles (Figure 3\u2014figure supplement 1), both at the mRNA (Figure 3B) and pre-mRNA (Figure 3\u2014figure supplement 2) levels.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by qPCR data shown in Figure 3B and Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:38:02.158377Z"
+    },
+    {
+      "id": "da4c179b-bf9d-4bd1-af26-3f539c19aaf4",
+      "content_id": "c6ce9186-a758-4b08-b334-6076dae96782",
+      "claim_id": "C34",
+      "claim": "sax-3 mRNA is upregulated in all three unc-89(ptc) alleles.",
+      "claim_type": "EXPLICIT",
+      "source": "Analyzing the mRNA levels of 10 titin related genes (him-4, ttn-1, ketn-1, sax-3, unc-22, unc-52, sax-7, rig-6, unc-40, and unc-73), we found that sax-3 was upregulated in all three unc-89(ptc) alleles (Figure 3\u2014figure supplement 1), both at the mRNA (Figure 3B) and pre-mRNA (Figure 3\u2014figure supplement 2) levels.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by qPCR data shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:38:02.158377Z"
+    },
+    {
+      "id": "0e61fe6e-4e3f-409c-b81c-40ca2a67ee0c",
+      "content_id": "c6ce9186-a758-4b08-b334-6076dae96782",
+      "claim_id": "C35",
+      "claim": "sax-3 pre-mRNA is upregulated in all three unc-89(ptc) alleles.",
+      "claim_type": "EXPLICIT",
+      "source": "Analyzing the mRNA levels of 10 titin related genes (him-4, ttn-1, ketn-1, sax-3, unc-22, unc-52, sax-7, rig-6, unc-40, and unc-73), we found that sax-3 was upregulated in all three unc-89(ptc) alleles (Figure 3\u2014figure supplement 1), both at the mRNA (Figure 3B) and pre-mRNA (Figure 3\u2014figure supplement 2) levels.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by qPCR data shown in Figure 3\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:38:02.158377Z"
+    },
+    {
+      "id": "d71d72f9-2659-49f3-a5be-24ae12ddd19d",
+      "content_id": "c6ce9186-a758-4b08-b334-6076dae96782",
+      "claim_id": "C36",
+      "claim": "The unc-89(bns7000) deletion removes part of the promoter region and the first several exons.",
+      "claim_type": "EXPLICIT",
+      "source": "This deletion removes part of the promoter region and the first several exons (Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the schematic in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:38:02.158377Z"
+    },
+    {
+      "id": "ee18dd4c-f1dd-4731-bbef-e14b823a158f",
+      "content_id": "c6ce9186-a758-4b08-b334-6076dae96782",
+      "claim_id": "C37",
+      "claim": "Most unc-89 isoforms are not observed in unc-89(\u0394) mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, most unc-89 isoforms are not observed in unc-89(\u0394) mutants (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by qPCR data shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:38:02.158377Z"
+    },
+    {
+      "id": "fd964ebb-c707-4a81-9f2e-457294cfc550",
+      "content_id": "c6ce9186-a758-4b08-b334-6076dae96782",
+      "claim_id": "C38",
+      "claim": "Homozygous unc-89(\u0394) worms are maternal-effect sterile.",
+      "claim_type": "EXPLICIT",
+      "source": "Homozygous unc-89(\u0394) worms are maternal-effect sterile and exhibit growth defects, phenotypes not observed in the unc-89(ptc) alleles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the authors' observations of the mutant animals.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:38:02.158377Z"
+    },
+    {
+      "id": "6f00d9b4-c73f-4fa4-af13-0df851c6b6a9",
+      "content_id": "c6ce9186-a758-4b08-b334-6076dae96782",
+      "claim_id": "C39",
+      "claim": "Homozygous unc-89(\u0394) worms exhibit growth defects.",
+      "claim_type": "EXPLICIT",
+      "source": "Homozygous unc-89(\u0394) worms are maternal-effect sterile and exhibit growth defects, phenotypes not observed in the unc-89(ptc) alleles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the authors' observations of the mutant animals.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:38:02.158377Z"
+    },
+    {
+      "id": "191609f7-abbf-40c8-b789-156c63011c3a",
+      "content_id": "c6ce9186-a758-4b08-b334-6076dae96782",
+      "claim_id": "C40",
+      "claim": "sax-3 is not upregulated in the unc-89(\u0394) allele.",
+      "claim_type": "EXPLICIT",
+      "source": "In the RNA-less unc-89(\u0394) allele, sax-3 was not upregulated (Figure 3B), indicating that sax-3 upregulation is not due to the loss of UNC-89 function and that the mutant mRNA needs to be present for the transcriptional adaptation response.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by qPCR data shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:38:02.158377Z"
+    },
+    {
+      "id": "c9b9b93d-0506-4f76-9c47-a1669f241821",
+      "content_id": "c6ce9186-a758-4b08-b334-6076dae96782",
+      "claim_id": "C41",
+      "claim": "sax-3 upregulation is not due to the loss of UNC-89 function.",
+      "claim_type": "EXPLICIT",
+      "source": "In the RNA-less unc-89(\u0394) allele, sax-3 was not upregulated (Figure 3B), indicating that sax-3 upregulation is not due to the loss of UNC-89 function and that the mutant mRNA needs to be present for the transcriptional adaptation response.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the observation that sax-3 is not upregulated in the deletion allele that lacks unc-89 mRNA.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:38:02.158377Z"
+    },
+    {
+      "id": "6314c1f2-1c3b-49c0-9c1e-2baa66b90526",
+      "content_id": "c6ce9186-a758-4b08-b334-6076dae96782",
+      "claim_id": "C42",
+      "claim": "The mutant mRNA needs to be present for the transcriptional adaptation response.",
+      "claim_type": "EXPLICIT",
+      "source": "In the RNA-less unc-89(\u0394) allele, sax-3 was not upregulated (Figure 3B), indicating that sax-3 upregulation is not due to the loss of UNC-89 function and that the mutant mRNA needs to be present for the transcriptional adaptation response.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the observation that sax-3 is not upregulated in the deletion allele that lacks unc-89 mRNA.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:38:02.158377Z"
+    },
+    {
+      "id": "03ac1dff-7374-465f-b9d3-b52e004c6cf2",
+      "content_id": "c6ce9186-a758-4b08-b334-6076dae96782",
+      "claim_id": "C43",
+      "claim": "Knockdown of smg-2 blocked the transcriptional adaptation response in all three unc-89(ptc) alleles but not in the act-5(ptc) allele.",
+      "claim_type": "EXPLICIT",
+      "source": "Knocking down the SRPK gene spk-1 resulted in mutant mRNA levels similar to wild-type levels, and blocked transcriptional adaptation in all act-5 and unc-89 ptc alleles (Figure 4\u2014figure supplement 2A,B,C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by qPCR data shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:38:02.158377Z"
+    },
+    {
+      "id": "0347acb4-7b26-46c6-9a94-e86799a576b2",
+      "content_id": "c6ce9186-a758-4b08-b334-6076dae96782",
+      "claim_id": "C44",
+      "claim": "Knockdown of smg-4 blocked the transcriptional adaptation response in all three unc-89(ptc) alleles but not in the act-5(ptc) allele.",
+      "claim_type": "EXPLICIT",
+      "source": "Knockdown of smg-2 and smg-4 blocked the transcriptional adaptation response in all three unc-89(ptc) alleles but not in the act-5(ptc) allele (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by qPCR data shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:38:02.158377Z"
+    },
+    {
+      "id": "966787d0-37d0-4437-b430-9985edb0d5b8",
+      "content_id": "c6ce9186-a758-4b08-b334-6076dae96782",
+      "claim_id": "C45",
+      "claim": "Knockdown of smg-6 blocked the transcriptional adaptation response in the act-5(ptc) allele but not in the three unc-89(ptc) alleles.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, knockdown of smg-6 blocked the transcriptional adaptation response in the act-5(ptc) allele but not in the three unc-89(ptc) alleles (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by qPCR data shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:38:02.158377Z"
+    },
+    {
+      "id": "345b7c22-678f-4e64-abc1-285d0fefc1e7",
+      "content_id": "c6ce9186-a758-4b08-b334-6076dae96782",
+      "claim_id": "C46",
+      "claim": "There is a differential requirement for Upf1 and Smg6 between gene models in mouse cells.",
+      "claim_type": "EXPLICIT",
+      "source": "A differential requirement for Upf1 and Smg6 between gene models was also observed in mouse cells (El-Brolosy et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:38:02.158377Z"
+    },
+    {
+      "id": "41cd58da-2cba-46d1-9c18-d0240d6d87f8",
+      "content_id": "c6ce9186-a758-4b08-b334-6076dae96782",
+      "claim_id": "C47",
+      "claim": "Analysis of double mutant strains confirmed the observations made in the RNAi experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "Analysis of the double mutant strains confirmed the observations made in the RNAi experiments (Figure 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by qPCR data shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:38:02.158377Z"
+    },
+    {
+      "id": "bfbe078f-f2f0-4ca3-bb07-ae5e2ebc4d57",
+      "content_id": "c6ce9186-a758-4b08-b334-6076dae96782",
+      "claim_id": "C48",
+      "claim": "smg-2 and smg-4 are not required for transcriptional adaptation in the act-5 model.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, we found that the levels of act-5 mRNA were lower in smg-2; act-5(ptc) and smg-4; act-5(ptc) double mutants than in smg-2 and smg-4 single mutants, and that the levels of the adapting gene's mRNA were higher (Figure 5\u2014source data 1), further indicating that smg-2 and smg-4 are not required for transcriptional adaptation in the act-5 model.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on qPCR data from double mutants shown in Figure 5.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:38:02.158377Z"
+    },
+    {
+      "id": "8a84918e-f86a-45c8-9c70-3444e8b22109",
+      "content_id": "c6ce9186-a758-4b08-b334-6076dae96782",
+      "claim_id": "C49",
+      "claim": "smg-4 is required for transcriptional adaptation in the unc-89 model.",
+      "claim_type": "EXPLICIT",
+      "source": "However, in smg-4; unc-89(ptc) animals, the mRNA levels of the mutant (unc-89) and adapting (sax-3) genes were similar to those in smg-4 single mutants. Furthermore, these animals exhibited a mild uncoordinated phenotype and grew slowly, suggesting a lack of functional compensation. These data further indicate that smg-4 is required for transcriptional adaptation in the unc-89 model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on qPCR data and phenotypic observations from double mutants.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:38:02.158377Z"
+    },
+    {
+      "id": "31d3d81a-7da2-4f48-b749-5f56155605fc",
+      "content_id": "c6ce9186-a758-4b08-b334-6076dae96782",
+      "claim_id": "C50",
+      "claim": "smg-6; act-5(ptc) viable mutants could not be obtained due to severe larval lethality, possibly as a consequence of blocking the transcriptional adaptation response.",
+      "claim_type": "EXPLICIT",
+      "source": "We could not obtain smg-6; act-5(ptc) viable mutants due to severe larval lethality, possibly as a consequence of blocking the transcriptional adaptation response, that is act-3 upregulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the authors' observations and speculation about the cause of lethality.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:38:02.158377Z"
+    },
+    {
+      "id": "ac744e47-f3fc-4bf8-9471-b75ab0f4565b",
+      "content_id": "c6ce9186-a758-4b08-b334-6076dae96782",
+      "claim_id": "C51",
+      "claim": "smg-6 is not required for transcriptional adaptation in the unc-89 model.",
+      "claim_type": "EXPLICIT",
+      "source": "smg-6; unc-89(ptc) mutants exhibited lower levels of unc-89 mRNA and higher levels of adapting gene mRNA in comparison to single smg-6 mutants (Figure 5\u2014source data 1) similar to the observations in the RNAi experiments. Thus, there are differential requirements for decay factors in different models of transcriptional adaptation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on qPCR data from double mutants.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:38:02.158377Z"
+    },
+    {
+      "id": "621f7d26-bfb7-4aee-b840-f675863da6d6",
+      "content_id": "c6ce9186-a758-4b08-b334-6076dae96782",
+      "claim_id": "C52",
+      "claim": "There are differential requirements for decay factors in different models of transcriptional adaptation.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, there are differential requirements for decay factors in different models of transcriptional adaptation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the differential effects of smg-2, smg-4, and smg-6 in the act-5 and unc-89 models.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:38:02.158377Z"
+    },
+    {
+      "id": "1195336a-1b84-45fb-bc13-2044224dbdfc",
+      "content_id": "c6ce9186-a758-4b08-b334-6076dae96782",
+      "claim_id": "C53",
+      "claim": "Xrn1 is involved in regulating the transcriptional adaptation response in mouse cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous data indicate that the exonuclease Xrn1 is involved in regulating the transcriptional adaptation response in mouse cells (El-Brolosy et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:38:02.158377Z"
+    },
+    {
+      "id": "18573092-f23b-499d-ab58-951bfd6a8913",
+      "content_id": "c6ce9186-a758-4b08-b334-6076dae96782",
+      "claim_id": "C54",
+      "claim": "Knocking down xrn-1 led to mutant (act-5 and unc-89) mRNA levels similar to wild-type levels.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that knocking down xrn-1 or paxt-1 led to mutant (act-5 and unc-89) mRNA levels similar to wild-type levels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by qPCR data from RNAi experiments shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:38:02.158377Z"
+    },
+    {
+      "id": "fc538bd3-e3fd-4ae6-b469-f977e6ebd1f6",
+      "content_id": "c6ce9186-a758-4b08-b334-6076dae96782",
+      "claim_id": "C55",
+      "claim": "Knocking down paxt-1 led to mutant (act-5 and unc-89) mRNA levels similar to wild-type levels.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that knocking down xrn-1 or paxt-1 led to mutant (act-5 and unc-89) mRNA levels similar to wild-type levels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by qPCR data from RNAi experiments shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:38:02.158377Z"
+    },
+    {
+      "id": "a099b167-4bf4-4c04-8cc0-61e625734313",
+      "content_id": "c6ce9186-a758-4b08-b334-6076dae96782",
+      "claim_id": "C56",
+      "claim": "Knocking down xrn-1 blocked the transcriptional adaptation response.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that knocking down xrn-1 or paxt-1 led to mutant (act-5 and unc-89) mRNA levels similar to wild-type levels. Furthermore, the transcriptional adaptation response was blocked, suggesting that the degradation and processing of mutant transcripts is important to trigger transcriptional adaptation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by qPCR data from RNAi experiments shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:38:02.158377Z"
+    },
+    {
+      "id": "c9ec6942-c3d5-48fc-af71-02d8b237e941",
+      "content_id": "c6ce9186-a758-4b08-b334-6076dae96782",
+      "claim_id": "C57",
+      "claim": "Knocking down paxt-1 blocked the transcriptional adaptation response.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that knocking down xrn-1 or paxt-1 led to mutant (act-5 and unc-89) mRNA levels similar to wild-type levels. Furthermore, the transcriptional adaptation response was blocked, suggesting that the degradation and processing of mutant transcripts is important to trigger transcriptional adaptation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by qPCR data from RNAi experiments shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:38:02.158377Z"
+    },
+    {
+      "id": "3d8d9d78-baf1-4c9b-bc9d-23091403ec86",
+      "content_id": "c6ce9186-a758-4b08-b334-6076dae96782",
+      "claim_id": "C58",
+      "claim": "The degradation and processing of mutant transcripts is important to trigger transcriptional adaptation.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the transcriptional adaptation response was blocked, suggesting that the degradation and processing of mutant transcripts is important to trigger transcriptional adaptation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the observation that blocking exonucleases prevents transcriptional adaptation.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:38:02.158377Z"
+    },
+    {
+      "id": "e8f20127-0a67-4690-b369-99373453a3be",
+      "content_id": "c6ce9186-a758-4b08-b334-6076dae96782",
+      "claim_id": "C59",
+      "claim": "SR proteins are components of the exon junction complex.",
+      "claim_type": "EXPLICIT",
+      "source": "Multiple SR proteins are components of the EJC (Singh et al., 2012), consistent with a previously suggested role of SR proteins in mRNA surveillance (Zhang and Krainer, 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:38:02.158377Z"
+    },
+    {
+      "id": "918abb2b-4e56-4eb8-b5a3-9e668e743f6f",
+      "content_id": "c6ce9186-a758-4b08-b334-6076dae96782",
+      "claim_id": "C60",
+      "claim": "Knocking down spk-1 resulted in mutant mRNA levels similar to wild-type levels.",
+      "claim_type": "EXPLICIT",
+      "source": "Knocking down the SRPK gene spk-1 resulted in mutant mRNA levels similar to wild-type levels, and blocked transcriptional adaptation in all act-5 and unc-89 ptc alleles (Figure 4\u2014figure supplement 2A,B,C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by qPCR data shown in Figure 4\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:38:02.158377Z"
+    },
+    {
+      "id": "57e4fa8f-c61b-43f9-af80-2001aa1591a7",
+      "content_id": "c6ce9186-a758-4b08-b334-6076dae96782",
+      "claim_id": "C61",
+      "claim": "Knocking down spk-1 blocked transcriptional adaptation in all act-5 and unc-89 ptc alleles.",
+      "claim_type": "EXPLICIT",
+      "source": "Knocking down the SRPK gene spk-1 resulted in mutant mRNA levels similar to wild-type levels, and blocked transcriptional adaptation in all act-5 and unc-89 ptc alleles (Figure 4\u2014figure supplement 2A,B,C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by qPCR data shown in Figure 4\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:38:02.158377Z"
+    },
+    {
+      "id": "6dbc7eee-9948-4d52-8bdd-e061abb9626d",
+      "content_id": "c6ce9186-a758-4b08-b334-6076dae96782",
+      "claim_id": "C62",
+      "claim": "rsp-6 is a regulator of transcriptional adaptation in the act-5 model.",
+      "claim_type": "EXPLICIT",
+      "source": "We also identified the SR family gene rsp-6 as a regulator of transcriptional adaptation in the act-5 model, but were unable to identify a single SR protein whose knockdown influenced the transcriptional adaptation response in the unc-89 model (Figure 4\u2014source data 1)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by qPCR data from RNAi experiments shown in Figure 4\u2014source data 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:38:02.158377Z"
+    },
+    {
+      "id": "93e4699c-11ff-4ee6-b164-8331fe11d05e",
+      "content_id": "c6ce9186-a758-4b08-b334-6076dae96782",
+      "claim_id": "C63",
+      "claim": "The argonaute protein ERGO-1 regulates the transcriptional adaptation response downstream of mRNA decay.",
+      "claim_type": "EXPLICIT",
+      "source": "We tested several pathways (Figure 4\u2014source data 1) and observed that the argonaute proteins ERGO-1 and NRDE-3, the RNA-dependent RNA polymerase RRF-3, as well as the ribonuclease DCR-1 regulate the transcriptional adaptation response downstream of mRNA decay (i.e., the mutant mRNA was still degraded but the adapting gene was not upregulated) (Figure 4, Figure 4\u2014figure supplement 3A,B,C,D, Figure 4\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by qPCR data from RNAi experiments shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:38:02.158377Z"
+    },
+    {
+      "id": "b57aaa09-37f8-4999-b58d-62304bfc1931",
+      "content_id": "c6ce9186-a758-4b08-b334-6076dae96782",
+      "claim_id": "C64",
+      "claim": "The argonaute protein NRDE-3 regulates the transcriptional adaptation response downstream of mRNA decay.",
+      "claim_type": "EXPLICIT",
+      "source": "We tested several pathways (Figure 4\u2014source data 1) and observed that the argonaute proteins ERGO-1 and NRDE-3, the RNA-dependent RNA polymerase RRF-3, as well as the ribonuclease DCR-1 regulate the transcriptional adaptation response downstream of mRNA decay (i.e., the mutant mRNA was still degraded but the adapting gene was not upregulated) (Figure 4, Figure 4\u2014figure supplement 3A,B,C,D, Figure 4\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by qPCR data from RNAi experiments shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:38:02.158377Z"
+    },
+    {
+      "id": "c9b93b68-8486-43f4-8570-9a3b74055cee",
+      "content_id": "c6ce9186-a758-4b08-b334-6076dae96782",
+      "claim_id": "C65",
+      "claim": "The RNA-dependent RNA polymerase RRF-3 regulates the transcriptional adaptation response downstream of mRNA decay.",
+      "claim_type": "EXPLICIT",
+      "source": "We tested several pathways (Figure 4\u2014source data 1) and observed that the argonaute proteins ERGO-1 and NRDE-3, the RNA-dependent RNA polymerase RRF-3, as well as the ribonuclease DCR-1 regulate the transcriptional adaptation response downstream of mRNA decay (i.e., the mutant mRNA was still degraded but the adapting gene was not upregulated) (Figure 4, Figure 4\u2014figure supplement 3A,B,C,D, Figure 4\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by qPCR data from RNAi experiments shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:38:02.158377Z"
+    },
+    {
+      "id": "e6923e35-6bba-4a53-9517-168d48cac861",
+      "content_id": "c6ce9186-a758-4b08-b334-6076dae96782",
+      "claim_id": "C66",
+      "claim": "The ribonuclease DCR-1 regulates the transcriptional adaptation response downstream of mRNA decay.",
+      "claim_type": "EXPLICIT",
+      "source": "We tested several pathways (Figure 4\u2014source data 1) and observed that the argonaute proteins ERGO-1 and NRDE-3, the RNA-dependent RNA polymerase RRF-3, as well as the ribonuclease DCR-1 regulate the transcriptional adaptation response downstream of mRNA decay (i.e., the mutant mRNA was still degraded but the adapting gene was not upregulated) (Figure 4, Figure 4\u2014figure supplement 3A,B,C,D, Figure 4\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by qPCR data from RNAi experiments shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:38:02.158377Z"
+    },
+    {
+      "id": "b279015f-92a8-4680-8cc2-386f0b3b1f17",
+      "content_id": "c6ce9186-a758-4b08-b334-6076dae96782",
+      "claim_id": "C67",
+      "claim": "ERGO-1, NRDE-3, RRF-3, and DCR-1 are involved in 26G RNA biogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, ERGO-1, NRDE-3, RRF-3, and DCR-1 are involved in 26G RNA biogenesis (Pavelec et al., 2009; Vasale et al., 2010; Fischer, 2010; Grishok, 2013; Yvert, 2014), suggesting that 26G RNAs could play a role in transcriptional adaptation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:38:02.158377Z"
+    },
+    {
+      "id": "ecff0058-8540-45bc-bde7-59625e52a315",
+      "content_id": "c6ce9186-a758-4b08-b334-6076dae96782",
+      "claim_id": "C68",
+      "claim": "26G RNAs could play a role in transcriptional adaptation.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, ERGO-1, NRDE-3, RRF-3, and DCR-1 are involved in 26G RNA biogenesis (Pavelec et al., 2009; Vasale et al., 2010; Fischer, 2010; Grishok, 2013; Yvert, 2014), suggesting that 26G RNAs could play a role in transcriptional adaptation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on the involvement of these factors in both 26G RNA biogenesis and transcriptional adaptation.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:38:02.158377Z"
+    },
+    {
+      "id": "5f6995e6-4832-455e-be9e-444232e8b02c",
+      "content_id": "c6ce9186-a758-4b08-b334-6076dae96782",
+      "claim_id": "C69",
+      "claim": "mRNA decay as well as small RNA biogenesis and transport are critical in triggering transcriptional adaptation.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these results indicate that mRNA decay as well as small RNA biogenesis and transport are critical in triggering transcriptional adaptation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the experimental data showing that factors involved in these processes are required for transcriptional adaptation.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:38:02.158377Z"
+    },
+    {
+      "id": "066178e3-35a2-489f-b971-d58b24e1d285",
+      "content_id": "c6ce9186-a758-4b08-b334-6076dae96782",
+      "claim_id": "C70",
+      "claim": "The transcriptional adaptation response consists of at least three critical processes: mutant mRNA decay, sRNA maturation and sRNA transport.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on the factors identified in this study, we hypothesize that the transcriptional adaptation response consists of at least three critical processes: mutant mRNA decay, sRNA maturation and sRNA transport.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis based on the experimental findings in the study.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:38:02.158377Z"
+    },
+    {
+      "id": "ca1939e0-483b-43c5-b23c-1a81725a4dce",
+      "content_id": "c6ce9186-a758-4b08-b334-6076dae96782",
+      "claim_id": "C71",
+      "claim": "The machinery for mutant mRNA decay can be gene-specific.",
+      "claim_type": "EXPLICIT",
+      "source": "In terms of mutant mRNA decay, we found that the machinery can be gene-specific.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the differential requirements for SMG-2, SMG-4, and SMG-6 in different models.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:38:02.158377Z"
+    },
+    {
+      "id": "6e2900e7-0058-41ab-a31f-91867b9bb8f1",
+      "content_id": "c6ce9186-a758-4b08-b334-6076dae96782",
+      "claim_id": "C72",
+      "claim": "SMG-6 is involved in act-5(ptc) mRNA decay.",
+      "claim_type": "EXPLICIT",
+      "source": "In our experiments, SMG-6 is involved in act-5(ptc) mRNA decay, while SMG-2 (UPF1) and SMG-4 (UPF3) impact unc-89(ptc) mRNA decay.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by qPCR data from RNAi and double mutant experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:38:02.158377Z"
+    },
+    {
+      "id": "6210bc36-02c0-42f7-aaad-77a710830ef5",
+      "content_id": "c6ce9186-a758-4b08-b334-6076dae96782",
+      "claim_id": "C73",
+      "claim": "SMG-2 (UPF1) and SMG-4 (UPF3) impact unc-89(ptc) mRNA decay.",
+      "claim_type": "EXPLICIT",
+      "source": "In our experiments, SMG-6 is involved in act-5(ptc) mRNA decay, while SMG-2 (UPF1) and SMG-4 (UPF3) impact unc-89(ptc) mRNA decay.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by qPCR data from RNAi and double mutant experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:38:02.158377Z"
+    },
+    {
+      "id": "4b18d831-41a3-424d-8096-aff462f3e0d3",
+      "content_id": "c6ce9186-a758-4b08-b334-6076dae96782",
+      "claim_id": "C74",
+      "claim": "siRNA-mediated knock down of SMG6 blocked the transcriptional adaptation response in Actb mutant mESCs but had little influence on Rela mutant MEFs.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar observations were made in mouse Actb and Rela mutant cells in which siRNA-mediated knock down of SMG6 blocked the transcriptional adaptation response in Actb mutant mESCs but had little influence on Rela mutant MEFs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:38:02.158377Z"
+    },
+    {
+      "id": "51066523-196a-41c2-b1da-35aee8f8eea6",
+      "content_id": "c6ce9186-a758-4b08-b334-6076dae96782",
+      "claim_id": "C75",
+      "claim": "siRNA-mediated knockdown of UPF1 blocked the transcriptional adaptation response in Rela mutant MEFs but not in Actb mutant mESCs.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, siRNA-mediated knockdown of UPF1 blocked the transcriptional adaptation response in Rela mutant MEFs but not in Actb mutant mESCs (El-Brolosy et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:38:02.158377Z"
+    },
+    {
+      "id": "68ef6120-01ae-49f1-9bd7-b0c5689a8920",
+      "content_id": "c6ce9186-a758-4b08-b334-6076dae96782",
+      "claim_id": "C76",
+      "claim": "Mutant mRNA decay can involve different factors in the same organism.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistently, mutant mRNA decay can involve different factors in the same organism (Nickless et al., 2017), possibly due to differential expression of the decay factors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:38:02.158377Z"
+    },
+    {
+      "id": "eae97444-7c79-404f-9654-5f4c90741c01",
+      "content_id": "c6ce9186-a758-4b08-b334-6076dae96782",
+      "claim_id": "C77",
+      "claim": "SMG6 could function as a decay factor independent of NMD.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we cannot exclude the possibility that SMG6 could function as a decay factor independent of NMD, especially since it has been reported to have NMD-independent cleavage activity (Gehring et al., 2005; Glavan et al., 2006; Huntzinger et al., 2008; Chakrabarti et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on prior work showing NMD-independent activity of SMG6.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:38:02.158377Z"
+    },
+    {
+      "id": "f568ac62-fb18-4538-b108-33ebfaf3ab16",
+      "content_id": "c6ce9186-a758-4b08-b334-6076dae96782",
+      "claim_id": "C78",
+      "claim": "Transcriptional adaptation can be triggered by the degradation products of the mutant mRNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Transcriptional adaptation can be triggered by the degradation products of the mutant mRNA (El-Brolosy et al., 2019), which could seed the generation of sRNAs (Mattick and Makunin, 2005; Boivin et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:38:02.158377Z"
+    },
+    {
+      "id": "36cadeb3-27f2-4dd8-b521-c7e29f3652d0",
+      "content_id": "c6ce9186-a758-4b08-b334-6076dae96782",
+      "claim_id": "C79",
+      "claim": "The degradation products of mutant mRNA could seed the generation of sRNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "Transcriptional adaptation can be triggered by the degradation products of the mutant mRNA (El-Brolosy et al., 2019), which could seed the generation of sRNAs (Mattick and Makunin, 2005; Boivin et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on prior work about RNA degradation and sRNA generation.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:38:02.158377Z"
+    },
+    {
+      "id": "4f20d83c-6fc2-48d7-8ba2-627217996d53",
+      "content_id": "c6ce9186-a758-4b08-b334-6076dae96782",
+      "claim_id": "C80",
+      "claim": "RRF-3 is an RNA-dependent RNA polymerase involved in the biogenesis of 26-nucleotide RNAs with 5' bias for guanosine monophosphate (26G-RNAs).",
+      "claim_type": "EXPLICIT",
+      "source": "RRF-3 is an RNA-dependent RNA polymerase involved along with the DICER complex in the biogenesis of 26-nucleotide RNAs with 5' bias for guanosine monophosphate (26G-RNAs) (Han et al., 2009; Gent et al., 2010; Vasale et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:38:02.158377Z"
+    },
+    {
+      "id": "2030803a-8f66-4aad-8b3e-b58fe2f277a5",
+      "content_id": "c6ce9186-a758-4b08-b334-6076dae96782",
+      "claim_id": "C81",
+      "claim": "26G sRNAs associate with the Argonaute protein ERGO-1.",
+      "claim_type": "EXPLICIT",
+      "source": "26G sRNAs associate with the Argonaute protein ERGO-1, which is involved in the further maturation of sRNAs and is required to separate the sRNA duplex (Han et al., 2009; Gent et al., 2010; Fischer et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:38:02.158377Z"
+    },
+    {
+      "id": "d42dbf48-f724-4683-a82d-eb52ac171bd7",
+      "content_id": "c6ce9186-a758-4b08-b334-6076dae96782",
+      "claim_id": "C82",
+      "claim": "ERGO-1 is involved in the further maturation of sRNAs and is required to separate the sRNA duplex.",
+      "claim_type": "EXPLICIT",
+      "source": "26G sRNAs associate with the Argonaute protein ERGO-1, which is involved in the further maturation of sRNAs and is required to separate the sRNA duplex (Han et al., 2009; Gent et al., 2010; Fischer et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:38:02.158377Z"
+    },
+    {
+      "id": "722d09ff-7897-4454-aa4f-5edaaf675062",
+      "content_id": "c6ce9186-a758-4b08-b334-6076dae96782",
+      "claim_id": "C83",
+      "claim": "Mature sRNAs interacting with Argonaute proteins can direct post-transcriptional gene silencing.",
+      "claim_type": "EXPLICIT",
+      "source": "Mature sRNAs interacting with Argonaute proteins can direct post-transcriptional gene silencing (Vasale et al., 2010; Phillips et al., 2012), or be transported into the nucleus (Guang et al., 2008; Buckley et al., 2012; Shirayama et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:38:02.158377Z"
+    },
+    {
+      "id": "2df8d9f1-6111-468f-bccf-5510d595dfda",
+      "content_id": "c6ce9186-a758-4b08-b334-6076dae96782",
+      "claim_id": "C84",
+      "claim": "Mature sRNAs interacting with Argonaute proteins can be transported into the nucleus.",
+      "claim_type": "EXPLICIT",
+      "source": "Mature sRNAs interacting with Argonaute proteins can direct post-transcriptional gene silencing (Vasale et al., 2010; Phillips et al., 2012), or be transported into the nucleus (Guang et al., 2008; Buckley et al., 2012; Shirayama et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:38:02.158377Z"
+    },
+    {
+      "id": "5a3534f6-4ee3-407d-bdef-5d7d7a1946bb",
+      "content_id": "c6ce9186-a758-4b08-b334-6076dae96782",
+      "claim_id": "C85",
+      "claim": "NRDE-3 is an Argonaute protein involved in transporting sRNAs into the nucleus.",
+      "claim_type": "EXPLICIT",
+      "source": "NRDE-3 is another Argonaute protein involved in transporting sRNAs into the nucleus (Guang et al., 2008)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:38:02.158377Z"
+    },
+    {
+      "id": "7bceca65-31cd-43e7-ad96-b9f3722ee016",
+      "content_id": "c6ce9186-a758-4b08-b334-6076dae96782",
+      "claim_id": "C86",
+      "claim": "Knocking down NRDE-3 blocked transcriptional adaptation while not affecting mutant mRNA levels.",
+      "claim_type": "EXPLICIT",
+      "source": "NRDE-3 is another Argonaute protein involved in transporting sRNAs into the nucleus (Guang et al., 2008), and we found that knocking it down, and knocking it out, blocked transcriptional adaptation while not affecting mutant mRNA levels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by qPCR data from RNAi and double mutant experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:38:02.158377Z"
+    },
+    {
+      "id": "923d16dc-69ee-47c5-8c93-ced9c1bf4644",
+      "content_id": "c6ce9186-a758-4b08-b334-6076dae96782",
+      "claim_id": "C87",
+      "claim": "Knocking out NRDE-3 blocked transcriptional adaptation while not affecting mutant mRNA levels.",
+      "claim_type": "EXPLICIT",
+      "source": "NRDE-3 is another Argonaute protein involved in transporting sRNAs into the nucleus (Guang et al., 2008), and we found that knocking it down, and knocking it out, blocked transcriptional adaptation while not affecting mutant mRNA levels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by qPCR data from double mutant experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:38:02.158377Z"
+    },
+    {
+      "id": "f879ec0d-1f3c-4a27-b114-f7133fd941ee",
+      "content_id": "c6ce9186-a758-4b08-b334-6076dae96782",
+      "claim_id": "C88",
+      "claim": "sRNAs can function as activators of gene expression.",
+      "claim_type": "EXPLICIT",
+      "source": "While sRNAs are best known as repressors of gene expression, they can also function as activators (Li et al., 2006; Janowski et al., 2006; Turunen et al., 2009; Portnoy et al., 2011; Wedeles et al., 2013; Li, 2017), although the underlying mechanisms remain poorly understood (Portnoy et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:38:02.158377Z"
+    },
+    {
+      "id": "4f304921-7064-492d-86cb-cd4024a08aa3",
+      "content_id": "c6ce9186-a758-4b08-b334-6076dae96782",
+      "claim_id": "C89",
+      "claim": "Some activating sRNAs interact with Argonaute proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Some of these activating sRNAs interact with Argonaute proteins (Seth et al., 2013), and they can target gene regulatory sequences including promoters.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:38:02.158377Z"
+    },
+    {
+      "id": "0c096943-c5f5-44c1-bde3-347133e7ac4c",
+      "content_id": "c6ce9186-a758-4b08-b334-6076dae96782",
+      "claim_id": "C90",
+      "claim": "Activating sRNAs can target gene regulatory sequences including promoters.",
+      "claim_type": "EXPLICIT",
+      "source": "Some of these activating sRNAs interact with Argonaute proteins (Seth et al., 2013), and they can target gene regulatory sequences including promoters.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:38:02.158377Z"
+    },
+    {
+      "id": "ec5c7c2e-72ec-4f2e-93c6-f3ff097edb1c",
+      "content_id": "c6ce9186-a758-4b08-b334-6076dae96782",
+      "claim_id": "C91",
+      "claim": "C. elegans is a genetic model system to perform unbiased screens to help reveal further mechanisms of transcriptional adaptation.",
+      "claim_type": "EXPLICIT",
+      "source": "With this study, we have established C. elegans as a genetic model system to perform unbiased screens to help reveal further mechanisms of transcriptional adaptation, a newly uncovered phenomenon contributing to genetic robustness.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the successful demonstration of transcriptional adaptation in C. elegans.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:38:02.158377Z"
+    },
+    {
+      "id": "2765d1b6-284e-4ff2-adc6-260402a1ffc5",
+      "content_id": "c6ce9186-a758-4b08-b334-6076dae96782",
+      "claim_id": "C92",
+      "claim": "The PTC in the act-5(ptc) allele is 264 nucleotides from the next exon-intron junction.",
+      "claim_type": "EXPLICIT",
+      "source": "The PTC in the act-5(ptc) allele is 264 nucleotides from the next exon-intron junction and 888 nucleotides from the stop codon.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This information is provided in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:38:02.158377Z"
+    },
+    {
+      "id": "71ef4900-43ce-44ae-802c-5f3886d263be",
+      "content_id": "c6ce9186-a758-4b08-b334-6076dae96782",
+      "claim_id": "C93",
+      "claim": "The PTC in the act-5(ptc) allele is 888 nucleotides from the stop codon.",
+      "claim_type": "EXPLICIT",
+      "source": "The PTC in the act-5(ptc) allele is 264 nucleotides from the next exon-intron junction and 888 nucleotides from the stop codon.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This information is provided in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:38:02.158377Z"
+    },
+    {
+      "id": "8413acac-fb42-4198-8e5c-94b6199def49",
+      "content_id": "c6ce9186-a758-4b08-b334-6076dae96782",
+      "claim_id": "C94",
+      "claim": "The dt2017 deletion leads to a PTC which is located in the last exon (153 bases from the stop codon) and is thus predicted not to trigger NMD.",
+      "claim_type": "EXPLICIT",
+      "source": "The dt2017 deletion leads to a PTC which is located in the last exon (153 bases from the stop codon) and is thus predicted not to trigger NMD (Kashima et al., 2010; Lindeboom et al., 2016).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on the position of the PTC and knowledge of NMD rules, supported by citations.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:38:02.158377Z"
+    },
+    {
+      "id": "b73e073c-d695-485e-a7d6-4a63d05b3c04",
+      "content_id": "c6ce9186-a758-4b08-b334-6076dae96782",
+      "claim_id": "C95",
+      "claim": "act-5p::rfp extrachromosomal reporter expression was observed in the intestine in 153 of 300 WT animals.",
+      "claim_type": "EXPLICIT",
+      "source": "act-5p::rfp extrachromosomal reporter expression was observed in the intestine in 153 of 300 WT animals.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is quantitative data from the reporter expression experiments shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:38:02.158377Z"
+    },
+    {
+      "id": "1b5fa05f-10f6-48c3-a900-d6d1a8c0116a",
+      "content_id": "c6ce9186-a758-4b08-b334-6076dae96782",
+      "claim_id": "C96",
+      "claim": "act-3p::rfp extrachromosomal reporter expression was observed in the pharynx in 182 of 400 WT animals.",
+      "claim_type": "EXPLICIT",
+      "source": "act-3p::rfp extrachromosomal reporter expression was observed in the pharynx in 182 of 400 WT animals.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is quantitative data from the reporter expression experiments shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:38:02.158377Z"
+    },
+    {
+      "id": "50e9e39c-c406-4151-ab00-9135013ccbf3",
+      "content_id": "c6ce9186-a758-4b08-b334-6076dae96782",
+      "claim_id": "C97",
+      "claim": "act-3p::rfp extrachromosomal reporter expression was observed in the pharynx and intestine in 138 of 320 act-5(ptc) mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "act-3p::rfp extrachromosomal reporter expression was observed in the pharynx and intestine in 138 of 320 act-5(ptc) mutants.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is quantitative data from the reporter expression experiments shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:38:02.158377Z"
+    },
+    {
+      "id": "03c9ffef-1933-4c6c-bf6a-c44abcab951d",
+      "content_id": "c6ce9186-a758-4b08-b334-6076dae96782",
+      "claim_id": "C98",
+      "claim": "act-5p::rfp extrachromosomal reporter expression was observed in the pharynx and intestine in 148 of 300 act-5(ptc) mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "act-5p::rfp extrachromosomal reporter expression was observed in the pharynx and intestine in 148 of 300 act-5(ptc) mutants.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is quantitative data from the reporter expression experiments shown in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:38:02.158377Z"
+    },
+    {
+      "id": "3183e05a-6e2c-4664-87c3-85274e905cab",
+      "content_id": "c6ce9186-a758-4b08-b334-6076dae96782",
+      "claim_id": "C99",
+      "claim": "Most mutant alleles of act-5 cause severe phenotypes including lethality.",
+      "claim_type": "EXPLICIT",
+      "source": "Most mutant alleles of act-5 cause severe phenotypes including lethality (Estes et al., 2011; MacQueen et al., 2005), sterility (Cui et al., 2004), and paralysis (Etheridge et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:38:02.158377Z"
+    },
+    {
+      "id": "7fbb8e58-8110-4eeb-8c29-72241721fae5",
+      "content_id": "c6ce9186-a758-4b08-b334-6076dae96782",
+      "claim_id": "C100",
+      "claim": "Most mutant alleles of act-5 cause sterility.",
+      "claim_type": "EXPLICIT",
+      "source": "Most mutant alleles of act-5 cause severe phenotypes including lethality (Estes et al., 2011; MacQueen et al., 2005), sterility (Cui et al., 2004), and paralysis (Etheridge et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:38:02.158377Z"
+    },
+    {
+      "id": "4da9748b-c277-4fd1-aaf6-568f0d103371",
+      "content_id": "c6ce9186-a758-4b08-b334-6076dae96782",
+      "claim_id": "C101",
+      "claim": "Most mutant alleles of act-5 cause paralysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Most mutant alleles of act-5 cause severe phenotypes including lethality (Estes et al., 2011; MacQueen et al., 2005), sterility (Cui et al., 2004), and paralysis (Etheridge et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:38:02.158377Z"
+    },
+    {
+      "id": "1d04d072-82dc-4645-b13f-d520ff39ac8e",
+      "content_id": "c6ce9186-a758-4b08-b334-6076dae96782",
+      "claim_id": "C102",
+      "claim": "There is no significant difference in unc-89 and sax-3 expression in act-5(ptc) mutants compared to wild type.",
+      "claim_type": "EXPLICIT",
+      "source": "To test whether the observed changes in gene expression in act-5(ptc) and unc-89(ptc) mutants were specific, we measured unc-89 and sax-3 expression in act-5(ptc) mutants as well as act-5 and act-3 expression in unc-89(ptc) mutants. We observed no significant differences (Figure 3\u2014figure supplement 3), suggesting that there is specificity to the gene expression changes.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by qPCR data shown in Figure 3\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:38:02.158377Z"
+    },
+    {
+      "id": "a9f7d4fb-31ad-4ff9-835c-1f878fabe582",
+      "content_id": "c6ce9186-a758-4b08-b334-6076dae96782",
+      "claim_id": "C103",
+      "claim": "There is no significant difference in act-5 and act-3 expression in unc-89(ptc) mutants compared to wild type.",
+      "claim_type": "EXPLICIT",
+      "source": "To test whether the observed changes in gene expression in act-5(ptc) and unc-89(ptc) mutants were specific, we measured unc-89 and sax-3 expression in act-5(ptc) mutants as well as act-5 and act-3 expression in unc-89(ptc) mutants. We observed no significant differences (Figure 3\u2014figure supplement 3), suggesting that there is specificity to the gene expression changes.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by qPCR data shown in Figure 3\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:38:02.158377Z"
+    },
+    {
+      "id": "31a514e4-6661-4837-a05b-965c29070475",
+      "content_id": "c6ce9186-a758-4b08-b334-6076dae96782",
+      "claim_id": "C104",
+      "claim": "There is specificity to the gene expression changes in transcriptional adaptation.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed no significant differences (Figure 3\u2014figure supplement 3), suggesting that there is specificity to the gene expression changes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the observation that unrelated genes are not affected in the mutants.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:38:02.158377Z"
+    },
+    {
+      "id": "469aa56d-1af8-4c0e-bac0-183a3f14d435",
+      "content_id": "c6ce9186-a758-4b08-b334-6076dae96782",
+      "claim_id": "C105",
+      "claim": "Knocking down drsh-1 does not affect transcriptional adaptation.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, when we knocked down drsh-1, a gene involved in miRNA biogenesis (Denli et al., 2004), we saw no significant changes in the mRNA levels of the mutant or adapting genes compared to control (Figure 4\u2014figure supplement 1A,B,C,D), suggesting that drsh-1 is not involved in regulating transcriptional adaptation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by qPCR data shown in Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:38:02.158377Z"
+    },
+    {
+      "id": "a88f8f53-03ce-41da-94e8-8256568b72e0",
+      "content_id": "c6ce9186-a758-4b08-b334-6076dae96782",
+      "claim_id": "C106",
+      "claim": "UPF1, SMG6, and XRN1 were reported to be differentially required in various zebrafish embryo and mouse cell line models of transcriptional adaptation.",
+      "claim_type": "EXPLICIT",
+      "source": "Transcriptional adaptation requires the activity of decay factors (El-Brolosy et al., 2019; Ma et al., 2019), and UPF1, SMG6, and XRN1 were reported to be differentially required in various zebrafish embryo and mouse cell line models of transcriptional adaptation (El-Brolosy et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:38:02.158377Z"
+    },
+    {
+      "id": "bf201001-2290-4d5d-8aa1-5d2936d50077",
+      "content_id": "c6ce9186-a758-4b08-b334-6076dae96782",
+      "claim_id": "C107",
+      "claim": "smg-4; unc-89(ptc) animals exhibited a mild uncoordinated phenotype and grew slowly.",
+      "claim_type": "EXPLICIT",
+      "source": "However, in smg-4; unc-89(ptc) animals, the mRNA levels of the mutant (unc-89) and adapting (sax-3) genes were similar to those in smg-4 single mutants. Furthermore, these animals exhibited a mild uncoordinated phenotype and grew slowly, suggesting a lack of functional compensation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the authors' observations of the double mutant animals.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:38:02.158377Z"
+    },
+    {
+      "id": "188e97e8-2ce2-4ee1-9a08-c0738f517e5a",
+      "content_id": "c6ce9186-a758-4b08-b334-6076dae96782",
+      "claim_id": "C108",
+      "claim": "The phenotypes of smg-4; unc-89(ptc) animals suggest a lack of functional compensation.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, these animals exhibited a mild uncoordinated phenotype and grew slowly, suggesting a lack of functional compensation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the observed phenotypes.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:38:02.158377Z"
+    },
+    {
+      "id": "1faef7c8-cef9-4cd7-bef9-2588cd621df8",
+      "content_id": "c6ce9186-a758-4b08-b334-6076dae96782",
+      "claim_id": "C109",
+      "claim": "Double mutants of act-5(ptc) or unc-89(ptc) with ergo-1, nrde-3, and rrf-3 exhibited phenotypes comparable to the act-5 or unc-89 deletion alleles.",
+      "claim_type": "EXPLICIT",
+      "source": "These RNAi data were confirmed by analyzing double mutants of the act-5(ptc) or unc-89(ptc) alleles with ergo-1, nrde-3, and rrf-3 (Figure 5), and all these animals exhibited phenotypes comparable to the act-5 or unc-89 deletion alleles analyzed in this study including larval lethality, slow growth and uncoordinated movements, indicating lack of functional compensation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on the authors' observations of the double mutant animals.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:38:02.158377Z"
+    },
+    {
+      "id": "230901b4-b4cd-4160-858d-8437b70a80cd",
+      "content_id": "c6ce9186-a758-4b08-b334-6076dae96782",
+      "claim_id": "C110",
+      "claim": "Double mutants of act-5(ptc) or unc-89(ptc) with ergo-1, nrde-3, and rrf-3 showed larval lethality, slow growth and uncoordinated movements.",
+      "claim_type": "EXPLICIT",
+      "source": "These RNAi data were confirmed by analyzing double mutants of the act-5(ptc) or unc-89(ptc) alleles with ergo-1, nrde-3, and rrf-3 (Figure 5), and all these animals exhibited phenotypes comparable to the act-5 or unc-89 deletion alleles analyzed in this study including larval lethality, slow growth and uncoordinated movements, indicating lack of functional compensation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the authors' observations of the double mutant animals.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:38:02.158377Z"
+    },
+    {
+      "id": "67c846f6-4d03-4a2b-b047-6aa7dfea847c",
+      "content_id": "c6ce9186-a758-4b08-b334-6076dae96782",
+      "claim_id": "C111",
+      "claim": "The phenotypes of double mutants of act-5(ptc) or unc-89(ptc) with ergo-1, nrde-3, and rrf-3 indicate lack of functional compensation.",
+      "claim_type": "EXPLICIT",
+      "source": "These RNAi data were confirmed by analyzing double mutants of the act-5(ptc) or unc-89(ptc) alleles with ergo-1, nrde-3, and rrf-3 (Figure 5), and all these animals exhibited phenotypes comparable to the act-5 or unc-89 deletion alleles analyzed in this study including larval lethality, slow growth and uncoordinated movements, indicating lack of functional compensation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the observed phenotypes.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:38:02.158377Z"
+    },
+    {
+      "id": "03c6d995-fe03-4651-8379-1aa023a180d0",
+      "content_id": "c6ce9186-a758-4b08-b334-6076dae96782",
+      "claim_id": "C112",
+      "claim": "When transcriptional adaptation is disrupted, act-5(ptc) mutants do not survive.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, when we disrupted transcriptional adaptation, act-5(ptc) mutants did not survive.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the authors' observations of double mutants where transcriptional adaptation was blocked.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:38:02.158377Z"
+    },
+    {
+      "id": "21993753-c8b3-433a-9a01-d9a821ca12fa",
+      "content_id": "c6ce9186-a758-4b08-b334-6076dae96782",
+      "claim_id": "C113",
+      "claim": "ACT-3 and/or other proteins are able to compensate for the loss of ACT-5 when transcriptional adaptation is intact.",
+      "claim_type": "EXPLICIT",
+      "source": "As act-5(ptc) mutants do not exhibit any obvious phenotype when the transcriptional adaptation response is intact, we predict that ACT-3 and/or other proteins are able to compensate for the loss of ACT-5.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the lack of phenotype in act-5(ptc) mutants and the upregulation of act-3.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:38:02.158377Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "9793e031-96f4-4ba0-9145-00e7924ec3ec",
+      "content_id": "c6ce9186-a758-4b08-b334-6076dae96782",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Transcriptional adaptation occurs in C. elegans act-5 mutants. The act-5(ptc) allele exhibits reduced act-5 mRNA levels (likely due to nonsense-mediated decay from a premature termination codon) but shows upregulation of act-3 mRNA and pre-mRNA, despite having no obvious phenotype.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C13-C17 provide qPCR data showing reduced act-5 mRNA and increased act-3 mRNA/pre-mRNA in act-5(ptc) mutants (Figures 1A, 1B). The lack of phenotype (C15) despite reduced mutant mRNA supports transcriptional adaptation. The data are internally consistent and statistically significant (p<0.0005).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:38:02.158377Z"
+    },
+    {
+      "id": "628a3872-06b3-4fad-9d2b-0b4d7e9cb495",
+      "content_id": "c6ce9186-a758-4b08-b334-6076dae96782",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Deletion alleles of act-5 that do not trigger mRNA decay do not show transcriptional adaptation. The act-5(\u03941) and act-5(\u03942) deletion alleles show no significant changes in act-5 or act-3 mRNA levels compared to wild type.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C18-C23 demonstrate that deletion alleles lacking proper mRNA decay (C18-C19 for \u03941, C22-C23 for \u03942) do not trigger act-3 upregulation, supported by qPCR data in Figure 1. This negative control strengthens the conclusion that mutant mRNA, not loss of protein function, triggers adaptation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:38:02.158377Z"
+    },
+    {
+      "id": "7466c2b9-fae4-4064-9ba6-438ac8952868",
+      "content_id": "c6ce9186-a758-4b08-b334-6076dae96782",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The act-3 promoter is ectopically activated in intestinal tissue in act-5(ptc) mutants, demonstrating cell-autonomous transcriptional adaptation. An extrachromosomal act-3p::rfp reporter normally expressed only in the pharynx is also expressed in the intestine (where act-5 is normally expressed) in act-5(ptc) mutants.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26-C29 provide confocal microscopy data (Figure 2) showing tissue-specific reporter expression. The ectopic intestinal expression of act-3p::rfp in act-5(ptc) mutants (C29) supports cell-autonomous triggering (C30). Quantitative data are provided (C95-C98) showing expression in specific numbers of animals.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:38:02.158377Z"
+    },
+    {
+      "id": "f10c043b-7615-422c-9860-b7c9aa35f2a3",
+      "content_id": "c6ce9186-a758-4b08-b334-6076dae96782",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Three unc-89 premature termination codon alleles exhibit reduced mutant mRNA levels and upregulation of sax-3 at both mRNA and pre-mRNA levels, yet lack obvious phenotypes, representing a second example of transcriptional adaptation in C. elegans.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31-C35 are supported by qPCR data in Figure 3A-B showing reduced unc-89 mRNA and increased sax-3 mRNA/pre-mRNA across three independent alleles. The consistency across multiple alleles and measurement of both mRNA and pre-mRNA strengthens the conclusion of transcriptional upregulation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:38:02.158377Z"
+    },
+    {
+      "id": "9757ee64-c129-450c-9719-f1eb39d0896a",
+      "content_id": "c6ce9186-a758-4b08-b334-6076dae96782",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The unc-89 deletion allele that lacks mutant mRNA does not show sax-3 upregulation and exhibits severe phenotypes, demonstrating that mutant mRNA presence, not loss of protein function, is required for transcriptional adaptation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36-C40 show that the unc-89(\u0394) deletion lacks most transcripts and sax-3 upregulation (Figure 3B), while exhibiting sterility and growth defects (C38-C39). This negative control (C40-C42) demonstrates the requirement for mutant mRNA, paralleling the act-5 deletion results.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:38:02.158377Z"
+    },
+    {
+      "id": "20374abd-ddaa-4df7-9361-da191086981e",
+      "content_id": "c6ce9186-a758-4b08-b334-6076dae96782",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Different nonsense-mediated decay factors are differentially required for transcriptional adaptation in different gene models. SMG-6 is required for act-5(ptc) but not unc-89(ptc) adaptation, while SMG-2 and SMG-4 are required for unc-89(ptc) but not act-5(ptc) adaptation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C45 are supported by RNAi data in Figure 4 showing differential effects of smg knockdowns. The gene-specific requirements (C52, C72-C73) are confirmed by double mutant analysis (C47-C51) in Figure 5, providing independent validation of the RNAi results.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:38:02.158377Z"
+    },
+    {
+      "id": "cd419783-067d-4a99-add9-943a2b691100",
+      "content_id": "c6ce9186-a758-4b08-b334-6076dae96782",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Double mutant analysis confirms the differential requirements for NMD factors in transcriptional adaptation. The smg-4; unc-89(ptc) double mutants show blocked adaptation and phenotypic defects, while smg-2 and smg-4 are not required in the act-5 model.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47-C51 provide genetic confirmation of RNAi results through double mutant analysis (Figure 5). The phenotypic observations in smg-4; unc-89(ptc) animals (C49, C107-C108) and lethality of smg-6; act-5(ptc) (C50) provide functional validation of the molecular data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:38:02.158377Z"
+    },
+    {
+      "id": "ee3b12d6-d269-4abf-ab3d-1e2f4279538d",
+      "content_id": "c6ce9186-a758-4b08-b334-6076dae96782",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Exonucleases xrn-1 and paxt-1 are required for transcriptional adaptation. Knockdown of either gene restores mutant mRNA to wild-type levels and blocks the transcriptional adaptation response, indicating that degradation and processing of mutant transcripts is important.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54-C57 are supported by RNAi data in Figure 4 showing that xrn-1 and paxt-1 knockdown blocks adaptation in both models. The inference (C58) that degradation/processing is important is reasonable given the upstream position of these factors in the pathway.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:38:02.158377Z"
+    },
+    {
+      "id": "be4dff9f-0ef5-4221-8a0d-56e02ce6549e",
+      "content_id": "c6ce9186-a758-4b08-b334-6076dae96782",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The SR-protein kinase spk-1 is required for transcriptional adaptation in both act-5 and unc-89 models, while the SR protein rsp-6 is specifically required in the act-5 model.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C60-C61 are supported by RNAi data in Figure 4\u2014figure supplement 2 showing spk-1 knockdown blocks adaptation in both models. Claim C62 is supported by data in Figure 4\u2014source data 1 showing rsp-6 specificity for the act-5 model.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:38:02.158377Z"
+    },
+    {
+      "id": "8047b437-f62e-41f5-8e19-c67223c56c0f",
+      "content_id": "c6ce9186-a758-4b08-b334-6076dae96782",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Small RNA biogenesis and transport factors (ERGO-1, NRDE-3, RRF-3, DCR-1) regulate transcriptional adaptation downstream of mRNA decay. Knockdown of these factors maintains mutant mRNA degradation but blocks adapting gene upregulation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C63-C66 are supported by RNAi data in Figure 4 and Figure 4\u2014figure supplement 3 showing these factors act downstream of decay. The conclusion (C69) is validated by double mutant analysis (C109-C111) showing severe phenotypes when these pathways are disrupted.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:38:02.158377Z"
+    },
+    {
+      "id": "32cf3c95-26fd-424d-9520-5a251d18af54",
+      "content_id": "c6ce9186-a758-4b08-b334-6076dae96782",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Disruption of small RNA pathways blocks transcriptional adaptation and causes severe phenotypes. Double mutants with ergo-1, nrde-3, or rrf-3 show phenotypes comparable to deletion alleles, and act-5(ptc) mutants do not survive when adaptation is disrupted.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C86-C87 and C109-C112 are supported by double mutant analysis in Figure 5 showing blocked adaptation and severe phenotypes (larval lethality, slow growth, uncoordinated movements). This demonstrates functional importance of transcriptional adaptation for organismal fitness.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:38:02.158377Z"
+    },
+    {
+      "id": "155116e0-d69a-4e31-bf69-e5b672d3f71c",
+      "content_id": "c6ce9186-a758-4b08-b334-6076dae96782",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The gene expression changes in transcriptional adaptation are specific. Unrelated gene pairs (unc-89/sax-3 in act-5 mutants, act-5/act-3 in unc-89 mutants) show no significant expression changes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C102-C104 are supported by qPCR data in Figure 3\u2014figure supplement 3 showing no cross-effects between the two gene models. This negative control demonstrates specificity of the transcriptional adaptation response.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:38:02.158377Z"
+    },
+    {
+      "id": "f2275f3e-4e1c-440c-8efa-fd731b6c833d",
+      "content_id": "c6ce9186-a758-4b08-b334-6076dae96782",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The miRNA biogenesis factor drsh-1 is not involved in transcriptional adaptation, as its knockdown does not affect mutant or adapting gene expression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C105 is supported by qPCR data in Figure 4\u2014figure supplement 1 showing no effect of drsh-1 knockdown. This negative control helps define the specificity of the small RNA pathways involved.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:38:02.158377Z"
+    },
+    {
+      "id": "cf69cfb8-0130-4eeb-811e-3c43c90fcae8",
+      "content_id": "c6ce9186-a758-4b08-b334-6076dae96782",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The authors hypothesize that transcriptional adaptation consists of three critical processes: mutant mRNA decay, sRNA maturation, and sRNA transport, with gene-specific machinery for mRNA decay.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C70-C71 represent a synthesis of the experimental findings. The hypothesis (C70) is well-supported by the collective data showing requirements for decay factors, small RNA biogenesis factors, and nuclear transport factors. The gene-specificity (C71) is demonstrated by differential NMD factor requirements.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:38:02.158377Z"
+    },
+    {
+      "id": "568ce18c-2846-48ec-b366-ba1b22a93110",
+      "content_id": "c6ce9186-a758-4b08-b334-6076dae96782",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "ACT-3 and/or other proteins can functionally compensate for loss of ACT-5 when transcriptional adaptation is intact.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C113 is a reasonable inference based on the lack of phenotype in act-5(ptc) mutants (C15) combined with act-3 upregulation (C16-C17) and lethality when adaptation is blocked (C112). However, direct functional evidence for ACT-3 compensation is not provided.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:38:02.158377Z"
+    },
+    {
+      "id": "8105ff06-c695-462f-b68a-cb8b514401e1",
+      "content_id": "c6ce9186-a758-4b08-b334-6076dae96782",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "C. elegans is established as a genetic model system for studying transcriptional adaptation through unbiased screens.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C91 is supported by the successful demonstration of transcriptional adaptation in two independent gene models (act-5/act-3 and unc-89/sax-3) and the identification of multiple regulatory factors through candidate screening. The genetic tractability is demonstrated throughout the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:38:02.158377Z"
+    },
+    {
+      "id": "d06a2e91-4ddf-4f70-b280-e6b5840ffb4e",
+      "content_id": "c6ce9186-a758-4b08-b334-6076dae96782",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "26G RNAs could play a role in transcriptional adaptation based on the involvement of ERGO-1, NRDE-3, RRF-3, and DCR-1 in both 26G RNA biogenesis and transcriptional adaptation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C68 is speculative (acknowledged in the claim itself). While the factors involved are known to participate in 26G RNA biogenesis (C67), direct evidence that 26G RNAs mediate transcriptional adaptation is not provided. This remains a hypothesis requiring further testing.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:38:02.158377Z"
+    },
+    {
+      "id": "1465a0ae-e488-4b9a-a71f-db21a4cb8cbd",
+      "content_id": "c6ce9186-a758-4b08-b334-6076dae96782",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "SMG6 could function as a decay factor independent of NMD, based on reports of NMD-independent cleavage activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C77 is speculative and based on prior literature rather than data in this study. The authors acknowledge they cannot exclude this possibility, but provide no direct evidence for or against NMD-independent SMG6 function in their system.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:38:02.158377Z"
+    },
+    {
+      "id": "7dc26e8a-b02c-4b4a-bed2-e1fb3aab08b6",
+      "content_id": "c6ce9186-a758-4b08-b334-6076dae96782",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "The position of premature termination codons relative to exon-intron junctions and stop codons is documented for the act-5 alleles, with predictions about NMD triggering.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C92-C94 provide structural information from Figure 1\u2014figure supplement 1. The prediction that the dt2017 PTC in the last exon will not trigger NMD (C94) is based on established NMD rules and supported by citations, though not directly tested experimentally.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:38:02.158377Z"
+    },
+    {
+      "id": "6193375d-c095-4181-b823-2d95880743db",
+      "content_id": "c6ce9186-a758-4b08-b334-6076dae96782",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "Quantitative reporter expression data show tissue-specific patterns: act-5p::rfp is expressed in intestine in wild-type and mutant animals, while act-3p::rfp is expressed in pharynx in wild-type but in both pharynx and intestine in act-5(ptc) mutants.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C95-C98 provide quantitative data for the reporter experiments shown in Figures 2A-C and Figure 2\u2014figure supplement 1. The numbers of animals showing expression patterns support the qualitative observations and demonstrate reproducibility.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:38:02.158377Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "daad537e-d155-482c-919a-7560eaac82c2",
+      "result_id": "9793e031-96f4-4ba0-9145-00e7924ec3ec"
+    },
+    {
+      "claim_id": "66e5d749-8842-45e4-bff9-1e2e15d9b997",
+      "result_id": "9793e031-96f4-4ba0-9145-00e7924ec3ec"
+    },
+    {
+      "claim_id": "71abe3f3-fcf8-4291-9e48-14674c88b948",
+      "result_id": "9793e031-96f4-4ba0-9145-00e7924ec3ec"
+    },
+    {
+      "claim_id": "8fc0c506-6b1c-4dfc-9d62-a6ea3c16217e",
+      "result_id": "9793e031-96f4-4ba0-9145-00e7924ec3ec"
+    },
+    {
+      "claim_id": "616e3816-a5a5-4f18-ad52-555c573ca3d7",
+      "result_id": "9793e031-96f4-4ba0-9145-00e7924ec3ec"
+    },
+    {
+      "claim_id": "09fced47-6db6-4161-809f-b8874e82dcd4",
+      "result_id": "9793e031-96f4-4ba0-9145-00e7924ec3ec"
+    },
+    {
+      "claim_id": "5817d1fd-ce42-4ac8-929d-ebf3ef00c413",
+      "result_id": "628a3872-06b3-4fad-9d2b-0b4d7e9cb495"
+    },
+    {
+      "claim_id": "7ed06447-99e9-4acc-a696-85e9ff88b29d",
+      "result_id": "628a3872-06b3-4fad-9d2b-0b4d7e9cb495"
+    },
+    {
+      "claim_id": "a7cfb839-f933-4595-8de6-dbd4906a7d06",
+      "result_id": "628a3872-06b3-4fad-9d2b-0b4d7e9cb495"
+    },
+    {
+      "claim_id": "c470ace3-0d99-4da0-b5e9-0c0d83e9f7fd",
+      "result_id": "628a3872-06b3-4fad-9d2b-0b4d7e9cb495"
+    },
+    {
+      "claim_id": "f161d138-a527-43cf-87c9-bd215f1afc42",
+      "result_id": "628a3872-06b3-4fad-9d2b-0b4d7e9cb495"
+    },
+    {
+      "claim_id": "00a36a1f-1d28-4687-a801-bab48c7ad65c",
+      "result_id": "628a3872-06b3-4fad-9d2b-0b4d7e9cb495"
+    },
+    {
+      "claim_id": "11ff68ab-06ae-4526-ad17-f2521cb4f315",
+      "result_id": "7466c2b9-fae4-4064-9ba6-438ac8952868"
+    },
+    {
+      "claim_id": "f480b592-57ef-451c-9082-54701679cdd7",
+      "result_id": "7466c2b9-fae4-4064-9ba6-438ac8952868"
+    },
+    {
+      "claim_id": "82306ccd-5156-4097-a266-bb45fbc20752",
+      "result_id": "7466c2b9-fae4-4064-9ba6-438ac8952868"
+    },
+    {
+      "claim_id": "b4e347e8-95da-439c-95dd-2edea098a367",
+      "result_id": "7466c2b9-fae4-4064-9ba6-438ac8952868"
+    },
+    {
+      "claim_id": "c784dd3b-0c37-4ed0-9ea5-8a0f7a736473",
+      "result_id": "7466c2b9-fae4-4064-9ba6-438ac8952868"
+    },
+    {
+      "claim_id": "e2b5a2b0-c6c1-457f-bd36-1944e0daaede",
+      "result_id": "7466c2b9-fae4-4064-9ba6-438ac8952868"
+    },
+    {
+      "claim_id": "4d251d38-4ea4-484d-8ade-ddbf42e1485c",
+      "result_id": "7466c2b9-fae4-4064-9ba6-438ac8952868"
+    },
+    {
+      "claim_id": "cc84701f-9081-4645-9777-996d0beb9f6c",
+      "result_id": "f10c043b-7615-422c-9860-b7c9aa35f2a3"
+    },
+    {
+      "claim_id": "ed4f8cea-7eed-49ec-ac63-06d5fed70534",
+      "result_id": "f10c043b-7615-422c-9860-b7c9aa35f2a3"
+    },
+    {
+      "claim_id": "e4552c5e-f15c-4368-8051-d75d9bcd76a0",
+      "result_id": "f10c043b-7615-422c-9860-b7c9aa35f2a3"
+    },
+    {
+      "claim_id": "da4c179b-bf9d-4bd1-af26-3f539c19aaf4",
+      "result_id": "f10c043b-7615-422c-9860-b7c9aa35f2a3"
+    },
+    {
+      "claim_id": "0e61fe6e-4e3f-409c-b81c-40ca2a67ee0c",
+      "result_id": "f10c043b-7615-422c-9860-b7c9aa35f2a3"
+    },
+    {
+      "claim_id": "d71d72f9-2659-49f3-a5be-24ae12ddd19d",
+      "result_id": "9757ee64-c129-450c-9719-f1eb39d0896a"
+    },
+    {
+      "claim_id": "ee18dd4c-f1dd-4731-bbef-e14b823a158f",
+      "result_id": "9757ee64-c129-450c-9719-f1eb39d0896a"
+    },
+    {
+      "claim_id": "fd964ebb-c707-4a81-9f2e-457294cfc550",
+      "result_id": "9757ee64-c129-450c-9719-f1eb39d0896a"
+    },
+    {
+      "claim_id": "6f00d9b4-c73f-4fa4-af13-0df851c6b6a9",
+      "result_id": "9757ee64-c129-450c-9719-f1eb39d0896a"
+    },
+    {
+      "claim_id": "191609f7-abbf-40c8-b789-156c63011c3a",
+      "result_id": "9757ee64-c129-450c-9719-f1eb39d0896a"
+    },
+    {
+      "claim_id": "c9b9b93d-0506-4f76-9c47-a1669f241821",
+      "result_id": "9757ee64-c129-450c-9719-f1eb39d0896a"
+    },
+    {
+      "claim_id": "6314c1f2-1c3b-49c0-9c1e-2baa66b90526",
+      "result_id": "9757ee64-c129-450c-9719-f1eb39d0896a"
+    },
+    {
+      "claim_id": "03ac1dff-7374-465f-b9d3-b52e004c6cf2",
+      "result_id": "20374abd-ddaa-4df7-9361-da191086981e"
+    },
+    {
+      "claim_id": "0347acb4-7b26-46c6-9a94-e86799a576b2",
+      "result_id": "20374abd-ddaa-4df7-9361-da191086981e"
+    },
+    {
+      "claim_id": "966787d0-37d0-4437-b430-9985edb0d5b8",
+      "result_id": "20374abd-ddaa-4df7-9361-da191086981e"
+    },
+    {
+      "claim_id": "621f7d26-bfb7-4aee-b840-f675863da6d6",
+      "result_id": "20374abd-ddaa-4df7-9361-da191086981e"
+    },
+    {
+      "claim_id": "6e2900e7-0058-41ab-a31f-91867b9bb8f1",
+      "result_id": "20374abd-ddaa-4df7-9361-da191086981e"
+    },
+    {
+      "claim_id": "6210bc36-02c0-42f7-aaad-77a710830ef5",
+      "result_id": "20374abd-ddaa-4df7-9361-da191086981e"
+    },
+    {
+      "claim_id": "41cd58da-2cba-46d1-9c18-d0240d6d87f8",
+      "result_id": "cd419783-067d-4a99-add9-943a2b691100"
+    },
+    {
+      "claim_id": "bfbe078f-f2f0-4ca3-bb07-ae5e2ebc4d57",
+      "result_id": "cd419783-067d-4a99-add9-943a2b691100"
+    },
+    {
+      "claim_id": "8a84918e-f86a-45c8-9c70-3444e8b22109",
+      "result_id": "cd419783-067d-4a99-add9-943a2b691100"
+    },
+    {
+      "claim_id": "31d3d81a-7da2-4f48-b749-5f56155605fc",
+      "result_id": "cd419783-067d-4a99-add9-943a2b691100"
+    },
+    {
+      "claim_id": "ac744e47-f3fc-4bf8-9471-b75ab0f4565b",
+      "result_id": "cd419783-067d-4a99-add9-943a2b691100"
+    },
+    {
+      "claim_id": "18573092-f23b-499d-ab58-951bfd6a8913",
+      "result_id": "ee3b12d6-d269-4abf-ab3d-1e2f4279538d"
+    },
+    {
+      "claim_id": "fc538bd3-e3fd-4ae6-b469-f977e6ebd1f6",
+      "result_id": "ee3b12d6-d269-4abf-ab3d-1e2f4279538d"
+    },
+    {
+      "claim_id": "a099b167-4bf4-4c04-8cc0-61e625734313",
+      "result_id": "ee3b12d6-d269-4abf-ab3d-1e2f4279538d"
+    },
+    {
+      "claim_id": "c9ec6942-c3d5-48fc-af71-02d8b237e941",
+      "result_id": "ee3b12d6-d269-4abf-ab3d-1e2f4279538d"
+    },
+    {
+      "claim_id": "3d8d9d78-baf1-4c9b-bc9d-23091403ec86",
+      "result_id": "ee3b12d6-d269-4abf-ab3d-1e2f4279538d"
+    },
+    {
+      "claim_id": "918abb2b-4e56-4eb8-b5a3-9e668e743f6f",
+      "result_id": "be4dff9f-0ef5-4221-8a0d-56e02ce6549e"
+    },
+    {
+      "claim_id": "57e4fa8f-c61b-43f9-af80-2001aa1591a7",
+      "result_id": "be4dff9f-0ef5-4221-8a0d-56e02ce6549e"
+    },
+    {
+      "claim_id": "6dbc7eee-9948-4d52-8bdd-e061abb9626d",
+      "result_id": "be4dff9f-0ef5-4221-8a0d-56e02ce6549e"
+    },
+    {
+      "claim_id": "93e4699c-11ff-4ee6-b164-8331fe11d05e",
+      "result_id": "8047b437-f62e-41f5-8e19-c67223c56c0f"
+    },
+    {
+      "claim_id": "b57aaa09-37f8-4999-b58d-62304bfc1931",
+      "result_id": "8047b437-f62e-41f5-8e19-c67223c56c0f"
+    },
+    {
+      "claim_id": "c9b93b68-8486-43f4-8570-9a3b74055cee",
+      "result_id": "8047b437-f62e-41f5-8e19-c67223c56c0f"
+    },
+    {
+      "claim_id": "e6923e35-6bba-4a53-9517-168d48cac861",
+      "result_id": "8047b437-f62e-41f5-8e19-c67223c56c0f"
+    },
+    {
+      "claim_id": "5f6995e6-4832-455e-be9e-444232e8b02c",
+      "result_id": "8047b437-f62e-41f5-8e19-c67223c56c0f"
+    },
+    {
+      "claim_id": "7bceca65-31cd-43e7-ad96-b9f3722ee016",
+      "result_id": "32cf3c95-26fd-424d-9520-5a251d18af54"
+    },
+    {
+      "claim_id": "923d16dc-69ee-47c5-8c93-ced9c1bf4644",
+      "result_id": "32cf3c95-26fd-424d-9520-5a251d18af54"
+    },
+    {
+      "claim_id": "1faef7c8-cef9-4cd7-bef9-2588cd621df8",
+      "result_id": "32cf3c95-26fd-424d-9520-5a251d18af54"
+    },
+    {
+      "claim_id": "230901b4-b4cd-4160-858d-8437b70a80cd",
+      "result_id": "32cf3c95-26fd-424d-9520-5a251d18af54"
+    },
+    {
+      "claim_id": "67c846f6-4d03-4a2b-b047-6aa7dfea847c",
+      "result_id": "32cf3c95-26fd-424d-9520-5a251d18af54"
+    },
+    {
+      "claim_id": "03c6d995-fe03-4651-8379-1aa023a180d0",
+      "result_id": "32cf3c95-26fd-424d-9520-5a251d18af54"
+    },
+    {
+      "claim_id": "1d04d072-82dc-4645-b13f-d520ff39ac8e",
+      "result_id": "155116e0-d69a-4e31-bf69-e5b672d3f71c"
+    },
+    {
+      "claim_id": "a9f7d4fb-31ad-4ff9-835c-1f878fabe582",
+      "result_id": "155116e0-d69a-4e31-bf69-e5b672d3f71c"
+    },
+    {
+      "claim_id": "31a514e4-6661-4837-a05b-965c29070475",
+      "result_id": "155116e0-d69a-4e31-bf69-e5b672d3f71c"
+    },
+    {
+      "claim_id": "469aa56d-1af8-4c0e-bac0-183a3f14d435",
+      "result_id": "f2275f3e-4e1c-440c-8efa-fd731b6c833d"
+    },
+    {
+      "claim_id": "066178e3-35a2-489f-b971-d58b24e1d285",
+      "result_id": "cf69cfb8-0130-4eeb-811e-3c43c90fcae8"
+    },
+    {
+      "claim_id": "ca1939e0-483b-43c5-b23c-1a81725a4dce",
+      "result_id": "cf69cfb8-0130-4eeb-811e-3c43c90fcae8"
+    },
+    {
+      "claim_id": "21993753-c8b3-433a-9a01-d9a821ca12fa",
+      "result_id": "568ce18c-2846-48ec-b366-ba1b22a93110"
+    },
+    {
+      "claim_id": "ec5c7c2e-72ec-4f2e-93c6-f3ff097edb1c",
+      "result_id": "8105ff06-c695-462f-b68a-cb8b514401e1"
+    },
+    {
+      "claim_id": "ecff0058-8540-45bc-bde7-59625e52a315",
+      "result_id": "d06a2e91-4ddf-4f70-b280-e6b5840ffb4e"
+    },
+    {
+      "claim_id": "eae97444-7c79-404f-9654-5f4c90741c01",
+      "result_id": "1465a0ae-e488-4b9a-a71f-db21a4cb8cbd"
+    },
+    {
+      "claim_id": "2765d1b6-284e-4ff2-adc6-260402a1ffc5",
+      "result_id": "7dc26e8a-b02c-4b4a-bed2-e1fb3aab08b6"
+    },
+    {
+      "claim_id": "71ef4900-43ce-44ae-802c-5f3886d263be",
+      "result_id": "7dc26e8a-b02c-4b4a-bed2-e1fb3aab08b6"
+    },
+    {
+      "claim_id": "8413acac-fb42-4198-8e5c-94b6199def49",
+      "result_id": "7dc26e8a-b02c-4b4a-bed2-e1fb3aab08b6"
+    },
+    {
+      "claim_id": "b73e073c-d695-485e-a7d6-4a63d05b3c04",
+      "result_id": "6193375d-c095-4181-b823-2d95880743db"
+    },
+    {
+      "claim_id": "1b5fa05f-10f6-48c3-a900-d6d1a8c0116a",
+      "result_id": "6193375d-c095-4181-b823-2d95880743db"
+    },
+    {
+      "claim_id": "50e9e39c-c406-4151-ab00-9135013ccbf3",
+      "result_id": "6193375d-c095-4181-b823-2d95880743db"
+    },
+    {
+      "claim_id": "03c9ffef-1933-4c6c-bf6a-c44abcab951d",
+      "result_id": "6193375d-c095-4181-b823-2d95880743db"
+    }
+  ],
+  "comparisons": []
+}

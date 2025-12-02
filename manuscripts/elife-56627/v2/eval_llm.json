@@ -1,0 +1,266 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "The authors identify residues 51-73 of UL25 as essential for inhibition of NEC-mediated budding through systematic truncation analysis. UL25\u039444 Q72A inhibits budding in a dose-dependent manner, while UL25\u039473 and UL25\u039458 Q72A do not.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C41 provide converging evidence from protein purification, Edman degradation sequencing, and dose-response budding assays. The systematic truncation approach clearly maps the inhibitory region to residues 51-73, with appropriate controls (C39, C40) demonstrating specificity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "UL25 does not bind membranes directly or interact with NEC in solution, but requires membrane-bound NEC for binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C46 are supported by multiple orthogonal binding assays (co-sedimentation, ITC, size-exclusion chromatography). The negative results are appropriately controlled and lead to the logical inference (C46) that membrane-bound NEC is required for UL25 binding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "eGFP-tagged UL25 constructs demonstrate that inhibitory UL25\u039450 Q72A colocalizes with NEC-coated membranes and blocks budding, while non-inhibitory UL25\u039473 also binds but does not prevent budding and is prone to aggregation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C58 are supported by confocal microscopy data showing differential behavior of the two constructs. The observation that eGFP-UL25\u039473 can be found on intraluminal vesicles (C54) provides direct evidence that it does not block budding. However, the aggregation of UL25\u039473 (C57) complicates interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Mutations at the membrane-distal tip of UL31 (NEC220-CBM) reduce sensitivity to UL25 inhibition and prevent eGFP-UL25 colocalization, indicating that UL25 binds to this region of UL31.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C65 are supported by prior literature (C59-C60) and new experimental data (C61-C63). The capsid-binding mutant approach provides strong evidence for the binding site, though the residual inhibition (~25% reduction, C62) suggests additional complexity or incomplete disruption of the binding interface.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "CryoEM reveals that UL25\u039444 Q72A forms ~17 nm thick coats on the external surface of LUVs in the presence of NEC220, consistent with a UL25 layer (~6 nm) on top of membrane-bound NEC (~11 nm).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C72 are supported by cryoEM measurements and logical inference based on known protein dimensions. The correlation between coat formation and budding inhibition (C72) is well-established. However, the interpretation that the coat is composed of two distinct layers (C70) is a hypothesis based on thickness measurements rather than direct structural resolution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "CryoET sub-tomographic averaging reveals that UL25\u039444 Q72A induces formation of NEC pentagons rather than hexagons, with five-pointed UL25 stars positioned on top of NEC pentagons. The pentagonal arrangement is observed even before imposing five-fold symmetry.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C86 represent the key structural finding of the manuscript. The cryoET data (C77-C82) clearly demonstrate pentagonal symmetry in the presence of UL25, contrasting with hexagonal symmetry for NEC alone. The observation of pentagonal arrangement prior to symmetry imposition (C80) strengthens the conclusion. The hypothesis that pentagons are pentamers (C86) is reasonable given dimensional similarity to hexamers (C84-C85), though not directly proven.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "The NEC/UL25 complexes form patches rather than complete coats on vesicle surfaces, suggesting loose connections between adjacent pentagonal units. This demonstrates the NEC's ability to form different oligomeric states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C90 are supported by visual analysis of cryoEM images and the observation that surrounding pentagons in averages are less well-defined than the central one. The conclusion that NEC can form different oligomers (C90) is well-supported by the contrast between hexagonal and pentagonal arrangements. However, the hypothesis about loose connections (C88) is speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "The five-pointed UL25 stars formed in vitro resemble CATC structures on capsid vertices. The authors propose that UL25\u039444 Q72A forms antiparallel four-helix bundles linking adjacent stars, with each star consisting of 10 copies of UL25.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C93-C98 are largely speculative models based on structural similarity to CATC (C93-C95, supported by citation) and hypothetical arrangements (C96-C98). While the modeling is reasonable and consistent with known structures, there is no direct experimental validation of the proposed four-helix bundle arrangement or the stoichiometry of 10 UL25 copies per star. The resolution of the cryoET data (29 \u00c5, C132) is insufficient to resolve these details.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "The authors propose that UL25\u039444 Q72A inhibits budding by forming a net of five-pointed stars that restricts conformational changes in the NEC lattice, while UL25\u039473 cannot form this net due to its shorter helix and is prone to aggregation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C99-C102 present mechanistic hypotheses for budding inhibition. While the correlation between UL25 binding and inhibition is clear, the specific mechanism (restricting conformational changes, C100) is speculative. The explanation for UL25\u039473 behavior (C101-C102) is reasonable but not directly tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C112",
+      "C122",
+      "C123",
+      "C124",
+      "C125"
+    ],
+    "result": "The authors hypothesize that during infection, UL25 at capsid vertices promotes NEC pentagon formation, which nucleates coat assembly, anchors the coat to the capsid, and introduces curvature into the hexagonal NEC lattice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C91-C92 and C112, C122-C125 present the central model for how UL25/NEC interactions function during infection. While the in vitro observations support the possibility of pentagon formation, the extrapolation to the in vivo situation is speculative. No direct evidence is provided that pentagons form at capsid vertices during infection or that they nucleate coat assembly.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "Prior studies and the current cryoET data support that UL25 binds to the membrane-distal tip of UL31, and this interaction requires UL25 to be present on capsids.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C111 integrate prior literature (C105-C110) with the current structural data (C111). The convergence of evidence from co-immunoprecipitation, pull-down assays, mutagenesis, and cryoET provides strong support for the binding site and requirement for capsid-bound UL25.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131"
+    ],
+    "result": "The authors propose that NEC/UL25 interactions provide a quality-control mechanism favoring budding of mature C-capsids with full UL25 occupancy over A- and B-capsids with fewer UL25 copies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C126-C131 present a hypothesis for capsid selectivity during nuclear egress. While the observation that UL25 deletion blocks egress (C126, supported by citations) and that C-capsids have more UL25 (C129, supported by citation) are established, the proposed quality-control mechanism (C130-C131) is speculative and not directly tested in this study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Co-incubation of UL25\u039473 with NEC220 and LUVs yields budded vesicles with variable coat thickness and aggregates on unbudded vesicles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C76 are supported by cryoEM observations. The heterogeneity in vesicle populations (budded with different coat thicknesses, unbudded with aggregates) is consistent with the confocal microscopy observations and supports the conclusion that UL25\u039473 does not uniformly inhibit budding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "The capsid appears to define the size of NEC-budded vesicles during infection, and the capsid geometry could influence NEC coat geometry. Hexagonal NEC lattices require defects to achieve curvature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C114-C121 are supported by established structural principles (C114, C115) and comparative size measurements from prior studies (C116-C119). The inference that capsid geometry influences coat geometry (C120-C121) is reasonable given the size differences between capsidless and capsid-containing vesicles, though C113 (NEC tilting) is speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C103",
+      "C104"
+    ],
+    "result": "The authors speculate that free UL25 in the nucleus could inhibit NEC budding activity during infection, and that NEC activity is controlled to ensure budding of only mature capsids.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C103-C104 are purely speculative and not tested in this study. While the in vitro inhibition by UL25 is clear, there is no evidence provided for the presence of free UL25 in the nucleus or for a regulatory mechanism controlling NEC activity during infection.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,250 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "KIBRA WW tandem binds to closely spaced PY-motifs (PY12 of PTPN14, PY23 of Dendrin, PY34 of AMOT, PY23 of LATS1) with dramatically higher affinities (Kd ~2-96 nM) than individual WW domains (Kd ~32 \u03bcM or undetectable) or YAP WW tandem (Kd ~400-69000 nM), demonstrating extreme specificity and synergy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C19 provide comprehensive ITC binding data showing KIBRA WW tandem binds targets with nM affinities while isolated domains bind weakly (C14-C15) and YAP WW tandem binds 100-1000 fold weaker (C19). The data are internally consistent and supported by multiple independent measurements across different targets.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Crystal structures of KIBRA WW tandem complexes with PTPN14, AMOT, and LATS1 reveal that the two WW domains form a stable supramodule through extensive interactions between the inter-domain linker and C-terminal helix, positioning binding pockets to accommodate PY-motifs in an antiparallel orientation. Mutations disrupting the supramodule weaken target binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C25 present structural data (RMSD 0.63-1.0 \u00c5) showing conserved architecture and mutational data (C25) confirming functional importance of the supramodule. The antiparallel binding orientation (C23) is directly observed in structures and rationalized by the head-to-tail WW domain arrangement (C22).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "MAGI2 and MAGI3 WW tandems bind to PTPN14 PY12 and Dendrin PY23 with high affinities (Kd ~2-103 nM) similar to KIBRA, while MAGI1 binds more weakly (Kd ~4 \u03bcM). Structural comparison shows KIBRA and MAGI2 WW tandems are highly similar (RMSD 2.3-2.7 \u00c5).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C31 provide ITC binding data for MAGI family proteins and structural validation. The weaker binding of MAGI1 (C28) is rationalized by its longer inter-domain linker. The structural similarity between KIBRA and MAGI2 (C31) supports the functional similarity in binding affinities.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "YAP WW tandem lacks the structural features of KIBRA/MAGI tandems: the inter-domain linker is unstructured, there is no C-terminal helix, the two WW domains do not form a supramodule, and Dendrin PY23 binds in a parallel rather than antiparallel orientation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C34 describe structural differences between YAP and KIBRA WW tandems based on crystal structures. These structural differences directly explain the functional differences in binding affinity and specificity observed in C19. The parallel binding orientation (C34) contrasts with the antiparallel mode in KIBRA (C23).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Mutations disrupting inter-domain coupling (I35D in KIBRA, L330D in MAGI2) weaken target binding by ~50-57 fold, while the equivalent mutation in YAP (L244D) has no effect, confirming that KIBRA/MAGI tandems require tight domain coupling for high-affinity binding whereas YAP does not.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C37 provide mutational validation of the structural coupling model. The dramatic effects in KIBRA/MAGI2 (C35-C36) versus no effect in YAP (C37) directly support the mechanistic differences between these WW tandems and are consistent with the structural data in C24 and C32-C33.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "The optimal linker length between PY-motifs for high-affinity binding to KIBRA/MAGI WW tandems is exactly two residues. Deleting one residue from LATS1's 3-residue linker increases binding affinity ~46-fold (to Kd ~17 nM), while shortening PTPN14's linker to one residue or lengthening to three residues weakens binding by up to ~4400-fold.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C40 demonstrate precise linker length requirements through systematic mutagenesis. The LATS1-\u0394553 data (C38) showing enhanced binding and the PTPN14 linker variants (C39-C40) showing weakened binding provide strong evidence for the two-residue spacing requirement, consistent with the structural constraints shown in C20-C24.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C41",
+      "C42"
+    ],
+    "result": "In HEK293A cells, LATS1-\u0394553 binds KIBRA more strongly than wild-type LATS1, and cells expressing LATS1-\u0394553 show diminished YAP and LATS1 phosphorylation upon Hippo pathway stimulation (LPA, serum, LatB, starvation) compared to wild-type LATS1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C42 validate the in vitro binding data (C38) in a cellular context using co-immunoprecipitation and phosphorylation assays. The diminished phosphorylation (C42) is consistent with enhanced KIBRA sequestration of LATS1-\u0394553, providing functional validation of the binding affinity differences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Additional sequence features beyond the core PY-motifs enhance binding affinity: the inter-motif linker residue R440 in PTPN14 (17-fold contribution), the C-terminal extension of PTPN14 PY12, and converting non-canonical to canonical PPxY motifs all strengthen binding to KIBRA and MAGI3 WW tandems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C45 systematically dissect binding determinants through mutagenesis. Each claim provides quantitative ITC data showing the contribution of specific structural elements. These findings are consistent with the detailed structural interactions shown in Figure 2A and expand understanding of binding specificity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "The first proline in the second PY-motif (\u03a8PxY) can be substituted with small residues (Cys, Ala, Ser, Thr, Val) with only mild loss of binding, but substitution with bulky hydrophobic residues (Leu, Met, Ile) essentially abolishes binding to KIBRA and MAGI3 WW tandems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C48 define sequence tolerance at a critical position through systematic amino acid substitutions. The differential effects of small versus bulky substitutions are rationalized by the structural constraint of a small binding pocket (shown in Figure 6A), providing mechanistic insight into sequence specificity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Database searching identified 132 human proteins containing the \u03a6\u03a6xYxx\u03a8PxY consensus motif. Validation experiments confirmed that JCAD (Kd ~58 nM), USP6NL (Kd ~110 nM), PTPN21 PY12 (Kd ~8 nM), and \u03b2-Dystroglycan (Kd ~96 nM) are high-affinity binders of KIBRA WW tandem.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C53 demonstrate predictive power of the consensus sequence derived from structural and biochemical studies. The database search (C49) and experimental validation (C50-C53) identify novel binding partners with affinities matching the predictions, including the crystal structure of \u03b2-Dystroglycan complex confirming the binding mode.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C54",
+      "C55"
+    ],
+    "result": "WW tandems, but not individual WW domains, can bind target proteins with extremely high affinity and sequence specificity, achieved through synergistic conformational coupling of two WW domains and recognition of two PY-motifs separated by exactly two residues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C55 are summary statements integrating the major findings. They are well-supported by the comprehensive structural (C20-C24), biochemical (C12-C19), and mutational (C35-C40) data presented throughout the study, representing the central mechanistic insight of the work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "KIBRA/MAGI tandems bind PTPN14 ~1400-fold stronger and LATS1 ~4.5-fold stronger than YAP tandem. Enhancing KIBRA/LATS1 binding by deleting Gly553 effectively blocks LATS1-mediated YAP phosphorylation, suggesting KIBRA can modulate LATS1/YAP complex formation through competitive binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C59 integrate binding affinity comparisons with functional cellular data. The competitive binding model is supported by quantitative affinity differences (C57-C58) and validated by the LATS1-\u0394553 phosphorylation data (C59, also C42), providing mechanistic insight into Hippo pathway regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6"
+    ],
+    "result": "WW domains are small (~35 aa) protein-protein interaction domains that bind proline-rich motifs. The human proteome contains 95 WW domains in 53 proteins, with 52 being type I domains that bind PPxY motifs with modest affinities (Kd ~\u03bcM range). The proteome contains ~1500 PPxY motifs in >1000 proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C6 provide established background information about WW domains, supported by citations to prior literature (C3-C5) and general knowledge (C1-C2, C6). These claims set the context for the study and are not contested by the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "Prior studies reported promiscuous interactions between WW domain proteins (YAP, KIBRA, SAV1) and PY-motif proteins (LATS, AMOTs, PTPN14, NEDD ligases) in the Hippo pathway. YAP subcellular localization dictates cell growth and polarity, suggesting some WW/PY interactions must be specific.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C11 summarize prior literature on WW domain interactions in the Hippo pathway, all supported by citations. These claims establish the biological context and the apparent paradox of promiscuous binding versus specific function that motivates the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C56"
+    ],
+    "result": "The tight binding between KIBRA and Dendrin (Kd ~2.1 nM) is critical for KIBRA localization in neuronal synapses and for synaptic plasticity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C56 cites a previous study (Ji et al., 2019) demonstrating functional importance of KIBRA/Dendrin binding in neurons. This provides biological validation for the high-affinity WW tandem binding mechanism in a different cellular context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C60"
+    ],
+    "result": "A Gly553Glu mutation of LATS1 was found in patients with renal cell carcinoma.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C60 cites a clinical observation from prior literature. This mutation is at the critical linker position between PY-motifs, providing potential clinical relevance for the mechanistic findings about linker length requirements (C38-C40).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C61"
+    ],
+    "result": "\u03b2-Dystroglycan may be a key regulator in cell growth and neuronal synaptic functions via specifically binding to KIBRA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C61 is speculative, proposing a regulatory role based on the observed high-affinity binding (C53) and known functions of \u03b2-Dystroglycan. While the binding data are solid, the functional implications require experimental validation beyond the binding measurements presented.",
+    "result_type": "MINOR"
+  }
+]

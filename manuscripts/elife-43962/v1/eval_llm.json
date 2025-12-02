@@ -1,0 +1,280 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "Four food odors (two sweet, two savory) were selected to be matched in pleasantness but differ in perceptual similarity, forming a two-category structure where within-category pairs were more similar than between-category pairs, yet all odors remained highly discriminable.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C22 collectively demonstrate successful stimulus selection and validation. Statistical tests confirm no pleasantness differences (C15, C16), significant perceptual similarity structure (C17, C18), and high discriminability across all pairs (C19-C21). The experimental design appropriately controls for value while manipulating perceptual distance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Subjects rapidly learned and updated stimulus-outcome associations during the reversal task, with prediction accuracy dropping at reversal trials and recovering immediately afterward, independent of whether reversals occurred within or between perceptual categories. Odor identification remained accurate throughout.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C28 demonstrate successful task performance with appropriate statistical support. The behavioral data show rapid learning (C23-C25), no difference between reversal types (C26), and maintained identification accuracy (C27-C28). This validates that subjects could perform the task and that perceptual similarity did not affect learning speed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Response times for odor prediction did not differ between reversal types, but identification responses were slower on reversal trials regardless of whether the reversal was within or between categories.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C31 are supported by appropriate statistical tests showing no RT differences for predictions but a main effect of time for identification. The interpretation that subjects were slower to identify unexpected odors (C31) is reasonable, though the lack of interaction with reversal type is critical for the main hypothesis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Sniff amplitude differed between trial types, driven by differences between within-category reversals and non-reversal trials, but no differences were found between within- and between-category reversals. Sniff latency did not differ across trial types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C35 are supported by statistical analyses. The finding that sniff amplitude differed for within-category reversals vs. non-reversals (C33) but not between reversal types (C34) is important for ruling out confounds. The authors appropriately included respiratory traces as nuisance regressors in fMRI analyses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C3"
+    ],
+    "result": "Identity prediction errors were significantly correlated with fMRI activity in bilateral midbrain, posterior OFC, piriform cortex, and amygdala, replicating previous findings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C42 and C3 report statistically significant correlations between identity PEs and fMRI activity in a priori ROIs, all surviving FWE correction. The replication of previous findings (Howard and Kahnt, 2018) with similar effect sizes (C66: Cohen's d = 0.84) provides strong support. Statistical thresholds and corrections are appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C4"
+    ],
+    "result": "The magnitude of identity prediction error responses in midbrain, OFC, piriform cortex, and amygdala was independent of perceptual distance between expected and received outcomes, with no significant differences between within- and between-category reversals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C48 and C4 constitute the primary finding. Statistical tests show no significant differences in PE responses between reversal types across all ROIs (p-values ranging from 0.451 to 0.937). The extremely small effect size (C68: Cohen's d = 0.11) and comprehensive power analysis (C69) strengthen confidence in this null result. Whole-brain analysis at liberal thresholds (C47) further supports the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Identity PEs unmodulated by MDS-based perceptual distance better explained fMRI variance than PEs modulated by perceptual distance, particularly in posterior OFC and right midbrain, suggesting that perceptual distance does not play a major role in sensory PE responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C55 provide additional support for the main finding using individual perceptual similarity measures. The significant main effect (C49) and post-hoc tests (C50) are appropriately conducted. The high correlation between modulated and unmodulated PEs (C54: r=0.93) is acknowledged as potentially limiting sensitivity, yet significant differences still emerged favoring unmodulated PEs. The voxel-wise analysis (C51-C52) provides converging evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "An associative learning model with a single learning rate (\u03b1=0.87\u00b10.026, temperature=1.11\u00b10.068) outperformed a model with separate learning rates for within- and between-category reversals based on AIC and BIC criteria.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C102 describe the computational modeling approach. The model comparison using AIC and BIC (C102) appropriately shows that a single learning rate is sufficient, consistent with the behavioral finding that learning did not differ between reversal types. Parameters were estimated using hierarchical Bayesian analysis, which is appropriate for this type of data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "The null result regarding perceptual distance modulation is unlikely due to insufficient power, as evidenced by successful replication of identity PE effects (Cohen's d=0.84), extremely small effect size for the critical comparison (Cohen's d=0.11), and power analysis indicating N=651 would be needed to detect such an effect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C70 provide a thorough power analysis addressing the null result. The authors appropriately consider insufficient power (C64) but provide multiple lines of evidence against this explanation: successful replication (C66), p-value far from threshold (C67), small effect size with confidence intervals (C68), and prospective power calculation (C69). This is a model example of interpreting null results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Technical limitations of the study include fMRI's limited sensitivity to fine-grained coding structures, inability to use MVPA due to single-run design, potential non-linear relationships between PE magnitude and BOLD response, possibly insufficient perceptual distance between stimulus categories, and complex BOLD signal dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C76 appropriately acknowledge methodological limitations. The authors correctly note that conventional fMRI analysis (C71) and single-run design (C72) limit sensitivity to distributed codes. The discussion of potential non-linearities (C74), insufficient perceptual separation (C75), and BOLD complexity (C76) demonstrates appropriate scientific caution. These are valid limitations that should be considered when interpreting the results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C77",
+      "C80",
+      "C93"
+    ],
+    "result": "Identity prediction errors in the midbrain do not directly reflect perceptual distances used for discrimination, suggesting that expected and received outcomes are represented and compared in an abstract state space orthogonal to perceptual similarity, allowing for highly flexible and rapid updates of state representations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C60, C77, C80, and C93 present the main interpretation of the findings. The conclusion that identity PEs are independent of perceptual distance (C58, C77) is well-supported by the data. The inference about abstract state space representation (C80, C93) is a reasonable interpretation, though it remains somewhat speculative. The logic connecting the empirical findings to the theoretical framework is sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C89",
+      "C90"
+    ],
+    "result": "The findings extend theories proposing that OFC hosts abstract state representations by suggesting this state space is not necessarily related to perceptual similarity of expected outcomes, consistent with evidence that OFC activity patterns separate odor identities within categories as well as between categories.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C87, C89-C90 connect the current findings to existing theories about OFC function. The citations to relevant theories (C84) and supporting evidence (C85, C86, C89) are appropriate. The extension of these ideas based on the current data (C87, C90) is a reasonable inference, though it goes beyond what the data directly demonstrate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C1",
+      "C5",
+      "C6"
+    ],
+    "result": "Dopaminergic midbrain neurons have traditionally been thought to reflect prediction errors based exclusively on the value difference between expected and received rewards.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C5, and C6 accurately represent the traditional view of dopaminergic prediction errors, supported by appropriate citations to seminal work (Schultz et al., 1997, 2017) and theoretical frameworks (Glimcher, 2011). This provides necessary background context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C2",
+      "C7",
+      "C8",
+      "C9",
+      "C56",
+      "C57"
+    ],
+    "result": "Recent work has challenged the value-only view by demonstrating that dopaminergic neurons also respond to violations in expected identity of value-neutral outcomes in both rats and humans.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C7-C9, C56-C57 accurately summarize recent literature challenging the traditional view, with appropriate citations to animal studies (Takahashi et al., 2017; Chang et al., 2017; Sharpe et al., 2017) and human neuroimaging (Boorman et al., 2016; Howard and Kahnt, 2018; Iglesias et al., 2013; Schwartenbeck et al., 2016). This provides essential motivation for the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C11",
+      "C61"
+    ],
+    "result": "The magnitude of value-based reward prediction errors is proportional to the value difference between expected and received outcomes, mapping strongly onto subjective preferences and reward magnitude.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11 and C61 accurately represent established findings about value PEs, supported by appropriate citations (Abler et al., 2006; Bayer and Glimcher, 2005; Glimcher, 2011; Lak et al., 2014; Schultz, 2017). This provides important context for comparing identity PEs to value PEs.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "If identity PEs scale with perceptual distance, outcomes are likely represented in perceptual similarity space; if independent of perceptual similarity, outcomes are likely encoded in an abstract state space where perceptually similar and dissimilar outcomes can be represented with equal distance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C14 present the theoretical framework and competing hypotheses tested in the study. The logic is sound and appropriately supported by citations (Fontanini and Katz, 2006; Seger and Miller, 2010). This clearly motivates the experimental design and predictions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "Fifty subjects were initially recruited, 30 were excluded during screening (28 for inability to find equally-liked odors, 2 for poor discrimination), 20 participated in the experiment, 1 was excluded for head motion, leaving 19 subjects (14 female, ages 19-33) for analysis. The study was approved by Northwestern University IRB.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C99 describe the participant sample and exclusions. The exclusion criteria are reasonable and clearly stated. The final sample size (N=19) is consistent with the power analysis for replicating the identity PE effect (C65-C66). Ethical approval is documented (C99).",
+    "result_type": "MINOR"
+  }
+]

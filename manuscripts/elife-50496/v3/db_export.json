@@ -1,0 +1,2380 @@
+{
+  "submission": {
+    "id": "2e26b072-6fbd-4344-876f-1794364bd23f",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T13:33:13.298963Z",
+    "updated_at": "2025-12-02T13:33:13.298963Z"
+  },
+  "content": [
+    {
+      "id": "18e9f611-00ec-4a22-9c37-d97edb991c03",
+      "submission_id": "2e26b072-6fbd-4344-876f-1794364bd23f",
+      "content_type": "manuscript",
+      "content_text": "# Myofibril diameter is set by a finely tuned mechanism of protein oligomerization in Drosophila\n\n## Authors\n\n- Nicanor Gonz\u00e1lez-Morales<sup>1</sup> ([ORCID: 0000-0003-1305-8992](https://orcid.org/0000-0003-1305-8992))\n- Yu Shu Xiao<sup>1</sup>\n- Matthew Aaron Schilling<sup>1</sup>\n- Oc\u00e9ane Marescal<sup>1</sup>\n- Kuo An Liao<sup>1</sup>\n- Frieder Sch\u00f6ck<sup>1</sup> ([ORCID: 0000-0002-1351-0574](https://orcid.org/0000-0002-1351-0574)) \u2020\n\n### Affiliations\n\n1. Department of Biology McGill University Montreal Canada\n\n\u2020 Corresponding author\n\n## Abstract\n\nMyofibrils are huge cytoskeletal assemblies embedded in the cytosol of muscle cells. They consist of arrays of sarcomeres, the smallest contractile unit of muscles. Within a muscle type, myofibril diameter is highly invariant and contributes to its physiological properties, yet little is known about the underlying mechanisms setting myofibril diameter. Here we show that the PDZ and LIM domain protein Zasp, a structural component of Z-discs, mediates Z-disc and thereby myofibril growth through protein oligomerization. Oligomerization is induced by an interaction of its ZM domain with LIM domains. Oligomerization is terminated upon upregulation of shorter Zasp isoforms which lack LIM domains at later developmental stages. The balance between these two isoforms, which we call growing and blocking isoforms sets the stereotyped diameter of myofibrils. If blocking isoforms dominate, myofibrils become smaller. If growing isoforms dominate, myofibrils and Z-discs enlarge, eventually resulting in large pathological aggregates that disrupt muscle function.\n\n## Introduction\n\nInside cells, proteins are assembled into complex functional units. The correct assembly of these units is crucial for their function (Marsh and Teichmann, 2015). Myofibrils are highly organized assemblies of cytoskeletal proteins forming an array of sarcomeres that are embedded in the cytosol of myotubes and mediate contractility (Huxley and Niedergerke, 1954b; Huxley and Hanson, 1954a; Huxley, 2004; Lemke and Schnorrer, 2017). Sarcomeres are composed of actin-containing thin filaments and myosin-containing thick filaments arranged into antiparallel cables. Thin filaments are anchored to a large multiprotein complex called the Z-disc (Luther, 2009), and thick filaments are anchored to another large multiprotein complex called the M-line (Agarkova and Perriard, 2005). Anchoring of myofibrils to the exoskeleton provides the mechanical tension that aligns sarcomeres into myofibrils and coordinates their development (Weitkunat et al., 2017; Weitkunat et al., 2014). Once aligned, sarcomeres grow to their final size (Lemke and Schnorrer, 2017). Electron and confocal microscopy studies showed that sarcomeres form initially from small structures called Z-bodies that grow eventually into mature Z-discs to which thin filaments are anchored (Loison et al., 2018; Orfanos et al., 2015; Reedy and Beall, 1993; Shafiq, 1963; Sparrow and Sch\u00f6ck, 2009). The size of the Z-disc therefore sets the diameter of the myofibril (Agarkova and Perriard, 2005; Luther, 2009). While mechanisms have been proposed that set the length of sarcomeres (Fernandes and Sch\u00f6ck, 2014; Gokhin and Fowler, 2013; Tskhovrebova and Trinick, 2017), Z-disc growth and growth termination is poorly understood.\n\nA hallmark of genetically caused myopathies is the appearance of large aggregates composed mainly of Z-disc proteins (Kley et al., 2016; Maerkens et al., 2016). Interestingly, many myopathy-associated mutations encode Z-disc proteins. Mutations in any of the four \u03b1-actinin genes or in Zasp and other Alp/Enigma family genes in humans cause myopathies characterized by the presence of large aggregates (Murphy and Young, 2015; Selcen and Engel, 2005). The aggregation phenotype is conserved among animals: fruit flies with mutations in myopathy-related genes also develop Z-disc aggregates (Gonz\u00e1lez-Morales et al., 2017).\n\n\u03b1-Actinin and Z-disc Alternatively Spliced Protein (Zasp) are conserved proteins that coordinate Z-disc formation (Faulkner et al., 1999; Katzemich et al., 2013; Murphy and Young, 2015). \u03b1-Actinin forms a rod-shaped antiparallel homodimer at the Z-disc, where it crosslinks and serves as an attachment point for actin filaments (Djinovi\u0107-Carugo et al., 1999; Luther, 2009; Murphy and Young, 2015; Ribeiro et al., 2014; Rusu et al., 2017; Takahashi and Hattori, 1989). Zasp and other members of the Alp/Enigma family of proteins are scaffolding proteins with an \u03b1-actinin-binding PDZ domain (InterPro: IPR001478), an uncharacterized Zasp Motif (ZM; InterPro: IPR031847 and IPR006643) domain, and one to four protein-protein interaction LIM domains (InterPro: IPR001781) (Finn et al., 2017; Klaavuniemi et al., 2004; Liao et al., 2016). Zasp and \u03b1-actinin proteins are present at the earliest stages of Z-disc formation, and are required for Z-disc assembly (Dabiri et al., 1997; Katzemich et al., 2013).\n\nVertebrates have seven Alp/Enigma genes, each encoding several isoforms. The Drosophila genome has three Zasp genes, Zasp52, Zasp66, and Zasp67, which encode 21,\u00a012, and 4 isoforms, respectively (Gramates et al., 2017). Zasp66 and Zasp67 are duplications of Zasp52 and resemble the smallest isoforms of Zasp52 (Gonz\u00e1lez-Morales et al., 2019). The number of isoform variants and genes adds an additional layer of complexity and regulation to sarcomere formation.\n\nWe used Drosophila indirect flight muscles and asked if the mechanism that controls Z-disc size relates to the pathological aggregation behavior known for Z-disc-related myopathies. We show that accumulation of multivalent Zasp growing isoforms (with multiple LIM domains) causes Z-disc growth, whereas upregulation of monovalent blocking isoforms at later developmental time points terminates Z-disc growth. An imbalance of growing and blocking Zasp isoforms results either in aggregate formation, enlarged Z-disc size or reduced Z-disc size. We propose that this mechanism has wide implications for diseases caused by aggregate formation.\n\n## Results\n\n### Aggregate formation upon Zasp overexpression\n\nDominant Zasp mutations cause aggregate formation in human myopathies (Selcen and Engel, 2005). To examine if this holds true in Drosophila, we overexpressed a full-length Zasp52-PR transgene consisting of a PDZ, a ZM, and 4 LIM domains in the indirect flight muscles (IFM) of adult flies, which causes formation of large aggregates (Figure 1A,B,I, Figure 1\u2014figure supplement 1). To determine which domain is responsible for aggregation, we deleted them individually: the absence of LIM domains (Zasp52-PP) and ZM domain (Zasp52-PR\u2206ZM) abolished aggregate formation, whereas removal of the PDZ domain only slightly reduced the number of aggregates (Zasp52-PR\u2206PDZ, Figure 1C\u2013E,I). The PDZ domain is required for binding \u03b1-actinin, a crucial crosslinker of actin filaments at the Z-disc (Katzemich et al., 2013; Liao et al., 2016). Reducing \u03b1-actinin levels by RNAi in Zasp52-PR overexpression reduces aggregate formation to a similar level (Figure 1\u2014figure supplement 2), indicating that \u03b1-actinin increases aggregate number, but is not required for their initial formation. Expression of the paralogous genes Zasp66 and Zasp67 (Gonz\u00e1lez-Morales et al., 2019), which lack LIM domains like Zasp52-PP, also does not result in aggregate formation (Figure 1F,G and I). Finally, we tested if multiple LIM domains are required for aggregate formation by overexpressing Zasp52-PK consisting of PDZ, ZM and 1 LIM domain. No aggregates form (Figure 1H and I) indicating that the ZM domain and multiple LIM domains are required for aggregate formation.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/50496/elife-50496-fig1-v3.jpg)\n\n**Figure 1.:** (A\u2013H) Confocal images of IFM in control or Zasp overexpression conditions using Act88F-Gal4; actin filaments are marked in magenta and Z-discs in green. (A) In control flies, sarcomeres are regular with Z-discs located in the center of the actin signal. (B) Upon GFP-Zasp52-PR overexpression sarcomere structure is severely affected and big Zasp aggregates appear. (C) The overexpression of Flag-Zasp52-PP, an isoform lacking all LIM domains, has a modest sarcomere phenotype and aggregation is not observed. (D) Overexpression of a mutated form of Zasp52-PR with a deletion in the ZM domain does not form aggregates. (E) Overexpression of a mutated form of Zasp52-PR carrying a deletion in the PDZ domain causes small aggregates and sarcomere phenotypes. (F and G) The overexpression of the other Zasp paralogs, Zasp66 or Zasp67, does not cause aggregates. (H) Overexpression of GFP-Zasp52-PK, a smaller isoform of Zasp52 lacking LIM2, 3, and 4 domains affects sarcomere structure, but aggregation is infrequent. (I) Estimation of Z-disc aggregates in all overexpression conditions, n\u00a0=\u00a010 muscle fibers. (J) Confocal images of IFM in control or in mild overexpression of GFP-Zasp52-PR using UH3-Gal4. (K) Estimation of Z-disc aggregates in mild overexpression of GFP-Zasp52-PR. (L) Frequency plot of Z-disc sizes. Z-discs are bigger when GFP-Zasp52-PR is overexpressed using UH3-Gal4. Scale bars, 10 \u00b5m. p-Values in panel I and K were calculated using Welch\u2019s two-sample t-test.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/50496/elife-50496-fig1-figsupp1-v3.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Cartoon of selected Zasp protein isoforms with annotated protein domains. Isoforms are named according to FlyBase. Numbers at each end represent the length in amino acids. ZM, Zasp-like motif.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/50496/elife-50496-fig1-figsupp2-v3.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A, B) Confocal images of IFM in control or \u03b1-actinin depleted conditions; actin filaments are marked in magenta and Z-discs marked by Zasp66-GFP are shown in green. (A) Control sarcomeres are regular with Z-discs located in the center of the actin signal. (B) In \u03b1-actinin-depleted muscles sarcomere structure is severely perturbed, and Z-discs are rarely visible. (C, D) Confocal images of IFM with aggregates caused by the overexpression of Zasp52-PR. (C) Overexpression of Zasp52-PR produces aggregates. (D) Overexpression of Zasp52-PR in \u03b1-actinin-depleted muscles produces smaller aggregates. (E) Estimation of Z-disc aggregates in all overexpression conditions, n\u00a0=\u00a010 muscle fibers. Act88F-Gal4 was used in all panels. Scale bars, 10 \u00b5m. p-Values in panel E were calculated using Welch\u2019s two-sample t-test.\n\nTo test if aggregates formed as a result of Z-disc overgrowth, we tested the overexpression of Zasp52-PR using UH3-Gal4, a driver line that has the same temporal and spatial expression pattern as Act88-Gal4 but is expressed at a much lower level. To better capture the size variation, we measured the Z-disc height that corresponds to the disc diameter and categorized them into specific size categories. In this condition, Z-discs are bigger than the control, but aggregates are not present (Figure 1J\u2013L), indicating that Z-disc growth and pathological aggregation correlate with the amount of Zasp52 protein.\n\n### Domains required for Zasp self-interaction\n\nNext, we employed the yeast two-hybrid system (Y2H) to determine if Zasp forms oligomers by interacting with itself. Zasp52-PK and Zasp52-PE, another full-length isoform, can interact with each other, whereas controls do not interact (Figure 2A). Full-length isoforms of Zasp66 and Zasp67 (Zasp66-PK and Zasp67-PD) can also interact with Zasp52-PK and Zasp52-PE (Figure 2A). These data suggest that Zasp proteins can homo- and heterodimerize.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/50496/elife-50496-fig2-v3.jpg)\n\n**Figure 2.:** (A) Yeast two-hybrid assays between the three Zasp paralogs. Images of double-transformed yeast grown in selective -Ade/-His/-Leu/-Trp plates. Serial dilutions are shown from left to right (OD: 0.1, OD: 0.01, and OD: 0.001). Zasp52-PK dimerizes with itself and with the longer isoform Zasp52-PE. Zasp66 interacts with Zasp52-PK and Zasp52-PE. Zasp67 interacts with Zasp52-PK and Zasp52-PE. Negative controls using the DNA-binding domain (bait, pGAD-T7) or the Activating domain of Gal4 (prey, pGBK-T7) are shown. (B) Y2H assays testing the interaction between all protein domains encoded by the Zasp52 gene and Zasp52-PK, Zasp66-PK, or Zasp67-PD proteins. Zasp52-PK interacts with isolated ZM and LIM domains, Zasp66-PK and Zasp67-PD interact only with some LIM domains. LIM1A, LIM1B, LIM2A, and LIM2B are different splice isoforms of LIM1 and LIM2 domains. (C) Proposed model of Zasp homo/heterodimerization. The LIM domains bind the ZM domain. Zasp52-PK dimerization occurs through two ZM/LIM pairs. The heterodimerization between Zasp52-PK and Zasp66-PK or Zasp67-PD occurs through only one ZM/LIM-binding site. Zasp66-PH is a small isoform that only contains a ZM domain. (D) Y2H assays mapping the interaction between different Zasp52 LIM domains to Zasp66-PK using truncation mutants. (E) Y2H assays testing the interaction between the ZM only isoform Zasp66-PH, and the individual protein domains encoded by Zasp52.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/50496/elife-50496-fig2-figsupp1-v3.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Endogenous Zasp52 tagged with GFP was purified from thorax extracts via GFP beads. GFP-Zasp52 co-immunoprecipitates Flag-Zasp52-PK. GFP alone was used as negative control. (B) Purified His-Zasp52-PK-Flag from bacteria was treated with the chemical crosslinker ethylene glycol bis-sulfosuccinimidyl succinate (EGS) and then analyzed by SDS-Page. In addition to monomers (M, 50 kD), dimers (D) are observed upon EGS treatment.\n\nWe confirmed these results by co-immunoprecipitation of Flag-tagged Zasp52 with GFP-tagged Zasp52 from thorax muscle extracts (Figure 2\u2014figure supplement 1A). Furthermore, bacterially purified His-Zasp52-PK-Flag dimerized in vitro in a chemical crosslinking assay (Figure 2\u2014figure supplement 1B).\n\nTo identify the domains involved in homo- and heterodimerization, we tested the interaction of Zasp52-PK, Zasp66 and Zasp67 with each individual domain of Zasp52. Zasp52-PK interacts with the ZM domain and LIM domains, whereas Zasp66 and Zasp67 only interact with LIM domains (Figure 2B). This suggests that dimerization is mediated by a ZM-LIM domain interaction, and because Zasp66 and Zasp67 lack LIM domains, they cannot interact with the ZM domain (Figure 2C). To confirm this hypothesis, we next tested the interaction of LIM2A, LIM2B, LIM3 and Zasp52-PK with a series of Zasp66 deletion constructs. As soon as the ZM domain of Zasp66 is deleted, the interaction with LIM domains is abolished (Figure 2D). Finally, we tested Zasp66-PH, a ZM-only isoform of Zasp66 for interaction with the individual domains of Zasp52. Zasp66-PH can only interact with LIM domains of Zasp52 (Figure 2E). Thus, LIM-ZM binding mediates homo- and heterodimerization between Zasp proteins.\n\n### Bimolecular fluorescence complementation reveals Zasp interaction at the Z-disc\n\nNext, we investigated if LIM-ZM interaction observed in a heterologous system also occurs in vivo at the Z-disc. We hypothesized that an endogenous GFP-tagged Zasp66 will be recruited to the Z-discs by Zasp52. We analyzed two Zasp52 mutants that differentially affect sarcomere structure: Zasp52MI02988 disrupts N-terminal isoforms and only partially affects the last three LIM domains, whereas Zasp52MI00979 introduces a stop codon before the last three LIM domains (Figure 3\u2014figure supplement 1A)\u00a0(Liao et al., 2016). Zasp66-GFP fluorescence is mildly reduced in Zasp52MI02988 mutants (Figure 3A,B and D). In contrast, Zasp66-GFP fluorescence is strongly reduced in Zasp52MI00979 mutants (Figure 3C and D), suggesting that Zasp52 recruits other Zasp proteins through its LIM domains, consistent with the Y2H results. \u03b1-Actinin localization at the Z-disc was not decreased in any of the Zasp mutants (Figure 3\u2014figure supplement 1B,C).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/50496/elife-50496-fig3-v3.jpg)\n\n**Figure 3.:** (A\u2013C) Confocal images of Zasp66-GFP IFM in control and Zasp52 mutant backgrounds. Zasp66-GFP levels are lower in Zasp52MI00979 mutant than in the control or in Zasp52MI02988 mutants. (D) Boxplot of Zasp66-GFP intensities in control and Zasp52 mutant backgrounds. (E,\u00a0F) Examples of a negative BiFC control (F) and a positive BiFC signal (E) suggesting Zasp52-PK dimerizes at the Z-disc. (G, H) Plots of the BiFC fluorescence intensity values relative to background noise. Positive BiFC fluorescence is detected between Zasp52-PK and Zasp52-PK (G) and between Zasp52-PK and Zasp66-PH (H). Act88F-Gal4 was used to drive expression of NYFP- or CYFP-tagged proteins. Scale bar, 5 \u00b5m. p-Values in panels D, G, and H were calculated using Welch\u2019s two-sample t-test.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/50496/elife-50496-fig3-figsupp1-v3.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Cartoon representing the Zasp52 genomic locus with selected transcripts, two alternative transcription start sites, protein domains, and three MiMIC lines introducing an artificial exon which consists of a splice acceptor followed by stop codons for all three reading frames. (B) Confocal images of Actn-GFP IFM in control and Zasp52 mutant backgrounds. Actn-GFP levels are comparable between the control and Zasp52 mutants. (C) Boxplot of Actn-GFP intensities in control and Zasp52 mutant backgrounds. p-Values were calculated using one-sided Welch\u2019s two-sample t-test. (D) Representation of the BiFC principle. (E) The ZM-only Zasp66-PH isoform tagged with a Venus fluorescent protein localizes to the Z-disc, marked by Zasp52-mCherry.\n\nTo determine if LIM and ZM domains directly interact in flies at the Z-disc, we employed bimolecular fluorescence complementation (BiFC) assays (Figure 3\u2014figure supplement 1D)\u00a0(Ciruela, 2008; Gohl et al., 2010). We first confirmed that the ZM-only isoform Zasp66-PH fused to a Venus tag localized to Z-discs (Figure 3\u2014figure supplement 1E). We then generated transgenic flies expressing Zasp52-PK and Zasp66-PH tagged with either the C-terminus or the N-terminus of yellow fluorescent protein (NYFP or CYFP) and quantified the fluorescence of reconstituted YFP at the Z-disc. Zasp52-PK-NYFP and Zasp52-PK-CYFP show specific fluorescence at the Z-disc, whereas controls do not (Figure 3E\u2013G). More importantly, the ZM-only isoform Zasp66-PH-NYFP interacts specifically with Zasp52-PK-CYFP at the Z-disc (Figure 3H). Thus, ZM-LIM interaction of Zasp proteins occurs in vivo at the Z-disc.\n\n### ZM domains and canonical Z-discs co-appeared in bilateral animals\n\nLIM domains are well-known protein-protein interaction domains (Kadrmas and Beckerle, 2004). In contrast, functional information on the ZM domain is scarce. It is an uncharacterized short motif of 26 amino acids found only in Alp/Enigma proteins (Klaavuniemi et al., 2004; Letunic et al., 2015). Alignment of Drosophila Zasp-encoding genes to the ZM consensus sequence shows weak conservation (Figure 4A). To determine the phylogenetic distribution of the ZM domain, we compiled the presence of ZM domains in all branches of metazoans using data from the PFAM database (Bateman et al., 2004; El-Gebali et al., 2019). In contrast to the universal presence of LIM domains in eukaryotes, the ZM domain is only present in a subset of animal genomes and absent from plants, fungi and unicellular metazoans (Figure 4B). Muscle striation evolved independently in cnidarians and bilaterians, with only the latter showing a canonical Z-disc structure (Steinmetz et al., 2012). Intriguingly, the ZM domain is restricted to bilateral animals (Figure 4B). Thus, our correlative data suggest that canonical Z-discs and ZM domains arose together during evolution.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/50496/elife-50496-fig4-v3.jpg)\n\n**Figure 4.:** (A) Protein sequence alignment between the three Zasp paralogs in flies and the ZM consensus sequence SMART:SM00735. Similar amino acids to the consensus are highlighted in gray. (B) Radial phylogenetic tree of selected eukaryotic lineages with annotated presence of the ZM domain from the PFAM domain database (PFAM: PF15936). The ZM domain is restricted to bilateral animals.\n\n### Differential temporal expression and localization of Zasp growing and blocking isoforms\n\nZasp isoforms can be divided into isoforms with multiple LIM domains (e.g. Zasp52-PR) and isoforms with just one or no LIM domain (e.g. Zasp52-PK, Zasp52-PP, Zasp66, Zasp67). We named the former growing isoforms and the latter blocking isoforms. We then considered what mechanism might coordinate Z-disc growth: we hypothesize that multiple LIM domain-containing Zasp proteins recruit other Zasp proteins by interacting with their ZM domains. If the recruited proteins are also multivalent (contain two or more LIM domains), more Zasp proteins will be recruited leading to Z-disc growth. However, if recruited proteins lack LIM domains, they block further recruitment of Zasp proteins, and Z-disc growth terminates (Figure 5A).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/50496/elife-50496-fig5-v3.jpg)\n\n**Figure 5.:** (A) Proposed model of Z-disc growth and aggregate formation. In nascent Z-bodies, Zasp binds \u03b1-actinin and forms a homodimer between its ZM and LIM domains. During the early growth phase, Zasp growing isoforms use their free LIM domains to recruit more Zasp molecules through the ZM domain, thus growing the Z-disc. At later stages, growth is downregulated by the incorporation of blocking isoforms of Zasp, which are recruited to the Z-disc but cannot recruit further proteins because they lack LIM domains. (B) RNAseq data plots showing the expression of selected Zasp isoforms at different developmental timepoints. The y-axis corresponds to the log of the number of transcripts per million (TPM) and the x-axis to hours after pupa formation. Isoforms were classified as blocking isoforms (0 or 1 LIM domain) or growing isoforms (two or more LIM domains). (C) Confocal microscopy image of IFM cross sections expressing Zasp52-GFP (green) and stained for actin (magenta). (D) Differential distribution of Zasp growing and blocking isoforms throughout the Z-disc. Images of false-colored denoised Z-discs. Zasp52-growing isoforms are more concentrated at the center of the disc, Zasp66 and Zasp67 are mostly concentrated in the periphery. Color scale is shown at the right. (E) Profile plots of relative intensity values at the Z-disc diameters from at least 10 individual Z-discs. Growing isoforms peak at the center of the Z-discs, blocking isoforms have two peaks. Scale bars in D, 1 \u00b5m.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/50496/elife-50496-fig5-figsupp1-v3.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A\u2013C) Steps for obtaining relative Zasp concentrations throughout single Z-discs. First, a single properly oriented Z-disc is selected from a confocal image (raw image). Then, we changed the display from gray look-up table mode to physics look-up table mode. Higher concentration of Zasp52-GFP at the center of the disc is observed at this stage (A; false colored). Higher concentration of Zasp67-GFP at the periphery of the disc is observed at this stage (B; false colored). Then, we rotated the Z-disc image by 2 degrees 180 times, and we calculated the average from all the resulting images (average image). Finally, we calculated the relative fluorescence intensities. (C) An artificially generated disc image from random noise treated in the same way as panels A and B does not show any obvious pattern.\n\nTo regulate Z-disc growth, growing isoforms should be overrepresented at earlier stages of Z-disc formation, and blocking isoforms at later stages, to stop Z-disc growth. We used an RNAseq dataset from developing IFM that covers the whole Z-disc formation process, from 16 hr after puparium formation (APF) to newly eclosed flies (Spletter et al., 2018). We observed earlier expression of the growing isoforms compared to the blocking isoforms (Figure 5B). For example, multivalent Zasp52 growing isoforms are already strongly expressed at 24 hr APF, whereas some blocking isoforms without any LIM domains are expressed only after 60 hr APF (Figure 5B).\n\nZ-discs grow at the periphery of the disc, starting as a small Z-body (Orfanos et al., 2015; Shwartz et al., 2016). Our model therefore predicts growing isoforms to be enriched at the centre and blocking isoforms to be enriched at the periphery of the final-sized Z-disc. To analyze the distribution of Zasp proteins within Z-discs, we made cross sections of myofibrils and evaluated the localization pattern of blocking isoforms (using Zasp66-GFP and Zasp67-GFP), and growing isoforms (using Zasp52-GFP; Zasp52ZCL423) at the level of the Z-disc. To label the entire disc, we used actin staining as counterstain (Figure 5C). To compensate for the low signal-to-noise ratio, we used a smoothening algorithm that takes advantage of the geometrical properties of discs (Figure 5\u2014figure supplement 1). Actin is evenly distributed in the Z-disc (Figure 5D,E). The growing isoforms are present throughout the disc, but most concentrated at the centre of the Z-disc (Figure 5D,E). The blocking isoforms Zasp66 and Zasp67 are partially excluded from the centre of the disc and form a ring-like pattern (Figure 5D,E). Zasp66 localizes more at the periphery compared to Zasp67, which correlates with its later expression peak compared to Zasp67 (middle panels of Figure 5B).\n\n### The balance between growing and blocking isoforms controls Z-disc growth and aggregation\n\nWe then asked whether decreasing the levels of growing isoforms would result in smaller Z-discs. We measured individual Z-discs in control and Zasp52 mutants (Figure 6A\u2013C). Interestingly, only the Zasp52MI00979 mutant, which deletes multiple LIM domains, had smaller Z-discs compared to the control (Figure 6B,C). In Zasp52MI00979, the smaller size categories were significantly elevated, whereas Zasp52MI02988 was comparable to the control (Figure 6C).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/50496/elife-50496-fig6-v3.jpg)\n\n**Figure 6.:** (A and B) Confocal microscopy images of control and Zasp52MI00979 mutant. Actin filaments are marked in magenta and Z-discs in green. The Zasp52MI00979 mutant has smaller and frayed Z-discs. (C) Frequency plot of Z-disc sizes in control, Zasp52MI02988, and Zasp52MI00979 mutants. Small Z-discs are only observed in the Zasp52MI00979 mutant. (D) Overexpression of the Zasp52-PP blocking isoform also results in smaller Z-discs. The small Z-disc phenotype is not observed in Zasp52-Stop143, lacking the ZM domain. (E) Small Z-disc phenotypes are observed upon overexpression of Zasp66 and Zasp67. (F and G) Boxplots of the Zasp52 fluorescence intensities upon overexpression of different blocking isoforms. (F) Zasp52-mCherry levels decrease upon overexpression of Zasp52-PP but are restored if the ZM domain of Zasp52-PP is deleted (Zasp52-*143). (G) Zasp52-mCherry levels also decrease upon overexpression of Zasp66 and Zasp67. Act88F-Gal4 was used for overexpression experiments in panels D-G. Scale bars, 5 \u00b5m. p-Values in panels C-E were calculated using Fisher's exact test for count data. p-Values in panels F and G were calculated using Welch\u2019s two-sample t-test.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/50496/elife-50496-fig6-figsupp1-v3.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (A) Confocal images of Zasp52-mCherry in control and different Zasp overexpression backgrounds. Quantification shown in Figure 6F,G. (B) Confocal images of Actn-GFP in control and different Zasp overexpression backgrounds. Relative fluorescence levels are similar in all conditions. (C) Boxplot of the Actn-GFP fluorescence intensities upon overexpression of different blocking isoforms. Act88F-Gal4 was used for overexpression experiments. Scale bars, 5 \u00b5m. p-Values were calculated using Welch\u2019s two-sample t-test with Bonferroni correction for multiple comparisons.\n\nWe next determined if the opposite approach, increasing the levels of blocking isoforms, also results in smaller Z-discs. Overexpressing the Zasp52-PP blocking isoform led to smaller Z-discs than the control (Figure 6D). This effect requires the ZM domain, because overexpression of Zasp52-Stop143 containing only a functional extended PDZ domain, causes a milder phenotype than Zasp52-PP (Figure 6D, Figure 1\u2014figure supplement 1). Like Zasp52-PP, overexpression of Zasp66 or Zasp67 resulted in smaller Z-discs (Figure 6E). We also confirmed these phenotypes by measuring the relative fluorescence of Zasp52-mCherry at the Z-disc. Upon overexpression of Zasp52-PP, but not of Zasp52-Stop143, Zasp52-mCherry recruitment to the Z-disc is reduced (Figure 6F, Figure 6\u2014figure supplement 1A). Likewise, overexpression of Zasp66 and Zasp67 reduces Zasp52-mCherry recruitment to the Z-disc (Figure 6G, Figure 6\u2014figure supplement 1A). In contrast, \u03b1-actinin levels were unchanged in Zasp overexpression conditions (Figure 6\u2014figure supplement 1B,C). These data indicate that increasing the ZM/LIM ratio in IFM results in smaller Z-discs.\n\nFinally, we wondered if depleting the blocking isoforms encoded by Zasp66 and Zasp67 can generate bigger Z-discs or aggregates using CRISPR Zasp66 and Zasp67 null mutants (Gonz\u00e1lez-Morales et al., 2019). We observed rare aggregates in Zasp66 and Zasp67 single mutants (Figure 7A,B,D). As these two proteins likely have some redundant roles, we also analyzed the Zasp66 Zasp67 double mutant, where we observed frequent aggregates (Figure 7C,D). Additionally, the single mutants had normal-sized Z-discs, whereas the double mutant had enlarged Z-discs (Figure 7E). Thus, blocking isoforms are required to prevent Z-disc overgrowth.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/50496/elife-50496-fig7-v3.jpg)\n\n**Figure 7.:** (A\u2013C) Confocal microscopy images of Zasp66 and Zasp67 single null mutants and the Zasp66 Zasp67 double mutant. Aggregates are outlined by a stippled red line. (D) Plot of aggregate frequencies of single and double mutants. (E) Frequency plot of Z-disc size categories in single and double mutants (for categories see Figure 6). (F\u2013H) Confocal microscopy images of muscles overexpressing the growing GFP-Zasp52-PR isoform and selected Zasp blocking isoforms or a LacZ control. (F) In the control, GFP-Zasp52-PR overexpression produces aggregates. (G) The aggregation phenotype is suppressed by co-overexpression of the blocking isoform Zasp52-PP. (H) The aggregation phenotype is not rescued upon co-overexpression of Zasp52-Stop143, which lacks the ZM domain. (I) Aggregation frequency in different co-overexpression backgrounds. Act88F-Gal4 was used for overexpression experiments in panels F-I. Scale bars in A-C and F-J, 10 \u00b5m. p-Values in panel E were calculated using Fisher's exact test for count data. p-Values in panels D and I were calculated using Welch\u2019s two-sample t-test.\n\nAs many diseases are believed to be caused by the formation of aggregates (Baba et al., 1998; Selcen, 2008), we asked if we can suppress aggregate formation in our model of overexpressed GFP-Zasp52-PR (Figure 1B). Co-overexpression of both growing and the Zasp52-PP blocking isoform suppressed aggregate formation compared to a LacZ control (Figure 7F\u2013I). The mutated blocking isoform Zasp52-Stop143 without the ZM domain did not suppress aggregation (Figure 7H,I). Co-overexpression of Zasp66 or Zasp67 also suppressed aggregation (Figure 7I).\n\n## Discussion\n\nHow myofibrils assemble and grow until they reach their final, highly invariant size has remained poorly understood. Here, we reveal a conserved mechanism by which the Z-disc scaffold protein Zasp oligomerizes to induce Z-disc and thereby myofibril growth. Furthermore, we show that Z-disc and sarcomere growth is terminated when shorter isoforms of Zasp are expressed that block multivalency-driven oligomerization.\n\n### Z-disc formation and growth is driven by multivalent oligomerization of Zasp proteins\n\nOur findings indicate that Z-disc formation and growth is driven by multivalent oligomerization of Zasp proteins with multiple LIM domains, and eventually terminated at the proper Z-disc size by the upregulation of blocking isoforms without LIM domains (see model in Figure 5A). The process of Z body and Z-disc formation is reminiscent of membraneless organelles with compositions distinct from the surrounding cytosol, which form through a mechanism of phase separation (e.g. Cajal bodies or P bodies)\u00a0(Boeynaems et al., 2018; Weber, 2017). Both have sharp boundaries between themselves and the cytoplasm, they form and organize as discrete puncta in the cytosol, and multivalent protein domains are often involved in their formation (Li et al., 2012; Weber, 2017).\n\nSarcomere size is stereotyped in a given muscle type but distinct among different muscles (Sch\u00f6nbauer et al., 2011). How can our model explain differences in sarcomere sizes? The sarcomere grows, while the Zasp growing isoforms dominate the Zasp isoform pool. Different sarcomere sizes can be achieved in two ways. First, the sarcomere growth period \u2013 the window of time in which Zasp growing isoforms dominate, might vary among muscle types. Second, the speed at which new Zasp molecules are recruited to the Z-disc, might be different among muscle types, while the growth period remains constant. Given the diversity of muscle types and therefore sarcomere sizes that exist, it is likely that a combination of these two strategies occur simultaneously.\n\nFinally, apart from the ZM-LIM mechanism described here, additional redundant mechanisms to control Z-disc growth might exist, as evidenced by the observation that Zasp52-PR overexpression makes big Z-discs and aggregates, while the mutant removing Zasp52 LIM domains reduces Z-disc size to a comparatively small degree. Redundant mechanisms might operate through other LIM domain proteins, or the coordination of Z-disc and M-line growth, all of which may provide important buffering functions to ensure proper myofibril size, which is crucial for fully functional muscles.\n\n### The role of the ZM domain\n\nThe ZM domain is a conserved domain without a clearly defined function. On its own, the ZM domain from two mouse Zasp proteins localizes to the Z-disc (Klaavuniemi et al., 2004; Klaavuniemi and Yl\u00e4nne, 2006). Our data suggest that Z-disc localization is a conserved feature of ZM domains from vertebrates to insects. ZM-containing proteins are tethered to the Z-disc by the physical interaction with the LIM domains of other Zasp proteins. In sum, the LIM domain serves as a recruitment signal for Zasp proteins and potentially other unidentified ZM-containing proteins to join the Z-disc. In addition, given the appearance of the ZM domain in bilateral animals with canonical Z-discs, we postulate that a conserved mechanism involving LIM-ZM binding underlies Z-disc growth and growth termination.\n\n### Blocking and growing isoforms in vertebrates\n\nIn vertebrates, the Zasp proteins are very diverse and are better known as Alp/Enigma family: ZASP/Cypher/Oracle/LDB3/PDLIM6, ENH/PDLIM5, PDLIM7/ENIGMA/LMP-1, CLP36/PDLIM1/Elfin/hCLIM1, PDLIM2/Mystique/SLIM, ALP/PDLIM3, and RIL/PDLIM4. The ZM/DUF4749 motif occurs in ZASP, CLP36, PDLIM2, ALP and RIL (Cheng et al., 2010; D'Cruz et al., 2016; Faulkner et al., 1999; Vallenius et al., 2004; Zheng et al., 2010; Zhou et al., 2001). The LIM domain occurs in all Zasp proteins, either as one domain in Alp family members or as three domains in Enigma family members (Zheng et al., 2010). We identified two Zasp genes that encode only blocking isoforms in fruit flies: Zasp66 and Zasp67, and one gene, Zasp52, that encodes blocking and growing isoforms. Although Zasp66 and Zasp67 genes are insect-specific (Gonz\u00e1lez-Morales et al., 2019), vertebrate Alp/Enigma genes also express isoforms without LIM domains that could fulfill a blocking isoform function (Cheng et al., 2011; Zheng et al., 2010). In addition, because Zasp52-PK, which only contains one LIM domain, behaves as a blocking isoform, the Alp members with only one LIM domain might also behave as blocking isoforms.\n\nThe function of the growing isoforms of Zasp requires multiple functional LIM domains. As the Enigma family members contain three C-terminal LIM domains, they are the ideal candidates to fulfill the growing role in vertebrates. Three Enigma proteins exist in vertebrates: PDLIM7/Enigma/LMP-1, ENH/PDLIM5 and ZASP/Cypher/Oracle/LDB3/PDLIM6. Functional redundancy between them at the Z-disc is likely common and demonstrated in one case (Mu et al., 2015). In Cypher knockout mice sarcomere assembly occurs normally during development, followed by immediate sarcomere failure after postnatal onset of contractility (Zhou et al., 2001). ENH mutants exhibit cardiac dilation and abnormal Z-disc structure in the heart (Cheng et al., 2010). Intriguingly, in both Cypher and ENH single mutants, as well as Cypher ENH double mutants, sarcomeres look considerably smaller in diameter in electron microscopy images (Cheng et al., 2010; Mu et al., 2015; Zhou et al., 2001). Thus, a similar role for Enigma proteins in setting sarcomere diameter in vertebrates appears likely.\n\n### Sarcomere size control in human myopathies\n\nIs the mechanism that controls Z-disc size related to the protein aggregation defects in human myopathies? Our Z-disc oligomerization hypothesis agrees well with the observation that many myopathies present aggregates, and several human ZASP mutations have been linked to aggregate-forming myopathies (Murphy and Young, 2015; Selcen and Engel, 2005). Many ZASP mutations linked to disease lie within the ZM domain or one of the LIM domains (Selcen and Engel, 2005; Theis et al., 2006; Vatta et al., 2003). Protein aggregation in myopathy patients might be a consequence of an imbalance in the mechanism that controls sarcomere size, favoring the growing over the blocking isoforms. If this were the case, our data points to a potential therapeutic avenue: blocking the growing isoforms with short peptides containing a ZM domain.\n\nIn conclusion, we propose that a conserved mechanism involving LIM-ZM binding underlies Z-disc growth and therefore myofibril diameter.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Gene (Drosophila melanogaster)</td>\n      <td>Zasp52</td>\n      <td></td>\n      <td>FBgn0265991</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Gene (Drosophila melanogaster)</td>\n      <td>Zasp66</td>\n      <td></td>\n      <td>FBgn0035917</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Gene (Drosophila melanogaster)</td>\n      <td>Zasp67</td>\n      <td></td>\n      <td>FBgn0036044</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Gene (Drosophila melanogaster)</td>\n      <td>Actn</td>\n      <td></td>\n      <td>FBgn0000667</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (Drosophila melanogaster)</td>\n      <td>Act88F-Gal4</td>\n      <td>RM Cripps PMID: 22008792</td>\n      <td>FBal0268407</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (Drosophila melanogaster)</td>\n      <td>UH3-Gal4 (P[GawB]HkUH3)</td>\n      <td>Anja Katzemich PMID: 23505387</td>\n      <td>FBti0148868</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (Drosophila melanogaster)</td>\n      <td>UAS-LacZ</td>\n      <td>BDSC</td>\n      <td>RRID:BDSC_3356</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (Drosophila melanogaster)</td>\n      <td>UAS-GFP-Zasp52-PR</td>\n      <td>Current study</td>\n      <td>N/A</td>\n      <td>Expresses full length Zasp52-PR isoform with a N terminal GFP tag under UAS. The landing site is ZH-attP-86Fb.</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (Drosophila melanogaster)</td>\n      <td>UAS-GFP-Zasp52-PK</td>\n      <td>Current study</td>\n      <td>N/A</td>\n      <td>Expresses Zasp52-PK isoform with a N terminal GFP tag under UAS. The landing site is ZH-attP-86Fb.</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (Drosophila melanogaster)</td>\n      <td>UAS-Flag-Zasp52-PR</td>\n      <td>Kuo An Liao PMID: 27783625</td>\n      <td>FBal0323349</td>\n      <td>Expresses full length Zasp52-PR isoform with a N terminal Flag tag under UAS. The landing site is ZH-attP-86Fb.</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (Drosophila melanogaster)</td>\n      <td>UAS-Flag-Zasp52-PR-\u0394PDZ</td>\n      <td>Kuo An Liao PMID: 27783625</td>\n      <td>FBal0323350</td>\n      <td>Expresses Full length Zasp52 without the PDZ domain and a N terminal Flag tag under UAS. The landing site is ZH-attP-86Fb.</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (Drosophila melanogaster)</td>\n      <td>UAS-Flag-Zasp52-PR-\u0394ZM</td>\n      <td>Kuo An Liao PMID: 27783625</td>\n      <td>FBal0323351</td>\n      <td>Expresses full length Zasp52-PR isoform without the ZM domain and a N terminal Flag tag under UAS. The landing site is ZH-attP-86Fb.</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (Drosophila melanogaster)</td>\n      <td>UAS-Flag-Zasp52-PP</td>\n      <td>Current study</td>\n      <td>N/A</td>\n      <td>Expresses smallest Zasp52 isoform with a N terminal Flag tag under UAS. The landing site is ZH-attP-86Fb.</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (Drosophila melanogaster)</td>\n      <td>UAS-Flag-Zasp52-Stop143</td>\n      <td>Current study</td>\n      <td>N/A</td>\n      <td>Expresses Zasp52-PK isoform with a N terminal Flag tag and a stop codon at position 143 under UAS. The landing site is ZH-attP-86Fb.</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (Drosophila melanogaster)</td>\n      <td>UAS-Zasp66-PK-Flag-HA</td>\n      <td>Current study</td>\n      <td>N/A</td>\n      <td>Transgenic made from the UFO11045 plasmid from DGRC. The landing site is ZH-attP-58A.</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (Drosophila melanogaster)</td>\n      <td>UAS-Zasp67-PE-Flag-HA</td>\n      <td>Current study</td>\n      <td>N/A</td>\n      <td>Transgenic from Zasp67 sequence synthesized by Genscript and cloned into a pUASattb vector. The landing site is ZH-attP-58A.</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (Drosophila melanogaster)</td>\n      <td>Zasp52-MI02988-mCherry</td>\n      <td>Nicanor Gonzalez-Morales PMID: 29423427</td>\n      <td>PMID: 29423427</td>\n      <td>Replacement of the MIMIC02988 cassette in Zasp52 with an in-frame mCherry tag.</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (Drosophila melanogaster)</td>\n      <td>Zasp52-GFP Zasp52[ZCL423]</td>\n      <td>BDSC</td>\n      <td>RRID:BDSC_58790</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (Drosophila melanogaster)</td>\n      <td>Zasp66-GFP Zasp66[ZCL0663]</td>\n      <td>BDSC</td>\n      <td>RRID:BDSC_6824</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (Drosophila melanogaster)</td>\n      <td>Zasp67-GFP fTRG</td>\n      <td>VDRC</td>\n      <td>v318355</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (Drosophila melanogaster)</td>\n      <td>UAS-Actn-KK (RNAi)</td>\n      <td>VDRC</td>\n      <td>v110719; FBst0482284</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (Drosophila melanogaster)</td>\n      <td>Zasp52[MI02988]</td>\n      <td>BDSC</td>\n      <td>RRID:BDSC_41034</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (Drosophila melanogaster)</td>\n      <td>Zasp52[MI07547]</td>\n      <td>BDSC</td>\n      <td>RRID:BDSC_43724</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (Drosophila melanogaster)</td>\n      <td>Zasp52[MI00979]</td>\n      <td>BDSC</td>\n      <td>RRID:BDSC_33099</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (Drosophila melanogaster)</td>\n      <td>Zasp66[KO]</td>\n      <td>PMID: 31123042</td>\n      <td>PMID: 31123042</td>\n      <td>CRISPR null mutant of Zasp66</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (Drosophila melanogaster)</td>\n      <td>Zasp67[KO]</td>\n      <td>PMID: 31123042</td>\n      <td>PMID: 31123042</td>\n      <td>CRISPR null mutant of Zasp67</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (Drosophila melanogaster)</td>\n      <td>UAS-Zasp66-PH-Venus</td>\n      <td>Current study</td>\n      <td>N/A</td>\n      <td>The Zasp66-PH isoform that contains only a ZM domain cloned into pBID-UAS-GV vector. The landing site is ZH-attP-58A.</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (Drosophila melanogaster)</td>\n      <td>UAS-Zasp66-PH-NYFP (CYFP)</td>\n      <td>Current study</td>\n      <td>N/A</td>\n      <td>The Zasp66-PH isoform fused to either NYFP or CYFP.</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (Drosophila melanogaster)</td>\n      <td>UAS-Zasp52-PK-NYFP (CYFP)</td>\n      <td>Current study</td>\n      <td>N/A</td>\n      <td>The Zasp52-PK isoform fused to either NYFP or CYFP.</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>Plasmid: pGADT7</td>\n      <td>Clontech</td>\n      <td>630442</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>Plasmid: pBD-Gal4-Zasp67</td>\n      <td>DGRC</td>\n      <td>CT33772-BD</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>Plasmid: pOAD-Zasp67</td>\n      <td>DGRC</td>\n      <td>CT33772-AD</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>Plasmid: pENTRY-Zasp52-PK</td>\n      <td>DGRC</td>\n      <td>DGRC: GEO02280</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>Plasmid: pENTRY-Zasp52-PE GEO12859</td>\n      <td>DGRC</td>\n      <td>DGRC: GEO12859</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>Plasmid: pENTRY-Zasp66-PH GEO14752</td>\n      <td>DGRC</td>\n      <td>DGRC: GEO14752</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>Plasmid: pGBKT7-GW</td>\n      <td>Addgene</td>\n      <td>61703</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>Plasmid: pGADT7-GW</td>\n      <td>Addgene</td>\n      <td>61702</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>Plasmid: pGADT7-Zasp66-PK</td>\n      <td>Current study</td>\n      <td>N/A</td>\n      <td>Zasp66-PK isoform cloned into pGADT7.</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>Plasmid: pGADT7-Zasp66-PK with stop codons</td>\n      <td>Current study</td>\n      <td>N/A</td>\n      <td>Stop codons were introduced in the Zasp66-PK-pGADT7 plasmid by site-directed mutagenesis (Genscript).</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>Plasmid: pGBKT7- Zasp52 individual domains: PDZ, ZM, LIM1a, LIM1b, LIM2a, LIM2b, LIM3 and LIM4</td>\n      <td>Current study</td>\n      <td>N/A</td>\n      <td>All individual domains of Zasp52 cloned into pGBKT7.</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>Plasmid: pGBKT7GW-Zasp52-PK</td>\n      <td>Current study</td>\n      <td>N/A</td>\n      <td>Zasp52-PK isoform cloned into pGBKT7GW using Gateway cloning.</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>Plasmid: pGADT7GW-Zasp52-PK</td>\n      <td>Current study</td>\n      <td>N/A</td>\n      <td>Zasp52-PK isoform cloned into pGADT7GW using Gateway cloning.</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>Plasmid: pGBKT7GW-Zasp52-PE</td>\n      <td>Current study</td>\n      <td>N/A</td>\n      <td>Zasp52-PE isoform cloned into pGBKT7GW using Gateway cloning</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>Plasmid: pGADT7GW-Zasp52-PE</td>\n      <td>Current study</td>\n      <td>N/A</td>\n      <td>Zasp52-PE isoform cloned into pGADT7GW using Gateway cloning.</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>Plasmid: pGBKT7GW-Zasp66-PH</td>\n      <td>Current study</td>\n      <td>N/A</td>\n      <td>Zasp66-PH isoform cloned into pGBKT7GW using Gateway cloning</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>Plasmid: pGADT7GW-Zasp66-PH</td>\n      <td>Current study</td>\n      <td>N/A</td>\n      <td>Zasp66-PH isoform cloned into pGADT7GW using Gateway cloning.</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>Plasmid: pDEST- pUAS-RfB-HA-CYFP-attB</td>\n      <td>Sven Bogdan PMID: 20937809</td>\n      <td>FBrf0212496</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>Plasmid: pDEST- pUAS-RfB-myc-NYFP-attB</td>\n      <td>Sven Bogdan PMID: 20937809</td>\n      <td>FBrf0212496</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Saccharomyces cerevisiae)</td>\n      <td>Matchmaker Y2HGold</td>\n      <td>Clontech</td>\n      <td>630498</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (E. coli)</td>\n      <td>BL21</td>\n      <td>NEB</td>\n      <td>C2530H</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-Flag</td>\n      <td>SIGMA</td>\n      <td>F3165</td>\n      <td>1:200</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>R Project for Statistical Computing: base and ape packages</td>\n      <td>https://cran.r-project.org/</td>\n      <td>RRID:SCR_001905</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Salmon</td>\n      <td>https://combine-lab.github.io/salmon/</td>\n      <td>RRID:SCR_017036</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>ImageJ/Fiji distribution</td>\n      <td>https://fiji.sc/</td>\n      <td>RRID: SCR_002285</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Galaxy</td>\n      <td>https://usegalaxy.org/</td>\n      <td>RRID:SCR_006281</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>ethylene glycol bis-sulfosuccinimidyl succinate (EGS)</td>\n      <td>Fisher Scientific</td>\n      <td>21565</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>YPDA medium</td>\n      <td>Clontech</td>\n      <td>630464</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Minimal SD Base</td>\n      <td>Clontech</td>\n      <td>630411</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>-Leu\u00a0/-\u00a0Trp DO Supplement</td>\n      <td>Clontech</td>\n      <td>630417</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>-Ade /- His /- Leu/-Trp DO Supplement</td>\n      <td>Clontech</td>\n      <td>630428</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Acti-stain 488 phalloidin</td>\n      <td>CYTOSKELETON, INC</td>\n      <td>PHDG1-A</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Alexa633-Phalloidin</td>\n      <td>Fisher Scientific</td>\n      <td>A22284</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Rhodamine-phalloidin</td>\n      <td>Fisher Scientific</td>\n      <td>10063052</td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### Experimental model\n\nWe used Drosophila melanogaster as a model organism for most experiments. Fly stocks and crosses were raised at 25\u00b0C. A comprehensive list of all strains used and generated can be found in the Key Resources Table. We used Saccharomyces cerevisiae for the yeast two-hybrid assays. Escherichia coli BL-21 strain was used to express recombinant proteins.\n\nTransgenic flies were generated by site-directed integration using the PhiC31 integrase method into either M[3xP3-RFP.attP]ZH-58A- or M[3xP3-RFP.attP]ZH-86Fb-bearing flies to ensure comparable expression levels (Bischof et al., 2007; Markstein et al., 2008). Unless stated otherwise, Act88F-Gal4 was used to drive strong transgene expression in the IFM (Bryantsev et al., 2012).\n\n### Yeast two hybrid and protein crosslinking assays\n\nPartial or complete coding sequences for Zasp52, Zasp66 and Zasp67 were cloned into Y2H vectors either by PCR-ligase cloning or through Gateway cloning. Constructs and cloning details are listed in the Key Resources Table. All constructs were verified by sequencing. Selected constructs were transformed into the Matchmaker Y2H Gold strain using the lithium acetate method (Gietz and Schiestl, 2007). Double transformant colonies were selected and amplified in media lacking leucine and tryptophan (-Leu/-Trp). Serial dilutions of the selected double transformants were grown in plates lacking leucine, tryptophan, histidine and adenine (-Ade/-His/- Leu/-Trp) to test for protein-protein interactions. The experiments were done at least three times.\n\nRecombinant 6xHis-Zasp52-PK-FLAG was expressed in Escherichia coli BL21 bacteria. Then, 6xHis-Zasp52-PK-FLAG was purified from the protein extracts using Ni-NTA agarose beads (Qiagen) for 3 hr at 4\u00b0C. The purified protein was then dialyzed overnight at 4\u00b0C. Finally, purified 6xHis-Zasp52-PK-FLAG was either incubated with ethylene glycol bis-sulfosuccinimidyl succinate (EGS) or alone. Then, the protein samples were analyzed by denaturing SDS-PAGE followed by western blotting with anti-Flag antibody (1:5000).\n\n### Muscle staining and microscopy\n\nThe IFM were dissected as previously described (Gonz\u00e1lez-Morales et al., 2017; Xiao et al., 2017). All images were acquired with comparable parameters. In agreement with previous studies, at least 10 thoraces were dissected for each condition. Samples were allocated into experimental groups according to their genotype. A big number of flies were collected for each experimental group and a subsample was randomly selected for dissection.\n\n### Bimolecular fluorescence complementation assay\n\nZasp52-PK, Zasp52-PE and Zasp66-PH Gateway pENTRY clones were obtained from the DGRC (GEO02280, GEO12859 and GEO14752). The BIFC pDEST vectors pUAS-RfB-HA-CYFP-attB and pUAS-RfB-myc-NYFP-attB vectors were a kind gift from Sven Bogdan (Gohl et al., 2010). Constructs were cloned using Gateway technology, and the final vectors were verified by sequencing. The Key Resources Table contains a list of transgenic flies used in this study.\n\nThe Act88F-Gal4 driver line was used to express CYFP- and NYFP-tagged proteins in the IFM. Then, the YFP fluorescence of individual Z-discs was quantified using the ImageJ plot profile tool (Schindelin et al., 2012). At least 20 samples were used for each condition. The data was normalized to the basal noise levels and plotted in R software.\n\n### Image analyses\n\nTo estimate the size of individual Z-discs and the fluorescence intensity levels of Z-disc proteins we first used a segmentation method that allows individual Z-discs to be measured (Xiao et al., 2017). Briefly, images from fluorescent Z-disc proteins were passed through a threshold filter, and then individual Z-discs were separated and measured using the analyze particles tool. Both tools can be found in any recent ImageJ/Fiji distribution (Schindelin et al., 2012). To estimate the Z-disc size, we measured the Z-disc height, that corresponds to the disc diameter. Then, the data was analyzed and plotted in R software. To estimate the relative fluorescence intensities of Z-disc proteins, we first obtained the mean intensity raw values for each Z-disc. Then, we normalized the values to a control genotype. The resulting data was then analyzed in R software. Rare segmentation mistakes result from Z-discs that are in close proximity. We could filter these mistakes out by size exclusion in the control images, but not in mutant conditions. We decided to leave the segmentation mistakes for consistency. If anything, this method underestimates the size differences between control and mutants.\n\nBatch Macro processing code for measuring individual Z-disc side-views in ImageJsetAutoThreshold(\"Default dark\");\nrun(\"Analyze Particles...\", \"size\u00a0=\u00a00.2 Infinity show\u00a0=\u00a0Outlines display exclude\");\n\nTo estimate the density of aggregates, present in a given IFM sample, we used confocal images of GFP- or mCherry-tagged Zasp. Each 36 \u00d7 36 \u00b5m image was divided into 256 2 \u00d7 2 \u00b5m images. An automatic threshold filter based on the original image was then used on the small images, and the area above the given threshold was measured. Then, we used R software to count the number of images with aggregates.\n\nBatch Macro processing code for aggregation estimates in ImageJrun(\"Montage to Stack...\", \"images_per_row\u00a0=\u00a016 images_per_column\u00a0=\u00a016 border\u00a0=\u00a00\"); \n macro \"Measure Stack\" {\nsaveSettings;\nsetOption(\"Stack position\", true);\nfor (n\u00a0=\u00a01; n\u00a0<=\u00a0nSlices; n++) {\nsetSlice(n);\nsetAutoThreshold(\"Default dark stack\");\n//run(\"Threshold...\");\nrun(\"Create Selection\");;\nrun(\"Measure\");\n}\nrestoreSettings;\n}\n\n### Cross-section images of Z-discs\n\nThoraces of Zasp52-GFP (Zasp52ZCL423), Zasp66-GFP (Zasp66ZCL0663), and Zasp67-GFP (Zasp67 fTRG) flies were fixed in paraformaldehyde and embedded into low-melting agarose blocks. Then, we sectioned the thoraces into 100-\u00b5m-thick sections using a standard vibratome. The sections were stained with TRITC-phalloidin and imaged using a LEICA SP8 confocal microscope and a 63x/1.4 oil objective. Images were then processed to isolate individual properly oriented Z-discs. To avoid artifacts from misoriented Z-discs, we selected only those in which the GFP signal coming from the Z-disc would cover the whole sarcomere area stained with phalloidin. To remove the background noise from cross-section Z-disc images, we took advantage of the geometrical properties of the Z-disc. We drew a selection circle around individual Z-discs and rotated the image by 2 degrees 180 times. Then, we calculated the average from all the rotated images.\n\nWe compared the Z-disc size categorical data using Fisher's exact test for count data, p-values above 0.001 were noted as not significant. We used Welch\u2019s two-sample t-test to compare the relative fluorescence intensities between groups. We used Welch\u2019s two-sample t-test to compare the aggregation frequency estimates.\n\n### Phylogenetic distribution of ZM domain proteins\n\nAll species that contain at least one protein with either the ZM (PF15936) or the LIM (PF00412) domain were downloaded from the PFAM web (Bateman et al., 2004; El-Gebali et al., 2019). A general phylogenetic tree was plotted based on the NCBI taxonomy data (Federhen, 2012) using the ape:plot.phyllo tool (Paradis, 2012).\n\n### RNAseq analysis\n\nWe uploaded all individual RNA-seq SRA reads from the project: PRJNA419412 (GEO: GSE107247) (Spletter et al., 2018). Each SRA read corresponds to a different time point in IFM development. We extracted the single-end reads using the fastq-dump tool. We then used Salmon v0.8.2 (Patro et al., 2017) to quantify the expression of all transcripts as Relative Transcripts Per Million (TPM) values. We used all the cDNAs from the D. melanogaster r6 reference transcriptome in fasta format (Adams et al., 2000). Then, the individual transcripts corresponding to the three Zasp genes were grouped according to their encoded protein domain architectures. Finally, we calculated the mean TPM values between similar isoforms and plotted the results over developmental time using R software.\n\nThe accession number for all reads used are: SRR1665023, SRR1665024, SRR1665025, SRR1665026, SRR1665027, SRR1665028, SRR6314253, SRR6314254, SRR6314255, SRR6314256, SRR6314257, SRR6314258, SRR6314259, SRR6314260, SRR6314261, SRR6314262, SRR6314263, SRR6314273, SRR6314274, SRR6314275, SRR6314276, SRR6314277, SRR6314278.\n",
+      "created_at": "2025-12-02T13:33:13.298963Z"
+    },
+    {
+      "id": "009272c2-102b-4ed8-bfff-7436370ead85",
+      "submission_id": "2e26b072-6fbd-4344-876f-1794364bd23f",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Frank Schnorrer, Aix Marseille University France\n\nReviewers:\n- Frank Schnorrer, Aix Marseille University France\n\n## Review text\n\nDOI: [10.7554/eLife.50496.sa1](https://doi.org/10.7554/eLife.50496.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nSarcomere formation during muscle development is a complex multi-step process that assembles a gigantic macromolecular machine, which will generate the force for future muscle contractions. Gonzalez-Morales and co-workers present a comprehensive, technically and intellectually sophisticated analysis of the function of Zasp proteins during sarcomere development using the Drosophila model. The authors discovered that the Z-disc associated alternatively spliced proteins (Zasps) regulate sarcomere diameter by setting the Z-disc diameter using a new mechanism of Zasp protein oligomerization: depending on presence or absence of multiple LIMdomains in the alternatively spliced Zasp isoforms, Zasp proteins can oligomerize and the Z-disc can grow to the desired diameter during muscle development. This work is a fundamental step ahead in the complex field of sarcomerogenesis and will be highly valuable to inform sarcomere development studies in other organisms and muscle types.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Myofibril size is set by a finely tuned mechanism of protein aggregation in Drosophila\" for consideration by eLife. Your article has been reviewed by three peer reviewers, including Frank Schnorrer as the Reviewing Editor and Reviewer #1, and the evaluation has been overseen by Anna Akhmanova as the Senior Editor.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nThis manuscript presents a comprehensive, technically and intellectually sophisticated analysis of the members of the muscle actinin-associated LIM domain, PDZ domain family proteins, called Zasp proteins in controlling myofibril width in Drosophila. The authors use cellular, genetic and biochemical protein-protein interaction assays and developmental in vivo data to suggest that temporally differentially expressed long and short isoforms of the Zasp proteins control the size of the Z-disc in flight muscles. Mechanistically, the authors suggest a finely balanced interaction code of homo and heterodimers that depends on the differentially expressed LIM and ZM domains of the long, LIM carrying (growing) vs. short, devoid of LIM (blocking) isoforms.\n\nAll three reviewers agree that this work is a fundamental step ahead in the complicated field of Z-disc morphogenesis and will also be highly valuable to inform studies in other organisms and muscle types.\n\nHowever, all reviewers suggest a number of essential points the authors need to address, some of which relate to the terminology used.\n\nEssential revisions:\n\nTerminology \u2013 The terminology is often ambiguous and confusing.\n\n1) The term \"aggregation\" is unfortunate for describing macromolecular assemblies of Zasp proteins. Z-discs are very elaborate structures, which are highly regular. Hence, they are rather the opposite of an undefined aggregate.\n\nThe authors observe aggregate formation upon strong over-expression of Zasp. It is unclear whether these over-expressed wild-type Zasp proteins can be compared to pathological aggregates. The authors should use a term that clearly separates misfolded protein aggregates in myopathies (which do not trigger Z-disk formation) from the multi-molecular assemblies that may be involved in Z-disk formation, where folded domains form defined interactions between native proteins. Furthermore, it seems that these large \"aggregates\" only occur under over-expression and \"aggregates\" are not formed by Zasps expressed under the native promoters.\n\n2)Title \u2013 The title should be more explicit about myofibril width, and not size, as size can be sarcomere length as well. A possible amended title could be \"Myofibril diameter is set by a finely tuned mechanism of protein oligomerisation in Drosophila\".\n\nThe same ambiguity about Zasp and sarcomere size should be avoided in the text (e.g. subsection \u201cZ-disc formation and growth is driven by multivalent aggregation of Zasp proteins\u201d, second paragraph).\n\n3) Multivalent refers to a domain that has multiple sites at which interactions can form. The authors present no evidence that an individual LIM domain is multivalent \u2013 each one seems to form one distinct interaction. This term is therefore confusing.\n\nZ-disc growth hypothesis \u2013\n\n4) The current statement that the ratio of long to short Zasp isoforms control Z-disc diameter is over-stated and not strongly supported by the data throughout the paper. It is clear is that over-expression of Zasp52 long destroys the fibrils and generates large ectopic 'aggregates' (Figure 1B). Overexpression of the short isoforms does not lead to aggregate formation, but is also does not strongly reduce myofibril width (rest of Figure 1).\n\nAlso Figure 6 does not fully support the authors' hypothesis. It rather appears that an imbalance of the short to long isoforms results in a larger variation of myofibril width. For example over-expression of Zasp52-PP (short) causes some fibrils to be thinner but also many to be thicker, which is against the simple hypothesis. The same appears true in the Zasp52MI00979allele, the myofibrils in the image shown (Figure 6B) are very variable in width and seem to have a problem with running straight rather than being consistently thinner, at least if the image shown in Figure 6B is representative. Furthermore, the Zasp66 Zasp67 double mutants appear to result in many destroyed fibrils (Figure 7C) rather than in consistently thicker ones.\n\nGenerally, the authors use a very strong driver, Act88F-Gal4 to overexpress the Zasp isoforms. What happens with weaker drivers, such as Mef2. Are aggregates formed? Do the Z-discs change?\n\n5) It would be important to provide more molecular support that the Zasp52MI00979allele is indeed null for the long isoforms. Western Blots seem straight forward. Alternatively, the generation of clean CRISPR allele. Not being null might be a reason for the rather weak phenotype.\n\n6) The localisations of the long vs. short Zasp variants on the Z-disc in Figure 5F-H is very impressive. However, it is not clear from the Materials and methods how these data were acquired. Have the authors done sections, e.g. using a microtome, and imaged the slices in 3D including Z-plane information? The radial distribution of Zasp isoforms could be influenced by many technical factors. How was it ascertained that the same Z-disk plane was imaged and averaged? Please explain what thickness the transverse sections were and how they were imaged.\n\nIs it possible to image both Zasp52 long and Zasp66-GFP at the same time in these sections to have an internal control? As antibodies are available, this should be feasible.\n\n7) Does increased or decreased Z-disc width change sarcomere length? Likely not, but it would be interesting see quantitative data.\n\n8) Please provide a data table with all the relevant measures used to make the graphs of the paper including animal numbers etc.\n",
+      "created_at": "2025-12-02T13:33:13.298963Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T13:33:13.298963Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T13:33:13.298963Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "5705ab8e-9897-4847-a43c-ea250a07c8cd",
+      "content_id": "18e9f611-00ec-4a22-9c37-d97edb991c03",
+      "claim_id": "C1",
+      "claim": "Myofibrils consist of arrays of sarcomeres, the smallest contractile unit of muscles.",
+      "claim_type": "EXPLICIT",
+      "source": "They consist of arrays of sarcomeres, the smallest contractile unit of muscles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a well-established fact in muscle biology supported by scientific consensus.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:33:13.298963Z"
+    },
+    {
+      "id": "92a2c2b2-c07c-4c47-9379-885206a38ef8",
+      "content_id": "18e9f611-00ec-4a22-9c37-d97edb991c03",
+      "claim_id": "C2",
+      "claim": "Within a muscle type, myofibril diameter is highly invariant and contributes to its physiological properties.",
+      "claim_type": "EXPLICIT",
+      "source": "Within a muscle type, myofibril diameter is highly invariant and contributes to its physiological properties, yet little is known about the underlying mechanisms setting myofibril diameter.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is presented as established knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:33:13.298963Z"
+    },
+    {
+      "id": "625c5fbf-b2c5-4d8a-988d-db104a4cdb8c",
+      "content_id": "18e9f611-00ec-4a22-9c37-d97edb991c03",
+      "claim_id": "C3",
+      "claim": "Little is known about the underlying mechanisms setting myofibril diameter.",
+      "claim_type": "EXPLICIT",
+      "source": "Within a muscle type, myofibril diameter is highly invariant and contributes to its physiological properties, yet little is known about the underlying mechanisms setting myofibril diameter.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the state of knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:33:13.298963Z"
+    },
+    {
+      "id": "304785fc-2bb7-4f41-9a39-f6dd6815ba74",
+      "content_id": "18e9f611-00ec-4a22-9c37-d97edb991c03",
+      "claim_id": "C4",
+      "claim": "Zasp is a PDZ and LIM domain protein that is a structural component of Z-discs.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we show that the PDZ and LIM domain protein Zasp, a structural component of Z-discs, mediates Z-disc and thereby myofibril growth through protein oligomerization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by established knowledge about Zasp protein structure and localization.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:33:13.298963Z"
+    },
+    {
+      "id": "5178c734-34c2-4c33-b1ca-be477de46017",
+      "content_id": "18e9f611-00ec-4a22-9c37-d97edb991c03",
+      "claim_id": "C5",
+      "claim": "Zasp mediates Z-disc and thereby myofibril growth through protein oligomerization.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we show that the PDZ and LIM domain protein Zasp, a structural component of Z-discs, mediates Z-disc and thereby myofibril growth through protein oligomerization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study supported by experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:33:13.298963Z"
+    },
+    {
+      "id": "932b947f-4a97-43ea-a635-10c4083d6e1c",
+      "content_id": "18e9f611-00ec-4a22-9c37-d97edb991c03",
+      "claim_id": "C6",
+      "claim": "Oligomerization of Zasp is induced by an interaction of its ZM domain with LIM domains.",
+      "claim_type": "EXPLICIT",
+      "source": "Oligomerization is induced by an interaction of its ZM domain with LIM domains.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by yeast two-hybrid data and BiFC assays shown in Figures 2 and 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:33:13.298963Z"
+    },
+    {
+      "id": "48c1e307-3c6c-4c06-814b-a14ece0ac4ce",
+      "content_id": "18e9f611-00ec-4a22-9c37-d97edb991c03",
+      "claim_id": "C7",
+      "claim": "Oligomerization is terminated upon upregulation of shorter Zasp isoforms which lack LIM domains at later developmental stages.",
+      "claim_type": "EXPLICIT",
+      "source": "Oligomerization is terminated upon upregulation of shorter Zasp isoforms which lack LIM domains at later developmental stages.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by RNAseq data showing temporal expression patterns in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:33:13.298963Z"
+    },
+    {
+      "id": "01ec99ca-b055-4620-8445-bbbf1221f98c",
+      "content_id": "18e9f611-00ec-4a22-9c37-d97edb991c03",
+      "claim_id": "C8",
+      "claim": "The balance between growing and blocking isoforms sets the stereotyped diameter of myofibrils.",
+      "claim_type": "EXPLICIT",
+      "source": "The balance between these two isoforms, which we call growing and blocking isoforms sets the stereotyped diameter of myofibrils.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary conclusion supported by multiple experiments including overexpression and mutant analyses.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:33:13.298963Z"
+    },
+    {
+      "id": "8f49e108-cf0f-490a-a7ae-274abd30178a",
+      "content_id": "18e9f611-00ec-4a22-9c37-d97edb991c03",
+      "claim_id": "C9",
+      "claim": "If blocking isoforms dominate, myofibrils become smaller.",
+      "claim_type": "EXPLICIT",
+      "source": "If blocking isoforms dominate, myofibrils become smaller.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by data in Figure 6 showing smaller Z-discs upon overexpression of blocking isoforms.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:33:13.298963Z"
+    },
+    {
+      "id": "53f8e578-acad-4811-96da-372392b77ec5",
+      "content_id": "18e9f611-00ec-4a22-9c37-d97edb991c03",
+      "claim_id": "C10",
+      "claim": "If growing isoforms dominate, myofibrils and Z-discs enlarge, eventually resulting in large pathological aggregates that disrupt muscle function.",
+      "claim_type": "EXPLICIT",
+      "source": "If growing isoforms dominate, myofibrils and Z-discs enlarge, eventually resulting in large pathological aggregates that disrupt muscle function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by data in Figures 1 and 7 showing aggregates and enlarged Z-discs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:33:13.298963Z"
+    },
+    {
+      "id": "e54abb83-fa4b-4e58-9c08-6e3bfeaa737b",
+      "content_id": "18e9f611-00ec-4a22-9c37-d97edb991c03",
+      "claim_id": "C11",
+      "claim": "Myofibrils are highly organized assemblies of cytoskeletal proteins forming an array of sarcomeres that are embedded in the cytosol of myotubes and mediate contractility.",
+      "claim_type": "EXPLICIT",
+      "source": "Myofibrils are highly organized assemblies of cytoskeletal proteins forming an array of sarcomeres that are embedded in the cytosol of myotubes and mediate contractility (Huxley and Niedergerke, 1954b; Huxley and Hanson, 1954a; Huxley, 2004; Lemke and Schnorrer, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to established literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:33:13.298963Z"
+    },
+    {
+      "id": "f32c240b-7616-4bbb-9d78-a543622e0f52",
+      "content_id": "18e9f611-00ec-4a22-9c37-d97edb991c03",
+      "claim_id": "C12",
+      "claim": "Sarcomeres are composed of actin-containing thin filaments and myosin-containing thick filaments arranged into antiparallel cables.",
+      "claim_type": "EXPLICIT",
+      "source": "Sarcomeres are composed of actin-containing thin filaments and myosin-containing thick filaments arranged into antiparallel cables.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about sarcomere structure.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:33:13.298963Z"
+    },
+    {
+      "id": "0393f75e-7c94-45aa-bdc4-a470fb46663c",
+      "content_id": "18e9f611-00ec-4a22-9c37-d97edb991c03",
+      "claim_id": "C13",
+      "claim": "Thin filaments are anchored to a large multiprotein complex called the Z-disc.",
+      "claim_type": "EXPLICIT",
+      "source": "Thin filaments are anchored to a large multiprotein complex called the Z-disc (Luther, 2009), and thick filaments are anchored to another large multiprotein complex called the M-line (Agarkova and Perriard, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to established literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:33:13.298963Z"
+    },
+    {
+      "id": "57cccbea-295b-44cc-bc48-516fd8d2c14b",
+      "content_id": "18e9f611-00ec-4a22-9c37-d97edb991c03",
+      "claim_id": "C14",
+      "claim": "Thick filaments are anchored to another large multiprotein complex called the M-line.",
+      "claim_type": "EXPLICIT",
+      "source": "Thin filaments are anchored to a large multiprotein complex called the Z-disc (Luther, 2009), and thick filaments are anchored to another large multiprotein complex called the M-line (Agarkova and Perriard, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to established literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:33:13.298963Z"
+    },
+    {
+      "id": "84cda499-eada-4490-996f-85453387bd23",
+      "content_id": "18e9f611-00ec-4a22-9c37-d97edb991c03",
+      "claim_id": "C15",
+      "claim": "Anchoring of myofibrils to the exoskeleton provides the mechanical tension that aligns sarcomeres into myofibrils and coordinates their development.",
+      "claim_type": "EXPLICIT",
+      "source": "Anchoring of myofibrils to the exoskeleton provides the mechanical tension that aligns sarcomeres into myofibrils and coordinates their development (Weitkunat et al., 2017; Weitkunat et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:33:13.298963Z"
+    },
+    {
+      "id": "65e79367-148e-4be0-b69c-3df78dc69ddc",
+      "content_id": "18e9f611-00ec-4a22-9c37-d97edb991c03",
+      "claim_id": "C16",
+      "claim": "Once aligned, sarcomeres grow to their final size.",
+      "claim_type": "EXPLICIT",
+      "source": "Once aligned, sarcomeres grow to their final size (Lemke and Schnorrer, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:33:13.298963Z"
+    },
+    {
+      "id": "a5b4f4a7-7a7f-4142-b7ce-8f29f5561a1e",
+      "content_id": "18e9f611-00ec-4a22-9c37-d97edb991c03",
+      "claim_id": "C17",
+      "claim": "Sarcomeres form initially from small structures called Z-bodies that grow eventually into mature Z-discs to which thin filaments are anchored.",
+      "claim_type": "EXPLICIT",
+      "source": "Electron and confocal microscopy studies showed that sarcomeres form initially from small structures called Z-bodies that grow eventually into mature Z-discs to which thin filaments are anchored (Loison et al., 2018; Orfanos et al., 2015; Reedy and Beall, 1993; Shafiq, 1963; Sparrow and Sch\u00f6ck, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to previous microscopy studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:33:13.298963Z"
+    },
+    {
+      "id": "ac4cc7bf-7f52-4f8a-b8b3-a12bdd59d370",
+      "content_id": "18e9f611-00ec-4a22-9c37-d97edb991c03",
+      "claim_id": "C18",
+      "claim": "The size of the Z-disc sets the diameter of the myofibril.",
+      "claim_type": "EXPLICIT",
+      "source": "The size of the Z-disc therefore sets the diameter of the myofibril (Agarkova and Perriard, 2005; Luther, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:33:13.298963Z"
+    },
+    {
+      "id": "dfab6ab3-148d-41ac-9024-2bd857eba11c",
+      "content_id": "18e9f611-00ec-4a22-9c37-d97edb991c03",
+      "claim_id": "C19",
+      "claim": "Z-disc growth and growth termination is poorly understood.",
+      "claim_type": "EXPLICIT",
+      "source": "While mechanisms have been proposed that set the length of sarcomeres (Fernandes and Sch\u00f6ck, 2014; Gokhin and Fowler, 2013; Tskhovrebova and Trinick, 2017), Z-disc growth and growth termination is poorly understood.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the state of knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:33:13.298963Z"
+    },
+    {
+      "id": "b01cbc6d-3419-4029-9184-78aa10dd34ab",
+      "content_id": "18e9f611-00ec-4a22-9c37-d97edb991c03",
+      "claim_id": "C20",
+      "claim": "A hallmark of genetically caused myopathies is the appearance of large aggregates composed mainly of Z-disc proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "A hallmark of genetically caused myopathies is the appearance of large aggregates composed mainly of Z-disc proteins (Kley et al., 2016; Maerkens et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies on myopathies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:33:13.298963Z"
+    },
+    {
+      "id": "b8e5805e-5e95-4520-bcbb-b571edeb687a",
+      "content_id": "18e9f611-00ec-4a22-9c37-d97edb991c03",
+      "claim_id": "C21",
+      "claim": "Many myopathy-associated mutations encode Z-disc proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, many myopathy-associated mutations encode Z-disc proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge in the myopathy field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:33:13.298963Z"
+    },
+    {
+      "id": "8bdcb30f-4bf5-4650-9497-6668c09b8cf1",
+      "content_id": "18e9f611-00ec-4a22-9c37-d97edb991c03",
+      "claim_id": "C22",
+      "claim": "Mutations in any of the four \u03b1-actinin genes or in Zasp and other Alp/Enigma family genes in humans cause myopathies characterized by the presence of large aggregates.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutations in any of the four \u03b1-actinin genes or in Zasp and other Alp/Enigma family genes in humans cause myopathies characterized by the presence of large aggregates (Murphy and Young, 2015; Selcen and Engel, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous clinical and genetic studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:33:13.298963Z"
+    },
+    {
+      "id": "4d746799-de2e-485b-ad11-9fa6e812fb37",
+      "content_id": "18e9f611-00ec-4a22-9c37-d97edb991c03",
+      "claim_id": "C23",
+      "claim": "The aggregation phenotype is conserved among animals: fruit flies with mutations in myopathy-related genes also develop Z-disc aggregates.",
+      "claim_type": "EXPLICIT",
+      "source": "The aggregation phenotype is conserved among animals: fruit flies with mutations in myopathy-related genes also develop Z-disc aggregates (Gonz\u00e1lez-Morales et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:33:13.298963Z"
+    },
+    {
+      "id": "70b00b18-6370-4db5-bd10-0b583e2fd115",
+      "content_id": "18e9f611-00ec-4a22-9c37-d97edb991c03",
+      "claim_id": "C24",
+      "claim": "\u03b1-Actinin and Zasp are conserved proteins that coordinate Z-disc formation.",
+      "claim_type": "EXPLICIT",
+      "source": "\u03b1-Actinin and Z-disc Alternatively Spliced Protein (Zasp) are conserved proteins that coordinate Z-disc formation (Faulkner et al., 1999; Katzemich et al., 2013; Murphy and Young, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:33:13.298963Z"
+    },
+    {
+      "id": "0a4985ce-83ab-4ade-bfaa-6e34debbdac0",
+      "content_id": "18e9f611-00ec-4a22-9c37-d97edb991c03",
+      "claim_id": "C25",
+      "claim": "\u03b1-Actinin forms a rod-shaped antiparallel homodimer at the Z-disc, where it crosslinks and serves as an attachment point for actin filaments.",
+      "claim_type": "EXPLICIT",
+      "source": "\u03b1-Actinin forms a rod-shaped antiparallel homodimer at the Z-disc, where it crosslinks and serves as an attachment point for actin filaments (Djinovi\u0107-Carugo et al., 1999; Luther, 2009; Murphy and Young, 2015; Ribeiro et al., 2014; Rusu et al., 2017; Takahashi and Hattori, 1989).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to structural and functional studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:33:13.298963Z"
+    },
+    {
+      "id": "dbcce089-b215-4f50-b3ad-67f435e102a3",
+      "content_id": "18e9f611-00ec-4a22-9c37-d97edb991c03",
+      "claim_id": "C26",
+      "claim": "Zasp and other members of the Alp/Enigma family of proteins are scaffolding proteins with an \u03b1-actinin-binding PDZ domain, an uncharacterized Zasp Motif (ZM) domain, and one to four protein-protein interaction LIM domains.",
+      "claim_type": "EXPLICIT",
+      "source": "Zasp and other members of the Alp/Enigma family of proteins are scaffolding proteins with an \u03b1-actinin-binding PDZ domain (InterPro: IPR001478), an uncharacterized Zasp Motif (ZM; InterPro: IPR031847 and IPR006643) domain, and one to four protein-protein interaction LIM domains (InterPro: IPR001781) (Finn et al., 2017; Klaavuniemi et al., 2004; Liao et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies and protein domain databases.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:33:13.298963Z"
+    },
+    {
+      "id": "e1e6e4ea-9864-40fd-8c08-abfacadaf343",
+      "content_id": "18e9f611-00ec-4a22-9c37-d97edb991c03",
+      "claim_id": "C27",
+      "claim": "Zasp and \u03b1-actinin proteins are present at the earliest stages of Z-disc formation, and are required for Z-disc assembly.",
+      "claim_type": "EXPLICIT",
+      "source": "Zasp and \u03b1-actinin proteins are present at the earliest stages of Z-disc formation, and are required for Z-disc assembly (Dabiri et al., 1997; Katzemich et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:33:13.298963Z"
+    },
+    {
+      "id": "e13376ad-24b0-428d-8f78-cdeb5fbd5da9",
+      "content_id": "18e9f611-00ec-4a22-9c37-d97edb991c03",
+      "claim_id": "C28",
+      "claim": "Vertebrates have seven Alp/Enigma genes, each encoding several isoforms.",
+      "claim_type": "EXPLICIT",
+      "source": "Vertebrates have seven Alp/Enigma genes, each encoding several isoforms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about vertebrate gene families.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:33:13.298963Z"
+    },
+    {
+      "id": "ae49d081-113c-4a08-aaf9-60e1521bf152",
+      "content_id": "18e9f611-00ec-4a22-9c37-d97edb991c03",
+      "claim_id": "C29",
+      "claim": "The Drosophila genome has three Zasp genes, Zasp52, Zasp66, and Zasp67, which encode 21, 12, and 4 isoforms, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "The Drosophila genome has three Zasp genes, Zasp52, Zasp66, and Zasp67, which encode 21, 12, and 4 isoforms, respectively (Gramates et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to FlyBase database.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:33:13.298963Z"
+    },
+    {
+      "id": "070af7c6-98a1-4f47-bc20-14f0a78cad53",
+      "content_id": "18e9f611-00ec-4a22-9c37-d97edb991c03",
+      "claim_id": "C30",
+      "claim": "Zasp66 and Zasp67 are duplications of Zasp52 and resemble the smallest isoforms of Zasp52.",
+      "claim_type": "EXPLICIT",
+      "source": "Zasp66 and Zasp67 are duplications of Zasp52 and resemble the smallest isoforms of Zasp52 (Gonz\u00e1lez-Morales et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:33:13.298963Z"
+    },
+    {
+      "id": "d39a49ff-8339-4a94-ae31-c7b398489466",
+      "content_id": "18e9f611-00ec-4a22-9c37-d97edb991c03",
+      "claim_id": "C31",
+      "claim": "Overexpression of full-length Zasp52-PR transgene in the indirect flight muscles of adult flies causes formation of large aggregates.",
+      "claim_type": "EXPLICIT",
+      "source": "To examine if this holds true in Drosophila, we overexpressed a full-length Zasp52-PR transgene consisting of a PDZ, a ZM, and 4 LIM domains in the indirect flight muscles (IFM) of adult flies, which causes formation of large aggregates (Figure 1A,B,I, Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:33:13.298963Z"
+    },
+    {
+      "id": "8152b7d1-d0f7-4815-be38-b33282eea739",
+      "content_id": "18e9f611-00ec-4a22-9c37-d97edb991c03",
+      "claim_id": "C32",
+      "claim": "The absence of LIM domains (Zasp52-PP) abolishes aggregate formation.",
+      "claim_type": "EXPLICIT",
+      "source": "To determine which domain is responsible for aggregation, we deleted them individually: the absence of LIM domains (Zasp52-PP) and ZM domain (Zasp52-PR\u2206ZM) abolished aggregate formation, whereas removal of the PDZ domain only slightly reduced the number of aggregates (Zasp52-PR\u2206PDZ, Figure 1C\u2013E,I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:33:13.298963Z"
+    },
+    {
+      "id": "1246ed35-29e5-4858-ac08-36c0fdeb6c14",
+      "content_id": "18e9f611-00ec-4a22-9c37-d97edb991c03",
+      "claim_id": "C33",
+      "claim": "Deletion of the ZM domain (Zasp52-PR\u2206ZM) abolishes aggregate formation.",
+      "claim_type": "EXPLICIT",
+      "source": "To determine which domain is responsible for aggregation, we deleted them individually: the absence of LIM domains (Zasp52-PP) and ZM domain (Zasp52-PR\u2206ZM) abolished aggregate formation, whereas removal of the PDZ domain only slightly reduced the number of aggregates (Zasp52-PR\u2206PDZ, Figure 1C\u2013E,I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:33:13.298963Z"
+    },
+    {
+      "id": "e17e7145-657f-426b-a8c9-cc03d1df1a12",
+      "content_id": "18e9f611-00ec-4a22-9c37-d97edb991c03",
+      "claim_id": "C34",
+      "claim": "Removal of the PDZ domain only slightly reduces the number of aggregates.",
+      "claim_type": "EXPLICIT",
+      "source": "To determine which domain is responsible for aggregation, we deleted them individually: the absence of LIM domains (Zasp52-PP) and ZM domain (Zasp52-PR\u2206ZM) abolished aggregate formation, whereas removal of the PDZ domain only slightly reduced the number of aggregates (Zasp52-PR\u2206PDZ, Figure 1C\u2013E,I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:33:13.298963Z"
+    },
+    {
+      "id": "c39a0eca-31e3-4d3e-b604-e4d6bf189d95",
+      "content_id": "18e9f611-00ec-4a22-9c37-d97edb991c03",
+      "claim_id": "C35",
+      "claim": "The PDZ domain is required for binding \u03b1-actinin, a crucial crosslinker of actin filaments at the Z-disc.",
+      "claim_type": "EXPLICIT",
+      "source": "The PDZ domain is required for binding \u03b1-actinin, a crucial crosslinker of actin filaments at the Z-disc (Katzemich et al., 2013; Liao et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:33:13.298963Z"
+    },
+    {
+      "id": "a14dc86a-bdf3-4688-8c8d-f74119870dd8",
+      "content_id": "18e9f611-00ec-4a22-9c37-d97edb991c03",
+      "claim_id": "C36",
+      "claim": "Reducing \u03b1-actinin levels by RNAi in Zasp52-PR overexpression reduces aggregate formation to a similar level as PDZ deletion.",
+      "claim_type": "EXPLICIT",
+      "source": "Reducing \u03b1-actinin levels by RNAi in Zasp52-PR overexpression reduces aggregate formation to a similar level (Figure 1\u2014figure supplement 2), indicating that \u03b1-actinin increases aggregate number, but is not required for their initial formation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:33:13.298963Z"
+    },
+    {
+      "id": "7f1d55c2-bd84-4a10-8d07-3de4fbb63125",
+      "content_id": "18e9f611-00ec-4a22-9c37-d97edb991c03",
+      "claim_id": "C37",
+      "claim": "\u03b1-actinin increases aggregate number, but is not required for their initial formation.",
+      "claim_type": "EXPLICIT",
+      "source": "Reducing \u03b1-actinin levels by RNAi in Zasp52-PR overexpression reduces aggregate formation to a similar level (Figure 1\u2014figure supplement 2), indicating that \u03b1-actinin increases aggregate number, but is not required for their initial formation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the RNAi experiment data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:33:13.298963Z"
+    },
+    {
+      "id": "c3ca53d4-33be-433d-b256-f76ba4472d87",
+      "content_id": "18e9f611-00ec-4a22-9c37-d97edb991c03",
+      "claim_id": "C38",
+      "claim": "Expression of the paralogous genes Zasp66 and Zasp67, which lack LIM domains like Zasp52-PP, does not result in aggregate formation.",
+      "claim_type": "EXPLICIT",
+      "source": "Expression of the paralogous genes Zasp66 and Zasp67 (Gonz\u00e1lez-Morales et al., 2019), which lack LIM domains like Zasp52-PP, also does not result in aggregate formation (Figure 1F,G and I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:33:13.298963Z"
+    },
+    {
+      "id": "ce4e793c-c877-45cb-8502-41788eb11d5b",
+      "content_id": "18e9f611-00ec-4a22-9c37-d97edb991c03",
+      "claim_id": "C39",
+      "claim": "Overexpression of Zasp52-PK consisting of PDZ, ZM and 1 LIM domain does not form aggregates.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we tested if multiple LIM domains are required for aggregate formation by overexpressing Zasp52-PK consisting of PDZ, ZM and 1 LIM domain. No aggregates form (Figure 1H and I) indicating that the ZM domain and multiple LIM domains are required for aggregate formation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:33:13.298963Z"
+    },
+    {
+      "id": "74264ebf-0117-4868-a75b-a5db7119f804",
+      "content_id": "18e9f611-00ec-4a22-9c37-d97edb991c03",
+      "claim_id": "C40",
+      "claim": "The ZM domain and multiple LIM domains are required for aggregate formation.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we tested if multiple LIM domains are required for aggregate formation by overexpressing Zasp52-PK consisting of PDZ, ZM and 1 LIM domain. No aggregates form (Figure 1H and I) indicating that the ZM domain and multiple LIM domains are required for aggregate formation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion inferred from the experimental data in Figure 1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:33:13.298963Z"
+    },
+    {
+      "id": "7c4670fa-ee6b-4942-8362-96901507cf7d",
+      "content_id": "18e9f611-00ec-4a22-9c37-d97edb991c03",
+      "claim_id": "C41",
+      "claim": "Mild overexpression of Zasp52-PR using UH3-Gal4 results in Z-discs that are bigger than the control, but aggregates are not present.",
+      "claim_type": "EXPLICIT",
+      "source": "To test if aggregates formed as a result of Z-disc overgrowth, we tested the overexpression of Zasp52-PR using UH3-Gal4, a driver line that has the same temporal and spatial expression pattern as Act88-Gal4 but is expressed at a much lower level. To better capture the size variation, we measured the Z-disc height that corresponds to the disc diameter and categorized them into specific size categories. In this condition, Z-discs are bigger than the control, but aggregates are not present (Figure 1J\u2013L), indicating that Z-disc growth and pathological aggregation correlate with the amount of Zasp52 protein.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1J-L.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:33:13.298963Z"
+    },
+    {
+      "id": "75f07363-23b1-4367-b381-9059149c4b74",
+      "content_id": "18e9f611-00ec-4a22-9c37-d97edb991c03",
+      "claim_id": "C42",
+      "claim": "Z-disc growth and pathological aggregation correlate with the amount of Zasp52 protein.",
+      "claim_type": "EXPLICIT",
+      "source": "In this condition, Z-discs are bigger than the control, but aggregates are not present (Figure 1J\u2013L), indicating that Z-disc growth and pathological aggregation correlate with the amount of Zasp52 protein.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion inferred from the dose-dependent effects observed in the experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:33:13.298963Z"
+    },
+    {
+      "id": "d65c4a65-c04b-434b-9ec9-8e9e8a17fe98",
+      "content_id": "18e9f611-00ec-4a22-9c37-d97edb991c03",
+      "claim_id": "C43",
+      "claim": "Zasp52-PK and Zasp52-PE can interact with each other in yeast two-hybrid assays.",
+      "claim_type": "EXPLICIT",
+      "source": "Zasp52-PK and Zasp52-PE, another full-length isoform, can interact with each other, whereas controls do not interact (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by yeast two-hybrid data shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:33:13.298963Z"
+    },
+    {
+      "id": "62def608-c4b2-4c38-be21-7224b932f3cb",
+      "content_id": "18e9f611-00ec-4a22-9c37-d97edb991c03",
+      "claim_id": "C44",
+      "claim": "Full-length isoforms of Zasp66 and Zasp67 (Zasp66-PK and Zasp67-PD) can interact with Zasp52-PK and Zasp52-PE.",
+      "claim_type": "EXPLICIT",
+      "source": "Full-length isoforms of Zasp66 and Zasp67 (Zasp66-PK and Zasp67-PD) can also interact with Zasp52-PK and Zasp52-PE (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by yeast two-hybrid data shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:33:13.298963Z"
+    },
+    {
+      "id": "54dc9745-97cf-40c5-bd35-8287e6931f35",
+      "content_id": "18e9f611-00ec-4a22-9c37-d97edb991c03",
+      "claim_id": "C45",
+      "claim": "Zasp proteins can homo- and heterodimerize.",
+      "claim_type": "EXPLICIT",
+      "source": "These data suggest that Zasp proteins can homo- and heterodimerize.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion inferred from the yeast two-hybrid interaction data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:33:13.298963Z"
+    },
+    {
+      "id": "1a906266-c52f-4b1a-ae9b-d47889130885",
+      "content_id": "18e9f611-00ec-4a22-9c37-d97edb991c03",
+      "claim_id": "C46",
+      "claim": "Flag-tagged Zasp52 co-immunoprecipitates with GFP-tagged Zasp52 from thorax muscle extracts.",
+      "claim_type": "EXPLICIT",
+      "source": "We confirmed these results by co-immunoprecipitation of Flag-tagged Zasp52 with GFP-tagged Zasp52 from thorax muscle extracts (Figure 2\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by co-immunoprecipitation data shown in Figure 2\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:33:13.298963Z"
+    },
+    {
+      "id": "839173c3-4985-4038-9716-d750e3d91030",
+      "content_id": "18e9f611-00ec-4a22-9c37-d97edb991c03",
+      "claim_id": "C47",
+      "claim": "Bacterially purified His-Zasp52-PK-Flag dimerizes in vitro in a chemical crosslinking assay.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, bacterially purified His-Zasp52-PK-Flag dimerized in vitro in a chemical crosslinking assay (Figure 2\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by crosslinking data shown in Figure 2\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:33:13.298963Z"
+    },
+    {
+      "id": "1cd9874d-2ca2-47b7-9ac4-1e9d6691b242",
+      "content_id": "18e9f611-00ec-4a22-9c37-d97edb991c03",
+      "claim_id": "C48",
+      "claim": "Zasp52-PK interacts with the ZM domain and LIM domains.",
+      "claim_type": "EXPLICIT",
+      "source": "Zasp52-PK interacts with the ZM domain and LIM domains, whereas Zasp66 and Zasp67 only interact with LIM domains (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by yeast two-hybrid data shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:33:13.298963Z"
+    },
+    {
+      "id": "3ba5092a-3523-45e3-aa4f-f8783fb2bb54",
+      "content_id": "18e9f611-00ec-4a22-9c37-d97edb991c03",
+      "claim_id": "C49",
+      "claim": "Zasp66 and Zasp67 only interact with LIM domains.",
+      "claim_type": "EXPLICIT",
+      "source": "Zasp52-PK interacts with the ZM domain and LIM domains, whereas Zasp66 and Zasp67 only interact with LIM domains (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by yeast two-hybrid data shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:33:13.298963Z"
+    },
+    {
+      "id": "16464d57-7fdb-4fe6-9082-8feb988247ea",
+      "content_id": "18e9f611-00ec-4a22-9c37-d97edb991c03",
+      "claim_id": "C50",
+      "claim": "Dimerization is mediated by a ZM-LIM domain interaction.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that dimerization is mediated by a ZM-LIM domain interaction, and because Zasp66 and Zasp67 lack LIM domains, they cannot interact with the ZM domain (Figure 2C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion inferred from the domain interaction data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:33:13.298963Z"
+    },
+    {
+      "id": "2b947614-1585-4ad5-918c-180276b3c8bf",
+      "content_id": "18e9f611-00ec-4a22-9c37-d97edb991c03",
+      "claim_id": "C51",
+      "claim": "Zasp66 and Zasp67 cannot interact with the ZM domain because they lack LIM domains.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that dimerization is mediated by a ZM-LIM domain interaction, and because Zasp66 and Zasp67 lack LIM domains, they cannot interact with the ZM domain (Figure 2C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference from the domain composition and interaction data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:33:13.298963Z"
+    },
+    {
+      "id": "b3d67ba7-e350-42f1-953f-70356d84f578",
+      "content_id": "18e9f611-00ec-4a22-9c37-d97edb991c03",
+      "claim_id": "C52",
+      "claim": "When the ZM domain of Zasp66 is deleted, the interaction with LIM domains is abolished.",
+      "claim_type": "EXPLICIT",
+      "source": "To confirm this hypothesis, we next tested the interaction of LIM2A, LIM2B, LIM3 and Zasp52-PK with a series of Zasp66 deletion constructs. As soon as the ZM domain of Zasp66 is deleted, the interaction with LIM domains is abolished (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by yeast two-hybrid data with deletion constructs shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:33:13.298963Z"
+    },
+    {
+      "id": "3e1c27d7-661c-4df4-81b6-b02bb78ed98d",
+      "content_id": "18e9f611-00ec-4a22-9c37-d97edb991c03",
+      "claim_id": "C54",
+      "claim": "LIM-ZM binding mediates homo- and heterodimerization between Zasp proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, LIM-ZM binding mediates homo- and heterodimerization between Zasp proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from the comprehensive domain interaction mapping experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:33:13.298963Z"
+    },
+    {
+      "id": "216aed14-3369-4b65-9669-1eb01f5b7096",
+      "content_id": "18e9f611-00ec-4a22-9c37-d97edb991c03",
+      "claim_id": "C55",
+      "claim": "Zasp66-GFP fluorescence is mildly reduced in Zasp52MI02988 mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "Zasp66-GFP fluorescence is mildly reduced in Zasp52MI02988 mutants (Figure 3A,B and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by fluorescence intensity measurements shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:33:13.298963Z"
+    },
+    {
+      "id": "3a233218-c1c1-46ca-a85c-95f1128fa552",
+      "content_id": "18e9f611-00ec-4a22-9c37-d97edb991c03",
+      "claim_id": "C56",
+      "claim": "Zasp66-GFP fluorescence is strongly reduced in Zasp52MI00979 mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, Zasp66-GFP fluorescence is strongly reduced in Zasp52MI00979 mutants (Figure 3C and D), suggesting that Zasp52 recruits other Zasp proteins through its LIM domains, consistent with the Y2H results.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by fluorescence intensity measurements shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:33:13.298963Z"
+    },
+    {
+      "id": "eb535fc6-9020-4092-adb2-6088d2249f89",
+      "content_id": "18e9f611-00ec-4a22-9c37-d97edb991c03",
+      "claim_id": "C57",
+      "claim": "Zasp52 recruits other Zasp proteins through its LIM domains.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, Zasp66-GFP fluorescence is strongly reduced in Zasp52MI00979 mutants (Figure 3C and D), suggesting that Zasp52 recruits other Zasp proteins through its LIM domains, consistent with the Y2H results.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the differential effects of Zasp52 mutants on Zasp66 localization.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:33:13.298963Z"
+    },
+    {
+      "id": "5e0b3c1f-0772-494e-b6a8-106fe598c121",
+      "content_id": "18e9f611-00ec-4a22-9c37-d97edb991c03",
+      "claim_id": "C58",
+      "claim": "\u03b1-Actinin localization at the Z-disc was not decreased in any of the Zasp mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "\u03b1-Actinin localization at the Z-disc was not decreased in any of the Zasp mutants (Figure 3\u2014figure supplement 1B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by fluorescence data shown in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:33:13.298963Z"
+    },
+    {
+      "id": "2772b139-4b56-4d21-a826-89122c4a6e2e",
+      "content_id": "18e9f611-00ec-4a22-9c37-d97edb991c03",
+      "claim_id": "C59",
+      "claim": "Zasp52-PK-NYFP and Zasp52-PK-CYFP show specific fluorescence at the Z-disc in BiFC assays.",
+      "claim_type": "EXPLICIT",
+      "source": "Zasp52-PK-NYFP and Zasp52-PK-CYFP show specific fluorescence at the Z-disc, whereas controls do not (Figure 3E\u2013G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by BiFC data shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:33:13.298963Z"
+    },
+    {
+      "id": "c0c590b9-759b-4de7-9526-e6bd7c43d22f",
+      "content_id": "18e9f611-00ec-4a22-9c37-d97edb991c03",
+      "claim_id": "C60",
+      "claim": "The ZM-only isoform Zasp66-PH-NYFP interacts specifically with Zasp52-PK-CYFP at the Z-disc.",
+      "claim_type": "EXPLICIT",
+      "source": "More importantly, the ZM-only isoform Zasp66-PH-NYFP interacts specifically with Zasp52-PK-CYFP at the Z-disc (Figure 3H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by BiFC data shown in Figure 3H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:33:13.298963Z"
+    },
+    {
+      "id": "37286bd4-10bb-4aad-8ad5-8af3306e525e",
+      "content_id": "18e9f611-00ec-4a22-9c37-d97edb991c03",
+      "claim_id": "C61",
+      "claim": "ZM-LIM interaction of Zasp proteins occurs in vivo at the Z-disc.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, ZM-LIM interaction of Zasp proteins occurs in vivo at the Z-disc.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from the BiFC experiments demonstrating interaction in living tissue.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:33:13.298963Z"
+    },
+    {
+      "id": "0e53beab-990a-4e06-b57d-25822e92e03e",
+      "content_id": "18e9f611-00ec-4a22-9c37-d97edb991c03",
+      "claim_id": "C62",
+      "claim": "LIM domains are well-known protein-protein interaction domains.",
+      "claim_type": "EXPLICIT",
+      "source": "LIM domains are well-known protein-protein interaction domains (Kadrmas and Beckerle, 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to established literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:33:13.298963Z"
+    },
+    {
+      "id": "c436ea47-70fe-452a-933f-8cf450f94f81",
+      "content_id": "18e9f611-00ec-4a22-9c37-d97edb991c03",
+      "claim_id": "C63",
+      "claim": "Functional information on the ZM domain is scarce.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, functional information on the ZM domain is scarce.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the state of knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:33:13.298963Z"
+    },
+    {
+      "id": "884a0844-1481-4f01-9231-b0e251f8ed0a",
+      "content_id": "18e9f611-00ec-4a22-9c37-d97edb991c03",
+      "claim_id": "C64",
+      "claim": "The ZM domain is an uncharacterized short motif of 26 amino acids found only in Alp/Enigma proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "It is an uncharacterized short motif of 26 amino acids found only in Alp/Enigma proteins (Klaavuniemi et al., 2004; Letunic et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies and protein domain databases.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:33:13.298963Z"
+    },
+    {
+      "id": "11b574aa-218d-46ab-b08b-4d903decef30",
+      "content_id": "18e9f611-00ec-4a22-9c37-d97edb991c03",
+      "claim_id": "C65",
+      "claim": "Alignment of Drosophila Zasp-encoding genes to the ZM consensus sequence shows weak conservation.",
+      "claim_type": "EXPLICIT",
+      "source": "Alignment of Drosophila Zasp-encoding genes to the ZM consensus sequence shows weak conservation (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by sequence alignment data shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:33:13.298963Z"
+    },
+    {
+      "id": "dcc01420-b9fc-49c6-a9b9-778e649242cd",
+      "content_id": "18e9f611-00ec-4a22-9c37-d97edb991c03",
+      "claim_id": "C66",
+      "claim": "The ZM domain is only present in a subset of animal genomes and absent from plants, fungi and unicellular metazoans.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to the universal presence of LIM domains in eukaryotes, the ZM domain is only present in a subset of animal genomes and absent from plants, fungi and unicellular metazoans (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by phylogenetic analysis shown in Figure 4B using PFAM database data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:33:13.298963Z"
+    },
+    {
+      "id": "61f85654-69c1-405c-a514-c48365be3ddc",
+      "content_id": "18e9f611-00ec-4a22-9c37-d97edb991c03",
+      "claim_id": "C67",
+      "claim": "Muscle striation evolved independently in cnidarians and bilaterians, with only the latter showing a canonical Z-disc structure.",
+      "claim_type": "EXPLICIT",
+      "source": "Muscle striation evolved independently in cnidarians and bilaterians, with only the latter showing a canonical Z-disc structure (Steinmetz et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous evolutionary study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:33:13.298963Z"
+    },
+    {
+      "id": "f65770e9-0dfa-4829-8813-a5d541d28bf1",
+      "content_id": "18e9f611-00ec-4a22-9c37-d97edb991c03",
+      "claim_id": "C68",
+      "claim": "The ZM domain is restricted to bilateral animals.",
+      "claim_type": "EXPLICIT",
+      "source": "Intriguingly, the ZM domain is restricted to bilateral animals (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by phylogenetic distribution data shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:33:13.298963Z"
+    },
+    {
+      "id": "a7af0f6b-d92a-451d-8334-75825d4ab14b",
+      "content_id": "18e9f611-00ec-4a22-9c37-d97edb991c03",
+      "claim_id": "C69",
+      "claim": "Canonical Z-discs and ZM domains arose together during evolution.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, our correlative data suggest that canonical Z-discs and ZM domains arose together during evolution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative conclusion based on the correlation between ZM domain presence and canonical Z-disc structure.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:33:13.298963Z"
+    },
+    {
+      "id": "32790125-03c2-434d-8e42-a40b2aa7d0b8",
+      "content_id": "18e9f611-00ec-4a22-9c37-d97edb991c03",
+      "claim_id": "C70",
+      "claim": "Growing isoforms are overrepresented at earlier stages of Z-disc formation, and blocking isoforms at later stages.",
+      "claim_type": "EXPLICIT",
+      "source": "To regulate Z-disc growth, growing isoforms should be overrepresented at earlier stages of Z-disc formation, and blocking isoforms at later stages, to stop Z-disc growth.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis proposed by the authors to explain Z-disc growth regulation.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:33:13.298963Z"
+    },
+    {
+      "id": "18abd21a-6772-4964-a732-2980bafe8ebd",
+      "content_id": "18e9f611-00ec-4a22-9c37-d97edb991c03",
+      "claim_id": "C71",
+      "claim": "Multivalent Zasp52 growing isoforms are already strongly expressed at 24 hr APF, whereas some blocking isoforms without any LIM domains are expressed only after 60 hr APF.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed earlier expression of the growing isoforms compared to the blocking isoforms (Figure 5B). For example, multivalent Zasp52 growing isoforms are already strongly expressed at 24 hr APF, whereas some blocking isoforms without any LIM domains are expressed only after 60 hr APF (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by RNAseq data shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:33:13.298963Z"
+    },
+    {
+      "id": "10bc514c-95fd-4bb5-80ae-36dd9db309be",
+      "content_id": "18e9f611-00ec-4a22-9c37-d97edb991c03",
+      "claim_id": "C72",
+      "claim": "Z-discs grow at the periphery of the disc, starting as a small Z-body.",
+      "claim_type": "EXPLICIT",
+      "source": "Z-discs grow at the periphery of the disc, starting as a small Z-body (Orfanos et al., 2015; Shwartz et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:33:13.298963Z"
+    },
+    {
+      "id": "c23016ae-010d-41ca-a7d6-a44852b3aaf7",
+      "content_id": "18e9f611-00ec-4a22-9c37-d97edb991c03",
+      "claim_id": "C73",
+      "claim": "Growing isoforms are enriched at the centre and blocking isoforms are enriched at the periphery of the final-sized Z-disc.",
+      "claim_type": "EXPLICIT",
+      "source": "Our model therefore predicts growing isoforms to be enriched at the centre and blocking isoforms to be enriched at the periphery of the final-sized Z-disc.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prediction from the model that is then tested experimentally.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:33:13.298963Z"
+    },
+    {
+      "id": "b33575e9-882b-4a4e-8c2d-ee961b8a9a5c",
+      "content_id": "18e9f611-00ec-4a22-9c37-d97edb991c03",
+      "claim_id": "C74",
+      "claim": "Actin is evenly distributed in the Z-disc.",
+      "claim_type": "EXPLICIT",
+      "source": "Actin is evenly distributed in the Z-disc (Figure 5D,E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by cross-section imaging data shown in Figure 5D,E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:33:13.298963Z"
+    },
+    {
+      "id": "610edb4a-067e-43c1-a2ef-10aa2b2ad218",
+      "content_id": "18e9f611-00ec-4a22-9c37-d97edb991c03",
+      "claim_id": "C75",
+      "claim": "The growing isoforms are present throughout the disc, but most concentrated at the centre of the Z-disc.",
+      "claim_type": "EXPLICIT",
+      "source": "The growing isoforms are present throughout the disc, but most concentrated at the centre of the Z-disc (Figure 5D,E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by cross-section imaging data shown in Figure 5D,E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:33:13.298963Z"
+    },
+    {
+      "id": "a5875dbd-8e6d-4f29-8378-9ae6ff0e6b47",
+      "content_id": "18e9f611-00ec-4a22-9c37-d97edb991c03",
+      "claim_id": "C76",
+      "claim": "The blocking isoforms Zasp66 and Zasp67 are partially excluded from the centre of the disc and form a ring-like pattern.",
+      "claim_type": "EXPLICIT",
+      "source": "The blocking isoforms Zasp66 and Zasp67 are partially excluded from the centre of the disc and form a ring-like pattern (Figure 5D,E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by cross-section imaging data shown in Figure 5D,E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:33:13.298963Z"
+    },
+    {
+      "id": "2661a645-b254-4f21-addb-85ee93579e37",
+      "content_id": "18e9f611-00ec-4a22-9c37-d97edb991c03",
+      "claim_id": "C77",
+      "claim": "Zasp66 localizes more at the periphery compared to Zasp67, which correlates with its later expression peak compared to Zasp67.",
+      "claim_type": "EXPLICIT",
+      "source": "Zasp66 localizes more at the periphery compared to Zasp67, which correlates with its later expression peak compared to Zasp67 (middle panels of Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a correlation observed between localization and expression timing data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:33:13.298963Z"
+    },
+    {
+      "id": "79e0af4f-6946-4a8f-b3e6-4d1a343a326e",
+      "content_id": "18e9f611-00ec-4a22-9c37-d97edb991c03",
+      "claim_id": "C78",
+      "claim": "Only the Zasp52MI00979 mutant, which deletes multiple LIM domains, had smaller Z-discs compared to the control.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, only the Zasp52MI00979 mutant, which deletes multiple LIM domains, had smaller Z-discs compared to the control (Figure 6B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by Z-disc size measurements shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:33:13.298963Z"
+    },
+    {
+      "id": "16f9662c-cea2-454f-bda7-002e66d00f86",
+      "content_id": "18e9f611-00ec-4a22-9c37-d97edb991c03",
+      "claim_id": "C79",
+      "claim": "In Zasp52MI00979, the smaller size categories were significantly elevated, whereas Zasp52MI02988 was comparable to the control.",
+      "claim_type": "EXPLICIT",
+      "source": "In Zasp52MI00979, the smaller size categories were significantly elevated, whereas Zasp52MI02988 was comparable to the control (Figure 6C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by Z-disc size distribution data shown in Figure 6C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:33:13.298963Z"
+    },
+    {
+      "id": "e062fccb-599c-49f7-952a-8e5f65838a2e",
+      "content_id": "18e9f611-00ec-4a22-9c37-d97edb991c03",
+      "claim_id": "C80",
+      "claim": "Overexpression of the Zasp52-PP blocking isoform led to smaller Z-discs than the control.",
+      "claim_type": "EXPLICIT",
+      "source": "We next determined if the opposite approach, increasing the levels of blocking isoforms, also results in smaller Z-discs. Overexpressing the Zasp52-PP blocking isoform led to smaller Z-discs than the control (Figure 6D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by Z-disc size measurements shown in Figure 6D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:33:13.298963Z"
+    },
+    {
+      "id": "0dda4137-9c26-486c-8f11-645b78147b80",
+      "content_id": "18e9f611-00ec-4a22-9c37-d97edb991c03",
+      "claim_id": "C81",
+      "claim": "The small Z-disc effect of Zasp52-PP overexpression requires the ZM domain.",
+      "claim_type": "EXPLICIT",
+      "source": "This effect requires the ZM domain, because overexpression of Zasp52-Stop143 containing only a functional extended PDZ domain, causes a milder phenotype than Zasp52-PP (Figure 6D, Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by comparison of phenotypes from different construct overexpressions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:33:13.298963Z"
+    },
+    {
+      "id": "b10b8f02-debe-4ca8-a28a-27bc88118485",
+      "content_id": "18e9f611-00ec-4a22-9c37-d97edb991c03",
+      "claim_id": "C82",
+      "claim": "Overexpression of Zasp66 or Zasp67 resulted in smaller Z-discs.",
+      "claim_type": "EXPLICIT",
+      "source": "Like Zasp52-PP, overexpression of Zasp66 or Zasp67 resulted in smaller Z-discs (Figure 6E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by Z-disc size measurements shown in Figure 6E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:33:13.298963Z"
+    },
+    {
+      "id": "93a4dbeb-7521-4dfb-a108-cdf5956021d3",
+      "content_id": "18e9f611-00ec-4a22-9c37-d97edb991c03",
+      "claim_id": "C83",
+      "claim": "Upon overexpression of Zasp52-PP, but not of Zasp52-Stop143, Zasp52-mCherry recruitment to the Z-disc is reduced.",
+      "claim_type": "EXPLICIT",
+      "source": "We also confirmed these phenotypes by measuring the relative fluorescence of Zasp52-mCherry at the Z-disc. Upon overexpression of Zasp52-PP, but not of Zasp52-Stop143, Zasp52-mCherry recruitment to the Z-disc is reduced (Figure 6F, Figure 6\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by fluorescence intensity measurements shown in Figure 6F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:33:13.298963Z"
+    },
+    {
+      "id": "0b0efd01-b10f-4416-9532-50208d21da55",
+      "content_id": "18e9f611-00ec-4a22-9c37-d97edb991c03",
+      "claim_id": "C84",
+      "claim": "Overexpression of Zasp66 and Zasp67 reduces Zasp52-mCherry recruitment to the Z-disc.",
+      "claim_type": "EXPLICIT",
+      "source": "Likewise, overexpression of Zasp66 and Zasp67 reduces Zasp52-mCherry recruitment to the Z-disc (Figure 6G, Figure 6\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by fluorescence intensity measurements shown in Figure 6G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:33:13.298963Z"
+    },
+    {
+      "id": "344d703d-0421-4036-8645-c3b0c8f5491d",
+      "content_id": "18e9f611-00ec-4a22-9c37-d97edb991c03",
+      "claim_id": "C85",
+      "claim": "\u03b1-actinin levels were unchanged in Zasp overexpression conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, \u03b1-actinin levels were unchanged in Zasp overexpression conditions (Figure 6\u2014figure supplement 1B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by fluorescence measurements shown in Figure 6\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:33:13.298963Z"
+    },
+    {
+      "id": "7252a12d-d18e-422c-9619-0d5f081b7bdf",
+      "content_id": "18e9f611-00ec-4a22-9c37-d97edb991c03",
+      "claim_id": "C86",
+      "claim": "Increasing the ZM/LIM ratio in IFM results in smaller Z-discs.",
+      "claim_type": "EXPLICIT",
+      "source": "These data indicate that increasing the ZM/LIM ratio in IFM results in smaller Z-discs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion inferred from the overexpression experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:33:13.298963Z"
+    },
+    {
+      "id": "3762ffa9-bed5-44dc-808a-855cfa7a6b2e",
+      "content_id": "18e9f611-00ec-4a22-9c37-d97edb991c03",
+      "claim_id": "C87",
+      "claim": "Rare aggregates are observed in Zasp66 and Zasp67 single mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed rare aggregates in Zasp66 and Zasp67 single mutants (Figure 7A,B,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by aggregate frequency data shown in Figure 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:33:13.298963Z"
+    },
+    {
+      "id": "f6b81158-4dc2-4ba9-b09a-08a0a2a8954a",
+      "content_id": "18e9f611-00ec-4a22-9c37-d97edb991c03",
+      "claim_id": "C88",
+      "claim": "Frequent aggregates are observed in the Zasp66 Zasp67 double mutant.",
+      "claim_type": "EXPLICIT",
+      "source": "As these two proteins likely have some redundant roles, we also analyzed the Zasp66 Zasp67 double mutant, where we observed frequent aggregates (Figure 7C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by aggregate frequency data shown in Figure 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:33:13.298963Z"
+    },
+    {
+      "id": "163a71ed-dc18-4fb4-840c-42ba110a3c8b",
+      "content_id": "18e9f611-00ec-4a22-9c37-d97edb991c03",
+      "claim_id": "C89",
+      "claim": "The Zasp66 Zasp67 double mutant had enlarged Z-discs, whereas the single mutants had normal-sized Z-discs.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, the single mutants had normal-sized Z-discs, whereas the double mutant had enlarged Z-discs (Figure 7E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by Z-disc size measurements shown in Figure 7E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:33:13.298963Z"
+    },
+    {
+      "id": "0208d36b-cc10-40e9-9d88-cfbd2e58c17b",
+      "content_id": "18e9f611-00ec-4a22-9c37-d97edb991c03",
+      "claim_id": "C90",
+      "claim": "Blocking isoforms are required to prevent Z-disc overgrowth.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, blocking isoforms are required to prevent Z-disc overgrowth.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from the Zasp66 Zasp67 double mutant phenotype.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:33:13.298963Z"
+    },
+    {
+      "id": "83de1cfe-7587-4f0f-8458-d669cd1132f6",
+      "content_id": "18e9f611-00ec-4a22-9c37-d97edb991c03",
+      "claim_id": "C91",
+      "claim": "Co-overexpression of both growing and the Zasp52-PP blocking isoform suppressed aggregate formation compared to a LacZ control.",
+      "claim_type": "EXPLICIT",
+      "source": "Co-overexpression of both growing and the Zasp52-PP blocking isoform suppressed aggregate formation compared to a LacZ control (Figure 7F\u2013I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by aggregate frequency data shown in Figure 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:33:13.298963Z"
+    },
+    {
+      "id": "09087ca8-a2bb-43f5-9d91-1daae1f08dd6",
+      "content_id": "18e9f611-00ec-4a22-9c37-d97edb991c03",
+      "claim_id": "C92",
+      "claim": "The mutated blocking isoform Zasp52-Stop143 without the ZM domain did not suppress aggregation.",
+      "claim_type": "EXPLICIT",
+      "source": "The mutated blocking isoform Zasp52-Stop143 without the ZM domain did not suppress aggregation (Figure 7H,I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by aggregate frequency data shown in Figure 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:33:13.298963Z"
+    },
+    {
+      "id": "2606f1ce-7483-4b93-ba2e-d58d41b2262e",
+      "content_id": "18e9f611-00ec-4a22-9c37-d97edb991c03",
+      "claim_id": "C93",
+      "claim": "Co-overexpression of Zasp66 or Zasp67 suppressed aggregation.",
+      "claim_type": "EXPLICIT",
+      "source": "Co-overexpression of Zasp66 or Zasp67 also suppressed aggregation (Figure 7I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by aggregate frequency data shown in Figure 7I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:33:13.298963Z"
+    },
+    {
+      "id": "b8124d80-1bad-4cca-97b6-248150c190cb",
+      "content_id": "18e9f611-00ec-4a22-9c37-d97edb991c03",
+      "claim_id": "C94",
+      "claim": "Z-disc formation and growth is driven by multivalent oligomerization of Zasp proteins with multiple LIM domains.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings indicate that Z-disc formation and growth is driven by multivalent oligomerization of Zasp proteins with multiple LIM domains, and eventually terminated at the proper Z-disc size by the upregulation of blocking isoforms without LIM domains (see model in Figure 5A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion of the study synthesizing all experimental findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:33:13.298963Z"
+    },
+    {
+      "id": "50c7e3c1-1f80-4d12-9160-fdc15027c7c3",
+      "content_id": "18e9f611-00ec-4a22-9c37-d97edb991c03",
+      "claim_id": "C95",
+      "claim": "Z-disc growth is eventually terminated at the proper Z-disc size by the upregulation of blocking isoforms without LIM domains.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings indicate that Z-disc formation and growth is driven by multivalent oligomerization of Zasp proteins with multiple LIM domains, and eventually terminated at the proper Z-disc size by the upregulation of blocking isoforms without LIM domains (see model in Figure 5A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion of the study synthesizing all experimental findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:33:13.298963Z"
+    },
+    {
+      "id": "70e10bce-ee10-411d-ae15-706d730bdaa1",
+      "content_id": "18e9f611-00ec-4a22-9c37-d97edb991c03",
+      "claim_id": "C96",
+      "claim": "The process of Z body and Z-disc formation is reminiscent of membraneless organelles with compositions distinct from the surrounding cytosol, which form through a mechanism of phase separation.",
+      "claim_type": "EXPLICIT",
+      "source": "The process of Z body and Z-disc formation is reminiscent of membraneless organelles with compositions distinct from the surrounding cytosol, which form through a mechanism of phase separation (e.g. Cajal bodies or P bodies) (Boeynaems et al., 2018; Weber, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative comparison to other cellular structures supported by citations.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:33:13.298963Z"
+    },
+    {
+      "id": "33a0f3ac-b079-4b97-8eb2-89241d765d43",
+      "content_id": "18e9f611-00ec-4a22-9c37-d97edb991c03",
+      "claim_id": "C97",
+      "claim": "Both Z-discs and membraneless organelles have sharp boundaries between themselves and the cytoplasm, they form and organize as discrete puncta in the cytosol, and multivalent protein domains are often involved in their formation.",
+      "claim_type": "EXPLICIT",
+      "source": "Both have sharp boundaries between themselves and the cytoplasm, they form and organize as discrete puncta in the cytosol, and multivalent protein domains are often involved in their formation (Li et al., 2012; Weber, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison supported by citations to literature on membraneless organelles.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:33:13.298963Z"
+    },
+    {
+      "id": "5e330919-f771-4a6f-a88d-35ae643980fa",
+      "content_id": "18e9f611-00ec-4a22-9c37-d97edb991c03",
+      "claim_id": "C98",
+      "claim": "Sarcomere size is stereotyped in a given muscle type but distinct among different muscles.",
+      "claim_type": "EXPLICIT",
+      "source": "Sarcomere size is stereotyped in a given muscle type but distinct among different muscles (Sch\u00f6nbauer et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:33:13.298963Z"
+    },
+    {
+      "id": "ee63ed9b-5fe0-4dec-b5b5-0967d93969ef",
+      "content_id": "18e9f611-00ec-4a22-9c37-d97edb991c03",
+      "claim_id": "C99",
+      "claim": "The sarcomere grows while the Zasp growing isoforms dominate the Zasp isoform pool.",
+      "claim_type": "EXPLICIT",
+      "source": "The sarcomere grows, while the Zasp growing isoforms dominate the Zasp isoform pool.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from the model proposed in the study.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:33:13.298963Z"
+    },
+    {
+      "id": "3dd451fd-052a-4be4-84a4-363bca92cda6",
+      "content_id": "18e9f611-00ec-4a22-9c37-d97edb991c03",
+      "claim_id": "C100",
+      "claim": "Different sarcomere sizes can be achieved by varying the sarcomere growth period or the speed at which new Zasp molecules are recruited to the Z-disc.",
+      "claim_type": "EXPLICIT",
+      "source": "Different sarcomere sizes can be achieved in two ways. First, the sarcomere growth period \u2013 the window of time in which Zasp growing isoforms dominate, might vary among muscle types. Second, the speed at which new Zasp molecules are recruited to the Z-disc, might be different among muscle types, while the growth period remains constant.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative explanation for how the mechanism could account for size variation.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:33:13.298963Z"
+    },
+    {
+      "id": "afae7f51-1d87-4db5-8003-ccf93883ba03",
+      "content_id": "18e9f611-00ec-4a22-9c37-d97edb991c03",
+      "claim_id": "C101",
+      "claim": "A combination of varying growth period and recruitment speed strategies likely occur simultaneously to achieve different sarcomere sizes.",
+      "claim_type": "EXPLICIT",
+      "source": "Given the diversity of muscle types and therefore sarcomere sizes that exist, it is likely that a combination of these two strategies occur simultaneously.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about mechanisms.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:33:13.298963Z"
+    },
+    {
+      "id": "c42feadb-23ee-42b8-ac18-82ed71b88319",
+      "content_id": "18e9f611-00ec-4a22-9c37-d97edb991c03",
+      "claim_id": "C102",
+      "claim": "Additional redundant mechanisms to control Z-disc growth might exist, as evidenced by the observation that Zasp52-PR overexpression makes big Z-discs and aggregates, while the mutant removing Zasp52 LIM domains reduces Z-disc size to a comparatively small degree.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, apart from the ZM-LIM mechanism described here, additional redundant mechanisms to control Z-disc growth might exist, as evidenced by the observation that Zasp52-PR overexpression makes big Z-discs and aggregates, while the mutant removing Zasp52 LIM domains reduces Z-disc size to a comparatively small degree.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement based on the asymmetry of phenotypes.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:33:13.298963Z"
+    },
+    {
+      "id": "2ce0ae4d-7574-42ac-862b-4987bc67d976",
+      "content_id": "18e9f611-00ec-4a22-9c37-d97edb991c03",
+      "claim_id": "C103",
+      "claim": "Redundant mechanisms might operate through other LIM domain proteins, or the coordination of Z-disc and M-line growth.",
+      "claim_type": "EXPLICIT",
+      "source": "Redundant mechanisms might operate through other LIM domain proteins, or the coordination of Z-disc and M-line growth, all of which may provide important buffering functions to ensure proper myofibril size, which is crucial for fully functional muscles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about potential additional mechanisms.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:33:13.298963Z"
+    },
+    {
+      "id": "c357a696-7e7d-43f5-bdb8-e2605c59c7b9",
+      "content_id": "18e9f611-00ec-4a22-9c37-d97edb991c03",
+      "claim_id": "C104",
+      "claim": "On its own, the ZM domain from two mouse Zasp proteins localizes to the Z-disc.",
+      "claim_type": "EXPLICIT",
+      "source": "On its own, the ZM domain from two mouse Zasp proteins localizes to the Z-disc (Klaavuniemi et al., 2004; Klaavuniemi and Yl\u00e4nne, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:33:13.298963Z"
+    },
+    {
+      "id": "ee80b0af-0b17-4d34-8e38-4b0d9c117151",
+      "content_id": "18e9f611-00ec-4a22-9c37-d97edb991c03",
+      "claim_id": "C105",
+      "claim": "Z-disc localization is a conserved feature of ZM domains from vertebrates to insects.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data suggest that Z-disc localization is a conserved feature of ZM domains from vertebrates to insects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the localization data of Zasp66-PH shown in the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:33:13.298963Z"
+    },
+    {
+      "id": "fee64fe2-fcc2-41a0-bcc1-30748f01df31",
+      "content_id": "18e9f611-00ec-4a22-9c37-d97edb991c03",
+      "claim_id": "C106",
+      "claim": "ZM-containing proteins are tethered to the Z-disc by the physical interaction with the LIM domains of other Zasp proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "ZM-containing proteins are tethered to the Z-disc by the physical interaction with the LIM domains of other Zasp proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from the interaction and localization studies.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:33:13.298963Z"
+    },
+    {
+      "id": "2a94698b-083f-4080-9a04-f5d15aeb151d",
+      "content_id": "18e9f611-00ec-4a22-9c37-d97edb991c03",
+      "claim_id": "C107",
+      "claim": "The LIM domain serves as a recruitment signal for Zasp proteins and potentially other unidentified ZM-containing proteins to join the Z-disc.",
+      "claim_type": "EXPLICIT",
+      "source": "In sum, the LIM domain serves as a recruitment signal for Zasp proteins and potentially other unidentified ZM-containing proteins to join the Z-disc.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from the study with speculation about other proteins.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:33:13.298963Z"
+    },
+    {
+      "id": "0fd8a18f-218e-4c13-ae8d-2a1e56006cc7",
+      "content_id": "18e9f611-00ec-4a22-9c37-d97edb991c03",
+      "claim_id": "C108",
+      "claim": "A conserved mechanism involving LIM-ZM binding underlies Z-disc growth and growth termination.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, given the appearance of the ZM domain in bilateral animals with canonical Z-discs, we postulate that a conserved mechanism involving LIM-ZM binding underlies Z-disc growth and growth termination.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a postulate based on the phylogenetic correlation and experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:33:13.298963Z"
+    },
+    {
+      "id": "e3d66b64-70a7-46d1-b5b3-0007f7105e85",
+      "content_id": "18e9f611-00ec-4a22-9c37-d97edb991c03",
+      "claim_id": "C109",
+      "claim": "In vertebrates, the Zasp proteins are very diverse and are better known as Alp/Enigma family.",
+      "claim_type": "EXPLICIT",
+      "source": "In vertebrates, the Zasp proteins are very diverse and are better known as Alp/Enigma family: ZASP/Cypher/Oracle/LDB3/PDLIM6, ENH/PDLIM5, PDLIM7/ENIGMA/LMP-1, CLP36/PDLIM1/Elfin/hCLIM1, PDLIM2/Mystique/SLIM, ALP/PDLIM3, and RIL/PDLIM4.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about vertebrate protein families.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:33:13.298963Z"
+    },
+    {
+      "id": "f43d7c47-2563-438b-9dbf-e81cd036765f",
+      "content_id": "18e9f611-00ec-4a22-9c37-d97edb991c03",
+      "claim_id": "C110",
+      "claim": "The ZM/DUF4749 motif occurs in ZASP, CLP36, PDLIM2, ALP and RIL.",
+      "claim_type": "EXPLICIT",
+      "source": "The ZM/DUF4749 motif occurs in ZASP, CLP36, PDLIM2, ALP and RIL (Cheng et al., 2010; D'Cruz et al., 2016; Faulkner et al., 1999; Vallenius et al., 2004; Zheng et al., 2010; Zhou et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:33:13.298963Z"
+    },
+    {
+      "id": "05d34317-c69b-42ca-8667-fc6a0e79efbd",
+      "content_id": "18e9f611-00ec-4a22-9c37-d97edb991c03",
+      "claim_id": "C111",
+      "claim": "The LIM domain occurs in all Zasp proteins, either as one domain in Alp family members or as three domains in Enigma family members.",
+      "claim_type": "EXPLICIT",
+      "source": "The LIM domain occurs in all Zasp proteins, either as one domain in Alp family members or as three domains in Enigma family members (Zheng et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:33:13.298963Z"
+    },
+    {
+      "id": "092653d8-25bf-4121-8216-8e3e31a4234b",
+      "content_id": "18e9f611-00ec-4a22-9c37-d97edb991c03",
+      "claim_id": "C112",
+      "claim": "Zasp66 and Zasp67 genes are insect-specific.",
+      "claim_type": "EXPLICIT",
+      "source": "Although Zasp66 and Zasp67 genes are insect-specific (Gonz\u00e1lez-Morales et al., 2019), vertebrate Alp/Enigma genes also express isoforms without LIM domains that could fulfill a blocking isoform function (Cheng et al., 2011; Zheng et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:33:13.298963Z"
+    },
+    {
+      "id": "65b84c68-7b30-4dc1-aeda-2697d77fc9e1",
+      "content_id": "18e9f611-00ec-4a22-9c37-d97edb991c03",
+      "claim_id": "C113",
+      "claim": "Vertebrate Alp/Enigma genes also express isoforms without LIM domains that could fulfill a blocking isoform function.",
+      "claim_type": "EXPLICIT",
+      "source": "Although Zasp66 and Zasp67 genes are insect-specific (Gonz\u00e1lez-Morales et al., 2019), vertebrate Alp/Enigma genes also express isoforms without LIM domains that could fulfill a blocking isoform function (Cheng et al., 2011; Zheng et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation supported by citations showing such isoforms exist.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:33:13.298963Z"
+    },
+    {
+      "id": "fe14a386-c8b4-43a4-a44a-85a9a37dac82",
+      "content_id": "18e9f611-00ec-4a22-9c37-d97edb991c03",
+      "claim_id": "C114",
+      "claim": "Because Zasp52-PK, which only contains one LIM domain, behaves as a blocking isoform, the Alp members with only one LIM domain might also behave as blocking isoforms.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, because Zasp52-PK, which only contains one LIM domain, behaves as a blocking isoform, the Alp members with only one LIM domain might also behave as blocking isoforms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on extrapolation from Drosophila data to vertebrates.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:33:13.298963Z"
+    },
+    {
+      "id": "ea2d8fcf-6ad1-4765-b973-894c21487611",
+      "content_id": "18e9f611-00ec-4a22-9c37-d97edb991c03",
+      "claim_id": "C115",
+      "claim": "The Enigma family members contain three C-terminal LIM domains, making them ideal candidates to fulfill the growing role in vertebrates.",
+      "claim_type": "EXPLICIT",
+      "source": "The function of the growing isoforms of Zasp requires multiple functional LIM domains. As the Enigma family members contain three C-terminal LIM domains, they are the ideal candidates to fulfill the growing role in vertebrates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on domain composition.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:33:13.298963Z"
+    },
+    {
+      "id": "bda22011-c571-456c-8198-671c7a188540",
+      "content_id": "18e9f611-00ec-4a22-9c37-d97edb991c03",
+      "claim_id": "C116",
+      "claim": "Three Enigma proteins exist in vertebrates: PDLIM7/Enigma/LMP-1, ENH/PDLIM5 and ZASP/Cypher/Oracle/LDB3/PDLIM6.",
+      "claim_type": "EXPLICIT",
+      "source": "Three Enigma proteins exist in vertebrates: PDLIM7/Enigma/LMP-1, ENH/PDLIM5 and ZASP/Cypher/Oracle/LDB3/PDLIM6.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about vertebrate proteins.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:33:13.298963Z"
+    },
+    {
+      "id": "c995a84b-ff81-420c-94d2-1c9fac6ef558",
+      "content_id": "18e9f611-00ec-4a22-9c37-d97edb991c03",
+      "claim_id": "C117",
+      "claim": "Functional redundancy between Enigma proteins at the Z-disc is likely common and demonstrated in one case.",
+      "claim_type": "EXPLICIT",
+      "source": "Functional redundancy between them at the Z-disc is likely common and demonstrated in one case (Mu et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:33:13.298963Z"
+    },
+    {
+      "id": "19e677bc-ac47-4488-9a84-18a585ab00d7",
+      "content_id": "18e9f611-00ec-4a22-9c37-d97edb991c03",
+      "claim_id": "C118",
+      "claim": "In Cypher knockout mice sarcomere assembly occurs normally during development, followed by immediate sarcomere failure after postnatal onset of contractility.",
+      "claim_type": "EXPLICIT",
+      "source": "In Cypher knockout mice sarcomere assembly occurs normally during development, followed by immediate sarcomere failure after postnatal onset of contractility (Zhou et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:33:13.298963Z"
+    },
+    {
+      "id": "c18927d0-96b9-4ef0-a5c3-006c97b5e218",
+      "content_id": "18e9f611-00ec-4a22-9c37-d97edb991c03",
+      "claim_id": "C119",
+      "claim": "ENH mutants exhibit cardiac dilation and abnormal Z-disc structure in the heart.",
+      "claim_type": "EXPLICIT",
+      "source": "ENH mutants exhibit cardiac dilation and abnormal Z-disc structure in the heart (Cheng et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:33:13.298963Z"
+    },
+    {
+      "id": "2bb5917d-6c85-41be-bc46-89dc2876d971",
+      "content_id": "18e9f611-00ec-4a22-9c37-d97edb991c03",
+      "claim_id": "C120",
+      "claim": "In both Cypher and ENH single mutants, as well as Cypher ENH double mutants, sarcomeres look considerably smaller in diameter in electron microscopy images.",
+      "claim_type": "EXPLICIT",
+      "source": "Intriguingly, in both Cypher and ENH single mutants, as well as Cypher ENH double mutants, sarcomeres look considerably smaller in diameter in electron microscopy images (Cheng et al., 2010; Mu et al., 2015; Zhou et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:33:13.298963Z"
+    },
+    {
+      "id": "eb6735fd-50cd-400c-8328-931fe69c0160",
+      "content_id": "18e9f611-00ec-4a22-9c37-d97edb991c03",
+      "claim_id": "C121",
+      "claim": "A similar role for Enigma proteins in setting sarcomere diameter in vertebrates appears likely.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, a similar role for Enigma proteins in setting sarcomere diameter in vertebrates appears likely.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on the phenotypes observed in vertebrate mutants.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:33:13.298963Z"
+    },
+    {
+      "id": "55f72d3b-21b0-4b7c-be63-0c8c7dff79c4",
+      "content_id": "18e9f611-00ec-4a22-9c37-d97edb991c03",
+      "claim_id": "C122",
+      "claim": "Many myopathies present aggregates, and several human ZASP mutations have been linked to aggregate-forming myopathies.",
+      "claim_type": "EXPLICIT",
+      "source": "Our Z-disc oligomerization hypothesis agrees well with the observation that many myopathies present aggregates, and several human ZASP mutations have been linked to aggregate-forming myopathies (Murphy and Young, 2015; Selcen and Engel, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to clinical literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:33:13.298963Z"
+    },
+    {
+      "id": "4246c03b-a1f1-4131-be77-12c4d8d7a1f0",
+      "content_id": "18e9f611-00ec-4a22-9c37-d97edb991c03",
+      "claim_id": "C123",
+      "claim": "Many ZASP mutations linked to disease lie within the ZM domain or one of the LIM domains.",
+      "claim_type": "EXPLICIT",
+      "source": "Many ZASP mutations linked to disease lie within the ZM domain or one of the LIM domains (Selcen and Engel, 2005; Theis et al., 2006; Vatta et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to clinical and genetic studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:33:13.298963Z"
+    },
+    {
+      "id": "8a0916ca-5107-4822-8d1d-4dbe78d16fea",
+      "content_id": "18e9f611-00ec-4a22-9c37-d97edb991c03",
+      "claim_id": "C124",
+      "claim": "Protein aggregation in myopathy patients might be a consequence of an imbalance in the mechanism that controls sarcomere size, favoring the growing over the blocking isoforms.",
+      "claim_type": "EXPLICIT",
+      "source": "Protein aggregation in myopathy patients might be a consequence of an imbalance in the mechanism that controls sarcomere size, favoring the growing over the blocking isoforms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about the mechanism underlying human disease.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:33:13.298963Z"
+    },
+    {
+      "id": "75131495-cbbb-4f19-b94c-51924d181c2e",
+      "content_id": "18e9f611-00ec-4a22-9c37-d97edb991c03",
+      "claim_id": "C125",
+      "claim": "The data points to a potential therapeutic avenue: blocking the growing isoforms with short peptides containing a ZM domain.",
+      "claim_type": "EXPLICIT",
+      "source": "If this were the case, our data points to a potential therapeutic avenue: blocking the growing isoforms with short peptides containing a ZM domain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about potential therapeutic applications.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:33:13.298963Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "e83d518d-b864-440c-ac92-b772ad71c36e",
+      "content_id": "18e9f611-00ec-4a22-9c37-d97edb991c03",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Aggregate formation upon Zasp52-PR overexpression requires both the ZM domain and multiple LIM domains. Deletion of either domain abolishes aggregation, while the PDZ domain plays a minor role through \u03b1-actinin recruitment.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31-C40 provide systematic domain deletion analysis showing that both ZM and multiple LIM domains are essential for aggregate formation (C32, C33, C39, C40). The PDZ domain's minor role is demonstrated through deletion and \u03b1-actinin RNAi experiments (C34, C36, C37). The data from Figure 1 consistently supports these conclusions with appropriate controls.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:33:13.298963Z"
+    },
+    {
+      "id": "48f89abb-b42b-4c6a-9f3d-0d5c1774e02f",
+      "content_id": "18e9f611-00ec-4a22-9c37-d97edb991c03",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Mild overexpression of Zasp52-PR results in enlarged Z-discs without aggregates, demonstrating that Z-disc growth and pathological aggregation are dose-dependent phenomena.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41-C42 show that lower expression levels (UH3-Gal4) produce enlarged Z-discs without aggregates, while higher expression (Act88F-Gal4) produces aggregates. This dose-response relationship is well-documented in Figure 1J-L with quantitative measurements of Z-disc size categories.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:33:13.298963Z"
+    },
+    {
+      "id": "010b6829-0f08-4afe-93c7-655a23295fc5",
+      "content_id": "18e9f611-00ec-4a22-9c37-d97edb991c03",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Zasp proteins homo- and heterodimerize through ZM-LIM domain interactions. The ZM domain binds to LIM domains, mediating oligomerization between Zasp52, Zasp66, and Zasp67 isoforms.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C54 present comprehensive evidence from yeast two-hybrid (Figure 2A-E), co-immunoprecipitation (Figure 2\u2014supplement 1A), and chemical crosslinking (Figure 2\u2014supplement 1B) experiments. The systematic domain mapping clearly demonstrates that ZM-LIM interactions mediate dimerization, with appropriate negative controls throughout.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:33:13.298963Z"
+    },
+    {
+      "id": "a19d7b71-8af0-4ca5-9b60-cf0b58d09e7b",
+      "content_id": "18e9f611-00ec-4a22-9c37-d97edb991c03",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Zasp52 recruits other Zasp proteins to the Z-disc through its LIM domains, as demonstrated by differential effects of Zasp52 mutants on Zasp66-GFP localization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55-C58 show that Zasp52MI00979 (lacking multiple LIM domains) strongly reduces Zasp66-GFP fluorescence, while Zasp52MI02988 has milder effects (Figure 3A-D). The specificity is confirmed by unchanged \u03b1-actinin localization (C58). The genetic approach with defined mutants provides strong support for LIM-dependent recruitment.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:33:13.298963Z"
+    },
+    {
+      "id": "d6f4ef8e-be7f-4908-9ce2-dff592de88ca",
+      "content_id": "18e9f611-00ec-4a22-9c37-d97edb991c03",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "ZM-LIM interactions occur in vivo at the Z-disc, as demonstrated by bimolecular fluorescence complementation (BiFC) assays showing specific interactions between Zasp52-PK and the ZM-only isoform Zasp66-PH.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59-C61 present BiFC data (Figure 3E-H) demonstrating in vivo interactions at the Z-disc. The experiments include appropriate negative controls and show specific fluorescence reconstitution only when both ZM and LIM domains are present, confirming the interaction occurs in living tissue at the correct subcellular location.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:33:13.298963Z"
+    },
+    {
+      "id": "eee472bb-a068-47b6-93e0-44a1b5d48812",
+      "content_id": "18e9f611-00ec-4a22-9c37-d97edb991c03",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The ZM domain is phylogenetically restricted to bilateral animals with canonical Z-discs, suggesting co-evolution of ZM domains and canonical Z-disc structures.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C65-C69 present phylogenetic distribution data (Figure 4B) showing ZM domain restriction to bilaterians. However, C69's conclusion about co-evolution is correlative and speculative. While the correlation is interesting, causation cannot be established from phylogenetic distribution alone. Additional functional studies in diverse organisms would be needed to support the evolutionary claim.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:33:13.298963Z"
+    },
+    {
+      "id": "ec9d45d7-c10d-436d-ba35-21b3f9072de8",
+      "content_id": "18e9f611-00ec-4a22-9c37-d97edb991c03",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Growing isoforms (with multiple LIM domains) are expressed earlier and localize centrally in Z-discs, while blocking isoforms (lacking LIM domains) are expressed later and localize peripherally, consistent with a temporal growth control mechanism.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C70-C77 combine RNAseq temporal expression data (Figure 5B) with spatial localization analysis (Figure 5D-E). The temporal expression pattern shows growing isoforms peak at 24hr APF while blocking isoforms peak after 60hr APF (C71). The spatial distribution shows growing isoforms concentrated centrally and blocking isoforms forming ring-like patterns (C75-C76), supporting the proposed model.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:33:13.298963Z"
+    },
+    {
+      "id": "b8c3cab6-d68c-490c-ab80-79593007af47",
+      "content_id": "18e9f611-00ec-4a22-9c37-d97edb991c03",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The balance between growing and blocking isoforms controls Z-disc size. Reducing growing isoforms (Zasp52MI00979 mutant) or increasing blocking isoforms (overexpression of Zasp52-PP, Zasp66, or Zasp67) results in smaller Z-discs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C78-C86 present complementary loss-of-function (Figure 6A-C) and gain-of-function (Figure 6D-G) experiments. The Zasp52MI00979 mutant shows smaller Z-discs (C78-C79), while overexpression of blocking isoforms produces the same phenotype (C80-C82). The ZM domain requirement is demonstrated by comparing Zasp52-PP with Zasp52-Stop143 (C81). Fluorescence measurements confirm reduced Zasp52 recruitment without affecting \u03b1-actinin (C83-C85).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:33:13.298963Z"
+    },
+    {
+      "id": "737b37e4-7e0b-4da8-bca6-af2d1fc06dac",
+      "content_id": "18e9f611-00ec-4a22-9c37-d97edb991c03",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Blocking isoforms are required to prevent Z-disc overgrowth. The Zasp66 Zasp67 double mutant shows frequent aggregates and enlarged Z-discs, while single mutants have normal-sized Z-discs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C87-C90 demonstrate genetic redundancy between Zasp66 and Zasp67 using CRISPR null mutants (Figure 7A-E). The double mutant phenotype (frequent aggregates and enlarged Z-discs) is significantly stronger than single mutants, providing strong evidence that blocking isoforms are required to terminate Z-disc growth. The quantitative data on aggregate frequency and Z-disc size support this conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:33:13.298963Z"
+    },
+    {
+      "id": "6ce31ced-1bfa-404a-b9da-f88ddeb327a3",
+      "content_id": "18e9f611-00ec-4a22-9c37-d97edb991c03",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Co-overexpression of blocking isoforms suppresses aggregate formation caused by growing isoform overexpression, and this suppression requires the ZM domain.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C91-C93 demonstrate rescue of the aggregation phenotype by co-expressing blocking isoforms (Figure 7F-I). The requirement for the ZM domain is shown by the failure of Zasp52-Stop143 to suppress aggregation (C92). This provides functional validation of the proposed mechanism and suggests potential therapeutic applications.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:33:13.298963Z"
+    },
+    {
+      "id": "76b36ca2-cbea-4d1a-ab1f-0f46c3e38613",
+      "content_id": "18e9f611-00ec-4a22-9c37-d97edb991c03",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Z-disc formation and growth is driven by multivalent oligomerization of Zasp proteins with multiple LIM domains, and is terminated by upregulation of blocking isoforms without LIM domains, setting the stereotyped myofibril diameter.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5-C8 and C94-C95 represent the central conclusion synthesizing all experimental findings. The mechanism is supported by: (1) domain requirements for aggregation, (2) ZM-LIM interactions demonstrated in vitro and in vivo, (3) temporal expression patterns, (4) spatial localization, (5) genetic manipulation of isoform ratios affecting Z-disc size, and (6) rescue experiments. The convergence of multiple independent lines of evidence strongly supports this model.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:33:13.298963Z"
+    },
+    {
+      "id": "d232a272-a1c8-4c97-ac56-40222e03ad6f",
+      "content_id": "18e9f611-00ec-4a22-9c37-d97edb991c03",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Z-disc formation resembles membraneless organelle assembly through phase separation, sharing features like sharp boundaries, discrete puncta formation, and involvement of multivalent protein domains.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C96-C97 draw an analogy between Z-disc formation and phase separation in membraneless organelles. While the comparison is conceptually interesting and supported by citations, the manuscript does not provide direct experimental evidence for phase separation (e.g., FRAP experiments, sensitivity to 1,6-hexanediol, liquid-like properties). This remains a speculative hypothesis requiring additional experimental validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:33:13.298963Z"
+    },
+    {
+      "id": "8a10aca6-7162-4256-bb8a-c8b8fe9c5e5c",
+      "content_id": "18e9f611-00ec-4a22-9c37-d97edb991c03",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Different sarcomere sizes could be achieved by varying growth period duration or recruitment speed, and additional redundant mechanisms may exist to control Z-disc growth.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C100-C103 are speculative proposals about mechanisms that could explain sarcomere size variation across muscle types. While C102 notes the asymmetry between overexpression and mutant phenotypes suggesting redundant mechanisms, no experimental data directly tests these hypotheses. These represent reasonable speculation for future work but lack experimental support in the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:33:13.298963Z"
+    },
+    {
+      "id": "f4c73599-7cf1-445a-a5dd-647baf31bee4",
+      "content_id": "18e9f611-00ec-4a22-9c37-d97edb991c03",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The ZM domain localizes to Z-discs through physical interaction with LIM domains of other Zasp proteins, serving as a recruitment signal conserved from vertebrates to insects.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C104-C107 combine prior literature (C104) with current data showing Zasp66-PH (ZM-only) localization and BiFC interactions. The conclusion that ZM domains are tethered via LIM domain interactions is well-supported by the interaction studies (C106). The conservation claim (C105) is reasonably inferred from the localization data, though direct vertebrate experiments are not shown.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:33:13.298963Z"
+    },
+    {
+      "id": "5e165b51-4260-4bb8-9252-c0480f18fbd5",
+      "content_id": "18e9f611-00ec-4a22-9c37-d97edb991c03",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "A conserved LIM-ZM binding mechanism likely underlies Z-disc growth control in vertebrates, with Enigma family proteins serving as growing isoforms and Alp family proteins as blocking isoforms.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C108, C113-C115, and C121 extrapolate from Drosophila findings to vertebrates based on domain composition and published phenotypes. While vertebrate Alp/Enigma proteins have appropriate domain structures and some mutants show smaller sarcomeres (C120), direct experimental validation of the ZM-LIM mechanism in vertebrates is lacking. This represents reasonable speculation requiring experimental confirmation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:33:13.298963Z"
+    },
+    {
+      "id": "a6ce5abc-4758-4ef9-874f-acdd669cb2c1",
+      "content_id": "18e9f611-00ec-4a22-9c37-d97edb991c03",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Protein aggregation in myopathy patients might result from imbalance favoring growing over blocking isoforms, suggesting a therapeutic strategy using ZM domain-containing peptides.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C122-C125 connect the findings to human disease. While many ZASP mutations occur in ZM or LIM domains (C123), the proposed mechanism (C124) and therapeutic approach (C125) are speculative. The Drosophila model demonstrates proof-of-concept for blocking isoform rescue, but translation to human disease requires validation in patient cells or animal models of specific mutations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:33:13.298963Z"
+    },
+    {
+      "id": "7ea34706-3671-48df-bd6e-627354e21fc1",
+      "content_id": "18e9f611-00ec-4a22-9c37-d97edb991c03",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Background information establishing the structure of myofibrils and sarcomeres, the role of Z-discs in setting myofibril diameter, the involvement of Zasp and \u03b1-actinin in Z-disc formation, and the association of Z-disc protein mutations with myopathies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C30, C35, C62-C64, C98, C109-C112, C116-C120 present established knowledge from the literature, properly cited throughout. These provide essential context for the study but do not represent novel findings. The claims accurately represent the state of the field and are well-supported by the cited references.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:33:13.298963Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "d39a49ff-8339-4a94-ae31-c7b398489466",
+      "result_id": "e83d518d-b864-440c-ac92-b772ad71c36e"
+    },
+    {
+      "claim_id": "8152b7d1-d0f7-4815-be38-b33282eea739",
+      "result_id": "e83d518d-b864-440c-ac92-b772ad71c36e"
+    },
+    {
+      "claim_id": "1246ed35-29e5-4858-ac08-36c0fdeb6c14",
+      "result_id": "e83d518d-b864-440c-ac92-b772ad71c36e"
+    },
+    {
+      "claim_id": "e17e7145-657f-426b-a8c9-cc03d1df1a12",
+      "result_id": "e83d518d-b864-440c-ac92-b772ad71c36e"
+    },
+    {
+      "claim_id": "a14dc86a-bdf3-4688-8c8d-f74119870dd8",
+      "result_id": "e83d518d-b864-440c-ac92-b772ad71c36e"
+    },
+    {
+      "claim_id": "7f1d55c2-bd84-4a10-8d07-3de4fbb63125",
+      "result_id": "e83d518d-b864-440c-ac92-b772ad71c36e"
+    },
+    {
+      "claim_id": "c3ca53d4-33be-433d-b256-f76ba4472d87",
+      "result_id": "e83d518d-b864-440c-ac92-b772ad71c36e"
+    },
+    {
+      "claim_id": "ce4e793c-c877-45cb-8502-41788eb11d5b",
+      "result_id": "e83d518d-b864-440c-ac92-b772ad71c36e"
+    },
+    {
+      "claim_id": "74264ebf-0117-4868-a75b-a5db7119f804",
+      "result_id": "e83d518d-b864-440c-ac92-b772ad71c36e"
+    },
+    {
+      "claim_id": "7c4670fa-ee6b-4942-8362-96901507cf7d",
+      "result_id": "48f89abb-b42b-4c6a-9f3d-0d5c1774e02f"
+    },
+    {
+      "claim_id": "75f07363-23b1-4367-b381-9059149c4b74",
+      "result_id": "48f89abb-b42b-4c6a-9f3d-0d5c1774e02f"
+    },
+    {
+      "claim_id": "d65c4a65-c04b-434b-9ec9-8e9e8a17fe98",
+      "result_id": "010b6829-0f08-4afe-93c7-655a23295fc5"
+    },
+    {
+      "claim_id": "62def608-c4b2-4c38-be21-7224b932f3cb",
+      "result_id": "010b6829-0f08-4afe-93c7-655a23295fc5"
+    },
+    {
+      "claim_id": "54dc9745-97cf-40c5-bd35-8287e6931f35",
+      "result_id": "010b6829-0f08-4afe-93c7-655a23295fc5"
+    },
+    {
+      "claim_id": "1a906266-c52f-4b1a-ae9b-d47889130885",
+      "result_id": "010b6829-0f08-4afe-93c7-655a23295fc5"
+    },
+    {
+      "claim_id": "839173c3-4985-4038-9716-d750e3d91030",
+      "result_id": "010b6829-0f08-4afe-93c7-655a23295fc5"
+    },
+    {
+      "claim_id": "1cd9874d-2ca2-47b7-9ac4-1e9d6691b242",
+      "result_id": "010b6829-0f08-4afe-93c7-655a23295fc5"
+    },
+    {
+      "claim_id": "3ba5092a-3523-45e3-aa4f-f8783fb2bb54",
+      "result_id": "010b6829-0f08-4afe-93c7-655a23295fc5"
+    },
+    {
+      "claim_id": "16464d57-7fdb-4fe6-9082-8feb988247ea",
+      "result_id": "010b6829-0f08-4afe-93c7-655a23295fc5"
+    },
+    {
+      "claim_id": "2b947614-1585-4ad5-918c-180276b3c8bf",
+      "result_id": "010b6829-0f08-4afe-93c7-655a23295fc5"
+    },
+    {
+      "claim_id": "b3d67ba7-e350-42f1-953f-70356d84f578",
+      "result_id": "010b6829-0f08-4afe-93c7-655a23295fc5"
+    },
+    {
+      "claim_id": "3e1c27d7-661c-4df4-81b6-b02bb78ed98d",
+      "result_id": "010b6829-0f08-4afe-93c7-655a23295fc5"
+    },
+    {
+      "claim_id": "216aed14-3369-4b65-9669-1eb01f5b7096",
+      "result_id": "a19d7b71-8af0-4ca5-9b60-cf0b58d09e7b"
+    },
+    {
+      "claim_id": "3a233218-c1c1-46ca-a85c-95f1128fa552",
+      "result_id": "a19d7b71-8af0-4ca5-9b60-cf0b58d09e7b"
+    },
+    {
+      "claim_id": "eb535fc6-9020-4092-adb2-6088d2249f89",
+      "result_id": "a19d7b71-8af0-4ca5-9b60-cf0b58d09e7b"
+    },
+    {
+      "claim_id": "5e0b3c1f-0772-494e-b6a8-106fe598c121",
+      "result_id": "a19d7b71-8af0-4ca5-9b60-cf0b58d09e7b"
+    },
+    {
+      "claim_id": "2772b139-4b56-4d21-a826-89122c4a6e2e",
+      "result_id": "d6f4ef8e-be7f-4908-9ce2-dff592de88ca"
+    },
+    {
+      "claim_id": "c0c590b9-759b-4de7-9526-e6bd7c43d22f",
+      "result_id": "d6f4ef8e-be7f-4908-9ce2-dff592de88ca"
+    },
+    {
+      "claim_id": "37286bd4-10bb-4aad-8ad5-8af3306e525e",
+      "result_id": "d6f4ef8e-be7f-4908-9ce2-dff592de88ca"
+    },
+    {
+      "claim_id": "11b574aa-218d-46ab-b08b-4d903decef30",
+      "result_id": "eee472bb-a068-47b6-93e0-44a1b5d48812"
+    },
+    {
+      "claim_id": "dcc01420-b9fc-49c6-a9b9-778e649242cd",
+      "result_id": "eee472bb-a068-47b6-93e0-44a1b5d48812"
+    },
+    {
+      "claim_id": "61f85654-69c1-405c-a514-c48365be3ddc",
+      "result_id": "eee472bb-a068-47b6-93e0-44a1b5d48812"
+    },
+    {
+      "claim_id": "f65770e9-0dfa-4829-8813-a5d541d28bf1",
+      "result_id": "eee472bb-a068-47b6-93e0-44a1b5d48812"
+    },
+    {
+      "claim_id": "a7af0f6b-d92a-451d-8334-75825d4ab14b",
+      "result_id": "eee472bb-a068-47b6-93e0-44a1b5d48812"
+    },
+    {
+      "claim_id": "32790125-03c2-434d-8e42-a40b2aa7d0b8",
+      "result_id": "ec9d45d7-c10d-436d-ba35-21b3f9072de8"
+    },
+    {
+      "claim_id": "18abd21a-6772-4964-a732-2980bafe8ebd",
+      "result_id": "ec9d45d7-c10d-436d-ba35-21b3f9072de8"
+    },
+    {
+      "claim_id": "c23016ae-010d-41ca-a7d6-a44852b3aaf7",
+      "result_id": "ec9d45d7-c10d-436d-ba35-21b3f9072de8"
+    },
+    {
+      "claim_id": "b33575e9-882b-4a4e-8c2d-ee961b8a9a5c",
+      "result_id": "ec9d45d7-c10d-436d-ba35-21b3f9072de8"
+    },
+    {
+      "claim_id": "610edb4a-067e-43c1-a2ef-10aa2b2ad218",
+      "result_id": "ec9d45d7-c10d-436d-ba35-21b3f9072de8"
+    },
+    {
+      "claim_id": "a5875dbd-8e6d-4f29-8378-9ae6ff0e6b47",
+      "result_id": "ec9d45d7-c10d-436d-ba35-21b3f9072de8"
+    },
+    {
+      "claim_id": "2661a645-b254-4f21-addb-85ee93579e37",
+      "result_id": "ec9d45d7-c10d-436d-ba35-21b3f9072de8"
+    },
+    {
+      "claim_id": "79e0af4f-6946-4a8f-b3e6-4d1a343a326e",
+      "result_id": "b8c3cab6-d68c-490c-ab80-79593007af47"
+    },
+    {
+      "claim_id": "16f9662c-cea2-454f-bda7-002e66d00f86",
+      "result_id": "b8c3cab6-d68c-490c-ab80-79593007af47"
+    },
+    {
+      "claim_id": "e062fccb-599c-49f7-952a-8e5f65838a2e",
+      "result_id": "b8c3cab6-d68c-490c-ab80-79593007af47"
+    },
+    {
+      "claim_id": "0dda4137-9c26-486c-8f11-645b78147b80",
+      "result_id": "b8c3cab6-d68c-490c-ab80-79593007af47"
+    },
+    {
+      "claim_id": "b10b8f02-debe-4ca8-a28a-27bc88118485",
+      "result_id": "b8c3cab6-d68c-490c-ab80-79593007af47"
+    },
+    {
+      "claim_id": "93a4dbeb-7521-4dfb-a108-cdf5956021d3",
+      "result_id": "b8c3cab6-d68c-490c-ab80-79593007af47"
+    },
+    {
+      "claim_id": "0b0efd01-b10f-4416-9532-50208d21da55",
+      "result_id": "b8c3cab6-d68c-490c-ab80-79593007af47"
+    },
+    {
+      "claim_id": "344d703d-0421-4036-8645-c3b0c8f5491d",
+      "result_id": "b8c3cab6-d68c-490c-ab80-79593007af47"
+    },
+    {
+      "claim_id": "7252a12d-d18e-422c-9619-0d5f081b7bdf",
+      "result_id": "b8c3cab6-d68c-490c-ab80-79593007af47"
+    },
+    {
+      "claim_id": "3762ffa9-bed5-44dc-808a-855cfa7a6b2e",
+      "result_id": "737b37e4-7e0b-4da8-bca6-af2d1fc06dac"
+    },
+    {
+      "claim_id": "f6b81158-4dc2-4ba9-b09a-08a0a2a8954a",
+      "result_id": "737b37e4-7e0b-4da8-bca6-af2d1fc06dac"
+    },
+    {
+      "claim_id": "163a71ed-dc18-4fb4-840c-42ba110a3c8b",
+      "result_id": "737b37e4-7e0b-4da8-bca6-af2d1fc06dac"
+    },
+    {
+      "claim_id": "0208d36b-cc10-40e9-9d88-cfbd2e58c17b",
+      "result_id": "737b37e4-7e0b-4da8-bca6-af2d1fc06dac"
+    },
+    {
+      "claim_id": "83de1cfe-7587-4f0f-8458-d669cd1132f6",
+      "result_id": "6ce31ced-1bfa-404a-b9da-f88ddeb327a3"
+    },
+    {
+      "claim_id": "09087ca8-a2bb-43f5-9d91-1daae1f08dd6",
+      "result_id": "6ce31ced-1bfa-404a-b9da-f88ddeb327a3"
+    },
+    {
+      "claim_id": "2606f1ce-7483-4b93-ba2e-d58d41b2262e",
+      "result_id": "6ce31ced-1bfa-404a-b9da-f88ddeb327a3"
+    },
+    {
+      "claim_id": "5178c734-34c2-4c33-b1ca-be477de46017",
+      "result_id": "76b36ca2-cbea-4d1a-ab1f-0f46c3e38613"
+    },
+    {
+      "claim_id": "932b947f-4a97-43ea-a635-10c4083d6e1c",
+      "result_id": "76b36ca2-cbea-4d1a-ab1f-0f46c3e38613"
+    },
+    {
+      "claim_id": "48c1e307-3c6c-4c06-814b-a14ece0ac4ce",
+      "result_id": "76b36ca2-cbea-4d1a-ab1f-0f46c3e38613"
+    },
+    {
+      "claim_id": "01ec99ca-b055-4620-8445-bbbf1221f98c",
+      "result_id": "76b36ca2-cbea-4d1a-ab1f-0f46c3e38613"
+    },
+    {
+      "claim_id": "b8124d80-1bad-4cca-97b6-248150c190cb",
+      "result_id": "76b36ca2-cbea-4d1a-ab1f-0f46c3e38613"
+    },
+    {
+      "claim_id": "50c7e3c1-1f80-4d12-9160-fdc15027c7c3",
+      "result_id": "76b36ca2-cbea-4d1a-ab1f-0f46c3e38613"
+    },
+    {
+      "claim_id": "70e10bce-ee10-411d-ae15-706d730bdaa1",
+      "result_id": "d232a272-a1c8-4c97-ac56-40222e03ad6f"
+    },
+    {
+      "claim_id": "33a0f3ac-b079-4b97-8eb2-89241d765d43",
+      "result_id": "d232a272-a1c8-4c97-ac56-40222e03ad6f"
+    },
+    {
+      "claim_id": "3dd451fd-052a-4be4-84a4-363bca92cda6",
+      "result_id": "8a10aca6-7162-4256-bb8a-c8b8fe9c5e5c"
+    },
+    {
+      "claim_id": "afae7f51-1d87-4db5-8003-ccf93883ba03",
+      "result_id": "8a10aca6-7162-4256-bb8a-c8b8fe9c5e5c"
+    },
+    {
+      "claim_id": "c42feadb-23ee-42b8-ac18-82ed71b88319",
+      "result_id": "8a10aca6-7162-4256-bb8a-c8b8fe9c5e5c"
+    },
+    {
+      "claim_id": "2ce0ae4d-7574-42ac-862b-4987bc67d976",
+      "result_id": "8a10aca6-7162-4256-bb8a-c8b8fe9c5e5c"
+    },
+    {
+      "claim_id": "c357a696-7e7d-43f5-bdb8-e2605c59c7b9",
+      "result_id": "f4c73599-7cf1-445a-a5dd-647baf31bee4"
+    },
+    {
+      "claim_id": "ee80b0af-0b17-4d34-8e38-4b0d9c117151",
+      "result_id": "f4c73599-7cf1-445a-a5dd-647baf31bee4"
+    },
+    {
+      "claim_id": "fee64fe2-fcc2-41a0-bcc1-30748f01df31",
+      "result_id": "f4c73599-7cf1-445a-a5dd-647baf31bee4"
+    },
+    {
+      "claim_id": "2a94698b-083f-4080-9a04-f5d15aeb151d",
+      "result_id": "f4c73599-7cf1-445a-a5dd-647baf31bee4"
+    },
+    {
+      "claim_id": "0fd8a18f-218e-4c13-ae8d-2a1e56006cc7",
+      "result_id": "5e165b51-4260-4bb8-9252-c0480f18fbd5"
+    },
+    {
+      "claim_id": "65b84c68-7b30-4dc1-aeda-2697d77fc9e1",
+      "result_id": "5e165b51-4260-4bb8-9252-c0480f18fbd5"
+    },
+    {
+      "claim_id": "fe14a386-c8b4-43a4-a44a-85a9a37dac82",
+      "result_id": "5e165b51-4260-4bb8-9252-c0480f18fbd5"
+    },
+    {
+      "claim_id": "ea2d8fcf-6ad1-4765-b973-894c21487611",
+      "result_id": "5e165b51-4260-4bb8-9252-c0480f18fbd5"
+    },
+    {
+      "claim_id": "eb6735fd-50cd-400c-8328-931fe69c0160",
+      "result_id": "5e165b51-4260-4bb8-9252-c0480f18fbd5"
+    },
+    {
+      "claim_id": "55f72d3b-21b0-4b7c-be63-0c8c7dff79c4",
+      "result_id": "a6ce5abc-4758-4ef9-874f-acdd669cb2c1"
+    },
+    {
+      "claim_id": "4246c03b-a1f1-4131-be77-12c4d8d7a1f0",
+      "result_id": "a6ce5abc-4758-4ef9-874f-acdd669cb2c1"
+    },
+    {
+      "claim_id": "8a0916ca-5107-4822-8d1d-4dbe78d16fea",
+      "result_id": "a6ce5abc-4758-4ef9-874f-acdd669cb2c1"
+    },
+    {
+      "claim_id": "75131495-cbbb-4f19-b94c-51924d181c2e",
+      "result_id": "a6ce5abc-4758-4ef9-874f-acdd669cb2c1"
+    },
+    {
+      "claim_id": "5705ab8e-9897-4847-a43c-ea250a07c8cd",
+      "result_id": "7ea34706-3671-48df-bd6e-627354e21fc1"
+    },
+    {
+      "claim_id": "92a2c2b2-c07c-4c47-9379-885206a38ef8",
+      "result_id": "7ea34706-3671-48df-bd6e-627354e21fc1"
+    },
+    {
+      "claim_id": "625c5fbf-b2c5-4d8a-988d-db104a4cdb8c",
+      "result_id": "7ea34706-3671-48df-bd6e-627354e21fc1"
+    },
+    {
+      "claim_id": "304785fc-2bb7-4f41-9a39-f6dd6815ba74",
+      "result_id": "7ea34706-3671-48df-bd6e-627354e21fc1"
+    },
+    {
+      "claim_id": "e54abb83-fa4b-4e58-9c08-6e3bfeaa737b",
+      "result_id": "7ea34706-3671-48df-bd6e-627354e21fc1"
+    },
+    {
+      "claim_id": "f32c240b-7616-4bbb-9d78-a543622e0f52",
+      "result_id": "7ea34706-3671-48df-bd6e-627354e21fc1"
+    },
+    {
+      "claim_id": "0393f75e-7c94-45aa-bdc4-a470fb46663c",
+      "result_id": "7ea34706-3671-48df-bd6e-627354e21fc1"
+    },
+    {
+      "claim_id": "57cccbea-295b-44cc-bc48-516fd8d2c14b",
+      "result_id": "7ea34706-3671-48df-bd6e-627354e21fc1"
+    },
+    {
+      "claim_id": "84cda499-eada-4490-996f-85453387bd23",
+      "result_id": "7ea34706-3671-48df-bd6e-627354e21fc1"
+    },
+    {
+      "claim_id": "65e79367-148e-4be0-b69c-3df78dc69ddc",
+      "result_id": "7ea34706-3671-48df-bd6e-627354e21fc1"
+    },
+    {
+      "claim_id": "a5b4f4a7-7a7f-4142-b7ce-8f29f5561a1e",
+      "result_id": "7ea34706-3671-48df-bd6e-627354e21fc1"
+    },
+    {
+      "claim_id": "ac4cc7bf-7f52-4f8a-b8b3-a12bdd59d370",
+      "result_id": "7ea34706-3671-48df-bd6e-627354e21fc1"
+    },
+    {
+      "claim_id": "dfab6ab3-148d-41ac-9024-2bd857eba11c",
+      "result_id": "7ea34706-3671-48df-bd6e-627354e21fc1"
+    },
+    {
+      "claim_id": "b01cbc6d-3419-4029-9184-78aa10dd34ab",
+      "result_id": "7ea34706-3671-48df-bd6e-627354e21fc1"
+    },
+    {
+      "claim_id": "b8e5805e-5e95-4520-bcbb-b571edeb687a",
+      "result_id": "7ea34706-3671-48df-bd6e-627354e21fc1"
+    },
+    {
+      "claim_id": "8bdcb30f-4bf5-4650-9497-6668c09b8cf1",
+      "result_id": "7ea34706-3671-48df-bd6e-627354e21fc1"
+    },
+    {
+      "claim_id": "4d746799-de2e-485b-ad11-9fa6e812fb37",
+      "result_id": "7ea34706-3671-48df-bd6e-627354e21fc1"
+    },
+    {
+      "claim_id": "70b00b18-6370-4db5-bd10-0b583e2fd115",
+      "result_id": "7ea34706-3671-48df-bd6e-627354e21fc1"
+    },
+    {
+      "claim_id": "0a4985ce-83ab-4ade-bfaa-6e34debbdac0",
+      "result_id": "7ea34706-3671-48df-bd6e-627354e21fc1"
+    },
+    {
+      "claim_id": "dbcce089-b215-4f50-b3ad-67f435e102a3",
+      "result_id": "7ea34706-3671-48df-bd6e-627354e21fc1"
+    },
+    {
+      "claim_id": "e1e6e4ea-9864-40fd-8c08-abfacadaf343",
+      "result_id": "7ea34706-3671-48df-bd6e-627354e21fc1"
+    },
+    {
+      "claim_id": "e13376ad-24b0-428d-8f78-cdeb5fbd5da9",
+      "result_id": "7ea34706-3671-48df-bd6e-627354e21fc1"
+    },
+    {
+      "claim_id": "ae49d081-113c-4a08-aaf9-60e1521bf152",
+      "result_id": "7ea34706-3671-48df-bd6e-627354e21fc1"
+    },
+    {
+      "claim_id": "070af7c6-98a1-4f47-bc20-14f0a78cad53",
+      "result_id": "7ea34706-3671-48df-bd6e-627354e21fc1"
+    },
+    {
+      "claim_id": "c39a0eca-31e3-4d3e-b604-e4d6bf189d95",
+      "result_id": "7ea34706-3671-48df-bd6e-627354e21fc1"
+    },
+    {
+      "claim_id": "0e53beab-990a-4e06-b57d-25822e92e03e",
+      "result_id": "7ea34706-3671-48df-bd6e-627354e21fc1"
+    },
+    {
+      "claim_id": "c436ea47-70fe-452a-933f-8cf450f94f81",
+      "result_id": "7ea34706-3671-48df-bd6e-627354e21fc1"
+    },
+    {
+      "claim_id": "884a0844-1481-4f01-9231-b0e251f8ed0a",
+      "result_id": "7ea34706-3671-48df-bd6e-627354e21fc1"
+    },
+    {
+      "claim_id": "5e330919-f771-4a6f-a88d-35ae643980fa",
+      "result_id": "7ea34706-3671-48df-bd6e-627354e21fc1"
+    },
+    {
+      "claim_id": "e3d66b64-70a7-46d1-b5b3-0007f7105e85",
+      "result_id": "7ea34706-3671-48df-bd6e-627354e21fc1"
+    },
+    {
+      "claim_id": "f43d7c47-2563-438b-9dbf-e81cd036765f",
+      "result_id": "7ea34706-3671-48df-bd6e-627354e21fc1"
+    },
+    {
+      "claim_id": "05d34317-c69b-42ca-8667-fc6a0e79efbd",
+      "result_id": "7ea34706-3671-48df-bd6e-627354e21fc1"
+    },
+    {
+      "claim_id": "092653d8-25bf-4121-8216-8e3e31a4234b",
+      "result_id": "7ea34706-3671-48df-bd6e-627354e21fc1"
+    },
+    {
+      "claim_id": "bda22011-c571-456c-8198-671c7a188540",
+      "result_id": "7ea34706-3671-48df-bd6e-627354e21fc1"
+    },
+    {
+      "claim_id": "c995a84b-ff81-420c-94d2-1c9fac6ef558",
+      "result_id": "7ea34706-3671-48df-bd6e-627354e21fc1"
+    },
+    {
+      "claim_id": "19e677bc-ac47-4488-9a84-18a585ab00d7",
+      "result_id": "7ea34706-3671-48df-bd6e-627354e21fc1"
+    },
+    {
+      "claim_id": "c18927d0-96b9-4ef0-a5c3-006c97b5e218",
+      "result_id": "7ea34706-3671-48df-bd6e-627354e21fc1"
+    },
+    {
+      "claim_id": "2bb5917d-6c85-41be-bc46-89dc2876d971",
+      "result_id": "7ea34706-3671-48df-bd6e-627354e21fc1"
+    }
+  ],
+  "comparisons": []
+}

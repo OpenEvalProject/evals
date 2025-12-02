@@ -1,0 +1,307 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "Neurofeedback training enabled Parkinsonian patients to suppress STN beta bursts within a single session. Patients achieved higher basketball positions in the Training condition (C11), reduced accumulated beta burst duration (C13), reduced average burst duration (C14), and reduced burst frequency (C15), with longer bursts (>400ms) being more consistently reduced (C16). This control was achieved without physical movement as confirmed by EMG monitoring (C12).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C16 provide converging statistical evidence (all p<0.001) that patients successfully learned to suppress beta bursts during neurofeedback training. The control for movement artifacts (C12) strengthens the conclusion that this was volitional neural modulation rather than motor activity. The preferential reduction of longer bursts (C16) is particularly relevant given prior work linking long beta bursts to motor impairment.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C61",
+      "C67"
+    ],
+    "result": "Neurofeedback training increased broad gamma band activity (55-95 Hz) in STN LFPs (C17) but not in motor cortex EEG (C18). This demonstrates that Parkinsonian patients can purposely increase subcortical gamma activity (C67), which accompanied beta suppression (C61).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The significant increase in STN gamma (C17, p=0.0023) with no change in cortical gamma (C18) indicates a subcortical-specific effect. However, the mechanism remains unclear\u2014the authors acknowledge this could be mediated by mental strategy or arousal rather than direct volitional control. The lack of a sham control condition limits causal interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C86",
+      "C102"
+    ],
+    "result": "Neurofeedback training reduced beta band coupling between STN and ipsilateral motor cortex, as measured by both phase synchrony index (C19, p=0.0192) and spectral coherence (C20, p=0.0015). This reduction was specific to the beta band.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Both connectivity measures show consistent beta-band specific reductions between STN and motor cortex. However, the phase synchrony result (C19) has a p-value that barely survives correction (p=0.0192), raising concerns about robustness. The spectral coherence measure (C20) is more convincing. The specificity to beta band strengthens the claim that this reflects targeted modulation rather than general arousal effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Neurofeedback training effects persisted during a ~2s carry-over period after feedback ended. Beta power (C23) and burst duration (C24) remained reduced while gamma power (C25) remained elevated in the Training condition, and these measures correlated with their values during the feedback phase (C22).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The GLME modeling provides strong evidence for sustained effects (all p<0.01). The correlations between feedback and post-feedback periods (C22) suggest genuine learning rather than transient responses to visual feedback. This carry-over effect is critical for the subsequent behavioral results, as the motor task occurred during this post-feedback period.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C33",
+      "C62",
+      "C69",
+      "C89"
+    ],
+    "result": "Neurofeedback training reduced reaction times to cued movements by ~23ms (C26, p=0.0123). GLME modeling showed that both reduced beta power (C27) and increased gamma power independently predicted faster reaction times (C62, C69, C89), together explaining ~20% of RT variance (C33).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The behavioral improvement is statistically significant and the GLME modeling (Model 6, Table 2) demonstrates independent contributions of beta and gamma. However, the modest effect size (~23ms, ~4.6% improvement) and R\u00b2=0.2072 indicate substantial unexplained variance. The authors acknowledge that cognitive factors beyond neural modulation may contribute to RT differences between conditions. The matched beta power analysis (C36-C38) partially addresses this but doesn't fully resolve the confound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "When trials with matched beta power were selected from Training and No Training conditions, there was no significant difference in reaction time (C36) or gamma power (C37), suggesting beta modulation contributes to RT changes (C38) but other factors also play a role.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This control analysis strengthens the causal link between beta suppression and improved RT by showing that when beta is matched, the RT difference disappears. However, this is a post-hoc analysis on a subset of trials (75%), which may introduce selection bias. The lack of a proper sham control condition remains a limitation for definitively attributing effects to neurofeedback versus mental strategy.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C72",
+      "C104"
+    ],
+    "result": "In tremulous patients (5/12 participants, 9 hemispheres), neurofeedback training targeting beta suppression paradoxically increased tremor severity in 7/9 hemispheres (C40, p=0.0115). This demonstrates that beta-targeted neurofeedback may worsen tremor in Parkinsonian patients (C72, C104).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The tremor increase is statistically significant and consistent across most tremulous hemispheres. This is an important negative finding that highlights symptom-specific pathophysiology. However, the small sample size (9 hemispheres) and lack of tremor-specific outcome measures beyond accelerometry limit generalizability. The finding is consistent with prior literature showing dissociation between beta activity and tremor.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C45",
+      "C105",
+      "C106"
+    ],
+    "result": "Tremor amplification correlated with increased theta band (3-7 Hz) activity in STN LFPs (C45, R=0.5003, p=0.034), suggesting cross-frequency interaction between STN beta and theta activities (C106).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The correlation between tremor and theta power is statistically significant and mechanistically plausible given prior literature on tremor-frequency oscillations. However, correlation does not establish causation, and the modest correlation coefficient (R=0.5003) indicates substantial unexplained variance. The cross-frequency interaction claim (C106) is inferential and would benefit from direct phase-amplitude coupling analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C46",
+      "C47"
+    ],
+    "result": "When trials with matched beta power were analyzed, there was no significant tremor difference between Training and No Training conditions (C46, p=0.2971), suggesting that beta power level, not the experimental condition per se, determines tremor severity (C47).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This control analysis parallels the RT analysis and strengthens the mechanistic link between beta suppression and tremor increase. The loss of significance when beta is matched supports a causal relationship. However, the same limitations apply: post-hoc selection of 75% of trials and potential confounding by other factors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C77",
+      "C91"
+    ],
+    "result": "In four patients who repeated the task over two consecutive days, neurofeedback control improved on Day 2 in 6/8 hemispheres (C49). GLME modeling confirmed significant day effects on basketball position (C50), beta power (C51), and burst duration (C52), indicating learning across sessions (C77, C91).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The multi-day data provide evidence for learning, with significant improvements in neurofeedback control metrics (all p<0.01). However, the small sample (4 patients, 8 hemispheres) limits generalizability. The two hemispheres that didn't improve had already achieved good control on Day 1, suggesting a ceiling effect. This supports the potential for longer-term training but doesn't demonstrate sustained clinical benefit.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Baseline beta power during rest showed a small reduction over two consecutive training days (C54, C55, k=-0.1949, p=0.0108) that was independent of experimental condition, while baseline burst duration did not change (C56). Resting beta power was similar between days when measured at session start (C53).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The claims appear contradictory: C53 states no change in baseline beta between days (supported by Figure 7D), while C54-C55 report a significant baseline reduction. The GLME analysis (C54) may be detecting within-session changes across all rest periods, while C53 refers to the 30s rest at session start. This inconsistency needs clarification. The effect size is small (k=-0.1949) and may not be clinically meaningful.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C57",
+      "C59"
+    ],
+    "result": "In two tremulous patients who repeated the task over two days (4 hemispheres), tremor during Training increased more on Day 2 than Day 1 in all hemispheres (C57). GLME modeling suggested this was associated with reduced beta and increased theta power on Day 2 (C59).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The consistent worsening of tremor on Day 2 across all 4 hemispheres is notable, but the very small sample size (2 patients) severely limits interpretation. The GLME modeling provides mechanistic insight linking beta/theta changes to tremor, but this is essentially a case series. This finding reinforces the concern about beta-targeted neurofeedback in tremulous patients but requires replication.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9"
+    ],
+    "result": "The introduction establishes prior knowledge about beta oscillations in Parkinson's disease: enhanced STN beta synchrony (C1), burst-like temporal dynamics (C2), correlation with motor impairment (C3), and efficacy of closed-loop DBS targeting beta bursts (C4). Prior work showed patients can voluntarily regulate STN beta (C5), but effects on motor performance were unclear (C6). Tremor is associated with different oscillatory patterns (C7, C8).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims accurately summarize the prior literature with appropriate citations. The authors correctly identify the gap in knowledge (C6) that motivates their study. The discussion of tremor pathophysiology (C7, C8) appropriately sets up their finding that beta-targeted neurofeedback may worsen tremor. These are well-established background claims.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C68"
+    ],
+    "result": "The discussion contextualizes findings within prior literature on gamma oscillations: gamma increases during voluntary movement (C63), predicts movement parameters (C64), decreases in dopamine-depleted states (C65), potentially contributing to bradykinesia (C66), and increases during motor imagery (C68).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims appropriately cite relevant prior work to interpret the gamma findings. The inference that reduced gamma may contribute to bradykinesia (C66) is reasonable given the cited evidence but remains speculative. The citation of motor imagery effects (C68) is relevant for interpreting the mechanism of gamma increases during neurofeedback.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C73",
+      "C74"
+    ],
+    "result": "The discussion notes consistency with prior work showing that tremor is associated with increased theta oscillations (C73) and reduced beta power/coupling (C74) in the motor network.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims appropriately cite prior literature to contextualize the tremor findings. The consistency with previous work (Hirschmann 2013, Qasim 2016) strengthens the interpretation that beta suppression may worsen tremor through reciprocal beta-theta dynamics.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C75",
+      "C76",
+      "C79",
+      "C80",
+      "C90",
+      "C92",
+      "C93"
+    ],
+    "result": "The authors propose several speculative implications: gamma as a treatment target (C70, C90), levodopa may help via gamma modulation (C71), beta-targeted neurofeedback may not help tremulous patients (C75) who might benefit from tremor-specific training (C76), spaced training may facilitate learning (C79) potentially through Hebbian plasticity (C80), and future work should test long-term effects (C92) using symptom-specific biomarkers (C93).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These are reasonable speculations based on the findings, but they are explicitly future-looking and not directly tested in this study. The gamma treatment target proposal (C70, C90) is supported by the independent predictive value of gamma for RT, but clinical efficacy is unproven. The recommendation for symptom-specific biomarkers (C93) is well-justified by the tremor findings. These represent appropriate scientific speculation but should not be considered established results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "The authors acknowledge a key limitation: without sham control, they cannot determine if effects are due to neurofeedback or mental strategy (C82), though prior work showed veritable feedback outperforms sham (C81). They maintain that the core findings remain valid: patients can modulate STN activity (C83) and this improves movement initiation (C84).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This is an honest acknowledgment of a significant limitation. The citation of prior work with sham control (C81, He et al. 2020) provides some support but was in healthy participants with EEG, not patients with STN recordings. The claim that core findings remain valid (C83-C84) is reasonable\u2014patients clearly modulated STN activity and RT improved\u2014but the mechanism (neurofeedback vs. mental strategy) remains ambiguous. This limitation affects interpretation but doesn't invalidate the main findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "Methods describe patient characteristics: 12 patients, off medication overnight (C94), mean age 62\u00b18.8 years (C95), disease duration 11\u00b15.1 years (C96), good medication response (UPDRS 45 OFF, 22.9 ON) (C97). Patient-specific beta bands ranged from 17.4-21.4 Hz (C98) and coincided with resting PSD peaks (C99).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These are straightforward methodological details that are well-documented. The patient selection and characterization are appropriate. The individualized frequency band selection (C98-C99) is a strength of the study design, ensuring the neurofeedback targeted each patient's specific pathological oscillations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C60",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "The authors summarize their main findings: this is the first study showing volitional STN beta burst suppression speeds movement initiation in Parkinson's disease (C60). The paradigm enabled rapid learning (C85), reduced STN-cortex coupling (C86, C102), increased STN gamma (C101), and improved RT (C87, C103). This strengthens the link between beta bursts and motor impairment (C88).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These summary claims accurately reflect the study's findings. The novelty claim (C60) appears justified\u2014this is the first study to show behavioral improvement from volitional STN beta suppression in PD patients. The claim that results 'strengthen the link' between beta and motor impairment (C88) is reasonable given the correlational and experimental evidence, though causality remains somewhat ambiguous due to lack of sham control.",
+    "result_type": "MAJOR"
+  }
+]

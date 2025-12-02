@@ -1,0 +1,362 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "P2X3 receptors are important therapeutic targets due to their roles in nociception, sensory hypersensitization, and various pain conditions, with clinical evidence supporting antagonist development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3 and C8-C13 establish the therapeutic relevance of P2X3 receptors through citations to prior work. These are well-established background claims supported by multiple independent studies including rodent models (C10), pharmacological studies (C11), and clinical trials (C12). The evidence is appropriately attributed to prior literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "P2X3 receptors exhibit rapid activation/desensitization (milliseconds) but slow ATP unbinding and recovery from desensitization (minutes), which may limit channel activation frequency and prevent sensory hypersensitivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C15 are supported by citations to prior work establishing the kinetic properties. Claim C16 is speculative about the functional significance but is appropriately qualified with 'may be'. This represents established background knowledge with a reasonable interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "Previous structural and biochemical studies established that P2X3 receptors bind free-ATP in a specific configuration, but under physiological conditions are primarily activated by Ca2+-ATP and Mg2+-ATP complexes. A Mg2+ binding site was previously identified in apo structures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C24 appropriately cite prior structural work and establish the physiological context. The reasoning about physiological ATP-divalent complexes (C21-C22) is sound given the millimolar concentrations of divalent cations versus micromolar ATP. This provides essential background for the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Crystal structures of hP2X3 MFCslow bound to Mg2+-ATP (3.8 \u00c5) and Ca2+-ATP (3.3 \u00c5) reveal divalent ions at the edge of the ATP binding pocket, simultaneously interacting with D158 and the \u03b3-phosphate of ATP, with E156 also involved in coordination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C34 describe the primary structural findings. The resolutions (3.8 \u00c5 and 3.3 \u00c5) are adequate for identifying ion positions, especially given the strong electron density (C31). The interpretation of densities as Mg2+/Ca2+ (C32) is reasonable given crystallization conditions (50 mM divalent acetate) and coordination by acidic residues. The structural observations are directly supported by the crystallographic data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "The Mg2+-ATP complex in P2X3 structures adopts a rare configuration where Mg2+ coordinates only the \u03b3-phosphate, unlike the prevalent \u03b2,\u03b3 or \u03b1,\u03b2,\u03b3 coordination modes seen in most PDB structures and in solution, suggesting receptor-ion interactions dominate complex geometry.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C39 are supported by a systematic PDB survey showing only 4% of Mg2+-ATP structures have \u03b3-only coordination. The comparison with solution preferences (C38, cited) strengthens the conclusion that the receptor imposes unusual geometry (C39). The analysis methodology is described and the inference is logical.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "The divalent ion binding mode with ATP bound ('lower mode') is distinct from the previously observed 'upper mode' in apo structures, with D158 being the key residue that reorients between the two modes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C44 compare the new structures with prior work (C41, cited). The structural measurements (C43: ~9 \u00c5 distance) support the distinction between modes. The identification of D158 as the key residue (C44) is supported by structural analysis showing its reorientation. This is a clear structural observation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Molecular dynamics simulations show that upon ATP dissociation, Mg2+ spontaneously shifts upward from the lower to upper mode, driven by re-optimization of ion-protein interactions involving reorientation of D158, E109, and E111.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C47 are supported by MD simulation data showing reproducible upward shift across all three subunits (C45, Figure 2C-D). The mechanistic interpretation (C46-C47) is supported by analysis of residue reorientations. The simulations provide a plausible dynamic pathway connecting the two observed structural states.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Solute-tempering simulations demonstrate that Mg2+ strengthens the ATP-receptor interaction, producing a left-shift in ATP dissociation probability and steeper sigmoidal slope, indicating cooperative action. Mg2+ holds partially unbound ATP, fostering rebinding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C51 are supported by systematic solute-tempering simulations with varying scaling factors (Figure 2G). The left-shift (C48) and steeper slope (C50, ~2-fold) are quantified. The observation of partial unbinding and rebinding (C51) is documented in supplementary figures. The computational approach is appropriate for assessing binding energetics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Electrophysiological measurements using hP2X3 slow show that Mg2+ (1 mM) slows deactivation ~8-fold and Ca2+ (1 mM) ~4-fold compared to divalent-free conditions, at both pH 7.3 and pH 5.0, consistent with divalent ions slowing ATP dissociation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C58 present functional data supporting the computational predictions. The use of hP2X3 slow is justified (C52-C53, cited) as ATP unbinding is rate-limiting for deactivation. The measurements are quantitative with error estimates (C54-C57). The pH dependence (C57-C58) is consistent with prior reports (cited). The experimental design is sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "The EC50 values for divalent cation effects on deactivation are 102 \u03bcM for Mg2+ and 39 \u03bcM for Ca2+, indicating all receptors are regulated by divalent ions under physiological conditions, with Ca2+ potentially playing a more prominent role.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C60 provide quantitative EC50 measurements with appropriate dose-response experiments (Figure 3D-E). The inference that receptors are regulated under physiological conditions (C61) is valid given these EC50 values and physiological divalent concentrations (mM range). Claim C62 is appropriately qualified as speculative ('might'). The mixed Mg2+/Ca2+ experiment (C63) supports Ca2+ dominance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C64"
+    ],
+    "result": "Mg2+ (0.5 mM) increases apparent ATP affinity, shifting EC50 from 40 nM to 18 nM for hP2X3 slow activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C64 is supported by concentration-response measurements (Figure 3\u2014figure supplement 2). The ~2-fold shift in EC50 is consistent with Mg2+ stabilizing ATP on the receptor. This provides additional functional evidence beyond deactivation kinetics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "Mutagenesis of residues in the lower mode (D158A, E156A) reveals that both E156 and D158 are required for Mg2+ to stabilize ATP, while E109 (upper mode) is not involved in ATP stabilization. The triple mutant E109A/E156A/D158A abolishes Mg2+ effects on deactivation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C74 present systematic mutagenesis data. The D158A mutant shows paradoxical effects (C66-C67: slower deactivation without Mg2+, acceleration with Mg2+), which is mechanistically explained. E156A shows similar patterns (C68-C69). E109A behaves like wild-type (C71-C72), supporting its non-involvement in ATP stabilization. The triple mutant (C73-C74) provides strong evidence for the lower mode's role. The experimental logic is sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "Wild-type hP2X3 desensitizes rapidly, and the hypothesis that Mg2+ inhibition results from stabilizing a desensitized state is tested. Activation kinetics are unaffected by divalent ions, and desensitization kinetics are similar with or without Mg2+/Ca2+.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C79 establish the experimental context and test a specific hypothesis (C77, appropriately qualified as hypothesis). The rapid solution exchange experiments (C78-C79) show no effect on activation or desensitization kinetics, which is important negative data. This sets up the recovery experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Recovery from desensitization is slowed ~4-fold by Mg2+ (\u03c4 = 248 s vs 63 s) and ~2-fold by Ca2+ (\u03c4 = 115 s), with physiological divalent mixtures showing Ca2+-like kinetics (\u03c4 = 140 s), demonstrating that divalent ions stabilize the desensitized state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C84 provide key functional data linking divalent ion binding to desensitization recovery. The measurements are quantitative with error estimates. The observation that physiological mixtures (C83) behave more like Ca2+ alone is consistent with the lower EC50 for Ca2+. The conclusion (C84) is well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "The D158A mutant shows slower recovery without divalent ions but faster recovery with Mg2+, while the triple mutant shows fast recovery unaffected by Mg2+, confirming that lower mode binding stabilizes ATP and slows desensitization recovery, explaining Mg2+ inhibition during repetitive stimulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C89 extend the mutagenesis analysis to desensitization recovery. The D158A results (C85-C86) parallel the deactivation data, providing consistency. The triple mutant (C87) shows no Mg2+ effect, confirming the mechanism. The mechanistic explanation for Mg2+ inhibition (C89) is logical and supported by prior reports (cited).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "Wild-type and single mutants (D158A, E156A) are robustly activated by Mg2+-ATP, while the E156A/D158A double mutant shows considerably weakened activation and resurgent current upon Mg2+-ATP removal, indicating the lower mode is important for Mg2+-ATP activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C95 test activation by Mg2+-ATP complexes. The experimental design (low free ATP + high Mg2+-ATP) is appropriate. Single mutants retain function (C91) but the double mutant is impaired (C93), supporting the lower mode's role (C94). The resurgent current (C95) provides mechanistic insight consistent with prior P2X2 work (C96-C97, cited).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "Combining mutations in lower and upper modes greatly reduces Mg2+-ATP activation with resurgent currents. The triple mutant shows no activation by Mg2+-ATP but concentration-dependent resurgent current, demonstrating that the lower mode is essential and the upper mode plays a detectable role in activation by divalent-bound ATP.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C102 complete the mutagenesis analysis. The systematic combination of mutations (C98-C99) and the triple mutant phenotype (C99) provide strong evidence. The conclusions (C100-C102) are well-supported by the data. The comparison with P2X2 (C96-C97) provides mechanistic context for the resurgent currents.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "A mechanistic model proposes that Mg2+/Ca2+ occupies the upper mode in apo receptors, then shifts to the lower mode upon ATP binding to enable activation and cooperatively stabilize ATP, slowing dissociation. Simulations show spontaneous ion movement between modes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C109 synthesize the structural, computational, and functional data into a mechanistic model. The assumption about upper mode occupancy (C103) is reasonable given prior structures (cited). The proposed mechanism (C104) is speculative but plausible. The simulation evidence (C105-C106) supports the pathway. The conclusions (C107-C109) integrate all findings coherently.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "In divalent-free conditions, D158 is electrostatically repulsive to ATP's \u03b3-phosphate, making binding suboptimal. The D158A mutant holds ATP more strongly without divalent ions but shows accelerated dissociation with Mg2+-ATP. The triple mutant shows minimal Mg2+ effects but dramatically weakened ATP binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110-C113 provide mechanistic interpretation of the mutagenesis data. The electrostatic argument (C110) is speculative but reasonable. The D158A data (C111) supports this model. The explanation for D158A with Mg2+-ATP (C112) is speculative but consistent with the structural model. The triple mutant data (C113) provides strong supporting evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "The study reveals a previously unrecognized acidic chamber essential for physiological P2X3 activation by divalent-bound ATP. Divalent ions fundamentally tune gating by slowing ATP dissociation and desensitization recovery, with Ca2+ effects less pronounced than Mg2+, potentially explaining Ca2+ facilitation in physiological solutions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C114-C118 summarize the major conclusions. The novelty claim (C114) is supported by the unusual coordination geometry and functional importance. The mechanistic summary (C115-C116) integrates all findings. The Ca2+ vs Mg2+ comparison (C117) is appropriately speculative but supported by the data. The significance statement (C118) is reasonable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "The acidic chamber near the nucleotide-binding pocket accommodates divalent ions in two distinct modes, enabling channel activation by ATP-divalent complexes and cooperatively stabilizing ATP to slow unbinding and recovery from desensitization, a key mechanism for limiting channel activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C7 represent the core findings of the manuscript, integrating structural (two binding modes), computational (cooperative stabilization), and functional (slowed recovery) evidence. All supporting data from the grouped results above converge on these conclusions. The mechanism is well-established through multiple independent lines of evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C25",
+      "C26"
+    ],
+    "result": "Prior reports indicate Mg2+ inhibits and Ca2+ stimulates P2X3 receptor activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C26 cite prior literature establishing apparently contradictory effects of divalent cations. The current study resolves this by showing context-dependent effects (stabilization of desensitized state vs. activation by divalent-ATP). This is appropriate background.",
+    "result_type": "MINOR"
+  }
+]

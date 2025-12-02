@@ -1,0 +1,530 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C173"
+    ],
+    "result": "Seven of nine Toll receptors (Toll-1, -2, -3, -5, -6, -7, -8) are expressed topographically in the Drosophila brain, mapping distinct anatomical domains including photoreceptors, Kenyon cells, protocerebral bridge, antennal lobes, fan shaped body, ellipsoid body, SOG, and optic lobes. Each Toll has a specific expression profile with both complementary and overlapping patterns across brain regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C20 and C173 are well-supported by RT-PCR data (Figure 1\u2014figure supplement 1) and extensive immunohistochemistry/imaging data (Figure 1A-J) using multiple GAL4 reporter lines. The topographic mapping is documented across multiple brain regions with specific anatomical localization. The conclusion that Tolls form a map coincident with anatomical brain domains (C16-C19) follows logically from the detailed expression data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "MyD88 is expressed throughout the optic lobes, central brain, and mushroom bodies, with expression in both neurons (Elav+) and glia (Repo+). Toll-2 is expressed in all Kenyon cells but mostly in neurons (Elav+) and not in glia (Repo+), with more cells expressing Toll-2 than MyD88.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C30 are supported by imaging data (Figure 2A-E) using GAL4 reporters and co-localization with cell-type markers (Elav for neurons, Repo for glia). The nuclear reporter histone-YFP enabled quantitative comparison of cell numbers. The conclusions about cell type identity are based on standard immunohistochemical markers.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C37"
+    ],
+    "result": "Toll-2 maintains neuronal survival during brain development via the MyD88 pathway. Toll-2 RNAi knock-down in MyD88+ cells increased apoptosis (anti-Dcp1+ cells) in day one pupal central brains and decreased cell number in both pupal and adult central brains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C34 and C37 are supported by quantitative apoptosis data (Figure 2G) and cell counting data (Figure 2H) using two independent RNAi lines. The use of DeadEasy software for automatic cell counting provides objective quantification. Statistical significance is demonstrated (p=0.0295 for apoptosis, p<0.001 for cell loss).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C35",
+      "C36"
+    ],
+    "result": "Sustained over-expression of Toll-2 with MyD88GAL4 throughout development did not affect cell number in pupal or adult brains, indicating that Toll-2 does not induce apoptosis in the pupal or adult brain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C36 are supported by cell counting data (Figure 2H). The conclusion that Toll-2 is not pro-apoptotic is logically derived from the absence of cell loss upon gain of function. However, this is a negative result and the conclusion assumes sufficient statistical power to detect an effect if present.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "MyD88 knock-down resulted in cell loss in the pupal central brain, but cell number was restored by the adult stage. MyD88 is required to maintain cell survival during brain development, downstream of at least Toll-2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C40 are supported by cell counting data (Figure 2H). The transient nature of the phenotype (loss in pupa, recovery in adult) is interesting but the mechanism of recovery is not explained. The conclusion that MyD88 functions downstream of Toll-2 is supported by the similar pupal phenotypes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Kenyon cells (KCs) are resilient to alterations in Toll-2 function alone. Toll-2pTV/Toll-2\u03947-35 mutations increased KC number in pupal brains, but neither sustained gain nor loss of Toll-2 function affected KC number in adult brains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C44 are supported by cell counting data (Figure 2I and Figure 2\u2014figure supplement 1B,C) using DeadEasy Kenyon Cells software. The resilience of KCs to Toll-2 manipulation alone is an important negative result that contrasts with effects in other brain regions, suggesting redundancy or compensatory mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C45"
+    ],
+    "result": "Toll-2pTV is a strong hypomorphic loss of function allele, as demonstrated by genetic complementation tests over the null allele Toll-2\u03947-35 and a deficiency for the locus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C45 is supported by complementation test data (Figure 3\u2014figure supplement 1A) showing semi-lethality over null allele and deficiency. The genetic characterization is appropriate and follows standard Drosophila genetics methodology.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C69",
+      "C70"
+    ],
+    "result": "Loss of Toll-2 function causes extensive neurodegeneration including neuronal loss, neuronal atrophy, loss of neurites (axons and dendrites), and axonal misrouting throughout multiple brain domains (lamina, medulla, lobula, SOG, fan shaped body). Toll-2 is required for the formation and integrity of brain neural circuits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C52, C69-C70 are supported by MARCM clone analysis (Figure 3C-H) showing dramatic neuronal deficits in Toll-2pTV mutant clones. The use of MARCM allows cell-autonomous analysis. The phenotypes are severe and consistent across multiple brain regions, strongly supporting the neuroprotective role of Toll-2.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Toll-2 mutants are semi-lethal, have reduced lifespan, and impaired climbing ability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C55 are supported by survival and behavioral data (Figure 3\u2014figure supplement 1B,C). These organismal phenotypes are consistent with neurodegeneration and provide functional validation of the cellular defects. Statistical significance is demonstrated (Chi Square p<0.0001).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Toll-2 is required in adult neurons for locomotion. Toll-2 mutants and adult-specific neuronal knock-down showed impaired locomotion in the Buridan arena: they walked at the same speed as controls but spent less time walking, traveled shorter distances, and had brief walking bouts. Vision was not impaired.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C68 are supported by quantitative behavioral data (Figure 3I-M) using the Buridan arena and automated tracking. The use of adult-specific conditional knock-down (C61-C62) with tubulinGAL80ts demonstrates that Toll-2 is required in adult neurons, not just during development. Statistical significance is shown for multiple locomotion parameters. The conclusion that vision is not impaired (C63) is based on the ability to walk between stripes, though more rigorous vision tests could strengthen this claim.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "Toll-2 can positively regulate cell number at the adult critical period. Conditional over-expression of Toll-2 increased cell number in the central brain and optic lobes, but not in Kenyon cells. Toll-2 is not pro-apoptotic in the adult brain. Cell number in the central brain and optic lobes is plastic and depends on Toll-2, while KC number is robustly unaltered.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C79, C83-C85 are supported by cell counting data (Figure 4A-C) using conditional manipulation with tubulinGAL80ts restricted to the adult critical period (day 0-2). The use of DeadEasy software for automatic counting provides objective quantification. The differential effects in different brain regions (plastic in CB and OL, stable in KCs) is an important finding. Statistical significance is demonstrated (p<0.0001 for CB and OL).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C75"
+    ],
+    "result": "The optic lobes are particularly susceptible to structural plasticity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C75 is supported by citations to prior work (Heisenberg et al., 1995; Barth et al., 1997). This is established knowledge in the field and provides context for focusing on optic lobes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Neuronal activity alters cell number in the optic lobes via a Toll-2 dependent mechanism. Neuronal activation with TrpA1 increased Toll-2>hisYFP medulla neuron number, and this increase could be rescued with Toll-2-RNAi knock-down.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C82 are supported by cell counting data (Figure 4D) using TrpA1 for neuronal activation and genetic rescue with Toll-2 RNAi. The rescue experiment (C81) is critical for demonstrating specificity. Statistical significance is shown (p=0.0058 for TrpA1 effect, p=0.0225 for rescue). This links neuronal activity to Toll-2-dependent cell number regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "Toll signaling adaptors MyD88 and Sarm, and their downstream targets (JNK, FoxO, Dif, Dorsal) that normally regulate gene expression, cell survival and cell death, are expressed in pupal and adult brains and could function there.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C92 are supported by imaging data (Figure 4\u2014figure supplement 1A-J) using GAL4 reporters and antibodies. The expression of these signaling components in the brain is well-documented. However, the conclusion that they \"could function\" (C92) is speculative - expression does not prove function. Functional validation would require manipulation experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "Pro-survival signaling at the adult critical period increased cell number in the central brain. Unexpectedly, over-expression of wek or MyD88 RNAi knock-down increased cell number, with the combination having the greatest effect. This indicates that MyD88 loss of function enabled an alternative pathway to increase cell number, Wek did not simply induce apoptosis in the adult brain, and removal of MyD88 facilitated a hitherto unknown Wek function. In KCs, these manipulations had minimal effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C99 are supported by cell counting data (Figure 4E-F) using conditional manipulation at the adult critical period. The unexpected finding that pro-apoptotic signaling (wek over-expression, MyD88 knock-down) increases rather than decreases cell number is surprising and well-documented. Statistical significance is shown (p<0.0001). However, the mechanistic interpretation (C95-C97) is speculative and requires further investigation. The differential effects in CB vs KCs (C98-C99) are consistent with prior results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "Toll-2 can induce cell proliferation in pupal and adult brains. Over-expression of the cell cycle inhibitor Rbf280 decreased Toll-2+ KC number in pupae and rescued the excess cell number caused by Toll-2 over-expression in central brain and optic lobes, demonstrating that Toll-2 functions in mushroom body neuroblasts and can induce cell proliferation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C104 are supported by cell counting data (Figure 5A) using Rbf280 over-expression to block cell cycle progression. The rescue of Toll-2 gain-of-function phenotype by Rbf280 (C103) is strong evidence that Toll-2 acts through cell proliferation. Statistical significance is shown (p=0.0004 for KC reduction, p<0.0001 for rescue). This is a key mechanistic finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C105",
+      "C106"
+    ],
+    "result": "Gain of Toll-2 function induced cell proliferation in adult brains. Over-expressing Toll-2 only at the adult critical period resulted in ectopic neurons with differentiated neurites projecting in multiple brain domains, as shown by MARCM clone analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C106 are supported by MARCM clone data (Figure 5B,C) showing GFP+ clones in 4/17 Toll-2 over-expressing brains but 0/17 control brains. The clones contained differentiated neurons with projections to multiple brain regions. This is direct evidence for adult neurogenesis induced by Toll-2. However, the penetrance is low (4/17 = 23.5%), which could indicate stochastic effects or technical limitations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "Toll-2 signaling can promote G1 to S transition in the pupal and adult brain. Heat-shock induced conditional over-expression of Toll-2 increased the number of PCNA-GFP+ cells (S-phase marker) in the central brain and mushroom bodies of pupae and adults.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C107-C111 are supported by imaging data (Figure 5D-H) showing PCNA-GFP+ cells. However, the increases in adult brains were not statistically significant (C111, Figure 5H), which weakens the conclusion. The pupal data are more convincing. The use of PCNA-GFP as an S-phase marker is appropriate, but quantification appears to be based on visual assessment rather than automated counting, which could introduce bias.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C112",
+      "C113"
+    ],
+    "result": "There are cycling cells in G2 or G2/M in the adult brain, as shown by Stg-GFP+ cells found throughout the adult brain in both controls and brains over-expressing Toll-2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C113 are supported by imaging data (Figure 5I) using Stg-GFP fusion protein. Stg (String/Cdc25) is a well-established G2/M marker. The presence of Stg-GFP+ cells in control adult brains is an important finding suggesting baseline cycling activity. However, no quantification is provided to assess whether Toll-2 over-expression increases Stg-GFP+ cell number.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "There are progenitor cells in the adult brain, and Toll-2 can induce their cycling. Over-expressing FUCCI at the adult critical period revealed cells in G1 (E2F-GFP+), S-phase (CycB-RFP+), and G2/M (E2F-GFP+ CycB-RFP+). Over-expression of Toll-2 increased the number of cells in all phases of the cell cycle.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C114-C117 are supported by FUCCI data (Figure 6A-D) showing cells in different cell cycle phases. FUCCI is a well-validated cell cycle reporter. Quantification shows statistically significant increases in G1, S, and G2/M phases with Toll-2 over-expression (p<0.0001, Figure 6D). This is strong evidence for Toll-2-induced cell cycling in the adult brain.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126"
+    ],
+    "result": "Toll-2 and MyD88 are expressed in progenitor cells in the adult brain at the critical period. Most Toll-2>hisYFP+ cells were Elav+ neurons, none were Repo+ glia, but some were Elav-negative and Repo-negative. Large MyD88>HisYFP+ cells were never Elav+ and some were Repo+. Many MyD88>hisYFP+ cells were also Dpn+ (neuroblast marker) and some had Mira (neuroblast marker).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C118-C126 are supported by co-localization data (Figure 6E-J) using cell-type markers (Elav, Repo) and progenitor markers (Dpn, Mira). The identification of Toll-2+ and MyD88+ cells that are Dpn+ and/or Mira+ is strong evidence for expression in progenitor cells. The use of standard markers is appropriate. However, Dpn and Mira expression in adult brains is less well-characterized than in larval neuroblasts, so interpretation requires caution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C127",
+      "C128",
+      "C129"
+    ],
+    "result": "MyD88 is expressed in adult progenitor cells where it normally prevents cell cycling, and Toll-2 can overcome this repression. Upon Toll-2 over-expression, Dpn+ cells were found in S-phase, G2/M, and G1 as shown by FUCCI.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C127-C129 are supported by FUCCI and Dpn co-localization data (Figure 6K) and the earlier finding that MyD88 knock-down increased cell number. The logic is sound: if MyD88 knock-down increases cell number and MyD88 is in progenitors, then MyD88 normally represses proliferation. The FUCCI data showing Dpn+ cells in different cell cycle phases upon Toll-2 over-expression supports the conclusion that Toll-2 overcomes MyD88 repression.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134"
+    ],
+    "result": "Yorkie (Yki) is a positive regulator of cell proliferation that functions downstream of Toll-1 in immunity and cell competition. Yki can regulate the G1-S cyclin cycE and is best known for regulating G2-M stg and entry into mitosis, for which Yki shuttles dynamically in and out of the nucleus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C130-C134 are supported by citations to prior work (Koontz et al., 2013; Liu et al., 2016a; Katsukawa et al., 2018; Huang et al., 2005; Manning et al., 2018). This is established knowledge about Yki function and provides context for investigating Yki in the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139"
+    ],
+    "result": "Nuclear Yki is present in the adult brain at the critical period, and its shuttling is regulated by Toll-2. Conditional over-expression of Toll-2 increased and altered the distribution of Yki-GFP+ nuclei throughout the brain, indicating that Toll-2 induced cell cycling which provoked shuttling of Yki.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C135-C139 are supported by imaging data (Figure 7A-D) using Yki-GFP fusion protein. The presence of nuclear Yki in control brains and the increase/redistribution upon Toll-2 over-expression are well-documented. The bimodal distribution in medulla (some brains with fewer, some with more Yki-GFP+ nuclei) is interpreted as reflecting dynamic shuttling during cell cycling, which is a reasonable interpretation given Yki's known behavior. However, manual counting was used due to cytoplasmic signal, which could introduce bias.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C140",
+      "C141"
+    ],
+    "result": "Yki functions downstream of Toll-2 to increase cell number in the adult brain. Conditional yki-RNAi knock-down rescued the excess cell number caused by Toll-2 gain of function, restoring cell number to control levels in the central brain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C140-C141 are supported by genetic epistasis data (Figure 7E,E') showing that yki RNAi rescues the Toll-2 over-expression phenotype. This is strong evidence for Yki functioning downstream of Toll-2. Statistical significance is shown (One Way ANOVA p<0.0001). The epistasis experiment is well-designed and provides clear mechanistic insight.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C142",
+      "C143"
+    ],
+    "result": "Toll-2 increases cell number via Wek. wek RNAi knock-down in MyD88+ cells rescued the increase in cell number caused by Toll-2 over-expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C142-C143 are supported by genetic epistasis data (Figure 7F) showing that wek RNAi rescues the Toll-2 over-expression phenotype. Statistical significance is shown (One Way ANOVA p<0.0001). This demonstrates that Wek functions downstream of Toll-2 to increase cell number, complementing the Yki epistasis result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C144",
+      "C145",
+      "C146"
+    ],
+    "result": "There are quiescent MyD88+ progenitors in the adult brain. MyD88 prevents their proliferation and promotes quiescence, whereas Toll-2 signaling via Wek overcomes their repression to induce proliferation, which requires Yki.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C144-C146 synthesize multiple lines of evidence: MyD88 expression in Dpn+ progenitors (C123-C126), MyD88 knock-down increasing cell number (C94), Toll-2 inducing cell cycling (C116-C117), and epistasis showing Toll-2 acts via Wek (C142-C143) and Yki (C140-C141). The model is well-supported by the data, though the exact molecular mechanism linking Wek to Yki remains unclear.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C155"
+    ],
+    "result": "During development, down-regulation of multiple Tolls (Toll-2, -7, -1 or Toll-2, -7, -8, or Toll-2, -7, -6) disrupts brain structure and reduces brain size. Simultaneous knock-down resulted in smaller brains with reduced optic lobe, central brain, and KC cluster area, disorganized KC clusters, and decreased KC number.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C147-C155 are supported by brain size and area measurements (Figure 8A,B and Figure 8\u2014figure supplement 1A,B) and KC analysis (Figure 8C-E). Statistical significance is shown for multiple parameters. The synergistic effects of knocking down multiple Tolls demonstrate redundancy and/or compensatory mechanisms. The use of two independent RNAi lines for each Toll strengthens the conclusions. This shows that Tolls function in concert during development.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C156",
+      "C157",
+      "C158",
+      "C159",
+      "C160",
+      "C161",
+      "C162"
+    ],
+    "result": "Different Tolls have distinct functions at the adult critical period, with distinct as well as redundant or overlapping functions in KCs. Conditional knock-down of Toll-2 and Toll-6 or Toll-6 and Toll-7 in the adult altered KC organization and number, with Toll-6, Toll-7-RNAi increasing KC number and cluster depth.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C156-C162 are supported by cell counting and KC analysis data (Figure 8\u2014figure supplement 1C-H and Figure 8F-H) using conditional manipulation at the adult critical period. The differential effects of different Toll combinations demonstrate functional specificity. Statistical significance is shown for some but not all comparisons. The finding that KCs can be altered in the adult by manipulating multiple Tolls (C162) contrasts with the resilience to single Toll manipulation (C44), supporting the redundancy model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R30",
+    "claim_ids": [
+      "C163"
+    ],
+    "result": "Experience increases brain size by around 5% compared to un-stimulated controls.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C163 is supported by citations to prior work (Heisenberg et al., 1995; Barth and Heisenberg, 1997; Barth et al., 1997). This is established knowledge in the field and provides context for comparing Toll-2 effects to experience-dependent plasticity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R31",
+    "claim_ids": [
+      "C164",
+      "C165",
+      "C166",
+      "C167",
+      "C168",
+      "C169",
+      "C170",
+      "C171",
+      "C172"
+    ],
+    "result": "Like experience, Toll-2 can positively regulate brain size at the adult critical period. Conditional over-expression of Toll-2 in MyD88+ cells increased brain size by 5.4-7.4%, with ~80% of brains larger than control mean. MyD88-RNAi or wek over-expression resulted in even larger brains (14.7-20% increase). yki-RNAi rescued the Toll-2 gain-of-function increase in brain size. This involved counteracting MyD88 and activating Wek and Yki signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C164-C172 are supported by brain size measurements (Figure 8I-K) using conditional manipulation at the adult critical period. The increases are comparable to experience-dependent effects (C163), which is significant. Statistical analysis shows variability precluded significance for some comparisons (Figure 8J), but the distribution analysis (Figure 8K) showing increased percentage of large brains is compelling. The epistasis with yki-RNAi (C170) demonstrates Yki is required. The unexpected finding that wek+MyD88-RNAi increased cell number but not brain size (C168) suggests complex regulation, possibly involving apoptosis as speculated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R32",
+    "claim_ids": [
+      "C174",
+      "C175",
+      "C176"
+    ],
+    "result": "Toll receptors regulate cell number and brain size in development and structural brain plasticity in the adult, through their ability to promote either cell survival or death, progenitor cell quiescence or proliferation. Evidence indicates that Tolls can underlie the changes that experience brings about in the adult brain, and that structural plasticity and neurodegeneration are two faces of Toll-driven cellular responses in the brain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C174-C176 are high-level conclusions synthesizing all the experimental data. The evidence for Toll regulation of cell number and brain size in development (C147-C155) and adult (C164-C172) is strong. The evidence for dual functions (survival vs death, quiescence vs proliferation) is supported by multiple experiments (C31-C37 for survival, C94-C99 for proliferation, C144-C146 for quiescence vs proliferation). The link to experience (C175) is supported by the neuronal activity experiment (C80-C82) and the comparable magnitude of brain size changes (C163-C165). The connection to neurodegeneration (C176) is supported by the MARCM clone data (C46-C52) and behavioral deficits (C53-C68). These are major conclusions of the paper.",
+    "result_type": "MAJOR"
+  }
+]

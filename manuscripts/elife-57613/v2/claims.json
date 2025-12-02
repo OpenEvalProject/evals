@@ -1,0 +1,1622 @@
+[
+  {
+    "claim_id": "C1",
+    "claim": "PlantSeg is a pipeline for volumetric segmentation of plant tissues into cells.",
+    "claim_type": "EXPLICIT",
+    "source": "Here, we present PlantSeg, a pipeline for volumetric segmentation of plant tissues into cells.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Directly stated in the abstract as the main contribution of the work.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C2",
+    "claim": "PlantSeg employs a convolutional neural network to predict cell boundaries.",
+    "claim_type": "EXPLICIT",
+    "source": "PlantSeg employs a convolutional neural network to predict cell boundaries and graph partitioning to segment cells based on the neural network predictions.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Described as a core component of the PlantSeg methodology.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C3",
+    "claim": "PlantSeg uses graph partitioning to segment cells based on neural network predictions.",
+    "claim_type": "EXPLICIT",
+    "source": "PlantSeg employs a convolutional neural network to predict cell boundaries and graph partitioning to segment cells based on the neural network predictions.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Described as the second step of the PlantSeg methodology.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C4",
+    "claim": "PlantSeg was trained on fixed and live plant organs imaged with confocal and light sheet microscopes.",
+    "claim_type": "EXPLICIT",
+    "source": "PlantSeg was trained on fixed and live plant organs imaged with confocal and light sheet microscopes.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Explicitly stated in the abstract describing the training data.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C5",
+    "claim": "PlantSeg delivers accurate results and generalizes well across different tissues, scales, and acquisition settings.",
+    "claim_type": "EXPLICIT",
+    "source": "PlantSeg delivers accurate results and generalizes well across different tissues, scales, acquisition settings even on non plant samples.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Stated as a key finding in the abstract, supported by experimental results throughout the manuscript.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C6",
+    "claim": "PlantSeg generalizes well even on non-plant samples.",
+    "claim_type": "EXPLICIT",
+    "source": "PlantSeg delivers accurate results and generalizes well across different tissues, scales, acquisition settings even on non plant samples.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Stated in the abstract and demonstrated with Drosophila wing disc data in the manuscript.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C7",
+    "claim": "PlantSeg is free and open-source.",
+    "claim_type": "EXPLICIT",
+    "source": "PlantSeg is free and open-source, with both a command line and a user-friendly graphical interface.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Explicitly stated in the abstract.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C8",
+    "claim": "PlantSeg has both a command line and a user-friendly graphical interface.",
+    "claim_type": "EXPLICIT",
+    "source": "PlantSeg is free and open-source, with both a command line and a user-friendly graphical interface.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Explicitly stated in the abstract.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C9",
+    "claim": "Segmentation of resulting images has become a major bottleneck in the downstream analysis of large-scale imaging experiments.",
+    "claim_type": "EXPLICIT",
+    "source": "With such microscopes now in routine use, segmentation of the resulting images has become a major bottleneck in the downstream analysis of large-scale imaging experiments.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Stated as motivation for the work in the introduction.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C10",
+    "claim": "A few segmentation pipelines have been proposed but these either do not leverage recent developments in the field of computer vision or are difficult to use for non-experts.",
+    "claim_type": "EXPLICIT",
+    "source": "A few segmentation pipelines have been proposed (Fernandez et al., 2010; Stegmaier et al., 2016), but these either do not leverage recent developments in the field of computer vision or are difficult to use for non-experts.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Stated as a limitation of existing methods, supported by citations.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C11",
+    "claim": "Imaging cell shape during morphogenesis relies on staining of the plasma membrane with a fluorescent marker.",
+    "claim_type": "EXPLICIT",
+    "source": "With a few notable exceptions, such as the Brainbow experiments (Weissman and Pan, 2015), imaging cell shape during morphogenesis relies on staining of the plasma membrane with a fluorescent marker.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Stated as common practice in the field, with citation to exceptions.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C12",
+    "claim": "The U-Net architecture has demonstrated excellent performance on 2D biomedical images.",
+    "claim_type": "EXPLICIT",
+    "source": "In particular, the U-Net architecture (Ronneberger et al., 2015) has demonstrated excellent performance on 2D biomedical images and has later been further extended to process volumetric data (\u00c7i\u00e7ek et al., 2016).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Stated as established knowledge with citation.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C13",
+    "claim": "U-Net has been extended to process volumetric data.",
+    "claim_type": "EXPLICIT",
+    "source": "In particular, the U-Net architecture (Ronneberger et al., 2015) has demonstrated excellent performance on 2D biomedical images and has later been further extended to process volumetric data (\u00c7i\u00e7ek et al., 2016).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Stated with citation to the 3D U-Net paper.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C14",
+    "claim": "The post-processing step after boundary detection still represents a challenge for noisy, real-world microscopy data.",
+    "claim_type": "EXPLICIT",
+    "source": "Once the boundaries are found, other pixels need to be grouped into objects delineated by the detected boundaries. For noisy, real-world microscopy data, this post-processing step still represents a challenge and has attracted a fair amount of attention from the computer vision community (Turaga et al., 2010; Nunez-Iglesias et al., 2014; Beier et al., 2017; Wolf et al., 2018; Funke et al., 2019a).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Stated as a known challenge with multiple supporting citations.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C15",
+    "claim": "Watershed algorithm suffers from the drawback that misclassification of a single cell centroid results in sub-optimal seeding and leads to segmentation errors.",
+    "claim_type": "EXPLICIT",
+    "source": "This method, however, suffers from the usual drawback of the watershed algorithm: misclassification of a single cell centroid results in sub-optimal seeding and leads to segmentation errors.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Stated as a known limitation of watershed-based methods.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C16",
+    "claim": "Only a handful of software packages strive to make deep learning-based methods accessible to non-expert users in biology.",
+    "claim_type": "EXPLICIT",
+    "source": "While deep learning-based methods define the state-of-the-art for all image segmentation problems, only a handful of software packages strives to make them accessible to non-expert users in biology (reviewed in [Moen et al., 2019]).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Stated as a gap in the field with citation to a review.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C17",
+    "claim": "PlantSeg processes the output from the microscope with a CNN to produce an accurate prediction of cell boundaries.",
+    "claim_type": "EXPLICIT",
+    "source": "Here, we present PlantSeg, a deep learning-based pipeline for volumetric instance segmentation of dense plant tissues at single-cell resolution. PlantSeg processes the output from the microscope with a CNN to produce an accurate prediction of cell boundaries.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Described as the first step of the PlantSeg pipeline.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C18",
+    "claim": "The second step of PlantSeg delivers an accurate segmentation by solving a graph partitioning problem.",
+    "claim_type": "EXPLICIT",
+    "source": "Building on the insights from previous work on cell segmentation in electron microscopy volumes of neural tissue (Beier et al., 2017; Funke et al., 2019a), the second step of the pipeline delivers an accurate segmentation by solving a graph partitioning problem.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Described as the second step of the PlantSeg pipeline with citations to related work.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C19",
+    "claim": "PlantSeg was trained on 3D confocal images of fixed Arabidopsis thaliana ovules.",
+    "claim_type": "EXPLICIT",
+    "source": "We trained PlantSeg on 3D confocal images of fixed Arabidopsis thaliana ovules and 3D+t light sheet microscope images of developing lateral roots, two standard imaging modalities in the studies of plant morphogenesis.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Explicitly stated as one of the training datasets.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C20",
+    "claim": "PlantSeg was trained on 3D+t light sheet microscope images of developing lateral roots.",
+    "claim_type": "EXPLICIT",
+    "source": "We trained PlantSeg on 3D confocal images of fixed Arabidopsis thaliana ovules and 3D+t light sheet microscope images of developing lateral roots, two standard imaging modalities in the studies of plant morphogenesis.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Explicitly stated as one of the training datasets.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C21",
+    "claim": "PlantSeg delivers excellent results on unseen data.",
+    "claim_type": "EXPLICIT",
+    "source": "Overall, PlantSeg delivers excellent results on unseen data and, as we show through quantitative and qualitative evaluation, even non-plant datasets do not necessarily require network retraining.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Stated as a key finding supported by experimental results.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C22",
+    "claim": "Non-plant datasets do not necessarily require network retraining when using PlantSeg.",
+    "claim_type": "EXPLICIT",
+    "source": "Overall, PlantSeg delivers excellent results on unseen data and, as we show through quantitative and qualitative evaluation, even non-plant datasets do not necessarily require network retraining.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Stated as a finding demonstrated with Drosophila data.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C23",
+    "claim": "PlantSeg is an open-source tool which contains the complete pipeline for segmenting large volumes.",
+    "claim_type": "EXPLICIT",
+    "source": "PlantSeg is an open-source tool which contains the complete pipeline for segmenting large volumes.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Explicitly stated in the introduction.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C24",
+    "claim": "Each step of the PlantSeg pipeline can be adjusted via a convenient graphical user interface.",
+    "claim_type": "EXPLICIT",
+    "source": "Each step of the pipeline can be adjusted via a convenient graphical user interface while expert users can modify configuration files and run PlantSeg from the command line.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Described as a feature of the software.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C25",
+    "claim": "Expert users can modify configuration files and run PlantSeg from the command line.",
+    "claim_type": "EXPLICIT",
+    "source": "Each step of the pipeline can be adjusted via a convenient graphical user interface while expert users can modify configuration files and run PlantSeg from the command line.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Described as a feature of the software.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C26",
+    "claim": "PlantSeg can be used to segment 2D stacks directly.",
+    "claim_type": "EXPLICIT",
+    "source": "Although PlantSeg was designed to segment 3D images, one can directly use it to segment 2D stacks.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Explicitly stated as a capability of the software.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C27",
+    "claim": "All datasets used to support the findings of this study have been deposited in https://osf.io/uzq3w.",
+    "claim_type": "EXPLICIT",
+    "source": "All datasets used to support the findings of this study have been deposited in https://osf.io/uzq3w.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Explicitly stated data availability statement.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C28",
+    "claim": "The first dataset consists of fixed Arabidopsis thaliana ovules at all developmental stages acquired by confocal laser scanning microscopy with a voxel size of 0.075 \u00d7 0.075 \u00d7 0.235 \u03bcm.",
+    "claim_type": "EXPLICIT",
+    "source": "The first dataset consists of fixed Arabidopsis thaliana ovules at all developmental stages acquired by confocal laser scanning microscopy with a voxel size of 0.075 \u00d7 0.075 \u00d7 0.235 \u03bcm.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Explicitly described as one of the core datasets.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C29",
+    "claim": "48 volumetric stacks with hand-curated ground truth segmentation were used from the ovule dataset.",
+    "claim_type": "EXPLICIT",
+    "source": "48 volumetric stacks with hand-curated ground truth segmentation were used.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Explicitly stated as the size of the ovule dataset.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C30",
+    "claim": "The second dataset consists of three time-lapse videos showing the development of Arabidopsis thaliana lateral root primordia.",
+    "claim_type": "EXPLICIT",
+    "source": "The second dataset consists of three time-lapse videos showing the development of Arabidopsis thaliana lateral root primordia (LRP).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Explicitly described as the second core dataset.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C31",
+    "claim": "The lateral root primordia recordings were obtained using a light sheet fluorescence microscope with a voxel size of 0.1625 \u00d7 0.1625 \u00d7 0.250 \u03bcm.",
+    "claim_type": "EXPLICIT",
+    "source": "Each recording was obtained by imaging wild-type Arabidopsis plants expressing markers for the plasma membrane and the nuclei (Vilches Barro et al., 2019) using a light sheet fluorescence microscope (LSFM). Stacks of images were acquired every 30 min with constant settings across movies and time points, with a voxel size of 0.1625 \u00d7 0.1625 \u00d7 0.250 \u03bcm.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Explicitly stated imaging parameters for the LRP dataset.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C32",
+    "claim": "The first lateral root movie consists of 52 time points of size 2048 \u00d7 1050 \u00d7 486 voxels.",
+    "claim_type": "EXPLICIT",
+    "source": "The first movie consists of 52 time points of size 2048 \u00d7 1050 \u00d7 486 voxels.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Explicitly stated dimensions of the first LRP movie.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C33",
+    "claim": "The second lateral root movie consists of 90 time points of size 1940 \u00d7 1396 \u00d7 403 voxels.",
+    "claim_type": "EXPLICIT",
+    "source": "The second movie consists of 90 time points of size 1940 \u00d7 1396 \u00d7 403 voxels and the third one of 92 time points of size 2048 \u00d7 1195 \u00d7 566 voxels.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Explicitly stated dimensions of the second LRP movie.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C34",
+    "claim": "The third lateral root movie consists of 92 time points of size 2048 \u00d7 1195 \u00d7 566 voxels.",
+    "claim_type": "EXPLICIT",
+    "source": "The second movie consists of 90 time points of size 1940 \u00d7 1396 \u00d7 403 voxels and the third one of 92 time points of size 2048 \u00d7 1195 \u00d7 566 voxels.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Explicitly stated dimensions of the third LRP movie.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C35",
+    "claim": "The ground truth was generated for 27 images depicting different developmental stages of LRP coming from the three movies.",
+    "claim_type": "EXPLICIT",
+    "source": "The ground truth was generated for 27 images depicting different developmental stages of LRP coming from the three movies (see Appendix 1 Groundtruth Creation).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Explicitly stated as the amount of ground truth data for LRP.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C36",
+    "claim": "The average PSNR measured on the light sheet dataset was 22.5 \u00b1 6.5 dB.",
+    "claim_type": "EXPLICIT",
+    "source": "The average PSNR measured on the light sheet dataset was 22.5 \u00b1 6.5 dB (average \u00b1 SD), 3.4 dB lower than the average PSNR computed on the confocal dataset (25.9 \u00b1 5.7).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Quantitative measurement of image quality reported in the manuscript.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C37",
+    "claim": "The average PSNR computed on the confocal dataset was 25.9 \u00b1 5.7 dB.",
+    "claim_type": "EXPLICIT",
+    "source": "The average PSNR measured on the light sheet dataset was 22.5 \u00b1 6.5 dB (average \u00b1 SD), 3.4 dB lower than the average PSNR computed on the confocal dataset (25.9 \u00b1 5.7).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Quantitative measurement of image quality reported in the manuscript.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C38",
+    "claim": "The average SSIM is 0.53 \u00b1 0.12 for the light sheet dataset.",
+    "claim_type": "EXPLICIT",
+    "source": "Similarly, the average SSIM is 0.53 \u00b1 0.12 for the light sheet, 0.1 lower than 0.63 \u00b1 0.13 value measured on the confocal images.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Quantitative measurement of image quality reported in the manuscript.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C39",
+    "claim": "The average SSIM is 0.63 \u00b1 0.13 for the confocal dataset.",
+    "claim_type": "EXPLICIT",
+    "source": "Similarly, the average SSIM is 0.53 \u00b1 0.12 for the light sheet, 0.1 lower than 0.63 \u00b1 0.13 value measured on the confocal images.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Quantitative measurement of image quality reported in the manuscript.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C40",
+    "claim": "LSFM images are noisier and more difficult to segment than confocal images.",
+    "claim_type": "EXPLICIT",
+    "source": "Both datasets thus contain a significant amount of noise. LSFM images are noisier and more difficult to segment, not only because of the noise, but also due to part of nuclear labels being in the same channel as membrane staining.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Stated as an observation based on PSNR and SSIM measurements.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C41",
+    "claim": "U-Net was chosen as the base model architecture for predicting the boundaries between cells.",
+    "claim_type": "EXPLICIT",
+    "source": "Being the current state of the art in bioimage segmentation, U-Net (Ronneberger et al., 2015) was chosen as the base model architecture for predicting the boundaries between cells.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Explicitly stated as the architectural choice with citation.",
+    "evidence_type": [
+      "CITATION",
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C42",
+    "claim": "The regular 3D U-Net was compared with a Residual U-Net from Lee et al., 2017.",
+    "claim_type": "EXPLICIT",
+    "source": "In more detail, with regard to the network architecture we compared the regular 3D U-Net as described in \u00c7i\u00e7ek et al., 2016 with a Residual U-Net from Lee et al., 2017.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Explicitly stated as part of the experimental design with citations.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C44",
+    "claim": "In the ovule dataset, 39 stacks were randomly selected for training, two for validation and seven for testing.",
+    "claim_type": "EXPLICIT",
+    "source": "In the ovule dataset, 39 stacks were randomly selected for training, two for validation and seven for testing.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Explicitly stated data split for the ovule dataset.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C45",
+    "claim": "In the LRP dataset, 27 time points were randomly selected for training, two for validation and four for testing.",
+    "claim_type": "EXPLICIT",
+    "source": "In the LRP dataset, 27 time points were randomly selected from the three videos for training, two time points were used for validation and four for testing.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Explicitly stated data split for the LRP dataset.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C47",
+    "claim": "BCE-Dice loss generalized well on the out of sample data.",
+    "claim_type": "EXPLICIT",
+    "source": "BCE-Dice loss also generalized well on the out of sample data described in 2.1.4 Performance on external plant datasets.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Stated as a finding from testing on external datasets.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C48",
+    "claim": "Training the networks with bigger patch sizes does not noticeably increase the performance compared to training with smaller patches.",
+    "claim_type": "EXPLICIT",
+    "source": "Due to the regularity of cell shapes, the networks do not benefit from broader spatial context when only cell membrane signal is present in input images. Indeed, training the networks with bigger patch sizes does not noticeably increase the performance as compared to training with smaller patches.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Stated as a finding from the experimental comparison.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C49",
+    "claim": "Residual U-Net architecture performed best on the LRP dataset.",
+    "claim_type": "EXPLICIT",
+    "source": "Residual U-Net architecture (3D-ResUnet) performed best on the LRP dataset (Figure 2B), whereas standard U-Net architecture (3D-Unet) was better on the ovule datasets (Figure 2A).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "Stated as a finding with reference to Figure 2B.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C50",
+    "claim": "Standard U-Net architecture was better on the ovule datasets.",
+    "claim_type": "EXPLICIT",
+    "source": "Residual U-Net architecture (3D-ResUnet) performed best on the LRP dataset (Figure 2B), whereas standard U-Net architecture (3D-Unet) was better on the ovule datasets (Figure 2A).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "Stated as a finding with reference to Figure 2A.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C51",
+    "claim": "PlantSeg first clusters voxels into supervoxels by running a watershed algorithm on the distance transform of the boundary map.",
+    "claim_type": "EXPLICIT",
+    "source": "To make the computation tractable, we first cluster the voxels into so-called supervoxels by running a watershed algorithm on the distance transform of the boundary map, seeded by all local maxima of the distance transform smoothed by a Gaussian blur.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Described as part of the segmentation methodology.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C52",
+    "claim": "Four different partitioning strategies were tested: Multicut, GASP, Mutex watershed, and DT watershed.",
+    "claim_type": "EXPLICIT",
+    "source": "We tested four different partitioning strategies: Multicut (Kappes et al., 2011), hierarchical agglomeration as implemented in GASP average (GASP) (Bailoni et al., 2019), Mutex watershed (Mutex) (Wolf et al., 2018) as well as the distance transform (DT) watershed (Roerdink and Meijster, 2000) as a baseline since similar methods have been proposed previously (Eschweiler et al., 2018; Wang et al., 2019).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Explicitly stated as part of the experimental design with citations.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C53",
+    "claim": "GASP, Multicut and Mutex watershed consistently produced accurate segmentation on both datasets with low ARand errors and low rates of merge and split errors.",
+    "claim_type": "EXPLICIT",
+    "source": "GASP, Multicut and Mutex watershed consistently produced accurate segmentation on both datasets with low ARand errors and low rates of merge and split errors (Figure 3A\u2013C and Appendix 5\u2014table 2).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "Stated as a finding with reference to Figure 3A-C.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C54",
+    "claim": "DT watershed tends to over-segment with higher split error and resulting higher ARand error.",
+    "claim_type": "EXPLICIT",
+    "source": "As expected DT watershed tends to over-segment with higher split error and resulting higher ARand error.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Stated as a finding consistent with expectations.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C55",
+    "claim": "The segmentation quality for both datasets is very satisfactory according to expert biologists.",
+    "claim_type": "EXPLICIT",
+    "source": "The performance of PlantSeg was also assessed qualitatively by expert biologists. The segmentation quality for both datasets is very satisfactory.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Stated as a qualitative assessment by domain experts.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C56",
+    "claim": "PlantSeg correctly detected boundaries even in cases where the boundary appeared masked by the high brightness of the nuclear signal in the lateral root dataset.",
+    "claim_type": "EXPLICIT",
+    "source": "For example in the lateral root dataset, even in cases where the boundary appeared masked by the high brightness of the nuclear signal, the network correctly detected it and separated the two cells (Figure 3D, green box).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "Stated as a qualitative observation with reference to Figure 3D.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C57",
+    "claim": "On the ovule dataset, the network is able to detect weak boundaries and correctly separate cells in regions where the human expert fails.",
+    "claim_type": "EXPLICIT",
+    "source": "On the ovule dataset, the network is able to detect weak boundaries and correctly separate cells in regions where the human expert fails (Figure 3E , green box).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "Stated as a qualitative observation with reference to Figure 3E.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C58",
+    "claim": "The main mode of error in the lateral root dataset is due to the ability of the network to remove the nuclear signal which can weaken or remove part of the adjacent boundary signal.",
+    "claim_type": "EXPLICIT",
+    "source": "The main mode of error identified in the lateral root dataset is due to the ability of the network to remove the nuclear signal which can weaken or remove part of the adjacent boundary signal leading to missing or blurry cell contour.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Stated as an identified error mode.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C59",
+    "claim": "PlantSeg was tested on the Arabidopsis 3D Digital Tissue Atlas composed of eight stacks of eight different Arabidopsis thaliana organs with hand-curated ground truth.",
+    "claim_type": "EXPLICIT",
+    "source": "To test the generalization capacity of PlantSeg, we assessed its performance on data for which no network training was performed. To this end, we took advantage of the two publicly available datasets: Arabidopsis 3D Digital Tissue Atlas (https://osf.io/fzr56) composed of eight stacks of eight different Arabidopsis thaliana organs with hand-curated ground truth (Bassel, 2019), as well as the developing leaf of the Arabidopsis (Fox et al., 2018) with 3D segmentation given by the SimpleITK package (Lowekamp et al., 2013).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Explicitly stated as one of the external test datasets with citation.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C60",
+    "claim": "PlantSeg was tested on the developing leaf of Arabidopsis with 3D segmentation given by the SimpleITK package.",
+    "claim_type": "EXPLICIT",
+    "source": "To test the generalization capacity of PlantSeg, we assessed its performance on data for which no network training was performed. To this end, we took advantage of the two publicly available datasets: Arabidopsis 3D Digital Tissue Atlas (https://osf.io/fzr56) composed of eight stacks of eight different Arabidopsis thaliana organs with hand-curated ground truth (Bassel, 2019), as well as the developing leaf of the Arabidopsis (Fox et al., 2018) with 3D segmentation given by the SimpleITK package (Lowekamp et al., 2013).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Explicitly stated as one of the external test datasets with citations.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C61",
+    "claim": "PlantSeg performed well on both external datasets, giving satisfactory results on all organs from the 3D Digital Tissue Atlas.",
+    "claim_type": "EXPLICIT",
+    "source": "Qualitatively, PlantSeg performed well on both datasets, giving satisfactory results on all organs from the 3D Digital Tissue Atlas, correctly segmenting even the oval non-touching cells of the anther and leaf: a cell shape not present in the training data (Figure 4).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "Stated as a qualitative finding with reference to Figure 4.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C62",
+    "claim": "PlantSeg correctly segmented even the oval non-touching cells of the anther and leaf, a cell shape not present in the training data.",
+    "claim_type": "EXPLICIT",
+    "source": "Qualitatively, PlantSeg performed well on both datasets, giving satisfactory results on all organs from the 3D Digital Tissue Atlas, correctly segmenting even the oval non-touching cells of the anther and leaf: a cell shape not present in the training data (Figure 4).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "Stated as a qualitative finding demonstrating generalization with reference to Figure 4.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C63",
+    "claim": "PlantSeg yielded especially good segmentation results when applied to the complex epidermal cells, visibly outperforming the results obtained using the SimpleITK framework.",
+    "claim_type": "EXPLICIT",
+    "source": "Our pipeline yielded especially good segmentation results when applied to the complex epidermal cells, visibly outperforming the results obtained using the SimpleITK framework (Figure 5).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "Stated as a comparative finding with reference to Figure 5.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C64",
+    "claim": "The performance of PlantSeg out of the box on the 3D Digital Tissue Atlas is on par with the scores reported on the LRP and ovules datasets on the anther, leaf, and the root.",
+    "claim_type": "EXPLICIT",
+    "source": "Quantitatively, the performance of PlantSeg out of the box (default parameters) on the 3D Digital Tissue Atlas is on par with the scores reported on the LRP and ovules datasets on the anther, leaf, and the root, but lower for the other tissues (Table 1, left).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "Stated as a quantitative finding with reference to Table 1.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C65",
+    "claim": "A substantial improvement can be obtained by parameter tuning on the 3D Digital Tissue Atlas.",
+    "claim_type": "EXPLICIT",
+    "source": "Default parameters have been chosen to deliver good results on most type of data, however we show that a substantial improvement can be obtained by parameter tuning (see Appendix 6: PlantSeg - Parameters Guide for an overview of the pipeline's hyperparameters and Appendix 7: Empirical Example of parameter tuning for a detailed guide on empirical parameter tuning), in case of the tissue 3D Digital Tissue Atlas tuning improved segmentation by a factor of two as measured with the ARand error (Table 1, right).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "Stated as a finding with reference to Table 1.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C66",
+    "claim": "Parameter tuning improved segmentation by a factor of two as measured with the ARand error on the 3D Digital Tissue Atlas.",
+    "claim_type": "EXPLICIT",
+    "source": "Default parameters have been chosen to deliver good results on most type of data, however we show that a substantial improvement can be obtained by parameter tuning (see Appendix 6: PlantSeg - Parameters Guide for an overview of the pipeline's hyperparameters and Appendix 7: Empirical Example of parameter tuning for a detailed guide on empirical parameter tuning), in case of the tissue 3D Digital Tissue Atlas tuning improved segmentation by a factor of two as measured with the ARand error (Table 1, right).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "Stated as a quantitative finding with reference to Table 1.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C67",
+    "claim": "PlantSeg is very competitive qualitatively and quantitatively on the Drosophila wing disc benchmark and faster than the state-of-the-art methods.",
+    "claim_type": "EXPLICIT",
+    "source": "Although we did not train the neural networks on the benchmark datasets and used only the ovule pre-trained models provided with the PlantSeg package, we found out that PlantSeg is very competitive qualitatively and quantitatively and faster than the state-of-the-art methods, all of which rely on networks trained directly on the benchmark dataset (see Appendix 3: Performance of PlantSeg on an independent reference benchmark for detailed overview of the benchmark results).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Stated as a finding from benchmark comparison.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C68",
+    "claim": "PlantSeg allows for data pre-processing, boundary prediction with neural networks and segmentation of the network output with a choice of four partitioning methods.",
+    "claim_type": "EXPLICIT",
+    "source": "PlantSeg allows for data pre-processing, boundary prediction with neural networks and segmentation of the network output with a choice of four partitioning methods: Multicut, GASP, Mutex watershed and DT watershed.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Described as features of the software package.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C69",
+    "claim": "PlantSeg can be executed via a simple graphical user interface or via the command line.",
+    "claim_type": "EXPLICIT",
+    "source": "PlantSeg can be executed via a simple graphical user interface or via the command line.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Described as a feature of the software package.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C70",
+    "claim": "PlantSeg can export both the segmentation results and the boundary probability maps as HDF5 or TIFF.",
+    "claim_type": "EXPLICIT",
+    "source": "Our software can export both the segmentation results and the boundary probability maps as Hierarchical Data Format (HDF5) or Tagged Image File Format (TIFF).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Described as a feature of the software package.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C71",
+    "claim": "PlantSeg comes with several 2D and 3D networks pre-trained on different voxel sizes of the Arabidopsis ovule and LRP datasets.",
+    "claim_type": "EXPLICIT",
+    "source": "PlantSeg comes with several 2D and 3D networks pre-trained on different voxel size of the Arabidopsis ovule and LRP datasets.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Described as a feature of the software package.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C72",
+    "claim": "PlantSeg provides a command-line tool for training the network on new data when none of the pre-trained networks is suitable.",
+    "claim_type": "EXPLICIT",
+    "source": "PlantSeg also provides a command-line tool for training the network on new data when none of the pre-trained network is suitable to the user's needs.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Described as a feature of the software package.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C73",
+    "claim": "PlantSeg is publicly available at https://github.com/hci-unihd/plant-seg.",
+    "claim_type": "EXPLICIT",
+    "source": "PlantSeg is publicly available https://github.com/hci-unihd/plant-seg.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Explicitly stated availability information.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C74",
+    "claim": "Six out of the eight analyzed stage 1 ovule primordia showed a comparable number of cells (140.5 \u00b1 10.84, mean \u00b1 SD).",
+    "claim_type": "EXPLICIT",
+    "source": "Our results further indicated that six out of the eight analyzed stage 1 primordia (staging according to Schneitz et al., 1995) showed a comparable number of cells (140.5 \u00b1 10.84, mean \u00b1 SD, ovules 1\u20135, 7) (Figure 6B).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "Stated as a quantitative finding from the ovule analysis with reference to Figure 6B.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C75",
+    "claim": "Two ovule primordia exhibited a smaller number of cells with ovule #6 being composed of 91 and ovule #8 of 57 cells.",
+    "claim_type": "EXPLICIT",
+    "source": "However, two primordia exhibited a smaller number of cells with ovule #6 being composed of 91 and ovule #8 of 57 cells, respectively.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Stated as a quantitative finding from the ovule analysis.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C76",
+    "claim": "The cell number of a primordium does not necessarily translate into its respective height or proximal-distal extension.",
+    "claim_type": "EXPLICIT",
+    "source": "Interestingly, we observed that the cell number of a primordium does not necessarily translate into its respective height or proximal-distal (PD) extension.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Stated as an observation from the ovule analysis.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C77",
+    "claim": "Ovule primordium formation within a pistil is relatively uniform, however, some variability can be observed.",
+    "claim_type": "EXPLICIT",
+    "source": "Taken together, this analysis indicates that ovule primordium formation within a pistil is relatively uniform, however, some variability can be observed.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Stated as a conclusion from the ovule analysis.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C79",
+    "claim": "The mean volume of epidermal cells in the bce mutant is increased by roughly 50% compared to wild type.",
+    "claim_type": "EXPLICIT",
+    "source": "The mean volume of epidermal cells in the bce mutant is increased by roughly 50% whereas overall meristem size is only slightly reduced which implicates changes in epidermal cell division in mutant meristems.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Stated as a quantitative finding from the meristem analysis.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C80",
+    "claim": "Overall meristem size is only slightly reduced in the bce mutant.",
+    "claim_type": "EXPLICIT",
+    "source": "The mean volume of epidermal cells in the bce mutant is increased by roughly 50% whereas overall meristem size is only slightly reduced which implicates changes in epidermal cell division in mutant meristems.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Stated as a finding from the meristem analysis.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C81",
+    "claim": "The increased cell volume in the bce mutant implicates changes in epidermal cell division in mutant meristems.",
+    "claim_type": "EXPLICIT",
+    "source": "The mean volume of epidermal cells in the bce mutant is increased by roughly 50% whereas overall meristem size is only slightly reduced which implicates changes in epidermal cell division in mutant meristems.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Stated as an inference from the meristem analysis.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C82",
+    "claim": "The two methods using PlantSeg input produced lower ARand scores and higher accuracy than using the raw input for leaf segmentation.",
+    "claim_type": "EXPLICIT",
+    "source": "The two methods using PlantSeg input produced lower ARand scores and higher accuracy than using the raw input (Figure 9).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "Stated as a quantitative finding with reference to Figure 9.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C83",
+    "claim": "Combining PlantSeg with MorphographX produced segmentations more similar to the ground truth at the vertex and cell levels.",
+    "claim_type": "EXPLICIT",
+    "source": "Therefore, combining PlantSeg with MorphographX produced segmentations more similar to the GT at the vertex and cell levels.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Stated as a conclusion from the leaf segmentation comparison.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C84",
+    "claim": "Growth was slow in the midrib and distal margin cells of leaves.",
+    "claim_type": "EXPLICIT",
+    "source": "Growth was slow in the midrib and distal margin cells, whereas the remaining blade displayed a gradient along the proximal-distal axis with the maximum values at the basal margin (Figure 10D).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "Stated as a finding from the leaf growth analysis with reference to Figure 10D.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C85",
+    "claim": "The remaining blade displayed a growth gradient along the proximal-distal axis with the maximum values at the basal margin.",
+    "claim_type": "EXPLICIT",
+    "source": "Growth was slow in the midrib and distal margin cells, whereas the remaining blade displayed a gradient along the proximal-distal axis with the maximum values at the basal margin (Figure 10D).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "Stated as a finding from the leaf growth analysis with reference to Figure 10D.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C86",
+    "claim": "A. thaliana leaves showed higher cell size and lobeyness compared to C. hirsuta, and this difference accentuated towards the apex.",
+    "claim_type": "EXPLICIT",
+    "source": "Overall, A. thaliana leaves showed higher cell size and lobeyness, and this difference accentuated towards the apex, confirming earlier differentiation onset in this species (Figure 10E,F).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "Stated as a finding from the comparative leaf analysis with reference to Figure 10E,F.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C87",
+    "claim": "The difference in cell size and lobeyness between A. thaliana and C. hirsuta confirms earlier differentiation onset in A. thaliana.",
+    "claim_type": "EXPLICIT",
+    "source": "Overall, A. thaliana leaves showed higher cell size and lobeyness, and this difference accentuated towards the apex, confirming earlier differentiation onset in this species (Figure 10E,F).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "Stated as an interpretation of the comparative leaf analysis with reference to Figure 10E,F.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C88",
+    "claim": "PlantSeg implements a two-step algorithm: images are first passed through a CNN to detect cell boundaries, then a region adjacency graph is constructed and partitioned.",
+    "claim_type": "EXPLICIT",
+    "source": "Taking advantage of the latest developments in machine learning and computer vision we created PlantSeg, a simple, powerful, and versatile tool for plant cell segmentation. Internally, it implements a two-step algorithm: the images are first passed through a state-of-the-art convolutional neural network to detect cell boundaries. In the second step, the detected boundaries are used to over-segment the image using the distance transform watershed and then a region adjacency graph of the image superpixels is constructed. The graph is partitioned to deliver accurate segmentation even for noisy live imaging of dense plant tissue.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Described as the core methodology of PlantSeg in the discussion.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C89",
+    "claim": "PlantSeg delivers high-quality segmentation on images from the training datasets never seen during training.",
+    "claim_type": "EXPLICIT",
+    "source": "PlantSeg was trained on confocal images of Arabidopsis thaliana ovules and light sheet images of the lateral root primordia and delivers high-quality segmentation on images from these datasets never seen during training as attested by both qualitative and quantitative benchmarks.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Stated as a key finding in the discussion.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C90",
+    "claim": "PlantSeg demonstrates excellent performance without retraining of the CNNs on a variety of plant tissues and organs imaged using confocal microscopy.",
+    "claim_type": "EXPLICIT",
+    "source": "This is illustrated by the excellent performance of PlantSeg without retraining of the CNNs on a variety of plant tissues and organs imaged using confocal microscopy (3D Cell Atlas Dataset) including the highly lobed epidermal cells (Fox et al., 2018).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Stated as a key finding demonstrating generalization with citation.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C91",
+    "claim": "PlantSeg performance was shown to be close to the benchmark leaders on the Drosophila wing disc benchmark using only pre-trained networks.",
+    "claim_type": "EXPLICIT",
+    "source": "Besides the plant data, we compared PlantSeg to the state-of-the-art on an open benchmark for the segmentation of epithelial cells in the Drosophila wing disc. Using only the pre-trained networks, PlantSeg performance was shown to be close to the benchmark leaders, while additional training on challenge data has narrowed the gap even further.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Stated as a finding from benchmark comparison.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C92",
+    "claim": "Additional training on challenge data has narrowed the gap between PlantSeg and benchmark leaders even further.",
+    "claim_type": "EXPLICIT",
+    "source": "Besides the plant data, we compared PlantSeg to the state-of-the-art on an open benchmark for the segmentation of epithelial cells in the Drosophila wing disc. Using only the pre-trained networks, PlantSeg performance was shown to be close to the benchmark leaders, while additional training on challenge data has narrowed the gap even further.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Stated as a finding from benchmark comparison.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C93",
+    "claim": "PlantSeg allowed to sample the variability in the development of ovules in a given pistil and reveal that those develop in a relatively synchronous manner.",
+    "claim_type": "EXPLICIT",
+    "source": "First, PlantSeg allowed to sample the variability in the development of ovules in a given pistil and reveal that those develop in a relatively synchronous manner.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Stated as a biological application finding in the discussion.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C94",
+    "claim": "PlantSeg allowed the precise computation of the volumes of the daughter cells resulting from the asymmetric division of the lateral root founder cell.",
+    "claim_type": "EXPLICIT",
+    "source": "Second, PlantSeg allowed the precise computation of the volumes of the daughter cells resulting from the asymmetric division of the lateral root founder cell.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Stated as a biological application finding in the discussion.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C96",
+    "claim": "Segmentation of the epidermal cells in the shoot apical meristem revealed that these cells are enlarged in the bce mutant compared to wild type.",
+    "claim_type": "EXPLICIT",
+    "source": "Third, segmentation of the epidermal cells in the shoot apical meristem revealed that these cells are enlarged in the bce mutant compared to wild type.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Stated as a biological application finding in the discussion.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C97",
+    "claim": "PlantSeg can be used to improve the automated surface segmentation of time-lapse leaf stacks which enables different downstream analyses such as growth tracking at cell resolution.",
+    "claim_type": "EXPLICIT",
+    "source": "Finally, we showed that PlantSeg can be used to improve the automated surface segmentation of time-lapse leaf stacks which enables different downstream analyses such as growth tracking at cell resolution.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Stated as a biological application finding in the discussion.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C98",
+    "claim": "Accurate and versatile extraction of cell outlines rendered possible by PlantSeg opens the door to rapid and robust quantitative morphometric analysis of plant cell geometry in complex tissues.",
+    "claim_type": "EXPLICIT",
+    "source": "Accurate and versatile extraction of cell outlines rendered possible by PlantSeg opens the door to rapid and robust quantitative morphometric analysis of plant cell geometry in complex tissues.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Stated as a conclusion about the impact of PlantSeg.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C99",
+    "claim": "Plant cell shape plays a central role in the control of cell growth and division.",
+    "claim_type": "EXPLICIT",
+    "source": "This is particularly relevant given the central role plant cell shape plays in the control of cell growth and division (Rasmussen and Bellinger, 2018).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Stated as established knowledge with citation.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C100",
+    "claim": "PlantSeg's approach relies purely on boundary information derived from cell contour detection.",
+    "claim_type": "EXPLICIT",
+    "source": "Unlike intensity-based segmentation methods used, for example, to extract DAPI-stained cell nuclei, our approach relies purely on boundary information derived from cell contour detection.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Stated as a characteristic of the PlantSeg approach.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C101",
+    "claim": "Blurry or barely detectable boundaries lead to discontinuities in the membrane structure predicted by the network, which might cause cells to be under-segmented.",
+    "claim_type": "EXPLICIT",
+    "source": "While this approach grants access to the cell morphology and cell-cell interactions, it brings additional challenges to the segmentation problem. Blurry or barely detectable boundaries lead to discontinuities in the membrane structure predicted by the network, which in turn might cause cells to be under-segmented.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Stated as a limitation of the boundary-based approach.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C102",
+    "claim": "The segmentation results produced by PlantSeg on new datasets are not fully perfect and still require proof-reading to reach 100% accuracy.",
+    "claim_type": "EXPLICIT",
+    "source": "The segmentation results produced by PlantSeg on new datasets are not fully perfect and still require proof-reading to reach 100% accuracy.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Stated as a limitation of the current method.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C103",
+    "claim": "Paintera was used for manually correcting the 3D segmentation results.",
+    "claim_type": "EXPLICIT",
+    "source": "For our experiments we used Paintera (Hanslovsky et al., 2019) for manually correcting the 3D segmentation results.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Stated as a method used in the study with citation.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C104",
+    "claim": "Newly proof-read results can be used to train a better network that can be applied to this type of data in the future.",
+    "claim_type": "EXPLICIT",
+    "source": "Importantly the newly proof-read results can then be used to train a better network that can be applied to this type of data in the future (see the Appendix 1: Groundtruth Creation for an overview of this process).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Stated as a strategy for improving the method.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C105",
+    "claim": "Very few benchmark datasets were available to the community for plant cell segmentation tasks.",
+    "claim_type": "EXPLICIT",
+    "source": "During the development of PlantSeg, we realised that very few benchmark datasets were available to the community for plant cell segmentation tasks, a notable exception being the 3D Tissue Atlas (Bassel, 2019).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Stated as an observation during the study with citation to an exception.",
+    "evidence_type": [
+      "KNOWLEDGE",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C106",
+    "claim": "The authors publicly release their sets of images and the corresponding hand-curated ground truth.",
+    "claim_type": "EXPLICIT",
+    "source": "To address this gap, we publicly release our sets of images and the corresponding hand-curated ground truth in the hope to catalyse future development and evaluation of cell instance segmentation algorithms.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Stated as a contribution of the work.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C107",
+    "claim": "2D and 3D U-Nets were trained to predict the binary mask of cell boundaries.",
+    "claim_type": "EXPLICIT",
+    "source": "2D and 3D U-Nets were trained to predict the binary mask of cell boundaries.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Stated as part of the training methodology.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C109",
+    "claim": "Gaussian smoothing reduces the high frequency components in the boundary image, which helps prevent over-fitting and makes the boundaries thicker.",
+    "claim_type": "EXPLICIT",
+    "source": "Gaussian smoothing reduces the high frequency components in the boundary image, which helps prevent over-fitting and makes the boundaries thicker, increasing the amount of foreground signal during training.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Stated as a rationale for the preprocessing step.",
+    "evidence_type": [
+      "KNOWLEDGE",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C111",
+    "claim": "Networks were trained until convergence for 150K iterations using the PyTorch framework on 8 NVIDIA GeForce RTX 2080 Ti GPUs.",
+    "claim_type": "EXPLICIT",
+    "source": "Networks were trained until convergence for 150K iterations, using the PyTorch framework (Paszke et al., 2019) on 8 NVIDIA GeForce RTX 2080 Ti GPUs.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Stated as part of the training methodology with citation.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C112",
+    "claim": "The learning rate was reduced by a factor of 2 once the learning stagnated during training.",
+    "claim_type": "EXPLICIT",
+    "source": "The learning rate was being reduced by a factor of 2 once the learning stagnated during training, that is, no improvements were observed on the validation set for a given number of iterations.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Stated as part of the training methodology.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C113",
+    "claim": "The best network was chosen as the one with lowest Arand error values.",
+    "claim_type": "EXPLICIT",
+    "source": "We choose as best network the one with lowest Arand error values.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Stated as the model selection criterion.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C116",
+    "claim": "Batch normalization with a single patch per iteration becomes an instance normalization and makes the estimated batch statistics weaker.",
+    "claim_type": "EXPLICIT",
+    "source": "The reason is that batch normalization with a single patch per iteration becomes an instance normalization (Ulyanov et al., 2016) and makes the estimated batch statistics weaker.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Stated as a rationale for using group normalization with citation.",
+    "evidence_type": [
+      "KNOWLEDGE",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C117",
+    "claim": "During training and inference, input images were standardized by subtracting mean intensity and dividing by the standard deviation.",
+    "claim_type": "EXPLICIT",
+    "source": "During training and inference, input images were standardized by subtracting mean intensity and dividing by the standard deviation.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Stated as part of the preprocessing methodology.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C118",
+    "claim": "Random horizontal and vertical flips, random rotations in the XY-plane, elastic deformations and noise augmentations were used during training to increase network generalization.",
+    "claim_type": "EXPLICIT",
+    "source": "We used random horizontal and vertical flips, random rotations in the XY-plane, elastic deformations (Ronneberger et al., 2015) and noise augmentations (additive Gaussian, additive Poisson) of the input image during training in order to increase network generalization on unseen data.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Stated as part of the training methodology with citation.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C119",
+    "claim": "The performance of CNNs is sensitive to changes in voxel size and object sizes between training and test images.",
+    "claim_type": "EXPLICIT",
+    "source": "The performance of CNNs is sensitive to changes in voxel size and object sizes between training and test images (van Noord and Postma, 2017).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Stated as established knowledge with citation.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C120",
+    "claim": "Networks were also trained using the original datasets downscaled by a factor of 2 and 3 in the XY dimension.",
+    "claim_type": "EXPLICIT",
+    "source": "We thus also trained the networks using the original datasets downscaled by a factor of 2 and 3 in the XY dimension.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Stated as part of the training strategy to handle different scales.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C121",
+    "claim": "During inference, mirror padding was used on the input image to improve the prediction at the boundaries of the volume.",
+    "claim_type": "EXPLICIT",
+    "source": "During inference we used mirror padding on the input image to improve the prediction at the boundaries of the volume.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Stated as part of the inference methodology.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C122",
+    "claim": "The volume was parsed patch-by-patch with a 50% overlap between consecutive tiles and the probability maps were averaged.",
+    "claim_type": "EXPLICIT",
+    "source": "We also parse the volume patch-by-patch with a 50% overlap between consecutive tiles and average the probability maps.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Stated as part of the inference methodology.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C123",
+    "claim": "Parsing the volume with overlap and averaging prevents checkerboard artifacts and reduces noise in the final prediction.",
+    "claim_type": "EXPLICIT",
+    "source": "This strategy prevents checkerboard artifacts and reduces noise in the final prediction.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Stated as a rationale for the inference strategy.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C125",
+    "claim": "An over-segmentation was first performed by running the DT watershed on the boundary probability maps.",
+    "claim_type": "EXPLICIT",
+    "source": "On this graph we first performed an over-segmentation by running the DT watershed (Roerdink and Meijster, 2000).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Stated as part of the segmentation methodology with citation.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C127",
+    "claim": "Standalone DT watershed already delivers accurate segmentation and can be used in simple cases when noise is low and/or boundaries are sharp.",
+    "claim_type": "EXPLICIT",
+    "source": "Standalone DT watershed already delivers accurate segmentation and can be used as is in simple cases when, for example noise is low and/or boundaries are sharp.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Stated as an observation about the baseline method.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C128",
+    "claim": "Multicut, GASP, and Mutex watershed algorithms were run on a region adjacency graph derived from the DT watershed to reduce computation time.",
+    "claim_type": "EXPLICIT",
+    "source": "For Multicut (Kappes et al., 2011), GASP (Bailoni et al., 2019), and Mutex watershed (Wolf et al., 2018) algorithms, we used the DT watershed as an input. Although all three algorithms could be run directly on the boundary predictions produced by the CNN (voxel level), we choose to run them on a region adjacency graph (RAG) derived from the DT watershed to reduce the computation time.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Stated as part of the segmentation methodology with citations.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C129",
+    "claim": "Edge weights in the region adjacency graph were computed by using the mean value of the probabilities maps along the boundary.",
+    "claim_type": "EXPLICIT",
+    "source": "We compute edge weights by using the mean value of the probabilities maps along the boundary.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Stated as part of the graph construction methodology.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C131",
+    "claim": "The general guideline for choosing the partitioning strategy on new data is to start with GASP algorithm, which is the most generic.",
+    "claim_type": "EXPLICIT",
+    "source": "As a general guideline for choosing the partitioning strategy on a new data is to start with GASP algorithm, which is the most generic.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Stated as a recommendation for users.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C132",
+    "claim": "If none of the three graph partitioning strategies give satisfactory segmentation results, it is recommended to over-segment the stack using distance transform watershed and proofread the result manually using Paintera software.",
+    "claim_type": "EXPLICIT",
+    "source": "If none of the three strategies give satisfactory segmentation results we recommend to over-segment provided stack using the distance transform watershed and proofread the result manually using Paintera software (Hanslovsky et al., 2019).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Stated as a recommendation for users with citation.",
+    "evidence_type": [
+      "INFERENCE",
+      "CITATION"
+    ]
+  }
+]

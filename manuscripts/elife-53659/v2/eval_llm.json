@@ -1,0 +1,277 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "Notch pathway haploinsufficiency causes tissue-specific developmental defects with variable penetrance across species. In Drosophila, it causes wing notching and extra sensory bristles; in mammals, Notch1 heterozygotes have heart valve defects, Notch2 heterozygotes have bone/kidney/B-cell defects, and human NOTCH2/JAG1 heterozygosity causes Alagille syndrome.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C6-C10 establish well-documented prior knowledge about Notch haploinsufficiency phenotypes across species, supported by appropriate citations to established literature (Mohr 1919, Nigam and Srivastava 2009, Isidor et al. 2011, etc.). This provides essential background context for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "Notch signaling involves ligand-induced proteolysis releasing NICD, which translocates to the nucleus, binds CSL and Mastermind, and activates transcription via P300 through two types of binding sites: independent CSL sites for monomeric NCM complexes and head-to-head oriented SPS sites for cooperative NCM dimer binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C14 accurately describe established Notch signaling mechanisms supported by appropriate citations (Kovall et al. 2017, Bray 2016). This background is essential for understanding the experimental manipulations and provides accurate context for the novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "NICD degradation is regulated by the Cdk8 kinase module (CKM) through Mam-mediated recruitment, which phosphorylates NICD to promote Fbxw7-mediated ubiquitylation and proteasomal degradation. Mutations affecting this pathway (NICD PEST domain deletions or reduced CKM activity) are associated with increased NICD levels and T-ALL development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C17 accurately summarize prior work on NICD degradation mechanisms with appropriate citations (O'Neil et al. 2006, Weng et al. 2004, Fryer et al. 2004, Li et al. 2014). This establishes the mechanistic foundation for the authors' investigation of CKM-dependent NICD turnover.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C18"
+    ],
+    "result": "Both mouse and fly NCM proteins cooperatively bind the 1xSPS probe but show only additive binding to the 2xCSL probe, demonstrating that SPS sites mediate cooperative NCM complex binding while CSL sites do not.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C18 is supported by EMSA data in Figure 1B-C showing differential binding patterns. The experiments use purified proteins and dual-labeled probes to directly compare binding behaviors, providing clear biochemical evidence for cooperative binding at SPS but not CSL sites.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C2",
+      "C19",
+      "C20",
+      "C22"
+    ],
+    "result": "Inserting an enhancer containing 6xSPS sites coupled to 3xGBE (pioneer TF sites) induces Notch haploinsufficiency wing notching phenotypes in wild-type Drosophila, while GBE alone, SPS alone, mutated SPS, or CSL sites with GBE do not produce this phenotype.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C19, C20, C22 are well-supported by systematic genetic experiments shown in Figures 1H-L and supplements. The authors test multiple control constructs demonstrating that both SPS sites AND pioneer TF sites are required, and that the effect is specific to dimer (SPS) not monomer (CSL) sites. The dose-dependent increase in phenotype severity with increasing SPS number strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C23",
+      "C24"
+    ],
+    "result": "The 6SG-lacZ transgene genetically interacts with Notch pathway components: it enhances wing notching in Notch heterozygotes, while adding extra Notch alleles or removing a Hairless allele suppresses the 6SG-induced phenotype.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C24 are supported by genetic interaction data in Figure 2A-H showing dose-dependent effects. The bidirectional genetic interactions (enhancement with reduced Notch, suppression with increased Notch or reduced Hairless) provide strong evidence that the transgene phenotype operates through the Notch pathway.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C25",
+      "C26"
+    ],
+    "result": "The 6SG-lacZ transgene shows tissue-specific effects: it does not significantly affect macrochaetae formation in wild-type or sensitized backgrounds, but does suppress L5 wing vein loss in Hairless heterozygotes (SPS-specific, not CSL).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C26 are supported by quantitative phenotypic data in Figure 2G-L. The differential tissue sensitivity is a key observation, though the mechanistic basis requires further investigation. The statistical analyses appropriately support the conclusions about tissue-specific effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C3",
+      "C27",
+      "C28"
+    ],
+    "result": "The SPS-GBE induced wing phenotypes depend on the Cdk8 kinase module: removing one allele of cdk8, cycC, kto, skd, or ago significantly suppresses 6SG-induced wing notching. Similarly, removing alleles of cycC, kto, skd, or ago (but not cdk8) suppresses Notch heterozygote wing notching.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C27-C28 are well-supported by systematic genetic experiments in Figure 3A-B. The differential effect of cdk8 versus other CKM components is appropriately interpreted as consistent with cdk8 not being the limiting factor in complex formation. The data strongly support CKM involvement in the phenotype.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C29",
+      "C30"
+    ],
+    "result": "A transcriptionally active promoter is not required to induce wing nicks, as promoter-containing and promoter-less transgenes show similar wing notching penetrance and severity, both suppressed by removing a skd allele.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C30 are supported by data in Figure 3D comparing constructs with and without promoters. This is a critical finding that challenges conventional understanding of transcription-coupled NICD degradation. However, the conclusion would be strengthened by direct measurement of transcription from these constructs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Cdk8-mediated NICD degradation requires NCM complex formation on DNA but not active transcription. Actinomycin-D blocks transcription but doesn't alter N1ICD half-life or mobility, while Cdk8 inhibitors (Senexin-A, SEL120-34A) significantly prolong N1ICD half-life. N1ICD is stabilized in cells lacking RBPJ or MAML proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C34 are supported by multiple complementary experiments in mammalian cells (Figures 3E-H, supplements). The split-luciferase assays, Western blots, and genetic knockouts provide converging evidence. The dissociation of transcription from degradation is well-demonstrated, though the actinomycin-D experiment assumes complete transcriptional blockade.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C35",
+      "C36"
+    ],
+    "result": "GFP reporter levels in wing margin cells decrease linearly as a function of added GBE-SPS sites. The ratio of slopes between wild-type and skd heterozygotes is 1.88\u00b10.29, consistent with the predicted 2-fold change expected without CKM dosage compensation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C36 are supported by quantitative imaging data in Figure 4D-H. The linear regression analysis and slope ratio calculation are appropriate. The agreement between observed (1.88\u00b10.29) and predicted (2.0) ratios supports the model, though the error bars are substantial and the linear regime is limited to 3-4 data points.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C38",
+      "C39"
+    ],
+    "result": "Removing CKM gene alleles does not suppress Notch haploinsufficiency in macrochaetae formation. In fact, macrochaetae numbers increase in Notch;cdk8 and Notch;skd compound heterozygotes, opposite to the prediction if slowing NICD degradation elevated NICD levels during macrochaetae formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C39 are supported by data in Figure 4J. This negative result is important for establishing tissue-specific sensitivity to NICD degradation rates. The unexpected increase in macrochaetae defects in compound heterozygotes suggests complex genetic interactions, though alternative explanations are not fully explored.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C40",
+      "C41"
+    ],
+    "result": "Wing margin maintenance requires continuous Notch signaling for at least 48 hours, while macrochaetae formation requires Notch input over a short time period (<30 min), based on prior studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C41 accurately cite prior work (de Celis et al. 1996, Shellenbarger and Mohler 1978, Barad et al. 2010) establishing different temporal requirements for Notch signaling in these tissues. This provides the mechanistic basis for interpreting differential tissue sensitivity to changes in NICD degradation versus production rates.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C4",
+      "C5"
+    ],
+    "result": "Mathematical modeling combined with quantitative analysis demonstrates that changes in Notch signal production versus degradation differentially impact cellular outcomes requiring long versus short signal duration, supporting a 'bind and discard' mechanism where enhancers with specific binding sites promote rapid Cdk8-dependent Notch turnover.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C5 integrate experimental data with mathematical modeling (Figure 4A-B, K, equations in Methods). The model appropriately captures the key biological features and makes testable predictions. The simulations show that degradation rate changes preferentially affect long-duration processes, consistent with experimental observations. However, the model makes several simplifying assumptions that should be validated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C42",
+      "C43"
+    ],
+    "result": "An endogenous SPS sequence from E(spl)m8 can promote NICD degradation to induce wing notching in the GBE-SPS transgene assay. Flies carrying G6Ssyn-lacZ versus G6Sm8-lacZ show highly similar penetrance and severity of wing notching phenotypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C43 are supported by data in Figure 5A-B comparing synthetic and endogenous SPS sequences. This demonstrates that the phenomenon is not an artifact of synthetic sequences. However, the E(spl)m8 sequence includes N-box sites that could provide negative feedback, which the authors acknowledge but don't fully address experimentally.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Pioneer transcription factors (Zelda) synergize with SPS Notch dimer sites, but not CSL Notch monomer sites, to promote Notch degradation and induce wing phenotypes. Non-pioneer TFs (E-box binding factors) fail to induce phenotypes when coupled to either SPS or CSL sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C46 are supported by systematic testing of different TF binding sites in Figure 5C-D. The specificity for pioneer TFs and SPS sites is clearly demonstrated. However, the classification of TFs as pioneer versus non-pioneer could be more rigorously established, and only two TF types are tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C47",
+      "C48"
+    ],
+    "result": "Enhancers with only SPS sites (lacking pioneer TF sites) can promote NICD degradation in sensitized genetic backgrounds, but to a lesser degree than those near a bound pioneer TF. Notch heterozygous flies with 6S-lacZ show significantly enhanced wing notching compared to those with 0S-lacZ.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C48 are supported by data in Figure 5E comparing phenotypes in sensitized backgrounds. This demonstrates that pioneer TF sites enhance but are not absolutely required for SPS-mediated NICD degradation. The conclusion appropriately integrates observations from multiple transgene constructs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C49",
+      "C50"
+    ],
+    "result": "The 'bind and discard' mechanism reveals an unexpected global link between accessible binding sites in the epigenome, where collective 'drain' loci reduce Notch-dependent transcription at other loci. Seemingly non-functional genomic binding events could impact TF metabolism in a Cdk8-dependent manner.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C49-C50 represent speculative interpretations extending beyond the direct experimental evidence. While the concept is intellectually interesting and consistent with the data, the global effects on the epigenome and impact on other TFs are not directly tested. These claims require additional experimental validation to be fully supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "About one-third of direct Notch target genes in human T-ALL are regulated by SPS sites (~38 of 107 genes), mouse mK4 cells have ~2500 Notch dimer-dependent binding sites, and in Drosophila wing disc cells, 8 of 154 Notch-responsive genes are E(spl) genes clustered in a 40 kb locus containing SPS sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C53 accurately cite prior genomic studies (Severson et al. 2017, Hass et al. 2015, Housden et al. 2013) to provide context for the prevalence of SPS sites. This information is relevant for interpreting the biological significance of the findings, though the authors don't directly validate these numbers.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Notch PEST domain mutations are common in T-ALL, CycC functions as a haploinsufficient tumor suppressor in T-ALL by stabilizing NICD, and T-ALL cells are 'addicted' to Notch and dependent on long-duration signals. About 30% of Notch target genes in T-ALL use SPS-containing enhancers, providing insight into how alterations in NICD turnover could promote tumorigenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C57 appropriately cite and integrate prior work on T-ALL (Weng et al. 2004, Li et al. 2014, Severson et al. 2017) with the current findings to provide disease relevance. The connection between the mechanism discovered here and T-ALL biology is logical, though the direct applicability to human disease would require additional validation.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,322 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "ATAC-seq was performed on GFP-positive and GFP-negative cells from Tg(krt4:gfp) zebrafish embryos at 11 hpf, identifying nucleosome-free regions (NFRs) with differential accessibility. About 5% of NFRs showed enrichment in one cell type, with strong reproducibility between replicates and expected enrichment at transcription start sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C5 and C38-C45 collectively describe a well-executed ATAC-seq experiment with appropriate controls and quality metrics. The reproducibility between replicates (C40), expected signal at TSS (C41), and validation of GFP specificity (C38) support the technical quality. The quantitative findings (C39) are clearly stated with statistical thresholds.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "GFP-positive NFRs overlapping H3K27Ac peaks (cluster 1) were strongly enriched for periderm-related GO terms, with significantly stronger enrichment than NFRs lacking H3K27Ac. Ten tested elements from this cluster showed periderm enhancer activity in reporter assays.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C49 demonstrate convergent evidence from bioinformatic analysis (GO enrichment) and functional validation (reporter assays). The GO enrichment is quantified (C46-C47) and the functional validation tested 10/10 elements successfully (C48-C49), providing strong support for identifying bona fide periderm enhancers.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "RNA-seq identified 4,331 genes with higher expression in GFP-positive cells and 4,216 in GFP-negative cells. These expression patterns correlated with known EVL genes and with chromatin accessibility patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C53 describe RNA-seq results with clear statistical thresholds (q<0.05) and validation against external databases (C52). The correlation between accessibility and expression (C53) provides internal consistency. The bidirectional differential expression strengthens confidence in cell sorting specificity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Motif analysis identified 12 transcription factor binding sites enriched in zebrafish periderm enhancers, with temporal clustering revealing that IRF6 sites are enriched in early-acting enhancers while TFAP2 and GATA sites are enriched in late-acting enhancers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C57 describe systematic motif enrichment analysis with temporal resolution. The inference that Irf6 acts earlier than Tfap2/Gata (C57) is reasonable given the temporal enrichment patterns (C55-C56), though this remains correlative rather than mechanistic evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C58",
+      "C59"
+    ],
+    "result": "Deletion of GRHL, KLF, TFAP2, or C/EBP motifs from zebrafish periderm enhancers reduced their activity in reporter assays.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C59 provide functional validation of predicted motifs through deletion analysis. The consistent reduction in enhancer activity upon motif deletion across multiple transcription factor families provides strong evidence for their functional importance, though quantitative effect sizes are not fully reported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C61"
+    ],
+    "result": "GRHL paralogs are predicted to contribute to regulation of most genes expressed in periderm based on the widespread presence of GRHL binding sites in periderm enhancers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C61 is an inference supported by the observation that ~70% of periderm-enriched genes are associated with enhancers containing GRHL sites (referenced in C61 context via Figure 2F). This is a reasonable inference from the motif distribution data, though direct evidence of GRHL binding would strengthen the claim.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "A gkmSVM classifier trained on zebrafish periderm enhancers achieved auROC of 0.88 and auPRC of 0.87, successfully identifying periderm enhancers genome-wide with validation through H3K27Ac enrichment, GO term analysis, and gene expression correlation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C68 describe comprehensive validation of the machine learning classifier through multiple independent lines of evidence: cross-validation metrics (C62-C64), genome-wide scoring validation (C65-C66), and biological validation through GO enrichment (C67) and expression correlation (C68). The performance metrics are appropriate and well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "The zebrafish periderm enhancer classifier successfully identified human epithelial enhancers, with high-scoring tiles enriched in keratinocyte enhancers. Three human enhancers (IRF6-9.7, ZNF750-37, PPL-8.3) showed periderm activity in zebrafish reporter assays, with functional conservation of KLF4 binding sites between human and zebrafish PPL enhancers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C76 demonstrate cross-species applicability of the classifier with functional validation. The enrichment in epithelial cell types (C69-C70) and successful reporter assays in zebrafish (C71-C74) support conservation of regulatory logic. The KLF4 deletion experiments (C75) and modest sequence homology (C76) provide evidence for functional conservation despite limited sequence conservation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "ATAC-seq on mouse E14.5 palate epithelium identified 6,079 H3K27Ac-high and 8,177 H3K27Ac-low elements enriched for oral epithelium GO terms. Motif analysis revealed 18 enriched sequences, with 6 matching zebrafish periderm enhancer motifs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C81 describe parallel analysis in mouse tissue with similar methodology to zebrafish. The GO enrichment (C79) validates tissue specificity, and the overlap of 6 motifs with zebrafish (C81) supports conservation of regulatory mechanisms. The inference about shared transcription factors is reasonable but remains correlative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C82",
+      "C83"
+    ],
+    "result": "ATAC-seq on human oral epithelial cells (HIOEC) identified 15,972 H3K27Ac-positive peaks enriched for epithelial structure GO terms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C83 describe ATAC-seq results from human cell line with GO validation. The approach parallels the zebrafish and mouse analyses, providing a third species for comparative analysis. The GO enrichment supports tissue-appropriate enhancer identification.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "Re-analysis of GWAS data identified 14 OFC-associated SNPs near KRT18, with only 3 (SNP1, SNP2, SNP13) in active chromatin. SNP2 had a significantly negative deltaSVM score (p=0.028, Bonferroni corrected) when using the zebrafish classifier, and the strongest negative deltaSVM with mouse and human classifiers (though not significant).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C87 describe systematic prioritization of SNPs using multiple classifiers. The statistical significance for SNP2 with the zebrafish classifier (C86) is properly corrected for multiple testing. The consistency across classifiers (C87), despite lack of formal significance, strengthens the case for SNP2, though the authors appropriately note the lack of significance for the mammalian classifiers.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C88"
+    ],
+    "result": "Luciferase assays in GMSM-K oral keratinocytes showed that SNP2, but not SNP1, had significant allele-specific effects on enhancer activity, with the risk allele driving lower activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C88 provides functional validation of SNP2 in an appropriate cell type. The allele-specific effect with the predicted direction (risk allele reduces activity) supports the computational predictions. However, the claim would be strengthened by reporting effect sizes and statistical details beyond significance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C89"
+    ],
+    "result": "CRISPR deletion of the 109 bp region flanking SNP2 reduced KRT18 and KRT8 expression in GMSM-K cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C89 provides strong functional evidence that the SNP2 region regulates KRT18/KRT8 expression. However, the comparison of 3 knockout clones to a single control colony is a limitation. Additional controls and more control clones would strengthen confidence, though the direction of effect is consistent with predictions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C90"
+    ],
+    "result": "One mouse embryo transgenic for the SNP2 risk allele with 8 copies of the reporter showed mild periderm expression in face and limbs, while embryos with 2 copies showed no consistent expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C90 describes a single positive result that may depend on copy number rather than enhancer activity per se. The lack of reproducible expression in other embryos and the apparent copy number dependence make it unclear whether this represents genuine enhancer activity or a technical artifact. The authors acknowledge this limitation but the result remains inconclusive.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C91"
+    ],
+    "result": "The risk allele of SNP2 reduces binding site scores for SNAI1/2, NFATC1/2/4, and SIX1/2, while creating high-scoring sites for HNF4A/G and NR2F1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C91 describes computational prediction of altered transcription factor binding. This is a straightforward bioinformatic analysis, though it remains predictive rather than experimentally validated. The biological significance of these specific factors in the context of OFC risk is not established.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "GWAS studies have identified SNPs associated with OFC at loci where risk genes are expressed in periderm, but distinguishing functional SNPs from those in linkage disequilibrium is challenging because periderm enhancer sequences are poorly characterized.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2 and C10-C15 establish the background and rationale for the study. These are well-supported by citations to published literature and describe established knowledge about OFC genetics, GWAS limitations, and the challenge of identifying functional non-coding variants.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "The gkmSVM method scores SNP effects (deltaSVM) based on 10-mer enrichment weights, and deltaSVM values correlate with SNP effects on enhancer activity in reporter assays.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C18 describe an established computational method with appropriate citations. The correlation between deltaSVM and reporter activity (C18) is from prior work and provides the rationale for using this approach, though the authors note the correlation is 'reasonable' rather than perfect.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "GWAS meta-analyses identified lead SNPs near KRT8/KRT18, genes highly expressed in periderm. Re-analysis revealed 13 additional SNPs with suggestive association to OFC at the 12q13 locus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C22 describe published GWAS findings (C19-C21) and new re-analysis (C22). The re-analysis is straightforward and the identification of additional suggestive SNPs is well-supported, though 'suggestive' indicates these do not reach genome-wide significance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C35",
+      "C36"
+    ],
+    "result": "Zebrafish periderm is a tractable model for studying human periderm enhancers because primary cells are readily isolated, and despite distinct embryonic origins, the genetic pathways underlying periderm development are shared between zebrafish and mammals, with enrichment for transcription factor binding sites being conserved even when DNA sequences are not.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C36 establish the rationale for using zebrafish as a model system. The claims about shared genetic pathways (C27) and distinct origins (C28-C33) are well-supported by citations. The principle of conserved binding site enrichment despite sequence divergence (C25-C26) is established in the literature. The connection to human OFC risk genes (C36) is appropriately framed as a prediction.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C37"
+    ],
+    "result": "In Tg(krt4:gfp)gz7TG embryos, GFP is reported to be present exclusively in the periderm after 8 hpf.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C37 describes a published transgenic line with appropriate citation. This is established prior work that provides the foundation for the cell sorting strategy.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9"
+    ],
+    "result": "All three classifiers (trained on zebrafish, mouse, and human enhancers) identified SNP2 as having the strongest effect among 14 OFC-associated SNPs, with highest significance from the zebrafish classifier. Reporter and deletion analyses support SNP2 lying within a periderm enhancer regulating KRT18/KRT8.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C9 summarize the main finding integrating computational prediction and functional validation. The convergence of all three classifiers on the same SNP (C7) is notable, and the functional validation (C9) through multiple approaches strengthens the conclusion. However, the mouse transgenic data (C90) is inconclusive, which somewhat weakens the overall support.",
+    "result_type": "MAJOR"
+  }
+]

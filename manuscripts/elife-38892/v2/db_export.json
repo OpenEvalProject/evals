@@ -1,0 +1,1686 @@
+{
+  "submission": {
+    "id": "fa9fc21e-fbae-4fe9-bda9-f417a5424a70",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T06:28:30.050142Z",
+    "updated_at": "2025-12-02T06:28:30.050142Z"
+  },
+  "content": [
+    {
+      "id": "74a2369f-909f-4392-8986-5a84761d6842",
+      "submission_id": "fa9fc21e-fbae-4fe9-bda9-f417a5424a70",
+      "content_type": "manuscript",
+      "content_text": "# Yeast Ded1 promotes 48S translation pre-initiation complex assembly in an mRNA-specific and eIF4F-dependent manner\n\n## Authors\n\n- Neha Gupta<sup>1</sup> ([ORCID: 0000-0002-1845-2940](https://orcid.org/0000-0002-1845-2940))\n- Jon R Lorsch<sup>1</sup> ([ORCID: 0000-0002-4521-4999](https://orcid.org/0000-0002-4521-4999)) \u2020\n- Alan G Hinnebusch<sup>1</sup> ([ORCID: 0000-0002-1627-8395](https://orcid.org/0000-0002-1627-8395)) \u2020\n\n### Affiliations\n\n1. Eunice Kennedy Shriver National Institute of Child Health and Human Development National Institutes of Health Bethesda United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nDEAD-box RNA helicase Ded1 is thought to resolve secondary structures in mRNA 5'-untranslated regions (5'-UTRs) that impede 48S preinitiation complex (PIC) formation at the initiation codon. We reconstituted Ded1 acceleration of 48S PIC assembly on native mRNAs in a pure system, and recapitulated increased Ded1-dependence of mRNAs that are Ded1-hyperdependent in vivo. Stem-loop (SL) structures in 5'-UTRs of native and synthetic mRNAs increased the Ded1 requirement to overcome their intrinsically low rates of 48S PIC recruitment. Ded1 acceleration of 48S assembly was greater in the presence of eIF4F, and domains mediating one or more Ded1 interactions with eIF4G or helicase eIF4A were required for efficient recruitment of all mRNAs; however, the relative importance of particular Ded1 and eIF4G domains were distinct for each mRNA. Our results account for the Ded1 hyper-dependence of mRNAs with structure-prone 5'-UTRs, and implicate an eIF4E\u00b7eIF4G\u00b7eIF4A\u00b7Ded1 complex in accelerating 48S PIC assembly on native mRNAs.\n\n## Introduction\n\nIn canonical translation initiation in eukaryotes, a ternary complex (TC), consisting of eukaryotic initiation factor 2 (eIF2), Met-tRNAiMet, and GTP, along with eIF1, eIF1A, eIF5, eIF4B, and eIF3, binds to the small (40S) ribosomal subunit to form a 43S pre-initiation complex (PIC). The 43S PIC binds to the 5'-end of mRNA and scans the 5'-untranslated region (UTR) to identify the start codon, resulting in the formation of the 48S PIC. eIF4F complex, comprised of eIF4E (a cap binding protein), eIF4G (a scaffolding protein), and eIF4A (a\u00a0DEAD-box RNA helicase), interacts with the mRNA m7G cap and aids in recruitment of the 43S PIC to the 5'-end of the mRNA (reviewed in Dever et al., 2016; Hinnebusch, 2014).\n\neIF4A promotes 48S PIC formation in vitro and translation in vivo of virtually all mRNAs regardless of their structural complexity (Pestova and Kolupaeva, 2002; Sen et al., 2015; Yourik et al., 2017). Yeast ribosome profiling studies show that the majority of cellular mRNAs have strong and similar dependence on eIF4A for their proper translation in cells (Sen et al., 2015). Additionally, eIF4A is an essential protein, and small decreases in eIF4A cellular concentrations reduce bulk translation in vivo, further emphasizing the critical role of eIF4A in translation of most mRNAs (Firczuk et al., 2013). Yeast eIF4A is a weak helicase when unwinding RNA duplexes in vitro (Rajagopal et al., 2012; Rogers et al., 1999). Recent evidence suggests that mammalian eIF4A modulates the structure of the 40S subunit to enhance PIC attachment (Sokabe and Fraser, 2017).\n\nDed1 is a yeast DEAD-box RNA helicase that promotes translation in vivo of reporter mRNAs with longer or structured 5'-UTRs (Berthelot et al., 2004; Chiu et al., 2010; Sen et al., 2015). Like eIF4A, Ded1 is essential for yeast growth and stimulates bulk translation initiation in vivo (Chuang et al., 1997; de la Cruz et al., 1997). However, ribosome profiling of conditional ded1 mutants revealed that native mRNAs with 5'-UTRs that are longer and more structured than average yeast 5'-UTRs exhibit a greater than average reduction in translational efficiency (TE) relative to all other mRNAs on Ded1 inactivation (Ded1-hyperdependent mRNAs); whereas mRNAs with shorter and less structured 5'-UTRs exhibit increased relative TEs in ded1\u00a0cells (Ded1-hypodependent mRNAs) (Sen et al., 2015).\n\nYeast Ded1 can unwind model RNA duplexes and act as an RNA chaperone or RNA-protein complex remodeler in vitro (Bowers et al., 2006; Iost et al., 1999; Yang and Jankowsky, 2006). Translation stimulation by Ded1 requires its ATPase activity (Hilliker et al., 2011; Iost et al., 1999). Mutations in the Ded1 ATPase domain (Ded1-E307A and Ded1-R489A) impair ATP binding and hydrolysis, and these mutants have dominant-negative effects on translation both in cell extracts and in vivo, evoking stress granule formation in the latter (Hilliker et al., 2011).\n\nDed1 can physically interact individually with purified eIF4E, eIF4G, eIF4A, or Pab1 (poly(A) binding protein), and can bind simultaneously to eIF4A\u00b7eIF4E\u00b7eIF4G (eIF4F) or eIF4E\u00b7eIF4G, in an RNA-independent manner (Gao et al., 2016; Hilliker et al., 2011; Senissar et al., 2014). Ded1 also interacts with the eIF4F complex in yeast extracts, supporting the physiological relevance of these interactions (Hilliker et al., 2011; Senissar et al., 2014). According to a proposed model, Ded1-eIF4G-mRNA interaction is thought to repress translation by promoting accumulation of mRNPs in stress granules, whereas ATP hydrolysis by Ded1 moves the repressed mRNPs back into the translation cycle (Hilliker et al., 2011). However, the role of Ded1-eIF4F interactions in the stimulatory function of Ded1 in translation initiation remains to be elucidated. Ded1 interacts with eIF4A through its N-terminal domain (Ded1-NTD) and this interaction is required for eIF4A stimulation of Ded1\u2019s RNA-duplex unwinding activity (Gao et al., 2016). Deletion of the Ded1-NTD confers a cold-sensitive growth phenotype in cells, consistent with a role for eIF4A stimulation of Ded1 function in vivo (Banroques et al., 2011; Gao et al., 2016). Yeast eIF4G contains three RNA binding domains, N-terminal RNA1, central RNA2, and C-terminal RNA3 (Berset et al., 2003); and while none of the three is essential, simultaneous deletion of RNA2 and RNA3 is lethal (Park et al., 2011). In vitro, eIF4G variants lacking any of the three RNA binding domains exhibit similar affinities for eIF4A, support similar rates of ATP-hydrolysis by the eIF4F complex (albeit with higher Km values for ATP), but lack the preference of WT eIF4F for 5'-overhang substrates during unwinding (Rajagopal et al., 2012). The Ded1 C-terminal domain (Ded1-CTD) interacts with the eIF4G-RNA3 domain, and Ded1-eIF4G interaction decreases the rate of RNA unwinding while increasing Ded1 affinity for RNA in vitro (Hilliker et al., 2011; Putnam et al., 2015). A Ded1 variant lacking the CTD conferred reduced reporter mRNA translation compared to WT Ded1 in cell extracts, supporting a stimulatory role for the Ded1-CTD interaction with eIF4G in translation initiation (Hilliker et al., 2011). Ded1 also interacts with the RNA2 domain of eIF4G and with eIF4E (Senissar et al., 2014), but the physiological relevance of these interactions is unknown.\n\nWe previously demonstrated functions of eIF4F, eIF4B, and eIF3 in stimulating the rate and extent of mRNA recruitment by 43S PICs in a fully purified yeast initiation system for native RPL41A mRNA, containing a short and relatively unstructured 5'-UTR (Mitchell et al., 2010). Although Ded1 is essential in vivo, it was dispensable for recruitment of this mRNA in vitro. Considering that RPL41A was judged to be Ded1-hypodependent in vivo by ribosome profiling of ded1 mutants (Sen et al., 2015), we asked whether recruitment of Ded1-hyperdependent mRNAs would require Ded1 in the reconstituted system. We investigated whether the presence of defined stem-loop (SL) structures in native or synthetic mRNAs would confer greater Ded1-dependence for rapid recruitment in vitro. Finally, we examined the role of the RNA2 and RNA3 domains of eIF4G and the NTD and CTD of Ded1 that mediate Ded1 interactions with the eIF4F complex in promoting Ded1\u2019s ability to accelerate mRNA recruitment by 43S PICs. Our findings demonstrate that Ded1 accelerates recruitment of native and synthetic mRNAs, overcoming the inhibitory effects of structured leader sequences and conferring relatively greater stimulation for mRNAs hyperdependent on Ded1 in vivo, all in a manner consistent with stimulation of Ded1 function by formation of a Ded1-eIF4F complex.\n\n## Results\n\n### Ded1 enhances the rate of recruitment of all natural mRNAs tested\n\nWe set out to reconstitute the function of Ded1 in 48S PIC assembly in a yeast translation initiation system comprised of purified components (Mitchell et al., 2010; Walker et al., 2013; Yourik et al., 2017). Pre-assembled 43S PICs, containing 40S subunits and factors eIF1, eIF1A, eIF5, eIF2\u00b7GDPNP\u00b7Met-tRNAi, eIF4G\u00b74E, eIF4A, eIF4B, and eIF3, were pre-incubated with or without Ded1, and reactions were initiated by addition of ATP and 32P-labeled m7Gppp-capped mRNA (synthesized in vitro). Formation of 48S complexes was monitored over time using a native gel electrophoretic mobility shift assay (EMSA) to resolve free and 48S-bound mRNAs. An\u00a0~20 fold excess of unlabeled-capped mRNA was added to reaction aliquots at each time point to quench further recruitment of 32P-labeled mRNA (\u2018pulse-quench\u2019). By varying the concentration of Ded1, this assay yields the apparent rate constants (kapp) for 48S PIC formation at each Ded1 concentration, the maximal rate at saturating Ded1 (kmax), the Ded1 concentration required for the half-maximal rate of 48S formation (K1/2), and the reaction endpoints (percentage of mRNA recruited) at each Ded1 concentration. The addition of\u00a0~20 fold excess non-radiolabeled mRNA in the quench was adequate to prevent further recruitment of 32P-labeled mRNA, and did not dissociate the pre-formed 32P-labeled 48S complexes on the timescale of the recruitment experiments (Figure 1\u2014figure supplement 1A\u2013B and Figure 2\u2014figure supplement 1E). Our purified Ded1 hydrolyzed ATP in an RNA-dependent manner with kcat and\u00a0$K_{m}^{ATP}$ values consistent with previous measurements (Figure 1\u2014figure supplement 1C\u2013E) (Iost et al., 1999; Senissar et al., 2014). Moreover, the Ded1 bound a fluorescently labeled single-stranded mRNA in the presence or absence of ADP or ADPNP with KD values consistent with published values (Figure 1\u2014figure supplement 1F) (Banroques et al., 2008; Iost et al., 1999).\n\nWe began by analyzing the effect of Ded1 on recruitment of RPL41A mRNA, a short transcript of 310 nucleotides (nt), with 5'-UTR of only 24 nt (Figure 1A and Figure 1\u2014figure supplement 1G), and a low degree of predicted secondary structure (Mitchell et al., 2010). RPL41A behaved like a Ded1-hypodependent mRNA in ribosome profiling experiments, exhibiting increased relative TE in ded1 mutant versus WT cells (Sen et al., 2015). Consistent with this, recruitment of RPL41A mRNA in vitro was achieved previously without Ded1 (Mitchell et al., 2010). Nevertheless, with our more sensitive pulse-quench approach, we found that addition of saturating Ded1 increased the kmax of RPL41A by\u00a0~2.8 fold from 0.95 \u00b1\u00a00.1 min-1 to 2.7\u00a0\u00b1 0.3 min-1 (Figure 1B, cf. blue vs. orange, and Figure 1\u2014figure supplement 1H-red), with a\u00a0$K_{1/2}^{Ded1}$ of 58\u00a0\u00b1 8 nM (Figure 1C). Thus, despite its low Ded1-dependence relative to most other mRNAs in vivo, RPL41A recruitment is appreciably stimulated by Ded1 in vitro.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/38892/elife-38892-fig1-v2.jpg)\n\n**Figure 1.:** (A) Schematics of native RPL41A mRNA, and mRNA reporters for other native yeast mRNAs comprised of the 5'-UTR and first 60 nt of the ORF. ORFs are depicted as boxes with an AUG start codon; wavy lines depict 5'- and 3'-UTRs of the indicated nucleotide lengths; black balls depict m7Gppp caps; SLs in the 5'-UTRs of SFT2 and PMA1 identified in vivo are shown as hairpins, whose folding free energies are given in Figure 2\u2014figure supplement 1A. (B) Upper: Maximum rates of recruitment (kmax) in the absence (blue) and presence (orange) of saturating Ded1 for mRNAs in (A). Lower: Fold-changes in kmax with or without Ded1 $(k_{max}^{+Ded1}/k_{max}^{\u2212Ded1})$ calculated from data in upper plot. (C) Concentrations of Ded1 resulting in half-maximal rates\u00a0$(K_{1/2}^{Ded1})$. (D) Endpoints of mRNA recruitment as percentages of total mRNA (15 nM) bound to 48S PICs (30 nM) in absence (gold) or presence (purple) of saturating Ded1. (E) Plot of $K_{1/2}^{Ded1}$ from (C) versus fold-change in $k_{max}^{+Ded1}/k_{max}^{\u2212Ded1}$from (B, lower) for each mRNA. Red points and error bars indicate mean values and one standard deviation, respectively, for each parameter. Line generated by linear regression analysis (Y\u00a0=\u00a024.02*X\u00a0+\u00a028.98, R2\u00a0=\u00a00.944, p-value=0.001). (B\u2013D) Bars indicate mean values calculated from the three independent experiments represented by the black data points. See Figure 1\u2014figure supplement 1 and Figure 1 \u2014source data 1.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/38892/elife-38892-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Addition of excess unlabeled capped RPL41A mRNA effectively stops recruitment of 32P labeled RPL41A mRNA. Unlabeled capped RPL41A was added along with 32P-labeled capped RPL41A mRNA (and ATP) at 10X (red), 20X (blue) or 33X (green) the amounts of labeled mRNA. The 20X addition completely inhibited detectable 48S PIC assembly on 32P-labeled mRNA, and a higher concentration of unlabeled RPL41A (~33X) did not confer further inhibition. The results for \u201820X \u2013 2 min\u2019 (cyan) show that addition of 20X unlabeled RPL41A after 2 min of incubation with 32P-capped RPL41A to form 48S PICs containing 32P-mRNA did not result in loss of signal from the complex on the timescale of the kinetic assays employed in this study indicating that the 48S PIC is stable to the chase once formed. Note the discontinuity in the Y-axis. (B) Dissociation of 48S PICs assembled on RPL41A and SFT2 mRNAs after addition of excess cold (non-radiolabeled) capped mRNA as a \u2018pulse-quench\u2019 was monitored over time. 48S PICs were assembled for 15 min with or without Ded1 and chased with an\u00a0~20 fold molar excess of the corresponding cold-capped mRNAs. The percentage of labeled mRNA remaining bound to 48S PICs was quantified after the indicated times of \u2018pulse-quench\u2019. No detectable dissociation was observed over the indicated time-course for these two mRNAs, or for any other mRNAs depicted in Figure 1A (data not shown), indicating that 48S PICs assembled on RPL41A and SFT2 mRNAs are highly stable and that cold-capped mRNAs only sequester unbound PICs. (C) Purified His6-Ded1 and size markers (lane 1) were resolved by SDS-PAGE on a 4\u00a0\u2013\u00a015% gel and stained with SimplyBlue Safestain. (D) Observed rates of RNA-dependent ATP hydrolysis at different ATP concentrations in the presence of saturating (2 \u03bcM) uncapped RPL41A mRNA for WT and mutant Ded1 proteins, the latter harboring the alanine substitution of Glu-307 (E307A) in the DEAD motif (Ded1E307A); or truncations of the NTD or CTD domain, as indicated in Figure 4\u2014figure supplement 1A. Data from two independent experiments are shown, plotting mean values \u00b1 1 SD. Data was fitted with the Michaelis-Menten equation. (E) kcat values (at saturating ATP concentration of 5 mM) and $K_{m}^{ATP}$ were determined from the experiments described in (D). WT Ded1, Ded1-\u0394CTD, and Ded1-\u0394NTD have similar kcat and $K_{m}^{ATP}$\u2019 values, whereas reaction kinetics with Ded1E307A are comparable to \u2018No mRNA\u2019 and \u2018No ATP\u2019 controls conducted with WT Ded1. The ATPase activity of WT Ded1 is similar to previously published values, ranging from kcat\u00a0=\u00a030\u00a0\u2013\u00a0680 min-1 depending on the RNA substrate used, and Km values for ATP of 280\u00a0\u2013\u00a0340 \u03bcM (Iost et al., 1999; Senissar et al., 2014). Note the discontinuity in the Y-axis. Bars represent the mean with dots as individual experimental values (n\u2265 3). $K_{m}^{ATP}$\u00a0is expressed as mean values\u00a0\u00b1\u00a01 SD. (F) Binding affinity of WT Ded1 for single-stranded RNA was determined in the presence or absence of the indicated nucleotides (5 mM) by measuring changes in fluorescence anisotropy of a single-stranded RNA labeled with 3'- 6-Fluorescein over Ded1 concentrations ranging from 0 to 750 nM. The determined Kd values are similar to previously reported measurements: Kd\u00a0=\u00a0180\u00a0\u2013\u00a0230 nM (no nucleotide); 210\u00a0\u2013\u00a0290 nM (ADP); and 35\u00a0\u2013\u00a040 nM (ADPNP) (Banroques et al., 2008; Iost et al., 1999). Addition of buffer in the absence of Ded1 produced no change in fluorescence anisotropy of the RNA. Mean values\u00a0\u00b1\u00a01 SD are reported (n\u00a0=\u00a02). (G) [\u03b132P]-capped mRNAs used in mRNA recruitment assays in Figure 1A resolved by electrophoresis on a 6% denaturing urea-TBE gel. (H) The apparent rates (kapp) of 48S PIC assembly measured as a function of Ded1 concentration for the indicated mRNAs. Data were fitted to a hyperbolic curve with an offset to account for the rates observed in the absence of Ded1, allowing calculation of kmax and $K_{1/2}^{Ded1}$ values reported in Figure 1B\u2013C, respectively. Data points are mean values with error bars (1 SD) at different Ded1 concentrations (n\u00a0=\u00a03). (I) Ded1 stimulation of mRNA recruitment is dependent on the ATPase activity of Ded1. Mean observed rates of 48S assembly (n\u00a0=\u00a03) with no Ded1 (blue bars), saturating Ded1 (orange bars, determined as in Figure 1B), and ATPase deficient mutant Ded1E307A (green bars). (J) Interference by Ded1E307A with WT Ded1 stimulation of RPL41A recruitment. Ded1E307A was added at 500 nM to reactions containing the indicated concentrations of WT Ded1 (blue curve) and the kinetics of mRNA recruitment were measured and compared to those obtained with WT Ded1 (red curve) or Ded1E307A (green points) alone. Mixing Ded1E307A with WT Ded1 increased the $K_{1/2}^{Ded1}$ to 253\u00a0\u00b1 27 nM from 60\u00a0\u00b1 7 nM observed for WT Ded1 alone, but did not diminish kmax, consistent with the mutant functioning as a competitive inhibitor. (K) [\u03b132P]-capped mRNAs resolved by electrophoresis on a 4% non-denaturing gel. mRNAs exhibit isoforms of different mobility (mRNA only lanes). (L) Ded1-hyperdendent mRNAs have a higher energy barrier (dark grey) as compared to Ded1-hypodependent mRNAs (light grey) and require higher Ded1 concentrations to lower the activation energy for the Ded1-accelerated rate-limiting step until the energy barrier for a non-Ded1 dependent step (blue) becomes rate-limiting. For OST3 and FET3 mRNAs, Ded1 can only partially lower the energy barrier (red dotted line). See Figure 1\u2014figure supplement 1 \u2014source data 1.\n\nWe next examined Ded1 stimulation of another Ded1-hypodependent mRNA, HOR7, and several Ded1-hyperdependent mRNAs, SFT2, PMA1, OST3, and FET3, which exhibited reduced TEs in ded1 versus WT cells (Sen et al., 2015). SFT2 and PMA1 mRNAs are noteworthy in containing SL structures in their 5'-UTRs detected in vivo (Rouskin et al., 2014). Because these mRNAs exceed the maximum length that can be resolved by EMSA (~400 nt), we generated reporter mRNAs with the 5'-UTR and first 60 nt of coding sequences (CDS) of each mRNA (Figure 1A and Figure 1\u2014figure supplement 1G). (For brevity, we refer to these reporter mRNAs simply by their gene names.) Without Ded1, the rate of HOR7 recruitment was 1.3\u00a0\u00b1 0.16 min-1, and saturating Ded1 stimulated recruitment by\u00a0~2 fold (kmax\u00a0=\u00a02.8\u00a0\u00b1 0.4 min-1) with a\u00a0$K_{1/2}^{Ded1}$\u00a0of 115.5\u00a0\u00b1 17 nM, results that were similar to those for Ded1-hypodependent RPL41A (Figure 1B\u2013C and Figure 1\u2014figure supplement 1H-blue curve). Strikingly, without Ded1, the four Ded1-hyperdependent mRNAs were recruited at rates 2.5- to 15-fold lower compared to the two Ded1-hypodependent mRNAs (Figure 1B, blue), and these rates increased by an order of magnitude on addition of Ded1 (Figure 1B, orange and bottom panel; and Figure 1\u2014figure supplement 1H). The Ded1-hyperdependent mRNAs also required higher Ded1 concentrations to achieve these maximal rates (Figure 1C). The acceleration of mRNA recruitment by Ded1 required its ATPase activity, as ATPase-deficient Ded1 variant Ded1E307A (Figure 1\u2014figure supplement 1D\u2013E) (Iost et al., 1999) did not accelerate recruitment of any of the mRNAs (Figure 1\u2014figure supplement 1I).\u00a0Moreover, the presence of Ded1E307A interfered with stimulation of RPL41A recruitment by WT Ded1, increasing the $K_{1/2}^{Ded1}$ by\u00a0~4 fold (Figure 1\u2014figure supplement 1J).\n\nPMA1 and OST3 also exhibited low endpoints of recruitment without Ded1, 30\u00a0\u00b1 5% and 41\u00a0\u00b1 4%, respectively, which increased to 91\u00a0\u00b1 2% and 86\u00a0\u00b1 3%, respectively, on Ded1 addition (Figure 1D). It was suggested that Ded1 acts as an RNA chaperone to aid transitions between different RNA conformations (Yang et al., 2007). In fact, two or more conformers of OST3 (and other mRNAs) were observed in native gel electrophoresis that likely represent differently folded, stable mRNA conformers (Figure 1\u2014figure supplement 1K). Perhaps only one of these conformers of PMA1 and OST3 is competent for 48S PIC assembly, and Ded1 facilitates isomerization among them.\n\nInterestingly, a linear relationship was observed between the fold-acceleration by Ded1 and the $K_{1/2}^{Ded1}$, such that Ded1-hypodependent and Ded1-hyperdependent mRNAs cluster separately from each other along the line (Figure 1E). One explanation could be that Ded1-hyperdependent mRNAs have a higher rate-limiting activation energy barrier for 48S PIC assembly in the absence of Ded1 compared to the Ded1-hypodependent mRNAs, consistent with the latter\u2019s relatively higher rates of recruitment without Ded1 (Figure 1B, blue bars, RPL41A and HOR7 versus SFT2, PMA1, OST3, and FET3). Accordingly, the hyperdependent mRNAs require relatively higher Ded1 concentrations to lower this barrier to the point at which a Ded1-independent step becomes rate limiting (SFT2 and PMA1) or where Ded1 cannot lower the Ded1-dependent barrier further (OST3 and FET3) (Figure 1\u2014figure supplement 1L).\n\nTaken together, the data presented above demonstrate that mRNAs with long and structured 5'-UTRs, found to be hyperdependent on Ded1 for translation in vivo, are inherently less capable of PIC recruitment and more dependent on Ded1 for rapid recruitment in vitro than are mRNAs hypodependent on Ded1 in vivo.\n\n### Secondary structures in the 5'-UTR increase Ded1-dependence in 48S PIC assembly\n\nGiven that mRNAs with heightened Ded1-dependence in vivo have a greater than average potential to adopt secondary structures involving the 5'-UTR (Sen et al., 2015), we investigated if the stable SL structures previously detected in the 5'-UTRs of SFT2 and PMA1 were responsible for their elevated Ded1 dependence (Rouskin et al., 2014). To this end, we introduced mutations to eliminate the SL in each mRNA, or (for SFT2) to strengthen the SL (Figure 2A and Figure 2\u2014figure supplement 1A\u2013B). Without Ded1, the SL-disrupted version of PMA1, PMA1-M, showed\u00a0~2 fold higher endpoints of recruitment than WT PMA1 (PMA1-M\u00a0=\u00a062\u00a0\u00b1 2.5%, PMA1\u00a0=\u00a030\u00a0\u00b1 5%, Figure 2B, gold). PMA1-M was also recruited at rates\u00a0~\u00a04 fold higher than PMA1 (kmax\u00a0=\u00a01.2\u00a0\u00b1 0.1 min-1 (PMA1-M) vs. 0.33\u00a0\u00b1 0.06 min-1 (PMA1); Figure 2C, blue), consistent with the idea that the SL inhibits mRNA recruitment. Ded1 increased the rate of PMA1-M recruitment to yield a kmax similar to that for PMA1 (Figure 2C, orange), but at a much lower Ded1 concentration for PMA1-M\u00a0$(K_{1/2}^{Ded1}$\u00a0=\u00a040\u00a0\u00b1 6 nM) versus PMA1 (~280 nM) (Figure 2D and Figure 2\u2014figure supplement 1C, black vs. purple). Similar results were observed for the SL-disrupted SFT2 variant, SFT2-M, as follows. Compared to WT SFT2 mRNA, SFT2-M showed an\u00a0~2 fold faster recruitment in the absence of Ded1 (0.88\u00a0\u00b1 0.08 min-1 vs. 0.44\u00a0\u00b1 0.05 min-1, Figure 2C, blue) and an\u00a0~2 fold lower Ded1 concentration required to accelerate recruitment to half the maximum rate: $K_{1/2}^{Ded1}$\u00a0=\u00a0119 \u00b17 nM (SFT2-M) vs. 236\u00b118 nM (SFT2) (Figure 2C, orange; Figure 2D and Figure 2\u2014figure supplement 1C, green vs. orange curves). Importantly, both PMA1-M and SFT2-M mRNAs clustered with the Ded1-hypodependent mRNAs instead of the Ded1-hyperdependent mRNAs in the plot of fold-acceleration versus $K_{1/2}^{Ded1}$ (Figure 2E, blue). In contrast, the SFT2-M2 variant harboring a SL of enhanced stability ($\u0394$G\u00b0\u00a0=\u00a0\u221219.1 kcal/mol vs. \u22129.4 kcal/mol for WT SFT2; Figure 2A and Figure 2\u2014figure supplement 1A\u2013B) was not recruited without Ded1, and exhibited only low-level recruitment at the highest achievable Ded1 concentration (Figure 2\u2014figure supplement 1D). These results strongly suggest that Ded1 accelerates the recruitment of WT SFT2 and PMA1 mRNAs, and increases the endpoint of PMA1 recruitment, in part by melting the SL structures in their 5'-UTRs. As the PMA1 SL is\u00a0~120 nt from the 5'-cap, it is likely that Ded1 resolves the SL to accelerate scanning of the PIC through the 5'-UTR.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/38892/elife-38892-fig2-v2.jpg)\n\n**Figure 2.:** (A) Schematics of derivatives of natural mRNAs from Figure 1A mutated to decrease (SFT2-M and PMA1-M) or increase (SFT2-M2) the stability of 5'-UTR SLs; and synthetic mRNAs depicted as in Figure 1A. The sequences of SLs and mutations are in Figure 2\u2014figure supplement 1A. (B) Endpoints of 48S PIC assembly reactions, determined as in Figure 1D. (C) kmax values (upper) and fold-change in kmax (lower) in the presence versus absence of Ded1, determined as in Figure 1B. The inset in the upper panel scales the y-axis to display the low kmax values for CD-8.1 and CP-8.1 mRNAs without Ded1. Note that Y-axis is discontinuous. (D) $K_{1/2}^{Ded1}$ values determined as in Figure 1C. (E) Plot of\u00a0$K_{1/2}^{Ded1}$ from (D) versus fold-change in\u00a0$k_{max}^{+Ded1}/k_{max}^{\u2212Ded1}$from (C, lower) for the indicated mRNAs. Gray, blue, and green points indicate natural, mutated, and synthetic mRNAs, respectively, with error bars indicating 1 SD; line produced by linear regression analysis (Y\u00a0=\u00a025.29*X\u00a0+\u00a015.28, R2\u00a0=\u00a00.89, p-value<0.001). (F) Apparent rate of mRNA recruitment of synthetic mRNAs with different strengths SLs in the cap-distal region in the absence (blue) and presence of Ded1 (orange). $\u0394$G\u00b0: CD-10.5\u00a0=\u00a0\u221210.5 kcal/mol, CD-8.1\u00a0=\u00a0\u22128.1 kcal/mol, and CD-3.7\u00a0=\u00a0\u22123.7 kcal/mol. Note that Y-axis is discontinuous. (B\u2013D, F) Bars indicate mean values calculated from the three independent experiments represented by the data points. (B\u2013D) WT PMA1 amd WT SFT2 data is added from Figure 1 for comparison. See Figure 2\u2014figure supplement 1 and Figure 2\u2014source data 1.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/38892/elife-38892-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Sequence and structures of SLs in the 5'-UTRs of mRNAs examined in this study (Figures 1A and 2A) of predicted$\u0394$G\u00bas: SFT2\u00a0=\u00a0\u22129.4 kcal/mol, SFT2-M2\u00a0=\u00a0\u221219.7 kcal/mol, PMA1\u00a0=\u00a0\u22128.2 kcal/mol, CP-8.1/CD-8.1=\u22128.1 kcal/mol. The distance from the 5'-end is indicated for SFT2 and PMA1. (B) [\u03b132P]-capped mRNAs used in 48S PIC assembly assays, depicted in Figure 2A, resolved by electrophoresis on a 6% denaturing urea-TBE gel. (C) The kapp for mRNA recruitment measured as a function of Ded1 concentrations for PMA1 (black), PMA1-M (purple), SFT2 (green), and SFT2-M (orange) mRNAs. Data were fitted with a hyperbolic curve with an offset to account for the rate observed with no Ded1, allowing calculation of kmax and $K_{1/2}^{Ded1}$ values reported in Figure 2C and D, respectively. Plotted points are mean values with error bars indicating 1 SD (n\u00a0=\u00a03). (D) Endpoints of 48S PIC assembly at different Ded1 concentrations for SFT2 and SFT2-M2 mRNAs. The endpoints for SFT2-M2 represent lower limits because Ded1 concentrations above 1 \u00b5M were unattainable. (E) -SL, CP-8.1, and CD-8.1 mRNAs assembled in 48S PICs (+/-Ded1) remain stably bound for 40 min after addition of\u00a0~20 fold cold-capped (non-radiolabeled) mRNA to stop the reactions, conducted as described in Figure 1\u2014figure supplement 1B. Modest dissociation was observed for CP-8.1 and CD-8.1 mRNAs; but none for -SL mRNA. (F) The kapp for mRNA recruitment measured as a function of Ded1 concentration for -SL (red), CP-8.1 (blue), and CD-8.1 (green) mRNAs. The data were fitted with a hyperbolic curve with an offset to account for the rate observed with no Ded1, allowing calculation of kmax and $K_{1/2}^{Ded1}$values reported in Figure 2C and D, respectively. Plotted points are the mean values with error bars of 1 SD (n\u00a0=\u00a03). Note the y-axis is discontinuous. (G) Ded1 stimulation of mRNA recruitment is dependent on the ATPase activity of Ded1. Mean observed rates of 48S assembly (n\u00a0=\u00a03) with no Ded1 (blue bars), saturating Ded1 (orange bars), and ATPase deficient mutant Ded1E307A (green bars). Note the y-axis is discontinuous. See Figure 2\u2014figure supplement 1\u2014source data 1.\n\n### Evidence that Ded1 stimulates the PIC attachment and scanning steps of initiation\n\nAlthough Ded1-hypodependent mRNAs RPL41A and HOR7 lack any strong, defined SLs, Ded1 still stimulated their recruitment (Figure 1B). Similarly, even after removal of SLs, the PMA1-M and SFT2-M mutant mRNAs were still stimulated by Ded1 (Figure 2C). In addition to defined, stable SLs in 5'-UTRs, natural mRNAs likely form large ensembles of weaker structures involving interactions of nucleotides within the 5'-UTR or between 5'-UTR nucleotides and nucleotides in the CDS or 3'-UTR (Kertesz et al., 2010; Yourik et al., 2017), which might also contribute to Ded1-dependence during PIC attachment or scanning. To test this hypothesis, we examined recruitment of chimeric mRNAs with synthetic 5'-UTRs attached to the CDS and 3'-UTR of native RPL41A (Yourik et al., 2017). A synthetic mRNA dubbed \u2018-SL\u2019 (for \u2018minus stem-loop\u2019) contained a 67 nt 5'-UTR comprised of CAA repeats that is devoid of stable secondary structure (Figure 2A and Figure 2\u2014figure supplement 1B). Without Ded1, -SL was recruited rapidly at a rate of 1.9\u00a0\u00b1 0.2 min-1 (Figure 2C, blue),~2 fold faster than RPL41A (Figure 1B, blue) or the SFT2-M and PMA1-M variants lacking SLs (Figure 2C, blue), consistent with the idea that weaker interactions formed by 5'-UTRs of native mRNAs lacking SLs can inhibit recruitment. Ded1 increased the kmax of -SL recruitment by\u00a0~3 fold (Figure 2C, orange; and Figure 2\u2014figure supplement 1F, red), comparable to the increases observed for SFT2-M, PMA1-M (Figure 2C, lower), and RPL41A (Figure 1B, lower). This stimulation of -SL recruitment was achieved at a relatively low Ded1 concentration comparable to, or lower than, those observed for SFT2-M, PMA1-M (Figure 2D), and RPL41A (Figure 1C). Hence, -SL mRNA clustered with the Ded1-hypodependent mRNAs shown in the plot of $K_{1/2}^{Ded1}$ versus fold-increase in kmax (Figure 2E, green, -SL). The finding that Ded1 significantly stimulates 48S PIC assembly on -SL, containing a 5'-UTR incapable of forming stable structures on its own, suggests that Ded1 has a second role in mRNA recruitment, in addition to unwinding stable structures in 5'-UTRs.\n\nTo analyze whether Ded1 can stimulate the PIC attachment step of 48S assembly, we examined the synthetic CP-8.1 mRNA with a stable SL (predicted\u00a0$\u0394$G\u00b0\u00a0=\u00a0\u22128.1 kcal/mol) inserted in a cap-proximal location 5 nt from the 5'-end of -SL mRNA. We also analyzed a third synthetic mRNA, CD-8.1, containing the same SL inserted 45 nt downstream from the cap of -SL, reasoning that this cap-distal SL might impede scanning without interfering with PIC attachment at the cap (Figure 2A and Figure 2\u2014figure supplement 1A\u2013B). As expected, both synthetic mRNAs with SLs had order-of-magnitude lower rates of recruitment compared to -SL in the absence of Ded1 (Figure 2C, blue, inset), indicating that SLs in either location strongly inhibited 48S PIC formation. Ded1 increased the maximal rate of CP-8.1 recruitment by\u00a0~5 fold, such that the maximal rate for CP-8.1 was still\u00a0~6 fold below that of -SL (Figure 2C and Figure 2\u2014figure supplement 1F, blue vs. red), and\u00a0~2\u00a0\u2013\u00a03 fold below that of RPL41A, HOR7, SFT2, OST3, and PMA1 (Figure 2C and Figure 1B). Moreover, CP-8.1 exhibited an\u00a0~7.6 fold higher $K_{1/2}^{Ded1}$ versus -SL (Figure 2D). As a result, CP-8.1 lies between the Ded1-hyperdependent and Ded1-hypodependent mRNAs, and deviates from the line in the plot of $K_{1/2}^{Ded1}$ versus fold-increase in kmax (Figure 2E, green, CP-8.1). This deviation is due to the fact that CP-8.1, like the Ded1-hyperdependent mRNAs, is inefficiently recruited in the absence of Ded1; but unlike the Ded1-hyperdependent mRNAs, its recruitment is accelerated by Ded1 only\u00a0~5 fold. These results suggest that Ded1 is not very effective at reducing the inhibitory effect of a stable cap-proximal SL on PIC attachment, even at saturating Ded1 concentrations. In contrast, Ded1 conferred an\u00a0~17 fold acceleration of recruitment for CD-8.1 (Figure 2C), and a high Ded1 concentration was required to achieve the half-maximal rate (Figure 2D and Figure 2\u2014figure supplement 1F, green vs. red), similar to the behavior of the native Ded1-hyperdependent mRNAs (Figure 1B\u2013C). Judging by the relative positions of CD-8.1 and CP-8.1 on the plot of Figure 2E, it appears that Ded1 is better at resolving the inhibitory effect of the synthetic SL in a cap-distal versus cap-proximal location in the 5'-UTR. Interestingly, the same conclusion was reached previously from analyzing the relative effects of a cold-sensitive ded1 mutation on expression of reporter mRNAs containing cap-proximal or cap-distal SLs (Sen et al., 2015). The ATPase deficient mutant Ded1E307A did not increase the recruitment rates for these mRNAs above the levels seen in the absence of Ded1, even in case of -SL mRNA which lacks stable secondary structures in the 5'-UTR (Figure 2\u2014figure supplement 1G).\n\nHaving observed that the strength of a 5'-UTR SL influences the degree of Ded1-dependence, as observed with WT versus mutant derivatives of SFT2 and PMA1 (Figure 2C), we went on to analyze synthetic mRNAs containing cap-distal SLs of predicted stabilities either higher (\u221210.5 kcal/mol) or lower (\u22123.7 kcal/mol) than that of CD-8.1. Each of these SLs, present in CD-10.5 and CD-3.7, respectively, reduced the recruitment rate in the absence of Ded1 by\u00a0~20 fold compared to that of -SL, similar to the results for CD-8.1 (Figure 2F, blue). This result suggests that eIF4E\u00b7eIF4G\u00b7eIF4A alone cannot efficiently mitigate the inhibitory effects of cap-distal SLs of even moderate stability, such as that in CD-3.7, consistent with previous findings (Yourik et al., 2017). As expected, Ded1 strongly stimulated the recruitment rate of CD-3.7, by\u00a0~25 fold, slightly more than the\u00a0~15 fold observed for CD-8.1 (Figure 2F); however, Ded1 conferred only a modest\u00a0~2 fold acceleration of CD-10.5 recruitment (Figure 2F). One possibility to explain these last results would be that the cap-distal SL in CD-10.5 is too stable for efficient unwinding by Ded1, limiting Ded1\u2019s ability to accelerate 48S assembly on this mRNA.\n\nIn summary, our analysis of synthetic mRNAs supports the notion that Ded1 can accelerate mRNA recruitment by enhancing scanning through cap-distal secondary structures, such as the SLs that occur naturally in SFT2 and PMA1 mRNAs; although if the structure is too stable, Ded1 has a limited ability to unwind it. Additionally, it appears that Ded1 also partially mitigates the inhibitory effects of cap-proximal secondary structures on PIC attachment at the mRNA 5'-end, although not to the same degree that it overcomes cap-distal structures.\n\n### Ded1 stimulation is completely dependent on eIF4E\u00b7eIF4G for a subset of mRNAs and all mRNAs require eIF4A in the presence or absence of Ded1\n\nDed1 has been shown to interact physically with eIF4F components eIF4E, eIF4G and eIF4A in a manner that influences its ability to unwind model RNA substrates in an unwinding assay (Gao et al., 2016; Hilliker et al., 2011; Senissar et al., 2014). Accordingly, we examined whether its interactions with eIF4F influence Ded1\u2019s ability to accelerate 48S PIC assembly. As eIF4E is co-purified with eIF4G (Mitchell et al., 2010), and eIF4E is required for full activity of the eIF4F complex, all experiments involving eIF4G utilize the eIF4E\u00b7eIF4G heterodimer. We performed mRNA recruitment assays in the presence and absence of eIF4E\u00b7eIF4G and Ded1 for (i) Ded1-hypodependent mRNAs RPL41A, HOR7, -SL, and SFT2-M; (ii) Ded1-hyperdependent mRNAs SFT2, OST3, and CD-8.1; and (iii) CP-8.1, which exhibits intermediate behavior between groups (i) and (ii) mRNAs in the relationship between $K_{1/2}^{Ded1}$ and kmax stimulation (Figure 2E). The 5'-cap blocks aberrant mRNA recruitment and imposes a requirement for eIF4E\u00b7eIF4G and eIF4A for maximal recruitment rate. 43S PICs can bind to uncapped mRNAs but are unable to either locate or stably associate with their start codons (Mitchell et al., 2010). Accordingly, only 5'-capped mRNAs were used in all experiments to avoid the formation of these aberrant complexes, especially in the absence of eIF4E\u00b7eIF4G or eIF4A.\n\nAs described above, in the presence of eIF4E\u00b7eIF4G, all eight mRNAs can be recruited in the absence of Ded1, and Ded1 increased their recruitment rates to different extents (Figure 3A\u2013H, blue vs. orange). RPL41A, HOR7, and -SL, which contain very short (RPL41A and HOR7) or unstructured (-SL) 5'-UTRs, were recruited at relatively low (but measurable) rates in the absence of both eIF4E\u00b7eIF4G and Ded1 (Figure 3A,B,F, tan bars); and Ded1 conferred no increase in their apparent rates in the absence of eIF4E\u00b7eIF4G (Figure 3A,B,F, cf. green vs. tan, orange vs. blue). The complete dependence of Ded1 on eIF4E\u00b7eIF4G to accelerate recruitment for these three mRNAs is consistent with the idea that Ded1 acts exclusively in the context of the eIF4G\u00b7eIF4E\u00b7eIF4A\u00b7Ded1 quaternary complex (Gao et al., 2016). The same might be true for CP-8.1, whose observable stimulation by Ded1 also required eIF4E\u00b7eIF4G (Figure 3H); however, because no CP-8.1 recruitment was observed without eIF4E\u00b7eIF4G, Ded1 might stimulate recruitment of this mRNA on its own at levels below the detection limit of the assay. The finding that CP-8.1 differs from -SL in showing no measurable recruitment in the absence of eIF4E\u00b7eIF4G (Figure 3H vs 3F), suggests that the cap-proximal SL in CP-8.1 imposes a requirement for eIF4E\u00b7eIF4G.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/38892/elife-38892-fig3-v2.jpg)\n\n**Figure 3.:** (A\u2013H) Apparent rates (kapp) of 48S PIC assembly for the indicated mRNAs observed without eIF4E\u00b7eIF4G and Ded1 (tan bars), with Ded1 but no eIF4E\u00b7eIF4G (green bars), with eIF4E\u00b7eIF4G but no Ded1 (blue bars), or with both Ded1 and eIF4E\u00b7eIF4G (orange bars). Note the different Y-axis scale for -SL (F). See Figure 3\u2014figure supplement 1 and Figure 3\u2014source data 1.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/38892/elife-38892-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Recruitment of mRNAs without eIF4A in the absence (red) or presence of Ded1 (blue), and with eIF4A in the absence (green) or presence of Ded1 (cyan). The data were fitted with a single exponential equation for the reactions including eIF4A in the absence (green) and presence of Ded1 (cyan); and for all four conditions for -SL mRNA (H). Each point represents the mean value (n \u2265 2) and error bars are 1 SD from the mean. Note the x-axis is discontinuous. See Figure 3\u2014figure supplement 1\u2014source data 1.\n\nIn contrast to the results described above, Ded1 can accelerate recruitment of SFT2, OST3, SFT2-M, and CD-8.1 mRNAs in the absence of eIF4E\u00b7eIF4G, with comparable apparent rates afforded by eIF4E\u00b7eIF4G alone for SFT2, OST3, and CD-8.1 (Figure 3C,D,G; green vs. blue), but well below the apparent rates observed with eIF4E\u00b7eIF4G for SFT2-M (Figure 3E, green vs. blue). Thus, Ded1 can stimulate recruitment of these four mRNAs, at least to some extent, acting outside of the eIF4G\u00b7eIF4E\u00b7eIF4A\u00b7Ded1 complex. However, because the maximal rates were observed in the presence of both eIF4E\u00b7eIF4G and Ded1 (Figure 3C\u2013E,G, orange bars), Ded1 likely functions within the eIF4G\u00b7eIF4E\u00b7eIF4A\u00b7Ded1 complex as well for these four mRNAs.\n\nIn contrast to eIF4E\u00b7eIF4G, omitting eIF4A from the reactions essentially eliminated recruitment of all mRNAs tested, yielding endpoints of\u00a0<10%; with the exception of -SL, which was recruited at the low rate of 0.04 \u00b1\u00a00.01 min-1 with endpoints of 46\u00a0\u00b1 3% (Figure 3\u2014figure supplement 1, red). Moreover, in the absence of eIF4A, Ded1 did not rescue recruitment of any mRNAs, nor did it increase the kapp or endpoints for -SL mRNA (Figure 3\u2014figure supplement 1, blue). Thus, eIF4A has one or more essential functions in mRNA recruitment that cannot be provided by Ded1, even for an mRNA such as -SL exhibiting appreciable recruitment in the absence of eIF4E\u00b7eIF4G (Figure 3F, tan). This is consistent with the previous findings that eIF4A is required for robust translation of virtually all yeast mRNAs in vivo and in vitro (Sen et al., 2015; Yourik et al., 2017), and that DHX29 and yeast Ded1 cannot substitute for eIF4A in 48S PIC assembly on native \u03b2-globin mRNA in a mammalian reconstituted system (Abaeva et al., 2011; Pisareva et al., 2008). Moreover, the fact that Ded1 does not accelerate recruitment of -SL mRNA in the absence of eIF4A (Figure 3\u2014figure supplement 1H, blue vs. red) indicates that, at least for this mRNA with an unstructured leader, Ded1 can only promote mRNA recruitment in the presence of eIF4A.\n\n### Interaction between the RNA3 domain of eIF4G and Ded1-CTD stimulates mRNA recruitment\n\nThe C-terminal RNA3 domain of eIF4G was shown to interact physically with the Ded1 CTD (Hilliker et al., 2011) and to influence effects of eIF4G on Ded1 unwinding of a model RNA duplex in vitro (Gao et al., 2016; Putnam et al., 2015). Hence, we sought to determine whether this physical interaction between the CTDs of Ded1 and eIF4G is functionally relevant in 48S PIC assembly by performing mRNA recruitment assays with a truncated eIF4G variant lacking RNA3 (eIF4E\u00b7eIF4G-$\u0394$RNA3) or a Ded1 variant lacking the CTD (Ded1-$\u0394$CTD) (Figure 4\u2014figure supplement 1A).\n\nWithout Ded1, the $\u0394$RNA3 truncation of eIF4G had little or no effect on kmax for all seven mRNAs tested (Figure 4A, compare blue bars to superimposed line/whiskers, the latter indicating results for WT eIF4E\u00b7eIF4G re-plotted from Figure 3A\u2013H for comparison, where the horizontal line shows the mean and the whiskers one SD from the mean). In the presence of Ded1, by contrast, $\u0394$RNA3 conferred\u00a0~2 fold reductions in kmax for three mRNAs, RPL41A ($\u0394$RNA3 \u2013 1.5\u00a0\u00b1 0.2 min-1; WT \u2013 3.9\u00a0\u00b1\u00a00.5 min-1), HOR7 ($\u0394$RNA3 \u2013 1.8\u00a0\u00b1 0.1 min-1; WT \u2013 3.9\u00a0\u00b1 0.3 min-1) and CP-8.1 ($\u0394$RNA3 \u2013 0.7\u00a0\u00b1 0.03 min-1; WT \u2013 1.3\u00a0\u00b1 0.1 min-1), compared to the values observed for WT eIF4E\u00b7eIF4G (Figure 4A, orange bars vs. line/whiskers). Somewhat smaller reductions in kmax were observed for SFT2 and SFT2-M (Figure 4A). Thus, as summarized in Figure 4B, deleting RNA3 nearly eliminated the stimulatory effect of Ded1 on kmax values for RPL41A, HOR7, and CP-8.1 (black vs. grey bars vs. dashed red line, the latter indicating no stimulation by Ded1).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/38892/elife-38892-fig4-v2.jpg)\n\n**Figure 4.:** (A) kmax values in absence (blue) and presence of saturating Ded1 (orange) with eIF4E$\u22c5$eIF4G-$\u0394$RNA3. (B) The average fold-change in the kmax observed in the presence and absence of Ded1 $(k_{max}^{+Ded1}/k_{max}^{\u2212Ded1})$\u00a0with WT eIF4E$\u22c5$eIF4G (dark grey) and eIF4E$\u22c5$eIF4G-$\u0394$RNA3 (light grey). Red line indicates no change in the rate on Ded1 addition. (C) K1/2 of eIF4E$\u22c5$eIF4G-$\u0394$RNA3 in absence of Ded1 (dark blue) and presence of saturating Ded1 (red). (D) kmax observed in absence (blue) and presence of saturating Ded1-$\u0394$CTD (purple). (E) The average fold change in the kmax$(k_{max}^{+Ded1}/k_{max}^{\u2212Ded1})$ observed in presence and absence of WT Ded1 (dark grey) and Ded1-$\u0394$CTD (light grey). Red line indicates rates in absence of Ded1. (F) The K1/2 of Ded1-$\u0394$CTD value shown as green bars. (A\u2013F) Bars indicate mean values calculated from the 3\u00a0independent experiments represented by the data points. The superimposed horizontal line (black) indicate the mean maximal rates (A, D) or K1/2 (C, F) observed with WT eIF4E\u00b7eIF4G (A, C, from Figure 3 and Figure 4\u2014figure supplement 2A) or WT Ded1 (D, F from Figures 1 and 2), and error bars represent 1 SD from the mean (this representation will be referred to as line/whisker plot). See Figure 4\u2014figure supplements 1 and 2 and Figure 4\u2014source data 1.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/38892/elife-38892-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Selected effects of the eIF4G-$\u0394$RNA3 and Ded1-$\u0394$CTD truncations on recruitment of native mRNAs.(A) Schematics of eIF4G showing RNA binding domains-RNA1, RNA2, and RNA3 and Ded1 showing N-terminal and C-terminal domains, indicating the amino acid coordinates at domain junctions. (B) The apparent rate of SFT2 mRNA recruitment measured as a function of Ded1 concentration with WT eIF4E\u00b7eIF4G (75 nM), eIF4E\u00b7eIF4G-$\u0394$RNA3 (150 nM) and eIF4E\u00b7eIF4G-$\u0394$RNA2 (400 nM). Data fitted with a hyperbolic curve. Plotted points are mean values with error bars of 1 SD (n\u00a0=\u00a03). The determined $K_{1/2}^{Ded1}$ values are 236\u00a0\u00b1 18 nM, 251\u00a0\u00b1 34 nM, 148 \u00b1\u00a017 nM, with WT eIF4E\u00b7eIF4G, eIF4E\u00b7eIF4G-$\u0394$RNA3, and eIF4E\u00b7eIF4G-$\u0394$RNA2, respectively; indicating that the Ded1 concentrations used in Figures 4 and 5 were saturating for SFT2 mRNA. Similar experiments were also conducted for the other mRNAs examined in Figures 4 and 5 using a range of Ded1 concentrations up to 1$\\mu$M, which corresponds to 2X-4X of the $K_{1/2}^{Ded1}$ obtained with WT eIF4E\u00b7eIF4G in Figures 1C and 2D. The results (data not shown) ensured that Ded1 was present at saturating levels in the reactions for these mRNAs containing the two eIF4G mutants. (C) Recruitment of RPL41A as a function of eIF4E\u00b7eIF4G-\u0394RNA3 concentration with no Ded1 (red), 250 nM Ded1 (blue) and 500 nM Ded1 (green). The results indicate that doubling the Ded1 concentration from that employed in Figure 4C did not increase the rate or change the $K_{1/2}^{(elF4E\u22c5elF4G)}$of 48S PIC assembly. (D) The apparent rates of RPL41A and HOR7 recruitment observed at different concentrations of WT Ded1 and Ded1-$\u0394$CTD. Data obtained with WT Ded1 were fitted with a hyperbolic curve. The results indicate a negligible change in rate using Ded1-$\u0394$CTD. (E) The maximal rates of recruitment of RPL41A, CD-8.1, and CP-8.1 in the presence of both the eIF4E\u00b7eIF4G-$\u0394$RNA3 and Ded1-$\u0394$CTD mutants (green bars), WT eIF4E\u00b7eIF4G and no Ded1 (blue bars), WT eIF4E\u00b7eIF4G and WT Ded1 (orange bars), eIF4E\u00b7eIF4G-$\u0394$RNA3 and WT Ded1 (purple bars), and WT eIF4E\u00b7eIF4G and Ded1-$\u0394$CTD (gray bars). See Figure 4\u2014figure supplement 1\u2014source data 1.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/38892/elife-38892-fig4-figsupp2-v2.jpg)\n\n**Figure 4\u2014figure supplement 2.:** Bars indicate mean values calculated from 3 independent experiments represented by the data points. We probed functional interactions between Ded1 and eIF4G by measuring the apparent recruitment rates at varying concentrations of eIF4E\u00b7eIF4G in the presence and absence of Ded1. In the absence of Ded1, the $K_{1/2}^{(elF4E\u22c5elF4G)}$ for mRNAs RPL41A, HOR7, OST3, SFT2, and SFT2-M ranged from 30 to 75 nM (panel A, cols. 1\u00a0\u2013\u00a05, blue); whereas the presence of saturating Ded1 decreased the $K_{1/2}^{(elF4E\u22c5elF4G)}$ by factors of\u00a0~2 to 2.5 for each of these five mRNAs (red vs. blue). The reductions in $K_{1/2}^{(elF4E\u22c5elF4G)}$ conferred by Ded1 are consistent with the idea that Ded1 interacts productively with eIF4G for all five of these mRNAs. Similarly, the presence of saturating Ded1 lowered the concentration of eIF4A required to achieve the half-maximal rate of recruitment $(K_{1/2}^{elF4A})$ by 3\u20137-fold for OST3, SFT2, and SFT2-M (panel B, cols. 3\u00a0\u2013\u00a05, red vs. blue)$(K_{1/2}^{elF4A})$, consistent with a productive interaction between Ded1 and eIF4A during 48S formation on these mRNAs. This interaction could be direct, through eIF4G, or due to Ded1 altering the conformation of the mRNA or another component of the system, making it easier for eIF4A to bind or act on it. The native mRNAs RPL41A and HOR7, has the same $K_{1/2}^{elF4A}$\u00a0with and without Ded1 (panel B, cols. 1\u00a0\u2013\u00a02, red vs. blue). As the $K_{1/2}^{elF4A}$ for RPL41A and HOR7 in the absence of Ded1 were lower than those for OST3, SFT2, and SFT2-M (panel B, blue), and were actually at the level reached for SFT2 and SFT2-M in the presence of Ded1 (panel B, red), perhaps RPL41A and HOR7 are naturally more receptive to the effects of eIF4A without assistance from Ded1, possibly because of their short 5'-UTR. The synthetic mRNAs produced distinctly different functional interactions between Ded1 and eIF4E\u00b7eIF4G or eIF4A. In the absence of Ded1, -SL and CP-8.1 had lower\u00a0$K_{1/2}^{(elF4E\u22c5elF4G)}$ values of 3 to 8 nM compared to 30\u00a0\u2013\u00a075 nM for the five natural mRNAs (panel A, blue bars). (The $K_{1/2}^{(elF4E\u22c5elF4G)}$\u00a0for CD-8.1 without Ded1 could not be determined accurately because of its endpoint defects at lower eIF4G concentrations.) Contrary to the natural mRNAs, addition of Ded1 increased the $K_{1/2}^{(eIF4E\u00b7eIF4G)}$\u00a0of -SL and CP-8.1 mRNAs by 3\u00a0\u2013\u00a05-fold, reaching values similar to those observed for the natural mRNAs in the presence of Ded1 (panel A, red bars). The synthetic mRNAs also exhibited $K_{1/2}^{elF4A}$ values in the absence of Ded1 that were generally lower than the corresponding values for the native mRNAs (panel B, blue bars). Moreover, addition of Ded1 increased the $K_{1/2}^{elF4A}$ values of the two synthetic mRNAs, in contrast to the decreased $K_{1/2}^{elF4A}$ values evoked by Ded1 for three of the five native mRNAs (panel A, red). These results indicate that the maximum stimulation of recruitment of the synthetic mRNAs by eIF4E\u00b7eIF4G and eIF4A in the absence of Ded1 can be achieved at relatively low concentrations of both factors, but that higher concentrations of eIF4E\u00b7eIF4G and eIF4A are required to support the additional stimulation of recruitment conferred by Ded1, which are comparable in magnitude to the concentrations of eIF4E\u00b7eIF4G and eIF4A required for maximal Ded1-stimulation of the native mRNAs. In summary, the requirements for eIF4E\u00b7eIF4G and eIF4A, as well as the effect of Ded1 on these requirements, differ among different native mRNAs and vary dramatically between native and synthetic mRNAs. These results suggest the existence of different functional modalities of the eIF4F complex (in the absence of Ded1) and of the eIF4E\u00b7eIF4G\u00b7eIF4A\u00b7Ded1 complex (with Ded1) that may be required to overcome the range of RNA structures in different mRNAs that vary in stability, distance from the 5'-cap, or orientation in three-dimensional space to accelerate mRNA attachment and subsequent scanning to the AUG codon. (See Discussion for additional comments.). See Figure 4\u2014figure supplement 2\u2014source data 1.\n\nImportantly, when Ded1 was replaced with Ded1-$\u0394$CTD in reactions containing WT eIF4E\u00b7eIF4G, we observed effects on kmax values and rate enhancements very similar to those described above for $\u0394$RNA3 (Figure 4D\u2013E), which is consistent with a functional interaction between RNA3 and Ded1-CTD. (We verified that saturating concentrations of eIF4E\u00b7eIF4G-$\u0394$RNA3 and Ded1-$\u0394$CTD were used in these experiments by showing that rates of recruitment for SFT2, RPL41A or HOR7 mRNAs were not elevated even at much higher concentrations of the variants (Figure 4\u2014figure supplement 1B\u2013D, and data not shown). We also confirmed that Ded1-$\u0394$CTD has RNA-dependent ATPase activity similar to that of the WT Ded1 (Figure 1\u2014figure supplement 1D\u2013E)).\n\nTo further verify that RNA3 of eIF4G and Ded1-CTD interact in mRNA recruitment, we combined the eIF4E\u00b7eIF4G-$\u0394$RNA3 and Ded1-$\u0394$CTD variants in the same assays (at the saturating concentrations determined for each alone). We examined recruitment of RPL41A, for which eIF4G-RNA3 and Ded1-CTD were each essential for rate enhancement by Ded1; CD-8.1, whose kmax was not significantly reduced by eIF4E\u00b7eIF4G-$\u0394$RNA3 or Ded1-$\u0394$CTD compared to the corresponding WT proteins; and CP-8.1, for which each domain deletion had an intermediate effect on rate enhancement by Ded1. The effects on the kmax values for these three mRNAs on combining the eIF4E\u00b7eIF4G-$\u0394$RNA3 and Ded1-$\u0394$CTD mutants were similar to what we observed with each deletion individually (Figure 4\u2014figure supplement 1E). These data strongly suggest that the changes in kmax values conferred by eliminating either eIF4G-RNA3 or Ded1-CTD arise from loss of interaction between these two domains, because once the interaction is disrupted by removing one domain no further defect results from also removing the other.\n\nWe next examined whether eliminating eIF4G-RNA3 alters the concentration of eIF4E\u00b7eIF4G required to achieve half-maximal rate acceleration, that\u00a0is, the $K_{1/2}^{eIF4E\u22c5eIF4G}$. To this end, we first determined the $K_{1/2}^{eIF4E\u22c5eIF4G}$ of WT eIF4E\u00b7eIF4G for each mRNA in the presence or absence of Ded1. For four native mRNAs and SFT2-M, the presence of Ded1 lowered the $K_{1/2}^{eIF4E\u22c5eIF4G}$ by factors of\u00a0~2 to 2.5 (Figure 4\u2014figure supplement 2A, cols. 1\u00a0\u2013\u00a05, red vs. blue), consistent with the idea that Ded1 interacts productively with eIF4E\u00b7eIF4G on all five of these mRNAs. Contrary to the natural mRNAs, addition of Ded1 increased the $K_{1/2}^{eIF4E\u22c5eIF4G}$ of -SL and CP-8.1 mRNAs, reaching values similar to those observed for the natural mRNAs in the presence of Ded1 (Figure 4\u2014figure supplement 2A, cols. 6 and 8, red vs. blue). (The\u00a0$K_{1/2}^{eIF4E\u22c5eIF4G}$ for CD-8.1 without Ded1 could not be determined accurately because of its endpoint defects at lower eIF4E\u00b7eIF4G concentrations.) Thus, the maximum stimulation of recruitment of the synthetic mRNAs in the absence of Ded1 can be achieved at relatively low eIF4E\u00b7eIF4G concentrations, but higher eIF4E\u00b7eIF4G concentrations are required to support the additional stimulation of recruitment conferred by Ded1. (See Figure 4\u2014figure supplement 2 legend for additional comments.)\n\nWe then proceeded to determine the effect of eliminating RNA3 on the concentration of eIF4E\u00b7eIF4G required for the maximum recruitment rate in the absence of Ded1. For mRNAs RPL41A, HOR7, SFT2, SFT2-M, and -SL, the K1/2 values for eIF4E\u00b7eIF4G-$\u0394$RNA3 did not differ substantially from those of WT eIF4E\u00b7eIF4G, although it was\u00a0~2 fold higher for CP-8.1 (Figure 4C, blue bars vs. line/whiskers summarizing results for WT eIF4E\u00b7eIF4G taken from Figure 4\u2014figure supplement 2A). (The\u00a0$K_{1/2}^{eIF4E\u22c5eIF4G}$ could not be accurately measured for CD-8.1 using eIF4E\u00b7eIF4G-$\u0394$RNA3 due to endpoint defects.) In reactions containing Ded1, by contrast, the $K_{1/2}^{eIF4E\u22c5eIF4G}$ values for eIF4E\u00b7eIF4G -$\u0394$RNA3 were increased by 2- to 5-fold relative to the values determined for WT eIF4E\u00b7eIF4G for all mRNAs tested (Figure 4C, red bars versus superimposed line/whiskers results for WT eIF4E\u00b7eIF4G taken from Figure 4\u2014figure supplement 2A). Thus, on removal of RNA3, relatively higher concentrations of eIF4E\u00b7eIF4G are required to achieve maximal rate stimulation by Ded1, supporting a functionally important interaction between RNA3 and Ded1. We also determined the effects of eliminating the Ded1 CTD on K1/2 values for Ded1. Similar to the results obtained for eIF4E\u00b7eIF4G-$\u0394$RNA3, higher K1/2 values were observed for Ded1-$\u0394$CTD versus WT Ded1 for four of the five mRNAs that exhibit appreciable rate stimulation by Ded1-$\u0394$CTD (which excludes RPL41A and HOR7) (Figure 4F, green bars versus superimposed line/whiskers results for WT Ded1 from Figures 1C and 2D).\n\nIn summary, our results indicate that there is an interaction between eIF4G-RNA3 and Ded1-CTD that facilitates Ded1 function in mRNA recruitment to the PIC. The increased K1/2 values evoked by eliminating either domain suggests that their interaction enhances assembly of the eIF4G\u00b7eIF4E\u00b7eIF4A\u00b7Ded1 tetrameric complex (Gao et al., 2016). The finding that increased concentrations of eIF4E\u00b7eIF4G-$\u0394$RNA3 or Ded1-$\u0394$CTD can rescue the rate (kmax) defects caused by the domain deletions for some mRNAs but not for others suggests that in certain mRNA contexts this interaction plays a role in addition to simply promoting interaction between eIF4G and Ded1.\n\n### The RNA2 domain of eIF4G functions in Ded1-dependent mRNA recruitment\n\nDed1 also interacts with the RNA2 domain of eIF4G (Senissar et al., 2014), but the importance of this interaction for Ded1 function is unknown. Comparing the eIF4E\u00b7eIF4G-$\u0394$RNA2 variant (with an internal deletion of RNA2) to WT eIF4E\u00b7eIF4G, we found that, as for RNA3, deletion of RNA2 influenced recruitment of the mRNAs to different extents. In reactions lacking Ded1, we observed no significant differences in kmax for any of the seven mRNAs examined (Figure 5A, blue bars vs. line/whiskers for WT eIF4E\u00b7eIF4G data from Figure 3, blue). By contrast, removal of RNA2 increased the K1/2 for eIF4E\u00b7eIF4G-$\u0394$RNA2 versus WT eIF4E\u00b7eIF4G by 3\u00a0\u2013\u00a05-fold for SFT2-M, -SL, and CP-8.1 mRNAs in reactions lacking Ded1 (Figure 5C, blue bars vs. line/whiskers from Figure 4\u2014figure supplement 2A). $\u0394$RNA2 also conferred an endpoint defect for SFT2 at lower concentrations, precluding determination of its effects on the K1/2 for eIF4E\u00b7eIF4G. (Because of endpoint defects for CD-8.1 even with WT eIF4E\u00b7eIF4G, the importance of RNA2 cannot be evaluated for this mRNA.) Considering that $\u0394$RNA3 increased the K1/2 for eIF4E\u00b7eIF4G only for CP-8.1 in reactions lacking Ded1, it appears that RNA2 has relatively more important Ded1-independent functions than RNA3 in recruitment of particular mRNAs.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/38892/elife-38892-fig5-v2.jpg)\n\n**Figure 5.:** (A) kmax in the absence (blue) and presence of saturating Ded1 (orange) with eIF4E\u00b7eIF4G-$\u0394$RNA2. (B) The average fold-change in the maximal rate observed in the presence and absence of Ded1 with WT eIF4E\u00b7eIF4G (dark grey) and eIF4E\u00b7eIF4G-$\u0394$RNA2 (light grey). Red line indicates no change in the rate on Ded1 addition. (C) The K1/2 of eIF4E\u00b7eIF4G-$\u0394$RNA2 in the absence of Ded1 (dark blue) and presence of saturating Ded1 (red). (A\u2013C) Bars represent mean values (n\u00a0=\u00a03) and points on each bar show the individual experimental values. The line and whisker plot indicate the mean maximal rates (A) or K1/2 (C) observed with WT eIF4E\u00b7eIF4G, and error bars represent 1 SD, as depicted in Figure 4. See Figure 4\u2014figure supplements 1 and 2 and Figure 5\u2014source data 1.\n\nStronger effects of $\u0394$RNA2 were observed in reactions containing Ded1, markedly reducing the kmax for the two mRNAs containing cap-distal SLs, SFT2 (kmax of 1.4\u00a0\u00b1 0.1 min-1 vs. 3.4\u00a0\u00b1\u00a00.1 min-1 for WT) and CD-8.1 (kmax of 0.7\u00a0\u00b1 0.03 min-1 vs. 1.9\u00a0\u00b1 0.2 min-1 for WT), with smaller reductions for SFT2-M and CP-8.1 (Figure 5A, orange bars vs. line/whiskers; and Figure 5B, black vs. grey bars vs. dotted red line). By contrast, RNA2 was dispensable for maximal Ded1 acceleration of RPL41A, HOR7, and -SL mRNA recruitment (Figure 5B, black vs. grey bars). It is noteworthy that RPL41A and HOR7 exhibited the strongest dependence on RNA3 (Figure 4B), but were insensitive to loss of RNA2 (Figure 5B) for maximal rate stimulation by Ded1.\n\nAll of the mRNAs exhibited increases in K1/2 for eIF4E\u00b7eIF4G-$\u0394$RNA2 versus WT eIF4E\u00b7eIF4G (3\u00a0\u2013\u00a020-fold; Figure 5C, red bars vs. line/whiskers). Thus, eliminating RNA2 increases the concentration of eIF4E\u00b7eIF4G required for maximal Ded1 stimulation for all mRNAs tested, which might reflect its importance in promoting formation of the eIF4G\u00b7eIF4E\u00b7eIF4A\u00b7Ded1 complex, in the manner concluded above for RNA3. Elevated concentrations of eIF4E\u00b7eIF4G-$\u0394$RNA2 enable maximum recruitment rates similar to those achieved with WT eIF4E\u00b7eIF4G for the mRNAs with lower degrees of structure \u2013 RPL41A, HOR7, and -SL; whereas the more structured mRNAs display varying reductions in kmax at saturating eIF4E\u00b7eIF4G-$\u0394$RNA2 concentrations, with the two mRNAs harboring cap-distal stem loops \u2013 SFT2 and CD-8.1 \u2013 having the largest rate enhancement defects. This suggests that RNA2 enhances Ded1 function on the structured mRNAs beyond its ability to simply stabilize Ded1-eIF4G interaction.\n\n### The N-terminal domain of Ded1 enhances mRNA recruitment\n\nIt was shown previously that the N-terminal domain (NTD) of Ded1 physically interacts with eIF4A, and is required for eIF4A stimulation of Ded1 unwinding activity in vitro (Gao et al., 2016; Senissar et al., 2014). We tested the effects of Ded1 on K1/2 of eIF4A and, as observed with WT eIF4E\u00b7eIF4G, Ded1 influenced $K_{1/2}^{elF4A}$ differently on these mRNAs, providing evidence that Ded1 has functional interactions with eIF4A during mRNA recruitment (Figure 4\u2014figure supplement 2B). Hence, we examined the effect of eliminating the Ded1-NTD on recruitment of our panel of mRNAs. The kcat and Km values for RNA-dependent ATP hydrolysis were indistinguishable between WT Ded1 and the\u00a0$\u0394$NTD variant (Figure 1\u2014figure supplement 1D\u2013E). For the SFT2, CD-8.1, and CP-8.1 mRNAs, which harbor defined SLs in their 5'-UTRs, eliminating the Ded1 NTD decreased kmax by 1.5\u00a0\u2013\u00a02-fold, whereas the kmax values for RPL41A, HOR7, SFT2-M, and -SL mRNAs were not significantly altered by $\u0394$NTD (Figure 6A, purple bars vs. line/whiskers for WT Ded1; and Figure 6B). However, 1\u00a0\u2013\u00a02 orders of magnitude higher K1/2 values for the Ded1-$\u0394$NTD versus WT Ded1 were observed with all mRNAs except CD-8.1 (Figure 6C, green bars vs. line/whiskers for WT Ded1). Thus, removing the Ded1 NTD significantly increases the concentrations of Ded1 required to achieve enhancement of recruitment of six out of the seven mRNAs tested. These data are consistent with the idea that interaction of eIF4A and the Ded1 NTD enhances assembly or stability of the eIF4G\u00b7eIF4E\u00b7eIF4A\u00b7Ded1 complex, and stimulates Ded1 helicase activity; although the Ded1-NTD might also mediate important interactions with other components of the system. As with deletions of the eIF4G RNA domains and Ded1-CTD, mRNA-specific defects were conferred by deleting the Ded1 NTD.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/38892/elife-38892-fig6-v2.jpg)\n\n**Figure 6.:** (A) kmax values observed in the absence (blue) and presence of saturating Ded1-$\u0394$NTD (purple). (B) The average fold change in the maximal rate\u00a0$(k_{max}^{+Ded1}/k_{max}^{\u2212Ded1})$\u00a0observed in the presence and absence of WT Ded1 (dark grey) and Ded1-\u00a0$\u0394$NTD (light grey). Red line indicates no change in the rate with Ded1. (C) K1/2 of Ded1-$\u0394$NTD value shown as green bars. (A\u2013C) Bars represent the mean values (n\u00a0=\u00a03) and points on each bar show the individual experimental values. The line and whisker plot indicate the mean maximal rates (A) or K1/2 (C) observed with WT Ded1, and error bars represent 1 SD. See Figure 4\u2014figure supplements 1 and 2 and Figure 6\u2014source data 1.\n\n## Discussion\n\nEmploying a purified yeast translation initiation system, we reconstituted the function of DEAD-box helicase Ded1 in stimulating the rate of 48S PIC assembly on both native and model mRNAs. This stimulation in vitro recapitulates the Ded1-dependence of translation of mRNAs observed in vivo using ribosome profiling, in which mRNAs having longer and more structured 5'-UTRs display hyper-dependence on Ded1 relative to mRNAs with shorter and less structured 5'-UTRs (Sen et al., 2015). We showed that defined SL structures both decrease rates of 48S PIC assembly in the absence of Ded1 and increase the fold-stimulation afforded by Ded1. These results provide direct biochemical evidence supporting the proposition that Ded1 enhances translation initiation in vivo by resolving secondary structures formed by 5'-UTR sequences. Our results also showed that Ded1-accelerated recruitment of several mRNAs depends completely on the presence of eIF4E\u00b7eIF4G, and that domains mediating Ded1 interactions with eIF4G or eIF4A enhance Ded1 stimulation of 48S PIC assembly for all mRNAs tested, consistent with the previous work indicating that Ded1 binding to the eIF4G\u00b7eIF4E\u00b7eIF4A complex enhances its activity in RNA unwinding assays (Gao et al., 2016). However, Ded1 can also stimulate recruitment of some mRNAs in the absence of eIF4E\u00b7eIF4G, indicating that it can act independently of eIF4F as well.\n\n### DEAD-box proteins Ded1 and eIF4A have complementary but distinct functions in mRNA recruitment\n\nInactivation of conditional mutants of either Ded1 or eIF4A in vivo results in strong reduction in bulk polysomes and decreased expression of reporter mRNAs bearing unstructured 5'-UTRs (Chuang et al., 1997; de la Cruz et al., 1997; Sen et al., 2015), indicating that both proteins are important for translation of most mRNAs. These general reductions of translation are masked in ribosome profiling studies because the ribosomal footprint and mRNA read counts must be normalized to the total reads obtained in each sample/strain, such that the TE change for each mRNA is determined relative to the average TE change for all mRNAs examined in each sample/strain. mRNAs judged to hyperdependent or hypodependent on Ded1 in ribosome profiling experiments exhibit larger or smaller than average reductions in relative TE, respectively, but they may all exhibit decreased absolute TEs in ded1 vs. WT cells (Sen et al., 2015). The ribosome profiling analysis of ded1 mutants revealed that\u00a0~10% of all mRNAs \u2013 particularly those with long, structured 5'-UTRs \u2013 exhibit greater than average TE reductions in the ded1 vs. WT cells, and were designated as Ded1-hyperdependent. Consistent with a stimulatory role for Ded1 in translation of most mRNAs, we observed here that Ded1 increases the maximal rate of 48S PIC formation by\u00a0~2\u00a0\u2013\u00a03 fold on native Ded1-hypodependent mRNAs or mRNAs with 5'-UTRs of low structural complexity (RPL41A, HOR7, and SFT2-M), as well as on a synthetic mRNA with an unstructured 5'-UTR (-SL) (Figures 1B and 2C). Importantly, Ded1 conferred much greater acceleration of 48S PIC assembly on all four Ded1-hyperdependent mRNAs examined (Figure 1B).\n\neIF4A also enhances the translation of nearly all mRNAs in vivo, although, unlike Ded1 where sizable sets of mRNAs are hyper- or hypo-dependent on its function, most mRNAs are similarly (strongly) dependent on eIF4A for translation (Firczuk et al., 2013; Sen et al., 2015). In line with these in vivo observations, in the reconstituted system eIF4A promotes 48S PIC assembly on all mRNAs tested, increasing the kmax for the synthetic mRNA with unstructured 5'-UTR (-SL) by 60-fold and even accelerating recruitment of completely unstructured model mRNAs by \u22657-fold (Yourik et al., 2017). However, although Ded1 and eIF4A both facilitate recruitment of most mRNAs, and both are essential in vivo (Chuang et al., 1997; Linder and Slonimski, 1989); their functions are distinct. Ded1 cannot substitute for eIF4A in vitro (Figure 3\u2014figure supplement 1), but it promoted recruitment of all mRNAs tested beyond the level achieved by saturating concentrations of eIF4A and eIF4E\u00b7eIF4G (Figures 1B and 2C).\n\nWe previously proposed that eIF4A stimulates a step of 48S PIC assembly common to all mRNAs, such as disrupting the ensemble of weak RNA-RNA interactions that impede PIC attachment to the 5'-UTR or subsequent scanning (Yourik et al., 2017). In addition, eIF4A might also directly promote loading of mRNA onto the PIC, for\u00a0example by modulating conformational changes in the 40S subunit or by threading the 5'-end into the mRNA binding channel (Kumar et al., 2016; Sokabe and Fraser, 2017). In common with eIF4A, Ded1 may enhance recruitment of all mRNAs by disrupting their global structures created by dynamic ensembles of base-pairing throughout their lengths. Unlike eIF4A, however, Ded1 can efficiently resolve more stable structures, including local stem-loops\u2014achieving an order-of-magnitude acceleration for mRNAs with the most structured 5'-UTRs. If the proposed Ded1 function in promoting 48S PIC formation by disrupting global mRNA structure requires lower Ded1 concentrations than its role in resolving more stable structures within or involving the 5'-UTR, it would be consistent with our findings that mRNAs with SLs require higher Ded1 concentrations to achieve the much greater fold-stimulation of 48S assembly afforded by Ded1 compared to mRNAs lacking SLs (Figures 1 and 2).\n\n### Evidence supporting the functional importance of an eIF4G\u00b7eIF4E\u00b7eIF4A\u00b7Ded1 tetrameric complex\n\nDed1 alters the K1/2 of eIF4E\u00b7eIF4G and eIF4A for most mRNAs (Figure 4\u2014figure supplement 2), and these new K1/2 values may signify the changes in the concentrations of eIF4A and eIF4E\u00b7eIF4G required for proper assembly of the eIF4G\u00b7eIF4E\u00b7eIF4A\u00b7Ded1 tetrameric complex on each mRNA. The deleterious effects of eliminating known interactions between Ded1 and eIF4G or eIF4A further suggests the importance of the tetrameric complex formation for robust Ded1 function. With only two exceptions (CP-8.1 for Ded1-$\u0394$CTD and CD-8.1 for the Ded1-$\u0394$NTD), we found that deleting the RNA2 or RNA3 domain of eIF4G, or the CTD or NTD of Ded1, increased the concentrations of the corresponding eIF4G or Ded1 variants required to achieve the half-maximal rate of 48S PIC assembly (ie., their K1/2 values) on each mRNA examined, as summarized by the heatmap in Figure 7A. This holds for the mRNAs with the shortest or least structured 5'-UTRs (-SL, RPL41A, and HOR7) as well as those with the most highly structured 5'-UTRs (SFT2, CD-8.1, and CP-8.1). Because all of these domain deletions abrogate known interactions linking Ded1 to eIF4G or eIF4A, a plausible way to account for these findings is to propose that, regardless of the amount of secondary structure in the mRNA 5'-UTR, rapid mRNA recruitment depends on Ded1 functioning within the eIF4E\u00b7eIF4G\u00b7eIF4A\u00b7Ded1 complex; and that eliminating any interaction between Ded1 and eIF4G or eIF4A necessitates a higher concentration of the mutant variant for efficient complex formation. Judging by the magnitude of the increases in K1/2 conferred by eliminating different domains (Figure 7A), it would appear that eIF4G-RNA2 and Ded1-NTD are generally more important than the eIF4G-RNA3/Ded1-CTD duo in promoting assembly or stability of the eIF4E\u00b7eIF4G\u00b7eIF4A\u00b7Ded1 complex. However, we cannot rule out the possibility that the domain deletions also impair a different interaction, for instance, with mRNA or another factor such as eIF4B or eIF3 that is crucial for rapid mRNA recruitment (Mitchell et al., 2010).\n\n![Figure 7.](https://cdn.elifesciences.org/articles/38892/elife-38892-fig7-v2.jpg)\n\n**Figure 7.:** (A) Heatmap representation of log2 fold-increases in K1/2 values of eIF4E\u00b7eIF4G-$\u0394$RNA3 or eIF4E\u00b7eIF4G-$\u0394$RNA2 versus WT eIF4E\u00b7eIF4G; and of Ded1-$\u0394$CTD or Ded1-$\u0394$NTD versus WT Ded1, calculated from data in Figure 4C and 5C (red bars vs. line/whiskers) or Figure 4F and 6C (green bars vs. line/whiskers). (B) Heatmap depicting the fold-changes in kmax values of the indicated eIF4E\u00b7eIF4G or Ded1 truncations$(k_{max}^{mutant}vsk_{max}^{WT})$ calculated from Figures 4A, D, 5A and 6A (orange or purple bars vs line/whiskers). (C) 'mRNA geometry\u2019 model depicting how different mRNAs exhibiting distinct configurations of the occurrence and location of RNA structures (shown as hairpins or stem-loops) could influence the relative importance of different domain interactions linking Ded1 to eIF4G or eIF4A within the eIF4G\u00b7eIF4E\u00b7eIF4A\u00b7Ded1 tetrameric complex. (D) \u2018Kinetic\u2019 model depicting how different mRNAs might differ in the extent to which PIC attachment or scanning are the rate-limiting steps in 48S PIC assembly. Depending on which step is rate-limiting, the requirements for Ded1, either acting alone or within the eIF4G\u00b7eIF4E\u00b7eIF4A\u00b7Ded1 complex, could be different on different mRNAs.\n\n### Ded1 and eIF4G mutants affect the maximal rates for recruitment differently depending on the mRNA\n\nWith some mRNAs, the maximum rate of recruitment observed with WT Ded1 and WT eIF4E\u00b7eIF4G (kmax) could also be achieved using elevated concentrations of the mutant variant; whereas in other cases, the observed kmax was diminished from the WT value even at saturating amounts of the mutant Ded1 or eIF4G variant. We regard such reductions in kmax as indicating impairment of a fundamental role of the deleted eIF4G or Ded1 domain in rapid recruitment of the affected mRNA. Accordingly, we summarized these effects for each factor truncation in a heatmap (Figure 7B) to evaluate the requirements for particular domains or interactions for maximum rate stimulation by Ded1 with each mRNA tested.\n\nIt is evident from the heatmap that deletion of the eIF4G-RNA3 or Ded1-CTD domain confers a wide range of kmax reductions: 2\u00a0\u2013\u00a03-fold for RPL41A and HOR7;\u00a0~1.5 fold for SFT2, SFT2-M, and CP-8.1, and almost no change for -SL and CD-8.1 (Figure 7B, cf. cols. 1\u00a0\u2013\u00a02, all rows). Importantly, however, in all cases the effects of deleting eIF4G-RNA3 and Ded1-CTD are similar for a given mRNA, supporting the proposition that these effects result from loss of the eIF4G-RNA3/Ded1-CTD interaction. Eliminating this interaction essentially abolishes the rate enhancement provided by Ded1 for recruitment of RPL41A and HOR7 mRNAs (Figure 4B,E and Figure 4\u2014figure supplement 1E), indicating that the Ded1-CTD/eIF4G-RNA3 interaction is essential for the eIF4E\u00b7eIF4G\u00b7eIF4A\u00b7Ded1 complex (i.e., at saturating Ded1 concentration) to accelerate a slow step in 48S PIC assembly on these mRNAs (Figure 7C(i)). This step is apparently enhanced through different interactions or is less rate-limiting for the other mRNAs tested.\n\nWe observed a similar diversity of effects on kmax values depending on the mRNA for the eIF4G-RNA2 and Ded1-NTD deletions. $\u0394$RNA2 had little effect on kmax for RPL41A and HOR7, in contrast to the deleterious effects of $\u0394$RNA3 for these two mRNAs. Similarly, $\u0394$RNA2 markedly reduced the kmax for SFT2 and CD-8.1 by\u00a0~2.5\u00a0\u2013\u00a03-fold, whereas $\u0394$RNA3 had little effect on these mRNAs (Figure 7B, col. 3 vs. col. 1). Similar to $\u0394$RNA3 however, $\u0394$RNA2 decreased the kmax values for SFT2-M and CP-8.1 by\u00a0~1.5\u00a0\u2013\u00a02-fold, with minimal effect on -SL mRNA (Figure 7B). In this case, the RNA2 domain appears to be most important for the ability of the eIF4E\u00b7eIF4G\u00b7eIF4A\u00b7Ded1 complex to stimulate recruitment of the two mRNAs with cap-distal SLs, SFT2 and CD-8.1; nearly dispensable for the mRNAs with the lowest degrees of structure, -SL, RPL41A and HOR7; and of intermediate importance for CP-8.1 and SFT2-M. These observations suggest that RNA2 facilitates Ded1 function in melting out structures encountered by the PIC during attachment or scanning (Figure 7C(ii-iv)). (Although SFT2-M lacks the major cap-distal SL in WT SFT2, it contains an additional cap-proximal structure in vitro that might underlie its greater dependence on RNA2 versus -SL, RPL41A, and HOR7.)\n\nWhereas deletion of the Ded1-NTD had the largest effect of the four eIF4G or Ded1 truncations on K1/2 values (Figure 7A), it had the smallest effects on maximal rates of recruitment, reducing kmax values between\u00a0~1.5 to~2 fold for SFT2, CD-8.1, and CP-8.1, but having little effect on the other mRNAs (Figure 7B). As all three affected mRNAs have stable SLs and the unaffected mRNAs do not, these data might indicate that the Ded1-NTD, presumably by interacting with eIF4A, modestly enhances the ability of the eIF4E\u00b7eIF4G\u00b7eIF4A\u00b7Ded1 complex to unwind stable secondary structures\u2014complementing the function of eIF4G-RNA2 in this reaction (Figure 7C(ii-iii)).\n\nWhat is perhaps most striking about the effects of the eIF4G and Ded1 truncations on both the K1/2 (Figure 7A) and kmax (Figure 7B) values is that mRNAs have distinct patterns of responses. The various eIF4G-Ded1 domain interactions affect CP-8.1 and CD-8.1 recruitment quite differently even though these mRNAs differ only by the location of the same SL in an unstructured 5'-UTR. This suggests that there is not a single, uniform mechanism through which Ded1 operates on all mRNAs; instead the diversity of structures in mRNAs requires that Ded1 and the eIF4E\u00b7eIF4G\u00b7eIF4A\u00b7Ded1 complex can operate in multiple modes. The structural diversity inherent in mRNAs presents a challenge for the translational machinery because, once the eIF4F complex attaches to the 5'-cap, structural elements could be oriented in a variety of locations in three-dimensional space relative to its functional domains (Figure 7C). This problem could explain why eIF4G is so large and flexible and has multiple RNA- and factor-binding domains, which might confer sufficient plasticity to interact with mRNA structures presented in a variety of orientations and distances. Likewise, the multiple Ded1 binding domains on eIF4G might allow Ded1 to assume different positions relative to the diverse mRNA structures it encounters on different mRNAs. The mRNA specificity of effects of the truncation mutants of Ded1 and eIF4G on both K1/2 and kmax values are consistent with the notion that the eIF4E\u00b7eIF4G\u00b7eIF4A\u00b7Ded1 complex can interact with and modulate the structures of mRNAs in different ways, with the mRNA structure dictating the particular interactions of Ded1 with eIF4G or eIF4A that are most crucial for rapid recruitment.\n\nIt is likely that the rate-limiting step(s) for 48S PIC formation will also vary depending on the unique structural features of the mRNA. For some mRNAs, PIC attachment to the 5'-UTR might be rate-limiting because of structures proximal to the 5'-end or because the 5'-end is occluded within the global structure of the mRNA (Figure 7D (i)). For other mRNAs, PIC attachment might be relatively fast, but scanning to the start codon could be impeded by stable structures that require Ded1 in the context of the eIF4E\u00b7eIF4G\u00b7eIF4A\u00b7Ded1 complex to resolve (Figure 7D (ii)). Since the RPL41A and HOR7 mRNAs have short and less-structured 5'-UTRs, it is plausible that PIC attachment could be rate-limiting on these two mRNAs (Figure 7D (i)), whereas scanning of the 5'-UTR could be rate-limiting on the two cap-distal SL-containing mRNAs, SFT2 and CD-8.1 (Figure 7D (ii)).\n\nRecruitment of some mRNAs was accelerated by Ded1 in the absence of eIF4E\u00b7eIF4G, including SFT2, SFT2-M, OST3, and CD-8.1 (Figure 3C\u2013E,G) indicating that Ded1 is also capable of stimulating one or more aspects of 48S PIC assembly outside of the context of the eIF4E\u00b7eIF4G\u00b7eIF4A\u00b7Ded1 complex on certain mRNAs. The three mRNAs that most clearly exhibit complete dependence on eIF4E\u00b7eIF4G for Ded1 stimulation, -SL, RPL41A, and HOR7, have low degrees of structure in their 5'-UTRs. Hence, an intriguing possibility is that for mRNAs lacking strong local secondary structure in the 5'-UTR, Ded1 is only needed to promote eIF4F binding to the cap or initial attachment of the PIC at the 5'-end, and this process requires direct interaction of Ded1 with eIF4F at the mRNA 5'-end (Figure 7D (i)). For other mRNAs harboring strong local structures in the 5'-UTR, in addition to acting in a eIF4F-Ded1 tetrameric complex to facilitate PIC attachment, Ded1 might unwind these structures and promote scanning independently of its association with eIF4F (Figure 7D (ii)). The apparent inability of Ded1 to accelerate recruitment of CP-8.1 independently of eIF4E\u00b7eIF4G might be explained by noting that the SL in this mRNA is cap-proximal, which could require eIF4F-Ded1 interaction for unwinding; however, because no recruitment of this mRNA was observed in the absence of eIF4E\u00b7eIF4G or Ded1, it is possible that Ded1 can actually accelerate CP-8.1 recruitment on its own but the rate is too low to be detected in the absence of eIF4E\u00b7eIF4G. Additionally, Ded1 can interact with other factors such as eIF4A, the 40S ribosomal subunit, or the mRNA itself, which might aid in the recruitment of these mRNAs without eIF4E\u00b7eIF4G (Gao et al., 2016; Guenther et al., 2018).\n\nThe two different models (\u2018mRNA geometry\u2019 and \u2018rate-limiting steps\u2019, Figure 7C\u2013D) we are considering to explain the differential effects of the eIF4G and Ded1 domain deletions on different mRNAs are not mutually exclusive. In fact, the proposal that the domains have some specificity for mediating PIC attachment versus scanning probably requires that they localize Ded1 to different parts of the mRNA because the former reaction would occur closer to the 5'-end whereas the latter would occur distal to it. The length and flexibility of eIF4G, coupled with the complex network of interactions possible among eIF4G, eIF4E, eIF4A, Ded1 and mRNA, could have evolved to support the plasticity required to deal with the wide variety of mRNA shapes, sizes and structures that must be loaded onto PICs for translation in eukaryotic cells where transcription and translation are uncoupled.\n\nmRNAs can form long-range interactions between their 5'-UTRs and coding sequences or 3'-UTRs, but because our reporter mRNAs consisted of only 5'-UTRs and the first 60 nucleotides of their coding sequences, interactions of this kind would not be recapitulated in our system. Therefore, the role of Ded1 in resolving such long-range interactions remains to be elucidated. Additionally, our reporter mRNAs lack 3'-poly(A) tails and the recruitment assay was performed in the absence of the poly(A) binding protein (PABP). PABP can interact with eIF4G, and it would thus be useful in the future to explore how PABP-eIF4G interactions influence Ded1-eIF4G interactions and Ded1 functions in mRNA recruitment and scanning.\n\n## Materials and methods\n\n### Preparation of mRNAs and charged initiator tRNA\n\nPlasmids for in vitro run-off mRNA transcription of Ded1-hypodependent and -hyperdependent mRNAs were constructed using Gibson assembly (Gibson et al., 2009). The 5'-UTR and first 60 nucleotides of the coding region of OST3, SFT2, PMA1, HOR7, and FET3 genes were PCR amplified from yeast genomic DNA (BY4741) and cloned into pBluescript II KS\u00a0+\u00a0vector (Stratagene) using NEBuilder HiFi assembly according to the manufacturer\u2019s instructions (New England Biolabs). In all mRNAs constructs, Xma1 restriction site was added at the end of the coding region during cloning to linearize the plasmids, and two G nucleotides were added at the beginning of the 5'-UTR to improve transcription efficiency. Plasmids for transcription of SFT2-M, SFT2-M2, and PMA1-M mRNAs were derived from SFT2 and PMA1 plasmids, respectively, by mutating their 5'-UTRs (Genscript Corp.). Plasmids for transcription of RPL41A, synthetic mRNAs with 5'-UTR consisting of CAA repeats and RPL41A ORF and 3'-UTR, and initiator tRNA were described previously (Acker et al., 2007; Mitchell et al., 2010; Yourik et al., 2017). mRNAs and initiator tRNA were transcribed by run-off transcription using T7 RNA polymerase and gel purified as described previously (Acker et al., 2007; Mitchell et al., 2010). mRNAs were capped (m7GpppG) using either \u03b1\u221232P radiolabeled GTP (Perkin Elmer) or unlabeled GTP and vaccinia virus capping enzyme (Mitchell et al., 2010). Initiator tRNA was methionylated in vitro using methionine and E. coli methionyl-tRNA synthetase, and charged Met-tRN$A_{i}^{Met}$ was purified of contaminating nucleotides over a desalting column (Walker and Fredrick, 2008; Yourik et al., 2017).\n\n### Purification of translation initiation factors\n\nEukaryotic initiation factors- eIF1, eIF1A, eIF2, eIF3, eIF4A, eIF4B, eIF4G\u00b74E (WT and mutants), eIF5- were expressed and purified as described previously (Acker et al., 2007; Mitchell et al., 2010; Rajagopal et al., 2012). 40S ribosomal subunits were prepared as described in (Munoz et al., 2017). Recombinant Ded1 proteins (N-terminal His6-tag, pET22b vector)- WT Ded1(1-604), Ded1E307A, Ded1-$\u0394$CTD (1-535) and Ded1-$\u0394$NTD (117-604) were purified as described previously (Gao et al., 2016; Hilliker et al., 2011) with some modifications. Ded1 proteins were expressed in E. coli BL21(DE3) RIL CodonPlus cells (Agilent). Cells were grown at 37\u00b0C till OD600 of 0.5, cooled to 22\u00b0C, and induced with 0.5 mM IPTG overnight. Cells were re-suspended in the lysis buffer (10 mM HEPES-KOH, pH-7.4, 200 mM KCl, 0.1% IGEPAL CA-630, 10 mM imidazole, 10% glycerol, 10 mM 2-mercaptoethanol, DNaseI (1 U/ml) and cOmplete protease inhibitor cocktail (Roche)), and lysed using a French Press. Ded1 was purified over a nickel column (5 ml His-Trap column, GE Healthcare) followed by phosphocellulose chromatography (P11, Whartman). Purified protein was dialyzed into dialysis buffer (10 mM HEPES-KOH, pH 7.4, 200 mM KOAc, 50% Glycerol, 2 mM DTT) and stored at \u221280\u00b0C. Ded1-$\u0394$NTD was purified with the same method as the wild-type Ded1 with the following modifications. The N-terminal His6-SUMO tag was removed by incubating nickel-column purified protein with a His6-SUMO protease (McLab) at 4\u00b0C overnight, followed by second round of nickel column purification (Gao et al., 2016).\n\n### mRNA recruitment assay\n\n48S PICs were assembled and native gel shift assay was performed as described previously (Mitchell et al., 2010; Yourik et al., 2017) with following modifications. Reactions were assembled in 1X Recon buffer (30 mM HEPES-KOH, pH 7.4, 100 mM KOAc, 3 mM Mg(OAc)2, and 2 mM DTT) containing 300 nM eIF2, 0.5 mM GDPNP\u00b7Mg2+, 200 nM Met-tRNAiMet, 1 \u00b5M eIF1, 1 \u00b5M eIF1A, 300 nM eIF5, 300 nM eIF4B, 300 nM eIF3, 30 nM 40S subunits, eIF4A, eIF4E\u00b7eIFG, and Ded1. The non-hydrolyzable GTP analog GDPNP was used in forming the TC to stabilize the 43S and 48S complexes by preventing conversion to the eIF2\u00b7GDP state. The concentrations of eIF4A, eIF4E\u00b7eIFG, and Ded1 varied for recruitment of different mRNAs. eIF4A: RPL41A, HOR7, -SL, CP-8.1, and CD-8.1\u00a0=\u00a07 \u00b5M; SFT2, SFT2-M, SFT2-M2, OST3, PMA-1, PMA-1M and FET3\u00a0=\u00a015 \u00b5M. eIF4E\u00b7eIFG\u00a0=\u00a075 nM for all mRNAs, except OST3 (150 nM). Ded1: RPL41A and -SL\u00a0=\u00a0250 nM, HOR7\u00a0=\u00a0500 nM, all other mRNAs\u00a0=\u00a01 \u00b5M. The concentrations of initiation factors were saturating except for the titrant. Reactions were incubated at 26?C for 10 min, and were initiated by simultaneous addition of 15 nM 32P-m7G mRNA and 5 mM ATP\u00b7Mg2+. For kinetic analysis, 2 \u00b5l aliquot were removed at appropriate times, reactions were stopped by addition of 600\u20131000 nM non-radiolabeled m7G-mRNA (same mRNA as the 32P-m7G mRNA), and loaded onto a 4% non-denaturing PAGE gel to separate 48S PICs from the free mRNA. Percentage of mRNA recruited to the 48S PIC was calculated using ImageQuant software (GE Healthcare). Data were fitted with a single exponential rate equation to calculate apparent rate of recruitment using KaleidaGraph software (Synergy). Apparent rates were plotted against the concentration of the titrant and fitted with hyperbolic equation to calculate the maximal rates of recruitment and the concentration of the titrant required to achieve the half-maximal rates (K1/2). To measure the maximal endpoints of recruitment, the reactions were incubated for 100\u2013200 min (as judged by the kinetic experiments). Prism 7 (GraphPad) was used for the statistical analyses and bar-graph data representations. Heatmaps were made in RStudio using gplots and RColorBrewer libraries.\n\nDissociation experiments were conducted to measure any off-rates (koff) to verify that the addition of unlabeled m7G-mRNA to stop the reactions did not result in the dissociation of already-formed 48S PICs. PICs were assembled, and reactions were initiated as described above. A 20\u201330-fold excess of same unlabeled m7G-mRNA was added before the reactions were initiated (no mRNA recruitment was observed) or after 2\u201320 min of incubation (depending on the kapp). Aliquots were loaded on the gel at indicated times, and percentage mRNA recruited was calculated. The data were fitted with a linear curve.\n\n### ATPase assay\n\nNADH-coupled ATPase assay was performed as described in (Yourik et al., 2017). Ded1 (100\u2013500 nM) was added to reactions containing 1X Recon buffer, 2.5 mM phosphoenolpyruvate, 1 mM NADH, 1/250 dilution of the PK/LDH mix (pyruvate kinase (600\u20131000 units/mL) and lactate dehydrogenase (900\u20131400 units/mL)), 2 \u00b5M uncapped RPL41A mRNA, and reactions were initiated by addition of 5 mM ATP\u00b7Mg2+. Reaction rates (V0) were calculated from linear slope of plot of NADH oxidation over time measured as absorbance A340. kcat was calculated by dividing V0 by Ded1 concentration. To estimate the Km of ATP, ATP was titrated at 0\u201310 mM concentrations. Rates were plotted against the concentration of the ATP and fitted with Michaelis- Menten equation to calculate the Km of ATP.\n\n### Fluorescence anisotropy assay\n\nFluorescent anisotropy assay was performed as described previously (Walker et al., 2013). Briefly, ssRNA labeled with fluorescein at the 3?-end was incubated with Ded1 concentration (0\u2013750 nM) in the absence of any nucleotide or in the presence of 5 mM ADP\u00b7Mg2\u00a0+and ADPNP\u00b7Mg2\u00a0+in 1X Recon buffer, and fluorescent anisotropies were measured with excitation and emission wavelengths of 495 nM and 520 nM, respectively. The data were fitted with a hyperbolic equation.\n",
+      "created_at": "2025-12-02T06:28:30.050142Z"
+    },
+    {
+      "id": "54d012b4-7fba-4ea5-a1f4-13ed471a6f6a",
+      "submission_id": "fa9fc21e-fbae-4fe9-bda9-f417a5424a70",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Nahum Sonenberg, McGill University Canada\n- James L Manley, Columbia University United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.38892.027](https://doi.org/10.7554/eLife.38892.027)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Yeast Ded1 promotes 48S translation pre-initiation complex assembly in an mRNA-specific and eIF4F-dependent manner\" for consideration by eLife. Your article has been reviewed by three peer reviewers, including Nahum Sonenberg as the Reviewing Editor and Reviewer #1, and the evaluation has been overseen by James Manley as the Senior Editor.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThe authors use in vitro mRNA translation assays to study how yeast Ded1, eIF4A, and the eIF4G/ eIF4E complex function in 48S pre-initiation complex assembly and scanning along the mRNA 5'UTR. They report that Ded1 enhances mRNA recruitment for all the reporter mRNAs, but hyper-dependent mRNAs required higher concentrations of Ded1. They also show that the presences of secondary structure in the 5'UTR increase the dependence for Ded1 in 48S assembly. Importantly, they demonstrate that eIF4A is essential for 48S PIC assembly in all mRNAs and that Ded1 cannot replace the role eIF4A plays in 48S PIC assembly. In addition, they present evidence that the Ded1 interactions with the eIF4F complex are important in mRNA recruitment for some reporter mRNAs.\n\nEssential revisions:\n\nThe reviewers believe that your paper is important in establishing an in vitro system to study the function of Ded1 in translation and for describing significant aspects of its mechanism of action. The work was expertly done and data support the conclusions. They raise, however, several shared concerns. They also suggested improvements to strengthen the manuscript. Consequently, we include the full text of the reviewers' comments. The major criticisms concern the discrepancies between your earlier publication of ded1 function in vivo and the results of this paper. We think that you can respond adequately to the criticisms of the reviewers by additional experimentation and clarification. We therefore invite you to submit a revised manuscript that successfully addresses these concerns.\n\nReviewer #1:\n\nRNA secondary structure in the 5'UTR of mRNA largely determines translation efficiency by impeding the loading of the 43S ribosomal pre-initiation complex (PIC) onto the 5' end of mRNA and subsequent scanning. The yeast DEAD-box RNA helicase Ded1 cooperate with the canonical RNA helicase eIF4A in resolving the 5'UTR secondary structure. However, whether Ded1 and eIF4A perform distinct or overlapping functions remains unknown. This study for the first time provides a detailed biochemical analysis of the role of Ded1 in the promotion of 43S PIC attachment and scanning on the model and native mRNAs. The authors reconstituted Ded1 acceleration of 48S PIC assembly in a yeast translation initiation system containing purified components (40S ribosomal subunits, initiation factors, ATP and 32P-labeled mRNA). The system faithfully recapitulated increased Ded1 dependence of mRNAs that are Ded1-hyper-dependent in vivo. Other major findings are (1) Ded1 dependence of 48S PIC assembly correlated with the degree of mRNA secondary structure. (2) Ded1 stimulated both PIC attachment and scanning. (3) Ded1 better alleviated the inhibitory effects of the stem-loop structures in a cap-distal than cap-proximal location. (3) For a subset of mRNAs, Ded1 stimulation was completely dependent on eIF4G-eIF4E. In contrast, all mRNAs exhibited the requirement for eIF4A. (4) The interaction between the RNA3 domain of eIF4G and Ded1-CTD facilitated Ded1 function in mRNA recruitment to the PIC. (5) Deletion of the eIF4G RNA2 domain, which interacts with Ded1, or the N-terminal domain of Ded1, which interacts with eIF4A, conferred mRNA-specific defects in 48S PIC assembly. These studies show the functional importance of an eIF4G-eIF4E-eIF4A-Ded1 tetrameric complex in the initiation of translation of structured mRNAs.\n\nImportantly, a human homolog of Ded1, DDX3, is known to alter the translation of specific mRNAs in tumors and in viral infections. Thus, the new insights into the molecular mechanisms of Ded1 function reported will be appealing to a broad readership of eLife.\n\n1) General. It would be nice to confirm the role of the eIF4G-eIF4E-eIF4A-Ded1 ternary complex in translation initiation in a more physiological setting, such as crude yeast extract. Could they compare the inhibitory effects of eIF4A and Ded1 dominant-negative mutants on the translation of mRNAs with and without prominent secondary structure in this system?\n\n2) It is not clear whether the ~20-fold excess of unlabeled capped mRNA is sufficient to stop the recruitment of 32P-labeled mRNA. A control showing inhibition of 32P-mRNA binding to the 43S PIC by different concentrations of unlabeled mRNA added at the beginning of the incubation should be provided.\n\n3) The authors conclude that Dedd1 activity is dependent on the eIF4G-eIF4A complex, yet in Figure 3 dedd1 exhibits activity on several mRNAs (SFT2, OST3-Sl) in the absence of eIF4G-eIF4E complex. How is this explained?\n\nReviewer #2:\n\nThe authors use a reconstituted yeast translation system to assess the consequences of Ded1 on 48S PIC assembly using a small collection of hypo- and hyper-dependent mRNAs (identified from previous studies). They report that Ded1 hyper-dependent mRNAs are inherently less capable of PIC formation and more dependent on Ded1 for rapid recruitment in vitro (compared to in vivo Ded1 hypo-dependent mRNAs). The work appears well performed and in general the data support the conclusions drawn.\n\nIs Ded1 normally saturating in vivo? If you look at the data in Figure 3\u2014figure supplement 1, with the exception of OST3 mRNA, eIF4A is sufficient to generate the majority of 48S PICs and adding Ded1 minimally improves this. Can the authors provide similar curves for PMA1, FET3, and SFT2-M? Yet, the authors show in Figure 1C. that RPL41A recruitment is appreciably stimulated by Ded1 in vitro. If Ded1 is not limiting in vivo, then the endpoints for most of the mRNAs would be similar.\n\nAre the 48S PICs formed in vitro cap-dependent? How about the complexes formed in the presence of Ded1, but in the absence of eIF4E:eIF4G (Figure 3)?\n\nIn Figure S1I \u2013 The authors do not show a precursor/product relationship between the minor and major conformers (i.e., how do they know the minor species are \"collapsing\" down to the major species in the presence of Ded1? Has this experiment been done with eIF4F? Hence, it is difficult to know what these data are actually contributing to the overall story and the authors should consider removing it.\n\nSubsection \u201cDed1 stimulation is completely dependent on eIF4G\u00b7eIF4E for a subset of mRNAs and all mRNAs require eIF4A in the presence or absence of Ded1\u201d, first paragraph \u2013 I would urge the authors not to use only eIF4G to represent the eIF4E-eIF4G heterodimer, this will only cause confusion.\n\nThe authors generate eIF4G-\u0394RNA2, eIF4G-\u0394RNA3, Ded-\u0394ATP, and Ded-\u0394CTD mutants to show that the effects of Ded1 on 48S PIC formation is eIF4G dependent. Can they validate in their system that the pairs generated abolish or severely affect such interaction. Since some of the observed effects with these mutants appear to indicate that a higher concentration of mutant is required to achieve enhancement of recruitment, why not combine pairs of mutants to see if this bears out? Also, in the Discussion, the authors write, \"mRNA recruitment depends on Ded1 functioning within the eIF4E.eIF4G.eIF4A.Ded1 complex; and that eliminating any interaction between Ded1 and eIF4G or eIF4A necessitates a higher concentration of the mutant variant for efficient complex formation.\" Can they, at a minimum, show that the Ded1 mutants used in this study interact less efficiently with eIF4G?\n\nWould any robust RNA helicase substitute for Ded1 in the reconstitution assay?\n\nThe sixth paragraph of the subsection \u201cDed1 and eIF4G mutants affect the maximal rates for recruitment differently depending on the mRNA\u201d \u2013 of the Discussion appears quite speculative and could be condensed/removed.\n\nReviewer #3:\n\nIn this manuscript, the authors use in vitro mRNA recruitment assays to further elucidate how yeast Ded1, eIF4A and their interactions with the eIF4G/ eIF4E complex contribute to 48S pre-initiation complex assembly and scanning along the mRNA 5'UTR. The authors build on their previous studies selecting mRNAs considered to be hyper and hypo-dependent on Ded1 for translation to conduct their assays. They demonstrate that Ded1 enhances mRNA recruitment for all the reporter mRNAs with hyper-dependent mRNAs requiring a higher concentration of Ded1 to recruit mRNA. They go on to show that the presences of stem loops in the 5'UTR increase the dependence for Ded1 in 48S assembly. They then demonstrate that eIF4A is essential for 48S PIC assembly in all mRNAs and that Ded1 cannot replace the role eIF4A plays in 48S PIC assembly. In addition, they present evidence that the Ded1 interactions with the eIF4F complex are important in mRNA recruitment for some reporter mRNAs.\n\nThis is a well-written manuscript and was relatively easy to understand. The paper builds on a number of recent observations from various labs (including the authors' labs) concerning the roles of Ded1 and eIF4A in PIC assembly. I'm not sure the paper divulges anything particularly novel mechanistically, but it does confirm a number of observations made in vivo using an in vitro assay that directly assess the key event; 48S complex assembly.\n\n1) In some aspects the in vitro assay does not necessarily reproduce the situation observed in vivo. First, Ded1 was shown previously by this group to be required for maintaining the translation of roughly 10% of yeast mRNAs (Sen et al., 2015), whereas all mRNAs tested in vitro show some dependence. Second eIF4A is shown here to be required for 48S PIC formation on all mRNAs tested, whereas previously reductions in eIF4A function affected the translation efficiency of very few mRNAs. These differences at least need to be commented upon and some rational explanation provided.\n\n2) The reporter mRNAs that are used consist of the 5'UTR and the first 60nt of the CDS. However, in the previous paper they suggested that elements within the CDS and 3'UTR might engage in long range interactions to form inhibitory structures that confer dependence on Ded1. In addition, the role of Pab1 in 48S PIC recruitment would not be observed using the in vitro system described, yet as Pab1 also interacts with eIF4G, this could impact on the level of dependence on Ded1 in vivo for a particular mRNA. Again these limitations of the in vitro system should be discussed and the caveats they raise explored in the context of other literature.\n\n3) When the stem loop in the 5'UTRs of SFT2 and PMA1 mRNA is eliminated, these mRNAs now exhibit similar kmax and K1/2 values to that of the hypo-dependent mRNAs with short 5'UTR (RPL41A and HOR7) and the reporter with an unstructured 5'UTR (-SL). However, SFT2-M and PMA1-M still have long 5'UTRs, 92nt & 239nt respectively, and presumably have some structural elements within then, so it seems very odd that they act like hypo-dependent mRNAs and not the hyper-dependent mRNAs like OST3 and FET3?\n\n4) Ideally the authors would show that at the concentrations used in these in vitro assays, eIF4G lacking the RNA3 and RNA2 domains does not interact with Ded1 where expected from previous literature.\n",
+      "created_at": "2025-12-02T06:28:30.050142Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T06:28:30.050142Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T06:28:30.050142Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "549cfb8d-2584-450c-bfcc-0017512eb79e",
+      "content_id": "74a2369f-909f-4392-8986-5a84761d6842",
+      "claim_id": "C1",
+      "claim": "DEAD-box RNA helicase Ded1 is thought to resolve secondary structures in mRNA 5'-untranslated regions (5'-UTRs) that impede 48S preinitiation complex (PIC) formation at the initiation codon.",
+      "claim_type": "EXPLICIT",
+      "source": "DEAD-box RNA helicase Ded1 is thought to resolve secondary structures in mRNA 5'-untranslated regions (5'-UTRs) that impede 48S preinitiation complex (PIC) formation at the initiation codon.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement from the abstract describing the proposed function of Ded1, supported by the experimental work in the manuscript.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:28:30.050142Z"
+    },
+    {
+      "id": "158e7cc9-f31c-40a0-9968-4b638a7ccc67",
+      "content_id": "74a2369f-909f-4392-8986-5a84761d6842",
+      "claim_id": "C2",
+      "claim": "Ded1 acceleration of 48S PIC assembly was reconstituted on native mRNAs in a pure system.",
+      "claim_type": "EXPLICIT",
+      "source": "We reconstituted Ded1 acceleration of 48S PIC assembly on native mRNAs in a pure system",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes experiments using purified components to reconstitute the system.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:28:30.050142Z"
+    },
+    {
+      "id": "9f10a5c3-93de-4dfa-999a-c6ec7c5c0bf5",
+      "content_id": "74a2369f-909f-4392-8986-5a84761d6842",
+      "claim_id": "C3",
+      "claim": "The reconstituted system recapitulated increased Ded1-dependence of mRNAs that are Ded1-hyperdependent in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "recapitulated increased Ded1-dependence of mRNAs that are Ded1-hyperdependent in vivo",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript presents data showing that mRNAs identified as Ded1-hyperdependent in vivo also show greater dependence on Ded1 in the reconstituted system.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:28:30.050142Z"
+    },
+    {
+      "id": "40e706ee-9a7d-4996-b7fa-e78b39c042fb",
+      "content_id": "74a2369f-909f-4392-8986-5a84761d6842",
+      "claim_id": "C4",
+      "claim": "Stem-loop (SL) structures in 5'-UTRs of native and synthetic mRNAs increased the Ded1 requirement to overcome their intrinsically low rates of 48S PIC recruitment.",
+      "claim_type": "EXPLICIT",
+      "source": "Stem-loop (SL) structures in 5'-UTRs of native and synthetic mRNAs increased the Ded1 requirement to overcome their intrinsically low rates of 48S PIC recruitment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript presents data showing that mRNAs with stem-loop structures have lower recruitment rates without Ded1 and require higher Ded1 concentrations for maximal stimulation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:28:30.050142Z"
+    },
+    {
+      "id": "c1fd8729-37ad-4e5d-a990-6f73f0bc7706",
+      "content_id": "74a2369f-909f-4392-8986-5a84761d6842",
+      "claim_id": "C5",
+      "claim": "Ded1 acceleration of 48S assembly was greater in the presence of eIF4F.",
+      "claim_type": "EXPLICIT",
+      "source": "Ded1 acceleration of 48S assembly was greater in the presence of eIF4F",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript presents data comparing Ded1 stimulation with and without eIF4F components.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:28:30.050142Z"
+    },
+    {
+      "id": "74ac0ef9-088f-44f4-a7c7-b931877f0c42",
+      "content_id": "74a2369f-909f-4392-8986-5a84761d6842",
+      "claim_id": "C6",
+      "claim": "Domains mediating one or more Ded1 interactions with eIF4G or helicase eIF4A were required for efficient recruitment of all mRNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "domains mediating one or more Ded1 interactions with eIF4G or helicase eIF4A were required for efficient recruitment of all mRNAs",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript presents data using domain deletion mutants showing effects on mRNA recruitment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:28:30.050142Z"
+    },
+    {
+      "id": "6bec992b-8d76-4ed8-9b42-004f27047b3f",
+      "content_id": "74a2369f-909f-4392-8986-5a84761d6842",
+      "claim_id": "C7",
+      "claim": "The relative importance of particular Ded1 and eIF4G domains were distinct for each mRNA.",
+      "claim_type": "EXPLICIT",
+      "source": "however, the relative importance of particular Ded1 and eIF4G domains were distinct for each mRNA",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript presents data showing different effects of domain deletions on different mRNAs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:28:30.050142Z"
+    },
+    {
+      "id": "97613f79-8d39-442d-9e50-cebc1a440223",
+      "content_id": "74a2369f-909f-4392-8986-5a84761d6842",
+      "claim_id": "C8",
+      "claim": "The results account for the Ded1 hyper-dependence of mRNAs with structure-prone 5'-UTRs.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results account for the Ded1 hyper-dependence of mRNAs with structure-prone 5'-UTRs",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:28:30.050142Z"
+    },
+    {
+      "id": "9ae5d625-8a4a-45a8-a532-e91df5e3e7d4",
+      "content_id": "74a2369f-909f-4392-8986-5a84761d6842",
+      "claim_id": "C9",
+      "claim": "An eIF4E\u00b7eIF4G\u00b7eIF4A\u00b7Ded1 complex is implicated in accelerating 48S PIC assembly on native mRNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "implicate an eIF4E\u00b7eIF4G\u00b7eIF4A\u00b7Ded1 complex in accelerating 48S PIC assembly on native mRNAs",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data showing functional interactions between these factors.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:28:30.050142Z"
+    },
+    {
+      "id": "e72a99af-71f7-4c6f-a93a-fc9461a08f07",
+      "content_id": "74a2369f-909f-4392-8986-5a84761d6842",
+      "claim_id": "C10",
+      "claim": "In canonical translation initiation in eukaryotes, a ternary complex (TC), consisting of eukaryotic initiation factor 2 (eIF2), Met-tRNAiMet, and GTP, along with eIF1, eIF1A, eIF5, eIF4B, and eIF3, binds to the small (40S) ribosomal subunit to form a 43S pre-initiation complex (PIC).",
+      "claim_type": "EXPLICIT",
+      "source": "In canonical translation initiation in eukaryotes, a ternary complex (TC), consisting of eukaryotic initiation factor 2 (eIF2), Met-tRNAiMet, and GTP, along with eIF1, eIF1A, eIF5, eIF4B, and eIF3, binds to the small (40S) ribosomal subunit to form a 43S pre-initiation complex (PIC).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about translation initiation, cited from reviews.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:28:30.050142Z"
+    },
+    {
+      "id": "4b628bf3-467d-4738-b7c8-f1096c106ae3",
+      "content_id": "74a2369f-909f-4392-8986-5a84761d6842",
+      "claim_id": "C11",
+      "claim": "The 43S PIC binds to the 5'-end of mRNA and scans the 5'-untranslated region (UTR) to identify the start codon, resulting in the formation of the 48S PIC.",
+      "claim_type": "EXPLICIT",
+      "source": "The 43S PIC binds to the 5'-end of mRNA and scans the 5'-untranslated region (UTR) to identify the start codon, resulting in the formation of the 48S PIC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about translation initiation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:28:30.050142Z"
+    },
+    {
+      "id": "1f2d407b-9cab-4f9f-9c51-a6a875643059",
+      "content_id": "74a2369f-909f-4392-8986-5a84761d6842",
+      "claim_id": "C12",
+      "claim": "eIF4F complex, comprised of eIF4E (a cap binding protein), eIF4G (a scaffolding protein), and eIF4A (a DEAD-box RNA helicase), interacts with the mRNA m7G cap and aids in recruitment of the 43S PIC to the 5'-end of the mRNA.",
+      "claim_type": "EXPLICIT",
+      "source": "eIF4F complex, comprised of eIF4E (a cap binding protein), eIF4G (a scaffolding protein), and eIF4A (a DEAD-box RNA helicase), interacts with the mRNA m7G cap and aids in recruitment of the 43S PIC to the 5'-end of the mRNA (reviewed in Dever et al., 2016; Hinnebusch, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about eIF4F function, supported by citations to reviews.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:28:30.050142Z"
+    },
+    {
+      "id": "ed5f061f-800e-47a7-9913-8804f7ae3805",
+      "content_id": "74a2369f-909f-4392-8986-5a84761d6842",
+      "claim_id": "C13",
+      "claim": "eIF4A promotes 48S PIC formation in vitro and translation in vivo of virtually all mRNAs regardless of their structural complexity.",
+      "claim_type": "EXPLICIT",
+      "source": "eIF4A promotes 48S PIC formation in vitro and translation in vivo of virtually all mRNAs regardless of their structural complexity (Pestova and Kolupaeva, 2002; Sen et al., 2015; Yourik et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:28:30.050142Z"
+    },
+    {
+      "id": "16cd1578-3b4f-4a94-ad78-d014bb17d550",
+      "content_id": "74a2369f-909f-4392-8986-5a84761d6842",
+      "claim_id": "C14",
+      "claim": "The majority of cellular mRNAs have strong and similar dependence on eIF4A for their proper translation in cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Yeast ribosome profiling studies show that the majority of cellular mRNAs have strong and similar dependence on eIF4A for their proper translation in cells (Sen et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to a ribosome profiling study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:28:30.050142Z"
+    },
+    {
+      "id": "3e4b4a25-3e0e-462d-bf67-8320d57a4116",
+      "content_id": "74a2369f-909f-4392-8986-5a84761d6842",
+      "claim_id": "C15",
+      "claim": "eIF4A is an essential protein.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, eIF4A is an essential protein",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by the cited study.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:28:30.050142Z"
+    },
+    {
+      "id": "86c3459b-a3d2-4b3a-a0ef-0bad75aeaa3b",
+      "content_id": "74a2369f-909f-4392-8986-5a84761d6842",
+      "claim_id": "C16",
+      "claim": "Small decreases in eIF4A cellular concentrations reduce bulk translation in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "small decreases in eIF4A cellular concentrations reduce bulk translation in vivo, further emphasizing the critical role of eIF4A in translation of most mRNAs (Firczuk et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:28:30.050142Z"
+    },
+    {
+      "id": "1adc9bf7-e307-4831-a92f-ea3fd219bfc0",
+      "content_id": "74a2369f-909f-4392-8986-5a84761d6842",
+      "claim_id": "C17",
+      "claim": "Yeast eIF4A is a weak helicase when unwinding RNA duplexes in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "Yeast eIF4A is a weak helicase when unwinding RNA duplexes in vitro (Rajagopal et al., 2012; Rogers et al., 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:28:30.050142Z"
+    },
+    {
+      "id": "af7157ad-24e1-4345-94cf-139178c0b2eb",
+      "content_id": "74a2369f-909f-4392-8986-5a84761d6842",
+      "claim_id": "C18",
+      "claim": "Mammalian eIF4A modulates the structure of the 40S subunit to enhance PIC attachment.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent evidence suggests that mammalian eIF4A modulates the structure of the 40S subunit to enhance PIC attachment (Sokabe and Fraser, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to a recent study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:28:30.050142Z"
+    },
+    {
+      "id": "cd572cb1-526c-4add-b41d-64bdcf45729b",
+      "content_id": "74a2369f-909f-4392-8986-5a84761d6842",
+      "claim_id": "C19",
+      "claim": "Ded1 is a yeast DEAD-box RNA helicase that promotes translation in vivo of reporter mRNAs with longer or structured 5'-UTRs.",
+      "claim_type": "EXPLICIT",
+      "source": "Ded1 is a yeast DEAD-box RNA helicase that promotes translation in vivo of reporter mRNAs with longer or structured 5'-UTRs (Berthelot et al., 2004; Chiu et al., 2010; Sen et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:28:30.050142Z"
+    },
+    {
+      "id": "3e4cf50a-618d-4eb8-960a-bef9672301b3",
+      "content_id": "74a2369f-909f-4392-8986-5a84761d6842",
+      "claim_id": "C20",
+      "claim": "Ded1 is essential for yeast growth.",
+      "claim_type": "EXPLICIT",
+      "source": "Like eIF4A, Ded1 is essential for yeast growth and stimulates bulk translation initiation in vivo (Chuang et al., 1997; de la Cruz et al., 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:28:30.050142Z"
+    },
+    {
+      "id": "beb4820d-f0b7-4446-bef4-94b73dc17573",
+      "content_id": "74a2369f-909f-4392-8986-5a84761d6842",
+      "claim_id": "C21",
+      "claim": "Ded1 stimulates bulk translation initiation in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "Like eIF4A, Ded1 is essential for yeast growth and stimulates bulk translation initiation in vivo (Chuang et al., 1997; de la Cruz et al., 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:28:30.050142Z"
+    },
+    {
+      "id": "f112126c-bcf9-44ed-9ca4-6354a312a245",
+      "content_id": "74a2369f-909f-4392-8986-5a84761d6842",
+      "claim_id": "C22",
+      "claim": "Native mRNAs with 5'-UTRs that are longer and more structured than average yeast 5'-UTRs exhibit a greater than average reduction in translational efficiency (TE) relative to all other mRNAs on Ded1 inactivation (Ded1-hyperdependent mRNAs).",
+      "claim_type": "EXPLICIT",
+      "source": "However, ribosome profiling of conditional ded1 mutants revealed that native mRNAs with 5'-UTRs that are longer and more structured than average yeast 5'-UTRs exhibit a greater than average reduction in translational efficiency (TE) relative to all other mRNAs on Ded1 inactivation (Ded1-hyperdependent mRNAs); whereas mRNAs with shorter and less structured 5'-UTRs exhibit increased relative TEs in ded1 cells (Ded1-hypodependent mRNAs) (Sen et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to a ribosome profiling study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:28:30.050142Z"
+    },
+    {
+      "id": "edb97687-20c6-4167-82c3-add2ad5c36e6",
+      "content_id": "74a2369f-909f-4392-8986-5a84761d6842",
+      "claim_id": "C23",
+      "claim": "mRNAs with shorter and less structured 5'-UTRs exhibit increased relative TEs in ded1 cells (Ded1-hypodependent mRNAs).",
+      "claim_type": "EXPLICIT",
+      "source": "whereas mRNAs with shorter and less structured 5'-UTRs exhibit increased relative TEs in ded1 cells (Ded1-hypodependent mRNAs) (Sen et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to a ribosome profiling study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:28:30.050142Z"
+    },
+    {
+      "id": "b302d978-01b5-42e3-baf5-75b0862f437a",
+      "content_id": "74a2369f-909f-4392-8986-5a84761d6842",
+      "claim_id": "C24",
+      "claim": "Yeast Ded1 can unwind model RNA duplexes in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "Yeast Ded1 can unwind model RNA duplexes and act as an RNA chaperone or RNA-protein complex remodeler in vitro (Bowers et al., 2006; Iost et al., 1999; Yang and Jankowsky, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:28:30.050142Z"
+    },
+    {
+      "id": "ac459f57-40ac-4692-b6d3-f11d02d43852",
+      "content_id": "74a2369f-909f-4392-8986-5a84761d6842",
+      "claim_id": "C25",
+      "claim": "Yeast Ded1 can act as an RNA chaperone in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "Yeast Ded1 can unwind model RNA duplexes and act as an RNA chaperone or RNA-protein complex remodeler in vitro (Bowers et al., 2006; Iost et al., 1999; Yang and Jankowsky, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:28:30.050142Z"
+    },
+    {
+      "id": "13448be6-8459-4fa6-8445-c55fec85fe1a",
+      "content_id": "74a2369f-909f-4392-8986-5a84761d6842",
+      "claim_id": "C26",
+      "claim": "Yeast Ded1 can act as an RNA-protein complex remodeler in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "Yeast Ded1 can unwind model RNA duplexes and act as an RNA chaperone or RNA-protein complex remodeler in vitro (Bowers et al., 2006; Iost et al., 1999; Yang and Jankowsky, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:28:30.050142Z"
+    },
+    {
+      "id": "c416c039-27d6-438a-be3e-609d3274564c",
+      "content_id": "74a2369f-909f-4392-8986-5a84761d6842",
+      "claim_id": "C27",
+      "claim": "Translation stimulation by Ded1 requires its ATPase activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Translation stimulation by Ded1 requires its ATPase activity (Hilliker et al., 2011; Iost et al., 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:28:30.050142Z"
+    },
+    {
+      "id": "5b60d21f-1b8d-469c-934f-9c873fb559cc",
+      "content_id": "74a2369f-909f-4392-8986-5a84761d6842",
+      "claim_id": "C28",
+      "claim": "Mutations in the Ded1 ATPase domain (Ded1-E307A and Ded1-R489A) impair ATP binding and hydrolysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutations in the Ded1 ATPase domain (Ded1-E307A and Ded1-R489A) impair ATP binding and hydrolysis, and these mutants have dominant-negative effects on translation both in cell extracts and in vivo, evoking stress granule formation in the latter (Hilliker et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:28:30.050142Z"
+    },
+    {
+      "id": "f457faa5-73a8-4164-ac07-baa0b1704ee1",
+      "content_id": "74a2369f-909f-4392-8986-5a84761d6842",
+      "claim_id": "C29",
+      "claim": "Ded1-E307A and Ded1-R489A mutants have dominant-negative effects on translation both in cell extracts and in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutations in the Ded1 ATPase domain (Ded1-E307A and Ded1-R489A) impair ATP binding and hydrolysis, and these mutants have dominant-negative effects on translation both in cell extracts and in vivo, evoking stress granule formation in the latter (Hilliker et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:28:30.050142Z"
+    },
+    {
+      "id": "ea593d9b-4efa-4eff-9436-2e71c530ff01",
+      "content_id": "74a2369f-909f-4392-8986-5a84761d6842",
+      "claim_id": "C30",
+      "claim": "Ded1-E307A and Ded1-R489A mutants evoke stress granule formation in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutations in the Ded1 ATPase domain (Ded1-E307A and Ded1-R489A) impair ATP binding and hydrolysis, and these mutants have dominant-negative effects on translation both in cell extracts and in vivo, evoking stress granule formation in the latter (Hilliker et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:28:30.050142Z"
+    },
+    {
+      "id": "e9696f4f-d396-4820-80d4-f96397033062",
+      "content_id": "74a2369f-909f-4392-8986-5a84761d6842",
+      "claim_id": "C31",
+      "claim": "Ded1 can physically interact individually with purified eIF4E, eIF4G, eIF4A, or Pab1 (poly(A) binding protein).",
+      "claim_type": "EXPLICIT",
+      "source": "Ded1 can physically interact individually with purified eIF4E, eIF4G, eIF4A, or Pab1 (poly(A) binding protein), and can bind simultaneously to eIF4A\u00b7eIF4E\u00b7eIF4G (eIF4F) or eIF4E\u00b7eIF4G, in an RNA-independent manner (Gao et al., 2016; Hilliker et al., 2011; Senissar et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:28:30.050142Z"
+    },
+    {
+      "id": "c9fe578f-1116-4cfd-b30a-a73630540f78",
+      "content_id": "74a2369f-909f-4392-8986-5a84761d6842",
+      "claim_id": "C32",
+      "claim": "Ded1 can bind simultaneously to eIF4A\u00b7eIF4E\u00b7eIF4G (eIF4F) or eIF4E\u00b7eIF4G, in an RNA-independent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "Ded1 can physically interact individually with purified eIF4E, eIF4G, eIF4A, or Pab1 (poly(A) binding protein), and can bind simultaneously to eIF4A\u00b7eIF4E\u00b7eIF4G (eIF4F) or eIF4E\u00b7eIF4G, in an RNA-independent manner (Gao et al., 2016; Hilliker et al., 2011; Senissar et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:28:30.050142Z"
+    },
+    {
+      "id": "503e6066-51d1-4758-bbec-64ee9432202c",
+      "content_id": "74a2369f-909f-4392-8986-5a84761d6842",
+      "claim_id": "C33",
+      "claim": "Ded1 interacts with the eIF4F complex in yeast extracts.",
+      "claim_type": "EXPLICIT",
+      "source": "Ded1 also interacts with the eIF4F complex in yeast extracts, supporting the physiological relevance of these interactions (Hilliker et al., 2011; Senissar et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:28:30.050142Z"
+    },
+    {
+      "id": "bec3248c-364b-4b95-b302-6b9ca24983c2",
+      "content_id": "74a2369f-909f-4392-8986-5a84761d6842",
+      "claim_id": "C34",
+      "claim": "Ded1-eIF4G-mRNA interaction is thought to repress translation by promoting accumulation of mRNPs in stress granules.",
+      "claim_type": "EXPLICIT",
+      "source": "According to a proposed model, Ded1-eIF4G-mRNA interaction is thought to repress translation by promoting accumulation of mRNPs in stress granules, whereas ATP hydrolysis by Ded1 moves the repressed mRNPs back into the translation cycle (Hilliker et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a proposed model from a cited study.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:28:30.050142Z"
+    },
+    {
+      "id": "ebc5361f-5c61-4a54-bec9-0c9f151827bb",
+      "content_id": "74a2369f-909f-4392-8986-5a84761d6842",
+      "claim_id": "C35",
+      "claim": "ATP hydrolysis by Ded1 moves the repressed mRNPs back into the translation cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "According to a proposed model, Ded1-eIF4G-mRNA interaction is thought to repress translation by promoting accumulation of mRNPs in stress granules, whereas ATP hydrolysis by Ded1 moves the repressed mRNPs back into the translation cycle (Hilliker et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a proposed model from a cited study.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:28:30.050142Z"
+    },
+    {
+      "id": "fff3213f-e877-41be-abce-57faa553dae5",
+      "content_id": "74a2369f-909f-4392-8986-5a84761d6842",
+      "claim_id": "C36",
+      "claim": "Ded1 interacts with eIF4A through its N-terminal domain (Ded1-NTD).",
+      "claim_type": "EXPLICIT",
+      "source": "Ded1 interacts with eIF4A through its N-terminal domain (Ded1-NTD) and this interaction is required for eIF4A stimulation of Ded1's RNA-duplex unwinding activity (Gao et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:28:30.050142Z"
+    },
+    {
+      "id": "053ea1c2-882f-49ea-be8a-0529dc27e6ba",
+      "content_id": "74a2369f-909f-4392-8986-5a84761d6842",
+      "claim_id": "C37",
+      "claim": "The Ded1-NTD interaction with eIF4A is required for eIF4A stimulation of Ded1's RNA-duplex unwinding activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Ded1 interacts with eIF4A through its N-terminal domain (Ded1-NTD) and this interaction is required for eIF4A stimulation of Ded1's RNA-duplex unwinding activity (Gao et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:28:30.050142Z"
+    },
+    {
+      "id": "c352d111-5157-4b37-9901-4afe47498f43",
+      "content_id": "74a2369f-909f-4392-8986-5a84761d6842",
+      "claim_id": "C38",
+      "claim": "Deletion of the Ded1-NTD confers a cold-sensitive growth phenotype in cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Deletion of the Ded1-NTD confers a cold-sensitive growth phenotype in cells, consistent with a role for eIF4A stimulation of Ded1 function in vivo (Banroques et al., 2011; Gao et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:28:30.050142Z"
+    },
+    {
+      "id": "55d7a37f-d6ae-4193-9962-1ac56a364617",
+      "content_id": "74a2369f-909f-4392-8986-5a84761d6842",
+      "claim_id": "C39",
+      "claim": "Yeast eIF4G contains three RNA binding domains, N-terminal RNA1, central RNA2, and C-terminal RNA3.",
+      "claim_type": "EXPLICIT",
+      "source": "Yeast eIF4G contains three RNA binding domains, N-terminal RNA1, central RNA2, and C-terminal RNA3 (Berset et al., 2003)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:28:30.050142Z"
+    },
+    {
+      "id": "9afa955d-6a26-4a20-9f6b-795bea53d1e2",
+      "content_id": "74a2369f-909f-4392-8986-5a84761d6842",
+      "claim_id": "C40",
+      "claim": "None of the three RNA binding domains of eIF4G is essential.",
+      "claim_type": "EXPLICIT",
+      "source": "and while none of the three is essential, simultaneous deletion of RNA2 and RNA3 is lethal (Park et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:28:30.050142Z"
+    },
+    {
+      "id": "5d62765f-0809-46c0-b366-44d306319c43",
+      "content_id": "74a2369f-909f-4392-8986-5a84761d6842",
+      "claim_id": "C41",
+      "claim": "Simultaneous deletion of RNA2 and RNA3 domains of eIF4G is lethal.",
+      "claim_type": "EXPLICIT",
+      "source": "and while none of the three is essential, simultaneous deletion of RNA2 and RNA3 is lethal (Park et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:28:30.050142Z"
+    },
+    {
+      "id": "932c2143-aa53-4508-ad66-20b564fe0d67",
+      "content_id": "74a2369f-909f-4392-8986-5a84761d6842",
+      "claim_id": "C42",
+      "claim": "eIF4G variants lacking any of the three RNA binding domains exhibit similar affinities for eIF4A in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "In vitro, eIF4G variants lacking any of the three RNA binding domains exhibit similar affinities for eIF4A, support similar rates of ATP-hydrolysis by the eIF4F complex (albeit with higher Km values for ATP), but lack the preference of WT eIF4F for 5'-overhang substrates during unwinding (Rajagopal et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:28:30.050142Z"
+    },
+    {
+      "id": "0908b39f-0bbb-4f4d-8b33-1852eb0ef77f",
+      "content_id": "74a2369f-909f-4392-8986-5a84761d6842",
+      "claim_id": "C43",
+      "claim": "eIF4G variants lacking any of the three RNA binding domains support similar rates of ATP-hydrolysis by the eIF4F complex (albeit with higher Km values for ATP).",
+      "claim_type": "EXPLICIT",
+      "source": "In vitro, eIF4G variants lacking any of the three RNA binding domains exhibit similar affinities for eIF4A, support similar rates of ATP-hydrolysis by the eIF4F complex (albeit with higher Km values for ATP), but lack the preference of WT eIF4F for 5'-overhang substrates during unwinding (Rajagopal et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:28:30.050142Z"
+    },
+    {
+      "id": "8a7b4bd1-7dda-454b-958a-bcf944b004c9",
+      "content_id": "74a2369f-909f-4392-8986-5a84761d6842",
+      "claim_id": "C44",
+      "claim": "eIF4G variants lacking any of the three RNA binding domains lack the preference of WT eIF4F for 5'-overhang substrates during unwinding.",
+      "claim_type": "EXPLICIT",
+      "source": "In vitro, eIF4G variants lacking any of the three RNA binding domains exhibit similar affinities for eIF4A, support similar rates of ATP-hydrolysis by the eIF4F complex (albeit with higher Km values for ATP), but lack the preference of WT eIF4F for 5'-overhang substrates during unwinding (Rajagopal et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:28:30.050142Z"
+    },
+    {
+      "id": "430d58f9-d3e1-4d01-9cc9-9630063cc449",
+      "content_id": "74a2369f-909f-4392-8986-5a84761d6842",
+      "claim_id": "C45",
+      "claim": "The Ded1 C-terminal domain (Ded1-CTD) interacts with the eIF4G-RNA3 domain.",
+      "claim_type": "EXPLICIT",
+      "source": "The Ded1 C-terminal domain (Ded1-CTD) interacts with the eIF4G-RNA3 domain, and Ded1-eIF4G interaction decreases the rate of RNA unwinding while increasing Ded1 affinity for RNA in vitro (Hilliker et al., 2011; Putnam et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:28:30.050142Z"
+    },
+    {
+      "id": "ba57cfcb-a458-427c-8080-0b248b368cd7",
+      "content_id": "74a2369f-909f-4392-8986-5a84761d6842",
+      "claim_id": "C46",
+      "claim": "Ded1-eIF4G interaction decreases the rate of RNA unwinding while increasing Ded1 affinity for RNA in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "The Ded1 C-terminal domain (Ded1-CTD) interacts with the eIF4G-RNA3 domain, and Ded1-eIF4G interaction decreases the rate of RNA unwinding while increasing Ded1 affinity for RNA in vitro (Hilliker et al., 2011; Putnam et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:28:30.050142Z"
+    },
+    {
+      "id": "0f8ca049-f6a0-4853-af0f-83d7891c3609",
+      "content_id": "74a2369f-909f-4392-8986-5a84761d6842",
+      "claim_id": "C47",
+      "claim": "A Ded1 variant lacking the CTD conferred reduced reporter mRNA translation compared to WT Ded1 in cell extracts.",
+      "claim_type": "EXPLICIT",
+      "source": "A Ded1 variant lacking the CTD conferred reduced reporter mRNA translation compared to WT Ded1 in cell extracts, supporting a stimulatory role for the Ded1-CTD interaction with eIF4G in translation initiation (Hilliker et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:28:30.050142Z"
+    },
+    {
+      "id": "ad4c7826-186f-412b-9e0a-4482d46c74ff",
+      "content_id": "74a2369f-909f-4392-8986-5a84761d6842",
+      "claim_id": "C48",
+      "claim": "Ded1 also interacts with the RNA2 domain of eIF4G and with eIF4E.",
+      "claim_type": "EXPLICIT",
+      "source": "Ded1 also interacts with the RNA2 domain of eIF4G and with eIF4E (Senissar et al., 2014)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:28:30.050142Z"
+    },
+    {
+      "id": "49efff62-58c1-4ff6-8815-64394ba3d70c",
+      "content_id": "74a2369f-909f-4392-8986-5a84761d6842",
+      "claim_id": "C49",
+      "claim": "eIF4F, eIF4B, and eIF3 stimulate the rate and extent of mRNA recruitment by 43S PICs for native RPL41A mRNA.",
+      "claim_type": "EXPLICIT",
+      "source": "We previously demonstrated functions of eIF4F, eIF4B, and eIF3 in stimulating the rate and extent of mRNA recruitment by 43S PICs in a fully purified yeast initiation system for native RPL41A mRNA, containing a short and relatively unstructured 5'-UTR (Mitchell et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to a previous study by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:28:30.050142Z"
+    },
+    {
+      "id": "c72fb6c9-8428-4bd9-abf1-dbfa5012f1ac",
+      "content_id": "74a2369f-909f-4392-8986-5a84761d6842",
+      "claim_id": "C50",
+      "claim": "Ded1 was dispensable for recruitment of RPL41A mRNA in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "Although Ded1 is essential in vivo, it was dispensable for recruitment of this mRNA in vitro.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from previous work by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:28:30.050142Z"
+    },
+    {
+      "id": "8b0abb3e-46b8-40f4-9a5f-eb7aa6d4019f",
+      "content_id": "74a2369f-909f-4392-8986-5a84761d6842",
+      "claim_id": "C51",
+      "claim": "RPL41A was judged to be Ded1-hypodependent in vivo by ribosome profiling of ded1 mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "Considering that RPL41A was judged to be Ded1-hypodependent in vivo by ribosome profiling of ded1 mutants (Sen et al., 2015)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to a ribosome profiling study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:28:30.050142Z"
+    },
+    {
+      "id": "d99818a2-73a5-4c15-8dfb-bf67363358f3",
+      "content_id": "74a2369f-909f-4392-8986-5a84761d6842",
+      "claim_id": "C52",
+      "claim": "Addition of saturating Ded1 increased the kmax of RPL41A by ~2.8 fold from 0.95 \u00b1 0.1 min-1 to 2.7 \u00b1 0.3 min-1.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, with our more sensitive pulse-quench approach, we found that addition of saturating Ded1 increased the kmax of RPL41A by ~2.8 fold from 0.95 \u00b1 0.1 min-1 to 2.7 \u00b1 0.3 min-1 (Figure 1B, cf. blue vs. orange, and Figure 1\u2014figure supplement 1H-red)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:28:30.050142Z"
+    },
+    {
+      "id": "fa10cdf4-fa1f-4537-a75b-9dae1d354fdf",
+      "content_id": "74a2369f-909f-4392-8986-5a84761d6842",
+      "claim_id": "C54",
+      "claim": "Without Ded1, the rate of HOR7 recruitment was 1.3 \u00b1 0.16 min-1.",
+      "claim_type": "EXPLICIT",
+      "source": "Without Ded1, the rate of HOR7 recruitment was 1.3 \u00b1 0.16 min-1",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:28:30.050142Z"
+    },
+    {
+      "id": "cd10190d-5302-43d3-baa4-7222439ea868",
+      "content_id": "74a2369f-909f-4392-8986-5a84761d6842",
+      "claim_id": "C55",
+      "claim": "Saturating Ded1 stimulated HOR7 recruitment by ~2 fold (kmax = 2.8 \u00b1 0.4 min-1).",
+      "claim_type": "EXPLICIT",
+      "source": "and saturating Ded1 stimulated recruitment by ~2 fold (kmax = 2.8 \u00b1 0.4 min-1)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:28:30.050142Z"
+    },
+    {
+      "id": "01f6ce81-95bd-40e8-b3ab-691fc97f7bfe",
+      "content_id": "74a2369f-909f-4392-8986-5a84761d6842",
+      "claim_id": "C57",
+      "claim": "Without Ded1, the four Ded1-hyperdependent mRNAs were recruited at rates 2.5- to 15-fold lower compared to the two Ded1-hypodependent mRNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, without Ded1, the four Ded1-hyperdependent mRNAs were recruited at rates 2.5- to 15-fold lower compared to the two Ded1-hypodependent mRNAs (Figure 1B, blue)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:28:30.050142Z"
+    },
+    {
+      "id": "363da7b0-c430-4516-a10c-c44d93bc7f59",
+      "content_id": "74a2369f-909f-4392-8986-5a84761d6842",
+      "claim_id": "C58",
+      "claim": "The rates of Ded1-hyperdependent mRNAs increased by an order of magnitude on addition of Ded1.",
+      "claim_type": "EXPLICIT",
+      "source": "and these rates increased by an order of magnitude on addition of Ded1 (Figure 1B, orange and bottom panel; and Figure 1\u2014figure supplement 1H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:28:30.050142Z"
+    },
+    {
+      "id": "4b51fcbb-383f-4911-ac0a-3acad7ab5436",
+      "content_id": "74a2369f-909f-4392-8986-5a84761d6842",
+      "claim_id": "C59",
+      "claim": "The Ded1-hyperdependent mRNAs required higher Ded1 concentrations to achieve maximal rates.",
+      "claim_type": "EXPLICIT",
+      "source": "The Ded1-hyperdependent mRNAs also required higher Ded1 concentrations to achieve these maximal rates (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:28:30.050142Z"
+    },
+    {
+      "id": "1b6674cd-ea3d-4e7f-9ca5-eaff744f89d7",
+      "content_id": "74a2369f-909f-4392-8986-5a84761d6842",
+      "claim_id": "C60",
+      "claim": "The acceleration of mRNA recruitment by Ded1 required its ATPase activity.",
+      "claim_type": "EXPLICIT",
+      "source": "The acceleration of mRNA recruitment by Ded1 required its ATPase activity, as ATPase-deficient Ded1 variant Ded1E307A (Figure 1\u2014figure supplement 1D\u2013E) (Iost et al., 1999) did not accelerate recruitment of any of the mRNAs (Figure 1\u2014figure supplement 1I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:28:30.050142Z"
+    },
+    {
+      "id": "60f1558c-b46e-410e-bf87-1feb48825816",
+      "content_id": "74a2369f-909f-4392-8986-5a84761d6842",
+      "claim_id": "C62",
+      "claim": "PMA1 exhibited a low endpoint of recruitment without Ded1 (30 \u00b1 5%), which increased to 91 \u00b1 2% on Ded1 addition.",
+      "claim_type": "EXPLICIT",
+      "source": "PMA1 and OST3 also exhibited low endpoints of recruitment without Ded1, 30 \u00b1 5% and 41 \u00b1 4%, respectively, which increased to 91 \u00b1 2% and 86 \u00b1 3%, respectively, on Ded1 addition (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:28:30.050142Z"
+    },
+    {
+      "id": "8db82f3f-d21c-4442-b417-1e554f9494e2",
+      "content_id": "74a2369f-909f-4392-8986-5a84761d6842",
+      "claim_id": "C63",
+      "claim": "OST3 exhibited a low endpoint of recruitment without Ded1 (41 \u00b1 4%), which increased to 86 \u00b1 3% on Ded1 addition.",
+      "claim_type": "EXPLICIT",
+      "source": "PMA1 and OST3 also exhibited low endpoints of recruitment without Ded1, 30 \u00b1 5% and 41 \u00b1 4%, respectively, which increased to 91 \u00b1 2% and 86 \u00b1 3%, respectively, on Ded1 addition (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:28:30.050142Z"
+    },
+    {
+      "id": "9eb7ed0e-606d-4f51-9853-135422b8afd2",
+      "content_id": "74a2369f-909f-4392-8986-5a84761d6842",
+      "claim_id": "C64",
+      "claim": "Two or more conformers of OST3 (and other mRNAs) were observed in native gel electrophoresis that likely represent differently folded, stable mRNA conformers.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, two or more conformers of OST3 (and other mRNAs) were observed in native gel electrophoresis that likely represent differently folded, stable mRNA conformers (Figure 1\u2014figure supplement 1K).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:28:30.050142Z"
+    },
+    {
+      "id": "bcce72a3-a903-4c10-9b46-b4c5fd94f9fc",
+      "content_id": "74a2369f-909f-4392-8986-5a84761d6842",
+      "claim_id": "C67",
+      "claim": "Without Ded1, the SL-disrupted version of PMA1, PMA1-M, showed ~2 fold higher endpoints of recruitment than WT PMA1 (PMA1-M = 62 \u00b1 2.5%, PMA1 = 30 \u00b1 5%).",
+      "claim_type": "EXPLICIT",
+      "source": "Without Ded1, the SL-disrupted version of PMA1, PMA1-M, showed ~2 fold higher endpoints of recruitment than WT PMA1 (PMA1-M = 62 \u00b1 2.5%, PMA1 = 30 \u00b1 5%, Figure 2B, gold).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:28:30.050142Z"
+    },
+    {
+      "id": "8196efa2-1127-4b36-9531-aef8492b46e1",
+      "content_id": "74a2369f-909f-4392-8986-5a84761d6842",
+      "claim_id": "C68",
+      "claim": "PMA1-M was recruited at rates ~ 4 fold higher than PMA1 (kmax = 1.2 \u00b1 0.1 min-1 (PMA1-M) vs. 0.33 \u00b1 0.06 min-1 (PMA1)).",
+      "claim_type": "EXPLICIT",
+      "source": "PMA1-M was also recruited at rates ~ 4 fold higher than PMA1 (kmax = 1.2 \u00b1 0.1 min-1 (PMA1-M) vs. 0.33 \u00b1 0.06 min-1 (PMA1); Figure 2C, blue)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:28:30.050142Z"
+    },
+    {
+      "id": "d91d5cb6-204f-45a4-b230-31c9ae7eed28",
+      "content_id": "74a2369f-909f-4392-8986-5a84761d6842",
+      "claim_id": "C69",
+      "claim": "Ded1 increased the rate of PMA1-M recruitment to yield a kmax similar to that for PMA1.",
+      "claim_type": "EXPLICIT",
+      "source": "Ded1 increased the rate of PMA1-M recruitment to yield a kmax similar to that for PMA1 (Figure 2C, orange)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:28:30.050142Z"
+    },
+    {
+      "id": "5668287e-26ff-483c-b0c3-9784b6739b88",
+      "content_id": "74a2369f-909f-4392-8986-5a84761d6842",
+      "claim_id": "C71",
+      "claim": "Compared to WT SFT2 mRNA, SFT2-M showed an ~2 fold faster recruitment in the absence of Ded1 (0.88 \u00b1 0.08 min-1 vs. 0.44 \u00b1 0.05 min-1).",
+      "claim_type": "EXPLICIT",
+      "source": "Compared to WT SFT2 mRNA, SFT2-M showed an ~2 fold faster recruitment in the absence of Ded1 (0.88 \u00b1 0.08 min-1 vs. 0.44 \u00b1 0.05 min-1, Figure 2C, blue)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:28:30.050142Z"
+    },
+    {
+      "id": "df817909-6607-4c81-83c9-a656a722af0c",
+      "content_id": "74a2369f-909f-4392-8986-5a84761d6842",
+      "claim_id": "C76",
+      "claim": "Without Ded1, -SL was recruited rapidly at a rate of 1.9 \u00b1 0.2 min-1.",
+      "claim_type": "EXPLICIT",
+      "source": "Without Ded1, -SL was recruited rapidly at a rate of 1.9 \u00b1 0.2 min-1 (Figure 2C, blue)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:28:30.050142Z"
+    },
+    {
+      "id": "087138b5-7088-48c9-8e86-573ab8a77203",
+      "content_id": "74a2369f-909f-4392-8986-5a84761d6842",
+      "claim_id": "C77",
+      "claim": "-SL was recruited ~2 fold faster than RPL41A or the SFT2-M and PMA1-M variants lacking SLs.",
+      "claim_type": "EXPLICIT",
+      "source": "~2 fold faster than RPL41A (Figure 1B, blue) or the SFT2-M and PMA1-M variants lacking SLs (Figure 2C, blue)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:28:30.050142Z"
+    },
+    {
+      "id": "8959da4c-21a8-4ab6-9a07-252b9ee3f3c8",
+      "content_id": "74a2369f-909f-4392-8986-5a84761d6842",
+      "claim_id": "C78",
+      "claim": "Ded1 increased the kmax of -SL recruitment by ~3 fold.",
+      "claim_type": "EXPLICIT",
+      "source": "Ded1 increased the kmax of -SL recruitment by ~3 fold (Figure 2C, orange; and Figure 2\u2014figure supplement 1F, red)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:28:30.050142Z"
+    },
+    {
+      "id": "5bdccbea-ff8d-4d66-9693-e15a89d8f3cb",
+      "content_id": "74a2369f-909f-4392-8986-5a84761d6842",
+      "claim_id": "C79",
+      "claim": "Both CP-8.1 and CD-8.1 synthetic mRNAs with SLs had order-of-magnitude lower rates of recruitment compared to -SL in the absence of Ded1.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, both synthetic mRNAs with SLs had order-of-magnitude lower rates of recruitment compared to -SL in the absence of Ded1 (Figure 2C, blue, inset)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:28:30.050142Z"
+    },
+    {
+      "id": "87d927b7-616c-4d72-a11b-4bced12c3db4",
+      "content_id": "74a2369f-909f-4392-8986-5a84761d6842",
+      "claim_id": "C80",
+      "claim": "Ded1 increased the maximal rate of CP-8.1 recruitment by ~5 fold.",
+      "claim_type": "EXPLICIT",
+      "source": "Ded1 increased the maximal rate of CP-8.1 recruitment by ~5 fold, such that the maximal rate for CP-8.1 was still ~6 fold below that of -SL (Figure 2C and Figure 2\u2014figure supplement 1F, blue vs. red)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:28:30.050142Z"
+    },
+    {
+      "id": "aeb16bf4-7187-4703-8f15-9c8dd32efe7a",
+      "content_id": "74a2369f-909f-4392-8986-5a84761d6842",
+      "claim_id": "C81",
+      "claim": "The maximal rate for CP-8.1 with Ded1 was ~2 \u2013 3 fold below that of RPL41A, HOR7, SFT2, OST3, and PMA1.",
+      "claim_type": "EXPLICIT",
+      "source": "and ~2 \u2013 3 fold below that of RPL41A, HOR7, SFT2, OST3, and PMA1 (Figure 2C and Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:28:30.050142Z"
+    },
+    {
+      "id": "d7a39579-4abf-4c7d-9df6-f84a1625661a",
+      "content_id": "74a2369f-909f-4392-8986-5a84761d6842",
+      "claim_id": "C83",
+      "claim": "Ded1 conferred an ~17 fold acceleration of recruitment for CD-8.1.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, Ded1 conferred an ~17 fold acceleration of recruitment for CD-8.1 (Figure 2C)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:28:30.050142Z"
+    },
+    {
+      "id": "3bd02f35-f1f0-424e-9bac-27ee595896bf",
+      "content_id": "74a2369f-909f-4392-8986-5a84761d6842",
+      "claim_id": "C84",
+      "claim": "A high Ded1 concentration was required to achieve the half-maximal rate for CD-8.1.",
+      "claim_type": "EXPLICIT",
+      "source": "and a high Ded1 concentration was required to achieve the half-maximal rate (Figure 2D and Figure 2\u2014figure supplement 1F, green vs. red)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:28:30.050142Z"
+    },
+    {
+      "id": "eb8e4436-18c0-43db-83f7-eafef4a05c78",
+      "content_id": "74a2369f-909f-4392-8986-5a84761d6842",
+      "claim_id": "C85",
+      "claim": "Ded1 strongly stimulated the recruitment rate of CD-3.7, by ~25 fold.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, Ded1 strongly stimulated the recruitment rate of CD-3.7, by ~25 fold, slightly more than the ~15 fold observed for CD-8.1 (Figure 2F)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:28:30.050142Z"
+    },
+    {
+      "id": "6cf9e468-aac4-4b06-9b53-36d56b967e31",
+      "content_id": "74a2369f-909f-4392-8986-5a84761d6842",
+      "claim_id": "C86",
+      "claim": "Ded1 conferred only a modest ~2 fold acceleration of CD-10.5 recruitment.",
+      "claim_type": "EXPLICIT",
+      "source": "however, Ded1 conferred only a modest ~2 fold acceleration of CD-10.5 recruitment (Figure 2F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:28:30.050142Z"
+    },
+    {
+      "id": "37efe8ba-012c-4510-a1ab-a8c7095ab079",
+      "content_id": "74a2369f-909f-4392-8986-5a84761d6842",
+      "claim_id": "C87",
+      "claim": "RPL41A, HOR7, and -SL were recruited at relatively low (but measurable) rates in the absence of both eIF4E\u00b7eIF4G and Ded1.",
+      "claim_type": "EXPLICIT",
+      "source": "RPL41A, HOR7, and -SL, which contain very short (RPL41A and HOR7) or unstructured (-SL) 5'-UTRs, were recruited at relatively low (but measurable) rates in the absence of both eIF4E\u00b7eIF4G and Ded1 (Figure 3A,B,F, tan bars)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:28:30.050142Z"
+    },
+    {
+      "id": "8d695202-0c55-42b6-9e65-14ad913e6716",
+      "content_id": "74a2369f-909f-4392-8986-5a84761d6842",
+      "claim_id": "C88",
+      "claim": "Ded1 conferred no increase in apparent rates of RPL41A, HOR7, and -SL in the absence of eIF4E\u00b7eIF4G.",
+      "claim_type": "EXPLICIT",
+      "source": "and Ded1 conferred no increase in their apparent rates in the absence of eIF4E\u00b7eIF4G (Figure 3A,B,F, cf. green vs. tan, orange vs. blue).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:28:30.050142Z"
+    },
+    {
+      "id": "14af49b6-9b29-4806-8c76-dcaad0c6c144",
+      "content_id": "74a2369f-909f-4392-8986-5a84761d6842",
+      "claim_id": "C89",
+      "claim": "No CP-8.1 recruitment was observed without eIF4E\u00b7eIF4G.",
+      "claim_type": "EXPLICIT",
+      "source": "however, because no CP-8.1 recruitment was observed without eIF4E\u00b7eIF4G, Ded1 might stimulate recruitment of this mRNA on its own at levels below the detection limit of the assay.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:28:30.050142Z"
+    },
+    {
+      "id": "1a2ec51a-e6c7-4054-a635-098097fe176e",
+      "content_id": "74a2369f-909f-4392-8986-5a84761d6842",
+      "claim_id": "C90",
+      "claim": "Ded1 can accelerate recruitment of SFT2, OST3, SFT2-M, and CD-8.1 mRNAs in the absence of eIF4E\u00b7eIF4G.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to the results described above, Ded1 can accelerate recruitment of SFT2, OST3, SFT2-M, and CD-8.1 mRNAs in the absence of eIF4E\u00b7eIF4G, with comparable apparent rates afforded by eIF4E\u00b7eIF4G alone for SFT2, OST3, and CD-8.1 (Figure 3C,D,G; green vs. blue)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:28:30.050142Z"
+    },
+    {
+      "id": "493f30bf-74c0-4653-be5b-b48ee7bed4d8",
+      "content_id": "74a2369f-909f-4392-8986-5a84761d6842",
+      "claim_id": "C91",
+      "claim": "Omitting eIF4A from the reactions essentially eliminated recruitment of all mRNAs tested, yielding endpoints of <10%; with the exception of -SL.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to eIF4E\u00b7eIF4G, omitting eIF4A from the reactions essentially eliminated recruitment of all mRNAs tested, yielding endpoints of <10%; with the exception of -SL, which was recruited at the low rate of 0.04 \u00b1 0.01 min-1 with endpoints of 46 \u00b1 3% (Figure 3\u2014figure supplement 1, red).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:28:30.050142Z"
+    },
+    {
+      "id": "3c350399-a712-486c-9318-e13ed9c453e9",
+      "content_id": "74a2369f-909f-4392-8986-5a84761d6842",
+      "claim_id": "C92",
+      "claim": "-SL was recruited at the low rate of 0.04 \u00b1 0.01 min-1 with endpoints of 46 \u00b1 3% in the absence of eIF4A.",
+      "claim_type": "EXPLICIT",
+      "source": "with the exception of -SL, which was recruited at the low rate of 0.04 \u00b1 0.01 min-1 with endpoints of 46 \u00b1 3% (Figure 3\u2014figure supplement 1, red).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:28:30.050142Z"
+    },
+    {
+      "id": "4d537ae2-db43-4ef7-a3c5-4b1edbdc614d",
+      "content_id": "74a2369f-909f-4392-8986-5a84761d6842",
+      "claim_id": "C93",
+      "claim": "In the absence of eIF4A, Ded1 did not rescue recruitment of any mRNAs, nor did it increase the kapp or endpoints for -SL mRNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, in the absence of eIF4A, Ded1 did not rescue recruitment of any mRNAs, nor did it increase the kapp or endpoints for -SL mRNA (Figure 3\u2014figure supplement 1, blue).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:28:30.050142Z"
+    },
+    {
+      "id": "efe925be-b36c-4889-803b-91cd1fa81569",
+      "content_id": "74a2369f-909f-4392-8986-5a84761d6842",
+      "claim_id": "C96",
+      "claim": "Somewhat smaller reductions in kmax were observed for SFT2 and SFT2-M with \u0394RNA3.",
+      "claim_type": "EXPLICIT",
+      "source": "Somewhat smaller reductions in kmax were observed for SFT2 and SFT2-M (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:28:30.050142Z"
+    },
+    {
+      "id": "1c29d95a-a5ac-44fb-a4f9-ba228cadbd37",
+      "content_id": "74a2369f-909f-4392-8986-5a84761d6842",
+      "claim_id": "C97",
+      "claim": "Deleting RNA3 nearly eliminated the stimulatory effect of Ded1 on kmax values for RPL41A, HOR7, and CP-8.1.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, as summarized in Figure 4B, deleting RNA3 nearly eliminated the stimulatory effect of Ded1 on kmax values for RPL41A, HOR7, and CP-8.1 (black vs. grey bars vs. dashed red line, the latter indicating no stimulation by Ded1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:28:30.050142Z"
+    },
+    {
+      "id": "c72ce1d8-cb6c-45d2-98b0-f077c417b2d9",
+      "content_id": "74a2369f-909f-4392-8986-5a84761d6842",
+      "claim_id": "C107",
+      "claim": "RNA2 was dispensable for maximal Ded1 acceleration of RPL41A, HOR7, and -SL mRNA recruitment.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, RNA2 was dispensable for maximal Ded1 acceleration of RPL41A, HOR7, and -SL mRNA recruitment (Figure 5B, black vs. grey bars).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:28:30.050142Z"
+    },
+    {
+      "id": "42d197e9-02f5-4dd9-8129-5306be5591e9",
+      "content_id": "74a2369f-909f-4392-8986-5a84761d6842",
+      "claim_id": "C112",
+      "claim": "eIF4A has one or more essential functions in mRNA recruitment that cannot be provided by Ded1.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, eIF4A has one or more essential functions in mRNA recruitment that cannot be provided by Ded1, even for an mRNA such as -SL exhibiting appreciable recruitment in the absence of eIF4E\u00b7eIF4G (Figure 3F, tan).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:28:30.050142Z"
+    },
+    {
+      "id": "3d905e00-68a3-4f63-ab15-5ea8ca3301c1",
+      "content_id": "74a2369f-909f-4392-8986-5a84761d6842",
+      "claim_id": "C113",
+      "claim": "DHX29 and yeast Ded1 cannot substitute for eIF4A in 48S PIC assembly on native \u03b2-globin mRNA in a mammalian reconstituted system.",
+      "claim_type": "EXPLICIT",
+      "source": "This is consistent with the previous findings that eIF4A is required for robust translation of virtually all yeast mRNAs in vivo and in vitro (Sen et al., 2015; Yourik et al., 2017), and that DHX29 and yeast Ded1 cannot substitute for eIF4A in 48S PIC assembly on native \u03b2-globin mRNA in a mammalian reconstituted system (Abaeva et al., 2011; Pisareva et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:28:30.050142Z"
+    },
+    {
+      "id": "357fc666-5e9c-4ac1-9847-df69aaa6047d",
+      "content_id": "74a2369f-909f-4392-8986-5a84761d6842",
+      "claim_id": "C114",
+      "claim": "Ded1 can only promote mRNA recruitment in the presence of eIF4A for -SL mRNA with an unstructured leader.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the fact that Ded1 does not accelerate recruitment of -SL mRNA in the absence of eIF4A (Figure 3\u2014figure supplement 1H, blue vs. red) indicates that, at least for this mRNA with an unstructured leader, Ded1 can only promote mRNA recruitment in the presence of eIF4A.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a conclusion drawn from the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:28:30.050142Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "74d1b855-8a97-491f-9ead-4f1bc7e9b2d4",
+      "content_id": "74a2369f-909f-4392-8986-5a84761d6842",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Ded1 accelerates 48S PIC assembly on native mRNAs in a reconstituted system, recapitulating in vivo Ded1-dependence patterns. Ded1-hyperdependent mRNAs (SFT2, PMA1, OST3, FET3) showed 2.5-15-fold lower recruitment rates without Ded1 compared to Ded1-hypodependent mRNAs (RPL41A, HOR7), and rates increased by an order of magnitude with Ded1 addition. Ded1-hyperdependent mRNAs also required higher Ded1 concentrations to achieve maximal rates.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C3, and C52-C59 provide converging experimental evidence from the reconstituted system showing that Ded1 stimulates mRNA recruitment differentially based on mRNA structure, with quantitative kinetic data (kmax values, fold-changes, K1/2 values) supporting the recapitulation of in vivo Ded1-dependence patterns. The data are internally consistent and supported by multiple independent measurements.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:28:30.050142Z"
+    },
+    {
+      "id": "38624c08-190f-427b-97c0-7c1ea926a2ed",
+      "content_id": "74a2369f-909f-4392-8986-5a84761d6842",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Stem-loop structures in 5'-UTRs increase Ded1 requirement for efficient 48S PIC recruitment. Disrupting SLs in PMA1 and SFT2 increased recruitment rates 2-4-fold and reduced Ded1 concentration requirements. Synthetic mRNAs with cap-distal SLs (CD-8.1, CD-3.7) showed order-of-magnitude lower recruitment rates without Ded1 and required high Ded1 concentrations for stimulation (15-25-fold acceleration). Cap-proximal SL (CP-8.1) showed intermediate effects.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4 and C67-C86 provide systematic experimental evidence using both native mRNA mutants and synthetic constructs demonstrating that SL structures impede recruitment and increase Ded1 dependence. The data include quantitative kinetic measurements, mutational analysis, and structure-function relationships that consistently support the conclusion. The differential effects of cap-proximal vs. cap-distal SLs provide additional mechanistic insight.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:28:30.050142Z"
+    },
+    {
+      "id": "6789a2e8-aed1-4964-a74e-f663ba13063c",
+      "content_id": "74a2369f-909f-4392-8986-5a84761d6842",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Ded1 stimulation of mRNA recruitment requires its ATPase activity. The ATPase-deficient mutant Ded1E307A did not accelerate recruitment of any mRNAs tested.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C60 and C27 are supported by experimental data showing that the Ded1E307A mutant, which is deficient in ATP binding and hydrolysis, fails to stimulate mRNA recruitment. This is consistent with prior work (C27) and demonstrates that ATP hydrolysis is essential for Ded1 function in this system.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:28:30.050142Z"
+    },
+    {
+      "id": "ccb25e88-2402-4564-8310-98aa5f8b0f86",
+      "content_id": "74a2369f-909f-4392-8986-5a84761d6842",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Ded1 acceleration of 48S assembly depends on eIF4E\u00b7eIF4G for some mRNAs but not others. RPL41A, HOR7, -SL, and CP-8.1 showed no Ded1 stimulation in the absence of eIF4E\u00b7eIF4G, while SFT2, OST3, SFT2-M, and CD-8.1 could be accelerated by Ded1 without eIF4E\u00b7eIF4G, though maximal rates required both factors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5 and C87-C90 demonstrate mRNA-specific requirements for eIF4E\u00b7eIF4G in Ded1 function through systematic omission experiments. The data show clear differential effects: complete dependence for some mRNAs (RPL41A, HOR7, -SL) versus partial independence for others (SFT2, OST3, CD-8.1), with quantitative kinetic measurements supporting these distinctions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:28:30.050142Z"
+    },
+    {
+      "id": "198315d5-9139-4a36-a1e4-f3830d83c70f",
+      "content_id": "74a2369f-909f-4392-8986-5a84761d6842",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "eIF4A has essential functions in mRNA recruitment that cannot be provided by Ded1. Omitting eIF4A essentially eliminated recruitment of all mRNAs tested (endpoints <10%), with the exception of -SL. Ded1 did not rescue recruitment in the absence of eIF4A, even for -SL mRNA with an unstructured leader.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C91-C93 and C112-C114 provide experimental evidence that eIF4A is essential for mRNA recruitment and cannot be substituted by Ded1. The data show that Ded1 cannot function without eIF4A, even for mRNAs with minimal structure. This is consistent with prior work (C113) and demonstrates distinct, non-redundant functions for these two helicases.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:28:30.050142Z"
+    },
+    {
+      "id": "289187c6-8411-462f-8a50-16d963bc2f03",
+      "content_id": "74a2369f-909f-4392-8986-5a84761d6842",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Domains mediating Ded1 interactions with eIF4G (RNA2, RNA3) and eIF4A (NTD) are required for efficient recruitment, but their relative importance varies by mRNA. Deleting eIF4G-RNA3 nearly eliminated Ded1 stimulation for RPL41A, HOR7, and CP-8.1, while RNA2 was most important for SFT2 and CD-8.1 with cap-distal SLs. RNA2 was dispensable for RPL41A, HOR7, and -SL.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C7, and C96-C107 are supported by systematic domain deletion experiments showing mRNA-specific requirements for different eIF4G domains and Ded1 domains. The data include quantitative measurements of kmax and K1/2 values for multiple mRNAs with different domain deletions, revealing distinct patterns of domain importance that correlate with mRNA structural features.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:28:30.050142Z"
+    },
+    {
+      "id": "dbd69ac8-662c-41bb-9cd8-5a280cce37e2",
+      "content_id": "74a2369f-909f-4392-8986-5a84761d6842",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "An eIF4E\u00b7eIF4G\u00b7eIF4A\u00b7Ded1 tetrameric complex is implicated in accelerating 48S PIC assembly. This conclusion is based on functional data showing that domains mediating known physical interactions between Ded1 and eIF4F components (Ded1-CTD with eIF4G-RNA3, Ded1-NTD with eIF4A, Ded1 with eIF4G-RNA2 and eIF4E) are functionally important for mRNA recruitment.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C9 represents the major mechanistic conclusion of the paper, supported by the functional importance of interaction domains (C6, C7, C96-C107) combined with prior physical interaction data (C31-C33, C36-C37, C45, C48). The domain deletion experiments show that disrupting these interactions impairs Ded1 function in mRNA-specific ways, consistent with a functional tetrameric complex. However, the complex itself is not directly demonstrated in this study but inferred from functional data and prior physical interaction studies.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:28:30.050142Z"
+    },
+    {
+      "id": "38d7fe02-a030-4791-8d6f-8e8ef1177300",
+      "content_id": "74a2369f-909f-4392-8986-5a84761d6842",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "PMA1 and OST3 exhibited low recruitment endpoints without Ded1 (30% and 41%, respectively), which increased to 91% and 86% with Ded1. Multiple mRNA conformers were observed by native gel electrophoresis, suggesting Ded1 may facilitate isomerization among conformers.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C62-C64 are supported by experimental data showing endpoint defects for PMA1 and OST3 that are rescued by Ded1, and native gel data showing multiple mRNA conformers. The interpretation that Ded1 facilitates conformer isomerization is reasonable but speculative, as the relationship between the observed conformers and recruitment competence is not directly demonstrated.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:28:30.050142Z"
+    },
+    {
+      "id": "abaeb742-37fe-475d-8775-ae1a8914ce82",
+      "content_id": "74a2369f-909f-4392-8986-5a84761d6842",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The results account for the Ded1 hyper-dependence of mRNAs with structure-prone 5'-UTRs observed in vivo.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C8 is a summary conclusion supported by the collective experimental evidence showing that mRNAs with structured 5'-UTRs have intrinsically low recruitment rates and high Ded1 requirements in the reconstituted system, recapitulating the in vivo Ded1-dependence patterns. This provides a mechanistic explanation for the ribosome profiling observations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:28:30.050142Z"
+    },
+    {
+      "id": "c8a948b0-1c2e-46b1-bd8c-10f0c5dace1c",
+      "content_id": "74a2369f-909f-4392-8986-5a84761d6842",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Background knowledge and prior work establish the context for the current study, including the roles of eIF4F and Ded1 in translation initiation, their physical interactions, and prior in vivo observations of Ded1-dependent and -independent mRNAs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1 and C10-C51 represent established knowledge from prior work, supported by appropriate citations. These claims provide the scientific context and rationale for the current study but do not represent new findings from this manuscript.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:28:30.050142Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "158e7cc9-f31c-40a0-9968-4b638a7ccc67",
+      "result_id": "74d1b855-8a97-491f-9ead-4f1bc7e9b2d4"
+    },
+    {
+      "claim_id": "9f10a5c3-93de-4dfa-999a-c6ec7c5c0bf5",
+      "result_id": "74d1b855-8a97-491f-9ead-4f1bc7e9b2d4"
+    },
+    {
+      "claim_id": "d99818a2-73a5-4c15-8dfb-bf67363358f3",
+      "result_id": "74d1b855-8a97-491f-9ead-4f1bc7e9b2d4"
+    },
+    {
+      "claim_id": "fa10cdf4-fa1f-4537-a75b-9dae1d354fdf",
+      "result_id": "74d1b855-8a97-491f-9ead-4f1bc7e9b2d4"
+    },
+    {
+      "claim_id": "cd10190d-5302-43d3-baa4-7222439ea868",
+      "result_id": "74d1b855-8a97-491f-9ead-4f1bc7e9b2d4"
+    },
+    {
+      "claim_id": "01f6ce81-95bd-40e8-b3ab-691fc97f7bfe",
+      "result_id": "74d1b855-8a97-491f-9ead-4f1bc7e9b2d4"
+    },
+    {
+      "claim_id": "363da7b0-c430-4516-a10c-c44d93bc7f59",
+      "result_id": "74d1b855-8a97-491f-9ead-4f1bc7e9b2d4"
+    },
+    {
+      "claim_id": "4b51fcbb-383f-4911-ac0a-3acad7ab5436",
+      "result_id": "74d1b855-8a97-491f-9ead-4f1bc7e9b2d4"
+    },
+    {
+      "claim_id": "40e706ee-9a7d-4996-b7fa-e78b39c042fb",
+      "result_id": "38624c08-190f-427b-97c0-7c1ea926a2ed"
+    },
+    {
+      "claim_id": "bcce72a3-a903-4c10-9b46-b4c5fd94f9fc",
+      "result_id": "38624c08-190f-427b-97c0-7c1ea926a2ed"
+    },
+    {
+      "claim_id": "8196efa2-1127-4b36-9531-aef8492b46e1",
+      "result_id": "38624c08-190f-427b-97c0-7c1ea926a2ed"
+    },
+    {
+      "claim_id": "d91d5cb6-204f-45a4-b230-31c9ae7eed28",
+      "result_id": "38624c08-190f-427b-97c0-7c1ea926a2ed"
+    },
+    {
+      "claim_id": "5668287e-26ff-483c-b0c3-9784b6739b88",
+      "result_id": "38624c08-190f-427b-97c0-7c1ea926a2ed"
+    },
+    {
+      "claim_id": "df817909-6607-4c81-83c9-a656a722af0c",
+      "result_id": "38624c08-190f-427b-97c0-7c1ea926a2ed"
+    },
+    {
+      "claim_id": "087138b5-7088-48c9-8e86-573ab8a77203",
+      "result_id": "38624c08-190f-427b-97c0-7c1ea926a2ed"
+    },
+    {
+      "claim_id": "8959da4c-21a8-4ab6-9a07-252b9ee3f3c8",
+      "result_id": "38624c08-190f-427b-97c0-7c1ea926a2ed"
+    },
+    {
+      "claim_id": "5bdccbea-ff8d-4d66-9693-e15a89d8f3cb",
+      "result_id": "38624c08-190f-427b-97c0-7c1ea926a2ed"
+    },
+    {
+      "claim_id": "87d927b7-616c-4d72-a11b-4bced12c3db4",
+      "result_id": "38624c08-190f-427b-97c0-7c1ea926a2ed"
+    },
+    {
+      "claim_id": "aeb16bf4-7187-4703-8f15-9c8dd32efe7a",
+      "result_id": "38624c08-190f-427b-97c0-7c1ea926a2ed"
+    },
+    {
+      "claim_id": "d7a39579-4abf-4c7d-9df6-f84a1625661a",
+      "result_id": "38624c08-190f-427b-97c0-7c1ea926a2ed"
+    },
+    {
+      "claim_id": "3bd02f35-f1f0-424e-9bac-27ee595896bf",
+      "result_id": "38624c08-190f-427b-97c0-7c1ea926a2ed"
+    },
+    {
+      "claim_id": "eb8e4436-18c0-43db-83f7-eafef4a05c78",
+      "result_id": "38624c08-190f-427b-97c0-7c1ea926a2ed"
+    },
+    {
+      "claim_id": "6cf9e468-aac4-4b06-9b53-36d56b967e31",
+      "result_id": "38624c08-190f-427b-97c0-7c1ea926a2ed"
+    },
+    {
+      "claim_id": "1b6674cd-ea3d-4e7f-9ca5-eaff744f89d7",
+      "result_id": "6789a2e8-aed1-4964-a74e-f663ba13063c"
+    },
+    {
+      "claim_id": "c416c039-27d6-438a-be3e-609d3274564c",
+      "result_id": "6789a2e8-aed1-4964-a74e-f663ba13063c"
+    },
+    {
+      "claim_id": "c1fd8729-37ad-4e5d-a990-6f73f0bc7706",
+      "result_id": "ccb25e88-2402-4564-8310-98aa5f8b0f86"
+    },
+    {
+      "claim_id": "37efe8ba-012c-4510-a1ab-a8c7095ab079",
+      "result_id": "ccb25e88-2402-4564-8310-98aa5f8b0f86"
+    },
+    {
+      "claim_id": "8d695202-0c55-42b6-9e65-14ad913e6716",
+      "result_id": "ccb25e88-2402-4564-8310-98aa5f8b0f86"
+    },
+    {
+      "claim_id": "14af49b6-9b29-4806-8c76-dcaad0c6c144",
+      "result_id": "ccb25e88-2402-4564-8310-98aa5f8b0f86"
+    },
+    {
+      "claim_id": "1a2ec51a-e6c7-4054-a635-098097fe176e",
+      "result_id": "ccb25e88-2402-4564-8310-98aa5f8b0f86"
+    },
+    {
+      "claim_id": "493f30bf-74c0-4653-be5b-b48ee7bed4d8",
+      "result_id": "198315d5-9139-4a36-a1e4-f3830d83c70f"
+    },
+    {
+      "claim_id": "3c350399-a712-486c-9318-e13ed9c453e9",
+      "result_id": "198315d5-9139-4a36-a1e4-f3830d83c70f"
+    },
+    {
+      "claim_id": "4d537ae2-db43-4ef7-a3c5-4b1edbdc614d",
+      "result_id": "198315d5-9139-4a36-a1e4-f3830d83c70f"
+    },
+    {
+      "claim_id": "42d197e9-02f5-4dd9-8129-5306be5591e9",
+      "result_id": "198315d5-9139-4a36-a1e4-f3830d83c70f"
+    },
+    {
+      "claim_id": "3d905e00-68a3-4f63-ab15-5ea8ca3301c1",
+      "result_id": "198315d5-9139-4a36-a1e4-f3830d83c70f"
+    },
+    {
+      "claim_id": "357fc666-5e9c-4ac1-9847-df69aaa6047d",
+      "result_id": "198315d5-9139-4a36-a1e4-f3830d83c70f"
+    },
+    {
+      "claim_id": "74ac0ef9-088f-44f4-a7c7-b931877f0c42",
+      "result_id": "289187c6-8411-462f-8a50-16d963bc2f03"
+    },
+    {
+      "claim_id": "6bec992b-8d76-4ed8-9b42-004f27047b3f",
+      "result_id": "289187c6-8411-462f-8a50-16d963bc2f03"
+    },
+    {
+      "claim_id": "efe925be-b36c-4889-803b-91cd1fa81569",
+      "result_id": "289187c6-8411-462f-8a50-16d963bc2f03"
+    },
+    {
+      "claim_id": "1c29d95a-a5ac-44fb-a4f9-ba228cadbd37",
+      "result_id": "289187c6-8411-462f-8a50-16d963bc2f03"
+    },
+    {
+      "claim_id": "c72ce1d8-cb6c-45d2-98b0-f077c417b2d9",
+      "result_id": "289187c6-8411-462f-8a50-16d963bc2f03"
+    },
+    {
+      "claim_id": "9ae5d625-8a4a-45a8-a532-e91df5e3e7d4",
+      "result_id": "dbd69ac8-662c-41bb-9cd8-5a280cce37e2"
+    },
+    {
+      "claim_id": "e9696f4f-d396-4820-80d4-f96397033062",
+      "result_id": "dbd69ac8-662c-41bb-9cd8-5a280cce37e2"
+    },
+    {
+      "claim_id": "c9fe578f-1116-4cfd-b30a-a73630540f78",
+      "result_id": "dbd69ac8-662c-41bb-9cd8-5a280cce37e2"
+    },
+    {
+      "claim_id": "503e6066-51d1-4758-bbec-64ee9432202c",
+      "result_id": "dbd69ac8-662c-41bb-9cd8-5a280cce37e2"
+    },
+    {
+      "claim_id": "fff3213f-e877-41be-abce-57faa553dae5",
+      "result_id": "dbd69ac8-662c-41bb-9cd8-5a280cce37e2"
+    },
+    {
+      "claim_id": "053ea1c2-882f-49ea-be8a-0529dc27e6ba",
+      "result_id": "dbd69ac8-662c-41bb-9cd8-5a280cce37e2"
+    },
+    {
+      "claim_id": "430d58f9-d3e1-4d01-9cc9-9630063cc449",
+      "result_id": "dbd69ac8-662c-41bb-9cd8-5a280cce37e2"
+    },
+    {
+      "claim_id": "ad4c7826-186f-412b-9e0a-4482d46c74ff",
+      "result_id": "dbd69ac8-662c-41bb-9cd8-5a280cce37e2"
+    },
+    {
+      "claim_id": "60f1558c-b46e-410e-bf87-1feb48825816",
+      "result_id": "38d7fe02-a030-4791-8d6f-8e8ef1177300"
+    },
+    {
+      "claim_id": "8db82f3f-d21c-4442-b417-1e554f9494e2",
+      "result_id": "38d7fe02-a030-4791-8d6f-8e8ef1177300"
+    },
+    {
+      "claim_id": "9eb7ed0e-606d-4f51-9853-135422b8afd2",
+      "result_id": "38d7fe02-a030-4791-8d6f-8e8ef1177300"
+    },
+    {
+      "claim_id": "97613f79-8d39-442d-9e50-cebc1a440223",
+      "result_id": "abaeb742-37fe-475d-8775-ae1a8914ce82"
+    },
+    {
+      "claim_id": "549cfb8d-2584-450c-bfcc-0017512eb79e",
+      "result_id": "c8a948b0-1c2e-46b1-bd8c-10f0c5dace1c"
+    },
+    {
+      "claim_id": "e72a99af-71f7-4c6f-a93a-fc9461a08f07",
+      "result_id": "c8a948b0-1c2e-46b1-bd8c-10f0c5dace1c"
+    },
+    {
+      "claim_id": "4b628bf3-467d-4738-b7c8-f1096c106ae3",
+      "result_id": "c8a948b0-1c2e-46b1-bd8c-10f0c5dace1c"
+    },
+    {
+      "claim_id": "1f2d407b-9cab-4f9f-9c51-a6a875643059",
+      "result_id": "c8a948b0-1c2e-46b1-bd8c-10f0c5dace1c"
+    },
+    {
+      "claim_id": "ed5f061f-800e-47a7-9913-8804f7ae3805",
+      "result_id": "c8a948b0-1c2e-46b1-bd8c-10f0c5dace1c"
+    },
+    {
+      "claim_id": "16cd1578-3b4f-4a94-ad78-d014bb17d550",
+      "result_id": "c8a948b0-1c2e-46b1-bd8c-10f0c5dace1c"
+    },
+    {
+      "claim_id": "3e4b4a25-3e0e-462d-bf67-8320d57a4116",
+      "result_id": "c8a948b0-1c2e-46b1-bd8c-10f0c5dace1c"
+    },
+    {
+      "claim_id": "86c3459b-a3d2-4b3a-a0ef-0bad75aeaa3b",
+      "result_id": "c8a948b0-1c2e-46b1-bd8c-10f0c5dace1c"
+    },
+    {
+      "claim_id": "1adc9bf7-e307-4831-a92f-ea3fd219bfc0",
+      "result_id": "c8a948b0-1c2e-46b1-bd8c-10f0c5dace1c"
+    },
+    {
+      "claim_id": "af7157ad-24e1-4345-94cf-139178c0b2eb",
+      "result_id": "c8a948b0-1c2e-46b1-bd8c-10f0c5dace1c"
+    },
+    {
+      "claim_id": "cd572cb1-526c-4add-b41d-64bdcf45729b",
+      "result_id": "c8a948b0-1c2e-46b1-bd8c-10f0c5dace1c"
+    },
+    {
+      "claim_id": "3e4cf50a-618d-4eb8-960a-bef9672301b3",
+      "result_id": "c8a948b0-1c2e-46b1-bd8c-10f0c5dace1c"
+    },
+    {
+      "claim_id": "beb4820d-f0b7-4446-bef4-94b73dc17573",
+      "result_id": "c8a948b0-1c2e-46b1-bd8c-10f0c5dace1c"
+    },
+    {
+      "claim_id": "f112126c-bcf9-44ed-9ca4-6354a312a245",
+      "result_id": "c8a948b0-1c2e-46b1-bd8c-10f0c5dace1c"
+    },
+    {
+      "claim_id": "edb97687-20c6-4167-82c3-add2ad5c36e6",
+      "result_id": "c8a948b0-1c2e-46b1-bd8c-10f0c5dace1c"
+    },
+    {
+      "claim_id": "b302d978-01b5-42e3-baf5-75b0862f437a",
+      "result_id": "c8a948b0-1c2e-46b1-bd8c-10f0c5dace1c"
+    },
+    {
+      "claim_id": "ac459f57-40ac-4692-b6d3-f11d02d43852",
+      "result_id": "c8a948b0-1c2e-46b1-bd8c-10f0c5dace1c"
+    },
+    {
+      "claim_id": "13448be6-8459-4fa6-8445-c55fec85fe1a",
+      "result_id": "c8a948b0-1c2e-46b1-bd8c-10f0c5dace1c"
+    },
+    {
+      "claim_id": "5b60d21f-1b8d-469c-934f-9c873fb559cc",
+      "result_id": "c8a948b0-1c2e-46b1-bd8c-10f0c5dace1c"
+    },
+    {
+      "claim_id": "f457faa5-73a8-4164-ac07-baa0b1704ee1",
+      "result_id": "c8a948b0-1c2e-46b1-bd8c-10f0c5dace1c"
+    },
+    {
+      "claim_id": "ea593d9b-4efa-4eff-9436-2e71c530ff01",
+      "result_id": "c8a948b0-1c2e-46b1-bd8c-10f0c5dace1c"
+    },
+    {
+      "claim_id": "bec3248c-364b-4b95-b302-6b9ca24983c2",
+      "result_id": "c8a948b0-1c2e-46b1-bd8c-10f0c5dace1c"
+    },
+    {
+      "claim_id": "ebc5361f-5c61-4a54-bec9-0c9f151827bb",
+      "result_id": "c8a948b0-1c2e-46b1-bd8c-10f0c5dace1c"
+    },
+    {
+      "claim_id": "c352d111-5157-4b37-9901-4afe47498f43",
+      "result_id": "c8a948b0-1c2e-46b1-bd8c-10f0c5dace1c"
+    },
+    {
+      "claim_id": "55d7a37f-d6ae-4193-9962-1ac56a364617",
+      "result_id": "c8a948b0-1c2e-46b1-bd8c-10f0c5dace1c"
+    },
+    {
+      "claim_id": "9afa955d-6a26-4a20-9f6b-795bea53d1e2",
+      "result_id": "c8a948b0-1c2e-46b1-bd8c-10f0c5dace1c"
+    },
+    {
+      "claim_id": "5d62765f-0809-46c0-b366-44d306319c43",
+      "result_id": "c8a948b0-1c2e-46b1-bd8c-10f0c5dace1c"
+    },
+    {
+      "claim_id": "932c2143-aa53-4508-ad66-20b564fe0d67",
+      "result_id": "c8a948b0-1c2e-46b1-bd8c-10f0c5dace1c"
+    },
+    {
+      "claim_id": "0908b39f-0bbb-4f4d-8b33-1852eb0ef77f",
+      "result_id": "c8a948b0-1c2e-46b1-bd8c-10f0c5dace1c"
+    },
+    {
+      "claim_id": "8a7b4bd1-7dda-454b-958a-bcf944b004c9",
+      "result_id": "c8a948b0-1c2e-46b1-bd8c-10f0c5dace1c"
+    },
+    {
+      "claim_id": "ba57cfcb-a458-427c-8080-0b248b368cd7",
+      "result_id": "c8a948b0-1c2e-46b1-bd8c-10f0c5dace1c"
+    },
+    {
+      "claim_id": "0f8ca049-f6a0-4853-af0f-83d7891c3609",
+      "result_id": "c8a948b0-1c2e-46b1-bd8c-10f0c5dace1c"
+    },
+    {
+      "claim_id": "49efff62-58c1-4ff6-8815-64394ba3d70c",
+      "result_id": "c8a948b0-1c2e-46b1-bd8c-10f0c5dace1c"
+    },
+    {
+      "claim_id": "c72fb6c9-8428-4bd9-abf1-dbfa5012f1ac",
+      "result_id": "c8a948b0-1c2e-46b1-bd8c-10f0c5dace1c"
+    },
+    {
+      "claim_id": "8b0abb3e-46b8-40f4-9a5f-eb7aa6d4019f",
+      "result_id": "c8a948b0-1c2e-46b1-bd8c-10f0c5dace1c"
+    }
+  ],
+  "comparisons": []
+}

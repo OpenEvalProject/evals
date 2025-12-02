@@ -1,0 +1,373 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "Rgf1p localizes to the contractile actomyosin ring (CAR) during cytokinesis. The protein appears at the division site during anaphase, follows the constricting ring, and is positioned outside the contractile ring. Rgf1p localization depends on CAR assembly and maintenance machinery, and genetic interactions suggest functional collaboration with cytokinetic proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C22 provide converging evidence from multiple approaches: time-lapse microscopy (C13-C15), super-resolution imaging (C15-C16), cell cycle arrest experiments (C17), temperature-sensitive mutants (C18-C21), and synthetic lethality (C22). The localization data are internally consistent and supported by appropriate controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C23",
+      "C24",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "Cell wall stress induced by blankophor (BP) causes a delay in cytokinesis in wild-type cells but not in rgf1\u0394 cells. BP specifically delays the onset of CAR constriction without affecting ring assembly or constriction rate. The delay is dose-dependent and can result in complete blockage of constriction in some wild-type cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C5 and C23-C29 are well-supported by quantitative time-lapse microscopy with appropriate sample sizes (n=15-83 cells). Statistical analyses (ANOVA with post-hoc tests) demonstrate significant differences between genotypes and conditions. The dose-response relationship (C27) strengthens the causal interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "BP treatment delays plasma membrane ingression coupled to CAR constriction in wild-type cells but not in rgf1\u0394 cells. The linkage between CAR and membrane remains intact during the delay, indicating coordinated inhibition rather than uncoupling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C34 are supported by time-lapse microscopy using LactC2-GFP as a membrane marker (Figure 2F). The coordinated delay of both membrane and CAR (C33-C34) is a logical inference from the data showing similar timing of delays. The comparison between wild-type and rgf1\u0394 provides appropriate controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Septum synthesis initiates in anaphase regardless of CAR constriction delay. In wild-type cells under BP stress, the septum forms as a ring that does not progress inward until later, while in rgf1\u0394 cells, septum progression is faster, leading to earlier cell separation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C38 are supported by BP fluorescence imaging and kymograph analysis (Figures 2F-G, Figure 2\u2014figure supplement 2). The observation that septum synthesis continues during the delay (C38) is demonstrated by increasing BP signal intensity over time. The differential behavior between genotypes is clearly documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "BP specifically delays CAR maturation in wild-type cells (from ~10 min to ~22 min) without affecting ring assembly or constriction phases. rgf1\u0394 cells do not exhibit prolonged maturation in the presence of BP, indicating that Rgf1p mediates the maturation delay but does not contribute to ring assembly.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C47 are supported by detailed time-lapse analysis with Myo2p-EGFP (Figure 3A-B, Table 1). The three-phase analysis (assembly, maturation, constriction) with quantitative timing provides strong evidence. Statistical significance is demonstrated (p<0.0001), and sample sizes are adequate (n=14-17). The conclusion about Rgf1p's role (C42) is a reasonable inference from the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "The cytokinesis delay under BP stress affects the timing of constriction onset but not the rate or initial diameter of ring constriction. Wild-type rings begin constricting ~13 minutes later than rgf1\u0394 rings under BP treatment, indicating that Rgf1p absence allows bypass of the cell-cycle-dependent delay mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C55 are supported by quantitative ring diameter measurements over time (Figure 3C, Table 1). The similar constriction rates (C51) and initial diameters (C50) between genotypes, combined with different onset times (C52-C53), provide strong evidence for a specific effect on timing rather than mechanics. Mid1p dissociation timing (C48-C49) provides additional support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "The cytokinesis delay under cell wall stress requires Pmk1p, the MAPK of the cell integrity pathway (CIP). Absence of Pmk1p or its kinase activity abolishes the delay and leads to premature abscission and multi-septated phenotypes under stress conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C7 and C56-C61 are well-supported by time-lapse microscopy of pmk1\u0394 cells (Figure 4A-C) and kinase-dead mutants (C60, Figure 4\u2014figure supplement 2). The phenotypic consequences (C7) are documented in Figure 5. The pathway relationship (C56-C57) is established by prior literature. Statistical analyses confirm significant differences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Among CIP components, rgf1\u0394 and pck2\u0394 cells are refractory to BP-induced cytokinesis delay, while pck1\u0394 and rho2\u0394 behave like wild-type. The rgf1\u0394 pmk1\u0394 double mutant shows no synergistic effects, indicating that Rgf1p and Pmk1p function in the same pathway to mediate the cytokinesis delay.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C67 are supported by systematic analysis of pathway mutants (Figure 4B-C). The lack of synergy in the double mutant (C66, Figure 4\u2014figure supplement 4) provides strong genetic evidence for epistasis. The pathway specificity (C62-C65) helps define the signaling branch involved. Sample sizes are adequate (n=14-30).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Rho1p is a key player in the cytokinesis delay under cell wall stress. The hypoactive rho1-596 mutant shows faster cytokinesis under BP treatment, and the rgf1-PTTR mutant (with reduced GEF activity toward Rho1p) phenocopies rgf1\u0394 in lacking the delay response.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C71 are supported by experiments with rho1-596 (Figure 4D) and rgf1-PTTR (Figure 4E) mutants. The temperature-shift experiments provide appropriate controls (C69). The convergence of evidence from both Rho1p and Rgf1p mutants strengthens the conclusion that Rho1p activation is critical (C71).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Multiple cell wall stresses (caspofungin, caffeine) induce cytokinesis delays in wild-type cells that are almost absent in pmk1\u0394 cells and intermediate in rgf1\u0394 cells, demonstrating that the checkpoint response is not specific to BP but represents a general cell wall stress response.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C75 are supported by time-lapse analysis with multiple stressors (Figure 4F-G, Table 2). The intermediate phenotype of rgf1\u0394 cells (C75) suggests additional inputs to the CIP beyond Rgf1p. Statistical analyses confirm significant differences. The generality of the response strengthens the biological significance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "The cwg1-1 mutant (defective in \u03b2-glucan synthase Bgs4p) shows Pmk1p phosphorylation and cytokinesis delay at restrictive temperature, which is rescued by pmk1\u0394. This demonstrates that endogenous cell wall defects activate the same checkpoint pathway as exogenous stressors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C78 are supported by Western blot analysis showing Pmk1p phosphorylation (Figure 4H) and time-lapse microscopy comparing cwg1-1 and cwg1-1 pmk1\u0394 cells. This provides important validation that the checkpoint responds to physiologically relevant cell wall defects, not just drug-induced stress.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Mild osmotic stress (0.2M KCl) induces a transient cytokinesis delay that is independent of Rgf1p but dependent on Pmk1p, indicating that different stress inputs can activate the CIP through distinct branches to regulate cytokinesis timing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C81 are supported by experiments with KCl treatment (Figure 4G, Figure 4\u2014figure supplement 5). The Rgf1p-independence distinguishes osmotic stress from cell wall stress, suggesting pathway branching. However, the interpretation is complicated by potential effects of osmotic pressure on septum mechanics, which the authors acknowledge.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "Under mild cell wall stress, pmk1\u0394 cells show substantially increased septation (42% with 1 septum, 26% with \u22652 septa) compared to wild-type (20% with 1 septum, 0% with \u22652 septa). The multiseptated phenotype reflects premature cytokinesis with proper nuclear segregation, indicating failure to halt division under stress.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C86 are supported by quantitative cell population analysis (Figure 5A-B) with adequate sample sizes (n=363-386). The observation of proper nuclear segregation (C85) rules out cell cycle defects. The interpretation (C86) is a reasonable inference from the data, though direct evidence for quality control machinery involvement is limited.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "Mutations affecting myosin II motor activity (myp2\u0394, rlc1\u0394), actin dynamics (adf1-1), and formin activity (cdc12-112) show additive effects with BP treatment, suggesting that cell wall stress and these cytoskeletal defects act through independent mechanisms to affect cytokinesis timing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C87-C92 are supported by time-lapse experiments (Figure 6\u2014figure supplements 1-2), but the interpretation is complicated by the use of temperature-sensitive alleles at semi-restrictive temperatures. The authors acknowledge that these alleles may not represent complete loss of function, making it difficult to definitively conclude independence. The additive effects could reflect partial redundancy or incomplete penetrance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "BP treatment induces cytoplasmic retention of the phosphatase Clp1p during the cytokinesis delay. Clp1p is released from the nucleolus normally but remains cytoplasmic for extended periods in BP-treated wild-type cells compared to untreated cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C96 are supported by time-lapse microscopy with quantification of nuclear GFP intensity (Figure 6A-B). The comparison with prior literature (C95) provides validation. The prolonged cytoplasmic retention correlates with the cytokinesis delay, suggesting a connection to checkpoint signaling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "Contrary to expectations based on Clp1p's known role in ring stabilization, clp1\u0394 cells still show cytokinesis delay under BP treatment. This indicates that Clp1p is not required for the delay mechanism, and that BP-treated rings are stabilized through a Clp1p-independent mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C99 are supported by time-lapse analysis of clp1\u0394 cells (Figure 6C). The result is surprising given prior literature (C98), but the data clearly show that the delay persists in the absence of Clp1p. This suggests alternative stabilization mechanisms operate under cell wall stress.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C100",
+      "C101"
+    ],
+    "result": "Wild-type cells treated with BP maintain 2-3 fold more F-actin ring structures than untreated cells when challenged with the actin depolymerizer latrunculin A, demonstrating that cell wall stress stabilizes the contractile actomyosin ring.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C101 are supported by time-lapse analysis with LatA treatment (Figure 6D, Video 5). The quantification of ring persistence over time provides strong evidence for stabilization. This experiment directly tests ring stability and provides mechanistic insight into how the checkpoint maintains ring integrity during the delay.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "Cdc15p phosphorylation dynamics are altered by BP treatment. While initial dephosphorylation timing is unchanged, BP-treated cells show delayed recovery of hyperphosphorylated Cdc15p at 120 min post-release. This effect is partially reversed in pmk1\u0394 cells, suggesting that ring components are maintained in a stable, dephosphorylated state during the delay.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C106 are supported by Western blot analysis of synchronized cultures (Figure 6E, Figure 6\u2014figure supplement 3). The time-course experiment with appropriate controls (wild-type, BP-treated, pmk1\u0394) provides evidence for CIP-dependent regulation of Cdc15p phosphorylation. The interpretation (C106) is a reasonable inference integrating this data with the F-actin stability results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C107",
+      "C108"
+    ],
+    "result": "The SIN mutant sid2-250 shows similar numbers of rudimentary rings with or without BP treatment at restrictive temperature, suggesting that the SIN is required for CAR stabilization under cell wall stress.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C108 are supported by quantitative analysis of ring formation in sid2-250 cells (Figure 7A). The inability to maintain rings even with BP treatment suggests that SIN function is necessary for the stabilization mechanism. However, the interpretation (C108) is somewhat tentative as indicated by the authors' use of \"might be involved.\"",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "Cell wall stress prolongs SIN signaling. Cdc7p localization at the SPB is maintained for extended periods (up to 45 min) in BP-treated wild-type cells compared to untreated cells (~30 min). Sid2p and Cdc7p signals persist longer in wild-type than rgf1\u0394 cells under BP treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C113 are supported by time-lapse microscopy with quantification of fluorescence intensity (Figure 7B, Figure 7\u2014figure supplement 1). The comparison between wild-type and rgf1\u0394 cells provides evidence that the CIP regulates SIN duration. Sample sizes are adequate (n=11-29 cells).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C114",
+      "C115"
+    ],
+    "result": "The cytokinesis delay under cell wall stress correlates with prolonged SIN signaling rather than reduced SIN activity. Rgf1p and the CIP function to extend SIN signaling duration upon cell wall perturbations, providing additional time for proper ring constriction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C114-C115 are supported by the SIN component localization data (C109-C113) and represent a key mechanistic insight. The inference that prolonged signaling (rather than reduced activity) mediates the delay is well-supported by the observation that SIN components remain active longer rather than showing reduced recruitment or activity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "SIN mutants (sid2-250, sid1-239) at semi-permissive temperature do not show the cytokinesis delay induced by cell wall stress, demonstrating that SIN signaling is required for the checkpoint response and the delay in CAR constriction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C116-C118 are supported by time-lapse analysis of SIN mutants (Figure 7C). The use of semi-permissive temperatures allows ring formation while testing checkpoint function. The convergent results with two different SIN components strengthen the conclusion. This is a critical experiment establishing SIN requirement for the checkpoint.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C121",
+      "C10"
+    ],
+    "result": "The authors propose a checkpoint model where cell wall damage during cytokinesis triggers a response through sensors, Rho1p, and the CIP, which delays CAR constriction via prolonged SIN signaling. Inactivation of CIP components results in premature constriction and cell cleavage failure under stress.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C119-C121 and C10 represent the integrated model synthesizing all experimental observations. The model is well-supported by the convergent evidence from genetic, cell biological, and biochemical experiments throughout the manuscript. The checkpoint terminology is appropriate given the delay, stress-dependence, and requirement for specific signaling pathways. The model is summarized in Figure 7D.",
+    "result_type": "MAJOR"
+  }
+]

@@ -1,0 +1,362 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "UPF3B is critical for human cognition and neural function. Mutations in UPF3B cause intellectual disability, autism, schizophrenia, and ADHD in humans. Mouse models recapitulate behavioral and neural connectivity defects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C22-C27 are well-supported by citations to human genetic studies and mouse model characterization. The evidence establishes UPF3B's importance in cognition through both human pedigree analysis and mouse behavioral/cellular studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "Upf3b-null mice exhibit a partial olfactory defect characterized by postnatal weight deficit that resolves in adulthood and decreased expression of olfactory marker genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C39 are supported by weight measurements (Figure 1A), qPCR data (Figure 1B), and comparison to literature on olfactory-deficient mice. The temporal pattern of weight deficit is characteristic of partial olfactory defects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "RNA-seq analysis identified 235 differentially expressed genes in Upf3b-null mOSNs, with upregulated genes enriched for developmental functions and downregulated genes enriched for olfactory functions, particularly 78 Olfr genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C44 are supported by RNA-seq data (Figure 1C, Supplementary file 2), qPCR validation (Figure 1\u2014figure supplement 2B), and GO analysis. The statistical threshold (q<0.05) and validation strengthen these findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C7"
+    ],
+    "result": "52 high-confidence NMD target mRNAs were identified in mOSNs based on upregulation, stabilization, and presence of NMD-inducing features, with 11 overlapping previously known NMD targets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C47 and C7 are supported by integrative computational analysis combining RNA-seq, RNA stability inference (REMBRANDTS), and NIF identification. The overlap with known targets validates the approach, though cell-type specificity explains limited overlap.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C6"
+    ],
+    "result": "RiboTag analysis revealed that mOSN mRNAs with longer 3'UTRs (>2 kb) have higher translation efficiency, with highly translated mRNAs averaging ~1.8 kb 3'UTRs versus ~0.9 kb for lowly translated mRNAs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C49 and C6 are supported by RiboTag experimental data (Figure 2B,C). The correlation between 3'UTR length and translation efficiency is clearly demonstrated, though the mechanistic basis requires further investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C101"
+    ],
+    "result": "NMD magnitude correlates with translation efficiency in vivo, with highly translated mRNAs showing stronger NMD response than lowly translated mRNAs, supporting that NMD is translation-dependent.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C53 and C101 are supported by integrated RNA-seq and RiboTag analysis (Figure 2F,G). The correlation (R\u00b2=0.5) for high-translation targets versus no correlation (R\u00b2=0.06) for low-translation targets provides strong evidence for translation-dependent NMD in vivo.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C54",
+      "C55"
+    ],
+    "result": "UPF3B loss has minimal global effects on translation efficiency, with only 16 of thousands of mOSN mRNAs showing significantly altered translation efficiency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C55 are supported by RiboTag analysis (Figure 2H,I, Supplementary file 2). The scatter plot demonstrates that the vast majority of mRNAs remain on the diagonal, indicating preserved translation efficiency.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C2"
+    ],
+    "result": "scRNA-seq analysis of 25,165 OE cells identified 16 cell types and revealed considerable heterogeneity within OSN populations, with multiple sub-clusters identified for HBCs, GBCs, iOSNs, and mOSNs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C58 and C2 are supported by scRNA-seq data with appropriate quality control and UMAP clustering (Figure 3). The identification of sub-clusters is reproducible across biological replicates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Cell cycle and pseudotime trajectory analyses revealed that HBCs are quiescent while GBCs are proliferative, GBC sub-clusters follow a linear developmental progression, and OSN development follows a HBC\u2192GBC\u2192iOSN\u2192mOSN trajectory.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C62 are supported by cell cycle analysis (Figure 3F), Monocle trajectory analysis (Figures 4B, 5A), and consistency with previous studies. The developmental trajectory is well-established in the literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C91",
+      "C92"
+    ],
+    "result": "Upf3b-null mice have significantly reduced HBC frequency (p<0.05) as measured by scRNA-seq and validated by immunohistochemistry, suggesting UPF3B promotes HBC maintenance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C64 and C91-C92 are supported by scRNA-seq quantification (Figure 6A) and IHC validation (Figure 6\u2014figure supplement 1A). The inference that UPF3B promotes HBC maintenance is reasonable but requires functional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C65"
+    ],
+    "result": "There was no significant difference in the relative proportions of GBCs, iOSNs, and mOSNs between Upf3b-null and WT mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C65 is based on scRNA-seq data (Figure 6\u2014figure supplement 1B), but the authors acknowledge that variability among samples may have obscured subtle changes. The lack of statistical significance may reflect insufficient power rather than true absence of effect.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C3"
+    ],
+    "result": "Upf3b loss causes a striking 25-fold increase in the mOSN-4 sub-cluster (p<0.05) and near-complete loss of the mOSN-2 sub-cluster, demonstrating that UPF3B influences specific OSN subsets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C68 and C3 are supported by scRNA-seq data (Figure 6B,C). The reciprocal changes in these sub-clusters are dramatic and statistically significant for mOSN-4, though mOSN-2 reduction did not reach significance (p=0.24) due to sample variability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C4"
+    ],
+    "result": "UPF3B regulates expression of antimicrobial genes across OSN developmental stages, with over half (48/88) of upregulated immune-related mRNAs harboring NMD-inducing features.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C71 and C4 are supported by scRNA-seq differential expression analysis (Figure 6E, Supplementary file 5) and computational NIF analysis. The presence of NIFs in >50% of immune genes suggests direct NMD regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C72"
+    ],
+    "result": "CAMP protein is expressed in the OE and upregulated in Upf3b-null mice as demonstrated by Western blot and immunofluorescence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C72 is supported by Western blot quantification (Figure 6F) and immunofluorescence (Figure 6G, Figure 6\u2014figure supplement 2B). The validation at protein level strengthens the RNA-seq findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C5",
+      "C102"
+    ],
+    "result": "UPF3B promotes selection of 78 specific Olfr genes as dominant receptors in individual mOSNs and iOSNs, with these genes showing reduced frequency in Upf3b-null cells (13% to 7% in mOSNs, 8% to 5.6% in iOSNs) while overall Olfr gene selection remains unchanged.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C78, C5, and C102 are supported by integrated RNA-seq and scRNA-seq analysis (Figures 1C, 6H,I). The chromosomal distribution analysis (Figure 6\u2014figure supplement 2C) argues against cis-regulatory mechanisms. The single-cell data demonstrating reduced frequency of these Olfr genes as dominant receptors is compelling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "Background on NMD pathway: NMD is a conserved RNA decay pathway that degrades aberrant and normal RNAs, involves >15 proteins including core factors UPF1/2/3, and consists of multiple branches with different mechanisms including EJC-dependent and EJC-independent pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C21 provide established background knowledge supported by appropriate citations to the NMD literature. These are well-accepted facts in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Background on olfactory system: The OE has lifelong neurogenic capacity, mOSNs develop via HBC\u2192GBC\u2192iOSN\u2192mOSN pathway, HBCs are reserve stem cells, GBCs are active stem cells/progenitors, and mOSNs recognize odorants through various chemosensory receptors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C34 provide established background knowledge about the olfactory system supported by appropriate citations. These are well-accepted facts in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Background on olfactory dysfunction: Olfactory defects predict onset of CNS disorders including Parkinson's and Alzheimer's disease and associate with autism. Individual OSNs select a single Olfr gene from >1000 genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C81 provide established background knowledge supported by appropriate citations. The one-neuron-one-receptor rule is well-established.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "Mafg and Irf8 encode transcriptional repressors that bind Olfr gene promoters. MAFG is a basic leucine-zipper transcription factor known for regulating globin transcription, while IRF8 regulates hematopoietic cell development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C85 are supported by citations to studies characterizing these transcription factors. The connection to Olfr regulation is based on known DNA-binding specificity and upregulation in Upf3b-null mice.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "Literature context for immune findings: Inflammation causes OSN functional switching to immune defense, Upf2 knockout causes neuro-inflammation rescued by anti-inflammatory agents, viruses inhibit NMD, and Notch2/Bhlhe40/Rac2 are NMD targets that regulate immune gene expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C90 are supported by appropriate citations and integration with the current study's findings. C90 combines data from this study (NMD target identification) with literature on immune regulation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "Functional context for identified NMD targets: The mOSN-2 sub-cluster is likely functional based on enrichment of genes essential for OE development/olfaction. Several identified NMD targets (Gdf11, Lrp2, Notch2, Ptch1, Hk2) have known roles in neurogenesis and neural development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C97 are supported by scRNA-seq data showing gene enrichment (Supplementary file 4) and citations to literature on gene function. The inference of functionality is reasonable based on known gene roles.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "Functional implications of OSN heterogeneity and translation: The differential gene expression in OSN sub-clusters suggests functional relevance. Translation is energy-consuming, and modestly translated mRNAs encode key mOSN proteins including receptors and developmental regulators.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C100 are supported by scRNA-seq data analysis and RiboTag data (Figure 2D,E). The inference of functional relevance is reasonable but requires experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "Speculative models: OSNs may function in both olfaction and immune defense. Upf3b loss may trigger inflammation causing OSN functional switching and olfactory defects. Humans with UPF3B mutations may have neuro-inflammation. Antimicrobial gene expression may help cope with NMD-inhibiting pathogens. UPF3B loss may convert mOSN-2 to mOSN-4 sub-cluster.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C103-C107 are speculative models based on the study's findings and literature. While the reasoning is logical and supported by circumstantial evidence, these hypotheses require direct experimental testing. The authors appropriately present these as possibilities rather than established facts.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,1915 @@
+{
+  "submission": {
+    "id": "00853ec2-3260-48f3-8407-abfa84a33b4a",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T15:50:40.843560Z",
+    "updated_at": "2025-12-02T15:50:40.843560Z"
+  },
+  "content": [
+    {
+      "id": "61fc4287-36a7-498f-9386-a6d88a021a8f",
+      "submission_id": "00853ec2-3260-48f3-8407-abfa84a33b4a",
+      "content_type": "manuscript",
+      "content_text": "# Cortical state transitions and stimulus response evolve along stiff and sloppy parameter dimensions, respectively\n\n## Authors\n\n- Adrian Ponce-Alvarez<sup>1</sup> ([ORCID: 0000-0003-1446-7392](https://orcid.org/0000-0003-1446-7392)) \u2020\n- Gabriela Mochol<sup>1</sup>\n- Ainhoa Hermoso-Mendizabal<sup>2</sup>\n- Jaime de la Rocha<sup>2</sup> ([ORCID: 0000-0002-3314-9384](https://orcid.org/0000-0002-3314-9384))\n- Gustavo Deco<sup>1</sup>\n\n### Affiliations\n\n1. Center for Brain and Cognition, Computational Neuroscience Group, Department of Information and Communication Technologies, Universitat Pompeu Fabra Barcelona Spain\n2. Institut d\u2019Investigacions Biom\u00e8diques August Pi i Sunyer (IDIBAPS) Barcelona Spain\n3. Instituci\u00f3 Catalana de la Recerca i Estudis Avan\u00e7ats (ICREA) Barcelona Spain\n4. Department of Neuropsychology, Max Planck Institute for Human Cognitive and Brain Sciences Leipzig Germany\n5. School of Psychological Sciences, Monash University Melbourne Australia\n\n\u2020 Corresponding author\n\n## Abstract\n\nPrevious research showed that spontaneous neuronal activity presents sloppiness: the collective behavior is strongly determined by a small number of parameter combinations, defined as \u2018stiff\u2019 dimensions, while it is insensitive to many others (\u2018sloppy\u2019 dimensions). Here, we analyzed neural population activity from the auditory cortex of anesthetized rats while the brain spontaneously transited through different synchronized and desynchronized states and intermittently received sensory inputs. We showed that cortical state transitions were determined by changes in stiff parameters associated with the activity of a core of neurons with low responses to stimuli and high centrality within the observed network. In contrast, stimulus-evoked responses evolved along sloppy dimensions associated with the activity of neurons with low centrality and displaying large ongoing and stimulus-evoked fluctuations without affecting the integrity of the network. Our results shed light on the interplay among stability, flexibility, and responsiveness of neuronal collective dynamics during intrinsic and induced activity.\n\n## Introduction\n\nHow biological systems achieve a tradeoff between stability and flexibility is a central question in biology. A candidate explanation for the coexistence of these two features is sloppiness (Machta et al., 2013; Transtrum et al., 2015). In general, sloppiness is a property of complex models exhibiting large parameter uncertainty when fit to data, meaning that different combinations of parameters lead to a similar system behavior, while changes in some few critical parameters, called stiff parameters, significantly modifies it. In this way, biological systems can be either robust to large fluctuations of input/environmental signals which effects are embedded in a high-dimensional subspace of insensitive parameters, or, on the contrary, by tuning some few parameters, configured to be highly sensitive and selective to relevant signals.\n\nRecently, it has been shown that the spontaneous activity of neural circuits presents sloppiness both in vitro and in vivo (Panas et al., 2015), suggesting that collective activity is stabilized by a subset of highly active and stable neurons, while the activity and co-activity of the remaining neurons present larger spontaneous fluctuations without strongly affecting the collective statistics. However, this view is challenged by extensive research showing that the spontaneous cortical activity transits through different synchronized and desynchronized cortical states (Marguet and Harris, 2011; Harris and Thiele, 2011; Luczak et al., 2013; Pachitariu et al., 2015) that represent statistically different collective behaviors (Hahn et al., 2017) with different information processing capabilities (Pachitariu et al., 2015; Engel et al., 2016; Beaman et al., 2017). Moreover, how sensory inputs affect sloppiness is unknown and it is a relevant question to understand how sensory stimuli change the network state in a way that responsiveness and stability are ensured. In the present study, we examined how changes in neural network parameters correlate with spontaneous transitions among cortical states and stimulus-evoked responses.\n\nTo answer these questions, we recorded the neuronal spiking activity in the primary auditory cortex (A1) of six anesthetized rats. We analyzed the joint activity of groups of neurons while the cortex spontaneously transited through different synchronized and desynchronized cortical states and intermittently received external acoustic stimuli. We used a statistical model to describe the joint spiking activity with a small number of parameters. We found that the estimated parameters of neuronal ensemble activity presented sloppiness and that sensory inputs and cortical state transitions evolved in different pathways in parameter space. Specifically, we found that cortical state transitions evolve along stiff dimensions, whereas sensory-evoked activity evolves along sloppy dimensions. Finally, we showed that stiff parameters are related to the activity and co-activity of neurons with high centrality within the functional network of the recorded neurons.\n\n## Results\n\nWe recorded spontaneous and stimulus-evoked population activity from the primary auditory cortex (A1) of urethane-anesthetized rats (n = 6) using multisite silicon microelectrodes (see Materials\u00a0and\u00a0methods). The data was composed of activity from $N_{pop}$ well-isolated single units ($N_{pop}=$ 44-147 neurons) and some spike-trains from multi-unit activity (3-103 spike-trains). Unless otherwise specified, the analyses present here focused on single-unit activity only. We analyzed the data during spontaneous activity and in response to acoustic 'clicks' (5-ms square pulses; inter-stimulus interval, 2.5 or 3.5 s). To track the evolution of the neuronal activity, we divided each recording session into $N_{E}$ adjacent epochs of 100 s, each one containing 12\u201329 stimulus presentations. Within each 100-s epoch the data was separated into spontaneous activity, that\u00a0is the activity during 1.5-s intervals preceding each stimulus (i.e., 18\u201343.5 s of spontaneous activity in total for each epoch), and stimulus-evoked activity, that\u00a0is the activity right after the stimulus onset (Figure 1A\u2013B).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/53268/elife-53268-fig1-v2.jpg)\n\n**Figure 1.:** (A) Each recording session was divided into $N_{E}$ adjacent epochs of 100 s. (B) Each epoch contained a series of stimulus presentations. Stimuli consisted on acoustic clicks. For each 100-s epoch we collected the spontaneous activity, that\u00a0is the activity during 1.5-s intervals preceding each stimulus (red intervals), to build concatenated binary data. (C) Binary data was obtained by discretizing time in bins of dt = 10 ms. Within each time bin, the ensemble activity of $N$ neurons was described by a binary vector, $\\sigma\u2192=\\sigma_{1},\\sigma_{2},\u2026,\\sigma_{N}$, where $\\sigma_{i}=+1$ if the i-th neuron generated a spike (black) and $\\sigma_{i}=-1$ otherwise (white). (D) Maximum entropy models were used to describe the binary patterns of subsets of 10 neurons, during each 100-s epoch. The model parameters $\u03a9={h,J}$ represents the intrinsic tendency of neuron i towards activation ($\\sigma_{i}=+1$) or silence ($\\sigma_{i}=-1$), noted $h_{i}$, and the effective interaction between neurons i and j, noted $J_{ij}$.\n\n### Description of spontaneous activity patterns using maximum entropy models\n\nWe first examined the temporal evolution of the spontaneous activity across the $N_{E}$ epochs. Because we were interested in the evolution of the statistics of ensemble activity, we described the collective activity of groups of $N$ single-units using a maximum entropy model (MEM) (Schneidman et al., 2006; Shlens et al., 2009; Tka\u010dik et al., 2015) in each epoch (see Materials\u00a0and\u00a0methods and Figure 1C\u2013D). These models allowed us to describe the patterned activity with a small number of parameters. To fit the model, time was discretized in bins of dt = 10 ms. Within each time bin, the ensemble activity of $N$ neurons was described by a binary vector, $\\sigma\u2192=\\sigma_{1},\\sigma_{2},\u2026,\\sigma_{N}$, where $\\sigma_{i}=+1$ if the i-th neuron fired a spike in that time bin and $\\sigma_{i}=-1$ otherwise. The collective activity was determined by the probability distribution $P\\sigma\u2192$ over all $2^{N}$ possible binary patterns. The MEM fits $P_{data}\\sigma\u2192$ by finding a distribution $P_{MEM}\\sigma\u2192$ that maximizes its entropy under the constraint that the activation rates ($\u27e8\\sigma_{i}\u27e9$) and the pairwise correlations ($<\\sigma_{i}\\sigma_{j}>$) found in the data are preserved in the model. It is known that the maximum entropy distribution that is consistent with these constraints is the Boltzmann distribution, $P\\sigma\u2192\u221de^{-E\\sigma\u2192}$, where $E\\sigma\u2192$ is the energy of the pattern $\\sigma\u2192$, given by: $E\\sigma\u2192=-\\sumi=1Nh_{i}\\sigma_{i}+\\frac{1}{2}\\sumj=1NJ_{ij}\\sigma_{i}\\sigma_{j}$\u00a0(Schneidman et al., 2006; Tka\u010dik et al., 2015). The model parameter $h_{i}$ represents the intrinsic tendency of neuron i towards activation ($\\sigma_{i}=+1$) or silence ($\\sigma_{i}=-1$) and the parameter $J_{ij}$ represents the effective interaction between neurons i and j. Once we learned the parameters $\u03a9={h,J}$ using a gradient descent algorithm (see Materials\u00a0and\u00a0methods), the expected probability of any pattern is known. For each recording session and for each of the $N_{E}$ epochs, we fitted the model using the spontaneous binarized activity from an ensemble of $N$ = 10 randomly selected single neurons from the entire population of $N_{pop}$ single neurons. We chose $N$ = 10 because 100-s epochs provided around 5000 observed spontaneous patterns, which is a reasonable amount to get an estimate of the distribution of the 210 = 1024 possible patterns. To accurately estimate models of larger $N$, the epochs ought to be much larger preventing possibility to investigate the temporal evolution of the model along the experiment. We finally repeated the process of randomly choosing $N$ = 10 single units $Q$ times for each experiment (for datasets 3 and 5: $Q=10$ ensembles, otherwise: $Q=20$). In summary, for each recording session, we built $Q\\timesN_{E}$ models, each composed of 10 units. Before studying the evolution of the model parameters $\u03a9(t)$ across epochs ($t=$ 0, 1, 2..), we first evaluated how well the MEM fitted the data.\n\nFor each epoch, we used the Jensen-Shannon divergence ($D_{JS}$, see Materials\u00a0and\u00a0methods) to measure the similarity between the probability distribution of the empirical and model binary patterns (Figure 2A\u2013C). We compared this similarity to the distribution of binary patterns predicted from independent-MEMs, for which only the activation rates were preserved (i.e., only $h$ was optimized). We found that the empirical distribution was well approximated by MEMs and that, for all recording sessions, the goodness-of-fit (i.e., $1/D_{JS}$) was orders of magnitude higher for MEMs than for independent-MEMs (Figure 2C), leading to excellent model performances (i.e., Kullback-Leibler ratio equal to 0.95 \u00b1 0.03 on average, see Materials\u00a0and\u00a0methods).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/53268/elife-53268-fig2-v2.jpg)\n\n**Figure 2.:** (A) Comparison between the probability distribution of empirical binary patterns and the probability distribution predicted by MEMs (black dots) and independent models (gray dots), for all epochs and all neuronal ensembles. Every point represents a binary pattern that has appeared in the data at least once. Red line represents the identity line. (B) Jensen-Shannon divergence (DJS) between spiking data and MEMs, and between spiking data and independent models, across time, averaged across neuronal ensembles. Error bars are smaller than the widths of the traces. Data in (A) and (B) correspond to one example rat (#1). (C) Goodness-of-fit (1/DJS) for MEMs and for independent models, averaged over all models (i.e., all ensembles and all epochs), for each rat. Error bars indicate SEM.\n\n### Temporal evolution of activity observables, model parameters, and their sensitivity\n\nWe next analyzed the temporal evolution of the different spiking data statistics and the model parameters. We first measured the temporal variation of the activity observables (i.e., firing rates and pairwise correlations) by calculating the average Pearson correlation (or similarity $\\gamma$; see Materials\u00a0and\u00a0methods) between the values in epoch $t$ and those in epoch $t+\u0394t$ (Figure 3A). This similarity rapidly decayed with $\\Deltat$, indicating that the observables substantially changed over time. We next examined how much these variations influenced the evolution of the collective activity characterized by the distribution of binary patterns. For this, we evaluated how well the data in a given epoch $t$ could be explained by the MEM constructed using the data at time $t+\u0394t$. Specifically, we calculated $D_{JS}\u0394t$, given by the average Jensen-Shannon divergence between the distribution of data binary patterns in epoch $t$, that\u00a0is $P_{data, t}$, and the distribution of binary patterns predicted by the MEM constructed using the data in epoch $t+\u0394t$, that\u00a0is $P_{MEM,t+\u0394t}$ (see Materials\u00a0and\u00a0methods). We found that $D_{JS}\u0394t$ increased as a function of $\\Deltat$, indicating that the collective activity changed during the recording session, so that the model parameters $\u03a9(t)$ at epoch $t$ did not predict the collective activity at epoch $t+\u0394t$ (Figure 3B). Indeed, the model parameters substantially changed over time, with a rapidly decaying similarity (Figure 3C, orange and purple traces).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/53268/elife-53268-fig3-v2.jpg)\n\n**Figure 3.:** (A) Similarity (i.e., Pearson correlation coefficient) of mean firing rates (red) and pairwise correlations (purple) as a function of elapsed time \u0394t.\u00a0(B) Jensen-Shannon divergence (DJS) between the distribution of empirical spiking patterns in epoch t and the distribution of binary patterns of the pairwise MEM in epoch t + \u0394t, averaged over all t. (C) Left: Similarity of Fisher information matrix (FIM) elements, biases ($h_{i}$), and couplings ($J_{ij}$) as a function of elapsed time \u0394t. Right: FIMs at time t = 0\u00a0h and t = 1\u00a0h. Data in (A), (B), and (C) correspond to one example rat (#1); traces show averages over neuronal ensembles and shaded areas correspond to SEM. (D) Similarity of FIM elements, rates, biases, correlations, and couplings after 1/2 hour (i.e., \u0394t = 30 min), averaged across all neuronal ensembles, for each rat. Error bars indicate SEM.\n\nAs shown in Panas et al. (2015), changes in model parameters can differently contribute to collective activity, since the model can be sensitive to changes in some few combinations of parameters. Following this, we next evaluated the sensitivity of model parameters by calculating the Fisher information matrix (FIM, see Materials\u00a0and\u00a0methods) for each neuronal ensemble and each epoch. The FIM measures how much the model log-likelihood $P_{MEM}(\\sigma\u2192|\u03a9)$ changes with respect to changes in the parameters $\u03a9$. We first notice that the FIM had the highest stability across time, compared to the data firing rates and correlations and the model parameters (Figure 3C, blue trace). Indeed, the similarity after 1/2 hour was $\\gamma=$ 0.882 \u00b1 0.002 for the FIM, $\\gamma=$ 0.732 \u00b1 0.003 for the firing rates, $\\gamma=$ 0.551 \u00b1 0.004 for the biases, $\\gamma=$ 0.364 \u00b1 0.004 for the correlations, $\\gamma=$ 0.234 \u00b1 0.003 for the couplings (F4,495 = 305.73, p<0.001, one-way ANOVA followed by Tukey's post hoc analysis) (Figure 3D). Altogether these results show that the sensitivity of the model parameters remained relatively stable despite substantial changes in firing rates, correlations, collective activity and the model parameters themselves.\n\n### Spontaneous neuronal activity presents sloppiness\n\nHaving shown that the sensitivity of model parameters was relatively stable during the recording sessions, we next studied the structure of the FIMs. First, we noted that most elements of the FIM had near-zero values (Figure 4A) indicating that most of the parameters had a small effect on the model log-likelihood. In contrast, a small fraction of elements had values strongly different from zero as revealed by the heavy tail of the distribution of FIM values (Figure 4A). To identify the parameter combinations that had the strongest effect on model behavior, we decomposed the FIM into eigenvectors and classified them according to their eigenvalue (Figure 4B). We observed that, except for some few eigenvalues, most of the FIM eigenvalues were small, corresponding to combinations of parameters that had little effect on model behavior. These unimportant parameter combinations defined the sloppy dimensions of the model. The few eigenvectors with large eigenvalues defined the stiff parameter dimensions along which the model behavior was strongly affected.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/53268/elife-53268-fig4-v2.jpg)\n\n**Figure 4.:** (A) Distribution of FIM elements, for all epochs, all neuronal ensembles, and all rats. (B) Eigenvalues of the FIM, average across epochs and neuronal ensembles, for an example rat (# 1). Shaded areas represent SEM. Stiff and sloppy dimensions correspond to FIM eigenvectors of lowest and highest ranks, respectively. (C) Projection of $\u03a9(t')$ into the first three eigenvectors of the FIM from a given epoch $t$, for all $t'\\neqt$. Data from one neuronal ensemble from rat 1. (D) Projection of $\u03a9(t')$ into the first and the 20th eigenvectors of the FIM from epoch $t$, noted $\u03bd_{t,1}$ and $\u03bd_{t,20}$, respectively, for all $t'\\neqt$. Top inset: distribution of projections into $\u03bd_{t,1}$. Right inset: distribution of projections into $\u03bd_{t,20}$. Note higher variance of projections into $\u03bd_{t,20}$ than into $\u03bd_{t,1}$. Data from one neuronal ensemble from rat 1. (E) Average variance of projections of $\u03a9(t')$ into the different eigenvectors of the FIM at epoch $t$ (for all $t'\\neqt$), for the different rats. Traces represent average over neuronal ensembles and shaded areas represent SEM.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/53268/elife-53268-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** The variance of projections of $\u03a9(t^{\u2032})$ into the different eigenvectors of the Fisher information matrix (FIM) for spiking data was compared to the one obtained from stationary surrogates. (A) The average variance of projections of model parameters into the different eigenvectors of the FIMs was calculated for the spiking data (parameters $\u03a9(t')$) and for the stationary surrogates (parameters $\u03a9^{\u2032}(t^{\u2032})$), as a function of the rank $k$ of the eigenvectors. Variances were noted $Var(k)$ and $Var_{stat}(k)$ for the spiking data and the stationary surrogates, respectively. Traces represent average over neuronal ensembles and shaded areas represent SEM. Note logarithmic scale on the y-axis. We found that parameter fluctuations were larger than expected by estimation errors in the stationary case for all eigenvectors (i.e., $Var(k)>Var_{stat}(k)$, for all $k$). (B) The difference between variances of parameter projections estimated from the spiking data and those estimated from stationary surrogates increased with $k$. Thus, parameter fluctuations along sloppy dimensions were those that deviated the most from the stationary case. Traces represent average over neuronal ensembles and shaded areas represent SEM.\n\nIn the following we showed that the temporal evolution of the model parameters occurred predominantly along the sloppy dimensions. For this, we projected the parameters $\u03a9(t^{\u2032})$, calculated at time $t'$, into the eigenvectors of the FIM at time $t$, denoted $\u03bd_{t,1},\u03bd_{t,2},\u2026,\u03bd_{t,k},\u2026$, where $k$ is the rank of the eigenvector (Figure 4C). For each dimension, or eigenvector, we obtained a distribution of projections of parameters $\u03a9(t^{\u2032})$ (Figure 4D). To quantify how much the parameters varied along each eigenvector, we calculated the average variance of each projection as a function of the rank of the eigenvector. We found that the projection variance increased as a function of the eigenvector\u2019s rank for all datasets (Figure 4E). This indicates that the model parameters predominantly evolved along sloppy dimensions (i.e., FIM eigenvectors of highest rank $k$), while they remained relatively stable along stiff dimensions (i.e., FIM eigenvectors of lowest rank $k$). Using stationary surrogate data, we controlled that these parameter fluctuations were not fully explained by estimation errors and, furthermore, that parameter fluctuations along sloppy dimensions were those that deviated the most from the stationary case (see Figure 4\u2014figure supplement 1). Nevertheless, we noted that the projection variance into the stiff dimensions, albeit small, was not zero. This means that the model also evolved along parameter dimensions that had a strong impact on the collective activity. We hypothesized that changes in collective behavior, associated to changes in stiff parameters, were related to changes in cortical state.\n\n### Cortical state transitions evolve along stiff dimensions\n\nTo test this hypothesis, we first measured the cortical state in each epoch $t$ using silence density, $CS(t)$, defined as the fraction of 20-ms time bins with zero population activity, that\u00a0is no spikes from any neuron (see Materials\u00a0and\u00a0methods) (Luczak et al., 2013; Pachitariu et al., 2015; Mochol et al., 2015). To obtain the most accurate estimate of silence density, we used all the spikes from the merge of all the single-units and multi-units in the calculation of $CS(t)$. During the course of the experiment, we observed large fluctuations in silence density, with low and high values associated to desynchronized and synchronized cortical states, respectively (Figure 5A). We found that differences in collective dynamics in different epochs, quantified by $D_{JS}(t,t^{\u2032})=D_{JS}(P_{data,t};P_{data,t^{\u2032}})$, significantly co-varied with the changes in cortical state, given by $d=|CS(t)\u2212CS(t^{\u2032})|$ (averaged correlation coefficient 0.56 \u00b1 0.08, p < 0.001) (Figure 5B\u2013C). Thus, changes in collective behavior correlated with changes in cortical state.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/53268/elife-53268-fig5-v2.jpg)\n\n**Figure 5.:** (A) Silence density was used to characterize the cortical state. Green inset: low values of the silence density indicate desynchronized cortical states (each row represents the spike train of a single-unit). Red inset: high values of the silence density indicate synchronized cortical states. Data from rat 1. (B) Difference in collective pattern statistics, that\u00a0is DJS, between different epochs, $t$ and $t'$, as a function of the corresponding difference in silence density, noted d. Each gray dot corresponds to a pair of epochs ($t,t'$). The solid line indicates the average relation between DJS and d; error bars indicate SD. Data from all neuronal ensembles from rat 1. (C) Correlation coefficient between DJS and d, for all rats. *: p < 0.001. (D) Top: Distribution of the absolute value of the correlations between the cortical state and the activity observables, noted $r_{cs}$. Bottom: Distribution of parameter sensitivity values for biases (h parameters) and couplings (J parameters), for all models from all rats. (E) $r_{cs}$ vs. sensitivity $s$ of all activity variables (i.e., firing rates and pairwise correlations). Correlation: $r_{c}$ = 0.36; p <0.001. Data from rat 4 ($N_{pop}$ = 72). (F) Correlation between $r_{cs}$ and the sensitivity for each dataset. *: p < 0.001. Error bars indicate correlation 95% confidence interval. (G) $r_{cs}$ for sloppy and stiff variables. *: p < 0.001, paired t-test. Error bars indicate SEM.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/53268/elife-53268-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** Averaged correlation between observables and cortical state, $r_{cs}$, for sloppy and stiff variables, for weighted sensitivity $s^{w}$ defined using equation 9. *: p < 0.001, paired t-test. Error bars indicate SEM.\n\nWe next asked which activity observables, that\u00a0is the firing rate of each neuron and all pairwise correlations, related more to cortical state transitions. For this, we calculated the absolute correlation, $r_{cs}$, between the cortical state $CS(t)$ and the activity observables. We found that $r_{cs}$ was broadly distributed between 0 and 0.94, thus some observables correlated more with the cortical state (Figure 5D, top panel). Next, to relate the sensitivity of model parameters (their stiffness) to the activity observables, we measured the sensitivity of a given parameter by its average contribution to the first eigenvector of the FIM and we associated it to the corresponding observable (Panas et al., 2015). We defined the sensitivity $s_{ne}$ at the neuronal ensemble level and the sensitivity $s$ at the population level (see Materials\u00a0and\u00a0methods). Note that the ranges of the sensitivity of biases ($h$) and couplings ($J$) were similar (Figure 5D, bottom panel), and that sensitivities calculated in the first and the second halves of the recording session were highly correlated (correlation coefficient > 0.82, for all rats; average: 0.89 \u00b1 0.03). We found a significant positive correlation between the associated sensitivity ($s$) and the correlation with the cortical state ($r_{cs}$) in 5/6 datasets (Figure 5E\u2013F). Thus, the observables that correlated more with the cortical state were those with the highest associated sensitivity. This result led us to separate the activity observables into two classes, called 'sloppy' and 'stiff', based on whether the associated sensitivity ($s$) was lower or higher than the median of $s$. We found that stiff variables were significantly more correlated with the cortical state than the sloppy variables (p<0.01 for all datasets, paired t-test; Figure 5G). This relationship was preserved when using an alternative, more general definition of sensitivity that considered the contribution to all eigenvectors of the FIM, instead of the contribution to the first eigenvector only (see Figure 5\u2014figure supplement 1). Altogether, these results indicate that neuronal activity and co-activity preferentially evolved along sensitive (stiff) parameter dimensions during cortical state transitions.\n\n### Sensory-evoked activity evolves along sloppy dimensions\n\nThe above results indicate that, although intrinsic spontaneous dynamics predominantly evolved along sloppy dimensions (Figure 4F), cortical state transitions were governed by changes in stiff parameters (Figure 5G). We next investigated which parameter dimensions were explored when the neural network was driven by external sensory inputs, that\u00a0is during stimulus-evoked activity (Figure 6A). We observed that evoked responses (which could be increased or decreased with respect to pre-stimulus baseline firing rate) were larger for sloppy neurons than for stiff neurons (Figure 6B\u2013C). To quantify the responsiveness of each neuron, we calculated the modulation index (MI, see Materials\u00a0and\u00a0methods) of each neuron in response to acoustic stimuli. We next calculated the relation between MI, calculated during evoked activity, and the sensitivity $s$ associated to firing rates, calculated during the spontaneous activity as above. We found that the more responsive neurons were those with the lowest associated sensitivity (Figure 6D\u2013E). This indicates that stimulus-evoked neuronal activity evolved mostly along sloppy dimensions. This result was replicated when using a more general definition of sensitivity that considered the contribution to all eigenvectors of the FIM (see Figure 6\u2014figure supplement 1A). Finally, we evaluated the difference, noted \u0394MI, between the MI of sloppy and stiff neurons as a function of cortical state $CS(t)$. Specifically, first, the MI values in each epoch were averaged according to different ranges of the silence density. Second, the MI values of sloppy and stiff neurons were compared within each range. We found that \u0394MI was maximal during desynchronized activity, and minimal during synchronized activity (Figure 6F, see also Figure 6\u2014figure supplement 1B). Thus, the cortical activity during stimulus response evolved predominantly along sloppy dimensions for the desynchronized cortical state, while, in the synchronized state, the dominance of sloppy fluctuations was reduced, and stiff fluctuations became comparable.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/53268/elife-53268-fig6-v2.jpg)\n\n**Figure 6.:** (A) Population responses to acoustic clicks. (B\u2013C) Median-split of sensitivity $s$ was used to separate stiff neurons and sloppy neurons. The mean responses for stiff and sloppy neurons are shown in the case of excited responses (B) and suppressed responses (C). The responses were normalized by the average pre-stimulus activity $r_{0}$. Shaded areas correspond to SEM. Data in (A), (B), and (C) correspond to one example rat (#1). (D) Modulation index (MI) as a function of associated sensitivity of firing rates ($s_{i}$, with 1 $\\leqi\\leqN_{pop}$), for each dataset. Each dot corresponds to a single neuron of the recorded population. The correlation between MI and sensitivity was negative for all datasets ($r_{c}$: correlation coefficient; p: p-value). Solid lines indicate exponential fits. (E) Correlation between MI(t), calculated in epoch $t$, and $\u03bd_{t,1}$, for all neuronal ensembles of each of the rats. On each box, the central mark indicates the median, and the bottom and top edges of the box indicate the 25th and 75th percentiles, respectively. Asterisks indicate significantly negative medians (p < 0.001, two-sided signed rank test). (F) Difference of the MI of sloppy neurons minus the MI of stiff neurons as a function of cortical state (i.e., silence density), averaged for all rats (black trace; error bars indicate SEM). The gray bars indicate the distribution of silence density values.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/53268/elife-53268-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (A) Modulation index (MI) as a function of associated weighted sensitivity of firing rates, for each dataset. The correlation between MI and $s^{w}$ was negative for all datasets ($r_{c}$: correlation coefficient; p: p-value). Solid lines indicate exponential fits. (B) Difference of the MI of sloppy neurons minus the MI of stiff neurons as a function of cortical state (i.e., silence density), averaged for all rats (black trace; error bars indicate SEM). The gray bars indicate the distribution of silence density values.\n\nFinally, correlations between cortical state fluctuations and sensitivity and between MI and sensitivity could reflect a dependency between sensitivity and model estimation errors. To test this, we evaluated the mean error on the model estimation of the observables and test its interaction with sensitivity, cortical state fluctuations, and MI (see Appendix 1 and Appendix 1\u2014figure 1). We found that model estimation errors correlated with sensitivity, but they could not fully explain neither the positive correlation between sensitivity and cortical state nor the negative correlation between sensitivity and MI.\n\n### Stiff parameters were associated to central neurons within the neuronal network\n\nIn this section, we further investigate the properties of neurons and pairs of neurons with respect to their associated parameter sensitivity. As above, we separated the neurons and pairs of neurons into two classes, called 'sloppy units/pairs' and 'stiff units/pairs', based on whether the associated sensitivity ($s$) was lower or higher than the median $s$ (units were associated to parameters $h_{i}$, and pairs or links were associated to parameters $J_{ij}$). With this dichotomization, we found that stiff units were significantly more active than sloppy units (Figure 7A). We quantified this by performing receiver operating characteristic (ROC) analysis and used the area under the ROC curve (AUC) as a measure of how well the firing rates distributions of the two classes were separated (AUC = 0.961\u20130.998, p < 0.001, for all rats; Figure 7G). Stiff neurons were also significantly more correlated among them than sloppy neurons (AUC = 0.615\u20130.932, p < 0.001, for all rats; Figure 7B,G). The distributions of correlations remained well separated when calculated for the links, that\u00a0is pairs of neurons with associated parameters $J_{ij}$ (AUC = 0.541\u20130.766, p < 0.001, for all rats; Figure 7C,G).\n\n![Figure 7.](https://cdn.elifesciences.org/articles/53268/elife-53268-fig7-v2.jpg)\n\n**Figure 7.:** (A) Distribution of firing rates of sloppy and stiff neurons. (B) Distribution of correlations among sloppy neurons and among stiff neurons. (C) The distribution of correlations was also calculated for the links (i.e, pairs of neurons with associated parameters $J_{ij}$). Note that, in principle, links can be related to pairs composed of one sloppy and one stiff neuron. (D) Distribution of betweenness centrality of sloppy and stiff neurons. (E) Connectivity graph: each node represents a neuron and links represent significant correlations between pairs of neurons. The graph was plotted using force-directed layout, that\u00a0is using attractive forces between strongly connected nodes and repulsive forces between weakly connected nodes. Left: the nodes were colored as a function of betweenness centrality. Right: the nodes were colored as a function of associated sensitivity $s$. Note the high overlap between both color labeling methods, indicating that sensitivity was highly predictive of the centrality of the nodes. (F) Distribution of neuron-to-population couplings of sloppy and stiff units. Panels A\u2013F show data from rat 1. (G) Area under the receiver operating curve (AUC) quantifying the separation of distributions of sloppy and stiff classes. All AUC values were significantly higher than 0.5 (p < 0.001).\n\n![Figure 7\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/53268/elife-53268-fig7-figsupp1-v2.jpg)\n\n**Figure 7\u2014figure supplement 1.:** Area under the receiver operating curve (AUC) quantifying the separation of distributions of sloppy and stiff classes using the weighted sensitivity $s^{w}$ defined using equation 9. All AUC values were significantly higher than 0.5 (p < 0.001).\n\nTo further investigate the structure of correlations, we evaluated the centrality of stiff and sloppy neurons within the observed network of neurons. For this we used the betweenness centrality (BC), a measure of node centrality in a graph or network, which in our case was given by the functional connectivity matrix among the recorded neurons (see Materials\u00a0and\u00a0methods). The BC measures the extent to which a node in the graph tends to lay on the shortest path between other nodes. Thus, a node with higher BC has more influence over the network, because more information passes through that node. We found that stiff neurons had significantly more centrality in the functional connectivity graph than sloppy neurons (AUC\u00a0=\u00a00.740\u20130.831, p<0.001, for all rats; Figure 7D,G). This indicates that stiff neurons were part of the core of the graph, while sloppy neurons were part of the graph periphery, as clearly shown using graph visualization (Figure 7E; Fruchterman and Reingold, 1991). BC values were correlated with firing rates (correlation coefficient: 0.59\u00a0\u00b1\u00a00.11), which could suggest that differences in BC between stiff and sloppy neurons were simply a consequence of differences in firing rates. However, using surrogate data that preserved the observed firing rates and produced correlations through global modulations, we found that neither the structure of correlations nor the BC values could be trivially predicted by globally modulated firing rates but they were rather suggestive of functional interactions (see Appendix 1 and Appendix\u00a01\u2014figure 2). Thus, in addition to different firing rates, different correlations and BC values were supplementary features of stiff and sloppy neurons.\n\nMoreover, previous work has shown that cortical neurons differ in their coupling to the population activity, with neurons that activate most often when many others are active and neurons that tend to activate more frequently when others are silent (Okun et al., 2015). Thus, along with centrality, we calculated the neuron-to-population coupling, given by the Pearson correlation between the activity of each neuron $i$ and the number of coactive neurons (excluding neuron $i$; see Materials\u00a0and\u00a0methods). We found that stiff neurons were significantly more coupled to the population activity than sloppy neurons (AUC = 0.603\u20130.939, p < 0.001, for all rats; Figure 7F,G). In summary, stiff units were more active, more central, more coupled among them, and more coupled to the population activity than sloppy units. The same results were found when using a more general definition of sensitivity that considered the contribution to all eigenvectors of the FIM (Figure 7\u2014figure supplement 1).\n\n## Discussion\n\nWe here studied the changes in activity caused by intrinsic (i.e. cortical state) and extrinsic (i.e., stimulus-evoked) sources in A1 neuronal ensembles in an estimated parameter space. The parameter space was obtained using the maximum entropy principle, providing a handful number of parameters describing the probability of all possible binary activity patterns. These parameters differed in their impact on collective activity that was sensitive to a few combinations of parameters, called stiff dimensions, but insensitive to many others called sloppy dimensions. Our results suggest that spontaneous cortical state transitions and stimulus-driven activity evolved along different parameter dimensions. Indeed, in one hand, while most of the fluctuations during spontaneous activity evolved along sloppy dimensions, some residual ongoing fluctuations evolved along stiff dimensions, and these fluctuations were correlated with synchronized/desynchronized cortical state transitions. On the other hand, stimulus-induced activity was larger in sloppy dimensions than in stiff dimensions, an effect that was most prominent during the desynchronized cortical state. Note that the observation that both spontaneous and stimulus-driven activities predominantly evolve along sloppy dimensions results from the strong similarity of spontaneous and evoked activity, reported in several previous studies (Arieli et al., 1996; Kenet et al., 2003; MacLean et al., 2005; Luczak et al., 2009). Finally, by classifying the neurons as stiff versus sloppy neurons (i.e., those contributing more or less to the principal stiff dimension) we found that the firing rates and the functional connectivity topology significantly differed between the two classes of neurons. It should be noted, however, that, since sensitivity is a continuous variable, the two classes of neurons that we defined here do not represent two disjoint groups but rather represent two parts of a continuum.\n\nThe observation that stimulus-induced activity evolved along sloppy dimensions can have important functional implications. It suggests that a stimulus can modulate the activity of a subset of sloppy neurons without entirely affecting the collective activity. This could be an efficient functional architecture to encode sensory information without perturbing other ongoing or memory-stored processes. Consistent with this view and with previous studies (Margolis et al., 2012; Mizuseki and Buzs\u00e1ki, 2013; Panas et al., 2015), our results suggest that the integrity of the network is ensured by a core of highly active stiff neurons, which have strong functional connections among them (either through anatomical connections or common inputs), while topologically peripheral sloppy neurons (within the functional connectivity graph) can be largely modulated by external inputs. A similar sub-network of highly active, interconnected neurons has been recently identified in the mice neocortex (Yassin et al., 2010). Importantly, sensory input was not required to drive these cells. Previous studies of complex systems have derived general principles of core/periphery network structures: the network periphery is more variable, evolvable, and plastic than the network core, while the network core facilitates system robustness (Kitano, 2004; Csermely et al., 2013). Thus, we hypothesize that sloppy neurons could also be more affected by synaptic plasticity, allowing for network reconfiguration without loss of stability. Consistent with this, previous work on whole-brain fMRI has observed core stability and peripheral flexibility over the course of learning (Bassett et al., 2013), and recent analyses of functional networks from calcium imaging data recorded in mouse primary auditory cortex revealed a stable core and a variable periphery over time (Betzel et al., 2019). Furthermore, we observed that stimulus responses evolved more pronouncedly along sloppy dimensions in the desynchronized state, while in the synchronized state fluctuations along sloppy and stiff dimensions were comparable (Figure 6F). This supports the view that responses along sloppy dimensions provide information processing benefits, since previous studies have shown that auditory stimuli in rodents (Marguet and Harris, 2011; Pachitariu et al., 2015) and visual stimuli in both rats (Goard and Dan, 2009) and monkeys (Beaman et al., 2017) are better represented in the desynchronized state as compared to the synchronized state.\n\nThe properties of spontaneous and induced cortical dynamics observed in the present anesthetized condition are likely to be relevant also during wakefulness. Indeed, several studies reported the existence of synchronized cortical states during wakefulness (for review see Zagha and McCormick, 2014), and global fluctuation resembling transitions between up and down periods during alert or quiescent wakefulness (Petersen et al., 2003; Luczak et al., 2007; Poulet and Petersen, 2008; Zagha et al., 2013; Tan et al., 2014; Engel et al., 2016) or even during task engagement (Sachidhanandam et al., 2013). Moreover, sloppiness has been observed in asynchronous spontaneous activity under light anesthesia (Panas et al., 2015), we thus expect to observe a similar stiff-sloppy architecture in the awake state. However, we believe that the comparison of Fisher information matrices during wakefulness and during different levels of anesthesia could provide valuable information about the principles governing vigilance.\n\nWe found that stiff neurons were more linked to the observed neuronal population activity than sloppy neurons. Stiff neurons had higher centrality in the functional connectivity graph and higher coupling to the population activity than sloppy neurons. Previous research showed that neurons differ in their coupling to the population activity, with neurons that activate most often when many others are active, called \u2018choristers\u2019, and neurons that tend to activate more frequently when others are silent, called \u2018soloists\u2019 (Okun et al., 2015). Our results suggest that stiff and sloppy neurons are chorister and soloist neurons, respectively. In other words, changes in the activity of stiff/chorister neurons lead to changes in collective behavior (i.e., cortical states), while the activity of sloppy/soloist neurons can spontaneously fluctuate or respond to stimuli without strongly affecting the collective behavior. Thus, we believe that the roles of stiff/chorister neurons and sloppy/soloist neurons are important to understand tradeoffs between responsiveness and stability of the network. Furthermore, we here studied the evolution of neuronal activity on the time scale of hours and found that fluctuations on stiff parameter dimensions were the weakest and were related to cortical state transitions, which time scale is in the order of tens of minutes (Hahn et al., 2017; Mochol et al., 2015). Previous studies have reported prominent changes on neuronal activity and tuning properties over days, but with stable decoding performances of population activity (Chestek et al., 2007; Ziv et al., 2013; Panas et al., 2015). However, we hypothesize that learning or adaptation to changing environments could lead to large changes in collective activity. In that case, particular attention could be paid to the influence of high-order areas on the activity of subsets of stiff and sloppy neurons from sensory areas, as top-down regulation might be a mechanism to control the stabilizing network core.\n\nThe existence of cortical neurons with different sensitivities (from sloppy to stiff neurons) provides new valuable architectural constrains for models of the brain state and its transitions. Several past studies have modeled the synchronized brain dynamics as transitions between two attractors. Depending on the model specificity those transitions could be noise driven (Mejias et al., 2010; Mochol et al., 2015; Jercog et al., 2017) or caused by some fatigue mechanism (Compte et al., 2003; Hill and Tononi, 2005; Mattia and Sanchez-Vives, 2012). To make the system works in a desynchronized regime it was enough to increase the background input to the network (Bazhenov et al., 2002; Hill and Tononi, 2005; Curto et al., 2009; Destexhe, 2009; Mochol et al., 2015). Given our present results, the models could be extended to include a network core/periphery architecture, a non-homogeneous background input preferentially targeting the network core, and different stimulus spatial distributions. Such a model would provide insights on the interplay between cortical state transitions and sensory representation. Moreover, our findings question the view that the mechanisms by which background and stimulus inputs impact the dynamics are similar, as assumed in the simple bi-stable rate model (Mochol et al., 2015).\n\nFinally, we here described the patterned activity of small ($N$ = 10) neuronal ensembles using MEMs. It is known that MEMs of small sizes can present departures from the observed distribution of summed activities and higher-order correlations (Tka\u010dik et al., 2014). Recent advancements on learning algorithms allow to construct MEMs of \u223c100 neurons. However, these models cannot be used in a time-resolved manner, as we did here, due to limited data in each epoch. Small model sizes are thus the cost to pay to study the evolution of collective activity over time in a meaningful time scale (i.e., the one of cortical state transitions).\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Biological sample (Sprague\u2013Dawley rat)</td>\n      <td>Sprague\u2013Dawley rat</td>\n      <td>https://doi.org/10.1073/pnas.1410509112</td>\n      <td></td>\n      <td>six rats, 250\u2013400 g</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Matlab</td>\n      <td>MathWorks</td>\n      <td>RRID:SCR_001622</td>\n      <td>All analyses</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Klustakwik</td>\n      <td>http://klustakwik.sourceforge.net/</td>\n      <td>RRID:SCR_014480</td>\n      <td>Spike sorting (detection and initial clustering)</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>EToS</td>\n      <td>http://etos.sourceforge.net/</td>\n      <td></td>\n      <td>Spike sorting (detection and initial clustering)</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Klusters</td>\n      <td>http://neurosuite.sourceforge.net/</td>\n      <td></td>\n      <td>Spike sorting\u00a0(clustering)</td>\n    </tr>\n  </tbody>\n</table>\n\n### Ethics statement\n\nAll experiments were carried out in accordance with protocols approved by the Animal Ethics Committee of the University of Barcelona (Comit\u00e9 d\u2019Experimentaci\u00f3 Animal, Universitat de Barcelona, Ref 116/13).\n\n### Experimental techniques\n\nWe analyzed the neuronal activity recorded in the primary auditory cortex (A1) of 6 anesthetized rats (Sprague\u2013Dawley; 250\u2013400 g). The experimental procedures and spikes sorting procedures have been previously described in Mochol et al. (2015). Briefly, rats were anesthetized with urethane (1.5 g/kg body weight) and silicon microelectrodes (Neuronexus) with 32 or 64 channels were inserted in deep layers (depth, 600\u20131,200 \u03bcm) of the primary auditory cortex. The spiking activity from single units and multi-units (i.e., neurons that were not well isolated) was simultaneously recorded during spontaneous activity and in response to acoustic \u2018clicks\u2019 (5 ms square pulses; interstimulus interval, 2.5 or 3.5 s; see Table 1). In some datasets, double clicks (5 ms square pulses; 50- or 100 ms inter-click interval) were also presented, but, in the present study, we analyzed only the responses to single click. The spiking data is publicly available here:\u00a0https://github.com/adrianponce/Spont_stim_spiking_A1.\n\n**Table 1.**\n Number of neurons (SU: single-units, MU: multi-unit), number of 100 s epochs, number of stimulus presentations in 100 s epochs, and number of neuronal ensembles, for each dataset.\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th>No. of neurons</th>\n      <th>No. of 100 s epochs</th>\n      <th>Stimulus presentations in 100 s epochs</th>\n      <th>No. of neuronal ensembles (Q)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Rat 1</td>\n      <td>SU: 81; MU: 3</td>\n      <td>163</td>\n      <td>12\u201314</td>\n      <td>20</td>\n    </tr>\n    <tr>\n      <td>Rat 2</td>\n      <td>SU: 147; MU: 13</td>\n      <td>74</td>\n      <td>12\u201314</td>\n      <td>20</td>\n    </tr>\n    <tr>\n      <td>Rat 3</td>\n      <td>SU: 44; MU: 30</td>\n      <td>70</td>\n      <td>12\u201320</td>\n      <td>10</td>\n    </tr>\n    <tr>\n      <td>Rat 4</td>\n      <td>SU: 72; MU: 103</td>\n      <td>59</td>\n      <td>10\u201320</td>\n      <td>20</td>\n    </tr>\n    <tr>\n      <td>Rat 5</td>\n      <td>SU: 58; MU: 39</td>\n      <td>29</td>\n      <td>28\u201329</td>\n      <td>10</td>\n    </tr>\n    <tr>\n      <td>Rat 6</td>\n      <td>SU: 112; MU: 83</td>\n      <td>28</td>\n      <td>17\u201329</td>\n      <td>20</td>\n    </tr>\n  </tbody>\n</table>\n\n### Cortical state\n\nLong continuous recordings (mean, \u223c2 h) were divided into $N_{E}$ 100-s epochs, and cortical state was estimated in each epoch based on spontaneous pooled population activity, that\u00a0is the merge of single and multiunit spike trains during the 1.5-s intervals preceding each stimulus presentation. Cortical state was quantified using silence density defined as the fraction of 20-ms time bins with no population activity. Silent and active periods were obtained from the merge of consecutive empty and nonempty bins, respectively.\n\n### Maximum entropy models\n\nThe spontaneous spiking activity of ensembles of $N$ single neurons was studied using statistical modeling based on maximum entropy principle. The ensemble activity was binarized in non-overlapping time bins of dt = 10 ms, during which neuron i either did ($\\sigma_{i}=+1$) or did not ($\\sigma_{i}=-1$) generate one or more spikes. The state of the neural ensemble is described by a binary pattern $\\sigma\u2192=\\sigma_{1},\\sigma_{2},\u2026,\\sigma_{N}$, and thus the collective activity is described by the probability distribution $P\\sigma\u2192$ over all 2N possible binary patterns. We estimated $P\\sigma\u2192$ using a Maximum entropy model (MEM). The MEM finds $P\\sigma\u2192$ by maximizing its entropy under the constraint that some empirical statistics are preserved. A pairwise-MEM provides a solution under the constraint that the activation rates ($<\\sigma_{i}>$) and the pairwise correlations ($<\\sigma_{i}\\sigma_{j}>$) are preserved. The maximum entropy distribution $P\\sigma\u2192$ that is consistent with these expectation values is given by the Boltzmann distribution (Schneidman et al., 2006; Tka\u010dik et al., 2015):\n\n$$\nP(\\sigma\u2192)=\\frac{e^{\u2212E(\u00a0\\sigma\u2192\u00a0)}}{\\sum{\\sigma\u2192}e^{\u2212E(\u00a0\\sigma\u2192\u00a0)}},\n$$\n\nwhere $E\\sigma\u2192$ is the energy of the pattern $\\sigma\u2192$, given by:\n\n$$\nE(\\sigma\u2192)=\u2212\\sumi=1Nh_{i}\\sigma_{i}\u2212\\frac{1}{2}\\sumi=1N\\sumj=1NJ_{ij}\\sigma_{i}\\sigma_{j},\n$$\n\nand $Z=\\sum{\\sigma\u2192}e^{\u2212E(\u00a0\\sigma\u2192\u00a0)}$ is the partition function.\n\nThe model parameter $h_{i}$, called intrinsic bias, represents the intrinsic tendency of neuron i towards activation ($\\sigma_{i}=+1$) or silence ($\\sigma_{i}=-1$) and the parameter $J_{ij}$ represents the effective interaction between neurons i and j. The estimation of the model parameters $\u03a9={h,J}$ was achieved through a gradient descent algorithm (see below). For each recording session, we constructed models for $Q$ ensembles of $N=10$ randomly selected single neurons from the entire population of $N_{pop}$ single neurons and learned the model parameters using the spontaneous binarized activity within each 100-s epoch. Thus, for each recording session, we built $Q\\timesN_{E}$ models of 10 units. We were interested on the evolution of the model parameters over time, that\u00a0is $\u03a9(t)$. Note that, for a given model, the number of free parameters is the sum of intrinsic biases and effective couplings, $N+N(N-1)/2=$ 55, that\u00a0is $\u03a9=[h_{1},\u00a0h_{2},\u00a0\u2026,\u00a0h_{N},J_{12},\u00a0J_{13},\u2026]$.\n\n### Estimation of MEM parameters\n\nThe MEM parameters $\u03a9={h,J}$ were iteratively adjusted to minimize the absolute difference between the empirical activation rates ($\\sigma_{i}$) and correlations ($\\sigma_{i}\\sigma_{j}$) and those ($\\sigma_{i}_{model}$, $\\sigma_{i}\\sigma_{j}_{model}$) predicted by the model through Metropolis Monte Carlo simulations (100,000 samples). Specifically, each iteration is given by: $h_{i}^{new}=h_{i}^{old}-\\alpha\\sigma_{i}_{model}-\\sigma_{i}$, and $J_{ij}^{new}=J_{ij}^{old}-\\alpha\\sigma_{i}\\sigma_{j}_{model}-\\sigma_{i}\\sigma_{j}$, where \u03b1 is the learning rate ($\\alpha=$ 0.1). In our study we stopped the re-estimations once the differences between the empirical and model values are less than a tolerance threshold (0.005) or if this tolerance was not reached within a maximum number of iterations (100).\n\n### MEM goodness-of-fit\n\nThe goodness-of-fit of the MEMs was evaluated using the Jensen\u2013Shannon divergence (DJS) between the probability distribution of the empirical and model binary patterns (Marre et al., 2009). DJS is a symmetric version of the Kullback-Leibler divergence (DKL) and is given as:\n\n$$\nD_{JS}(P_{data};P_{MEM})=\\frac{1}{2}D_{KL}[P_{data};\\frac{(P_{data}+P_{MEM})}{2}]+\\frac{1}{2}D_{KL}[P_{MEM};\\frac{(P_{data}+P_{MEM})}{2}],\n$$\n\nWhere $P_{MEM}$ was given by the Boltzmann distribution of the model, $P_{data}$ was estimated from the $N$-dimensional binary patterns observed in the data, and:\n\n$$\nD_{KL}(P_{1};P_{2})=\\sum{x}P_{1}(x)log\u2061\\frac{P_{1}(x)}{P_{2}(x)}.\n$$\n\nThe fitting of MEM (second-order model) was compared to the fit obtained using independent-MEM, that\u00a0is in which only for which only the activation rates ($<\\sigma_{i}>$) are preserved (i.e., only $h$ is optimized; first-order model). In this case, the pattern energy is given by: $E\\sigma\u2192=-\\sumi=1Nh_{i}\\sigma_{i}$.\n\nFurthermore, the performance of the model can be evaluated using the Kullback-Leibler ratio, $R$ (Shlens et al., 2009). This ratio is given by comparing the Kullback-Leibler divergence between the distribution $P_{1}$ of the first-order model (i.e., independent-MEM) and the distribution of the actual data, $D_{1}=D_{KL}P_{1};P_{data}$, with the Kullback-Leibler divergence between the distribution $P_{2}$ of the second-order model and the distribution of the actual data, $D_{2}=D_{KL}P_{2};P_{data}$. Specifically, the Kullback-Leibler ratio is defined as:\n\n$$\nR=\\frac{D_{1}\u2212D_{2}}{D_{1}}.\n$$\n\nThis ratio can range between 0 and 1, with one giving the highest performance.\n\n### Fisher information matrix\n\nBecause in the MEM, all the information about the collective activity is contained in the probability distribution of the binary patterns, $P\\sigma\u2192$, one can define the model parameter space as $P(\\sigma\u2192|\u03a9)$. We were interested in knowing which parameters, or combination of parameters, have a strong effect on the collective activity. To measure how distinguishable two models, with parameters $\u03a9$ and $\u03a9+\\delta\u03a9$, are based on their predictions, we used the Fisher information matrix (FIM). Indeed, the Kullback-Leibler divergence between the two models can be written as:\n\n$$\nD_{KL}(\u03a9;\u03a9+\\delta\u03a9)=FIM_{kl}\\delta\u03a9_{k}\\delta\u03a9_{l}+\ud835\udcaa(\\delta\u03a9^{3}),\n$$\n\nwhere 1 $\\leqk,l\\leq$ 55, and the matrix $FIM$ is given by:\n\n$$\nFIM_{kl}=\\sum{\\sigma\u2192}P(\\sigma\u2192|\u03a9)\\frac{\u2202log\u2061P(\\sigma\u2192|\u03a9)}{\u2202\u03a9_{k}}\\frac{\u2202log\u2061P(\\sigma\u2192|\u03a9)}{\u2202\u03a9_{l}}.\n$$\n\nThe FIM represents the curvature of the log-likelihood of the model, $log\u2061P(\\sigma\u2192|\u03a9)$, with respect to the model parameters. It quantifies the sensitivity of the model to changes in parameters. By calculating the eigenvalues of the FIM, we can determine which combinations of parameters affect the most the model's behavior.\n\nIn the case of MEM, the FIM can be easily obtained by using Equations 1, 2, and 7. As a result, the FIM is given by the covariance matrix of observables associated to the parameters which can be calculated from the model through Metropolis Monte Carlo simulations (500,000 steps), that\u00a0is:\n\n$$\nFIM_{kl}=\u27e8x_{k}x_{l}\u27e9\u2212\u27e8x_{k}\u27e9\u27e8x_{l}\u27e9,\n$$\n\nwith 1 $\\leqk,l\\leq$ 55 and $x\u2192=[\\sigma_{1},\u00a0\\sigma_{2},\u00a0\u2026,\u00a0\\sigma_{N},\u00a0\\sigma_{1}\\sigma_{2},\u00a0\\sigma_{1}\\sigma_{3},\u2026]$.\n\n### Sensitivity measures\n\nThe FIM was calculated for every neuronal ensemble at every 100-s epoch and it was decomposed into eigenvectors, noted $\u03bd_{t,1},\u03bd_{t,2},\u2026,\u03bd_{t,k},\u2026$, where $k$ is the rank of the eigenvector and $t$ denotes the epoch. Following Panas et al. (2015), within each neuronal ensemble, we measured the sensitivity of a given parameter by its averaged contribution to the first eigenvector of the FIM, that\u00a0is the sensitivity of i-th parameter is given by $s_{ne,i}=\\frac{1}{N_{E}}\\sum_{t}\u03bd_{t,1}(i)$, with $1\\leqi\\leqN$.\n\nWe next constructed a sensitivity measure for the entire population of $N_{pop}$ neurons. For this, we defined the set of all single neuron indices and all pairs of neurons $I=1,\u2026,N_{pop},1,2,1,3,\u2026$. This set has $L=N_{pop}+\\frac{N_{pop}(N_{pop}-1)}{2}$ elements. For each element $j$ of $I$, we defined the sensitivity $s_{j}$ as the average of $s_{en,i}$ over the neuronal ensembles that contained the $j$-th single neuron or the pair of neurons (i.e., those neuronal ensembles for which $i$ maps to $j$). In other words, $s_{ne}$ denotes the sensitivity within an ensemble of $N=10$ neurons and has 55 elements, and $s$ denotes the sensitivity within the entire population of $N_{pop}$ neurons and has $L$ elements. This allows comparison of $s$ with statistics derived from the population of $N_{pop}$ neurons.\n\nParameters that contributed less to the first eigenvector could in principle contribute to the other stiff dimensions (those with lower rank $k$, e.g., $k=$ 2). For this reason, we also considered an alternative definition of sensitivity that considers the weighted contribution to all eigenvectors of the FIM. For each neuronal ensemble and each 100-s epoch $t$, we defined the weighted sensitivity of the parameter $i$ as the temporal average of its contribution to the eigenvectors of the FIM, weighted by the associated eigenvalues ($a_{t,1},\u2026,a_{t,55}$):\n\n$$\ns_{ne,i}^{w}=\\frac{1}{N_{E}}\\sumt=1N_{E}\\sumk=155\\frac{a_{t,k}|\u03bd_{t,k}(i)|}{a_{t,1}+a_{t,2}+\u2026\u00a0+a_{t,55}}.\n$$\n\nAs previous, from $s_{ne}^{w}$ one can construct a weighted sensitivity $s^{w}$ at the population level.\n\nFinally, we separated the activity observables into two classes, called \u201csloppy\u201d and \u201cstiff\u201d, based on whether the associated sensitivity $s$ was lower or higher than the median sensitivity.\n\n### Similarity measures\n\nTemporal variations of model parameters and data statistics were quantified using the average correlation between the parameters/statistics at time t and the parameters/statistics at time $t+\u0394t$. For example, let $r\u2192(t)$ the average firing rates of the neurons during the epoch $t$, the similarity measure is given by:\n\n$$\n\\gamma(\u0394t)=\\frac{1}{N_{E}\u2212\u0394t}\\sumt=1N_{E}\u2212\u0394t\u03c1[r\u2192(t),r\u2192(t+\u0394t)],\n$$\n\nWhere $N_{E}$ is the number of epochs and $\u03c1$ is the Pearson correlation coefficient. In the case of FIM, the matrix was vectorized to calculate $\u03c1$.\n\nTo evaluated how well the data in a given epoch $t$ could be explained by the MEM constructed using the data at time $t+\u0394t$. Specifically, we defined the similarity measure $D_{JS}\u0394t$, given by the average Jensen-Shannon divergence between the distribution of data binary patterns in epoch $t$, that\u00a0is $P_{data, t}$, and the distribution of binary patterns predicted by the MEM constructed using the data in epoch $t+\u0394t$, that\u00a0is $P_{MEM,t+\u0394t}$. This measure is given as:\n\n$$\n\u27e8D_{JS}\u27e9(\u0394t)=\u00a0\\frac{1}{N_{E}\u2212\u0394t}\\sumt=1N_{E}\u2212\u0394tD_{JS}(P_{data,t};P_{MEM,t+\u0394t}).\n$$\n\nIn other words, $1/D_{JS}\u0394t$ quantifies how well, on average, the model with parameters $\u03a9(t+\u0394t)$ represents the data from epoch $t$.\n\n### Modulation index\n\nWe quantified the responsiveness of the neurons to sensory stimuli through the modulation index (MI) defined as:\n\n$$\nMI=\u00a0\\frac{|r_{stim}\u2212r_{spon}|}{r_{stim}+r_{spon}},\n$$\n\nwhere $r_{spon}$ is the pre-stimulus average spike count, calculated in the 0.5-s pre-stimulus interval, and $r_{stim}$ is the average spike count calculated from stimulus onset to 0.5 s after stimulus onset. With this definition, strongly increased or suppressed stimulus responses, with respect to pre-stimulus activity, lead to high MI values.\n\n### Betweenness centrality\n\nFor each recording session, we analyzed the network defined by the Pearson correlation matrix of the activities of all single units. The centrality of a neuron, or node, within the network was quantified using the betweenness centrality (BC) measure. BC is given by the number of shortest paths that pass through a given node. The correlation matrix was compute for all 100-s epochs and, for each matrix element, we tested whether the mean of the $N_{E}$ correlation values differs from 0 (t test followed by Bonferroni correction), resulting in a binary graph $G$ with entries equal to 1 if correlation were significantly different from zero (corrected p-value < 0.05) and 0 otherwise. The BC for each node of the graph was given by:\n\n$$\nBC(i)=\\sumk\\neqi\\neql\\frac{p(kl;i)}{p(kl)}\n$$\n\nwhere $p(kl)$ is the total number of shortest paths from node $k$ to node $l$ and $p(kl;i)$ is the number of those paths that pass through $i$.\n\n### Neuron-to-population coupling\n\nTo quantify the coupling of each neuron to the activity of the neuronal population, we calculated, for each epoch, the Pearson correlation between the activity of each neuron ($\\sigma_{i}$) and the number of coactive neurons (i.e., with $\\sigma_{i}=+1$) at each time bin ($dt$ = 10\u00a0ms) from the neuronal population of single units (without including the neuron $i$). The neuron-to-population coupling was given by the average of the correlation coefficient across epochs.\n\n### ROC analysis\n\nWe used the receiver operating characteristic curve (ROC) to evaluate the separation between the distributions of observables from sloppy and stiff classes. Let $X_{sloppy}$ and $X_{stiff}$ be the sloppy variables, that\u00a0is those variables with associated sensitivity ($s$) lower than the median $s$, and the stiff variables, that\u00a0is those variables with associated sensitivity ($s$) higher than the median $s$, respectively. The ROC curve, $f(c)$, is build by plotting the probability of $P(X_{sloppy}>c)$ against the probability of $P(X_{stiff}>c)$, for each all $c$. The area under the ROC curve (AUC) is a measure of separation between $P(X_{sloppy})$ and $P(X_{stiff})$, and it is given by:\n\n$$\nAUC=\u00a0\\intf(c)dc.\n$$\n\nAUC ranges between 0 and 1, with AUC = 0 if $P(X_{sloppy})$ and $P(X_{stiff})$ are completely separated and $X_{sloppy}>X_{stiff}$, AUC = 1 if $P(X_{sloppy})$ and $P(X_{stiff})$ are completely separated and $X_{stiff}>X_{sloppy}$, and AUC = 0.5 if $P(X_{sloppy})$ and $P(X_{stiff})$ are undistinguishable. We used a permutation test (1000 re-samples), in which observables and classes were randomly associated, to assess AUC values that were significantly different from 0.5.\n\n### Stationary surrogates\n\nTo construct the stationary surrogates we first randomly selected a reference epoch $t$. Second, we generated binary data using the MEM estimated from the spiking data at this reference epoch, that\u00a0isusing parameters $\u03a9(t)$, through Monte Carlo simulations of the model to obtain 5000 binary patterns. Third, we repeated the Monte Carlo simulations $N_{E}$ times. Finally, for each of the $N_{E}$ pieces of surrogate data, we estimated new MEM parameters, $\u03a9^{\u2032}$, using gradient descend, and we calculated the corresponding Fisher Information Matrix (FIM) using 500,000 Monte Carlo steps as described above. By construction, the obtained surrogate data were stationary and had the same length of the original spiking data. Thus, parameter fluctuations in the surrogate data were only due to model estimation errors.\n",
+      "created_at": "2025-12-02T15:50:40.843560Z"
+    },
+    {
+      "id": "213bc925-bd78-4278-9c2b-91e47ce80fb6",
+      "submission_id": "00853ec2-3260-48f3-8407-abfa84a33b4a",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Brice Bathellier, CNRS France\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.53268.sa1](https://doi.org/10.7554/eLife.53268.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nThis study shows that auditory cortex dynamics can be decomposed into a small set of critical dimensions and a set of dimensions that rather account for small variations of the dynamics. In addition, remarkably, critical dimensions are not shared between spontaneous and evoked activity, suggesting that the two types of activity come from different processes. This is an exciting result that should motivate important refinements in current models of auditory cortex dynamics.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Cortical state transitions and stimulus response evolve along stiff and sloppy parameter dimensions, respectively\" for consideration by eLife. Your article has been reviewed by three peer reviewers, including Brice Bathellier as the Reviewing Editor and Reviewer #1, and the evaluation has been overseen by Michael Frank as the Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Matthias H. Hennig (Reviewer #2); Mark D Humphries (Reviewer #3).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThis paper uses model-based analysis of extracellular recordings from the rat auditory cortex to provide evidence for the hypothesis that the stability of the population in cortical networks depends on a small number of neurons with highly sensitive parameters, while parameters associated with the majority of neurons are insensitive to changes. Moreover, the authors show that transitions between desynchronised and synchronised states are associated with changes in the sensitive parameters, while during sensory stimulation this is state-dependent. Finally, it is shown that neurons with sensitive parameters have hub-like properties in the network.\n\nOverall these are very interesting and in fact surprising results. The paper is well written and presented, but a few complementary analyses/clarifications are needed to make the important but complex message of this study more accessible and convincing.\n\nEssential revisions:\n\n1) The central conclusions in this paper are based on analysis of the Fisher information matrix (FIM) for pairwise maximum entropy models fit to binarised multi-neuron patterns. One possible caveat here is that the models were fit on relatively small data sets, which could affect the analysis downstream as the insensitive directions in the FIM could just reflect poor parameter estimates. The around 5000 patterns used here to fit the model are very few, and estimates of correlations used to constrain the model may be poor, given cortical activity is quite sparse. Possible biases should be assessed more thoroughly. In particular it is important to check for the impact of estimation errors given the short epochs. One key measure to check is the sensitivity measure, as this defines both core results (spontaneous = stiff; evoked = sloppy). The authors should provide an estimate of the variation in \"sensitivity\" as a function of model estimation error.\n\nMost importantly:\n\n\u2013 Figure 5E-G, check for how correlations between sensitivity and \"state\" change with errors in model estimation.\n\n\u2013 Figure 6D-E, check for how correlations between sensitivity and the modulation index change with errors in model estimation.\n\n2) It is hard to follow what is 'stiff' and what is 'sloppy', as in most of the cases the frontier between the two categories is obviously not sharp. It is clear that there are two ends of the parameter distribution (one end is more stiff and the other more sloppy), but in between, there are many intermediates. The authors must be more explicit about this and make more precise wherever possible what they mean when they define these two categories.\n\n\u2013 In Figure 4B they should display the boundary between stiff and sloppy with a shading or a vertical line. Also, there is a kink in the eigenvalue curve. Is it related to model/population size? Are the eigenvalues beyond this kink relevant?\n\n\u2013 It should be explained why stiffness of individual neurons is chosen to be their contribution to the first eigenvalue only. Are further eigenvalues not relevant?\n\n\u2013 Together it should be clarified in a dedicated paragraph that stiff and sloppy parameters/neurons are two parts of a wide distribution.\n",
+      "created_at": "2025-12-02T15:50:40.843560Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T15:50:40.843560Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T15:50:40.843560Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "8889992e-0421-4ba4-b8e7-073c0920be05",
+      "content_id": "61fc4287-36a7-498f-9386-a6d88a021a8f",
+      "claim_id": "C1",
+      "claim": "Spontaneous neuronal activity presents sloppiness, where collective behavior is strongly determined by a small number of parameter combinations (stiff dimensions) while being insensitive to many others (sloppy dimensions).",
+      "claim_type": "EXPLICIT",
+      "source": "Previous research showed that spontaneous neuronal activity presents sloppiness: the collective behavior is strongly determined by a small number of parameter combinations, defined as 'stiff' dimensions, while it is insensitive to many others ('sloppy' dimensions).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to previous research and is a foundational premise of the study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:50:40.843560Z"
+    },
+    {
+      "id": "d4c83dd8-555b-4d64-ab14-1fbbdf8ceae0",
+      "content_id": "61fc4287-36a7-498f-9386-a6d88a021a8f",
+      "claim_id": "C2",
+      "claim": "Cortical state transitions are determined by changes in stiff parameters associated with the activity of a core of neurons with low responses to stimuli and high centrality within the observed network.",
+      "claim_type": "EXPLICIT",
+      "source": "We showed that cortical state transitions were determined by changes in stiff parameters associated with the activity of a core of neurons with low responses to stimuli and high centrality within the observed network.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study based on experimental data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:50:40.843560Z"
+    },
+    {
+      "id": "fc2b76b8-0e0e-47fb-9e40-7199ac1b7174",
+      "content_id": "61fc4287-36a7-498f-9386-a6d88a021a8f",
+      "claim_id": "C3",
+      "claim": "Stimulus-evoked responses evolve along sloppy dimensions associated with the activity of neurons with low centrality and displaying large ongoing and stimulus-evoked fluctuations without affecting the integrity of the network.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, stimulus-evoked responses evolved along sloppy dimensions associated with the activity of neurons with low centrality and displaying large ongoing and stimulus-evoked fluctuations without affecting the integrity of the network.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study based on experimental data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:50:40.843560Z"
+    },
+    {
+      "id": "ff787a1b-5e8e-4165-925b-7fa561eb3f9c",
+      "content_id": "61fc4287-36a7-498f-9386-a6d88a021a8f",
+      "claim_id": "C4",
+      "claim": "Sloppiness is a property of complex models exhibiting large parameter uncertainty when fit to data, meaning that different combinations of parameters lead to similar system behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "In general, sloppiness is a property of complex models exhibiting large parameter uncertainty when fit to data, meaning that different combinations of parameters lead to a similar system behavior, while changes in some few critical parameters, called stiff parameters, significantly modifies it.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definition based on established scientific knowledge and cited literature.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:50:40.843560Z"
+    },
+    {
+      "id": "9e53991e-90ac-492b-b263-f1080f9f8ede",
+      "content_id": "61fc4287-36a7-498f-9386-a6d88a021a8f",
+      "claim_id": "C5",
+      "claim": "Changes in stiff parameters significantly modify system behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "In general, sloppiness is a property of complex models exhibiting large parameter uncertainty when fit to data, meaning that different combinations of parameters lead to a similar system behavior, while changes in some few critical parameters, called stiff parameters, significantly modifies it.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definition based on established scientific knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:50:40.843560Z"
+    },
+    {
+      "id": "d6b5cc1f-bdec-4b20-90c0-e7a9ad024e88",
+      "content_id": "61fc4287-36a7-498f-9386-a6d88a021a8f",
+      "claim_id": "C6",
+      "claim": "The spontaneous activity of neural circuits presents sloppiness both in vitro and in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently, it has been shown that the spontaneous activity of neural circuits presents sloppiness both in vitro and in vivo (Panas et al., 2015), suggesting that collective activity is stabilized by a subset of highly active and stable neurons, while the activity and co-activity of the remaining neurons present larger spontaneous fluctuations without strongly affecting the collective statistics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Panas et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:50:40.843560Z"
+    },
+    {
+      "id": "3b84f4e7-0156-4c49-bc16-c3d12d3480ca",
+      "content_id": "61fc4287-36a7-498f-9386-a6d88a021a8f",
+      "claim_id": "C7",
+      "claim": "Collective activity is stabilized by a subset of highly active and stable neurons, while the activity and co-activity of the remaining neurons present larger spontaneous fluctuations without strongly affecting the collective statistics.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently, it has been shown that the spontaneous activity of neural circuits presents sloppiness both in vitro and in vivo (Panas et al., 2015), suggesting that collective activity is stabilized by a subset of highly active and stable neurons, while the activity and co-activity of the remaining neurons present larger spontaneous fluctuations without strongly affecting the collective statistics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a suggestion based on cited research.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:50:40.843560Z"
+    },
+    {
+      "id": "588cc93d-9081-4150-8f71-1b0ab7d069b5",
+      "content_id": "61fc4287-36a7-498f-9386-a6d88a021a8f",
+      "claim_id": "C8",
+      "claim": "Spontaneous cortical activity transits through different synchronized and desynchronized cortical states.",
+      "claim_type": "EXPLICIT",
+      "source": "However, this view is challenged by extensive research showing that the spontaneous cortical activity transits through different synchronized and desynchronized cortical states (Marguet and Harris, 2011; Harris and Thiele, 2011; Luczak et al., 2013; Pachitariu et al., 2015) that represent statistically different collective behaviors (Hahn et al., 2017) with different information processing capabilities (Pachitariu et al., 2015; Engel et al., 2016; Beaman et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:50:40.843560Z"
+    },
+    {
+      "id": "4344dc29-2985-46ae-aefd-d71eab4cec88",
+      "content_id": "61fc4287-36a7-498f-9386-a6d88a021a8f",
+      "claim_id": "C9",
+      "claim": "Different synchronized and desynchronized cortical states represent statistically different collective behaviors.",
+      "claim_type": "EXPLICIT",
+      "source": "However, this view is challenged by extensive research showing that the spontaneous cortical activity transits through different synchronized and desynchronized cortical states (Marguet and Harris, 2011; Harris and Thiele, 2011; Luczak et al., 2013; Pachitariu et al., 2015) that represent statistically different collective behaviors (Hahn et al., 2017) with different information processing capabilities (Pachitariu et al., 2015; Engel et al., 2016; Beaman et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Hahn et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:50:40.843560Z"
+    },
+    {
+      "id": "92213344-8b5d-4aa5-9a69-3a66b40801d4",
+      "content_id": "61fc4287-36a7-498f-9386-a6d88a021a8f",
+      "claim_id": "C10",
+      "claim": "Different synchronized and desynchronized cortical states have different information processing capabilities.",
+      "claim_type": "EXPLICIT",
+      "source": "However, this view is challenged by extensive research showing that the spontaneous cortical activity transits through different synchronized and desynchronized cortical states (Marguet and Harris, 2011; Harris and Thiele, 2011; Luczak et al., 2013; Pachitariu et al., 2015) that represent statistically different collective behaviors (Hahn et al., 2017) with different information processing capabilities (Pachitariu et al., 2015; Engel et al., 2016; Beaman et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Pachitariu et al., 2015; Engel et al., 2016; Beaman et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:50:40.843560Z"
+    },
+    {
+      "id": "10190459-ed8e-4fdf-a303-264dbbc39750",
+      "content_id": "61fc4287-36a7-498f-9386-a6d88a021a8f",
+      "claim_id": "C11",
+      "claim": "Neuronal spiking activity was recorded in the primary auditory cortex (A1) of six anesthetized rats.",
+      "claim_type": "EXPLICIT",
+      "source": "To answer these questions, we recorded the neuronal spiking activity in the primary auditory cortex (A1) of six anesthetized rats.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental setup and data collection.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:50:40.843560Z"
+    },
+    {
+      "id": "6082bcf3-ce5f-4b32-a288-f0a1b31b3b90",
+      "content_id": "61fc4287-36a7-498f-9386-a6d88a021a8f",
+      "claim_id": "C12",
+      "claim": "The joint activity of groups of neurons was analyzed while the cortex spontaneously transited through different synchronized and desynchronized cortical states and intermittently received external acoustic stimuli.",
+      "claim_type": "EXPLICIT",
+      "source": "We analyzed the joint activity of groups of neurons while the cortex spontaneously transited through different synchronized and desynchronized cortical states and intermittently received external acoustic stimuli.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental conditions during data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:50:40.843560Z"
+    },
+    {
+      "id": "beea1369-a3b7-40c0-9f29-9e626b76ba89",
+      "content_id": "61fc4287-36a7-498f-9386-a6d88a021a8f",
+      "claim_id": "C13",
+      "claim": "A statistical model was used to describe the joint spiking activity with a small number of parameters.",
+      "claim_type": "EXPLICIT",
+      "source": "We used a statistical model to describe the joint spiking activity with a small number of parameters.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the analytical method used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:50:40.843560Z"
+    },
+    {
+      "id": "3b313744-a104-44ac-979a-ac0130399856",
+      "content_id": "61fc4287-36a7-498f-9386-a6d88a021a8f",
+      "claim_id": "C14",
+      "claim": "The estimated parameters of neuronal ensemble activity presented sloppiness.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the estimated parameters of neuronal ensemble activity presented sloppiness and that sensory inputs and cortical state transitions evolved in different pathways in parameter space.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study based on data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:50:40.843560Z"
+    },
+    {
+      "id": "7403573f-ff24-41b2-8f61-ead701e2c41b",
+      "content_id": "61fc4287-36a7-498f-9386-a6d88a021a8f",
+      "claim_id": "C15",
+      "claim": "Sensory inputs and cortical state transitions evolved in different pathways in parameter space.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the estimated parameters of neuronal ensemble activity presented sloppiness and that sensory inputs and cortical state transitions evolved in different pathways in parameter space.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study based on data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:50:40.843560Z"
+    },
+    {
+      "id": "bca710d7-0e71-4a3c-b098-34258cd7d004",
+      "content_id": "61fc4287-36a7-498f-9386-a6d88a021a8f",
+      "claim_id": "C16",
+      "claim": "Cortical state transitions evolve along stiff dimensions.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, we found that cortical state transitions evolve along stiff dimensions, whereas sensory-evoked activity evolves along sloppy dimensions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study based on data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:50:40.843560Z"
+    },
+    {
+      "id": "d8bdaadf-2acf-4657-85f4-4d229537233d",
+      "content_id": "61fc4287-36a7-498f-9386-a6d88a021a8f",
+      "claim_id": "C17",
+      "claim": "Sensory-evoked activity evolves along sloppy dimensions.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, we found that cortical state transitions evolve along stiff dimensions, whereas sensory-evoked activity evolves along sloppy dimensions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study based on data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:50:40.843560Z"
+    },
+    {
+      "id": "b7194e1a-9c8d-4a88-a4ca-16c1ac1db961",
+      "content_id": "61fc4287-36a7-498f-9386-a6d88a021a8f",
+      "claim_id": "C18",
+      "claim": "Stiff parameters are related to the activity and co-activity of neurons with high centrality within the functional network of the recorded neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we showed that stiff parameters are related to the activity and co-activity of neurons with high centrality within the functional network of the recorded neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study based on data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:50:40.843560Z"
+    },
+    {
+      "id": "c2cf15cc-2e28-45b6-bd4a-e431663b6476",
+      "content_id": "61fc4287-36a7-498f-9386-a6d88a021a8f",
+      "claim_id": "C20",
+      "claim": "Acoustic 'clicks' were 5-ms square pulses with inter-stimulus interval of 2.5 or 3.5 s.",
+      "claim_type": "EXPLICIT",
+      "source": "We analyzed the data during spontaneous activity and in response to acoustic 'clicks' (5-ms square pulses; inter-stimulus interval, 2.5 or 3.5 s).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the stimulus parameters used in the experiment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:50:40.843560Z"
+    },
+    {
+      "id": "1b762235-dd46-4a06-aad9-058deb2269ef",
+      "content_id": "61fc4287-36a7-498f-9386-a6d88a021a8f",
+      "claim_id": "C22",
+      "claim": "Spontaneous activity was defined as the activity during 1.5-s intervals preceding each stimulus.",
+      "claim_type": "EXPLICIT",
+      "source": "Within each 100-s epoch the data was separated into spontaneous activity, that is the activity during 1.5-s intervals preceding each stimulus (i.e., 18\u201343.5 s of spontaneous activity in total for each epoch), and stimulus-evoked activity, that is the activity right after the stimulus onset (Figure 1A\u2013B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This defines the operational definition of spontaneous activity used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:50:40.843560Z"
+    },
+    {
+      "id": "b78c6205-6c95-4a89-8e34-6bfc9e60b9ec",
+      "content_id": "61fc4287-36a7-498f-9386-a6d88a021a8f",
+      "claim_id": "C23",
+      "claim": "Stimulus-evoked activity was defined as the activity right after the stimulus onset.",
+      "claim_type": "EXPLICIT",
+      "source": "Within each 100-s epoch the data was separated into spontaneous activity, that is the activity during 1.5-s intervals preceding each stimulus (i.e., 18\u201343.5 s of spontaneous activity in total for each epoch), and stimulus-evoked activity, that is the activity right after the stimulus onset (Figure 1A\u2013B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This defines the operational definition of stimulus-evoked activity used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:50:40.843560Z"
+    },
+    {
+      "id": "6e178cd4-0a18-48df-b71e-5b9d9a710a82",
+      "content_id": "61fc4287-36a7-498f-9386-a6d88a021a8f",
+      "claim_id": "C24",
+      "claim": "Time was discretized in bins of dt = 10 ms for the maximum entropy model.",
+      "claim_type": "EXPLICIT",
+      "source": "To fit the model, time was discretized in bins of dt = 10 ms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a methodological parameter of the analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:50:40.843560Z"
+    },
+    {
+      "id": "83bd63f6-1b55-479f-9163-4b946bd18b79",
+      "content_id": "61fc4287-36a7-498f-9386-a6d88a021a8f",
+      "claim_id": "C39",
+      "claim": "The model parameters substantially changed over time.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, the model parameters substantially changed over time, with a rapidly decaying similarity (Figure 3C, orange and purple traces).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the temporal analysis, supported by Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:50:40.843560Z"
+    },
+    {
+      "id": "498edae7-0489-4c52-9762-c28cd02818ac",
+      "content_id": "61fc4287-36a7-498f-9386-a6d88a021a8f",
+      "claim_id": "C40",
+      "claim": "The FIM had the highest stability across time, compared to the data firing rates and correlations and the model parameters.",
+      "claim_type": "EXPLICIT",
+      "source": "We first notice that the FIM had the highest stability across time, compared to the data firing rates and correlations and the model parameters (Figure 3C, blue trace).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the temporal analysis, supported by Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:50:40.843560Z"
+    },
+    {
+      "id": "51383958-46fe-4025-a0c6-4cb4993a4214",
+      "content_id": "61fc4287-36a7-498f-9386-a6d88a021a8f",
+      "claim_id": "C42",
+      "claim": "The sensitivity of the model parameters remained relatively stable despite substantial changes in firing rates, correlations, collective activity and the model parameters themselves.",
+      "claim_type": "EXPLICIT",
+      "source": "Altogether these results show that the sensitivity of the model parameters remained relatively stable despite substantial changes in firing rates, correlations, collective activity and the model parameters themselves.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion from the temporal analysis results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:50:40.843560Z"
+    },
+    {
+      "id": "f1e54280-3b18-40f8-9260-4681444aa74b",
+      "content_id": "61fc4287-36a7-498f-9386-a6d88a021a8f",
+      "claim_id": "C43",
+      "claim": "Most elements of the FIM had near-zero values indicating that most of the parameters had a small effect on the model log-likelihood.",
+      "claim_type": "EXPLICIT",
+      "source": "First, we noted that most elements of the FIM had near-zero values (Figure 4A) indicating that most of the parameters had a small effect on the model log-likelihood.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the FIM analysis, supported by Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:50:40.843560Z"
+    },
+    {
+      "id": "07beb185-f6fd-4bec-99e1-3e83c8ba903a",
+      "content_id": "61fc4287-36a7-498f-9386-a6d88a021a8f",
+      "claim_id": "C44",
+      "claim": "A small fraction of FIM elements had values strongly different from zero as revealed by the heavy tail of the distribution of FIM values.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, a small fraction of elements had values strongly different from zero as revealed by the heavy tail of the distribution of FIM values (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the FIM analysis, supported by Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:50:40.843560Z"
+    },
+    {
+      "id": "0048ab77-0ed6-4616-a334-7c773bb36ecc",
+      "content_id": "61fc4287-36a7-498f-9386-a6d88a021a8f",
+      "claim_id": "C45",
+      "claim": "Most of the FIM eigenvalues were small, corresponding to combinations of parameters that had little effect on model behavior (sloppy dimensions).",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that, except for some few eigenvalues, most of the FIM eigenvalues were small, corresponding to combinations of parameters that had little effect on model behavior. These unimportant parameter combinations defined the sloppy dimensions of the model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the eigenvalue decomposition of the FIM, shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:50:40.843560Z"
+    },
+    {
+      "id": "58c0f559-42cb-480f-a7fc-07c66b848a5a",
+      "content_id": "61fc4287-36a7-498f-9386-a6d88a021a8f",
+      "claim_id": "C46",
+      "claim": "The few eigenvectors with large eigenvalues defined the stiff parameter dimensions along which the model behavior was strongly affected.",
+      "claim_type": "EXPLICIT",
+      "source": "The few eigenvectors with large eigenvalues defined the stiff parameter dimensions along which the model behavior was strongly affected.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the eigenvalue decomposition of the FIM, shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:50:40.843560Z"
+    },
+    {
+      "id": "9da074dd-d623-437f-b809-437d7c1484c5",
+      "content_id": "61fc4287-36a7-498f-9386-a6d88a021a8f",
+      "claim_id": "C47",
+      "claim": "The projection variance increased as a function of the eigenvector's rank for all datasets.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the projection variance increased as a function of the eigenvector's rank for all datasets (Figure 4E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the parameter projection analysis, supported by Figure 4E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:50:40.843560Z"
+    },
+    {
+      "id": "004e850c-5e35-4ebc-9cc5-bffcb7e69454",
+      "content_id": "61fc4287-36a7-498f-9386-a6d88a021a8f",
+      "claim_id": "C49",
+      "claim": "Parameter fluctuations were not fully explained by estimation errors.",
+      "claim_type": "EXPLICIT",
+      "source": "Using stationary surrogate data, we controlled that these parameter fluctuations were not fully explained by estimation errors and, furthermore, that parameter fluctuations along sloppy dimensions were those that deviated the most from the stationary case (see Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the surrogate data analysis, supported by Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:50:40.843560Z"
+    },
+    {
+      "id": "dea10183-40b5-43d9-b304-b0fd0999d410",
+      "content_id": "61fc4287-36a7-498f-9386-a6d88a021a8f",
+      "claim_id": "C50",
+      "claim": "Parameter fluctuations along sloppy dimensions were those that deviated the most from the stationary case.",
+      "claim_type": "EXPLICIT",
+      "source": "Using stationary surrogate data, we controlled that these parameter fluctuations were not fully explained by estimation errors and, furthermore, that parameter fluctuations along sloppy dimensions were those that deviated the most from the stationary case (see Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the surrogate data analysis, supported by Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:50:40.843560Z"
+    },
+    {
+      "id": "8c1e4b2a-4cdd-4e62-b5c3-88655449dced",
+      "content_id": "61fc4287-36a7-498f-9386-a6d88a021a8f",
+      "claim_id": "C51",
+      "claim": "The projection variance into the stiff dimensions, albeit small, was not zero.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, we noted that the projection variance into the stiff dimensions, albeit small, was not zero.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the parameter projection analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:50:40.843560Z"
+    },
+    {
+      "id": "ba20f495-efbe-4b74-8c56-583e283cc851",
+      "content_id": "61fc4287-36a7-498f-9386-a6d88a021a8f",
+      "claim_id": "C52",
+      "claim": "The model also evolved along parameter dimensions that had a strong impact on the collective activity.",
+      "claim_type": "EXPLICIT",
+      "source": "This means that the model also evolved along parameter dimensions that had a strong impact on the collective activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the observation that projection variance into stiff dimensions was not zero.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:50:40.843560Z"
+    },
+    {
+      "id": "e5d72d60-16b9-41e9-8fea-3f53952b1242",
+      "content_id": "61fc4287-36a7-498f-9386-a6d88a021a8f",
+      "claim_id": "C53",
+      "claim": "Changes in collective behavior, associated to changes in stiff parameters, were related to changes in cortical state.",
+      "claim_type": "EXPLICIT",
+      "source": "We hypothesized that changes in collective behavior, associated to changes in stiff parameters, were related to changes in cortical state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis proposed by the authors based on their observations.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:50:40.843560Z"
+    },
+    {
+      "id": "021e11f6-0cb8-40c1-9bf6-34d265c821e6",
+      "content_id": "61fc4287-36a7-498f-9386-a6d88a021a8f",
+      "claim_id": "C55",
+      "claim": "Low and high values of silence density were associated to desynchronized and synchronized cortical states, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "During the course of the experiment, we observed large fluctuations in silence density, with low and high values associated to desynchronized and synchronized cortical states, respectively (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the cortical state analysis, supported by Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:50:40.843560Z"
+    },
+    {
+      "id": "5bf1dac8-73c5-457e-8a0e-8e88a4d65e5a",
+      "content_id": "61fc4287-36a7-498f-9386-a6d88a021a8f",
+      "claim_id": "C57",
+      "claim": "Changes in collective behavior correlated with changes in cortical state.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, changes in collective behavior correlated with changes in cortical state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from the correlation analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:50:40.843560Z"
+    },
+    {
+      "id": "b65759e2-f0fa-4e2d-8424-703d4c95e301",
+      "content_id": "61fc4287-36a7-498f-9386-a6d88a021a8f",
+      "claim_id": "C59",
+      "claim": "The observables that correlated more with the cortical state were those with the highest associated sensitivity.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the observables that correlated more with the cortical state were those with the highest associated sensitivity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from the correlation analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:50:40.843560Z"
+    },
+    {
+      "id": "c4131ec9-04ba-489c-85a1-d4296f6f2a1d",
+      "content_id": "61fc4287-36a7-498f-9386-a6d88a021a8f",
+      "claim_id": "C60",
+      "claim": "Stiff variables were significantly more correlated with the cortical state than the sloppy variables (p<0.01 for all datasets, paired t-test).",
+      "claim_type": "EXPLICIT",
+      "source": "We found that stiff variables were significantly more correlated with the cortical state than the sloppy variables (p<0.01 for all datasets, paired t-test; Figure 5G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from statistical comparison, supported by Figure 5G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:50:40.843560Z"
+    },
+    {
+      "id": "6ed69583-ef02-4b44-924d-86c3146b90c4",
+      "content_id": "61fc4287-36a7-498f-9386-a6d88a021a8f",
+      "claim_id": "C61",
+      "claim": "Neuronal activity and co-activity preferentially evolved along sensitive (stiff) parameter dimensions during cortical state transitions.",
+      "claim_type": "EXPLICIT",
+      "source": "Altogether, these results indicate that neuronal activity and co-activity preferentially evolved along sensitive (stiff) parameter dimensions during cortical state transitions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion from the cortical state analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:50:40.843560Z"
+    },
+    {
+      "id": "a8fc0abe-e7db-4848-8255-69be09408538",
+      "content_id": "61fc4287-36a7-498f-9386-a6d88a021a8f",
+      "claim_id": "C62",
+      "claim": "Evoked responses were larger for sloppy neurons than for stiff neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that evoked responses (which could be increased or decreased with respect to pre-stimulus baseline firing rate) were larger for sloppy neurons than for stiff neurons (Figure 6B\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the stimulus response analysis, supported by Figures 6B-C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:50:40.843560Z"
+    },
+    {
+      "id": "38a8a42f-6661-4fcb-b1df-bae0703d1c82",
+      "content_id": "61fc4287-36a7-498f-9386-a6d88a021a8f",
+      "claim_id": "C63",
+      "claim": "The more responsive neurons were those with the lowest associated sensitivity.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the more responsive neurons were those with the lowest associated sensitivity (Figure 6D\u2013E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the modulation index analysis, supported by Figures 6D-E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:50:40.843560Z"
+    },
+    {
+      "id": "6b2bdb41-fcc7-4e76-b37a-e155e34b1567",
+      "content_id": "61fc4287-36a7-498f-9386-a6d88a021a8f",
+      "claim_id": "C64",
+      "claim": "Stimulus-evoked neuronal activity evolved mostly along sloppy dimensions.",
+      "claim_type": "EXPLICIT",
+      "source": "This indicates that stimulus-evoked neuronal activity evolved mostly along sloppy dimensions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from the modulation index analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:50:40.843560Z"
+    },
+    {
+      "id": "4aa8dfed-b3f4-4fd6-befb-34bee93faec0",
+      "content_id": "61fc4287-36a7-498f-9386-a6d88a021a8f",
+      "claim_id": "C65",
+      "claim": "\u0394MI was maximal during desynchronized activity, and minimal during synchronized activity.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that \u0394MI was maximal during desynchronized activity, and minimal during synchronized activity (Figure 6F, see also Figure 6\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the state-dependent analysis, supported by Figure 6F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:50:40.843560Z"
+    },
+    {
+      "id": "1bbde7eb-af04-4e4d-976f-925abee591bb",
+      "content_id": "61fc4287-36a7-498f-9386-a6d88a021a8f",
+      "claim_id": "C66",
+      "claim": "The cortical activity during stimulus response evolved predominantly along sloppy dimensions for the desynchronized cortical state, while, in the synchronized state, the dominance of sloppy fluctuations was reduced, and stiff fluctuations became comparable.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the cortical activity during stimulus response evolved predominantly along sloppy dimensions for the desynchronized cortical state, while, in the synchronized state, the dominance of sloppy fluctuations was reduced, and stiff fluctuations became comparable.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from the state-dependent analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:50:40.843560Z"
+    },
+    {
+      "id": "8d86cbb6-e5df-451f-929a-270eb801928c",
+      "content_id": "61fc4287-36a7-498f-9386-a6d88a021a8f",
+      "claim_id": "C67",
+      "claim": "Stiff units were significantly more active than sloppy units (AUC = 0.961\u20130.998, p < 0.001, for all rats).",
+      "claim_type": "EXPLICIT",
+      "source": "With this dichotomization, we found that stiff units were significantly more active than sloppy units (Figure 7A). We quantified this by performing receiver operating characteristic (ROC) analysis and used the area under the ROC curve (AUC) as a measure of how well the firing rates distributions of the two classes were separated (AUC = 0.961\u20130.998, p < 0.001, for all rats; Figure 7G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the ROC analysis, supported by Figures 7A and 7G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:50:40.843560Z"
+    },
+    {
+      "id": "82ae7583-ad09-4ecd-88fd-c3cacdb274de",
+      "content_id": "61fc4287-36a7-498f-9386-a6d88a021a8f",
+      "claim_id": "C68",
+      "claim": "Stiff neurons were significantly more correlated among them than sloppy neurons (AUC = 0.615\u20130.932, p < 0.001, for all rats).",
+      "claim_type": "EXPLICIT",
+      "source": "Stiff neurons were also significantly more correlated among them than sloppy neurons (AUC = 0.615\u20130.932, p < 0.001, for all rats; Figure 7B,G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the ROC analysis, supported by Figures 7B and 7G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:50:40.843560Z"
+    },
+    {
+      "id": "d719cec9-a7b7-4421-97f3-08f44b54ba0d",
+      "content_id": "61fc4287-36a7-498f-9386-a6d88a021a8f",
+      "claim_id": "C70",
+      "claim": "Stiff neurons had significantly more centrality in the functional connectivity graph than sloppy neurons (AUC = 0.740\u20130.831, p<0.001, for all rats).",
+      "claim_type": "EXPLICIT",
+      "source": "We found that stiff neurons had significantly more centrality in the functional connectivity graph than sloppy neurons (AUC = 0.740\u20130.831, p<0.001, for all rats; Figure 7D,G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the betweenness centrality analysis, supported by Figures 7D and 7G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:50:40.843560Z"
+    },
+    {
+      "id": "7fff6df3-1dfe-4552-9ee5-b19a96c5c4ff",
+      "content_id": "61fc4287-36a7-498f-9386-a6d88a021a8f",
+      "claim_id": "C71",
+      "claim": "Stiff neurons were part of the core of the graph, while sloppy neurons were part of the graph periphery.",
+      "claim_type": "EXPLICIT",
+      "source": "This indicates that stiff neurons were part of the core of the graph, while sloppy neurons were part of the graph periphery, as clearly shown using graph visualization (Figure 7E; Fruchterman and Reingold, 1991).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an interpretation of the centrality analysis, supported by Figure 7E and cited visualization method.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:50:40.843560Z"
+    },
+    {
+      "id": "a62fc77c-81f0-4323-b325-862cb0de4d18",
+      "content_id": "61fc4287-36a7-498f-9386-a6d88a021a8f",
+      "claim_id": "C72",
+      "claim": "BC values were correlated with firing rates (correlation coefficient: 0.59 \u00b1 0.11).",
+      "claim_type": "EXPLICIT",
+      "source": "BC values were correlated with firing rates (correlation coefficient: 0.59 \u00b1 0.11), which could suggest that differences in BC between stiff and sloppy neurons were simply a consequence of differences in firing rates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from correlation analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:50:40.843560Z"
+    },
+    {
+      "id": "98702fa8-f9a1-43dc-b716-93ecea3ef9dc",
+      "content_id": "61fc4287-36a7-498f-9386-a6d88a021a8f",
+      "claim_id": "C73",
+      "claim": "Neither the structure of correlations nor the BC values could be trivially predicted by globally modulated firing rates but they were rather suggestive of functional interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "However, using surrogate data that preserved the observed firing rates and produced correlations through global modulations, we found that neither the structure of correlations nor the BC values could be trivially predicted by globally modulated firing rates but they were rather suggestive of functional interactions (see Appendix 1 and Appendix 1\u2014figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the surrogate data analysis, supported by Appendix 1 and Appendix 1\u2014figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:50:40.843560Z"
+    },
+    {
+      "id": "353271a3-57c6-4157-ad05-2909bef83c8b",
+      "content_id": "61fc4287-36a7-498f-9386-a6d88a021a8f",
+      "claim_id": "C74",
+      "claim": "Different firing rates, different correlations and BC values were supplementary features of stiff and sloppy neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, in addition to different firing rates, different correlations and BC values were supplementary features of stiff and sloppy neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from the analysis of neuron properties.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:50:40.843560Z"
+    },
+    {
+      "id": "63f60c17-3091-4082-a126-c1a4ab7b97ec",
+      "content_id": "61fc4287-36a7-498f-9386-a6d88a021a8f",
+      "claim_id": "C75",
+      "claim": "Stiff neurons were significantly more coupled to the population activity than sloppy neurons (AUC = 0.603\u20130.939, p < 0.001, for all rats).",
+      "claim_type": "EXPLICIT",
+      "source": "We found that stiff neurons were significantly more coupled to the population activity than sloppy neurons (AUC = 0.603\u20130.939, p < 0.001, for all rats; Figure 7F,G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the neuron-to-population coupling analysis, supported by Figures 7F and 7G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:50:40.843560Z"
+    },
+    {
+      "id": "97c37538-507f-4db9-aca2-5b417940de79",
+      "content_id": "61fc4287-36a7-498f-9386-a6d88a021a8f",
+      "claim_id": "C76",
+      "claim": "Stiff units were more active, more central, more coupled among them, and more coupled to the population activity than sloppy units.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, stiff units were more active, more central, more coupled among them, and more coupled to the population activity than sloppy units.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the findings about stiff vs. sloppy neuron properties.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:50:40.843560Z"
+    },
+    {
+      "id": "49e2609e-e8fb-44e8-9390-4164a84e665c",
+      "content_id": "61fc4287-36a7-498f-9386-a6d88a021a8f",
+      "claim_id": "C77",
+      "claim": "A stimulus can modulate the activity of a subset of sloppy neurons without entirely affecting the collective activity.",
+      "claim_type": "EXPLICIT",
+      "source": "It suggests that a stimulus can modulate the activity of a subset of sloppy neurons without entirely affecting the collective activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the functional implications of the findings.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:50:40.843560Z"
+    },
+    {
+      "id": "a11a21b0-61a0-4e26-87fe-7e1d1bcb2ff1",
+      "content_id": "61fc4287-36a7-498f-9386-a6d88a021a8f",
+      "claim_id": "C78",
+      "claim": "This could be an efficient functional architecture to encode sensory information without perturbing other ongoing or memory-stored processes.",
+      "claim_type": "EXPLICIT",
+      "source": "This could be an efficient functional architecture to encode sensory information without perturbing other ongoing or memory-stored processes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about the functional significance of the findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:50:40.843560Z"
+    },
+    {
+      "id": "6d41f958-e9a8-4ab0-ae8c-d88598678253",
+      "content_id": "61fc4287-36a7-498f-9386-a6d88a021a8f",
+      "claim_id": "C79",
+      "claim": "The integrity of the network is ensured by a core of highly active stiff neurons, which have strong functional connections among them, while topologically peripheral sloppy neurons can be largely modulated by external inputs.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this view and with previous studies (Margolis et al., 2012; Mizuseki and Buzs\u00e1ki, 2013; Panas et al., 2015), our results suggest that the integrity of the network is ensured by a core of highly active stiff neurons, which have strong functional connections among them (either through anatomical connections or common inputs), while topologically peripheral sloppy neurons (within the functional connectivity graph) can be largely modulated by external inputs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the findings, supported by citations to previous studies.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:50:40.843560Z"
+    },
+    {
+      "id": "8b79cf82-7f2c-4db6-895d-21fb4a845487",
+      "content_id": "61fc4287-36a7-498f-9386-a6d88a021a8f",
+      "claim_id": "C80",
+      "claim": "A similar sub-network of highly active, interconnected neurons has been recently identified in the mice neocortex.",
+      "claim_type": "EXPLICIT",
+      "source": "A similar sub-network of highly active, interconnected neurons has been recently identified in the mice neocortex (Yassin et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a citation to related findings in other research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:50:40.843560Z"
+    },
+    {
+      "id": "ec190cca-ed6c-4bdd-acb6-4d80c2396739",
+      "content_id": "61fc4287-36a7-498f-9386-a6d88a021a8f",
+      "claim_id": "C81",
+      "claim": "Sensory input was not required to drive these cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, sensory input was not required to drive these cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the properties of the neurons identified in the cited study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:50:40.843560Z"
+    },
+    {
+      "id": "8ae74aa2-148f-48cf-ac68-270a80e22081",
+      "content_id": "61fc4287-36a7-498f-9386-a6d88a021a8f",
+      "claim_id": "C82",
+      "claim": "The network periphery is more variable, evolvable, and plastic than the network core, while the network core facilitates system robustness.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies of complex systems have derived general principles of core/periphery network structures: the network periphery is more variable, evolvable, and plastic than the network core, while the network core facilitates system robustness (Kitano, 2004; Csermely et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general principle from complex systems theory, supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:50:40.843560Z"
+    },
+    {
+      "id": "0eeabbf8-9282-40d2-8fc4-e77ba9f6d7b4",
+      "content_id": "61fc4287-36a7-498f-9386-a6d88a021a8f",
+      "claim_id": "C83",
+      "claim": "Sloppy neurons could be more affected by synaptic plasticity, allowing for network reconfiguration without loss of stability.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, we hypothesize that sloppy neurons could also be more affected by synaptic plasticity, allowing for network reconfiguration without loss of stability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis proposed by the authors based on their findings and general principles.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:50:40.843560Z"
+    },
+    {
+      "id": "27763e6d-396f-40e8-a1a5-7525ec198917",
+      "content_id": "61fc4287-36a7-498f-9386-a6d88a021a8f",
+      "claim_id": "C84",
+      "claim": "Previous work on whole-brain fMRI has observed core stability and peripheral flexibility over the course of learning.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this, previous work on whole-brain fMRI has observed core stability and peripheral flexibility over the course of learning (Bassett et al., 2013), and recent analyses of functional networks from calcium imaging data recorded in mouse primary auditory cortex revealed a stable core and a variable periphery over time (Betzel et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a citation to related findings in other research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:50:40.843560Z"
+    },
+    {
+      "id": "2fdd91d2-09d5-4a56-8586-165f49c0b051",
+      "content_id": "61fc4287-36a7-498f-9386-a6d88a021a8f",
+      "claim_id": "C85",
+      "claim": "Recent analyses of functional networks from calcium imaging data recorded in mouse primary auditory cortex revealed a stable core and a variable periphery over time.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this, previous work on whole-brain fMRI has observed core stability and peripheral flexibility over the course of learning (Bassett et al., 2013), and recent analyses of functional networks from calcium imaging data recorded in mouse primary auditory cortex revealed a stable core and a variable periphery over time (Betzel et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a citation to related findings in other research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:50:40.843560Z"
+    },
+    {
+      "id": "574ca52e-f4f8-493b-85e8-56b5770f8473",
+      "content_id": "61fc4287-36a7-498f-9386-a6d88a021a8f",
+      "claim_id": "C86",
+      "claim": "Stimulus responses evolved more pronouncedly along sloppy dimensions in the desynchronized state, while in the synchronized state fluctuations along sloppy and stiff dimensions were comparable.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, we observed that stimulus responses evolved more pronouncedly along sloppy dimensions in the desynchronized state, while in the synchronized state fluctuations along sloppy and stiff dimensions were comparable (Figure 6F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the state-dependent analysis, supported by Figure 6F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:50:40.843560Z"
+    },
+    {
+      "id": "3b4e6bd9-c4e1-4eee-be39-ddad1f486034",
+      "content_id": "61fc4287-36a7-498f-9386-a6d88a021a8f",
+      "claim_id": "C87",
+      "claim": "Responses along sloppy dimensions provide information processing benefits.",
+      "claim_type": "EXPLICIT",
+      "source": "This supports the view that responses along sloppy dimensions provide information processing benefits, since previous studies have shown that auditory stimuli in rodents (Marguet and Harris, 2011; Pachitariu et al., 2015) and visual stimuli in both rats (Goard and Dan, 2009) and monkeys (Beaman et al., 2017) are better represented in the desynchronized state as compared to the synchronized state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation supported by citations to previous studies.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:50:40.843560Z"
+    },
+    {
+      "id": "56ea3646-3882-47e6-927b-e04f8f1927d3",
+      "content_id": "61fc4287-36a7-498f-9386-a6d88a021a8f",
+      "claim_id": "C88",
+      "claim": "Auditory stimuli in rodents are better represented in the desynchronized state as compared to the synchronized state.",
+      "claim_type": "EXPLICIT",
+      "source": "This supports the view that responses along sloppy dimensions provide information processing benefits, since previous studies have shown that auditory stimuli in rodents (Marguet and Harris, 2011; Pachitariu et al., 2015) and visual stimuli in both rats (Goard and Dan, 2009) and monkeys (Beaman et al., 2017) are better represented in the desynchronized state as compared to the synchronized state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a citation to previous research findings.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:50:40.843560Z"
+    },
+    {
+      "id": "9a0f13a7-b28d-4427-a9de-c21e0076d08f",
+      "content_id": "61fc4287-36a7-498f-9386-a6d88a021a8f",
+      "claim_id": "C89",
+      "claim": "Visual stimuli in both rats and monkeys are better represented in the desynchronized state as compared to the synchronized state.",
+      "claim_type": "EXPLICIT",
+      "source": "This supports the view that responses along sloppy dimensions provide information processing benefits, since previous studies have shown that auditory stimuli in rodents (Marguet and Harris, 2011; Pachitariu et al., 2015) and visual stimuli in both rats (Goard and Dan, 2009) and monkeys (Beaman et al., 2017) are better represented in the desynchronized state as compared to the synchronized state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a citation to previous research findings.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:50:40.843560Z"
+    },
+    {
+      "id": "700720a8-bd95-48c3-835a-6ceaedc1fbed",
+      "content_id": "61fc4287-36a7-498f-9386-a6d88a021a8f",
+      "claim_id": "C90",
+      "claim": "The properties of spontaneous and induced cortical dynamics observed in the present anesthetized condition are likely to be relevant also during wakefulness.",
+      "claim_type": "EXPLICIT",
+      "source": "The properties of spontaneous and induced cortical dynamics observed in the present anesthetized condition are likely to be relevant also during wakefulness.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about the generalizability of the findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:50:40.843560Z"
+    },
+    {
+      "id": "d83bf91e-fc9e-4819-a84a-926c46a034f9",
+      "content_id": "61fc4287-36a7-498f-9386-a6d88a021a8f",
+      "claim_id": "C91",
+      "claim": "Several studies reported the existence of synchronized cortical states during wakefulness.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, several studies reported the existence of synchronized cortical states during wakefulness (for review see Zagha and McCormick, 2014), and global fluctuation resembling transitions between up and down periods during alert or quiescent wakefulness (Petersen et al., 2003; Luczak et al., 2007; Poulet and Petersen, 2008; Zagha et al., 2013; Tan et al., 2014; Engel et al., 2016) or even during task engagement (Sachidhanandam et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a citation to previous research findings.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:50:40.843560Z"
+    },
+    {
+      "id": "5db15148-e969-429d-8b27-e3912664edce",
+      "content_id": "61fc4287-36a7-498f-9386-a6d88a021a8f",
+      "claim_id": "C92",
+      "claim": "Global fluctuation resembling transitions between up and down periods occur during alert or quiescent wakefulness.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, several studies reported the existence of synchronized cortical states during wakefulness (for review see Zagha and McCormick, 2014), and global fluctuation resembling transitions between up and down periods during alert or quiescent wakefulness (Petersen et al., 2003; Luczak et al., 2007; Poulet and Petersen, 2008; Zagha et al., 2013; Tan et al., 2014; Engel et al., 2016) or even during task engagement (Sachidhanandam et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a citation to previous research findings.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:50:40.843560Z"
+    },
+    {
+      "id": "4f48c2c4-ec3e-4ea3-9a3e-eef0a4c3e42c",
+      "content_id": "61fc4287-36a7-498f-9386-a6d88a021a8f",
+      "claim_id": "C93",
+      "claim": "Global fluctuation resembling transitions between up and down periods occur even during task engagement.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, several studies reported the existence of synchronized cortical states during wakefulness (for review see Zagha and McCormick, 2014), and global fluctuation resembling transitions between up and down periods during alert or quiescent wakefulness (Petersen et al., 2003; Luczak et al., 2007; Poulet and Petersen, 2008; Zagha et al., 2013; Tan et al., 2014; Engel et al., 2016) or even during task engagement (Sachidhanandam et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a citation to previous research findings.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:50:40.843560Z"
+    },
+    {
+      "id": "b2519912-1551-47db-8bf1-6d115d173e4b",
+      "content_id": "61fc4287-36a7-498f-9386-a6d88a021a8f",
+      "claim_id": "C94",
+      "claim": "Sloppiness has been observed in asynchronous spontaneous activity under light anesthesia.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, sloppiness has been observed in asynchronous spontaneous activity under light anesthesia (Panas et al., 2015), we thus expect to observe a similar stiff-sloppy architecture in the awake state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a citation to previous research findings.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:50:40.843560Z"
+    },
+    {
+      "id": "c44cfe36-cc80-42b8-8a0b-0ee9ae3c6f80",
+      "content_id": "61fc4287-36a7-498f-9386-a6d88a021a8f",
+      "claim_id": "C95",
+      "claim": "We expect to observe a similar stiff-sloppy architecture in the awake state.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, sloppiness has been observed in asynchronous spontaneous activity under light anesthesia (Panas et al., 2015), we thus expect to observe a similar stiff-sloppy architecture in the awake state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation based on previous findings.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:50:40.843560Z"
+    },
+    {
+      "id": "a6133122-efb5-4735-a4c4-8198c35787b0",
+      "content_id": "61fc4287-36a7-498f-9386-a6d88a021a8f",
+      "claim_id": "C96",
+      "claim": "The comparison of Fisher information matrices during wakefulness and during different levels of anesthesia could provide valuable information about the principles governing vigilance.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we believe that the comparison of Fisher information matrices during wakefulness and during different levels of anesthesia could provide valuable information about the principles governing vigilance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about future research directions.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:50:40.843560Z"
+    },
+    {
+      "id": "f2368bae-a23c-4637-8f51-9e0af880f92f",
+      "content_id": "61fc4287-36a7-498f-9386-a6d88a021a8f",
+      "claim_id": "C97",
+      "claim": "Stiff neurons were more linked to the observed neuronal population activity than sloppy neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that stiff neurons were more linked to the observed neuronal population activity than sloppy neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of findings about neuron properties.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:50:40.843560Z"
+    },
+    {
+      "id": "389417dd-62c7-4c58-a10f-720fe6f78037",
+      "content_id": "61fc4287-36a7-498f-9386-a6d88a021a8f",
+      "claim_id": "C98",
+      "claim": "Stiff neurons had higher centrality in the functional connectivity graph and higher coupling to the population activity than sloppy neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Stiff neurons had higher centrality in the functional connectivity graph and higher coupling to the population activity than sloppy neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of findings about neuron properties.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:50:40.843560Z"
+    },
+    {
+      "id": "b26589ee-a294-4eff-9a52-7bf8565aadb7",
+      "content_id": "61fc4287-36a7-498f-9386-a6d88a021a8f",
+      "claim_id": "C99",
+      "claim": "Neurons differ in their coupling to the population activity, with neurons that activate most often when many others are active (choristers) and neurons that tend to activate more frequently when others are silent (soloists).",
+      "claim_type": "EXPLICIT",
+      "source": "Previous research showed that neurons differ in their coupling to the population activity, with neurons that activate most often when many others are active, called 'choristers', and neurons that tend to activate more frequently when others are silent, called 'soloists' (Okun et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a citation to previous research findings.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:50:40.843560Z"
+    },
+    {
+      "id": "9c0ef29e-7d8e-4acc-bc39-e0a59de6ece8",
+      "content_id": "61fc4287-36a7-498f-9386-a6d88a021a8f",
+      "claim_id": "C100",
+      "claim": "Stiff and sloppy neurons are chorister and soloist neurons, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results suggest that stiff and sloppy neurons are chorister and soloist neurons, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the findings in relation to previous concepts.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:50:40.843560Z"
+    },
+    {
+      "id": "6f56c68f-b94c-45bd-870d-d32a16195c87",
+      "content_id": "61fc4287-36a7-498f-9386-a6d88a021a8f",
+      "claim_id": "C101",
+      "claim": "Changes in the activity of stiff/chorister neurons lead to changes in collective behavior (i.e., cortical states), while the activity of sloppy/soloist neurons can spontaneously fluctuate or respond to stimuli without strongly affecting the collective behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "In other words, changes in the activity of stiff/chorister neurons lead to changes in collective behavior (i.e., cortical states), while the activity of sloppy/soloist neurons can spontaneously fluctuate or respond to stimuli without strongly affecting the collective behavior.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the functional roles of different neuron types.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:50:40.843560Z"
+    },
+    {
+      "id": "67851a3b-560c-4cab-b27f-4472e55dce0f",
+      "content_id": "61fc4287-36a7-498f-9386-a6d88a021a8f",
+      "claim_id": "C102",
+      "claim": "The roles of stiff/chorister neurons and sloppy/soloist neurons are important to understand tradeoffs between responsiveness and stability of the network.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, we believe that the roles of stiff/chorister neurons and sloppy/soloist neurons are important to understand tradeoffs between responsiveness and stability of the network.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about the functional significance of the findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:50:40.843560Z"
+    },
+    {
+      "id": "8e893cc2-fbc0-4b71-80b2-5dd4965603cc",
+      "content_id": "61fc4287-36a7-498f-9386-a6d88a021a8f",
+      "claim_id": "C103",
+      "claim": "Fluctuations on stiff parameter dimensions were the weakest and were related to cortical state transitions, which time scale is in the order of tens of minutes.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, we here studied the evolution of neuronal activity on the time scale of hours and found that fluctuations on stiff parameter dimensions were the weakest and were related to cortical state transitions, which time scale is in the order of tens of minutes (Hahn et al., 2017; Mochol et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the temporal analysis, supported by citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:50:40.843560Z"
+    },
+    {
+      "id": "a3f643a9-3de7-4f37-83e1-b8cba4321055",
+      "content_id": "61fc4287-36a7-498f-9386-a6d88a021a8f",
+      "claim_id": "C104",
+      "claim": "Previous studies have reported prominent changes on neuronal activity and tuning properties over days, but with stable decoding performances of population activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies have reported prominent changes on neuronal activity and tuning properties over days, but with stable decoding performances of population activity (Chestek et al., 2007; Ziv et al., 2013; Panas et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a citation to previous research findings.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:50:40.843560Z"
+    },
+    {
+      "id": "29cea4c1-26ca-48f0-8e1d-3411da4cdb5c",
+      "content_id": "61fc4287-36a7-498f-9386-a6d88a021a8f",
+      "claim_id": "C105",
+      "claim": "Learning or adaptation to changing environments could lead to large changes in collective activity.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we hypothesize that learning or adaptation to changing environments could lead to large changes in collective activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis proposed by the authors.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:50:40.843560Z"
+    },
+    {
+      "id": "0238d4f8-cb47-42f7-a5ab-5b6c033e4ecb",
+      "content_id": "61fc4287-36a7-498f-9386-a6d88a021a8f",
+      "claim_id": "C106",
+      "claim": "Top-down regulation might be a mechanism to control the stabilizing network core.",
+      "claim_type": "EXPLICIT",
+      "source": "In that case, particular attention could be paid to the influence of high-order areas on the activity of subsets of stiff and sloppy neurons from sensory areas, as top-down regulation might be a mechanism to control the stabilizing network core.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about potential mechanisms.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:50:40.843560Z"
+    },
+    {
+      "id": "4ed369cb-f02d-4258-badf-ba4fd439e5d7",
+      "content_id": "61fc4287-36a7-498f-9386-a6d88a021a8f",
+      "claim_id": "C107",
+      "claim": "The existence of cortical neurons with different sensitivities (from sloppy to stiff neurons) provides new valuable architectural constrains for models of the brain state and its transitions.",
+      "claim_type": "EXPLICIT",
+      "source": "The existence of cortical neurons with different sensitivities (from sloppy to stiff neurons) provides new valuable architectural constrains for models of the brain state and its transitions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the implications of the findings for modeling.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:50:40.843560Z"
+    },
+    {
+      "id": "932cbf52-acaf-481a-b0c5-9b8ecb0f168c",
+      "content_id": "61fc4287-36a7-498f-9386-a6d88a021a8f",
+      "claim_id": "C108",
+      "claim": "Several past studies have modeled the synchronized brain dynamics as transitions between two attractors.",
+      "claim_type": "EXPLICIT",
+      "source": "Several past studies have modeled the synchronized brain dynamics as transitions between two attractors. Depending on the model specificity those transitions could be noise driven (Mejias et al., 2010; Mochol et al., 2015; Jercog et al., 2017) or caused by some fatigue mechanism (Compte et al., 2003; Hill and Tononi, 2005; Mattia and Sanchez-Vives, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a citation to previous modeling approaches.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:50:40.843560Z"
+    },
+    {
+      "id": "aff12f70-bb3a-442f-b808-3ae1a4d01d03",
+      "content_id": "61fc4287-36a7-498f-9386-a6d88a021a8f",
+      "claim_id": "C109",
+      "claim": "To make the system work in a desynchronized regime it was enough to increase the background input to the network.",
+      "claim_type": "EXPLICIT",
+      "source": "To make the system works in a desynchronized regime it was enough to increase the background input to the network (Bazhenov et al., 2002; Hill and Tononi, 2005; Curto et al., 2009; Destexhe, 2009; Mochol et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a citation to previous modeling approaches.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:50:40.843560Z"
+    },
+    {
+      "id": "93786f7d-0e0c-493b-8d41-2f25adec8b8a",
+      "content_id": "61fc4287-36a7-498f-9386-a6d88a021a8f",
+      "claim_id": "C110",
+      "claim": "The models could be extended to include a network core/periphery architecture, a non-homogeneous background input preferentially targeting the network core, and different stimulus spatial distributions.",
+      "claim_type": "EXPLICIT",
+      "source": "Given our present results, the models could be extended to include a network core/periphery architecture, a non-homogeneous background input preferentially targeting the network core, and different stimulus spatial distributions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a suggestion for future modeling work based on the findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:50:40.843560Z"
+    },
+    {
+      "id": "c5a43f30-6ae3-4879-ab64-d8852c155b00",
+      "content_id": "61fc4287-36a7-498f-9386-a6d88a021a8f",
+      "claim_id": "C111",
+      "claim": "Such a model would provide insights on the interplay between cortical state transitions and sensory representation.",
+      "claim_type": "EXPLICIT",
+      "source": "Such a model would provide insights on the interplay between cortical state transitions and sensory representation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about the potential value of proposed future models.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:50:40.843560Z"
+    },
+    {
+      "id": "22eef516-8ea0-4ebd-94a8-af66fa79a3ba",
+      "content_id": "61fc4287-36a7-498f-9386-a6d88a021a8f",
+      "claim_id": "C112",
+      "claim": "Our findings question the view that the mechanisms by which background and stimulus inputs impact the dynamics are similar.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, our findings question the view that the mechanisms by which background and stimulus inputs impact the dynamics are similar, as assumed in the simple bi-stable rate model (Mochol et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the implications of the findings for existing models.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:50:40.843560Z"
+    },
+    {
+      "id": "1e1689ec-ffd6-45d0-807b-70c8edeeab32",
+      "content_id": "61fc4287-36a7-498f-9386-a6d88a021a8f",
+      "claim_id": "C113",
+      "claim": "MEMs of small sizes can present departures from the observed distribution of summed activities and higher-order correlations.",
+      "claim_type": "EXPLICIT",
+      "source": "It is known that MEMs of small sizes can present departures from the observed distribution of summed activities and higher-order correlations (Tka\u010dik et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a citation to known limitations of the method.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:50:40.843560Z"
+    },
+    {
+      "id": "0897a9f7-5bfe-46b8-baff-2bc83af92feb",
+      "content_id": "61fc4287-36a7-498f-9386-a6d88a021a8f",
+      "claim_id": "C114",
+      "claim": "Recent advancements on learning algorithms allow to construct MEMs of \u223c100 neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent advancements on learning algorithms allow to construct MEMs of \u223c100 neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about recent methodological developments.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:50:40.843560Z"
+    },
+    {
+      "id": "9e94601a-1ecd-40d8-a3e8-fa0c39ed61cf",
+      "content_id": "61fc4287-36a7-498f-9386-a6d88a021a8f",
+      "claim_id": "C115",
+      "claim": "These models cannot be used in a time-resolved manner due to limited data in each epoch.",
+      "claim_type": "EXPLICIT",
+      "source": "However, these models cannot be used in a time-resolved manner, as we did here, due to limited data in each epoch.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an explanation of a methodological constraint.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:50:40.843560Z"
+    },
+    {
+      "id": "987876fb-7c05-464d-aa7a-6f4f380d6ade",
+      "content_id": "61fc4287-36a7-498f-9386-a6d88a021a8f",
+      "claim_id": "C116",
+      "claim": "Small model sizes are the cost to pay to study the evolution of collective activity over time in a meaningful time scale.",
+      "claim_type": "EXPLICIT",
+      "source": "Small model sizes are thus the cost to pay to study the evolution of collective activity over time in a meaningful time scale (i.e., the one of cortical state transitions).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a justification for the methodological choice made in the study.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:50:40.843560Z"
+    },
+    {
+      "id": "2f28c522-dfdf-4af9-9086-6025ced95283",
+      "content_id": "61fc4287-36a7-498f-9386-a6d88a021a8f",
+      "claim_id": "C117",
+      "claim": "All experiments were carried out in accordance with protocols approved by the Animal Ethics Committee of the University of Barcelona (Comit\u00e9 d'Experimentaci\u00f3 Animal, Universitat de Barcelona, Ref 116/13).",
+      "claim_type": "EXPLICIT",
+      "source": "All experiments were carried out in accordance with protocols approved by the Animal Ethics Committee of the University of Barcelona (Comit\u00e9 d'Experimentaci\u00f3 Animal, Universitat de Barcelona, Ref 116/13).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about ethical approval for the experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:50:40.843560Z"
+    },
+    {
+      "id": "668affee-aa8f-47c3-8d85-6e7ad4b3d194",
+      "content_id": "61fc4287-36a7-498f-9386-a6d88a021a8f",
+      "claim_id": "C118",
+      "claim": "Rats were anesthetized with urethane (1.5 g/kg body weight).",
+      "claim_type": "EXPLICIT",
+      "source": "Briefly, rats were anesthetized with urethane (1.5 g/kg body weight) and silicon microelectrodes (Neuronexus) with 32 or 64 channels were inserted in deep layers (depth, 600\u20131,200 \u03bcm) of the primary auditory cortex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:50:40.843560Z"
+    },
+    {
+      "id": "1dd27c04-5046-4611-91bc-ab41b3a39638",
+      "content_id": "61fc4287-36a7-498f-9386-a6d88a021a8f",
+      "claim_id": "C119",
+      "claim": "Silicon microelectrodes with 32 or 64 channels were inserted in deep layers (depth, 600\u20131,200 \u03bcm) of the primary auditory cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "Briefly, rats were anesthetized with urethane (1.5 g/kg body weight) and silicon microelectrodes (Neuronexus) with 32 or 64 channels were inserted in deep layers (depth, 600\u20131,200 \u03bcm) of the primary auditory cortex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:50:40.843560Z"
+    },
+    {
+      "id": "2f600ebc-3690-4ce1-a6c9-1cc67190f01b",
+      "content_id": "61fc4287-36a7-498f-9386-a6d88a021a8f",
+      "claim_id": "C120",
+      "claim": "The spiking activity from single units and multi-units was simultaneously recorded during spontaneous activity and in response to acoustic 'clicks'.",
+      "claim_type": "EXPLICIT",
+      "source": "The spiking activity from single units and multi-units (i.e., neurons that were not well isolated) was simultaneously recorded during spontaneous activity and in response to acoustic 'clicks' (5 ms square pulses; interstimulus interval, 2.5 or 3.5 s; see Table 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:50:40.843560Z"
+    },
+    {
+      "id": "9d261ac1-2b01-4d6e-a756-fcd1bb8c66f3",
+      "content_id": "61fc4287-36a7-498f-9386-a6d88a021a8f",
+      "claim_id": "C121",
+      "claim": "The spiking data is publicly available at https://github.com/adrianponce/Spont_stim_spiking_A1.",
+      "claim_type": "EXPLICIT",
+      "source": "The spiking data is publicly available here: https://github.com/adrianponce/Spont_stim_spiking_A1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This provides information about data availability.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:50:40.843560Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "611430fc-25ed-4787-af32-88a092d0a99a",
+      "content_id": "61fc4287-36a7-498f-9386-a6d88a021a8f",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The study recorded neuronal spiking activity from the primary auditory cortex of six urethane-anesthetized rats using silicon microelectrodes. Data were collected during spontaneous activity (1.5-s intervals preceding stimuli) and in response to acoustic clicks (5-ms square pulses), with time discretized into 10-ms bins for maximum entropy modeling. All experiments were ethically approved and data are publicly available.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11-C13, C20, C22-C24, and C117-C121 provide comprehensive methodological details about the experimental setup, data collection procedures, and ethical compliance. These claims are internally consistent and provide sufficient detail for reproducibility. The data availability statement (C121) enhances transparency.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:50:40.843560Z"
+    },
+    {
+      "id": "68e5fa47-7cc5-4877-aad2-ec473e18d692",
+      "content_id": "61fc4287-36a7-498f-9386-a6d88a021a8f",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Maximum entropy models of neuronal ensemble activity exhibited sloppiness, with most Fisher Information Matrix (FIM) eigenvalues being small (sloppy dimensions) and a few being large (stiff dimensions). Model parameters predominantly evolved along sloppy dimensions, though non-zero variance along stiff dimensions indicated that the model also evolved along parameter dimensions with strong impact on collective activity. Parameter fluctuations were not fully explained by estimation errors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C14-C15 and C43-C52 describe the core finding of sloppiness in the neural activity models. The analysis includes eigenvalue decomposition of the FIM (C45-C46), projection variance analysis (C47), and control analyses using stationary surrogates (C49-C50). The findings are supported by multiple figures (4A-E, Figure 4\u2014figure supplement 1) and are statistically rigorous.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:50:40.843560Z"
+    },
+    {
+      "id": "8dc5f620-488c-4cd5-ae13-a7e184a9578b",
+      "content_id": "61fc4287-36a7-498f-9386-a6d88a021a8f",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Cortical state transitions, characterized by changes in silence density between synchronized and desynchronized states, evolved along stiff parameter dimensions. Observables with highest sensitivity were significantly more correlated with cortical state than sloppy variables (p<0.01 for all datasets), indicating that neuronal activity and co-activity preferentially evolved along stiff dimensions during state transitions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16 and C53-C61 establish the relationship between cortical state transitions and stiff dimensions. The analysis includes quantification of cortical states using silence density (C55), correlation analyses (C57, C59), and statistical testing with paired t-tests (C60). The results are supported by Figure 5 and show consistent effects across all six rats.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:50:40.843560Z"
+    },
+    {
+      "id": "00718d08-3145-478c-8831-9bb2f93ab767",
+      "content_id": "61fc4287-36a7-498f-9386-a6d88a021a8f",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Sensory-evoked activity evolved along sloppy parameter dimensions, with neurons having lowest sensitivity showing largest stimulus responses. The difference in modulation index between sloppy and stiff neurons (\u0394MI) was maximal during desynchronized states and minimal during synchronized states, indicating state-dependent evolution along different parameter dimensions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C17 and C62-C66, C86 demonstrate that stimulus-evoked responses evolve along sloppy dimensions. The analysis includes modulation index calculations (C63-C64), state-dependent analyses (C65-C66, C86), and is supported by Figures 6B-F. The finding that responsiveness is inversely related to sensitivity is consistent across datasets and provides a clear mechanistic distinction from spontaneous state transitions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:50:40.843560Z"
+    },
+    {
+      "id": "4ae94464-a966-49de-be3c-35adca7b49e2",
+      "content_id": "61fc4287-36a7-498f-9386-a6d88a021a8f",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Stiff parameters were associated with neurons having high centrality within the functional network. Stiff neurons were significantly more active (AUC=0.961-0.998), more correlated among themselves (AUC=0.615-0.932), had higher betweenness centrality (AUC=0.740-0.831), and were more coupled to population activity (AUC=0.603-0.939) than sloppy neurons (all p<0.001). These differences were not trivially explained by firing rate differences alone, as demonstrated by surrogate data analysis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C18, and C67-C76, C97-C98 characterize the properties of stiff versus sloppy neurons using multiple complementary measures. The analysis includes ROC analysis with AUC quantification, betweenness centrality calculations, and neuron-to-population coupling measures. Control analyses with surrogate data (C73) rule out trivial explanations. Results are supported by Figure 7 and show consistent effects across all rats.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:50:40.843560Z"
+    },
+    {
+      "id": "4445da9e-9774-487f-ae05-65f9c511f2b1",
+      "content_id": "61fc4287-36a7-498f-9386-a6d88a021a8f",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The study proposes a functional architecture where stimulus-evoked responses evolve along sloppy dimensions associated with neurons of low centrality, allowing sensory information encoding without perturbing network integrity. Stiff and sloppy neurons correspond to chorister and soloist neurons respectively, with stiff/chorister neurons maintaining network stability while sloppy/soloist neurons can respond to stimuli without strongly affecting collective behavior.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3 and C77-C79, C100-C101 present interpretations of the functional implications of the findings. While these are interpretative claims, they are well-supported by the empirical results (C2, C17, C18, C62-C76) and are consistent with cited previous work on chorister/soloist neurons (C99). The interpretation logically follows from the data showing differential properties and response patterns of stiff versus sloppy neurons.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:50:40.843560Z"
+    },
+    {
+      "id": "002a40a9-ad99-42b5-ae77-db27a72081c4",
+      "content_id": "61fc4287-36a7-498f-9386-a6d88a021a8f",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Despite substantial temporal changes in firing rates, correlations, and model parameters over hours, the Fisher Information Matrix (FIM) showed the highest stability across time (similarity=0.882\u00b10.002 after 30 min). Fluctuations on stiff parameter dimensions were weakest and related to cortical state transitions occurring on timescales of tens of minutes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39-C40, C42, and C103 describe temporal stability properties of the model. The analysis includes similarity measures across time (Figure 3C-D) and statistical comparisons (F4,495=305.73, p<0.001). The finding that FIM stability exceeds that of individual parameters is well-documented and provides important context for understanding the sloppiness phenomenon.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:50:40.843560Z"
+    },
+    {
+      "id": "81315470-6106-4a54-8c13-69b87df9366c",
+      "content_id": "61fc4287-36a7-498f-9386-a6d88a021a8f",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Prior work established that spontaneous neuronal activity exhibits sloppiness, where collective behavior is strongly determined by stiff parameter combinations while being insensitive to sloppy dimensions. This property has been observed in vitro and in vivo, with collective activity stabilized by highly active, stable neurons.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1 and C4-C7 summarize established prior work on sloppiness in neural systems, primarily citing Panas et al., 2015. These claims provide necessary background context and are appropriately attributed to previous research. The definitions of sloppiness and stiffness (C4-C5) are standard in the field.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:50:40.843560Z"
+    },
+    {
+      "id": "8d515a4b-078b-4e73-8c6d-5cec092634b6",
+      "content_id": "61fc4287-36a7-498f-9386-a6d88a021a8f",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Previous research has shown that spontaneous cortical activity transits through different synchronized and desynchronized states that represent statistically different collective behaviors with different information processing capabilities.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8-C10 accurately summarize well-established prior work on cortical states, supported by multiple citations. These claims provide important context for why the current study examines the relationship between sloppiness and cortical state transitions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:50:40.843560Z"
+    },
+    {
+      "id": "16907678-77fa-41ce-8cc7-8df7b63465fe",
+      "content_id": "61fc4287-36a7-498f-9386-a6d88a021a8f",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The authors interpret that responses along sloppy dimensions provide information processing benefits, supported by prior work showing better stimulus representation in desynchronized states. They speculate that findings from anesthetized conditions are likely relevant to wakefulness, citing evidence for synchronized states and up/down transitions during wakefulness and the observation of sloppiness under light anesthesia.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C87-C95 mix interpretation (C87) with citations to prior work (C88-C94) and speculation about generalizability (C90, C95). While the interpretation is reasonable and supported by cited literature, the generalization from urethane anesthesia to wakefulness remains speculative. The authors appropriately acknowledge this as expectation rather than demonstrated fact (C95), but direct evidence in awake animals would be needed to fully support this claim.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:50:40.843560Z"
+    },
+    {
+      "id": "2d2facb7-1f96-4f93-a252-5572fa73823d",
+      "content_id": "61fc4287-36a7-498f-9386-a6d88a021a8f",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The authors discuss implications for network organization, hypothesizing that sloppy neurons may be more affected by synaptic plasticity, allowing network reconfiguration without stability loss. They suggest their findings provide architectural constraints for brain state models and question assumptions in existing models about how background and stimulus inputs impact dynamics.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C82-C85, C102, C105-C107, C110-C112 present hypotheses and speculations about broader implications. While these are thoughtful interpretations grounded in the data and supported by some citations to related work (C82, C84-C85), they remain speculative. The suggestions for future modeling work (C110-C111) and the questioning of existing model assumptions (C112) are reasonable but would require additional work to validate.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:50:40.843560Z"
+    },
+    {
+      "id": "75c7d4ab-e5f0-4fe4-9799-ee475d5a2f14",
+      "content_id": "61fc4287-36a7-498f-9386-a6d88a021a8f",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The authors cite related findings from other studies, including identification of similar highly active, interconnected neuronal sub-networks in mouse neocortex, the chorister/soloist distinction in neuronal coupling, and previous modeling approaches for brain state transitions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C80-C81, C99, C104, C108-C109 accurately cite and summarize relevant prior work. These citations appropriately contextualize the current findings within the broader literature and support the authors' interpretations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:50:40.843560Z"
+    },
+    {
+      "id": "ba75a031-d05e-42e7-855f-11c86b40eab7",
+      "content_id": "61fc4287-36a7-498f-9386-a6d88a021a8f",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The authors acknowledge methodological limitations, noting that small maximum entropy models (N=10 neurons) can show departures from observed distributions but justify this choice as necessary for time-resolved analysis of cortical state transitions. They suggest future comparisons of Fisher information matrices across vigilance states.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C96 and C113-C116 appropriately acknowledge methodological limitations and trade-offs. The justification for using small model sizes (C116) is reasonable given the temporal resolution requirements. The acknowledgment of known limitations (C113) and the suggestion for future work (C96) demonstrate appropriate scientific caution.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:50:40.843560Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "10190459-ed8e-4fdf-a303-264dbbc39750",
+      "result_id": "611430fc-25ed-4787-af32-88a092d0a99a"
+    },
+    {
+      "claim_id": "6082bcf3-ce5f-4b32-a288-f0a1b31b3b90",
+      "result_id": "611430fc-25ed-4787-af32-88a092d0a99a"
+    },
+    {
+      "claim_id": "beea1369-a3b7-40c0-9f29-9e626b76ba89",
+      "result_id": "611430fc-25ed-4787-af32-88a092d0a99a"
+    },
+    {
+      "claim_id": "c2cf15cc-2e28-45b6-bd4a-e431663b6476",
+      "result_id": "611430fc-25ed-4787-af32-88a092d0a99a"
+    },
+    {
+      "claim_id": "1b762235-dd46-4a06-aad9-058deb2269ef",
+      "result_id": "611430fc-25ed-4787-af32-88a092d0a99a"
+    },
+    {
+      "claim_id": "b78c6205-6c95-4a89-8e34-6bfc9e60b9ec",
+      "result_id": "611430fc-25ed-4787-af32-88a092d0a99a"
+    },
+    {
+      "claim_id": "6e178cd4-0a18-48df-b71e-5b9d9a710a82",
+      "result_id": "611430fc-25ed-4787-af32-88a092d0a99a"
+    },
+    {
+      "claim_id": "2f28c522-dfdf-4af9-9086-6025ced95283",
+      "result_id": "611430fc-25ed-4787-af32-88a092d0a99a"
+    },
+    {
+      "claim_id": "668affee-aa8f-47c3-8d85-6e7ad4b3d194",
+      "result_id": "611430fc-25ed-4787-af32-88a092d0a99a"
+    },
+    {
+      "claim_id": "1dd27c04-5046-4611-91bc-ab41b3a39638",
+      "result_id": "611430fc-25ed-4787-af32-88a092d0a99a"
+    },
+    {
+      "claim_id": "2f600ebc-3690-4ce1-a6c9-1cc67190f01b",
+      "result_id": "611430fc-25ed-4787-af32-88a092d0a99a"
+    },
+    {
+      "claim_id": "9d261ac1-2b01-4d6e-a756-fcd1bb8c66f3",
+      "result_id": "611430fc-25ed-4787-af32-88a092d0a99a"
+    },
+    {
+      "claim_id": "3b313744-a104-44ac-979a-ac0130399856",
+      "result_id": "68e5fa47-7cc5-4877-aad2-ec473e18d692"
+    },
+    {
+      "claim_id": "7403573f-ff24-41b2-8f61-ead701e2c41b",
+      "result_id": "68e5fa47-7cc5-4877-aad2-ec473e18d692"
+    },
+    {
+      "claim_id": "f1e54280-3b18-40f8-9260-4681444aa74b",
+      "result_id": "68e5fa47-7cc5-4877-aad2-ec473e18d692"
+    },
+    {
+      "claim_id": "07beb185-f6fd-4bec-99e1-3e83c8ba903a",
+      "result_id": "68e5fa47-7cc5-4877-aad2-ec473e18d692"
+    },
+    {
+      "claim_id": "0048ab77-0ed6-4616-a334-7c773bb36ecc",
+      "result_id": "68e5fa47-7cc5-4877-aad2-ec473e18d692"
+    },
+    {
+      "claim_id": "58c0f559-42cb-480f-a7fc-07c66b848a5a",
+      "result_id": "68e5fa47-7cc5-4877-aad2-ec473e18d692"
+    },
+    {
+      "claim_id": "9da074dd-d623-437f-b809-437d7c1484c5",
+      "result_id": "68e5fa47-7cc5-4877-aad2-ec473e18d692"
+    },
+    {
+      "claim_id": "004e850c-5e35-4ebc-9cc5-bffcb7e69454",
+      "result_id": "68e5fa47-7cc5-4877-aad2-ec473e18d692"
+    },
+    {
+      "claim_id": "dea10183-40b5-43d9-b304-b0fd0999d410",
+      "result_id": "68e5fa47-7cc5-4877-aad2-ec473e18d692"
+    },
+    {
+      "claim_id": "8c1e4b2a-4cdd-4e62-b5c3-88655449dced",
+      "result_id": "68e5fa47-7cc5-4877-aad2-ec473e18d692"
+    },
+    {
+      "claim_id": "ba20f495-efbe-4b74-8c56-583e283cc851",
+      "result_id": "68e5fa47-7cc5-4877-aad2-ec473e18d692"
+    },
+    {
+      "claim_id": "bca710d7-0e71-4a3c-b098-34258cd7d004",
+      "result_id": "8dc5f620-488c-4cd5-ae13-a7e184a9578b"
+    },
+    {
+      "claim_id": "e5d72d60-16b9-41e9-8fea-3f53952b1242",
+      "result_id": "8dc5f620-488c-4cd5-ae13-a7e184a9578b"
+    },
+    {
+      "claim_id": "021e11f6-0cb8-40c1-9bf6-34d265c821e6",
+      "result_id": "8dc5f620-488c-4cd5-ae13-a7e184a9578b"
+    },
+    {
+      "claim_id": "5bf1dac8-73c5-457e-8a0e-8e88a4d65e5a",
+      "result_id": "8dc5f620-488c-4cd5-ae13-a7e184a9578b"
+    },
+    {
+      "claim_id": "b65759e2-f0fa-4e2d-8424-703d4c95e301",
+      "result_id": "8dc5f620-488c-4cd5-ae13-a7e184a9578b"
+    },
+    {
+      "claim_id": "c4131ec9-04ba-489c-85a1-d4296f6f2a1d",
+      "result_id": "8dc5f620-488c-4cd5-ae13-a7e184a9578b"
+    },
+    {
+      "claim_id": "6ed69583-ef02-4b44-924d-86c3146b90c4",
+      "result_id": "8dc5f620-488c-4cd5-ae13-a7e184a9578b"
+    },
+    {
+      "claim_id": "d8bdaadf-2acf-4657-85f4-4d229537233d",
+      "result_id": "00718d08-3145-478c-8831-9bb2f93ab767"
+    },
+    {
+      "claim_id": "a8fc0abe-e7db-4848-8255-69be09408538",
+      "result_id": "00718d08-3145-478c-8831-9bb2f93ab767"
+    },
+    {
+      "claim_id": "38a8a42f-6661-4fcb-b1df-bae0703d1c82",
+      "result_id": "00718d08-3145-478c-8831-9bb2f93ab767"
+    },
+    {
+      "claim_id": "6b2bdb41-fcc7-4e76-b37a-e155e34b1567",
+      "result_id": "00718d08-3145-478c-8831-9bb2f93ab767"
+    },
+    {
+      "claim_id": "4aa8dfed-b3f4-4fd6-befb-34bee93faec0",
+      "result_id": "00718d08-3145-478c-8831-9bb2f93ab767"
+    },
+    {
+      "claim_id": "1bbde7eb-af04-4e4d-976f-925abee591bb",
+      "result_id": "00718d08-3145-478c-8831-9bb2f93ab767"
+    },
+    {
+      "claim_id": "574ca52e-f4f8-493b-85e8-56b5770f8473",
+      "result_id": "00718d08-3145-478c-8831-9bb2f93ab767"
+    },
+    {
+      "claim_id": "d4c83dd8-555b-4d64-ab14-1fbbdf8ceae0",
+      "result_id": "4ae94464-a966-49de-be3c-35adca7b49e2"
+    },
+    {
+      "claim_id": "b7194e1a-9c8d-4a88-a4ca-16c1ac1db961",
+      "result_id": "4ae94464-a966-49de-be3c-35adca7b49e2"
+    },
+    {
+      "claim_id": "8d86cbb6-e5df-451f-929a-270eb801928c",
+      "result_id": "4ae94464-a966-49de-be3c-35adca7b49e2"
+    },
+    {
+      "claim_id": "82ae7583-ad09-4ecd-88fd-c3cacdb274de",
+      "result_id": "4ae94464-a966-49de-be3c-35adca7b49e2"
+    },
+    {
+      "claim_id": "d719cec9-a7b7-4421-97f3-08f44b54ba0d",
+      "result_id": "4ae94464-a966-49de-be3c-35adca7b49e2"
+    },
+    {
+      "claim_id": "7fff6df3-1dfe-4552-9ee5-b19a96c5c4ff",
+      "result_id": "4ae94464-a966-49de-be3c-35adca7b49e2"
+    },
+    {
+      "claim_id": "a62fc77c-81f0-4323-b325-862cb0de4d18",
+      "result_id": "4ae94464-a966-49de-be3c-35adca7b49e2"
+    },
+    {
+      "claim_id": "98702fa8-f9a1-43dc-b716-93ecea3ef9dc",
+      "result_id": "4ae94464-a966-49de-be3c-35adca7b49e2"
+    },
+    {
+      "claim_id": "353271a3-57c6-4157-ad05-2909bef83c8b",
+      "result_id": "4ae94464-a966-49de-be3c-35adca7b49e2"
+    },
+    {
+      "claim_id": "63f60c17-3091-4082-a126-c1a4ab7b97ec",
+      "result_id": "4ae94464-a966-49de-be3c-35adca7b49e2"
+    },
+    {
+      "claim_id": "97c37538-507f-4db9-aca2-5b417940de79",
+      "result_id": "4ae94464-a966-49de-be3c-35adca7b49e2"
+    },
+    {
+      "claim_id": "f2368bae-a23c-4637-8f51-9e0af880f92f",
+      "result_id": "4ae94464-a966-49de-be3c-35adca7b49e2"
+    },
+    {
+      "claim_id": "389417dd-62c7-4c58-a10f-720fe6f78037",
+      "result_id": "4ae94464-a966-49de-be3c-35adca7b49e2"
+    },
+    {
+      "claim_id": "fc2b76b8-0e0e-47fb-9e40-7199ac1b7174",
+      "result_id": "4445da9e-9774-487f-ae05-65f9c511f2b1"
+    },
+    {
+      "claim_id": "49e2609e-e8fb-44e8-9390-4164a84e665c",
+      "result_id": "4445da9e-9774-487f-ae05-65f9c511f2b1"
+    },
+    {
+      "claim_id": "a11a21b0-61a0-4e26-87fe-7e1d1bcb2ff1",
+      "result_id": "4445da9e-9774-487f-ae05-65f9c511f2b1"
+    },
+    {
+      "claim_id": "6d41f958-e9a8-4ab0-ae8c-d88598678253",
+      "result_id": "4445da9e-9774-487f-ae05-65f9c511f2b1"
+    },
+    {
+      "claim_id": "9c0ef29e-7d8e-4acc-bc39-e0a59de6ece8",
+      "result_id": "4445da9e-9774-487f-ae05-65f9c511f2b1"
+    },
+    {
+      "claim_id": "6f56c68f-b94c-45bd-870d-d32a16195c87",
+      "result_id": "4445da9e-9774-487f-ae05-65f9c511f2b1"
+    },
+    {
+      "claim_id": "83bd63f6-1b55-479f-9163-4b946bd18b79",
+      "result_id": "002a40a9-ad99-42b5-ae77-db27a72081c4"
+    },
+    {
+      "claim_id": "498edae7-0489-4c52-9762-c28cd02818ac",
+      "result_id": "002a40a9-ad99-42b5-ae77-db27a72081c4"
+    },
+    {
+      "claim_id": "51383958-46fe-4025-a0c6-4cb4993a4214",
+      "result_id": "002a40a9-ad99-42b5-ae77-db27a72081c4"
+    },
+    {
+      "claim_id": "8e893cc2-fbc0-4b71-80b2-5dd4965603cc",
+      "result_id": "002a40a9-ad99-42b5-ae77-db27a72081c4"
+    },
+    {
+      "claim_id": "8889992e-0421-4ba4-b8e7-073c0920be05",
+      "result_id": "81315470-6106-4a54-8c13-69b87df9366c"
+    },
+    {
+      "claim_id": "ff787a1b-5e8e-4165-925b-7fa561eb3f9c",
+      "result_id": "81315470-6106-4a54-8c13-69b87df9366c"
+    },
+    {
+      "claim_id": "9e53991e-90ac-492b-b263-f1080f9f8ede",
+      "result_id": "81315470-6106-4a54-8c13-69b87df9366c"
+    },
+    {
+      "claim_id": "d6b5cc1f-bdec-4b20-90c0-e7a9ad024e88",
+      "result_id": "81315470-6106-4a54-8c13-69b87df9366c"
+    },
+    {
+      "claim_id": "3b84f4e7-0156-4c49-bc16-c3d12d3480ca",
+      "result_id": "81315470-6106-4a54-8c13-69b87df9366c"
+    },
+    {
+      "claim_id": "588cc93d-9081-4150-8f71-1b0ab7d069b5",
+      "result_id": "8d515a4b-078b-4e73-8c6d-5cec092634b6"
+    },
+    {
+      "claim_id": "4344dc29-2985-46ae-aefd-d71eab4cec88",
+      "result_id": "8d515a4b-078b-4e73-8c6d-5cec092634b6"
+    },
+    {
+      "claim_id": "92213344-8b5d-4aa5-9a69-3a66b40801d4",
+      "result_id": "8d515a4b-078b-4e73-8c6d-5cec092634b6"
+    },
+    {
+      "claim_id": "3b4e6bd9-c4e1-4eee-be39-ddad1f486034",
+      "result_id": "16907678-77fa-41ce-8cc7-8df7b63465fe"
+    },
+    {
+      "claim_id": "56ea3646-3882-47e6-927b-e04f8f1927d3",
+      "result_id": "16907678-77fa-41ce-8cc7-8df7b63465fe"
+    },
+    {
+      "claim_id": "9a0f13a7-b28d-4427-a9de-c21e0076d08f",
+      "result_id": "16907678-77fa-41ce-8cc7-8df7b63465fe"
+    },
+    {
+      "claim_id": "700720a8-bd95-48c3-835a-6ceaedc1fbed",
+      "result_id": "16907678-77fa-41ce-8cc7-8df7b63465fe"
+    },
+    {
+      "claim_id": "d83bf91e-fc9e-4819-a84a-926c46a034f9",
+      "result_id": "16907678-77fa-41ce-8cc7-8df7b63465fe"
+    },
+    {
+      "claim_id": "5db15148-e969-429d-8b27-e3912664edce",
+      "result_id": "16907678-77fa-41ce-8cc7-8df7b63465fe"
+    },
+    {
+      "claim_id": "4f48c2c4-ec3e-4ea3-9a3e-eef0a4c3e42c",
+      "result_id": "16907678-77fa-41ce-8cc7-8df7b63465fe"
+    },
+    {
+      "claim_id": "b2519912-1551-47db-8bf1-6d115d173e4b",
+      "result_id": "16907678-77fa-41ce-8cc7-8df7b63465fe"
+    },
+    {
+      "claim_id": "c44cfe36-cc80-42b8-8a0b-0ee9ae3c6f80",
+      "result_id": "16907678-77fa-41ce-8cc7-8df7b63465fe"
+    },
+    {
+      "claim_id": "8ae74aa2-148f-48cf-ac68-270a80e22081",
+      "result_id": "2d2facb7-1f96-4f93-a252-5572fa73823d"
+    },
+    {
+      "claim_id": "0eeabbf8-9282-40d2-8fc4-e77ba9f6d7b4",
+      "result_id": "2d2facb7-1f96-4f93-a252-5572fa73823d"
+    },
+    {
+      "claim_id": "27763e6d-396f-40e8-a1a5-7525ec198917",
+      "result_id": "2d2facb7-1f96-4f93-a252-5572fa73823d"
+    },
+    {
+      "claim_id": "2fdd91d2-09d5-4a56-8586-165f49c0b051",
+      "result_id": "2d2facb7-1f96-4f93-a252-5572fa73823d"
+    },
+    {
+      "claim_id": "67851a3b-560c-4cab-b27f-4472e55dce0f",
+      "result_id": "2d2facb7-1f96-4f93-a252-5572fa73823d"
+    },
+    {
+      "claim_id": "29cea4c1-26ca-48f0-8e1d-3411da4cdb5c",
+      "result_id": "2d2facb7-1f96-4f93-a252-5572fa73823d"
+    },
+    {
+      "claim_id": "0238d4f8-cb47-42f7-a5ab-5b6c033e4ecb",
+      "result_id": "2d2facb7-1f96-4f93-a252-5572fa73823d"
+    },
+    {
+      "claim_id": "4ed369cb-f02d-4258-badf-ba4fd439e5d7",
+      "result_id": "2d2facb7-1f96-4f93-a252-5572fa73823d"
+    },
+    {
+      "claim_id": "93786f7d-0e0c-493b-8d41-2f25adec8b8a",
+      "result_id": "2d2facb7-1f96-4f93-a252-5572fa73823d"
+    },
+    {
+      "claim_id": "c5a43f30-6ae3-4879-ab64-d8852c155b00",
+      "result_id": "2d2facb7-1f96-4f93-a252-5572fa73823d"
+    },
+    {
+      "claim_id": "22eef516-8ea0-4ebd-94a8-af66fa79a3ba",
+      "result_id": "2d2facb7-1f96-4f93-a252-5572fa73823d"
+    },
+    {
+      "claim_id": "8b79cf82-7f2c-4db6-895d-21fb4a845487",
+      "result_id": "75c7d4ab-e5f0-4fe4-9799-ee475d5a2f14"
+    },
+    {
+      "claim_id": "ec190cca-ed6c-4bdd-acb6-4d80c2396739",
+      "result_id": "75c7d4ab-e5f0-4fe4-9799-ee475d5a2f14"
+    },
+    {
+      "claim_id": "b26589ee-a294-4eff-9a52-7bf8565aadb7",
+      "result_id": "75c7d4ab-e5f0-4fe4-9799-ee475d5a2f14"
+    },
+    {
+      "claim_id": "a3f643a9-3de7-4f37-83e1-b8cba4321055",
+      "result_id": "75c7d4ab-e5f0-4fe4-9799-ee475d5a2f14"
+    },
+    {
+      "claim_id": "932cbf52-acaf-481a-b0c5-9b8ecb0f168c",
+      "result_id": "75c7d4ab-e5f0-4fe4-9799-ee475d5a2f14"
+    },
+    {
+      "claim_id": "aff12f70-bb3a-442f-b808-3ae1a4d01d03",
+      "result_id": "75c7d4ab-e5f0-4fe4-9799-ee475d5a2f14"
+    },
+    {
+      "claim_id": "a6133122-efb5-4735-a4c4-8198c35787b0",
+      "result_id": "ba75a031-d05e-42e7-855f-11c86b40eab7"
+    },
+    {
+      "claim_id": "1e1689ec-ffd6-45d0-807b-70c8edeeab32",
+      "result_id": "ba75a031-d05e-42e7-855f-11c86b40eab7"
+    },
+    {
+      "claim_id": "0897a9f7-5bfe-46b8-baff-2bc83af92feb",
+      "result_id": "ba75a031-d05e-42e7-855f-11c86b40eab7"
+    },
+    {
+      "claim_id": "9e94601a-1ecd-40d8-a3e8-fa0c39ed61cf",
+      "result_id": "ba75a031-d05e-42e7-855f-11c86b40eab7"
+    },
+    {
+      "claim_id": "987876fb-7c05-464d-aa7a-6f4f380d6ade",
+      "result_id": "ba75a031-d05e-42e7-855f-11c86b40eab7"
+    }
+  ],
+  "comparisons": []
+}

@@ -1,0 +1,1479 @@
+{
+  "submission": {
+    "id": "b3bd1726-290f-471d-8f55-92fffffc2d66",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T08:57:36.700843Z",
+    "updated_at": "2025-12-02T08:57:36.700843Z"
+  },
+  "content": [
+    {
+      "id": "f7388352-bf21-473c-99a1-f774a8a18881",
+      "submission_id": "b3bd1726-290f-471d-8f55-92fffffc2d66",
+      "content_type": "manuscript",
+      "content_text": "# Rapid changes in morphogen concentration control self-organized patterning in human embryonic stem cells\n\n## Authors\n\n- Idse Heemskerk<sup>1</sup> ([ORCID: 0000-0002-8861-7712](https://orcid.org/0000-0002-8861-7712))\n- Kari Burt<sup>1</sup>\n- Matthew Miller<sup>1</sup>\n- Sapna Chhabra<sup>2</sup> ([ORCID: 0000-0002-2479-0911](https://orcid.org/0000-0002-2479-0911))\n- M Cecilia Guerra<sup>1</sup>\n- Lizhong Liu<sup>1</sup>\n- Aryeh Warmflash<sup>1</sup> ([ORCID: 0000-0002-5679-2268](https://orcid.org/0000-0002-5679-2268)) \u2020\n\n### Affiliations\n\n1. Department of Biosciences Rice University Houston United States\n2. Systems, Synthetic and Physical Biology Program Rice University Houston United States\n3. Department of Bioengineering Rice University Houston United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nDuring embryonic development, diffusible signaling molecules called morphogens are thought to determine cell fates in a concentration-dependent way. Yet, in mammalian embryos, concentrations change rapidly compared to the time for making cell fate decisions. Here, we use human embryonic stem cells (hESCs) to address how changing morphogen levels influence differentiation, focusing on how BMP4 and Nodal signaling govern the cell-fate decisions associated with gastrulation. We show that BMP4 response is concentration dependent, but that expression of many Nodal targets depends on rate of concentration change. Moreover, in a self-organized stem cell model for human gastrulation, expression of these genes follows rapid changes in endogenous Nodal signaling. Our study shows a striking contrast between the specific ways ligand dynamics are interpreted by two closely related signaling pathways, highlighting both the subtlety and importance of morphogen dynamics for understanding mammalian embryogenesis and designing optimized protocols for directed stem cell differentiation.Editorial note: This article has been through an editorial process in which the authors decide how to respond to the issues raised during peer review. The Reviewing Editor's assessment is that all the issues have been addressed (see decision letter).\n\n## Introduction\n\nMammalian development depends crucially on diffusible signaling molecules called morphogens, that are thought to determine cell fates in a concentration-dependent manner (Green et al., 1992; Wilson et al., 1997; Wolpert, 1969), and protocols for directed stem cell differentiation are based on this picture (Chambers et al., 2009; Loh et al., 2016; McLean et al., 2007; Mendjan et al., 2014). However, in the vertebrate embryo, expression patterns of these morphogens change rapidly, simultaneous with large-scale cell movements, and therefore individual cells experience substantial changes in morphogen levels during differentiation (Arnold and Robertson, 2009; Balaskas et al., 2012; Dessaud et al., 2007; Dubrulle et al., 2015; Kinder et al., 2001; van Boxtel et al., 2015). Duration of ligand exposure must logically be a relevant parameter, as was confirmed in a number of contexts, including Activin/Nodal signaling in early Zebrafish development and Sonic Hedgehog (Shh) signaling in the mouse neural tube (Dessaud et al., 2007; Sako et al., 2016). However, duration is only one of a large number of features of a dynamic signal. It is unknown whether the precise time course of ligand exposure plays a role in cell fate decisions, and if so, whether different pathways interpret signaling histories differently. In analogy with human speech, which enables sophisticated communication by relying on temporal modulation of a single mode of signaling (sound), it is possible that complex information is encoded in developmental signals by temporal modulation to enable a range of different responses to a single pathway. In addition to ligand concentration and duration (\u2018integral\u2019), cells may also be sensitive to ligand rates of change (\u2018derivative\u2019), and it has been suggested that adaptive signaling pathways allow cells to perform this derivative computation (Sorre et al., 2014; Yi et al., 2000).\n\nThese concepts have begun to be explored in mammalian cell culture systems. For the N\u03bafb pathway, an intricate relation between ligand dynamics, signaling response and target gene activation was found (Hoffmann et al., 2002; Kellogg et al., 2017; Selimkhanov et al., 2014). Further demonstrating the importance of changing ligand concentrations, a class of ERK target genes was recently shown to be activated more efficiently by pulses than sustained signaling in 3T3 cells (Wilson et al., 2017), and we have shown that the response to TGF\u03b2 in C2C12 mouse myoblasts reflects ligand rate of increase (Sorre et al., 2014; Warmflash et al., 2012). However, these ideas have not been applied to mammalian development or differentiation of pluripotent stem cells, and their relevance to developmental patterning remains unexplored.\n\nGastrulation is the first differentiation event of the embryo proper, when the germ layers are formed and the body axes are established. Nodal and BMP4 are morphogens crucial for gastrulation in vertebrates (Winnier et al., 1995). In the early mammalian embryo, BMP4 is required for both initiating gastrulation and specifying the dorsal-ventral axis, while Nodal maintains the pluripotent epiblast and is subsequently required for mesoderm and endoderm differentiation (Conlon et al., 1994). Each pathway has distinct receptor complexes that phosphorylate specific signal transducers, known as receptor-Smads, which then complex with the shared cofactor Smad4 and translocate to the nucleus to activate target genes (Figure 1a) (Zinski et al., 2018). Both Nodal and BMP4 have been claimed to act in a concentration-dependent manner based on classic Xenopus experiments (Green et al., 1992; Gurdon et al., 1994; Wilson et al., 1997). However, those experiments allow alternative interpretations (Heemskerk and Warmflash, 2016), and the role of BMP4 and Nodal ligand dynamics has not been investigated.\n\nMicropatterned human embryonic stem cells (hESCs) self-organize into reproducible spatial domains corresponding to each of the germ layers and were recently established as a method to recapitulate human gastrulation in vitro (Warmflash et al., 2014). This system can be easily manipulated and observed. Further, in contrast to the micropatterned colonies, when hESCs are grown more sparsely, their response to exogenous signals is uniform and not dependent on secondary signals, allowing for dissection of the dynamics of response (Nemashkalo et al., 2017). Thus, the response of cells to dynamic signals can be systematically investigated in sparse culture, and this information can be used to unravel the complexity of self-organized pattern formation in micropatterned colonies. In this study, we take this approach and use hESCs to evaluate the role of changing concentrations of BMP4 and Activin/Nodal in cell-fate decisions associated with gastrulation. Unexpectedly, we find an important role for rapid concentration changes in Nodal pathway response, while the BMP pathway responds to concentration and duration of ligand exposure more directly.\n\n## Results\n\n### SMAD4 signaling response of hESCs to BMP4 is sustained but to Activin is adaptive\n\nTo investigate how sudden increases in BMP4 and Nodal levels are interpreted by hESCs, we performed live imaging of hESCs with GFP:SMAD4 in the endogenous locus (Nemashkalo et al., 2017), and quantified signaling strength as the ratio of nuclear and cytoplasmic SMAD4 intensity (Figure 1\u2014figure supplement 1a). We found that a sudden increase in BMP4 leads to sustained SMAD4 signaling (Figure 1b,d), consistent with our previous work (Nemashkalo et al., 2017). In contrast, the response to addition of Nodal and its substitute Activin is strongly adaptive, that\u00a0is transient, and returns to a signaling baseline of around 20% of the response peak (Figure 1c,d, Figure 1\u2014figure supplement 1i, j), similar to the previously observed response to TGF\u03b2 in C2C12 cells (Sorre et al., 2014; Warmflash et al., 2012). The response to recombinant Nodal was weak at all doses, likely reflecting the low quality of recombinant Nodal. To elicit a response in Nodal required 2 \u03bcg/ml of recombinant protein, whereas the response to Activin was saturated by 5 ng/ml (Figure 1f, Figure 1\u2014figure supplement 1i, j). However, when the responses to Nodal and Activin were normalized to their respective maxima, their dynamics were identical (Figure 1\u2014figure supplement 1j). Given our focus on the dynamics of signaling, the extremely similar dynamics in response to Nodal and Activin, and the impracticality of performing experiments with Nodal given the concentrations required, we used Activin in all further experiments. The peak and baseline\u00a0signaling\u00a0levels, but not the timescale of adaptation, depended on the Activin dose (Figure 1f). For BMP4, there was a sharp response so that even low doses gave a nearly full initial response, however, the dose affected the duration of signaling in a way consistent with ligand depletion at low doses (Figure 1e, Appendix 1). Immunofluorescence staining for receptor-Smads revealed that SMAD1/5/8 activation mirrors the SMAD4 response to BMP4, while in response to Activin, SMAD2/3 nuclear localization adapts less than SMAD4 to about 60% of peak response (Figure 1\u2014figure supplement 1e,g,h). In each case, the response was due to the added ligand and not to induced secondary signaling through the other pathway, as addition of the BMP inhibitor Noggin had no effect on the dynamics in response to Activin, while addition of the Activin inhibitor SB431542 slightly increased the response to BMP (Figure 1g,h). Thus, endogenous BMP has no effect on the Nodal response, while Nodal signaling has a repressive effect on BMP. We note that some target genes may respond to SMAD2/3 without SMAD4 (Levy and Hill, 2005), and that since the dynamics of SMAD2/3 and SMAD4 are different, care is required in interpreting the dynamics of individual genes. Hereafter, when we refer to Nodal signaling as reflected by the SMAD4 reporter, we mean \u2018SMAD4-dependent Nodal signaling\u2019.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/40526/elife-40526-fig1-v1.jpg)\n\n**Figure 1.:** (a) BMP and Nodal pathways share the signal transducer Smad4. (b,\u00a0c) hESCs expressing GFP:SMAD4 at 0, 1 and 6 hr after treatment with BMP4 (b) or Activin (c). Scalebar 30\u00a0\u03bcm (d) GFP:SMAD4 average nuclear:cytoplasmic intensity ratio after treatment with BMP4 (blue) or Activin (red). Error bars represent standard error. Ncells\u00a0~\u00a0700, distributions shown in (Figure 1\u2014figure supplement 1b\u2013c). (e) SMAD4 response to different doses of BMP4 shows decline at low doses with a dose-dependent time scale, suggesting ligand depletion. Doses in graph legend are in ng/ml. (f) SMAD4 signaling response to different doses of Activin shows fixed time scale of adaptation. (g) Quantification of GFP:SMAD4 nuclear to cytoplasmic ratio in response to either Activin alone or together with the BMP inhibitor Noggin (h) Quantification of GFP:SMAD4 nuclear to cytoplasmic ratio in response to either BMP alone or together with the Activin/Nodal inhibitor SB431542.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/40526/elife-40526-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (a) Quantification of SMAD4 signaling as nuclear to cytoplasmic intensity ratio using automated segmentation of the nuclei. For SMAD4 and SMAD2, signaling strength is measured by the nuclear to cytoplasmic intensity ratio. (b) Distribution of SMAD4 response to BMP4 at 0, 1, and 6 hr after treatment. (c) Distribution of SMAD4 response to Activin at 0, 1, and 6 hr. (d,\u00a0e) Time courses of pSMAD1 (d) and SMAD2 (e) determined by immunofluorescence. Scalebar 25 \u03bcm. (f) Quantification of pSmad1 time course. (g) Quantification of SMAD2 and SMAD4 nuclear signaling (nuclear to cytoplasmic ratio). Error bars represent standard error. Ncells per time point\u00a0~103. (h) same data as (g) normalized so that the mean in SB431542 treated cells is zero and peak signaling is 1.\u00a0The level of SMAD2 intensity at time 0 indicates baseline signaling which is repressed by SB431542.(i) Comparison of the response of GFP:SMAD4 to either Activin or Nodal. (j) Same data as in the (i) except that the baseline from the control BSA only condition was subtracted from each curve and each was then normalized to its maximum value. (k) Control for Figure 1g showing complete inhibition of response to 50 ng/ml BMP4 by 500 ng/ml Noggin.\n\n### Adaptive signaling is caused by negative feedback controlling sequestration\n\nAlthough TGF\u03b2 signaling through SMAD4 has been shown to adapt in C2C12 cells (Sorre et al., 2014; Warmflash et al., 2014), the molecular mechanisms remain unclear. A previous attempt to uncover relevant genes through a genome-wide siRNA screen uncovered a large number of potential regulators of signaling, but none of the knockdowns completely blocked adaptation, suggesting redundancy in adaptation mechanisms (Deglincerti et al., 2015). As an alternative approach, we used FRAP at different times after Activin treatment to better understand how cells modulate nuclear SMAD4 levels over the course of the signaling response (Figure 2a\u2013c). In particular, we performed measurements before ligand treatment, after 1 hr of treatment when signaling peaks, and after 6 hr when signaling has adapted (Figure 2c). In all cases, we observed recovery on a timescale of minutes following nuclear photobleaching, which confirmed that SMAD4 continuously shuttles between the nucleus and cytoplasm even in the absence of ligand stimulation (Figure 2d). We also observed a reduced recovery rate after 1 hr of Activin treatment, consistent with previous work on TGF\u03b2 signaling which suggested that nuclear accumulation of SMAD4 is caused by reduced nuclear export (Nicol\u00e1s et al., 2004; Schmierer and Hill, 2005). Importantly, however, we found that the recovery rate is not restored during adaptation (Figure 2d), showing that cells do not revert to a pre-signaling state. This excludes upstream mechanisms of adaptation as might be caused by secretion of extracellular feedback inhibitors or depletion of receptors or R-Smads (Viz\u00e1n et al., 2013). Moreover, mathematical modeling showed that if adaptation is caused by depletion of an upstream component such as receptors, then the magnitude of adaptation is governed by the ratio of the degradation rates of active and inactive receptors (Appendix 1). These degradation rates also control the timescales for adaptation and recovery so that strong adaptation necessitates a large difference in timescales. However, we do not see these different time scales in our pulse experiments below (see Figure 5), which show that the refractory period after ligand exposure is similar to the time scale of adaptation. In contrast, models with negative feedback causing inhibition of downstream signaling are capable of explaining all features of our data including the observed time scales (Appendix 1).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/40526/elife-40526-fig2-v1.jpg)\n\n**Figure 2.:** (a) Photobleaching and recovery of nuclear Smad4 at 2 hr after Activin treatment. Scalebar 5 \u03bcm. (b) Exponential fit to recovery of nuclear fluorescence after bleaching yields amplitude A and recovery rate k. Intensity drop at t\u00a0=\u00a00 shows bleaching event. (c) Photobleaching was performed on untreated cells, at the peak response to Activin, and after adaptation. (d) Boxplot of distribution of recovery rates. Recovery rates at peak signaling and after adaptation are significantly smaller than for untreated cells (t-test p\u00a0<\u00a010\u22126), the difference in recovery rate between peak signaling and adapted state is not significant. N\u00a0>\u00a012 cells for each FRAP condition. (e) Boxplot of distribution of recovery amplitudes. (f) Nuclear to cytoplasmic intensity ratio after bleaching (R\u2019) is systematically smaller than nuclear to cytoplasmic intensity ratio before bleaching (R). (g) Cartoon of mathematical model for Smad4 localization, with sequestered populations of Smad4 that are confined to either nucleus or cytoplasm, and free Smad4 shuttling with import/export rates kin/kout. (h) Cartoon demonstrating that this model explains results in (f). (i) Changes in Smad4 sequestration in nucleus (blue) and cytoplasm (red) determined through model fitting. Error bars in i and j represent error propagation of standard errors in measured parameters over N\u00a0>\u00a012 cells as described in Appendix 1. (j) Nuclear export rates, which given the fixed nuclear import rate of the model directly reflect the measured exchange rates k.\n\nTo understand the mechanism of this inhibition, we first considered fitting our FRAP data to a model in which the entire population of SMAD4 is free to shuttle between the nucleus and cytoplasm. In this case, bleaching reduces the total pool of observable GFP-SMAD4 molecules but the nuclear to cytoplasmic intensity ratio depends only on the kinetic constants, and therefore would recover to the same value following bleaching. However, we observed that this ratio systematically decreases after nuclear bleaching (Figure 2f). This suggests a more general model that includes sequestered SMAD4, which may move within but not between the nuclear and cytoplasmic compartments. Because production and degradation are slow compared to shuttling, recovery from bleaching comes only from redistribution of unbleached molecules. The nuclear sequestered population is not exported to the cytoplasm, while the cytoplasmic sequestered population is unavailable to enter the nucleus and replenish the population of unbleached molecules there, leading to a reduced nuclear to cytoplasmic ratio after equilibration of the free dark and fluorescent molecules through exchange (Figure 2g,h, Appendix 1). The parameters obtained from fitting this model to our data suggest that initial accumulation of SMAD4 in the nucleus reflects both a lower export rate and a reduction in cytoplasmic sequestration (Figure 2i,j). Adaptation, however, does not result from altering shuttling kinetics, but instead reflects reduced nuclear sequestration and increased cytoplasmic sequestration. Thus, taken together, our FRAP data and mathematical modeling suggest a mechanism of adaptation that relies on negative feedback and acts by modulating sequestration rather than nuclear exchange rates.\n\n### Transcriptional dynamics of differentiation targets follows SMAD4 dynamics\n\nNext, we evaluated transcriptional dynamics downstream of BMP4 and Activin using qPCR, which showed that BMP targets are stably induced (Figure 3a), while differentiation targets of Nodal show adaptive transcription on a timescale consistent with SMAD4 signaling (Figure 3b). Moreover, shared targets of the pathways were found to be transcribed adaptively in response to Activin and stably in response to BMP4 (Figure 3c, Figure 3\u2014figure supplement 1a). In contrast, the transcription of NODAL, WNT3, and their inhibitors LEFTY1 and CER1 were sustained upon Activin treatment (Figure 3d). Molecularly, the two classes of transcriptional dynamics in response to Activin may reflect differential requirements for SMAD4 signaling levels with lower levels required to maintain the targets with sustained dynamics so that these are continuously transcribed due to the baseline signaling following adaptation. Alternatively, transcription of these genes may require only SMAD2/3 activation, which is more sustained than that of SMAD4 (Figure 1\u2014figure supplement 1e,g,h). The differences in expression of these sets of targets are not due to differences in mRNA stability as mRNAs for stably expressed genes were found to decline rapidly upon pathway inhibition with SB431542 indicating a need for ongoing signaling to maintain expression (Figure 3\u2014figure supplement 1g).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/40526/elife-40526-fig3-v1.jpg)\n\n**Figure 3.:** (a, b) qPCR measurements of transcriptional response to BMP4 treatment (a) and of differentiation targets to Activin (b) y-axes show relative CT values. (c) Transcription of the shared Activin/BMP4 target HAND1 after BMP4 (blue) or Activin (red) treatment. (d) Non-adaptive response to Activin of ligands and inhibitors involved in initiating the primitive streak. (e) Transcriptional response to Activin under pluripotency maintaining conditions (red) and mesendoderm differentiation conditions (blue) of Activin target LHX1 (e) and joint Activin/Wnt target EOMES (f). Error bars represent standard deviations over three replicates. Logarithms are base 2.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/40526/elife-40526-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (a) Transcriptional response of NOGGIN to BMP4 (blue) and Activin (red) follows SMAD4 dynamics of respective pathways. (b-d) Genes in several functional classes show non-adaptive transcriptional response to Activin. (b) Non-cell fate related (TGF-\u03b2 targets). (c) Differentiation genes, MIXL1 is an exception and responds non-adaptively to Activin, SOX17 does not respond in the pluripotent state. (d) Pluripotency genes. (e) CER1 is a non-adaptive target of Activin that behaves identically under under pluripotency (+FGF) and differentiation (+Wnt) conditions. (f) Like EOMES, BRA response is enhanced under differentiation conditions but the dynamics are qualitatively similar. (g) Decline in expression levels after SB treatment in mTeSR medium shows mRNA half lives of 1\u20134 hr.\n\nThe sustained transcription of Nodal and Wnt pathway ligands and inhibitors may be required to activate the positive feedbacks between the Nodal and Wnt pathways, which are known to be involved in establishing the primitive streak, the region of the mammalian embryo where mesoderm and endoderm form (Ben-Haim et al., 2006). This suggests a picture where stable transcription of the ligands and inhibitors allows for the establishment of signaling patterns in the embryo, while cells receiving these signals to differentiate interpret them according to their dynamics. Several other genes not related to mesendoderm differentiation were also found to be stably induced by Activin (Figure 3\u2014figure supplement 1b\u2013d).\n\nThe measurements above were performed by adding Activin to mTeSR1 media which contains high levels of FGF. Activin/Nodal signaling plays a dual role in the early embryo and is involved in both maintaining pluripotency, and differentiation to primitive streak fates. It maintains epiblast pluripotency in combination with FGF (James et al., 2005; Vallier et al., 2005), and while differentiation genes are transiently induced by Activin treatment in the presence of only FGF, cells do not robustly differentiate. In contrast, Activin induces primitive streak fates when Wnt is present. We asked whether target genes also respond adaptively to Activin/Nodal signaling during this differentiation. Initial transcriptional response was found to be qualitatively similar with or without Wnt activation, although shared targets of Wnt and Activin such as the mesendodermal markers EOMESODERMIN (EOMES) and BRACHYURY (BRA) showed a stronger response and were stably reactivated following adaptation on longer time scales (Figure 3e,f, Figure 3\u2014figure supplement 1e,f).\n\n### BMP4 response reflects concentration, Activin response reflects rate of concentration increase\n\nSustained response to BMP4 suggests sensing of ligand concentration. In contrast, adaptive response to Activin with dose-dependent amplitude suggests sensing of ligand rate of increase. We directly tested whether cells are sensitive to the rate of increase of Activin, but not BMP4, by slowly raising ligand concentrations (concentration ramp) and comparing the response with the response to a single step to the same final dose (Figure 4a,d). If cells are primarily sensitive to ligand doses, the step and ramp should eventually approach the same final activity, while if cells are sensitive to the rate of ligand increase, the response to the ramp should be reduced. As expected, BMP4 signaling responses to the ramp and step approached each other as ramp concentration increased, while Activin signaling was dramatically reduced in the case of the ramp (Figure 4b,e). Moreover, transcriptional dynamics of the shared target HAND1 matched the signaling pattern and showed dramatically reduced transcription in response to the Activin but not the BMP ramp (Figure 4c,f). As noted in the discussion of Figure 1e, the BMP response is switch-like with increasing dosage, and this was reflected by the ramp approaching the levels of the step within the first few increases. Similar results were obtained for other adaptive Activin targets, in contrast to non-adaptive Activin targets which, as expected, also showed sustained transcription in response to the ramp (Figure 4\u2014figure supplement 1). Finally, we varied the rate of the ramp of Activin and found that intermediate rates of increase also yielded intermediate signaling responses (Figure 4g,h).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/40526/elife-40526-fig4-v1.jpg)\n\n**Figure 4.:** (a, d)\u00a0Ligand concentration over time for slow ramp (blue) or sudden step (red) in BMP4 (a) or Activin (d). (b, e) SMAD4 signaling response to BMP4 (b) or Activin (e). (c, f) Transcriptional response of HAND1 to concentration ramp versus step for BMP4 (c) or Activin (f). Error bars in qRT-PCR data (c,\u00a0f) represent standard deviations over three replicates. (g, h) Activin response to different ramp rates and step sizes. In (b,\u00a0e,\u00a0h) small hourly wiggles are artifacts of performing media changes and do not reflect actual signaling responses.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/40526/elife-40526-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (a) Transcription of MIXL1, a non-adaptive Activin target reaches the same levels after Activin ramp and step. (b,\u00a0c) Transcriptional response of MESP1 (b) and NOG (c) to Activin ramp and step shows reduced transcription for ramp. (d) Transcriptional response of ID2 to BMP4 ramp and step.\n\n### Repeated rapid increases in Activin/Nodal enhance differentiation to primitive streak fate\n\nMorphogens control cell fate, and the dependence of transcription of mesodermal and endodermal genes on Activin rate of increase suggests rapid Activin increase may boost differentiation to these fates. We hypothesized that exposing cells to repeated rapid increases by pulsing the level of Activin could enhance this effect. To rigorously test this hypothesis, we grew cells in differentiation conditions and compared pulses that switch between high and low doses of Activin with a sustained high Activin dose while performing media changes at the same times (\u2018dummy pulses\u2019) (Figure 5a). Each pulse of Activin elicited a strong response in the translocation of SMAD4 to the cell nucleus, while no such responses were seen in response to the dummy pulses (Figure 5b). Differentiation to mesendooderm as marked by Bra expression was also enhanced under pulsed conditions (Figure 5c,d), despite the reduced integrated ligand exposure. Continuous exposure to lower doses of Activin and treating cells with Activin for the same total time as the three pulses but in a single pulse showed that the effect is specific to pulsed Activin and not a consequence of simply reducing the integrated Activin exposure (Figure 5e\u2013g, Figure 5\u2014figure supplement 1).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/40526/elife-40526-fig5-v1.jpg)\n\n**Figure 5.:** (a) Schematic of pulse experiment, graph shows ligand concentration, controls receive media changes at the same time as the pulsed well. (b) SMAD4 signaling profile in response to Activin pulses (red), high Activin (yellow), and no Activin (blue). (c) Immunofluorescence staining for BRA after high constant Activin or pulsed Activin. Scalebar 100 \u03bcm. (d) Distribution of BRA expression per cell (Ncells per condition\u00a0~6\u00a0\u00d7\u00a0103) determined from immunofluorescent images (c). (e,\u00a0f,\u00a0g) Dose response series showing BRA expression monotonically increases with Activin dose, and therefore the effect of pulses is not due to reduced average Activin exposure. (e) Immunofluorescence staining for BRA after 34 hr differentiation with different doses of Activin. (f) Distributions of BRA intensity per cell in the images containing (d). (g) Cumulative distributions of BRA intensity.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/40526/elife-40526-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (a-c) Comparison of BRA expression in hESCs exposed to either three short pulses of high Activin concentration or to a single pulse with same total duration, demonstrating that the effect of pulses is not simply due to reduced overall time in Activin. (a) Schematic of the protocol. (b) Immunofluorescence stainings for BRA. Scalebar 100 \u03bcm. (c) Quantification of the distribution of BRA intensities in single cells (Ncells per condition\u00a0~6\u00a0\u00d7\u00a0103).\n\n### Rapid changes in endogenous Nodal signaling occur during self-organized patterning\n\nTo test whether rapid concentration increases are relevant to endogenous Nodal during embryonic patterning, we turned to micropatterned colonies of hESCs treated with BMP4. These colonies differentiate in a spatial pattern with reproducible rings of extraembryonic cells and all three germ layers, and represent a model for the patterning associated with gastrulation in the human embryo (Heemskerk and Warmflash, 2016; Warmflash et al., 2014). Nodal signaling is required for the formation of mesoderm and endoderm within these colonies, and both small molecule inhibition and genetic knockout of Nodal drastically reduce mesendoderm differentiation (Chhabra et al., 2018; Warmflash et al., 2014). For the dynamics described here to be relevant, Nodal signaling should evolve rapidly compared to the timescale for adaptation, and we should observe rapidly changing signaling patterns with the GFP:SMAD4 reporter. In contrast, if cells read a stable gradient of Nodal protein during patterning, as posited by classic models, we would expect correspondingly stable patterns in signaling and the adaptive dynamics would not be relevant.\n\nTo distinguish these hypotheses, we used live imaging to observe SMAD4 signaling in micropatterned colonies during the 42 hr in which these patterns form (Figure 6a-c). The cells initially respond uniformly to the BMP4 treatment. The response then is restricted to the colony edge by approximately 12 hr (Figure 6a,b), and this pattern is maintained until approximately 25 hr. Beginning at 25 hr, a wave of increased nuclear SMAD4 spreads inward again from the edge (Figure 6a,c). SMAD4 convolves the BMP and Nodal responses, and we hypothesized that the stable response at the edge of the colony represents BMP signaling while the inward moving wave results from Nodal signaling. To test this, we looked at the pathway specific SMAD1 and SMAD2/3 (Figure 6d-g). These confirmed that the BMP-specific active SMAD1 signaling remains restricted to the edge (Figure 6f), while the Nodal transducer SMAD2/3 activity spreads rapidly inward from the colony edge between 24 and 36 hr (Figure 6e). The SMAD2/3 and SMAD4 signal transducers reveal a rapidly evolving Nodal distribution with a wavefront that moves through the colony at approximately one-cell diameter (10 \u03bcm) per hour. The velocity of the Nodal wavefront suggests that individual cells see Nodal levels increase rapidly in 1 hr, consistent with the time scale of ligand increase required for strong response to exogenous ligand in the previous experiments. Importantly, this wave of signaling activates Bra expression in its wake (Figure 6g,h). This indicates that rapid increases in endogenous Nodal signaling are associated with mesoderm differentiation in this model of human gastrulation.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/40526/elife-40526-fig6-v1.jpg)\n\n**Figure 6.:** (a) Average radial profile of SMAD4 signaling over time (kymograph) in micropatterned colonies after BMP4 treatment (N\u00a0=\u00a04 colonies). (b) SMAD4 signaling in single colony at 40 hr. (c) Radial SMAD4 signaling profiles at discrete times from 20 hr to 40 hr. (d) Immunofluorescence staining 40 hr after BMP4 treatment for pSMAD1, SMAD2/3 and BRA. (e,\u00a0f,\u00a0g) Normalized radial profiles of SMAD2/3 (e) pSMAD1 (f) and BRA (g) averaged over N\u00a0>\u00a05 colonies per time. (h) Half-maximum versus time for SMAD2/3 (blue), SMAD4 (purple) and pSMAD1 (red) and BRA expression domain defined by a threshold of at least 20% of maximal expression (yellow). In all panels, error bars represent standard deviations taken over different colonies.\n\n## Discussion\n\nOur work shows that morphogens in the mammalian embryo do not act in a purely concentration-dependent matter and has revealed an important role for Activin/Nodal rate of change in specifying cell fate as a consequence of adaptive signaling. Adaptive signaling could serve to restrict the response to a narrow competence window or to separate the multiple roles of a single morphogen by using distinct dynamics to selectively activate different target genes, effectively expanding the information content of the morphogen gradient (Selimkhanov et al., 2014).\u00a0It is currently unclear whether adaptive signaling is an intrinsic feature of the Activin/Nodal pathway or is context dependent. A recent study found that Activin target genes are induced more stably when cells are also treated with Wnt, but that the dynamics of Smad2 translocation were not affected (Yoney et al., 2018).\u00a0For Wnt, costimulation with Activin or BMP switches the dynamics of Wnt signaling from transient to sustained, and it will be interesting to determine whether Activin/Nodal signaling is sustained in some contexts (Massey et al., 2019).\n\nActivin and Nodal are generally thought of as text-book morphogens acting in a concentration-dependent manner (Gilbert, 2014). This is based on experiments in which an artificial gradient is created by placing an Activin-soaked bead in an intact animal cap or in which dissociated Xenopus animal cap cells are exposed to a range of Activin concentrations (Green et al., 1992; Gurdon et al., 1994). It is important to note that these experiments are not inconsistent with our findings. In both cases, the highest concentration corresponds to the highest rate of concentration increase, and our results also show the peak of the transient signaling response induced by a step increase is dose-dependent. This fact could underlie the differences in cell fates observed in dissociated animal cap cells.\n\nOur results are in contrast to those for another well-characterized system, the patterning of the neural tube by Shh, which has also been shown to be adaptive and regulates cell fate decisions through a described gene regulatory network (Balaskas et al., 2012). In that case, adaptation depends on upstream inhibition and results in a relatively constant integrated signaling output in which time and duration can be interchanged (Dessaud et al., 2007). This interchangeability between concentration and\u00a0duration can be achieved by upstream feedback such as degradation of activated receptors. Intuitively, increasing ligand concentration increases the response but also leads to more rapid degradation of receptors limiting the response in time.\n\nSeveral lines of reasoning argue that adaptation in Activin/Nodal signaling follows a different mechanism, with consequences for cell fate. The signaling behavior of our system is qualitatively different, as there is no tradeoff between concentration and duration of strong signaling. Longer exposure to ligand does not increase the duration of signaling because the system has already adapted, and reactivating\u00a0the\u00a0pathway can only be achieved by pulsing rather than extending the duration of ligand\u00a0exposure. Interestingly, there is a low level of baseline signaling following adaptation which is maintained by continued ligand exposure. Given the distinct classes of target genes we found responding to each aspect of the signal (baseline and adaptive pulse), this may demonstrate the principle that dynamic signals relay more information through a single pathway, with one set of target genes responding to signal duration, and another to rapid signal increase.\n\nIn addition to the qualitative behavior being inconsistent with a system that integrates signal, like the neural tube, our quantitative data and mathematical modeling rule out the mechanism that would most naturally implement such a behavior, namely adaptation through degradation. First, our FRAP measurements show that the adapted state is kinetically distinct from the pre-signaling state, while the degradation model would predict a return to the same state. Second, we show analytically in Appendix 1 that a model based on upstream feedback cannot account for our dynamic measurements because in order to adapt through receptor degradation, the timescale for recovery must be slower than that for adaptation, which is not what we find in our pulsing experiments. It will be interesting to elucidate the genetic network that interprets adaptive Nodal signaling and to compare it with the one that interprets Shh.\n\nOur conclusions regarding signaling dynamics rely on nuclear localization of Smads as a proxy for signaling activity. The validity of this measure is supported by strong correlation between SMAD2 nuclear localization and pSMAD2 levels, as well as the fact that transcriptional activity of a number of direct targets mirrors nuclear SMAD4 both in this paper and in previous work (Warmflash et al., 2012). Although some target genes do not follow this time course, it is important to note that target gene dynamics represent those of signaling filtered through a specific promoter (Dubrulle et al., 2015). For example, a promoter with high affinity for the signal transducer will saturate at low levels and will not reflect fluctuations in signaling that remain above these levels. Although it was shown that blocking nuclear export of Smad4 does not interfere with function of the pathway (Biondi et al., 2007), this does not invalidate our conclusions, as blocking nuclear export of Smad4 destroys the strong correlation between pathway activity and nuclear localization by artificially keeping Smad4 in the nucleus following the termination of transcription.\n\nAlthough relatively unexplored in the context of\u00a0development, adaptive signaling is a common feature of biological systems. Well-studied examples in bacteria include the chemotactic response where adaptive signaling allows cells to sense the rate of change and move to areas of higher nutrients (Block et al., 1983), and the \u03c3b response where it allows cells to sense the rate of increase of environmental stress (Young et al., 2013). In mammalian cells, stimulation with TNF\u03b1 leads to a transient pulse of NF\u03baB signaling, followed by a low, sustained baseline, and this has been suggested to allow specificity in target gene activation with different targets responding to different features of the dynamics (Hoffmann et al., 2002). Similarly, DNA damage has been shown to give rise to stereotyped pulses of p53 signaling due to negative feedback (Lahav et al., 2004).\n\nIt will be important to understand how our results fit with current protocols for directed stem cell differentiation which typically perform a single media change per day and therefore do not take advantage of potential enhancements resulting from optimizing ligand dynamics. Routinely, ranges of ligand concentration are explored to optimize differentiation protocols. Our results suggest a different approach that starts with characterizing the signaling dynamics during each cell fate decision and then optimizing the relevant dynamics of ligand presentation. As such, we believe the results presented here will serve as a basis for a dynamic understanding of embryonic patterning and stem cell differentiation.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Cell line (Homo sapiens)</td>\n      <td>ESI017</td>\n      <td>ESIBIO</td>\n      <td>RRID:CVCL_B85</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cell line (H. sapiens)</td>\n      <td>RUES2</td>\n      <td>Ali Brivanlou (Rockefeller)</td>\n      <td>RRID:CVCL_B810</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Goat polyclonal anti-Brachyury</td>\n      <td>R and D Systems</td>\n      <td>RRID:AB_2200235</td>\n      <td>(1:400)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Rabbit monoclonal anti-Sox2</td>\n      <td>Cell Signaling Technologies</td>\n      <td>RRID:AB_1904142</td>\n      <td>(1:200)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Mouse monoclonal anti-Nanog</td>\n      <td>BD Biosciences</td>\n      <td>RRID:AB_1645598</td>\n      <td>(1:400)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Mouse monoclonal anti-Smad2/3</td>\n      <td>BD Biosciences</td>\n      <td>RRID:AB_398162</td>\n      <td>(1:100)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Rabbit monoclonal anti-pSmad1</td>\n      <td>Cell Signaling Technologies</td>\n      <td>RRID:AB_2493181</td>\n      <td>(1:100)</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Image processing and data analysis code</td>\n      <td>This study</td>\n      <td>https://github.com/idse/stemcells/ commit a5ee164</td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### Cell lines\n\nThe cell lines used were ESI017 and RUES2 GFP:Smad4 RFP:H2B. ESI017 cells were obtained directly from ESIBIO while RUES2 were a gift of Ali Brivanlou (Rockefeller University). The identity of these cells as pluripotent cells was confirmed via triple staining for pluripotency markers OCT4, SOX2, and NANOG. All cells were routinely tested for mycoplasma contamination and found negative.\n\n### Cell culture and differentiation protocols\n\nThe cell lines and their maintenance are described in Nemashkalo et al. (2017). For all experiments except micropatterning, cells were seeded at a low density of 6\u00a0\u00d7\u00a0104 cells per cm2 and grown with rock-inhibitor Y27672 (10 uM; StemCell Technologies). This ensured uniform response to exogenous ligand and minimized the effect of secondary endogenous signaling. Unless otherwise indicated in the figures, experiments in Figures 1\u20133 were done in mTeSR1 medium (StemCell Technologies) (also referred to as pluripotency conditions), and cells were treated with 50 ng/ml Activin A (R and D Systems) or 50 ng/ml BMP4 (R and D Systems). Noggin was used at 500 ng/ml. SB431542 at 10 \u03bcM. Differentiation conditions in\u00a0Figure 3e,f are defined as Essential six medium (Gibco)\u00a0+3 \u03bcM CHIR99021 (StemCell technologies).\n\n### Imaging and image analysis\n\nLive imaging was done on an Olympus/Andor spinning disk confocal microscope with a 40\u00d7, NA 1.25 silicon oil objective. Immunofluorescence data for Figure 5 were collected using a 20\u00d7, NA 0.75 objective on an Olympus IX83 inverted epifluorescence microscope. Fixed micropatterned colonies for Figure 6 were imaged using an 30x NA 1.05 silicon oil objective on an Olympus FV1200 laser scanning confocal microscope. All image analysis used Ilastik (Sommer et al., 2011) for initial segmentation and custom written MATLAB code, available at https://github.com/idse/stemcells for further analysis (Heemskerk, 2019; copy archived at https://github.com/elifesciences-publications/stemcells). Figure 1\u2014figure supplement 1a shows how Smad4 nuclear to cytoplasmic ratio, our measure for signaling intensity, is defined from the segmentation by subtracting the mean value in the background mask from nuclear and cytoplasmic masks for each cell. Smad2/3 signaling was similarly measured by nuclear to cytoplasmic ratio. Since pSmad1 and Bra are purely nuclear, these were measured by nuclear intensity, normalized by DAPI to correct for intensity variation due to optics.\n\n### FRAP\n\nFRAP experiments were done on an Olympus FV1200 laser scanning confocal microscope using a 100x NA 1.49 oil objective. To deal with cell movement recovery, curves were obtained by reading out a polygon defined by the interpolation between the initial bleach window and a manually defined polygonal nuclear mask in the final frame. Supplemental Information describes the mathematical model for nuclear localization of Smad4 which is shown schematically in Figure 2g,h, and the inference of model parameters shown in Figure 2i,j from the data.\n\n### qPCR\n\nFor qPCR experiments, ESI017 cells were grown in 24-well plates. RNA was extracted using Ambion RNAqueous-Micro Total RNA Isolation Kit and cDNA synthesis was performed with Invitrogen SuperScript Vilo cDNA Synthesis Kit according to the manufacturer\u2019s instructions. Measurements were performed with SYBR green and the primers in the Table 1. ATP5O was used for normalization in all experiments.\n\n**Table 1.**\n qPCR primers used in this study.\n\n\n<table>\n  <tbody>\n    <tr>\n      <td>ATP5O</td>\n      <td>ACTCGGGTTTGACCTACAGC</td>\n      <td>AAAATGAACGGACAGAACCG</td>\n    </tr>\n    <tr>\n      <td>BRA</td>\n      <td>TGCTTCCCTGAGACCCAGTT</td>\n      <td>GATCACTTCTTTCCTTTGCATCAAG</td>\n    </tr>\n    <tr>\n      <td>CER</td>\n      <td>ACAGTGCCCTTCAGCCAGACT</td>\n      <td>ACAACTACTTTTTCACAGCCTTCGT</td>\n    </tr>\n    <tr>\n      <td>GATA3</td>\n      <td>TTCCTCCTCCAGAGTGTGGT</td>\n      <td>AAAATGAACGGACAGAACCG</td>\n    </tr>\n    <tr>\n      <td>HAND1</td>\n      <td>GTGCGTCCTTTAATCCTCTTC</td>\n      <td>GTGAGAGCAAGCGGAAAAG</td>\n    </tr>\n    <tr>\n      <td>ID2</td>\n      <td>GCAGCACCTCATCGACTACA</td>\n      <td>AATTCAGAAGCCTGCAAGGA</td>\n    </tr>\n    <tr>\n      <td>ID4</td>\n      <td>CCCTCCCTCTCTAGTGCTCC</td>\n      <td>GTGAACAAGCAGGGCGAC</td>\n    </tr>\n    <tr>\n      <td>LEFTY1</td>\n      <td>ACCTCAGGGACTATGGAGCTCAGG</td>\n      <td>AGAAATGGCCAATTGAAGGCCAGG</td>\n    </tr>\n    <tr>\n      <td>LHX1</td>\n      <td>TCCCCAATGGTCCCTTCTC</td>\n      <td>CGTAGTACTCGCTCTGGTAATCTCC</td>\n    </tr>\n    <tr>\n      <td>MIXL1</td>\n      <td>CCGAGTCCAGGATCCAGGTA</td>\n      <td>CTCTGACGCCGAGACTTGG</td>\n    </tr>\n    <tr>\n      <td>NANOG</td>\n      <td>CCGGTCAAGAAACAGAAGACCAGA</td>\n      <td>CCATTGCTATTCTTCGGCCAGTTG</td>\n    </tr>\n    <tr>\n      <td>NODAL</td>\n      <td>ATGCCAGATCCTCTTGTTGG</td>\n      <td>AGACATCATCCGCAGCCTAC</td>\n    </tr>\n    <tr>\n      <td>NOG</td>\n      <td>CATGAAGCCTGGGTCGTAGT</td>\n      <td>TCGAACACCCAGACCCTATC</td>\n    </tr>\n    <tr>\n      <td>OCT4</td>\n      <td>GGGCTCTCCCATGCATTCAAAC</td>\n      <td>CACCTTCCCTCCAACCAGTTGC</td>\n    </tr>\n    <tr>\n      <td>SOX2</td>\n      <td>CCATGCAGGTTGACACCGTTG</td>\n      <td>TCGGCAGACTGATTCAAATAATACAG</td>\n    </tr>\n    <tr>\n      <td>TBR2/EOMES</td>\n      <td>CACATTGTAGTGGGCAGTGG</td>\n      <td>CGCCACCAAACTGAGATGAT</td>\n    </tr>\n    <tr>\n      <td>WNT3</td>\n      <td>CTCGCTGGCTACCCAATTT</td>\n      <td>GAGCCCAGAGATGTGTACTGC</td>\n    </tr>\n  </tbody>\n</table>\n\n### Pulses\n\nFor pulse and dose response experiments in Figure 5, differentiation was done in Essential six medium\u00a0+1 uM CHIR99021\u00a0+20 ng/ml bFGF (Life Technologies)+10 uM Y27672 with 30 ng/ml Activin added as indicated in the figures. Time between pulses was always 5 hr to allow the pathway to relax. Duration of individual pulses was chosen for experimental convenience and lengths of pulses shown in Figure 5 are 6, 10, and 8 hr. Controls were subjected to media changes at the same time. During media changes, cell were washed three times with PBS.\n\n### Micropatterning\n\nFor micropatterned colonies, we followed the protocol in Deglincerti et al. (2016) using the chemically defined medium mTeSR1. For fixed micropatterns, we used the CYTOO Arena EMB chip and analyzed the 800 um colonies, while for live imaging we used a CYTOO 96-well plate RW DS-S-A, which has 700 um colonies. For the analysis in Figure 6, radial profiles of SMAD1 and SMAD2/3 were normalized to have the lowest signaling level be zero and the highest be one in at each time, as minimal and maximal levels were similar at each time and only their spatial distribution varied. SMAD4 was normalized such that its maximum over all positions interior in the colony to the most interior half-maximum of pSMAD1 intensity was equal to one. This position was chosen for normalization as it reflects the peak of Nodal-dependent SMAD4 signaling. Finally, because BRA levels change substantially, BRA at all times was normalized to the maximum of the latest time (48 hr).\n\n### Immunostaining\n\nFixing and immunostaining\u00a0of cells was done as described in\u00a0Nemashkalo et al. (2017). Table 2 lists the antibodies that were used.\n\n**Table 2.**\n Antibodies used for immunofluorescence in this study.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Protein</th>\n      <th>Species</th>\n      <th>Dilution</th>\n      <th>Catalog no.</th>\n      <th>Vendor</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>BRA</td>\n      <td>Goat</td>\n      <td>1:400</td>\n      <td>AF2085</td>\n      <td>R and D Systems</td>\n    </tr>\n    <tr>\n      <td>SOX2</td>\n      <td>Rabbit</td>\n      <td>1:200</td>\n      <td>5024S</td>\n      <td>Cell Signaling Technology</td>\n    </tr>\n    <tr>\n      <td>NANOG</td>\n      <td>Mouse</td>\n      <td>1:400</td>\n      <td>560482</td>\n      <td>BD Biosciences</td>\n    </tr>\n    <tr>\n      <td>SMAD2/3</td>\n      <td>Mouse</td>\n      <td>1:100</td>\n      <td>610842</td>\n      <td>BD Biosciences</td>\n    </tr>\n    <tr>\n      <td>pSMAD1</td>\n      <td>Rabbit</td>\n      <td>1:100</td>\n      <td>13820</td>\n      <td>Cell Signaling Technology</td>\n    </tr>\n  </tbody>\n</table>\n\n### Replicates, sample sizes, and error bars\n\nAll experiments were performed at least twice. Data shown are from representative experiments, except for FRAP data, where data from multiple experiments are pooled because of the difficulty of performing FRAP on a sufficient number of cells in a given experiment. Error bars on single-cell data (SMAD4 signaling dynamics, pSMAD1, SMAD2/3, BRA, and HAND1 immunostainings) are standard error over cells. Full distributions are also provided to show cell-to-cell variability. Error bars on qRT-PCR data are over technical replicates due to the difficulty of quantitatively comparing biological replicates, likely owing to differences in culture densities, timing between seeding and ligand stimulation, and other culture variables, however, multiple biological replicates were performed in all cases. Error bars in micropatterning experiments are standard deviation over colonies. For single-cell imaging experiments, at least 600 cells were measured for each condition, for FRAP experiments at least 12 cells were measured for each condition, and for micropatterning experiments at least five colonies were analyzed for each condition.\n\n### Supplemental information\n\nSupplemental information includes four figures, three movies, and an Appendix on mathematical modeling.\n",
+      "created_at": "2025-12-02T08:57:36.700843Z"
+    },
+    {
+      "id": "62c07762-d3fd-4558-b596-f6b4a27d21de",
+      "submission_id": "b3bd1726-290f-471d-8f55-92fffffc2d66",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Roel Nusse, Stanford University United States\n\nReviewers:\n- Kyle M Loh, Stanford University United States\n- Roy Wollman, University of California, San Diego United States\n\n## Review text\n\nDOI: [10.7554/eLife.40526.031](https://doi.org/10.7554/eLife.40526.031)\n\nIn the interests of transparency, eLife includes the editorial decision letter, peer reviews, and accompanying author responses.\n\n[Editorial note: This article has been through an editorial process in which the authors decide how to respond to the issues raised during peer review. The Reviewing Editor's assessment is that all the issues have been addressed.]\n\nAcceptance notification:\n\nThe manuscript addresses the important question whether hESCs respond to changing concentrations of growth factors, in particular how BMP4 and Nodal control the various cell-fate decisions that hESCs take. It is shown that the response to BMP4 depends on the absolute concentration of the factor. In contrast, the response to the BMP-related Nodal signal depends on the rate of change in concentration. These findings will guide other investigators to consider the dynamics of signaling pathways and their concentrations in experiments manipulating stem cells differentiation.\n\nDecision after peer review:\n\nThank you for submitting your article \"Rapid changes in morphogen concentration control self-organized patterning in human embryonic stem cells\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Naama Barkai as the Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Kyle M Loh (Reviewer #1) and Roy Wollman (Reviewer #3). Reviewer #2 remains anonymous.\n\nBy measuring the dynamics of an endogenously tagged Smad4 fluorescent reporter, the authors provide evidence for adaptive responses of theTGF-\u03b2 pathway to Nodal/Activin morphogens, They demonstrate that hESCs at sparse densities can sense the rate of change of ligand concentration. This work presents a quantitative approach to an important developmental pathway and should be of broad interest.\n\nMajor concerns:\n\nThe reviewers make a number of suggestions for further improvement of the manuscript. The comments are mostly restricted to the interpretation of the experiments and would require few if any new experimental data. We suggest taking these comments into account in resubmitting this work to eLife.\n\nSeparate reviews (please respond to each point):\n\nReviewer #1:\n\nThe temporal kinetics with which signaling pathways operate have generally been overlooked. Previous work by Warmflash and colleagues in cultured C2C12 cells suggested that TGF\u03b2 signaling is transient (i.e., cells respond to TGF\u03b2 ligands only for several hours) and adaptive (i.e., cells do not sense the absolute concentration of TGF\u03b2 ligands but rather they sense the rate of change, with large and sudden changes in TGF\u03b2 concentrations leading to the strongest responses) (Warmflash et al., 2012 and Sorre et al., 2014). However, whether C2C12 cells are a physiological model is questionable. In recent work with human embryonic stem cells (hESCs) it seems that a closely related signaling pathway, BMP, shows quite different dynamics: BMP4 treatment of hESCs leads to sustained (not transient) BMP signaling for many hours (Nemashkalo et al., 2017).\n\nIn the present submission, Heemskerk et al. perform a side-by-side comparison of the temporal dynamics of TGF\u03b2 and BMP signaling in hESCs. Monitoring nuclear translocation of SMAD4 by live imaging, they confirm that BMP4 treatment leads to sustained SMAD4 nuclear translocation in hESCs (thus reproducing their prior results reported in Nemashkalo et al., 2017) whereas ACTIVIN treatment leads to transient SMAD4 nuclear localization (Figure 1B-D). Indeed, many BMP target genes show sustained upregulation in response to BMP4, whereas TGF\u03b2 target genes show a mixed pattern of either transient or sustained upregulation in response to ACTIVIN (Figure 2). Using sophisticated microfluidic methods to control the rate of ligand delivery, they suggest that TGF\u03b2 (but not BMP) signaling relies on the change of ligand concentration (i.e., its time-derivative but necessarily the absolute concentration; Figure 3) and further that there is a traveling wave of TGF\u03b2 activity in BMP4-treated hESC colonies of defined sizes (Figure 4). By virtue of the transient and adaptive nature of TGF\u03b2 signaling, the authors conclude by suggesting that temporal pulses of ACTIVIN treatment might be best to efficiently upregulate BRACHYURY (Figure 4D).\n\nOverall, the suggestion that TGF\u03b2 and BMP signaling kinetics (on the scale of hours) could be quite different is intriguing. The Discussion is excellently written, and appropriately emphasizes that a mechanistic understanding of the kinetics with which these pathways signal could greatly enrich both stem cell and developmental biology.\n\nMajor critiques:\n\n1) SMAD4. The authors measure the activity of the TGF\u03b2 as well as BMP pathways by principally assessing a single metric: SMAD4 nuclear localization. However it is controversial whether SMAD4 localization as a single metric can accurately describe the total levels of TGF\u03b2 and BMP pathway activity. There are some reports that only a subset of TGF\u03b2 target genes require SMAD4 (e.g., Levy and Hill, 2005). If there is SMAD4-independent TGF\u03b2 signaling, it is therefore plausible that certain TGF\u03b2 target genes could still be transcribed (i.e., the TGF\u03b2 pathway is activated) in the window of time when SMAD4 is not in the nucleus (i.e., in the \"adaptation\" phase that the authors identify). If so, SMAD4 nuclear localization might only partially readout TGF\u03b2 signaling, which could therefore complicate the interpretation of the authors' data. Indeed, the authors show that upon ACTIVIN exposure for 5 hours (a timepoint by which SMAD4 has largely vacated the nucleus; Figure 1D), a number of TGF\u03b2 target genes (LEFTY1, NODAL, CER1 and WNT3) still continue to be transcribed (Figure 2D), indicating the possibility that SMAD4 nuclear localization does not completely reflect the degree/extent of TGF\u03b2 signaling. Could the authors perform luciferase reporter assays of ACTIVIN-treated hESCs to examine whether TGF\u03b2 transcriptional responses are truly transient? It would be preferable for the authors to perform live imaging of endogenously-expressed, labeled SMAD2/3 or SMAD1/5/8 proteins to examine their subcellular localization upon ACTIVIN or BMP treatment, respectively, but this is unreasonable to ask the authors to conduct in a short span of time. Barring those experiments, the authors might want to confine their conclusions to refer to \"SMAD4-dependent TGF\u03b2 and BMP signaling\" as opposed to \"TGF\u03b2 and BMP signaling\". For instance, would it be more accurate to specifically say that SMAD4-dependent TGF\u03b2 signaling (as opposed to TGF\u03b2 signaling altogether) is transient and adaptive?\n\n2) SMAD4 signal-to-noise ratio. Their live imaging data suggests that upon ligand stimulation, the increase in nuclear SMAD4 is modest (2-fold or less; Figure 1D). This is rather surprising, because one might anticipate a massive change in SMAD4 levels is needed to drive large transcriptional changes. The modest SMAD4 signal-to-noise ratio also raises questions about the authors' subsequent and quite detailed analysis of temporal dynamics, adaptation and so on. Why is the signal-to-noise ratio so modest? One possibility is that there are high nuclear SMAD4 levels in the steady-state (i.e., there is high SMAD4 background), perhaps because the authors' hESCs are grown in mTeSR1 (Materials and methods), which contains 2 ng/mL of TGF\u03b21 (Ludwig et al., 2006; Nature Cell Biology), and would be expected to lead to some level of basal nuclear SMAD4. What if the authors transiently pulsed their hESCs with a TGF\u03b2 inhibitor before performing the various ACTIVIN and BMP stimulations, would this reduce their background and thus enhance the signal-to-noise ratio?\n\nMinor critiques:\n\n1) Figure 1H-J should be more clearly labeled and explained.\n\n2) \"Error bars\" erroneously merged into 1 word (Figure Legends).\n\n3) Data in the Nemashkalo et al., 2017, paper (by the same authors) seems to already suggest that BMP4 leads to sustained SMAD4 signaling, therefore it seems appropriate for Heemskerk et al. to cite this earlier work, as their Figure 1 seems to be confirming-and extending beyond-this earlier paper.\n\n4) There seem to be some strange artifacts in certain subpanels. For instance why does the orange line in Figure 3B (reflecting nuclear SMAD4 localization after sudden exposure to high BMP) jitter at regular intervals? It makes sense that the blue lines in Figure 3B,E would jitter (as they might correlate with each step of the ligand concentration increase) but not the orange line in Figure 3B.\n\n5) Similarly, in Figure 4B (red line: pulses), there seem to be discontinuous spikes in SMAD4 whenever the media is changed.\n\n6) The authors conclude that BMP4 induces sustained, whereas ACTIVIN induces transient, SMAD4 signaling, yet in Figure 4 they suggest that BMP4 might induce endogenous TGF\u03b2 signaling. One alternate interpretation of the authors' data is that maybe BMP4 itself induces a transient SMAD4 response, but that by secondarily inducing TGF\u03b2 signaling, this latter wave of TGF\u03b2 might lead to sustained SMAD4.\n\n7) Another oddity is in Figure 3C. If hESCs sense the absolute concentration of BMP4 ligand, one would expect that at low levels of BMP, they would respond weakly and at higher levels of BMP, they would respond strongly. Yet in Figure 3C, at the 2-3 hr timepoint, the \"ramp\" cells (blue line, exposed to low BMP4 at that point in time) express HAND1 mRNA almost as highly as the \"step\" cells (orange line, exposed to high BMP4 at that point in time). The only other interpretation I can think of is that maybe the low BMP4 levels in the blue line (at 2-3 hrs) are super-threshold already.\n\nReviewer #2:\n\nHeemskerk et al. provide evidence for adaptive responses of the TGF-\u03b2 pathway to Nodal/Activin morphogens. The authors elegantly measured dynamics of an endogenously tagged Smad4 fluorescent reporter that transduces both BMP and Nodal/Activin input signals, and demonstrate that at sparse densities hESCs can sense the rate of change of ligand concentration. Using mathematical models and experimental measurements of endogenously tagged Smad4, they rule out some mechanisms of pathway adaptation, and propose that Nodal/Activin adaptation occurs through reduced nuclear sequestration and/or increased cytoplasmic sequestration. Under sparse growth conditions, they also find that endogenous target genes can selectively respond to pulsatile and sustained modes of Smad4 activation resulting from Activin and BMP inputs, respectively. The authors suggest that sensing the rate of change of ligand concentration, demonstrated in sparse cultures, could be used by the mammalian embryo during mesodermal patterning, and use an in vitro model of human gastrulation to test this hypothesis. In this system, they correlate a moving front of Smad4 nuclear localization with the timing and spatial position of Brachyury expression, a transcription factor involved in mesodermal differentiation.\n\nOverall, this study brings a quantitative perspective to a central developmental pathway, and should help to further strengthen a growing sense that dynamics are critically important in the behavior of many developmental signaling pathways. It suggests that controlling ligand dynamics could facilitate directed differentiation protocols. It should therefore be of broad interest, and we support publication.\n\nBelow, we describe several issues that could be addressed to strengthen the work in a revised manuscript:\n\nMajor comments:\n\nFigures 1 and Figure 1\u2014figure supplement 1F together show that BMP4 triggers a more stable nuclear localization of BMP-responsive Smad1, while activin results in adaptive nuclear localization of Nodal-responsive Smad2/3. However, the cross-pathway dynamics are unclear. Does BMP4 affect Smad2/3 and does Activin/Nodal affect Smad1, and if so, with what dynamics? This control is important to support the authors claim that the difference in dynamics results from distinct pathway-specific transducers.\n\nFigure 2, B and D, present gene sets that show qualitatively different dynamic response to Activin. The authors suggest the interesting possibility that these sets have different sensitivities to Smad4. However, an alternative explanation could be a difference in RNA half-lives, with the monotonic responses in Figure 2D resulting from stable mRNAs that accumulate over time, effectively integrating the response. Is it possible to discriminate between these explanations (e.g. by examining nascent or intronic RNA), or at least discuss these two possibilities?\n\nFigure 3 presents an elegant comparison between ramps (staircases) and steps of BMP and Activin. The results are striking. However, two issues complicate interpretation. First, the ramp and step differ in total integrated signaling over time, making it difficult, from this single experiment, to disentangle the roles of ligand concentration and dynamics. The simplest way to address this might be to also include a step of half the amplitude, or to do a ramp at double the slope. Second, based on Figure 1 and Figure 1\u2014figure supplement 1B-C, which shows dose-dependent responses to BMP concentration, we would expect the ramp response in Figure 3B to depend on ligand dose and therefore to grow slowly over time. Why does it step up so rapidly?\n\nIn Figure 3, rate responsive behavior is demonstrated by comparing a step to a ramp. Does the Nodal pathway act as a quantitative sensor of the rate of increase of Activin, or does it exhibit some kind of rate threshold? This could be answered by showing how response depends quantitatively on the ramp slope. A mathematical model of the adaptation process could help to provide insight into the expected behavior here.\n\nRate-responsiveness in other systems. Work in bacteria (Young et al., 2013) showed similar rate-responsive behavior in the sigB stress response system, where two kinds of stresses activate sigB in different ways, with one input showing rate-responsive behavior, assayed by temporal \"ramps\" of different slopes. In that system the mechanism of rate responsiveness has been determined. It would be interesting to discuss the similarity (and differences) in signal processing behaviors between these very different biological systems.\n\nIn Figure 4, the authors suggest that during development the moving Smad4 signaling front is responsible for the activation of Brachyury expression. Although strong evidence for adaptative and rate sensing responses to Nodal/ActivinA ligands is provided for sparse hESCs cultures, the micropattern experiment cannot distinguish between a rate sensing mechanism and a pure concentration sensing mechanism. Even though Brachyury responds with higher expression to Activin pulses in sparse hESC cultures, these two experimental conditions differ in both the time scales and the number of pulses cells could perceive (i.e. in sparse culture cells are exposed to multiple Activin pulses separated by ~4.5 hours, whereas in micropattern the data is consistent with only one wave of pSmad2/3, one wave of pSmad1 and one front of Smad4 moving at 1 cell diameter (10\u00b5m) per hour, and traveling at least 150 \u00b5m to fully cover the spatial domain of brachyury expression. Since no data on dynamics of endogenous Nodal expression is provided, it remains unknown if, over time, ligand concentration is locally increasing (or oscillating) on a timescale relevant to Brachyury induction. As result, in the micropattern, in which responses to BMP and endogenous Nodal co-occur, it is unclear if cells are sensing absolute ligand concentration and/or a rapid increase in ligand concentration. Experimentally determining Nodal dynamics in micropatterns remains difficult, and perturbing its dynamics would require significant cell line engineering. Thus, an alternative avenue to support the claim that in the gastrulating human embryo expression of fate determinants results from rate sensing of ligand increments could be to computationally compare whether patterning triggered by adaptation to Nodal achieved by rate sensing rate qualitatively or quantitatively differs from patterning the mesoderm through sensing absolute ligand concentrations. What new or different emergent properties result from sensing rates as opposed to just concentrations?\n\nRelation to other dynamic encoding systems: This study provides an important advance in understanding the role of dynamics in core mammalian signaling systems. But the relationship to other work on dynamic signal encoding in signaling pathways, as reviewed for example in Purvis and Lahav (2013), Behar and Hoffmann (2010), etc. is minimal. Specifically, it would be useful to know which aspects of the Nodal system in hES resemble or differ from phenomena observed in other pathways or other cell types. For example, different target programs are activated by sustained vs pulsatile activation of p53 and Notch, among other pathways. Also, a recent report (Frick et al., 2017 PNAS) studied the response of C2C12 cells to TGFb ligands, which belong to the Activin/Nodal family and are also transduced by Smads2/3, and showed that the pathway senses fold changes. How does this fold change detection relate to the adaptive rate-responsive behavior observed here? Discussion of these issues would help to connect this study to the broader literature and unify results from multiple studies.\n\nMinor Comments:\n\nIn Figure 2, please include the base of the log on the y axis: is it 2, e, or something else?\n\nIn Figure 1E there is an orange line near the y-axis. It remains unclear if this line represents the fact that after photobleaching Smad4 fluorescence does not recover to the original amplitude.\n\nReviewer #3:\n\nThe paper by Idse et al. includes fantastic work by the authors to explore fundamental properties of mammalian signaling in an interesting developmental context using an innovative experimental system.\n\nI am very happy to participate in this \"peer-review trial in which the authors decide how to respond to the peer-review comments.\" and to learn that \"the article will almost certainly be published\".\n\nI do not have any additional experiment to suggest, the authors did a good job providing the adequate controls and I have little doubt in the correctness of the results they present.\n\nPerhaps the biggest suggestion I can make with regards to the work is that it is a bit too dense and hard to grasp. Overall the work follows three parts: 1) An analysis of mechanism for adaptation using innovative combination of FRAP and parameter identification of ODE model. 2) analysis of gene expression dynamics response to dynamic SMAD4, and 3) implication of the differences in response dynamics on overall self-organization patterns in the in-vitro gastrulation model. I will refer to these as parts 1-3 below for brevity.\n\nI am not sure why the authors restricted themselves to only four figures, although I can make an educated guess;). To make the paper easier to follow I strongly recommend to take advantage of eLife lack of restriction on length and number of figures and use the space to elaborate much more about the work.\n\nIn part 1 the author only use two paragraphs on main text to explain a lot of stuff. To understand the adaptation and the FRAP experiments one has to think about two different math models that use a parameter fitting procedure to identify underlying mechanisms. The material is mostly in the supp text, but supp text should not replace main text rather provide more details for completeness. I recommend to move some of the material from supp mat to the main text, explain the FRAP procedure, show the alternative fits for different parameters etc. This part can easily take 2-3 figures.\n\nSimilarly, part II seemed rushed. The authors show how some genes follow SMAD4 dynamics and some do not. But the sparse text doesn't allow them to go into details, what is different about these genes? Is it RNA halflife? Even without additional experiments, few simple models would be very helpful to understand Figure 2A-D. I am not sure I got the point of panels 2EF, so either explain that in more details or remove those. The different gene expression response to different stimuli regimes (Figure 3) is very nice with its demonstration of the role of SMAD4 dynamics.\n\nFinally, the last part is very short and descriptive, The author measure different SMADs over space and time, show that there are different responses and that these change gene expression. I was left a bit confused as to why these differences arise? What aspect of self-organization is in play to cause these patterns. The fact that all these results are described in a single paragraphs of 322 words might be part of the problem.\n\nMinor Comments:\n\n1) The use of SMAD4 signaling in figure titles should be replaced with y-axis label saying SMAD4_{nuc}\n\n2) The cartoon in Figure 2I is confusing, why don't all the no sequestered dots recover?\n",
+      "created_at": "2025-12-02T08:57:36.700843Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T08:57:36.700843Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T08:57:36.700843Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "f2e0f800-3f7f-4ab9-a133-f88329d93dfe",
+      "content_id": "f7388352-bf21-473c-99a1-f774a8a18881",
+      "claim_id": "C1",
+      "claim": "BMP4 and Nodal pathways share the signal transducer Smad4.",
+      "claim_type": "EXPLICIT",
+      "source": "(a) BMP and Nodal pathways share the signal transducer Smad4.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated in text and shown in Figure 1a schematic diagram",
+      "evidence_type": "[\"KNOWLEDGE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:57:36.700843Z"
+    },
+    {
+      "id": "51764822-d195-4a55-bc72-8e55c876b69c",
+      "content_id": "f7388352-bf21-473c-99a1-f774a8a18881",
+      "claim_id": "C2",
+      "claim": "Each pathway (BMP4 and Nodal) has distinct receptor complexes that phosphorylate specific receptor-Smads.",
+      "claim_type": "EXPLICIT",
+      "source": "Each pathway has distinct receptor complexes that phosphorylate specific signal transducers, known as receptor-Smads, which then complex with the shared cofactor Smad4 and translocate to the nucleus to activate target genes (Figure 1a) (Zinski et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Zinski et al., 2018 and illustrated in Figure 1a",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:57:36.700843Z"
+    },
+    {
+      "id": "80cd278c-0c87-4eeb-8423-c4a76b713297",
+      "content_id": "f7388352-bf21-473c-99a1-f774a8a18881",
+      "claim_id": "C3",
+      "claim": "A sudden increase in BMP4 leads to sustained SMAD4 signaling in hESCs.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that a sudden increase in BMP4 leads to sustained SMAD4 signaling (Figure 1b,d), consistent with our previous work (Nemashkalo et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data shown in Figure 1b,d and previous work citation",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:57:36.700843Z"
+    },
+    {
+      "id": "58449bd2-5a31-4f0a-bf01-c86524ebdedb",
+      "content_id": "f7388352-bf21-473c-99a1-f774a8a18881",
+      "claim_id": "C4",
+      "claim": "The response to addition of Nodal and its substitute Activin is strongly adaptive (transient) and returns to a signaling baseline of around 20% of the response peak.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the response to addition of Nodal and its substitute Activin is strongly adaptive, that is transient, and returns to a signaling baseline of around 20% of the response peak (Figure 1c,d, Figure 1\u2014figure supplement 1i, j), similar to the previously observed response to TGF\u03b2 in C2C12 cells (Sorre et al., 2014; Warmflash et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data in figures and comparison to previous work",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:57:36.700843Z"
+    },
+    {
+      "id": "8367791d-f315-484d-ba7a-63108415d42f",
+      "content_id": "f7388352-bf21-473c-99a1-f774a8a18881",
+      "claim_id": "C5",
+      "claim": "The response to recombinant Nodal was weak at all doses, likely reflecting the low quality of recombinant Nodal.",
+      "claim_type": "EXPLICIT",
+      "source": "The response to recombinant Nodal was weak at all doses, likely reflecting the low quality of recombinant Nodal.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on experimental observation and speculation about protein quality",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:57:36.700843Z"
+    },
+    {
+      "id": "176c8ba2-1e59-4f57-8451-7a00ffb6ac97",
+      "content_id": "f7388352-bf21-473c-99a1-f774a8a18881",
+      "claim_id": "C6",
+      "claim": "To elicit a response in Nodal required 2 \u03bcg/ml of recombinant protein, whereas the response to Activin was saturated by 5 ng/ml.",
+      "claim_type": "EXPLICIT",
+      "source": "To elicit a response in Nodal required 2 \u03bcg/ml of recombinant protein, whereas the response to Activin was saturated by 5 ng/ml (Figure 1f, Figure 1\u2014figure supplement 1i, j).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Quantitative measurements shown in figures",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:57:36.700843Z"
+    },
+    {
+      "id": "756407c5-f70f-4846-aa55-792a95036d54",
+      "content_id": "f7388352-bf21-473c-99a1-f774a8a18881",
+      "claim_id": "C7",
+      "claim": "When the responses to Nodal and Activin were normalized to their respective maxima, their dynamics were identical.",
+      "claim_type": "EXPLICIT",
+      "source": "However, when the responses to Nodal and Activin were normalized to their respective maxima, their dynamics were identical (Figure 1\u2014figure supplement 1j).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Shown in Figure 1\u2014figure supplement 1j",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:57:36.700843Z"
+    },
+    {
+      "id": "a92de611-5c59-4125-9f2f-ed3375a15a87",
+      "content_id": "f7388352-bf21-473c-99a1-f774a8a18881",
+      "claim_id": "C8",
+      "claim": "The peak and baseline signaling levels, but not the timescale of adaptation, depended on the Activin dose.",
+      "claim_type": "EXPLICIT",
+      "source": "The peak and baseline signaling levels, but not the timescale of adaptation, depended on the Activin dose (Figure 1f).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Shown in Figure 1f dose-response data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:57:36.700843Z"
+    },
+    {
+      "id": "1c579c2b-2af1-4aa1-8ad1-4738e5507098",
+      "content_id": "f7388352-bf21-473c-99a1-f774a8a18881",
+      "claim_id": "C9",
+      "claim": "For BMP4, there was a sharp response so that even low doses gave a nearly full initial response.",
+      "claim_type": "EXPLICIT",
+      "source": "For BMP4, there was a sharp response so that even low doses gave a nearly full initial response, however, the dose affected the duration of signaling in a way consistent with ligand depletion at low doses (Figure 1e, Appendix 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Shown in Figure 1e and explained by modeling in Appendix 1",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:57:36.700843Z"
+    },
+    {
+      "id": "aa5fb3b1-a80d-4382-b101-4e7e2f85b73e",
+      "content_id": "f7388352-bf21-473c-99a1-f774a8a18881",
+      "claim_id": "C10",
+      "claim": "SMAD1/5/8 activation mirrors the SMAD4 response to BMP4.",
+      "claim_type": "EXPLICIT",
+      "source": "Immunofluorescence staining for receptor-Smads revealed that SMAD1/5/8 activation mirrors the SMAD4 response to BMP4, while in response to Activin, SMAD2/3 nuclear localization adapts less than SMAD4 to about 60% of peak response (Figure 1\u2014figure supplement 1e,g,h).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Immunofluorescence data shown in Figure 1\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:57:36.700843Z"
+    },
+    {
+      "id": "d9e7d848-245e-42ab-9e02-485f324bc2e5",
+      "content_id": "f7388352-bf21-473c-99a1-f774a8a18881",
+      "claim_id": "C11",
+      "claim": "In response to Activin, SMAD2/3 nuclear localization adapts less than SMAD4 to about 60% of peak response.",
+      "claim_type": "EXPLICIT",
+      "source": "Immunofluorescence staining for receptor-Smads revealed that SMAD1/5/8 activation mirrors the SMAD4 response to BMP4, while in response to Activin, SMAD2/3 nuclear localization adapts less than SMAD4 to about 60% of peak response (Figure 1\u2014figure supplement 1e,g,h).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Immunofluorescence data shown in Figure 1\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:57:36.700843Z"
+    },
+    {
+      "id": "916c56af-2f4f-4bab-85ce-879d40a294a5",
+      "content_id": "f7388352-bf21-473c-99a1-f774a8a18881",
+      "claim_id": "C12",
+      "claim": "Addition of the BMP inhibitor Noggin had no effect on the dynamics in response to Activin.",
+      "claim_type": "EXPLICIT",
+      "source": "In each case, the response was due to the added ligand and not to induced secondary signaling through the other pathway, as addition of the BMP inhibitor Noggin had no effect on the dynamics in response to Activin, while addition of the Activin inhibitor SB431542 slightly increased the response to BMP (Figure 1g,h).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Shown in Figure 1g",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:57:36.700843Z"
+    },
+    {
+      "id": "dedaa1de-01ec-430b-b059-00ce66e530ba",
+      "content_id": "f7388352-bf21-473c-99a1-f774a8a18881",
+      "claim_id": "C13",
+      "claim": "Addition of the Activin inhibitor SB431542 slightly increased the response to BMP.",
+      "claim_type": "EXPLICIT",
+      "source": "In each case, the response was due to the added ligand and not to induced secondary signaling through the other pathway, as addition of the BMP inhibitor Noggin had no effect on the dynamics in response to Activin, while addition of the Activin inhibitor SB431542 slightly increased the response to BMP (Figure 1g,h).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Shown in Figure 1h",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:57:36.700843Z"
+    },
+    {
+      "id": "cb6841c7-3df5-45a2-9140-f6627edb980f",
+      "content_id": "f7388352-bf21-473c-99a1-f774a8a18881",
+      "claim_id": "C14",
+      "claim": "Endogenous BMP has no effect on the Nodal response.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, endogenous BMP has no effect on the Nodal response, while Nodal signaling has a repressive effect on BMP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from inhibitor experiments shown in Figure 1g,h",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:57:36.700843Z"
+    },
+    {
+      "id": "4663a0e6-ef57-4ff9-9fba-184529163021",
+      "content_id": "f7388352-bf21-473c-99a1-f774a8a18881",
+      "claim_id": "C15",
+      "claim": "Nodal signaling has a repressive effect on BMP.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, endogenous BMP has no effect on the Nodal response, while Nodal signaling has a repressive effect on BMP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from inhibitor experiments shown in Figure 1g,h",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:57:36.700843Z"
+    },
+    {
+      "id": "f3f5f678-9110-40d5-93f6-8fe99c5bffe3",
+      "content_id": "f7388352-bf21-473c-99a1-f774a8a18881",
+      "claim_id": "C16",
+      "claim": "Recovery on a timescale of minutes following nuclear photobleaching was observed in all cases, confirming that SMAD4 continuously shuttles between the nucleus and cytoplasm even in the absence of ligand stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "In all cases, we observed recovery on a timescale of minutes following nuclear photobleaching, which confirmed that SMAD4 continuously shuttles between the nucleus and cytoplasm even in the absence of ligand stimulation (Figure 2d).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "FRAP data shown in Figure 2d",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:57:36.700843Z"
+    },
+    {
+      "id": "c127335e-0597-4868-b5a8-8c99d1a02b8c",
+      "content_id": "f7388352-bf21-473c-99a1-f774a8a18881",
+      "claim_id": "C17",
+      "claim": "A reduced recovery rate was observed after 1 hr of Activin treatment, consistent with previous work suggesting that nuclear accumulation of SMAD4 is caused by reduced nuclear export.",
+      "claim_type": "EXPLICIT",
+      "source": "We also observed a reduced recovery rate after 1 hr of Activin treatment, consistent with previous work on TGF\u03b2 signaling which suggested that nuclear accumulation of SMAD4 is caused by reduced nuclear export (Nicol\u00e1s et al., 2004; Schmierer and Hill, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "FRAP data and comparison to previous work",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:57:36.700843Z"
+    },
+    {
+      "id": "83fed12b-377b-4b16-b3a7-12d2af6ee343",
+      "content_id": "f7388352-bf21-473c-99a1-f774a8a18881",
+      "claim_id": "C18",
+      "claim": "The recovery rate is not restored during adaptation.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, however, we found that the recovery rate is not restored during adaptation (Figure 2d), showing that cells do not revert to a pre-signaling state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "FRAP data shown in Figure 2d",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:57:36.700843Z"
+    },
+    {
+      "id": "889028a8-5779-46ab-850a-736f94dd35da",
+      "content_id": "f7388352-bf21-473c-99a1-f774a8a18881",
+      "claim_id": "C19",
+      "claim": "Cells do not revert to a pre-signaling state during adaptation.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, however, we found that the recovery rate is not restored during adaptation (Figure 2d), showing that cells do not revert to a pre-signaling state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from FRAP data showing recovery rate remains reduced",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:57:36.700843Z"
+    },
+    {
+      "id": "10b75a7c-825b-4d69-9933-b2c916dd7f94",
+      "content_id": "f7388352-bf21-473c-99a1-f774a8a18881",
+      "claim_id": "C20",
+      "claim": "The FRAP data and mathematical modeling exclude upstream mechanisms of adaptation as might be caused by secretion of extracellular feedback inhibitors or depletion of receptors or R-Smads.",
+      "claim_type": "EXPLICIT",
+      "source": "This excludes upstream mechanisms of adaptation as might be caused by secretion of extracellular feedback inhibitors or depletion of receptors or R-Smads (Viz\u00e1n et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from FRAP data and modeling",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:57:36.700843Z"
+    },
+    {
+      "id": "0ea6af5a-166c-4ba9-b283-d097392a8982",
+      "content_id": "f7388352-bf21-473c-99a1-f774a8a18881",
+      "claim_id": "C21",
+      "claim": "If adaptation is caused by depletion of an upstream component such as receptors, then the magnitude of adaptation is governed by the ratio of the degradation rates of active and inactive receptors.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, mathematical modeling showed that if adaptation is caused by depletion of an upstream component such as receptors, then the magnitude of adaptation is governed by the ratio of the degradation rates of active and inactive receptors (Appendix 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Mathematical modeling in Appendix 1",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:57:36.700843Z"
+    },
+    {
+      "id": "a6a809e2-29bc-4641-b4c8-cd3086320f3d",
+      "content_id": "f7388352-bf21-473c-99a1-f774a8a18881",
+      "claim_id": "C22",
+      "claim": "Models with negative feedback causing inhibition of downstream signaling are capable of explaining all features of the data including the observed time scales.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, models with negative feedback causing inhibition of downstream signaling are capable of explaining all features of our data including the observed time scales (Appendix 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Mathematical modeling in Appendix 1",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:57:36.700843Z"
+    },
+    {
+      "id": "67cf653c-0951-49ef-9311-c48fc427704a",
+      "content_id": "f7388352-bf21-473c-99a1-f774a8a18881",
+      "claim_id": "C23",
+      "claim": "The nuclear to cytoplasmic intensity ratio systematically decreases after nuclear bleaching.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we observed that this ratio systematically decreases after nuclear bleaching (Figure 2f).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "FRAP data shown in Figure 2f",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:57:36.700843Z"
+    },
+    {
+      "id": "39ff0260-3bbf-4c48-9fd4-7c0b2765d920",
+      "content_id": "f7388352-bf21-473c-99a1-f774a8a18881",
+      "claim_id": "C24",
+      "claim": "A model that includes sequestered SMAD4 populations explains the systematic decrease in nuclear to cytoplasmic ratio after bleaching.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests a more general model that includes sequestered SMAD4, which may move within but not between the nuclear and cytoplasmic compartments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from FRAP data and explained by modeling",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:57:36.700843Z"
+    },
+    {
+      "id": "859df2ed-2ee3-4482-a87b-83965ab618ed",
+      "content_id": "f7388352-bf21-473c-99a1-f774a8a18881",
+      "claim_id": "C25",
+      "claim": "Initial accumulation of SMAD4 in the nucleus reflects both a lower export rate and a reduction in cytoplasmic sequestration.",
+      "claim_type": "EXPLICIT",
+      "source": "The parameters obtained from fitting this model to our data suggest that initial accumulation of SMAD4 in the nucleus reflects both a lower export rate and a reduction in cytoplasmic sequestration (Figure 2i,j).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Model fitting to FRAP data shown in Figure 2i,j",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:57:36.700843Z"
+    },
+    {
+      "id": "4260e06e-57c2-450e-85cf-a6d527e3c986",
+      "content_id": "f7388352-bf21-473c-99a1-f774a8a18881",
+      "claim_id": "C26",
+      "claim": "Adaptation does not result from altering shuttling kinetics, but instead reflects reduced nuclear sequestration and increased cytoplasmic sequestration.",
+      "claim_type": "EXPLICIT",
+      "source": "Adaptation, however, does not result from altering shuttling kinetics, but instead reflects reduced nuclear sequestration and increased cytoplasmic sequestration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Model fitting to FRAP data shown in Figure 2i,j",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:57:36.700843Z"
+    },
+    {
+      "id": "5780cac9-f5c6-4122-b305-8dbc07ee9983",
+      "content_id": "f7388352-bf21-473c-99a1-f774a8a18881",
+      "claim_id": "C27",
+      "claim": "BMP targets are stably induced.",
+      "claim_type": "EXPLICIT",
+      "source": "Next, we evaluated transcriptional dynamics downstream of BMP4 and Activin using qPCR, which showed that BMP targets are stably induced (Figure 3a), while differentiation targets of Nodal show adaptive transcription on a timescale consistent with SMAD4 signaling (Figure 3b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "qPCR data shown in Figure 3a",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:57:36.700843Z"
+    },
+    {
+      "id": "93c3af29-8190-4e11-9e20-cfd4e54353ea",
+      "content_id": "f7388352-bf21-473c-99a1-f774a8a18881",
+      "claim_id": "C28",
+      "claim": "Differentiation targets of Nodal show adaptive transcription on a timescale consistent with SMAD4 signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "Next, we evaluated transcriptional dynamics downstream of BMP4 and Activin using qPCR, which showed that BMP targets are stably induced (Figure 3a), while differentiation targets of Nodal show adaptive transcription on a timescale consistent with SMAD4 signaling (Figure 3b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "qPCR data shown in Figure 3b",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:57:36.700843Z"
+    },
+    {
+      "id": "5f521ea2-f0fa-478e-a210-200c1e6e1d93",
+      "content_id": "f7388352-bf21-473c-99a1-f774a8a18881",
+      "claim_id": "C29",
+      "claim": "Shared targets of the BMP4 and Activin pathways were found to be transcribed adaptively in response to Activin and stably in response to BMP4.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, shared targets of the pathways were found to be transcribed adaptively in response to Activin and stably in response to BMP4 (Figure 3c, Figure 3\u2014figure supplement 1a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "qPCR data shown in Figure 3c and Figure 3\u2014figure supplement 1a",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:57:36.700843Z"
+    },
+    {
+      "id": "0db64250-538b-48b3-9cc8-58f59fab71f0",
+      "content_id": "f7388352-bf21-473c-99a1-f774a8a18881",
+      "claim_id": "C30",
+      "claim": "The transcription of NODAL, WNT3, and their inhibitors LEFTY1 and CER1 were sustained upon Activin treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the transcription of NODAL, WNT3, and their inhibitors LEFTY1 and CER1 were sustained upon Activin treatment (Figure 3d).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "qPCR data shown in Figure 3d",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:57:36.700843Z"
+    },
+    {
+      "id": "55037ca4-5241-4691-b672-4540103fd845",
+      "content_id": "f7388352-bf21-473c-99a1-f774a8a18881",
+      "claim_id": "C31",
+      "claim": "The differences in expression of these sets of targets are not due to differences in mRNA stability as mRNAs for stably expressed genes were found to decline rapidly upon pathway inhibition with SB431542.",
+      "claim_type": "EXPLICIT",
+      "source": "The differences in expression of these sets of targets are not due to differences in mRNA stability as mRNAs for stably expressed genes were found to decline rapidly upon pathway inhibition with SB431542 indicating a need for ongoing signaling to maintain expression (Figure 3\u2014figure supplement 1g).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Data shown in Figure 3\u2014figure supplement 1g",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:57:36.700843Z"
+    },
+    {
+      "id": "61def304-870e-419b-8b17-08362bfa346e",
+      "content_id": "f7388352-bf21-473c-99a1-f774a8a18881",
+      "claim_id": "C32",
+      "claim": "BMP4 signaling responses to the ramp and step approached each other as ramp concentration increased.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, BMP4 signaling responses to the ramp and step approached each other as ramp concentration increased, while Activin signaling was dramatically reduced in the case of the ramp (Figure 4b,e).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Data shown in Figure 4b",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:57:36.700843Z"
+    },
+    {
+      "id": "08dadaf5-fc6b-4c49-b3c0-979eaa8d8f13",
+      "content_id": "f7388352-bf21-473c-99a1-f774a8a18881",
+      "claim_id": "C33",
+      "claim": "Activin signaling was dramatically reduced in the case of the ramp compared to the step.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, BMP4 signaling responses to the ramp and step approached each other as ramp concentration increased, while Activin signaling was dramatically reduced in the case of the ramp (Figure 4b,e).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Data shown in Figure 4e",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:57:36.700843Z"
+    },
+    {
+      "id": "b34e16c8-d263-4179-b358-4168a4e3fd7a",
+      "content_id": "f7388352-bf21-473c-99a1-f774a8a18881",
+      "claim_id": "C34",
+      "claim": "Transcriptional dynamics of the shared target HAND1 matched the signaling pattern and showed dramatically reduced transcription in response to the Activin but not the BMP ramp.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, transcriptional dynamics of the shared target HAND1 matched the signaling pattern and showed dramatically reduced transcription in response to the Activin but not the BMP ramp (Figure 4c,f).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "qPCR data shown in Figure 4c,f",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:57:36.700843Z"
+    },
+    {
+      "id": "41f9f968-c61c-453b-a8ca-761c8a2f7e6c",
+      "content_id": "f7388352-bf21-473c-99a1-f774a8a18881",
+      "claim_id": "C35",
+      "claim": "Intermediate rates of Activin increase yielded intermediate signaling responses.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we varied the rate of the ramp of Activin and found that intermediate rates of increase also yielded intermediate signaling responses (Figure 4g,h).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Data shown in Figure 4g,h",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:57:36.700843Z"
+    },
+    {
+      "id": "3fa7faa0-9d57-4265-b0ac-5430a643d0ec",
+      "content_id": "f7388352-bf21-473c-99a1-f774a8a18881",
+      "claim_id": "C36",
+      "claim": "Each pulse of Activin elicited a strong response in the translocation of SMAD4 to the cell nucleus.",
+      "claim_type": "EXPLICIT",
+      "source": "Each pulse of Activin elicited a strong response in the translocation of SMAD4 to the cell nucleus, while no such responses were seen in response to the dummy pulses (Figure 5b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Data shown in Figure 5b",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:57:36.700843Z"
+    },
+    {
+      "id": "4a4e68ba-3c52-4359-bd45-9c673fa92eb5",
+      "content_id": "f7388352-bf21-473c-99a1-f774a8a18881",
+      "claim_id": "C37",
+      "claim": "Differentiation to mesendoderm as marked by Bra expression was enhanced under pulsed Activin conditions, despite the reduced integrated ligand exposure.",
+      "claim_type": "EXPLICIT",
+      "source": "Differentiation to mesendooderm as marked by Bra expression was also enhanced under pulsed conditions (Figure 5c,d), despite the reduced integrated ligand exposure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Immunofluorescence data shown in Figure 5c,d",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:57:36.700843Z"
+    },
+    {
+      "id": "751cfa77-a190-47d1-91d9-97884048ff89",
+      "content_id": "f7388352-bf21-473c-99a1-f774a8a18881",
+      "claim_id": "C38",
+      "claim": "The effect of pulses is specific to pulsed Activin and not a consequence of simply reducing the integrated Activin exposure.",
+      "claim_type": "EXPLICIT",
+      "source": "Continuous exposure to lower doses of Activin and treating cells with Activin for the same total time as the three pulses but in a single pulse showed that the effect is specific to pulsed Activin and not a consequence of simply reducing the integrated Activin exposure (Figure 5e\u2013g, Figure 5\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Control experiments shown in Figure 5e\u2013g and Figure 5\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:57:36.700843Z"
+    },
+    {
+      "id": "e9d3cbab-4aad-437a-97e0-744871f4fc8a",
+      "content_id": "f7388352-bf21-473c-99a1-f774a8a18881",
+      "claim_id": "C39",
+      "claim": "Nodal signaling is required for the formation of mesoderm and endoderm within micropatterned colonies.",
+      "claim_type": "EXPLICIT",
+      "source": "Nodal signaling is required for the formation of mesoderm and endoderm within these colonies, and both small molecule inhibition and genetic knockout of Nodal drastically reduce mesendoderm differentiation (Chhabra et al., 2018; Warmflash et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous work",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:57:36.700843Z"
+    },
+    {
+      "id": "f26f378b-44e4-4ee0-8aab-266ff7bbef93",
+      "content_id": "f7388352-bf21-473c-99a1-f774a8a18881",
+      "claim_id": "C40",
+      "claim": "The cells initially respond uniformly to the BMP4 treatment in micropatterned colonies.",
+      "claim_type": "EXPLICIT",
+      "source": "The cells initially respond uniformly to the BMP4 treatment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observed in live imaging data shown in Figure 6a,b",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:57:36.700843Z"
+    },
+    {
+      "id": "e4fa691d-b794-4df0-8934-39366fc0974e",
+      "content_id": "f7388352-bf21-473c-99a1-f774a8a18881",
+      "claim_id": "C41",
+      "claim": "The BMP4 response is restricted to the colony edge by approximately 12 hr and this pattern is maintained until approximately 25 hr.",
+      "claim_type": "EXPLICIT",
+      "source": "The response then is restricted to the colony edge by approximately 12 hr (Figure 6a,b), and this pattern is maintained until approximately 25 hr.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Live imaging data shown in Figure 6a,b",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:57:36.700843Z"
+    },
+    {
+      "id": "493e58d1-ccd0-4265-b99c-d0be3775c2a5",
+      "content_id": "f7388352-bf21-473c-99a1-f774a8a18881",
+      "claim_id": "C42",
+      "claim": "Beginning at 25 hr, a wave of increased nuclear SMAD4 spreads inward again from the edge.",
+      "claim_type": "EXPLICIT",
+      "source": "Beginning at 25 hr, a wave of increased nuclear SMAD4 spreads inward again from the edge (Figure 6a,c).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Live imaging data shown in Figure 6a,c",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:57:36.700843Z"
+    },
+    {
+      "id": "4745db54-31f0-4d47-a19b-93c5a7d6c8d5",
+      "content_id": "f7388352-bf21-473c-99a1-f774a8a18881",
+      "claim_id": "C43",
+      "claim": "The stable response at the edge of the colony represents BMP signaling while the inward moving wave results from Nodal signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "SMAD4 convolves the BMP and Nodal responses, and we hypothesized that the stable response at the edge of the colony represents BMP signaling while the inward moving wave results from Nodal signaling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Hypothesis tested with pathway-specific SMAD staining",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:57:36.700843Z"
+    },
+    {
+      "id": "a356f731-a464-4e33-a4d5-48d7fa9cde57",
+      "content_id": "f7388352-bf21-473c-99a1-f774a8a18881",
+      "claim_id": "C44",
+      "claim": "The BMP-specific active SMAD1 signaling remains restricted to the edge.",
+      "claim_type": "EXPLICIT",
+      "source": "These confirmed that the BMP-specific active SMAD1 signaling remains restricted to the edge (Figure 6f), while the Nodal transducer SMAD2/3 activity spreads rapidly inward from the colony edge between 24 and 36 hr (Figure 6e).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Immunofluorescence data shown in Figure 6f",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:57:36.700843Z"
+    },
+    {
+      "id": "8a81f653-746a-4321-b59d-d0a13ed82978",
+      "content_id": "f7388352-bf21-473c-99a1-f774a8a18881",
+      "claim_id": "C45",
+      "claim": "The Nodal transducer SMAD2/3 activity spreads rapidly inward from the colony edge between 24 and 36 hr.",
+      "claim_type": "EXPLICIT",
+      "source": "These confirmed that the BMP-specific active SMAD1 signaling remains restricted to the edge (Figure 6f), while the Nodal transducer SMAD2/3 activity spreads rapidly inward from the colony edge between 24 and 36 hr (Figure 6e).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Immunofluorescence data shown in Figure 6e",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:57:36.700843Z"
+    },
+    {
+      "id": "bfd3b900-e09b-4634-ab99-7b3c1c99671f",
+      "content_id": "f7388352-bf21-473c-99a1-f774a8a18881",
+      "claim_id": "C46",
+      "claim": "The SMAD2/3 and SMAD4 signal transducers reveal a rapidly evolving Nodal distribution with a wavefront that moves through the colony at approximately one-cell diameter (10 \u03bcm) per hour.",
+      "claim_type": "EXPLICIT",
+      "source": "The SMAD2/3 and SMAD4 signal transducers reveal a rapidly evolving Nodal distribution with a wavefront that moves through the colony at approximately one-cell diameter (10 \u03bcm) per hour.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Calculated from data shown in Figure 6e and Figure 6a",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:57:36.700843Z"
+    },
+    {
+      "id": "693d135c-e1d9-498e-9d88-f9bc206751a3",
+      "content_id": "f7388352-bf21-473c-99a1-f774a8a18881",
+      "claim_id": "C47",
+      "claim": "The wave of Nodal signaling activates Bra expression in its wake.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, this wave of signaling activates Bra expression in its wake (Figure 6g,h).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Data shown in Figure 6g,h",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:57:36.700843Z"
+    },
+    {
+      "id": "58c9b0b6-c02b-4b78-bd01-4859444544be",
+      "content_id": "f7388352-bf21-473c-99a1-f774a8a18881",
+      "claim_id": "C48",
+      "claim": "Rapid increases in endogenous Nodal signaling are associated with mesoderm differentiation in this model of human gastrulation.",
+      "claim_type": "EXPLICIT",
+      "source": "This indicates that rapid increases in endogenous Nodal signaling are associated with mesoderm differentiation in this model of human gastrulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from correlation between Nodal wave and Bra expression",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:57:36.700843Z"
+    },
+    {
+      "id": "11f3427b-ec00-43ac-89c4-af1c3fd0feaf",
+      "content_id": "f7388352-bf21-473c-99a1-f774a8a18881",
+      "claim_id": "C49",
+      "claim": "Morphogens in the mammalian embryo do not act in a purely concentration-dependent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "Our work shows that morphogens in the mammalian embryo do not act in a purely concentration-dependent matter and has revealed an important role for Activin/Nodal rate of change in specifying cell fate as a consequence of adaptive signaling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion drawn from all experimental data presented",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:57:36.700843Z"
+    },
+    {
+      "id": "dec9510b-6d0f-4fcf-af27-84446c297f10",
+      "content_id": "f7388352-bf21-473c-99a1-f774a8a18881",
+      "claim_id": "C50",
+      "claim": "There is an important role for Activin/Nodal rate of change in specifying cell fate as a consequence of adaptive signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "Our work shows that morphogens in the mammalian embryo do not act in a purely concentration-dependent matter and has revealed an important role for Activin/Nodal rate of change in specifying cell fate as a consequence of adaptive signaling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion drawn from all experimental data presented",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:57:36.700843Z"
+    },
+    {
+      "id": "59106860-9174-40d4-b914-66db17816539",
+      "content_id": "f7388352-bf21-473c-99a1-f774a8a18881",
+      "claim_id": "C51",
+      "claim": "Adaptive signaling could serve to restrict the response to a narrow competence window.",
+      "claim_type": "EXPLICIT",
+      "source": "Adaptive signaling could serve to restrict the response to a narrow competence window or to separate the multiple roles of a single morphogen by using distinct dynamics to selectively activate different target genes, effectively expanding the information content of the morphogen gradient (Selimkhanov et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculation about functional significance with citation",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:57:36.700843Z"
+    },
+    {
+      "id": "16779366-dd92-464f-8b24-6798e1f789f8",
+      "content_id": "f7388352-bf21-473c-99a1-f774a8a18881",
+      "claim_id": "C52",
+      "claim": "Adaptive signaling could separate the multiple roles of a single morphogen by using distinct dynamics to selectively activate different target genes, effectively expanding the information content of the morphogen gradient.",
+      "claim_type": "EXPLICIT",
+      "source": "Adaptive signaling could serve to restrict the response to a narrow competence window or to separate the multiple roles of a single morphogen by using distinct dynamics to selectively activate different target genes, effectively expanding the information content of the morphogen gradient (Selimkhanov et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculation about functional significance with citation",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:57:36.700843Z"
+    },
+    {
+      "id": "20077e84-7bad-4e78-9f05-d14491f68148",
+      "content_id": "f7388352-bf21-473c-99a1-f774a8a18881",
+      "claim_id": "C53",
+      "claim": "Micropatterned colonies of hESCs treated with BMP4 differentiate in a spatial pattern with reproducible rings of extraembryonic cells and all three germ layers.",
+      "claim_type": "EXPLICIT",
+      "source": "These colonies differentiate in a spatial pattern with reproducible rings of extraembryonic cells and all three germ layers, and represent a model for the patterning associated with gastrulation in the human embryo (Heemskerk and Warmflash, 2016; Warmflash et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous work",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:57:36.700843Z"
+    },
+    {
+      "id": "2ea5616f-d2d5-40f6-b8c0-0fc6221f6dbd",
+      "content_id": "f7388352-bf21-473c-99a1-f774a8a18881",
+      "claim_id": "C54",
+      "claim": "Micropatterned colonies represent a model for the patterning associated with gastrulation in the human embryo.",
+      "claim_type": "EXPLICIT",
+      "source": "These colonies differentiate in a spatial pattern with reproducible rings of extraembryonic cells and all three germ layers, and represent a model for the patterning associated with gastrulation in the human embryo (Heemskerk and Warmflash, 2016; Warmflash et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous work",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:57:36.700843Z"
+    },
+    {
+      "id": "a687b4e8-f3ec-4064-bf52-85b933493222",
+      "content_id": "f7388352-bf21-473c-99a1-f774a8a18881",
+      "claim_id": "C55",
+      "claim": "In the vertebrate embryo, expression patterns of morphogens change rapidly, simultaneous with large-scale cell movements.",
+      "claim_type": "EXPLICIT",
+      "source": "However, in the vertebrate embryo, expression patterns of these morphogens change rapidly, simultaneous with large-scale cell movements, and therefore individual cells experience substantial changes in morphogen levels during differentiation (Arnold and Robertson, 2009; Balaskas et al., 2012; Dessaud et al., 2007; Dubrulle et al., 2015; Kinder et al., 2001; van Boxtel et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:57:36.700843Z"
+    },
+    {
+      "id": "12bfbe52-2cec-4a8d-9e0a-839c4eb09727",
+      "content_id": "f7388352-bf21-473c-99a1-f774a8a18881",
+      "claim_id": "C56",
+      "claim": "Individual cells experience substantial changes in morphogen levels during differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "However, in the vertebrate embryo, expression patterns of these morphogens change rapidly, simultaneous with large-scale cell movements, and therefore individual cells experience substantial changes in morphogen levels during differentiation (Arnold and Robertson, 2009; Balaskas et al., 2012; Dessaud et al., 2007; Dubrulle et al., 2015; Kinder et al., 2001; van Boxtel et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:57:36.700843Z"
+    },
+    {
+      "id": "8c24a829-8b0d-4a77-b137-cb59f6ede7ad",
+      "content_id": "f7388352-bf21-473c-99a1-f774a8a18881",
+      "claim_id": "C57",
+      "claim": "Duration of ligand exposure is a relevant parameter in cell fate decisions.",
+      "claim_type": "EXPLICIT",
+      "source": "Duration of ligand exposure must logically be a relevant parameter, as was confirmed in a number of contexts, including Activin/Nodal signaling in early Zebrafish development and Sonic Hedgehog (Shh) signaling in the mouse neural tube (Dessaud et al., 2007; Sako et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous work",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:57:36.700843Z"
+    },
+    {
+      "id": "cb82c8a2-26af-44db-936d-4b4baf484417",
+      "content_id": "f7388352-bf21-473c-99a1-f774a8a18881",
+      "claim_id": "C58",
+      "claim": "Nodal and BMP4 are morphogens crucial for gastrulation in vertebrates.",
+      "claim_type": "EXPLICIT",
+      "source": "Nodal and BMP4 are morphogens crucial for gastrulation in vertebrates (Winnier et al., 1995).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:57:36.700843Z"
+    },
+    {
+      "id": "f15771fa-a4ea-45dc-aeff-057137910126",
+      "content_id": "f7388352-bf21-473c-99a1-f774a8a18881",
+      "claim_id": "C59",
+      "claim": "In the early mammalian embryo, BMP4 is required for both initiating gastrulation and specifying the dorsal-ventral axis.",
+      "claim_type": "EXPLICIT",
+      "source": "In the early mammalian embryo, BMP4 is required for both initiating gastrulation and specifying the dorsal-ventral axis, while Nodal maintains the pluripotent epiblast and is subsequently required for mesoderm and endoderm differentiation (Conlon et al., 1994).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:57:36.700843Z"
+    },
+    {
+      "id": "ee75bab9-2772-4186-8ad2-10a79c2c304d",
+      "content_id": "f7388352-bf21-473c-99a1-f774a8a18881",
+      "claim_id": "C60",
+      "claim": "Nodal maintains the pluripotent epiblast and is subsequently required for mesoderm and endoderm differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "In the early mammalian embryo, BMP4 is required for both initiating gastrulation and specifying the dorsal-ventral axis, while Nodal maintains the pluripotent epiblast and is subsequently required for mesoderm and endoderm differentiation (Conlon et al., 1994).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:57:36.700843Z"
+    },
+    {
+      "id": "95f57630-fea2-43cc-a8d1-b014135966e8",
+      "content_id": "f7388352-bf21-473c-99a1-f774a8a18881",
+      "claim_id": "C61",
+      "claim": "Both Nodal and BMP4 have been claimed to act in a concentration-dependent manner based on classic Xenopus experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "Both Nodal and BMP4 have been claimed to act in a concentration-dependent manner based on classic Xenopus experiments (Green et al., 1992; Gurdon et al., 1994; Wilson et al., 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to classic experiments",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:57:36.700843Z"
+    },
+    {
+      "id": "c4170397-f17b-42ef-bead-77130a7ea374",
+      "content_id": "f7388352-bf21-473c-99a1-f774a8a18881",
+      "claim_id": "C62",
+      "claim": "The classic Xenopus experiments allow alternative interpretations.",
+      "claim_type": "EXPLICIT",
+      "source": "However, those experiments allow alternative interpretations (Heemskerk and Warmflash, 2016), and the role of BMP4 and Nodal ligand dynamics has not been investigated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to previous analysis",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:57:36.700843Z"
+    },
+    {
+      "id": "96b625cf-71db-4f9c-9b39-5de8897ecc82",
+      "content_id": "f7388352-bf21-473c-99a1-f774a8a18881",
+      "claim_id": "C63",
+      "claim": "The role of BMP4 and Nodal ligand dynamics has not been investigated prior to this study.",
+      "claim_type": "EXPLICIT",
+      "source": "However, those experiments allow alternative interpretations (Heemskerk and Warmflash, 2016), and the role of BMP4 and Nodal ligand dynamics has not been investigated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about gap in knowledge",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:57:36.700843Z"
+    },
+    {
+      "id": "98adff3c-ecb4-4e86-9b5d-6c9430287f82",
+      "content_id": "f7388352-bf21-473c-99a1-f774a8a18881",
+      "claim_id": "C64",
+      "claim": "When hESCs are grown sparsely, their response to exogenous signals is uniform and not dependent on secondary signals.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, in contrast to the micropatterned colonies, when hESCs are grown more sparsely, their response to exogenous signals is uniform and not dependent on secondary signals, allowing for dissection of the dynamics of response (Nemashkalo et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to previous work",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:57:36.700843Z"
+    },
+    {
+      "id": "67d77575-7070-4672-8fd4-4329f13c5339",
+      "content_id": "f7388352-bf21-473c-99a1-f774a8a18881",
+      "claim_id": "C65",
+      "claim": "Activin and Nodal are generally thought of as text-book morphogens acting in a concentration-dependent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "Activin and Nodal are generally thought of as text-book morphogens acting in a concentration-dependent manner (Gilbert, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by textbook citation",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:57:36.700843Z"
+    },
+    {
+      "id": "792f4e43-35cd-4bb3-8335-3a8f2dc278aa",
+      "content_id": "f7388352-bf21-473c-99a1-f774a8a18881",
+      "claim_id": "C66",
+      "claim": "The patterning of the neural tube by Shh has been shown to be adaptive and regulates cell fate decisions through a described gene regulatory network.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results are in contrast to those for another well-characterized system, the patterning of the neural tube by Shh, which has also been shown to be adaptive and regulates cell fate decisions through a described gene regulatory network (Balaskas et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:57:36.700843Z"
+    },
+    {
+      "id": "f704bad3-c735-4838-997b-7ff4c0cfc74c",
+      "content_id": "f7388352-bf21-473c-99a1-f774a8a18881",
+      "claim_id": "C67",
+      "claim": "In the Shh neural tube patterning system, adaptation depends on upstream inhibition and results in a relatively constant integrated signaling output in which time and duration can be interchanged.",
+      "claim_type": "EXPLICIT",
+      "source": "In that case, adaptation depends on upstream inhibition and results in a relatively constant integrated signaling output in which time and duration can be interchanged (Dessaud et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:57:36.700843Z"
+    },
+    {
+      "id": "e6b83d72-fd72-4e3a-8678-74d62e38ea92",
+      "content_id": "f7388352-bf21-473c-99a1-f774a8a18881",
+      "claim_id": "C68",
+      "claim": "Blocking nuclear export of Smad4 does not interfere with function of the pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "Although it was shown that blocking nuclear export of Smad4 does not interfere with function of the pathway (Biondi et al., 2007), this does not invalidate our conclusions, as blocking nuclear export of Smad4 destroys the strong correlation between pathway activity and nuclear localization by artificially keeping Smad4 in the nucleus following the termination of transcription.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation and reasoning",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:57:36.700843Z"
+    },
+    {
+      "id": "24b6e265-d557-4c22-ac81-42f0a6095844",
+      "content_id": "f7388352-bf21-473c-99a1-f774a8a18881",
+      "claim_id": "C69",
+      "claim": "Adaptive signaling is a common feature of biological systems.",
+      "claim_type": "EXPLICIT",
+      "source": "Although relatively unexplored in the context of development, adaptive signaling is a common feature of biological systems.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "General knowledge statement",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:57:36.700843Z"
+    },
+    {
+      "id": "59e2b617-a7fc-4212-a48b-71a2385c4413",
+      "content_id": "f7388352-bf21-473c-99a1-f774a8a18881",
+      "claim_id": "C70",
+      "claim": "In bacterial chemotaxis, adaptive signaling allows cells to sense the rate of change and move to areas of higher nutrients.",
+      "claim_type": "EXPLICIT",
+      "source": "Well-studied examples in bacteria include the chemotactic response where adaptive signaling allows cells to sense the rate of change and move to areas of higher nutrients (Block et al., 1983), and the \u03c3b response where it allows cells to sense the rate of increase of environmental stress (Young et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:57:36.700843Z"
+    },
+    {
+      "id": "322d471e-addf-4496-9b81-ee145e52a8a7",
+      "content_id": "f7388352-bf21-473c-99a1-f774a8a18881",
+      "claim_id": "C71",
+      "claim": "In the bacterial \u03c3b response, adaptive signaling allows cells to sense the rate of increase of environmental stress.",
+      "claim_type": "EXPLICIT",
+      "source": "Well-studied examples in bacteria include the chemotactic response where adaptive signaling allows cells to sense the rate of change and move to areas of higher nutrients (Block et al., 1983), and the \u03c3b response where it allows cells to sense the rate of increase of environmental stress (Young et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:57:36.700843Z"
+    },
+    {
+      "id": "87d1f6b0-528c-4412-98f5-b5d1fc8e5ab2",
+      "content_id": "f7388352-bf21-473c-99a1-f774a8a18881",
+      "claim_id": "C72",
+      "claim": "Stimulation with TNF\u03b1 leads to a transient pulse of NF\u03baB signaling, followed by a low, sustained baseline.",
+      "claim_type": "EXPLICIT",
+      "source": "In mammalian cells, stimulation with TNF\u03b1 leads to a transient pulse of NF\u03baB signaling, followed by a low, sustained baseline, and this has been suggested to allow specificity in target gene activation with different targets responding to different features of the dynamics (Hoffmann et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:57:36.700843Z"
+    },
+    {
+      "id": "dc6e00f9-d078-4591-b6fc-61a1d2b99a8b",
+      "content_id": "f7388352-bf21-473c-99a1-f774a8a18881",
+      "claim_id": "C73",
+      "claim": "DNA damage gives rise to stereotyped pulses of p53 signaling due to negative feedback.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, DNA damage has been shown to give rise to stereotyped pulses of p53 signaling due to negative feedback (Lahav et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:57:36.700843Z"
+    },
+    {
+      "id": "513f7e80-9598-47d4-b768-d643082af91f",
+      "content_id": "f7388352-bf21-473c-99a1-f774a8a18881",
+      "claim_id": "C74",
+      "claim": "Current protocols for directed stem cell differentiation typically perform a single media change per day and do not take advantage of potential enhancements resulting from optimizing ligand dynamics.",
+      "claim_type": "EXPLICIT",
+      "source": "It will be important to understand how our results fit with current protocols for directed stem cell differentiation which typically perform a single media change per day and therefore do not take advantage of potential enhancements resulting from optimizing ligand dynamics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about current practice",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:57:36.700843Z"
+    },
+    {
+      "id": "9f6c8aed-09a0-4ead-b2e6-becf6c9970d1",
+      "content_id": "f7388352-bf21-473c-99a1-f774a8a18881",
+      "claim_id": "C75",
+      "claim": "The results will serve as a basis for a dynamic understanding of embryonic patterning and stem cell differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "As such, we believe the results presented here will serve as a basis for a dynamic understanding of embryonic patterning and stem cell differentiation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Authors' conclusion about significance",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:57:36.700843Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "3f9dcdf4-013a-4b2c-bbb3-9ea90280020d",
+      "content_id": "f7388352-bf21-473c-99a1-f774a8a18881",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "BMP4 and Nodal/Activin pathways share SMAD4 but have distinct receptor-SMADs and exhibit fundamentally different signaling dynamics in hESCs: BMP4 produces sustained SMAD4 signaling while Activin/Nodal produces adaptive (transient) signaling that returns to ~20% baseline. Cross-pathway inhibitor experiments demonstrate that endogenous BMP does not affect Nodal response, while Nodal signaling represses BMP.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C15 are well-supported by multiple lines of evidence including live imaging of GFP:SMAD4 (Figure 1b-d), immunofluorescence of pathway-specific SMADs (Figure 1\u2014figure supplement 1), dose-response experiments (Figure 1e,f), and cross-inhibition studies (Figure 1g,h). The data consistently show distinct temporal dynamics between the two pathways with appropriate controls and quantification.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:57:36.700843Z"
+    },
+    {
+      "id": "7fbdc610-b23c-440a-a94e-fb4918109cfd",
+      "content_id": "f7388352-bf21-473c-99a1-f774a8a18881",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "FRAP experiments combined with mathematical modeling reveal that Activin-induced adaptation occurs through modulation of SMAD4 sequestration rather than upstream receptor depletion. During adaptation, nuclear export rates remain reduced (not restored to pre-signaling state), and the mechanism involves decreased nuclear sequestration and increased cytoplasmic sequestration of SMAD4.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16-C26 are supported by systematic FRAP measurements at multiple time points (Figure 2d-f), quantitative analysis of recovery kinetics, and mathematical modeling (Appendix 1). The key observation that nuclear:cytoplasmic ratio decreases after bleaching (C23) provides strong evidence for sequestered populations. However, the modeling relies on parameter fitting and indirect inference about sequestration mechanisms.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:57:36.700843Z"
+    },
+    {
+      "id": "374d9ebb-82af-4afa-bd3d-1caa355ee814",
+      "content_id": "f7388352-bf21-473c-99a1-f774a8a18881",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Transcriptional responses downstream of BMP4 and Activin mirror their respective signaling dynamics: BMP4 targets show stable induction while differentiation targets of Nodal/Activin show adaptive transcription. Shared targets respond adaptively to Activin but stably to BMP4, while NODAL, WNT3, and their inhibitors (LEFTY1, CER1) show sustained transcription in response to Activin.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C31 are supported by systematic qPCR time courses (Figure 3a-d) and mRNA stability experiments (Figure 3\u2014figure supplement 1g). The data show clear distinctions between adaptive and non-adaptive target genes with appropriate temporal resolution. The observation that different gene classes respond differently to the same pathway is well-documented.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:57:36.700843Z"
+    },
+    {
+      "id": "ed46bfe5-6c2a-4510-b17a-2f2919e1026c",
+      "content_id": "f7388352-bf21-473c-99a1-f774a8a18881",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "BMP4 response reflects ligand concentration while Activin response reflects rate of concentration change. Ramp experiments show that BMP4 signaling and transcription eventually match step responses, whereas Activin signaling and target gene transcription (e.g., HAND1) are dramatically reduced during slow concentration ramps compared to sudden steps.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C35 are strongly supported by systematic ramp vs. step experiments with both signaling readouts (Figure 4b,e) and transcriptional measurements (Figure 4c,f). The experiments include multiple ramp rates (Figure 4g,h) and multiple target genes (Figure 4\u2014figure supplement 1), providing robust evidence for rate-sensing in the Activin pathway but not BMP4.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:57:36.700843Z"
+    },
+    {
+      "id": "2df07c0f-a7ee-4d06-b0bc-442e6ce73b56",
+      "content_id": "f7388352-bf21-473c-99a1-f774a8a18881",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Repeated pulses of Activin enhance differentiation to mesendoderm (marked by Bra expression) compared to sustained high Activin exposure, despite reduced total ligand exposure. This effect is specific to pulsing and not simply due to reduced integrated ligand exposure, as demonstrated by dose-response controls and single-pulse experiments.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36-C38 are well-supported by live imaging showing SMAD4 responses to pulses (Figure 5b), immunofluorescence quantification of Bra expression (Figure 5c,d), and comprehensive controls including dose-response series (Figure 5e-g) and single long pulse comparisons (Figure 5\u2014figure supplement 1). The controls effectively rule out alternative explanations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:57:36.700843Z"
+    },
+    {
+      "id": "1cdfa306-350f-4946-8a8c-0ae7ef1ab32f",
+      "content_id": "f7388352-bf21-473c-99a1-f774a8a18881",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "In micropatterned hESC colonies modeling human gastrulation, a wave of Nodal signaling (SMAD2/3 activity) spreads inward from the colony edge at ~10 \u03bcm/hour between 24-36 hours, while BMP signaling (SMAD1) remains restricted to the edge. This rapidly moving Nodal wave activates Bra expression in its wake, indicating that rapid increases in endogenous Nodal signaling are associated with mesoderm differentiation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39-C48 are supported by live imaging of SMAD4 dynamics (Figure 6a-c), immunofluorescence of pathway-specific SMADs and Bra (Figure 6d-h), and quantitative analysis of wavefront velocity. The data clearly show distinct spatial-temporal patterns for BMP vs. Nodal signaling. However, the causal link between rapid Nodal increases and differentiation (C48) is correlative rather than mechanistically proven.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:57:36.700843Z"
+    },
+    {
+      "id": "c968d946-91be-425c-823d-3bd8bbae6d9c",
+      "content_id": "f7388352-bf21-473c-99a1-f774a8a18881",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The authors conclude that morphogens in the mammalian embryo do not act purely in a concentration-dependent manner, and that rate of change of Activin/Nodal concentration plays an important role in specifying cell fate as a consequence of adaptive signaling.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49-C50 represent the main conclusions drawn from the collective experimental evidence (C1-C48). The ramp experiments (C32-C35), pulse experiments (C36-C38), and micropatterned colony data (C40-C48) provide converging evidence that Activin/Nodal signaling responds to rate of change. However, these are broad interpretive claims that extend beyond the specific experimental systems tested.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:57:36.700843Z"
+    },
+    {
+      "id": "2c90b304-dd2d-426d-86f9-a5ce2e286f0c",
+      "content_id": "f7388352-bf21-473c-99a1-f774a8a18881",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The authors speculate that adaptive signaling could serve to restrict responses to narrow competence windows or separate multiple roles of a single morphogen by using distinct dynamics to selectively activate different target genes, thereby expanding the information content of morphogen gradients.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C51-C52 are explicitly speculative (marked as SPECULATION in evidence_type) and represent hypotheses about functional significance rather than demonstrated results. While the speculation is reasonable given the data on differential target gene responses (C27-C31), no experiments directly test these proposed functions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:57:36.700843Z"
+    },
+    {
+      "id": "9ecbd311-2008-449a-9bd3-7d1bde4d470e",
+      "content_id": "f7388352-bf21-473c-99a1-f774a8a18881",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Micropatterned hESC colonies treated with BMP4 differentiate in reproducible spatial patterns representing a model for human gastrulation, and sparsely grown hESCs respond uniformly to exogenous signals without secondary signaling, enabling dissection of signaling dynamics.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53, C54, and C64 describe established experimental systems supported by citations to previous work (Heemskerk and Warmflash 2016; Warmflash et al. 2014; Nemashkalo et al. 2017). These are methodological foundations for the current study rather than novel findings, though they are appropriately validated.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:57:36.700843Z"
+    },
+    {
+      "id": "279fb7e3-5160-4cee-8980-215d370291f0",
+      "content_id": "f7388352-bf21-473c-99a1-f774a8a18881",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The authors provide extensive background context on morphogen dynamics in development, prior work on Nodal/BMP4 signaling, adaptive signaling in other systems (bacterial chemotaxis, NF\u03baB, p53, Shh neural tube patterning), and current stem cell differentiation protocols.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55-C74 are background/context claims supported by appropriate citations to prior literature. These establish the rationale for the study and provide comparative context for interpreting results. C62 notes that classic Xenopus experiments allow alternative interpretations, which is appropriately cited. C68 addresses a potential concern about using nuclear localization as a signaling readout.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:57:36.700843Z"
+    },
+    {
+      "id": "f58ccfb2-18ae-469d-a0c1-7a1a45167915",
+      "content_id": "f7388352-bf21-473c-99a1-f774a8a18881",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The authors conclude that their results will serve as a basis for a dynamic understanding of embryonic patterning and stem cell differentiation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C75 is a forward-looking statement about the impact of the work (marked as SPECULATION). While the results do provide new insights into dynamic signaling, whether they will serve as a basis for future understanding depends on validation and extension by the field.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:57:36.700843Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "f2e0f800-3f7f-4ab9-a133-f88329d93dfe",
+      "result_id": "3f9dcdf4-013a-4b2c-bbb3-9ea90280020d"
+    },
+    {
+      "claim_id": "51764822-d195-4a55-bc72-8e55c876b69c",
+      "result_id": "3f9dcdf4-013a-4b2c-bbb3-9ea90280020d"
+    },
+    {
+      "claim_id": "80cd278c-0c87-4eeb-8423-c4a76b713297",
+      "result_id": "3f9dcdf4-013a-4b2c-bbb3-9ea90280020d"
+    },
+    {
+      "claim_id": "58449bd2-5a31-4f0a-bf01-c86524ebdedb",
+      "result_id": "3f9dcdf4-013a-4b2c-bbb3-9ea90280020d"
+    },
+    {
+      "claim_id": "8367791d-f315-484d-ba7a-63108415d42f",
+      "result_id": "3f9dcdf4-013a-4b2c-bbb3-9ea90280020d"
+    },
+    {
+      "claim_id": "176c8ba2-1e59-4f57-8451-7a00ffb6ac97",
+      "result_id": "3f9dcdf4-013a-4b2c-bbb3-9ea90280020d"
+    },
+    {
+      "claim_id": "756407c5-f70f-4846-aa55-792a95036d54",
+      "result_id": "3f9dcdf4-013a-4b2c-bbb3-9ea90280020d"
+    },
+    {
+      "claim_id": "a92de611-5c59-4125-9f2f-ed3375a15a87",
+      "result_id": "3f9dcdf4-013a-4b2c-bbb3-9ea90280020d"
+    },
+    {
+      "claim_id": "1c579c2b-2af1-4aa1-8ad1-4738e5507098",
+      "result_id": "3f9dcdf4-013a-4b2c-bbb3-9ea90280020d"
+    },
+    {
+      "claim_id": "aa5fb3b1-a80d-4382-b101-4e7e2f85b73e",
+      "result_id": "3f9dcdf4-013a-4b2c-bbb3-9ea90280020d"
+    },
+    {
+      "claim_id": "d9e7d848-245e-42ab-9e02-485f324bc2e5",
+      "result_id": "3f9dcdf4-013a-4b2c-bbb3-9ea90280020d"
+    },
+    {
+      "claim_id": "916c56af-2f4f-4bab-85ce-879d40a294a5",
+      "result_id": "3f9dcdf4-013a-4b2c-bbb3-9ea90280020d"
+    },
+    {
+      "claim_id": "dedaa1de-01ec-430b-b059-00ce66e530ba",
+      "result_id": "3f9dcdf4-013a-4b2c-bbb3-9ea90280020d"
+    },
+    {
+      "claim_id": "cb6841c7-3df5-45a2-9140-f6627edb980f",
+      "result_id": "3f9dcdf4-013a-4b2c-bbb3-9ea90280020d"
+    },
+    {
+      "claim_id": "4663a0e6-ef57-4ff9-9fba-184529163021",
+      "result_id": "3f9dcdf4-013a-4b2c-bbb3-9ea90280020d"
+    },
+    {
+      "claim_id": "f3f5f678-9110-40d5-93f6-8fe99c5bffe3",
+      "result_id": "7fbdc610-b23c-440a-a94e-fb4918109cfd"
+    },
+    {
+      "claim_id": "c127335e-0597-4868-b5a8-8c99d1a02b8c",
+      "result_id": "7fbdc610-b23c-440a-a94e-fb4918109cfd"
+    },
+    {
+      "claim_id": "83fed12b-377b-4b16-b3a7-12d2af6ee343",
+      "result_id": "7fbdc610-b23c-440a-a94e-fb4918109cfd"
+    },
+    {
+      "claim_id": "889028a8-5779-46ab-850a-736f94dd35da",
+      "result_id": "7fbdc610-b23c-440a-a94e-fb4918109cfd"
+    },
+    {
+      "claim_id": "10b75a7c-825b-4d69-9933-b2c916dd7f94",
+      "result_id": "7fbdc610-b23c-440a-a94e-fb4918109cfd"
+    },
+    {
+      "claim_id": "0ea6af5a-166c-4ba9-b283-d097392a8982",
+      "result_id": "7fbdc610-b23c-440a-a94e-fb4918109cfd"
+    },
+    {
+      "claim_id": "a6a809e2-29bc-4641-b4c8-cd3086320f3d",
+      "result_id": "7fbdc610-b23c-440a-a94e-fb4918109cfd"
+    },
+    {
+      "claim_id": "67cf653c-0951-49ef-9311-c48fc427704a",
+      "result_id": "7fbdc610-b23c-440a-a94e-fb4918109cfd"
+    },
+    {
+      "claim_id": "39ff0260-3bbf-4c48-9fd4-7c0b2765d920",
+      "result_id": "7fbdc610-b23c-440a-a94e-fb4918109cfd"
+    },
+    {
+      "claim_id": "859df2ed-2ee3-4482-a87b-83965ab618ed",
+      "result_id": "7fbdc610-b23c-440a-a94e-fb4918109cfd"
+    },
+    {
+      "claim_id": "4260e06e-57c2-450e-85cf-a6d527e3c986",
+      "result_id": "7fbdc610-b23c-440a-a94e-fb4918109cfd"
+    },
+    {
+      "claim_id": "5780cac9-f5c6-4122-b305-8dbc07ee9983",
+      "result_id": "374d9ebb-82af-4afa-bd3d-1caa355ee814"
+    },
+    {
+      "claim_id": "93c3af29-8190-4e11-9e20-cfd4e54353ea",
+      "result_id": "374d9ebb-82af-4afa-bd3d-1caa355ee814"
+    },
+    {
+      "claim_id": "5f521ea2-f0fa-478e-a210-200c1e6e1d93",
+      "result_id": "374d9ebb-82af-4afa-bd3d-1caa355ee814"
+    },
+    {
+      "claim_id": "0db64250-538b-48b3-9cc8-58f59fab71f0",
+      "result_id": "374d9ebb-82af-4afa-bd3d-1caa355ee814"
+    },
+    {
+      "claim_id": "55037ca4-5241-4691-b672-4540103fd845",
+      "result_id": "374d9ebb-82af-4afa-bd3d-1caa355ee814"
+    },
+    {
+      "claim_id": "61def304-870e-419b-8b17-08362bfa346e",
+      "result_id": "ed46bfe5-6c2a-4510-b17a-2f2919e1026c"
+    },
+    {
+      "claim_id": "08dadaf5-fc6b-4c49-b3c0-979eaa8d8f13",
+      "result_id": "ed46bfe5-6c2a-4510-b17a-2f2919e1026c"
+    },
+    {
+      "claim_id": "b34e16c8-d263-4179-b358-4168a4e3fd7a",
+      "result_id": "ed46bfe5-6c2a-4510-b17a-2f2919e1026c"
+    },
+    {
+      "claim_id": "41f9f968-c61c-453b-a8ca-761c8a2f7e6c",
+      "result_id": "ed46bfe5-6c2a-4510-b17a-2f2919e1026c"
+    },
+    {
+      "claim_id": "3fa7faa0-9d57-4265-b0ac-5430a643d0ec",
+      "result_id": "2df07c0f-a7ee-4d06-b0bc-442e6ce73b56"
+    },
+    {
+      "claim_id": "4a4e68ba-3c52-4359-bd45-9c673fa92eb5",
+      "result_id": "2df07c0f-a7ee-4d06-b0bc-442e6ce73b56"
+    },
+    {
+      "claim_id": "751cfa77-a190-47d1-91d9-97884048ff89",
+      "result_id": "2df07c0f-a7ee-4d06-b0bc-442e6ce73b56"
+    },
+    {
+      "claim_id": "e9d3cbab-4aad-437a-97e0-744871f4fc8a",
+      "result_id": "1cdfa306-350f-4946-8a8c-0ae7ef1ab32f"
+    },
+    {
+      "claim_id": "f26f378b-44e4-4ee0-8aab-266ff7bbef93",
+      "result_id": "1cdfa306-350f-4946-8a8c-0ae7ef1ab32f"
+    },
+    {
+      "claim_id": "e4fa691d-b794-4df0-8934-39366fc0974e",
+      "result_id": "1cdfa306-350f-4946-8a8c-0ae7ef1ab32f"
+    },
+    {
+      "claim_id": "493e58d1-ccd0-4265-b99c-d0be3775c2a5",
+      "result_id": "1cdfa306-350f-4946-8a8c-0ae7ef1ab32f"
+    },
+    {
+      "claim_id": "4745db54-31f0-4d47-a19b-93c5a7d6c8d5",
+      "result_id": "1cdfa306-350f-4946-8a8c-0ae7ef1ab32f"
+    },
+    {
+      "claim_id": "a356f731-a464-4e33-a4d5-48d7fa9cde57",
+      "result_id": "1cdfa306-350f-4946-8a8c-0ae7ef1ab32f"
+    },
+    {
+      "claim_id": "8a81f653-746a-4321-b59d-d0a13ed82978",
+      "result_id": "1cdfa306-350f-4946-8a8c-0ae7ef1ab32f"
+    },
+    {
+      "claim_id": "bfd3b900-e09b-4634-ab99-7b3c1c99671f",
+      "result_id": "1cdfa306-350f-4946-8a8c-0ae7ef1ab32f"
+    },
+    {
+      "claim_id": "693d135c-e1d9-498e-9d88-f9bc206751a3",
+      "result_id": "1cdfa306-350f-4946-8a8c-0ae7ef1ab32f"
+    },
+    {
+      "claim_id": "58c9b0b6-c02b-4b78-bd01-4859444544be",
+      "result_id": "1cdfa306-350f-4946-8a8c-0ae7ef1ab32f"
+    },
+    {
+      "claim_id": "11f3427b-ec00-43ac-89c4-af1c3fd0feaf",
+      "result_id": "c968d946-91be-425c-823d-3bd8bbae6d9c"
+    },
+    {
+      "claim_id": "dec9510b-6d0f-4fcf-af27-84446c297f10",
+      "result_id": "c968d946-91be-425c-823d-3bd8bbae6d9c"
+    },
+    {
+      "claim_id": "59106860-9174-40d4-b914-66db17816539",
+      "result_id": "2c90b304-dd2d-426d-86f9-a5ce2e286f0c"
+    },
+    {
+      "claim_id": "16779366-dd92-464f-8b24-6798e1f789f8",
+      "result_id": "2c90b304-dd2d-426d-86f9-a5ce2e286f0c"
+    },
+    {
+      "claim_id": "20077e84-7bad-4e78-9f05-d14491f68148",
+      "result_id": "9ecbd311-2008-449a-9bd3-7d1bde4d470e"
+    },
+    {
+      "claim_id": "2ea5616f-d2d5-40f6-b8c0-0fc6221f6dbd",
+      "result_id": "9ecbd311-2008-449a-9bd3-7d1bde4d470e"
+    },
+    {
+      "claim_id": "98adff3c-ecb4-4e86-9b5d-6c9430287f82",
+      "result_id": "9ecbd311-2008-449a-9bd3-7d1bde4d470e"
+    },
+    {
+      "claim_id": "a687b4e8-f3ec-4064-bf52-85b933493222",
+      "result_id": "279fb7e3-5160-4cee-8980-215d370291f0"
+    },
+    {
+      "claim_id": "12bfbe52-2cec-4a8d-9e0a-839c4eb09727",
+      "result_id": "279fb7e3-5160-4cee-8980-215d370291f0"
+    },
+    {
+      "claim_id": "8c24a829-8b0d-4a77-b137-cb59f6ede7ad",
+      "result_id": "279fb7e3-5160-4cee-8980-215d370291f0"
+    },
+    {
+      "claim_id": "cb82c8a2-26af-44db-936d-4b4baf484417",
+      "result_id": "279fb7e3-5160-4cee-8980-215d370291f0"
+    },
+    {
+      "claim_id": "f15771fa-a4ea-45dc-aeff-057137910126",
+      "result_id": "279fb7e3-5160-4cee-8980-215d370291f0"
+    },
+    {
+      "claim_id": "ee75bab9-2772-4186-8ad2-10a79c2c304d",
+      "result_id": "279fb7e3-5160-4cee-8980-215d370291f0"
+    },
+    {
+      "claim_id": "95f57630-fea2-43cc-a8d1-b014135966e8",
+      "result_id": "279fb7e3-5160-4cee-8980-215d370291f0"
+    },
+    {
+      "claim_id": "c4170397-f17b-42ef-bead-77130a7ea374",
+      "result_id": "279fb7e3-5160-4cee-8980-215d370291f0"
+    },
+    {
+      "claim_id": "96b625cf-71db-4f9c-9b39-5de8897ecc82",
+      "result_id": "279fb7e3-5160-4cee-8980-215d370291f0"
+    },
+    {
+      "claim_id": "67d77575-7070-4672-8fd4-4329f13c5339",
+      "result_id": "279fb7e3-5160-4cee-8980-215d370291f0"
+    },
+    {
+      "claim_id": "792f4e43-35cd-4bb3-8335-3a8f2dc278aa",
+      "result_id": "279fb7e3-5160-4cee-8980-215d370291f0"
+    },
+    {
+      "claim_id": "f704bad3-c735-4838-997b-7ff4c0cfc74c",
+      "result_id": "279fb7e3-5160-4cee-8980-215d370291f0"
+    },
+    {
+      "claim_id": "e6b83d72-fd72-4e3a-8678-74d62e38ea92",
+      "result_id": "279fb7e3-5160-4cee-8980-215d370291f0"
+    },
+    {
+      "claim_id": "24b6e265-d557-4c22-ac81-42f0a6095844",
+      "result_id": "279fb7e3-5160-4cee-8980-215d370291f0"
+    },
+    {
+      "claim_id": "59e2b617-a7fc-4212-a48b-71a2385c4413",
+      "result_id": "279fb7e3-5160-4cee-8980-215d370291f0"
+    },
+    {
+      "claim_id": "322d471e-addf-4496-9b81-ee145e52a8a7",
+      "result_id": "279fb7e3-5160-4cee-8980-215d370291f0"
+    },
+    {
+      "claim_id": "87d1f6b0-528c-4412-98f5-b5d1fc8e5ab2",
+      "result_id": "279fb7e3-5160-4cee-8980-215d370291f0"
+    },
+    {
+      "claim_id": "dc6e00f9-d078-4591-b6fc-61a1d2b99a8b",
+      "result_id": "279fb7e3-5160-4cee-8980-215d370291f0"
+    },
+    {
+      "claim_id": "513f7e80-9598-47d4-b768-d643082af91f",
+      "result_id": "279fb7e3-5160-4cee-8980-215d370291f0"
+    },
+    {
+      "claim_id": "9f6c8aed-09a0-4ead-b2e6-becf6c9970d1",
+      "result_id": "f58ccfb2-18ae-469d-a0c1-7a1a45167915"
+    }
+  ],
+  "comparisons": []
+}

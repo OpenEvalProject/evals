@@ -1,0 +1,265 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C87"
+    ],
+    "result": "The authors successfully generated haploid axolotl embryos through gynogenesis using UV-enucleated sperm and confirmed haploidy through multiple methods (karyotype, phenotype, absence of paternal GFP). They developed limb bud grafting techniques to create chimeric axolotls with haploid limbs on diploid hosts, as adult haploid axolotls are not viable. Grafted haploid limbs developed fully but were smaller than diploid limbs and exhibited similar neural GFP expression patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C25 and C87 provide converging evidence from multiple validation methods (karyotype n=14 in 3/3 embryos, haploid syndrome phenotype in 120/120 embryos, absence of GFP in 156/156 embryos) and experimental observations of grafted limb development. The methodology is well-documented with appropriate controls (diploid-diploid chimeras) and quantitative data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Haploid limbs regenerate fully after amputation and retain neural GFP expression patterns, though regeneration is slightly delayed compared to diploid limbs. NGS analysis of control genes (tyrosinase and methyltransferase-like) in 12 haploid-diploid chimeras revealed 92 alleles with mean mutation frequency of 3.46%. Allele frequencies in primary limbs significantly predict frequencies in regenerated limbs (R\u00b2=0.544, p<0.0001), with 76.1% of alleles detected in both limbs and 69.3% of low-frequency alleles showing less than two-fold change after regeneration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C35 are supported by quantitative NGS data with appropriate statistical analysis (linear regression, R\u00b2=0.544, p<0.0001) and consistent observations across multiple animals (n=12). The data demonstrate high-fidelity regeneration in haploid limbs comparable to previously published diploid results, establishing the validity of the haploid system for regeneration studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "Fetuin-b exhibited significant negative selection during limb regeneration. The slope of linear regression for fetuin-b alleles (m=0.254) was significantly different from controls (m=0.861, p<0.0001) and all other target genes (m=0.619, p=0.009). Fetuin-b alleles showed poor predictive correlation between primary and regenerated limbs (R\u00b2=0.069, p=0.046), and 45.8% of fetuin-b alleles were lost compared to 23.9% of control alleles (\u03c7\u00b2=7.03, p=0.008).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C40 are supported by rigorous statistical analysis using ANCOVA and chi-square tests with significant p-values. The analysis includes 48 fetuin-b alleles across 11 animals and appropriate comparisons to both control genes and all other targets. Multiple independent statistical measures converge on the same conclusion of negative selection.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Catalase exhibited significant negative selection during limb regeneration. The slope of linear regression for catalase alleles (m=0.018) differed significantly from controls (m=0.861, p=0.005) and from all other targets excluding fetuin-b (m=0.645, p=0.029). A significantly greater proportion of catalase alleles were lost (75.5%, 6/8) compared to controls (\u03c7\u00b2=9.53, p=0.002) and all other targets (\u03c7\u00b2=5.81, p=0.016).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While claims C41-C43 show statistically significant differences, the analysis is based on only 8 catalase alleles from 3 animals, which is a very small sample size. The low R\u00b2 value (0.002) and limited number of alleles raise concerns about the robustness of the conclusion. Additional validation with more animals would strengthen this result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C84"
+    ],
+    "result": "Validation experiments using whole-organism F0 mutants showed that catalase and fetuin-b mutants exhibited reduced tail regeneration at later time points (18 days post-amputation) compared to tyrosinase controls (p=0.002 for fetuin-b, p=0.012 for catalase), with catalase also showing reduction at 14 days (p=0.025). Early regeneration was not affected, indicating these genes are not essential for regeneration onset but slow the regeneration process.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C49 and C84 are supported by appropriate statistical analysis (Welch's t-test) with significant p-values and adequate sample sizes (n=12 for fetuin-b, n=16 for catalase, n=16 for tyrosinase controls). The temporal pattern of effects (no early defects, later reduction) is consistent across both genes and provides independent validation of the limb regeneration screen results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C68",
+      "C83"
+    ],
+    "result": "The authors conclude that catalase and fetuin-b are required for cells to participate in limb regeneration and that locally expressed fetuin-b is an important regulator of regeneration in the axolotl.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68 and C83 represent reasonable inferences from the combined negative selection data in limb regeneration (C36-C43) and the independent validation in tail regeneration (C44-C48). However, the strength of evidence is stronger for fetuin-b (48 alleles, 11 animals) than catalase (8 alleles, 3 animals). The conclusion is supported but would benefit from additional mechanistic studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C85"
+    ],
+    "result": "The authors developed a novel screening platform (MuCHaChA) that couples targeted mutagenesis and lineage tracing in haploid limbs to identify regulators of regeneration. They claim this is the first true in vivo haploid selection screen in a complex vertebrate structure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81, C82, and C85 are supported by the successful demonstration of the method and identification of two genes (catalase and fetuin-b) showing negative selection. The novelty claim (C85) is reasonable given the unique combination of haploid genetics, chimeric animals, and regeneration in a vertebrate, though the authors appropriately qualify it with 'to our knowledge.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C52",
+      "C73"
+    ],
+    "result": "The successful identification and validation of catalase and fetuin-b supports the validity of this assay as a means to identify genes critical for proper regeneration, particularly genes not essential for limb development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52 and C73 represent reasonable inferences from the successful identification of two genes through the screen and their subsequent validation in independent experiments. The specificity for regeneration-specific (not development-essential) genes is supported by the fact that both genes are not developmentally essential in mice (C69) yet show regeneration defects.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "The authors provide context for catalase function, noting it protects cells from oxidative damage by decomposing hydrogen peroxide. They cite literature showing ROS are critical for regeneration in other organisms but that prolonged ROS exposure impairs regeneration, and that both overexpression and inhibition of catalase can affect regeneration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C58 are appropriately supported by citations to prior work and represent accurate summaries of established knowledge about catalase function and ROS in regeneration. These claims provide important biological context for interpreting the catalase results but do not represent new findings from this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "The authors provide extensive background on fetuin-B and fetuin-A, including their expression patterns, protein family membership, differing biochemical activities, and phenotypes in knockout mice. They note that fetuin-B appears to function as an inhibitor of metalloproteinases, which are crucial for extracellular matrix remodeling during regeneration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C67 are appropriately supported by citations to prior work and represent accurate summaries of established knowledge about fetuin proteins. These claims provide important biological context for interpreting the fetuin-b results but do not represent new findings from this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C76"
+    ],
+    "result": "The authors discuss limitations of their assay, noting that genes required for both limb development and regeneration may not exhibit negative selection because mutant cell lineages could be depleted prior to limb formation. They argue that genes controlling early blastema formation do not substantially overlap with those required for limb development, based on single-cell analysis data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C72 and C76 represent thoughtful discussion of assay limitations and are supported by citations to relevant literature (C70, C74-C75). The inference about non-overlapping gene sets (C76) is reasonable based on cited single-cell data, though it remains somewhat speculative. This discussion appropriately qualifies the scope and interpretation of the screening results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C77",
+      "C78"
+    ],
+    "result": "The authors cite examples of genes (short-toes allele, sox2) that demonstrate dissociation between genetic control of limb development and regeneration in axolotls, supporting the concept that development and regeneration can be genetically separable processes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C78 are supported by appropriate citations to prior work and provide relevant examples that support the authors' argument about the potential for identifying regeneration-specific genes. These are accurate representations of published findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C79",
+      "C80"
+    ],
+    "result": "The authors acknowledge that only 16 of 25 gRNAs produced detectable mutant alleles in analyzed limbs and speculate that injecting greater quantities of gRNA in future studies will produce more mutant alleles without confounding results.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C79 is supported by experimental data, but claim C80 is speculation about future improvements without supporting evidence. The assumption that higher gRNA concentrations will not cause confounding effects (e.g., through multiplex mutagenesis of multiple genes in single cells) is not validated and may be overly optimistic.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C50"
+    ],
+    "result": "The authors suggest that catalase and fetuin-b have a broader role in the regeneration of multiple tissues and structures based on effects observed in both limb and tail regeneration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C50 is speculative and extends beyond the data presented. While both genes show effects in limb and tail regeneration, concluding a 'broader role in multiple tissues and structures' requires testing in additional regeneration contexts (e.g., gills, spinal cord). The claim is reasonable but not sufficiently supported by the current data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C74",
+      "C75"
+    ],
+    "result": "The authors provide extensive background on axolotl regeneration biology, including established knowledge about salamander regeneration capacity, blastema formation, transcriptional profiling studies, CRISPR/Cas9 application in axolotls, mosaic mutagenesis, and previous findings on regeneration fidelity. They also discuss transcriptional convergence in blastema cells and the rationale for negative selection screens.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C17, C74-C75 represent accurate summaries of established knowledge and prior work, appropriately supported by citations. These claims provide essential background and rationale for the study but do not represent new findings. The integration of this background effectively motivates the experimental approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C89",
+      "C91"
+    ],
+    "result": "The authors present hypotheses that cell lineages harboring deleterious mutant alleles will be reduced in regenerated limbs and that mutagenized genes essential for regeneration will show decreased allele frequency or complete loss in regenerated limbs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89 and C91 represent the central hypotheses of the study, illustrated in Figure 1C-D. These are reasonable hypotheses based on the principles of negative selection and are subsequently tested and validated for fetuin-b and catalase. The hypotheses are clearly stated and appropriately guide the experimental design.",
+    "result_type": "MINOR"
+  }
+]

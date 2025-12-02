@@ -1,0 +1,1759 @@
+{
+  "submission": {
+    "id": "672d025c-1398-49e0-b850-12a6cfc01b45",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T10:36:51.365508Z",
+    "updated_at": "2025-12-02T10:36:51.365508Z"
+  },
+  "content": [
+    {
+      "id": "482a1d22-5497-4936-8fc9-09a88d5423e5",
+      "submission_id": "672d025c-1398-49e0-b850-12a6cfc01b45",
+      "content_type": "manuscript",
+      "content_text": "# Cas9+ conditionally-immortalized macrophages as a tool for bacterial pathogenesis and beyond\n\n## Authors\n\n- Allison W Roberts<sup>1</sup> ([ORCID: 0000-0001-6681-4144](https://orcid.org/0000-0001-6681-4144))\n- Lauren M Popov<sup>1</sup>\n- Gabriel Mitchell<sup>1</sup> ([ORCID: 0000-0001-7977-5316](https://orcid.org/0000-0001-7977-5316))\n- Krystal L Ching<sup>1</sup> ([ORCID: 0000-0002-1181-0119](https://orcid.org/0000-0002-1181-0119))\n- Daniel J Licht<sup>1</sup>\n- Guillaume Golovkine<sup>1</sup>\n- Gregory M Barton<sup>1</sup> ([ORCID: 0000-0002-3793-0100](https://orcid.org/0000-0002-3793-0100))\n- Jeffery S Cox<sup>1</sup> ([ORCID: 0000-0002-5061-6618](https://orcid.org/0000-0002-5061-6618)) \u2020\n\n### Affiliations\n\n1. Department of Molecular and Cell Biology University of California, Berkeley Berkeley United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nMacrophages play critical roles in immunity, development, tissue repair, and cancer, but studies of their function have been hampered by poorly-differentiated tumor cell lines and genetically-intractable primary cells. Here we report a facile system for genome editing in non-transformed macrophages by differentiating ER-Hoxb8 myeloid progenitors from Cas9-expressing transgenic mice. These conditionally immortalized macrophages (CIMs) retain characteristics of primary macrophages derived from the bone marrow yet allow for easy genetic manipulation and a virtually unlimited supply of cells. We demonstrate the utility of this system for dissection of host genetics during intracellular bacterial infection using two important human pathogens: Listeria monocytogenes and Mycobacterium tuberculosis.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Strain, strain background (M. musculus)</td>\n      <td>WT C57BL/6J</td>\n      <td>Jackson Laboratory</td>\n      <td>Stock No: 000664</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (M. musculus)</td>\n      <td>Rosa26-Cas9 knockin mouse</td>\n      <td>Jackson Laboratory</td>\n      <td>Stock No: 026179</td>\n      <td>Platt et al., 2014</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>ER-Hoxb8-MSCV-Neo</td>\n      <td>Wang et al., 2006</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pLentiGuide-Puro</td>\n      <td>Addgene</td>\n      <td>52963</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>lenti-sgRNA hygro</td>\n      <td>Addgene</td>\n      <td>104991</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (M. tuberculosis)</td>\n      <td>Erdman strain</td>\n      <td></td>\n      <td>BEI Cat # NR-15404</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (M. tuberculosis)</td>\n      <td>\u0394eccC (Erdman, \u0394eccCa1-\u0394eccCb1)</td>\n      <td>Rosenberg et al., 2015</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (M. tuberculosis)</td>\n      <td>Lux (Erdman expressing the luxCDABEoperon)</td>\n      <td>Braverman et al., 2016</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (M. tuberculosis)</td>\n      <td>\u0394eccC Lux</td>\n      <td>Penn et al., 2018</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (L. monocytogenes)</td>\n      <td>10403S\u00a0strain</td>\n      <td>PMID: 24667708</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (L. monocytogenes)</td>\n      <td>\u0394actA</td>\n      <td>PMID: 10931865</td>\n      <td>DP-L3078</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent\u00a0(L. monocytogenes)</td>\n      <td>\u0394hly</td>\n      <td>PMID: 7960143</td>\n      <td>DP-L2161</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent\u00a0(L. monocytogenes)</td>\n      <td>\u0394actA PlcAH86APlcBH69G</td>\n      <td>Mitchell et al., 2018</td>\n      <td>DP-L6586</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>nCounter Mouse Myeloid Innate Immunity Panel</td>\n      <td>NanoString</td>\n      <td></td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### Cell culture\n\nBone marrow derived macrophages (BMMs) were generated from the femurs and tibias from wild-type C57BL/6 (The Jackson Laboratory) mice that were 8\u201312 weeks old. Conditionally-immortalized macrophages (CIMs) were derived from bone marrow cells from a 5-FU treated male Cas9+\u00a0mouse (Platt et al., 2014). Hoxb8 immortalized cells were generated as previously described (Wang et al., 2006) with the modification that progenitors in bone marrow were enriched by negative depletion; cells expressing CD11b, Ter119, B220, CD5, CD19, and Gr-1 were depleted using biotinylated antibodies and streptavidin coated dynabeads. For re-selection of CIM progenitors, cells were cultured in 10 mg/ml G418 for 7 days. All mice were housed in specific-pathogen free conditions and treated using procedures described in animal care protocols approved by the Institutional Animal Care and Use Committee of UC Berkeley.\n\nProgenitor CIMs prior to differentiation were maintained in RPMI (Gibco) supplemented with 10% FBS, 2% GM-CSF supernatant produced by a B16 murine melanoma cell line, 2 mM L-glutamine, 1 mM sodium pyruvate, 10 mM HEPES, 43 uM \u03b2-mercaptoethanol, and 2 uM \u03b2-estradiol (Sigma #E2758). Progenitor CIMs were maintained in suspension in non-treated tissue culture treated flasks at densities below 500,000 cells/ml before removal of \u03b2-estradiol and differentiation. BMMs and differentiated CIM macrophages were cultured in macrophage media: DMEM (Gibco) supplemented with 10% FBS, 10% M-CSF supernatant produced by 3T3-MCSF cells as previously described, 2 mM L-glutamine (Gibco), and 1 mM sodium pyruvate (Gibco). RAW 264.7 cells were cultured in DMEM (Gibco) supplemented with 10% FBS, 2 mM L-glutamine (Gibco), and 20 mM HEPES. To differentiate progenitor CIMs into macrophages, cells were washed twice in PBS\u00a0+\u00a01% FBS to fully remove \u03b2-estradiol, resuspended in complete macrophage media, and seeded onto non-treated 15 cm tissue culture plates at 5.0 \u00d7 106 cells/plate in 20 ml of media. Differentiating CIM macrophages were given an additional 10 ml of macrophage media on days 3 and 6 post-differentiation, and terminal assays were performed at day 9 or 10 post-differentiation.\n\n### Transfection, transduction, genotyping, and sequence analysis\n\nCRISPR guide sequences targeting genes of interest were selected from the murine Brie guide library. Oligonucleotides encoding the chosen gRNAs (see Supplementary file 1) were cloned into pLentiGuide-Puro (Addgene #52963) or lenti-gRNA hygro (Addgene #104991), and verified by sequencing using the human U6 sequencing primer. 293 T cells were co-transfected with pLentiGuide-Puro, psPAX2, and pMD2.G using Lipofectamine and Optimem according to manufacturer's guidelines to generate lentiviral particles for trandsuction into Cas9-expressing CIM progenitors. For optimal transduction of Cas9-expressing CIM progenitors, 5.0 \u00d7 105 cells/well in a 6-well plate were spinfected at 1000xg for 2 hr at 32\u00b0C in the presence of 10 \u00b5g/ml protamine sulfate. Two days post-transduction, 12 \u00b5g/ml puromycin was added to cells, and cells were selected in puromycin for 4 days. Puromycin-resistant cells were maintained as polyclonal populations and total gDNA was extracted using DNeasy Blood and Tissue kit (Qiagen). To generate double knockout progenitors, puromycin-resistant progenitors that had previously been transduced with pLentiGuide-Puro were transduced with lenti-sgRNA hygro and selected using 250 \u00b5g/ml hygromycin for 8 days. The genomic sites encompassing targeted guide regions were amplified by PCR using iProof polymerase (BioRad) and sequenced, and population level genome editing was estimated using the TIDE webtool (https://tide.deskgen.com/) as originally described (Brinkman et al., 2014). Guide genome editing efficiencies displayed were a combination of data from CIMs before and after G418 selection, with no notable difference in editing efficiency caused by G418 selection.\n\n### Mycobacterium tuberculosis infection\n\nCIMs or BMMs were seeded at 60,000 cells per well onto white, clear-bottom CellBind 96-well plates (Corning) or 12-well TC-treated plates (Corning) in macrophage media one or two days prior to infection. For pre-treatment of macrophages with IFN-\u03b3, post-seeding cell culture media was switched to media with 1.5 ng/\u00b5l of recombinant murine IFN-\u03b3 (Peprotech) 12\u201318 hr prior to infection, and activated cells were subsequently cultured in IFN-\u03b3 containing media throughout infection.\n\nMacrophages were infected with M. tuberculosis as previously described (Penn et al., 2018). The M. tuberculosis strain Erdman the \u0394eccC strain made in the Erdman background, or the WT or \u0394eccC strain made in the Erdman background expressing the luxCDABE operon (Braverman et al., 2016; Penn et al., 2018; Rosenberg et al., 2015) were used for all infections. All Mtb strains were cultured in 7H9 liquid media (BD) supplemented with 10% Middlebrook OADC (Sigma), 0.5% glycerol, 0.05% Tween-80 in roller bottles at 37\u00b0C. Briefly, mid-log M. tuberculosis cultures were washed twice with PBS, gently sonicated to disperse clumps, and resuspended in phagocytosis infection media (DMEM supplemented with 5% horse serum and 5% FBS). For luminescence assays macrophages were infected in at least triplicate wells by removing media from cells, and monolayers were overlaid with the bacterial suspensions in phagocytosis media then incubated at 37\u00b0C for 4 hr, after which infection media was removed and fresh macrophage media was added. Bacterial luminescence signal was measured at 32\u00b0C at the time of infection and every day starting 48 hr post-infection after daily media changes. All growth measurements are normalized to day 0 luminescence readings for each infected well and are presented as fold change in luminescence compared to day 0. Cells were infected at a multiplicity of infection (MOI) of 5 for RNA analysis and 0.5 for assays monitoring bacterial growth.\n\n### Listeria monocytogenes infection\n\nThe WT 10403S, \u0394actA (DP-L3078), \u0394hly (DP-L2161) and the autophagy-sensitive \u0394actA PlcAH86A PlcBH69G (DP-L6586) strains (Mitchell et al., 2018) (Cheng et al., 2018) were grown overnight in brain heart infusion (BHI) medium at 30\u00b0C before each experiment. Infections of macrophages were performed as previously described (Cheng et al., 2018; Mitchell et al., 2018) with few modifications. BMMs and CIMs were seeded on round 12 mm coverslips (Fisher Scientific, Hampton, NH, USA) and incubated overnight at 37\u00b0C and 5% CO2. Coverslips were incubated with a solution 0.1% gelatin for 1 hr at 37\u00b0C and washed twice with PBS prior seeding CIMs. Macrophages were infected at various MOIs, washed at 0.5 hr post-infection and further incubated in fresh medium. At 1 hr post-infection, 50 \u00b5g/ml of gentamicin was added to the medium in order to kill extracellular bacteria. MOIs and incubation times are indicated in figure legends.\n\n### Flow cytometry\n\nCells were fixed with Fix/Perm buffer (BD) for 20 min at 4\u00b0C. All stains were carried out in PBS containing 2% FBS (v/v) including anti-CD16/32 Fc blocking antibody (clone 93, BioLegend). Cells were stained for 20 min at 4\u00b0C with antibodies against F4/80 (clone BM8, Tonbo Biosciences), CD11b (clone M1/70, Tonbo Biosciences), CD11c (clone N418, Tonbo Biosciences), Ly6C (clone HK 1.4, BioLegend), Ly6G (clone 1A8, Tonbo Biosciences), IFN\u03b3R1 (clone 200, eBioscience) or iNos (clone CXNFT, eBioscience). All cells were analyzed on an LSR Fortessa (BD Biosciences), and data was analyzed with FlowJo.\n\n### TLR ligand and IFN\u03b3 stimulations\n\nCells were seeded at 60,000 cells per well in 96-well CellBind plates (Corning) in macrophage media the day prior to stimulation. For cytokine analysis cells were stimulated with 1 \u00b5g/ml LPS (InvivoGen) or 1 uM CpG-1668 (InvivoGen, Tlrl-1668) for 16\u201320 hr. Cell-free supernatants were harvested and frozen at \u221220\u00b0C prior to analysis. For Griess assay analysis, cells were stimulated with 100 ng/ml LPS and 5 ng/ml IFN\u03b3. After 24 hr cell-free supernatant was harvested and immediately analyzed.\n\n### ELISA\n\nCell-free supernatants from stimulated cells were analyzed by ELISA to enumerate cytokine production. Supernatants were absorbed onto a 96-well Nunc MaxiSorp flat-bottom plate (44-2404-21, Invitrogen) coated with the following capture antibodies diluted in 0.1M sodium phosphate buffer pH 8.0 and incubated overnight at 4\u00b0C: IL-6 (clone MP5-20F3, 554400, BD Biosciences, 1 \u03bcg/ml) and IL-12 p40 (clone C15.6, 14-7125-81, eBioscience, 1 \u03bcg/ml). The following day, plates were washed 3x with PBS\u00a0+\u00a00.05% Tween-20 and blocked with PBS\u00a0+\u00a01% BSA for 4 hr at RT. Recombinant cytokines for standard measurements were serially diluted in PBS/BSA. IL-6 (406 ML-025, R and D) IL-12 p40 (34-8321-63, eBioscience) and experimental supernatants were incubated overnight at 4\u00b0C. After 3X washes in PBS/BSA, biotin-conjugated sandwich antibodies were incubated on supernatants and standards (IL-6, MP5-32C11, 554402, BD Biosciences and p40 C17.8, 13-7123-85, eBiosciences) and detected by Streptavidin-HRP (BD Biosciences, 1:3000). For the development step, ELISA was incubated with OPD (Sigma) and 30% hydrogen peroxide, followed by incubation with 3M HCl. Absorbance at 490 nm was read on an Infinite M200 Tecan plate reader.\n\n### Griess assay\n\nCell-free supernatants from stimulated cells were analyzed by Griess reaction to detect nitrite as a proxy for NO production. A solution of 0.2% napthylethylenediamine dihydrochloride was mixed 1:1 with a 2% sulfanilamide/4% phosphoric acid solution. 100 \u00b5l of this solution was mixed with 100 \u00b5l of sample supernatant and absorbance at 546 nm was immediately measured. Nitrite concentrations were determined using a standard curve of sodium nitrite.\n\n### Immunofluorescence microscopy and Diff-Quick staining\n\nCoverslips seeded with macrophages were left uninfected or infected with L. monocytogenes, stained with a Diff-Quick stain set (Dade Behring, Deerfield, IL, USA), air-dried and mounted on glass slides using a drop of Permount (Fisher Scientific). Immunofluorescence staining of macrophages infected with L. monocytogenes was performed using a polyclonal rabbit antisera that recognizes L. monocytogenes (BD Biosciences, San Jose, CA, USA), a rhodamine red\u2010X goat anti\u2010rabbit IgG (Invitrogen, Carlsbad, CA, USA), phalloidin AlexaFluor\u2010647 (Invitrogen) and ProLong Gold antifade reagent containing 4\u20326,\u2010diamidino\u20102\u2010phenylindole (Invitrogen), as previously described (Cheng et al., 2018). All images were acquired with a KEYENCE BZ\u2010X710 fluorescent microscope using a 100\u00a0\u00d7\u00a0objective and post-treated using the haze reduction function of the BZ\u2010X analyser software. Images showed in Figure 2B were obtained by staking 10 layers covering 5 \u03bcm of thickness and pseudo-colored.\n\n### mRNA analysis using nanostring Ncounter\n\nTotal RNA was isolated using TRIzol (Fisher) and the PureLink RNA Mini Kit (12183018A, Ambion), NEB DNase treated, and purified using RNA clean and concentrator columns (Zymo). RNA was analyzed using the mouse myeloid innate immunity panel of the NanoString nCounter Analysis System (NanoString Technologies). Raw counts of samples were normalized according to the manufacturer\u2019s recommendations using reference genes as internal controls (Sdha, Oaz1, Rpl19, Edc3, Sap130, Hdac3, Polr2a, Ppia, Gusb, Tbp, Sf3a3, and Abcf1). Background threshold was set to the geometric mean of the negative controls. Normalization was performed using nSolver Analysis Software v4. Normalized transcript counts are shown in Figure 3\u2014source data 1.\n\n### Statistics\n\nStatistical analysis of data was performed using GraphPad Prism software (Graphpad, San Diego, CA). Results are reported as the mean\u00a0\u00b1\u00a0SD. Pearson correlation coefficients and R2 values for scatter plots of mRNA expression were determined using log transformed data.\n",
+      "created_at": "2025-12-02T10:36:51.365508Z"
+    },
+    {
+      "id": "07691d9f-c03b-4e3d-b43a-ee2eb3b85dfc",
+      "submission_id": "672d025c-1398-49e0-b850-12a6cfc01b45",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Bavesh D Kana, University of the Witwatersrand South Africa\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.45957.011](https://doi.org/10.7554/eLife.45957.011)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Cas9+ Conditionally-Immortalized Macrophages: a tool for bacterial pathogenesis and beyond\" for consideration by eLife. Your article has been reviewed by four peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation has been overseen by Wendy Garrett as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThe authors set out to create an approach that will yield a cell type that is close to primary bone marrow-derived macrophages (BMMs), and that can be (i) produced in abundance ex vivo and (ii) be genetically manipulated through CRISPR-CAS9 to modulate specific pathways. The cell type produced are referred to as Conditionally-Immortalized Macrophages (CIM).\n\nApproach: They use a regulated version of the homeobox transcription factor Hoxb8 (ER-Hoxb8) in conditionally immortalized macrophage progenitors from Cas9-expressing mice, with the idea that differentiation of these can lead to unlimited supply of macrophages. By comparing the gross morphology of the resulting cells, the authors demonstrate similarity to BMMs, an observation further confirmed using NanoString technology to measure mRNA of\n\n700 genes associated with myeloid innate immunity. The functionality (determined by measuring induction of pro-inflammatory cytokines IL-6 and IL-12p40 and measuring iNOS activity) and similarity of CIMs is maintained when these cells are transfected with the lentivirus system used to deliver short guide RNAs for gene knockdown. Next, to determine the capacity of these CIMs for gene editing the authors introduced 40 individual short guide RNAs that target 17 genes and assessed knockdown using Tracking Indels by Decomposition (TIDE) analysis. In this set of experiments, they obtained >80% gene knockdown from at least one guide RNA. Following this, they also develop a system to make double gene knockdowns in the CIM model.\n\nValidation: To validate the utility of the CIMs produced by the authors, they use two bacterial systems, Listeria monocytogenes and Mycobacterium tuberculosis (with BMMs the comparator).\n\nL. monocytogenes: Here they monitored phagocytosis and replication, which were comparable between the two cell types (CIMs and BMMs). They also monitored secretion of the listeriolysin O toxin and the ability of the bacterium to make actin comet tails, these bugs move around the cytoplasm by recruiting actin, through a protein called ActA. In addition, using mutants of L. monocytogenes and CIM gene knockdowns they confirmed the role for autophagy in controlling infection. All these processes were similar in CIMs and BMMs.\n\nM. tuberculosis: Here, they infected BMMs and CIMs with auto-luminescent M. tuberculosis strains and looked at bacterial replication and report robust growth in CIMs with kinetics comparable to that of BMMs. To determine if CIMs could be used to explore the biology of tubercle bacteria, they assessed whether the specialized Esx secretion apparatus was important for replication in CIMS. For this, they use a M. tuberculosis strain lacking the core ATPase, required for this system, and report that the mutant bacteria were unable to replicate in BMMs or CIMs. Next, they explore the role of IFN\u03b3 and report similar outcomes between the two cell types. They also compared gene expression of BMMs and CIMs infected with wild type M. tuberculosis or a \u0394eccC muant using the 700 gene panel described above. They find a strong correlation between genes expressed in CIMs and BMMs, thus confirming the utility of the CIM model for TB studies.\n\nKey finding: The development of the Cas9+CIM system is a significant technological advance. It provides an invaluable tool for the study of macrophage biology and macrophage/pathogen interaction. Availability of this technology to the broader scientific community would help in the advancement of science.\n\nEssential revisions:\n\n1) One of the major concerns is choosing technical duplicates from one experiment for NanoString experiment. The authors should justify why they haven't performed biological replicates if they are not able to repeat the experiment in Figure 1C, Figure 3C, D.\n",
+      "created_at": "2025-12-02T10:36:51.365508Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T10:36:51.365508Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T10:36:51.365508Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "c55901dc-3cc8-4524-9c7e-ada7dea6bc8d",
+      "content_id": "482a1d22-5497-4936-8fc9-09a88d5423e5",
+      "claim_id": "C1",
+      "claim": "Macrophages play critical roles in immunity, development, tissue repair, and cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "Macrophages play critical roles in immunity, development, tissue repair, and cancer, but studies of their function have been hampered by poorly-differentiated tumor cell lines and genetically-intractable primary cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of established scientific knowledge about macrophage functions in biological systems.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:36:51.365508Z"
+    },
+    {
+      "id": "e93730c9-c5ce-4c51-b7af-7de7627d86c2",
+      "content_id": "482a1d22-5497-4936-8fc9-09a88d5423e5",
+      "claim_id": "C2",
+      "claim": "Studies of macrophage function have been hampered by poorly-differentiated tumor cell lines and genetically-intractable primary cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Macrophages play critical roles in immunity, development, tissue repair, and cancer, but studies of their function have been hampered by poorly-differentiated tumor cell lines and genetically-intractable primary cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement describes a known limitation in the field based on established understanding of available research tools.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:36:51.365508Z"
+    },
+    {
+      "id": "cff4f66d-2b33-439c-8e98-3870803ad5ea",
+      "content_id": "482a1d22-5497-4936-8fc9-09a88d5423e5",
+      "claim_id": "C3",
+      "claim": "A facile system for genome editing in non-transformed macrophages can be created by differentiating ER-Hoxb8 myeloid progenitors from Cas9-expressing transgenic mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we report a facile system for genome editing in non-transformed macrophages by differentiating ER-Hoxb8 myeloid progenitors from Cas9-expressing transgenic mice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the primary finding reported by the authors based on their experimental work.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:36:51.365508Z"
+    },
+    {
+      "id": "f9e1f7b1-1720-411a-b85a-6603305ccd20",
+      "content_id": "482a1d22-5497-4936-8fc9-09a88d5423e5",
+      "claim_id": "C4",
+      "claim": "Conditionally immortalized macrophages (CIMs) retain characteristics of primary macrophages derived from the bone marrow.",
+      "claim_type": "EXPLICIT",
+      "source": "These conditionally immortalized macrophages (CIMs) retain characteristics of primary macrophages derived from the bone marrow yet allow for easy genetic manipulation and a virtually unlimited supply of cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the authors' characterization of the CIM system.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:36:51.365508Z"
+    },
+    {
+      "id": "1521fd8a-8c5f-42eb-b7de-c2af94ba047d",
+      "content_id": "482a1d22-5497-4936-8fc9-09a88d5423e5",
+      "claim_id": "C5",
+      "claim": "Conditionally immortalized macrophages (CIMs) allow for easy genetic manipulation.",
+      "claim_type": "EXPLICIT",
+      "source": "These conditionally immortalized macrophages (CIMs) retain characteristics of primary macrophages derived from the bone marrow yet allow for easy genetic manipulation and a virtually unlimited supply of cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the authors' characterization of the CIM system.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:36:51.365508Z"
+    },
+    {
+      "id": "bc13dd5d-790d-4c8c-a15a-ed1069611f83",
+      "content_id": "482a1d22-5497-4936-8fc9-09a88d5423e5",
+      "claim_id": "C6",
+      "claim": "Conditionally immortalized macrophages (CIMs) provide a virtually unlimited supply of cells.",
+      "claim_type": "EXPLICIT",
+      "source": "These conditionally immortalized macrophages (CIMs) retain characteristics of primary macrophages derived from the bone marrow yet allow for easy genetic manipulation and a virtually unlimited supply of cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the authors' characterization of the CIM system.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:36:51.365508Z"
+    },
+    {
+      "id": "4ab917ec-487d-4921-af5a-e722cde0913f",
+      "content_id": "482a1d22-5497-4936-8fc9-09a88d5423e5",
+      "claim_id": "C7",
+      "claim": "The CIM system is useful for dissection of host genetics during intracellular bacterial infection.",
+      "claim_type": "EXPLICIT",
+      "source": "We demonstrate the utility of this system for dissection of host genetics during intracellular bacterial infection using two important human pathogens: Listeria monocytogenes and Mycobacterium tuberculosis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through experimental data using two bacterial pathogens.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:36:51.365508Z"
+    },
+    {
+      "id": "3329f804-ec73-4341-97f2-d8fc00d2c0d2",
+      "content_id": "482a1d22-5497-4936-8fc9-09a88d5423e5",
+      "claim_id": "C8",
+      "claim": "Listeria monocytogenes is an important human pathogen.",
+      "claim_type": "EXPLICIT",
+      "source": "We demonstrate the utility of this system for dissection of host genetics during intracellular bacterial infection using two important human pathogens: Listeria monocytogenes and Mycobacterium tuberculosis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge about L. monocytogenes.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:36:51.365508Z"
+    },
+    {
+      "id": "447c2d52-674c-4cd0-962e-29e15bbfc5aa",
+      "content_id": "482a1d22-5497-4936-8fc9-09a88d5423e5",
+      "claim_id": "C9",
+      "claim": "Mycobacterium tuberculosis is an important human pathogen.",
+      "claim_type": "EXPLICIT",
+      "source": "We demonstrate the utility of this system for dissection of host genetics during intracellular bacterial infection using two important human pathogens: Listeria monocytogenes and Mycobacterium tuberculosis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge about M. tuberculosis.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:36:51.365508Z"
+    },
+    {
+      "id": "e06703b4-7d0b-44b9-89b5-801e507d6f24",
+      "content_id": "482a1d22-5497-4936-8fc9-09a88d5423e5",
+      "claim_id": "C10",
+      "claim": "Bone marrow derived macrophages (BMMs) were generated from the femurs and tibias from wild-type C57BL/6 mice that were 8\u201312 weeks old.",
+      "claim_type": "EXPLICIT",
+      "source": "Bone marrow derived macrophages (BMMs) were generated from the femurs and tibias from wild-type C57BL/6 (The Jackson Laboratory) mice that were 8\u201312 weeks old.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental procedure used by the authors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:36:51.365508Z"
+    },
+    {
+      "id": "cd74b03f-5b2e-4c6f-a2d7-4b659614b7ce",
+      "content_id": "482a1d22-5497-4936-8fc9-09a88d5423e5",
+      "claim_id": "C11",
+      "claim": "Conditionally-immortalized macrophages (CIMs) were derived from bone marrow cells from a 5-FU treated male Cas9+ mouse.",
+      "claim_type": "EXPLICIT",
+      "source": "Conditionally-immortalized macrophages (CIMs) were derived from bone marrow cells from a 5-FU treated male Cas9+ mouse (Platt et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental procedure used by the authors, with citation to the source of the Cas9+ mouse.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:36:51.365508Z"
+    },
+    {
+      "id": "9619512d-8812-4003-b117-f75cbc13d3b3",
+      "content_id": "482a1d22-5497-4936-8fc9-09a88d5423e5",
+      "claim_id": "C12",
+      "claim": "Hoxb8 immortalized cells were generated as previously described by Wang et al., 2006.",
+      "claim_type": "EXPLICIT",
+      "source": "Hoxb8 immortalized cells were generated as previously described (Wang et al., 2006) with the modification that progenitors in bone marrow were enriched by negative depletion; cells expressing CD11b, Ter119, B220, CD5, CD19, and Gr-1 were depleted using biotinylated antibodies and streptavidin coated dynabeads.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This references a previously published method with citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:36:51.365508Z"
+    },
+    {
+      "id": "8a9013ee-6eb0-48b1-8327-ff3733a4fdb5",
+      "content_id": "482a1d22-5497-4936-8fc9-09a88d5423e5",
+      "claim_id": "C13",
+      "claim": "Progenitors in bone marrow were enriched by negative depletion of cells expressing CD11b, Ter119, B220, CD5, CD19, and Gr-1 using biotinylated antibodies and streptavidin coated dynabeads.",
+      "claim_type": "EXPLICIT",
+      "source": "Hoxb8 immortalized cells were generated as previously described (Wang et al., 2006) with the modification that progenitors in bone marrow were enriched by negative depletion; cells expressing CD11b, Ter119, B220, CD5, CD19, and Gr-1 were depleted using biotinylated antibodies and streptavidin coated dynabeads.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a modification to the published protocol used by the authors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:36:51.365508Z"
+    },
+    {
+      "id": "359260bf-1273-4983-90f7-3931f8926784",
+      "content_id": "482a1d22-5497-4936-8fc9-09a88d5423e5",
+      "claim_id": "C14",
+      "claim": "CIM progenitors were re-selected by culturing cells in 10 mg/ml G418 for 7 days.",
+      "claim_type": "EXPLICIT",
+      "source": "For re-selection of CIM progenitors, cells were cultured in 10 mg/ml G418 for 7 days.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental procedure used by the authors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:36:51.365508Z"
+    },
+    {
+      "id": "d3b967cd-d4b4-4509-bd93-e46129f28f58",
+      "content_id": "482a1d22-5497-4936-8fc9-09a88d5423e5",
+      "claim_id": "C15",
+      "claim": "All mice were housed in specific-pathogen free conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "All mice were housed in specific-pathogen free conditions and treated using procedures described in animal care protocols approved by the Institutional Animal Care and Use Committee of UC Berkeley.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental conditions used by the authors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:36:51.365508Z"
+    },
+    {
+      "id": "7075619d-1d51-4225-93bd-39039fc9a19b",
+      "content_id": "482a1d22-5497-4936-8fc9-09a88d5423e5",
+      "claim_id": "C16",
+      "claim": "Mice were treated using procedures described in animal care protocols approved by the Institutional Animal Care and Use Committee of UC Berkeley.",
+      "claim_type": "EXPLICIT",
+      "source": "All mice were housed in specific-pathogen free conditions and treated using procedures described in animal care protocols approved by the Institutional Animal Care and Use Committee of UC Berkeley.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the ethical approval for the experimental procedures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:36:51.365508Z"
+    },
+    {
+      "id": "819545d1-5de1-4b24-88bf-3f3a7d32bb41",
+      "content_id": "482a1d22-5497-4936-8fc9-09a88d5423e5",
+      "claim_id": "C17",
+      "claim": "Progenitor CIMs prior to differentiation were maintained in RPMI supplemented with 10% FBS, 2% GM-CSF supernatant, 2 mM L-glutamine, 1 mM sodium pyruvate, 10 mM HEPES, 43 uM \u03b2-mercaptoethanol, and 2 uM \u03b2-estradiol.",
+      "claim_type": "EXPLICIT",
+      "source": "Progenitor CIMs prior to differentiation were maintained in RPMI (Gibco) supplemented with 10% FBS, 2% GM-CSF supernatant produced by a B16 murine melanoma cell line, 2 mM L-glutamine, 1 mM sodium pyruvate, 10 mM HEPES, 43 uM \u03b2-mercaptoethanol, and 2 uM \u03b2-estradiol (Sigma #E2758).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental procedure used by the authors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:36:51.365508Z"
+    },
+    {
+      "id": "2017aab1-b0cd-4948-bb25-283f5efe4cf6",
+      "content_id": "482a1d22-5497-4936-8fc9-09a88d5423e5",
+      "claim_id": "C18",
+      "claim": "GM-CSF supernatant was produced by a B16 murine melanoma cell line.",
+      "claim_type": "EXPLICIT",
+      "source": "Progenitor CIMs prior to differentiation were maintained in RPMI (Gibco) supplemented with 10% FBS, 2% GM-CSF supernatant produced by a B16 murine melanoma cell line, 2 mM L-glutamine, 1 mM sodium pyruvate, 10 mM HEPES, 43 uM \u03b2-mercaptoethanol, and 2 uM \u03b2-estradiol (Sigma #E2758).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the source of GM-CSF used in the experimental procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:36:51.365508Z"
+    },
+    {
+      "id": "85398b7a-827d-4e04-8935-fdc05efa63d5",
+      "content_id": "482a1d22-5497-4936-8fc9-09a88d5423e5",
+      "claim_id": "C19",
+      "claim": "Progenitor CIMs were maintained in suspension in non-treated tissue culture treated flasks at densities below 500,000 cells/ml before removal of \u03b2-estradiol and differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "Progenitor CIMs were maintained in suspension in non-treated tissue culture treated flasks at densities below 500,000 cells/ml before removal of \u03b2-estradiol and differentiation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental procedure used by the authors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:36:51.365508Z"
+    },
+    {
+      "id": "2befa174-cec6-421f-a79c-0e4400bcec2c",
+      "content_id": "482a1d22-5497-4936-8fc9-09a88d5423e5",
+      "claim_id": "C20",
+      "claim": "BMMs and differentiated CIM macrophages were cultured in macrophage media consisting of DMEM supplemented with 10% FBS, 10% M-CSF supernatant, 2 mM L-glutamine, and 1 mM sodium pyruvate.",
+      "claim_type": "EXPLICIT",
+      "source": "BMMs and differentiated CIM macrophages were cultured in macrophage media: DMEM (Gibco) supplemented with 10% FBS, 10% M-CSF supernatant produced by 3T3-MCSF cells as previously described, 2 mM L-glutamine (Gibco), and 1 mM sodium pyruvate (Gibco).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental procedure used by the authors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:36:51.365508Z"
+    },
+    {
+      "id": "9518b619-d82f-4901-b679-9fccccef8725",
+      "content_id": "482a1d22-5497-4936-8fc9-09a88d5423e5",
+      "claim_id": "C21",
+      "claim": "M-CSF supernatant was produced by 3T3-MCSF cells.",
+      "claim_type": "EXPLICIT",
+      "source": "BMMs and differentiated CIM macrophages were cultured in macrophage media: DMEM (Gibco) supplemented with 10% FBS, 10% M-CSF supernatant produced by 3T3-MCSF cells as previously described, 2 mM L-glutamine (Gibco), and 1 mM sodium pyruvate (Gibco).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the source of M-CSF used in the experimental procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:36:51.365508Z"
+    },
+    {
+      "id": "9c607ccb-55dc-45ee-8b97-70ebb97d6625",
+      "content_id": "482a1d22-5497-4936-8fc9-09a88d5423e5",
+      "claim_id": "C22",
+      "claim": "RAW 264.7 cells were cultured in DMEM supplemented with 10% FBS, 2 mM L-glutamine, and 20 mM HEPES.",
+      "claim_type": "EXPLICIT",
+      "source": "RAW 264.7 cells were cultured in DMEM (Gibco) supplemented with 10% FBS, 2 mM L-glutamine (Gibco), and 20 mM HEPES.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental procedure used by the authors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:36:51.365508Z"
+    },
+    {
+      "id": "5b87af69-967d-42d6-8b63-c380dfe2130e",
+      "content_id": "482a1d22-5497-4936-8fc9-09a88d5423e5",
+      "claim_id": "C23",
+      "claim": "To differentiate progenitor CIMs into macrophages, cells were washed twice in PBS + 1% FBS to fully remove \u03b2-estradiol, resuspended in complete macrophage media, and seeded onto non-treated 15 cm tissue culture plates at 5.0 \u00d7 10^6 cells/plate in 20 ml of media.",
+      "claim_type": "EXPLICIT",
+      "source": "To differentiate progenitor CIMs into macrophages, cells were washed twice in PBS + 1% FBS to fully remove \u03b2-estradiol, resuspended in complete macrophage media, and seeded onto non-treated 15 cm tissue culture plates at 5.0 \u00d7 106 cells/plate in 20 ml of media.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental procedure used by the authors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:36:51.365508Z"
+    },
+    {
+      "id": "30c9652f-9513-4670-9d05-2f55af4a3ebd",
+      "content_id": "482a1d22-5497-4936-8fc9-09a88d5423e5",
+      "claim_id": "C24",
+      "claim": "Differentiating CIM macrophages were given an additional 10 ml of macrophage media on days 3 and 6 post-differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "Differentiating CIM macrophages were given an additional 10 ml of macrophage media on days 3 and 6 post-differentiation, and terminal assays were performed at day 9 or 10 post-differentiation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental procedure used by the authors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:36:51.365508Z"
+    },
+    {
+      "id": "a47f0ee9-517e-43dc-9e24-816f936c0e8a",
+      "content_id": "482a1d22-5497-4936-8fc9-09a88d5423e5",
+      "claim_id": "C25",
+      "claim": "Terminal assays were performed at day 9 or 10 post-differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "Differentiating CIM macrophages were given an additional 10 ml of macrophage media on days 3 and 6 post-differentiation, and terminal assays were performed at day 9 or 10 post-differentiation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental procedure used by the authors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:36:51.365508Z"
+    },
+    {
+      "id": "ef70dc86-27ea-421a-9c41-aa7cab060f49",
+      "content_id": "482a1d22-5497-4936-8fc9-09a88d5423e5",
+      "claim_id": "C26",
+      "claim": "CRISPR guide sequences targeting genes of interest were selected from the murine Brie guide library.",
+      "claim_type": "EXPLICIT",
+      "source": "CRISPR guide sequences targeting genes of interest were selected from the murine Brie guide library.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental procedure used by the authors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:36:51.365508Z"
+    },
+    {
+      "id": "96c35a89-55d4-4239-bb9e-7de8229d1ca5",
+      "content_id": "482a1d22-5497-4936-8fc9-09a88d5423e5",
+      "claim_id": "C27",
+      "claim": "Oligonucleotides encoding the chosen gRNAs were cloned into pLentiGuide-Puro or lenti-gRNA hygro and verified by sequencing using the human U6 sequencing primer.",
+      "claim_type": "EXPLICIT",
+      "source": "Oligonucleotides encoding the chosen gRNAs (see Supplementary file 1) were cloned into pLentiGuide-Puro (Addgene #52963) or lenti-gRNA hygro (Addgene #104991), and verified by sequencing using the human U6 sequencing primer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental procedure used by the authors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:36:51.365508Z"
+    },
+    {
+      "id": "2729411c-7625-4c9b-8f61-1167ca403e21",
+      "content_id": "482a1d22-5497-4936-8fc9-09a88d5423e5",
+      "claim_id": "C28",
+      "claim": "293 T cells were co-transfected with pLentiGuide-Puro, psPAX2, and pMD2.G using Lipofectamine and Optimem to generate lentiviral particles for transduction into Cas9-expressing CIM progenitors.",
+      "claim_type": "EXPLICIT",
+      "source": "293 T cells were co-transfected with pLentiGuide-Puro, psPAX2, and pMD2.G using Lipofectamine and Optimem according to manufacturer's guidelines to generate lentiviral particles for trandsuction into Cas9-expressing CIM progenitors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental procedure used by the authors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:36:51.365508Z"
+    },
+    {
+      "id": "21d129c8-4155-47ea-abc8-631873812ded",
+      "content_id": "482a1d22-5497-4936-8fc9-09a88d5423e5",
+      "claim_id": "C29",
+      "claim": "For optimal transduction of Cas9-expressing CIM progenitors, 5.0 \u00d7 10^5 cells/well in a 6-well plate were spinfected at 1000xg for 2 hr at 32\u00b0C in the presence of 10 \u00b5g/ml protamine sulfate.",
+      "claim_type": "EXPLICIT",
+      "source": "For optimal transduction of Cas9-expressing CIM progenitors, 5.0 \u00d7 105 cells/well in a 6-well plate were spinfected at 1000xg for 2 hr at 32\u00b0C in the presence of 10 \u00b5g/ml protamine sulfate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental procedure used by the authors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:36:51.365508Z"
+    },
+    {
+      "id": "a706485e-717e-4904-8b31-4c203de934f0",
+      "content_id": "482a1d22-5497-4936-8fc9-09a88d5423e5",
+      "claim_id": "C30",
+      "claim": "Two days post-transduction, 12 \u00b5g/ml puromycin was added to cells, and cells were selected in puromycin for 4 days.",
+      "claim_type": "EXPLICIT",
+      "source": "Two days post-transduction, 12 \u00b5g/ml puromycin was added to cells, and cells were selected in puromycin for 4 days.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental procedure used by the authors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:36:51.365508Z"
+    },
+    {
+      "id": "af68ba45-5b2c-4f3d-a2c3-078b72be55fb",
+      "content_id": "482a1d22-5497-4936-8fc9-09a88d5423e5",
+      "claim_id": "C31",
+      "claim": "Puromycin-resistant cells were maintained as polyclonal populations.",
+      "claim_type": "EXPLICIT",
+      "source": "Puromycin-resistant cells were maintained as polyclonal populations and total gDNA was extracted using DNeasy Blood and Tissue kit (Qiagen).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental procedure used by the authors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:36:51.365508Z"
+    },
+    {
+      "id": "31eaefda-e09b-4ab0-b96e-e7bf7547c8da",
+      "content_id": "482a1d22-5497-4936-8fc9-09a88d5423e5",
+      "claim_id": "C32",
+      "claim": "Total gDNA was extracted using DNeasy Blood and Tissue kit.",
+      "claim_type": "EXPLICIT",
+      "source": "Puromycin-resistant cells were maintained as polyclonal populations and total gDNA was extracted using DNeasy Blood and Tissue kit (Qiagen).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental procedure used by the authors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:36:51.365508Z"
+    },
+    {
+      "id": "9caf1a26-c3d1-40d6-be41-c0a4655bb285",
+      "content_id": "482a1d22-5497-4936-8fc9-09a88d5423e5",
+      "claim_id": "C33",
+      "claim": "To generate double knockout progenitors, puromycin-resistant progenitors that had previously been transduced with pLentiGuide-Puro were transduced with lenti-sgRNA hygro and selected using 250 \u00b5g/ml hygromycin for 8 days.",
+      "claim_type": "EXPLICIT",
+      "source": "To generate double knockout progenitors, puromycin-resistant progenitors that had previously been transduced with pLentiGuide-Puro were transduced with lenti-sgRNA hygro and selected using 250 \u00b5g/ml hygromycin for 8 days.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental procedure used by the authors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:36:51.365508Z"
+    },
+    {
+      "id": "2b114e6c-10dd-4399-aa57-5f9fcfbaa5ca",
+      "content_id": "482a1d22-5497-4936-8fc9-09a88d5423e5",
+      "claim_id": "C34",
+      "claim": "The genomic sites encompassing targeted guide regions were amplified by PCR using iProof polymerase and sequenced.",
+      "claim_type": "EXPLICIT",
+      "source": "The genomic sites encompassing targeted guide regions were amplified by PCR using iProof polymerase (BioRad) and sequenced, and population level genome editing was estimated using the TIDE webtool (https://tide.deskgen.com/) as originally described (Brinkman et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental procedure used by the authors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:36:51.365508Z"
+    },
+    {
+      "id": "f8c0289f-d0c8-461d-9da4-a1614fd79a7c",
+      "content_id": "482a1d22-5497-4936-8fc9-09a88d5423e5",
+      "claim_id": "C35",
+      "claim": "Population level genome editing was estimated using the TIDE webtool as originally described by Brinkman et al., 2014.",
+      "claim_type": "EXPLICIT",
+      "source": "The genomic sites encompassing targeted guide regions were amplified by PCR using iProof polymerase (BioRad) and sequenced, and population level genome editing was estimated using the TIDE webtool (https://tide.deskgen.com/) as originally described (Brinkman et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental procedure used by the authors with citation to the original method.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:36:51.365508Z"
+    },
+    {
+      "id": "982adb5f-58e5-4251-bd31-07947506f7ca",
+      "content_id": "482a1d22-5497-4936-8fc9-09a88d5423e5",
+      "claim_id": "C36",
+      "claim": "Guide genome editing efficiencies displayed were a combination of data from CIMs before and after G418 selection, with no notable difference in editing efficiency caused by G418 selection.",
+      "claim_type": "EXPLICIT",
+      "source": "Guide genome editing efficiencies displayed were a combination of data from CIMs before and after G418 selection, with no notable difference in editing efficiency caused by G418 selection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the authors' analysis of genome editing efficiency.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:36:51.365508Z"
+    },
+    {
+      "id": "1ae7cbbc-5a82-4d5b-9f9a-d0d9cbd85e75",
+      "content_id": "482a1d22-5497-4936-8fc9-09a88d5423e5",
+      "claim_id": "C37",
+      "claim": "CIMs or BMMs were seeded at 60,000 cells per well onto white, clear-bottom CellBind 96-well plates or 12-well TC-treated plates in macrophage media one or two days prior to infection.",
+      "claim_type": "EXPLICIT",
+      "source": "CIMs or BMMs were seeded at 60,000 cells per well onto white, clear-bottom CellBind 96-well plates (Corning) or 12-well TC-treated plates (Corning) in macrophage media one or two days prior to infection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental procedure used by the authors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:36:51.365508Z"
+    },
+    {
+      "id": "2fb10e11-6f83-4647-bbf7-df47c49dbb67",
+      "content_id": "482a1d22-5497-4936-8fc9-09a88d5423e5",
+      "claim_id": "C38",
+      "claim": "For pre-treatment of macrophages with IFN-\u03b3, post-seeding cell culture media was switched to media with 1.5 ng/\u00b5l of recombinant murine IFN-\u03b3 12\u201318 hr prior to infection.",
+      "claim_type": "EXPLICIT",
+      "source": "For pre-treatment of macrophages with IFN-\u03b3, post-seeding cell culture media was switched to media with 1.5 ng/\u00b5l of recombinant murine IFN-\u03b3 (Peprotech) 12\u201318 hr prior to infection, and activated cells were subsequently cultured in IFN-\u03b3 containing media throughout infection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental procedure used by the authors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:36:51.365508Z"
+    },
+    {
+      "id": "a4657510-4590-4e52-abd6-3175b403a435",
+      "content_id": "482a1d22-5497-4936-8fc9-09a88d5423e5",
+      "claim_id": "C39",
+      "claim": "Activated cells were subsequently cultured in IFN-\u03b3 containing media throughout infection.",
+      "claim_type": "EXPLICIT",
+      "source": "For pre-treatment of macrophages with IFN-\u03b3, post-seeding cell culture media was switched to media with 1.5 ng/\u00b5l of recombinant murine IFN-\u03b3 (Peprotech) 12\u201318 hr prior to infection, and activated cells were subsequently cultured in IFN-\u03b3 containing media throughout infection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental procedure used by the authors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:36:51.365508Z"
+    },
+    {
+      "id": "adc61b46-5056-4c2d-bfdf-2d2cf1c11099",
+      "content_id": "482a1d22-5497-4936-8fc9-09a88d5423e5",
+      "claim_id": "C40",
+      "claim": "Macrophages were infected with M. tuberculosis as previously described by Penn et al., 2018.",
+      "claim_type": "EXPLICIT",
+      "source": "Macrophages were infected with M. tuberculosis as previously described (Penn et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This references a previously published method with citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:36:51.365508Z"
+    },
+    {
+      "id": "ecdb69ee-390a-47ff-8f5d-62572038fb78",
+      "content_id": "482a1d22-5497-4936-8fc9-09a88d5423e5",
+      "claim_id": "C41",
+      "claim": "The M. tuberculosis strain Erdman, the \u0394eccC strain made in the Erdman background, or the WT or \u0394eccC strain made in the Erdman background expressing the luxCDABE operon were used for all infections.",
+      "claim_type": "EXPLICIT",
+      "source": "The M. tuberculosis strain Erdman the \u0394eccC strain made in the Erdman background, or the WT or \u0394eccC strain made in the Erdman background expressing the luxCDABE operon (Braverman et al., 2016; Penn et al., 2018; Rosenberg et al., 2015) were used for all infections.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the bacterial strains used in the experiments with citations to their sources.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:36:51.365508Z"
+    },
+    {
+      "id": "e7e95292-31a2-4d28-b20d-3abfa0703845",
+      "content_id": "482a1d22-5497-4936-8fc9-09a88d5423e5",
+      "claim_id": "C42",
+      "claim": "All Mtb strains were cultured in 7H9 liquid media supplemented with 10% Middlebrook OADC, 0.5% glycerol, 0.05% Tween-80 in roller bottles at 37\u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "All Mtb strains were cultured in 7H9 liquid media (BD) supplemented with 10% Middlebrook OADC (Sigma), 0.5% glycerol, 0.05% Tween-80 in roller bottles at 37\u00b0C.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental procedure used by the authors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:36:51.365508Z"
+    },
+    {
+      "id": "631869d8-bbce-410e-8146-124ede9a1865",
+      "content_id": "482a1d22-5497-4936-8fc9-09a88d5423e5",
+      "claim_id": "C43",
+      "claim": "Mid-log M. tuberculosis cultures were washed twice with PBS, gently sonicated to disperse clumps, and resuspended in phagocytosis infection media.",
+      "claim_type": "EXPLICIT",
+      "source": "Briefly, mid-log M. tuberculosis cultures were washed twice with PBS, gently sonicated to disperse clumps, and resuspended in phagocytosis infection media (DMEM supplemented with 5% horse serum and 5% FBS).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental procedure used by the authors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:36:51.365508Z"
+    },
+    {
+      "id": "b6a9e30b-119f-4958-a2bf-52f7be38b7b5",
+      "content_id": "482a1d22-5497-4936-8fc9-09a88d5423e5",
+      "claim_id": "C44",
+      "claim": "Phagocytosis infection media consists of DMEM supplemented with 5% horse serum and 5% FBS.",
+      "claim_type": "EXPLICIT",
+      "source": "Briefly, mid-log M. tuberculosis cultures were washed twice with PBS, gently sonicated to disperse clumps, and resuspended in phagocytosis infection media (DMEM supplemented with 5% horse serum and 5% FBS).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the composition of the media used in the experimental procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:36:51.365508Z"
+    },
+    {
+      "id": "6f074c4f-130a-4793-9aae-3755da9aef93",
+      "content_id": "482a1d22-5497-4936-8fc9-09a88d5423e5",
+      "claim_id": "C45",
+      "claim": "For luminescence assays macrophages were infected in at least triplicate wells by removing media from cells, and monolayers were overlaid with the bacterial suspensions in phagocytosis media then incubated at 37\u00b0C for 4 hr.",
+      "claim_type": "EXPLICIT",
+      "source": "For luminescence assays macrophages were infected in at least triplicate wells by removing media from cells, and monolayers were overlaid with the bacterial suspensions in phagocytosis media then incubated at 37\u00b0C for 4 hr, after which infection media was removed and fresh macrophage media was added.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental procedure used by the authors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:36:51.365508Z"
+    },
+    {
+      "id": "dce93a75-d121-4c2f-ac8c-520f3d853e00",
+      "content_id": "482a1d22-5497-4936-8fc9-09a88d5423e5",
+      "claim_id": "C46",
+      "claim": "After 4 hr incubation, infection media was removed and fresh macrophage media was added.",
+      "claim_type": "EXPLICIT",
+      "source": "For luminescence assays macrophages were infected in at least triplicate wells by removing media from cells, and monolayers were overlaid with the bacterial suspensions in phagocytosis media then incubated at 37\u00b0C for 4 hr, after which infection media was removed and fresh macrophage media was added.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental procedure used by the authors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:36:51.365508Z"
+    },
+    {
+      "id": "db6a0e77-ee7c-4878-8a24-460a55ac8132",
+      "content_id": "482a1d22-5497-4936-8fc9-09a88d5423e5",
+      "claim_id": "C47",
+      "claim": "Bacterial luminescence signal was measured at 32\u00b0C at the time of infection and every day starting 48 hr post-infection after daily media changes.",
+      "claim_type": "EXPLICIT",
+      "source": "Bacterial luminescence signal was measured at 32\u00b0C at the time of infection and every day starting 48 hr post-infection after daily media changes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental procedure used by the authors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:36:51.365508Z"
+    },
+    {
+      "id": "4930d26a-eaa9-4740-891c-b4a81395e5e3",
+      "content_id": "482a1d22-5497-4936-8fc9-09a88d5423e5",
+      "claim_id": "C48",
+      "claim": "All growth measurements are normalized to day 0 luminescence readings for each infected well and are presented as fold change in luminescence compared to day 0.",
+      "claim_type": "EXPLICIT",
+      "source": "All growth measurements are normalized to day 0 luminescence readings for each infected well and are presented as fold change in luminescence compared to day 0.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data analysis procedure used by the authors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:36:51.365508Z"
+    },
+    {
+      "id": "1469c427-f9f9-4dbf-8d74-aa2d7970a047",
+      "content_id": "482a1d22-5497-4936-8fc9-09a88d5423e5",
+      "claim_id": "C49",
+      "claim": "Cells were infected at a multiplicity of infection (MOI) of 5 for RNA analysis and 0.5 for assays monitoring bacterial growth.",
+      "claim_type": "EXPLICIT",
+      "source": "Cells were infected at a multiplicity of infection (MOI) of 5 for RNA analysis and 0.5 for assays monitoring bacterial growth.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental procedure used by the authors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:36:51.365508Z"
+    },
+    {
+      "id": "1cc5576f-de62-46c3-a926-6bee8aaa17cd",
+      "content_id": "482a1d22-5497-4936-8fc9-09a88d5423e5",
+      "claim_id": "C50",
+      "claim": "The WT 10403S, \u0394actA, \u0394hly and the autophagy-sensitive \u0394actA PlcAH86A PlcBH69G strains of L. monocytogenes were grown overnight in brain heart infusion (BHI) medium at 30\u00b0C before each experiment.",
+      "claim_type": "EXPLICIT",
+      "source": "The WT 10403S, \u0394actA (DP-L3078), \u0394hly (DP-L2161) and the autophagy-sensitive \u0394actA PlcAH86A PlcBH69G (DP-L6586) strains (Mitchell et al., 2018) (Cheng et al., 2018) were grown overnight in brain heart infusion (BHI) medium at 30\u00b0C before each experiment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental procedure used by the authors with citations to the sources of the strains.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:36:51.365508Z"
+    },
+    {
+      "id": "4271b6f1-3142-4b25-bfb3-330c4424b9ed",
+      "content_id": "482a1d22-5497-4936-8fc9-09a88d5423e5",
+      "claim_id": "C51",
+      "claim": "Infections of macrophages with L. monocytogenes were performed as previously described by Cheng et al., 2018 and Mitchell et al., 2018 with few modifications.",
+      "claim_type": "EXPLICIT",
+      "source": "Infections of macrophages were performed as previously described (Cheng et al., 2018; Mitchell et al., 2018) with few modifications.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This references previously published methods with citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:36:51.365508Z"
+    },
+    {
+      "id": "11379714-9e82-44b7-b360-0b512613e005",
+      "content_id": "482a1d22-5497-4936-8fc9-09a88d5423e5",
+      "claim_id": "C52",
+      "claim": "BMMs and CIMs were seeded on round 12 mm coverslips and incubated overnight at 37\u00b0C and 5% CO2.",
+      "claim_type": "EXPLICIT",
+      "source": "BMMs and CIMs were seeded on round 12 mm coverslips (Fisher Scientific, Hampton, NH, USA) and incubated overnight at 37\u00b0C and 5% CO2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental procedure used by the authors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:36:51.365508Z"
+    },
+    {
+      "id": "9e24b4e0-5968-473d-936e-deaaad0e8ed6",
+      "content_id": "482a1d22-5497-4936-8fc9-09a88d5423e5",
+      "claim_id": "C53",
+      "claim": "Coverslips were incubated with a solution 0.1% gelatin for 1 hr at 37\u00b0C and washed twice with PBS prior seeding CIMs.",
+      "claim_type": "EXPLICIT",
+      "source": "Coverslips were incubated with a solution 0.1% gelatin for 1 hr at 37\u00b0C and washed twice with PBS prior seeding CIMs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental procedure used by the authors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:36:51.365508Z"
+    },
+    {
+      "id": "9c6ec3bd-269c-4ceb-8ffd-34ef6c38d7db",
+      "content_id": "482a1d22-5497-4936-8fc9-09a88d5423e5",
+      "claim_id": "C54",
+      "claim": "Macrophages were infected at various MOIs, washed at 0.5 hr post-infection and further incubated in fresh medium.",
+      "claim_type": "EXPLICIT",
+      "source": "Macrophages were infected at various MOIs, washed at 0.5 hr post-infection and further incubated in fresh medium.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental procedure used by the authors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:36:51.365508Z"
+    },
+    {
+      "id": "da191ccb-8219-421f-8801-4106c5ee15bb",
+      "content_id": "482a1d22-5497-4936-8fc9-09a88d5423e5",
+      "claim_id": "C55",
+      "claim": "At 1 hr post-infection, 50 \u00b5g/ml of gentamicin was added to the medium in order to kill extracellular bacteria.",
+      "claim_type": "EXPLICIT",
+      "source": "At 1 hr post-infection, 50 \u00b5g/ml of gentamicin was added to the medium in order to kill extracellular bacteria.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental procedure used by the authors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:36:51.365508Z"
+    },
+    {
+      "id": "bcc2dda6-7733-47dd-ba05-dabcecdcd1eb",
+      "content_id": "482a1d22-5497-4936-8fc9-09a88d5423e5",
+      "claim_id": "C56",
+      "claim": "Cells were fixed with Fix/Perm buffer for 20 min at 4\u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "Cells were fixed with Fix/Perm buffer (BD) for 20 min at 4\u00b0C.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental procedure used by the authors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:36:51.365508Z"
+    },
+    {
+      "id": "8c2c595b-6786-4598-b5e3-1c293600d790",
+      "content_id": "482a1d22-5497-4936-8fc9-09a88d5423e5",
+      "claim_id": "C57",
+      "claim": "All stains were carried out in PBS containing 2% FBS (v/v) including anti-CD16/32 Fc blocking antibody.",
+      "claim_type": "EXPLICIT",
+      "source": "All stains were carried out in PBS containing 2% FBS (v/v) including anti-CD16/32 Fc blocking antibody (clone 93, BioLegend).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental procedure used by the authors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:36:51.365508Z"
+    },
+    {
+      "id": "50b20452-a109-4a76-b487-701ebe00ed52",
+      "content_id": "482a1d22-5497-4936-8fc9-09a88d5423e5",
+      "claim_id": "C58",
+      "claim": "Cells were stained for 20 min at 4\u00b0C with antibodies against F4/80, CD11b, CD11c, Ly6C, Ly6G, IFN\u03b3R1 or iNos.",
+      "claim_type": "EXPLICIT",
+      "source": "Cells were stained for 20 min at 4\u00b0C with antibodies against F4/80 (clone BM8, Tonbo Biosciences), CD11b (clone M1/70, Tonbo Biosciences), CD11c (clone N418, Tonbo Biosciences), Ly6C (clone HK 1.4, BioLegend), Ly6G (clone 1A8, Tonbo Biosciences), IFN\u03b3R1 (clone 200, eBioscience) or iNos (clone CXNFT, eBioscience).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental procedure used by the authors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:36:51.365508Z"
+    },
+    {
+      "id": "5eafdceb-3b53-4035-8d50-8b3397055949",
+      "content_id": "482a1d22-5497-4936-8fc9-09a88d5423e5",
+      "claim_id": "C59",
+      "claim": "All cells were analyzed on an LSR Fortessa.",
+      "claim_type": "EXPLICIT",
+      "source": "All cells were analyzed on an LSR Fortessa (BD Biosciences), and data was analyzed with FlowJo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental procedure used by the authors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:36:51.365508Z"
+    },
+    {
+      "id": "8271effc-abca-490e-8f1f-b272942aef96",
+      "content_id": "482a1d22-5497-4936-8fc9-09a88d5423e5",
+      "claim_id": "C60",
+      "claim": "Flow cytometry data was analyzed with FlowJo.",
+      "claim_type": "EXPLICIT",
+      "source": "All cells were analyzed on an LSR Fortessa (BD Biosciences), and data was analyzed with FlowJo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data analysis procedure used by the authors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:36:51.365508Z"
+    },
+    {
+      "id": "cdb2fc97-7395-43b5-a341-00fde80777c9",
+      "content_id": "482a1d22-5497-4936-8fc9-09a88d5423e5",
+      "claim_id": "C61",
+      "claim": "Cells were seeded at 60,000 cells per well in 96-well CellBind plates in macrophage media the day prior to stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Cells were seeded at 60,000 cells per well in 96-well CellBind plates (Corning) in macrophage media the day prior to stimulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental procedure used by the authors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:36:51.365508Z"
+    },
+    {
+      "id": "59cc79da-13ea-4d2f-beab-82925855de77",
+      "content_id": "482a1d22-5497-4936-8fc9-09a88d5423e5",
+      "claim_id": "C62",
+      "claim": "For cytokine analysis cells were stimulated with 1 \u00b5g/ml LPS or 1 uM CpG-1668 for 16\u201320 hr.",
+      "claim_type": "EXPLICIT",
+      "source": "For cytokine analysis cells were stimulated with 1 \u00b5g/ml LPS (InvivoGen) or 1 uM CpG-1668 (InvivoGen, Tlrl-1668) for 16\u201320 hr.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental procedure used by the authors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:36:51.365508Z"
+    },
+    {
+      "id": "211377e5-626d-406a-8d30-c4766ef0c9e2",
+      "content_id": "482a1d22-5497-4936-8fc9-09a88d5423e5",
+      "claim_id": "C63",
+      "claim": "Cell-free supernatants were harvested and frozen at \u221220\u00b0C prior to analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Cell-free supernatants were harvested and frozen at \u221220\u00b0C prior to analysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental procedure used by the authors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:36:51.365508Z"
+    },
+    {
+      "id": "00a325ce-5cbc-413a-8d4c-924c6fb60b5f",
+      "content_id": "482a1d22-5497-4936-8fc9-09a88d5423e5",
+      "claim_id": "C64",
+      "claim": "For Griess assay analysis, cells were stimulated with 100 ng/ml LPS and 5 ng/ml IFN\u03b3.",
+      "claim_type": "EXPLICIT",
+      "source": "For Griess assay analysis, cells were stimulated with 100 ng/ml LPS and 5 ng/ml IFN\u03b3.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental procedure used by the authors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:36:51.365508Z"
+    },
+    {
+      "id": "166f466a-dbd0-4785-8265-6b2f9f7b5cdf",
+      "content_id": "482a1d22-5497-4936-8fc9-09a88d5423e5",
+      "claim_id": "C65",
+      "claim": "After 24 hr cell-free supernatant was harvested and immediately analyzed.",
+      "claim_type": "EXPLICIT",
+      "source": "After 24 hr cell-free supernatant was harvested and immediately analyzed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental procedure used by the authors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:36:51.365508Z"
+    },
+    {
+      "id": "5dfb251b-afa3-42d4-9668-4689b9449643",
+      "content_id": "482a1d22-5497-4936-8fc9-09a88d5423e5",
+      "claim_id": "C66",
+      "claim": "Cell-free supernatants from stimulated cells were analyzed by ELISA to enumerate cytokine production.",
+      "claim_type": "EXPLICIT",
+      "source": "Cell-free supernatants from stimulated cells were analyzed by ELISA to enumerate cytokine production.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental procedure used by the authors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:36:51.365508Z"
+    },
+    {
+      "id": "01f058af-5d11-458e-89f5-4034dbec03bb",
+      "content_id": "482a1d22-5497-4936-8fc9-09a88d5423e5",
+      "claim_id": "C67",
+      "claim": "Supernatants were absorbed onto a 96-well Nunc MaxiSorp flat-bottom plate coated with capture antibodies diluted in 0.1M sodium phosphate buffer pH 8.0 and incubated overnight at 4\u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "Supernatants were absorbed onto a 96-well Nunc MaxiSorp flat-bottom plate (44-2404-21, Invitrogen) coated with the following capture antibodies diluted in 0.1M sodium phosphate buffer pH 8.0 and incubated overnight at 4\u00b0C: IL-6 (clone MP5-20F3, 554400, BD Biosciences, 1 \u03bcg/ml) and IL-12 p40 (clone C15.6, 14-7125-81, eBioscience, 1 \u03bcg/ml).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental procedure used by the authors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:36:51.365508Z"
+    },
+    {
+      "id": "3c76c945-9ddc-44da-8b8d-957237f28765",
+      "content_id": "482a1d22-5497-4936-8fc9-09a88d5423e5",
+      "claim_id": "C68",
+      "claim": "Plates were washed 3x with PBS + 0.05% Tween-20 and blocked with PBS + 1% BSA for 4 hr at RT.",
+      "claim_type": "EXPLICIT",
+      "source": "The following day, plates were washed 3x with PBS + 0.05% Tween-20 and blocked with PBS + 1% BSA for 4 hr at RT.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental procedure used by the authors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:36:51.365508Z"
+    },
+    {
+      "id": "bdd9ba5e-32dd-474e-b2fd-fa772e93bc0e",
+      "content_id": "482a1d22-5497-4936-8fc9-09a88d5423e5",
+      "claim_id": "C69",
+      "claim": "Recombinant cytokines for standard measurements were serially diluted in PBS/BSA.",
+      "claim_type": "EXPLICIT",
+      "source": "Recombinant cytokines for standard measurements were serially diluted in PBS/BSA. IL-6 (406 ML-025, R and D) IL-12 p40 (34-8321-63, eBioscience) and experimental supernatants were incubated overnight at 4\u00b0C.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental procedure used by the authors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:36:51.365508Z"
+    },
+    {
+      "id": "02aab563-544d-4e6c-8a20-f5ae29c242a4",
+      "content_id": "482a1d22-5497-4936-8fc9-09a88d5423e5",
+      "claim_id": "C70",
+      "claim": "IL-6, IL-12 p40 and experimental supernatants were incubated overnight at 4\u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "Recombinant cytokines for standard measurements were serially diluted in PBS/BSA. IL-6 (406 ML-025, R and D) IL-12 p40 (34-8321-63, eBioscience) and experimental supernatants were incubated overnight at 4\u00b0C.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental procedure used by the authors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:36:51.365508Z"
+    },
+    {
+      "id": "1f101896-9d94-4477-93fe-b03be6195d1e",
+      "content_id": "482a1d22-5497-4936-8fc9-09a88d5423e5",
+      "claim_id": "C71",
+      "claim": "After 3X washes in PBS/BSA, biotin-conjugated sandwich antibodies were incubated on supernatants and standards and detected by Streptavidin-HRP.",
+      "claim_type": "EXPLICIT",
+      "source": "After 3X washes in PBS/BSA, biotin-conjugated sandwich antibodies were incubated on supernatants and standards (IL-6, MP5-32C11, 554402, BD Biosciences and p40 C17.8, 13-7123-85, eBiosciences) and detected by Streptavidin-HRP (BD Biosciences, 1:3000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental procedure used by the authors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:36:51.365508Z"
+    },
+    {
+      "id": "e83e1929-0495-4499-b405-476eccaf92a1",
+      "content_id": "482a1d22-5497-4936-8fc9-09a88d5423e5",
+      "claim_id": "C72",
+      "claim": "For the development step, ELISA was incubated with OPD and 30% hydrogen peroxide, followed by incubation with 3M HCl.",
+      "claim_type": "EXPLICIT",
+      "source": "For the development step, ELISA was incubated with OPD (Sigma) and 30% hydrogen peroxide, followed by incubation with 3M HCl.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental procedure used by the authors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:36:51.365508Z"
+    },
+    {
+      "id": "dfb1aec1-39cc-485f-b15d-282d0ec2fa25",
+      "content_id": "482a1d22-5497-4936-8fc9-09a88d5423e5",
+      "claim_id": "C73",
+      "claim": "Absorbance at 490 nm was read on an Infinite M200 Tecan plate reader.",
+      "claim_type": "EXPLICIT",
+      "source": "Absorbance at 490 nm was read on an Infinite M200 Tecan plate reader.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental procedure used by the authors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:36:51.365508Z"
+    },
+    {
+      "id": "f3e3d257-252c-4c43-a27a-b11b9ef0c744",
+      "content_id": "482a1d22-5497-4936-8fc9-09a88d5423e5",
+      "claim_id": "C74",
+      "claim": "Cell-free supernatants from stimulated cells were analyzed by Griess reaction to detect nitrite as a proxy for NO production.",
+      "claim_type": "EXPLICIT",
+      "source": "Cell-free supernatants from stimulated cells were analyzed by Griess reaction to detect nitrite as a proxy for NO production.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental procedure used by the authors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:36:51.365508Z"
+    },
+    {
+      "id": "c921f68c-6d5b-43c0-967f-1c1581bbfdbd",
+      "content_id": "482a1d22-5497-4936-8fc9-09a88d5423e5",
+      "claim_id": "C75",
+      "claim": "A solution of 0.2% napthylethylenediamine dihydrochloride was mixed 1:1 with a 2% sulfanilamide/4% phosphoric acid solution.",
+      "claim_type": "EXPLICIT",
+      "source": "A solution of 0.2% napthylethylenediamine dihydrochloride was mixed 1:1 with a 2% sulfanilamide/4% phosphoric acid solution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental procedure used by the authors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:36:51.365508Z"
+    },
+    {
+      "id": "65ed62a9-b4ad-4e09-86ce-7d47c9436479",
+      "content_id": "482a1d22-5497-4936-8fc9-09a88d5423e5",
+      "claim_id": "C76",
+      "claim": "100 \u00b5l of this solution was mixed with 100 \u00b5l of sample supernatant and absorbance at 546 nm was immediately measured.",
+      "claim_type": "EXPLICIT",
+      "source": "100 \u00b5l of this solution was mixed with 100 \u00b5l of sample supernatant and absorbance at 546 nm was immediately measured.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental procedure used by the authors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:36:51.365508Z"
+    },
+    {
+      "id": "0dfa873b-3b73-4cbe-9b74-88ec27d2bba4",
+      "content_id": "482a1d22-5497-4936-8fc9-09a88d5423e5",
+      "claim_id": "C77",
+      "claim": "Nitrite concentrations were determined using a standard curve of sodium nitrite.",
+      "claim_type": "EXPLICIT",
+      "source": "Nitrite concentrations were determined using a standard curve of sodium nitrite.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental procedure used by the authors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:36:51.365508Z"
+    },
+    {
+      "id": "98d78fd2-cf3a-4229-8a22-d1372df3672f",
+      "content_id": "482a1d22-5497-4936-8fc9-09a88d5423e5",
+      "claim_id": "C78",
+      "claim": "Coverslips seeded with macrophages were left uninfected or infected with L. monocytogenes, stained with a Diff-Quick stain set, air-dried and mounted on glass slides using a drop of Permount.",
+      "claim_type": "EXPLICIT",
+      "source": "Coverslips seeded with macrophages were left uninfected or infected with L. monocytogenes, stained with a Diff-Quick stain set (Dade Behring, Deerfield, IL, USA), air-dried and mounted on glass slides using a drop of Permount (Fisher Scientific).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental procedure used by the authors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:36:51.365508Z"
+    },
+    {
+      "id": "5c016892-34a8-468b-9c8f-d6f262f717cc",
+      "content_id": "482a1d22-5497-4936-8fc9-09a88d5423e5",
+      "claim_id": "C79",
+      "claim": "Immunofluorescence staining of macrophages infected with L. monocytogenes was performed using a polyclonal rabbit antisera that recognizes L. monocytogenes, a rhodamine red\u2010X goat anti\u2010rabbit IgG, phalloidin AlexaFluor\u2010647 and ProLong Gold antifade reagent containing 4\u20326,\u2010diamidino\u20102\u2010phenylindole, as previously described by Cheng et al., 2018.",
+      "claim_type": "EXPLICIT",
+      "source": "Immunofluorescence staining of macrophages infected with L. monocytogenes was performed using a polyclonal rabbit antisera that recognizes L. monocytogenes (BD Biosciences, San Jose, CA, USA), a rhodamine red\u2010X goat anti\u2010rabbit IgG (Invitrogen, Carlsbad, CA, USA), phalloidin AlexaFluor\u2010647 (Invitrogen) and ProLong Gold antifade reagent containing 4\u20326,\u2010diamidino\u20102\u2010phenylindole (Invitrogen), as previously described (Cheng et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental procedure used by the authors with citation to the original method.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:36:51.365508Z"
+    },
+    {
+      "id": "7b608e5c-8f59-452e-9c84-8b07be069ef6",
+      "content_id": "482a1d22-5497-4936-8fc9-09a88d5423e5",
+      "claim_id": "C80",
+      "claim": "All images were acquired with a KEYENCE BZ\u2010X710 fluorescent microscope using a 100 \u00d7 objective and post-treated using the haze reduction function of the BZ\u2010X analyser software.",
+      "claim_type": "EXPLICIT",
+      "source": "All images were acquired with a KEYENCE BZ\u2010X710 fluorescent microscope using a 100 \u00d7 objective and post-treated using the haze reduction function of the BZ\u2010X analyser software.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental procedure used by the authors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:36:51.365508Z"
+    },
+    {
+      "id": "6f882551-5cb4-4b46-ba86-7f3b158e40d8",
+      "content_id": "482a1d22-5497-4936-8fc9-09a88d5423e5",
+      "claim_id": "C81",
+      "claim": "Images showed in Figure 2B were obtained by staking 10 layers covering 5 \u03bcm of thickness and pseudo-colored.",
+      "claim_type": "EXPLICIT",
+      "source": "Images showed in Figure 2B were obtained by staking 10 layers covering 5 \u03bcm of thickness and pseudo-colored.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the image processing procedure used by the authors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:36:51.365508Z"
+    },
+    {
+      "id": "356a76ab-9832-4927-891c-8e943ef41623",
+      "content_id": "482a1d22-5497-4936-8fc9-09a88d5423e5",
+      "claim_id": "C82",
+      "claim": "Total RNA was isolated using TRIzol and the PureLink RNA Mini Kit, NEB DNase treated, and purified using RNA clean and concentrator columns.",
+      "claim_type": "EXPLICIT",
+      "source": "Total RNA was isolated using TRIzol (Fisher) and the PureLink RNA Mini Kit (12183018A, Ambion), NEB DNase treated, and purified using RNA clean and concentrator columns (Zymo).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental procedure used by the authors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:36:51.365508Z"
+    },
+    {
+      "id": "0fa602a1-e935-4504-8b75-b6b5add749af",
+      "content_id": "482a1d22-5497-4936-8fc9-09a88d5423e5",
+      "claim_id": "C83",
+      "claim": "RNA was analyzed using the mouse myeloid innate immunity panel of the NanoString nCounter Analysis System.",
+      "claim_type": "EXPLICIT",
+      "source": "RNA was analyzed using the mouse myeloid innate immunity panel of the NanoString nCounter Analysis System (NanoString Technologies).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental procedure used by the authors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:36:51.365508Z"
+    },
+    {
+      "id": "56fbf4a8-8816-4afa-a66e-5e789e8ede3b",
+      "content_id": "482a1d22-5497-4936-8fc9-09a88d5423e5",
+      "claim_id": "C84",
+      "claim": "Raw counts of samples were normalized according to the manufacturer's recommendations using reference genes as internal controls.",
+      "claim_type": "EXPLICIT",
+      "source": "Raw counts of samples were normalized according to the manufacturer's recommendations using reference genes as internal controls (Sdha, Oaz1, Rpl19, Edc3, Sap130, Hdac3, Polr2a, Ppia, Gusb, Tbp, Sf3a3, and Abcf1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data analysis procedure used by the authors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:36:51.365508Z"
+    },
+    {
+      "id": "75728446-2379-4b0f-a67d-4df9985a1af0",
+      "content_id": "482a1d22-5497-4936-8fc9-09a88d5423e5",
+      "claim_id": "C85",
+      "claim": "Background threshold was set to the geometric mean of the negative controls.",
+      "claim_type": "EXPLICIT",
+      "source": "Background threshold was set to the geometric mean of the negative controls.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data analysis procedure used by the authors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:36:51.365508Z"
+    },
+    {
+      "id": "7152bcae-23cc-4047-a623-40df7b92a72d",
+      "content_id": "482a1d22-5497-4936-8fc9-09a88d5423e5",
+      "claim_id": "C86",
+      "claim": "Normalization was performed using nSolver Analysis Software v4.",
+      "claim_type": "EXPLICIT",
+      "source": "Normalization was performed using nSolver Analysis Software v4.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data analysis procedure used by the authors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:36:51.365508Z"
+    },
+    {
+      "id": "37c6593c-01b7-46af-bdc9-497830b01836",
+      "content_id": "482a1d22-5497-4936-8fc9-09a88d5423e5",
+      "claim_id": "C87",
+      "claim": "Statistical analysis of data was performed using GraphPad Prism software.",
+      "claim_type": "EXPLICIT",
+      "source": "Statistical analysis of data was performed using GraphPad Prism software (Graphpad, San Diego, CA).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data analysis procedure used by the authors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:36:51.365508Z"
+    },
+    {
+      "id": "40845020-5601-490a-aa8b-aa21f39708b8",
+      "content_id": "482a1d22-5497-4936-8fc9-09a88d5423e5",
+      "claim_id": "C88",
+      "claim": "Results are reported as the mean \u00b1 SD.",
+      "claim_type": "EXPLICIT",
+      "source": "Results are reported as the mean \u00b1 SD.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes how the data is presented.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:36:51.365508Z"
+    },
+    {
+      "id": "3219a76b-1c85-494c-a098-dfc54689c2f4",
+      "content_id": "482a1d22-5497-4936-8fc9-09a88d5423e5",
+      "claim_id": "C89",
+      "claim": "Pearson correlation coefficients and R2 values for scatter plots of mRNA expression were determined using log transformed data.",
+      "claim_type": "EXPLICIT",
+      "source": "Pearson correlation coefficients and R2 values for scatter plots of mRNA expression were determined using log transformed data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data analysis procedure used by the authors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:36:51.365508Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "fe9ff2eb-b5a0-46b2-87f2-2612e810f807",
+      "content_id": "482a1d22-5497-4936-8fc9-09a88d5423e5",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors establish the biological importance of macrophages and identify limitations in current research tools for studying them.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1 and C2 represent well-established knowledge in the field. The critical roles of macrophages (C1) and the limitations of existing cell line and primary cell systems (C2) are widely recognized in the scientific literature and provide appropriate context for the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:36:51.365508Z"
+    },
+    {
+      "id": "7cb404b1-cd42-45b3-a72a-46abcef6ab62",
+      "content_id": "482a1d22-5497-4936-8fc9-09a88d5423e5",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The authors developed a conditionally immortalized macrophage (CIM) system by differentiating ER-Hoxb8 myeloid progenitors from Cas9-expressing transgenic mice, which retains primary macrophage characteristics while enabling genetic manipulation and unlimited cell supply.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3-C6 describe the core methodological innovation. The system is built on established ER-Hoxb8 technology (C12) combined with Cas9-expressing mice (C11), and the authors provide detailed protocols (C10-C36) for generation and characterization. The claims are internally consistent and supported by the comprehensive methodology.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:36:51.365508Z"
+    },
+    {
+      "id": "e087f6fb-4a19-4367-95e1-2ab8a1c3f932",
+      "content_id": "482a1d22-5497-4936-8fc9-09a88d5423e5",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The CIM system was demonstrated to be useful for studying host genetics during intracellular bacterial infection using L. monocytogenes and M. tuberculosis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C7 is supported by detailed experimental protocols for both pathogens (C40-C55 for M. tuberculosis, C50-C55 for L. monocytogenes). Claims C8 and C9 correctly identify these as important human pathogens based on established knowledge. The comprehensive infection protocols demonstrate practical utility of the system.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:36:51.365508Z"
+    },
+    {
+      "id": "a22ecc4c-0b1d-43fc-8e2d-4ff20c813350",
+      "content_id": "482a1d22-5497-4936-8fc9-09a88d5423e5",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The authors generated CIMs from bone marrow of 5-FU treated Cas9+ mice using a modified Hoxb8 immortalization protocol with negative depletion enrichment.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10-C16 provide detailed methodology for CIM generation. The modification to the Wang et al. 2006 protocol (C12, C13) is clearly described, and ethical approvals are documented (C15, C16). The methods are sufficiently detailed for reproducibility.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:36:51.365508Z"
+    },
+    {
+      "id": "e79ca2d9-4bd6-4560-ac6e-ed2a455bbc14",
+      "content_id": "482a1d22-5497-4936-8fc9-09a88d5423e5",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The authors established specific culture conditions for maintaining CIM progenitors and differentiating them into macrophages over 9-10 days.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C17-C25 provide comprehensive culture protocols including media compositions, cell densities, and differentiation timelines. The protocols are detailed and internally consistent, specifying \u03b2-estradiol removal as the differentiation trigger and providing specific timepoints for media changes and assays.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:36:51.365508Z"
+    },
+    {
+      "id": "84c15597-54bb-441b-ba54-892c4e7bb187",
+      "content_id": "482a1d22-5497-4936-8fc9-09a88d5423e5",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The authors developed a CRISPR/Cas9 genome editing protocol for CIMs using lentiviral delivery of gRNAs, achieving efficient editing with no notable difference before and after G418 selection.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26-C36 describe a complete genome editing workflow from guide selection through validation. The use of established tools (Brie library C26, TIDE analysis C35) and detailed protocols for single and double knockouts (C33) support the claims. However, C36 lacks quantitative data on editing efficiency, making the assessment of 'no notable difference' somewhat vague.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:36:51.365508Z"
+    },
+    {
+      "id": "75cc2bd9-897a-47c1-8e18-a4093bddba71",
+      "content_id": "482a1d22-5497-4936-8fc9-09a88d5423e5",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The authors established protocols for M. tuberculosis infection of CIMs and BMMs using luminescent bacterial strains to monitor growth over time.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-C49 provide detailed infection protocols including cell seeding, IFN-\u03b3 pretreatment, bacterial preparation, infection conditions, and luminescence-based growth monitoring. The methods reference established protocols (C40) and use well-characterized strains (C41). The normalization approach (C48) is clearly described.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:36:51.365508Z"
+    },
+    {
+      "id": "8d6acdab-57e0-4006-bc21-5a18840aeff1",
+      "content_id": "482a1d22-5497-4936-8fc9-09a88d5423e5",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The authors established protocols for L. monocytogenes infection of CIMs and BMMs using multiple bacterial strains including autophagy-sensitive mutants.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50-C55 describe L. monocytogenes infection protocols adapted from published methods (C51) with appropriate strain selection (C50) and infection conditions. The use of gelatin coating for CIMs (C53) represents a specific adaptation. The protocols are sufficiently detailed and cite appropriate sources.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:36:51.365508Z"
+    },
+    {
+      "id": "0d03aa2b-4b11-49c2-b7fa-2292a0a27a2f",
+      "content_id": "482a1d22-5497-4936-8fc9-09a88d5423e5",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The authors characterized CIMs by flow cytometry using multiple macrophage markers including F4/80, CD11b, CD11c, Ly6C, Ly6G, IFN\u03b3R1, and iNos.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56-C60 describe standard flow cytometry protocols with appropriate fixation, blocking, and antibody panels for macrophage characterization. The marker selection (C58) is appropriate for distinguishing macrophages from other myeloid cells and assessing activation states. Analysis methods are standard (C59, C60).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:36:51.365508Z"
+    },
+    {
+      "id": "3208190a-4f50-4577-a475-32535a26e63a",
+      "content_id": "482a1d22-5497-4936-8fc9-09a88d5423e5",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The authors measured cytokine production from CIMs in response to TLR ligands using ELISA for IL-6 and IL-12p40.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C61-C73 provide detailed ELISA protocols including stimulation conditions (C62, C64), sample handling (C63, C65), and standard ELISA procedures (C66-C73). The methods are conventional and sufficiently detailed for reproducibility. The use of different stimulation conditions for cytokine vs. Griess assays (C62 vs. C64) is appropriate.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:36:51.365508Z"
+    },
+    {
+      "id": "f3791b36-3700-4fde-b26f-4adf40534066",
+      "content_id": "482a1d22-5497-4936-8fc9-09a88d5423e5",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The authors measured nitric oxide production from CIMs using the Griess assay to detect nitrite.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C74-C77 describe a standard Griess assay protocol for measuring NO production indirectly through nitrite detection. The method is well-established, and the protocol includes appropriate controls (standard curve, C77). The chemistry and detection wavelength (C76) are correct for this assay.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:36:51.365508Z"
+    },
+    {
+      "id": "84cf733e-126f-4a9d-a745-370f7024f9e0",
+      "content_id": "482a1d22-5497-4936-8fc9-09a88d5423e5",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The authors performed microscopy analysis of L. monocytogenes-infected macrophages using Diff-Quick staining and immunofluorescence with image processing.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C78-C81 describe appropriate microscopy methods for visualizing infected macrophages. The immunofluorescence protocol (C79) cites established methods and uses appropriate reagents. The image acquisition and processing details (C80, C81) are specified, though the 'haze reduction' function could affect quantitative analysis if applied.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:36:51.365508Z"
+    },
+    {
+      "id": "83ee5138-0b0e-4622-8be1-817913f617b4",
+      "content_id": "482a1d22-5497-4936-8fc9-09a88d5423e5",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The authors analyzed mRNA expression using NanoString nCounter with appropriate normalization using reference genes and negative controls.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C82-C86 describe standard NanoString analysis protocols including RNA isolation (C82), platform selection (C83), and normalization procedures (C84-C86). The use of 12 reference genes (C84) and geometric mean of negative controls for background (C85) follows manufacturer recommendations and best practices.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:36:51.365508Z"
+    },
+    {
+      "id": "8e93164b-45ab-42f1-b644-921f0532f52f",
+      "content_id": "482a1d22-5497-4936-8fc9-09a88d5423e5",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The authors performed statistical analysis using GraphPad Prism, reporting data as mean \u00b1 SD and using log-transformed data for correlation analysis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C87-C89 describe standard statistical approaches. However, the manuscript lacks critical details about specific statistical tests used, sample sizes, p-values, and multiple testing corrections. The use of log transformation for correlation analysis (C89) is appropriate for expression data, but no justification for this choice is provided.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:36:51.365508Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "c55901dc-3cc8-4524-9c7e-ada7dea6bc8d",
+      "result_id": "fe9ff2eb-b5a0-46b2-87f2-2612e810f807"
+    },
+    {
+      "claim_id": "e93730c9-c5ce-4c51-b7af-7de7627d86c2",
+      "result_id": "fe9ff2eb-b5a0-46b2-87f2-2612e810f807"
+    },
+    {
+      "claim_id": "cff4f66d-2b33-439c-8e98-3870803ad5ea",
+      "result_id": "7cb404b1-cd42-45b3-a72a-46abcef6ab62"
+    },
+    {
+      "claim_id": "f9e1f7b1-1720-411a-b85a-6603305ccd20",
+      "result_id": "7cb404b1-cd42-45b3-a72a-46abcef6ab62"
+    },
+    {
+      "claim_id": "1521fd8a-8c5f-42eb-b7de-c2af94ba047d",
+      "result_id": "7cb404b1-cd42-45b3-a72a-46abcef6ab62"
+    },
+    {
+      "claim_id": "bc13dd5d-790d-4c8c-a15a-ed1069611f83",
+      "result_id": "7cb404b1-cd42-45b3-a72a-46abcef6ab62"
+    },
+    {
+      "claim_id": "4ab917ec-487d-4921-af5a-e722cde0913f",
+      "result_id": "e087f6fb-4a19-4367-95e1-2ab8a1c3f932"
+    },
+    {
+      "claim_id": "3329f804-ec73-4341-97f2-d8fc00d2c0d2",
+      "result_id": "e087f6fb-4a19-4367-95e1-2ab8a1c3f932"
+    },
+    {
+      "claim_id": "447c2d52-674c-4cd0-962e-29e15bbfc5aa",
+      "result_id": "e087f6fb-4a19-4367-95e1-2ab8a1c3f932"
+    },
+    {
+      "claim_id": "e06703b4-7d0b-44b9-89b5-801e507d6f24",
+      "result_id": "a22ecc4c-0b1d-43fc-8e2d-4ff20c813350"
+    },
+    {
+      "claim_id": "cd74b03f-5b2e-4c6f-a2d7-4b659614b7ce",
+      "result_id": "a22ecc4c-0b1d-43fc-8e2d-4ff20c813350"
+    },
+    {
+      "claim_id": "9619512d-8812-4003-b117-f75cbc13d3b3",
+      "result_id": "a22ecc4c-0b1d-43fc-8e2d-4ff20c813350"
+    },
+    {
+      "claim_id": "8a9013ee-6eb0-48b1-8327-ff3733a4fdb5",
+      "result_id": "a22ecc4c-0b1d-43fc-8e2d-4ff20c813350"
+    },
+    {
+      "claim_id": "359260bf-1273-4983-90f7-3931f8926784",
+      "result_id": "a22ecc4c-0b1d-43fc-8e2d-4ff20c813350"
+    },
+    {
+      "claim_id": "d3b967cd-d4b4-4509-bd93-e46129f28f58",
+      "result_id": "a22ecc4c-0b1d-43fc-8e2d-4ff20c813350"
+    },
+    {
+      "claim_id": "7075619d-1d51-4225-93bd-39039fc9a19b",
+      "result_id": "a22ecc4c-0b1d-43fc-8e2d-4ff20c813350"
+    },
+    {
+      "claim_id": "819545d1-5de1-4b24-88bf-3f3a7d32bb41",
+      "result_id": "e79ca2d9-4bd6-4560-ac6e-ed2a455bbc14"
+    },
+    {
+      "claim_id": "2017aab1-b0cd-4948-bb25-283f5efe4cf6",
+      "result_id": "e79ca2d9-4bd6-4560-ac6e-ed2a455bbc14"
+    },
+    {
+      "claim_id": "85398b7a-827d-4e04-8935-fdc05efa63d5",
+      "result_id": "e79ca2d9-4bd6-4560-ac6e-ed2a455bbc14"
+    },
+    {
+      "claim_id": "2befa174-cec6-421f-a79c-0e4400bcec2c",
+      "result_id": "e79ca2d9-4bd6-4560-ac6e-ed2a455bbc14"
+    },
+    {
+      "claim_id": "9518b619-d82f-4901-b679-9fccccef8725",
+      "result_id": "e79ca2d9-4bd6-4560-ac6e-ed2a455bbc14"
+    },
+    {
+      "claim_id": "9c607ccb-55dc-45ee-8b97-70ebb97d6625",
+      "result_id": "e79ca2d9-4bd6-4560-ac6e-ed2a455bbc14"
+    },
+    {
+      "claim_id": "5b87af69-967d-42d6-8b63-c380dfe2130e",
+      "result_id": "e79ca2d9-4bd6-4560-ac6e-ed2a455bbc14"
+    },
+    {
+      "claim_id": "30c9652f-9513-4670-9d05-2f55af4a3ebd",
+      "result_id": "e79ca2d9-4bd6-4560-ac6e-ed2a455bbc14"
+    },
+    {
+      "claim_id": "a47f0ee9-517e-43dc-9e24-816f936c0e8a",
+      "result_id": "e79ca2d9-4bd6-4560-ac6e-ed2a455bbc14"
+    },
+    {
+      "claim_id": "ef70dc86-27ea-421a-9c41-aa7cab060f49",
+      "result_id": "84c15597-54bb-441b-ba54-892c4e7bb187"
+    },
+    {
+      "claim_id": "96c35a89-55d4-4239-bb9e-7de8229d1ca5",
+      "result_id": "84c15597-54bb-441b-ba54-892c4e7bb187"
+    },
+    {
+      "claim_id": "2729411c-7625-4c9b-8f61-1167ca403e21",
+      "result_id": "84c15597-54bb-441b-ba54-892c4e7bb187"
+    },
+    {
+      "claim_id": "21d129c8-4155-47ea-abc8-631873812ded",
+      "result_id": "84c15597-54bb-441b-ba54-892c4e7bb187"
+    },
+    {
+      "claim_id": "a706485e-717e-4904-8b31-4c203de934f0",
+      "result_id": "84c15597-54bb-441b-ba54-892c4e7bb187"
+    },
+    {
+      "claim_id": "af68ba45-5b2c-4f3d-a2c3-078b72be55fb",
+      "result_id": "84c15597-54bb-441b-ba54-892c4e7bb187"
+    },
+    {
+      "claim_id": "31eaefda-e09b-4ab0-b96e-e7bf7547c8da",
+      "result_id": "84c15597-54bb-441b-ba54-892c4e7bb187"
+    },
+    {
+      "claim_id": "9caf1a26-c3d1-40d6-be41-c0a4655bb285",
+      "result_id": "84c15597-54bb-441b-ba54-892c4e7bb187"
+    },
+    {
+      "claim_id": "2b114e6c-10dd-4399-aa57-5f9fcfbaa5ca",
+      "result_id": "84c15597-54bb-441b-ba54-892c4e7bb187"
+    },
+    {
+      "claim_id": "f8c0289f-d0c8-461d-9da4-a1614fd79a7c",
+      "result_id": "84c15597-54bb-441b-ba54-892c4e7bb187"
+    },
+    {
+      "claim_id": "982adb5f-58e5-4251-bd31-07947506f7ca",
+      "result_id": "84c15597-54bb-441b-ba54-892c4e7bb187"
+    },
+    {
+      "claim_id": "1ae7cbbc-5a82-4d5b-9f9a-d0d9cbd85e75",
+      "result_id": "75cc2bd9-897a-47c1-8e18-a4093bddba71"
+    },
+    {
+      "claim_id": "2fb10e11-6f83-4647-bbf7-df47c49dbb67",
+      "result_id": "75cc2bd9-897a-47c1-8e18-a4093bddba71"
+    },
+    {
+      "claim_id": "a4657510-4590-4e52-abd6-3175b403a435",
+      "result_id": "75cc2bd9-897a-47c1-8e18-a4093bddba71"
+    },
+    {
+      "claim_id": "adc61b46-5056-4c2d-bfdf-2d2cf1c11099",
+      "result_id": "75cc2bd9-897a-47c1-8e18-a4093bddba71"
+    },
+    {
+      "claim_id": "ecdb69ee-390a-47ff-8f5d-62572038fb78",
+      "result_id": "75cc2bd9-897a-47c1-8e18-a4093bddba71"
+    },
+    {
+      "claim_id": "e7e95292-31a2-4d28-b20d-3abfa0703845",
+      "result_id": "75cc2bd9-897a-47c1-8e18-a4093bddba71"
+    },
+    {
+      "claim_id": "631869d8-bbce-410e-8146-124ede9a1865",
+      "result_id": "75cc2bd9-897a-47c1-8e18-a4093bddba71"
+    },
+    {
+      "claim_id": "b6a9e30b-119f-4958-a2bf-52f7be38b7b5",
+      "result_id": "75cc2bd9-897a-47c1-8e18-a4093bddba71"
+    },
+    {
+      "claim_id": "6f074c4f-130a-4793-9aae-3755da9aef93",
+      "result_id": "75cc2bd9-897a-47c1-8e18-a4093bddba71"
+    },
+    {
+      "claim_id": "dce93a75-d121-4c2f-ac8c-520f3d853e00",
+      "result_id": "75cc2bd9-897a-47c1-8e18-a4093bddba71"
+    },
+    {
+      "claim_id": "db6a0e77-ee7c-4878-8a24-460a55ac8132",
+      "result_id": "75cc2bd9-897a-47c1-8e18-a4093bddba71"
+    },
+    {
+      "claim_id": "4930d26a-eaa9-4740-891c-b4a81395e5e3",
+      "result_id": "75cc2bd9-897a-47c1-8e18-a4093bddba71"
+    },
+    {
+      "claim_id": "1469c427-f9f9-4dbf-8d74-aa2d7970a047",
+      "result_id": "75cc2bd9-897a-47c1-8e18-a4093bddba71"
+    },
+    {
+      "claim_id": "1cc5576f-de62-46c3-a926-6bee8aaa17cd",
+      "result_id": "8d6acdab-57e0-4006-bc21-5a18840aeff1"
+    },
+    {
+      "claim_id": "4271b6f1-3142-4b25-bfb3-330c4424b9ed",
+      "result_id": "8d6acdab-57e0-4006-bc21-5a18840aeff1"
+    },
+    {
+      "claim_id": "11379714-9e82-44b7-b360-0b512613e005",
+      "result_id": "8d6acdab-57e0-4006-bc21-5a18840aeff1"
+    },
+    {
+      "claim_id": "9e24b4e0-5968-473d-936e-deaaad0e8ed6",
+      "result_id": "8d6acdab-57e0-4006-bc21-5a18840aeff1"
+    },
+    {
+      "claim_id": "9c6ec3bd-269c-4ceb-8ffd-34ef6c38d7db",
+      "result_id": "8d6acdab-57e0-4006-bc21-5a18840aeff1"
+    },
+    {
+      "claim_id": "da191ccb-8219-421f-8801-4106c5ee15bb",
+      "result_id": "8d6acdab-57e0-4006-bc21-5a18840aeff1"
+    },
+    {
+      "claim_id": "bcc2dda6-7733-47dd-ba05-dabcecdcd1eb",
+      "result_id": "0d03aa2b-4b11-49c2-b7fa-2292a0a27a2f"
+    },
+    {
+      "claim_id": "8c2c595b-6786-4598-b5e3-1c293600d790",
+      "result_id": "0d03aa2b-4b11-49c2-b7fa-2292a0a27a2f"
+    },
+    {
+      "claim_id": "50b20452-a109-4a76-b487-701ebe00ed52",
+      "result_id": "0d03aa2b-4b11-49c2-b7fa-2292a0a27a2f"
+    },
+    {
+      "claim_id": "5eafdceb-3b53-4035-8d50-8b3397055949",
+      "result_id": "0d03aa2b-4b11-49c2-b7fa-2292a0a27a2f"
+    },
+    {
+      "claim_id": "8271effc-abca-490e-8f1f-b272942aef96",
+      "result_id": "0d03aa2b-4b11-49c2-b7fa-2292a0a27a2f"
+    },
+    {
+      "claim_id": "cdb2fc97-7395-43b5-a341-00fde80777c9",
+      "result_id": "3208190a-4f50-4577-a475-32535a26e63a"
+    },
+    {
+      "claim_id": "59cc79da-13ea-4d2f-beab-82925855de77",
+      "result_id": "3208190a-4f50-4577-a475-32535a26e63a"
+    },
+    {
+      "claim_id": "211377e5-626d-406a-8d30-c4766ef0c9e2",
+      "result_id": "3208190a-4f50-4577-a475-32535a26e63a"
+    },
+    {
+      "claim_id": "00a325ce-5cbc-413a-8d4c-924c6fb60b5f",
+      "result_id": "3208190a-4f50-4577-a475-32535a26e63a"
+    },
+    {
+      "claim_id": "166f466a-dbd0-4785-8265-6b2f9f7b5cdf",
+      "result_id": "3208190a-4f50-4577-a475-32535a26e63a"
+    },
+    {
+      "claim_id": "5dfb251b-afa3-42d4-9668-4689b9449643",
+      "result_id": "3208190a-4f50-4577-a475-32535a26e63a"
+    },
+    {
+      "claim_id": "01f058af-5d11-458e-89f5-4034dbec03bb",
+      "result_id": "3208190a-4f50-4577-a475-32535a26e63a"
+    },
+    {
+      "claim_id": "3c76c945-9ddc-44da-8b8d-957237f28765",
+      "result_id": "3208190a-4f50-4577-a475-32535a26e63a"
+    },
+    {
+      "claim_id": "bdd9ba5e-32dd-474e-b2fd-fa772e93bc0e",
+      "result_id": "3208190a-4f50-4577-a475-32535a26e63a"
+    },
+    {
+      "claim_id": "02aab563-544d-4e6c-8a20-f5ae29c242a4",
+      "result_id": "3208190a-4f50-4577-a475-32535a26e63a"
+    },
+    {
+      "claim_id": "1f101896-9d94-4477-93fe-b03be6195d1e",
+      "result_id": "3208190a-4f50-4577-a475-32535a26e63a"
+    },
+    {
+      "claim_id": "e83e1929-0495-4499-b405-476eccaf92a1",
+      "result_id": "3208190a-4f50-4577-a475-32535a26e63a"
+    },
+    {
+      "claim_id": "dfb1aec1-39cc-485f-b15d-282d0ec2fa25",
+      "result_id": "3208190a-4f50-4577-a475-32535a26e63a"
+    },
+    {
+      "claim_id": "f3e3d257-252c-4c43-a27a-b11b9ef0c744",
+      "result_id": "f3791b36-3700-4fde-b26f-4adf40534066"
+    },
+    {
+      "claim_id": "c921f68c-6d5b-43c0-967f-1c1581bbfdbd",
+      "result_id": "f3791b36-3700-4fde-b26f-4adf40534066"
+    },
+    {
+      "claim_id": "65ed62a9-b4ad-4e09-86ce-7d47c9436479",
+      "result_id": "f3791b36-3700-4fde-b26f-4adf40534066"
+    },
+    {
+      "claim_id": "0dfa873b-3b73-4cbe-9b74-88ec27d2bba4",
+      "result_id": "f3791b36-3700-4fde-b26f-4adf40534066"
+    },
+    {
+      "claim_id": "98d78fd2-cf3a-4229-8a22-d1372df3672f",
+      "result_id": "84cf733e-126f-4a9d-a745-370f7024f9e0"
+    },
+    {
+      "claim_id": "5c016892-34a8-468b-9c8f-d6f262f717cc",
+      "result_id": "84cf733e-126f-4a9d-a745-370f7024f9e0"
+    },
+    {
+      "claim_id": "7b608e5c-8f59-452e-9c84-8b07be069ef6",
+      "result_id": "84cf733e-126f-4a9d-a745-370f7024f9e0"
+    },
+    {
+      "claim_id": "6f882551-5cb4-4b46-ba86-7f3b158e40d8",
+      "result_id": "84cf733e-126f-4a9d-a745-370f7024f9e0"
+    },
+    {
+      "claim_id": "356a76ab-9832-4927-891c-8e943ef41623",
+      "result_id": "83ee5138-0b0e-4622-8be1-817913f617b4"
+    },
+    {
+      "claim_id": "0fa602a1-e935-4504-8b75-b6b5add749af",
+      "result_id": "83ee5138-0b0e-4622-8be1-817913f617b4"
+    },
+    {
+      "claim_id": "56fbf4a8-8816-4afa-a66e-5e789e8ede3b",
+      "result_id": "83ee5138-0b0e-4622-8be1-817913f617b4"
+    },
+    {
+      "claim_id": "75728446-2379-4b0f-a67d-4df9985a1af0",
+      "result_id": "83ee5138-0b0e-4622-8be1-817913f617b4"
+    },
+    {
+      "claim_id": "7152bcae-23cc-4047-a623-40df7b92a72d",
+      "result_id": "83ee5138-0b0e-4622-8be1-817913f617b4"
+    },
+    {
+      "claim_id": "37c6593c-01b7-46af-bdc9-497830b01836",
+      "result_id": "8e93164b-45ab-42f1-b644-921f0532f52f"
+    },
+    {
+      "claim_id": "40845020-5601-490a-aa8b-aa21f39708b8",
+      "result_id": "8e93164b-45ab-42f1-b644-921f0532f52f"
+    },
+    {
+      "claim_id": "3219a76b-1c85-494c-a098-dfc54689c2f4",
+      "result_id": "8e93164b-45ab-42f1-b644-921f0532f52f"
+    }
+  ],
+  "comparisons": []
+}

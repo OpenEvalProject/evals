@@ -1,0 +1,239 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C58"
+    ],
+    "result": "Functional p53 status negatively impacts CRISPR-Cas9 screen sensitivity. The authors demonstrate through parallel screens in wild-type and TP53KO RPE-1 cells that while essential genes are depleted in both backgrounds, TP53KO screens show better detection of essential genes by rank and statistical significance, with significantly lower log fold changes for core essential genes in TP53KO compared to wild-type (p=0.0010).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C23-C29, and C58 collectively provide strong experimental evidence from parallel screens showing reduced screen sensitivity in p53-proficient cells. The statistical analysis (C27, C28) with appropriate p-values, ROC curve analysis (C24), and mechanistic interpretation (C29) converge to support this conclusion. The experimental design with biological replicates and matched genetic backgrounds minimizes confounding factors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C46",
+      "C49",
+      "C64"
+    ],
+    "result": "Despite reduced sensitivity in p53-proficient cells, optimal screen design enables successful CRISPR-Cas9 screens in wild-type backgrounds. The authors demonstrate that biologically meaningful enrichment and depletion analyses can be performed in TP53 wild-type settings when key design factors are considered.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C46, C49, and C64 are supported by the authors' own experimental data showing successful essential gene detection in wild-type cells and comparative analysis with published screens (C47-C48). The identification of biologically relevant pathway enrichments (C41) and specific gene hits (C30-C44) in wild-type screens provides evidence for this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C33",
+      "C35",
+      "C38",
+      "C41"
+    ],
+    "result": "The screens identify expected p53 pathway components as differentially enriched or depleted between wild-type and TP53KO backgrounds. TP53, CDKN1A, USP28, and SETDB1 were enriched in wild-type, while MDM2 and MDM4 were depleted in wild-type, consistent with their known roles in p53 regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C41 describe specific gene hits that align with established p53 pathway biology (supported by citations C32, C34, C36-C37, C39-C40). The pathway analysis (C41) showing enrichment of cell cycle and p53 signaling provides additional validation. These results serve as positive controls demonstrating the screens can detect expected biological signals.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "The authors designed and executed parallel CRISPR-Cas9 screens using a custom dual-sgRNA library targeting 852 DDR-related genes with high guide representation (>1000x) maintained throughout the screen. Two independent Cas9-expressing monoclonal populations were used for each genetic background.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C22 and C65-C69 describe the experimental design and methodology. The use of biological replicates (C18), high guide representation (C20), dual-sgRNA design (C22), and appropriate controls (C19) represent sound experimental design. The methodology is clearly described with appropriate citations (C20, C22, C69).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C50"
+    ],
+    "result": "Comparative analysis of multiple published screens in p53 wild-type RPE-1 cells shows that most screens perform similarly in detecting essential genes, with the Haapaniemi et al. (2018) screen being an outlier with poor performance, possibly due to low editing efficiency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C48 present comparative ROC curve and LFC distribution analyses across multiple published datasets. The identification of the Haapaniemi et al. screen as an outlier (C50) is supported by the data shown in Figure 3A-B. However, C50 includes speculation about the cause, which is appropriately qualified as uncertain.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "The authors' screen shows lower variance in log fold changes between guides targeting the same gene compared to other published screens, potentially due to higher gRNA representation (>1000x) maintained throughout the screen compared to published recommendations of 200-500x.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C51 presents an observation from Figure 3C, but C52 explicitly states this is speculation and cannot rule out the dual-sgRNA system as the cause. While C53-C55 cite published recommendations for gRNA representation, the causal link between high representation and reduced variance in the authors' screen remains speculative and unvalidated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C56",
+      "C57"
+    ],
+    "result": "Low sequencing depth, as observed in the MSKCC screen with substantial zero reads, can notably decrease screen sensitivity. The authors demonstrate this through modeling decreased sequencing depth in their own data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C57 are supported by analysis shown in Figure 3\u2014figure supplement 1 and Figure 3\u2014figure supplement 2. The modeling approach (C57) provides direct evidence that low read counts decrease sensitivity, and the MSKCC screen serves as a real-world example (C56).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Key factors for successful CRISPR-Cas9 screens include the guide RNA library design, magnitude of guide effects, adequate gRNA representation, sufficient sequencing depth, selection of high-editing efficiency Cas9-expressing cells, and use of biological replicates to identify clonal variation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C63 synthesize conclusions from the authors' experimental data and comparative analyses. These recommendations are supported by the demonstrated impact of these factors throughout the manuscript (e.g., C20-C21 for representation, C57 for sequencing depth, C50 for editing efficiency).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C42",
+      "C44"
+    ],
+    "result": "EP300 was enriched and CCNA2 was depleted on both genetic backgrounds, consistent with their established roles in cell cycle regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42 and C44 describe specific gene hits with appropriate citations to support their known functions (C43, C45). These findings demonstrate that the screens can identify biologically relevant genes independent of p53 status.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C59",
+      "C60"
+    ],
+    "result": "The extent of p53 impact on CRISPR-Cas9 screens may vary by cell type, but the authors anticipate that most cell lines with intact TP53 pathway and proper cell-cycle checkpoint activation would recapitulate their findings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C59-C60 are explicitly speculative statements about the generalizability of the findings. While reasonable based on the data, these claims lack experimental validation in other cell types and acknowledge uncertainty about the impact of different TP53 mutations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "The RPE-1 cell lines used were obtained from ATCC, routinely tested for mycoplasma, authenticated using Affymetrix SNP6 copy number analysis, and TP53KO cells were generated as previously described.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C72 describe appropriate quality control measures for cell line authentication and validation. The citation to Chiang et al., 2016 for TP53KO generation (C72) and description of authentication methods (C71) demonstrate proper experimental rigor.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "CRISPR-Cas9 genome engineering has revolutionized high-throughput functional genomic screens, with successful applications in determining gene essentiality, identifying genetic interactions, and assessing drug sensitivities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1 and C5-C7 provide background context supported by appropriate citations (Hart et al., 2015; Chan et al., 2019; Han et al., 2017). These are well-established facts in the field serving as introduction to the manuscript's focus.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C2",
+      "C8",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "Prior work has raised concerns about CRISPR-Cas9 screen performance in p53-proficient cells, with conflicting reports showing both severe impairment (Haapaniemi et al., 2018; Ihry et al., 2018) and successful performance (Brown et al., 2019) in wild-type backgrounds.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C8, C15-C17 accurately summarize the controversy in the field with appropriate citations. These claims establish the motivation for the current study by highlighting conflicting prior results that necessitate controlled parallel experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "TP53 acts as a master regulator of cell-cycle checkpoint activation, cellular senescence, and apoptosis in response to DNA damage, and is the most important tumor suppressor gene with loss-of-function mutations in up to 50% of human cancers. DNA double-strand breaks induce p53-dependent cell-cycle arrest, and most CRISPR-Cas9 approaches rely on DSB generation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C14 provide essential background on p53 biology and CRISPR-Cas9 mechanism, all supported by appropriate citations (Kastan et al., 1991; Shay et al., 1991; Clarke et al., 1993; Lowe et al., 1993; Lakin and Jackson, 1999; Bouaoun et al., 2016; Di Leonardo et al., 1994; Jinek et al., 2012). These are well-established facts providing context for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C32",
+      "C34",
+      "C36",
+      "C37",
+      "C39",
+      "C40",
+      "C43",
+      "C45"
+    ],
+    "result": "The manuscript accurately describes the known molecular functions of p53 pathway components including CDKN1A/p21, USP28, MDM2, MDM4, SETDB1, EP300, and CCNA2, all supported by appropriate citations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32, C34, C36-C37, C39-C40, C43, and C45 describe established molecular biology knowledge with appropriate citations (el-Deiry et al., 1993; Zhang et al., 2006; Cuella-Martin et al., 2016; Haupt et al., 1997; Francoz et al., 2006; Fei et al., 2015; Ait-Si-Ali et al., 2000; Pagano et al., 1992). These provide biological context for interpreting screen results.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,1765 @@
+{
+  "submission": {
+    "id": "ea3af927-a6b6-40fb-b232-f81f6b6d3944",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T16:02:51.177768Z",
+    "updated_at": "2025-12-02T16:02:51.177768Z"
+  },
+  "content": [
+    {
+      "id": "e5c21521-7d2f-4999-842c-75145e0f06b4",
+      "submission_id": "ea3af927-a6b6-40fb-b232-f81f6b6d3944",
+      "content_type": "manuscript",
+      "content_text": "# Reducing respiratory syncytial virus (RSV) hospitalization in a lower-income country by vaccinating mothers-to-be and their households\n\n## Authors\n\n- Samuel PC Brand<sup>1</sup> ([ORCID: 0000-0003-0645-5367](https://orcid.org/0000-0003-0645-5367)) \u2020\n- Patrick Munywoki<sup>3</sup> ([ORCID: 0000-0001-9419-7155](https://orcid.org/0000-0001-9419-7155))\n- David Walumbe<sup>3</sup>\n- Matthew J Keeling<sup>1</sup>\n- David James Nokes<sup>1</sup> ([ORCID: 0000-0001-5426-1984](https://orcid.org/0000-0001-5426-1984))\n\n### Affiliations\n\n1. Zeeman Institute of Systems Biology and Infectious Disease Research (SBIDER), University of Warwick Warwick United Kingdom\n2. School of Life Sciences, University of Warwick Coventry United Kingdom\n3. Epidemiology and Demography Department, KEMRI-Wellcome Trust Research Programme Kilifi Kenya\n4. Mathematics Institute, University of Warwick Coventry United Kingdom\n\n\u2020 Corresponding author\n\n## Abstract\n\nRespiratory syncytial virus is the leading cause of lower respiratory tract infection among infants. RSV is a priority for vaccine development. In this study, we investigate the potential effectiveness of a two-vaccine strategy aimed at mothers-to-be, thereby boosting maternally acquired antibodies of infants, and their household cohabitants, further cocooning infants against infection. We use a dynamic RSV transmission model which captures transmission both within households and communities, adapted to the changing demographics and RSV seasonality of a low-income country. Model parameters were inferred from past RSV hospitalisations, and forecasts made over a 10-year horizon. We find that a 50% reduction in RSV hospitalisations is possible if the maternal vaccine effectiveness can achieve 75 days of additional protection for newborns combined with a 75% coverage of their birth household co-inhabitants (~7.5% population coverage).\n\n## Introduction\n\nRespiratory syncytial virus (RSV) is the most common viral cause of acute lower respiratory infection (Nair et al., 2010). A large majority of children contract RSV by the age of two (Glezen et al., 1986; Ohuma et al., 2012), but the chance of developing severe disease from a RSV infection is much greater amongst young infants (6 months) (Hall et al., 2009) and decreases rapidly with the age of the infected child. Vaccine development aimed at protecting young children against RSV disease has become a global health priority (World Health Organization, 2017). As of December 2018, there are over 40 RSV vaccines in development (PATH, 2018). In particular, two vaccination approaches have been identified as potentially effective: a single dose vaccine aimed at mothers-to-be leading to antibody transfer across the placenta thereby boosting maternally acquired immunity among newborns, and paediatric vaccination aimed directly at infants (Modjarrad et al., 2016; World Health Organization, 2017). Moreover, it is possible that a prophylactic extended half-life monoclonal antibody could act as a vaccine surrogate whilst replicating the desired effect of a maternal vaccine (Zhu et al., 2017; Domachowske et al., 2018). A serious complication in RSV vaccine development has historically been the risk of causing enhanced disease amongst the immunologically naive (Chin et al., 1969), therefore it might be more prudent to target a paediatric vaccine at older children with better developed immune systems rather than young infants most at risk of RSV disease (Anderson et al., 2013). Epidemiological data suggests older individuals (elder siblings, parents) are potential sources of infection for the infant of the household (Graham, 2014), for whom temporary boosted immunity might best be achieved using a sub-unit vaccine (Anderson et al., 2013).\n\nThe desired effect of vaccinating older children is two-fold: the vaccine both decreases the risk of morbidity in the vaccinated child and reduces the risk of transmission from the older child to any young infant the vaccinated child contacts (Anderson et al., 2013). Molecular analysis of nasopharyngeal samples collected from a semi-rural community in Kenya has identified that the majority of RSV infections among young infants originated from within their household rather than the wider community, with older siblings being the usual household index case (Munywoki et al., 2014), echoing a previous household study of RSV transmission (Hall et al., 1976), although it should also be noted that the young infant was herself the index case on a significant number of occasions. This finding emphasises that reducing transmission to young infants within the household could be an effective way of reducing RSV disease in low- and middle-income countries (LMICs). However, the significant number of young infant index cases within households suggest that \u2018cocooning\u2019 young infants from transmission by vaccinating others in their household may not be sufficient by itself. Ideally, cocoon protection should be achieved in conjunction with directly protecting the young infants using a maternal vaccine.\n\nAt this time, the only reported phase III trial on RSV vaccine effectiveness is for the maternally targeted ResVax, which failed to meet its primary objective but nonetheless showed partial effectiveness at reducing hospitalisations due to RSV (NovaVax, 2019). The possibility that a vaccine for only one target population might be only partially effective, and the importance of RSV transmission within the household, motivates our modelling approach. In this paper, we assess the efficacy of a mixed vaccination strategy in a LMIC setting, Kilifi county Kenya. In our scenarios, there was at least one maternal vaccine and one paediatric vaccine available as per WHO priority (World Health Organization, 2017). In Kenya, there are very high rates of prenatal contact between pregnant women and health professionals (97.5% in Kilifi county; KNBS, 2015). This suggested targeting pregnant women as part of their prenatal contact, and then offering the paediatric vaccine to all over one year olds, including adults, cohabiting with the pregnant mother. The essential idea was to leverage prenatal contact to achieve a very high coverage of a maternal antibody boosting (MAB) vaccine, and also to target her household cohabitants with an immune response provoking (IRP) vaccine. The IRP vaccine elicits an immune response and, therefore, a temporary reduction in susceptibility to RSV for the vaccinated individual. We follow (Yamin et al., 2016) in assuming that the elicited period of immunity to RSV from receiving the IRP vaccine would be similar to that of a natural infection.\n\nPredictions of vaccine effect are derived from a dynamic transmission model designed to capture the demographic structure of the population, the seasonality of RSV transmission and how rapidly, and to whom, RSV is transmitted in both households and the wider community. Unknown model parameters were inferred using data from the large-scale long-running Kilifi Health and Demographic Surveillance System (KHDSS; Scott et al., 2012), and hospitalisation admissions at Kilifi county hospital (KCH) confirmed as due to RSV since 2002. It should be noted that targeting vaccination in this way is not an approach that one would expect to greatly reduce RSV infections under the assumptions of simple compartmental models of RSV transmission because the rate of vaccination deployment would be too low (see Box 1). However, we shall see that these vaccines are efficiently targeted at creating protection for the young infants most at risk of hospitalisation if they caught RSV.\n\nThe modelling approach used in this paper differs from the majority of RSV modelling approaches extant in the literature, which largely focus on deterministic age structured transmission models (Pitzer et al., 2015; Kinyanjui et al., 2015; Yamin et al., 2016; Hogan et al., 2016). In contrast, we explicitly model the social clustering of individuals into households. The advantage of explicit inclusion of household structure in the model is that the social contacts within the household are persistent over multiple RSV seasons, whereas age-structured models implicitly assume random mixing; that is all people of a given age group are equally likely to be contacted by any individual at any instant and therefore the chance of repeated contact become zero as the population size becomes large. In the specific case of modelling highly seasonal RSV transmission, it is likely that capturing the network-like transmission structure of the population is important for representing the relevant epidemiology. Most people have caught RSV by the age of two, and will have multiple repeated episodes during their lifetime. The time between recovery from an episode and reversion back to at least partial susceptibility is estimated to be 6 months (Ohuma et al., 2012). In Kilifi county, there are sharp annual peaks of RSV hospitalisation at each seasonal RSV epidemic, and so one should expect the population to consist of large numbers of entirely susceptible individuals, who have never caught RSV before and are primarily in their first 2 years of life, and partially susceptible individuals, who have caught RSV at least once before, due to the inter-epidemic period being longer than the typical time over which loss of immunity to RSV occurs. These general considerations suggest that (i) RSV seasonal epidemics will be akin to repeated invasions of a nearly susceptible population, that\u00a0is closer to an epidemic scenario than an endemic scenario, and (ii) RSV transmission is much closer to a SIS rather than a SIR paradigm. Social network effects in epidemiological forecasting are most important during an epidemic invasive growth phase and are typically more important for SIS-type dynamics with persistent contacts (Miller, 2009; Sun et al., 2015). Both these features appear to be important for seasonal RSV transmission in Kilifi and therefore provide strong motivation for the network-type epidemic model we have used.\n\nTwo possible explanations for the comparative lack of using household structure in RSV modelling are: first, accounting for the interplay of demography and household structure remains a significant modelling challenge (Glass et al., 2011; Geard et al., 2015), and second, the dynamics of age structured transmission models can be predicted using a comparatively small set of deterministic rate equations (Keeling and Rohani, 2008). Moreover, whenever natural immunity is long-lasting and/or high levels of effective vaccination coverage exist for the population, household structure is less important and can be captured using simple approximations, for\u00a0example, the mother-child contact approximation (Atkins et al., 2016). As a possible alternative modelling framework stochastic individual-based models (IBMs) for epidemics benefit from additional realism and flexibility compared to deterministic models, and there does exist at least one modelling study considering the effect of social structure on RSV transmission using a non-seasonal approximation within a stochastic individual-based model (IBM) (Poletti et al., 2015). However, rigorous inference of model parameters for stochastic IBMs of epidemics is highly challenging because, along with other difficulties, the random infection times of each case will not typically be known (O\u2019Neill and Roberts, 1999). The model used in this paper required a rate equation for each possible household configuration (House and Keeling, 2008). Specifically for RSV modelling it has been noted that this could lead to thousands of rate equations that must be simulated simultaneously (Kinyanjui, 2014), effectively rendering the model impractical for regression against data due to slow integration time. Nonetheless, this work demonstrates that by making appropriate simplifications, and using numerical solvers adapted to large systems (in this case ~2000 variables), it was possible to both include realistic household structure and rigorously infer model parameters for a model of RSV transmission in a LMIC setting.\n\n## Results\n\nThe RSV transmission model parameters were either drawn from the RSV literature or inferred from age-stratified weekly hospitalisations at Kilifi county hospital (KCH) between 2002\u00a0and\u00a02016. The underlying biology of the transmission model was similar to a simple compartmental model of RSV infection and waning immunity (see Box 1) with two main differences: (i) the age of the individuals affected their susceptibility to RSV, infectiousness after contracting RSV, duration of RSV infectiousness, and likelihood of developing severe disease and being hospitalised after contracting RSV, partly because of age-specific effects, and partly because we assumed that every person had caught RSV at least once after their first year of life, and (ii) infectious contacts were distributed at two\u00a0levels of social mixing differentiating between persistent contacts between household co-occupants and randomly assigned contacts within the community of Kilifi county based on the ages of the infected and infectee (Figure 1 and Materials\u00a0and\u00a0methods). The joint age and household distribution of the population accessing KCH was chosen to match the ongoing findings of the Kilifi Health and Demographic surveillance system (KHDSS; Scott et al., 2012). The seasonality of RSV hospitalisations at KCH has historically been erratic with peak months for RSV hospitalisation varying as widely as November to April (appendix 1). Moreover, over the 15-year period we are studying in this paper, there was demographic change in the underlying population both in age profile and household size distribution. We addressed these modelling challenges: first, by rejecting the typical epidemiological modelling assumption that population demographic structure is at equilibrium in favour of directly modelling demographic change, and second, by treating the shifting seasonality of RSV transmission in Kilifi as being driven by an underlying latent random process to be jointly inferred with model parameters. The goal was to account for factors influencing the rate of hospitalisations that changed over the 15 years of study so as to get an unbiased estimate of parameters we assumed were static over the period, such as the person-to-person rate of transmission within a household. We were able to broadly capture the year-to-year variation in hospitalisation, and age profile of the hospitalised, with only six free parameters (Figure 2, Materials\u00a0and\u00a0methods, and appendix 1). The 2005/2006 RSV year (see appendix 1 for RSV year definition) was anomalous in that there were three peaks in RSV hospitalisation separated by at least a month: two smaller peaks on 11th Dec 2005 and 24th Mar 2006 around a larger peak on 24th Feb 2006. The model was unable to explain this unusual year, other years having solitary peaks. Outside of the 2005/2006 RSV year there were 2174 hospitalisations during the period of study compared to a model prediction of 2147 hospitalisations ([2057, 2238] 95% prediction interval ). We were unable to jointly identify the rate of school children contacting other school children with the rate of homogeneous contact among all over one year olds, therefore we considered a range of within school contact rates, and for each value inferred the other six free model parameters and assessed the efficacy of vaccination for a range of MAB vaccine effectiveness values and IRP vaccine coverage values. Each scenario gave similar results for the efficacy of household targeted vaccination (see appendix 3), therefore we have only presented results in the main Results section for the scenario with the highest rate of within school mixing. At KCH all RSV hospitalisations occurred in the under five year olds with 84% of hospitalisations occurring in the under 1\u00a0year olds (Figure 2B). This finding is consistent with the much higher rates of hospitalisation per RSV infection for younger infants (Kinyanjui et al., 2015). However, the hospitalisation time series has to also be understood in the context of dynamic RSV transmission and demographic change in the study population. A general trend of increasing hospitalisations between 2002\u20132009 is at least partially explained by a 16% increase in under ones in the population over that period. The rest of year-to-year variation in hospitalisation was explained by seasonal epidemic dynamics, themselves driven by shifting seasonality (Figure 2A; 1).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/47003/elife-47003-fig1-v2.jpg)\n\n**Figure 1.:** Infectious individuals (red character figures) transmit to other individuals inhabiting the same house, and to other individuals in other households based on the ages of the both the infector and infectee. Red and blue arrows represent possible realised infections over a short period of time. Bottom right household demonstrates the vaccination strategy; the mother has received a maternal antibody boosting (MAB) vaccine which increased transfer of protective antibodies to newborns (green background shading), meanwhile other household members have received an immune response provoking (IRP) vaccine (blue background shading).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/47003/elife-47003-fig2-v2.jpg)\n\n**Figure 2.:** (A) Weekly RSV hospitalisations before implementation of vaccinations. Black curve gives mean prediction of RSV household transmission model after regression against weekly incidence data (red dots). Grey shaded area indicates the 99% prediction interval for the model. Also shown is the number of under ones in the population (dashed line). (B) Age profile of hospitalisations at KCH before vaccination. Error bars give 99% prediction intervals for model.\n\nWe found that, pre-vaccination, school age children suffered on average the highest force of infection, that is the per-capita rate of infectious contacts, from outside of the household followed by under 1 year olds (Figure 3A). This finding was dependent on assuming that we had a high degree of homophily in the social contacts of school-age children (the high within school transmission scenario mentioned above). Other scenarios were considered with lower levels of in-group preference for school-age children to contact other school-age children; in the alternate scenarios, the parameter imputation process found slightly higher rates of contacts within the household and homogeneously outside of the household but lead to very similar results (appendix 3 ). The infectious contacts outside the household were distributed predominantly to individuals within households of size 2\u20135 (Figure 3). This reflected the household distribution of the population; school children and under ones who were most at risk of making social contact with those infected with RSV outside the household tended to live in households of this size (Figure 3B).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/47003/elife-47003-fig3-v2.jpg)\n\n**Figure 3.:** (A) The mean force of infection (infectious contacts received per person per day) of RSV due to transmission from without the household on three age groups: under-ones, school age children and everyone else, including adults. (B) Mean force of infection due to transmission without the household on individuals inhabiting each household size. (C) The mean per-capita daily rate at which different age groups become infected with RSV from within their household. (D) The mean total daily rate of RSV infection within households of different sizes.\n\nForce of infection is a less natural concept for measuring within household infection due to small numbers of individuals per household, and intense frequent contacts. Instead, we measured the true rate of RSV transmission between individuals cohabiting a household. The highest per-capita rates of infection within households were for 7 year olds (Figure 3C); this reflected the typical age of individuals within the households most at risk of RSV introduction and with severest transmission rates after introduction. The infection rate among under ones increased rapidly until it plateaued at ~6 months old. The rapid increase in per-capita infection rate was due to waning of maternally acquired immunity to RSV, which we inferred as lasting on average 21.6 days ([17.2, 26.1] 95% CI; see Table 3 for all inferred parameters). The total infection rate within households was greatest in size 5 and 6 households (Figure 3D). This differed from the household size where each person was at most risk of contracting RSV outside the household. Two factors shifted the burden of RSV infection to larger households: first, there are more people in larger households therefore risk of RSV introduction can be higher even if the per-person rate is lower, and second, the intensity of transmission within households is higher for larger households.\n\nWe evaluated a series of scenarios where a combination of a maternal antibody boosting (MAB) and an immune response provoking (IRP), vaccine were targeted at, respectively, mothers-to-be in their third trimester, and their household cohabitants upon the birth of the newborn. Between scenarios we varied (i) the effectiveness of the MAB vaccine, (ii) the coverage of the MAB vaccine, and (iii) the household coverage of the IRP vaccine, see Table 1 for a list of all vaccination scenarios modelled in this paper. The protective effect of the vaccines on individuals was the same as for the unstructured population model presented in Box 1: the MAB vaccine increased the period over which a newborn was protected from RSV by maternally acquired antibodies, and the IRP vaccine, given to all household cohabitants of some participating mothers-to-be, initiated an immune response in the vaccinated which gave a period of protection from acquiring RSV similar to that following a natural infection. The high prenatal contact levels in Kilifi county suggested that vaccination coverage of mothers-to-be had the potential to be very high, especially if maternal immunisation to boost newborn immunity became an established method for a range of vaccines including influenza and Group B Streptococcus. However, an available MAB vaccine might only be effective if delivered in the third trimester of pregnancy and, whilst having at least one prenatal contact is very common for pregnant women in Kilifi county, it is not clear that prenatal contact always occurs at the relevant stage of pregnancy. Therefore, we consider both an optimistic scenario (100% MAB coverage), and a more conservative uptake (50% MAB coverage). The number of days of additional maternally derived protection donated to the newborns by MAB vaccinated mothers was uncertain, we considered a range of MAB protection 0\u201390 days. We assumed that if the pregnant mother\u2019s household cohabitants agreed to receive an immune response provoking vaccine then all were vaccinated at the birth of the newborn to maximise the overlap between the protection period of the cohabitants and the first months of life of the newborn. As is common in vaccine strategy analysis, we combine coverage and effectiveness into one effective coverage (coverage times effectiveness c.f. Keeling and Rohani, 2008), although in this case effective coverage could be considered both within and between households.\n\n**Table 1.**\n Modelled vaccination scenarios.Each combination of MAB vaccine effectiveness and coverage, with IRP vaccine coverage below was one scenario. The baseline scenario being no effective MAB vaccine and 0% coverage of IRP vaccine.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Description</th>\n      <th>Range</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Additional period of protection from RSV at birth due to maternal antibody boosting (MAB) vaccine (P).</td>\n      <td>0 (no vaccine), 15, 30, 45, 60, 75, 90 days</td>\n    </tr>\n    <tr>\n      <td>Coverage of mothers with MAB vaccine</td>\n      <td>50%, 100%</td>\n    </tr>\n    <tr>\n      <td>Coverage of households with newborns with immune response provoking (IRP) vaccination (Vc\u2062o\u2062v)</td>\n      <td>0%, 25%, 50%, 75%, 100%</td>\n    </tr>\n  </tbody>\n</table>\n\nWe assumed that the maximum coverage of the vaccine would be reached within a year, and considered 10 years of RSV transmission after this implementation. When inferring model parameters we took care to account for the known changes in demography over the study period, both in the age and the household occupancy distributions of the population. However, for the 10-year forecasting in this paper, we assumed that the total birth rate was constant (8601 per year), and that the population age and household occupancy distributions remained static. The model inference stage included inferring the statistics of yearly variation in RSV seasonality. The decrease in rates of RSV hospitalisation and infection due to vaccination over ten years presented are median improvements over 500 independent realisations of random future seasonal patterns compared to a baseline of no intervention. If the MAB vaccine was unavailable or ineffective (0 days MAB protection), we found that it was still possible to reduce RSV hospitalisations by up to 25% using only the IRP vaccine on the household members of young infants at time of birth (Figure 4A and B). If 100% maternal vaccination could be achieved then the MAB vaccine was more successful as a sole vaccine option compared to IRP vaccination; in the sense that 90 days of additional protection from RSV delivered a 45% reduction in hospitalisation even with no IRP vaccine coverage. Nonetheless, even with an effective MAB vaccine there was added benefit to also using a IRP vaccine; a greater than 50% reduction in hospitalisations was achieved with a MAB vaccine that gave 75 additional days of RSV protection and a 75% coverage of the pregnant womens\u2019 households (Figure 4A; a colorblind-friendly version of this plot can be found as appendix 4 Fig D). If only 50% maternal vaccination coverage could be achieved then unsurprisingly also using the IRP vaccine became relatively more important. The mixed vaccination strategy that achieved better than 50% hospitalisation reduction with 100% maternal coverage achieved 38% reduction in hospitalisations with 50% maternal coverage (Figure 4B); halving the maternal coverage didn\u2019t necessarily halve the success of the vaccination programme so long as IRP vaccine was also available. Improving the effectiveness of the MAB vaccine caused a significant improvement in hospitalisations, but had an almost negligible effect on the total infections in the population (Figure 4C and D). IRP vaccination was more effective at reducing total RSV infections, but even at 75% coverage of the households of women giving birth the reduction in infections was $<4$% (Figure 4C and D). That IRP vaccination had a modest effect on the true infection rate, and that MAB vaccination has a negligible effect on the true infection rate, was in line with the prediction of the simple non-seasonal RSV model (Box 1). However, the simple model cannot predict that the percentage reduction in hospitalisations would be significantly greater than for total infections because of the direct and indirect protection of those most at risk of disease. For the mixed strategy achieving a 50% reduction in RSV hospitalisations described above (75 days direct MAB protection at 100% MAB coverage with 75% IRP household coverage), the seasonal dynamics of hospitalisations post-vaccination equilibrated rapidly (Figure 5A). There was a reduction in median hospitalisations in every age group, but predominantly in 0\u20133 month years old (who are nearly all protected by the MAB vaccine) and 3\u20136 month year olds (Figure 5B). However, targeting pregnant women and their cohabitants did not prevent sufficient RSV infections as to significantly disrupt RSV transmission within the population at large, which may explain the rapid approach to new RSV hospitalisation dynamics. Nonetheless, those who were protected were overwhelmingly among those at most risk of disease if they had caught RSV.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/47003/elife-47003-fig4-v2.jpg)\n\n**Figure 4.:** (A and B) Median percentage reduction in hospitalisations at KCH. (C and D) Percentage reduction in total RSV infections in the population.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/47003/elife-47003-fig5-v2.jpg)\n\n**Figure 5.:** (A) Forecast weekly hospitalisations for a baseline of no vaccination (blue) and the mixed vaccination strategy (red). Shown are median forecast (curves) and 95% prediction intervals (background shading). (B) Forecast age distribution of total RSV hospitalisations at KCH. Median forecast (bars) and 95% prediction intervals (error bars).\n\nEach vaccine used decreased the expected number of RSV infections and hospitalisations. As well as measuring the overall effectiveness of RSV vaccination (see above), we also measured the efficiency of vaccination, defined as number of infections or hospitalisations averted per vaccine (of either type). Unsurprisingly, as the duration of protection given by the MAB vaccine increased the efficiency of vaccination also increased; significantly for hospitalisations (Figure 6A) and marginally for infections (Figure 6B). This was true whether an IRP vaccine was used, or not. If there is no MAB vaccine available then the efficiency of using only IRP vaccination doesn\u2019t change with coverage; that is that when increasing IRP household coverage the improvement per vaccine used stayed static, in line with what one might expect from a homogeneous mixing RSV model (see Box 1). However, when MAB and IRP vaccines were used in conjunction there was an efficiency penalty due to redundancy in the each vaccine\u2019s protective effect. For example, if a MAB vaccine was available that gave 90 days protection the marginal benefit in terms of decreased hospitalisations of having an IRP vaccine was decreased because most at-risk infants were already protected by the MAB vaccine (Figure 6A). Using two types of vaccine always decreased infections and hospitalisations (see above), but the total reduction was always less than simply adding the reductions of each vaccine in the absence of the other.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/47003/elife-47003-fig6-v2.jpg)\n\n**Figure 6.:** MAB vaccine coverage was 100% unless unavailable, however MAB protection duration varied (different coloured bars) and IRP household coverage was also varied. See Table 1 for a list of scenario. (A) Median avoided hospitalisations at KCH per vaccine over 500 simulations. (B) Median avoided RSV infections in population per vaccine over 500 simulations.\n\n## Discussion\n\nOur modelling analysis suggested that a high-coverage vaccination campaign of mothers-to-be with a vaccine inducing elevated levels of transplacenta RSV antibody transfer to her newborn, alongside targeting the newborn\u2019s cohabitants with a generic vaccine that provoked a period of immunity to RSV can achieve greater than 50% reduction in hospitalisations due to RSV. This combined vaccination strategy suggested itself due to the high prenatal contact rates between mothers-to-be and health professionals in Kilifi county, Kenya (97.5% KNBS, 2015). We found that the combined vaccination strategy was efficient at targeting effort towards directly protecting young infants most at risk of developing RSV disease with boosted antibodies, and filling in any gap in protection with indirect cocoon protection within the household using a vaccine aimed at older cohabitants. Even at maximum effective household coverage for the IRP vaccination only ~10% of the population were vaccinated each year with a modest reduction in the RSV infection rate of ~5%. Nonetheless, at that coverage IRP vaccination alone achieved a 25% reduction in hospitalisations at KCH even without an effective MAB vaccine to provide direct protection to young infants. This demonstrated that although we were vaccinating at a low rate compared to population size, with only a modest reduction in infection rate, those people we did vaccinate were efficient at cocooning young infants from transmission and therefore risk of severe disease. If an effective MAB vaccine was also available the reduction in hospitalisations was greater, although the additional protection due to cocooning was relatively less since young infants were also protected from contracting RSV at the age when they were at most risk of severe disease.\n\nWe constructed the model used in this paper with the purpose of estimating the efficacy of targeting pregnant women and their households for vaccination. In order to make predictions mechanistic models of disease transmission must approximate the social structure of the population being modelled, and hence the contact rates between individuals. The focus on household transmission in this paper necessitated including households into the modelled social structure; this represented significant additional effort in model construction, computational resource and inference compared to simpler models. A more common approach in the literature is to treat the contact rates between individuals as being determined only by their respective ages. This approach has the benefit of being conceptually straight-forward and draws on a number of recent and high-quality studies which quantify social contact patterns by age stratification (Mossong et al., 2008; Kiti et al., 2014; Prem et al., 2017). However, the fundamental theory of age-structured transmission models for endemic diseases was developed mainly with reference to diseases that induce very long term or lifelong immunity (Anderson and May, 1991). For diseases provoking long-lasting immunity, one would expect most older household members to be immune and therefore household structure to be a relatively less important factor in predicting risk of transmission compared to the age-structured transmission outside of the household. Indeed, simulation study of a generic strongly immunizing infection with realistic demography found limited difference in predicted incidence rate by age for people at schooling age or older between models with household structure and age structure compared to models with only age structure (Geard et al., 2015). However, it is not clear that neglecting household structure is a good approximation for modelling seasonal RSV transmission for two reasons: first, previously infected people lose effective immunological protection to RSV rapidly enough that each season could be closer to an \u2019epidemic\u2019 scenario rather than an \u2019endemic\u2019 scenario. Second, every hospital admission at KCH confirmed as due to RSV was a pre-school aged child; in contrast to predicted incidence rates for school age and older individual, the simulation study cited above (Geard et al., 2015) predicted that incidence was lower for 0\u20135 year olds, especially so for under 1 year olds, once household structure was taken into account. It would be of great interest to have a more general theoretical understanding of which epidemiological questions require household structure, or a more general meta-population structure, for epidemiological modelling, and which don\u2019t. This remains an active area of research (Ball et al., 2015).\n\nA cocooning protective effect of households could explain the big discrepancy between our estimate of the mean period of protection against RSV after birth due to transplacental transfer of antibodies from mother to baby in the the womb (21.6 days of natural protection on average) compared to a RSV transmission modelling study by Kinyanjui et al on the same population using an age-structured model (Kinyanjui et al., 2015) (2.3 months of natural protection if the age mixing was based on diary estimates of contacts (Kiti et al., 2014) or 4 months of natural protection if the age mixing was based on household co-occupancy and schooling ages). The age-structured model used in the Kinyanjui et al study reported high or very high reproductive ratios: 7.08 for the diary based contact patterns, and 25.60 for the household co-occupancy and schooling age based contact pattern. Therefore, to fit the KCH hospitalisation data the age structured model necessarily predicted a very high level of natural protection due to maternal antibodies to compensate for the predicted high force of infection on young infants. In our model, we included household structure and we fit to the same KCH data but with a much lower level of natural protection from RSV. This in turn changes the guidance modelling gives to vaccination strategy; some age structured RSV transmission models have emphasized reducing force of infection by vaccinating infants directly (Kinyanjui et al., 2015), and find that maternal vaccination is likely to be of limited impact (Pan-Ngum et al., 2017), because they have inferred that the RSV reproductive ratio is high and, therefore, natural protection to RSV is also inferred to be high. In contrast, we infer that natural protection to RSV is low and therefore find that maternal vaccination in combination with elevating the cocoon protection to young infants provided by vaccinating household co-inhabitants is a highly efficient strategy. Another age-structured RSV transmission model (Yamin et al., 2016) has found that vaccinating under-fives to RSV along with their influenza vaccination was highly efficient because of the large number of secondary cases generated per infected under-five year old. Again, it is not clear whether this result extends to a population structured into households where it is known that clustering in contacts has a complex interplay with disease dynamics, either reducing spread because infectious contacts are \u2018trapped\u2019 in the local cluster (e.g. the household) or promoting spread by enhancing persistence (Miller, 2009; Sun et al., 2015).\n\nThis was a modelling study and, as ever, there are factors that we have neglected in our analysis that could be addressed in future work. First, we treated coverage of the maternal vaccine and the IRP vaccine as independent. In reality, the simplest and cheapest scenario whereby the household cohabitants of pregnant mothers are recruited to the vaccination programme is if they attend prenatal contact with the mother-to-be. The percentage of pregnant women for have at least one prenatal contact in Kilifi county is high (97.5%; KNBS, 2015), however it is not clear that prenatal contact always occurs in the mother-to-be\u2019s third trimester. Both the MAB and IRP vaccines are likely to be best deployed late in the pregnancy, in order to maximise direct protection from the MAB vaccine and the duration of indirect protection from the IRP vaccine for the newborn. This means that if the only prenatal contact with the mother-to-be is relatively early in her pregnancy then both the MAB and IRP vaccines might fail; that is the households outside of MAB coverage are also likely to be those outside of IRP coverage violating our independent deployment assumption. Our results suggest that a MAB vaccine at a high coverage sharply reduces RSV hospitalisation even when the amount of additional protection is low (15 days) and if the MAB vaccination coverage is reduced to 50% IRP coverage becomes relatively more important to reducing hospitalisations. To avoid having many household unprotected by both MAB and IRP vaccination, it could be cost effective to devote extra resources towards encouraging pregnant women, and their cohabitants, who present early in the pregnancy to return for vaccination later in the pregnancy. Second, the cost per vaccine remains unknown and we have not considered any measurement of the burden of disease other than hospitalisations at KCH. RSV hospitalisations have been identified as a crude proxy for the true disease burden; the passive reporting of RSV hospitalisation can vary for reasons completely independent of RSV epidemiology (Modjarrad et al., 2016). Third, despite accounting for demographic change in our inference of model parameters we neglect demographic change in our forecasting, concentrating instead on predicting the reduction in hospitalisations compared to a baseline of a static population without intervention. Including demographic change in our parameter inference step allowed us to disentangle seasonal variation in hospitalisation from simply changing numbers of at-risk children. The demography in Kilifi will continue to change in the future, the crude birth rate in Kilifi has followed a declining trend in line with the rest of Kenya. However, this leads to a total birth rate which is much closer to static (~8500 births per year), and therefore the number of at-risk under-ones has been approximately static since 2009. We avoided exploring complications such as the effect increased crowding within households might have on the risk per-newborn in this paper by assuming that the rest of the population was also static over the 10 years of forecasting. Further exploring more detailed issues around shifting patterns of household cohabitancy would be an interesting avenue to explore in future work. Our primary goal in this paper has been to establish the importance of thinking jointly about hospitalisation risk, population structure (in particular household co-occupancy) and future vaccination programmes. We have demonstrated that, all other things be equal, combining partially effective vaccines can be complementary in a household-structured setting. These issues would suggest that RSV vaccination policy would benefit from further cost-benefit analyses tailored to LMIC settings, possibly using more flexible stochastic IBMs with the model parameters inferred in this study.\n\nIn conclusion, in this paper, we have analysed the performance of a joint maternal and household targeting RSV vaccination strategy measuring both reduction in hospitalisations and the true population incidence rate. We drew our conclusions based on rigorous inference of underlying transmission parameters and the inherent protection to RSV newborns received from their mothers, taking into account potential confusing factors such as variable seasonality and demography. Two central insights from our study were that the duration of natural protection to RSV that newborns inherit from their mother was likely to be much shorter than previously estimated and that RSV attack rates within the household were significant in maintaining RSV transmission. Therefore, targeting pregnant women and their households for RSV vaccination is likely to be an effective and efficient strategy under a wide range of different scenarios.\n\n## Materials and methods\n\nThe dynamical RSV model used in this paper simulated infection and transmission of RSV among a population described by the Kilifi Demographic and Health surveillance system (KHDSS Scott et al., 2012) between September 2001 and\u00a0September 2016. The population was assumed to mix and transmit RSV at two social levels: within their household and outside their household among the wider community. RSV infection was modelled using a modified version of the classic susceptible, infected, recovered (SIR) compartmental framework (Anderson and May, 1991; Keeling and Rohani, 2008). The main modifications were consistent with previous RSV transmission models; we assumed that: (i) individuals were born with a temporary immunity to RSV which faded over time, and (ii) RSV infection episodes provide individuals with only temporary protection from re-infection (mean 6 months Scott et al., 2006; White et al., 2007; Moore et al., 2014; Pitzer et al., 2015; Kinyanjui et al., 2015; Yamin et al., 2016). The high dimensionality of the ODE model (see below) used in this paper necessitated a relatively simple compartmental structure for RSV infection progression, therefore the population is only crudely age stratified into under-one year olds (U1s) and over-one year olds (O1s). However, more detailed information about the age of the individuals in the model was available by considering their age distributions conditional on their crude age category and the type of household they inhabited (see below). After an initial RSV infection there is evidence that individuals retain reduced susceptibility to subsequent RSV infection (Henderson et al., 1979; Hall et al., 1991), and will potentially have less infectious asymptomatic episodes if infected (Hall et al., 2001; Yamin et al., 2016). Some RSV transmission models, using simpler social structures, therefore allow individuals to be characterised by both their age and their number of previous RSV infections (Kinyanjui et al., 2015; Yamin et al., 2016). In the model used in this paper, we assumed that all U1 individuals susceptible to RSV were at risk of their first RSV episode and that all O1 individuals had already been infected at least once, since re-infection within the same yearly epidemic is unlikely but nearly everyone has caught RSV by the age of two years old (Glezen et al., 1986).\n\n### Joint distributions of age and household occupancy\n\nAs mentioned above, the high dimensionality of the RSV transmission model with two levels of social mixing was a limiting factor on the possible complexity of the compartmental framework representing the possible combinations of age and disease state (see appendix 2). In order to both capture the structure of the population in households and incorporate finer-grained information about the ages of the modelled individuals, we calculated empirical joint distributions for the proportion of individuals of different ages in various household sizes, and whether that household contained an under-one year old. We did not restrict the age categories of this joint age-and-household distribution to just under-one or over-one, instead preferring finer-grained age categories: (i) each month of first year of life, (ii) each year of life aged 1\u201318 and (iii) 18+ years old. We used the Kilifi health and demographic surveillance system (KHDSS; Scott et al., 2012) to construct the joint distributions, which records for each individual a unique person ID, a birth date, immigration into the KDHSS date(s), out-migration from the KHDSS date(s), and a unique building ID for where they live during their time in the KHDSS. By combining this data we could calculate,\n\n$$\n\u2119_{t}\u2062(a,n,U)=\\frac{N_{t}\u2062(a,n,U)}{N_{t}}.\n$$\n\nwhere $N_{t}\u2062(a,n,U)$ was the number of individuals on day $t$ who were jointly in age category $a$, lived in a household of size $n$, which either contained at least one under one year old ($U=1$) or not ($U=0$), and $N_{t}$ was the total population size on day $t$. The joint distribution changed over time, we calculated $\u2119_{t}\u2062(a,n,U)$ for a series of year-start days t\u00a0=\u00a01 st Jan 2000, 2001,\u2026, 2016. We then used $\u2119_{t}$ as representative for the rest of the year. Because the exact birth dates where missing for a large number of people, and for model simplicity, we assumed that all U1 individuals aged to become O1 individuals at a constant rate 1 per year, which was equivalent to assuming that given that the exact age of an U1 individual was uniformly distributed between 0 and 1 years old, independently of the U1\u2019s household configuration.\n\n### Conditional age of individuals\n\nThe dynamic model of transmission tracks whether individuals are under-one or over-one years old; however, for estimating the risk of disease per infection it was useful to use the conditional age distribution for the finer-grained age category of an individual based on her dynamic model age category $a<1\u2062year$ or $a>1\u2062year$, her household size and whether the household contained an U1 or not, for example,\n\n$$\nP_{t}(a|n,U,a>1\u00a0year)=\\frac{1(a>1\u00a0year)P_{t}(a,n,U)}{\\sumb>1\u00a0yearP_{t}(b,n,U)}.\n$$\n\nThe conditional distributions for an individual\u2019s household size and whether they lived in a household containing an U1 based on their age were constructed similarly. The reason we included a variable indicating whether the household of the individual contained an under one or not was because it was important to capture the pathway to transmission to the under-one year olds most at risk of disease due to contracting RSV.\n\n### Model dynamics, forces of infection and susceptibility to RSV\n\nThe fundamental unit of the RSV transmission model developed for this paper was the household. Each household was described by the number of each type of individual inhabiting it, which we call the household configuration. The type of individual within each household was identified by her RSV disease state and age category. The RSV transmission model described the dynamics of the number of households that were in each possible household configuration using an approach introduced by House and Keeling, 2008. Mathematically, the number of households in a given household configuration at time $t$ was denoted $H_{s_{1},i_{1},r_{1},s_{2},i_{2},r_{2}}\u2062(t)$, referring to the household configuration with exactly $s_{1}$ U1 susceptibles, $i_{1}$ U1 infecteds, $r_{1}$ U1 recovered, $s_{2}$ O1 susceptibles, $i_{2}$ O1 infecteds, and $r_{2}$ O1 recovereds. In order to limit the number of possible household states, we included only households of total size ten or less with two or fewer under ones. We chose these limits on the household size based on capturing \u224899% of the U1s in the population, and therefore the pathway to them catching RSV (appendix 2). There were 1926 possible household configurations in the RSV transmission model. The vector $\ud835\udc6f\u2062(t)$ of number of households in each possible household configuration evolved according to the semi-linear ODE:\n\n$$\n\ud835\udc6f\u02d9\u2062(t)=A_{t}\u2062\ud835\udc6f\u2062(t)+\ud835\udc87_{t}\u2062(\ud835\udc6f\u2062(t))+\ud835\udf46_{t}\u2062(\ud835\udc6f\u2062(t)).\n$$\n\nEach term describing the vector field of Equation (3) corresponded to a dynamic component of the model:\n\nSee appendix 2 for further details. The force of infection due to transmission within a household of generic configuration ($s_{1},i_{1},r_{1},s_{2},i_{2},r_{2}$) was density dependent; that is the person-to-person infection rate in the household did not depend on household size,\n\n$$\n\\lambda_{h\u2062h}=\\tau\u2062\\beta\u2062(t)\u2062(i_{1}+\u03b9_{2}\u2062i_{2}).\n$$\n\nwhere $\\tau$ is the basic within-household transmission rate, $\u03b9_{2}$ is the relative decrease in infectiousness of O1s compared to U1s, and $\\beta\u2062(t)$ is the seasonal variation in the transmission rate of RSV (see appendix 1). Transmission outside of the household within the wider community was assumed to be based on the finer-grained age categories introduced above. The conditional age distributions of the individuals allowed us to construct matrices ($P_{H\u2192A,t}$) to convert between the household configuration vector into a vector of number of infected individuals in each age category, weighted by their relative infectiousness, for any time $t$ during the simulation: $\ud835\udc70\u2062(t)=P_{H\u2192A,t}\u2062\ud835\udc6f\u2062(t)$ (appendix 2). The force of infection on each individual due to age-based mixing in the community was,\n\n$$\n\ud835\udf40_{a\u2062g\u2062e}=\\beta\u2062(t)\u2062T\u2062\ud835\udc70\u2062(t)/N\u2062(t).\n$$\n\nwhere $T$ was the community infection rate matrix and $N\u2062(t)$ was the total population size at time $t$. In this formulation, the rate at which an infected in age group $b$ creates infectious contacts in the community with individuals of age group $a$ is $T_{a\u2062b}\u2062N\u2062(a,t)/N\u2062(t)$ where $N\u2062(a,t)$ is the number of individuals in age group $a$ at time $t$(Keeling and Rohani, 2008). The force of infection on an individual within a given household was calculated using matrices constructed from the conditional distribution of an individual\u2019s household type given her age, $\\lambda_{c\u2062o\u2062m}=P_{A\u2192H,t}\u2062\ud835\udf40_{a\u2062g\u2062e}$. The total force of infection on each individual was the sum of her infectious contact rates within the household and within the community, $\\lambda=\\lambda_{h\u2062h}+\\lambda_{c\u2062o\u2062m}+\\lambda_{e\u2062x\u2062t}$. Where $\\lambda_{e\u2062x\u2062t}=\u03f5\u2062\\beta\u2062(t)/N\u2062(t)$ was the force of infection from outside KHDSS.\n\nThe actual infection rate for each individual was the force of infection \u2018felt\u2019 by the individual times the susceptibility of the individual. The susceptibility of under-one year olds ($\\sigma_{U\u20621}$) depended on whether or not the U1 individual was still protected from RSV by maternally acquired antibodies, which we modelled as giving a random $M$ days of protection; that is for an individual of age $A$ days, $\\sigma_{U\u20621}=0$ if $M>A$ and $\\sigma_{U\u20621}=1$ otherwise. In general, the infection status of an individual correlates with her age. However, because RSV is strongly seasonal we do not treat the age of an U1 as correlated with her susceptibility arguing that every U1 is facing her first RSV season irrespective of whether she is 1-month old or 11 months old. Therefore, the mean susceptibility for under-ones was $\\sigma\u00af_{U\u20621}=\u2119(M\\leqA)$. The susceptibility of over-one year olds was chosen as if the individual had definitely received at least one RSV infection in the past, and definitely had no chance of being maternally protected. We modelled the duration of maternal protection $M$ as a truncated exponential distribution conditioned on being less than 1 year in duration; that is $M\u223cexp\u2061(\\alpha)|(M\\leq1\u00a0year)$ (appendix 2).\n\n### Hospitalisation rates\n\nThe chance of an infected individual becoming severely diseased after contracting RSV, and then seeking care at hospital, depended on that person\u2019s age and number of infections (Nokes et al., 2008; Ohuma et al., 2012). When an U1 was infected in the model her age at infection was given by conditioning on the age of the U1 being greater than her maternal protection period,\n\n$$\n\u2119(A\\ina|M\\leqA).\n$$\n\nWhich was calculated exactly (see appendices 2 and 4). This took into account that increasing the duration of maternal protection would increase the age at infection and therefore reduce the risk of disease. O1s were assumed to have no maternal protection but their conditional age depended on their household type [Equation (2)]. We used these conditional distributions to convert the incidence rate of U1s and O1s in each household type into dynamic incidence rates in each age category, $\u2110_{a}\u2062(t)$. By assuming that all O1s had been infected at least once we could use previously published age-dependent hospitalisation odds per infection $h_{a}$ (Kinyanjui et al., 2015 and appendix 3) to determine the cumulative hospitalisations predicted by the model for each age category $a$ and week interval $w_{i}=(t_{i,1},t_{i,2})$,\n\n$$\n\u210b\u2062(a,w_{i})=\\int_{t_{i,1}}^{t_{i,2}}\u2110_{a}\u2062(t)\u2062h_{a}\u2062d\u2062t.\n$$\n\n### Parameter inference\n\nThe majority of the parameters for the RSV transmission model were drawn from the RSV literature (see Table 2 and appendix 3) leaving four parameters, and the five hyperparameters of a normal distribution describing the random yearly variation in log-seasonality, to be inferred from hospitalisation data (see Table 3 for parameter estimates and appendix 1 for further details on seasonality model). The free parameters and distribution of the RSV transmission model were:\n\n**Table 2.**\n Parameters from literature and chosen for model.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Parameter</th>\n      <th>Description</th>\n      <th>Value</th>\n      <th>Data source</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>\u03c3O\u20621</td>\n      <td>Susceptibility (O1s)</td>\n      <td>0.75</td>\n      <td>Henderson et al., 1979</td>\n    </tr>\n    <tr>\n      <td>\u03b92</td>\n      <td>relative infectiousness (O1s)</td>\n      <td>0.5</td>\n      <td>Kinyanjui et al., 2015</td>\n    </tr>\n    <tr>\n      <td>\u03bd</td>\n      <td>Rate of waning of immunity</td>\n      <td>two per year</td>\n      <td>Agoti et al., 2012</td>\n    </tr>\n    <tr>\n      <td>\u03b31</td>\n      <td>Rate of recovery for under-ones</td>\n      <td>1/9 per day</td>\n      <td>Hall et al., 1976</td>\n    </tr>\n    <tr>\n      <td>\u03b32</td>\n      <td>Rate of recovery for over-ones</td>\n      <td>1/4 per day</td>\n      <td>Hall et al., 1976</td>\n    </tr>\n    <tr>\n      <td>bS</td>\n      <td>Community transmission rate at schools</td>\n      <td>0,1/3,2/3,1 per day</td>\n      <td>range</td>\n    </tr>\n    <tr>\n      <td>\u03b7</td>\n      <td>Ageing rate for U1s</td>\n      <td>one per year</td>\n      <td>model choice</td>\n    </tr>\n    <tr>\n      <td>\u03f5</td>\n      <td>Base external infection rate (whole population)</td>\n      <td>10 per day</td>\n      <td>model choice</td>\n    </tr>\n  </tbody>\n</table>\n\n**Table 3.**\n Inferred parameters.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Parameter</th>\n      <th>Description</th>\n      <th>Value</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>bU\u20621</td>\n      <td>Community transmission rate for U1s</td>\n      <td>0.22 [0.18,0.27] per day</td>\n    </tr>\n    <tr>\n      <td>bO\u20621</td>\n      <td>Community transmission rate for O1s</td>\n      <td>0.20 [0.18,0.21] per day</td>\n    </tr>\n    <tr>\n      <td>\u03c4</td>\n      <td>Transmission rate to each other member of household</td>\n      <td>0.040 [0.032, 0.048] per day</td>\n    </tr>\n    <tr>\n      <td>M\u00af</td>\n      <td>Mean duration of maternal protection at birth</td>\n      <td>21.6 [17.2, 26.1] days</td>\n    </tr>\n    <tr>\n      <td>m\u03be</td>\n      <td>Mean amplitude of log-seasonality</td>\n      <td>0.61 [0.51, 0.72]</td>\n    </tr>\n    <tr>\n      <td>m\u03d5</td>\n      <td>Mean timing of log-seasonality peak (phase)</td>\n      <td>67.7 [40.2, 77.7] days</td>\n    </tr>\n    <tr>\n      <td>\u03c3\u03be</td>\n      <td>Std. amplitude of log-seasonality</td>\n      <td>0.20 [0.098,0.31]</td>\n    </tr>\n    <tr>\n      <td>\u03c3\u03d5</td>\n      <td>Std. timing of log-seasonality peak (phase)</td>\n      <td>38.7 [30.0, 48.5] days</td>\n    </tr>\n    <tr>\n      <td>\u03c1\u03be\u2062\u03d5</td>\n      <td>Corr. coefficient between log-seasonal amplitude and phase</td>\n      <td>\u22120.035 [-0.12, 0.072]</td>\n    </tr>\n  </tbody>\n</table>\n\nWe also included an infectious contact rate for children of schooling age (5\u201318 years old; $b_{S}$) which acted additionally to $b_{O\u20621}$; that is children of schooling age were at additional risk of contracting RSV on top of the risk due to mixing in the community. This meant that the mixing matrix in Equation (5) was in block form,\n\n$$\nT=(b_{U1}b_{U1}b_{U1}\u00a0b_{U1}b_{S}+b_{O1}b_{O1}\u00a0b_{U1}b_{O1}b_{O1}).\n$$\n\nwhere the blocks represented respectively under-one age categories, over-ones at school age categories and over-ones above school age categories. Unfortunately, we were unable to reliably identify $b_{S}$ parameter jointly with the other parameters. Investigating a range of $b_{S}$ values gave similar results for model fit and predictions for vaccine efficacy, the results in the main paper were for the highest value of $b_{S}$ considered which was mildly pessimistic compared to $b_{S}=0$ (see appendix 3).\n\nThe data for parameter inference was RSV-confirmed, age-specific weekly admissions to Kilifi county hospital (KCH) hospitalisation data from September 2001 until September 2016 (see Nokes et al., 2009 for study details). KCH serves as the primary care facility for the KHDSS population, and we assumed that all KHDSS members who accessed urgent hospital treatment due to RSV disease accessed their treatment at KCH. However, a significant number of admissions were from people not within the KHDSS survey leading to data re-scaling (see appendix 3). The log-likelihood for a particular simulation corresponded to Poisson errors,\n\n$$\nln\u2061\u2112=\\sumi\\sumaln\u2061f_{p\u2062o\u2062i}\u2062(\ud835\udc9f_{i,a}|\u210b\u2062(a,w_{i})).\n$$\n\nwhere $\ud835\udc9f_{i,a}$ was the cumulative number of hospitalisation observed at KCH in age category $a$ on week $w_{i}$ and $f_{p\u2062o\u2062i}\u2062(x|\\mu)$ is the probability mass function for a Poisson distribution with mean \u00b5.\n\nIf the yearly realisations of the random seasonality (see appendix 1) were known, then the entire model would be deterministic and $ln\u2061\u2112$ would be a function of the unknown parameters. Therefore, we treated the yearly variation in seasonality as missing data and used the Expectation-maximisation (EM) algorithm (Dempster et al., 1977) to converge onto maximum likelihood estimates for the four free parameters, and the two hyperparameters of the log-seasonality model, 95% confidence intervals were constructed using the likelihood profile technique (e.g. King et al., 2008 and appendix 3).\n\n### Modelling vaccination\n\nThere were two vaccines used in this modelling study, which were deployed as part of the prenatal contact between pregnant women and skilled health professionals. We assumed that the maternal vaccine was delivered as one injection to the pregnant women in her third trimester. This achieved some unknown additional period of maternal protection, $P$ days, on top of the random period $M$, that is after maternally vaccinating the period of protection became $M_{v\u2062a\u2062c}=M+P$. Achieving an effective maternal vaccination coverage of $V_{c\u2062o\u2062v}$ shifted the mean susceptibility of U1s to $\\sigma\u00af_{U\u20621}=\u2119(M_{v\u2062a\u2062c}<A)V_{c\u2062o\u2062v}+\u2119(M<A)(1-V_{c\u2062o\u2062v})$, a linear increase in $V_{c\u2062o\u2062v}$. The change in distribution of age at infection was non-linear in $V_{c\u2062o\u2062v}$ because, conditional on an U1 being infected, it was more likely that the U1\u2019s mother had not been vaccinated than the unconditional probability of non-vaccination, $1-V_{c\u2062o\u2062v}$ (see appendix 4). We also assumed that there was a vaccine available that provoked an immune response in the vaccinated individuals similar to a natural infection; that is a susceptible $O\u20621$ who is vaccinated immediately becomes \u2018recovered\u2019 and immune to RSV infection until her immunity waned. Immune response provoking vaccination was offered to all O1s in households when a birth occurred, as an addendum to the prenatal contact between mothers-to-be and health professionals. In principle, there were three dimensions to the coverage of the immunity provoking vaccine: (i) coverage of households, (ii) coverage within households, and (iii) vaccine effectiveness. For simplicity, we bundled these dimensions together, and vaccinated whole households at an effective vaccination coverage (the product of the three dimensions of coverage). Over 10 years of forecasted RSV epidemics if a MAB vaccine was available, and given to every pregnant mother, 8601 MAB vaccines were deployed each year. 0\u201324,095 IRP vaccines were deployed each year depending on household coverage. It should be noted that by 2016 the KHDSS population was around 240,000 people, hence 100% effective coverage of the households where births occurred corresponded to ~10% effective coverage of the total population.\n\n### Model simulations\n\nWe simulated the model by numerically solving the high dimensional ODE [Equation (3)] simultaneously with the ongoing cumulative hospitalisations in each age category, $\u210b\u02d9_{a}=h_{a}\u2062\u2110_{a}\u2062(t)$, which allowed us to solve for the model predicted weekly hospitalisations [Equation 7]. The initial state of the model was unknown. We initialised the model by starting with a completely susceptible population with the population demography set to mimic that of the KHDSS on 1st Jan 2000. We then simulated RSV transmission for 10 years, with demographic rates (e.g. birth rates) chosen to match those of KHDSS in year 2000 and the seasonal amplitude and phase of $ln\u2061\\beta$ set to their latest mean estimate, in order to provide an initial state of the household model. Finally, we ran the model from 1st Jan 2000 until 1st September 2001. This provided the initial point for comparison to hospitalisation data. Numerical solutions were provided using the Sundials CVODE solver (Cohen et al., 1996) implemented within the DifferentialEquations package for Julia 0.6 (Rackauckas and Nie, 2017). For retrospective simulations comparing model predictions to data (Figure 2), we used the most probable values of the yearly seasonality. For forecast simulations, we generated 500 realisations of yearly seasonality over 10 years from the distribution inferred in model inference, this gave 500 predictions for the time series of future hospitalisations. We typically presented medians of these predictions (e.g. Figure 4). The code for the RSV household model used in this paper, and the data used for parameter inference, is available from\u00a0https://github.com/SamuelBrand1/RSVHouseholdModel\u00a0(Brand, 2020;\u00a0copy archived at\u00a0https://github.com/elifesciences-publications/RSVHouseholdModel).\n",
+      "created_at": "2025-12-02T16:02:51.177768Z"
+    },
+    {
+      "id": "a566ebc4-21ae-47ef-a76e-b56ba4ca4412",
+      "submission_id": "ea3af927-a6b6-40fb-b232-f81f6b6d3944",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Anna Akhmanova, Utrecht University Netherlands\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.47003.sa1](https://doi.org/10.7554/eLife.47003.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nBrand and colleagues present an agent-based model of respiratory syncytial virus transmission and vaccination and use it to explore potential vaccination schedules in pregnant women. They find up to 50% reductions in infant RSV infections with fairly high coverage of the prenatal vaccine. This work is important for informing future vaccination policy when RSV vaccines become available.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Reducing RSV hospitalisation in a lower-income country by vaccinating mothers-to-be and their households\" for consideration by eLife. Your article has been reviewed by Neil Ferguson as the Senior Editor, a Reviewing Editor, and two reviewers. The following individuals involved in review of your submission have agreed to reveal their identity: Katherine Atkins (Reviewer #2).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nIn the current study Brand et al. use a mathematical model to estimate reductions in RSV hospitalizations in children following a theoretical maternal and >1 y/o vaccines. The study builds on much previous work conducted by members of the same group and adds an important dimension to the question surrounding RSV epidemiology and the potential for vaccination.\n\nThe authors find modest reductions in overall hospitalizations but a sizable reduction in hospitalizations in children <1 y/o \u2013 the most vulnerable group. It is encouraging to see the modelling being conducted with an LMIC setting too, as most previous RSV modelling efforts have been HIC-based. The modeling methods are sound (and elegant) but the manuscript would benefit from some clarification of both methods and results.\n\nEssential revisions:\n\n1) I think it would be helpful if more motivation were to be provided on the reasoning behind the household model choice. If I understand correctly, there is a serious computational downside of solving these types of models, at the expense of some epidemiological realism (with respect to neglecting exposure-dependent parameters, for instance). I'm not advocating the authors conduct a comparison, but I'm interested to know whether the choice of household model can ultimately reflect the impact of household-based strategies more accurately than a more epidemiologically-realistic model can using approximations for the mother-child contact (for this, see again, Atkins et al., 2016).\n\n2) The paper needs to be grounded in relation to vaccines currently being developed. There is no discussion as of now of potential future vaccines and there should be to motivate the work.\n\n3) From what I understand, the contact within the household is assumed to be density dependent, whereas the contact outside of the household is assumed to be frequency dependent \u2013 is this right? Could you mention this?\n\n4) Hasn't there been mixing matrices conducted in Kilifi that could be used?\n\n5) It is a big assumption that the demographics are fixed in the 10 years of prediction. The birthrate has been declining in Kenya over the past 15 years (see https://www.indexmundi.com/g/g.aspx?c=ke&v=25). Thus, the reported reductions may be over-estimated.\n\n6. I'd like to have a comprehensive parameter table that describes all parameters used (vaccine duration, uptake etc. \u2013 including fitted parameters). This would help in understand the base case scenario \u2013 which was difficult to find as well as the reliability of the model and deviation from previous work.\n\n7) Figure 2 suggests to me that the model underestimates the number of hospitalisations. It would be useful to see the absolute numbers stratified by age (rather than just by% ).\n\n8) Figure 5A: It is extremely surprising to me that the post-vaccine dynamics immediately equilibrate \u2013 do the age distribution infection also equilibrate immediately? Presumably, but this is also surprising.\n\n9) Figure 6: I can't decipher what these combined strategies are \u2013 we need more information in the caption accompanied with a separate table that spells out which vaccine strategies are being considered. It is very difficult to interpret the differences between the strategies otherwise.\n\n10) Does Figure 6 really report avoided hospitalizations? If so, why do avoided hospitalizations go down with increasing coverage? Also, I would suggest reversing the order of the legend to match the order of the lines.\n\n11) Introduction: I'm not sure I agree with this assessment. Admittedly in the context of pertussis, but nevertheless, our modelling study suggested the benefit of cocooning in the presence of direct protection of the infant was extremely marginal (Atkins et al., 2016). That is, in terms of impact, there was no point in cocooning when substantial direct protection had been achieved.\n\n12) Results section: Where are the derivations for the equations in box 1? They are not immediately obvious.\n\n13) Results section: I'm a little sceptical at both the values of R0 and the conclusions drawn, namely that community transmission has an R0 < 1 (on average an infection initiated at random) produces <1 other case in the community). This is because when R0 is calculated from a model, the structure of the model, as the authors note, can substantially impact the value of R0 calculated. While the authors note the difference between age and household related structure, the number of exposure classes will also make a difference I think. Perhaps the authors can comment on this.\n\n14) Materials and methods section: Originally you said you split up <1 and >1 years, but there is discussion of finer age groups here, this needs to be explained more clearly as I'm confused with the age stratification, its parameterisation and how it was implemented in the model.\n\n15) Subsection \u201cConditional age of individuals\u201d: When you say 'we calculated empirical distributions', it's not clear how you constructed these distributions, or how they were 'empirical' \u2013 more information please. Presumably there are parameterised from the KDHSS survey, but it's not clear. More link between the data and the distributions needed I think.\n\n16) Subsection \u201cHospitalisation rates\u201d: I think I understand what the authors are trying to do here \u2013 there needs a little bit of a fudge to account for the exposure-dependent nature of RSV infection that is missing from the model. However, there are two forces at play here, which I think need to be captured independently. First, is the age-specific nature of infection \u2013 evidence points to severe infection / hospitalisation being necessarily age dependent, when the lung pathways are not fully developed and infected infants are more at risk of bronchiolitis than their older counterparts. (arguably very young infants are also more likely to be picked up in surveillance through increased testing and reporting). There is then the exposure-dependent nature of infection, that is the higher chance of asymptomatic infection with increasing exposures. Thus, with passive protection from either extended life monoclonals or by maternal vaccination, the idea is to push infants out of their most risky period (age-dependent severe infection), with the trade-off that no vaccine- or natural-immunity is elicited and they still have the same risk of symptomatic infection as younger individuals. If I understand correctly, the model captures the latter mechanism, but not the first. More clarity is needed on distinguishing these phenomenons I think.\n",
+      "created_at": "2025-12-02T16:02:51.177768Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T16:02:51.177768Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T16:02:51.177768Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "2b434b9b-0230-470c-8743-10023dc6f2c2",
+      "content_id": "e5c21521-7d2f-4999-842c-75145e0f06b4",
+      "claim_id": "C1",
+      "claim": "Respiratory syncytial virus is the leading cause of lower respiratory tract infection among infants.",
+      "claim_type": "EXPLICIT",
+      "source": "Respiratory syncytial virus is the leading cause of lower respiratory tract infection among infants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Nair et al., 2010 in the Introduction section.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:02:51.177768Z"
+    },
+    {
+      "id": "5990eaf2-a11e-47ad-b34f-ca3961fc293d",
+      "content_id": "e5c21521-7d2f-4999-842c-75145e0f06b4",
+      "claim_id": "C2",
+      "claim": "A 50% reduction in RSV hospitalisations is possible if the maternal vaccine effectiveness can achieve 75 days of additional protection for newborns combined with a 75% coverage of their birth household co-inhabitants (~7.5% population coverage).",
+      "claim_type": "EXPLICIT",
+      "source": "We find that a 50% reduction in RSV hospitalisations is possible if the maternal vaccine effectiveness can achieve 75 days of additional protection for newborns combined with a 75% coverage of their birth household co-inhabitants (~7.5% population coverage).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on model predictions using inferred parameters from RSV hospitalization data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:02:51.177768Z"
+    },
+    {
+      "id": "58c297c6-fd2e-4669-8a5e-a1c58511094d",
+      "content_id": "e5c21521-7d2f-4999-842c-75145e0f06b4",
+      "claim_id": "C3",
+      "claim": "A large majority of children contract RSV by the age of two.",
+      "claim_type": "EXPLICIT",
+      "source": "A large majority of children contract RSV by the age of two (Glezen et al., 1986; Ohuma et al., 2012)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Glezen et al., 1986 and Ohuma et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:02:51.177768Z"
+    },
+    {
+      "id": "cf8f6727-e32a-4f48-9d19-da895a354596",
+      "content_id": "e5c21521-7d2f-4999-842c-75145e0f06b4",
+      "claim_id": "C4",
+      "claim": "The chance of developing severe disease from a RSV infection is much greater amongst young infants (6 months) and decreases rapidly with the age of the infected child.",
+      "claim_type": "EXPLICIT",
+      "source": "but the chance of developing severe disease from a RSV infection is much greater amongst young infants (6 months) (Hall et al., 2009) and decreases rapidly with the age of the infected child.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Hall et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:02:51.177768Z"
+    },
+    {
+      "id": "a24b712c-f777-4fa4-9a60-9abd87655870",
+      "content_id": "e5c21521-7d2f-4999-842c-75145e0f06b4",
+      "claim_id": "C5",
+      "claim": "There are over 40 RSV vaccines in development as of December 2018.",
+      "claim_type": "EXPLICIT",
+      "source": "As of December 2018, there are over 40 RSV vaccines in development (PATH, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to PATH, 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:02:51.177768Z"
+    },
+    {
+      "id": "5ef172ba-5ced-4edb-8e74-90c8bd3a4688",
+      "content_id": "e5c21521-7d2f-4999-842c-75145e0f06b4",
+      "claim_id": "C6",
+      "claim": "Two vaccination approaches have been identified as potentially effective: a single dose vaccine aimed at mothers-to-be leading to antibody transfer across the placenta thereby boosting maternally acquired immunity among newborns, and paediatric vaccination aimed directly at infants.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, two vaccination approaches have been identified as potentially effective: a single dose vaccine aimed at mothers-to-be leading to antibody transfer across the placenta thereby boosting maternally acquired immunity among newborns, and paediatric vaccination aimed directly at infants (Modjarrad et al., 2016; World Health Organization, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Modjarrad et al., 2016 and World Health Organization, 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:02:51.177768Z"
+    },
+    {
+      "id": "92b4583b-02a1-442a-ab4a-cc3c5ddd2809",
+      "content_id": "e5c21521-7d2f-4999-842c-75145e0f06b4",
+      "claim_id": "C7",
+      "claim": "A prophylactic extended half-life monoclonal antibody could act as a vaccine surrogate whilst replicating the desired effect of a maternal vaccine.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, it is possible that a prophylactic extended half-life monoclonal antibody could act as a vaccine surrogate whilst replicating the desired effect of a maternal vaccine (Zhu et al., 2017; Domachowske et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Zhu et al., 2017 and Domachowske et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:02:51.177768Z"
+    },
+    {
+      "id": "495befff-7ebc-4788-aba3-6675fdf33365",
+      "content_id": "e5c21521-7d2f-4999-842c-75145e0f06b4",
+      "claim_id": "C8",
+      "claim": "A serious complication in RSV vaccine development has historically been the risk of causing enhanced disease amongst the immunologically naive.",
+      "claim_type": "EXPLICIT",
+      "source": "A serious complication in RSV vaccine development has historically been the risk of causing enhanced disease amongst the immunologically naive (Chin et al., 1969)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Chin et al., 1969.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:02:51.177768Z"
+    },
+    {
+      "id": "09637875-8b20-49e5-8ee8-d51758d6db55",
+      "content_id": "e5c21521-7d2f-4999-842c-75145e0f06b4",
+      "claim_id": "C9",
+      "claim": "Older individuals (elder siblings, parents) are potential sources of infection for the infant of the household.",
+      "claim_type": "EXPLICIT",
+      "source": "Epidemiological data suggests older individuals (elder siblings, parents) are potential sources of infection for the infant of the household (Graham, 2014)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Graham, 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:02:51.177768Z"
+    },
+    {
+      "id": "e75e4c10-346c-42c3-8e93-f111cad6419c",
+      "content_id": "e5c21521-7d2f-4999-842c-75145e0f06b4",
+      "claim_id": "C10",
+      "claim": "The majority of RSV infections among young infants originated from within their household rather than the wider community, with older siblings being the usual household index case.",
+      "claim_type": "EXPLICIT",
+      "source": "Molecular analysis of nasopharyngeal samples collected from a semi-rural community in Kenya has identified that the majority of RSV infections among young infants originated from within their household rather than the wider community, with older siblings being the usual household index case (Munywoki et al., 2014)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Munywoki et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:02:51.177768Z"
+    },
+    {
+      "id": "7d0df152-8df1-4926-9a14-fb19afaeaf2d",
+      "content_id": "e5c21521-7d2f-4999-842c-75145e0f06b4",
+      "claim_id": "C11",
+      "claim": "The young infant was herself the index case on a significant number of occasions.",
+      "claim_type": "EXPLICIT",
+      "source": "although it should also be noted that the young infant was herself the index case on a significant number of occasions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from the cited study (Munywoki et al., 2014).",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:02:51.177768Z"
+    },
+    {
+      "id": "0612d546-56ca-4e97-a30f-338598df29e9",
+      "content_id": "e5c21521-7d2f-4999-842c-75145e0f06b4",
+      "claim_id": "C12",
+      "claim": "There are very high rates of prenatal contact between pregnant women and health professionals in Kenya (97.5% in Kilifi county).",
+      "claim_type": "EXPLICIT",
+      "source": "In Kenya, there are very high rates of prenatal contact between pregnant women and health professionals (97.5% in Kilifi county; KNBS, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to KNBS, 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:02:51.177768Z"
+    },
+    {
+      "id": "7f127686-d289-4595-ae46-323552fbb3b6",
+      "content_id": "e5c21521-7d2f-4999-842c-75145e0f06b4",
+      "claim_id": "C13",
+      "claim": "The only reported phase III trial on RSV vaccine effectiveness is for the maternally targeted ResVax, which failed to meet its primary objective but nonetheless showed partial effectiveness at reducing hospitalisations due to RSV.",
+      "claim_type": "EXPLICIT",
+      "source": "At this time, the only reported phase III trial on RSV vaccine effectiveness is for the maternally targeted ResVax, which failed to meet its primary objective but nonetheless showed partial effectiveness at reducing hospitalisations due to RSV (NovaVax, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to NovaVax, 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:02:51.177768Z"
+    },
+    {
+      "id": "f79146a0-fa30-49f0-ba0a-369def89af74",
+      "content_id": "e5c21521-7d2f-4999-842c-75145e0f06b4",
+      "claim_id": "C14",
+      "claim": "The model inferred that the mean period of protection against RSV after birth due to transplacental transfer of antibodies from mother to baby is 21.6 days on average.",
+      "claim_type": "EXPLICIT",
+      "source": "The rapid increase in per-capita infection rate was due to waning of maternally acquired immunity to RSV, which we inferred as lasting on average 21.6 days ([17.2, 26.1] 95% CI; see Table 3 for all inferred parameters).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on parameter inference from hospitalization data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:02:51.177768Z"
+    },
+    {
+      "id": "ce270c3d-7544-47fb-aada-a1c6bed130a0",
+      "content_id": "e5c21521-7d2f-4999-842c-75145e0f06b4",
+      "claim_id": "C15",
+      "claim": "School age children suffered on average the highest force of infection from outside of the household followed by under 1 year olds.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that, pre-vaccination, school age children suffered on average the highest force of infection, that is the per-capita rate of infectious contacts, from outside of the household followed by under 1 year olds (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on model predictions shown in Figure 3A.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:02:51.177768Z"
+    },
+    {
+      "id": "7721f55b-412c-4eaa-a51f-f8284bf37c83",
+      "content_id": "e5c21521-7d2f-4999-842c-75145e0f06b4",
+      "claim_id": "C16",
+      "claim": "The highest per-capita rates of infection within households were for 7 year olds.",
+      "claim_type": "EXPLICIT",
+      "source": "The highest per-capita rates of infection within households were for 7 year olds (Figure 3C)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on model predictions shown in Figure 3C.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:02:51.177768Z"
+    },
+    {
+      "id": "3564a0e8-ea64-4557-8e4d-b73bfe444dc3",
+      "content_id": "e5c21521-7d2f-4999-842c-75145e0f06b4",
+      "claim_id": "C17",
+      "claim": "The total infection rate within households was greatest in size 5 and 6 households.",
+      "claim_type": "EXPLICIT",
+      "source": "The total infection rate within households was greatest in size 5 and 6 households (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on model predictions shown in Figure 3D.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:02:51.177768Z"
+    },
+    {
+      "id": "e2992aa7-7041-4bf4-b693-2ad6bca902bb",
+      "content_id": "e5c21521-7d2f-4999-842c-75145e0f06b4",
+      "claim_id": "C18",
+      "claim": "At KCH all RSV hospitalisations occurred in the under five year olds with 84% of hospitalisations occurring in the under 1 year olds.",
+      "claim_type": "EXPLICIT",
+      "source": "At KCH all RSV hospitalisations occurred in the under five year olds with 84% of hospitalisations occurring in the under 1 year olds (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on observed hospitalization data shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:02:51.177768Z"
+    },
+    {
+      "id": "d935825c-d5bd-4fa3-9041-833ab6c87438",
+      "content_id": "e5c21521-7d2f-4999-842c-75145e0f06b4",
+      "claim_id": "C19",
+      "claim": "A 16% increase in under ones in the population occurred between 2002-2009.",
+      "claim_type": "EXPLICIT",
+      "source": "A general trend of increasing hospitalisations between 2002\u20132009 is at least partially explained by a 16% increase in under ones in the population over that period.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on demographic data from the KHDSS.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:02:51.177768Z"
+    },
+    {
+      "id": "bd5d8b44-5bc3-4756-8aa1-a640948ee489",
+      "content_id": "e5c21521-7d2f-4999-842c-75145e0f06b4",
+      "claim_id": "C20",
+      "claim": "If the MAB vaccine was unavailable or ineffective (0 days MAB protection), it was still possible to reduce RSV hospitalisations by up to 25% using only the IRP vaccine on the household members of young infants at time of birth.",
+      "claim_type": "EXPLICIT",
+      "source": "If the MAB vaccine was unavailable or ineffective (0 days MAB protection), we found that it was still possible to reduce RSV hospitalisations by up to 25% using only the IRP vaccine on the household members of young infants at time of birth (Figure 4A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on model predictions shown in Figure 4A and B.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:02:51.177768Z"
+    },
+    {
+      "id": "babedf07-59e6-4a88-b097-68e058acb138",
+      "content_id": "e5c21521-7d2f-4999-842c-75145e0f06b4",
+      "claim_id": "C21",
+      "claim": "If 100% maternal vaccination could be achieved then the MAB vaccine was more successful as a sole vaccine option compared to IRP vaccination; 90 days of additional protection from RSV delivered a 45% reduction in hospitalisation even with no IRP vaccine coverage.",
+      "claim_type": "EXPLICIT",
+      "source": "If 100% maternal vaccination could be achieved then the MAB vaccine was more successful as a sole vaccine option compared to IRP vaccination; in the sense that 90 days of additional protection from RSV delivered a 45% reduction in hospitalisation even with no IRP vaccine coverage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on model predictions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:02:51.177768Z"
+    },
+    {
+      "id": "6b3dc7f2-ede8-480a-8afd-9680de6184b3",
+      "content_id": "e5c21521-7d2f-4999-842c-75145e0f06b4",
+      "claim_id": "C22",
+      "claim": "A greater than 50% reduction in hospitalisations was achieved with a MAB vaccine that gave 75 additional days of RSV protection and a 75% coverage of the pregnant womens' households.",
+      "claim_type": "EXPLICIT",
+      "source": "Nonetheless, even with an effective MAB vaccine there was added benefit to also using a IRP vaccine; a greater than 50% reduction in hospitalisations was achieved with a MAB vaccine that gave 75 additional days of RSV protection and a 75% coverage of the pregnant womens' households (Figure 4A; a colorblind-friendly version of this plot can be found as appendix 4 Fig D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on model predictions shown in Figure 4A.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:02:51.177768Z"
+    },
+    {
+      "id": "7b1840f8-5380-4f99-8419-d2c67467d944",
+      "content_id": "e5c21521-7d2f-4999-842c-75145e0f06b4",
+      "claim_id": "C23",
+      "claim": "Improving the effectiveness of the MAB vaccine caused a significant improvement in hospitalisations, but had an almost negligible effect on the total infections in the population.",
+      "claim_type": "EXPLICIT",
+      "source": "Improving the effectiveness of the MAB vaccine caused a significant improvement in hospitalisations, but had an almost negligible effect on the total infections in the population (Figure 4C and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on model predictions shown in Figure 4C and D.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:02:51.177768Z"
+    },
+    {
+      "id": "2106ee0c-a66a-4f9f-ba01-b93718276122",
+      "content_id": "e5c21521-7d2f-4999-842c-75145e0f06b4",
+      "claim_id": "C25",
+      "claim": "For the mixed strategy achieving a 50% reduction in RSV hospitalisations (75 days direct MAB protection at 100% MAB coverage with 75% IRP household coverage), the seasonal dynamics of hospitalisations post-vaccination equilibrated rapidly.",
+      "claim_type": "EXPLICIT",
+      "source": "For the mixed strategy achieving a 50% reduction in RSV hospitalisations described above (75 days direct MAB protection at 100% MAB coverage with 75% IRP household coverage), the seasonal dynamics of hospitalisations post-vaccination equilibrated rapidly (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on model predictions shown in Figure 5A.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:02:51.177768Z"
+    },
+    {
+      "id": "096c427b-e87d-4cc7-b600-b7b1d7af66f4",
+      "content_id": "e5c21521-7d2f-4999-842c-75145e0f06b4",
+      "claim_id": "C26",
+      "claim": "There was a reduction in median hospitalisations in every age group, but predominantly in 0\u20133 month years old (who are nearly all protected by the MAB vaccine) and 3\u20136 month year olds.",
+      "claim_type": "EXPLICIT",
+      "source": "There was a reduction in median hospitalisations in every age group, but predominantly in 0\u20133 month years old (who are nearly all protected by the MAB vaccine) and 3\u20136 month year olds (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on model predictions shown in Figure 5B.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:02:51.177768Z"
+    },
+    {
+      "id": "3dd0b8ca-b637-41c0-863c-f2b3436705d0",
+      "content_id": "e5c21521-7d2f-4999-842c-75145e0f06b4",
+      "claim_id": "C27",
+      "claim": "As the duration of protection given by the MAB vaccine increased the efficiency of vaccination also increased; significantly for hospitalisations and marginally for infections.",
+      "claim_type": "EXPLICIT",
+      "source": "Unsurprisingly, as the duration of protection given by the MAB vaccine increased the efficiency of vaccination also increased; significantly for hospitalisations (Figure 6A) and marginally for infections (Figure 6B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on model predictions shown in Figure 6A and 6B.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:02:51.177768Z"
+    },
+    {
+      "id": "0842528c-8438-4636-800d-8d899d04751e",
+      "content_id": "e5c21521-7d2f-4999-842c-75145e0f06b4",
+      "claim_id": "C28",
+      "claim": "If there is no MAB vaccine available then the efficiency of using only IRP vaccination doesn't change with coverage.",
+      "claim_type": "EXPLICIT",
+      "source": "If there is no MAB vaccine available then the efficiency of using only IRP vaccination doesn't change with coverage; that is that when increasing IRP household coverage the improvement per vaccine used stayed static, in line with what one might expect from a homogeneous mixing RSV model (see Box 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on model predictions and comparison to a simple model.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:02:51.177768Z"
+    },
+    {
+      "id": "68e8a4a7-5d0f-40c4-b1da-fd28c39535ba",
+      "content_id": "e5c21521-7d2f-4999-842c-75145e0f06b4",
+      "claim_id": "C29",
+      "claim": "When MAB and IRP vaccines were used in conjunction there was an efficiency penalty due to redundancy in the each vaccine's protective effect.",
+      "claim_type": "EXPLICIT",
+      "source": "However, when MAB and IRP vaccines were used in conjunction there was an efficiency penalty due to redundancy in the each vaccine's protective effect.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on model predictions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:02:51.177768Z"
+    },
+    {
+      "id": "76991dba-c7e6-487c-b4e7-9556677ec691",
+      "content_id": "e5c21521-7d2f-4999-842c-75145e0f06b4",
+      "claim_id": "C30",
+      "claim": "Using two types of vaccine always decreased infections and hospitalisations, but the total reduction was always less than simply adding the reductions of each vaccine in the absence of the other.",
+      "claim_type": "EXPLICIT",
+      "source": "Using two types of vaccine always decreased infections and hospitalisations (see above), but the total reduction was always less than simply adding the reductions of each vaccine in the absence of the other.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on model predictions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:02:51.177768Z"
+    },
+    {
+      "id": "a922a714-0a4f-41a8-8b4e-873acbea9b6c",
+      "content_id": "e5c21521-7d2f-4999-842c-75145e0f06b4",
+      "claim_id": "C31",
+      "claim": "At maximum effective household coverage for the IRP vaccination only ~10% of the population were vaccinated each year with a modest reduction in the RSV infection rate of ~5%.",
+      "claim_type": "EXPLICIT",
+      "source": "Even at maximum effective household coverage for the IRP vaccination only ~10% of the population were vaccinated each year with a modest reduction in the RSV infection rate of ~5%.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on model predictions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:02:51.177768Z"
+    },
+    {
+      "id": "8509cd86-4b86-4be4-9482-025ff3fd1832",
+      "content_id": "e5c21521-7d2f-4999-842c-75145e0f06b4",
+      "claim_id": "C32",
+      "claim": "At maximum effective household coverage for the IRP vaccination, IRP vaccination alone achieved a 25% reduction in hospitalisations at KCH even without an effective MAB vaccine to provide direct protection to young infants.",
+      "claim_type": "EXPLICIT",
+      "source": "Nonetheless, at that coverage IRP vaccination alone achieved a 25% reduction in hospitalisations at KCH even without an effective MAB vaccine to provide direct protection to young infants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on model predictions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:02:51.177768Z"
+    },
+    {
+      "id": "163e1236-9c33-4b82-b2ef-559c6849bad3",
+      "content_id": "e5c21521-7d2f-4999-842c-75145e0f06b4",
+      "claim_id": "C33",
+      "claim": "The time between recovery from an RSV episode and reversion back to at least partial susceptibility is estimated to be 6 months.",
+      "claim_type": "EXPLICIT",
+      "source": "The time between recovery from an episode and reversion back to at least partial susceptibility is estimated to be 6 months (Ohuma et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Ohuma et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:02:51.177768Z"
+    },
+    {
+      "id": "af21c137-ecf7-49b7-8f11-ab283e169da7",
+      "content_id": "e5c21521-7d2f-4999-842c-75145e0f06b4",
+      "claim_id": "C34",
+      "claim": "There are sharp annual peaks of RSV hospitalisation at each seasonal RSV epidemic in Kilifi county.",
+      "claim_type": "EXPLICIT",
+      "source": "In Kilifi county, there are sharp annual peaks of RSV hospitalisation at each seasonal RSV epidemic",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on observed hospitalization data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:02:51.177768Z"
+    },
+    {
+      "id": "a02ab523-3bfd-4d25-b692-0705713787bf",
+      "content_id": "e5c21521-7d2f-4999-842c-75145e0f06b4",
+      "claim_id": "C35",
+      "claim": "The seasonality of RSV hospitalisations at KCH has historically been erratic with peak months for RSV hospitalisation varying as widely as November to April.",
+      "claim_type": "EXPLICIT",
+      "source": "The seasonality of RSV hospitalisations at KCH has historically been erratic with peak months for RSV hospitalisation varying as widely as November to April (appendix 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on observed hospitalization data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:02:51.177768Z"
+    },
+    {
+      "id": "156d2fdc-03c3-4790-93fa-0f5ed07dc1cf",
+      "content_id": "e5c21521-7d2f-4999-842c-75145e0f06b4",
+      "claim_id": "C36",
+      "claim": "Over the 15-year period studied, there was demographic change in the underlying population both in age profile and household size distribution.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, over the 15-year period we are studying in this paper, there was demographic change in the underlying population both in age profile and household size distribution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on demographic data from the KHDSS.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:02:51.177768Z"
+    },
+    {
+      "id": "6074fd88-67e4-4a6f-8b98-cc7874a6057b",
+      "content_id": "e5c21521-7d2f-4999-842c-75145e0f06b4",
+      "claim_id": "C37",
+      "claim": "The model was able to broadly capture the year-to-year variation in hospitalisation, and age profile of the hospitalised, with only six free parameters.",
+      "claim_type": "EXPLICIT",
+      "source": "We were able to broadly capture the year-to-year variation in hospitalisation, and age profile of the hospitalised, with only six free parameters (Figure 2, Materials and methods, and appendix 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on model fitting to hospitalization data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:02:51.177768Z"
+    },
+    {
+      "id": "fb62fd07-03bd-49ed-8dc4-bd2bfbc3cbcd",
+      "content_id": "e5c21521-7d2f-4999-842c-75145e0f06b4",
+      "claim_id": "C38",
+      "claim": "The 2005/2006 RSV year was anomalous in that there were three peaks in RSV hospitalisation separated by at least a month.",
+      "claim_type": "EXPLICIT",
+      "source": "The 2005/2006 RSV year (see appendix 1 for RSV year definition) was anomalous in that there were three peaks in RSV hospitalisation separated by at least a month: two smaller peaks on 11th Dec 2005 and 24th Mar 2006 around a larger peak on 24th Feb 2006.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on observed hospitalization data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:02:51.177768Z"
+    },
+    {
+      "id": "9f0bba59-e819-4424-98ff-562eaab31a5e",
+      "content_id": "e5c21521-7d2f-4999-842c-75145e0f06b4",
+      "claim_id": "C39",
+      "claim": "Outside of the 2005/2006 RSV year there were 2174 hospitalisations during the period of study compared to a model prediction of 2147 hospitalisations ([2057, 2238] 95% prediction interval).",
+      "claim_type": "EXPLICIT",
+      "source": "Outside of the 2005/2006 RSV year there were 2174 hospitalisations during the period of study compared to a model prediction of 2147 hospitalisations ([2057, 2238] 95% prediction interval ).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on comparison of observed data to model predictions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:02:51.177768Z"
+    },
+    {
+      "id": "2c151a2f-4605-4184-b9bb-7b7350824048",
+      "content_id": "e5c21521-7d2f-4999-842c-75145e0f06b4",
+      "claim_id": "C40",
+      "claim": "The model assumes that all U1 individuals susceptible to RSV were at risk of their first RSV episode and that all O1 individuals had already been infected at least once.",
+      "claim_type": "EXPLICIT",
+      "source": "In the model used in this paper, we assumed that all U1 individuals susceptible to RSV were at risk of their first RSV episode and that all O1 individuals had already been infected at least once, since re-infection within the same yearly epidemic is unlikely but nearly everyone has caught RSV by the age of two years old (Glezen et al., 1986).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a model assumption supported by citation to Glezen et al., 1986.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:02:51.177768Z"
+    },
+    {
+      "id": "2da9cddf-ae6c-4155-b38d-aa69dc0c00cd",
+      "content_id": "e5c21521-7d2f-4999-842c-75145e0f06b4",
+      "claim_id": "C41",
+      "claim": "The model assumes that individuals were born with a temporary immunity to RSV which faded over time.",
+      "claim_type": "EXPLICIT",
+      "source": "The main modifications were consistent with previous RSV transmission models; we assumed that: (i) individuals were born with a temporary immunity to RSV which faded over time",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a model assumption consistent with previous RSV models.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:02:51.177768Z"
+    },
+    {
+      "id": "6d2c34f8-40b4-4757-9da5-d08b6a858182",
+      "content_id": "e5c21521-7d2f-4999-842c-75145e0f06b4",
+      "claim_id": "C42",
+      "claim": "The model assumes that RSV infection episodes provide individuals with only temporary protection from re-infection (mean 6 months).",
+      "claim_type": "EXPLICIT",
+      "source": "and (ii) RSV infection episodes provide individuals with only temporary protection from re-infection (mean 6 months Scott et al., 2006; White et al., 2007; Moore et al., 2014; Pitzer et al., 2015; Kinyanjui et al., 2015; Yamin et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a model assumption supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:02:51.177768Z"
+    },
+    {
+      "id": "7f91cb67-afff-4182-af2a-1dc72228eeb8",
+      "content_id": "e5c21521-7d2f-4999-842c-75145e0f06b4",
+      "claim_id": "C43",
+      "claim": "After an initial RSV infection there is evidence that individuals retain reduced susceptibility to subsequent RSV infection.",
+      "claim_type": "EXPLICIT",
+      "source": "After an initial RSV infection there is evidence that individuals retain reduced susceptibility to subsequent RSV infection (Henderson et al., 1979; Hall et al., 1991)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Henderson et al., 1979 and Hall et al., 1991.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:02:51.177768Z"
+    },
+    {
+      "id": "da75b303-4525-4bf5-81f2-5603f0bed053",
+      "content_id": "e5c21521-7d2f-4999-842c-75145e0f06b4",
+      "claim_id": "C44",
+      "claim": "Individuals will potentially have less infectious asymptomatic episodes if infected after an initial RSV infection.",
+      "claim_type": "EXPLICIT",
+      "source": "and will potentially have less infectious asymptomatic episodes if infected (Hall et al., 2001; Yamin et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Hall et al., 2001 and Yamin et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:02:51.177768Z"
+    },
+    {
+      "id": "7c9da9b5-d2f1-4176-81f2-c4a58a73ad41",
+      "content_id": "e5c21521-7d2f-4999-842c-75145e0f06b4",
+      "claim_id": "C45",
+      "claim": "The model assumes that the elicited period of immunity to RSV from receiving the IRP vaccine would be similar to that of a natural infection.",
+      "claim_type": "EXPLICIT",
+      "source": "We follow (Yamin et al., 2016) in assuming that the elicited period of immunity to RSV from receiving the IRP vaccine would be similar to that of a natural infection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a model assumption following Yamin et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:02:51.177768Z"
+    },
+    {
+      "id": "d0bdbb26-4b13-4fa7-bc9b-222694f0499b",
+      "content_id": "e5c21521-7d2f-4999-842c-75145e0f06b4",
+      "claim_id": "C46",
+      "claim": "The model assumes that the maximum coverage of the vaccine would be reached within a year.",
+      "claim_type": "EXPLICIT",
+      "source": "We assumed that the maximum coverage of the vaccine would be reached within a year, and considered 10 years of RSV transmission after this implementation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a model assumption.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:02:51.177768Z"
+    },
+    {
+      "id": "346c9cf4-6a86-4779-b7e2-e8ca44d66242",
+      "content_id": "e5c21521-7d2f-4999-842c-75145e0f06b4",
+      "claim_id": "C47",
+      "claim": "The model assumes that the total birth rate was constant (8601 per year) for the 10-year forecasting period.",
+      "claim_type": "EXPLICIT",
+      "source": "However, for the 10-year forecasting in this paper, we assumed that the total birth rate was constant (8601 per year), and that the population age and household occupancy distributions remained static.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a model assumption for forecasting.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:02:51.177768Z"
+    },
+    {
+      "id": "e1999e2d-3926-4d83-8d9c-b207ee9349be",
+      "content_id": "e5c21521-7d2f-4999-842c-75145e0f06b4",
+      "claim_id": "C48",
+      "claim": "The model assumes that if the pregnant mother's household cohabitants agreed to receive an immune response provoking vaccine then all were vaccinated at the birth of the newborn to maximise the overlap between the protection period of the cohabitants and the first months of life of the newborn.",
+      "claim_type": "EXPLICIT",
+      "source": "We assumed that if the pregnant mother's household cohabitants agreed to receive an immune response provoking vaccine then all were vaccinated at the birth of the newborn to maximise the overlap between the protection period of the cohabitants and the first months of life of the newborn.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a model assumption.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:02:51.177768Z"
+    },
+    {
+      "id": "65f4d71c-9fd2-431d-95d1-d4e787874c1f",
+      "content_id": "e5c21521-7d2f-4999-842c-75145e0f06b4",
+      "claim_id": "C49",
+      "claim": "KCH serves as the primary care facility for the KHDSS population.",
+      "claim_type": "EXPLICIT",
+      "source": "KCH serves as the primary care facility for the KHDSS population, and we assumed that all KHDSS members who accessed urgent hospital treatment due to RSV disease accessed their treatment at KCH.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a model assumption based on knowledge of the healthcare system.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:02:51.177768Z"
+    },
+    {
+      "id": "feb5ba2a-8004-40c8-8f43-d74d64b5fbd6",
+      "content_id": "e5c21521-7d2f-4999-842c-75145e0f06b4",
+      "claim_id": "C50",
+      "claim": "The model assumes that all KHDSS members who accessed urgent hospital treatment due to RSV disease accessed their treatment at KCH.",
+      "claim_type": "EXPLICIT",
+      "source": "KCH serves as the primary care facility for the KHDSS population, and we assumed that all KHDSS members who accessed urgent hospital treatment due to RSV disease accessed their treatment at KCH.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a model assumption.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:02:51.177768Z"
+    },
+    {
+      "id": "f680a0f8-1c21-4897-b8d2-301a95ee5f72",
+      "content_id": "e5c21521-7d2f-4999-842c-75145e0f06b4",
+      "claim_id": "C51",
+      "claim": "The model assumes that the maternal vaccine was delivered as one injection to the pregnant women in her third trimester.",
+      "claim_type": "EXPLICIT",
+      "source": "We assumed that the maternal vaccine was delivered as one injection to the pregnant women in her third trimester.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a model assumption.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:02:51.177768Z"
+    },
+    {
+      "id": "a3e6fe41-2c3e-40d6-8a99-0bc8d28728f1",
+      "content_id": "e5c21521-7d2f-4999-842c-75145e0f06b4",
+      "claim_id": "C53",
+      "claim": "100% effective coverage of the households where births occurred corresponded to ~10% effective coverage of the total population by 2016.",
+      "claim_type": "EXPLICIT",
+      "source": "It should be noted that by 2016 the KHDSS population was around 240,000 people, hence 100% effective coverage of the households where births occurred corresponded to ~10% effective coverage of the total population.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on demographic data and calculation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:02:51.177768Z"
+    },
+    {
+      "id": "983e7664-5cc0-4434-95ff-61819ef094b8",
+      "content_id": "e5c21521-7d2f-4999-842c-75145e0f06b4",
+      "claim_id": "C54",
+      "claim": "Over 10 years of forecasted RSV epidemics if a MAB vaccine was available, and given to every pregnant mother, 8601 MAB vaccines were deployed each year.",
+      "claim_type": "EXPLICIT",
+      "source": "Over 10 years of forecasted RSV epidemics if a MAB vaccine was available, and given to every pregnant mother, 8601 MAB vaccines were deployed each year.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on model assumptions and demographic data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:02:51.177768Z"
+    },
+    {
+      "id": "9aeedfc9-507d-4a61-b774-47b14d621f08",
+      "content_id": "e5c21521-7d2f-4999-842c-75145e0f06b4",
+      "claim_id": "C55",
+      "claim": "0\u201324,095 IRP vaccines were deployed each year depending on household coverage.",
+      "claim_type": "EXPLICIT",
+      "source": "0\u201324,095 IRP vaccines were deployed each year depending on household coverage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on model assumptions and demographic data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:02:51.177768Z"
+    },
+    {
+      "id": "5e772b28-80cf-408d-82f2-18579bb9c5f1",
+      "content_id": "e5c21521-7d2f-4999-842c-75145e0f06b4",
+      "claim_id": "C56",
+      "claim": "The model inference stage included inferring the statistics of yearly variation in RSV seasonality.",
+      "claim_type": "EXPLICIT",
+      "source": "The model inference stage included inferring the statistics of yearly variation in RSV seasonality.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methodology used in the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:02:51.177768Z"
+    },
+    {
+      "id": "98f0da3d-4af8-4994-9183-dc17b57436ec",
+      "content_id": "e5c21521-7d2f-4999-842c-75145e0f06b4",
+      "claim_id": "C57",
+      "claim": "The decrease in rates of RSV hospitalisation and infection due to vaccination over ten years presented are median improvements over 500 independent realisations of random future seasonal patterns compared to a baseline of no intervention.",
+      "claim_type": "EXPLICIT",
+      "source": "The decrease in rates of RSV hospitalisation and infection due to vaccination over ten years presented are median improvements over 500 independent realisations of random future seasonal patterns compared to a baseline of no intervention.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methodology used in the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:02:51.177768Z"
+    },
+    {
+      "id": "c5ade5b0-1ab7-42a6-9cff-8feaa62fcd7a",
+      "content_id": "e5c21521-7d2f-4999-842c-75145e0f06b4",
+      "claim_id": "C58",
+      "claim": "The model was unable to explain the unusual 2005/2006 RSV year with three peaks.",
+      "claim_type": "EXPLICIT",
+      "source": "The model was unable to explain this unusual year, other years having solitary peaks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a limitation of the model fit to data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:02:51.177768Z"
+    },
+    {
+      "id": "771c93de-3076-4d89-9ce8-f6bdf9f35542",
+      "content_id": "e5c21521-7d2f-4999-842c-75145e0f06b4",
+      "claim_id": "C59",
+      "claim": "Targeting pregnant women and their cohabitants did not prevent sufficient RSV infections as to significantly disrupt RSV transmission within the population at large.",
+      "claim_type": "EXPLICIT",
+      "source": "However, targeting pregnant women and their cohabitants did not prevent sufficient RSV infections as to significantly disrupt RSV transmission within the population at large, which may explain the rapid approach to new RSV hospitalisation dynamics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on model predictions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:02:51.177768Z"
+    },
+    {
+      "id": "88c24ef1-532c-4fa1-9602-46bfc5333faa",
+      "content_id": "e5c21521-7d2f-4999-842c-75145e0f06b4",
+      "claim_id": "C60",
+      "claim": "Those who were protected were overwhelmingly among those at most risk of disease if they had caught RSV.",
+      "claim_type": "EXPLICIT",
+      "source": "Nonetheless, those who were protected were overwhelmingly among those at most risk of disease if they had caught RSV.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on model predictions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:02:51.177768Z"
+    },
+    {
+      "id": "b1bb4a24-d186-4647-bb0f-3150f531add5",
+      "content_id": "e5c21521-7d2f-4999-842c-75145e0f06b4",
+      "claim_id": "C61",
+      "claim": "The combined vaccination strategy was efficient at targeting effort towards directly protecting young infants most at risk of developing RSV disease with boosted antibodies, and filling in any gap in protection with indirect cocoon protection within the household using a vaccine aimed at older cohabitants.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the combined vaccination strategy was efficient at targeting effort towards directly protecting young infants most at risk of developing RSV disease with boosted antibodies, and filling in any gap in protection with indirect cocoon protection within the household using a vaccine aimed at older cohabitants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on model predictions and analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:02:51.177768Z"
+    },
+    {
+      "id": "3b3a0ac1-1aeb-407d-ad7c-29a0df308f42",
+      "content_id": "e5c21521-7d2f-4999-842c-75145e0f06b4",
+      "claim_id": "C62",
+      "claim": "Although vaccinating at a low rate compared to population size, with only a modest reduction in infection rate, those people vaccinated were efficient at cocooning young infants from transmission and therefore risk of severe disease.",
+      "claim_type": "EXPLICIT",
+      "source": "This demonstrated that although we were vaccinating at a low rate compared to population size, with only a modest reduction in infection rate, those people we did vaccinate were efficient at cocooning young infants from transmission and therefore risk of severe disease.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on model predictions and analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:02:51.177768Z"
+    },
+    {
+      "id": "743cf4cd-4ab0-44a1-8f93-02683d9c5497",
+      "content_id": "e5c21521-7d2f-4999-842c-75145e0f06b4",
+      "claim_id": "C63",
+      "claim": "If an effective MAB vaccine was also available the reduction in hospitalisations was greater, although the additional protection due to cocooning was relatively less since young infants were also protected from contracting RSV at the age when they were at most risk of severe disease.",
+      "claim_type": "EXPLICIT",
+      "source": "If an effective MAB vaccine was also available the reduction in hospitalisations was greater, although the additional protection due to cocooning was relatively less since young infants were also protected from contracting RSV at the age when they were at most risk of severe disease.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on model predictions and analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:02:51.177768Z"
+    },
+    {
+      "id": "b7990740-74a2-49a0-a2e9-10747137eaf4",
+      "content_id": "e5c21521-7d2f-4999-842c-75145e0f06b4",
+      "claim_id": "C64",
+      "claim": "A cocooning protective effect of households could explain the big discrepancy between the estimate of the mean period of protection against RSV after birth in this study (21.6 days) compared to a RSV transmission modelling study by Kinyanjui et al on the same population using an age-structured model (2.3 months or 4 months depending on contact pattern assumptions).",
+      "claim_type": "EXPLICIT",
+      "source": "A cocooning protective effect of households could explain the big discrepancy between our estimate of the mean period of protection against RSV after birth due to transplacental transfer of antibodies from mother to baby in the the womb (21.6 days of natural protection on average) compared to a RSV transmission modelling study by Kinyanjui et al on the same population using an age-structured model (Kinyanjui et al., 2015) (2.3 months of natural protection if the age mixing was based on diary estimates of contacts (Kiti et al., 2014) or 4 months of natural protection if the age mixing was based on household co-occupancy and schooling ages).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on comparison of model results to previous studies and inference about model structure effects.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:02:51.177768Z"
+    },
+    {
+      "id": "518bb204-69a9-497a-b1eb-3909b42bb417",
+      "content_id": "e5c21521-7d2f-4999-842c-75145e0f06b4",
+      "claim_id": "C65",
+      "claim": "The age-structured model used in the Kinyanjui et al study reported high or very high reproductive ratios: 7.08 for the diary based contact patterns, and 25.60 for the household co-occupancy and schooling age based contact pattern.",
+      "claim_type": "EXPLICIT",
+      "source": "The age-structured model used in the Kinyanjui et al study reported high or very high reproductive ratios: 7.08 for the diary based contact patterns, and 25.60 for the household co-occupancy and schooling age based contact pattern.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on citation to Kinyanjui et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:02:51.177768Z"
+    },
+    {
+      "id": "34c4f381-987d-48f7-a460-9722f7278145",
+      "content_id": "e5c21521-7d2f-4999-842c-75145e0f06b4",
+      "claim_id": "C66",
+      "claim": "The fundamental theory of age-structured transmission models for endemic diseases was developed mainly with reference to diseases that induce very long term or lifelong immunity.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the fundamental theory of age-structured transmission models for endemic diseases was developed mainly with reference to diseases that induce very long term or lifelong immunity (Anderson and May, 1991).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Anderson and May, 1991.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:02:51.177768Z"
+    },
+    {
+      "id": "410ac3ba-55a3-4713-8d95-f2089edd909f",
+      "content_id": "e5c21521-7d2f-4999-842c-75145e0f06b4",
+      "claim_id": "C67",
+      "claim": "For diseases provoking long-lasting immunity, one would expect most older household members to be immune and therefore household structure to be a relatively less important factor in predicting risk of transmission compared to the age-structured transmission outside of the household.",
+      "claim_type": "EXPLICIT",
+      "source": "For diseases provoking long-lasting immunity, one would expect most older household members to be immune and therefore household structure to be a relatively less important factor in predicting risk of transmission compared to the age-structured transmission outside of the household.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on theoretical reasoning about disease transmission.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:02:51.177768Z"
+    },
+    {
+      "id": "dd54e07d-480a-413f-8678-9cd96607cc9c",
+      "content_id": "e5c21521-7d2f-4999-842c-75145e0f06b4",
+      "claim_id": "C68",
+      "claim": "Simulation study of a generic strongly immunizing infection with realistic demography found limited difference in predicted incidence rate by age for people at schooling age or older between models with household structure and age structure compared to models with only age structure.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, simulation study of a generic strongly immunizing infection with realistic demography found limited difference in predicted incidence rate by age for people at schooling age or older between models with household structure and age structure compared to models with only age structure (Geard et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Geard et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:02:51.177768Z"
+    },
+    {
+      "id": "a2fd0c6d-fcb8-4018-91a5-4f27b0914174",
+      "content_id": "e5c21521-7d2f-4999-842c-75145e0f06b4",
+      "claim_id": "C69",
+      "claim": "The simulation study cited (Geard et al., 2015) predicted that incidence was lower for 0\u20135 year olds, especially so for under 1 year olds, once household structure was taken into account.",
+      "claim_type": "EXPLICIT",
+      "source": "However, it is not clear that neglecting household structure is a good approximation for modelling seasonal RSV transmission for two reasons: first, previously infected people lose effective immunological protection to RSV rapidly enough that each season could be closer to an 'epidemic' scenario rather than an 'endemic' scenario. Second, every hospital admission at KCH confirmed as due to RSV was a pre-school aged child; in contrast to predicted incidence rates for school age and older individual, the simulation study cited above (Geard et al., 2015) predicted that incidence was lower for 0\u20135 year olds, especially so for under 1 year olds, once household structure was taken into account.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on citation to Geard et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:02:51.177768Z"
+    },
+    {
+      "id": "bbfdcbe8-dc2f-4cdd-b676-0ee5df778b99",
+      "content_id": "e5c21521-7d2f-4999-842c-75145e0f06b4",
+      "claim_id": "C70",
+      "claim": "The percentage of pregnant women who have at least one prenatal contact in Kilifi county is high (97.5%).",
+      "claim_type": "EXPLICIT",
+      "source": "The percentage of pregnant women for have at least one prenatal contact in Kilifi county is high (97.5%; KNBS, 2015)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to KNBS, 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:02:51.177768Z"
+    },
+    {
+      "id": "941e1c4a-7b96-4f8f-8e20-b1a052c599e4",
+      "content_id": "e5c21521-7d2f-4999-842c-75145e0f06b4",
+      "claim_id": "C71",
+      "claim": "It is not clear that prenatal contact always occurs in the mother-to-be's third trimester.",
+      "claim_type": "EXPLICIT",
+      "source": "however it is not clear that prenatal contact always occurs in the mother-to-be's third trimester.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of uncertainty about the data.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:02:51.177768Z"
+    },
+    {
+      "id": "4790d1a9-c01e-4701-aef5-17544d19fe83",
+      "content_id": "e5c21521-7d2f-4999-842c-75145e0f06b4",
+      "claim_id": "C72",
+      "claim": "Both the MAB and IRP vaccines are likely to be best deployed late in the pregnancy, in order to maximise direct protection from the MAB vaccine and the duration of indirect protection from the IRP vaccine for the newborn.",
+      "claim_type": "EXPLICIT",
+      "source": "Both the MAB and IRP vaccines are likely to be best deployed late in the pregnancy, in order to maximise direct protection from the MAB vaccine and the duration of indirect protection from the IRP vaccine for the newborn.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on reasoning about vaccine effectiveness.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:02:51.177768Z"
+    },
+    {
+      "id": "e964c6f5-a8cc-4e7f-ae71-97f8ea3a3cbf",
+      "content_id": "e5c21521-7d2f-4999-842c-75145e0f06b4",
+      "claim_id": "C73",
+      "claim": "RSV hospitalisations have been identified as a crude proxy for the true disease burden.",
+      "claim_type": "EXPLICIT",
+      "source": "RSV hospitalisations have been identified as a crude proxy for the true disease burden; the passive reporting of RSV hospitalisation can vary for reasons completely independent of RSV epidemiology (Modjarrad et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Modjarrad et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:02:51.177768Z"
+    },
+    {
+      "id": "707c0736-3f23-4704-a49b-e779bfd1e4a3",
+      "content_id": "e5c21521-7d2f-4999-842c-75145e0f06b4",
+      "claim_id": "C74",
+      "claim": "The crude birth rate in Kilifi has followed a declining trend in line with the rest of Kenya.",
+      "claim_type": "EXPLICIT",
+      "source": "The demography in Kilifi will continue to change in the future, the crude birth rate in Kilifi has followed a declining trend in line with the rest of Kenya.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on demographic data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:02:51.177768Z"
+    },
+    {
+      "id": "ff4f08a3-bbf6-4c91-b4f9-fc0b5883fd8b",
+      "content_id": "e5c21521-7d2f-4999-842c-75145e0f06b4",
+      "claim_id": "C75",
+      "claim": "The declining crude birth rate leads to a total birth rate which is much closer to static (~8500 births per year).",
+      "claim_type": "EXPLICIT",
+      "source": "However, this leads to a total birth rate which is much closer to static (~8500 births per year), and therefore the number of at-risk under-ones has been approximately static since 2009.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on demographic data and calculation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:02:51.177768Z"
+    },
+    {
+      "id": "c178f7f0-d6be-4d73-965b-5d048a6e6e36",
+      "content_id": "e5c21521-7d2f-4999-842c-75145e0f06b4",
+      "claim_id": "C76",
+      "claim": "The number of at-risk under-ones has been approximately static since 2009.",
+      "claim_type": "EXPLICIT",
+      "source": "However, this leads to a total birth rate which is much closer to static (~8500 births per year), and therefore the number of at-risk under-ones has been approximately static since 2009.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on demographic data and calculation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:02:51.177768Z"
+    },
+    {
+      "id": "7e1e0b4f-5af5-448a-8ff4-115e3ca33a5a",
+      "content_id": "e5c21521-7d2f-4999-842c-75145e0f06b4",
+      "claim_id": "C77",
+      "claim": "Combining partially effective vaccines can be complementary in a household-structured setting.",
+      "claim_type": "EXPLICIT",
+      "source": "We have demonstrated that, all other things be equal, combining partially effective vaccines can be complementary in a household-structured setting.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on model predictions and analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:02:51.177768Z"
+    },
+    {
+      "id": "6472b320-6a6e-44b0-9081-475be420c252",
+      "content_id": "e5c21521-7d2f-4999-842c-75145e0f06b4",
+      "claim_id": "C78",
+      "claim": "The duration of natural protection to RSV that newborns inherit from their mother was likely to be much shorter than previously estimated.",
+      "claim_type": "EXPLICIT",
+      "source": "Two central insights from our study were that the duration of natural protection to RSV that newborns inherit from their mother was likely to be much shorter than previously estimated",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on model inference from data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:02:51.177768Z"
+    },
+    {
+      "id": "77b4db12-bc42-4c5c-bba3-a001761d6c3d",
+      "content_id": "e5c21521-7d2f-4999-842c-75145e0f06b4",
+      "claim_id": "C79",
+      "claim": "RSV attack rates within the household were significant in maintaining RSV transmission.",
+      "claim_type": "EXPLICIT",
+      "source": "and that RSV attack rates within the household were significant in maintaining RSV transmission.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on model predictions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:02:51.177768Z"
+    },
+    {
+      "id": "598b5f18-8641-4d78-87b7-2231a608cfc7",
+      "content_id": "e5c21521-7d2f-4999-842c-75145e0f06b4",
+      "claim_id": "C80",
+      "claim": "Targeting pregnant women and their households for RSV vaccination is likely to be an effective and efficient strategy under a wide range of different scenarios.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, targeting pregnant women and their households for RSV vaccination is likely to be an effective and efficient strategy under a wide range of different scenarios.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on model predictions across multiple scenarios.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:02:51.177768Z"
+    },
+    {
+      "id": "382e232f-8623-4dff-88be-2686ba06247f",
+      "content_id": "e5c21521-7d2f-4999-842c-75145e0f06b4",
+      "claim_id": "C81",
+      "claim": "The model used in this paper simulated infection and transmission of RSV among a population described by the Kilifi Demographic and Health surveillance system (KHDSS) between September 2001 and September 2016.",
+      "claim_type": "EXPLICIT",
+      "source": "The dynamical RSV model used in this paper simulated infection and transmission of RSV among a population described by the Kilifi Demographic and Health surveillance system (KHDSS Scott et al., 2012) between September 2001 and September 2016.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the model and data used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:02:51.177768Z"
+    },
+    {
+      "id": "720d1755-baa1-473b-9865-7f29deddabbc",
+      "content_id": "e5c21521-7d2f-4999-842c-75145e0f06b4",
+      "claim_id": "C82",
+      "claim": "The population was assumed to mix and transmit RSV at two social levels: within their household and outside their household among the wider community.",
+      "claim_type": "EXPLICIT",
+      "source": "The population was assumed to mix and transmit RSV at two social levels: within their household and outside their household among the wider community.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a model assumption.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:02:51.177768Z"
+    },
+    {
+      "id": "92e0f3da-1d4f-419a-ab09-7d1512cecbd4",
+      "content_id": "e5c21521-7d2f-4999-842c-75145e0f06b4",
+      "claim_id": "C83",
+      "claim": "There were 1926 possible household configurations in the RSV transmission model.",
+      "claim_type": "EXPLICIT",
+      "source": "There were 1926 possible household configurations in the RSV transmission model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the model structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:02:51.177768Z"
+    },
+    {
+      "id": "8d39dd83-5343-4234-bde2-874fc207b8f8",
+      "content_id": "e5c21521-7d2f-4999-842c-75145e0f06b4",
+      "claim_id": "C84",
+      "claim": "The model included only households of total size ten or less with two or fewer under ones.",
+      "claim_type": "EXPLICIT",
+      "source": "In order to limit the number of possible household states, we included only households of total size ten or less with two or fewer under ones.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a model design choice.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:02:51.177768Z"
+    },
+    {
+      "id": "3a047f0f-5420-4144-bc51-81fd18ff2c56",
+      "content_id": "e5c21521-7d2f-4999-842c-75145e0f06b4",
+      "claim_id": "C85",
+      "claim": "The household size limits were chosen based on capturing \u224899% of the U1s in the population.",
+      "claim_type": "EXPLICIT",
+      "source": "We chose these limits on the household size based on capturing \u224899% of the U1s in the population, and therefore the pathway to them catching RSV (appendix 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a model design choice based on data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:02:51.177768Z"
+    },
+    {
+      "id": "8a2d13fc-7334-4344-b5be-fd87a50d5b4b",
+      "content_id": "e5c21521-7d2f-4999-842c-75145e0f06b4",
+      "claim_id": "C87",
+      "claim": "The data for parameter inference was RSV-confirmed, age-specific weekly admissions to Kilifi county hospital (KCH) hospitalisation data from September 2001 until September 2016.",
+      "claim_type": "EXPLICIT",
+      "source": "The data for parameter inference was RSV-confirmed, age-specific weekly admissions to Kilifi county hospital (KCH) hospitalisation data from September 2001 until September 2016 (see Nokes et al., 2009 for study details).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data used for model inference.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:02:51.177768Z"
+    },
+    {
+      "id": "99561345-d018-49ad-91cb-fbaa7183e0a3",
+      "content_id": "e5c21521-7d2f-4999-842c-75145e0f06b4",
+      "claim_id": "C88",
+      "claim": "A significant number of admissions were from people not within the KHDSS survey leading to data re-scaling.",
+      "claim_type": "EXPLICIT",
+      "source": "However, a significant number of admissions were from people not within the KHDSS survey leading to data re-scaling (see appendix 3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a data processing step.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:02:51.177768Z"
+    },
+    {
+      "id": "b00c9244-6b00-4fbf-bcc6-69c89149ee9c",
+      "content_id": "e5c21521-7d2f-4999-842c-75145e0f06b4",
+      "claim_id": "C89",
+      "claim": "The log-likelihood for a particular simulation corresponded to Poisson errors.",
+      "claim_type": "EXPLICIT",
+      "source": "The log-likelihood for a particular simulation corresponded to Poisson errors",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the statistical model used for inference.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:02:51.177768Z"
+    },
+    {
+      "id": "fa30908b-68b0-43d7-8b01-7535464379f9",
+      "content_id": "e5c21521-7d2f-4999-842c-75145e0f06b4",
+      "claim_id": "C90",
+      "claim": "The Expectation-maximisation (EM) algorithm was used to converge onto maximum likelihood estimates for the four free parameters, and the two hyperparameters of the log-seasonality model.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, we treated the yearly variation in seasonality as missing data and used the Expectation-maximisation (EM) algorithm (Dempster et al., 1977) to converge onto maximum likelihood estimates for the four free parameters, and the two hyperparameters of the log-seasonality model",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the inference methodology.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:02:51.177768Z"
+    },
+    {
+      "id": "497d1df1-6c21-460c-9001-236a40845c76",
+      "content_id": "e5c21521-7d2f-4999-842c-75145e0f06b4",
+      "claim_id": "C91",
+      "claim": "95% confidence intervals were constructed using the likelihood profile technique.",
+      "claim_type": "EXPLICIT",
+      "source": "95% confidence intervals were constructed using the likelihood profile technique (e.g. King et al., 2008 and appendix 3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the statistical methodology.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:02:51.177768Z"
+    },
+    {
+      "id": "c2166542-160b-418c-a19c-e1a37f884f30",
+      "content_id": "e5c21521-7d2f-4999-842c-75145e0f06b4",
+      "claim_id": "C92",
+      "claim": "The model was initialized by starting with a completely susceptible population with the population demography set to mimic that of the KHDSS on 1st Jan 2000.",
+      "claim_type": "EXPLICIT",
+      "source": "We initialised the model by starting with a completely susceptible population with the population demography set to mimic that of the KHDSS on 1st Jan 2000.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the model initialization procedure.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:02:51.177768Z"
+    },
+    {
+      "id": "cf338b68-c2ac-497c-8b9d-aa84ac791aed",
+      "content_id": "e5c21521-7d2f-4999-842c-75145e0f06b4",
+      "claim_id": "C94",
+      "claim": "Numerical solutions were provided using the Sundials CVODE solver implemented within the DifferentialEquations package for Julia 0.6.",
+      "claim_type": "EXPLICIT",
+      "source": "Numerical solutions were provided using the Sundials CVODE solver (Cohen et al., 1996) implemented within the DifferentialEquations package for Julia 0.6 (Rackauckas and Nie, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the computational methods used.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:02:51.177768Z"
+    },
+    {
+      "id": "605f746d-7761-43b3-9711-9b0660569ced",
+      "content_id": "e5c21521-7d2f-4999-842c-75145e0f06b4",
+      "claim_id": "C95",
+      "claim": "For forecast simulations, 500 realisations of yearly seasonality over 10 years were generated from the distribution inferred in model inference.",
+      "claim_type": "EXPLICIT",
+      "source": "For forecast simulations, we generated 500 realisations of yearly seasonality over 10 years from the distribution inferred in model inference, this gave 500 predictions for the time series of future hospitalisations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the forecasting methodology.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:02:51.177768Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "a6236fd8-081c-4ff8-ba6a-a2a218e2c1d9",
+      "content_id": "e5c21521-7d2f-4999-842c-75145e0f06b4",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The manuscript establishes the epidemiological context for RSV vaccination strategies, including that RSV is the leading cause of lower respiratory tract infection in infants, that most children contract RSV by age two with highest disease severity in young infants, and that household transmission plays a significant role with older siblings often being the index case.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C13 are all supported by appropriate citations to published literature (Nair et al., 2010; Glezen et al., 1986; Hall et al., 2009; Munywoki et al., 2014; KNBS, 2015; NovaVax, 2019, etc.). These background claims establish the scientific rationale for the study and are appropriately referenced.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:02:51.177768Z"
+    },
+    {
+      "id": "8e960feb-2f0b-4be4-994c-74b0401950d9",
+      "content_id": "e5c21521-7d2f-4999-842c-75145e0f06b4",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The observed RSV hospitalization data from KCH shows that all hospitalizations occurred in under-five year olds with 84% in under-one year olds, with sharp annual peaks showing erratic seasonality (November to April), and a 16% increase in under-ones between 2002-2009. The model captured 2147 hospitalizations compared to 2174 observed (excluding the anomalous 2005/2006 year with three peaks).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C18-C39 describe observed hospitalization data from KCH and are supported by Figure 2 and the KHDSS demographic surveillance data. The model fit is reasonable with observed data falling within the 95% prediction interval, though the 2005/2006 anomaly is acknowledged as unexplained.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:02:51.177768Z"
+    },
+    {
+      "id": "bc4aa52b-7df8-4b64-b207-fcc1efa5736e",
+      "content_id": "e5c21521-7d2f-4999-842c-75145e0f06b4",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The model fitting methodology used six free parameters with an EM algorithm to infer parameters from RSV hospitalization data, treating yearly seasonality variation as missing data. The model broadly captured year-to-year variation in hospitalizations and age profiles. Forecasts used 500 realizations of random seasonal patterns over 10 years.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37 and C56-C95 describe the statistical and computational methodology. The approach is technically sound using appropriate methods (EM algorithm, likelihood profiles for confidence intervals, Poisson errors for count data). The use of 500 simulations for forecasting provides adequate uncertainty quantification.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:02:51.177768Z"
+    },
+    {
+      "id": "5778b6a6-fd81-4584-af06-82007099d38f",
+      "content_id": "e5c21521-7d2f-4999-842c-75145e0f06b4",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The model makes several key assumptions including: all U1 individuals are at risk of first RSV episode while all O1 individuals have been infected at least once; individuals are born with temporary immunity that fades; RSV provides only temporary protection from reinfection (mean 6 months); two-level social mixing (household and community); household size limited to \u226410 with \u22642 under-ones to capture \u224899% of U1s; and various vaccination deployment assumptions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40-C51 and C82-C85 describe model assumptions that are clearly stated and justified either by citations to literature (e.g., Glezen et al., 1986 for RSV infection by age 2) or by practical modeling considerations (e.g., limiting household size to capture 99% of U1s). The assumptions are reasonable for the modeling objectives.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:02:51.177768Z"
+    },
+    {
+      "id": "f72ee4ff-02c4-4cb1-b4e1-410399bec9c6",
+      "content_id": "e5c21521-7d2f-4999-842c-75145e0f06b4",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The model inferred that the mean period of maternal antibody protection against RSV after birth is 21.6 days [17.2, 26.1 days 95% CI], which is much shorter than previously estimated in age-structured models (2.3-4 months in Kinyanjui et al., 2015).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C14 and C78 present a key finding from parameter inference with appropriate confidence intervals. The discrepancy with previous estimates is acknowledged and discussed in relation to model structure differences (household vs. age-structured models). The inference appears statistically sound using the EM algorithm and likelihood profiles.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:02:51.177768Z"
+    },
+    {
+      "id": "c0481418-ae7e-480d-a728-a7b6f9981a00",
+      "content_id": "e5c21521-7d2f-4999-842c-75145e0f06b4",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The model predicts that pre-vaccination, school-age children had the highest force of infection from outside the household followed by under-one year olds. Within households, 7-year-olds had the highest per-capita infection rates, with total household infection rates greatest in size 5-6 households. RSV attack rates within households were significant in maintaining transmission.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C15-C17 and C79 are supported by model predictions shown in Figure 3. However, C15 is noted to depend on the assumption of high within-school mixing, and alternative scenarios with lower school mixing gave similar results (appendix 3). The findings are internally consistent with the model structure.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:02:51.177768Z"
+    },
+    {
+      "id": "37e9c320-0ee2-4801-82b3-e590d798a8d7",
+      "content_id": "e5c21521-7d2f-4999-842c-75145e0f06b4",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The model predicts that a 50% reduction in RSV hospitalizations is achievable with 75 days of MAB protection at 100% coverage combined with 75% IRP household coverage (~7.5% population coverage). IRP vaccination alone can achieve up to 25% reduction in hospitalizations. The MAB vaccine significantly reduces hospitalizations but has negligible effect on total population infections. The combined strategy efficiently targets protection to high-risk infants through both direct protection and household cocooning.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2 and C20-C32, C59-C63, C77, C80 present the main vaccination strategy results supported by Figures 4-6. The predictions are based on 500 simulations with median values reported. The findings are internally consistent: MAB vaccine protects infants directly (reducing hospitalizations more than infections), while IRP vaccine provides indirect cocoon protection. The efficiency analysis (C27-C30) appropriately identifies redundancy when both vaccines are used together.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:02:51.177768Z"
+    },
+    {
+      "id": "057336a9-c929-4f05-ad98-e557c6020a83",
+      "content_id": "e5c21521-7d2f-4999-842c-75145e0f06b4",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "In the KHDSS population of ~240,000 people by 2016, 100% effective coverage of households where births occurred corresponds to ~10% effective population coverage, requiring 8,601 MAB vaccines and 0-24,095 IRP vaccines annually depending on household coverage.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53-C55 are straightforward calculations based on demographic data (birth rate and population size). The arithmetic is verifiable: 8,601 births/year in a population of 240,000 \u2248 3.6% birth rate, and with household members included reaches ~10% population coverage.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:02:51.177768Z"
+    },
+    {
+      "id": "f26826e7-88b3-415d-8781-4977163a1011",
+      "content_id": "e5c21521-7d2f-4999-842c-75145e0f06b4",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The discrepancy between this study's estimate of maternal protection duration (21.6 days) and previous age-structured models (2.3-4 months) may be explained by household cocooning effects. Age-structured models for endemic diseases with long-lasting immunity may not adequately capture household structure effects, which are more important for diseases like RSV with rapid loss of immunity and seasonal epidemic dynamics.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C64-C69 provide a theoretical explanation for the discrepancy in parameter estimates between this household-structured model and previous age-structured models. The reasoning is supported by citations to relevant literature (Anderson and May, 1991; Geard et al., 2015) and is logically coherent: household structure matters more for diseases with short-lived immunity and seasonal dynamics.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:02:51.177768Z"
+    },
+    {
+      "id": "6f4e9d9b-ad2f-447b-b5ec-73e2f9b418a1",
+      "content_id": "e5c21521-7d2f-4999-842c-75145e0f06b4",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Several contextual factors are noted: RSV immunity wanes with a mean of 6 months between recovery and partial susceptibility; 97.5% of pregnant women in Kilifi have prenatal contact though timing in third trimester is uncertain; RSV hospitalizations are a crude proxy for disease burden; and the birth rate has stabilized at ~8,500/year with static at-risk under-ones since 2009.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33 and C70-C76 provide contextual information supported by appropriate citations (Ohuma et al., 2012; KNBS, 2015; Modjarrad et al., 2016) or demographic data. These claims acknowledge limitations and uncertainties appropriately (e.g., C71 on timing of prenatal contact, C73 on hospitalization as crude proxy).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:02:51.177768Z"
+    },
+    {
+      "id": "4afea640-e34c-4f4b-b747-61ad25864305",
+      "content_id": "e5c21521-7d2f-4999-842c-75145e0f06b4",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The model was unable to explain the unusual 2005/2006 RSV year which had three peaks in hospitalizations separated by at least a month, unlike other years with solitary peaks.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C58 acknowledges a limitation of the model fit. This is an appropriate acknowledgment of model limitations and is visible in Figure 2A where the 2005/2006 period shows poor fit. The authors appropriately excluded this anomalous year from their fit statistics.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:02:51.177768Z"
+    },
+    {
+      "id": "a6bc8f5b-a428-486b-a81f-7c9d6faf856b",
+      "content_id": "e5c21521-7d2f-4999-842c-75145e0f06b4",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The model simulated RSV transmission in the KHDSS population between September 2001 and September 2016 using 1,926 possible household configurations based on household size, age categories, and RSV disease states.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C81 and C83 describe the basic model structure and scope. These are factual statements about the model design that are consistent with the detailed methodology described in the Materials and Methods section.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:02:51.177768Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "2b434b9b-0230-470c-8743-10023dc6f2c2",
+      "result_id": "a6236fd8-081c-4ff8-ba6a-a2a218e2c1d9"
+    },
+    {
+      "claim_id": "58c297c6-fd2e-4669-8a5e-a1c58511094d",
+      "result_id": "a6236fd8-081c-4ff8-ba6a-a2a218e2c1d9"
+    },
+    {
+      "claim_id": "cf8f6727-e32a-4f48-9d19-da895a354596",
+      "result_id": "a6236fd8-081c-4ff8-ba6a-a2a218e2c1d9"
+    },
+    {
+      "claim_id": "a24b712c-f777-4fa4-9a60-9abd87655870",
+      "result_id": "a6236fd8-081c-4ff8-ba6a-a2a218e2c1d9"
+    },
+    {
+      "claim_id": "5ef172ba-5ced-4edb-8e74-90c8bd3a4688",
+      "result_id": "a6236fd8-081c-4ff8-ba6a-a2a218e2c1d9"
+    },
+    {
+      "claim_id": "92b4583b-02a1-442a-ab4a-cc3c5ddd2809",
+      "result_id": "a6236fd8-081c-4ff8-ba6a-a2a218e2c1d9"
+    },
+    {
+      "claim_id": "495befff-7ebc-4788-aba3-6675fdf33365",
+      "result_id": "a6236fd8-081c-4ff8-ba6a-a2a218e2c1d9"
+    },
+    {
+      "claim_id": "09637875-8b20-49e5-8ee8-d51758d6db55",
+      "result_id": "a6236fd8-081c-4ff8-ba6a-a2a218e2c1d9"
+    },
+    {
+      "claim_id": "e75e4c10-346c-42c3-8e93-f111cad6419c",
+      "result_id": "a6236fd8-081c-4ff8-ba6a-a2a218e2c1d9"
+    },
+    {
+      "claim_id": "7d0df152-8df1-4926-9a14-fb19afaeaf2d",
+      "result_id": "a6236fd8-081c-4ff8-ba6a-a2a218e2c1d9"
+    },
+    {
+      "claim_id": "0612d546-56ca-4e97-a30f-338598df29e9",
+      "result_id": "a6236fd8-081c-4ff8-ba6a-a2a218e2c1d9"
+    },
+    {
+      "claim_id": "7f127686-d289-4595-ae46-323552fbb3b6",
+      "result_id": "a6236fd8-081c-4ff8-ba6a-a2a218e2c1d9"
+    },
+    {
+      "claim_id": "e2992aa7-7041-4bf4-b693-2ad6bca902bb",
+      "result_id": "8e960feb-2f0b-4be4-994c-74b0401950d9"
+    },
+    {
+      "claim_id": "d935825c-d5bd-4fa3-9041-833ab6c87438",
+      "result_id": "8e960feb-2f0b-4be4-994c-74b0401950d9"
+    },
+    {
+      "claim_id": "af21c137-ecf7-49b7-8f11-ab283e169da7",
+      "result_id": "8e960feb-2f0b-4be4-994c-74b0401950d9"
+    },
+    {
+      "claim_id": "a02ab523-3bfd-4d25-b692-0705713787bf",
+      "result_id": "8e960feb-2f0b-4be4-994c-74b0401950d9"
+    },
+    {
+      "claim_id": "156d2fdc-03c3-4790-93fa-0f5ed07dc1cf",
+      "result_id": "8e960feb-2f0b-4be4-994c-74b0401950d9"
+    },
+    {
+      "claim_id": "fb62fd07-03bd-49ed-8dc4-bd2bfbc3cbcd",
+      "result_id": "8e960feb-2f0b-4be4-994c-74b0401950d9"
+    },
+    {
+      "claim_id": "9f0bba59-e819-4424-98ff-562eaab31a5e",
+      "result_id": "8e960feb-2f0b-4be4-994c-74b0401950d9"
+    },
+    {
+      "claim_id": "6074fd88-67e4-4a6f-8b98-cc7874a6057b",
+      "result_id": "bc4aa52b-7df8-4b64-b207-fcc1efa5736e"
+    },
+    {
+      "claim_id": "5e772b28-80cf-408d-82f2-18579bb9c5f1",
+      "result_id": "bc4aa52b-7df8-4b64-b207-fcc1efa5736e"
+    },
+    {
+      "claim_id": "98f0da3d-4af8-4994-9183-dc17b57436ec",
+      "result_id": "bc4aa52b-7df8-4b64-b207-fcc1efa5736e"
+    },
+    {
+      "claim_id": "8a2d13fc-7334-4344-b5be-fd87a50d5b4b",
+      "result_id": "bc4aa52b-7df8-4b64-b207-fcc1efa5736e"
+    },
+    {
+      "claim_id": "99561345-d018-49ad-91cb-fbaa7183e0a3",
+      "result_id": "bc4aa52b-7df8-4b64-b207-fcc1efa5736e"
+    },
+    {
+      "claim_id": "b00c9244-6b00-4fbf-bcc6-69c89149ee9c",
+      "result_id": "bc4aa52b-7df8-4b64-b207-fcc1efa5736e"
+    },
+    {
+      "claim_id": "fa30908b-68b0-43d7-8b01-7535464379f9",
+      "result_id": "bc4aa52b-7df8-4b64-b207-fcc1efa5736e"
+    },
+    {
+      "claim_id": "497d1df1-6c21-460c-9001-236a40845c76",
+      "result_id": "bc4aa52b-7df8-4b64-b207-fcc1efa5736e"
+    },
+    {
+      "claim_id": "c2166542-160b-418c-a19c-e1a37f884f30",
+      "result_id": "bc4aa52b-7df8-4b64-b207-fcc1efa5736e"
+    },
+    {
+      "claim_id": "cf338b68-c2ac-497c-8b9d-aa84ac791aed",
+      "result_id": "bc4aa52b-7df8-4b64-b207-fcc1efa5736e"
+    },
+    {
+      "claim_id": "605f746d-7761-43b3-9711-9b0660569ced",
+      "result_id": "bc4aa52b-7df8-4b64-b207-fcc1efa5736e"
+    },
+    {
+      "claim_id": "2c151a2f-4605-4184-b9bb-7b7350824048",
+      "result_id": "5778b6a6-fd81-4584-af06-82007099d38f"
+    },
+    {
+      "claim_id": "2da9cddf-ae6c-4155-b38d-aa69dc0c00cd",
+      "result_id": "5778b6a6-fd81-4584-af06-82007099d38f"
+    },
+    {
+      "claim_id": "6d2c34f8-40b4-4757-9da5-d08b6a858182",
+      "result_id": "5778b6a6-fd81-4584-af06-82007099d38f"
+    },
+    {
+      "claim_id": "7f91cb67-afff-4182-af2a-1dc72228eeb8",
+      "result_id": "5778b6a6-fd81-4584-af06-82007099d38f"
+    },
+    {
+      "claim_id": "da75b303-4525-4bf5-81f2-5603f0bed053",
+      "result_id": "5778b6a6-fd81-4584-af06-82007099d38f"
+    },
+    {
+      "claim_id": "7c9da9b5-d2f1-4176-81f2-c4a58a73ad41",
+      "result_id": "5778b6a6-fd81-4584-af06-82007099d38f"
+    },
+    {
+      "claim_id": "d0bdbb26-4b13-4fa7-bc9b-222694f0499b",
+      "result_id": "5778b6a6-fd81-4584-af06-82007099d38f"
+    },
+    {
+      "claim_id": "346c9cf4-6a86-4779-b7e2-e8ca44d66242",
+      "result_id": "5778b6a6-fd81-4584-af06-82007099d38f"
+    },
+    {
+      "claim_id": "e1999e2d-3926-4d83-8d9c-b207ee9349be",
+      "result_id": "5778b6a6-fd81-4584-af06-82007099d38f"
+    },
+    {
+      "claim_id": "65f4d71c-9fd2-431d-95d1-d4e787874c1f",
+      "result_id": "5778b6a6-fd81-4584-af06-82007099d38f"
+    },
+    {
+      "claim_id": "feb5ba2a-8004-40c8-8f43-d74d64b5fbd6",
+      "result_id": "5778b6a6-fd81-4584-af06-82007099d38f"
+    },
+    {
+      "claim_id": "f680a0f8-1c21-4897-b8d2-301a95ee5f72",
+      "result_id": "5778b6a6-fd81-4584-af06-82007099d38f"
+    },
+    {
+      "claim_id": "720d1755-baa1-473b-9865-7f29deddabbc",
+      "result_id": "5778b6a6-fd81-4584-af06-82007099d38f"
+    },
+    {
+      "claim_id": "8d39dd83-5343-4234-bde2-874fc207b8f8",
+      "result_id": "5778b6a6-fd81-4584-af06-82007099d38f"
+    },
+    {
+      "claim_id": "3a047f0f-5420-4144-bc51-81fd18ff2c56",
+      "result_id": "5778b6a6-fd81-4584-af06-82007099d38f"
+    },
+    {
+      "claim_id": "f79146a0-fa30-49f0-ba0a-369def89af74",
+      "result_id": "f72ee4ff-02c4-4cb1-b4e1-410399bec9c6"
+    },
+    {
+      "claim_id": "6472b320-6a6e-44b0-9081-475be420c252",
+      "result_id": "f72ee4ff-02c4-4cb1-b4e1-410399bec9c6"
+    },
+    {
+      "claim_id": "ce270c3d-7544-47fb-aada-a1c6bed130a0",
+      "result_id": "c0481418-ae7e-480d-a728-a7b6f9981a00"
+    },
+    {
+      "claim_id": "7721f55b-412c-4eaa-a51f-f8284bf37c83",
+      "result_id": "c0481418-ae7e-480d-a728-a7b6f9981a00"
+    },
+    {
+      "claim_id": "3564a0e8-ea64-4557-8e4d-b73bfe444dc3",
+      "result_id": "c0481418-ae7e-480d-a728-a7b6f9981a00"
+    },
+    {
+      "claim_id": "77b4db12-bc42-4c5c-bba3-a001761d6c3d",
+      "result_id": "c0481418-ae7e-480d-a728-a7b6f9981a00"
+    },
+    {
+      "claim_id": "5990eaf2-a11e-47ad-b34f-ca3961fc293d",
+      "result_id": "37e9c320-0ee2-4801-82b3-e590d798a8d7"
+    },
+    {
+      "claim_id": "bd5d8b44-5bc3-4756-8aa1-a640948ee489",
+      "result_id": "37e9c320-0ee2-4801-82b3-e590d798a8d7"
+    },
+    {
+      "claim_id": "babedf07-59e6-4a88-b097-68e058acb138",
+      "result_id": "37e9c320-0ee2-4801-82b3-e590d798a8d7"
+    },
+    {
+      "claim_id": "6b3dc7f2-ede8-480a-8afd-9680de6184b3",
+      "result_id": "37e9c320-0ee2-4801-82b3-e590d798a8d7"
+    },
+    {
+      "claim_id": "7b1840f8-5380-4f99-8419-d2c67467d944",
+      "result_id": "37e9c320-0ee2-4801-82b3-e590d798a8d7"
+    },
+    {
+      "claim_id": "2106ee0c-a66a-4f9f-ba01-b93718276122",
+      "result_id": "37e9c320-0ee2-4801-82b3-e590d798a8d7"
+    },
+    {
+      "claim_id": "096c427b-e87d-4cc7-b600-b7b1d7af66f4",
+      "result_id": "37e9c320-0ee2-4801-82b3-e590d798a8d7"
+    },
+    {
+      "claim_id": "3dd0b8ca-b637-41c0-863c-f2b3436705d0",
+      "result_id": "37e9c320-0ee2-4801-82b3-e590d798a8d7"
+    },
+    {
+      "claim_id": "0842528c-8438-4636-800d-8d899d04751e",
+      "result_id": "37e9c320-0ee2-4801-82b3-e590d798a8d7"
+    },
+    {
+      "claim_id": "68e8a4a7-5d0f-40c4-b1da-fd28c39535ba",
+      "result_id": "37e9c320-0ee2-4801-82b3-e590d798a8d7"
+    },
+    {
+      "claim_id": "76991dba-c7e6-487c-b4e7-9556677ec691",
+      "result_id": "37e9c320-0ee2-4801-82b3-e590d798a8d7"
+    },
+    {
+      "claim_id": "a922a714-0a4f-41a8-8b4e-873acbea9b6c",
+      "result_id": "37e9c320-0ee2-4801-82b3-e590d798a8d7"
+    },
+    {
+      "claim_id": "8509cd86-4b86-4be4-9482-025ff3fd1832",
+      "result_id": "37e9c320-0ee2-4801-82b3-e590d798a8d7"
+    },
+    {
+      "claim_id": "771c93de-3076-4d89-9ce8-f6bdf9f35542",
+      "result_id": "37e9c320-0ee2-4801-82b3-e590d798a8d7"
+    },
+    {
+      "claim_id": "88c24ef1-532c-4fa1-9602-46bfc5333faa",
+      "result_id": "37e9c320-0ee2-4801-82b3-e590d798a8d7"
+    },
+    {
+      "claim_id": "b1bb4a24-d186-4647-bb0f-3150f531add5",
+      "result_id": "37e9c320-0ee2-4801-82b3-e590d798a8d7"
+    },
+    {
+      "claim_id": "3b3a0ac1-1aeb-407d-ad7c-29a0df308f42",
+      "result_id": "37e9c320-0ee2-4801-82b3-e590d798a8d7"
+    },
+    {
+      "claim_id": "743cf4cd-4ab0-44a1-8f93-02683d9c5497",
+      "result_id": "37e9c320-0ee2-4801-82b3-e590d798a8d7"
+    },
+    {
+      "claim_id": "7e1e0b4f-5af5-448a-8ff4-115e3ca33a5a",
+      "result_id": "37e9c320-0ee2-4801-82b3-e590d798a8d7"
+    },
+    {
+      "claim_id": "598b5f18-8641-4d78-87b7-2231a608cfc7",
+      "result_id": "37e9c320-0ee2-4801-82b3-e590d798a8d7"
+    },
+    {
+      "claim_id": "a3e6fe41-2c3e-40d6-8a99-0bc8d28728f1",
+      "result_id": "057336a9-c929-4f05-ad98-e557c6020a83"
+    },
+    {
+      "claim_id": "983e7664-5cc0-4434-95ff-61819ef094b8",
+      "result_id": "057336a9-c929-4f05-ad98-e557c6020a83"
+    },
+    {
+      "claim_id": "9aeedfc9-507d-4a61-b774-47b14d621f08",
+      "result_id": "057336a9-c929-4f05-ad98-e557c6020a83"
+    },
+    {
+      "claim_id": "b7990740-74a2-49a0-a2e9-10747137eaf4",
+      "result_id": "f26826e7-88b3-415d-8781-4977163a1011"
+    },
+    {
+      "claim_id": "518bb204-69a9-497a-b1eb-3909b42bb417",
+      "result_id": "f26826e7-88b3-415d-8781-4977163a1011"
+    },
+    {
+      "claim_id": "34c4f381-987d-48f7-a460-9722f7278145",
+      "result_id": "f26826e7-88b3-415d-8781-4977163a1011"
+    },
+    {
+      "claim_id": "410ac3ba-55a3-4713-8d95-f2089edd909f",
+      "result_id": "f26826e7-88b3-415d-8781-4977163a1011"
+    },
+    {
+      "claim_id": "dd54e07d-480a-413f-8678-9cd96607cc9c",
+      "result_id": "f26826e7-88b3-415d-8781-4977163a1011"
+    },
+    {
+      "claim_id": "a2fd0c6d-fcb8-4018-91a5-4f27b0914174",
+      "result_id": "f26826e7-88b3-415d-8781-4977163a1011"
+    },
+    {
+      "claim_id": "163e1236-9c33-4b82-b2ef-559c6849bad3",
+      "result_id": "6f4e9d9b-ad2f-447b-b5ec-73e2f9b418a1"
+    },
+    {
+      "claim_id": "bbfdcbe8-dc2f-4cdd-b676-0ee5df778b99",
+      "result_id": "6f4e9d9b-ad2f-447b-b5ec-73e2f9b418a1"
+    },
+    {
+      "claim_id": "941e1c4a-7b96-4f8f-8e20-b1a052c599e4",
+      "result_id": "6f4e9d9b-ad2f-447b-b5ec-73e2f9b418a1"
+    },
+    {
+      "claim_id": "4790d1a9-c01e-4701-aef5-17544d19fe83",
+      "result_id": "6f4e9d9b-ad2f-447b-b5ec-73e2f9b418a1"
+    },
+    {
+      "claim_id": "e964c6f5-a8cc-4e7f-ae71-97f8ea3a3cbf",
+      "result_id": "6f4e9d9b-ad2f-447b-b5ec-73e2f9b418a1"
+    },
+    {
+      "claim_id": "707c0736-3f23-4704-a49b-e779bfd1e4a3",
+      "result_id": "6f4e9d9b-ad2f-447b-b5ec-73e2f9b418a1"
+    },
+    {
+      "claim_id": "ff4f08a3-bbf6-4c91-b4f9-fc0b5883fd8b",
+      "result_id": "6f4e9d9b-ad2f-447b-b5ec-73e2f9b418a1"
+    },
+    {
+      "claim_id": "c178f7f0-d6be-4d73-965b-5d048a6e6e36",
+      "result_id": "6f4e9d9b-ad2f-447b-b5ec-73e2f9b418a1"
+    },
+    {
+      "claim_id": "c5ade5b0-1ab7-42a6-9cff-8feaa62fcd7a",
+      "result_id": "4afea640-e34c-4f4b-b747-61ad25864305"
+    },
+    {
+      "claim_id": "382e232f-8623-4dff-88be-2686ba06247f",
+      "result_id": "a6bc8f5b-a428-486b-a81f-7c9d6faf856b"
+    },
+    {
+      "claim_id": "92e0f3da-1d4f-419a-ab09-7d1512cecbd4",
+      "result_id": "a6bc8f5b-a428-486b-a81f-7c9d6faf856b"
+    }
+  ],
+  "comparisons": []
+}

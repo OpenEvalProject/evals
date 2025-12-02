@@ -1,0 +1,270 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "HLA-VBSeq accurately called eight-digit resolution HLA types for 30 genes in 650 WGS samples from 419 individuals, with high recall rates (mean 98.5%), high concordance in validation analyses (96.7% twin pairs, 95.7% fibroblast-iPSC pairs, 90.9% Mendelian inheritance), 97.1% of alleles in Hardy-Weinberg equilibrium, and high correlation with external allele frequency databases (r=0.921 iPSCORE, r=0.908 HipSci).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C38 collectively demonstrate robust HLA typing methodology with multiple independent validation approaches. The high recall rates, concordance values across different validation methods, HWE consistency, and correlation with external databases provide converging evidence for accurate HLA typing. The slightly lower Mendelian concordance (90.9% vs 96.7% twins) is appropriately interpreted as reduced reproducibility when calling alleles in different diplotypes (C34).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Eight-digit HLA types are strongly associated with differential expression of their cognate HLA genes in iPSCs, with 189 of 428 HLA types (44.2%) showing significantly different expression levels (FDR<5%), including specific expression patterns for the 8.1 ancestral haplotype alleles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C50 demonstrate that HLA types associate with expression differences using appropriate statistical testing (t-test, FDR<5%). The use of HLA type-specific cDNA alignment (described in methods and supplementary figures) addresses potential alignment biases. The observation that class I genes are highly expressed and class II genes lowly expressed in iPSCs is consistent with known biology (C42-C43), providing biological validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Single-variant eQTL analysis identified 56 eGenes (38.4% of expressed genes) associated with 76,809 eQTLs spanning large genomic distances (median 2.1 Mb), with 75% of eGenes having multiple independent regulatory variants identified through conditional analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C62 report comprehensive eQTL mapping with appropriate statistical corrections (Benjamini-Hochberg FDR<0.1, Bonferroni p<0.1). The large genomic spans and high number of eQTLs per gene are appropriately interpreted in the context of strong LD in the MHC region (C56). Conditional analyses properly identify independent signals. The use of linear mixed models with kinship matrices accounts for population structure and relatedness.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "The identified eQTLs have characteristics of regulatory variants including proximity to TSS (median 18.3 kb), enrichment in active chromatin marks in iPSCs, and association with allele-specific expression (mean AIF 67.3% for eGenes vs 61.9% for non-eGenes, p=4.38\u00d710\u207b\u2076\u2074).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C68 provide multiple lines of validation for eQTLs as regulatory variants. The enrichment analysis uses appropriate external data (Roadmap Epigenomics), the ASE analysis uses proper statistical testing (Mann-Whitney U test with genome-wide significant p-value), and the proximity analysis shows expected patterns. These converging lines of evidence support the regulatory nature of identified eQTLs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Colocalization analysis between MHC eQTLs and 4083 UK Biobank GWAS traits identified 180 high-confidence shared causal variants (PPA>0.8), including novel associations with pulmonary diseases (5 novel eGenes including RNF5), weight phenotypes (4 novel eGenes), and liver/gallbladder diseases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C80 report colocalization results using established methodology (coloc.abf) with appropriate posterior probability thresholds. The identification of both known associations (C72) and novel associations (C73) provides validation. The biological interpretation of RNF5 associations with CF-related phenotypes is supported by cited literature (C74, C78), though the mechanistic claims remain speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "HLA-type eQTL analysis identified 114 eGenes (including 62 not found by single-variant analysis), demonstrating substantially greater power than single-variant analysis. HLA-type eQTLs clustered into four genomic regions and acted over shorter distances (median 146.2 kb) than single-variant eQTLs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C92 demonstrate the complementary nature of HLA-type and single-variant eQTL analyses with appropriate statistical testing (FDR<0.05) and conditional analyses. The identification of 62 eGenes unique to HLA-type analysis (C85) and high correlation between the two approaches for overlapping genes (r=0.829, C87) support the claim of greater power. The spatial clustering and shorter-range effects are well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "HLA-type eQTLs capture regulatory variants acting on one or a few neighboring genes over relatively short distances, unlike single-variant eQTLs that span long distances due to LD. Different genes in each cluster are associated with different HLA types, indicating the clustering is not due to co-expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C97 provide mechanistic interpretation of HLA-type eQTL clustering patterns. The co-expression analysis (C95, with reference to supplementary figure) supports the interpretation that clustering is not due to correlated expression. The contrast between HLA-type and single-variant eQTL spatial patterns is well-documented and appropriately interpreted in the context of LD structure.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "RNF5 expression is negatively associated with all six 8.1AH HLA types at eight-digit resolution, and the authors postulate that downregulation of RNF5 expression is the likely mechanism underlying the association between 8.1AH and delayed bacterial colonization in CF patients.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C98-C103 and C114-C116 present the RNF5-8.1AH association with supporting expression data (C98-C99), but the proposed causal mechanism (C102, C103, C114) remains speculative. While the association is supported by data and the biological plausibility is established through cited literature on RNF5's role in CFTR function (C101, C112, C113), direct experimental validation of the proposed mechanism is lacking. The authors appropriately acknowledge alternative mechanisms (C115) while emphasizing RNF5's likely major role (C116).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6"
+    ],
+    "result": "The study created a comprehensive regulatory map of the MHC region using WGS from 419 individuals and RNA-seq from matched iPSCs, explored 4083 GWAS traits detecting 180 colocalizations, and demonstrated that HLA-type eQTL analysis has substantially greater power than single-variant analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C6 accurately summarize the main findings of the study, which are supported by the detailed results presented in subsequent claims. The sample sizes, number of traits analyzed, and comparative power assessment are all substantiated by the data presented throughout the manuscript.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "iPSCs are well-powered for eQTL mapping, have a distinct regulatory landscape relative to somatic tissues, and provide insights into regulatory variants active during early development, though future studies in other cell types could expand functional annotations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C108 are supported by appropriate citations to previous work (C105-C107). The limitation regarding cell-type specificity (C108) is appropriately acknowledged. The choice of iPSCs is justified both by prior work and by the biological rationale of studying early developmental regulatory variants.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C109",
+      "C117"
+    ],
+    "result": "Disease associations with HLA types may be driven not only by epitope differences but also by differential expression of HLA genes and associated non-HLA genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109 and C117 represent the main conceptual conclusion of the study, supported by the expression data (C44-C50), eQTL analyses (C51-C68), and colocalization results (C69-C80). This conclusion appropriately integrates multiple lines of evidence from the study, though it remains somewhat speculative regarding the relative contributions of epitope vs. expression differences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C104"
+    ],
+    "result": "The MHC region is highly associated with autoimmune and infectious diseases, is 4 Mb in size on chromosome 6p21.3, is highly polymorphic with strong LD, and the molecular mechanisms underlying HLA-disease associations are unclear, though several hypotheses exist including atypical antigen presentation, expression differences, and effects on non-HLA genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1 and C9-C16 and C104 represent established background knowledge appropriately cited from the literature. These claims provide context for the study and are well-supported by the cited references. The characterization of the knowledge gap (C13) appropriately motivates the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "The study cohorts consisted of 146 unrelated European individuals from HipSci and 273 individuals of diverse ethnic backgrounds from iPSCORE (including 183 from 56 families with 25 MZ twin pairs), with 231 matched fibroblast-iPSC pairs from 84 HipSci individuals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C26 describe the study cohorts with specific demographic details. These are straightforward descriptive claims about the study design that are well-documented in the methods and supplementary materials.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C118"
+    ],
+    "result": "The 8.1 ancestral haplotype is an important genetic modifier of CF lung disease, future GWAS using HLA types will likely uncover novel associations, and the data represent a valuable resource for identifying causal mechanisms and potential drug targets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110-C111 and C118 represent contextual information (C110 with appropriate citation) and forward-looking statements about the utility of the work (C111, C118). These are appropriately speculative statements about future directions and the value of the resource, supported by the demonstrated utility in the current study.",
+    "result_type": "MINOR"
+  }
+]

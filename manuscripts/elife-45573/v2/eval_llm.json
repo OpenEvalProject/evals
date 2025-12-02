@@ -1,0 +1,256 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2"
+    ],
+    "result": "The otolith afferent population exhibits bimodal distribution of resting discharge variability (CV*), allowing classification into 18 regular and 17 irregular afferents.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1 and C2 provide clear statistical evidence (Hartigan's dip test, p=0.04) for bimodality and explicit sample sizes. The bimodal distribution is consistent with established literature and provides the foundation for subsequent comparisons between afferent types.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C43",
+      "C44"
+    ],
+    "result": "Irregular afferents display greater sensitivity and stronger response nonlinearities than regular afferents, but paradoxically show lower trial-to-trial variability during naturalistic stimulation despite higher resting discharge variability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C6 provide converging evidence from multiple analyses (sensitivity, residual power spectrum, RR coherence, nonlinearity index) with appropriate statistical tests. Claims C43-C44 rule out firing rate differences as confounds. The finding that irregular afferents have lower trial-to-trial variability during stimulation despite higher baseline variability is counterintuitive but well-supported by the coherence analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C7"
+    ],
+    "result": "Irregular afferents transmit significantly more information about naturalistic translational self-motion than regular afferents (0.37 vs 0.24 bits/spk, p=0.04).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C7 provides mutual information analysis with appropriate statistical testing. The result is consistent with the greater sensitivity and lower trial-to-trial variability observed in irregular afferents. However, the modest p-value (0.04) and relatively small sample sizes (N=17-18) suggest this finding should be interpreted with appropriate caution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "Irregular afferents show maximum discrimination performance at 100 Hz (10 ms timescale), five-fold higher than stimulus frequencies, indicating precise spike timing coding. Regular afferents peak at ~20 Hz (50 ms), matching stimulus frequencies. Both discrimination performance and spike-timing precision correlate strongly with CV*.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C12 provide comprehensive analysis using Victor-Purpura metrics with strong correlations (R=0.89 and R=0.71, both p<0.001). The finding that irregular afferents discriminate optimally at frequencies well above the stimulus range is particularly compelling evidence for temporal coding. The correlation analyses establish CV* as a key predictor of coding strategy.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C13",
+      "C47"
+    ],
+    "result": "A leaky integrate-and-fire model reproduces experimental findings by co-varying sensitivity and variability parameters while maintaining constant ratio, demonstrating that combined increases in these parameters enable greater information transmission via precise spike timing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13 and C47 describe modeling results that successfully reproduce experimental observations. The model provides mechanistic insight by showing that the ratio of sensitivity to variability is critical. However, the model is relatively simple (leaky integrate-and-fire) and may not capture all biological complexity. The consistency with prior experimental findings (Jamali et al., 2013) strengthens the result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C52"
+    ],
+    "result": "Irregular afferents display significantly stronger phase locking to sinusoidal stimulation than regular afferents across three independent measures (all p<0.001), with phase locking increasing with frequency and strongly correlating with spike-timing precision (R=0.84-0.87, p\u22640.001).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C17 and C52 provide convergent evidence from multiple phase-locking indices and demonstrate strong correlation with spike-timing precision. Claim C15 shows model predictions match experimental data (all p>0.5), validating the modeling approach. The use of three independent PLI measures strengthens confidence in the phase-locking phenomenon. This establishes a mechanistic link between temporal coding and phase locking.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C18",
+      "C58",
+      "C59"
+    ],
+    "result": "Regular afferents show significantly better discriminability for static head orientations than irregular afferents across all angles tested (p<0.03), because lower resting discharge variability offsets their reduced sensitivity during static stimulation where strong nonlinearities are absent.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C18 provides clear statistical evidence across multiple angles. Claims C58-C59 provide mechanistic explanation based on the absence of strong nonlinearities during static stimulation. The logic is sound: without nonlinearities to reduce trial-to-trial variability, the baseline variability dominates, favoring regular afferents. This demonstrates complementary functional specialization between afferent types.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C53"
+    ],
+    "result": "Regular and irregular otolith afferents use different coding strategies: irregular afferents preferentially encode translational head motion (0.1-15 Hz) through rate and temporal codes, while regular afferents preferentially encode static head orientation through rate codes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45, C46, and C53 synthesize the major experimental findings into a coherent framework of functional specialization. These summary claims are well-supported by the convergent evidence from sensitivity, information transmission, discrimination performance, and static orientation experiments. This represents the central conclusion of the manuscript.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "The authors predict that regular afferents will transmit more information than irregular afferents at frequencies approaching zero (<0.1 Hz), and that irregular afferents will outperform regular afferents for dynamic head orientation changes above 0.1 Hz.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C54-C57 are predictions based on extrapolation from static orientation data (0 Hz) and dynamic motion data (\u22650.1 Hz). While the logic is reasonable given the experimental findings, these remain untested hypotheses. The authors acknowledge they could not reliably estimate information below 0.1 Hz due to stimulus duration limitations. Direct experimental validation is needed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C48",
+      "C49"
+    ],
+    "result": "Single regular otolith afferents achieve discriminability for static orientation (~2\u00b0) matching psychophysical thresholds, suggesting minimal pooling is required, whereas neural detection thresholds for translational motion (~10 cm/s\u00b2) exceed behavioral thresholds (~1 cm/s\u00b2), indicating pooling is necessary.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C24 cite appropriate behavioral literature for comparison. Claim C48 makes a reasonable inference about pooling requirements based on the threshold mismatch. Claim C49 logically follows from C24. However, the inference about pooling (C48, C49) assumes that threshold differences directly indicate pooling requirements, which may oversimplify the neural-to-behavioral transformation. The comparison is nonetheless valuable for contextualizing the physiological findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C51",
+      "C63",
+      "C64"
+    ],
+    "result": "The correlation between spike-timing precision and phase locking suggests common underlying mechanisms, likely involving low-threshold voltage-gated potassium channels present in both auditory and vestibular afferents.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C32 cite appropriate literature on ion channel mechanisms in auditory and vestibular systems. Claim C63 makes a reasonable inference from the observed correlation (C17). Claims C51 and C64 provide comparative context from auditory neuroscience. While the mechanistic proposal is plausible and well-grounded in literature, direct experimental evidence for the specific ion channel involvement in the observed phenomena is not provided in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Morphological differences between regular and irregular afferents (multiple distant hair cells vs. few proximal hair cells) likely contribute to functional differences, with the irregular configuration minimizing spatial/temporal integration and promoting precise firing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C34 cite established morphological differences from literature. Claim C35 makes a reasonable inference connecting morphology to function that is consistent with the experimental findings. However, this remains correlative; the study does not directly test whether morphological differences cause the observed functional differences. The inference is plausible but would benefit from experimental manipulation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "The vestibular system uses different coding strategies for rotational (canal) versus translational (otolith) motion, with canal afferents showing different relationships between regularity and detection thresholds, and only otolith afferents displaying sustained responses to static forces.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C40 appropriately cite comparative literature on canal afferents. These claims provide important context showing that the otolith findings represent a distinct coding strategy from the canal system. The comparisons are well-supported by citations and highlight the specificity of the otolith findings. This contextualizes the main results within broader vestibular neuroscience.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C65",
+      "C66"
+    ],
+    "result": "Einstein's equivalence principle creates an ambiguity between translational motion and head orientation that requires multisensory integration of otolith and canal signals, with downstream neurons in cerebellum and cortex capable of disambiguating these signals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C28 correctly describe the fundamental ambiguity problem and cite appropriate theoretical and experimental literature. Claims C29-C30 and C65-C66 cite relevant downstream processing studies. These claims provide essential theoretical context for understanding why different coding strategies might be needed. However, this study does not directly investigate downstream integration, so these remain contextual rather than primary findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C60",
+      "C61"
+    ],
+    "result": "Theoretical predictions for linear systems (that trial-to-trial variability increases with resting variability) do not hold when strong response nonlinearities are present, as occurs during naturalistic translational motion but not during static orientation changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C61 cite appropriate theoretical literature and make correct distinctions between linear and nonlinear regimes. This theoretical framework helps explain the counterintuitive finding that irregular afferents show lower trial-to-trial variability during dynamic stimulation. The logic is sound and well-supported by citations, though the study does not independently validate the theoretical predictions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C50",
+      "C62"
+    ],
+    "result": "Natural head movements contain frequencies up to 20 Hz and amplitudes up to 8G, regular and irregular afferents have distinct morphological/physiological features, irregular afferents show phase locking to high-frequency sound/vibration (200-3000 Hz), and sensitivity to static orientation may serve postural control.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims provide important contextual information supported by appropriate citations (C19-C21) or represent reasonable speculation (C50, C62). Claim C50 is explicitly speculative about functional significance. These claims help frame the study but are not primary experimental findings. They are well-supported by literature but represent background context rather than novel results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C67"
+    ],
+    "result": "The study used two male macaque monkeys aged 6-8 years with appropriate ethical approval, and employed CV* as a normalized measure of resting discharge variability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41, C42, and C67 provide essential methodological information. The sample size (N=2 animals, 35 total neurons) is typical for this type of single-unit neurophysiology but limits generalizability. CV* is an established, validated measure. Ethical approval is documented. These are straightforward methodological facts that are adequately supported.",
+    "result_type": "MINOR"
+  }
+]

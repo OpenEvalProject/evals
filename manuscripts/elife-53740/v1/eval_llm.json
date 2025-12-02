@@ -1,0 +1,309 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "The authors developed a novel visualization method called 'membranograms' that projects tomographic densities onto segmented membrane surfaces, producing topological views resembling AFM data but with the advantage of displaying both sides of membranes within cellular volumes and allowing dynamic tracking of densities at different distances from membrane surfaces.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C27-C30 collectively describe the development and capabilities of membranograms, supported by visual demonstrations in figures and videos. The method is validated through subtomogram averaging (C32) and successfully applied throughout the study to identify and map protein complexes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C66"
+    ],
+    "result": "The authors combined cryo-focused ion beam milling with cryo-electron tomography, leveraging advances in direct detector cameras and Volta phase plate technology, to visualize thylakoid membranes with molecular resolution within intact Chlamydomonas cells, overcoming limitations of their previous lower-resolution work.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C26 and C66 describe the technical approach and improvements over prior work (C2, C22, C23). The tomographic data clearly shows individual protein complexes (C25, C26), validating the achievement of molecular resolution in situ. Detailed methods (C81-C88) support reproducibility.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C90",
+      "C91",
+      "C93"
+    ],
+    "result": "Manual assignment of thylakoid-associated complexes was performed using membranograms by considering whether densities projected into stroma or lumen and comparing to known structures, with validation through subtomogram averaging of PSII and ATP synthase confirming correct identification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C32 describe the particle identification methodology, with C90-C91 noting confidence levels for different assignments. Subtomogram averaging validation (C32, C93) structurally confirms the membranogram-based identifications, though some complexes (PSI, cytb6f in non-appressed membranes) were assigned with lower confidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Quantification of 84 membrane regions from four tomograms revealed clear lateral heterogeneity: PSII was almost exclusively in appressed regions, PSI/ATP synthase/ribosomes were restricted to non-appressed regions, cytb6f was distributed relatively evenly, and poly-ribosome chains decorated non-appressed thylakoids, with photosynthetic complexes distributed relatively evenly within their respective domains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C38 present quantitative findings from systematic analysis of 84 membrane regions (Table 1), with visual support from figures showing membranograms and nearest-neighbor distance distributions (Figure 2\u2014figure supplement 4). The data clearly demonstrate spatial segregation of photosystems.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C42",
+      "C43",
+      "C45"
+    ],
+    "result": "The concentrations measured for photosynthetic complexes by cryo-ET were similar to previous biochemical estimates, AFM measurements, and freeze-fracture counts, with specific agreement for PSII dimers (1122 vs 1250 particles/\u03bcm\u00b2), total non-appressed densities (4907 vs 4500 particles/\u03bcm\u00b2), and ATP synthase (1652 vs 1770 particles/\u03bcm\u00b2).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C40, C42-C43, and C45 compare current measurements to multiple cited previous studies, showing good quantitative agreement across different techniques. This validates the accuracy of the cryo-ET measurements and demonstrates consistency with established literature values.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C44",
+      "C91",
+      "C98"
+    ],
+    "result": "The authors measured a PSII/PSI monomer ratio of 2.1 (or 2.14) by cryo-ET, falling within the range of previous spectroscopic estimates (0.8 to 2.1), though PSI was identified with lower confidence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C44 and C98 report the PSII/PSI ratio, but C44 and C91 explicitly note that PSI was not identified with high confidence. The acknowledged uncertainty in PSI assignment undermines confidence in this stoichiometric measurement, making the result uncertain despite falling within literature ranges.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C67",
+      "C68"
+    ],
+    "result": "The authors observed sharp boundaries between PSII and PSI that exactly matched divisions in thylakoid architecture, with no intermixing at transitions between appressed and non-appressed domains, finding no evidence for 'grana margins' in Chlamydomonas under the growth conditions examined.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C49 present observations from membranogram analysis (Figure 3) showing sharp segregation without intermixing. This contradicts the widely-held hypothesis of grana margins (C46) where photosystems intermix. However, C69 appropriately acknowledges that definitive conclusions require studying true grana in higher plants.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C50",
+      "C51"
+    ],
+    "result": "The authors propose that PSI is excluded from appressed membranes due to steric constraints (its ~3 nm stromal density cannot fit in the ~3 nm stromal gap), while PSII and LHCII may induce thylakoid stacking, creating a causal relationship that limits PSII to appressed membranes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C50-C51 present mechanistic hypotheses about lateral heterogeneity. C50 is supported by structural constraints and citations, but C51 is explicitly speculative. While the observations of strict segregation (C47-C48) are consistent with these mechanisms, the causal relationships remain unproven.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C72",
+      "C73"
+    ],
+    "result": "PSII complexes are randomly oriented within appressed thylakoids with ample spacing to accommodate C2S2M2-type and C2S2M2L2-type supercomplexes, with only ~3% in-plane overlap between C2S2M2L2 models, supporting the physiological relevance of these larger supercomplexes characterized primarily in vitro.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C57 and C72-C73 describe PSII organization based on membranogram analysis and modeling (Figure 4). The quantitative measurements of surface area coverage and minimal overlap support the conclusion that native membranes can accommodate large supercomplexes, though the ~3% overlap (C54) suggests some PSII may form smaller assemblies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "PSII complexes were almost completely interdigitated across the thylakoid lumen with only ~4% overlap of EM density, despite the ~9 nm lumen in light-adapted Chlamydomonas being large enough to permit face-to-face interactions, extending previous predictions from contracted spinach thylakoids.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C63 describe PSII interdigitation based on membranogram overlay analysis (Figure 4B, F). The quantitative measurement of ~4% overlap and lumen width measurement of ~9 nm are data-driven. The finding extends previous predictions (C62) to a different physiological state with larger lumen dimensions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C65",
+      "C75",
+      "C76"
+    ],
+    "result": "The overlap of PSII-to-PSII and LHCII-to-LHCII between adjacent appressed membranes was statistically indistinguishable from random, challenging the idea that thylakoid stacking is mediated by specific static interactions between LHCII or PSII proteins across the stromal gap.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65, C75-C76 present statistical analysis comparing experimental overlap to simulated random distributions (Figure 4D, F, Figure 4\u2014figure supplement 2). The finding that overlap is random contradicts specific interaction models for membrane stacking, though the authors appropriately note this challenges rather than disproves the hypothesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C78",
+      "C79"
+    ],
+    "result": "The mat3-4 strain used for cryo-ET has smaller cells that vitrify better, and comparative 77K fluorescence measurements showed mat3-4 and wild-type cells had similar spectra under the growth and freezing conditions used, validating that observations from mat3-4 are comparable to wild-type.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C79 justify the use of the mat3-4 strain. C79 is supported by quantitative 77K fluorescence data (Figure 1\u2014figure supplement 2) showing similar spectra between strains, validating that the mutant is representative of wild-type photosynthetic organization under the experimental conditions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C74"
+    ],
+    "result": "Semi-crystalline PSII arrays have been reported in isolated thylakoids from multiple species, but randomly arranged PSII has been observed more frequently, and it remains unproven whether semi-crystalline arrays form in native cellular environments or are isolation artifacts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C71 and C74 summarize the state of the field based on extensive citations. The observation that random arrangements are more common than ordered arrays in the literature, combined with the current study's finding of random orientation in native cells (C72), raises valid questions about the physiological relevance of crystalline arrays.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "Detailed experimental methods are provided including cell growth conditions (~90 \u00b5mol photons m\u207b\u00b2s\u207b\u00b9, TAP medium), cryo-FIB milling to produce ~100 nm lamellas, cryo-ET acquisition parameters (3.42 \u00c5 pixel size, ~100 e\u207b/\u00c5\u00b2 dose, \u00b160\u00b0 tilt range), with each tomogram from a separate cell serving as both biological and technical replicate, and four tomograms selected from 13 acquired based on quality criteria.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C89 provide comprehensive methodological details necessary for reproducibility. The specific parameters for growth, sample preparation, imaging, and data selection are clearly documented. The statement that each tomogram is both a biological and technical replicate (C87) is appropriate given each comes from a separate cell.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C92"
+    ],
+    "result": "Subtomogram alignment did not resolve the rotationally asymmetric stator region of ATP synthase, likely because the F1 region undergoes large movements that introduce structural heterogeneity in active, native complexes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C92 describes a limitation in the subtomogram averaging results with a reasonable mechanistic explanation supported by citation (Hahn et al., 2018). The interpretation that conformational heterogeneity in active complexes prevents resolution of asymmetric features is consistent with known ATP synthase dynamics.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C94",
+      "C95"
+    ],
+    "result": "The PSII nearest-neighbor distance is similar to previous AFM measurements of light-adapted spinach, and the ribosome distribution has a sharp peak at 20-25 nm likely corresponding to spacing in poly-ribosome chains, similar to ~22 nm spacing in bacterial poly-ribosomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C95 compare measured nearest-neighbor distances to literature values with appropriate citations. The interpretation of the ribosome peak (C95) as poly-ribosome spacing is supported by visual evidence of poly-ribosome chains (C37, Figure 2\u2014figure supplement 3) and comparison to bacterial systems.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C58",
+      "C59"
+    ],
+    "result": "Thylakoids are ~70% protein, and the spacing observed should allow room for rapid diffusion of plastoquinone between PSII and cytb6f within appressed membranes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C58 is supported by citation to previous literature. Claim C59 is an inference based on the observed spacing between complexes (C57) and known requirements for electron transport. The inference is reasonable given the quantitative measurements of complex coverage and spacing.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C64"
+    ],
+    "result": "Interdigitation could facilitate diffusion of plastocyanin through the lumen while enabling lumen contraction to block diffusion in response to changing light conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C64 presents a functional hypothesis from cited literature about the adaptive significance of interdigitation. While the observation of interdigitation is well-supported (C61), the proposed functional consequences remain speculative and are not tested in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C77"
+    ],
+    "result": "The study establishes methodological foundation to explore conservation of thylakoid molecular architecture with other phototrophs and dissect mechanisms adapting architecture to environmental conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C77 is a reasonable statement about the broader implications of the methodological advances (membranograms, in situ cryo-ET with molecular resolution). The successful application to Chlamydomonas demonstrates the approach can be extended to other organisms and conditions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C41"
+    ],
+    "result": "Very few PSII complexes were observed in non-appressed membranes, but it remains to be tested whether different conditions such as high light intensities may increase PSII abundance outside appressed domains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C41 describes an observation (very few PSII in non-appressed membranes) supported by the data in Table 1 (24 particles/\u03bcm\u00b2 vs 1122 in appressed), while appropriately noting that different growth conditions might alter this distribution. The caveat about untested conditions is scientifically appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C69"
+    ],
+    "result": "More definitive conclusions about grana margins will require investigation of true grana stacks found in higher plants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C69 appropriately acknowledges a limitation of the current study. While the absence of grana margins in Chlamydomonas is well-documented (C47-C49), the authors correctly note that higher plants have different thylakoid architecture (true grana) that may show different organization patterns.",
+    "result_type": "MINOR"
+  }
+]

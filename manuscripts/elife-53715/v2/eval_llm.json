@@ -1,0 +1,271 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C34",
+      "C35",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "The dominant peak frequency (PF) of brain oscillations decreases systematically along the posterior-anterior axis of the human cortex. This gradient was demonstrated using multiple statistical approaches: correlation analysis (r = \u22120.84, p<<0.001), individual-level analysis (84% of participants showing significant gradient), linear mixed-effects modeling (LMEM) with highly significant effects for Y-axis (t = \u221215.6, p<<0.001), and geodesic distance analysis from V1 (t = \u221218.9, p<<0.001). The gradient was consistent across three consecutive cortical windows along the posterior-anterior axis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C29-C32, C34-C35, C37-C39 provide converging evidence from multiple statistical analyses (correlation, LMEM, geodesic distance) with large sample size (N=187) and robust statistical significance. The use of LMEM appropriately accounts for inter-individual variability and the gradient is demonstrated at both group and individual levels (84% of participants). The windowed analysis (C38-C39) addresses potential spatial leakage concerns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C33",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "A secondary gradient of peak frequency was identified along the inferior-superior (Z) axis, with PF decreasing from inferior to superior regions (t = \u221210.4, p<<0.001). This appears to result from higher-order frontal areas (with lower PF) having higher z-coordinates compared to early sensory areas (with higher PF). A similar inferior-superior gradient was observed for cortical thickness.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33, C91-C93 are supported by LMEM analysis showing highly significant Z-axis effects. The interpretation linking this to frontal vs. sensory area positioning (C92) is reasonable given the spatial distribution shown in Figure 1. The parallel finding for cortical thickness (C93) provides convergent evidence. However, this is a secondary finding to the main posterior-anterior gradient.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "The 1/f aperiodic component of the power spectrum shows spatial gradients with slope decreasing (t = \u22124.3, p<<0.001) and offset increasing (t = 2.8, p<0.01) along the posterior-anterior direction. However, the posterior-anterior PF gradient remains highly significant (Y: t = \u22128.3, p<<0.001) after regressing out the 1/f parameters, indicating the PF gradient is largely independent of 1/f component gradients.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C43 demonstrate appropriate control for potential confounding by 1/f spectral properties. The residual analysis (C42) showing persistent PF gradient after removing 1/f effects is methodologically sound and strengthens the main finding. The statistical significance remains high even after this conservative correction, supporting the independence claim (C43).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Cortical thickness (CT) increases significantly along the posterior-anterior axis (Y: t = 49.7, p<<0.001) and shows a significant negative relationship with peak frequency (t = \u221213.8, p<<0.001). This relationship persists after removing the effect of spatial location (t = \u22126.9, p<<0.001), suggesting PF and CT are more directly related to each other than can be explained by spatial location alone, and that both follow cortical hierarchies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C49, C71-C73 provide strong evidence for the PF-CT relationship through multiple analyses. The residual analysis (C48) is particularly important as it demonstrates the relationship is not merely due to shared spatial dependencies. The LMEM approach appropriately accounts for inter-individual variability. The inference that both follow cortical hierarchies (C73) is reasonable given CT is an established proxy for hierarchical level (C4, C17-C18).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C50",
+      "C51"
+    ],
+    "result": "Along the anatomically defined visual hierarchy (V1, V2, V4, MT, DP, TEO, 7A), peak frequency decreases significantly (t = \u221210.1, p<<0.001) while cortical thickness increases significantly (t = 54.9, p<<0.001).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C51 demonstrate the PF-hierarchy relationship in a well-established anatomical hierarchy. The use of seven visual areas with known hierarchical ordering provides strong validation of the main hypothesis. The highly significant t-values and opposite directions for PF and CT are consistent with the global findings. This analysis addresses local hierarchies beyond the global posterior-anterior gradient.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Resting-state networks show significant effects on both PF (F = 264, p<<0.001) and CT (F = 746, p<<0.001). PF is significantly lower in association networks compared to sensory networks (t = \u221211.1, p<<0.001), while CT is significantly higher in association networks (t = 14.7, p<<0.001). These network differences remain significant after regressing out spatial location effects, indicating networks differ in PF and CT beyond their spatial positioning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C59 demonstrate that functional network organization relates to PF and CT gradients. The ANOVA approach is appropriate for categorical network variables. The location-independent analysis (C57-C59) is important as it shows network differences are not solely due to spatial positioning. However, the authors acknowledge this is partly expected given networks differ in location, particularly for sensory vs. association areas.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Data-driven identification of spectral peaks across the cortex delineates classical frequency bands (theta: 4-7.5 Hz, alpha: 8.5-13 Hz, beta: 15-34 Hz). Band-specific analysis reveals alpha PF decreases along the posterior-anterior direction (r = \u22120.87, t = \u221210, p<<0.001), while theta (r = 0.40, t = 7.4, p<<0.001) and beta (r = 0.9, t = 9.3, p<<0.001) PFs increase along the same direction. Secondary gradients along the z-axis were identified for theta and beta bands.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C64 provide novel frequency-specific gradient analysis. The data-driven frequency band identification (C60) is methodologically sound and validates traditional band definitions. The opposite gradients for alpha vs. theta/beta (C61-C63) are well-supported statistically and represent an important extension of the main finding. The secondary z-axis gradients (C64) are consistent with the overall PF analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "The study analyzed resting-state MEG data from 187 healthy participants (after excluding 10 with artifacts) from the MOUS dataset. The cortex was parceled into 384 regions-of-interest using a cortical parcellation based on the Conte69 atlas following Brodmann's divisions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C105 describe the dataset and methods. The sample size (N=187) is large for MEG studies. The exclusion criteria (C103) are reasonable. The parcellation approach (C104-C105) using an established atlas is appropriate. These methodological details are clearly documented and support reproducibility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C1",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "The human cortex exhibits spatial gradients in multiple structural features (cortical thickness, myelin content, gene expression, neuron density, neuronal connectivity) along the posterior-anterior axis, with these gradients attributed to differences in neurogenesis and representing a sensorimotor to transmodal organizational dimension.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C7-C13 establish the background context from prior literature. These are well-supported by citations to established research (Eickhoff et al., 2018; Felleman and Van Essen, 1991; Huntenburg et al., 2018; Hill et al., 2010; Burt et al., 2018). This background provides the rationale for investigating frequency gradients and is appropriately cited.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C4",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "Cortical areas are organized into hierarchical networks, with hierarchies established based on microstructural differentiation and feedforward/feedback connections. Cortical thickness serves as a noninvasive proxy for hierarchical level, mirroring both global and local hierarchical organization in visual, auditory, and somatosensory areas.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C14-C18 establish cortical thickness as a valid proxy for hierarchical organization, which is central to the study's interpretation. This is well-supported by citations (Felleman and Van Essen, 1991; Markov et al., 2014; Jasmin et al., 2019; Wagstyl et al., 2015). The use of CT as a hierarchy proxy is justified by prior literature and enables the key PF-hierarchy analyses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "Cortical areas follow hierarchical ordering in their temporal dynamics, with sensory areas showing faster intrinsic fluctuations and shorter timescales (enabling tracking of environmental changes) while frontal areas show slower fluctuations and longer timescales (enabling information integration). These timescale gradients have been demonstrated in visual and auditory processing and are determined by synaptic transmission time constants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C22, C88-C90 establish the temporal dynamics background that motivates investigating frequency gradients. These are well-supported by citations (Murray et al., 2014; Himberger et al., 2018; Jasmin et al., 2019; Duarte et al., 2017; Chaudhuri et al., 2015). This provides theoretical context linking anatomical gradients to temporal/frequency properties.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C69",
+      "C96"
+    ],
+    "result": "This study represents the first comprehensive demonstration of frequency gradients across the human cortex using a large resting-state MEG dataset, providing a comprehensive statistical model of frequency gradients in both frequency and space. It is also the first MEG study to identify frequency bands from peak frequencies in a large dataset.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65, C66, C69, C96 assert the novelty of the work. While prior studies showed regional frequency differences (C67-C68), the comprehensive spatial mapping with robust statistics across the entire cortex in a large sample is novel. The claim is appropriately qualified by acknowledging prior related work (Zhang et al., 2018 in ECoG; Groppe et al., 2013 in smaller ECoG sample). The novelty claims are reasonable given the scope and methodology.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C32",
+      "C39",
+      "C101"
+    ],
+    "result": "The dominant frequency changes systematically and globally along spatial and hierarchical gradients, establishing a new structure-function relationship for brain oscillations that may underlie hierarchical specialization. Peak frequencies form a spatial gradient following both global posterior-anterior hierarchy and local anatomical hierarchies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C6, C32, C39, C101 represent the main conclusions synthesizing the empirical findings. The systematic and global nature of the gradient (C5, C32, C39) is well-supported by the multiple analyses. The claim of a 'new structure-function relationship' (C6) is reasonable given the novel comprehensive demonstration. However, the functional significance ('may underlie hierarchical specialization', C6) is speculative and appropriately qualified with 'may'.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C70",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C94",
+      "C95",
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "The findings are consistent with prior invasive ECoG studies showing posterior-anterior frequency gradients, with local gradients reported in auditory and visual processing. Frequency gradients may relate to traveling waves, neural communication along cortical hierarchies, memory consolidation, and representational integration. Alternative explanations include laminar organization with distinct frequency profiles across cortical layers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C70, C74-C87, C94-C95, C97-C100 discuss interpretation and context. While the consistency with prior work (C70, C74, C83-C84, C86, C94) is well-cited, many functional interpretations are speculative (C75, C77, C81, C85, C97-C99) and appropriately qualified with terms like 'could', 'might', 'may'. The alternative laminar explanation (C99-C100) is important to mention but remains untested. These represent reasonable discussion points but lack direct empirical support from the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C67",
+      "C68"
+    ],
+    "result": "Brain oscillations are a prominent feature of brain activity with a central role in coordinating neuronal activity. Spectral activity patterns are characteristic for each brain area, with the anatomical structure of a brain area shaping its rhythmic activity. Prior MEG/EEG studies showed alpha activity strongest in occipito-parietal areas, beta in sensorimotor areas, and theta/delta in widespread areas including frontal cortex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C28, C67-C68 establish the oscillations background from prior literature. These are well-supported by citations (Fries, 2005; Wang, 2010; Keitel and Gross, 2016; Chiang et al., 2011; Voytek et al., 2010; Groppe et al., 2013; Hillebrand et al., 2016). This provides the rationale for investigating spatial organization of oscillation frequencies.",
+    "result_type": "MINOR"
+  }
+]

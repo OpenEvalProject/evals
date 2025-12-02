@@ -1,0 +1,270 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "TRPC3 is prominently expressed in the olivocerebellar circuit, specifically in Purkinje cells and unipolar brush cells, with higher expression in zebrin-negative (Z-) PCs in the anterior cerebellum compared to zebrin-positive (Z+) PCs in the posterior cerebellum. TRPC3 is localized to the membrane and synaptosomes and shows a pattern largely complementary to zebrin II in the vermis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C7 provide converging anatomical evidence from immunohistochemistry, western blotting, and subcellular fractionation. The complementary expression pattern to zebrin is demonstrated through quantification in multiple cerebellar regions (C3, Figure 1C-D), confirmed by western blot (C4), and validated with appropriate antibody controls. The subcellular localization data (C6-C7) is consistent with TRPC3's known function as a membrane channel.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "Two complementary mouse models were generated and validated: TRPC3Mwk/- gain-of-function mice with neurodegeneration and ataxia, and pcp2Cre;TRPC3fl/fl loss-of-function mice with PC-specific TRPC3 deletion that show no overt motor deficits. Western blotting and immunostaining confirmed reduced TRPC3 protein levels specifically in PCs of pcp2Cre;TRPC3fl/fl mice without affecting UBCs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C12 establish the genetic models with appropriate validation. The PC-specific deletion is confirmed by western blot with statistical significance (C11: p=0.034 anterior, p=0.028 posterior) and immunostaining showing preserved TRPC3 in UBCs (C12). The gain-of-function model is well-characterized in prior literature (C8-C9). However, the global nature of the TRPC3Mwk/- mutation (affecting UBCs and other cell types) is a limitation acknowledged by the authors.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "In vitro electrophysiology demonstrates that TRPC3 selectively controls firing rate and intrinsic excitability of Z- PCs but not Z+ PCs. Gain-of-function TRPC3Mwk/- mice show increased firing in Z- PCs (84.5\u00b136.2 Hz vs 58.4\u00b119.6 Hz, p=0.020), while loss-of-function pcp2Cre;TRPC3fl/fl mice show decreased firing in Z- PCs (44.1\u00b115.6 Hz vs 55.4\u00b121.8 Hz, p=0.009), with no effects on Z+ PCs in either model. However, TRPC3 ablation does not completely eliminate the Z-/Z+ firing rate difference.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C19 provide robust in vitro evidence with appropriate statistical tests and adequate sample sizes (n\u226510 per group based on power analysis). The bidirectional effects (gain- and loss-of-function) strengthen causality. The selective effect on Z- PCs is consistently demonstrated across multiple parameters (firing rate, CV, CV2, intrinsic excitability). The observation that TRPC3 ablation doesn't fully eliminate Z-/Z+ differences (C16) is appropriately interpreted as TRPC3 being a major but not exclusive contributor. Other physiological parameters remain unaffected (C19), supporting specificity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "In vivo extracellular recordings confirm that TRPC3 selectively affects simple spike firing rates in Z- PCs in the intact circuit. TRPC3Mwk/- mice show increased Z- PC firing (110.0\u00b122.6 Hz vs 89.1\u00b115.3 Hz, p<0.001), while pcp2Cre;TRPC3fl/fl mice show decreased Z- PC firing (74.4\u00b118.6 Hz vs 88.5\u00b117.4 Hz, p=0.006), with no effects on Z+ PCs. Unlike in vitro, firing regularity (CV, CV2) was not consistently affected in vivo in loss-of-function mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C24 extend in vitro findings to the intact circuit with appropriate sample sizes (n\u226512 per group). The selective effect on Z- PC firing rate is replicated in vivo, strengthening the conclusion. The difference between in vitro and in vivo regularity measures (C23 vs C17) is appropriately attributed to physiological synaptic inputs masking intrinsic effects. The elevated CV in TRPC3Mwk/- mice for both Z- and Z+ PCs (C24) is discussed as potentially reflecting UBC degeneration affecting Z+ regions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C25",
+      "C26"
+    ],
+    "result": "Two-photon imaging-guided recordings in pcp2Cre;TRPC3fl/fl;EAAT4GFP/- mice targeting adjacent Z- and Z+ bands in lobules IV-VI show that TRPC3 ablation reduces Z- PC firing rate (36.5\u00b123.2 Hz vs 72.7\u00b126.5 Hz, p<0.001) to levels similar to Z+ PCs (36.6\u00b119.5 Hz), supporting the possibility that TRPC3 is solely responsible for the firing rate difference in some cerebellar areas.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C26 provide critical evidence using targeted recordings that control for regional differences. The similar firing rates of Z- and Z+ PCs after TRPC3 deletion (both ~36 Hz) in these specific regions suggests TRPC3 can fully account for the difference in some areas. This contrasts with lobules I-III data (C22) where a difference persists, appropriately interpreted as reflecting additional regional heterogeneity. The increased irregularity (CV) in Z- PCs (C25) is consistent with other loss-of-function data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "Inducible deletion of TRPC3 in adult pcp2CreERT2;TRPC3fl/fl mice produces effects on Z- PC simple spike firing rate (72.9\u00b19.1 Hz vs 86.5\u00b110.9 Hz, p<0.001) similar to constitutive deletion, demonstrating that TRPC3-dependent effects are independent of cerebellar development or developmental compensation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C29 address a critical alternative explanation using an inducible model. The similar magnitude of effect in adult-induced deletion compared to developmental deletion (compare C28 to C21) supports that the phenotype is not due to developmental compensation. Complete TRPC3 ablation is confirmed by immunostaining (C27). This strengthens the conclusion that TRPC3 directly controls adult PC firing properties.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "TRPC3 manipulations affect complex spike activity selectively in Z- PCs. Chronic TRPC3 loss-of-function (pcp2Cre;TRPC3fl/fl and pcp2Cre;TRPC3fl/fl;EAAT4GFP/-) decreases complex spike firing rate in Z- PCs (p=0.016 and p=0.002 respectively), while acute adult deletion (pcp2CreERT2;TRPC3fl/fl) does not affect complex spike rate (p=0.352). TRPC3 manipulation also alters complex spike-simple spike interactions, with Z- PCs showing more suppression in gain-of-function and more facilitation in loss-of-function mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C35 demonstrate circuit-level effects beyond the PC itself. The selective effect on Z- PC complex spikes in chronic but not acute deletion (C31-C32) suggests developmental or long-term circuit adaptations involving the olivocerebellar loop. The CF-pause changes (C33) are consistent with altered simple spike rates. The CS-SS interaction changes (C34-C35) suggest compensatory mechanisms. However, the interpretation is complicated by TRPC3 expression in inferior olive and UBCs (acknowledged in discussion), making it difficult to definitively attribute complex spike changes to PC-autonomous effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "pcp2Cre;TRPC3fl/fl mice show no deficits in general locomotion (Erasmus Ladder), baseline compensatory eye movements (OKR, VOR, VVOR), or VOR adaptation (gain increase: F=0.012, p=0.913; gain decrease: F=0.252, p=0.621; phase reversal: F=0.006, p=0.942), despite altered PC firing properties.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C40 establish behavioral specificity through negative results. The lack of general motor deficits (C36-C37) and intact VOR adaptation (C38-C40) are important controls showing that TRPC3 deletion doesn't cause global cerebellar dysfunction. Adequate sample sizes were used (n=11-13 per group based on power analysis). The intact VOR adaptation is particularly important as it's controlled by Z+ flocculus, supporting the cellular specificity of TRPC3 effects. Statistical tests are appropriate (ANOVA for repeated measures).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "pcp2Cre;TRPC3fl/fl mice show impaired eyeblink conditioning during the first week of training but eventually reach control levels of conditioned responses with extended training. The deficit cannot be explained by impaired eyelid closure ability (UR timing: p=0.765) or reduced locomotor activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C43 demonstrate behavioral specificity with a deficit in eyeblink conditioning (linked to Z- modules) but not VOR adaptation (linked to Z+ modules). The delayed but not absent learning (C42) suggests TRPC3 optimizes but is not essential for this behavior. Appropriate controls rule out motor execution deficits (C43). Sample sizes are adequate (n=15 per group). However, the mechanistic link between reduced Z- PC firing and impaired conditioning remains speculative (discussed in C73-C78).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "The cellular heterogeneity in TRPC3 expression and consequent differentiation in PC activity affects animal behavior in a module-specific manner. TRPC3 activity is selectively required to optimize cerebellum-dependent learning in Z- modules (eyeblink conditioning) but not Z+ modules (VOR adaptation).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C47 synthesize the major findings linking molecular heterogeneity to cellular physiology to behavior. The dissociation between eyeblink conditioning (impaired) and VOR adaptation (intact) in the same animals provides strong evidence for functional modularity. This is supported by the anatomical distribution of TRPC3 (higher in Z- regions including eyeblink areas, lower in Z+ flocculus) and the selective electrophysiological effects on Z- PCs. The conclusion is appropriately cautious, stating TRPC3 'optimizes' rather than is 'essential' for the behavior.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C53"
+    ],
+    "result": "TRPC3 is a major but not exclusive contributor to Z-/Z+ PC firing rate differences, with other proteins in the TRPC3 activation pathway (particularly mGluR1b) likely contributing to the selective effects on Z- PCs despite TRPC3 expression in all PCs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C49, C53 appropriately interpret the incomplete elimination of Z-/Z+ differences after TRPC3 deletion (C16, C22) and the selective effects despite ubiquitous TRPC3 expression. The inference that mGluR1b (expressed complementary to zebrin) works with TRPC3 to drive differential function is well-supported by prior literature and the expression pattern data. This represents a mechanistic hypothesis that explains the data but would require additional experiments to definitively test.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C67",
+      "C68"
+    ],
+    "result": "Complex spike rate changes in TRPC3 mutants suggest effects on the olivocerebellar loop. In chronic loss-of-function mice, reduced simple spike rate in Z- PCs leads to lower complex spike rate, potentially through disinhibition of the nucleo-olivary pathway. These effects are absent in acute adult deletion, suggesting a developmental component to the simple spike-complex spike relationship.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C59-C62, C67-C68 propose a circuit-level mechanism for complex spike changes. The olivocerebellar loop hypothesis (C60) is well-established, but the interpretation is complicated by TRPC3 expression in inferior olive neurons (C63), making it impossible to determine if complex spike changes are due to PC output effects or direct olivary effects. The developmental component inferred from the acute deletion experiment (C62, C68) is interesting but the mechanism remains unclear. The opposite direction of complex spike changes in gain-of-function mice (C61) further complicates interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "The molecular machinery underlying TRPC3 function in PCs involves differential expression of mGluR1 isoforms (mGluR1b complementary to zebrin, mGluR1a ubiquitous), with Z+ PCs expressing EAAT4 that hampers mGluR1-dependent processes and Z- PCs expressing PLC\u03b24 that works with mGluR1a. These expression patterns may enhance PF-PC LTD probability in Z- PCs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C58 synthesize prior literature to provide mechanistic context for the TRPC3 effects. The citations are appropriate and the expression patterns are well-established. However, C58 is explicitly speculative ('may enhance') and the functional consequences of these expression patterns on LTD in adult mice remain to be directly tested. The claims accurately represent the state of knowledge but don't present new experimental data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "TRPC3 is expressed in UBCs and inferior olivary neurons. UBCs fire with high regularity and provide mossy fiber input to lobule X (Z+), while inferior olivary neurons directly control complex spike rate and regularity. UBCs degenerate early in TRPC3Mwk/- mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C66 establish important context for interpreting the effects in TRPC3Mwk/- mice. TRPC3 expression in UBCs is confirmed by the authors' immunostaining (C63, Figure 1), while the functional roles of UBCs and olivary neurons are well-established in cited literature (C64-C65). UBC degeneration in TRPC3Mwk/- is established knowledge (C66). This information is critical for understanding why Z+ PCs show some effects in the gain-of-function model (e.g., increased CV in C24) despite low TRPC3 expression.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Eyeblink conditioning is linked to Z- modules in the anterior cerebellum where PC activity is high at rest and decreases correlate with conditioned responses, while VOR adaptation is controlled by the Z+ flocculus where PC activity is lower at rest and increases correlate with gain increase adaptation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C72 establish the anatomical and physiological basis for the behavioral dissociation. These are well-established facts from prior literature with appropriate citations. The differential resting rates and plasticity directions in the two systems provide a mechanistic framework for understanding why TRPC3 (which increases Z- PC firing) would affect eyeblink conditioning but not VOR adaptation. This represents accurate synthesis of prior work rather than new findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Three potential mechanisms could explain the eyeblink conditioning deficit in pcp2Cre;TRPC3fl/fl mice: (1) reduced Z- PC firing rate may occlude the suppression normally associated with conditioned responses, (2) abolished PF-PC LTD due to TRPC3 loss, or (3) impaired intrinsic plasticity. However, prior work showing intact eyeblink conditioning without PF-PC LTD argues against mechanism 2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C73-C78 are explicitly speculative ('tempting to speculate', 'could be', 'third option could be') and represent hypotheses rather than tested mechanisms. The occlusion hypothesis (C74) is reasonable given the reduced baseline firing, but untested. The LTD hypothesis (C75) is contradicted by prior work (C76), appropriately noted. The intrinsic plasticity hypothesis (C78) is plausible but also untested. These represent reasonable directions for future work but don't constitute supported results. The authors appropriately present these as speculation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Proper cerebellar function requires at least two distinct operational modes with different molecular machineries (including TRPC3 as a major factor) to differentially control sensorimotor integration in downstream circuits requiring opposite polarity control. The functional organization may involve sets of Z- and Z+ bands controlling individual movement directions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C81 synthesize the findings into a broader conceptual framework. The conclusion that cerebellar function requires multiple operational modes (C81) is well-supported by the combined anatomical, physiological, and behavioral data showing module-specific effects. The citations to comparative work in pigeons (C80) and tracing studies (C79) provide additional context. However, the specific functional organization (e.g., how Z- and Z+ bands coordinate) remains speculative. The conclusion is appropriately broad and acknowledges uncertainty.",
+    "result_type": "MAJOR"
+  }
+]

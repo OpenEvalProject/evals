@@ -1,0 +1,260 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "The authors quantified profilin and actin concentrations in various mammalian cell types using western blots and cell volume measurements. They found profilin-1 is the dominant isoform (profilin-2 is not substantial in most cells), profilin levels are especially high in immune cells, actin always exceeds profilin concentration, and estimated profilin-actin concentrations around 50-200 \u03bcM depending on cell type.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C16 are well-supported by quantitative western blot data (Figure 1, Figure 1\u2014figure supplement 1A, Figure 1\u2014figure supplement 2) combined with cell volume measurements. The methodology is clearly described and appropriate controls (protein standards) were used. The estimation of profilin-actin concentration is based on measured data and reasonable assumptions about binding affinities.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "The authors characterized mammalian cytoplasmic actin polymerization kinetics and binding affinities of monomer-binding proteins. They found that actin polymerization without profilin shows linear concentration dependence up to 10 \u03bcM with association rates comparable to other organisms, thymosin-\u03b24 binds weakly (KD ~1.2 \u03bcM), and profilin binds exceptionally strongly (KD ~18 nM) to ATP-bound actin monomers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C20 are supported by experimental data shown in Figure 1\u2014figure supplement 1C-E. The linear polymerization kinetics, binding affinities measured by fluorescence anisotropy and fluorescence quenching assays, and comparisons to literature values provide strong evidence. The methods are appropriate and well-controlled.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "The authors discovered that actin filament elongation from profilin-actin shows saturation kinetics at physiological concentrations. Linear growth was observed at low concentrations (<10 \u03bcM), but elongation rates deviated from linearity at moderate concentrations (>20 \u03bcM) and saturated at high concentrations (\u2265100 \u03bcM) to plateau at ~500 monomers s\u207b\u00b9. This saturation was independent of surface tethering, filament-binding probe, or actin/profilin isoform, and was confirmed in microfluidic assays.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C28 are strongly supported by extensive TIRFM data (Figure 2B-C, Figure 2\u2014figure supplement 1) and microfluidic experiments (Figure 2D-F). Multiple controls rule out artifacts from surface attachment, profilin accumulation, or experimental setup. The Michaelis-Menten fit to the data is appropriate and the conclusion that elongation is kinetically limited rather than diffusion-limited is well-justified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "The authors propose that profilin release from the barbed end is required for elongation and may be rate-limiting. Structural models suggest profilin sterically hinders binding of the next monomer. Profilin binds much more weakly to filament barbed ends than monomeric actin, and profilin dissociation from monomers (koff = 0.77 s\u207b\u00b9) is much slower than maximal elongation rates (~500 s\u207b\u00b9), suggesting structural changes in the terminal actin protomer trigger profilin release.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C32 are supported by structural modeling (Figure 1B), literature citations, and kinetic measurements (Figure 3\u2014figure supplement 1B-D). The inference that structural changes are required for profilin release (C32) is logical given the kinetic data, though it remains an inference rather than direct observation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "The authors used profilin mutants to test whether profilin dissociation limits elongation. Single point mutants (E82A, R88K) reduced binding affinity ~1.5-4 fold, while a double mutant (K125E+E129K) increased affinity ~5-fold. These changes were due to altered dissociation rates, not association rates. Critically, the maximal elongation rate scaled with the monomer dissociation rate of profilin\u2014weakly-binding profilins increased growth rates while tight-binding profilin reduced them. The authors conclude that profilin dissociation from the barbed end imposes a kinetic limit to elongation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C42 are strongly supported by binding affinity measurements (Figure 3C, F) and elongation rate measurements with mutant profilins (Figure 3D-F). The correlation between dissociation rates and maximal elongation rates provides compelling evidence for the mechanistic conclusion. The analytical modeling (C39) adds further support. This is a key result demonstrating the rate-limiting step.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "The authors generated ATPase-deficient actin (Q137A+D154A+H161A) to test whether ATP hydrolysis is required for profilin release. This mutant retained nucleotide binding, polymerization ability, and profilin affinity, but was unable to hydrolyze ATP even after polymerization. Importantly, ATPase-deficient actin elongated filaments at nearly the same rates as wildtype actin at saturating profilin-actin concentrations, demonstrating that profilin release does not require ATP hydrolysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C47 are well-supported by multiple assays including HPLC endpoint measurements (Figure 4B), time-resolved ATPase assays (Figure 4C), binding measurements (Figure 4\u2014figure supplement 1A), and elongation rate measurements (Figure 4D-E). The controls are appropriate and the conclusion that ATP hydrolysis is not required for profilin release is clearly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "The authors tested how formins affect actin assembly at saturating profilin-actin concentrations. mDia1 strongly accelerated growth at limiting concentrations as expected, but also exhibited saturation at elevated profilin-actin levels, converging to a 4-fold higher maximal rate than free ends. mDia2 and DAAM1 also accelerated elongation at both limiting and saturating concentrations, though less strongly than mDia1. The relative rate enhancement decreased only slightly with substrate concentration, and formins slightly broadened the concentration-insensitive regime.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C53 are supported by extensive TIRFM data with multiple formins (Figure 5B-C, Figure 5\u2014figure supplement 1A-B). The demonstration that formins accelerate elongation even at saturating profilin-actin concentrations is a key finding that challenges previous models. Multiple formin constructs were tested, strengthening the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "The authors created mDia1/mDia2 chimeras by swapping FH1 and FH2 domains to identify which domain determines maximal elongation rate. Both chimeras accelerated filament growth but generated distinct maximal rates. mDia2FH1-mDia1FH2 exhibited similar rates as mDia1, while mDia1FH1-mDia2FH2 was comparable to mDia2, demonstrating that the FH2 domain is responsible for setting the maximal rate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C57 are supported by data from chimeric formin constructs (Figure 5E). The domain-swapping experiment is well-designed and the results clearly demonstrate that the FH2 domain, not the FH1 domain, determines maximal elongation rate. This is an important mechanistic insight.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "The authors tested constraints on formin-mediated growth using ATPase-deficient actin and tight-binding profilin with mDia1. ATPase-deficient actin grew at rates indistinguishable from wildtype, while tight profilin binding inhibited growth. This demonstrates that formin-mediated elongation at saturation is limited by profilin release, not nucleotide hydrolysis. The authors conclude that formins have two distinct polymerase activities: promoting profilin-actin binding and accelerating profilin release via the FH2 domain, which are matched to provide constant rate enhancement over a wide concentration range, allowing formins to act as pacemakers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C63 are supported by experimental data (Figure 5F, Figure 5\u2014figure supplement 1C) and integrate well with previous results. The demonstration that ATPase-deficient actin works normally while tight-binding profilin inhibits growth provides strong evidence for the mechanism. The conceptual framework of formins as pacemakers is well-justified by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "The authors measured formin velocities in living cells to test whether the in vitro mechanism operates in vivo. mDia1 and mDia2 moved with distinct speeds that were similar between HT1080 and EL4 cell types and strikingly close to their maximal in vitro velocities. In profilin-actin overexpressing cells (2-3-fold increase), only marginal increases in formin velocities were observed (20% and 12% for mDia1 and mDia2). Formin velocities did not scale linearly with profilin-actin concentration but fit saturation kinetics similar to in vitro. The authors conclude that formin-mediated elongation in cells is resilient to variations in profilin-actin levels, closely matches maximal in vitro rates, and that cells maintain profilin-actin concentrations near saturation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C75 are supported by single-molecule TIRFM in living cells (Figure 6) and overexpression experiments with careful quantification of protein levels. The close match between in vivo and in vitro velocities, the minimal response to overexpression, and the saturation kinetics in cells provide strong evidence that the in vitro mechanism operates in vivo. The controls for single-molecule imaging (Figure 6\u2014figure supplement 1) and protein quantification are appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "The authors conclude that actin filament elongation under physiological conditions is not limited by diffusional encounter between subunits and filament ends, but by a kinetic mechanism that provides robustness by buffering filament growth against changes in polymerizable actin concentration. Profilin release is very rapid but kinetically limits elongation, and the structural monomer-to-filament transition is likely even faster and independent of ATP hydrolysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C79 represent the main conclusions of the paper and are well-supported by the comprehensive set of in vitro and in vivo experiments. The conclusion that elongation is kinetically limited rather than diffusion-limited is strongly supported by the saturation kinetics. The robustness mechanism is demonstrated by the in vivo experiments. These are appropriate interpretations of the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "The authors discuss the implications of their findings for profilin binding in cells. They note that major structural rearrangements in actin upon polymerization are independent of nucleotide state changes (supported by recent literature). Profilin binds very weakly to ATP-bound filament barbed ends (KD >20 \u03bcM) but very tightly to ATP-loaded monomers (KD <0.1 \u03bcM), and should out-compete other monomer-binding proteins as long as the soluble actin pool is ATP-bound. They conclude that growing filament ends in cells are decorated with profilin through an active, polymerization-coupled mechanism rather than equilibrium binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C84 are supported by the experimental data in the manuscript and appropriate literature citations. The inference about profilin decoration of growing ends (C84) is a reasonable conclusion based on the kinetic mechanism demonstrated. These claims provide important context for understanding the cellular implications.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "The authors conclude that formins stimulate filament growth even at physiological profilin-actin levels by promoting profilin release through their FH2 domain. They propose that profilin and formin mutually destabilize each other at barbed ends, as profilin is known to inhibit formin end-binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C87 are supported by the formin experiments (Figure 5) and appropriate literature citations. The mutual destabilization model (C87) is a reasonable inference based on the data and prior knowledge, though the exact mechanism remains to be determined structurally.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "The authors discuss why observed growth speeds are faster than actin network movement in cellular protrusions. They speculate that compressive forces might slow down filaments pushing against membranes and might change the rate-limiting step of filament growth. Brownian ratchet models predict compression should inhibit profilin-actin binding, so profilin-actin concentration could still affect growth of filaments under compressive load, such as Arp2/3-generated networks. This might explain why rapidly moving cells contain higher profilin-actin levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C88-C93 are largely speculative (C89, C90, C92, C93 are explicitly marked as speculation in the evidence). While the speculation is reasonable and supported by appropriate citations (C88, C89, C91), these claims represent hypotheses for future work rather than demonstrated results. The mismatch between in vitro/in vivo speeds and cellular protrusion speeds is noted but not experimentally resolved.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "The authors provide background on profilin-actin as the physiological substrate of filament growth and formin function. Profilin shields the barbed end of actin monomers to suppress nucleation, profilin-actin complexes bind to exposed filament barbed ends for growth, and the speed of elongation over a limited concentration range fits a linear model. However, actin elongation has only been studied at low, non-physiological levels until now. Formins bind barbed ends via FH2 domains and recruit profilin-actin through FH1 domains, with polymerase activity thought to arise from increasing binding frequency. Binding of profilin-actin to barbed ends occludes the binding site and profilin must be released for elongation to continue.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C10 represent established background knowledge supported by appropriate literature citations. These claims set up the context and motivation for the current study. C5 is a statement about the state of the field that motivates the current work.",
+    "result_type": "MINOR"
+  }
+]

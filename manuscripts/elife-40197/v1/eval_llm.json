@@ -1,0 +1,294 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C21",
+      "C22"
+    ],
+    "result": "Ascl1 alone is sufficient to induce neuronal mCH methylation, reaching 0.28% in Ascl1 22d cells. BAM (Ascl1+Brn2+Myt1l) produces higher mCH levels (0.57%) with a global pattern more similar to mature cortical neurons, including enrichment of mCAC context and inverse correlation with gene expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C14-C19, C21-C22 are well-supported by MethylC-seq data showing progressive mCH accumulation during reprogramming. Statistical analysis (Spearman r=-0.479, p<2.2\u00d710^-308) confirms inverse correlation with gene expression. The comparison to 2-week-old mouse cortex provides appropriate biological context.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C29",
+      "C30"
+    ],
+    "result": "BAM reprogramming produces a global mCH landscape more similar to mature cortical neurons than Ascl1-only reprogramming. Hierarchical and K-means clustering show BAM 22d cells cluster with mature neurons, with appropriate mCH depletion at neuronal/synaptic genes (Clusters 15-16) and enrichment at myogenic genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C27, C29-C30 are supported by multiple complementary analyses (hierarchical clustering, K-means clustering, gene ontology enrichment). The correlation with transcriptome data strengthens the interpretation. However, the claim would benefit from quantitative metrics of similarity beyond visual clustering.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C107",
+      "C108",
+      "C109",
+      "C111"
+    ],
+    "result": "mCH preferentially accumulates at two gene groups: constitutively repressed genes (regardless of expression dynamics) and actively expressed genes undergoing developmental downregulation. This pattern is conserved in cerebellar development, and Dnmt3a knockout causes upregulation of developmentally downregulated genes, supporting a repressive role for mCH.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C40, C107-C109, C111 are well-supported by integrative analysis of methylome and transcriptome data across reprogramming stages and cerebellar development. Statistical tests are provided (p=1.2\u00d710^-81, p=1.3\u00d710^-12). The reanalysis of published Dnmt3a knockout data provides independent validation of the repressive function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C41",
+      "C43",
+      "C44"
+    ],
+    "result": "Dnmt3a ablation unexpectedly causes downregulation of developmentally upregulated genes. This may be explained by reduced hmCG accumulation at these genes, as hmCG requires mCG as substrate and developmentally upregulated genes show significantly higher hmCG levels than downregulated genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C41, C43-C44 present an unexpected finding with a speculative mechanistic explanation. While the observation is statistically significant (p=6\u00d710^-15) and hmCG enrichment is demonstrated (p=1.3\u00d710^-6, p=2.4\u00d710^-55), the proposed mechanism lacks direct experimental validation. Testing whether TET enzyme activity or hmCG levels are affected in Dnmt3a knockout would strengthen this result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C3",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Direct reprogramming induces promoter hypermethylation at genes repressed during conversion, particularly fibroblast-specific genes enriched for extracellular matrix and collagen functions. This hypermethylation is significantly greater in iN cells than in vivo neurons and shows strong inverse correlation with gene expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C45-C48, C50-C52 are supported by genome-wide methylation analysis with statistical validation (p<2.9\u00d710^-7). The identification of 4,496 hypermethylated promoters and gene ontology enrichment provide robust evidence. The comparison to in vivo neurons appropriately contextualizes this as a reprogramming-specific signature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C4",
+      "C53",
+      "C54",
+      "C55",
+      "C58"
+    ],
+    "result": "BAM overexpression specifically targets myogenic genes for promoter hypermethylation (8/15 analyzed genes), suppressing the competing myogenic program. These promoters are enriched for sarcomere and contractile fiber functions and show hypermethylation in BAM but not Ascl1-only reprogramming.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C53-C55, C58 are supported by targeted analysis of myogenic marker genes and genome-wide promoter categorization. The specificity to BAM (not Ascl1-only) strengthens the conclusion. However, the functional consequence of this methylation on myogenic gene expression could be more directly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C56",
+      "C57"
+    ],
+    "result": "Promoters showing hypermethylation during reprogramming are marked by H3K27me3 in cortical neurons, suggesting these loci use polycomb repression in vivo but DNA methylation during direct reprogramming as alternative repressive mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C57 are supported by ChIP-seq data analysis showing significant H3K27me3 enrichment (p<1.2\u00d710^-50). However, C57 is explicitly speculative about the mechanistic interpretation. Direct testing of whether these mechanisms are mutually exclusive or whether PRC recruitment is impaired during reprogramming would strengthen this result.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C5",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C64",
+      "C65",
+      "C79",
+      "C80",
+      "C104"
+    ],
+    "result": "Ascl1 induces local demethylation at the vast majority of its binding sites during Ascl1-only reprogramming. 10,075 differentially methylated sites (DMSs) were identified, with 96% located >2.5kb from TSS. ASCL1 binding shows striking co-enrichment at these DMSs, particularly early demethylating sites, suggesting ASCL1 recruits demethylation machinery.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C59-C62, C64-C65, C79-C80, C104 are well-supported by genome-wide methylation analysis and ChIP-seq integration. The quantitative analysis showing demethylation at most ASCL1 sites (not just the 28.4% overlapping DMSs) strengthens the conclusion. The inference about recruitment of demethylation machinery (C65) is reasonable but indirect.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C6",
+      "C66",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "Co-expression of Brn2 and Myt1l inhibits Ascl1-mediated demethylation. During BAM reprogramming, only 0.66% of DMSs overlap with ASCL1 peaks, demethylation at ASCL1 sites is transient and moderate, and methylation is restored by day 22. This demonstrates contextual regulation of transcription factor-epigenome interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C66, C81-C85 are supported by comparative analysis of Ascl1-only vs BAM reprogramming showing dramatically different demethylation patterns at ASCL1 binding sites. The observation that ASCL1 chromatin binding is unaffected (C86) strengthens the interpretation that Brn2/Myt1l modify ASCL1's functional consequences rather than binding. This is a novel and important finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "BAM and Ascl1-only reprogramming induce distinct demethylation patterns with <10% shared DMSs. BAM DMSs are enriched for BRN2 binding motifs and additional neuronal TF motifs (Lhx2, Emx2, Nfib, Mef2), while Ascl1-only DMSs are enriched for ASCL1 motifs. MYT1L binding minimally overlaps DMSs (0.3%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C78 are supported by comprehensive motif enrichment analysis and ChIP-seq integration. The finding that 89.2% of Ascl1 5d DMSs persist to 22d (C73) validates that the low overlap between conditions reflects biological differences rather than temporal dynamics. The distal location of DMSs (C61) supports their regulatory function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C7",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C117"
+    ],
+    "result": "De novo methylation by DNMT3A is required for efficient neuronal reprogramming. Dnmt3a, Tet3, and Mecp2 are upregulated during reprogramming, while Uhrf1 is downregulated. ASCL1 binds the Dnmt3a promoter, though this is insufficient for activation. Dnmt3a knockout reduces reprogramming efficiency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C88-C97, C117 are supported by expression analysis and functional validation. The Dnmt3a knockout experiment provides direct evidence for requirement, though the analysis is complicated by incomplete knockout in some iN cells. The statistical analysis (chi-squared test, p=2.27E-6 for Cre, p=4.51E-4 for delCre) appropriately accounts for this. The mechanistic link to ASCL1 binding (C93-C95) remains unclear.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C32"
+    ],
+    "result": "iN cells show a less pronounced increase in mCH level associated with gene length compared to mouse cortex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C32 is supported by comparative analysis shown in Figure 1\u2014figure supplement 1E-F. This suggests incomplete maturation of the mCH landscape in iN cells compared to in vivo neurons, consistent with other findings showing BAM cells are more similar but not identical to mature neurons.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C63"
+    ],
+    "result": "Local mCG reduction during reprogramming is mediated by active demethylation rather than passive dilution, based on cell cycle exit within 2 days of Ascl1 induction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C63 is supported by citations to previous work showing Ki67 reduction and cell cycle gene downregulation. This is an important mechanistic distinction, though the evidence is indirect (from prior studies rather than current experiments). Direct measurement of cell proliferation in the current study would strengthen this conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C103"
+    ],
+    "result": "mCH accumulation during reprogramming may be regulated by direct ASCL1 binding to the Dnmt3a promoter.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C103 is explicitly speculative and contradicted by C95 showing Ascl1 overexpression is insufficient to activate Dnmt3a at 2 days. While ASCL1 binding is demonstrated (C93-C94), the functional consequence is unclear. Additional experiments (e.g., deletion of the ASCL1 binding site, time-course analysis) would be needed to establish causality.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C20",
+      "C28",
+      "C31",
+      "C42",
+      "C86",
+      "C87",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C105",
+      "C106",
+      "C110"
+    ],
+    "result": "Background claims establishing prior knowledge about iN cell reprogramming, mCH biology, and transcription factor functions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C13, C20, C28, C31, C42, C86-C87, C98-C101, C105-C106, C110 are supported by appropriate citations to prior literature. These provide necessary context for interpreting the current findings. C99 makes a priority claim about high-level mCH induction that appears reasonable based on the authors' literature knowledge.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C102",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "Summary and interpretive claims about the reprogramming system and overall findings regarding DNA methylation's role in cellular reprogramming.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102, C112-C116 represent high-level interpretations and summaries of the experimental findings. These are generally well-supported by the collective evidence, though they represent synthesis rather than individual experimental results. C116's claim about differential targeting of gene bodies vs promoters by mCH vs mCG is a reasonable interpretation of the spatial patterns observed.",
+    "result_type": "MINOR"
+  }
+]

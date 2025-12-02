@@ -1,0 +1,2240 @@
+{
+  "submission": {
+    "id": "bb099173-0a47-4b93-99ec-fcf1192999ab",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T15:27:43.321261Z",
+    "updated_at": "2025-12-02T15:27:43.321261Z"
+  },
+  "content": [
+    {
+      "id": "9128e17a-65c5-46c6-9906-13011062f7fd",
+      "submission_id": "bb099173-0a47-4b93-99ec-fcf1192999ab",
+      "content_type": "manuscript",
+      "content_text": "# Resurrection of a global, metagenomically defined gokushovirus\n\n## Authors\n\n- Paul C Kirchberger<sup>1</sup> ([ORCID: 0000-0002-8387-6440](https://orcid.org/0000-0002-8387-6440)) \u2020\n- Howard Ochman<sup>1</sup> ([ORCID: 0000-0003-1688-7059](https://orcid.org/0000-0003-1688-7059))\n\n### Affiliations\n\n1. Department of Integrative Biology University of Texas Austin United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nGokushoviruses are single-stranded, circular DNA bacteriophages found in metagenomic datasets from diverse ecosystems worldwide, including human gut microbiomes. Despite their ubiquity and abundance, little is known about their biology or host range: Isolates are exceedingly rare, known only from three obligate intracellular bacterial genera. By synthesizing circularized phage genomes from prophages embedded in diverse enteric bacteria, we produced gokushoviruses in an experimentally tractable model system, allowing us to investigate their features and biology. We demonstrate that virions can reliably infect and lysogenize hosts by hijacking a conserved chromosome-dimer resolution system. Sequence motifs required for lysogeny are detectable in other metagenomically defined gokushoviruses; however, we show that even partial motifs enable phages to persist cytoplasmically without leading to collapse of their host culture. This ability to employ multiple, disparate survival strategies is likely key to the long-term persistence and global distribution of Gokushovirinae.\n\n## Introduction\n\nSingle-stranded circular DNA (ssDNA) phages of the family Microviridae are among the most common and rapidly evolving viruses present in the human gut (Lim et al., 2015; Minot et al., 2013; Manrique et al., 2017; Shkoporov et al., 2019). Within the Microviridae, members of the subfamily Gokushovirinae are detected in metagenomic datasets from diverse environments, ranging from methane seeps to stromatolites, termite hindguts, freshwater bogs and the open ocean (Bryson et al., 2015; Desnues et al., 2008; Quaiser et al., 2015; Tikhe and Husseneder, 2018; Tucker et al., 2011).\n\nDue to their small, circular genomes, full assembly of these phages from metagenomic data is easy (Creasy et al., 2018; Labont\u00e9 and Suttle, 2013; Roux et al., 2012), and more than a thousand complete metagenome-assembled microvirus genomes have been deposited to NCBI as of beginning of 2020. In contrast, Microviridae have been isolated from very few hosts, hardly representative of their diversity as a whole, and the only readily cultivable member of this family is phiX174, which is classified to the distantly related subfamily Bullavirinae (Doore and Fane, 2016; Krupovic et al., 2016). While phiX and phiX-like phages are among the most well-studied groups of viruses, they are rare in nature and occupy a small specialist niche as lytic predators of select strains of Escherichia coli (Michel et al., 2010). Conversely, the Gokushovirinae and several other (though not formally described) subfamilies of Microviridae are seemingly abundant in the environment but almost exclusively known from metagenomic datasets (Creasy et al., 2018; Sz\u00e9kely and Breitbart, 2016), although estimates of their actual numbers could be biased due to the methods used to prepare metagenomic samples (Kim and Bae, 2011; Roux et al., 2016). Despite their apparent prevalence in the environment, the only isolated gokushoviruses are lytic parasites recovered from the host-restricted intracellular bacteria Spiroplasma, Chlamydia and Bdellovibrio (Brentlinger et al., 2002; Garner et al., 2004; Ricard et al., 1980).\u00a0Given their regular occurrence in metagenomes from diverse habitats, it seems unlikely that Gokushovirinae only infect intracellular bacteria, and their lack of recovery from other hosts is puzzling.\n\nTypical gokushoviruses pack their 4000-6000 nt genomes, composed of 3\u201311 genes, into tailless icosahedral phage capsids (Roux et al., 2012). No gokushoviruses encode an integrase, which has led to the assumption that they are lytic phages. However, the presence of prophages belonging to several undescribed groups of microviruses within the genomes of some Bacteroidetes and Alphaproteobacteria (Krupovic and Forterre, 2011; Zhan and Chen, 2019; Zheng et al., 2018) raises the possibility that some can be integrated through the use of host-proteins, in a similar manner to the XerC/XerD dependent integration of ssDNA Inoviridae (Krupovic and Forterre, 2015).\n\nAll gokushovirus genomes assembled from metagenomic data lack multiple genes that are present in phiX-like phages (Roux et al., 2012). Markedly absent are: (i) a peptidoglycan synthesis inhibitor that leads to host cell lysis (although some phages appear to have horizontally acquired bacterial peptidases) and (ii) a major spike protein involved in host cell attachment (Doore and Fane, 2016; Roux et al., 2012). These proteins represent crucial elements in the infectious cycle of phiX, and their absence from other gokushoviruses indicates that these phages might operate quite differently on a molecular level.\n\nHere we detect a large number of gokushovirus prophages integrated into the genomes of enterobacteria, contrasting with their predicted exclusively lytic lifestyle. Through transformation of a synthesized prophage genome into a laboratory strain of Escherichia coli, we cultivate a novel gokushovirus capable of lysogenizing enterobacteria. Using this experimental model system, we demonstrate that this phage is capable of passive integration via XerC/XerD mediated recombination of phage encoded dif-motifs with their bacterial counterparts. We also show that this capability has evolved independently in multiple lineages of gokushoviruses and demonstrate the existence of an intermediate, pseudolysogenic step between lytic and lysogenic lifestyle, indicating that gokushoviruses can lead a decidedly different existence from that of previously characterized members of the Gokushovirinae.\n\n## Results\n\n### A new, diverse group of gokushovirus prophages\n\nQuerying fully assembled bacterial genomes with the major capsid protein VP1 of gokushovirus Chlamydia-phage 4 (NCBI Gene ID 3703676) returned 95 high-confidence hits (E-value\u00a0<0.0001) within the Enterobacteriaceae (91 from Escherichia, and one each from Enterobacter, Salmonella, Citrobacter and Kosakonia; Supplementary file 1). Although Gokushovirinae were previously known only as lytic phages, inspection of each of the associated genomic regions revealed the presence of integrated prophages 4300\u20134700 bp in length and having a conserved six-gene arrangement: VP4 (replication initiation protein), VP5 (switch from dsDNA to ssDNA replication protein), VP3 (scaffold protein), VP1 (major capsid protein), VP2 (minor capsid protein) and VP8 (putative DNA-binding protein). Most of the variation in both the genome size and sequence of these prophages is confined to three regions: (i) near the C-terminus of VP2, (ii) in the non-coding region between VP8 and VP2, and (iii) within VP1, whose hypervariability is characteristic of the Gokushovirinae (Chipman et al., 1998; Diemer and Stedman, 2016; Figure 1A).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/51599/elife-51599-fig1-v2.jpg)\n\n**Figure 1.:** (A) Genome organization and average pairwise nucleotide identities of the gokushovirus prophages detected in Escherichia. Integrated prophage genomes range from 4316 to 4692 bp in length, with genes indicated by grey arrows, and flanking phage and bacterial dif-motifs indicated by red and blue bars. Nucleotide sequence logos of phage and bacterial dif-motifs, with corresponding XerC- and XerD-binding sites are shown. (B) Phylogeny of gokushovirus prophages and their enterobacterial hosts. Single lineages or clades comprising strains sharing\u00a0>95% average nucleotide identity are individually colored, with colors in the bacterial phylogeny corresponding to those of their associated prophages. Clades not colored in the bacterial phylogeny correspond to Escherichia coli collection reference (ECOR) strains. Clades with bootstrap support values below 70% are collapsed. Arrows denote prophage-host pairs in which the corresponding phage was tested againstE. coliK-12, with the solid arrow indicating the prophage-host pair whose phage formed plaques in\u00a0E. coli\u00a0K-12 and subsequently used in experimental analyses. Tree scale bars correspond to nucleotide or amino acid substitutions/site for prophage and host trees, respectively, and ancestral branches with hatch-marks are truncated by the length of two scale bars. Accession numbers and details of prophages and their corresponding hosts are listed in Supplementary files 1 and 3.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/51599/elife-51599-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Average nucleotide identity values calculated from pairwise comparisons of whole prophage genomes indicated on a yellow-blue scale, with identical prophages indicated in black. Colors of individual lineages (or clades) bordering the similarity matrix correspond to those used in Figure 1B, with non-Escherichia prophages indicated separately.\n\nAll detected prophages are flanked by dif-motifs, which are 28 bp palindromic sites that are known to be the targets of passive integration by phages and other mobile elements (Blakely et al., 1993; Das et al., 2013). The dif-motifs upstream of the insertions are highly conserved and individually differ by, at most, one nucleotide from the canonical dif-motif of Escherichia coli. These upstream dif-motifs consist of a central 6 bp spacer flanked by two 11 bp arms, previously been shown to bind tyrosine recombinases XerC/XerD during chromosome segregation and integration of mobile elements (Castillo et al., 2017). In contrast, the dif-motifs downstream of detected prophages are more variable, particularly in the spacer region and XerD-binding arms, representing the phage dif-motifs integrated along with the phage (Figure 1A).\n\nA whole genome phylogeny of gokushovirus prophages shows a number of well-differentiated (bootstrap support 70% or higher) lineages, forming clades A-J that each contains members with\u00a0>95% average nucleotide identity, and 14 singleton lineages with no close relatives (Figure 1B, Figure 1\u2014figure supplement 1). Comparing the topology of the phage phylogeny with that of their E. coli host strains shows examples of prophage clades found only in specific branches of the E. coli phylogeny and clades with wider distributions. For example, whereas prophages belonging to clade A-D are found dispersed across the host phylogeny, prophage clade I is confined to a single E. coli clade (possibly as a result of the limited number of detected prophages). In all but one case, each E. coli host harbors only a single gokushovirus prophage. Although phage attachment and infection sometimes depend on O-antigenicity, there is no obvious association between the presence of gokushovirus prophages and particular E. coli O-serotypes among those strains for which information on O-antigens is available (Zhou et al., 2020). For example, four identical prophages belonging to clade C could be detected in E. coli strains MOD1-EC5200 (O76:H19), MOD1-EC5181 (O132:H8), NCTC9043 (O43:H2) and MOD1-EC6266 (O124:H21) (Supplementary file 1). Most gokushovirus prophages were detected in diverse E. coli strains isolated from various animals, mainly cattle and marmots, but five prophages were detected in isolates from humans, including one from a urinary tract infection (Supplementary file 1).\n\n### Prophages of enterobacteria form a distinct gokushovirus clade\n\nPhylogenetic analysis of available gokushovirus genomes based on an alignment of the conserved VP1 and VP4 proteins (n\u00a0=\u00a0855; including the enterobacterial prophages discovered in this study, the previously sequenced lytic gokushoviruses from Chlamydia, Spiroplasma and Bdellovibrio, and the metagenomically assembled gokushovirus genomes available from NCBI) returned enterobacterial prophages as a well-supported (97% bootstrap support), monophyletic clade within the Gokushovirinae (Figure 2). The distinctiveness of this clade, whose members share a conserved (but not unique) gene order and display an average nucleotide identity of\u00a0>50% (Figure 1\u2014figure supplement 1 and Supplementary file 2), advocates the formation of a new proposed genus within the family Microviridae (subfamily Gokushovirinae), for which we suggest the name Enterogokushovirus on account of a distribution limited to members of the Enterobactericeae.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/51599/elife-51599-fig2-v2.jpg)\n\n**Figure 2.:** Maximum likelihood tree built from concatenated alignments of VP1 and VP4 protein sequences of 855 gokushovirus genomes. Tree is midpoint rooted, and branch support estimated with 100 bootstrap replicates. Branches with bootstrap support values below 70% are collapsed. Clades highlighted in grey indicate Enterogokushovirus prophages with recognizable dif-motifs; those highlighted in pink possess dif-motifs identified through an iterative HMM search. Outer ring indicates isolation source, with black triangles denoting the phylogenetic positions of officially described gokushoviruses. Scale bar corresponds to amino acid substitutions per site. Sample accession numbers are listed in Supplementary file 4.\n\nSince a unique feature of enterogokushoviruses among the Gokushovirinae appears to be the ability to exist as lysogens, we searched all other gokushovirus MAGs in our dataset for dif-like sequence motifs that might be indicative of lysogenic ability. We detected similar motifs in 48 genomes distributed sporadically throughout the gokushovirus phylogeny. Aside from the enterogokushoviruses, there are two larger clades in which multiple genomes contain a dif-motif, with the rest of dif-bearing MAGs found largely as singletons (Figure 2; Supplementary file 4). The majority of these putative dif-motifs occurs in non-coding regions, and those detected within coding regions were typically at the 5\u2019- or 3\u2019-end of a predicted gene, with a nearby alternative start or stop codon that could preserve the genetic integrity of the phage through integration and excision. The overall dearth of dif-like sequences in gokushoviruses sampled from diverse geographic and ecological settings highlights the distinctiveness of Enterogokushovirus genomes and lifestyle.\n\nWe further attempted to determine the prevalence of enterobacterial gokushoviruses by interrogating 1839 samples from eight metagenomic studies of human and cattle gut microbiomes for the presence of closely related prophages. From these data, we were able to fully assemble only two integrated prophages corresponding to E. coli gokushoviruses, one from the fecal metagenome of an Austrian adult (0,05% of all reads in ERR688616) and the other from a Danish infant (0,02% of all reads in ERR525761) (see also Supplementary file 4).\n\n### Reconstituting viable phage from integrated prophages\n\nThe integrity of prophage structure in all enterobacteria and the lack of premature stop codons suggested that these sequences represent intact, functional insertions into bacterial hosts. To confirm the functionality of Escherichia gokushovirus prophages, characterize their biology and provide a type strain, we attempted to construct phages from genomic DNA of Escherichia strains MOD1-EC2703, MOD1-EC5150, MOD1-EC6098 and MOD1-EC6163, selected to represent the diversity of gokushovirus prophages and hosts (Figure 1B).\n\nSequences corresponding to prophages from these four Escherichia strains were amplified, circularized and transformed into E. coli DH5\u03b1 (Figure 3A). Supernatants from the transformed DH5\u03b1 culture were used in agar-overlay assays with E. coli K12 BW25113 hosts, resulting in plaques for only one of four reconstructed phage genomes (EC6098, derived from E. marmotae strain MOD1-EC6098 and belonging to prophage clade E (Figure 3B, Figure 3\u2014figure supplement 1A). While both DH5\u03b1 and BW25113 possess other prophages which could produce false positives when screening for gokushovirus production (Chen et al., 2018; Wang et al., 2010), DH5\u03b1 alone did not produce plaques on BW25113 and vice versa (Figure 3\u2014figure supplement 1).\u00a0To corroborate the synthesis of EC6098 phages (and the inability to produce phages from the other three sequences), we additionally grew live cultures of MOD1-EC2703, MOD1-EC5150, MOD1-EC6098 and MOD1-EC6163 and via PCR detected the presence of circularized gokushovirus genomes in all four, but only MOD1-EC6098 produced plaques resembling those derived from synthetic EC6098 (Figure 3\u2014figure supplement 1B). As only EC6098 formed plaques on K12 strains, we used this phage for further experimental characterization.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/51599/elife-51599-fig3-v2.jpg)\n\n**Figure 3.:** (A) Scheme used to produce viable phage from prophage inserts. The prophage region, with genes colored in grey, is amplified from the bacterial genome (black) using primers that incorporate the phage dif-motif but exclude the bacterial dif-motif (indicated by bent arrows). Circularization of the amplification product results in a molecule corresponding to the replicative dsDNA form of the phage. Transformation of this circular molecule into electrocompetent E. coli DH5\u03b1 cells leads to expression of phage proteins, replication and packaging of ssDNA into infective virions. (B) Plaques formed by constructed bacteriophage EC6098 after infecting E. coli BW25113. (C) TEM images of bacteriophage EC6098 viewed at 175,000x magnification. (D) TEM images of bacteriophage EC6098 viewed at 300,000x magnification.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/51599/elife-51599-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Transformation and growth of four synthesized gokushovirus genomes (EC2703, EC5150, EC6098, EC6163) in E. coli DH5\u03b1. Gel image shows assay for circularized phage genomes in liquid cultures grown overnight at 37\u00b0C. Agar-plate pictured below gel shows screen for plaque formation in the corresponding host-phage combinations when plated on a lawn of E. coli BW25113. Plaques are evident in the positive control (+) of BW25113 producing EC6098 and in DH5\u03b1 transformed with EC6098. \u2013 denotes negative control of DH5\u03b1 without transformed genome. (B) Growth of four gokushoviruses (EC2703, EC5150, EC6098, EC6163) in their natural hosts. Gel image shows assay for circularized phage genomes in liquid cultures grown overnight at 37\u00b0C. Agar-plate pictured below gel shows screen for plaque formation in the corresponding host-phage combinations when plated on a lawn of E. coli DH5\u03b1. Plaques are evident in the positive control (+) of E. coli BW25113 producing EC6098 and in MOD1-EC6098. BW25113 in absence of gokushoviral genomes serves as negative control.\n\nElectron microscopic observation of pure EC6098 lysates recovered at a buoyant density of around 1.3 g/cm\u22123 in CsCl gradients (the range expected for members of the Microviridae, Thurber et al., 2009), revealed tailless icosahedral virions, 25\u201330 \u00b5m in size and displaying protrusions previously observed in other Gokushovirinae (Chipman et al., 1998; Diemer and Stedman, 2016; Figure 3D,E). Because Gokushovirinae have only been recovered as lytic particles from intracellular bacteria, this represents the first isolation of a gokushovirus able to infect free-living bacteria as well as being able to integrate as a lysogen into bacterial genomes.\n\n### Mechanisms of enterobacterial gokushovirus integration into host genomes\n\nWe next investigated the process by which gokushoviruses integrate into the bacterial host chromosome (Figure 4A). The presence of circularized phage genomes could readily be detected from surviving colonies in confluent plaques derived from agar-overlay assays (Figure 4B). Using primers that flank both sides of the dif-motif in host strain BW25113, we recovered products that were enlarged by the length of the phage relative to colonies lacking the prophage (Figure 4A,C). Sequencing confirmed that, in accordance with the integration site of detected prophages, phage EC6098 integrates downstream of the BW25113 dif-motif, which remains unchanged (corresponding to position 3,046,436\u20133,046,463 in the closed genome with accession number CP009273).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/51599/elife-51599-fig4-v2.jpg)\n\n**Figure 4.:** (A) Schematic representation of phage integration process, and detection of circularized EC6098 phage genome and integrated prophages in E. coli BW25113. Upon infection, phage EC6098 releases ssDNA, with dif-motif denoted in red, leading to formation of dsDNA replicative genomes that integrate downstream of the bacterial dif-motif (blue). Primers VP2_rev and VP5_fw (indicated by bent arrows on EC6098 genome) anneal to genes flanking the phage dif-motif and amplify a\u00a0~\u00a02.1 kb product from closed circular phage genomes (corresponding to bands in panel B). Primers MG1655dif_fw and MG1655dif_rev (indicated by bent arrows on host genome) anneal to sites flanking the bacterial dif-motif and amplify either a 210 bp region of bacterial DNA when there is no phage integration or a\u00a0~\u00a05 kb region denoting the presence of an integrated prophage (corresponding to bands in panel C). (B) Detection of fragments indicating the presence of circularized phage. Numbered lanes correspond to samples listed in the box below the gel photographs. (C) Detection of fragments indicating the presence or absence of integrated phage from lysogenic colonies after infection of BW25113 strains with wild type or mutant phage. Numbered lanes are the same as in panel B, and correspond to samples listed in the box below the gel photograph. (D) Proportion of cells with integrated prophages in clonal lysogenic colonies. Box-and-whiskers plot shows median, 25th and 75th percentiles, and 1.5 inter-quartile range as well as individual datapoints for 87 independently sampled clonal colonies.\n\nBecause none of the gokushovirus prophages encodes an integrase, we predicted that host factors XerC and XerD might be responsible for prophage integration, similar to what has been hypothesized for microvirus-prophages in Bacteroidetes (Krupovic and Forterre, 2011). Neither \u0394xerC nor \u0394xerD mutants of E. coli host strain BW25113 resulted in integration, but the \u0394xerC mutant was restored by complementation with a plasmid expressing the intact version of xerC. Similarly, phages with incomplete (i.e., lacking either their XerC or XerD binding site within the dif-motif, termed here \u0394difC and \u0394difD) or no dif-motifs (\u0394difCD) successfully infected hosts (as evidenced by the presence of circularized phage genomes in host colonies that had survived infection), but failed to integrate into host genomes, demonstrating the need for cooperative XerC/XerD binding for successful lysogeny (Table 1, Figure 4B,C). However, the retention of dif-motifs after integration indicates that this process is reversible: As evident in Figure 4C, there is a smaller fragment, in addition to that indicating prophage insertion, that corresponds to those cells in the same colony that do not harbor the integrated prophage. These cells persisted even after multiple rounds of re-streaking, and the median ratio of lysogens to non-lysogenic cells derived from clonal colonies approaches 4:1 (Figure 4D). Even in pure cultures, phages are thus continuously being excised and reintegrated, presumably as a result of XerC/XerD activity.\n\n**Table 1.**\n Percentage of lysogenic colonies after phage infection*.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Strain</th>\n      <th>Phage</th>\n      <th>Plasmid</th>\n      <th>% Lysogens</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>BW25113</td>\n      <td>EC6098</td>\n      <td>-</td>\n      <td>17.71</td>\n    </tr>\n    <tr>\n      <td>BW25113\u0394xerC</td>\n      <td>EC6098</td>\n      <td>-</td>\n      <td>0</td>\n    </tr>\n    <tr>\n      <td>BW25113\u0394xerC</td>\n      <td>EC6098</td>\n      <td>pJN105::xerC (induced\u2020)</td>\n      <td>14.58</td>\n    </tr>\n    <tr>\n      <td>BW25113\u0394xerC</td>\n      <td>EC6098</td>\n      <td>pJN105::xerC (uninduced)</td>\n      <td>0</td>\n    </tr>\n    <tr>\n      <td>BW25113\u0394xerD</td>\n      <td>EC6098</td>\n      <td>-</td>\n      <td>0</td>\n    </tr>\n    <tr>\n      <td>BW25113\u0394xerD</td>\n      <td>EC6098</td>\n      <td>pJN105::xerD (induced\u2020)</td>\n      <td>0</td>\n    </tr>\n    <tr>\n      <td>BW25113\u0394xerD</td>\n      <td>EC6098</td>\n      <td>pJN105::xerD (uninduced)</td>\n      <td>0</td>\n    </tr>\n    <tr>\n      <td>BW25113</td>\n      <td>EC6098\u0394difC</td>\n      <td>-</td>\n      <td>0</td>\n    </tr>\n    <tr>\n      <td>BW25113</td>\n      <td>EC6098\u0394difD</td>\n      <td>-</td>\n      <td>0</td>\n    </tr>\n    <tr>\n      <td>BW25113</td>\n      <td>EC6098\u0394difCD</td>\n      <td>-</td>\n      <td>0</td>\n    </tr>\n  </tbody>\n</table>\n\n_*Assessed from screening 96 colonies for each strain.\u2020Expression induced by addition of 0.1% arabinose._\n\n### Integration into host genomes facilitates but is not required for long-term persistence\n\nThe removal of host factors xerC or xerD, the presence an incomplete phage dif-motif, or the lack of a dif-motif (as observed in the majority of Gokushovirinae) all prevent integration of phages into host genomes (Table 1, Figure 4C). However, almost all bacterial colonies that survived infections, regardless of whether they were lysogenized or not, were found to contain circular phage DNA (Figure 4B), and the presence of circular phage DNA alone, regardless of integration into the host genome, conferred superinfection immunity (Figure 5A). In addition, cultures in which phage DNA could only be detected in circularized form were capable of producing infectious particles at levels significantly higher than those of cultures containing integrated prophages (Figure 5B, Wilcoxon rank-sum test p<0.01).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/51599/elife-51599-fig5-v2.jpg)\n\n**Figure 5.:** (A) Superinfection immunity offered by integrated or non-integrated phages. Unimpeded growth in the presence of infecting EC6098 phage is shown for host cultures carrying lysogenic or lysogeny-deficient EC6098. Lysis of host by EC6098 in the absence of superinfection immunity is shown in grey for comparison. Averages and standard deviations are based on three replicates. (B) Phage production by lysogenic and non-lysogenic hosts. Plaque-forming units in culture supernatant were determined from six independent cultures of BW25113 or BW25113\u0394xerC, each grown overnight at 37\u00b0C from an initial concentration of OD600\u00a0=\u00a00.7. Box-and-whiskers plots show median, 25th and 75th percentiles (upper and lower hinges)\u00a0and 1.5 inter-quartile range (whiskers). Outliers are shown as individual dots. P-values of\u00a0<0.01 (Wilcoxon Rank-Sum test) in comparison to BW25113[EC6098] are indicated with asterisks. (C) Continuous phage production over the course of a month. Formation of plaques from supernatants of six replicate cultures of hosts carrying integrated or non-integrated phages is checked daily before 1:1000 dilution and growth for 18\u201324 hr at 37\u00b0C. In all cases, BW25113\u0394fhuA served as the host strain for agar overlay assays.\n\nThe absence of alternative integration sites, as verified by inverse PCR, suggested that gokushoviruses might be able to persist in the host cytoplasm without integration into the host genome. To determine whether this persistence is a transient phenomenon that eventually leads to either the loss of phages or the collapse of bacterial cultures, we performed serial transfers (1:1000 dilution) with a variety of host-phage combinations over the course of a month. We enumerated plaque formation from culture supernatant on host strain BW25113\u0394fhuA to avoid false positives from widespread contaminating dsDNA phages such as phi80 and SW-1, which unlike EC6098 require outer membrane receptor FhuA for successful infection (Rotman et al., 2012; Song et al., 2019). As expected, all lysogenic cultures (i.e., wild type cultures with integrated gokushovirus prophages) produced phage particles throughout the course of the experiments. However, a third of all cultures where gokushoviruses were initially present only in the cytoplasm (due to deletions in the host integration machinery or phage integration site) retained phage production over the course of a month despite the lack of integration (Figure 5C). Cumulatively, these results indicate that gokushoviruses do not exist solely as lytic particles, as previously believed, but can also exist as (pseudo)lysogens, in a carrier state that continuously produces phage particles without integrating into the genome.\n\n## Discussion\n\nThrough the analysis of whole genome sequences and metagenomic databases, we defined a unique genus of Gokushovirinae prophages and subsequently synthesized a viable gokushovirus capable of infecting and integrating into the genomes of enteric bacteria. Since Gokushovirinae were previously known as exclusively lytic predators of a few intracellular bacteria (King et al., 2011), the new proposed genus, Enterogokushovirus, offers new insights into our understanding of this ecologically widespread group of phages. First, by confirming the existence of Gokushovirinae prophages in free-living bacteria, we resolved a seeming paradox in which a diverse and widespread lineage within the Microviridae appeared to be confined to rare pathogenic and parasitic bacteria, such as Chlamydia (Wang et al., 2019). Second, by demonstrating the integration of a gokushovirus into the E. coli genome, we show that these phages employ survival strategies beyond the lytic infection of hosts.\n\nExperimental characterization of the enterogokushovirus EC6098 isolated from an environmental strain of E. marmotae showed that these phages possess a dif-like recognition motif that, together with the host-encoded recombinases XerC/XerD, is required for lysogeny. In this manner, enterogokushoviruses appropriate a highly conserved bacterial chromosome concatemer-resolution system that enables their integration into host genomes via homologous recombination (Castillo et al., 2017). The exact mechanism of this integration process still remains to be elucidated: some phages and mobile elements are known to have different requirements for the bacterial XerC and/or XerD proteins (Midonet and Barre, 2015), which is perhaps the reason why we could only successfully reconstitute xerC but not xerD knockouts. We also show that phages with only partial DNA-binding motifs exist in a condition in which circularized phage genomes are present in the cytoplasm and virions are continuously released from the host. While it should be noted that this could be a laboratory-induced phenomenon, this strategy is similar to the pseudolysogenic state observed in crAssphage (Shkoporov et al., 2018) and other bacteriophages\u00a0(Siringan et al., 2014), and helps explain the persistence of microviruses in the human gut (Minot et al., 2013; Shkoporov et al., 2019).\n\nDespite an exhaustive sampling of gokushoviral diversity from metagenomic datasets, the occurrence of dif-positive gokushoviruses is rare outside of the enterogokushoviruses. However, the sporadic distribution of dif-motifs among other gokushoviruses indicates that the ability to lysogenize bacterial hosts has been independently gained and lost multiple times during the evolution of this taxon. For example, the exclusively lytic gokushoviruses of Chlamydia (\u015aliwa-Dominiak et al., 2013) might once have been able to integrate into their hosts\u2019 genomes since extant Chlamydia genomes contain coding sequences similar to the gokushoviral replication initiation and minor capsid proteins (Read et al., 2000; Rosenwald et al., 2014).\n\nWe observed that lysogenic cultures produce a considerably lower number of phage particles than non-lysogenic cultures but are less prone to the loss of phage, indicating that the lytic and lysogenic lifecycles confer different tradeoffs. It has long been suggested that lysogeny is a \u2018safe\u2019 strategy for phages in situations where hosts are scarce, with vertical inheritance preventing the dilution of phage particles in the absence of hosts (e.g., Berngruber et al., 2010). Meanwhile, lysis (and its more abundant production of phage particles) is advantageous when host availability is high.\n\nLytic microviruses (i.e., those lacking dif-motifs) in the human gut have been predicted to infect Bacteroidetes and other dominant members of that community (Shkoporov et al., 2019). However, the enterobacterial hosts of the gokushovirus prophages described in this study generally do not reach very high abundances in the gut microbiome, usually constituting less than 0.1% of the bacterial population (Human Microbiome Project Consortium, 2012), prompting the evolution of lysogeny. Perhaps due to the high mutation rate of ssDNA phages, typically two orders of magnitude higher than in dsDNA phages (Sanju\u00e1n et al., 2010), and an estimated substitution rate of 10\u22125/ nucleotides/day in the human gut (Minot et al., 2013), the de novo evolution of the XerCD-binding motifs appears to be common, with similar systems existing in other families of phage and mobile-elements (Das et al., 2013).\n\nGiven the current depths of microbiome sampling and sequencing, it is surprising that enterogokushoviruses have not previously been identified in human metagenomes. Even among the more than 100,000 sequenced enterobacterial genomes that are currently available, we detected fewer than 100 gokushovirus prophages, and no gokushovirus prophages were detected in the sequenced genomes of other bacteria. This rarity of gokushoviruses existing as prophages might result from the process by which they integrate into genomes: although possession of dif-motifs provides a simple, passive integration system, they also facilitate prophage excision (and as a result, continuous production of phage particles) in the absence of external stressors. In fact, XerCD-mediated removal of genetic elements has attained application in molecular biology (Bloor and Cranenburgh, 2006). To prevent premature XerCD-mediated excision, the Vibrio cholerae phage CTX secures itself as a prophage by destroying the dif site upon insertion (Val et al., 2005), whereas Vibrio prophages that retain their dif-motifs are only rarely detected (Das et al., 2011). The abundance of gokushoviruses in the environment, as apparent from their regularity in metagenomic datasets, suggests that they are only transient residents of bacterial chromosomes and usually occur in pseudolysogenic or lytic states in the wild.\n\nThe discovery of this group of phages offers several new directions for the study of the Microviridae. First, the presence of numerous and diverse gokushovirus prophages in a wide variety of E. coli strains now makes it possible to elucidate aspects of gokushovirus biology in a comparative evolutionary framework. Furthermore, demonstrating that the host ranges of the Gokushovirinae extends beyond intracellular bacteria increases the likelihood that additional members of this prevalent group of phages will be isolated from appropriate hosts. Additionally, the amplification of entire ssDNA phage genomes and subsequent transformation into appropriate hosts, as conducted in this study and previously with de novo synthesized phiX (Smith et al., 2003) can aid in the description of other Microviridae subfamilies. A promising target for this would be the Alpavirinae, which have been detected as prophages of Bacteroidetes but so far remain without isolates and denied official recognition (Roux et al., 2012). In conclusion, the value of isolating enterogokushoviruses goes beyond their abundance in nature and provides a genetically manipulable model system that will further the understanding of this group as a whole (Shkoporov and Hill, 2019).\n\n## Materials and methods\n\n### Detection and phylogeny of gokushovirus prophages and their hosts\n\nUsing blastp, we queried the NCBI nr database (April 2019) with the Chlamydia Phage four major capsid protein VP1 (NCBI Gene ID 3703676) and downloaded the complete genomes of 95 strains within the Enterobacteriaceae containing sequences returning E-values less than 0.0001 (Supplementary file 1). Chromosome contigs containing the VP1 gene were visually inspected in Geneious R9 (www.geneious.com) for the presence of prophage insertion boundaries by searching for identical 17 bp sequences within 5 kb regions upstream and downstream of the VP1 gene. Prophage genes were annotated with GLIMMER3 (Delcher et al., 2007) using default settings, specifying a minimum gene length of 110 bp and a maximum overlap of 50 bp. Initial alignments of prophage regions (ranging in size from 4047 to 4692 bp) were made with ClustalO 1.2.4 using standard settings (Sievers et al., 2011), and were refined manually to accommodate hypervariable regions and the phage insertion sites at the 3\u2019 and 5\u2019 ends of the alignment. Average pairwise nucleotide identity at each position in the alignment was calculated and visualized using Geneious R9. Maximum likelihood phylogenetic trees of enterobacterial prophages were generated with RAxML 8.0.26 (Stamatakis, 2014) using the GTR+GAMMA substitution model and 100 fast-bootstrap replicates and visualized with FigTree 1.4.3 (http://tree.bio.ed.ac.uk/software/figtree/).\n\nTo evaluate the distribution of prophage hosts within the broad diversity of E. coli at large, we produced core genome alignments of prophage hosts and representative genomes from the Escherichia coli reference (ECOR) collection (Ochman and Selander, 1984; Supplementary files 1 and 3) based on protein families satisfying a 30% amino-acid identity cutoff (USEARCH 11, Edgar, 2010), which were aligned in MUSCLE 3.8.31 (Edgar, 2004) as implemented in the BPGA 1.3 pipeline (Chaudhari et al., 2016). The maximum likelihood phylogenetic tree of core genome alignments was built with IQTree 1.6.2 (Nguyen et al., 2015), using the JTT substitution model (Jones et al., 1992) and 100 bootstrap replicates.\n\n### Recovering prophages from metagenomes\n\nTo assemble prophages from metagenomic datasets, we downloaded SRA files from BioProjects PRJEB29491 (viral human, Moreno-Gallego et al., 2019), PRJNA362629 (cellular bovine, unpublished), PRJNA290380 (cellular human, Kostic et al., 2015), PRJNA352475 (cellular human, Ferretti et al., 2018), PRJEB6456 (cellular human, B\u00e4ckhed et al., 2015), PRJNA385126 (viral human, Stockdale et al., 2018),PRJEB7774 (cellular human, Feng et al., 2015), and PRJNA545408 (human viral, Shkoporov et al., 2019). We performed initial trimming and quality filtering with BBDuk (Bushnell, 2014a) with options ktrim\u00a0=\u00a0r k\u00a0=\u00a023 mink\u00a0=\u00a011 hdist\u00a0=\u00a01 tbe tbo. Reads having a minimum nucleotide sequence identity of 50% to sequences of enterobacterial prophages, as determined by BBMap (Bushnell, 2014b), were assembled into contigs using MEGAHIT 1.1.3 (Li et al., 2015) implemented with default settings, and those contigs\u00a0>\u00a01000 bp were retained.\n\n### Phylogenetic analysis of gokushovirinae\n\nWe downloaded a total of 1284 metagenome-assembled genomes (MAGs) of microviruses (Supplementary file 4), which were then reannotated in GLIMMER3 (Delcher et al., 2007) using default settings, with a minimum gene length of 110 bp and a maximum overlap of 50 bp. We recovered homologues to the conserved major capsid protein VP1 and replication initiation protein VP4 in the set of metagenome-assembled microviruses using PSI-BLAST searches and querying with VP1 and VP4 proteins from detected enterobacterial gokushoviruses, gokushovirus genomes of Chlamydia, Spiroplasma and Bdellovibrio, and Bullavirinae phage phiX174. After individual protein alignments using Clustal Omega 1.2.4 (standard settings), we concatenated the VP1 and VP4 alignments, and removed all sites with\u00a0>10% gaps to decrease the amount of spuriously aligned sites using Geneious R9, for an alignment of 485 aa in length. The initial phylogenetic tree of all microviruses was built with IQTree 1.6.2 using the LG+F+R10 substitution model as determined by ModelFinder (Kalyaanamoorthy et al., 2017), and branch support was tested using 1000 ultra-fast bootstrap replicates (Hoang et al., 2018) and 1000 SH-aLRT tests. Collapsing all branches with\u00a0<95% bootstrap support and\u00a0<80% SH-aLRT support yielded a single, well-supported clade containing all known Gokushovirinae, and all subsequent alignments and phylogenetic trees were refined by including only those genomes represented in this clade, with branch support assessed with 100 bootstrap replicates. To complement already existing annotations of gokushovirus genomes for the purpose of comparing gene order in various branches of the phylogeny, iterative tblastx searches of individual enterogokushovirus EC6098 genes agains members of select branches were conducted. Hits with e-value\u00a0<0.001 (lower than initial searches used to identify prophages to account for the larger phylogenetic distance or analyzed genomes) were considered homologs to enterogokushoviral genes.\n\n### Identification of dif-motifs in gokushovirus MAGs\n\nTo search for dif-motifs in enterobacterial prophages, we first performed an alignment of all enterobacterial prophage dif-motif sequences in the curated set of bacterial dif-motifs from Kono et al. (2011) using Clustal Omega 1.2.4. We used the resulting alignment to build a Hidden-Markov-Model using hmmer 3.2.1 (Wheeler and Eddy, 2013) and performed an iterative search for dif-like motifs in all gokushovirus-like MAGs. Due to the variation in phage and bacterial dif-motifs, the variation in these motifs among bacteria, and the short length of the target sites, only confirmed dif-motifs of enterobacterial prophages reached an E-value cutoff\u00a0>0.005. A large number of hits fell below of this threshold and were treated as potential dif-motifs if they possessed at least 15 bp identical to confirmed dif-motifs and occurred in the short non-coding regions of MAGs. Hits within coding regions were removed as likely representing false positives (as integration would interrupt coding sequences), with the exception of those within the N-terminus of VP4 (as occasionally observed in Escherichia gokushovirus prophages).\n\n### Resurrection and modification of prophages\n\nDNA fragments representing gokushovirus prophages were amplified from E. coli and E. marmotae strains MOD1-EC2703, MOD1-EC5150, MOD1-EC6098 and MOD1-EC6163 (Supplementary file 1) with Phusion polymerase (NEB) from 10 ng of genomic DNA using primer pairs listed in Supplementary file 5 and under the following PCR conditions: 98\u00b0C for 3 min; 30 cycles of 98\u00b0C for 15 s, 50\u00b0C for 15 s, 72\u00b0C 2:30 min; followed by 72\u00b0C 10 min. Amplified fragments of\u00a0~4.5 kb corresponding to gokushovirus prophages were purified from agarose gels using the Monarch DNA Gel Extraction Kit (NEB) and eluted in 20 \u00b5l ddH2O. Blunt ends of the purified linear fragment were phosphorylated with T4 Polynucleotide Kinase (ThermoFisher) followed by overnight treatment with T4 DNA Ligase (NEB) to form circular genomes. Ligation mixtures were heat-inactivated, desalted, transformed into E. coli DH5\u03b1 and incubated for 1 hr in 1 ml SOC medium at 37\u00b0C. After this recovery period, cultures were grown overnight in 5 ml of LB medium at 37\u00b0C with mild shaking (200 rpm). Viable bacteriophages were harvested by centrifuging the culture for 5 min at 5000 g to pellet bacterial cells and then by filtering the supernatant through 0.45 \u00b5m syringe filters. The presence and identity of phages were confirmed through standard spot assays (see below) and Sanger sequencing (see Supplementary file 5).\n\n### Plasmid construction and complementation of knockout mutants\n\nTo construct complementation plasmids, we first amplified the xerC and xerD genes from Escherichia coli BW25113 with primers XerC_fw_EcoRI and XerC_rev _SacI or XerD_fw_EcoRI and XerD_rev_SacI (Supplementary file 5) under the conditions listed above. PCR products were purified using the Monarch DNA Gel Extraction Kit (NEB) and eluted in 20 \u00b5l ddH2O. PCR products and expression plasmid pJN105 (Newman and Fuqua, 1999) were digested with EcoRI and SacI (NEB) for 37\u00b0C for 1 hr, followed by heat inactivation for 10 min at 80\u00b0C and overnight ligation at a 1:3 vector-to-insert ratio using T4 DNA Ligase (NEB) at 4\u00b0C. One microliter of ligation mixtures were transformed into electrocompetent BW25113\u0394xerC or \u0394xerD mutants, and transformants were selected for growth on LB agar plates supplemented with 10 \u00b5g/ml gentamycin.\n\n### Phage and bacterial culture\n\nEnvironmental Escherichia strains MOD1-EC2703, MOD1-EC5150, MOD1-EC6098 and MOD1-EC6163, Escherichia coli K12 derivates DH5\u03b1 and BW25113, and KEIO collection strains BW25113\u0394xerC (KEIO Strain JW3784-1), BW25133\u0394xerD (KEIO Strain JW2862-1) BW25113\u0394fhuA (KEIO strain JW0146-2) were grown at 37\u00b0C in LB liquid media (supplemented with of 50 \u00b5g/ml kanamycin for the KEIO knockout strains). Expression of xerC or xerD genes in BW25113\u0394xerC and BW25133\u0394xerD containing pJN::xerC or pJN::xerD was induced by addition of 0.1% arabinose.\n\nTo prepare agar-overlays, cells from 100 \u00b5l of overnight culture were pelleted, resuspended in PBS, combined with 100 \u00b5l of phage and incubated at room temperature for 5 min prior to addition 3 ml of 0.6% LB-agarose and plating onto LB agar. To increase the phage concentrations, we harvested phage lysates from plates exhibiting confluent lysis after overnight growth at 37\u00b0C. Phage titers were determined by spotting dilutions of lysates onto agar-overlay plates with 100 \u00b5l of overnight cultures of host strains and incubating plates overnight at 37\u00b0C. Liquid-infection assays were performed in 96-well plates by adding 2 \u00b5l of phage lysate (~108 pfu/ml) to 200 \u00b5l of overnight culture diluted with LB to OD600\u00a0=\u00a00.4 and measuring growth and lysis at 37\u00b0C with 200 rpm shaking at 15 min intervals on a Tecan Spark 10M plate reader.\n\nSerial transfers experiments were performed by inoculating lysogenic colonies (as identified by PCR, below) in LB, diluting overnight cultures to OD600\u00a0=\u00a00.7, and then transferring 2 \u00b5l of the diluted culture into 2 ml of LB. After 18\u201324 hr incubation at 37\u00b0C with shaking, 2 \u00b5l of culture was transferred to 2 ml of fresh LB. This process was repeated for 28 days, and each day, phages were titered as described above.\n\n### Detection of circularized phages and prophages\n\nThe presence of lysogens and circularized phage was determined by PCR assays of liquid overnight cultures from surviving colonies in agar-overlay assays showing confluent lysis, using primers MG1655_fw and MG1655_rev, which flank the bacterial dif-motif, and VP2_fw and VP5_rev, which anneal up- and downstream the phage dif-motif in circularized phage genomes (Supplementary file 5). Ratios of lysogenic to non-lysogenic cells in individual cultures were measured by re-streaking single lysogenic colonies three times, selecting and resuspending a single resulting colony in LB, and re-plating it onto LB-agar plates. Colonies were grown in liquid culture in a 96-well plate overnight and assayed by PCR with primers MG1655_fw and MG1655_rev to detect prophage integration, as described above. PCR products were resolved on 1% agarose gels, and the intensity of the PCR products representing integrated prophage and non-integrated sites was measured with ImageJ 1.52a (http://imagej.nih.gov/ij).\n\nProphage integration sites were confirmed by inverse PCR (Ochman et al., 1988) as follows: 10 ng of DNA derived from colonies of BW25113 and BW25113\u0394xerC infected with either EC6098 wild type or EC6098\u0394difC were cut with restriction enzyme HindIII (NEB) for 1 hr at 37\u00b0C. Reactions were heat inactivated at 80\u00b0C for 10 min, and then circularized with T4 DNA Ligase (NEB) overnight at 4\u00b0C. Primer VP2_rev, binding the 3\u2019-end of VP2 and facing upstream, and primers Circle_1 and Circle_2, which bind to conserved regions downstream of VP2 and face downstream, were used to amplify circularized ligation products using Phusion polymerase (NEB) under the following PCR conditions described above. PCR products were resolved on 1% agarose gels, and all detected bands were extracted and Sanger-sequenced. Phage integration was confirmed by the presence phage and bacterial sequence in a single read.\n\n### Electron microscopy\n\nTwo milliliters of high-titer phage lysate were resuspended in PBS, layered on top of a CsCl step gradient (2 ml each of p1.6 to p1.2 in PBS) and centrifuged in a Beckman Coulter Optima L-100k Ultracentrifuge at 24,000 rpm for four hours. After centrifugation, fractions were collected in 0.5 ml steps, and to determine which fractions contained phage, PCR was performed using primers nocode_fw and VP2_rev using 1 \u00b5l of each fraction as template. Fractions containing phage were desalted with an Amicon Ultra-2ml Ultracel-30k filter unit and resuspended in water. For electron microscopy, viral suspensions were pipetted onto carbon-coated grids, negatively stained with 2% uranyl acetate, and imaged with a Tecnai BioTwin TEM operated at 80kV.\n",
+      "created_at": "2025-12-02T15:27:43.321261Z"
+    },
+    {
+      "id": "412788fe-a882-466b-bafb-5663132f24d5",
+      "submission_id": "bb099173-0a47-4b93-99ec-fcf1192999ab",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Mar\u00eda Mercedes Zambrano, CorpoGen Colombia\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.51599.sa1](https://doi.org/10.7554/eLife.51599.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nThis study combines bioinformatics and experimental work to examine a group of prevalent, yet not well understood, single-stranded DNA phages known mainly by sequencing surveys. By synthesising viral particles and infecting a model bacterial host the authors reveal that these Gokushoviruses can either integrate into the host chromosome or persist in the cytoplasm, strategies that probably promote survival and explain their global distribution and persistence.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Resurrection of a global, metagenomically mefined microvirus\" for consideration by eLife. Your article has been reviewed by Karla Kirkegaard as the Senior Editor, a Reviewing Editor, and three reviewers. The following individual involved in review of your submission has agreed to reveal their identity: Mya Breitbart (Reviewer #1).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThis is a very good study that has a significant impact on our knowledge of single-stranded DNA phages. The work combines bioinformatics and experimental work to characterize and provide new insight regarding the biology of ssDNA Gokushovirinae phages, a subfamily of the Microviridae phages, that are widespread but have been known primarily from metagenomic sequence surveys. The authors use sequence data to successfully obtain circular phage genomes that are introduced into Escherichia coli cells for experimental validation. This work is of interest for microbiologists and those working on metagenomics, phages and overall interested in combining strategies to uncover new biology. Some of the most novel and relevant aspects of the work include:\n\nThe combined approach of bioinformatics and experimental validation to obtain a tractable model system of great value for additional studies of these and similar phages.\n\nThe description of integration mechanisms dependent on host proteins and palindromic dif-motif integration sites.\n\nThe ability of these phages to employ both pseudolysogenic or lytic states as key strategies for survival and global distribution.\n\nThe identification of a conserved clade of Gokushovirinae phages, proposed to form a new genus named Enterogokushovirus, that infect Enterobacteria and can explain their reported abundance in gut microbiome samples.\n\nEssential revisions:\n\nThe reviewers raised a number of concerns that must be addressed before the paper can be accepted.\n\nThere are several questions regarding the nature of the phages obtained and the experimental system used.\n\n1) Are any of the Enterobacteriaceae strains naturally containing these prophages available from culture collections? If so, were attempts made to culture these strains and see if lytic phage production occurs in those strains naturally (following the pseudolysogeny model shown in the artificially produced infections)?\n\n2) Did the authors attempt phage induction via chemicals such as Mitomycin C? If so, please include these experiments. Alternatively, the authors could discuss why this is not promising for this group of phages with a different integration/excision mechanism.\n\n3) The authors need to show the absence of other viruses in the propagation strain. The genome of E. coliDH5\u03b1 has 5 prophages, four of which are intact (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5843723/). Please provide evidence that the plaques and virions shown in Figure 1 panels B,C, D and E are the Enterogokushovirus and not one of the prophages in the strain.\n\n4) The authors need to comment on why there is no phage integration when the BW25113\u0394xerD strain is complemented with a functional version of xerD in a plasmid.\n\n5) What is the frequency of integration in the case of BW25113 and EC6098\u0394difCD?\n\nThere were also several issues raised regarding data analysis:\n\n6) It was surprising that only 2 prophages similar to this group were identified from screening the human and cattle gut microbiomes. Were viromes examined as well as cellular microbiomes? Looking at the BioProjects searched, it seems like they may have been included but this should be stated explicitly. It would be extremely interesting to know if this group of enterogokushoviruses is found more often in viromes (i.e., free viral particles) as opposed to cellular metagenomes, which might provide insight about their lifestyles and help support the claims in subsection \u201cRecovering prophages from metagenomes\u201d.\n\n7) The argument presented using the prophages and bacteria phylogenies (Figure 2) is not clear and lacks support. The phylogenies need to be improved as no data is presented to support or reject the hypothesis that Enterogokushovirus infect closely related E. coli strains.\n\n8) The definition of Enterogokushovirus in based on ANI >50%, conserved gene order and a prophage distribution limited to Enterobacteriaceae host, however no data is shown for the conserved gene order or the host of the presented Enterogokushovirus. Quantitative measurements need to be shown for the number of Enterogokushovirus identified in Enterobacteriaceae.\n\n9) It was also suggested that a schematic be added (Discussion section) showing the gene order of the enterogokushoviruses compared to representatives from other major groups of Microviridae (including Alpavirinae and other previously described major groups, even if they have not been recognized by the ICTV).\n\n10) While true that having this gokushovirus model system can help in the exploration of gene function and host range determinants (subsection \u201cPhylogenetic analysis of Gokushovirinae\u201d), the data presented here imply that the hypervariable region in VP1 serves as a host range determinant. However, there isn't sufficient evidence for this and there also appear to be other variable regions in the genome.\n\n11) The authors should make available as a supplementary file the gokushovirus alignment used to make Figure 4 (ideally including the metadata on isolation source).\n\n12) One reviewer considers that a reorganization of the Results sections could improve the manuscript. Currently, the section on phylogeny (subsection \u201cProphages of enterobacteria form a distinct gokushovirus clade\u201d) interrupts the experimental work on E. coli (subsection \u201cMechanisms of enterobacterial gokushoviruses integration into host genomes\u201d and Subsection \u201cIntegration into host genomes is not necessary for long-term persistence\u201d). Perhaps moving the phylogeny section, which includes dif motifs, to the end of the results would provide a general outlook on the prevalence of this mechanism.\n\n13) Third paragraph of the Discussion section should say \"substitution rate\" instead of mutation rate for the result from Minot et al., 2013. The difference is described e.g. in 10.1038/nrg2323 and perhaps two separate statements could be included, one on mutation rates as described in Sanjuan et al., 2010 and one on substitution rates as described in Minot et al., 2013.\n",
+      "created_at": "2025-12-02T15:27:43.321261Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T15:27:43.321261Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T15:27:43.321261Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "d63b07ca-19e8-472b-80a0-0707d60ad136",
+      "content_id": "9128e17a-65c5-46c6-9906-13011062f7fd",
+      "claim_id": "C1",
+      "claim": "Gokushoviruses are single-stranded, circular DNA bacteriophages found in metagenomic datasets from diverse ecosystems worldwide, including human gut microbiomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Gokushoviruses are single-stranded, circular DNA bacteriophages found in metagenomic datasets from diverse ecosystems worldwide, including human gut microbiomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the abstract and is supported by citations throughout the manuscript.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:27:43.321261Z"
+    },
+    {
+      "id": "af7ecff3-4374-43f7-97ab-91477ca16488",
+      "content_id": "9128e17a-65c5-46c6-9906-13011062f7fd",
+      "claim_id": "C2",
+      "claim": "Isolates of gokushoviruses are exceedingly rare, known only from three obligate intracellular bacterial genera.",
+      "claim_type": "EXPLICIT",
+      "source": "Isolates are exceedingly rare, known only from three obligate intracellular bacterial genera.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous work on Spiroplasma, Chlamydia, and Bdellovibrio hosts.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:27:43.321261Z"
+    },
+    {
+      "id": "71d964e6-1d1d-4ba2-ba1b-0c3ca655d469",
+      "content_id": "9128e17a-65c5-46c6-9906-13011062f7fd",
+      "claim_id": "C3",
+      "claim": "Gokushovirus virions can reliably infect and lysogenize hosts by hijacking a conserved chromosome-dimer resolution system.",
+      "claim_type": "EXPLICIT",
+      "source": "We demonstrate that virions can reliably infect and lysogenize hosts by hijacking a conserved chromosome-dimer resolution system.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through experimental data presented in the manuscript, including integration assays and genetic complementation experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:27:43.321261Z"
+    },
+    {
+      "id": "2e476019-4462-4e8d-b3db-b81d4105e47d",
+      "content_id": "9128e17a-65c5-46c6-9906-13011062f7fd",
+      "claim_id": "C4",
+      "claim": "Sequence motifs required for lysogeny are detectable in other metagenomically defined gokushoviruses.",
+      "claim_type": "EXPLICIT",
+      "source": "Sequence motifs required for lysogeny are detectable in other metagenomically defined gokushoviruses",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the bioinformatic analysis of dif-motifs across gokushovirus MAGs presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:27:43.321261Z"
+    },
+    {
+      "id": "6fe60022-9c5c-495c-96e9-52995b8ad5a7",
+      "content_id": "9128e17a-65c5-46c6-9906-13011062f7fd",
+      "claim_id": "C5",
+      "claim": "Even partial motifs enable phages to persist cytoplasmically without leading to collapse of their host culture.",
+      "claim_type": "EXPLICIT",
+      "source": "we show that even partial motifs enable phages to persist cytoplasmically without leading to collapse of their host culture.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through serial transfer experiments with phages lacking complete dif-motifs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:27:43.321261Z"
+    },
+    {
+      "id": "ef325091-4831-4644-972b-b85f2e403362",
+      "content_id": "9128e17a-65c5-46c6-9906-13011062f7fd",
+      "claim_id": "C6",
+      "claim": "The ability to employ multiple, disparate survival strategies is likely key to the long-term persistence and global distribution of Gokushovirinae.",
+      "claim_type": "EXPLICIT",
+      "source": "This ability to employ multiple, disparate survival strategies is likely key to the long-term persistence and global distribution of Gokushovirinae.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the experimental findings and ecological observations presented in the manuscript.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:27:43.321261Z"
+    },
+    {
+      "id": "e6da7309-5afd-4e52-918d-67b9c950a205",
+      "content_id": "9128e17a-65c5-46c6-9906-13011062f7fd",
+      "claim_id": "C7",
+      "claim": "Single-stranded circular DNA (ssDNA) phages of the family Microviridae are among the most common and rapidly evolving viruses present in the human gut.",
+      "claim_type": "EXPLICIT",
+      "source": "Single-stranded circular DNA (ssDNA) phages of the family Microviridae are among the most common and rapidly evolving viruses present in the human gut (Lim et al., 2015; Minot et al., 2013; Manrique et al., 2017; Shkoporov et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by multiple citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:27:43.321261Z"
+    },
+    {
+      "id": "b4be00ac-aa65-425b-abe9-0a701b945270",
+      "content_id": "9128e17a-65c5-46c6-9906-13011062f7fd",
+      "claim_id": "C8",
+      "claim": "Members of the subfamily Gokushovirinae are detected in metagenomic datasets from diverse environments, ranging from methane seeps to stromatolites, termite hindguts, freshwater bogs and the open ocean.",
+      "claim_type": "EXPLICIT",
+      "source": "Within the Microviridae, members of the subfamily Gokushovirinae are detected in metagenomic datasets from diverse environments, ranging from methane seeps to stromatolites, termite hindguts, freshwater bogs and the open ocean (Bryson et al., 2015; Desnues et al., 2008; Quaiser et al., 2015; Tikhe and Husseneder, 2018; Tucker et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to previous metagenomic studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:27:43.321261Z"
+    },
+    {
+      "id": "d03b7598-cc26-45ec-af3d-69ac3980459f",
+      "content_id": "9128e17a-65c5-46c6-9906-13011062f7fd",
+      "claim_id": "C9",
+      "claim": "Full assembly of gokushovirus phages from metagenomic data is easy due to their small, circular genomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Due to their small, circular genomes, full assembly of these phages from metagenomic data is easy (Creasy et al., 2018; Labont\u00e9 and Suttle, 2013; Roux et al., 2012)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work on metagenomic assembly of microviruses.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:27:43.321261Z"
+    },
+    {
+      "id": "4025d33b-4b5a-4cf1-b030-c929974b8e07",
+      "content_id": "9128e17a-65c5-46c6-9906-13011062f7fd",
+      "claim_id": "C10",
+      "claim": "More than a thousand complete metagenome-assembled microvirus genomes have been deposited to NCBI as of beginning of 2020.",
+      "claim_type": "EXPLICIT",
+      "source": "more than a thousand complete metagenome-assembled microvirus genomes have been deposited to NCBI as of beginning of 2020.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement about database contents at a specific time point.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:27:43.321261Z"
+    },
+    {
+      "id": "d2f2f420-1624-4c7b-b888-ae9b173b2434",
+      "content_id": "9128e17a-65c5-46c6-9906-13011062f7fd",
+      "claim_id": "C11",
+      "claim": "Microviridae have been isolated from very few hosts, hardly representative of their diversity as a whole.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, Microviridae have been isolated from very few hosts, hardly representative of their diversity as a whole",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the limited number of isolated microviruses cited in the manuscript.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:27:43.321261Z"
+    },
+    {
+      "id": "5a86efb9-0c07-4790-bbbe-d19b267a366f",
+      "content_id": "9128e17a-65c5-46c6-9906-13011062f7fd",
+      "claim_id": "C12",
+      "claim": "The only readily cultivable member of the Microviridae family is phiX174, which is classified to the distantly related subfamily Bullavirinae.",
+      "claim_type": "EXPLICIT",
+      "source": "the only readily cultivable member of this family is phiX174, which is classified to the distantly related subfamily Bullavirinae (Doore and Fane, 2016; Krupovic et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work on phiX174 and microvirus taxonomy.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:27:43.321261Z"
+    },
+    {
+      "id": "b347f399-0efb-4653-b35f-069f53ca3c4d",
+      "content_id": "9128e17a-65c5-46c6-9906-13011062f7fd",
+      "claim_id": "C13",
+      "claim": "PhiX and phiX-like phages are rare in nature and occupy a small specialist niche as lytic predators of select strains of Escherichia coli.",
+      "claim_type": "EXPLICIT",
+      "source": "While phiX and phiX-like phages are among the most well-studied groups of viruses, they are rare in nature and occupy a small specialist niche as lytic predators of select strains of Escherichia coli (Michel et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous work on phiX ecology.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:27:43.321261Z"
+    },
+    {
+      "id": "7a4ed787-3869-4071-9823-e86548c7ec8d",
+      "content_id": "9128e17a-65c5-46c6-9906-13011062f7fd",
+      "claim_id": "C14",
+      "claim": "The Gokushovirinae and several other subfamilies of Microviridae are seemingly abundant in the environment but almost exclusively known from metagenomic datasets.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, the Gokushovirinae and several other (though not formally described) subfamilies of Microviridae are seemingly abundant in the environment but almost exclusively known from metagenomic datasets (Creasy et al., 2018; Sz\u00e9kely and Breitbart, 2016)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous metagenomic studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:27:43.321261Z"
+    },
+    {
+      "id": "f7fe1c05-2018-46ae-8f8e-ca84d3475ae2",
+      "content_id": "9128e17a-65c5-46c6-9906-13011062f7fd",
+      "claim_id": "C15",
+      "claim": "Estimates of gokushovirus numbers could be biased due to the methods used to prepare metagenomic samples.",
+      "claim_type": "EXPLICIT",
+      "source": "although estimates of their actual numbers could be biased due to the methods used to prepare metagenomic samples (Kim and Bae, 2011; Roux et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work on metagenomic methodology.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:27:43.321261Z"
+    },
+    {
+      "id": "9228ec27-411f-433c-99a3-421cba315111",
+      "content_id": "9128e17a-65c5-46c6-9906-13011062f7fd",
+      "claim_id": "C16",
+      "claim": "The only isolated gokushoviruses are lytic parasites recovered from the host-restricted intracellular bacteria Spiroplasma, Chlamydia and Bdellovibrio.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite their apparent prevalence in the environment, the only isolated gokushoviruses are lytic parasites recovered from the host-restricted intracellular bacteria Spiroplasma, Chlamydia and Bdellovibrio (Brentlinger et al., 2002; Garner et al., 2004; Ricard et al., 1980).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to the original isolation papers for these phages.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:27:43.321261Z"
+    },
+    {
+      "id": "7e45e12b-3d32-4d30-a0c9-518c0fdfc842",
+      "content_id": "9128e17a-65c5-46c6-9906-13011062f7fd",
+      "claim_id": "C17",
+      "claim": "It seems unlikely that Gokushovirinae only infect intracellular bacteria given their regular occurrence in metagenomes from diverse habitats.",
+      "claim_type": "EXPLICIT",
+      "source": "Given their regular occurrence in metagenomes from diverse habitats, it seems unlikely that Gokushovirinae only infect intracellular bacteria, and their lack of recovery from other hosts is puzzling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the ecological distribution of gokushoviruses.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:27:43.321261Z"
+    },
+    {
+      "id": "3f43caac-0a88-4550-8be5-65aa9c3f86c3",
+      "content_id": "9128e17a-65c5-46c6-9906-13011062f7fd",
+      "claim_id": "C18",
+      "claim": "Typical gokushoviruses pack their 4000-6000 nt genomes, composed of 3\u201311 genes, into tailless icosahedral phage capsids.",
+      "claim_type": "EXPLICIT",
+      "source": "Typical gokushoviruses pack their 4000-6000 nt genomes, composed of 3\u201311 genes, into tailless icosahedral phage capsids (Roux et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous work characterizing gokushovirus genomes.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:27:43.321261Z"
+    },
+    {
+      "id": "28b194d4-92ca-4a0a-a4b7-5efe33af2c64",
+      "content_id": "9128e17a-65c5-46c6-9906-13011062f7fd",
+      "claim_id": "C19",
+      "claim": "No gokushoviruses encode an integrase, which has led to the assumption that they are lytic phages.",
+      "claim_type": "EXPLICIT",
+      "source": "No gokushoviruses encode an integrase, which has led to the assumption that they are lytic phages.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on genomic analysis of gokushoviruses and established knowledge about integrase function.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:27:43.321261Z"
+    },
+    {
+      "id": "6512ad32-93a3-43d8-a329-27e1d2ff2328",
+      "content_id": "9128e17a-65c5-46c6-9906-13011062f7fd",
+      "claim_id": "C20",
+      "claim": "The presence of prophages belonging to several undescribed groups of microviruses within the genomes of some Bacteroidetes and Alphaproteobacteria raises the possibility that some can be integrated through the use of host-proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the presence of prophages belonging to several undescribed groups of microviruses within the genomes of some Bacteroidetes and Alphaproteobacteria (Krupovic and Forterre, 2011; Zhan and Chen, 2019; Zheng et al., 2018) raises the possibility that some can be integrated through the use of host-proteins, in a similar manner to the XerC/XerD dependent integration of ssDNA Inoviridae (Krupovic and Forterre, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work on microvirus prophages and inovirus integration.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:27:43.321261Z"
+    },
+    {
+      "id": "4bf50936-2f0a-4c3b-b131-e4526d397fe4",
+      "content_id": "9128e17a-65c5-46c6-9906-13011062f7fd",
+      "claim_id": "C21",
+      "claim": "All gokushovirus genomes assembled from metagenomic data lack multiple genes that are present in phiX-like phages.",
+      "claim_type": "EXPLICIT",
+      "source": "All gokushovirus genomes assembled from metagenomic data lack multiple genes that are present in phiX-like phages (Roux et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous comparative genomic work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:27:43.321261Z"
+    },
+    {
+      "id": "ce7855d9-2b96-4e6b-a811-ae4cf1646bc3",
+      "content_id": "9128e17a-65c5-46c6-9906-13011062f7fd",
+      "claim_id": "C22",
+      "claim": "Gokushoviruses lack a peptidoglycan synthesis inhibitor that leads to host cell lysis, although some phages appear to have horizontally acquired bacterial peptidases.",
+      "claim_type": "EXPLICIT",
+      "source": "Markedly absent are: (i) a peptidoglycan synthesis inhibitor that leads to host cell lysis (although some phages appear to have horizontally acquired bacterial peptidases)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on genomic analysis and comparison with phiX.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:27:43.321261Z"
+    },
+    {
+      "id": "88e80b74-be73-4299-af2f-6f4d530f4d5f",
+      "content_id": "9128e17a-65c5-46c6-9906-13011062f7fd",
+      "claim_id": "C23",
+      "claim": "Gokushoviruses lack a major spike protein involved in host cell attachment.",
+      "claim_type": "EXPLICIT",
+      "source": "(ii) a major spike protein involved in host cell attachment (Doore and Fane, 2016; Roux et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work on gokushovirus and phiX genomics.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:27:43.321261Z"
+    },
+    {
+      "id": "50691938-d033-484e-ab0b-1a9a0c5a0389",
+      "content_id": "9128e17a-65c5-46c6-9906-13011062f7fd",
+      "claim_id": "C24",
+      "claim": "The absence of peptidoglycan synthesis inhibitor and major spike protein from gokushoviruses indicates that these phages might operate quite differently from phiX on a molecular level.",
+      "claim_type": "EXPLICIT",
+      "source": "These proteins represent crucial elements in the infectious cycle of phiX, and their absence from other gokushoviruses indicates that these phages might operate quite differently on a molecular level.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the genomic differences between gokushoviruses and phiX.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:27:43.321261Z"
+    },
+    {
+      "id": "e3f119a2-602d-4d6b-9473-6a093396e707",
+      "content_id": "9128e17a-65c5-46c6-9906-13011062f7fd",
+      "claim_id": "C25",
+      "claim": "A large number of gokushovirus prophages are integrated into the genomes of enterobacteria.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we detect a large number of gokushovirus prophages integrated into the genomes of enterobacteria, contrasting with their predicted exclusively lytic lifestyle.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the bioinformatic analysis presented in the Results section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:27:43.321261Z"
+    },
+    {
+      "id": "c9551f06-73ab-4992-ada9-34b320cc9016",
+      "content_id": "9128e17a-65c5-46c6-9906-13011062f7fd",
+      "claim_id": "C26",
+      "claim": "Through transformation of a synthesized prophage genome into a laboratory strain of Escherichia coli, a novel gokushovirus capable of lysogenizing enterobacteria was cultivated.",
+      "claim_type": "EXPLICIT",
+      "source": "Through transformation of a synthesized prophage genome into a laboratory strain of Escherichia coli, we cultivate a novel gokushovirus capable of lysogenizing enterobacteria.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through the experimental work described in the Results section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:27:43.321261Z"
+    },
+    {
+      "id": "d9e6119f-c9a3-449e-afb7-80517f489abe",
+      "content_id": "9128e17a-65c5-46c6-9906-13011062f7fd",
+      "claim_id": "C27",
+      "claim": "The gokushovirus EC6098 is capable of passive integration via XerC/XerD mediated recombination of phage encoded dif-motifs with their bacterial counterparts.",
+      "claim_type": "EXPLICIT",
+      "source": "Using this experimental model system, we demonstrate that this phage is capable of passive integration via XerC/XerD mediated recombination of phage encoded dif-motifs with their bacterial counterparts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through genetic complementation and mutant analysis experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:27:43.321261Z"
+    },
+    {
+      "id": "0627c197-7f5c-42c8-a800-4ab63fba5b07",
+      "content_id": "9128e17a-65c5-46c6-9906-13011062f7fd",
+      "claim_id": "C28",
+      "claim": "The capability for XerC/XerD-mediated integration has evolved independently in multiple lineages of gokushoviruses.",
+      "claim_type": "EXPLICIT",
+      "source": "We also show that this capability has evolved independently in multiple lineages of gokushoviruses",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the phylogenetic distribution of dif-motifs across gokushovirus lineages.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:27:43.321261Z"
+    },
+    {
+      "id": "38df878f-afc6-4fa4-85db-1ba6a3613128",
+      "content_id": "9128e17a-65c5-46c6-9906-13011062f7fd",
+      "claim_id": "C29",
+      "claim": "There exists an intermediate, pseudolysogenic step between lytic and lysogenic lifestyle in gokushoviruses.",
+      "claim_type": "EXPLICIT",
+      "source": "and demonstrate the existence of an intermediate, pseudolysogenic step between lytic and lysogenic lifestyle",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through serial transfer experiments with phages lacking complete integration machinery.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:27:43.321261Z"
+    },
+    {
+      "id": "12ed7549-b413-4b51-9731-69ad06ecf9ae",
+      "content_id": "9128e17a-65c5-46c6-9906-13011062f7fd",
+      "claim_id": "C30",
+      "claim": "Gokushoviruses can lead a decidedly different existence from that of previously characterized members of the Gokushovirinae.",
+      "claim_type": "EXPLICIT",
+      "source": "indicating that gokushoviruses can lead a decidedly different existence from that of previously characterized members of the Gokushovirinae.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the experimental findings showing lysogenic and pseudolysogenic capabilities.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:27:43.321261Z"
+    },
+    {
+      "id": "74212c24-6b12-49fe-8f1e-bfa4dd02b50f",
+      "content_id": "9128e17a-65c5-46c6-9906-13011062f7fd",
+      "claim_id": "C31",
+      "claim": "Querying fully assembled bacterial genomes with the major capsid protein VP1 of gokushovirus Chlamydia-phage 4 returned 95 high-confidence hits within the Enterobacteriaceae.",
+      "claim_type": "EXPLICIT",
+      "source": "Querying fully assembled bacterial genomes with the major capsid protein VP1 of gokushovirus Chlamydia-phage 4 (NCBI Gene ID 3703676) returned 95 high-confidence hits (E-value <0.0001) within the Enterobacteriaceae (91 from Escherichia, and one each from Enterobacter, Salmonella, Citrobacter and Kosakonia; Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct result from the bioinformatic analysis performed in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:27:43.321261Z"
+    },
+    {
+      "id": "e76e4722-ae0a-44d9-b6df-892f78c60913",
+      "content_id": "9128e17a-65c5-46c6-9906-13011062f7fd",
+      "claim_id": "C32",
+      "claim": "Inspection of genomic regions revealed the presence of integrated prophages 4300\u20134700 bp in length with a conserved six-gene arrangement: VP4, VP5, VP3, VP1, VP2 and VP8.",
+      "claim_type": "EXPLICIT",
+      "source": "Although Gokushovirinae were previously known only as lytic phages, inspection of each of the associated genomic regions revealed the presence of integrated prophages 4300\u20134700 bp in length and having a conserved six-gene arrangement: VP4 (replication initiation protein), VP5 (switch from dsDNA to ssDNA replication protein), VP3 (scaffold protein), VP1 (major capsid protein), VP2 (minor capsid protein) and VP8 (putative DNA-binding protein).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on genomic analysis of the detected prophages.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:27:43.321261Z"
+    },
+    {
+      "id": "c90d832e-149a-477a-b424-4474f5227b06",
+      "content_id": "9128e17a-65c5-46c6-9906-13011062f7fd",
+      "claim_id": "C33",
+      "claim": "Most of the variation in genome size and sequence of enterogokushovirus prophages is confined to three regions: near the C-terminus of VP2, in the non-coding region between VP8 and VP2, and within VP1.",
+      "claim_type": "EXPLICIT",
+      "source": "Most of the variation in both the genome size and sequence of these prophages is confined to three regions: (i) near the C-terminus of VP2, (ii) in the non-coding region between VP8 and VP2, and (iii) within VP1, whose hypervariability is characteristic of the Gokushovirinae (Chipman et al., 1998; Diemer and Stedman, 2016; Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on sequence alignment and analysis, with reference to Figure 1A and citations to previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:27:43.321261Z"
+    },
+    {
+      "id": "cdbbb1e0-4b4f-44eb-a80e-cc08ddad44c6",
+      "content_id": "9128e17a-65c5-46c6-9906-13011062f7fd",
+      "claim_id": "C34",
+      "claim": "All detected prophages are flanked by dif-motifs, which are 28 bp palindromic sites that are known to be the targets of passive integration by phages and other mobile elements.",
+      "claim_type": "EXPLICIT",
+      "source": "All detected prophages are flanked by dif-motifs, which are 28 bp palindromic sites that are known to be the targets of passive integration by phages and other mobile elements (Blakely et al., 1993; Das et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on sequence analysis and supported by citations to previous work on dif-motifs.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:27:43.321261Z"
+    },
+    {
+      "id": "f150ba24-e318-4cd7-a1b9-3941fe7f597f",
+      "content_id": "9128e17a-65c5-46c6-9906-13011062f7fd",
+      "claim_id": "C35",
+      "claim": "The dif-motifs upstream of the insertions are highly conserved and individually differ by, at most, one nucleotide from the canonical dif-motif of Escherichia coli.",
+      "claim_type": "EXPLICIT",
+      "source": "The dif-motifs upstream of the insertions are highly conserved and individually differ by, at most, one nucleotide from the canonical dif-motif of Escherichia coli.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on sequence alignment and comparison of the detected dif-motifs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:27:43.321261Z"
+    },
+    {
+      "id": "86066938-8682-4ae2-8afc-0e0268a531e5",
+      "content_id": "9128e17a-65c5-46c6-9906-13011062f7fd",
+      "claim_id": "C36",
+      "claim": "The upstream dif-motifs consist of a central 6 bp spacer flanked by two 11 bp arms, which bind tyrosine recombinases XerC/XerD during chromosome segregation and integration of mobile elements.",
+      "claim_type": "EXPLICIT",
+      "source": "These upstream dif-motifs consist of a central 6 bp spacer flanked by two 11 bp arms, previously been shown to bind tyrosine recombinases XerC/XerD during chromosome segregation and integration of mobile elements (Castillo et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on sequence analysis and supported by a citation to previous work on XerC/XerD binding.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:27:43.321261Z"
+    },
+    {
+      "id": "97b7e7df-695a-4a74-851e-32f50d7f2cc2",
+      "content_id": "9128e17a-65c5-46c6-9906-13011062f7fd",
+      "claim_id": "C37",
+      "claim": "The dif-motifs downstream of detected prophages are more variable, particularly in the spacer region and XerD-binding arms, representing the phage dif-motifs integrated along with the phage.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the dif-motifs downstream of detected prophages are more variable, particularly in the spacer region and XerD-binding arms, representing the phage dif-motifs integrated along with the phage (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on sequence analysis and shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:27:43.321261Z"
+    },
+    {
+      "id": "f399841d-0d56-4b7e-8b4d-759e109f6239",
+      "content_id": "9128e17a-65c5-46c6-9906-13011062f7fd",
+      "claim_id": "C38",
+      "claim": "A whole genome phylogeny of gokushovirus prophages shows a number of well-differentiated lineages, forming clades A-J that each contains members with >95% average nucleotide identity, and 14 singleton lineages with no close relatives.",
+      "claim_type": "EXPLICIT",
+      "source": "A whole genome phylogeny of gokushovirus prophages shows a number of well-differentiated (bootstrap support 70% or higher) lineages, forming clades A-J that each contains members with >95% average nucleotide identity, and 14 singleton lineages with no close relatives (Figure 1B, Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on phylogenetic analysis and shown in Figure 1B and Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:27:43.321261Z"
+    },
+    {
+      "id": "8a8c7101-2153-4bc6-9787-ac6a84dc3ffa",
+      "content_id": "9128e17a-65c5-46c6-9906-13011062f7fd",
+      "claim_id": "C39",
+      "claim": "Prophages belonging to clade A-D are found dispersed across the host phylogeny, while prophage clade I is confined to a single E. coli clade.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, whereas prophages belonging to clade A-D are found dispersed across the host phylogeny, prophage clade I is confined to a single E. coli clade (possibly as a result of the limited number of detected prophages).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on comparison of phage and host phylogenies shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:27:43.321261Z"
+    },
+    {
+      "id": "0b7c3029-8044-458e-b120-d8decda8fcaa",
+      "content_id": "9128e17a-65c5-46c6-9906-13011062f7fd",
+      "claim_id": "C40",
+      "claim": "In all but one case, each E. coli host harbors only a single gokushovirus prophage.",
+      "claim_type": "EXPLICIT",
+      "source": "In all but one case, each E. coli host harbors only a single gokushovirus prophage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on analysis of the detected prophages in bacterial genomes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:27:43.321261Z"
+    },
+    {
+      "id": "3ad5319a-7877-41cc-9502-c30101e33886",
+      "content_id": "9128e17a-65c5-46c6-9906-13011062f7fd",
+      "claim_id": "C41",
+      "claim": "There is no obvious association between the presence of gokushovirus prophages and particular E. coli O-serotypes among those strains for which information on O-antigens is available.",
+      "claim_type": "EXPLICIT",
+      "source": "Although phage attachment and infection sometimes depend on O-antigenicity, there is no obvious association between the presence of gokushovirus prophages and particular E. coli O-serotypes among those strains for which information on O-antigens is available (Zhou et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on analysis of O-serotype data for strains harboring prophages.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:27:43.321261Z"
+    },
+    {
+      "id": "6a04983e-48a7-47a0-9302-138c2cece5b7",
+      "content_id": "9128e17a-65c5-46c6-9906-13011062f7fd",
+      "claim_id": "C42",
+      "claim": "Four identical prophages belonging to clade C were detected in E. coli strains MOD1-EC5200 (O76:H19), MOD1-EC5181 (O132:H8), NCTC9043 (O43:H2) and MOD1-EC6266 (O124:H21).",
+      "claim_type": "EXPLICIT",
+      "source": "For example, four identical prophages belonging to clade C could be detected in E. coli strains MOD1-EC5200 (O76:H19), MOD1-EC5181 (O132:H8), NCTC9043 (O43:H2) and MOD1-EC6266 (O124:H21) (Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on sequence analysis and O-serotype data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:27:43.321261Z"
+    },
+    {
+      "id": "bcc07634-e963-4ab9-8035-ffa3aed028fc",
+      "content_id": "9128e17a-65c5-46c6-9906-13011062f7fd",
+      "claim_id": "C43",
+      "claim": "Most gokushovirus prophages were detected in diverse E. coli strains isolated from various animals, mainly cattle and marmots.",
+      "claim_type": "EXPLICIT",
+      "source": "Most gokushovirus prophages were detected in diverse E. coli strains isolated from various animals, mainly cattle and marmots, but five prophages were detected in isolates from humans, including one from a urinary tract infection (Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on metadata associated with the bacterial strains harboring prophages.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:27:43.321261Z"
+    },
+    {
+      "id": "c30e9f4c-0d11-4514-a02f-1891de2dd603",
+      "content_id": "9128e17a-65c5-46c6-9906-13011062f7fd",
+      "claim_id": "C44",
+      "claim": "Five prophages were detected in isolates from humans, including one from a urinary tract infection.",
+      "claim_type": "EXPLICIT",
+      "source": "but five prophages were detected in isolates from humans, including one from a urinary tract infection (Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on metadata associated with the bacterial strains harboring prophages.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:27:43.321261Z"
+    },
+    {
+      "id": "ad7d250e-c31f-4371-ae95-c76374b42761",
+      "content_id": "9128e17a-65c5-46c6-9906-13011062f7fd",
+      "claim_id": "C45",
+      "claim": "Enterobacterial prophages form a well-supported, monophyletic clade within the Gokushovirinae.",
+      "claim_type": "EXPLICIT",
+      "source": "Phylogenetic analysis of available gokushovirus genomes based on an alignment of the conserved VP1 and VP4 proteins (n = 855; including the enterobacterial prophages discovered in this study, the previously sequenced lytic gokushoviruses from Chlamydia, Spiroplasma and Bdellovibrio, and the metagenomically assembled gokushovirus genomes available from NCBI) returned enterobacterial prophages as a well-supported (97% bootstrap support), monophyletic clade within the Gokushovirinae (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on phylogenetic analysis shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:27:43.321261Z"
+    },
+    {
+      "id": "6cfc0ce5-637d-4e37-878a-d9309cbdedd2",
+      "content_id": "9128e17a-65c5-46c6-9906-13011062f7fd",
+      "claim_id": "C46",
+      "claim": "The distinctiveness of the enterobacterial prophage clade, whose members share a conserved gene order and display an average nucleotide identity of >50%, advocates the formation of a new proposed genus within the family Microviridae (subfamily Gokushovirinae), named Enterogokushovirus.",
+      "claim_type": "EXPLICIT",
+      "source": "The distinctiveness of this clade, whose members share a conserved (but not unique) gene order and display an average nucleotide identity of >50% (Figure 1\u2014figure supplement 1 and Supplementary file 2), advocates the formation of a new proposed genus within the family Microviridae (subfamily Gokushovirinae), for which we suggest the name Enterogokushovirus on account of a distribution limited to members of the Enterobactericeae.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on phylogenetic and genomic analysis, with reference to Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:27:43.321261Z"
+    },
+    {
+      "id": "a20cf95b-8b8d-4233-88a3-d42d9050cae4",
+      "content_id": "9128e17a-65c5-46c6-9906-13011062f7fd",
+      "claim_id": "C47",
+      "claim": "A unique feature of enterogokushoviruses among the Gokushovirinae appears to be the ability to exist as lysogens.",
+      "claim_type": "EXPLICIT",
+      "source": "Since a unique feature of enterogokushoviruses among the Gokushovirinae appears to be the ability to exist as lysogens, we searched all other gokushovirus MAGs in our dataset for dif-like sequence motifs that might be indicative of lysogenic ability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the detection of integrated prophages and comparison with other gokushoviruses.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:27:43.321261Z"
+    },
+    {
+      "id": "51a45cae-f6b8-4b06-b809-f5b4f0b06465",
+      "content_id": "9128e17a-65c5-46c6-9906-13011062f7fd",
+      "claim_id": "C48",
+      "claim": "Similar dif-like motifs were detected in 48 genomes distributed sporadically throughout the gokushovirus phylogeny.",
+      "claim_type": "EXPLICIT",
+      "source": "We detected similar motifs in 48 genomes distributed sporadically throughout the gokushovirus phylogeny.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on bioinformatic search for dif-motifs in gokushovirus MAGs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:27:43.321261Z"
+    },
+    {
+      "id": "ca1dd615-e64f-4b8c-b4cb-5ad6916b7fa3",
+      "content_id": "9128e17a-65c5-46c6-9906-13011062f7fd",
+      "claim_id": "C49",
+      "claim": "Aside from the enterogokushoviruses, there are two larger clades in which multiple genomes contain a dif-motif, with the rest of dif-bearing MAGs found largely as singletons.",
+      "claim_type": "EXPLICIT",
+      "source": "Aside from the enterogokushoviruses, there are two larger clades in which multiple genomes contain a dif-motif, with the rest of dif-bearing MAGs found largely as singletons (Figure 2; Supplementary file 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on phylogenetic analysis and dif-motif detection, shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:27:43.321261Z"
+    },
+    {
+      "id": "6a92b124-3b8a-40bb-a974-cd94d7886ef9",
+      "content_id": "9128e17a-65c5-46c6-9906-13011062f7fd",
+      "claim_id": "C50",
+      "claim": "The majority of putative dif-motifs occurs in non-coding regions, and those detected within coding regions were typically at the 5'- or 3'-end of a predicted gene.",
+      "claim_type": "EXPLICIT",
+      "source": "The majority of these putative dif-motifs occurs in non-coding regions, and those detected within coding regions were typically at the 5'- or 3'-end of a predicted gene, with a nearby alternative start or stop codon that could preserve the genetic integrity of the phage through integration and excision.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on analysis of the genomic context of detected dif-motifs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:27:43.321261Z"
+    },
+    {
+      "id": "101101ca-9265-41b1-adaf-ede99cbef1e8",
+      "content_id": "9128e17a-65c5-46c6-9906-13011062f7fd",
+      "claim_id": "C51",
+      "claim": "The overall dearth of dif-like sequences in gokushoviruses sampled from diverse geographic and ecological settings highlights the distinctiveness of Enterogokushovirus genomes and lifestyle.",
+      "claim_type": "EXPLICIT",
+      "source": "The overall dearth of dif-like sequences in gokushoviruses sampled from diverse geographic and ecological settings highlights the distinctiveness of Enterogokushovirus genomes and lifestyle.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the comparative analysis of dif-motif distribution.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:27:43.321261Z"
+    },
+    {
+      "id": "0fd37159-974d-4b72-9211-d3a07a90731b",
+      "content_id": "9128e17a-65c5-46c6-9906-13011062f7fd",
+      "claim_id": "C52",
+      "claim": "Only two integrated prophages corresponding to E. coli gokushoviruses were fully assembled from 1839 samples from eight metagenomic studies of human and cattle gut microbiomes.",
+      "claim_type": "EXPLICIT",
+      "source": "We further attempted to determine the prevalence of enterobacterial gokushoviruses by interrogating 1839 samples from eight metagenomic studies of human and cattle gut microbiomes for the presence of closely related prophages. From these data, we were able to fully assemble only two integrated prophages corresponding to E. coli gokushoviruses, one from the fecal metagenome of an Austrian adult (0,05% of all reads in ERR688616) and the other from a Danish infant (0,02% of all reads in ERR525761) (see also Supplementary file 4).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on metagenomic assembly from multiple datasets.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:27:43.321261Z"
+    },
+    {
+      "id": "e32ff4ab-01df-421a-a262-c65f5a152c6a",
+      "content_id": "9128e17a-65c5-46c6-9906-13011062f7fd",
+      "claim_id": "C53",
+      "claim": "The integrity of prophage structure in all enterobacteria and the lack of premature stop codons suggested that these sequences represent intact, functional insertions into bacterial hosts.",
+      "claim_type": "EXPLICIT",
+      "source": "The integrity of prophage structure in all enterobacteria and the lack of premature stop codons suggested that these sequences represent intact, functional insertions into bacterial hosts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on genomic analysis of the detected prophages.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:27:43.321261Z"
+    },
+    {
+      "id": "db89ac5c-a6d2-4277-88bd-c5566eb65a8b",
+      "content_id": "9128e17a-65c5-46c6-9906-13011062f7fd",
+      "claim_id": "C54",
+      "claim": "Sequences corresponding to prophages from four Escherichia strains were amplified, circularized and transformed into E. coli DH5\u03b1.",
+      "claim_type": "EXPLICIT",
+      "source": "To confirm the functionality of Escherichia gokushovirus prophages, characterize their biology and provide a type strain, we attempted to construct phages from genomic DNA of Escherichia strains MOD1-EC2703, MOD1-EC5150, MOD1-EC6098 and MOD1-EC6163, selected to represent the diversity of gokushovirus prophages and hosts (Figure 1B). Sequences corresponding to prophages from these four Escherichia strains were amplified, circularized and transformed into E. coli DH5\u03b1 (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the experimental procedure performed, shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:27:43.321261Z"
+    },
+    {
+      "id": "3cde449e-844c-4003-8f31-278034e8998b",
+      "content_id": "9128e17a-65c5-46c6-9906-13011062f7fd",
+      "claim_id": "C55",
+      "claim": "Supernatants from the transformed DH5\u03b1 culture resulted in plaques for only one of four reconstructed phage genomes (EC6098) when used in agar-overlay assays with E. coli K12 BW25113 hosts.",
+      "claim_type": "EXPLICIT",
+      "source": "Supernatants from the transformed DH5\u03b1 culture were used in agar-overlay assays with E. coli K12 BW25113 hosts, resulting in plaques for only one of four reconstructed phage genomes (EC6098, derived from E. marmotae strain MOD1-EC6098 and belonging to prophage clade E (Figure 3B, Figure 3\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct experimental result shown in Figure 3B and Figure 3\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:27:43.321261Z"
+    },
+    {
+      "id": "e3d2d899-30e7-42e7-a50b-dc8a813ab39e",
+      "content_id": "9128e17a-65c5-46c6-9906-13011062f7fd",
+      "claim_id": "C56",
+      "claim": "DH5\u03b1 alone did not produce plaques on BW25113 and vice versa.",
+      "claim_type": "EXPLICIT",
+      "source": "While both DH5\u03b1 and BW25113 possess other prophages which could produce false positives when screening for gokushovirus production (Chen et al., 2018; Wang et al., 2010), DH5\u03b1 alone did not produce plaques on BW25113 and vice versa (Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a control experiment result shown in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:27:43.321261Z"
+    },
+    {
+      "id": "13ec7715-a1c9-4cb6-b491-fe1b94acdb66",
+      "content_id": "9128e17a-65c5-46c6-9906-13011062f7fd",
+      "claim_id": "C57",
+      "claim": "Circularized gokushovirus genomes were detected in all four strains (MOD1-EC2703, MOD1-EC5150, MOD1-EC6098 and MOD1-EC6163) via PCR, but only MOD1-EC6098 produced plaques.",
+      "claim_type": "EXPLICIT",
+      "source": "To corroborate the synthesis of EC6098 phages (and the inability to produce phages from the other three sequences), we additionally grew live cultures of MOD1-EC2703, MOD1-EC5150, MOD1-EC6098 and MOD1-EC6163 and via PCR detected the presence of circularized gokushovirus genomes in all four, but only MOD1-EC6098 produced plaques resembling those derived from synthetic EC6098 (Figure 3\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental result shown in Figure 3\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:27:43.321261Z"
+    },
+    {
+      "id": "398aa02a-7ea3-4c1f-800c-88a1b026db29",
+      "content_id": "9128e17a-65c5-46c6-9906-13011062f7fd",
+      "claim_id": "C58",
+      "claim": "Electron microscopic observation of pure EC6098 lysates revealed tailless icosahedral virions, 25\u201330 \u00b5m in size and displaying protrusions previously observed in other Gokushovirinae.",
+      "claim_type": "EXPLICIT",
+      "source": "Electron microscopic observation of pure EC6098 lysates recovered at a buoyant density of around 1.3 g/cm\u22123 in CsCl gradients (the range expected for members of the Microviridae, Thurber et al., 2009), revealed tailless icosahedral virions, 25\u201330 \u00b5m in size and displaying protrusions previously observed in other Gokushovirinae (Chipman et al., 1998; Diemer and Stedman, 2016; Figure 3D,E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on electron microscopy data shown in Figure 3D,E and supported by citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:27:43.321261Z"
+    },
+    {
+      "id": "11aa4abb-54b6-4e81-a22c-5c283af8d098",
+      "content_id": "9128e17a-65c5-46c6-9906-13011062f7fd",
+      "claim_id": "C59",
+      "claim": "EC6098 represents the first isolation of a gokushovirus able to infect free-living bacteria as well as being able to integrate as a lysogen into bacterial genomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Because Gokushovirinae have only been recovered as lytic particles from intracellular bacteria, this represents the first isolation of a gokushovirus able to infect free-living bacteria as well as being able to integrate as a lysogen into bacterial genomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the experimental results and comparison with previously known gokushoviruses.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:27:43.321261Z"
+    },
+    {
+      "id": "6b0d32b0-688e-42ae-8f82-0a873a997a56",
+      "content_id": "9128e17a-65c5-46c6-9906-13011062f7fd",
+      "claim_id": "C60",
+      "claim": "The presence of circularized phage genomes could readily be detected from surviving colonies in confluent plaques derived from agar-overlay assays.",
+      "claim_type": "EXPLICIT",
+      "source": "We next investigated the process by which gokushoviruses integrate into the bacterial host chromosome (Figure 4A). The presence of circularized phage genomes could readily be detected from surviving colonies in confluent plaques derived from agar-overlay assays (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental result shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:27:43.321261Z"
+    },
+    {
+      "id": "d4f9a831-212e-4d3f-8b88-df75ce70f74c",
+      "content_id": "9128e17a-65c5-46c6-9906-13011062f7fd",
+      "claim_id": "C61",
+      "claim": "Using primers that flank both sides of the dif-motif in host strain BW25113, products were recovered that were enlarged by the length of the phage relative to colonies lacking the prophage.",
+      "claim_type": "EXPLICIT",
+      "source": "Using primers that flank both sides of the dif-motif in host strain BW25113, we recovered products that were enlarged by the length of the phage relative to colonies lacking the prophage (Figure 4A,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental result shown in Figure 4A,C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:27:43.321261Z"
+    },
+    {
+      "id": "6873c47e-fddf-4337-9162-ca3520e3d25e",
+      "content_id": "9128e17a-65c5-46c6-9906-13011062f7fd",
+      "claim_id": "C62",
+      "claim": "Sequencing confirmed that phage EC6098 integrates downstream of the BW25113 dif-motif, which remains unchanged.",
+      "claim_type": "EXPLICIT",
+      "source": "Sequencing confirmed that, in accordance with the integration site of detected prophages, phage EC6098 integrates downstream of the BW25113 dif-motif, which remains unchanged (corresponding to position 3,046,436\u20133,046,463 in the closed genome with accession number CP009273).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on sequencing data confirming the integration site.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:27:43.321261Z"
+    },
+    {
+      "id": "26091f50-319b-4df3-8c2f-4631523a4d4e",
+      "content_id": "9128e17a-65c5-46c6-9906-13011062f7fd",
+      "claim_id": "C63",
+      "claim": "Neither \u0394xerC nor \u0394xerD mutants of E. coli host strain BW25113 resulted in integration.",
+      "claim_type": "EXPLICIT",
+      "source": "Because none of the gokushovirus prophages encodes an integrase, we predicted that host factors XerC and XerD might be responsible for prophage integration, similar to what has been hypothesized for microvirus-prophages in Bacteroidetes (Krupovic and Forterre, 2011). Neither \u0394xerC nor \u0394xerD mutants of E. coli host strain BW25113 resulted in integration",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an experimental result from infection assays with knockout mutants.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:27:43.321261Z"
+    },
+    {
+      "id": "f9449482-248f-4f8b-a75a-1d258274801f",
+      "content_id": "9128e17a-65c5-46c6-9906-13011062f7fd",
+      "claim_id": "C64",
+      "claim": "The \u0394xerC mutant was restored by complementation with a plasmid expressing the intact version of xerC.",
+      "claim_type": "EXPLICIT",
+      "source": "but the \u0394xerC mutant was restored by complementation with a plasmid expressing the intact version of xerC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an experimental result from complementation assays.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:27:43.321261Z"
+    },
+    {
+      "id": "863c0a0c-8fdc-4f93-b6c1-bc377b791bed",
+      "content_id": "9128e17a-65c5-46c6-9906-13011062f7fd",
+      "claim_id": "C65",
+      "claim": "Phages with incomplete or no dif-motifs successfully infected hosts but failed to integrate into host genomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, phages with incomplete (i.e., lacking either their XerC or XerD binding site within the dif-motif, termed here \u0394difC and \u0394difD) or no dif-motifs (\u0394difCD) successfully infected hosts (as evidenced by the presence of circularized phage genomes in host colonies that had survived infection), but failed to integrate into host genomes, demonstrating the need for cooperative XerC/XerD binding for successful lysogeny (Table 1, Figure 4B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental result shown in Table 1, Figure 4B,C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:27:43.321261Z"
+    },
+    {
+      "id": "001a82a6-1ba7-48a3-93d1-e75493090a87",
+      "content_id": "9128e17a-65c5-46c6-9906-13011062f7fd",
+      "claim_id": "C66",
+      "claim": "The retention of dif-motifs after integration indicates that the integration process is reversible.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the retention of dif-motifs after integration indicates that this process is reversible",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the genomic structure of integrated prophages.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:27:43.321261Z"
+    },
+    {
+      "id": "7b685e25-1fda-4c70-afd3-aef4417a46a6",
+      "content_id": "9128e17a-65c5-46c6-9906-13011062f7fd",
+      "claim_id": "C67",
+      "claim": "There is a smaller fragment in addition to that indicating prophage insertion, corresponding to those cells in the same colony that do not harbor the integrated prophage.",
+      "claim_type": "EXPLICIT",
+      "source": "As evident in Figure 4C, there is a smaller fragment, in addition to that indicating prophage insertion, that corresponds to those cells in the same colony that do not harbor the integrated prophage.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental observation shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:27:43.321261Z"
+    },
+    {
+      "id": "e18babc8-8bfb-47c7-80dd-78a49c6728d5",
+      "content_id": "9128e17a-65c5-46c6-9906-13011062f7fd",
+      "claim_id": "C68",
+      "claim": "These cells persisted even after multiple rounds of re-streaking, and the median ratio of lysogens to non-lysogenic cells derived from clonal colonies approaches 4:1.",
+      "claim_type": "EXPLICIT",
+      "source": "These cells persisted even after multiple rounds of re-streaking, and the median ratio of lysogens to non-lysogenic cells derived from clonal colonies approaches 4:1 (Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental result shown in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:27:43.321261Z"
+    },
+    {
+      "id": "969d0e32-d6ee-44bc-97d7-f089a8a77a2b",
+      "content_id": "9128e17a-65c5-46c6-9906-13011062f7fd",
+      "claim_id": "C69",
+      "claim": "Even in pure cultures, phages are continuously being excised and reintegrated, presumably as a result of XerC/XerD activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Even in pure cultures, phages are thus continuously being excised and reintegrated, presumably as a result of XerC/XerD activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the observation of mixed lysogenic/non-lysogenic populations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:27:43.321261Z"
+    },
+    {
+      "id": "1771e8d8-182e-404b-bf14-6cb5376c6a1b",
+      "content_id": "9128e17a-65c5-46c6-9906-13011062f7fd",
+      "claim_id": "C70",
+      "claim": "Almost all bacterial colonies that survived infections, regardless of whether they were lysogenized or not, were found to contain circular phage DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "The removal of host factors xerC or xerD, the presence an incomplete phage dif-motif, or the lack of a dif-motif (as observed in the majority of Gokushovirinae) all prevent integration of phages into host genomes (Table 1, Figure 4C). However, almost all bacterial colonies that survived infections, regardless of whether they were lysogenized or not, were found to contain circular phage DNA (Figure 4B)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental result shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:27:43.321261Z"
+    },
+    {
+      "id": "ac3caf01-f110-4f41-bc82-d6f5abfe28f6",
+      "content_id": "9128e17a-65c5-46c6-9906-13011062f7fd",
+      "claim_id": "C71",
+      "claim": "The presence of circular phage DNA alone, regardless of integration into the host genome, conferred superinfection immunity.",
+      "claim_type": "EXPLICIT",
+      "source": "and the presence of circular phage DNA alone, regardless of integration into the host genome, conferred superinfection immunity (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental result shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:27:43.321261Z"
+    },
+    {
+      "id": "dfc2249c-0b7b-4bdb-9919-86853698ff74",
+      "content_id": "9128e17a-65c5-46c6-9906-13011062f7fd",
+      "claim_id": "C72",
+      "claim": "Cultures in which phage DNA could only be detected in circularized form were capable of producing infectious particles at levels significantly higher than those of cultures containing integrated prophages.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, cultures in which phage DNA could only be detected in circularized form were capable of producing infectious particles at levels significantly higher than those of cultures containing integrated prophages (Figure 5B, Wilcoxon rank-sum test p<0.01).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental result with statistical analysis shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:27:43.321261Z"
+    },
+    {
+      "id": "42dac9d2-a90d-42cd-87ad-4a2e866b98c9",
+      "content_id": "9128e17a-65c5-46c6-9906-13011062f7fd",
+      "claim_id": "C73",
+      "claim": "The absence of alternative integration sites was verified by inverse PCR.",
+      "claim_type": "EXPLICIT",
+      "source": "The absence of alternative integration sites, as verified by inverse PCR, suggested that gokushoviruses might be able to persist in the host cytoplasm without integration into the host genome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on inverse PCR experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:27:43.321261Z"
+    },
+    {
+      "id": "4a719204-e656-484b-a7a0-7bd52a574e59",
+      "content_id": "9128e17a-65c5-46c6-9906-13011062f7fd",
+      "claim_id": "C74",
+      "claim": "Gokushoviruses might be able to persist in the host cytoplasm without integration into the host genome.",
+      "claim_type": "EXPLICIT",
+      "source": "The absence of alternative integration sites, as verified by inverse PCR, suggested that gokushoviruses might be able to persist in the host cytoplasm without integration into the host genome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the experimental observations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:27:43.321261Z"
+    },
+    {
+      "id": "068ceb8b-5f98-4d7c-83b2-a2f20aac94d5",
+      "content_id": "9128e17a-65c5-46c6-9906-13011062f7fd",
+      "claim_id": "C75",
+      "claim": "All lysogenic cultures produced phage particles throughout the course of serial transfer experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "To determine whether this persistence is a transient phenomenon that eventually leads to either the loss of phages or the collapse of bacterial cultures, we performed serial transfers (1:1000 dilution) with a variety of host-phage combinations over the course of a month. We enumerated plaque formation from culture supernatant on host strain BW25113\u0394fhuA to avoid false positives from widespread contaminating dsDNA phages such as phi80 and SW-1, which unlike EC6098 require outer membrane receptor FhuA for successful infection (Rotman et al., 2012; Song et al., 2019). As expected, all lysogenic cultures (i.e., wild type cultures with integrated gokushovirus prophages) produced phage particles throughout the course of the experiments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an experimental result from serial transfer experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:27:43.321261Z"
+    },
+    {
+      "id": "2d757f7c-d39c-472f-adc0-5d3471b3b3d8",
+      "content_id": "9128e17a-65c5-46c6-9906-13011062f7fd",
+      "claim_id": "C76",
+      "claim": "A third of all cultures where gokushoviruses were initially present only in the cytoplasm retained phage production over the course of a month despite the lack of integration.",
+      "claim_type": "EXPLICIT",
+      "source": "However, a third of all cultures where gokushoviruses were initially present only in the cytoplasm (due to deletions in the host integration machinery or phage integration site) retained phage production over the course of a month despite the lack of integration (Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental result shown in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:27:43.321261Z"
+    },
+    {
+      "id": "2e304353-7a65-4df1-a7dd-24c8c33c630f",
+      "content_id": "9128e17a-65c5-46c6-9906-13011062f7fd",
+      "claim_id": "C77",
+      "claim": "Gokushoviruses do not exist solely as lytic particles but can also exist as (pseudo)lysogens, in a carrier state that continuously produces phage particles without integrating into the genome.",
+      "claim_type": "EXPLICIT",
+      "source": "Cumulatively, these results indicate that gokushoviruses do not exist solely as lytic particles, as previously believed, but can also exist as (pseudo)lysogens, in a carrier state that continuously produces phage particles without integrating into the genome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the experimental results from serial transfer and integration experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:27:43.321261Z"
+    },
+    {
+      "id": "df8b3204-bbe6-44cf-9f61-17642cf9a93e",
+      "content_id": "9128e17a-65c5-46c6-9906-13011062f7fd",
+      "claim_id": "C78",
+      "claim": "The new proposed genus, Enterogokushovirus, offers new insights into the understanding of the ecologically widespread group of Gokushovirinae phages.",
+      "claim_type": "EXPLICIT",
+      "source": "Through the analysis of whole genome sequences and metagenomic databases, we defined a unique genus of Gokushovirinae prophages and subsequently synthesized a viable gokushovirus capable of infecting and integrating into the genomes of enteric bacteria. Since Gokushovirinae were previously known as exclusively lytic predators of a few intracellular bacteria (King et al., 2011), the new proposed genus, Enterogokushovirus, offers new insights into our understanding of this ecologically widespread group of phages.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the overall findings of the study.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:27:43.321261Z"
+    },
+    {
+      "id": "b16459fb-f54f-464d-b70b-d3f386e80154",
+      "content_id": "9128e17a-65c5-46c6-9906-13011062f7fd",
+      "claim_id": "C79",
+      "claim": "By confirming the existence of Gokushovirinae prophages in free-living bacteria, a seeming paradox was resolved in which a diverse and widespread lineage within the Microviridae appeared to be confined to rare pathogenic and parasitic bacteria.",
+      "claim_type": "EXPLICIT",
+      "source": "First, by confirming the existence of Gokushovirinae prophages in free-living bacteria, we resolved a seeming paradox in which a diverse and widespread lineage within the Microviridae appeared to be confined to rare pathogenic and parasitic bacteria, such as Chlamydia (Wang et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the discovery of enterogokushoviruses in free-living bacteria.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:27:43.321261Z"
+    },
+    {
+      "id": "5637db7b-7d80-4576-9096-f0b97a003f12",
+      "content_id": "9128e17a-65c5-46c6-9906-13011062f7fd",
+      "claim_id": "C80",
+      "claim": "By demonstrating the integration of a gokushovirus into the E. coli genome, it was shown that these phages employ survival strategies beyond the lytic infection of hosts.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, by demonstrating the integration of a gokushovirus into the E. coli genome, we show that these phages employ survival strategies beyond the lytic infection of hosts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the experimental demonstration of lysogeny.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:27:43.321261Z"
+    },
+    {
+      "id": "d5d8765c-bbba-4393-bc8e-70a8b7af647e",
+      "content_id": "9128e17a-65c5-46c6-9906-13011062f7fd",
+      "claim_id": "C81",
+      "claim": "Enterogokushoviruses appropriate a highly conserved bacterial chromosome concatemer-resolution system that enables their integration into host genomes via homologous recombination.",
+      "claim_type": "EXPLICIT",
+      "source": "Experimental characterization of the enterogokushovirus EC6098 isolated from an environmental strain of E. marmotae showed that these phages possess a dif-like recognition motif that, together with the host-encoded recombinases XerC/XerD, is required for lysogeny. In this manner, enterogokushoviruses appropriate a highly conserved bacterial chromosome concatemer-resolution system that enables their integration into host genomes via homologous recombination (Castillo et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the experimental results and supported by a citation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:27:43.321261Z"
+    },
+    {
+      "id": "3dc5111b-60e4-484a-8874-fb20c2d0e8ac",
+      "content_id": "9128e17a-65c5-46c6-9906-13011062f7fd",
+      "claim_id": "C82",
+      "claim": "The exact mechanism of the integration process still remains to be elucidated.",
+      "claim_type": "EXPLICIT",
+      "source": "The exact mechanism of this integration process still remains to be elucidated: some phages and mobile elements are known to have different requirements for the bacterial XerC and/or XerD proteins (Midonet and Barre, 2015), which is perhaps the reason why we could only successfully reconstitute xerC but not xerD knockouts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This acknowledges a limitation of the current study and cites relevant literature.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:27:43.321261Z"
+    },
+    {
+      "id": "2b37abee-6e77-4082-ad24-706631d49e70",
+      "content_id": "9128e17a-65c5-46c6-9906-13011062f7fd",
+      "claim_id": "C83",
+      "claim": "Phages with only partial DNA-binding motifs exist in a condition in which circularized phage genomes are present in the cytoplasm and virions are continuously released from the host.",
+      "claim_type": "EXPLICIT",
+      "source": "We also show that phages with only partial DNA-binding motifs exist in a condition in which circularized phage genomes are present in the cytoplasm and virions are continuously released from the host.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on experimental results with mutant phages.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:27:43.321261Z"
+    },
+    {
+      "id": "338ba69b-f23d-40e4-a52c-0241dcd6935c",
+      "content_id": "9128e17a-65c5-46c6-9906-13011062f7fd",
+      "claim_id": "C84",
+      "claim": "This strategy is similar to the pseudolysogenic state observed in crAssphage and other bacteriophages.",
+      "claim_type": "EXPLICIT",
+      "source": "While it should be noted that this could be a laboratory-induced phenomenon, this strategy is similar to the pseudolysogenic state observed in crAssphage (Shkoporov et al., 2018) and other bacteriophages (Siringan et al., 2014), and helps explain the persistence of microviruses in the human gut (Minot et al., 2013; Shkoporov et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison with previously described phenomena, supported by citations.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:27:43.321261Z"
+    },
+    {
+      "id": "61bc4046-4132-4899-8228-fee67c942714",
+      "content_id": "9128e17a-65c5-46c6-9906-13011062f7fd",
+      "claim_id": "C85",
+      "claim": "The sporadic distribution of dif-motifs among other gokushoviruses indicates that the ability to lysogenize bacterial hosts has been independently gained and lost multiple times during the evolution of this taxon.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite an exhaustive sampling of gokushoviral diversity from metagenomic datasets, the occurrence of dif-positive gokushoviruses is rare outside of the enterogokushoviruses. However, the sporadic distribution of dif-motifs among other gokushoviruses indicates that the ability to lysogenize bacterial hosts has been independently gained and lost multiple times during the evolution of this taxon.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the phylogenetic distribution of dif-motifs.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:27:43.321261Z"
+    },
+    {
+      "id": "863c51cf-fa00-4c1e-807b-5aa6e30bbd51",
+      "content_id": "9128e17a-65c5-46c6-9906-13011062f7fd",
+      "claim_id": "C86",
+      "claim": "The exclusively lytic gokushoviruses of Chlamydia might once have been able to integrate into their hosts' genomes since extant Chlamydia genomes contain coding sequences similar to the gokushoviral replication initiation and minor capsid proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the exclusively lytic gokushoviruses of Chlamydia (\u015aliwa-Dominiak et al., 2013) might once have been able to integrate into their hosts' genomes since extant Chlamydia genomes contain coding sequences similar to the gokushoviral replication initiation and minor capsid proteins (Read et al., 2000; Rosenwald et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation based on genomic evidence and supported by citations.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:27:43.321261Z"
+    },
+    {
+      "id": "dd01f1a4-34ec-459c-8136-36024271c27c",
+      "content_id": "9128e17a-65c5-46c6-9906-13011062f7fd",
+      "claim_id": "C87",
+      "claim": "Lysogenic cultures produce a considerably lower number of phage particles than non-lysogenic cultures but are less prone to the loss of phage.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that lysogenic cultures produce a considerably lower number of phage particles than non-lysogenic cultures but are less prone to the loss of phage, indicating that the lytic and lysogenic lifecycles confer different tradeoffs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on experimental observations from phage production and serial transfer experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:27:43.321261Z"
+    },
+    {
+      "id": "14345e90-5e1d-4e6e-9845-94d3dd5f4471",
+      "content_id": "9128e17a-65c5-46c6-9906-13011062f7fd",
+      "claim_id": "C88",
+      "claim": "The lytic and lysogenic lifecycles confer different tradeoffs.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that lysogenic cultures produce a considerably lower number of phage particles than non-lysogenic cultures but are less prone to the loss of phage, indicating that the lytic and lysogenic lifecycles confer different tradeoffs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the experimental observations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:27:43.321261Z"
+    },
+    {
+      "id": "88345fac-ae91-4991-82ba-42fe1240915d",
+      "content_id": "9128e17a-65c5-46c6-9906-13011062f7fd",
+      "claim_id": "C89",
+      "claim": "Lysogeny is a 'safe' strategy for phages in situations where hosts are scarce, with vertical inheritance preventing the dilution of phage particles in the absence of hosts.",
+      "claim_type": "EXPLICIT",
+      "source": "It has long been suggested that lysogeny is a 'safe' strategy for phages in situations where hosts are scarce, with vertical inheritance preventing the dilution of phage particles in the absence of hosts (e.g., Berngruber et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established theory supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:27:43.321261Z"
+    },
+    {
+      "id": "42252023-5d46-4114-a2df-1f99c8a04e76",
+      "content_id": "9128e17a-65c5-46c6-9906-13011062f7fd",
+      "claim_id": "C90",
+      "claim": "Lysis is advantageous when host availability is high.",
+      "claim_type": "EXPLICIT",
+      "source": "Meanwhile, lysis (and its more abundant production of phage particles) is advantageous when host availability is high.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established theory in phage biology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:27:43.321261Z"
+    },
+    {
+      "id": "66dfa07f-6e82-42be-aa60-c26b0f250f9e",
+      "content_id": "9128e17a-65c5-46c6-9906-13011062f7fd",
+      "claim_id": "C91",
+      "claim": "Lytic microviruses in the human gut have been predicted to infect Bacteroidetes and other dominant members of that community.",
+      "claim_type": "EXPLICIT",
+      "source": "Lytic microviruses (i.e., those lacking dif-motifs) in the human gut have been predicted to infect Bacteroidetes and other dominant members of that community (Shkoporov et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:27:43.321261Z"
+    },
+    {
+      "id": "ca1c0b84-9cd7-40d2-b5f2-fbf7ed7ffe60",
+      "content_id": "9128e17a-65c5-46c6-9906-13011062f7fd",
+      "claim_id": "C92",
+      "claim": "The enterobacterial hosts of the gokushovirus prophages generally do not reach very high abundances in the gut microbiome, usually constituting less than 0.1% of the bacterial population.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the enterobacterial hosts of the gokushovirus prophages described in this study generally do not reach very high abundances in the gut microbiome, usually constituting less than 0.1% of the bacterial population (Human Microbiome Project Consortium, 2012), prompting the evolution of lysogeny.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to the Human Microbiome Project data.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:27:43.321261Z"
+    },
+    {
+      "id": "b48581ce-1efa-41c1-864c-46eb1f279e48",
+      "content_id": "9128e17a-65c5-46c6-9906-13011062f7fd",
+      "claim_id": "C93",
+      "claim": "The low abundance of enterobacterial hosts in the gut microbiome prompted the evolution of lysogeny in enterogokushoviruses.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the enterobacterial hosts of the gokushovirus prophages described in this study generally do not reach very high abundances in the gut microbiome, usually constituting less than 0.1% of the bacterial population (Human Microbiome Project Consortium, 2012), prompting the evolution of lysogeny.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference connecting host abundance to the evolution of lysogeny.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:27:43.321261Z"
+    },
+    {
+      "id": "17cd79a2-e193-46bd-90ca-51f9be874562",
+      "content_id": "9128e17a-65c5-46c6-9906-13011062f7fd",
+      "claim_id": "C94",
+      "claim": "The de novo evolution of the XerCD-binding motifs appears to be common due to the high mutation rate of ssDNA phages and an estimated substitution rate of 10\u22125/ nucleotides/day in the human gut.",
+      "claim_type": "EXPLICIT",
+      "source": "Perhaps due to the high mutation rate of ssDNA phages, typically two orders of magnitude higher than in dsDNA phages (Sanju\u00e1n et al., 2010), and an estimated substitution rate of 10\u22125/ nucleotides/day in the human gut (Minot et al., 2013), the de novo evolution of the XerCD-binding motifs appears to be common, with similar systems existing in other families of phage and mobile-elements (Das et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference supported by citations to previous work on mutation rates and similar systems.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:27:43.321261Z"
+    },
+    {
+      "id": "99d2a240-4056-4134-a9a5-e5179d379f97",
+      "content_id": "9128e17a-65c5-46c6-9906-13011062f7fd",
+      "claim_id": "C95",
+      "claim": "It is surprising that enterogokushoviruses have not previously been identified in human metagenomes given the current depths of microbiome sampling and sequencing.",
+      "claim_type": "EXPLICIT",
+      "source": "Given the current depths of microbiome sampling and sequencing, it is surprising that enterogokushoviruses have not previously been identified in human metagenomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation about the rarity of enterogokushoviruses in metagenomic data.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:27:43.321261Z"
+    },
+    {
+      "id": "2867b009-d395-4786-baba-a7598a18f583",
+      "content_id": "9128e17a-65c5-46c6-9906-13011062f7fd",
+      "claim_id": "C96",
+      "claim": "Among the more than 100,000 sequenced enterobacterial genomes currently available, fewer than 100 gokushovirus prophages were detected.",
+      "claim_type": "EXPLICIT",
+      "source": "Even among the more than 100,000 sequenced enterobacterial genomes that are currently available, we detected fewer than 100 gokushovirus prophages, and no gokushovirus prophages were detected in the sequenced genomes of other bacteria.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the bioinformatic search results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:27:43.321261Z"
+    },
+    {
+      "id": "d18e37a4-88b5-430f-9b8f-40e75455d16d",
+      "content_id": "9128e17a-65c5-46c6-9906-13011062f7fd",
+      "claim_id": "C97",
+      "claim": "No gokushovirus prophages were detected in the sequenced genomes of bacteria other than enterobacteria.",
+      "claim_type": "EXPLICIT",
+      "source": "and no gokushovirus prophages were detected in the sequenced genomes of other bacteria.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the bioinformatic search.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:27:43.321261Z"
+    },
+    {
+      "id": "6ecabdfd-a0cd-45b8-85a3-895fc606b931",
+      "content_id": "9128e17a-65c5-46c6-9906-13011062f7fd",
+      "claim_id": "C98",
+      "claim": "The rarity of gokushoviruses existing as prophages might result from the process by which they integrate into genomes.",
+      "claim_type": "EXPLICIT",
+      "source": "This rarity of gokushoviruses existing as prophages might result from the process by which they integrate into genomes: although possession of dif-motifs provides a simple, passive integration system, they also facilitate prophage excision (and as a result, continuous production of phage particles) in the absence of external stressors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the experimental observations of excision and reintegration.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:27:43.321261Z"
+    },
+    {
+      "id": "8b35a5c7-a998-4e7a-87e0-4e123df9fc2f",
+      "content_id": "9128e17a-65c5-46c6-9906-13011062f7fd",
+      "claim_id": "C99",
+      "claim": "Possession of dif-motifs provides a simple, passive integration system but also facilitates prophage excision.",
+      "claim_type": "EXPLICIT",
+      "source": "although possession of dif-motifs provides a simple, passive integration system, they also facilitate prophage excision (and as a result, continuous production of phage particles) in the absence of external stressors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the experimental observations and known properties of XerC/XerD systems.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:27:43.321261Z"
+    },
+    {
+      "id": "13bd1a1b-a63a-40ca-a512-32e63a0d639d",
+      "content_id": "9128e17a-65c5-46c6-9906-13011062f7fd",
+      "claim_id": "C100",
+      "claim": "XerCD-mediated removal of genetic elements has attained application in molecular biology.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, XerCD-mediated removal of genetic elements has attained application in molecular biology (Bloor and Cranenburgh, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:27:43.321261Z"
+    },
+    {
+      "id": "8f2ca1a9-50d3-449f-ac83-7fcbb06ec5ea",
+      "content_id": "9128e17a-65c5-46c6-9906-13011062f7fd",
+      "claim_id": "C101",
+      "claim": "The Vibrio cholerae phage CTX secures itself as a prophage by destroying the dif site upon insertion to prevent premature XerCD-mediated excision.",
+      "claim_type": "EXPLICIT",
+      "source": "To prevent premature XerCD-mediated excision, the Vibrio cholerae phage CTX secures itself as a prophage by destroying the dif site upon insertion (Val et al., 2005)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous work on CTX phage.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:27:43.321261Z"
+    },
+    {
+      "id": "9b0b0373-4e3d-4700-9da6-aa45915af98a",
+      "content_id": "9128e17a-65c5-46c6-9906-13011062f7fd",
+      "claim_id": "C102",
+      "claim": "Vibrio prophages that retain their dif-motifs are only rarely detected.",
+      "claim_type": "EXPLICIT",
+      "source": "whereas Vibrio prophages that retain their dif-motifs are only rarely detected (Das et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:27:43.321261Z"
+    },
+    {
+      "id": "43745bbd-7651-4cb8-aa73-e3b80d5d8a4c",
+      "content_id": "9128e17a-65c5-46c6-9906-13011062f7fd",
+      "claim_id": "C103",
+      "claim": "The abundance of gokushoviruses in the environment, as apparent from their regularity in metagenomic datasets, suggests that they are only transient residents of bacterial chromosomes and usually occur in pseudolysogenic or lytic states in the wild.",
+      "claim_type": "EXPLICIT",
+      "source": "The abundance of gokushoviruses in the environment, as apparent from their regularity in metagenomic datasets, suggests that they are only transient residents of bacterial chromosomes and usually occur in pseudolysogenic or lytic states in the wild.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the experimental findings and metagenomic observations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:27:43.321261Z"
+    },
+    {
+      "id": "adf92c04-753e-4fda-814a-934141a1705b",
+      "content_id": "9128e17a-65c5-46c6-9906-13011062f7fd",
+      "claim_id": "C104",
+      "claim": "The discovery of this group of phages offers several new directions for the study of the Microviridae.",
+      "claim_type": "EXPLICIT",
+      "source": "The discovery of this group of phages offers several new directions for the study of the Microviridae.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a concluding statement about the implications of the work.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:27:43.321261Z"
+    },
+    {
+      "id": "2d6c8b92-7915-44ce-b916-95ae4c059185",
+      "content_id": "9128e17a-65c5-46c6-9906-13011062f7fd",
+      "claim_id": "C105",
+      "claim": "The presence of numerous and diverse gokushovirus prophages in a wide variety of E. coli strains makes it possible to elucidate aspects of gokushovirus biology in a comparative evolutionary framework.",
+      "claim_type": "EXPLICIT",
+      "source": "First, the presence of numerous and diverse gokushovirus prophages in a wide variety of E. coli strains now makes it possible to elucidate aspects of gokushovirus biology in a comparative evolutionary framework.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about future research directions enabled by this work.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:27:43.321261Z"
+    },
+    {
+      "id": "e7a115c4-bdc8-450d-b6f2-6e575e51c13d",
+      "content_id": "9128e17a-65c5-46c6-9906-13011062f7fd",
+      "claim_id": "C106",
+      "claim": "Demonstrating that the host ranges of the Gokushovirinae extends beyond intracellular bacteria increases the likelihood that additional members of this prevalent group of phages will be isolated from appropriate hosts.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, demonstrating that the host ranges of the Gokushovirinae extends beyond intracellular bacteria increases the likelihood that additional members of this prevalent group of phages will be isolated from appropriate hosts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the implications of the findings for future isolation efforts.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:27:43.321261Z"
+    },
+    {
+      "id": "e136f141-1405-4aeb-acd8-610c82eae310",
+      "content_id": "9128e17a-65c5-46c6-9906-13011062f7fd",
+      "claim_id": "C107",
+      "claim": "The amplification of entire ssDNA phage genomes and subsequent transformation into appropriate hosts can aid in the description of other Microviridae subfamilies.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, the amplification of entire ssDNA phage genomes and subsequent transformation into appropriate hosts, as conducted in this study and previously with de novo synthesized phiX (Smith et al., 2003) can aid in the description of other Microviridae subfamilies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the methodological contribution of the work, supported by a citation.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:27:43.321261Z"
+    },
+    {
+      "id": "51c33041-000a-4c49-8e2f-f0ddb5de7c27",
+      "content_id": "9128e17a-65c5-46c6-9906-13011062f7fd",
+      "claim_id": "C108",
+      "claim": "The Alpavirinae have been detected as prophages of Bacteroidetes but so far remain without isolates and denied official recognition.",
+      "claim_type": "EXPLICIT",
+      "source": "A promising target for this would be the Alpavirinae, which have been detected as prophages of Bacteroidetes but so far remain without isolates and denied official recognition (Roux et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous work on Alpavirinae.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:27:43.321261Z"
+    },
+    {
+      "id": "31371521-15ea-4d2c-ba51-1d2dbe84fef3",
+      "content_id": "9128e17a-65c5-46c6-9906-13011062f7fd",
+      "claim_id": "C109",
+      "claim": "The value of isolating enterogokushoviruses goes beyond their abundance in nature and provides a genetically manipulable model system that will further the understanding of this group as a whole.",
+      "claim_type": "EXPLICIT",
+      "source": "In conclusion, the value of isolating enterogokushoviruses goes beyond their abundance in nature and provides a genetically manipulable model system that will further the understanding of this group as a whole (Shkoporov and Hill, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a concluding statement about the significance of the work, supported by a citation.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:27:43.321261Z"
+    },
+    {
+      "id": "ebbae9b3-67ca-4129-aa72-6947d1a001d5",
+      "content_id": "9128e17a-65c5-46c6-9906-13011062f7fd",
+      "claim_id": "C110",
+      "claim": "EC6098 virions are 25\u201330 \u00b5m in size.",
+      "claim_type": "EXPLICIT",
+      "source": "revealed tailless icosahedral virions, 25\u201330 \u00b5m in size",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on electron microscopy measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:27:43.321261Z"
+    },
+    {
+      "id": "3adc9a16-0369-41ae-9b1b-c1289fd09d34",
+      "content_id": "9128e17a-65c5-46c6-9906-13011062f7fd",
+      "claim_id": "C111",
+      "claim": "Pure EC6098 lysates were recovered at a buoyant density of around 1.3 g/cm\u22123 in CsCl gradients.",
+      "claim_type": "EXPLICIT",
+      "source": "Electron microscopic observation of pure EC6098 lysates recovered at a buoyant density of around 1.3 g/cm\u22123 in CsCl gradients (the range expected for members of the Microviridae, Thurber et al., 2009)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an experimental measurement supported by a citation to expected values.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:27:43.321261Z"
+    },
+    {
+      "id": "ed10ab76-368f-46ec-b55c-f5d916c5d1d4",
+      "content_id": "9128e17a-65c5-46c6-9906-13011062f7fd",
+      "claim_id": "C112",
+      "claim": "The integrated prophage genomes range from 4316 to 4692 bp in length.",
+      "claim_type": "EXPLICIT",
+      "source": "Integrated prophage genomes range from 4316 to 4692 bp in length",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the figure caption for Figure 1A and based on genomic analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:27:43.321261Z"
+    },
+    {
+      "id": "a0111907-07aa-460a-a273-4cbed08ce5bd",
+      "content_id": "9128e17a-65c5-46c6-9906-13011062f7fd",
+      "claim_id": "C113",
+      "claim": "Phage EC6098 integrates at position 3,046,436\u20133,046,463 in the BW25113 closed genome with accession number CP009273.",
+      "claim_type": "EXPLICIT",
+      "source": "Sequencing confirmed that, in accordance with the integration site of detected prophages, phage EC6098 integrates downstream of the BW25113 dif-motif, which remains unchanged (corresponding to position 3,046,436\u20133,046,463 in the closed genome with accession number CP009273).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on sequencing data confirming the integration site.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:27:43.321261Z"
+    },
+    {
+      "id": "c27e1277-0179-49c2-b073-77fba0714c79",
+      "content_id": "9128e17a-65c5-46c6-9906-13011062f7fd",
+      "claim_id": "C114",
+      "claim": "BW25113\u0394fhuA was used as the host strain for agar overlay assays to avoid false positives from contaminating dsDNA phages such as phi80 and SW-1.",
+      "claim_type": "EXPLICIT",
+      "source": "We enumerated plaque formation from culture supernatant on host strain BW25113\u0394fhuA to avoid false positives from widespread contaminating dsDNA phages such as phi80 and SW-1, which unlike EC6098 require outer membrane receptor FhuA for successful infection (Rotman et al., 2012; Song et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an experimental design choice supported by citations explaining the rationale.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:27:43.321261Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "cf6b40d5-d24f-4391-b73e-302beb6a1b5a",
+      "content_id": "9128e17a-65c5-46c6-9906-13011062f7fd",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Bioinformatic analysis identified 95 gokushovirus prophages integrated into enterobacterial genomes, primarily in Escherichia species. These prophages are 4300-4700 bp in length with a conserved six-gene arrangement (VP4, VP5, VP3, VP1, VP2, VP8) and are flanked by dif-motifs. The prophages form distinct phylogenetic clades (A-J) with >95% nucleotide identity within clades, and show variable distribution across host phylogenies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31-C44 and C112 provide comprehensive bioinformatic evidence for the discovery and characterization of enterogokushovirus prophages. The methodology (BLAST search with appropriate E-value cutoffs), genomic analysis (gene arrangement, size range, sequence variation patterns), phylogenetic analysis (bootstrap support, clade structure), and metadata analysis (host sources, O-serotypes) are well-documented and internally consistent. The data are presented in Figure 1 and supplementary files.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:27:43.321261Z"
+    },
+    {
+      "id": "82932dad-76fd-4d7c-951b-9e66bbd54d9a",
+      "content_id": "9128e17a-65c5-46c6-9906-13011062f7fd",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Phylogenetic analysis of 855 gokushovirus genomes shows that enterobacterial prophages form a well-supported monophyletic clade (97% bootstrap support) within Gokushovirinae, justifying the proposed new genus 'Enterogokushovirus'. Dif-motifs are rare outside this clade, detected in only 48 of 855 genomes, highlighting the distinctiveness of enterogokushoviruses.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C51 demonstrate robust phylogenetic support for the proposed genus through appropriate methods (concatenated VP1/VP4 alignment, 855 genomes, bootstrap analysis). The 97% bootstrap support is strong, and the >50% average nucleotide identity within the clade supports taxonomic distinction. The comparative analysis of dif-motif distribution (48/855 genomes) provides context for the uniqueness of enterogokushoviruses. Data are shown in Figure 2.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:27:43.321261Z"
+    },
+    {
+      "id": "1ada7cb9-7fe5-4f1d-96b6-fb2b4f45b479",
+      "content_id": "9128e17a-65c5-46c6-9906-13011062f7fd",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Enterogokushoviruses are rare in metagenomic datasets and bacterial genome databases. Only 2 prophages were assembled from 1839 metagenomic samples, and fewer than 100 prophages were detected among >100,000 sequenced enterobacterial genomes, with none found in other bacterial taxa.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52, C95-C97 document the rarity of enterogokushoviruses through systematic searches of large datasets. The low detection rate (2/1839 metagenomes, <100/100,000+ genomes) is clearly stated and provides important ecological context. However, the claim acknowledges this is surprising given the depth of sampling, suggesting potential biological or methodological explanations discussed elsewhere in the manuscript.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:27:43.321261Z"
+    },
+    {
+      "id": "dff93b14-a34d-4767-9c3e-37c602ae0ed5",
+      "content_id": "9128e17a-65c5-46c6-9906-13011062f7fd",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Viable phage EC6098 was successfully reconstituted from a prophage sequence by PCR amplification, circularization, and transformation into E. coli DH5\u03b1. Only 1 of 4 attempted prophage reconstructions (EC6098) produced infectious particles. Electron microscopy confirmed EC6098 virions are tailless icosahedra 25-30 nm in size with a buoyant density of ~1.3 g/cm\u00b3.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53-C59, C110-C111 describe a successful phage resurrection experiment with appropriate controls (C56) and validation (C57). The methodology is clearly described and shown in Figure 3. The electron microscopy data (C58, C110) with size measurements and buoyant density (C111) are consistent with known Microviridae properties. The low success rate (1/4) is honestly reported and corroborated by PCR detection of circular genomes in all strains but plaque formation only in EC6098.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:27:43.321261Z"
+    },
+    {
+      "id": "3feaa308-29b8-4159-9a14-382990366fa2",
+      "content_id": "9128e17a-65c5-46c6-9906-13011062f7fd",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Phage EC6098 integrates into the E. coli BW25113 genome at the dif-motif site (position 3,046,436-3,046,463) via XerC/XerD-mediated recombination. Integration requires both host recombinases (XerC and XerD) and complete phage dif-motifs, as demonstrated by knockout and complementation experiments.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C60-C65, C113 provide strong experimental evidence for XerC/XerD-mediated integration through multiple complementary approaches: PCR detection of integration (C60-C61), sequencing confirmation of integration site (C62, C113), knockout experiments showing requirement for both XerC and XerD (C63), successful complementation of \u0394xerC (C64), and phage dif-motif mutant analysis (C65). The data are shown in Figure 4 and Table 1. However, C82 acknowledges that xerD complementation failed, indicating incomplete mechanistic understanding.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:27:43.321261Z"
+    },
+    {
+      "id": "63040b99-df21-488b-b9b0-049fdb36af9e",
+      "content_id": "9128e17a-65c5-46c6-9906-13011062f7fd",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Integration is reversible, with continuous excision and reintegration occurring in lysogenic cultures. Mixed populations of lysogenic and non-lysogenic cells persist in clonal colonies with a median ratio of ~4:1 lysogens to non-lysogens, indicating dynamic equilibrium.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C66-C69 demonstrate reversible integration through PCR detection of both integrated and excised forms in the same colonies (C67), persistence through multiple re-streaking rounds (C68), and quantification of the lysogen ratio (C68). The inference of continuous XerC/XerD-mediated excision/reintegration (C69) is reasonable given the known properties of the XerC/XerD system and the observed mixed populations. Data are shown in Figure 4C-D.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:27:43.321261Z"
+    },
+    {
+      "id": "41048cbd-0a2e-404e-b6f9-bad14200f606",
+      "content_id": "9128e17a-65c5-46c6-9906-13011062f7fd",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Phages can persist cytoplasmically without integration. Bacterial colonies surviving infection contain circular phage DNA regardless of integration status, and this confers superinfection immunity. Non-integrated phages produce significantly more infectious particles than integrated prophages (p<0.01).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C70-C74 demonstrate pseudolysogeny through detection of circular phage DNA in non-lysogenic survivors (C70), superinfection immunity assays (C71), quantitative comparison of phage production (C72 with statistical test), and inverse PCR ruling out alternative integration sites (C73). The inference of cytoplasmic persistence (C74) is well-supported by these observations. Data are shown in Figure 5A-B.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:27:43.321261Z"
+    },
+    {
+      "id": "3ec657d0-211a-419b-aecc-a8e48522ab5d",
+      "content_id": "9128e17a-65c5-46c6-9906-13011062f7fd",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Serial transfer experiments over one month show that lysogenic cultures continuously produce phage, while one-third of non-lysogenic cultures (with phages present only cytoplasmically) retain phage production despite lack of integration, demonstrating stable pseudolysogeny.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C75-C77 provide experimental evidence for long-term persistence through serial transfer experiments with appropriate controls (BW25113\u0394fhuA host to avoid false positives from contaminating phages, C114). The one-month duration with 1:1000 dilutions provides strong evidence for stable maintenance. The conclusion that gokushoviruses can exist as pseudolysogens (C77) is well-supported by the combined data. Results are shown in Figure 5C.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:27:43.321261Z"
+    },
+    {
+      "id": "96a59ec8-79e9-40ae-960f-95883d1490d7",
+      "content_id": "9128e17a-65c5-46c6-9906-13011062f7fd",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "EC6098 integrates via XerC/XerD-mediated recombination of phage-encoded dif-motifs with bacterial dif-motifs, appropriating a conserved bacterial chromosome-dimer resolution system. This capability has evolved independently in multiple gokushovirus lineages, though the exact mechanism remains to be fully elucidated.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27, C28, C81-C82 synthesize the integration mechanism findings. The XerC/XerD-mediated integration is well-demonstrated experimentally (C27, C81). The inference of independent evolution (C28) is supported by the sporadic phylogenetic distribution of dif-motifs (C48-C49). The acknowledgment that the exact mechanism is not fully understood (C82), particularly regarding differential XerC/XerD requirements, is appropriate given the failed xerD complementation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:27:43.321261Z"
+    },
+    {
+      "id": "089e04bc-ab05-4404-b6c8-b504f315bc5b",
+      "content_id": "9128e17a-65c5-46c6-9906-13011062f7fd",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Gokushoviruses can reliably infect and lysogenize hosts by hijacking the XerC/XerD chromosome-dimer resolution system. Sequence motifs required for lysogeny are detectable in other gokushoviruses, and even partial motifs enable cytoplasmic persistence without host culture collapse. This ability to employ multiple survival strategies likely explains their global distribution.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3-C6 represent the main conclusions of the abstract. C3 is supported by the integration experiments (C27, C63-C65). C4 is supported by the bioinformatic detection of dif-motifs in other gokushoviruses (C48-C50). C5 is supported by the pseudolysogeny experiments (C70-C77). C6 is a reasonable inference connecting these findings to the known ecological distribution of gokushoviruses, though it remains somewhat speculative.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:27:43.321261Z"
+    },
+    {
+      "id": "8b6e0db8-d746-4a11-8d5b-b6c8b3c7b6ce",
+      "content_id": "9128e17a-65c5-46c6-9906-13011062f7fd",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The discovery of Enterogokushovirus resolves the paradox of widespread gokushoviruses being known only from rare intracellular bacteria, demonstrates survival strategies beyond lytic infection, and provides new directions for studying Microviridae including a genetically manipulable model system.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C78-C80, C104-C107, C109 represent the broader significance and implications of the work. The resolution of the host range paradox (C79) is well-supported by the discovery of prophages in free-living enterobacteria. The demonstration of lysogenic and pseudolysogenic strategies (C80) is experimentally validated. The statements about future research directions (C104-C107, C109) are reasonable projections based on the findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:27:43.321261Z"
+    },
+    {
+      "id": "4d0c508e-1167-4873-a9a2-08021a2575a1",
+      "content_id": "9128e17a-65c5-46c6-9906-13011062f7fd",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Phages with partial dif-motifs exist in a pseudolysogenic state with cytoplasmic circular genomes and continuous virion release, similar to crAssphage. The sporadic distribution of dif-motifs indicates independent gain and loss of lysogenic ability during gokushovirus evolution, with evidence suggesting Chlamydia phages may have lost this capability.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C83-C86 synthesize findings on pseudolysogeny and evolutionary patterns. C83 is supported by experimental data (C70-C77). The comparison to crAssphage (C84) is appropriate and supported by citations. The inference about independent evolution (C85) is supported by phylogenetic distribution (C48-C49). The speculation about Chlamydia phages (C86) is appropriately tentative and supported by genomic evidence from cited literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:27:43.321261Z"
+    },
+    {
+      "id": "99cbdc89-8d2e-47a1-815a-d57f70d636da",
+      "content_id": "9128e17a-65c5-46c6-9906-13011062f7fd",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Lysogenic cultures produce fewer phage particles but are more stable than non-lysogenic cultures, representing different life history tradeoffs. The evolution of lysogeny in enterogokushoviruses is likely driven by low host abundance (<0.1% of gut microbiome), contrasting with lytic microviruses that infect abundant Bacteroidetes. High mutation rates in ssDNA phages facilitate de novo evolution of XerCD-binding motifs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C87-C94 provide ecological and evolutionary context. The experimental observation of differential phage production (C87) is supported by Figure 5B. The inference about tradeoffs (C88) is reasonable. The theoretical framework about lysogeny and host scarcity (C89-C90) is well-established and appropriately cited. The connection to host abundance (C92-C93) is supported by Human Microbiome Project data. The inference about mutation-driven dif-motif evolution (C94) is reasonable given cited mutation rates, though somewhat speculative.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:27:43.321261Z"
+    },
+    {
+      "id": "1179ed6b-c3c2-4c20-8811-429e3a83a8d4",
+      "content_id": "9128e17a-65c5-46c6-9906-13011062f7fd",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The rarity of gokushovirus prophages may result from dif-motif-mediated integration facilitating continuous excision and phage production. This contrasts with CTX phage which destroys its dif site to prevent excision. The environmental abundance of gokushoviruses suggests they are typically transient chromosomal residents, usually existing in pseudolysogenic or lytic states.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C98-C103 provide mechanistic explanation for prophage rarity. The inference connecting reversible integration to prophage rarity (C98-C99) is reasonable given the experimental observations (C66-C69) and known XerC/XerD properties. The comparisons to CTX phage and other Vibrio prophages (C100-C102) are appropriately cited. The conclusion about transient chromosomal residence (C103) is a reasonable synthesis of the experimental and metagenomic data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:27:43.321261Z"
+    },
+    {
+      "id": "833ecad6-8a6a-489e-ac8d-134b334661bf",
+      "content_id": "9128e17a-65c5-46c6-9906-13011062f7fd",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Background context on gokushoviruses: they are widespread in metagenomic datasets from diverse environments, easily assembled due to small circular genomes, but rarely isolated (only from three intracellular bacterial genera). They lack genes present in phiX174 including peptidoglycan synthesis inhibitors and major spike proteins, suggesting different molecular mechanisms. No gokushoviruses encode integrases, leading to the assumption they are exclusively lytic.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C2, C7-C24 provide literature-based background context that is well-supported by multiple citations to previous work. These claims establish the knowledge gap that the current study addresses: the paradox of widespread but rarely isolated gokushoviruses, their genomic differences from phiX174, and the assumption of exclusively lytic lifestyle. The claims are appropriately cited and provide necessary context for the study's significance.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:27:43.321261Z"
+    },
+    {
+      "id": "3cec1276-d97a-4ea4-b7e5-23d1ccb9fff6",
+      "content_id": "9128e17a-65c5-46c6-9906-13011062f7fd",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "This study detected numerous gokushovirus prophages in enterobacteria and successfully cultivated a novel gokushovirus (EC6098) capable of lysogenizing enterobacteria, representing the first isolation of a gokushovirus able to infect free-living bacteria and integrate as a lysogen.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25-C26, C30, C59 summarize the main achievements of the study. The detection of prophages (C25) is supported by bioinformatic analysis (C31-C44). The cultivation of EC6098 (C26) is supported by experimental data (C54-C58). The claim of novelty (C59) is justified given previous gokushoviruses were only isolated from intracellular bacteria (C16) and were thought to be exclusively lytic (C19). This represents a major advance in the field.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:27:43.321261Z"
+    },
+    {
+      "id": "52a8cd4c-3fca-468c-8b53-062d4cc8c82c",
+      "content_id": "9128e17a-65c5-46c6-9906-13011062f7fd",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "An intermediate pseudolysogenic state exists between lytic and lysogenic lifestyles in gokushoviruses, where phages persist cytoplasmically without integration while continuously producing virions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C29 represents a key finding supported by multiple lines of evidence: detection of circular phage DNA in non-lysogenic survivors (C70), superinfection immunity without integration (C71), higher phage production in non-lysogenic cultures (C72), and long-term persistence in serial transfers (C76). The characterization as an 'intermediate' state between lytic and lysogenic is appropriate given the continuous phage production (unlike true lysogeny) but stable host-phage coexistence (unlike acute lytic infection).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:27:43.321261Z"
+    },
+    {
+      "id": "bede0a9c-a4ef-4361-b2d9-af23591acf96",
+      "content_id": "9128e17a-65c5-46c6-9906-13011062f7fd",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "The Alpavirinae have been detected as prophages of Bacteroidetes but remain without isolates and lack official recognition, representing a promising target for future isolation efforts using similar resurrection approaches.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C108 is a minor point about future research directions, appropriately cited to previous work (Roux et al., 2012). It suggests the methodology developed in this study could be applied to other Microviridae subfamilies. This is a reasonable suggestion but represents future work rather than a result of the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:27:43.321261Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "74212c24-6b12-49fe-8f1e-bfa4dd02b50f",
+      "result_id": "cf6b40d5-d24f-4391-b73e-302beb6a1b5a"
+    },
+    {
+      "claim_id": "e76e4722-ae0a-44d9-b6df-892f78c60913",
+      "result_id": "cf6b40d5-d24f-4391-b73e-302beb6a1b5a"
+    },
+    {
+      "claim_id": "c90d832e-149a-477a-b424-4474f5227b06",
+      "result_id": "cf6b40d5-d24f-4391-b73e-302beb6a1b5a"
+    },
+    {
+      "claim_id": "cdbbb1e0-4b4f-44eb-a80e-cc08ddad44c6",
+      "result_id": "cf6b40d5-d24f-4391-b73e-302beb6a1b5a"
+    },
+    {
+      "claim_id": "f150ba24-e318-4cd7-a1b9-3941fe7f597f",
+      "result_id": "cf6b40d5-d24f-4391-b73e-302beb6a1b5a"
+    },
+    {
+      "claim_id": "86066938-8682-4ae2-8afc-0e0268a531e5",
+      "result_id": "cf6b40d5-d24f-4391-b73e-302beb6a1b5a"
+    },
+    {
+      "claim_id": "97b7e7df-695a-4a74-851e-32f50d7f2cc2",
+      "result_id": "cf6b40d5-d24f-4391-b73e-302beb6a1b5a"
+    },
+    {
+      "claim_id": "f399841d-0d56-4b7e-8b4d-759e109f6239",
+      "result_id": "cf6b40d5-d24f-4391-b73e-302beb6a1b5a"
+    },
+    {
+      "claim_id": "8a8c7101-2153-4bc6-9787-ac6a84dc3ffa",
+      "result_id": "cf6b40d5-d24f-4391-b73e-302beb6a1b5a"
+    },
+    {
+      "claim_id": "0b7c3029-8044-458e-b120-d8decda8fcaa",
+      "result_id": "cf6b40d5-d24f-4391-b73e-302beb6a1b5a"
+    },
+    {
+      "claim_id": "3ad5319a-7877-41cc-9502-c30101e33886",
+      "result_id": "cf6b40d5-d24f-4391-b73e-302beb6a1b5a"
+    },
+    {
+      "claim_id": "6a04983e-48a7-47a0-9302-138c2cece5b7",
+      "result_id": "cf6b40d5-d24f-4391-b73e-302beb6a1b5a"
+    },
+    {
+      "claim_id": "bcc07634-e963-4ab9-8035-ffa3aed028fc",
+      "result_id": "cf6b40d5-d24f-4391-b73e-302beb6a1b5a"
+    },
+    {
+      "claim_id": "c30e9f4c-0d11-4514-a02f-1891de2dd603",
+      "result_id": "cf6b40d5-d24f-4391-b73e-302beb6a1b5a"
+    },
+    {
+      "claim_id": "ed10ab76-368f-46ec-b55c-f5d916c5d1d4",
+      "result_id": "cf6b40d5-d24f-4391-b73e-302beb6a1b5a"
+    },
+    {
+      "claim_id": "ad7d250e-c31f-4371-ae95-c76374b42761",
+      "result_id": "82932dad-76fd-4d7c-951b-9e66bbd54d9a"
+    },
+    {
+      "claim_id": "6cfc0ce5-637d-4e37-878a-d9309cbdedd2",
+      "result_id": "82932dad-76fd-4d7c-951b-9e66bbd54d9a"
+    },
+    {
+      "claim_id": "a20cf95b-8b8d-4233-88a3-d42d9050cae4",
+      "result_id": "82932dad-76fd-4d7c-951b-9e66bbd54d9a"
+    },
+    {
+      "claim_id": "51a45cae-f6b8-4b06-b809-f5b4f0b06465",
+      "result_id": "82932dad-76fd-4d7c-951b-9e66bbd54d9a"
+    },
+    {
+      "claim_id": "ca1dd615-e64f-4b8c-b4cb-5ad6916b7fa3",
+      "result_id": "82932dad-76fd-4d7c-951b-9e66bbd54d9a"
+    },
+    {
+      "claim_id": "6a92b124-3b8a-40bb-a974-cd94d7886ef9",
+      "result_id": "82932dad-76fd-4d7c-951b-9e66bbd54d9a"
+    },
+    {
+      "claim_id": "101101ca-9265-41b1-adaf-ede99cbef1e8",
+      "result_id": "82932dad-76fd-4d7c-951b-9e66bbd54d9a"
+    },
+    {
+      "claim_id": "0fd37159-974d-4b72-9211-d3a07a90731b",
+      "result_id": "1ada7cb9-7fe5-4f1d-96b6-fb2b4f45b479"
+    },
+    {
+      "claim_id": "99d2a240-4056-4134-a9a5-e5179d379f97",
+      "result_id": "1ada7cb9-7fe5-4f1d-96b6-fb2b4f45b479"
+    },
+    {
+      "claim_id": "2867b009-d395-4786-baba-a7598a18f583",
+      "result_id": "1ada7cb9-7fe5-4f1d-96b6-fb2b4f45b479"
+    },
+    {
+      "claim_id": "d18e37a4-88b5-430f-9b8f-40e75455d16d",
+      "result_id": "1ada7cb9-7fe5-4f1d-96b6-fb2b4f45b479"
+    },
+    {
+      "claim_id": "e32ff4ab-01df-421a-a262-c65f5a152c6a",
+      "result_id": "dff93b14-a34d-4767-9c3e-37c602ae0ed5"
+    },
+    {
+      "claim_id": "db89ac5c-a6d2-4277-88bd-c5566eb65a8b",
+      "result_id": "dff93b14-a34d-4767-9c3e-37c602ae0ed5"
+    },
+    {
+      "claim_id": "3cde449e-844c-4003-8f31-278034e8998b",
+      "result_id": "dff93b14-a34d-4767-9c3e-37c602ae0ed5"
+    },
+    {
+      "claim_id": "e3d2d899-30e7-42e7-a50b-dc8a813ab39e",
+      "result_id": "dff93b14-a34d-4767-9c3e-37c602ae0ed5"
+    },
+    {
+      "claim_id": "13ec7715-a1c9-4cb6-b491-fe1b94acdb66",
+      "result_id": "dff93b14-a34d-4767-9c3e-37c602ae0ed5"
+    },
+    {
+      "claim_id": "398aa02a-7ea3-4c1f-800c-88a1b026db29",
+      "result_id": "dff93b14-a34d-4767-9c3e-37c602ae0ed5"
+    },
+    {
+      "claim_id": "11aa4abb-54b6-4e81-a22c-5c283af8d098",
+      "result_id": "dff93b14-a34d-4767-9c3e-37c602ae0ed5"
+    },
+    {
+      "claim_id": "ebbae9b3-67ca-4129-aa72-6947d1a001d5",
+      "result_id": "dff93b14-a34d-4767-9c3e-37c602ae0ed5"
+    },
+    {
+      "claim_id": "3adc9a16-0369-41ae-9b1b-c1289fd09d34",
+      "result_id": "dff93b14-a34d-4767-9c3e-37c602ae0ed5"
+    },
+    {
+      "claim_id": "6b0d32b0-688e-42ae-8f82-0a873a997a56",
+      "result_id": "3feaa308-29b8-4159-9a14-382990366fa2"
+    },
+    {
+      "claim_id": "d4f9a831-212e-4d3f-8b88-df75ce70f74c",
+      "result_id": "3feaa308-29b8-4159-9a14-382990366fa2"
+    },
+    {
+      "claim_id": "6873c47e-fddf-4337-9162-ca3520e3d25e",
+      "result_id": "3feaa308-29b8-4159-9a14-382990366fa2"
+    },
+    {
+      "claim_id": "26091f50-319b-4df3-8c2f-4631523a4d4e",
+      "result_id": "3feaa308-29b8-4159-9a14-382990366fa2"
+    },
+    {
+      "claim_id": "f9449482-248f-4f8b-a75a-1d258274801f",
+      "result_id": "3feaa308-29b8-4159-9a14-382990366fa2"
+    },
+    {
+      "claim_id": "863c0a0c-8fdc-4f93-b6c1-bc377b791bed",
+      "result_id": "3feaa308-29b8-4159-9a14-382990366fa2"
+    },
+    {
+      "claim_id": "a0111907-07aa-460a-a273-4cbed08ce5bd",
+      "result_id": "3feaa308-29b8-4159-9a14-382990366fa2"
+    },
+    {
+      "claim_id": "001a82a6-1ba7-48a3-93d1-e75493090a87",
+      "result_id": "63040b99-df21-488b-b9b0-049fdb36af9e"
+    },
+    {
+      "claim_id": "7b685e25-1fda-4c70-afd3-aef4417a46a6",
+      "result_id": "63040b99-df21-488b-b9b0-049fdb36af9e"
+    },
+    {
+      "claim_id": "e18babc8-8bfb-47c7-80dd-78a49c6728d5",
+      "result_id": "63040b99-df21-488b-b9b0-049fdb36af9e"
+    },
+    {
+      "claim_id": "969d0e32-d6ee-44bc-97d7-f089a8a77a2b",
+      "result_id": "63040b99-df21-488b-b9b0-049fdb36af9e"
+    },
+    {
+      "claim_id": "1771e8d8-182e-404b-bf14-6cb5376c6a1b",
+      "result_id": "41048cbd-0a2e-404e-b6f9-bad14200f606"
+    },
+    {
+      "claim_id": "ac3caf01-f110-4f41-bc82-d6f5abfe28f6",
+      "result_id": "41048cbd-0a2e-404e-b6f9-bad14200f606"
+    },
+    {
+      "claim_id": "dfc2249c-0b7b-4bdb-9919-86853698ff74",
+      "result_id": "41048cbd-0a2e-404e-b6f9-bad14200f606"
+    },
+    {
+      "claim_id": "42dac9d2-a90d-42cd-87ad-4a2e866b98c9",
+      "result_id": "41048cbd-0a2e-404e-b6f9-bad14200f606"
+    },
+    {
+      "claim_id": "4a719204-e656-484b-a7a0-7bd52a574e59",
+      "result_id": "41048cbd-0a2e-404e-b6f9-bad14200f606"
+    },
+    {
+      "claim_id": "068ceb8b-5f98-4d7c-83b2-a2f20aac94d5",
+      "result_id": "3ec657d0-211a-419b-aecc-a8e48522ab5d"
+    },
+    {
+      "claim_id": "2d757f7c-d39c-472f-adc0-5d3471b3b3d8",
+      "result_id": "3ec657d0-211a-419b-aecc-a8e48522ab5d"
+    },
+    {
+      "claim_id": "2e304353-7a65-4df1-a7dd-24c8c33c630f",
+      "result_id": "3ec657d0-211a-419b-aecc-a8e48522ab5d"
+    },
+    {
+      "claim_id": "d9e6119f-c9a3-449e-afb7-80517f489abe",
+      "result_id": "96a59ec8-79e9-40ae-960f-95883d1490d7"
+    },
+    {
+      "claim_id": "0627c197-7f5c-42c8-a800-4ab63fba5b07",
+      "result_id": "96a59ec8-79e9-40ae-960f-95883d1490d7"
+    },
+    {
+      "claim_id": "d5d8765c-bbba-4393-bc8e-70a8b7af647e",
+      "result_id": "96a59ec8-79e9-40ae-960f-95883d1490d7"
+    },
+    {
+      "claim_id": "3dc5111b-60e4-484a-8874-fb20c2d0e8ac",
+      "result_id": "96a59ec8-79e9-40ae-960f-95883d1490d7"
+    },
+    {
+      "claim_id": "71d964e6-1d1d-4ba2-ba1b-0c3ca655d469",
+      "result_id": "089e04bc-ab05-4404-b6c8-b504f315bc5b"
+    },
+    {
+      "claim_id": "2e476019-4462-4e8d-b3db-b81d4105e47d",
+      "result_id": "089e04bc-ab05-4404-b6c8-b504f315bc5b"
+    },
+    {
+      "claim_id": "6fe60022-9c5c-495c-96e9-52995b8ad5a7",
+      "result_id": "089e04bc-ab05-4404-b6c8-b504f315bc5b"
+    },
+    {
+      "claim_id": "ef325091-4831-4644-972b-b85f2e403362",
+      "result_id": "089e04bc-ab05-4404-b6c8-b504f315bc5b"
+    },
+    {
+      "claim_id": "df8b3204-bbe6-44cf-9f61-17642cf9a93e",
+      "result_id": "8b6e0db8-d746-4a11-8d5b-b6c8b3c7b6ce"
+    },
+    {
+      "claim_id": "b16459fb-f54f-464d-b70b-d3f386e80154",
+      "result_id": "8b6e0db8-d746-4a11-8d5b-b6c8b3c7b6ce"
+    },
+    {
+      "claim_id": "5637db7b-7d80-4576-9096-f0b97a003f12",
+      "result_id": "8b6e0db8-d746-4a11-8d5b-b6c8b3c7b6ce"
+    },
+    {
+      "claim_id": "adf92c04-753e-4fda-814a-934141a1705b",
+      "result_id": "8b6e0db8-d746-4a11-8d5b-b6c8b3c7b6ce"
+    },
+    {
+      "claim_id": "2d6c8b92-7915-44ce-b916-95ae4c059185",
+      "result_id": "8b6e0db8-d746-4a11-8d5b-b6c8b3c7b6ce"
+    },
+    {
+      "claim_id": "e7a115c4-bdc8-450d-b6f2-6e575e51c13d",
+      "result_id": "8b6e0db8-d746-4a11-8d5b-b6c8b3c7b6ce"
+    },
+    {
+      "claim_id": "e136f141-1405-4aeb-acd8-610c82eae310",
+      "result_id": "8b6e0db8-d746-4a11-8d5b-b6c8b3c7b6ce"
+    },
+    {
+      "claim_id": "31371521-15ea-4d2c-ba51-1d2dbe84fef3",
+      "result_id": "8b6e0db8-d746-4a11-8d5b-b6c8b3c7b6ce"
+    },
+    {
+      "claim_id": "2b37abee-6e77-4082-ad24-706631d49e70",
+      "result_id": "4d0c508e-1167-4873-a9a2-08021a2575a1"
+    },
+    {
+      "claim_id": "338ba69b-f23d-40e4-a52c-0241dcd6935c",
+      "result_id": "4d0c508e-1167-4873-a9a2-08021a2575a1"
+    },
+    {
+      "claim_id": "61bc4046-4132-4899-8228-fee67c942714",
+      "result_id": "4d0c508e-1167-4873-a9a2-08021a2575a1"
+    },
+    {
+      "claim_id": "863c51cf-fa00-4c1e-807b-5aa6e30bbd51",
+      "result_id": "4d0c508e-1167-4873-a9a2-08021a2575a1"
+    },
+    {
+      "claim_id": "dd01f1a4-34ec-459c-8136-36024271c27c",
+      "result_id": "99cbdc89-8d2e-47a1-815a-d57f70d636da"
+    },
+    {
+      "claim_id": "14345e90-5e1d-4e6e-9845-94d3dd5f4471",
+      "result_id": "99cbdc89-8d2e-47a1-815a-d57f70d636da"
+    },
+    {
+      "claim_id": "88345fac-ae91-4991-82ba-42fe1240915d",
+      "result_id": "99cbdc89-8d2e-47a1-815a-d57f70d636da"
+    },
+    {
+      "claim_id": "42252023-5d46-4114-a2df-1f99c8a04e76",
+      "result_id": "99cbdc89-8d2e-47a1-815a-d57f70d636da"
+    },
+    {
+      "claim_id": "66dfa07f-6e82-42be-aa60-c26b0f250f9e",
+      "result_id": "99cbdc89-8d2e-47a1-815a-d57f70d636da"
+    },
+    {
+      "claim_id": "ca1c0b84-9cd7-40d2-b5f2-fbf7ed7ffe60",
+      "result_id": "99cbdc89-8d2e-47a1-815a-d57f70d636da"
+    },
+    {
+      "claim_id": "b48581ce-1efa-41c1-864c-46eb1f279e48",
+      "result_id": "99cbdc89-8d2e-47a1-815a-d57f70d636da"
+    },
+    {
+      "claim_id": "17cd79a2-e193-46bd-90ca-51f9be874562",
+      "result_id": "99cbdc89-8d2e-47a1-815a-d57f70d636da"
+    },
+    {
+      "claim_id": "6ecabdfd-a0cd-45b8-85a3-895fc606b931",
+      "result_id": "1179ed6b-c3c2-4c20-8811-429e3a83a8d4"
+    },
+    {
+      "claim_id": "8b35a5c7-a998-4e7a-87e0-4e123df9fc2f",
+      "result_id": "1179ed6b-c3c2-4c20-8811-429e3a83a8d4"
+    },
+    {
+      "claim_id": "13bd1a1b-a63a-40ca-a512-32e63a0d639d",
+      "result_id": "1179ed6b-c3c2-4c20-8811-429e3a83a8d4"
+    },
+    {
+      "claim_id": "8f2ca1a9-50d3-449f-ac83-7fcbb06ec5ea",
+      "result_id": "1179ed6b-c3c2-4c20-8811-429e3a83a8d4"
+    },
+    {
+      "claim_id": "9b0b0373-4e3d-4700-9da6-aa45915af98a",
+      "result_id": "1179ed6b-c3c2-4c20-8811-429e3a83a8d4"
+    },
+    {
+      "claim_id": "43745bbd-7651-4cb8-aa73-e3b80d5d8a4c",
+      "result_id": "1179ed6b-c3c2-4c20-8811-429e3a83a8d4"
+    },
+    {
+      "claim_id": "d63b07ca-19e8-472b-80a0-0707d60ad136",
+      "result_id": "833ecad6-8a6a-489e-ac8d-134b334661bf"
+    },
+    {
+      "claim_id": "af7ecff3-4374-43f7-97ab-91477ca16488",
+      "result_id": "833ecad6-8a6a-489e-ac8d-134b334661bf"
+    },
+    {
+      "claim_id": "e6da7309-5afd-4e52-918d-67b9c950a205",
+      "result_id": "833ecad6-8a6a-489e-ac8d-134b334661bf"
+    },
+    {
+      "claim_id": "b4be00ac-aa65-425b-abe9-0a701b945270",
+      "result_id": "833ecad6-8a6a-489e-ac8d-134b334661bf"
+    },
+    {
+      "claim_id": "d03b7598-cc26-45ec-af3d-69ac3980459f",
+      "result_id": "833ecad6-8a6a-489e-ac8d-134b334661bf"
+    },
+    {
+      "claim_id": "4025d33b-4b5a-4cf1-b030-c929974b8e07",
+      "result_id": "833ecad6-8a6a-489e-ac8d-134b334661bf"
+    },
+    {
+      "claim_id": "d2f2f420-1624-4c7b-b888-ae9b173b2434",
+      "result_id": "833ecad6-8a6a-489e-ac8d-134b334661bf"
+    },
+    {
+      "claim_id": "5a86efb9-0c07-4790-bbbe-d19b267a366f",
+      "result_id": "833ecad6-8a6a-489e-ac8d-134b334661bf"
+    },
+    {
+      "claim_id": "b347f399-0efb-4653-b35f-069f53ca3c4d",
+      "result_id": "833ecad6-8a6a-489e-ac8d-134b334661bf"
+    },
+    {
+      "claim_id": "7a4ed787-3869-4071-9823-e86548c7ec8d",
+      "result_id": "833ecad6-8a6a-489e-ac8d-134b334661bf"
+    },
+    {
+      "claim_id": "f7fe1c05-2018-46ae-8f8e-ca84d3475ae2",
+      "result_id": "833ecad6-8a6a-489e-ac8d-134b334661bf"
+    },
+    {
+      "claim_id": "9228ec27-411f-433c-99a3-421cba315111",
+      "result_id": "833ecad6-8a6a-489e-ac8d-134b334661bf"
+    },
+    {
+      "claim_id": "7e45e12b-3d32-4d30-a0c9-518c0fdfc842",
+      "result_id": "833ecad6-8a6a-489e-ac8d-134b334661bf"
+    },
+    {
+      "claim_id": "3f43caac-0a88-4550-8be5-65aa9c3f86c3",
+      "result_id": "833ecad6-8a6a-489e-ac8d-134b334661bf"
+    },
+    {
+      "claim_id": "28b194d4-92ca-4a0a-a4b7-5efe33af2c64",
+      "result_id": "833ecad6-8a6a-489e-ac8d-134b334661bf"
+    },
+    {
+      "claim_id": "6512ad32-93a3-43d8-a329-27e1d2ff2328",
+      "result_id": "833ecad6-8a6a-489e-ac8d-134b334661bf"
+    },
+    {
+      "claim_id": "4bf50936-2f0a-4c3b-b131-e4526d397fe4",
+      "result_id": "833ecad6-8a6a-489e-ac8d-134b334661bf"
+    },
+    {
+      "claim_id": "ce7855d9-2b96-4e6b-a811-ae4cf1646bc3",
+      "result_id": "833ecad6-8a6a-489e-ac8d-134b334661bf"
+    },
+    {
+      "claim_id": "88e80b74-be73-4299-af2f-6f4d530f4d5f",
+      "result_id": "833ecad6-8a6a-489e-ac8d-134b334661bf"
+    },
+    {
+      "claim_id": "50691938-d033-484e-ab0b-1a9a0c5a0389",
+      "result_id": "833ecad6-8a6a-489e-ac8d-134b334661bf"
+    },
+    {
+      "claim_id": "e3f119a2-602d-4d6b-9473-6a093396e707",
+      "result_id": "3cec1276-d97a-4ea4-b7e5-23d1ccb9fff6"
+    },
+    {
+      "claim_id": "c9551f06-73ab-4992-ada9-34b320cc9016",
+      "result_id": "3cec1276-d97a-4ea4-b7e5-23d1ccb9fff6"
+    },
+    {
+      "claim_id": "12ed7549-b413-4b51-9731-69ad06ecf9ae",
+      "result_id": "3cec1276-d97a-4ea4-b7e5-23d1ccb9fff6"
+    },
+    {
+      "claim_id": "11aa4abb-54b6-4e81-a22c-5c283af8d098",
+      "result_id": "3cec1276-d97a-4ea4-b7e5-23d1ccb9fff6"
+    },
+    {
+      "claim_id": "38df878f-afc6-4fa4-85db-1ba6a3613128",
+      "result_id": "52a8cd4c-3fca-468c-8b53-062d4cc8c82c"
+    },
+    {
+      "claim_id": "51c33041-000a-4c49-8e2f-f0ddb5de7c27",
+      "result_id": "bede0a9c-a4ef-4361-b2d9-af23591acf96"
+    }
+  ],
+  "comparisons": []
+}

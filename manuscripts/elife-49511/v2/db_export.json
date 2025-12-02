@@ -1,0 +1,1929 @@
+{
+  "submission": {
+    "id": "727cf32f-8511-4e46-b49d-2282864c58e3",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T13:21:28.516526Z",
+    "updated_at": "2025-12-02T13:21:28.516526Z"
+  },
+  "content": [
+    {
+      "id": "8bb09a94-2ee0-4ac9-82da-1c2eb8138cc7",
+      "submission_id": "727cf32f-8511-4e46-b49d-2282864c58e3",
+      "content_type": "manuscript",
+      "content_text": "# Motor cortex can directly drive the globus pallidus neurons in a projection neuron type-dependent manner in the rat\n\n## Authors\n\n- Fuyuki Karube<sup>1</sup> ([ORCID: 0000-0002-5365-3297](https://orcid.org/0000-0002-5365-3297)) \u2020\n- Susumu Takahashi<sup>1</sup>\n- Kenta Kobayashi<sup>3</sup>\n- Fumino Fujiyama<sup>1</sup> \u2020\n\n### Affiliations\n\n1. Laboratory of Neural Circuitry, Graduate School of Brain Science Doshisha University Kyotanabe Japan\n2. Laboratory of Cognitive and Behavioral Neuroscience, Graduate School of Brain Science Doshisha University Kyotanabe Japan\n3. Section of Viral Vector Development National Institute for Physiological Sciences Okazaki Japan\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe basal ganglia are critical for the control of motor behaviors and for reinforcement learning. Here, we demonstrate in rats that primary and secondary motor areas (M1 and M2) make functional synaptic connections in the globus pallidus (GP), not usually thought of as an input site of the basal ganglia. Morphological observation revealed that the density of axonal boutons from motor cortices in the GP was 47% and 78% of that in the subthalamic nucleus (STN) from M1 and M2, respectively. Cortical excitation of GP neurons was comparable to that of STN neurons in slice preparations. FoxP2-expressing arkypallidal neurons were preferentially innervated by the motor cortex. The connection probability of cortico-pallidal innervation was higher for M2 than M1. These results suggest that cortico-pallidal innervation is an additional excitatory input to the basal ganglia, and that it can affect behaviors via the cortex-basal ganglia-thalamus motor loop.\n\n## Introduction\n\nParallel loops of neural connections among the cerebral cortex, basal ganglia, and thalamus contribute to multiple aspects of behavior (Alexander et al., 1986; Nambu, 2008; Wei and Wang, 2016). The functions mediated by these loops depend on relevant cortical areas and brain regions receiving outputs of the basal ganglia (Hikosaka, 2007; Middleton and Strick, 2000). The loop containing the motor cortex is crucial for appropriate motor control, action selection, and movement-related learning. Dysfunction of the motor loop leads to movement disorders such as those seen in Parkinsonian disease (Albin et al., 1989; DeLong, 1990; Middleton and Strick, 2002; Nambu, 2008; Nambu et al., 2000; Parent and Hazrati, 1995a; Redgrave et al., 2010; Wichmann and DeLong, 1996). Cortical projections drive three pathways in the basal ganglia: the direct, the indirect, and the hyperdirect pathways (Bolam et al., 2000; Smith et al., 1998). The direct and indirect pathways originate from two distinct types of striatal medium spiny neurons (MSNs), termed the direct- and indirect-pathway MSNs (dMSNs and iMSNs). dMSNs project to the output nuclei of the basal ganglia, namely the substantia nigra (SN) pars reticulata (SNr), and the globus pallidus internal segment, the latter being the homologue of the entopeduncular nucleus (EP) in rodents. iMSNs project to the globus pallidus external segment (GP in rodents), which interconnects with the subthalamic nucleus (STN). In turn, both the STN and GP also innervate the output nuclei. The hyperdirect pathway involves direct cortical projections to the STN (Nambu et al., 2002), which provides the fastest information flow among the three pathways (Nambu et al., 2000). The behavioral functions of these pathways are gradually being elucidated, although recent findings propose refinement and reappraisal of the classical views of the functional roles of distinct MSNs (Calabresi et al., 2014; Cui et al., 2013; Isomura et al., 2013; Vicente et al., 2016). According to the traditional model, the direct pathway promotes the execution of desired actions, whereas the indirect pathway prevents the execution of competing actions (Friend and Kravitz, 2014; Nambu, 2007; Vicente et al., 2016), and the hyperdirect pathway emergently cancels or switches imminent movements (Frank et al., 2007; Isoda and Hikosaka, 2008; Nambu et al., 2002; Schmidt et al., 2013). Massive connections between the STN and GP illustrate that the hyperdirect and the indirect pathways operate in a coordinated manner.\n\nRecently, two types of GP neurons have been identified: one projects to the STN with or without projection to the striatum, while the other only projects to the striatum (Abdi et al., 2015; Dodson et al., 2015; Hern\u00e1ndez et al., 2015; Mallet et al., 2012; Mastro et al., 2014), which has been implicated in the rewriting of neural circuitry involved in the GP. The GP is now considered the hub of the basal ganglia, not simply a relay nucleus (Hegeman et al., 2016). Not only the circuitry, but also the functional significance of these neuron types and the entire GP have gradually been uncovered (Mallet et al., 2016; Mastro et al., 2017); however, how their activities are controlled remains unclear. In 1994, Naito and Kita reported cortical projections to the GP, which raised the possibility of an additional neural pathway that can modulate the basal ganglia activities. Although some studies have proposed more recent evidence on cortico-pallidal projection (Hunt et al., 2018; Abecassis et al., 2019; Magno et al., 2019), a detailed morphological and electrophysiological analysis of this connection has not been conducted so far (Milardi et al., 2015; Smith and Wichmann, 2015).\n\nUsing a combination of neural tracing with immunostaining, we here demonstrate that M1 and M2 directly project to the GP, and that cortical axon collaterals and boutons have topographic distributions that depend on the cortical area of origin (Naito and Kita, 1994). Using morphological and electrophysiological experiments combined with optogenetics, we demonstrate that cortico-pallidal synapses are effective and dependent on post-synaptic GP cell types. We discuss the potential roles of cortico-pallidal projections in relation to other basal ganglia nuclei. Part of this research has been presented in abstract form earlier (Karube and Fujiyama, 2017).\n\n## Results\n\n### Motor cortex innervates the GP\n\nWe observed cortical axons in the GP using conventional tracers (BDA or PHA-L; Figure 1A, B and C; Figure 2, Figure 1\u2014figure supplements 1, 2 and 3; Figure 2\u2014figure supplement 1) or adenoassociated virus (AAV) vectors (Figure 1D; Figure 2\u2014figure supplements 1, 2), as reported previously (Naito and Kita, 1994). For both M1 and M2 projections, cortical axons were dense in calbindin D-28k (CB) -negative [CB(-)] regions of the GP. The appearance of cortical axon varicosities in the GP was similar to those in the striatum and STN (Figure 1A2 and C, Figure 1\u2014figure supplements 1 and 2). Some axons in the GP were emitted from thick trunks, and often elongated along the dorso-ventral axis (Figure 1B). Cortico-pallidal projections were exclusively ipsilateral (Figure 1D), implying that they did not stem from the intratelencephalon (IT) type of pyramidal neurons. In addition, we found that cingulate area (Cg) and lateral orbitofrontal area (LO) also projected to the GP (Figure 2\u2014figure supplements 1 and 2), although LO provided fewer axons than motor areas. Cortical axons were differentially distributed in the GP, depending on the cortical area of origin (Figure 1\u2014figure supplements 1 and 2; Figure 2\u2014figure supplements 1 and 2). M1 and M2 axons were observed across the broad extent of the medio-lateral axis (range: M/L 2.4\u20134.2 mm from the midline; see also Figure 2A, B and C), but relatively sparse in the medial and lateral portions in most cases (Figure 2C). LO axons were often located in the ventral part of the GP, whereas Cg axons were dense in the more medial GP than M1/M2 axons.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/49511/elife-49511-fig1-v2.jpg)\n\n**Figure 1.:** (A) Representative images of axons in the GP, striatum, and STN originated from the primary motor cortex (M1), labeled with biotinylated dextran amine (BDA; visualized in black). Cortical axons in the GP are predominantly distributed in the calbindin (CB)-negative regions. CB is visualized in brown. Irrespective of differences in axon density among the GP, striatum, and STN, the morphology of the axons and varicosities is similar (A2). (B) Drawings and an image of cortical axons in the GP. The collaterals (thin black lines in B1) were issued from thick axon trunks (thick gray lines in B1; arrowhead in B2). (C) Magnified views of cortical axon varicosities (arrowheads) in the GP; left, M1 axons; right, M2 axons. The images are composites from multiple focal planes. The sections were counter-stained with an anti-parvalbumin (PV) antibody, visualized in brown. (D), Cortical axons in the GP were found exclusively in the ipsilateral hemisphere. M2 axons were visualized with AAV. Similar to axons in the STN, fluorescent signals were not detected in the contralateral GP even by over-exposure.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/49511/elife-49511-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A), Using BDA injections into M1, labeled axons are visualized in black and CB immunoactivity in brown. Axons are distributed in the GP lateral to the midline (M/L 2.9\u20134.2 mm). (B), In the same specimen, cortical axons in the STN were densely distributed at M/L 2.6 and 2.9 mm. The spatial extent of axons was restricted to the medio-caudal position of the STN. (C), M1 axons in the striatum. Note that the scale is different from A and B. (D), Magnified images of the black rectangle area, which is the ROI used for the axon varicosity count, shown in A, B, and C. Note that the size of the ROI is large enough to sample the densely innervated area.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/49511/elife-49511-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A), Using BDA injections into M2, labeled axons are visualized in black and CB immunoactivity in brown. Axons are distributed in the GP (M/L 2.6\u20133.2 mm). (B), In the same specimen, cortical axons in the STN were densely distributed at M/L 2.4 and 2.6 mm. The spatial extent of axons was restricted to the medio-caudal position of the STN. (C), M2 axon in the striatum. Note that the scale is different from A and B. (D), Magnified images of the black rectangle area, which is the ROI used for the axon varicosity count, shown in A, B, and C. (E), Normalized bouton density in the STN.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/49511/elife-49511-fig1-figsupp3-v2.jpg)\n\n**Figure 1\u2014figure supplement 3.:** Using BDA injections into M2, labeled axons are visualized in black and CB immunoactivity in brown. Axons are densely distributed in the dorso-lateral striatum (M/L 2.1\u20134.3 mm). In more lateral sections, axons were denser in CB(-) subregions, and were also found in striosomes [white arrowheads; small CB(-) subregions] throughout the entire projection field. In medial sections, M2 axons were observed in both CB(+) and CB(-) subregions. M2 axons were only faintly detected in ventral striosomes (filled arrowheads), whereas they were relatively dense in dorsal striosomes (white arrowheads). Note also the presence of M2 axons in CB(-) portions of the GP (arrows).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/49511/elife-49511-fig2-v2.jpg)\n\n**Figure 2.:** (A), Images and drawings of BDA injection sites into the primary and secondary motor areas (M1 and M2, respectively). Tracer was deposited across the entire thickness of the cortex. (B) Images of axon distributions in the GP, striatum, and STN from M1 and M2. To clearly represent axon density, the images are composites from multiple focal planes. (C) Comparison of axon varicosity density in the GP with that in the STN along the M/L dimension (N\u00a0=\u00a04 animals for each M1 and M2). In most cases, varicosities in the STN showed a sharp peak at a given M/L position. In the GP, M1 axon varicosities were broadly distributed along the M/L dimension. M2 axons tended to be densely distributed in the medial portion. (D) The axon varicosity density in the GP was normalized to that in the striatum or the STN (E).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/49511/elife-49511-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) LO projections to the striatum. (A1) An AAV injection site in the LO. (A2) A representative LO projection to the striatum. LO axons (red) are distributed in the caudal and ventral part of the dorsal striatum (M/L 2.6 mm). (A3) Immunofluorescence for \u03bc-opioid receptor (MOR, green). Arrowheads indicate the striosomes, which are MOR (+), innervated by the LO axons seen in A2 and A3. The square surrounded by a dotted line in A2 and A3 is magnified in the right-most column. (B) BDA injection into the LO. (C) Brightfield images of LO axons in the GP, striatum (CPu), and STN. Note that axon and terminal densities in the GP were lower than those in the striatum or STN. (D) Quantitative comparison of axon density in the GP normalized to that in the STN (D1) and striatum (D2).\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/49511/elife-49511-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A) Cg projections to the striatum (CPu) in sagittal sections (M/L 2.1 mm). Cg axons are dense in the CB-negative subregions of the striatum. Cg axons were less dense in the CB-negative striosomes. (B) Cg projections to the GP. Cg axon collaterals were dense in the CB (-) central GP. Thick axon bundles pass through the dorsal side of the medial GP (M/L 2.4 mm). (C) Cg projections to the STN. Cg axons are localized in the caudal part of the medial STN (arrowheads; M/L 2.4 mm).\n\nWe compared the density of cortical axonal varicosities (boutons) in the GP, STN, and striatum. The number of varicosities in the GP varied with the M/L dimension, as in the case of varicosities in the STN for both M1 and M2 projections (Figure 2C; N\u00a0=\u00a04 rats for each). Varicosity density was apparently greater in the striatum than in the GP or STN (Figures 1A and 2B, Figure 1\u2014figure supplements 1 and 2,\u00a0Table 1). Since the size and efficacy of the tracer labeling were not uniform across animals, the maximum bouton density in the GP was normalized to that in the striatum or STN for each injection. Using this normalization, the bouton density was found to be significantly higher in the striatum than in the GP (Figure 2D; p=0.013, Kruskal Wallis test; p<10\u22127 for both M1 and M2 projections, Tukey-HSD test; not significant between M1 and M2, p=0.18), or in the STN (Figure 1\u2014figure supplement 2E; p=0.016, Kruskal Wallis test; p=0.00003 for M1; p=0.000008 for M2, Tukey-HSD test; not significant between M1 and M2, p=0.296). Normalized bouton densities in the GP were significantly different from those in the STN (Figure 2E; p=0.032, Kruskal-Wallis test). For M1 projections, STN-normalized bouton density was significantly smaller in the GP (0.496\u00a0\u00b1\u00a00.12) than in the STN (p=0.0007, Tukey-HSD test). Since M2 had more boutons in the GP (0.778\u00a0\u00b1\u00a00.207) than M1 (p=0.022), M2 bouton density did not significantly differ between the STN and the GP (p=0.09).\n\n**Table 1.**\n Electrophysiological properties of globus pallidus (GP) neurons.\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th>GPSTN (N\u00a0=\u00a0108)</th>\n      <th>GPCPu (N\u00a0=\u00a065)</th>\n      <th>p-value</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Mean membrane potential (mV)</td>\n      <td>\u221246.63\u00a0\u00b1\u00a04.95 (\u221234.2\u2013 \u221261.53)</td>\n      <td>\u221246.36\u00a0\u00b1\u00a05.9 (\u221233.59\u2013 \u221260.53)</td>\n      <td>0.682</td>\n    </tr>\n    <tr>\n      <td>Input resistance (M\u03a9)</td>\n      <td>232.35\u00a0\u00b1\u00a0131.87 (33.1\u2013887.45)</td>\n      <td>329.97\u00a0\u00b1\u00a0168.19 (32.8\u2013828.3)</td>\n      <td>6.8\u00a0\u00d7\u00a010\u221205 ***</td>\n    </tr>\n    <tr>\n      <td>Time constant (ms)</td>\n      <td>12.94\u00a0\u00b1\u00a010.23 (2.25\u201379.75)</td>\n      <td>21.92\u00a0\u00b1\u00a013.11 (2.42\u201355.67)</td>\n      <td>2.1\u00a0\u00d7\u00a010\u221207 ***</td>\n    </tr>\n    <tr>\n      <td>Sag potential (mV)</td>\n      <td>7.23\u00a0\u00b1\u00a04.52 (1.25\u201322.02)</td>\n      <td>8.71\u00a0\u00b1\u00a07 (0.63\u201335.18)</td>\n      <td>0.3432</td>\n    </tr>\n    <tr>\n      <td>Spike frequency at 100 pA depolarization (Hz)</td>\n      <td>48.46\u00a0\u00b1\u00a022.94 (0\u2013103)</td>\n      <td>35.81\u00a0\u00b1\u00a019.6 (2\u201385)</td>\n      <td>0.00041 ***</td>\n    </tr>\n    <tr>\n      <td>Spike frequency at 500 pA depolarization (Hz)</td>\n      <td>99.14\u00a0\u00b1\u00a066.87 (1\u2013244)</td>\n      <td>35.24\u00a0\u00b1\u00a039.24 (1\u2013172)</td>\n      <td>1.8\u00a0\u00d7\u00a010\u221209 ***</td>\n    </tr>\n    <tr>\n      <td>Maximum spike frequency (Hz)</td>\n      <td>135.04\u00a0\u00b1\u00a065.42 (11\u2013263)</td>\n      <td>72.14\u00a0\u00b1\u00a036.12 (2\u2013172)</td>\n      <td>1.0\u00a0\u00d7\u00a010\u221209 ***</td>\n    </tr>\n    <tr>\n      <td>Current at maximum spike frequency (pA)</td>\n      <td>578.63\u00a0\u00b1\u00a0277.97 (50\u20131000)</td>\n      <td>345.24\u00a0\u00b1\u00a0219 (50\u20131000)</td>\n      <td>6.9\u00a0\u00d7\u00a010\u221208 ***</td>\n    </tr>\n    <tr>\n      <td>Spike height (mV)</td>\n      <td>74.06\u00a0\u00b1\u00a09.77 (47.04\u201396.98)</td>\n      <td>76.55\u00a0\u00b1\u00a011.69 (38.84\u201395.97)</td>\n      <td>0.051</td>\n    </tr>\n    <tr>\n      <td>Spike width (ms)</td>\n      <td>0.95\u00a0\u00b1\u00a00.29 (0.63\u20132.29)</td>\n      <td>1.19\u00a0\u00b1\u00a00.32 0.7\u20132.17</td>\n      <td>1.6\u00a0\u00d7\u00a010\u221209 ***</td>\n    </tr>\n    <tr>\n      <td>Spike threshold (mV)</td>\n      <td>\u221237.57\u00a0\u00b1\u00a04.79 (\u221224.09\u2013 \u221248.11)</td>\n      <td>\u221237.7\u00a0\u00b1\u00a05.32 (\u221223.14\u2013 \u221246.03)</td>\n      <td>0.5351</td>\n    </tr>\n    <tr>\n      <td>fAHP amplitude (mV)</td>\n      <td>21.16\u00a0\u00b1\u00a05.14 (9.1\u201338.72)</td>\n      <td>18.09\u00a0\u00b1\u00a04.57 (11.88\u201336.34)</td>\n      <td>1.3\u00a0\u00d7\u00a010\u221205 ***</td>\n    </tr>\n    <tr>\n      <td>fAHP delay after spike peak (ms)</td>\n      <td>0.98\u00a0\u00b1\u00a00.39 (0.55\u20132.7)</td>\n      <td>1.31\u00a0\u00b1\u00a00.55 (0.6\u20133.8)</td>\n      <td>3.4\u00a0\u00d7\u00a010\u221207***</td>\n    </tr>\n    <tr>\n      <td>sAHP amplitude (mV)</td>\n      <td>18.26\u00a0\u00b1\u00a04.2 (9.47\u201332.87)</td>\n      <td>16.54\u00a0\u00b1\u00a04.71 (10.38\u201329.78)</td>\n      <td>0.0035 **</td>\n    </tr>\n    <tr>\n      <td>sAHP delay after spike peak (ms)</td>\n      <td>9.63\u00a0\u00b1\u00a03.32 (2.25\u201316.95)</td>\n      <td>22.58\u00a0\u00b1\u00a013.54 (2.25\u201365.5)</td>\n      <td>4.5\u00a0\u00d7\u00a010\u221212 ***</td>\n    </tr>\n    <tr>\n      <td>On cell mode spontaneous firing frequency (Hz)</td>\n      <td>20.79\u00a0\u00b1\u00a018.74 (0\u201390.53)</td>\n      <td>5.47\u00a0\u00b1\u00a09.22 (0\u201335.68)</td>\n      <td>1.2\u00a0\u00d7\u00a010\u221208 ***</td>\n    </tr>\n    <tr>\n      <td>Whole cell mode spontaneous firing frequency (Hz)</td>\n      <td>19.02\u00a0\u00b1\u00a013.74 (0\u201361.74)</td>\n      <td>9.41\u00a0\u00b1\u00a09.44 (0\u201331.85)</td>\n      <td>4.0\u00a0\u00d7\u00a010\u221206 ***</td>\n    </tr>\n  </tbody>\n</table>\n\n_GPSTN, GP neurons projecting to the subthalamic nucleus; GPCPu, GP neurons projecting to the striatum; fAHP, fast afterhyperpolarization; sAHP, slow afterhyperpolarization; **, p<0.01; ***, p<0.001. Statistical significance was examined using the Wilcoxon rank sum test. The range of each parameter is shown in parentheses._\n\nThese findings suggest that the motor cortices provide a substantial number of boutons in the GP, and can thus modulate GP neuronal activity as they affect the striatum and the STN. However, because bouton density does not directly indicate synaptic efficacy, we also evaluated the electrophysiological features of cortico-pallidal projections.\n\n### Cortico-GP terminals elicit monosynaptic EPSCs\n\nWe conducted whole-cell patch clamp recordings combined with optogenetic stimulation of cortical terminals using in vitro slice preparations. Channelrhodopsin 2 (ChR2) was introduced into cortical neurons using AAV-hSyn-H134R-mCherry injections into either M1 or M2 (Figure 3A). In voltage clamp mode at a holding potential of \u221260 mV, stimulation with a brief light pulse (5 ms, 470 nm) elicited inward currents in GP neurons (Figure 3B1). The response was stable over repetitive stimulation (10 pulses at 2\u201310 Hz; Figure 3B1). In current clamp mode, photoactivation elicited action potentials, although the action potential probability was affected by the spontaneous oscillation of the membrane potential (Figure 3B2). To confirm that the photoactivated current that elicited action potentials was within the physiological range, we measured the minimum current required to induce action potentials (rheobase current) in GP neurons using 5 ms depolarizing pulses (Figure 3C, inset). In half of the GP neurons, the rheobase was less than 30 pA, and most GP neurons could emit an action potential with less than 100 pA of depolarization (N\u00a0=\u00a0100 neurons; Figure 3C). A depolarized membrane potential and a high input resistance (Table 1) led to easy induction of action potentials by small excitation.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/49511/elife-49511-fig3-v2.jpg)\n\n**Figure 3.:** (A) Schematic (top) of AAV encoding channelrhodopsin 2 and mCherry injection into the motor cortex for ex vivo recordings using coronal slices. Examples of AAV injection sites are shown in the middle panels (red). Images of immunofluorescence for neurofilament 200 kDa (N200, bottom), used for identification of the M1/M2 border (white dotted lines). (B1) A representative voltage clamp trace (held at \u221260 mV) showing inward currents in GP neurons elicited by 5 ms blue light pulses (470 nm). (B2) A representative current clamp trace showing photoinduced action potentials and excitatory postsynaptic potentials (EPSPs, arrowheads). (C) Cumulative histogram of the rheobase current of GP neurons. Note that 25 to 30 pA is sufficient to elicit action potentials in half of GP neurons (N\u00a0=\u00a0100). (D) Proportion of GP neurons innervated by M1 or M2 terminals. The number of neurons is shown in bars. M2 more frequently innervated the GP than did M1. (E) Location of GP neurons innervated by M1 (red circle) or M2 (blue circle). Note the topographic distribution of M1 and M2 innervation. The size of circles represents the amplitude of optically evoked currents.\n\nNot all GP neurons exhibited inward photocurrents, a total of 67/159 and 151/248 neurons did so during M1 and M2 stimulation, respectively (Figure 3D). The locations of the GP neurons in which inward currents were observed were plotted (Figure 3E). Consistent with the distribution of cortical axons, these locations were frequently around the center of the GP in coronal slices. Responsive neurons were similarly concentrated around the center of the GP along the rostro-caudal axis. Neurons responding to M1 terminal stimulation tended to be located in the dorsal GP, whereas those responding to M2 terminal stimulation were clustered in the ventral GP (Figure 3E).\n\nIt is possible that the observed EPSCs were elicited by the STN via a di-synaptic circuit. However, we used coronal slices with an anteroposterior position of 0.6 mm rostral (r0.6)\u20132.2 mm caudal (c2.2) to bregma, which did not include the STN (Paxinos and Watson, 2007). Bath application of the sodium channel blocker tetrodotoxin (TTX) at 1 \u00b5M completely prevented inward currents (Figure 4A). Additional application of the potassium channel blocker 4-aminopyridine (4AP) at 1 mM recovered the currents to up to 60% of control on average (Figure 4A), indicating that the current was monosynaptic (Gradinaru et al., 2009; Shu et al., 2007). A GABAA receptor antagonist (gabazine, 20 \u00b5M) did not block the current (Figure 4A); conversely, glutamate receptor antagonists (CNQX, 10 \u03bcM and AP-5, 20 \u03bcM) almost completely abolished the current (Figure 4A). Thus, the inward current was mediated by glutamatergic excitatory postsynaptic currents (EPSCs). We compared the time course of EPSCs between STN and GP neurons. The latency (delay) of current onset after the photic stimulus in GP neurons did not differ from that in STN neurons (Figure 4B), which indicates that both EPSCs are directly elicited by cortical terminal activation. The 20\u201380% rise time and decay constant tended to be longer in GP neurons than in STN neurons (Figure 4B). Taken together, these results indicate that the inward current observed in GP neurons was a monosynaptic, glutamatergic EPSC directly elicited by cortical terminals. Hereinafter, we refer to this current as an optically evoked EPSC (oEPSC). In some experiments, both GP and STN neurons were recorded from the same animal, and the amplitude of oEPSC in GP neurons was normalized to the mean of oEPSCs from STN neurons (Figure 4C; N\u00a0=\u00a010 GP neurons from three rats for M1 stimulation and N\u00a0=\u00a013 GP neurons from two rats for M2 stimulation). The normalized mean values were not significantly different from 1 (p>0.1, signed rank test), suggesting that the motor cortex could innervate GP and STN using similar weights, however, as the oEPSC amplitude largely varied across cells in both GP and STN neurons, the interpretation of this comparison must be made with caution.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/49511/elife-49511-fig4-v2.jpg)\n\n**Figure 4.:** (A) The current induced by optogenetic stimulation of cortical terminals is monosynaptic and glutamatergic. (A1) Representative traces of pharmacological effects on the light-induced inward current. Top, no treatment; Middle, effects of TTX, 4AP, and gabazine; Bottom, effects of additional application of glutamate receptor antagonists (CNQX, AP5). (A2) A summary plot of pharmacological treatments (N\u00a0=\u00a010 GP neurons). (B) Comparison of the time courses of optogenetically evoked EPSCs (oEPSCs). (B1) Representative traces recorded from STN (black) and GP (red) neurons. The GP and STN neurons were not recorded simultaneously. (B2-4) Summary plots of oEPSC time courses in STN and GP neurons. (B2) The latency from light onset to oEPSC onset does not differ between STN and GP neurons (both N\u00a0=\u00a015 neurons). The rise time (B3) and the decay constant (B4) of oEPSCs tended to be longer in GP neurons (N\u00a0=\u00a015 GP neurons and 12 STN neurons). (C), Comparison of oEPSC amplitude between GP and STN neurons, derived from the same animal. The amplitude in the GP neurons was normalized to that in the STN. No significant difference was observed between GP and STN neurons.\n\n### M1 and M2 more frequently innervate GP neurons projecting to the striatum than those projecting to the STN\n\nThe results shown in Figure 3D raised the question of whether the cortical innervation of GP neurons follows any specific rules. To determine whether cortical innervation depends on the GP-neuron projection type, we conducted in vitro whole cell recordings from retrogradely labeled GPSTN or GPCPu neurons (Figure 5A). Occasionally, we recorded large GP neurons with no or very little spontaneous activity (N\u00a0=\u00a06, 1.20\u00a0\u00b1\u00a01.79 Hz during on-cell recording mode), which exhibited a distinct action potential shape. Based on earlier reports (Bengtson and Osborne, 2000; Hern\u00e1ndez et al., 2015), these were most likely cholinergic neurons and were excluded from subsequent analysis, although they were found to be innervated by the cortex (N\u00a0=\u00a05/6). In addition to the molecular profiles, the electrophysiological properties of GPCPu and GPSTN neurons also differed. GPSTN neurons usually showed spontaneous repetitive firing (~20 Hz; Table 1), whereas many GPCPu neurons were silent. Firing frequencies induced by depolarizing current pulses were higher in GPSTN than in GPCPu neurons, and spike width was narrower in GPSTN neurons (Figure 5B; see Table 1 for other electrophysiological parameters and quantitative comparisons). We discovered that GPCPu neurons (51/62) responded more frequently to opotogenetic activation of motor cortical afferents than GPSTN neurons (53/126), as shown in Figure 5C. The oEPSC amplitude was also larger in GPCPu neurons (Figure 5D,E,F). The distribution of oEPSC amplitudes recorded from GPCPu neurons seemed bimodal; the smaller-amplitude group was similar to GPSTN neurons (Figure 5D). For comparison, MSNs (N\u00a0=\u00a011) and STN neurons (N\u00a0=\u00a018) were also recorded. One-way ANOVA followed by post-hoc Tukey tests revealed that the oEPSC amplitude was significantly larger in MSNs than in STN or GP neurons (for all combinations of comparisons, p<9\u00a0\u00d7\u00a010\u22127). The oEPSC amplitude of STN neurons was not significantly different from that of GPSTN (p=0.109) or GPCPu neurons (p=0.999). GPCPu neurons exhibited significantly greater amplitudes than GPSTN neurons (p=0.0021; Figure 5D). We observed relatively hyperpolarized membrane potentials and lower membrane input resistances in MSNs compared with GP or STN neurons. The mean membrane potential (Vmean) was \u221273.45\u00a0\u00b1\u00a05.3 mV, and input resistance (Rin) was 79.17\u00a0\u00b1\u00a028.38 M\u03a9 for 10 MSNs, whereas Vmean was \u221245.43\u00a0\u00b1\u00a07.47 mV and Rin was 253.14\u00a0\u00b1\u00a0156.31 M\u03a9 for 15 STN neurons (see Table 1 for GP neurons). Thus, despite the larger EPSCs, the ease of induction of action potentials was lower in MSNs than in GP or STN neurons, at least in slice preparations. Actually, the median of the rheobase current was 695 pA for MSNs (N\u00a0=\u00a010; range, 450\u20131415 pA), 55 pA for STN neurons (N\u00a0=\u00a030; range, 10\u2013545 pA) and 30 pA for GP neurons (N\u00a0=\u00a0100; range, 5\u2013250 pA).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/49511/elife-49511-fig5-v2.jpg)\n\n**Figure 5.:** (A) Schematic of ex vivo recordings from retrogradely labeled GP neurons to investigate the effect of GP neuron projection type on cortical innervation. (B) Electrophysiological differences between GP neurons projecting to the striatum (GPCPu) and STN (GPSTN) (see also Table 1). (C) The proportion of GP neurons innervated by M1 or M2 is correlated with projection type. GPCPu neurons were more often innervated by M1 or M2 than GPSTN neurons. Significance was examined using Fisher\u2019s exact test with a Bonferroni correction for multiple comparisons (***, p<0.00025; **, p<0.0025; *, p<0.0125). (D) Amplitudes of oEPSCs in GP, STN, and striatal neurons. The amplitude in GP neurons is similar to that in STN neurons but smaller than that in striatal medium spiny neurons (MSNs). Data obtained from M1 and M2 stimulation are summed. (E) Cumulative histograms of oEPSC amplitude in GPCPu and GPSTN neurons. GPCPu neurons exhibit a greater optically evoked EPSC (oEPSC) amplitude. (F) Left, amplitudes of oEPSCs induced in GP neurons by M1 terminal stimulation. The GPCPu group shows larger oEPSC amplitudes than the GPSTN group. Right, amplitudes of oEPSCs induced by M2 terminal stimulation. Significantly larger oEPSCs were again recorded in the GPCPu group (p=0.00084), but the difference is small.\n\nGPCPu neurons were frequently innervated by either M1 (28/35) or M2 (23/27). In contrast, only a small fraction of GPSTN neurons received M1 (17/51) or M2 (36/75) inputs (Figure 5C). The amplitude of M1-induced oEPSCs was significantly larger in the GPCPu neurons than in the GPSTN neurons (p=2.1\u00a0\u00d7\u00a010\u22128, Wilcoxon rank sum test). This was also the case for M2-induced oEPSCs (p=0.00084). Therefore, both motor areas preferentially innervated GPCPu neurons, although GPSTN was more effectively innervated by M2 (Figure 5C F). Indeed, the mean oEPSC amplitude in GPSTN was larger with M2 stimulation than with M1 stimulation (p=0.0028), but no significant difference between cortical sites was observed in GPCPu neurons (p=0.9595). M2 stimulation frequently evoked oEPSCs with initially smaller amplitudes, especially for the first light pulse, although repetitive light pulses at 10 Hz often augmented the oEPSC amplitude, similar to M1 stimulation. The paired-pulse ratio for second-to-first oEPSC in GPSTN neurons was 1.27\u00a0\u00b1\u00a00.81 for M2 stimulation (N\u00a0=\u00a038) and 1.45\u00a0\u00b1\u00a01.20 for M1 stimulation (N\u00a0=\u00a014); in the GPCPu neurons, it was 1.25\u00a0\u00b1\u00a00.62 (N\u00a0=\u00a021) for M2 stimulation and 1.31\u00a0\u00b1\u00a00.79 (N\u00a0=\u00a028) for M1 stimulation.\n\nIt is important to uncover if any innervation bias exists in GPCPu neurons, because GPCPu neurons should be composed of at least two neuron types, prototypic neurons and arkypallidal neurons. Prototypic neurons are composed of parvalbumin (PV)- and/or LIM homeobox 6 (Lhx6)- expressing neurons, and Lhx6 neurons provide more axons into the striatum than PV neurons (Hern\u00e1ndez et al., 2015; Mizutani et al., 2017; Oh et al., 2017). In contrast, arkypallidal neurons express forkhead box protein 2 (FoxP2), and exclusively project to the striatum. Electrophysiological membrane properties are known to differentiate between arkypallidal and prototypic neurons (Abdi et al., 2015; Hern\u00e1ndez et al., 2015; Mallet et al., 2012; Mastro et al., 2014), however, as shown in Figure 5B, the range of parameter values of GPSTN and GPCPu neurons overlapped, indicating that they do not allow to distinguish cell types strictly. In addition, we found that immunodetection of Lhx6 was somewhat unstable after in vitro slice recordings.\n\nSince at least a part of the Lhx6 neurons projects to both the striatum and the STN, we hypothesized that double retrograde labeling could distinguish them from other GP neuron types. To confirm this, using retrograde labeling of GP neurons and immunofluorescence against PV, Lhx6, and FoxP2, we examined the molecular profiles of GP neuron types in Wistar rats (Fujiyama et al., 2016). We confirmed that GPCPu neurons frequently expressed FoxP2 or Lhx6, but not PV (N\u00a0=\u00a0659 GPCPu neurons in nine sections from three rats;\u00a0Figure 6A), in agreement with previous studies in mice (Dodson et al., 2015; Hern\u00e1ndez et al., 2015; Mastro et al., 2014; Mizutani et al., 2017), Long-Evans rats (Oh et al., 2017), and Sprague-Dawley rats (Abdi et al., 2015; Kita and Kita, 2001). The expression of FoxP2 and Lhx6 was almost mutually exclusive. Most PV(+) GPCPu neurons co-expressed Lhx6. GPSTN neurons lacked expression of FoxP2 but expressed PV and/or Lhx6 (N\u00a0=\u00a0727 GPSTN neurons in nine sections from three rats; Figure 6A). Triple immunofluorescence combined with a single retrograde tracer injection into the striatum was conducted to further elucidate the molecular identity of GPCPu neurons. The expression of Lhx6 (333/665) or FoxP2 (328/665) was again almost mutually exclusive. Only a small fraction (14.7%) of Lhx6-expressing neurons co-expressed PV (49/333) (Figure 6B). Therefore, GPSTN neurons comprised PV(+) and/or Lhx6(+) prototypic neurons, whereas GPCPu neurons comprised arkypallidal neurons expressing FoxP2 and prototypic neurons expressing Lhx6 (Fujiyama et al., 2016; Mallet et al., 2012). Occasionally, double-retrogradely labeled neurons, namely bi-directionally projecting GP neurons (GPBi), which innervate both the STN and the striatum, were observed (N\u00a0=\u00a0113; Figure 6A3). Lhx6 was expressed in most GPBi neurons (61/69), PV less frequently (19/72), and FoxP2 rarely (2/85), as expected. GPBi neurons that expressed PV co-expressed Lhx6, although the number of neurons examined was small (5/6). These observations show that selective electrophysiological recordings from putative Lhx6(+) neurons can be conducted by targeting GPBi neurons. We found that GPBi neurons received cortical inputs (7/10 for M1 and 7/9 for M2; N\u00a0=\u00a03 rats for each), although most of them exhibited oEPSCs with small amplitudes (Figure 6C). In fact, the frequency distributions of oEPSC amplitudes significantly differed between GPBi and GPCPu neurons (Figure 6D; p=2.2\u00a0\u00d7\u00a010\u221216, Kolmogorov-Smirnov test). To clarify whether arkypallidal neurons are innervated by the motor cortex, the GPCPu neurons, in which oEPSCs were detected, were examined for immunofluorescence against FoxP2 (N\u00a0=\u00a09). We found that eight out of nine GPCPu neurons expressed FoxP2 (Figure 6E), suggesting that arkypallidal neurons are preferentially innervated by the motor cortex. Again, although the comparison of oEPSC amplitudes among experiments is difficult to interpret, this could imply that arkypallidal neurons receive larger cortical inputs.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/49511/elife-49511-fig6-v2.jpg)\n\n**Figure 6.:** Two distinct retrograde tracers were injected into the STN and striatum (CPu), respectively. (A) Three combinations of double immunofluorescence (PV/Lhx6, PV/FoxP2, and Lhx6/FoxP2) were applied. CPu-projecting GP neurons (GPCPu) expressed either FoxP2 or Lhx6 exclusively (A1), whereas STN-projecting GP neurons (GPSTN) were mainly composed of PV- and/or Lhx6-expressing neurons (A2). (A3) GP neurons projecting to both the CPu and STN (GPBi) frequently expressed Lhx6, but not FoxP2. (B) Triple immunofluorescence for GPCPu neurons. Only a single retrograde tracer was injected into the striatum. (C) oEPSC amplitudes of GPBi neurons. Most GPBi neurons exhibited small amplitudes of oEPSCs. Green and red retrobeads were injected into the CPu and STN, respectively. Confocal images of a biocytin-filled GPBi neuron (arrowheads) are shown. AAV-labeled cortical axons also show red fluorescence. (D) Cumulative histograms of oEPSC amplitudes in GPBi and GPCPu neurons. The distributions are significantly different (p=2.2\u00a0\u00d7\u00a010\u221216 Kolmogorov-Smirnov test). The histogram of GPCPu neurons is the same as that shown in Figure 5E. (E) An example of confocal images of GPCPu neurons innervated by the motor cortex. Upper, the first imaging session before immunoreaction to identify a biocytin-filled neuron that is labeled with retrobeads. The slice was cleared with CUBIC. Bottom, the second imaging session of the neuron after immunoreaction against FoxP2. The focal plane was slightly shifted from the first to the second session, because retrobeads are accumulated in the cytosol, whereas FoxP2 is localized in the nucleus.\n\n## Discussion\n\nTo summarize, we here report on the direct motor cortical innervation of GP neurons. Morphologically, the axon varicosity density in the GP reached 47% and 78% of that in the STN for M1 and M2 projections, respectively. Pallidostriatal neurons were more frequently innervated by the cortex than pallidosubthalamic neurons, and they often expressed FoxP2, indicating that they were arkypallidal neurons (see Figure 7 for the schematic). To date, the fast excitation observed in the GP following cortical stimulation has been considered disynaptic excitation via the STN (Nambu et al., 2000). This does not fully contradict the present findings, since in a larger population of GP neurons, GPSTN (or prototypic neurons), only 33% (from M1) and 52% (from M2) received motor cortical inputs. In addition, it is possible that extracellular unit recordings are biased towards neurons with relatively high firing frequencies, which include GPSTN neurons (Figure 5B, Table 2). A question that remains is whether cortico-pallidal projections exist in primates including humans, as has been suggested (Milardi et al., 2015; Smith and Wichmann, 2015).\n\n**Table 2.**\n The maximum number of cortical boutons (/100\u00a0\u00d7\u00a0100 \u03bcm2) in the basal ganglia nuclei.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Cortical area</th>\n      <th>GP</th>\n      <th>Striatum</th>\n      <th>STN</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>M1 (N\u00a0=\u00a04 rats)</td>\n      <td>267, 200, 289, 141</td>\n      <td>911, 1300, 1464, 657,</td>\n      <td>506, 432, 528, 408</td>\n    </tr>\n    <tr>\n      <td>M2 (N\u00a0=\u00a04 rats)</td>\n      <td>317, 737, 513, 92</td>\n      <td>1300, 2021, 1829, 398</td>\n      <td>420, 717, 637, 177</td>\n    </tr>\n  </tbody>\n</table>\n\n![Figure 7.](https://cdn.elifesciences.org/articles/49511/elife-49511-fig7-v2.jpg)\n\n**Figure 7.:** The dotted lines represent the relatively weak innervation reported in this study for cortex to GPSTN, and for GPCPu to dMSNs (Glajch et al., 2016). The numbers in circles indicate estimated conduction times in milliseconds (ms) (Jaeger and Kita, 2011). (A) M1 activation induces excitation in the striatum, STN, and GPCPu. Due to the electrophysiological properties of the neurons, STN and GP may be activated faster than striatal neurons. (B) M2 activation conveys additional excitation to the GPSTN neurons. The possible information flow related to the present study is indicated by red lines. Note that inhibition from the GP is here considered faster (1 ms) than excitation from the STN (2\u20133 ms) (Jaeger and Kita, 2011). The actual timing of spike activity depends on neuron type, and excitation/inhibition interactions are complex.\n\n### Methodological consideration\n\nIn the present study, we employed tracer or viral vector injections to label cortico-pallidal projections in both morphological and electrophysiological experiments. Injections can extend to nearby areas, and some tracers can be transmitted both anterogradely and retrogradely, which results in the contamination of multiple projection pathways. This was however not the case in this study. First, as we show in Figures 2 and 3, cortical tracer injections into the motor area were restricted to single areas. Second, we also examined well characterized cortico-striatal and cortico-subthalamic projections (preliminary data can be found in Karube et al., 2019), and we found that the distributions of M1, M2, LO, and Cg axons differed in the striatum and STN, in line with earlier reports (Afsharpour, 1985; Alloway et al., 2010; Brown et al., 1998; Ebrahimi et al., 1992; Hoover and Vertes, 2011; Janssen et al., 2017; Kincaid and Wilson, 1996; Kolomiets et al., 2001; Mailly et al., 2013; Reep and Corwin, 1999; Reep et al., 2008). Third, we occasionally found some retrogradely labeled neurons in remote cortical areas, mainly in the temporal/insular area and posterior parietal area after injection into the motor areas. However, in approximately three-fourths of sections, no retrogradely labeled neuron was found. In the remaining sections, only less than eight pyramidal neurons per section were sparsely scattered. Thus, their contribution to axonal projections is likely to be negligible.\n\nAnother technical limitation that needs to be mentioned is the difficulty to precisely compare oEPSC amplitudes among experiments. As shown in Figure 5D, oEPSC amplitudes in the striatum and STN also varied among neurons. We cannot exclude the possibility that amplitude differences between GPSTN and GPCPu or between M1-GPCPu and M2-GPCPu may be caused by inconsistencies in AAV infections, even though there were significant differences. We think that the potential variance in oEPSC amplitudes that stems from differences in the efficiency of viral vector infections is evened out by the large number of GP neurons examined, but further research will be needed to come to a definite conclusion.\n\n### Possible effects of cortical innervation in GP neurons\n\nCortico-pallidal projections were topographically organized; M1 and M2 axons were densely distributed in the CB(-) central part of the GP (Figures 1 and 2, Figure 1\u2014figure supplements 1 and 2). Cg axons projected to the GP in a similar manner, but dense in the more medial GP. In contrast, LO provided fewer pallidal collaterals (Figure 2\u2014figure supplements 1 and 2). Thus, each frontal cortical area likely has its own regions of interest in the GP. Our findings may explain the heterogeneous activity of GP neurons during movement (Arkadir et al., 2004; DeLong, 1971; Dodson et al., 2015; Goldberg and Bergman, 2011; Mink and Thach, 1991a; Mink and Thach, 1991b; Turner and Anderson, 1997). The firing phases of prototypic neurons (GPSTN) and arkypallidal neurons corresponding to FoxP2(+) GPCPu differ with regard to cortical activity (Abdi et al., 2015; Mallet et al., 2012; Mallet et al., 2016). This can be due to biased cortical innervation of the GPCPu (Figure 5C, D, E, F, Figure 6C, E). In addition, the above reports revealed that the firing phase was heterogeneous in prototypic neurons, too. We show here that one-third to half of all prototypic neurons received cortical inputs, which can contribute to their heterogeneity. The axon terminal density of cortico-pallidal projections was much sparser than that of cortico-striatal projections, but reached 50\u201380% of that of cortico-subthalamic projections. Considering that even in the connection between the STN and GP, which is one of the main synaptic connections in the indirect pathway, only 1\u20132% of all GP neurons converge onto a single STN neuron and vice versa (Baufreton et al., 2009; Goldberg and Bergman, 2011), sparse connections can still functionally work. Moreover, even if excitatory synaptic inputs did not reach action potential thresholds, the timing of subsequent action potentials can be altered (Ermentrout, 1996; Schultheiss et al., 2010). In addition, the expression of sodium channel characteristics of GP neurons can boost excitatory synaptic inputs (Edgerton et al., 2010; Hanson et al., 2004). Thus, the relatively sparse cortical innervation to the GPSTN neurons could nevertheless affect a small but specific component of the basal ganglia circuitry.\n\nCortical innervation could affect the synchronization of GP neurons. During spontaneous firing, even most neighboring GP neuron pairs do not exhibit real correlation (Bar-Gad et al., 2003; Goldberg and Bergman, 2011; Stanford, 2003), even for pause periods (Elias et al., 2007). However, it has been reported that excitatory inputs may synchronize GP neurons effectively, as GP neurons tend to align with STN inputs rather than with striatal inhibitory inputs (Goldberg et al., 2003). Monosynaptic cortico-pallidal inputs, which are also excitatory, probably precede the inputs from the STN and can contribute to synchronization of GP neurons, which would strengthen STN-GP coupling (Bevan et al., 2002a; Bevan et al., 2002b; Parent and Hazrati, 1995b), thereby affecting the oscillatory phase and synchronization of the basal ganglia.\n\n### Potential roles of the cortico-pallidal pathway in the cortex-basal ganglia-thalamus loop\n\nWe could not identify the origin of cortical neurons that provide axons in the GP. Pyramidal tract (PT) type pyramidal neurons are potential candidates, because some collaterals were emitted from thick axon trunks passing the GP (Figure 1B). The most recent finding in mice suggested that layers 5 and 6 cortical neurons project to the GP (Abecassis et al., 2019), although it is not clear whether they project only to the GP. PT neurons innervate multiple brain regions including the striatum and STN in rodents, however, their axon collaterals in the GP have not been reported yet (Kita and Kita, 2012; Shepherd, 2013; Shibata et al., 2018). The combinations of multiple cortical innervation onto the basal ganglia nuclei must influence information flow. Thus, it needs to be clarified whether the cortical neurons innervating the GP also innervate other basal ganglia nuclei.\n\nTo speculate potential effect of cortico-pallidal projections, we follow the related neural circuitries in the basal ganglia. Once M1 and/or M2 are activated, membrane properties of STN and GP neurons will contribute to earlier and more efficient excitation than those of striatal neurons (Jaeger and Kita, 2011; Figure 7). Since GPCPu neurons are activated by direct M1 inputs, they may increase the firing more significantly than GPSTN neurons and be more in phase with cortical excitation. With regard to synaptic targets of GPCPu neurons, Mallet et al. (2012) reported that both MSNs and interneurons in the striatum are innervated by arkypallidal neurons. In mice, Npas1(+) neurons, which overlap with Lhx6(+) and FoxP2(+) GPCPu neurons, synapse onto iMSNs and dMSNs. The average inhibitory postsynaptic current amplitude evoked by stimulation of axon terminals of Npas1(+) neurons is significantly larger in iMSNs than dMSNs (Glajch et al., 2016). Therefore, the inhibition of MSNs by GPCPu could counteract corticostriatal excitation, and weaken iMSN activity. Because iMSNs are likely to inhibit all GP neuron types equally (Hern\u00e1ndez et al., 2015), decreased iMSN activity may reduce the inhibition of GP neurons, thereby augmenting the inhibition of STN, EP, and SNr. As the operation of this trisynaptic circuit should be slower than monosynaptic cortico-STN excitation (Figure 7), the M1 cortico-pallidal pathway may act as a delayed terminator of the hyperdirect pathway. GPCPu can also inhibit dMSNs, which in turn disinhibit the EP/SNr.\n\nIf iMSN activity is suppressed by the GPCPu, what controls or suppresses GPCPu excitation? The most parsimonious explanation is that decreased cortico-pallidal activity can weaken GP excitation. In addition, it is noteworthy that striatal neurons receive contralateral cortical excitation as well as ipsilateral input (Wilson, 1986; Wilson, 1987), whereas the GP and STN receive only ipsilateral excitation (Figure 1D). Thus, it could be possible that the accumulating cortico-striatal excitation evoked by both hemispheres may overcome the pallido-striatal inhibition evoked by ipsilateral cortico-pallidal and cortico-STN excitation. If that was the case, then, the iMSNs can suppress GP neurons. It is also possible that axon collaterals of dMSNs, which would receive weaker inhibition from GP than iMSNs, inhibit the GP (Fujiyama et al., 2011; Kawaguchi et al., 1990; L\u00e9vesque et al., 2003; Wu et al., 2000). In addition, pallidostriatal inhibition of striatal interneurons can possibly disinhibit MSN activity. Finally, via local axons of GP neurons (Fujiyama et al., 2016; Mallet et al., 2012), mutual inhibition (Bugaysen et al., 2013; Mastro et al., 2017; Sadek et al., 2007) may work to terminate transient excitation of the GP.\n\nIn the case of M2 inputs to the GP, the GPSTN pathway can also be activated, as well as the GPCPu pathway described above (Figure 7B). M2-GPSTN circuitry may be more sensitive to timing, because the GP and STN form bidirectional connections, and the cortico-pallidal pathway can act as fast as the hyperdirect pathway. These two pathways may compete: if GPSTN is activated first, it will suppress STN; if STN is activated first, GP will be excited directly by the cortex and via the STN, in turn inhibiting the STN. Taken together, it is implied that the net effect of M2-GPSTN pathway activity is likely to be suppression of the STN. However, basal ganglia activity may be strongly affected by competition between M2-pallidal and hyperdirect pathways. Because the hyperdirect pathway contributes to the cessation of ongoing actions, the cortico-pallidal pathway may cancel this cessation signal. Mallet et al. (2016) proposed a two-step model for cancellation via cooperation between the STN and GP, especially arkypallidal neurons. Our current findings shed light on the linking of complex stop/cancel sequences. In addition, GPSTN neurons innervate SNc dopaminergic neurons in a cell type specific manner (Mastro et al., 2014; Oh et al., 2017). Based on our results indicating that M2 but not M1 projects to the dorsolateral striosomes (Figure 1\u2014figure supplement 3) and on the fact that striosomal dMSNs innervate the SNc (Fujiyama et al., 2011; Gerfen, 1985), M2-driven pathways may modulate dopamine signaling via the striatum and GPSTN. Recently, Magno et al. (2019) revealed that M2 activation can relieve the motor dysfunction of Parkinson\u2019s disease in mice. The neural circuitry proposed here is likely to contribute to such an effect.\n\nThe findings of recent in vivo experiments in rodents have revealed functions of M2. M2 contributes to the preparatory function (Li et al., 2015; Svoboda and Li, 2018), as observed in primates (Wise, 1985), or increases its influence on other cortical areas during the preparatory phase (Makino et al., 2016; Makino et al., 2017). GP neurons are also suggested to compute action selection (Bogacz et al., 2016; Goldberg and Bergman, 2011), which likely relates to the preparation of movement, and the M2-pallidal pathway may therefore contribute. It has been also suggested that M2 is involved in the integration of movement with sensory or internal information (Barthas and Kwan, 2017; Saiki et al., 2014), including posture coding (Mimica et al., 2018). It is possible that M2-GP innervation reflects sensory signal information and contributes to the fine tuning of ongoing movement such as the adaptation of chosen behaviors. Along with possibly involving the dopamine system, the M2-GP pathway may relate more to the plastic and integrated phases of movement, which may require sensitive control using two GP cell types. However, functional differentiation between M1 and M2 must be more complex, since concurrent and similar activities of M1 and M2 neurons have been reported, at least for certain movements (Saiki et al., 2014; Soma et al., 2017). Parallel connections between M1 and M2 also affect the aforementioned neural circuitry (Ueta et al., 2013; Ueta et al., 2014). To conclude, the functional relevance and importance of cortico-pallidal projections from M1/M2 remain to be resolved in detail.\n\n## Materials and methods\n\nAnimal experiments were approved and performed in accordance with the guidelines for the care and use of laboratory animals established by the Committee for Animal Care and Use (Permit Number: A16008, A17001, A18001, A19036) and the Committee for Recombinant DNA Study (Permit Number: D16008, D17001, D18001, D19036) of Doshisha University. All efforts were made to minimize animal suffering and the number of animals used.\n\n### Animal surgery for injection of neural tracers and viral vectors\n\nWistar SLC rats (Japan SLC Inc, Hamamatsu, Japan; N\u00a0=\u00a052 of both sexes for electrophysiological experiments and N\u00a0=\u00a016 male rats for morphological experiments) were anesthetized with intramuscular injection of a mixture of ketamine (Ketalar; Daiichi-Sankyo, Tokyo, Japan; 40 mg/kg) and xylazine (Bayer HealthCare, Tokyo, Japan; 4 mg/kg). A small amount (0.05 mL) of the mixture was additionally injected every 15 min during any prolonged surgery (>1 hr). Body temperature was monitored and controlled at 37\u00b0C with the aid of a heating device (World Precision Instruments [WPI], Sarasota, FL, USA). Craniotomy was performed with a drill at an appropriate position on the skull based on the rat brain atlas (Paxinos and Watson, 2007). A glass pipette (tip diameter, 30\u201360 \u00b5m) was used for all injections. For anterograde tracers, biotinylated dextran amine (BDA, 10 kDa; 10% solution dissolved in PB; Thermo Fisher Scientific, Waltham, MA, USA) was injected using either a brief air pulse (10\u201320 psi for 40\u2013100 ms) controlled with a coordinated valve system (PV 820, WPI) or using electrophoresis (0.5\u20132 \u03bcA of positive current, 7 s ON/7 s OFF for 80 cycles) with a current controller (WPI). PHA-L (Vector Laboratories, Burlingame, CA, USA; 2.5% dissolved in 10 mM Na2HPO4, pH 8.0) was injected using electrophoresis (1\u20135 \u03bcA positive current, 7 s ON/7 s OFF for 80 cycles). AAV vectors encoding fluorophores were injected using air pressure (1.5\u00a0\u00d7\u00a01010 vg [vector genomes]/\u00b5L, AAVdj-hSyn-hChR2(H134R)-mCherry; the plasmid a gift from Karl Deisseroth; Addgene plasmid #26976; http://n2t.net/addgene:26976; RRID: Addgene_26976). For retrograde tracers, cholera toxin subunit B (CTB) conjugated with Alexa Fluor 488 or 555 (Thermo Fisher Scientific) and fluorophore-labeled beads (Green Retrobeads IX, LumaFluor Inc, Durham, NC, USA; FluoSphere Orange 0.04 \u00b5m, Thermo Fisher Scientific) were injected using air pressure. For labeling cortical neurons, injections were performed at two to three depths typically at 400 \u03bcm-intervals. The stereotaxic coordinates (Paxinos and Watson, 2007) of injections in the centers of each cortical area were as follows (the actual injection locations were normalized based on skull size using the distance between bregma and lambda): for rostral M1, 2.0 mm rostral from bregma (A/P r2.0) and 2.5 mm lateral from the midline (M/L 2.5), depth 0.5\u20131.2 mm from cortical surface; for caudal M1: A/P 0.0, M/L 2.6, depth 0.5\u20131.2; for M2: A/P r4.2, M/L 1.9, depth 0.5\u20131.2 at a 30\u00b0 angle rostral from vertical; for lateral orbitofrontal area (LO): A/P r3.4, M/L 2.9, depth 4.0. Because the Cg is located at the medial surface of the frontal cortex and is enclosed by M2, contamination of M2 following vertical injections into the Cg would have been unavoidable. Therefore, for injections into the Cg, the contralateral medial frontal area was removed using an aspiration needle and vacuum pump to expose the medial surface of the frontal cortex of the targeted hemisphere. An injection electrode was then inserted into the Cg at an angle of 45\u00b0 (A/P r1.8, M/L 0.5) and the contents of the electrode ejected into the Cg at two depths (0.5 and 1.0) using air pressure. Tracer injections into the striatum were performed to efficiently label GP neurons projecting to the dorsal striatum, pressure injection was applied in three tracks (two depths for each track) at A/P r2.0, M/L 2.5, depth 3.8; A/P r1.0, M/L 3.5, depth 4.2; and A/P 0.0, M/L 3.7, depth 4.0. After injections, the skin was sutured and 2.5 mg/kg of butorphanol (Vetorphale, Meiji Seika Pharma, Tokyo, Japan) was subcutaneously injected as an analgesic. The animals were allowed to recover before further experimentation. We allowed 2\u20134 d of survival time for BDA or retrograde tracers, 5\u20138 d for PHA-L, and 2\u20134 weeks for AAV. The age of the rats used for the morphological experiments ranged from 7 to 12 weeks.\n\n### Immunohistochemistry\n\nAfter the survival period, rats were deeply anesthetized with an intraperitoneal injection of sodium pentobarbital (100 mg/kg; Kyoritsu Seiyaku Corporation, Tokyo, Japan) and perfused with pre-fixative (sucrose 8.5% w/v, MgCl2\u00a05 mM; dissolved in 20 mM PB) followed by fixative (2 or 4% paraformaldehyde and 0.2% picric acid with or without 0.05% glutaraldehyde in 0.1 M PB, pH 7.4) through the cardiac artery. The brains were post-fixed in situ for 2\u20133 hr, and then removed and washed with PB several times. Sagittal or coronal sections 50 \u00b5m thick were cut using a vibratome (Leica VT1000, Leica Instruments, Wetzlar, Germany) or freezing microtome (Leica SM 2000R), and stored in PB containing 0.02% NaN3 until further use.\n\nFor immunoreaction, sections were incubated with primary antibody diluted in incubation buffer consisting of 10% normal goat serum, 2% bovine serum albumin, and 0.5% Triton X in 0.05 M Tris buffered saline (TBS) overnight at room temperature (RT) or for 2\u20133 d at 4\u00b0C. For immunofluorescence, after rinsing with TBS three times, the sections were incubated with the secondary antibodies conjugated with fluorophores for 3 hr at RT. After three rinses, the sections were dried on glass slides and coverslipped with antifade mounting medium (ProLong Gold, Vector, Burlingame, CA). For brightfield specimens, the sections were incubated with a biotinylated secondary antibody followed by rinses and then reacted with ABC solution (1:200 dilution; Vector Elite) for 3 hr at RT, and visualized with 3,3\u2032-diaminobenzidine (DAB) and/or Ni-DAB. The sections were dehydrated with a graded series of ethanol, delipidated with xylene, and finally embedded with M\u00b7X (Matsunami Glass Ind., Ltd., Osaka, Japan). The primary and secondary antibodies used in this study are listed in Supplementary file 1 Tables 1 and 2.\n\n### Image acquisition\n\nPhotomicrographs of brightfield specimens were captured using a CCD camera (DP-73, Olympus, Tokyo, JAPAN) equipped with a BX-53 microscope (Olympus) using 4\u00d7 (numerical aperture [N.A.] 0.13), 10\u00d7 (N.A. 0.3), 40\u00d7 (N.A. 0.75), 60\u00d7 (N.A. 0.9) or 100\u00d7 (N.A. 1.4; oil-immersion) objectives. Photomicrographs were analyzed using Fiji (a distribution of Image J) (Schindelin et al., 2012), and Adobe photoshop (Adobe Systems Incorporated, Sam Jose, CA, USA). The brightness of digitized images was adjusted using the adjust-level function of these applications. To obtain a multifocus image, images were captured with 1 \u03bcm steps and processed with the \u2018extended depth of focus\u2019 Fiji plugin. Fluorescent images were captured using an Orca Spark CMOS camera (Hamamatsu photonics, Hamamatsu, Japan) or a DP-73 camera equipped with a BX-53 microscope. To quantify the molecular expression patterns of GP neuron types, immunofluorescent images were acquired using a confocal microscope (FV1200, Olympus) with 40\u00d7 (N.A. 0.95) or 100\u00d7 (N.A. 1.35; silicon oil immersion) objectives.\n\n### In vitro slice recordings\n\nBasal ganglia neurons were recorded using in vitro on cell and whole cell patch clamp. Rats of both sexes (N\u00a0=\u00a052; postnatal 30\u201365 d) were deeply anesthetized with isoflurane and perfused with 25 mL of ice-cold modified artificial cerebrospinal fluid (ACSF; N-methyl-D-glucamine, 93; KCl, 2.5; NaH2PO4, 1.2; NaHCO3, 30; HEPES, 20; glucose, 25; sodium ascorbate, 5; thiourea, 2; sodium pyruvate, 3; MgCl2, 10; and CaCl2, 0.5; all in mM; pH was adjusted to 7.3 with HCl). All ACSFs were continuously aerated with 95/5% O2/CO2. Brains were removed and immersed in ice-cold modified ACSF for 2 min. Coronal slices 300 \u03bcm thick were cut using a vibratome (7000smz-2, Campden, Leicestershire, UK) and incubated with modified ACSF at 32\u00b0C for 15 min. The slices were transferred to normal ACSF (NaCl, 125; KCl, 2.5; CaCl2, 2.4; MgCl2, 1.2; NaHCO3, 25; glucose, 15; NaH2PO4, 1.25; pyruvic acid, 2; lactic acid, 4; all in mM) at RT. After 1 hr of recovery, slices were moved into a recording chamber thermostatted at 30\u00b0C. A whole-cell glass pipette of 4\u20136 M\u03a9 was filled with intracellular solution (K-gluconate, 130; KCl, 2; Na2ATP, 3; NaGTP, 0.3; MgCl2, 2; Na4EGTA, 0.6; HEPES, 10; biocytin, 20.1; all in mM). The pH was adjusted to 7.3 with KOH, and the osmolality was adjusted to\u00a0~290 mOsm. Target brain regions were identified with the aid of a fluorescence microscope (BX-51WI, Olympus) using a\u00a0\u00d7\u00a040 water-immersed objective lens. Voltage and current clamp recordings were low-pass filtered at 10 kHz and recorded using EPC10 (HEKA Elektronik Dr. Schulze GmbH, Lambrecht/Pfalz, Germany) with a sampling rate of 20 kHz. Spontaneous firings were recorded in an on-cell mode for at least 2 min, then neurons were recorded in a whole-cell mode. The series resistance was examined by applying a brief voltage pulse of \u221210 mV for 10 ms and was confirmed to be less than 25 M\u03a9 during recording. Shortly (less than 1 min) after achieving whole cell configuration, the firing responses to 1 s depolarizing current pulses (maximum intensity was 1000 pA, increasing in 50 pA steps) were recorded in current clamp mode. Passive membrane properties were monitored as responses to 1 s hyperpolarizing current pulses.\n\nFor photoactivation of ChR2, a 470 nm light-emitting diode (LED; BLS-LCS-0470-50-22, Mightex Systems, Pleasanton, CA, USA) was used at full field illumination through a 40\u00a0\u00d7\u00a0water immersion objective. Five-millisecond blue light pulses were applied at a maximum total power of\u00a0~4 mW, at which neuronal responses were saturated. One photo stimulation sequence was composed of 10 light pulses at 10 Hz, and repeated for 10 to 15 times with an interval of 1 s. In some experiments, low concentrations of TTX, 1 \u03bcM, and 4-amino pyridine (1\u00a0mM) were added to the ACSF to isolate monosynaptic currents (Petreanu et al., 2009; Shu et al., 2007). CNQX (10 \u03bcM) and AP5 (20 \u03bcM) were applied to inhibit glutamatergic synaptic currents (N\u00a0=\u00a010), and SR95531 (gabazine; 20 \u03bcM) was applied (N\u00a0=\u00a010) to prevent GABAA receptor-mediated synaptic currents. All pharmacological reagents were purchased from Tocris Bioscience (Bristol, UK).\n\nSlices were then fixed with a mixture of 4% paraformaldehyde, 0.05% glutaraldehyde, and 0.2% picric acid in 0.1 M PB overnight at 4\u00b0C. Fixed slices were rinsed with PB (3\u00a0\u00d7\u00a010 min). In some cases, they were then re-sectioned into 50 \u03bcm-thick sections. The sections were incubated with 1% H2O2 in 0.05 M TBS for 30 min at RT to deplete endogenous peroxidases, then rinsed with TBS three times. The sections were incubated with CF350-conjugated streptavidin for 2 hr (1:3000; Biotium, Inc, Fremont, CA) for fluorescent investigation of biocytin-filled neurons. For immunoreaction against FoxP2, the slices were treated using the CUBIC protocol for tissue clearing (Susaki et al., 2015). Briefly, the slices were incubated with 15% sucrose in PB for 3 hr, followed by 30% sucrose in PB for 3 hr for cryoprotection. After two rounds of freezing and thawing with dry ice, the slices were cleared with CUBIC-1 solution overnight, composed of 25% urea, 25% N,N,N',N'-tetrakis-(2-hydroxypropyl)-ethylenediamine and 15% polyethylene glycol mono-p-isooctylphenyl ether in DW. After washing with PBS containing 0.3% Triton X (PBS-X), the slices were incubated with CF350 conjugated streptavidin overnight. After washing, the slices were incubated overnight with CUBIC-2 solution (10% 2,2',2''-nitrilotriethanol, 50% sucrose, and 25% urea in DW). The cleared sections were investigated using confocal microscopy with a long working distance lens to capture the image of biocytin-filled neurons and its retrobeads labeling. Once recorded neurons were identified, the slices were washed with PBS-X and incubated with anti-FoxP2 antibody overnight. Due to the limited number of fluorescent channels, FoxP2-immunoreaction was detected using the same wavelength as fluorescence of one of the retrobeads. We confirmed that the fluorescent signals of retrobeads could be easily distinguished from those of FoxP2, with FoxP2 localized in the nucleus and retrobeads concentrated in the cytosol, and the signal size larger for FoxP2 than for retrobeads (Figure 4E). Usually, fluorescence of retrobeads is more or less diminished at the time of observation of FoxP2 immunofluorescence (Figure 4E). For brightfield microscopy, the sections were incubated with ABC (1:200) overnight at 4\u00b0C. Biocytin-filled neurons were visualized for light microscopy with Ni-DAB using H2O2 at a final concentration of 0.01%. The sections were dried on a glass slide and coverslipped with EcoMount (Biocare Medical, LLC, Concord, CA) or Mount-Quick (Daido Sangyo, Toda, Japan).\n\n### Data analysis\n\n#### Quantification of cortico-pallidal axon density\n\nMany thick cortical axon bundles with strong fluorescence passed through the GP, which largely disrupted proportional relationships between fluorescence intensity and axon varicosity (or bouton) density. Therefore, we manually counted axonal varicosities in each ROI using brightfield microscopic images. ROI size was 233\u00a0\u00d7\u00a0173 \u03bcm2, which was enough to sample the region with densest axon terminals (Figure 1\u2014figure supplements 1 and 2). Because cortical boutons were observed in the striatum and STN of the same animal, these were also counted, and the resultant bouton density was compared with that of the GP to decrease the potential effect of tracer injection variability.\n\n#### Analysis of electrophysiological data\n\nOur analysis method has been previously described (Mizutani et al., 2017; Oh et al., 2017). Slice recording data were analyzed using Igor Pro 7 (Wave metrics Inc, Portland, OR) with the aid of the Neuromatic plugin (http://www.neuromatic.thinkrandom.com) (Rothman and Silver, 2018) and custom-built procedures. The input resistance was determined via the linear fitting of voltage responses to hyperpolarized current pulses (\u221220 to \u2212100 pA with 20 pA steps). The membrane time constant was calculated from the voltage response to a \u221250 pA current pulse. To identify oEPSCs, each trace was smoothed with a 0.2 ms moving time window (moving average of 4 consecutive recording points), and all traces were aligned with the onset of each photo stimulation to calculate the average trace. The baseline was defined as the mean current trace over a 50 ms period prior to each photo stimulation. the amplitude of the inward current with a stable delay after the onset of photo stimulation was measured from the baseline to the peak of the current. The inward current was identified as an oEPSC if the peak amplitude was 3-fold larger than the standard deviation of the baseline. The rising phase of the oEPSC was fitted linearly and extrapolated and the intersection point with the baseline was determined. The time of this intersection point was defined as the onset of the oEPSC. Latency was measured as the time from the onset of each photo stimulation to that of the oEPSC. Neurons in the striatum, basal nucleus of Meynert, and GP possessed distinct firing properties and were readily distinguished. In the GP, GABAergic projection neurons and putative cholinergic neurons were distinguishable by cell morphology and firing properties. Putative cholinergic neurons were excluded from the present data. The locations of recorded cells were visualized with biocytin and manually plotted on a digital image.\n\n#### Statistical comparisons\n\nAveraged data are provided as mean\u00a0\u00b1\u00a0standard deviation unless otherwise noted. Data comparison among more than two groups was performed using one-way ANOVA followed by post hoc Tukey tests, using R software (http://www.r-project.org/; R Project for Statistical Computing, Vienna, Austria). For small samples, the Kruskal-Wallis test was applied instead of ANOVA. Data comparison between two groups was performed using the Wilcoxon rank sum test. For comparison of proportion values, Fisher\u2019s exact test was used. To examine whether the mean of normalized values was significantly different from 1, a signed rank test for the mean was applied. For comparison of cumulative histograms, the Kolmogorov-Smirnov test was applied. Differences in data values were considered significant if p<0.05. Significant differences are indicated using asterisks (*, p<0.05; **, p<0.01; ***, p<0.001). All p-values are reported.\n",
+      "created_at": "2025-12-02T13:21:28.516526Z"
+    },
+    {
+      "id": "84afcfe5-6cc5-4002-ba08-eab73e22b94c",
+      "submission_id": "727cf32f-8511-4e46-b49d-2282864c58e3",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Naoshige Uchida, Harvard University United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.49511.027](https://doi.org/10.7554/eLife.49511.027)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nThis study found a significant direct projection from the cortex to the globus pallidus (GP), an overlooked input from the cortex to the basal ganglia circuit. This projection is quantitatively comparable to the cortical projection to the subthalamic nucleus (hyperdirect pathway). The authors have also found that this projection targets GP in a cell type specific manner. These findings prompt a revision of a commonly held view that the striatum and subthalamic nucleus are the predominant input structures of the cortico-basal ganglia circuit.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Motor cortex can directly drive the globus pallidal neurons in a projection neuron type dependent manner in rat\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Floris de Lange as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThe striatum has been often regarded as the sole input structure of the basal ganglia. This study shows that the premotor and motor cortices (M1 and M2, respectively) directly project to the globus pallidus. Although a previous study (Naito and Kita, 1994) reported this connection, this observation has been largely neglected in the field. The present study re-examines this connection using anterograde anatomical tracing and channelrhodopsin-2-assisted circuit mapping in slice, and concludes that the cortico-pallidal projection is as strong as the hyperdirect pathway (cortico-subthalamic projection).\n\nAll the reviewers thought that this is a potentially very important finding. However, the reviewers raised substantive concerns regarding the clarity of the manuscript and some technical issues. As you will see below, the original comments by the reviewers somewhat varied in terms of the points raised and enthusiasm. After discussions, however, we were able to narrow the essential points that the authors should address. We believe that the authors should be able to address these essential points with the current data although the reviewers pointed out various experiments that can improve the quality of the work. Although these additional experiments are optional following eLife's policy, please consider these experiments as much as you can or provide use with your responses.\n\nEssential revisions:\n\n1) The reviewers thought that the current manuscript is difficult to read because it contains many results that are not directly related to the main story and that are, at least in part, reported in previous studies (reviewer 1, the point starting with \"Finally, the paper jumps around quite a bit\" and reviewer 3, point #1).\n\na) Significance and novelty of Figure 5 were not very clear. Please explain these more clearly.\n\nb) Please remove Figure 6 (M1, M2 projections to the striatum), Figure 7 (distribution of STN-projecting cortical neurons), and Figure 8 (spatial distribution of cortico-STN axons).\n\n2) The authors conclude that \"the cortical excitation in the GP was as strong as that in the STN\" but the evidence is not very convincing.\n\na) Please add a density analysis using wider regions of interest (ROIs) that encompass all of the GP and STN (reviewer 1, the point starting with \"First, with the regard to\").\n\nb) Please interpret the electrophysiology results comparing inputs from M1 and M2 more quantitatively (reviewer 3, point 3).\n\nc) (optional) For comparison, please perform electrophysiological characterization of cortico-STN connection (reviewer 1, the point starting with \"The experiments in Figure 2 are meant to show\").\n\n3) The authors speculate that pyramidal tract (PT) neurons appear to be the source of input to GP neurons. It is important to know whether this is true or whether it is a different (new) population.\n\na) Retrograde labeling might clarify which neurons in the cortex are projecting to the GP (reviewer 1, the point starting with \"There is a missing, obvious anatomical experiment\"). During discussion, the reviewers thought that knowing this would increase the significance of this work. However, it is also pointed out that retrograde tracing may not be very straightforward with a conventional tracer due to passing fibers etc. and may require a different method such as rabies virus-mediated tracing. Due to these complexities, we thought that retrograde tracing could be optional. However, if you choose to do so, please reduce the emphasis on PT and discuss this point more carefully.\n\n4) The authors suggest that \"arkypallidal neurons, which do not send axons to the STN, could be a principle target of cortico-pallidal innervation\". Reviewer 3 raised this issue but during discussion, it was discussed that FoxP2 is a nuclear protein and it might be difficult to detect in the proposed experiment. Thus, an EM investigation could be combined with retrograde labeling from the striatum (CPU). Although we thought this could be useful, it was also pointed out that the results do not advance beyond what the authors have done with slice electrophysiology. Please explain your view on this in the rebuttal letter.\n\nThe details of the above issues in the original review comments can be found below. Please use the essential points above when reading the original comments because the tone and the suggested experiments and analyses have been changed in some points after our discussions.\n\nReviewer #1:\n\nThe goal of this paper is characterize the direct projection between the cortex and the globus pallidus, and to place that projection within the broader context of cortico-basal ganglia circuitry. The authors conclude that the cortico-pallidal projection, at least from areas M1 and M2 in the rat, is just as strong as the hyperdirect pathway (cortico-STN projection). To my knowledge, no lab has replicated the important work of Naito and Kita demonstrating the cortico-pallidal projection, so this is a significant claim. My impression has been that this projection is largely ignored in studies of the basal ganglia, perhaps because people believe that it is too sparse to be very significant. Therefore, if it is, in fact, a projection equal to the one to the STN, the paper would be quite significant for our understanding of cortico-basal ganglia circuitry.\n\nHowever, with what the authors are showing, I just don't think the case is strong enough yet. I think substantial revisions could help, but this involves collecting a moderate amount of additional data, and may be beyond the scope of eLife's revisions policy.\n\nFirst, with the regard to the data shown in Figure 1, I'm not sure that counting axon varicosity density within a small ROI at the point of densest projection is the best way to assess impact. These are small enough structures, I think the authors do need to count across the entire GP and STN (sampling stereologically, so it's not as great a burden). Isn't it possible that the projection to the STN is much wider-spread, so the overall impact is greater, but at its densest point, it will not have more varicosities? Also, it looks as though the \"densest ROI\" was chosen before counting, so couldn't this have been conflated across regions by passing axons, since the eye could not distinguish? What if varicosities are actually denser elsewhere? Finally, experimenter bias, however unconscious, may be a concern here based on how the ROI was selected.\n\nFigure 1E1 is also the basis for the authors to conclude that the cortico-pallidal projection is just as strong as the cortico-STN projection. But with a p-value of 0.16, and only 3 subjects per injection, I have to wonder whether this analysis was drastically underpowered.\n\nThere is a missing, obvious anatomical experiment here that could substantiate their claims, and clarify the circuit The authors claim that these are likely collaterals off of PT neurons. They refer to the pallidal projections as collaterals throughout. I think this makes sense, and seems like the most logical circuit, but there aren't actually data to show that this is the case. They should do some retrograde injections in the GP to show the layer these cells are coming from, and to understand the density. They could compare to density with STN projections. Then some double injections in the GP and striatum to show that cortico-pallidal projections are also cortico-striatal projections. For all we know, at this point, this could be an entirely new population of projecting cells in M1/M2, not PT neurons at all!\n\nThe experiments in Figure 2 are meant to show that the cortico-pallidal pathway is a functional connection. But it seems like there's a big missing piece of the puzzle, and that's what that figure looks like for the cortico-STN projection. If the metrics look similar for the hyperdirect and cortico-pallidal pathways, it greatly bolsters the authors' argument. Hyperdirect experiments would also act as an internal control: I have some concern that the addition of the ChR2 is inflating the strength of the connection. And how should we judge the measures of strength shown? Is this strong? Is it weak?\n\nFinally, the paper jumps around quite a bit, and there are several experiments, namely those from Figures 6-9, as well as half of Figure 5, that just don't seem to belong here. They don't relate the central point of the cortico-pallidal circuit, and just provide minor replications of prior work. I recommend the authors remove them entirely, and perhaps start building a second paper about circuit topographies. The current paper should instead be filled out with the revisions described above.\n\n- The experiments shown in Figure 5A-B seem out of place. The authors are showing the proportion of GP-str and GP-stn cells that also label with PV, Lhx6, and FoxP2, but there is no reference to whether these GP cells are receiving direct cortical input. It doesn't fit with the other experiments.\n\n- The experiments shown in Figure 6 also do not belong. They simply replicate abundant prior work showing the relationship between M1/M2 projections and striosome/matrix (Donoghue and Herkenham, 1986; Gerfen, 1989; Ebrahimi et al., 1992; and so on).\n\n- Similarly, Figure 7, which demonstrates the topography of the hyperdirect pathway, is not strongly related to the goals of the paper. And the experiments have been done before (Janssen et al., 2010; Canteras et al., 1990; Kitai and Denieu, 1981; and so on). Instead, the figures showing the LO-pallidal and CG-pallidal projections should be pulled out of the supplement and put in the main text.\n\n- Same with Figures 8 and 9.\n\nReviewer #2:\n\nThe manuscript submitted by Karube et al., characterized the cortical innervation principally coming from the primary (M1), the secondary (M2) motor cortex to the basal ganglia, in particular, the globus pallidus (GP) and the subthalamic nucleus (STN). The authors also looked at the projection from the orbitofrontal (OF), and the cingulate cortex (Cg) to the GP, the STN, and the striatum. The cortico-pallidal projection has been known for some time but poorly characterized. Here the authors show that the cortical inputs principally excite the striatum-projecting GP neurons (GP-CPU) over the STN-projecting neurons (GP-STN). They also demonstrate that the GP-CPU neurons can be further subdivided into FoxP2+ (i.e. the arkypallidal neurons) and Lhx6+ cells (that represent the main population of GP neurons, the so-called prototypic cells) and that both these populations receive functional inputs from the cortex. The authors also characterize some interesting topographical organization between the different cortical areas and the GP or the STN. Overall this is a nice and interesting story that add novel findings highlighting the anatomical and functional complexity of these basal ganglia circuits. These findings also challenge the classic view that cortical inputs are exclusively integrated by the striatum and the subthalamic nucleus in the basal ganglia. Indeed, here the authors show that the density of varicosity in STN is similar to the one in GP.\n\nI found that the only small/moderate limitation of the work is that the origin and cellular identity of this cortico-pallidal inputs could have been better characterized. Indeed, the authors mention (subsection \u201cMotor cortex innervates the GP\u201d, second paragraph) that the GP projections are exclusively ipsilateral implying that the cortical neurons providing these inputs are pyramidal tract (PT) neurons. However, previous work that has investigated the projection sites of PT neurons have not seen any collaterals to GP (Kita and Kita, 2012). What could explain these differences? It would have been nice to clarify this issue in the paper. Interestingly, two population of PT neurons have been identified based on their projection site (i.e. thalamus or medulla projecting, see Economo et al., 2018 DIO: 10.1038/s41586-018-0642-9) and it is possible that this PT neuronal heterogeneity is at the origin of a separate pathway to the GP.\n\nReviewer #3:\n\nThis is an interesting paper that addresses an important issue that can have a significant impact on our current view of information processing through the basal ganglia circuits in normal and diseased states. The main finding of this study is evidence for the existence of a direct monosynaptic cortico-pallidal projection that innervates preferentially arkypallidal neurons in the rat globus pallidus (GP). Because the GP is not recognized as a direct target of cortical afferents in current schemes of the basal ganglia circuitry, the existence of this connection will generate significant interest in the field and may open up new critical thoughts about substrates of basal ganglia function and dysfunction. However, the manuscript in its present form suffers of major organizational problems and need additional data to support more strongly the authors' conclusions. Some of the substantive concerns that must be addressed include:\n\n1) In its present form, the paper is very hard to read and the main message (i.e. existence of the cortico-pallidal inputs to arkypallidal neurons) is lost into a series of other anatomical data that have some value, but not for this paper. I suggest that the authors significantly streamline their paper to make it focused solely on the cortico-pallidal projection.\n\n2) The evidence for a monosynaptic M1/M2 inputs to arkypallidal neurons should be supported by electron microscopic studies of synaptic connections between M1/M2 terminals and arkypallidal neurons. The addition of solid EM data to this study would strengthen significantly the authors' conclusions.\n\n3) The results of optogenetic studies shown in Figure 2 and 4 are hard to interpret because the amplitude of EPSC evoked in the different populations of GP neurons and the number of responding neurons to M1 or M2 terminals is highly dependent on the number of cortical terminals that express ChR2 in each area of light stimulation. Because the number of transfected terminals in the GP is variable between animals due to inherent technical issues related to the characteristics of the injection sites, extent of uptake of the virus by cortical neurons and efficiency of anterograde transport along cortico-pallidal axons, quantitative data that compare M1- and M2-mediated effects on GP neurons are difficult to interpret. A more rigorous analysis that takes into consideration these technical issues must be done to validate these data.\n",
+      "created_at": "2025-12-02T13:21:28.516526Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T13:21:28.516526Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T13:21:28.516526Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "c86c1add-9b70-43d1-a928-c66bbebd1f1d",
+      "content_id": "8bb09a94-2ee0-4ac9-82da-1c2eb8138cc7",
+      "claim_id": "C1",
+      "claim": "Primary and secondary motor areas (M1 and M2) make functional synaptic connections in the globus pallidus (GP) in rats.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we demonstrate in rats that primary and secondary motor areas (M1 and M2) make functional synaptic connections in the globus pallidus (GP), not usually thought of as an input site of the basal ganglia.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by both morphological observations showing cortical axons in the GP and electrophysiological recordings demonstrating functional synaptic responses.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:21:28.516526Z"
+    },
+    {
+      "id": "082dbca1-8433-4993-b0bc-6b1700282e90",
+      "content_id": "8bb09a94-2ee0-4ac9-82da-1c2eb8138cc7",
+      "claim_id": "C2",
+      "claim": "The density of axonal boutons from M1 in the GP was 47% of that in the subthalamic nucleus (STN).",
+      "claim_type": "EXPLICIT",
+      "source": "Morphological observation revealed that the density of axonal boutons from motor cortices in the GP was 47% and 78% of that in the subthalamic nucleus (STN) from M1 and M2, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on quantitative morphological measurements of axonal bouton density comparing GP and STN.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:21:28.516526Z"
+    },
+    {
+      "id": "4495191c-f7f2-4d81-a081-6817b4b3f770",
+      "content_id": "8bb09a94-2ee0-4ac9-82da-1c2eb8138cc7",
+      "claim_id": "C3",
+      "claim": "The density of axonal boutons from M2 in the GP was 78% of that in the subthalamic nucleus (STN).",
+      "claim_type": "EXPLICIT",
+      "source": "Morphological observation revealed that the density of axonal boutons from motor cortices in the GP was 47% and 78% of that in the subthalamic nucleus (STN) from M1 and M2, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on quantitative morphological measurements of axonal bouton density comparing GP and STN.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:21:28.516526Z"
+    },
+    {
+      "id": "87cf5079-27c9-493b-85fb-509424860106",
+      "content_id": "8bb09a94-2ee0-4ac9-82da-1c2eb8138cc7",
+      "claim_id": "C4",
+      "claim": "Cortical excitation of GP neurons was comparable to that of STN neurons in slice preparations.",
+      "claim_type": "EXPLICIT",
+      "source": "Cortical excitation of GP neurons was comparable to that of STN neurons in slice preparations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by electrophysiological recordings showing similar optically evoked EPSC amplitudes in GP and STN neurons.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:21:28.516526Z"
+    },
+    {
+      "id": "0e040eb6-1ce0-4657-96fd-09e85b3665e2",
+      "content_id": "8bb09a94-2ee0-4ac9-82da-1c2eb8138cc7",
+      "claim_id": "C5",
+      "claim": "FoxP2-expressing arkypallidal neurons were preferentially innervated by the motor cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "FoxP2-expressing arkypallidal neurons were preferentially innervated by the motor cortex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on electrophysiological recordings from retrogradely labeled neurons combined with immunohistochemical identification of FoxP2 expression.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:21:28.516526Z"
+    },
+    {
+      "id": "81662d05-e71c-4b7c-982c-08627362e0ea",
+      "content_id": "8bb09a94-2ee0-4ac9-82da-1c2eb8138cc7",
+      "claim_id": "C6",
+      "claim": "The connection probability of cortico-pallidal innervation was higher for M2 than M1.",
+      "claim_type": "EXPLICIT",
+      "source": "The connection probability of cortico-pallidal innervation was higher for M2 than M1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by data showing that 151/248 neurons responded to M2 stimulation compared to 67/159 for M1 stimulation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:21:28.516526Z"
+    },
+    {
+      "id": "80d24722-fc99-4e06-acbb-cfe3d27702d0",
+      "content_id": "8bb09a94-2ee0-4ac9-82da-1c2eb8138cc7",
+      "claim_id": "C7",
+      "claim": "Cortico-pallidal innervation is an additional excitatory input to the basal ganglia.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that cortico-pallidal innervation is an additional excitatory input to the basal ganglia, and that it can affect behaviors via the cortex-basal ganglia-thalamus motor loop.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the morphological and electrophysiological evidence demonstrating functional cortical inputs to the GP.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:21:28.516526Z"
+    },
+    {
+      "id": "99010fe7-ad3f-4fa1-a04f-707a9729d6fc",
+      "content_id": "8bb09a94-2ee0-4ac9-82da-1c2eb8138cc7",
+      "claim_id": "C8",
+      "claim": "Cortico-pallidal innervation can affect behaviors via the cortex-basal ganglia-thalamus motor loop.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that cortico-pallidal innervation is an additional excitatory input to the basal ganglia, and that it can affect behaviors via the cortex-basal ganglia-thalamus motor loop.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative claim based on the anatomical and functional connectivity demonstrated in the study.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:21:28.516526Z"
+    },
+    {
+      "id": "3c85073d-1552-4101-b9ab-b5a7d5e025e2",
+      "content_id": "8bb09a94-2ee0-4ac9-82da-1c2eb8138cc7",
+      "claim_id": "C9",
+      "claim": "Parallel loops of neural connections among the cerebral cortex, basal ganglia, and thalamus contribute to multiple aspects of behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "Parallel loops of neural connections among the cerebral cortex, basal ganglia, and thalamus contribute to multiple aspects of behavior (Alexander et al., 1986; Nambu, 2008; Wei and Wang, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:21:28.516526Z"
+    },
+    {
+      "id": "db5c8eda-062e-4b72-a6ed-8d39545ee4e2",
+      "content_id": "8bb09a94-2ee0-4ac9-82da-1c2eb8138cc7",
+      "claim_id": "C10",
+      "claim": "The loop containing the motor cortex is crucial for appropriate motor control, action selection, and movement-related learning.",
+      "claim_type": "EXPLICIT",
+      "source": "The loop containing the motor cortex is crucial for appropriate motor control, action selection, and movement-related learning.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established scientific knowledge about motor cortex-basal ganglia loops.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:21:28.516526Z"
+    },
+    {
+      "id": "724ec58c-a1fb-4e4b-a8bc-825fa33c7f0a",
+      "content_id": "8bb09a94-2ee0-4ac9-82da-1c2eb8138cc7",
+      "claim_id": "C11",
+      "claim": "Dysfunction of the motor loop leads to movement disorders such as those seen in Parkinsonian disease.",
+      "claim_type": "EXPLICIT",
+      "source": "Dysfunction of the motor loop leads to movement disorders such as those seen in Parkinsonian disease (Albin et al., 1989; DeLong, 1990; Middleton and Strick, 2002; Nambu, 2008; Nambu et al., 2000; Parent and Hazrati, 1995a; Redgrave et al., 2010; Wichmann and DeLong, 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:21:28.516526Z"
+    },
+    {
+      "id": "1766b8d0-1b27-4495-88aa-a5d53b39a876",
+      "content_id": "8bb09a94-2ee0-4ac9-82da-1c2eb8138cc7",
+      "claim_id": "C12",
+      "claim": "Cortical projections drive three pathways in the basal ganglia: the direct, the indirect, and the hyperdirect pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "Cortical projections drive three pathways in the basal ganglia: the direct, the indirect, and the hyperdirect pathways (Bolam et al., 2000; Smith et al., 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about basal ganglia circuitry, supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:21:28.516526Z"
+    },
+    {
+      "id": "ae579b8a-3e4e-4374-ae1a-f38ef4850e53",
+      "content_id": "8bb09a94-2ee0-4ac9-82da-1c2eb8138cc7",
+      "claim_id": "C13",
+      "claim": "The hyperdirect pathway provides the fastest information flow among the three pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "The hyperdirect pathway involves direct cortical projections to the STN (Nambu et al., 2002), which provides the fastest information flow among the three pathways (Nambu et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:21:28.516526Z"
+    },
+    {
+      "id": "92554f64-2492-4366-b2b3-f5b8749a735c",
+      "content_id": "8bb09a94-2ee0-4ac9-82da-1c2eb8138cc7",
+      "claim_id": "C14",
+      "claim": "Two types of GP neurons have been identified: one projects to the STN with or without projection to the striatum, while the other only projects to the striatum.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently, two types of GP neurons have been identified: one projects to the STN with or without projection to the striatum, while the other only projects to the striatum (Abdi et al., 2015; Dodson et al., 2015; Hern\u00e1ndez et al., 2015; Mallet et al., 2012; Mastro et al., 2014), which has been implicated in the rewriting of neural circuitry involved in the GP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:21:28.516526Z"
+    },
+    {
+      "id": "29d4d690-8370-4407-a04c-0cdf3e371087",
+      "content_id": "8bb09a94-2ee0-4ac9-82da-1c2eb8138cc7",
+      "claim_id": "C15",
+      "claim": "The GP is now considered the hub of the basal ganglia, not simply a relay nucleus.",
+      "claim_type": "EXPLICIT",
+      "source": "The GP is now considered the hub of the basal ganglia, not simply a relay nucleus (Hegeman et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:21:28.516526Z"
+    },
+    {
+      "id": "9e15c833-1f76-49de-ae54-4d2501b1bcd3",
+      "content_id": "8bb09a94-2ee0-4ac9-82da-1c2eb8138cc7",
+      "claim_id": "C16",
+      "claim": "In 1994, Naito and Kita reported cortical projections to the GP.",
+      "claim_type": "EXPLICIT",
+      "source": "In 1994, Naito and Kita reported cortical projections to the GP, which raised the possibility of an additional neural pathway that can modulate the basal ganglia activities.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a historical reference to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:21:28.516526Z"
+    },
+    {
+      "id": "f2ec389d-aa3d-4efb-b1ab-5a0fefffa6f1",
+      "content_id": "8bb09a94-2ee0-4ac9-82da-1c2eb8138cc7",
+      "claim_id": "C17",
+      "claim": "Cortical axons in the GP were dense in calbindin D-28k (CB)-negative regions.",
+      "claim_type": "EXPLICIT",
+      "source": "For both M1 and M2 projections, cortical axons were dense in calbindin D-28k (CB) -negative [CB(-)] regions of the GP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on morphological observations using immunohistochemistry.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:21:28.516526Z"
+    },
+    {
+      "id": "122c5798-0fe2-4a39-a94d-132e62f161db",
+      "content_id": "8bb09a94-2ee0-4ac9-82da-1c2eb8138cc7",
+      "claim_id": "C18",
+      "claim": "The appearance of cortical axon varicosities in the GP was similar to those in the striatum and STN.",
+      "claim_type": "EXPLICIT",
+      "source": "The appearance of cortical axon varicosities in the GP was similar to those in the striatum and STN (Figure 1A2 and C, Figure 1\u2014figure supplements 1 and 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on morphological observations shown in figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:21:28.516526Z"
+    },
+    {
+      "id": "a05d6dea-ca44-4d0c-ac36-97487025b5be",
+      "content_id": "8bb09a94-2ee0-4ac9-82da-1c2eb8138cc7",
+      "claim_id": "C19",
+      "claim": "Cortico-pallidal projections were exclusively ipsilateral.",
+      "claim_type": "EXPLICIT",
+      "source": "Cortico-pallidal projections were exclusively ipsilateral (Figure 1D), implying that they did not stem from the intratelencephalon (IT) type of pyramidal neurons.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on anatomical tracing experiments showing no contralateral projections.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:21:28.516526Z"
+    },
+    {
+      "id": "a534ab65-6bc7-4be4-aed7-29326926020a",
+      "content_id": "8bb09a94-2ee0-4ac9-82da-1c2eb8138cc7",
+      "claim_id": "C20",
+      "claim": "Cortico-pallidal projections did not stem from the intratelencephalon (IT) type of pyramidal neurons.",
+      "claim_type": "IMPLICIT",
+      "source": "Cortico-pallidal projections were exclusively ipsilateral (Figure 1D), implying that they did not stem from the intratelencephalon (IT) type of pyramidal neurons.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the observation that projections are exclusively ipsilateral, as IT neurons typically project bilaterally.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:21:28.516526Z"
+    },
+    {
+      "id": "bbe66ab0-b607-4219-89de-165d5336de86",
+      "content_id": "8bb09a94-2ee0-4ac9-82da-1c2eb8138cc7",
+      "claim_id": "C21",
+      "claim": "Cingulate area (Cg) and lateral orbitofrontal area (LO) also projected to the GP.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, we found that cingulate area (Cg) and lateral orbitofrontal area (LO) also projected to the GP (Figure 2\u2014figure supplements 1 and 2), although LO provided fewer axons than motor areas.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on anatomical tracing experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:21:28.516526Z"
+    },
+    {
+      "id": "918b8931-f1e9-4358-bf9f-1c4539323528",
+      "content_id": "8bb09a94-2ee0-4ac9-82da-1c2eb8138cc7",
+      "claim_id": "C22",
+      "claim": "LO provided fewer axons to the GP than motor areas.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, we found that cingulate area (Cg) and lateral orbitofrontal area (LO) also projected to the GP (Figure 2\u2014figure supplements 1 and 2), although LO provided fewer axons than motor areas.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on morphological observations comparing axon density.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:21:28.516526Z"
+    },
+    {
+      "id": "4527fcd0-e025-4c80-bd47-c6b3f9548b15",
+      "content_id": "8bb09a94-2ee0-4ac9-82da-1c2eb8138cc7",
+      "claim_id": "C23",
+      "claim": "Cortical axons were differentially distributed in the GP, depending on the cortical area of origin.",
+      "claim_type": "EXPLICIT",
+      "source": "Cortical axons were differentially distributed in the GP, depending on the cortical area of origin (Figure 1\u2014figure supplements 1 and 2; Figure 2\u2014figure supplements 1 and 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on morphological observations showing different distribution patterns for different cortical areas.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:21:28.516526Z"
+    },
+    {
+      "id": "1232fb29-cade-47d2-b363-3735cc228c2d",
+      "content_id": "8bb09a94-2ee0-4ac9-82da-1c2eb8138cc7",
+      "claim_id": "C24",
+      "claim": "M1 and M2 axons were observed across the broad extent of the medio-lateral axis (range: M/L 2.4\u20134.2 mm from the midline).",
+      "claim_type": "EXPLICIT",
+      "source": "M1 and M2 axons were observed across the broad extent of the medio-lateral axis (range: M/L 2.4\u20134.2 mm from the midline; see also Figure 2A, B and C), but relatively sparse in the medial and lateral portions in most cases (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on morphological observations across multiple sections.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:21:28.516526Z"
+    },
+    {
+      "id": "e84b882c-973b-4326-a547-1d718ac0556a",
+      "content_id": "8bb09a94-2ee0-4ac9-82da-1c2eb8138cc7",
+      "claim_id": "C25",
+      "claim": "LO axons were often located in the ventral part of the GP.",
+      "claim_type": "EXPLICIT",
+      "source": "LO axons were often located in the ventral part of the GP, whereas Cg axons were dense in the more medial GP than M1/M2 axons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on morphological observations of axon distribution patterns.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:21:28.516526Z"
+    },
+    {
+      "id": "ab10941f-cbf5-4db3-8c9c-5b3d6deb9076",
+      "content_id": "8bb09a94-2ee0-4ac9-82da-1c2eb8138cc7",
+      "claim_id": "C26",
+      "claim": "Cg axons were dense in the more medial GP than M1/M2 axons.",
+      "claim_type": "EXPLICIT",
+      "source": "LO axons were often located in the ventral part of the GP, whereas Cg axons were dense in the more medial GP than M1/M2 axons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on morphological observations of axon distribution patterns.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:21:28.516526Z"
+    },
+    {
+      "id": "022b877b-3c09-4095-9a25-b78a858eaf84",
+      "content_id": "8bb09a94-2ee0-4ac9-82da-1c2eb8138cc7",
+      "claim_id": "C27",
+      "claim": "Varicosity density was greater in the striatum than in the GP or STN.",
+      "claim_type": "EXPLICIT",
+      "source": "Varicosity density was apparently greater in the striatum than in the GP or STN (Figures 1A and 2B, Figure 1\u2014figure supplements 1 and 2, Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on quantitative morphological measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:21:28.516526Z"
+    },
+    {
+      "id": "b38e40d3-535b-425a-bb0d-896ef68e922a",
+      "content_id": "8bb09a94-2ee0-4ac9-82da-1c2eb8138cc7",
+      "claim_id": "C28",
+      "claim": "The bouton density was significantly higher in the striatum than in the GP for both M1 and M2 projections.",
+      "claim_type": "EXPLICIT",
+      "source": "Using this normalization, the bouton density was found to be significantly higher in the striatum than in the GP (Figure 2D; p=0.013, Kruskal Wallis test; p<10\u22127 for both M1 and M2 projections, Tukey-HSD test; not significant between M1 and M2, p=0.18)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on statistical analysis of quantitative morphological data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:21:28.516526Z"
+    },
+    {
+      "id": "d44ef8ba-76f9-4279-95eb-fb22b44c6a48",
+      "content_id": "8bb09a94-2ee0-4ac9-82da-1c2eb8138cc7",
+      "claim_id": "C29",
+      "claim": "Normalized bouton densities in the GP were significantly different from those in the STN.",
+      "claim_type": "EXPLICIT",
+      "source": "Normalized bouton densities in the GP were significantly different from those in the STN (Figure 2E; p=0.032, Kruskal-Wallis test).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on statistical analysis of quantitative morphological data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:21:28.516526Z"
+    },
+    {
+      "id": "3bfe2ba0-7f03-4733-8797-50ba9e5cd726",
+      "content_id": "8bb09a94-2ee0-4ac9-82da-1c2eb8138cc7",
+      "claim_id": "C30",
+      "claim": "For M1 projections, STN-normalized bouton density was significantly smaller in the GP (0.496 \u00b1 0.12) than in the STN.",
+      "claim_type": "EXPLICIT",
+      "source": "For M1 projections, STN-normalized bouton density was significantly smaller in the GP (0.496 \u00b1 0.12) than in the STN (p=0.0007, Tukey-HSD test).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on statistical analysis of quantitative morphological data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:21:28.516526Z"
+    },
+    {
+      "id": "384f5321-37c8-43a0-ad06-e09f59695119",
+      "content_id": "8bb09a94-2ee0-4ac9-82da-1c2eb8138cc7",
+      "claim_id": "C31",
+      "claim": "M2 had more boutons in the GP (0.778 \u00b1 0.207) than M1.",
+      "claim_type": "EXPLICIT",
+      "source": "Since M2 had more boutons in the GP (0.778 \u00b1 0.207) than M1 (p=0.022), M2 bouton density did not significantly differ between the STN and the GP (p=0.09).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on statistical analysis of quantitative morphological data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:21:28.516526Z"
+    },
+    {
+      "id": "346afcc0-c90a-48db-840a-eeb4359347d2",
+      "content_id": "8bb09a94-2ee0-4ac9-82da-1c2eb8138cc7",
+      "claim_id": "C32",
+      "claim": "Stimulation with a brief light pulse elicited inward currents in GP neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "In voltage clamp mode at a holding potential of \u221260 mV, stimulation with a brief light pulse (5 ms, 470 nm) elicited inward currents in GP neurons (Figure 3B1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on electrophysiological recordings with optogenetic stimulation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:21:28.516526Z"
+    },
+    {
+      "id": "e45070a6-6596-4dca-b063-b795a8d21599",
+      "content_id": "8bb09a94-2ee0-4ac9-82da-1c2eb8138cc7",
+      "claim_id": "C33",
+      "claim": "The response to photoactivation was stable over repetitive stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "The response was stable over repetitive stimulation (10 pulses at 2\u201310 Hz; Figure 3B1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on electrophysiological recordings showing consistent responses.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:21:28.516526Z"
+    },
+    {
+      "id": "15b932ee-58c4-4ce3-b626-7f634c8e43e9",
+      "content_id": "8bb09a94-2ee0-4ac9-82da-1c2eb8138cc7",
+      "claim_id": "C34",
+      "claim": "In current clamp mode, photoactivation elicited action potentials in GP neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "In current clamp mode, photoactivation elicited action potentials, although the action potential probability was affected by the spontaneous oscillation of the membrane potential (Figure 3B2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on electrophysiological recordings in current clamp mode.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:21:28.516526Z"
+    },
+    {
+      "id": "0bebe8ce-01ec-4034-b85c-c593ba20bfe6",
+      "content_id": "8bb09a94-2ee0-4ac9-82da-1c2eb8138cc7",
+      "claim_id": "C35",
+      "claim": "In half of the GP neurons, the rheobase was less than 30 pA.",
+      "claim_type": "EXPLICIT",
+      "source": "In half of the GP neurons, the rheobase was less than 30 pA, and most GP neurons could emit an action potential with less than 100 pA of depolarization (N = 100 neurons; Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on electrophysiological measurements of rheobase current.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:21:28.516526Z"
+    },
+    {
+      "id": "5425220c-e84e-4c18-bcba-0b86592f8aaf",
+      "content_id": "8bb09a94-2ee0-4ac9-82da-1c2eb8138cc7",
+      "claim_id": "C36",
+      "claim": "Most GP neurons could emit an action potential with less than 100 pA of depolarization.",
+      "claim_type": "EXPLICIT",
+      "source": "In half of the GP neurons, the rheobase was less than 30 pA, and most GP neurons could emit an action potential with less than 100 pA of depolarization (N = 100 neurons; Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on electrophysiological measurements of rheobase current.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:21:28.516526Z"
+    },
+    {
+      "id": "101b9e8b-0b79-4396-bf79-7b904e564596",
+      "content_id": "8bb09a94-2ee0-4ac9-82da-1c2eb8138cc7",
+      "claim_id": "C37",
+      "claim": "67 out of 159 GP neurons exhibited inward photocurrents during M1 stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Not all GP neurons exhibited inward photocurrents, a total of 67/159 and 151/248 neurons did so during M1 and M2 stimulation, respectively (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on electrophysiological recordings from multiple neurons.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:21:28.516526Z"
+    },
+    {
+      "id": "7ada4055-5242-4679-a631-7aad54f7b26f",
+      "content_id": "8bb09a94-2ee0-4ac9-82da-1c2eb8138cc7",
+      "claim_id": "C38",
+      "claim": "151 out of 248 GP neurons exhibited inward photocurrents during M2 stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Not all GP neurons exhibited inward photocurrents, a total of 67/159 and 151/248 neurons did so during M1 and M2 stimulation, respectively (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on electrophysiological recordings from multiple neurons.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:21:28.516526Z"
+    },
+    {
+      "id": "27ceca62-4e04-43a9-96d5-21f2ba1bad72",
+      "content_id": "8bb09a94-2ee0-4ac9-82da-1c2eb8138cc7",
+      "claim_id": "C39",
+      "claim": "Neurons responding to M1 terminal stimulation tended to be located in the dorsal GP.",
+      "claim_type": "EXPLICIT",
+      "source": "Neurons responding to M1 terminal stimulation tended to be located in the dorsal GP, whereas those responding to M2 terminal stimulation were clustered in the ventral GP (Figure 3E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on spatial mapping of recorded neurons.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:21:28.516526Z"
+    },
+    {
+      "id": "cd795643-3671-488a-997c-f3558cedf2ca",
+      "content_id": "8bb09a94-2ee0-4ac9-82da-1c2eb8138cc7",
+      "claim_id": "C40",
+      "claim": "Neurons responding to M2 terminal stimulation were clustered in the ventral GP.",
+      "claim_type": "EXPLICIT",
+      "source": "Neurons responding to M1 terminal stimulation tended to be located in the dorsal GP, whereas those responding to M2 terminal stimulation were clustered in the ventral GP (Figure 3E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on spatial mapping of recorded neurons.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:21:28.516526Z"
+    },
+    {
+      "id": "e9be9daf-fbc7-47a6-82bd-e11081ba6396",
+      "content_id": "8bb09a94-2ee0-4ac9-82da-1c2eb8138cc7",
+      "claim_id": "C41",
+      "claim": "Bath application of TTX at 1 \u00b5M completely prevented inward currents.",
+      "claim_type": "EXPLICIT",
+      "source": "Bath application of the sodium channel blocker tetrodotoxin (TTX) at 1 \u00b5M completely prevented inward currents (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on pharmacological experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:21:28.516526Z"
+    },
+    {
+      "id": "553241c0-a905-43f9-9310-e5beec1ec42e",
+      "content_id": "8bb09a94-2ee0-4ac9-82da-1c2eb8138cc7",
+      "claim_id": "C42",
+      "claim": "Additional application of 4AP at 1 mM recovered the currents to up to 60% of control on average.",
+      "claim_type": "EXPLICIT",
+      "source": "Additional application of the potassium channel blocker 4-aminopyridine (4AP) at 1 mM recovered the currents to up to 60% of control on average (Figure 4A), indicating that the current was monosynaptic (Gradinaru et al., 2009; Shu et al., 2007).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on pharmacological experiments demonstrating monosynaptic connectivity.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:21:28.516526Z"
+    },
+    {
+      "id": "dfb173b1-df88-4b1b-9ac5-de5fa083af24",
+      "content_id": "8bb09a94-2ee0-4ac9-82da-1c2eb8138cc7",
+      "claim_id": "C43",
+      "claim": "The inward current was monosynaptic.",
+      "claim_type": "EXPLICIT",
+      "source": "Additional application of the potassium channel blocker 4-aminopyridine (4AP) at 1 mM recovered the currents to up to 60% of control on average (Figure 4A), indicating that the current was monosynaptic (Gradinaru et al., 2009; Shu et al., 2007).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the TTX/4AP experiment, which is a standard test for monosynaptic connections.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:21:28.516526Z"
+    },
+    {
+      "id": "9a3cc63a-66a8-43fb-a432-fc4b7c31486b",
+      "content_id": "8bb09a94-2ee0-4ac9-82da-1c2eb8138cc7",
+      "claim_id": "C44",
+      "claim": "A GABAA receptor antagonist (gabazine, 20 \u00b5M) did not block the current.",
+      "claim_type": "EXPLICIT",
+      "source": "A GABAA receptor antagonist (gabazine, 20 \u00b5M) did not block the current (Figure 4A); conversely, glutamate receptor antagonists (CNQX, 10 \u03bcM and AP-5, 20 \u03bcM) almost completely abolished the current (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on pharmacological experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:21:28.516526Z"
+    },
+    {
+      "id": "f63c1dce-30ba-40b9-99cb-ef2041f30585",
+      "content_id": "8bb09a94-2ee0-4ac9-82da-1c2eb8138cc7",
+      "claim_id": "C45",
+      "claim": "Glutamate receptor antagonists (CNQX, 10 \u03bcM and AP-5, 20 \u03bcM) almost completely abolished the current.",
+      "claim_type": "EXPLICIT",
+      "source": "A GABAA receptor antagonist (gabazine, 20 \u00b5M) did not block the current (Figure 4A); conversely, glutamate receptor antagonists (CNQX, 10 \u03bcM and AP-5, 20 \u03bcM) almost completely abolished the current (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on pharmacological experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:21:28.516526Z"
+    },
+    {
+      "id": "67faa5b1-b6d6-49ea-890a-f5029730031c",
+      "content_id": "8bb09a94-2ee0-4ac9-82da-1c2eb8138cc7",
+      "claim_id": "C46",
+      "claim": "The inward current was mediated by glutamatergic excitatory postsynaptic currents (EPSCs).",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the inward current was mediated by glutamatergic excitatory postsynaptic currents (EPSCs).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the pharmacological experiments showing blockade by glutamate receptor antagonists.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:21:28.516526Z"
+    },
+    {
+      "id": "c73f8fc7-4c39-4567-803f-6ce4dbbd3785",
+      "content_id": "8bb09a94-2ee0-4ac9-82da-1c2eb8138cc7",
+      "claim_id": "C47",
+      "claim": "The latency of current onset after the photic stimulus in GP neurons did not differ from that in STN neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "The latency (delay) of current onset after the photic stimulus in GP neurons did not differ from that in STN neurons (Figure 4B), which indicates that both EPSCs are directly elicited by cortical terminal activation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on comparative electrophysiological measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:21:28.516526Z"
+    },
+    {
+      "id": "13b76131-3426-4ffb-a114-517e31b81af7",
+      "content_id": "8bb09a94-2ee0-4ac9-82da-1c2eb8138cc7",
+      "claim_id": "C48",
+      "claim": "Both EPSCs in GP and STN are directly elicited by cortical terminal activation.",
+      "claim_type": "EXPLICIT",
+      "source": "The latency (delay) of current onset after the photic stimulus in GP neurons did not differ from that in STN neurons (Figure 4B), which indicates that both EPSCs are directly elicited by cortical terminal activation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the similar latencies observed in both neuron types.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:21:28.516526Z"
+    },
+    {
+      "id": "261093e5-82b3-44e8-ac00-17ca1f5d6d5a",
+      "content_id": "8bb09a94-2ee0-4ac9-82da-1c2eb8138cc7",
+      "claim_id": "C49",
+      "claim": "The 20\u201380% rise time and decay constant tended to be longer in GP neurons than in STN neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "The 20\u201380% rise time and decay constant tended to be longer in GP neurons than in STN neurons (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on comparative electrophysiological measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:21:28.516526Z"
+    },
+    {
+      "id": "2fecef98-b689-45b4-a4bc-c2feb2856942",
+      "content_id": "8bb09a94-2ee0-4ac9-82da-1c2eb8138cc7",
+      "claim_id": "C50",
+      "claim": "The motor cortex could innervate GP and STN using similar weights.",
+      "claim_type": "EXPLICIT",
+      "source": "The normalized mean values were not significantly different from 1 (p>0.1, signed rank test), suggesting that the motor cortex could innervate GP and STN using similar weights, however, as the oEPSC amplitude largely varied across cells in both GP and STN neurons, the interpretation of this comparison must be made with caution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on statistical analysis of normalized oEPSC amplitudes, but the authors note caution in interpretation due to variability.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:21:28.516526Z"
+    },
+    {
+      "id": "4e1347a4-b9c2-461a-93e1-956122749366",
+      "content_id": "8bb09a94-2ee0-4ac9-82da-1c2eb8138cc7",
+      "claim_id": "C51",
+      "claim": "GPSTN neurons usually showed spontaneous repetitive firing (~20 Hz).",
+      "claim_type": "EXPLICIT",
+      "source": "GPSTN neurons usually showed spontaneous repetitive firing (~20 Hz; Table 1), whereas many GPCPu neurons were silent.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on electrophysiological recordings of spontaneous activity.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:21:28.516526Z"
+    },
+    {
+      "id": "5cfc0651-5f61-4252-9070-f813d943420b",
+      "content_id": "8bb09a94-2ee0-4ac9-82da-1c2eb8138cc7",
+      "claim_id": "C52",
+      "claim": "Many GPCPu neurons were silent.",
+      "claim_type": "EXPLICIT",
+      "source": "GPSTN neurons usually showed spontaneous repetitive firing (~20 Hz; Table 1), whereas many GPCPu neurons were silent.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on electrophysiological recordings of spontaneous activity.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:21:28.516526Z"
+    },
+    {
+      "id": "34e2a16e-acb0-455a-96b2-e28a7134737d",
+      "content_id": "8bb09a94-2ee0-4ac9-82da-1c2eb8138cc7",
+      "claim_id": "C53",
+      "claim": "Firing frequencies induced by depolarizing current pulses were higher in GPSTN than in GPCPu neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Firing frequencies induced by depolarizing current pulses were higher in GPSTN than in GPCPu neurons, and spike width was narrower in GPSTN neurons (Figure 5B; see Table 1 for other electrophysiological parameters and quantitative comparisons).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on electrophysiological measurements comparing the two neuron types.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:21:28.516526Z"
+    },
+    {
+      "id": "a3a3d3c7-13ba-4cf3-bcad-fc7d4fd7df15",
+      "content_id": "8bb09a94-2ee0-4ac9-82da-1c2eb8138cc7",
+      "claim_id": "C54",
+      "claim": "Spike width was narrower in GPSTN neurons than in GPCPu neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Firing frequencies induced by depolarizing current pulses were higher in GPSTN than in GPCPu neurons, and spike width was narrower in GPSTN neurons (Figure 5B; see Table 1 for other electrophysiological parameters and quantitative comparisons).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on electrophysiological measurements comparing the two neuron types.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:21:28.516526Z"
+    },
+    {
+      "id": "b56b514e-fddc-4756-834c-5989c8eaf17b",
+      "content_id": "8bb09a94-2ee0-4ac9-82da-1c2eb8138cc7",
+      "claim_id": "C55",
+      "claim": "GPCPu neurons (51/62) responded more frequently to optogenetic activation of motor cortical afferents than GPSTN neurons (53/126).",
+      "claim_type": "EXPLICIT",
+      "source": "We discovered that GPCPu neurons (51/62) responded more frequently to opotogenetic activation of motor cortical afferents than GPSTN neurons (53/126), as shown in Figure 5C.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on electrophysiological recordings from retrogradely labeled neurons.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:21:28.516526Z"
+    },
+    {
+      "id": "769806d5-a0a7-41c7-94ba-e6ec2c0b59de",
+      "content_id": "8bb09a94-2ee0-4ac9-82da-1c2eb8138cc7",
+      "claim_id": "C56",
+      "claim": "The oEPSC amplitude was larger in GPCPu neurons than in GPSTN neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "The oEPSC amplitude was also larger in GPCPu neurons (Figure 5D,E,F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on electrophysiological measurements comparing the two neuron types.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:21:28.516526Z"
+    },
+    {
+      "id": "29669ffe-660a-4165-902d-7fc4fbcec833",
+      "content_id": "8bb09a94-2ee0-4ac9-82da-1c2eb8138cc7",
+      "claim_id": "C57",
+      "claim": "The oEPSC amplitude was significantly larger in MSNs than in STN or GP neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "One-way ANOVA followed by post-hoc Tukey tests revealed that the oEPSC amplitude was significantly larger in MSNs than in STN or GP neurons (for all combinations of comparisons, p<9 \u00d7 10\u22127).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on statistical analysis of electrophysiological data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:21:28.516526Z"
+    },
+    {
+      "id": "bd08fa83-26ca-40fc-a7ec-403cfcd337a4",
+      "content_id": "8bb09a94-2ee0-4ac9-82da-1c2eb8138cc7",
+      "claim_id": "C58",
+      "claim": "The oEPSC amplitude of STN neurons was not significantly different from that of GPSTN neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "The oEPSC amplitude of STN neurons was not significantly different from that of GPSTN (p=0.109) or GPCPu neurons (p=0.999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on statistical analysis of electrophysiological data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:21:28.516526Z"
+    },
+    {
+      "id": "7bad703c-3d8f-441f-abef-6b987120d321",
+      "content_id": "8bb09a94-2ee0-4ac9-82da-1c2eb8138cc7",
+      "claim_id": "C59",
+      "claim": "GPCPu neurons exhibited significantly greater oEPSC amplitudes than GPSTN neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "GPCPu neurons exhibited significantly greater amplitudes than GPSTN neurons (p=0.0021; Figure 5D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on statistical analysis of electrophysiological data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:21:28.516526Z"
+    },
+    {
+      "id": "712b0f27-340e-43e7-8720-0a58c8fb2ae0",
+      "content_id": "8bb09a94-2ee0-4ac9-82da-1c2eb8138cc7",
+      "claim_id": "C60",
+      "claim": "The median of the rheobase current was 695 pA for MSNs.",
+      "claim_type": "EXPLICIT",
+      "source": "Actually, the median of the rheobase current was 695 pA for MSNs (N = 10; range, 450\u20131415 pA), 55 pA for STN neurons (N = 30; range, 10\u2013545 pA) and 30 pA for GP neurons (N = 100; range, 5\u2013250 pA).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on electrophysiological measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:21:28.516526Z"
+    },
+    {
+      "id": "8ce111f6-f606-46fa-a209-3d5889b1fb3a",
+      "content_id": "8bb09a94-2ee0-4ac9-82da-1c2eb8138cc7",
+      "claim_id": "C61",
+      "claim": "The median of the rheobase current was 55 pA for STN neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Actually, the median of the rheobase current was 695 pA for MSNs (N = 10; range, 450\u20131415 pA), 55 pA for STN neurons (N = 30; range, 10\u2013545 pA) and 30 pA for GP neurons (N = 100; range, 5\u2013250 pA).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on electrophysiological measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:21:28.516526Z"
+    },
+    {
+      "id": "08b899d0-9911-4ba5-8e10-9e92a447eef6",
+      "content_id": "8bb09a94-2ee0-4ac9-82da-1c2eb8138cc7",
+      "claim_id": "C62",
+      "claim": "The median of the rheobase current was 30 pA for GP neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Actually, the median of the rheobase current was 695 pA for MSNs (N = 10; range, 450\u20131415 pA), 55 pA for STN neurons (N = 30; range, 10\u2013545 pA) and 30 pA for GP neurons (N = 100; range, 5\u2013250 pA).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on electrophysiological measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:21:28.516526Z"
+    },
+    {
+      "id": "a87220e4-15db-4454-9d44-e14deac79e13",
+      "content_id": "8bb09a94-2ee0-4ac9-82da-1c2eb8138cc7",
+      "claim_id": "C63",
+      "claim": "GPCPu neurons were frequently innervated by either M1 (28/35) or M2 (23/27).",
+      "claim_type": "EXPLICIT",
+      "source": "GPCPu neurons were frequently innervated by either M1 (28/35) or M2 (23/27).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on electrophysiological recordings from retrogradely labeled neurons.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:21:28.516526Z"
+    },
+    {
+      "id": "bc8c3248-c46f-4ba9-b567-8686354417c4",
+      "content_id": "8bb09a94-2ee0-4ac9-82da-1c2eb8138cc7",
+      "claim_id": "C64",
+      "claim": "Only a small fraction of GPSTN neurons received M1 (17/51) or M2 (36/75) inputs.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, only a small fraction of GPSTN neurons received M1 (17/51) or M2 (36/75) inputs (Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on electrophysiological recordings from retrogradely labeled neurons.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:21:28.516526Z"
+    },
+    {
+      "id": "ff819833-39fd-4060-9de4-9843cd5f6838",
+      "content_id": "8bb09a94-2ee0-4ac9-82da-1c2eb8138cc7",
+      "claim_id": "C65",
+      "claim": "The amplitude of M1-induced oEPSCs was significantly larger in the GPCPu neurons than in the GPSTN neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "The amplitude of M1-induced oEPSCs was significantly larger in the GPCPu neurons than in the GPSTN neurons (p=2.1 \u00d7 10\u22128, Wilcoxon rank sum test).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on statistical analysis of electrophysiological data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:21:28.516526Z"
+    },
+    {
+      "id": "58dadff0-5a37-4466-9323-98aa4d266674",
+      "content_id": "8bb09a94-2ee0-4ac9-82da-1c2eb8138cc7",
+      "claim_id": "C66",
+      "claim": "The amplitude of M2-induced oEPSCs was significantly larger in the GPCPu neurons than in the GPSTN neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "This was also the case for M2-induced oEPSCs (p=0.00084).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on statistical analysis of electrophysiological data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:21:28.516526Z"
+    },
+    {
+      "id": "82343a76-eddd-4187-a273-14f4adcf7f70",
+      "content_id": "8bb09a94-2ee0-4ac9-82da-1c2eb8138cc7",
+      "claim_id": "C67",
+      "claim": "Both motor areas preferentially innervated GPCPu neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, both motor areas preferentially innervated GPCPu neurons, although GPSTN was more effectively innervated by M2 (Figure 5C F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the higher connection probability and larger oEPSC amplitudes in GPCPu neurons.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:21:28.516526Z"
+    },
+    {
+      "id": "3aac3c44-859b-4b46-b9b2-ca03a66b2001",
+      "content_id": "8bb09a94-2ee0-4ac9-82da-1c2eb8138cc7",
+      "claim_id": "C68",
+      "claim": "GPSTN was more effectively innervated by M2 than M1.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, both motor areas preferentially innervated GPCPu neurons, although GPSTN was more effectively innervated by M2 (Figure 5C F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on comparison of connection probabilities and oEPSC amplitudes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:21:28.516526Z"
+    },
+    {
+      "id": "802f1ce0-aead-4251-909c-2df4b6882456",
+      "content_id": "8bb09a94-2ee0-4ac9-82da-1c2eb8138cc7",
+      "claim_id": "C69",
+      "claim": "The mean oEPSC amplitude in GPSTN was larger with M2 stimulation than with M1 stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, the mean oEPSC amplitude in GPSTN was larger with M2 stimulation than with M1 stimulation (p=0.0028), but no significant difference between cortical sites was observed in GPCPu neurons (p=0.9595).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on statistical analysis of electrophysiological data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:21:28.516526Z"
+    },
+    {
+      "id": "b4baeb57-28cc-4075-ac7c-2965953f682a",
+      "content_id": "8bb09a94-2ee0-4ac9-82da-1c2eb8138cc7",
+      "claim_id": "C70",
+      "claim": "GPCPu neurons frequently expressed FoxP2 or Lhx6, but not PV.",
+      "claim_type": "EXPLICIT",
+      "source": "We confirmed that GPCPu neurons frequently expressed FoxP2 or Lhx6, but not PV (N = 659 GPCPu neurons in nine sections from three rats; Figure 6A), in agreement with previous studies in mice (Dodson et al., 2015; Hern\u00e1ndez et al., 2015; Mastro et al., 2014; Mizutani et al., 2017), Long-Evans rats (Oh et al., 2017), and Sprague-Dawley rats (Abdi et al., 2015; Kita and Kita, 2001).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on immunohistochemical analysis combined with retrograde labeling.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:21:28.516526Z"
+    },
+    {
+      "id": "8e6f4305-af08-44de-ac91-1f716d782e50",
+      "content_id": "8bb09a94-2ee0-4ac9-82da-1c2eb8138cc7",
+      "claim_id": "C71",
+      "claim": "The expression of FoxP2 and Lhx6 was almost mutually exclusive in GPCPu neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "The expression of FoxP2 and Lhx6 was almost mutually exclusive.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on immunohistochemical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:21:28.516526Z"
+    },
+    {
+      "id": "34f45176-0243-49fd-8a3a-66cd8ce1cff0",
+      "content_id": "8bb09a94-2ee0-4ac9-82da-1c2eb8138cc7",
+      "claim_id": "C72",
+      "claim": "Most PV(+) GPCPu neurons co-expressed Lhx6.",
+      "claim_type": "EXPLICIT",
+      "source": "Most PV(+) GPCPu neurons co-expressed Lhx6.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on immunohistochemical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:21:28.516526Z"
+    },
+    {
+      "id": "ff7c6cbf-df0b-413a-b2ff-be351500f39e",
+      "content_id": "8bb09a94-2ee0-4ac9-82da-1c2eb8138cc7",
+      "claim_id": "C73",
+      "claim": "GPSTN neurons lacked expression of FoxP2 but expressed PV and/or Lhx6.",
+      "claim_type": "EXPLICIT",
+      "source": "GPSTN neurons lacked expression of FoxP2 but expressed PV and/or Lhx6 (N = 727 GPSTN neurons in nine sections from three rats; Figure 6A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on immunohistochemical analysis combined with retrograde labeling.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:21:28.516526Z"
+    },
+    {
+      "id": "75b08390-ecfa-4c03-a35a-1129754ecbb0",
+      "content_id": "8bb09a94-2ee0-4ac9-82da-1c2eb8138cc7",
+      "claim_id": "C74",
+      "claim": "Only 14.7% of Lhx6-expressing GPCPu neurons co-expressed PV (49/333).",
+      "claim_type": "EXPLICIT",
+      "source": "Only a small fraction (14.7%) of Lhx6-expressing neurons co-expressed PV (49/333) (Figure 6B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on immunohistochemical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:21:28.516526Z"
+    },
+    {
+      "id": "269547e9-0acd-4984-851e-f6f6a1f7ffaf",
+      "content_id": "8bb09a94-2ee0-4ac9-82da-1c2eb8138cc7",
+      "claim_id": "C75",
+      "claim": "GPSTN neurons comprised PV(+) and/or Lhx6(+) prototypic neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, GPSTN neurons comprised PV(+) and/or Lhx6(+) prototypic neurons, whereas GPCPu neurons comprised arkypallidal neurons expressing FoxP2 and prototypic neurons expressing Lhx6 (Fujiyama et al., 2016; Mallet et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the molecular marker expression patterns and supported by citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:21:28.516526Z"
+    },
+    {
+      "id": "8c4942d1-eced-4a24-88f0-82674b7d292e",
+      "content_id": "8bb09a94-2ee0-4ac9-82da-1c2eb8138cc7",
+      "claim_id": "C76",
+      "claim": "GPCPu neurons comprised arkypallidal neurons expressing FoxP2 and prototypic neurons expressing Lhx6.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, GPSTN neurons comprised PV(+) and/or Lhx6(+) prototypic neurons, whereas GPCPu neurons comprised arkypallidal neurons expressing FoxP2 and prototypic neurons expressing Lhx6 (Fujiyama et al., 2016; Mallet et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the molecular marker expression patterns and supported by citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:21:28.516526Z"
+    },
+    {
+      "id": "6fff7579-b76e-444e-afae-d916169b11f4",
+      "content_id": "8bb09a94-2ee0-4ac9-82da-1c2eb8138cc7",
+      "claim_id": "C77",
+      "claim": "Lhx6 was expressed in most GPBi neurons (61/69).",
+      "claim_type": "EXPLICIT",
+      "source": "Lhx6 was expressed in most GPBi neurons (61/69), PV less frequently (19/72), and FoxP2 rarely (2/85), as expected.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on immunohistochemical analysis of double-retrogradely labeled neurons.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:21:28.516526Z"
+    },
+    {
+      "id": "b30404a1-ce24-4017-ba26-5ca8f05e1ca0",
+      "content_id": "8bb09a94-2ee0-4ac9-82da-1c2eb8138cc7",
+      "claim_id": "C78",
+      "claim": "PV was expressed less frequently in GPBi neurons (19/72).",
+      "claim_type": "EXPLICIT",
+      "source": "Lhx6 was expressed in most GPBi neurons (61/69), PV less frequently (19/72), and FoxP2 rarely (2/85), as expected.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on immunohistochemical analysis of double-retrogradely labeled neurons.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:21:28.516526Z"
+    },
+    {
+      "id": "cc9442f2-4d38-428c-b777-f76685bfc6aa",
+      "content_id": "8bb09a94-2ee0-4ac9-82da-1c2eb8138cc7",
+      "claim_id": "C79",
+      "claim": "FoxP2 was rarely expressed in GPBi neurons (2/85).",
+      "claim_type": "EXPLICIT",
+      "source": "Lhx6 was expressed in most GPBi neurons (61/69), PV less frequently (19/72), and FoxP2 rarely (2/85), as expected.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on immunohistochemical analysis of double-retrogradely labeled neurons.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:21:28.516526Z"
+    },
+    {
+      "id": "c0d3d76b-5a14-4777-aae2-93944c0ff544",
+      "content_id": "8bb09a94-2ee0-4ac9-82da-1c2eb8138cc7",
+      "claim_id": "C80",
+      "claim": "GPBi neurons that expressed PV co-expressed Lhx6 (5/6).",
+      "claim_type": "EXPLICIT",
+      "source": "GPBi neurons that expressed PV co-expressed Lhx6, although the number of neurons examined was small (5/6).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on immunohistochemical analysis of double-retrogradely labeled neurons.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:21:28.516526Z"
+    },
+    {
+      "id": "9715d8f0-84e3-45b4-b1ba-84702a0e7ad8",
+      "content_id": "8bb09a94-2ee0-4ac9-82da-1c2eb8138cc7",
+      "claim_id": "C81",
+      "claim": "GPBi neurons received cortical inputs (7/10 for M1 and 7/9 for M2).",
+      "claim_type": "EXPLICIT",
+      "source": "We found that GPBi neurons received cortical inputs (7/10 for M1 and 7/9 for M2; N = 3 rats for each), although most of them exhibited oEPSCs with small amplitudes (Figure 6C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on electrophysiological recordings from double-retrogradely labeled neurons.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:21:28.516526Z"
+    },
+    {
+      "id": "cbacc16f-825d-431b-9800-fac477bf43fb",
+      "content_id": "8bb09a94-2ee0-4ac9-82da-1c2eb8138cc7",
+      "claim_id": "C82",
+      "claim": "Most GPBi neurons exhibited oEPSCs with small amplitudes.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that GPBi neurons received cortical inputs (7/10 for M1 and 7/9 for M2; N = 3 rats for each), although most of them exhibited oEPSCs with small amplitudes (Figure 6C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on electrophysiological recordings from double-retrogradely labeled neurons.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:21:28.516526Z"
+    },
+    {
+      "id": "895a2182-b463-473f-ae95-fb74d87e7451",
+      "content_id": "8bb09a94-2ee0-4ac9-82da-1c2eb8138cc7",
+      "claim_id": "C83",
+      "claim": "The frequency distributions of oEPSC amplitudes significantly differed between GPBi and GPCPu neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, the frequency distributions of oEPSC amplitudes significantly differed between GPBi and GPCPu neurons (Figure 6D; p=2.2 \u00d7 10\u221216, Kolmogorov-Smirnov test).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on statistical analysis of electrophysiological data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:21:28.516526Z"
+    },
+    {
+      "id": "0cda986f-79e4-4948-b6c8-66003a32f578",
+      "content_id": "8bb09a94-2ee0-4ac9-82da-1c2eb8138cc7",
+      "claim_id": "C84",
+      "claim": "Eight out of nine GPCPu neurons that exhibited oEPSCs expressed FoxP2.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that eight out of nine GPCPu neurons expressed FoxP2 (Figure 6E), suggesting that arkypallidal neurons are preferentially innervated by the motor cortex.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on immunohistochemical analysis of recorded neurons.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:21:28.516526Z"
+    },
+    {
+      "id": "2bf59710-6f82-4568-ae04-d3c0d6ddfea2",
+      "content_id": "8bb09a94-2ee0-4ac9-82da-1c2eb8138cc7",
+      "claim_id": "C85",
+      "claim": "Arkypallidal neurons are preferentially innervated by the motor cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that eight out of nine GPCPu neurons expressed FoxP2 (Figure 6E), suggesting that arkypallidal neurons are preferentially innervated by the motor cortex.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the high proportion of FoxP2-expressing neurons among those receiving cortical inputs.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:21:28.516526Z"
+    },
+    {
+      "id": "94e1238f-1308-486f-852b-88b8926c9d15",
+      "content_id": "8bb09a94-2ee0-4ac9-82da-1c2eb8138cc7",
+      "claim_id": "C86",
+      "claim": "Cortico-pallidal projections exist in primates including humans.",
+      "claim_type": "EXPLICIT",
+      "source": "A question that remains is whether cortico-pallidal projections exist in primates including humans, as has been suggested (Milardi et al., 2015; Smith and Wichmann, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a question raised based on previous suggestions in the literature.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:21:28.516526Z"
+    },
+    {
+      "id": "3edfbdfc-1c8b-47a2-bda0-f40d397ad05a",
+      "content_id": "8bb09a94-2ee0-4ac9-82da-1c2eb8138cc7",
+      "claim_id": "C87",
+      "claim": "Pyramidal tract (PT) type pyramidal neurons are potential candidates for the origin of cortical neurons that provide axons in the GP.",
+      "claim_type": "EXPLICIT",
+      "source": "Pyramidal tract (PT) type pyramidal neurons are potential candidates, because some collaterals were emitted from thick axon trunks passing the GP (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is speculated based on morphological observations.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:21:28.516526Z"
+    },
+    {
+      "id": "be86d3e4-1381-4d9f-a1fa-d2e40a57114d",
+      "content_id": "8bb09a94-2ee0-4ac9-82da-1c2eb8138cc7",
+      "claim_id": "C88",
+      "claim": "Layers 5 and 6 cortical neurons project to the GP in mice.",
+      "claim_type": "EXPLICIT",
+      "source": "The most recent finding in mice suggested that layers 5 and 6 cortical neurons project to the GP (Abecassis et al., 2019), although it is not clear whether they project only to the GP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on a citation to recent literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:21:28.516526Z"
+    },
+    {
+      "id": "4ed95b68-f3ff-44a5-8c68-980bc2232645",
+      "content_id": "8bb09a94-2ee0-4ac9-82da-1c2eb8138cc7",
+      "claim_id": "C89",
+      "claim": "GPCPu neurons may increase firing more significantly than GPSTN neurons and be more in phase with cortical excitation.",
+      "claim_type": "EXPLICIT",
+      "source": "Since GPCPu neurons are activated by direct M1 inputs, they may increase the firing more significantly than GPSTN neurons and be more in phase with cortical excitation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculated based on the preferential innervation of GPCPu neurons.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:21:28.516526Z"
+    },
+    {
+      "id": "d6cda942-1ccd-48be-b69d-aa1a1684ecad",
+      "content_id": "8bb09a94-2ee0-4ac9-82da-1c2eb8138cc7",
+      "claim_id": "C90",
+      "claim": "Both MSNs and interneurons in the striatum are innervated by arkypallidal neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "With regard to synaptic targets of GPCPu neurons, Mallet et al. (2012) reported that both MSNs and interneurons in the striatum are innervated by arkypallidal neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on a citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:21:28.516526Z"
+    },
+    {
+      "id": "7a9c415e-fada-4c0f-8c36-336197b88d91",
+      "content_id": "8bb09a94-2ee0-4ac9-82da-1c2eb8138cc7",
+      "claim_id": "C91",
+      "claim": "Npas1(+) neurons synapse onto iMSNs and dMSNs in mice.",
+      "claim_type": "EXPLICIT",
+      "source": "In mice, Npas1(+) neurons, which overlap with Lhx6(+) and FoxP2(+) GPCPu neurons, synapse onto iMSNs and dMSNs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge about mouse basal ganglia circuitry.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:21:28.516526Z"
+    },
+    {
+      "id": "5b7a5846-c49d-421b-80d9-0b9522ec1385",
+      "content_id": "8bb09a94-2ee0-4ac9-82da-1c2eb8138cc7",
+      "claim_id": "C92",
+      "claim": "The average inhibitory postsynaptic current amplitude evoked by stimulation of axon terminals of Npas1(+) neurons is significantly larger in iMSNs than dMSNs.",
+      "claim_type": "EXPLICIT",
+      "source": "The average inhibitory postsynaptic current amplitude evoked by stimulation of axon terminals of Npas1(+) neurons is significantly larger in iMSNs than dMSNs (Glajch et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on a citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:21:28.516526Z"
+    },
+    {
+      "id": "3918ae55-60b6-4d6d-9f2c-5d844bdfa55a",
+      "content_id": "8bb09a94-2ee0-4ac9-82da-1c2eb8138cc7",
+      "claim_id": "C93",
+      "claim": "The M1 cortico-pallidal pathway may act as a delayed terminator of the hyperdirect pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "As the operation of this trisynaptic circuit should be slower than monosynaptic cortico-STN excitation (Figure 7), the M1 cortico-pallidal pathway may act as a delayed terminator of the hyperdirect pathway.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is speculated based on the timing of different pathways.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:21:28.516526Z"
+    },
+    {
+      "id": "5e00d010-5637-401f-b18a-3d16de20b8b7",
+      "content_id": "8bb09a94-2ee0-4ac9-82da-1c2eb8138cc7",
+      "claim_id": "C94",
+      "claim": "Striatal neurons receive contralateral cortical excitation as well as ipsilateral input.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, it is noteworthy that striatal neurons receive contralateral cortical excitation as well as ipsilateral input (Wilson, 1986; Wilson, 1987), whereas the GP and STN receive only ipsilateral excitation (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on citations to previous literature and data from the current study.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:21:28.516526Z"
+    },
+    {
+      "id": "7f4933c3-eb44-4f00-b072-394e502681e3",
+      "content_id": "8bb09a94-2ee0-4ac9-82da-1c2eb8138cc7",
+      "claim_id": "C95",
+      "claim": "The GP and STN receive only ipsilateral excitation.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, it is noteworthy that striatal neurons receive contralateral cortical excitation as well as ipsilateral input (Wilson, 1986; Wilson, 1987), whereas the GP and STN receive only ipsilateral excitation (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on data from the current study showing exclusively ipsilateral projections.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:21:28.516526Z"
+    },
+    {
+      "id": "48428b79-fb6a-4199-a4f9-3cff5d6fbd8e",
+      "content_id": "8bb09a94-2ee0-4ac9-82da-1c2eb8138cc7",
+      "claim_id": "C96",
+      "claim": "The hyperdirect pathway contributes to the cessation of ongoing actions.",
+      "claim_type": "EXPLICIT",
+      "source": "Because the hyperdirect pathway contributes to the cessation of ongoing actions, the cortico-pallidal pathway may cancel this cessation signal.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge about the hyperdirect pathway.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:21:28.516526Z"
+    },
+    {
+      "id": "fbe2a535-f896-4d0f-96b2-adf145a80c45",
+      "content_id": "8bb09a94-2ee0-4ac9-82da-1c2eb8138cc7",
+      "claim_id": "C97",
+      "claim": "The cortico-pallidal pathway may cancel the cessation signal from the hyperdirect pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "Because the hyperdirect pathway contributes to the cessation of ongoing actions, the cortico-pallidal pathway may cancel this cessation signal.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculated based on the potential interaction between pathways.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:21:28.516526Z"
+    },
+    {
+      "id": "b1d56f0b-a31c-430c-9e39-0d504b3c7f05",
+      "content_id": "8bb09a94-2ee0-4ac9-82da-1c2eb8138cc7",
+      "claim_id": "C98",
+      "claim": "M2 activation can relieve the motor dysfunction of Parkinson's disease in mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently, Magno et al. (2019) revealed that M2 activation can relieve the motor dysfunction of Parkinson's disease in mice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on a citation to recent literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:21:28.516526Z"
+    },
+    {
+      "id": "f5cad8d5-d388-4311-a1fa-a62b0279f772",
+      "content_id": "8bb09a94-2ee0-4ac9-82da-1c2eb8138cc7",
+      "claim_id": "C99",
+      "claim": "M2 contributes to the preparatory function.",
+      "claim_type": "EXPLICIT",
+      "source": "M2 contributes to the preparatory function (Li et al., 2015; Svoboda and Li, 2018), as observed in primates (Wise, 1985), or increases its influence on other cortical areas during the preparatory phase (Makino et al., 2016; Makino et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:21:28.516526Z"
+    },
+    {
+      "id": "254246cb-c534-46da-9e2b-6ffcc61ed940",
+      "content_id": "8bb09a94-2ee0-4ac9-82da-1c2eb8138cc7",
+      "claim_id": "C100",
+      "claim": "GP neurons are suggested to compute action selection.",
+      "claim_type": "EXPLICIT",
+      "source": "GP neurons are also suggested to compute action selection (Bogacz et al., 2016; Goldberg and Bergman, 2011), which likely relates to the preparation of movement, and the M2-pallidal pathway may therefore contribute.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:21:28.516526Z"
+    },
+    {
+      "id": "a09ef41e-64c0-40f2-88ca-4d241df1164f",
+      "content_id": "8bb09a94-2ee0-4ac9-82da-1c2eb8138cc7",
+      "claim_id": "C101",
+      "claim": "M2 is involved in the integration of movement with sensory or internal information.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been also suggested that M2 is involved in the integration of movement with sensory or internal information (Barthas and Kwan, 2017; Saiki et al., 2014), including posture coding (Mimica et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:21:28.516526Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "e156ef50-71ad-42df-8b50-ad5b0b7065af",
+      "content_id": "8bb09a94-2ee0-4ac9-82da-1c2eb8138cc7",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Motor cortices (M1 and M2) project axons to the globus pallidus (GP) with quantifiable bouton densities. M1 projections show 47% and M2 projections show 78% of the bouton density found in the STN. These projections are exclusively ipsilateral and show topographic organization within the GP depending on cortical area of origin.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C31 provide converging morphological evidence from multiple tracing methods (BDA, PHA-L, AAV) showing cortical axons in the GP with quantified bouton densities. The statistical analyses (C28-C31) demonstrate significant differences in normalized bouton densities between regions. The exclusively ipsilateral nature (C19) and topographic organization (C23-C26) are well-documented with anatomical data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:21:28.516526Z"
+    },
+    {
+      "id": "630d693b-2b97-4194-a3de-9f33cb55512d",
+      "content_id": "8bb09a94-2ee0-4ac9-82da-1c2eb8138cc7",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Optogenetic stimulation of motor cortical terminals elicits monosynaptic glutamatergic EPSCs in GP neurons. These responses are stable, blocked by glutamate receptor antagonists but not GABA antagonists, and show similar latencies to STN neurons, confirming direct cortical activation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C49 provide comprehensive electrophysiological evidence using standard optogenetic and pharmacological approaches. The TTX/4AP experiments (C41-C43) definitively establish monosynaptic connectivity using established protocols. The pharmacological profile (C44-C46) confirms glutamatergic transmission. Latency measurements (C47-C48) support direct activation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:21:28.516526Z"
+    },
+    {
+      "id": "fd347311-8a1c-4ded-b30c-491fa9fc30e8",
+      "content_id": "8bb09a94-2ee0-4ac9-82da-1c2eb8138cc7",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Cortical excitation of GP neurons is comparable to that of STN neurons based on normalized oEPSC amplitudes, though this comparison requires cautious interpretation due to high variability.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C4 and C50 present statistical analysis showing no significant difference from normalized value of 1 (p>0.1), but the authors explicitly caution about interpretation due to large variability in oEPSC amplitudes across cells. The comparison methodology (normalization across animals) and high variance limit confidence in this conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:21:28.516526Z"
+    },
+    {
+      "id": "df7623f9-b820-46e3-9d98-85cf070fb316",
+      "content_id": "8bb09a94-2ee0-4ac9-82da-1c2eb8138cc7",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "GPCPu neurons (projecting to striatum) are preferentially innervated by motor cortex compared to GPSTN neurons (projecting to STN), showing higher connection probability and larger oEPSC amplitudes. M2 innervates GPSTN more effectively than M1.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C69 provide systematic electrophysiological characterization of retrogradely labeled GP neuron subtypes. The data show clear differences in connection probability (C55, C63-C64) and oEPSC amplitudes (C56, C59, C65-C66) with appropriate statistical tests. The differential M1/M2 innervation patterns (C67-C69) are well-supported by quantitative comparisons.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:21:28.516526Z"
+    },
+    {
+      "id": "68e63ca3-af61-4dc0-a78d-071f049c6427",
+      "content_id": "8bb09a94-2ee0-4ac9-82da-1c2eb8138cc7",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "FoxP2-expressing arkypallidal neurons (GPCPu subset) are preferentially innervated by motor cortex. Molecular characterization shows GPCPu neurons express FoxP2 or Lhx6 (nearly mutually exclusive), while GPSTN neurons express PV and/or Lhx6 but not FoxP2.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5 and C70-C85 combine immunohistochemistry with retrograde labeling and electrophysiology to establish molecular identity of GP subtypes. The finding that 8/9 recorded GPCPu neurons with oEPSCs expressed FoxP2 (C84) provides strong evidence for preferential innervation of arkypallidal neurons. The molecular characterization (C70-C80) is consistent with prior literature and uses appropriate sample sizes (N=659 GPCPu, N=727 GPSTN neurons).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:21:28.516526Z"
+    },
+    {
+      "id": "604e52f5-12bd-4077-8c95-17b50d65a1ad",
+      "content_id": "8bb09a94-2ee0-4ac9-82da-1c2eb8138cc7",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "M2 shows higher connection probability to GP neurons than M1, with 151/248 neurons responding to M2 stimulation compared to 67/159 for M1 stimulation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C37, and C38 present clear quantitative data on connection probabilities. The proportions (61% for M2 vs 42% for M1) represent a substantial and meaningful difference based on large sample sizes, supporting the conclusion of differential innervation patterns.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:21:28.516526Z"
+    },
+    {
+      "id": "9a148b71-0ae3-4cd7-af9b-af232efb284a",
+      "content_id": "8bb09a94-2ee0-4ac9-82da-1c2eb8138cc7",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Cortico-pallidal innervation represents an additional excitatory input to the basal ganglia that can affect behaviors via the cortex-basal ganglia-thalamus motor loop.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C7 and C8 are interpretive conclusions based on the anatomical and functional connectivity data. While C7 is reasonably inferred from the demonstrated functional connections, C8 regarding behavioral effects is speculative as no behavioral experiments were conducted. The functional significance requires additional validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:21:28.516526Z"
+    },
+    {
+      "id": "dde9bad8-17aa-4f65-ac2b-69e4bcd93b1d",
+      "content_id": "8bb09a94-2ee0-4ac9-82da-1c2eb8138cc7",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The cellular origin of cortico-pallidal projections remains unclear, with pyramidal tract neurons as potential candidates based on morphology, and recent mouse studies suggesting layers 5 and 6 involvement.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C86-C88 acknowledge uncertainty about projection neuron identity. C87 is speculative based on morphological observations of thick axon trunks. C88 cites recent literature but notes ambiguity. This represents an important unresolved question requiring additional experiments such as retrograde tracing from GP.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:21:28.516526Z"
+    },
+    {
+      "id": "b1d5a7a3-3522-4ce6-afd4-77e679dbc654",
+      "content_id": "8bb09a94-2ee0-4ac9-82da-1c2eb8138cc7",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The cortico-pallidal pathway may modulate basal ganglia function through multiple mechanisms: GPCPu activation could inhibit striatal MSNs (particularly iMSNs), potentially acting as a delayed terminator of the hyperdirect pathway, with differential effects based on ipsilateral vs. bilateral cortical inputs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C89-C97 present mechanistic speculation based on known circuit connectivity (C90-C92, C94-C96 cite prior work) but lack direct experimental validation in this study. The proposed functional roles (C89, C93, C97) are reasonable hypotheses requiring future experiments to test predictions about timing, pathway interactions, and behavioral consequences.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:21:28.516526Z"
+    },
+    {
+      "id": "4a97a392-091d-4c2c-b129-8cd460988dff",
+      "content_id": "8bb09a94-2ee0-4ac9-82da-1c2eb8138cc7",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "M2 cortico-pallidal projections may contribute to motor preparation, action selection, and sensorimotor integration based on prior literature on M2 and GP function.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C98-C101 synthesize prior literature to propose functional roles but provide no direct experimental evidence from the current study. These represent reasonable hypotheses for future investigation but are not tested here. The claims appropriately cite relevant prior work but remain speculative regarding the specific contribution of the cortico-pallidal pathway.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:21:28.516526Z"
+    },
+    {
+      "id": "1f5b9e15-d169-4902-87f6-eb66a247e5ec",
+      "content_id": "8bb09a94-2ee0-4ac9-82da-1c2eb8138cc7",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Background on basal ganglia organization: parallel cortex-basal ganglia-thalamus loops exist with three main pathways (direct, indirect, hyperdirect), GP contains distinct neuron types, and prior work by Naito and Kita (1994) reported cortical projections to GP.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9-C16 provide established background knowledge appropriately cited from prior literature. These contextual claims are well-supported by the cited references and represent accepted understanding of basal ganglia organization. C16 provides important historical context for the current investigation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:21:28.516526Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "c86c1add-9b70-43d1-a928-c66bbebd1f1d",
+      "result_id": "e156ef50-71ad-42df-8b50-ad5b0b7065af"
+    },
+    {
+      "claim_id": "082dbca1-8433-4993-b0bc-6b1700282e90",
+      "result_id": "e156ef50-71ad-42df-8b50-ad5b0b7065af"
+    },
+    {
+      "claim_id": "4495191c-f7f2-4d81-a081-6817b4b3f770",
+      "result_id": "e156ef50-71ad-42df-8b50-ad5b0b7065af"
+    },
+    {
+      "claim_id": "f2ec389d-aa3d-4efb-b1ab-5a0fefffa6f1",
+      "result_id": "e156ef50-71ad-42df-8b50-ad5b0b7065af"
+    },
+    {
+      "claim_id": "122c5798-0fe2-4a39-a94d-132e62f161db",
+      "result_id": "e156ef50-71ad-42df-8b50-ad5b0b7065af"
+    },
+    {
+      "claim_id": "a05d6dea-ca44-4d0c-ac36-97487025b5be",
+      "result_id": "e156ef50-71ad-42df-8b50-ad5b0b7065af"
+    },
+    {
+      "claim_id": "a534ab65-6bc7-4be4-aed7-29326926020a",
+      "result_id": "e156ef50-71ad-42df-8b50-ad5b0b7065af"
+    },
+    {
+      "claim_id": "bbe66ab0-b607-4219-89de-165d5336de86",
+      "result_id": "e156ef50-71ad-42df-8b50-ad5b0b7065af"
+    },
+    {
+      "claim_id": "918b8931-f1e9-4358-bf9f-1c4539323528",
+      "result_id": "e156ef50-71ad-42df-8b50-ad5b0b7065af"
+    },
+    {
+      "claim_id": "4527fcd0-e025-4c80-bd47-c6b3f9548b15",
+      "result_id": "e156ef50-71ad-42df-8b50-ad5b0b7065af"
+    },
+    {
+      "claim_id": "1232fb29-cade-47d2-b363-3735cc228c2d",
+      "result_id": "e156ef50-71ad-42df-8b50-ad5b0b7065af"
+    },
+    {
+      "claim_id": "e84b882c-973b-4326-a547-1d718ac0556a",
+      "result_id": "e156ef50-71ad-42df-8b50-ad5b0b7065af"
+    },
+    {
+      "claim_id": "ab10941f-cbf5-4db3-8c9c-5b3d6deb9076",
+      "result_id": "e156ef50-71ad-42df-8b50-ad5b0b7065af"
+    },
+    {
+      "claim_id": "022b877b-3c09-4095-9a25-b78a858eaf84",
+      "result_id": "e156ef50-71ad-42df-8b50-ad5b0b7065af"
+    },
+    {
+      "claim_id": "b38e40d3-535b-425a-bb0d-896ef68e922a",
+      "result_id": "e156ef50-71ad-42df-8b50-ad5b0b7065af"
+    },
+    {
+      "claim_id": "d44ef8ba-76f9-4279-95eb-fb22b44c6a48",
+      "result_id": "e156ef50-71ad-42df-8b50-ad5b0b7065af"
+    },
+    {
+      "claim_id": "3bfe2ba0-7f03-4733-8797-50ba9e5cd726",
+      "result_id": "e156ef50-71ad-42df-8b50-ad5b0b7065af"
+    },
+    {
+      "claim_id": "384f5321-37c8-43a0-ad06-e09f59695119",
+      "result_id": "e156ef50-71ad-42df-8b50-ad5b0b7065af"
+    },
+    {
+      "claim_id": "346afcc0-c90a-48db-840a-eeb4359347d2",
+      "result_id": "630d693b-2b97-4194-a3de-9f33cb55512d"
+    },
+    {
+      "claim_id": "e45070a6-6596-4dca-b063-b795a8d21599",
+      "result_id": "630d693b-2b97-4194-a3de-9f33cb55512d"
+    },
+    {
+      "claim_id": "15b932ee-58c4-4ce3-b626-7f634c8e43e9",
+      "result_id": "630d693b-2b97-4194-a3de-9f33cb55512d"
+    },
+    {
+      "claim_id": "0bebe8ce-01ec-4034-b85c-c593ba20bfe6",
+      "result_id": "630d693b-2b97-4194-a3de-9f33cb55512d"
+    },
+    {
+      "claim_id": "5425220c-e84e-4c18-bcba-0b86592f8aaf",
+      "result_id": "630d693b-2b97-4194-a3de-9f33cb55512d"
+    },
+    {
+      "claim_id": "101b9e8b-0b79-4396-bf79-7b904e564596",
+      "result_id": "630d693b-2b97-4194-a3de-9f33cb55512d"
+    },
+    {
+      "claim_id": "7ada4055-5242-4679-a631-7aad54f7b26f",
+      "result_id": "630d693b-2b97-4194-a3de-9f33cb55512d"
+    },
+    {
+      "claim_id": "27ceca62-4e04-43a9-96d5-21f2ba1bad72",
+      "result_id": "630d693b-2b97-4194-a3de-9f33cb55512d"
+    },
+    {
+      "claim_id": "cd795643-3671-488a-997c-f3558cedf2ca",
+      "result_id": "630d693b-2b97-4194-a3de-9f33cb55512d"
+    },
+    {
+      "claim_id": "e9be9daf-fbc7-47a6-82bd-e11081ba6396",
+      "result_id": "630d693b-2b97-4194-a3de-9f33cb55512d"
+    },
+    {
+      "claim_id": "553241c0-a905-43f9-9310-e5beec1ec42e",
+      "result_id": "630d693b-2b97-4194-a3de-9f33cb55512d"
+    },
+    {
+      "claim_id": "dfb173b1-df88-4b1b-9ac5-de5fa083af24",
+      "result_id": "630d693b-2b97-4194-a3de-9f33cb55512d"
+    },
+    {
+      "claim_id": "9a3cc63a-66a8-43fb-a432-fc4b7c31486b",
+      "result_id": "630d693b-2b97-4194-a3de-9f33cb55512d"
+    },
+    {
+      "claim_id": "f63c1dce-30ba-40b9-99cb-ef2041f30585",
+      "result_id": "630d693b-2b97-4194-a3de-9f33cb55512d"
+    },
+    {
+      "claim_id": "67faa5b1-b6d6-49ea-890a-f5029730031c",
+      "result_id": "630d693b-2b97-4194-a3de-9f33cb55512d"
+    },
+    {
+      "claim_id": "c73f8fc7-4c39-4567-803f-6ce4dbbd3785",
+      "result_id": "630d693b-2b97-4194-a3de-9f33cb55512d"
+    },
+    {
+      "claim_id": "13b76131-3426-4ffb-a114-517e31b81af7",
+      "result_id": "630d693b-2b97-4194-a3de-9f33cb55512d"
+    },
+    {
+      "claim_id": "261093e5-82b3-44e8-ac00-17ca1f5d6d5a",
+      "result_id": "630d693b-2b97-4194-a3de-9f33cb55512d"
+    },
+    {
+      "claim_id": "87cf5079-27c9-493b-85fb-509424860106",
+      "result_id": "fd347311-8a1c-4ded-b30c-491fa9fc30e8"
+    },
+    {
+      "claim_id": "2fecef98-b689-45b4-a4bc-c2feb2856942",
+      "result_id": "fd347311-8a1c-4ded-b30c-491fa9fc30e8"
+    },
+    {
+      "claim_id": "4e1347a4-b9c2-461a-93e1-956122749366",
+      "result_id": "df7623f9-b820-46e3-9d98-85cf070fb316"
+    },
+    {
+      "claim_id": "5cfc0651-5f61-4252-9070-f813d943420b",
+      "result_id": "df7623f9-b820-46e3-9d98-85cf070fb316"
+    },
+    {
+      "claim_id": "34e2a16e-acb0-455a-96b2-e28a7134737d",
+      "result_id": "df7623f9-b820-46e3-9d98-85cf070fb316"
+    },
+    {
+      "claim_id": "a3a3d3c7-13ba-4cf3-bcad-fc7d4fd7df15",
+      "result_id": "df7623f9-b820-46e3-9d98-85cf070fb316"
+    },
+    {
+      "claim_id": "b56b514e-fddc-4756-834c-5989c8eaf17b",
+      "result_id": "df7623f9-b820-46e3-9d98-85cf070fb316"
+    },
+    {
+      "claim_id": "769806d5-a0a7-41c7-94ba-e6ec2c0b59de",
+      "result_id": "df7623f9-b820-46e3-9d98-85cf070fb316"
+    },
+    {
+      "claim_id": "29669ffe-660a-4165-902d-7fc4fbcec833",
+      "result_id": "df7623f9-b820-46e3-9d98-85cf070fb316"
+    },
+    {
+      "claim_id": "bd08fa83-26ca-40fc-a7ec-403cfcd337a4",
+      "result_id": "df7623f9-b820-46e3-9d98-85cf070fb316"
+    },
+    {
+      "claim_id": "7bad703c-3d8f-441f-abef-6b987120d321",
+      "result_id": "df7623f9-b820-46e3-9d98-85cf070fb316"
+    },
+    {
+      "claim_id": "712b0f27-340e-43e7-8720-0a58c8fb2ae0",
+      "result_id": "df7623f9-b820-46e3-9d98-85cf070fb316"
+    },
+    {
+      "claim_id": "8ce111f6-f606-46fa-a209-3d5889b1fb3a",
+      "result_id": "df7623f9-b820-46e3-9d98-85cf070fb316"
+    },
+    {
+      "claim_id": "08b899d0-9911-4ba5-8e10-9e92a447eef6",
+      "result_id": "df7623f9-b820-46e3-9d98-85cf070fb316"
+    },
+    {
+      "claim_id": "a87220e4-15db-4454-9d44-e14deac79e13",
+      "result_id": "df7623f9-b820-46e3-9d98-85cf070fb316"
+    },
+    {
+      "claim_id": "bc8c3248-c46f-4ba9-b567-8686354417c4",
+      "result_id": "df7623f9-b820-46e3-9d98-85cf070fb316"
+    },
+    {
+      "claim_id": "ff819833-39fd-4060-9de4-9843cd5f6838",
+      "result_id": "df7623f9-b820-46e3-9d98-85cf070fb316"
+    },
+    {
+      "claim_id": "58dadff0-5a37-4466-9323-98aa4d266674",
+      "result_id": "df7623f9-b820-46e3-9d98-85cf070fb316"
+    },
+    {
+      "claim_id": "82343a76-eddd-4187-a273-14f4adcf7f70",
+      "result_id": "df7623f9-b820-46e3-9d98-85cf070fb316"
+    },
+    {
+      "claim_id": "3aac3c44-859b-4b46-b9b2-ca03a66b2001",
+      "result_id": "df7623f9-b820-46e3-9d98-85cf070fb316"
+    },
+    {
+      "claim_id": "802f1ce0-aead-4251-909c-2df4b6882456",
+      "result_id": "df7623f9-b820-46e3-9d98-85cf070fb316"
+    },
+    {
+      "claim_id": "0e040eb6-1ce0-4657-96fd-09e85b3665e2",
+      "result_id": "68e63ca3-af61-4dc0-a78d-071f049c6427"
+    },
+    {
+      "claim_id": "b4baeb57-28cc-4075-ac7c-2965953f682a",
+      "result_id": "68e63ca3-af61-4dc0-a78d-071f049c6427"
+    },
+    {
+      "claim_id": "8e6f4305-af08-44de-ac91-1f716d782e50",
+      "result_id": "68e63ca3-af61-4dc0-a78d-071f049c6427"
+    },
+    {
+      "claim_id": "34f45176-0243-49fd-8a3a-66cd8ce1cff0",
+      "result_id": "68e63ca3-af61-4dc0-a78d-071f049c6427"
+    },
+    {
+      "claim_id": "ff7c6cbf-df0b-413a-b2ff-be351500f39e",
+      "result_id": "68e63ca3-af61-4dc0-a78d-071f049c6427"
+    },
+    {
+      "claim_id": "75b08390-ecfa-4c03-a35a-1129754ecbb0",
+      "result_id": "68e63ca3-af61-4dc0-a78d-071f049c6427"
+    },
+    {
+      "claim_id": "269547e9-0acd-4984-851e-f6f6a1f7ffaf",
+      "result_id": "68e63ca3-af61-4dc0-a78d-071f049c6427"
+    },
+    {
+      "claim_id": "8c4942d1-eced-4a24-88f0-82674b7d292e",
+      "result_id": "68e63ca3-af61-4dc0-a78d-071f049c6427"
+    },
+    {
+      "claim_id": "6fff7579-b76e-444e-afae-d916169b11f4",
+      "result_id": "68e63ca3-af61-4dc0-a78d-071f049c6427"
+    },
+    {
+      "claim_id": "b30404a1-ce24-4017-ba26-5ca8f05e1ca0",
+      "result_id": "68e63ca3-af61-4dc0-a78d-071f049c6427"
+    },
+    {
+      "claim_id": "cc9442f2-4d38-428c-b777-f76685bfc6aa",
+      "result_id": "68e63ca3-af61-4dc0-a78d-071f049c6427"
+    },
+    {
+      "claim_id": "c0d3d76b-5a14-4777-aae2-93944c0ff544",
+      "result_id": "68e63ca3-af61-4dc0-a78d-071f049c6427"
+    },
+    {
+      "claim_id": "9715d8f0-84e3-45b4-b1ba-84702a0e7ad8",
+      "result_id": "68e63ca3-af61-4dc0-a78d-071f049c6427"
+    },
+    {
+      "claim_id": "cbacc16f-825d-431b-9800-fac477bf43fb",
+      "result_id": "68e63ca3-af61-4dc0-a78d-071f049c6427"
+    },
+    {
+      "claim_id": "895a2182-b463-473f-ae95-fb74d87e7451",
+      "result_id": "68e63ca3-af61-4dc0-a78d-071f049c6427"
+    },
+    {
+      "claim_id": "0cda986f-79e4-4948-b6c8-66003a32f578",
+      "result_id": "68e63ca3-af61-4dc0-a78d-071f049c6427"
+    },
+    {
+      "claim_id": "2bf59710-6f82-4568-ae04-d3c0d6ddfea2",
+      "result_id": "68e63ca3-af61-4dc0-a78d-071f049c6427"
+    },
+    {
+      "claim_id": "81662d05-e71c-4b7c-982c-08627362e0ea",
+      "result_id": "604e52f5-12bd-4077-8c95-17b50d65a1ad"
+    },
+    {
+      "claim_id": "101b9e8b-0b79-4396-bf79-7b904e564596",
+      "result_id": "604e52f5-12bd-4077-8c95-17b50d65a1ad"
+    },
+    {
+      "claim_id": "7ada4055-5242-4679-a631-7aad54f7b26f",
+      "result_id": "604e52f5-12bd-4077-8c95-17b50d65a1ad"
+    },
+    {
+      "claim_id": "80d24722-fc99-4e06-acbb-cfe3d27702d0",
+      "result_id": "9a148b71-0ae3-4cd7-af9b-af232efb284a"
+    },
+    {
+      "claim_id": "99010fe7-ad3f-4fa1-a04f-707a9729d6fc",
+      "result_id": "9a148b71-0ae3-4cd7-af9b-af232efb284a"
+    },
+    {
+      "claim_id": "94e1238f-1308-486f-852b-88b8926c9d15",
+      "result_id": "dde9bad8-17aa-4f65-ac2b-69e4bcd93b1d"
+    },
+    {
+      "claim_id": "3edfbdfc-1c8b-47a2-bda0-f40d397ad05a",
+      "result_id": "dde9bad8-17aa-4f65-ac2b-69e4bcd93b1d"
+    },
+    {
+      "claim_id": "be86d3e4-1381-4d9f-a1fa-d2e40a57114d",
+      "result_id": "dde9bad8-17aa-4f65-ac2b-69e4bcd93b1d"
+    },
+    {
+      "claim_id": "4ed95b68-f3ff-44a5-8c68-980bc2232645",
+      "result_id": "b1d5a7a3-3522-4ce6-afd4-77e679dbc654"
+    },
+    {
+      "claim_id": "d6cda942-1ccd-48be-b69d-aa1a1684ecad",
+      "result_id": "b1d5a7a3-3522-4ce6-afd4-77e679dbc654"
+    },
+    {
+      "claim_id": "7a9c415e-fada-4c0f-8c36-336197b88d91",
+      "result_id": "b1d5a7a3-3522-4ce6-afd4-77e679dbc654"
+    },
+    {
+      "claim_id": "5b7a5846-c49d-421b-80d9-0b9522ec1385",
+      "result_id": "b1d5a7a3-3522-4ce6-afd4-77e679dbc654"
+    },
+    {
+      "claim_id": "3918ae55-60b6-4d6d-9f2c-5d844bdfa55a",
+      "result_id": "b1d5a7a3-3522-4ce6-afd4-77e679dbc654"
+    },
+    {
+      "claim_id": "5e00d010-5637-401f-b18a-3d16de20b8b7",
+      "result_id": "b1d5a7a3-3522-4ce6-afd4-77e679dbc654"
+    },
+    {
+      "claim_id": "7f4933c3-eb44-4f00-b072-394e502681e3",
+      "result_id": "b1d5a7a3-3522-4ce6-afd4-77e679dbc654"
+    },
+    {
+      "claim_id": "48428b79-fb6a-4199-a4f9-3cff5d6fbd8e",
+      "result_id": "b1d5a7a3-3522-4ce6-afd4-77e679dbc654"
+    },
+    {
+      "claim_id": "fbe2a535-f896-4d0f-96b2-adf145a80c45",
+      "result_id": "b1d5a7a3-3522-4ce6-afd4-77e679dbc654"
+    },
+    {
+      "claim_id": "b1d56f0b-a31c-430c-9e39-0d504b3c7f05",
+      "result_id": "4a97a392-091d-4c2c-b129-8cd460988dff"
+    },
+    {
+      "claim_id": "f5cad8d5-d388-4311-a1fa-a62b0279f772",
+      "result_id": "4a97a392-091d-4c2c-b129-8cd460988dff"
+    },
+    {
+      "claim_id": "254246cb-c534-46da-9e2b-6ffcc61ed940",
+      "result_id": "4a97a392-091d-4c2c-b129-8cd460988dff"
+    },
+    {
+      "claim_id": "a09ef41e-64c0-40f2-88ca-4d241df1164f",
+      "result_id": "4a97a392-091d-4c2c-b129-8cd460988dff"
+    },
+    {
+      "claim_id": "3c85073d-1552-4101-b9ab-b5a7d5e025e2",
+      "result_id": "1f5b9e15-d169-4902-87f6-eb66a247e5ec"
+    },
+    {
+      "claim_id": "db5c8eda-062e-4b72-a6ed-8d39545ee4e2",
+      "result_id": "1f5b9e15-d169-4902-87f6-eb66a247e5ec"
+    },
+    {
+      "claim_id": "724ec58c-a1fb-4e4b-a8bc-825fa33c7f0a",
+      "result_id": "1f5b9e15-d169-4902-87f6-eb66a247e5ec"
+    },
+    {
+      "claim_id": "1766b8d0-1b27-4495-88aa-a5d53b39a876",
+      "result_id": "1f5b9e15-d169-4902-87f6-eb66a247e5ec"
+    },
+    {
+      "claim_id": "ae579b8a-3e4e-4374-ae1a-f38ef4850e53",
+      "result_id": "1f5b9e15-d169-4902-87f6-eb66a247e5ec"
+    },
+    {
+      "claim_id": "92554f64-2492-4366-b2b3-f5b8749a735c",
+      "result_id": "1f5b9e15-d169-4902-87f6-eb66a247e5ec"
+    },
+    {
+      "claim_id": "29d4d690-8370-4407-a04c-0cdf3e371087",
+      "result_id": "1f5b9e15-d169-4902-87f6-eb66a247e5ec"
+    },
+    {
+      "claim_id": "9e15c833-1f76-49de-ae54-4d2501b1bcd3",
+      "result_id": "1f5b9e15-d169-4902-87f6-eb66a247e5ec"
+    }
+  ],
+  "comparisons": []
+}

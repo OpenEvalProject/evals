@@ -1,0 +1,2519 @@
+[
+  {
+    "claim_id": "C1",
+    "claim": "Single-cell RNA sequencing (scRNAseq) captures the gene expression state of thousands of individual cells in a single experiment.",
+    "claim_type": "EXPLICIT",
+    "source": "Single-cell RNA sequencing (scRNAseq) captures the gene expression state of thousands of individual cells in a single experiment, offering advantages in combinatorial experimental design, large numbers of independent measurements, and accessing the interaction between the cell cycle and environmental responses that is hidden by population-level analysis of gene expression.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a general statement about scRNAseq technology that is supported by established scientific knowledge and consensus in the field.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C2",
+    "claim": "The authors pooled diverse transcriptionally barcoded gene deletion mutants in 11 different environmental conditions.",
+    "claim_type": "EXPLICIT",
+    "source": "We pooled diverse transcriptionally barcoded gene deletion mutants in 11 different environmental conditions and determined their expression state by sequencing 38,285 individual cells.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a direct statement of the experimental design performed in this study.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C3",
+    "claim": "The authors sequenced 38,285 individual cells.",
+    "claim_type": "EXPLICIT",
+    "source": "We pooled diverse transcriptionally barcoded gene deletion mutants in 11 different environmental conditions and determined their expression state by sequencing 38,285 individual cells.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a direct measurement from the experimental data.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C4",
+    "claim": "The authors constructed a global gene regulatory network comprising 12,228 interactions.",
+    "claim_type": "EXPLICIT",
+    "source": "We benchmarked a framework for learning gene regulatory networks from scRNAseq data that incorporates multitask learning and constructed a global gene regulatory network comprising 12,228 interactions.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a direct statement of the computational result from network inference.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C5",
+    "claim": "A gene regulatory network (GRN) is a directed graph in which regulators of gene expression are connected to target gene nodes by interaction edges.",
+    "claim_type": "EXPLICIT",
+    "source": "A gene regulatory network (GRN) is a directed graph in which regulators of gene expression are connected to target gene nodes by interaction edges.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a definition based on established scientific knowledge in the field of systems biology.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C6",
+    "claim": "Reconstruction of GRNs is required to understand how gene expression dysregulation contributes to cancer and complex heritable diseases.",
+    "claim_type": "EXPLICIT",
+    "source": "Reconstruction of GRNs is required to understand how gene expression dysregulation contributes to cancer and complex heritable diseases (Barab\u00e1si et al., 2011; Hu et al., 2016).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by citations to prior literature.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C7",
+    "claim": "The Inferelator method takes as inputs gene expression data and sources of prior information, and outputs regulatory relationships between transcription factors and their target genes.",
+    "claim_type": "EXPLICIT",
+    "source": "This method takes as inputs gene expression data and sources of prior information, and outputs regulatory relationships between transcription factors and their target genes that explain the observed gene expression levels.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the computational method developed and used in this study.",
+    "evidence_type": [
+      "DATA",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C8",
+    "claim": "The Inferelator approach has been successfully applied to construct GRNs in microbes, plants, and mammalian cells.",
+    "claim_type": "EXPLICIT",
+    "source": "We have successfully applied this approach to construct GRNs from gene expression data acquired from variation across time, conditions, and genotypes in microbes (Arrieta-Ortiz et al., 2015; Tchourine et al., 2018), plants (Wilkins et al., 2016), and mammalian cells (Ciofani et al., 2012; Miraldi et al., 2019).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by multiple citations to prior work.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C9",
+    "claim": "The DROP-seq system is based on bead capture.",
+    "claim_type": "EXPLICIT",
+    "source": "The DROP-seq system (Macosko et al., 2015) based on bead capture, and the inDrop (Zilionis et al., 2017) and 10x Genomics (Zheng et al., 2017) systems based on hydrogel beads, provide a facile means of generating RNA sequencing data for tens of thousands of individual cells.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a description of established technology supported by citation.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C10",
+    "claim": "The inDrop and 10x Genomics systems are based on hydrogel beads.",
+    "claim_type": "EXPLICIT",
+    "source": "The DROP-seq system (Macosko et al., 2015) based on bead capture, and the inDrop (Zilionis et al., 2017) and 10x Genomics (Zheng et al., 2017) systems based on hydrogel beads, provide a facile means of generating RNA sequencing data for tens of thousands of individual cells.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a description of established technology supported by citation.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C11",
+    "claim": "Perturb-seq combines genetic perturbation of transcriptional regulators using CRISPR/Cas9 with scRNAseq.",
+    "claim_type": "EXPLICIT",
+    "source": "By combining genetic perturbation of transcriptional regulators using CRISPR/Cas9 with scRNAseq, mixtures of genetic perturbations can be assayed in a single reaction (Adamson et al., 2016; Dixit et al., 2016; Jaitin et al., 2016). This approach, known as Perturb-seq, presents a new opportunity for efficiently inferring GRNs from thousands of individual cells in which different regulators have been disrupted.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes an established method supported by citations.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C12",
+    "claim": "Quantifying the effectiveness of CRISPR/Cas9 targeting in individual cells presents technical challenges.",
+    "claim_type": "EXPLICIT",
+    "source": "There are considerable advantages in both scalability and detection of intra-sample heterogeneity with Perturb-seq, but quantifying the the effectiveness of CRISPR/Cas9 targeting in individual cells and distinguishing gene expression variability from noise inherent to mRNA undersampling in scRNAseq (Brennecke et al., 2013; Gr\u00fcn et al., 2014) present technical challenges.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about technical challenges supported by citations.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C13",
+    "claim": "Distinguishing gene expression variability from noise inherent to mRNA undersampling in scRNAseq presents technical challenges.",
+    "claim_type": "EXPLICIT",
+    "source": "There are considerable advantages in both scalability and detection of intra-sample heterogeneity with Perturb-seq, but quantifying the the effectiveness of CRISPR/Cas9 targeting in individual cells and distinguishing gene expression variability from noise inherent to mRNA undersampling in scRNAseq (Brennecke et al., 2013; Gr\u00fcn et al., 2014) present technical challenges.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about technical challenges supported by citations.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C14",
+    "claim": "Budding yeast scRNAseq studies published to date have recovered far fewer individual cells (~10\u00b2) than mammalian studies (>10\u2074).",
+    "claim_type": "EXPLICIT",
+    "source": "However, we observe significant heterogeneity in individual cell gene expression within conditions. Much of this variation can be explained by the mitotic cell-cycle. It is important to note that we do not remove or suppress this cell-cycle driven variance.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a comparison of published data supported by citations.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C15",
+    "claim": "The TOR complex 1 (TORC1) coordinates the transcriptional response to changes in nitrogen sources in budding yeast.",
+    "claim_type": "EXPLICIT",
+    "source": "In budding yeast, the TOR complex 1 (TORC1 or mTORC1 in human) coordinates the transcriptional response to changes in nitrogen sources (Godard et al., 2007; R\u00f8dkaer and Faergeman, 2014).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about yeast biology supported by citations.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C16",
+    "claim": "The Nitrogen Catabolite Repression (NCR) pathway consists of the TFs GAT1, GLN3, DAL80, and GZF3.",
+    "claim_type": "EXPLICIT",
+    "source": "The Nitrogen Catabolite Repression (NCR) pathway, which is regulated principally by TORC1, consists of the TFs GAT1, GLN3, DAL80, and GZF3 (Hofman-Bang, 1999), and is responsible for suppressing the utilization of non-preferred nitrogen sources when preferred nitrogen sources are available.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about yeast biology supported by citation.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C17",
+    "claim": "The NCR pathway is regulated principally by TORC1.",
+    "claim_type": "EXPLICIT",
+    "source": "The Nitrogen Catabolite Repression (NCR) pathway, which is regulated principally by TORC1, consists of the TFs GAT1, GLN3, DAL80, and GZF3 (Hofman-Bang, 1999), and is responsible for suppressing the utilization of non-preferred nitrogen sources when preferred nitrogen sources are available.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about yeast biology supported by citation.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C18",
+    "claim": "The NCR pathway is responsible for suppressing the utilization of non-preferred nitrogen sources when preferred nitrogen sources are available.",
+    "claim_type": "EXPLICIT",
+    "source": "The Nitrogen Catabolite Repression (NCR) pathway, which is regulated principally by TORC1, consists of the TFs GAT1, GLN3, DAL80, and GZF3 (Hofman-Bang, 1999), and is responsible for suppressing the utilization of non-preferred nitrogen sources when preferred nitrogen sources are available.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about yeast biology supported by citation.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C19",
+    "claim": "Gat1 and Gln3 are localized to the cytoplasm until activation results in relocalization to the nucleus.",
+    "claim_type": "EXPLICIT",
+    "source": "Gat1 and Gln3 are localized to the cytoplasm until activation results in relocalization to the nucleus (Cox et al., 2000), where they then compete with Dal80 and Gzf3 for DNA binding motifs (Georis et al., 2009).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about protein localization supported by citations.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C20",
+    "claim": "Gat1 and Gln3 compete with Dal80 and Gzf3 for DNA binding motifs in the nucleus.",
+    "claim_type": "EXPLICIT",
+    "source": "Gat1 and Gln3 are localized to the cytoplasm until activation results in relocalization to the nucleus (Cox et al., 2000), where they then compete with Dal80 and Gzf3 for DNA binding motifs (Georis et al., 2009).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about transcription factor function supported by citations.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C21",
+    "claim": "The General Amino Acid Control (GAAC) pathway consists of the TF GCN4.",
+    "claim_type": "EXPLICIT",
+    "source": "The General Amino Acid Control (GAAC) pathway consists of the TF GCN4 (Hinnebusch, 2005), and is responsible for activating the response to amino acid starvation, as detected by increases in uncharged tRNA levels.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about yeast biology supported by citation.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C22",
+    "claim": "The GAAC pathway is responsible for activating the response to amino acid starvation.",
+    "claim_type": "EXPLICIT",
+    "source": "The General Amino Acid Control (GAAC) pathway consists of the TF GCN4 (Hinnebusch, 2005), and is responsible for activating the response to amino acid starvation, as detected by increases in uncharged tRNA levels.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about yeast biology supported by citation.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C23",
+    "claim": "Gcn4 activity is translationally controlled by ribosomal pausing at upstream open reading frames in the 5' untranslated region.",
+    "claim_type": "EXPLICIT",
+    "source": "Gcn4 activity is translationally controlled by ribosomal pausing at upstream open reading frames in the 5' untranslated region (Mueller and Hinnebusch, 1986).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about gene regulation supported by citation.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C24",
+    "claim": "The retrograde pathway consists of the TF heterodimer RTG1 and RTG3.",
+    "claim_type": "EXPLICIT",
+    "source": "The retrograde pathway, consisting of the TF heterodimer RTG1 and RTG3, is responsible for altering expression of metabolic and biosynthetic genes in response to mitochondrial stress (Jia et al., 1997; Liao and Butow, 1993) or environmental stress (Ruiz-Roig et al., 2012).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about yeast biology supported by citations.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C25",
+    "claim": "The retrograde pathway is responsible for altering expression of metabolic and biosynthetic genes in response to mitochondrial stress or environmental stress.",
+    "claim_type": "EXPLICIT",
+    "source": "The retrograde pathway, consisting of the TF heterodimer RTG1 and RTG3, is responsible for altering expression of metabolic and biosynthetic genes in response to mitochondrial stress (Jia et al., 1997; Liao and Butow, 1993) or environmental stress (Ruiz-Roig et al., 2012).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about yeast biology supported by citations.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C26",
+    "claim": "The Rtg1/Rtg3 complex is localized to the cytoplasm until activation, upon which they translocate into the nucleus.",
+    "claim_type": "EXPLICIT",
+    "source": "The Rtg1/Rtg3 complex is localized to the cytoplasm until activation, upon which they translocate into the nucleus (Komeili et al., 2000).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about protein localization supported by citation.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C27",
+    "claim": "The Ssy1-Ptr3-Ssy5-sensing (SPS) pathway consists of the TFs STP1 and STP2.",
+    "claim_type": "EXPLICIT",
+    "source": "The Ssy1-Ptr3-Ssy5-sensing (SPS) pathway (Ljungdahl, 2009), consists of the TFs STP1 and STP2, and is responsible for altering transporter expression (Didion et al., 1998; Iraqui et al., 1999) in response to changes in extracellular environment.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about yeast biology supported by citations.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C28",
+    "claim": "The SPS pathway is responsible for altering transporter expression in response to changes in extracellular environment.",
+    "claim_type": "EXPLICIT",
+    "source": "The Ssy1-Ptr3-Ssy5-sensing (SPS) pathway (Ljungdahl, 2009), consists of the TFs STP1 and STP2, and is responsible for altering transporter expression (Didion et al., 1998; Iraqui et al., 1999) in response to changes in extracellular environment.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about yeast biology supported by citations.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C29",
+    "claim": "Stp1 and Stp2 are anchored to the plasma membrane until the SPS sensor triggers proteolytic cleavage of their anchoring domain and releases them for nuclear import.",
+    "claim_type": "EXPLICIT",
+    "source": "Stp1 and Stp2 are anchored to the plasma membrane until the SPS sensor triggers proteolytic cleavage of their anchoring domain and releases them for nuclear import (Andr\u00e9asson and Ljungdahl, 2002).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about protein regulation supported by citation.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C30",
+    "claim": "The high redundancy of the NCR pathway has proven challenging to deconvolute.",
+    "claim_type": "EXPLICIT",
+    "source": "Construction of GRNs based on the transcription factors in these pathways has had mixed success; the high redundancy of the NCR pathway has proven challenging to deconvolute (Milias-Argeitis et al., 2016).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about challenges in the field supported by citation.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C31",
+    "claim": "Separating direct and indirect regulation in the GAAC pathway remains difficult, even with high-quality experimental data.",
+    "claim_type": "EXPLICIT",
+    "source": "The GAAC pathway is more straightforward, although separating direct and indirect regulation remains difficult, even with high-quality experimental data (Mittal et al., 2017).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about challenges in the field supported by citation.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C32",
+    "claim": "Many signalling regulators involved in environmental response interact with cell cycle programs.",
+    "claim_type": "EXPLICIT",
+    "source": "Many signalling regulators involved in environmental response interact with cell cycle programs (Johnston et al., 1977; Talarek et al., 2017), including the TOR pathway (Zinzalla et al., 2007); however, how regulation of the mitotic cell cycle and environmentally responsive gene expression is coordinated is unknown.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about biological interactions supported by citations.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C33",
+    "claim": "The TOR pathway interacts with cell cycle programs.",
+    "claim_type": "EXPLICIT",
+    "source": "Many signalling regulators involved in environmental response interact with cell cycle programs (Johnston et al., 1977; Talarek et al., 2017), including the TOR pathway (Zinzalla et al., 2007); however, how regulation of the mitotic cell cycle and environmentally responsive gene expression is coordinated is unknown.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about biological interactions supported by citation.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C34",
+    "claim": "How regulation of the mitotic cell cycle and environmentally responsive gene expression is coordinated is unknown.",
+    "claim_type": "EXPLICIT",
+    "source": "Many signalling regulators involved in environmental response interact with cell cycle programs (Johnston et al., 1977; Talarek et al., 2017), including the TOR pathway (Zinzalla et al., 2007); however, how regulation of the mitotic cell cycle and environmentally responsive gene expression is coordinated is unknown.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about gaps in knowledge.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C35",
+    "claim": "The authors developed a method for scRNAseq in budding yeast using Chromium droplet-based single cell encapsulation.",
+    "claim_type": "EXPLICIT",
+    "source": "Here, we have developed a method for scRNAseq in budding yeast using Chromium droplet-based single cell encapsulation (10x Genomics).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a direct statement of the methodological development in this study.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C36",
+    "claim": "The authors engineered TF gene deletions by precisely excising the entire TF open reading frame and introducing a unique transcriptional barcode.",
+    "claim_type": "EXPLICIT",
+    "source": "We engineered TF gene deletions by precisely excising the entire TF open reading frame and introducing a unique transcriptional barcode that enables multiplexed analysis of genotypes using scRNAseq.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a direct statement of the experimental approach used in this study.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C37",
+    "claim": "The authors pooled 72 different strains, corresponding to 12 different genotypes.",
+    "claim_type": "EXPLICIT",
+    "source": "We pooled 72 different strains, corresponding to 12 different genotypes, and determined their gene expression profiles in 11 conditions using scRNAseq analysis of 38,000 cells.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a direct statement of the experimental design.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C38",
+    "claim": "The authors determined gene expression profiles in 11 conditions using scRNAseq analysis of 38,000 cells.",
+    "claim_type": "EXPLICIT",
+    "source": "We pooled 72 different strains, corresponding to 12 different genotypes, and determined their gene expression profiles in 11 conditions using scRNAseq analysis of 38,000 cells.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a direct statement of the experimental data collected.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C39",
+    "claim": "The method enables identification of cells from complex mixtures of genotypes in asynchronous cultures that correspond to specific mutants.",
+    "claim_type": "EXPLICIT",
+    "source": "We show that our method enables identification of cells from complex mixtures of genotypes in asynchronous cultures that correspond to specific mutants, and to specific stages of the cell cycle.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement of the capabilities demonstrated in this study.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C40",
+    "claim": "The method enables identification of cells that correspond to specific stages of the cell cycle.",
+    "claim_type": "EXPLICIT",
+    "source": "We show that our method enables identification of cells from complex mixtures of genotypes in asynchronous cultures that correspond to specific mutants, and to specific stages of the cell cycle.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement of the capabilities demonstrated in this study.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C43",
+    "claim": "Imputation of missing data does not improve GRN reconstruction.",
+    "claim_type": "EXPLICIT",
+    "source": "We find that imputation of missing data does not improve GRN reconstruction and can lead to prediction of spurious interactions.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement of the computational findings from this study.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C44",
+    "claim": "Imputation of missing data can lead to prediction of spurious interactions.",
+    "claim_type": "EXPLICIT",
+    "source": "We find that imputation of missing data does not improve GRN reconstruction and can lead to prediction of spurious interactions.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement of the computational findings from this study.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C45",
+    "claim": "The authors discover novel regulatory relationships, including previously unknown connections between regulators of cell cycle gene expression and nitrogen responsive gene expression.",
+    "claim_type": "EXPLICIT",
+    "source": "We discover novel regulatory relationships, including previously unknown connections between regulators of cell cycle gene expression and nitrogen responsive gene expression.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement of the biological findings from this study.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C46",
+    "claim": "All yeast strains were generated from the prototrophic FY4 (MATa) or FY5 (MAT\u0251) background strains.",
+    "claim_type": "EXPLICIT",
+    "source": "All yeast strains were generated from the prototrophic FY4 (MATa) or FY5 (MAT\u0251) background strains.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a direct statement of the experimental materials used.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C47",
+    "claim": "The authors constructed eleven different TF knockout genotypes, using six independently constructed biological replicates for each genotype.",
+    "claim_type": "EXPLICIT",
+    "source": "We engineered eleven different TF knockout genotypes, using six independently constructed biological replicates for each genotype.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a direct statement of the experimental design.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C48",
+    "claim": "The authors constructed six biological replicates of the wild-type control in which they deleted the neutral HO locus.",
+    "claim_type": "EXPLICIT",
+    "source": "In addition, we constructed six biological replicates of the wild-type control in which we deleted the neutral HO locus.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a direct statement of the experimental design.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C49",
+    "claim": "Each of the 72 strains contains a unique transcriptional barcode in the 3' untranslated region (UTR) of the G418 resistance gene.",
+    "claim_type": "EXPLICIT",
+    "source": "Genes were deleted using a modified kanMX cassette such that each of the 72 strains contains a unique transcriptional barcode in the 3' untranslated region (UTR) of the G418 resistance gene, that can be recovered by RNA sequencing (Figure 1, Figure 1\u2014figure supplement 1A).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a direct statement of the experimental design with reference to a figure.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C50",
+    "claim": "The transcriptional barcode can be recovered by RNA sequencing.",
+    "claim_type": "EXPLICIT",
+    "source": "Genes were deleted using a modified kanMX cassette such that each of the 72 strains contains a unique transcriptional barcode in the 3' untranslated region (UTR) of the G418 resistance gene, that can be recovered by RNA sequencing (Figure 1, Figure 1\u2014figure supplement 1A).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a direct statement of the experimental capability with reference to a figure.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C51",
+    "claim": "On rich media plates, the 72 strains have an approximately wild-type growth.",
+    "claim_type": "EXPLICIT",
+    "source": "On rich media plates, the 72 strains have an approximately wild-type growth; under nutritional stress, some TF knockouts exhibit growth advantages or disadvantages (Figure 1\u2014figure supplement 1B).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a statement of experimental observation with reference to a figure.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C52",
+    "claim": "Under nutritional stress, some TF knockouts exhibit growth advantages or disadvantages.",
+    "claim_type": "EXPLICIT",
+    "source": "On rich media plates, the 72 strains have an approximately wild-type growth; under nutritional stress, some TF knockouts exhibit growth advantages or disadvantages (Figure 1\u2014figure supplement 1B).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a statement of experimental observation with reference to a figure.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C53",
+    "claim": "Yeast cells are small (40\u201390 \u00b5m\u00b3).",
+    "claim_type": "EXPLICIT",
+    "source": "ScRNAseq in yeast presents several challenges: cells are small (40\u201390 \u00b5m3), enclosed in a polysaccharide-rich cell wall, and contain fewer mRNAs per cell (40 k-60k) than higher eukaryotes.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement of biological fact based on established knowledge.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C54",
+    "claim": "Yeast cells are enclosed in a polysaccharide-rich cell wall.",
+    "claim_type": "EXPLICIT",
+    "source": "ScRNAseq in yeast presents several challenges: cells are small (40\u201390 \u00b5m3), enclosed in a polysaccharide-rich cell wall, and contain fewer mRNAs per cell (40 k-60k) than higher eukaryotes.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement of biological fact based on established knowledge.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C55",
+    "claim": "Yeast cells contain fewer mRNAs per cell (40k-60k) than higher eukaryotes.",
+    "claim_type": "EXPLICIT",
+    "source": "ScRNAseq in yeast presents several challenges: cells are small (40\u201390 \u00b5m3), enclosed in a polysaccharide-rich cell wall, and contain fewer mRNAs per cell (40 k-60k) than higher eukaryotes.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement of biological fact based on established knowledge.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C56",
+    "claim": "The authors developed and validated a protocol using the droplet-based 10x genomics chromium platform.",
+    "claim_type": "EXPLICIT",
+    "source": "We developed and validated a protocol using the droplet-based 10x genomics chromium platform, and it used it to perform scRNAseq of the pool of TF knockouts in eleven growth conditions that provide a range of metabolic challenges (Table 1).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a direct statement of the methodological development.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C57",
+    "claim": "Following sequence processing, quality control, removal of doublets, and assigning metadata, the authors recovered 83,703,440 transcript counts from a total of 38,225 individual cells.",
+    "claim_type": "EXPLICIT",
+    "source": "Following sequence processing, quality control, removal of doublets, and assigning metadata, we recovered 83,703,440 transcript counts from a total of 38,225 individual cells.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a direct statement of the data collected.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C58",
+    "claim": "The core fermentative (anaerobic) genes PDC1 and ENO2 are expressed in cells in fermenting culture conditions only.",
+    "claim_type": "EXPLICIT",
+    "source": "Consistent with our expectations, the core fermentative (anaerobic) genes PDC1 and ENO2 are expressed in cells in fermenting culture conditions only, and the core respirative (aerobic) gene ADH2 is expressed in cells in respiring culture conditions (Figure 2A).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a statement of experimental observation with reference to a figure.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C59",
+    "claim": "The core respirative (aerobic) gene ADH2 is expressed in cells in respiring culture conditions.",
+    "claim_type": "EXPLICIT",
+    "source": "Consistent with our expectations, the core fermentative (anaerobic) genes PDC1 and ENO2 are expressed in cells in fermenting culture conditions only, and the core respirative (aerobic) gene ADH2 is expressed in cells in respiring culture conditions (Figure 2A).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a statement of experimental observation with reference to a figure.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C60",
+    "claim": "The number of cells recovered varies by over an order of magnitude between conditions.",
+    "claim_type": "EXPLICIT",
+    "source": "The number of cells recovered varies by over an order of magnitude between conditions; stressful conditions of low nitrogen have lower cell yields overall.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement of experimental observation.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C61",
+    "claim": "Stressful conditions of low nitrogen have lower cell yields overall.",
+    "claim_type": "EXPLICIT",
+    "source": "The number of cells recovered varies by over an order of magnitude between conditions; stressful conditions of low nitrogen have lower cell yields overall.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement of experimental observation.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C62",
+    "claim": "The yeast stress response is linked to increased resistance to zymolyase digestion.",
+    "claim_type": "EXPLICIT",
+    "source": "The yeast stress response is linked to increased resistance to zymolyase digestion (Nagarajan et al., 2014), which may be reflected in decreased cell yield during single-cell sequencing.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement supported by citation.",
+    "evidence_type": [
+      "CITATION",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C63",
+    "claim": "Increased resistance to zymolyase digestion may be reflected in decreased cell yield during single-cell sequencing.",
+    "claim_type": "EXPLICIT",
+    "source": "The yeast stress response is linked to increased resistance to zymolyase digestion (Nagarajan et al., 2014), which may be reflected in decreased cell yield during single-cell sequencing.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a speculative inference based on cited knowledge.",
+    "evidence_type": [
+      "SPECULATION",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C64",
+    "claim": "Each of the 72 strains is found in each of the 11 conditions.",
+    "claim_type": "EXPLICIT",
+    "source": "Each of the 72 strains is found in each of the 11 conditions, although the number of each strain and genotype varies by environmental condition (Figure 2\u2014figure supplement 1A), and some strains are disproportionately affected.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a statement of experimental observation with reference to a figure.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C65",
+    "claim": "The number of each strain and genotype varies by environmental condition.",
+    "claim_type": "EXPLICIT",
+    "source": "Each of the 72 strains is found in each of the 11 conditions, although the number of each strain and genotype varies by environmental condition (Figure 2\u2014figure supplement 1A), and some strains are disproportionately affected.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a statement of experimental observation with reference to a figure.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C66",
+    "claim": "The number of transcripts per cell is generally equivalent between strains even when they differ in representation within libraries.",
+    "claim_type": "EXPLICIT",
+    "source": "However, the number of transcripts per cell is generally equivalent between strains even when they differ in representation within libraries (Figure 2\u2014figure supplement 1B).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a statement of experimental observation with reference to a figure.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C67",
+    "claim": "Total transcript counts per cell are highly linked to environmental growth conditions.",
+    "claim_type": "EXPLICIT",
+    "source": "By contrast, we find that total transcript counts per cell are highly linked to environmental growth conditions (Figure 2\u2014figure supplement 1C), which is consistent with decreased total transcriptome pool size in suboptimal conditions (Athanasiadou et al., 2019).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a statement of experimental observation with reference to a figure and citation.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C68",
+    "claim": "Decreased total transcriptome pool size occurs in suboptimal conditions.",
+    "claim_type": "EXPLICIT",
+    "source": "By contrast, we find that total transcript counts per cell are highly linked to environmental growth conditions (Figure 2\u2014figure supplement 1C), which is consistent with decreased total transcriptome pool size in suboptimal conditions (Athanasiadou et al., 2019).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a statement supported by citation.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C69",
+    "claim": "For cells growing in rich medium (YPD) the authors recover a median of 2250 unique transcripts per cell, from a median of 695 distinct genes.",
+    "claim_type": "EXPLICIT",
+    "source": "For cells growing in rich medium (YPD) we recover a median of 2250 unique transcripts per cell, from a median of 695 distinct genes, indicating a capture rate of approximately 3\u20135% of total transcripts from each cell.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a direct statement of experimental measurement.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C70",
+    "claim": "The capture rate is approximately 3\u20135% of total transcripts from each cell.",
+    "claim_type": "EXPLICIT",
+    "source": "For cells growing in rich medium (YPD) we recover a median of 2250 unique transcripts per cell, from a median of 695 distinct genes, indicating a capture rate of approximately 3\u20135% of total transcripts from each cell.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a calculation based on experimental data.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C71",
+    "claim": "The strain genotype does not strongly influence transcript counts per cell.",
+    "claim_type": "EXPLICIT",
+    "source": "The strain genotype does not strongly influence transcript counts per cell (Figure 2\u2014figure supplement 1D).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a statement of experimental observation with reference to a figure.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C72",
+    "claim": "There is a high correlation between single-cell expression data and bulk RNA expression data (spearman correlation 0.941) for wild-type cells grown in YPD.",
+    "claim_type": "EXPLICIT",
+    "source": "There is a high correlation between single-cell expression data and bulk RNA expression data (spearman correlation 0.941) for wild-type cells grown in YPD (Figure 2\u2014figure supplement 2) indicating that the effect of technical bias caused by single-cell processing is minimal.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a statement of experimental measurement with reference to a figure.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C73",
+    "claim": "The effect of technical bias caused by single-cell processing is minimal.",
+    "claim_type": "EXPLICIT",
+    "source": "There is a high correlation between single-cell expression data and bulk RNA expression data (spearman correlation 0.941) for wild-type cells grown in YPD (Figure 2\u2014figure supplement 2) indicating that the effect of technical bias caused by single-cell processing is minimal.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is an inference based on the correlation measurement.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C74",
+    "claim": "Mapping the digital expression matrix into two-dimensional space with UMAP results in clear separation of individual cells into groups based on environmental condition.",
+    "claim_type": "EXPLICIT",
+    "source": "Mapping the digital expression matrix into two-dimensional space with a Uniform Manifold Approximation and Projection [UMAP] results in clear separation of individual cells into groups based on environmental condition (Figure 2B).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a statement of experimental observation with reference to a figure.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C75",
+    "claim": "Cells from different minimal media or nitrogen-limited growth conditions localize near each other.",
+    "claim_type": "EXPLICIT",
+    "source": "Cells from different minimal media or nitrogen-limited growth conditions localize near each other, and cells grown in different rich nitrogen sources are clearly separate from each other.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement of experimental observation.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C76",
+    "claim": "Cells grown in different rich nitrogen sources are clearly separate from each other.",
+    "claim_type": "EXPLICIT",
+    "source": "Cells from different minimal media or nitrogen-limited growth conditions localize near each other, and cells grown in different rich nitrogen sources are clearly separate from each other.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement of experimental observation.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C77",
+    "claim": "Within environmentally-determined grouping there appears to be no strong ordering by genotype.",
+    "claim_type": "EXPLICIT",
+    "source": "Within environmentally-determined grouping there appears to be no strong ordering by genotype (Figure 2C).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a statement of experimental observation with reference to a figure.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C78",
+    "claim": "The increased relative abundance of ribosomal related gene expression in rich media conditions is consistent with previously-observed correlation of ribosomal gene expression and cellular growth rate.",
+    "claim_type": "EXPLICIT",
+    "source": "The increased relative abundance of ribosomal related gene expression in rich media conditions is consistent with previously-observed correlation of ribosomal gene expression and cellular growth rate (Brauer et al., 2008).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement connecting experimental observation to prior literature.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C79",
+    "claim": "Genes with known roles in mitotic cell cycle are highly represented among the most differentially expressed genes between clusters.",
+    "claim_type": "EXPLICIT",
+    "source": "Genes with known roles in mitotic cell cycle are highly represented among the most differentially expressed genes between clusters (Figure 3\u2014figure supplement 1A).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a statement of experimental observation with reference to a figure.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C80",
+    "claim": "PIR1 expression is a marker for early G1.",
+    "claim_type": "EXPLICIT",
+    "source": "PIR1 expression, a marker for early G1 (Spellman et al., 1998), is diagnostic of a distinct cluster.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement based on cited knowledge.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C81",
+    "claim": "DSE2 is expressed only in daughter cells.",
+    "claim_type": "EXPLICIT",
+    "source": "DSE2 is expressed only in daughter cells (Colman-Lerner et al., 2001), which allows daughter cells in G1 to be distinguished from mother cells in G1.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement based on cited knowledge.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C82",
+    "claim": "Histone 2B genes are upregulated in S-phase.",
+    "claim_type": "EXPLICIT",
+    "source": "Cells that have high expression of the histone 2B genes, which are upregulated in S-phase (Eriksson et al., 2012), are localized together in the UMAP plots (Figure 3B).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement based on cited knowledge.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C83",
+    "claim": "Differences in expression due to genotype do not appear to be a primary source of expression differences within conditions.",
+    "claim_type": "EXPLICIT",
+    "source": "However, differences in expression due to genotype do not appear to be a primary source of expression differences within conditions, as most clusters show a uniform distribution of genotypes (Figure 3B, Figure 3\u2014figure supplement 1B).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a statement of experimental observation with reference to figures.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C84",
+    "claim": "The yeast metabolic cycle is not readily identifiable in single cells using scRNAseq.",
+    "claim_type": "EXPLICIT",
+    "source": "Similarly, we do not find that differences in expression of metabolic genes underlie overall differences in expression (e.g. HXK2) suggesting that the yeast metabolic cycle (Silverman et al., 2010; Tu et al., 2005) is not readily identifiable in single cells using scRNAseq.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement of experimental observation and inference.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C85",
+    "claim": "Three of the high-stress growth conditions (NLIM-GLN, NLIM-PRO, and MMEtOH) have clusters that are separate from the majority of the cells analyzed in those conditions.",
+    "claim_type": "EXPLICIT",
+    "source": "Three of the high-stress growth conditions (NLIM-GLN, NLIM-PRO, and MMEtOH) have clusters that are separate from the majority of the cells analyzed in those conditions.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement of experimental observation.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C86",
+    "claim": "Separate clusters in high-stress conditions have higher levels of stress response genes and lower levels of ribosomal genes than other cells in these conditions.",
+    "claim_type": "EXPLICIT",
+    "source": "We find that these clusters have higher levels of stress response genes and lower levels of ribosomal genes than other cells in these conditions (Figure 3\u2014figure supplement 2B\u2013C)",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a statement of experimental observation with reference to a figure.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C87",
+    "claim": "Separate clusters in high-stress conditions may reflect cells undergoing early entry into quiescence.",
+    "claim_type": "EXPLICIT",
+    "source": "These clusters may reflect cells undergoing early entry into quiescence and provide evidence for a heterogeneous response to stressful conditions.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a speculative interpretation of the data.",
+    "evidence_type": [
+      "SPECULATION",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C88",
+    "claim": "GAP1 is a transporter responsible for importing amino acids under conditions of nitrogen limitation.",
+    "claim_type": "EXPLICIT",
+    "source": "GAP1 (General Amino acid Permease) is a transporter responsible for importing amino acids under conditions of nitrogen limitation; GAP1 expression is regulated by the NCR activators GAT1 and GLN3, the NCR repressors GZF3 and DAL80 (Stanbrough and Magasanik, 1995), and potentially GCN4 (Natarajan et al., 2001).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement based on cited knowledge.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C89",
+    "claim": "GAP1 expression is regulated by the NCR activators GAT1 and GLN3, the NCR repressors GZF3 and DAL80, and potentially GCN4.",
+    "claim_type": "EXPLICIT",
+    "source": "GAP1 (General Amino acid Permease) is a transporter responsible for importing amino acids under conditions of nitrogen limitation; GAP1 expression is regulated by the NCR activators GAT1 and GLN3, the NCR repressors GZF3 and DAL80 (Stanbrough and Magasanik, 1995), and potentially GCN4 (Natarajan et al., 2001).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement based on cited knowledge.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C90",
+    "claim": "GAP1 is not expressed in YPD.",
+    "claim_type": "EXPLICIT",
+    "source": "The effect of deleting TFs varies by condition: GAP1 is not expressed in YPD and its expression increases in nitrogen-limited media and in response to rapamycin.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement of experimental observation.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C91",
+    "claim": "GAP1 expression increases in nitrogen-limited media and in response to rapamycin.",
+    "claim_type": "EXPLICIT",
+    "source": "The effect of deleting TFs varies by condition: GAP1 is not expressed in YPD and its expression increases in nitrogen-limited media and in response to rapamycin.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement of experimental observation.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C92",
+    "claim": "Deletion of GAT1 results in decreased GAP1 expression in nitrogen limiting media.",
+    "claim_type": "EXPLICIT",
+    "source": "Deletion of GAT1 results in decreased expression in nitrogen limiting media, but deletion of GLN3 does not affect GAP1 expression.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement of experimental observation.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C93",
+    "claim": "Deletion of GLN3 does not affect GAP1 expression in nitrogen limiting media.",
+    "claim_type": "EXPLICIT",
+    "source": "Deletion of GAT1 results in decreased expression in nitrogen limiting media, but deletion of GLN3 does not affect GAP1 expression.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement of experimental observation.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C94",
+    "claim": "In the presence of rapamycin deletion of GLN3 results in reduced GAP1 expression.",
+    "claim_type": "EXPLICIT",
+    "source": "By contrast, in the presence of rapamycin deletion of GLN3 results in reduced GAP1 expression.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement of experimental observation.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C95",
+    "claim": "Deletion of GCN4 only impacts GAP1 expression in the presence of urea.",
+    "claim_type": "EXPLICIT",
+    "source": "Deletion of GCN4 only impacts GAP1 expression in the presence of urea.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement of experimental observation.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C96",
+    "claim": "Expression of the glycolytic gene HXK2 decreases when GLN3, GCN4, or RTG1/RTG3 are deleted, but only in conditions of nitrogen limitation.",
+    "claim_type": "EXPLICIT",
+    "source": "MEP2 and GLN1 are also responsive to nitrogen TFs, and are dysregulated when certain TFs are deleted; expression of the glycolytic gene HXK2 decreases when GLN3, GCN4, or RTG1/RTG3 are deleted, but only in conditions of nitrogen limitation (Figure 4\u2014figure supplement 1A).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a statement of experimental observation with reference to a figure.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C97",
+    "claim": "Single-cell measurements can be collapsed into a total count (pseudobulk) measurement by summing counts across all cells that correspond to each of the six individual replicates of each genotype within a condition.",
+    "claim_type": "EXPLICIT",
+    "source": "Our experimental design allows single-cell measurements to be collapsed into a total count (pseudobulk) measurement by summing counts across all cells that correspond to each of the six individual replicates of each genotype within a condition.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a description of the analytical approach used.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C98",
+    "claim": "The authors detect several genes with significant (adjusted p-value<0.05) differences in expression (fold change >1.5) between wild-type and TF deletion strains.",
+    "claim_type": "EXPLICIT",
+    "source": "When we analyze this data using standard approaches to RNAseq analysis (DESeq2) we detect several genes with significant (adjusted p-value<0.05) differences in expression (fold change >1.5) between wild-type and TF deletion strains (Figure 4B) that are consistent with known regulatory pathways.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a statement of experimental observation with reference to a figure.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C99",
+    "claim": "There are considerably fewer changes in gene expression as a result of TF deletions compared to the hundreds of genes that change expression between different conditions.",
+    "claim_type": "EXPLICIT",
+    "source": "There are considerably fewer changes in gene expression as a result of TF deletions compared to the hundreds of genes that change expression between different conditions (Figure 4\u2014figure supplement 1B).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a statement of experimental observation with reference to a figure.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C100",
+    "claim": "In cells grown in rich media [YPD], 96 genes are differentially expressed in TF deletion strains compared to wildtype.",
+    "claim_type": "EXPLICIT",
+    "source": "However, in cells grown in rich media [YPD], we found 96 genes that are differentially expressed in TF deletion strains compared to wildtype (Figure 4C), and expression of 160 genes are perturbed in TF deletion strains compared to wildtype when exposed to rapamycin [RAPA] (Figure 4\u2014figure supplement 1C).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a statement of experimental observation with reference to a figure.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C101",
+    "claim": "Expression of 160 genes are perturbed in TF deletion strains compared to wildtype when exposed to rapamycin [RAPA].",
+    "claim_type": "EXPLICIT",
+    "source": "However, in cells grown in rich media [YPD], we found 96 genes that are differentially expressed in TF deletion strains compared to wildtype (Figure 4C), and expression of 160 genes are perturbed in TF deletion strains compared to wildtype when exposed to rapamycin [RAPA] (Figure 4\u2014figure supplement 1C).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a statement of experimental observation with reference to a figure.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C102",
+    "claim": "Many differentially expressed genes are annotated as functioning in amino acid metabolism and biosynthesis.",
+    "claim_type": "EXPLICIT",
+    "source": "Many of these differentially expressed genes are annotated as functioning in amino acid metabolism and biosynthesis.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement of experimental observation.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C103",
+    "claim": "Differential gene expression in a TF knockout strain is not sufficient evidence of a direct regulatory relationship.",
+    "claim_type": "EXPLICIT",
+    "source": "Differential gene expression in a TF knockout strain is not sufficient evidence of a direct regulatory relationship as many significant changes in gene expression upon deleting a TF are indirect, and many direct effects may be subtle.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement based on biological knowledge and reasoning.",
+    "evidence_type": [
+      "KNOWLEDGE",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C104",
+    "claim": "The Inferelator assumes that Transcription Factor Activity (TFA) is a latent biophysical parameter that represents the effect of a TF binding to DNA and modulating its transcription activity.",
+    "claim_type": "EXPLICIT",
+    "source": "First, we assume that Transcription Factor Activity (TFA) is a latent biophysical parameter that represents the effect of a TF binding to DNA and modulating its transcription activity (Arrieta-Ortiz et al., 2015; Fu et al., 2011).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a description of the modeling assumption supported by citations.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C105",
+    "claim": "TFA values are not directly measured, and instead must be estimated as a relative value based on prior knowledge of a regulatory network of TF and target relationships.",
+    "claim_type": "EXPLICIT",
+    "source": "The TFA values are not directly measured, and instead must be estimated as a relative value based on prior knowledge of a regulatory network of TF and target relationships.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a description of the modeling approach.",
+    "evidence_type": [
+      "DATA",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C106",
+    "claim": "TFA estimation is essential as many TFs are post-transcriptionally regulated, or are expressed at levels that are not reliably detected by scRNAseq.",
+    "claim_type": "EXPLICIT",
+    "source": "This TFA estimation is essential as many TFs are post-transcriptionally regulated, or are expressed at levels that are not reliably detected by scRNAseq (Filtz et al., 2014).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement of biological reasoning supported by citation.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C107",
+    "claim": "The Inferelator assumes that expression of a gene can be described as a weighted sum of the activities of TFs using an additive model.",
+    "claim_type": "EXPLICIT",
+    "source": "Second, we assume that expression of a gene can be described as a weighted sum of the activities of TFs (Bonneau et al., 2006) using an additive model in which activators and repressors increase or decrease the expression of targets linearly.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a description of the modeling assumption supported by citation.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C108",
+    "claim": "The Inferelator assumes that each gene is regulated by a small number of TFs.",
+    "claim_type": "EXPLICIT",
+    "source": "Finally, we assume that each gene is regulated by a small number of TFs, and that regularization of gene expression models is required to enforce this biologically relevant property of target regulation.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a description of the modeling assumption.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C109",
+    "claim": "Saccharomyces cerevisiae has a well defined set of known interactions that are of considerably higher quality than is available for more complex eukaryotes.",
+    "claim_type": "EXPLICIT",
+    "source": "Saccharomyces cerevisiae, as a preeminent model organism in systems biology, has a well defined set of known interactions that are of considerably higher quality than is available for more complex eukaryotes providing a validated gold standard for testing model performance (Tchourine et al., 2018).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about the quality of available data supported by citation.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C110",
+    "claim": "The authors perform ten cross-validations using the existing gold standard network.",
+    "claim_type": "EXPLICIT",
+    "source": "To evaluate the performance of data processing methods and model parameter selections within the Inferelator on scRNAseq data, we perform ten cross-validations using the existing gold standard network.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a description of the computational approach used.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C111",
+    "claim": "During cross-validation, the authors infer a GRN using half of the gold standard target genes as priors, then evaluate performance based on recovery of TF-target gene interactions for gold standard interactions that are left out of the priors.",
+    "claim_type": "EXPLICIT",
+    "source": "During cross-validation, we infer a GRN using half of the gold standard target genes as priors, then evaluate performance based on recovery of TF-target gene interactions for gold standard interactions that are left out of the priors.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a description of the computational approach used.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C112",
+    "claim": "The negative control with shuffled priors establishes a random classifier baseline AUPR of 0.02.",
+    "claim_type": "EXPLICIT",
+    "source": "The negative control with shuffled priors establishes a random classifier baseline AUPR of 0.02; the negative control with simulated data establishes a circular recovery baseline AUPR of 0.06 (Figure 5A).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a statement of computational result with reference to a figure.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C113",
+    "claim": "The negative control with simulated data establishes a circular recovery baseline AUPR of 0.06.",
+    "claim_type": "EXPLICIT",
+    "source": "The negative control with shuffled priors establishes a random classifier baseline AUPR of 0.02; the negative control with simulated data establishes a circular recovery baseline AUPR of 0.06 (Figure 5A).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a statement of computational result with reference to a figure.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C114",
+    "claim": "Performance of the Inferelator on scRNAseq data far exceeds the negative control baselines, with a mean AUPR of 0.20.",
+    "claim_type": "EXPLICIT",
+    "source": "Performance of the Inferelator on our scRNAseq data far exceeds these baselines, with a mean AUPR of 0.20.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement of computational result.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C115",
+    "claim": "Performance from the single scRNAseq dataset is comparable to that of a GRN constructed from 2577 experimental observations using bulk gene expression data.",
+    "claim_type": "EXPLICIT",
+    "source": "This performance from our single dataset is comparable to that of a GRN constructed from 2577 experimental observations using bulk gene expression data (Tchourine et al., 2018).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a comparison to prior work supported by citation.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C116",
+    "claim": "The authors tested the impact of several imputation packages on network inference: MAGIC, ScImpute, and VIPER.",
+    "claim_type": "EXPLICIT",
+    "source": "We tested the impact of several imputation packages on network inference: MAGIC (van Dijk et al., 2018), ScImpute (Li and Li, 2018), and VIPER (Chen and Zhou, 2018).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a description of the computational approach used.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C117",
+    "claim": "Imputation methods are either ineffective or detrimental to network inference.",
+    "claim_type": "EXPLICIT",
+    "source": "Whereas these methods can enhance separation of gene expression states in low-dimensionality projections (Figure 5\u2014figure supplement 1A), we find that they are either ineffective or detrimental to network inference (Figure 5A).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a statement of computational result with reference to figures.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C118",
+    "claim": "When the GRN is reconstructed from interactions selected at a precision threshold of 0.5, no imputation method increases the number of recovered interactions compared to unmodified data.",
+    "claim_type": "EXPLICIT",
+    "source": "When the GRN is reconstructed from interactions selected at a precision threshold of 0.5, which takes into account how many interactions are correct according to the gold standard, no imputation method increases the number of recovered interactions compared to unmodified data.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement of computational result.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C119",
+    "claim": "Data imputation with MAGIC increases the total number of confidently predicted (confidence >0.95) interactions, but recovers fewer interactions that are correct according to the gold standard.",
+    "claim_type": "EXPLICIT",
+    "source": "Data imputation with MAGIC increases the total number of confidently predicted (confidence >0.95) interactions, but recovers fewer interactions that are correct according to the gold standard.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement of computational result.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C120",
+    "claim": "The best performance is obtained using a curated set of known TF-gene interactions obtained from YEASTRACT.",
+    "claim_type": "EXPLICIT",
+    "source": "The best performance is obtained using a curated set of known TF-gene interactions obtained from YEASTRACT (Teixeira et al., 2018).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement of computational result with citation.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C121",
+    "claim": "Generating priors using motif searching within open chromatin regions determined by ATAC-seq provides a considerable improvement over GRN reconstruction from TF expression without priors.",
+    "claim_type": "EXPLICIT",
+    "source": "Generating priors using motif searching within open chromatin regions determined by ATAC-seq (Castro et al., 2019; Miraldi et al., 2019), and by modeling TF-DNA affinities in promoters (Ward and Bussemaker, 2008) provides a considerable improvement over GRN reconstruction from TF expression without priors, but have lower performance than priors derived from curated data.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement of computational result with citations.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C122",
+    "claim": "When data is separated based on environmental conditions and GRNs are inferred, unique networks of differing quality are obtained.",
+    "claim_type": "EXPLICIT",
+    "source": "We find that when we separate data based on environmental conditions and infer GRNs we obtain unique networks of differing quality (Figure 5C).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a statement of computational result with reference to a figure.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C123",
+    "claim": "Treating conditions as separate network inference tasks provides a considerable improvement in performance compared to network inference using all data simultaneously.",
+    "claim_type": "EXPLICIT",
+    "source": "We find that, compared to network inference using all data simultaneously [BBSR (ALL)], treating conditions as separate network inference tasks provides a considerable improvement in performance (Figure 5Di).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a statement of computational result with reference to a figure.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C124",
+    "claim": "The improvement from treating conditions as separate tasks is likely due to the retention of environmentally specific interactions that would otherwise be obscured using methods for normalizing data prior to GRN construction.",
+    "claim_type": "EXPLICIT",
+    "source": "This is likely due to the retention of environmentally specific interactions that would otherwise be obscured using methods for normalizing data prior to GRN construction.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an inference about the reason for the observed result.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C125",
+    "claim": "The performance of the information sharing network inference approach [AMuSR (MTL)] and the non-sharing network inference approach [BBSR (BY TASK)] are very similar overall.",
+    "claim_type": "EXPLICIT",
+    "source": "The performance of the information sharing network inference approach [AMuSR (MTL)] and the non-sharing network inference approach [BBSR (BY TASK)] are very similar overall.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement of computational result.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C126",
+    "claim": "Some individual tasks had modest improvements in model performance with AMuSR and others with BBSR.",
+    "claim_type": "EXPLICIT",
+    "source": "We find that some individual tasks had modest improvements in model performance with AMuSR and others with BBSR (Figure 5Dii).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a statement of computational result with reference to a figure.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C127",
+    "claim": "The resulting global GRN comprises 6114 new interactions and 6114 interactions present in the priors, resulting in a total of 12,228 regulator-target interactions.",
+    "claim_type": "EXPLICIT",
+    "source": "The resulting GRN comprises 6114 new interactions and 6114 interactions present in the priors, resulting in a total of 12,228 regulator-target interactions.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement of computational result.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C128",
+    "claim": "5372 interactions from the priors are not recovered (recall of 0.532).",
+    "claim_type": "EXPLICIT",
+    "source": "We find that 5372 interactions from the priors are not recovered (recall of 0.532).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement of computational result.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C129",
+    "claim": "The global GRN comprises an identified regulator for approximately half of all known genes.",
+    "claim_type": "EXPLICIT",
+    "source": "The global GRN comprises an identified regulator for approximately half of all known genes (Figure 6\u2014figure supplement 1A).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a statement of computational result with reference to a figure.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C130",
+    "claim": "There is a positive correlation between expression level for a gene and the number of regulators for that gene.",
+    "claim_type": "EXPLICIT",
+    "source": "There is a positive correlation between expression level for a gene and the number of regulators for that gene (Figure 6\u2014figure supplement 1B) and 90% of the identified interactions are predicted to have activating effects (Figure 6\u2014figure supplement 1C).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a statement of computational result with reference to a figure.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C131",
+    "claim": "90% of the identified interactions are predicted to have activating effects.",
+    "claim_type": "EXPLICIT",
+    "source": "There is a positive correlation between expression level for a gene and the number of regulators for that gene (Figure 6\u2014figure supplement 1B) and 90% of the identified interactions are predicted to have activating effects (Figure 6\u2014figure supplement 1C).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a statement of computational result with reference to a figure.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C132",
+    "claim": "More than 75% of the final network is composed of TF-gene interactions found in multiple conditions.",
+    "claim_type": "EXPLICIT",
+    "source": "Many condition-specific networks have uniquely identified interactions (Figure 6\u2014figure supplement 1D), but more than 75% of the final network is composed of TF-gene interactions found in multiple conditions (Figure 6\u2014figure supplement 1E).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a statement of computational result with reference to a figure.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C133",
+    "claim": "Of the novel learned interactions (i.e. those not in the prior data), 60% have evidence of a TF-gene regulatory relationship when compared to the YEASTRACT database.",
+    "claim_type": "EXPLICIT",
+    "source": "Of the novel learned interactions (i.e. those not in the prior data), 60% have evidence of a TF-gene regulatory relationship when compared to the YEASTRACT database (Figure 6\u2014figure supplement 1F).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a statement of computational result with reference to a figure.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C134",
+    "claim": "573 learned TF-gene interactions have evidence for physical localization of the TF to the target gene.",
+    "claim_type": "EXPLICIT",
+    "source": "573 learned TF-gene interactions have evidence for physical localization of the TF to the target gene, and 2957 learned TF-gene interactions have evidence of expression changes when the TF is perturbed.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement of computational result.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C135",
+    "claim": "2957 learned TF-gene interactions have evidence of expression changes when the TF is perturbed.",
+    "claim_type": "EXPLICIT",
+    "source": "573 learned TF-gene interactions have evidence for physical localization of the TF to the target gene, and 2957 learned TF-gene interactions have evidence of expression changes when the TF is perturbed.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement of computational result.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C136",
+    "claim": "Within the nitrogen-regulated TF subnetwork comprising the 11 deleted TFs, the authors identify 885 regulator-target interactions, of which 447 are novel, and 438 are present in the priors.",
+    "claim_type": "EXPLICIT",
+    "source": "Within the nitrogen-regulated TF subnetwork comprising the 11 deleted TFs (Figure 6B) we identify 885 regulator-target interactions, of which 447 are novel, and 438 are present in the priors.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a statement of computational result with reference to a figure.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C137",
+    "claim": "The global GRN has the largest number of target genes for general TFs (including ABF1, RAP1, CBF1, and SFP1).",
+    "claim_type": "EXPLICIT",
+    "source": "Overall, the global GRN has the largest number of target genes for general TFs (including ABF1, RAP1, CBF1, and SFP1), but we also define regulatory relationships for a total of 129 of the predicted 207 yeast TFs (Figure 6C).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a statement of computational result with reference to a figure.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C138",
+    "claim": "The authors define regulatory relationships for a total of 129 of the predicted 207 yeast TFs.",
+    "claim_type": "EXPLICIT",
+    "source": "Overall, the global GRN has the largest number of target genes for general TFs (including ABF1, RAP1, CBF1, and SFP1), but we also define regulatory relationships for a total of 129 of the predicted 207 yeast TFs (Figure 6C).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a statement of computational result with reference to a figure.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C139",
+    "claim": "The poorest recovery of prior data is found for TFs that regulate environmental responses not included in the experimental design.",
+    "claim_type": "EXPLICIT",
+    "source": "The poorest recovery of prior data is found for TFs that regulate environmental responses not included in our experimental design, such as the stress response TF MSN2 and the mating TF STE12, highlighting the necessity of exploration of condition space for complete network reconstruction.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement of computational result and inference.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C140",
+    "claim": "For target genes eight of the top ten GO slim terms are metabolism-related.",
+    "claim_type": "EXPLICIT",
+    "source": "Ordering GO slim terms by the number of interactions in the learned GRN, we find that for target genes eight of the top ten GO slim terms are metabolism-related (Figure 6D i); in contrast, for regulatory TFs, five of the top ten GO slim terms are stress response related (Figure 6D ii).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a statement of computational result with reference to a figure.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C141",
+    "claim": "For regulatory TFs, five of the top ten GO slim terms are stress response related.",
+    "claim_type": "EXPLICIT",
+    "source": "Ordering GO slim terms by the number of interactions in the learned GRN, we find that for target genes eight of the top ten GO slim terms are metabolism-related (Figure 6D i); in contrast, for regulatory TFs, five of the top ten GO slim terms are stress response related (Figure 6D ii).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a statement of computational result with reference to a figure.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C142",
+    "claim": "The learned global GRN contains 257 genes that are regulated both by nitrogen TFs and by cell cycle TFs.",
+    "claim_type": "EXPLICIT",
+    "source": "The learned global GRN contains 257 genes that are regulated both by nitrogen TFs and by cell cycle TFs (Figure 7A).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a statement of computational result with reference to a figure.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C143",
+    "claim": "Many regulatory connections between nitrogen TFs and cell cycle TFs are novel.",
+    "claim_type": "EXPLICIT",
+    "source": "Many of these regulatory connections are novel; likely due to the fact that identifying interactions between metabolism and cell cycle are challenging in asynchronous cultures without single-cell techniques.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement of computational result and inference.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C144",
+    "claim": "Of the 257 genes regulated by both nitrogen TFs and cell cycle TFs, 38 are annotated with the amino acid metabolic biological process GO term.",
+    "claim_type": "EXPLICIT",
+    "source": "Of these genes, 38 are annotated with the amino acid metabolic biological process GO term and 20 are annotated with the ion or transmembrane transport biological process GO term.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement of computational result.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C145",
+    "claim": "Of the 257 genes regulated by both nitrogen TFs and cell cycle TFs, 20 are annotated with the ion or transmembrane transport biological process GO term.",
+    "claim_type": "EXPLICIT",
+    "source": "Of these genes, 38 are annotated with the amino acid metabolic biological process GO term and 20 are annotated with the ion or transmembrane transport biological process GO term.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement of computational result.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C146",
+    "claim": "Only 11 of the 257 genes regulated by both nitrogen TFs and cell cycle TFs are annotated with the mitotic cell cycle biological process GO term.",
+    "claim_type": "EXPLICIT",
+    "source": "Only 11 are annotated with the mitotic cell cycle biological process GO term, indicating that the majority of the interconnection between cell cycle and nitrogen response genes is due to regulation of metabolism-related genes by cell cycle TFs.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement of computational result.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C147",
+    "claim": "The majority of the interconnection between cell cycle and nitrogen response genes is due to regulation of metabolism-related genes by cell cycle TFs.",
+    "claim_type": "EXPLICIT",
+    "source": "Only 11 are annotated with the mitotic cell cycle biological process GO term, indicating that the majority of the interconnection between cell cycle and nitrogen response genes is due to regulation of metabolism-related genes by cell cycle TFs.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an inference based on the computational result.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C148",
+    "claim": "The TFA of nitrogen responsive TFs is principally linked to growth condition.",
+    "claim_type": "EXPLICIT",
+    "source": "The TFA of nitrogen responsive TFs is principally linked to growth condition as these TFs vary in activity between conditions (Figure 7A), but are generally similar within condition (Figure 7\u2014figure supplement 1A).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a statement of computational result with reference to figures.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C149",
+    "claim": "Cells grown in rich media (YPD) have low TFA for the NCR TFs GLN3 and the GAAC TF GCN4.",
+    "claim_type": "EXPLICIT",
+    "source": "As expected, we find that cells grown in rich media (YPD) have low TFA for the NCR TFs GLN3 and the GAAC TF GCN4.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement of computational result.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C150",
+    "claim": "The TFA for GLN3 and GCN4 increases substantially upon treatment with rapamycin.",
+    "claim_type": "EXPLICIT",
+    "source": "The TFA for these TFs increases substantially upon treatment with rapamycin.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement of computational result.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C151",
+    "claim": "The estimated TFAs of cell cycle TFs varies within condition.",
+    "claim_type": "EXPLICIT",
+    "source": "By contrast, the estimated TFAs of cell cycle TFs varies within condition (Figure 7B); and are concordant with cell cycle responsive gene expression (Figure 7\u2014figure supplement 1B\u2013D).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a statement of computational result with reference to figures.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C152",
+    "claim": "This is the first report of droplet-based scRNAseq in budding yeast.",
+    "claim_type": "EXPLICIT",
+    "source": "We present here the first report of droplet-based scRNAseq in this widely used model eukaryotic cell.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a claim about the novelty of the work.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C153",
+    "claim": "Using a diverse library of transcriptionally barcoded gene deletion strains the authors were able to efficiently analyze the gene expression state of 38,255 cells using 11 experiments.",
+    "claim_type": "EXPLICIT",
+    "source": "Using a diverse library of transcriptionally barcoded gene deletion strains we were able to efficiently analyze the gene expression state of 38,255 cells using 11 experiments.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement of the experimental result.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C154",
+    "claim": "Transcriptional barcoding provides a facile means of identifying doublet cells within droplets thereby increasing the accuracy of single cell analysis.",
+    "claim_type": "EXPLICIT",
+    "source": "In addition to facilitating multiplexed analysis of genotypes, transcriptional barcoding provides a facile means of identifying doublet cells within droplets thereby increasing the accuracy of single cell analysis.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement of the methodological advantage.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C155",
+    "claim": "Environmental condition is the primary determinant of the gene expression state of individual yeast cells.",
+    "claim_type": "EXPLICIT",
+    "source": "Consistent with our understanding of global gene expression variation first characterized in foundational studies of the transcriptome (DeRisi et al., 1997; Gasch et al., 2000), we find that environmental condition is the primary determinant of the gene expression state of individual yeast cells.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement of experimental observation supported by citations.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C156",
+    "claim": "Much of the variation in individual cell gene expression within conditions can be explained by the mitotic cell-cycle.",
+    "claim_type": "EXPLICIT",
+    "source": "However, we observe significant heterogeneity in individual cell gene expression within conditions. Much of this variation can be explained by the mitotic cell-cycle.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement of experimental observation.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C157",
+    "claim": "The ability to access the crosstalk between signalling pathways and the cell cycle program is a key advantage to performing single-cell sequencing in asynchronous cultures.",
+    "claim_type": "EXPLICIT",
+    "source": "The ability to access the crosstalk between signalling pathways and the cell cycle program is a key advantage to performing single-cell sequencing in asynchronous cultures, which bypasses many of the limitations of synchronized bulk sequencing experiments.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement of the methodological advantage.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C158",
+    "claim": "In several stressful growth conditions, some cells appear to be proliferative, while other cells have downregulated translational machinery and upregulated stress response genes.",
+    "claim_type": "EXPLICIT",
+    "source": "It is also important to note that in several stressful growth conditions, we see heterogeneous cellular responses; some cells appear to be proliferative, while other cells have downregulated translational machinery and upregulated stress response genes.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement of experimental observation.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C159",
+    "claim": "The presence of multiple distinct transcriptional states between cells in the same environmental condition is further evidence of bet-hedging strategies.",
+    "claim_type": "EXPLICIT",
+    "source": "This is an interesting outcome by itself, as it is further evidence of bet-hedging strategies (Levy et al., 2012), and we expect that the presence of multiple distinct transcriptional states between cells in the same environmental condition is advantageous for network inference.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an inference supported by citation.",
+    "evidence_type": [
+      "INFERENCE",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C160",
+    "claim": "The presence of multiple distinct transcriptional states between cells in the same environmental condition is advantageous for network inference.",
+    "claim_type": "EXPLICIT",
+    "source": "This is an interesting outcome by itself, as it is further evidence of bet-hedging strategies (Levy et al., 2012), and we expect that the presence of multiple distinct transcriptional states between cells in the same environmental condition is advantageous for network inference.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a speculative statement.",
+    "evidence_type": [
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C161",
+    "claim": "Cells in minimal MMD media must express anabolic pathways to synthesize nitrogenous bases, cofactors and amino acids.",
+    "claim_type": "EXPLICIT",
+    "source": "Cells in rich YPD media do not require many anabolic pathways to be active, and primarily express genes required for the cell-cycle, translation, and glycolysis; in contrast, cells in minimal MMD media must express these pathways plus many anabolic pathways to synthesize nitrogenous bases, cofactors and amino acids.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement based on biological knowledge.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C162",
+    "claim": "Increased transcriptional diversity in minimal media results in better overall performance of network inference.",
+    "claim_type": "EXPLICIT",
+    "source": "We find that this increased transcriptional diversity results in better overall performance.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement of computational result and inference.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C163",
+    "claim": "The largest performance gain in network inference comes from aggregating networks from cells in different conditions.",
+    "claim_type": "EXPLICIT",
+    "source": "Nonetheless, the largest performance gain comes from aggregating networks from cells in different conditions (Figure 5D), which demonstrates a general advantage to learning GRNs from heterogeneous data.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a statement of computational result with reference to a figure.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C164",
+    "claim": "Deletion of specific transcription factors results in changes in single cell gene expression for some TFs in some conditions.",
+    "claim_type": "EXPLICIT",
+    "source": "Deletion of specific transcription factors results in changes in single cell gene expression for some TFs in some conditions.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement of experimental observation.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C165",
+    "claim": "Genotypic effects on gene expression are comparatively minor.",
+    "claim_type": "EXPLICIT",
+    "source": "However, genotypic effects are comparatively minor.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement of experimental observation.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C166",
+    "claim": "Genotypic effects being minor is due to multiple factors including functional redundancy between TFs, physiological adaptation to the genetic perturbation and the conditional specificity of TFs.",
+    "claim_type": "EXPLICIT",
+    "source": "We believe that this is due to multiple factors including functional redundancy between TFs, physiological adaptation to the genetic perturbation and the conditional specificity of TFs.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a speculative interpretation of the data.",
+    "evidence_type": [
+      "SPECULATION",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C167",
+    "claim": "Perturbations that are transiently induced, and result in increased TF activity may be effective in eliciting detectable responses in gene expression, facilitating causal inference.",
+    "claim_type": "EXPLICIT",
+    "source": "It is likely that perturbations that are transiently induced, and result in increased TF activity (McIsaac et al., 2013) may be effective in eliciting detectable responses in gene expression, facilitating causal inference.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a speculative statement supported by citation.",
+    "evidence_type": [
+      "SPECULATION",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C168",
+    "claim": "The use of precise gene deletions provides several advantages over the use of CRISPR/Cas9-based perturbations as engineered deletions are unambiguous whereas the efficiency of perturbation by CRISPR/Cas9 varies for different guide RNAs.",
+    "claim_type": "EXPLICIT",
+    "source": "The use of precise gene deletions does provide several advantages over the use of CRISPR/Cas9-based perturbations as engineered deletions are unambiguous whereas the efficiency of perturbation by CRISPR/Cas9 varies for different guide RNAs.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement comparing methodological approaches.",
+    "evidence_type": [
+      "KNOWLEDGE",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C169",
+    "claim": "A yeast single-cell expression matrix has several beneficial properties for design and testing of gene regulatory network inference models as there exist high quality known interactions and TF binding motifs.",
+    "claim_type": "EXPLICIT",
+    "source": "A yeast single-cell expression matrix has several beneficial properties for design and testing of gene regulatory network inference models as there exist high quality known interactions and TF binding motifs.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about the advantages of the yeast system.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C170",
+    "claim": "The issues of data sparsity and low sampling rates are likely to be problems common in experiments in any organism using scRNAseq.",
+    "claim_type": "EXPLICIT",
+    "source": "The issues of data sparsity and low sampling rates are likely to be problems common in experiments in any organism using scRNAseq.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about general challenges in scRNAseq.",
+    "evidence_type": [
+      "KNOWLEDGE",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C171",
+    "claim": "Techniques that have been developed for normalization and imputation do not improve performance of the additive linear model-based inference of the Inferelator algorithm.",
+    "claim_type": "EXPLICIT",
+    "source": "We find that techniques that have been developed for normalization and imputation do not improve performance of the additive linear model-based inference of the Inferelator algorithm (Figure 5).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a statement of computational result with reference to a figure.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C172",
+    "claim": "The application of multitask learning is well suited to GRN reconstruction from scRNAseq data.",
+    "claim_type": "EXPLICIT",
+    "source": "We find that the application of multitask learning is well suited to GRN reconstruction from scRNAseq data.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement of computational result.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C173",
+    "claim": "Jointly learning multiple related tasks improves generalization accuracy, especially in scenarios in which datasets are undersampled.",
+    "claim_type": "EXPLICIT",
+    "source": "Jointly learning multiple related tasks improves generalization accuracy, especially in scenarios in which datasets are undersampled (Caruana, 1998), and has the desirable side benefit of mitigating the need for complex batch-correction techniques that aim to address technical variation between experiments.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement supported by citation.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C174",
+    "claim": "Application of multitask learning approaches to network inference from single-cell data is likely to be generally applicable to integrating scRNAseq data from different cell types and conditions.",
+    "claim_type": "EXPLICIT",
+    "source": "Removing batch-effect technical noise from data without suppressing interbatch biological variability remains an unsolved problem, and therefore application of multitask learning approaches to network inference from single-cell data is likely to be generally applicable to integrating scRNAseq data from different cell types and conditions.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a speculative statement about the generalizability of the approach.",
+    "evidence_type": [
+      "SPECULATION",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C175",
+    "claim": "Among the most novel interactions in the global GRN are those between cell-cycle associated TFs and targets and nitrogen TFs and target genes.",
+    "claim_type": "EXPLICIT",
+    "source": "Among the most novel of these interactions are those between cell-cycle associated TFs and targets and nitrogen TFs and target genes.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement of the biological findings.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C176",
+    "claim": "The cell cycle and metabolism are, by necessity, interconnected.",
+    "claim_type": "EXPLICIT",
+    "source": "The cell cycle and metabolism are, by necessity, interconnected, and the mechanism of rapamycin in arresting cell cycle through TOR is well-established (Heitman et al., 1991).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement based on biological knowledge and citation.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C177",
+    "claim": "The mechanism of rapamycin in arresting cell cycle through TOR is well-established.",
+    "claim_type": "EXPLICIT",
+    "source": "The cell cycle and metabolism are, by necessity, interconnected, and the mechanism of rapamycin in arresting cell cycle through TOR is well-established (Heitman et al., 1991).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement based on citation.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C178",
+    "claim": "Several studies have identified metabolic cycling patterns which are believed to be driven by the cell cycle.",
+    "claim_type": "EXPLICIT",
+    "source": "Several studies have identified metabolic cycling patterns which are believed to be driven by the cell cycle (Burnetti et al., 2016; Slavov and Botstein, 2011; Tu et al., 2005).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement supported by citations.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C179",
+    "claim": "A comprehensive regulatory network connecting environmental sensors, metabolism, and the cell cycle does not exist.",
+    "claim_type": "EXPLICIT",
+    "source": "Although regulatory connections between environmental sensors, metabolism, and the cell cycle have been previously reported, a comprehensive regulatory network does not exist, in large part because of the difficulty of experimentally perturbing cell cycle without confounding metabolic changes.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about gaps in knowledge.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C180",
+    "claim": "The difficulty of experimentally perturbing cell cycle without confounding metabolic changes has prevented creation of a comprehensive regulatory network.",
+    "claim_type": "EXPLICIT",
+    "source": "Although regulatory connections between environmental sensors, metabolism, and the cell cycle have been previously reported, a comprehensive regulatory network does not exist, in large part because of the difficulty of experimentally perturbing cell cycle without confounding metabolic changes.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about experimental challenges.",
+    "evidence_type": [
+      "KNOWLEDGE",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C181",
+    "claim": "The study provides a valuable first step in identifying specific regulatory connections that were previously inaccessible.",
+    "claim_type": "EXPLICIT",
+    "source": "Our study provides a valuable first step in identifying specific regulatory connections that were previously inaccessible, and which are necessary to create a complete map of the yeast regulome.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about the contribution of the work.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C182",
+    "claim": "Several TFs have few learned targets reflecting the requirement for surveying conditions in which particular TFs are active.",
+    "claim_type": "EXPLICIT",
+    "source": "We note that several TFs have few learned targets reflecting the requirement for surveying conditions in which particular TFs are active.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement of computational result and inference.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C183",
+    "claim": "STE12 and TEC1 are mating-related TFs that are expected to be entirely inactive in diploid cells.",
+    "claim_type": "EXPLICIT",
+    "source": "For example, STE12 and TEC1 are mating-related TFs that we expect to be entirely inactive in our diploid cells; MSN2 and YAP1 are stress-responsive TFs that respond to specific stimuli that were not tested in our study.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement based on biological knowledge.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C184",
+    "claim": "MSN2 and YAP1 are stress-responsive TFs that respond to specific stimuli that were not tested in the study.",
+    "claim_type": "EXPLICIT",
+    "source": "For example, STE12 and TEC1 are mating-related TFs that we expect to be entirely inactive in our diploid cells; MSN2 and YAP1 are stress-responsive TFs that respond to specific stimuli that were not tested in our study.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement based on biological knowledge.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C185",
+    "claim": "Single-cell sequencing is a transformative method for systems biology.",
+    "claim_type": "EXPLICIT",
+    "source": "Single-cell sequencing is a transformative method for systems biology.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a general statement about the field.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C186",
+    "claim": "The ability to simultaneously study the expression of hundreds of genotypes in different conditions, and sample the expression state of thousands of cells, presents a rich source of information for the purpose of GRN reconstruction.",
+    "claim_type": "EXPLICIT",
+    "source": "However, the ability to simultaneously study the expression of hundreds of genotypes in different conditions, and sample the expression state of thousands of cells, presents a rich source of information for the purpose of GRN reconstruction.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about the advantages of the approach.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C187",
+    "claim": "The study establishes the use of droplet-based scRNAseq analysis of multiplexed genotypes in yeast.",
+    "claim_type": "EXPLICIT",
+    "source": "Our study provides a generalizable framework for GRN reconstruction from scRNAseq, a rich data set that will enable benchmarking of future computational methods, and establishes the use of droplet-based scRNAseq analysis of multiplexed genotypes in yeast.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about the contribution of the work.",
+    "evidence_type": [
+      "DATA"
+    ]
+  }
+]

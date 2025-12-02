@@ -1,0 +1,261 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C20",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Probe-Seq is a method that uses SABER-FISH to label dissociated cells with fluorescent probes targeting specific RNA species, followed by FACS isolation for deep transcriptional profiling. The method uses OligoMiner-designed oligonucleotides (20-40 nt) that are extended via Primer Exchange Reaction to create concatemers, which are then detected by fluorescent oligos.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C4, C20, C32-C34 collectively describe the technical foundation of Probe-Seq. The method is well-documented with appropriate citations to SABER-FISH (C20, C32, C33) and demonstrated throughout the experimental sections (C3, C4). The technical details are consistent and supported by the methodological descriptions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Probe-Seq successfully isolated and profiled specific bipolar cell subtypes from mouse retina using Vsx2 and Grik1 markers. The method achieved 92.3\u00b10.6% purity, isolated sufficient cell numbers, and generated high-quality RNA-seq data with >17,000 genes detected and 1,740 differentially expressed genes between populations. The isolated populations showed expected enrichment patterns for BC subtypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C54 provide comprehensive evidence for successful application to mouse retina. Quantitative metrics (C38, C39, C41-C44) demonstrate technical success, while differential expression and GSEA analyses (C46-C52) confirm biological validity. The correlation analysis (C43) and validation of novel markers like Tpbgl (C53) further support the conclusions. Statistical rigor is evident with adjusted p-values and appropriate sample sizes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Comparison of Probe-Seq to traditional live cell sorting using a GFP reporter showed strong correlation (r=0.78\u00b10.01 for all genes, r=0.66 for BC2-BC4 markers), despite mild RNA degradation (projected RIN 4-6) in Probe-Seq samples. The correlation validates that Probe-Seq generates high-quality transcriptomes comparable to live cell sorting.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C61 provide a critical validation experiment comparing Probe-Seq to the gold standard. The quantitative correlation data (C59, C60) and RNA quality metrics (C57, C58) are clearly reported. The imperfect correlation is appropriately explained by the 72% specificity of the GFP reporter (C55), demonstrating scientific rigor in interpretation. The conclusion (C61) is justified by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Systematic testing of probe set parameters showed that FACS resolution (measured by Stain Index) depends on both the number of oligos and transcript abundance. With an SI cutoff of 2, as few as 12 oligos were sufficient to isolate rare cell populations (e.g., Neto1+ cells at ~0.3% frequency).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C67 describe a well-designed parameter optimization experiment. The hypothesis (C62) is tested systematically with three genes of varying expression levels (C63) and varying oligo numbers (C64). The quantitative SI measurements (C64, C65) support the conclusions, and the demonstration with rare Neto1+ cells (C66) validates practical applicability. The inference (C67) is appropriately drawn from the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C23",
+      "C24",
+      "C25",
+      "C68",
+      "C69",
+      "C101"
+    ],
+    "result": "Probe-Seq can be multiplexed by hybridizing multiple gene-specific probe sets simultaneously, and fluorescent oligos can be stripped and re-hybridized to enable iterative isolation of multiple cell types from a single preparation. This allows isolation of an indefinite number of cell types through serial sorting.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C8, C23-C25, C68, C69, C101 collectively demonstrate multiplexing capability. The iterative labeling experiment (Figure 1i, referenced in C24) provides direct evidence for stripping and re-labeling. The claim of 'indefinite' cell types (C25) is appropriately qualified as an inference based on demonstrated capability. The connection to Exchange-SABER (C68) provides methodological context.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C6",
+      "C26",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Probe-Seq is compatible with frozen tissue by labeling nuclear RNA. Application to frozen human retina successfully isolated GRM6+ bipolar cells with expected marker enrichment (1,956 DE genes), and validation experiments confirmed novel markers like CDH12. Similar success was achieved with frozen mouse retina.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C26, C70-C78 demonstrate successful extension to frozen tissue. The human retina experiments (C72-C77) provide quantitative data on cell yields (C73), differential expression (C74), and marker enrichment validated by GSEA (C76). The frozen mouse retina control (C70, C71) strengthens the conclusion. FISH validation of CDH12 (C77) demonstrates discovery of novel markers. The conclusion (C78) is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C27",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "Probe-Seq successfully isolated and profiled intestinal stem cells from Drosophila midgut using the esg marker. The method yielded 405 DE genes with expected ISC/EB marker enrichment confirmed by GSEA, demonstrating applicability to invertebrate and non-CNS tissues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27, C79-C86 demonstrate successful application to a non-vertebrate, non-CNS tissue. The experimental design is appropriate (C80), quantitative data are provided (C81, C82), and marker enrichment is validated by both differential expression (C83) and GSEA with extensive cell type markers (C84). FISH validation of Sox100B (C85) confirms findings. The conclusion (C86) is justified by the comprehensive data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C30",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "Probe-Seq was applied to developing chick retina to profile FGF8+ progenitor cells that give rise to the high acuity area. The method identified 1,924 DE genes including known markers (FGF8, CYP1B1, CYP26C1) and novel candidates like BMP2, with better RNA quality than adult mouse samples.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30, C87-C97 demonstrate application to a non-model organism. The biological context is well-established (C87-C89), quantitative data are provided (C90, C92), and the identification of both known (C93, C94) and novel markers (C96) with FISH validation strengthens conclusions. The observation of better RNA quality (C91) is appropriately noted. The inference about progenitor cell identity (C95, C97) is supported by marker analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C5",
+      "C28",
+      "C29",
+      "C31",
+      "C98",
+      "C100"
+    ],
+    "result": "Probe-Seq was successfully applied across multiple organisms (mouse, human, chick, Drosophila) and tissue types, with transcriptional profiles matching scRNA sequencing data and >10,000 genes detected in most cases. The method requires only organism-specific dissociation protocols, making it broadly applicable.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C28, C29, C31, C98, C100 synthesize the overall success across systems. The claim is supported by the individual experiments described in other result groups. The statement about matching scRNA sequencing (C28) is validated by correlation and GSEA analyses throughout. The >10,000 genes detected (C29) is consistently achieved. The conclusion about broad applicability (C31, C98, C100) is appropriately drawn from the diverse applications demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "Probe-Seq is cost and time effective, requiring less than 6 hours hands-on time and less than 3 days total (excluding oligo delivery), with an estimated cost of less than $200 per sample for ~15 million paired-end reads.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C104 provide practical information about the method. These estimates are based on the authors' experience implementing the protocol across multiple experiments. While not independently validated, the estimates are reasonable given the described workflow and are consistent with the reported sequencing depths throughout the manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "The manuscript establishes the scientific context: scRNA sequencing has revealed extensive cellular diversity, but bulk sequencing of specific cell types remains limited by availability of genetic tools and antibodies. Bulk profiling can be preferable for certain experimental goals despite the appeal of scRNA sequencing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C10-C19 establish the scientific rationale for developing Probe-Seq. These claims are well-supported by appropriate citations (C10, C11, C13, C15, C17) and represent established knowledge in the field (C1, C2, C12, C14, C18, C19). The motivation for bulk vs. single-cell approaches (C16) is a reasonable scientific argument.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C21",
+      "C99"
+    ],
+    "result": "Previous RNA-based FACS methods have been applied to cultured cells but not tested in tissue, and other approaches require microfluidic devices. This establishes the novelty of applying FISH-based FACS to tissue samples.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21 and C99 establish the novelty of Probe-Seq by comparison to prior work. Both claims are supported by appropriate citations to previous methods. The distinction between cultured cells and tissue (C21) and the microfluidic requirement of alternatives (C99) are factual statements about the prior art that justify the innovation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C105",
+      "C106"
+    ],
+    "result": "The authors speculate that Probe-Seq could be modified to use alternative FISH methods (clampFISH, RNAscope) or adapted for scRNA sequencing after crosslink reversal, representing potential future developments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C105-C106 are explicitly speculative about future modifications. While the suggestions are reasonable and cite relevant alternative methods, no experimental data support these potential adaptations. These represent discussion of future directions rather than demonstrated results, appropriately qualified as speculation in the evidence type.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C9"
+    ],
+    "result": "Probe-Seq should enable RNA profiling of specific cell types from any organism, representing a broad claim about the method's potential applicability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C9 makes a strong generalization about applicability to 'any organism.' While supported by successful application to phylogenetically diverse organisms (mouse, human, chick, Drosophila) spanning vertebrates and invertebrates, the claim remains somewhat speculative. The use of 'should enable' appropriately qualifies this as an inference. The diverse demonstrations provide strong but not absolute support for this broad claim.",
+    "result_type": "MAJOR"
+  }
+]

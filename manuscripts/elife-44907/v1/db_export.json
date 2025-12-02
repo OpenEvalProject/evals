@@ -1,0 +1,1009 @@
+{
+  "submission": {
+    "id": "4c3561ab-e837-46b2-a2e3-fb1602524754",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T11:11:33.976870Z",
+    "updated_at": "2025-12-02T11:11:33.976870Z"
+  },
+  "content": [
+    {
+      "id": "31a466d5-28c6-492f-b987-71c3798611d9",
+      "submission_id": "4c3561ab-e837-46b2-a2e3-fb1602524754",
+      "content_type": "manuscript",
+      "content_text": "# Swimming eukaryotic microorganisms exhibit a universal speed distribution\n\n## Authors\n\n- Maciej Lisicki<sup>1</sup> ([ORCID: 0000-0002-6976-0281](https://orcid.org/0000-0002-6976-0281)) \u2020\n- Marcos F Velho Rodrigues<sup>1</sup> ([ORCID: 0000-0002-8744-6966](https://orcid.org/0000-0002-8744-6966))\n- Raymond E Goldstein<sup>1</sup> ([ORCID: 0000-0003-2645-0598](https://orcid.org/0000-0003-2645-0598))\n- Eric Lauga<sup>1</sup> ([ORCID: 0000-0002-8916-2545](https://orcid.org/0000-0002-8916-2545)) \u2020\n\n### Affiliations\n\n1. Department of Applied Mathematics and Theoretical Physics University of Cambridge Cambridge United Kingdom\n2. Institute of Theoretical Physics, Faculty of Physics University of Warsaw Warsaw Poland\n\n\u2020 Corresponding author\n\n## Abstract\n\nOne approach to quantifying biological diversity consists of characterizing the statistical distribution of specific properties of a taxonomic group or habitat. Microorganisms living in fluid environments, and for whom motility is key, exploit propulsion resulting from a rich variety of shapes, forms, and swimming strategies. Here, we explore the variability of swimming speed for unicellular eukaryotes based on published data. The data naturally partitions into that from flagellates (with a small number of flagella) and from ciliates (with tens or more). Despite the morphological and size differences between these groups, each of the two probability distributions of swimming speed are accurately represented by log-normal distributions, with good agreement holding even to fourth moments. Scaling of the distributions by a characteristic speed for each data set leads to a collapse onto an apparently universal distribution. These results suggest a universal way for ecological niches to be populated by abundant microorganisms.\n\n## Introduction\n\nUnicellular eukaryotes comprise a vast, diverse group of organisms that covers virtually all environments and habitats, displaying a menagerie of shapes and forms. Hundreds of species of the ciliate genus Paramecium (Wichterman, 1986) or flagellated Euglena (Buetow, 2011) are found in marine, brackish, and freshwater reservoirs; the green algae Chlamydomonas is distributed in soil and fresh water world-wide (Harris et al., 2009); parasites from the genus Giardia colonize intestines of several vertebrates (Adam, 2001). One of the shared features of these organisms is their motility, crucial for nutrient acquisition and avoidance of danger (Bray, 2001). In the process of evolution, single-celled organisms have developed in a variety of directions, and thus their rich morphology results in a large spectrum of swimming modes (Cappuccinelli, 1980).\n\nMany swimming eukaryotes actuate tail-like appendages called flagella or cilia in order to generate the required thrust (Sleigh, 1975). This is achieved by actively generating deformations along the flagellum, giving rise to a complex waveform. The flagellar axoneme itself is a bundle of nine pairs of microtubule doublets surrounding two central microtubules, termed the '9\u00a0+\u00a02' structure (Nicastro et al., 2005), and cross-linking dynein motors, powered by ATP hydrolysis, perform mechanical work by promoting the relative sliding of filaments, resulting in bending deformations.\n\nAlthough eukaryotic flagella exhibit a diversity of forms and functions (Moran et al., 2014), two large families, \u2018flagellates\u2019 and \u2018ciliates\u2019, can be distinguished by the shape and beating pattern of their flagella. Flagellates typically have a small number of long flagella distributed along the bodies, and they actuate them to generate thrust. The set of observed movement sequences includes planar undulatory waves and traveling helical waves, either from the base to the tip, or in the opposite direction (Jahn and Votta, 1972; Brennen and Winet, 1977). Flagella attached to the same body might follow different beating patterns, leading to a complex locomotion strategy that often relies also on the resistance the cell body poses to the fluid. In contrast, propulsion of ciliates derives from the motion of a layer of densely-packed and collectively-moving cilia, which are short hair-like flagella covering their bodies. The seminal review paper of Brennen and Winet (1977) lists a few examples from both groups, highlighting their shape, beat form, geometric characteristics and swimming properties. Cilia may also be used for transport of the surrounding fluid, and their cooperativity can lead to directed flow generation. In higher organisms this can be crucial for internal transport processes, as in cytoplasmic streaming within plant cells (Allen and Allen, 1978), or the transport of ova from the ovary to the uterus in female mammals (Lyons et al., 2006).\n\nHere, we turn our attention to these two morphologically different groups of swimmers to explore the variability of their propulsion dynamics within broad taxonomic groups. To this end, we have collected swimming speed data from literature for flagellated eukaryotes and ciliates and analyze them separately (we do not include spermatozoa since they lack (ironically) the capability to reproduce and are thus not living organisms; their swimming characteristics have been studied by Tam and Hosoi, 2011). A careful examination of the statistical properties of the speed distributions for flagellates and ciliates shows that they are not only both captured by log-normal distributions but that, upon rescaling the data by a characteristic swimming speed for each data set, the speed distributions in both types of organisms are essentially identical.\n\n## Results and discussion\n\nWe have collected swimming data on 189 unicellular eukaryotic microorganisms ($N_{fl}=112$ flagellates and $N_{cil}=77$ ciliates) (see Appendix 1 and Source data 1). Figure 1 shows a tree encompassing the phyla of organisms studied and sketches of a representative organism from each phylum. A large morphological variation is clearly visible. In addition, we delineate the branches involving aquatic organisms and parasitic species living within hosts. Both groups include ciliates and flagellates.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/44907/elife-44907-fig1-v1.jpg)\n\n**Figure 1.:** Aquatic organisms (living in marine, brackish, or freshwater environments) have their branches drawn in blue while parasitic organisms have their branches drawn in red. Ciliates are indicated by an asterisk after their names. For each phylum marked in bold font, a representative organism has been sketched next to its name. Phylogenetic data from Hinchliff et al. (2015).\n\nDue to the morphological and size differences between ciliates and flagellates, we investigate separately the statistical properties of each. Figure 2 shows the two swimming speed histograms superimposed, based on the raw distributions shown in Figure 2\u2014figure supplement 1, where bin widths have been adjusted to their respective samples using the Freedman-Diaconis rule (see Materials and methods). Ciliates span a much larger range of speeds, up to 7 mm/s, whereas generally smaller flagellates remain in the sub-mm/s range. The inset shows that the number of flagella in both groups leads to a clear division. To compare the two groups further, we have also collected information on the characteristic sizes of swimmers from the available literature, which we list in Appendix 1. The average cell size differs fourfold between the populations (31 \u00b5m for flagellates and 132 \u00b5m for ciliates) and the distributions, plotted in Figure 2\u2014figure supplement 2, are biased towards the low-size end but they are quantitatively different. In order to explore the physical conditions, we used the data on sizes and speeds to compute the Reynolds number $Re=U\u2062L/\u03bd$ for each organism, where $\u03bd=\u03b7/\u03c1$ is the kinematic viscosity of water, with $\u03b7$ the viscosity and $\u03c1$ the density. Since almost no data was available for the viscosity of the fluid in swimming speed measurements, we assumed the standard value $\u03bd=10^{\u22126}m^{2}/s$ for water for all organisms. The distribution of Reynolds numbers (Figure 2\u2014figure supplement 3), shows that ciliates and flagellates operate in different ranges of $Re$, although for both groups $Re<1$, imposing on them the same limitations of inertia-less Stokes flow (Purcell, 1977; Lauga and Powers, 2009).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/44907/elife-44907-fig2-v1.jpg)\n\n**Figure 2.:** Data points represent the mean and standard deviation of the data in each bin; horizontal error bars represent variability within each bin, vertical error bars show the standard deviation of the count. Inset: number of flagella displayed, where available, for each organism exhibits a clear morphological division between ciliates and flagellates.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/44907/elife-44907-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Symbols have been randomly placed vertically to avoid overlap.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/44907/elife-44907-fig2-figsupp2-v1.jpg)\n\n**Figure 2\u2014figure supplement 2.:** Each histogram has been rescaled by the average cell size for each group.\u00a0Although both distributions exhibit a qualitatively similar shape biased toward the low limit, no quantitative similarity is found.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/44907/elife-44907-fig2-figsupp3-v1.jpg)\n\n**Figure 2\u2014figure supplement 3.:** Source data for the characteristic size $L$ and swimming speeds $U$ are listed in Appendix 1.\n\nFurthermore, studies of green algae (Short et al., 2006; Goldstein, 2015) show that an important distinction between the smaller, flagellated species and the largest multicellular ones involves the relative importance of advection and diffusion, as captured by the P\u00e9clet number $P\u2062e=U\u2062L/D$, where $L$ is a typical organism size and $D$ is the diffusion constant of a relevant molecular species. Using the average size $L$ of the cell body in each group of the present study ($L_{fl}=31\u00a0\\mum$, $L_{cil}=132\\mum$) and the median swimming speeds ($U_{fl}=127m/s$, $U_{cil}=784m/s$), and taking $D=10^{3}(\\mum)^{2}/s$, we find $P\u2062e_{fl}\u223c3.9$ and $P\u2062e_{cil}\u223c103$, which further justifies analyzing the groups separately; they live in different physical regimes.\n\nExamination of the mean, variance, kurtosis, and higher moments of the data sets suggest that the probabilities $P\u2062(U)$ of the swimming speed are well-described by log-normal distributions,\n\n$$\nP\u2062(U)=\\frac{1}{U\u2062\\sigma\u2062\\sqrt{2\u2062\\pi}}\u2062exp\u2061(-\\frac{(ln\u2061U-\\mu)^{2}}{2\u2062\\sigma^{2}}),\n$$\n\nnormalized as $\\int_{0}^{\u221e}\ud835\udc51U\u2062P\u2062(U)=1$, where $\\mu$ and $\\sigma$ are the mean and the standard deviation of $ln\u2061U$. The median $M$ of the distribution is $e^{\\mu}$, with units of speed. Log-normal distributions are widely observed across nature in areas such as ecology, physiology, geology and climate science, serving as an empirical model for complex processes shaping a system with many potentially interacting elements (Limpert et al., 2001), particularly when the underlying processes involve proportionate fluctuations or multiplicative noise (Koch, 1966).\n\nThe results of fitting (see Materials and methods) are plotted in Figure 3, where the best fits are presented as solid curves, with the shaded areas representing 95% confidence intervals. For flagellates, we find the $M_{fl}=127m/s$ and $\\sigma_{fl}=0.978$ while for ciliates, we obtain $M_{cil}=784m/s$ and $\\sigma_{cil}=0.936$. Log-normal distributions are known to emerge from an (imperfect) analogy to the Gaussian central limit theorem (see Materials and methods). Since the data are accurately described by this distribution, we conclude that the published literature includes a sufficiently large amount of unbiased data to be able to see the whole distribution.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/44907/elife-44907-fig3-v1.jpg)\n\n**Figure 3.:** Data points represent uncertainties as in Figure 2. Despite the markedly different scales of the distributions, they have similar shapes.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/44907/elife-44907-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** The algebraic moments $\u2133_{n}$ are defined in Equation (4). Error bars representing 95% confidence intervals for fitted parameters, are obscured by markers.\n\nWe next compare the statistical variability within groups by examining rescaled distributions (Goldstein, 2018). As each has a characteristic speed $M$, we align the peaks by plotting the distributions versus the variable $U/M$ for each group. Since $P$ has units of 1/speed, we are thus led to the form $P\u2062(U,M)=M^{-1}\u2062F\u2062(U/M)$ for some function $F$. For the log-normal distribution, with $M$ the median, we find\n\n$$\nF(\u03be)=\\frac{1}{\u03be\\sigma\\sqrt{2\\pi}}exp\u2061(\u2212\\frac{ln^{2}\u2061\u03be}{2\\sigma^{2}}),\n$$\n\nwhich now depends on the single parameter $\\sigma$ and has a median of unity by construction. To study the similarity of the two distributions we plot the functions $F=M\u2062P\u2062(U/M)$ for each. As seen in Figure 4, the rescaled distributions are essentially indistinguishable, and this can be traced back to the near identical values of the variances $\\sigma$, which are within 5% of each other. The fitting uncertainties shown shaded in Figure 4 suggest a very similar range of variability of the fitted distributions. Furthermore, both the integrated absolute difference between the distributions (0.028) and the Kullback-Leibler divergence (0.0016) are very small (see Materials and methods), demonstrating the close similarity of the two distributions. This similarity is robust to the choice of characteristic speed, as shown in Figure 4\u2014figure supplement 1, where the arithmetic mean $U^{*}$ is used in place of the median.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/44907/elife-44907-fig4-v1.jpg)\n\n**Figure 4.:** Shown are the two fitted log-normal curves for flagellates and ciliates, each multiplied by the distribution median $M$, plotted versus speed normalized by $M$. The distributions for show remarkable similarity and uncertainty of estimation.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/44907/elife-44907-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Data collapse as in the main figure, but using the mean speeds $U^{*}$ instead of the median $M$.A similar quality of data collapse is seen.\n\nIn living cells, the sources for intrinsic variability within organisms are well characterized on the molecular and cellular level (Kirkwood et al., 2005) but less is known about variability within taxonomic groups. By dividing unicellular eukaryotes into two major groups on the basis of their difference in morphology, size and swimming strategy, we were able to capture in this paper the log-normal variability within each subset. Using a statistical analysis of the distributions as functions of the median swimming speed for each population we further found an almost identical distribution of swimming speeds for both types of organisms. Our results suggest that the observed log-normal randomness captures a universal way for ecological niches to be populated by abundant microorganisms with similar propulsion characteristics. We note, however, that the distributions of swimming speeds among species do not necessarily reflect the distributions of swimming speeds among individuals, for which we have no available data.\n\n## Materials and methods\n\n### Data collection\n\nData for ciliates were sourced from 26 research articles, while that for flagellates were extracted from 48 papers (see Appendix 1). Notably, swimming speeds reported in the various studies have been measured under different physiological and environmental conditions, including temperature, viscosity, salinity, oxygenation, pH and light. Therefore we consider the data not as representative of a uniform environment, but instead as arising from a random sampling of a wide range of environmental conditions. In cases where no explicit figure was given for $U$ in a paper, estimates were made using other available data where possible. Size of swimmers has also been included as a characteristic length for each organism. This, however, does not reflect the spread and diversity of sizes within populations of individual but is rather an indication of a typical size, as in the considered studies these data were not available. Information on anisotropy (different width/length) is also not included.\n\nNo explicit criteria were imposed for the inclusion in the analyses, apart from the biological classification (i.e. whether the organisms were unicellular eukaryotic ciliates/flagellates). We have used all the data found in literature for these organisms over the course of an extensive search. Since no selection was made, we believe that the observed statistical properties are representative for these groups.\n\n### Data processing and fitting the log-normal distribution\n\nBin widths in histograms in Figure 2 and Figure 3 have been chosen separately for ciliates and flagellated eukaryotes according to the Freedman-Diaconis rule (Freedman and Diaconis, 1981) taking into account the respective sample sizes and the spread of distributions. The bin width $b$ is then given by the number of observations $N$ and the interquartile range of the data $IQR$ as\n\n$$\nb=2\u2062\\frac{IQR}{N^{1/3}}.\n$$\n\nWithin each bin in Figure 3, we calculate the mean and the standard deviation for the binned data, which constitute the horizontal error bars. The vertical error bars reflect the uncertainty in the number of counts $N_{j}$ in bin $j$. This is estimated to be Poissonian, and thus the absolute error amounts to $\\sqrt{N_{j}}$. Notably, the relative error decays with the number of counts as $1/\\sqrt{N_{j}}$.\n\nIn fitting the data, we employ the log-normal distribution Equation (1). In general, from from data comprising $N$ measurements, labelled $x_{i}$ ($i=1,\u2026,N$), the $n$-th arithmetic moment $\u2133_{n}$ is the expectation $\ud835\udd3c\u2062(X^{n})$, or\n\n$$\n\u2133_{n}=\\frac{1}{N}\u2062\\sumi=1Nx_{i}^{n}\n$$\n\nMedians of the data were found by sorting the list of values and picking the middlemost value. For a log-normal distribution, the arithmetic moments are given solely by $\\mu$ and $\\sigma$ of the associated normal distribution as\n\n$$\n\u2133_{n}=M^{n}\u2062\u03a3^{n^{2}},\n$$\n\nwhere we have defined $M=exp\u2061(\\mu)$ and $\u03a3=exp\u2061(\\sigma^{2}/2)$, and note that $M$ is the median of the distribution. Thus, the mean is $M\u2062\u03a3$ and the variance is $M^{2}\u2062\u03a3^{2}\u2062(\u03a3^{2}-1)$. From the first and second moments, we estimate\n\n$$\n\\mu=ln\u2061(\\frac{\u2133_{1}^{2}}{\\sqrt{\u2133_{2}}}) and \\sigma^{2}=ln\u2061(\\frac{\u2133_{2}}{\u2133_{1}^{2}}).\n$$\n\nHaving estimated $\\mu$ and $\\sigma$, we can compute the higher order moments from Equation (5) and compare to those calculated directly from the data, as shown in Figure 3\u2014figure supplement 1.\n\nTo fit the data, we have used both the MATLAB fitting routines and the Python scipy.stats module. From these fits we estimated the shape and scale parameters and the 95% confidence intervals in Figure 3 and Figure 4. We emphasize that the fitting procedures use the raw data via the maximum likelihood estimation method, and not the processed histograms, hence the estimated parameters are insensitive to the binning procedure.\n\nFor rescaled distributions, the average velocity for each group of organisms was calculated as $U^{\u2217}=\\frac{1}{N_{i}}\u2062\\sum_{i=1}^{N_{i}}U_{i}$, with $i\\in{cil,fl}$. Then, data in each subset have been rescaled by the area under the fitted curve to ensure that the resulting probability density functions $p_{i}$ are normalized as\n\n$$\n\\int_{0}^{\u221e}p_{i}\u2062(x)\u2062dx=1.\n$$\n\nIn characterizations of biological or ecological diversity, it is often assumed that the examined variables are Gaussian, and thus the distribution of many uncorrelated variables attains the normal distribution by virtue of the Central Limit Theorem (CLT). In the case when random variables in question are positive and have a log-normal distribution, no analogous explicit analytic result is available. Despite that, there is general agreement that a sum of independent log-normal random variables can be well approximated by another log-normal random variable. It has been proven by Szyszkowicz and Yanikome (2009) that the sum of identically distributed equally and positively correlated joint log-normal distributions converges to a log-normal distribution of known characteristics but for uncorrelated variables only estimations are available (Beaulieu et al., 1995). We use these results to conclude that our distributions contain enough data to be unbiased and seen in full.\n\n### Comparisons of distributions\n\nIn order to quantify the differences between the fitted distributions, we define the integrated absolute difference $\u0394$ between two probability distributions $p\u2062(x)$ and $q\u2062(x)$ ($x>0$) as\n\n$$\n\u0394=\\int_{0}^{\u221e}|p\u2062(x)-q\u2062(x)|\u2062dx.\n$$\n\nAs the probability distributions are normalized, this is a measure of their relative \u2019distance\u2019. As a second measure, we use the Kullback-Leibler divergence (Kullback and Leibler, 1951),\n\n$$\nD\u2062(p,q)=\\int_{0}^{\u221e}p\u2062(x)\u2062ln\u2061(\\frac{p\u2062(x)}{q\u2062(x)})\u2062dx.\n$$\n\nNote that $D\u2062(p,q)\\neqD\u2062(q,p)$ and therefore $D$ is not a distance metric in the space of probability distributions.\n",
+      "created_at": "2025-12-02T11:11:33.976870Z"
+    },
+    {
+      "id": "e916fcd6-e5e2-4221-81ed-e74f8e47b722",
+      "submission_id": "4c3561ab-e837-46b2-a2e3-fb1602524754",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Arup K Chakraborty, Massachusetts Institute of Technology United States\n\nReviewers:\n- Matthew Herron, Georgia Tech United States\n\n## Review text\n\nDOI: [10.7554/eLife.44907.016](https://doi.org/10.7554/eLife.44907.016)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Swimming eukaryotic microorganisms exhibit a universal speed distribution\" for consideration by eLife. Your article has been reviewed by two peer reviewers, and the evaluation has been overseen by Arup Chakraborty as the Senior and Reviewing Editor. The following individual involved in review of your submission has agreed to reveal his identity: Matthew Herron (Reviewer #1).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThis study analyzes published data on swimming speed among flagellated and ciliated microorganisms. Data from both groups fit similar, but separate, log normal distributions, leading the authors to infer a \"universal way for ecological niches to be populated by abundant microorganisms.\" This short report is well-written, well-sourced, and has sufficient detail provided by the authors to replicate the findings. This methodology has the potential to enrich parallel genetics-based studies and provide deeper insights into the connections between ecology and evolution. However, we feel that the main claims of the paper need to be toned down or further substantiated in a revised submission.\n\nEssential revisions:\n\n1) The ecological implication of the results, expressed in the Abstract and at the end of the Discussion, concern how ecological niches are partitioned by microorganisms. The limitation of the analyzed data is that it is per species, and all species are treated equally, with no information about abundance. It is undoubtedly an important result that aquatic ecosystems contain many species that swim slowly and far fewer that swim quickly, at least within each category. However, without information about abundances, this result says very little about the distribution of swimming speeds within a given ecosystem; that is, the data are equally compatible with slow swimmers being rare (but diverse) and fast swimmers being common (but homogenous) or the opposite. So, the distribution of swimming speeds among all individuals is unclear. Similarly, flagellates could be common and ciliates rare or vice versa. The point that the distributions of swimming speeds among species do not necessarily reflect the distributions of swimming speeds among individuals needs to be addressed.\n\n2) Can universality really be claimed with a set of just two distributions? Figures 2, 3, and 4 well-illustrate the authors' point, but comprise fitting and rescaling of just these two sets of data. The demonstration in Figure 4 that two log-normal distributions may be collapsed onto one another is not too surprising. It seems with such a data set on hand, there is much potential to explore a variety of questions that can enrich or explain the authors conclusions. In particular, addressing a few of the following points will enhance the paper:\n\n\u2022 Did the authors examine any other distributions, such as cell size?\n\n\u2022 Did the authors attempt a physical rescaling of the distributions, e.g. in terms of the Reynolds or Peclet numbers?\n\n\u2022 Is there sufficient resolution in the data set (i.e. number of samples) to explore/compare subsets of the data such as uniflagellates versus multiflagellates and ciliates?\n\n\u2022 Similar to the above comment, examining the swimming speed distributions of other taxonomic groups from the data set \u2013 i.e. corresponding to an early bifurcation in Figure 1 \u2013 may provide additional insights and strengthen the authors' argument for universality in the swimming speed distribution.\n\n\u2022 While perhaps outside of the scope of the present short report, the potential implications of the authors' observation abound for other organismal systems. Did they consider examining other dataset, e.g. for higher organisms as in Gazzola et al., Nature Physics 10 (2014)?\n",
+      "created_at": "2025-12-02T11:11:33.976870Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T11:11:33.976870Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T11:11:33.976870Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "879628cd-27ae-451b-bc6f-9dd4648657d4",
+      "content_id": "31a466d5-28c6-492f-b987-71c3798611d9",
+      "claim_id": "C2",
+      "claim": "Ciliates span a much larger range of speeds than flagellates, up to 7 mm/s.",
+      "claim_type": "EXPLICIT",
+      "source": "Ciliates span a much larger range of speeds, up to 7 mm/s, whereas generally smaller flagellates remain in the sub-mm/s range.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript directly states the speed ranges observed in the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:11:33.976870Z"
+    },
+    {
+      "id": "f5523570-4f7e-4029-a4ec-e5e851f11e3e",
+      "content_id": "31a466d5-28c6-492f-b987-71c3798611d9",
+      "claim_id": "C3",
+      "claim": "Flagellates generally remain in the sub-mm/s speed range.",
+      "claim_type": "EXPLICIT",
+      "source": "Ciliates span a much larger range of speeds, up to 7 mm/s, whereas generally smaller flagellates remain in the sub-mm/s range.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript directly states the speed ranges observed in the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:11:33.976870Z"
+    },
+    {
+      "id": "9c58e72a-552c-4603-be7a-a074e88ad387",
+      "content_id": "31a466d5-28c6-492f-b987-71c3798611d9",
+      "claim_id": "C4",
+      "claim": "The average cell size differs fourfold between flagellates and ciliates (31 \u00b5m for flagellates and 132 \u00b5m for ciliates).",
+      "claim_type": "EXPLICIT",
+      "source": "The average cell size differs fourfold between the populations (31 \u00b5m for flagellates and 132 \u00b5m for ciliates) and the distributions, plotted in Figure 2\u2014figure supplement 2, are biased towards the low-size end but they are quantitatively different.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides specific measurements of average cell sizes from collected data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:11:33.976870Z"
+    },
+    {
+      "id": "4df9aa76-783e-4124-9f08-10492fb57407",
+      "content_id": "31a466d5-28c6-492f-b987-71c3798611d9",
+      "claim_id": "C14",
+      "claim": "Log-normal distributions are widely observed across nature in areas such as ecology, physiology, geology and climate science.",
+      "claim_type": "EXPLICIT",
+      "source": "Log-normal distributions are widely observed across nature in areas such as ecology, physiology, geology and climate science, serving as an empirical model for complex processes shaping a system with many potentially interacting elements (Limpert et al., 2001), particularly when the underlying processes involve proportionate fluctuations or multiplicative noise (Koch, 1966).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites literature to support this general statement about log-normal distributions.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:11:33.976870Z"
+    },
+    {
+      "id": "9a8b4c37-751b-47db-a7e6-936bbe372d48",
+      "content_id": "31a466d5-28c6-492f-b987-71c3798611d9",
+      "claim_id": "C15",
+      "claim": "Log-normal distributions serve as an empirical model for complex processes with many potentially interacting elements.",
+      "claim_type": "EXPLICIT",
+      "source": "Log-normal distributions are widely observed across nature in areas such as ecology, physiology, geology and climate science, serving as an empirical model for complex processes shaping a system with many potentially interacting elements (Limpert et al., 2001), particularly when the underlying processes involve proportionate fluctuations or multiplicative noise (Koch, 1966).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites literature to support this characterization of log-normal distributions.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:11:33.976870Z"
+    },
+    {
+      "id": "2f7f6d5d-638a-4244-bb1f-368908c840af",
+      "content_id": "31a466d5-28c6-492f-b987-71c3798611d9",
+      "claim_id": "C16",
+      "claim": "Log-normal distributions particularly emerge when underlying processes involve proportionate fluctuations or multiplicative noise.",
+      "claim_type": "EXPLICIT",
+      "source": "Log-normal distributions are widely observed across nature in areas such as ecology, physiology, geology and climate science, serving as an empirical model for complex processes shaping a system with many potentially interacting elements (Limpert et al., 2001), particularly when the underlying processes involve proportionate fluctuations or multiplicative noise (Koch, 1966).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites literature to support this mechanism for log-normal distributions.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:11:33.976870Z"
+    },
+    {
+      "id": "5093487d-c081-4cf8-ae01-036302ec4f36",
+      "content_id": "31a466d5-28c6-492f-b987-71c3798611d9",
+      "claim_id": "C17",
+      "claim": "The published literature includes a sufficiently large amount of unbiased data to see the whole distribution.",
+      "claim_type": "EXPLICIT",
+      "source": "Since the data are accurately described by this distribution, we conclude that the published literature includes a sufficiently large amount of unbiased data to be able to see the whole distribution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript infers this from the quality of fit to the log-normal distribution.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:11:33.976870Z"
+    },
+    {
+      "id": "2f304a22-fc15-453a-b636-afb90baf2b6b",
+      "content_id": "31a466d5-28c6-492f-b987-71c3798611d9",
+      "claim_id": "C20",
+      "claim": "The integrated absolute difference between the flagellate and ciliate distributions is 0.028.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, both the integrated absolute difference between the distributions (0.028) and the Kullback-Leibler divergence (0.0016) are very small (see Materials and methods), demonstrating the close similarity of the two distributions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides this calculated metric to quantify distribution similarity.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:11:33.976870Z"
+    },
+    {
+      "id": "40c2ac16-5ac3-409b-b1d1-c7385fab4e76",
+      "content_id": "31a466d5-28c6-492f-b987-71c3798611d9",
+      "claim_id": "C21",
+      "claim": "The Kullback-Leibler divergence between the flagellate and ciliate distributions is 0.0016.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, both the integrated absolute difference between the distributions (0.028) and the Kullback-Leibler divergence (0.0016) are very small (see Materials and methods), demonstrating the close similarity of the two distributions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides this calculated metric to quantify distribution similarity.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:11:33.976870Z"
+    },
+    {
+      "id": "8e4c9f32-5a38-49b3-9bfa-1fce27a76cd6",
+      "content_id": "31a466d5-28c6-492f-b987-71c3798611d9",
+      "claim_id": "C23",
+      "claim": "Data for ciliates were sourced from 26 research articles.",
+      "claim_type": "EXPLICIT",
+      "source": "Data for ciliates were sourced from 26 research articles, while that for flagellates were extracted from 48 papers (see Appendix 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states the number of source articles.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:11:33.976870Z"
+    },
+    {
+      "id": "9942cd0b-83e7-43cb-9b22-b9d78c75f0db",
+      "content_id": "31a466d5-28c6-492f-b987-71c3798611d9",
+      "claim_id": "C24",
+      "claim": "Data for flagellates were extracted from 48 papers.",
+      "claim_type": "EXPLICIT",
+      "source": "Data for ciliates were sourced from 26 research articles, while that for flagellates were extracted from 48 papers (see Appendix 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states the number of source articles.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:11:33.976870Z"
+    },
+    {
+      "id": "e2b234a3-91cf-42cd-856c-bb84d6616e7f",
+      "content_id": "31a466d5-28c6-492f-b987-71c3798611d9",
+      "claim_id": "C25",
+      "claim": "Swimming speeds reported in various studies have been measured under different physiological and environmental conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, swimming speeds reported in the various studies have been measured under different physiological and environmental conditions, including temperature, viscosity, salinity, oxygenation, pH and light.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript acknowledges the variability in measurement conditions across the literature.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:11:33.976870Z"
+    },
+    {
+      "id": "dfea33d1-8790-49dc-a681-0cd8e813dd8a",
+      "content_id": "31a466d5-28c6-492f-b987-71c3798611d9",
+      "claim_id": "C26",
+      "claim": "The data are considered as arising from a random sampling of a wide range of environmental conditions rather than representing a uniform environment.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore we consider the data not as representative of a uniform environment, but instead as arising from a random sampling of a wide range of environmental conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states this interpretation of the data collection.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:11:33.976870Z"
+    },
+    {
+      "id": "6800805a-3f87-41f8-a265-8d8153f18278",
+      "content_id": "31a466d5-28c6-492f-b987-71c3798611d9",
+      "claim_id": "C27",
+      "claim": "Unicellular eukaryotes comprise a vast, diverse group of organisms that covers virtually all environments and habitats.",
+      "claim_type": "EXPLICIT",
+      "source": "Unicellular eukaryotes comprise a vast, diverse group of organisms that covers virtually all environments and habitats, displaying a menagerie of shapes and forms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states this as general knowledge about unicellular eukaryotes.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:11:33.976870Z"
+    },
+    {
+      "id": "5e8fa310-a045-4089-a65b-e6d89bc2a4f4",
+      "content_id": "31a466d5-28c6-492f-b987-71c3798611d9",
+      "claim_id": "C28",
+      "claim": "Hundreds of species of the ciliate genus Paramecium are found in marine, brackish, and freshwater reservoirs.",
+      "claim_type": "EXPLICIT",
+      "source": "Hundreds of species of the ciliate genus Paramecium (Wichterman, 1986) or flagellated Euglena (Buetow, 2011) are found in marine, brackish, and freshwater reservoirs",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites literature to support this statement about Paramecium distribution.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:11:33.976870Z"
+    },
+    {
+      "id": "2df75fb8-a0f0-401f-bd23-b47543184683",
+      "content_id": "31a466d5-28c6-492f-b987-71c3798611d9",
+      "claim_id": "C29",
+      "claim": "The green algae Chlamydomonas is distributed in soil and fresh water world-wide.",
+      "claim_type": "EXPLICIT",
+      "source": "the green algae Chlamydomonas is distributed in soil and fresh water world-wide (Harris et al., 2009)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites literature to support this statement about Chlamydomonas distribution.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:11:33.976870Z"
+    },
+    {
+      "id": "bb692a63-d524-40c3-bc52-617404d63410",
+      "content_id": "31a466d5-28c6-492f-b987-71c3798611d9",
+      "claim_id": "C30",
+      "claim": "Parasites from the genus Giardia colonize intestines of several vertebrates.",
+      "claim_type": "EXPLICIT",
+      "source": "parasites from the genus Giardia colonize intestines of several vertebrates (Adam, 2001)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites literature to support this statement about Giardia.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:11:33.976870Z"
+    },
+    {
+      "id": "de105c8a-537f-4e52-86a6-6a4049c28d14",
+      "content_id": "31a466d5-28c6-492f-b987-71c3798611d9",
+      "claim_id": "C31",
+      "claim": "Motility is crucial for nutrient acquisition and avoidance of danger in unicellular eukaryotes.",
+      "claim_type": "EXPLICIT",
+      "source": "One of the shared features of these organisms is their motility, crucial for nutrient acquisition and avoidance of danger (Bray, 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites literature to support this functional role of motility.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:11:33.976870Z"
+    },
+    {
+      "id": "36389fc6-13d1-46f5-9bb2-48d176f5ca9d",
+      "content_id": "31a466d5-28c6-492f-b987-71c3798611d9",
+      "claim_id": "C32",
+      "claim": "Single-celled organisms have developed in a variety of directions in the process of evolution, resulting in a large spectrum of swimming modes.",
+      "claim_type": "EXPLICIT",
+      "source": "In the process of evolution, single-celled organisms have developed in a variety of directions, and thus their rich morphology results in a large spectrum of swimming modes (Cappuccinelli, 1980).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites literature to support this evolutionary perspective.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:11:33.976870Z"
+    },
+    {
+      "id": "0589693c-330c-44d4-b67f-2308f83f775f",
+      "content_id": "31a466d5-28c6-492f-b987-71c3798611d9",
+      "claim_id": "C33",
+      "claim": "Many swimming eukaryotes actuate tail-like appendages called flagella or cilia to generate thrust.",
+      "claim_type": "EXPLICIT",
+      "source": "Many swimming eukaryotes actuate tail-like appendages called flagella or cilia in order to generate the required thrust (Sleigh, 1975).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites literature to support this description of propulsion mechanisms.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:11:33.976870Z"
+    },
+    {
+      "id": "63c7ce99-1cfe-4a08-9331-5969c122412d",
+      "content_id": "31a466d5-28c6-492f-b987-71c3798611d9",
+      "claim_id": "C34",
+      "claim": "Thrust is achieved by actively generating deformations along the flagellum, giving rise to a complex waveform.",
+      "claim_type": "EXPLICIT",
+      "source": "This is achieved by actively generating deformations along the flagellum, giving rise to a complex waveform.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes this mechanism based on established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:11:33.976870Z"
+    },
+    {
+      "id": "72b9fdc7-d2a4-49b4-b3f4-c970a183dee8",
+      "content_id": "31a466d5-28c6-492f-b987-71c3798611d9",
+      "claim_id": "C35",
+      "claim": "The flagellar axoneme is a bundle of nine pairs of microtubule doublets surrounding two central microtubules, termed the '9 + 2' structure.",
+      "claim_type": "EXPLICIT",
+      "source": "The flagellar axoneme itself is a bundle of nine pairs of microtubule doublets surrounding two central microtubules, termed the '9 + 2' structure (Nicastro et al., 2005), and cross-linking dynein motors, powered by ATP hydrolysis, perform mechanical work by promoting the relative sliding of filaments, resulting in bending deformations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites literature to support this structural description.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:11:33.976870Z"
+    },
+    {
+      "id": "87c40790-dde5-487c-bc58-88f3a70dafb8",
+      "content_id": "31a466d5-28c6-492f-b987-71c3798611d9",
+      "claim_id": "C36",
+      "claim": "Cross-linking dynein motors, powered by ATP hydrolysis, perform mechanical work by promoting the relative sliding of filaments, resulting in bending deformations.",
+      "claim_type": "EXPLICIT",
+      "source": "The flagellar axoneme itself is a bundle of nine pairs of microtubule doublets surrounding two central microtubules, termed the '9 + 2' structure (Nicastro et al., 2005), and cross-linking dynein motors, powered by ATP hydrolysis, perform mechanical work by promoting the relative sliding of filaments, resulting in bending deformations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites literature to support this mechanistic description.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:11:33.976870Z"
+    },
+    {
+      "id": "c5862ade-bea0-4734-b920-17bcda73db9e",
+      "content_id": "31a466d5-28c6-492f-b987-71c3798611d9",
+      "claim_id": "C37",
+      "claim": "Eukaryotic flagella exhibit a diversity of forms and functions.",
+      "claim_type": "EXPLICIT",
+      "source": "Although eukaryotic flagella exhibit a diversity of forms and functions (Moran et al., 2014), two large families, 'flagellates' and 'ciliates', can be distinguished by the shape and beating pattern of their flagella.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites literature to support this statement about flagellar diversity.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:11:33.976870Z"
+    },
+    {
+      "id": "68d48f07-4cb1-49d4-9e3b-12c6cdf223f1",
+      "content_id": "31a466d5-28c6-492f-b987-71c3798611d9",
+      "claim_id": "C38",
+      "claim": "Two large families, 'flagellates' and 'ciliates', can be distinguished by the shape and beating pattern of their flagella.",
+      "claim_type": "EXPLICIT",
+      "source": "Although eukaryotic flagella exhibit a diversity of forms and functions (Moran et al., 2014), two large families, 'flagellates' and 'ciliates', can be distinguished by the shape and beating pattern of their flagella.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states this as a basis for the study's classification scheme.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:11:33.976870Z"
+    },
+    {
+      "id": "c8fd06f8-d12e-4a31-ab04-b96cc20a17bb",
+      "content_id": "31a466d5-28c6-492f-b987-71c3798611d9",
+      "claim_id": "C39",
+      "claim": "Flagellates typically have a small number of long flagella distributed along the bodies.",
+      "claim_type": "EXPLICIT",
+      "source": "Flagellates typically have a small number of long flagella distributed along the bodies, and they actuate them to generate thrust.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes this morphological characteristic based on established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:11:33.976870Z"
+    },
+    {
+      "id": "661ad310-06fc-4d00-820b-e9e80157e4ad",
+      "content_id": "31a466d5-28c6-492f-b987-71c3798611d9",
+      "claim_id": "C40",
+      "claim": "The set of observed movement sequences in flagellates includes planar undulatory waves and traveling helical waves.",
+      "claim_type": "EXPLICIT",
+      "source": "The set of observed movement sequences includes planar undulatory waves and traveling helical waves, either from the base to the tip, or in the opposite direction (Jahn and Votta, 1972; Brennen and Winet, 1977).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites literature to support this description of flagellar motion patterns.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:11:33.976870Z"
+    },
+    {
+      "id": "8d740e50-4eba-4608-aba4-8bfdf328e427",
+      "content_id": "31a466d5-28c6-492f-b987-71c3798611d9",
+      "claim_id": "C41",
+      "claim": "Propulsion of ciliates derives from the motion of a layer of densely-packed and collectively-moving cilia.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, propulsion of ciliates derives from the motion of a layer of densely-packed and collectively-moving cilia, which are short hair-like flagella covering their bodies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes this propulsion mechanism based on established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:11:33.976870Z"
+    },
+    {
+      "id": "64451425-79c3-4992-b49e-cb0d780bc387",
+      "content_id": "31a466d5-28c6-492f-b987-71c3798611d9",
+      "claim_id": "C42",
+      "claim": "Cilia are short hair-like flagella covering ciliate bodies.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, propulsion of ciliates derives from the motion of a layer of densely-packed and collectively-moving cilia, which are short hair-like flagella covering their bodies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides this definition based on established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:11:33.976870Z"
+    },
+    {
+      "id": "3cbeed31-2bc2-475d-a23c-7e54e1f42ead",
+      "content_id": "31a466d5-28c6-492f-b987-71c3798611d9",
+      "claim_id": "C43",
+      "claim": "Cilia may be used for transport of the surrounding fluid.",
+      "claim_type": "EXPLICIT",
+      "source": "Cilia may also be used for transport of the surrounding fluid, and their cooperativity can lead to directed flow generation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states this as an additional function of cilia based on established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:11:33.976870Z"
+    },
+    {
+      "id": "0052b651-37ad-46e9-bb0b-45f6a7545228",
+      "content_id": "31a466d5-28c6-492f-b987-71c3798611d9",
+      "claim_id": "C44",
+      "claim": "Ciliary cooperativity can lead to directed flow generation.",
+      "claim_type": "EXPLICIT",
+      "source": "Cilia may also be used for transport of the surrounding fluid, and their cooperativity can lead to directed flow generation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states this as a consequence of ciliary motion based on established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:11:33.976870Z"
+    },
+    {
+      "id": "758551bf-eaa4-4750-a79c-60885eebcccb",
+      "content_id": "31a466d5-28c6-492f-b987-71c3798611d9",
+      "claim_id": "C45",
+      "claim": "In higher organisms, ciliary flow generation can be crucial for internal transport processes, as in cytoplasmic streaming within plant cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In higher organisms this can be crucial for internal transport processes, as in cytoplasmic streaming within plant cells (Allen and Allen, 1978), or the transport of ova from the ovary to the uterus in female mammals (Lyons et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites literature to support this example of ciliary function.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:11:33.976870Z"
+    },
+    {
+      "id": "cf82f24e-31b9-40da-9ddd-42bfee656a9f",
+      "content_id": "31a466d5-28c6-492f-b987-71c3798611d9",
+      "claim_id": "C46",
+      "claim": "Cilia are crucial for the transport of ova from the ovary to the uterus in female mammals.",
+      "claim_type": "EXPLICIT",
+      "source": "In higher organisms this can be crucial for internal transport processes, as in cytoplasmic streaming within plant cells (Allen and Allen, 1978), or the transport of ova from the ovary to the uterus in female mammals (Lyons et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites literature to support this example of ciliary function.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:11:33.976870Z"
+    },
+    {
+      "id": "26acf2da-0afe-4593-9e79-0473dc808621",
+      "content_id": "31a466d5-28c6-492f-b987-71c3798611d9",
+      "claim_id": "C47",
+      "claim": "Spermatozoa were not included in the study because they lack the capability to reproduce and are thus not living organisms.",
+      "claim_type": "EXPLICIT",
+      "source": "we do not include spermatozoa since they lack (ironically) the capability to reproduce and are thus not living organisms; their swimming characteristics have been studied by Tam and Hosoi, 2011",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states the rationale for excluding spermatozoa.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:11:33.976870Z"
+    },
+    {
+      "id": "a404c1cb-f20e-4896-863c-d7517b66e873",
+      "content_id": "31a466d5-28c6-492f-b987-71c3798611d9",
+      "claim_id": "C48",
+      "claim": "The number of flagella in ciliates and flagellates leads to a clear morphological division between the two groups.",
+      "claim_type": "EXPLICIT",
+      "source": "The inset shows that the number of flagella in both groups leads to a clear division.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript states this based on data shown in the figure inset.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:11:33.976870Z"
+    },
+    {
+      "id": "e5f6aa54-1421-4c4f-9e8f-4dd39e54327d",
+      "content_id": "31a466d5-28c6-492f-b987-71c3798611d9",
+      "claim_id": "C51",
+      "claim": "The observed log-normal randomness captures a universal way for ecological niches to be populated by abundant microorganisms with similar propulsion characteristics.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results suggest that the observed log-normal randomness captures a universal way for ecological niches to be populated by abundant microorganisms with similar propulsion characteristics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript proposes this interpretation based on the statistical findings.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:11:33.976870Z"
+    },
+    {
+      "id": "be8d41c4-8b9f-405f-ab33-117cfa0c1f05",
+      "content_id": "31a466d5-28c6-492f-b987-71c3798611d9",
+      "claim_id": "C52",
+      "claim": "The distributions of swimming speeds among species do not necessarily reflect the distributions of swimming speeds among individuals.",
+      "claim_type": "EXPLICIT",
+      "source": "We note, however, that the distributions of swimming speeds among species do not necessarily reflect the distributions of swimming speeds among individuals, for which we have no available data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly acknowledges this limitation of the study.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:11:33.976870Z"
+    },
+    {
+      "id": "92083a83-180e-4088-bc29-41e5850b16c9",
+      "content_id": "31a466d5-28c6-492f-b987-71c3798611d9",
+      "claim_id": "C53",
+      "claim": "Bin widths in histograms were chosen according to the Freedman-Diaconis rule.",
+      "claim_type": "EXPLICIT",
+      "source": "Bin widths in histograms in Figure 2 and Figure 3 have been chosen separately for ciliates and flagellated eukaryotes according to the Freedman-Diaconis rule (Freedman and Diaconis, 1981) taking into account the respective sample sizes and the spread of distributions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly describes the methodology used for data visualization.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:11:33.976870Z"
+    },
+    {
+      "id": "348a40a0-6b65-4bd6-aedd-0e9ba46f647b",
+      "content_id": "31a466d5-28c6-492f-b987-71c3798611d9",
+      "claim_id": "C55",
+      "claim": "The fitting procedures use the raw data via the maximum likelihood estimation method, not the processed histograms.",
+      "claim_type": "EXPLICIT",
+      "source": "We emphasize that the fitting procedures use the raw data via the maximum likelihood estimation method, and not the processed histograms, hence the estimated parameters are insensitive to the binning procedure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly describes the fitting methodology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:11:33.976870Z"
+    },
+    {
+      "id": "b2579f93-6f33-4a1d-bc83-2e5603a4562d",
+      "content_id": "31a466d5-28c6-492f-b987-71c3798611d9",
+      "claim_id": "C56",
+      "claim": "A sum of independent log-normal random variables can be well approximated by another log-normal random variable.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite that, there is general agreement that a sum of independent log-normal random variables can be well approximated by another log-normal random variable.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states this as established statistical knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:11:33.976870Z"
+    },
+    {
+      "id": "661e1a58-e9ab-4bef-8fe7-89da9492a8ad",
+      "content_id": "31a466d5-28c6-492f-b987-71c3798611d9",
+      "claim_id": "C57",
+      "claim": "The sum of identically distributed equally and positively correlated joint log-normal distributions converges to a log-normal distribution of known characteristics.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been proven by Szyszkowicz and Yanikome (2009) that the sum of identically distributed equally and positively correlated joint log-normal distributions converges to a log-normal distribution of known characteristics but for uncorrelated variables only estimations are available (Beaulieu et al., 1995).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites literature to support this mathematical result.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:11:33.976870Z"
+    },
+    {
+      "id": "f9f6bc67-be08-4044-ae4b-0d1636f071fb",
+      "content_id": "31a466d5-28c6-492f-b987-71c3798611d9",
+      "claim_id": "C58",
+      "claim": "The distributions contain enough data to be unbiased and seen in full.",
+      "claim_type": "EXPLICIT",
+      "source": "We use these results to conclude that our distributions contain enough data to be unbiased and seen in full.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript infers this from the statistical properties and cited mathematical results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:11:33.976870Z"
+    },
+    {
+      "id": "927d104c-b303-443e-8d47-b961cce76ab1",
+      "content_id": "31a466d5-28c6-492f-b987-71c3798611d9",
+      "claim_id": "C59",
+      "claim": "The probability distributions of swimming speed for flagellates and ciliates are accurately represented by log-normal distributions.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite the morphological and size differences between these groups, each of the two probability distributions of swimming speed are accurately represented by log-normal distributions, with good agreement holding even to fourth moments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract states this as a main finding based on statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:11:33.976870Z"
+    },
+    {
+      "id": "206325e8-7093-4646-917c-c83ebdbde2fa",
+      "content_id": "31a466d5-28c6-492f-b987-71c3798611d9",
+      "claim_id": "C60",
+      "claim": "Good agreement with log-normal distributions holds even to fourth moments.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite the morphological and size differences between these groups, each of the two probability distributions of swimming speed are accurately represented by log-normal distributions, with good agreement holding even to fourth moments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract states this as evidence for the quality of the log-normal fit.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:11:33.976870Z"
+    },
+    {
+      "id": "fbae2a3e-218e-4591-84c3-db57b9c2e61d",
+      "content_id": "31a466d5-28c6-492f-b987-71c3798611d9",
+      "claim_id": "C61",
+      "claim": "Scaling of the distributions by a characteristic speed for each data set leads to a collapse onto an apparently universal distribution.",
+      "claim_type": "EXPLICIT",
+      "source": "Scaling of the distributions by a characteristic speed for each data set leads to a collapse onto an apparently universal distribution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract states this as a main finding of the analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:11:33.976870Z"
+    },
+    {
+      "id": "b213928e-ee46-4b23-bd47-c3f38281ecc4",
+      "content_id": "31a466d5-28c6-492f-b987-71c3798611d9",
+      "claim_id": "C62",
+      "claim": "The results suggest a universal way for ecological niches to be populated by abundant microorganisms.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest a universal way for ecological niches to be populated by abundant microorganisms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract proposes this interpretation of the findings.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:11:33.976870Z"
+    },
+    {
+      "id": "2c7f2001-5c32-446e-a36c-852de19f3d35",
+      "content_id": "31a466d5-28c6-492f-b987-71c3798611d9",
+      "claim_id": "C63",
+      "claim": "Figure 1 shows a tree encompassing the phyla of organisms studied and sketches of a representative organism from each phylum.",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 1 shows a tree encompassing the phyla of organisms studied and sketches of a representative organism from each phylum.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript describes the content of Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:11:33.976870Z"
+    },
+    {
+      "id": "43ae666b-2de0-4845-be37-49fdcf1bfccd",
+      "content_id": "31a466d5-28c6-492f-b987-71c3798611d9",
+      "claim_id": "C64",
+      "claim": "A large morphological variation is clearly visible among the studied organisms.",
+      "claim_type": "EXPLICIT",
+      "source": "A large morphological variation is clearly visible.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript states this observation based on Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:11:33.976870Z"
+    },
+    {
+      "id": "0687e615-2fe0-4518-8891-acdfd312bd8e",
+      "content_id": "31a466d5-28c6-492f-b987-71c3798611d9",
+      "claim_id": "C65",
+      "claim": "Both aquatic and parasitic groups include ciliates and flagellates.",
+      "claim_type": "EXPLICIT",
+      "source": "Both groups include ciliates and flagellates.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript states this based on the phylogenetic tree in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:11:33.976870Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "82ec1fa4-c1e4-48bf-bd7b-69bc8e236f0e",
+      "content_id": "31a466d5-28c6-492f-b987-71c3798611d9",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Ciliates and flagellates exhibit distinct morphological and kinematic characteristics. Ciliates span speeds up to 7 mm/s while flagellates remain in the sub-mm/s range, with average cell sizes differing fourfold (31 \u00b5m for flagellates vs 132 \u00b5m for ciliates). The number of flagella provides a clear morphological division between the two groups.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2-C4 and C48 are directly supported by the collected data from 189 organisms (112 flagellates, 77 ciliates) as shown in Figure 2 and its supplements. The speed ranges, size measurements, and flagellar counts are explicitly stated and visualized, providing clear empirical evidence for these morphological and kinematic distinctions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:11:33.976870Z"
+    },
+    {
+      "id": "1fac06df-bfea-40c6-ba60-8a009f7c25fb",
+      "content_id": "31a466d5-28c6-492f-b987-71c3798611d9",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Swimming speed distributions for both flagellates and ciliates are accurately described by log-normal distributions, with agreement extending to fourth moments. The authors conclude that the published literature contains sufficient unbiased data to capture the complete distributions, supported by theoretical results on log-normal distributions and their properties.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59-C60 are well-supported by the statistical fitting shown in Figure 3 and Figure 3\u2014figure supplement 1, which demonstrates agreement up to fourth moments. The theoretical justification (C14-C16, C56-C57) is appropriately cited, and the conclusion about data completeness (C17, C58) follows logically from the quality of fit using maximum likelihood estimation (C55). The use of established statistical methods and comparison of calculated vs predicted moments provides strong evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:11:33.976870Z"
+    },
+    {
+      "id": "4d443bf3-97f6-4cc8-9e12-d63b9b5afbfb",
+      "content_id": "31a466d5-28c6-492f-b987-71c3798611d9",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "When scaled by characteristic speeds (median M), the swimming speed distributions for flagellates and ciliates collapse onto an apparently universal distribution. The two distributions are nearly identical, with integrated absolute difference of 0.028 and Kullback-Leibler divergence of 0.0016.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C61, C20-C21 are supported by Figure 4, which shows the rescaled distributions with overlapping confidence intervals. The quantitative similarity metrics (integrated absolute difference and KL divergence) are explicitly calculated and reported as very small values. The near-identical variance parameters (\u03c3_fl=0.978 vs \u03c3_cil=0.936, within 5%) provide additional support for the universality claim.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:11:33.976870Z"
+    },
+    {
+      "id": "fe877ee7-9b8a-4ab2-a19e-216bb7ddecee",
+      "content_id": "31a466d5-28c6-492f-b987-71c3798611d9",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The observed log-normal randomness captures a universal way for ecological niches to be populated by abundant microorganisms with similar propulsion characteristics.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C51 and C62 represent speculative interpretations of the statistical findings. While the log-normal distributions and their similarity are well-established by the data, the ecological interpretation about niche population is not directly tested or validated. This remains a hypothesis that would require additional ecological data and mechanistic studies to confirm.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:11:33.976870Z"
+    },
+    {
+      "id": "d8539777-dcf0-48ab-ae37-453d39ffc350",
+      "content_id": "31a466d5-28c6-492f-b987-71c3798611d9",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The distributions of swimming speeds among species do not necessarily reflect the distributions of swimming speeds among individuals.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C52 is appropriately acknowledged as a limitation. The authors correctly note that their data represents species-level averages rather than individual-level variation, for which no data is available. This is an important caveat that affects the interpretation of the results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:11:33.976870Z"
+    },
+    {
+      "id": "33557e2f-9351-4e6f-9c9c-402f342c7740",
+      "content_id": "31a466d5-28c6-492f-b987-71c3798611d9",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Swimming speed data were collected from 26 papers for ciliates and 48 papers for flagellates, measured under diverse environmental conditions. The data are considered as arising from random sampling of environmental conditions rather than representing a uniform environment.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C23-C26 describe the data collection methodology. While the number of source papers is explicitly stated, the interpretation that heterogeneous measurement conditions constitute \"random sampling\" (C26) is questionable. Different labs may have systematic biases, and the lack of explicit inclusion criteria raises concerns about selection bias. The authors state \"no explicit criteria were imposed\" but this does not guarantee unbiased sampling of the true biological distribution.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:11:33.976870Z"
+    },
+    {
+      "id": "2e9b9dc6-6353-4485-b5e8-7e850af9aac8",
+      "content_id": "31a466d5-28c6-492f-b987-71c3798611d9",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Histogram bin widths were chosen using the Freedman-Diaconis rule, and fitting procedures used raw data via maximum likelihood estimation rather than processed histograms.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53 and C55 describe appropriate statistical methodology. The use of the Freedman-Diaconis rule for binning and maximum likelihood estimation on raw data are standard best practices that ensure the fitted parameters are not artifacts of data processing choices.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:11:33.976870Z"
+    },
+    {
+      "id": "1be20d4f-ca09-437f-aa99-7597888c5235",
+      "content_id": "31a466d5-28c6-492f-b987-71c3798611d9",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The introduction provides background on unicellular eukaryote diversity, distribution, motility mechanisms, and the morphological/functional distinctions between flagellates and ciliates, including the structural basis of flagellar propulsion.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C47 represent well-established background knowledge appropriately cited from the literature. These claims provide necessary context for the study but do not constitute novel findings. The exclusion of spermatozoa (C47) is justified with a clear rationale.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:11:33.976870Z"
+    },
+    {
+      "id": "e19d087b-e688-4be2-8806-4751b11da845",
+      "content_id": "31a466d5-28c6-492f-b987-71c3798611d9",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Figure 1 displays a phylogenetic tree of studied organisms showing large morphological variation, with both aquatic and parasitic groups including ciliates and flagellates.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C63-C65 accurately describe the content of Figure 1, which provides visual documentation of the taxonomic diversity and morphological variation in the dataset. This supports the breadth of the data collection effort.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:11:33.976870Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "879628cd-27ae-451b-bc6f-9dd4648657d4",
+      "result_id": "82ec1fa4-c1e4-48bf-bd7b-69bc8e236f0e"
+    },
+    {
+      "claim_id": "f5523570-4f7e-4029-a4ec-e5e851f11e3e",
+      "result_id": "82ec1fa4-c1e4-48bf-bd7b-69bc8e236f0e"
+    },
+    {
+      "claim_id": "9c58e72a-552c-4603-be7a-a074e88ad387",
+      "result_id": "82ec1fa4-c1e4-48bf-bd7b-69bc8e236f0e"
+    },
+    {
+      "claim_id": "a404c1cb-f20e-4896-863c-d7517b66e873",
+      "result_id": "82ec1fa4-c1e4-48bf-bd7b-69bc8e236f0e"
+    },
+    {
+      "claim_id": "927d104c-b303-443e-8d47-b961cce76ab1",
+      "result_id": "1fac06df-bfea-40c6-ba60-8a009f7c25fb"
+    },
+    {
+      "claim_id": "206325e8-7093-4646-917c-c83ebdbde2fa",
+      "result_id": "1fac06df-bfea-40c6-ba60-8a009f7c25fb"
+    },
+    {
+      "claim_id": "4df9aa76-783e-4124-9f08-10492fb57407",
+      "result_id": "1fac06df-bfea-40c6-ba60-8a009f7c25fb"
+    },
+    {
+      "claim_id": "9a8b4c37-751b-47db-a7e6-936bbe372d48",
+      "result_id": "1fac06df-bfea-40c6-ba60-8a009f7c25fb"
+    },
+    {
+      "claim_id": "2f7f6d5d-638a-4244-bb1f-368908c840af",
+      "result_id": "1fac06df-bfea-40c6-ba60-8a009f7c25fb"
+    },
+    {
+      "claim_id": "5093487d-c081-4cf8-ae01-036302ec4f36",
+      "result_id": "1fac06df-bfea-40c6-ba60-8a009f7c25fb"
+    },
+    {
+      "claim_id": "b2579f93-6f33-4a1d-bc83-2e5603a4562d",
+      "result_id": "1fac06df-bfea-40c6-ba60-8a009f7c25fb"
+    },
+    {
+      "claim_id": "661e1a58-e9ab-4bef-8fe7-89da9492a8ad",
+      "result_id": "1fac06df-bfea-40c6-ba60-8a009f7c25fb"
+    },
+    {
+      "claim_id": "f9f6bc67-be08-4044-ae4b-0d1636f071fb",
+      "result_id": "1fac06df-bfea-40c6-ba60-8a009f7c25fb"
+    },
+    {
+      "claim_id": "fbae2a3e-218e-4591-84c3-db57b9c2e61d",
+      "result_id": "4d443bf3-97f6-4cc8-9e12-d63b9b5afbfb"
+    },
+    {
+      "claim_id": "2f304a22-fc15-453a-b636-afb90baf2b6b",
+      "result_id": "4d443bf3-97f6-4cc8-9e12-d63b9b5afbfb"
+    },
+    {
+      "claim_id": "40c2ac16-5ac3-409b-b1d1-c7385fab4e76",
+      "result_id": "4d443bf3-97f6-4cc8-9e12-d63b9b5afbfb"
+    },
+    {
+      "claim_id": "e5f6aa54-1421-4c4f-9e8f-4dd39e54327d",
+      "result_id": "fe877ee7-9b8a-4ab2-a19e-216bb7ddecee"
+    },
+    {
+      "claim_id": "b213928e-ee46-4b23-bd47-c3f38281ecc4",
+      "result_id": "fe877ee7-9b8a-4ab2-a19e-216bb7ddecee"
+    },
+    {
+      "claim_id": "be8d41c4-8b9f-405f-ab33-117cfa0c1f05",
+      "result_id": "d8539777-dcf0-48ab-ae37-453d39ffc350"
+    },
+    {
+      "claim_id": "8e4c9f32-5a38-49b3-9bfa-1fce27a76cd6",
+      "result_id": "33557e2f-9351-4e6f-9c9c-402f342c7740"
+    },
+    {
+      "claim_id": "9942cd0b-83e7-43cb-9b22-b9d78c75f0db",
+      "result_id": "33557e2f-9351-4e6f-9c9c-402f342c7740"
+    },
+    {
+      "claim_id": "e2b234a3-91cf-42cd-856c-bb84d6616e7f",
+      "result_id": "33557e2f-9351-4e6f-9c9c-402f342c7740"
+    },
+    {
+      "claim_id": "dfea33d1-8790-49dc-a681-0cd8e813dd8a",
+      "result_id": "33557e2f-9351-4e6f-9c9c-402f342c7740"
+    },
+    {
+      "claim_id": "92083a83-180e-4088-bc29-41e5850b16c9",
+      "result_id": "2e9b9dc6-6353-4485-b5e8-7e850af9aac8"
+    },
+    {
+      "claim_id": "348a40a0-6b65-4bd6-aedd-0e9ba46f647b",
+      "result_id": "2e9b9dc6-6353-4485-b5e8-7e850af9aac8"
+    },
+    {
+      "claim_id": "6800805a-3f87-41f8-a265-8d8153f18278",
+      "result_id": "1be20d4f-ca09-437f-aa99-7597888c5235"
+    },
+    {
+      "claim_id": "5e8fa310-a045-4089-a65b-e6d89bc2a4f4",
+      "result_id": "1be20d4f-ca09-437f-aa99-7597888c5235"
+    },
+    {
+      "claim_id": "2df75fb8-a0f0-401f-bd23-b47543184683",
+      "result_id": "1be20d4f-ca09-437f-aa99-7597888c5235"
+    },
+    {
+      "claim_id": "bb692a63-d524-40c3-bc52-617404d63410",
+      "result_id": "1be20d4f-ca09-437f-aa99-7597888c5235"
+    },
+    {
+      "claim_id": "de105c8a-537f-4e52-86a6-6a4049c28d14",
+      "result_id": "1be20d4f-ca09-437f-aa99-7597888c5235"
+    },
+    {
+      "claim_id": "36389fc6-13d1-46f5-9bb2-48d176f5ca9d",
+      "result_id": "1be20d4f-ca09-437f-aa99-7597888c5235"
+    },
+    {
+      "claim_id": "0589693c-330c-44d4-b67f-2308f83f775f",
+      "result_id": "1be20d4f-ca09-437f-aa99-7597888c5235"
+    },
+    {
+      "claim_id": "63c7ce99-1cfe-4a08-9331-5969c122412d",
+      "result_id": "1be20d4f-ca09-437f-aa99-7597888c5235"
+    },
+    {
+      "claim_id": "72b9fdc7-d2a4-49b4-b3f4-c970a183dee8",
+      "result_id": "1be20d4f-ca09-437f-aa99-7597888c5235"
+    },
+    {
+      "claim_id": "87c40790-dde5-487c-bc58-88f3a70dafb8",
+      "result_id": "1be20d4f-ca09-437f-aa99-7597888c5235"
+    },
+    {
+      "claim_id": "c5862ade-bea0-4734-b920-17bcda73db9e",
+      "result_id": "1be20d4f-ca09-437f-aa99-7597888c5235"
+    },
+    {
+      "claim_id": "68d48f07-4cb1-49d4-9e3b-12c6cdf223f1",
+      "result_id": "1be20d4f-ca09-437f-aa99-7597888c5235"
+    },
+    {
+      "claim_id": "c8fd06f8-d12e-4a31-ab04-b96cc20a17bb",
+      "result_id": "1be20d4f-ca09-437f-aa99-7597888c5235"
+    },
+    {
+      "claim_id": "661ad310-06fc-4d00-820b-e9e80157e4ad",
+      "result_id": "1be20d4f-ca09-437f-aa99-7597888c5235"
+    },
+    {
+      "claim_id": "8d740e50-4eba-4608-aba4-8bfdf328e427",
+      "result_id": "1be20d4f-ca09-437f-aa99-7597888c5235"
+    },
+    {
+      "claim_id": "64451425-79c3-4992-b49e-cb0d780bc387",
+      "result_id": "1be20d4f-ca09-437f-aa99-7597888c5235"
+    },
+    {
+      "claim_id": "3cbeed31-2bc2-475d-a23c-7e54e1f42ead",
+      "result_id": "1be20d4f-ca09-437f-aa99-7597888c5235"
+    },
+    {
+      "claim_id": "0052b651-37ad-46e9-bb0b-45f6a7545228",
+      "result_id": "1be20d4f-ca09-437f-aa99-7597888c5235"
+    },
+    {
+      "claim_id": "758551bf-eaa4-4750-a79c-60885eebcccb",
+      "result_id": "1be20d4f-ca09-437f-aa99-7597888c5235"
+    },
+    {
+      "claim_id": "cf82f24e-31b9-40da-9ddd-42bfee656a9f",
+      "result_id": "1be20d4f-ca09-437f-aa99-7597888c5235"
+    },
+    {
+      "claim_id": "26acf2da-0afe-4593-9e79-0473dc808621",
+      "result_id": "1be20d4f-ca09-437f-aa99-7597888c5235"
+    },
+    {
+      "claim_id": "2c7f2001-5c32-446e-a36c-852de19f3d35",
+      "result_id": "e19d087b-e688-4be2-8806-4751b11da845"
+    },
+    {
+      "claim_id": "43ae666b-2de0-4845-be37-49fdcf1bfccd",
+      "result_id": "e19d087b-e688-4be2-8806-4751b11da845"
+    },
+    {
+      "claim_id": "0687e615-2fe0-4518-8891-acdfd312bd8e",
+      "result_id": "e19d087b-e688-4be2-8806-4751b11da845"
+    }
+  ],
+  "comparisons": []
+}

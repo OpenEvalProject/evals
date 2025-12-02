@@ -1,0 +1,290 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "External permeant ions enhance CTX dissociation from the toxin-bound channel, implying communication between the selectivity filter and the external solution despite the pore being plugged. This is unexpected based on the pore-occlusion model, which predicts the selectivity filter should be isolated from the external solution when the toxin is bound.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C39, C41-C43, and C51 present experimental data showing that external K+ enhances koff ~2-fold (C36, C63), and that the dissociation rate is sensitive to the identity of external cations (C42, C51). The cation selectivity matches the permeation sequence (C42), and the lack of memory (C51-C52) supports ongoing communication. While the inference of a communicating pathway (C6, C43, C52) is speculative, the experimental observations are robust and reproducible across different conditions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C30",
+      "C70",
+      "C71",
+      "C72",
+      "C74",
+      "C75"
+    ],
+    "result": "CTX binding equilibrium is voltage-dependent in open channels but voltage-independent in closed channels, while remaining sensitive to external K+ in both states. This demonstrates that voltage sensitivity requires the channel to be open, but external ion sensitivity does not.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C72, C74-C75 are supported by experimental data in Figures 5-6 showing that toxin blockade is voltage-dependent when Po~1 but voltage-independent when Po~0 (at voltages <-90 mV). The data clearly demonstrate state-dependent voltage sensitivity while maintaining K+ sensitivity in both states. The experimental design appropriately separates open and closed channel conditions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Quantitative kinetic analysis reveals that external K+ affects both association (kon) and dissociation (koff) rates of CTX binding. In high K+ vs. high Na+, kon decreases ~60% while koff increases ~2-fold, resulting in a ~6.4-fold increase in KD. The K+ dependence of koff shows a threshold effect, remaining unchanged below 10 mM but increasing sharply at higher concentrations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C37 and C44-C49 present detailed kinetic measurements with error estimates (n=7) and fitting parameters. The data are internally consistent and the fits to Langmuir isotherms (Equations 2a, 2b) provide quantitative parameters (KK1=135\u00b1107 mM, KK2=0.56\u00b10.39 mM). The ~9-fold predicted change in KD (C49) is consistent with the ~6.4-fold measured change (C37). The experimental approach using exponential fits to on/off kinetics is standard and appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C56",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "In low ionic strength conditions (10 mM), CTX binding kinetics are ~300-fold faster than in normal ionic strength, but retain the same qualitative features: kon is ~40-fold higher in 10-K+ than normal K+, voltage dependence resides primarily in koff (z~0.5), and koff remains ~2-fold larger in K+ than Na+.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C64 present experimental data from Figure 5 showing that the trans-toxin ion sensitivity persists even with dramatically accelerated kinetics. The voltage dependence parameters (z~0.5, e-fold per ~50 mV) are consistent with prior studies (C61-C62 with citations). The differential effect of K+ vs. Na+ on kon (C58-C60) is explained by competitive binding. The data demonstrate that the key phenomena are not artifacts of slow kinetics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C104"
+    ],
+    "result": "Molecular dynamics simulations at +500 mV show that CTX undergoes partial detachment from the channel, with Lys27 separating from the S1 site by ~10 \u00c5 and the toxin rotating ~90\u00b0 and lifting ~10 \u00c5 from the channel surface. During this wobbling, K+ ions occupy the S1 site, restoring the characteristic double occupancy of the unblocked channel. Individual contact points show large degrees of autonomy in their dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C95 and C104 describe MD simulation results shown in Figure 7. The simulations show clear separation of contact pairs (10-20 \u00c5) in two replicas at +500 mV but not at +100 mV (C91, C104). The observation that some contacts separate while others remain attached (C93-C94) supports the wobbling model. However, the simulations use non-physiological voltages (+500 mV) and are limited to 400 ns, which may not fully sample the conformational space. The authors acknowledge the 'crudity' of the analysis (C95).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C15",
+      "C54",
+      "C81",
+      "C82",
+      "C83",
+      "C87",
+      "C99",
+      "C100",
+      "C128",
+      "C147",
+      "C148"
+    ],
+    "result": "The authors propose a 'wobbling' mechanism in which CTX oscillates between multiple bound conformations through a dynamic network of forming and vanishing contacts. Some conformations transiently restore electrical and ionic communication across the pore, explaining the voltage and trans-toxin sensitivity. These transient states are undetectable by electrophysiology due to sub-microsecond lifetimes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C7, C15, C54, C81-C83, C87, C99-C100, C128, C147-C148 present the wobbling model as an explanation for the experimental observations. While the model is consistent with the data (trans-toxin sensitivity, voltage dependence, MD simulations), it remains speculative. The key prediction\u2014transient conductive states\u2014cannot be directly tested with current methods (C83, C131). Alternative explanations (e.g., leaky blockade, C118-C120) are discussed but not definitively ruled out. The model is plausible and well-reasoned but lacks direct experimental validation of the proposed transient states.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C97",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "The authors propose that voltage dependence arises from voltage-dependent rebinding of Lys27 to the S1 site, rather than voltage-dependent unbinding. External K+ competes with Lys27 rebinding, and the ratio KK2/KK1~0.004 provides a lower limit for the fractional time S1 is accessible to external K+.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C105-C112 present an alternative mechanistic explanation for voltage dependence. The MD simulations (C104-C105) are suggestive but preliminary ('too preliminary to be conclusive,' C105). The rebinding model (C106-C109) is theoretically plausible and supported by analogy to TEA (C111), but lacks direct experimental validation. The calculation of fractional accessibility (C112) makes strong assumptions (S1 doesn't bind Na+, is available during wobbling). This is a reasonable hypothesis but requires further testing.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "The similar sensitivity to external ions in open and closed channels is surprising and suggests that only the vicinity of S1 equilibrates during wobbling, while distal pore regions do not. This could explain prior observations with \u03ba-PVIIA showing differential dissociation rates with different external cations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C121-C127 address an unexpected observation (similar K+ sensitivity in open and closed states) and propose a localized equilibration mechanism. The explanation (C125-C126) is speculative and based on inference from MD simulations (Figures 7-8). The connection to prior \u03ba-PVIIA data (C127) is suggestive but indirect. This is a reasonable interpretation but lacks direct experimental support for the proposed localized equilibration.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135"
+    ],
+    "result": "The authors estimate that transient conductive states must have lifetimes <1-10 \u03bcs to escape detection by single-channel recordings. Based on transition state theory and assuming 10 identical contacts, they calculate that individual contacts would be unbound ~3-6% of the time.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C129-C135 present theoretical calculations to explain why transient states are not observed experimentally. The calculations (C132-C135) make strong simplifying assumptions (10 identical contacts, standard frequency factor, transmission coefficient of 1) that the authors acknowledge are crude. The estimated lifetimes (<1-10 \u03bcs, C131) are consistent with the lack of observed conductive intervals (C130), but the calculations are highly approximate and model-dependent.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146"
+    ],
+    "result": "The fitted Po-V relationship is left-shifted by ~35-45 mV relative to the G-V curve, which is inconsistent with microscopic reversibility. The authors propose this reflects the probability that the electric field has been restored during wobbling, requiring only brief (>10 ns) openings to equilibrate the pore.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C137-C146 address a discrepancy between fitted Po-V and measured G-V curves. The observed shift (C137) is inconsistent with microscopic reversibility (C138), and currents appear at voltages where few channels should be open (C139-C140). The alternative interpretation (C141-C146) is speculative and requires very brief openings (>10 ns) to have functional consequences. The calculations (C143-C144) rely on kinetic models from other studies. This is an interesting observation but the proposed explanation is highly speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "Background on CTX mechanism: CTX is a scorpion toxin that blocks K+ channels by plugging the pore without inducing conformational changes. Lys27 acts as a K+ impersonator, and the crystal structure shows tight, complementary binding. Prior work established that internal ions and voltage affect dissociation, with the mechanism involving electrostatic repulsion of Lys27 by pore ions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4, C10-C13, C16-C29 summarize well-established prior work supported by multiple citations. The crystal structure (C12-C13, C23-C25) and the role of Lys27 (C19-C20) are from published studies. The biophysical reasoning about electric field distribution (C28-C29) is sound. This provides essential context for the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C73",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Prior work has established that CTX binding to different K+ channels shows varying degrees of voltage dependence (z~1 for BK, z~0.4 for Shaker), with the magnitude correlating with the fraction of electric field dropping across the selectivity filter. Slow inactivation and toxin binding are mutually insensitive.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C68, C73, C76-C80 summarize prior experimental findings with appropriate citations. The correlation between voltage dependence and electric field distribution (C80) is from a cited study. These claims provide important comparative context for interpreting the current results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "Peptide toxins and Kv-channel vestibules behave as rigid bodies that retain structure upon binding, though the crystal structure may represent the most likely conformation while rare permissive conformations could restore pore communication on nanosecond timescales. Mutant cycle analyses support the assumption of local energy additivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113-C115 are supported by cited structural and mutant cycle studies. The inference about rare permissive conformations (C116-C117) is speculative but reasonable given the experimental observations. The support for energy additivity from mutant cycle analyses (C115) is well-documented in the cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C155"
+    ],
+    "result": "The authors place their findings in broader context: transient intermediate states are known in protein folding and oligomerization, and prior MD simulations have shown multiple CTX binding configurations. The novelty is identifying wobbling in the dissociation pathway. This could be a general feature of multi-contact protein-protein interactions with potential therapeutic applications.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C149-C150 cite relevant prior work on transient intermediates and CTX binding configurations. The statement of novelty (C151) is reasonable. The speculation about generality (C153) and applications (C154-C155) is appropriately tentative. These claims provide appropriate context and perspective on the significance of the findings.",
+    "result_type": "MINOR"
+  }
+]

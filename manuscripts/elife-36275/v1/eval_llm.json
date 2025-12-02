@@ -1,0 +1,492 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "The developed closed-loop system achieves real-time neural decoding at 10 ms resolution, identifies replay events within 50 ms with >70% sensitivity and specificity, and classifies replay content with 95% accuracy. The system's computational latency is minimal, with determination of replay content and triggering occurring within 2.2 ms in >95% of cases (median 1.1 ms).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C5, C24-C27, C42-C48 provide converging evidence from experimental data showing the system's temporal resolution (10 ms bins), detection latency (~50 ms), sensitivity/specificity (>70%), and content classification accuracy (95%). Performance metrics are supported by data in Figures 1 and 4, and Tables 2-3. The computational efficiency claims (C44-C48) are validated by timing measurements showing <2.2 ms added latency in >95% of cases.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C156"
+    ],
+    "result": "Stress tests demonstrate the system's scalability, maintaining low added latency for high spike rates and up to 32 tetrodes on a 32-core workstation, with similar performance on a 4-core workstation for up to 24 tetrodes at dataset-matched spike rates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C50 are supported by stress test data shown in Figure 1\u2014figure supplement 2, demonstrating scalability with artificially generated spikes at varying rates and tetrode counts. C156 extends this to predict handling of at least 128 channels based on the stress test results, which is a reasonable inference from the presented data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "The experimental protocol involved recording hippocampal ensemble activity from a rat exploring a 3-arm radial maze, with an initial run (RUN1) used to build the encoding model achieving <10 cm median decoding error with only a few maze traversals. The encoding model remained valid across RUN1 and RUN2, indicating stable recordings without remapping.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C58 describe the experimental setup and validation procedures, supported by cross-validation results in Figure 1\u2014figure supplements 3-4. The decoding performance (<10 cm error) and stability across sessions are well-documented. C57's inference about lack of remapping is appropriately supported by the consistent decoding performance and citations to relevant literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "An offline reference dataset of 3506 population bursts (median duration 83 ms) was defined based on detrended MUA signals, with 35.3% classified as containing replay content using specific criteria (biasmax score >3, line fit score >0.1). Online detection resulted in 2123 positive hits, with 87.3% associated with reference bursts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C65, C74-C76 describe the reference dataset construction and basic online detection statistics, supported by data in Tables 1-2 and Figure 2a. The criteria for defining replay content (C74) are clearly stated, though the manuscript acknowledges the absence of ground truth labels. The descriptive statistics are internally consistent and well-documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Online detected events scored significantly higher on multiple replay quality metrics (posterior bias, line fit score, Pearson correlation, sequence score) compared to ignored bursts, consistent with preferential detection of replay-containing events.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C73 are supported by cumulative distribution comparisons in Figure 2b-d showing clear separation between detected and ignored events across multiple metrics. The statistical significance is evident from the distributions, and C73's interpretation is a reasonable inference from the data showing consistently higher replay metrics for detected events.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C87"
+    ],
+    "result": "The system achieved high detection performance with median sensitivity of 0.78 (range 0.60-0.95) and specificity of 0.71 (range 0.44-0.80), favoring low false negatives (median FOR 0.11) over false positives (median FDR 0.54). Content classification accuracy for correctly flagged events was 0.95 (range 0.83-1.00).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C85, C87 are supported by performance metrics in Figure 4b and Tables 2-3. The sensitivity, specificity, FOR, FDR, and content accuracy values are clearly documented with appropriate statistical measures. The unbiased performance measures (informedness, markedness, Matthews correlation) were significantly above zero (p<2\u00d710\u207b\u00b9\u00b2), validating the detection quality.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "The median closed-loop detection latency was 50.7 ms (90% CI [31.4, 116.2]) from burst onset, representing 59.5% (90% CI [21.9, 89.0]) of burst duration. For long bursts (>100 ms), median latency was 58.3 ms but relative latency was lower at 41.9%, demonstrating detection well before burst offset.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C92 are supported by latency measurements in Figure 4c-d and Table 2. The absolute and relative latency values are well-documented with confidence intervals. C92's conclusion that detection occurs well before burst offset is justified by the relative latency data showing detection at ~60% of burst duration on average, and ~42% for long bursts.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C97",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "Parameter optimization analyses revealed that live test parameters were sub-optimal for REST epochs but near-optimal for RUN2 epochs. Content accuracy depends primarily on decoding performance, compression threshold, and neuron count, while detection latency depends mainly on integration window size (fixed at 30 ms in tests), with smaller windows reducing latency at the expense of accuracy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C94, C97, C99-C102 are supported by parameter sweep analyses in Figure 5 and Table 4, and integration window simulations in Figure 5\u2014figure supplement 3. The identification of sub-optimal REST parameters and near-optimal RUN2 parameters is clearly shown. The factors affecting content accuracy and latency are appropriately identified based on the system design and supported by the simulation data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "Increasing tetrode number improved signal quality (decreased MUA variability, increased separability of burst types, increased posterior sharpness) and detection performance (higher Matthews correlation and content accuracy). Performance improved most strongly from 10 tetrodes upward and did not saturate at 14 tetrodes, suggesting further improvement is possible with more channels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C110, C112-C114 are supported by analyses in Figure 6 and Figure 6\u2014figure supplements 1-2. The signal quality improvements with tetrode count are clearly demonstrated. The non-saturating performance at 14 tetrodes (C112) and the non-linear improvement pattern (C114) are evident in the data. C113's prediction of further improvement is a reasonable inference from the non-saturating trend.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C116",
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "Run-decoding performance improved with tetrode count (decreasing in-arm error, increasing arm-correct estimates), improving rapidly up to 4 tetrodes then more gradually. However, replay detection and run decoding performance showed low, highly non-linear correlation, suggesting low run-decoding error is necessary but not sufficient for accurate replay detection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C116-C119 are supported by analyses in Figure 6b-c. The improvement in run decoding with tetrode count is clearly shown, as is the rapid improvement up to 4 tetrodes. The low, non-linear correlation between run decoding and replay detection (C118) is evident in Figure 6c. C119's interpretation is a reasonable inference from this relationship, though the manuscript appropriately notes this as a cautionary finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "The system correctly detected and classified single and joint replay events in both REST and RUN2, and correctly ignored bursts without consistent arm representations. False positives were mainly caused by local matches to criteria without full-burst replay, while false negatives resulted from failure of noisy signals to cross thresholds concurrently.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C81 are supported by example events in Figure 3 and Figure 3\u2014figure supplement 1. The examples clearly demonstrate successful detection of various replay types (C77), correct rejection of non-replay bursts (C78), and the mechanisms underlying false positives (C79) and false negatives (C80). C81 provides an additional explanation for some errors, appropriately marked as speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C67",
+      "C69",
+      "C70",
+      "C168"
+    ],
+    "result": "Detection performance differed between behavioral states: REST showed higher fraction of hits inside bursts (91.9%) compared to RUN2 (84.8%). In RUN2, 80.6% of non-burst false positives occurred during movement (>5 cm/s), while 73.8% of true detections inside bursts occurred during immobility (<5 cm/s), likely due to higher population firing rates during motion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67, C69-C70, C168 describe behavioral state differences in detection performance, supported by the data. The percentages are clearly stated and the relationship between movement and false positives is documented. C168's explanation about higher firing rates during motion is marked as speculative but is a reasonable hypothesis consistent with the observed pattern.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "The system addressed three major technical challenges: (1) minimizing data requirements for content determination introduces a latency-accuracy trade-off; (2) unknown event timing in continuous streams requires causal processing using only past information; (3) real-time computations must minimize added latency, potentially requiring approximate algorithms to meet deadlines.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C36 describe the technical challenges addressed by the system. These are well-articulated design constraints that are fundamental to online processing systems. The challenges are appropriately identified based on the requirements of real-time replay detection, and the manuscript demonstrates how each was addressed through the system design and performance results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "Accurate real-time replay detection requires predictable content from the initial portion of bursting events. Higher signal-to-noise and structured trajectories are easier to detect as they are less susceptible to short-timescale variability. Signal-to-noise ratio is strongly influenced by neuronal population sampling, with poorly sampled populations likely leading to increased detection errors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C106 describe logical requirements and predictions about factors affecting detection. C103-C104 are reasonable inferences about detection requirements. C105 is supported by citations and is consistent with sampling theory. C106 is appropriately marked as a prediction and is a logical consequence of C105, validated by the tetrode number analyses showing improved performance with more channels.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151"
+    ],
+    "result": "The latency-accuracy trade-off is affected by neural decoding performance, with high cell yield expected to improve detection. The no-spike-sort approach helps by utilizing all available spikes. Compression and parallelization provided necessary computational speed-up (replayed position available within 2 ms). A 30 ms integration window balanced detection quality and latency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C146-C151 describe factors affecting the latency-accuracy trade-off and design choices. C146 is a logical inference. C147 is appropriately marked as a prediction. C148 describes an advantage of the decoding approach with appropriate citation. C149 is supported by the timing data (C47-C48). C150-C151 describe the integration window choice and its effects, supported by the simulation data in Figure 5\u2014figure supplement 3.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C158",
+      "C159",
+      "C160",
+      "C161",
+      "C162",
+      "C163",
+      "C164"
+    ],
+    "result": "Ground truth replay labels are unavailable, so performance was evaluated by showing detected events score higher on replay-correlated measures and agree with offline-defined references. The offline reference quality depends on detector parameters and data sampling. Run decoding was less sensitive to data degradation than replay detection, making it necessary but not sufficient for predicting replay detection performance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C158-C164 describe the evaluation approach and its limitations. C158 correctly identifies a fundamental challenge. C159 describes the validation strategy used, supported by Figure 2. C160-C163 provide appropriate caveats about reference quality and parameter selection. C164 is supported by the tetrode number analyses in Figure 6c showing the non-linear relationship between run decoding and replay detection performance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "The manuscript establishes the scientific context: cortical communication involves 50-200 ms population activity patterns; hippocampal replay has been extensively documented across brain regions; current closed-loop manipulations are limited to SWR detection without content specificity; and existing BCIs operate at 120-200 ms latencies, one order of magnitude slower than required for detecting transient cortical sequences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C6-C21 establish the background and motivation, supported by extensive citations to prior work. These claims accurately represent the state of the field and identify the gap that the current work addresses. The characterization of prior closed-loop work (C13-C15) and BCI latencies (C20-C21) is well-supported by citations and provides appropriate context for the technical requirements.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130"
+    ],
+    "result": "The system advances beyond prior online hippocampal activity systems that provided feedback to spiking activity, decoded location from limited place cells, or implemented online spike-sorting with ripple detection, but did not combine short timescale decoding with low-latency replay sequence detection. Prior single-cell coupling work (de Lavill\u00e9on et al. 2015) and algorithmic work (Deng et al. 2016) had limitations in multi-neuronal pattern detection or computational feasibility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C122-C130 provide critical assessment of prior work with appropriate citations. The characterization of prior systems (C123-C125) and identification of the gap (C126) are accurate. The critical assessments of de Lavill\u00e9on et al. (C127-C128) and Deng et al. (C129-C130) are fair and identify specific limitations that the current work addresses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139"
+    ],
+    "result": "The replay detection technology shares similarities with BCIs (unsorted large-scale recordings, cognitive signals) but faces unique challenges: lack of ground truth for replay content and strict latency requirements. The system surpassed prior BCI limits by using >50 channels at 32 kHz to generate 10 ms brain state estimates and classify replay with ~50 ms latency, compared to BCI latencies of 50-120 ms that are acceptable for motor control due to natural 150-200 ms motor delays.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C131-C139 provide appropriate comparison to BCI research with citations. The similarities (C132-C133) and unique challenges (C134-C135) are accurately characterized. The comparison of latency requirements (C136-C138) is well-supported by citations. C139's claim of surpassing prior limits is justified by the demonstrated performance achieving ~50 ms latency with high channel counts and sampling rates.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C145"
+    ],
+    "result": "The system involves a fundamental trade-off between earliest and most accurate prediction of replay content, reflected in detection errors and omissions. Experimental goals determine the optimal trade-off, with Matthews correlation coefficient chosen for balanced performance. Similar datasets collected beforehand guide parameter selection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C140-C143, C145 describe the design philosophy and parameter selection approach. These are appropriate characterizations of the trade-offs inherent in real-time detection systems. The choice of Matthews correlation coefficient (C143) is well-justified for balanced performance. C145 provides practical guidance supported by the parameter optimization analyses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C152",
+      "C153",
+      "C154",
+      "C155",
+      "C157"
+    ],
+    "result": "Future improvements could include adaptive time windows to accumulate evidence until reaching confidence thresholds, increased channel counts (performance did not saturate at 14 tetrodes), which would improve both MUA detection and content determination and potentially allow smaller integration windows. Scaling to hundreds or thousands of channels may require GPU offloading.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C152-C155, C157 are appropriately marked as speculation about future improvements. C152 suggests a reasonable algorithmic enhancement. C153-C155 are logical predictions based on the non-saturating performance with tetrode count. C157 is a reasonable suggestion for future scaling. However, these are untested predictions and should not be considered supported results of the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C165",
+      "C166",
+      "C167"
+    ],
+    "result": "Detection latency averaged ~50 ms, adding only ~10 ms to the ~40 ms required for basic burst detection (without content identification) demonstrated in prior work using the same system.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C165-C167 compare current performance to prior work by the same authors. C165 summarizes the key latency finding. C166 appropriately cites prior work. C167's calculation that content detection adds only ~10 ms is a reasonable comparison, though it should be noted that the prior work used different parameters and the comparison is approximate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C169",
+      "C170"
+    ],
+    "result": "Behavioral information (running speed) or electrophysiological markers (ripple power) are often used offline to reduce false positives. Integration of such information in Falcon would be straightforward but may increase latency and introduce new error sources.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C169-C170 discuss potential system modifications. C169 accurately describes common offline practices with appropriate citation. C170 is appropriately marked as speculation about potential modifications, with reasonable consideration of trade-offs. This represents thoughtful discussion of alternative approaches rather than a tested result.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C171",
+      "C172",
+      "C173"
+    ],
+    "result": "The system currently requires manual offline construction of the encoding model from initial maze exploration data, uploaded during a 5-15 minute pause. Future enhancements could enable online model construction and validation, reducing downtime and enabling immediate feedback on decoding performance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C171-C172 accurately describe the current workflow limitations. C173 is appropriately marked as speculation about future enhancements. The current requirement for offline model construction (C171-C172) is a practical limitation clearly stated. The proposed future enhancement (C173) is reasonable but untested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C174",
+      "C175",
+      "C176",
+      "C177",
+      "C178",
+      "C179"
+    ],
+    "result": "The demonstration targeted one of three maze arms, but the system could be extended to more complex environments (8-arm mazes, multiple tracks), joint replay content, forward/reverse replay detection (with directional encoding), and other replay types (immobility-associated place cells, non-spatial replay, time cells, theta/gamma sequences) or applied to cortical/subcortical replay.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C174-C179 describe the current target (C174, supported) and potential extensions (C175-C179, marked as speculation or inference). While the proposed extensions are reasonable and supported by appropriate citations to relevant phenomena, they represent untested applications. C175's claim of 'trivial' extension may underestimate implementation challenges. These are plausible future directions rather than demonstrated capabilities.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C120",
+      "C121",
+      "C180"
+    ],
+    "result": "The solution provides rapid closed-loop feedback triggered by experimenter-defined replay content, enabling replay content-specific perturbations to address causal links between replay events and memory processes, potentially enabling a new generation of closed-loop experiments on internally generated neural activity in cognition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C120-C121, C180 summarize the system's capabilities and potential impact. C120 accurately describes the demonstrated capability. C121 and C180 are appropriately marked as speculation about potential applications and impact. While the enabling technology has been demonstrated, the actual causal experiments and their outcomes remain to be performed. The claims appropriately distinguish between demonstrated capability and potential applications.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "The system builds on prior work on spike-sorting-less neural decoding and the Falcon framework for closed-loop neuroscience. It processes continuous multi-channel neural signals, applies population decoding followed by spatial-temporal structure characterization to detect replay content, and emits digital output pulses upon detecting target replay trajectories.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C23, C37-C41 describe the system architecture and its foundations. The building on prior work (C22-C23, C37) is appropriately cited. The system functionality (C38-C39) is clearly described and demonstrated. The algorithmic approach (C41) is well-documented with appropriate citations to similar offline methods. These claims accurately represent the system design.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C28"
+    ],
+    "result": "The technology was demonstrated in a freely behaving rat during both resting and awake states using in vivo large-scale recordings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C28 accurately describes the experimental conditions, which are well-documented throughout the manuscript with data from REST and RUN2 epochs across three recording sessions. The demonstration in both behavioral states is a strength of the validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C29",
+      "C30"
+    ],
+    "result": "Detection algorithm parameters can be adjusted to trade off sensitivity and specificity or latency and accuracy, and detection performance is affected by the number of recording channels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C30 are supported by the parameter sweep analyses (Figure 5, Figure 5\u2014figure supplements 1-2) and tetrode number analyses (Figure 6). The manuscript clearly demonstrates these relationships and their implications for experimental design.",
+    "result_type": "MAJOR"
+  }
+]

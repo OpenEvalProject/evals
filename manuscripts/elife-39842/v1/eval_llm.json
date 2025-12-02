@@ -1,0 +1,343 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "High temperature (29\u00b0C) triggers stable conversion of the inactive BX2 locus (BX2OFF) into an active piRNA-producing state (BX2ON). At 25\u00b0C, both BX2OFF and BX2ON states remain stable over 23-25 generations. At 29\u00b0C, BX2ON remains stable, while 24.7% of BX2OFF females show conversion to germline repression over 25 generations. The conversion is gradual and stochastic, and once established at 29\u00b0C, remains stable for 50 additional generations at 25\u00b0C.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C28-C34 provide converging experimental evidence from multi-generational studies showing temperature-induced conversion. The data include appropriate controls (stable BX2ON at both temperatures, stable BX2OFF at 25\u00b0C), quantitative measurements (24.7% conversion, n=3812), and long-term stability testing (50 generations). The stochastic nature is documented with supplementary data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C45"
+    ],
+    "result": "Temperature-converted BX2\u0398 and piRNA-inherited BX2* exhibit identical functional and molecular properties. Both show maternal inheritance-dependent stability and loss upon paternal inheritance. BX2\u0398 is paramutagenic with 100% conversion capacity over 20 generations, matching BX2* behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C38, C45 demonstrate functional equivalence through parallel experiments on BX2\u0398 and BX2* with consistent results. The maternal/paternal inheritance experiments (n=152-159 flies) and paramutation assays (n=159 flies, 20 generations) provide strong evidence that both conversion mechanisms produce the same epigenetic state.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "BX2\u0398 and BX2* produce bona fide piRNAs with characteristic features (23-29 nt, 1U bias, ping-pong signature), while BX2OFF does not. High temperature initiates piRNA production from naive BX2OFF sequences, and the ON state is maintained by maternal piRNA inheritance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C43 are supported by small RNA sequencing data showing piRNA characteristics in BX2\u0398 and BX2* but not BX2OFF. The 42AB control cluster shows no differences between genotypes, validating specificity. The molecular characterization provides direct evidence for de novo piRNA production.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C44",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "BX2\u0398 and BX2* show similar enrichment of H3K9me3 and Rhino compared to BX2OFF. H3K9me3 levels on BX2OFF are slightly below piRNA-producing states, and Rhino may be present but below the threshold for piRNA production. Heterochromatic features (H3K9me3, Rhino) are necessary but not sufficient for piRNA cluster activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44, C103-C105 are supported by ChIP-qPCR data (n=4-5 biological replicates) showing significant H3K9me3 enrichment and similar Rhino patterns. The conclusion that heterochromatic marks are necessary but insufficient is a reasonable inference from the data showing BX2OFF has some marks but no piRNA production.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C46",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "BX2OFF conversion to BX2\u0398 occurs as a rare (~2.7% per egg chamber), instantaneous event at each generation at 29\u00b0C. In the absence of P(TARGET)GS, conversion is extremely rare (1/1137 females with partial repression, 0 with complete repression), and this difference is highly significant (p=8.5\u00d710\u207b\u2076).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46, C64-C67 are supported by large-scale experiments (n=1137-3812 females) with appropriate statistical analysis (\u03c7\u00b2 tests). The single-generation experiment tracking individual females provides strong evidence for the instantaneous conversion model. The requirement for P(TARGET)GS is demonstrated by highly significant differences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "At 29\u00b0C, BX2 steady-state RNA levels increase significantly, specifically antisense transcripts corresponding to antisense lacZ. BX2 is inserted into AGO1 in convergent orientation, and AGO1 transcript isoforms initiated upstream of BX2 insertion increase at 29\u00b0C, potentially driving increased BX2 antisense transcription.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C54 are supported by RT-qPCR data with appropriate replication (n=4-6 biological replicates) and statistical testing. Strand-specific RT-qPCR demonstrates antisense-specific increase. Claim C55 is appropriately presented as speculation ('it is possible') based on the convergent transcription arrangement.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C62",
+      "C63"
+    ],
+    "result": "No piRNAs are produced from BX2OFF at 25\u00b0C or after one generation at 29\u00b0C, despite increased antisense transcripts. BX2OFF produces equal amounts of 21 nt small RNAs (likely siRNAs) at both temperatures. AGO1 does not produce small RNAs at either temperature, and 21 nt RNA production is restricted to BX2 sequences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C63 are supported by small RNA sequencing data from three biological replicates per condition with appropriate normalization. The disconnect between increased antisense transcripts and lack of piRNA production after one generation is clearly demonstrated and important for understanding the conversion mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "Germline transcription of a homologous euchromatic transgene is required for BX2 conversion at 29\u00b0C. P(TARGET)G (germline-expressed) supports conversion at rates comparable to P(TARGET)GS, while P(TARGET)S (soma-only) does not (0/784 conversions). The authors propose that dsRNA formed from BX2 antisense and P(TARGET) sense transcripts is a prerequisite for de novo piRNA production.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C73 are supported by systematic experiments testing different transgene expression patterns (n=784-1137 females) with appropriate statistical comparisons. Claim C74 is appropriately presented as a proposed model ('could be a prerequisite') based on the experimental findings. The requirement for germline-specific transcription is clearly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C91",
+      "C92"
+    ],
+    "result": "Genome-wide small RNA sequencing comparison between BX2OFF and BX2\u0398 revealed no additional regions stably converted for piRNA production beyond BX2, suggesting all potential piRNA clusters are already active at 25\u00b0C.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C92 are supported by genome-wide analysis with appropriate methodology (unique mappers, 50 kb windows, >5 reads/kb threshold). The conclusion that BX2 is uniquely metastable is a reasonable inference from the negative result, though the possibility of other metastable loci with different requirements cannot be completely excluded.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C81",
+      "C82"
+    ],
+    "result": "Heat-shock (37\u00b0C for 1 hour) and osmotic stress (150 mM NaCl) do not induce BX2 conversion, suggesting BX2 activation does not depend on dATF-2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C82 are supported by experimental data (Supplementary file 11). The negative results appropriately distinguish the sustained high temperature effect from acute stress responses. The inference about dATF-2 independence is reasonable given the literature context provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "The authors' RT-qPCR shows increased AGO1 transcripts (RA, RC, RD isoforms) at 29\u00b0C, while Fast et al. found no difference in total AGO1. This discrepancy is explained by the authors measuring specific upstream isoforms versus total AGO1. Primers downstream of BX2 insertion show no temperature difference, suggesting the downstream AGO1 promoter (RB isoform) is temperature-insensitive.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C89 appropriately reconcile apparently contradictory findings through careful experimental design. The use of isoform-specific versus total AGO1 primers provides a mechanistic explanation for the discrepancy. The data support the conclusion about differential promoter sensitivity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "Background on piRNA biology: TEs are repressed by piRNAs from heterochromatic clusters with H3K9me3 and Rhino binding. Current models propose maternal piRNA inheritance defines cluster activity. H3K9me3 and Rhino binding alone are insufficient for piRNA production, which requires bidirectional transcription.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C17 provide established background knowledge supported by appropriate citations. These claims accurately represent the current understanding in the field and provide necessary context for the novel findings. The inferences (C12, C16) are reasonable based on the cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C37",
+      "C49",
+      "C50",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "The BX2 system background: The authors previously described paramutation in animals where maternal piRNAs convert inactive BX2OFF to active BX2ON. BX2 consists of seven P(lacW) transgenes resembling natural piRNA clusters. Both states produce similar transcript levels, but BX2OFF does not produce piRNAs. Heterochromatic structure precedes piRNA production, and transgene copy number is crucial.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C22, C37, C49-C50, C99-C102 accurately describe the authors' previous work and the BX2 experimental system. These are appropriately cited to prior publications and provide essential context for understanding the current study's significance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "Prior work on temperature effects: Earlier studies showed high temperature enhances P-element repression, thermic modification persists over generations, and heat treatment stimulates P-element repression in piRNA cluster-containing strains. Recent work in D. simulans confirmed temperature's role in establishing repression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C27 accurately cite relevant prior work establishing precedent for temperature effects on piRNA-mediated repression. These citations appropriately motivate the current study and place it in historical context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C83",
+      "C84",
+      "C85",
+      "C90"
+    ],
+    "result": "Temperature effects in other systems: In plants and animals, temperature induces various epigenetic changes including TE activation, DNA methylation changes, and chromatin modifications. In Drosophila, different studies show varied effects on piRNA pathways. Overall, temperature can induce epigenetic changes across species, but mechanisms remain unclear.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C80, C83-C85, C90 provide appropriate comparative context from other systems. The citations appear accurate and the conclusion (C90) appropriately acknowledges the incomplete mechanistic understanding across systems.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "Mechanistic requirements for piRNA production: Germline piRNA clusters produce piRNAs from both strands, typically through Rhino-Moonshiner interaction, though some use flanking promoters. Multiple studies show bidirectional transcription is required for piRNA production. However, BX2OFF transcription on both strands is insufficient without additional triggering signals. BX2 conversion requires simultaneous increase of sense and antisense RNAs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C114 synthesize literature and the current findings to articulate mechanistic requirements. The citations support the bidirectional transcription requirement, and the authors' data (C112-C114) demonstrate that this is necessary but not sufficient, requiring additional signals.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C5",
+      "C47",
+      "C48",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "Broader implications: This is the first case of piRNA cluster establishment by environmental changes without maternal piRNA inheritance. Environmental modifications can stably modify the epigenome across generations. The findings are consistent with natural TE invasion scenarios where euchromatic copies are essential. The mechanism may involve stress-induced antisense transcripts interacting with euchromatic sense transcripts to trigger piRNA production, which then maintains repression through maternal inheritance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C47, C115-C122 appropriately synthesize the findings into broader conclusions. The novelty claim (C5) is supported by the data and literature review. The mechanistic model (C119-C122) is appropriately presented as inference based on the experimental results. Claim C48 is appropriately speculative about population-level effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C56"
+    ],
+    "result": "P(TARGET)GS transcript levels decrease at 29\u00b0C compared to 25\u00b0C, opposite to the BX2 response.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C56 is supported by RT-qPCR data (n=3-6 replicates) shown in Figure 4\u2014figure supplement 1C. This observation is interesting as it shows differential temperature sensitivity of different transgenes, though its mechanistic significance for conversion is unclear.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C23"
+    ],
+    "result": "Flies in their natural habitat exhibit temperatures ranging from 25\u00b0C to 29\u00b0C, especially in the context of global warming.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C23 lacks supporting citations or data. While the temperature range used (25-29\u00b0C) is physiologically relevant for Drosophila, the specific claim about natural habitat temperatures and global warming context is not substantiated. This does not affect the validity of the experimental findings but represents an unsupported contextual claim.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "BX2 characteristics and natural analogs: BX2 resulted from successive P(lacW) transpositions and resembles natural nested TE structures. BX2-like transgenes show HP1 enrichment and pairing-dependent silencing in somatic cells but are inactive for piRNA production in the germline. Some nested TE loci might respond to TE invasion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C98 are supported by appropriate citations. Claim C95 is appropriately speculative ('might have the capacity'). These claims establish that BX2, while artificial, has features resembling natural piRNA clusters and may model natural processes.",
+    "result_type": "MINOR"
+  }
+]

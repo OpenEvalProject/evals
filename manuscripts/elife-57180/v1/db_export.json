@@ -1,0 +1,2508 @@
+{
+  "submission": {
+    "id": "0f381ab7-a814-4471-a551-1b8221751949",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T18:39:56.081136Z",
+    "updated_at": "2025-12-02T18:39:56.081136Z"
+  },
+  "content": [
+    {
+      "id": "7f319b28-4fe4-493a-98dc-56f314b91d22",
+      "submission_id": "0f381ab7-a814-4471-a551-1b8221751949",
+      "content_type": "manuscript",
+      "content_text": "# Controlling protein function by fine-tuning conformational flexibility\n\n## Authors\n\n- Sonja Schmid<sup>1</sup> ([ORCID: 0000-0002-3710-5602](https://orcid.org/0000-0002-3710-5602)) \u2020\n- Thorsten Hugel<sup>1</sup> ([ORCID: 0000-0003-3292-4569](https://orcid.org/0000-0003-3292-4569)) \u2020\n\n### Affiliations\n\n1. Institute of Physical Chemistry, University of Freiburg Freiburg Germany\n2. Signalling research centers BIOSS and CIBSS, Albert Ludwigs University Freiburg Germany\n\n\u2020 Corresponding author\n\n## Abstract\n\nIn a living cell, protein function is regulated in several ways, including post-translational modifications (PTMs), protein-protein interaction, or by the global environment (e.g. crowding or phase separation). While site-specific PTMs act very locally on the protein, specific protein interactions typically affect larger (sub-)domains, and global changes affect the whole protein non-specifically. Herein, we directly observe protein regulation under three different degrees of localization, and present the effects on the Hsp90 chaperone system at the levels of conformational steady states, kinetics and protein function. Interestingly using single-molecule FRET, we find that similar functional and conformational steady states are caused by completely different underlying kinetics. We disentangle specific and non-specific effects that control Hsp90\u2019s ATPase function, which has remained a puzzle up to now. Lastly, we introduce a new mechanistic concept: functional stimulation through conformational confinement. Our results demonstrate how cellular protein regulation works by fine-tuning the conformational state space of proteins.\n\n## Introduction\n\nProtein function is essential for life as we know it. It is largely encoded in a protein\u2019s amino-acid chain that dictates not only the specific 3D structure, but also the conformational flexibility and dynamics of a protein in a given environment. Precise regulation of protein function is vital for every living cell to cope with an ever-changing environment, and occurs on many levels pre- and post-translationally (Vogel and Marcotte, 2012; Hirano et al., 2016). After translation by the ribosome, protein function depends strongly on post-translational modifications (PTMs) (Deribe et al., 2010), but also on binding of nucleotides (Hodge and Ridley, 2016), cofactors (Weikum et al., 2017), various protein-protein interactions (PPIs) (Scott et al., 2016), and global effects, such as temperature (Danielsson et al., 2015), macro-molecular crowding and phase separation (Uversky, 2017), redox conditions (Levin et al., 2017), osmolarity (de Nadal and Posas, 2015) etc. Importantly, this regulation occurs on very diverse levels of localization. Global effects affect the whole protein non-specifically, PPIs act at a given interface and site-specific modifications are very localized. Nevertheless, all of them influence the molecular properties that determine the 3D conformation, the conformational dynamics, and thereby also the function of a protein (Schwenkert et al., 2014; Lewandowski et al., 2015; Schummel et al., 2016; Wei et al., 2016; Csizmok and Forman-Kay, 2018). The chaperone protein Hsp90 (Schopf et al., 2017) is an excellent test system to investigate diverse regulation mechanisms (Stetz et al., 2018). It was recently discussed that a single PTM can functionally mimic a specific co-chaperone interaction in human Hsp90 (Zuehlke et al., 2017). Here we take a next step and disentangle how a PTM-related point mutation, a co-chaperone interaction, and macro-molecular crowding affect the function, kinetics, and thermodynamics of this multi-domain protein.\n\nHsp90 is an important metabolic hub. Assisted by about twenty known cochaperones, yeast Hsp90 is involved in the maturation of 20% of the entire proteome (Taipale et al., 2010). Among its substrates (referred to as \u2018clients\u2019) are many kinases involved in signal transduction, hormone receptors, the 'guardian of the genome p53' (Lane, 1992), and also cytoskeletal proteins such as actin, tubulin, and many more (Pearl and Prodromou, 2006; Khandelwal et al., 2016). Cancer cells were found to be \u2018addicted\u2019 to Hsp90 (Trepel et al., 2010), which is therefor also a prominent drug target in cancer research. Hsp90 is a homo-dimer where each monomer consists of three domains (Ali et al., 2006): the N-terminal domain (N) with a slow ATPase function, the middle domain (M) believed to be the primary client interaction site (Verba et al., 2016), and the C-terminal domain providing the main dimerization contacts. Apart from closed conformations, where the three domains align in parallel, Hsp90 exists primarily in V-shaped, open conformations with dissociated N-terminal and middle domains (Krukenberg et al., 2008; Hellenkamp et al., 2017). Both global arrangements are semi-stable at room temperature. As a consequence, Hsp90 alternates constantly between open and closed conformations - even in the absence of the chemical energy source, ATP (Mickler et al., 2009; Schmid et al., 2016; Lee et al., 2019). Surprisingly, the characteristic conformational changes of Hsp90 are only little affected by e.g. anti-cancer drug candidates (Schmid et al., 2018) or natural nucleotides (Schmid et al., 2016). In addition, to the stress-induced isoform discussed herein (Hsp82), there is also a cognate isoform (Hsc82) in yeast, which differs in unfolding stability, client range and more, despite 97% sequence identity (Girstmair et al., 2019).\n\nHere, we present three orthogonal ways to modulate Hsp90's conformational state space, illustrated in Figure 1. The investigated point mutation A577I is located in the C-terminal hinge region of Hsp90. Residue A577 is the equivalent of the post-translational S-nitrosylation site C598 in human Hsp90 (Mart\u00ednez-Ruiz et al., 2005). While nitrosylation of that residue has a two-fold inhibitory effect \u2013 on the ATPase function and the client stimulation by human Hsp90 \u2013 the A577I mutation caused a nearly 4-fold amplification of the ATPase rate (Retzlaff et al., 2009). The fact that the point mutation is located in the C-terminal domain and the ATP binding site in the N-domain indicates a long-range communication, offering valuable mechanistic insight in Hsp90\u2019s intra-molecular plasticity. Second, we consider the protein-protein interactions between Hsp90 and the activating co-chaperone Aha1, which is a well-known stimulator of Hsp90's inherently slow ATPase activity. It makes contacts to the middle and N-terminal domain, which rearranges the ATP lid (Schulze et al., 2016), and the catalytic loop (including R380) (Pearl, 2016) in a favorable way for ATP hydrolysis. The affinity of Aha1 for Hsp90 itself is also markedly enhanced by PTMs (Xu et al., 2019). The third way of modulation mimics the crowding encountered in the cell, which is full of proteins, nucleic acids, vesicles and organelles. We mimic cellular macro-molecular crowding using the common crowding agent Ficoll400, that\u00a0is branched polymeric sucrose. In contrast to the previous two modulations, crowding represents a completely non-specific, physical interference.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/57180/elife-57180-fig1-v1.jpg)\n\n**Figure 1.:** Mutations or PTMs act most locally, protein-protein interactions (PPIs) act on the protein domain level, and changes in the global environment, such as crowding or phase separation, act non-specifically and globally on the protein. Each of them affects conformational thermodynamics and kinetics to fine-tune the protein conformational state space and thereby protein function.\n\nAt first sight, all three modulations provoke a similar steady-state behavior in Hsp90. But our single-molecule experiments allow us to disentangle the different underlying causes thereof.\n\n## Results\n\n### Mutation, cochaperone and crowding show similar thermodynamics\n\nFirst we follow yeast Hsp90's conformational kinetics in real-time using single-molecule F\u00f6rster resonance energy transfer (smFRET) measured on a total-internal reflection fluorescence (TIRF) microscope (Figure 2a). The FRET pair configuration displayed in Figure 2a (top) results in low FRET efficiency (little acceptor fluorescence) for V-shaped, open conformations of Hsp90, and high FRET efficiency (intense acceptor fluorescence) for more compact, closed conformations. This allows us to obtain steady-state information, like the population of closed conformations, and also the kinetics of conformational changes (Schmid et al., 2016; Roy et al., 2008; Lerner et al., 2018; Mazal and Haran, 2019). Example traces obtained from three Hsp90 molecules under different conditions are displayed in Figure 2b: First for the point mutant A577I, then in the presence of the cochaperone Aha1, and lastly under macro-molecular crowding by Ficoll400. The observed transitions between the low- and high-FRET states reflect global opening or closing. Figure 2c shows the steady-state (equilibrium) population of open and closed conformations. In all three cases, a shift toward closed conformations is observed with respect to the corresponding reference distribution obtained under equivalent experimental conditions (see caption of Figure 2 and Materials\u00a0and\u00a0methods for details). The optimal buffer conditions for each of the three cases differ slightly, which explains the differences between the three reference datasets displayed in Figure 2c (black lines). Relative populations and their uncertainties were obtained by bootstrapping (see Materials\u00a0and\u00a0methods and Supplementary file 1).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/57180/elife-57180-fig2-v1.jpg)\n\n**Figure 2.:** (a) Illustration of the single-molecule FRET experiment using an objective-type TIRF microscope (bottom): cross section through the objective, and flow chamber (both gray) and the dichroic mirror (black) separating the laser excitation (green) from the collected fluorescence (yellow). The zoom view (top) shows the fluorescently labeled Hsp90 (FRET donor, orange; acceptor red), which is immobilized on a PEG-passivated (dark blue) coverslip (light blue) using biotin-neutravidin coupling (black and gray). (b) Example time traces obtained from individual Hsp90 molecules for the point mutant A577I (top), in the presence of 3.5 \u00b5M cochaperone Aha1 (center), or under macro-molecular crowding by 20wt% Ficoll400 (bottom). Depicted are the FRET efficiency E (black), the fluorescence of the FRET donor (green) and acceptor (red) and the directly excited acceptor (gray). White and colored overlays denote low- and high-FRET dwells, respectively, as obtained using a hidden Markov model and the Viterbi algorithm. (c) FRET histograms compiled from many single-molecule trajectories as indicated, and normalized to unity (wt: wild type). Reference data (black) were measured under the specific conditions of each of the three experiment series (see also Materials\u00a0and\u00a0methods). Example traces of the reference data are provided in Figure 2\u2014figure supplement 1. All fits and fit coefficients for 2 c are shown in Figure 2\u2014figure supplement 2. Experimental conditions for A577I or wt Hsp90: 2 mM ATP in 40 mM Hepes, 150 mM KCl, 10 mM MgCl2, pH7.5. Conditions with and without 3.5 \u00b5M Aha1: wt Hsp90, 2 mM ATP in 40 mM Hepes, 20 mM KCl, 5 mM MgCl2, pH 7.5. Conditions with and without crowding by 20wt% Ficoll400: wt Hsp90 in 40 mM Hepes, 150 mM KCl, 10 mM MgCl2, pH7.5. The data were recorded in 5 to 13 videos per dataset, on one or more days. The number of individual molecules included per histogram are: A577I, 154; wt, 163; +Aha1, 366; -Aha1, 231; +crowding, 50; -crowding, 81. All smFRET traces are available from Figure 2\u2014source data 1.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/57180/elife-57180-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Example traces of the three reference datasets (black lines in Figure 2c, labeled: wt, -Aha1, -crowding) used for the point mutation, the Aha1 interaction, and macro-molecular crowding (top to bottom). Color code and experimental conditions as in Figure 2.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/57180/elife-57180-fig2-figsupp2-v1.jpg)\n\n**Figure 2\u2014figure supplement 2.:** Double-gaussian fits (blue lines) to the histograms of Figure 2c including fit coefficients and their standard deviations. For the smallest high-FRET populations, the peak positions x02 were held fixed to avoid unreasonable x02\u00a0<\u00a00.5 (leading to standard deviation\u00a0=\u00a00). Fit function: f(x)=z0 + A1 * exp( -((x\u2013x01)/xWidth1)^2 ) + A2 * exp( -((x\u2013x02)/xWidth2)^2 ).\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/57180/elife-57180-fig2-figsupp3-v1.jpg)\n\n**Figure 2\u2014figure supplement 3.:** FRET efficiency histograms for the wild-type (wt), hetero-dimer (577l/wt) and homo-dimer (577l) show an additive effect of the A55I mutation on Hsp90\u2019s shift toward the closed conformation. Histogram integrals are normalized to unity.\n\n![Figure 2\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/57180/elife-57180-fig2-figsupp4-v1.jpg)\n\n**Figure 2\u2014figure supplement 4.:** FRET effi-ciency histograms in the absence of nucleotides (apo), and with varied weight percent sucrose or Ficoll400 show different effects on Hsp90\u2019s conformational equilibrium. Histogram integrals are normalized to unity.\n\nThe A577I mutation increased the closed population from (13\u00a0\u00b1\u00a03.5)% to (51\u00a0\u00b1\u00a05.5)%. This is a large effect considering that no big change in hydrophobic nor charged interactions is expected to result from this hydrophobic-to-hydrophobic point mutation. In particular, as the slightly bulkier isoleucine side chain points outward in the crystal structure of Hsp90\u2019s closed conformation (Ali et al., 2006). In addition to the A577I homodimer, already the A577I/wild type (wt) hetero-dimer shows a considerably larger population of closed conformations, especially in the presence of ATP (Figure 2\u2014figure supplement 3 (left)). Under ADP conditions the additive effect is also observed, but weaker (Figure 2\u2014figure supplement 3 (right)). Under both conditions, the second A577I in the homodimer leads to a further shift toward closed conformations. The slight but consistent shift of the corresponding low-FRET peak in Figure 2c (left) could be explained by a sterical hindrance of the farthest opening in the A577I homodimer. Furthermore, very fast transitions at the temporal resolution limit (200 ms) occurred more frequently, which can be seen by the increased overlap between the two populations. Both, sterical hindrance and faster transitions, can be interpreted as a global stiffening of Hsp90\u2019s structural core formed by the C- and middle domain. The interaction with Aha1 (Figure 2c, center) forms inter-domain (N\u2013M) and inter-monomer contacts. The latter increase the affinity for N-N binding, and thus cause Hsp90 to shift from (24\u00a0\u00b1\u00a04.0)% closed to (48\u00a0\u00b1\u00a05.0)% closed population, which is in line with previous qualitative reports (Hessling et al., 2009; Wortmann et al., 2017). Lastly, macro-molecular crowding increased the closed population from (11\u00a0\u00b1\u00a04.5)% to (50\u00a0\u00b1\u00a010.5)%, in agreement with previous ensemble findings (Halpin et al., 2016). In contrast, to the A577I mutant, crowding slowed down fast fluctuation at the resolution limit, which creates well-separated populations in Figure 2c). The induced shift toward closed conformations appears in a concentration-dependent manner, as can be seen in Figure 2\u2014figure supplement 4. In contrast to polymeric, branched sucrose (Ficoll400), monomeric sucrose had only negligible effect on the steady-state populations. This proves that macro-molecular crowding is the cause of the observed population shift, and a biochemical glucose-associated reason can be dismissed.\n\nIn all three cases, a clear shift toward closed conformations is observed, although to slightly different extents. Importantly, based on these distributions alone, the energetic origin of the population shift remains unclear. That\u00a0is whether the observations arise from a stabilization of closed conformations, or a destabilization of the open conformations, or even a combination of both. To answer these questions, we solved the full kinetic rate model, presented below.\n\n### Same thermodynamics, different conformational kinetics\n\nFigure 3a shows the kinetic rate models describing Hsp90's global opening and closing dynamics. The significant changes caused by each type of modulation are highlighted in red and green as indicated. The corresponding quantitative rate changes and confidence intervals are displayed in Figure 3b. We used the Single-Molecule Analysis of Complex Kinetic Sequences (SMACKS [Schmid et al., 2016]) to quantify rate constants and uncertainties directly from the smFRET raw data. For Hsp90\u2019s global conformational changes, we consistently infer 4-state models (Schmid et al., 2016; Schmid et al., 2018; Schmid and Hugel, 2018): two low-FRET states (open conformations) and two high-FRET states (closed conformations). Although only two different FRET efficiencies can be resolved, at least four kinetic states are needed to describe the observed kinetic heterogeneity. Based on recent results (Hellenkamp et al., 2017), we expect an entire ensemble of open sub-conformations that - on the timescale of the experiment - are sufficiently well described by two kinetically different low-FRET states. The two closed states, one short-lived (state 2) and one longer-lived (state 3), likely differ in local conformational elements (Giannoulis et al., 2020; Huang et al., 2019). The well-known N-terminal beta-sheet with or without its cross-monomer contacts (as observed in the closed crystal structure [Ali et al., 2006]) could explain the additional stabilization of state 3 with respect to state 2. All states 0, 1, 2, 3 of this highly dynamic Hsp90 system represent conformational ensembles that are defined by their FRET efficiency and their kinetics (rather than discrete or \u2018frozen\u2019 conformations).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/57180/elife-57180-fig3-v1.jpg)\n\n**Figure 3.:** (a) Kinetic rate models observed for the point mutant A577I, the cochaperone Aha1, the macro-molecular crowding agent Ficoll400 - each compared to the reference data: wild-type, no Aha1, no crowding, respectively. Significant differences to the reference are highlighted in red and green. Conformational kinetics are described by four states: states 0,1 represent open conformations, and 2,3 are closed conformations. Large and small arrows and circles indicate the size of rates and populations, respectively. For crowding, only 3 links are found. (b) The relative rate change under the three conditions in (a) with respect to the reference. Gray boxes show the 95% confidence interval of the reference data. Transition names and color code as in (a). All values are listed in Supplementary file 1C. The molecule counts are the same as for Figure 2.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/57180/elife-57180-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Results for Hsp90 in the presence of 2 mM ATP (ATP), and in the presence of 2 mM ATP + 3.5 \u00b5M Aha1 (Aha1). Left panels in linear scale, right panels in logarithmic scale.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/57180/elife-57180-fig3-figsupp2-v1.jpg)\n\n**Figure 3\u2014figure supplement 2.:** Results for Hsp90 wild-type (wt), and the A577I hetero-dimer (577I/wt), and homo-dimer (577I), under ATP and ADP conditions as indicated. Left panels in linear scale, right panels in logarithmic scale.\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/57180/elife-57180-fig3-figsupp3-v1.jpg)\n\n**Figure 3\u2014figure supplement 3.:** (a) Kinetic state models for wt Hsp90% and 20% sucrose and 20% Ficoll400 (left to right): closed states, gray; open states, white; population represented by circle size; transition rate represented by arrow width.\u00a0(b) Transition rates with 95% confidence intervals in logarithmic scale.\n\nIn the case of the cochaperone Aha1, the shift in the FRET efficiency histogram originates from opposing changes of the fast rates between states 1 and 2 (Figure 3\u2014figure supplement 1). This is in contrast to the effect of the C-terminal point mutation A577I, which collectively accelerates the pathway from state 0 via state 1 and state 2 to state 3. Note that a kinetic model with only three links - similar to the model for crowding in Figure 3a, right - is statistically sufficient (according to likelihood ratio testing detailed in Schmid et al., 2016\u00a0SI point 1.2) to describe the observed kinetics of the A577I homodimer, implying less kinetically heterogeneous fluctuations (Figure 3\u2014figure supplement 2).\n\nUnder macro-molecular crowding, changes of the conformational dynamics are visible already from the stationary distributions: as shown in Figure 2a, the low and high FRET populations are most separated in this case. This is indicative of fast fluctuations, at or below the timescale of the sampling rate (5 Hz) that are slowed down at higher viscosity. Still, transitions between open and closed conformations are regularly observed in the experiment (Figure 3\u2014figure supplement 3). For the fully resolved kinetics, the main difference is observed for the rates between the closed states 2 and 3. This agrees with the increase of the closed population under macro-molecular \u2013 but not small molecular \u2013 crowding. Altogether, Figure 3 shows three completely different kinetic effects that underlie seemingly analogous ensemble behavior.\n\nBased on the complete kinetic rate models, we can now deduce the impact on free energies along a specific spatial reaction coordinate, here the N-terminal extension (Figure 4). The point mutation A577I causes an asymmetric destabilization of open conformations. Aha1 leads to simultaneous destabilization of open conformations and stabilization of closed conformations, whereas macro-molecular crowding only stabilizes closed conformations. Importantly, this information is not accessible from the steady-state distributions in Figure 2c.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/57180/elife-57180-fig4-v1.jpg)\n\n**Figure 4.:** (a) The open conformation is destabilized by the A577I mutation. (b) Aha1 inversely affects both equilibria. (c) Macro-molecular crowding stabilizes the closed conformation. The dashed black line indicates the reference. This mechanistic information was obtained from all six rate models represented in Figure 3, it is not accessible from Figure 2c alone. To illustrate the changes on the global energy landscapes, we chose the transition state as a reference for the measured relative energies.\n\n### ATPase stimulation \u2013 to varying degrees\n\nThe collective shift toward closed conformations is accompanied by an overall increase in ATPase activity under all three conditions (Figure 5): 7-fold for A577I, 17-fold for Aha1, 4-fold for crowding, respectively. Thus, the increase in ATP hydrolysis rate does not reflect the increase in the closed population observed in Figure 2c. This is a first indication of causalities that involve more than just the occurrence of closed conformations. In the following, we dissect the molecular origins of the increased ATPase activity. The effect of macro-molecular crowding can serve as an estimate of the ATPase stimulation caused exclusively by the relative stabilization of closed conformations, because a biochemical interaction of sucrose was excluded in control experiments (see above). Remarkably, the entirely non-specific interaction leads already to a considerable ATPase acceleration of a factor 4. This supports the wide-spread notion that the closed conformation represents Hsp90's active state (Prodromou, 2012). But, in comparison to the biochemical effect of the cochaperone Aha1, the stimulation by crowding is still modest, despite the much larger closed population. Specifically, the 4.5-fold increased closed population, comes with a 4-fold increased ATPase activity, whereas in the presence of Aha1 already a 2-fold increased closed population is accompanied by a 17-fold ATPase stimulation. The fact that Aha1 induces the smallest increase in closed population, but under the same conditions the largest ATPase stimulation, highlights the functional importance of specific contacts between Aha1 and Hsp90, which are responsible for 88% of the ATPase stimulation by Aha1.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/57180/elife-57180-fig5-v1.jpg)\n\n**Figure 5.:** Namely by the point mutation A577I (Retzlaff et al., 2009), in the presence of 3 \u00b5M Aha1 (Jahn et al., 2014) and 20wt% Ficoll400, respectively. The ATPase stimulations are normalized by the activity of the wild type, without Aha1 and without crowding, respectively.\n\nIn the case of the A577I mutant a 3.9-fold increased closed population comes with a 7-fold ATPase amplification. This could result from the mentioned hindrance of extremely open states indicating a conformational stiffening, restricting Hsp90's native flexibility. In other words, not only changes in the equilibrium, but also changes in the kinetics affect the ATPase activity as discussed below.\n\nA comparison of the observed changes on the conformational steady-state and the ATPase rate allows us to estimate the contribution of conformational confinement in each case (Supplementary file 1B). We find that conformational confinement accounts for 100% of the ATPase stimulation induced by macro-molecular crowding, for 60% of the stimulation by the point mutation A577I, and for only 10% of the stimulation by cochaperone Aha1. The contribution of conformational confinement is thus largest for purely non-specific interactions, while additional allosteric effects may increase the stimulation by A577I, and specific rearrangements of the active site dominate the stimulating action of cochaperone Aha1. Our data do not indicate additional combinatorial effects of these three stimulations, which can be investigated in a future study.\n\n## Discussion\n\nHerein we compare three types of Hsp90 modulations, spanning a wide range from a site-specific point mutation, via cochaperone binding, to completely non-specific macro-molecular crowding. All three modulations provoke a similar steady-state (equilibrium) behavior, namely an increase in Hsp90's closed conformation and in Hsp90's ATPase rate. In contrast, they show significant differences in their kinetics, which could be revealed by single-molecule FRET. This can be rationalized by the emerging picture of yeast Hsp90, as a very flexible dimer that relies critically on external assistance (e.g. by cochaperones) to control its non-productive flexibility. For example, Hsp90\u2019s ATPase function requires the concerted action of the N-terminal nucleotide binding pocket with the ATP lid and distant elements such as the catalytic loop of the middle domain and parts of the opposite N-domain (the N-terminal \u03b21-\u03b11 segment). These elements \u2013 also called the catalytic unit (Prodromou, 2012) - however, are very flexible, such as the entire multi-domain dimer. Consequently, anything that constrains this flexibility and confines Hsp90 in a more compact conformation, has a high potential to increase the combined probability for such a concerted action - be it by specific or even non-specific interaction.\n\nFigure 6 shows that the functional impact of conformational confinement can be understood as a direct result of combinatorics: in a flexible protein such as Hsp90, the catalytically active elements have many translational and rotational degrees of freedom. Thus, the probability for a certain hydrolysis-competent conformation is very small. It is however increased dramatically by conditions that constrain these degrees of freedom \u2013 even non-specifically \u2013 and localize the catalytically active elements. This notion can be further extended to cochaperone binding, and it also explains mutual effects upon client interaction. We conclude, while Hsp90\u2019s flexibility may facilitate its numerous interactions with diverse clients and cochaperones, the flexibility itself has substantial off-state character regarding the ATPase function of Hsp90. In turn, by directly affecting the lifetime of the nucleotide/active site contacts and the resulting structural stabilization, ATP hydrolysis controls also longer-range allosteric effects linked to these residues.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/57180/elife-57180-fig6-v1.jpg)\n\n**Figure 6.:** Enzymatic binding pockets of proteins are often composed of flexible elements with many degrees of freedom, (a) left. All of these have to adopt a specific 3D configuration to form the catalytically active state, (a) right. For\u00a0example in Hsp90, the hydrolysis competent state includes direct contacts with residues from different domains: G100, T171, D79, N37, E33, R380, and G121-F124 (counter-clockwise from top, in the left panel). As a result, the probability to be in the catalytically active state is very small, compared to the combined probability for all other accessible conformations (left), and the catalytic activity is low. Intriguingly, specific or non-specific confinement reduces the non-productive degrees of freedom in Hsp90, leading to a relative stabilization of the hydrolysis-competent state and therefore stimulation of the catalytic activity, as illustrated in (b). Here we have shown that this can occur through allosteric effects of mutations, protein-protein interaction, or macromolecular crowding. Structures were visualized with Pymol, based on pdb entry 2cg9.\n\nA closer look at the regulation of Hsp90's conformational energy landscape by single-molecule FRET shows the many ways to reach similar ensemble results. The point mutation A557I destabilizes the open conformation, most probably by preventing access to a subset of the conformational ensemble of open states. This leads to an overall stiffened structure (more confined) of the A577I homodimer and therefore less extensive random walks, that\u00a0is a more streamlined conformational transition toward the closed conformations. Macro-molecular crowding stabilizes the closed conformation by simple, sterical confinement. The cochaperone Aha1 combines both mechanisms with additional specific rearrangements. In theory, all three modulations can lead to the exactly same thermodynamic observation, and in fact we observe very similar steady-state distributions. Nevertheless, the kinetics may still vary significantly \u2013 as experimentally demonstrated herein. This is an important mathematical fact that holds true for all protein systems.\n\nMoreover, our findings indicate that regulation by cochaperones - and protein-protein interactions in general - can have far-reaching thermodynamic, kinetic, and functional consequences. Some of them can possibly be mimicked by individual point mutations, but other consequences might be missed. Lastly, as shown in this work, already non-specific, purely physical macro-molecular crowding has strong effects on thermodynamics, kinetics and function, therefore caution is advised when relating in vitro findings to in vivo function. Certain mutations that show little or no ATPase activity in vitro, may be \u2018rescued\u2019 by the conformational confinement in the crowded cellular environment, and still be ATPase active in vivo. As demonstrated herein, in many in vitro experiments macro-molecular crowding could easily be included.\n\nIn conclusion, we demonstrated herein three ways of protein regulation, ranging from site-specific localized to global modulations. All three ways show very similar thermodynamic observations, which are, however, caused by clearly different conformational kinetics. This is direct evidence for the importance of kinetics, and of the dynamic structure\u2013function relationship in proteins. The reduction of non-productive structural flexibility stimulates Hsp90\u2019s ATPase function even by entirely non-specific means. Our findings demonstrate that functional stimulation as a result of conformational combinatorics plays an important role in protein regulation. We anticipate that such conformational confinement - by localized or global modulations - is an important mechanistic concept with wide-spread implications for protein function in diverse systems.\n\n## Materials and methods\n\n### Protein construct preparation\n\nYeast Hsp90 dimers (UniProtKB: P02829) with a C-terminal coiled-coil motif (kinesin neck region of D. melanogaster) were used to avoid dissociation at low concentrations (Mickler et al., 2009). Previously published cysteine positions (Hessling et al., 2009) allowed for specific labeling with donor (61C) or acceptor (385C) fluorophores (see below). Point mutation A577I was introduced using QuikChange Lightning Site-Directed Mutagenesis Kit (Agilent Technologies). The constructs were cloned into a pET28b vector (Novagen, Merck Biosciences, Billerica, MA). They include an N-terminal His-tag followed by a SUMO-domain for later tag cleavage. The QuickChange Lightning kit (Agilent\u00a0Technologies, Santa Clara, CA) was used to insert an Avitag for specific in vivo biotinylation at the C-terminus of the acceptor construct. Escherichia coli BL21star cells (Invitrogen, Carlsbad, CA) were cotransformed with pET28b and pBirAcm (Avidity Nanomedicines, La Jolla, CA) by electroporation (Peqlab, Erlangen, Germany) and expressed according to Avidity\u2019s in vivo biotinylation protocol. The donor construct was expressed in E. coli BL21(DE3)cod+ (Stratagene, San Diego, CA) for 3 hr at 37\u00b0C after induction with 1 mM isopropyl \u03b2-D-1-thiogalactopyranoside (IPTG) at OD600\u00a0=\u00a00.7 in LBKana. A cell disruptor (Constant Systems, Daventry, United Kingdom) was used for lysis in both cases. Proteins were purified as published (Jahn et al., 2014) (Ni-NTA, tag cleavage, anion exchange, size exclusion chromatography). 95% purity was confirmed by SDS-PAGE. Fluorescent labels (Atto550- and Atto647N-maleimide) were purchased from Atto-tec (Siegen, Germany) and coupled to cysteins according to the supplied protocol. If not stated differently, all chemicals were purchased from Sigma Aldrich,\u00a0St.\u00a0Louis,\u00a0MO.\n\nSingle-molecule FRET (smFRET) was measured as previously detailed using a home built TIRF setup (Schmid et al., 2016). Hetero-dimers (acceptor + donor) were obtained by 20 min incubation of 1 \u00b5M donor and 0.1 \u00b5M biotinylated acceptor homodimers in measurement buffer (40 mM Hepes, 150 mM KCl, and 10 mM MgCl2, pH7.5) at 47\u00b0C. This favors biotinylated heterodimers to bind to the polyethylene glycol (PEG, Rapp Polymere, Tuebingen, Germany) passivated and neutravidin (Thermo Fisher Scientific, Waltham, MA) coated fluid chamber. Residual homodimers are recognized using alternating laser excitation (ALEX) of donor and acceptor dyes (Lee et al., 2005; Hellenkamp et al., 2018) and excluded from analysis. For optimal interaction affinity with Aha1, measurements were performed in low salt buffer (40 mM Hepes, 20 mM KCl, 5 mM MgCl2, pH 7.5 with 3.5 \u00b5M Aha1 and 2 mM ATP). For comparison, data without Aha1 were measured accordingly. Notably, significant binding was previously found for Aha1 with labeled Hsp90-385C at much lower concentration of 0.3 \u00b5M (Li et al., 2013), which is exactly the dissociation constant reported for unlabeled Hsp90 (Panaretou et al., 2002). This implies that, although not directly detectable in the experiment, Hsp90 exists predominantly in complex with Aha1 under the used conditions. A577I/wt constructs were created through monomer exchange (see above). They are distinguished from both kinds of homodimers through the fluorescence signal (donor+acceptor). Measurements were performed in measurement buffer plus 2 mM ATP if not stated differently. Macro-molecular crowding was mimicked by 20wt% polymeric sucrose, known as Ficoll400 (Sigma Aldrich) in measurement buffer if not stated differently.\n\n### Single-Molecule FRET data analysis\n\nSingle-molecule FRET trajectories were selected, and corrected for background, donor leakage, acceptor direct excitation, as well as different fluorescence quantum yields, detection efficiencies, excitation efficiencies, and laser powers, as described before (Hellenkamp et al., 2018).\n\nThe uncertainties of steady-state populations were estimated by bootstrapping: out of each dataset, random subsets (or samples) containing two thirds of the total number of traces were drawn with replacement. A histogram was compiled for each subset, and fitted with a double-Gaussian fit function and fixed peak positions from Figure 3\u2014figure supplement 2. Relative populations were obtained for each histogram. This was repeated for 1000 subsets. We report the means of 1000 such populations, and as an uncertainty measure their standard deviations (rounded upwards to 0.5). See also Supplementary file 1A.\n\nSMACKS is based on two-dimensional semi-ensemble Hidden Markov models (HMMs), as described in detail earlier (Schmid et al., 2016). In brief, smFRET donor and acceptor fluorescence traces serve as input data. SMACKS comes in two steps. First, individual HMMs are optimized for each molecule separately, to allow for the experimentally observed intensity differences between different molecules. The resulting emission parameters for each molecule \u2013 that\u00a0is Gaussian mean and variance representing the fluorescence intensity levels - are then used for the second step: the semi-ensemble HMM optimization. Now the kinetic parameters \u2013 so-called start and transition probabilities \u2013 are ensemble-optimized based on an entire dataset, using the individual emission parameters of the first step. The transition probabilities are converted into rate constants by considering the sampling rate of the experiment (frames per second). Several such HMM optimizations with increasing model size (i.e. numbers of states) are calculated, and compared using the Bayesian Information Criterion (BIC), which reproducibly yields four states for Hsp90\u2019s characteristic conformational dynamics: two open, two closed. Within the four-state model, we determine the most likely number of links using likelihood ratio tests following the hierarchical search for simplified models described in Bruno et al., 2005.\n\n### Activity assay\n\nATPase activity was measured at 37\u00b0C coupled to NADH oxidation, which was followed as a decrease in absorption at 340 nm using an ATP regenerative assay similar to Tamura and Gellert, 1990: 0.2 mM NADH Di-Na (Roche,\u00a0Basel,\u00a0CH); 2 mM phosphoenol pyruvate K-salt (Bachem,\u00a0Bubendorf,\u00a0CH); 2 U/ml pyruvate kinase, Roche; 10 U/ml lactate dehydrogenase, Roche; in 40 mM Hepes, 150 mM KCl, 10 mM MgCl2, pH 7.5.\n",
+      "created_at": "2025-12-02T18:39:56.081136Z"
+    },
+    {
+      "id": "9c6b79b9-4c54-4179-81fd-3fa72c7d1dec",
+      "submission_id": "0f381ab7-a814-4471-a551-1b8221751949",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Maria Spies, University of Iowa United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.57180.sa1](https://doi.org/10.7554/eLife.57180.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nThank you for submitting your article \"Controlling protein function across scales \u2013 from point mutation to crowding\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Jos\u00e9 Faraldo-G\u00f3mez as the Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Michael Schlierf (Reviewer #2); Timothy Craggs (Reviewer #3).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nWe would like to draw your attention to changes in our revision policy that we have made in response to COVID-19 (https://elifesciences.org/articles/57162). Specifically, when editors judge that a submitted work as a whole belongs in eLife but that some conclusions require a modest amount of additional new data, as they do with your paper, we are asking that the manuscript be revised to either limit claims to those supported by data in hand, or to explicitly state that the relevant conclusions require additional supporting data. In the case of your paper, the manuscript can benefit from some combinatorial experiments (see suggestions below).\n\nOur expectation is that the authors will eventually carry out the additional experiments and report on how they affect the relevant conclusions either in a preprint on bioRxiv or medRxiv, or if appropriate, as a Research Advance in eLife, either of which would be linked to the original paper.\n\nSummary:\n\nSchmid and Hugel present a detailed smFRET study on HSP90 conformational kinetics as it transitions between four conformational states. The authors investigate the effects of mutations, co-chaperones and crowding on state population and kinetics. What add significance to the study is a demonstration of the effects of molecular crowding, which is used to simulate conditions resembling cellular environment. Most prominent finding here is a demonstration that variations in experimental conditions (e.g. mutations or crowding) may have similar thermodynamic effects as revealed via population experiments, while very different kinetic effects. Thus, the study highlight the importance to discriminate steady-state thermodynamic outputs from kinetic effects and the ability of smFRET approach to extract both parameters using the same set of data.\n\nAll reviewers and the editor agree that the study is important and well executed. The results are interesting and novel, and the concepts discussed are applicable to many conformationally dynamic protein systems.\n\nEssential revisions:\n\nWhile the reviewers agree that there is no need for essential additional data, we felt that if you have some combinatorial experiments, e.g. Aha1 and crowding to support their claims of combinatorial effects (Figure 6). Otherwise, you could weaken some of the concluding claims.\n\nPlease address the following questions regarding the interpretation and data analysis:\n\n1) Figure 2 and data therein:\n\nHaving the conditions for the three different experiments in the legend would be helpful. Does this explain the difference in the reference data (i.e. the ionic strength effects the overall conformational profile)? It would be useful to provide some quantitation of the mid-point of the FRET populations (or present them in a vertical stack to aid comparison.) Are the reference data for Figure 2C plots 1 and 3 measured under identical conditions? If so, is the difference between these data significant?\n\n2) In Figure 2B, please show representative traces for WT sample without cochaperone or crowding factor; change the format of all the traces so that the idealization quality can be checked visually by reader. The fitting of time traces to determine the kinetics of transitions is central to the presented work. Please provide some detail as to how the SMACKS algorithm works. Does it involve a global fit to ALL the data? From the results presented, it is not clear how you rule out transitions between, for example state 0 and state 2. Is this just what falls out of the data analysis?\n\n3) 4 states are proposed to fit the kinetic model best. You assume that HSP90 is adapting the same identical molecular conformations, meaning state 0, 1, 2, and 3 are the same states in presence or absence of e.g. the co-chaperone. However, the peaks in the FRET efficiency histograms, especially of the high FRET efficiency state, but also the low FRET efficiency state (in A577I) are strongly shifted in presence of all modifications, which indicate a slightly different molecular conformation. For a strict comparison of free energy landscapes as suggested in Figure 4 no common reference state is therefore available. Please discuss whether the kinetics states are necessarily different conformations to which your current signal is blind?\n\n4) As a common reference state, the transition state between the N-terminal compact and N-terminal expanded state id used (Figure 4). Is there any evidence that this is possible, why not the compact or expanded state?\n\n5) Figure 4: From your kinetics you have some idea of the rates of the transitions between the 2 open conformations and the two closed conformations which you could show in a supplementary figure? This is potentially helpful because for example Figure 4C it is really state 3 that is stabilized with respect to state 2.\n\n6) Each measured reference should be identical. Yet, the population of the high FRET efficiency state varies from 14 to 29%. This is a two-fold difference, which is also what kinetically is named as a significant difference in transition rates. Can you explain this difference, explain how the state occupancies in the subsection \u201cMutation, cochaperone and crowding show similar thermodynamics\u201d have been determined and what the relative error is? It would further be good to also show example traces of the reference experiments with wt in the figure supplements to give the reader a chance for comparison beyond the state histogram and rate summaries.\n\n7) Please expand the following discussion: What does the current work allow the authors to conclude about the function of the ATPase activity in HSP90? Especially delineate the physico-chemical conclusions from the functional conclusion.\n\n8) Figure 6 suggests combinatorial effects. By extension, this suggests that crowding and the point-mutation would have an even more enhanced effects of transition rates or ATPase activity. Can you show evidence by a combination of any two of their conditions and support the combinatorial suggestion from Figure 6?\n\n9) A clearer description of the data analysis needs to be placed in the Materials and methods section.\n\n10) Statistical errors are reported for the interconversion rates between the various conformational states detected. Please also specify whether the results of each experimental condition were obtained from a single experiment (i.e. video) recorded in a single day, or that the results of each experimental condition were obtained from a set of videos recorded on different days to check for reproducibility? Regarding the state populations an error of the extracted percentages would be helpful. This can be done e.g. by bootstrapping.\n",
+      "created_at": "2025-12-02T18:39:56.081136Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T18:39:56.081136Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T18:39:56.081136Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "1324df90-5864-4c07-809b-f995b70f3127",
+      "content_id": "7f319b28-4fe4-493a-98dc-56f314b91d22",
+      "claim_id": "C1",
+      "claim": "Protein function is regulated by post-translational modifications (PTMs).",
+      "claim_type": "EXPLICIT",
+      "source": "In a living cell, protein function is regulated in several ways, including post-translational modifications (PTMs), protein-protein interaction, or by the global environment (e.g. crowding or phase separation).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the abstract as a known mechanism of protein regulation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:39:56.081136Z"
+    },
+    {
+      "id": "b1a1415e-8663-4499-8096-0a8f0672950a",
+      "content_id": "7f319b28-4fe4-493a-98dc-56f314b91d22",
+      "claim_id": "C2",
+      "claim": "Protein function is regulated by protein-protein interaction.",
+      "claim_type": "EXPLICIT",
+      "source": "In a living cell, protein function is regulated in several ways, including post-translational modifications (PTMs), protein-protein interaction, or by the global environment (e.g. crowding or phase separation).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the abstract as a known mechanism of protein regulation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:39:56.081136Z"
+    },
+    {
+      "id": "a8add863-cfd5-43b9-be63-565be503c145",
+      "content_id": "7f319b28-4fe4-493a-98dc-56f314b91d22",
+      "claim_id": "C3",
+      "claim": "Protein function is regulated by the global environment such as crowding or phase separation.",
+      "claim_type": "EXPLICIT",
+      "source": "In a living cell, protein function is regulated in several ways, including post-translational modifications (PTMs), protein-protein interaction, or by the global environment (e.g. crowding or phase separation).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the abstract as a known mechanism of protein regulation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:39:56.081136Z"
+    },
+    {
+      "id": "69d8764a-e30a-4fcd-b361-f3c90dbed510",
+      "content_id": "7f319b28-4fe4-493a-98dc-56f314b91d22",
+      "claim_id": "C4",
+      "claim": "Site-specific PTMs act very locally on the protein.",
+      "claim_type": "EXPLICIT",
+      "source": "While site-specific PTMs act very locally on the protein, specific protein interactions typically affect larger (sub-)domains, and global changes affect the whole protein non-specifically.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a characterization of how PTMs affect proteins.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:39:56.081136Z"
+    },
+    {
+      "id": "246b2632-12c5-4f11-953d-f867bd3d4f7b",
+      "content_id": "7f319b28-4fe4-493a-98dc-56f314b91d22",
+      "claim_id": "C5",
+      "claim": "Specific protein interactions typically affect larger (sub-)domains.",
+      "claim_type": "EXPLICIT",
+      "source": "While site-specific PTMs act very locally on the protein, specific protein interactions typically affect larger (sub-)domains, and global changes affect the whole protein non-specifically.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a characterization of how protein interactions affect proteins.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:39:56.081136Z"
+    },
+    {
+      "id": "c3c6785a-5bbc-4257-a4e9-de06c1c39654",
+      "content_id": "7f319b28-4fe4-493a-98dc-56f314b91d22",
+      "claim_id": "C6",
+      "claim": "Global changes affect the whole protein non-specifically.",
+      "claim_type": "EXPLICIT",
+      "source": "While site-specific PTMs act very locally on the protein, specific protein interactions typically affect larger (sub-)domains, and global changes affect the whole protein non-specifically.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a characterization of how global changes affect proteins.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:39:56.081136Z"
+    },
+    {
+      "id": "2ca21911-6016-41a9-9f64-a0a3f0f8ab6c",
+      "content_id": "7f319b28-4fe4-493a-98dc-56f314b91d22",
+      "claim_id": "C7",
+      "claim": "Using single-molecule FRET, similar functional and conformational steady states are caused by completely different underlying kinetics.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly using single-molecule FRET, we find that similar functional and conformational steady states are caused by completely different underlying kinetics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study based on single-molecule FRET experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:39:56.081136Z"
+    },
+    {
+      "id": "d2707e6f-6bb2-41e5-802f-177e72fe0051",
+      "content_id": "7f319b28-4fe4-493a-98dc-56f314b91d22",
+      "claim_id": "C8",
+      "claim": "The study disentangles specific and non-specific effects that control Hsp90's ATPase function.",
+      "claim_type": "EXPLICIT",
+      "source": "We disentangle specific and non-specific effects that control Hsp90's ATPase function, which has remained a puzzle up to now.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a primary contribution of the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:39:56.081136Z"
+    },
+    {
+      "id": "27c23eee-3b6a-40a9-8af8-79a0b828da87",
+      "content_id": "7f319b28-4fe4-493a-98dc-56f314b91d22",
+      "claim_id": "C9",
+      "claim": "Hsp90's ATPase function has remained a puzzle up to now.",
+      "claim_type": "EXPLICIT",
+      "source": "We disentangle specific and non-specific effects that control Hsp90's ATPase function, which has remained a puzzle up to now.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as background context for the study.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:39:56.081136Z"
+    },
+    {
+      "id": "a51dbdc8-50c7-4b12-8397-c0f7fa84be1f",
+      "content_id": "7f319b28-4fe4-493a-98dc-56f314b91d22",
+      "claim_id": "C10",
+      "claim": "The study introduces a new mechanistic concept: functional stimulation through conformational confinement.",
+      "claim_type": "EXPLICIT",
+      "source": "Lastly, we introduce a new mechanistic concept: functional stimulation through conformational confinement.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a primary contribution of the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:39:56.081136Z"
+    },
+    {
+      "id": "2f63ce03-f95f-491c-8568-7a797449e6e2",
+      "content_id": "7f319b28-4fe4-493a-98dc-56f314b91d22",
+      "claim_id": "C11",
+      "claim": "Cellular protein regulation works by fine-tuning the conformational state space of proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results demonstrate how cellular protein regulation works by fine-tuning the conformational state space of proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a conclusion from the study's results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:39:56.081136Z"
+    },
+    {
+      "id": "0fb8aa1d-f25f-4add-8ab4-ec2f878120f5",
+      "content_id": "7f319b28-4fe4-493a-98dc-56f314b91d22",
+      "claim_id": "C12",
+      "claim": "Protein function depends strongly on post-translational modifications (PTMs) (Deribe et al., 2010).",
+      "claim_type": "EXPLICIT",
+      "source": "After translation by the ribosome, protein function depends strongly on post-translational modifications (PTMs) (Deribe et al., 2010), but also on binding of nucleotides (Hodge and Ridley, 2016), cofactors (Weikum et al., 2017), various protein-protein interactions (PPIs) (Scott et al., 2016), and global effects, such as temperature (Danielsson et al., 2015), macro-molecular crowding and phase separation (Uversky, 2017), redox conditions (Levin et al., 2017), osmolarity (de Nadal and Posas, 2015) etc.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Deribe et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:39:56.081136Z"
+    },
+    {
+      "id": "0d7b5f4b-3a5f-402e-b5d9-139e9ae79228",
+      "content_id": "7f319b28-4fe4-493a-98dc-56f314b91d22",
+      "claim_id": "C13",
+      "claim": "Protein function depends on binding of nucleotides (Hodge and Ridley, 2016).",
+      "claim_type": "EXPLICIT",
+      "source": "After translation by the ribosome, protein function depends strongly on post-translational modifications (PTMs) (Deribe et al., 2010), but also on binding of nucleotides (Hodge and Ridley, 2016), cofactors (Weikum et al., 2017), various protein-protein interactions (PPIs) (Scott et al., 2016), and global effects, such as temperature (Danielsson et al., 2015), macro-molecular crowding and phase separation (Uversky, 2017), redox conditions (Levin et al., 2017), osmolarity (de Nadal and Posas, 2015) etc.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Hodge and Ridley, 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:39:56.081136Z"
+    },
+    {
+      "id": "7e3bb802-461f-4233-96d4-1859cf465649",
+      "content_id": "7f319b28-4fe4-493a-98dc-56f314b91d22",
+      "claim_id": "C14",
+      "claim": "Protein function depends on binding of cofactors (Weikum et al., 2017).",
+      "claim_type": "EXPLICIT",
+      "source": "After translation by the ribosome, protein function depends strongly on post-translational modifications (PTMs) (Deribe et al., 2010), but also on binding of nucleotides (Hodge and Ridley, 2016), cofactors (Weikum et al., 2017), various protein-protein interactions (PPIs) (Scott et al., 2016), and global effects, such as temperature (Danielsson et al., 2015), macro-molecular crowding and phase separation (Uversky, 2017), redox conditions (Levin et al., 2017), osmolarity (de Nadal and Posas, 2015) etc.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Weikum et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:39:56.081136Z"
+    },
+    {
+      "id": "54263326-1a26-416b-a6f0-1d1606e69f0c",
+      "content_id": "7f319b28-4fe4-493a-98dc-56f314b91d22",
+      "claim_id": "C15",
+      "claim": "Protein function depends on various protein-protein interactions (PPIs) (Scott et al., 2016).",
+      "claim_type": "EXPLICIT",
+      "source": "After translation by the ribosome, protein function depends strongly on post-translational modifications (PTMs) (Deribe et al., 2010), but also on binding of nucleotides (Hodge and Ridley, 2016), cofactors (Weikum et al., 2017), various protein-protein interactions (PPIs) (Scott et al., 2016), and global effects, such as temperature (Danielsson et al., 2015), macro-molecular crowding and phase separation (Uversky, 2017), redox conditions (Levin et al., 2017), osmolarity (de Nadal and Posas, 2015) etc.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Scott et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:39:56.081136Z"
+    },
+    {
+      "id": "9d548062-2dde-4425-9085-d8af563d89ea",
+      "content_id": "7f319b28-4fe4-493a-98dc-56f314b91d22",
+      "claim_id": "C16",
+      "claim": "Protein function depends on global effects such as temperature (Danielsson et al., 2015).",
+      "claim_type": "EXPLICIT",
+      "source": "After translation by the ribosome, protein function depends strongly on post-translational modifications (PTMs) (Deribe et al., 2010), but also on binding of nucleotides (Hodge and Ridley, 2016), cofactors (Weikum et al., 2017), various protein-protein interactions (PPIs) (Scott et al., 2016), and global effects, such as temperature (Danielsson et al., 2015), macro-molecular crowding and phase separation (Uversky, 2017), redox conditions (Levin et al., 2017), osmolarity (de Nadal and Posas, 2015) etc.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Danielsson et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:39:56.081136Z"
+    },
+    {
+      "id": "20d060d0-8ac6-491e-8436-33a318c3c3f7",
+      "content_id": "7f319b28-4fe4-493a-98dc-56f314b91d22",
+      "claim_id": "C17",
+      "claim": "Protein function depends on macro-molecular crowding and phase separation (Uversky, 2017).",
+      "claim_type": "EXPLICIT",
+      "source": "After translation by the ribosome, protein function depends strongly on post-translational modifications (PTMs) (Deribe et al., 2010), but also on binding of nucleotides (Hodge and Ridley, 2016), cofactors (Weikum et al., 2017), various protein-protein interactions (PPIs) (Scott et al., 2016), and global effects, such as temperature (Danielsson et al., 2015), macro-molecular crowding and phase separation (Uversky, 2017), redox conditions (Levin et al., 2017), osmolarity (de Nadal and Posas, 2015) etc.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Uversky, 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:39:56.081136Z"
+    },
+    {
+      "id": "ec47ba76-4771-43a2-a24c-8acd7b8b4723",
+      "content_id": "7f319b28-4fe4-493a-98dc-56f314b91d22",
+      "claim_id": "C18",
+      "claim": "Protein function depends on redox conditions (Levin et al., 2017).",
+      "claim_type": "EXPLICIT",
+      "source": "After translation by the ribosome, protein function depends strongly on post-translational modifications (PTMs) (Deribe et al., 2010), but also on binding of nucleotides (Hodge and Ridley, 2016), cofactors (Weikum et al., 2017), various protein-protein interactions (PPIs) (Scott et al., 2016), and global effects, such as temperature (Danielsson et al., 2015), macro-molecular crowding and phase separation (Uversky, 2017), redox conditions (Levin et al., 2017), osmolarity (de Nadal and Posas, 2015) etc.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Levin et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:39:56.081136Z"
+    },
+    {
+      "id": "c961e4b7-2df1-42d3-9bd7-fad8f53a1605",
+      "content_id": "7f319b28-4fe4-493a-98dc-56f314b91d22",
+      "claim_id": "C19",
+      "claim": "Protein function depends on osmolarity (de Nadal and Posas, 2015).",
+      "claim_type": "EXPLICIT",
+      "source": "After translation by the ribosome, protein function depends strongly on post-translational modifications (PTMs) (Deribe et al., 2010), but also on binding of nucleotides (Hodge and Ridley, 2016), cofactors (Weikum et al., 2017), various protein-protein interactions (PPIs) (Scott et al., 2016), and global effects, such as temperature (Danielsson et al., 2015), macro-molecular crowding and phase separation (Uversky, 2017), redox conditions (Levin et al., 2017), osmolarity (de Nadal and Posas, 2015) etc.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to de Nadal and Posas, 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:39:56.081136Z"
+    },
+    {
+      "id": "4dfd8ffb-98c4-4f57-8d2f-788c5a5029b0",
+      "content_id": "7f319b28-4fe4-493a-98dc-56f314b91d22",
+      "claim_id": "C20",
+      "claim": "All forms of regulation influence the molecular properties that determine the 3D conformation, the conformational dynamics, and thereby also the function of a protein (Schwenkert et al., 2014; Lewandowski et al., 2015; Schummel et al., 2016; Wei et al., 2016; Csizmok and Forman-Kay, 2018).",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, all of them influence the molecular properties that determine the 3D conformation, the conformational dynamics, and thereby also the function of a protein (Schwenkert et al., 2014; Lewandowski et al., 2015; Schummel et al., 2016; Wei et al., 2016; Csizmok and Forman-Kay, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:39:56.081136Z"
+    },
+    {
+      "id": "61e0c525-dabf-4696-ba92-12ccd1687be1",
+      "content_id": "7f319b28-4fe4-493a-98dc-56f314b91d22",
+      "claim_id": "C21",
+      "claim": "The chaperone protein Hsp90 (Schopf et al., 2017) is an excellent test system to investigate diverse regulation mechanisms (Stetz et al., 2018).",
+      "claim_type": "EXPLICIT",
+      "source": "The chaperone protein Hsp90 (Schopf et al., 2017) is an excellent test system to investigate diverse regulation mechanisms (Stetz et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Schopf et al., 2017 and Stetz et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:39:56.081136Z"
+    },
+    {
+      "id": "24cf3f88-26a9-498c-8a7d-119edbc07619",
+      "content_id": "7f319b28-4fe4-493a-98dc-56f314b91d22",
+      "claim_id": "C22",
+      "claim": "A single PTM can functionally mimic a specific co-chaperone interaction in human Hsp90 (Zuehlke et al., 2017).",
+      "claim_type": "EXPLICIT",
+      "source": "It was recently discussed that a single PTM can functionally mimic a specific co-chaperone interaction in human Hsp90 (Zuehlke et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Zuehlke et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:39:56.081136Z"
+    },
+    {
+      "id": "323cd682-2273-4cac-9688-4c14e8d057bd",
+      "content_id": "7f319b28-4fe4-493a-98dc-56f314b91d22",
+      "claim_id": "C23",
+      "claim": "Assisted by about twenty known cochaperones, yeast Hsp90 is involved in the maturation of 20% of the entire proteome (Taipale et al., 2010).",
+      "claim_type": "EXPLICIT",
+      "source": "Assisted by about twenty known cochaperones, yeast Hsp90 is involved in the maturation of 20% of the entire proteome (Taipale et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Taipale et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:39:56.081136Z"
+    },
+    {
+      "id": "47790a47-6078-4bd2-805a-454b9c702a85",
+      "content_id": "7f319b28-4fe4-493a-98dc-56f314b91d22",
+      "claim_id": "C24",
+      "claim": "Among Hsp90's substrates are many kinases involved in signal transduction, hormone receptors, the 'guardian of the genome p53' (Lane, 1992), and also cytoskeletal proteins such as actin, tubulin, and many more (Pearl and Prodromou, 2006; Khandelwal et al., 2016).",
+      "claim_type": "EXPLICIT",
+      "source": "Among its substrates (referred to as 'clients') are many kinases involved in signal transduction, hormone receptors, the 'guardian of the genome p53' (Lane, 1992), and also cytoskeletal proteins such as actin, tubulin, and many more (Pearl and Prodromou, 2006; Khandelwal et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Lane, 1992; Pearl and Prodromou, 2006; and Khandelwal et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:39:56.081136Z"
+    },
+    {
+      "id": "ef003840-1dff-458a-a316-a11d3d7eba11",
+      "content_id": "7f319b28-4fe4-493a-98dc-56f314b91d22",
+      "claim_id": "C25",
+      "claim": "Cancer cells were found to be 'addicted' to Hsp90 (Trepel et al., 2010).",
+      "claim_type": "EXPLICIT",
+      "source": "Cancer cells were found to be 'addicted' to Hsp90 (Trepel et al., 2010), which is therefor also a prominent drug target in cancer research.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Trepel et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:39:56.081136Z"
+    },
+    {
+      "id": "4b1f9a9a-502c-4d89-9959-1d145c7eb15b",
+      "content_id": "7f319b28-4fe4-493a-98dc-56f314b91d22",
+      "claim_id": "C26",
+      "claim": "Hsp90 is a prominent drug target in cancer research.",
+      "claim_type": "EXPLICIT",
+      "source": "Cancer cells were found to be 'addicted' to Hsp90 (Trepel et al., 2010), which is therefor also a prominent drug target in cancer research.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the addiction of cancer cells to Hsp90.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:39:56.081136Z"
+    },
+    {
+      "id": "9e8284bd-73bf-4dd3-951f-6c89791570d6",
+      "content_id": "7f319b28-4fe4-493a-98dc-56f314b91d22",
+      "claim_id": "C27",
+      "claim": "Hsp90 is a homo-dimer where each monomer consists of three domains (Ali et al., 2006).",
+      "claim_type": "EXPLICIT",
+      "source": "Hsp90 is a homo-dimer where each monomer consists of three domains (Ali et al., 2006): the N-terminal domain (N) with a slow ATPase function, the middle domain (M) believed to be the primary client interaction site (Verba et al., 2016), and the C-terminal domain providing the main dimerization contacts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Ali et al., 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:39:56.081136Z"
+    },
+    {
+      "id": "a0ce4470-6e5f-4c15-af4d-e1d7bcc06da2",
+      "content_id": "7f319b28-4fe4-493a-98dc-56f314b91d22",
+      "claim_id": "C28",
+      "claim": "The N-terminal domain of Hsp90 has a slow ATPase function.",
+      "claim_type": "EXPLICIT",
+      "source": "Hsp90 is a homo-dimer where each monomer consists of three domains (Ali et al., 2006): the N-terminal domain (N) with a slow ATPase function, the middle domain (M) believed to be the primary client interaction site (Verba et al., 2016), and the C-terminal domain providing the main dimerization contacts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a characteristic of the N-terminal domain.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:39:56.081136Z"
+    },
+    {
+      "id": "b0b2c280-6159-4a40-bd75-6c5fafd79611",
+      "content_id": "7f319b28-4fe4-493a-98dc-56f314b91d22",
+      "claim_id": "C29",
+      "claim": "The middle domain of Hsp90 is believed to be the primary client interaction site (Verba et al., 2016).",
+      "claim_type": "EXPLICIT",
+      "source": "Hsp90 is a homo-dimer where each monomer consists of three domains (Ali et al., 2006): the N-terminal domain (N) with a slow ATPase function, the middle domain (M) believed to be the primary client interaction site (Verba et al., 2016), and the C-terminal domain providing the main dimerization contacts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Verba et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:39:56.081136Z"
+    },
+    {
+      "id": "63443739-55d0-4597-b63b-95a82ccdc293",
+      "content_id": "7f319b28-4fe4-493a-98dc-56f314b91d22",
+      "claim_id": "C30",
+      "claim": "The C-terminal domain of Hsp90 provides the main dimerization contacts.",
+      "claim_type": "EXPLICIT",
+      "source": "Hsp90 is a homo-dimer where each monomer consists of three domains (Ali et al., 2006): the N-terminal domain (N) with a slow ATPase function, the middle domain (M) believed to be the primary client interaction site (Verba et al., 2016), and the C-terminal domain providing the main dimerization contacts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a characteristic of the C-terminal domain.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:39:56.081136Z"
+    },
+    {
+      "id": "8af21a86-116d-4685-b10b-8b84e4a0f4cb",
+      "content_id": "7f319b28-4fe4-493a-98dc-56f314b91d22",
+      "claim_id": "C31",
+      "claim": "Hsp90 exists primarily in V-shaped, open conformations with dissociated N-terminal and middle domains (Krukenberg et al., 2008; Hellenkamp et al., 2017).",
+      "claim_type": "EXPLICIT",
+      "source": "Apart from closed conformations, where the three domains align in parallel, Hsp90 exists primarily in V-shaped, open conformations with dissociated N-terminal and middle domains (Krukenberg et al., 2008; Hellenkamp et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Krukenberg et al., 2008 and Hellenkamp et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:39:56.081136Z"
+    },
+    {
+      "id": "84e04d53-1062-4e83-9c79-36704aca5ea5",
+      "content_id": "7f319b28-4fe4-493a-98dc-56f314b91d22",
+      "claim_id": "C32",
+      "claim": "Both open and closed global arrangements of Hsp90 are semi-stable at room temperature.",
+      "claim_type": "EXPLICIT",
+      "source": "Both global arrangements are semi-stable at room temperature.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a property of Hsp90's conformational states.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:39:56.081136Z"
+    },
+    {
+      "id": "71463dd2-7e94-4a95-a64d-c1e56072d560",
+      "content_id": "7f319b28-4fe4-493a-98dc-56f314b91d22",
+      "claim_id": "C33",
+      "claim": "Hsp90 alternates constantly between open and closed conformations - even in the absence of the chemical energy source, ATP (Mickler et al., 2009; Schmid et al., 2016; Lee et al., 2019).",
+      "claim_type": "EXPLICIT",
+      "source": "As a consequence, Hsp90 alternates constantly between open and closed conformations - even in the absence of the chemical energy source, ATP (Mickler et al., 2009; Schmid et al., 2016; Lee et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Mickler et al., 2009; Schmid et al., 2016; and Lee et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:39:56.081136Z"
+    },
+    {
+      "id": "4c60513d-8761-46f8-8d8f-38411341a4fd",
+      "content_id": "7f319b28-4fe4-493a-98dc-56f314b91d22",
+      "claim_id": "C34",
+      "claim": "The characteristic conformational changes of Hsp90 are only little affected by e.g. anti-cancer drug candidates (Schmid et al., 2018) or natural nucleotides (Schmid et al., 2016).",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, the characteristic conformational changes of Hsp90 are only little affected by e.g. anti-cancer drug candidates (Schmid et al., 2018) or natural nucleotides (Schmid et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Schmid et al., 2018 and Schmid et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:39:56.081136Z"
+    },
+    {
+      "id": "290cc2f7-0348-42c4-bdc2-085c2951e638",
+      "content_id": "7f319b28-4fe4-493a-98dc-56f314b91d22",
+      "claim_id": "C35",
+      "claim": "There is a cognate isoform (Hsc82) in yeast, which differs in unfolding stability, client range and more, despite 97% sequence identity with Hsp82 (Girstmair et al., 2019).",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, to the stress-induced isoform discussed herein (Hsp82), there is also a cognate isoform (Hsc82) in yeast, which differs in unfolding stability, client range and more, despite 97% sequence identity (Girstmair et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Girstmair et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:39:56.081136Z"
+    },
+    {
+      "id": "47ee0ea7-f0c0-48f3-a690-0287b95184e0",
+      "content_id": "7f319b28-4fe4-493a-98dc-56f314b91d22",
+      "claim_id": "C36",
+      "claim": "The investigated point mutation A577I is located in the C-terminal hinge region of Hsp90.",
+      "claim_type": "EXPLICIT",
+      "source": "The investigated point mutation A577I is located in the C-terminal hinge region of Hsp90.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a description of the mutation studied.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:39:56.081136Z"
+    },
+    {
+      "id": "f75b8d41-319c-456e-a004-6a7f77cf57db",
+      "content_id": "7f319b28-4fe4-493a-98dc-56f314b91d22",
+      "claim_id": "C37",
+      "claim": "Residue A577 is the equivalent of the post-translational S-nitrosylation site C598 in human Hsp90 (Mart\u00ednez-Ruiz et al., 2005).",
+      "claim_type": "EXPLICIT",
+      "source": "Residue A577 is the equivalent of the post-translational S-nitrosylation site C598 in human Hsp90 (Mart\u00ednez-Ruiz et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Mart\u00ednez-Ruiz et al., 2005.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:39:56.081136Z"
+    },
+    {
+      "id": "899be3a5-2a8b-4f88-bbba-f1e6d77d9856",
+      "content_id": "7f319b28-4fe4-493a-98dc-56f314b91d22",
+      "claim_id": "C38",
+      "claim": "Nitrosylation of residue C598 has a two-fold inhibitory effect \u2013 on the ATPase function and the client stimulation by human Hsp90.",
+      "claim_type": "EXPLICIT",
+      "source": "While nitrosylation of that residue has a two-fold inhibitory effect \u2013 on the ATPase function and the client stimulation by human Hsp90 \u2013 the A577I mutation caused a nearly 4-fold amplification of the ATPase rate (Retzlaff et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a known effect of nitrosylation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:39:56.081136Z"
+    },
+    {
+      "id": "f0fd3f7b-0a58-4e9b-bf5d-3cf1b16430dc",
+      "content_id": "7f319b28-4fe4-493a-98dc-56f314b91d22",
+      "claim_id": "C39",
+      "claim": "The A577I mutation caused a nearly 4-fold amplification of the ATPase rate (Retzlaff et al., 2009).",
+      "claim_type": "EXPLICIT",
+      "source": "While nitrosylation of that residue has a two-fold inhibitory effect \u2013 on the ATPase function and the client stimulation by human Hsp90 \u2013 the A577I mutation caused a nearly 4-fold amplification of the ATPase rate (Retzlaff et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Retzlaff et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:39:56.081136Z"
+    },
+    {
+      "id": "3673b870-e1ed-4f60-a379-2cb1acd813b2",
+      "content_id": "7f319b28-4fe4-493a-98dc-56f314b91d22",
+      "claim_id": "C40",
+      "claim": "The fact that the point mutation is located in the C-terminal domain and the ATP binding site in the N-domain indicates a long-range communication.",
+      "claim_type": "EXPLICIT",
+      "source": "The fact that the point mutation is located in the C-terminal domain and the ATP binding site in the N-domain indicates a long-range communication, offering valuable mechanistic insight in Hsp90's intra-molecular plasticity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the spatial separation of the mutation and ATP binding sites.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:39:56.081136Z"
+    },
+    {
+      "id": "8e036fde-5e59-44a1-9530-36b17f2773be",
+      "content_id": "7f319b28-4fe4-493a-98dc-56f314b91d22",
+      "claim_id": "C41",
+      "claim": "Aha1 is a well-known stimulator of Hsp90's inherently slow ATPase activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, we consider the protein-protein interactions between Hsp90 and the activating co-chaperone Aha1, which is a well-known stimulator of Hsp90's inherently slow ATPase activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about Aha1.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:39:56.081136Z"
+    },
+    {
+      "id": "7786b10f-bfa2-4542-bdc5-ba856c94a3d6",
+      "content_id": "7f319b28-4fe4-493a-98dc-56f314b91d22",
+      "claim_id": "C42",
+      "claim": "Aha1 makes contacts to the middle and N-terminal domain, which rearranges the ATP lid (Schulze et al., 2016), and the catalytic loop (including R380) (Pearl, 2016) in a favorable way for ATP hydrolysis.",
+      "claim_type": "EXPLICIT",
+      "source": "It makes contacts to the middle and N-terminal domain, which rearranges the ATP lid (Schulze et al., 2016), and the catalytic loop (including R380) (Pearl, 2016) in a favorable way for ATP hydrolysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Schulze et al., 2016 and Pearl, 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:39:56.081136Z"
+    },
+    {
+      "id": "a0a5f5d9-2692-47ab-babe-def2b3e4fe3c",
+      "content_id": "7f319b28-4fe4-493a-98dc-56f314b91d22",
+      "claim_id": "C43",
+      "claim": "The affinity of Aha1 for Hsp90 itself is also markedly enhanced by PTMs (Xu et al., 2019).",
+      "claim_type": "EXPLICIT",
+      "source": "The affinity of Aha1 for Hsp90 itself is also markedly enhanced by PTMs (Xu et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Xu et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:39:56.081136Z"
+    },
+    {
+      "id": "c47c8e3c-2bdf-43ff-8aa0-7ecb30b5847c",
+      "content_id": "7f319b28-4fe4-493a-98dc-56f314b91d22",
+      "claim_id": "C44",
+      "claim": "The study mimics cellular macro-molecular crowding using the common crowding agent Ficoll400, that is branched polymeric sucrose.",
+      "claim_type": "EXPLICIT",
+      "source": "We mimic cellular macro-molecular crowding using the common crowding agent Ficoll400, that is branched polymeric sucrose.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a method used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:39:56.081136Z"
+    },
+    {
+      "id": "3f18fa58-d6bc-4561-aa41-0e96c255bd3b",
+      "content_id": "7f319b28-4fe4-493a-98dc-56f314b91d22",
+      "claim_id": "C45",
+      "claim": "Crowding represents a completely non-specific, physical interference.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to the previous two modulations, crowding represents a completely non-specific, physical interference.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a characterization of crowding.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:39:56.081136Z"
+    },
+    {
+      "id": "7d12332d-dc92-48e2-9e11-42b7095ee74b",
+      "content_id": "7f319b28-4fe4-493a-98dc-56f314b91d22",
+      "claim_id": "C46",
+      "claim": "All three modulations provoke a similar steady-state behavior in Hsp90.",
+      "claim_type": "EXPLICIT",
+      "source": "At first sight, all three modulations provoke a similar steady-state behavior in Hsp90.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an observation from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:39:56.081136Z"
+    },
+    {
+      "id": "59394a0b-1bca-4e2a-837f-bade64795b1a",
+      "content_id": "7f319b28-4fe4-493a-98dc-56f314b91d22",
+      "claim_id": "C47",
+      "claim": "Single-molecule experiments allow disentangling the different underlying causes of similar steady-state behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "But our single-molecule experiments allow us to disentangle the different underlying causes thereof.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a capability of the experimental approach.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:39:56.081136Z"
+    },
+    {
+      "id": "44f1bf80-08fb-4b9a-a52d-c3ccfda9bfa8",
+      "content_id": "7f319b28-4fe4-493a-98dc-56f314b91d22",
+      "claim_id": "C48",
+      "claim": "The A577I mutation increased the closed population from (13 \u00b1 3.5)% to (51 \u00b1 5.5)%.",
+      "claim_type": "EXPLICIT",
+      "source": "The A577I mutation increased the closed population from (13 \u00b1 3.5)% to (51 \u00b1 5.5)%.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from the smFRET experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:39:56.081136Z"
+    },
+    {
+      "id": "d0ad4b88-ace7-4526-83b0-0c4cb68639d0",
+      "content_id": "7f319b28-4fe4-493a-98dc-56f314b91d22",
+      "claim_id": "C49",
+      "claim": "The A577I mutation is a large effect considering that no big change in hydrophobic nor charged interactions is expected from this hydrophobic-to-hydrophobic point mutation.",
+      "claim_type": "EXPLICIT",
+      "source": "This is a large effect considering that no big change in hydrophobic nor charged interactions is expected to result from this hydrophobic-to-hydrophobic point mutation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the mutation's effect based on chemical properties.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:39:56.081136Z"
+    },
+    {
+      "id": "b0680856-155d-48cf-8162-b00dba065222",
+      "content_id": "7f319b28-4fe4-493a-98dc-56f314b91d22",
+      "claim_id": "C50",
+      "claim": "The slightly bulkier isoleucine side chain points outward in the crystal structure of Hsp90's closed conformation (Ali et al., 2006).",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, as the slightly bulkier isoleucine side chain points outward in the crystal structure of Hsp90's closed conformation (Ali et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Ali et al., 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:39:56.081136Z"
+    },
+    {
+      "id": "7b4d5c5b-f440-4706-be95-730933a971ac",
+      "content_id": "7f319b28-4fe4-493a-98dc-56f314b91d22",
+      "claim_id": "C51",
+      "claim": "The A577I/wild type hetero-dimer shows a considerably larger population of closed conformations, especially in the presence of ATP.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to the A577I homodimer, already the A577I/wild type (wt) hetero-dimer shows a considerably larger population of closed conformations, especially in the presence of ATP (Figure 2\u2014figure supplement 3 (left)).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from the smFRET experiments shown in Figure 2\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:39:56.081136Z"
+    },
+    {
+      "id": "c48a7eea-5a05-4789-b7b3-e9a9a86f822b",
+      "content_id": "7f319b28-4fe4-493a-98dc-56f314b91d22",
+      "claim_id": "C52",
+      "claim": "Under ADP conditions the additive effect is also observed, but weaker.",
+      "claim_type": "EXPLICIT",
+      "source": "Under ADP conditions the additive effect is also observed, but weaker (Figure 2\u2014figure supplement 3 (right)).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from the smFRET experiments shown in Figure 2\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:39:56.081136Z"
+    },
+    {
+      "id": "08018784-eac3-47c7-aa93-66cb49af878f",
+      "content_id": "7f319b28-4fe4-493a-98dc-56f314b91d22",
+      "claim_id": "C53",
+      "claim": "The second A577I in the homodimer leads to a further shift toward closed conformations.",
+      "claim_type": "EXPLICIT",
+      "source": "Under both conditions, the second A577I in the homodimer leads to a further shift toward closed conformations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the smFRET experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:39:56.081136Z"
+    },
+    {
+      "id": "a56fbd08-8910-47b5-81b3-f5e764e73dd6",
+      "content_id": "7f319b28-4fe4-493a-98dc-56f314b91d22",
+      "claim_id": "C54",
+      "claim": "The slight but consistent shift of the corresponding low-FRET peak could be explained by a sterical hindrance of the farthest opening in the A577I homodimer.",
+      "claim_type": "EXPLICIT",
+      "source": "The slight but consistent shift of the corresponding low-FRET peak in Figure 2c (left) could be explained by a sterical hindrance of the farthest opening in the A577I homodimer.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a speculative interpretation of the observed data in Figure 2c.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:39:56.081136Z"
+    },
+    {
+      "id": "f02eb417-96f5-491c-a67d-a012d09e2b39",
+      "content_id": "7f319b28-4fe4-493a-98dc-56f314b91d22",
+      "claim_id": "C55",
+      "claim": "Very fast transitions at the temporal resolution limit (200 ms) occurred more frequently in the A577I homodimer.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, very fast transitions at the temporal resolution limit (200 ms) occurred more frequently, which can be seen by the increased overlap between the two populations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the smFRET experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:39:56.081136Z"
+    },
+    {
+      "id": "7174d53d-3dcc-4452-afc7-61dd64986c84",
+      "content_id": "7f319b28-4fe4-493a-98dc-56f314b91d22",
+      "claim_id": "C56",
+      "claim": "Both sterical hindrance and faster transitions can be interpreted as a global stiffening of Hsp90's structural core formed by the C- and middle domain.",
+      "claim_type": "EXPLICIT",
+      "source": "Both, sterical hindrance and faster transitions, can be interpreted as a global stiffening of Hsp90's structural core formed by the C- and middle domain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the observed data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:39:56.081136Z"
+    },
+    {
+      "id": "345110eb-bc6d-4462-a7af-c49f0c851354",
+      "content_id": "7f319b28-4fe4-493a-98dc-56f314b91d22",
+      "claim_id": "C57",
+      "claim": "The interaction with Aha1 forms inter-domain (N\u2013M) and inter-monomer contacts.",
+      "claim_type": "EXPLICIT",
+      "source": "The interaction with Aha1 (Figure 2c, center) forms inter-domain (N\u2013M) and inter-monomer contacts.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as a characteristic of Aha1 interaction.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:39:56.081136Z"
+    },
+    {
+      "id": "0e8efbc3-c678-4b4f-84db-72f511b2e116",
+      "content_id": "7f319b28-4fe4-493a-98dc-56f314b91d22",
+      "claim_id": "C58",
+      "claim": "Aha1 increases the affinity for N-N binding, and thus causes Hsp90 to shift from (24 \u00b1 4.0)% closed to (48 \u00b1 5.0)% closed population.",
+      "claim_type": "EXPLICIT",
+      "source": "The latter increase the affinity for N-N binding, and thus cause Hsp90 to shift from (24 \u00b1 4.0)% closed to (48 \u00b1 5.0)% closed population, which is in line with previous qualitative reports (Hessling et al., 2009; Wortmann et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from the smFRET experiments, supported by citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:39:56.081136Z"
+    },
+    {
+      "id": "09f561b6-8fc2-41ea-aac6-123437aa260d",
+      "content_id": "7f319b28-4fe4-493a-98dc-56f314b91d22",
+      "claim_id": "C59",
+      "claim": "Macro-molecular crowding increased the closed population from (11 \u00b1 4.5)% to (50 \u00b1 10.5)%, in agreement with previous ensemble findings (Halpin et al., 2016).",
+      "claim_type": "EXPLICIT",
+      "source": "Lastly, macro-molecular crowding increased the closed population from (11 \u00b1 4.5)% to (50 \u00b1 10.5)%, in agreement with previous ensemble findings (Halpin et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from the smFRET experiments, supported by a citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:39:56.081136Z"
+    },
+    {
+      "id": "b244e518-a219-4475-ba0e-a0277f97f8c4",
+      "content_id": "7f319b28-4fe4-493a-98dc-56f314b91d22",
+      "claim_id": "C60",
+      "claim": "In contrast to the A577I mutant, crowding slowed down fast fluctuation at the resolution limit, which creates well-separated populations.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, to the A577I mutant, crowding slowed down fast fluctuation at the resolution limit, which creates well-separated populations in Figure 2c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the smFRET experiments shown in Figure 2c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:39:56.081136Z"
+    },
+    {
+      "id": "2a3af1f1-a33d-4943-a30b-3f2b9612fc51",
+      "content_id": "7f319b28-4fe4-493a-98dc-56f314b91d22",
+      "claim_id": "C61",
+      "claim": "The induced shift toward closed conformations appears in a concentration-dependent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "The induced shift toward closed conformations appears in a concentration-dependent manner, as can be seen in Figure 2\u2014figure supplement 4.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 2\u2014figure supplement 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:39:56.081136Z"
+    },
+    {
+      "id": "62ab80b1-5d81-41ec-847f-e57cbc762e01",
+      "content_id": "7f319b28-4fe4-493a-98dc-56f314b91d22",
+      "claim_id": "C62",
+      "claim": "In contrast to polymeric, branched sucrose (Ficoll400), monomeric sucrose had only negligible effect on the steady-state populations.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to polymeric, branched sucrose (Ficoll400), monomeric sucrose had only negligible effect on the steady-state populations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the smFRET experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:39:56.081136Z"
+    },
+    {
+      "id": "41d96f53-abbc-4a2e-81a7-1669d92abfda",
+      "content_id": "7f319b28-4fe4-493a-98dc-56f314b91d22",
+      "claim_id": "C63",
+      "claim": "Macro-molecular crowding is the cause of the observed population shift, and a biochemical glucose-associated reason can be dismissed.",
+      "claim_type": "EXPLICIT",
+      "source": "This proves that macro-molecular crowding is the cause of the observed population shift, and a biochemical glucose-associated reason can be dismissed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the comparison of Ficoll400 and monomeric sucrose effects.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:39:56.081136Z"
+    },
+    {
+      "id": "009e292d-3618-4156-9420-f88c0fb74461",
+      "content_id": "7f319b28-4fe4-493a-98dc-56f314b91d22",
+      "claim_id": "C64",
+      "claim": "In all three cases, a clear shift toward closed conformations is observed, although to slightly different extents.",
+      "claim_type": "EXPLICIT",
+      "source": "In all three cases, a clear shift toward closed conformations is observed, although to slightly different extents.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the steady-state results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:39:56.081136Z"
+    },
+    {
+      "id": "c984a624-8822-45c3-80c0-e1a7feff87db",
+      "content_id": "7f319b28-4fe4-493a-98dc-56f314b91d22",
+      "claim_id": "C65",
+      "claim": "Based on steady-state distributions alone, the energetic origin of the population shift remains unclear.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, based on these distributions alone, the energetic origin of the population shift remains unclear.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a limitation of steady-state analysis.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:39:56.081136Z"
+    },
+    {
+      "id": "88f8fc16-d82f-4fa5-9cf3-a220e5c84c69",
+      "content_id": "7f319b28-4fe4-493a-98dc-56f314b91d22",
+      "claim_id": "C66",
+      "claim": "For Hsp90's global conformational changes, four-state models are consistently inferred (Schmid et al., 2016; Schmid et al., 2018; Schmid and Hugel, 2018).",
+      "claim_type": "EXPLICIT",
+      "source": "For Hsp90's global conformational changes, we consistently infer 4-state models (Schmid et al., 2016; Schmid et al., 2018; Schmid and Hugel, 2018): two low-FRET states (open conformations) and two high-FRET states (closed conformations).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:39:56.081136Z"
+    },
+    {
+      "id": "03167b27-69b9-48df-9d84-b5b532422c60",
+      "content_id": "7f319b28-4fe4-493a-98dc-56f314b91d22",
+      "claim_id": "C67",
+      "claim": "At least four kinetic states are needed to describe the observed kinetic heterogeneity.",
+      "claim_type": "EXPLICIT",
+      "source": "Although only two different FRET efficiencies can be resolved, at least four kinetic states are needed to describe the observed kinetic heterogeneity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a requirement for modeling the kinetics.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:39:56.081136Z"
+    },
+    {
+      "id": "9c2f2f36-21c9-4d89-9b7a-eb7847d7744b",
+      "content_id": "7f319b28-4fe4-493a-98dc-56f314b91d22",
+      "claim_id": "C68",
+      "claim": "An entire ensemble of open sub-conformations are sufficiently well described by two kinetically different low-FRET states on the timescale of the experiment (Hellenkamp et al., 2017).",
+      "claim_type": "EXPLICIT",
+      "source": "Based on recent results (Hellenkamp et al., 2017), we expect an entire ensemble of open sub-conformations that - on the timescale of the experiment - are sufficiently well described by two kinetically different low-FRET states.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on a citation to Hellenkamp et al., 2017.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:39:56.081136Z"
+    },
+    {
+      "id": "8454b13d-3494-4aec-9bcf-a59b7ab8d603",
+      "content_id": "7f319b28-4fe4-493a-98dc-56f314b91d22",
+      "claim_id": "C69",
+      "claim": "The two closed states, one short-lived (state 2) and one longer-lived (state 3), likely differ in local conformational elements (Giannoulis et al., 2020; Huang et al., 2019).",
+      "claim_type": "EXPLICIT",
+      "source": "The two closed states, one short-lived (state 2) and one longer-lived (state 3), likely differ in local conformational elements (Giannoulis et al., 2020; Huang et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Giannoulis et al., 2020 and Huang et al., 2019.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:39:56.081136Z"
+    },
+    {
+      "id": "6e9d408a-8100-4d3b-b392-a631301eff4d",
+      "content_id": "7f319b28-4fe4-493a-98dc-56f314b91d22",
+      "claim_id": "C70",
+      "claim": "The well-known N-terminal beta-sheet with or without its cross-monomer contacts could explain the additional stabilization of state 3 with respect to state 2.",
+      "claim_type": "EXPLICIT",
+      "source": "The well-known N-terminal beta-sheet with or without its cross-monomer contacts (as observed in the closed crystal structure [Ali et al., 2006]) could explain the additional stabilization of state 3 with respect to state 2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative explanation based on structural knowledge.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:39:56.081136Z"
+    },
+    {
+      "id": "7afa6ead-71be-412c-9e94-fd6ef3399c8d",
+      "content_id": "7f319b28-4fe4-493a-98dc-56f314b91d22",
+      "claim_id": "C71",
+      "claim": "All states 0, 1, 2, 3 of this highly dynamic Hsp90 system represent conformational ensembles that are defined by their FRET efficiency and their kinetics.",
+      "claim_type": "EXPLICIT",
+      "source": "All states 0, 1, 2, 3 of this highly dynamic Hsp90 system represent conformational ensembles that are defined by their FRET efficiency and their kinetics (rather than discrete or 'frozen' conformations).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an interpretation of the kinetic states.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:39:56.081136Z"
+    },
+    {
+      "id": "08377e79-3a6f-4c9e-a927-e9f8fab7e946",
+      "content_id": "7f319b28-4fe4-493a-98dc-56f314b91d22",
+      "claim_id": "C72",
+      "claim": "In the case of the cochaperone Aha1, the shift in the FRET efficiency histogram originates from opposing changes of the fast rates between states 1 and 2.",
+      "claim_type": "EXPLICIT",
+      "source": "In the case of the cochaperone Aha1, the shift in the FRET efficiency histogram originates from opposing changes of the fast rates between states 1 and 2 (Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from the kinetic analysis shown in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:39:56.081136Z"
+    },
+    {
+      "id": "d30af4d5-d0b6-4057-863f-4473f5d111ee",
+      "content_id": "7f319b28-4fe4-493a-98dc-56f314b91d22",
+      "claim_id": "C73",
+      "claim": "The effect of the C-terminal point mutation A577I collectively accelerates the pathway from state 0 via state 1 and state 2 to state 3.",
+      "claim_type": "EXPLICIT",
+      "source": "This is in contrast to the effect of the C-terminal point mutation A577I, which collectively accelerates the pathway from state 0 via state 1 and state 2 to state 3.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the kinetic analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:39:56.081136Z"
+    },
+    {
+      "id": "36a2b7a4-4c4f-41c8-9212-53b99adc374c",
+      "content_id": "7f319b28-4fe4-493a-98dc-56f314b91d22",
+      "claim_id": "C74",
+      "claim": "A kinetic model with only three links is statistically sufficient to describe the observed kinetics of the A577I homodimer, implying less kinetically heterogeneous fluctuations.",
+      "claim_type": "EXPLICIT",
+      "source": "Note that a kinetic model with only three links - similar to the model for crowding in Figure 3a, right - is statistically sufficient (according to likelihood ratio testing detailed in Schmid et al., 2016 SI point 1.2) to describe the observed kinetics of the A577I homodimer, implying less kinetically heterogeneous fluctuations (Figure 3\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from statistical testing of kinetic models.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:39:56.081136Z"
+    },
+    {
+      "id": "350b7c2b-8746-48ad-829b-11dd899851e4",
+      "content_id": "7f319b28-4fe4-493a-98dc-56f314b91d22",
+      "claim_id": "C75",
+      "claim": "Under macro-molecular crowding, changes of the conformational dynamics are visible already from the stationary distributions.",
+      "claim_type": "EXPLICIT",
+      "source": "Under macro-molecular crowding, changes of the conformational dynamics are visible already from the stationary distributions: as shown in Figure 2a, the low and high FRET populations are most separated in this case.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from Figure 2a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:39:56.081136Z"
+    },
+    {
+      "id": "625183e1-91ba-4ac5-913f-7fd32ccafacc",
+      "content_id": "7f319b28-4fe4-493a-98dc-56f314b91d22",
+      "claim_id": "C76",
+      "claim": "The most separated populations under crowding are indicative of fast fluctuations, at or below the timescale of the sampling rate (5 Hz) that are slowed down at higher viscosity.",
+      "claim_type": "EXPLICIT",
+      "source": "This is indicative of fast fluctuations, at or below the timescale of the sampling rate (5 Hz) that are slowed down at higher viscosity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the observed population separation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:39:56.081136Z"
+    },
+    {
+      "id": "bca56f82-6136-496d-bb4e-0ec3eb7e95eb",
+      "content_id": "7f319b28-4fe4-493a-98dc-56f314b91d22",
+      "claim_id": "C77",
+      "claim": "For the fully resolved kinetics under crowding, the main difference is observed for the rates between the closed states 2 and 3.",
+      "claim_type": "EXPLICIT",
+      "source": "For the fully resolved kinetics, the main difference is observed for the rates between the closed states 2 and 3.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the kinetic analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:39:56.081136Z"
+    },
+    {
+      "id": "aab2433a-ede7-447e-b039-92d134bf6757",
+      "content_id": "7f319b28-4fe4-493a-98dc-56f314b91d22",
+      "claim_id": "C78",
+      "claim": "The main kinetic difference under crowding agrees with the increase of the closed population under macro-molecular \u2013 but not small molecular \u2013 crowding.",
+      "claim_type": "EXPLICIT",
+      "source": "This agrees with the increase of the closed population under macro-molecular \u2013 but not small molecular \u2013 crowding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation connecting kinetic and steady-state results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:39:56.081136Z"
+    },
+    {
+      "id": "3b9d4edd-0afd-4ebd-a8db-a03e0fb07189",
+      "content_id": "7f319b28-4fe4-493a-98dc-56f314b91d22",
+      "claim_id": "C79",
+      "claim": "Figure 3 shows three completely different kinetic effects that underlie seemingly analogous ensemble behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "Altogether, Figure 3 shows three completely different kinetic effects that underlie seemingly analogous ensemble behavior.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a summary statement about Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:39:56.081136Z"
+    },
+    {
+      "id": "be01371c-8096-4fcd-8818-8b616114fbda",
+      "content_id": "7f319b28-4fe4-493a-98dc-56f314b91d22",
+      "claim_id": "C80",
+      "claim": "The point mutation A577I causes an asymmetric destabilization of open conformations.",
+      "claim_type": "EXPLICIT",
+      "source": "The point mutation A577I causes an asymmetric destabilization of open conformations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from the kinetic rate models.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:39:56.081136Z"
+    },
+    {
+      "id": "9315d954-678c-4b3d-878f-28986acff0ee",
+      "content_id": "7f319b28-4fe4-493a-98dc-56f314b91d22",
+      "claim_id": "C81",
+      "claim": "Aha1 leads to simultaneous destabilization of open conformations and stabilization of closed conformations.",
+      "claim_type": "EXPLICIT",
+      "source": "Aha1 leads to simultaneous destabilization of open conformations and stabilization of closed conformations, whereas macro-molecular crowding only stabilizes closed conformations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from the kinetic rate models.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:39:56.081136Z"
+    },
+    {
+      "id": "ddb71c13-a771-46be-a422-4761d4d09379",
+      "content_id": "7f319b28-4fe4-493a-98dc-56f314b91d22",
+      "claim_id": "C82",
+      "claim": "Macro-molecular crowding only stabilizes closed conformations.",
+      "claim_type": "EXPLICIT",
+      "source": "Aha1 leads to simultaneous destabilization of open conformations and stabilization of closed conformations, whereas macro-molecular crowding only stabilizes closed conformations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from the kinetic rate models.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:39:56.081136Z"
+    },
+    {
+      "id": "e9f7f527-f44f-444d-ad75-9a4706d67eee",
+      "content_id": "7f319b28-4fe4-493a-98dc-56f314b91d22",
+      "claim_id": "C83",
+      "claim": "The mechanistic information about free energy changes is not accessible from the steady-state distributions alone.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, this information is not accessible from the steady-state distributions in Figure 2c.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as a limitation of steady-state analysis.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:39:56.081136Z"
+    },
+    {
+      "id": "a685b1da-37b8-4cec-92f6-1ee10a28aee1",
+      "content_id": "7f319b28-4fe4-493a-98dc-56f314b91d22",
+      "claim_id": "C84",
+      "claim": "The collective shift toward closed conformations is accompanied by an overall increase in ATPase activity under all three conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "The collective shift toward closed conformations is accompanied by an overall increase in ATPase activity under all three conditions (Figure 5): 7-fold for A577I, 17-fold for Aha1, 4-fold for crowding, respectively.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from ATPase activity assays shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:39:56.081136Z"
+    },
+    {
+      "id": "c83d1bd1-d450-4fde-a581-111189fa19a7",
+      "content_id": "7f319b28-4fe4-493a-98dc-56f314b91d22",
+      "claim_id": "C85",
+      "claim": "The A577I mutation causes a 7-fold increase in ATPase activity.",
+      "claim_type": "EXPLICIT",
+      "source": "The collective shift toward closed conformations is accompanied by an overall increase in ATPase activity under all three conditions (Figure 5): 7-fold for A577I, 17-fold for Aha1, 4-fold for crowding, respectively.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative result from ATPase activity assays shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:39:56.081136Z"
+    },
+    {
+      "id": "3994909b-cb0c-45da-90b4-8cc70c2f9bd9",
+      "content_id": "7f319b28-4fe4-493a-98dc-56f314b91d22",
+      "claim_id": "C86",
+      "claim": "Aha1 causes a 17-fold increase in ATPase activity.",
+      "claim_type": "EXPLICIT",
+      "source": "The collective shift toward closed conformations is accompanied by an overall increase in ATPase activity under all three conditions (Figure 5): 7-fold for A577I, 17-fold for Aha1, 4-fold for crowding, respectively.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative result from ATPase activity assays shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:39:56.081136Z"
+    },
+    {
+      "id": "f44f23f5-7fa1-471e-8d87-3a651431a314",
+      "content_id": "7f319b28-4fe4-493a-98dc-56f314b91d22",
+      "claim_id": "C87",
+      "claim": "Crowding causes a 4-fold increase in ATPase activity.",
+      "claim_type": "EXPLICIT",
+      "source": "The collective shift toward closed conformations is accompanied by an overall increase in ATPase activity under all three conditions (Figure 5): 7-fold for A577I, 17-fold for Aha1, 4-fold for crowding, respectively.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative result from ATPase activity assays shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:39:56.081136Z"
+    },
+    {
+      "id": "66b6962d-43b9-40cd-b07e-bdf7199e3e9d",
+      "content_id": "7f319b28-4fe4-493a-98dc-56f314b91d22",
+      "claim_id": "C88",
+      "claim": "The increase in ATP hydrolysis rate does not reflect the increase in the closed population.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the increase in ATP hydrolysis rate does not reflect the increase in the closed population observed in Figure 2c.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a conclusion from comparing ATPase activity and conformational populations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:39:56.081136Z"
+    },
+    {
+      "id": "ac767137-7ebd-4db0-8b31-be6195d7ea7e",
+      "content_id": "7f319b28-4fe4-493a-98dc-56f314b91d22",
+      "claim_id": "C89",
+      "claim": "The effect of macro-molecular crowding can serve as an estimate of the ATPase stimulation caused exclusively by the relative stabilization of closed conformations.",
+      "claim_type": "EXPLICIT",
+      "source": "The effect of macro-molecular crowding can serve as an estimate of the ATPase stimulation caused exclusively by the relative stabilization of closed conformations, because a biochemical interaction of sucrose was excluded in control experiments (see above).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation based on the non-specific nature of crowding.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:39:56.081136Z"
+    },
+    {
+      "id": "b516626c-6dbb-451f-a04e-fafbe498e775",
+      "content_id": "7f319b28-4fe4-493a-98dc-56f314b91d22",
+      "claim_id": "C90",
+      "claim": "The entirely non-specific interaction of crowding leads to a considerable ATPase acceleration of a factor 4.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, the entirely non-specific interaction leads already to a considerable ATPase acceleration of a factor 4.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from ATPase activity assays.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:39:56.081136Z"
+    },
+    {
+      "id": "201bf3d1-3b62-42f7-85d5-e9dff77d978b",
+      "content_id": "7f319b28-4fe4-493a-98dc-56f314b91d22",
+      "claim_id": "C91",
+      "claim": "The closed conformation represents Hsp90's active state (Prodromou, 2012).",
+      "claim_type": "EXPLICIT",
+      "source": "This supports the wide-spread notion that the closed conformation represents Hsp90's active state (Prodromou, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Prodromou, 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:39:56.081136Z"
+    },
+    {
+      "id": "8c68f487-922f-450e-b046-daeb38c93f16",
+      "content_id": "7f319b28-4fe4-493a-98dc-56f314b91d22",
+      "claim_id": "C92",
+      "claim": "In comparison to the biochemical effect of the cochaperone Aha1, the stimulation by crowding is modest, despite the much larger closed population.",
+      "claim_type": "EXPLICIT",
+      "source": "But, in comparison to the biochemical effect of the cochaperone Aha1, the stimulation by crowding is still modest, despite the much larger closed population.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison of the effects of crowding and Aha1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:39:56.081136Z"
+    },
+    {
+      "id": "036df51e-eaca-4228-bc3f-af098aa992da",
+      "content_id": "7f319b28-4fe4-493a-98dc-56f314b91d22",
+      "claim_id": "C93",
+      "claim": "The 4.5-fold increased closed population under crowding comes with a 4-fold increased ATPase activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, the 4.5-fold increased closed population, comes with a 4-fold increased ATPase activity, whereas in the presence of Aha1 already a 2-fold increased closed population is accompanied by a 17-fold ATPase stimulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative comparison of conformational and functional effects.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:39:56.081136Z"
+    },
+    {
+      "id": "af432c45-3c60-4959-9225-48d479257a0a",
+      "content_id": "7f319b28-4fe4-493a-98dc-56f314b91d22",
+      "claim_id": "C94",
+      "claim": "In the presence of Aha1, a 2-fold increased closed population is accompanied by a 17-fold ATPase stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, the 4.5-fold increased closed population, comes with a 4-fold increased ATPase activity, whereas in the presence of Aha1 already a 2-fold increased closed population is accompanied by a 17-fold ATPase stimulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative comparison of conformational and functional effects.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:39:56.081136Z"
+    },
+    {
+      "id": "2dbfc651-b663-4d62-b6d2-13572bf5d624",
+      "content_id": "7f319b28-4fe4-493a-98dc-56f314b91d22",
+      "claim_id": "C95",
+      "claim": "Aha1 induces the smallest increase in closed population, but under the same conditions the largest ATPase stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "The fact that Aha1 induces the smallest increase in closed population, but under the same conditions the largest ATPase stimulation, highlights the functional importance of specific contacts between Aha1 and Hsp90, which are responsible for 88% of the ATPase stimulation by Aha1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from comparing the effects of Aha1 with other modulations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:39:56.081136Z"
+    },
+    {
+      "id": "f3d112fc-9da7-4779-b112-f5d95b4fca2e",
+      "content_id": "7f319b28-4fe4-493a-98dc-56f314b91d22",
+      "claim_id": "C96",
+      "claim": "Specific contacts between Aha1 and Hsp90 are responsible for 88% of the ATPase stimulation by Aha1.",
+      "claim_type": "EXPLICIT",
+      "source": "The fact that Aha1 induces the smallest increase in closed population, but under the same conditions the largest ATPase stimulation, highlights the functional importance of specific contacts between Aha1 and Hsp90, which are responsible for 88% of the ATPase stimulation by Aha1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is calculated from the comparison of Aha1's effect with crowding.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:39:56.081136Z"
+    },
+    {
+      "id": "3f3803fd-9b30-4d5a-ba2c-187caa82df65",
+      "content_id": "7f319b28-4fe4-493a-98dc-56f314b91d22",
+      "claim_id": "C97",
+      "claim": "In the case of the A577I mutant, a 3.9-fold increased closed population comes with a 7-fold ATPase amplification.",
+      "claim_type": "EXPLICIT",
+      "source": "In the case of the A577I mutant a 3.9-fold increased closed population comes with a 7-fold ATPase amplification.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative comparison of conformational and functional effects.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:39:56.081136Z"
+    },
+    {
+      "id": "f41086ba-d60a-49dc-a12a-ed6953cca1c7",
+      "content_id": "7f319b28-4fe4-493a-98dc-56f314b91d22",
+      "claim_id": "C98",
+      "claim": "The ATPase amplification in A577I could result from the hindrance of extremely open states indicating a conformational stiffening, restricting Hsp90's native flexibility.",
+      "claim_type": "EXPLICIT",
+      "source": "This could result from the mentioned hindrance of extremely open states indicating a conformational stiffening, restricting Hsp90's native flexibility.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation of the A577I effect.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:39:56.081136Z"
+    },
+    {
+      "id": "542981d8-5e5a-4b7f-83af-35c3c2fd3241",
+      "content_id": "7f319b28-4fe4-493a-98dc-56f314b91d22",
+      "claim_id": "C99",
+      "claim": "Not only changes in the equilibrium, but also changes in the kinetics affect the ATPase activity.",
+      "claim_type": "EXPLICIT",
+      "source": "In other words, not only changes in the equilibrium, but also changes in the kinetics affect the ATPase activity as discussed below.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from the analysis of kinetics and function.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:39:56.081136Z"
+    },
+    {
+      "id": "f9885514-3566-426d-82e9-21138a996d6c",
+      "content_id": "7f319b28-4fe4-493a-98dc-56f314b91d22",
+      "claim_id": "C100",
+      "claim": "Conformational confinement accounts for 100% of the ATPase stimulation induced by macro-molecular crowding.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that conformational confinement accounts for 100% of the ATPase stimulation induced by macro-molecular crowding, for 60% of the stimulation by the point mutation A577I, and for only 10% of the stimulation by cochaperone Aha1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is calculated from the comparison of conformational and functional effects.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:39:56.081136Z"
+    },
+    {
+      "id": "727e89b2-3068-4ae7-be44-7300afde6cfd",
+      "content_id": "7f319b28-4fe4-493a-98dc-56f314b91d22",
+      "claim_id": "C101",
+      "claim": "Conformational confinement accounts for 60% of the ATPase stimulation by the point mutation A577I.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that conformational confinement accounts for 100% of the ATPase stimulation induced by macro-molecular crowding, for 60% of the stimulation by the point mutation A577I, and for only 10% of the stimulation by cochaperone Aha1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is calculated from the comparison of conformational and functional effects.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:39:56.081136Z"
+    },
+    {
+      "id": "c78062f6-fb95-4e7a-8efe-1cba9d005aa2",
+      "content_id": "7f319b28-4fe4-493a-98dc-56f314b91d22",
+      "claim_id": "C102",
+      "claim": "Conformational confinement accounts for only 10% of the ATPase stimulation by cochaperone Aha1.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that conformational confinement accounts for 100% of the ATPase stimulation induced by macro-molecular crowding, for 60% of the stimulation by the point mutation A577I, and for only 10% of the stimulation by cochaperone Aha1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is calculated from the comparison of conformational and functional effects.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:39:56.081136Z"
+    },
+    {
+      "id": "bb914637-f71d-4909-aeab-e51e77ec7ff9",
+      "content_id": "7f319b28-4fe4-493a-98dc-56f314b91d22",
+      "claim_id": "C103",
+      "claim": "The contribution of conformational confinement is largest for purely non-specific interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "The contribution of conformational confinement is thus largest for purely non-specific interactions, while additional allosteric effects may increase the stimulation by A577I, and specific rearrangements of the active site dominate the stimulating action of cochaperone Aha1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from the analysis of conformational confinement contributions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:39:56.081136Z"
+    },
+    {
+      "id": "6b2f9d9f-95f9-4d5e-b423-d83f241c40cd",
+      "content_id": "7f319b28-4fe4-493a-98dc-56f314b91d22",
+      "claim_id": "C104",
+      "claim": "Additional allosteric effects may increase the stimulation by A577I.",
+      "claim_type": "EXPLICIT",
+      "source": "The contribution of conformational confinement is thus largest for purely non-specific interactions, while additional allosteric effects may increase the stimulation by A577I, and specific rearrangements of the active site dominate the stimulating action of cochaperone Aha1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation of the A577I effect.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:39:56.081136Z"
+    },
+    {
+      "id": "acdda272-6767-402b-83d9-d57948235bb8",
+      "content_id": "7f319b28-4fe4-493a-98dc-56f314b91d22",
+      "claim_id": "C105",
+      "claim": "Specific rearrangements of the active site dominate the stimulating action of cochaperone Aha1.",
+      "claim_type": "EXPLICIT",
+      "source": "The contribution of conformational confinement is thus largest for purely non-specific interactions, while additional allosteric effects may increase the stimulation by A577I, and specific rearrangements of the active site dominate the stimulating action of cochaperone Aha1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from the analysis of Aha1's effect.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:39:56.081136Z"
+    },
+    {
+      "id": "fe55702e-81dc-491c-a07b-d341e8c1adad",
+      "content_id": "7f319b28-4fe4-493a-98dc-56f314b91d22",
+      "claim_id": "C106",
+      "claim": "The data do not indicate additional combinatorial effects of these three stimulations.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data do not indicate additional combinatorial effects of these three stimulations, which can be investigated in a future study.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a finding from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:39:56.081136Z"
+    },
+    {
+      "id": "8c189c72-add6-4af2-a067-669687ac0f51",
+      "content_id": "7f319b28-4fe4-493a-98dc-56f314b91d22",
+      "claim_id": "C107",
+      "claim": "All three modulations provoke a similar steady-state (equilibrium) behavior, namely an increase in Hsp90's closed conformation and in Hsp90's ATPase rate.",
+      "claim_type": "EXPLICIT",
+      "source": "Herein we compare three types of Hsp90 modulations, spanning a wide range from a site-specific point mutation, via cochaperone binding, to completely non-specific macro-molecular crowding. All three modulations provoke a similar steady-state (equilibrium) behavior, namely an increase in Hsp90's closed conformation and in Hsp90's ATPase rate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the main findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:39:56.081136Z"
+    },
+    {
+      "id": "f5bac43b-9719-41cc-b28f-6ceb8b1d6619",
+      "content_id": "7f319b28-4fe4-493a-98dc-56f314b91d22",
+      "claim_id": "C108",
+      "claim": "The three modulations show significant differences in their kinetics, which could be revealed by single-molecule FRET.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, they show significant differences in their kinetics, which could be revealed by single-molecule FRET.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the main findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:39:56.081136Z"
+    },
+    {
+      "id": "2dc167ca-7409-493a-b44e-125a89af751d",
+      "content_id": "7f319b28-4fe4-493a-98dc-56f314b91d22",
+      "claim_id": "C109",
+      "claim": "Yeast Hsp90 is a very flexible dimer that relies critically on external assistance (e.g. by cochaperones) to control its non-productive flexibility.",
+      "claim_type": "EXPLICIT",
+      "source": "This can be rationalized by the emerging picture of yeast Hsp90, as a very flexible dimer that relies critically on external assistance (e.g. by cochaperones) to control its non-productive flexibility.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:39:56.081136Z"
+    },
+    {
+      "id": "c5e2f1c7-23b0-45ff-9b90-93ac201170e6",
+      "content_id": "7f319b28-4fe4-493a-98dc-56f314b91d22",
+      "claim_id": "C110",
+      "claim": "Hsp90's ATPase function requires the concerted action of the N-terminal nucleotide binding pocket with the ATP lid and distant elements such as the catalytic loop of the middle domain and parts of the opposite N-domain.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, Hsp90's ATPase function requires the concerted action of the N-terminal nucleotide binding pocket with the ATP lid and distant elements such as the catalytic loop of the middle domain and parts of the opposite N-domain (the N-terminal \u03b21-\u03b11 segment).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a requirement for Hsp90's ATPase function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:39:56.081136Z"
+    },
+    {
+      "id": "174ee60c-78a3-4dcd-9cf6-6cc219179358",
+      "content_id": "7f319b28-4fe4-493a-98dc-56f314b91d22",
+      "claim_id": "C111",
+      "claim": "The catalytic unit elements are also called the catalytic unit (Prodromou, 2012).",
+      "claim_type": "EXPLICIT",
+      "source": "These elements \u2013 also called the catalytic unit (Prodromou, 2012) - however, are very flexible, such as the entire multi-domain dimer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Prodromou, 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:39:56.081136Z"
+    },
+    {
+      "id": "c57df48d-5915-41c7-be59-8fd68757b0e8",
+      "content_id": "7f319b28-4fe4-493a-98dc-56f314b91d22",
+      "claim_id": "C112",
+      "claim": "Anything that constrains Hsp90's flexibility and confines Hsp90 in a more compact conformation has a high potential to increase the combined probability for concerted action of catalytic elements.",
+      "claim_type": "EXPLICIT",
+      "source": "Consequently, anything that constrains this flexibility and confines Hsp90 in a more compact conformation, has a high potential to increase the combined probability for such a concerted action - be it by specific or even non-specific interaction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from the analysis of conformational confinement.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:39:56.081136Z"
+    },
+    {
+      "id": "724e02e4-5a3f-4162-acc0-8154231a1d3f",
+      "content_id": "7f319b28-4fe4-493a-98dc-56f314b91d22",
+      "claim_id": "C113",
+      "claim": "In a flexible protein such as Hsp90, the catalytically active elements have many translational and rotational degrees of freedom.",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 6 shows that the functional impact of conformational confinement can be understood as a direct result of combinatorics: in a flexible protein such as Hsp90, the catalytically active elements have many translational and rotational degrees of freedom.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is illustrated in Figure 6.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:39:56.081136Z"
+    },
+    {
+      "id": "24bd9716-3b4d-4cbb-bc2e-506ba8d28876",
+      "content_id": "7f319b28-4fe4-493a-98dc-56f314b91d22",
+      "claim_id": "C114",
+      "claim": "The probability for a certain hydrolysis-competent conformation is very small in flexible Hsp90.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the probability for a certain hydrolysis-competent conformation is very small.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the many degrees of freedom.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:39:56.081136Z"
+    },
+    {
+      "id": "c46fa3f2-3ea9-4d1c-903d-17b2204de228",
+      "content_id": "7f319b28-4fe4-493a-98dc-56f314b91d22",
+      "claim_id": "C115",
+      "claim": "The probability for a hydrolysis-competent conformation is increased dramatically by conditions that constrain degrees of freedom \u2013 even non-specifically \u2013 and localize the catalytically active elements.",
+      "claim_type": "EXPLICIT",
+      "source": "It is however increased dramatically by conditions that constrain these degrees of freedom \u2013 even non-specifically \u2013 and localize the catalytically active elements.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from the analysis of conformational confinement.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:39:56.081136Z"
+    },
+    {
+      "id": "edaea40a-1be4-4df4-9ec8-76bd567ed420",
+      "content_id": "7f319b28-4fe4-493a-98dc-56f314b91d22",
+      "claim_id": "C116",
+      "claim": "While Hsp90's flexibility may facilitate its numerous interactions with diverse clients and cochaperones, the flexibility itself has substantial off-state character regarding the ATPase function of Hsp90.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude, while Hsp90's flexibility may facilitate its numerous interactions with diverse clients and cochaperones, the flexibility itself has substantial off-state character regarding the ATPase function of Hsp90.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from the study's findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:39:56.081136Z"
+    },
+    {
+      "id": "2d8b31f6-284d-496f-a987-2b0b15c27205",
+      "content_id": "7f319b28-4fe4-493a-98dc-56f314b91d22",
+      "claim_id": "C117",
+      "claim": "ATP hydrolysis controls longer-range allosteric effects linked to active site residues by directly affecting the lifetime of the nucleotide/active site contacts and the resulting structural stabilization.",
+      "claim_type": "EXPLICIT",
+      "source": "In turn, by directly affecting the lifetime of the nucleotide/active site contacts and the resulting structural stabilization, ATP hydrolysis controls also longer-range allosteric effects linked to these residues.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the relationship between ATP hydrolysis and allostery.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:39:56.081136Z"
+    },
+    {
+      "id": "7b0bb946-ba15-4ceb-b1a8-887224c4de49",
+      "content_id": "7f319b28-4fe4-493a-98dc-56f314b91d22",
+      "claim_id": "C118",
+      "claim": "The point mutation A577I destabilizes the open conformation, most probably by preventing access to a subset of the conformational ensemble of open states.",
+      "claim_type": "EXPLICIT",
+      "source": "The point mutation A557I destabilizes the open conformation, most probably by preventing access to a subset of the conformational ensemble of open states.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the A577I effect.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:39:56.081136Z"
+    },
+    {
+      "id": "3c39553c-532c-4522-a0f2-912c8efe5740",
+      "content_id": "7f319b28-4fe4-493a-98dc-56f314b91d22",
+      "claim_id": "C119",
+      "claim": "The A577I mutation leads to an overall stiffened structure (more confined) of the A577I homodimer and therefore less extensive random walks, that is a more streamlined conformational transition toward the closed conformations.",
+      "claim_type": "EXPLICIT",
+      "source": "This leads to an overall stiffened structure (more confined) of the A577I homodimer and therefore less extensive random walks, that is a more streamlined conformational transition toward the closed conformations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the A577I effect.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:39:56.081136Z"
+    },
+    {
+      "id": "e8cd98c4-4898-4d1d-bccf-4470887093b3",
+      "content_id": "7f319b28-4fe4-493a-98dc-56f314b91d22",
+      "claim_id": "C120",
+      "claim": "Macro-molecular crowding stabilizes the closed conformation by simple, sterical confinement.",
+      "claim_type": "EXPLICIT",
+      "source": "Macro-molecular crowding stabilizes the closed conformation by simple, sterical confinement.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from the analysis of crowding effects.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:39:56.081136Z"
+    },
+    {
+      "id": "f64927e2-fa74-431a-bd6d-6d4615b62437",
+      "content_id": "7f319b28-4fe4-493a-98dc-56f314b91d22",
+      "claim_id": "C121",
+      "claim": "The cochaperone Aha1 combines both mechanisms (destabilization of open and stabilization of closed conformations) with additional specific rearrangements.",
+      "claim_type": "EXPLICIT",
+      "source": "The cochaperone Aha1 combines both mechanisms with additional specific rearrangements.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from the analysis of Aha1's effect.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:39:56.081136Z"
+    },
+    {
+      "id": "0cc8826a-9679-4816-a4f3-a9c462e7e27f",
+      "content_id": "7f319b28-4fe4-493a-98dc-56f314b91d22",
+      "claim_id": "C122",
+      "claim": "In theory, all three modulations can lead to the exactly same thermodynamic observation.",
+      "claim_type": "EXPLICIT",
+      "source": "In theory, all three modulations can lead to the exactly same thermodynamic observation, and in fact we observe very similar steady-state distributions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a theoretical possibility that is observed in practice.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:39:56.081136Z"
+    },
+    {
+      "id": "4cd4fad6-e1da-4f08-911f-be51c721f7e6",
+      "content_id": "7f319b28-4fe4-493a-98dc-56f314b91d22",
+      "claim_id": "C123",
+      "claim": "The kinetics may vary significantly even when thermodynamic observations are the same.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, the kinetics may still vary significantly \u2013 as experimentally demonstrated herein.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a main finding of the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:39:56.081136Z"
+    },
+    {
+      "id": "94e325cd-b8ea-4a6c-8f3b-65eb9cb4900e",
+      "content_id": "7f319b28-4fe4-493a-98dc-56f314b91d22",
+      "claim_id": "C124",
+      "claim": "The fact that kinetics can vary despite similar thermodynamics is an important mathematical fact that holds true for all protein systems.",
+      "claim_type": "EXPLICIT",
+      "source": "This is an important mathematical fact that holds true for all protein systems.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a general principle.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:39:56.081136Z"
+    },
+    {
+      "id": "b4d6fd89-e8b4-4b17-99b6-9cbd2c7c5eae",
+      "content_id": "7f319b28-4fe4-493a-98dc-56f314b91d22",
+      "claim_id": "C125",
+      "claim": "Regulation by cochaperones - and protein-protein interactions in general - can have far-reaching thermodynamic, kinetic, and functional consequences.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, our findings indicate that regulation by cochaperones - and protein-protein interactions in general - can have far-reaching thermodynamic, kinetic, and functional consequences.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from the study's findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:39:56.081136Z"
+    },
+    {
+      "id": "6d92bba8-2849-45ed-8acf-a13849d33c9e",
+      "content_id": "7f319b28-4fe4-493a-98dc-56f314b91d22",
+      "claim_id": "C126",
+      "claim": "Some consequences of protein-protein interactions can possibly be mimicked by individual point mutations, but other consequences might be missed.",
+      "claim_type": "EXPLICIT",
+      "source": "Some of them can possibly be mimicked by individual point mutations, but other consequences might be missed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from comparing mutation and cochaperone effects.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:39:56.081136Z"
+    },
+    {
+      "id": "1b85ddbe-68d9-4d40-a944-81ac36f84c2d",
+      "content_id": "7f319b28-4fe4-493a-98dc-56f314b91d22",
+      "claim_id": "C127",
+      "claim": "Non-specific, purely physical macro-molecular crowding has strong effects on thermodynamics, kinetics and function.",
+      "claim_type": "EXPLICIT",
+      "source": "Lastly, as shown in this work, already non-specific, purely physical macro-molecular crowding has strong effects on thermodynamics, kinetics and function, therefore caution is advised when relating in vitro findings to in vivo function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from the study's findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:39:56.081136Z"
+    },
+    {
+      "id": "d45d9de5-68a9-437a-bda5-9375e84c3687",
+      "content_id": "7f319b28-4fe4-493a-98dc-56f314b91d22",
+      "claim_id": "C128",
+      "claim": "Caution is advised when relating in vitro findings to in vivo function.",
+      "claim_type": "EXPLICIT",
+      "source": "Lastly, as shown in this work, already non-specific, purely physical macro-molecular crowding has strong effects on thermodynamics, kinetics and function, therefore caution is advised when relating in vitro findings to in vivo function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a recommendation based on the findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:39:56.081136Z"
+    },
+    {
+      "id": "281eccc4-c49e-4036-8268-519d8412469b",
+      "content_id": "7f319b28-4fe4-493a-98dc-56f314b91d22",
+      "claim_id": "C129",
+      "claim": "Certain mutations that show little or no ATPase activity in vitro may be 'rescued' by the conformational confinement in the crowded cellular environment, and still be ATPase active in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "Certain mutations that show little or no ATPase activity in vitro, may be 'rescued' by the conformational confinement in the crowded cellular environment, and still be ATPase active in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation based on the crowding effects observed.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:39:56.081136Z"
+    },
+    {
+      "id": "6f109769-f33c-4d75-90ad-bffce2392aa6",
+      "content_id": "7f319b28-4fe4-493a-98dc-56f314b91d22",
+      "claim_id": "C130",
+      "claim": "In many in vitro experiments macro-molecular crowding could easily be included.",
+      "claim_type": "EXPLICIT",
+      "source": "As demonstrated herein, in many in vitro experiments macro-molecular crowding could easily be included.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a recommendation based on the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:39:56.081136Z"
+    },
+    {
+      "id": "b1d3fd68-3177-4ba4-8901-985b5796d765",
+      "content_id": "7f319b28-4fe4-493a-98dc-56f314b91d22",
+      "claim_id": "C131",
+      "claim": "The study demonstrated three ways of protein regulation, ranging from site-specific localized to global modulations.",
+      "claim_type": "EXPLICIT",
+      "source": "In conclusion, we demonstrated herein three ways of protein regulation, ranging from site-specific localized to global modulations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the study's scope.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:39:56.081136Z"
+    },
+    {
+      "id": "cd13c842-7e50-4ada-bf3f-605743d27ecb",
+      "content_id": "7f319b28-4fe4-493a-98dc-56f314b91d22",
+      "claim_id": "C132",
+      "claim": "All three ways show very similar thermodynamic observations, which are, however, caused by clearly different conformational kinetics.",
+      "claim_type": "EXPLICIT",
+      "source": "All three ways show very similar thermodynamic observations, which are, however, caused by clearly different conformational kinetics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the main findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:39:56.081136Z"
+    },
+    {
+      "id": "791ccb0d-5de3-492f-bb74-47bb3fdf34a7",
+      "content_id": "7f319b28-4fe4-493a-98dc-56f314b91d22",
+      "claim_id": "C133",
+      "claim": "The study provides direct evidence for the importance of kinetics, and of the dynamic structure\u2013function relationship in proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "This is direct evidence for the importance of kinetics, and of the dynamic structure\u2013function relationship in proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a conclusion from the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:39:56.081136Z"
+    },
+    {
+      "id": "d337e189-4489-4a0c-bc7d-69e784445c95",
+      "content_id": "7f319b28-4fe4-493a-98dc-56f314b91d22",
+      "claim_id": "C134",
+      "claim": "The reduction of non-productive structural flexibility stimulates Hsp90's ATPase function even by entirely non-specific means.",
+      "claim_type": "EXPLICIT",
+      "source": "The reduction of non-productive structural flexibility stimulates Hsp90's ATPase function even by entirely non-specific means.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from the crowding experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:39:56.081136Z"
+    },
+    {
+      "id": "5a9bf9be-0686-4dd2-b607-6807043f3dcb",
+      "content_id": "7f319b28-4fe4-493a-98dc-56f314b91d22",
+      "claim_id": "C135",
+      "claim": "Functional stimulation as a result of conformational combinatorics plays an important role in protein regulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings demonstrate that functional stimulation as a result of conformational combinatorics plays an important role in protein regulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a conclusion from the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:39:56.081136Z"
+    },
+    {
+      "id": "7d023742-bbf8-4d1e-8316-73287312011f",
+      "content_id": "7f319b28-4fe4-493a-98dc-56f314b91d22",
+      "claim_id": "C136",
+      "claim": "Conformational confinement - by localized or global modulations - is an important mechanistic concept with wide-spread implications for protein function in diverse systems.",
+      "claim_type": "EXPLICIT",
+      "source": "We anticipate that such conformational confinement - by localized or global modulations - is an important mechanistic concept with wide-spread implications for protein function in diverse systems.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a speculation about the broader implications of the findings.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:39:56.081136Z"
+    },
+    {
+      "id": "d294f3ca-39b6-4c87-9810-ad30ce0e1937",
+      "content_id": "7f319b28-4fe4-493a-98dc-56f314b91d22",
+      "claim_id": "C137",
+      "claim": "Yeast Hsp90 dimers with a C-terminal coiled-coil motif (kinesin neck region of D. melanogaster) were used to avoid dissociation at low concentrations (Mickler et al., 2009).",
+      "claim_type": "EXPLICIT",
+      "source": "Yeast Hsp90 dimers (UniProtKB: P02829) with a C-terminal coiled-coil motif (kinesin neck region of D. melanogaster) were used to avoid dissociation at low concentrations (Mickler et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a methodological detail, supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:39:56.081136Z"
+    },
+    {
+      "id": "e675aff5-494d-4648-8c32-28bc07117946",
+      "content_id": "7f319b28-4fe4-493a-98dc-56f314b91d22",
+      "claim_id": "C138",
+      "claim": "Previously published cysteine positions (Hessling et al., 2009) allowed for specific labeling with donor (61C) or acceptor (385C) fluorophores.",
+      "claim_type": "EXPLICIT",
+      "source": "Previously published cysteine positions (Hessling et al., 2009) allowed for specific labeling with donor (61C) or acceptor (385C) fluorophores (see below).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a methodological detail, supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:39:56.081136Z"
+    },
+    {
+      "id": "74700d64-b11b-44f8-a3d2-059e0d25a4db",
+      "content_id": "7f319b28-4fe4-493a-98dc-56f314b91d22",
+      "claim_id": "C139",
+      "claim": "Significant binding was previously found for Aha1 with labeled Hsp90-385C at 0.3 \u00b5M (Li et al., 2013), which is exactly the dissociation constant reported for unlabeled Hsp90 (Panaretou et al., 2002).",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, significant binding was previously found for Aha1 with labeled Hsp90-385C at much lower concentration of 0.3 \u00b5M (Li et al., 2013), which is exactly the dissociation constant reported for unlabeled Hsp90 (Panaretou et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Li et al., 2013 and Panaretou et al., 2002.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:39:56.081136Z"
+    },
+    {
+      "id": "cbd3d83c-0b3f-4703-a9ef-60148648d561",
+      "content_id": "7f319b28-4fe4-493a-98dc-56f314b91d22",
+      "claim_id": "C140",
+      "claim": "Although not directly detectable in the experiment, Hsp90 exists predominantly in complex with Aha1 under the used conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "This implies that, although not directly detectable in the experiment, Hsp90 exists predominantly in complex with Aha1 under the used conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the binding affinity data.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:39:56.081136Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "62f0d024-f6fd-4fc1-aec1-bd2450362a8c",
+      "content_id": "7f319b28-4fe4-493a-98dc-56f314b91d22",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "All three modulations (A577I mutation, Aha1 cochaperone, and macromolecular crowding) shift Hsp90 toward closed conformations with similar magnitudes. The A577I mutation increased closed population from 13\u00b13.5% to 51\u00b15.5%, Aha1 shifted it from 24\u00b14.0% to 48\u00b15.0%, and crowding increased it from 11\u00b14.5% to 50\u00b110.5%.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48, C58, C59, and C64 provide quantitative smFRET data showing similar steady-state shifts toward closed conformations across all three modulation types. The measurements include error estimates and are supported by Figure 2c, providing convergent evidence for this thermodynamic similarity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:39:56.081136Z"
+    },
+    {
+      "id": "e9cc6e06-4482-4901-b28e-3d307e96286e",
+      "content_id": "7f319b28-4fe4-493a-98dc-56f314b91d22",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Despite similar thermodynamic steady states, the three modulations produce completely different underlying kinetics. Aha1 causes opposing changes in fast rates between states 1 and 2, A577I collectively accelerates the pathway from state 0 to state 3, and crowding primarily affects rates between closed states 2 and 3.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7, C72, C73, C77, C79, C108, C123, and C132 are supported by kinetic analysis using SMACKS methodology (C66-C71) and presented in Figure 3. The distinct kinetic mechanisms underlying similar thermodynamic outcomes represent a key finding demonstrating the importance of kinetic measurements beyond equilibrium populations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:39:56.081136Z"
+    },
+    {
+      "id": "ed8497e9-d6e6-4422-b9a2-406b1723dd20",
+      "content_id": "7f319b28-4fe4-493a-98dc-56f314b91d22",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Free energy analysis reveals distinct mechanisms: A577I causes asymmetric destabilization of open conformations, Aha1 simultaneously destabilizes open and stabilizes closed conformations, while crowding only stabilizes closed conformations. This mechanistic information is not accessible from steady-state distributions alone.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C80-C83 are supported by kinetic rate models converted to free energy landscapes (Figure 4). The analysis correctly notes that steady-state distributions (C65) cannot distinguish between these mechanisms, requiring full kinetic characterization. The conclusions follow logically from the rate constant measurements.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:39:56.081136Z"
+    },
+    {
+      "id": "4d2a8463-0cfa-4453-bedf-61c92ce1448d",
+      "content_id": "7f319b28-4fe4-493a-98dc-56f314b91d22",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "All three modulations increase ATPase activity but not proportionally to closed population increases. A577I causes 7-fold, Aha1 17-fold, and crowding 4-fold increases in ATPase activity, demonstrating that functional changes do not simply reflect conformational population shifts.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C84-C88 are supported by ATPase activity assays (Figure 5) showing quantitative functional measurements. The disproportionate relationship between closed population and ATPase stimulation (C88) is well-documented through comparison with conformational data (C93-C94), providing strong evidence that additional factors beyond equilibrium populations affect function.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:39:56.081136Z"
+    },
+    {
+      "id": "5d49bf60-467c-449f-b67e-ce69d55f2283",
+      "content_id": "7f319b28-4fe4-493a-98dc-56f314b91d22",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Conformational confinement accounts for 100% of ATPase stimulation by crowding, 60% by A577I mutation, and only 10% by Aha1, with the contribution largest for non-specific interactions and smallest for specific protein-protein interactions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C100-C103 present quantitative estimates of conformational confinement contributions, but the calculation methodology is not fully detailed in the provided text. While the qualitative trend (crowding > mutation > Aha1) is consistent with the data, the precise percentages require assumptions about how to partition conformational versus other effects that are not explicitly validated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:39:56.081136Z"
+    },
+    {
+      "id": "7c34d7bf-d626-4dcf-9959-d4d892a44775",
+      "content_id": "7f319b28-4fe4-493a-98dc-56f314b91d22",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The study introduces 'conformational confinement' as a mechanistic concept where reducing non-productive structural flexibility stimulates ATPase function even by non-specific means. This occurs because constraining degrees of freedom increases the probability of catalytically competent conformations through combinatorial effects.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10, C112, C115, C134-C136 present the conformational confinement concept supported by the crowding experiments (C87, C90, C100) showing purely non-specific effects can stimulate function. The mechanistic model (Figure 6, C113-C115) provides a logical framework. However, C136's speculation about 'wide-spread implications' extends beyond the data presented.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:39:56.081136Z"
+    },
+    {
+      "id": "ad3eac3e-35cf-4595-b4d8-424612029314",
+      "content_id": "7f319b28-4fe4-493a-98dc-56f314b91d22",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The A577I mutation shows additive effects in heterodimers and homodimers, with progressive shifts toward closed conformations. The mutation also causes faster transitions at the resolution limit and slight shifts in the low-FRET peak, interpreted as global stiffening of Hsp90's structural core.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C56 are supported by smFRET data in Figure 2\u2014figure supplement 3 showing dose-dependent effects of the mutation. The interpretation of stiffening (C56) is reasonable given the observed kinetic changes (C55) and peak shifts (C54), though C54 acknowledges this is speculative ('could be explained').",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:39:56.081136Z"
+    },
+    {
+      "id": "78c84897-8ef8-4a00-85a8-654faca665b6",
+      "content_id": "7f319b28-4fe4-493a-98dc-56f314b91d22",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Crowding effects are concentration-dependent and specific to macromolecular crowding agents. Polymeric Ficoll400 slows fast fluctuations and creates well-separated populations, while monomeric sucrose has negligible effects, proving macromolecular crowding rather than biochemical glucose effects cause the population shift.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C60-C63 are supported by concentration-dependent data (Figure 2\u2014figure supplement 4) and the critical control comparing Ficoll400 to monomeric sucrose (C62). This control experiment effectively rules out biochemical explanations (C63), strengthening the conclusion that physical crowding is responsible.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:39:56.081136Z"
+    },
+    {
+      "id": "34da1e2e-daa1-4148-be07-654f3d945bc8",
+      "content_id": "7f319b28-4fe4-493a-98dc-56f314b91d22",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Hsp90's conformational dynamics are best described by four-state kinetic models with two open and two closed states. These states represent conformational ensembles defined by FRET efficiency and kinetics rather than discrete conformations, with the closed states likely differing in local conformational elements.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C66-C71 describe the kinetic modeling approach supported by previous work (C66) and statistical testing. The four-state requirement (C67) is justified by kinetic heterogeneity. The interpretation of states as ensembles (C71) is appropriate for dynamic systems. Claims C68-C70 appropriately cite supporting literature while acknowledging speculative elements.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:39:56.081136Z"
+    },
+    {
+      "id": "820ae7b3-4765-4795-88de-0da2d8f493a8",
+      "content_id": "7f319b28-4fe4-493a-98dc-56f314b91d22",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Aha1 induces the smallest increase in closed population but the largest ATPase stimulation, with specific contacts between Aha1 and Hsp90 responsible for 88% of the ATPase stimulation, highlighting that specific rearrangements of the active site dominate Aha1's stimulating action.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C95-C96 and C105 are supported by comparing Aha1's effects (C86, C94) with crowding (C87, C93). The 88% calculation (C96) follows from the disproportionate functional effect relative to conformational change. This demonstrates the importance of specific interactions beyond conformational confinement.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:39:56.081136Z"
+    },
+    {
+      "id": "dd98c54c-7818-4184-ae9f-a50a0b1340e0",
+      "content_id": "7f319b28-4fe4-493a-98dc-56f314b91d22",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Yeast Hsp90 is characterized as a very flexible dimer requiring external assistance to control non-productive flexibility. While flexibility facilitates diverse interactions, it has substantial off-state character for ATPase function, which requires concerted action of multiple distant structural elements.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C109-C110 and C116-C117 synthesize the study's findings into a coherent model of Hsp90 function. The characterization is supported by the demonstrated effects of confinement on activity (C84-C87, C134) and is consistent with structural knowledge (C110). The interpretation logically connects structure, dynamics, and function.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:39:56.081136Z"
+    },
+    {
+      "id": "2f8dc005-5607-4956-a7dc-0aeef891486a",
+      "content_id": "7f319b28-4fe4-493a-98dc-56f314b91d22",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Non-specific macromolecular crowding has strong effects on thermodynamics, kinetics, and function, suggesting caution when relating in vitro findings to in vivo function. Certain mutations showing little ATPase activity in vitro may be rescued by conformational confinement in crowded cellular environments.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C127-C128 are well-supported by the crowding data (C59, C87, C90). The recommendation for caution (C128) is justified. Claim C129 is appropriately labeled as speculation but is a reasonable extrapolation. Claim C130's suggestion to include crowding in vitro is a practical recommendation supported by the study's findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:39:56.081136Z"
+    },
+    {
+      "id": "a9900c3b-d1aa-49ee-a0b9-410efc07942e",
+      "content_id": "7f319b28-4fe4-493a-98dc-56f314b91d22",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Protein function is regulated through multiple mechanisms including PTMs, protein-protein interactions, and global environmental factors (crowding, phase separation, temperature, redox conditions, osmolarity), which act at different levels of localization and all influence 3D conformation, conformational dynamics, and function.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C6 and C12-C20 establish background knowledge supported by appropriate citations. These claims provide context for the study but represent established knowledge rather than new findings. The citations appear appropriate for the claims made.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:39:56.081136Z"
+    },
+    {
+      "id": "30a71be9-dab4-49e2-a7ce-2f3438786002",
+      "content_id": "7f319b28-4fe4-493a-98dc-56f314b91d22",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Hsp90 is an important metabolic hub involved in maturation of 20% of the yeast proteome, is a drug target in cancer research, exists as a homodimer with three domains per monomer, and alternates between open and closed conformations even without ATP, with conformational changes little affected by drugs or nucleotides.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21-C35 provide background on Hsp90 supported by appropriate citations to established literature. These claims establish the biological importance and structural/dynamic properties of the system under study. The citations appear accurate and relevant.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:39:56.081136Z"
+    },
+    {
+      "id": "f052ebf8-ccb3-4474-91d4-4abda9b0cf10",
+      "content_id": "7f319b28-4fe4-493a-98dc-56f314b91d22",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The A577I mutation is located in the C-terminal hinge region, equivalent to the S-nitrosylation site C598 in human Hsp90. While nitrosylation has inhibitory effects, the A577I mutation causes nearly 4-fold ATPase amplification, indicating long-range communication between C-terminal and N-terminal domains.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36-C40 describe the mutation studied, supported by citations (C37, C39). The inference of long-range communication (C40) is reasonable given the spatial separation of mutation site and ATP binding site. This establishes the rationale for studying this particular mutation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:39:56.081136Z"
+    },
+    {
+      "id": "160273a4-12e1-4161-9a7f-61908e18be3e",
+      "content_id": "7f319b28-4fe4-493a-98dc-56f314b91d22",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Aha1 is a well-known stimulator of Hsp90's ATPase activity that makes contacts to the middle and N-terminal domains, rearranging the ATP lid and catalytic loop favorably for ATP hydrolysis, with its affinity for Hsp90 enhanced by PTMs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41-C43 provide background on Aha1 supported by appropriate citations (C42, C43). This establishes the known mechanism of Aha1 action and provides context for the experimental results comparing Aha1 with other modulations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:39:56.081136Z"
+    },
+    {
+      "id": "1ebe9a06-ea83-4078-a030-21851a02a3b1",
+      "content_id": "7f319b28-4fe4-493a-98dc-56f314b91d22",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "The experimental system uses yeast Hsp90 dimers with a C-terminal coiled-coil motif to prevent dissociation, with specific cysteine positions for fluorophore labeling. Under the experimental conditions used, Hsp90 exists predominantly in complex with Aha1 based on binding affinity data.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C137-C140 describe methodological details supported by citations (C137, C138, C139). The inference that Hsp90 exists predominantly in complex with Aha1 (C140) is reasonable given the reported dissociation constant and experimental concentration, though this is an inference rather than direct measurement.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:39:56.081136Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "44f1bf80-08fb-4b9a-a52d-c3ccfda9bfa8",
+      "result_id": "62f0d024-f6fd-4fc1-aec1-bd2450362a8c"
+    },
+    {
+      "claim_id": "0e8efbc3-c678-4b4f-84db-72f511b2e116",
+      "result_id": "62f0d024-f6fd-4fc1-aec1-bd2450362a8c"
+    },
+    {
+      "claim_id": "09f561b6-8fc2-41ea-aac6-123437aa260d",
+      "result_id": "62f0d024-f6fd-4fc1-aec1-bd2450362a8c"
+    },
+    {
+      "claim_id": "009e292d-3618-4156-9420-f88c0fb74461",
+      "result_id": "62f0d024-f6fd-4fc1-aec1-bd2450362a8c"
+    },
+    {
+      "claim_id": "2ca21911-6016-41a9-9f64-a0a3f0f8ab6c",
+      "result_id": "e9cc6e06-4482-4901-b28e-3d307e96286e"
+    },
+    {
+      "claim_id": "08377e79-3a6f-4c9e-a927-e9f8fab7e946",
+      "result_id": "e9cc6e06-4482-4901-b28e-3d307e96286e"
+    },
+    {
+      "claim_id": "d30af4d5-d0b6-4057-863f-4473f5d111ee",
+      "result_id": "e9cc6e06-4482-4901-b28e-3d307e96286e"
+    },
+    {
+      "claim_id": "bca56f82-6136-496d-bb4e-0ec3eb7e95eb",
+      "result_id": "e9cc6e06-4482-4901-b28e-3d307e96286e"
+    },
+    {
+      "claim_id": "3b9d4edd-0afd-4ebd-a8db-a03e0fb07189",
+      "result_id": "e9cc6e06-4482-4901-b28e-3d307e96286e"
+    },
+    {
+      "claim_id": "f5bac43b-9719-41cc-b28f-6ceb8b1d6619",
+      "result_id": "e9cc6e06-4482-4901-b28e-3d307e96286e"
+    },
+    {
+      "claim_id": "4cd4fad6-e1da-4f08-911f-be51c721f7e6",
+      "result_id": "e9cc6e06-4482-4901-b28e-3d307e96286e"
+    },
+    {
+      "claim_id": "cd13c842-7e50-4ada-bf3f-605743d27ecb",
+      "result_id": "e9cc6e06-4482-4901-b28e-3d307e96286e"
+    },
+    {
+      "claim_id": "be01371c-8096-4fcd-8818-8b616114fbda",
+      "result_id": "ed8497e9-d6e6-4422-b9a2-406b1723dd20"
+    },
+    {
+      "claim_id": "9315d954-678c-4b3d-878f-28986acff0ee",
+      "result_id": "ed8497e9-d6e6-4422-b9a2-406b1723dd20"
+    },
+    {
+      "claim_id": "ddb71c13-a771-46be-a422-4761d4d09379",
+      "result_id": "ed8497e9-d6e6-4422-b9a2-406b1723dd20"
+    },
+    {
+      "claim_id": "e9f7f527-f44f-444d-ad75-9a4706d67eee",
+      "result_id": "ed8497e9-d6e6-4422-b9a2-406b1723dd20"
+    },
+    {
+      "claim_id": "a685b1da-37b8-4cec-92f6-1ee10a28aee1",
+      "result_id": "4d2a8463-0cfa-4453-bedf-61c92ce1448d"
+    },
+    {
+      "claim_id": "c83d1bd1-d450-4fde-a581-111189fa19a7",
+      "result_id": "4d2a8463-0cfa-4453-bedf-61c92ce1448d"
+    },
+    {
+      "claim_id": "3994909b-cb0c-45da-90b4-8cc70c2f9bd9",
+      "result_id": "4d2a8463-0cfa-4453-bedf-61c92ce1448d"
+    },
+    {
+      "claim_id": "f44f23f5-7fa1-471e-8d87-3a651431a314",
+      "result_id": "4d2a8463-0cfa-4453-bedf-61c92ce1448d"
+    },
+    {
+      "claim_id": "66b6962d-43b9-40cd-b07e-bdf7199e3e9d",
+      "result_id": "4d2a8463-0cfa-4453-bedf-61c92ce1448d"
+    },
+    {
+      "claim_id": "f9885514-3566-426d-82e9-21138a996d6c",
+      "result_id": "5d49bf60-467c-449f-b67e-ce69d55f2283"
+    },
+    {
+      "claim_id": "727e89b2-3068-4ae7-be44-7300afde6cfd",
+      "result_id": "5d49bf60-467c-449f-b67e-ce69d55f2283"
+    },
+    {
+      "claim_id": "c78062f6-fb95-4e7a-8efe-1cba9d005aa2",
+      "result_id": "5d49bf60-467c-449f-b67e-ce69d55f2283"
+    },
+    {
+      "claim_id": "bb914637-f71d-4909-aeab-e51e77ec7ff9",
+      "result_id": "5d49bf60-467c-449f-b67e-ce69d55f2283"
+    },
+    {
+      "claim_id": "a51dbdc8-50c7-4b12-8397-c0f7fa84be1f",
+      "result_id": "7c34d7bf-d626-4dcf-9959-d4d892a44775"
+    },
+    {
+      "claim_id": "c57df48d-5915-41c7-be59-8fd68757b0e8",
+      "result_id": "7c34d7bf-d626-4dcf-9959-d4d892a44775"
+    },
+    {
+      "claim_id": "c46fa3f2-3ea9-4d1c-903d-17b2204de228",
+      "result_id": "7c34d7bf-d626-4dcf-9959-d4d892a44775"
+    },
+    {
+      "claim_id": "d337e189-4489-4a0c-bc7d-69e784445c95",
+      "result_id": "7c34d7bf-d626-4dcf-9959-d4d892a44775"
+    },
+    {
+      "claim_id": "5a9bf9be-0686-4dd2-b607-6807043f3dcb",
+      "result_id": "7c34d7bf-d626-4dcf-9959-d4d892a44775"
+    },
+    {
+      "claim_id": "7d023742-bbf8-4d1e-8316-73287312011f",
+      "result_id": "7c34d7bf-d626-4dcf-9959-d4d892a44775"
+    },
+    {
+      "claim_id": "7b4d5c5b-f440-4706-be95-730933a971ac",
+      "result_id": "ad3eac3e-35cf-4595-b4d8-424612029314"
+    },
+    {
+      "claim_id": "c48a7eea-5a05-4789-b7b3-e9a9a86f822b",
+      "result_id": "ad3eac3e-35cf-4595-b4d8-424612029314"
+    },
+    {
+      "claim_id": "08018784-eac3-47c7-aa93-66cb49af878f",
+      "result_id": "ad3eac3e-35cf-4595-b4d8-424612029314"
+    },
+    {
+      "claim_id": "a56fbd08-8910-47b5-81b3-f5e764e73dd6",
+      "result_id": "ad3eac3e-35cf-4595-b4d8-424612029314"
+    },
+    {
+      "claim_id": "f02eb417-96f5-491c-a67d-a012d09e2b39",
+      "result_id": "ad3eac3e-35cf-4595-b4d8-424612029314"
+    },
+    {
+      "claim_id": "7174d53d-3dcc-4452-afc7-61dd64986c84",
+      "result_id": "ad3eac3e-35cf-4595-b4d8-424612029314"
+    },
+    {
+      "claim_id": "b244e518-a219-4475-ba0e-a0277f97f8c4",
+      "result_id": "78c84897-8ef8-4a00-85a8-654faca665b6"
+    },
+    {
+      "claim_id": "2a3af1f1-a33d-4943-a30b-3f2b9612fc51",
+      "result_id": "78c84897-8ef8-4a00-85a8-654faca665b6"
+    },
+    {
+      "claim_id": "62ab80b1-5d81-41ec-847f-e57cbc762e01",
+      "result_id": "78c84897-8ef8-4a00-85a8-654faca665b6"
+    },
+    {
+      "claim_id": "41d96f53-abbc-4a2e-81a7-1669d92abfda",
+      "result_id": "78c84897-8ef8-4a00-85a8-654faca665b6"
+    },
+    {
+      "claim_id": "88f8fc16-d82f-4fa5-9cf3-a220e5c84c69",
+      "result_id": "34da1e2e-daa1-4148-be07-654f3d945bc8"
+    },
+    {
+      "claim_id": "03167b27-69b9-48df-9d84-b5b532422c60",
+      "result_id": "34da1e2e-daa1-4148-be07-654f3d945bc8"
+    },
+    {
+      "claim_id": "9c2f2f36-21c9-4d89-9b7a-eb7847d7744b",
+      "result_id": "34da1e2e-daa1-4148-be07-654f3d945bc8"
+    },
+    {
+      "claim_id": "8454b13d-3494-4aec-9bcf-a59b7ab8d603",
+      "result_id": "34da1e2e-daa1-4148-be07-654f3d945bc8"
+    },
+    {
+      "claim_id": "6e9d408a-8100-4d3b-b392-a631301eff4d",
+      "result_id": "34da1e2e-daa1-4148-be07-654f3d945bc8"
+    },
+    {
+      "claim_id": "7afa6ead-71be-412c-9e94-fd6ef3399c8d",
+      "result_id": "34da1e2e-daa1-4148-be07-654f3d945bc8"
+    },
+    {
+      "claim_id": "2dbfc651-b663-4d62-b6d2-13572bf5d624",
+      "result_id": "820ae7b3-4765-4795-88de-0da2d8f493a8"
+    },
+    {
+      "claim_id": "f3d112fc-9da7-4779-b112-f5d95b4fca2e",
+      "result_id": "820ae7b3-4765-4795-88de-0da2d8f493a8"
+    },
+    {
+      "claim_id": "acdda272-6767-402b-83d9-d57948235bb8",
+      "result_id": "820ae7b3-4765-4795-88de-0da2d8f493a8"
+    },
+    {
+      "claim_id": "2dc167ca-7409-493a-b44e-125a89af751d",
+      "result_id": "dd98c54c-7818-4184-ae9f-a50a0b1340e0"
+    },
+    {
+      "claim_id": "c5e2f1c7-23b0-45ff-9b90-93ac201170e6",
+      "result_id": "dd98c54c-7818-4184-ae9f-a50a0b1340e0"
+    },
+    {
+      "claim_id": "edaea40a-1be4-4df4-9ec8-76bd567ed420",
+      "result_id": "dd98c54c-7818-4184-ae9f-a50a0b1340e0"
+    },
+    {
+      "claim_id": "2d8b31f6-284d-496f-a987-2b0b15c27205",
+      "result_id": "dd98c54c-7818-4184-ae9f-a50a0b1340e0"
+    },
+    {
+      "claim_id": "1b85ddbe-68d9-4d40-a944-81ac36f84c2d",
+      "result_id": "2f8dc005-5607-4956-a7dc-0aeef891486a"
+    },
+    {
+      "claim_id": "d45d9de5-68a9-437a-bda5-9375e84c3687",
+      "result_id": "2f8dc005-5607-4956-a7dc-0aeef891486a"
+    },
+    {
+      "claim_id": "281eccc4-c49e-4036-8268-519d8412469b",
+      "result_id": "2f8dc005-5607-4956-a7dc-0aeef891486a"
+    },
+    {
+      "claim_id": "6f109769-f33c-4d75-90ad-bffce2392aa6",
+      "result_id": "2f8dc005-5607-4956-a7dc-0aeef891486a"
+    },
+    {
+      "claim_id": "1324df90-5864-4c07-809b-f995b70f3127",
+      "result_id": "a9900c3b-d1aa-49ee-a0b9-410efc07942e"
+    },
+    {
+      "claim_id": "b1a1415e-8663-4499-8096-0a8f0672950a",
+      "result_id": "a9900c3b-d1aa-49ee-a0b9-410efc07942e"
+    },
+    {
+      "claim_id": "a8add863-cfd5-43b9-be63-565be503c145",
+      "result_id": "a9900c3b-d1aa-49ee-a0b9-410efc07942e"
+    },
+    {
+      "claim_id": "69d8764a-e30a-4fcd-b361-f3c90dbed510",
+      "result_id": "a9900c3b-d1aa-49ee-a0b9-410efc07942e"
+    },
+    {
+      "claim_id": "246b2632-12c5-4f11-953d-f867bd3d4f7b",
+      "result_id": "a9900c3b-d1aa-49ee-a0b9-410efc07942e"
+    },
+    {
+      "claim_id": "c3c6785a-5bbc-4257-a4e9-de06c1c39654",
+      "result_id": "a9900c3b-d1aa-49ee-a0b9-410efc07942e"
+    },
+    {
+      "claim_id": "0fb8aa1d-f25f-4add-8ab4-ec2f878120f5",
+      "result_id": "a9900c3b-d1aa-49ee-a0b9-410efc07942e"
+    },
+    {
+      "claim_id": "0d7b5f4b-3a5f-402e-b5d9-139e9ae79228",
+      "result_id": "a9900c3b-d1aa-49ee-a0b9-410efc07942e"
+    },
+    {
+      "claim_id": "7e3bb802-461f-4233-96d4-1859cf465649",
+      "result_id": "a9900c3b-d1aa-49ee-a0b9-410efc07942e"
+    },
+    {
+      "claim_id": "54263326-1a26-416b-a6f0-1d1606e69f0c",
+      "result_id": "a9900c3b-d1aa-49ee-a0b9-410efc07942e"
+    },
+    {
+      "claim_id": "9d548062-2dde-4425-9085-d8af563d89ea",
+      "result_id": "a9900c3b-d1aa-49ee-a0b9-410efc07942e"
+    },
+    {
+      "claim_id": "20d060d0-8ac6-491e-8436-33a318c3c3f7",
+      "result_id": "a9900c3b-d1aa-49ee-a0b9-410efc07942e"
+    },
+    {
+      "claim_id": "ec47ba76-4771-43a2-a24c-8acd7b8b4723",
+      "result_id": "a9900c3b-d1aa-49ee-a0b9-410efc07942e"
+    },
+    {
+      "claim_id": "c961e4b7-2df1-42d3-9bd7-fad8f53a1605",
+      "result_id": "a9900c3b-d1aa-49ee-a0b9-410efc07942e"
+    },
+    {
+      "claim_id": "4dfd8ffb-98c4-4f57-8d2f-788c5a5029b0",
+      "result_id": "a9900c3b-d1aa-49ee-a0b9-410efc07942e"
+    },
+    {
+      "claim_id": "61e0c525-dabf-4696-ba92-12ccd1687be1",
+      "result_id": "30a71be9-dab4-49e2-a7ce-2f3438786002"
+    },
+    {
+      "claim_id": "24cf3f88-26a9-498c-8a7d-119edbc07619",
+      "result_id": "30a71be9-dab4-49e2-a7ce-2f3438786002"
+    },
+    {
+      "claim_id": "323cd682-2273-4cac-9688-4c14e8d057bd",
+      "result_id": "30a71be9-dab4-49e2-a7ce-2f3438786002"
+    },
+    {
+      "claim_id": "47790a47-6078-4bd2-805a-454b9c702a85",
+      "result_id": "30a71be9-dab4-49e2-a7ce-2f3438786002"
+    },
+    {
+      "claim_id": "ef003840-1dff-458a-a316-a11d3d7eba11",
+      "result_id": "30a71be9-dab4-49e2-a7ce-2f3438786002"
+    },
+    {
+      "claim_id": "4b1f9a9a-502c-4d89-9959-1d145c7eb15b",
+      "result_id": "30a71be9-dab4-49e2-a7ce-2f3438786002"
+    },
+    {
+      "claim_id": "9e8284bd-73bf-4dd3-951f-6c89791570d6",
+      "result_id": "30a71be9-dab4-49e2-a7ce-2f3438786002"
+    },
+    {
+      "claim_id": "a0ce4470-6e5f-4c15-af4d-e1d7bcc06da2",
+      "result_id": "30a71be9-dab4-49e2-a7ce-2f3438786002"
+    },
+    {
+      "claim_id": "b0b2c280-6159-4a40-bd75-6c5fafd79611",
+      "result_id": "30a71be9-dab4-49e2-a7ce-2f3438786002"
+    },
+    {
+      "claim_id": "63443739-55d0-4597-b63b-95a82ccdc293",
+      "result_id": "30a71be9-dab4-49e2-a7ce-2f3438786002"
+    },
+    {
+      "claim_id": "8af21a86-116d-4685-b10b-8b84e4a0f4cb",
+      "result_id": "30a71be9-dab4-49e2-a7ce-2f3438786002"
+    },
+    {
+      "claim_id": "84e04d53-1062-4e83-9c79-36704aca5ea5",
+      "result_id": "30a71be9-dab4-49e2-a7ce-2f3438786002"
+    },
+    {
+      "claim_id": "71463dd2-7e94-4a95-a64d-c1e56072d560",
+      "result_id": "30a71be9-dab4-49e2-a7ce-2f3438786002"
+    },
+    {
+      "claim_id": "4c60513d-8761-46f8-8d8f-38411341a4fd",
+      "result_id": "30a71be9-dab4-49e2-a7ce-2f3438786002"
+    },
+    {
+      "claim_id": "290cc2f7-0348-42c4-bdc2-085c2951e638",
+      "result_id": "30a71be9-dab4-49e2-a7ce-2f3438786002"
+    },
+    {
+      "claim_id": "47ee0ea7-f0c0-48f3-a690-0287b95184e0",
+      "result_id": "f052ebf8-ccb3-4474-91d4-4abda9b0cf10"
+    },
+    {
+      "claim_id": "f75b8d41-319c-456e-a004-6a7f77cf57db",
+      "result_id": "f052ebf8-ccb3-4474-91d4-4abda9b0cf10"
+    },
+    {
+      "claim_id": "899be3a5-2a8b-4f88-bbba-f1e6d77d9856",
+      "result_id": "f052ebf8-ccb3-4474-91d4-4abda9b0cf10"
+    },
+    {
+      "claim_id": "f0fd3f7b-0a58-4e9b-bf5d-3cf1b16430dc",
+      "result_id": "f052ebf8-ccb3-4474-91d4-4abda9b0cf10"
+    },
+    {
+      "claim_id": "3673b870-e1ed-4f60-a379-2cb1acd813b2",
+      "result_id": "f052ebf8-ccb3-4474-91d4-4abda9b0cf10"
+    },
+    {
+      "claim_id": "8e036fde-5e59-44a1-9530-36b17f2773be",
+      "result_id": "160273a4-12e1-4161-9a7f-61908e18be3e"
+    },
+    {
+      "claim_id": "7786b10f-bfa2-4542-bdc5-ba856c94a3d6",
+      "result_id": "160273a4-12e1-4161-9a7f-61908e18be3e"
+    },
+    {
+      "claim_id": "a0a5f5d9-2692-47ab-babe-def2b3e4fe3c",
+      "result_id": "160273a4-12e1-4161-9a7f-61908e18be3e"
+    },
+    {
+      "claim_id": "d294f3ca-39b6-4c87-9810-ad30ce0e1937",
+      "result_id": "1ebe9a06-ea83-4078-a030-21851a02a3b1"
+    },
+    {
+      "claim_id": "e675aff5-494d-4648-8c32-28bc07117946",
+      "result_id": "1ebe9a06-ea83-4078-a030-21851a02a3b1"
+    },
+    {
+      "claim_id": "74700d64-b11b-44f8-a3d2-059e0d25a4db",
+      "result_id": "1ebe9a06-ea83-4078-a030-21851a02a3b1"
+    },
+    {
+      "claim_id": "cbd3d83c-0b3f-4703-a9ef-60148648d561",
+      "result_id": "1ebe9a06-ea83-4078-a030-21851a02a3b1"
+    }
+  ],
+  "comparisons": []
+}

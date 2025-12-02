@@ -1,0 +1,237 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C5",
+      "C24",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C99",
+      "C100"
+    ],
+    "result": "KymoButler is a Deep Learning-based software built on U-Net architecture comprising two specialized segmentation modules (unidirectional and bidirectional), a classification module, and a decision module. The software was trained on 487 unidirectional and 79 bidirectional manually annotated kymographs plus synthetic data, generates trackness maps with values 0-1, has one adjustable threshold parameter (default 0.2), and completes analysis in 1-20 seconds per kymograph.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C24, C28-C35, C37-C41 provide comprehensive technical details about KymoButler's architecture, training data, and functionality. The modular design is well-documented with specific network architectures described in Materials and Methods (C99-C100), training datasets are quantified (C31-C32), and performance metrics are provided (C40). The implementation details are verifiable and internally consistent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C26",
+      "C42",
+      "C56",
+      "C57",
+      "C58",
+      "C69",
+      "C70",
+      "C71",
+      "C92"
+    ],
+    "result": "KymoButler performs as well as expert manual annotation on complex kymographs from diverse biological systems, achieving track F1 scores of 92% on unidirectional and 78% on bidirectional tracks, while being approximately 100x faster than manual analysis and outperforming existing automated software.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C26, C56-C58, C69-C71, C92 are strongly supported by quantitative benchmarking data presented in Figures 2-3. The F1 scores are calculated using well-defined metrics (track recall and precision), comparisons include both synthetic ground truth data and real biological data, and statistical tests are reported with p-values. The ~100x speed improvement is documented (C58, manual took 1.5 hr vs software <1 min for 10 kymographs).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C43",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "KymoButler outperformed Fourier filtering (KymographDirect) by ~30% on unidirectional kymographs and wavelet filtering by 20% on bidirectional kymographs. Edge detection performed poorly on bidirectional data. The main advantage of KymoButler over filtering approaches was its ability to bridge track gaps and resolve line crossings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43, C84-C89 are supported by systematic benchmarking experiments shown in Figures 2-3. Quantitative comparisons are provided with specific performance differences (30% and 20%), and the limitations of alternative methods are documented with visual examples (Figures 2C-D, 3C-D, Figure 3\u2014figure supplement 1). The custom wavelet algorithm was implemented specifically for fair comparison (C59).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C76"
+    ],
+    "result": "KymoButler correctly identified ~80% of tracks at SNR as low as 1.1 and at high particle densities (~70% image coverage), performing similarly to manual annotation under these extreme conditions. Performance decreased with decreasing SNR and increasing particle density for both KymoButler and manual annotation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C55, C76 are supported by systematic testing shown in Figure 1\u2014figure supplement 5. The SNR and particle density ranges are quantified, performance metrics are provided, and comparisons with manual annotation are included. The acknowledgment that performance degrades under extreme conditions (C76) demonstrates appropriate assessment of limitations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C36",
+      "C74",
+      "C75"
+    ],
+    "result": "The optimal binarization threshold for KymoButler's segmentation modules lies between 0.1-0.3 for both synthetic and published data, though the threshold depends on SNR and must be chosen based on specific biological applications and imaging conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36, C74-C75 are supported by empirical testing shown in Figure 1\u2014figure supplement 4, which systematically evaluates threshold values from 0.05 to 0.5. The finding that optimal performance occurs in the 0.1-0.3 range is data-driven, and the acknowledgment of SNR-dependence (C75) is appropriate. However, the need for user optimization of this parameter somewhat limits the 'fully automated' claim.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C27",
+      "C93"
+    ],
+    "result": "KymoButler significantly speeds up data analysis and avoids unconscious bias compared to manual annotation, without suffering from inconsistency and laborious tracing that plague manual tracking.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C9, C27, C93 regarding speed improvement are well-supported by timing data (manual: 1.5 hr vs KymoButler: <1 min for 10 kymographs, ~100x faster). The claim about avoiding bias (C9, C93) is reasonable for automated methods but is more of an inference than directly demonstrated\u2014no experiments specifically tested for bias or consistency across multiple human annotators. The speed advantage is clearly demonstrated, but bias reduction is assumed rather than proven.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "KymoButler successfully quantified mitochondria movement in neuronal dendrites, microtubule growth dynamics in axons, and in vitro dynamics of single cytoplasmic dynein proteins. The training data comprised similar biological systems, so KymoButler will perform best on similar data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C82 are supported by demonstrations shown in Figure 1 and Figure 1\u2014figure supplement 1. The training data composition is clearly described (C81), and the inference that performance will be best on similar data (C82) is reasonable. However, the generalizability claim in C83 (that it can be applied to most other fluorescence microscopy kymographs without modification) is speculative and not directly tested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C7",
+      "C94",
+      "C95"
+    ],
+    "result": "KymoButler was deployed as a web-based application at https://deepmirror.ai/kymobutler with an option for users to anonymously upload kymographs, which will be annotated and added to training data to improve the software.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C94 are factual statements about software deployment that are verifiable. Claim C95 describes a future improvement strategy that is reasonable but speculative\u2014the improvement depends on future user uploads and subsequent annotation work. The deployment is documented, but the continuous improvement mechanism is a plan rather than a demonstrated result.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C59",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "Synthetic kymographs were generated with controlled parameters (300\u00d7300 pixels, SNR 1.2 for unidirectional and 1.4 for bidirectional data) and used for training and benchmarking. Performance metrics (track recall, precision, and F1 score) were calculated using well-defined overlap criteria allowing 3.2-pixel deviation from ground truth.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59, C109-C115 describe the synthetic data generation and evaluation methodology in detail. The parameters are clearly specified, the metrics are mathematically defined, and the approach is reproducible. The 3.2-pixel tolerance for deviation (C113) is reasonable given typical tracking uncertainties. The methodology is sound and well-documented in Materials and Methods.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C90",
+      "C91"
+    ],
+    "result": "Synthetic kymographs reproduce real kymograph complexity only to some degree due to homogeneous backgrounds, no artifacts, and no varying particle intensity. Manual annotation deviated by up to 20% from ground truth on synthetic data, indicating that deviations from manual annotation should not automatically be interpreted as errors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C91 appropriately acknowledge limitations of synthetic data and variability in manual annotation. The 20% deviation of manual annotation from ground truth (C91) is documented in Figure 2\u2014figure supplement 1 and Figure 3\u2014figure supplement 2, providing important context for interpreting performance comparisons. This demonstrates good scientific practice in recognizing limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C83",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "KymoButler can potentially be applied to most kymographs from time-lapse fluorescence microscopy without modifications, and the approach could be extended to 3D/4D tracking problems using higher-dimensional FCNs, which has great potential for human-like performance on biological and medical tracking problems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C83, C96-C98 are speculative (marked as SPECULATION in evidence_type). While C83 predicts broad applicability, this is not systematically tested beyond the training data domains. Claims C96-C98 discuss future extensions to higher-dimensional problems, which are reasonable extrapolations but not demonstrated. These represent promising future directions rather than established results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C72",
+      "C77",
+      "C78"
+    ],
+    "result": "The manuscript provides background on kymographs, their applications in biology, limitations of existing analysis tools, and the success of machine learning approaches in biological image analysis. Existing kymograph tools require manual supervision, perform well only on simple unidirectional motion, and most kymographs are still analyzed manually.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4, C10-C23, C72, C77-C78 provide literature context supported by appropriate citations. These background claims establish the motivation for developing KymoButler. The characterization of existing tools' limitations (C4, C14, C15, C77) is supported by citations and later demonstrated through benchmarking. The statements about ML success in biology (C18-C23) are well-cited.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C108"
+    ],
+    "result": "The network architecture uses standard building blocks (batch normalization, leakyReLU) previously employed in Google's Inception and U-Net architectures. The classification module processes 64\u00d764 pixel inputs, segmentation modules require input dimensions as multiples of 16, and training was performed on NVIDIA GPUs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C106, C108 describe technical implementation details that are standard practices in deep learning (C102-C104 are general knowledge about neural network components). The architectural constraints (C106) follow from U-Net design. The hardware specifications (C108) are factual. These are well-established technical details appropriately documented.",
+    "result_type": "MINOR"
+  }
+]

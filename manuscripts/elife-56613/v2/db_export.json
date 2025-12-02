@@ -1,0 +1,2089 @@
+{
+  "submission": {
+    "id": "f5bff605-d5ca-4b38-ad31-baa6e90e4c23",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T17:06:15.256491Z",
+    "updated_at": "2025-12-02T17:06:15.256491Z"
+  },
+  "content": [
+    {
+      "id": "14e82fe1-ac46-40ae-af03-c5f18175a376",
+      "submission_id": "f5bff605-d5ca-4b38-ad31-baa6e90e4c23",
+      "content_type": "manuscript",
+      "content_text": "# ODELAM, rapid sequence-independent detection of drug resistance in isolates of Mycobacterium tuberculosis\n\n## Authors\n\n- Thurston Herricks<sup>1</sup> ([ORCID: 0000-0002-0247-7967](https://orcid.org/0000-0002-0247-7967))\n- Magdalena Donczew<sup>2</sup>\n- Fred D Mast<sup>1</sup> ([ORCID: 0000-0002-2177-6647](https://orcid.org/0000-0002-2177-6647))\n- Tige Rustad<sup>1</sup>\n- Robert Morrison<sup>1</sup>\n- Timothy R Sterling<sup>3</sup>\n- David R Sherman<sup>2</sup> \u2020\n- John D Aitchison<sup>1</sup> ([ORCID: 0000-0002-9153-6497](https://orcid.org/0000-0002-9153-6497)) \u2020\n\n### Affiliations\n\n1. Center for Global Infectious Disease Research, Seattle Children's Research Institute Seattle United States\n2. Department of Microbiology, University of Washington Seattle United States\n3. Division of Infectious Disease, Department of Medicine, Vanderbilt University Medical Center Nashville United States\n4. Department of Pediatrics, University of Washington Seattle United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nAntimicrobial-resistant Mycobacterium tuberculosis (Mtb) causes over 200,000 deaths each year. Current assays of antimicrobial resistance need knowledge of mutations that confer drug resistance, or long periods of culture time to test growth under drug pressure. We present ODELAM (One-cell Doubling Evaluation of Living Arrays of Mycobacterium), a time-lapse microscopy-based method that observes individual cells growing into microcolonies. ODELAM enables rapid quantitative measures of growth kinetics in as little as 30 hrs under a wide variety of environmental conditions. We demonstrate ODELAM\u2019s utility by identifying ofloxacin resistance in cultured clinical isolates of Mtb and benchmark its performance with standard minimum inhibitory concentration (MIC) assays. ODELAM identified ofloxacin heteroresistance and the presence of drug resistant colony forming units (CFUs) at 1 per 1000 CFUs in as little as 48 hrs. ODELAM is a powerful new tool that can rapidly evaluate Mtb drug resistance in a laboratory setting.\n\n## Introduction\n\nThe continued and accelerated emergence of anti-microbial resistance is a global threat and antimicrobial-resistant infections caused by Mycobacterium tuberculosis (Mtb) are particularly concerning. In 2018, approximately 484,000 people developed multidrug-resistant tuberculosis and an estimated 214,000 people died from rifampicin-resistant or multidrug-resistant tuberculosis (Geneva: World Health Organization, 2019). Approximately 10% of all multidrug resistant tuberculosis infections are resistant to at least four commonly used anti-TB drugs (Dorman et al., 2018).\n\nRapid, reliable diagnosis is a key to the prevention and effective treatment of antimicrobial resistant infections (Boolchandani et al., 2019). In the case of Mtb, culture-based methods such as common agar plates or more advanced indicator tubes with fluorescent growth reporters are gold standards for identifying sensitivity to any antibiotic, but these testing methods require one to four weeks to produce results (Kim, 2005; Lawson et al., 2013; Kontos et al., 2004; Garrig\u00f3 et al., 2007). Biomarker methods, such as the PCR-based Gene-Xpert assay, can rapidly identify antimicrobial resistant Mtb infections but require knowledge of specific genetic markers associated with resistance and are thus insensitive to unknown resistance mechanisms (Dorman et al., 2018). Detecting antimicrobial-resistant Mtb infections is especially challenging when bacterial sub-populations are present that possess differing levels of antimicrobial sensitivity (El-Halfawy and Valvano, 2015). If present in relatively low abundance, these heteroresistant populations may evade detection until after treatment begins. Failure to rapidly identify and treat an antimicrobial-resistant or heteroresistant Mtb infection contributes to disease progression, treatment failure and tuberculosis relapse (Shin et al., 2018).\n\nWe developed ODELAM (One-cell Doubling Evaluation of Living Arrays of Mycobacterium), a time-lapse microscopy-based method designed to quantify growth phenotypes of populations of individual Mtb cells and colony forming units. Generally imaging platforms used to study mycobacteria use either microfluidic techniques or growth on solid media. Microfluidic platforms provide high resolution phenotypic analysis of mycobacterial cell biology but are limited in the number of cells that can be readily observed (Aldridge et al., 2012; Golchin et al., 2012; Wakamoto et al., 2013). Conventional assays on solid media provide crude growth analysis, including antibiotic sensitivity, on large populations of cells but require up to 8 weeks for observations whereas specialized microfluidic methods require approximately 9 days (Choi et al., 2014; Barr et al., 2016).\n\nODELAM bridges these disparate methods by assaying growth temporally at a mesoscale, on up to\u00a0~100,000 colony forming units (CFUs) in a single experiment. Originally designed for yeast, the adaptation offers improvements on phenotypic analysis and diagnostics for detecting and characterizing populations of drug resistant Mtb (Herricks et al., 2017). While commercial time-lapse and laboratory based genomic screening tools are available (Lee et al., 2019; Baryshnikova et al., 2010; Bean et al., 2014; Zackrisson et al., 2016; Golchin et al., 2012), ODELAM uniquely enables rapid quantitative measurements of growth kinetics of homogeneous and heterogeneous cultured clinical isolates of Mtb in as little as 30 hrs and under a variety of environmental conditions, including antimicrobial drug pressures.\n\nWe demonstrate ODELAM by analyzing ofloxacin (OFX) resistance in cultured Mtb clinical isolates. ODELAM was first benchmarked with the laboratory strain H37Rv and then two cultured clinical isolates were tested, an OFX-resistant isolate and an isolate with OFX heteroresistance (Eilertson et al., 2016). Microscopy-based kinetic growth analysis of these strains under increasing drug pressures revealed characteristic growth and drug sensitivity phenotypes of each strain and specifically demonstrate the ability to rapidly detect heteroresistant sub-populations in a cultured clinical isolate. ODELAM is a powerful new tool that can enable the timely identification of Mtb antimicrobial resistant phenotypes in a laboratory setting.\n\n## Results\n\nODELAM is engineered to quantitatively assess growth kinetics of large populations of individual Mtb CFUs. In each region of interest, ODELAM can observe up to 1500 CFUs and quantify their morphological and multiparameter growth phenotypes. A typical experiment involves 80 or 96 regions of interest. Single bacilli and small clusters containing two or more bacilli are observed over time as they grow into microscopically observable colonies (Figure 1A). In these experiments, Mtb bacilli were observed to grow immediately after spotting on media. Mtb CFUs were recorded for a total of 96 hrs and growth curves were extracted from the projected area of the individual colonies over time and fitted to the Gompertz function (Figure 1B; Herricks et al., 2017). The kinetic parameters doubling time (Td), lag time (T-Lag), time in exponential phase (T-Exp) and number of doublings (Num Dbl) were derived from the Gompertz function and plotted as normalized frequency histograms which revealed population distributions (Figure 1C). Summary non-parametric statistics for the isolates measured are presented as interquartile range (IQR) with respect to the median (Table 1). For example, H37Rv, an Mtb strain commonly used in research laboratories, had a median lag time of 0.5 s and grew with a doubling time median of 22.9 hrs (IQR 7.8). H37Rv bacilli grew in exponential phase for a median of 52.5 hrs (IQR 33.8) and during this time underwent a median of 3.1 doublings (IQR 1.6). These data are consistent with bulk laboratory measurements (Pe\u00f1uelas-Urquides et al., 2013) and demonstrate the innate heterogeneity of the genetically homogeneous clonal population.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/56613/elife-56613-fig1-v2.jpg)\n\n**Figure 1.:** (A) Selected time-lapse snapshots of Mtb colonies growing on a solid medium. Mtb CFUs are shown growing on a 60 \u03bcm x 60 \u03bcm region of 7H9-GO agar over 96 hrs time course. (B) Growth curves for a total of 1276 colonies were recorded from a 1.2 mm x 0.9 mm region over 96 hrs\u00a0and plotted. (C) Population histograms of the all extracted growth parameters (Doubling Time, Lag Time, Exponential Time and Number of doublings).\n\n**Table 1.**\n Summary growth statistics of isolates.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Condition tested</th>\n      <th>CFUs total</th>\n      <th>Num of rep</th>\n      <th>Med td (hrs)</th>\n      <th>IQR td (hrs)</th>\n      <th>Med T-Lag time (hrs)</th>\n      <th>IQR T-Lag time (hrs)</th>\n      <th>Med T-Exp (hrs)</th>\n      <th>IQR T-Exp (hrs)</th>\n      <th>Med Num Dbl</th>\n      <th>IQR Num Dbl</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Control-H37Rv</td>\n      <td>5413</td>\n      <td>8</td>\n      <td>22.9</td>\n      <td>7.8</td>\n      <td>0.0</td>\n      <td>3.7</td>\n      <td>52.5</td>\n      <td>33.8</td>\n      <td>3.1</td>\n      <td>1.6</td>\n    </tr>\n    <tr>\n      <td>0.0625 \u03bcg/ml-H37Rv</td>\n      <td>3380</td>\n      <td>4</td>\n      <td>23.4</td>\n      <td>9.6</td>\n      <td>0.0</td>\n      <td>2.8</td>\n      <td>51.8</td>\n      <td>28.1</td>\n      <td>3.0</td>\n      <td>1.5</td>\n    </tr>\n    <tr>\n      <td>0.125 \u00b5g/ml-H37Rv</td>\n      <td>2946</td>\n      <td>4</td>\n      <td>24.3</td>\n      <td>10.0</td>\n      <td>0.0</td>\n      <td>2.9</td>\n      <td>53.0</td>\n      <td>29.5</td>\n      <td>3.0</td>\n      <td>1.4</td>\n    </tr>\n    <tr>\n      <td>0.5 \u00b5g/ml-H37Rv</td>\n      <td>2231</td>\n      <td>4</td>\n      <td>22.6</td>\n      <td>10.7</td>\n      <td>0.9</td>\n      <td>6.2</td>\n      <td>35.2</td>\n      <td>16.2</td>\n      <td>2.0</td>\n      <td>0.9</td>\n    </tr>\n    <tr>\n      <td>2 \u00b5g/ml-H37Rv</td>\n      <td>5354</td>\n      <td>8</td>\n      <td>19.2</td>\n      <td>13.7</td>\n      <td>3.9</td>\n      <td>6.1</td>\n      <td>17.3</td>\n      <td>8.2</td>\n      <td>0.9</td>\n      <td>0.6</td>\n    </tr>\n    <tr>\n      <td>4 \u00b5g/ml-H37Rv</td>\n      <td>1412</td>\n      <td>4</td>\n      <td>21.1</td>\n      <td>12.5</td>\n      <td>3.9</td>\n      <td>5.2</td>\n      <td>14.7</td>\n      <td>7.7</td>\n      <td>0.6</td>\n      <td>0.4</td>\n    </tr>\n    <tr>\n      <td>8 \u00b5g/ml-H37Rv</td>\n      <td>1728</td>\n      <td>4</td>\n      <td>20.8</td>\n      <td>12.1</td>\n      <td>2.8</td>\n      <td>4.0</td>\n      <td>11.5</td>\n      <td>6.5</td>\n      <td>0.5</td>\n      <td>0.3</td>\n    </tr>\n    <tr>\n      <td>16 \u03bcg/ml-H37Rv</td>\n      <td>894</td>\n      <td>4</td>\n      <td>22.9</td>\n      <td>24.4</td>\n      <td>1.5</td>\n      <td>4.4</td>\n      <td>11.2</td>\n      <td>12.4</td>\n      <td>0.5</td>\n      <td>0.3</td>\n    </tr>\n    <tr>\n      <td>Control-TRS10</td>\n      <td>3449</td>\n      <td>8</td>\n      <td>28.4</td>\n      <td>8.5</td>\n      <td>2.8</td>\n      <td>9.3</td>\n      <td>79.7</td>\n      <td>54.2</td>\n      <td>3.5</td>\n      <td>2.5</td>\n    </tr>\n    <tr>\n      <td>0.0625 \u00b5g/ml-TRS10</td>\n      <td>2181</td>\n      <td>4</td>\n      <td>28.2</td>\n      <td>6.9</td>\n      <td>1.9</td>\n      <td>8.1</td>\n      <td>81.7</td>\n      <td>55.6</td>\n      <td>3.8</td>\n      <td>2.6</td>\n    </tr>\n    <tr>\n      <td>0.125 \u00b5g/ml-TRS10</td>\n      <td>2014</td>\n      <td>4</td>\n      <td>28.5</td>\n      <td>7.6</td>\n      <td>0.0</td>\n      <td>5.4</td>\n      <td>80.3</td>\n      <td>61.2</td>\n      <td>3.7</td>\n      <td>2.8</td>\n    </tr>\n    <tr>\n      <td>0.5 \u00b5g/ml-TRS10</td>\n      <td>1167</td>\n      <td>4</td>\n      <td>28.3</td>\n      <td>6.3</td>\n      <td>0.0</td>\n      <td>6.0</td>\n      <td>81.8</td>\n      <td>62.5</td>\n      <td>3.8</td>\n      <td>3.1</td>\n    </tr>\n    <tr>\n      <td>2 \u00b5g/ml-TRS10</td>\n      <td>2982</td>\n      <td>8</td>\n      <td>30.6</td>\n      <td>17.9</td>\n      <td>2.3</td>\n      <td>9.2</td>\n      <td>73.7</td>\n      <td>42.6</td>\n      <td>2.8</td>\n      <td>2.2</td>\n    </tr>\n    <tr>\n      <td>4 \u00b5g/ml-TRS10</td>\n      <td>1190</td>\n      <td>4</td>\n      <td>53.1</td>\n      <td>26.0</td>\n      <td>0.0</td>\n      <td>7.4</td>\n      <td>65.7</td>\n      <td>38.7</td>\n      <td>1.5</td>\n      <td>1.1</td>\n    </tr>\n    <tr>\n      <td>8 \u00b5g/ml-TRS10</td>\n      <td>1063</td>\n      <td>4</td>\n      <td>57.8</td>\n      <td>28.4</td>\n      <td>0.0</td>\n      <td>2.1</td>\n      <td>56.7</td>\n      <td>27.4</td>\n      <td>1.3</td>\n      <td>0.7</td>\n    </tr>\n    <tr>\n      <td>16 \u00b5g/ml-TRS10</td>\n      <td>966</td>\n      <td>4</td>\n      <td>46.0</td>\n      <td>21.8</td>\n      <td>0.0</td>\n      <td>13.8</td>\n      <td>61.8</td>\n      <td>44.8</td>\n      <td>1.6</td>\n      <td>1.3</td>\n    </tr>\n    <tr>\n      <td>Control-ADB42</td>\n      <td>5599</td>\n      <td>8</td>\n      <td>24.4</td>\n      <td>7.8</td>\n      <td>1.1</td>\n      <td>8.2</td>\n      <td>64.3</td>\n      <td>42.9</td>\n      <td>3.4</td>\n      <td>2.0</td>\n    </tr>\n    <tr>\n      <td>0.0625 \u00b5g/ml-ADB42</td>\n      <td>3762</td>\n      <td>4</td>\n      <td>24.7</td>\n      <td>7.2</td>\n      <td>0.0</td>\n      <td>5.2</td>\n      <td>63.8</td>\n      <td>35.7</td>\n      <td>3.4</td>\n      <td>1.8</td>\n    </tr>\n    <tr>\n      <td>0.125 \u00b5g/ml-ADB42</td>\n      <td>3980</td>\n      <td>4</td>\n      <td>25.3</td>\n      <td>7.4</td>\n      <td>0.0</td>\n      <td>4.8</td>\n      <td>63.8</td>\n      <td>35.1</td>\n      <td>3.4</td>\n      <td>1.7</td>\n    </tr>\n    <tr>\n      <td>0.5 \u00b5g/ml-ADB42</td>\n      <td>3121</td>\n      <td>4</td>\n      <td>25.0</td>\n      <td>9.7</td>\n      <td>0.0</td>\n      <td>6.2</td>\n      <td>40.6</td>\n      <td>31.7</td>\n      <td>2.0</td>\n      <td>1.4</td>\n    </tr>\n    <tr>\n      <td>2 \u00b5g/ml-ADB42</td>\n      <td>4995</td>\n      <td>8</td>\n      <td>26.9</td>\n      <td>18.0</td>\n      <td>1.9</td>\n      <td>8.0</td>\n      <td>29.5</td>\n      <td>43.3</td>\n      <td>1.1</td>\n      <td>1.7</td>\n    </tr>\n    <tr>\n      <td>4 \u00b5g/ml-ADB42</td>\n      <td>1440</td>\n      <td>4</td>\n      <td>36.7</td>\n      <td>27.7</td>\n      <td>5.0</td>\n      <td>13.9</td>\n      <td>38.8</td>\n      <td>51.6</td>\n      <td>0.9</td>\n      <td>1.9</td>\n    </tr>\n    <tr>\n      <td>8 \u00b5g/ml-ADB42</td>\n      <td>1287</td>\n      <td>4</td>\n      <td>54.7</td>\n      <td>56.2</td>\n      <td>4.1</td>\n      <td>13.2</td>\n      <td>40.0</td>\n      <td>39.2</td>\n      <td>0.6</td>\n      <td>0.9</td>\n    </tr>\n    <tr>\n      <td>16 \u00b5g/ml-ADB42</td>\n      <td>910</td>\n      <td>4</td>\n      <td>17.5</td>\n      <td>34.8</td>\n      <td>31.5</td>\n      <td>32.6</td>\n      <td>46.6</td>\n      <td>36.4</td>\n      <td>0.6</td>\n      <td>1.0</td>\n    </tr>\n  </tbody>\n</table>\n\n### Growth phenotype of Mtb strain H37Rv exposed to ofloxacin\n\nOne of the main advantages of ODELAM compared to standard bulk culture experiments is its ability to assess population responses on a single-CFU level. We therefore used ODELAM to reveal growth parameter values for individual CFUs in response to increasing drug pressures and compared these results to standard dose-response measurements (Figure 2). We first focused on H37Rv. H37Rv is sensitive to ofloxacin with minimum inhibitory concentration (MIC) of 0.5 \u03bcg/ml as measured by normalized population growth in a standard dose-response curve (Figure 2B). By ODELAM, we observed H37Rv to initially grow at all concentrations of OFX indicating that OFX\u2019s toxicity does not alter growth kinetics over the first 24 hrs (Figure 2A). This is consistent with OFX\u2019s mechanism of action on the enzyme target, DNA gyrase, which leads to the accumulation of DNA damage (Manjunatha et al., 2002; Gore et al., 2006; Willmott et al., 1994). Above the MIC, toxicity led to cessation of growth, detected as an exit from exponential phase. This is reported as and a reduction in time spent in exponential phase (T-Exp) and in the number of doublings (Num Dbl) as shown by shifts of the population histograms (Figure 2C). Narrowing of the population histograms reflects a more uniform population. The population distribution at the MIC remained relatively broad but was narrower than at lower drug concentrations or in controls. Notably, the doubling time distributions did not appreciably change; cells maintained similar doubling rates prior to growth cessation. Overall, the primary effect of OFX as detected by ODELAM was to arrest H37Rv growth after 2\u20133 doublings at the MIC and by the first doubling at high drug concentrations, while not appreciably affecting the rate at which H37Rv doubles prior to growth arrest (Table 1).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/56613/elife-56613-fig2-v2.jpg)\n\n**Figure 2.:** (A) Growth curves of H37Rv under increasing OFX drug concentrations measured by ODELAM. The flattening of the curves corresponds to the MIC of about 0.5 \u00b5g/ml OFX and corresponds to the batch culture dose response (B). (C) Population histograms of the growth parameters showing that the time in exponential growth (T-Exp) is reduced as OFX concentration increases, which in turn leads to a reduced number of doublings.\n\n### Growth phenotype of a resistant strain TRS10 exposed to ofloxacin\n\nWe observed a cultured clinical isolate TRS10, which contains a missense mutation in the gene encoding gyrase A (D94G) that increases the isolate\u2019s MIC to OFX (Eilertson et al., 2016; Hooper, 2001). In the absence of drug pressure, the median doubling time of TRS10 was approximately 20% longer than that of H37Rv (Table 1). The MIC of TRS10 to OFX was 16 \u03bcg/ml as measured by the normalized population growth in a standard dose-response curve (Figure 3B). By contrast to H37Rv, which ceased to grow at its MIC, TRS10 slowed its doubling time as OFX concentration increased up to, and including, its MIC (Figure 3A). Further, TRS10\u2019s doubling time slowed dramatically from\u00a0~30 to~50 hrs as drug concentration shifted from 2 to 4 \u03bcg/ml (Table 1).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/56613/elife-56613-fig3-v2.jpg)\n\n**Figure 3.:** (A) Growth of clinical isolate TRS10 appears to slow under increasing OFX pressure. (B) Batch culture dose response curve for TRS10, indicating an MIC of 16 \u00b5g/ml OFX. (C) ODELAM histograms with increasing OFX concentration, showing that up to the MIC, doubling time appears to increase while the time in exponential phase is less affected.\n\nTotal growth (Num Dbl) is influenced by all three growth parameters (Td, T-Lag and T-Exp). Therefore, to discern the contribution of these parameters to total growth we determined the population effect size, which quantifies the magnitude of effect for each parameter (Td, T-Lag, T-Exp, Num Dbl). In this case, the Kolmogorov-Smirnov (K-S) statistic was used as a score to evaluate the effect size and plotted against the concentration of OFX for each strain (Figure 4; Massey, 1951). As a non-parametric test, the K-S statistic allows the comparison of the distributions without presumption of their shape or parameters that underlie them. For H37Rv, the effect size for time in exponential phase tracked with the number of doublings as the concentration of OFX increased above 0.5 \u03bcg/ml while doubling time and lag time effect sizes did not (Figure 4A). In contrast, for TRS10 the effect size for doubling time tracked with the number of doublings as the concentration of OFX increased (Figure 4B). This OFX effect on TRS10\u2019s doubling time as opposed to the cessation of growth observed for H37Rv (T-Exp) likely reflects the reduced binding of OFX to the mutant gyrase (Maruri et al., 2012; Willmott et al., 1994). Together these results show the ability of ODELAM and this analysis to reveal strain-dependent responses to antibiotics that would be missed by standard MIC assays. The examples of H37Rv and TRS10 responding to OFX (Figures 2 and 3), as assayed by ODELAM, discerns these differing growth phenotypes and can inform on potential mechanisms of drug action.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/56613/elife-56613-fig4-v2.jpg)\n\n**Figure 4.:** (A) Effect size as measured by the Kolmogorov-Smirnov statistic vs OFX concentrations for H37Rv. Note, the number of doublings observed tracks with the time growing exponentially (T-Exp). (B) Effect size as measured by the Kolmogorov-Smirnov statistic vs OFX concentrations for TRS10. Note, doubling time (Td) tracks with number of doublings (B).\n\n### Detecting heteroresistance\n\nHeteroresistance in cultured clinical isolates is prevalent and confounds diagnosis and treatment of Mtb (Sebastian et al., 2017). Therefore, we tested the ability of ODELAM to rapidly detect heteroresistance. TRS10 was mixed with H37Rv to generate strain ratios ranging from 1:1 to 1:4166. Mixed cultures were assayed by standard dose-response batch culture MIC assay (Figure 5A) and with ODELAM (Figure 5B and C) at a concentration of 2 \u03bcg/ml OFX which discriminates OFX-sensitive and OFX-resistant CFUs.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/56613/elife-56613-fig5-v2.jpg)\n\n**Figure 5.:** (A) Dilution of TRS10 into H37Rv and the corresponding MICs obtained from a bulk culture assay. (B) Comparison of the percentage of TRS10 in H37Rv generated by dilution against the percentage of CFUs observed to grow more than 2\u00d7\u00a0by ODELAM. The blue dots are replicate measurements from a given dilution and the red line is the mean of each replicate. (C) ODELAM growth curves for TRS10/H37Rv mixtures. Blue traces are resistant and red traces are sensitive to OFX.\n\nTo evaluate the sensitivity of the MIC assay to heteroresistant cultures, the MICs of the dilution series were plotted (Figure 5A). The observed MIC varied across the dilution series, increasing with the proportion of resistant cells. While the assay is sufficiently sensitive to detect shifts in the MIC at very low relative concentrations of resistant cells, it does not distinguish between a monoculture with a specific resistance phenotype and a mixed population with heteroresistance. Thus, the standard dose-response batch culture MIC assay yielded inaccurate results and was unable to reflect the MIC of the constituent population.\n\nBy contrast ODELAM directly observed OFX resistant CFUs in the mixed culture (Figure 5B,C). Resistant and sensitive CFUs were distinguished by their number of doublings and their growth in exponential phase. In this ODELAM assay, a single OFX resistant CFU was detected from the 0.04% TRS10 mixture (Figure 5C). Accordingly, there was an increase in the proportion of OFX-resistant CFUs detected as the percentage of TRS10 increased (Figure 5B,C). The 50% mix detected 200 resistant CFUs out a total of 721 CFUs. Similarly, 28 of 970 CFUs were detected in the 6.25% TRS10 mix, and 12 of 1144 were detected in the 1.56% TRS10 mix (Figure 5C). A summary of the results from 12 dilution mixes and 8 replicates are plotted (Figure 5B). The relationship between dilution and detection was linear from 50% to 0.2%. Below 0.2% the expected number of TRS10 CFUs fall to around 1 to 5 in 1000 individuals and because each region of interest observes about 1000 CFUs, the measurements become dominated by chance. ODELAM consistently observed fewer resistant TRS10 CFUs from the mixture than expected from the OD600 measurements used to generate the mixture (Figure 5B) and likely reflects the vagaries associated with using OD600 to predict CFUs, which is known to vary between strains (Pe\u00f1uelas-Urquides et al., 2013).\n\n### Detecting heteroresistance in cultured clinical isolate ADB42\n\nClinical isolate ADB42 was previously observed to be OFX resistant with MIC ranging between 8 and 256 \u03bcg/ml of OFX (Eilertson et al., 2016; Eilertson et al., 2014). By whole genome sequence analysis, the canonical OFX resistance conferring gyrase-A D94G SNP was not present at a frequency sufficient to be associated with the observed OFX resistance; other mechanisms were attributed to the observed phenotype (Eilertson et al., 2016). In our hands, the standard dose-response assay yielded a MIC of 16 \u03bcg/ml (Figure 6A). By ODELAM population measurements, the histograms revealed features indicative of phenotypic heterogeneity. Prominent tails were observed on the right-hand side of the exponential phase and number of doublings population distributions for OFX concentrations at and above 0.5 \u03bcg/ml (Figure 6B), suggesting the presence of at least two populations. These populations could be segregated by a simple threshold of 2 doublings as detected by ODELAM on 2 \u03bcg/ml OFX (Figure 7). The CFU growth curves corresponding to these populations showed either OFX sensitivity (Figure 7A) or OFX resistance (Figure 7B) similar to those observed for the experimentally mixed populations of H37Rv and TRS10 (Figure 5C).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/56613/elife-56613-fig6-v2.jpg)\n\n**Figure 6.:** (A) Batch culture-based dose response curve of ADB42 showing an OFX MIC of about 16 \u00b5g/ml. (B) At 2 \u00b5g/ml OFX, tails in the doubling time, T-Exp, and number of doublings indicate that a second population may be present.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/56613/elife-56613-fig7-v2.jpg)\n\n**Figure 7.:** TOP (A) Growth curves of ADB42 growing at 2 \u00b5g/ml OFX. Of the 1476 CFUs in the heteroresistant culture, sensitive and resistant components were segregated by selecting those that doubled fewer than 2\u00d7 (1203 CFUs; red traces) or more than 2\u00d7 (273 CFUs; blue traces) (B and C) Traces of sensitive and resistant components presented separately for clarity. BOTTOM: Histograms of growth parameters derived from traces shown in A with sensitive and resistant components demarcated by the gray vertical lines.\n\nADB42 was grown in culture and subjected to transcriptome analysis by RNA-sequencing, which revealed the presence of a gyrase-A D94G SNP at a frequency of 15% (Figure 8A). Across the experiments reported here, ODELAM measured roughly 24% of the ADB42 CFUs were resistant to OFX, which is within a 95% confidence interval of random sampling modeled by a binomial distribution (Table 2). Ninety-six individual clones of ADB42 were isolated and their growth on 2 \u03bcg/ml OFX was measured in a spot assay (Figure 8B and C). These clones were also measured with ODELAM to evaluate their growth kinetics and OFX resistance (Figure 9). Thirty-three clones exhibited OFX resistance at 2 \u03bcg/ml OFX in both assays. In contrast to the parental cultured clinical isolate, these individual clones did not display phenotypic heterogeneity by ODELAM (data not shown). In total, these data indicate that cultured clinical isolate ADB42 contains two distinct populations one of which is resistant to ofloxacin and likely contains a D94G gyrase-A mutation that confers OFX resistance.\n\n![Figure 8.](https://cdn.elifesciences.org/articles/56613/elife-56613-fig8-v2.jpg)\n\n**Figure 8.:** (A) Prevalence of the DNA gyrase II (Rv0006) D94G mutation before and after exposure to 32 \u03bcg/ml OFX for 24 hrs as detected by DNA sequencing. (B and C) Clones isolated from ADB42 grown on 7H10 media and 7H10 media with 2 \u03bcg/ml OFX for five days, before spotting on media lacking OFX (B) or containing OFX (C). 33 of 96 clones were observed to grow in the presence of OFX, indicating resistance to OFX.\n\n![Figure 9.](https://cdn.elifesciences.org/articles/56613/elife-56613-fig9-v2.jpg)\n\n**Figure 9.:** Sensitive and resistant clones of ADB42 segregate according to their number of doublings (Num Dbl) and time in exponential phase (T-Exp). Sub-populations in the ADB42 clones were not observed.\n\n**Table 2.**\n Ratios of resistant cells as calculated by application of the binomial distribution and experimental observations.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Total number of sample reads (number of trials)</th>\n      <th>Number of D94G SNPs detected (number of success) p=r</th>\n      <th>Ratio of resistant cells to sensitive cells (probability of trial success)</th>\n      <th>95% Confidence interval [Low]-[High]</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>62</td>\n      <td>9</td>\n      <td>0.09\u20130.24</td>\n      <td>[2, 9 - 9, 21]</td>\n    </tr>\n    <tr>\n      <td>Total number of colonies picked (number of trials)</td>\n      <td>Number of resistant colonies (number of success) p=r</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>96</td>\n      <td>33</td>\n      <td>0.28\u20130.44</td>\n      <td>[17,33 - 33,61]</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>One or two cells contribute to colony p=1-(1 r)2</td>\n      <td>0.14\u20130.26</td>\n      <td>[17,33 - 33,61]</td>\n    </tr>\n    <tr>\n      <td>Total number of colonies tracked</td>\n      <td>Number that fit resistance criterion</td>\n      <td>Ratio of resistant cells to sensitive cells</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>963</td>\n      <td>237</td>\n      <td>0.2461</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>473</td>\n      <td>114</td>\n      <td>0.2410</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>1476</td>\n      <td>273</td>\n      <td>0.1850</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>1043</td>\n      <td>244</td>\n      <td>0.2339</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>359</td>\n      <td>101</td>\n      <td>0.2557</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>561</td>\n      <td>157</td>\n      <td>0.2799</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>573</td>\n      <td>146</td>\n      <td>0.2548</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>459</td>\n      <td>123</td>\n      <td>0.2680</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>Mean resistance ratio</td>\n      <td>0.2456</td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\nIn further support of these findings, we sequenced the quinolone-resistance-determining region (QRDR) of gyrA in fourteen of these ADB42 clones, 10 OFX-resistant and four OFX-sensitive. All 10 resistant isolates contained a SNP A7582G in gyrA, which corresponds to the canonical D94G mutations that confers OFX resistance (Willmott et al., 1994). The four sensitive clones did not contain this SNP (Table 3). Additional gyrase mutations were present in the QRDR of gyrA but these mutations were not associated with OFX sensitivity or resistance (Table 3).\n\n**Table 3.**\n Sequence data gyrA SNPs in OFX sensitive and resistant clones.\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th></th>\n      <th>QRDR</th>\n      <th>QRDR</th>\n      <th></th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Position in the gyrase protein</td>\n      <td>21</td>\n      <td>94</td>\n      <td>95</td>\n      <td>247</td>\n    </tr>\n    <tr>\n      <td>H37Rv</td>\n      <td>E</td>\n      <td>D</td>\n      <td>S</td>\n      <td>G</td>\n    </tr>\n    <tr>\n      <td>TRS10</td>\n      <td>Q</td>\n      <td>G</td>\n      <td>T</td>\n      <td>S</td>\n    </tr>\n    <tr>\n      <td>ADB42 OFX Sensitive</td>\n      <td>Q</td>\n      <td>D</td>\n      <td>T</td>\n      <td>G</td>\n    </tr>\n    <tr>\n      <td>ADB42 OFX Resistant</td>\n      <td>Q</td>\n      <td>G</td>\n      <td>T</td>\n      <td>G</td>\n    </tr>\n  </tbody>\n</table>\n\n### Observation of OFX induced cell lysis\n\nODELAM directly observes cells and therefore informs on additional cellular phenotypes. After Mtb growth arrest on OFX, some cells appear to lyse as detected by a change in contrast (Figure 10A), which we interpret as a consequence of cytotoxicity (Figure 10A). This phenotype is observed as a sharp reduction in a colony\u2019s size in its growth curve (Figure 10B). The percentage of colonies that have this phenotype increased with OFX concentration and became apparent at concentrations greater than 0.5 \u03bcg/ml OFX. The frequency of lysis scales with the sensitivity of the strain to OFX. Here H37Rv showed as much as 95% of the tracked colonies exhibiting cell lysis, where as ADB42 and TRS10 showed 65% and 30%, respectively (Figure 10C). These observations by ODELAM highlight the complex transition from a cytostatic to a cytolytic phase of the drug-organism interaction.\n\n![Figure 10.](https://cdn.elifesciences.org/articles/56613/elife-56613-fig10-v2.jpg)\n\n**Figure 10.:** Some CFUs were observed to lose area after exposure to OFX, which is attributable cell lysis indicated by arrows (A). Tracking of images in A and plotting CFUs area over time detects lysis events as a reduction in CFU area (B). The percentage of colonies that lost area is plotted for each strain against drug concentration (C).\n\n### Rate of observation time convergence\n\nRapid detection of drug sensitivity improves in the successful treatment of tuberculosis. To establish the minimum time required by ODELAM to reliably identify anti-microbial resistance and sensitivity, we determined the length of time necessary to estimate a colony\u2019s set of 4 kinetic growth parameters. Each growth curve is fit using an algorithm optimized for ODELAM data. Ideal growth curves were generated in silico varying the kinetic parameters with random noise added. The Gompertz fit algorithm then estimated growth parameters for each noisy growth curve (Figure 11A\u2013C). To simulate observing growth data over time, an increasing number of time points were included into the fit algorithm. As more time points from simulated growth curves were added, we evaluated if the estimated parameters converged to stable values (Figure 12A). Stable estimates were defined by how many time points were needed to be included for the differences in sequential estimates to differ by a precision of less than 2.5% or 5% (Figure 12B\u2013C). Using this routine, we calculated that the time required to reliably determine the set of kinetic parameters for a growth curve must be\u00a0~1.5 times longer than the time needed for a CFU to exit exponential phase. In the case of H37Rv, which, in the presence of OFX, exits exponential phase after\u00a0~20 hrs, ODELAM can detect drug sensitivity in\u00a0~30 hrs (Figure 2).\n\n![Figure 11.](https://cdn.elifesciences.org/articles/56613/elife-56613-fig11-v2.jpg)\n\n**Figure 11.:** (A) Illustration of the parameters used to fit the Gompertz function as described in Materials and methods. Note the value dT, the time between T-Lag and the maximum growth velocity, is used for estimating the growth curve but T-Exp is reported. T-Exp is the time between the maximum and minimum acceleration or twice the value dT. (B) Initial estimates of each parameter were generated from a line connecting the first and last data points in a truncated simulated growth curve, which represents the time of experimental data acquisition. Bottom panel shows the differences between the line generated and the simulation. The initial estimate for T-Lag is determined by the maximum difference between the line generated and the simulation (blue vertical lines). T-Exp (or 2\u00d7\u00a0dT) is determined where the absolute difference between the line and the simulated data is minimized (red vertical line). (C) Same as B with longer simulation time, showing initial estimates are similar.\n\n![Figure 12.](https://cdn.elifesciences.org/articles/56613/elife-56613-fig12-v2.jpg)\n\n**Figure 12.:** (A) Column 1, the difference between the true parameter, in this case Num Dbl = 5, T-Lag = 6, and dT = 42, and the estimated parameter are plotted as more of the growth curve is observed over time. As more timepoints of the growth curve are included or \u201cobserved\u201d in the fit algorithm, the estimated parameters approach their true values. The red dashed lines are 1 standard deviation of 25 growth curves each with random noise added. Column 2, the percent difference between the true value and the estimated value are unstable and do not decrease consistently as more time points are included in the estimation. Column 3, percent convergence given by the difference between two consecutive time point estimations and divided by the true parameter value and decreases steadily over time. The blue line represents a convergence threshold of 5% between consecutive estimations and this threshold is met when all parameters fall below the convergence threshold.\u00a0(B\u2013C) Heat maps showing the ratio of time needed for the $T\u2010Exp$ parameter to converge to a given precision, $T_{o}$ divided by the total time for the growth curve to begin to plateau $T\u2010Lag+T\u2010Exp$. The ratio is given explicitly as $\\frac{T_{o}}{T_{lag}+T_{exp}}$. The heatmaps indicate that for given lag times and time in exponential phase the parameters converge after the growth curve begins to plateau. This means that for a drug that causes growth cessation at 20 hours, a measurement of roughly 1.5\u00d7 that, or 30 hrs of observation, is required for the $T\u2010Exp$ parameter to converge to less 5% precision.\n\n## Discussion\n\nAs the rates of antimicrobial-resistant infections rise, the need for fast and unbiased assays to detect and characterize antimicrobial-resistant bacterial infections are required. ODELAM is a time-lapse, microscopy-based assay that detects Mtb drug sensitivity within 30 hrs, offers an unparalleled view into the population dynamics of Mtb growth kinetics and can directly observe phenotypic heterogeneity. While commercial multiplexed automated digital microscope-based techniques are available to rapidly screen for antibiotic resistance (Chantell, 2015), here, using ODELAM we demonstrate the value of measuring growth kinetics on a single CFU level. With ODELAM. we observed dramatically different effects of OFX on the growth parameters of drug sensitive and drug resistant cultured clinical isolates of Mtb. These effects may offer insight into differing mechanisms of action for antimicrobials on Mtb or other organisms. ODELAM successfully discriminates between drug sensitive and drug resistant colonies in a mixed population. ODELAM also directly observes bacteriolysis and prolonged growth arrest, providing insight into the mechanisms of drug action. Based on this proof of principle, we suggest the investigation of additional cultured clinical isolates, additional Mtb drug classes, and advances in this technology to improve throughput and feasibility in resource limited settings.\n\n### OFX effects on growth kinetics\n\nGrowth kinetics are a powerful indicator of genetic fitness. ODELAM\u2019s ability to monitor and evaluate growth kinetics of single CFUs from the point of plating through a time course of 100 hrs makes obtaining growth parameters and assessing drug sensitivity of multiple strains rapid and facile. Population growth kinetics under drug pressure illuminates the phenotypic differences between Mtb strains such as observed for the laboratory strain H37Rv, and an OFX resistant cultured clinical isolate TRS10 (Figure 4).\n\nThese two strains displayed very different phenotypic responses to OFX (Figures 2, 3 and 4). H37Rv arrested growth at its MIC of 0.5 \u00b5g/ml as detected by departure from the exponential phase of growth. By contrast TRS10 grew continuously over a 96 hrs time period at its MIC OFX concentration of 16 \u03bcg/ml. Before growth arrest at its MIC, the doubling rate of H37Rv slowed slightly, whereas the doubling rate for TRS10 slowed considerably and at a population level exhibited a broad spread of doubling times. This suggests that the mechanisms of action for OFX toxicity are different between the two strains. As TRS10 contains the canonical D94G mutation in gyrase A conferring OFX resistance, we speculate that the growth phenotypes observed are due to the decreased affinity of OFX to the mutant DNA gyrase compared to wild-type, requiring a higher concentration of OFX to inhibit the enzyme. Thus, as the concentration of OFX is increased, off-target effects begin to manifest, which alter growth in a pleotropic manner resulting in the observed broadening of the doubling time of the population (Figure 3). By contrast, inhibition of DNA gyrase in H37Rv likely results in the accumulation of replication and transcription intermediates, leading to the more uniform population distribution observed.\n\nGrowth kinetics of Mtb under fluoroquinolone antibiotic pressure have not been previously reported with the level of detail presented here. Fluoroquinolones such as OFX bind to gyrase and trap the enzyme-DNA complex in an intermediate state (Willmott et al., 1994). The trapped complex can stall RNA transcription and prevent progression of the replication fork (Willmott et al., 1994; Gore et al., 2006; Shea and Hiasa, 1999; Manjunatha et al., 2002; Hiasa et al., 1996). In the presence of OFX, double stranded breaks in the DNA template free the RNA transcription complex and accumulate over time contributing to toxicity and cell death (Willmott et al., 1994; Hiasa et al., 1996). The time of exposure to OFX is thus directly linked to toxicity. Accordingly, even at OFX concentrations above the MIC (0.5 \u03bcg/ml), H37Rv continues to grow before they arrest synchronously after\u00a0~20 hrs (Figure 2A). We interpret this to mean that most cells remain metabolically active and synthesize protein until drug-induced damage accumulates and growth stops (Wang et al., 2009; Da Re et al., 2009).\n\n### ODELAM can directly observe heteroresistant subpopulations\n\nStandard microwell plate MIC assays and indicator tube assays are sensitive and robust methods for detecting antimicrobial resistant Mtb; however, these bulk assays give little information on the presence of sub-populations that differ in their sensitivity to drugs (Lawson et al., 2013). ODELAM directly observes and quantifies such heteroresistance in a mixed culture, segregating populations according to their growth kinetics.\n\nAs ODELAM directly observes growth kinetics and transitions to stasis, it can differentiate drug sensitivity with precision not available in bulk assays that rely on optical density or fluorescent growth reporters (Kontos et al., 2004; Lawson et al., 2013; Garrig\u00f3 et al., 2007; Kim, 2005). This was validated with an artificially mixed population and was used to detect heteroresistance in a cultured clinical isolate, ADB42. In the mixed population ODELAM discriminates individual CFUs with a sensitivity of roughly 1 in 1000. This level of precision is dependent on the number of CFUs observed and improvements in microscope optics, computation, and media preparation could increase this sensitivity by orders of magnitude. Thus, this approach could observe the rare but critical events that lead to development of drug resistance including individual persistent cells that go on to acquire drug resistance through mutation (Cohen et al., 2013).\n\nIn the ADB42 isolate, OFX resistant cells were segregated by their growth kinetics in the presence of OFX. While DNA sequencing of this isolate failed to detect a resistant mutation, combining ODELAM with further DNA sequencing identified a D94G mutation in gyrA that we interpret conferred OFX resistance to a subpopulation in this cultured clinical isolate. These observations are consistent with other measurements of strains with gyrA mutations (Eilertson et al., 2016). Future advances of ODELAM that include real time monitoring, mapping and picking of single colonies will enable isolation and characterization of heterogenous populations based on their observed phenotypes.\n\n### Observations of cytostatic and cytotoxic phases of drug-microbe interactions\n\nODELAM has the ability to directly observe cytotoxicity and the impact of drugs through different phases of growth. Remarkably, for concentrations of OFX up to and including 16 times the MIC, there was no measurable effect on H37Rv\u2019s growth rate until growth ceased. By contrast OFX had a measurable effect on growth rate of TRS10 well below its MIC. We interpret these differences to reflect the differential accumulation of cytotoxic molecular intermediates due to differences in the ability of the drug to bind the different variants of gyrase. Nevertheless, ODELAM detected lysis of individual cells from each strain we analyzed in the presence of OFX at concentrations of 2 \u03bcg/ml and above (Figure 10), providing a visualization of the onset of cytotoxicity. These measurements provide better assessments of drug action by resolving growth, cytostatic and cytotoxic states on a single cell level.\n\n### Conclusions\n\nODELAM is a powerful time-lapse imaging technique for rapidly evaluating biological growth phenotypes in Mtb. The current methods integrate with common automated microscope equipment and are amenable to a Biosafety Level 3 environment. ODELAM directly observed heteroresistance in an Mtb cultured clinical isolate and rapidly detected drug sensitivity in as little as 30 hrs. ODELAM is not restricted to Mtb and can be adapted to any colony forming microorganism. Insights from such studies promise an expanded view into the understanding of different mechanisms of antimicrobial resistance and drug action in Mtb and other important human pathogens.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Strain, strain background (Mycobacterium tuberculosis)</td>\n      <td>H37Rv</td>\n      <td>ATCC</td>\n      <td>ATCC \u221227294</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Mycobacterium tuberculosis)</td>\n      <td>TRS10</td>\n      <td>PMID:24687490</td>\n      <td>10</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Mycobacterium tuberculosis)</td>\n      <td>ADB42</td>\n      <td>PMID:24687490</td>\n      <td>42</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Primer a for QRDR amplification</td>\n      <td>IDT</td>\n      <td>gyrA_1Fw</td>\n      <td>CCTGCGTTCGATTGCAAACG</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Primer b for QRDR amplification</td>\n      <td>IDT</td>\n      <td>gyrA_1Rv</td>\n      <td>CGTGGTTGACCTGATACGG</td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>RiboZero rRNA removal (bacterial)</td>\n      <td>Illumina Inc</td>\n      <td></td>\n      <td>(discontinued)</td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>AMPure XP</td>\n      <td>Agencourt Bioscience Corporation</td>\n      <td>Beckman Coulter A63881</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>NEBNext Ultra RNA Library Prep Kit for Illumina</td>\n      <td>New England Biolabs</td>\n      <td>E7530S</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>NEBNext Multiplex Oligos for Illumina</td>\n      <td>New England Biolabs</td>\n      <td>Dual Index Primers Set 1 E7335S</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>Kapa qPCR quantification kit</td>\n      <td>Roche</td>\n      <td>KK4824</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>Illumina NextSeq 500 High Output v2 Kit</td>\n      <td>Illumina Inc</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>MagJet Genomic DNA kit</td>\n      <td>Thermo Fisher Scientific</td>\n      <td>K2722</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>Lysing Matrix B</td>\n      <td>MP Biomedicals</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Ofloxacin</td>\n      <td>Sigma</td>\n      <td>O8757-1G</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>DuffNGS</td>\n      <td>PMID:21317536</td>\n      <td></td>\n      <td>https://sourceforge.net/projects/duffyrnaseq/</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Bowtie 2</td>\n      <td>PMID:22388286</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>MicroManager v1.4</td>\n      <td>PMID:25606571</td>\n      <td></td>\n      <td>https://micro-manager.org/</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>MATLAB</td>\n      <td>Mathworks</td>\n      <td></td>\n      <td>www.mathworks. com</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>ODELAY-ODELAM</td>\n      <td>This manuscript</td>\n      <td></td>\n      <td>https://github.com/AitchisonLab/</td>\n    </tr>\n  </tbody>\n</table>\n\n### Mtb strains and culture methods\n\nMycobacterium tuberculosis was cultured as follows. Clinical isolates (Eilertson et al., 2016) were thawed and grown at 37 \u00b0C to an optical density of OD600 1.5 in 10 ml Middlebrook 7H9 media supplemented with glycerol, OADC supplement and 0.05% (v/v)\u00a0Tween-80 (7H9-GOT) in 50 ml conical screw cap Falcon tubes. The samples were then stored at an OD600 of 1 in 0.5 ml aliquots of 15% (v/v) glycerol and frozen at \u221280 \u00b0C until needed. For each experiment, a 0.5 ml aliquot was thawed and 9.5 ml of 7H9-GOT added. The culture was grown for 2\u20133 days until the OD600 was 0.3\u20130.5. The sample was diluted to 0.05\u20130.10 OD600 and grown for an additional 2 days to allow the culture to become well established in exponential growth phase. Finally, the cultures were diluted to 0.045 OD600 for spotting with ODELAM. Three strains were investigated in this study: H37Rv (laboratory standard and OFX sensitive), TRS10 (OFX resistant cultured clinical isolate) and ADB42 (OFX heteroresistant cultured clinical isolate). Strain names do not reflect their patient sources.\n\n### Determination of the Minimum Inhibitory Concentration (MIC)\n\nM.M. tuberculosis cultures were grown in 7H9-GOT medium at 37 \u00b0C to optical density of OD600\u00a00.3\u20130.5. The cultures were then diluted to 0.05 OD600 in fresh 7H9-GOT. A single 96-well plate was used for each strain. A 2-fold serial dilution of ofloxacin (0.015, 0.031, 0.062, 0.125, 0.25, 0.5, 1, 2, 4, 8, 16, 32, 64 \u00b5g/ml) was generated. Strains growing without drug were used as a 100% control and additional 1:100 dilution of each strain (to final OD600 0.0005) in the drug-free medium were used as 1% controls. Wells containing only medium were used to measure background fluorescence. The plates were incubated at 37 \u00b0C for 7 days. After incubation, viable Mtb cells were quantified using two methods, luminescence by applying the BacTiter Glo Microbial Cell Viability Assay reagent (Promega, Madison, WI, USA) and fluorescence by applying alamarBlue reagent (Bio-Rad Laboratories, Hercules, CA, USA). A volume of BacTiter-Glo reagent equal to the volume of cell culture medium present (20 \u00b5l) was added to each well. After 20 min of incubation at room temperature, luminescence was measured using the Omega plate reader. AlamarBlue was added in an amount equal to 10% of culture volume to each well of the 96-well plate. Plates were incubated at 37 \u00b0C for 9 hrs and the fluorescence was measured using an Omega plate reader, with an excitation wavelength at 544 nm and emission at 590 nm. MIC measurements were performed in three technical and two biological replicates. MIC values were defined as the lowest OFX concentration that inhibited growth compared to growth of the 1% control.\n\n### Mtb cloning and sequencing\n\nClinical isolates ADB42 and TRS10 were grown as previously described (Eilertson et al., 2014; Eilertson et al., 2016). After the culture reached an OD600 0.5 the culture was diluted to 105, 106, and 107\u00a0CFUs/ml and plated on a petri dish containing 7H10 media. Single colonies were then picked with a pipette tip and subcultured in a 100 \u03bcl of 7H9-GOT media in a 96 well plate. After growth to an OD600 of\u00a0~0.2 per well, cultures were diluted 10\u00d7\u00a0and cultured at 37 \u00b0C for an additional 3 days. Then OFX resistance was evaluated by spotting 2 \u00b5l of clonal cultures onto 7H9 media with 0 or 2 \u03bcg/ml OFX. After two weeks of growth, agar plates were evaluated and photographed to determine resistant and sensitive clones. Additionally, the 96 clones were evaluated with ODELAM by spotting onto 7H9-GO with 2 \u03bcg/ml OFX and growth was recorded for 96 hrs.\n\nThe quinolone resistance-determining region (QRDR) of gyrase A was amplified by PCR using the following method. ADB42, TRS10, and H37Rv were grown to an OD600 of 0.5 in 10 ml cultures. The cultures were pelleted by centrifugation and resuspended in 0.53 ml of TE buffer. Cells were mechanically lysed three times for 30 s with 0.1 mm silica beads (Lysing Matrix B, MP Biomedicals). The samples were then pelleted by centrifugation and the supernatants were transferred into new tubes and heated for 30 min at 105 \u00b0C. DNA was purified using a MagJet Genomic DNA kit (Thermo Fisher Scientific) according to the manufacturer\u2019s instructions. DNA fragments for sequencing were amplified by PCR using a mix of 1 ng of genomic DNA, 5 pmol of each primer (gyrA_1Fw and gyrA_1Rv), 200 \u03bcM dNTPs, 1\u00d7\u00a0Prime Star buffer and Prime Star polymerase. The primers used are shown in Table 4. PCR products were purified using a NucleoSpin Gel and PCR clean up kit (Macherey Nagel). Sanger sequencing of PCR products was performed by GENEWIZ (Seattle, WA, USA).\n\n### RNA isolation and mtb transcriptome sequencing and analysis\n\nRNA was isolated from cultures as described previously (Sherman et al., 2001). Briefly, cell pellets resuspended in Trizol were transferred to a tube containing Lysing Matrix B (MP Biomedicals) and disrupted by homogenization at maximum speed for 30 s in a FastPrep 120 homogenizer (QBiogene) three times, with cooling on ice between cycles. The homogenate was centrifuged in a microcentrifuge at maximum speed for 1 min and the supernatant was transferred to a tube containing 300 \u03bcl chloroform and Heavy Phase Lock Gel (Eppendorf). Following mixing by inversion, the samples were centrifuged in a microcentrifuge tube at maximum speed for 5 min. RNA in the aqueous phase was then precipitated with 300 \u03bcl isopropanol and 300 \u03bcl high salt solution (0.8 M Na citrate, 1.2 M NaCl). RNA was purified using a RNeasy kit following the manufacturer\u2019s recommendations (Qiagen) with one on-column DNase treatment (Qiagen). Total RNA yield was quantified using a Nanodrop (Thermo Scientific).\n\nTo enrich the mRNA, ribosomal RNA was depleted from samples using a RiboZero rRNA removal (bacteria) magnetic kit (Illumina Inc, San Diego, CA). The products of this reaction were prepared for Illumina sequencing using the NEBNext Ultra RNA Library Prep Kit for Illumina (New England Biolabs, Ipswich, MA) according to manufacturer\u2019s instructions, and using the AMPure XP reagent (Agencourt Bioscience Corporation, Beverly, MA) for size selection and cleanup of adaptor-ligated DNA. NEBNext Multiplex Oligos for Illumina (Dual Index Primers Set 1) were used to barcode the DNA libraries associated with each replicate and enable multiplexing of 96 libraries per sequencing run. The prepared libraries were quantified using a Kapa qPCR quantification kit, and were sequenced at the University of Washington Northwest Genomics Center with the Illumina NextSeq 500 High Output v2 Kit (Illumina Inc, San Diego, CA). The sequencing generated an average of 75 million base-pair paired-end raw read counts per library.\n\nRaw FASTQ read data were processed using in-house R package DuffyNGS, as originally described (Vignali et al., 2011). Briefly, raw reads pass through a 3 stage alignment pipeline: 1) a pre-alignment stage to filter out unwanted transcripts, such as ribosomal RNA; 2) a main genomic alignment stage against the genome(s) of interest; 3) a splice junction alignment stage against an index of standard and alternative exon splice junctions. All alignments were performed with Bowtie2, using the command line option \u2018--very-sensitive\u2019 (Langmead and Salzberg, 2012). BAM files from stages 2 and 3 were combined into read depth wiggle tracks that record both uniquely mapped and multiply mapped reads to each of the forward and reverse strands of the genome(s) at single nucleotide resolution. Multiply mapped reads were pro-rated over all highest quality aligned locations. Gene transcript abundance was then measured by summing total reads landing inside annotated gene boundaries or exon boundaries, expressed as both RPKM and raw read counts (Wold and Myers, 2008). Two stringencies of gene abundance were provided, using all aligned reads or by using just uniquely aligned reads.\n\n### Preparation of ODELAM agarose plates\n\nA Ninjaflex 2 mm thick gasket was 3D printed onto a 50 mm\u00a0\u00d7\u00a075 mm \u00d7 1 mm glass slide (VWR) using a Makerbot 2\u00d7\u00a0printer. Following printing, the slides were cleaned of particles and fibers using lab tape. An additional slide was cleaned with ethanol and placed over the gasket so the space between the slides defined by the gasket could be filled with molten agarose media. The assembled agar mold was held together with binder clips.\n\nAgarose was prepared as described previously (Herricks et al., 2017). Bulk agarose was prepared by dissolving 2 g of agarose in 150 g of 18 M\u03a9 H2O. The solution was microwaved in 15 s intervals for about 3 min or until the agarose boiled and all agar particles were dissolved by visual inspection. The 3.1 g of molten agarose was then aliquoted into 15 ml Falcon tubes and stored at 4 \u00b0C. On the morning of an experiment, 0.4 ml of 10\u00d7\u00a07H9 G media, 0.2 ml of sterile 18 M\u03a9 H20 were added to five previously prepared 3 g aliquots of agarose tubes. The solution was boiled for 8 min in a covered boiling flask. After fully melting the agarose, the solution was placed into a 45 \u00b0C stirred bath to cool for 2\u201310 min. Once cooled, 0.4 ml of Middlebrook OADC and 4 \u03bcl of 1000\u00d7\u00a0concentration of drug or drug vehicle were added to make a total of 4 ml of 7H9 glycerol oleate (7H9-GO) agarose media. The media was then injected into the single or each of the 5 glass-gasket-glass chambers using a 20-gauge syringe needle. The agarose was allowed to set for about 30 min and one glass slide was removed to expose the agar surface. The agarose slide was then placed in a sterile pipette tip box and stored at room temperature for about 2 hrs before spotting Mtb cultures.\n\n### ODELAM Time-Lapse microscopy and image analysis\n\nThe agar plate was assembled into the ODELAM growth chamber and 1 \u03bcL of 0.045 OD600\u00a0Mtb culture spotted on the agar plate using a fabricated tool for spotting cells in fixed locations corresponding to positions E06 through L19 of a 384 well plate defining the center of each region of interest for imaging. The chamber was assembled, and electrical contacts placed on an Indium Tin-Oxide (ITO) coated cover-slide. The ITO slide was resistively heated with 10 V and 0.2 A of current to minimize condensation above the agar. The spotted CFUs were imaged using on a Nikon TiE microscope equipped with an In Vitro Scientific incubator maintaining a temperature of 37 \u00b0C. Images were recorded using a 20\u00d7\u00a00.45 NA long working distance lens with the correction collar set to 1.3 mm. This collar setting was required to get a monomodal focus function as calculated using the Laplacian Variance Method (Pertuz et al., 2013). A Photometrix CoolSnap ES2 camera recorded brightfield images. The microscope was controlled by MATLAB Graphical User Interface software using the MicroManager Core API (Edelstein et al., 2014). At each location where culture was spotted, the microscope tiled a 3\u00a0\u00d7\u00a03 array with 20% overlap. Each spot was imaged every 30 min for up to 120 hrs. Analysis of the images was performed as described in Herricks et al., 2017. Briefly, the resulting images were stitched, binarized with a threshold and colonies were identified from the binarized images. Objects were tracked using a MATLAB Image processing pipeline. If objects merged as indicated by two previous separate centroids appearing in a continuous colony patch, the track was no longer recorded. If a track was not observed for a minimum of 30 hrs we did not include that colony\u2019s statistics in the analysis. Results were then quantified and plotted using MATLAB. ODELAM is optimized to track between approximately 50 to 1500 individual cells and CFUs for 96 hrs. The lower limit of about 50 CFUs per field of view is required to have sufficient contrast to focus and stitch the images.\n\n### Extraction of growth parameters\n\nGrowth curves of log2 area over time were fit to a parameterized version of the Gompertz function:\n\n$$\nAt=a_{0}+be^{-e^{\\frac{log\\frac{3+\\sqrt{5}}{2}}{dT}dT+t_{lag}-t}}\n$$\n\nWhere $a_{0}$ is the initial area of the cells, $b$ is the number of doublings the colony undergoes until quiescence, $t_{lag}$ is the time before the onset of exponential growth and $dT$ is \u00bd T-Exp, the time the cells grow exponentially. Estimation of growth parameters was performed using the following strategy: The parameters of the Gompertz function given by lag time $t_{lag}$ and $dT$ correspond to the maximum of the function\u2019s 1st and 2nd derivatives, respectively (Figure 11A). To determine these values, we used the MATLAB function fmincon which uses a nonlinear least squares approach to estimate the parameters by minimizing the residuals of the observed data and the parameterized Gompertz function. Initial values for the growth parameters estimation routine were determined using either a geometric approximation of initial parameters or a course grid search. The geometric approximation of initial values used the following strategy: A line between the first and last points of the measured growth curve (Figure 11B, blue line) was defined such that the maximum difference between that line and the smoothed growth curve approximated the growth curve\u2019s second derivative (Figure 11B). The maximum of this approximated second derivative estimates lag time and is used as the initial parameter for determining lag time in the fmincon function. Likewise, the location where this second derivative crosses zero estimates the maximum velocity and is used as the initial parameter for determining the maximum velocity with the fmincon function (Figure 11B and C). The value for $a_{0}$ is estimated from averaging the area of the first 5 data points and $b$ is estimated by the area of the growth curve evaluated at the maximum velocity minus $a_{0}$. A course grid optimization routine was used if the geometric approximation failed (Herricks et al., 2017). Doubling time is derived from the two parameters $b$ and $dT$ by:\n\n$$\nT_{d}=e^{1}b\\frac{dT}{log\\frac{3+\\sqrt{5}}{2}}\n$$\n\nWe also applied the constraints that $t_{lag}+dT$ must be less than or equal to the total time observed, which restricts growth parameters to values that occur during observation and we only included colonies that were tracked for greater than 30 hrs, and showed a log2 growth greater than 0.1. While the area measurements have noise associated with focus accuracy, the camera readout, and illumination instability, we image at a high temporal rate such that repeated measurements minimize the effect of noise on fitting the data. All data were plotted using MATLAB software.\n\n### Statistical analysis of ODELAM data\n\nEffect size was measured by pooling replicate measurements into a single population. The resulting population distributions were compared using the 2-sample Kolmogorov-Smirnov test against a no-drug control pool. The KS test statistic for each comparison was then plotted to show the trend in OFX concentration vs. effect size. The binomial distribution was used to estimate the percentage of resistant cells in ADB42. For clarity, the binomial probability distribution function is given by:\n\n$$\nfk,n,p=\\frac{n!}{k!n-k!}p^{k}1-p^{k}\n$$\n\nwhere n is the number of resistant colonies or SNP reads, k is the total number of colonies picked or the total number of reads at the SNP locus and p is the fraction of resistant CFUs in the culture. The binomial cumulative distribution function was calculated using the MATLAB function cdf. In this way, we modeled the number of colonies that appeared resistant or the number of whole genome sequencing reads that contain the D94G mutation in Rv0006 as a function of the percentage of cells in the culture that are OFX resistant. The probability of success (p) is given by the percentage of OFX resistant cells which is estimated by the number of successful trials (given by the number of SNP reads or the number of resistant colonies) and is bounded by the 95% confidence interval that still contains the actual number of WGS reads or resistant colonies (i.e. number of successes) observed.\n",
+      "created_at": "2025-12-02T17:06:15.256491Z"
+    },
+    {
+      "id": "fa9debce-e9be-4027-b920-83d6f8e5c3da",
+      "submission_id": "f5bff605-d5ca-4b38-ad31-baa6e90e4c23",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Miles P Davenport, University of New South Wales Australia\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.56613.sa1](https://doi.org/10.7554/eLife.56613.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nDrug resistance is increasingly common in Mycobacterium tuberculosis infection, and a means to rapidly assess the level and nature of potential drug resistance is important for treatment. Current approaches for measuring antimicrobial resistance involve either genotypic assays or relatively slow phenotypic assays involving prolonged in vitro culture. This work proposes a rapid phenotypic assessment of drug resistance by combining microscopic assessment of colony growth with statistical analysis of colony growth rates. This has the potential also to rapidly identify resistant strains, as well as identify small levels of drug resistance in a heterogenous mixture of bacteria.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"ODELAM: Rapid sequence-independent detection of drug resistance in clinical isolates of Mycobacterium tuberculosis\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Wendy Garrett as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Andrew J Yates (Reviewer #3).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nWe would like to draw your attention to changes in our revision policy that we have made in response to COVID-19 (https://elifesciences.org/articles/57162). Specifically, when editors judge that a submitted work as a whole belongs in eLife but that some conclusions require a modest amount of additional new data, as they do with your paper, we are asking that the manuscript be revised to either limit claims to those supported by data in hand, or to explicitly state that the relevant conclusions require additional supporting data.\n\nOur expectation is that the authors will eventually carry out the additional experiments and report on how they affect the relevant conclusions either in a preprint on bioRxiv or medRxiv, or if appropriate, as a Research Advance in eLife, either of which would be linked to the original paper.\n\nSummary:\n\nThe authors describe a new method ODELAM for rapid testing the drug sensitivity of Mtb to a range of antibiotics. The uniqueness of this method lies in the temporal analysis across the bacterial population at the single CFU level, this provides extremely impressive resolution across a complex, heterogeneous bacterial population. The paper contains experiments with spiked populations of sensitive and resistant bacteria as well as analysis of clinical isolates. Furthermore, they demonstrate that they can not only distinguish drug sensitive from drug resistant Mtb strains, but also strains with genotypically mixed resistant/sensitive populations. The work has been performed with care and rigor and is of considerable value to the field.\n\nEssential revisions:\n\n1) Using timelapse microscopy to speed up detection of resistance patterns in Mtb is logical and, as the authors demonstrate, gives resolution not only into drug resistance of Mtb infection, but also into the heterogeneity of responses to drug. Therefore, the premise of the work is strong, and the authors demonstrate technical prowess with acquiring and analysing the data. What the paper does not accomplish is its stated goal, of demonstrating that timelapse microscopy could be used to accelerate diagnosis. This is because while they use clinical isolates of Mtb, these are coming from lab culture in the same way as H37Rv, that is, they are grown to OD ~0.5 in Middlebrook 7H9 media, then diluted and plated for microscopy. This is very different from the sample used for diagnosis, which is a sputum sample. The sputum sample may have Mtb at very different concentrations between individuals, it may have contaminants that may be identified as Mtb by image analysis, the Mtb may have a much more variable lag time, etc. While these problems may be solvable, they are not solved in this work and so the feasibility of using this method for its stated purpose is unknown.\n\nTo address this, the authors should ideally provide evidence that the approach can be used on clinical samples. However, recognising the current difficulties in carrying out additional experimental work, the authors may alternatively choose to include a caveat that this has not been demonstrated on clinical samples (this needs to be clearly articulated throughout the manuscript in any section where claims to clinical utility are made).\n\n2) The Introduction and referencing are weak in describing what was done previously in the field and what advance this work presents:\n\na) I could not find a \"References\" section using the find command.\n\nb) A quick online check using \"Mycobacterium tuberculosistimelapse\" and \"Mycobacterium tuberculosis image analysis\" came up with up with Barr et al., 2016, Choi et al., 2016 and Hertog et al., 2010. These all seem to be using timelapse on Mtb microcolonies.\n\nc) For completeness, authors should discus accredited technologies such as MGIT, which are more rapid than CFU.\n\nIn the Introduction the authors fail to mention the fluorescent and luminescent readouts that have been used by several labs for drug screening assays and to assess drug sensitivity, these provide a readout in a matter of days. While the bulk of these assays have been conducted at the population level there are some groups that have used high content imaging that has provided greater resolution across the bacterial population. I agree completely with the authors that the platform detailed here is far superior and has much greater resolution because the data are temporal and have single clone/colony resolution, nonetheless the authors do need to accurately present the current state of the field.\n\nThus, the authors must include better referencing of previous work to identify what has been previously tried by others, and what advantages/disadvantages their work brings compared to previous approaches.\n",
+      "created_at": "2025-12-02T17:06:15.256491Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T17:06:15.256491Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T17:06:15.256491Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "12cb03ac-1b14-48d2-a7f4-36a8228e73a2",
+      "content_id": "14e82fe1-ac46-40ae-af03-c5f18175a376",
+      "claim_id": "C1",
+      "claim": "Antimicrobial-resistant Mycobacterium tuberculosis (Mtb) causes over 200,000 deaths each year.",
+      "claim_type": "EXPLICIT",
+      "source": "Antimicrobial-resistant Mycobacterium tuberculosis (Mtb) causes over 200,000 deaths each year.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement in the abstract without direct citation, but represents established knowledge about TB mortality.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:06:15.256491Z"
+    },
+    {
+      "id": "fc71554c-da7b-4969-8ed7-3502c8a34739",
+      "content_id": "14e82fe1-ac46-40ae-af03-c5f18175a376",
+      "claim_id": "C2",
+      "claim": "ODELAM enables rapid quantitative measures of growth kinetics in as little as 30 hrs under a wide variety of environmental conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "ODELAM enables rapid quantitative measures of growth kinetics in as little as 30 hrs under a wide variety of environmental conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data presented throughout the manuscript showing growth measurements at 30 hours.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:06:15.256491Z"
+    },
+    {
+      "id": "4aba0fd9-4ef5-49cc-87c8-0a2afbb63740",
+      "content_id": "14e82fe1-ac46-40ae-af03-c5f18175a376",
+      "claim_id": "C3",
+      "claim": "ODELAM identified ofloxacin heteroresistance and the presence of drug resistant colony forming units (CFUs) at 1 per 1000 CFUs in as little as 48 hrs.",
+      "claim_type": "EXPLICIT",
+      "source": "ODELAM identified ofloxacin heteroresistance and the presence of drug resistant colony forming units (CFUs) at 1 per 1000 CFUs in as little as 48 hrs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data from the heteroresistance detection experiments shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:06:15.256491Z"
+    },
+    {
+      "id": "aac0fe7c-76f6-48b0-9dcc-a70b48db7451",
+      "content_id": "14e82fe1-ac46-40ae-af03-c5f18175a376",
+      "claim_id": "C4",
+      "claim": "In 2018, approximately 484,000 people developed multidrug-resistant tuberculosis.",
+      "claim_type": "EXPLICIT",
+      "source": "In 2018, approximately 484,000 people developed multidrug-resistant tuberculosis and an estimated 214,000 people died from rifampicin-resistant or multidrug-resistant tuberculosis (Geneva: World Health Organization, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to WHO 2019 report.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:06:15.256491Z"
+    },
+    {
+      "id": "473d5a92-9033-45af-8a57-ba984bb4638c",
+      "content_id": "14e82fe1-ac46-40ae-af03-c5f18175a376",
+      "claim_id": "C5",
+      "claim": "An estimated 214,000 people died from rifampicin-resistant or multidrug-resistant tuberculosis in 2018.",
+      "claim_type": "EXPLICIT",
+      "source": "In 2018, approximately 484,000 people developed multidrug-resistant tuberculosis and an estimated 214,000 people died from rifampicin-resistant or multidrug-resistant tuberculosis (Geneva: World Health Organization, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to WHO 2019 report.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:06:15.256491Z"
+    },
+    {
+      "id": "5ebd730a-5fc2-4945-8955-1b17fb035cbc",
+      "content_id": "14e82fe1-ac46-40ae-af03-c5f18175a376",
+      "claim_id": "C6",
+      "claim": "Approximately 10% of all multidrug resistant tuberculosis infections are resistant to at least four commonly used anti-TB drugs.",
+      "claim_type": "EXPLICIT",
+      "source": "Approximately 10% of all multidrug resistant tuberculosis infections are resistant to at least four commonly used anti-TB drugs (Dorman et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Dorman et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:06:15.256491Z"
+    },
+    {
+      "id": "4a2bbbe0-d5b5-453b-8c4a-91182dc71ba0",
+      "content_id": "14e82fe1-ac46-40ae-af03-c5f18175a376",
+      "claim_id": "C7",
+      "claim": "Culture-based methods for Mtb require one to four weeks to produce results.",
+      "claim_type": "EXPLICIT",
+      "source": "In the case of Mtb, culture-based methods such as common agar plates or more advanced indicator tubes with fluorescent growth reporters are gold standards for identifying sensitivity to any antibiotic, but these testing methods require one to four weeks to produce results (Kim, 2005; Lawson et al., 2013; Kontos et al., 2004; Garrig\u00f3 et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:06:15.256491Z"
+    },
+    {
+      "id": "4a33d4ba-1e8e-4336-81a5-f269bb694c16",
+      "content_id": "14e82fe1-ac46-40ae-af03-c5f18175a376",
+      "claim_id": "C8",
+      "claim": "PCR-based Gene-Xpert assay can rapidly identify antimicrobial resistant Mtb infections but requires knowledge of specific genetic markers associated with resistance.",
+      "claim_type": "EXPLICIT",
+      "source": "Biomarker methods, such as the PCR-based Gene-Xpert assay, can rapidly identify antimicrobial resistant Mtb infections but require knowledge of specific genetic markers associated with resistance and are thus insensitive to unknown resistance mechanisms (Dorman et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Dorman et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:06:15.256491Z"
+    },
+    {
+      "id": "0368059c-0651-490b-8a30-871ab4806279",
+      "content_id": "14e82fe1-ac46-40ae-af03-c5f18175a376",
+      "claim_id": "C9",
+      "claim": "Failure to rapidly identify and treat an antimicrobial-resistant or heteroresistant Mtb infection contributes to disease progression, treatment failure and tuberculosis relapse.",
+      "claim_type": "EXPLICIT",
+      "source": "Failure to rapidly identify and treat an antimicrobial-resistant or heteroresistant Mtb infection contributes to disease progression, treatment failure and tuberculosis relapse (Shin et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Shin et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:06:15.256491Z"
+    },
+    {
+      "id": "10bbfd5c-fd7c-427a-a216-262fe1ddb228",
+      "content_id": "14e82fe1-ac46-40ae-af03-c5f18175a376",
+      "claim_id": "C10",
+      "claim": "Microfluidic platforms provide high resolution phenotypic analysis of mycobacterial cell biology but are limited in the number of cells that can be readily observed.",
+      "claim_type": "EXPLICIT",
+      "source": "Microfluidic platforms provide high resolution phenotypic analysis of mycobacterial cell biology but are limited in the number of cells that can be readily observed (Aldridge et al., 2012; Golchin et al., 2012; Wakamoto et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published literature on microfluidic platforms.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:06:15.256491Z"
+    },
+    {
+      "id": "aa1850aa-ae6f-41ef-84a5-a9db169f2c24",
+      "content_id": "14e82fe1-ac46-40ae-af03-c5f18175a376",
+      "claim_id": "C11",
+      "claim": "Conventional assays on solid media require up to 8 weeks for observations.",
+      "claim_type": "EXPLICIT",
+      "source": "Conventional assays on solid media provide crude growth analysis, including antibiotic sensitivity, on large populations of cells but require up to 8 weeks for observations whereas specialized microfluidic methods require approximately 9 days (Choi et al., 2014; Barr et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Choi et al., 2014 and Barr et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:06:15.256491Z"
+    },
+    {
+      "id": "e423e1cb-7e5f-4c7b-953c-2039a59aed3e",
+      "content_id": "14e82fe1-ac46-40ae-af03-c5f18175a376",
+      "claim_id": "C12",
+      "claim": "Specialized microfluidic methods require approximately 9 days for observations.",
+      "claim_type": "EXPLICIT",
+      "source": "Conventional assays on solid media provide crude growth analysis, including antibiotic sensitivity, on large populations of cells but require up to 8 weeks for observations whereas specialized microfluidic methods require approximately 9 days (Choi et al., 2014; Barr et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Choi et al., 2014 and Barr et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:06:15.256491Z"
+    },
+    {
+      "id": "f10fbbfe-d4ab-4814-b7c4-291802bd8b92",
+      "content_id": "14e82fe1-ac46-40ae-af03-c5f18175a376",
+      "claim_id": "C13",
+      "claim": "ODELAM can assay growth on up to ~100,000 colony forming units (CFUs) in a single experiment.",
+      "claim_type": "EXPLICIT",
+      "source": "ODELAM bridges these disparate methods by assaying growth temporally at a mesoscale, on up to ~100,000 colony forming units (CFUs) in a single experiment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a technical specification of the ODELAM method described by the authors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:06:15.256491Z"
+    },
+    {
+      "id": "a11ba68f-2f9d-459d-a798-a14fc62befe4",
+      "content_id": "14e82fe1-ac46-40ae-af03-c5f18175a376",
+      "claim_id": "C14",
+      "claim": "ODELAM was originally designed for yeast.",
+      "claim_type": "EXPLICIT",
+      "source": "Originally designed for yeast, the adaptation offers improvements on phenotypic analysis and diagnostics for detecting and characterizing populations of drug resistant Mtb (Herricks et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Herricks et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:06:15.256491Z"
+    },
+    {
+      "id": "d6827888-f3dc-44b6-99de-11000f91a1d7",
+      "content_id": "14e82fe1-ac46-40ae-af03-c5f18175a376",
+      "claim_id": "C15",
+      "claim": "H37Rv had a median lag time of 0.5 hrs.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, H37Rv, an Mtb strain commonly used in research laboratories, had a median lag time of 0.5 s and grew with a doubling time median of 22.9 hrs (IQR 7.8).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data presented in Table 1 and Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:06:15.256491Z"
+    },
+    {
+      "id": "f30b98d1-0b29-45a5-9ff1-d7d797206ebc",
+      "content_id": "14e82fe1-ac46-40ae-af03-c5f18175a376",
+      "claim_id": "C16",
+      "claim": "H37Rv grew with a doubling time median of 22.9 hrs (IQR 7.8).",
+      "claim_type": "EXPLICIT",
+      "source": "For example, H37Rv, an Mtb strain commonly used in research laboratories, had a median lag time of 0.5 s and grew with a doubling time median of 22.9 hrs (IQR 7.8).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data presented in Table 1 and Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:06:15.256491Z"
+    },
+    {
+      "id": "bb50038b-e052-4037-bc65-0a4957f4fe3a",
+      "content_id": "14e82fe1-ac46-40ae-af03-c5f18175a376",
+      "claim_id": "C17",
+      "claim": "H37Rv bacilli grew in exponential phase for a median of 52.5 hrs (IQR 33.8).",
+      "claim_type": "EXPLICIT",
+      "source": "H37Rv bacilli grew in exponential phase for a median of 52.5 hrs (IQR 33.8) and during this time underwent a median of 3.1 doublings (IQR 1.6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data presented in Table 1 and Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:06:15.256491Z"
+    },
+    {
+      "id": "9609aa3a-e6dd-4fb8-a317-033a41c93430",
+      "content_id": "14e82fe1-ac46-40ae-af03-c5f18175a376",
+      "claim_id": "C18",
+      "claim": "H37Rv underwent a median of 3.1 doublings (IQR 1.6).",
+      "claim_type": "EXPLICIT",
+      "source": "H37Rv bacilli grew in exponential phase for a median of 52.5 hrs (IQR 33.8) and during this time underwent a median of 3.1 doublings (IQR 1.6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data presented in Table 1 and Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:06:15.256491Z"
+    },
+    {
+      "id": "8b5010ce-a139-4535-9a4d-6ba57ffeb996",
+      "content_id": "14e82fe1-ac46-40ae-af03-c5f18175a376",
+      "claim_id": "C19",
+      "claim": "H37Rv growth data are consistent with bulk laboratory measurements.",
+      "claim_type": "EXPLICIT",
+      "source": "These data are consistent with bulk laboratory measurements (Pe\u00f1uelas-Urquides et al., 2013) and demonstrate the innate heterogeneity of the genetically homogeneous clonal population.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Pe\u00f1uelas-Urquides et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:06:15.256491Z"
+    },
+    {
+      "id": "e8a1007b-c3bb-4774-aa9f-674d095108c7",
+      "content_id": "14e82fe1-ac46-40ae-af03-c5f18175a376",
+      "claim_id": "C20",
+      "claim": "H37Rv is sensitive to ofloxacin with minimum inhibitory concentration (MIC) of 0.5 \u03bcg/ml.",
+      "claim_type": "EXPLICIT",
+      "source": "H37Rv is sensitive to ofloxacin with minimum inhibitory concentration (MIC) of 0.5 \u03bcg/ml as measured by normalized population growth in a standard dose-response curve (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:06:15.256491Z"
+    },
+    {
+      "id": "954d4b26-99c0-4984-9985-3bdcdaee3090",
+      "content_id": "14e82fe1-ac46-40ae-af03-c5f18175a376",
+      "claim_id": "C21",
+      "claim": "H37Rv initially grows at all concentrations of OFX indicating that OFX's toxicity does not alter growth kinetics over the first 24 hrs.",
+      "claim_type": "EXPLICIT",
+      "source": "By ODELAM, we observed H37Rv to initially grow at all concentrations of OFX indicating that OFX's toxicity does not alter growth kinetics over the first 24 hrs (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:06:15.256491Z"
+    },
+    {
+      "id": "3867026a-d37e-4842-87c7-1ad32c58f594",
+      "content_id": "14e82fe1-ac46-40ae-af03-c5f18175a376",
+      "claim_id": "C22",
+      "claim": "OFX's mechanism of action on DNA gyrase leads to the accumulation of DNA damage.",
+      "claim_type": "EXPLICIT",
+      "source": "This is consistent with OFX's mechanism of action on the enzyme target, DNA gyrase, which leads to the accumulation of DNA damage (Manjunatha et al., 2002; Gore et al., 2006; Willmott et al., 1994).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published literature on OFX mechanism.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:06:15.256491Z"
+    },
+    {
+      "id": "02f9f51c-9fc3-4775-b460-755e4133c9c9",
+      "content_id": "14e82fe1-ac46-40ae-af03-c5f18175a376",
+      "claim_id": "C23",
+      "claim": "The primary effect of OFX as detected by ODELAM was to arrest H37Rv growth after 2\u20133 doublings at the MIC.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, the primary effect of OFX as detected by ODELAM was to arrest H37Rv growth after 2\u20133 doublings at the MIC and by the first doubling at high drug concentrations, while not appreciably affecting the rate at which H37Rv doubles prior to growth arrest (Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data presented in Table 1 and Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:06:15.256491Z"
+    },
+    {
+      "id": "ddb7bc1e-af23-4dc7-a28d-fc523f831f35",
+      "content_id": "14e82fe1-ac46-40ae-af03-c5f18175a376",
+      "claim_id": "C24",
+      "claim": "TRS10 contains a missense mutation in the gene encoding gyrase A (D94G) that increases the isolate's MIC to OFX.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed a cultured clinical isolate TRS10, which contains a missense mutation in the gene encoding gyrase A (D94G) that increases the isolate's MIC to OFX (Eilertson et al., 2016; Hooper, 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Eilertson et al., 2016 and Hooper, 2001.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:06:15.256491Z"
+    },
+    {
+      "id": "ae2f648a-1389-47e6-9600-616db8d83483",
+      "content_id": "14e82fe1-ac46-40ae-af03-c5f18175a376",
+      "claim_id": "C25",
+      "claim": "The median doubling time of TRS10 was approximately 20% longer than that of H37Rv in the absence of drug pressure.",
+      "claim_type": "EXPLICIT",
+      "source": "In the absence of drug pressure, the median doubling time of TRS10 was approximately 20% longer than that of H37Rv (Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data presented in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:06:15.256491Z"
+    },
+    {
+      "id": "f5e3e231-3583-4698-9c34-b33299bc9fd4",
+      "content_id": "14e82fe1-ac46-40ae-af03-c5f18175a376",
+      "claim_id": "C26",
+      "claim": "The MIC of TRS10 to OFX was 16 \u03bcg/ml as measured by the normalized population growth in a standard dose-response curve.",
+      "claim_type": "EXPLICIT",
+      "source": "The MIC of TRS10 to OFX was 16 \u03bcg/ml as measured by the normalized population growth in a standard dose-response curve (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:06:15.256491Z"
+    },
+    {
+      "id": "ba9319cb-d1f5-42a8-9243-cc6d82ca9df8",
+      "content_id": "14e82fe1-ac46-40ae-af03-c5f18175a376",
+      "claim_id": "C27",
+      "claim": "TRS10 slowed its doubling time as OFX concentration increased up to, and including, its MIC.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast to H37Rv, which ceased to grow at its MIC, TRS10 slowed its doubling time as OFX concentration increased up to, and including, its MIC (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:06:15.256491Z"
+    },
+    {
+      "id": "6b8ba50f-cf33-4366-9a71-d812a7b6481a",
+      "content_id": "14e82fe1-ac46-40ae-af03-c5f18175a376",
+      "claim_id": "C28",
+      "claim": "TRS10's doubling time slowed dramatically from ~30 to~50 hrs as drug concentration shifted from 2 to 4 \u03bcg/ml.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, TRS10's doubling time slowed dramatically from ~30 to~50 hrs as drug concentration shifted from 2 to 4 \u03bcg/ml (Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data presented in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:06:15.256491Z"
+    },
+    {
+      "id": "92eea984-5b88-45ac-a6a4-d9a48617d5c6",
+      "content_id": "14e82fe1-ac46-40ae-af03-c5f18175a376",
+      "claim_id": "C29",
+      "claim": "For H37Rv, the effect size for time in exponential phase tracked with the number of doublings as the concentration of OFX increased above 0.5 \u03bcg/ml.",
+      "claim_type": "EXPLICIT",
+      "source": "For H37Rv, the effect size for time in exponential phase tracked with the number of doublings as the concentration of OFX increased above 0.5 \u03bcg/ml while doubling time and lag time effect sizes did not (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:06:15.256491Z"
+    },
+    {
+      "id": "35cbc13f-5b30-433b-9ea4-16fb16695200",
+      "content_id": "14e82fe1-ac46-40ae-af03-c5f18175a376",
+      "claim_id": "C30",
+      "claim": "For TRS10 the effect size for doubling time tracked with the number of doublings as the concentration of OFX increased.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, for TRS10 the effect size for doubling time tracked with the number of doublings as the concentration of OFX increased (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:06:15.256491Z"
+    },
+    {
+      "id": "3ed52824-4786-4b34-80a4-5bf0c45f809a",
+      "content_id": "14e82fe1-ac46-40ae-af03-c5f18175a376",
+      "claim_id": "C31",
+      "claim": "The OFX effect on TRS10's doubling time as opposed to the cessation of growth observed for H37Rv likely reflects the reduced binding of OFX to the mutant gyrase.",
+      "claim_type": "EXPLICIT",
+      "source": "This OFX effect on TRS10's doubling time as opposed to the cessation of growth observed for H37Rv (T-Exp) likely reflects the reduced binding of OFX to the mutant gyrase (Maruri et al., 2012; Willmott et al., 1994).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Maruri et al., 2012 and Willmott et al., 1994, and inference from experimental data.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:06:15.256491Z"
+    },
+    {
+      "id": "4bb38085-e15e-4d6d-9722-27b957f9f8ea",
+      "content_id": "14e82fe1-ac46-40ae-af03-c5f18175a376",
+      "claim_id": "C32",
+      "claim": "Heteroresistance in cultured clinical isolates is prevalent and confounds diagnosis and treatment of Mtb.",
+      "claim_type": "EXPLICIT",
+      "source": "Heteroresistance in cultured clinical isolates is prevalent and confounds diagnosis and treatment of Mtb (Sebastian et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Sebastian et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:06:15.256491Z"
+    },
+    {
+      "id": "d552eb73-ed46-4b28-a188-9ef8b1e8ec76",
+      "content_id": "14e82fe1-ac46-40ae-af03-c5f18175a376",
+      "claim_id": "C33",
+      "claim": "ODELAM detected a single OFX resistant CFU from the 0.04% TRS10 mixture.",
+      "claim_type": "EXPLICIT",
+      "source": "In this ODELAM assay, a single OFX resistant CFU was detected from the 0.04% TRS10 mixture (Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:06:15.256491Z"
+    },
+    {
+      "id": "a89225f4-ed66-4968-bdb2-633ef6c27d50",
+      "content_id": "14e82fe1-ac46-40ae-af03-c5f18175a376",
+      "claim_id": "C34",
+      "claim": "The 50% mix detected 200 resistant CFUs out a total of 721 CFUs.",
+      "claim_type": "EXPLICIT",
+      "source": "The 50% mix detected 200 resistant CFUs out a total of 721 CFUs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from the heteroresistance detection experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:06:15.256491Z"
+    },
+    {
+      "id": "4e7fe0fa-5dc9-44bc-b249-0f8945e4f12c",
+      "content_id": "14e82fe1-ac46-40ae-af03-c5f18175a376",
+      "claim_id": "C35",
+      "claim": "28 of 970 CFUs were detected in the 6.25% TRS10 mix.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, 28 of 970 CFUs were detected in the 6.25% TRS10 mix, and 12 of 1144 were detected in the 1.56% TRS10 mix (Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:06:15.256491Z"
+    },
+    {
+      "id": "a8027860-2f15-4dda-bc1a-e898e5f9a4ba",
+      "content_id": "14e82fe1-ac46-40ae-af03-c5f18175a376",
+      "claim_id": "C36",
+      "claim": "12 of 1144 CFUs were detected in the 1.56% TRS10 mix.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, 28 of 970 CFUs were detected in the 6.25% TRS10 mix, and 12 of 1144 were detected in the 1.56% TRS10 mix (Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:06:15.256491Z"
+    },
+    {
+      "id": "e3080e73-95a3-4738-8eed-67e287d37634",
+      "content_id": "14e82fe1-ac46-40ae-af03-c5f18175a376",
+      "claim_id": "C37",
+      "claim": "The relationship between dilution and detection was linear from 50% to 0.2%.",
+      "claim_type": "EXPLICIT",
+      "source": "The relationship between dilution and detection was linear from 50% to 0.2%.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:06:15.256491Z"
+    },
+    {
+      "id": "f1f41435-c1b7-4e09-b988-74430e4e51f3",
+      "content_id": "14e82fe1-ac46-40ae-af03-c5f18175a376",
+      "claim_id": "C38",
+      "claim": "ODELAM consistently observed fewer resistant TRS10 CFUs from the mixture than expected from the OD600 measurements used to generate the mixture.",
+      "claim_type": "EXPLICIT",
+      "source": "ODELAM consistently observed fewer resistant TRS10 CFUs from the mixture than expected from the OD600 measurements used to generate the mixture (Figure 5B) and likely reflects the vagaries associated with using OD600 to predict CFUs, which is known to vary between strains (Pe\u00f1uelas-Urquides et al., 2013).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 5B and citation to Pe\u00f1uelas-Urquides et al., 2013.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:06:15.256491Z"
+    },
+    {
+      "id": "702e8ede-68cb-40f1-869c-b1e9c23f65f3",
+      "content_id": "14e82fe1-ac46-40ae-af03-c5f18175a376",
+      "claim_id": "C39",
+      "claim": "Clinical isolate ADB42 was previously observed to be OFX resistant with MIC ranging between 8 and 256 \u03bcg/ml of OFX.",
+      "claim_type": "EXPLICIT",
+      "source": "Clinical isolate ADB42 was previously observed to be OFX resistant with MIC ranging between 8 and 256 \u03bcg/ml of OFX (Eilertson et al., 2016; Eilertson et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Eilertson et al., 2016 and Eilertson et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:06:15.256491Z"
+    },
+    {
+      "id": "f45d1b2c-170c-40c2-99a7-9a78fd73bd0d",
+      "content_id": "14e82fe1-ac46-40ae-af03-c5f18175a376",
+      "claim_id": "C40",
+      "claim": "The canonical OFX resistance conferring gyrase-A D94G SNP was not present at a frequency sufficient to be associated with the observed OFX resistance in ADB42 by whole genome sequence analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "By whole genome sequence analysis, the canonical OFX resistance conferring gyrase-A D94G SNP was not present at a frequency sufficient to be associated with the observed OFX resistance; other mechanisms were attributed to the observed phenotype (Eilertson et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Eilertson et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:06:15.256491Z"
+    },
+    {
+      "id": "f7beb388-2cc2-4925-bd1b-0f3902f43f50",
+      "content_id": "14e82fe1-ac46-40ae-af03-c5f18175a376",
+      "claim_id": "C41",
+      "claim": "The standard dose-response assay yielded a MIC of 16 \u03bcg/ml for ADB42.",
+      "claim_type": "EXPLICIT",
+      "source": "In our hands, the standard dose-response assay yielded a MIC of 16 \u03bcg/ml (Figure 6A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 6A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:06:15.256491Z"
+    },
+    {
+      "id": "b459e786-c956-4aa2-8372-a7a4ca6e1adb",
+      "content_id": "14e82fe1-ac46-40ae-af03-c5f18175a376",
+      "claim_id": "C42",
+      "claim": "ADB42 was grown in culture and subjected to transcriptome analysis by RNA-sequencing, which revealed the presence of a gyrase-A D94G SNP at a frequency of 15%.",
+      "claim_type": "EXPLICIT",
+      "source": "ADB42 was grown in culture and subjected to transcriptome analysis by RNA-sequencing, which revealed the presence of a gyrase-A D94G SNP at a frequency of 15% (Figure 8A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 8A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:06:15.256491Z"
+    },
+    {
+      "id": "d33627a8-2b76-4796-ac4f-accbfa72b84e",
+      "content_id": "14e82fe1-ac46-40ae-af03-c5f18175a376",
+      "claim_id": "C43",
+      "claim": "ODELAM measured roughly 24% of the ADB42 CFUs were resistant to OFX.",
+      "claim_type": "EXPLICIT",
+      "source": "Across the experiments reported here, ODELAM measured roughly 24% of the ADB42 CFUs were resistant to OFX, which is within a 95% confidence interval of random sampling modeled by a binomial distribution (Table 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data presented in Table 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:06:15.256491Z"
+    },
+    {
+      "id": "d9117e05-4eb7-44f3-9b07-a59416bd5d80",
+      "content_id": "14e82fe1-ac46-40ae-af03-c5f18175a376",
+      "claim_id": "C44",
+      "claim": "Thirty-three clones of ADB42 exhibited OFX resistance at 2 \u03bcg/ml OFX in both spot assay and ODELAM.",
+      "claim_type": "EXPLICIT",
+      "source": "Thirty-three clones exhibited OFX resistance at 2 \u03bcg/ml OFX in both assays.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from cloning experiments shown in Figure 8.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:06:15.256491Z"
+    },
+    {
+      "id": "bfede9e6-ebc9-4229-bbd1-c7719a5f201f",
+      "content_id": "14e82fe1-ac46-40ae-af03-c5f18175a376",
+      "claim_id": "C45",
+      "claim": "Individual clones of ADB42 did not display phenotypic heterogeneity by ODELAM.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to the parental cultured clinical isolate, these individual clones did not display phenotypic heterogeneity by ODELAM (data not shown).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from ODELAM analysis of clones.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:06:15.256491Z"
+    },
+    {
+      "id": "a0317b13-3587-4bbb-a23f-30f18161c75e",
+      "content_id": "14e82fe1-ac46-40ae-af03-c5f18175a376",
+      "claim_id": "C46",
+      "claim": "All 10 resistant isolates of ADB42 contained a SNP A7582G in gyrA, which corresponds to the canonical D94G mutations that confers OFX resistance.",
+      "claim_type": "EXPLICIT",
+      "source": "All 10 resistant isolates contained a SNP A7582G in gyrA, which corresponds to the canonical D94G mutations that confers OFX resistance (Willmott et al., 1994).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by sequencing data and citation to Willmott et al., 1994.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:06:15.256491Z"
+    },
+    {
+      "id": "5012a16f-a2b9-408d-82d3-b2ddeeaab5ef",
+      "content_id": "14e82fe1-ac46-40ae-af03-c5f18175a376",
+      "claim_id": "C47",
+      "claim": "The four sensitive clones of ADB42 did not contain the D94G SNP.",
+      "claim_type": "EXPLICIT",
+      "source": "The four sensitive clones did not contain this SNP (Table 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by sequencing data presented in Table 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:06:15.256491Z"
+    },
+    {
+      "id": "e2cdbdce-d818-48b2-b47a-b25602574ff0",
+      "content_id": "14e82fe1-ac46-40ae-af03-c5f18175a376",
+      "claim_id": "C48",
+      "claim": "After Mtb growth arrest on OFX, some cells appear to lyse as detected by a change in contrast.",
+      "claim_type": "EXPLICIT",
+      "source": "After Mtb growth arrest on OFX, some cells appear to lyse as detected by a change in contrast (Figure 10A), which we interpret as a consequence of cytotoxicity (Figure 10A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental observations shown in Figure 10A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:06:15.256491Z"
+    },
+    {
+      "id": "839aae40-6d60-4e96-9874-f45348f75f2c",
+      "content_id": "14e82fe1-ac46-40ae-af03-c5f18175a376",
+      "claim_id": "C49",
+      "claim": "The percentage of colonies that have the lysis phenotype increased with OFX concentration and became apparent at concentrations greater than 0.5 \u03bcg/ml OFX.",
+      "claim_type": "EXPLICIT",
+      "source": "The percentage of colonies that have this phenotype increased with OFX concentration and became apparent at concentrations greater than 0.5 \u03bcg/ml OFX.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 10.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:06:15.256491Z"
+    },
+    {
+      "id": "b5d7b8f5-8ea9-4e74-a39e-577f21210bb3",
+      "content_id": "14e82fe1-ac46-40ae-af03-c5f18175a376",
+      "claim_id": "C50",
+      "claim": "H37Rv showed as much as 95% of the tracked colonies exhibiting cell lysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Here H37Rv showed as much as 95% of the tracked colonies exhibiting cell lysis, where as ADB42 and TRS10 showed 65% and 30%, respectively (Figure 10C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 10C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:06:15.256491Z"
+    },
+    {
+      "id": "38a8743f-38b7-4cfd-9b46-6a7cc496e38f",
+      "content_id": "14e82fe1-ac46-40ae-af03-c5f18175a376",
+      "claim_id": "C51",
+      "claim": "ADB42 showed 65% of the tracked colonies exhibiting cell lysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Here H37Rv showed as much as 95% of the tracked colonies exhibiting cell lysis, where as ADB42 and TRS10 showed 65% and 30%, respectively (Figure 10C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 10C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:06:15.256491Z"
+    },
+    {
+      "id": "fd89fec2-e3fc-4df2-9a00-c4b2567a2380",
+      "content_id": "14e82fe1-ac46-40ae-af03-c5f18175a376",
+      "claim_id": "C52",
+      "claim": "TRS10 showed 30% of the tracked colonies exhibiting cell lysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Here H37Rv showed as much as 95% of the tracked colonies exhibiting cell lysis, where as ADB42 and TRS10 showed 65% and 30%, respectively (Figure 10C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 10C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:06:15.256491Z"
+    },
+    {
+      "id": "f04e0064-5c75-4559-83b2-1f4105a084ae",
+      "content_id": "14e82fe1-ac46-40ae-af03-c5f18175a376",
+      "claim_id": "C53",
+      "claim": "In the case of H37Rv, which, in the presence of OFX, exits exponential phase after ~20 hrs, ODELAM can detect drug sensitivity in ~30 hrs.",
+      "claim_type": "EXPLICIT",
+      "source": "In the case of H37Rv, which, in the presence of OFX, exits exponential phase after ~20 hrs, ODELAM can detect drug sensitivity in ~30 hrs (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2 and convergence analysis in Figure 12.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:06:15.256491Z"
+    },
+    {
+      "id": "4d0b83b0-cd1d-408a-b0bb-9e88c0fce115",
+      "content_id": "14e82fe1-ac46-40ae-af03-c5f18175a376",
+      "claim_id": "C54",
+      "claim": "The time required to reliably determine the set of kinetic parameters for a growth curve must be ~1.5 times longer than the time needed for a CFU to exit exponential phase.",
+      "claim_type": "EXPLICIT",
+      "source": "Using this routine, we calculated that the time required to reliably determine the set of kinetic parameters for a growth curve must be ~1.5 times longer than the time needed for a CFU to exit exponential phase.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by computational analysis shown in Figure 12.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:06:15.256491Z"
+    },
+    {
+      "id": "f995322c-a56a-4e42-a3b4-4a5f07657bc2",
+      "content_id": "14e82fe1-ac46-40ae-af03-c5f18175a376",
+      "claim_id": "C55",
+      "claim": "Fluoroquinolones such as OFX bind to gyrase and trap the enzyme-DNA complex in an intermediate state.",
+      "claim_type": "EXPLICIT",
+      "source": "Fluoroquinolones such as OFX bind to gyrase and trap the enzyme-DNA complex in an intermediate state (Willmott et al., 1994).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Willmott et al., 1994.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:06:15.256491Z"
+    },
+    {
+      "id": "a69a31a4-9d68-404d-9083-84d070706e47",
+      "content_id": "14e82fe1-ac46-40ae-af03-c5f18175a376",
+      "claim_id": "C56",
+      "claim": "The trapped complex can stall RNA transcription and prevent progression of the replication fork.",
+      "claim_type": "EXPLICIT",
+      "source": "The trapped complex can stall RNA transcription and prevent progression of the replication fork (Willmott et al., 1994; Gore et al., 2006; Shea and Hiasa, 1999; Manjunatha et al., 2002; Hiasa et al., 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published literature on fluoroquinolone mechanism.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:06:15.256491Z"
+    },
+    {
+      "id": "154e7f8f-0ac3-4640-9ae8-0d0ffc0de9bb",
+      "content_id": "14e82fe1-ac46-40ae-af03-c5f18175a376",
+      "claim_id": "C57",
+      "claim": "In the presence of OFX, double stranded breaks in the DNA template free the RNA transcription complex and accumulate over time contributing to toxicity and cell death.",
+      "claim_type": "EXPLICIT",
+      "source": "In the presence of OFX, double stranded breaks in the DNA template free the RNA transcription complex and accumulate over time contributing to toxicity and cell death (Willmott et al., 1994; Hiasa et al., 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Willmott et al., 1994 and Hiasa et al., 1996.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:06:15.256491Z"
+    },
+    {
+      "id": "4d703ba2-f834-4362-9c3e-4fd39c716f89",
+      "content_id": "14e82fe1-ac46-40ae-af03-c5f18175a376",
+      "claim_id": "C58",
+      "claim": "Even at OFX concentrations above the MIC (0.5 \u03bcg/ml), H37Rv continues to grow before they arrest synchronously after ~20 hrs.",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, even at OFX concentrations above the MIC (0.5 \u03bcg/ml), H37Rv continues to grow before they arrest synchronously after ~20 hrs (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:06:15.256491Z"
+    },
+    {
+      "id": "018444f5-1a33-4260-9ee4-889108eed950",
+      "content_id": "14e82fe1-ac46-40ae-af03-c5f18175a376",
+      "claim_id": "C59",
+      "claim": "Most H37Rv cells remain metabolically active and synthesize protein until drug-induced damage accumulates and growth stops.",
+      "claim_type": "EXPLICIT",
+      "source": "We interpret this to mean that most cells remain metabolically active and synthesize protein until drug-induced damage accumulates and growth stops (Wang et al., 2009; Da Re et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation supported by citations to Wang et al., 2009 and Da Re et al., 2009.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:06:15.256491Z"
+    },
+    {
+      "id": "6e993f44-9302-470f-a320-2bdb22b5fd17",
+      "content_id": "14e82fe1-ac46-40ae-af03-c5f18175a376",
+      "claim_id": "C60",
+      "claim": "Standard microwell plate MIC assays and indicator tube assays are sensitive and robust methods for detecting antimicrobial resistant Mtb.",
+      "claim_type": "EXPLICIT",
+      "source": "Standard microwell plate MIC assays and indicator tube assays are sensitive and robust methods for detecting antimicrobial resistant Mtb; however, these bulk assays give little information on the presence of sub-populations that differ in their sensitivity to drugs (Lawson et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Lawson et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:06:15.256491Z"
+    },
+    {
+      "id": "91f52e1a-fcca-43a2-bc5d-0cc2fdf111ec",
+      "content_id": "14e82fe1-ac46-40ae-af03-c5f18175a376",
+      "claim_id": "C61",
+      "claim": "Bulk assays give little information on the presence of sub-populations that differ in their sensitivity to drugs.",
+      "claim_type": "EXPLICIT",
+      "source": "Standard microwell plate MIC assays and indicator tube assays are sensitive and robust methods for detecting antimicrobial resistant Mtb; however, these bulk assays give little information on the presence of sub-populations that differ in their sensitivity to drugs (Lawson et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Lawson et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:06:15.256491Z"
+    },
+    {
+      "id": "9468216a-3a21-4f34-ac9f-74de07576101",
+      "content_id": "14e82fe1-ac46-40ae-af03-c5f18175a376",
+      "claim_id": "C62",
+      "claim": "ODELAM can discriminate individual CFUs with a sensitivity of roughly 1 in 1000.",
+      "claim_type": "EXPLICIT",
+      "source": "This was validated with an artificially mixed population and was used to detect heteroresistance in a cultured clinical isolate, ADB42. In the mixed population ODELAM discriminates individual CFUs with a sensitivity of roughly 1 in 1000.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from the heteroresistance detection experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:06:15.256491Z"
+    },
+    {
+      "id": "8a7b80f6-574c-48b5-9e88-9f269df44427",
+      "content_id": "14e82fe1-ac46-40ae-af03-c5f18175a376",
+      "claim_id": "C63",
+      "claim": "ODELAM's sensitivity is dependent on the number of CFUs observed.",
+      "claim_type": "EXPLICIT",
+      "source": "This level of precision is dependent on the number of CFUs observed and improvements in microscope optics, computation, and media preparation could increase this sensitivity by orders of magnitude.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference about the method's capabilities.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:06:15.256491Z"
+    },
+    {
+      "id": "69a65a70-bec8-4a24-a395-4914e7a94e3e",
+      "content_id": "14e82fe1-ac46-40ae-af03-c5f18175a376",
+      "claim_id": "C64",
+      "claim": "ODELAM could observe the rare but critical events that lead to development of drug resistance including individual persistent cells that go on to acquire drug resistance through mutation.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, this approach could observe the rare but critical events that lead to development of drug resistance including individual persistent cells that go on to acquire drug resistance through mutation (Cohen et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative claim about future capabilities, supported by citation to Cohen et al., 2013.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:06:15.256491Z"
+    },
+    {
+      "id": "0df47e02-a89c-4a62-b291-b9a4a7115507",
+      "content_id": "14e82fe1-ac46-40ae-af03-c5f18175a376",
+      "claim_id": "C65",
+      "claim": "For concentrations of OFX up to and including 16 times the MIC, there was no measurable effect on H37Rv's growth rate until growth ceased.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, for concentrations of OFX up to and including 16 times the MIC, there was no measurable effect on H37Rv's growth rate until growth ceased.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from ODELAM measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:06:15.256491Z"
+    },
+    {
+      "id": "e443b10f-1de5-4fff-9019-7437e5eb69ec",
+      "content_id": "14e82fe1-ac46-40ae-af03-c5f18175a376",
+      "claim_id": "C66",
+      "claim": "OFX had a measurable effect on growth rate of TRS10 well below its MIC.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast OFX had a measurable effect on growth rate of TRS10 well below its MIC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from ODELAM measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:06:15.256491Z"
+    },
+    {
+      "id": "2540ad76-b2b0-460e-9843-ca984b22d2f4",
+      "content_id": "14e82fe1-ac46-40ae-af03-c5f18175a376",
+      "claim_id": "C67",
+      "claim": "These differences in OFX effects reflect the differential accumulation of cytotoxic molecular intermediates due to differences in the ability of the drug to bind the different variants of gyrase.",
+      "claim_type": "EXPLICIT",
+      "source": "We interpret these differences to reflect the differential accumulation of cytotoxic molecular intermediates due to differences in the ability of the drug to bind the different variants of gyrase.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation based on experimental observations and knowledge of drug mechanism.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:06:15.256491Z"
+    },
+    {
+      "id": "cbeb4533-0eed-4154-b8fd-c27e87488fe6",
+      "content_id": "14e82fe1-ac46-40ae-af03-c5f18175a376",
+      "claim_id": "C68",
+      "claim": "ODELAM is not restricted to Mtb and can be adapted to any colony forming microorganism.",
+      "claim_type": "EXPLICIT",
+      "source": "ODELAM is not restricted to Mtb and can be adapted to any colony forming microorganism.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative claim about the method's broader applicability.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:06:15.256491Z"
+    },
+    {
+      "id": "1fe87228-25e3-4b04-b522-23c6347b7bd3",
+      "content_id": "14e82fe1-ac46-40ae-af03-c5f18175a376",
+      "claim_id": "C69",
+      "claim": "ODELAM can observe up to 1500 CFUs in each region of interest.",
+      "claim_type": "EXPLICIT",
+      "source": "In each region of interest, ODELAM can observe up to 1500 CFUs and quantify their morphological and multiparameter growth phenotypes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a technical specification of the ODELAM method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:06:15.256491Z"
+    },
+    {
+      "id": "f63391d9-8712-46e5-b38c-ca536412bfc6",
+      "content_id": "14e82fe1-ac46-40ae-af03-c5f18175a376",
+      "claim_id": "C70",
+      "claim": "A typical ODELAM experiment involves 80 or 96 regions of interest.",
+      "claim_type": "EXPLICIT",
+      "source": "A typical experiment involves 80 or 96 regions of interest.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a technical specification of the ODELAM method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:06:15.256491Z"
+    },
+    {
+      "id": "73baf421-db95-4ed5-8651-98a1864c9274",
+      "content_id": "14e82fe1-ac46-40ae-af03-c5f18175a376",
+      "claim_id": "C71",
+      "claim": "Mtb bacilli were observed to grow immediately after spotting on media.",
+      "claim_type": "EXPLICIT",
+      "source": "In these experiments, Mtb bacilli were observed to grow immediately after spotting on media.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from ODELAM experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:06:15.256491Z"
+    },
+    {
+      "id": "3d88ee6a-7da8-47e6-86bd-ce6022bd35c9",
+      "content_id": "14e82fe1-ac46-40ae-af03-c5f18175a376",
+      "claim_id": "C72",
+      "claim": "Mtb CFUs were recorded for a total of 96 hrs.",
+      "claim_type": "EXPLICIT",
+      "source": "Mtb CFUs were recorded for a total of 96 hrs and growth curves were extracted from the projected area of the individual colonies over time and fitted to the Gompertz function (Figure 1B; Herricks et al., 2017).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a description of the experimental protocol.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:06:15.256491Z"
+    },
+    {
+      "id": "48f9aec0-c5db-4299-8b0c-ca915fc243be",
+      "content_id": "14e82fe1-ac46-40ae-af03-c5f18175a376",
+      "claim_id": "C73",
+      "claim": "Growth curves were fitted to the Gompertz function.",
+      "claim_type": "EXPLICIT",
+      "source": "Mtb CFUs were recorded for a total of 96 hrs and growth curves were extracted from the projected area of the individual colonies over time and fitted to the Gompertz function (Figure 1B; Herricks et al., 2017).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a description of the analysis method, with citation to Herricks et al., 2017.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:06:15.256491Z"
+    },
+    {
+      "id": "aa1b9bfd-3c67-405b-aca3-a925b20b09a1",
+      "content_id": "14e82fe1-ac46-40ae-af03-c5f18175a376",
+      "claim_id": "C74",
+      "claim": "The kinetic parameters doubling time (Td), lag time (T-Lag), time in exponential phase (T-Exp) and number of doublings (Num Dbl) were derived from the Gompertz function.",
+      "claim_type": "EXPLICIT",
+      "source": "The kinetic parameters doubling time (Td), lag time (T-Lag), time in exponential phase (T-Exp) and number of doublings (Num Dbl) were derived from the Gompertz function and plotted as normalized frequency histograms which revealed population distributions (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a description of the analysis method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:06:15.256491Z"
+    },
+    {
+      "id": "f4aac4c3-b606-47e0-8121-bbe08b7fbe34",
+      "content_id": "14e82fe1-ac46-40ae-af03-c5f18175a376",
+      "claim_id": "C75",
+      "claim": "ODELAM demonstrates the innate heterogeneity of the genetically homogeneous clonal population.",
+      "claim_type": "EXPLICIT",
+      "source": "These data are consistent with bulk laboratory measurements (Pe\u00f1uelas-Urquides et al., 2013) and demonstrate the innate heterogeneity of the genetically homogeneous clonal population.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the experimental data showing variation in growth parameters.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:06:15.256491Z"
+    },
+    {
+      "id": "a5451eb5-daa4-43e8-9cda-78e6d4d51db9",
+      "content_id": "14e82fe1-ac46-40ae-af03-c5f18175a376",
+      "claim_id": "C76",
+      "claim": "Above the MIC, OFX toxicity led to cessation of growth, detected as an exit from exponential phase.",
+      "claim_type": "EXPLICIT",
+      "source": "Above the MIC, toxicity led to cessation of growth, detected as an exit from exponential phase.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from ODELAM experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:06:15.256491Z"
+    },
+    {
+      "id": "dee772ed-ea1d-4859-9ec7-b26fc7597afd",
+      "content_id": "14e82fe1-ac46-40ae-af03-c5f18175a376",
+      "claim_id": "C77",
+      "claim": "Narrowing of the population histograms reflects a more uniform population.",
+      "claim_type": "EXPLICIT",
+      "source": "Narrowing of the population histograms reflects a more uniform population.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the histogram data.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:06:15.256491Z"
+    },
+    {
+      "id": "557efa45-5895-4351-9d42-6e4dc0d7fc68",
+      "content_id": "14e82fe1-ac46-40ae-af03-c5f18175a376",
+      "claim_id": "C78",
+      "claim": "The doubling time distributions did not appreciably change with OFX treatment in H37Rv.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, the doubling time distributions did not appreciably change; cells maintained similar doubling rates prior to growth cessation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from ODELAM experiments shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:06:15.256491Z"
+    },
+    {
+      "id": "f1237445-8f85-4532-b312-f77a39a7b0ac",
+      "content_id": "14e82fe1-ac46-40ae-af03-c5f18175a376",
+      "claim_id": "C79",
+      "claim": "H37Rv cells maintained similar doubling rates prior to growth cessation.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, the doubling time distributions did not appreciably change; cells maintained similar doubling rates prior to growth cessation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from ODELAM experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:06:15.256491Z"
+    },
+    {
+      "id": "0d6c9f7a-4779-4a16-bf91-c77a7836b91f",
+      "content_id": "14e82fe1-ac46-40ae-af03-c5f18175a376",
+      "claim_id": "C80",
+      "claim": "TRS10 grew continuously over a 96 hrs time period at its MIC OFX concentration of 16 \u03bcg/ml.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast TRS10 grew continuously over a 96 hrs time period at its MIC OFX concentration of 16 \u03bcg/ml.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from ODELAM experiments shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:06:15.256491Z"
+    },
+    {
+      "id": "4a9f7f14-18f0-46c6-b7cd-661787b78479",
+      "content_id": "14e82fe1-ac46-40ae-af03-c5f18175a376",
+      "claim_id": "C81",
+      "claim": "Before growth arrest at its MIC, the doubling rate of H37Rv slowed slightly.",
+      "claim_type": "EXPLICIT",
+      "source": "Before growth arrest at its MIC, the doubling rate of H37Rv slowed slightly, whereas the doubling rate for TRS10 slowed considerably and at a population level exhibited a broad spread of doubling times.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from ODELAM experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:06:15.256491Z"
+    },
+    {
+      "id": "8c493822-719e-4917-8fbf-d96b24e32b22",
+      "content_id": "14e82fe1-ac46-40ae-af03-c5f18175a376",
+      "claim_id": "C82",
+      "claim": "The doubling rate for TRS10 slowed considerably and at a population level exhibited a broad spread of doubling times.",
+      "claim_type": "EXPLICIT",
+      "source": "Before growth arrest at its MIC, the doubling rate of H37Rv slowed slightly, whereas the doubling rate for TRS10 slowed considerably and at a population level exhibited a broad spread of doubling times.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from ODELAM experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:06:15.256491Z"
+    },
+    {
+      "id": "c3fca4f2-54fe-4c1c-8912-ada08530ceee",
+      "content_id": "14e82fe1-ac46-40ae-af03-c5f18175a376",
+      "claim_id": "C83",
+      "claim": "The mechanisms of action for OFX toxicity are different between H37Rv and TRS10.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that the mechanisms of action for OFX toxicity are different between the two strains.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the different growth phenotypes observed.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:06:15.256491Z"
+    },
+    {
+      "id": "b4b8ab2d-08b0-4cb2-8781-34f95ae50249",
+      "content_id": "14e82fe1-ac46-40ae-af03-c5f18175a376",
+      "claim_id": "C84",
+      "claim": "As the concentration of OFX is increased in TRS10, off-target effects begin to manifest, which alter growth in a pleotropic manner resulting in the observed broadening of the doubling time of the population.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, as the concentration of OFX is increased, off-target effects begin to manifest, which alter growth in a pleotropic manner resulting in the observed broadening of the doubling time of the population (Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a speculative interpretation of the experimental data.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:06:15.256491Z"
+    },
+    {
+      "id": "1597111b-8c89-4f85-b3c9-47f53da48839",
+      "content_id": "14e82fe1-ac46-40ae-af03-c5f18175a376",
+      "claim_id": "C85",
+      "claim": "Inhibition of DNA gyrase in H37Rv likely results in the accumulation of replication and transcription intermediates, leading to the more uniform population distribution observed.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, inhibition of DNA gyrase in H37Rv likely results in the accumulation of replication and transcription intermediates, leading to the more uniform population distribution observed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation of the experimental data.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:06:15.256491Z"
+    },
+    {
+      "id": "bc9db262-75d1-4242-8b0e-f189efa52d50",
+      "content_id": "14e82fe1-ac46-40ae-af03-c5f18175a376",
+      "claim_id": "C86",
+      "claim": "The standard dose-response batch culture MIC assay yielded inaccurate results for heteroresistant mixtures.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the standard dose-response batch culture MIC assay yielded inaccurate results and was unable to reflect the MIC of the constituent population.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the experimental data shown in Figure 5A.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:06:15.256491Z"
+    },
+    {
+      "id": "a063cefc-bc14-4cf9-98dc-8fc661121ac3",
+      "content_id": "14e82fe1-ac46-40ae-af03-c5f18175a376",
+      "claim_id": "C87",
+      "claim": "The standard dose-response batch culture MIC assay was unable to reflect the MIC of the constituent population in heteroresistant mixtures.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the standard dose-response batch culture MIC assay yielded inaccurate results and was unable to reflect the MIC of the constituent population.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the experimental data shown in Figure 5A.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:06:15.256491Z"
+    },
+    {
+      "id": "0f6c2ce7-3865-416e-a204-dd4fc7c8e528",
+      "content_id": "14e82fe1-ac46-40ae-af03-c5f18175a376",
+      "claim_id": "C88",
+      "claim": "ODELAM directly observed OFX resistant CFUs in the mixed culture.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast ODELAM directly observed OFX resistant CFUs in the mixed culture (Figure 5B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 5B and 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:06:15.256491Z"
+    },
+    {
+      "id": "d43c9b0c-8876-4d32-b66d-f4aa2f9c5f7c",
+      "content_id": "14e82fe1-ac46-40ae-af03-c5f18175a376",
+      "claim_id": "C89",
+      "claim": "Resistant and sensitive CFUs were distinguished by their number of doublings and their growth in exponential phase.",
+      "claim_type": "EXPLICIT",
+      "source": "Resistant and sensitive CFUs were distinguished by their number of doublings and their growth in exponential phase.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the analysis method used in ODELAM.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:06:15.256491Z"
+    },
+    {
+      "id": "b0fede92-f43d-420b-aee1-999c38d8c914",
+      "content_id": "14e82fe1-ac46-40ae-af03-c5f18175a376",
+      "claim_id": "C90",
+      "claim": "The observed MIC varied across the dilution series, increasing with the proportion of resistant cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The observed MIC varied across the dilution series, increasing with the proportion of resistant cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the MIC assay data shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:06:15.256491Z"
+    },
+    {
+      "id": "54b8adf2-b9bf-48c3-9b96-e8ae8725dce2",
+      "content_id": "14e82fe1-ac46-40ae-af03-c5f18175a376",
+      "claim_id": "C91",
+      "claim": "The standard MIC assay is sufficiently sensitive to detect shifts in the MIC at very low relative concentrations of resistant cells.",
+      "claim_type": "EXPLICIT",
+      "source": "While the assay is sufficiently sensitive to detect shifts in the MIC at very low relative concentrations of resistant cells, it does not distinguish between a monoculture with a specific resistance phenotype and a mixed population with heteroresistance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the MIC assay data shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:06:15.256491Z"
+    },
+    {
+      "id": "13b0c3b6-dd0a-4a34-bf38-e7fddfe6acb2",
+      "content_id": "14e82fe1-ac46-40ae-af03-c5f18175a376",
+      "claim_id": "C92",
+      "claim": "The standard MIC assay does not distinguish between a monoculture with a specific resistance phenotype and a mixed population with heteroresistance.",
+      "claim_type": "EXPLICIT",
+      "source": "While the assay is sufficiently sensitive to detect shifts in the MIC at very low relative concentrations of resistant cells, it does not distinguish between a monoculture with a specific resistance phenotype and a mixed population with heteroresistance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the experimental data shown in Figure 5A.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:06:15.256491Z"
+    },
+    {
+      "id": "88778765-dd40-408f-b6c1-b776f7c65c85",
+      "content_id": "14e82fe1-ac46-40ae-af03-c5f18175a376",
+      "claim_id": "C93",
+      "claim": "Below 0.2% TRS10 in the mixture, the expected number of TRS10 CFUs fall to around 1 to 5 in 1000 individuals.",
+      "claim_type": "EXPLICIT",
+      "source": "Below 0.2% the expected number of TRS10 CFUs fall to around 1 to 5 in 1000 individuals and because each region of interest observes about 1000 CFUs, the measurements become dominated by chance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a calculation based on the experimental design.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:06:15.256491Z"
+    },
+    {
+      "id": "96d60c37-48a6-4341-82bd-a9809574da0e",
+      "content_id": "14e82fe1-ac46-40ae-af03-c5f18175a376",
+      "claim_id": "C94",
+      "claim": "Each region of interest observes about 1000 CFUs.",
+      "claim_type": "EXPLICIT",
+      "source": "Below 0.2% the expected number of TRS10 CFUs fall to around 1 to 5 in 1000 individuals and because each region of interest observes about 1000 CFUs, the measurements become dominated by chance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a technical specification of the ODELAM method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:06:15.256491Z"
+    },
+    {
+      "id": "c52bd69b-5462-43ea-963b-4883bacec589",
+      "content_id": "14e82fe1-ac46-40ae-af03-c5f18175a376",
+      "claim_id": "C95",
+      "claim": "The discrepancy between expected and observed resistant CFUs likely reflects the vagaries associated with using OD600 to predict CFUs, which is known to vary between strains.",
+      "claim_type": "EXPLICIT",
+      "source": "ODELAM consistently observed fewer resistant TRS10 CFUs from the mixture than expected from the OD600 measurements used to generate the mixture (Figure 5B) and likely reflects the vagaries associated with using OD600 to predict CFUs, which is known to vary between strains (Pe\u00f1uelas-Urquides et al., 2013).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an interpretation supported by citation to Pe\u00f1uelas-Urquides et al., 2013.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:06:15.256491Z"
+    },
+    {
+      "id": "84b2729f-fa34-43ff-a763-a1a83714858b",
+      "content_id": "14e82fe1-ac46-40ae-af03-c5f18175a376",
+      "claim_id": "C96",
+      "claim": "Prominent tails were observed on the right-hand side of the exponential phase and number of doublings population distributions for ADB42 at OFX concentrations at and above 0.5 \u03bcg/ml.",
+      "claim_type": "EXPLICIT",
+      "source": "Prominent tails were observed on the right-hand side of the exponential phase and number of doublings population distributions for OFX concentrations at and above 0.5 \u03bcg/ml (Figure 6B), suggesting the presence of at least two populations.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from ODELAM data shown in Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:06:15.256491Z"
+    },
+    {
+      "id": "12af4643-a6b6-4dac-a726-00bd10f9b3a0",
+      "content_id": "14e82fe1-ac46-40ae-af03-c5f18175a376",
+      "claim_id": "C97",
+      "claim": "The tails in ADB42 histograms suggest the presence of at least two populations.",
+      "claim_type": "EXPLICIT",
+      "source": "Prominent tails were observed on the right-hand side of the exponential phase and number of doublings population distributions for OFX concentrations at and above 0.5 \u03bcg/ml (Figure 6B), suggesting the presence of at least two populations.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on the histogram data shown in Figure 6B.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:06:15.256491Z"
+    },
+    {
+      "id": "525dfb60-ca9f-4414-9815-6878e2d4ce96",
+      "content_id": "14e82fe1-ac46-40ae-af03-c5f18175a376",
+      "claim_id": "C98",
+      "claim": "ADB42 populations could be segregated by a simple threshold of 2 doublings as detected by ODELAM on 2 \u03bcg/ml OFX.",
+      "claim_type": "EXPLICIT",
+      "source": "These populations could be segregated by a simple threshold of 2 doublings as detected by ODELAM on 2 \u03bcg/ml OFX (Figure 7).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a description of the analysis method shown in Figure 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:06:15.256491Z"
+    },
+    {
+      "id": "74a137c3-09db-4c91-93e2-8f842816a869",
+      "content_id": "14e82fe1-ac46-40ae-af03-c5f18175a376",
+      "claim_id": "C99",
+      "claim": "The CFU growth curves corresponding to these populations showed either OFX sensitivity or OFX resistance similar to those observed for the experimentally mixed populations of H37Rv and TRS10.",
+      "claim_type": "EXPLICIT",
+      "source": "The CFU growth curves corresponding to these populations showed either OFX sensitivity (Figure 7A) or OFX resistance (Figure 7B) similar to those observed for the experimentally mixed populations of H37Rv and TRS10 (Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from ODELAM data shown in Figures 7 and 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:06:15.256491Z"
+    },
+    {
+      "id": "fa490273-79d2-4ef7-93c7-0ad9e578e218",
+      "content_id": "14e82fe1-ac46-40ae-af03-c5f18175a376",
+      "claim_id": "C100",
+      "claim": "Of the 1476 CFUs in the heteroresistant ADB42 culture, 1203 CFUs doubled fewer than 2\u00d7 and 273 CFUs doubled more than 2\u00d7.",
+      "claim_type": "EXPLICIT",
+      "source": "Of the 1476 CFUs in the heteroresistant culture, sensitive and resistant components were segregated by selecting those that doubled fewer than 2\u00d7 (1203 CFUs; red traces) or more than 2\u00d7 (273 CFUs; blue traces)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data shown in Figure 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:06:15.256491Z"
+    },
+    {
+      "id": "6c152627-c833-419f-91d0-9a2bc0c0f157",
+      "content_id": "14e82fe1-ac46-40ae-af03-c5f18175a376",
+      "claim_id": "C101",
+      "claim": "Cultured clinical isolate ADB42 contains two distinct populations one of which is resistant to ofloxacin and likely contains a D94G gyrase-A mutation that confers OFX resistance.",
+      "claim_type": "EXPLICIT",
+      "source": "In total, these data indicate that cultured clinical isolate ADB42 contains two distinct populations one of which is resistant to ofloxacin and likely contains a D94G gyrase-A mutation that confers OFX resistance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on multiple lines of experimental evidence including ODELAM, sequencing, and cloning data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:06:15.256491Z"
+    },
+    {
+      "id": "817fe99e-84a7-44bc-b26c-39b3e7c179de",
+      "content_id": "14e82fe1-ac46-40ae-af03-c5f18175a376",
+      "claim_id": "C102",
+      "claim": "Ninety-six individual clones of ADB42 were isolated.",
+      "claim_type": "EXPLICIT",
+      "source": "Ninety-six individual clones of ADB42 were isolated and their growth on 2 \u03bcg/ml OFX was measured in a spot assay (Figure 8B and C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a description of the experimental procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:06:15.256491Z"
+    },
+    {
+      "id": "3cbfad96-0668-4e59-8bba-e0c53e1373b7",
+      "content_id": "14e82fe1-ac46-40ae-af03-c5f18175a376",
+      "claim_id": "C103",
+      "claim": "The frequency of lysis scales with the sensitivity of the strain to OFX.",
+      "claim_type": "EXPLICIT",
+      "source": "The frequency of lysis scales with the sensitivity of the strain to OFX.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the lysis data shown in Figure 10C.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:06:15.256491Z"
+    },
+    {
+      "id": "a588cb26-68d2-4b21-8674-e5f542800d43",
+      "content_id": "14e82fe1-ac46-40ae-af03-c5f18175a376",
+      "claim_id": "C104",
+      "claim": "ODELAM highlights the complex transition from a cytostatic to a cytolytic phase of the drug-organism interaction.",
+      "claim_type": "EXPLICIT",
+      "source": "These observations by ODELAM highlight the complex transition from a cytostatic to a cytolytic phase of the drug-organism interaction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the lysis observations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:06:15.256491Z"
+    },
+    {
+      "id": "386f88e5-607c-4b58-b78f-f79da0cba2be",
+      "content_id": "14e82fe1-ac46-40ae-af03-c5f18175a376",
+      "claim_id": "C105",
+      "claim": "ODELAM is optimized to track between approximately 50 to 1500 individual cells and CFUs for 96 hrs.",
+      "claim_type": "EXPLICIT",
+      "source": "ODELAM is optimized to track between approximately 50 to 1500 individual cells and CFUs for 96 hrs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a technical specification of the ODELAM method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:06:15.256491Z"
+    },
+    {
+      "id": "bef44c25-cf14-4b90-9c83-b8758ba9ed47",
+      "content_id": "14e82fe1-ac46-40ae-af03-c5f18175a376",
+      "claim_id": "C106",
+      "claim": "The lower limit of about 50 CFUs per field of view is required to have sufficient contrast to focus and stitch the images.",
+      "claim_type": "EXPLICIT",
+      "source": "The lower limit of about 50 CFUs per field of view is required to have sufficient contrast to focus and stitch the images.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a technical specification of the ODELAM method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:06:15.256491Z"
+    },
+    {
+      "id": "f4eaff0f-fe63-4ff7-a13d-d312bd1d89d8",
+      "content_id": "14e82fe1-ac46-40ae-af03-c5f18175a376",
+      "claim_id": "C107",
+      "claim": "Growth kinetics of Mtb under fluoroquinolone antibiotic pressure have not been previously reported with the level of detail presented here.",
+      "claim_type": "EXPLICIT",
+      "source": "Growth kinetics of Mtb under fluoroquinolone antibiotic pressure have not been previously reported with the level of detail presented here.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a claim about the novelty of the work.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:06:15.256491Z"
+    },
+    {
+      "id": "96db7f7c-2599-42a2-9f04-d464989e2776",
+      "content_id": "14e82fe1-ac46-40ae-af03-c5f18175a376",
+      "claim_id": "C108",
+      "claim": "The time of exposure to OFX is directly linked to toxicity.",
+      "claim_type": "EXPLICIT",
+      "source": "The time of exposure to OFX is thus directly linked to toxicity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the mechanism of OFX action and experimental observations.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:06:15.256491Z"
+    },
+    {
+      "id": "c15a0d9b-28d6-486a-8c11-9493ba072235",
+      "content_id": "14e82fe1-ac46-40ae-af03-c5f18175a376",
+      "claim_id": "C109",
+      "claim": "ODELAM integrates with common automated microscope equipment and is amenable to a Biosafety Level 3 environment.",
+      "claim_type": "EXPLICIT",
+      "source": "The current methods integrate with common automated microscope equipment and are amenable to a Biosafety Level 3 environment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the practical implementation of ODELAM.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:06:15.256491Z"
+    },
+    {
+      "id": "03148fe6-ab65-4174-baf0-3dadc0a7cb90",
+      "content_id": "14e82fe1-ac46-40ae-af03-c5f18175a376",
+      "claim_id": "C110",
+      "claim": "ODELAM directly observed heteroresistance in an Mtb cultured clinical isolate.",
+      "claim_type": "EXPLICIT",
+      "source": "ODELAM directly observed heteroresistance in an Mtb cultured clinical isolate and rapidly detected drug sensitivity in as little as 30 hrs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the experimental findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:06:15.256491Z"
+    },
+    {
+      "id": "29213d23-8bb6-46af-afaa-0bfec5c8b447",
+      "content_id": "14e82fe1-ac46-40ae-af03-c5f18175a376",
+      "claim_id": "C111",
+      "claim": "ODELAM rapidly detected drug sensitivity in as little as 30 hrs.",
+      "claim_type": "EXPLICIT",
+      "source": "ODELAM directly observed heteroresistance in an Mtb cultured clinical isolate and rapidly detected drug sensitivity in as little as 30 hrs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the experimental findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:06:15.256491Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "783a7d6b-dc1b-4beb-8c88-b624360329d5",
+      "content_id": "14e82fe1-ac46-40ae-af03-c5f18175a376",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "ODELAM is a time-lapse microscopy method that can track 50-1500 CFUs per region of interest (with 80-96 regions per experiment) for 96 hours, enabling rapid quantitative measurement of growth kinetics in as little as 30 hours. Growth curves are fitted to the Gompertz function to extract kinetic parameters (doubling time, lag time, time in exponential phase, number of doublings), with reliable parameter determination requiring ~1.5 times the time for CFUs to exit exponential phase.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C13, C53, C54, C69-C74, C105-C106, C109, and C111 collectively describe ODELAM's technical specifications and capabilities. The 30-hour detection time for H37Rv is supported by experimental data (Figure 2) and computational convergence analysis (Figure 12). The technical specifications (50-1500 CFUs, 80-96 regions, 96-hour tracking) are consistently stated and demonstrated throughout the manuscript.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:06:15.256491Z"
+    },
+    {
+      "id": "08d2ec5e-0034-41b6-990f-5ea3db22095c",
+      "content_id": "14e82fe1-ac46-40ae-af03-c5f18175a376",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "H37Rv strain exhibits a median lag time of 0.5 hrs, doubling time of 22.9 hrs (IQR 7.8), exponential phase duration of 52.5 hrs (IQR 33.8), and 3.1 doublings (IQR 1.6). These measurements are consistent with bulk laboratory measurements and demonstrate innate heterogeneity in the genetically homogeneous clonal population.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C15-C19 and C75 present baseline growth characteristics of H37Rv supported by experimental data in Table 1 and Figure 1. The consistency with bulk measurements (C19, citing Pe\u00f1uelas-Urquides et al., 2013) validates the method. The observation of heterogeneity in a clonal population is a reasonable interpretation of the IQR values shown in the data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:06:15.256491Z"
+    },
+    {
+      "id": "11e9e716-9a58-41f7-8eb6-5d2c59b1d697",
+      "content_id": "14e82fe1-ac46-40ae-af03-c5f18175a376",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "H37Rv is sensitive to ofloxacin with MIC of 0.5 \u03bcg/ml. ODELAM reveals that H37Rv initially grows at all OFX concentrations for the first 24 hours, then arrests growth after 2-3 doublings at the MIC (and after the first doubling at high concentrations), without appreciable changes in doubling rate prior to arrest. The primary effect of OFX is to reduce time in exponential phase rather than alter doubling time.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C20-C21, C23, C29, C58, C65, C76, C78-C79 describe H37Rv's response to OFX, supported by experimental data in Figures 2 and 4A and Table 1. The MIC determination (Figure 2B), growth kinetics (Figure 2A), and effect size analysis (Figure 4A) consistently show that OFX primarily affects time in exponential phase rather than doubling rate. The 24-hour initial growth period is consistent with OFX's mechanism of action requiring DNA damage accumulation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:06:15.256491Z"
+    },
+    {
+      "id": "660b6698-0f3b-4213-b8df-61ea86eef382",
+      "content_id": "14e82fe1-ac46-40ae-af03-c5f18175a376",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "TRS10 contains a D94G gyrase-A mutation conferring OFX resistance with MIC of 16 \u03bcg/ml. Unlike H37Rv, TRS10 slows its doubling time as OFX concentration increases (dramatically from ~30 to ~50 hrs between 2-4 \u03bcg/ml), continues growing at its MIC, and exhibits a broad spread of doubling times. The effect size for doubling time tracks with number of doublings, suggesting different mechanisms of OFX toxicity between strains.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24-C28, C30-C31, C66, C80-C83 describe TRS10's distinct response to OFX, supported by experimental data in Figures 3 and 4B and Table 1. The D94G mutation is documented in cited literature (Eilertson et al., 2016; Hooper, 2001). The contrasting phenotypes between H37Rv and TRS10 are well-documented, with TRS10 showing dose-dependent slowing of doubling time rather than growth arrest. The mechanistic interpretation (C31, C83) is reasonable given the known reduced binding affinity of OFX to mutant gyrase.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:06:15.256491Z"
+    },
+    {
+      "id": "2aa32d56-3abe-4e17-8da4-8042add06d87",
+      "content_id": "14e82fe1-ac46-40ae-af03-c5f18175a376",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "ODELAM can detect heteroresistance with sensitivity of approximately 1 in 1000 CFUs in artificially mixed H37Rv/TRS10 populations. ODELAM detected resistant CFUs across dilution series from 50% to 0.04% TRS10, with linear detection from 50% to 0.2%. Standard MIC assays detected shifts in MIC but could not distinguish between monoculture resistance and heteroresistance, yielding inaccurate results for mixed populations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-C37, C62, C86-C94 describe heteroresistance detection in mixed populations, supported by experimental data in Figure 5. The detection of a single resistant CFU from 0.04% mixture (C33) and linear relationship from 50-0.2% (C37) demonstrate sensitivity. The limitation of standard MIC assays (C86-C87, C91-C92) is clearly shown in Figure 5A. The ~1 in 1000 sensitivity claim (C62) is supported by the experimental design observing ~1000 CFUs per region (C94).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:06:15.256491Z"
+    },
+    {
+      "id": "72a8351c-d5fe-45c0-89bc-76b20d1efc82",
+      "content_id": "14e82fe1-ac46-40ae-af03-c5f18175a376",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "ODELAM consistently observed fewer resistant TRS10 CFUs than expected from OD600 measurements used to generate mixtures, likely reflecting variability in using OD600 to predict CFUs between strains.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38 and C95 acknowledge a systematic discrepancy in the heteroresistance experiments, supported by data in Figure 5B and citation to Pe\u00f1uelas-Urquides et al., 2013 documenting strain-dependent OD600-CFU relationships. This is a reasonable interpretation of the observed bias and demonstrates appropriate acknowledgment of experimental limitations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:06:15.256491Z"
+    },
+    {
+      "id": "3230aae6-5853-4447-bd63-d4a2aaad1041",
+      "content_id": "14e82fe1-ac46-40ae-af03-c5f18175a376",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Clinical isolate ADB42 exhibits heteroresistance to OFX with MIC of 16 \u03bcg/ml. ODELAM detected two distinct populations based on growth kinetics (segregated by 2-doubling threshold), with ~24% resistant CFUs. RNA-seq revealed 15% D94G gyrase-A SNP frequency. Cloning experiments confirmed 33 of 96 clones were OFX-resistant, all containing the D94G mutation, while sensitive clones lacked this mutation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39-C47, C96-C102 describe heteroresistance detection in ADB42, supported by multiple converging lines of evidence: ODELAM growth kinetics (Figures 6-7), RNA-seq (Figure 8A), cloning/spot assays (Figure 8B-C), and Sanger sequencing (Table 3). The ~24% resistant CFUs by ODELAM (C43, Table 2) is within 95% confidence interval of 15% RNA-seq frequency (C42) when accounting for binomial sampling. The complete concordance between OFX resistance phenotype and D94G genotype in clones (C46-C47) strongly supports the conclusion of heteroresistance.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:06:15.256491Z"
+    },
+    {
+      "id": "b2c3222c-14f8-4e00-912a-fc875082c636",
+      "content_id": "14e82fe1-ac46-40ae-af03-c5f18175a376",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "ODELAM directly observes cell lysis after growth arrest on OFX, detected as reduction in colony area. Lysis frequency increases with OFX concentration (>0.5 \u03bcg/ml) and scales with strain sensitivity: H37Rv showed 95% lysis, ADB42 65%, and TRS10 30%, highlighting the transition from cytostatic to cytolytic drug effects.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48-C52, C103-C104 describe lysis observations supported by experimental data in Figure 10. The correlation between lysis frequency and strain sensitivity (C103) is clearly demonstrated, with the most sensitive strain (H37Rv) showing highest lysis and the most resistant (TRS10) showing lowest. This provides additional phenotypic information beyond growth kinetics and represents a unique capability of the microscopy-based approach.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:06:15.256491Z"
+    },
+    {
+      "id": "564fff30-e716-425d-a928-9d7de87504c1",
+      "content_id": "14e82fe1-ac46-40ae-af03-c5f18175a376",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "OFX binds DNA gyrase, trapping the enzyme-DNA complex and leading to accumulation of DNA damage through stalled transcription, blocked replication forks, and double-strand breaks. Time of exposure is directly linked to toxicity. The differential effects between H37Rv and TRS10 reflect differential accumulation of cytotoxic intermediates due to differences in drug binding to wild-type versus mutant gyrase.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22, C55-C57, C59, C67, C84-C85, C108 describe OFX mechanism of action, supported by multiple literature citations (Willmott et al., 1994; Gore et al., 2006; Manjunatha et al., 2002; Hiasa et al., 1996; Wang et al., 2009; Da Re et al., 2009; Maruri et al., 2012). The mechanistic interpretations (C67, C84-C85) linking observed phenotypes to known drug mechanisms are reasonable, though speculative elements (C84-C85) are appropriately qualified. The time-dependent toxicity (C108) is consistent with the accumulation model.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:06:15.256491Z"
+    },
+    {
+      "id": "eac552fb-89e9-4b8b-bd0e-f5c35cb3640c",
+      "content_id": "14e82fe1-ac46-40ae-af03-c5f18175a376",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Antimicrobial-resistant Mtb causes over 200,000 deaths annually, with existing diagnostic methods having significant limitations: culture-based methods require 1-4 weeks, PCR-based methods miss unknown resistance mechanisms, and bulk assays cannot detect heteroresistant subpopulations. Growth kinetics of Mtb under fluoroquinolone pressure have not been previously reported at this level of detail.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C4-C12, C32, C60-C61, C107 establish the clinical context and limitations of existing methods, supported by appropriate citations (WHO 2019; Dorman et al., 2018; Kim, 2005; Lawson et al., 2013; Kontos et al., 2004; Garrig\u00f3 et al., 2007; Shin et al., 2018; Aldridge et al., 2012; Golchin et al., 2012; Wakamoto et al., 2013; Choi et al., 2014; Barr et al., 2016; Sebastian et al., 2017). These claims provide appropriate background and motivation for the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:06:15.256491Z"
+    },
+    {
+      "id": "cca73f0a-1d86-4f02-a554-1588bdf99ab4",
+      "content_id": "14e82fe1-ac46-40ae-af03-c5f18175a376",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "ODELAM was originally designed for yeast and can be adapted to any colony-forming microorganism.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C14 and C68 describe ODELAM's origins and potential broader applicability. C14 is supported by citation to Herricks et al., 2017. C68 is speculative but reasonable given the general nature of the imaging approach. The successful adaptation from yeast to Mtb supports the claim of broader applicability.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:06:15.256491Z"
+    },
+    {
+      "id": "9753e65a-5504-4d16-9b5a-5018b271442b",
+      "content_id": "14e82fe1-ac46-40ae-af03-c5f18175a376",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "ODELAM's sensitivity is dependent on the number of CFUs observed, and improvements in optics, computation, and media preparation could increase sensitivity by orders of magnitude. The approach could potentially observe rare events leading to drug resistance development, including persistent cells acquiring resistance through mutation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C63-C64 are speculative about future capabilities. While C63 is a logical inference about the relationship between sample size and detection sensitivity, the claim of \"orders of magnitude\" improvement lacks supporting data. C64 is highly speculative about observing rare resistance development events, though it cites Cohen et al., 2013 for context. These represent potential future applications rather than demonstrated capabilities.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:06:15.256491Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "fc71554c-da7b-4969-8ed7-3502c8a34739",
+      "result_id": "783a7d6b-dc1b-4beb-8c88-b624360329d5"
+    },
+    {
+      "claim_id": "f10fbbfe-d4ab-4814-b7c4-291802bd8b92",
+      "result_id": "783a7d6b-dc1b-4beb-8c88-b624360329d5"
+    },
+    {
+      "claim_id": "f04e0064-5c75-4559-83b2-1f4105a084ae",
+      "result_id": "783a7d6b-dc1b-4beb-8c88-b624360329d5"
+    },
+    {
+      "claim_id": "4d0b83b0-cd1d-408a-b0bb-9e88c0fce115",
+      "result_id": "783a7d6b-dc1b-4beb-8c88-b624360329d5"
+    },
+    {
+      "claim_id": "1fe87228-25e3-4b04-b522-23c6347b7bd3",
+      "result_id": "783a7d6b-dc1b-4beb-8c88-b624360329d5"
+    },
+    {
+      "claim_id": "f63391d9-8712-46e5-b38c-ca536412bfc6",
+      "result_id": "783a7d6b-dc1b-4beb-8c88-b624360329d5"
+    },
+    {
+      "claim_id": "3d88ee6a-7da8-47e6-86bd-ce6022bd35c9",
+      "result_id": "783a7d6b-dc1b-4beb-8c88-b624360329d5"
+    },
+    {
+      "claim_id": "48f9aec0-c5db-4299-8b0c-ca915fc243be",
+      "result_id": "783a7d6b-dc1b-4beb-8c88-b624360329d5"
+    },
+    {
+      "claim_id": "aa1b9bfd-3c67-405b-aca3-a925b20b09a1",
+      "result_id": "783a7d6b-dc1b-4beb-8c88-b624360329d5"
+    },
+    {
+      "claim_id": "386f88e5-607c-4b58-b78f-f79da0cba2be",
+      "result_id": "783a7d6b-dc1b-4beb-8c88-b624360329d5"
+    },
+    {
+      "claim_id": "bef44c25-cf14-4b90-9c83-b8758ba9ed47",
+      "result_id": "783a7d6b-dc1b-4beb-8c88-b624360329d5"
+    },
+    {
+      "claim_id": "c15a0d9b-28d6-486a-8c11-9493ba072235",
+      "result_id": "783a7d6b-dc1b-4beb-8c88-b624360329d5"
+    },
+    {
+      "claim_id": "29213d23-8bb6-46af-afaa-0bfec5c8b447",
+      "result_id": "783a7d6b-dc1b-4beb-8c88-b624360329d5"
+    },
+    {
+      "claim_id": "d6827888-f3dc-44b6-99de-11000f91a1d7",
+      "result_id": "08d2ec5e-0034-41b6-990f-5ea3db22095c"
+    },
+    {
+      "claim_id": "f30b98d1-0b29-45a5-9ff1-d7d797206ebc",
+      "result_id": "08d2ec5e-0034-41b6-990f-5ea3db22095c"
+    },
+    {
+      "claim_id": "bb50038b-e052-4037-bc65-0a4957f4fe3a",
+      "result_id": "08d2ec5e-0034-41b6-990f-5ea3db22095c"
+    },
+    {
+      "claim_id": "9609aa3a-e6dd-4fb8-a317-033a41c93430",
+      "result_id": "08d2ec5e-0034-41b6-990f-5ea3db22095c"
+    },
+    {
+      "claim_id": "8b5010ce-a139-4535-9a4d-6ba57ffeb996",
+      "result_id": "08d2ec5e-0034-41b6-990f-5ea3db22095c"
+    },
+    {
+      "claim_id": "f4aac4c3-b606-47e0-8121-bbe08b7fbe34",
+      "result_id": "08d2ec5e-0034-41b6-990f-5ea3db22095c"
+    },
+    {
+      "claim_id": "e8a1007b-c3bb-4774-aa9f-674d095108c7",
+      "result_id": "11e9e716-9a58-41f7-8eb6-5d2c59b1d697"
+    },
+    {
+      "claim_id": "954d4b26-99c0-4984-9985-3bdcdaee3090",
+      "result_id": "11e9e716-9a58-41f7-8eb6-5d2c59b1d697"
+    },
+    {
+      "claim_id": "02f9f51c-9fc3-4775-b460-755e4133c9c9",
+      "result_id": "11e9e716-9a58-41f7-8eb6-5d2c59b1d697"
+    },
+    {
+      "claim_id": "92eea984-5b88-45ac-a6a4-d9a48617d5c6",
+      "result_id": "11e9e716-9a58-41f7-8eb6-5d2c59b1d697"
+    },
+    {
+      "claim_id": "4d703ba2-f834-4362-9c3e-4fd39c716f89",
+      "result_id": "11e9e716-9a58-41f7-8eb6-5d2c59b1d697"
+    },
+    {
+      "claim_id": "0df47e02-a89c-4a62-b291-b9a4a7115507",
+      "result_id": "11e9e716-9a58-41f7-8eb6-5d2c59b1d697"
+    },
+    {
+      "claim_id": "a5451eb5-daa4-43e8-9cda-78e6d4d51db9",
+      "result_id": "11e9e716-9a58-41f7-8eb6-5d2c59b1d697"
+    },
+    {
+      "claim_id": "557efa45-5895-4351-9d42-6e4dc0d7fc68",
+      "result_id": "11e9e716-9a58-41f7-8eb6-5d2c59b1d697"
+    },
+    {
+      "claim_id": "f1237445-8f85-4532-b312-f77a39a7b0ac",
+      "result_id": "11e9e716-9a58-41f7-8eb6-5d2c59b1d697"
+    },
+    {
+      "claim_id": "ddb7bc1e-af23-4dc7-a28d-fc523f831f35",
+      "result_id": "660b6698-0f3b-4213-b8df-61ea86eef382"
+    },
+    {
+      "claim_id": "ae2f648a-1389-47e6-9600-616db8d83483",
+      "result_id": "660b6698-0f3b-4213-b8df-61ea86eef382"
+    },
+    {
+      "claim_id": "f5e3e231-3583-4698-9c34-b33299bc9fd4",
+      "result_id": "660b6698-0f3b-4213-b8df-61ea86eef382"
+    },
+    {
+      "claim_id": "ba9319cb-d1f5-42a8-9243-cc6d82ca9df8",
+      "result_id": "660b6698-0f3b-4213-b8df-61ea86eef382"
+    },
+    {
+      "claim_id": "6b8ba50f-cf33-4366-9a71-d812a7b6481a",
+      "result_id": "660b6698-0f3b-4213-b8df-61ea86eef382"
+    },
+    {
+      "claim_id": "35cbc13f-5b30-433b-9ea4-16fb16695200",
+      "result_id": "660b6698-0f3b-4213-b8df-61ea86eef382"
+    },
+    {
+      "claim_id": "3ed52824-4786-4b34-80a4-5bf0c45f809a",
+      "result_id": "660b6698-0f3b-4213-b8df-61ea86eef382"
+    },
+    {
+      "claim_id": "e443b10f-1de5-4fff-9019-7437e5eb69ec",
+      "result_id": "660b6698-0f3b-4213-b8df-61ea86eef382"
+    },
+    {
+      "claim_id": "0d6c9f7a-4779-4a16-bf91-c77a7836b91f",
+      "result_id": "660b6698-0f3b-4213-b8df-61ea86eef382"
+    },
+    {
+      "claim_id": "4a9f7f14-18f0-46c6-b7cd-661787b78479",
+      "result_id": "660b6698-0f3b-4213-b8df-61ea86eef382"
+    },
+    {
+      "claim_id": "8c493822-719e-4917-8fbf-d96b24e32b22",
+      "result_id": "660b6698-0f3b-4213-b8df-61ea86eef382"
+    },
+    {
+      "claim_id": "c3fca4f2-54fe-4c1c-8912-ada08530ceee",
+      "result_id": "660b6698-0f3b-4213-b8df-61ea86eef382"
+    },
+    {
+      "claim_id": "d552eb73-ed46-4b28-a188-9ef8b1e8ec76",
+      "result_id": "2aa32d56-3abe-4e17-8da4-8042add06d87"
+    },
+    {
+      "claim_id": "a89225f4-ed66-4968-bdb2-633ef6c27d50",
+      "result_id": "2aa32d56-3abe-4e17-8da4-8042add06d87"
+    },
+    {
+      "claim_id": "4e7fe0fa-5dc9-44bc-b249-0f8945e4f12c",
+      "result_id": "2aa32d56-3abe-4e17-8da4-8042add06d87"
+    },
+    {
+      "claim_id": "a8027860-2f15-4dda-bc1a-e898e5f9a4ba",
+      "result_id": "2aa32d56-3abe-4e17-8da4-8042add06d87"
+    },
+    {
+      "claim_id": "e3080e73-95a3-4738-8eed-67e287d37634",
+      "result_id": "2aa32d56-3abe-4e17-8da4-8042add06d87"
+    },
+    {
+      "claim_id": "9468216a-3a21-4f34-ac9f-74de07576101",
+      "result_id": "2aa32d56-3abe-4e17-8da4-8042add06d87"
+    },
+    {
+      "claim_id": "bc9db262-75d1-4242-8b0e-f189efa52d50",
+      "result_id": "2aa32d56-3abe-4e17-8da4-8042add06d87"
+    },
+    {
+      "claim_id": "a063cefc-bc14-4cf9-98dc-8fc661121ac3",
+      "result_id": "2aa32d56-3abe-4e17-8da4-8042add06d87"
+    },
+    {
+      "claim_id": "0f6c2ce7-3865-416e-a204-dd4fc7c8e528",
+      "result_id": "2aa32d56-3abe-4e17-8da4-8042add06d87"
+    },
+    {
+      "claim_id": "d43c9b0c-8876-4d32-b66d-f4aa2f9c5f7c",
+      "result_id": "2aa32d56-3abe-4e17-8da4-8042add06d87"
+    },
+    {
+      "claim_id": "b0fede92-f43d-420b-aee1-999c38d8c914",
+      "result_id": "2aa32d56-3abe-4e17-8da4-8042add06d87"
+    },
+    {
+      "claim_id": "54b8adf2-b9bf-48c3-9b96-e8ae8725dce2",
+      "result_id": "2aa32d56-3abe-4e17-8da4-8042add06d87"
+    },
+    {
+      "claim_id": "13b0c3b6-dd0a-4a34-bf38-e7fddfe6acb2",
+      "result_id": "2aa32d56-3abe-4e17-8da4-8042add06d87"
+    },
+    {
+      "claim_id": "88778765-dd40-408f-b6c1-b776f7c65c85",
+      "result_id": "2aa32d56-3abe-4e17-8da4-8042add06d87"
+    },
+    {
+      "claim_id": "96d60c37-48a6-4341-82bd-a9809574da0e",
+      "result_id": "2aa32d56-3abe-4e17-8da4-8042add06d87"
+    },
+    {
+      "claim_id": "f1f41435-c1b7-4e09-b988-74430e4e51f3",
+      "result_id": "72a8351c-d5fe-45c0-89bc-76b20d1efc82"
+    },
+    {
+      "claim_id": "c52bd69b-5462-43ea-963b-4883bacec589",
+      "result_id": "72a8351c-d5fe-45c0-89bc-76b20d1efc82"
+    },
+    {
+      "claim_id": "702e8ede-68cb-40f1-869c-b1e9c23f65f3",
+      "result_id": "3230aae6-5853-4447-bd63-d4a2aaad1041"
+    },
+    {
+      "claim_id": "f45d1b2c-170c-40c2-99a7-9a78fd73bd0d",
+      "result_id": "3230aae6-5853-4447-bd63-d4a2aaad1041"
+    },
+    {
+      "claim_id": "f7beb388-2cc2-4925-bd1b-0f3902f43f50",
+      "result_id": "3230aae6-5853-4447-bd63-d4a2aaad1041"
+    },
+    {
+      "claim_id": "b459e786-c956-4aa2-8372-a7a4ca6e1adb",
+      "result_id": "3230aae6-5853-4447-bd63-d4a2aaad1041"
+    },
+    {
+      "claim_id": "d33627a8-2b76-4796-ac4f-accbfa72b84e",
+      "result_id": "3230aae6-5853-4447-bd63-d4a2aaad1041"
+    },
+    {
+      "claim_id": "d9117e05-4eb7-44f3-9b07-a59416bd5d80",
+      "result_id": "3230aae6-5853-4447-bd63-d4a2aaad1041"
+    },
+    {
+      "claim_id": "bfede9e6-ebc9-4229-bbd1-c7719a5f201f",
+      "result_id": "3230aae6-5853-4447-bd63-d4a2aaad1041"
+    },
+    {
+      "claim_id": "a0317b13-3587-4bbb-a23f-30f18161c75e",
+      "result_id": "3230aae6-5853-4447-bd63-d4a2aaad1041"
+    },
+    {
+      "claim_id": "5012a16f-a2b9-408d-82d3-b2ddeeaab5ef",
+      "result_id": "3230aae6-5853-4447-bd63-d4a2aaad1041"
+    },
+    {
+      "claim_id": "84b2729f-fa34-43ff-a763-a1a83714858b",
+      "result_id": "3230aae6-5853-4447-bd63-d4a2aaad1041"
+    },
+    {
+      "claim_id": "12af4643-a6b6-4dac-a726-00bd10f9b3a0",
+      "result_id": "3230aae6-5853-4447-bd63-d4a2aaad1041"
+    },
+    {
+      "claim_id": "525dfb60-ca9f-4414-9815-6878e2d4ce96",
+      "result_id": "3230aae6-5853-4447-bd63-d4a2aaad1041"
+    },
+    {
+      "claim_id": "74a137c3-09db-4c91-93e2-8f842816a869",
+      "result_id": "3230aae6-5853-4447-bd63-d4a2aaad1041"
+    },
+    {
+      "claim_id": "fa490273-79d2-4ef7-93c7-0ad9e578e218",
+      "result_id": "3230aae6-5853-4447-bd63-d4a2aaad1041"
+    },
+    {
+      "claim_id": "6c152627-c833-419f-91d0-9a2bc0c0f157",
+      "result_id": "3230aae6-5853-4447-bd63-d4a2aaad1041"
+    },
+    {
+      "claim_id": "817fe99e-84a7-44bc-b26c-39b3e7c179de",
+      "result_id": "3230aae6-5853-4447-bd63-d4a2aaad1041"
+    },
+    {
+      "claim_id": "e2cdbdce-d818-48b2-b47a-b25602574ff0",
+      "result_id": "b2c3222c-14f8-4e00-912a-fc875082c636"
+    },
+    {
+      "claim_id": "839aae40-6d60-4e96-9874-f45348f75f2c",
+      "result_id": "b2c3222c-14f8-4e00-912a-fc875082c636"
+    },
+    {
+      "claim_id": "b5d7b8f5-8ea9-4e74-a39e-577f21210bb3",
+      "result_id": "b2c3222c-14f8-4e00-912a-fc875082c636"
+    },
+    {
+      "claim_id": "38a8743f-38b7-4cfd-9b46-6a7cc496e38f",
+      "result_id": "b2c3222c-14f8-4e00-912a-fc875082c636"
+    },
+    {
+      "claim_id": "fd89fec2-e3fc-4df2-9a00-c4b2567a2380",
+      "result_id": "b2c3222c-14f8-4e00-912a-fc875082c636"
+    },
+    {
+      "claim_id": "3cbfad96-0668-4e59-8bba-e0c53e1373b7",
+      "result_id": "b2c3222c-14f8-4e00-912a-fc875082c636"
+    },
+    {
+      "claim_id": "a588cb26-68d2-4b21-8674-e5f542800d43",
+      "result_id": "b2c3222c-14f8-4e00-912a-fc875082c636"
+    },
+    {
+      "claim_id": "3867026a-d37e-4842-87c7-1ad32c58f594",
+      "result_id": "564fff30-e716-425d-a928-9d7de87504c1"
+    },
+    {
+      "claim_id": "f995322c-a56a-4e42-a3b4-4a5f07657bc2",
+      "result_id": "564fff30-e716-425d-a928-9d7de87504c1"
+    },
+    {
+      "claim_id": "a69a31a4-9d68-404d-9083-84d070706e47",
+      "result_id": "564fff30-e716-425d-a928-9d7de87504c1"
+    },
+    {
+      "claim_id": "154e7f8f-0ac3-4640-9ae8-0d0ffc0de9bb",
+      "result_id": "564fff30-e716-425d-a928-9d7de87504c1"
+    },
+    {
+      "claim_id": "018444f5-1a33-4260-9ee4-889108eed950",
+      "result_id": "564fff30-e716-425d-a928-9d7de87504c1"
+    },
+    {
+      "claim_id": "2540ad76-b2b0-460e-9843-ca984b22d2f4",
+      "result_id": "564fff30-e716-425d-a928-9d7de87504c1"
+    },
+    {
+      "claim_id": "b4b8ab2d-08b0-4cb2-8781-34f95ae50249",
+      "result_id": "564fff30-e716-425d-a928-9d7de87504c1"
+    },
+    {
+      "claim_id": "1597111b-8c89-4f85-b3c9-47f53da48839",
+      "result_id": "564fff30-e716-425d-a928-9d7de87504c1"
+    },
+    {
+      "claim_id": "96db7f7c-2599-42a2-9f04-d464989e2776",
+      "result_id": "564fff30-e716-425d-a928-9d7de87504c1"
+    },
+    {
+      "claim_id": "12cb03ac-1b14-48d2-a7f4-36a8228e73a2",
+      "result_id": "eac552fb-89e9-4b8b-bd0e-f5c35cb3640c"
+    },
+    {
+      "claim_id": "aac0fe7c-76f6-48b0-9dcc-a70b48db7451",
+      "result_id": "eac552fb-89e9-4b8b-bd0e-f5c35cb3640c"
+    },
+    {
+      "claim_id": "473d5a92-9033-45af-8a57-ba984bb4638c",
+      "result_id": "eac552fb-89e9-4b8b-bd0e-f5c35cb3640c"
+    },
+    {
+      "claim_id": "5ebd730a-5fc2-4945-8955-1b17fb035cbc",
+      "result_id": "eac552fb-89e9-4b8b-bd0e-f5c35cb3640c"
+    },
+    {
+      "claim_id": "4a2bbbe0-d5b5-453b-8c4a-91182dc71ba0",
+      "result_id": "eac552fb-89e9-4b8b-bd0e-f5c35cb3640c"
+    },
+    {
+      "claim_id": "4a33d4ba-1e8e-4336-81a5-f269bb694c16",
+      "result_id": "eac552fb-89e9-4b8b-bd0e-f5c35cb3640c"
+    },
+    {
+      "claim_id": "0368059c-0651-490b-8a30-871ab4806279",
+      "result_id": "eac552fb-89e9-4b8b-bd0e-f5c35cb3640c"
+    },
+    {
+      "claim_id": "10bbfd5c-fd7c-427a-a216-262fe1ddb228",
+      "result_id": "eac552fb-89e9-4b8b-bd0e-f5c35cb3640c"
+    },
+    {
+      "claim_id": "aa1850aa-ae6f-41ef-84a5-a9db169f2c24",
+      "result_id": "eac552fb-89e9-4b8b-bd0e-f5c35cb3640c"
+    },
+    {
+      "claim_id": "e423e1cb-7e5f-4c7b-953c-2039a59aed3e",
+      "result_id": "eac552fb-89e9-4b8b-bd0e-f5c35cb3640c"
+    },
+    {
+      "claim_id": "4bb38085-e15e-4d6d-9722-27b957f9f8ea",
+      "result_id": "eac552fb-89e9-4b8b-bd0e-f5c35cb3640c"
+    },
+    {
+      "claim_id": "6e993f44-9302-470f-a320-2bdb22b5fd17",
+      "result_id": "eac552fb-89e9-4b8b-bd0e-f5c35cb3640c"
+    },
+    {
+      "claim_id": "91f52e1a-fcca-43a2-bc5d-0cc2fdf111ec",
+      "result_id": "eac552fb-89e9-4b8b-bd0e-f5c35cb3640c"
+    },
+    {
+      "claim_id": "f4eaff0f-fe63-4ff7-a13d-d312bd1d89d8",
+      "result_id": "eac552fb-89e9-4b8b-bd0e-f5c35cb3640c"
+    },
+    {
+      "claim_id": "a11ba68f-2f9d-459d-a798-a14fc62befe4",
+      "result_id": "cca73f0a-1d86-4f02-a554-1588bdf99ab4"
+    },
+    {
+      "claim_id": "cbeb4533-0eed-4154-b8fd-c27e87488fe6",
+      "result_id": "cca73f0a-1d86-4f02-a554-1588bdf99ab4"
+    },
+    {
+      "claim_id": "8a7b80f6-574c-48b5-9e88-9f269df44427",
+      "result_id": "9753e65a-5504-4d16-9b5a-5018b271442b"
+    },
+    {
+      "claim_id": "69a65a70-bec8-4a24-a395-4914e7a94e3e",
+      "result_id": "9753e65a-5504-4d16-9b5a-5018b271442b"
+    }
+  ],
+  "comparisons": []
+}

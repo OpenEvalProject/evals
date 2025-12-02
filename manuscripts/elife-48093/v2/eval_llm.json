@@ -1,0 +1,368 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "After initial cell spreading (5-20 min), F-actin in B cell synapses forms a highly dynamic pattern of actin foci interspersed with linear filaments. Foci numbers remain stable (~5 per 10 \u03bcm\u00b2) but individual foci are short-lived (<5 s). This pattern is observed in both primary mouse B cells and human Ramos cells, with Ramos cells being larger and having more filopodia.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C5, C27-C35 are well-supported by TIRF microscopy time-lapses (Figure 1A), 3D imaging (Figure 1B), high temporal resolution imaging (Video 1), automated segmentation analysis (Figure 1C-F), and super-resolution dSTORM imaging (Figure 1H-K). The quantitative data on foci density, lifetime, and dynamics are consistent across multiple imaging modalities and cell types.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Actin foci transiently associate with antigen clusters during internalization. 3D super-resolution imaging shows that lifted antigen clusters (>200 nm from substrate) are surrounded by F-actin foci from the sides, with >20% of foci extending >200 nm into the cell. This suggests foci are the actin structures mediating antigen movement into the cell.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C41 are supported by dual-color live-cell TIRF microscopy (Video 2), 3D super-resolution imaging (Figure 1L-N, Video 3), and quantitative height measurements (Figure 1O). The spatial relationship between foci and internalized antigen is clearly demonstrated, though the transient nature and low overall colocalization rate are appropriately noted.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Pharmacological inhibition studies demonstrate that actin foci are Arp2/3-generated branched actin structures, while interspersed fibers are formin-produced linear filaments. CK666 (Arp2/3 inhibitor) eliminates foci and increases fibers, while SMIFH2 (formin inhibitor) disperses fibers and increases foci numbers but arrests their dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C49 are well-supported by super-resolution imaging (Figure 2A), quantitative time-lapse analysis (Figure 2B), and dynamic imaging (Video 4). The differential effects of CK666 and SMIFH2 provide strong evidence for distinct mechanisms generating foci versus fibers. The inference about structural identity (C48, C49) is reasonable given the known activities of these inhibitors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "CRISPR-mediated genetic targeting confirms that ARPC2 is essential for actin foci formation, while DIAPH1 and FMNL1 formins are redundant for foci formation but produce interspersed filaments. Three independent gRNAs targeting ARPC2 all reduced protein levels and eliminated foci while promoting fiber formation. Targeting individual formins had minimal effects on foci numbers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C57 are supported by immunoblot validation of knockdown (Figure 2C), imaging of actin structures (Figure 2D, F), and quantitative analysis (Figure 2E, G). The use of multiple independent gRNAs for ARPC2 strengthens the conclusion. The formin redundancy conclusion is appropriate given the modest effects of single or double knockouts, though the authors acknowledge this limitation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Live-cell imaging of fluorescently tagged proteins shows ARPC2 localizes predominantly to actin foci and closely follows their dynamics, while DIAPH1 shows more diffuse localization with some enrichment at foci and produces fibers emanating from foci. Quantification confirms ARPC2 is significantly more enriched in foci than DIAPH1, and both show significant colocalization with foci above random.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C72 are well-supported by fixed cell imaging (Figure 3A, D), live-cell time-lapse imaging (Figure 3B, E, Videos 6-7), fiber dynamics (Figure 3C, F), and quantitative enrichment and colocalization analysis (Figure 3G-I). The differential localization patterns of ARPC2 versus DIAPH1 are clearly demonstrated and appropriately quantified with statistical controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Myosin IIa is not required for actin foci formation. Active myosin IIa (phosphorylated) localizes near but not overlapping with F-actin structures. Para-nitroblebbistatin inhibition of myosin IIa only modestly reduces foci numbers despite strongly impairing antigen extraction, indicating foci are not myosin IIa-dependent contractile structures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C76 are supported by phospho-myosin light chain imaging (Figure 3\u2014figure supplement 2A, B), quantification of foci numbers with inhibitor treatment (Figure 3\u2014figure supplement 2C, D, Video 8), and antigen extraction assays (Figure 3\u2014figure supplement 2E). The dissociation between foci formation and myosin IIa activity is clearly demonstrated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "Actin foci are the predominant actin structure associated with BCR signaling. Total phosphotyrosine and phospho-CD19 show significantly higher enrichment in actin foci than fibers, while phospho-BLNK is weakly enriched in foci but highly excluded from fibers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C79 are supported by imaging of phosphorylated proteins (Figure 4A) and quantitative enrichment analysis (Figure 4B) from n=3-4 experiments with appropriate statistical testing. The preferential association of BCR signaling markers with foci versus fibers is clearly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "Actin foci formation does not require antigen-induced BCR stimulation, as similar foci patterns occur with non-stimulatory antibodies. However, BCR signaling regulates foci dynamics: Src-family inhibitor PP2 and Syk inhibitor P505-15 increase foci numbers but increase their lifetimes and reduce their mobility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C85 are supported by imaging with non-stimulatory antibodies (Figure 4\u2014figure supplement 1A, B, Video 9) and kinase inhibitor treatments (Figure 4\u2014figure supplement 1C-F, Video 10). The dissociation between foci formation and BCR signaling, while signaling regulates dynamics, is clearly demonstrated with appropriate quantification.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "A small fraction of actin foci transiently colocalize with clathrin-coated pits (CCPs) during antigen uptake. ARPC2 colocalizes with antigen clusters during extraction while DIAPH1 does not. Clathrin is enriched in foci versus fibers, with ~3% of foci and ~7% of CCPs showing direct colocalization, significantly above random.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C90 are supported by time-lapse imaging of ARPC2 and DIAPH1 with antigen (Videos 11-12), clathrin imaging (Figure 4C), and quantitative colocalization analysis with randomization controls (Figure 4D, E). The low but significant colocalization rates are appropriately interpreted as consistent with transient actin polymerization during endocytosis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "Internalization of soluble antigen by B cells is relatively independent of actin polymerization. Soluble anti-Ig\u03ba F(ab')2 and transferrin uptake by primary B cells, and soluble anti-IgM uptake by Ramos cells, show only modest sensitivity to Arp2/3 or formin inhibition, though some inhibition occurs with complete actin polymerization block (cytochalasin D).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C95 are supported by flow cytometry-based internalization assays (Figure 5A, B, Figure 5\u2014figure supplement 1) from n=3-4 experiments. The minimal effects of specific inhibitors versus broader actin polymerization block are clearly demonstrated, supporting the conclusion about relative independence from these specific pathways.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "Arp2/3 activity is critical for force-mediated antigen extraction from plasma membrane sheets (PMSs). Latrunculin A completely abolishes extraction, and CK666 markedly reduces it. CRISPR targeting of ARPC2 significantly decreases extraction for 2 of 3 gRNAs, confirming the importance of Arp2/3 for membrane-bound antigen uptake.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C100 are supported by quantitative antigen extraction assays from PMSs (Figure 5C, D, E) from n=2-4 experiments with appropriate normalization and statistical testing. The convergent evidence from pharmacological inhibition and genetic targeting strongly supports the critical role of Arp2/3 in force-mediated antigen extraction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C101",
+      "C102"
+    ],
+    "result": "Both Arp2/3 and formins are important for antigen uptake from synapses. SMIFH2 (formin inhibitor) strongly reduces synaptic antigen internalization in both primary B cells and Ramos cells, indicating coordinated function of both actin polymerization mechanisms is required for efficient extraction of membrane-presented antigens.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C102 are supported by antigen extraction assays (Figure 5C, D) showing significant inhibition with SMIFH2. While genetic targeting of individual formins showed variable results (acknowledged by authors as likely due to redundancy), the pharmacological data clearly demonstrate formin importance. The conclusion about coordinated function is reasonable given the combined inhibitor data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "Both actin foci and fibers apply mechanical forces on antigen-presenting membranes with different geometry and efficiency. ~40% of PMS deformation events can be assigned to foci or fibers, with ~30% associated with fibers and <10% with foci. However, when normalized for area occupied, foci are 3\u00d7 more efficient at applying forces than fibers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C106 are supported by DiI-labeled PMS deformation tracking and quantitative analysis (Figure 6A-E) from n=3 experiments. The differential efficiency calculation appropriately accounts for the different areas occupied by foci versus fibers, providing meaningful comparison of force generation mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "Inhibition of Arp2/3 or formins alters the geometry but not total number of membrane pulling events. CK666-treated cells generate elongated membrane tubules and ridges rather than spots, resulting in fewer synapses with only spots and more dominated by tubules. This suggests formin-generated fibers contribute to long-range antigen movement, while coordinated function of both mechanisms is required for efficient endocytosis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C111 are supported by quantification of total pulling events (Figure 6F), imaging of membrane deformation patterns (Figure 6G, Figure 6\u2014videos 2-4), and classification of synapse types (Figure 6H) from n=3 experiments. The altered geometry with preserved total events provides insight into the distinct mechanical contributions of foci versus fibers.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "The B cell synapse contains a stochastic pattern of Arp2/3-generated foci and formin-generated fibers that are important for antigen extraction. These structures are closely related, often generated from each other during turnover, with both Arp2/3 and formins colocalizing at foci to produce branched and linear actin from the same sites. This creates network-like connectivity distinct from T cell synapses and B cell synapses on stiff substrates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C118 represent well-supported summary statements integrating the experimental findings. The characterization of the actin architecture, its generation mechanisms, and comparison to other systems (with appropriate citations) are all supported by the data presented throughout the manuscript.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "The authors propose a model where actin foci and fibers form a loosely connected network required for antigen extraction. Stochastic Arp2/3 activation produces foci by branching preexisting filaments, which may push on membranes or synergize with BCR signaling for invagination. Formin-generated filaments may stabilize foci and direct forces perpendicularly, or extend the range of inward movement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C119-C123 are explicitly speculative models (\"we speculate,\" \"may\") proposed to explain the experimental observations. While the model is consistent with the data, the specific mechanisms (pushing vs. pulling, stabilization, force direction) are not directly tested. These represent reasonable hypotheses for future investigation rather than demonstrated results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C124",
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "The findings are consistent with previous work linking Arp2/3 activators (WAS, WIPF1, ITSN2) to foci formation in T and B cells, and extend knowledge of Arp2/3 importance in lamellipodial actin and membrane flow. Both Arp2/3 and formins are active throughout the synapse without large-scale segregation, and Arp2/3-generated foci are intimately associated with antigen extraction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C124-C127 appropriately contextualize the current findings with prior literature through citations. The statements about consistency with previous work and extension of knowledge are supported by the data presented. The characterization of Arp2/3 and formin distribution and foci association with extraction are demonstrated experimentally.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132"
+    ],
+    "result": "The authors propose that forces for antigen extraction depend on new actin polymerization in foci, supported by previous observations of continuous F-actin accumulation during uptake and current 3D imaging showing actin at the sides of internalizing clusters. Foci-like structures in other studies protruded into substrates, suggesting Arp2/3 structures can both push and pull for extraction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C128-C132 mix supported observations (C129, C130 with citation and data) with speculative interpretations (C128, C132). While the 3D imaging data (C130) clearly shows actin at cluster sides, the inference that this represents force generation by polymerization (C128) versus other mechanisms is not directly tested. The push/pull model (C132) is speculative though consistent with cited work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138"
+    ],
+    "result": "Branched actin polymerization in foci is insufficient for antigen extraction alone, as formin and myosin IIa inhibition also impair uptake. The authors hypothesize formins and myosin IIa provide stability to help branched actin generate inward rather than lateral forces, or help dislodge antigen, or extend the range of movement. CK666-treated cells show residual fibers can transport antigen and pull membrane structures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C133 is well-supported by the inhibitor data showing both Arp2/3 and formin/myosin IIa are required. However, C134-C137 are explicitly hypothetical (\"we hypothesize,\" \"may help,\" \"it is possible\") mechanisms to explain this requirement. C138 is supported by observations but the mechanistic interpretation remains uncertain. These represent plausible models requiring further testing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C139",
+      "C140",
+      "C141"
+    ],
+    "result": "The actin organization studied pertains primarily to naive and memory B cells where extraction is followed by endocytosis. Germinal center B cells use different mechanisms with peripheral actomyosin-rich protrusions and outward actin flow. Nevertheless, Arp2/3-dependent actin polymerization is likely a general requirement for antigen extraction from presenting cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C139-C140 appropriately define the scope of the study and cite previous work on germinal center B cells. Claim C141 is a reasonable inference based on the current data and comparison to germinal center mechanisms, though explicitly stated as \"likely\" rather than definitively proven. The contextualization is appropriate and well-supported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146"
+    ],
+    "result": "Actin foci formation in naive B cells does not require antigen stimulation, as foci form with non-stimulatory antibodies. The majority of foci do not associate with antigen clusters or CCPs, though a small fraction do. The authors speculate that local synergy between BCR signaling, actin dynamics, and CCP formation at BCR clusters enhances or stabilizes endocytic events for efficient uptake.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C142, C144, C145 are well-supported by experimental data with non-stimulatory antibodies and colocalization analysis. C143 is a reasonable inference from C142. C146 is explicitly speculative (\"we speculate\") but represents a plausible model consistent with the data and cited literature on BCR signaling regulation of actin and CCP dynamics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C147",
+      "C148"
+    ],
+    "result": "BCR and other signaling receptors on B cell surfaces critically depend on actin structure, and defects in actin polymerization contribute to dysregulation of signaling in primary immunodeficiencies and autoimmunity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C147-C148 are appropriately supported by citations to previous work (Mattila et al., 2016; Tolar, 2017). These represent established knowledge in the field used to contextualize the importance of understanding actin organization in B cells, rather than novel findings of the current study.",
+    "result_type": "MINOR"
+  }
+]

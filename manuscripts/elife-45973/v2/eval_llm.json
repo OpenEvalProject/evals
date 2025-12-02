@@ -1,0 +1,300 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "The authors designed a capture sgRNA (csgRNA) system where a capture sequence is added to the 3' end of sgRNA to anneal with a stick-end CMV (sCMV) enhancer. The capture sequence does not affect sgRNA function, as demonstrated by successful DNA cutting with Cas9-csgRNA complexes targeting the HNF4\u03b1 promoter.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C44 describe the design and validation of the csgRNA system. The experimental data in Figure 1b demonstrates that all three csgRNAs with different capture sequences successfully guide Cas9 to cut target DNA, confirming that the capture sequence does not interfere with sgRNA function. This provides solid evidence for the basic functionality of the system.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "The trans CMV enhancer (sCMV) recruited by dCas9/csgRNA activates the exogenous reporter gene ZsGreen. The activation is enhanced when combined with dCas9-VP64, showing synergistic interaction between trans CMV and VP64. The stick-end CMV (sCMV) is required for activation, as blunt-end CMV (bCMV) does not activate the reporter.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C54 are supported by transfection experiments in 293T cells showing that dCas9-VP64/csgRNA-sCMV produces the highest activation, while bCMV controls show no activation. The data demonstrate both the trans function of sCMV and its synergistic interaction with VP64. Multiple csgRNAs (csgRNA1, 2, and 3) all function successfully.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "The CRISPR-assisted trans enhancer system (dCas9-VP64/csgRNA-sCMV) consistently shows the highest gene activation efficiency across seven different cell lines (293T, HepG2, A549, HeLa, SKOV3, PANC-1, HT29), outperforming dCas9-VP64/sgRNA and dCas9/csgRNA-sCMV.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C58 are supported by extensive experimental data across multiple cell lines shown in Figure 2b and supplementary figures. The consistent superior performance of dCas9-VP64/csgRNA-sCMV across diverse cell types provides strong evidence for the broad applicability and effectiveness of the trans enhancer system.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Despite VPR being a more potent transcriptional activation domain than VP64, the trans enhancer system with VP64 (dCas9-VP64/csgRNA-sCMV) shows significantly higher activity than dCas9-VPR/csgRNA in both 293T and HepG2 cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C61 are supported by experimental data in Figure 2c comparing the systems. While C60 confirms the expected superiority of VPR over VP64 alone, C61 demonstrates that the trans enhancer system with VP64 outperforms VPR without the trans enhancer, highlighting the power of the trans enhancer approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "The CRISPR-assisted trans enhancer can activate diverse endogenous genes (10 different genes) across various cell lines (7 cell types). The dCas9-VP64/csgRNA-sCMV system shows the highest activation for almost all tested genes, outperforming both dCas9-VP64/sgRNA and dCas9-VPR systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C65 are supported by comprehensive qPCR data from transfection experiments across seven cell lines testing ten different endogenous genes (Figure 3 and supplements). The breadth of genes and cell types tested provides strong evidence for the general applicability of the trans enhancer system. The comparison with dCas9-VPR in Figure 3\u2014figure supplement 2 further validates the superior performance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Activation of HNF4\u03b1 in HepG2 cells and E47 in PANC1 cells by the CRISPR-assisted trans enhancer leads to cancer cell differentiation, as evidenced by downregulation of stemness and pluripotency genes and upregulation of normal tissue-specific function genes and cell cycle arrest genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C76 are supported by qPCR data in Figures 3 and 4 showing coordinated changes in gene expression patterns consistent with differentiation. The downregulation of stemness/pluripotency markers (CD133, CD90, Oct3/4, Sox2, Nanog, c-Myc, LIN28, Klf4) and upregulation of tissue-specific genes (liver and pancreas function genes) and cell cycle arrest genes (p21, TP53INP1) provide strong evidence for functional differentiation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Alternative enhancers (EF1\u03b1 and PGK) can function as trans enhancers when prepared with stick-ends (sEF1a, sPGK), activating both exogenous reporter genes and endogenous genes in 293T and HepG2 cells. However, their activation levels are lower than sCMV, and blunt-ended versions show no activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C84 are supported by experimental data in Figure 5 showing that sEF1a and sPGK activate ZsGreen reporter and endogenous HNF4\u03b1 gene, while blunt-ended versions do not. The requirement for stick-ends confirms the mechanism of trans enhancer recruitment via annealing. The lower activity compared to sCMV is clearly demonstrated, supporting the conclusion that various enhancers can be used but with different efficiencies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "The GAL4-UAS system provides an alternative mechanism for trans enhancer recruitment. Both linear (LUAS-CMV) and circular (CUAS-CMV) UAS-CMV constructs activate exogenous reporter genes and endogenous HNF4\u03b1 gene in 293T and HepG2 cells, with significantly higher activity than the csgRNA-sCMV system.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C94 are supported by experimental data in Figure 6 showing successful gene activation by the GAL4-UAS system. The data demonstrate that both LUAS-CMV and CUAS-CMV function effectively, with appropriate negative controls showing no activation. The superior performance compared to csgRNA-sCMV (Figure 6c) is clearly demonstrated, supporting the conclusion that the GAL4-UAS system offers an improved trans enhancer approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "The CRISPR-assisted trans enhancer strategy has advantages over current dCas9-based systems: it requires only one csgRNA per target gene (versus typically three or more sgRNAs in current systems), and each sgRNA in current systems must be independently transcribed by a long U6 promoter.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C100 are supported by the experimental design showing single csgRNA usage throughout the study (C96) and established knowledge about current systems requiring multiple sgRNAs (C97-C100, supported by citations). The advantage is demonstrated practically by the successful activation of multiple genes using single csgRNAs, though the comparison would be strengthened by direct side-by-side experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "The csgRNA design is simpler than current chimeric sgRNAs, requiring only a 24 bp extension at the 3' end. Three different capture sequences were successfully designed and all functioned, with csgRNA2 showing the best performance. The capture sequences were designed to have no complementary sequences in human cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C106 are supported by the experimental data showing all three csgRNAs function successfully (C104) and the design specifications (C101, C106). The comparison with complex chimeric sgRNAs in current systems (C102, supported by citations) highlights the simplicity advantage. The successful design of three different capture sequences demonstrates feasibility, though more extensive testing would strengthen claims about ease of design.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C107",
+      "C108"
+    ],
+    "result": "The study demonstrates that sCMV can be efficiently captured by csgRNA in the nucleus of human cells, representing the first report of a gene being activated by an artificial DNA in trans.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C107 is an inference from the gene activation data, but direct evidence of sCMV capture in the nucleus (e.g., imaging, ChIP) is not provided. Claim C108 about novelty is speculative and would require comprehensive literature review to verify. While the functional data support that the system works, the mechanistic claim about nuclear capture and the novelty claim lack direct supporting evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "The trans enhancer systems have potential for in vivo applications: the csgRNA-sCMV system via nanoparticle carriers, and the GAL4-UAS system via AAV vectors (which are already clinically approved). The GAL4-UAS system shows better performance, and linear UAS-CMV is suitable for AAV packaging.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C109-C113 are largely speculative about future applications. While C111 (AAV clinical approval) is established knowledge and C112 (GAL4-UAS better performance) is supported by data, the claims about ease of AAV transfer (C110, C113) and nanoparticle delivery (C109) are inferences without experimental validation. No in vivo data or packaging experiments are presented to support these translational claims.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133"
+    ],
+    "result": "The CRISPR-assisted trans enhancer system can activate both exogenous and endogenous genes in various mammalian cells more efficiently than current dCas9-VP64 and dCas9-VPR systems. The system mimics natural enhancer function by creating a loop structure, with the CMV enhancer functioning like a natural cis enhancer in trans form.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C127-C133 represent the main conclusions of the study, supported by comprehensive experimental data across multiple genes, cell lines, and system variations. The superior performance compared to dCas9-VP64 and dCas9-VPR is consistently demonstrated. However, the mechanistic claim about loop structure (C129-C130) is based on analogy to natural enhancers (supported by citations) rather than direct structural evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "The introduction provides background on CRISPR systems, dCas9-based gene activators, their engineering approaches (protein fusions and sgRNA modifications), current limitations (inefficiency, packaging constraints), and the CMV enhancer as a strong mammalian promoter/enhancer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C37 constitute the background/introduction section, primarily consisting of established knowledge supported by appropriate citations. These claims accurately represent prior work and provide context for the current study. The claims about limitations (C18, C23, C24) are supported by citations and provide motivation for the new approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126"
+    ],
+    "result": "The discussion contextualizes the work within established applications of dCas9-based activators for cell reprogramming and differentiation, and describes the biological functions of the target genes selected for testing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C67 and C114-C126 provide context from prior work (supported by citations) and describe the rationale for gene selection. These claims accurately represent established knowledge and explain why specific genes were chosen for testing the trans enhancer system. The claims are appropriately supported by citations to relevant literature.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,228 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "The E. coli ribosome exit tunnel is approximately 100 \u00c5 long and is lined by portions of 23S rRNA and conserved proteins including uL4, uL22, uL23, uL24, and uL29. These proteins contain \u03b2-hairpin loops that protrude into the tunnel, stabilize rRNA tertiary structure, and contribute to the tunnel's unique geometry.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C7 describe well-established structural features of the E. coli ribosome exit tunnel, supported by multiple citations to prior structural studies (Milligan and Unwin 1986; Ban et al. 2000; Nissen et al. 2000; Klein et al. 2004; Lawrence et al. 2016) and Figure 1A. These are background claims establishing the context for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "E. coli strains HDB143 (uL23 \u0394loop with residues 65-74 deleted) and HDB144 (uL24 \u0394loop with residues 43-57 deleted) are viable, as previously demonstrated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C10 are supported by citation to Peterson et al. 2010, which previously demonstrated viability of these deletion strains. The specific residues deleted are clearly stated and the viability is established prior work, not a new finding of this manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "A cryoEM structure of uL23 \u0394loop 70S ribosome at 3.3 \u00c5 resolution shows that the tunnel shape remains unchanged except for a volume increase of 2,064 \u00c5\u00b3 (about 1/3 the size of ADR1a) due to the absence of the uL23 loop. The uL24 loop deletion does not interact with neighboring ribosome components and is not expected to alter other tunnel structures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C17 present new structural data with appropriate resolution (3.3 \u00c5) and quantitative volume measurements using the POVME algorithm. Figure 2C-D and supplementary figures support the structural findings. Claims C11-C12 about uL24 \u0394loop are reasonable inferences from structural analysis shown in Figure 2A. The cryoEM structure provides critical validation that the deletion does not cause unexpected structural rearrangements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "Translation rates in the PURE system are approximately 10-fold slower than in vivo, but since the proteins studied fold on micro-to-millisecond timescales (much faster than translation), the folding reaction has time to equilibrate between translation steps in both systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C18 is supported by citation to Capece et al. 2015. Claims C19-C20 provide reasonable justification for why the PURE system is appropriate for studying cotranslational folding, based on the relative timescales of folding versus translation. This is important methodological validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "ADR1a folding in uL23 \u0394loop ribosomes begins at shorter linker lengths (L=17 residues, Lonset) compared to WT and uL24 \u0394loop ribosomes (L=20-21 residues), indicating that ADR1a folds approximately 9-12 \u00c5 deeper in the exit tunnel when the uL23 loop is absent.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C22 present experimental fFL profile data shown in Figure 3A and Table 1, with error bars from multiple replicates. Claim C23 cites prior cryoEM evidence (Nilsson et al. 2015) establishing ADR1a's folding location near uL23. Claims C24-C25 provide reasonable calculations based on the 3-4 residue difference in Lonset and assuming ~3 \u00c5 per residue in extended conformation. The logic connecting increased tunnel volume to earlier folding onset is sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "Spectrin R16 folding in uL24 \u0394loop ribosomes begins at shorter linker lengths (Lonset=29 residues, Lmax=33 residues) compared to WT and uL23 \u0394loop ribosomes (Lonset=31 residues, Lmax=35 residues), indicating R16 folds approximately 6-7 \u00c5 deeper when the uL24 loop does not obstruct the exit port.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C26 cites prior work (Nilsson et al. 2017) establishing R16's folding location near uL24. Claims C27-C28 present experimental data from Figure 3B and Table 1 showing clear differences in folding parameters between ribosome types. Claim C29 provides a reasonable calculation based on the 2-residue difference in Lonset. The selective effect on uL24 \u0394loop but not uL23 \u0394loop ribosomes supports the spatial interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Titin I27 folding is unaffected by uL23 loop deletion but begins at approximately 4 residues shorter linker lengths in uL24 \u0394loop ribosomes, similar to the effect observed for R16.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C30 cites prior work (Tian et al. 2018) establishing I27's folding location near uL24. Claims C31-C32 present experimental data from Figure 3C and Table 1 showing the selective effect of uL24 but not uL23 deletion. The consistency with R16 results strengthens the conclusion that proteins folding near the exit port are affected by uL24 loop deletion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "Coarse-grained molecular dynamics simulations reproduce the experimental Lonset values for all three proteins in both WT and \u0394loop ribosomes, and capture Lmax values for ADR1a (WT) and I27 (WT and uL24 \u0394loop), though R16 Lmax values are shifted lower. Both experimental and simulation results support the idea that proteins fold as soon as they reach a tunnel region large enough to accommodate the folded structure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C35 compare simulation results (Figure 3D-F and supplement 10) with experimental data, showing good agreement for Lonset across all conditions and reasonable agreement for Lmax in most cases. The acknowledged discrepancy for R16 Lmax is appropriately noted. Claim C36 provides a unifying interpretation supported by the convergence of experimental and computational evidence. The simulations provide mechanistic support for the experimental observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "Based on fFL profiles, ADR1a folds approximately 9-12 \u00c5 deeper in uL23 \u0394loop ribosomes, while titin and spectrin domains fold approximately 6-10 \u00c5 deeper in uL24 \u0394loop ribosomes. Simulations estimate approximately 6 \u00c5 for ADR1a and approximately 13-15 \u00c5 for I27 and R16.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C38 summarize the experimental findings from the fFL profiles with quantitative depth estimates. Claim C39 provides corresponding simulation-based estimates from Figure 3 supplement 10. While there are some quantitative differences between experimental and simulation estimates (particularly for ADR1a), both approaches agree on the qualitative conclusion that loop deletions allow deeper folding in the affected tunnel regions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Both uL23 and uL24 loops reduce the space available for folding in different parts of the exit tunnel. The uL24 loop partially blocks the tunnel exit port in bacterial ribosomes, preventing domains \u226510 kDa from folding inside the tunnel, and is conserved in length across bacterial ribosomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C40 is a well-supported conclusion from the experimental results showing spatially distinct effects of the two loop deletions. Claims C41-C42 provide mechanistic interpretation supported by structural data (Figure 2A) and the experimental folding results. Claim C43 is supported by sequence alignment data in Figure 1 supplement 2. The 10 kDa threshold claim (C42) is a reasonable inference from the data showing that larger proteins (R16, I27) fold near the exit port.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Eukaryotic ribosome tunnels have different geometries due to rRNA expansion segments, increased protein numbers, and wider exit ports. uL24 is among the most divergent proteins in eukaryotes compared to bacteria, suggesting the relationship between folding onset and protein molecular weight may differ in eukaryotic ribosomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C45 are supported by citations to prior structural studies (Wilson and Doudna Cate 2012; Filipovska and Rackham 2013; Melnikov et al. 2015). Claim C46 is a reasonable inference/expectation based on the structural differences and is supported by citation to Schiller et al. 2017. This provides appropriate context for the generalizability of the findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "The SecM arrest peptide acts as a force sensor, enabling detection of protein domain folding in the exit tunnel. When proteins fold, they exert force on the arrest peptide, reducing stalling and increasing fFL. The dominant fFL peak corresponds to native state folding, as validated by multiple prior studies including cryo-EM visualization, ligand-dependence, proteolysis resistance, and correlation with folding free energy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C50 describe the arrest peptide methodology with appropriate citations to prior work (Nakatogawa and Ito 2001; Ismail et al. 2012, 2015; Goldman et al. 2015; Nilsson et al. 2015; Tian et al. 2018). Claims C51-C55 provide extensive validation of the method through multiple independent lines of evidence from prior studies. This establishes the reliability of the fFL assay as a readout for cotranslational folding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Based on simulation snapshots, the C-terminus of folded ADR1a is located approximately 6 \u00c5 deeper in uL23 \u0394loop ribosomes compared to WT, while folded I27 and R16 are located approximately 15 \u00c5 and 13 \u00c5 deeper, respectively, in uL24 \u0394loop ribosomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C58 present quantitative measurements from simulation snapshots shown in Figure 3 supplement 10 panel B. These simulation-based depth estimates provide structural context for the experimental fFL results, though they differ somewhat from the experimental estimates (C37-C39). The simulations provide valuable mechanistic insight despite some quantitative discrepancies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C59",
+      "C60"
+    ],
+    "result": "The uL23 and uL24 \u03b2-hairpin loops are conserved among Gram-negative bacteria but are short or absent in archaea and eukaryotes. In eukaryotes and archaea, part of uL23's function is proposed to be fulfilled by ribosomal protein eL39.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C59 is supported by sequence alignment data shown in Figure 1 supplement 2. Claim C60 is stated as a proposal/inference about functional replacement in eukaryotes and archaea, which is appropriately tentative. These claims provide evolutionary context for the structural features studied.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C61"
+    ],
+    "result": "The shape of the fFL profile for ADR1a is highly sensitive to fine structural details of the exit tunnel and is difficult to reproduce precisely by coarse-grained simulations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C61 acknowledges limitations in the simulation approach, as evidenced by the need to test different loop deletion models (residues 65-74 vs 70-72) to better match experimental profiles. This is an honest assessment of the challenges in computationally modeling the ADR1a system and appropriately notes the sensitivity to structural details.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,425 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "ParD2-ParE2 and ParD3-ParE3 are recently duplicated paralogous systems that share 41-42% identity, are monophyletic sister taxa, do not cross-talk, and differ by only three non-conservative substitutions at specificity-determining positions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C23 provide converging phylogenetic, sequence, and functional evidence. The GREMLIN coevolution analysis (C17), phylogenetic trees (C19-C21), sequence comparison (C18, C23), and experimental cross-talk data (C22) collectively support this evolutionary relationship. The methods describe appropriate phylogenetic approaches and the data are internally consistent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Three positions (D61I/K64L/E80K) are sufficient to rewire ParD3 specificity from ParE3 to ParE2, with K64L and E80K individually enabling promiscuous binding while D61I has no detectable effect on specificity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C28 are supported by experimental data in Figure 1E showing growth phenotypes. The triple mutant switches specificity completely, two single mutants create promiscuity, and one has no effect. This provides clear functional evidence that these positions have different roles in specificity determination.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C112",
+      "C113"
+    ],
+    "result": "A combinatorially complete saturation mutagenesis library of 8000 ParD3 variants at three positions was constructed and screened, with each substitution occurring in ~361 genetic backgrounds, yielding reliable measurements for 7882 variants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C4, C29-C33, C112-C113 describe the library construction and quality. The theoretical diversity calculation (20^3=8000) is correct, the experimental validation shows appropriate controls (C31-C32), and the coverage (7882/8000 = 98.5%) is excellent. The methodological advance over prior work (C30, C112) is clearly documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "The fitness scoring system is reproducible (R\u00b2=0.96 between replicates) and validated, with wild-type ParD3 enriched 20-fold, the ParD2-like variant depleted 17-fold, and stop codons depleted 42-fold against ParE3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C39 demonstrate robust experimental validation. High reproducibility between biological replicates (C37, C39), qualitative agreement with independent assays (C38), and expected behavior of controls (C34-C36) all support the reliability of the fitness measurements. The R\u00b2 values are excellent for biological data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Against cognate toxin ParE3, 23.4% of library variants (1847/7882) retain function (W>0.5), including 96% of single mutants, 78% of double mutants, and 14% of triple mutants, revealing extensive degeneracy at the interface.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C46 provide comprehensive quantitative analysis of ParE3-binding variants. The percentages are clearly stated and internally consistent. The observation that position 3 (E80) contributes least to binding energy (C43-C44) is supported by the fitness patterns of double mutants. The conclusion of extensive degeneracy (C46) is well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Against non-cognate toxin ParE2, 19.2% of variants (1510/7882) show binding, with position 1 never sufficient alone for interaction, while positions 2 and 3 are critical for preventing non-cognate binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C56 systematically characterize ParE2 interactions. The enrichment of ParD2-like residues at positions 2 and 3 (C48-C49) but not position 1 (C50), combined with the observation that single mutations at position 1 never enable ParE2 binding (C52), strongly support the conclusion that positions 2 and 3 are negative specificity elements (C55).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "666 variants (36% of ParE3-binding and 44% of ParE2-binding variants) are promiscuous, binding both toxins, while only 2.6% of the library shows a wider specificity gap than wild-type ParD3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C59 quantify promiscuity and specificity in the library. The numbers are internally consistent (666 represents the stated percentages of each binding class). However, C59's interpretation is complicated by potential assay saturation effects for high-fitness variants, which the authors acknowledge but don't fully resolve.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "A linear additive model predicts variant fitness with high accuracy (R\u00b2=0.89), indicating minimal epistasis between positions, contrasting with other protein systems and potentially reflecting non-overlapping interaction surfaces.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C65 demonstrate limited epistasis through multiple lines of evidence: high R\u00b2 for additive model (C60), tight distribution of prediction errors around zero (C63), and comparison with other systems (C64). The speculation about structural basis (C65) is reasonable given the data. The acknowledgment of model limitations for high-fitness variants (C61) is appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "All three positions serve as positive elements promoting cognate interaction (modes: -0.63, -0.71, -0.39 for positions 1-3), but only positions 2 and 3 serve as negative elements preventing non-cognate interaction (modes: -0.01, 0.57, 0.50).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C73 present the key functional finding using distribution of effects analysis. The quantitative mode values are clearly stated and the interpretation that position 1 is purely positive while positions 2-3 have dual roles is well-supported by the data. This directly addresses the central question posed in Figure 1A-B about whether positive and negative roles are coupled.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "At position 1 (D61), all substitutions impair ParE3 binding (with glutamate least detrimental), but no substitutions improve or substantially impair ParE2 binding, indicating this position functions primarily as a positive specificity element.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C81 systematically characterize position 1 using comprehensive substitution analysis. The observation that all substitutions harm cognate binding (C74) but have modes near zero for non-cognate binding (C76-C77) strongly supports the conclusion that this is a positive-only element (C81). The structural rationale (salt bridge with R59 in ParE3, glycine in ParE2) provides mechanistic support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "At position 2 (K64), all substitutions impair ParE3 binding, but five substitutions (L, I, R, V, M) significantly improve ParE2 binding, indicating K64 is a negative element though not optimal for discrimination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C86 characterize position 2 as having dual roles. The data showing universal negative effects on cognate binding (C82) combined with specific substitutions that improve non-cognate binding (C83-C84) support the dual role conclusion. The inference that lysine is not optimal for discrimination (C86) is justified by the existence of better discriminating residues.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "At position 3 (E80), substitutions generally impair ParE3 binding but are more tolerated than at other positions, while nearly all substitutions increase ParE2 binding, indicating this position enforces specificity by preventing non-cognate interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C89 characterize position 3 as having dual roles with emphasis on negative specificity. The observation that substitutions are more forgiving for cognate binding (C88) but nearly universally increase non-cognate binding (C89) supports this interpretation. The structural basis (charge reversal in salt bridges) provides strong mechanistic support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C6",
+      "C119"
+    ],
+    "result": "Wild-type ParD3 appears optimized for specificity with respect to ParE3 and ParE2, as no substitutions improve discrimination when considering the full distribution of effects across all genetic backgrounds.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C90-C92, C6, C119 conclude specificity is optimized. While the data show no substitutions improve cognate binding (C90) and all substitutions that improve discrimination against ParE2 harm cognate binding (C91), the authors acknowledge important limitations: (1) assay saturation for high-fitness variants makes comparisons difficult (C59, C61), (2) optimization is only assessed for these three positions and two toxins (C120), and (3) in vivo assays may not capture subtle differences relevant over evolutionary timescales (C123). The conclusion is reasonable but not definitively proven.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "Crystal structures of ParD2-ParE2 (2.4 \u00c5) and chimeric ParD2*-ParE2 (2.9 \u00c5) were solved, revealing highly similar toxin-binding regions (rmsd=0.812 \u00c5) despite an unresolved flexible N-terminal region in ParD2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C99 describe the structural work. The resolution values are appropriate for the analyses performed. The use of a chimeric construct (C97) to resolve the flexible region is a reasonable approach, and validation that it doesn't alter the binding interface (C98-C99) is important. The speculation about proline causing flexibility (C96) is reasonable but not proven.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C66",
+      "C67",
+      "C129",
+      "C130",
+      "C131",
+      "C132"
+    ],
+    "result": "Position 1 structural analysis reveals ParD3 D61 forms a salt bridge with ParE3 R59, while ParD2 I61 does not form a salt bridge with ParE2 G59, explaining why substitutions at this position don't affect ParE2 binding due to glycine flexibility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C102, C66-C67, C129-C132 integrate structural and functional data for position 1. The structural observation of a salt bridge in ParD3-ParE3 but not ParD2-ParE2 (C130-C131) provides clear mechanistic explanation for the functional data. The inference that glycine provides flexibility to accommodate diverse residues (C132) is well-reasoned and consistent with glycine's known properties.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140"
+    ],
+    "result": "Position 2 structural analysis shows ParD3 K64 forms inter-chain salt bridges with ParE3 E75/E89 and packs hydrophobically with W60, while ParD2 L64 only packs with W60 as ParE2 E89 forms an intra-chain salt bridge with R75, explaining why hydrophobic substitutions improve ParE2 binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C107, C133-C140 provide detailed structural rationalization for position 2 functional data. The observation that ParE2 has an intra-chain salt bridge (C105, C138) that would be disrupted by charged residues at position 64 clearly explains why hydrophobic residues are favored for ParE2 binding (C139). The speculation about arginine's longer side chain (C107) is reasonable but less certain.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145"
+    ],
+    "result": "Position 3 structural analysis reveals charge-reversed salt bridges (ParD3 E80-ParE3 K12 vs. ParD2 K80-ParE2 E12), providing a simple mechanism for simultaneous optimization of affinity and discrimination through opposite electrostatic interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C109, C141-C145 demonstrate elegant structural basis for specificity at position 3. The charge reversal (C143-C144) provides clear mechanistic explanation for why this position is both a positive element (salt bridge stabilizes cognate) and negative element (charge repulsion destabilizes non-cognate). The inference that this is a logical strategy (C145) is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150"
+    ],
+    "result": "ParD3 likely discriminates against the more distant paralog ParE1 using different residues than for ParE2, potentially through steric clash in the hydrophobic pocket formed by different residues (W60/L73 in ParD3-ParE3 vs. I60/F73 in ParD1-ParE1).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C146-C150 are explicitly speculative (C149-C150 use 'speculate'). While the sequence differences are documented (C147-C148) and the hypothesis is reasonable, there is no experimental or structural data for ParD1-ParE1 interactions. This represents a testable prediction rather than a supported result.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C152"
+    ],
+    "result": "The combinatorially complete library approach, where each substitution is examined in ~400 genetic backgrounds, reveals effects masked in single-background studies and represents a novel high-throughput method for dissecting interaction specificity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110-C114, C152 describe the methodological contribution. The comparison with prior work (C111) provides context, and the demonstration that single mutants in wild-type background often show no effect (C114) validates the need for multiple backgrounds. The approach is indeed novel in its completeness and systematic analysis of distributions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C5",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C126",
+      "C154"
+    ],
+    "result": "Positive and negative contributions to specificity are neither inherently coupled nor mutually exclusive, with position 1 serving only positive roles while positions 2-3 serve both roles, contradicting previous suggestions that improving cognate binding necessarily improves non-cognate binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C115-C118, C126, C154 present the central conceptual finding. The comprehensive functional data clearly demonstrate that different positions have different roles (C126), that positive and negative functions can be decoupled (C5, C117), and that this contrasts with prior work (C118). This directly addresses the models in Figure 1B, supporting Model 2 where individual residues can serve both roles.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C122",
+      "C123",
+      "C124",
+      "C125"
+    ],
+    "result": "The in vivo fitness assay has advantages over in vitro binding measurements by better reflecting cellular relevance, though it may be less sensitive than natural selection over evolutionary timescales, and mutations at solvent-exposed positions are unlikely to affect protein stability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C122-C125 provide appropriate discussion of methodological limitations and advantages. The acknowledgment that in vivo assays may not capture subtle effects relevant over evolution (C123) is important for interpreting the optimality claims. The argument that solvent-exposed positions are unlikely to affect folding (C125) is reasonable but could benefit from experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C153",
+      "C155",
+      "C156",
+      "C157",
+      "C158"
+    ],
+    "result": "The work addresses fundamental questions about protein interaction specificity in the context of established knowledge about sequence-encoded specificity, interface degeneracy, paralogous protein families, and toxin-antitoxin systems, with implications for protein design and understanding evolutionary insulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C8-C16, C153, C155-C158 provide context and broader implications. These are primarily literature-based claims (C8-C9, C13, C16, C155) or general statements about implications (C153, C156-C158). They appropriately frame the work but don't constitute novel findings. The citations appear accurate and the framing is reasonable.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C120",
+      "C121"
+    ],
+    "result": "Whether ParD3 is globally optimized for specificity with respect to all homologous ParE toxins remains untested, and specificity may not be globally optimized as shown for other paralogous systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C120-C121 appropriately acknowledge limitations. C120 correctly notes that optimization is only assessed for two toxins and three positions. C121 cites relevant work (McClune et al., 2019) showing non-global optimization in other systems. This represents appropriate scientific caution about the scope of conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C127",
+      "C128",
+      "C151"
+    ],
+    "result": "Despite not cross-talking in vivo, ParD2-ParE2 and ParD3-ParE3 complexes share highly similar structures, underscoring that just a few interface residues dictate specificity, a pattern observed in other paralogous systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C127-C128, C151 synthesize structural findings with broader patterns. The structural similarity despite functional specificity (C127) is well-documented by the rmsd value. The comparison with other systems (C128, C151) is appropriately cited and strengthens the generalizability of the findings.",
+    "result_type": "MAJOR"
+  }
+]

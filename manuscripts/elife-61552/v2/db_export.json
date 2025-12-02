@@ -1,0 +1,2424 @@
+{
+  "submission": {
+    "id": "3a20c093-096a-4a27-9f99-7dd674cce312",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T20:49:36.913453Z",
+    "updated_at": "2025-12-02T20:49:36.913453Z"
+  },
+  "content": [
+    {
+      "id": "596d4b6f-dab1-4cb5-9e9c-4d7368dab8d2",
+      "submission_id": "3a20c093-096a-4a27-9f99-7dd674cce312",
+      "content_type": "manuscript",
+      "content_text": "# Inhibition of SARS-CoV-2 viral entry upon blocking N- and O-glycan elaboration\n\n## Authors\n\n- Qi Yang<sup>1</sup> ([ORCID: 0000-0003-4308-4382](https://orcid.org/0000-0003-4308-4382))\n- Thomas A Hughes<sup>1</sup> ([ORCID: 0000-0002-7887-6876](https://orcid.org/0000-0002-7887-6876))\n- Anju Kelkar<sup>1</sup>\n- Xinheng Yu<sup>1</sup>\n- Kai Cheng<sup>1</sup>\n- Sheldon Park<sup>1</sup>\n- Wei-Chiao Huang<sup>2</sup>\n- Jonathan F Lovell<sup>1</sup> ([ORCID: 0000-0002-9052-884X](https://orcid.org/0000-0002-9052-884X))\n- Sriram Neelamegham<sup>1</sup> ([ORCID: 0000-0002-1371-8500](https://orcid.org/0000-0002-1371-8500)) \u2020\n\n### Affiliations\n\n1. Chemical & Biological Engineering, State University of New York Buffalo United States\n2. Biomedical Engineering, State University of New York Buffalo United States\n3. Medicine, State University of New York Buffalo United States\n4. Clinical & Translational Research Center Buffalo United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe Spike protein of SARS-CoV-2, its receptor-binding domain (RBD), and its primary receptor ACE2 are extensively glycosylated. The impact of this post-translational modification on viral entry is yet unestablished. We expressed different glycoforms of the Spike-protein and ACE2 in CRISPR-Cas9 glycoengineered cells, and developed corresponding SARS-CoV-2 pseudovirus. We observed that N- and O-glycans had only minor contribution to Spike-ACE2 binding. However, these carbohydrates played a major role in regulating viral entry. Blocking N-glycan biosynthesis at the oligomannose stage using both genetic approaches and the small molecule kifunensine dramatically reduced viral entry into ACE2 expressing HEK293T cells. Blocking O-glycan elaboration also partially blocked viral entry. Mechanistic studies suggest multiple roles for glycans during viral entry. Among them, inhibition of N-glycan biosynthesis enhanced Spike-protein proteolysis. This could reduce RBD presentation on virus, lowering binding to host ACE2 and decreasing viral entry. Overall, chemical inhibitors of glycosylation may be evaluated for COVID-19.\n\n## Introduction\n\nSARS-CoV-2 is the virus causing the global pandemic \u2018coronavirus diseases 2019\u2019 (COVID-19). This is a zoonotic beta-coronavirus from bats that causes severe acute respiratory syndrome (Lu et al., 2020). Its effects on human physiology extends well beyond the lung as it unleashes a cytokine storm to alter immune response (Chen et al., 2020) and cause disseminated intravascular coagulation (Lillicrap, 2020). It also exhibits multiorgan tropism that impacts kidney, liver, heart and brain function (Puelles et al., 2020). Among its structural elements, the SARS-CoV-2 Spike protein is critical for viral attachment, fusion and entry into host (Hoffmann et al., 2020a; Li et al., 2003; Lan et al., 2020). The RBD region of Spike enables binding to its primary human cellular receptor, angiotensin-converting enzyme-2 (ACE2), which is ubiquitously expressed on epithelial, endothelial and blood cells (Li et al., 2003; Hamming et al., 2004). A role for heparan sulfates in viral entry has also been proposed (Clausen et al., 2020). Once bound, viral fusion and entry depends on two proteolysis sites, the furin/RRAR-S site located between the Spike S1 and S2 subunits, and a second S2\u2019/SKR-S site (Belouzard et al., 2009). A variety of enzymes including TMPRSS2 (transmembrane protease, serine 2) and cathepsin-L may aid viral entry (Hoffmann et al., 2020b; Matsuyama et al., 2005; Shang et al., 2020). While inhibitors of viral binding, RNA transcription and protease activity are being tested to reduce viral load, this manuscript suggests an orthogonal approach based on glycan engineering.\n\nBoth the viral Spike-protein and ACE2 receptor are extensively glycosylated, with a majority of the 22 N-glycosylation sites of Spike and 7 N-glycosylation sites of ACE2 bearing carbohydrates (Walls et al., 2020; Wrapp et al., 2020; Shajahan et al., 2020a; Figure 1). The exact distribution of the oligomannose, hybrid, complex, sialylated, and fucosylated structures in these macromolecules is likely dictated both by the protein structure and host expression system (Shajahan et al., 2020b; Watanabe et al., 2020). O-linked glycans are also reported on both proteins (Shajahan et al., 2020a; Shajahan et al., 2020b). A variety of functions have been proposed for these glycans including immunological shielding (Watanabe et al., 2020), direct regulation of Spike-ACE2 binding (Bernardi et al., 2020), and control of Spike up/down conformation (Casalino et al., 2020). Experimental data supporting these concepts is currently lacking and thus our understanding of the impact of glycosylation on SARS-CoV-2 function is incomplete.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/61552/elife-61552-fig1-v2.jpg)\n\n**Figure 1.:** SARS-CoV-2 Spike protein trimer (pink) bound to ACE2 (green).\u00a0(A) Without glycans. (B) With N-glycans (red) identified using LC-MS on Spike and ACE2. (C) Molecular dynamics simulation analyzed the range of movement of each glycan. The space sampled by glycans is represented by a gray cloud. Glycans cover the Spike-ACE2 interface. They also surround the putative proteolysis site of furin (\u2018S1-S2\u2019, yellow) and S2\u2019 (blue).\n\nWe address the above gaps in knowledge in the current manuscript. Our results suggest that both the O- and N-linked glycans of the SARS-CoV-2 Spike protein, including sialylated glycan epitopes, have a relatively minor role in regulating direct Spike-ACE2 binding interactions. However, these glycans control the rates of viral entry into HEK293T cells expressing human ACE2. Here, blocking N-glycosylation on SARS-CoV-2 pseudovirus at the high-mannose stage using CRISPR-Cas9 and also a small molecule inhibitor (kifunensine) resulted in extensive cleavage/shedding of the viral Spike protein at the time of production due to enhanced proteolysis at the S1-S2 interface. Our data also suggest that glycans may contribute to additional aspects of Spike proteolysis during viral entry. Due to these effects, viral entry into human ACE2 expressing cells was reduced by\u00a0>95% when virus was produced in the CRISPR-Cas9 MGAT-1 knockout cells lacking complex N-glycans, and by 85\u201390% upon production in the presence of kifunensine. These observations support the need to screen chemical inhibitors of glycosylation for the treatment of COVID-19.\n\n## Results\n\n### Modest role for ACE2 sialic acids during Spike-protein molecular recognition\n\nIn order to study the impact of N- and O-linked glycosylation on SARS-CoV-2 function, we engineered cells over-expressing full-length Spike-protein and ACE2 (Figure 2A). We also histidine-tag purified soluble, dimeric Fc-his fusion proteins for the Spike S1 region, RBD and extracellular portion of ACE2. The molecules were extensively glycosylated with their apparent molecular mass being greater than their theoretical mass based on peptide alone. Thus, RBD-Fc was\u00a0~60 kDa instead of a theoretical mass of 51 kDa, S1-Fc was\u00a0~150 kDa rather than 101 kDa, and ACE2-Fc was\u00a0~140 kDa instead of 110 kDa (Figure 2B). RBD-Fc and S1-Fc readily bound to HEK293T cells upon human ACE2 over-expression, confirming that they are functionally active (Figure 2C). ACE2-Fc also specifically bound Spike-protein expressed on 293Ts. Baseline RBD-Fc and S1-Fc binding to Spike expressing 293 T cells (i.e. 293 T/S) was even lower than that of wild-type 293T (red line, Figure 2C). This suggests expression of low amounts of Spike binding proteins on WT-293Ts. These basal Spike receptors may engage cell-surface Spike on 293 T/S cell (via cis-interactions) causing RBD-Fc and S1-Fc binding to be lower in 293 T/S cells compared to WT-293Ts.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/61552/elife-61552-fig2-v2.jpg)\n\n**Figure 2.:** (A)\u00a0Full-length proteins expressed on cells include wild-type Spike-protein [v1] and human ACE2 [v2]. N-glycosylation sites are indicated by lollipop. Fc-his soluble proteins encode for S1-subunit [v3], RBD [v4] and soluble ACE2 [v5]. All constructs were co-expressed with fluorescent reporters separated by P2A. Note that the Fc-section also contains one N-glycosylation site. (B) Western blot for purified Fc-proteins from HEK293T probed with anti-Fc, anti-RBD or anti-ACE2 Ab. CD44-Fc is positive control. (C) Flow cytometry data showing S1-Fc (1.7 \u00b5g/mL) and RBD-Fc (0.35 \u00b5g/mL) binding to ACE2 expressed on HEK293T (middle panel). Spike expression enhances ACE2-Fc (1.4 \u00b5g/mL) binding (bottom). (D) Desialylation of Spike-protein expressed on 293 T/S had minimal effect on ACE2-Fc (0.7 \u00b5g/mL) binding. ACE2 desialylation on 293T/ACE2 increased binding of RBD-Fc (0.2 \u00b5g/mL) and S1-Fc (1.7 \u00b5g/mL) by 26\u201356% (paired experiments, *p<0.05). (E) Pseudovirus with DsRed-reporter were developed with three different envelope proteins. VSVG pseudotyped virus infected both HEK293T (black line) and stable 293T/ACE2 (red line) cells. Virus with Spike-WT and Spike-mutant entered 293T/ACE2 only. (F) Same titer of virus (0.3 \u00b5g/mL p24-equivalent) were treated with or without sialidase, prior to addition to stable 293T/ACE2 cells. Infection using Spike-mutant was higher compared to Spike-WT. Sialidase treatment of virus had no effect. (G) 293T/ACE2 cells were sialidase treated prior to addition of VSVG (0.3 \u00b5g/mL p24-equiv.), Spike-WT (1.5 \u00b5g/mL p24-equiv.) or Spike-mutant (0.2 \u00b5g/mL p24-equiv.) pseudovirus. Sialidase treatment did not affect viral entry. Abbreviations: Spike signal peptide (SP), N-terminal domain (NTD), receptor-binding domain (RBD), receptor-binding motif (RBM), subdomain 1 (SD1), subdomain 2 (SD2), fusion peptide (FP), heptad repeat 1 (HR1), central helix (CH), connector domain (CD), heptad repeat 2 (HR2) transmembrane section (TM), cytoplasmic tail (CT), ACE2: Angiotensin-converting enzyme-2; VSVG: Vesicular stomatitis virus G-protein; WT: wild-type; mut: mutant.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/61552/elife-61552-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A)\u00a0Sialidase protocol validation. All lectins were directly conjugated with Alexa dyes. They were incubated with cells at 1\u20135 \u00b5g/mL for 15 min before a quick wash and cytometry measurement. Compared to untreated control (left), sialidase treatment (right) decreased SNA lectin binding to \u03b12,6 sialylated structures by 15-fold and increased ECL binding to desialylated lactosamine chains (Gal\u03b21,4GlcNAc\u03b2) by an order of magnitude. (B) Pseudovirus assay. DsRed fluorescence in HEK293T and stable 293T/ACE2 cells upon addition of VSVG, Spike-WT and Spike-mutant pseudotyped virus. (C) Sialidase treatment of pseudovirus. % DsRed positive cell data are shown for study in Figure 2F (main manuscript). Viral entry was sialidase independent. (D) Sialidase treatment of HEK/ACE2 cells. Pseudovirus expressing VSVG, Spike-WT and Spike-mutant were added to cells under conditions described in Figure 2G (main manuscript). All error bars are standard deviations. Data are representative of 3 independent runs.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/61552/elife-61552-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A)\u00a0Representative calibration curve for p24 standard. (B) Absorbance value for viral stock in representative ELISA run. Nine different viruses were prepared and used in Figure 4 (main manuscript). All viruses were diluted 1:500,000 fold before ELISA measurement, except for VSVG virus made in [N]\u00af 293 T cells (indicated by asterisk) which were diluted 1:50,000 fold, in this instance, due to lower titer.\n\nSialidase treatment of Spike-protein expressed on 293Ts did not affect ACE2-Fc binding (Figure 2D). Sialidase treatment of ACE2 expressed on 293Ts, however, increased RBD-Fc and S1-Fc binding by 26% and 56% respectively. Control lectin binding studies confirmed the high activity of the sialidase enzyme used in this study (Figure 2\u2014figure supplement 1A). The relatively small effect of the sialidase in these studies was not due to the absence of sialic acid on either S1-Fc or ACE2-Fc. In this regard, independent glycoprotemics mass spectrometry (MS) data showed that\u00a0~80\u2013100% of the N-glycans expressed at specific sites of ACE2-Fc and\u00a0~40\u2013100% of the S1-Fc glycopeptides expressed complex-type glycans (K.C., et al., manuscript in preparation). Up to\u00a0~60% of the antennae on these complex structures on ACE2 and\u00a0~20% of the structures on S1-Fc were terminated by sialic acid.\n\n### Neither sialidase treatment of Spike nor ACE2 markedly impacted viral entry\n\nTo complement the above binding studies, we measured SARS-CoV-2 pseudovirus entry into stable 293T/ACE2 cells. This assay provides an aggregate measure of both molecular binding and viral fusion/entry in the context of the physiological Spike trimeric configuration (Tai et al., 2020). Here, the control VSVG (Vesicular stomatitis virus G-protein) pseudotyped virus displayed broad tropism both for wild-type HEK293T and stable 293T/ACE2 (Figure 2E, Figure 2\u2014figure supplement 1B). Wild-type SARS-CoV-2 Spike-protein virus (\u2018Spike-WT\u2019) only entered 293T/ACE2 cells confirming the strict dependence on cell-surface ACE2 receptor. A \u2018Spike-mutant\u2019 pseudovirus, where the \u2018RRAR\u2019 furin-site was swapped with an \u2018SRAS\u2019 sequence, also only entered 293T/ACE2 (22). This mutation results in reduced proteolysis at the S1-S2 interface, as discussed later, likely due to the presence of a single arginine site at the S1-S2 interface rather than the polybasic (\u2018RRAR\u2019) sequence. To study the role of sialic acid on viral entry, we titered the Spike-WT and Spike-mutant virus using p24 ELISA (Figure 2\u2014figure supplement 2). The viruses were then treated with a pan-sialidase from Arthrobacter ureafaciens, and the same amount of Spike-WT and Spike-mutant particles were applied to stable 293T/ACE2 cells (Figure 2F, Figure 2\u2014figure supplement 1C). Here, Spike-mutant pseudotyped virus was\u00a0~5\u201310 times more effective at stimulating DsRed-reporter expression compared to Spike-WT. Thus, the efficiency of cleavage at the S1-S2 interface can fine-tune SARS-CoV-2 infectivity (Hoffmann et al., 2020b; Shang et al., 2020; Walls et al., 2020). Sialidase treatment of virus did not impact viral entry, consistent with the notion that Spike sialic acid does not regulate molecular recognition. Additionally, sialidase treatment of 293T/ACE2 did not alter either VSVG or Spike-WT pseudovirus entry (Figure 2G, Figure 2\u2014figure supplement 1D). A partial increase in Spike-mutant viral entry was measured upon sialidase treatment (p=0.08), suggesting a minor inhibitory role for ACE2 sialic acid when viral infectivity is high. Glycoproteomics analysis of purified pseudovirus produced in HEK293T cells showed that\u00a0~45\u2013100% of the viral N-glycans were complex-type, with up to\u00a0~55% of their antennae being terminated by sialic acid (K.C., et al. manuscript in preparation). Thus, the pseudovirus used in this study was processed by glycoenzymes that are typically found in the cellular medial and trans-Golgi compartments. Together, the binding and pseudovirus data suggest that ACE2 sialic acids may modestly shield virus/Spike binding in some biological contexts and perhaps some cell systems.\n\n### Blocking Spike-protein N-glycan biosynthesis at the high-mannose stage partially reduced ACE2 binding\n\nTo determine if other aspects of N- and O-linked glycosylation may impact SARS-CoV-2 function, we applied CRISPR-Cas9 technology to develop isogenic HEK293T clones that lack either the core-1 O-glycan forming galactosyltransferase C1GalT1 or the N-glycan branching \u03b21,2GlcNAc-transferase MGAT1 (Figure 3A; Stolfa et al., 2016; Chugh et al., 2018). Here, knocking out C1GalT1 blocks O-glycan biosynthesis at the GalNAc\u03b1-Ser/Thr (+/-\u00a0sialic acid) stage as it is not elaborated to form the core-1 structure (Gal\u03b21,3GalNAc\u03b1). These cells are termed \u2018[O]-293T\u2019. Knocking out MGAT1 blocks N-glycan biosynthesis at the Man-5 stage, and the resulting clone is called \u2018[N]-293T\u2019. Sanger sequencing confirmed that all three C1GalT1 alleles of [O]-293T contained indels (Figure 3B). Frameshift mutation was also noted at the single MGAT1 allele in [N]-293T. As anticipated, VVA-lectin (Vicia villosa agglutinin) binding to GalNAc\u03b1 was dramatically augmented in the [O]-293Ts (Figure 3C). Complex glycans were absent in [N]-293Ts as they did not engage PHA-L (lectin from Phaseolus vulgaris). Additional data with a panel of fluorescent lectins further confirm specific blockade of N-glycan complex structures and lactosamine chains in [N]-293T, and inhibition of O-glycan extension in the [O]-293 T cells (Figure 3\u2014figure supplement 1). Together, the findings confirm the absence of O- and N-glycan elaboration in the [O]-293T/C1GalT1-KO and [N]-293T/MGAT1-KO cells, respectively.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/61552/elife-61552-fig3-v2.jpg)\n\n**Figure 3.:** (A)\u00a0Knocking out C1GALT1 and MGAT1 using CRISPR-Cas9 inhibits O- and N-glycan biosynthesis in HEK293Ts. (B) Sanger sequencing results of isogenic 293T clones shows indels on all 3 alleles of C1GALT1 (\u2018[O]-293T\u2019) and single allele of MGAT1 (\u2018[N]-293T\u2019) knockout cells. Wild-type (WT) sequence is on the first line. Lower line shows base deletions (hyphen) and insertions (black fonts) for individual KOs. sgRNA target sequence is in red and protospacer adjacent motif is underlined. (C) Increased VVA and reduced PHA-L binding confirm loss of O-linked glycans in [O]-293Ts and N-glycans in [N]-293Ts, respectively. (D) Knocking out N-glycans on Spike protein reduced ACE2-Fc binding in cytometry based binding studies. Knocking out Spike O-glycans increased ACE-2 binding. (E\u2013F) Truncation of ACE2 N- and O-glycans did not affect either S1-Fc (panel E) or RBD-Fc (panel F) binding. (G) ACE2 was transiently expressed on 293T, [O]-293T and [N]-293 T cells. All pseudotyped virus efficiently entered ACE2 expressing cells. Virus was not titered for these runs, and thus comparison between viruses is not possible. *p<0.05 with respect to all other treatments. #p<0.05 with respect to 293T and [N]-293T/ACE2 in panel G.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/61552/elife-61552-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** A panel of lectins (from Vector Labs) was conjugated with Alexa dyes, either Alexa 405, 488 or 647. The binding of these fluorescent reagents to wild-type 293T, [N]-293T and [O]-293 T cells was measured using flow cytometry. The lectins bound: (A) N-glycan high-mannose and complex structures [ConA and LCA bind \u03b1Man in high-mannose glycans; PHA-L and PHA-E bind complex glycans], (B) lactosamine chains primarily on N-linked glycans [RCA, ECL bind terminal Gal or lactose; DSL bind \u03b21,4GlcNAc], and (C) O-glycan related structures [PNA binds Gal\u03b21,GalNAc; VVA and SBA bind GalNAc\u03b1]. Measurements were made with either untreated or sialidase treated 293 T cells. As seen: i. Knocking out MGAT1 in [N]-293T reduces lectin binding in panels A and B (see arrow). ii. Knocking out C1GalT1 results in a dramatic decrease in PNA binding and increase in VVA and SBA binding, These data are consistent with the expected changes in lectin profile upon knocking out these N- and O-glycan-specific enzymes.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/61552/elife-61552-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** (A)\u00a0Surface expression of Spike-protein and ACE2. Full-length Spike (top) and human ACE2 (bottom) were expressed in HEK 293T, [N]-293T and [O]-293T. Protein expression was measured in EGFP+ cells in the case of Spike (using anti-RBD), and on BFP+ cells in the case of ACE2 (using anti-ACE2), as these fluorescent reporters are co-expressed with surface proteins. Protein expression was comparable in all cells. Untransfected 293Ts serve as negative control. (B) Viral entry assay. Pseudovirus expressing VSVG envelope protein, Spike-WT or Spike-mutant were added to HEK 293 T cells transiently transfected to overexpress ACE2 (both wild-type 293T and glycosylation mutants). An additional control included 293 T cells not expressing ACE2, which only allowed entry of VSVG pseudotyped viral particles, but not Spike bearing virus. % cells that were DsRed (reporter) positive is shown at 72 hr. All treatments were statistically different except as indicated by n.s. (\u2018not significant\u2019). All data are from of N\u00a0>\u00a03 repeats.\n\nWild-type 293Ts and the glycoenzyme knockouts were transiently transfected to express Spike and ACE2 for binding studies. Both full-length proteins expressed well and at equal levels in the different cell systems (Figure 3\u2014figure supplement 2A). In order to quantify the effect of glycosylation on ACE2-Spike binding, ACE2-Fc was applied to Spike bearing cells, either 293T or the O/N-glycan knockouts (Figure 3D). Similarly, either S1-Fc (Figure 3E) or RBD-Fc (Figure 3F) were applied to ACE2 bearing 293T or the N-/O-glycan knockouts. These Fc-proteins were applied at sub-saturation concentrations in the cytometry binding studies in order to quantitatively evaluate differences in receptor-ligand-binding. Here, we observed a 40% decrease in ACE2-Fc binding to cell-surface Spike expressed on [N]-293Ts, and a slight 20% increase when Spike was expressed on the [O]-293Ts (Figure 3D). Glycan engineering of ACE2 in the [O]- and [N]-293Ts did not impact either S1-Fc (Figure 3E) or RBD-Fc binding (Figure 3F). Here, RBD-Fc bound\u00a0~10 times more avidly to ACE2 compared to S1-Fc. Together, the data suggest a modest role for Spike-protein glycosylation on direct Spike-ACE2 binding. Our observation that the binding of RBD for ACE2 was substantially higher than S1-ACE2 interactions is consistent with a previous report (Shang et al., 2020). This highlights the need to carefully consider RBD presentation/conformation in the context of the full protein when quantifying molecular affinity to ACE2.\n\n### Blocking N-glycan elaboration on Spike abrogated viral entry\n\nWe evaluated the impact of ACE2 and Spike glycosylation on viral entry. To determine the impact of ACE2 glycosylation, we transiently expressed this protein on wild-type 293Ts, [O]-293Ts and [N]-293Ts. The entry of the pseudovirus (VSVG, Spike-WT and Spike-mutant) to these three cell types was then evaluated (Figure 3G, Figure 3\u2014figure supplement 2B). Here, the pattern of viral entry was similar in all cell systems. Lower entry was measured for Spike-WT and Spike-mutant pseudovirus infection of [O]-293T/ACE2 cells, but this was also noted for the control VSVG-virus. Thus, this reduced infectivity in the O-glycan knockout is not exclusively due to ACE2 glycans. We conclude that ACE2 glycans may not regulate viral entry.\n\nIn contrast to ACE2, glycan engineering of viral Spike protein dramatically affected viral entry (Figure 4). To study this, VSVG, Spike-WT and Spike-mutant pseudotyped virus were generated in wild-type 293T, [O]-293T and [N]-293T (Figure 4A). All nine viruses were used to infect stable 293T/ACE2 cells. When produced in [O]-293T, Spike-WT and Spike-mutant pseudovirus resulted in a 70\u201385% loss in DsRed fluorescence (Figure 4B), and a partial reduction (35\u201370%) in the fraction of DsRed positive cells (Figure 4C). In stark contrast, knocking out N-glycans in both pseudoviruses abrogated viral infection into 293T/ACE2 cells by\u00a0>95% (Figure 4B and C). Dose studies confirmed loss of viral function upon inhibiting N-glycan elaboration over a range of viral titers (Figure 4D). This was observed for the Spike-mutant and also the Spike-WT pseudovirus (data not shown). Western blot with anti-S2 pAb (polyclonal antibody) suggest that both the Spike-WT and Spike-mutant virus expressed comparable levels of Spike protein, regardless of the glycosylation mutation (Figure 4E). The molecular mass of Spike expressed in [N]-293T was lower than that of other virus consistent with the extensive N-glycosylation of this protein. Additionally, the data suggest more extensive cleavage of Spike-WT compared to Spike-mutant, consistent with the presence of the proteolysis-sensitive polybasic furin-site in Spike-WT. The Spike pseudovirus produced in [N]-293Ts also appeared to have lower intact Spike protein. To examine this more closely as the anti-S2 pAb may have preference for binding the S2-domain over full Spike, we measured the FLAG-epitope at the C-terminus of Spike-mutant using an anti-FLAG mAb (monoclonal antibody). This may provide more uniform recognition of both the full Spike and the S2-subunit (Figure 4F). This blot suggests that N-glycan loss may trigger precipitous (95%, based on densitometry) loss of intact Spike\u00a0protein due to enhanced cleavage at the S1-S2 interface. Consistent with the viral entry assay, we also noted greater proteolysis of virus produced in [O]-293Ts (52%) compared to that produced in wild-type 293Ts (32%). Together, the data suggest that both Spike N-glycans, and possibly also O-glycans, may play a role in regulating SARS-CoV-2 Spike-protein stability.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/61552/elife-61552-fig4-v2.jpg)\n\n**Figure 4.:** (A)\u00a0Pseudovirus expressing VSVG envelope protein, Spike-WT and Spike-mutant were produced in wild-type, [O]- and [N]-293 T cells. All nine viruses were applied at equal titer to stable 293T/ACE2. (B\u2013C) O-glycan truncation of Spike partially reduced viral entry. N-glycan truncation abolished viral entry. In order to combine data from multiple viral preparations and independent runs in a single plot, all data were normalized by setting DsRed signal produced by virus generated in wild-type 293T to 10,000 normalized MFI or 100% normalized DsRed positive value. (D) Viral titration study performed with Spike-mutant virus shows complete loss of viral infection over a wide range. (E) Western blot of Spike protein using anti-S2 Ab shows reduced proteolysis of Spike-mut compared to Spike-WT. The full Spike protein and free S2-subunit resulting from S1-S2 cleavage is indicated. Molecular mass is reduced in [N]-293T products due to truncation of glycan biosynthesis. (F) Anti-FLAG Ab binds the C-terminus of Spike-mutant. Spike produced in [N]-293Ts is almost fully proteolyzed during viral production (red arrowhead). *p<0.05 with respect to all other treatments.\n\n### Small molecule inhibitors of N-linked glycosylation drastically reduced viral entry\n\nRemarkably, the same observations as seen in the viral N-glycan knockouts could be reproduced upon producing viral particles in cells cultured with the potent mannosidase-I alkaloid inhibitor kifunensine (KI\u00a0~25\u2013125 nM, Elbein et al., 1990; Figure 5A). This water-soluble inhibitor reduced the formation of complex N-glycans on cultured cells within 24\u201348 hr with no change in cell viability (Figure 5\u2014figure supplement 1A). Virus produced in culture with 15 \u00b5M kifunensine displayed\u00a0~85\u201390% reduction in infection, as measured using DsRed-reporter in microscopy (Figure 5B, Figure 5\u2014figure supplement 1B) and cytometry assays (Figure 5C and D). The reduction in Spike molecular mass upon addition of this small molecule was less apparent compared to that in [N]-293Ts (Figure 5E), since blockade of Mannosidase-I preferentially gives rise to Man7-9 glycans while the MGAT1/[N]-293Ts knockouts produce Man-5. Here also, the Spike-protein proteolysis was more extensive upon kifunensine addition though it was not complete, as observed in the anti-FLAG blot.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/61552/elife-61552-fig5-v2.jpg)\n\n**Figure 5.:** (A)\u00a0VSVG, Spike-WT and Spike-mutant pseudovirus were produced in the presence of 15 \u00b5M kifunensine or vehicle control. The six viruses were added to 293T/ACE2 at equal titer. (B\u2013D) Microscopy (panel B) and cytometry (panel C, D) show\u00a0~90% loss of viral infection in the case of Spike-WT and Spike-mutant virus upon kifunensine treatment (*p<0.05). (E) Spike molecular mass is reduced in the western blots due to high-mannose glycan synthesis in runs with kifunensine. Intact Spike is reduced in the presence of kifunensine, in anti-FLAG blot. (F) The polybasic furin \u2018RRAR\u2019 site was substituted by a single \u2018A\u2019 amino acid in Spike-delta. Virus with Spike-delta were expressed both in the presence of vehicle and kifunensine. Western blot shows lack of S1-S2 cleavage in this construct. In viral entry assay, kifunensine reduced DsRed expression in 293T/ACE2 cells, even in the case of Spike-delta pseudovirus (*p<0.05). Similar observation was made at two different viral titers (0.3 and 0.6 \u03bcg/mL p24 equivalent).\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/61552/elife-61552-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A)\u00a0Lectin binding upon kifunensine treatment. HEK293T cells were cultured with varying concentrations of kifunensine or vehicle for 2 days. PHA-L binding measurement shows marked reduction in the cell-surface expression of complex glycans and also a decrease in ECL engagement (recognizes lactosamine chains). Kifunensine did not affect cell growth rate or viability. It also did not reduce pseudovirus production titers. Data are Mean\u00a0\u00b1\u00a0STD (N\u00a0=\u00a03). (B) Kifunensine reduced Spike viral infection. Bright field images for cell monolayer (left) for microscopy data shown in main manuscript (reproduced in right panels). Kifunensine reduces Spike-WT and Spike-mutant pseudoviral entry by\u00a0~85\u201390%.\n\nIn order to determine if the enhanced S1-S2 site proteolysis of Spike protein upon N-glycan inhibition is the exclusive reason for reduced viral entry, we produced virus with a Spike variant (\u2018Spike-delta\u2019) that contained the C-terminal FLAG-epitope but that lacked the furin-site (Figure 5F). The substitution of the \u2018RRAR\u2019 sequence with a single Alanine (\u2018A\u2019) resulted in viral Spike that was not extensively cleaved both in the absence and presence of kifunensine. Robust viral entry into 293T/ACE2 cells was observed using this furin resistant virus, and this too could be partially blocked by kifunensine. Thus, in addition to proteolysis at the S1-S2 site, N-glycans may have additional roles during viral entry.\n\n## Discussion\n\nThis manuscript undertook a series of studies in order to comprehensively describe the role of O- and N-linked glycans on SARS-CoV-2 Spike binding to human ACE2 (Figure 6A), and related viral entry (Figure 6B). It demonstrates only a minor role for carbohydrates in regulating Spike-ACE2 direct binding. In this regard, we observed some enhancement in Spike binding and viral entry upon treating 293T/ACE2 with a pan-sialidase. Based on the published crystal structure and molecular modeling, the critical glycans regulating this process are likely located at Asn-90 or Asn-322, proximal to the Spike binding interface (Lan et al., 2020; Figure 1). The effect was nevertheless small compared to that reported for other sialic acid dependent viruses like influenza (Stencel-Baerenwald et al., 2014), reovirus, parovirus (L\u00f6fling et al., 2013) and coronavirus like the Middle-East Respiratory Syndrome virus/MERS (Li et al., 2017).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/61552/elife-61552-fig6-v2.jpg)\n\n**Figure 6.:** (A)\u00a0ACE2-Fc binding was measured to wild-type or glycoEnzyme-KO 293 T cells expressing Spike. Sialidase treatment of cells was performed in some cases. Similar studies also measured S1-Fc and RBD-Fc binding to cell-surface expressed ACE2. (B) SARS-CoV-2 pseudovirus (bearing Spike-WT, Spike-mut, Spike-delta variants) were generated in wild-type or glycoEnzyme-KO 293Ts, in the presence and absence of kifunensine. Main results of binding (A) and viral\u00a0entry (B) assay are listed. (C) Conceptual model shows that kifunensine can induce S1-S2 site proteolysis on Spike-WT and Spike-mut virus, but not Spike-delta virus. This proteolysis reduces RBD presentation and attenuates viral entry into 293T/ACE2. Without affecting S1-S2 cleavage, kifunensine also partially reduced Spike-delta pseudovirus entry function. The data suggest additional roles for Spike N-glycans during viral entry.\n\nThe studies performed with CRISPR-Cas9 cell lines containing disrupted O- and N-linked glycans also support the concept that glycosylation is not a critical regulator of ACE2-Spike binding. Here, blocking O- and N-glycan biosynthesis on ACE2 did not impact either viral entry or Spike-Fc binding. Thus, the functional change observed upon enzymatically removing sialic acid on ACE2 is likely a steric effect, as it can be offset by other modifications. Blocking elaboration of O- and N-glycans on Spike, also, only had a partial effect on ACE2-Fc binding. This observation is consistent with previous cryo-EM (Walls et al., 2020; Wrapp et al., 2020) and molecular dynamics simulation results (Grant et al., 2020), which show that the active/\u2018up\u2019 form of Spike RBD is largely exposed with few glycans at the binding interface. It is now well appreciated that this lack of glycan shielding, makes the exposed RBD a prime target for vaccine development.\n\nIn contrast to the modest effect of glycosylation on receptor-ligand-binding, we observed a much more profound role for glycans in regulating viral entry in part due to their impact on Spike proteolysis at the S1-S2 interface. In this regard, we observed that blocking N-glycan elaboration using both genetic approaches (i.e. MGAT1-KO/[N]-293T) and the natural product mannosidase-I inhibitor, kifunensine, dramatically reduced viral entry into 293T/ACE2 cells. This was observed for two virus types: Spike-WT and Spike-mut. In the case of Spike-mut, enzymatic and small molecule inhibition resulted in enhanced proteolysis of Spike-protein during pseudovirus production. These data suggest an inverse relation between furin cleavage and viral entry into 293T/ACE2 cells. Consistent with this, Spike-mut displayed reduced S1-S2 proteolysis compared to Spike-WT, and higher viral infectivity. Others have also noted a reduction in viral entry, upon increasing furin cleavage potential by addition of more basic residues (\u2018RRRKR\u2019 mutation) at the S1-S2 interface (Hoffmann et al., 2020b). Finally, a recent study observed that the introduction of the D614G mutation in Spike reduced furin cleavage, and this resulted in enhanced viral infectivity (Korber et al., 2020). SARS-CoV-2 containing the D614G mutation is currently the dominant strain worldwide (>80% prevalence, Zhang et al., 2020), and the possibility that this is due to altered furin cleavage potential is hotly debated. Overall, our studies with MGAT1-KO, C1GalT1-KO and kifunensine suggest that both N- and O-glycans may modulate the rates of proteolysis at the S1-S2 interface, thus affecting viral entry (Figure 6C). While some S1 may be associated with Spike even after partial cleavage at the S1-S2 interface (Belouzard et al., 2009), this may potentiate a quantitative reduction in RBD presentation on viral surface, resulting in reduced ACE2 binding and lower viral entry. Indeed several N-glycans are located proximal to the furin-site: N603 and N657, and also N61 (Watanabe et al., 2020). O-glycans have also been hypothesized to exist in this region at S673, T678 and S686 (Andersen et al., 2020), and some of these have been experimentally verified (Sanda et al., 2020). How this site-specific glycosylation affects SARS-CoV-2 entry, remains to be determined.\n\nIn addition to its role in regulating RBD presentation, our data suggest that N-glycans may also have other roles in regulating viral entry. In this regard, we noted that even the robust entry of Spike-delta pseudovirus into 293T/ACE2 cells could be partially inhibited by kifunensine (Figure 6C), and this is independent of S1-S2 proteolysis. Others have noted that the effect of \u2018Spike-delta\u2019 mutation may be cell type specific in that this mutation results in lower infectivity in some cell types like Calu-3 which rely on the enzyme TMPRSS2 for viral fusion, while this mutation does not affect entry into other cell types like VeroE6 which lacks TMPRSS2 (Hoffmann et al., 2020b). Based on these observations, we speculate that additional glycosylation sites proximal to S2\u2019 may also modulate viral entry, perhaps because some proteases like TMPRSS2 have both ligand-binding and protease activity. The N-glycans proximal to S2\u2019 include N801, and to a lesser extent N616 and N657. Additional studies with more cell types and mutant virus are necessary in order to fully elucidate the molecular mechanism by which O- and N-glycans regulate host-cell specific viral entry response.\n\nIn addition to basic science understanding, our findings have translational potential as it suggests that both O- and N-glycan truncation may be used to reduce viral entry. In this regard, it would be attractive to test additional N-glycosylation inhibitors, like Swainsonine, which has a demonstrated safety profile in humans (Goss et al., 1997). Additional potential inhibitors that may modulate viral entry include \u03b1-mannosidase inhibitors (deoxymannojirimycin, mannostatin A), \u03b1-glucosidase inhibitors (N-butyl deoxynojirimycin, N-nonyl-deoxynojirimycin, castanospermine, celgosivir) (Clarke et al., 2020), and finally compounds like SNAP (Del Solar et al., 2020; Wang et al., 2018) and 4F-GalNAc (Marathe et al., 2010) which block various aspects of N- and O-glycan biosynthesis. These potentially represent off-the-shelf drugs and compounds that may be repurposed to reduce viral load and ameliorate SARS-CoV-2 related respiratory symptoms. Studies are currently underway in our laboratory to test these concepts, and extend the assay to authentic SARS-CoV-2 strains. Overall, while SARS-CoV-2 has developed a natural ability to enhance infectivity, we propose that glycoengineering may provide a strategy to take advantage of these evolutionary features to regulate viral entry and reduce disease transmission.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-RBD Spike (rabbit polyclonal)</td>\n      <td>Sino Biologicals (Beijing, China)</td>\n      <td>Cat#: 40592-T62</td>\n      <td>WB (1:5000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-S2 Spike (rabbit polyclonal)</td>\n      <td>Sino Biologicals (Beijing, China)</td>\n      <td>Cat#: 40590-T62</td>\n      <td>WB (1:5000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-human ACE2 AF933 (goat polyclonal)</td>\n      <td>R and D Systems</td>\n      <td>Cat#: AF933 RRID:AB_355722</td>\n      <td>Binding assay (1 ul)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-human ACE2 (mouse monoclonal)</td>\n      <td>R and D Systems</td>\n      <td>Cat#: MAB9332</td>\n      <td>Binding assay (1 ul)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-FLAG clone L5, (rat monoclonal)</td>\n      <td>Biolegend (San Diego, CA)</td>\n      <td>Cat# 637303 RRID:AB_1134265</td>\n      <td>WB (1:5000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-human F(ab\u2019)two conjugated with Alexa Fluor FITC (goat polyclonal)</td>\n      <td>Jackson ImmunoResearch</td>\n      <td>Cat# 109-096-098 RRID:AB_2337668</td>\n      <td>Binding assay (1:150)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-human F(ab\u2019)two conjugated with Alexa Fluor 647 (goat polyclonal)</td>\n      <td>Jackson ImmunoResearch</td>\n      <td>Cat# 109-606-098 RRID:AB_2337899</td>\n      <td>Binding assay (1:150)</td>\n    </tr>\n    <tr>\n      <td>Other (plant lectin)</td>\n      <td>PHA-L (Phaseolus vulgaris Leucoagglutinin, binds Gal\u03b21,4GlcNAc\u03b21,6(GlcNAc\u03b21,2Man\u03b11,3)Man\u03b11,3 on complex N-glycans)</td>\n      <td>Vector Laboratories</td>\n      <td>Cat# FL-1111 RRID:AB_2336655</td>\n      <td>Lectin binding study (1:200)</td>\n    </tr>\n    <tr>\n      <td>Other (plant lectin)</td>\n      <td>VVA-lectin (binds GalNAc\u03b1)</td>\n      <td>Vector Laboratories</td>\n      <td>Cat# AL-1233 RRID:AB_2336854</td>\n      <td>Lectin binding study (1:200)</td>\n    </tr>\n    <tr>\n      <td>Other (plant lectin)</td>\n      <td>SNA (Sambucus nigra lectin, binds primarily \u03b12,6 sialic acid)</td>\n      <td>Vector Laboratories</td>\n      <td>Cat# FL-1301 RRID:AB_2336719</td>\n      <td>Lectin binding study (1:200)</td>\n    </tr>\n    <tr>\n      <td>Other (plant lectin)</td>\n      <td>ECL (Erythrina cristagalli lectin, binds desialylated lactosamine Gal\u03b21,4GlcNAc chains)</td>\n      <td>Vector Laboratories</td>\n      <td>Cat# L-1140 RRID:AB_2336438</td>\n      <td>Lectin binding study (1:500)</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (HIV-1 lentivirus)</td>\n      <td>Lentivirus with DsRed reporter and various envelope proteins</td>\n      <td>This paper</td>\n      <td></td>\n      <td>Various pseudovirus types are made in this paper by authors</td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>Sialidase (Arthrobacter ureafaciens \u03b12\u20133,6,8,9-Neuraminidase)</td>\n      <td>New England BioLabs</td>\n      <td>Cat#: P0722S</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Kifunensine</td>\n      <td>Toronto Research Chemicals</td>\n      <td>Cat#: K450000</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cell line (Homo-Sapiens)</td>\n      <td>HEK 293T</td>\n      <td>ATCC</td>\n      <td>Cat# KCB 200744YJ RRID:CVCL_0063</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cell line (Homo-sapiens)</td>\n      <td>HEK 293T Lenti-X</td>\n      <td>Clontech/Takara Bio</td>\n      <td>Cat#: 632180</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cell line (Homo-sapiens)</td>\n      <td>HEK/ACE2</td>\n      <td>Michael Farzan (Scripps Research, Jupiter, FL)</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cell line (Homo-sapiens)</td>\n      <td>[O]-293T</td>\n      <td>This paper</td>\n      <td></td>\n      <td>C1GalT1 Knock out HEK 293 T cell</td>\n    </tr>\n    <tr>\n      <td>Cell line (Homo-sapiens)</td>\n      <td>[N]-293T</td>\n      <td>This paper</td>\n      <td></td>\n      <td>MGAT1 Knock out HEK 293 T cell</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>Spike-WT [v1]</td>\n      <td>Dr. Haisheng Yu (Institute of Laboratory Animal Science, Peking Union Medical College)</td>\n      <td></td>\n      <td>Plasmid to express full length Spike</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>ACE2 [v2]</td>\n      <td>This paper</td>\n      <td>Derived from RRID:Addgene_1786</td>\n      <td>Plasmid to express full length human ACE2</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>S1-Fc [v3]</td>\n      <td>This paper</td>\n      <td></td>\n      <td>Plasmid to express S1 as an human Fc IgG1 fusion protein</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>RBD-Fc [v4]</td>\n      <td>This paper</td>\n      <td></td>\n      <td>Plasmid to express RBD as an human Fc IgG1 fusion protein</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>ACE2-Fc [v5]</td>\n      <td>This paper</td>\n      <td></td>\n      <td>Plasmid to express ACE2 as an human Fc IgG1 fusion protein</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>Spike-mutant</td>\n      <td>Michael Farzan (Scripps Research, Jupiter, FL)</td>\n      <td></td>\n      <td>Plasmid to express Spike-mutant</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>Spike-delta</td>\n      <td>This paper</td>\n      <td></td>\n      <td>Plasmid to express Spike-delta on viral coat</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>psPAX2</td>\n      <td>Addgene</td>\n      <td>Cat#: 12260 RRID:Addgene_12260</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pLKO.1 TRC-DsRed</td>\n      <td>Buffone et al., 2013</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>VSVG</td>\n      <td>Addgene</td>\n      <td>Cat#: 12259 RRID:Addgene_12259</td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### Materials\n\nHuman embryonic kidney 293 T cells (\u2018293T\u2019) and Lenti-X 293 T cells were purchased from Clontech/Takara Bio (Mountain View, CA). Stable HEK293T/ACE2 cells were kindly provided by Michael Farzan (Scripps Research, Jupiter, FL). All cells were mycoplasma negative. These cell types were maintained in culture using Dulbecco\u2019s Modified Eagle Medium (DMEM) containing 10% fetal bovine serum, 1% Pen-Strep and 1% GlutaMAX supplement. All lectins were from Vector labs. These include VVA (Vicia Villosa lectin, binds GalNAc\u03b1 on O-glycans), SNA (Sambucus nigra lectin, binds primarily \u03b12,6 sialic acid), ECL (Erythrina cristagalli lectin, binds desialylated lactosamine Gal\u03b21,4GlcNAc chains) and PHA-L (Phaseolus vulgaris Leucoagglutinin, binds Gal\u03b21,4GlcNAc\u03b21,6(GlcNAc\u03b21,2Man\u03b11,3)Man\u03b11,3 on complex N-glycans). Goat anti-human ACE2 polyclonal antibody (AF933) and mouse anti-human ACE2 mAb MAB9332 were available from R and D Systems (Minneapolis, MA). Rabbit anti-SARS-CoV-2 RBD (40592-T62) and anti-S2 (40590-T62) pAbs were from Sino Biologicals (Beijing, China). Anti-FLAG clone L5 was from Biolegend (San Diego, CA). All secondary antibodies (Abs) were from Jackson ImmunoResearch (West Grove, PA). When necessary, lectins and Abs were labelled by addition of 25-fold molar excess succinimidyl ester coupled Alexa-405, Alexa-488, Alexa-555 or Alexa-647 dye (Fluoroprobes, Scottsdale, AZ) to protein suspended in phosphate buffered saline (PBS, pH 7.4) for 1 hr at room temperature (RT). Following this, the reaction was quenched with 1/10th volume 1 M Tris, and unreacted Alexa-dye was removed using 7 kDa molecular mass cutoff Zeba desalting spin columns (Thermo). Unless mentioned otherwise, all other reagents were from either Thermo-Fisher or Sigma Chemicals.\n\n### Molecular dynamics simulations\n\nThe ACE2-RBD complex structure (6LZG, Wang et al., 2020) was superimposed to the trimeric spike-protein state (6VYB Walls et al., 2020), in which one of the RBD domains is \u2018open\u2019 so that ACE2 is associated with the RBD domain in the open conformation. Missing residues in the structure were modeled using PyRosetta (Chaudhury et al., 2010). N-glycans were then added to the structure using Glycan Reader within CHARMM-GUI (Jo et al., 2008; Jo et al., 2011). The identity of the glycans was assigned based on a published work (Watanabe et al., 2020). The final structure contained glycan modifications at 54 spike Asn and 6 ACE2 Asn.\n\nAll simulations were performed using NAMD2 (Phillips et al., 2005) using the CHARMM36 parameters (Vanommeslaeghe et al., 2010). The complex was first placed in a water box of sufficient size to ensure a minimum 12 \u00c5 separation from the wall. Net charge in the molecule was neutralized by adding 841 K+ and 743 Cl- ions, resulting in 867,166 atoms total. Protein and glycan atoms were first fixed while water (TIP3) molecules were energy minimized for 10,000 steps. Next, the entire system was relaxed for another 10,000 steps, and the system temperature was gradually increased to 310 K in increments of 1 K with 120 fs of equilibration at each temperature. A time step of 2 fs was used. Constant temperature and pressure were maintained using the Langevin framework (Martyna et al., 1994). Long range electrostatic interactions were treated using the particle mesh Ewald method (Darden et al., 1993). The simulation was continued for 26.5 ns. Intermediate structures were saved every 10 ps.\n\n### Molecular biology\n\nA plasmid containing the Spike protein (2019-nCov_pcDNA3.1(+)-P2A-eGFP [v1]) was kindly provided by Dr. Haisheng Yu (Institute of Laboratory Animal Science, Peking Union Medical College). To create plasmids [v3] and [v4], the full S1 domain coding region (M1 to R682) or RBD coding region (R319 to F541) was PCR amplified and cloned into the NheI/XbaI or AgeI/XbaI sites, respectively of pCSCG-19FcHisP2AdTom (Lo et al., 2013). Human ACE2 plasmid was obtained from Addgene (#1786, Li et al., 2003). The entire ACE2 coding region was amplified in two segments to silence an EcoRI cutting site in the coding region and joined by overlap extension PCR. The resulting PCR fragment was cloned into the EcoRI/NheI site of pKLV2-CMVpuroBFP vector to obtain [v2]. Additionally, [v5] was created by PCR amplifying the region encoding ACE2 extracellular domain (Q18 to S740) and cloning into the AgeI/XbaI sites of pCSCG-19FcHisP2AdTom plasmid. Plasmids [v2]-[v5] will be distributed via Addgene.\n\n### CRISPR-Cas9 knockout cell lines\n\nHEK293T CRISPR-Cas9 cells were generated by transfecting wild-type 293 T cells with pX330-U6-Chimeric_BB-CBh-hSpCas9 vector (Addgene, Plasmid# 42230) carrying single-guide RNA (sgRNA) targeting either the Core-1 \u03b23Gal-T (C1GalT1, target site: GCAGATTCTAGCCAACATAA) or \u03b21,2 GlcNAc-transferase (MGAT1, GTGGGGCGCTATCCTCTTTGTGG). While knocking out the former gene results in cells expressing O-glycans truncated at the Tn-antigen stage (GalNAc\u03b1\u00b1sialic acid), the latter prevents the N-glycan processing beyond the oligomannose/Man5 stage (Stolfa et al., 2016). Isogenic clones of both cell lines were obtained by single-cell flow cytometry sorting using fluorescently conjugated VVA and PHA-L for selection. Knockouts were confirmed by Sanger sequencing of genomic DNA. For convenience, cells with disrupted O- and N-glycoprotein processing are termed \u2018[O]-293T\u2019 and \u2018[N]-293T\u2019, respectively.\n\n### Recombinant protein expression and purification\n\nAll Fc-his tag proteins (vectors [v3], [v4] and [v5]) were expressed by transient transfection of HEK 293 T cells using the calcium phosphate method (Buffone et al., 2013), in 3\u20134 150 mm cell culture Petri dishes per protein. Protein secreted into serum-free media were passed through a 1 mL HisTrap FF column (Cytiva, Marlborough, MA) at 1 mL/min. Following extensive washing with 20 mM sodium phosphate buffer containing 0.5 M NaCl and 10 mM imidazole (pH7.2), the bound protein was eluted by collecting 0.5 mL fractions upon step increasing imidazole concentration in the above buffer to 100 mM (8 mL) followed by 500 mM (8 mL).\n\nProtein concentration in each fraction was determined using a flow cytometry bead assay. To this end, briefly, 5 \u00b5m Polybead carboxylate microspheres (Polysciences, Warrington, PA) were covalently coupled with goat anti-human pAb using 1-Ethyl-3-(3-dimethylaminopropyl)carbodiimide/EDC chemistry (Marathe et al., 2008). 1 \u03bcL of each fraction collected during HisTRAP elution was incubated with these beads for 10 min at RT, before washing and addition of 1:200 diluted FITC conjugated secondary Ab for an additional 10 min. Bead-bound Fc-protein was then quantified using flow cytometry. All fractions containing the Fc-fusion proteins were then pooled and spin concentrated to\u00a0~150 \u03bcL volume. Buffer was exchanged to HEPES buffer (30 mM HEPES, 110 mM NaCl, 10 mM KCl, 10 mM glucose, 2 mM MgCl2) using 7 kDa Zeba desalting columns. Final protein concentration was determined in ELISA format by using a calibrant Fc-protein of known concentration that was verified to be\u00a0>95% pure based on silver stain analysis. Here, a common anti-human HRP conjugated Ab was used to quantify both the Fc- proteins described in this manuscript and the calibrant Fc in the same assay.\n\nIdentity of expressed protein and also viral Spike was determined using western blotting with anti-Fc (Jackson), anti-RBD (Sino Biologicals), anti-S2 (Sino Biologicals) and anti-ACE2 (R and D Systems) pAbs. Anti-FLAG mAb L5 was also used for western blotting of Spike-mutant virus as it carried a C-terminal FLAG tag.\n\n### Flow cytometry\n\nStandard flow cytometry methods were applied in some instances to measure cell-surface protein expression and lectin binding, using directly conjugated fluorescent reagents (Stolfa et al., 2016). Here the lectins/Abs were added to cells for 15 min, prior to performing a quick wash followed by cytometry analysis. These data are presented as Geometric Mean Fluorescence Intensity (\u2018GMFI\u2019).\n\n### Spike-protein-ACE2 binding studies\n\nFull-length Spike-protein and human ACE2 were expressed in 293 T cells (wild-type, [O]-293T and [N]-293T) by transient transfection using the calcium phosphate method (Buffone et al., 2013). These cells are called \u2018293 T/S\u2019 or \u2018293T/ACE2\u2019 when expressed on wild-type HEK293T cells, and \u2018[O]-293 T/S\u2019, \u2018[O]-293T/ACE2\u2019, \u2018[N]-293 T/S\u2019 or \u2018[N]-293T/ACE2\u2019 when expressed in the glycosylation-KO mutants. Here, just prior to functional studies, cells were released from the culture substrate 48\u201372 hr after transfection using PBS containing 5 mM EDTA, washed and re-suspended in HEPES buffer containing 1.5 mM CaCl2. During the binding studies, 0\u20134 \u03bcg/mL S1-Fc, RBD-Fc or ACE2-Fc were added to 20\u00a0\u00d7\u00a0106 cells/mL at 4\u00b0C for 15 min. Following this, 1:200 diluted Alexa-647 (Ax647) conjugated goat anti-human-Fc (Fab')2 Ab was added for an additional 10 min. The cells were then washed, resuspended and read immediately using a 4-laser BD Fortessa flow cytometer. Transfected cells were gated based on EGFP expression for Fc-protein binding studies performed with 293T/S-protein cells, and BFP expression for studies using 293T/ACE2 cells. cell-surface expression of ACE2 and Spike on transiently transfected cells was also monitored on experimental day using flow cytometry. These studies used Alexa-647 conjugated anti-ACE2 (MAB9332, R and D systems) and anti-RBD (Sino Biologicals) antibodies. In some cases, binding studies were also performed with stable 293T/ACE2 cells, in which case fluorescence gating was not necessary.\n\nIn some assays, cells were treated with sialidase (200 U/mL Arthrobacter ureafaciens \u03b12\u20133,6,8,9-Neuraminidase, New England BioLabs) for 1 hr at 37\u00b0C, and washed using HEPES buffer prior to the binding assay. Sialidase activity was verified based on SNA and ECL staining. In this case, control cells were treated identically, except that sialidase was withheld. SNA was directly conjugated with Alexa-555 and ECL was conjugated with Alexa-647 in order to simplify the implementation of dual color cytometry measurements.\n\n### Pseudovirus production and characterization\n\nSARS-CoV-2 Spike-protein virus was generated by replacing the classical Vesicular stomatitis virus (VSV-G) envelope protein of 3rd generation lentivirus with either wild-type Spike protein (\u2018Spike-WT\u2019, [v1]) or a mutant Spike plasmid (\u2018Spike-mutant\u2019) containing an \u2018SRAS\u2019 sequence in place of furin sensitive \u2018RRAR\u2019 (gift from Michael Farzan, Quinlan et al., 2020). In an additional variant called \u2018Spike-delta\u2019, the \u2018SRAS\u2019 site in Spike-mutant was replaced by a single \u2018A\u2019. To produce these viruses, Lenti-X 293 T cells (Takara Bio, MountainView, CA) were transiently transfected with 17.8 \u00b5g of pLKO.1 TRC-DsRed, 22 \u00b5g of psPAX2 and 5.8 \u00b5g of VSVG (or 9.9 \u00b5g of v1 or 8.6 \u00b5g of Spike-mutant/Spike-delta) plasmid in a 15 cm dish using the calcium phosphate method (Buffone et al., 2013). Six hours post-transfection, the medium was changed to virus collection medium (OPTIMEM + 10% FBS). The first batch of virus was collected 18\u201320 hr thereafter. Virus collection medium was then supplemented with 10 mM sodium butyrate. The second virus batch was collected 18\u201320 hr later. Both virus batches were pooled, filtered through 0.45 \u03bcm filter and ultra-centrifuged at 50,000\u00a0\u00d7\u00a0g to concentrate the particles. The viral pellet was resuspended in OPTIMEM + 10% FBS, aliquoted and stored at \u221280\u00b0C until use.\n\nFollowing the above protocol, 14 additional virus types were generated in this manuscript. This includes virus with envelope composed of: i. VSVG, ii. Spike-WT or iii. Spike-mutant that were produced in either: a. wild-type HEK293T, b. [O]-293 T c. [N]-293T or d. wild-type HEK293T being cultured in the presence of 15 \u00b5M kifunensine (Toronto Research Chemicals, Canada). In addition, Spike-delta was produced in the presence and absence of 15 \u00b5M kifunensine. For many of the production lots, viral titer was determined using the lentiviral p24 ELISA kit from Takara Bio (MountainView, CA) following manufacturer\u2019s instructions. Virus concentration was also verified by western blotting with anti-S2 pAb or anti-FLAG to detect equivalent amounts of Spike protein in each of the preparations.\n\n### Pseudovirus entry assay\n\nIn order to transduce cells, virus was added at various titers indicated in the main manuscript to either wild-type 293Ts, stable 293T/ACE2 cell lines or various glycoengineered variants that transiently overexpressed ACE2 (at 48 hr post-transfection). Such infection was performed in the presence of 8 \u00b5g/ml polybrene as described previously (Buffone et al., 2013). In some cases, either the virus or cells were treated with sialidase for 1 hr at 37\u00b0C under conditions described above, prior to transduction. Virus was removed and fresh medium was added 8 hr post-transduction. DsRed fluorescence was monitored on a daily basis. All flow cytometry and microscopy data presented in this manuscript correspond to the 72 hr time point. Here, DsRed positive cells and the arithmetic mean fluorescence intensity (\u2018MFI\u2019) of all cells in the PE-channel were also quantified using flow cytometry (BD Fortessa X-20). Microscopy images were acquired using a Zeiss AxioObserver instrument (10X/0.25 NA or 20X/0.4 NA objective).\n\n### Statistics\n\nAll data are presented as mean\u00a0\u00b1\u00a0standard deviation. Dual comparisons were performed using the two-tailed Student\u2019s t-test. ANOVA followed by the Tukey post-test was used for multiple comparisons. p<0.05 was considered to be statistically significant. Number of repeats are specified in individual panels.\n",
+      "created_at": "2025-12-02T20:49:36.913453Z"
+    },
+    {
+      "id": "87a83fdd-48bc-4971-b493-8a96f91ac12b",
+      "submission_id": "3a20c093-096a-4a27-9f99-7dd674cce312",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Malcolm J McConville, The University of Melbourne Australia\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.61552.sa1](https://doi.org/10.7554/eLife.61552.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nThis work explores the role of N- and O-glycosylation of the SARS-COV-2 Spike protein and its receptor on viral binding and entry into host cells. While changes in the glycosylation of either the Spike protein or the ACE receptor have only modest effects in binding, disruption of N-glycosylation processing was shown to have a profound effect on the internalization and proteolytic processing of the spike protein. Chemical inhibitors of N-glycosylation also inhibited pseudovirus internalization, suggesting that therapeutic targeting of glycoenzymes could be used to reduce viral entry and transmission.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Inhibition of SARS-CoV-2 viral entry upon blocking N-glycan elaboration\" for consideration by eLife. Your article has been reviewed by three peer reviewers, including Malcolm J McConville as the Reviewing Editor and Reviewer #1, and the evaluation has been overseen by Bavesh Kana as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Morten Thaysen-Andersen (Reviewer #2).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nWe would like to draw your attention to changes in our revision policy that we have made in response to COVID-19 (https://elifesciences.org/articles/57162). Specifically, when editors judge that a submitted work as a whole belongs in eLife but that some conclusions require a modest amount of additional new data, as they do with your paper, we are asking that the manuscript be revised to either limit claims to those supported by data in hand, or to explicitly state that the relevant conclusions require additional supporting data.\n\nOur expectation is that the authors will eventually carry out the additional experiments and report on how they affect the relevant conclusions either in a preprint on bioRxiv or medRxiv, or if appropriate, as a Research Advance in eLife, either of which would be linked to the original paper.\n\nThis is a very interesting, well-conceived and highly relevant study exploring the role of glycosylation of the SARS-CoV-2 Spike protein and corresponding host ACE2 receptor on viral binding and entry. The authors provide evidence that N- and O-glycosylation of either the viral Spike protein or the host receptor has little effect on viral binding to host cells, but has a dramatic effect on protease cleavage of the Spike protein to allow viral entry.\n\nSummary:\n\nThe manuscript explores the impact of N- and O-linked glycosylation on SARS-CoV-2 viral binding to human ACE2 and entry into host cells. Both the viral Spike-protein and ACE2 are known to be heavily glycosylated, yet the functional relevance of the Spike and ACE2 glycans remains largely uncharacterized. In this submission, recombinant expression of several variants of the viral Spike-protein and human ACE2, together with CRISPR-Cas9-driven disruption of Core-1 \u03b23GalT and MGAT1 enzymes were employed to study glycobiology of viral-host interactions. This was combined with the use of chemical inhibitors of key glycan processing enzymes, sialidase treatment, in addition to flow cytometry- and microscopy-based binding/entry assays using pseudoviruses. The study provides robust evidence for the involvement of protein glycosylation in key parts of the viral infection pathway including controlling the furin cleavage rate. On the other hand, the data suggest that Spike and ACE2 protein glycosylation is not required for ACE2-mediated direct binding and viral entry (at least in this model system). The manuscript is highly relevant and timely. The author team is one of the few globally that have the required expertise to study the glycobiology of COVID-19.\n\nRevisions for this paper:\n\n1) While the reviewers noted that the authors had undertaken some studies to confirm that the genetic or pharmacological inhibition of N-/O-glycosylation in HEK293 cells had the expected effects on protein glycosylation, the lack of more robust and direct biochemical characterization of the glycosylation changes in the recombinant glycoproteins used in this study (other than the lectin binding studies) was considered a significant shortcoming. For example, strong biochemical validation of the level of sialylation of the ACE2 and Spike proteins expressed in HEK293 cells or effectiveness of the sialidase treatment was lacking. Similarly, validation of the protein-specific changes in glycosylation arising from MGAT1 and C1GalT1 knock-out was also lacking. Further analysis of the S-protein glycoforms on the pseudovirus is warranted for several reasons including:\n\ni) Most analyses of S1 glycosylation to date have been done on recombinant proteins that passes through the secretory pathway with canonical topology. In contrast, the S1 protein embedded in pseudovirus that has budded into the secretory pathway at the ERIC will be in a different membrane, which may alter the extent to which they can be accessed by Golgi glycosyltransferases/glycosidases.\n\nii) A previous study has reported that levels of O-glycosylation of the S-protein was negligible, contrary to the phenotype observed in this study.\n\niii) If wild-type Spike and ACE2 carry low levels of sialylation (as expected from the chosen HEK293 cell expression system), then the effect of the sialidase treatment would also be expected to be low. However, sialylation may still play crucial in vivo roles in virus-host interactions in human cells that have higher levels of sialylation than HEK293 cells.\n\nBased on these concerns, it is strongly suggested that the authors provide additional biochemical characterization of the S1 and ACE2 proteins. However, if this is not possible within a reasonable time frame, it is essential that the authors provide a point-by-point discussion of limitations of their current glycan analysis, as well as the use of the HEK293 cells and pseudovirus.\n\n2) In subsection \u201cKnocking out N-glycans on Spike abrogates viral entry\u201d it is mentioned that the Spike pseudovirus with disrupted MGAT1 showed less Spike protein on the surface. This is an important observation that should be expanded on in the manuscript. The altered binding and entry of this variant may arise from either aberrant glycosylation and/or less Spike protein on the surface. The cell surface expression level could be impacted by the glycosylation pattern of the protein. It is important to discuss such points in the manuscript to assist the reader and to leave open the possibility that altered binding and viral entry may be a result of less functional expression of Spike on the protein surface rather than a more direct involvement of the glycans in binding or protection against furin site cleavage.\n\n3) Fc was used as the fusion protein for expression of S1, RBD and ACE2 \u2013 this Fc domain would also be glycosylated in these systems \u2013 has this been taken into account? Similarly, were the O-links also expressed in this system? Figure 1B does not show whether and where glycosylation was added to the Fc-His expressed proteins.\n\n4) There seems to be some contradiction in the manuscript as to whether the Spike-mutant has increased or decreased proteolysis. Since the furin hydrolysis sequence has been modified to be less susceptible to hydrolysis by the arginine deletions it would be expected to cause decreased hydrolysis of the Spike proteins as is described. However, Figure 4F indicates that the Spike-mutant has increased proteolysis and thus enhanced viral entry. In contrast in Figure 3 the Spike-mutant behaves the same as the wild type in terms of viral entry although it is described as having reduced proteolysis\n\n5) As the data also described O-glycosylation of S1/ACE2 proteins, the title should reflect changes in \u201cprotein glycosylation...\u201d rather than just N-glycosylation.\n\nRevisions expected in follow-up work:\n\n6) Biochemical characterization of glycosylation (N-/O-/sialylation) of S1 protein in pseudovirus generated from HEK293 cells following inhibitor treatment or loss of expression of MGAT1 and C1 GatT1.\n",
+      "created_at": "2025-12-02T20:49:36.913453Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T20:49:36.913453Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T20:49:36.913453Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "aadcc9e1-06d1-4dd5-83af-6206ba15121d",
+      "content_id": "596d4b6f-dab1-4cb5-9e9c-4d7368dab8d2",
+      "claim_id": "C1",
+      "claim": "The Spike protein of SARS-CoV-2 is extensively glycosylated.",
+      "claim_type": "EXPLICIT",
+      "source": "The Spike protein of SARS-CoV-2, its receptor-binding domain (RBD), and its primary receptor ACE2 are extensively glycosylated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in the abstract as a known characteristic of the Spike protein.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:49:36.913453Z"
+    },
+    {
+      "id": "4671d877-3615-4323-9763-92b39d0ca198",
+      "content_id": "596d4b6f-dab1-4cb5-9e9c-4d7368dab8d2",
+      "claim_id": "C2",
+      "claim": "The receptor-binding domain (RBD) of SARS-CoV-2 Spike protein is extensively glycosylated.",
+      "claim_type": "EXPLICIT",
+      "source": "The Spike protein of SARS-CoV-2, its receptor-binding domain (RBD), and its primary receptor ACE2 are extensively glycosylated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in the abstract as a known characteristic of the RBD.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:49:36.913453Z"
+    },
+    {
+      "id": "04b1a758-0e67-4b15-a614-7db2d84f97df",
+      "content_id": "596d4b6f-dab1-4cb5-9e9c-4d7368dab8d2",
+      "claim_id": "C3",
+      "claim": "ACE2 is extensively glycosylated.",
+      "claim_type": "EXPLICIT",
+      "source": "The Spike protein of SARS-CoV-2, its receptor-binding domain (RBD), and its primary receptor ACE2 are extensively glycosylated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in the abstract as a known characteristic of ACE2.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:49:36.913453Z"
+    },
+    {
+      "id": "48b6fc30-badf-4b76-b812-7b7e0bd0e55e",
+      "content_id": "596d4b6f-dab1-4cb5-9e9c-4d7368dab8d2",
+      "claim_id": "C4",
+      "claim": "N- and O-glycans have only minor contribution to Spike-ACE2 binding.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that N- and O-glycans had only minor contribution to Spike-ACE2 binding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Experimental observation from binding studies reported in the abstract.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:49:36.913453Z"
+    },
+    {
+      "id": "e19e6d8e-38a3-4582-b0ef-ddf8d6840d9e",
+      "content_id": "596d4b6f-dab1-4cb5-9e9c-4d7368dab8d2",
+      "claim_id": "C5",
+      "claim": "N- and O-glycans play a major role in regulating viral entry.",
+      "claim_type": "EXPLICIT",
+      "source": "However, these carbohydrates played a major role in regulating viral entry.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Experimental observation from viral entry assays reported in the abstract.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:49:36.913453Z"
+    },
+    {
+      "id": "ef9be0ca-8cbf-46c0-beab-4d19a37cee07",
+      "content_id": "596d4b6f-dab1-4cb5-9e9c-4d7368dab8d2",
+      "claim_id": "C6",
+      "claim": "Blocking N-glycan biosynthesis at the oligomannose stage using genetic approaches dramatically reduced viral entry into ACE2 expressing HEK293T cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Blocking N-glycan biosynthesis at the oligomannose stage using both genetic approaches and the small molecule kifunensine dramatically reduced viral entry into ACE2 expressing HEK293T cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Experimental observation from viral entry assays using CRISPR-Cas9 knockout cells reported in the abstract.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:49:36.913453Z"
+    },
+    {
+      "id": "26393341-6261-4b5d-9b92-5849e32d672f",
+      "content_id": "596d4b6f-dab1-4cb5-9e9c-4d7368dab8d2",
+      "claim_id": "C7",
+      "claim": "Blocking N-glycan biosynthesis at the oligomannose stage using kifunensine dramatically reduced viral entry into ACE2 expressing HEK293T cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Blocking N-glycan biosynthesis at the oligomannose stage using both genetic approaches and the small molecule kifunensine dramatically reduced viral entry into ACE2 expressing HEK293T cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Experimental observation from viral entry assays using kifunensine treatment reported in the abstract.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:49:36.913453Z"
+    },
+    {
+      "id": "8441c7a5-bfa1-443b-8440-ef0b1d18fe46",
+      "content_id": "596d4b6f-dab1-4cb5-9e9c-4d7368dab8d2",
+      "claim_id": "C8",
+      "claim": "Blocking O-glycan elaboration partially blocked viral entry.",
+      "claim_type": "EXPLICIT",
+      "source": "Blocking O-glycan elaboration also partially blocked viral entry.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Experimental observation from viral entry assays reported in the abstract.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:49:36.913453Z"
+    },
+    {
+      "id": "a5ce35d5-7338-4f3d-9550-e3c61056c825",
+      "content_id": "596d4b6f-dab1-4cb5-9e9c-4d7368dab8d2",
+      "claim_id": "C9",
+      "claim": "Inhibition of N-glycan biosynthesis enhanced Spike-protein proteolysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Among them, inhibition of N-glycan biosynthesis enhanced Spike-protein proteolysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Experimental observation from western blot analysis reported in the abstract.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:49:36.913453Z"
+    },
+    {
+      "id": "31f2ff8a-0225-4693-91c8-d187613bc228",
+      "content_id": "596d4b6f-dab1-4cb5-9e9c-4d7368dab8d2",
+      "claim_id": "C10",
+      "claim": "Enhanced Spike-protein proteolysis can reduce RBD presentation on virus.",
+      "claim_type": "EXPLICIT",
+      "source": "This could reduce RBD presentation on virus, lowering binding to host ACE2 and decreasing viral entry.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Mechanistic interpretation of experimental data presented in the abstract.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:49:36.913453Z"
+    },
+    {
+      "id": "23c24211-08d1-4cd0-b956-28478f1368e2",
+      "content_id": "596d4b6f-dab1-4cb5-9e9c-4d7368dab8d2",
+      "claim_id": "C11",
+      "claim": "Reduced RBD presentation on virus lowers binding to host ACE2.",
+      "claim_type": "EXPLICIT",
+      "source": "This could reduce RBD presentation on virus, lowering binding to host ACE2 and decreasing viral entry.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Mechanistic interpretation of experimental data presented in the abstract.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:49:36.913453Z"
+    },
+    {
+      "id": "880ddfb1-f860-4012-a38b-fecb917d12dc",
+      "content_id": "596d4b6f-dab1-4cb5-9e9c-4d7368dab8d2",
+      "claim_id": "C12",
+      "claim": "Reduced RBD presentation on virus decreases viral entry.",
+      "claim_type": "EXPLICIT",
+      "source": "This could reduce RBD presentation on virus, lowering binding to host ACE2 and decreasing viral entry.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Mechanistic interpretation of experimental data presented in the abstract.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:49:36.913453Z"
+    },
+    {
+      "id": "05deafa5-43de-4341-bf54-6b38b07bf938",
+      "content_id": "596d4b6f-dab1-4cb5-9e9c-4d7368dab8d2",
+      "claim_id": "C13",
+      "claim": "Chemical inhibitors of glycosylation may be evaluated for COVID-19.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, chemical inhibitors of glycosylation may be evaluated for COVID-19.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Proposed therapeutic application based on experimental findings in the abstract.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:49:36.913453Z"
+    },
+    {
+      "id": "2a83d348-fa7c-4b3c-a5db-4498a8c0d954",
+      "content_id": "596d4b6f-dab1-4cb5-9e9c-4d7368dab8d2",
+      "claim_id": "C14",
+      "claim": "SARS-CoV-2 is the virus causing the global pandemic 'coronavirus diseases 2019' (COVID-19).",
+      "claim_type": "EXPLICIT",
+      "source": "SARS-CoV-2 is the virus causing the global pandemic 'coronavirus diseases 2019' (COVID-19).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Established scientific knowledge cited in the introduction with reference to Lu et al., 2020.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:49:36.913453Z"
+    },
+    {
+      "id": "985dbab4-8e04-4d77-9ecf-eca34a3fe1c1",
+      "content_id": "596d4b6f-dab1-4cb5-9e9c-4d7368dab8d2",
+      "claim_id": "C15",
+      "claim": "SARS-CoV-2 is a zoonotic beta-coronavirus from bats.",
+      "claim_type": "EXPLICIT",
+      "source": "This is a zoonotic beta-coronavirus from bats that causes severe acute respiratory syndrome (Lu et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Established scientific knowledge cited in the introduction with reference to Lu et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:49:36.913453Z"
+    },
+    {
+      "id": "2ebc3c11-5f40-4e8b-a2e5-2c114d21c171",
+      "content_id": "596d4b6f-dab1-4cb5-9e9c-4d7368dab8d2",
+      "claim_id": "C16",
+      "claim": "SARS-CoV-2 causes severe acute respiratory syndrome.",
+      "claim_type": "EXPLICIT",
+      "source": "This is a zoonotic beta-coronavirus from bats that causes severe acute respiratory syndrome (Lu et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Established scientific knowledge cited in the introduction with reference to Lu et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:49:36.913453Z"
+    },
+    {
+      "id": "2d5ebd73-3bf8-4ba2-94d6-adea3cae8c8f",
+      "content_id": "596d4b6f-dab1-4cb5-9e9c-4d7368dab8d2",
+      "claim_id": "C17",
+      "claim": "SARS-CoV-2 unleashes a cytokine storm to alter immune response.",
+      "claim_type": "EXPLICIT",
+      "source": "Its effects on human physiology extends well beyond the lung as it unleashes a cytokine storm to alter immune response (Chen et al., 2020) and cause disseminated intravascular coagulation (Lillicrap, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Established scientific knowledge cited in the introduction with reference to Chen et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:49:36.913453Z"
+    },
+    {
+      "id": "8a7e748c-d19e-4a6b-8218-eb4f3bc90592",
+      "content_id": "596d4b6f-dab1-4cb5-9e9c-4d7368dab8d2",
+      "claim_id": "C18",
+      "claim": "SARS-CoV-2 causes disseminated intravascular coagulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Its effects on human physiology extends well beyond the lung as it unleashes a cytokine storm to alter immune response (Chen et al., 2020) and cause disseminated intravascular coagulation (Lillicrap, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Established scientific knowledge cited in the introduction with reference to Lillicrap, 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:49:36.913453Z"
+    },
+    {
+      "id": "72fa221c-1f40-44c2-9ee0-3c6eb47ccd38",
+      "content_id": "596d4b6f-dab1-4cb5-9e9c-4d7368dab8d2",
+      "claim_id": "C19",
+      "claim": "SARS-CoV-2 exhibits multiorgan tropism that impacts kidney, liver, heart and brain function.",
+      "claim_type": "EXPLICIT",
+      "source": "It also exhibits multiorgan tropism that impacts kidney, liver, heart and brain function (Puelles et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Established scientific knowledge cited in the introduction with reference to Puelles et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:49:36.913453Z"
+    },
+    {
+      "id": "d2063b7f-acac-4b27-a0f1-6612b37e39f1",
+      "content_id": "596d4b6f-dab1-4cb5-9e9c-4d7368dab8d2",
+      "claim_id": "C20",
+      "claim": "The SARS-CoV-2 Spike protein is critical for viral attachment, fusion and entry into host.",
+      "claim_type": "EXPLICIT",
+      "source": "Among its structural elements, the SARS-CoV-2 Spike protein is critical for viral attachment, fusion and entry into host (Hoffmann et al., 2020a; Li et al., 2003; Lan et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Established scientific knowledge cited in the introduction with references to Hoffmann et al., 2020a; Li et al., 2003; Lan et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:49:36.913453Z"
+    },
+    {
+      "id": "5aaab3a7-a61c-48b5-bff3-e1aeea31b976",
+      "content_id": "596d4b6f-dab1-4cb5-9e9c-4d7368dab8d2",
+      "claim_id": "C21",
+      "claim": "The RBD region of Spike enables binding to its primary human cellular receptor, angiotensin-converting enzyme-2 (ACE2).",
+      "claim_type": "EXPLICIT",
+      "source": "The RBD region of Spike enables binding to its primary human cellular receptor, angiotensin-converting enzyme-2 (ACE2), which is ubiquitously expressed on epithelial, endothelial and blood cells (Li et al., 2003; Hamming et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Established scientific knowledge cited in the introduction with references to Li et al., 2003; Hamming et al., 2004.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:49:36.913453Z"
+    },
+    {
+      "id": "88245c9e-4b9b-4b3e-aa75-a6ea837acc1c",
+      "content_id": "596d4b6f-dab1-4cb5-9e9c-4d7368dab8d2",
+      "claim_id": "C22",
+      "claim": "ACE2 is ubiquitously expressed on epithelial, endothelial and blood cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The RBD region of Spike enables binding to its primary human cellular receptor, angiotensin-converting enzyme-2 (ACE2), which is ubiquitously expressed on epithelial, endothelial and blood cells (Li et al., 2003; Hamming et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Established scientific knowledge cited in the introduction with references to Li et al., 2003; Hamming et al., 2004.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:49:36.913453Z"
+    },
+    {
+      "id": "caff375d-1ccb-439f-ac57-16a976786abe",
+      "content_id": "596d4b6f-dab1-4cb5-9e9c-4d7368dab8d2",
+      "claim_id": "C23",
+      "claim": "A role for heparan sulfates in viral entry has been proposed.",
+      "claim_type": "EXPLICIT",
+      "source": "A role for heparan sulfates in viral entry has also been proposed (Clausen et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Proposed mechanism cited in the introduction with reference to Clausen et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:49:36.913453Z"
+    },
+    {
+      "id": "2f6f7887-653e-4b14-8578-c410c8f5a254",
+      "content_id": "596d4b6f-dab1-4cb5-9e9c-4d7368dab8d2",
+      "claim_id": "C24",
+      "claim": "Viral fusion and entry depends on the furin/RRAR-S site located between the Spike S1 and S2 subunits.",
+      "claim_type": "EXPLICIT",
+      "source": "Once bound, viral fusion and entry depends on two proteolysis sites, the furin/RRAR-S site located between the Spike S1 and S2 subunits, and a second S2'/SKR-S site (Belouzard et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Established scientific knowledge cited in the introduction with reference to Belouzard et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:49:36.913453Z"
+    },
+    {
+      "id": "0115aa3d-bb93-4a23-99ef-1e5d8012a0ac",
+      "content_id": "596d4b6f-dab1-4cb5-9e9c-4d7368dab8d2",
+      "claim_id": "C25",
+      "claim": "Viral fusion and entry depends on the S2'/SKR-S site.",
+      "claim_type": "EXPLICIT",
+      "source": "Once bound, viral fusion and entry depends on two proteolysis sites, the furin/RRAR-S site located between the Spike S1 and S2 subunits, and a second S2'/SKR-S site (Belouzard et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Established scientific knowledge cited in the introduction with reference to Belouzard et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:49:36.913453Z"
+    },
+    {
+      "id": "e77f0e24-cc8f-4ec4-b1d1-1dd3997a0a30",
+      "content_id": "596d4b6f-dab1-4cb5-9e9c-4d7368dab8d2",
+      "claim_id": "C26",
+      "claim": "TMPRSS2 (transmembrane protease, serine 2) may aid viral entry.",
+      "claim_type": "EXPLICIT",
+      "source": "A variety of enzymes including TMPRSS2 (transmembrane protease, serine 2) and cathepsin-L may aid viral entry (Hoffmann et al., 2020b; Matsuyama et al., 2005; Shang et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Established scientific knowledge cited in the introduction with references to Hoffmann et al., 2020b; Matsuyama et al., 2005; Shang et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:49:36.913453Z"
+    },
+    {
+      "id": "a9e36f29-1624-4a68-9c7f-1beafeb69b71",
+      "content_id": "596d4b6f-dab1-4cb5-9e9c-4d7368dab8d2",
+      "claim_id": "C27",
+      "claim": "Cathepsin-L may aid viral entry.",
+      "claim_type": "EXPLICIT",
+      "source": "A variety of enzymes including TMPRSS2 (transmembrane protease, serine 2) and cathepsin-L may aid viral entry (Hoffmann et al., 2020b; Matsuyama et al., 2005; Shang et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Established scientific knowledge cited in the introduction with references to Hoffmann et al., 2020b; Matsuyama et al., 2005; Shang et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:49:36.913453Z"
+    },
+    {
+      "id": "3075cc18-8731-43d7-a8e3-4ad424cbebd7",
+      "content_id": "596d4b6f-dab1-4cb5-9e9c-4d7368dab8d2",
+      "claim_id": "C28",
+      "claim": "The Spike protein has 22 N-glycosylation sites.",
+      "claim_type": "EXPLICIT",
+      "source": "Both the viral Spike-protein and ACE2 receptor are extensively glycosylated, with a majority of the 22 N-glycosylation sites of Spike and 7 N-glycosylation sites of ACE2 bearing carbohydrates (Walls et al., 2020; Wrapp et al., 2020; Shajahan et al., 2020a; Figure 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Established scientific knowledge cited in the introduction with references to Walls et al., 2020; Wrapp et al., 2020; Shajahan et al., 2020a.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:49:36.913453Z"
+    },
+    {
+      "id": "ef318d67-3a9a-469d-8b97-d9156702b08e",
+      "content_id": "596d4b6f-dab1-4cb5-9e9c-4d7368dab8d2",
+      "claim_id": "C29",
+      "claim": "ACE2 has 7 N-glycosylation sites.",
+      "claim_type": "EXPLICIT",
+      "source": "Both the viral Spike-protein and ACE2 receptor are extensively glycosylated, with a majority of the 22 N-glycosylation sites of Spike and 7 N-glycosylation sites of ACE2 bearing carbohydrates (Walls et al., 2020; Wrapp et al., 2020; Shajahan et al., 2020a; Figure 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Established scientific knowledge cited in the introduction with references to Walls et al., 2020; Wrapp et al., 2020; Shajahan et al., 2020a.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:49:36.913453Z"
+    },
+    {
+      "id": "4c7e9347-a8cf-41ea-91b6-adaf85e55226",
+      "content_id": "596d4b6f-dab1-4cb5-9e9c-4d7368dab8d2",
+      "claim_id": "C30",
+      "claim": "A majority of the 22 N-glycosylation sites of Spike bear carbohydrates.",
+      "claim_type": "EXPLICIT",
+      "source": "Both the viral Spike-protein and ACE2 receptor are extensively glycosylated, with a majority of the 22 N-glycosylation sites of Spike and 7 N-glycosylation sites of ACE2 bearing carbohydrates (Walls et al., 2020; Wrapp et al., 2020; Shajahan et al., 2020a; Figure 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Established scientific knowledge cited in the introduction with references to Walls et al., 2020; Wrapp et al., 2020; Shajahan et al., 2020a.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:49:36.913453Z"
+    },
+    {
+      "id": "fdc36008-9291-48ef-af52-bf62e3c4e4a8",
+      "content_id": "596d4b6f-dab1-4cb5-9e9c-4d7368dab8d2",
+      "claim_id": "C31",
+      "claim": "A majority of the 7 N-glycosylation sites of ACE2 bear carbohydrates.",
+      "claim_type": "EXPLICIT",
+      "source": "Both the viral Spike-protein and ACE2 receptor are extensively glycosylated, with a majority of the 22 N-glycosylation sites of Spike and 7 N-glycosylation sites of ACE2 bearing carbohydrates (Walls et al., 2020; Wrapp et al., 2020; Shajahan et al., 2020a; Figure 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Established scientific knowledge cited in the introduction with references to Walls et al., 2020; Wrapp et al., 2020; Shajahan et al., 2020a.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:49:36.913453Z"
+    },
+    {
+      "id": "c927b9e7-c042-468a-ad7a-f45e60d25cfe",
+      "content_id": "596d4b6f-dab1-4cb5-9e9c-4d7368dab8d2",
+      "claim_id": "C32",
+      "claim": "The exact distribution of oligomannose, hybrid, complex, sialylated, and fucosylated structures in Spike and ACE2 is likely dictated both by the protein structure and host expression system.",
+      "claim_type": "EXPLICIT",
+      "source": "The exact distribution of the oligomannose, hybrid, complex, sialylated, and fucosylated structures in these macromolecules is likely dictated both by the protein structure and host expression system (Shajahan et al., 2020b; Watanabe et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Established scientific knowledge cited in the introduction with references to Shajahan et al., 2020b; Watanabe et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:49:36.913453Z"
+    },
+    {
+      "id": "5b16218b-aeb6-4591-84a5-500eb67e40de",
+      "content_id": "596d4b6f-dab1-4cb5-9e9c-4d7368dab8d2",
+      "claim_id": "C33",
+      "claim": "O-linked glycans are reported on both Spike protein and ACE2.",
+      "claim_type": "EXPLICIT",
+      "source": "O-linked glycans are also reported on both proteins (Shajahan et al., 2020a; Shajahan et al., 2020b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Established scientific knowledge cited in the introduction with references to Shajahan et al., 2020a; Shajahan et al., 2020b.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:49:36.913453Z"
+    },
+    {
+      "id": "3aa2eba8-8972-464f-aa44-fd28fc57a053",
+      "content_id": "596d4b6f-dab1-4cb5-9e9c-4d7368dab8d2",
+      "claim_id": "C34",
+      "claim": "Glycans have been proposed to function in immunological shielding.",
+      "claim_type": "EXPLICIT",
+      "source": "A variety of functions have been proposed for these glycans including immunological shielding (Watanabe et al., 2020), direct regulation of Spike-ACE2 binding (Bernardi et al., 2020), and control of Spike up/down conformation (Casalino et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Proposed function cited in the introduction with reference to Watanabe et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:49:36.913453Z"
+    },
+    {
+      "id": "c1d93762-2557-4884-b95e-0cd8fc447563",
+      "content_id": "596d4b6f-dab1-4cb5-9e9c-4d7368dab8d2",
+      "claim_id": "C35",
+      "claim": "Glycans have been proposed to directly regulate Spike-ACE2 binding.",
+      "claim_type": "EXPLICIT",
+      "source": "A variety of functions have been proposed for these glycans including immunological shielding (Watanabe et al., 2020), direct regulation of Spike-ACE2 binding (Bernardi et al., 2020), and control of Spike up/down conformation (Casalino et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Proposed function cited in the introduction with reference to Bernardi et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:49:36.913453Z"
+    },
+    {
+      "id": "5920cbee-dda8-4fae-8832-2bfb36e03d61",
+      "content_id": "596d4b6f-dab1-4cb5-9e9c-4d7368dab8d2",
+      "claim_id": "C36",
+      "claim": "Glycans have been proposed to control Spike up/down conformation.",
+      "claim_type": "EXPLICIT",
+      "source": "A variety of functions have been proposed for these glycans including immunological shielding (Watanabe et al., 2020), direct regulation of Spike-ACE2 binding (Bernardi et al., 2020), and control of Spike up/down conformation (Casalino et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Proposed function cited in the introduction with reference to Casalino et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:49:36.913453Z"
+    },
+    {
+      "id": "ea0b63d5-63f4-4a3a-8653-34c6b5d9d250",
+      "content_id": "596d4b6f-dab1-4cb5-9e9c-4d7368dab8d2",
+      "claim_id": "C37",
+      "claim": "Experimental data supporting the proposed functions of glycans is currently lacking.",
+      "claim_type": "EXPLICIT",
+      "source": "Experimental data supporting these concepts is currently lacking and thus our understanding of the impact of glycosylation on SARS-CoV-2 function is incomplete.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement of knowledge gap in the introduction.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:49:36.913453Z"
+    },
+    {
+      "id": "a68511c0-8ad4-4216-9f2c-7d8ebd1d8b66",
+      "content_id": "596d4b6f-dab1-4cb5-9e9c-4d7368dab8d2",
+      "claim_id": "C38",
+      "claim": "Glycans cover the Spike-ACE2 interface.",
+      "claim_type": "EXPLICIT",
+      "source": "Glycans cover the Spike-ACE2 interface.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Observation from molecular dynamics simulation shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:49:36.913453Z"
+    },
+    {
+      "id": "dd3fd77a-0bab-421e-838c-55568d130507",
+      "content_id": "596d4b6f-dab1-4cb5-9e9c-4d7368dab8d2",
+      "claim_id": "C39",
+      "claim": "Glycans surround the putative proteolysis site of furin ('S1-S2').",
+      "claim_type": "EXPLICIT",
+      "source": "They also surround the putative proteolysis site of furin ('S1-S2', yellow) and S2' (blue).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Observation from molecular dynamics simulation shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:49:36.913453Z"
+    },
+    {
+      "id": "e789ace5-c90c-41c1-8f7b-38a802fbb9f7",
+      "content_id": "596d4b6f-dab1-4cb5-9e9c-4d7368dab8d2",
+      "claim_id": "C40",
+      "claim": "Glycans surround the S2' proteolysis site.",
+      "claim_type": "EXPLICIT",
+      "source": "They also surround the putative proteolysis site of furin ('S1-S2', yellow) and S2' (blue).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Observation from molecular dynamics simulation shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:49:36.913453Z"
+    },
+    {
+      "id": "2877ac3c-184a-4284-93b8-129722d557a0",
+      "content_id": "596d4b6f-dab1-4cb5-9e9c-4d7368dab8d2",
+      "claim_id": "C41",
+      "claim": "RBD-Fc has an apparent molecular mass of ~60 kDa.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, RBD-Fc was ~60 kDa instead of a theoretical mass of 51 kDa, S1-Fc was ~150 kDa rather than 101 kDa, and ACE2-Fc was ~140 kDa instead of 110 kDa (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental observation from western blot shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:49:36.913453Z"
+    },
+    {
+      "id": "b1ad3272-e342-4b8c-86fa-748b591155d4",
+      "content_id": "596d4b6f-dab1-4cb5-9e9c-4d7368dab8d2",
+      "claim_id": "C42",
+      "claim": "RBD-Fc has a theoretical mass of 51 kDa based on peptide alone.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, RBD-Fc was ~60 kDa instead of a theoretical mass of 51 kDa, S1-Fc was ~150 kDa rather than 101 kDa, and ACE2-Fc was ~140 kDa instead of 110 kDa (Figure 2B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Calculated theoretical mass based on peptide sequence.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:49:36.913453Z"
+    },
+    {
+      "id": "dfe5f815-f439-47fe-8fa4-d555f05c5da4",
+      "content_id": "596d4b6f-dab1-4cb5-9e9c-4d7368dab8d2",
+      "claim_id": "C43",
+      "claim": "S1-Fc has an apparent molecular mass of ~150 kDa.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, RBD-Fc was ~60 kDa instead of a theoretical mass of 51 kDa, S1-Fc was ~150 kDa rather than 101 kDa, and ACE2-Fc was ~140 kDa instead of 110 kDa (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental observation from western blot shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:49:36.913453Z"
+    },
+    {
+      "id": "756a0122-7b1a-4310-86ca-faf7f4717777",
+      "content_id": "596d4b6f-dab1-4cb5-9e9c-4d7368dab8d2",
+      "claim_id": "C44",
+      "claim": "S1-Fc has a theoretical mass of 101 kDa based on peptide alone.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, RBD-Fc was ~60 kDa instead of a theoretical mass of 51 kDa, S1-Fc was ~150 kDa rather than 101 kDa, and ACE2-Fc was ~140 kDa instead of 110 kDa (Figure 2B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Calculated theoretical mass based on peptide sequence.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:49:36.913453Z"
+    },
+    {
+      "id": "d79bc852-ac81-4f77-a325-e13f1f86f94b",
+      "content_id": "596d4b6f-dab1-4cb5-9e9c-4d7368dab8d2",
+      "claim_id": "C45",
+      "claim": "ACE2-Fc has an apparent molecular mass of ~140 kDa.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, RBD-Fc was ~60 kDa instead of a theoretical mass of 51 kDa, S1-Fc was ~150 kDa rather than 101 kDa, and ACE2-Fc was ~140 kDa instead of 110 kDa (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental observation from western blot shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:49:36.913453Z"
+    },
+    {
+      "id": "bf6cd0c4-14fb-449a-9f55-1a2f2989ce2a",
+      "content_id": "596d4b6f-dab1-4cb5-9e9c-4d7368dab8d2",
+      "claim_id": "C46",
+      "claim": "ACE2-Fc has a theoretical mass of 110 kDa based on peptide alone.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, RBD-Fc was ~60 kDa instead of a theoretical mass of 51 kDa, S1-Fc was ~150 kDa rather than 101 kDa, and ACE2-Fc was ~140 kDa instead of 110 kDa (Figure 2B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Calculated theoretical mass based on peptide sequence.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:49:36.913453Z"
+    },
+    {
+      "id": "2d31fcd6-b715-4d7a-9011-2b9a2233fa8b",
+      "content_id": "596d4b6f-dab1-4cb5-9e9c-4d7368dab8d2",
+      "claim_id": "C47",
+      "claim": "RBD-Fc and S1-Fc readily bound to HEK293T cells upon human ACE2 over-expression.",
+      "claim_type": "EXPLICIT",
+      "source": "RBD-Fc and S1-Fc readily bound to HEK293T cells upon human ACE2 over-expression, confirming that they are functionally active (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental observation from flow cytometry binding assay shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:49:36.913453Z"
+    },
+    {
+      "id": "cd25d474-913f-47c3-b2e1-a7c9d9001ea7",
+      "content_id": "596d4b6f-dab1-4cb5-9e9c-4d7368dab8d2",
+      "claim_id": "C48",
+      "claim": "ACE2-Fc specifically bound Spike-protein expressed on 293Ts.",
+      "claim_type": "EXPLICIT",
+      "source": "ACE2-Fc also specifically bound Spike-protein expressed on 293Ts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Experimental observation from flow cytometry binding assay shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:49:36.913453Z"
+    },
+    {
+      "id": "6f830b99-a5e7-4bd2-afec-6e718871b903",
+      "content_id": "596d4b6f-dab1-4cb5-9e9c-4d7368dab8d2",
+      "claim_id": "C49",
+      "claim": "Desialylation of Spike-protein expressed on 293 T/S had minimal effect on ACE2-Fc binding.",
+      "claim_type": "EXPLICIT",
+      "source": "Desialylation of Spike-protein expressed on 293 T/S had minimal effect on ACE2-Fc (0.7 \u00b5g/mL) binding.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental observation from flow cytometry binding assay shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:49:36.913453Z"
+    },
+    {
+      "id": "432e820b-3435-461b-899c-f4d38bc0c562",
+      "content_id": "596d4b6f-dab1-4cb5-9e9c-4d7368dab8d2",
+      "claim_id": "C50",
+      "claim": "ACE2 desialylation on 293T/ACE2 increased binding of RBD-Fc by 26%.",
+      "claim_type": "EXPLICIT",
+      "source": "ACE2 desialylation on 293T/ACE2 increased binding of RBD-Fc (0.2 \u00b5g/mL) and S1-Fc (1.7 \u00b5g/mL) by 26\u201356% (paired experiments, *p<0.05).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental observation from flow cytometry binding assay shown in Figure 2D with statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:49:36.913453Z"
+    },
+    {
+      "id": "e0c3fd91-2e56-4682-9ac5-6d6a8ad2bf9a",
+      "content_id": "596d4b6f-dab1-4cb5-9e9c-4d7368dab8d2",
+      "claim_id": "C51",
+      "claim": "ACE2 desialylation on 293T/ACE2 increased binding of S1-Fc by 56%.",
+      "claim_type": "EXPLICIT",
+      "source": "ACE2 desialylation on 293T/ACE2 increased binding of RBD-Fc (0.2 \u00b5g/mL) and S1-Fc (1.7 \u00b5g/mL) by 26\u201356% (paired experiments, *p<0.05).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental observation from flow cytometry binding assay shown in Figure 2D with statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:49:36.913453Z"
+    },
+    {
+      "id": "eb92badd-17a0-4c37-8467-be32a3dd7c86",
+      "content_id": "596d4b6f-dab1-4cb5-9e9c-4d7368dab8d2",
+      "claim_id": "C52",
+      "claim": "VSVG pseudotyped virus infected both HEK293T and stable 293T/ACE2 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "VSVG pseudotyped virus infected both HEK293T (black line) and stable 293T/ACE2 (red line) cells.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental observation from pseudovirus entry assay shown in Figure 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:49:36.913453Z"
+    },
+    {
+      "id": "c686a6a7-76f2-4e26-8602-0abf854d6398",
+      "content_id": "596d4b6f-dab1-4cb5-9e9c-4d7368dab8d2",
+      "claim_id": "C53",
+      "claim": "Virus with Spike-WT entered 293T/ACE2 only.",
+      "claim_type": "EXPLICIT",
+      "source": "Virus with Spike-WT and Spike-mutant entered 293T/ACE2 only.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental observation from pseudovirus entry assay shown in Figure 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:49:36.913453Z"
+    },
+    {
+      "id": "632529d7-1da2-41ff-adad-6b2a21d02cf3",
+      "content_id": "596d4b6f-dab1-4cb5-9e9c-4d7368dab8d2",
+      "claim_id": "C54",
+      "claim": "Virus with Spike-mutant entered 293T/ACE2 only.",
+      "claim_type": "EXPLICIT",
+      "source": "Virus with Spike-WT and Spike-mutant entered 293T/ACE2 only.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental observation from pseudovirus entry assay shown in Figure 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:49:36.913453Z"
+    },
+    {
+      "id": "495a58f0-8685-43ef-875c-4438b3d18a2f",
+      "content_id": "596d4b6f-dab1-4cb5-9e9c-4d7368dab8d2",
+      "claim_id": "C55",
+      "claim": "Infection using Spike-mutant was higher compared to Spike-WT.",
+      "claim_type": "EXPLICIT",
+      "source": "Infection using Spike-mutant was higher compared to Spike-WT.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Experimental observation from pseudovirus entry assay shown in Figure 2F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:49:36.913453Z"
+    },
+    {
+      "id": "bfb06ef2-672b-485f-a749-794541acd462",
+      "content_id": "596d4b6f-dab1-4cb5-9e9c-4d7368dab8d2",
+      "claim_id": "C56",
+      "claim": "Sialidase treatment of virus had no effect on viral entry.",
+      "claim_type": "EXPLICIT",
+      "source": "Sialidase treatment of virus had no effect.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Experimental observation from pseudovirus entry assay shown in Figure 2F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:49:36.913453Z"
+    },
+    {
+      "id": "023292b5-34ec-40d2-91f8-0435a6657497",
+      "content_id": "596d4b6f-dab1-4cb5-9e9c-4d7368dab8d2",
+      "claim_id": "C57",
+      "claim": "Sialidase treatment of 293T/ACE2 cells did not affect VSVG pseudovirus entry.",
+      "claim_type": "EXPLICIT",
+      "source": "Sialidase treatment did not affect viral entry.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Experimental observation from pseudovirus entry assay shown in Figure 2G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:49:36.913453Z"
+    },
+    {
+      "id": "b04f210a-7462-4c2c-a218-b0469d3fd86e",
+      "content_id": "596d4b6f-dab1-4cb5-9e9c-4d7368dab8d2",
+      "claim_id": "C58",
+      "claim": "Sialidase treatment of 293T/ACE2 cells did not affect Spike-WT pseudovirus entry.",
+      "claim_type": "EXPLICIT",
+      "source": "Sialidase treatment did not affect viral entry.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Experimental observation from pseudovirus entry assay shown in Figure 2G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:49:36.913453Z"
+    },
+    {
+      "id": "c4968e7c-060d-4dfa-aae2-990a4a69634f",
+      "content_id": "596d4b6f-dab1-4cb5-9e9c-4d7368dab8d2",
+      "claim_id": "C59",
+      "claim": "~80\u2013100% of the N-glycans expressed at specific sites of ACE2-Fc were complex-type glycans.",
+      "claim_type": "EXPLICIT",
+      "source": "In this regard, independent glycoprotemics mass spectrometry (MS) data showed that ~80\u2013100% of the N-glycans expressed at specific sites of ACE2-Fc and ~40\u2013100% of the S1-Fc glycopeptides expressed complex-type glycans (K.C., et al., manuscript in preparation).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Glycoproteomics mass spectrometry data from unpublished manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:49:36.913453Z"
+    },
+    {
+      "id": "2b25e3dd-a8a8-4de6-8cd3-856fe531e818",
+      "content_id": "596d4b6f-dab1-4cb5-9e9c-4d7368dab8d2",
+      "claim_id": "C60",
+      "claim": "~40\u2013100% of the S1-Fc glycopeptides expressed complex-type glycans.",
+      "claim_type": "EXPLICIT",
+      "source": "In this regard, independent glycoprotemics mass spectrometry (MS) data showed that ~80\u2013100% of the N-glycans expressed at specific sites of ACE2-Fc and ~40\u2013100% of the S1-Fc glycopeptides expressed complex-type glycans (K.C., et al., manuscript in preparation).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Glycoproteomics mass spectrometry data from unpublished manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:49:36.913453Z"
+    },
+    {
+      "id": "78053ca6-3b07-49d1-b4bb-3c7ce25c1036",
+      "content_id": "596d4b6f-dab1-4cb5-9e9c-4d7368dab8d2",
+      "claim_id": "C61",
+      "claim": "Up to ~60% of the antennae on complex structures on ACE2 were terminated by sialic acid.",
+      "claim_type": "EXPLICIT",
+      "source": "Up to ~60% of the antennae on these complex structures on ACE2 and ~20% of the structures on S1-Fc were terminated by sialic acid.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Glycoproteomics mass spectrometry data from unpublished manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:49:36.913453Z"
+    },
+    {
+      "id": "a68a15b0-fee3-4b2d-b90a-41d64fa0d09d",
+      "content_id": "596d4b6f-dab1-4cb5-9e9c-4d7368dab8d2",
+      "claim_id": "C62",
+      "claim": "Up to ~20% of the structures on S1-Fc were terminated by sialic acid.",
+      "claim_type": "EXPLICIT",
+      "source": "Up to ~60% of the antennae on these complex structures on ACE2 and ~20% of the structures on S1-Fc were terminated by sialic acid.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Glycoproteomics mass spectrometry data from unpublished manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:49:36.913453Z"
+    },
+    {
+      "id": "dd125c5b-5446-491c-b1a3-7db0e735bb45",
+      "content_id": "596d4b6f-dab1-4cb5-9e9c-4d7368dab8d2",
+      "claim_id": "C63",
+      "claim": "Sanger sequencing confirmed that all three C1GalT1 alleles of [O]-293T contained indels.",
+      "claim_type": "EXPLICIT",
+      "source": "Sanger sequencing confirmed that all three C1GalT1 alleles of [O]-293T contained indels (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental observation from Sanger sequencing shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:49:36.913453Z"
+    },
+    {
+      "id": "53839d3c-cada-477d-8f9f-4e3b701b7606",
+      "content_id": "596d4b6f-dab1-4cb5-9e9c-4d7368dab8d2",
+      "claim_id": "C64",
+      "claim": "Frameshift mutation was noted at the single MGAT1 allele in [N]-293T.",
+      "claim_type": "EXPLICIT",
+      "source": "Frameshift mutation was also noted at the single MGAT1 allele in [N]-293T.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Experimental observation from Sanger sequencing shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:49:36.913453Z"
+    },
+    {
+      "id": "2c3bd48e-65f1-4dad-8e93-1c21db0d7c55",
+      "content_id": "596d4b6f-dab1-4cb5-9e9c-4d7368dab8d2",
+      "claim_id": "C65",
+      "claim": "VVA-lectin binding to GalNAc\u03b1 was dramatically augmented in the [O]-293Ts.",
+      "claim_type": "EXPLICIT",
+      "source": "As anticipated, VVA-lectin (Vicia villosa agglutinin) binding to GalNAc\u03b1 was dramatically augmented in the [O]-293Ts (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental observation from flow cytometry lectin binding assay shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:49:36.913453Z"
+    },
+    {
+      "id": "7bcebd5b-a991-4232-9c94-332bc351631b",
+      "content_id": "596d4b6f-dab1-4cb5-9e9c-4d7368dab8d2",
+      "claim_id": "C66",
+      "claim": "Complex glycans were absent in [N]-293Ts as they did not engage PHA-L.",
+      "claim_type": "EXPLICIT",
+      "source": "Complex glycans were absent in [N]-293Ts as they did not engage PHA-L (lectin from Phaseolus vulgaris).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Experimental observation from flow cytometry lectin binding assay shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:49:36.913453Z"
+    },
+    {
+      "id": "7008ef73-1e91-45ba-9550-67391dad8f55",
+      "content_id": "596d4b6f-dab1-4cb5-9e9c-4d7368dab8d2",
+      "claim_id": "C67",
+      "claim": "Knocking out N-glycans on Spike protein reduced ACE2-Fc binding by 40%.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we observed a 40% decrease in ACE2-Fc binding to cell-surface Spike expressed on [N]-293Ts, and a slight 20% increase when Spike was expressed on the [O]-293Ts (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental observation from flow cytometry binding assay shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:49:36.913453Z"
+    },
+    {
+      "id": "7f7657dd-03c1-437e-8408-7bab287a9075",
+      "content_id": "596d4b6f-dab1-4cb5-9e9c-4d7368dab8d2",
+      "claim_id": "C68",
+      "claim": "Knocking out O-glycans on Spike protein increased ACE2-Fc binding by 20%.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we observed a 40% decrease in ACE2-Fc binding to cell-surface Spike expressed on [N]-293Ts, and a slight 20% increase when Spike was expressed on the [O]-293Ts (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental observation from flow cytometry binding assay shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:49:36.913453Z"
+    },
+    {
+      "id": "b6c60fdd-4efa-419e-af3e-efd94737752a",
+      "content_id": "596d4b6f-dab1-4cb5-9e9c-4d7368dab8d2",
+      "claim_id": "C69",
+      "claim": "Glycan engineering of ACE2 in the [O]- and [N]-293Ts did not impact S1-Fc binding.",
+      "claim_type": "EXPLICIT",
+      "source": "Glycan engineering of ACE2 in the [O]- and [N]-293Ts did not impact either S1-Fc (Figure 3E) or RBD-Fc binding (Figure 3F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental observation from flow cytometry binding assay shown in Figure 3E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:49:36.913453Z"
+    },
+    {
+      "id": "de309ab1-5fde-4db8-9672-f3fb44716c31",
+      "content_id": "596d4b6f-dab1-4cb5-9e9c-4d7368dab8d2",
+      "claim_id": "C70",
+      "claim": "Glycan engineering of ACE2 in the [O]- and [N]-293Ts did not impact RBD-Fc binding.",
+      "claim_type": "EXPLICIT",
+      "source": "Glycan engineering of ACE2 in the [O]- and [N]-293Ts did not impact either S1-Fc (Figure 3E) or RBD-Fc binding (Figure 3F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental observation from flow cytometry binding assay shown in Figure 3F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:49:36.913453Z"
+    },
+    {
+      "id": "41c33296-0ec7-46e4-8095-0396e9e15b50",
+      "content_id": "596d4b6f-dab1-4cb5-9e9c-4d7368dab8d2",
+      "claim_id": "C71",
+      "claim": "RBD-Fc bound ~10 times more avidly to ACE2 compared to S1-Fc.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, RBD-Fc bound ~10 times more avidly to ACE2 compared to S1-Fc.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Experimental observation from flow cytometry binding assay comparing Figure 3E and 3F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:49:36.913453Z"
+    },
+    {
+      "id": "faf4040d-7ebe-4620-b92a-47ae907133b6",
+      "content_id": "596d4b6f-dab1-4cb5-9e9c-4d7368dab8d2",
+      "claim_id": "C72",
+      "claim": "When produced in [O]-293T, Spike-WT pseudovirus resulted in a 70\u201385% loss in DsRed fluorescence.",
+      "claim_type": "EXPLICIT",
+      "source": "When produced in [O]-293T, Spike-WT and Spike-mutant pseudovirus resulted in a 70\u201385% loss in DsRed fluorescence (Figure 4B), and a partial reduction (35\u201370%) in the fraction of DsRed positive cells (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental observation from pseudovirus entry assay shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:49:36.913453Z"
+    },
+    {
+      "id": "360821cd-0544-4abd-ae30-afdb05481deb",
+      "content_id": "596d4b6f-dab1-4cb5-9e9c-4d7368dab8d2",
+      "claim_id": "C73",
+      "claim": "When produced in [O]-293T, Spike-mutant pseudovirus resulted in a 70\u201385% loss in DsRed fluorescence.",
+      "claim_type": "EXPLICIT",
+      "source": "When produced in [O]-293T, Spike-WT and Spike-mutant pseudovirus resulted in a 70\u201385% loss in DsRed fluorescence (Figure 4B), and a partial reduction (35\u201370%) in the fraction of DsRed positive cells (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental observation from pseudovirus entry assay shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:49:36.913453Z"
+    },
+    {
+      "id": "32add19e-a08d-48f7-b6d9-9f80ed217bf2",
+      "content_id": "596d4b6f-dab1-4cb5-9e9c-4d7368dab8d2",
+      "claim_id": "C74",
+      "claim": "When produced in [O]-293T, Spike-WT pseudovirus resulted in a partial reduction (35\u201370%) in the fraction of DsRed positive cells.",
+      "claim_type": "EXPLICIT",
+      "source": "When produced in [O]-293T, Spike-WT and Spike-mutant pseudovirus resulted in a 70\u201385% loss in DsRed fluorescence (Figure 4B), and a partial reduction (35\u201370%) in the fraction of DsRed positive cells (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental observation from pseudovirus entry assay shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:49:36.913453Z"
+    },
+    {
+      "id": "377129ec-80ec-445d-81a1-ad859cddcbf4",
+      "content_id": "596d4b6f-dab1-4cb5-9e9c-4d7368dab8d2",
+      "claim_id": "C75",
+      "claim": "When produced in [O]-293T, Spike-mutant pseudovirus resulted in a partial reduction (35\u201370%) in the fraction of DsRed positive cells.",
+      "claim_type": "EXPLICIT",
+      "source": "When produced in [O]-293T, Spike-WT and Spike-mutant pseudovirus resulted in a 70\u201385% loss in DsRed fluorescence (Figure 4B), and a partial reduction (35\u201370%) in the fraction of DsRed positive cells (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental observation from pseudovirus entry assay shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:49:36.913453Z"
+    },
+    {
+      "id": "ec2a3020-ae23-4025-9ee4-3e5c30e86fef",
+      "content_id": "596d4b6f-dab1-4cb5-9e9c-4d7368dab8d2",
+      "claim_id": "C76",
+      "claim": "Knocking out N-glycans in both Spike-WT and Spike-mutant pseudoviruses abrogated viral infection into 293T/ACE2 cells by >95%.",
+      "claim_type": "EXPLICIT",
+      "source": "In stark contrast, knocking out N-glycans in both pseudoviruses abrogated viral infection into 293T/ACE2 cells by >95% (Figure 4B and C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental observation from pseudovirus entry assay shown in Figure 4B and 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:49:36.913453Z"
+    },
+    {
+      "id": "c7eb0a10-de20-4ebb-ac37-df09bfe5c9fa",
+      "content_id": "596d4b6f-dab1-4cb5-9e9c-4d7368dab8d2",
+      "claim_id": "C77",
+      "claim": "Both the Spike-WT and Spike-mutant virus expressed comparable levels of Spike protein, regardless of the glycosylation mutation.",
+      "claim_type": "EXPLICIT",
+      "source": "Western blot with anti-S2 pAb (polyclonal antibody) suggest that both the Spike-WT and Spike-mutant virus expressed comparable levels of Spike protein, regardless of the glycosylation mutation (Figure 4E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental observation from western blot shown in Figure 4E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:49:36.913453Z"
+    },
+    {
+      "id": "9564023d-9d41-4561-a6e7-4cc7a4fc6f18",
+      "content_id": "596d4b6f-dab1-4cb5-9e9c-4d7368dab8d2",
+      "claim_id": "C78",
+      "claim": "The molecular mass of Spike expressed in [N]-293T was lower than that of other virus consistent with the extensive N-glycosylation of this protein.",
+      "claim_type": "EXPLICIT",
+      "source": "The molecular mass of Spike expressed in [N]-293T was lower than that of other virus consistent with the extensive N-glycosylation of this protein.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Experimental observation from western blot shown in Figure 4E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:49:36.913453Z"
+    },
+    {
+      "id": "cf25fcff-c6ec-458c-a0c3-685b47dff5d6",
+      "content_id": "596d4b6f-dab1-4cb5-9e9c-4d7368dab8d2",
+      "claim_id": "C79",
+      "claim": "Spike-WT is more extensively cleaved compared to Spike-mutant.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, the data suggest more extensive cleavage of Spike-WT compared to Spike-mutant, consistent with the presence of the proteolysis-sensitive polybasic furin-site in Spike-WT.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Experimental observation from western blot shown in Figure 4E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:49:36.913453Z"
+    },
+    {
+      "id": "d5ada651-bc95-446e-8c38-093cbb82b807",
+      "content_id": "596d4b6f-dab1-4cb5-9e9c-4d7368dab8d2",
+      "claim_id": "C80",
+      "claim": "N-glycan loss may trigger precipitous (95%, based on densitometry) loss of intact Spike protein due to enhanced cleavage at the S1-S2 interface.",
+      "claim_type": "EXPLICIT",
+      "source": "This blot suggests that N-glycan loss may trigger precipitous (95%, based on densitometry) loss of intact Spike protein due to enhanced cleavage at the S1-S2 interface.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Experimental observation from western blot shown in Figure 4F with densitometry analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:49:36.913453Z"
+    },
+    {
+      "id": "249bcc53-bc65-49d4-a573-1b63fc3c1762",
+      "content_id": "596d4b6f-dab1-4cb5-9e9c-4d7368dab8d2",
+      "claim_id": "C81",
+      "claim": "Virus produced in [O]-293Ts showed greater proteolysis (52%) compared to that produced in wild-type 293Ts (32%).",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the viral entry assay, we also noted greater proteolysis of virus produced in [O]-293Ts (52%) compared to that produced in wild-type 293Ts (32%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Experimental observation from western blot shown in Figure 4F with densitometry analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:49:36.913453Z"
+    },
+    {
+      "id": "61c891fd-ca71-4897-9d21-f2bb4b3991fe",
+      "content_id": "596d4b6f-dab1-4cb5-9e9c-4d7368dab8d2",
+      "claim_id": "C82",
+      "claim": "Kifunensine reduced the formation of complex N-glycans on cultured cells within 24\u201348 hr with no change in cell viability.",
+      "claim_type": "EXPLICIT",
+      "source": "This water-soluble inhibitor reduced the formation of complex N-glycans on cultured cells within 24\u201348 hr with no change in cell viability (Figure 5\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental observation from lectin binding and viability assays shown in Figure 5\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:49:36.913453Z"
+    },
+    {
+      "id": "9442c111-3e1a-4b62-9c15-0f3d2596434b",
+      "content_id": "596d4b6f-dab1-4cb5-9e9c-4d7368dab8d2",
+      "claim_id": "C83",
+      "claim": "Virus produced in culture with 15 \u00b5M kifunensine displayed ~85\u201390% reduction in infection.",
+      "claim_type": "EXPLICIT",
+      "source": "Virus produced in culture with 15 \u00b5M kifunensine displayed ~85\u201390% reduction in infection, as measured using DsRed-reporter in microscopy (Figure 5B, Figure 5\u2014figure supplement 1B) and cytometry assays (Figure 5C and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental observation from pseudovirus entry assay shown in Figure 5B, 5C, 5D and Figure 5\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:49:36.913453Z"
+    },
+    {
+      "id": "eee85bc5-11f0-43ae-829f-06557ba3b147",
+      "content_id": "596d4b6f-dab1-4cb5-9e9c-4d7368dab8d2",
+      "claim_id": "C84",
+      "claim": "The reduction in Spike molecular mass upon addition of kifunensine was less apparent compared to that in [N]-293Ts.",
+      "claim_type": "EXPLICIT",
+      "source": "The reduction in Spike molecular mass upon addition of this small molecule was less apparent compared to that in [N]-293Ts (Figure 5E), since blockade of Mannosidase-I preferentially gives rise to Man7-9 glycans while the MGAT1/[N]-293Ts knockouts produce Man-5.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental observation from western blot shown in Figure 5E with mechanistic explanation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:49:36.913453Z"
+    },
+    {
+      "id": "ee9342ea-5204-4d7c-be47-36eb5e0c5cea",
+      "content_id": "596d4b6f-dab1-4cb5-9e9c-4d7368dab8d2",
+      "claim_id": "C85",
+      "claim": "Blockade of Mannosidase-I preferentially gives rise to Man7-9 glycans.",
+      "claim_type": "EXPLICIT",
+      "source": "The reduction in Spike molecular mass upon addition of this small molecule was less apparent compared to that in [N]-293Ts (Figure 5E), since blockade of Mannosidase-I preferentially gives rise to Man7-9 glycans while the MGAT1/[N]-293Ts knockouts produce Man-5.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Established knowledge about the mechanism of kifunensine action.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:49:36.913453Z"
+    },
+    {
+      "id": "ee2a6c28-15c2-4d7a-bb27-9a85bbaf4a0a",
+      "content_id": "596d4b6f-dab1-4cb5-9e9c-4d7368dab8d2",
+      "claim_id": "C86",
+      "claim": "MGAT1/[N]-293Ts knockouts produce Man-5 glycans.",
+      "claim_type": "EXPLICIT",
+      "source": "The reduction in Spike molecular mass upon addition of this small molecule was less apparent compared to that in [N]-293Ts (Figure 5E), since blockade of Mannosidase-I preferentially gives rise to Man7-9 glycans while the MGAT1/[N]-293Ts knockouts produce Man-5.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Established knowledge about the glycan structure produced by MGAT1 knockout.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:49:36.913453Z"
+    },
+    {
+      "id": "e0bacbb5-d4cf-4741-a1c4-5b0ca1d56f21",
+      "content_id": "596d4b6f-dab1-4cb5-9e9c-4d7368dab8d2",
+      "claim_id": "C87",
+      "claim": "Spike-protein proteolysis was more extensive upon kifunensine addition though it was not complete.",
+      "claim_type": "EXPLICIT",
+      "source": "Here also, the Spike-protein proteolysis was more extensive upon kifunensine addition though it was not complete, as observed in the anti-FLAG blot.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Experimental observation from western blot shown in Figure 5E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:49:36.913453Z"
+    },
+    {
+      "id": "6dc2302e-df0e-4875-b6ac-08885b9c5494",
+      "content_id": "596d4b6f-dab1-4cb5-9e9c-4d7368dab8d2",
+      "claim_id": "C88",
+      "claim": "Kifunensine reduced DsRed expression in 293T/ACE2 cells, even in the case of Spike-delta pseudovirus.",
+      "claim_type": "EXPLICIT",
+      "source": "In viral entry assay, kifunensine reduced DsRed expression in 293T/ACE2 cells, even in the case of Spike-delta pseudovirus (*p<0.05).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental observation from pseudovirus entry assay shown in Figure 5F with statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:49:36.913453Z"
+    },
+    {
+      "id": "9ea0fa4c-084e-439d-9622-f06f649101a4",
+      "content_id": "596d4b6f-dab1-4cb5-9e9c-4d7368dab8d2",
+      "claim_id": "C89",
+      "claim": "The substitution of the 'RRAR' sequence with a single Alanine ('A') resulted in viral Spike that was not extensively cleaved both in the absence and presence of kifunensine.",
+      "claim_type": "EXPLICIT",
+      "source": "The substitution of the 'RRAR' sequence with a single Alanine ('A') resulted in viral Spike that was not extensively cleaved both in the absence and presence of kifunensine.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Experimental observation from western blot shown in Figure 5F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:49:36.913453Z"
+    },
+    {
+      "id": "2c68830b-1236-41cb-bdb0-aaaaa456c663",
+      "content_id": "596d4b6f-dab1-4cb5-9e9c-4d7368dab8d2",
+      "claim_id": "C90",
+      "claim": "Robust viral entry into 293T/ACE2 cells was observed using furin resistant virus (Spike-delta).",
+      "claim_type": "EXPLICIT",
+      "source": "Robust viral entry into 293T/ACE2 cells was observed using this furin resistant virus, and this too could be partially blocked by kifunensine.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Experimental observation from pseudovirus entry assay shown in Figure 5F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:49:36.913453Z"
+    },
+    {
+      "id": "f5239648-3530-410a-b7b5-2f1e8839bfc6",
+      "content_id": "596d4b6f-dab1-4cb5-9e9c-4d7368dab8d2",
+      "claim_id": "C91",
+      "claim": "Viral entry of furin resistant virus (Spike-delta) could be partially blocked by kifunensine.",
+      "claim_type": "EXPLICIT",
+      "source": "Robust viral entry into 293T/ACE2 cells was observed using this furin resistant virus, and this too could be partially blocked by kifunensine.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Experimental observation from pseudovirus entry assay shown in Figure 5F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:49:36.913453Z"
+    },
+    {
+      "id": "54b36acf-a731-4dae-8658-281ba1afd114",
+      "content_id": "596d4b6f-dab1-4cb5-9e9c-4d7368dab8d2",
+      "claim_id": "C92",
+      "claim": "N-glycans may have additional roles during viral entry beyond regulating proteolysis at the S1-S2 site.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, in addition to proteolysis at the S1-S2 site, N-glycans may have additional roles during viral entry.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from experimental observation that kifunensine reduces entry of Spike-delta virus.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:49:36.913453Z"
+    },
+    {
+      "id": "48565031-004b-4cb8-ba5b-1bc7669a3a11",
+      "content_id": "596d4b6f-dab1-4cb5-9e9c-4d7368dab8d2",
+      "claim_id": "C93",
+      "claim": "Some enhancement in Spike binding and viral entry was observed upon treating 293T/ACE2 with a pan-sialidase.",
+      "claim_type": "EXPLICIT",
+      "source": "In this regard, we observed some enhancement in Spike binding and viral entry upon treating 293T/ACE2 with a pan-sialidase.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Experimental observation from binding and viral entry assays discussed in the Discussion section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:49:36.913453Z"
+    },
+    {
+      "id": "33455524-08ab-45e6-8028-4016ffc3aacf",
+      "content_id": "596d4b6f-dab1-4cb5-9e9c-4d7368dab8d2",
+      "claim_id": "C94",
+      "claim": "The critical glycans regulating Spike-ACE2 binding are likely located at Asn-90 or Asn-322, proximal to the Spike binding interface.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on the published crystal structure and molecular modeling, the critical glycans regulating this process are likely located at Asn-90 or Asn-322, proximal to the Spike binding interface (Lan et al., 2020; Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inference based on published crystal structure and molecular modeling with reference to Lan et al., 2020.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:49:36.913453Z"
+    },
+    {
+      "id": "573e1b41-60f6-4516-ac7d-40d8a9543b20",
+      "content_id": "596d4b6f-dab1-4cb5-9e9c-4d7368dab8d2",
+      "claim_id": "C95",
+      "claim": "The effect of sialic acid on SARS-CoV-2 was small compared to that reported for other sialic acid dependent viruses like influenza.",
+      "claim_type": "EXPLICIT",
+      "source": "The effect was nevertheless small compared to that reported for other sialic acid dependent viruses like influenza (Stencel-Baerenwald et al., 2014), reovirus, parovirus (L\u00f6fling et al., 2013) and coronavirus like the Middle-East Respiratory Syndrome virus/MERS (Li et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Comparison with published literature on other viruses with references to Stencel-Baerenwald et al., 2014; L\u00f6fling et al., 2013; Li et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:49:36.913453Z"
+    },
+    {
+      "id": "d7fe8b73-9ed0-45cf-a74e-dcf24649963f",
+      "content_id": "596d4b6f-dab1-4cb5-9e9c-4d7368dab8d2",
+      "claim_id": "C96",
+      "claim": "Blocking O- and N-glycan biosynthesis on ACE2 did not impact either viral entry or Spike-Fc binding.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, blocking O- and N-glycan biosynthesis on ACE2 did not impact either viral entry or Spike-Fc binding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Experimental observation from viral entry and binding assays discussed in the Discussion section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:49:36.913453Z"
+    },
+    {
+      "id": "92a29753-a8cb-4b93-ab25-88901eaff9ae",
+      "content_id": "596d4b6f-dab1-4cb5-9e9c-4d7368dab8d2",
+      "claim_id": "C97",
+      "claim": "The functional change observed upon enzymatically removing sialic acid on ACE2 is likely a steric effect, as it can be offset by other modifications.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the functional change observed upon enzymatically removing sialic acid on ACE2 is likely a steric effect, as it can be offset by other modifications.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Interpretation of experimental data comparing sialidase treatment with glycan knockout effects.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:49:36.913453Z"
+    },
+    {
+      "id": "b1e43bba-8052-492a-a784-bde6a4ade7e3",
+      "content_id": "596d4b6f-dab1-4cb5-9e9c-4d7368dab8d2",
+      "claim_id": "C98",
+      "claim": "Blocking elaboration of O- and N-glycans on Spike only had a partial effect on ACE2-Fc binding.",
+      "claim_type": "EXPLICIT",
+      "source": "Blocking elaboration of O- and N-glycans on Spike, also, only had a partial effect on ACE2-Fc binding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Experimental observation from binding assays discussed in the Discussion section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:49:36.913453Z"
+    },
+    {
+      "id": "909e4063-932d-4489-9c16-2aab0dbaa22f",
+      "content_id": "596d4b6f-dab1-4cb5-9e9c-4d7368dab8d2",
+      "claim_id": "C99",
+      "claim": "The active/'up' form of Spike RBD is largely exposed with few glycans at the binding interface.",
+      "claim_type": "EXPLICIT",
+      "source": "This observation is consistent with previous cryo-EM (Walls et al., 2020; Wrapp et al., 2020) and molecular dynamics simulation results (Grant et al., 2020), which show that the active/'up' form of Spike RBD is largely exposed with few glycans at the binding interface.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Established knowledge from published cryo-EM and molecular dynamics studies with references to Walls et al., 2020; Wrapp et al., 2020; Grant et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:49:36.913453Z"
+    },
+    {
+      "id": "9774cff1-bed9-4895-913c-0a58b9a5b2ce",
+      "content_id": "596d4b6f-dab1-4cb5-9e9c-4d7368dab8d2",
+      "claim_id": "C100",
+      "claim": "The lack of glycan shielding makes the exposed RBD a prime target for vaccine development.",
+      "claim_type": "EXPLICIT",
+      "source": "It is now well appreciated that this lack of glycan shielding, makes the exposed RBD a prime target for vaccine development.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Established knowledge in the field about vaccine development strategies.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:49:36.913453Z"
+    },
+    {
+      "id": "80fed389-38a9-423c-827c-9f7f229d9368",
+      "content_id": "596d4b6f-dab1-4cb5-9e9c-4d7368dab8d2",
+      "claim_id": "C101",
+      "claim": "Blocking N-glycan elaboration using genetic approaches dramatically reduced viral entry into 293T/ACE2 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In this regard, we observed that blocking N-glycan elaboration using both genetic approaches (i.e. MGAT1-KO/[N]-293T) and the natural product mannosidase-I inhibitor, kifunensine, dramatically reduced viral entry into 293T/ACE2 cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Experimental observation from viral entry assays discussed in the Discussion section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:49:36.913453Z"
+    },
+    {
+      "id": "f8c96b51-fc32-4291-b421-a0adea475632",
+      "content_id": "596d4b6f-dab1-4cb5-9e9c-4d7368dab8d2",
+      "claim_id": "C102",
+      "claim": "Blocking N-glycan elaboration using kifunensine dramatically reduced viral entry into 293T/ACE2 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In this regard, we observed that blocking N-glycan elaboration using both genetic approaches (i.e. MGAT1-KO/[N]-293T) and the natural product mannosidase-I inhibitor, kifunensine, dramatically reduced viral entry into 293T/ACE2 cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Experimental observation from viral entry assays discussed in the Discussion section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:49:36.913453Z"
+    },
+    {
+      "id": "afdb63ca-ce91-495f-8410-3d4bc72609ae",
+      "content_id": "596d4b6f-dab1-4cb5-9e9c-4d7368dab8d2",
+      "claim_id": "C103",
+      "claim": "Enzymatic and small molecule inhibition resulted in enhanced proteolysis of Spike-protein during pseudovirus production.",
+      "claim_type": "EXPLICIT",
+      "source": "In the case of Spike-mut, enzymatic and small molecule inhibition resulted in enhanced proteolysis of Spike-protein during pseudovirus production.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Experimental observation from western blot analysis discussed in the Discussion section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:49:36.913453Z"
+    },
+    {
+      "id": "78da3fa3-70d2-43b8-a14c-f810190e7a3e",
+      "content_id": "596d4b6f-dab1-4cb5-9e9c-4d7368dab8d2",
+      "claim_id": "C104",
+      "claim": "There is an inverse relation between furin cleavage and viral entry into 293T/ACE2 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "These data suggest an inverse relation between furin cleavage and viral entry into 293T/ACE2 cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from experimental observations comparing Spike-WT and Spike-mut viral entry.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:49:36.913453Z"
+    },
+    {
+      "id": "81dd6421-aeb3-4edb-8609-e20b4d338cc9",
+      "content_id": "596d4b6f-dab1-4cb5-9e9c-4d7368dab8d2",
+      "claim_id": "C105",
+      "claim": "Spike-mut displayed reduced S1-S2 proteolysis compared to Spike-WT, and higher viral infectivity.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this, Spike-mut displayed reduced S1-S2 proteolysis compared to Spike-WT, and higher viral infectivity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Experimental observation from western blot and viral entry assays discussed in the Discussion section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:49:36.913453Z"
+    },
+    {
+      "id": "a63f9a8c-7175-44cb-8e08-c6895fadd8d9",
+      "content_id": "596d4b6f-dab1-4cb5-9e9c-4d7368dab8d2",
+      "claim_id": "C106",
+      "claim": "The introduction of the D614G mutation in Spike reduced furin cleavage, and this resulted in enhanced viral infectivity.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, a recent study observed that the introduction of the D614G mutation in Spike reduced furin cleavage, and this resulted in enhanced viral infectivity (Korber et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Published observation cited with reference to Korber et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:49:36.913453Z"
+    },
+    {
+      "id": "5459e9f5-b4f8-4c96-a3a5-53fa1286d3db",
+      "content_id": "596d4b6f-dab1-4cb5-9e9c-4d7368dab8d2",
+      "claim_id": "C107",
+      "claim": "SARS-CoV-2 containing the D614G mutation is currently the dominant strain worldwide (>80% prevalence).",
+      "claim_type": "EXPLICIT",
+      "source": "SARS-CoV-2 containing the D614G mutation is currently the dominant strain worldwide (>80% prevalence, Zhang et al., 2020), and the possibility that this is due to altered furin cleavage potential is hotly debated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Published observation cited with reference to Zhang et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:49:36.913453Z"
+    },
+    {
+      "id": "8a1630cb-d9b7-47d8-95d9-a279f3d08a9f",
+      "content_id": "596d4b6f-dab1-4cb5-9e9c-4d7368dab8d2",
+      "claim_id": "C108",
+      "claim": "Both N- and O-glycans may modulate the rates of proteolysis at the S1-S2 interface, thus affecting viral entry.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, our studies with MGAT1-KO, C1GalT1-KO and kifunensine suggest that both N- and O-glycans may modulate the rates of proteolysis at the S1-S2 interface, thus affecting viral entry (Figure 6C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inference from experimental observations with glycan knockout cells and kifunensine treatment.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:49:36.913453Z"
+    },
+    {
+      "id": "e429fd17-0ee6-43a1-a7cf-56b92acc0414",
+      "content_id": "596d4b6f-dab1-4cb5-9e9c-4d7368dab8d2",
+      "claim_id": "C109",
+      "claim": "Some S1 may be associated with Spike even after partial cleavage at the S1-S2 interface.",
+      "claim_type": "EXPLICIT",
+      "source": "While some S1 may be associated with Spike even after partial cleavage at the S1-S2 interface (Belouzard et al., 2009), this may potentiate a quantitative reduction in RBD presentation on viral surface, resulting in reduced ACE2 binding and lower viral entry.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Published observation cited with reference to Belouzard et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:49:36.913453Z"
+    },
+    {
+      "id": "de054485-bc34-4ff4-8793-30a4a1039e5a",
+      "content_id": "596d4b6f-dab1-4cb5-9e9c-4d7368dab8d2",
+      "claim_id": "C110",
+      "claim": "Partial cleavage at the S1-S2 interface may potentiate a quantitative reduction in RBD presentation on viral surface, resulting in reduced ACE2 binding and lower viral entry.",
+      "claim_type": "EXPLICIT",
+      "source": "While some S1 may be associated with Spike even after partial cleavage at the S1-S2 interface (Belouzard et al., 2009), this may potentiate a quantitative reduction in RBD presentation on viral surface, resulting in reduced ACE2 binding and lower viral entry.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Mechanistic interpretation of experimental data.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:49:36.913453Z"
+    },
+    {
+      "id": "9f5ee9c5-1e3d-4abc-8ecd-4b2b9e3a2b0f",
+      "content_id": "596d4b6f-dab1-4cb5-9e9c-4d7368dab8d2",
+      "claim_id": "C111",
+      "claim": "Several N-glycans are located proximal to the furin-site: N603 and N657, and also N61.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed several N-glycans are located proximal to the furin-site: N603 and N657, and also N61 (Watanabe et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Published observation cited with reference to Watanabe et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:49:36.913453Z"
+    },
+    {
+      "id": "a6167ee1-e1a3-40bb-aa30-7cebfd016103",
+      "content_id": "596d4b6f-dab1-4cb5-9e9c-4d7368dab8d2",
+      "claim_id": "C112",
+      "claim": "O-glycans have been hypothesized to exist in the furin-site region at S673, T678 and S686.",
+      "claim_type": "EXPLICIT",
+      "source": "O-glycans have also been hypothesized to exist in this region at S673, T678 and S686 (Andersen et al., 2020), and some of these have been experimentally verified (Sanda et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Published hypothesis and experimental verification cited with references to Andersen et al., 2020; Sanda et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:49:36.913453Z"
+    },
+    {
+      "id": "7eb64106-33fd-46d4-8c44-0dbb391b1739",
+      "content_id": "596d4b6f-dab1-4cb5-9e9c-4d7368dab8d2",
+      "claim_id": "C113",
+      "claim": "The effect of 'Spike-delta' mutation may be cell type specific in that this mutation results in lower infectivity in some cell types like Calu-3 which rely on the enzyme TMPRSS2 for viral fusion.",
+      "claim_type": "EXPLICIT",
+      "source": "Others have noted that the effect of 'Spike-delta' mutation may be cell type specific in that this mutation results in lower infectivity in some cell types like Calu-3 which rely on the enzyme TMPRSS2 for viral fusion, while this mutation does not affect entry into other cell types like VeroE6 which lacks TMPRSS2 (Hoffmann et al., 2020b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Published observation cited with reference to Hoffmann et al., 2020b.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:49:36.913453Z"
+    },
+    {
+      "id": "b1c7df13-6894-4009-89b3-a4e606dc7ef6",
+      "content_id": "596d4b6f-dab1-4cb5-9e9c-4d7368dab8d2",
+      "claim_id": "C114",
+      "claim": "The 'Spike-delta' mutation does not affect entry into cell types like VeroE6 which lacks TMPRSS2.",
+      "claim_type": "EXPLICIT",
+      "source": "Others have noted that the effect of 'Spike-delta' mutation may be cell type specific in that this mutation results in lower infectivity in some cell types like Calu-3 which rely on the enzyme TMPRSS2 for viral fusion, while this mutation does not affect entry into other cell types like VeroE6 which lacks TMPRSS2 (Hoffmann et al., 2020b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Published observation cited with reference to Hoffmann et al., 2020b.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:49:36.913453Z"
+    },
+    {
+      "id": "33f0a9e2-625b-436d-b096-8a6c647d7aa8",
+      "content_id": "596d4b6f-dab1-4cb5-9e9c-4d7368dab8d2",
+      "claim_id": "C115",
+      "claim": "Additional glycosylation sites proximal to S2' may also modulate viral entry, perhaps because some proteases like TMPRSS2 have both ligand-binding and protease activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on these observations, we speculate that additional glycosylation sites proximal to S2' may also modulate viral entry, perhaps because some proteases like TMPRSS2 have both ligand-binding and protease activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculation based on experimental observations and published literature.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:49:36.913453Z"
+    },
+    {
+      "id": "dd6962b1-c722-47f2-bf06-80f8f71e7a63",
+      "content_id": "596d4b6f-dab1-4cb5-9e9c-4d7368dab8d2",
+      "claim_id": "C116",
+      "claim": "The N-glycans proximal to S2' include N801, and to a lesser extent N616 and N657.",
+      "claim_type": "EXPLICIT",
+      "source": "The N-glycans proximal to S2' include N801, and to a lesser extent N616 and N657.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Structural information about glycan locations.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:49:36.913453Z"
+    },
+    {
+      "id": "b824e707-c3eb-453f-8ba1-dfc123067689",
+      "content_id": "596d4b6f-dab1-4cb5-9e9c-4d7368dab8d2",
+      "claim_id": "C117",
+      "claim": "Both O- and N-glycan truncation may be used to reduce viral entry.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to basic science understanding, our findings have translational potential as it suggests that both O- and N-glycan truncation may be used to reduce viral entry.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Proposed therapeutic application based on experimental findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:49:36.913453Z"
+    },
+    {
+      "id": "b1f8c899-27a0-41ae-9675-7758685cbb0f",
+      "content_id": "596d4b6f-dab1-4cb5-9e9c-4d7368dab8d2",
+      "claim_id": "C118",
+      "claim": "It would be attractive to test additional N-glycosylation inhibitors, like Swainsonine, which has a demonstrated safety profile in humans.",
+      "claim_type": "EXPLICIT",
+      "source": "In this regard, it would be attractive to test additional N-glycosylation inhibitors, like Swainsonine, which has a demonstrated safety profile in humans (Goss et al., 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Proposed therapeutic approach with reference to Goss et al., 1997 for safety profile.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:49:36.913453Z"
+    },
+    {
+      "id": "3072f68a-6dde-4b9c-b1fe-bd07fb75d806",
+      "content_id": "596d4b6f-dab1-4cb5-9e9c-4d7368dab8d2",
+      "claim_id": "C119",
+      "claim": "Swainsonine has a demonstrated safety profile in humans.",
+      "claim_type": "EXPLICIT",
+      "source": "In this regard, it would be attractive to test additional N-glycosylation inhibitors, like Swainsonine, which has a demonstrated safety profile in humans (Goss et al., 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Published observation cited with reference to Goss et al., 1997.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:49:36.913453Z"
+    },
+    {
+      "id": "a4ff66f3-96f4-451a-b47a-617215affa2d",
+      "content_id": "596d4b6f-dab1-4cb5-9e9c-4d7368dab8d2",
+      "claim_id": "C120",
+      "claim": "Glycoengineering may provide a strategy to take advantage of evolutionary features to regulate viral entry and reduce disease transmission.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, while SARS-CoV-2 has developed a natural ability to enhance infectivity, we propose that glycoengineering may provide a strategy to take advantage of these evolutionary features to regulate viral entry and reduce disease transmission.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Proposed therapeutic strategy based on experimental findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:49:36.913453Z"
+    },
+    {
+      "id": "a9306cd9-8c83-4ddf-bafb-e15644eee034",
+      "content_id": "596d4b6f-dab1-4cb5-9e9c-4d7368dab8d2",
+      "claim_id": "C121",
+      "claim": "~45\u2013100% of the viral N-glycans were complex-type.",
+      "claim_type": "EXPLICIT",
+      "source": "Glycoproteomics analysis of purified pseudovirus produced in HEK293T cells showed that ~45\u2013100% of the viral N-glycans were complex-type, with up to ~55% of their antennae being terminated by sialic acid (K.C., et al. manuscript in preparation).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Glycoproteomics mass spectrometry data from unpublished manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:49:36.913453Z"
+    },
+    {
+      "id": "17d96a42-95d3-4b32-804f-297f7ec71134",
+      "content_id": "596d4b6f-dab1-4cb5-9e9c-4d7368dab8d2",
+      "claim_id": "C122",
+      "claim": "Up to ~55% of the antennae on viral N-glycans were terminated by sialic acid.",
+      "claim_type": "EXPLICIT",
+      "source": "Glycoproteomics analysis of purified pseudovirus produced in HEK293T cells showed that ~45\u2013100% of the viral N-glycans were complex-type, with up to ~55% of their antennae being terminated by sialic acid (K.C., et al. manuscript in preparation).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Glycoproteomics mass spectrometry data from unpublished manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:49:36.913453Z"
+    },
+    {
+      "id": "faa6ff6e-bc93-4c03-ace1-dfac2547ede2",
+      "content_id": "596d4b6f-dab1-4cb5-9e9c-4d7368dab8d2",
+      "claim_id": "C123",
+      "claim": "The pseudovirus used in this study was processed by glycoenzymes that are typically found in the cellular medial and trans-Golgi compartments.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the pseudovirus used in this study was processed by glycoenzymes that are typically found in the cellular medial and trans-Golgi compartments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from glycoproteomics data showing complex-type glycans.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:49:36.913453Z"
+    },
+    {
+      "id": "c071cd4c-3b6c-49d6-8f5b-a1ea93fd3a85",
+      "content_id": "596d4b6f-dab1-4cb5-9e9c-4d7368dab8d2",
+      "claim_id": "C124",
+      "claim": "ACE2 sialic acids may modestly shield virus/Spike binding in some biological contexts and perhaps some cell systems.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, the binding and pseudovirus data suggest that ACE2 sialic acids may modestly shield virus/Spike binding in some biological contexts and perhaps some cell systems.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Interpretation of experimental data from binding and viral entry assays.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:49:36.913453Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "181b74f5-4d00-42b0-b54f-b47b7a94186f",
+      "content_id": "596d4b6f-dab1-4cb5-9e9c-4d7368dab8d2",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "SARS-CoV-2 Spike protein, its RBD, and ACE2 receptor are extensively glycosylated. The Spike protein has 22 N-glycosylation sites and ACE2 has 7 N-glycosylation sites, with the majority bearing carbohydrates. O-linked glycans are also present on both proteins.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C3, C28-C31, and C33 establish well-documented glycosylation patterns on SARS-CoV-2 Spike and ACE2 proteins, supported by multiple published studies (Walls et al., 2020; Wrapp et al., 2020; Shajahan et al., 2020a,b). These are established facts in the field with strong citation support.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:49:36.913453Z"
+    },
+    {
+      "id": "a1d82931-9823-49ee-ae36-c65cb488a7e3",
+      "content_id": "596d4b6f-dab1-4cb5-9e9c-4d7368dab8d2",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "N- and O-glycans have only minor contribution to direct Spike-ACE2 binding. Desialylation of ACE2 modestly increased RBD-Fc and S1-Fc binding (26-56%), while desialylation of Spike had minimal effect. Knocking out N-glycans on Spike reduced ACE2-Fc binding by 40%, while O-glycan knockout increased binding by 20%. Glycan engineering of ACE2 did not impact Spike-Fc binding.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C49-C51, C56-C58, C67-C70, C93, C96, and C98 are supported by consistent experimental data from flow cytometry binding assays (Figures 2D, 3D-F). The modest effects observed (26-56% increase with sialidase, 40% decrease with N-glycan knockout) are quantified with statistical significance (p<0.05) and replicated across multiple experimental conditions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:49:36.913453Z"
+    },
+    {
+      "id": "17c70649-b064-49db-b1b9-8104106378a6",
+      "content_id": "596d4b6f-dab1-4cb5-9e9c-4d7368dab8d2",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "N- and O-glycans play a major role in regulating viral entry. Blocking N-glycan biosynthesis at the oligomannose stage using MGAT1 knockout or kifunensine dramatically reduced viral entry by >95%. Blocking O-glycan elaboration partially reduced viral entry (35-70% reduction in DsRed positive cells, 70-85% loss in fluorescence).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5-C8, C72-C76, C101-C102 are strongly supported by pseudovirus entry assays (Figures 4B-D, 5B-D). The >95% reduction in viral entry with N-glycan knockout is dramatic and reproducible. O-glycan effects are more modest but still significant. Multiple independent approaches (genetic knockout and small molecule inhibitor) converge on the same conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:49:36.913453Z"
+    },
+    {
+      "id": "daeb1bcc-8b7b-4dcc-ab03-7e987ab88689",
+      "content_id": "596d4b6f-dab1-4cb5-9e9c-4d7368dab8d2",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Inhibition of N-glycan biosynthesis enhanced Spike-protein proteolysis at the S1-S2 interface. N-glycan loss triggered ~95% loss of intact Spike protein based on densitometry. Spike-WT showed more extensive cleavage than Spike-mutant. Virus produced in O-glycan knockout cells showed greater proteolysis (52%) compared to wild-type (32%).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9, C79-C81, C87, and C103 are supported by western blot analysis with densitometry quantification (Figures 4E-F, 5E). The 95% loss of intact Spike upon N-glycan inhibition is dramatic and provides a mechanistic explanation for reduced viral entry. The differential cleavage between Spike-WT and Spike-mutant is consistent with the furin site differences.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:49:36.913453Z"
+    },
+    {
+      "id": "4cc858c0-67a4-4eea-ad5a-688dbdabd0ce",
+      "content_id": "596d4b6f-dab1-4cb5-9e9c-4d7368dab8d2",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Enhanced Spike-protein proteolysis reduces RBD presentation on virus, lowering binding to host ACE2 and decreasing viral entry. There is an inverse relationship between furin cleavage and viral entry. Both N- and O-glycans modulate proteolysis rates at the S1-S2 interface.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10-C12, C104, C108-C110 present a mechanistic model supported by the experimental data. The inverse relationship between furin cleavage and viral entry is demonstrated by comparing Spike-WT and Spike-mutant (C55, C105). The model is consistent with published literature (Belouzard et al., 2009) and explains the observed reduction in viral entry upon glycan inhibition.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:49:36.913453Z"
+    },
+    {
+      "id": "6fe93eb7-6cca-4c9d-9323-70adca49d359",
+      "content_id": "596d4b6f-dab1-4cb5-9e9c-4d7368dab8d2",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Kifunensine treatment (15 \u00b5M) reduced viral infection by 85-90%. Even the furin-resistant Spike-delta virus, which lacks extensive S1-S2 cleavage, showed partial reduction in entry with kifunensine treatment, suggesting N-glycans have additional roles beyond regulating S1-S2 proteolysis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C83, C88-C92 are supported by pseudovirus entry assays and western blots (Figures 5B-F). The Spike-delta experiment is particularly important as it demonstrates that N-glycans affect viral entry through mechanisms beyond S1-S2 cleavage. The statistical significance (p<0.05) and reproducibility across viral titers strengthen this conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:49:36.913453Z"
+    },
+    {
+      "id": "fe8f36a6-65fb-49a5-ae9e-2d9de8092c3d",
+      "content_id": "596d4b6f-dab1-4cb5-9e9c-4d7368dab8d2",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "CRISPR-Cas9 knockout cells were successfully generated and validated. Sanger sequencing confirmed indels in all three C1GalT1 alleles of [O]-293T and frameshift mutation in the single MGAT1 allele of [N]-293T. Lectin binding assays confirmed loss of O-glycan elaboration (increased VVA binding) and N-glycan complex structures (loss of PHA-L binding).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C63-C66 are supported by Sanger sequencing (Figure 3B) and lectin binding assays (Figure 3C, Figure 3-supplement 1). The validation is thorough, using both genetic sequencing and functional glycan analysis. This establishes the validity of the cell line models used throughout the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:49:36.913453Z"
+    },
+    {
+      "id": "9e988aa0-7e1e-419b-a880-347c83140057",
+      "content_id": "596d4b6f-dab1-4cb5-9e9c-4d7368dab8d2",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Recombinant Fc-fusion proteins were successfully expressed and validated. RBD-Fc, S1-Fc, and ACE2-Fc showed apparent molecular masses higher than theoretical values due to glycosylation. All proteins were functionally active as demonstrated by specific binding in flow cytometry assays.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41-C48 are supported by western blot analysis (Figure 2B) and flow cytometry binding assays (Figure 2C). The difference between apparent and theoretical molecular masses confirms extensive glycosylation. Functional validation through specific binding demonstrates protein quality.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:49:36.913453Z"
+    },
+    {
+      "id": "7527f767-1de9-4f74-b333-973562833598",
+      "content_id": "596d4b6f-dab1-4cb5-9e9c-4d7368dab8d2",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Pseudovirus entry assays were validated using VSVG and Spike variants. VSVG pseudovirus infected both HEK293T and 293T/ACE2 cells, while Spike-WT and Spike-mutant entered only 293T/ACE2 cells. Spike-mutant showed higher infectivity than Spike-WT.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52-C55 are supported by pseudovirus entry assays (Figures 2E-F). The ACE2-dependent entry of Spike pseudovirus validates the assay system. The higher infectivity of Spike-mutant is consistent with reduced furin cleavage and is reproducible across experiments.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:49:36.913453Z"
+    },
+    {
+      "id": "fe5507ec-ee89-48d5-b293-12792d847cbc",
+      "content_id": "596d4b6f-dab1-4cb5-9e9c-4d7368dab8d2",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Glycoproteomics mass spectrometry analysis showed that 80-100% of ACE2-Fc N-glycans and 40-100% of S1-Fc glycopeptides were complex-type, with up to 60% and 20% sialylation respectively. Viral N-glycans were 45-100% complex-type with up to 55% sialylation, indicating processing by medial and trans-Golgi glycoenzymes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C59-C62, C121-C123 cite unpublished glycoproteomics data ('K.C., et al., manuscript in preparation'). While the data appear consistent with the experimental observations, the lack of peer-reviewed publication and detailed methodology makes independent verification impossible. The conclusions drawn from this data are reasonable but cannot be fully evaluated.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:49:36.913453Z"
+    },
+    {
+      "id": "2b933892-e302-41e2-bc30-22ce62a84384",
+      "content_id": "596d4b6f-dab1-4cb5-9e9c-4d7368dab8d2",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Chemical inhibitors of glycosylation may be evaluated for COVID-19 treatment. Both O- and N-glycan truncation may reduce viral entry. Additional N-glycosylation inhibitors like Swainsonine, which has demonstrated safety in humans, could be tested. Glycoengineering may provide a therapeutic strategy.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C13, C117-C118, C120 are speculative proposals for future therapeutic applications. While the experimental data (C5-C8, C76, C83) support the concept that glycosylation inhibitors reduce viral entry in vitro, translation to clinical efficacy is uncertain. The safety profile of Swainsonine (C119) is cited, but efficacy against SARS-CoV-2 in vivo remains untested. These are reasonable hypotheses requiring validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:49:36.913453Z"
+    },
+    {
+      "id": "6202dcaa-2a1e-4748-9b42-b783d845f386",
+      "content_id": "596d4b6f-dab1-4cb5-9e9c-4d7368dab8d2",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Background knowledge about SARS-CoV-2 biology, including its origin, pathophysiology, Spike protein function, ACE2 receptor, proteolysis sites, and proposed glycan functions. Experimental data supporting proposed glycan functions is currently lacking.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C14-C27, C32, C34-C37 summarize established knowledge from published literature with appropriate citations. These provide necessary context for the study. Claim C37 correctly identifies the knowledge gap that this manuscript addresses.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:49:36.913453Z"
+    },
+    {
+      "id": "c0d5f8fc-dd66-40b0-9bbb-4cfe508e239c",
+      "content_id": "596d4b6f-dab1-4cb5-9e9c-4d7368dab8d2",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Molecular dynamics simulations show that glycans cover the Spike-ACE2 interface and surround the furin (S1-S2) and S2' proteolysis sites.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38-C40 are supported by molecular dynamics simulation data (Figure 1C). The simulations used established structures (6LZG, 6VYB) and standard computational methods (NAMD2, CHARMM36). The visualization clearly shows glycan coverage of key functional sites, providing structural context for the experimental findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:49:36.913453Z"
+    },
+    {
+      "id": "d8f11a03-f776-40c9-aea4-0bd74f0a0554",
+      "content_id": "596d4b6f-dab1-4cb5-9e9c-4d7368dab8d2",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "RBD-Fc bound approximately 10 times more avidly to ACE2 compared to S1-Fc.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C71 is supported by comparing binding data in Figures 3E and 3F. The concentrations used (0.35 \u00b5g/mL RBD-Fc vs 3.5 \u00b5g/mL S1-Fc to achieve similar binding) demonstrate the higher avidity of RBD-Fc. This is consistent with published literature (Shang et al., 2020) and highlights the importance of RBD presentation in the context of full Spike protein.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:49:36.913453Z"
+    },
+    {
+      "id": "b42ce41a-dd37-495f-ab09-814bc8a78dfc",
+      "content_id": "596d4b6f-dab1-4cb5-9e9c-4d7368dab8d2",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Western blot analysis showed that Spike-WT and Spike-mutant viruses expressed comparable levels of Spike protein regardless of glycosylation mutation. The molecular mass of Spike in [N]-293T was lower, consistent with truncated N-glycosylation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C77-C78 are supported by western blot data (Figure 4E). The comparable expression levels validate comparisons between different virus preparations. The reduced molecular mass in [N]-293T confirms the expected effect of MGAT1 knockout on glycan processing.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:49:36.913453Z"
+    },
+    {
+      "id": "eaac033d-e262-48f4-b044-c62572341395",
+      "content_id": "596d4b6f-dab1-4cb5-9e9c-4d7368dab8d2",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Kifunensine reduced complex N-glycan formation on cultured cells within 24-48 hours with no change in cell viability.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C82 is supported by lectin binding and viability assays (Figure 5-supplement 1A). The dose-dependent reduction in PHA-L and ECL binding confirms inhibition of complex glycan formation. The lack of effect on cell viability is important for interpreting the viral entry results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:49:36.913453Z"
+    },
+    {
+      "id": "ad7d5bf3-0976-461a-b427-81f229f3de5d",
+      "content_id": "596d4b6f-dab1-4cb5-9e9c-4d7368dab8d2",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "The reduction in Spike molecular mass with kifunensine was less apparent than with MGAT1 knockout because kifunensine blockade of Mannosidase-I produces Man7-9 glycans while MGAT1 knockout produces Man-5 glycans.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C84-C86 are supported by western blot analysis (Figure 5E) and established knowledge of glycan biosynthesis pathways. The mechanistic explanation for the differential molecular mass changes is biochemically sound and consistent with the known specificities of the inhibitor and knockout.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:49:36.913453Z"
+    },
+    {
+      "id": "ee6f9273-dad8-42ed-ad25-5e8050409327",
+      "content_id": "596d4b6f-dab1-4cb5-9e9c-4d7368dab8d2",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Discussion of mechanistic details and comparison with published literature, including glycan locations near functional sites, comparison with other viruses, cell-type specific effects, and the D614G mutation. Swainsonine has demonstrated safety in humans.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C94-C95, C97, C99-C100, C105-C107, C111-C114, C119 appropriately cite and interpret published literature. The comparisons with other viruses (C95) and the D614G mutation (C106-C107) provide important context. The structural information about glycan locations (C94, C111-C112, C116) is well-supported by citations. Claim C119 about Swainsonine safety is appropriately cited (Goss et al., 1997).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:49:36.913453Z"
+    },
+    {
+      "id": "8c541a57-d532-46c7-8d02-0377667b299b",
+      "content_id": "596d4b6f-dab1-4cb5-9e9c-4d7368dab8d2",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "ACE2 sialic acids may modestly shield virus/Spike binding in some biological contexts and cell systems.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C124 is a reasonable interpretation of the combined binding and viral entry data (C49-C51, C56-C58, C93). The cautious language ('may modestly shield', 'some biological contexts') appropriately reflects the modest effects observed and acknowledges potential context-dependence.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:49:36.913453Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "aadcc9e1-06d1-4dd5-83af-6206ba15121d",
+      "result_id": "181b74f5-4d00-42b0-b54f-b47b7a94186f"
+    },
+    {
+      "claim_id": "4671d877-3615-4323-9763-92b39d0ca198",
+      "result_id": "181b74f5-4d00-42b0-b54f-b47b7a94186f"
+    },
+    {
+      "claim_id": "04b1a758-0e67-4b15-a614-7db2d84f97df",
+      "result_id": "181b74f5-4d00-42b0-b54f-b47b7a94186f"
+    },
+    {
+      "claim_id": "3075cc18-8731-43d7-a8e3-4ad424cbebd7",
+      "result_id": "181b74f5-4d00-42b0-b54f-b47b7a94186f"
+    },
+    {
+      "claim_id": "ef318d67-3a9a-469d-8b97-d9156702b08e",
+      "result_id": "181b74f5-4d00-42b0-b54f-b47b7a94186f"
+    },
+    {
+      "claim_id": "4c7e9347-a8cf-41ea-91b6-adaf85e55226",
+      "result_id": "181b74f5-4d00-42b0-b54f-b47b7a94186f"
+    },
+    {
+      "claim_id": "fdc36008-9291-48ef-af52-bf62e3c4e4a8",
+      "result_id": "181b74f5-4d00-42b0-b54f-b47b7a94186f"
+    },
+    {
+      "claim_id": "5b16218b-aeb6-4591-84a5-500eb67e40de",
+      "result_id": "181b74f5-4d00-42b0-b54f-b47b7a94186f"
+    },
+    {
+      "claim_id": "48b6fc30-badf-4b76-b812-7b7e0bd0e55e",
+      "result_id": "a1d82931-9823-49ee-ae36-c65cb488a7e3"
+    },
+    {
+      "claim_id": "6f830b99-a5e7-4bd2-afec-6e718871b903",
+      "result_id": "a1d82931-9823-49ee-ae36-c65cb488a7e3"
+    },
+    {
+      "claim_id": "432e820b-3435-461b-899c-f4d38bc0c562",
+      "result_id": "a1d82931-9823-49ee-ae36-c65cb488a7e3"
+    },
+    {
+      "claim_id": "e0c3fd91-2e56-4682-9ac5-6d6a8ad2bf9a",
+      "result_id": "a1d82931-9823-49ee-ae36-c65cb488a7e3"
+    },
+    {
+      "claim_id": "bfb06ef2-672b-485f-a749-794541acd462",
+      "result_id": "a1d82931-9823-49ee-ae36-c65cb488a7e3"
+    },
+    {
+      "claim_id": "023292b5-34ec-40d2-91f8-0435a6657497",
+      "result_id": "a1d82931-9823-49ee-ae36-c65cb488a7e3"
+    },
+    {
+      "claim_id": "b04f210a-7462-4c2c-a218-b0469d3fd86e",
+      "result_id": "a1d82931-9823-49ee-ae36-c65cb488a7e3"
+    },
+    {
+      "claim_id": "7008ef73-1e91-45ba-9550-67391dad8f55",
+      "result_id": "a1d82931-9823-49ee-ae36-c65cb488a7e3"
+    },
+    {
+      "claim_id": "7f7657dd-03c1-437e-8408-7bab287a9075",
+      "result_id": "a1d82931-9823-49ee-ae36-c65cb488a7e3"
+    },
+    {
+      "claim_id": "b6c60fdd-4efa-419e-af3e-efd94737752a",
+      "result_id": "a1d82931-9823-49ee-ae36-c65cb488a7e3"
+    },
+    {
+      "claim_id": "de309ab1-5fde-4db8-9672-f3fb44716c31",
+      "result_id": "a1d82931-9823-49ee-ae36-c65cb488a7e3"
+    },
+    {
+      "claim_id": "48565031-004b-4cb8-ba5b-1bc7669a3a11",
+      "result_id": "a1d82931-9823-49ee-ae36-c65cb488a7e3"
+    },
+    {
+      "claim_id": "d7fe8b73-9ed0-45cf-a74e-dcf24649963f",
+      "result_id": "a1d82931-9823-49ee-ae36-c65cb488a7e3"
+    },
+    {
+      "claim_id": "b1e43bba-8052-492a-a784-bde6a4ade7e3",
+      "result_id": "a1d82931-9823-49ee-ae36-c65cb488a7e3"
+    },
+    {
+      "claim_id": "e19e6d8e-38a3-4582-b0ef-ddf8d6840d9e",
+      "result_id": "17c70649-b064-49db-b1b9-8104106378a6"
+    },
+    {
+      "claim_id": "ef9be0ca-8cbf-46c0-beab-4d19a37cee07",
+      "result_id": "17c70649-b064-49db-b1b9-8104106378a6"
+    },
+    {
+      "claim_id": "26393341-6261-4b5d-9b92-5849e32d672f",
+      "result_id": "17c70649-b064-49db-b1b9-8104106378a6"
+    },
+    {
+      "claim_id": "8441c7a5-bfa1-443b-8440-ef0b1d18fe46",
+      "result_id": "17c70649-b064-49db-b1b9-8104106378a6"
+    },
+    {
+      "claim_id": "faf4040d-7ebe-4620-b92a-47ae907133b6",
+      "result_id": "17c70649-b064-49db-b1b9-8104106378a6"
+    },
+    {
+      "claim_id": "360821cd-0544-4abd-ae30-afdb05481deb",
+      "result_id": "17c70649-b064-49db-b1b9-8104106378a6"
+    },
+    {
+      "claim_id": "32add19e-a08d-48f7-b6d9-9f80ed217bf2",
+      "result_id": "17c70649-b064-49db-b1b9-8104106378a6"
+    },
+    {
+      "claim_id": "377129ec-80ec-445d-81a1-ad859cddcbf4",
+      "result_id": "17c70649-b064-49db-b1b9-8104106378a6"
+    },
+    {
+      "claim_id": "ec2a3020-ae23-4025-9ee4-3e5c30e86fef",
+      "result_id": "17c70649-b064-49db-b1b9-8104106378a6"
+    },
+    {
+      "claim_id": "80fed389-38a9-423c-827c-9f7f229d9368",
+      "result_id": "17c70649-b064-49db-b1b9-8104106378a6"
+    },
+    {
+      "claim_id": "f8c96b51-fc32-4291-b421-a0adea475632",
+      "result_id": "17c70649-b064-49db-b1b9-8104106378a6"
+    },
+    {
+      "claim_id": "a5ce35d5-7338-4f3d-9550-e3c61056c825",
+      "result_id": "daeb1bcc-8b7b-4dcc-ab03-7e987ab88689"
+    },
+    {
+      "claim_id": "cf25fcff-c6ec-458c-a0c3-685b47dff5d6",
+      "result_id": "daeb1bcc-8b7b-4dcc-ab03-7e987ab88689"
+    },
+    {
+      "claim_id": "d5ada651-bc95-446e-8c38-093cbb82b807",
+      "result_id": "daeb1bcc-8b7b-4dcc-ab03-7e987ab88689"
+    },
+    {
+      "claim_id": "249bcc53-bc65-49d4-a573-1b63fc3c1762",
+      "result_id": "daeb1bcc-8b7b-4dcc-ab03-7e987ab88689"
+    },
+    {
+      "claim_id": "e0bacbb5-d4cf-4741-a1c4-5b0ca1d56f21",
+      "result_id": "daeb1bcc-8b7b-4dcc-ab03-7e987ab88689"
+    },
+    {
+      "claim_id": "afdb63ca-ce91-495f-8410-3d4bc72609ae",
+      "result_id": "daeb1bcc-8b7b-4dcc-ab03-7e987ab88689"
+    },
+    {
+      "claim_id": "31f2ff8a-0225-4693-91c8-d187613bc228",
+      "result_id": "4cc858c0-67a4-4eea-ad5a-688dbdabd0ce"
+    },
+    {
+      "claim_id": "23c24211-08d1-4cd0-b956-28478f1368e2",
+      "result_id": "4cc858c0-67a4-4eea-ad5a-688dbdabd0ce"
+    },
+    {
+      "claim_id": "880ddfb1-f860-4012-a38b-fecb917d12dc",
+      "result_id": "4cc858c0-67a4-4eea-ad5a-688dbdabd0ce"
+    },
+    {
+      "claim_id": "78da3fa3-70d2-43b8-a14c-f810190e7a3e",
+      "result_id": "4cc858c0-67a4-4eea-ad5a-688dbdabd0ce"
+    },
+    {
+      "claim_id": "8a1630cb-d9b7-47d8-95d9-a279f3d08a9f",
+      "result_id": "4cc858c0-67a4-4eea-ad5a-688dbdabd0ce"
+    },
+    {
+      "claim_id": "e429fd17-0ee6-43a1-a7cf-56b92acc0414",
+      "result_id": "4cc858c0-67a4-4eea-ad5a-688dbdabd0ce"
+    },
+    {
+      "claim_id": "de054485-bc34-4ff4-8793-30a4a1039e5a",
+      "result_id": "4cc858c0-67a4-4eea-ad5a-688dbdabd0ce"
+    },
+    {
+      "claim_id": "9442c111-3e1a-4b62-9c15-0f3d2596434b",
+      "result_id": "6fe93eb7-6cca-4c9d-9323-70adca49d359"
+    },
+    {
+      "claim_id": "6dc2302e-df0e-4875-b6ac-08885b9c5494",
+      "result_id": "6fe93eb7-6cca-4c9d-9323-70adca49d359"
+    },
+    {
+      "claim_id": "9ea0fa4c-084e-439d-9622-f06f649101a4",
+      "result_id": "6fe93eb7-6cca-4c9d-9323-70adca49d359"
+    },
+    {
+      "claim_id": "2c68830b-1236-41cb-bdb0-aaaaa456c663",
+      "result_id": "6fe93eb7-6cca-4c9d-9323-70adca49d359"
+    },
+    {
+      "claim_id": "f5239648-3530-410a-b7b5-2f1e8839bfc6",
+      "result_id": "6fe93eb7-6cca-4c9d-9323-70adca49d359"
+    },
+    {
+      "claim_id": "54b36acf-a731-4dae-8658-281ba1afd114",
+      "result_id": "6fe93eb7-6cca-4c9d-9323-70adca49d359"
+    },
+    {
+      "claim_id": "dd125c5b-5446-491c-b1a3-7db0e735bb45",
+      "result_id": "fe8f36a6-65fb-49a5-ae9e-2d9de8092c3d"
+    },
+    {
+      "claim_id": "53839d3c-cada-477d-8f9f-4e3b701b7606",
+      "result_id": "fe8f36a6-65fb-49a5-ae9e-2d9de8092c3d"
+    },
+    {
+      "claim_id": "2c3bd48e-65f1-4dad-8e93-1c21db0d7c55",
+      "result_id": "fe8f36a6-65fb-49a5-ae9e-2d9de8092c3d"
+    },
+    {
+      "claim_id": "7bcebd5b-a991-4232-9c94-332bc351631b",
+      "result_id": "fe8f36a6-65fb-49a5-ae9e-2d9de8092c3d"
+    },
+    {
+      "claim_id": "2877ac3c-184a-4284-93b8-129722d557a0",
+      "result_id": "9e988aa0-7e1e-419b-a880-347c83140057"
+    },
+    {
+      "claim_id": "b1ad3272-e342-4b8c-86fa-748b591155d4",
+      "result_id": "9e988aa0-7e1e-419b-a880-347c83140057"
+    },
+    {
+      "claim_id": "dfe5f815-f439-47fe-8fa4-d555f05c5da4",
+      "result_id": "9e988aa0-7e1e-419b-a880-347c83140057"
+    },
+    {
+      "claim_id": "756a0122-7b1a-4310-86ca-faf7f4717777",
+      "result_id": "9e988aa0-7e1e-419b-a880-347c83140057"
+    },
+    {
+      "claim_id": "d79bc852-ac81-4f77-a325-e13f1f86f94b",
+      "result_id": "9e988aa0-7e1e-419b-a880-347c83140057"
+    },
+    {
+      "claim_id": "bf6cd0c4-14fb-449a-9f55-1a2f2989ce2a",
+      "result_id": "9e988aa0-7e1e-419b-a880-347c83140057"
+    },
+    {
+      "claim_id": "2d31fcd6-b715-4d7a-9011-2b9a2233fa8b",
+      "result_id": "9e988aa0-7e1e-419b-a880-347c83140057"
+    },
+    {
+      "claim_id": "cd25d474-913f-47c3-b2e1-a7c9d9001ea7",
+      "result_id": "9e988aa0-7e1e-419b-a880-347c83140057"
+    },
+    {
+      "claim_id": "eb92badd-17a0-4c37-8467-be32a3dd7c86",
+      "result_id": "7527f767-1de9-4f74-b333-973562833598"
+    },
+    {
+      "claim_id": "c686a6a7-76f2-4e26-8602-0abf854d6398",
+      "result_id": "7527f767-1de9-4f74-b333-973562833598"
+    },
+    {
+      "claim_id": "632529d7-1da2-41ff-adad-6b2a21d02cf3",
+      "result_id": "7527f767-1de9-4f74-b333-973562833598"
+    },
+    {
+      "claim_id": "495a58f0-8685-43ef-875c-4438b3d18a2f",
+      "result_id": "7527f767-1de9-4f74-b333-973562833598"
+    },
+    {
+      "claim_id": "c4968e7c-060d-4dfa-aae2-990a4a69634f",
+      "result_id": "fe5507ec-ee89-48d5-b293-12792d847cbc"
+    },
+    {
+      "claim_id": "2b25e3dd-a8a8-4de6-8cd3-856fe531e818",
+      "result_id": "fe5507ec-ee89-48d5-b293-12792d847cbc"
+    },
+    {
+      "claim_id": "78053ca6-3b07-49d1-b4bb-3c7ce25c1036",
+      "result_id": "fe5507ec-ee89-48d5-b293-12792d847cbc"
+    },
+    {
+      "claim_id": "a68a15b0-fee3-4b2d-b90a-41d64fa0d09d",
+      "result_id": "fe5507ec-ee89-48d5-b293-12792d847cbc"
+    },
+    {
+      "claim_id": "a9306cd9-8c83-4ddf-bafb-e15644eee034",
+      "result_id": "fe5507ec-ee89-48d5-b293-12792d847cbc"
+    },
+    {
+      "claim_id": "17d96a42-95d3-4b32-804f-297f7ec71134",
+      "result_id": "fe5507ec-ee89-48d5-b293-12792d847cbc"
+    },
+    {
+      "claim_id": "faa6ff6e-bc93-4c03-ace1-dfac2547ede2",
+      "result_id": "fe5507ec-ee89-48d5-b293-12792d847cbc"
+    },
+    {
+      "claim_id": "05deafa5-43de-4341-bf54-6b38b07bf938",
+      "result_id": "2b933892-e302-41e2-bc30-22ce62a84384"
+    },
+    {
+      "claim_id": "b824e707-c3eb-453f-8ba1-dfc123067689",
+      "result_id": "2b933892-e302-41e2-bc30-22ce62a84384"
+    },
+    {
+      "claim_id": "b1f8c899-27a0-41ae-9675-7758685cbb0f",
+      "result_id": "2b933892-e302-41e2-bc30-22ce62a84384"
+    },
+    {
+      "claim_id": "a4ff66f3-96f4-451a-b47a-617215affa2d",
+      "result_id": "2b933892-e302-41e2-bc30-22ce62a84384"
+    },
+    {
+      "claim_id": "2a83d348-fa7c-4b3c-a5db-4498a8c0d954",
+      "result_id": "6202dcaa-2a1e-4748-9b42-b783d845f386"
+    },
+    {
+      "claim_id": "985dbab4-8e04-4d77-9ecf-eca34a3fe1c1",
+      "result_id": "6202dcaa-2a1e-4748-9b42-b783d845f386"
+    },
+    {
+      "claim_id": "2ebc3c11-5f40-4e8b-a2e5-2c114d21c171",
+      "result_id": "6202dcaa-2a1e-4748-9b42-b783d845f386"
+    },
+    {
+      "claim_id": "2d5ebd73-3bf8-4ba2-94d6-adea3cae8c8f",
+      "result_id": "6202dcaa-2a1e-4748-9b42-b783d845f386"
+    },
+    {
+      "claim_id": "8a7e748c-d19e-4a6b-8218-eb4f3bc90592",
+      "result_id": "6202dcaa-2a1e-4748-9b42-b783d845f386"
+    },
+    {
+      "claim_id": "72fa221c-1f40-44c2-9ee0-3c6eb47ccd38",
+      "result_id": "6202dcaa-2a1e-4748-9b42-b783d845f386"
+    },
+    {
+      "claim_id": "d2063b7f-acac-4b27-a0f1-6612b37e39f1",
+      "result_id": "6202dcaa-2a1e-4748-9b42-b783d845f386"
+    },
+    {
+      "claim_id": "5aaab3a7-a61c-48b5-bff3-e1aeea31b976",
+      "result_id": "6202dcaa-2a1e-4748-9b42-b783d845f386"
+    },
+    {
+      "claim_id": "88245c9e-4b9b-4b3e-aa75-a6ea837acc1c",
+      "result_id": "6202dcaa-2a1e-4748-9b42-b783d845f386"
+    },
+    {
+      "claim_id": "caff375d-1ccb-439f-ac57-16a976786abe",
+      "result_id": "6202dcaa-2a1e-4748-9b42-b783d845f386"
+    },
+    {
+      "claim_id": "2f6f7887-653e-4b14-8578-c410c8f5a254",
+      "result_id": "6202dcaa-2a1e-4748-9b42-b783d845f386"
+    },
+    {
+      "claim_id": "0115aa3d-bb93-4a23-99ef-1e5d8012a0ac",
+      "result_id": "6202dcaa-2a1e-4748-9b42-b783d845f386"
+    },
+    {
+      "claim_id": "e77f0e24-cc8f-4ec4-b1d1-1dd3997a0a30",
+      "result_id": "6202dcaa-2a1e-4748-9b42-b783d845f386"
+    },
+    {
+      "claim_id": "a9e36f29-1624-4a68-9c7f-1beafeb69b71",
+      "result_id": "6202dcaa-2a1e-4748-9b42-b783d845f386"
+    },
+    {
+      "claim_id": "c927b9e7-c042-468a-ad7a-f45e60d25cfe",
+      "result_id": "6202dcaa-2a1e-4748-9b42-b783d845f386"
+    },
+    {
+      "claim_id": "3aa2eba8-8972-464f-aa44-fd28fc57a053",
+      "result_id": "6202dcaa-2a1e-4748-9b42-b783d845f386"
+    },
+    {
+      "claim_id": "c1d93762-2557-4884-b95e-0cd8fc447563",
+      "result_id": "6202dcaa-2a1e-4748-9b42-b783d845f386"
+    },
+    {
+      "claim_id": "5920cbee-dda8-4fae-8832-2bfb36e03d61",
+      "result_id": "6202dcaa-2a1e-4748-9b42-b783d845f386"
+    },
+    {
+      "claim_id": "ea0b63d5-63f4-4a3a-8653-34c6b5d9d250",
+      "result_id": "6202dcaa-2a1e-4748-9b42-b783d845f386"
+    },
+    {
+      "claim_id": "a68511c0-8ad4-4216-9f2c-7d8ebd1d8b66",
+      "result_id": "c0d5f8fc-dd66-40b0-9bbb-4cfe508e239c"
+    },
+    {
+      "claim_id": "dd3fd77a-0bab-421e-838c-55568d130507",
+      "result_id": "c0d5f8fc-dd66-40b0-9bbb-4cfe508e239c"
+    },
+    {
+      "claim_id": "e789ace5-c90c-41c1-8f7b-38a802fbb9f7",
+      "result_id": "c0d5f8fc-dd66-40b0-9bbb-4cfe508e239c"
+    },
+    {
+      "claim_id": "41c33296-0ec7-46e4-8095-0396e9e15b50",
+      "result_id": "d8f11a03-f776-40c9-aea4-0bd74f0a0554"
+    },
+    {
+      "claim_id": "c7eb0a10-de20-4ebb-ac37-df09bfe5c9fa",
+      "result_id": "b42ce41a-dd37-495f-ab09-814bc8a78dfc"
+    },
+    {
+      "claim_id": "9564023d-9d41-4561-a6e7-4cc7a4fc6f18",
+      "result_id": "b42ce41a-dd37-495f-ab09-814bc8a78dfc"
+    },
+    {
+      "claim_id": "61c891fd-ca71-4897-9d21-f2bb4b3991fe",
+      "result_id": "eaac033d-e262-48f4-b044-c62572341395"
+    },
+    {
+      "claim_id": "eee85bc5-11f0-43ae-829f-06557ba3b147",
+      "result_id": "ad7d5bf3-0976-461a-b427-81f229f3de5d"
+    },
+    {
+      "claim_id": "ee9342ea-5204-4d7c-be47-36eb5e0c5cea",
+      "result_id": "ad7d5bf3-0976-461a-b427-81f229f3de5d"
+    },
+    {
+      "claim_id": "ee2a6c28-15c2-4d7a-bb27-9a85bbaf4a0a",
+      "result_id": "ad7d5bf3-0976-461a-b427-81f229f3de5d"
+    },
+    {
+      "claim_id": "33455524-08ab-45e6-8028-4016ffc3aacf",
+      "result_id": "ee6f9273-dad8-42ed-ad25-5e8050409327"
+    },
+    {
+      "claim_id": "573e1b41-60f6-4516-ac7d-40d8a9543b20",
+      "result_id": "ee6f9273-dad8-42ed-ad25-5e8050409327"
+    },
+    {
+      "claim_id": "92a29753-a8cb-4b93-ab25-88901eaff9ae",
+      "result_id": "ee6f9273-dad8-42ed-ad25-5e8050409327"
+    },
+    {
+      "claim_id": "909e4063-932d-4489-9c16-2aab0dbaa22f",
+      "result_id": "ee6f9273-dad8-42ed-ad25-5e8050409327"
+    },
+    {
+      "claim_id": "9774cff1-bed9-4895-913c-0a58b9a5b2ce",
+      "result_id": "ee6f9273-dad8-42ed-ad25-5e8050409327"
+    },
+    {
+      "claim_id": "81dd6421-aeb3-4edb-8609-e20b4d338cc9",
+      "result_id": "ee6f9273-dad8-42ed-ad25-5e8050409327"
+    },
+    {
+      "claim_id": "a63f9a8c-7175-44cb-8e08-c6895fadd8d9",
+      "result_id": "ee6f9273-dad8-42ed-ad25-5e8050409327"
+    },
+    {
+      "claim_id": "5459e9f5-b4f8-4c96-a3a5-53fa1286d3db",
+      "result_id": "ee6f9273-dad8-42ed-ad25-5e8050409327"
+    },
+    {
+      "claim_id": "9f5ee9c5-1e3d-4abc-8ecd-4b2b9e3a2b0f",
+      "result_id": "ee6f9273-dad8-42ed-ad25-5e8050409327"
+    },
+    {
+      "claim_id": "a6167ee1-e1a3-40bb-aa30-7cebfd016103",
+      "result_id": "ee6f9273-dad8-42ed-ad25-5e8050409327"
+    },
+    {
+      "claim_id": "7eb64106-33fd-46d4-8c44-0dbb391b1739",
+      "result_id": "ee6f9273-dad8-42ed-ad25-5e8050409327"
+    },
+    {
+      "claim_id": "b1c7df13-6894-4009-89b3-a4e606dc7ef6",
+      "result_id": "ee6f9273-dad8-42ed-ad25-5e8050409327"
+    },
+    {
+      "claim_id": "33f0a9e2-625b-436d-b096-8a6c647d7aa8",
+      "result_id": "ee6f9273-dad8-42ed-ad25-5e8050409327"
+    },
+    {
+      "claim_id": "dd6962b1-c722-47f2-bf06-80f8f71e7a63",
+      "result_id": "ee6f9273-dad8-42ed-ad25-5e8050409327"
+    },
+    {
+      "claim_id": "3072f68a-6dde-4b9c-b1fe-bd07fb75d806",
+      "result_id": "ee6f9273-dad8-42ed-ad25-5e8050409327"
+    },
+    {
+      "claim_id": "c071cd4c-3b6c-49d6-8f5b-a1ea93fd3a85",
+      "result_id": "8c541a57-d532-46c7-8d02-0377667b299b"
+    }
+  ],
+  "comparisons": []
+}

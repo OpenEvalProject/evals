@@ -1,0 +1,1830 @@
+{
+  "submission": {
+    "id": "df7fe97b-2883-4d82-b099-cc652b09a6ce",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T19:40:40.318731Z",
+    "updated_at": "2025-12-02T19:40:40.318731Z"
+  },
+  "content": [
+    {
+      "id": "b7cf50ed-1069-47a2-9d57-1241f6d40a15",
+      "submission_id": "df7fe97b-2883-4d82-b099-cc652b09a6ce",
+      "content_type": "manuscript",
+      "content_text": "# The Mla pathway in Acinetobacter baumannii has no demonstrable role in anterograde lipid transport\n\n## Authors\n\n- Matthew J Powers<sup>1</sup> ([ORCID: 0000-0002-7896-3005](https://orcid.org/0000-0002-7896-3005))\n- Brent W Simpson<sup>1</sup> ([ORCID: 0000-0002-1655-7407](https://orcid.org/0000-0002-1655-7407))\n- M Stephen Trent<sup>1</sup> ([ORCID: 0000-0001-6134-1800](https://orcid.org/0000-0001-6134-1800)) \u2020\n\n### Affiliations\n\n1. Department of Infectious Diseases, College of Veterinary Medicine, University of Georgia Athens United States\n2. Department of Microbiology, College of Arts and Sciences, University of Georgia Athens United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe asymmetric outer membrane (OM) of Gram-negative bacteria functions as a selective permeability barrier to the environment. Perturbations to OM lipid asymmetry sensitize the cell to antibiotics. As such, mechanisms involved in lipid asymmetry are fundamental to our understanding of OM lipid homeostasis. One such mechanism, the Maintenance of lipid asymmetry (Mla) pathway has been proposed to extract mislocalized glycerophospholipids from the outer leaflet of the OM and return them to the inner membrane (IM). Work on this pathway in Acinetobacter baumannii support conflicting models for the directionality of the Mla system being retrograde (OM to IM) or anterograde (IM to OM). Here, we show conclusively that A. baumannii mla mutants exhibit no defects in anterograde transport. Furthermore, we identify an allele of the GTPase obgE that is synthetically sick in the absence of Mla; providing another link between cell envelope homeostasis and stringent response.\n\n## Introduction\n\nThe outer membrane (OM) of the Gram-negative cell envelope is the defining characteristic and a fundamental organelle of these organisms (Henderson et al., 2016). The OM, which separates the aqueous periplasmic space from the environment, serves as a critical, selective permeability barrier that prevents the entry of noxious compounds (Simpson and Trent, 2019). How the OM fulfills this role is two-fold and is predicated on its asymmetric lipid composition (Nikaido, 2003). While the inner leaflet of the OM is composed of the standard glycerophospholipids (GPLs), the outer leaflet is predominantly lipopolysaccharide (LPS) or lipooligosaccharide (LOS) (Funahara and Nikaido, 1980; Schindler and Osborn, 1979). LPS or LOS differ by the presence or absence of O-antigen sugar repeats respectively, but both molecules are anchored in the OM by lipid A, a unique glycolipid, that is remarkably conserved amongst Gram-negative bacteria (Whitfield and Trent, 2014). Lipid A is a bis-phosphorylated glucosamine disaccharide that can be anywhere from tetra- to hepta-acylated depending on genera (Whitfield and Trent, 2014). This increased hydrophobicity is the first reason for the OM\u2019s functionality as a barrier, as it strongly excludes the passive entry of hydrophilic compounds (Nikaido, 2003). Secondly, negatively charged phosphates on lipid A and covalently attached sugars that make up the core of LPS/LOS increases the net negative charge of the outer membrane. This facilitates efficient cross-bridging with divalent cations in the environment and promotes strong lateral interactions between LPS/LOS molecules on the surface (Schindler and Osborn, 1979; Murata et al., 2007). These tightly packed LPS/LOS molecules, particularly the core and O-antigen sugars, serve as physical impediments to the accessibility of hydrophobic compounds to the lipid bilayer of the OM (Funahara and Nikaido, 1980; Schindler and Osborn, 1979).\n\nWhen taking these factors into consideration, it is unsurprising that the OM has remained one of the largest hurdles in an increasingly desperate race for antimicrobial discovery (Lehman and Grabowicz, 2019; Luepke and Mohr, 2017). A large majority of antibiotic classes are ineffective on Gram-negative bacteria due to either the inability to diffuse across the membrane (Nikaido, 1994; Vergalli et al., 2020) or rapid efflux out of the cytoplasmic space (Du et al., 2018). As such, the intrinsic mechanisms behind the biosynthesis and maintenance of the OM has been a high priority research focus for decades. Through the work of many, the field has accelerated significantly such that we know many of the players involved in these processes with varying degrees of mechanistic detail behind their function. The Lipopolysaccharide transport (Lpt) pathway forms a transmembrane bridge to transport LPS/LOS to the OM (Okuda et al., 2016). The Localization of lipoprotein (Lol) system transports lipoproteins from the IM to the OM (Grabowicz, 2019). The \u03b2-barrel assembly machinery (Bam) facilitates folding and insertion of outer membrane proteins (OMPs) (Malinverni and Silhavy, 2011). However, one of the more elusive systems have been those that transport GPLs between the IM and OM. From a first principle, we know that this process must occur in an anterograde direction (IM to OM). Additionally, previous work done by Mary Jane Osborn\u2019s group highlighted the ability for bacterial cells to rapidly and efficiently transport GPLs in the retrograde direction (OM to IM) (Jones and Osborn, 1977). There is evidence that deletion of the Tol-Pal system negatively impacts bulk retrograde GPL transport, although whether this is direct or indirectly mediated by Tol-Pal remains to be determined (Shrivastava et al., 2017). Outside of this example, we lack significant knowledge on how GPL transport occurs in either direction, with most of our current understanding limited to a single pathway: Maintenance of lipid asymmetry (Mla) (Powers and Trent, 2019).\n\nThe Mla pathway was discovered in 2009, where it was found that mutants of E. coli lacking this pathway were susceptible to combinatorial exposure to SDS/EDTA (Malinverni and Silhavy, 2009). Susceptibility to detergent + chelator combinations indicate perturbed OM asymmetry, as E. coli is typically highly resistant due to the lateral LPS interactions (Schindler and Osborn, 1979). Spontaneous suppressors that could alleviate sensitivity all achieved the same result \u2013 increased expression of pldA (Malinverni and Silhavy, 2009). PldA is an outer membrane phospholipase which, demonstrated through extensive crystallographic and biochemical analyses, has an active site that is exclusively exposed to the outer leaflet of the OM (Brok et al., 1996; Scandella and Kornberg, 1971; Snijder et al., 1999). As such, PldA enzymatically degrades GPLs that are mislocalized to the outer leaflet of the OM. Through this suppression analysis, it was reasonably hypothesized that Mla and PldA have overlapping functionalities albeit through distinct mechanisms (Malinverni and Silhavy, 2009).\n\nHow Mla mediates extraction and removal of mislocalized GPLs, and whether this is ultimately its function, remains a point of controversy. The intact, functional system is comprised of 6 proteins (Powers and Trent, 2019). MlaA is an alpha-helical outer membrane lipoprotein (Abell\u00f3n-Ruiz et al., 2017). MlaC is a soluble, periplasmic protein (Huang et al., 2016). MlaD is anchored in the inner membrane with a lipid-binding MCE domain in the periplasmic space (Ekiert et al., 2017; Thong et al., 2016). It is coupled in a tight complex with an inner membrane permease, MlaE, a cytoplasmic ATPase, MlaF, and a cytoplasmic accessory protein MlaB (Ekiert et al., 2017; Thong et al., 2016). Together, this system comprises all components that would be theoretically necessary to mediate lipid transport. Structural analyses and subsequent genetic data further bolstered the hypothesis that the Mla pathway functions in the initially proposed retrograde manner (Abell\u00f3n-Ruiz et al., 2017; Baarda et al., 2019; Chong et al., 2015; Sutterlin et al., 2016).\u00a0This included a study done by our group in Acinetobacter baumannii, where we used experimental evolution to assess fitness factors in the total absence of outer membrane asymmetry (Powers and Trent, 2018a). For space reasons, we defer to our recently published perspective that consolidates and analyzes the wealth of Mla data in the literature (Powers and Trent, 2019).\n\nA. baumannii is relatively unique in that it can survive in the absence of LOS, which is typically essential in Gram-negative organisms (Powers and Trent, 2018b). In this case, the lipid composition of its OM is exclusively a symmetric GPL bilayer (Powers and Trent, 2018a). What we found overwhelmingly was that when given the opportunity, LOS-deficient populations across multiple strains of A. baumannii rapidly inactivated genes in the Mla pathway and occasionally pldA (Powers and Trent, 2018a), a finding that was independently corroborated by the Kahne group (Nagy et al., 2019). Our interpretation of these data strongly supported that of the retrograde model for transport.\n\nEarly in 2019, Kamischke et al. argued that the Mla pathway in A. baumannii functions instead as an anterograde GPL transporter (Kamischke et al., 2019). This was surprising to us as it clashed quite directly with our previous findings in the same organism. We were curious as to how this discrepancy arose and sought to reassess the validity of our initial findings in light of this new study. To this end, we requested the \u0394mlaF mutant and its isogenic parent used in Kamischke et al. to determine if strain differences may have resulted in incompatible interpretations.\n\nIn comparing strains, a number of differences became readily apparent, including a strong growth defect in the \u0394mlaF mutant from the Kamischke et al. study. As a point of clarity, strains derived in the Trent Lab will be annotated with \u2018UGA\u2019 and strains from Kamischke et al. will be annotated as \u2018UW\u2019 (the home institution of the corresponding author). This growth defect was surprising as as no mla mutants in A. baumannii (Powers and Trent, 2018a), Burkholderia cepacia (Bernier et al., 2018), Neisseria gonorrhoeae (Baarda et al., 2019), Haemophilus influenzae (Fern\u00e1ndez-Calvet et al., 2018), or E. coli (Ekiert et al., 2017; Chong et al., 2015) have been shown to have any growth defect compared to the isogenic parent. We link the growth defect of the UW \u0394mlaF to a mutation present in obgE. ObgE is a GTPase involved in the stringent response (Persky et al., 2009). The stringent response in bacteria revolves around the accumulation of the GTP-derived nucleotide alarmones (p)ppGpp (Zhu et al., 2019). Accumulation of this alarmone is typically triggered by nutritional stress and remodels the transcriptome to allow for tolerance and growth under limited conditions (Zhu et al., 2019). Synthesis of this secondary messenger is mediated by two proteins, RelA and SpoT (P\u00e9rez-Varela et al., 2020). While RelA is the primary synthase enzyme, SpoT can both synthesize and hydrolyze ppGpp (Hernandez and Bremer, 1991). There is additional evidence suggesting that ObgE and SpoT co-purify in a potentially physiologically relevant manner (Wout et al., 2004) and that ObgE plays a role in stringent response nucleotide homeostasis (Persky et al., 2009). As such, we hypothesized that the allele of obgE in the UW strain, termed here as obgE*, plays an aberrant role in the stringent response, which is further exacerbated in the absence of a functional Mla system.\n\nLastly, we devised an assay to detect defects in anterograde transport that monitors outer membrane vesicle (OMV) formation with a pulse-chase in lieu of the membrane separations and LC-MS/MS assay used by Kamischke et al. At this time, Kamischke et al. is the only publication reporting the successful separation of A. baumannii inner and outer membrane fractions, which we ultimately found to be unreproducible (Kamischke et al., 2019). Both our lab and the Dalebroux lab have found the methodology to be insufficient as reported here and in JOVE (Cian et al., 2020). As we were unable to reliably separate membranes of A. baumannii, we utilized the OMV pulse-chase to circumvent these caveats. Using this assay, we found that no mla mutants, regardless of lab origin, exhibited a decrease in anterograde transport.\n\nIn the following manuscript, we provide evidence on two counts. The first is that mla-null mutants in A. baumannii are not defective in anterograde transport. The second explores in mechanistic detail an allele of obgE that we argue is responsible for the phenotypic abnormalities of the UW \u0394mlaF strain. We are confident that these data, in conjunction with the wealth of previously published data on Mla, strongly support the prevailing model that Mla mediates retrograde transport of mislocalized GPLs in Gram-negative bacteria.\n\n## Results\n\n### Comparison of mlaF mutants\n\nIn Kamischke et al., the authors argue that the Mla pathway mediates anterograde GPL transport in A. baumannii. As this ran counter to published data, including work done by our group in the same organism, we wanted to explore strain differences that could result in such different conclusions. The UW Lab generously provided their A. baumannii \u0394mlaF mutant and its isogenic parent. Immediately it was clear something was different between the strains. While the UGA \u0394mlaF mutant grows identically to its isogenic parent (red and black triangles, respectively), the UW \u0394mlaF strain exhibited a significant growth defect (green and orange circles, respectively) (Figure 1A). Quantification by colony forming units from hours 1 to 4 confirmed that, despite its unexpected growth defect, increases in optical density during exponential phase were due to growth (Figure 1B). Furthermore, the UW \u0394mlaF strain appeared morphologically distinct in both size and color from its parent when grown on agar plates (Figure 1\u2014figure supplement 1). As mentioned previously, no published mla mutants exhibit any growth defects across genera.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/56571/elife-56571-fig1-v2.jpg)\n\n**Figure 1.:** (A) Growth curves of WT and \u0394mlaF deletion mutants from the UGA lab (triangles) and UW lab (circles). Standard deviation error bars, if smaller than symbols, are not shown. (B) Colony-forming units (cfu) of cultures at hours 1\u20134. (C) Outer membrane vesicle (OMV) quantification of WT and \u0394mlaF deletion mutants harvested at 4 hr and quantified by measuring 3-deoxy-D-manno-oct-2-ulosonic acid (Kdo) levels using the Purpald assay. Growth curves were performed in biological triplicate. OMV assays were performed in biological duplicate and quantified in technical triplicates. (D) MICs for vancomycin, novobiocin, and rifampicin for both UGA and UW strains. MICs were calculated as described in the Materials\u00a0and\u00a0methods.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/56571/elife-56571-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Top left \u2013 UGA WT grown on LB + 1.5% agar. Bottom left \u2013 UGA \u0394mlaF. Top right \u2013 UW WT. Bottom right \u2013 UW \u0394mlaF.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/56571/elife-56571-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** The UW \u0394mlaF strain exhibits lysis in stationary phase, artificially inflating OMVs with cellular debris when collected after 24 hr.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/56571/elife-56571-fig1-figsupp3-v2.jpg)\n\n**Figure 1\u2014figure supplement 3.:** (A) Growth curves of \u0394mlaC (blue) or \u0394mlaF (green) mutants generated in the UW WT. Any strains generated by our hands in this background are annotated with MJPX, with X indicating an independently generated clone. For comparison, the UW WT and UW \u0394mlaF provided to us are displayed as black and orange circles respectively. Growth curves were performed in biological triplicate. (B) Table displaying frequency of obgE* to obgE reversion. Both UGA strains contain the WT N258 allele. Both UW strains contain the obgE* allele of N258I. When \u0394mlaC strains were generated in the UW WT, obgE* reverted to obgE 12/12 times tested. When \u0394mlaF strains were generated in the UW WT, obgE* reverted to obgE 3/3 times tested. SNP presence was determined by sanger sequencing.\n\nOne of the major phenotypes of mla mutants is an increase in production of OMVs (Roier et al., 2016). OMVs are a natural byproduct of Gram-negative growth and cell division, resulting in the sloughing of the OM (Haurat et al., 2015). While this occurs naturally to varying extents across bacterial genera, mutations that perturb OM homeostasis can alter the rate of vesiculation. To determine whether the UW \u0394mlaF mutant also had an altered OMV phenotype, we harvested OMVs at two phases of growth; late exponential phase (Figure 1C) and stationary phase (Figure 1\u2014figure supplement 2). OMVs are then quantified via a colorimetric Kdo assay due to the exclusive incorporation of this sugar into the LPS/LOS of bacterial cells. During exponential phase, both the UGA and UW \u0394mlaF mutants exhibited\u00a0~2\u20134X increase in OMVs (Figure 1C), consistent with published data in other organisms (Roier et al., 2016). Strikingly, when we assessed stationary phase cultures for OMVs, there was a major discrepancy in the relative degrees of vesiculation between mutant and WT. Whereas the UGA \u0394mlaF mutant maintained fold-changes relative to WT within the expected range, the UW \u0394mlaF mutant had a staggering 23X increase in OMV levels (Figure 1\u2014figure supplement 2). These data suggest that the UW \u0394mlaF strain has a unique stationary phase lysis phenotype which has not been observed in other mla mutants.\n\nHaving a growth defect in conjunction with a deletion in a cell envelope related gene suggested to us that the permeability barrier may have been uniquely compromised in the UW \u0394mlaF. To test this, we utilized three antibiotics to probe for OM integrity: vancomycin, novobiocin, and rifampicin. In the absence of Mla, one would expect an increase in sensitivity to the small, hydrophobic antibiotics novobiocin and rifampicin. Indeed, this was observed for both the UGA and UW \u0394mlaF mutants albeit to varying extents. When we examined the minimum inhibitory concentration (MIC) for novobiocin, there was a 3.2-fold increase in sensitivity in the UGA \u0394mlaF strain compared to a 5.85-fold increase in sensitivity of the UW \u0394mlaF strain (Figure 1D). This trend of exacerbated sensitivity in the UW \u0394mlaF were also seen with rifampicin, with 1.8-fold and 14-fold increases in sensitivity of the UGA and UW \u0394mlaF respectively (Figure 1D). The vancomycin results were particularly distinct. The UGA \u0394mlaF mutant exhibited no change in MIC, while the UW \u0394mlaF has a 2.3-fold increase in sensitivity. This severe, unique sensitivity of the UW \u0394mlaF to vancomycin provided further evidence to us that the UW \u0394mlaF strain was exhibiting phenotypic abnormalities when compared to other Mla-null strains.\n\n### Mla mutants exhibit no defects in anterograde transport\n\nThe critical finding in Kamischke et. al. was a rather significant\u00a0~50% decrease in GPL content in the OM of \u0394mla mutants (Kamischke et al., 2019). This was determined using an elegantly designed pulse-chase assay, wherein cells were pulsed with 14C-acetate, total membranes were separated into IM and OM fractions, and GPL content was measured quantitatively using LC-MS/MS (Kamischke et al., 2019). Despite an exhaustive approach, attempts in our laboratory to achieve membrane separations in A. baumannii were met with no success (Figure 2\u2014figure supplement 1). We noticed significant deviations in the method described in Kamischke et al. from that of the gold standard methodology published by Mary Jane Osborn. Initially, we assumed % sucrose solutions in Kamischke et al. were derived using the standard weight by weight (w/w) calculation (Kamischke et al., 2019; Dalebroux et al., 2015). This gradient resulted in minimal to no separation of any membranes, including E. coli. After obtaining a detailed protocol from Kamischke et al., we realized solutions were calculated as weight by volume (w/v), a difference with significant repercussions to the overall density profile of the gradient. However, even after adjusting the sucrose solutions with this protocol, we were unable to separate A. baumannii membranes robustly. For E. coli, both methodologies resulted in distinct membrane peaks as indicated by NADH oxidase activity (IM marker) and the presence of LPS (OM marker) (Figure 2\u2014figure supplement 1A & C). In contrast, A. baumannii membranes failed to separate sufficiently even if they appeared to do so visually (Figure 2\u2014figure supplement 1B & D). Using the Osborn sucrose gradient protocol, A. baumannii membranes fail to separate at all \u2013 collapsing into a single peak (Figure 2\u2014figure supplement 1B). When we applied the protocol provided by the UW Lab, we found the results to be of intermediate quality. Visually, we observed multiple bands in the gradient (Figure 2\u2014figure supplement 1D). Unfortunately, the OM markers were distributed across almost the entire gradient (Figure 2\u2014figure supplement 1D). This highlights the importance of assessing markers across the entire gradient, as this separation technique is imperfect even with the most amenable species (e.g. E. coli). Evaluating the entire gradient for markers ensures capturing the full degree, or lack thereof, of separation. Kamischke et al. did not report marker analysis across the gradient, but instead only for ambiguous fractions designated IM and OM. Without knowing what fractions were consolidated, it is difficult to determine the quality of the downstream quantitative LC-MS/MS analysis (Kamischke et al., 2019). Independently, a recent methods paper published during the review of this work demonstrated that the gradient utilized by Kamischke et al. was insufficient to separate A. baumannii membranes, further validating our results presented here (Cian et al., 2020).\n\nBecause of inconsistencies in membrane separations of A. baumannii, we devised a pulse-chase assay that could indirectly assess anterograde transport independent of membrane separations. To do this, we relied on OM vesiculation as a proxy for anterograde transport, as all OMVs contain GPLs that have undergone anterograde transport from the IM to OM. In short, we labeled exponentially growing cells with 32Pi for an hour followed by an equal length chase with cold potassium phosphate, resulting in a monitoring of de novo lipid synthesis for 1 hr over the course of 2 hr of growth. Importantly, OMV production is not impacted by cell lysis during the time frame of the OMV pulse-chase assay (Figure 1). After the chase period, cells were pelleted, and the supernatant containing OMVs was removed and converted into a two-phase Bligh-Dyer. This serves to extract all lipidic material from the growth supernatant, which can then be quantified using liquid scintillation counting (LSC) and thin-layer chromatography (TLC). In the context of this pulse-chase, any labeled lipid must have been synthesized de novo and anterograde transported to the OM prior to blebbing off into the supernatant (Figure 2A). If mla mutants are defective in anterograde transport to the levels indicated in Kamischke et al., we would expect to see a 50% reduction in counts relative to WT. Instead, we observed a significant increase in 32P-labeled lipids in the supernatant in every \u0394mla mutant tested (Figure 2B & C). Both the UGA \u0394mlaF and UW \u0394mlaF mutant had increased 32P-labeled lipids using this assay, indicating no defect in anterograde transport (Figure 2B & C). TLC-visualization confirmed that LSC counts were being derived from GPLs, further validating the LSC quantification (Figure 2B). To remove strain differences as a variable, we constructed deletions of \u0394mlaC in the UW WT background (UW mlaC::kan MJP1 and MJP2). Consistent with previous results, we saw no defects in anterograde transport as evidenced by an increase in 32P-labeled OMVs (Figure 2B & C).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/56571/elife-56571-fig2-v2.jpg)\n\n**Figure 2.:** (A) Schematic of the biological principle behind the OMV pulse chase assay. Cultures were pulsed with 32Pi, which is incorporated in de novo synthesized lipids (red outlined GPL). After synthesis, lipids are flipped across the IM and anterograde transported to the OM. Over the course of the experiment, a percentage of lipids from the OM will be shed as OMVs. Any 32P-labeled OMVs must have incorporated GPLs that underwent anterograde transport. (B) Representative TLC of supernatant GPLs. Total sample was loaded after LSC quantification. GPLs were separated in solvent system containing chloroform, methanol, and acetic acid (65:25:10, v/v/v). (C) LSC quantification of extracted GPLs. Circles represent individual replicates. Lettering above denotes significantly different clusters as determined by a one-way ANOVA.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/56571/elife-56571-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Left \u2013 Representative image of IM and OM separations of E. coli membranes using the protocol as designed by Osborn\u2019s group. Right \u2013 Marker analysis. Graph displays protein content on the left y-axis with black circles and %NADH activity (IM-marker) on the right y-axis in blue bars across fractions for the entire gradient (x-axis). An SDS-PAGE gel stained for LPS (OM marker) is displayed immediately below the respective graph and numbered by fraction. (B) Left \u2013 Representative image of IM and OM separations of A. baumannii membranes using the protocol as designed by Osborn\u2019s group. Right \u2013 Marker analysis as described above. (C) Left \u2013 Representative image of IM and OM separations of E. coli membranes using the protocol as described by the UW group. Right \u2013 Marker analysis as described above. (D) Left \u2013 Representative image of IM and OM separations of A. baumannii membranes using the protocol as described by the UW group. Right \u2013 Marker analysis as described above.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/56571/elife-56571-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** After pulse-chase, total GPLs were isolated from cell pellets in addition to the isolation of OMVs for the assay. GPLs isolated in this manner were counted by liquid scintillation counting.\n\nOne potential caveat to this approach would be contamination of IM material that could skew interpretation of results. To verify that our assay was directly monitoring OMVs secreted into the supernatant, we assessed cold OMVs collected in an identical fashion as to the radiolabeled pulse-chase assay. These OMVs were then quantified for presence of an OM marker (OmpA) and the enzymatic activity of an IM protein (NADH Oxidase) (Figure 3).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/56571/elife-56571-fig3-v2.jpg)\n\n**Figure 3.:** (A) \u03b1-OmpA blot of either OMVs or total membranes (Mem) for each genotype tested. Total protein was normalized to 5 \u00b5g. Blot is representative of biological duplicates. (B) NADH oxidase activity of OMVs or total membranes over time. For each sample, protein was normalized to 3 \u00b5g. Error bars are standard deviation of technical triplicates and graph is representative of biological duplicates.\n\nWhen blotted for OmpA, we observed OmpA enrichment in the OMV samples relative to total membranes which served as our control. This is consistent with the fact that OMVs are exclusively OM material (Figure 3A). In contrast, when assessed for NADH oxidase activity, only total membranes were enzymatically active, confirming that OMVs contained no IM protein (Figure 3B). We will note that the UW mlaF total membranes do not exhibit as robust of NADH oxidase activity as WT, an additional demonstration of the aberrant physiology of this strain.\n\nFurthermore, we expanded the pulse-chase quantification to total GPLs present in the cell pellet as there was the potential that de novo GPL biosynthesis was unexpectedly ablated over the 1 hr labeling period. This is not the case, as LSC quantification of GPLs extracted from these samples were consistent (Figure 2\u2014figure supplement 2).\n\nLastly, an alternative interpretation of the OMV Pulse-Chase data that we would like to address is one in which anterograde transport was reduced with a concurrent increase in vesiculation. Assuming a 50% decrease in anterograde transport per Kamischke et al., OMV production would necessarily increase 200% to compensate and provide equivalent counts in the assay. Biologically, we find this scenario to be implausible due to the burden on the cell to maintain the OM. We also find this incompatible with the levels of OMVs harvested after 4 hr of growth (Figure 1C). In this case, we see relative degrees of vesiculation 2-4X higher than that of WT. From the pulse-chase assay, we see relative degrees of vesiculation within this same range, around 3-4X. That these ranges overlap strongly suggests that anterograde transport is unaffected in these strains. For Kamischke et al.\u2019s finding to be masked by increased OM vesiculation, we would have had to seen a 6-8X increase in total OMVs independent of the Pulse-Chase assay, which we did not. Thus, our data strongly preclude the scenario as a possibility.\n\nAltogether, this myriad of controls indicates that the OMV pulse-chase assay is a solid and robust approach for monitoring anterograde GPL transport.\n\n### Transcriptomic variations between mlaF mutants highlight strain differences\n\nWith the conclusion that mla mutants do not exhibit any defect in anterograde transport, we turned our attention to why the UW \u0394mlaF mutant showed phenotypic differences. We used RNA-seq to globally identify physiological changes that may be responsible. It was evident by principal components analysis (PCA) that the UW \u0394mlaF strain had a significantly different transcriptomic profile compared to its isogenic parent (Figure 4A). By PCA, these profiles differed both in the PC1 and PC2 axes, which in total described 71.6% of the total variance amongst the datasets. In contrast, the UGA \u0394mlaF mutant clustered much closer to its isogenic parent, consistent with results in another strain of A. baumannii published previously (Powers and Trent, 2018a). This was exemplified when we identified and compared significantly differentially expressed genes between the \u0394mlaF mutants and their isogenic parents. While the UGA \u0394mlaF and WT had 13 genes that were differentially expressed excluding mlaF (Supplementary file 1), the UW \u0394mlaF and WT differed by 103 genes (Supplementary file 2). When we looked at this array of 103 differentially regulated genes in the UGA \u0394mlaF and WT, it was readily apparent that none of these changes were conserved between \u0394mlaF mutants (Figure 4B). When we directly compared the UW and UGA \u0394mlaF mutants, we identified multiple clusters of genes that were differentially regulated (Figure 4C). The first cluster are genes involved in Csu pilus formation, which were significantly upregulated in the UW \u0394mlaF (Figure 4C). In fact, the csu operon was downregulated in the UGA \u0394mlaF relative to WT (Figure 4B, Supplementary file 1). The Csu pili are involved in abiotic surface attachment; however, physiologically relevant functions remain underexplored (Weber et al., 2016). Importantly, Kamischke et al. reports an increase in biofilm formation in \u0394mla mutants in their study: this transcriptional data confirms that the UW \u0394mlaF provided to us is behaving similarly in our hands (Kamischke et al., 2019). Interestingly, we found a large array of 70S ribosomal proteins were differentially regulated between the \u0394mlaF mutants (Figure 4C). Additional genes involved in ribosome stability, transcription, and translation were differentially regulated (Figure 4C). That we observed global changes to ribosomal or ribosomal-adjacent proteins hinted at differences to ribosome dynamics, translation defects, and/or stringent response. To determine if there was a genetic basis to these observed transcriptional and phenotypic differences, we utilized whole-genome sequencing.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/56571/elife-56571-fig4-v2.jpg)\n\n**Figure 4.:** (A) Principal components analysis (PCA) of total transcriptomic profiles of UGA WT (purple square) and \u0394mlaF (blue square) and UW WT (green circle) and \u0394mlaF (red circle). Each point represents a biological replicate. (B) Heat map comparing differentially regulated genes between UW \u0394mlaF and UW WT. All genes in the right column are differentially expressed with a > |2| log2 fold change and a FDR p-value<0.05. For comparison, fold-change values of the same set of genes for the UGA \u0394mlaF vs UGA WT are displayed in the left column. The row representing mlaF is denoted with an arrow. A full list of genes, fold-changes, and p-values for both comparisons are in Supplementary files 1 and 2. (C) Comparison of total transcriptomic profiles between UW \u0394mlaF and UGA \u0394mlaF mutants. Genes are clustered and colored by predicted or known function. Dashed lines denote +/-\u00a02 fold-change. All transcriptomic data are presented as average RPKM values from three biological replicates.\n\n### Whole-genome sequencing identified an important ObgE variant\n\nIn Kamischke et al., three different mutants were used: \u0394mlaF, \u0394mlaC, and a dominant negative allele of mlaF expressed in trans. Based on the phenotypes reported, these strains behaved identically (Kamischke et al., 2019). We assumed that any mutation responsible for the phenotype of UW \u0394mlaF must be present in the UW WT, as the statistical likelihood of a deleterious mutation accumulating independently in multiple strains was very low. Instead, if a mutation present in the UW WT was synthetically sick in conjunction with \u0394mlaF, it could explain the phenotypes observed. We sequenced both the UGA and UW strains and looked for mutations unique to both the UW strains that were absent in the UGA strains. From this comparison, we were able to identify one non-synonymous mutation in the coding region of the essential gene obgE.\n\nThe obgE SNP in the UW WT and \u0394mlaF resulted in a single amino acid change from an asparagine (N) to an isoleucine (I) at position 258 (N258I). While the N258 position is present in the reference genome, we wanted to confirm this specific residue was conserved amongst A. baumannii species. Comparison of sequences of obgE from 14 published genomes affirmed that the N258 position is highly conserved in A. baumannii (Figure 6\u2014figure supplement 1).\n\n### The UW \u0394mlaF with ObgE* accumulates ppGpp\n\nDue to the presence of the obgE* SNP in the UW strains, we sought to determine whether levels of stringent response nucleotides were altered as this would be the most obvious phenotype, particularly in the absence of mla. To that end, we labeled cultures with 32Pi and extracted total nucleotides in formic acid. After separation by TLC, pppGpp, ppGpp, and GTP levels in both the UGA and UW strains were visualized and quantified via densitometry (Figure 5 and Figure 5\u2014figure supplement 1). What was immediately apparent was that the nucleotide profile of the UW \u0394mlaF with obgE* was strikingly different from all other strains tested (Figure 5 and Figure 5\u2014figure supplement 1). The UW \u0394mlaF was almost completely depleted of pppGpp, with a \u221212% shift when compared to WT (Figure 5\u2014figure supplement 1). Concurrently, there were +3% and +9% shifts in ppGpp and GTP levels, respectively. In contrast, the UGA \u0394mlaF strain maintained consistent levels of GTP relative to WT, with a \u22123% decrease in ppGpp and a +3% increase in pppGpp (Figure 5\u2014figure supplement 1). This evidenced to us that the UW \u0394mlaF strain exhibited abnormal stringent response alarmone profiles that were highly reproducible. It is important to note that relative levels of pppGpp, ppGpp, and GTP/GDP are interconnected (Figure 7). Increases in (p)ppGpp levels would increase downstream GTP/GDP levels as either species are generated by pyrophosphate hydrolysis of the alarmone: a scenario consistent with trends observed in our analysis. That we observed these increases in conjunction with a huge decrease in pppGpp strongly suggests to us that the nucleotide flux is directed toward ppGpp accumulation.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/56571/elife-56571-fig5-v2.jpg)\n\n**Figure 5.:** (A) Representative TLC of 32Pi-labeled nucleotides extracted from whole cells separated on PEI-cellulose plates in 1.5 M KH2PO4 mobile phase. Positions of GTP, ppGpp, and pppGpp are denoted on the left. The image shown here is representative of three biological replicates. Additional replicate images are shown in Figure 5\u2014figure supplement 1.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/56571/elife-56571-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) Additional replicates of TLC separation of radiolabeled nucleotides as described in Figure 5. Relative positions of pppGpp, ppGpp, and GTP are labeled. (B) Densitometry quantification of pppGpp, ppGpp, and GTP spots. Relative percentages were calculated within a given genotype. Error bars are standard deviation of three replicates. Distributions are visualized by bar chart and colored by nucleotide species. Average percentages of three biological replicates are displayed in the table.\n\n### ObgE* and \u0394mla are synthetically sick\n\nKnowing that the UW \u0394mlaF that harbors obgE* exhibited altered stringent response nucleotide profiles, we first wanted to confirm this phenotype in our hands by recreating \u0394mlaF and \u0394mlaC strains in the UW WT. Using the UW WT harboring obgE*, we generated deletions in either mlaC or mlaF using our recombination methodologies as previously described (Powers and Trent, 2018a; Tucker et al., 2019; Tucker et al., 2014). While we were able to generate mlaC and mlaF mutants, we found that they never exhibited the growth defect of the UW \u0394mlaF mutant (Figure 1\u2014figure supplement 3A). We were curious as to whether this had anything to do with the obgE* allele. Indeed, sanger sequencing revealed that in every \u0394mlaC or \u0394mlaF we generated, the obgE* SNP repaired itself: a phenomenon we observed 15/15 times (Figure 1\u2014figure supplement 3B). Because of this, we were unable to replicate either the growth defect or the maintenance of the obgE* allele in any mla deletion.\n\nAn alternative approach was to reconstruct obgE* expressing strains de novo. This approach is complicated due to the need to first generate merodiploids as obgE is essential. We initially made either WT or \u0394mlaC strains carrying a plasmid expressing obgE*. Afterwards, the chromosomal obgE locus was replaced with a kanamycin cassette, resulting in either obgE::kan, pMMB67EH-obgE* or \u0394mlaC, obgE::kan, pMMB67EH-obgE*. As we expected expression of obgE* in conjunction with \u0394mlaC would be deleterious, we used whole-genome sequencing to confirm a lack of suppressors in the constructed strains prior to in vivo analyses. Unfortunately, the \u0394mlaC, obgE::kan, pMMB67EH-obgE* strains accumulated unique mutations with unknown implications that prevent legitimate phenotypic comparisons (Supplementary file 3).\n\nUsing two different methodologies, we were unable to generate a mla-null strain in the presence of obgE*. Using standard recombination techniques, mlaC::kan and mlaF::kan strains repaired the native, chromosomal obgE* mutation with a 100% frequency in our hands. Attempts to achieve the same result beginning with a merodiploid resulted in putative suppressors exclusively in the mla-null strains. Ideally, we would be able to replicate the exact phenotype of the UW \u0394mlaF strain. In attempting to do so, we obtained genetic data that are supportive of our hypothesis that obgE* and \u0394mla have a synthetic phenotype. Even in the absence of a reconstructed strain, all major findings of this paper are directly derived from the UW strains provided to us.\n\nObgE is implicated in various physiological processes rooted in the regulation and homeostasis of the stringent response alarmone (p)ppGpp (Persky et al., 2009). Additional evidence shows ppGpp inhibits de novo fatty acid biosynthesis and by proxy GPL biosynthesis (Heath et al., 1994). To understand the putative link between ObgE and Mla, we first must take into consideration critical phenotypes associated with \u0394mla strains. These are three-fold. The first is that Mla-null mutants have compromised OM asymmetry (Malinverni and Silhavy, 2009). The second is that Mla-null mutants exhibit increased OM vesiculation (Figure 1C). Lastly, there is strong genetic evidence in E. coli that PldA-derived fatty acids stimulate de novo lipid A biosynthesis (May and Silhavy, 2018). Mislocalized GPLs are enzymatically degraded by PldA, resulting in fatty acids that increased lipid A biosynthesis downstream. Biologically, this would function as a feedback that asymmetry is perturbed and more LPS/LOS is needed in the outer leaflet.\n\nOne can reasonably assume that Mla-null mutants require increased GPL and lipid A biosynthesis to compensate for the loss of lipid through vesiculation occurring at the OM. If ObgE* perturbs stringent response homeostasis, one could hypothesize that in conjunction with Mla-null phenotypes, cells are incapable of sufficiently synthesizing lipids at a rate concurrent with lipid loss at the OM resulting in a synthetic sick phenotype (Figure 7).\n\nOperating under this hypothesis, we should be able to probe the synthetic interaction between \u0394mla and obgE* using chemical biology approaches. For this, we used two compounds to target two different processes: serine hydroxamate to induce ppGpp accumulation and cerulenin to inhibit fatty acid biosynthesis. In either case, we would expect \u0394mla, obgE* strains to be hyper-sensitive to these compounds as either treatment should exacerbate the depletion in fatty acid pools. To test this, we treated cultures uniformly with either serine hydroxamate or cerulenin for 3 hr and compared them to untreated control cultures (Figure 6).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/56571/elife-56571-fig6-v2.jpg)\n\n**Figure 6.:** (A) Normalized growth of cultures treated with 100 \u00b5g/mL serine hydroxamate which induces stringent response. Graphs represent normalized OD600 readings of treated vs untreated. Dashed line at 1.0 indicates no difference in growth of treated culture. Values\u00a0<\u00a01.0 mean growth was decreased after treatment. Bars are colored by genotype with individual circles representing biological replicates. The mla and obgE alleles are indicated below for ease of comparison. Lettering above denotes significantly different clusters as determined by a one-way ANOVA. (B) Normalized growth of cultures treated with 100 \u00b5g/mL cerulenin which inhibits fatty acid biosynthesis. Graphs are displayed identically as panel (A).\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/56571/elife-56571-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** Portion displayed is from amino acid positions 210 to 269, with position 258 annotated by an arrow. Asterisks represent conservation across all samples. Top 10 rows are strains utilized during this study. Any strains derived from the UW WT are denoted. Bottom 14 rows are from published A. baumannii genomes. I258 is boxed in red.\n\n![Figure 6\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/56571/elife-56571-fig6-figsupp2-v2.jpg)\n\n**Figure 6\u2014figure supplement 2.:** Cultures were treated identically to that of Figure 6A except with the addition of 32P. Cultures were normalized by OD600 and equivalent OD units were harvested for each sample. Nucleotides were extracted and separated by TLC as described in the methods. Due to an overall lower OD600, UW \u0394mlaF strains were loaded equivalently but less than other genotypes tested. (A) Densitometry was normalized by comparing treated versus untreated for both pppGpp and ppGpp and is biological triplicates. (B) Representative TLC image.\n\n![Figure 6\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/56571/elife-56571-fig6-figsupp3-v2.jpg)\n\n**Figure 6\u2014figure supplement 3.:** (A) Schematic detailing serine hydroxamate (SHX) treatment. Cultures were grown for 2 hr and pulsed with 10 \u00b5Ci/mL. This labeled culture was immediately split in half, and half was treated with 1 mg/mL SHX. Following an hour of growth, cells were pelleted and total GPLs extracted via Bligh-Dyer. (B) Isolated GPLs were quantified via LSC. Counts of the treated culture were normalized to that of untreated. A value\u00a0=\u00a01 indicates no change (dashed line) in GPL content and a value\u00a0<1 indicates a decrease in GPLs under SHX treatment. Individual circles represent biological replicates.\n\nWhen we treated with serine hydroxamate, which induces stringent response, only the UW \u0394mlaF strain was hypersusceptible with a 50% reduction in growth (Figure 6A). No other \u0394mla strain tested exhibited a phenotype (Figure 6A). To confirm this treatment altered (p)ppGpp levels in the UW \u0394mlaF strain, we performed this assay in parallel with 32P-labeled cultures. After extraction and separation of nucleotides by TLC, we assessed relative levels of (p)ppGpp by densitometry. At this concentration of SHX, alterations to (p)ppGpp levels were relatively minor across strains, except for the UW \u0394mlaF, which was even further exacerbated in it\u2019s accumulation of ppGpp (Figure 6\u2014figure supplement 2). This corresponds with the UW \u0394mlaF uniquely being sensitive to SHX at this concentration. Similarly, when we treated with cerulenin, which inhibits fatty acid biosynthesis, only the UW \u0394mlaF strain was hypersusceptible (Figure 6B). In both cases, \u0394mlaC deletions made in the UW WT (mlaC::kan MJP1 and MJP2) which had repaired the obgE* allele, looked identical to WT for both treatments (Figure 6).\n\nTo bolster confidence in the link between lipid biosynthesis and stringent response, we grew 32P-labeled cultures with or without serine hydroxamate at a higher concentration then isolated and quantified total GPLs. Total counts of the isolated lipid fractions were quantified by LSC and normalized by untreated controls per genotype. Across the board, de novo GPL levels were significantly reduced upon induction of stringent response with serine hydroxamate, confirming that elevated ppGpp levels indirectly inhibit GPL biosynthesis (Figure 6\u2014figure supplement 3).\n\n## Discussion\n\nWhile the building blocks of the bacterial cell are synthesized in the cytoplasm, the cell envelope sets parameters for cell size and capacity (Hughes et al., 2019; Ercan et al., 2019). In Gram-negative bacteria, this is complicated further due to the presence of two membranes: the IM which separates the cytoplasm and the OM which protects the entire cell from the extracellular milieu. As such, mechanisms that mediate lipid transfer and homeostasis between and amongst membranes are of high importance to our understanding of Gram-negative physiology.\n\nHere, we address a discrepancy in the role of one of these mechanisms: specifically, that of the Mla pathway. Mla, which has been confidently shown to be involved in lipid transport and homeostasis, remains controversial in the directionality that it operates (Malinverni and Silhavy, 2009; Powers and Trent, 2018a; Kamischke et al., 2019; Hughes et al., 2019; Ercan et al., 2019). We tackled this larger issue for the field to clarify work on the Mla pathway and lipid transport in Gram-negative bacteria more generally. This is critically important for both our basic biological understanding of bacteria but also in guiding development of new antibiotic targets and therapeutic treatments.\n\nDue to the contradiction between our laboratory\u2019s results and the study published by the UW lab, we sought to examine further the role of Mla in A. baumannii. We began by obtaining an \u0394mlaF mutant and its isogenic WT parent from the UW lab, which were graciously provided. While the UGA Lab \u0394mlaF mutant exhibited no observable growth defects, the UW Lab \u0394mlaF mutant grew significantly slower, exhibited smaller colony sizes on agar plates, and increased sensitivities to antibiotics. Furthermore, the UW \u0394mlaF mutant exhibited a unique stationary phase lysis independent of its growth defect in exponential phase. These variables complicate the interpretation of the sensitive quantitative analyses performed in Kamischke et al., 2019. These phenotypes corresponded with a drastically altered transcriptomic profile. We further found that the UW \u0394mlaF mutant decreased expression of fadE, the priming step in \u03b2-oxidation (Campbell and Cronan, 2002). We hypothesize this could help to redirect the flux of acyl-CoA pools toward elongation and away from degradation, which would help compensate for the loss of lipid from the OM.\n\nWhile these data validated our hypothesis that the UW \u0394mlaF strain was behaving uncharacteristically, it did not address the crux of the matter: is Mla in A. baumannii mediating anterograde transport? Despite our best efforts, we were unable to replicate robust, accurate membrane separations in A. baumannii. We obtained a more detailed membrane separation protocol from the UW Lab who had published successful membrane separations. Even with this protocol in hand, we were unsuccessful. Notably, another group independently verified that this gradient was insufficient to separate A. baumannii membranes (Cian et al., 2020). We will not speculate further as to why this was not reproducible, but it abolished our ability to test lipid transport using the assay described in Kamischke et al., as it relies entirely on membrane separations (Kamischke et al., 2019). Without being able to robustly separate membranes of A. baumannii, we were not confident in any degree of quantitative analysis with this methodology. To circumvent this issue, we devised a new assay that relies on the intrinsic nature of Gram-negative OM vesiculation. This OMV Pulse-Chase assay exclusively monitors 32P-labeled lipids that were shed from living cells in a short period of time. As such, any radioactive lipids must have been de novo synthesized in the cytoplasm, anterograde transported to the OM, and ultimately shed into the supernatant. If \u0394mla mutants were truly defective for anterograde transport to the degree reported in Kamischke et al., we would have expected to see approximately a 50% reduction in total counts in \u0394mla mutants. We found the exact opposite. Regardless of the parent strain, every \u0394mla mutant we tested in this assay exhibited an increase in radiolabeled OMVs. We find these data to be incontrovertible evidence that \u0394mla mutants have no defects in anterograde transport. Indeed, the increase in radiolabeled OMVs is further evidence that \u0394mla strains are defective for OM asymmetry and by proxy retrograde transport of mislocalized GPLs as initially proposed.\n\nWe remain confident in our conclusion that Mla in A. baumannii mediates retrograde GPL transport and our findings presented in our previous publication (Powers and Trent, 2018a). In efforts to prescribe a rationale for why the strains differed so drastically, we used whole-genome sequencing and identified a unique allele of obgE that mutated a conserved asparagine to isoleucine (N258I). It is unclear what this variant would do, which is further complicated by a minimal understanding of ObgE\u2019s exact biological function. However, we know that ObgE is linked to stringent response and ribosomal assembly. This was particularly interesting considering the RNA-seq, which highlighted multiple connections to the ribosome in the UW \u0394mlaF mutant. Knowing this, we hypothesized that there must be a synthetic phenotype between obgE* and mla. A. baumannii is tolerant of obgE* under normal conditions; however, when membrane asymmetry is perturbed in \u0394mla, its effects are exacerbated. We know that stringent response and ppGpp accumulation can have an array of downstream transcriptional effects including the inhibition of both de novo fatty acid biosynthesis and the incorporation of exogenous fatty acids (Heath et al., 1994). We argue this creates a negative feedback loop, where Mla-null cells bleb off lipids from the OM at a faster rate than the cell can synthesize de novo (Figure 7). This phenotype would be further exacerbated during the nutrient-deprived stationary phase. Indeed, we see significant stationary phase lysis of the UW \u0394mlaF strain which harbors obgE* further supporting this model.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/56571/elife-56571-fig7-v2.jpg)\n\n**Figure 7.:** Mla mutants normally exhibit a 2-4X increase in OMV production, due in large part to the perturbed asymmetry of the OM (Roier et al., 2016). Additional evidence in E. coli suggests that fatty acids derived from OM phospholipase activity (PldA) stimulate lipid A biosynthesis (May and Silhavy, 2018). These factors result in an increased need for de novo fatty acid biosynthesis to contend with the rate of loss at the OM. Concurrently in the cytoplasm, the stringent response alarmone ppGpp has been shown to inhibit fatty acid biosynthesis (Heath et al., 1994). We know that Mla-null mutants (demonstrated here with dashed lines) with obgE* accumulate ppGpp at levels greater than that of WT (Figure 5, Figure 5\u2014figure supplement 1). ObgE* could be acting through either partial inhibition of the hydrolysis of (p)ppGpp to GTP/GDP (red bars) or stimulating the hydrolysis of pppGpp to ppGpp (red arrow). The resultant accumulation of ppGpp would repress fatty acid biosynthesis despite the global need for increased biosynthesis due to OMV production.\n\nUltimately, we show multiple lines of evidence supporting this overarching hypothesis. Firstly, we present genetic evidence that obgE* with \u0394mla are actively selected against. In attempts to recreate \u0394mlaF and \u0394mlaC deletions in the UW WT (which natively has obgE*), legitimate deletions repaired the obgE* allele 100% of the time. These deletions lacked the growth defect of the UW \u0394mlaF strain. Using an alternative approach, we generated mlaC+ and \u0394mlaC strains that exclusively expressed obgE* from a plasmid with no native chromosomal copy. When we sequenced these strains to confirm their validity, the \u0394mlaC strains had accumulated unique mutations that were not present in mlaC+. We reasoned these were legitimate suppressor mutations that allowed for tolerance of obgE* in the absence of Mla. While these are certainly of interest for fully teasing apart mechanism of obgE*, we found further analysis beyond the scope of the current manuscript. Our focus here was to clarify for the field the role of the Mla system in lipid transport. Secondly, we used chemical biology to elucidate the effects of obgE* in conjunction with \u0394mla. If the overarching premise that these were incompatible due to fatty acid flux, we should be able to exacerbate the effects via the use of chemical inducers/inhibitors. Indeed, only cells with obgE* and \u0394mla were hyper-sensitive to increased stringent response/ppGpp levels and inhibition of fatty acid biosynthesis. When we looked at stringent response alarmone levels directly in vivo, we found that the UW \u0394mlaF mutant accumulated significant levels of ppGpp at the expense of pppGpp, suggesting flux was directed towards ppGpp accumulation.\n\nWe argue that obgE* in conjunction with \u0394mla creates a synthetic sick phenotype linking fatty acid biosynthesis to OM homeostasis. Mla-null strains exhibit defects in lipid asymmetry of the OM, which result in increased OMV production. This blebbing of the OM would require compensatory de novo biosynthesis of both GPLs and lipid A, which both rely on de novo fatty acid biosynthesis. In this case, ppGpp accumulation would be simultaneously inhibiting de novo fatty acid biosynthesis: a circumstance that prevents cell envelope homeostasis (Figure 7). We conjecture that ObgE* could participate in one of two ways. The first would be stimulating hydrolysis of pppGpp to ppGpp (Figure 7, red arrow). While less likely, we cannot exclude the model that obgE* could partially inhibit the terminal hydrolysis step of (p)ppGpp to GTP/GDP (Figure 7, red bars). At this point, either model is compatible with the data presented.\n\nIn this manuscript, we present data that strongly indicates Mla has no demonstrable role in anterograde transport in A. baumannnii. This unfortunately calls into question results presented in Kamischke et al. In our efforts to remedy the discrepancies between our papers, we identified a link between obgE* and the Mla pathway. We argue that the synthetic interaction between obgE* and \u0394mla are responsible for the phenotypes observed in Kamischke et al. This synthetic phenotype is another link between cell envelope homeostasis and cellular stress response systems that broadly impact all aspects of bacterial physiology.\n\n## Materials and methods\n\n### Bacterial strains and growth curves\n\nAll strains and plasmids used in this study are listed in Supplementary file 4. Routine strain growth was done in lysogeny broth (LB) or LB + 1.5% agar at 37\u00b0C. Selective antibiotics were used when indicated at the following concentrations: kanamycin, 15 \u00b5g/mL (recombineering) or 30 \u00b5g/mL (routine growth); tetracycline, 10 \u00b5g/mL; hygromycin, 250 \u00b5g/mL. For growth curves, 5 mL of LB were inoculated with an overnight culture to a starting OD600\u00a0~\u00a00.05. For a given time point, 200 \u00b5L of culture was transferred to a polystyrene 96-well plate. OD600 readings were done using a H1 Hybrid Plate Reader (BioTek) and data was visualized in GraphPad Prism.\n\n### Minimal inhibitory concentration determinations\n\nFor a given strain, an overnight culture was diluted 1:1000 in 18 mL of fresh LB. 4 mL of diluted culture were aliquoted to a fresh tube. Antibiotics were added at a final concentration of 800 \u00b5g/mL (vancomycin), 15.6 \u00b5g/mL (novobiocin), or 12.5 \u00b5g/mL (rifampicin). These samples were then 1:1 serially transferred using the initial diluted culture as diluent. Cultures were grown for 16 hr at 37\u00b0C and terminal OD600 readings were measured. MIC determinations were calculated as the concentration at which 90% of growth was inhibited relative to an untreated control.\n\n### Outer membrane vesicle quantification\n\nAn overnight culture was used to inoculate 250 mL of LB and grown for 24 hr. Cells were pelleted at 5000 x g for 10 min and the supernatant collected. This spin was repeated on the supernatant to remove any remaining cellular debris. Twice-spun supernatant was filtered through a 0.22 \u00b5m filter and stored at 4\u00b0C. Supernatant was centrifuged at 100,000 x g at 4\u00b0C using a Ti54 Beckman-Coulter rotor for a minimum of 3 hr. This process was repeated until all 250 mL of supernatant was pelleted. The resulting OMV pellet was washed once in 1X PBS and centrifuged overnight. The washed pellet was resuspended in 1X PBS. Quantification of OMVs used the colorimetric Purpald assay. Values were measured using an H1 Hybrid Plate Reader (BioTek) and converted to \u00b5g/mL of Kdo by using a standard curve generated with pure Kdo (Sigma).\n\n### Next-generation sequencing\n\nCultures for RNA-sequencing were grown to an OD600 of\u00a0~0.7. 1 mL of culture was pelleted and resuspended in 1 mL of RNAlater (Invitrogen). RNA extraction, library building, and sequencing were contracted with Genewiz, Inc Reads were mapped to the published ATCC17978 genome using CLC Genomic Workbench software (Qiagen). After local alignment, reads per kilobase of transcript per million reads (RPKM) was calculated for each coding sequence. A log2 fold-change of > |2| with an FDR p-value<0.05 were considered statistically significant. The PCA plot was generated using ClustVis (55). For whole-genome sequencing, cells were pelleted and gDNA extracted using the Easy gDNA Extraction Kit (Invitrogen). Libraries were built using the Nextera DNA Flex Kit (Illumina) per manufacturer instructions and sequenced on an iSeq100. Reads were trimmed, locally realigned, and variants mapped using CLC Genomic Workbench Software (Qiagen).\n\n### Outer membrane vesicle pulse-chase\n\nFresh cultures were inoculated to an OD600\u00a0~0.05 from an overnight culture and grown at 37\u00b0C for 1 hr (2 hr in the case of the UW mlaF mutant to account for growth defect). 32Pi was added to a final concentration of 10 \u00b5Ci/mL and grown for an additional hour. Cultures were subsequently chased with 10 mM K2HPO4 for an hour. Cells were pelleted and supernatant carefully removed and transferred to a fresh tube. The supernatant was converted to a two-phase Bligh-Dyer via the addition of chloroform and methanol to a final ratio of 2:2:1.8 (chloroform:methanol:supernatant, v/v/v). For whole cell controls, pellets were initially resuspended in single phase 1:2:0.8 (chloroform:methanol:water, v/v/v). Insoluble material was removed by centrifugation and the supernatant was converted to a two-phase Bligh-Dyer. In both cases, glycerophospholipids were then extracted as described previously (Powers et al., 2019). Dried down lipids were resuspended in 500 \u00b5L of 4:1 chloroform:methanol (v/v) and 20 \u00b5L was quantified via liquid scintillation counting. The remaining sample was dried again under N2 gas, resuspended in 20 \u00b5L of 4:1 chloroform:methanol (v/v), and the entirety was spotted onto a Silica60 TLC plate. Glycerophospholipids were separated using a solvent system consisting of chloroform:methanol:acetic acid (65:25:10, v/v/v) and exposed to a PhosphorImager screen prior to visualization.\n\n### Confirmation of OMV integrity\n\n#### Western blotting\n\n5 \u00b5g of protein was loaded per sample and separated by SDS-PAGE on a 10% Bis-Tris gel. Protein was transferred to a 0.22 \u00b5m nitrocellulose membrane using a semi-dry transfer apparatus. The membrane was subsequently blocked overnight in 5% non-fat milk at 4\u00b0C. Primary antibody (\u03b1-OmpA) was used at a 1:5000 dilution and secondary antibody (\u03b1-Rabbit Cy5) at a 1:10,000 dilution. Blots were imaged for fluorescence using a Typhoon Imager (Amersham).\n\n#### NADH oxidase activity\n\nNADH oxidation was monitored using absorbance as described below with a slight variation. Protein was normalized to 3 \u00b5g and OD340 was monitored over time.\n\n### Serine hydroxamate and cerulenin sensitivity\n\nGrowth curves were performed as described above with the addition of either 100 \u00b5g/mL serine hydroxamate or 100 \u00b5g/mL cerulenin. At the terminal time point, OD600 values were normalized to the untreated controls.\n\n### Radiolabeled nucleotide extraction\n\nFresh cultures were inoculated to an OD600\u00a0~0.05 from an overnight culture with the addition of 5 \u00b5Ci/mL 32Pi. Cultures were grown at 37\u00b0C for 3 hr after which 500 \u00b5L were pelleted and resuspended in 100 \u00b5L of 2 N Formic Acid. Samples were incubated at RT for 15 min, frozen at \u221280\u00b0C for 15 min, and thawed at RT. This process was repeated an additional time. After thawing, samples were pelleted to remove cellular debris. 1 \u00b5L of supernatant was spotted on a PEI-Cellulose plate and separated in a 1.5 M KH2PO4 (pH 3.4) solvent system. Plates were exposed to a PhosphorImager screen for 2 days prior to imaging. Densitometry was performed in ImageJ. Densities for GTP, ppGpp, and pppGpp were calculated and relative percentages were derived for a given sample.\n\n### Generation of mutants in A. baumannii\n\nStandard mutant generation was performed using recombineering as described in Tucker et al., 2019.\n\n### Sanger sequencing\n\nFor Sanger sequencing, PCR products were generated using Phusion polymerase. Products were purified with a PCR Purification Kit (Qiagen) and sent for sequencing at (Genewiz Inc).\n\n### Membrane separations\n\nAn overnight culture was used to inoculate 250 mL of LB to an OD\u00a0~0.05. Cultures were grown to an OD\u00a0~0.8\u20131.0 and cells were pelleted at 5000 x g. Two protocols were used.\n\n#### Miller protocol\n\nPellet was resuspended in 12.5 mL 0.2 M Sucrose, 10 mM Tris (pH 7.5). While on ice, 18 mg of lysozyme was added and continuously stirred for 2 min. 12.5 mL of 1.5 mM EDTA was added and stirred for 7 min. This mixture was then centrifuged at 5000 x g and resuspended in 25 mL of 0.2 M Sucrose, 10 mM Tris (pH 7.5). Sample was lysed via high pressure homogenization at 10 kPsi (Constant Systems). Debris was removed via centrifugation at 7500 x g for 10 min. Total membranes were isolated via centrifugation at 4\u00b0C for 1 hr using a Ti54 (Beckman-Coulter). Membranes were resuspended in a small volume of 20% sucrose (w/v), 1 mM EDTA, 10 mM Tris (pH 7.5) and homogenized using a dounce homogenizer. This suspension was loaded onto a discontinuous gradient of 2 mL 73% sucrose (w/v), 4 mL 53% sucrose (w/v), and remainder 20% sucrose (w/v). All sucrose solutions contain 1 mM EDTA, 10 mM Tris (pH 7.5). Gradients were separated at 35,000 rpm in a SW41 (Beckman Coulter) for 16 hr.\n\n#### Osborn protocol\n\nPellet was resuspended in 8 mL of 10 mM Tris (pH 7.5), 0.75 M sucrose (w/v). While stirring on ice, 1 mg of lysozyme was added and stirred for 2 min. 16 mL of 1.5 mM EDTA (pH 8.0) was added dropwise over 5\u201310 min. The resulting slurry was sonicated for 30 s (1 s on/off) at 80% power (Qsonica). Sonication was repeated twice. Sample was centrifuged at 5000 x g and the resulting lysate was transferred to a fresh conical. Total membranes were isolated by centrifugation at 4\u00b0C at 100,000 x g for 1 hr in a Ti70 rotor (Beckman-Coulter). Membranes were dounce homogenized in 10 mM Tris (pH 7.5), 5 mM EDTA, 25% sucrose (w/w). This sample was layered onto a discontinuous gradient of 0.4 mL 60% sucrose (w/w), 0.9 mL 55% sucrose (w/w), 2.2 mL 50% sucrose (w/w), 2.2 mL 45% sucrose (w/w), 2.2 mL 40% sucrose (w/w), 1.3 mL 35% sucrose (w/w), 0.4 mL 30% sucrose (w/w). All sucrose solutions contain 5 mM EDTA, 10 mM Tris (pH 7.5). Gradients were separated at 35,000 rpm in a SW41 (Beckman Coulter) for 16 hr.\n\n### Analysis of membrane markers\n\nAfter centrifugation, gradients were carefully removed and fractions collected. In each case, a small hole was bored into the bottom of the tube and 500 \u00b5L fractions collected dropwise. Fractions were kept on ice.\n\n#### Protein concentration\n\n50 \u00b5L of each fraction was measured for protein content via BCA (Thermo Fisher).\n\n#### NADH oxidase activity (inner membrane marker)\n\nFresh buffer containing 50 mM Tris (pH 7.5), 120 \u00b5M NADH, 0.1 mM DTT was prepared in ddH2O. 5 \u00b5L (E. coli) or 10 \u00b5L (A. baumannii) of each fraction were added to 500 \u00b5L of buffer in a quartz cuvette. OD340 was measured over 1 min. \u0394OD340 and % activity was determined for each fraction across the entire gradient.\n\n#### LPS stain (outer membrane marker)\n\nSDS Loading buffer was added to 100 \u00b5L of fraction to a final concentration of 1X. 2 units of proteinase K was then added and samples incubated overnight at 55\u00b0C. 10 \u00b5L of sample were separated via SDS-PAGE using a 10% polyacrylamide gel. Staining for LPS was done using ProQ-Emerald 300 per manufacturer instructions (Invitrogen).\n\n### Serine hydroxamate-treated lipid extraction\n\nFreshly inoculated cultures (OD600\u00a0~0.05) were grown for 2 hr and pulsed with 10 \u00b5Ci/mL 32Pi. Labeled cultures were immediately split in half and either exposed to serine hydroxamate (final concentration 1 mg/mL) or untreated. After an additional hour of growth, cultures were pelleted and glycerophospholipids extracted as described previously (Powers et al., 2019). Quantification of 32P-labeled lipids was done using LSC.\n",
+      "created_at": "2025-12-02T19:40:40.318731Z"
+    },
+    {
+      "id": "91b733ea-1560-4cb9-9915-df50cdaee0ee",
+      "submission_id": "df7fe97b-2883-4d82-b099-cc652b09a6ce",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- T\u00e2m Mignot, CNRS-Aix Marseille University France\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.56571.sa1](https://doi.org/10.7554/eLife.56571.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nThis study addresses the mysterious mechanism of lipid homeostasis in the bacterial Outer Membrane. A previous study published in eLife proposed that the Mla system promotes anterograde phospholipid transport from the IM to the OM. In this work, the authors provide compelling evidence that Mla is instead a retrograde transport system, promoting OM phospholipid turnover. In addition to previous works, the new evidence has potential to resolve the controversy and provide key clarifications into the function of this conserved system.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"The Mla Pathway in Acinetobacter baumannii Does Not Mediate Anterograde Lipid Transport\" for consideration by eLife. Your article has been reviewed by two peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Gisela Storz as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nAs the editors have judged that your manuscript is of interest, but as described below that additional experiments are required before it is published, we would like to draw your attention to changes in our revision policy that we have made in response to COVID-19 (https://elifesciences.org/articles/57162). First, because many researchers have temporarily lost access to the labs, we will give authors as much time as they need to submit revised manuscripts. We are also offering, if you choose, to post the manuscript to bioRxiv (if it is not already there) along with this decision letter and a formal designation that the manuscript is \"in revision at eLife\". Please let us know if you would like to pursue this option. (If your work is more suitable for medRxiv, you will need to post the preprint yourself, as the mechanisms for us to do so are still in development.)\n\nThe paper from Powers and co-workers investigates the role of the Mla system in glycero-phospholipid (GPL) transport in the Gram-negative bacterium Acinetobacter baumannii. The Mla system was discovered in E. coli just over a decade ago. Since then, significant evidence has been accumulated in the literature indicating that the Mla system is involved in maintaining lipid asymmetry in the outer membrane (OM) by promoting the retrograde transport of GPLs from the outer leaflet of the OM to the inner membrane (IM). However, last year in eLife, work from the Miller laboratory was published in which the authors argued that the Mla system in Acinetobacter is involved in anterograde transport of GPLs from the IM to the OM. By questioning the function of the Mla system, this work along with another biochemical/structural study have caused a controversy in the field.\n\nThe present report addresses this controversy by reinvestigating lipid transport in Acinetobacter strains defective for the Mla system. The authors obtained strains from the Miller lab used in the previous paper. They show convincingly that the \u0394-mlaF strain in the Miller (UW) genetic background grows poorly and has major changes in its gene expression relative to an mlaF mutant in the Trent (UGA) background. The authors go on to show that these defects are likely due to a mutation in the essential gene obgE and that this mutation likely accounts in part for the defects in GPL transport reported by Miller and co-workers. In addition to oddities with the genetic background used by the Miller group, Powers and co-workers also present evidence that membrane fractionation to separate the IM and OM does not perform as expected in Acinetobacter. Relative to E. coli, the separation is quite poor. Effective separation of these layers is critical for assessing anterograde transport. The authors therefore devised a new assay for anterograde GPL transport that does not require membrane fractionation, and they find that inactivation of the Mla system does not reduce transport. The authors devise a new assay for anterograde GPL transport that does not require membrane fractionation, and they find that inactivation of the Mla system does not reduce transport.\n\nThe new assay however lacks appropriate controls (see below) and thus the results as currently presented in this paper only suggest, without truly establishing, that the Mla pathway does not operate in an anterograde direction. Another concern I have is that, although I think that Powers et al. may be right in their conclusions when they say that the Mla pathway is retrograde, their data do not completely rule out that Kamischke et al. could still be correct in the UW genetic background.\n\n1) The new assay for anterograde GPL transport requires more investigation. The assay uses pulse-chase labeling of GPLs and then monitors their accumulation in OM vesicles (OMVs). Appearance of labeled GPLs in OMVs is a function of both anterograde transport from the IM to the OM as well as of the OMV formation process itself. Therefore, isn't it technically possible that slower anterograde transport in the mla mutants could be masked by enhanced (ie faster) OMV formation. For example, if anterograde transport were half as efficient but OMV formation were twice as fast, wouldn't the end result be the same as if both processes were normal? If this is the case, then the results of the assay are not as definitive as described in the text. Normalizations suggested above should be performed to more precisely quantify the amount of phospholipids present in the OM:\n\n\u2013 Given that the UW \u2206mlaF mutant sheds more than UGA \u2206mlaF mutant (Figure 1B), that the quantifications in Figure 2C must be normalized against the amount of shedding; the authors should normalize their data by the total amount of lipid in the OMVs.\n\n\u2013 The amount of LS counts contributed by cell lysis should be assessed, for example by measuring the levels of a cytoplasmic and of an IM protein in the supernatant after the pelleting of the cells and prior to lipid extraction. Also, to confirm that the OMVs they used were not contaminated by IMVs.\n\n2) The authors explain that membrane separation is not reproducible in A. baumanii when two different techniques are used. How do the authors explain the differences between their work and Kamischke et al.? Could it be that membrane fractionation work better in the UW strain background than in the UGA? Kamischke et al. provided additional evidences in Figure 5\u2014figure supplement 3 that their method of separation works actually pretty well. How come that it did not work for Powers et al? Did Powers et al. try the same methodology in the UW background? Could the discrepancy come from a difference in the physiological status of the cells? Kamischke et al. do not mention if cells were harvested in exponential or stationary phase. These points need to be discussed.\n\n3) The negative association between the absence of the Mla pathway and a possibly overactive stringent response has not been studied in depth and is not supported enough by the data presented.\n\n\u2013 If ppGpp accumulates in the obgE* strain, wouldn't this be expected to decrease expression of ribosomal protein genes instead of increasing them as observed in Figure 3C?\n\n\u2013 Discussion paragraph eight: How does hydrolysis of ppGpp yield GTP?\n\n\u2013 Figure 4A: a quantification of ppGpp levels would be useful to support these results\n\nThe authors should have insisted more on this aspect as it offers an element of novelty.\n\n4) TLC Experiments are semi quantitative raising potential issues with their interpretations:\n\n\u2013 Figure 2B: a quantification of de novo GPL biosynthesis (as in Figure 6\u2014figure supplement 3) would be needed to support these results\n\n\u2013 Figures 5 and Figure 5\u2014figure supplement 1: The data presented in these figures are not solid: the quantifications should have been performed using another method than TLC (semi-quantitative) followed by densitometry. Indeed, it seems that the total amount of nucleotides deposited on the TLC plate is not the same across conditions. An alternative strategy would be to separate the nucleotides, measure the LS counts associated to each of them, and normalize the nucleotide-specific counts against the total nucleotide count.\n\n[Editors' note: further revisions were suggested prior to acceptance, as described below.]\n\nThank you for submitting your article \"The Mla Pathway in Acinetobacter baumannii Does Not Mediate Anterograde Lipid Transport\" for consideration by eLife. Your article has been reviewed by two peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Gisela Storz as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nThe revised paper from Powers and co-workers is improved. The added controls and discussion of the results have addressed prior concerns related to the OMV assay. The only remaining issue with the paper is editorial. The text is repetitive and could be shortened. This paper is likely to be an important one in the field and therefore will have greater impact if its streamlined and easier to read. The paper currently devotes five paragraphs of the Introduction to summarize almost every aspect of the paper, which lacks concision. The \"preview section\" of the Introduction should be limited to one paragraph. This play-by-play summary is again repeated in the Discussion. While this is less of an issue here, it could also be paired down some to focus the Discussion on important concepts instead of dedicating a lot of text to repeating/summarizing the results.\n",
+      "created_at": "2025-12-02T19:40:40.318731Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T19:40:40.318731Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T19:40:40.318731Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "b631f952-3e85-465f-ad2f-8306e2c8a1e1",
+      "content_id": "b7cf50ed-1069-47a2-9d57-1241f6d40a15",
+      "claim_id": "C1",
+      "claim": "The outer membrane (OM) of Gram-negative bacteria is asymmetric, with the inner leaflet composed of glycerophospholipids (GPLs) and the outer leaflet predominantly composed of lipopolysaccharide (LPS) or lipooligosaccharide (LOS).",
+      "claim_type": "EXPLICIT",
+      "source": "While the inner leaflet of the OM is composed of the standard glycerophospholipids (GPLs), the outer leaflet is predominantly lipopolysaccharide (LPS) or lipooligosaccharide (LOS) (Funahara and Nikaido, 1980; Schindler and Osborn, 1979).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published literature (Funahara and Nikaido, 1980; Schindler and Osborn, 1979).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:40:40.318731Z"
+    },
+    {
+      "id": "05b0f9f0-c7fd-48ab-b5cf-f4b5587fcd76",
+      "content_id": "b7cf50ed-1069-47a2-9d57-1241f6d40a15",
+      "claim_id": "C2",
+      "claim": "LPS and LOS differ by the presence or absence of O-antigen sugar repeats respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "LPS or LOS differ by the presence or absence of O-antigen sugar repeats respectively, but both molecules are anchored in the OM by lipid A, a unique glycolipid, that is remarkably conserved amongst Gram-negative bacteria (Whitfield and Trent, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to published literature (Whitfield and Trent, 2014).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:40:40.318731Z"
+    },
+    {
+      "id": "f4a6d357-fae1-4007-88e3-212cf61b43f0",
+      "content_id": "b7cf50ed-1069-47a2-9d57-1241f6d40a15",
+      "claim_id": "C3",
+      "claim": "Lipid A is a bis-phosphorylated glucosamine disaccharide that can be anywhere from tetra- to hepta-acylated depending on genera.",
+      "claim_type": "EXPLICIT",
+      "source": "Lipid A is a bis-phosphorylated glucosamine disaccharide that can be anywhere from tetra- to hepta-acylated depending on genera (Whitfield and Trent, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to published literature (Whitfield and Trent, 2014).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:40:40.318731Z"
+    },
+    {
+      "id": "05654896-f417-4c58-8b51-de360a17c57f",
+      "content_id": "b7cf50ed-1069-47a2-9d57-1241f6d40a15",
+      "claim_id": "C4",
+      "claim": "The increased hydrophobicity of lipid A strongly excludes the passive entry of hydrophilic compounds.",
+      "claim_type": "EXPLICIT",
+      "source": "This increased hydrophobicity is the first reason for the OM's functionality as a barrier, as it strongly excludes the passive entry of hydrophilic compounds (Nikaido, 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to published literature (Nikaido, 2003).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:40:40.318731Z"
+    },
+    {
+      "id": "760bdef6-24c6-45d1-8822-410d0f66c0f7",
+      "content_id": "b7cf50ed-1069-47a2-9d57-1241f6d40a15",
+      "claim_id": "C5",
+      "claim": "Negatively charged phosphates on lipid A and covalently attached sugars increase the net negative charge of the outer membrane, facilitating efficient cross-bridging with divalent cations.",
+      "claim_type": "EXPLICIT",
+      "source": "Secondly, negatively charged phosphates on lipid A and covalently attached sugars that make up the core of LPS/LOS increases the net negative charge of the outer membrane. This facilitates efficient cross-bridging with divalent cations in the environment and promotes strong lateral interactions between LPS/LOS molecules on the surface (Schindler and Osborn, 1979; Murata et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published literature (Schindler and Osborn, 1979; Murata et al., 2007).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:40:40.318731Z"
+    },
+    {
+      "id": "cd018059-c932-4f85-9de4-11ba40f6ea03",
+      "content_id": "b7cf50ed-1069-47a2-9d57-1241f6d40a15",
+      "claim_id": "C6",
+      "claim": "Tightly packed LPS/LOS molecules serve as physical impediments to the accessibility of hydrophobic compounds to the lipid bilayer of the OM.",
+      "claim_type": "EXPLICIT",
+      "source": "These tightly packed LPS/LOS molecules, particularly the core and O-antigen sugars, serve as physical impediments to the accessibility of hydrophobic compounds to the lipid bilayer of the OM (Funahara and Nikaido, 1980; Schindler and Osborn, 1979).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published literature (Funahara and Nikaido, 1980; Schindler and Osborn, 1979).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:40:40.318731Z"
+    },
+    {
+      "id": "605685e6-9ef1-4829-8d5a-d0159d4f8d17",
+      "content_id": "b7cf50ed-1069-47a2-9d57-1241f6d40a15",
+      "claim_id": "C7",
+      "claim": "A large majority of antibiotic classes are ineffective on Gram-negative bacteria due to either the inability to diffuse across the membrane or rapid efflux out of the cytoplasmic space.",
+      "claim_type": "EXPLICIT",
+      "source": "A large majority of antibiotic classes are ineffective on Gram-negative bacteria due to either the inability to diffuse across the membrane (Nikaido, 1994; Vergalli et al., 2020) or rapid efflux out of the cytoplasmic space (Du et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published literature (Nikaido, 1994; Vergalli et al., 2020; Du et al., 2018).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:40:40.318731Z"
+    },
+    {
+      "id": "c9305bad-5f27-4572-9158-6e03dc598019",
+      "content_id": "b7cf50ed-1069-47a2-9d57-1241f6d40a15",
+      "claim_id": "C8",
+      "claim": "The Lipopolysaccharide transport (Lpt) pathway forms a transmembrane bridge to transport LPS/LOS to the OM.",
+      "claim_type": "EXPLICIT",
+      "source": "The Lipopolysaccharide transport (Lpt) pathway forms a transmembrane bridge to transport LPS/LOS to the OM (Okuda et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to published literature (Okuda et al., 2016).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:40:40.318731Z"
+    },
+    {
+      "id": "cf1414c7-dad1-484e-a873-92850add606a",
+      "content_id": "b7cf50ed-1069-47a2-9d57-1241f6d40a15",
+      "claim_id": "C9",
+      "claim": "The Localization of lipoprotein (Lol) system transports lipoproteins from the IM to the OM.",
+      "claim_type": "EXPLICIT",
+      "source": "The Localization of lipoprotein (Lol) system transports lipoproteins from the IM to the OM (Grabowicz, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to published literature (Grabowicz, 2019).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:40:40.318731Z"
+    },
+    {
+      "id": "6afa92b7-4e4d-4261-8211-edd405f54cbb",
+      "content_id": "b7cf50ed-1069-47a2-9d57-1241f6d40a15",
+      "claim_id": "C10",
+      "claim": "The \u03b2-barrel assembly machinery (Bam) facilitates folding and insertion of outer membrane proteins (OMPs).",
+      "claim_type": "EXPLICIT",
+      "source": "The \u03b2-barrel assembly machinery (Bam) facilitates folding and insertion of outer membrane proteins (OMPs) (Malinverni and Silhavy, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to published literature (Malinverni and Silhavy, 2011).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:40:40.318731Z"
+    },
+    {
+      "id": "34da44cc-0af9-45d7-9a11-01162717c739",
+      "content_id": "b7cf50ed-1069-47a2-9d57-1241f6d40a15",
+      "claim_id": "C11",
+      "claim": "Bacterial cells can rapidly and efficiently transport GPLs in the retrograde direction (OM to IM).",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, previous work done by Mary Jane Osborn's group highlighted the ability for bacterial cells to rapidly and efficiently transport GPLs in the retrograde direction (OM to IM) (Jones and Osborn, 1977).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to published literature (Jones and Osborn, 1977).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:40:40.318731Z"
+    },
+    {
+      "id": "22505dcb-cc4f-4f64-8483-249aa33e01c0",
+      "content_id": "b7cf50ed-1069-47a2-9d57-1241f6d40a15",
+      "claim_id": "C12",
+      "claim": "Deletion of the Tol-Pal system negatively impacts bulk retrograde GPL transport.",
+      "claim_type": "EXPLICIT",
+      "source": "There is evidence that deletion of the Tol-Pal system negatively impacts bulk retrograde GPL transport, although whether this is direct or indirectly mediated by Tol-Pal remains to be determined (Shrivastava et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to published literature (Shrivastava et al., 2017).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:40:40.318731Z"
+    },
+    {
+      "id": "796b24c2-3c94-4157-8cfa-4c82d43b59e9",
+      "content_id": "b7cf50ed-1069-47a2-9d57-1241f6d40a15",
+      "claim_id": "C13",
+      "claim": "Mutants of E. coli lacking the Mla pathway were susceptible to combinatorial exposure to SDS/EDTA.",
+      "claim_type": "EXPLICIT",
+      "source": "The Mla pathway was discovered in 2009, where it was found that mutants of E. coli lacking this pathway were susceptible to combinatorial exposure to SDS/EDTA (Malinverni and Silhavy, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to published literature (Malinverni and Silhavy, 2009).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:40:40.318731Z"
+    },
+    {
+      "id": "72971bba-b9e6-4428-9430-f32834a13401",
+      "content_id": "b7cf50ed-1069-47a2-9d57-1241f6d40a15",
+      "claim_id": "C14",
+      "claim": "Susceptibility to detergent + chelator combinations indicate perturbed OM asymmetry.",
+      "claim_type": "EXPLICIT",
+      "source": "Susceptibility to detergent + chelator combinations indicate perturbed OM asymmetry, as E. coli is typically highly resistant due to the lateral LPS interactions (Schindler and Osborn, 1979).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to published literature (Schindler and Osborn, 1979).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:40:40.318731Z"
+    },
+    {
+      "id": "2d21ca47-1fe8-493d-8add-57809764eb8d",
+      "content_id": "b7cf50ed-1069-47a2-9d57-1241f6d40a15",
+      "claim_id": "C15",
+      "claim": "Spontaneous suppressors that could alleviate sensitivity to SDS/EDTA in Mla mutants all achieved increased expression of pldA.",
+      "claim_type": "EXPLICIT",
+      "source": "Spontaneous suppressors that could alleviate sensitivity all achieved the same result \u2013 increased expression of pldA (Malinverni and Silhavy, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to published literature (Malinverni and Silhavy, 2009).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:40:40.318731Z"
+    },
+    {
+      "id": "64b7a89f-5df3-43f9-bdf2-61ad15f7e461",
+      "content_id": "b7cf50ed-1069-47a2-9d57-1241f6d40a15",
+      "claim_id": "C16",
+      "claim": "PldA has an active site that is exclusively exposed to the outer leaflet of the OM.",
+      "claim_type": "EXPLICIT",
+      "source": "PldA is an outer membrane phospholipase which, demonstrated through extensive crystallographic and biochemical analyses, has an active site that is exclusively exposed to the outer leaflet of the OM (Brok et al., 1996; Scandella and Kornberg, 1971; Snijder et al., 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published literature (Brok et al., 1996; Scandella and Kornberg, 1971; Snijder et al., 1999).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:40:40.318731Z"
+    },
+    {
+      "id": "c18751e5-c1b2-49ab-b477-1fdfd0abd62d",
+      "content_id": "b7cf50ed-1069-47a2-9d57-1241f6d40a15",
+      "claim_id": "C17",
+      "claim": "PldA enzymatically degrades GPLs that are mislocalized to the outer leaflet of the OM.",
+      "claim_type": "EXPLICIT",
+      "source": "As such, PldA enzymatically degrades GPLs that are mislocalized to the outer leaflet of the OM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from the known function and localization of PldA.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:40:40.318731Z"
+    },
+    {
+      "id": "49eb9a7c-4684-4a08-8690-6891cbb83953",
+      "content_id": "b7cf50ed-1069-47a2-9d57-1241f6d40a15",
+      "claim_id": "C18",
+      "claim": "Mla and PldA have overlapping functionalities albeit through distinct mechanisms.",
+      "claim_type": "EXPLICIT",
+      "source": "Through this suppression analysis, it was reasonably hypothesized that Mla and PldA have overlapping functionalities albeit through distinct mechanisms (Malinverni and Silhavy, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to published literature (Malinverni and Silhavy, 2009).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:40:40.318731Z"
+    },
+    {
+      "id": "b53b8684-5821-4dc0-9bdd-239cf2ccabf7",
+      "content_id": "b7cf50ed-1069-47a2-9d57-1241f6d40a15",
+      "claim_id": "C19",
+      "claim": "The Mla system is comprised of 6 proteins: MlaA, MlaC, MlaD, MlaE, MlaF, and MlaB.",
+      "claim_type": "EXPLICIT",
+      "source": "The intact, functional system is comprised of 6 proteins (Powers and Trent, 2019). MlaA is an alpha-helical outer membrane lipoprotein (Abell\u00f3n-Ruiz et al., 2017). MlaC is a soluble, periplasmic protein (Huang et al., 2016). MlaD is anchored in the inner membrane with a lipid-binding MCE domain in the periplasmic space (Ekiert et al., 2017; Thong et al., 2016). It is coupled in a tight complex with an inner membrane permease, MlaE, a cytoplasmic ATPase, MlaF, and a cytoplasmic accessory protein MlaB (Ekiert et al., 2017; Thong et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published literature (Powers and Trent, 2019; Abell\u00f3n-Ruiz et al., 2017; Huang et al., 2016; Ekiert et al., 2017; Thong et al., 2016).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:40:40.318731Z"
+    },
+    {
+      "id": "e5037021-02d8-438f-a94c-5af153f5bfdd",
+      "content_id": "b7cf50ed-1069-47a2-9d57-1241f6d40a15",
+      "claim_id": "C20",
+      "claim": "MlaA is an alpha-helical outer membrane lipoprotein.",
+      "claim_type": "EXPLICIT",
+      "source": "MlaA is an alpha-helical outer membrane lipoprotein (Abell\u00f3n-Ruiz et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to published literature (Abell\u00f3n-Ruiz et al., 2017).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:40:40.318731Z"
+    },
+    {
+      "id": "aee3b1d6-820b-4483-8570-8069c19b74fe",
+      "content_id": "b7cf50ed-1069-47a2-9d57-1241f6d40a15",
+      "claim_id": "C21",
+      "claim": "MlaC is a soluble, periplasmic protein.",
+      "claim_type": "EXPLICIT",
+      "source": "MlaC is a soluble, periplasmic protein (Huang et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to published literature (Huang et al., 2016).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:40:40.318731Z"
+    },
+    {
+      "id": "11e16abd-de1b-44ce-aa26-8864c2ba0b3e",
+      "content_id": "b7cf50ed-1069-47a2-9d57-1241f6d40a15",
+      "claim_id": "C22",
+      "claim": "MlaD is anchored in the inner membrane with a lipid-binding MCE domain in the periplasmic space.",
+      "claim_type": "EXPLICIT",
+      "source": "MlaD is anchored in the inner membrane with a lipid-binding MCE domain in the periplasmic space (Ekiert et al., 2017; Thong et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published literature (Ekiert et al., 2017; Thong et al., 2016).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:40:40.318731Z"
+    },
+    {
+      "id": "5fcfbf6f-7e2b-4a58-90d6-3f6d34f8c756",
+      "content_id": "b7cf50ed-1069-47a2-9d57-1241f6d40a15",
+      "claim_id": "C23",
+      "claim": "MlaD is coupled in a tight complex with an inner membrane permease MlaE, a cytoplasmic ATPase MlaF, and a cytoplasmic accessory protein MlaB.",
+      "claim_type": "EXPLICIT",
+      "source": "It is coupled in a tight complex with an inner membrane permease, MlaE, a cytoplasmic ATPase, MlaF, and a cytoplasmic accessory protein MlaB (Ekiert et al., 2017; Thong et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published literature (Ekiert et al., 2017; Thong et al., 2016).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:40:40.318731Z"
+    },
+    {
+      "id": "91828798-0b77-4d32-9cc3-f02e6f01e344",
+      "content_id": "b7cf50ed-1069-47a2-9d57-1241f6d40a15",
+      "claim_id": "C24",
+      "claim": "Structural analyses and genetic data support the hypothesis that the Mla pathway functions in a retrograde manner.",
+      "claim_type": "EXPLICIT",
+      "source": "Structural analyses and subsequent genetic data further bolstered the hypothesis that the Mla pathway functions in the initially proposed retrograde manner (Abell\u00f3n-Ruiz et al., 2017; Baarda et al., 2019; Chong et al., 2015; Sutterlin et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published literature (Abell\u00f3n-Ruiz et al., 2017; Baarda et al., 2019; Chong et al., 2015; Sutterlin et al., 2016).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:40:40.318731Z"
+    },
+    {
+      "id": "e85c56c3-4d28-4c44-a98c-c7b5257ba3be",
+      "content_id": "b7cf50ed-1069-47a2-9d57-1241f6d40a15",
+      "claim_id": "C25",
+      "claim": "A. baumannii can survive in the absence of LOS.",
+      "claim_type": "EXPLICIT",
+      "source": "A. baumannii is relatively unique in that it can survive in the absence of LOS, which is typically essential in Gram-negative organisms (Powers and Trent, 2018b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to published literature (Powers and Trent, 2018b).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:40:40.318731Z"
+    },
+    {
+      "id": "8b65e6c3-7627-4c2d-a027-05537b0346ec",
+      "content_id": "b7cf50ed-1069-47a2-9d57-1241f6d40a15",
+      "claim_id": "C26",
+      "claim": "In the absence of LOS, the lipid composition of A. baumannii OM is exclusively a symmetric GPL bilayer.",
+      "claim_type": "EXPLICIT",
+      "source": "In this case, the lipid composition of its OM is exclusively a symmetric GPL bilayer (Powers and Trent, 2018a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to published literature (Powers and Trent, 2018a).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:40:40.318731Z"
+    },
+    {
+      "id": "9175f9a7-cada-47e8-a03a-849bba52a07c",
+      "content_id": "b7cf50ed-1069-47a2-9d57-1241f6d40a15",
+      "claim_id": "C27",
+      "claim": "LOS-deficient populations of A. baumannii rapidly inactivated genes in the Mla pathway and occasionally pldA.",
+      "claim_type": "EXPLICIT",
+      "source": "What we found overwhelmingly was that when given the opportunity, LOS-deficient populations across multiple strains of A. baumannii rapidly inactivated genes in the Mla pathway and occasionally pldA (Powers and Trent, 2018a), a finding that was independently corroborated by the Kahne group (Nagy et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published literature (Powers and Trent, 2018a; Nagy et al., 2019).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:40:40.318731Z"
+    },
+    {
+      "id": "c5970884-f727-4eda-8c2f-faeb91163420",
+      "content_id": "b7cf50ed-1069-47a2-9d57-1241f6d40a15",
+      "claim_id": "C28",
+      "claim": "The UW \u0394mlaF mutant exhibits a significant growth defect compared to its isogenic parent.",
+      "claim_type": "EXPLICIT",
+      "source": "While the UGA \u0394mlaF mutant grows identically to its isogenic parent (red and black triangles, respectively), the UW \u0394mlaF strain exhibited a significant growth defect (green and orange circles, respectively) (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:40:40.318731Z"
+    },
+    {
+      "id": "4052f058-0556-4697-a76d-d37314b0e8a7",
+      "content_id": "b7cf50ed-1069-47a2-9d57-1241f6d40a15",
+      "claim_id": "C29",
+      "claim": "The increases in optical density during exponential phase of the UW \u0394mlaF strain were due to growth.",
+      "claim_type": "EXPLICIT",
+      "source": "Quantification by colony forming units from hours 1 to 4 confirmed that, despite its unexpected growth defect, increases in optical density during exponential phase were due to growth (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:40:40.318731Z"
+    },
+    {
+      "id": "70b65d3b-41ab-44da-9845-e57c28ed18da",
+      "content_id": "b7cf50ed-1069-47a2-9d57-1241f6d40a15",
+      "claim_id": "C30",
+      "claim": "The UW \u0394mlaF strain appeared morphologically distinct in both size and color from its parent when grown on agar plates.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the UW \u0394mlaF strain appeared morphologically distinct in both size and color from its parent when grown on agar plates (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by visual evidence shown in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:40:40.318731Z"
+    },
+    {
+      "id": "a63208a5-29d0-4db1-9be2-eb7b39921a44",
+      "content_id": "b7cf50ed-1069-47a2-9d57-1241f6d40a15",
+      "claim_id": "C31",
+      "claim": "No published mla mutants exhibit any growth defects across genera.",
+      "claim_type": "EXPLICIT",
+      "source": "This growth defect was surprising as as no mla mutants in A. baumannii (Powers and Trent, 2018a), Burkholderia cepacia (Bernier et al., 2018), Neisseria gonorrhoeae (Baarda et al., 2019), Haemophilus influenzae (Fern\u00e1ndez-Calvet et al., 2018), or E. coli (Ekiert et al., 2017; Chong et al., 2015) have been shown to have any growth defect compared to the isogenic parent.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published literature (Powers and Trent, 2018a; Bernier et al., 2018; Baarda et al., 2019; Fern\u00e1ndez-Calvet et al., 2018; Ekiert et al., 2017; Chong et al., 2015).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:40:40.318731Z"
+    },
+    {
+      "id": "2007705f-63dc-4630-8a99-aa123a4b6db4",
+      "content_id": "b7cf50ed-1069-47a2-9d57-1241f6d40a15",
+      "claim_id": "C32",
+      "claim": "Mutations that perturb OM homeostasis can alter the rate of vesiculation.",
+      "claim_type": "EXPLICIT",
+      "source": "While this occurs naturally to varying extents across bacterial genera, mutations that perturb OM homeostasis can alter the rate of vesiculation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on established scientific knowledge about OM vesiculation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:40:40.318731Z"
+    },
+    {
+      "id": "814a42e3-53ba-4d1f-91d1-cd67f4ed1620",
+      "content_id": "b7cf50ed-1069-47a2-9d57-1241f6d40a15",
+      "claim_id": "C33",
+      "claim": "Both the UGA and UW \u0394mlaF mutants exhibited ~2\u20134X increase in OMVs during exponential phase.",
+      "claim_type": "EXPLICIT",
+      "source": "During exponential phase, both the UGA and UW \u0394mlaF mutants exhibited ~2\u20134X increase in OMVs (Figure 1C), consistent with published data in other organisms (Roier et al., 2016).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1C and a citation to published literature (Roier et al., 2016).",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:40:40.318731Z"
+    },
+    {
+      "id": "0611c109-7442-4cb9-8aa4-3faba0f7d05e",
+      "content_id": "b7cf50ed-1069-47a2-9d57-1241f6d40a15",
+      "claim_id": "C34",
+      "claim": "The UW \u0394mlaF mutant had a 23X increase in OMV levels in stationary phase.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, when we assessed stationary phase cultures for OMVs, there was a major discrepancy in the relative degrees of vesiculation between mutant and WT. Whereas the UGA \u0394mlaF mutant maintained fold-changes relative to WT within the expected range, the UW \u0394mlaF mutant had a staggering 23X increase in OMV levels (Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:40:40.318731Z"
+    },
+    {
+      "id": "c55d5c33-0bb0-4234-a179-70674c59e755",
+      "content_id": "b7cf50ed-1069-47a2-9d57-1241f6d40a15",
+      "claim_id": "C35",
+      "claim": "The UW \u0394mlaF strain has a unique stationary phase lysis phenotype.",
+      "claim_type": "EXPLICIT",
+      "source": "These data suggest that the UW \u0394mlaF strain has a unique stationary phase lysis phenotype which has not been observed in other mla mutants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from the OMV data showing a 23X increase in stationary phase.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:40:40.318731Z"
+    },
+    {
+      "id": "20f8764e-a22e-4905-a507-da956ff00638",
+      "content_id": "b7cf50ed-1069-47a2-9d57-1241f6d40a15",
+      "claim_id": "C36",
+      "claim": "The UGA \u0394mlaF strain has a 3.2-fold increase in sensitivity to novobiocin compared to WT.",
+      "claim_type": "EXPLICIT",
+      "source": "When we examined the minimum inhibitory concentration (MIC) for novobiocin, there was a 3.2-fold increase in sensitivity in the UGA \u0394mlaF strain compared to a 5.85-fold increase in sensitivity of the UW \u0394mlaF strain (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:40:40.318731Z"
+    },
+    {
+      "id": "401c9e73-2989-4a47-9083-8ac202f4269d",
+      "content_id": "b7cf50ed-1069-47a2-9d57-1241f6d40a15",
+      "claim_id": "C37",
+      "claim": "The UW \u0394mlaF strain has a 5.85-fold increase in sensitivity to novobiocin compared to WT.",
+      "claim_type": "EXPLICIT",
+      "source": "When we examined the minimum inhibitory concentration (MIC) for novobiocin, there was a 3.2-fold increase in sensitivity in the UGA \u0394mlaF strain compared to a 5.85-fold increase in sensitivity of the UW \u0394mlaF strain (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:40:40.318731Z"
+    },
+    {
+      "id": "edc5d72f-c8fa-41ae-888c-7b71aeda2136",
+      "content_id": "b7cf50ed-1069-47a2-9d57-1241f6d40a15",
+      "claim_id": "C38",
+      "claim": "The UGA \u0394mlaF strain has a 1.8-fold increase in sensitivity to rifampicin compared to WT.",
+      "claim_type": "EXPLICIT",
+      "source": "This trend of exacerbated sensitivity in the UW \u0394mlaF were also seen with rifampicin, with 1.8-fold and 14-fold increases in sensitivity of the UGA and UW \u0394mlaF respectively (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:40:40.318731Z"
+    },
+    {
+      "id": "bb73878c-5fb0-4487-8a58-8edb2ae26400",
+      "content_id": "b7cf50ed-1069-47a2-9d57-1241f6d40a15",
+      "claim_id": "C39",
+      "claim": "The UW \u0394mlaF strain has a 14-fold increase in sensitivity to rifampicin compared to WT.",
+      "claim_type": "EXPLICIT",
+      "source": "This trend of exacerbated sensitivity in the UW \u0394mlaF were also seen with rifampicin, with 1.8-fold and 14-fold increases in sensitivity of the UGA and UW \u0394mlaF respectively (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:40:40.318731Z"
+    },
+    {
+      "id": "cec84e86-6e20-4029-8b32-73a10efa0a59",
+      "content_id": "b7cf50ed-1069-47a2-9d57-1241f6d40a15",
+      "claim_id": "C40",
+      "claim": "The UGA \u0394mlaF mutant exhibited no change in MIC for vancomycin.",
+      "claim_type": "EXPLICIT",
+      "source": "The vancomycin results were particularly distinct. The UGA \u0394mlaF mutant exhibited no change in MIC, while the UW \u0394mlaF has a 2.3-fold increase in sensitivity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:40:40.318731Z"
+    },
+    {
+      "id": "2bb275ee-37d1-44aa-a21f-99407f663a42",
+      "content_id": "b7cf50ed-1069-47a2-9d57-1241f6d40a15",
+      "claim_id": "C41",
+      "claim": "The UW \u0394mlaF strain has a 2.3-fold increase in sensitivity to vancomycin compared to WT.",
+      "claim_type": "EXPLICIT",
+      "source": "The vancomycin results were particularly distinct. The UGA \u0394mlaF mutant exhibited no change in MIC, while the UW \u0394mlaF has a 2.3-fold increase in sensitivity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:40:40.318731Z"
+    },
+    {
+      "id": "775be3db-5a57-4b5d-93e1-d5b44e9a62bf",
+      "content_id": "b7cf50ed-1069-47a2-9d57-1241f6d40a15",
+      "claim_id": "C42",
+      "claim": "Kamischke et al. reported a ~50% decrease in GPL content in the OM of \u0394mla mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "The critical finding in Kamischke et. al. was a rather significant ~50% decrease in GPL content in the OM of \u0394mla mutants (Kamischke et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to published literature (Kamischke et al., 2019).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:40:40.318731Z"
+    },
+    {
+      "id": "b8f6dee2-ba07-4a90-9756-e359c31c9729",
+      "content_id": "b7cf50ed-1069-47a2-9d57-1241f6d40a15",
+      "claim_id": "C43",
+      "claim": "Attempts to achieve membrane separations in A. baumannii were unsuccessful using the Osborn protocol.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite an exhaustive approach, attempts in our laboratory to achieve membrane separations in A. baumannii were met with no success (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:40:40.318731Z"
+    },
+    {
+      "id": "c919a6a2-c93e-4b96-aa39-c099becba778",
+      "content_id": "b7cf50ed-1069-47a2-9d57-1241f6d40a15",
+      "claim_id": "C44",
+      "claim": "The gradient utilized by Kamischke et al. was insufficient to separate A. baumannii membranes.",
+      "claim_type": "EXPLICIT",
+      "source": "Independently, a recent methods paper published during the review of this work demonstrated that the gradient utilized by Kamischke et al. was insufficient to separate A. baumannii membranes, further validating our results presented here (Cian et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to published literature (Cian et al., 2020).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:40:40.318731Z"
+    },
+    {
+      "id": "6a97cd21-c690-4d8a-b126-b214850320b7",
+      "content_id": "b7cf50ed-1069-47a2-9d57-1241f6d40a15",
+      "claim_id": "C45",
+      "claim": "All OMVs contain GPLs that have undergone anterograde transport from the IM to OM.",
+      "claim_type": "EXPLICIT",
+      "source": "To do this, we relied on OM vesiculation as a proxy for anterograde transport, as all OMVs contain GPLs that have undergone anterograde transport from the IM to OM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on established knowledge about OMV composition and biogenesis.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:40:40.318731Z"
+    },
+    {
+      "id": "24d18e2a-7fff-4893-9e35-1e5333121612",
+      "content_id": "b7cf50ed-1069-47a2-9d57-1241f6d40a15",
+      "claim_id": "C46",
+      "claim": "Every \u0394mla mutant tested exhibited a significant increase in 32P-labeled lipids in the supernatant.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, we observed a significant increase in 32P-labeled lipids in the supernatant in every \u0394mla mutant tested (Figure 2B & C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2B & C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:40:40.318731Z"
+    },
+    {
+      "id": "6a76c904-5918-497d-9753-d849cc645389",
+      "content_id": "b7cf50ed-1069-47a2-9d57-1241f6d40a15",
+      "claim_id": "C47",
+      "claim": "Both the UGA \u0394mlaF and UW \u0394mlaF mutant had increased 32P-labeled lipids in the OMV pulse-chase assay.",
+      "claim_type": "EXPLICIT",
+      "source": "Both the UGA \u0394mlaF and UW \u0394mlaF mutant had increased 32P-labeled lipids using this assay, indicating no defect in anterograde transport (Figure 2B & C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2B & C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:40:40.318731Z"
+    },
+    {
+      "id": "ffbf0f47-d316-4267-a908-5300b6c3deb1",
+      "content_id": "b7cf50ed-1069-47a2-9d57-1241f6d40a15",
+      "claim_id": "C48",
+      "claim": "UW mlaC::kan MJP1 and MJP2 mutants showed no defects in anterograde transport.",
+      "claim_type": "EXPLICIT",
+      "source": "To remove strain differences as a variable, we constructed deletions of \u0394mlaC in the UW WT background (UW mlaC::kan MJP1 and MJP2). Consistent with previous results, we saw no defects in anterograde transport as evidenced by an increase in 32P-labeled OMVs (Figure 2B & C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2B & C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:40:40.318731Z"
+    },
+    {
+      "id": "b75e88c7-0084-4c93-ae13-6272e58f1be7",
+      "content_id": "b7cf50ed-1069-47a2-9d57-1241f6d40a15",
+      "claim_id": "C49",
+      "claim": "OMVs collected from the pulse-chase assay are enriched in OmpA compared to total membranes.",
+      "claim_type": "EXPLICIT",
+      "source": "When blotted for OmpA, we observed OmpA enrichment in the OMV samples relative to total membranes which served as our control. This is consistent with the fact that OMVs are exclusively OM material (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:40:40.318731Z"
+    },
+    {
+      "id": "bd7da565-f1e7-4f17-b0cf-33d4ce92d41f",
+      "content_id": "b7cf50ed-1069-47a2-9d57-1241f6d40a15",
+      "claim_id": "C50",
+      "claim": "OMVs collected from the pulse-chase assay contain no IM protein as evidenced by lack of NADH oxidase activity.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, when assessed for NADH oxidase activity, only total membranes were enzymatically active, confirming that OMVs contained no IM protein (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:40:40.318731Z"
+    },
+    {
+      "id": "f07dd1c6-f4c7-4aee-bc98-078d023b9d41",
+      "content_id": "b7cf50ed-1069-47a2-9d57-1241f6d40a15",
+      "claim_id": "C51",
+      "claim": "The UW \u0394mlaF strain had a significantly different transcriptomic profile compared to its isogenic parent.",
+      "claim_type": "EXPLICIT",
+      "source": "It was evident by principal components analysis (PCA) that the UW \u0394mlaF strain had a significantly different transcriptomic profile compared to its isogenic parent (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:40:40.318731Z"
+    },
+    {
+      "id": "9682244c-9e9b-4735-b5b2-8447f3e5a43e",
+      "content_id": "b7cf50ed-1069-47a2-9d57-1241f6d40a15",
+      "claim_id": "C52",
+      "claim": "The UGA \u0394mlaF mutant clustered much closer to its isogenic parent by PCA.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the UGA \u0394mlaF mutant clustered much closer to its isogenic parent, consistent with results in another strain of A. baumannii published previously (Powers and Trent, 2018a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data and a citation to published literature (Powers and Trent, 2018a).",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:40:40.318731Z"
+    },
+    {
+      "id": "0f828d8e-e5bc-4bf4-818f-bbceff806e97",
+      "content_id": "b7cf50ed-1069-47a2-9d57-1241f6d40a15",
+      "claim_id": "C53",
+      "claim": "The UGA \u0394mlaF and WT had 13 genes that were differentially expressed excluding mlaF.",
+      "claim_type": "EXPLICIT",
+      "source": "While the UGA \u0394mlaF and WT had 13 genes that were differentially expressed excluding mlaF (Supplementary file 1), the UW \u0394mlaF and WT differed by 103 genes (Supplementary file 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data presented in Supplementary file 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:40:40.318731Z"
+    },
+    {
+      "id": "83e6f472-ad99-40eb-a517-90ef2768b0d0",
+      "content_id": "b7cf50ed-1069-47a2-9d57-1241f6d40a15",
+      "claim_id": "C54",
+      "claim": "The UW \u0394mlaF and WT differed by 103 genes.",
+      "claim_type": "EXPLICIT",
+      "source": "While the UGA \u0394mlaF and WT had 13 genes that were differentially expressed excluding mlaF (Supplementary file 1), the UW \u0394mlaF and WT differed by 103 genes (Supplementary file 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data presented in Supplementary file 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:40:40.318731Z"
+    },
+    {
+      "id": "0babd183-50dc-49eb-af5f-e257670c2af9",
+      "content_id": "b7cf50ed-1069-47a2-9d57-1241f6d40a15",
+      "claim_id": "C55",
+      "claim": "None of the 103 differentially regulated genes in the UW \u0394mlaF were conserved in the UGA \u0394mlaF.",
+      "claim_type": "EXPLICIT",
+      "source": "When we looked at this array of 103 differentially regulated genes in the UGA \u0394mlaF and WT, it was readily apparent that none of these changes were conserved between \u0394mlaF mutants (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:40:40.318731Z"
+    },
+    {
+      "id": "eb339ed8-d900-40bd-914d-71e084ab6cf5",
+      "content_id": "b7cf50ed-1069-47a2-9d57-1241f6d40a15",
+      "claim_id": "C56",
+      "claim": "Genes involved in Csu pilus formation were significantly upregulated in the UW \u0394mlaF.",
+      "claim_type": "EXPLICIT",
+      "source": "The first cluster are genes involved in Csu pilus formation, which were significantly upregulated in the UW \u0394mlaF (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:40:40.318731Z"
+    },
+    {
+      "id": "fc95af11-ee0a-4313-82be-a2cf623f0a3b",
+      "content_id": "b7cf50ed-1069-47a2-9d57-1241f6d40a15",
+      "claim_id": "C57",
+      "claim": "The csu operon was downregulated in the UGA \u0394mlaF relative to WT.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, the csu operon was downregulated in the UGA \u0394mlaF relative to WT (Figure 4B, Supplementary file 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4B and Supplementary file 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:40:40.318731Z"
+    },
+    {
+      "id": "26369282-ae0d-4e2b-95ea-0bebc526e93b",
+      "content_id": "b7cf50ed-1069-47a2-9d57-1241f6d40a15",
+      "claim_id": "C58",
+      "claim": "Kamischke et al. reports an increase in biofilm formation in \u0394mla mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, Kamischke et al. reports an increase in biofilm formation in \u0394mla mutants in their study: this transcriptional data confirms that the UW \u0394mlaF provided to us is behaving similarly in our hands (Kamischke et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to published literature (Kamischke et al., 2019).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:40:40.318731Z"
+    },
+    {
+      "id": "12755681-6734-46a2-aaf6-4daee45919ac",
+      "content_id": "b7cf50ed-1069-47a2-9d57-1241f6d40a15",
+      "claim_id": "C59",
+      "claim": "A large array of 70S ribosomal proteins were differentially regulated between the \u0394mlaF mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, we found a large array of 70S ribosomal proteins were differentially regulated between the \u0394mlaF mutants (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:40:40.318731Z"
+    },
+    {
+      "id": "b2645008-928c-47c2-8e3a-3c47ab0689a5",
+      "content_id": "b7cf50ed-1069-47a2-9d57-1241f6d40a15",
+      "claim_id": "C60",
+      "claim": "Additional genes involved in ribosome stability, transcription, and translation were differentially regulated between the \u0394mlaF mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "Additional genes involved in ribosome stability, transcription, and translation were differentially regulated (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:40:40.318731Z"
+    },
+    {
+      "id": "3dbbfd1d-29e2-4f2d-9ee1-348ce10e3bca",
+      "content_id": "b7cf50ed-1069-47a2-9d57-1241f6d40a15",
+      "claim_id": "C61",
+      "claim": "One non-synonymous mutation in the coding region of the essential gene obgE was identified in the UW strains.",
+      "claim_type": "EXPLICIT",
+      "source": "From this comparison, we were able to identify one non-synonymous mutation in the coding region of the essential gene obgE.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from whole-genome sequencing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:40:40.318731Z"
+    },
+    {
+      "id": "1e96a396-b436-469f-89ff-de6aa32e9a1b",
+      "content_id": "b7cf50ed-1069-47a2-9d57-1241f6d40a15",
+      "claim_id": "C62",
+      "claim": "The obgE SNP in the UW WT and \u0394mlaF resulted in a single amino acid change from an asparagine (N) to an isoleucine (I) at position 258 (N258I).",
+      "claim_type": "EXPLICIT",
+      "source": "The obgE SNP in the UW WT and \u0394mlaF resulted in a single amino acid change from an asparagine (N) to an isoleucine (I) at position 258 (N258I).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from whole-genome sequencing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:40:40.318731Z"
+    },
+    {
+      "id": "445c3e3f-542c-43c0-834c-5aee9693c894",
+      "content_id": "b7cf50ed-1069-47a2-9d57-1241f6d40a15",
+      "claim_id": "C63",
+      "claim": "The N258 position in obgE is highly conserved in A. baumannii.",
+      "claim_type": "EXPLICIT",
+      "source": "Comparison of sequences of obgE from 14 published genomes affirmed that the N258 position is highly conserved in A. baumannii (Figure 6\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 6\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:40:40.318731Z"
+    },
+    {
+      "id": "53576398-3a2b-4754-8374-4b605629c13d",
+      "content_id": "b7cf50ed-1069-47a2-9d57-1241f6d40a15",
+      "claim_id": "C64",
+      "claim": "The nucleotide profile of the UW \u0394mlaF with obgE* was strikingly different from all other strains tested.",
+      "claim_type": "EXPLICIT",
+      "source": "What was immediately apparent was that the nucleotide profile of the UW \u0394mlaF with obgE* was strikingly different from all other strains tested (Figure 5 and Figure 5\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 5 and Figure 5\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:40:40.318731Z"
+    },
+    {
+      "id": "34e18014-48cc-4900-a4db-4597203339d9",
+      "content_id": "b7cf50ed-1069-47a2-9d57-1241f6d40a15",
+      "claim_id": "C65",
+      "claim": "The UW \u0394mlaF was almost completely depleted of pppGpp, with a \u221212% shift when compared to WT.",
+      "claim_type": "EXPLICIT",
+      "source": "The UW \u0394mlaF was almost completely depleted of pppGpp, with a \u221212% shift when compared to WT (Figure 5\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 5\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:40:40.318731Z"
+    },
+    {
+      "id": "8eb5e461-36e6-4a5c-a081-96882778d7c8",
+      "content_id": "b7cf50ed-1069-47a2-9d57-1241f6d40a15",
+      "claim_id": "C66",
+      "claim": "The UW \u0394mlaF had +3% and +9% shifts in ppGpp and GTP levels, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "Concurrently, there were +3% and +9% shifts in ppGpp and GTP levels, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:40:40.318731Z"
+    },
+    {
+      "id": "71fed183-ce8d-4a1b-ac78-22b1e336dc25",
+      "content_id": "b7cf50ed-1069-47a2-9d57-1241f6d40a15",
+      "claim_id": "C67",
+      "claim": "The UGA \u0394mlaF strain maintained consistent levels of GTP relative to WT, with a \u22123% decrease in ppGpp and a +3% increase in pppGpp.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the UGA \u0394mlaF strain maintained consistent levels of GTP relative to WT, with a \u22123% decrease in ppGpp and a +3% increase in pppGpp (Figure 5\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 5\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:40:40.318731Z"
+    },
+    {
+      "id": "4737442c-b2db-490b-b766-d07cf5ddbeb4",
+      "content_id": "b7cf50ed-1069-47a2-9d57-1241f6d40a15",
+      "claim_id": "C68",
+      "claim": "In every \u0394mlaC or \u0394mlaF generated in the UW WT background, the obgE* SNP repaired itself.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, sanger sequencing revealed that in every \u0394mlaC or \u0394mlaF we generated, the obgE* SNP repaired itself: a phenomenon we observed 15/15 times (Figure 1\u2014figure supplement 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1\u2014figure supplement 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:40:40.318731Z"
+    },
+    {
+      "id": "c5846637-b273-4b07-84ad-4622bf8b096d",
+      "content_id": "b7cf50ed-1069-47a2-9d57-1241f6d40a15",
+      "claim_id": "C69",
+      "claim": "The \u0394mlaC, obgE::kan, pMMB67EH-obgE* strains accumulated unique mutations with unknown implications.",
+      "claim_type": "EXPLICIT",
+      "source": "Unfortunately, the \u0394mlaC, obgE::kan, pMMB67EH-obgE* strains accumulated unique mutations with unknown implications that prevent legitimate phenotypic comparisons (Supplementary file 3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data presented in Supplementary file 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:40:40.318731Z"
+    },
+    {
+      "id": "2f4e0682-560b-400c-97ac-ee16b6bcb100",
+      "content_id": "b7cf50ed-1069-47a2-9d57-1241f6d40a15",
+      "claim_id": "C70",
+      "claim": "ObgE is implicated in various physiological processes rooted in the regulation and homeostasis of the stringent response alarmone (p)ppGpp.",
+      "claim_type": "EXPLICIT",
+      "source": "ObgE is implicated in various physiological processes rooted in the regulation and homeostasis of the stringent response alarmone (p)ppGpp (Persky et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to published literature (Persky et al., 2009).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:40:40.318731Z"
+    },
+    {
+      "id": "a4cfc0b2-76b4-477f-9d94-99498679f574",
+      "content_id": "b7cf50ed-1069-47a2-9d57-1241f6d40a15",
+      "claim_id": "C71",
+      "claim": "ppGpp inhibits de novo fatty acid biosynthesis and by proxy GPL biosynthesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Additional evidence shows ppGpp inhibits de novo fatty acid biosynthesis and by proxy GPL biosynthesis (Heath et al., 1994).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to published literature (Heath et al., 1994).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:40:40.318731Z"
+    },
+    {
+      "id": "0182efdd-3d80-4354-ae99-66ce3bd3ccc8",
+      "content_id": "b7cf50ed-1069-47a2-9d57-1241f6d40a15",
+      "claim_id": "C72",
+      "claim": "Mla-null mutants have compromised OM asymmetry.",
+      "claim_type": "EXPLICIT",
+      "source": "The first is that Mla-null mutants have compromised OM asymmetry (Malinverni and Silhavy, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to published literature (Malinverni and Silhavy, 2009).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:40:40.318731Z"
+    },
+    {
+      "id": "5fab7139-8464-4944-aee9-f75ff3d67610",
+      "content_id": "b7cf50ed-1069-47a2-9d57-1241f6d40a15",
+      "claim_id": "C73",
+      "claim": "Mla-null mutants exhibit increased OM vesiculation.",
+      "claim_type": "EXPLICIT",
+      "source": "The second is that Mla-null mutants exhibit increased OM vesiculation (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:40:40.318731Z"
+    },
+    {
+      "id": "e4cf7e73-3d3b-4d53-b466-6028cce8cae8",
+      "content_id": "b7cf50ed-1069-47a2-9d57-1241f6d40a15",
+      "claim_id": "C74",
+      "claim": "PldA-derived fatty acids stimulate de novo lipid A biosynthesis in E. coli.",
+      "claim_type": "EXPLICIT",
+      "source": "Lastly, there is strong genetic evidence in E. coli that PldA-derived fatty acids stimulate de novo lipid A biosynthesis (May and Silhavy, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to published literature (May and Silhavy, 2018).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:40:40.318731Z"
+    },
+    {
+      "id": "c7813c09-5551-4e16-a41b-22e59caac08e",
+      "content_id": "b7cf50ed-1069-47a2-9d57-1241f6d40a15",
+      "claim_id": "C75",
+      "claim": "Only the UW \u0394mlaF strain was hypersusceptible to serine hydroxamate treatment with a 50% reduction in growth.",
+      "claim_type": "EXPLICIT",
+      "source": "When we treated with serine hydroxamate, which induces stringent response, only the UW \u0394mlaF strain was hypersusceptible with a 50% reduction in growth (Figure 6A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 6A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:40:40.318731Z"
+    },
+    {
+      "id": "e8772ece-77d0-4233-9c0e-426eb4c4bd01",
+      "content_id": "b7cf50ed-1069-47a2-9d57-1241f6d40a15",
+      "claim_id": "C76",
+      "claim": "No other \u0394mla strain tested exhibited a phenotype to serine hydroxamate treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "No other \u0394mla strain tested exhibited a phenotype (Figure 6A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 6A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:40:40.318731Z"
+    },
+    {
+      "id": "aed55364-b6a0-4bf1-9e1c-76a795da5a89",
+      "content_id": "b7cf50ed-1069-47a2-9d57-1241f6d40a15",
+      "claim_id": "C77",
+      "claim": "Only the UW \u0394mlaF strain was hypersusceptible to cerulenin treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, when we treated with cerulenin, which inhibits fatty acid biosynthesis, only the UW \u0394mlaF strain was hypersusceptible (Figure 6B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:40:40.318731Z"
+    },
+    {
+      "id": "20a9eb94-cea4-4b5b-81d4-d910ab7a24db",
+      "content_id": "b7cf50ed-1069-47a2-9d57-1241f6d40a15",
+      "claim_id": "C78",
+      "claim": "\u0394mlaC deletions made in the UW WT (mlaC::kan MJP1 and MJP2) which had repaired the obgE* allele, looked identical to WT for both serine hydroxamate and cerulenin treatments.",
+      "claim_type": "EXPLICIT",
+      "source": "In both cases, \u0394mlaC deletions made in the UW WT (mlaC::kan MJP1 and MJP2) which had repaired the obgE* allele, looked identical to WT for both treatments (Figure 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:40:40.318731Z"
+    },
+    {
+      "id": "4f43dea9-e45f-47f7-a7bb-1c91ad075785",
+      "content_id": "b7cf50ed-1069-47a2-9d57-1241f6d40a15",
+      "claim_id": "C79",
+      "claim": "De novo GPL levels were significantly reduced upon induction of stringent response with serine hydroxamate across all strains.",
+      "claim_type": "EXPLICIT",
+      "source": "Across the board, de novo GPL levels were significantly reduced upon induction of stringent response with serine hydroxamate, confirming that elevated ppGpp levels indirectly inhibit GPL biosynthesis (Figure 6\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 6\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:40:40.318731Z"
+    },
+    {
+      "id": "a52b6fd4-3d20-4f2f-b7c3-a2cb05320a4d",
+      "content_id": "b7cf50ed-1069-47a2-9d57-1241f6d40a15",
+      "claim_id": "C80",
+      "claim": "A. baumannii mla mutants exhibit no defects in anterograde transport.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we show conclusively that A. baumannii mla mutants exhibit no defects in anterograde transport.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from the OMV pulse-chase assay.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:40:40.318731Z"
+    },
+    {
+      "id": "8022003c-b5d4-43f3-909e-a6e211cf7403",
+      "content_id": "b7cf50ed-1069-47a2-9d57-1241f6d40a15",
+      "claim_id": "C81",
+      "claim": "An allele of the GTPase obgE is synthetically sick in the absence of Mla.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, we identify an allele of the GTPase obgE that is synthetically sick in the absence of Mla; providing another link between cell envelope homeostasis and stringent response.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data showing genetic interactions and phenotypic effects.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:40:40.318731Z"
+    },
+    {
+      "id": "433955b9-1a90-47f6-a9c2-a17ed1c3a7c8",
+      "content_id": "b7cf50ed-1069-47a2-9d57-1241f6d40a15",
+      "claim_id": "C82",
+      "claim": "The UW \u0394mlaF strain decreased expression of fadE.",
+      "claim_type": "EXPLICIT",
+      "source": "We further found that the UW \u0394mlaF mutant decreased expression of fadE, the priming step in \u03b2-oxidation (Campbell and Cronan, 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from RNA-seq and a citation to published literature (Campbell and Cronan, 2002).",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:40:40.318731Z"
+    },
+    {
+      "id": "3a1f3f36-a9f0-465c-b0cb-faffa07f24bc",
+      "content_id": "b7cf50ed-1069-47a2-9d57-1241f6d40a15",
+      "claim_id": "C83",
+      "claim": "ObgE and SpoT co-purify in a potentially physiologically relevant manner.",
+      "claim_type": "EXPLICIT",
+      "source": "There is additional evidence suggesting that ObgE and SpoT co-purify in a potentially physiologically relevant manner (Wout et al., 2004) and that ObgE plays a role in stringent response nucleotide homeostasis (Persky et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published literature (Wout et al., 2004; Persky et al., 2009).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:40:40.318731Z"
+    },
+    {
+      "id": "ed2d3f59-0c7f-41c2-a3e2-c83f159c5aa1",
+      "content_id": "b7cf50ed-1069-47a2-9d57-1241f6d40a15",
+      "claim_id": "C84",
+      "claim": "ObgE plays a role in stringent response nucleotide homeostasis.",
+      "claim_type": "EXPLICIT",
+      "source": "There is additional evidence suggesting that ObgE and SpoT co-purify in a potentially physiologically relevant manner (Wout et al., 2004) and that ObgE plays a role in stringent response nucleotide homeostasis (Persky et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to published literature (Persky et al., 2009).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:40:40.318731Z"
+    },
+    {
+      "id": "1792348b-805c-4bb3-91c9-bfc435ee2397",
+      "content_id": "b7cf50ed-1069-47a2-9d57-1241f6d40a15",
+      "claim_id": "C85",
+      "claim": "The allele of obgE in the UW strain plays an aberrant role in the stringent response, which is further exacerbated in the absence of a functional Mla system.",
+      "claim_type": "EXPLICIT",
+      "source": "As such, we hypothesized that the allele of obgE in the UW strain, termed here as obgE*, plays an aberrant role in the stringent response, which is further exacerbated in the absence of a functional Mla system.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from the observed phenotypes and nucleotide profiles.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:40:40.318731Z"
+    },
+    {
+      "id": "9766456b-f661-4b09-b85b-82d66ccdae08",
+      "content_id": "b7cf50ed-1069-47a2-9d57-1241f6d40a15",
+      "claim_id": "C86",
+      "claim": "The Mla pathway mediates retrograde transport of mislocalized GPLs in Gram-negative bacteria.",
+      "claim_type": "EXPLICIT",
+      "source": "We are confident that these data, in conjunction with the wealth of previously published data on Mla, strongly support the prevailing model that Mla mediates retrograde transport of mislocalized GPLs in Gram-negative bacteria.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from the experimental data presented and citations to published literature.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:40:40.318731Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "745d35b0-28c0-4b72-9789-6b9602cfcab9",
+      "content_id": "b7cf50ed-1069-47a2-9d57-1241f6d40a15",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The outer membrane of Gram-negative bacteria is asymmetric with GPLs in the inner leaflet and LPS/LOS in the outer leaflet. This asymmetry, driven by lipid A structure and charge interactions, creates a selective permeability barrier that excludes both hydrophilic and hydrophobic compounds.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C6 are all supported by citations to established literature describing the structure and function of the Gram-negative outer membrane. These are well-established facts in the field and provide necessary background context.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:40:40.318731Z"
+    },
+    {
+      "id": "dbe4cb6d-7fc6-4aaa-add8-e764875a2096",
+      "content_id": "b7cf50ed-1069-47a2-9d57-1241f6d40a15",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The outer membrane barrier contributes to antibiotic resistance in Gram-negative bacteria, and several dedicated transport systems (Lpt, Lol, Bam) maintain outer membrane components.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7-C10 are supported by citations to published literature. These provide established background on OM maintenance systems and antibiotic resistance mechanisms relevant to understanding the Mla pathway.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:40:40.318731Z"
+    },
+    {
+      "id": "35941f0a-c983-496c-975f-3f938ca89125",
+      "content_id": "b7cf50ed-1069-47a2-9d57-1241f6d40a15",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The Mla pathway was discovered through genetic screens showing that mla mutants are sensitive to SDS/EDTA, indicating perturbed OM asymmetry. Suppressor analysis linked Mla function to PldA, an outer membrane phospholipase that degrades mislocalized GPLs in the outer leaflet.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11-C18 are supported by citations to published literature describing the discovery and initial characterization of the Mla pathway. These provide essential background for understanding the controversy addressed in this manuscript.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:40:40.318731Z"
+    },
+    {
+      "id": "5854c76b-e7de-4f2c-9257-d49d7c7296e8",
+      "content_id": "b7cf50ed-1069-47a2-9d57-1241f6d40a15",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The Mla system comprises six proteins (MlaA-F) spanning the cell envelope, and structural/genetic data support a retrograde transport function.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C19-C24 are supported by multiple citations to published structural and genetic studies. This provides necessary background on Mla system composition and the prevailing model for its function.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:40:40.318731Z"
+    },
+    {
+      "id": "32720afe-384b-441e-acbc-32be5974d3b3",
+      "content_id": "b7cf50ed-1069-47a2-9d57-1241f6d40a15",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "A. baumannii can survive without LOS, resulting in a symmetric GPL bilayer in the OM. Under these conditions, LOS-deficient populations rapidly inactivate Mla pathway genes, supporting a retrograde transport model.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25-C27 are supported by citations to the authors' previous work and independent corroboration. This provides key background on prior findings that contradict the Kamischke et al. study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:40:40.318731Z"
+    },
+    {
+      "id": "0c67201e-ce92-450c-a0ab-22c2c6444f09",
+      "content_id": "b7cf50ed-1069-47a2-9d57-1241f6d40a15",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The UW \u0394mlaF mutant exhibits a significant growth defect compared to its isogenic parent, which is unprecedented as no published mla mutants across multiple genera show growth defects.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28-C31 are supported by experimental data (Figure 1A-B, Figure 1\u2014figure supplement 1) and citations showing no other mla mutants have growth defects. The growth defect is well-documented with CFU counts confirming actual growth rather than artifacts.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:40:40.318731Z"
+    },
+    {
+      "id": "7d795a30-5523-4dea-a7bb-8664b117ede4",
+      "content_id": "b7cf50ed-1069-47a2-9d57-1241f6d40a15",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Both UGA and UW \u0394mlaF mutants show increased OMV production during exponential phase (~2-4X), but the UW \u0394mlaF uniquely exhibits a 23X increase in stationary phase, indicating a unique lysis phenotype.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-C35 are supported by experimental data (Figure 1C, Figure 1\u2014figure supplement 2). The exponential phase data are consistent with published findings, while the stationary phase phenotype is unique and well-quantified.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:40:40.318731Z"
+    },
+    {
+      "id": "7d90e706-1b79-4c67-abe5-e8383ad2f4ca",
+      "content_id": "b7cf50ed-1069-47a2-9d57-1241f6d40a15",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The UW \u0394mlaF strain shows exacerbated antibiotic sensitivity compared to UGA \u0394mlaF, with particularly striking differences for vancomycin (2.3-fold vs no change) and rifampicin (14-fold vs 1.8-fold).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36-C41 are supported by MIC data presented in Figure 1D. The differential sensitivity patterns between strains are clearly quantified and suggest compromised OM integrity specific to the UW strain.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:40:40.318731Z"
+    },
+    {
+      "id": "7deb2bd0-c664-48c4-b25b-b9125f21e1c0",
+      "content_id": "b7cf50ed-1069-47a2-9d57-1241f6d40a15",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Kamischke et al. reported a ~50% decrease in OM GPL content in \u0394mla mutants, but attempts to reproduce their membrane separation methodology were unsuccessful, and an independent study confirmed the gradient was insufficient.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C44 are supported by citations and experimental data (Figure 2\u2014figure supplement 1). The inability to reproduce membrane separations is documented with marker analysis across gradients, and independent validation (Cian et al., 2020) strengthens this finding.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:40:40.318731Z"
+    },
+    {
+      "id": "a398ab88-34c8-4fd4-b4af-9bbd0067e50f",
+      "content_id": "b7cf50ed-1069-47a2-9d57-1241f6d40a15",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Using an OMV pulse-chase assay as a proxy for anterograde transport, all \u0394mla mutants tested (UGA \u0394mlaF, UW \u0394mlaF, and UW mlaC::kan strains) showed increased 32P-labeled lipids in OMVs, indicating no defect in anterograde transport.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C48 are supported by experimental data (Figure 2B-C). The assay design is sound, using OMV production as a readout for lipids that underwent anterograde transport. Results are consistent across multiple strains and contradicts the Kamischke et al. finding.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:40:40.318731Z"
+    },
+    {
+      "id": "8ae8c3d3-e4e1-4b59-a4a6-7ce033b2fd1c",
+      "content_id": "b7cf50ed-1069-47a2-9d57-1241f6d40a15",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "OMVs collected from the pulse-chase assay are validated as pure OM material, enriched in OmpA and lacking NADH oxidase activity (IM marker).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49-C50 are supported by experimental data (Figure 3A-B). The validation controls demonstrate that the OMV preparations are not contaminated with IM material, strengthening confidence in the pulse-chase assay results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:40:40.318731Z"
+    },
+    {
+      "id": "82958116-4804-4a33-973b-74bb73c3aa80",
+      "content_id": "b7cf50ed-1069-47a2-9d57-1241f6d40a15",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "RNA-seq analysis reveals the UW \u0394mlaF has a dramatically different transcriptomic profile from its parent (103 differentially expressed genes) compared to UGA \u0394mlaF (13 genes), with no overlap in differentially regulated genes between the two \u0394mlaF strains.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C55 are supported by RNA-seq data (Figure 4A-B, Supplementary files 1-2). The PCA and differential expression analysis clearly demonstrate strain-specific transcriptional responses, suggesting the UW \u0394mlaF phenotype is not solely due to loss of Mla function.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:40:40.318731Z"
+    },
+    {
+      "id": "bb957769-d129-486d-ab69-0f8db98c8276",
+      "content_id": "b7cf50ed-1069-47a2-9d57-1241f6d40a15",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The UW \u0394mlaF shows upregulation of Csu pilus genes and differential regulation of ribosomal proteins compared to UGA \u0394mlaF. The Csu upregulation is consistent with increased biofilm formation reported by Kamischke et al.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56-C60 are supported by RNA-seq data (Figure 4C) and citation to Kamischke et al. The transcriptional changes provide mechanistic insight into the unique phenotypes of the UW strain and validate that the provided strain behaves as reported.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:40:40.318731Z"
+    },
+    {
+      "id": "3d3a2df2-44ea-4e90-bfcb-17dd997c3464",
+      "content_id": "b7cf50ed-1069-47a2-9d57-1241f6d40a15",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Whole-genome sequencing identified a non-synonymous mutation in obgE (N258I) unique to the UW strains. This position is highly conserved across 14 A. baumannii genomes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C61-C63 are supported by whole-genome sequencing data and sequence alignment (Figure 6\u2014figure supplement 1). The identification of this mutation and demonstration of its conservation provide a genetic basis for the observed phenotypic differences.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:40:40.318731Z"
+    },
+    {
+      "id": "8197112e-43fd-45ee-a6d1-8a385a667e9d",
+      "content_id": "b7cf50ed-1069-47a2-9d57-1241f6d40a15",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The UW \u0394mlaF with obgE* shows a strikingly different nucleotide profile with near-complete depletion of pppGpp (-12%) and increases in ppGpp (+3%) and GTP (+9%), while UGA \u0394mlaF maintains normal nucleotide levels.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C64-C67 are supported by 32P-labeled nucleotide analysis (Figure 5, Figure 5\u2014figure supplement 1). The quantitative changes in stringent response alarmones are substantial and reproducible, linking obgE* to altered (p)ppGpp metabolism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:40:40.318731Z"
+    },
+    {
+      "id": "ffa16c84-563a-4814-88dd-d411b482d797",
+      "content_id": "b7cf50ed-1069-47a2-9d57-1241f6d40a15",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Attempts to generate \u0394mla mutants in the UW WT background resulted in spontaneous repair of the obgE* allele in 15/15 cases. Alternative approaches using merodiploids resulted in accumulation of suppressor mutations in \u0394mlaC strains.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C68-C69 are supported by Sanger sequencing data (Figure 1\u2014figure supplement 3B) and whole-genome sequencing (Supplementary file 3). The consistent reversion provides strong genetic evidence for synthetic sickness between obgE* and \u0394mla.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:40:40.318731Z"
+    },
+    {
+      "id": "732c62a7-75e5-4364-8b20-8aabad3f5ba9",
+      "content_id": "b7cf50ed-1069-47a2-9d57-1241f6d40a15",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "ObgE is implicated in stringent response regulation and (p)ppGpp homeostasis, and ppGpp inhibits fatty acid and GPL biosynthesis. ObgE and SpoT co-purify, suggesting functional interaction.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C70-C71, C83-C84 are supported by citations to published literature. This provides the mechanistic framework for understanding how obgE* could affect lipid metabolism and interact with Mla function.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:40:40.318731Z"
+    },
+    {
+      "id": "00f8e0d5-dd19-446d-bf58-e7d54bae91ef",
+      "content_id": "b7cf50ed-1069-47a2-9d57-1241f6d40a15",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Mla-null mutants have compromised OM asymmetry, exhibit increased OM vesiculation, and in E. coli, PldA-derived fatty acids stimulate lipid A biosynthesis, creating increased demand for de novo lipid synthesis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C72-C74 are supported by citations and experimental data (Figure 1C). These establish the biological context for why \u0394mla mutants would require increased lipid biosynthesis, setting up the model for synthetic interaction with obgE*.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:40:40.318731Z"
+    },
+    {
+      "id": "1833a903-fce1-4d5e-b7c4-acd01aaa7117",
+      "content_id": "b7cf50ed-1069-47a2-9d57-1241f6d40a15",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "Only the UW \u0394mlaF strain (with obgE*) is hypersusceptible to serine hydroxamate (stringent response inducer) and cerulenin (fatty acid biosynthesis inhibitor), while other \u0394mla strains and UW \u0394mlaC strains that repaired obgE* show no sensitivity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C75-C78 are supported by experimental data (Figure 6A-B). The chemical biology approach provides functional validation of the synthetic interaction between obgE* and \u0394mla, with appropriate controls demonstrating specificity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:40:40.318731Z"
+    },
+    {
+      "id": "0a2536c0-bace-406f-a2a1-7c85f017d092",
+      "content_id": "b7cf50ed-1069-47a2-9d57-1241f6d40a15",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "Serine hydroxamate treatment significantly reduces de novo GPL levels across all strains, confirming that elevated ppGpp inhibits GPL biosynthesis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C79 is supported by experimental data (Figure 6\u2014figure supplement 3). This validates a key assumption of the model linking stringent response to lipid metabolism.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:40:40.318731Z"
+    },
+    {
+      "id": "928d7243-e46c-4c6b-b9c9-916a0d5af2ba",
+      "content_id": "b7cf50ed-1069-47a2-9d57-1241f6d40a15",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "A. baumannii mla mutants exhibit no defects in anterograde transport, and the data support the model that Mla mediates retrograde transport of mislocalized GPLs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C80 and C86 represent the main conclusions of the manuscript. They are well-supported by the OMV pulse-chase data (C46-C48), the inability to reproduce Kamischke et al.'s membrane separations (C43-C44), and consistency with prior literature. The conclusion is strengthened by demonstrating that the UW strain phenotypes are due to obgE* rather than loss of Mla function.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:40:40.318731Z"
+    },
+    {
+      "id": "bb0f2273-3b62-4f86-9171-a0175777024e",
+      "content_id": "b7cf50ed-1069-47a2-9d57-1241f6d40a15",
+      "result_id": "R22",
+      "result_category": "llm",
+      "result": "An allele of obgE (obgE*) is synthetically sick in the absence of Mla, linking cell envelope homeostasis to stringent response. The obgE* allele plays an aberrant role in stringent response that is exacerbated without functional Mla.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C81 and C85 are supported by multiple lines of evidence: the growth defect specific to UW \u0394mlaF (C28), spontaneous reversion of obgE* in \u0394mla backgrounds (C68), altered nucleotide profiles (C64-C67), and hypersusceptibility to stringent response induction and fatty acid biosynthesis inhibition (C75-C78). The model is internally consistent and well-supported.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:40:40.318731Z"
+    },
+    {
+      "id": "a8900ba4-7b04-45e2-9bdc-b7c59ba6fade",
+      "content_id": "b7cf50ed-1069-47a2-9d57-1241f6d40a15",
+      "result_id": "R23",
+      "result_category": "llm",
+      "result": "The UW \u0394mlaF strain shows decreased expression of fadE, the first step in \u03b2-oxidation, potentially redirecting acyl-CoA toward biosynthesis rather than degradation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C82 is supported by RNA-seq data and citation. This provides additional mechanistic insight into how the UW \u0394mlaF attempts to compensate for lipid loss, though it is a minor supporting detail.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:40:40.318731Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "b631f952-3e85-465f-ad2f-8306e2c8a1e1",
+      "result_id": "745d35b0-28c0-4b72-9789-6b9602cfcab9"
+    },
+    {
+      "claim_id": "05b0f9f0-c7fd-48ab-b5cf-f4b5587fcd76",
+      "result_id": "745d35b0-28c0-4b72-9789-6b9602cfcab9"
+    },
+    {
+      "claim_id": "f4a6d357-fae1-4007-88e3-212cf61b43f0",
+      "result_id": "745d35b0-28c0-4b72-9789-6b9602cfcab9"
+    },
+    {
+      "claim_id": "05654896-f417-4c58-8b51-de360a17c57f",
+      "result_id": "745d35b0-28c0-4b72-9789-6b9602cfcab9"
+    },
+    {
+      "claim_id": "760bdef6-24c6-45d1-8822-410d0f66c0f7",
+      "result_id": "745d35b0-28c0-4b72-9789-6b9602cfcab9"
+    },
+    {
+      "claim_id": "cd018059-c932-4f85-9de4-11ba40f6ea03",
+      "result_id": "745d35b0-28c0-4b72-9789-6b9602cfcab9"
+    },
+    {
+      "claim_id": "605685e6-9ef1-4829-8d5a-d0159d4f8d17",
+      "result_id": "dbe4cb6d-7fc6-4aaa-add8-e764875a2096"
+    },
+    {
+      "claim_id": "c9305bad-5f27-4572-9158-6e03dc598019",
+      "result_id": "dbe4cb6d-7fc6-4aaa-add8-e764875a2096"
+    },
+    {
+      "claim_id": "cf1414c7-dad1-484e-a873-92850add606a",
+      "result_id": "dbe4cb6d-7fc6-4aaa-add8-e764875a2096"
+    },
+    {
+      "claim_id": "6afa92b7-4e4d-4261-8211-edd405f54cbb",
+      "result_id": "dbe4cb6d-7fc6-4aaa-add8-e764875a2096"
+    },
+    {
+      "claim_id": "34da44cc-0af9-45d7-9a11-01162717c739",
+      "result_id": "35941f0a-c983-496c-975f-3f938ca89125"
+    },
+    {
+      "claim_id": "22505dcb-cc4f-4f64-8483-249aa33e01c0",
+      "result_id": "35941f0a-c983-496c-975f-3f938ca89125"
+    },
+    {
+      "claim_id": "796b24c2-3c94-4157-8cfa-4c82d43b59e9",
+      "result_id": "35941f0a-c983-496c-975f-3f938ca89125"
+    },
+    {
+      "claim_id": "72971bba-b9e6-4428-9430-f32834a13401",
+      "result_id": "35941f0a-c983-496c-975f-3f938ca89125"
+    },
+    {
+      "claim_id": "2d21ca47-1fe8-493d-8add-57809764eb8d",
+      "result_id": "35941f0a-c983-496c-975f-3f938ca89125"
+    },
+    {
+      "claim_id": "64b7a89f-5df3-43f9-bdf2-61ad15f7e461",
+      "result_id": "35941f0a-c983-496c-975f-3f938ca89125"
+    },
+    {
+      "claim_id": "c18751e5-c1b2-49ab-b477-1fdfd0abd62d",
+      "result_id": "35941f0a-c983-496c-975f-3f938ca89125"
+    },
+    {
+      "claim_id": "49eb9a7c-4684-4a08-8690-6891cbb83953",
+      "result_id": "35941f0a-c983-496c-975f-3f938ca89125"
+    },
+    {
+      "claim_id": "b53b8684-5821-4dc0-9bdd-239cf2ccabf7",
+      "result_id": "5854c76b-e7de-4f2c-9257-d49d7c7296e8"
+    },
+    {
+      "claim_id": "e5037021-02d8-438f-a94c-5af153f5bfdd",
+      "result_id": "5854c76b-e7de-4f2c-9257-d49d7c7296e8"
+    },
+    {
+      "claim_id": "aee3b1d6-820b-4483-8570-8069c19b74fe",
+      "result_id": "5854c76b-e7de-4f2c-9257-d49d7c7296e8"
+    },
+    {
+      "claim_id": "11e16abd-de1b-44ce-aa26-8864c2ba0b3e",
+      "result_id": "5854c76b-e7de-4f2c-9257-d49d7c7296e8"
+    },
+    {
+      "claim_id": "5fcfbf6f-7e2b-4a58-90d6-3f6d34f8c756",
+      "result_id": "5854c76b-e7de-4f2c-9257-d49d7c7296e8"
+    },
+    {
+      "claim_id": "91828798-0b77-4d32-9cc3-f02e6f01e344",
+      "result_id": "5854c76b-e7de-4f2c-9257-d49d7c7296e8"
+    },
+    {
+      "claim_id": "e85c56c3-4d28-4c44-a98c-c7b5257ba3be",
+      "result_id": "32720afe-384b-441e-acbc-32be5974d3b3"
+    },
+    {
+      "claim_id": "8b65e6c3-7627-4c2d-a027-05537b0346ec",
+      "result_id": "32720afe-384b-441e-acbc-32be5974d3b3"
+    },
+    {
+      "claim_id": "9175f9a7-cada-47e8-a03a-849bba52a07c",
+      "result_id": "32720afe-384b-441e-acbc-32be5974d3b3"
+    },
+    {
+      "claim_id": "c5970884-f727-4eda-8c2f-faeb91163420",
+      "result_id": "0c67201e-ce92-450c-a0ab-22c2c6444f09"
+    },
+    {
+      "claim_id": "4052f058-0556-4697-a76d-d37314b0e8a7",
+      "result_id": "0c67201e-ce92-450c-a0ab-22c2c6444f09"
+    },
+    {
+      "claim_id": "70b65d3b-41ab-44da-9845-e57c28ed18da",
+      "result_id": "0c67201e-ce92-450c-a0ab-22c2c6444f09"
+    },
+    {
+      "claim_id": "a63208a5-29d0-4db1-9be2-eb7b39921a44",
+      "result_id": "0c67201e-ce92-450c-a0ab-22c2c6444f09"
+    },
+    {
+      "claim_id": "814a42e3-53ba-4d1f-91d1-cd67f4ed1620",
+      "result_id": "7d795a30-5523-4dea-a7bb-8664b117ede4"
+    },
+    {
+      "claim_id": "0611c109-7442-4cb9-8aa4-3faba0f7d05e",
+      "result_id": "7d795a30-5523-4dea-a7bb-8664b117ede4"
+    },
+    {
+      "claim_id": "c55d5c33-0bb0-4234-a179-70674c59e755",
+      "result_id": "7d795a30-5523-4dea-a7bb-8664b117ede4"
+    },
+    {
+      "claim_id": "20f8764e-a22e-4905-a507-da956ff00638",
+      "result_id": "7d90e706-1b79-4c67-abe5-e8383ad2f4ca"
+    },
+    {
+      "claim_id": "401c9e73-2989-4a47-9083-8ac202f4269d",
+      "result_id": "7d90e706-1b79-4c67-abe5-e8383ad2f4ca"
+    },
+    {
+      "claim_id": "edc5d72f-c8fa-41ae-888c-7b71aeda2136",
+      "result_id": "7d90e706-1b79-4c67-abe5-e8383ad2f4ca"
+    },
+    {
+      "claim_id": "bb73878c-5fb0-4487-8a58-8edb2ae26400",
+      "result_id": "7d90e706-1b79-4c67-abe5-e8383ad2f4ca"
+    },
+    {
+      "claim_id": "cec84e86-6e20-4029-8b32-73a10efa0a59",
+      "result_id": "7d90e706-1b79-4c67-abe5-e8383ad2f4ca"
+    },
+    {
+      "claim_id": "2bb275ee-37d1-44aa-a21f-99407f663a42",
+      "result_id": "7d90e706-1b79-4c67-abe5-e8383ad2f4ca"
+    },
+    {
+      "claim_id": "775be3db-5a57-4b5d-93e1-d5b44e9a62bf",
+      "result_id": "7deb2bd0-c664-48c4-b25b-b9125f21e1c0"
+    },
+    {
+      "claim_id": "b8f6dee2-ba07-4a90-9756-e359c31c9729",
+      "result_id": "7deb2bd0-c664-48c4-b25b-b9125f21e1c0"
+    },
+    {
+      "claim_id": "c919a6a2-c93e-4b96-aa39-c099becba778",
+      "result_id": "7deb2bd0-c664-48c4-b25b-b9125f21e1c0"
+    },
+    {
+      "claim_id": "6a97cd21-c690-4d8a-b126-b214850320b7",
+      "result_id": "a398ab88-34c8-4fd4-b4af-9bbd0067e50f"
+    },
+    {
+      "claim_id": "24d18e2a-7fff-4893-9e35-1e5333121612",
+      "result_id": "a398ab88-34c8-4fd4-b4af-9bbd0067e50f"
+    },
+    {
+      "claim_id": "6a76c904-5918-497d-9753-d849cc645389",
+      "result_id": "a398ab88-34c8-4fd4-b4af-9bbd0067e50f"
+    },
+    {
+      "claim_id": "ffbf0f47-d316-4267-a908-5300b6c3deb1",
+      "result_id": "a398ab88-34c8-4fd4-b4af-9bbd0067e50f"
+    },
+    {
+      "claim_id": "b75e88c7-0084-4c93-ae13-6272e58f1be7",
+      "result_id": "8ae8c3d3-e4e1-4b59-a4a6-7ce033b2fd1c"
+    },
+    {
+      "claim_id": "bd7da565-f1e7-4f17-b0cf-33d4ce92d41f",
+      "result_id": "8ae8c3d3-e4e1-4b59-a4a6-7ce033b2fd1c"
+    },
+    {
+      "claim_id": "f07dd1c6-f4c7-4aee-bc98-078d023b9d41",
+      "result_id": "82958116-4804-4a33-973b-74bb73c3aa80"
+    },
+    {
+      "claim_id": "9682244c-9e9b-4735-b5b2-8447f3e5a43e",
+      "result_id": "82958116-4804-4a33-973b-74bb73c3aa80"
+    },
+    {
+      "claim_id": "0f828d8e-e5bc-4bf4-818f-bbceff806e97",
+      "result_id": "82958116-4804-4a33-973b-74bb73c3aa80"
+    },
+    {
+      "claim_id": "83e6f472-ad99-40eb-a517-90ef2768b0d0",
+      "result_id": "82958116-4804-4a33-973b-74bb73c3aa80"
+    },
+    {
+      "claim_id": "0babd183-50dc-49eb-af5f-e257670c2af9",
+      "result_id": "82958116-4804-4a33-973b-74bb73c3aa80"
+    },
+    {
+      "claim_id": "eb339ed8-d900-40bd-914d-71e084ab6cf5",
+      "result_id": "bb957769-d129-486d-ab69-0f8db98c8276"
+    },
+    {
+      "claim_id": "fc95af11-ee0a-4313-82be-a2cf623f0a3b",
+      "result_id": "bb957769-d129-486d-ab69-0f8db98c8276"
+    },
+    {
+      "claim_id": "26369282-ae0d-4e2b-95ea-0bebc526e93b",
+      "result_id": "bb957769-d129-486d-ab69-0f8db98c8276"
+    },
+    {
+      "claim_id": "12755681-6734-46a2-aaf6-4daee45919ac",
+      "result_id": "bb957769-d129-486d-ab69-0f8db98c8276"
+    },
+    {
+      "claim_id": "b2645008-928c-47c2-8e3a-3c47ab0689a5",
+      "result_id": "bb957769-d129-486d-ab69-0f8db98c8276"
+    },
+    {
+      "claim_id": "3dbbfd1d-29e2-4f2d-9ee1-348ce10e3bca",
+      "result_id": "3d3a2df2-44ea-4e90-bfcb-17dd997c3464"
+    },
+    {
+      "claim_id": "1e96a396-b436-469f-89ff-de6aa32e9a1b",
+      "result_id": "3d3a2df2-44ea-4e90-bfcb-17dd997c3464"
+    },
+    {
+      "claim_id": "445c3e3f-542c-43c0-834c-5aee9693c894",
+      "result_id": "3d3a2df2-44ea-4e90-bfcb-17dd997c3464"
+    },
+    {
+      "claim_id": "53576398-3a2b-4754-8374-4b605629c13d",
+      "result_id": "8197112e-43fd-45ee-a6d1-8a385a667e9d"
+    },
+    {
+      "claim_id": "34e18014-48cc-4900-a4db-4597203339d9",
+      "result_id": "8197112e-43fd-45ee-a6d1-8a385a667e9d"
+    },
+    {
+      "claim_id": "8eb5e461-36e6-4a5c-a081-96882778d7c8",
+      "result_id": "8197112e-43fd-45ee-a6d1-8a385a667e9d"
+    },
+    {
+      "claim_id": "71fed183-ce8d-4a1b-ac78-22b1e336dc25",
+      "result_id": "8197112e-43fd-45ee-a6d1-8a385a667e9d"
+    },
+    {
+      "claim_id": "4737442c-b2db-490b-b766-d07cf5ddbeb4",
+      "result_id": "ffa16c84-563a-4814-88dd-d411b482d797"
+    },
+    {
+      "claim_id": "c5846637-b273-4b07-84ad-4622bf8b096d",
+      "result_id": "ffa16c84-563a-4814-88dd-d411b482d797"
+    },
+    {
+      "claim_id": "2f4e0682-560b-400c-97ac-ee16b6bcb100",
+      "result_id": "732c62a7-75e5-4364-8b20-8aabad3f5ba9"
+    },
+    {
+      "claim_id": "a4cfc0b2-76b4-477f-9d94-99498679f574",
+      "result_id": "732c62a7-75e5-4364-8b20-8aabad3f5ba9"
+    },
+    {
+      "claim_id": "3a1f3f36-a9f0-465c-b0cb-faffa07f24bc",
+      "result_id": "732c62a7-75e5-4364-8b20-8aabad3f5ba9"
+    },
+    {
+      "claim_id": "ed2d3f59-0c7f-41c2-a3e2-c83f159c5aa1",
+      "result_id": "732c62a7-75e5-4364-8b20-8aabad3f5ba9"
+    },
+    {
+      "claim_id": "0182efdd-3d80-4354-ae99-66ce3bd3ccc8",
+      "result_id": "00f8e0d5-dd19-446d-bf58-e7d54bae91ef"
+    },
+    {
+      "claim_id": "5fab7139-8464-4944-aee9-f75ff3d67610",
+      "result_id": "00f8e0d5-dd19-446d-bf58-e7d54bae91ef"
+    },
+    {
+      "claim_id": "e4cf7e73-3d3b-4d53-b466-6028cce8cae8",
+      "result_id": "00f8e0d5-dd19-446d-bf58-e7d54bae91ef"
+    },
+    {
+      "claim_id": "c7813c09-5551-4e16-a41b-22e59caac08e",
+      "result_id": "1833a903-fce1-4d5e-b7c4-acd01aaa7117"
+    },
+    {
+      "claim_id": "e8772ece-77d0-4233-9c0e-426eb4c4bd01",
+      "result_id": "1833a903-fce1-4d5e-b7c4-acd01aaa7117"
+    },
+    {
+      "claim_id": "aed55364-b6a0-4bf1-9e1c-76a795da5a89",
+      "result_id": "1833a903-fce1-4d5e-b7c4-acd01aaa7117"
+    },
+    {
+      "claim_id": "20a9eb94-cea4-4b5b-81d4-d910ab7a24db",
+      "result_id": "1833a903-fce1-4d5e-b7c4-acd01aaa7117"
+    },
+    {
+      "claim_id": "4f43dea9-e45f-47f7-a7bb-1c91ad075785",
+      "result_id": "0a2536c0-bace-406f-a2a1-7c85f017d092"
+    },
+    {
+      "claim_id": "a52b6fd4-3d20-4f2f-b7c3-a2cb05320a4d",
+      "result_id": "928d7243-e46c-4c6b-b9c9-916a0d5af2ba"
+    },
+    {
+      "claim_id": "9766456b-f661-4b09-b85b-82d66ccdae08",
+      "result_id": "928d7243-e46c-4c6b-b9c9-916a0d5af2ba"
+    },
+    {
+      "claim_id": "8022003c-b5d4-43f3-909e-a6e211cf7403",
+      "result_id": "bb0f2273-3b62-4f86-9171-a0175777024e"
+    },
+    {
+      "claim_id": "1792348b-805c-4bb3-91c9-bfc435ee2397",
+      "result_id": "bb0f2273-3b62-4f86-9171-a0175777024e"
+    },
+    {
+      "claim_id": "433955b9-1a90-47f6-a9c2-a17ed1c3a7c8",
+      "result_id": "a8900ba4-7b04-45e2-9bdc-b7c59ba6fade"
+    }
+  ],
+  "comparisons": []
+}

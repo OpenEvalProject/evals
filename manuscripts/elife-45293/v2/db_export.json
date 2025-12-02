@@ -1,0 +1,1452 @@
+{
+  "submission": {
+    "id": "94161787-4bcf-493e-a18d-f919645e5ce5",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T10:55:00.734064Z",
+    "updated_at": "2025-12-02T10:55:00.734064Z"
+  },
+  "content": [
+    {
+      "id": "5bfc7874-f544-46fd-943d-db00ec4e0783",
+      "submission_id": "94161787-4bcf-493e-a18d-f919645e5ce5",
+      "content_type": "manuscript",
+      "content_text": "# Front-end Weber-Fechner gain control enhances the fidelity of combinatorial odor coding\n\n## Authors\n\n- Nirag Kadakia<sup>1</sup> ([ORCID: 0000-0001-9978-6450](https://orcid.org/0000-0001-9978-6450))\n- Thierry Emonet<sup>1</sup> ([ORCID: 0000-0002-6746-6564](https://orcid.org/0000-0002-6746-6564)) \u2020\n\n### Affiliations\n\n1. Department of Molecular, Cellular and Developmental Biology Yale University New Haven United States\n2. Department of Physics Yale University New Haven United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nWe showed previously (Gorur-Shandilya et al., 2017) that Drosophila olfactory receptor neurons (ORNs) expressing the co-receptor Orco scale their gain inversely with mean odor intensity according to Weber-Fechner\u2019s law. Here, we show that this front-end adaptation promotes the reconstruction of odor identity from dynamic odor signals, even in the presence of confounding background odors and rapid intensity fluctuations. These enhancements are further aided by known downstream transformations in the antennal lobe and mushroom body. Our results, which are applicable to various odor classification and reconstruction schemes, stem from the fact that this adaptation mechanism is not intrinsic to the identity of the receptor involved. Instead, a feedback mechanism adjusts receptor sensitivity based on the activity of the receptor-Orco complex, according to Weber-Fechner\u2019s law. Thus, a common scaling of the gain across Orco-expressing ORNs may be a key feature of ORN adaptation that helps preserve combinatorial odor codes in naturalistic landscapes.\n\n## Introduction\n\nAnimals identify and discriminate odors using olfactory receptors (Ors) expressed in olfactory receptor neurons (ORNs) (Joseph and Carlson, 2015; Buck and Axel, 1991; Clyne et al., 1999; Vosshall et al., 1999). Individual ORNs, which typically express a single Or, respond to many odorants, while individual odorants activate many distinct ORNs (Friedrich and Korsching, 1997; Hallem and Carlson, 2006; Wang et al., 2010; Nara et al., 2011). Odors are thus encoded by the combinatorial patterns of activity they elicit in the sensing periphery (Malnic et al., 1999; Wang et al., 2010; Hildebrand and Shepherd, 1997; Hallem and Carlson, 2006; de Bruyne et al., 2001; Friedrich and Korsching, 1997), and these patterns are decoded downstream into behavioral response (Wilson, 2013; Davies et al., 2015). Still, ethologically\u00a0relevant odors are often mixed with background ones (Saha et al., 2013; Renou et al., 2015) and intensity can vary widely and rapidly as odors are carried by the wind (Murlis et al., 1992; Weissburg, 2000; Celani et al., 2014; Card\u00e9 and Willis, 2008). How are odors recognized reliably despite these confounds? In Drosophila melanogaster, ORN dose response curves exhibit similar Hill coefficients but distinct power-law distributed activation thresholds (Hallem and Carlson, 2006; Si et al., 2019), which together with inhibitory odorants enhance coding capacity (Si et al., 2019; Cao et al., 2017; Hallem and Carlson, 2006; Stevens, 2016). In antennal lobe (AL) glomeruli, mutual lateral inhibition normalizes population response, reducing the dependency of activity patterns on odor concentration (Asahina et al., 2009; Olsen et al., 2010). Further downstream, sparse connectivity to the mushroom body (MB) helps maintain neural representations of odors, and facilitates compressed sensing and associative learning schemes (Caron et al., 2013; Litwin-Kumar et al., 2017; Krishnamurthy et al., 2017; Dasgupta et al., 2017). Finally, temporal features of neural responses contribute to concentration-invariant representations of odor identity (Brown et al., 2005; Raman et al., 2010; Gupta and Stopfer, 2014; Wilson et al., 2017).\n\nHere, we examine how short-time ORN adaptation at the very front-end of the insect olfactory circuit contributes to the fidelity of odor encoding. Our theoretical study is motivated by the recent discovery of invariances in the signal transduction and adaptation dynamics of ORNs expressing the co-receptor Orco. ORN response is initiated upon binding of odorant molecules to olfactory receptors (ORs), opening the ion channels they form with the co-receptor Orco (Larsson et al., 2004; Butterwick et al., 2018). Because of differences in odor-receptor affinities, the responses of ORNs to diverse odorants of the same concentration differ widely (Hallem and Carlson, 2006; Montague et al., 2011; Stensmyr et al., 2012). In contrast, downstream from this input nonlinearity, signal transduction and adaptation dynamics exhibit a surprising degree of invariance with respect to odor-receptor identity: reverse-correlation analysis of ORN response to fluctuating stimuli produces highly stereotyped, concentration-invariant response filters (Martelli et al., 2013; Si et al., 2019; Gorur-Shandilya et al., 2017).\n\nThese properties stem in part from an apparently invariant adaptive scaling law in ORNs: gain varies inversely with mean odor concentration according to the Weber-Fechner Law of psychophysics (Weber, 1996; Fechner, 1860), irrespective of the odor-receptor combination (Gorur-Shandilya et al., 2017; Cafaro, 2016; Cao et al., 2016). This invariance can be traced back to adaptative feedback mechanisms in odor transduction, upstream of ORN firing (Nagel and Wilson, 2011; Cao et al., 2016; Cafaro, 2016; Gorur-Shandilya et al., 2017), which depend on the activity of the signaling pathway rather than on the identity of its receptor (Nagel and Wilson, 2011). The generality of the adaptive scaling suggests it could be mediated by the highly conserved Orco co-receptor (Butterwick et al., 2018; Getahun et al., 2013; Getahun et al., 2016; Guo et al., 2017), which has been already been implicated in other types of odor adaptation, taking place over longer timescales (Guo and Smith, 2017; Guo et al., 2017).\n\nWhile in a simpler system such as E. coli chemotaxis (Waite et al., 2018), adaptive feedback via the Weber-Fechner Law robustly maintains sensitivity over concentration changes, the implication for a multiple-channel system \u2013 which combines information from hundreds of cells with overlapping receptive fields \u2013 is less clear. Here, we combine a biophysical model of ORN adaptive response and neural firing with various sparse signal decoding frameworks to explore how ORN adaptation with Weber-Fechner scaling affects combinatorial coding and decoding of odor signals spanning varying degrees of intensity, molecular complexity, and temporal structure. We find that this front-end adaptive mechanism promotes the accurate discrimination of odor signals from backgrounds of varying molecular complexity, and aids other known mechanisms of neural processing in the olfactory circuit to maintain representations of odor identity across environmental changes.\n\n## Results\n\n### Model of ORN sensing repertoire\n\nTo model ORN firing rates in response to time-dependent odor signals, we extended a minimal model (Gorur-Shandilya et al., 2017) that reproduces the Weber-Fechner gain adaptation and firing rate dynamics measured in individual Drosophila ORNs in response to Gaussian and naturalistic signals (code available on GitHub, Kadakia, 2019; copy archived at https://github.com/elifesciences-publications/ORN-WL-gain-control).\n\nWe consider a repertoire of $M=50$ ORN types that each express one type of Or together with the co-receptor Orco (Larsson et al., 2004). Within ORNs of type $a=1,\u2026,M$, Or-Orco complexes form non-selective cation channels (Butterwick et al., 2018) (Figure 1A) that switch between active and inactive conformations, while simultaneously binding to odorants $i$ with affinity constants, $K_{a\u2062i}^{*}$ and $K_{a\u2062i}$, respectively (Nagel and Wilson, 2011; Gorur-Shandilya et al., 2017). For simplicity, we only consider agonists, that\u00a0is $K_{a\u2062i}^{*}>K_{a\u2062i}$, and assume receptors can only bind one odorant at a time. The analysis can easily be extended to include inhibitory odorants, which increases coding capacity (Cao et al., 2017). Dissociation (inverse affinity) constants are chosen from a power law distribution ($\\alpha=0.35$) recently found across ORN-odor pairs in Drosophila larvae (Si et al., 2019). For a handful of ORNs, we choose a very large value for one of the $K_{a\u2062i}^{*}$ to mimic high responders to private odorants relevant to innate responses (Stensmyr et al., 2012). These private odors do not affect the general findings.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/45293/elife-45293-fig1-v2.jpg)\n\n**Figure 1.:** (A) Or/Orco complexes of type $a$ switch between active $C_{a}^{\u2217}$ and inactive conformations $C_{a}$. Binding an exitatory odorant (S in the diagram) favors the active state. The active fraction is determined by the free energy difference between inactive and active conformations of the Or/Orco complex in its unbound state, $\u03f5_{a}\u2062(t)$ (in units of $k_{B}\u2062T$), and by odorant binding with affinity constants $\ud835\udc0a_{a}^{*}=(K_{a\u20621}^{*},\u2026,K_{a\u2062i}^{*},\u2026,K_{a\u2062N}^{*})$ and $\ud835\udc0a_{a}$ for the active and inactive conformations, respectively (Equations 1-2). Adaptation is mediated by a negative feedback (Nagel and Wilson, 2011) from the activity of the channel onto the free energy difference $\u03f5_{a}\u2062(t)$ with timescale $\\tau$. ORN firing rates $r_{a}\u2062(t)$ are generated by passing $A_{a}\u2062(t)$ through a linear temporal filter $h\u2062(t)$ and a nonlinear thresholding function $f$. (B) Odors are represented by $N$-dimensional vectors $\ud835\udc2c=[s_{1},\u2026,s_{i},\u2026,s_{N}]$ , whose components $s_{i}$ are the concentrations of the individual molecular constituents of $\ud835\udc2c$. (C) Step-stimulus firing rate of 50 ORNs to the $N$=150 possible monomolecular odorants $\ud835\udc2c=s_{i}$, given power-law distributed afffinity constants (Si et al., 2019). (D) Temporal responses of a representative ORNs to a pulse stimulus, for a single odorant at several intensities (left), or to many odorants of the same intensity (right). (E) Representative ORN tuning curves (a single row of the response matrix in C, ordered by magnitude). Tuning curves are diverse, mimicking measured responses (Hallem and Carlson, 2006). (F) Dose-response of an ORN before (black) and after adaptation to either a low (yellow) or high (magenta) odor concentration. (G) Same, but the ORN was allowed to first adapt to one of various backgrounds of differing identities, before the foreground (same as in F) was presented. Also shown is the specific case when the foreground and background have the same identity (dashed lines).\n\nAssuming that odorant binding and conformation changes are faster than other reactions in the signaling pathway, the fraction of channels of type $a$ that are active at steady state is:\n\n$$\nA_{a}(t)=\\frac{C_{a}^{\u2217}+C_{a}^{\u2217}K_{a}^{\u2217}\u22c5s(t)}{C_{a}^{\u2217}+C_{a}^{\u2217}K_{a}^{\u2217}\u22c5s(t)+C_{a}+C_{a}K_{a}\u22c5s(t)}.\n$$\n\n$C_{a}$ and $C_{a}^{\u2217}$ represent unbound channels in the inactive and active conformation. Here, $\ud835\udc0a_{a}\u22c5\ud835\udc2c\u2062(t)=\\sum_{i}^{N}K_{a\u2062i}\u2062s_{i}\u2062(t)$, where $s_{i}\u2062(t)$ is the time-dependent concentration of the $i$-th monomolecular component of the odor signal $\ud835\udc2c\u2062(t)$ at time $t$ (Figure 1B). $N=150$ is the size of the molecular odorant space (Figure 1B). Equation 1 can be rearranged as (derivation in Materials\u00a0and\u00a0methods):\n\n$$\nA_{a}(t)=[1+exp\u2061(\u03f5_{a}(t)+ln\u2061(\\frac{1+K_{a}\u22c5s(t)}{1+K_{a}^{\u2217}\u22c5s(t)}))]^{\u22121}.\n$$\n\nThe two terms in the exponential represent the change in the channel\u2019s free energy due to the binding of odorant $i$, and the free energy difference $\u03f5_{a}$ between the unbound states $C_{a}$ and $C_{a}^{\u2217}$, in units of $k_{B}\u2062T$. Because $K_{a\u2062i}^{*}>K_{a\u2062i}$, a sudden increase in the concentration of excitatory odor results in an increase in activity $A_{a}$.\n\nUpon prolonged stimulation, ORNs adapt. At least one form of adaptation, which takes place over short time scale, $\\tau\u2243250ms$ (Gorur-Shandilya et al., 2017), involves a negative feedback of the Or-Orco channel activity onto the channel sensitivity (Nagel and Wilson, 2011; Gorur-Shandilya et al., 2017). To model this adaptation process, we assume that inward currents elicited by activating Or-Orco channels eventually result in an increase of the free energy difference $\u03f5_{a}\u2062(t)$, possibly via a feedback onto Orco (Butterwick et al., 2018):\n\n$$\n\\tau\u2062\\frac{d\u2062\u03f5_{a}\u2062(t)}{d\u2062t}=A_{a}\u2062(t)-A_{0\u2062a},\n$$\n\nwhere $\u03f5_{L,a}<\u03f5_{a}(t)<\u03f5_{H,a}$. The lower bound $\u03f5_{L,a}$ determines the spontaneous activity of the channel. The higher bound $\u03f5_{H,a}$ determines the concentrations of odors at which adaptation is unable to keep up and saturation occurs (Gorur-Shandilya et al., 2017). Through these dynamics, $\u03f5_{a}\u2062(t)$ can compensate for changes in free energy due to ligand binding (see Equation 2), returning the activity $A_{a}$ towards an adapted level $A_{0\u2062a}$ above the spontaneous activity. Since $\u03f5_{a}$ is bounded below, a minimum amount of signal intensity is needed for adaptation to kick in. Finally, the firing rate is modeled by passing the activity $A_{a}\u2062(t)$ through the derivative-taking bi-lobed filter $h\u2062(t)$ and a rectifying nonlinearity $f$\u00a0(Gorur-Shandilya et al., 2017):\n\n$$\nr_{a}\u2062(t)=f\u2062(h\u2062(t)\u2297A_{a}\u2062(t)),\n$$\n\nwhere $\u2297$ is convolution. When deconvolved from stimulus dynamics, the shapes of the temporal kernels of Drosophila ORNs that express Orco tend to be stereotyped for many odor-receptor combination (Martelli et al., 2013; Gorur-Shandilya et al., 2017; Si et al., 2019) (although there are known exceptions such as super-sustained responses Montague et al., 2011). Moreover, adaptation is not intrinsic to the receptor (Nagel and Wilson, 2011). Accordingly, for simplicity $\\tau$, $h\u2062(t)$, and $f$ are assumed independent of receptor and odorant identities.\n\nThis minimal model reproduces the essential features of ORN response to odorant pulses (Nagel and Wilson, 2011; Martelli et al., 2013; Cao et al., 2016). In the absence of stimulus, ORNs fire spontaneously at rates (1\u201310 Hz) (Hallem and Carlson, 2006) set by the lower free energy bound $\u03f5_{L,a}$, which we choose from a normal distribution (Figure 1D). For sufficiently strong stimuli, adaptation causes $\u03f5_{a}$ to increase, compensating for the drop in free energy difference due to ligand binding. This gradually reduces the firing rate to a steady state level $r\u2062(A_{0\u2062a})\u2243$\u00a030\u201340 Hz (Gorur-Shandilya et al., 2017) (Figure 1D). The diversity of temporal firing responses and tuning curves measured experimentally (Hallem and Carlson, 2006; Montague et al., 2011; Brown et al., 2005; Gupta and Stopfer, 2014; Raman et al., 2010) arise naturally in the model due to the distribution of chemical affinity constants and the nonlinearity of Equation 2 (Figure 1B-Figure 1E).\n\nThe model also reproduces Weber-Fechner scaling of the gain with the inverse of the mean odorant intensity $s\u00af_{i}$(Gorur-Shandilya et al., 2017; Cao et al., 2016). For small fluctuations $\u0394\u2062s_{i}$ around $s\u00af_{i}$, we have from Equation 2 that $\u0394\u2062A_{a}/\u0394\u2062s_{i}\u2243A_{a}\u2062(s\u00af_{i})\u2062(1-A_{a}\u2062(s\u00af_{i}))/s\u00af_{i}$, whereby Weber\u2019s Law is satisfied provided $A_{a}\u2062(s\u00af_{i})$ is approximately constant (derivation in Materials\u00a0and\u00a0methods). In our model, since the rate of adaptation depends only on the activity of the ion channel (right hand-side of Equation 3), then in the adapted state we have $A_{a}\u2062(s\u00af_{i})\u2243A_{0\u2062a}$, ensuring that the gain scales like $1/s\u00af_{i}$. This process adjusts the sensitivity of the ORN by matching the dose responses to the mean signal concentration, while maintaining their log-slopes (Figure 1F). However, for foreground odors mixed with background odors to which the system has adapted, the dose response curves now exhibit background-dependent shifts (Figure 1G).\n\nWhile this phenomenological model could be extended to include further details \u2013 for\u00a0example, we could relax the quasi-steady-state assumption in Equation 2, use a more complex model for channel adaptation and neural firing (Gorur-Shandilya et al., 2017), or consider feedforward mechanisms in addition to negative integral feedback (Schulze et al., 2015) \u2013 this minimally\u00a0parameterized form captures the key dynamical properties of Orco-expressing ORNs relevant to our study: receptor-independent adaptation (Nagel and Wilson, 2011) with Weber-Fechner scaling (Gorur-Shandilya et al., 2017; Cafaro, 2016; Cao et al., 2016) that maintains response time independent of mean stimulus intensity (Martelli et al., 2013; Gorur-Shandilya et al., 2017), along with a diversity of temporal firing patterns in response to a panel of monomolecular odorants (Hallem and Carlson, 2006; Montague et al., 2011; Brown et al., 2005; Gupta and Stopfer, 2014; Raman et al., 2010) (Figure 1D\u20131E).\n\n### Front-end Weber-Fechner adaptation preserves odor coding among background and intensity confounds\n\nThe identity of an odor is encoded by the pattern of ORN firing responses. However, when a novel foreground odor is presented atop an existing background odor, this pattern may depend also on the background odor, rendering ORN responses less informative about foreground odor identity. To understand how front-end Weber-Fechner adaptation might help encode novel foreground odors in the presence of background odors, we considered environments containing various combinations of foreground odors $\ud835\udc2c$ and background odors $\ud835\udc2c\u00af$, and asked how similar are the ORN responses $\ud835\udc2b$ to a given $\ud835\udc2c$ but different $\ud835\udc2c\u00af$.\n\nSince it is not possible to visualize the 50-dimensional space of ORN responses, we projected ORN responses onto a two-dimensional space using t-distributed stochastic neighbor embedding (t-SNE) (van der Maaten and Hinton, 2008). Like principle component analysis (PCA), t-SNE allows a visualization of high-dimensional objects in such a way that desirable features of the original dataset are preserved (Figure 2A). PCA, for example, retains much of the data variance. t-SNE retains the proximity of an object to its nearest neighbors. Specifically, it constructs a probability distribution $Q_{H}$ based on pairwise distances between nearby objects, assigning higher probability to closer objects. It then determines where the objects would live in a lower\u00a0dimensional space, such that the analogous distribution $Q_{L}$ in this space is most similar to $Q_{H}$. t-SNE is widely used to cluster objects (in our case, ORN responses $\ud835\udc2b$ to different foreground odors on top of diverse background odors) by similarity (here, foreground odor identity). However, because t-SNE uses local information from only nearest neighbors, global distances and scales are not preserved (Zhou and Sharpee, 2018). Thus, we use t-SNE only for visualization. To more rigorously quantify how foreground identity is preserved in ORN activity, we calculate the mutual information (MI) between foreground odor $\ud835\udc2c$ and ORN firing rates $\ud835\udc2b$ in the 50-dimensional space (Materials\u00a0and\u00a0methods). The MI quantifies how much information a response contains about the stimulus. High MI means that responses exhibit larger variability for different stimuli than for repeated presentations of the same stimulus. In our case, this would be true if $\ud835\udc2b$ were uniquely defined for different foregrounds $\ud835\udc2c$, irrespective of the background $\ud835\udc2c\u00af$. Conversely, the MI would be low if responses varied more by background $\ud835\udc2c\u00af$ than by foreground $\ud835\udc2c$.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/45293/elife-45293-fig2-v2.jpg)\n\n**Figure 2.:** (A) Example t-SNE projection of the 50-dimensional vector of ORN firing rates to two dimensions. Each point represents the firing response to a distinct odor. Nearby points exhibit similarities in corresponding firing rates. (B) t-SNE projection of ORN firing rates, where each point represents the response to foreground odor $\ud835\udc2c$ (point color) on top of a background odor $\ud835\udc2c\u00af$ (point size). In the adaptive system, $\u03f5_{a}$ are set to their steady state values given the background odor $\ud835\udc2c\u00af$ alone according to Equation 5 with $\\beta=0$. We assumed $A_{0\u2062a}=A_{0}$ for all $a$ (we obtain similar results when $A_{0\u2062a}$ are randomly distributed; Figure 3\u2014figure supplement 1). Clustering by color implies that responses cluster by foreground odor identity. Since global distances are not preserved by t-SNE, distances between plots cannot be meaningfully compared, and so we do not label the axes with units. Mutual information, in bits, is indicated below the plots. (C) Similar to (B), but now for odors whose concentrations span four decades (represented by point size). Here, the background odor identity is the same for all concentrations. (D) Performance of odor coding as a function of $\\beta$, the magnitude of the deviation from Weber-Fechner\u2019s law ($\\beta=0$: Weber-Fechner\u2019s scaling; $\\beta=1$: no adaptation; see Equation 5). Performance is quantified by the mutual information between foreground odor and ORN responses in bits (Materials\u00a0and\u00a0methods). Line: same scaling $\\beta_{a}=\\beta$ for all ORNs. Dashed: $\\beta_{a}$ is uniformly distributed between 0 and $2\u2062\\beta<1$ (i.e. has mean $\\beta$). (E) Distribution of ORN responses and t-SNE projections for $\\beta=0,0.10,0.22,0.40$ in (D).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/45293/elife-45293-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** t-SNE projections when background adapted activity level $A_{0\u2062a}$ depends on ORN.t-SNE projections for non-adaptive ($\\beta=1$) and adaptive ($\\beta=0$) systems, when background firing rates depend on ORN identity. Background active fractions $A_{0\u2062a}$ are chosen normally with mean 0.1 and deviation 0.03, corresponding to background firing rates around of $\u2243$\u00a020\u201340 Hz.\u00a0.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/45293/elife-45293-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** Front-end adaptive feedback preserves information capacity of the ORN sensing repertoire. (A) Mutual information between signal $\ud835\udc2c\u2062(t)=\ud835\udc2c_{A}\u2062(t)+\ud835\udc2c_{B}\u2062(t)$ and response $\ud835\udc2b\u2062(t)$ is calculated at various points in time $t$ for an odor environment consisting of two step odors, A\u00a0and\u00a0B. Odor A, with concentration $\ud835\udc2c_{A}\u2062(t)$, turns on at time $t_{A}$ and a odor B, with concentration $\ud835\udc2c_{B}\u2062(t)$, turns on at some later time $t_{B}$. Both odors have similar intensities $\u223cs_{0}$ and similar molecular complexity ($k=4$). (B) Mutual information as a function of $s_{0}$ for the non-adaptive system, respectively, at different time points after $t_{A}$, corresponding to the dots in (A). The mutual information carried by distinct ORNs is represented by the shaded region; their average is plotted by the heavy line. In the non-adaptive system, the mutual information peaks in the regime of high sensitivity after the arrival of odor A (purple, blue), and shifts leftward with the onset of odor B (teal, green). The leftward shifts occurs since stronger signals are more prone to response saturation (compromising information transfer) as odor B arrives. (C) Same as B, now for the adaptive system. The MI mimics the non-adaptive case at the onset of odor A, before adaptation has kicked in (purple). As the system adapts and responses decrease toward baseline, previously saturating signal intensities now cross the regime of maximal sensitivity, which therefore shifts rightward to higher $s_{0}$ (dark blue). Much later, but before the arrival of odor B, the ORNs that responded now fire at a similar adapted firing rate \u223c30\u00a0Hz, irrespective of odor identity, so the mutual information drops to zero. However, having now adjusted its sensitivity to the presence of odor A, the system can respond appropriately to odor B: the MI at $t_{B}$ is nearly six bits across decades of concentration immediately following $t_{B}$ (green).\n\nWe first examined how an adaptive or non-adaptive ORN repertoire encodes odor identity in an odor environment that contains a foreground odor $\ud835\udc2c$ atop a background odor $\ud835\udc2c\u00af$ (Figure 2B). Both odors are sparse mixtures, with $K\u226aN$ odorants of similar concentrations, odor \u2018identity\u2019 being the particular set of odorants in the mixture. In the adaptive case, we assume that the system has fully adapted to the background $\ud835\udc2c\u00af$ before the foreground $\ud835\udc2c$ is presented. This is enacted by calculating the firing response to the foreground odor $\ud835\udc2b\u2062(\ud835\udc2c)$ only after having set the $\u03f5_{a}$ in Equation 2 to their steady state values in response to the background odor $\ud835\udc2c\u00af$:\n\n$$\n\u03f5_{a}(s\u00af)=ln\u2061[\\frac{1\u2212A_{0a}}{A_{0a}}]\u2212(1\u2212\\beta_{a})ln\u2061(\\frac{1+K_{a}\u22c5s\u00af}{1+K_{a}^{\u2217}\u22c5s\u00af}),\n$$\n\nwhere we have introduced the new parameter $\\beta_{a}$ to allow us to control the scaling of gain adaptation: for $\\beta_{a}=0$ the system exactly follows Weber-Fechner\u2019s law, while for $\\beta_{a}=1$ there is no adaptation. For small but nonzero $\\beta_{a}$, the inverse gain scales sub-linearly (see Materials\u00a0and\u00a0methods), and the adapted activity $A_{a}\u2062(\ud835\udc2c\u00af)$ increases weakly with background $\ud835\udc2c\u00af$. In experiments, small deviations from the strict Weber-Fechner scaling on the order of $\\beta\u22430.1$ are observed (see extended figures in Gorur-Shandilya et al., 2017).\n\nWith Weber-Fechner\u2019s law in place for all ORNs ($\\beta_{a}=0$) responses cluster by the identity of foreground odor, showing that the repertoire of ORNs appropriately encodes the identity of novel odors irrespective of background signals \u2013 once these backgrounds have been \u2018adapted away\u2019 (Figure 2B). This is the case regardless of whether $A_{0\u2062a}$ is identical or different across neurons (Figure 2\u2014figure supplement 1). In contrast, when the system is non-adaptive, ($\\beta_{a}=1$), the responses exhibit weaker separations by odor identity (Figure 2B). Similarly, responses across different odor intensities are well separated by odor identity in the adaptive system, but less so in the non-adaptive system (Figure 2C). Calculating the mutual information between odor and ORN response in time shows that the adaptive system retains coding capacity as it confronts novel odors (Figure 2\u2014figure supplement 2), whereas the non-adaptive system maintains coding capacity in a far more limited range of odor concentration.\n\nTo what extent do the benefits of front-end adaptation for odor coding depend on the precise Weber-Fechner scaling? We repeated the analysis from Figure 2B for increasing values of $\\beta_{a}=\\beta$ between zero (Weber\u2019s law) (perfect adaptation) and one (no adaptation). To generalize Figure 2B, we now let the intensities range over two decades. As $\\beta$ increases, the capacity of the system to cluster responses by odor identity degrades (Figure 2D). Introducing diversity among ORNs by distributing $\\beta_{a}$\u2019s uniformly between 0 and $2\u2062\\beta$ (so that the mean is $\\beta$) slightly increases performance at high $\\beta$ but reduces it at low $\\beta$ (Figure 2D). Overall, performance of odor coding degrades with $\\beta$, as poorly\u00a0adapting ORNs begin to saturate (Figure 2D).\n\nInterestingly, besides this general trend, we find that for $\\beta$ very close to zero, a small deviation from Weber-Fechner\u2019s law instead improves odor coding. This arises because of the nonlinearity in the onset of adaptation: adaptation kicks in only when the strength of stimulus is sufficient for the response $A_{a}$ to exceed $A_{0\u2062a}$, so that the right hand-side of Equation 3 is positive. The minimum background intensity $s\u00af$ required for this to happen is given by $\u03f5_{L,a}=\u03f5_{a}(s\u00af)$, which, according to equation Equation 5, increases with $\\beta$. This initial effect increases odor coding performance, as the firing rates can distribute more broadly across the dynamical range of the ORNs, before adaptation is effected (Figure 2E). Note that this effect is not specific to our model. A similar enhancement would be observed if Weber\u2019s Law were maintained, but kicked in only above a minimum signal intensity. Thus, while Weber-Fechner scaling largely preserves the representation of foreground odor identity amid backgrounds, in some cases it may benefit from a slight relaxation so that the full dynamical range of the ORNs can be exploited.\n\n### Front-end adaptation enhances odor decoding in complex environments\n\nGiven that front-end adaptation helps maintain combinatorial odor codes in the presence of backgrounds, we wondered how it affects the capability to decode odor signals from ORN response. One potentially complicating factor is the disparity between sensor dimension and stimulus dimension: while Drosophila only express \u223c60 Or genes (Vosshall et al., 2000), the space of odorants is far greater (Krishnamurthy et al., 2017). An $N$-dimensional odor signal would naively need $N$ sensory neurons to decode it \u2013 one for each odorant. However, naturally\u00a0occurring odors are sparse, typically comprised of only a few odorants. Enforcing sparsity of the signal during decoding greatly restricts the number of possible odors consistent with a given ORN response, suggesting that such high-dimensional signals might be inferred from less than $N$ ORNs. Indeed, the decoding of sufficiently sparse signals from lower\u00a0dimensional responses is rigorously guaranteed by the theory of compressed sensing (CS) (Donoho, 2006; Cand\u00e8s et al., 2006). It is unknown whether CS is implemented in the Drosophila olfactory circuit (Pehlevan et al., 2017). Here, we use this framework mainly as a tool to quantify how front-end adaptation potentially affects odor decoding, later verifying our conclusions with other classification techniques that incorporate the known architecture of the olfactory system.\n\nCS is performed as a constrained linear optimization. The constraints in the optimization are $\ud835\udc2b=\ud835\udc03\ud835\udc2c$, where $\ud835\udc2c$ is the stimulus to be estimated, $\ud835\udc03$ is the response matrix, and $\ud835\udc2b$ is the vector of ORN responses. The cost function to be minimized, $C=\\sum_{i}|s_{i}|$, enforces sparsity by driving the estimate of each odorant component to zero; the constraints balance this tendency by simultaneously enforcing information from the ORN firing rates. The result is a reconstructed odor signal $\ud835\udc2c^$ that is as sparse as possible, consistent with the ORN responses. In practice, one uses a linear optimization routine to numerically minimize $\\sum_{i}|s_{i}|$ over $s_{i}$, subject to $\ud835\udc2b=\ud835\udc03\ud835\udc2c$. The result is an estimate of the magnitude of each signal component $s_{i}$. Thus, both the identity and the intensity of the odor signal are estimated.\n\nTo incorporate this linear framework of CS into our nonlinear odor encoding model, we treat the nonlinear odor encoding exactly, but approximate the decoding to first order around the background concentration (Figure 3A). Specifically, we use Equations 2-4 to generate ORN responses $\ud835\udc2b$ for sparse odors $\ud835\udc2c$ having $K\u226aN$ nonzero components $s_{i}=s\u00af_{i}+\u0394\u2062s_{i}$, where the mean concentration is $s\u00af_{i}$. To estimate signals using CS, we minimize $\\sum_{i}|\u0394\u2062s_{i}|$ while enforcing the constraints $\ud835\udc2b=\ud835\udc03\u2062\u0394\u2062\ud835\udc2c$, where $\ud835\udc03$ is the linearization of Equation 2 around $s\u00af_{i}$ (details in Materials\u00a0and\u00a0methods). The perturbations are chosen as $\u0394\u2062s_{i}\u223c\ud835\udca9\u2062(s_{0}/3,s_{0}/9)$, where $s\u00af_{i}=s_{0}$. This linearization simplifies the CS decoding \u2013 namely it enforces a single, global minimum \u2013 but it is not critical for our general results; see Materials\u00a0and\u00a0methods and Figure 3\u2014figure supplement 5. We perform the minimization using the sequential least squares algorithm, producing an estimate of the concentration $\u0394\u2062s_{i}$ of each individual odorant. The matrix $\ud835\udc03$ depends on $\u03f5_{a}$, and as above, we assume precise adaptation by setting $\u03f5_{a}$ to their steady state values in response to the background odor alone (via Equation 5 with $\\beta=0$). In the nonadaptive case, $\u03f5_{a}$ are held at their minimum values $\u03f5_{L,a}$.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/45293/elife-45293-fig3-v2.jpg)\n\n**Figure 3.:** (A) Odor stimuli produce ORN responses via odor-binding and activation and firing machinery, as described by Equations 2-4. Odors are then decoded using compressed sensing optimization. Odors are assumed sparse, with $K$ nonzero components, $K\u226aN$. (B) Decoding accuracy of foreground odors in the presence of background odors, for a system without Weber Law adaptation. (C) Same as (B), with Weber Law adaptation. (D) Recorded trace of naturalistic odor signal; whiffs (signal >\u00a04 a.u.) demarcated by purple bars. This signal is added to static backgrounds of different intensities and complexities. (E) Individual plots show the percent of accurately decoded odor whiffs as a function of background odor intensity, for the non-adaptive (blue) and adaptive (red) systems, for different $\\tau_{M}$ (line shades).\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/45293/elife-45293-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Decoding accuracy for system with ORN-dependent adaptive timescales $\\tau$.Decoding accuracy for system with ORN-dependent adaptive timescales $\\tau_{a}$. (A) Distribution of timescales for all ORNs $a$ (purple dots). Here, $\\tau_{a}\u223c\\tau\u206210^{X}$ where $\\tau=250ms$ as in the main text and $X\u223c\ud835\udca9\u2062(0,0.2)$. (B) Individual plots show the percent of accurately decoded odor whiffs (same fluctuating odor signal used in the main text) as a function of background odor intensity, for the non-adaptive (blue) and adaptive (red) systems, for different $\\tau_{M}$ (line shades). Plots are arrayed by the complexity of the naturalistic signal (column-wise) and the complexity of the background odor (row-wise).\u00a0.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/45293/elife-45293-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** Benefits conferred by Weber-Fechner adaptation remain for a broader distribution of baseline adapted activity levels $A_{0\u2062a}$, now assumed to be ORN-dependent and chosen from a normal distribution. (A)\u00a0Distribution of $A_{0\u2062a}$. (B) Decoding accuracy of foreground odors in the presence of background odors.\u00a0.\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/45293/elife-45293-fig3-figsupp3-v2.jpg)\n\n**Figure 3\u2014figure supplement 3.:** Benefits conferred by Weber-Fechner adaptation remain for two binding sites per receptor. This might conceivably occur in insect olfactory receptors, heterotetramers consisting of 4 Orco/Or subunits that gate a central ion channel pathway (Butterwick et al., 2018). Plotted is the decoding accuracy of foreground odors in the presence of background odors.\u00a0.\n\n![Figure 3\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/45293/elife-45293-fig3-figsupp4-v2.jpg)\n\n**Figure 3\u2014figure supplement 4.:** Eigenvalue distribution of $\ud835\udc03_{\ud835\udc2c}^{T}\u2062\ud835\udc03_{\ud835\udc2c}$, where $\ud835\udc03_{\ud835\udc2c}$ is a $m\\timesk$ submatrix of the column-normalized linearized ORN response matrix $\ud835\udc03$, evaluated at the linearization point $\ud835\udc2c$. Note that $\ud835\udc2c$ is $k$-sparse, but its components do not necessarily align with the $k$ columns chosen for the sub-matrix. Eigenvalues are calculated for the adaptive (orange) and non-adaptive (blue) systems, for 1000 randomly chosen linearization points $\ud835\udc2c$ and submatrices. Plots are arranged for various odor sparsities (by row) and odor intensities (by column). The restricted isometry property is satisfied when the eigenvalues lie between 0 and 2 (black vertical line), and is more strongly satisfied the more centered the distribution is around unity. The increase in near-zero eigenvalues for the non-adaptive system at higher odor complexities and intensities (lower right plots) indicates the weaker fulfillment of the restricted isometry property for these signals, and leads to higher probability of failure in compressed sensing signal reconstruction.\u00a0.\n\n![Figure 3\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/45293/elife-45293-fig3-figsupp5-v2.jpg)\n\n**Figure 3\u2014figure supplement 5.:** Decoding of odor signals (no background odors) using the IHT algorithm (Blumensath and Davies, 2009b; Blumensath, 2013) qualitatively reproduces the results from the main text, which used traditional CS with background linearization. In the adaptive case, IHT actually exhibits superior accuracy to traditional CS, although IHT demands more compute time. The results here show odor decoding accuracy for sparse odor signals of given complexity and intensity, averaged over 10 distinct identities. The iterative algorithm was initialized at $\ud835\udc2c^=\ud835\udfce$ and run forward until $\ud835\udc2c^$ was stationary, or 10,000 iterations were reached. Step size $\\mu$ in Equation 22 was set to $s_{0}/20$. At each step, the linearized response used in determining $\ud835\udc31_{i+1}$ ($\ud835\udc03_{\ud835\udc2c_{i}}$ in Equation 22) was evaluated at the result of $i$th iteration, $\ud835\udc31_{i}$. IHT also requires an assumption on the number of components in the mixture (which defines $H_{K}\u2062(\u22c5)$ in Equation 22); here, that was set to twice the actual sparsity of true signal.\n\n![Figure 3\u2014figure supplement 6.](https://cdn.elifesciences.org/articles/45293/elife-45293-fig3-figsupp6-v2.jpg)\n\n**Figure 3\u2014figure supplement 6.:** Distribution of whiff durations in naturalistic stimulus, compared to the theoretical prediction (Celani et al., 2014).\n\nWe first examine how foreground odors are recognized when mixed with background odors of a distinct identity but similar intensities, quantifying decoding accuracy as the percentage of odors correctly decoded within some tolerance (see Materials\u00a0and\u00a0methods). Without adaptation, accuracy is maintained within the range of receptor sensitivity for monomolecular backgrounds but is virtually eliminated as background complexity rises (Figure 3B). The range of sensitivity is broader in the adaptive system and is substantially more robust across odor concentration and complexity (Figure 3C).\n\nIn realistic odor environments, the concentration and duration of individual odor whiffs vary widely (Celani et al., 2014). We wondered how well a front-end adaptation mechanism with a single timescale $\\tau$ could promote odor identity detection in such environments. As inputs to our coding/decoding framework, we apply a naturalistic stimulus intensity recorded from a photo-ionization detector (Gorur-Shandilya et al., 2017) (Figure 3D), to which we randomly assign sparse identities from the $N$-dimensional odorant space (odor concentration fluctuates in time, but identity is fixed). To mimic background confounds, we combine these signals with a static odor background of a different identity. We decode the odor at each point in time using CS optimization. To assess performance, we consider decoding accuracy only during odor whiffs, rather than blanks, where the concentration is too low to be perceived. We assess performance by the percentage of correctly decoded whiffs (signal must be fully decoded at some point during the whiff), and average our results over distinct choices of foreground and background identity. Finally, we assume the decoder has short-term memory: detected odor signals are only retained for $\\tau_{M}$ seconds in the immediate past, bounding the amount of past information utilized in signal reconstruction.\n\nWithout ORN adaptation, sufficiently strong backgrounds eliminate the ability to reconstruct the identity of individual odor whiffs, irrespective of the complexity of either the foreground or background odor (Figure 3E, blue lines). In the adaptive system, this is substantially mitigated (red lines in Figure 3E), provided the memory duration $\\tau_{M}$ is at least as long as the adaptation timescale $\\tau$ (darker red lines). The memory $\\tau_{M}$ must be long enough so that information about the background concentration $s\u00af_{i}$, which is needed for decoding, can be acquired over a window at least as long as the adaptation timescale. Because short-term adaptation depends on the activity of the Or-Orco channel rather than on the identity of the receptor (Nagel and Wilson, 2011; Martelli et al., 2013; Gorur-Shandilya et al., 2017), the values of $\\tau$ and $A_{0\u2062a}$ were assumed the same for all ORNs; still, our results hold if these invariances are relaxed (Figure 3\u2014figure supplement 1 and Figure 3\u2014figure supplement 2).\n\n### Front-end adaptation enhances primacy coding\n\nThe primacy coding hypothesis has recently emerged as an intriguing framework for combinatorial odor coding. Here, odor identity is encoded by the set (but not temporal order) of the $p$ earliest responding glomeruli/ORN types, known as primacy set of order $p$(Wilson et al., 2017). If the activation order of ORNs were invariant to the strength of an odor step or pulse, primacy sets would in principle form concentration-invariant representation of odor identity. Although our coding framework uses the full ORN ensemble in signal reconstruction, some of these responses may contain redundant information, and a smaller primacy subset may suffice. To examine this, we apply our model to a sigmoidal stimulus that rises to half-max in 50 ms, calculating decoding accuracy in time. Since ORNs activate sequentially, the primacy set is defined by the ORN subset active when the odor is decoded. For simple odors, a limited set of earliest responding neurons fully accounts for the odor identity (Figure 4A), in agreement with primacy coding. As expected for more complex odor mixtures, the full repertoire is required for accurate decoding. Primacy coding also predicts that for stronger stimuli, responses occur earlier, since the primacy set is realized quicker, which our framework replicates (Figure 4\u2014figure supplement 1).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/45293/elife-45293-fig4-v2.jpg)\n\n**Figure 4.:** (A) Decoding accuracy as a function of the number of active ORNs, for different odor complexities. The primacy set consists of those ORNs required to be active for accurate decoding. (B) Frequency of particular ORNs in primacy sets of an odor placed atop different backgrounds. Individual plots show, for given primacy order $p$, the percentage of backgrounds for which the primacy set of odor A contains a given ORN (dots). Those with purple borders are the $p$ most highly occurring \u2013 that\u00a0is a nominal background-invariant primacy set for odor A. Points are jittered horizontally for visualization. (C) Consistency of primacy sets across backgrounds, as a function of $p$, for the adaptive (solid) and non-adaptive (dashed) system. Consistency is defined as the likelihood that an ORN in the nomimal primacy set appears in any of the individual background-dependent primacy sets, averaged over the nominal set (average of the y-values of the purple dots in B). 100% consistency means that for all backgrounds, the primacy set of odor (A) is always the same $p$ ORNs.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/45293/elife-45293-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Additional results pertaining to the primacy coding hypothesis. (A) Percent of active ORNs required for 75% accuracy of a steep sigmoidal odor step, as a function of odor step intensity and odor complexity. For low complexities, a primacy set of fewer ORNs may be sufficient to decode the full odor signal; for higher complexities, the entire ORN repertoire is required. (B) In the primacy coding hypothesis, the primacy set is realized sooner for stronger odor signals, so odors are decoded earlier in time, resulting in a perceptual time shift with increasing odor concentration (Wilson et al., 2017). We also find this shift in our compressed sensing decoding framework (right plot), which rises monotonically with step height for various odor complexities, in agreement with primacy coding. (C) The consistency of a primacy code across changes in background odor concentration, in a system with Weber Law adaptation. We calculate the primacy set for odor A (step odor; black) in the presence of either a weak, medium, or strong background (dotted lines; 1x, 10x, 100x a.u.), assuming the system has adapted its response to the background as described in the main text. Averaged across odor A identities, primacy sets for odor A when in the 1x background are nearly identical to those when odor A is in the 10x background (right plot; yellow). The same holds true when comparing the 1x and 100x backgrounds, for sufficiently large primacy order, above eight or so right plot; purple). This indicates that Weber Law adaptation preserves primacy codes across disparate environmental conditions.\n\nBeyond mere consistency, however, front-end adaptation might also enhance primacy coding in different environments, such as background odors, which could scramble primacy sets. To investigate this, we considered again a sigmoidal odor step (odor A), now atop a static background (odor B) to which the system has adapted. We compared the primacy sets of odor A for 1000 different choices of odor B, finding that, with adaptation, primacy sets are highly consistent across background confounds for all but the smallest primacy orders (Figure 4B-Figure 4C). This also holds true for backgrounds of different concentrations (Figure 4\u2014figure supplement 1), suggesting a central role for front-end adaptation in reinforcing primacy codes across differing environmental conditions.\n\n### Contribution of front-end adaptation for odor recognition within the Drosophila olfactory circuit\n\nSignal transformations in the sensing periphery are propagated through the remainder of the olfactory circuit. How does front-end adaptation interact with these subsequent neural transformations? ORNs expressing the same OR converge to a unique AL glomerulus, where they receive lateral inhibition from other glomeruli (Olsen and Wilson, 2008; Asahina et al., 2009). This inhibition implements a type of divisive gain control (Olsen et al., 2010), normalizing the activity of output projections neurons, which then synapse onto a large number of Kenyon cells (KCs) in the mushroom body. To investigate how odor representations are affected by interactions between front-end ORN adaptation and this lateral inhibition and synaptic divergence, we extended our ORN encoding model by adding uniglomerular connections from ORNs to the antennal lobe, followed by sparse, divergent connections to 2500 KCs (Keene and Waddell, 2007; Litwin-Kumar et al., 2017; Caron et al., 2013). Inhibition was modeled via divisive normalization, with parameters chosen according to experiment (Olsen et al., 2010). We quantified decoding accuracy by training and testing a linear classifier on the KC activity output of sparse odors of distinct intensity and identity. We trained the classifier on $N_{ID}$ sparse odor identities at intensities chosen randomly over 4 orders of magnitude, then tested the classifier accuracy on the same set of odor identities but of differing concentrations.\n\nWith both ORN adaptation and divisive normalization, the accuracy of the classification by odor identity remains above 85% for more than 1000 odor identities ($N_{ID}>1000$). Removing ORN adaption while maintaining divisive normalization substantially reduces accuracy (down to 65% for 1000 odor identities). Further removing divisive normalization gives similar results, apart for very large numbers of odors identities ($N_{ID}>1000$), where divisive normalization provides benefits (Figure 5A). These results strongly implicate front-end adaptation as a key player in maintaining odor identity representations, before signals are further processed downstream.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/45293/elife-45293-fig5-v2.jpg)\n\n**Figure 5.:** (A) Accuracy of linear classification by odor identity, as a function of the number of distinct odor identities classified by the trained network (concentrations span 4 orders of magnitude), in systems with only ORN adaptation, only divisive normalization, both or neither. (B) Same as (A) but now classifying odors by valence. Odors were randomly assigned valence. For a given odor identity, the valence is the same for all concentrations.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/45293/elife-45293-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** Accuracy of binary classification by odor valence, for odors whose concentrations span a narrow range of concentrations (1 order of magnitude). Accuracy is plotted as a function of the number of distinct odor identities classified by the trained network, in systems with only ORN adaptation, only divisive normalization, both or neither. Decoding gains conferred by divisive normalization and/or ORN adaptation are much smaller than when odors span a much larger range of concentrations, as shown in the main text.\n\nAs a simpler task, we also considered binary classification, categorizing odors as appetitive or aversive. For simplicity, odor signals of the same identity but differing intensity were assigned the same valence. Classification accuracy degrades to chance level as $N_{ID}$ becomes very large (Figure 5B). When acting alone, either divisive normalization or ORN adaptation can help, although the effect of ORN adaptation is slightly stronger. When both are active, accuracy improves further, suggesting that these distinct adaptive transformations may act jointly at different stages of neural processing in preserving representations of odor identity. As expected, these gains mostly vanish for the same odors chosen from a narrower range of concentrations (Figure 5\u2014figure supplement 1).\n\nPrevious simulation results have shown that divisive normalization aids identity decoding from PN response to a stronger degree than we find here (Olsen et al., 2010). There, 19 distinct odor identities at three concentrations were classified more accurately with divisive normalization (80%) than without (68%). In our case, we find about \u223c75%\u00a0accuracy, with and without divisive normalization. This discrepancy is not necessarily inconsistent. First, we decode mixtures, not single odorants, and the combinatorics may reduce the benefit of divisive normalization. Second, we classify the responses of 2500 KCs, rather than 50 PNs (or 24 PNs as in Olsen et al., 2010). Kenyon cell responses follow a high degree of postsynaptic divergence from PNs, which could decorrelate neural responses (Caron et al., 2013; Litwin-Kumar et al., 2017; Krishnamurthy et al., 2017) similarly to divisive normalization, reducing the gains from the latter. Finally, the divisive normalization model is a simple one in which glomeruli are all mutually inhibiting. A more complex model in which each glomerulus inhibits only a subset of other glomeruli through local neurons might produce a larger contribution.\n\nIn sum, these results indicate that ORN adaptation might contribute significantly to odor recognition by identity and valence, and that divisive normalization also contributes, although possibly more to classification by valence than by identity. An intriguing possibility is that these two forms of gain control play different roles in coding discrete odor categories versus odor identities.\n\n## Discussion\n\nWeber-Law adaptation at the very front-end of the insect olfactory circuit (Gorur-Shandilya et al., 2017; Cafaro, 2016; Cao et al., 2016) may contribute significantly to the preservation of neural representations of odor identity amid confounding odors and intensity fluctuations. Drawing on experimental evidence for a number of ORN-invariant response features (Nagel and Wilson, 2011; Martelli et al., 2013; Stevens, 2016; Gorur-Shandilya et al., 2017; Si et al., 2019), we have found that this mechanism of dynamic adaptation confers significant benefits in coding fidelity, without the need for ORN-specific parameterizations. Still, our results hold when these invariances such as adaptation timescale or baseline activity are relaxed (Figure 3\u2014figure supplement 1 and Figure 3\u2014figure supplement 2). In the olfactory periphery, front-end Weber Law adaptation therefore appears fairly robust, a consequence of controlling gain via feedback from channel activity (Waite et al., 2018; Nagel and Wilson, 2011; Gorur-Shandilya et al., 2017), rather than through intrinsic, receptor-dependent mechanisms.\n\nOur results also suggest that a slight breaking of Weber scaling may aid combinatorial coding, by spreading firing rates more fully over the ORN dynamic range, while still preventing saturation. The degree of this breaking would manifest as a correction to the Weber scaling exponent, $\u223c(1/s)^{1}\u2192\u223c(1/s)^{1-\\beta}$, which could in principle be measured experimentally for individual ORNs. Such small deviations from the strict Weber-Fechner scaling have been observed (see extended figures in Gorur-Shandilya et al., 2017).\n\nWhile our framework incorporates many observed features of the Drosphila olfactory system \u2013 Weber-Law adaptation, power-law distributed receptor affinities, temporal filter invariance, connectivity topologies \u2013 it is minimal. We considered only one of the chemoreceptor families expressed in the fly antenna (Joseph and Carlson, 2015) and ignored possible contributions of odor binding proteins (Vogt and Riddiford, 1981; Menuz et al., 2014), inhibitory odorants (Cao et al., 2017), and odorant-odorant antagonism (Reddy et al., 2018), which could further boost coding capacity and preserve representation sparsity. Useful extensions to our nonlinear-linear-nonlinear model might incorporate ephaptic coupling between ORNs housed in the same sensillum (Su et al., 2012), global inhibition in the mushroom body (Papadopoulou et al., 2011), and the effects of long-term adaptation (Guo et al., 2017).\n\nPrevious studies have characterized various neural mechanisms that help preserve combinatorial codes. Lateral inhibition between glomeruli helps tame saturation and boost weak signals (Olsen et al., 2010). The sparse degree of connectivity to either the olfactory bulb (vertebrates) or mushroom body (insects) may also be precisely tuned to optimize the capacity to learn associations (Litwin-Kumar et al., 2017). In this work, we find that some of these downstream features act in concert with front-end dynamic adaptation in maintaining representations of odor identity.\n\nOther studies have implicated the unique temporal patterns of neural response as signatures of odor identity (Raman et al., 2010; Gupta and Stopfer, 2011; Brown et al., 2005; Gupta and Stopfer, 2014). ORN and projection neuron time traces form distinct trajectories in low-dimensional projections, and cluster by odor identity, much as we have found here for static responses at different concentrations (Figure 2). In locusts PNs, the trajectories elicited by foreground odors when presented in distinct backgrounds exhibit some degree of overlap; although partial, these overlaps were nonetheless sufficient to maintain background-invariant decoding from Kenyon cell responses (Saha et al., 2013). It was therefore suggested that background filtering likely occurs at the level of ORNs themselves (Saha et al., 2013). Likewise, in our framework, temporal coding is implicit: because the input nonlinearity depends on the diversity of binding affinities, odor signals are naturally formatted into temporal patterns that are both odor- and ORN-specific (Figure 1D-Figure 1E). Further, the short required memory timescales ($\\tau_{M}\u223c\\tau\u223c250ms$) suggest that only brief time windows are needed for accurate odor identification, consistent with previous findings (Brown et al., 2005; Saha et al., 2013). Moreover, we find that front-end adaptation enhances the robustness of other combinatorial coding schemes, such as primacy coding (Wilson et al., 2017), which relies on the temporal order of ORN activation but not absolute firing rate (Figure 4).\n\nIn the well-characterized chemosensory system of bacterial chemotaxis, Weber Law adaptation is enacted through a feedback loop from the output activity of the receptor-kinase complexes onto the enzymes modifying receptor sensitivity (Waite et al., 2018). It is interesting that some aspects of this logic are also present in ORNs: although the molecular players are different (and still largely unknown, although likely involving calcium channel signaling, Cao et al., 2016), it has been shown that transduction activity feeds back onto the sensitivity of Or-Orco ligand-gated cation channels, enabling the Weber-Fechner relation (Nagel and Wilson, 2011; Gorur-Shandilya et al., 2017; Cao et al., 2016). That this adaptation mechanism appears to act similarly across ORNs (Gorur-Shandilya et al., 2017; Martelli et al., 2013; Cao et al., 2016) suggests the possible involvement of the universal co-receptor Orco, whose role in long-term adaptation has recently been reported (Getahun et al., 2013; Getahun et al., 2016; Guo et al., 2017). Further, the identification of four subunits comprising the Orco-Or ion channel suggest that generic Or/Orco complexes may contain multiple odorant binding sites, which when included in our model supports our general findings (Figure 3\u2014figure supplement 3).\n\nWeber Law ensures that sensory systems remain in the regime of maximum sensitivity, broadening dynamic range and maintaining information capacity (Wark et al., 2007). For a single-channel system, this requires matching the midpoint of the dose-response curve to the mean ligand concentration (Nemenman, 2012), a strategy which may fail in multi-channel systems with overlapping tuning curves: adaptation to one signal could inhibit identification of others, if the signals excite some but not all the same sensors, as in Figure 1G. Our results show that this strategy is still largely functional. In CS decoding, this can be traced to the observation that accuracy is guaranteed when sufficiently distinct odor identities produce sufficiently distinct ORN responses, a condition known as the restricted isometry property (Cand\u00e8s et al., 2006). Indeed, the Weber-Fechner scaling increases the likelihood that this property is satisfied, beyond that in the non-adaptive system (SI text and Figure 3\u2014figure supplement 4 - Figure 3\u2014figure supplement 5). Still, restricted isometry does not require that response repertoires are invariant to environmental changes. That is, even if the subset of active ORNs were concentration-dependent, odors could still in principle be fully reconstructible by CS. Nonetheless, our results in t-SNE clustering (Figure 2), primacy coding (Figure 4B\u20134C), and odor classification (Figure 5) suggest that some signature of response invariance emerges as a natural byproduct of front-end adaptation. Together, this implies that Weber Law adaptation, whether required by the olfactory circuit for precise signal reconstruction (as in CS) or for developing odor associations (as in classification), can play an integral part in maintaining combinatorial codes amid changing environmental conditions.\n\n## Materials and methods\n\n### Adaptive ORN model\n\nWe model an odor as an $N$-dimensional vector $\ud835\udc2c=[s_{1},\u2026,s_{N}]$, where $s_{i}>0$ are the concentrations of individual volatile molecules (odorants) comprising the odor. The olfactory sensory system is modeled as a collection of $M$ distinct Or/Orco complexes indexed by the sub index $a=1,\u2026,M$, each of which can be bound with any one of the odorant molecules, and can be either active (firing) or inactive (quiescent). At first, we assume there is one binding site per complex; this will be generalized to many sites. We consider the binding and activation processes to be in equilibrium, assigning each state a corresponding Boltzmann weight, where the zero of energy is set by the unbound, inactive state $C_{a}$. These weights are:\n\n$$\nC_{a}1C_{a}^{\u2217}exp\u2061(\u2212\\beta\u03f5_{a})C_{a}:s_{i}exp\u2061(\u2212\\beta(\u2212E_{ai}\u2212\\mu_{i}))C_{a}^{\u2217}:s_{i}exp\u2061(\u2212\\beta(\u2212(E_{ai}^{\u2217}\u2212\u03f5_{a})\u2212\\mu_{i}),\n$$\n\nwhere $\u03f5_{a}$ (assumed positive) is the free energy difference between the active and inactive conformation of the unbound receptor, and $E_{a\u2062i}$ and $E_{a\u2062i}^{*}$ are the free energy differences (assumed positive) between the unbound and bound state for the inactive and active receptor, respectively. $\\mu_{i}=\\mu_{0}+\\beta^{-1}\u2062log\u2061(s_{i}/s_{0})$ is the chemical potential for odorant species $i$ in terms of a reference chemical potential $\\mu_{0}$ at concentration $s_{0}$, $s_{0}\u2062exp\u2061(-\\beta\u2062\\mu_{0})=s_{i}\u2062exp\u2061(-\\beta\u2062\\mu_{i})$, which can be traded for the thermodynamic-relevant disassociation constants $K_{a\u2062i}^{-1}=K_{D,a\u2062i}=s_{0}\u2062e^{\\beta\u2062(-E_{a\u2062i}-\\mu_{0})}$.\n\nAdding up contributions from all $i$ odorants, the active fraction is:\n\n$$\nA_{a}=\\frac{C_{a}^{\u2217}+\\sumiC_{a}^{\u2217}:s_{i}}{C_{a}^{\u2217}+\\sumiC_{a}^{\u2217}:s_{i}+C_{a}+\\sumiC_{a}:s_{i}}\u00a0=(1+\\frac{C_{a}+\\sumiC_{a}:s_{i}}{C_{a}^{\u2217}+\\sumiC_{a}^{\u2217}:s_{i}})\u00a0=(1+e^{\u03f5_{a}}\\frac{1+K_{a}\u22c5s(t)}{1+K_{a}^{\u2217}\u22c5s(t)})^{\u22121},\n$$\n\nwhere we have expressed free energies in units of $k_{B}\u2062T=\\beta^{-1}$ for notational convenience.\n\nThis expression can be generalized for the case of multiple, independent binding sites through some simple combinatorial factors. Consider first an odorant $i$ which can bind one of two locations on receptor $a$. There are then four possible inactive states: both sites unbound, site one bound, site two bound, both sites bound. Combined with the active states, there are therefore eight states for odorant $i$ and receptor $a$, with energies:\n\n$$\nactive{1,\u2212E_{ai}\u2212\\mu_{i},\u2212E_{ai}\u2212\\mu_{i},\u22122E_{ai}\u22122\\mu_{i}}inactive{\u03f5_{a},\u2212(E_{ai}^{\u2217}\u2212\u03f5_{a})\u2212\\mu_{i},\u2212(E_{ai}^{\u2217}\u2212\u03f5_{a})\u2212\\mu_{i},\u2212(2E_{ai}^{\u2217}\u2212\u03f5_{a})\u22122\\mu_{i}}\n$$\n\nIn the active fraction, Equation 2, the Boltzmann factors combine through the binomial theorem, giving (for a single odorant environment $i$):\n\n$$\nA_{a}(odoranti,2bindingsites)=[1+e^{\u03f5_{a}}(\\frac{1+K_{a}\u22c5s(t)}{1+K_{a}^{\u2217}\u22c5s(t)})^{2}]^{\u22121}.\n$$\n\nThis expression generalizes for an arbitrary number of odorants and independent binding sites through the appropriate combinatorial factors, giving an active fraction of\n\n$$\nA_{a}(Nodorants,Rbindingsites)=[1+e^{\u03f5_{a}}(\\frac{1+K_{a}\u22c5s(t)}{1+K_{a}^{\u2217}\u22c5s(t)})^{R}]^{\u22121}.\n$$\n\nTo generate ORN time traces, Equations 2-3 are integrated numerically using the Euler method with a 2 ms time step. For ORN firing (Equation 4), $h\u2062(t)$ is bi-lobed (Martelli et al., 2013): $h(t)=Ap_{Gam}(t;\\alpha_{1},\\tau_{1})\u2212Bp_{Gam}(t;\\alpha_{2},\\tau_{2})$, $A=190$, $B=1.33$, $\\alpha_{1}=2$, $\\alpha_{2}=3$, $\\tau_{1}=0.012$, and $\\tau_{2}=0.016$, where $p_{Gam}$ is the pdf of Gamma($\\alpha$, $1/\\tau$). Nonlinearity $f$ is modeled as a linear rectifier with 5 Hz threshold.\n\n### Derivation of ORN gain\n\nWeber\u2019s Law states that the gain, or differential response, of the receptor activity $A_{a}$ scales with the mean odor concentration $s\u00af_{i}$. To show how this is satisfied in our model, we consider the response, Equation 2, to a signal $\ud835\udc2c=\ud835\udc2c\u00af+\u0394\u2062\ud835\udc2c$, where $\u0394\u2062\ud835\udc2c$ consists of only a small fluctuation in the $i$th component $\u0394\u2062s_{i}<|s\u00af_{i}|$ about the mean. We derive the change in response to fluctuation $\u0394\u2062s_{i}$ for general $\\beta$ from 0 (Weber\u2019s law) to 1 (no adaptation).\n\nFirst we write the activity in the form:\n\n$$\nA_{a}=(1+e^{F_{a}})^{\u22121},\n$$\n\nwhere\n\n$$\nF_{a}=\u03f5_{a}\u2062(\ud835\udc2c\u00af)+ln\u2061(\\frac{1+\ud835\udc0a_{a}\u22c5\ud835\udc2c}{1+\ud835\udc0a_{a}^{*}\u22c5\ud835\udc2c}),\n$$\n\nwhere $\u03f5_{a}\u2062(\ud835\udc2c\u00af)$ is given by Equation 5. Then, assuming $1/\ud835\udc0a_{a}^{*}\u226as_{i}\u226a1/\ud835\udc0a_{a}$, the change in response from the adapted level $A_{a}\u2062(\ud835\udc2c\u00af)$ is\n\n$$\nA_{a}(s)\u2212A_{a}(s\u00af)=\u0394A_{a}=\\frac{dA_{a}}{dF_{a}}\\frac{dF_{a}}{ds}|_{s\u00af}\u0394s_{i}=\u2212\\frac{e^{F_{a}}}{(1+e^{F_{a}})^{2}}|_{s\u00af}(\\frac{\u2212K_{ai}^{\u2217}}{K_{a}^{\u2217}\u22c5s\u00af})\u0394s_{i}.\n$$\n\nWe use Equation 5 to evaluate $e^{F_{a}}$ at $\ud835\udc2c\u00af$, obtaining:\n\n$$\ne^{F_{a}}\u2248\\frac{1\u2212A_{0a}}{A_{0a}}(K_{a}^{\u2217}\u22c5s\u00af)^{\u2212\\beta},\n$$\n\nwhereby\n\n$$\n\\frac{\u0394A_{a}}{\u0394s_{i}}=\\frac{\\frac{1\u2212A_{0a}}{A_{0a}}(K_{a}^{\u2217}\u22c5s\u00af)^{\u2212\\beta}}{(1+\\frac{1\u2212A_{0a}}{A_{0a}}(K_{a}^{\u2217}\u22c5s\u00af)^{\u2212\\beta})^{2}}(\\frac{K_{ai}^{\u2217}}{K_{a}^{\u2217}\u22c5s\u00af})\u00a0=\\frac{(1\u2212A_{0a})A_{0a}K_{ai}^{\u2217}}{[A_{0a}(K_{a}^{\u2217}\u22c5s\u00af)^{\\frac{1+\\beta}{2}}+(1\u2212A_{0a})(K_{a}^{\u2217}\u22c5s\u00af)^{\\frac{1\u2212\\beta}{2}}]^{2}}.\n$$\n\nFor $\\beta=0$ (the fully adaptive case) and a single odorant, this expression for the gain reduces to $(1-A_{0\u2062a})\u2062A_{0\u2062a}/s_{i}$. For small $\\beta$, and given $A_{0\u2062a}\u22430.1$ (corresponding to 30 Hz on a 300 Hz firing rate scale), the denominator is dominated by the $1-A_{0\u2062a}$ term, giving:\n\n$$\n\\frac{\u0394A_{a}}{\u0394s_{i}}|_{(\\beta\u226a1)}=\\frac{A_{0a}K_{ai}^{\u2217}}{(1\u2212A_{0a})(K_{a}^{\u2217}\u22c5s\u00af)^{1\u2212\\beta}}.\n$$\n\nThe implication of this is that the gain scaling of the inverse mean intensity, which is 1 for perfect adaptation (gain $\u223c(1/s_{i})^{1}$), is now sublinear. Thus, when Weber\u2019s Law is weakly broken, the gain still reduces with mean odor intensity, but not as quickly.\n\n### t-SNE dimensionality reduction and mutual information\n\nFor t-SNE dimensionality reduction (van der Maaten and Hinton, 2008), ORN responses were generated for odor signal combinations consisting of 1 (among 10) distinct sparse foreground odors A atop 1 (among 50) distinct sparse background odors B, for Figure 2B. Figure 2C plots responses for 10 odors at 40 concentrations spanning four decades, atop a random sparse background odor of similar magnitude. For adaptive systems, $\u03f5_{a}$ were set to their fully adapted values to the background odor, given by Equation 5, with $\\beta=0$.\n\nThe mutual information (MI) between signal and response quantifies how many bits of information a response contains about the stimulus. As we are interested in how much information ORN responses $\ud835\udc2b$ contain about novel foreground odors $\ud835\udc2c$, we calculate the MI between $\ud835\udc2c$ and $\ud835\udc2b$. This calculation requires the conditional response distribution $P\u2062(\ud835\udc2b|\ud835\udc2c)$, where the probability distribution is over different background odors $\ud835\udc2c\u00af$. To get this distribution, we hold $\ud835\udc2c$ fixed and generate $\ud835\udc2b$ in the presence of distinct backgrounds. To these responses $\ud835\udc2b$, we also add a small amount of Gaussian noise (mean zero and variance 1 Hz), which allows a distribution to be defined when there is no background odor. We then bin the resulting $\ud835\udc2b$ in units of $\u0394\u2062r$ = 1 Hz to get a histogram representing $P\u2062(\ud835\udc2b|\ud835\udc2c)$ (The histogram is necessary, since a sum must be taken over $\ud835\udc2b$). If responses were completely background invariant, the resulting histogram would be highly peaked.\n\nUsing $P\u2062(\ud835\udc2b|\ud835\udc2c)$, the MI is defined as\n\n$$\nMI=H_{response}\u2212H_{noise}\n$$\n\nwhere $H_{noise}$ is:\n\n$$\nH_{noise}=\u2212\\sums,rP(s)P(r|s)log_{2}\u2061P(r|s)\n$$\n\nand $H_{response}$ is\n\n$$\nH_{response}=\u2212\\sumrP(r)log_{2}\u2061P(r)\n$$\n\nwhere\n\n$$\nP\u2062(\ud835\udc2b)=\\sum\ud835\udc2cP\u2062(\ud835\udc2c)\u2062P\u2062(\ud835\udc2b|\ud835\udc2c).\n$$\n\nThe noise entropy $H_{noise}$ quantifies how much variability comes from the background odors, but is not related to changes in foreground odor. The response entropy $H_{response}$ quantifies how much variability comes from both background and foreground. The mutual information, which is their difference, is a measure of how responses differ by foreground alone.\n\n### Compressed sensing decoding of ORN responses\n\nCompressed sensing (CS) addresses the problem of determining a sparse signal from a set of linear measurements, when the number of measurements is less than the signal dimension. Specifically, it is a solution to\n\n$$\n\ud835\udc32=\ud835\udc03\ud835\udc31,\n$$\n\nwhere $\ud835\udc31\\in\u211d^{N}$ and $\ud835\udc32\\in\u211d^{M}$ are vectors of signals and responses, respectively, and $\ud835\udc03$ is the measurement matrix. Since measurements are fewer than signal components, then $M<N$, whereby $\ud835\udc03$ is wide rectangular and so Equation 16 cannot be simply inverted to produce $\ud835\udc31$. The idea of CS is to utilize the knowledge that $\ud835\udc31$ is sparse, that\u00a0is only $K$ of its components, $K\u226aN$ are nonzero. Both the measurements and sparsity are thus combined into a single constrained optimization routine:\n\n$$\nx^_{i}=argmin\\sumiN|x_{i}|suchthaty=Ds\n$$\n\nwhere $x^_{i}$ are the optimal estimates of the signal components and the sum, which is known as the $L_{1}$ norm of $\ud835\udc31$, is a natural metric of sparsity (Donoho, 2006).\n\nThe $L_{1}$ norm is a convex operation and the constraints are linear, so the optimization has a unique global minimum. To incorporate the nonlinear response of our encoding model into this linear framework, we assume that the responses are generated through the full nonlinear steady state response, Equations 2- 4, but that the measurement matrix $\ud835\udc03$ needed for decoding uses a linear approximation of this transformation. Expanding Equation 4 around $\ud835\udc2c\u00af=\ud835\udc2c-\u0394\u2062\ud835\udc2c$ gives\n\n$$\n\u0394r_{a}(t)=r_{a}(s(t))\u2212r_{a}(s\u00af(t))\u0394r_{a}(t)=\\int^{t}d\\tauh(t\u2212\\tau)\\sumiN\\frac{dA_{ai}}{ds_{i}}|_{s\u00af}\u0394s_{i}\n$$\n\nwhere\n\n$$\nr_{a}(s_{0})=\\int^{t}d\\tauh(t\u2212\\tau)\\sumiNA_{0a}\n$$\n\nand where $\\frac{d\u2062A_{a\u2062i}}{d\u2062s_{i}}|_{\ud835\udc2c\u00af}$ is given by the right-hand side of Equation 14 with $\\beta=0$. Equations 18 and 19 hold only for integrands above 5 Hz (and are zero below), as per the linear rectifier $f$. We assume that the neural decoder has access to background $\ud835\udc2c\u00af$, presumed learned (this assumption can be relaxed; see below), and to the linearized response matrix, Equation 14, but must infer the excess signals $\u0394\u2062s_{i}$ from excess ORN firing rates $\u0394\u2062r_{a}\u2062(t)$. Thus, this corresponds to the CS framework (Equation 17) via $\u0394\u2062\ud835\udc2b\u2192\ud835\udc32$, $\u0394\u2062\ud835\udc2c\u2192\ud835\udc31$, and $d\u2062A_{a\u2062i}/d\u2062s_{i}|_{\ud835\udc2c\u00af}\u2192\ud835\udc03$. We optimize the cost function in Equation 17 using sequential least squares programming, implemented in Python through using the scientific package SciPy.\n\nFor our simulations, we let sparse components $s_{i}$ be chosen as $s_{i}=s\u00af_{i}+\u0394\u2062s_{i}$, where $s\u00af_{i}=s_{0}$ and $\u0394\u2062s_{i}\u223c\ud835\udca9\u2062(s_{0}/3,s_{0}/9)$. The measurement matrix $\ud835\udc03$ depends on the free energy differences $\u03f5_{a}$. For static stimuli, $\u03f5_{a}$ equals the fixed point of Equation 3 in response to the background stimulus with $\\beta=0$. For fluctuating stimuli, $\u03f5_{a}$ is updated in time by continuously integrating $r_{a}\u2062(t)$, via Equation 3 and 4; thus, only knowledge of the response $r_{a}\u2062(t)$ are needed by the decoder. To quantify decoding accuracy, we treat the zero and nonzero components of the sparse odor vector separately. We demand that the $K$ nonzero components $s^_{i}$ of the estimated sparse vector are within 25% of their true values $s_{i}$, and that the $N-K$ zero components are estimated less than 10% of $s_{0}$. Together, this ensures that the odorants comprising the odor mixture are estimated sufficiently close to their concentrations, and that the remaining components are sufficiently small. Odor signals $\ud835\udc2c$ are considered correctly decoded if both of these conditions are satisfied for all components $s_{i}$. The relatively lax accuracy demanded on the nonzero components is to prevent oversensitivity on the unavoidable errors introduced by linearization. Qualitatively, our findings are robust to these choices.\n\nThe naturalistic odor signal (Figure 3D) was generated by randomly varying flow rates of ethyl acetate and measuring the concentration with a photo-ionization detector (Gorur-Shandilya et al., 2017). Statistics mirroring a turbulent flow (Celani et al., 2014) were verified (Figure 3\u2014figure supplement 6).\n\n### Iterative hard thresholding (IHT) and the restricted isometry property in compressed sensing\n\nThe purpose of response linearization (Equation 18) is simply to apply compressed sensing reconstruction directly using linear programming, without worrying about issues of local minima in Equation 17. This allows us to isolate the impact of Weber Law adaptation from the particularities of the numerics. An alternate technique for compressed signal reconstruction, iterative hard thresholding (IHT), does not minimize the constrained $L_{1}$ norm directly, rather applying a hard threshold to an iteratively updated signal estimate (Blumensath and Davies, 2009b). IHT can be generalized straightforwardly to nonlinear constraints, and would actually dispense with the need for a learned background $\ud835\udc2c\u00af$, simply initializing the iterations from $\ud835\udc2c\u00af=\ud835\udfce$. Remarkably, this technique works quite well even for non-linear measurements (Blumensath, 2013). We demonstrate the applicability of the IHT algorithm to our odor decoding system in Figure 3\u2014figure supplement 5, which reproduces qualitatively the findings in the main text. For these calculations, no background odor was assumed, each iterative decoding being initialized $\ud835\udc2c\u00af=\ud835\udfce$.\n\nIHT provides an alternate computational technique of nonlinear CS, which could be used to both extend and verify our results. Further, it allows us to illustrate why Weber Law adaptation maintains signal reconstruction fidelity in our olfactory sensing model. Like CS using $L_{1}$-norm minimization, IHT exhibits amenable reconstruction and convergence properties under the guarantee of the so-called restricted isometry property (RIP) (Cand\u00e8s et al., 2006). Loosely, RIP measures how closely a matrix operator resembles an orthogonal transformation when acting on sparse vectors. The degree to which RIP is satisfied can be understood in terms of the spectrum of a measurement matrix $\ud835\udc03$. In particular, if $\\lambda_{i}$ are the eigenvalues of $\ud835\udc03_{i}^{T}\u2062\ud835\udc03_{i}$, where $\ud835\udc03_{i}$ is any $k\\timesm$ submatrix of $\ud835\udc03$, and\n\n$$\n1\u2212\\delta_{i}\\leq\\lambda_{min}\\leq\\lambda_{max}\\leq1+\\delta_{i}\n$$\n\nis satisfied for some $\\delta_{i}$, then $\ud835\udc03$ satisfies the RIP with constant $\\delta_{i}$. Plainly, the RIP states that the eigenvalues of $\ud835\udc03_{i}^{T}\u2062\ud835\udc03_{i}$, when acting on $k$-sparse vectors, are centered around 1. Thus, to intuit why signal reconstruction breaks down in the non-adaptive sensing system, we can investigate the eigendecomposition of various linearizations of the measurement matrix. We do this now, starting with a brief description of the IHT.\n\nIn the linear setting, IHT seeks sparse signals via the following iterative procedure (Blumensath and Davies, 2009b):\n\n$$\n\ud835\udc2c_{i+1}=H_{K}\u2062(\ud835\udc2c_{i}+\\mu\u2062\ud835\udc03^{T}\u2062(\ud835\udc2c_{i}+(\ud835\udc32-\ud835\udc03\ud835\udc2c_{i})))\n$$\n\nwhere $\ud835\udc2c_{i}$ is the $i$th estimate of the sparse signal $\ud835\udc2c$, $\\mu$ is a step size for the iterations, and $\ud835\udc32$, $\ud835\udc03$ are as defined above. $H_{k}\u2062(\u22c5)$ is a thresholding function which sets all but the largest $K$ values of its argument to zero. The nonlinear extension to IHT is (Blumensath, 2013):\n\n$$\n\ud835\udc2c_{i+1}=H_{K}\u2062(\ud835\udc2c_{i}+\\mu\u2062\ud835\udc03_{\ud835\udc2c_{i}}^{T}\u2062(\ud835\udc2c_{i}+(\ud835\udc32-D\u2062(\ud835\udc2c_{i})))),\n$$\n\nwhere $D$ is a nonlinear sensing function and $\ud835\udc03_{\ud835\udc2c_{i}}$ is a linearization of $D$ about the point $\ud835\udc2c_{i}$. Reconstructibility for $k$-sparse signals is guaranteed if $\ud835\udc03_{\ud835\udc2c_{i}}$ satisfies RIP for all $\ud835\udc2c_{i}$ and all $k$-sparse vectors (Blumensath and Davies, 2009b). To get a sense of how this is preserved in the adaptive system, we calculate the eigenvalues for 1000 choices of $\ud835\udc2c_{i}$, acting on random signals of given sparsity $K$ (Figure 3\u2014figure supplement 4). Since the RIP is sensitive to constant scalings of the measurement matrix (while the actual estimation problem is not), we scaled all columns of $\ud835\udc03_{\ud835\udc2c_{i}}$ to norm unity (Blumensath and Davies, 2009a). This normalizes the eigenvalues of $\ud835\udc03_{\ud835\udc2c_{i}}^{T}\u2062\ud835\udc03_{\ud835\udc2c_{i}}$ to center near unity before calculating the eigendecomposition, allowing us to assess the degree to which the RIP is satisfied. This scaled matrix can be used directly in Equation 22 (Blumensath, 2013; Blumensath and Davies, 2009a). The spectra of these matrices indicates that the RIP becomes far more weakly satisifed in the non-adaptive system than in the adaptive one, for sufficient odor complexity and intensity.\n\n### Network model and classification\n\nFor the network model, the AL-to-MB connectivity matrix $\ud835\udc09_{1}$, is chosen such that each KC connects pre-synaptically to seven randomly chosen AL glomeruli (Litwin-Kumar et al., 2017; Caron et al., 2013). The results shown in Figure 5 are an average of 10 distinct instantiations of this random topology. The $Z=2500$ KCs are then connected by a matrix $\ud835\udc09_{2}$ to a readout layer of dimension $Q$, where $Q=2$ for binary and $Q=N_{ID}$ for multi-class classification. Both AL-to-MB and MB-to-readout connections are perceptron-type with rectified-linear thresholds. The weights of $\ud835\udc09_{1}$ and $\ud835\udc09_{2}$ are chosen randomly from $\u223c\ud835\udca9\u2062(0,1/\\sqrt{7})$ and $\u223c\ud835\udca9\u2062(0,1/\\sqrt{Z})$, respectively. Only the $\ud835\udc09_{2}$ and the MB-to-output thresholds are updated during supervised network training, via logistic regression (for binary classification) or its higher-dimensional generalization, the softmax cross entropy (for multi-class classification).\n",
+      "created_at": "2025-12-02T10:55:00.734064Z"
+    },
+    {
+      "id": "674bb381-ea7d-4ba0-9449-0b88403ebf4c",
+      "submission_id": "94161787-4bcf-493e-a18d-f919645e5ce5",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Fred Rieke, University of Washington United States\n\nReviewers:\n- Katherine I. Nagel, NYU United States\n\n## Review text\n\nDOI: [10.7554/eLife.45293.020](https://doi.org/10.7554/eLife.45293.020)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Front-end Weber-Fechner gain control enhances the fidelity of combinatorial odor coding\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Catherine Dulac as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Katherine I. Nagel (Reviewer #2).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nThe reviewers agreed that the work was of potential interest. They also agreed, however, that the presentation needs to be improved considerably. To be considered further, the paper needs to be revised carefully considering eLife's broad readership. This includes unpacking details about technical aspects of the work \u2013 such as embedding and compressed sensing \u2013 and explaining the key mathematical concepts of the model in words and (better) in schematic figures. The terseness with which the results were presented made evaluating the work difficult. The individual reviews below contain specific suggestions and comments that should help identify where such changes are needed, but we would also encourage the authors to ask for comments from several non-olfactory colleagues, particularly about accessibility.\n\nIndividual reviews follow:\n\nReviewer #1:\n\nThis paper investigates the impact of Weber adaptation in olfactory receptor neurons on olfactory coding using a model based on past experimental work (described in the paper this one is linked too). The central question should be of general interest, and the approach taken in the paper seems appropriate. I struggled, however, with the way the work is presented and this left me unsure about the conclusions reached. I am not an expert in olfaction, but I suspect these struggles will be shared by many other potential readers.\n\nResponse dynamics: I was quite confused about the importance of differences in response dynamics of different ORNs. In places the text appears to state that differences in dynamics are small (e.g. Introduction), and in others that they are important (subsection \u201cModel of ORN sensing repertoire\u201d). Some of this may originate from responses of a single cell to multiple odors vs. responses of different cells. Nonetheless, the present version of the paper is confusing in this regard.\n\nFigure 2 and embedding: The embedding process used in the analysis illustrated in Figure 2 is not explained in any detail \u2013 meaning that I could not interpret Figure 2. Later in the Discussion (third paragraph) this figure is referred to with respect to response dynamics \u2013 this was particularly unclear. This figure is critical to the paper, so must be explained in more detail.\n\nFigure 3: The use of compressed sensing in the decoding analysis in this figure is unclear. Related to this point, it's not clear how an appropriate tolerance is chosen (subsection \u201cFront-end adaptation enhances odor discrimination in complex environments\u201d, second paragraph). The approach to decoding needs to be described in considerable more detail.\n\nDiscrimination in complex odor environments: it is not clear here why the background should be represented as static. I would have thought it would be subject to many of the same properties that make the signal dynamic. The role/importance of short term memory is also unclear.\n\nIt would be interesting to see how important ORN-specific adaptation is for the results presented, as compared to a mechanism that acted universally across all ORN responses.\n\nEquation 1: The origin of this equation could get explained in more detail.\n\nEquation 2: This form of feedback, and particularly its relation to Weber adaptation, should get explained more.\n\nReviewer #2:\n\nThis manuscript asks how adaptation in olfactory receptor neurons (ORNs) impacts the ability of an olfactory system to encode odor identities reliably. There is a broad consensus in the field that odors are encoded by the combinatorial activity of an array of receptors, each composed of an odor-specific receptor and a common co-receptor. At least one form of adaptation, in which the sensitivity of olfactory receptor neurons is adjusted based on the activation level of the receptor complex, is present within ORNs, likely acting at the level of feedback onto the orco co-receptor. This study uses theoretical approaches to ask how this form of adaptation impacts decoding of odor identity, using three different models of odor decoding: compressed sensing, primacy coding, and a biologically-inspired Kenyon cell model. The manuscript builds on a previous paper from the same group that developed a formulation for ORN adaptation based on a 2-state receptor model. The broad finding of the study is that front-end adaptation improves odor identity decoding using a variety of models. Overall I think this study addresses an important question and does so in a thorough way, making use of very reasonable models for both odor encoding and decoding, and providing a nice overview of the state of the field. However, I think some elements of the exposition could be made more accessible for less mathematically-inclined readers, and that some additional simulations would help pinpoint the reason why front-end adaptation improves encoding.\n\n1) The manuscript is written for a highly quantitative audience and assumes a background familiar with the various models (receptor model, compressed sensing, t-SNE) they employ. I think the paper could be made more accessible by unpacking some of the mathematical formulae in the main text.\n\nFor example, it would be helpful to show a plot of the activation function Aa as a function of odor concentration (Equation 1) for some of their sample model neurons, in both the unadapted and adapted state.\n\nIn addition, the discussion of compressed sensing is highly compressed. If the authors could describe this in an intuitive or graphical way in the main Results it would help readers understand what this is and how it works.\n\nUsing a KC-inspired model to decode odor identity will probably be the most intuitive decoding scheme for many biologists. Here this decoding scheme is presented last but perhaps it might go earlier in the manuscript.\n\n2) One possible interpretation of the results in Figures 2 and 3 is that in the non-adaptive system, high background odor concentrations cause the receptors to saturate, preventing them from encoding anything about the target odor, or at least massively compressing their dynamic range. This would mean that sensitivity adaptation is important (the activation curve needs to shift with increasing odor concentration), but not the precise form of the adaptation. Could the authors perform additional simulations to address this? For example: (1) What is the state of the receptors (distribution of activation levels) in the adapted versus un-adapted system in high background odor (prior to target odor presentation) vs. background+target? (2) How do the results in Figures 2 and 3 differ if the adaptation is not exact? That is, what if there is some factor \ud835\udefd in front of Aa(t) in Equation 2? How precise does the adaptation have to be for this to work?\n\nReviewer #3:\n\nThe authors describe a receptor type-independent adaptation mechanism at the level of the olfactory sensory neurons (OSNs) that maintains odor capacity in natural conditions. They proposed that adaptation or gain control follows the Weber-Fechner Law of psychophysics (previously shown by the same group) and suggest that in a biological context it may be driven by Orco co-receptor activity in a non-receptor specific manner. The model results show that this kind of adaptation can aid concentration-invariant coding, discrimination (even in the presence of background odors) as well as it agrees with the novel hypothesis of primacy coding. The topic discussed in the article is relevant and the results are convincing, it is worth publishing; I have no major concerns.\n\n[Editors' note: further revisions were requested prior to acceptance, as described below.]\n\nThank you for submitting your article \"Front-end Weber-Fechner gain control enhances the fidelity of combinatorial odor coding\" for consideration by eLife. Your article has been reviewed by one peer reviewer, Fred Rieke, who is the Reviewing Editor and Reviewer #1, and the evaluation has been overseen by Catherine Dulac as the Senior Editor.\n\nReviewer #1:\n\nThis is a revision of a paper describing a modeling approach to explore the role of front-end adaptation in olfactory coding. The paper is interesting, and contains a number of nice analyses that provide insight into the interaction between adaptation and coding. The revisions have made the paper easier to understand, but there are still several issues that are not as clear as they need to be. These, and some smaller points, are detailed below. In general (as detailed below), for each analysis I think it is essential that each of the steps involved in going from the modeled responses to a completed piece of analysis need to be clear to a non-expert reader.\n\n1) t-SNE analysis.\n\nThe comparison of t-SNE to PCA (first paragraph of the subsection \u201cFront-end Weber-Fechner adaptation preserves odor coding among background and intensity confounds\u201d) is helpful. Can you build on the end of this paragraph to explain how t-SNE works, and, critically, to define the axes of Figures 2B, C? It is quite important that a reader is comfortable with what is being plotted here.\n\n2) CS analysis.\n\nThe description of the sparseness constraint added to the paper is helpful. What is still not clear, however, is how the stimulus itself is estimated (I can guess, but it should be stated explicitly). Related to this point, the signal perturbation (Ds) is defined only in the Materials and methods but needed to interpret the main text (subsection \u201cFront-end adaptation enhances odor decoding in complex environments\u201d, third paragraph). It should also be clearer that you are decoding discrete odor identify, not concentration (assuming that is correct).\n\n3) Decoding time-varying stimuli.\n\nSeveral aspects of the analysis described in the fifth paragraph of the subsection \u201cFront-end adaptation enhances odor decoding in complex environments\u201d are not clear. Were odors randomly assigned to each whiff? And was the entire time course decoded, or was each whiff treated as a discrete event? In general, the description of this analysis needs to be considerably more detailed. Is there an intuitive argument as to why the longer time scales of adaptation are helpful that could be added to the last paragraph of the subsection \u201cFront-end adaptation enhances odor decoding in complex environments\u201d?\n\n4) Tests of primacy coding.\n\nThe text suggests that the background odors may interfere with primacy coding in the absence of front-end adaptation. The analysis presented in Figure 4 then shows that primacy sets are maintained in the presence of front-end adaptation. But there is not a test, unless I missed it, of the initial suggestion that primacy sets are not maintained without front-end adaptation. This test is needed to interpret this section.\n\n5) Interplay of front-end adaptation and divisive normalization.\n\nFigure 5 suggests that these two forms of gain control may play quite different roles in coding discrete odor categories (aversive, appetitive) and odor identity. This is quite interesting. I would consider swapping the order of presentation so you start with a discussion of odor identify (that flows more naturally from the previous sections). The differences between the present results and those of Olsen et al. should also, at a minimum, get discussed in more detail.\n",
+      "created_at": "2025-12-02T10:55:00.734064Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T10:55:00.734064Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T10:55:00.734064Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "3f5db605-266a-4204-ba11-32057e5212ce",
+      "content_id": "5bfc7874-f544-46fd-943d-db00ec4e0783",
+      "claim_id": "C1",
+      "claim": "Drosophila olfactory receptor neurons (ORNs) expressing the co-receptor Orco scale their gain inversely with mean odor intensity according to Weber-Fechner's law.",
+      "claim_type": "EXPLICIT",
+      "source": "We showed previously (Gorur-Shandilya et al., 2017) that Drosophila olfactory receptor neurons (ORNs) expressing the co-receptor Orco scale their gain inversely with mean odor intensity according to Weber-Fechner's law.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior work (Gorur-Shandilya et al., 2017) that demonstrated this relationship.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:55:00.734064Z"
+    },
+    {
+      "id": "5dbf7eed-2301-4788-b086-13bbe75be717",
+      "content_id": "5bfc7874-f544-46fd-943d-db00ec4e0783",
+      "claim_id": "C2",
+      "claim": "Front-end adaptation promotes the reconstruction of odor identity from dynamic odor signals, even in the presence of confounding background odors and rapid intensity fluctuations.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we show that this front-end adaptation promotes the reconstruction of odor identity from dynamic odor signals, even in the presence of confounding background odors and rapid intensity fluctuations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the theoretical modeling and computational results presented throughout the manuscript, including compressed sensing decoding accuracy analyses.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:55:00.734064Z"
+    },
+    {
+      "id": "2403a4f0-4ebe-440a-9582-7395e6f37601",
+      "content_id": "5bfc7874-f544-46fd-943d-db00ec4e0783",
+      "claim_id": "C3",
+      "claim": "Enhancements from front-end adaptation are further aided by known downstream transformations in the antennal lobe and mushroom body.",
+      "claim_type": "EXPLICIT",
+      "source": "These enhancements are further aided by known downstream transformations in the antennal lobe and mushroom body.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the network modeling results shown in Figure 5 and the associated analysis of classification accuracy.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:55:00.734064Z"
+    },
+    {
+      "id": "58a470ef-c9e5-41b4-afc4-3a4872e704e1",
+      "content_id": "5bfc7874-f544-46fd-943d-db00ec4e0783",
+      "claim_id": "C4",
+      "claim": "The adaptation mechanism is not intrinsic to the identity of the receptor involved.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results, which are applicable to various odor classification and reconstruction schemes, stem from the fact that this adaptation mechanism is not intrinsic to the identity of the receptor involved.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to experimental work (Nagel and Wilson, 2011) and is a key assumption in the model.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:55:00.734064Z"
+    },
+    {
+      "id": "7e894755-b888-4cbe-aaba-dbb999d5b915",
+      "content_id": "5bfc7874-f544-46fd-943d-db00ec4e0783",
+      "claim_id": "C5",
+      "claim": "A feedback mechanism adjusts receptor sensitivity based on the activity of the receptor-Orco complex, according to Weber-Fechner's law.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, a feedback mechanism adjusts receptor sensitivity based on the activity of the receptor-Orco complex, according to Weber-Fechner's law.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the model equations (Equations 2-3) and citations to experimental work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:55:00.734064Z"
+    },
+    {
+      "id": "7a2607f2-a6b7-4969-8e93-ee25445b7ebd",
+      "content_id": "5bfc7874-f544-46fd-943d-db00ec4e0783",
+      "claim_id": "C6",
+      "claim": "A common scaling of the gain across Orco-expressing ORNs may be a key feature of ORN adaptation that helps preserve combinatorial odor codes in naturalistic landscapes.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, a common scaling of the gain across Orco-expressing ORNs may be a key feature of ORN adaptation that helps preserve combinatorial odor codes in naturalistic landscapes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the computational results showing improved odor coding with Weber-Fechner adaptation across multiple decoding schemes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:55:00.734064Z"
+    },
+    {
+      "id": "075b2069-cd28-4338-aac1-a0cfb9c2b70c",
+      "content_id": "5bfc7874-f544-46fd-943d-db00ec4e0783",
+      "claim_id": "C7",
+      "claim": "Individual ORNs typically express a single Or.",
+      "claim_type": "EXPLICIT",
+      "source": "Individual ORNs, which typically express a single Or, respond to many odorants, while individual odorants activate many distinct ORNs (Friedrich and Korsching, 1997; Hallem and Carlson, 2006; Wang et al., 2010; Nara et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to experimental literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:55:00.734064Z"
+    },
+    {
+      "id": "a6b141d9-91f9-489e-a485-1c9ed50049a2",
+      "content_id": "5bfc7874-f544-46fd-943d-db00ec4e0783",
+      "claim_id": "C8",
+      "claim": "Individual ORNs respond to many odorants, while individual odorants activate many distinct ORNs.",
+      "claim_type": "EXPLICIT",
+      "source": "Individual ORNs, which typically express a single Or, respond to many odorants, while individual odorants activate many distinct ORNs (Friedrich and Korsching, 1997; Hallem and Carlson, 2006; Wang et al., 2010; Nara et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to experimental literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:55:00.734064Z"
+    },
+    {
+      "id": "c2d03ae7-a538-433e-8f06-54647c168d8c",
+      "content_id": "5bfc7874-f544-46fd-943d-db00ec4e0783",
+      "claim_id": "C9",
+      "claim": "Odors are encoded by the combinatorial patterns of activity they elicit in the sensing periphery.",
+      "claim_type": "EXPLICIT",
+      "source": "Odors are thus encoded by the combinatorial patterns of activity they elicit in the sensing periphery (Malnic et al., 1999; Wang et al., 2010; Hildebrand and Shepherd, 1997; Hallem and Carlson, 2006; de Bruyne et al., 2001; Friedrich and Korsching, 1997), and these patterns are decoded downstream into behavioral response (Wilson, 2013; Davies et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to experimental literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:55:00.734064Z"
+    },
+    {
+      "id": "ecf228c6-4a20-4e49-b6df-8a104e4e13c9",
+      "content_id": "5bfc7874-f544-46fd-943d-db00ec4e0783",
+      "claim_id": "C10",
+      "claim": "Ethologically relevant odors are often mixed with background ones.",
+      "claim_type": "EXPLICIT",
+      "source": "Still, ethologically relevant odors are often mixed with background ones (Saha et al., 2013; Renou et al., 2015) and intensity can vary widely and rapidly as odors are carried by the wind (Murlis et al., 1992; Weissburg, 2000; Celani et al., 2014; Card\u00e9 and Willis, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to experimental and theoretical literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:55:00.734064Z"
+    },
+    {
+      "id": "c6794bb1-fda3-4d56-8600-5d03fbc12cef",
+      "content_id": "5bfc7874-f544-46fd-943d-db00ec4e0783",
+      "claim_id": "C11",
+      "claim": "Odor intensity can vary widely and rapidly as odors are carried by the wind.",
+      "claim_type": "EXPLICIT",
+      "source": "Still, ethologically relevant odors are often mixed with background ones (Saha et al., 2013; Renou et al., 2015) and intensity can vary widely and rapidly as odors are carried by the wind (Murlis et al., 1992; Weissburg, 2000; Celani et al., 2014; Card\u00e9 and Willis, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to experimental and theoretical literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:55:00.734064Z"
+    },
+    {
+      "id": "7d2b92aa-4f89-40e3-ba8b-7c0990950d48",
+      "content_id": "5bfc7874-f544-46fd-943d-db00ec4e0783",
+      "claim_id": "C12",
+      "claim": "In Drosophila melanogaster, ORN dose response curves exhibit similar Hill coefficients but distinct power-law distributed activation thresholds.",
+      "claim_type": "EXPLICIT",
+      "source": "In Drosophila melanogaster, ORN dose response curves exhibit similar Hill coefficients but distinct power-law distributed activation thresholds (Hallem and Carlson, 2006; Si et al., 2019), which together with inhibitory odorants enhance coding capacity (Si et al., 2019; Cao et al., 2017; Hallem and Carlson, 2006; Stevens, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to experimental literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:55:00.734064Z"
+    },
+    {
+      "id": "0fb31c18-f10d-48ba-b65c-2f0675b38ea0",
+      "content_id": "5bfc7874-f544-46fd-943d-db00ec4e0783",
+      "claim_id": "C13",
+      "claim": "Power-law distributed activation thresholds together with inhibitory odorants enhance coding capacity.",
+      "claim_type": "EXPLICIT",
+      "source": "In Drosophila melanogaster, ORN dose response curves exhibit similar Hill coefficients but distinct power-law distributed activation thresholds (Hallem and Carlson, 2006; Si et al., 2019), which together with inhibitory odorants enhance coding capacity (Si et al., 2019; Cao et al., 2017; Hallem and Carlson, 2006; Stevens, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to experimental and theoretical literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:55:00.734064Z"
+    },
+    {
+      "id": "137c5c34-f7ee-456e-a152-b3ba2f3f11c4",
+      "content_id": "5bfc7874-f544-46fd-943d-db00ec4e0783",
+      "claim_id": "C14",
+      "claim": "In antennal lobe glomeruli, mutual lateral inhibition normalizes population response, reducing the dependency of activity patterns on odor concentration.",
+      "claim_type": "EXPLICIT",
+      "source": "In antennal lobe (AL) glomeruli, mutual lateral inhibition normalizes population response, reducing the dependency of activity patterns on odor concentration (Asahina et al., 2009; Olsen et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to experimental literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:55:00.734064Z"
+    },
+    {
+      "id": "6d8b4605-b391-4952-aea5-6d9d1094dcfe",
+      "content_id": "5bfc7874-f544-46fd-943d-db00ec4e0783",
+      "claim_id": "C15",
+      "claim": "Sparse connectivity to the mushroom body helps maintain neural representations of odors, and facilitates compressed sensing and associative learning schemes.",
+      "claim_type": "EXPLICIT",
+      "source": "Further downstream, sparse connectivity to the mushroom body (MB) helps maintain neural representations of odors, and facilitates compressed sensing and associative learning schemes (Caron et al., 2013; Litwin-Kumar et al., 2017; Krishnamurthy et al., 2017; Dasgupta et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to theoretical and experimental literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:55:00.734064Z"
+    },
+    {
+      "id": "53901cf6-b845-4bd9-8702-baaacf6a4094",
+      "content_id": "5bfc7874-f544-46fd-943d-db00ec4e0783",
+      "claim_id": "C16",
+      "claim": "Temporal features of neural responses contribute to concentration-invariant representations of odor identity.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, temporal features of neural responses contribute to concentration-invariant representations of odor identity (Brown et al., 2005; Raman et al., 2010; Gupta and Stopfer, 2014; Wilson et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to experimental literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:55:00.734064Z"
+    },
+    {
+      "id": "de011744-1f4c-4cfd-9d1c-2d811c44c9e8",
+      "content_id": "5bfc7874-f544-46fd-943d-db00ec4e0783",
+      "claim_id": "C17",
+      "claim": "ORN response is initiated upon binding of odorant molecules to olfactory receptors, opening the ion channels they form with the co-receptor Orco.",
+      "claim_type": "EXPLICIT",
+      "source": "ORN response is initiated upon binding of odorant molecules to olfactory receptors (ORs), opening the ion channels they form with the co-receptor Orco (Larsson et al., 2004; Butterwick et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to experimental literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:55:00.734064Z"
+    },
+    {
+      "id": "25ab0d3a-6b27-4f51-b01a-ada66da4e696",
+      "content_id": "5bfc7874-f544-46fd-943d-db00ec4e0783",
+      "claim_id": "C18",
+      "claim": "Because of differences in odor-receptor affinities, the responses of ORNs to diverse odorants of the same concentration differ widely.",
+      "claim_type": "EXPLICIT",
+      "source": "Because of differences in odor-receptor affinities, the responses of ORNs to diverse odorants of the same concentration differ widely (Hallem and Carlson, 2006; Montague et al., 2011; Stensmyr et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to experimental literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:55:00.734064Z"
+    },
+    {
+      "id": "7cfc50b4-eca7-4208-86c3-e2c4d0c9d3cc",
+      "content_id": "5bfc7874-f544-46fd-943d-db00ec4e0783",
+      "claim_id": "C19",
+      "claim": "Downstream from the input nonlinearity, signal transduction and adaptation dynamics exhibit a surprising degree of invariance with respect to odor-receptor identity.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, downstream from this input nonlinearity, signal transduction and adaptation dynamics exhibit a surprising degree of invariance with respect to odor-receptor identity: reverse-correlation analysis of ORN response to fluctuating stimuli produces highly stereotyped, concentration-invariant response filters (Martelli et al., 2013; Si et al., 2019; Gorur-Shandilya et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to experimental literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:55:00.734064Z"
+    },
+    {
+      "id": "4f834bf5-1299-4d1a-94dc-8194b83d9cf0",
+      "content_id": "5bfc7874-f544-46fd-943d-db00ec4e0783",
+      "claim_id": "C20",
+      "claim": "Reverse-correlation analysis of ORN response to fluctuating stimuli produces highly stereotyped, concentration-invariant response filters.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, downstream from this input nonlinearity, signal transduction and adaptation dynamics exhibit a surprising degree of invariance with respect to odor-receptor identity: reverse-correlation analysis of ORN response to fluctuating stimuli produces highly stereotyped, concentration-invariant response filters (Martelli et al., 2013; Si et al., 2019; Gorur-Shandilya et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to experimental literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:55:00.734064Z"
+    },
+    {
+      "id": "50ce3a97-4931-4c5c-8125-cb7df8f660a3",
+      "content_id": "5bfc7874-f544-46fd-943d-db00ec4e0783",
+      "claim_id": "C22",
+      "claim": "The invariance in adaptive scaling can be traced back to adaptative feedback mechanisms in odor transduction, upstream of ORN firing.",
+      "claim_type": "EXPLICIT",
+      "source": "This invariance can be traced back to adaptative feedback mechanisms in odor transduction, upstream of ORN firing (Nagel and Wilson, 2011; Cao et al., 2016; Cafaro, 2016; Gorur-Shandilya et al., 2017), which depend on the activity of the signaling pathway rather than on the identity of its receptor (Nagel and Wilson, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to experimental literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:55:00.734064Z"
+    },
+    {
+      "id": "29f18b24-e9e8-4e35-97bb-20a0dcf28c27",
+      "content_id": "5bfc7874-f544-46fd-943d-db00ec4e0783",
+      "claim_id": "C23",
+      "claim": "Adaptive feedback mechanisms depend on the activity of the signaling pathway rather than on the identity of its receptor.",
+      "claim_type": "EXPLICIT",
+      "source": "This invariance can be traced back to adaptative feedback mechanisms in odor transduction, upstream of ORN firing (Nagel and Wilson, 2011; Cao et al., 2016; Cafaro, 2016; Gorur-Shandilya et al., 2017), which depend on the activity of the signaling pathway rather than on the identity of its receptor (Nagel and Wilson, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to experimental literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:55:00.734064Z"
+    },
+    {
+      "id": "1cea0507-177c-4224-8872-824517f79a99",
+      "content_id": "5bfc7874-f544-46fd-943d-db00ec4e0783",
+      "claim_id": "C24",
+      "claim": "The generality of the adaptive scaling suggests it could be mediated by the highly conserved Orco co-receptor.",
+      "claim_type": "EXPLICIT",
+      "source": "The generality of the adaptive scaling suggests it could be mediated by the highly conserved Orco co-receptor (Butterwick et al., 2018; Getahun et al., 2013; Getahun et al., 2016; Guo et al., 2017), which has been already been implicated in other types of odor adaptation, taking place over longer timescales (Guo and Smith, 2017; Guo et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is speculative, supported by citations to literature on Orco and its role in adaptation.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:55:00.734064Z"
+    },
+    {
+      "id": "81092024-9119-44ff-a854-8bdf8b059730",
+      "content_id": "5bfc7874-f544-46fd-943d-db00ec4e0783",
+      "claim_id": "C25",
+      "claim": "Orco has been implicated in other types of odor adaptation, taking place over longer timescales.",
+      "claim_type": "EXPLICIT",
+      "source": "The generality of the adaptive scaling suggests it could be mediated by the highly conserved Orco co-receptor (Butterwick et al., 2018; Getahun et al., 2013; Getahun et al., 2016; Guo et al., 2017), which has been already been implicated in other types of odor adaptation, taking place over longer timescales (Guo and Smith, 2017; Guo et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to experimental literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:55:00.734064Z"
+    },
+    {
+      "id": "54e163a0-7a4a-4bac-904b-9299f9793859",
+      "content_id": "5bfc7874-f544-46fd-943d-db00ec4e0783",
+      "claim_id": "C26",
+      "claim": "In E. coli chemotaxis, adaptive feedback via the Weber-Fechner Law robustly maintains sensitivity over concentration changes.",
+      "claim_type": "EXPLICIT",
+      "source": "While in a simpler system such as E. coli chemotaxis (Waite et al., 2018), adaptive feedback via the Weber-Fechner Law robustly maintains sensitivity over concentration changes, the implication for a multiple-channel system \u2013 which combines information from hundreds of cells with overlapping receptive fields \u2013 is less clear.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to literature on E. coli chemotaxis.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:55:00.734064Z"
+    },
+    {
+      "id": "8b2040f0-132b-499f-a0b8-317ac9419ab2",
+      "content_id": "5bfc7874-f544-46fd-943d-db00ec4e0783",
+      "claim_id": "C27",
+      "claim": "Front-end adaptive mechanism promotes the accurate discrimination of odor signals from backgrounds of varying molecular complexity.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that this front-end adaptive mechanism promotes the accurate discrimination of odor signals from backgrounds of varying molecular complexity, and aids other known mechanisms of neural processing in the olfactory circuit to maintain representations of odor identity across environmental changes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the computational results presented in Figures 2-5.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:55:00.734064Z"
+    },
+    {
+      "id": "339162c9-7351-4390-ba08-aee1c1f141e5",
+      "content_id": "5bfc7874-f544-46fd-943d-db00ec4e0783",
+      "claim_id": "C33",
+      "claim": "The model reproduces the essential features of ORN response to odorant pulses.",
+      "claim_type": "EXPLICIT",
+      "source": "This minimal model reproduces the essential features of ORN response to odorant pulses (Nagel and Wilson, 2011; Martelli et al., 2013; Cao et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to experimental literature and by the model results shown in Figure 1D.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:55:00.734064Z"
+    },
+    {
+      "id": "22f59ae1-3a78-4fc1-98fc-27b30b8c79bb",
+      "content_id": "5bfc7874-f544-46fd-943d-db00ec4e0783",
+      "claim_id": "C37",
+      "claim": "The diversity of temporal firing responses and tuning curves measured experimentally arise naturally in the model due to the distribution of chemical affinity constants and the nonlinearity of Equation 2.",
+      "claim_type": "EXPLICIT",
+      "source": "The diversity of temporal firing responses and tuning curves measured experimentally (Hallem and Carlson, 2006; Montague et al., 2011; Brown et al., 2005; Gupta and Stopfer, 2014; Raman et al., 2010) arise naturally in the model due to the distribution of chemical affinity constants and the nonlinearity of Equation 2 (Figure 1B-Figure 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by citations to experimental literature and demonstrated in Figures 1B-1E.",
+      "evidence_type": "[\"CITATION\", \"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:55:00.734064Z"
+    },
+    {
+      "id": "630aecf6-6d1b-4cc5-9037-e52160ab8800",
+      "content_id": "5bfc7874-f544-46fd-943d-db00ec4e0783",
+      "claim_id": "C40",
+      "claim": "This process adjusts the sensitivity of the ORN by matching the dose responses to the mean signal concentration, while maintaining their log-slopes.",
+      "claim_type": "EXPLICIT",
+      "source": "This process adjusts the sensitivity of the ORN by matching the dose responses to the mean signal concentration, while maintaining their log-slopes (Figure 1F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is demonstrated in Figure 1F showing dose-response curves before and after adaptation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:55:00.734064Z"
+    },
+    {
+      "id": "23bb8bea-274f-454d-991e-3a00320092c4",
+      "content_id": "5bfc7874-f544-46fd-943d-db00ec4e0783",
+      "claim_id": "C41",
+      "claim": "For foreground odors mixed with background odors to which the system has adapted, the dose response curves exhibit background-dependent shifts.",
+      "claim_type": "EXPLICIT",
+      "source": "However, for foreground odors mixed with background odors to which the system has adapted, the dose response curves now exhibit background-dependent shifts (Figure 1G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is demonstrated in Figure 1G showing dose-response curves for different background conditions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:55:00.734064Z"
+    },
+    {
+      "id": "27eaedc8-18ae-41df-9316-0b8bee4f6ec6",
+      "content_id": "5bfc7874-f544-46fd-943d-db00ec4e0783",
+      "claim_id": "C44",
+      "claim": "Responses across different odor intensities are well separated by odor identity in the adaptive system, but less so in the non-adaptive system.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, responses across different odor intensities are well separated by odor identity in the adaptive system, but less so in the non-adaptive system (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is demonstrated in Figure 2C showing t-SNE clustering across intensities.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:55:00.734064Z"
+    },
+    {
+      "id": "d8dd9fc4-ee83-4476-b100-e680febf21c8",
+      "content_id": "5bfc7874-f544-46fd-943d-db00ec4e0783",
+      "claim_id": "C45",
+      "claim": "The adaptive system retains coding capacity as it confronts novel odors.",
+      "claim_type": "EXPLICIT",
+      "source": "Calculating the mutual information between odor and ORN response in time shows that the adaptive system retains coding capacity as it confronts novel odors (Figure 2\u2014figure supplement 2), whereas the non-adaptive system maintains coding capacity in a far more limited range of odor concentration.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is demonstrated in Figure 2\u2014figure supplement 2 showing mutual information over time.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:55:00.734064Z"
+    },
+    {
+      "id": "f680de8d-0bca-45fe-846f-1de1c8b8be5e",
+      "content_id": "5bfc7874-f544-46fd-943d-db00ec4e0783",
+      "claim_id": "C48",
+      "claim": "This initial effect increases odor coding performance, as the firing rates can distribute more broadly across the dynamical range of the ORNs, before adaptation is effected.",
+      "claim_type": "EXPLICIT",
+      "source": "This initial effect increases odor coding performance, as the firing rates can distribute more broadly across the dynamical range of the ORNs, before adaptation is effected (Figure 2E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is explained by the analysis and demonstrated in Figure 2E.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:55:00.734064Z"
+    },
+    {
+      "id": "b8860f2e-ee96-41a1-ad82-b331d567feff",
+      "content_id": "5bfc7874-f544-46fd-943d-db00ec4e0783",
+      "claim_id": "C49",
+      "claim": "Naturally occurring odors are sparse, typically comprised of only a few odorants.",
+      "claim_type": "EXPLICIT",
+      "source": "However, naturally occurring odors are sparse, typically comprised of only a few odorants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about natural odors.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:55:00.734064Z"
+    },
+    {
+      "id": "ab5c3b21-e39d-4b29-bce7-021f033fd64b",
+      "content_id": "5bfc7874-f544-46fd-943d-db00ec4e0783",
+      "claim_id": "C51",
+      "claim": "The decoding of sufficiently sparse signals from lower dimensional responses is rigorously guaranteed by the theory of compressed sensing.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, the decoding of sufficiently sparse signals from lower dimensional responses is rigorously guaranteed by the theory of compressed sensing (CS) (Donoho, 2006; Cand\u00e8s et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to foundational compressed sensing literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:55:00.734064Z"
+    },
+    {
+      "id": "f77b6d45-fff1-4a2a-abd8-22e76010d2a0",
+      "content_id": "5bfc7874-f544-46fd-943d-db00ec4e0783",
+      "claim_id": "C52",
+      "claim": "Without adaptation, accuracy is maintained within the range of receptor sensitivity for monomolecular backgrounds but is virtually eliminated as background complexity rises.",
+      "claim_type": "EXPLICIT",
+      "source": "Without adaptation, accuracy is maintained within the range of receptor sensitivity for monomolecular backgrounds but is virtually eliminated as background complexity rises (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is demonstrated in Figure 3B showing decoding accuracy for the non-adaptive system.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:55:00.734064Z"
+    },
+    {
+      "id": "6c879de8-fe31-4cb4-9648-bbafb100ded4",
+      "content_id": "5bfc7874-f544-46fd-943d-db00ec4e0783",
+      "claim_id": "C53",
+      "claim": "The range of sensitivity is broader in the adaptive system and is substantially more robust across odor concentration and complexity.",
+      "claim_type": "EXPLICIT",
+      "source": "The range of sensitivity is broader in the adaptive system and is substantially more robust across odor concentration and complexity (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is demonstrated in Figure 3C showing decoding accuracy for the adaptive system.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:55:00.734064Z"
+    },
+    {
+      "id": "b95162fa-8751-4291-973e-1ad8be7145c0",
+      "content_id": "5bfc7874-f544-46fd-943d-db00ec4e0783",
+      "claim_id": "C54",
+      "claim": "Without ORN adaptation, sufficiently strong backgrounds eliminate the ability to reconstruct the identity of individual odor whiffs, irrespective of the complexity of either the foreground or background odor.",
+      "claim_type": "EXPLICIT",
+      "source": "Without ORN adaptation, sufficiently strong backgrounds eliminate the ability to reconstruct the identity of individual odor whiffs, irrespective of the complexity of either the foreground or background odor (Figure 3E, blue lines).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is demonstrated in Figure 3E showing decoding accuracy for naturalistic signals without adaptation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:55:00.734064Z"
+    },
+    {
+      "id": "bb5aaa4b-0eb3-47cd-8d6d-539cce68a51d",
+      "content_id": "5bfc7874-f544-46fd-943d-db00ec4e0783",
+      "claim_id": "C56",
+      "claim": "For simple odors, a limited set of earliest responding neurons fully accounts for the odor identity.",
+      "claim_type": "EXPLICIT",
+      "source": "For simple odors, a limited set of earliest responding neurons fully accounts for the odor identity (Figure 4A), in agreement with primacy coding.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is demonstrated in Figure 4A showing decoding accuracy as a function of active ORNs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:55:00.734064Z"
+    },
+    {
+      "id": "7890dc67-96ce-48e7-bb6f-c695d3193fd2",
+      "content_id": "5bfc7874-f544-46fd-943d-db00ec4e0783",
+      "claim_id": "C57",
+      "claim": "As expected for more complex odor mixtures, the full repertoire is required for accurate decoding.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected for more complex odor mixtures, the full repertoire is required for accurate decoding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is demonstrated in Figure 4A showing that more ORNs are needed for complex odors.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:55:00.734064Z"
+    },
+    {
+      "id": "c0a0fcd3-687a-4137-8a2f-11e854b32287",
+      "content_id": "5bfc7874-f544-46fd-943d-db00ec4e0783",
+      "claim_id": "C58",
+      "claim": "Primacy coding predicts that for stronger stimuli, responses occur earlier, since the primacy set is realized quicker.",
+      "claim_type": "EXPLICIT",
+      "source": "Primacy coding also predicts that for stronger stimuli, responses occur earlier, since the primacy set is realized quicker, which our framework replicates (Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is demonstrated in Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:55:00.734064Z"
+    },
+    {
+      "id": "8afb83f2-15ee-4f90-95eb-5aa762cbcde1",
+      "content_id": "5bfc7874-f544-46fd-943d-db00ec4e0783",
+      "claim_id": "C59",
+      "claim": "With adaptation, primacy sets are highly consistent across background confounds for all but the smallest primacy orders.",
+      "claim_type": "EXPLICIT",
+      "source": "We compared the primacy sets of odor A for 1000 different choices of odor B, finding that, with adaptation, primacy sets are highly consistent across background confounds for all but the smallest primacy orders (Figure 4B-Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is demonstrated in Figures 4B and 4C showing primacy set consistency.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:55:00.734064Z"
+    },
+    {
+      "id": "3bd13eb7-a9f2-4f0d-ab0c-8dc782f64ec0",
+      "content_id": "5bfc7874-f544-46fd-943d-db00ec4e0783",
+      "claim_id": "C60",
+      "claim": "Primacy set consistency holds true for backgrounds of different concentrations.",
+      "claim_type": "EXPLICIT",
+      "source": "This also holds true for backgrounds of different concentrations (Figure 4\u2014figure supplement 1), suggesting a central role for front-end adaptation in reinforcing primacy codes across differing environmental conditions.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is demonstrated in Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:55:00.734064Z"
+    },
+    {
+      "id": "31381600-18a3-4988-8f4e-1c539830e940",
+      "content_id": "5bfc7874-f544-46fd-943d-db00ec4e0783",
+      "claim_id": "C62",
+      "claim": "Removing ORN adaption while maintaining divisive normalization substantially reduces accuracy (down to 65% for 1000 odor identities).",
+      "claim_type": "EXPLICIT",
+      "source": "Removing ORN adaption while maintaining divisive normalization substantially reduces accuracy (down to 65% for 1000 odor identities).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is demonstrated in Figure 5A showing classification accuracy without ORN adaptation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:55:00.734064Z"
+    },
+    {
+      "id": "9c70f191-205c-4b2c-92f3-0b6388250a4b",
+      "content_id": "5bfc7874-f544-46fd-943d-db00ec4e0783",
+      "claim_id": "C63",
+      "claim": "These results strongly implicate front-end adaptation as a key player in maintaining odor identity representations, before signals are further processed downstream.",
+      "claim_type": "EXPLICIT",
+      "source": "These results strongly implicate front-end adaptation as a key player in maintaining odor identity representations, before signals are further processed downstream.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the classification results shown in Figure 5.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:55:00.734064Z"
+    },
+    {
+      "id": "a2b979bd-6198-4f55-8dca-611bb025ceca",
+      "content_id": "5bfc7874-f544-46fd-943d-db00ec4e0783",
+      "claim_id": "C64",
+      "claim": "When acting alone, either divisive normalization or ORN adaptation can help with valence classification, although the effect of ORN adaptation is slightly stronger.",
+      "claim_type": "EXPLICIT",
+      "source": "When acting alone, either divisive normalization or ORN adaptation can help, although the effect of ORN adaptation is slightly stronger.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is demonstrated in Figure 5B showing valence classification accuracy.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:55:00.734064Z"
+    },
+    {
+      "id": "6a737038-e4b1-47d5-a886-a3d07b33383f",
+      "content_id": "5bfc7874-f544-46fd-943d-db00ec4e0783",
+      "claim_id": "C65",
+      "claim": "When both divisive normalization and ORN adaptation are active, valence classification accuracy improves further.",
+      "claim_type": "EXPLICIT",
+      "source": "When both are active, accuracy improves further, suggesting that these distinct adaptive transformations may act jointly at different stages of neural processing in preserving representations of odor identity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is demonstrated in Figure 5B and represents an inference about the joint action of these mechanisms.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:55:00.734064Z"
+    },
+    {
+      "id": "04f74089-4793-49ad-af84-a0e30648876d",
+      "content_id": "5bfc7874-f544-46fd-943d-db00ec4e0783",
+      "claim_id": "C66",
+      "claim": "Weber-Law adaptation at the very front-end of the insect olfactory circuit may contribute significantly to the preservation of neural representations of odor identity amid confounding odors and intensity fluctuations.",
+      "claim_type": "EXPLICIT",
+      "source": "Weber-Law adaptation at the very front-end of the insect olfactory circuit (Gorur-Shandilya et al., 2017; Cafaro, 2016; Cao et al., 2016) may contribute significantly to the preservation of neural representations of odor identity amid confounding odors and intensity fluctuations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion of the study, supported by all the computational results presented.",
+      "evidence_type": "[\"CITATION\", \"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:55:00.734064Z"
+    },
+    {
+      "id": "7c9adf22-ccf3-42b0-a65e-505b559ac674",
+      "content_id": "5bfc7874-f544-46fd-943d-db00ec4e0783",
+      "claim_id": "C67",
+      "claim": "This mechanism of dynamic adaptation confers significant benefits in coding fidelity, without the need for ORN-specific parameterizations.",
+      "claim_type": "EXPLICIT",
+      "source": "Drawing on experimental evidence for a number of ORN-invariant response features (Nagel and Wilson, 2011; Martelli et al., 2013; Stevens, 2016; Gorur-Shandilya et al., 2017; Si et al., 2019), we have found that this mechanism of dynamic adaptation confers significant benefits in coding fidelity, without the need for ORN-specific parameterizations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the modeling results and supported by citations to experimental literature.",
+      "evidence_type": "[\"CITATION\", \"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:55:00.734064Z"
+    },
+    {
+      "id": "35635e4d-0df5-4739-9bc4-195752984c0a",
+      "content_id": "5bfc7874-f544-46fd-943d-db00ec4e0783",
+      "claim_id": "C68",
+      "claim": "A slight breaking of Weber scaling may aid combinatorial coding, by spreading firing rates more fully over the ORN dynamic range, while still preventing saturation.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results also suggest that a slight breaking of Weber scaling may aid combinatorial coding, by spreading firing rates more fully over the ORN dynamic range, while still preventing saturation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the results shown in Figure 2D-E.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:55:00.734064Z"
+    },
+    {
+      "id": "dc380ce1-a6a3-4c8b-b7ff-68b4a9a618bb",
+      "content_id": "5bfc7874-f544-46fd-943d-db00ec4e0783",
+      "claim_id": "C69",
+      "claim": "Small deviations from the strict Weber-Fechner scaling have been observed.",
+      "claim_type": "EXPLICIT",
+      "source": "Such small deviations from the strict Weber-Fechner scaling have been observed (see extended figures in Gorur-Shandilya et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to experimental observations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:55:00.734064Z"
+    },
+    {
+      "id": "2f003f60-944c-4331-92ee-edf06ac6b2f3",
+      "content_id": "5bfc7874-f544-46fd-943d-db00ec4e0783",
+      "claim_id": "C70",
+      "claim": "The framework incorporates many observed features of the Drosophila olfactory system.",
+      "claim_type": "EXPLICIT",
+      "source": "While our framework incorporates many observed features of the Drosphila olfactory system \u2013 Weber-Law adaptation, power-law distributed receptor affinities, temporal filter invariance, connectivity topologies \u2013 it is minimal.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the model design and its relationship to experimental observations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:55:00.734064Z"
+    },
+    {
+      "id": "ece76633-e984-4238-9973-6a332c7eea5f",
+      "content_id": "5bfc7874-f544-46fd-943d-db00ec4e0783",
+      "claim_id": "C71",
+      "claim": "The model is minimal and does not include all features of the olfactory system.",
+      "claim_type": "EXPLICIT",
+      "source": "While our framework incorporates many observed features of the Drosphila olfactory system \u2013 Weber-Law adaptation, power-law distributed receptor affinities, temporal filter invariance, connectivity topologies \u2013 it is minimal. We considered only one of the chemoreceptor families expressed in the fly antenna (Joseph and Carlson, 2015) and ignored possible contributions of odor binding proteins (Vogt and Riddiford, 1981; Menuz et al., 2014), inhibitory odorants (Cao et al., 2017), and odorant-odorant antagonism (Reddy et al., 2018), which could further boost coding capacity and preserve representation sparsity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the limitations of the model.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:55:00.734064Z"
+    },
+    {
+      "id": "478eaf51-a339-4c3d-a0d0-1a1654b79121",
+      "content_id": "5bfc7874-f544-46fd-943d-db00ec4e0783",
+      "claim_id": "C72",
+      "claim": "Lateral inhibition between glomeruli helps tame saturation and boost weak signals.",
+      "claim_type": "EXPLICIT",
+      "source": "Lateral inhibition between glomeruli helps tame saturation and boost weak signals (Olsen et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to experimental literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:55:00.734064Z"
+    },
+    {
+      "id": "33afcf71-a6a5-4ef6-b4b3-4f7905898e81",
+      "content_id": "5bfc7874-f544-46fd-943d-db00ec4e0783",
+      "claim_id": "C73",
+      "claim": "The sparse degree of connectivity to either the olfactory bulb (vertebrates) or mushroom body (insects) may be precisely tuned to optimize the capacity to learn associations.",
+      "claim_type": "EXPLICIT",
+      "source": "The sparse degree of connectivity to either the olfactory bulb (vertebrates) or mushroom body (insects) may also be precisely tuned to optimize the capacity to learn associations (Litwin-Kumar et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to theoretical literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:55:00.734064Z"
+    },
+    {
+      "id": "3f68de66-1de3-455f-adb0-496814afd32b",
+      "content_id": "5bfc7874-f544-46fd-943d-db00ec4e0783",
+      "claim_id": "C74",
+      "claim": "Some downstream features act in concert with front-end dynamic adaptation in maintaining representations of odor identity.",
+      "claim_type": "EXPLICIT",
+      "source": "In this work, we find that some of these downstream features act in concert with front-end dynamic adaptation in maintaining representations of odor identity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the network modeling results in Figure 5.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:55:00.734064Z"
+    },
+    {
+      "id": "99b6518c-192e-415a-9f41-06d64f949e83",
+      "content_id": "5bfc7874-f544-46fd-943d-db00ec4e0783",
+      "claim_id": "C75",
+      "claim": "The unique temporal patterns of neural response have been implicated as signatures of odor identity.",
+      "claim_type": "EXPLICIT",
+      "source": "Other studies have implicated the unique temporal patterns of neural response as signatures of odor identity (Raman et al., 2010; Gupta and Stopfer, 2011; Brown et al., 2005; Gupta and Stopfer, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to experimental literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:55:00.734064Z"
+    },
+    {
+      "id": "5167e825-9566-4ae0-89d3-0c6e8e759b42",
+      "content_id": "5bfc7874-f544-46fd-943d-db00ec4e0783",
+      "claim_id": "C76",
+      "claim": "ORN and projection neuron time traces form distinct trajectories in low-dimensional projections, and cluster by odor identity.",
+      "claim_type": "EXPLICIT",
+      "source": "ORN and projection neuron time traces form distinct trajectories in low-dimensional projections, and cluster by odor identity, much as we have found here for static responses at different concentrations (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim connects the current results to prior experimental findings and is demonstrated in Figure 2.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:55:00.734064Z"
+    },
+    {
+      "id": "c1f327a7-23c0-44db-9599-b053e5c3b2b2",
+      "content_id": "5bfc7874-f544-46fd-943d-db00ec4e0783",
+      "claim_id": "C77",
+      "claim": "In locusts PNs, the trajectories elicited by foreground odors when presented in distinct backgrounds exhibit some degree of overlap.",
+      "claim_type": "EXPLICIT",
+      "source": "In locusts PNs, the trajectories elicited by foreground odors when presented in distinct backgrounds exhibit some degree of overlap; although partial, these overlaps were nonetheless sufficient to maintain background-invariant decoding from Kenyon cell responses (Saha et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to experimental literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:55:00.734064Z"
+    },
+    {
+      "id": "6f468347-1f71-4fb6-bb7f-7a19bbda0168",
+      "content_id": "5bfc7874-f544-46fd-943d-db00ec4e0783",
+      "claim_id": "C78",
+      "claim": "It was suggested that background filtering likely occurs at the level of ORNs themselves.",
+      "claim_type": "EXPLICIT",
+      "source": "It was therefore suggested that background filtering likely occurs at the level of ORNs themselves (Saha et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to experimental literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:55:00.734064Z"
+    },
+    {
+      "id": "7a1b26f3-bb3b-437b-9f54-c5df9106d82c",
+      "content_id": "5bfc7874-f544-46fd-943d-db00ec4e0783",
+      "claim_id": "C79",
+      "claim": "In the framework, temporal coding is implicit: because the input nonlinearity depends on the diversity of binding affinities, odor signals are naturally formatted into temporal patterns that are both odor- and ORN-specific.",
+      "claim_type": "EXPLICIT",
+      "source": "Likewise, in our framework, temporal coding is implicit: because the input nonlinearity depends on the diversity of binding affinities, odor signals are naturally formatted into temporal patterns that are both odor- and ORN-specific (Figure 1D-Figure 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an explanation of how temporal coding emerges in the model, demonstrated in Figures 1D-1E.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:55:00.734064Z"
+    },
+    {
+      "id": "71b7f71d-3506-4695-aead-ddf7df15ed88",
+      "content_id": "5bfc7874-f544-46fd-943d-db00ec4e0783",
+      "claim_id": "C81",
+      "claim": "Front-end adaptation enhances the robustness of other combinatorial coding schemes, such as primacy coding.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, we find that front-end adaptation enhances the robustness of other combinatorial coding schemes, such as primacy coding (Wilson et al., 2017), which relies on the temporal order of ORN activation but not absolute firing rate (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the primacy coding results shown in Figure 4.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:55:00.734064Z"
+    },
+    {
+      "id": "5bef2bcb-cf3e-4fa1-9039-1a76552ba183",
+      "content_id": "5bfc7874-f544-46fd-943d-db00ec4e0783",
+      "claim_id": "C82",
+      "claim": "In bacterial chemotaxis, Weber Law adaptation is enacted through a feedback loop from the output activity of the receptor-kinase complexes onto the enzymes modifying receptor sensitivity.",
+      "claim_type": "EXPLICIT",
+      "source": "In the well-characterized chemosensory system of bacterial chemotaxis, Weber Law adaptation is enacted through a feedback loop from the output activity of the receptor-kinase complexes onto the enzymes modifying receptor sensitivity (Waite et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to literature on bacterial chemotaxis.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:55:00.734064Z"
+    },
+    {
+      "id": "4f960601-4d10-4ae7-9594-07f79528fc31",
+      "content_id": "5bfc7874-f544-46fd-943d-db00ec4e0783",
+      "claim_id": "C83",
+      "claim": "It has been shown that transduction activity feeds back onto the sensitivity of Or-Orco ligand-gated cation channels, enabling the Weber-Fechner relation.",
+      "claim_type": "EXPLICIT",
+      "source": "It is interesting that some aspects of this logic are also present in ORNs: although the molecular players are different (and still largely unknown, although likely involving calcium channel signaling, Cao et al., 2016), it has been shown that transduction activity feeds back onto the sensitivity of Or-Orco ligand-gated cation channels, enabling the Weber-Fechner relation (Nagel and Wilson, 2011; Gorur-Shandilya et al., 2017; Cao et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to experimental literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:55:00.734064Z"
+    },
+    {
+      "id": "e67da32a-45d3-435c-a6ea-45056329c51b",
+      "content_id": "5bfc7874-f544-46fd-943d-db00ec4e0783",
+      "claim_id": "C84",
+      "claim": "The adaptation mechanism appears to act similarly across ORNs.",
+      "claim_type": "EXPLICIT",
+      "source": "That this adaptation mechanism appears to act similarly across ORNs (Gorur-Shandilya et al., 2017; Martelli et al., 2013; Cao et al., 2016) suggests the possible involvement of the universal co-receptor Orco, whose role in long-term adaptation has recently been reported (Getahun et al., 2013; Getahun et al., 2016; Guo et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to experimental literature and represents a speculative inference.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:55:00.734064Z"
+    },
+    {
+      "id": "d6cfda94-dd50-4154-862e-a4eaa5c0e09d",
+      "content_id": "5bfc7874-f544-46fd-943d-db00ec4e0783",
+      "claim_id": "C85",
+      "claim": "The identification of four subunits comprising the Orco-Or ion channel suggest that generic Or/Orco complexes may contain multiple odorant binding sites.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, the identification of four subunits comprising the Orco-Or ion channel suggest that generic Or/Orco complexes may contain multiple odorant binding sites, which when included in our model supports our general findings (Figure 3\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by structural knowledge and modeling results shown in Figure 3\u2014figure supplement 3.",
+      "evidence_type": "[\"KNOWLEDGE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:55:00.734064Z"
+    },
+    {
+      "id": "203d4d09-70a8-462a-a215-e7bcba12b30f",
+      "content_id": "5bfc7874-f544-46fd-943d-db00ec4e0783",
+      "claim_id": "C86",
+      "claim": "Weber Law ensures that sensory systems remain in the regime of maximum sensitivity, broadening dynamic range and maintaining information capacity.",
+      "claim_type": "EXPLICIT",
+      "source": "Weber Law ensures that sensory systems remain in the regime of maximum sensitivity, broadening dynamic range and maintaining information capacity (Wark et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to theoretical literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:55:00.734064Z"
+    },
+    {
+      "id": "239e3f78-d3a7-4c75-afb9-fccbfcac7b36",
+      "content_id": "5bfc7874-f544-46fd-943d-db00ec4e0783",
+      "claim_id": "C87",
+      "claim": "For a single-channel system, maintaining maximum sensitivity requires matching the midpoint of the dose-response curve to the mean ligand concentration.",
+      "claim_type": "EXPLICIT",
+      "source": "For a single-channel system, this requires matching the midpoint of the dose-response curve to the mean ligand concentration (Nemenman, 2012), a strategy which may fail in multi-channel systems with overlapping tuning curves: adaptation to one signal could inhibit identification of others, if the signals excite some but not all the same sensors, as in Figure 1G.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by citation to theoretical literature and illustrated in Figure 1G.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:55:00.734064Z"
+    },
+    {
+      "id": "fcad3569-2a39-4be7-bf85-f86ae7633a53",
+      "content_id": "5bfc7874-f544-46fd-943d-db00ec4e0783",
+      "claim_id": "C88",
+      "claim": "The Weber-Fechner scaling increases the likelihood that the restricted isometry property is satisfied, beyond that in the non-adaptive system.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, the Weber-Fechner scaling increases the likelihood that this property is satisfied, beyond that in the non-adaptive system (SI text and Figure 3\u2014figure supplement 4 - Figure 3\u2014figure supplement 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the analysis shown in Figure 3\u2014figure supplement 4.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:55:00.734064Z"
+    },
+    {
+      "id": "5dd581a2-d2b6-43d1-8887-f0567dfb6984",
+      "content_id": "5bfc7874-f544-46fd-943d-db00ec4e0783",
+      "claim_id": "C89",
+      "claim": "Restricted isometry does not require that response repertoires are invariant to environmental changes.",
+      "claim_type": "EXPLICIT",
+      "source": "Still, restricted isometry does not require that response repertoires are invariant to environmental changes. That is, even if the subset of active ORNs were concentration-dependent, odors could still in principle be fully reconstructible by CS.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical statement about the requirements of compressed sensing.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:55:00.734064Z"
+    },
+    {
+      "id": "0c0dad94-9873-4256-ae45-3a68f69256b2",
+      "content_id": "5bfc7874-f544-46fd-943d-db00ec4e0783",
+      "claim_id": "C90",
+      "claim": "Some signature of response invariance emerges as a natural byproduct of front-end adaptation.",
+      "claim_type": "EXPLICIT",
+      "source": "Nonetheless, our results in t-SNE clustering (Figure 2), primacy coding (Figure 4B\u20134C), and odor classification (Figure 5) suggest that some signature of response invariance emerges as a natural byproduct of front-end adaptation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a conclusion drawn from multiple analyses shown in Figures 2, 4, and 5.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:55:00.734064Z"
+    },
+    {
+      "id": "def720b4-196a-41f7-b802-19d48f67797d",
+      "content_id": "5bfc7874-f544-46fd-943d-db00ec4e0783",
+      "claim_id": "C91",
+      "claim": "Weber Law adaptation can play an integral part in maintaining combinatorial codes amid changing environmental conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, this implies that Weber Law adaptation, whether required by the olfactory circuit for precise signal reconstruction (as in CS) or for developing odor associations (as in classification), can play an integral part in maintaining combinatorial codes amid changing environmental conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion of the study, synthesizing all the results presented.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:55:00.734064Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "8c03870c-d305-492b-81c6-0fc4208ccf1c",
+      "content_id": "5bfc7874-f544-46fd-943d-db00ec4e0783",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Prior work established that Drosophila ORNs expressing Orco exhibit Weber-Fechner gain adaptation that is receptor-independent, with feedback from channel activity rather than receptor identity. This adaptation produces stereotyped, concentration-invariant response filters across odor-receptor combinations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims accurately summarize established experimental findings from cited prior work (Gorur-Shandilya et al., 2017; Nagel and Wilson, 2011; Martelli et al., 2013). The claims are appropriately attributed to previous studies and form the empirical foundation for the current modeling work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:55:00.734064Z"
+    },
+    {
+      "id": "3d38847b-9ef8-4ede-b8bb-546c7114d399",
+      "content_id": "5bfc7874-f544-46fd-943d-db00ec4e0783",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The minimal computational model reproduces essential features of ORN responses including diverse temporal firing patterns, tuning curves, and Weber-Fechner adaptation that adjusts dose-response curves while maintaining log-slopes. Background odors cause background-dependent shifts in foreground dose-response curves.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The model successfully reproduces key experimental features as demonstrated in Figure 1B-G. The mathematical framework (Equations 2-4) is clearly specified and the results are consistent with cited experimental observations. The model validation is appropriate for the study's theoretical approach.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:55:00.734064Z"
+    },
+    {
+      "id": "e43dd3e5-f3ec-4316-bc20-f362478dc139",
+      "content_id": "5bfc7874-f544-46fd-943d-db00ec4e0783",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Front-end Weber-Fechner adaptation preserves odor identity coding in the presence of background odors and intensity fluctuations. Adaptive systems show better clustering by odor identity in t-SNE projections and maintain higher mutual information compared to non-adaptive systems. A slight deviation from perfect Weber scaling may enhance coding by spreading firing rates across the ORN dynamic range.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44-C45 are directly demonstrated in Figures 2C and 2\u2014figure supplement 2 with appropriate quantification via t-SNE and mutual information. Claim C48 is supported by Figure 2E showing the effect of partial adaptation. However, the biological relevance of the optimal \u03b2 value depends on whether such deviations actually occur in vivo (C69 provides some support). The core finding that adaptation preserves coding is well-supported.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:55:00.734064Z"
+    },
+    {
+      "id": "16a6c870-7ccb-4b5a-946d-3aac86be2f28",
+      "content_id": "5bfc7874-f544-46fd-943d-db00ec4e0783",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Using compressed sensing decoding, the adaptive system maintains odor reconstruction accuracy across a broader range of odor concentrations and complexities compared to the non-adaptive system. Without adaptation, strong backgrounds eliminate the ability to reconstruct odor whiffs from naturalistic signals.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims are directly demonstrated in Figures 3B, 3C, and 3E. The compressed sensing framework is clearly described and appropriately applied. The linearization approximation is acknowledged and validated with alternative methods (Figure 3\u2014figure supplement 5). The results consistently show benefits of adaptation across multiple conditions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:55:00.734064Z"
+    },
+    {
+      "id": "efd492b6-8f8c-4ab5-bead-7a09fbefdadc",
+      "content_id": "5bfc7874-f544-46fd-943d-db00ec4e0783",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Front-end adaptation enhances primacy coding by maintaining consistent primacy sets across different background odors and concentrations. For simple odors, a limited set of earliest responding neurons accounts for odor identity, while complex mixtures require the full ORN repertoire.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56-C60 are well-supported by Figures 4A-C and Figure 4\u2014figure supplement 1. The analysis appropriately tests the primacy coding hypothesis and demonstrates that adaptation increases primacy set consistency across backgrounds. The distinction between simple and complex odors is clearly shown and makes biological sense.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:55:00.734064Z"
+    },
+    {
+      "id": "7403b141-5d3b-48f1-8435-71963fd11863",
+      "content_id": "5bfc7874-f544-46fd-943d-db00ec4e0783",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "In a network model incorporating antennal lobe divisive normalization and mushroom body connectivity, ORN adaptation is the primary contributor to maintaining odor identity classification accuracy, with divisive normalization providing additional benefits for valence classification. The two mechanisms act jointly at different processing stages.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C62-C65 are supported by Figure 5A-B showing classification accuracy with different combinations of mechanisms. The network architecture is based on known connectivity (appropriately cited). However, the authors acknowledge their divisive normalization results differ somewhat from prior work (Olsen et al., 2010) and provide reasonable explanations for the discrepancy. The conclusion about joint action is appropriately qualified.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:55:00.734064Z"
+    },
+    {
+      "id": "84494f3e-4106-4df2-b1f1-94afa5c2b1bf",
+      "content_id": "5bfc7874-f544-46fd-943d-db00ec4e0783",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Weber-Law adaptation at the front-end of the olfactory circuit contributes significantly to preserving odor identity representations amid confounding odors and intensity fluctuations. This mechanism confers benefits without requiring ORN-specific parameterizations and can maintain combinatorial codes across changing environmental conditions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This is the main conclusion synthesizing results from all analyses (Figures 2-5). The claim is well-supported by converging evidence from multiple decoding frameworks (compressed sensing, primacy coding, neural network classification). The generality across methods strengthens the conclusion. The receptor-independence is appropriately emphasized as a key feature.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:55:00.734064Z"
+    },
+    {
+      "id": "fc672eab-781c-4996-883f-433bf1681b21",
+      "content_id": "5bfc7874-f544-46fd-943d-db00ec4e0783",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Weber-Fechner scaling increases satisfaction of the restricted isometry property compared to non-adaptive systems, though this property does not strictly require response invariance. Some signature of response invariance emerges as a byproduct of front-end adaptation across multiple analyses.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C88 is supported by eigenvalue analysis in Figure 3\u2014figure supplement 4. Claims C89-C90 appropriately distinguish between theoretical requirements and empirical observations. The analysis correctly notes that while RIP doesn't require invariance, the adaptive system exhibits invariance-like properties across t-SNE, primacy coding, and classification results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:55:00.734064Z"
+    },
+    {
+      "id": "5c2236f1-ed74-4776-be83-7990087e35c8",
+      "content_id": "5bfc7874-f544-46fd-943d-db00ec4e0783",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The generality of adaptive scaling suggests possible mediation by the conserved Orco co-receptor, which has been implicated in long-term adaptation. The tetrameric structure of Or/Orco complexes may involve multiple binding sites, which when modeled supports the general findings.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C24 and C84 are explicitly speculative (\"suggests,\" \"may\"). While the speculation is reasonable given Orco's conservation and known role in adaptation, no direct experimental evidence is provided in this study. Claim C85 shows the model is robust to multiple binding sites (Figure 3\u2014figure supplement 3), but this is a sensitivity analysis rather than evidence for the biological reality of multiple sites.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:55:00.734064Z"
+    },
+    {
+      "id": "32d79fdb-3168-4c65-aa4a-91801ea38a83",
+      "content_id": "5bfc7874-f544-46fd-943d-db00ec4e0783",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The modeling framework incorporates many observed features of the Drosophila olfactory system but is minimal, excluding odor binding proteins, inhibitory odorants, odorant-odorant antagonism, and other factors that could further enhance coding.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims accurately describe the scope and limitations of the model. The authors appropriately acknowledge what is included and excluded, and note that additional biological features could enhance performance. This transparency about model limitations is appropriate for a theoretical study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:55:00.734064Z"
+    },
+    {
+      "id": "a41ecb29-06b8-4ef0-ab14-8b839efb315b",
+      "content_id": "5bfc7874-f544-46fd-943d-db00ec4e0783",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Background knowledge claims about olfactory system organization, combinatorial coding, environmental challenges, downstream processing mechanisms, Weber-Fechner adaptation in other systems, and compressed sensing theory.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims accurately represent established knowledge from the cited literature. They provide appropriate context for the study and are correctly attributed to prior work. No misrepresentations of cited work are apparent.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:55:00.734064Z"
+    },
+    {
+      "id": "e6a58caf-72d7-46e7-ad06-6c1108d00250",
+      "content_id": "5bfc7874-f544-46fd-943d-db00ec4e0783",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Common gain scaling across Orco-expressing ORNs may be a key feature that helps preserve combinatorial odor codes in naturalistic landscapes, with enhancements aided by downstream transformations in the antennal lobe and mushroom body.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These summary claims synthesize the main findings and are supported by the combined results from compressed sensing (Figure 3), primacy coding (Figure 4), and network modeling (Figure 5). The qualification \"may be\" is appropriate given this is a theoretical study. The claims accurately reflect the computational evidence presented.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:55:00.734064Z"
+    },
+    {
+      "id": "6b1b8c3a-329b-4aba-897d-6dd85b4627ce",
+      "content_id": "5bfc7874-f544-46fd-943d-db00ec4e0783",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Temporal coding emerges implicitly in the model because the input nonlinearity depends on diverse binding affinities, naturally formatting odor signals into temporal patterns that are both odor- and ORN-specific.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This claim is supported by Figures 1D-E showing diverse temporal responses arising from the model. The explanation is consistent with the model structure (Equations 2-4) where different affinity constants produce different temporal dynamics. This demonstrates how temporal coding can emerge from the biophysical model without explicit temporal mechanisms.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:55:00.734064Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "3f5db605-266a-4204-ba11-32057e5212ce",
+      "result_id": "8c03870c-d305-492b-81c6-0fc4208ccf1c"
+    },
+    {
+      "claim_id": "58a470ef-c9e5-41b4-afc4-3a4872e704e1",
+      "result_id": "8c03870c-d305-492b-81c6-0fc4208ccf1c"
+    },
+    {
+      "claim_id": "7e894755-b888-4cbe-aaba-dbb999d5b915",
+      "result_id": "8c03870c-d305-492b-81c6-0fc4208ccf1c"
+    },
+    {
+      "claim_id": "7cfc50b4-eca7-4208-86c3-e2c4d0c9d3cc",
+      "result_id": "8c03870c-d305-492b-81c6-0fc4208ccf1c"
+    },
+    {
+      "claim_id": "4f834bf5-1299-4d1a-94dc-8194b83d9cf0",
+      "result_id": "8c03870c-d305-492b-81c6-0fc4208ccf1c"
+    },
+    {
+      "claim_id": "50ce3a97-4931-4c5c-8125-cb7df8f660a3",
+      "result_id": "8c03870c-d305-492b-81c6-0fc4208ccf1c"
+    },
+    {
+      "claim_id": "29f18b24-e9e8-4e35-97bb-20a0dcf28c27",
+      "result_id": "8c03870c-d305-492b-81c6-0fc4208ccf1c"
+    },
+    {
+      "claim_id": "339162c9-7351-4390-ba08-aee1c1f141e5",
+      "result_id": "3d38847b-9ef8-4ede-b8bb-546c7114d399"
+    },
+    {
+      "claim_id": "22f59ae1-3a78-4fc1-98fc-27b30b8c79bb",
+      "result_id": "3d38847b-9ef8-4ede-b8bb-546c7114d399"
+    },
+    {
+      "claim_id": "630aecf6-6d1b-4cc5-9037-e52160ab8800",
+      "result_id": "3d38847b-9ef8-4ede-b8bb-546c7114d399"
+    },
+    {
+      "claim_id": "23bb8bea-274f-454d-991e-3a00320092c4",
+      "result_id": "3d38847b-9ef8-4ede-b8bb-546c7114d399"
+    },
+    {
+      "claim_id": "5dbf7eed-2301-4788-b086-13bbe75be717",
+      "result_id": "e43dd3e5-f3ec-4316-bc20-f362478dc139"
+    },
+    {
+      "claim_id": "8b2040f0-132b-499f-a0b8-317ac9419ab2",
+      "result_id": "e43dd3e5-f3ec-4316-bc20-f362478dc139"
+    },
+    {
+      "claim_id": "27eaedc8-18ae-41df-9316-0b8bee4f6ec6",
+      "result_id": "e43dd3e5-f3ec-4316-bc20-f362478dc139"
+    },
+    {
+      "claim_id": "d8dd9fc4-ee83-4476-b100-e680febf21c8",
+      "result_id": "e43dd3e5-f3ec-4316-bc20-f362478dc139"
+    },
+    {
+      "claim_id": "f680de8d-0bca-45fe-846f-1de1c8b8be5e",
+      "result_id": "e43dd3e5-f3ec-4316-bc20-f362478dc139"
+    },
+    {
+      "claim_id": "35635e4d-0df5-4739-9bc4-195752984c0a",
+      "result_id": "e43dd3e5-f3ec-4316-bc20-f362478dc139"
+    },
+    {
+      "claim_id": "f77b6d45-fff1-4a2a-abd8-22e76010d2a0",
+      "result_id": "16a6c870-7ccb-4b5a-946d-3aac86be2f28"
+    },
+    {
+      "claim_id": "6c879de8-fe31-4cb4-9648-bbafb100ded4",
+      "result_id": "16a6c870-7ccb-4b5a-946d-3aac86be2f28"
+    },
+    {
+      "claim_id": "b95162fa-8751-4291-973e-1ad8be7145c0",
+      "result_id": "16a6c870-7ccb-4b5a-946d-3aac86be2f28"
+    },
+    {
+      "claim_id": "bb5aaa4b-0eb3-47cd-8d6d-539cce68a51d",
+      "result_id": "efd492b6-8f8c-4ab5-bead-7a09fbefdadc"
+    },
+    {
+      "claim_id": "7890dc67-96ce-48e7-bb6f-c695d3193fd2",
+      "result_id": "efd492b6-8f8c-4ab5-bead-7a09fbefdadc"
+    },
+    {
+      "claim_id": "c0a0fcd3-687a-4137-8a2f-11e854b32287",
+      "result_id": "efd492b6-8f8c-4ab5-bead-7a09fbefdadc"
+    },
+    {
+      "claim_id": "8afb83f2-15ee-4f90-95eb-5aa762cbcde1",
+      "result_id": "efd492b6-8f8c-4ab5-bead-7a09fbefdadc"
+    },
+    {
+      "claim_id": "3bd13eb7-a9f2-4f0d-ab0c-8dc782f64ec0",
+      "result_id": "efd492b6-8f8c-4ab5-bead-7a09fbefdadc"
+    },
+    {
+      "claim_id": "71b7f71d-3506-4695-aead-ddf7df15ed88",
+      "result_id": "efd492b6-8f8c-4ab5-bead-7a09fbefdadc"
+    },
+    {
+      "claim_id": "31381600-18a3-4988-8f4e-1c539830e940",
+      "result_id": "7403b141-5d3b-48f1-8435-71963fd11863"
+    },
+    {
+      "claim_id": "9c70f191-205c-4b2c-92f3-0b6388250a4b",
+      "result_id": "7403b141-5d3b-48f1-8435-71963fd11863"
+    },
+    {
+      "claim_id": "a2b979bd-6198-4f55-8dca-611bb025ceca",
+      "result_id": "7403b141-5d3b-48f1-8435-71963fd11863"
+    },
+    {
+      "claim_id": "6a737038-e4b1-47d5-a886-a3d07b33383f",
+      "result_id": "7403b141-5d3b-48f1-8435-71963fd11863"
+    },
+    {
+      "claim_id": "3f68de66-1de3-455f-adb0-496814afd32b",
+      "result_id": "7403b141-5d3b-48f1-8435-71963fd11863"
+    },
+    {
+      "claim_id": "04f74089-4793-49ad-af84-a0e30648876d",
+      "result_id": "84494f3e-4106-4df2-b1f1-94afa5c2b1bf"
+    },
+    {
+      "claim_id": "7c9adf22-ccf3-42b0-a65e-505b559ac674",
+      "result_id": "84494f3e-4106-4df2-b1f1-94afa5c2b1bf"
+    },
+    {
+      "claim_id": "def720b4-196a-41f7-b802-19d48f67797d",
+      "result_id": "84494f3e-4106-4df2-b1f1-94afa5c2b1bf"
+    },
+    {
+      "claim_id": "fcad3569-2a39-4be7-bf85-f86ae7633a53",
+      "result_id": "fc672eab-781c-4996-883f-433bf1681b21"
+    },
+    {
+      "claim_id": "5dd581a2-d2b6-43d1-8887-f0567dfb6984",
+      "result_id": "fc672eab-781c-4996-883f-433bf1681b21"
+    },
+    {
+      "claim_id": "0c0dad94-9873-4256-ae45-3a68f69256b2",
+      "result_id": "fc672eab-781c-4996-883f-433bf1681b21"
+    },
+    {
+      "claim_id": "1cea0507-177c-4224-8872-824517f79a99",
+      "result_id": "5c2236f1-ed74-4776-be83-7990087e35c8"
+    },
+    {
+      "claim_id": "e67da32a-45d3-435c-a6ea-45056329c51b",
+      "result_id": "5c2236f1-ed74-4776-be83-7990087e35c8"
+    },
+    {
+      "claim_id": "d6cfda94-dd50-4154-862e-a4eaa5c0e09d",
+      "result_id": "5c2236f1-ed74-4776-be83-7990087e35c8"
+    },
+    {
+      "claim_id": "2f003f60-944c-4331-92ee-edf06ac6b2f3",
+      "result_id": "32d79fdb-3168-4c65-aa4a-91801ea38a83"
+    },
+    {
+      "claim_id": "ece76633-e984-4238-9973-6a332c7eea5f",
+      "result_id": "32d79fdb-3168-4c65-aa4a-91801ea38a83"
+    },
+    {
+      "claim_id": "075b2069-cd28-4338-aac1-a0cfb9c2b70c",
+      "result_id": "a41ecb29-06b8-4ef0-ab14-8b839efb315b"
+    },
+    {
+      "claim_id": "a6b141d9-91f9-489e-a485-1c9ed50049a2",
+      "result_id": "a41ecb29-06b8-4ef0-ab14-8b839efb315b"
+    },
+    {
+      "claim_id": "c2d03ae7-a538-433e-8f06-54647c168d8c",
+      "result_id": "a41ecb29-06b8-4ef0-ab14-8b839efb315b"
+    },
+    {
+      "claim_id": "ecf228c6-4a20-4e49-b6df-8a104e4e13c9",
+      "result_id": "a41ecb29-06b8-4ef0-ab14-8b839efb315b"
+    },
+    {
+      "claim_id": "c6794bb1-fda3-4d56-8600-5d03fbc12cef",
+      "result_id": "a41ecb29-06b8-4ef0-ab14-8b839efb315b"
+    },
+    {
+      "claim_id": "7d2b92aa-4f89-40e3-ba8b-7c0990950d48",
+      "result_id": "a41ecb29-06b8-4ef0-ab14-8b839efb315b"
+    },
+    {
+      "claim_id": "0fb31c18-f10d-48ba-b65c-2f0675b38ea0",
+      "result_id": "a41ecb29-06b8-4ef0-ab14-8b839efb315b"
+    },
+    {
+      "claim_id": "137c5c34-f7ee-456e-a152-b3ba2f3f11c4",
+      "result_id": "a41ecb29-06b8-4ef0-ab14-8b839efb315b"
+    },
+    {
+      "claim_id": "6d8b4605-b391-4952-aea5-6d9d1094dcfe",
+      "result_id": "a41ecb29-06b8-4ef0-ab14-8b839efb315b"
+    },
+    {
+      "claim_id": "53901cf6-b845-4bd9-8702-baaacf6a4094",
+      "result_id": "a41ecb29-06b8-4ef0-ab14-8b839efb315b"
+    },
+    {
+      "claim_id": "de011744-1f4c-4cfd-9d1c-2d811c44c9e8",
+      "result_id": "a41ecb29-06b8-4ef0-ab14-8b839efb315b"
+    },
+    {
+      "claim_id": "25ab0d3a-6b27-4f51-b01a-ada66da4e696",
+      "result_id": "a41ecb29-06b8-4ef0-ab14-8b839efb315b"
+    },
+    {
+      "claim_id": "81092024-9119-44ff-a854-8bdf8b059730",
+      "result_id": "a41ecb29-06b8-4ef0-ab14-8b839efb315b"
+    },
+    {
+      "claim_id": "54e163a0-7a4a-4bac-904b-9299f9793859",
+      "result_id": "a41ecb29-06b8-4ef0-ab14-8b839efb315b"
+    },
+    {
+      "claim_id": "b8860f2e-ee96-41a1-ad82-b331d567feff",
+      "result_id": "a41ecb29-06b8-4ef0-ab14-8b839efb315b"
+    },
+    {
+      "claim_id": "ab5c3b21-e39d-4b29-bce7-021f033fd64b",
+      "result_id": "a41ecb29-06b8-4ef0-ab14-8b839efb315b"
+    },
+    {
+      "claim_id": "478eaf51-a339-4c3d-a0d0-1a1654b79121",
+      "result_id": "a41ecb29-06b8-4ef0-ab14-8b839efb315b"
+    },
+    {
+      "claim_id": "33afcf71-a6a5-4ef6-b4b3-4f7905898e81",
+      "result_id": "a41ecb29-06b8-4ef0-ab14-8b839efb315b"
+    },
+    {
+      "claim_id": "99b6518c-192e-415a-9f41-06d64f949e83",
+      "result_id": "a41ecb29-06b8-4ef0-ab14-8b839efb315b"
+    },
+    {
+      "claim_id": "5167e825-9566-4ae0-89d3-0c6e8e759b42",
+      "result_id": "a41ecb29-06b8-4ef0-ab14-8b839efb315b"
+    },
+    {
+      "claim_id": "c1f327a7-23c0-44db-9599-b053e5c3b2b2",
+      "result_id": "a41ecb29-06b8-4ef0-ab14-8b839efb315b"
+    },
+    {
+      "claim_id": "6f468347-1f71-4fb6-bb7f-7a19bbda0168",
+      "result_id": "a41ecb29-06b8-4ef0-ab14-8b839efb315b"
+    },
+    {
+      "claim_id": "5bef2bcb-cf3e-4fa1-9039-1a76552ba183",
+      "result_id": "a41ecb29-06b8-4ef0-ab14-8b839efb315b"
+    },
+    {
+      "claim_id": "4f960601-4d10-4ae7-9594-07f79528fc31",
+      "result_id": "a41ecb29-06b8-4ef0-ab14-8b839efb315b"
+    },
+    {
+      "claim_id": "203d4d09-70a8-462a-a215-e7bcba12b30f",
+      "result_id": "a41ecb29-06b8-4ef0-ab14-8b839efb315b"
+    },
+    {
+      "claim_id": "239e3f78-d3a7-4c75-afb9-fccbfcac7b36",
+      "result_id": "a41ecb29-06b8-4ef0-ab14-8b839efb315b"
+    },
+    {
+      "claim_id": "2403a4f0-4ebe-440a-9582-7395e6f37601",
+      "result_id": "e6a58caf-72d7-46e7-ad06-6c1108d00250"
+    },
+    {
+      "claim_id": "7a2607f2-a6b7-4969-8e93-ee25445b7ebd",
+      "result_id": "e6a58caf-72d7-46e7-ad06-6c1108d00250"
+    },
+    {
+      "claim_id": "7a1b26f3-bb3b-437b-9f54-c5df9106d82c",
+      "result_id": "6b1b8c3a-329b-4aba-897d-6dd85b4627ce"
+    }
+  ],
+  "comparisons": []
+}

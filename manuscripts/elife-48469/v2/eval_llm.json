@@ -1,0 +1,336 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C18",
+      "C19",
+      "C21",
+      "C22",
+      "C23",
+      "C25"
+    ],
+    "result": "The ER membrane protein complex (EMC) is indispensable for flavivirus polyprotein expression and replication. Knockout of EMC subunits in Huh7.5.1 and HEK293FT cells results in 10-10,000-fold reduction in DENV replication, which is rescued by complementation with EMC cDNA. This dependency is specific to mosquito-borne flaviviruses (DENV, WNV, ZIKV) but not HCV.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C18-C19, C21-C23, and C25 collectively demonstrate that EMC is essential for flavivirus replication through multiple independent knockout cell lines, complementation experiments, and specificity testing across different viruses. The data show consistent phenotypes across cell types and EMC subunits, with proper controls including complementation and virus specificity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "EMC is essential for post-translational stability rather than translation efficiency of flavivirus polyproteins. Ribosome profiling shows no substantial changes in translation efficiency (0.43-2.17x) in EMC4 KO cells, with DENV RNA among the highest translated mRNAs in both WT and KO cells. However, viral protein expression is reduced as early as 6 hpi, affecting both TMD and non-TMD containing proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C26-C40 are well-supported by ribosome profiling data showing maintained translation efficiency, combined with immunoblot and replicon assays demonstrating reduced protein accumulation. The convergence of multiple experimental approaches (ribosome profiling, immunoblots, replicon assays with polymerase inhibitor) provides strong evidence that the defect is post-translational rather than translational.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C48",
+      "C49",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "The NS4A-NS4B region of the flavivirus polyprotein undergoes proteasomal degradation in the absence of EMC. Dual-fluorescence G2C stability assays show that constructs containing both NS4A and NS4B (but not either alone) are destabilized in EMC4 KO cells. Proteasome inhibition with bortezomib increases detectable viral proteins in EMC4 KO cells but does not restore replication, indicating the accumulated proteins are non-functional.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C41-C44, C48-C49, C52-C56 are strongly supported by the G2C fluorescence assay systematically testing different polyprotein segments, combined with proteasome inhibition experiments. The specificity for NS4A-4B together (but not individually) and rescue by EMC4 complementation provide compelling evidence. The observation that bortezomib increases protein levels without restoring function is critical for establishing misfolding rather than just reduced translation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C4",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Serial passaging of DENV on EMC-deficient cells identified two non-synonymous point mutations in NS4A (A6665G, Tyr\u2192Cys) and NS4B (A7558T, Asn\u2192Tyr) that rescue viral replication. These mutations are highly conserved across DENV serotype 2 strains and independently converge with the G2C assay in identifying NS4A-4B as the EMC-dependent region. The double mutant completely rescues viral growth in EMC KO cells, while single mutants show partial rescue (30% and 86% respectively).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C57-C75 are well-supported by viral adaptation experiments, sequencing data, evolutionary conservation analysis, and functional validation. The convergence of two independent experimental approaches (G2C assay and viral adaptation) identifying the same region is particularly compelling. The dose-dependent rescue by single vs. double mutants and the high evolutionary conservation of the mutated positions strengthen the findings. However, the low success rate (3/6 adaptation experiments) suggests a high barrier to escape.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C5",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "EMC physically interacts with viral NS4B protein post-polyprotein processing. Co-immunoprecipitation with FLAG-tagged EMC4 specifically pulls down NS4B but not prM or NS5. This interaction is maintained even in adapted DENV containing the rescue mutations, suggesting the mutations do not ablate EMC engagement but rather allow proper folding in EMC's absence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C82-C86 are supported by co-immunoprecipitation experiments showing specific interaction with NS4B. The specificity (NS4B positive, prM and NS5 negative) and persistence of interaction in adapted virus strengthen the findings. However, the co-IP experiments lack quantification and would benefit from additional controls such as RNase treatment to rule out RNA-mediated interactions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C6",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C100"
+    ],
+    "result": "The NS4A-4B region adopts an aberrant topology in the absence of EMC. Protease protection assays show that eGFP fused after NS4B TMD1 and TMD4 is luminal in WT cells but cytoplasmic in EMC4 KO cells. Deglycosylation assays demonstrate efficient glycosylation of an opsin tag downstream of NS4A TMD2 in WT cells but poor glycosylation in EMC4 KO cells. The A6665G adaptive mutation does not restore correct topology, suggesting it allows replication with aberrant topology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C88-C94, C100 are well-supported by two complementary topology assays (protease protection and deglycosylation). The consistency between assays and agreement with previously published NS4B topology strengthen the findings. The observation that the adaptive mutation doesn't restore topology is particularly important for understanding the mechanism. However, the authors acknowledge (C95) that topology might be restored in the context of full-length polyprotein, which represents appropriate scientific caution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Processing of NS4B from the polyprotein is affected by EMC deficiency. While higher molecular weight intermediates (NS2B-NS3-NS4A-NS4B-eGFP or NS4A-NS4B-eGFP) show similar expression levels in WT and EMC4 KO cells, processed NS4B-eGFP accumulation is reduced in EMC4 KO cells. Bortezomib treatment indicates rapid degradation of cleaved NS4B-eGFP in EMC-deficient cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C81 are supported by immunoblot analysis of a subgenomic construct with functional NS2B-NS3 protease. The differential effect on processing intermediates vs. processed NS4B provides mechanistic insight. However, the immunoblots lack quantification and would benefit from additional replicates and statistical analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C101"
+    ],
+    "result": "The authors propose a model where EMC engages with TMDs in NS4A and NS4B during polyprotein translation to ensure accurate topology, correct folding, and stable expression. In EMC's absence, TMDs in the NS4A-4B region are not accurately integrated, leading to misfolding and degradation. The data suggest EMC does not affect ER targeting and translocation of 2K, and cleavage between 2K and NS4B by signal peptidase still occurs in EMC-deficient cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C99, C101 represent a mechanistic model well-supported by the collective experimental data. The model is consistent with all observations including topology defects, degradation, and cleavage patterns. The inference about 2K cleavage (C98) is appropriately supported by molecular weight analysis and citation to previous work. However, C102 appropriately acknowledges uncertainty about whether EMC facilitates insertion vs. maintains topology post-integration.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "The current study's findings are complementary to and largely in agreement with Lin et al. (2019), which also identified NS4A and NS4B as EMC-dependent. However, the current study uniquely shows that destabilization only occurs when NS4B is preceded by NS4A, arguing that the NS4A-4B intermediate triggers an EMC-dependent process. Both studies show EMC physically interacts with NS4B and that NS4B is degraded in EMC's absence, but the current study provides additional molecular insights about aberrant topology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C119 provide appropriate contextualization of the current work relative to Lin et al. (2019). The comparison is fair and highlights both agreements and key differences. The distinction that NS4B requires preceding NS4A for destabilization (C108) is an important mechanistic insight unique to this study. The discussion appropriately notes complementarity while distinguishing the unique contributions of each study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125"
+    ],
+    "result": "The A6665G mutation in NS4A TMD2 does not restore wild-type topology but may rescue replication through alternative mechanisms. This mutation also arose during DENV adaptation to OST complex-deficient cells. The authors speculate it may modulate ER membrane integration or expose binding interfaces important for replication complex formation. The A7558T mutation may stabilize cytosolic orientation of the C-terminus through expansion of the 'aromatic belt'.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C120-C125 mix supported observations (C120-C121) with speculation (C123-C125). The observation that A6665G doesn't restore topology (C120) is well-supported by deglycosylation assays. The convergence with OST adaptation (C121) is interesting but the mechanistic explanations (C123-C125) are appropriately labeled as speculation. The inference about A7558T (C124-C125) is reasonable given co-translational membrane insertion but remains speculative without direct testing.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136"
+    ],
+    "result": "The study provides evidence that EMC can support stable expression of internal TMDs, not just TMDs near protein termini. Unlike tail-anchored proteins and GPCRs where EMC inserts terminal TMDs, DENV NS4A-4B contains several internal TMDs. Since NS4A is already targeted to and inserted into the ER membrane, this argues against a simple insertase mechanism for NS4B and suggests EMC may facilitate biogenesis of a wider variety of transmembrane proteins than previously recognized.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C131-C136 are well-supported by the experimental data and appropriately contextualized with previous work on EMC function. The distinction between terminal vs. internal TMDs (C134-C135) is an important conceptual advance. The inference that this expands the potential scope of EMC function (C136) is reasonable and appropriately supported by citation to Shurtleff et al. (2018). This represents a significant contribution to understanding cellular EMC function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130"
+    ],
+    "result": "The isolation of EMC-independent DENV mutants enables future drug screening for EMC modulators and suggests EMC inhibitors could serve as antiviral therapeutics. The requirement for two mutations after >20 passages (with only 50% success rate) suggests a higher barrier to resistance compared to direct-acting antivirals, which typically require only one mutation for escape.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C126-C128 are speculative about future applications, which is appropriate for a discussion section. Claim C129 is a factual observation about the adaptation experiments. Claim C130 is supported by citation. However, the comparison to direct-acting antivirals (C130) and the inference about resistance barriers is somewhat oversimplified - the barrier to resistance depends on many factors including mutation rate, fitness costs, and drug concentration. The proposed drug screening application (C126) is reasonable but untested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143"
+    ],
+    "result": "The DENV polyprotein contains multiple signal peptidase cleavage sites, including at the 2K/NS4B junction. Unlike ADRB1, where adding a signal sequence upstream makes EMC dispensable, NS4B remains EMC-dependent despite the upstream 2K signal peptide. This suggests EMC-mediated integration/stabilization of TMDs may be context-dependent. Generally, only a subset of TMDs in multi-pass proteins require EMC, while others rely on Sec61 translocon.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C137-C141 are well-supported by the experimental data and appropriate comparison to ADRB1 (C138, supported by citation). The observation that NS4B is EMC-dependent despite 2K (C139) is an important finding that distinguishes it from ADRB1. The inference about context-dependence (C140) and selective TMD requirements (C141) are reasonable generalizations. Claims C142-C143 appropriately identify gaps in understanding and propose future directions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C144",
+      "C145",
+      "C146",
+      "C147"
+    ],
+    "result": "The EMC was originally associated with UPR, and UPR upregulation during flavivirus infection has been reported. The authors speculate that competition between viral polyproteins and cellular proteins for EMC, OST complex, and ERAD components may be linked to UPR induction. ER stress can trigger autophagy, which benefits flavivirus infection, suggesting hijacking EMC may have both direct and indirect implications for viral replication.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C144 is well-supported by citations. However, claims C145 and C147 are speculative connections between EMC dependency and UPR/autophagy that are not directly tested in this study. Claim C146 is supported by citations but the causal link to EMC competition (C145) remains speculative. While these are reasonable hypotheses for discussion, they lack experimental support in the current manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "Background on flavivirus biology and EMC function. Flaviviruses translate their genomes as multi-pass transmembrane proteins at the ER membrane, which are cleaved by viral and cellular proteases. The viral polyprotein relies on host machinery (SRP, TRAP, Sec61, signal peptidase) for ER targeting and membrane insertion. The EMC was discovered in UPR screens, is a conserved six-subunit complex, and plays a role in insertion/stabilization of certain transmembrane proteins including tail-anchored proteins and GPCRs. Multiple CRISPR screens identified EMC as a flavivirus dependency factor.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C17 represent established background knowledge appropriately supported by citations to primary literature. These provide necessary context for the study but are not novel findings. All claims are well-established in the field and properly attributed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C20",
+      "C87",
+      "C95",
+      "C102",
+      "C116",
+      "C123",
+      "C124",
+      "C125"
+    ],
+    "result": "Various speculative statements and acknowledged uncertainties throughout the manuscript. These include speculation about differences between cell types (C20), mechanisms of adaptive mutations (C87, C95, C123-C125), EMC's precise mechanism of action (C102), and limitations of findings from Lin et al. (C116).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C20, C87, C95, C102, C116, C123-C125 represent appropriate scientific speculation and acknowledgment of uncertainty. These are clearly presented as hypotheses or limitations rather than established findings. This represents good scientific practice in acknowledging what is not known or what requires further investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C50",
+      "C51",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "Background on EMC client proteins and NS4A/NS4B function. For cellular multi-pass proteins, EMC co-translationally engages with specific TMDs to support membrane insertion and stable expression. The G2C-only construct shows 1:1 ratio in both WT and EMC4 KO cells, while ADRB1-G2C shows destabilization in EMC4 KO cells. NS4A has 3 TMDs with the 2K peptide serving as signal sequence for NS4B translocation. NS4A and NS4B fulfill crucial functions including ER membrane rearrangements, replication complex formation, NS3 helicase interaction, and interferon suppression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C47, C50-C51, C103-C105 represent a mix of established knowledge (C45, C50-C51, C103-C105, supported by citations) and validation controls for the G2C assay (C46-C47, supported by data and citations). These provide necessary methodological validation and biological context but are not primary novel findings of the study.",
+    "result_type": "MINOR"
+  }
+]

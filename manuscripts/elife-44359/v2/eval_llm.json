@@ -1,0 +1,137 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C20",
+      "C21",
+      "C30",
+      "C44",
+      "C45"
+    ],
+    "result": "Environmental heterogeneity in the form of microscale substrate roughness (10 \u03bcm elevations/troughs, 15-30 \u03bcm wide valleys) dramatically reduces the efficacy of selection during bacterial colony range expansions. This effect arises from local 'pinning' of the expansion front, where stretches of the front are slowed down by substrate features, focusing expansion into a small number of 'lucky' individuals with access to expansion paths and increasing the importance of chance relative to selection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C4, C20-C21, C30, C44-C45 provide converging experimental evidence from time-lapse microscopy (C3, C20-C21), substrate characterization (C30, C44-C45), and mutant tracking experiments (C2) that collectively demonstrate the pinning mechanism and its effects on selection efficacy. The substrate characterization is quantitative and the observed morphological changes (rougher fronts, branch-like outgrowths) are consistent with the proposed pinning mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "The experimental system uses E. coli MG1655 with plasmid pB10, where spontaneous plasmid loss creates mutants with tunable fitness effects. Without doxycycline, mutants have a 20-25% growth advantage; at ~0.35 \u03bcg/ml doxycycline, mutants and wild-type have equal fitness; at higher concentrations, mutants become deleterious.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C50 describe the experimental system with appropriate characterization. The fitness measurements (C49-C50) are supported by data in Figure 2\u2014figure supplement 1, and the plasmid properties (C47-C48) are documented with appropriate citations. This provides a well-validated system for studying mutations with controlled fitness effects.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "In smooth colonies, approximately 2000 mutations per colony arose in favorable positions at the front, each with establishment probability ~10^-3. Clone size distributions show that neutral mutations produce broad shoulder-like distributions, beneficial mutations create larger bulging sectors with maximum sizes approaching half the population, while deleterious mutations are cut off at small clone sizes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C28 are supported by experimental observations and quantitative analysis. The clone size distributions (C27-C28) are shown in Figure 3 and are consistent with prior work (Fusco et al., 2016). The estimate in C26 is based on reasonable assumptions about colony geometry (growth layer width, colony height) and observed establishment frequencies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C31",
+      "C54",
+      "C55"
+    ],
+    "result": "The minimal Eden model simulations show that at the critical obstacle density (\u03c1\u22480.4), colonies form site percolation clusters whose interfaces exhibit scaling exponents in excellent agreement with the quenched Edwards-Wilkinson (QEW) universality class, distinct from the KPZ universality class observed without obstacles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31, C54-C55 are well-supported by simulation data in Table 2 and Figure 4\u2014figure supplement 1. The measured exponents (\u03b1_loc\u22480.9, \u03b2\u22480.78) match QEW predictions, and the transition from KPZ to QEW universality class at the critical density is theoretically grounded and empirically validated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C43"
+    ],
+    "result": "Fewer lineages reach the population edge in the presence of environmental heterogeneity, as indicated by coalescence time analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C43 is supported by phylogenetic analysis shown in Figure 6e-f. The coalescence time data demonstrate that for a given sample distance, relative coalescence times and persistence probabilities are smaller in heterogeneous environments, indicating fewer successful lineages reach the front.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C46"
+    ],
+    "result": "Environmental heterogeneity can tip the rate of adaptation from positive (adaptation over time) to negative (accumulation of deleterious mutations) depending solely on the degree of environmental heterogeneity, as shown by computational analysis with a given distribution of fitness effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C46 is supported by computational analysis shown in Figure 8. The calculations use a defined distribution of fitness effects and demonstrate that varying obstacle density and transparency can shift the rate of adaptation from positive to negative, illustrating a fundamental consequence of reduced selection efficacy.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C56",
+      "C57"
+    ],
+    "result": "The minimal model cannot quantitatively account for all experimental results, particularly predicting higher neutral and deleterious mutant frequencies in heterogeneous environments while experiments show lower neutral mutant frequencies. A potential explanation is that experimental patterns have spatial correlations absent in simulations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C57 honestly acknowledge limitations of the model. The discrepancy is documented with specific data references (Figure 5d vs Figure 2d), and C57 provides a plausible mechanistic explanation based on differences in spatial correlation structure. This transparent reporting of model limitations strengthens rather than weakens the overall work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Environmental heterogeneity may increase accumulation of deleterious mutations (expansion load) beyond what occurs in homogeneous range expansions, and these results are expected to generalize to other spatially growing populations such as biofilms, tumors, and invasive species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C58 and C60 are speculative predictions (marked as INFERENCE/SPECULATION) about future implications. While C59 is supported by citations, C58 and C60 extend beyond the data presented. The generalization in C60 is reasonable given the model's simplicity but requires experimental validation in other systems.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C1",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "The manuscript establishes the relevant background on range expansion population genetics, including the roles of selection and drift at expansion fronts, prior work on microbial colonies as model systems, effects of environmental heterogeneity in macro-ecology, and previous studies on obstacles and spatial gradients.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C5-C14 provide appropriate background context supported by extensive citations to prior work. These claims accurately represent established knowledge in the field (C1, C5, C7-C11) and cite relevant prior experimental and theoretical studies (C6, C12-C14). The background appropriately frames the current study's contributions.",
+    "result_type": "MINOR"
+  }
+]

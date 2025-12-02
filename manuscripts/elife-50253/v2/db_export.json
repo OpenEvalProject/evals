@@ -1,0 +1,2179 @@
+{
+  "submission": {
+    "id": "9360ec0a-b1ab-452d-8b18-f19decf2aa3a",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T13:36:52.338735Z",
+    "updated_at": "2025-12-02T13:36:52.338735Z"
+  },
+  "content": [
+    {
+      "id": "0858f726-7a98-49bb-96ae-0a7d856ae3db",
+      "submission_id": "9360ec0a-b1ab-452d-8b18-f19decf2aa3a",
+      "content_type": "manuscript",
+      "content_text": "# Asymmetrical diversification of the receptor-ligand interaction controlling self-incompatibility in Arabidopsis\n\n## Authors\n\n- Maxime Chantreau<sup>1</sup> ([ORCID: 0000-0002-2844-1989](https://orcid.org/0000-0002-2844-1989))\n- C\u00e9line Poux<sup>1</sup> ([ORCID: 0000-0002-9379-2769](https://orcid.org/0000-0002-9379-2769))\n- Marc F Lensink<sup>2</sup>\n- Guillaume Brysbaert<sup>2</sup> ([ORCID: 0000-0002-6807-6621](https://orcid.org/0000-0002-6807-6621))\n- Xavier Vekemans<sup>1</sup>\n- Vincent Castric<sup>1</sup> ([ORCID: 0000-0002-4461-4915](https://orcid.org/0000-0002-4461-4915)) \u2020\n\n### Affiliations\n\n1. CNRS, Univ. Lille, UMR 8198\u2014Evo-Eco-Pal\u00e9o, F-59000 Lille France\n2. Univ. Lille, CNRS, UMR 8576 - UGSF - Unit\u00e9 de Glycobiologie Structurale et Fonctionnelle, F-59000 Lille France\n\n\u2020 Corresponding author\n\n## Abstract\n\nHow two-component genetic systems accumulate evolutionary novelty and diversify in the course of evolution is a fundamental problem in evolutionary systems biology. In the Brassicaceae, self-incompatibility (SI) is a spectacular example of a diversified allelic series in which numerous highly diverged receptor-ligand combinations are segregating in natural populations. However, the evolutionary mechanisms by which new SI specificities arise have remained elusive. Using in planta ancestral protein reconstruction, we demonstrate that two allelic variants segregating as distinct receptor-ligand combinations diverged through an asymmetrical process whereby one variant has retained the same recognition specificity as their (now extinct) putative ancestor, while the other has functionally diverged and now represents a novel specificity no longer recognized by the ancestor. Examination of the structural determinants of the shift in binding specificity suggests that qualitative rather than quantitative changes of the interaction are an important source of evolutionary novelty in this highly diversified receptor-ligand system.\n\n## Introduction\n\nA central goal of biology is to understand the evolutionary forces and molecular processes by which new traits and functions emerge in living organisms. A major challenge toward this goal is that many cellular processes rely on interactions between molecular partners (protein-protein interactions or regulatory interactions between for\u00a0example transcription factors and their binding sites; Boyle et al., 2017; Courtier-Orgogozo et al., 2019) rather than on the action of individual components in isolation. At present, the overall structure of protein-protein or regulatory interaction networks is just starting to be understood at the genome level in a handful of model organisms, and a general understanding of how the diversification of these networks led to the emergence of new biological functions in distinct lineages is crucially lacking (Nooren and Thornton, 2003; Andreani and Guerois, 2014). In two-component genetic systems, specificity of the interaction can be very tight such as for\u00a0example in receptor-ligand interactions (Laub and Goulian, 2007) or bacterial toxin-antitoxin systems (Aakre et al., 2015). In these systems, the emergence of novel traits involves evolutionary modification of the interacting partners, leading to potential disruption of the interaction or to detrimental cross-talk, at least transiently (Plach et al., 2017). A central aspect of the diversification process therefore concerns the functional nature of the evolutionary intermediate. Two main scenarios have been proposed (Aakre et al., 2015). The first scenario posits that a functional change results from introduction of a mutation that first modifies one of the two partners, initially disrupting the functional interaction and leading to a non-functional intermediate. If fitness of this non-functional intermediate is not impaired too drastically, it may remain in the population until a compensatory mutation hits the second partner and rescues the interaction in a modified state, resulting in the novel function. An alternative scenario though, is that the first mutation may broaden rather than inactivate specificity of one of the two interacting partners, transiently releasing constraint on the other before specificity of the first partner becomes restricted again, thus maintaining functionality of the system all along the process. Distinguishing between these two scenarios requires functional characterization of the ancestral evolutionary intermediates, which has been achieved in a very limited number of biological cases such as bacterial toxin-antitoxin systems (Aakre et al., 2015), acquisition of cortisol specificity of the mammalian glucocorticoid receptor (Bridgham et al., 2009) or mammalian retinoic acid receptors (Gutierrez-Mazariegos et al., 2016). The scenario of a promiscuous intermediate seems to have received better support, but whether this is a truly general pattern remains to be determined. A major limitation is that detailed population genetic models taking into account how natural selection is acting on variants of the two genes given their specific biological function are lacking for most genetic systems (Aakre et al., 2015; Aharoni et al., 2005; Bloom and Arnold, 2009; Bridgham et al., 2009; Matsumura and Ellington, 2001; Matton et al., 2000; Sayou et al., 2014).\n\nSelf-incompatibility (SI) in flowering plants is a prime biological system to investigate how functional diversification can proceed between two molecular partners over the course of evolution. SI has evolved as a strategy to prevent selfing and enforce outcrossing, thereby avoiding the deleterious effects of inbreeding depression (Nettancourt, 1977; Kitashiba and Nasrallah, 2014). In Brassicaceae, SI is genetically controlled by a single multiallelic non-recombining locus called the S-locus (Nettancourt, 1977). This locus encodes two highly polymorphic self-recognition determinant proteins: the female cell-surface \u2018receptor\u2019 S-LOCUS RECEPTOR KINASE (SRK) is expressed in stigmatic papillae cells (Takasaki et al., 2000) and the male \u2018ligand\u2019 S-LOCUS CYSTEIN RICH PROTEIN (SCR) is displayed at the pollen surface (Schopfer et al., 1999; Takasaki et al., 2000; Takayama et al., 2000). The SI response consists in pollen rejection by the pistil and is induced by allele-specific interaction between the SRK and SCR proteins when encoded by the same haplotype (S-haplotype, Kachroo et al., 2001; Nasrallah and Nasrallah, 1993; Takayama et al., 2001). These two interacting proteins exhibit a high degree of sequence variability and a large number of these highly diverged allelic variants segregate in natural populations of SI species (several dozens to nearly two hundred, Busch et al., 2014; Castric and Vekemans, 2004; Lawrence, 2000). This large allelic diversity of receptor-ligand combinations must have arisen through repeated diversification events, but the molecular process and evolutionary scenario involved in the diversification of an ancestral haplotype into distinct descendant specificities are still unresolved.\n\nThree evolutionary scenarios for emergence of new self-incompatibility specificities have been proposed so far (Charlesworth et al., 2005). The \u2018compensatory mutation\u2019 scenario posits that diversification proceeds through self-compatible intermediates that\u00a0is following transient disruption of the receptor-ligand interaction (Figure 1\u2014figure supplement 1A; Gervais et al., 2011; Uyenoyama et al., 2001). Population genetic analysis confirmed that S-allele diversification is indeed possible through this scenario, but only under some combinations of model parameters (high inbreeding depression, high rate of self-pollination and low number of co-segregating S-alleles, Gervais et al., 2011). Under these restrictive conditions, the ancestral recognition specificity can be maintained in the long run along with the derived specificity, effectively resulting in allelic diversification. A second scenario was presented by Chookajorn et al. (2004), who proposed that diversification results from the progressive reinforcement of SRK/SCR recognition capacity among slight functional variants of SCR and SRK that might segregate within the population. At the limit of the very low level of intra-allelic polymorphism observed in natural populations (Castric et al., 2010) this model bears similarity to the model of Gervais et al. (2011), who also predicted the maintenance of an ancestral recognition specificity unchanged and the evolution of a new divergent specificity, except it assumes no SC intermediate. However, the progressive reinforcement process proposed by this model may rather result in the production of two descendant allelic specificities that are both functionally distinct from their ancestor (Figure 1\u2014figure supplement 1B). A third scenario was proposed by Matton et al. (1999) and involves a dual-specificity intermediate (Figure 1\u2014figure supplement 1C). This scenario was criticized on population genetics grounds because such a dual-specificity haplotype would recognize and reject more potential mates for reproduction than its progenitor haplotype resulting in lower reproductive success, and should therefore be disfavoured by natural selection and quickly eliminated from the populations (Charlesworth, 2000; Uyenoyama and Newbigin, 2000). A main unanswered question is whether functional specificities remain stable over time or are subject to frequent turnover. Detailed theoretical analysis of the model of Gervais et al. (2011) showed that under a large portion of the parameter space, the introduced self-compatible intermediate is predicted to exclude its functional ancestor from the population. Secondary introduction of the compensatory mutation then effectively results in turnover of recognition specificities along allelic lines rather than in diversification per se. A turnover of recognition specificities may therefore be expected along each allelic lineage, rather than their long-term maintenance over evolutionary times. A similar process could also be occurring according to the progressive reinforcement model of Chookajorn et al. (2004). Overall, while the large allelic diversity at the S-locus is one of the most striking features of this system, the evolutionary scenario and molecular route by which new S-alleles arise remain largely unknown. An essential limitation in the field is the crucial absence of direct experimental approaches.\n\n## Results\n\nTo conclusively evaluate these models we used ancestral sequence reconstruction of S-haplotypes that are currently segregating in the plant Arabidopsis halleri. Ancestral sequence reconstruction is a new approach to 'resurrect' ancestral biological systems, whereby the sequence of an ancestral gene or allele is determined through phylogenetic analyses, then synthesized de novo and its functional properties (in terms of e.g. biochemical activity, conformation or binding capacity) are compared to those of its contemporary descendants. Although most S-haplotypes in A. halleri are typically so highly diverged that even sequence alignment can be challenging, previous work identified a pair of S-haplotypes (S03 and S28) with high phylogenetic proximity based on a fragment of the SRK gene (Castric et al., 2008). We took this opportunity to reconstruct, resurrect and phenotypically characterize their putative last common ancestral receptor SRKa (\u2018a\u2019 for ancestor, Figure 1) into A. thaliana, which has previously been established as a model plant for mechanistic studies of SI (Nasrallah et al., 2002; Tsuchimatsu et al., 2010).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/50253/elife-50253-fig1-v2.jpg)\n\n**Figure 1.:** (A) The sequence of the putative last common ancestor of SRK03 and SRK28 was inferred by a phylogenetic approach using codon-based models implemented in PAML. Four different versions of SRKa were defined due to inference uncertainty at two aa positions. (B) SRK03 and SRK28 sequences were cloned from A. halleri DNA BAC clones, whereas SRKa sequences were obtained by gene synthesis. (C) Representation of the controlled cross program to decipher the specificity of SRKa.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/50253/elife-50253-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Docking interaction between ligands and receptors are represented by oriented arrows. (A) In the compensatory mutation model, a non-functional self-compatible intermediate (R1/L2) segregates transiently and is rapidly compensated, creating a novel specificity (R2/L2), while the ancestral one (R1/L1) remains unchanged over time. (B) In the turnover model, slight functional variants with different affinity between them (R1\u2019/L1\u2019 and R1\u2019\u2019/L1\u2019\u2019) segregate in the population and give rise to new specificities (R2/L2 and R3/L3). Dotted lines correspond to weaker affinity interactions. (C) In the promiscuous model, the intermediate receptor (R1,2) has widened up its specificity spectrum enabling it to recognize another potential ligand (L2) while maintaining its capacity to recognize its original ligand (L1). Emergence of the new ligand then favours narrowing of specificity the dual-receptor (R1,2 \u2192 R2).\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/50253/elife-50253-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** The Bayesian reconstruction displays an identical topology. Values at the branches represent the bootstrap percentage/posterior probabilities. The node representing the reconstructed ancestral SRK allele (SRKa) is shown in red. Asterisks highlight alleles with a complete sequence available for ancestral reconstruction.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/50253/elife-50253-fig1-figsupp3-v2.jpg)\n\n**Figure 1\u2014figure supplement 3.:** AhSRK03 and AhSRK28 constructs were cloned using a unique genomic fragment starting around \u22122 Kb and ending 1 Kb after the stop codon. SRKa constructs were each cloned using 3 DNA fragments (amplified promoter and kinase domain of AhSRK03 or AhSRK28 and the synthesized ancestral S-domain). The different parts of the construct were concatenated using the Multisite Gateway Technology at the positions indicated on the figure. SRK03p:GFP and SRK28p:GFP constructs were generated using the same promoter sequence as in the SRKa constructs, but were introduced into the pKGWFS7.0 destination vector.\n\n### Expression of S03 and S28 recognition specificities in A. thaliana by genetic transformation\n\nBecause of their relatively high sequence similarity, we first ensured that the S03 and S28 recognition specificities are indeed phenotypically distinct when expressed in A. thaliana. It was previously shown that the self-compatible model plant A. thaliana can mount a functional self-incompatibility response upon introduction of the S-locus genes SCR and SRK (Boggs et al., 2009; Durand et al., 2014; Nasrallah et al., 2002) but it is unclear whether transfer is possible for all SCR and SRK variants. We first assessed the activity of AhSRK03 and AhSRK28 promoters in transformed A. thaliana lines (Figure 2\u2014figure supplement 1), which enabled us to identify the temporal window of SRK expression (Figure 2\u2014figure supplement 2). Then, we used A. halleri pollen carrying either the S03 or S28 male determinant to validate that a proper SI response was indeed successfully transferred in transformed A. thaliana lines for each of our SRK receptors, and that this response was strictly specific toward either of their cognate ligand (two replicate transgenic lines for SRK03 and SRK28 each, Figure 2).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/50253/elife-50253-fig2-v2.jpg)\n\n**Figure 2.:** (A) Fluorescence microscopic observation of pistils from SRK-transformed A. thaliana plants pollinated with S03 and S28 pollen from A. halleri. A robust self-incompatibility reaction is observed between cognate alleles, whereas a compatible reaction is observed between non-cognate alleles. White arrows indicate pollen tubes that germinated in the stigma, and are specific to compatible reactions. Bar\u00a0=\u00a00.3 mm. (B) Number of germinated pollen grains per stigma after pollination. Two SRK03 and SRK28 lines were pollinated with A. halleri pollen expressing either S03 (blue) or S28 (red) specificities. The number of pollinated pistils for each pollination assay is indicated on the top of the figure. The median value for each cross is represented by a horizontal bar.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/50253/elife-50253-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Flower of an untransformed plant (no SRK expression). (B,C) Flowers of two SRK03p:GFP transformed lines. (D,E) Flowers of two SRK28p:GFP transformed lines. Promoters of both SRK03 and SRK28 drive GFP expression specifically in stigmatic papillae cells (white arrows). Bar\u00a0=\u00a01 mm.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/50253/elife-50253-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** Floral buds and pistils of SRK03p:GFP-transformed plants are observed under optical (above) and UV light (below), respectively. Developmental stages (Smyth et al., 1990) are indicated between brackets. SRK expression is located between stages 11 and 14, with a strong decrease of GFP fluorescence in mature flowers (old stage 15). Similar results were observed for the SRK28p:GFP lines (data not shown). No GFP signal was observed in any other part of the plant (inflorescence stems, leaves and non-reproductive floral organs, data not shown). Black bar\u00a0=\u00a01 mm, white bar\u00a0=\u00a00.5 mm.\n\nAbundant germination of pollen tubes occurred in crosses involving non-cognate SRK and SCR proteins, whereas crosses involving proteins from the same S-haplotype induced inhibition of pollen germination, which is characteristic of an incompatible response. Intensity of the incompatible response was then quantified by counting the number of germinated pollen grains at the pistil surface of two selected lines for each transgene (Figure 2A and B). Incompatible responses are characterized by less than 10 germinated pollen tubes whereas compatible crosses induced significant pollen germination, with more than 50 pollen tubes per stigma. This shows that cross-species pollinations of A. thaliana with A. halleri pollen can induce robust SI reactions, and also that S03 and S28 have distinct recognition specificities, despite their close phylogenetic proximity.\n\n### Phylogeny-based ancestral SRK reconstruction\n\nWe then used a phylogenetic approach to reconstruct the sequence of the most recent common ancestor of SRK03 and SRK28 (Figure 3\u2014figure supplement 1). Based on a set of closely related SRK sequences from Arabidopsis and Capsella, we used the best fitting codon-based models implemented in PAML (Yang, 2007) to reconstruct the most likely ancestral amino acid sequence (SRKa). This most likely ancestral amino acid sequence had an Isoleucine (I) at position 208 and an Alanine (A) at position 305 and is therefore noted SRKaIA. For the vast majority of the 56 amino acid residues where SRK03 and SRK28 differ (Figure 3\u2014figure supplement 1), the ancestral reconstruction had high posterior probability (>0.95), but was more uncertain at four positions (Figure 3\u2014figure supplement 2). Two of these sites were close (208) or within (305) hyper variable regions known to be functionally important (Figure 3\u2014figure supplement 1; Kusaba et al., 1997). To take uncertainty into account and evaluate the impact of variation at these two individual sites, three additional ancestral sequences were generated and tested: SRKaIG, SRKaMA and SRKaMG. To avoid context effects, each of these four versions of SRKa was then surrounded by a promoter and a kinase sequence corresponding either to the native SRK03 (p03_SRKa_k03) or the native SRK28 (p28_SRKa_k28) variant. For each of these constructs, we obtained several replicate transgenic lines, resulting in a total of 28 different fixed homozygote single-copy transformed Arabidopsis lines (8 SRKaIA lines; 7 SRKaIG lines; 7 SRKaMA lines and 6 SRKaMG lines). Five lines showed very low levels of SRKa transcripts in pistils (Figure 3\u2014figure supplement 3; possibly due to positional effects as is common in transgenic constructs) and were thus excluded from further analysis, leaving 23 transgenic lines for testing.\n\n### Ligand specificity of the ancestral SRK\n\nWe then evaluated the recognition phenotype conferred by these putative ancestral SRK sequences by performing controlled pollination assays for all remaining 23 SRKa lines with pollen from A. halleri S03, A. halleri S28 and A. thaliana C24 (used as a control to validate receptivity of the acceptor pistil). The SI reaction was scored as the number of germinated pollen grains per stigma. All 23 tested SRKa expressing lines showed intense pollen germination with C24 pollen, idid not impair pistil fertility or ability to receive pollen (Figure 3 and Figure 3\u2014figure supplement 4).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/50253/elife-50253-fig3-v2.jpg)\n\n**Figure 3.:** Each SRKa line was pollinated with A. thaliana C24 (green), A. halleri S03 (blue) and S28 (red) pollen. The number of replicate pollinated pistils is indicated above each boxplot. The horizontal bar represents the median, the box delimitates the 25% and 75% percentiles, the bottom and top whiskers both represent 25% extreme percentiles and outliers are represented by individual dots.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/50253/elife-50253-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Arrangement of domains in the full-length SRK protein as assigned by National Center for Biotechnology Information (upper) and protein schematic representation of the S-domain sequence of AhSRK03, AhSRK28 and their common ancestor SRKa (lower). Positions of identical amino acids between the three S-domains are not represented, positions of SRKa amino acids specific to SRK03 and SRK28 are represented by a vertical blue and red line respectively. Positions of hypervariable regions are represented by yellow rectangles. The position of the two amino acid gap presents in both AhSRKa and AhSRK03 is represented by black rectangles. Positions 208 and 305 for which the reconstruction was uncertain and positions 155 and 344 for which the aa identity is different in the two other receptors are represented in black. (B) Amino acid identity and codon sequence (in parentheses) for these four positions in the different SRK variants.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/50253/elife-50253-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** For each range of values smaller than 0.95, the nature and the position of the aa in the sequence are given. At three sites (33, 208, 305) the models used for the inferences led to different results. The variable sites between the four ancestral sequences used for A. thaliana transformation are in bold.\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/50253/elife-50253-fig3-figsupp3-v2.jpg)\n\n**Figure 3\u2014figure supplement 3.:** \u0394Ct (Cycle threshold) was calculated as the ratio of Ct-SRK on Ct-Ubiquitin. The number of biological replicates is indicated above each boxplot. For each biological replicate, measurements were realized in technical triplicates.\n\n![Figure 3\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/50253/elife-50253-fig3-figsupp4-v2.jpg)\n\n**Figure 3\u2014figure supplement 4.:** Each SRKa line in S03 and S28 context were pollinated with A. thaliana C24 (green), A. halleri S03 (blue) and S28 (red) pollen. The number of pollinated pistils is indicated above each boxplot. These five lines with an undetectable level of transcripts appear compatible with the three pollen types, which is in agreement with the fact that they don\u2019t express any SI receptor at their membrane surface.\n\nWith a single exception (line p03_SRKaMA_k03_2), S28 pollen induced no consistent SI rejection in any of the lines expressing the different versions of the ancestral receptor, and was indistinguishable from the compatible control (C24, Figure 3). In stark contrast, SCR03 pollen induced robust incompatibility reactions in the vast majority (12 of 14) of the lines with amino acid I at position 208 (SRKaIA and SRKaIG, Figure 3). Hence, we conclude that the S03 haplotype has retained the ancestral recognition specificity largely unaltered, while the S28 haplotype underwent substantial modification and represents a novel recognition specificity, leading to functional diversification.\n\nThe incompatibility reactions involving our different ancestral SRK S-domain sequences were largely independent of the sequence context into which we introduced them (Figure 3, Figure 1\u2014figure supplement 3). Similarly, the amino acid present at position 305 of the reconstructed sequence had no effect on the response: lines with either A or G produced rejection reactions equally. In contrast, only four of the lines with amino acid M at position 208 (SRKaMA and SRKaMG) displayed incompatibility reactions, and these were weak (Figure 3). Hence, the single change, from the ancestral Isoleucine amino acid (I) at position 208 to Methionine (M), seems to be sufficient to almost fully inactivate the ancestral receptor's ability to recognise SCR03.\n\n### Structural determinants of SRK specificity\n\nWe next sought to identify the structural determinants of the S03 and S28 specificities. We used the structural model of the interaction complex formed by SCR and SRK (Ma et al., 2016) to compare cognate and non cognate complexes in terms of number and nature of atomic contacts and predict how the ancestral receptor is expected to interact with either SCR03 or SCR28. As previously demonstrated by Ma et al. (2016), SCR binding induces homodimerization of the extracellular domain of SRK (eSRK, Figure 3\u2014figure supplement 1), forming eSRK:SCR heterotetramers composed of two SCR molecules bound to two SRK molecules (Ma et al., 2016). The switch in recognition specificity occurred along the branch leading to SRK28, and therefore must involve some of the 29 amino acid differences along this branch. In contrast, the 31 amino acid differences that accumulated along the branch leading to SRK03 have not fully altered the recognition specificity. Overall, we find a slightly higher number of atomic contacts between the SCR and SRK molecules in the SRK03-SCR03 cognate complex (1543 contacts over 91 and 62 distinct SRK and SCR amino acids respectively) than in the SRK28-SCR28 cognate complex (1395 contacts over 89 and 57 distinct SRK and SCR amino acids respectively, Supplementary file 1). As already noted by Ma et al. (2016) in Brassica, and in line with the distribution of positively selected sites along the sequence (Castric and Vekemans, 2007), in both cases the interaction interface was mostly concentrated around the three \u2018hypervariable\u2019 portions of the SRK protein (Figure 4).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/50253/elife-50253-fig4-v2.jpg)\n\n**Figure 4.:** The X and Y axis represent the eSRK and SCR protein respectively. Open circles and squares represent amino acid contacts between eSRK and SCR proteins in cognate S03 and S28 complexes respectively. Red symbols represent SRK amino acids that differ between SRK03 and SRK28. Full diamonds and dots correspond to amino acid contacts in non-cognate SRK03/SCR28 and SRK28/SCR03 complexes respectively. Hypervariable regions 1, 2 and 3 of eSRK are represented by vertical grey bars at position 219\u2013225, 290\u2013312 and 334\u2013348 respectively (Ma et al., 2016).\n\nContrary to our expectation, however, the non-cognate complexes did not differ substantially from the cognate complexes on the basis of their total number of atomic contacts (Figure 4). Specifically, the SRK03/SCR28 and SRK28/SCR03 non-cognate complexes were predicted to establish a total of 1546 and 1328 contacts, respectively, between atoms of their SCR and SRK molecules, very close to the 1543 and 1395 predicted contacts for the SRK03/SCR03 and SRK28/SCR28 cognate complexes (Supplementary file 1). They were also not characterized by any obvious steric clashes that would prevent the proper docking of SCR and SRK. Hence, the overall stability of the complex does not seem to be the primary determinant of recognition specificity. Consequently, the specificity of the interaction must be a function of some qualitative features rather than of the quantitative strength of the interaction.\n\nWhile the majority of amino acids retained unchanged atomic contacts in cognate vs. non-cognate interactions, using a 5% threshold we identified six amino acid positions of the eSRK protein that displayed important differences in terms of contacts they establish with SCR in the cognate vs. the non-cognate complexes (Figure 5\u2014figure supplement 1B, C, E and F). Four of these amino acid positions also displayed very contrasted interactions in the S03 vs. the S28 complexes (residues S201, R220, R279, W296, Figure 5\u2014figure supplement 1A and D). For instance, the R residue at position 279 of SRK establishes three times more contacts with SCR in the SRK03/SCR03 than in the SRK28/SCR28 complex (Figure 5, Figure 5\u2014figure supplement 1A). These four residues are therefore prime candidates for the determination of binding specificity. Intriguingly, three of the six amino acids were identical between SRK03 and SRK28, and yet interacted in sharply different ways with their respective SCR ligands. For instance, while identical between the SRK03 and SRK28 sequences, residues W296 and R279 established three to four times more contacts in the S03 than in the S28 complex, and the R220 residue is involved in twice as many contacts in the S28 than in the S03 complex (Figure 5, Figure 5\u2014figure supplement 1A). This suggests that involvement of these residues in the activity of the complex is mediated by substitutions at other positions along the protein sequence, for instance by displacing them spatially (Figure 5).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/50253/elife-50253-fig5-v2.jpg)\n\n**Figure 5.:** In (A), residues R279 and W296 of eSRK establish a large number of atomic contacts with SCR in the S03 complex (upper panel), but a very low number of contacts in the S28 complex (lower panel). The situation is reversed in (B), where residues S201 and R220 of eSRK establish a large number of atomic contacts with SCR in the S28 complex (lower panel), but a very low number of contacts in the S03 complex (upper panel). SRK chains are coloured in light and dark green for SRK03 and SRK28, respectively; SCR chains are coloured in orange and red for SCR03 and SCR28, respectively. Amino acid residues are shown in stick representation, with dotted lines indicating atom pair contacts below 4 \u00c5, excluding hydrogen atoms. Note that for clarity a more stringent threshold was used to define atomic contacts here (4 \u00c5) than in Figure 5\u2014figure supplement 1 and Figure 6\u2014figure supplement 1 (where a 5 \u00c5 threshold was used for a more comprehensive analysis), but the results are qualitatively similar.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/50253/elife-50253-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** The number of atomic contacts between amino acids of the receptor and the ligand was compared between (A) the two cognate complexes (SCR03/SRK03 vs SCR28/SRK28); (B) the cognate vs non-cognate complex established by SRK03 (SCR03/SRK03 vs SCR28/SRK03) and (C) the cognate vs non-cognate complex established by SRK28 (SCR28/SRK28 vs SCR03/SRK28). The three tables list amino acid positions who establish the most extreme differences in atomic interactions in each comparison, values in parentheses correspond to the proportion of contacts realized by each aa independently ((number of contact in the complex/number of contact for one aa) x 100). The full distributions are shown in panels (D), (E) and (F) as the difference of proportion of contacts realized by each aa in both complexes. The vertical lines represent the 5% extreme values. Positive differences correspond to aa involved in numerous contacts in complex one compare to complex two whereas negative differences correspond to aa involved in numerous contact in complex two compare to complex 1.\n\nWe then compared the predicted binding features of the functional form of the putative ancestral receptor (SRKaIA) with both SRK03 and SRK28. When complexed with SCR03, 46 SRKaIA interacting pairs of amino acids were identical with SRK03, whereas only 24 were identical with SRK28. Similarly, when complexed with SCR28, 37 SRKaIA interacting pairs of amino acid residues were identical with SRK03, but only 18 were identical with SRK28 (Figure 6). This trend is also visible at the level of individual atomic contacts and at the level of involved amino acids both in SRK and SCR molecules (Figure 6\u2014figure supplement 1). Hence, even though there is no quantitative difference in how strongly SRK03 and SRK28 bind SCR03 and SCR28 (Supplementary file 1), the amino acids that come into contact in the two complexes are not identical, and the contacts established by SRKaIA with SCR qualitatively resemble more those established by SRK03 than those established by SRK28.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/50253/elife-50253-fig6-v2.jpg)\n\n**Figure 6.:** Residues in contact between SRKaIA and SCR are more often also in contact between SRK03 and SCR than between SRK28 and SCR. The Venn diagram indicates the number of contacts between amino acid residues that are shared or specific across variants of the SRK receptor and SCR.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/50253/elife-50253-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** Two features were compared: (i) Atomic contacts are defined by the nature of the amino acid in both proteins, the chain they belong to, their position and the respective atoms involved in the contact (C, N, O, CA main chain atoms or the side chain atoms C\u03b1, C\u03b2, C\u03b5, \u2026) and (ii) The amino acid involved are defined by the nature of the amino acid, the chain they belong to and their position, independently for SRK (numbers on top) and SCR (bottom numbers). For instance, SRKaIA shared 228 atomic contacts with SRK03 and only 171 contacts with SRK28, when complexed with SCR03. This tendency is also apparent when SRKaIA was complexed with SCR28 (298 identical contact with SRK03 but only 161 with SCR28).\n\nOverall, asymmetrical diversification of the ancestor into the phenotypically distinct S03 and S28 specificities is therefore associated with structural changes of the SRK receptor and the way it interacts with its SCR ligand. Despite similar levels of overall sequence divergence between SRKa and either SRK03 or SRK28, the binding properties of SRK03 have remained similar to those of SRKaIA, while the way SRK28 is predicted to interact with the SCR ligand has diverged from its ancestral state, consistent with the phenotypic switch that has occurred along this lineage.\n\n## Discussion\n\n### Ancestral resurrection in a higher organism\n\nAncestral resurrection approaches have been used to decipher evolutionary processes in a number of biological systems including enzymes (Starr et al., 2017; Tufts et al., 2015), visual pigments (Chang et al., 2002) or transcription factors (Pougach et al., 2014). However, an essential limitation in these studies is that the ancestral protein function is typically determined in vitro, strongly limiting biological realism of the reconstructed function. To our knowledge, a single study involved a comparable in vivo ancestral resurrection approach in a higher organism, in the context of functional evolution of the alcohol dehydrogenase protein (ADH) in Drosophila lineages (Siddiq et al., 2017). Such whole organism studies are biologically most relevant, as they allow a focus on integrated phenotypes (here the self-incompatibility reaction, which has a strong and direct link with organismal fitness) rather than on highly reductionist phenotypes (such as in vitro assays of protein activity).\n\n### Asymmetrical structural and functional divergence\n\nFunctional diversification of receptor-ligand interactions is a common process that takes place over long evolutionary times. However, in most cases we remain far from a predictive understanding of how the specific evolutionary forces imposed on a given interacting pair of proteins at the molecular level translate into a given process of functional diversification. As a result, little is known about how diversification happens in nature, both in terms of whether some evolutionary pathways are preferentially followed over others and in terms of the molecular modifications involved. Here, we show that diversification of two S-alleles from their putative common ancestor proceeded through asymmetrical functional divergence, with one allele having largely retained its ancestral specificity and the other one having acquired a novel recognition specificity that was previously absent.\n\nOverall, our results are thus compatible with the model of SI specificity diversification by compensatory mutation of Gervais et al. (2011) and one version (i.e. with maintenance of the ancestral specificity) of the progressive reinforcement model of Chookajorn et al. (2004). However, they do not allow to discriminate between these two models, that\u00a0is to determine whether a transient loss of self-recognition is required (Uyenoyama et al., 2001; Gervais et al., 2011). In contrast, the model of promiscuous dual-specificity intermediates (Matton et al., 1999; Figure 1\u2014figure supplement 1C) can be rejected, because Uyenoyama and Newbigin (2000) have shown that a dual-specificity haplotype can be maintained in the population only in the absence of the ancestral specificity, while we show here that the ancestral specificity (S03) remained present. Similarly, the progressive reinforcement model with replacement of the ancestral specificity by two functionally diverged specificities can be rejected (Figure 1\u2014figure supplement 1B).\n\n### Long-term maintenance of SI specificity rather than rapid turnover\n\nModels of SI evolution suggested that turnover of recognition specificities may be common over evolutionary times (Gervais et al., 2011). The observation that the ancestral SRKaIA recognition specificity was stably maintained along the SRK03 lineage demonstrates that no turnover event occurred over a substantial period of time (i.e. since S03 and S28 started to diverge from one another, ca. a few million years ago). The long-term maintenance of S-haplotype specificities was previously suggested by the comparison of certain A. halleri and A. lyrata S-lineages with their A. thaliana orthologs. Specifically, some A. thaliana accessions with haplogroup A were able to reject A. halleri pollen expressing the cognate AhSCR04 specificity (Tsuchimatsu et al., 2010), despite about 6 million years of divergence (Hohmann et al., 2015). Similarly, an overexpressed version of A. thaliana SCR haplogroup C was also able to elicit a SI reaction on pistils expressing the cognate A. lyrata AlSRK36 specificity (Dwyer et al., 2013). However, beside the fact that these were trans-specific comparisons, it is important to note that A. thaliana has become predominantly self-fertilising, and no longer has an intact SI system due to alterations of SI components (Bechsgaard et al., 2006; Shimizu and Tsuchimatsu, 2015), so our results provide the first direct test of the hypothesis that recognition specificities remain stable, rather than undergoing recurrent rapid turnover.\n\nDespite the obvious conservation of recognition specificity between SRKaIA and SRK03, we note that the SI response elicited by the reconstructed SRKa was overall weaker and more variable across replicate lines than those elicited by the native SRK constructs. This partial response could be due to incorrect inference of the ancestral receptor sequence. Ancestral reconstruction is based on probabilistic inference, and our results show that a single amino acid modification (I vs M at position 208) can entirely compromise the SI response. It is therefore possible that the putative ancestral receptor had a partly diminished capacity to elicit the SI reaction because of imperfect reconstruction. Alternatively, this partial response could be due to parallel changes to the SCR ligand, followed by amino acid substitutions occurring between SRKa and SRK03 to fine-tune the SRK03/SCR03 interaction. Resurrection of the ancestral SCRa ligand will be needed to distinguish between these possibilities.\n\n### Structural determinants of the shift in binding specificity of a receptor-ligand interaction\n\nStructural modelling of the cognate vs non-cognate complexes suggested that specificity of the receptor/ligand interaction depends on qualitative features rather than quantitative strength of the interaction. In other words, a ligand is predicted to bind its non-cognate just as well as its cognate receptor, but it activates only the proper one by interacting with a different set of amino acid residues at the binding interface. This may point to a mechanism of allosteric activation, whereby changes in the set (rather than number) of amino acid contacts with the ligand lead to changes in the shape of the receptor. Allosteric activation is important in the context of protein-protein interactions (Kang et al., 2015) as well as of the binding of transcription factors to their DNA binding sites (Gronemeyer and Bourguet, 2009) and may be a general feature of molecular interfaces (Ma et al., 2010). In our system, the allosteric activation model suggests that only a few amino acid residues determine recognition specificity. This can be tested by directly measuring binding affinities, following Ma et al. (2016). It will be interesting to determine experimentally whether this conclusion extends to more diverged pairs of SCR-SRK alleles, whose interactions are more common in SI systems than those between highly similar alleles studied here, because this balanced polymorphism has been maintained over a very long evolutionary time.\n\n## Materials and methods\n\n### Phylogeny-based ancestral SRK resurrection\n\n#### Sequence collection\n\nIn order to reconstruct the ancestral sequence of the AhSRK28 and AhSRK03 SRK alleles, we first collected 17 full or partial sequences of the SRK first exon belonging to the haplogroup B/2. Seven allele sequences belonged to A. halleri (AhSRK03, AhSRK08, AhSRK09, AhSRK19, AhSRK23, AhSRK27, AhSRK28), six to A. lyrata (AlSRK06, AlSRK08, AlSRK14, AlSRK18, AlSRK29, AlSRK39) and four to Capsella grandiflora (CgrSRK1, CgrSRK4, CgrSRK5, CgrSRK6). For the AhSRK19, AhSRK23 and AhSRK27 alleles the SRK exon1 partial sequence was supplemented by Sanger sequencing. We added three sequences from the SRK haplogroup A3/3 as outgroups (AhSRK04, AhSRK10, AhSRK29). Accession numbers for the sequences are reported in Supplementary file 2. After preliminary analyses and in order to obtain a well-supported phylogenetic tree we removed three fast evolving sequences: CgrSRK6, AhSRK08 and AlSRK29.\n\n#### Phylogenetic analysis\n\nSequences were aligned with MACSE v1.2 (Ranwez et al., 2011). Based on the 1338 base pairs alignment, SRK phylogenetic trees were built with both Maximum Likelihood (ML) (PHYML 3.0, Guindon et al., 2010) and Bayesian methods (MrBayes 3.2.4, Ronquist and Huelsenbeck, 2003). For the ML analysis the model used was chosen according to jModelTest 2.1.10 (Darriba et al., 2012) using the Bayesian Information Criterion (BIC) (TPM3uf+\u0393). Node stability was estimated by 100 non-parametric bootstrap replicates (Felsenstein, 1985). For the Bayesian inference, a codon model with a GTR+\u0393+I model of substitution was used; two runs of four Markov chains were calculated simultaneously for 400,000 generations with initially equal probabilities for all trees and a random starting tree. Trees were sampled every 10 generations, and the consensus tree with posterior probabilities was calculated after removal of a 25% burn-in period. The average standard deviation of split frequencies between the two independent runs was lower than 0.01. The resulting topology was used to infer SRKa (Figure 1\u2014figure supplement 2).\n\n#### Ancestral SRK reconstruction\n\nThe ancestral reconstruction was conducted with the codeml program of the PAML 4.8 package (Yang, 2007) under six different models: M0, M0-FMutSel0, M0-FMutSel, M3, M3-FMutSel0, M3-FMutSel. M0 refers to a one-ratio model, which assumes a single \u03c9 (dn/ds) across branches and sites (Goldman and Yang, 1994), whereas M3 allows \u03c9 to vary across sites according to a discrete distribution (with 2 or three categories depending on the models) (Yang et al., 2000). The mutation-selection models incorporate parameters for mutation bias, with (FMutSel) or without (FMutSel0) selection on synonymous rate (Yang and Nielsen, 2008). Models were compared using Likelihood Ratio Tests (LRT) and Akaike Information Criteria (AIC). The best fitting-model was found to be M3FMutSel (Supplementary file 3), therefore the ancestral amino acid sequence reconstructed with this model was used to generate transgenic lines (SRKaIA). The ancestral amino acids inferred with the three \u2018M3\u2019 models were identical except for three sites with relatively lower probability: 33 (A or V), 208 (I or M) and 305 (A or G) (Figure 3\u2014figure supplement 2). Two of these sites were close (208) or within (305) hyper variable regions and therefore potentially functionally important. To take into account these uncertainties, three additional transgenic lines were generated with a different SRKa and tested: SRKaIG, SRKaMA and SRKaMG, in order to evaluate all four combinations of two amino acids at these two sites.\n\n### Generation and selection of A. thaliana transgenic lines\n\nWe generated 12 series of A. thaliana C24 transgenic plants (AhSRK03; AhSRK28; AhSRK03p:GFP; AhSRK28p:GFP; p03_SRKaIA_k03; p28_SRKaIA_k28; p03_SRKaIG_k03; p28_SRKaIG_k28; p03_SRKaMA_k03; p28_SRKaMA_k28; p03_SRKaMG_k03 and p28_SRKaMG_28). All DNA amplifications were performed with the primeSTAR DNA polymerase (Takara, Japan) and all constructs were validated by SANGER sequencing. We used gateway vectors (Life Technologies, USA) for expression of transgenes in A. thaliana. AhSRK03, AhSRK28, proAhSRK03 and proAhSRK28 were amplified using attB1 and attB2 containing primers (Supplementary file 4) from BAC sequences of A. halleri S03 and S28 (KJ772378-KJ772385 and KJ461475-KJ461478 respectively, Goubet et al., 2012). Amplification products were inserted by BP recombination into the pDONR 221 plasmid. Promoters proAhSRK03 and proAhSRK28 designed for p03_SRKa_k03 and p28_SRKa_k28 constructs respectively were amplified with attB4 and attB1r containing primers (Supplementary file 4). Amplification products were inserted by BP recombination into a pENTR-P4-P1R plasmid. Kinase domains of AhSRK03 and AhSRK28 were amplified with attB2r and AttB3 containing primers (Supplementary file 4). Amplification products were inserted by BP recombination into a pENTR-P2R-P3 plasmid.\n\nConstructs expressing native SRK (AhSRK03 and AhSRK28) and GFP expressing constructs (AhSRK03p:GFP and AhSRK28p:GFP) were generated by LR reaction between entry clones and the destination vectors pK7WG or pKGWFS7.0. SRKa constructs were generated by LR triple recombination into the pK7m34GW destination vector with i) attL4 and attR1 promoters entry clones, ii) synthesized putative ancestral S-domain surrounded by attL1 and attL2 sequences and iii) attR2 and attL3 kinase domain entry clones. Details of the molecular constructs are displayed in Figure 1\u2014figure supplement 3. A. thaliana plants were grown under 16 hr/20 \u00b0C day, 8 hr/18\u00b0C night and 70% humidity greenhouse conditions. When plants displayed approximately 20 flowers, transformation was performed by Agrobacterium tumefaciens-mediated floral deep according to Logemann et al. (2006). After seed harvesting, single insertion homozygous lines were selected via multiple rounds of antibiotic selection on selective medium as described in Zhang et al. (2006).\n\n### Microscopy\n\nGFP expression in AhSRK03p:GFP and AhSRK28p:GFP and the results of cross pollination experiment were monitored under UV light using an Axio imager two microscope (Zeiss, Oberkochen, Germany) coupled with a HXP120 Light source (LEJ, Jena, Germany). Pictures were taken with an Axiocam 506 color camera (Zeiss, Oberkochen, Germany) and read with the Zeiss ZEN two core software package. For GFP expression, floral buds, pieces of leaves and floral hamp cross sections from AhSRK03p:GFP and AhSRK28p:GFP were observed. For pollination assays, the number of germinated pollen grains per stigma was counted after aniline blue staining up to 50 pollen tubes.\n\n### Aniline blue staining\n\nTo evaluate the SI response of transgenic lines, floral buds of developmental stage 9\u201311 were emasculated at day-1. At day-2, they were pollinated with frozen A. halleri pollen expressing S03 or S28 specificity. Pistils were harvested 6 hr after pollination and fixed in FAA (4% formaldehyde, 4% acetic acid, ethanol) overnight. On day-4, pollinated stigmas were washed three times in water, incubated 30 min in NaOH 4M at room temperature, washed three times in water and conserved for 30 min in the last bath. Finally, pistils were incubated overnight in aniline blue (K3PO40.15 M, 0.1% aniline blue) and mounted between microscopic slides at day-5.\n\n### Expression analysis\n\nRNA extraction was performed onto stages 11\u201314 floral buds with the nucleospin RNA Plus Extraction kit (Macherey Nagel, GmbH and Co. DE). For each line, floral buds were harvested onto three different individuals. cDNA synthesis was performed using RevertAid Reverse Transcriptase (Thermo Fisher Scientific, Massachusetts, USA). 1 \u00b5g of extracted RNA was mixed with 0.2 \u00b5g of Random hexamer primer, psq H2O 12.5 \u00b5L. After incubation at 65\u00b0C, 4 \u00b5L of 5X reaction buffer; 0,5 \u00b5L of Riboblock RNase inhibitor (Thermo Fisher Scientific, Massachusetts, USA), 10 mM of each dNTP and 200 U of RevertAid Reverse Transcriptase were added and incubated firstly at 25\u00b0C and then 10 min at 42\u00b0C. cDNA quantification was performed in triplicate using LightCycler 480 Instrument II (Roche molecular systems, Inc, Pleasanton, USA). cDNA amplification of SRK fragments was performed with forward primer located on the S-domain (For: AGGAATGTGAGGAGAGGTGC) and the reverse primer located on the second exon (Rev: TCCTACTGTTGTTGTTGCCC). According to Liu et al. (2007), Ubiquitin was used as housekeeping gene (For: CTGAGCCGGACAGTCCTCTTAACTG; Rev: CGGCGAGGCGTGTATACATTTGTG).\n\n### Interacting protein modelling\n\nAll structural models were created using MODELLER (Sali and Blundell, 1993; Fiser et al., 2000), applying a template-based docking approach with the eSRK9:SCR9 X-Ray structure (Ma et al., 2016) as reference. Input sequence alignments were created using multiple sequence alignments of all relevant SRK sequences and of all relevant SCR sequences. The resulting models were subsequently optimized using the GalaxyRefineComplex web service (Heo et al., 2016).\n\nThe top models for each receptor-ligand pair were then considered and the number of atomic contacts between chains was counted using a 5 \u00c5 atom-atom cut-off (e.g. Lensink et al., 2017). Hydrogen atoms were excluded from the calculation. Visualization was done, and for clarity images were made with a 4 \u00c5 atom-atom cut-off using the PyMol molecular graphics system, version 1.7.2.1, Schrodinger LLC.\n",
+      "created_at": "2025-12-02T13:36:52.338735Z"
+    },
+    {
+      "id": "9656a2cc-b083-463c-84c4-9fcac71fe7fd",
+      "submission_id": "9360ec0a-b1ab-452d-8b18-f19decf2aa3a",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Sheila McCormick, University of California, Berkeley United States\n\nReviewers:\n- Sheila McCormick, University of California, Berkeley United States\n- Nick H Barton, IST Austria Austria\n\n## Review text\n\nDOI: [10.7554/eLife.50253.sa1](https://doi.org/10.7554/eLife.50253.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nSelf-incompatibility in the Brassicaceae is mediated by the S locus, which encodes two interacting proteins, a female-expressed S-locus Receptor Kinase and a male-expressed ligand, S-Locus Cysteine-rich Protein (SCR). Pollen is rejected when SRK and SCR are encoded by the same haplotype. Highly diverged allelic variants segregate in natural populations, but how this allelic diversity arose from an ancestral haplotype is unresolved. The authors use ancestral reconstruction to investigate how different S haplotypes might have arisen \u2013 which is interesting in itself but also as a model for the general question of how genes diversify despite constraints due to specific interactions. A main strength of this work is that four plausible ancestral alleles are reconstructed (and replicated). They then tested 3 proposed models, by introducing various constructs of A. halleri SRK into A. thaliana. Their results provide a convincing answer: favoring compensatory mutations and SC intermediates, and rejecting 2 other proposed models.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Asymmetrical diversification of the receptor-ligand interaction controlling self-incompatibility in Arabidopsis\" for consideration by eLife. Your article has been reviewed by three peer reviewers, including Sheila McCormick as the Reviewing Editor and Reviewer #1, and the evaluation has been overseen by a Reviewing Editor and Christian Hardtke as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Nick H Barton (Reviewer #3).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThis impressive paper sets out to distinguish how different S haplotypes have arisen. The authors use ancestral reconstruction to investigate S locus evolution \u2013 which is interesting in itself but also, as the authors explain, a model for the general question of how genes diversify despite constraints due to specific interactions. A key issue in such studies is the reliability of the reconstruction. However, four plausible ancestral alleles are reconstructed (and replicated), which is a strength.\n\nThere are 3 ideas in the field, and to test them the authors introduce various constructs of A. halleri SRK into A. thaliana. Their results provide a convincing answer (i.e. they favor the one of compensatory mutations and SC intermediates (Gervais).\n\nEssential revisions:\n\nThe experiments are easy to follow and the discussion is thoughtful, but could be shortened by removing unnecessary repeats. For instance, the first paragraph just repeats what has already been stated perfectly clearly. Discussion subsection \u201cAsymmetrical structural and functional divergence\u201d can also be shortened considerably, and these shortenings will help readers come to the most important questions that they will have in mind at this point \u2013 i.e., which of the models outlined in the Introduction are excluded. Given the value of the work, it is worthwhile to make the text as clear as possible.\n\nThis section needs slight revision, to something like the following: \"Overall, our results thus unambiguously reject two previously proposed models of SI specificity diversification. The model of gradual divergence of pairwise SRK-SCR affinities along lineages (Chookajorn et al., 2004) is rejected because it predicts that both descendent alleles would have been functionally distinct from the ancestor. The model of promiscuous dual-specificity intermediates (Matton et al., 1999) is also rejected, because Uyenoyama and Newbigin, 2000, have shown that a dual-specificity haplotype can be maintained in the population only in the absence of the ancestral specificity, while we show here that the ancestral specificity (S03) remained present. In contrast, the remaining scenario (in which diversification proceeds through transient self-compatible intermediates; Gervais et al., 2011; Uyenoyama et al., 2001) is compatible with our observation of long-term maintenance of functional specificities\".\n\nPlease consider stating putative ancestral throughout or \"ancestral\", as you only surmise that this could be the scenario. Similarly, the terms \"resurrected\" and \"now extinct\" are suppositions.\n\nIn later experiments they analyze potential amino acid contacts in the synthesized SRKs and SCRs. Using the number of contacts seems somewhat crude; are there other cases that can be cited where this sort of metric has succeeded?\n\nSubsection \u201cAsymmetrical structural and functional divergence\u201d: \u2013 One cannot conclude that specificities evolve through cladogenetic change rather than anagenetic. The latter refers to the question of whether changes are associated with speciation events. Here, the observation is that function has been preserved along one lineage but not the other. Does this really address whether speciation is associated with functional divergence?\n\nDiscussion section: It may be that \"the specificity of the receptor/ligand interaction depends on qualitative features rather than quantitative\", but that seems more general than \" allosteric activation\", which refers to a change in specificity caused by a change in the shape of the protein. If the argument is that allostery is involved, it needs to be made more clearly.\n\nPlease give more information (i.e. add a figure) about the amino acid sequence differences, including the total number of differences between the SRK sequences used in the study, and their locations in relation to the recognized functional domains of the protein. Subsection \u201cPhylogeny-based ancestral SRK reconstruction\u201d mentions \"the vast majority of amino acid residues where SRK03 and SRK28 differ\", but doesn't tell us the actual number or any other information. Subsection \u201cLigand specificity of the ancestral SRK\u201d says that the study examined the S-domain, but the domains have not been clearly outlined or explained. It would also have helped understanding to be told about the differences from the inferred ancestral protein sequence. Without these details, it is difficult to understand the naming of the sequences that were tested. A brief description of the phylogenetic approach used to reconstruct the sequence of SRK03 and SRK28's most recent common ancestor would also be helpful.\n\nCan Figure 1A be revised a bit? The shapes are an over-simplification of the experiments, as there were 4 different versions tested, the figure implies only 1.\n",
+      "created_at": "2025-12-02T13:36:52.338735Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T13:36:52.338735Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T13:36:52.338735Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "863b8ea9-3d37-4863-a2ab-8382527fc184",
+      "content_id": "0858f726-7a98-49bb-96ae-0a7d856ae3db",
+      "claim_id": "C1",
+      "claim": "Two-component genetic systems can accumulate evolutionary novelty and diversify in the course of evolution.",
+      "claim_type": "EXPLICIT",
+      "source": "How two-component genetic systems accumulate evolutionary novelty and diversify in the course of evolution is a fundamental problem in evolutionary systems biology.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about two-component genetic systems presented in the introduction as context for the study.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:36:52.338735Z"
+    },
+    {
+      "id": "26e64502-6003-4705-b002-d74dd1d09a01",
+      "content_id": "0858f726-7a98-49bb-96ae-0a7d856ae3db",
+      "claim_id": "C2",
+      "claim": "Self-incompatibility in Brassicaceae is a spectacular example of a diversified allelic series in which numerous highly diverged receptor-ligand combinations are segregating in natural populations.",
+      "claim_type": "EXPLICIT",
+      "source": "In the Brassicaceae, self-incompatibility (SI) is a spectacular example of a diversified allelic series in which numerous highly diverged receptor-ligand combinations are segregating in natural populations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is presented as established knowledge about the SI system in Brassicaceae.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:36:52.338735Z"
+    },
+    {
+      "id": "6a0c7ffd-026e-4a93-b67a-05204d53c4de",
+      "content_id": "0858f726-7a98-49bb-96ae-0a7d856ae3db",
+      "claim_id": "C3",
+      "claim": "Two allelic variants segregating as distinct receptor-ligand combinations diverged through an asymmetrical process whereby one variant has retained the same recognition specificity as their putative ancestor, while the other has functionally diverged.",
+      "claim_type": "EXPLICIT",
+      "source": "Using in planta ancestral protein reconstruction, we demonstrate that two allelic variants segregating as distinct receptor-ligand combinations diverged through an asymmetrical process whereby one variant has retained the same recognition specificity as their (now extinct) putative ancestor, while the other has functionally diverged and now represents a novel specificity no longer recognized by the ancestor.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main finding of the study, supported by experimental data from ancestral protein reconstruction and functional assays.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:36:52.338735Z"
+    },
+    {
+      "id": "279198b5-165f-45cb-83b6-7cda2ed12e00",
+      "content_id": "0858f726-7a98-49bb-96ae-0a7d856ae3db",
+      "claim_id": "C4",
+      "claim": "Qualitative rather than quantitative changes of the interaction are an important source of evolutionary novelty in this highly diversified receptor-ligand system.",
+      "claim_type": "EXPLICIT",
+      "source": "Examination of the structural determinants of the shift in binding specificity suggests that qualitative rather than quantitative changes of the interaction are an important source of evolutionary novelty in this highly diversified receptor-ligand system.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is based on structural modeling analysis of the receptor-ligand complexes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:36:52.338735Z"
+    },
+    {
+      "id": "276180de-91c5-4997-9eb5-3ee0b5759bd3",
+      "content_id": "0858f726-7a98-49bb-96ae-0a7d856ae3db",
+      "claim_id": "C5",
+      "claim": "Many cellular processes rely on interactions between molecular partners rather than on the action of individual components in isolation.",
+      "claim_type": "EXPLICIT",
+      "source": "A major challenge toward this goal is that many cellular processes rely on interactions between molecular partners (protein-protein interactions or regulatory interactions between for example transcription factors and their binding sites; Boyle et al., 2017; Courtier-Orgogozo et al., 2019) rather than on the action of individual components in isolation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to other scholarly work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:36:52.338735Z"
+    },
+    {
+      "id": "bded5ae4-38f6-4094-97de-f111be8a3fbf",
+      "content_id": "0858f726-7a98-49bb-96ae-0a7d856ae3db",
+      "claim_id": "C6",
+      "claim": "A general understanding of how the diversification of protein-protein or regulatory interaction networks led to the emergence of new biological functions in distinct lineages is crucially lacking.",
+      "claim_type": "EXPLICIT",
+      "source": "At present, the overall structure of protein-protein or regulatory interaction networks is just starting to be understood at the genome level in a handful of model organisms, and a general understanding of how the diversification of these networks led to the emergence of new biological functions in distinct lineages is crucially lacking (Nooren and Thornton, 2003; Andreani and Guerois, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to other scholarly work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:36:52.338735Z"
+    },
+    {
+      "id": "ffd5df06-71c9-43c7-a9e1-80e523d0b419",
+      "content_id": "0858f726-7a98-49bb-96ae-0a7d856ae3db",
+      "claim_id": "C7",
+      "claim": "In two-component genetic systems, specificity of the interaction can be very tight such as for example in receptor-ligand interactions or bacterial toxin-antitoxin systems.",
+      "claim_type": "EXPLICIT",
+      "source": "In two-component genetic systems, specificity of the interaction can be very tight such as for example in receptor-ligand interactions (Laub and Goulian, 2007) or bacterial toxin-antitoxin systems (Aakre et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to other scholarly work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:36:52.338735Z"
+    },
+    {
+      "id": "b63642c5-1681-446d-bd2d-b4d77dbb6d17",
+      "content_id": "0858f726-7a98-49bb-96ae-0a7d856ae3db",
+      "claim_id": "C8",
+      "claim": "The emergence of novel traits in two-component systems involves evolutionary modification of the interacting partners, leading to potential disruption of the interaction or to detrimental cross-talk, at least transiently.",
+      "claim_type": "EXPLICIT",
+      "source": "In these systems, the emergence of novel traits involves evolutionary modification of the interacting partners, leading to potential disruption of the interaction or to detrimental cross-talk, at least transiently (Plach et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to other scholarly work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:36:52.338735Z"
+    },
+    {
+      "id": "71990517-c4a3-4b92-a9c9-2af71631bf41",
+      "content_id": "0858f726-7a98-49bb-96ae-0a7d856ae3db",
+      "claim_id": "C9",
+      "claim": "Two main scenarios have been proposed for the functional nature of the evolutionary intermediate in two-component systems.",
+      "claim_type": "EXPLICIT",
+      "source": "Two main scenarios have been proposed (Aakre et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to other scholarly work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:36:52.338735Z"
+    },
+    {
+      "id": "ac120f79-925a-4959-9e50-7e52bc364c56",
+      "content_id": "0858f726-7a98-49bb-96ae-0a7d856ae3db",
+      "claim_id": "C10",
+      "claim": "The first scenario posits that a functional change results from introduction of a mutation that first modifies one of the two partners, initially disrupting the functional interaction and leading to a non-functional intermediate.",
+      "claim_type": "EXPLICIT",
+      "source": "The first scenario posits that a functional change results from introduction of a mutation that first modifies one of the two partners, initially disrupting the functional interaction and leading to a non-functional intermediate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of a theoretical scenario from the literature.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:36:52.338735Z"
+    },
+    {
+      "id": "f183cd2f-2e8e-4c34-8237-ef9b67d714f2",
+      "content_id": "0858f726-7a98-49bb-96ae-0a7d856ae3db",
+      "claim_id": "C11",
+      "claim": "An alternative scenario is that the first mutation may broaden rather than inactivate specificity of one of the two interacting partners, transiently releasing constraint on the other before specificity of the first partner becomes restricted again.",
+      "claim_type": "EXPLICIT",
+      "source": "An alternative scenario though, is that the first mutation may broaden rather than inactivate specificity of one of the two interacting partners, transiently releasing constraint on the other before specificity of the first partner becomes restricted again, thus maintaining functionality of the system all along the process.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of a theoretical scenario from the literature.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:36:52.338735Z"
+    },
+    {
+      "id": "2e27b709-cad4-44b3-9450-dda5702b267a",
+      "content_id": "0858f726-7a98-49bb-96ae-0a7d856ae3db",
+      "claim_id": "C12",
+      "claim": "Distinguishing between the two scenarios of evolutionary intermediates requires functional characterization of the ancestral evolutionary intermediates.",
+      "claim_type": "EXPLICIT",
+      "source": "Distinguishing between these two scenarios requires functional characterization of the ancestral evolutionary intermediates, which has been achieved in a very limited number of biological cases such as bacterial toxin-antitoxin systems (Aakre et al., 2015), acquisition of cortisol specificity of the mammalian glucocorticoid receptor (Bridgham et al., 2009) or mammalian retinoic acid receptors (Gutierrez-Mazariegos et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to other scholarly work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:36:52.338735Z"
+    },
+    {
+      "id": "1659290e-d7ce-495c-b076-f616d4a80e7f",
+      "content_id": "0858f726-7a98-49bb-96ae-0a7d856ae3db",
+      "claim_id": "C13",
+      "claim": "The scenario of a promiscuous intermediate seems to have received better support in previous studies.",
+      "claim_type": "EXPLICIT",
+      "source": "The scenario of a promiscuous intermediate seems to have received better support, but whether this is a truly general pattern remains to be determined.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the literature review presented.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:36:52.338735Z"
+    },
+    {
+      "id": "496f08cf-e560-4b50-9865-52346b6ec092",
+      "content_id": "0858f726-7a98-49bb-96ae-0a7d856ae3db",
+      "claim_id": "C14",
+      "claim": "Detailed population genetic models taking into account how natural selection is acting on variants of the two genes given their specific biological function are lacking for most genetic systems.",
+      "claim_type": "EXPLICIT",
+      "source": "A major limitation is that detailed population genetic models taking into account how natural selection is acting on variants of the two genes given their specific biological function are lacking for most genetic systems (Aakre et al., 2015; Aharoni et al., 2005; Bloom and Arnold, 2009; Bridgham et al., 2009; Matsumura and Ellington, 2001; Matton et al., 2000; Sayou et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to other scholarly work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:36:52.338735Z"
+    },
+    {
+      "id": "bb0885bb-b021-4b4a-9b34-f7db4e622370",
+      "content_id": "0858f726-7a98-49bb-96ae-0a7d856ae3db",
+      "claim_id": "C15",
+      "claim": "Self-incompatibility in flowering plants is a prime biological system to investigate how functional diversification can proceed between two molecular partners over the course of evolution.",
+      "claim_type": "EXPLICIT",
+      "source": "Self-incompatibility (SI) in flowering plants is a prime biological system to investigate how functional diversification can proceed between two molecular partners over the course of evolution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the suitability of the SI system for studying evolutionary processes.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:36:52.338735Z"
+    },
+    {
+      "id": "9c83d022-8cf0-4466-90d0-44f3fd47ec09",
+      "content_id": "0858f726-7a98-49bb-96ae-0a7d856ae3db",
+      "claim_id": "C16",
+      "claim": "SI has evolved as a strategy to prevent selfing and enforce outcrossing, thereby avoiding the deleterious effects of inbreeding depression.",
+      "claim_type": "EXPLICIT",
+      "source": "SI has evolved as a strategy to prevent selfing and enforce outcrossing, thereby avoiding the deleterious effects of inbreeding depression (Nettancourt, 1977; Kitashiba and Nasrallah, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to other scholarly work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:36:52.338735Z"
+    },
+    {
+      "id": "058ca7e7-1272-40d4-980c-77685f5179e1",
+      "content_id": "0858f726-7a98-49bb-96ae-0a7d856ae3db",
+      "claim_id": "C17",
+      "claim": "In Brassicaceae, SI is genetically controlled by a single multiallelic non-recombining locus called the S-locus.",
+      "claim_type": "EXPLICIT",
+      "source": "In Brassicaceae, SI is genetically controlled by a single multiallelic non-recombining locus called the S-locus (Nettancourt, 1977).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to other scholarly work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:36:52.338735Z"
+    },
+    {
+      "id": "3c80b4aa-1b71-4dba-a824-73e3b046f2af",
+      "content_id": "0858f726-7a98-49bb-96ae-0a7d856ae3db",
+      "claim_id": "C18",
+      "claim": "The S-locus encodes two highly polymorphic self-recognition determinant proteins: the female cell-surface 'receptor' S-LOCUS RECEPTOR KINASE (SRK) and the male 'ligand' S-LOCUS CYSTEIN RICH PROTEIN (SCR).",
+      "claim_type": "EXPLICIT",
+      "source": "This locus encodes two highly polymorphic self-recognition determinant proteins: the female cell-surface 'receptor' S-LOCUS RECEPTOR KINASE (SRK) is expressed in stigmatic papillae cells (Takasaki et al., 2000) and the male 'ligand' S-LOCUS CYSTEIN RICH PROTEIN (SCR) is displayed at the pollen surface (Schopfer et al., 1999; Takasaki et al., 2000; Takayama et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to other scholarly work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:36:52.338735Z"
+    },
+    {
+      "id": "bb32f249-2fe0-4254-8104-6490e3fe67b3",
+      "content_id": "0858f726-7a98-49bb-96ae-0a7d856ae3db",
+      "claim_id": "C19",
+      "claim": "The SI response consists in pollen rejection by the pistil and is induced by allele-specific interaction between the SRK and SCR proteins when encoded by the same haplotype.",
+      "claim_type": "EXPLICIT",
+      "source": "The SI response consists in pollen rejection by the pistil and is induced by allele-specific interaction between the SRK and SCR proteins when encoded by the same haplotype (S-haplotype, Kachroo et al., 2001; Nasrallah and Nasrallah, 1993; Takayama et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to other scholarly work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:36:52.338735Z"
+    },
+    {
+      "id": "78fe5fcd-b6ea-4162-9a0e-7dafa0a10ab6",
+      "content_id": "0858f726-7a98-49bb-96ae-0a7d856ae3db",
+      "claim_id": "C20",
+      "claim": "SRK and SCR proteins exhibit a high degree of sequence variability and a large number of these highly diverged allelic variants segregate in natural populations of SI species.",
+      "claim_type": "EXPLICIT",
+      "source": "These two interacting proteins exhibit a high degree of sequence variability and a large number of these highly diverged allelic variants segregate in natural populations of SI species (several dozens to nearly two hundred, Busch et al., 2014; Castric and Vekemans, 2004; Lawrence, 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to other scholarly work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:36:52.338735Z"
+    },
+    {
+      "id": "37d711fe-5737-416e-ab78-4083aa15af9b",
+      "content_id": "0858f726-7a98-49bb-96ae-0a7d856ae3db",
+      "claim_id": "C21",
+      "claim": "The large allelic diversity of receptor-ligand combinations must have arisen through repeated diversification events, but the molecular process and evolutionary scenario involved in the diversification of an ancestral haplotype into distinct descendant specificities are still unresolved.",
+      "claim_type": "EXPLICIT",
+      "source": "This large allelic diversity of receptor-ligand combinations must have arisen through repeated diversification events, but the molecular process and evolutionary scenario involved in the diversification of an ancestral haplotype into distinct descendant specificities are still unresolved.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the current state of knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:36:52.338735Z"
+    },
+    {
+      "id": "e9f5b24e-4f8a-4647-83e5-f211fb48cc9c",
+      "content_id": "0858f726-7a98-49bb-96ae-0a7d856ae3db",
+      "claim_id": "C22",
+      "claim": "Three evolutionary scenarios for emergence of new self-incompatibility specificities have been proposed.",
+      "claim_type": "EXPLICIT",
+      "source": "Three evolutionary scenarios for emergence of new self-incompatibility specificities have been proposed so far (Charlesworth et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to other scholarly work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:36:52.338735Z"
+    },
+    {
+      "id": "065a321e-1010-4902-af41-a0d35b3d3294",
+      "content_id": "0858f726-7a98-49bb-96ae-0a7d856ae3db",
+      "claim_id": "C23",
+      "claim": "The 'compensatory mutation' scenario posits that diversification proceeds through self-compatible intermediates following transient disruption of the receptor-ligand interaction.",
+      "claim_type": "EXPLICIT",
+      "source": "The 'compensatory mutation' scenario posits that diversification proceeds through self-compatible intermediates that is following transient disruption of the receptor-ligand interaction (Figure 1\u2014figure supplement 1A; Gervais et al., 2011; Uyenoyama et al., 2001).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This statement is supported by citations to other scholarly work and reference to a figure.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:36:52.338735Z"
+    },
+    {
+      "id": "9ed29451-c2f2-40e7-b480-bc820927d6b7",
+      "content_id": "0858f726-7a98-49bb-96ae-0a7d856ae3db",
+      "claim_id": "C24",
+      "claim": "Population genetic analysis confirmed that S-allele diversification is possible through the compensatory mutation scenario, but only under some combinations of model parameters.",
+      "claim_type": "EXPLICIT",
+      "source": "Population genetic analysis confirmed that S-allele diversification is indeed possible through this scenario, but only under some combinations of model parameters (high inbreeding depression, high rate of self-pollination and low number of co-segregating S-alleles, Gervais et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to other scholarly work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:36:52.338735Z"
+    },
+    {
+      "id": "1a8c1d14-39e1-4994-ab06-2b768eac4b4d",
+      "content_id": "0858f726-7a98-49bb-96ae-0a7d856ae3db",
+      "claim_id": "C25",
+      "claim": "Under restrictive conditions, the ancestral recognition specificity can be maintained in the long run along with the derived specificity, effectively resulting in allelic diversification.",
+      "claim_type": "EXPLICIT",
+      "source": "Under these restrictive conditions, the ancestral recognition specificity can be maintained in the long run along with the derived specificity, effectively resulting in allelic diversification.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on population genetic analysis cited in the text.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:36:52.338735Z"
+    },
+    {
+      "id": "4abf3c2a-efea-41d6-9b84-f47d21845ed1",
+      "content_id": "0858f726-7a98-49bb-96ae-0a7d856ae3db",
+      "claim_id": "C26",
+      "claim": "Chookajorn et al. (2004) proposed that diversification results from the progressive reinforcement of SRK/SCR recognition capacity among slight functional variants that might segregate within the population.",
+      "claim_type": "EXPLICIT",
+      "source": "A second scenario was presented by Chookajorn et al. (2004), who proposed that diversification results from the progressive reinforcement of SRK/SCR recognition capacity among slight functional variants of SCR and SRK that might segregate within the population.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to other scholarly work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:36:52.338735Z"
+    },
+    {
+      "id": "b3052661-928e-4b6c-837e-4274ea808d34",
+      "content_id": "0858f726-7a98-49bb-96ae-0a7d856ae3db",
+      "claim_id": "C27",
+      "claim": "The progressive reinforcement process may result in the production of two descendant allelic specificities that are both functionally distinct from their ancestor.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the progressive reinforcement process proposed by this model may rather result in the production of two descendant allelic specificities that are both functionally distinct from their ancestor (Figure 1\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference about the implications of the model proposed by Chookajorn et al.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:36:52.338735Z"
+    },
+    {
+      "id": "4876d5e6-3c84-425d-8712-5ad34b470936",
+      "content_id": "0858f726-7a98-49bb-96ae-0a7d856ae3db",
+      "claim_id": "C28",
+      "claim": "A third scenario proposed by Matton et al. (1999) involves a dual-specificity intermediate.",
+      "claim_type": "EXPLICIT",
+      "source": "A third scenario was proposed by Matton et al. (1999) and involves a dual-specificity intermediate (Figure 1\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This statement is supported by a citation to other scholarly work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:36:52.338735Z"
+    },
+    {
+      "id": "13391d6a-c6ef-4eb4-82b5-48bf6949542a",
+      "content_id": "0858f726-7a98-49bb-96ae-0a7d856ae3db",
+      "claim_id": "C29",
+      "claim": "The dual-specificity scenario was criticized on population genetics grounds because such a dual-specificity haplotype would recognize and reject more potential mates for reproduction than its progenitor haplotype resulting in lower reproductive success.",
+      "claim_type": "EXPLICIT",
+      "source": "This scenario was criticized on population genetics grounds because such a dual-specificity haplotype would recognize and reject more potential mates for reproduction than its progenitor haplotype resulting in lower reproductive success, and should therefore be disfavoured by natural selection and quickly eliminated from the populations (Charlesworth, 2000; Uyenoyama and Newbigin, 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to other scholarly work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:36:52.338735Z"
+    },
+    {
+      "id": "be1b7128-dc4a-4255-acbe-9fe90a03e042",
+      "content_id": "0858f726-7a98-49bb-96ae-0a7d856ae3db",
+      "claim_id": "C30",
+      "claim": "A main unanswered question is whether functional specificities remain stable over time or are subject to frequent turnover.",
+      "claim_type": "EXPLICIT",
+      "source": "A main unanswered question is whether functional specificities remain stable over time or are subject to frequent turnover.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the current state of knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:36:52.338735Z"
+    },
+    {
+      "id": "96fef6fa-576e-4f02-8741-aa9c9ca773e5",
+      "content_id": "0858f726-7a98-49bb-96ae-0a7d856ae3db",
+      "claim_id": "C31",
+      "claim": "Under a large portion of the parameter space, the introduced self-compatible intermediate is predicted to exclude its functional ancestor from the population.",
+      "claim_type": "EXPLICIT",
+      "source": "Detailed theoretical analysis of the model of Gervais et al. (2011) showed that under a large portion of the parameter space, the introduced self-compatible intermediate is predicted to exclude its functional ancestor from the population.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to other scholarly work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:36:52.338735Z"
+    },
+    {
+      "id": "d16ad737-1258-45e6-b7f8-6f2c7b210712",
+      "content_id": "0858f726-7a98-49bb-96ae-0a7d856ae3db",
+      "claim_id": "C32",
+      "claim": "Secondary introduction of the compensatory mutation effectively results in turnover of recognition specificities along allelic lines rather than in diversification per se.",
+      "claim_type": "EXPLICIT",
+      "source": "Secondary introduction of the compensatory mutation then effectively results in turnover of recognition specificities along allelic lines rather than in diversification per se.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the theoretical analysis cited.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:36:52.338735Z"
+    },
+    {
+      "id": "99d7b9c2-f950-4540-993e-e3870918806b",
+      "content_id": "0858f726-7a98-49bb-96ae-0a7d856ae3db",
+      "claim_id": "C33",
+      "claim": "A turnover of recognition specificities may be expected along each allelic lineage, rather than their long-term maintenance over evolutionary times.",
+      "claim_type": "EXPLICIT",
+      "source": "A turnover of recognition specificities may therefore be expected along each allelic lineage, rather than their long-term maintenance over evolutionary times.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the theoretical analysis discussed.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:36:52.338735Z"
+    },
+    {
+      "id": "8285f434-0e17-4651-8d61-d236133714f5",
+      "content_id": "0858f726-7a98-49bb-96ae-0a7d856ae3db",
+      "claim_id": "C34",
+      "claim": "An essential limitation in the field is the crucial absence of direct experimental approaches.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, while the large allelic diversity at the S-locus is one of the most striking features of this system, the evolutionary scenario and molecular route by which new S-alleles arise remain largely unknown. An essential limitation in the field is the crucial absence of direct experimental approaches.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the current state of the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:36:52.338735Z"
+    },
+    {
+      "id": "238df7e1-3dfc-4d16-a557-f833a474e358",
+      "content_id": "0858f726-7a98-49bb-96ae-0a7d856ae3db",
+      "claim_id": "C35",
+      "claim": "Previous work identified a pair of S-haplotypes (S03 and S28) with high phylogenetic proximity based on a fragment of the SRK gene.",
+      "claim_type": "EXPLICIT",
+      "source": "Although most S-haplotypes in A. halleri are typically so highly diverged that even sequence alignment can be challenging, previous work identified a pair of S-haplotypes (S03 and S28) with high phylogenetic proximity based on a fragment of the SRK gene (Castric et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to other scholarly work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:36:52.338735Z"
+    },
+    {
+      "id": "845eed32-0873-4a73-bc0b-058e45024874",
+      "content_id": "0858f726-7a98-49bb-96ae-0a7d856ae3db",
+      "claim_id": "C36",
+      "claim": "The putative last common ancestor of SRK03 and SRK28 was reconstructed, resurrected and phenotypically characterized into A. thaliana.",
+      "claim_type": "EXPLICIT",
+      "source": "We took this opportunity to reconstruct, resurrect and phenotypically characterize their putative last common ancestral receptor SRKa ('a' for ancestor, Figure 1) into A. thaliana, which has previously been established as a model plant for mechanistic studies of SI (Nasrallah et al., 2002; Tsuchimatsu et al., 2010).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a description of the experimental approach used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:36:52.338735Z"
+    },
+    {
+      "id": "4407b8a1-ae3a-4958-82cb-fffb15898d90",
+      "content_id": "0858f726-7a98-49bb-96ae-0a7d856ae3db",
+      "claim_id": "C37",
+      "claim": "A. thaliana has previously been established as a model plant for mechanistic studies of SI.",
+      "claim_type": "EXPLICIT",
+      "source": "We took this opportunity to reconstruct, resurrect and phenotypically characterize their putative last common ancestral receptor SRKa ('a' for ancestor, Figure 1) into A. thaliana, which has previously been established as a model plant for mechanistic studies of SI (Nasrallah et al., 2002; Tsuchimatsu et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to other scholarly work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:36:52.338735Z"
+    },
+    {
+      "id": "db2614d1-96ed-4de8-9e3c-0b2f6d9b3ed1",
+      "content_id": "0858f726-7a98-49bb-96ae-0a7d856ae3db",
+      "claim_id": "C38",
+      "claim": "Four different versions of SRKa were defined due to inference uncertainty at two amino acid positions.",
+      "claim_type": "EXPLICIT",
+      "source": "Four different versions of SRKa were defined due to inference uncertainty at two aa positions.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the figure caption and is based on the phylogenetic reconstruction.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:36:52.338735Z"
+    },
+    {
+      "id": "de7d56f9-b267-443c-9d66-b3be585c8da4",
+      "content_id": "0858f726-7a98-49bb-96ae-0a7d856ae3db",
+      "claim_id": "C39",
+      "claim": "SRK03 and SRK28 sequences were cloned from A. halleri DNA BAC clones, whereas SRKa sequences were obtained by gene synthesis.",
+      "claim_type": "EXPLICIT",
+      "source": "SRK03 and SRK28 sequences were cloned from A. halleri DNA BAC clones, whereas SRKa sequences were obtained by gene synthesis.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a description of the methods used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:36:52.338735Z"
+    },
+    {
+      "id": "95c8d546-4eaa-4abe-b48c-2462b0608289",
+      "content_id": "0858f726-7a98-49bb-96ae-0a7d856ae3db",
+      "claim_id": "C40",
+      "claim": "The self-compatible model plant A. thaliana can mount a functional self-incompatibility response upon introduction of the S-locus genes SCR and SRK.",
+      "claim_type": "EXPLICIT",
+      "source": "It was previously shown that the self-compatible model plant A. thaliana can mount a functional self-incompatibility response upon introduction of the S-locus genes SCR and SRK (Boggs et al., 2009; Durand et al., 2014; Nasrallah et al., 2002) but it is unclear whether transfer is possible for all SCR and SRK variants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to other scholarly work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:36:52.338735Z"
+    },
+    {
+      "id": "6b102251-7c93-4e6e-b318-0aea40c54856",
+      "content_id": "0858f726-7a98-49bb-96ae-0a7d856ae3db",
+      "claim_id": "C41",
+      "claim": "It is unclear whether transfer of SI function to A. thaliana is possible for all SCR and SRK variants.",
+      "claim_type": "EXPLICIT",
+      "source": "It was previously shown that the self-compatible model plant A. thaliana can mount a functional self-incompatibility response upon introduction of the S-locus genes SCR and SRK (Boggs et al., 2009; Durand et al., 2014; Nasrallah et al., 2002) but it is unclear whether transfer is possible for all SCR and SRK variants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the current state of knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:36:52.338735Z"
+    },
+    {
+      "id": "94c2c05b-255b-4d3e-be94-9d5df6770e3f",
+      "content_id": "0858f726-7a98-49bb-96ae-0a7d856ae3db",
+      "claim_id": "C42",
+      "claim": "AhSRK03 and AhSRK28 promoters are active in transformed A. thaliana lines.",
+      "claim_type": "EXPLICIT",
+      "source": "We first assessed the activity of AhSRK03 and AhSRK28 promoters in transformed A. thaliana lines (Figure 2\u2014figure supplement 1), which enabled us to identify the temporal window of SRK expression (Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in the figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:36:52.338735Z"
+    },
+    {
+      "id": "45f953ef-c8de-4e73-8820-725330d6ce71",
+      "content_id": "0858f726-7a98-49bb-96ae-0a7d856ae3db",
+      "claim_id": "C43",
+      "claim": "A proper SI response was successfully transferred in transformed A. thaliana lines for each of the SRK receptors (SRK03 and SRK28).",
+      "claim_type": "EXPLICIT",
+      "source": "Then, we used A. halleri pollen carrying either the S03 or S28 male determinant to validate that a proper SI response was indeed successfully transferred in transformed A. thaliana lines for each of our SRK receptors, and that this response was strictly specific toward either of their cognate ligand (two replicate transgenic lines for SRK03 and SRK28 each, Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in the figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:36:52.338735Z"
+    },
+    {
+      "id": "d4b7fa5b-3f51-4792-ad51-12e70e99634e",
+      "content_id": "0858f726-7a98-49bb-96ae-0a7d856ae3db",
+      "claim_id": "C44",
+      "claim": "The SI response in transformed A. thaliana lines was strictly specific toward the cognate ligand.",
+      "claim_type": "EXPLICIT",
+      "source": "Then, we used A. halleri pollen carrying either the S03 or S28 male determinant to validate that a proper SI response was indeed successfully transferred in transformed A. thaliana lines for each of our SRK receptors, and that this response was strictly specific toward either of their cognate ligand (two replicate transgenic lines for SRK03 and SRK28 each, Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in the figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:36:52.338735Z"
+    },
+    {
+      "id": "98bb6f5b-2aa7-4d9c-93f8-e16e700cbe05",
+      "content_id": "0858f726-7a98-49bb-96ae-0a7d856ae3db",
+      "claim_id": "C45",
+      "claim": "A robust self-incompatibility reaction is observed between cognate alleles, whereas a compatible reaction is observed between non-cognate alleles.",
+      "claim_type": "EXPLICIT",
+      "source": "A robust self-incompatibility reaction is observed between cognate alleles, whereas a compatible reaction is observed between non-cognate alleles.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the figure caption and supported by the microscopy images.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:36:52.338735Z"
+    },
+    {
+      "id": "5bc5edc6-32a9-48e8-bfe7-fabe999453a2",
+      "content_id": "0858f726-7a98-49bb-96ae-0a7d856ae3db",
+      "claim_id": "C46",
+      "claim": "Abundant germination of pollen tubes occurred in crosses involving non-cognate SRK and SCR proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Abundant germination of pollen tubes occurred in crosses involving non-cognate SRK and SCR proteins, whereas crosses involving proteins from the same S-haplotype induced inhibition of pollen germination, which is characteristic of an incompatible response.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data from pollination assays.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:36:52.338735Z"
+    },
+    {
+      "id": "d9158a1a-098b-439c-b34c-a5bb02aa5fc5",
+      "content_id": "0858f726-7a98-49bb-96ae-0a7d856ae3db",
+      "claim_id": "C47",
+      "claim": "Crosses involving proteins from the same S-haplotype induced inhibition of pollen germination, which is characteristic of an incompatible response.",
+      "claim_type": "EXPLICIT",
+      "source": "Abundant germination of pollen tubes occurred in crosses involving non-cognate SRK and SCR proteins, whereas crosses involving proteins from the same S-haplotype induced inhibition of pollen germination, which is characteristic of an incompatible response.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data from pollination assays.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:36:52.338735Z"
+    },
+    {
+      "id": "6ca4945f-112f-4d13-9711-360de341ee0b",
+      "content_id": "0858f726-7a98-49bb-96ae-0a7d856ae3db",
+      "claim_id": "C48",
+      "claim": "Incompatible responses are characterized by less than 10 germinated pollen tubes whereas compatible crosses induced significant pollen germination, with more than 50 pollen tubes per stigma.",
+      "claim_type": "EXPLICIT",
+      "source": "Incompatible responses are characterized by less than 10 germinated pollen tubes whereas compatible crosses induced significant pollen germination, with more than 50 pollen tubes per stigma.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data from pollination assays.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:36:52.338735Z"
+    },
+    {
+      "id": "8b01ec14-dc16-4e65-8e53-23029323b21b",
+      "content_id": "0858f726-7a98-49bb-96ae-0a7d856ae3db",
+      "claim_id": "C49",
+      "claim": "Cross-species pollinations of A. thaliana with A. halleri pollen can induce robust SI reactions.",
+      "claim_type": "EXPLICIT",
+      "source": "This shows that cross-species pollinations of A. thaliana with A. halleri pollen can induce robust SI reactions, and also that S03 and S28 have distinct recognition specificities, despite their close phylogenetic proximity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the experimental data from pollination assays.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:36:52.338735Z"
+    },
+    {
+      "id": "b7e166e7-1e6d-40b7-8e04-bcf8b09478eb",
+      "content_id": "0858f726-7a98-49bb-96ae-0a7d856ae3db",
+      "claim_id": "C50",
+      "claim": "S03 and S28 have distinct recognition specificities, despite their close phylogenetic proximity.",
+      "claim_type": "EXPLICIT",
+      "source": "This shows that cross-species pollinations of A. thaliana with A. halleri pollen can induce robust SI reactions, and also that S03 and S28 have distinct recognition specificities, despite their close phylogenetic proximity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the experimental data from pollination assays.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:36:52.338735Z"
+    },
+    {
+      "id": "9f853aa0-802b-4ae7-bb58-aee67655e68a",
+      "content_id": "0858f726-7a98-49bb-96ae-0a7d856ae3db",
+      "claim_id": "C51",
+      "claim": "A phylogenetic approach was used to reconstruct the sequence of the most recent common ancestor of SRK03 and SRK28.",
+      "claim_type": "EXPLICIT",
+      "source": "We then used a phylogenetic approach to reconstruct the sequence of the most recent common ancestor of SRK03 and SRK28 (Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a description of the methods used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:36:52.338735Z"
+    },
+    {
+      "id": "680f815d-495b-4729-9f11-941fb9e3e0e5",
+      "content_id": "0858f726-7a98-49bb-96ae-0a7d856ae3db",
+      "claim_id": "C52",
+      "claim": "The best fitting codon-based models implemented in PAML were used to reconstruct the most likely ancestral amino acid sequence (SRKa).",
+      "claim_type": "EXPLICIT",
+      "source": "Based on a set of closely related SRK sequences from Arabidopsis and Capsella, we used the best fitting codon-based models implemented in PAML (Yang, 2007) to reconstruct the most likely ancestral amino acid sequence (SRKa).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the methods used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:36:52.338735Z"
+    },
+    {
+      "id": "cf2dcc61-38fe-4b30-8dd2-5e87e5a826d0",
+      "content_id": "0858f726-7a98-49bb-96ae-0a7d856ae3db",
+      "claim_id": "C53",
+      "claim": "For the vast majority of the 56 amino acid residues where SRK03 and SRK28 differ, the ancestral reconstruction had high posterior probability (>0.95).",
+      "claim_type": "EXPLICIT",
+      "source": "For the vast majority of the 56 amino acid residues where SRK03 and SRK28 differ (Figure 3\u2014figure supplement 1), the ancestral reconstruction had high posterior probability (>0.95), but was more uncertain at four positions (Figure 3\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the phylogenetic reconstruction analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:36:52.338735Z"
+    },
+    {
+      "id": "0fa7d47b-9c7f-4e79-9397-709b4835a68f",
+      "content_id": "0858f726-7a98-49bb-96ae-0a7d856ae3db",
+      "claim_id": "C54",
+      "claim": "The ancestral reconstruction was more uncertain at four positions.",
+      "claim_type": "EXPLICIT",
+      "source": "For the vast majority of the 56 amino acid residues where SRK03 and SRK28 differ (Figure 3\u2014figure supplement 1), the ancestral reconstruction had high posterior probability (>0.95), but was more uncertain at four positions (Figure 3\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the phylogenetic reconstruction analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:36:52.338735Z"
+    },
+    {
+      "id": "5a4c0b07-ce67-4a5b-acc3-d0c783ab1626",
+      "content_id": "0858f726-7a98-49bb-96ae-0a7d856ae3db",
+      "claim_id": "C55",
+      "claim": "Two of the uncertain sites were close (208) or within (305) hyper variable regions known to be functionally important.",
+      "claim_type": "EXPLICIT",
+      "source": "Two of these sites were close (208) or within (305) hyper variable regions known to be functionally important (Figure 3\u2014figure supplement 1; Kusaba et al., 1997).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This statement is supported by a citation to other scholarly work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:36:52.338735Z"
+    },
+    {
+      "id": "f1de97b5-32c6-4b7c-9055-9f0569b7d368",
+      "content_id": "0858f726-7a98-49bb-96ae-0a7d856ae3db",
+      "claim_id": "C56",
+      "claim": "Three additional ancestral sequences were generated and tested to take uncertainty into account: SRKaIG, SRKaMA and SRKaMG.",
+      "claim_type": "EXPLICIT",
+      "source": "To take uncertainty into account and evaluate the impact of variation at these two individual sites, three additional ancestral sequences were generated and tested: SRKaIG, SRKaMA and SRKaMG.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental design.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:36:52.338735Z"
+    },
+    {
+      "id": "c55e61a7-3c53-42a4-9259-1644a6deae14",
+      "content_id": "0858f726-7a98-49bb-96ae-0a7d856ae3db",
+      "claim_id": "C57",
+      "claim": "A total of 28 different fixed homozygote single-copy transformed Arabidopsis lines were obtained.",
+      "claim_type": "EXPLICIT",
+      "source": "For each of these constructs, we obtained several replicate transgenic lines, resulting in a total of 28 different fixed homozygote single-copy transformed Arabidopsis lines (8 SRKaIA lines; 7 SRKaIG lines; 7 SRKaMA lines and 6 SRKaMG lines).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:36:52.338735Z"
+    },
+    {
+      "id": "f17b0d5e-8c83-46ea-a2f2-4848766d65e3",
+      "content_id": "0858f726-7a98-49bb-96ae-0a7d856ae3db",
+      "claim_id": "C58",
+      "claim": "Five lines showed very low levels of SRKa transcripts in pistils and were excluded from further analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Five lines showed very low levels of SRKa transcripts in pistils (Figure 3\u2014figure supplement 3; possibly due to positional effects as is common in transgenic constructs) and were thus excluded from further analysis, leaving 23 transgenic lines for testing.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in the figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:36:52.338735Z"
+    },
+    {
+      "id": "95b5e344-b8cc-41a4-a7c4-80cf1d4d7756",
+      "content_id": "0858f726-7a98-49bb-96ae-0a7d856ae3db",
+      "claim_id": "C60",
+      "claim": "With a single exception, S28 pollen induced no consistent SI rejection in any of the lines expressing the different versions of the ancestral receptor.",
+      "claim_type": "EXPLICIT",
+      "source": "With a single exception (line p03_SRKaMA_k03_2), S28 pollen induced no consistent SI rejection in any of the lines expressing the different versions of the ancestral receptor, and was indistinguishable from the compatible control (C24, Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in the figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:36:52.338735Z"
+    },
+    {
+      "id": "c654dfaa-1501-469b-b3fb-93b16c0c6a70",
+      "content_id": "0858f726-7a98-49bb-96ae-0a7d856ae3db",
+      "claim_id": "C61",
+      "claim": "SCR03 pollen induced robust incompatibility reactions in the vast majority (12 of 14) of the lines with amino acid I at position 208 (SRKaIA and SRKaIG).",
+      "claim_type": "EXPLICIT",
+      "source": "In stark contrast, SCR03 pollen induced robust incompatibility reactions in the vast majority (12 of 14) of the lines with amino acid I at position 208 (SRKaIA and SRKaIG, Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in the figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:36:52.338735Z"
+    },
+    {
+      "id": "4f6cf94a-c648-40b6-a037-2d768af1215f",
+      "content_id": "0858f726-7a98-49bb-96ae-0a7d856ae3db",
+      "claim_id": "C62",
+      "claim": "The S03 haplotype has retained the ancestral recognition specificity largely unaltered, while the S28 haplotype underwent substantial modification and represents a novel recognition specificity.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, we conclude that the S03 haplotype has retained the ancestral recognition specificity largely unaltered, while the S28 haplotype underwent substantial modification and represents a novel recognition specificity, leading to functional diversification.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the experimental data from pollination assays.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:36:52.338735Z"
+    },
+    {
+      "id": "eb432556-db52-4c06-9a61-2ffcfb5938b6",
+      "content_id": "0858f726-7a98-49bb-96ae-0a7d856ae3db",
+      "claim_id": "C63",
+      "claim": "The incompatibility reactions involving different ancestral SRK S-domain sequences were largely independent of the sequence context into which they were introduced.",
+      "claim_type": "EXPLICIT",
+      "source": "The incompatibility reactions involving our different ancestral SRK S-domain sequences were largely independent of the sequence context into which we introduced them (Figure 3, Figure 1\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in the figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:36:52.338735Z"
+    },
+    {
+      "id": "92dfb1a3-5c9a-4eed-998a-f3b2720c8efa",
+      "content_id": "0858f726-7a98-49bb-96ae-0a7d856ae3db",
+      "claim_id": "C64",
+      "claim": "The amino acid present at position 305 of the reconstructed sequence had no effect on the response.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, the amino acid present at position 305 of the reconstructed sequence had no effect on the response: lines with either A or G produced rejection reactions equally.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data from pollination assays.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:36:52.338735Z"
+    },
+    {
+      "id": "287407c1-861e-4b2e-b9e5-a351596731fd",
+      "content_id": "0858f726-7a98-49bb-96ae-0a7d856ae3db",
+      "claim_id": "C65",
+      "claim": "Only four of the lines with amino acid M at position 208 (SRKaMA and SRKaMG) displayed incompatibility reactions, and these were weak.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, only four of the lines with amino acid M at position 208 (SRKaMA and SRKaMG) displayed incompatibility reactions, and these were weak (Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in the figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:36:52.338735Z"
+    },
+    {
+      "id": "111a0fd1-8993-46d5-b2ea-ff89c2c7f504",
+      "content_id": "0858f726-7a98-49bb-96ae-0a7d856ae3db",
+      "claim_id": "C66",
+      "claim": "The single change from the ancestral Isoleucine amino acid (I) at position 208 to Methionine (M) seems to be sufficient to almost fully inactivate the ancestral receptor's ability to recognise SCR03.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, the single change, from the ancestral Isoleucine amino acid (I) at position 208 to Methionine (M), seems to be sufficient to almost fully inactivate the ancestral receptor's ability to recognise SCR03.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the experimental data from pollination assays.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:36:52.338735Z"
+    },
+    {
+      "id": "a58e2c94-71df-49ef-8f8c-51c0eed89bcc",
+      "content_id": "0858f726-7a98-49bb-96ae-0a7d856ae3db",
+      "claim_id": "C67",
+      "claim": "The structural model of the interaction complex formed by SCR and SRK was used to compare cognate and non cognate complexes.",
+      "claim_type": "EXPLICIT",
+      "source": "We used the structural model of the interaction complex formed by SCR and SRK (Ma et al., 2016) to compare cognate and non cognate complexes in terms of number and nature of atomic contacts and predict how the ancestral receptor is expected to interact with either SCR03 or SCR28.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the methods used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:36:52.338735Z"
+    },
+    {
+      "id": "e7a9d600-96ef-49b7-a106-014e7d79f562",
+      "content_id": "0858f726-7a98-49bb-96ae-0a7d856ae3db",
+      "claim_id": "C68",
+      "claim": "SCR binding induces homodimerization of the extracellular domain of SRK (eSRK), forming eSRK:SCR heterotetramers composed of two SCR molecules bound to two SRK molecules.",
+      "claim_type": "EXPLICIT",
+      "source": "As previously demonstrated by Ma et al. (2016), SCR binding induces homodimerization of the extracellular domain of SRK (eSRK, Figure 3\u2014figure supplement 1), forming eSRK:SCR heterotetramers composed of two SCR molecules bound to two SRK molecules (Ma et al., 2016).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This statement is supported by a citation to other scholarly work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:36:52.338735Z"
+    },
+    {
+      "id": "217bb1a9-a0ac-4508-b0f4-e5e566f09fca",
+      "content_id": "0858f726-7a98-49bb-96ae-0a7d856ae3db",
+      "claim_id": "C69",
+      "claim": "The switch in recognition specificity occurred along the branch leading to SRK28, and therefore must involve some of the 29 amino acid differences along this branch.",
+      "claim_type": "EXPLICIT",
+      "source": "The switch in recognition specificity occurred along the branch leading to SRK28, and therefore must involve some of the 29 amino acid differences along this branch.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the phylogenetic analysis and experimental results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:36:52.338735Z"
+    },
+    {
+      "id": "137cd249-13eb-4eb5-88b6-fe7cfe5e2cd4",
+      "content_id": "0858f726-7a98-49bb-96ae-0a7d856ae3db",
+      "claim_id": "C70",
+      "claim": "The 31 amino acid differences that accumulated along the branch leading to SRK03 have not fully altered the recognition specificity.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the 31 amino acid differences that accumulated along the branch leading to SRK03 have not fully altered the recognition specificity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the phylogenetic analysis and experimental results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:36:52.338735Z"
+    },
+    {
+      "id": "0e056a79-20be-4d03-ba5e-009505ae42cb",
+      "content_id": "0858f726-7a98-49bb-96ae-0a7d856ae3db",
+      "claim_id": "C71",
+      "claim": "There is a slightly higher number of atomic contacts between the SCR and SRK molecules in the SRK03-SCR03 cognate complex (1543 contacts) than in the SRK28-SCR28 cognate complex (1395 contacts).",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, we find a slightly higher number of atomic contacts between the SCR and SRK molecules in the SRK03-SCR03 cognate complex (1543 contacts over 91 and 62 distinct SRK and SCR amino acids respectively) than in the SRK28-SCR28 cognate complex (1395 contacts over 89 and 57 distinct SRK and SCR amino acids respectively, Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by structural modeling analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:36:52.338735Z"
+    },
+    {
+      "id": "f45c5d33-268d-4bce-96a1-d225d3d35327",
+      "content_id": "0858f726-7a98-49bb-96ae-0a7d856ae3db",
+      "claim_id": "C72",
+      "claim": "In both cases the interaction interface was mostly concentrated around the three 'hypervariable' portions of the SRK protein.",
+      "claim_type": "EXPLICIT",
+      "source": "As already noted by Ma et al. (2016) in Brassica, and in line with the distribution of positively selected sites along the sequence (Castric and Vekemans, 2007), in both cases the interaction interface was mostly concentrated around the three 'hypervariable' portions of the SRK protein (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This statement is supported by citations to other scholarly work and structural modeling analysis.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:36:52.338735Z"
+    },
+    {
+      "id": "d5065dcc-c6fa-4a67-a8f9-c3b6e672e4ac",
+      "content_id": "0858f726-7a98-49bb-96ae-0a7d856ae3db",
+      "claim_id": "C73",
+      "claim": "The non-cognate complexes did not differ substantially from the cognate complexes on the basis of their total number of atomic contacts.",
+      "claim_type": "EXPLICIT",
+      "source": "Contrary to our expectation, however, the non-cognate complexes did not differ substantially from the cognate complexes on the basis of their total number of atomic contacts (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by structural modeling analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:36:52.338735Z"
+    },
+    {
+      "id": "15b40e9e-3b63-4aae-bef6-03d191dadbb2",
+      "content_id": "0858f726-7a98-49bb-96ae-0a7d856ae3db",
+      "claim_id": "C74",
+      "claim": "The SRK03/SCR28 and SRK28/SCR03 non-cognate complexes were predicted to establish a total of 1546 and 1328 contacts, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, the SRK03/SCR28 and SRK28/SCR03 non-cognate complexes were predicted to establish a total of 1546 and 1328 contacts, respectively, between atoms of their SCR and SRK molecules, very close to the 1543 and 1395 predicted contacts for the SRK03/SCR03 and SRK28/SCR28 cognate complexes (Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by structural modeling analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:36:52.338735Z"
+    },
+    {
+      "id": "6e41e62c-945c-4f1a-bd12-37df1b645b03",
+      "content_id": "0858f726-7a98-49bb-96ae-0a7d856ae3db",
+      "claim_id": "C75",
+      "claim": "The non-cognate complexes were not characterized by any obvious steric clashes that would prevent the proper docking of SCR and SRK.",
+      "claim_type": "EXPLICIT",
+      "source": "They were also not characterized by any obvious steric clashes that would prevent the proper docking of SCR and SRK.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by structural modeling analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:36:52.338735Z"
+    },
+    {
+      "id": "4de22b4f-0dbe-4a98-aee2-9dcc7ef8a986",
+      "content_id": "0858f726-7a98-49bb-96ae-0a7d856ae3db",
+      "claim_id": "C76",
+      "claim": "The overall stability of the complex does not seem to be the primary determinant of recognition specificity.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, the overall stability of the complex does not seem to be the primary determinant of recognition specificity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the structural modeling analysis.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:36:52.338735Z"
+    },
+    {
+      "id": "033ab264-c369-4846-921a-cd7273f446e7",
+      "content_id": "0858f726-7a98-49bb-96ae-0a7d856ae3db",
+      "claim_id": "C77",
+      "claim": "The specificity of the interaction must be a function of some qualitative features rather than of the quantitative strength of the interaction.",
+      "claim_type": "EXPLICIT",
+      "source": "Consequently, the specificity of the interaction must be a function of some qualitative features rather than of the quantitative strength of the interaction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the structural modeling analysis.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:36:52.338735Z"
+    },
+    {
+      "id": "01564c69-1acf-4823-a624-9ea6bc228f6d",
+      "content_id": "0858f726-7a98-49bb-96ae-0a7d856ae3db",
+      "claim_id": "C78",
+      "claim": "Six amino acid positions of the eSRK protein displayed important differences in terms of contacts they establish with SCR in the cognate vs. the non-cognate complexes.",
+      "claim_type": "EXPLICIT",
+      "source": "While the majority of amino acids retained unchanged atomic contacts in cognate vs. non-cognate interactions, using a 5% threshold we identified six amino acid positions of the eSRK protein that displayed important differences in terms of contacts they establish with SCR in the cognate vs. the non-cognate complexes (Figure 5\u2014figure supplement 1B, C, E and F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by structural modeling analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:36:52.338735Z"
+    },
+    {
+      "id": "6fa6cf82-a5c1-42a4-8e39-3f2c431a9848",
+      "content_id": "0858f726-7a98-49bb-96ae-0a7d856ae3db",
+      "claim_id": "C79",
+      "claim": "Four amino acid positions (S201, R220, R279, W296) displayed very contrasted interactions in the S03 vs. the S28 complexes.",
+      "claim_type": "EXPLICIT",
+      "source": "Four of these amino acid positions also displayed very contrasted interactions in the S03 vs. the S28 complexes (residues S201, R220, R279, W296, Figure 5\u2014figure supplement 1A and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by structural modeling analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:36:52.338735Z"
+    },
+    {
+      "id": "cee78d75-4445-4a72-a93d-4ee2d924b05d",
+      "content_id": "0858f726-7a98-49bb-96ae-0a7d856ae3db",
+      "claim_id": "C80",
+      "claim": "The R residue at position 279 of SRK establishes three times more contacts with SCR in the SRK03/SCR03 than in the SRK28/SCR28 complex.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, the R residue at position 279 of SRK establishes three times more contacts with SCR in the SRK03/SCR03 than in the SRK28/SCR28 complex (Figure 5, Figure 5\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by structural modeling analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:36:52.338735Z"
+    },
+    {
+      "id": "7cec8bd8-407d-48ac-ace3-ae56b688350f",
+      "content_id": "0858f726-7a98-49bb-96ae-0a7d856ae3db",
+      "claim_id": "C81",
+      "claim": "Residues S201, R220, R279, and W296 are prime candidates for the determination of binding specificity.",
+      "claim_type": "EXPLICIT",
+      "source": "These four residues are therefore prime candidates for the determination of binding specificity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the structural modeling analysis.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:36:52.338735Z"
+    },
+    {
+      "id": "561c1538-5dac-4230-a40d-b1e409fe9fa3",
+      "content_id": "0858f726-7a98-49bb-96ae-0a7d856ae3db",
+      "claim_id": "C82",
+      "claim": "Three of the six amino acids were identical between SRK03 and SRK28, and yet interacted in sharply different ways with their respective SCR ligands.",
+      "claim_type": "EXPLICIT",
+      "source": "Intriguingly, three of the six amino acids were identical between SRK03 and SRK28, and yet interacted in sharply different ways with their respective SCR ligands.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by structural modeling analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:36:52.338735Z"
+    },
+    {
+      "id": "3fc3dee9-22b5-4cd5-9753-39f1daa79c58",
+      "content_id": "0858f726-7a98-49bb-96ae-0a7d856ae3db",
+      "claim_id": "C83",
+      "claim": "Residues W296 and R279 established three to four times more contacts in the S03 than in the S28 complex, while being identical between the SRK03 and SRK28 sequences.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, while identical between the SRK03 and SRK28 sequences, residues W296 and R279 established three to four times more contacts in the S03 than in the S28 complex, and the R220 residue is involved in twice as many contacts in the S28 than in the S03 complex (Figure 5, Figure 5\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by structural modeling analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:36:52.338735Z"
+    },
+    {
+      "id": "0fcecd15-0bd3-4614-b8c1-9ad6279ced4c",
+      "content_id": "0858f726-7a98-49bb-96ae-0a7d856ae3db",
+      "claim_id": "C84",
+      "claim": "The R220 residue is involved in twice as many contacts in the S28 than in the S03 complex, while being identical between the SRK03 and SRK28 sequences.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, while identical between the SRK03 and SRK28 sequences, residues W296 and R279 established three to four times more contacts in the S03 than in the S28 complex, and the R220 residue is involved in twice as many contacts in the S28 than in the S03 complex (Figure 5, Figure 5\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by structural modeling analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:36:52.338735Z"
+    },
+    {
+      "id": "33fa2626-058f-40f3-b345-cd679cd72217",
+      "content_id": "0858f726-7a98-49bb-96ae-0a7d856ae3db",
+      "claim_id": "C85",
+      "claim": "Involvement of these residues in the activity of the complex is mediated by substitutions at other positions along the protein sequence, for instance by displacing them spatially.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that involvement of these residues in the activity of the complex is mediated by substitutions at other positions along the protein sequence, for instance by displacing them spatially (Figure 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on the structural modeling analysis.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:36:52.338735Z"
+    },
+    {
+      "id": "f6b7a148-ecca-412b-b7db-f89bab57290d",
+      "content_id": "0858f726-7a98-49bb-96ae-0a7d856ae3db",
+      "claim_id": "C86",
+      "claim": "When complexed with SCR03, 46 SRKaIA interacting pairs of amino acids were identical with SRK03, whereas only 24 were identical with SRK28.",
+      "claim_type": "EXPLICIT",
+      "source": "When complexed with SCR03, 46 SRKaIA interacting pairs of amino acids were identical with SRK03, whereas only 24 were identical with SRK28.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by structural modeling analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:36:52.338735Z"
+    },
+    {
+      "id": "1de31cd2-8fb9-4758-809c-386feb895cad",
+      "content_id": "0858f726-7a98-49bb-96ae-0a7d856ae3db",
+      "claim_id": "C87",
+      "claim": "When complexed with SCR28, 37 SRKaIA interacting pairs of amino acid residues were identical with SRK03, but only 18 were identical with SRK28.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, when complexed with SCR28, 37 SRKaIA interacting pairs of amino acid residues were identical with SRK03, but only 18 were identical with SRK28 (Figure 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by structural modeling analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:36:52.338735Z"
+    },
+    {
+      "id": "b62be21c-b7e6-4c28-b3ab-29a23a4677a9",
+      "content_id": "0858f726-7a98-49bb-96ae-0a7d856ae3db",
+      "claim_id": "C88",
+      "claim": "There is no quantitative difference in how strongly SRK03 and SRK28 bind SCR03 and SCR28.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, even though there is no quantitative difference in how strongly SRK03 and SRK28 bind SCR03 and SCR28 (Supplementary file 1), the amino acids that come into contact in the two complexes are not identical, and the contacts established by SRKaIA with SCR qualitatively resemble more those established by SRK03 than those established by SRK28.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by structural modeling analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:36:52.338735Z"
+    },
+    {
+      "id": "542e73a3-736c-4d1c-9398-2b54a6b3080d",
+      "content_id": "0858f726-7a98-49bb-96ae-0a7d856ae3db",
+      "claim_id": "C89",
+      "claim": "The amino acids that come into contact in the two complexes are not identical.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, even though there is no quantitative difference in how strongly SRK03 and SRK28 bind SCR03 and SCR28 (Supplementary file 1), the amino acids that come into contact in the two complexes are not identical, and the contacts established by SRKaIA with SCR qualitatively resemble more those established by SRK03 than those established by SRK28.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by structural modeling analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:36:52.338735Z"
+    },
+    {
+      "id": "31624f73-1d19-44c0-ab74-b7055d55affe",
+      "content_id": "0858f726-7a98-49bb-96ae-0a7d856ae3db",
+      "claim_id": "C90",
+      "claim": "The contacts established by SRKaIA with SCR qualitatively resemble more those established by SRK03 than those established by SRK28.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, even though there is no quantitative difference in how strongly SRK03 and SRK28 bind SCR03 and SCR28 (Supplementary file 1), the amino acids that come into contact in the two complexes are not identical, and the contacts established by SRKaIA with SCR qualitatively resemble more those established by SRK03 than those established by SRK28.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by structural modeling analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:36:52.338735Z"
+    },
+    {
+      "id": "09fae3ec-a282-4399-914d-c1d68bf0708d",
+      "content_id": "0858f726-7a98-49bb-96ae-0a7d856ae3db",
+      "claim_id": "C91",
+      "claim": "Asymmetrical diversification of the ancestor into the phenotypically distinct S03 and S28 specificities is associated with structural changes of the SRK receptor and the way it interacts with its SCR ligand.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, asymmetrical diversification of the ancestor into the phenotypically distinct S03 and S28 specificities is therefore associated with structural changes of the SRK receptor and the way it interacts with its SCR ligand.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the structural modeling analysis and experimental results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:36:52.338735Z"
+    },
+    {
+      "id": "8e1e8309-a9a7-4b4a-b922-0ae6f54a2ce5",
+      "content_id": "0858f726-7a98-49bb-96ae-0a7d856ae3db",
+      "claim_id": "C92",
+      "claim": "Despite similar levels of overall sequence divergence between SRKa and either SRK03 or SRK28, the binding properties of SRK03 have remained similar to those of SRKaIA, while the way SRK28 is predicted to interact with the SCR ligand has diverged from its ancestral state.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite similar levels of overall sequence divergence between SRKa and either SRK03 or SRK28, the binding properties of SRK03 have remained similar to those of SRKaIA, while the way SRK28 is predicted to interact with the SCR ligand has diverged from its ancestral state, consistent with the phenotypic switch that has occurred along this lineage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the structural modeling analysis and experimental results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:36:52.338735Z"
+    },
+    {
+      "id": "71319075-6da6-42ca-9d30-6721e94f2b86",
+      "content_id": "0858f726-7a98-49bb-96ae-0a7d856ae3db",
+      "claim_id": "C93",
+      "claim": "Ancestral resurrection approaches have been used to decipher evolutionary processes in a number of biological systems including enzymes, visual pigments, and transcription factors.",
+      "claim_type": "EXPLICIT",
+      "source": "Ancestral resurrection approaches have been used to decipher evolutionary processes in a number of biological systems including enzymes (Starr et al., 2017; Tufts et al., 2015), visual pigments (Chang et al., 2002) or transcription factors (Pougach et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to other scholarly work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:36:52.338735Z"
+    },
+    {
+      "id": "079f5108-3213-4f13-8d15-0ecce3487831",
+      "content_id": "0858f726-7a98-49bb-96ae-0a7d856ae3db",
+      "claim_id": "C94",
+      "claim": "An essential limitation in ancestral resurrection studies is that the ancestral protein function is typically determined in vitro, strongly limiting biological realism of the reconstructed function.",
+      "claim_type": "EXPLICIT",
+      "source": "However, an essential limitation in these studies is that the ancestral protein function is typically determined in vitro, strongly limiting biological realism of the reconstructed function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the limitations of previous studies.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:36:52.338735Z"
+    },
+    {
+      "id": "6f1652d2-4f95-4926-9362-4355442995d8",
+      "content_id": "0858f726-7a98-49bb-96ae-0a7d856ae3db",
+      "claim_id": "C95",
+      "claim": "A single study involved a comparable in vivo ancestral resurrection approach in a higher organism, in the context of functional evolution of the alcohol dehydrogenase protein (ADH) in Drosophila lineages.",
+      "claim_type": "EXPLICIT",
+      "source": "To our knowledge, a single study involved a comparable in vivo ancestral resurrection approach in a higher organism, in the context of functional evolution of the alcohol dehydrogenase protein (ADH) in Drosophila lineages (Siddiq et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to other scholarly work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:36:52.338735Z"
+    },
+    {
+      "id": "b42817c2-b962-479a-8608-5b11cd427d5c",
+      "content_id": "0858f726-7a98-49bb-96ae-0a7d856ae3db",
+      "claim_id": "C96",
+      "claim": "Whole organism studies are biologically most relevant, as they allow a focus on integrated phenotypes rather than on highly reductionist phenotypes.",
+      "claim_type": "EXPLICIT",
+      "source": "Such whole organism studies are biologically most relevant, as they allow a focus on integrated phenotypes (here the self-incompatibility reaction, which has a strong and direct link with organismal fitness) rather than on highly reductionist phenotypes (such as in vitro assays of protein activity).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the advantages of whole organism studies.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:36:52.338735Z"
+    },
+    {
+      "id": "e67239c9-427f-423c-8dd3-65c1f15064f3",
+      "content_id": "0858f726-7a98-49bb-96ae-0a7d856ae3db",
+      "claim_id": "C97",
+      "claim": "Functional diversification of receptor-ligand interactions is a common process that takes place over long evolutionary times.",
+      "claim_type": "EXPLICIT",
+      "source": "Functional diversification of receptor-ligand interactions is a common process that takes place over long evolutionary times.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about receptor-ligand interactions.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:36:52.338735Z"
+    },
+    {
+      "id": "05e10d72-000b-4832-ba29-1545c6c84a11",
+      "content_id": "0858f726-7a98-49bb-96ae-0a7d856ae3db",
+      "claim_id": "C98",
+      "claim": "Little is known about how diversification happens in nature, both in terms of whether some evolutionary pathways are preferentially followed over others and in terms of the molecular modifications involved.",
+      "claim_type": "EXPLICIT",
+      "source": "However, in most cases we remain far from a predictive understanding of how the specific evolutionary forces imposed on a given interacting pair of proteins at the molecular level translate into a given process of functional diversification. As a result, little is known about how diversification happens in nature, both in terms of whether some evolutionary pathways are preferentially followed over others and in terms of the molecular modifications involved.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the current state of knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:36:52.338735Z"
+    },
+    {
+      "id": "6064c600-d56d-4b49-9799-9e6fd8d75d86",
+      "content_id": "0858f726-7a98-49bb-96ae-0a7d856ae3db",
+      "claim_id": "C99",
+      "claim": "Diversification of two S-alleles from their putative common ancestor proceeded through asymmetrical functional divergence, with one allele having largely retained its ancestral specificity and the other one having acquired a novel recognition specificity that was previously absent.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we show that diversification of two S-alleles from their putative common ancestor proceeded through asymmetrical functional divergence, with one allele having largely retained its ancestral specificity and the other one having acquired a novel recognition specificity that was previously absent.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main finding of the study, supported by experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:36:52.338735Z"
+    },
+    {
+      "id": "67b59ded-ac51-4328-b0f3-fec8d5f69eba",
+      "content_id": "0858f726-7a98-49bb-96ae-0a7d856ae3db",
+      "claim_id": "C100",
+      "claim": "The results are compatible with the model of SI specificity diversification by compensatory mutation of Gervais et al. (2011) and one version of the progressive reinforcement model of Chookajorn et al. (2004).",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, our results are thus compatible with the model of SI specificity diversification by compensatory mutation of Gervais et al. (2011) and one version (i.e. with maintenance of the ancestral specificity) of the progressive reinforcement model of Chookajorn et al. (2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the experimental results and comparison with theoretical models.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:36:52.338735Z"
+    },
+    {
+      "id": "7f2acfeb-7a40-4778-b1db-6fb07bc5a5c6",
+      "content_id": "0858f726-7a98-49bb-96ae-0a7d856ae3db",
+      "claim_id": "C101",
+      "claim": "The results do not allow to discriminate between the compensatory mutation model and the progressive reinforcement model, that is to determine whether a transient loss of self-recognition is required.",
+      "claim_type": "EXPLICIT",
+      "source": "However, they do not allow to discriminate between these two models, that is to determine whether a transient loss of self-recognition is required (Uyenoyama et al., 2001; Gervais et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the limitations of the study.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:36:52.338735Z"
+    },
+    {
+      "id": "85943315-57a9-4df4-a95d-02e716cdf86f",
+      "content_id": "0858f726-7a98-49bb-96ae-0a7d856ae3db",
+      "claim_id": "C102",
+      "claim": "The model of promiscuous dual-specificity intermediates can be rejected.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the model of promiscuous dual-specificity intermediates (Matton et al., 1999; Figure 1\u2014figure supplement 1C) can be rejected, because Uyenoyama and Newbigin (2000) have shown that a dual-specificity haplotype can be maintained in the population only in the absence of the ancestral specificity, while we show here that the ancestral specificity (S03) remained present.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a conclusion based on the experimental results and comparison with theoretical models.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:36:52.338735Z"
+    },
+    {
+      "id": "3682cda1-1443-47fa-a3e0-5e92ae3be1d3",
+      "content_id": "0858f726-7a98-49bb-96ae-0a7d856ae3db",
+      "claim_id": "C103",
+      "claim": "The progressive reinforcement model with replacement of the ancestral specificity by two functionally diverged specificities can be rejected.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, the progressive reinforcement model with replacement of the ancestral specificity by two functionally diverged specificities can be rejected (Figure 1\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a conclusion based on the experimental results and comparison with theoretical models.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:36:52.338735Z"
+    },
+    {
+      "id": "5b5e214d-f87f-4a4b-8cc4-638ce8c1d324",
+      "content_id": "0858f726-7a98-49bb-96ae-0a7d856ae3db",
+      "claim_id": "C104",
+      "claim": "Models of SI evolution suggested that turnover of recognition specificities may be common over evolutionary times.",
+      "claim_type": "EXPLICIT",
+      "source": "Models of SI evolution suggested that turnover of recognition specificities may be common over evolutionary times (Gervais et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to other scholarly work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:36:52.338735Z"
+    },
+    {
+      "id": "311df506-afa4-43f5-89ca-d872bb8accf3",
+      "content_id": "0858f726-7a98-49bb-96ae-0a7d856ae3db",
+      "claim_id": "C105",
+      "claim": "The observation that the ancestral SRKaIA recognition specificity was stably maintained along the SRK03 lineage demonstrates that no turnover event occurred over a substantial period of time.",
+      "claim_type": "EXPLICIT",
+      "source": "The observation that the ancestral SRKaIA recognition specificity was stably maintained along the SRK03 lineage demonstrates that no turnover event occurred over a substantial period of time (i.e. since S03 and S28 started to diverge from one another, ca. a few million years ago).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the experimental results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:36:52.338735Z"
+    },
+    {
+      "id": "3842f3b6-b01b-4a87-8e43-31d260b4874c",
+      "content_id": "0858f726-7a98-49bb-96ae-0a7d856ae3db",
+      "claim_id": "C106",
+      "claim": "The long-term maintenance of S-haplotype specificities was previously suggested by the comparison of certain A. halleri and A. lyrata S-lineages with their A. thaliana orthologs.",
+      "claim_type": "EXPLICIT",
+      "source": "The long-term maintenance of S-haplotype specificities was previously suggested by the comparison of certain A. halleri and A. lyrata S-lineages with their A. thaliana orthologs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by the discussion of previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:36:52.338735Z"
+    },
+    {
+      "id": "80a360a1-c66b-4d3a-886c-a6d47329b2e2",
+      "content_id": "0858f726-7a98-49bb-96ae-0a7d856ae3db",
+      "claim_id": "C107",
+      "claim": "Some A. thaliana accessions with haplogroup A were able to reject A. halleri pollen expressing the cognate AhSCR04 specificity, despite about 6 million years of divergence.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, some A. thaliana accessions with haplogroup A were able to reject A. halleri pollen expressing the cognate AhSCR04 specificity (Tsuchimatsu et al., 2010), despite about 6 million years of divergence (Hohmann et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to other scholarly work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:36:52.338735Z"
+    },
+    {
+      "id": "5e591433-fe75-4267-b9fc-fe16edbcfc7f",
+      "content_id": "0858f726-7a98-49bb-96ae-0a7d856ae3db",
+      "claim_id": "C108",
+      "claim": "An overexpressed version of A. thaliana SCR haplogroup C was able to elicit a SI reaction on pistils expressing the cognate A. lyrata AlSRK36 specificity.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, an overexpressed version of A. thaliana SCR haplogroup C was also able to elicit a SI reaction on pistils expressing the cognate A. lyrata AlSRK36 specificity (Dwyer et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to other scholarly work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:36:52.338735Z"
+    },
+    {
+      "id": "95d1004b-1cc3-4ccb-8749-caf42db33242",
+      "content_id": "0858f726-7a98-49bb-96ae-0a7d856ae3db",
+      "claim_id": "C109",
+      "claim": "A. thaliana has become predominantly self-fertilising, and no longer has an intact SI system due to alterations of SI components.",
+      "claim_type": "EXPLICIT",
+      "source": "However, beside the fact that these were trans-specific comparisons, it is important to note that A. thaliana has become predominantly self-fertilising, and no longer has an intact SI system due to alterations of SI components (Bechsgaard et al., 2006; Shimizu and Tsuchimatsu, 2015), so our results provide the first direct test of the hypothesis that recognition specificities remain stable, rather than undergoing recurrent rapid turnover.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to other scholarly work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:36:52.338735Z"
+    },
+    {
+      "id": "43e8efff-23d6-4a9a-807f-98f3f14345ef",
+      "content_id": "0858f726-7a98-49bb-96ae-0a7d856ae3db",
+      "claim_id": "C110",
+      "claim": "The results provide the first direct test of the hypothesis that recognition specificities remain stable, rather than undergoing recurrent rapid turnover.",
+      "claim_type": "EXPLICIT",
+      "source": "However, beside the fact that these were trans-specific comparisons, it is important to note that A. thaliana has become predominantly self-fertilising, and no longer has an intact SI system due to alterations of SI components (Bechsgaard et al., 2006; Shimizu and Tsuchimatsu, 2015), so our results provide the first direct test of the hypothesis that recognition specificities remain stable, rather than undergoing recurrent rapid turnover.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the significance of the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:36:52.338735Z"
+    },
+    {
+      "id": "21ed938e-e1e6-44fb-9cb6-f48f84bdcb20",
+      "content_id": "0858f726-7a98-49bb-96ae-0a7d856ae3db",
+      "claim_id": "C111",
+      "claim": "The SI response elicited by the reconstructed SRKa was overall weaker and more variable across replicate lines than those elicited by the native SRK constructs.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite the obvious conservation of recognition specificity between SRKaIA and SRK03, we note that the SI response elicited by the reconstructed SRKa was overall weaker and more variable across replicate lines than those elicited by the native SRK constructs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation based on the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:36:52.338735Z"
+    },
+    {
+      "id": "eecc54ae-31c9-45a1-a384-1be2e130e7c7",
+      "content_id": "0858f726-7a98-49bb-96ae-0a7d856ae3db",
+      "claim_id": "C112",
+      "claim": "The partial response could be due to incorrect inference of the ancestral receptor sequence.",
+      "claim_type": "EXPLICIT",
+      "source": "This partial response could be due to incorrect inference of the ancestral receptor sequence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about the cause of the partial response.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:36:52.338735Z"
+    },
+    {
+      "id": "035ff929-e1ba-498a-8e5d-c92f865cf4fe",
+      "content_id": "0858f726-7a98-49bb-96ae-0a7d856ae3db",
+      "claim_id": "C113",
+      "claim": "Ancestral reconstruction is based on probabilistic inference, and a single amino acid modification (I vs M at position 208) can entirely compromise the SI response.",
+      "claim_type": "EXPLICIT",
+      "source": "Ancestral reconstruction is based on probabilistic inference, and our results show that a single amino acid modification (I vs M at position 208) can entirely compromise the SI response.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the experimental data showing the effect of the amino acid at position 208.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:36:52.338735Z"
+    },
+    {
+      "id": "edfdfb80-9b94-4898-a475-03c9a309fdb9",
+      "content_id": "0858f726-7a98-49bb-96ae-0a7d856ae3db",
+      "claim_id": "C114",
+      "claim": "It is possible that the putative ancestral receptor had a partly diminished capacity to elicit the SI reaction because of imperfect reconstruction.",
+      "claim_type": "EXPLICIT",
+      "source": "It is therefore possible that the putative ancestral receptor had a partly diminished capacity to elicit the SI reaction because of imperfect reconstruction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about the cause of the partial response.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:36:52.338735Z"
+    },
+    {
+      "id": "5ab4fdc0-96dc-4bbb-a23e-659987c13316",
+      "content_id": "0858f726-7a98-49bb-96ae-0a7d856ae3db",
+      "claim_id": "C115",
+      "claim": "The partial response could be due to parallel changes to the SCR ligand, followed by amino acid substitutions occurring between SRKa and SRK03 to fine-tune the SRK03/SCR03 interaction.",
+      "claim_type": "EXPLICIT",
+      "source": "Alternatively, this partial response could be due to parallel changes to the SCR ligand, followed by amino acid substitutions occurring between SRKa and SRK03 to fine-tune the SRK03/SCR03 interaction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about the cause of the partial response.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:36:52.338735Z"
+    },
+    {
+      "id": "e2d8d750-a4d7-4963-abd3-6fa92f99e80f",
+      "content_id": "0858f726-7a98-49bb-96ae-0a7d856ae3db",
+      "claim_id": "C116",
+      "claim": "Resurrection of the ancestral SCRa ligand will be needed to distinguish between the possibilities for the partial response.",
+      "claim_type": "EXPLICIT",
+      "source": "Resurrection of the ancestral SCRa ligand will be needed to distinguish between these possibilities.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about future work needed.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:36:52.338735Z"
+    },
+    {
+      "id": "5655f830-57de-48e6-b2e0-d166bb3bc944",
+      "content_id": "0858f726-7a98-49bb-96ae-0a7d856ae3db",
+      "claim_id": "C117",
+      "claim": "Structural modelling of the cognate vs non-cognate complexes suggested that specificity of the receptor/ligand interaction depends on qualitative features rather than quantitative strength of the interaction.",
+      "claim_type": "EXPLICIT",
+      "source": "Structural modelling of the cognate vs non-cognate complexes suggested that specificity of the receptor/ligand interaction depends on qualitative features rather than quantitative strength of the interaction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the structural modeling analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:36:52.338735Z"
+    },
+    {
+      "id": "701d9c8e-af49-47ad-a51d-52463ea558b2",
+      "content_id": "0858f726-7a98-49bb-96ae-0a7d856ae3db",
+      "claim_id": "C118",
+      "claim": "A ligand is predicted to bind its non-cognate just as well as its cognate receptor, but it activates only the proper one by interacting with a different set of amino acid residues at the binding interface.",
+      "claim_type": "EXPLICIT",
+      "source": "In other words, a ligand is predicted to bind its non-cognate just as well as its cognate receptor, but it activates only the proper one by interacting with a different set of amino acid residues at the binding interface.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the structural modeling analysis.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:36:52.338735Z"
+    },
+    {
+      "id": "67fc6845-15f9-4500-a8bf-ff2e2281cb57",
+      "content_id": "0858f726-7a98-49bb-96ae-0a7d856ae3db",
+      "claim_id": "C119",
+      "claim": "This may point to a mechanism of allosteric activation, whereby changes in the set (rather than number) of amino acid contacts with the ligand lead to changes in the shape of the receptor.",
+      "claim_type": "EXPLICIT",
+      "source": "This may point to a mechanism of allosteric activation, whereby changes in the set (rather than number) of amino acid contacts with the ligand lead to changes in the shape of the receptor.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about the mechanism of specificity.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:36:52.338735Z"
+    },
+    {
+      "id": "f50d98d3-79fc-4042-907a-f88766515366",
+      "content_id": "0858f726-7a98-49bb-96ae-0a7d856ae3db",
+      "claim_id": "C120",
+      "claim": "Allosteric activation is important in the context of protein-protein interactions as well as of the binding of transcription factors to their DNA binding sites.",
+      "claim_type": "EXPLICIT",
+      "source": "Allosteric activation is important in the context of protein-protein interactions (Kang et al., 2015) as well as of the binding of transcription factors to their DNA binding sites (Gronemeyer and Bourguet, 2009) and may be a general feature of molecular interfaces (Ma et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to other scholarly work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:36:52.338735Z"
+    },
+    {
+      "id": "b71ca3c0-64d4-4aeb-abc1-b3936e7549d8",
+      "content_id": "0858f726-7a98-49bb-96ae-0a7d856ae3db",
+      "claim_id": "C121",
+      "claim": "The allosteric activation model suggests that only a few amino acid residues determine recognition specificity.",
+      "claim_type": "EXPLICIT",
+      "source": "In our system, the allosteric activation model suggests that only a few amino acid residues determine recognition specificity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the structural modeling analysis.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:36:52.338735Z"
+    },
+    {
+      "id": "f450c46a-d68f-4775-a42c-d193cee77364",
+      "content_id": "0858f726-7a98-49bb-96ae-0a7d856ae3db",
+      "claim_id": "C122",
+      "claim": "This can be tested by directly measuring binding affinities, following Ma et al. (2016).",
+      "claim_type": "EXPLICIT",
+      "source": "This can be tested by directly measuring binding affinities, following Ma et al. (2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about future work that can be done.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:36:52.338735Z"
+    },
+    {
+      "id": "309b8bc5-ccd5-40f3-9706-40fce28f8d75",
+      "content_id": "0858f726-7a98-49bb-96ae-0a7d856ae3db",
+      "claim_id": "C123",
+      "claim": "It will be interesting to determine experimentally whether this conclusion extends to more diverged pairs of SCR-SRK alleles.",
+      "claim_type": "EXPLICIT",
+      "source": "It will be interesting to determine experimentally whether this conclusion extends to more diverged pairs of SCR-SRK alleles, whose interactions are more common in SI systems than those between highly similar alleles studied here, because this balanced polymorphism has been maintained over a very long evolutionary time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about future work that can be done.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:36:52.338735Z"
+    },
+    {
+      "id": "db029c5c-16f6-4b98-aa73-5b56aa968ae4",
+      "content_id": "0858f726-7a98-49bb-96ae-0a7d856ae3db",
+      "claim_id": "C124",
+      "claim": "Promoters of both SRK03 and SRK28 drive GFP expression specifically in stigmatic papillae cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Promoters of both SRK03 and SRK28 drive GFP expression specifically in stigmatic papillae cells (white arrows).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the figure caption and supported by the microscopy images.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:36:52.338735Z"
+    },
+    {
+      "id": "3821d17d-366d-4f11-ace3-07866e04b0c5",
+      "content_id": "0858f726-7a98-49bb-96ae-0a7d856ae3db",
+      "claim_id": "C125",
+      "claim": "SRK expression is located between stages 11 and 14, with a strong decrease of GFP fluorescence in mature flowers (old stage 15).",
+      "claim_type": "EXPLICIT",
+      "source": "SRK expression is located between stages 11 and 14, with a strong decrease of GFP fluorescence in mature flowers (old stage 15).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the figure caption and supported by the microscopy images.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:36:52.338735Z"
+    },
+    {
+      "id": "19dd60d6-1c27-4b2b-a62e-0c5121e7e21a",
+      "content_id": "0858f726-7a98-49bb-96ae-0a7d856ae3db",
+      "claim_id": "C126",
+      "claim": "No GFP signal was observed in any other part of the plant (inflorescence stems, leaves and non-reproductive floral organs).",
+      "claim_type": "EXPLICIT",
+      "source": "No GFP signal was observed in any other part of the plant (inflorescence stems, leaves and non-reproductive floral organs, data not shown).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the figure caption.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:36:52.338735Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "2b70a689-b3b4-40f3-9392-2d9a84725378",
+      "content_id": "0858f726-7a98-49bb-96ae-0a7d856ae3db",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The S03 haplotype retained the ancestral recognition specificity while the S28 haplotype acquired a novel recognition specificity, demonstrating asymmetrical functional divergence from their common ancestor. This was shown through ancestral protein reconstruction of SRKa and functional assays in transformed A. thaliana, where SRKaIA (with isoleucine at position 208) recognized SCR03 but not SCR28 pollen.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C36, C43-C50, C60-C62, and C99 collectively provide strong experimental evidence for asymmetrical divergence. The ancestral reconstruction (C36, C51-C57), functional validation in A. thaliana (C43-C50), and pollination assays (C60-C62) demonstrate that SRKaIA responds to SCR03 but not SCR28, supporting the conclusion that S03 retained ancestral specificity while S28 diverged. The experimental design includes appropriate controls (C24 pollen) and multiple replicate lines.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:36:52.338735Z"
+    },
+    {
+      "id": "b1fd9117-7b93-47f8-b747-b5ca6019494e",
+      "content_id": "0858f726-7a98-49bb-96ae-0a7d856ae3db",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The ancestral SRK receptor sequence (SRKa) was reconstructed using phylogenetic methods with PAML codon-based models. The reconstruction had high posterior probability (>0.95) for most positions, but uncertainty at positions 208 and 305 led to generation of four ancestral variants (SRKaIA, SRKaIG, SRKaMA, SRKaMG) for experimental testing.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C57 describe a rigorous phylogenetic reconstruction approach using established methods (PAML). The authors appropriately acknowledged uncertainty at specific positions (C53-C55) and addressed this by testing multiple ancestral variants (C56-C57), which is a strength of the experimental design. The methodology is well-documented and follows best practices for ancestral sequence reconstruction.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:36:52.338735Z"
+    },
+    {
+      "id": "1ad4d10a-74e2-4d3a-af2e-0163b2cbd2e0",
+      "content_id": "0858f726-7a98-49bb-96ae-0a7d856ae3db",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "A single amino acid change from isoleucine (I) to methionine (M) at position 208 of the ancestral receptor is sufficient to almost fully inactivate recognition of SCR03. Lines with I at position 208 showed robust incompatibility reactions (12 of 14 lines), while lines with M at position 208 showed weak or no response (4 lines with weak reactions).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C64-C66 and C113 demonstrate the critical functional importance of position 208 through systematic comparison of ancestral variants. The experimental data clearly show that the amino acid identity at this single position determines receptor function, with strong quantitative differences between I and M variants. This is a well-controlled experiment that isolates the effect of a single amino acid substitution.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:36:52.338735Z"
+    },
+    {
+      "id": "f85b1d79-2c1f-4dfe-9ee5-d077f4b797dc",
+      "content_id": "0858f726-7a98-49bb-96ae-0a7d856ae3db",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Recognition specificity depends on qualitative features of the receptor-ligand interaction rather than quantitative binding strength. Structural modeling revealed that cognate and non-cognate complexes have similar total numbers of atomic contacts (1543 vs 1546 for SRK03 complexes; 1395 vs 1328 for SRK28 complexes), but differ in which specific amino acids make contact.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C73-C77, C88-C90, C117-C118 present structural modeling evidence showing that binding specificity is not determined by overall binding strength. The similar contact numbers between cognate and non-cognate complexes (C73-C74), absence of steric clashes (C75), and differences in contact patterns (C89-C90) support the conclusion that qualitative rather than quantitative features determine specificity. However, this is based on computational modeling rather than direct experimental measurement of binding affinities.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:36:52.338735Z"
+    },
+    {
+      "id": "36bc58ef-e126-406c-8d4a-d3860e02fbfe",
+      "content_id": "0858f726-7a98-49bb-96ae-0a7d856ae3db",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Six amino acid positions in eSRK showed important differences in contacts between cognate and non-cognate complexes. Four positions (S201, R220, R279, W296) are prime candidates for determining binding specificity. Notably, three positions (R220, R279, W296) are identical between SRK03 and SRK28 but interact differently with their respective ligands, suggesting that substitutions at other positions mediate their involvement through spatial displacement.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C78-C85 identify specific residues involved in differential binding through structural modeling analysis. The finding that identical residues can have different interaction patterns in different complexes (C82-C84) is particularly interesting and well-supported by the modeling data. The inference that other substitutions mediate these effects through spatial displacement (C85) is reasonable but remains a hypothesis requiring experimental validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:36:52.338735Z"
+    },
+    {
+      "id": "1214184f-83ec-45f1-9ef5-1b7eb7cff21f",
+      "content_id": "0858f726-7a98-49bb-96ae-0a7d856ae3db",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The binding properties of SRK03 remained similar to the ancestral SRKaIA, while SRK28 diverged from the ancestral state. When complexed with either SCR03 or SCR28, SRKaIA shared more interacting amino acid pairs with SRK03 (46 and 37 respectively) than with SRK28 (24 and 18 respectively), demonstrating asymmetrical structural divergence consistent with the functional data.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C86-C87, C90-C92 provide structural modeling evidence that complements the functional data on asymmetrical divergence. The quantitative comparison of shared amino acid contacts between SRKaIA and the two descendants clearly shows greater similarity to SRK03, supporting the conclusion of asymmetrical evolution. This structural analysis strengthens the main finding by providing a molecular explanation for the functional observations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:36:52.338735Z"
+    },
+    {
+      "id": "90dca53d-11ef-4954-b37a-68576d954ff7",
+      "content_id": "0858f726-7a98-49bb-96ae-0a7d856ae3db",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The results are compatible with the compensatory mutation model and one version of the progressive reinforcement model (with maintenance of ancestral specificity), but reject the dual-specificity intermediate model and the progressive reinforcement model with replacement of ancestral specificity. However, the data cannot discriminate between the compatible models regarding whether transient loss of self-recognition is required.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C100-C103 appropriately evaluate the experimental results against existing theoretical models. The rejection of certain models (C102-C103) is well-justified based on the observation that ancestral specificity (S03) remained present. The acknowledgment that the data cannot discriminate between remaining models (C101) is an honest assessment of the study's limitations. The reasoning is logically sound and properly cites relevant theoretical work.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:36:52.338735Z"
+    },
+    {
+      "id": "3c4f206e-646a-4612-b246-2af2adbf3008",
+      "content_id": "0858f726-7a98-49bb-96ae-0a7d856ae3db",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The ancestral SRKaIA recognition specificity was stably maintained along the SRK03 lineage over millions of years, demonstrating that no turnover event occurred. This provides the first direct experimental test of the hypothesis that recognition specificities remain stable rather than undergoing recurrent rapid turnover.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C105 and C110 make an important contribution by providing direct experimental evidence for long-term stability of SI specificities. The inference that no turnover occurred is well-supported by the functional data showing conservation of ancestral specificity in S03. The claim that this is the first direct test (C110) is justified given the limitations of previous trans-specific comparisons discussed in C106-C109.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:36:52.338735Z"
+    },
+    {
+      "id": "eddec65d-c27c-4ffd-9de1-98e4448d2883",
+      "content_id": "0858f726-7a98-49bb-96ae-0a7d856ae3db",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "AhSRK03 and AhSRK28 promoters drive GFP expression specifically in stigmatic papillae cells of transformed A. thaliana, with expression occurring between developmental stages 11 and 14. No GFP signal was observed in other plant tissues.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42, C124-C126 demonstrate proper tissue-specific and temporal expression of the SRK promoters in the heterologous A. thaliana system. The microscopy data (referenced in figures) support the specificity claims. This is important validation that the transgenic system recapitulates appropriate expression patterns, though it is a methodological result supporting the main findings rather than a primary conclusion.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:36:52.338735Z"
+    },
+    {
+      "id": "b43fc206-2875-44ce-95c6-3b8436ab8e26",
+      "content_id": "0858f726-7a98-49bb-96ae-0a7d856ae3db",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The incompatibility reactions involving different ancestral SRK S-domain sequences were largely independent of the sequence context (promoter and kinase domain from SRK03 vs SRK28) into which they were introduced. The amino acid at position 305 had no effect on the response.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C63-C64 demonstrate that the functional effects are attributable to the S-domain sequence rather than context effects from flanking sequences. This is important experimental validation showing that the results are robust across different genetic backgrounds. The data support that position 305 uncertainty does not affect the conclusions, while position 208 is critical.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:36:52.338735Z"
+    },
+    {
+      "id": "028030bc-b6ba-4c9c-8171-883a16ae2e96",
+      "content_id": "0858f726-7a98-49bb-96ae-0a7d856ae3db",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The SI response elicited by reconstructed SRKa was weaker and more variable than native SRK constructs. This could be due to incorrect ancestral sequence inference (given that single amino acid changes can abolish function) or to parallel changes in the SCR ligand followed by fine-tuning substitutions. Resurrection of ancestral SCRa is needed to distinguish between these possibilities.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C111-C116 acknowledge an important limitation of the study - the partial response of the ancestral receptor. While C113 provides evidence that single amino acid changes can have large effects, supporting the possibility of reconstruction error, the authors appropriately note that alternative explanations exist (C115) and that additional experiments are needed (C116). This honest assessment of uncertainty is appropriate, though it somewhat weakens the strength of conclusions about the ancestral state.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:36:52.338735Z"
+    },
+    {
+      "id": "85dd028f-1146-44c4-9f9f-5ecaf717111d",
+      "content_id": "0858f726-7a98-49bb-96ae-0a7d856ae3db",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The SRK03-SCR03 cognate complex has slightly more atomic contacts (1543) than the SRK28-SCR28 complex (1395). In both cases, the interaction interface is concentrated around three hypervariable regions of the SRK protein, consistent with previous findings in Brassica and the distribution of positively selected sites.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C71-C72 provide structural context from modeling that is consistent with prior work (Ma et al. 2016, Castric and Vekemans 2007). The concentration of contacts in hypervariable regions is expected and validates the modeling approach. This is supporting structural information rather than a novel finding.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:36:52.338735Z"
+    },
+    {
+      "id": "76d8e8fd-febc-4f54-a9b9-8ca64ae178ee",
+      "content_id": "0858f726-7a98-49bb-96ae-0a7d856ae3db",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The results may point to a mechanism of allosteric activation, where changes in the set of amino acid contacts lead to changes in receptor shape. This suggests only a few amino acid residues determine recognition specificity. This hypothesis can be tested by measuring binding affinities directly, and it will be interesting to determine if it extends to more diverged allele pairs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C119-C123 propose an allosteric activation mechanism based on the structural modeling results. While C120 cites relevant literature showing allosteric activation is important in other systems, the mechanism remains speculative for this system. The authors appropriately frame this as a hypothesis requiring further testing (C122-C123). The inference is reasonable but not directly demonstrated by the current data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:36:52.338735Z"
+    },
+    {
+      "id": "da93ffd4-da24-4076-992a-83a0a267f811",
+      "content_id": "0858f726-7a98-49bb-96ae-0a7d856ae3db",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Five transgenic lines showed very low levels of SRKa transcripts in pistils and were excluded from analysis, possibly due to positional effects common in transgenic constructs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C58 describes appropriate quality control in the experimental design. Excluding non-expressing lines is methodologically sound and the explanation of positional effects is reasonable. This is a minor methodological detail that strengthens confidence in the remaining results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:36:52.338735Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "6a0c7ffd-026e-4a93-b67a-05204d53c4de",
+      "result_id": "2b70a689-b3b4-40f3-9392-2d9a84725378"
+    },
+    {
+      "claim_id": "845eed32-0873-4a73-bc0b-058e45024874",
+      "result_id": "2b70a689-b3b4-40f3-9392-2d9a84725378"
+    },
+    {
+      "claim_id": "45f953ef-c8de-4e73-8820-725330d6ce71",
+      "result_id": "2b70a689-b3b4-40f3-9392-2d9a84725378"
+    },
+    {
+      "claim_id": "d4b7fa5b-3f51-4792-ad51-12e70e99634e",
+      "result_id": "2b70a689-b3b4-40f3-9392-2d9a84725378"
+    },
+    {
+      "claim_id": "98bb6f5b-2aa7-4d9c-93f8-e16e700cbe05",
+      "result_id": "2b70a689-b3b4-40f3-9392-2d9a84725378"
+    },
+    {
+      "claim_id": "5bc5edc6-32a9-48e8-bfe7-fabe999453a2",
+      "result_id": "2b70a689-b3b4-40f3-9392-2d9a84725378"
+    },
+    {
+      "claim_id": "d9158a1a-098b-439c-b34c-a5bb02aa5fc5",
+      "result_id": "2b70a689-b3b4-40f3-9392-2d9a84725378"
+    },
+    {
+      "claim_id": "6ca4945f-112f-4d13-9711-360de341ee0b",
+      "result_id": "2b70a689-b3b4-40f3-9392-2d9a84725378"
+    },
+    {
+      "claim_id": "8b01ec14-dc16-4e65-8e53-23029323b21b",
+      "result_id": "2b70a689-b3b4-40f3-9392-2d9a84725378"
+    },
+    {
+      "claim_id": "b7e166e7-1e6d-40b7-8e04-bcf8b09478eb",
+      "result_id": "2b70a689-b3b4-40f3-9392-2d9a84725378"
+    },
+    {
+      "claim_id": "95b5e344-b8cc-41a4-a7c4-80cf1d4d7756",
+      "result_id": "2b70a689-b3b4-40f3-9392-2d9a84725378"
+    },
+    {
+      "claim_id": "c654dfaa-1501-469b-b3fb-93b16c0c6a70",
+      "result_id": "2b70a689-b3b4-40f3-9392-2d9a84725378"
+    },
+    {
+      "claim_id": "4f6cf94a-c648-40b6-a037-2d768af1215f",
+      "result_id": "2b70a689-b3b4-40f3-9392-2d9a84725378"
+    },
+    {
+      "claim_id": "6064c600-d56d-4b49-9799-9e6fd8d75d86",
+      "result_id": "2b70a689-b3b4-40f3-9392-2d9a84725378"
+    },
+    {
+      "claim_id": "9f853aa0-802b-4ae7-bb58-aee67655e68a",
+      "result_id": "b1fd9117-7b93-47f8-b747-b5ca6019494e"
+    },
+    {
+      "claim_id": "680f815d-495b-4729-9f11-941fb9e3e0e5",
+      "result_id": "b1fd9117-7b93-47f8-b747-b5ca6019494e"
+    },
+    {
+      "claim_id": "cf2dcc61-38fe-4b30-8dd2-5e87e5a826d0",
+      "result_id": "b1fd9117-7b93-47f8-b747-b5ca6019494e"
+    },
+    {
+      "claim_id": "0fa7d47b-9c7f-4e79-9397-709b4835a68f",
+      "result_id": "b1fd9117-7b93-47f8-b747-b5ca6019494e"
+    },
+    {
+      "claim_id": "5a4c0b07-ce67-4a5b-acc3-d0c783ab1626",
+      "result_id": "b1fd9117-7b93-47f8-b747-b5ca6019494e"
+    },
+    {
+      "claim_id": "f1de97b5-32c6-4b7c-9055-9f0569b7d368",
+      "result_id": "b1fd9117-7b93-47f8-b747-b5ca6019494e"
+    },
+    {
+      "claim_id": "c55e61a7-3c53-42a4-9259-1644a6deae14",
+      "result_id": "b1fd9117-7b93-47f8-b747-b5ca6019494e"
+    },
+    {
+      "claim_id": "db2614d1-96ed-4de8-9e3c-0b2f6d9b3ed1",
+      "result_id": "b1fd9117-7b93-47f8-b747-b5ca6019494e"
+    },
+    {
+      "claim_id": "de7d56f9-b267-443c-9d66-b3be585c8da4",
+      "result_id": "b1fd9117-7b93-47f8-b747-b5ca6019494e"
+    },
+    {
+      "claim_id": "92dfb1a3-5c9a-4eed-998a-f3b2720c8efa",
+      "result_id": "1ad4d10a-74e2-4d3a-af2e-0163b2cbd2e0"
+    },
+    {
+      "claim_id": "287407c1-861e-4b2e-b9e5-a351596731fd",
+      "result_id": "1ad4d10a-74e2-4d3a-af2e-0163b2cbd2e0"
+    },
+    {
+      "claim_id": "111a0fd1-8993-46d5-b2ea-ff89c2c7f504",
+      "result_id": "1ad4d10a-74e2-4d3a-af2e-0163b2cbd2e0"
+    },
+    {
+      "claim_id": "035ff929-e1ba-498a-8e5d-c92f865cf4fe",
+      "result_id": "1ad4d10a-74e2-4d3a-af2e-0163b2cbd2e0"
+    },
+    {
+      "claim_id": "279198b5-165f-45cb-83b6-7cda2ed12e00",
+      "result_id": "f85b1d79-2c1f-4dfe-9ee5-d077f4b797dc"
+    },
+    {
+      "claim_id": "d5065dcc-c6fa-4a67-a8f9-c3b6e672e4ac",
+      "result_id": "f85b1d79-2c1f-4dfe-9ee5-d077f4b797dc"
+    },
+    {
+      "claim_id": "15b40e9e-3b63-4aae-bef6-03d191dadbb2",
+      "result_id": "f85b1d79-2c1f-4dfe-9ee5-d077f4b797dc"
+    },
+    {
+      "claim_id": "6e41e62c-945c-4f1a-bd12-37df1b645b03",
+      "result_id": "f85b1d79-2c1f-4dfe-9ee5-d077f4b797dc"
+    },
+    {
+      "claim_id": "4de22b4f-0dbe-4a98-aee2-9dcc7ef8a986",
+      "result_id": "f85b1d79-2c1f-4dfe-9ee5-d077f4b797dc"
+    },
+    {
+      "claim_id": "033ab264-c369-4846-921a-cd7273f446e7",
+      "result_id": "f85b1d79-2c1f-4dfe-9ee5-d077f4b797dc"
+    },
+    {
+      "claim_id": "b62be21c-b7e6-4c28-b3ab-29a23a4677a9",
+      "result_id": "f85b1d79-2c1f-4dfe-9ee5-d077f4b797dc"
+    },
+    {
+      "claim_id": "542e73a3-736c-4d1c-9398-2b54a6b3080d",
+      "result_id": "f85b1d79-2c1f-4dfe-9ee5-d077f4b797dc"
+    },
+    {
+      "claim_id": "31624f73-1d19-44c0-ab74-b7055d55affe",
+      "result_id": "f85b1d79-2c1f-4dfe-9ee5-d077f4b797dc"
+    },
+    {
+      "claim_id": "5655f830-57de-48e6-b2e0-d166bb3bc944",
+      "result_id": "f85b1d79-2c1f-4dfe-9ee5-d077f4b797dc"
+    },
+    {
+      "claim_id": "701d9c8e-af49-47ad-a51d-52463ea558b2",
+      "result_id": "f85b1d79-2c1f-4dfe-9ee5-d077f4b797dc"
+    },
+    {
+      "claim_id": "01564c69-1acf-4823-a624-9ea6bc228f6d",
+      "result_id": "36bc58ef-e126-406c-8d4a-d3860e02fbfe"
+    },
+    {
+      "claim_id": "6fa6cf82-a5c1-42a4-8e39-3f2c431a9848",
+      "result_id": "36bc58ef-e126-406c-8d4a-d3860e02fbfe"
+    },
+    {
+      "claim_id": "cee78d75-4445-4a72-a93d-4ee2d924b05d",
+      "result_id": "36bc58ef-e126-406c-8d4a-d3860e02fbfe"
+    },
+    {
+      "claim_id": "7cec8bd8-407d-48ac-ace3-ae56b688350f",
+      "result_id": "36bc58ef-e126-406c-8d4a-d3860e02fbfe"
+    },
+    {
+      "claim_id": "561c1538-5dac-4230-a40d-b1e409fe9fa3",
+      "result_id": "36bc58ef-e126-406c-8d4a-d3860e02fbfe"
+    },
+    {
+      "claim_id": "3fc3dee9-22b5-4cd5-9753-39f1daa79c58",
+      "result_id": "36bc58ef-e126-406c-8d4a-d3860e02fbfe"
+    },
+    {
+      "claim_id": "0fcecd15-0bd3-4614-b8c1-9ad6279ced4c",
+      "result_id": "36bc58ef-e126-406c-8d4a-d3860e02fbfe"
+    },
+    {
+      "claim_id": "33fa2626-058f-40f3-b345-cd679cd72217",
+      "result_id": "36bc58ef-e126-406c-8d4a-d3860e02fbfe"
+    },
+    {
+      "claim_id": "f6b7a148-ecca-412b-b7db-f89bab57290d",
+      "result_id": "1214184f-83ec-45f1-9ef5-1b7eb7cff21f"
+    },
+    {
+      "claim_id": "1de31cd2-8fb9-4758-809c-386feb895cad",
+      "result_id": "1214184f-83ec-45f1-9ef5-1b7eb7cff21f"
+    },
+    {
+      "claim_id": "31624f73-1d19-44c0-ab74-b7055d55affe",
+      "result_id": "1214184f-83ec-45f1-9ef5-1b7eb7cff21f"
+    },
+    {
+      "claim_id": "09fae3ec-a282-4399-914d-c1d68bf0708d",
+      "result_id": "1214184f-83ec-45f1-9ef5-1b7eb7cff21f"
+    },
+    {
+      "claim_id": "8e1e8309-a9a7-4b4a-b922-0ae6f54a2ce5",
+      "result_id": "1214184f-83ec-45f1-9ef5-1b7eb7cff21f"
+    },
+    {
+      "claim_id": "67b59ded-ac51-4328-b0f3-fec8d5f69eba",
+      "result_id": "90dca53d-11ef-4954-b37a-68576d954ff7"
+    },
+    {
+      "claim_id": "7f2acfeb-7a40-4778-b1db-6fb07bc5a5c6",
+      "result_id": "90dca53d-11ef-4954-b37a-68576d954ff7"
+    },
+    {
+      "claim_id": "85943315-57a9-4df4-a95d-02e716cdf86f",
+      "result_id": "90dca53d-11ef-4954-b37a-68576d954ff7"
+    },
+    {
+      "claim_id": "3682cda1-1443-47fa-a3e0-5e92ae3be1d3",
+      "result_id": "90dca53d-11ef-4954-b37a-68576d954ff7"
+    },
+    {
+      "claim_id": "311df506-afa4-43f5-89ca-d872bb8accf3",
+      "result_id": "3c4f206e-646a-4612-b246-2af2adbf3008"
+    },
+    {
+      "claim_id": "43e8efff-23d6-4a9a-807f-98f3f14345ef",
+      "result_id": "3c4f206e-646a-4612-b246-2af2adbf3008"
+    },
+    {
+      "claim_id": "94c2c05b-255b-4d3e-be94-9d5df6770e3f",
+      "result_id": "eddec65d-c27c-4ffd-9de1-98e4448d2883"
+    },
+    {
+      "claim_id": "db029c5c-16f6-4b98-aa73-5b56aa968ae4",
+      "result_id": "eddec65d-c27c-4ffd-9de1-98e4448d2883"
+    },
+    {
+      "claim_id": "3821d17d-366d-4f11-ace3-07866e04b0c5",
+      "result_id": "eddec65d-c27c-4ffd-9de1-98e4448d2883"
+    },
+    {
+      "claim_id": "19dd60d6-1c27-4b2b-a62e-0c5121e7e21a",
+      "result_id": "eddec65d-c27c-4ffd-9de1-98e4448d2883"
+    },
+    {
+      "claim_id": "eb432556-db52-4c06-9a61-2ffcfb5938b6",
+      "result_id": "b43fc206-2875-44ce-95c6-3b8436ab8e26"
+    },
+    {
+      "claim_id": "92dfb1a3-5c9a-4eed-998a-f3b2720c8efa",
+      "result_id": "b43fc206-2875-44ce-95c6-3b8436ab8e26"
+    },
+    {
+      "claim_id": "21ed938e-e1e6-44fb-9cb6-f48f84bdcb20",
+      "result_id": "028030bc-b6ba-4c9c-8171-883a16ae2e96"
+    },
+    {
+      "claim_id": "eecc54ae-31c9-45a1-a384-1be2e130e7c7",
+      "result_id": "028030bc-b6ba-4c9c-8171-883a16ae2e96"
+    },
+    {
+      "claim_id": "035ff929-e1ba-498a-8e5d-c92f865cf4fe",
+      "result_id": "028030bc-b6ba-4c9c-8171-883a16ae2e96"
+    },
+    {
+      "claim_id": "edfdfb80-9b94-4898-a475-03c9a309fdb9",
+      "result_id": "028030bc-b6ba-4c9c-8171-883a16ae2e96"
+    },
+    {
+      "claim_id": "5ab4fdc0-96dc-4bbb-a23e-659987c13316",
+      "result_id": "028030bc-b6ba-4c9c-8171-883a16ae2e96"
+    },
+    {
+      "claim_id": "e2d8d750-a4d7-4963-abd3-6fa92f99e80f",
+      "result_id": "028030bc-b6ba-4c9c-8171-883a16ae2e96"
+    },
+    {
+      "claim_id": "0e056a79-20be-4d03-ba5e-009505ae42cb",
+      "result_id": "85dd028f-1146-44c4-9f9f-5ecaf717111d"
+    },
+    {
+      "claim_id": "f45c5d33-268d-4bce-96a1-d225d3d35327",
+      "result_id": "85dd028f-1146-44c4-9f9f-5ecaf717111d"
+    },
+    {
+      "claim_id": "67fc6845-15f9-4500-a8bf-ff2e2281cb57",
+      "result_id": "76d8e8fd-febc-4f54-a9b9-8ca64ae178ee"
+    },
+    {
+      "claim_id": "f50d98d3-79fc-4042-907a-f88766515366",
+      "result_id": "76d8e8fd-febc-4f54-a9b9-8ca64ae178ee"
+    },
+    {
+      "claim_id": "b71ca3c0-64d4-4aeb-abc1-b3936e7549d8",
+      "result_id": "76d8e8fd-febc-4f54-a9b9-8ca64ae178ee"
+    },
+    {
+      "claim_id": "f450c46a-d68f-4775-a42c-d193cee77364",
+      "result_id": "76d8e8fd-febc-4f54-a9b9-8ca64ae178ee"
+    },
+    {
+      "claim_id": "309b8bc5-ccd5-40f3-9706-40fce28f8d75",
+      "result_id": "76d8e8fd-febc-4f54-a9b9-8ca64ae178ee"
+    },
+    {
+      "claim_id": "f17b0d5e-8c83-46ea-a2f2-4848766d65e3",
+      "result_id": "da93ffd4-da24-4076-992a-83a0a267f811"
+    }
+  ],
+  "comparisons": []
+}

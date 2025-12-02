@@ -1,0 +1,1821 @@
+{
+  "submission": {
+    "id": "76e62e81-4f22-4b72-b8fb-6072ddb34559",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T12:44:01.906527Z",
+    "updated_at": "2025-12-02T12:44:01.906527Z"
+  },
+  "content": [
+    {
+      "id": "a3b066cf-5ee8-4fde-bd1f-02d5f088c9ac",
+      "submission_id": "76e62e81-4f22-4b72-b8fb-6072ddb34559",
+      "content_type": "manuscript",
+      "content_text": "# \u03b2-blockers augment L-type Ca2+ channel activity by targeting spatially restricted \u03b22AR signaling in neurons\n\n## Authors\n\n- Ao Shen<sup>1</sup> ([ORCID: 0000-0002-1559-3895](https://orcid.org/0000-0002-1559-3895))\n- Dana Chen<sup>2</sup>\n- Manpreet Kaur<sup>2</sup>\n- Peter Bartels<sup>2</sup>\n- Bing Xu<sup>2</sup>\n- Qian Shi<sup>2</sup>\n- Joseph M Martinez<sup>2</sup>\n- Kwun-nok Mimi Man<sup>2</sup>\n- Madeline Nieves-Cintron<sup>2</sup>\n- Johannes W Hell<sup>2</sup> ([ORCID: 0000-0001-7960-7531](https://orcid.org/0000-0001-7960-7531))\n- Manuel F Navedo<sup>2</sup> ([ORCID: 0000-0001-6864-6594](https://orcid.org/0000-0001-6864-6594))\n- Xi-Yong Yu<sup>1</sup>\n- Yang K Xiang<sup>2</sup> ([ORCID: 0000-0003-1786-9143](https://orcid.org/0000-0003-1786-9143)) \u2020\n\n### Affiliations\n\n1. Key Laboratory of Molecular Target and Clinical Pharmacology, State Key Laboratory of Respiratory Disease, School of Pharmaceutical Sciences & the Fifth Affiliated Hospital Guangzhou Medical University Guangzhou China\n2. Department of Pharmacology University of California Davis Davis United States\n3. VA Northern California Health Care System Mather United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nG protein-coupled receptors (GPCRs) transduce pleiotropic intracellular signals in mammalian cells. Here, we report neuronal excitability of \u03b2-blockers carvedilol and alprenolol at clinically relevant nanomolar concentrations. Carvedilol and alprenolol activate \u03b22AR, which promote G protein signaling and cAMP/PKA activities without action of G protein receptor kinases (GRKs). The cAMP/PKA activities are restricted within the immediate vicinity of activated \u03b22AR, leading to selectively enhance PKA-dependent phosphorylation and stimulation of endogenous L-type calcium channel (LTCC) but not AMPA receptor in rat hippocampal neurons. Moreover, we have engineered a mutant \u03b22AR that lacks the catecholamine binding pocket. This mutant is preferentially activated by carvedilol but not the orthosteric agonist isoproterenol. Carvedilol activates the mutant \u03b22AR in mouse hippocampal neurons augmenting LTCC activity through cAMP/PKA signaling. Together, our study identifies a mechanism by which \u03b2-blocker-dependent activation of GPCRs promotes spatially restricted cAMP/PKA signaling to selectively target membrane downstream effectors such as LTCC in neurons.\n\n## Introduction\n\nGPCRs often signal not only through canonical G proteins but also through noncanonical G protein-independent signaling, frequently via G protein receptor kinases (GRKs) and \u03b2-arrestins (Lefkowitz, 2000; Xiang and Kobilka, 2003). One of the universal features of GPCRs is that they undergo ligand-induced phosphorylation at different sites by either GRKs or second messenger dependent protein kinases such as protein kinase A (PKA). The phosphorylated GPCRs thus may present distinct structural features that favor receptor binding to different signaling partners, engaging distinct downstream signaling cascades (Reiter and Lefkowitz, 2006; Lefkowitz, 2007; Nobles et al., 2011). Some ligands can differentially activate a GPCR via a phenomenon known as functional selectivity or biased signaling (Wisler et al., 2014; Zweemer et al., 2014). For example, stimulation of \u03b22\u00a0adrenergic receptor (\u03b22AR), a prototypical GPCR involved in memory and learning in the central nervous system (CNS) and regulation of metabolism and cardiovascular function, promotes phosphorylation by both GRKs and PKA (Najafi et al., 2016; Mammarella et al., 2016; Fu et al., 2017; Matera et al., 2018). We have recently identified spatially segregated subpopulations of \u03b22AR undergoing exclusive phosphorylation by GRKs or PKA in a single cell. These findings indicate specific GPCR subpopulation-based signaling branches can co-exist in a single cell (Shen et al., 2018). GRK-mediated phosphorylation promotes pro-survival and cell growth signaling via \u03b2-arrestin-dependent mitogen-activated protein kinase (MAPK/ERK) pathways, prompting the search for biased ligands that preferentially activate \u03b2-arrestin pathways (Luttrell et al., 1999; Pierce et al., 2000; Kim et al., 2005; Ren et al., 2005; Zidar et al., 2009; Choi et al., 2018). On the other hand, our recent studies show that the cAMP/PKA-dependent phosphorylation of \u03b22AR controls ion channel activity at the plasma membrane in primary hippocampal neurons (Shen et al., 2018).\n\n\u03b2-blockers are thought to reduce cAMP signaling because they either reduce basal activity of \u03b2ARs or block agonist-induced receptor activation. While \u03b2-blockers are successful in clinical therapies of a broad range of diseases, their utility is limited by side effects in both the CNS and peripheral tissues (Bakris, 2009; Gorre and Vandekerckhove, 2010). Indeed, studies have revealed that some \u03b2-blockers display partial agonism and can promote receptor-Gs coupling at high concentrations in vitro (Yao et al., 2009; DeVree et al., 2016; Gregorio et al., 2017). Accordingly, some \u03b2-blockers display intrinsic properties mimicking sympathetic activation (sympathomimetic \u03b2-blockers) (Maack et al., 2000; Brixius et al., 2001; Larochelle et al., 2014). The mechanism remains poorly understood because classic cAMP assay do not show even minimal cAMP signal induced by these \u03b2-blockers (Maack et al., 2000; Brixius et al., 2001).\n\nIn this study, we show that the \u03b2-blockers carvedilol and alprenolol can promote Gs protein coupling to \u03b22AR and cAMP/PKA but not GRK activity at nanomolar concentrations. Thus, these \u03b2-blockers are emerging as partial agonists even at low concentrations rather than strict antagonists in mammalian cells. This cAMP/PKA signaling is spatially restricted, selectively promoting phosphorylation of \u03b22AR and CaV1.2 by PKA which augments LTCC activity in primary hippocampal neurons. Furthermore, we have engineered a mutant \u03b22AR that can be selectively activated by carvedilol but not by the orthosteric agonist isoproterenol (ISO) to stimulate PKA but not GRK. Together, these studies identify a unique mechanism by which \u03b2-blockers activate \u03b22AR at low concentrations, which promotes Gs/cAMP/PKA signaling branch and selectively targets downstream LTCC channels in neurons. This observation may also explain sympathomimetic effects of \u03b2-blockers in the CNS.\n\n## Results\n\n### Carvedilol and alprenolol selectively promote \u03b22AR-mediated PKA-phosphorylation of \u03b22AR\n\nIn this study, we applied two sets of well-characterized phospho-specific antibodies, anti-pS261/262 and anti-pS355/356 to examine a series of \u03b2-blockers for their effects on the phosphorylation of \u03b22AR at its PKA and GRKs sites, respectively (Shen et al., 2018; Tran et al., 2004; Tran et al., 2007). We found that various \u03b2-blockers including alprenolol (ALP), carvedilol (CAR), propranolol (PRO) and CGP12177 (177) were able to stimulate phosphorylation of \u03b22AR at PKA sites expressed in HEK293 cells, similar to the \u03b2AR agonist isoproterenol (ISO) (Figure 1A and Figure 1\u2014figure supplement 1A). In contrast, other \u03b2-blockers, that\u00a0is ICI118551 (ICI), timolol (TIM) and metoprolol (MET), were not able to do so (Figure 1A). The ligand-induced phosphorylation of \u03b22AR was blocked by \u03b22AR-specific antagonist ICI but not \u03b21AR-specific antagonist CGP20712A (CGP) (Figure 1B and C, and Figure 1\u2014figure supplement 1B and C). We chose CAR and ALP for further study. We found that CAR and ALP promoted phosphorylation of \u03b22AR by PKA even at nanomolar concentrations (Figure 2A and B, and Figure 2\u2014figure supplement 1A and B), which was paralleled by concentration-dependent increases in phosphorylation of ERK (Figure 2\u2014figure supplement 2). The roles of \u03b22AR and PKA in this phenomenon were confirmed by inhibition of \u03b22AR with ICI and inhibition of PKA with H89, respectively (Figure 2C and D, and Figure 2\u2014figure supplement 1C and D). In contrast, those \u03b2-blockers induced at best minimal increases in phosphorylation of \u03b22AR at GRK sites and only at high concentrations, consistent with a previous report (Wisler et al., 2007) (Figure 1A and Figure 2\u2014figure supplement 3). As positive control, the \u03b2AR agonist ISO promoted robust increases in both PKA and GRK phosphorylation of the receptors at different concentrations ranging from nanomolar to micromolar (Figures 1 and 2, and Figure 2\u2014figure supplements 2 and 3). In the CNS, \u03b22AR emerges as a prevalent postsynaptic norepinephrine effector at glutamatergic synapses (Davare et al., 2001; Joiner et al., 2010; Wang et al., 2010; Qian et al., 2012). Consistent with the data from HEK293 cells, we found \u03b2-blockers CAR and ALP activated \u03b22AR and promoted phosphorylation of the receptor by PKA in hippocampal neurons (Figure 2E). Together, these data suggest that certain \u03b2-blockers selectively promote PKA phosphorylation of \u03b22AR in HEK293 and primary hippocampal neurons.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/49464/elife-49464-fig1-v3.jpg)\n\n**Figure 1.:** HEK293 cells stably expressing FLAG-tagged \u03b22AR were either directly stimulated for 5 min with the \u03b2AR agonist ISO or different \u03b2-blockers at indicated concentrations (A) n\u00a0=\u00a04), or pretreated for 15 min with 1 \u03bcM \u03b21AR antagonist CGP20712A (B) n\u00a0=\u00a05) or 10 \u03bcM \u03b22AR antagonist ICI118551 (C) n\u00a0=\u00a04) before the treatment. The phosphorylation of \u03b22AR on its PKA and GRK sites were determined with phospho-specific antibodies, and signals were normalized to total \u03b22AR detected with anti-FLAG antibody. NT, no treatment; ISO, isoproterenol; TIM, timolol; ALP, alprenolol; CAR, carvedilol; ICI, ICI118551; PRO, propranolol; MET, metoprolol; 177, CGP12177; CGP, CGP20712A. Error bars denote s.e.m., P values are computed by one-way ANOVA followed by Tukey\u2019s test between NT and other groups.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/49464/elife-49464-fig1-figsupp1-v3.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Uncropped blots corresponding to Figure 1A. (B) Uncropped blots corresponding to Figure 1B. (C) Uncropped blots corresponding to Figure 1C. Red box indicates the crop region displayed in main figure.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/49464/elife-49464-fig2-v3.jpg)\n\n**Figure 2.:** HEK293 cells stably expressing FLAG-tagged \u03b22AR were treated with increasing concentrations of CAR (A) n\u00a0=\u00a04) and ALP (B) n\u00a0=\u00a03), or pretreated for 15 min with 10 \u03bcM \u03b22AR antagonist ICI118551 (C) n\u00a0=\u00a04) and PKA inhibitor H89 (D) n\u00a0=\u00a03) before stimulated with 1 \u03bcM\u00a0indicated drugs for 5 min. The phosphorylation of \u03b22AR on its PKA and GRK sites were determined with phospho-specific antibodies, and signals were normalized to total \u03b22AR detected with anti-FLAG antibody. Experiments were performed in the presence of 1 \u03bcM \u03b21AR-selective antagonist CGP20712A to block endogenous \u03b21AR signaling. NT, no treatment; ISO, isoproterenol; ALP, alprenolol; CAR, carvedilol; ICI, ICI118551. Error bars denote s.e.m., P values are computed by one-way ANOVA followed by Tukey\u2019s test between NT and other groups. (E) Rat hippocampal neurons expressing \u03b22AR were treated for 5 min with 10 nM or 1 \u03bcM indicated drugs on 12 days in vitro (DIV), and immuno-stained for PKA-phosphorylated \u03b22AR. Confocal images show PKA-phosphorylated \u03b22AR in agonist- or \u03b2-blocker-stimulated neurons have similar distribution. Scale bar, 10 \u03bcm. Representative of 6 images for each condition, three experiments.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/49464/elife-49464-fig2-figsupp1-v3.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Uncropped blots corresponding to Figure 2A. (B) Uncropped blots corresponding to Figure 2B. (C) Uncropped blots corresponding to Figure 2C. (D) Uncropped blots corresponding to Figure 2D. Red box indicates the crop region displayed in main figure.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/49464/elife-49464-fig2-figsupp2-v3.jpg)\n\n**Figure 2\u2014figure supplement 2.:** HEK293 cells stably expressing FLAG-tagged \u03b22AR were stimulated by isoproterenol (ISO) or carvedilol (CAR) for 30 min with indicated concentrations. Cell lysates were analyzed for PKA-phosphorylated \u03b22AR, GRK-phosphorylated \u03b22AR, total \u03b22AR, pERK, and total ERK by western blot. P values are computed by one-way ANOVA followed by Tukey\u2019s test between NT and other groups. Data are the mean\u00a0\u00b1\u00a0s.e.m. of three experiments.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/49464/elife-49464-fig2-figsupp3-v3.jpg)\n\n**Figure 2\u2014figure supplement 3.:** HEK293 cells stably expressing FLAG-tagged \u03b22AR were stimulated by 1 \u03bcM isoproterenol (ISO) or carvedilol (CAR) for indicated times. Cell lysates were analyzed for PKA-phosphorylated \u03b22AR, GRK-phosphorylated \u03b22AR, total \u03b22AR by western blot. P values are computed by one-way ANOVA followed by Tukey\u2019s test between NT and other groups. Data are the mean\u00a0\u00b1\u00a0s.e.m. of four experiments.\n\n### Carvedilol and alprenolol promote Gs\u03b1 recruitment to \u03b22AR and increase spatially restricted cAMP signal\n\nThe western blot data on PKA phosphorylation of \u03b22AR indicates a stimulation of the receptor-mediated Gs/AC/cAMP pathway by these \u03b2-blockers. We measured ligand-induced Gs\u03b1 recruitment to \u03b22AR with an in situ proximity ligation assay (PLA), which allows direct visualization and quantification of protein-protein interactions. We showed that ISO, CAR and ALP were able to increase the PLA signals between \u03b22AR and Gs\u03b1, indicating recruitment of Gs\u03b1 to \u03b22AR (Figure 3A). As control, TIM had no effect on the recruitment of Gs\u03b1 to \u03b22ARs. The role of Gs/AC in CAR-induced PKA phosphorylation of \u03b22AR was further validated by AC-specific inhibition with 2',5'-dideoxyadenosine (ddA, Figure 3\u2014figure supplement 1). These data indicate that CAR and ALP are able to stimulate \u03b22AR-Gs signal to increase PKA phosphorylation of the receptor.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/49464/elife-49464-fig3-v3.jpg)\n\n**Figure 3.:** (A) HEK293 cells co-expressing FLAG-tagged \u03b22AR, HA-tagged Gs\u03b1 and EGFP were stimulated with 100 nM ISO or indicated \u03b2-blockers for 5 min. In proximity ligation assay (PLA), cells were immuno-stained with HA and \u03b22AR antibody, nuclei were counterstained with DAPI. The green EGFP signal represents transfected cells, and red PLA signal represents Gs\u03b1 and \u03b22AR interactions. Carvedilol and alprenolol promoted Gs\u03b1 recruitment to \u03b22AR, but timolol could not. Scale bar, 10 \u03bcm. Representative of n\u00a0=\u00a015, 16, 16, 17, 18 and 18 images respectively, three experiments. (B\u2013C) HEK293 cells expressing ICUE3 biosensor were treated with 1 \u03bcM ISO or indicated \u03b2-blockers (B), or together with 100 \u03bcM phosphodiesterase inhibitor IBMX (C). (D\u2013E) HEK293 cells expressing \u03b22AR-ICUE3 biosensor were treated with indicated concentration of ISO or \u03b2-blockers. In some cases, cells were pretreated for 30 min with the \u03b22AR antagonist ICI (10 \u03bcM) or the adenylate cyclase inhibitor ddA (50 \u03bcM) before adding \u03b2-blockers. Changes in ICUE3 FRET ratio (an indication of cAMP activity) were measured. Experiments were performed in the presence of 1 \u03bcM \u03b21AR-selective antagonist CGP20712A to block endogenous \u03b21AR signaling. Mock, no primary antibody; NT, no treatment; ISO, isoproterenol; TIM, timolol; ALP, alprenolol; CAR, carvedilol; ICI, ICI118551; PRO, propranolol; MET, metoprolol; 177, CGP12177, IBMX, 3-isobutyl-1-methylxanthine; ddA, 2',5'-dideoxyadenosine. Each dot in the scatter dot plot in B\u2013E represents a value from an individual tested cell. Error bars denote s.e.m., P values are computed by one-way ANOVA followed by Tukey\u2019s test between NT (A) or TIM (B\u2013E) and other groups.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/49464/elife-49464-fig3-figsupp1-v3.jpg)\n\n**Figure 3\u2014figure supplement 1.:** HEK293 cells stably expressing FLAG-tagged \u03b22AR were pretreated with the Gi inhibitor pertussis toxin (PTX, 200 ng/ml, 16 hr) or the adenylate cyclase inhibitor 2',5'-dideoxyadenosine (ddA, 50 \u03bcM, 30 min) and then stimulated with 100 nM isoproterenol (ISO) or carvedilol (CAR) for 5 min. The phosphorylation levels of \u03b22AR on its PKA and GRK sites were determined with phospho-specific antibodies, and signals were normalized to total \u03b22AR detected with anti-FLAG antibody. Experiments were performed in the presence of 1 \u03bcM \u03b21AR-selective antagonist CGP20712A to block endogenous \u03b21AR signaling. P values are computed by one-way ANOVA followed by Tukey\u2019s test between no drug (ND) and other drugs within the same group. Data are the mean\u00a0\u00b1\u00a0s.e.m. of three experiments.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/49464/elife-49464-fig3-figsupp2-v3.jpg)\n\n**Figure 3\u2014figure supplement 2.:** The cAMP biosensor ICUE3 and FLAG-\u03b22AR were co-expressed in HEK293 cells. Cells were treated with 100 nM \u03b2AR agonist ISO or different \u03b2-blockers, and changes in cAMP FRET ratio were measured. In some cases, cells were pretreated for 30 min with the \u03b22AR antagonist ICI (10 \u03bcM) or the adenylate cyclase inhibitor ddA (50 \u03bcM) before adding \u03b2-blockers. Experiments were performed in the presence of 1 \u03bcM \u03b21AR-selective antagonist CGP20712A to block endogenous \u03b21AR signaling. ISO, isoproterenol; TIM, timolol; ALP, alprenolol; CAR, carvedilol; ICI, ICI118551; PRO, propranolol; MET, metoprolol; 177, CGP12177; ddA, 2',5'-dideoxyadenosine. Each dot in the scatter dot plot represents a value from an individual tested cell. Error bars denote s.e.m. P values are computed by one-way ANOVA followed by Tukey\u2019s test between TIM and other groups.\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/49464/elife-49464-fig3-figsupp3-v3.jpg)\n\n**Figure 3\u2014figure supplement 3.:** HEK293 cells expressing either CAAX-ICUE3 targeted to non-rafts regions of the plasma membrane (A) or LYN-ICUE3 targeted to rafts regions of the plasma membrane (B) were treated with 1 \u03bcM ISO or indicated \u03b2-blockers. Changes in ICUE3 FRET ratio (an indication of cAMP activity) were measured. Carvedilol- and alprenolol-induced cAMP could be detected neither by CAAX-ICUE3 nor LYN-ICUE3. ISO, isoproterenol; TIM, timolol; ALP, alprenolol; CAR, carvedilol; ICI, ICI118551; PRO, propranolol; MET, metoprolol; 177, CGP12177. Each dot in the scatter dot plot represents a value from an individual tested cell. Error bars denote s.e.m., P values are computed by one-way ANOVA followed by Tukey\u2019s test between TIM and other groups.\n\n\u03b2-blockers have been thought to generally block \u03b22AR-induced cAMP signal. We hypothesized that the cAMP signal induced by \u03b2-blockers is restricted to local plasma membrane domains containing activated receptor, which is not detectable with traditional cAMP assays likely due to limited sensitivity. We applied the highly sensitive FRET-based biosensor ICUE3 to detect the dynamics of cAMP signal in living cells (DiPilato and Zhang, 2009; De Arcangelis et al., 2009). The full agonist ISO promoted cAMP signal in HEK293 cells while all \u03b2-blockers failed to do so (Figure 3B), in agreement with the classic definition of \u03b2-blockers. However, when cells were treated with non-selective phosphodiesterase (PDE) inhibitor IBMX, CAR, ALP and CGP12177 were able to induce small but significant cAMP signal in HEK293 cells (Figure 3C), indicating a role of PDE in suppressing and restricting the distribution of cAMP in the cells. When \u03b22AR was exogenously expressed in HEK293 cells, CAR and ALP were able to induce cAMP signal in HEK293 cells even without PDE inhibition (Figure 3\u2014figure supplement 2), probably due to insufficient cAMP-hydrolytic activity of endogenous PDEs to counter cAMP production induced from overexpressed \u03b22AR. We then engineered a targeted cAMP biosensor by fusing the biosensor ICUE3 to the C-terminus of \u03b22AR (\u03b22AR-ICUE3), aiming to detect increases of cAMP within the local domain of the receptor. CAR and ALP promoted cAMP signals within the immediate vicinity of activated \u03b22AR even at nanomolar concentrations (Figure 3D and E). The local increases of cAMP were abolished by inhibition of \u03b22AR with ICI or inhibition of ACs with ddA (Figure 3E). We also used two generic plasma membrane (PM) targeted ICUE3 sensors to further characterize how the CAR and ALP generated cAMP signals are localized when compared to the full agonist ISO. Interestingly, neither CAAX-ICUE3 targeting to the non-rafts regions of PM nor LYN-ICUE3 targeting to the rafts regions of PM could sense cAMP induced by CAR and ALP, while ISO induced cAMP were readily detectable on PM (Figure 3\u2014figure supplement 3), this further demonstrates that CAR and ALP only promote cAMP within the immediate vicinity of \u03b22AR. These data confirm that CAR and ALP promote cAMP/PKA activity within the immediate vicinity of activated \u03b22AR, in contrast to the broad distribution of cAMP/PKA activities induced by ISO in the cells.\n\n### Carvedilol augments the endogenous \u03b22AR-dependent PKA phosphorylation of CaV1.2 and its channel activity in hippocampal neurons\n\nLocal cAMP signals possess the potential to selectively regulate downstream effectors in receptor complexes or within the vicinity of activated receptors. In the CNS, \u03b22AR emerges as a prevalent postsynaptic norepinephrine effector at glutamatergic synapses, where \u03b22AR functionally interacts with AMPA receptor (AMPAR) and L-type Ca2+ channel (LTCC) CaV1.2, and regulates neuronal excitability and synaptic plasticity (Davare et al., 2001; Joiner et al., 2010; Wang et al., 2010; Qian et al., 2012). CAR and ALP, but not TIM significantly increased PKA phosphorylation of S1928 and S1700 of central \u03b111.2 subunit of CaV1.2 in hippocampal neurons when both \u03b22AR and LTCC were endogenously expressed (Figure 4A, and Figure 4\u2014figure supplement 1A). However, CAR and ALP failed to promote phosphorylation of the AMPAR subunit GluA1 on its PKA site serine 845 (Figure 4B, and Figure 4\u2014figure supplement 1B). Like CaV1.2, AMPARs are associated with \u03b22AR, Gs, AC and PKA (Davare et al., 2001; Joiner et al., 2010; Wang et al., 2010; Qian et al., 2012). These results indicate high selectivity in targeting downstream substrates by this \u03b2-blocker-induced signaling in hippocampal neurons. Meanwhile, the CAR and ALP-induced PKA phosphorylation of LTCC were blocked by \u03b22AR inhibitor ICI, AC inhibitor ddA, and PKA inhibitor H89, but not CaMKII inhibitor KN93, validating the activation of \u03b22AR-cAMP-PKA pathway (Figure 4C, and Figure 4\u2014figure supplement 1C). We then examined the effects of CAR on PKA-dependent activation of LTCC CaV1.2 channels using cell-attached single channel recordings in hippocampal neurons. As shown before, ISO stimulates LTCC activity (Figure 5) (Shen et al., 2018; Davare et al., 2001). Consistent with the phosphorylation data, CAR but not TIM significantly increased the open probability, channel availability and mean ensemble average of endogenous LTCC in rat hippocampal neurons (Figure 5 and Figure 5\u2014figure supplement 1). CAR stimulated channel activity when present in the patch pipette solution but not when applied outside the patch via bath perfusion (Figure 5 and Figure 5\u2014figure supplement 1D). Moreover, backfilling experiments with CAR found that L-type channels activity was relatively low at the beginning of the recording but then it significantly increased as the drug diffused to the pipette tip (Figure 5F\u2013G and Figure 5\u2014figure supplement 1C). Consistent with our hypothesis and prior studies (Davare et al., 2001), ISO applied outside the patch via bath perfusion was still able to stimulate LTCC activity (Figure 5\u2014figure supplement 1B). These data indicate that CAR promotes spatially restricted cAMP/PKA activities for selective augmentation of LTCC activities in neurons. We further found that the activation of LTCC by CAR promoted cell death in cortical neuron cultures, and inhibition of \u03b22AR or LTCC counteracted carvedilol-induced neuronal toxicities (Figure 5\u2014figure supplement 2).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/49464/elife-49464-fig4-v3.jpg)\n\n**Figure 4.:** (A) Rat neurons on 10\u201314 days in vitro (DIV) were treated for 5 min with 1 \u03bcM indicated drugs. The phosphorylation of endogenous LTCC \u03b111.2 subunit was determined with phospho-specific antibodies, and normalized to total \u03b111.2, n\u00a0=\u00a03. (B) Rat neurons on 10\u201314 DIV were treated for 5 min with 1 \u03bcM indicated drugs. The phosphorylation of endogenous AMPAR GluA1 subunit was determined with phospho-specific antibodies, and signals were normalized to total GluA1, n\u00a0=\u00a04. (C) Neurons were pretreated for 30 min with 10 \u03bcM \u03b22AR inhibitor ICI, 50 \u03bcM AC inhibitor ddA, 10 \u03bcM PKA inhibitor H89 or 10 \u03bcM CaMKII inhibitor KN93 and then stimulated with 1 \u03bcM CAR for 5 min. Carvedilol-induced LTCC phosphorylation depends on endogenous \u03b22AR, AC and PKA, but not CaMKII, n\u00a0=\u00a05. NT, no treatment; ISO, isoproterenol; TIM, timolol; ALP, alprenolol; CAR, carvedilol. Error bars denote s.e.m., P values are computed by one-way ANOVA followed by Tukey\u2019s test between NT and other groups.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/49464/elife-49464-fig4-figsupp1-v3.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Uncropped blots corresponding to Figure 4A. (B) Uncropped blots corresponding to Figure 4B. (C) Uncropped blots corresponding to Figure 4C. Red box indicates the crop region displayed in main figure.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/49464/elife-49464-fig5-v3.jpg)\n\n**Figure 5.:** (A) Representative single channel recordings of LTCC CaV1.2 currents using 110 mM Ba2+ as charge carrier in rat hippocampal neurons on 7\u201310 days in vitro (DIV) after depolarization from \u221280 (hp) to 0 mV (tp) in control patches (NT), patches containing 1 \u03bcM isoproterenol (ISO), 1 \u03bcM carvedilol (CAR) or 1 \u03bcM timolol (TIM) in the patch pipette or after addition of 1 \u03bcM CAR to the bath while the patch pipette contained a control pipette solution (CAR_out). Shown are 20 consecutive sweeps from representative experiments. Arrows throughout the figure indicate the 0-current level (closed channel). Scale bar denotes 2 pA and 200 ms. (B) Ensemble average currents as determined from all sweeps recorded for all the experimental conditions. Scale bar denotes 50 fA and 400 ms. (C\u2013E) Mean\u00a0\u00b1\u00a0s.e.m. for (C) Po (%), (D) availability (i.e. likelihood that a sweep had at least one event) (%) and (E) the mean ensemble average current (fA) for each experimental condition. *p<0.05 with Kruskal Wallis \u2013 Dunn\u2019s multiple comparison test. Sweep and n numbers as well as summary statistics are in Supplementary file 1. (F) Ensemble Po versus time measurements obtained with a pipette backfilled with 1 \u03bcM CAR. The solid dark line represents the mean Po over time and the gray area is the s.e.m. at each time point. The mean line was smoothed to 15 neighbors on each size with a second order polynomial smoothing in PRISM for representation purposes only. (G) Mean Po of the first 30 traces versus the last 30 traces obtained with a pipette backfilled with 1 \u03bcM CAR. The gray boxes highlight the mean on each group. n\u00a0=\u00a011 patches. *p<0.05 with Mann-Whitney test.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/49464/elife-49464-fig5-figsupp1-v3.jpg)\n\n**Figure 5\u2014figure supplement 1.:** Cells were depolarized with 110 mM Ba2+ for 2 s from a holding potential of \u221280 mV to 0 mV and the NPopen was determined over time. (A) Diagram reflecting our patch statistics without using BayK in the recording pipette. Only about 30% of our patches showed channel activity. Cells with\u00a0>5% channel availability within the first 50 sweeps were considered for our analysis. Cells with\u00a0<5% availability were consequently excluded for pharmacological testing. (B) Control experiment demonstrating the effect of 1 \u00b5M isoproterenol applied through bath perfusion (n\u00a0=\u00a011 cells). (C) Over-time effect of 1 \u00b5M carvedilol applied through backfilling of the recording pipette (n\u00a0=\u00a08 cells). Tip filling was performed with pipette solution containing no carvedilol. (D) Experiment showing the effect of 1 \u00b5M carvedilol perfused into the bath solution (n\u00a0=\u00a08 cells).\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/49464/elife-49464-fig5-figsupp2-v3.jpg)\n\n**Figure 5\u2014figure supplement 2.:** Rat cortical neurons on 7 days in vitro (DIV) were incubated overnight in fresh medium with or without 2 mM Ca2+ (no Ca2+), cells were then either mock treated (NT), or treated with 1 \u03bcM indicated drugs. CAR, carvedilol; CGP, CGP20712A; TIM, timolol; ISR, isradipine. MTT assay was carried out at 48 hr post drug treatment and absorbance at 540 nM was measured. The first NT well in each plate was set as basal and all the other groups were normalized to that well. The lysed group had medium removed to represent nearly 100% cell death condition. CAR show decreased cell viability, \u03b21AR antagonist CGP does not prevent the carvedilol-induced reduction of cell viability but \u03b21AR/\u03b22AR antagonist TIM or LTCC blocker ISR does. Data are the mean\u00a0\u00b1\u00a0s.e.m. of three individual plates. P values are computed by one-way ANOVA followed by Tukey\u2019s test between NT and other groups.\n\n### Carvedilol but not isoproterenol selectively activates a mutant \u03b22AR to augment LTCC activity in neurons\n\nStructure-functional analyses of \u03b22AR have previously revealed distinct residues important for binding to catecholamines and \u03b2-blockers (Strader et al., 1989; Liapakis et al., 2000; Warne et al., 2012; Ring et al., 2013). We hypothesized that mutation of Ser204 and Ser207 sites within \u03b22AR binding pocket would abolish receptor hydrogen bonds with the catecholamine phenoxy moieties, thus reducing binding affinity to agonist ISO while having no effect on \u03b2-blocker binding (Figure 6A). Such a mutant \u03b22AR could thus be selectively activated by CAR. We co-expressed the cAMP biosensor ICUE3 together with either wild-type (WT) \u03b22AR or mutant S204A/S207A \u03b22AR in MEF cells lacking endogenous \u03b21AR and \u03b22AR (DKO) to detect receptor signaling induced by different ligands. The mutant S204A/S207A \u03b22AR induced a moderate cAMP signal at high but not low concentrations of ISO (Figure 6B). In contrast, after stimulation with CAR, the \u03b22AR mutant S204A/S207A promoted significant cAMP signals at nanomolar concentrations; the overall concentration response curve was similar to those induced by WT \u03b22AR (Figure 6B). Accordingly, the ISO-induced PKA phosphorylation of \u03b22AR S204A/S207A mutant was selectively abolished at nanomolar concentrations. At higher concentrations, ISO was able to induce reduced PKA phosphorylation of the \u03b22AR S204A/S207A mutant when compared to WT \u03b22AR, consistent with the data of cAMP signals (Figure 6C, and Figure 6\u2014figure supplement 1A). Meanwhile, ISO failed to induce GRK phosphorylation of \u03b22AR S204A/S207A mutant at different concentrations (Figure 6C). In comparison, CAR induced equivalent PKA phosphorylation of \u03b22AR WT and S204A/S207A mutant at different concentrations (Figure 6D, and Figure 6\u2014figure supplement 1B). These data suggest that CAR, but not ISO selectively activates the S204A/S207A mutant \u03b22AR at nanomolar concentrations. We then tested the effects of \u03b22AR S204A/S207A mutant on LTCC channel activity after treatment with CAR in hippocampal neurons. In DKO neurons expressing the mutant S204A/S207A \u03b22AR, CAR, but not ISO (30 nM) promoted PKA phosphorylation of LTCC \u03b111.2 (Figure 7A and B and Figure 7\u2014figure supplement 1). In agreement, CAR, but not ISO significantly increased the open probability, channel availability and mean ensemble average of LTCC (Figure 7C\u20137G). Together, CAR but not ISO selectively activates the S204A/S207A mutant \u03b22AR at low concentrations and increases channel opening probabilities.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/49464/elife-49464-fig6-v3.jpg)\n\n**Figure 6.:** (A) Schematic of an engineered \u03b22AR with S204/207A double serine mutations that loses high affinity binding to ISO but not CAR at nanomolar range. (B) cAMP biosensor ICUE3 and \u03b22AR wild-type (WT) or mutant were co-expressed in MEF cells lacking both \u03b21AR and \u03b22AR. Changes of cAMP FRET ratio by increasing concentrations of ISO or CAR were measured. n\u00a0=\u00a05\u201329 cells. (C\u2013D) HEK293 cells stably expressing FLAG-tagged \u03b22AR WT or mutant were stimulated for 5 min with increasing concentrations of ISO (C), n\u00a0=\u00a07) or CAR (D), n\u00a0=\u00a05). The phosphorylation of \u03b22AR on its PKA and GRK sites were determined with phospho-specific antibodies, and signals were normalized to total \u03b22AR detected with anti-FLAG antibody. Experiments were performed in the presence of 1 \u03bcM \u03b21AR-selective antagonist CGP20712A to block endogenous \u03b21AR signaling. NT, no treatment; ISO, isoproterenol; CAR, carvedilol. Error bars denote s.e.m., P values are computed by one-way ANOVA followed by Tukey\u2019s test between NT and other concentrations.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/49464/elife-49464-fig6-figsupp1-v3.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (A) Uncropped blots corresponding to Figure 6C. (B) Uncropped blots corresponding to Figure 6D. Red box indicates the crop region displayed in main figure.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/49464/elife-49464-fig7-v3.jpg)\n\n**Figure 7.:** (A\u2013B) \u03b21AR/\u03b22AR double knockout (DKO) mouse hippocampal neurons on 7\u201310 days in vitro (DIV) were cotransfected with FLAG-tagged \u03b22AR WT (A) or mutant (B) and HA-tagged LTCC \u03b111.2 subunit, 24 hr later cells were either mock treated (NT), or treated for 5 min with 10 nM isoproterenol (ISO) or carvedilol (CAR), fixed and labeled with anti-FLAG and a phospho-specific antibody for S1928 phosphorylated \u03b111.2. Confocal images show mutant \u03b22AR losts the ability of promoting LTCC phosphorylation upon ISO stimulation but remained the ability upon CAR stimulation in neurons. Scale bar, 10 \u03bcm. Representative of 6 images for each condition, three experiments. (C) Representative single channel recordings of LTCC CaV1.2 currents using 110 mM Ba2+ as charge carrier in DKO neurons on 7\u201310.days DIV expressing mutant \u03b22AR after depolarization from \u221280 to 0 mV in in control patches (mutant) and patches containing 1 \u03bcM isoproterenol (ISO) or 1 \u03bcM carvedilol (CAR) in the patch pipette. Shown are 20 consecutive sweeps from representative experiments. Arrows throughout the figure indicate the 0-current level (closed channel). Scale bar denotes 2 pA and 200 ms. (D) Ensemble average currents as determined from all sweeps recorded for all the experimental conditions. Scale bar denotes 50 fA and 400 ms. (E\u2013G) Mean\u00a0\u00b1\u00a0s.e.m. for (E) Po (%), (F) availability (i.e. likelihood that a sweep had at least one event) (%) and (G) the mean ensemble average current (fA) for each experimental condition. *p<0.05 with Kruskal Wallis \u2013 Dunn\u2019s multiple comparison test. Sweep and n numbers as well as summary statistics are in Supplementary file 2.\n\n![Figure 7\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/49464/elife-49464-fig7-figsupp1-v3.jpg)\n\n**Figure 7\u2014figure supplement 1.:** \u03b21AR/\u03b22AR double knockout (DKO) hippocampal mouse neurons at 7\u201310 days in vitro (DIV) were cotransfected with FLAG-tagged \u03b22AR WT (A) or mutant (B) and HA-tagged LTCC \u03b111.2 subunit, 24 hr later cells were treated for 5 min with 1 \u03bcM ISO or CAR, fixed and labeled with anti-FLAG and a phospho-specific antibody for S1928 phosphorylated \u03b111.2. Confocal images show mutant \u03b22AR lost the ability of promoting LTCC phosphorylation upon ISO stimulation but remained the ability upon CAR stimulation in mouse neurons. Scale bar, 10 \u03bcm. Representative of n\u00a0=\u00a04, 6, 5 and 6 cells, respectively, three experiments.\n\n## Discussion\n\nIn a classic view, agonist stimulation promotes both PKA and GRK phosphorylation of activated GPCRs. Although previous studies have reported that some \u03b2-blockers promote \u03b2AR-Gs coupling and thus might display partial agonism, this phenomenon is only observed at high concentrations and in vitro with reconstituted systems (Yao et al., 2009; DeVree et al., 2016; Gregorio et al., 2017). In this study, using a combination of highly sensitive tools such as engineered FRET-based cAMP sensors and single channel recording together with detection by phospho-specific antibodies, we show for the first time that \u03b2-blockers such as CAR and ALP can promote receptor-Gs coupling at nanomolar concentrations in living cells, which is clinically relevant in contrast to superphysiological concentrations in previous studies. In detail, as low as 1 nM alprenolol as well as 1 nM carvedilol induce 20\u201340% of maximal effects (as obtained with 1 \u03bcM isoproterenol) with respect to phosphorylation of \u03b22AR by PKA and to cAMP production detected by the ICUE3 sensor coupled to \u03b22AR. Unlike agonists, activation of \u03b22AR by \u03b2-blockers selectively transduce G protein/cAMP/PKA signaling but not GRK signaling. More importantly, the \u03b22AR-induced cAMP signal is highly spatially restricted to the local domain of activated \u03b22AR, which selectively promotes activation of receptor-associated LTCC but not receptor-associated AMPAR, two downstream ion channels essential for adrenergic regulation of neuronal excitability in hippocampal neurons. The differential signaling by carvedilol with respect to LTCC and AMPAR is especially remarkable because both channels form complexes with \u03b22AR that are localized within dendritic spines. Moreover, we have engineered a mutant \u03b22AR that is selectively activated by \u03b2-blockers but not by catecholamines at low concentration. Our study defines CAR and ALP as Gs-biased partial agonists of \u03b2AR for highly spatially restricted cAMP/PKA signaling to CaV1.2 in neurons. The study exemplifies a unique mechanism by which \u03b2-blockers shape the compartmentalization of \u03b2AR signaling and a highly restrictive distribution of ligand-induced activation of GPCR targeting a specific downstream effector.\n\nPKA-mediated phosphorylation is thought to play critical roles in heterologous desensitization of GPCRs and in receptor switching from Gs to Gi coupling (Daaka et al., 1997; Zamah et al., 2002), whereas GRK-mediated phosphorylation is implicated in \u03b2-arrestin recruitment and \u03b2-arrestin-dependent ERK activation (Luttrell et al., 1999; Pierce et al., 2000; Kim et al., 2005; Ren et al., 2005; Zidar et al., 2009; Choi et al., 2018). We have recently characterized that PKA and GRKs phosphorylate distinct subpopulations of \u03b22AR in a single fibroblast or neuron (Shen et al., 2018). While GRK phosphorylation of \u03b22AR is only observed at high concentrations of agonists, PKA phosphorylation can be induced with minimal doses of agonist (Shen et al., 2018; Tran et al., 2004; Tran et al., 2007; Liu et al., 2009). Here, our data show CAR does not promote GRK phosphorylation at low concentrations and induces a slow and minimal GRK effect at high concentrations when compared to those induced by ISO. The CAR-induced GRK effects are minimally related to the PKA effects. Previously, CAR has been recognized as a biased \u03b2-blocker that preferentially activates \u03b2-arrestin/ERK pathways (Wisler et al., 2007; Kim et al., 2008). Despite the prominent role of GRK phosphorylation in full agonist ISO-induced \u03b22AR-\u03b2-arrestin/ERK signaling, our data clearly indicate that GRK phosphorylation of \u03b22AR is not necessary for CAR-induced activation of ERK, consistent with a recent study showing a distinct general mechanism of \u03b2-arrestin activation that does not require the GRK-phosphorylated tail of different GPCRs (Eichel et al., 2018). Meanwhile, other studies show that in the absence of all G proteins, GPCRs fail to transduce \u03b2-arrestin/ERK signaling (Grundmann et al., 2018). These data indicate the necessity of G proteins in GPCR-induced arrestin activation. In our study, we observed a concentration-dependent correlation between PKA phosphorylation of \u03b22AR with ERK activity induced by \u03b2-blockers, suggesting the potential role of Gs and PKA in CAR-induced \u03b22AR-\u03b2-arrestin/ERK signaling are overlooked. In comparison, Gi is not required for CAR-induced \u03b22AR/\u03b2-arrestin signaling even though CAR induces Gi recruitment to \u03b21AR for transducing \u03b21AR/\u03b2-arrestin signaling (Wang et al., 2017). Moreover, our results are also in line with a recent report that activation of \u03b22AR with as low as femtomolar concentrations of ligands causes sustained ERK signaling (Civciristov et al., 2018), further support a PKA but GRK-dependent mechanism in GPCR-induced ERK activation. Future studies will help us understand how ligand-induced GPCRs utilize distinct mechanisms in activating \u03b2-arrestin/ERK pathway.\n\nEngineered GPCRs have been widely applied in investigating structural and biological processes and behaviors by precisely controlling specific GPCR signaling branches (Lee et al., 2014). Previous mutagenesis studies have shown that \u03b22AR with S204/207A mutation loses binding to adrenaline but still binds with several \u03b2-blockers including ALP (Liapakis et al., 2000). Based on this and recent advances in \u03b2AR structures with agonists and \u03b2-blockers (Warne et al., 2012; Ring et al., 2013), we have generated a S204/207A mutant that bestow \u03b22AR with the ability to be selectively activated by \u03b2-blockers such as CAR and to transduce cAMP/PKA signaling. At nanomolar concentrations, while ISO fails to stimulate PKA phosphorylation of the S204/207A mutant \u03b22AR, the mutant receptor still retains CAR-induced stimulation of PKA-phosphorylation of the receptor. The CAR-induced activation of mutant \u03b22AR triggers the \u03b22AR/Gs/cAMP/PKA signaling pathway and selectively targets downstream effectors in primary hippocampal neurons. Interestingly, the S204/207A \u03b22AR mutant is not only refractory to its agonists but also completely lost both ISO- and CAR-induced GRK-phosphorylation of \u03b22AR. Further studies comparing this mutant with previous reported \u03b22AR-TYY and Y219A mutants that lack Gs and GRKs coupling, respectively (Choi et al., 2018; Shenoy et al., 2006), will facilitate the analysis of the physiological relevance of Gs/cAMP/PKA-dependent and GRK-dependent signaling pathways and enable researchers to explore \u03b2-arrestin/ERK pathway devoid of individual signaling branches.\n\n\u03b2-blockers are a standard clinical treatment in a broad range of diseases. Many \u03b2-blockers possess intrinsic sympathomimetic activities (Bakris, 2009; Gorre and Vandekerckhove, 2010), which are problematic due to the side effects through stimulation of \u03b2ARs (Bakris, 2009; Gorre and Vandekerckhove, 2010), a feature that limits the clinical utility of the drugs. Here, we show that \u03b2-blockers promote activation of \u03b22AR by recruiting Gs that selectively transduces cAMP/PKA signal but not GRK signal. Meanwhile, binding of \u03b2-blockers to \u03b21AR has been shown to enhance cAMP levels locally by dissociating a \u03b21AR-PDE4 complex, thereby reducing the local cAMP-hydrolytic activity (Richter et al., 2013), \u03b21AR and \u03b22AR thus could utilize different mechanisms for \u03b2-blocker-induced signaling. Another interesting observation is that the \u03b2-blocker-induced \u03b22AR-cAMP signal is sufficient to promote PKA phosphorylation of both \u03b22AR and the receptor-associated CaV1.2 of LTCC, but not another substrate, the AMPAR GluA1 subunit. Both LTCC and AMPAR are shown to associate with the \u03b22AR in hippocampal neurons (Davare et al., 2001; Joiner et al., 2010; Wang et al., 2010; Qian et al., 2012). Therefore, the preference of one local membrane target over another local target indicates a highly restricted nature of the cAMP-PKA activities, potentially dependent on the recently identified distinct subpopulations of \u03b22AR and associated signaling molecules in the neurons (Shen et al., 2018). Nevertheless, the PKA phosphorylation leads to augmentation of LTCC activity, potentially contributing to the neuronal toxicities. Therefore, activation of GPCR at low ligand concentrations should be taken into consideration when designing and screening new therapeutic drugs.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Strain (Mus musculus)</td>\n      <td>\u03b21AR/\u03b22AR double knockout</td>\n      <td>Jackson Laboratories</td>\n      <td>Stock # 003810</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain (Rattus norvegicus)</td>\n      <td>Sprague Dawley</td>\n      <td>Charles River Laboratories</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cell line (Homo sapiens)</td>\n      <td>HEK293/\u03b22AR-WT</td>\n      <td>De Arcangelis et al., 2009</td>\n      <td></td>\n      <td>HEK293 cells stably expressing FLAG-\u03b22AR</td>\n    </tr>\n    <tr>\n      <td>Cell line (Homo sapiens)</td>\n      <td>HEK293/\u03b22AR-S204/207A</td>\n      <td>This paper</td>\n      <td></td>\n      <td>HEK293 cells stably expressing FLAG-\u03b22AR-S204/207A</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Phospho-\u03b22AR (Ser261/262) (mouse monoclonal)</td>\n      <td>Dr. Richard Clark (UT Huston)</td>\n      <td>Clone 2G3</td>\n      <td>IF (1 \u03bcg/ml), WB (1:1000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Phospho-\u03b22AR (Ser355/356) (mouse monoclonal)</td>\n      <td>Dr. Richard Clark (UT Huston)</td>\n      <td>Clone 10A5</td>\n      <td>WB (1:1000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>\u03b22AR (rabbit polyclonal)</td>\n      <td>Santa Cruz Biotechnology</td>\n      <td>sc-570 RRID:AB_2225412</td>\n      <td>PLA (1:100), WB (1:1000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Phospho-\u03b22AR (Ser355/356) (rabbit polyclonal)</td>\n      <td>Santa Cruz Biotechnology</td>\n      <td>sc-16719R RRID:AB_781609</td>\n      <td>WB (1:1000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>\u03b111.2 (rabbit polyclonal)</td>\n      <td>Patriarchi et al., 2016</td>\n      <td>FP1</td>\n      <td>WB (1:1000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Phospho-\u03b111.2 (Ser1928) (rabbit polyclonal)</td>\n      <td>Patriarchi et al., 2016</td>\n      <td>CH3P</td>\n      <td>IF (1 \u03bcg/ml), WB (1:1000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Phospho-\u03b111.2 (Ser1700) (rabbit polyclonal)</td>\n      <td>Patriarchi et al., 2016, Originally from Dr. William Catterall (U of Washington)</td>\n      <td></td>\n      <td>WB (1:1000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>GluA1 (rabbit polyclonal)</td>\n      <td>Patriarchi et al., 2016</td>\n      <td></td>\n      <td>WB (1:1000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Phospho-GluA1 (Ser831) (rabbit polyclonal)</td>\n      <td>Patriarchi et al., 2016</td>\n      <td></td>\n      <td>WB (1:1000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Phospho-GluA1 (Ser845) (rabbit polyclonal)</td>\n      <td>Patriarchi et al., 2016</td>\n      <td></td>\n      <td>WB (1:1000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>FLAG-M1</td>\n      <td>Sigma-Aldrich</td>\n      <td>F3040 RRID:AB_439712</td>\n      <td>IF (1 \u03bcg/ml), WB (1:1000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>HA</td>\n      <td>Covance</td>\n      <td>MMS-101R RRID:AB_291262</td>\n      <td>PLA (1:1000)</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>\u03b22AR-mutant</td>\n      <td>This paper</td>\n      <td></td>\n      <td>FLAG-tagged human \u03b22AR with S204/207A double mutations</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>\u03b22AR-ICUE3</td>\n      <td>This paper</td>\n      <td></td>\n      <td>ICUE3 fused to the C-terminal of human \u03b22AR</td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>Duolink in situ detection reagents</td>\n      <td>Sigma-Aldrich</td>\n      <td>DUO92007</td>\n      <td>PLA</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>pCLAMP10</td>\n      <td>Molecular Devices</td>\n      <td></td>\n      <td>electrophysiology</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>MetaFluor</td>\n      <td>Molecular Devices</td>\n      <td></td>\n      <td>FRET</td>\n    </tr>\n  </tbody>\n</table>\n\n### Animals\n\n\u03b21AR/\u03b22AR double knockout (DKO) mouse were obtained from Jackson Laboratories to produce P0-P1 postnatal DKO pups, SD pregnant rats were obtained from Charles River Laboratories to provide E17-E19 embryonic rats. All of the animals were handled according to approved institutional animal care and use committee (IACUC) protocols (#20234 and #20673) of the University of California at Davis and in accordance with the NIH guidelines.\n\n### Plasmids\n\nDNA constructs expressing FLAG-tagged human \u03b22AR (FLAG-\u03b22AR) and HA-tagged rat L-type calcium channel (LTCC) \u03b111.2 were described before (Shen et al., 2018). FLAG-tagged human \u03b22AR with S204/207A double mutations (FLAG-mutant) was generated by Gibson assembly method (Thermo Fisher) using FLAG-\u03b22AR and synthetic gBlocks with the double mutations as templates (Integrated DNA Technologies). FRET biosensor ICUE3, CAAX-ICUE3 and LYN-ICUE3 were described before (DiPilato and Zhang, 2009). To make the \u03b22AR-ICUE3 fusion biosensor, ICUE3 was fused to the C-terminal of FLAG-\u03b22AR with Gly-Ser linker. HA-Gs\u03b1 was made by replacing CFP with HA tag, using Gs\u03b1-CFP as template (a gift from Dr. Catherine Berlot, Addgene plasmid # 55793).\n\n### Antibodies and chemicals\n\nMouse monoclonal antibodies against \u03b22AR at serine 261/262 (clone 2G3) and at serine 355/356 (clone 10A5) were kindly provided by Dr. Richard Clark (UT Huston). Polyclonal antibodies against \u03b22AR (sc-570) and phosphorylated \u03b22AR at serine 355/356 (sc-16719R) were purchased from Santa Cruz Biotechnology. Polyclonal antibodies against \u03b111.2 residues 754\u2013901 for total \u03b111.2 (FP1), residues 1923\u20131935 for phosphorylated serine 1928 site (LGRRApSFHLECLK, pS1928) and residues 1694\u20131709 for phosphorylated serine 1700 site (EIRRAIpSGDLTAEEEL, pS1700) were described before (Patriarchi et al., 2016). Polyclonal antibodies against GluA1 residues 894\u2013907 for total GluA1, residues 826\u2013837 for phosphorylated serine 831 site (LIPQQpSINEAIK, pS831) and residues 840\u2013851 for phosphorylated serine 845 site (TLPRNpSGAGASK, pS845) were described before (Patriarchi et al., 2016). Other antibodies used in the experiments include: anti-FLAG (F3040, Sigma), anti-HA (MMS-101R, Covance), Alexa fluor 488 conjugated goat anti-rabbit IgG and Alexa fluor 594 conjugated goat anti-mouse IgG (A-11034 and A-11032, Thermo Fisher), DyLight 680 conjugated goat anti-mouse IgG and anti-rabbit IgG (35518 and 35568, Thermo Fisher), IRDye 800CW conjugated goat anti-mouse IgG and anti-rabbit IgG (926\u201332210 and 926\u201332211, Li-cor).\n\nIsoproterenol (I2760), timolol (T6394), alprenolol (A8676), propranolol (P0884), metoprolol (M5391), CGP12177A (C125), CGP20712A (C231), ICI118551 (I127), 3-isobutyl-1-methylxanthine (I5879) and 2',5'-dideoxyadenosine (D7408) were purchased from Sigma. Carvedilol (15418) was from Cayman Chemical, H89 (H-5239) was from LC Labs, pertussis toxin (179B) was from List Labs.\n\n### Cell culture and transfection\n\nHuman embryonic kidney HEK293 cells were from American Type Culture Collection (ATCC) and were maintained in Dulbecco\u2019s modified Eagle medium (DMEM, Corning) supplemented with 10% fetal bovine serum (FBS, Sigma). HEK293 cells stably expressing FLAG-\u03b22AR was from previous study (De Arcangelis et al., 2009). HEK293 cells stably expressing FLAG-mutant \u03b22AR was generated in this study. Briefly, cells transfected with \u03b22AR-mutant were selected by G418 resistance (Corning) and cell clones were obtained by limiting serial dilution, monoclonal cells were analyzed by western blots and the one with comparable \u03b22AR expression to FLAG-\u03b22AR stable cells was chosen.\n\nMouse embryonic fibroblasts (MEFs) from \u03b21AR/\u03b22AR double knockout (DKO) mouse were described in previous study (Cervantes et al., 2010) and were maintained in DMEM supplemented with 10% FBS. Primary mouse hippocampal neurons were isolated and cultured from P0-P1 early postnatal DKO mouse pups, and primary rat hippocampal neurons were prepared from E17-E19 embryonic rats using methods described previously (Chen et al., 2008; Beaudoin et al., 2012). Briefly, dissected hippocampi were dissociated by 0.25% trypsin (Corning) and trituration. Neurons were plated on poly-D-lysine-coated (Sigma) glass coverslips in 24-well plate for imaging and in 6-well plate for biochemistry at a cell density of 50,000/well and 1 million/well, respectively. Neurons were cultured in Neurobasal medium supplemented with GlutaMax and B-27 (Thermo Fisher).\n\nHEK293 cells were transfected with plasmids using polyethylenimine according to manufacturer\u2019s instructions (Sigma). Neurons were transfected by the Ca2+-phosphate method (Jiang and Chen, 2006). Briefly, cultured neurons on 6\u201310 DIV were switched to pre-warmed Eagle\u2019s minimum essential medium (EMEM, Thermo Fisher) supplemented with GlutaMax 1 hr before transfection, conditioned media were saved. DNA precipitates were prepared by 2x HBS (pH 6.96) and 2 M CaCl2. After incubation with DNA precipitates for 1 hr, neurons were incubated in 10% CO2 pre-equilibrium EMEM for 20 min, then replaced with conditioned medium and cultured in 5% CO2 incubator until use.\n\n### Confocal microscopy imaging\n\nRat hippocampal neurons were transfected with FLAG-\u03b22AR on 10 DIV, treated for 5 min with 10 nM or 1 \u03bcM indicated drugs on 12 DIV. Mouse DKO hippocampal neurons were transfected with FLAG-\u03b22AR or FLAG-mutant and HA-\u03b111.2 at 1:1 ratio on 6\u20138 DIV, and stimulated with indicated drugs and times 24 hr after transfection. Treated cells were fixed, permeabilized, and co-stained with indicated antibodies with a final concentration of 1 \u03bcg/ml for each antibody, which were revealed by a 1:1000 dilution of Alexa fluor 488 conjugated goat anti-rabbit IgG or Alexa fluor 594 conjugated goat anti-mouse IgG, respectively. Fluorescence images were taken by Zeiss LSM 700 confocal microscope with a 63\u00d7/1.4 numerical aperture oil-immersion lens.\n\n### Proximity ligation assay\n\nHEK293 cells growing on poly-D-lysine coated coverslips were transfected with FLAG-\u03b22AR or FLAG-mutant, HA-Gs\u03b1 and pEYFP-N1 at 8:1:1 ratio. 24 hr after transfection, cells were serum-starved 2 hr, treated 100 nM indicated drugs for 5 min. Following stimulation, cells were fixed, permeabilized, and co-stained with anti-\u03b22AR antibody (1:100 dilution) from rabbit in conjunction with anti-HA antibody (1:1000 dilution) from mouse. The proximity ligation reaction was performed according to the manufacturer\u2019s protocol using the Duolink in situ detection orange reagents (Sigma). Images were recorded with Zeiss LSM 700 confocal microscope with a 63\u00d7/1.4 numerical aperture oil-immersion lens. To quantify the PLA signals, the number of red fluorescent objects in each image was quantified using the Squassh plug-in for ImageJ software (Rizk et al., 2014), and divided by the number of transfected cells.\n\n### Fluorescence resonance energy transfer (FRET) measurement\n\nFRET measurement was performed as previously described (De Arcangelis et al., 2009). Briefly, HEK 293 cells were transfected with ICUE3 or \u03b22AR-ICUE3, DKO MEFs were co-transfected with ICUE3 and FLAG-\u03b22AR or FLAG-mutant. Cells were imaged on a Zeiss Axiovert 200M microscope with a 40\u00d7/1.3 numerical aperture oil-immersion lens and a cooled CCD camera. Dual emission ratio imaging was acquired with a 420DF20 excitation filter, a 450DRLP diachronic mirror, and two emission filters (475DF40 for cyan and 535DF25 for yellow). The acquisition was set with 0.2 s exposure in both channels and 20 s elapses. Images in both channels were subjected to background subtraction, and ratios of yellow-to-cyan were calculated at different time points.\n\n### Western blot\n\nHEK293 cells stably expressing FLAG-\u03b22AR or FLAG-mutant were serum-starved for 2 hr and treated with indicated drugs and times, then harvested by lysis buffer (10 mM Tris pH 7.4, 1% NP40, 150 mM NaCl, 2 mM EDTA) with protease and phosphatase inhibitor cocktail. Rat hippocampal neurons on 10\u201314 DIV were treated with indicated drugs and times, then harvested by lysis buffer (10 mM Tris pH 7.4, 1% TX-100, 150 mM NaCl, 5 mM EGTA, 10 mM EDTA, 10% glycerol) with protease and phosphatase inhibitor cocktail. Protein samples were analyzed by western blot using antibodies as indicated at a 1:1000 dilution and signals were detected by Odyssey scanner (Li-cor).\n\n### Cell-attached patch clamp electrophysiology\n\nPrimary rat and mouse hippocampal neurons were used on 7\u201310 DIV. Cell-attached patch clamp recordings were performed on an Olympus IX70 inverted microscope in a 15 mm culture coverslip at room temperature (22\u201325\u00b0C). Signals were recorded at 10 kHz and low-pass filtered at 2 kHz with an Axopatch 200B amplifier and digitized with a Digidata 1440 (Molecular Devices). Recording pipettes were pulled from borosilicate capillary glass (0.86 OD) with a Flaming micropipette puller (Model P-97, Sutter Instruments) and polished (polisher from World Precision Instruments). Pipette resistances were strictly maintained between 6\u20137 M\u2126 to ameliorate variations in number of channels in the patch pipette. The patch transmembrane potential was zeroed by perfusing cells with a high K+ extracellular solution containing (in mM) 145 KCl, 10 NaCl, and 10 HEPES, pH 7.4 (NaOH). The pipette solution contained (in mM) 20 tetraethylammonium chloride (TEA-Cl), 110 BaCl2 (as charge carrier), and 10 HEPES, pH 7.3 (TEA-OH). This pipette solution was supplemented with 1 \u00b5M \u03c9-conotoxin GVIA and 1 \u00b5M \u03c9-conotoxin MCVIIC to block N and P/Q-type Ca2+ channels, respectively, and (S)-(-)-BayK-8644 (500 nM) was included in the pipette solution to promote longer open times and resolve channel openings as previously performed by our group and others (Shen et al., 2018; Davare et al., 2001; Wang et al., 2001; Qian et al., 2017; Hess et al., 1986; Schuhmann et al., 1997; Costantin et al., 1998; Yue and Marban, 1990; Dzhura and Neely, 2003; Navedo et al., 2005). In a subset of experiments, BayK was left out of the pipette solution. Note that ISO and CAR had similar effects on channel activity whether BayK was included or not in the pipette solution. To examine the effects of \u03b2-adrenergic stimulation on the L-type CaV1.2 single-channel activity, 1 \u03bcM isoproterenol was added to the pipette solution in independent experiments. Note that we have previously used the L-type CaV1.2 channel blocker nifedipine (1 \u03bcM) to confirm the recording of L-type CaV1.2 currents under control conditions and in the presence of isoproterenol (Patriarchi et al., 2016). Single-channel activity was recorded during a single pulse protocol (2 s) from a holding potential of \u221280 mV to 0 mV every 5 s. An average of\u00a0>50 sweeps were collected with each recording file under all experimental conditions. The half-amplitude event-detection algorithm of pClamp10 was used to measure overall single-channel L-type CaV1.2 activity as nPo, where n is the number of channels in the patch and Po is the open probability. Because the variability of nPo can be a critical element to interpret single channel data due to overstating open probability based on a high n number, we corrected this parameter by the number of channels (n) describing channel open probability and availability as well as calculating the mean ensemble average current. Data were pooled for each condition and analyzed with GraphPad Prism software.\n\n### Statistical analysis\n\nData were analyzed using GraphPad Prism software and expressed as mean\u00a0\u00b1\u00a0s.e.m. Differences between two groups were assessed by appropriate two-tailed unpaired Student\u2019s t-test or nonparametric Mann-Whitney test. Differences among three or more groups were assessed by One-way ANOVA with Tukey\u2019s post hoc test or the Kruskal-Wallis test with Dunn\u2019s post hoc test. p<0.05 was considered statistically significant (denoted by * or # in figures).\n\n### Data availability\n\nAll data generated or analyzed during this study are included in the manuscript and supporting files. Source data files have been provided for all main figures.\n",
+      "created_at": "2025-12-02T12:44:01.906527Z"
+    },
+    {
+      "id": "a417d36f-51a7-4421-b61f-f69c5850e33c",
+      "submission_id": "76e62e81-4f22-4b72-b8fb-6072ddb34559",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Mark T Nelson, University of Vermont United States\n\nReviewers:\n- Ruiping Xiao\n\n## Review text\n\nDOI: [10.7554/eLife.49464.sa1](https://doi.org/10.7554/eLife.49464.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nThank you for submitting your article \"\u03b2-blockers augment LTCC activity by targeting spatially restricted \u03b22AR signaling in neurons\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Olga Boudker as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Ruiping Xiao (Reviewer #3).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThe authors expand on their recent studies exploring the local regulation of L-type Ca channels (LTCC) in neurons by \u03b2-adrenergic signaling. Previously, they found that cAMP-PKA dependent phosphorylation of beta2 adrenergic receptors controls ion channel regulation in hippocampal neurons. In this study, the authors show that carvedilol and alprenolol can promote Gs activity and PKA phosphorylation of \u03b2-adrenergic receptor and LTCC at Ser1928, and increased LTCC activity. The authors contend that some \u03b2 blockers can activate beta2 adrenergic receptors and target specific downstream LTCCs, and could explain the effect of \u03b2 blockers on the central nervous system.\n\nEssential revisions:\n\n1) In part, the manuscript incrementally builds upon several other studies, including these authors, probing the concept that some \u03b2 adrenergic antagonists have agonist properties, and that in hippocampus, the LTCC 's may be positioned close to beta2 adrenergic receptors and are a \"privileged\" downstream signaling target. Please clearly indicate why this study should not be considered incremental.\n\n2) The conclusion at the end of the manuscript attempting to create relevance to the findings, in regards to neuronal toxicities, is overstated without data showing that this local signaling could have these effects. Having data showing neuronal toxicities that are both carvedilol and Ca2+ dependent would have made the manuscript more than more substantial. Are there data showing neuronal toxicities (not just known reversible side effects associated with \u03b2 blockers) associated with carvedilol in humans? Otherwise, this angle should be greatly downplayed.\n\n3) All reviewers felt that the other major conclusion that this \u03b2-blocker signaling is highly spatially restricted to only the local domain of the B2AR receptor is not quite as well supported and could benefit from some additional experiments, which I would prioritize as: 1) evaluating whether CAR is only effective in regulation L-channel currents when applied through the patch pipet as shown in Figure 4 but not when applied in the bath and 2) using a generic plasma membrane targeted ICUE3 cAMPs sensor to better characterize how local the CAR and ALP generated cAMP signals are compared to the full-agonist ISO. The authors already show that CAR regulation of Cav1.2 S1928-P and S1700-P is block by the B2AR-specific antagonist ICI.\n\n4) The authors use BayK to enhance channel activities and increase open time. This is a suboptimal method to establish that phosphorylation has a significant effect on signaling in native conditions. To convincingly show that LTCC are indeed a bona fide target of carvedilol, the experiments should be performed without BayK so that we can determine the actual effect of beta2-adrenergic receptor activation by carvedilol. The effects of PKA phosphorylation of LTCC may or may not be the same in the absence of BayK. The effects of carvedilol should be tested, at least on as subset of experiments, without BayK. The impact of BayK on channel modulation should be addressed. It is not necessary to use BayK to measure calcium channel activity.\n\n5) Concerns about the variability of NPo. For instance, In Figure 6C, the data are driven by 7 points. In fact, the majority of data-points are similar to mutant and mutant + Iso. This variability suggest that the authors should develop a system so that they can measure the basal current and then infuse the drug via the patch pipette. Without understanding the number of channels in each patch and the basal open probability, the experiments have limited value. The single channel recordings clearly indicate bimodal gating, i.e. periods of low and high open probability. How do others authors take this into account? One would need very many long recordings to do this. This issue is further confounded by using BayK to artificially elevate channel open probability.\n\nStatistics:\n\nIn some Figures such as 3A, 4E, 6C, the n's for carvedilol are much more than other groups. Why were the experiments designed in such a way with a disproportional bias towards a particular compound? The details of replicates were not given in the figure legends. For example, how many separate experiments have been performed? And in the separate experiments, were all the different groups represented? What is the rationale for the disproportional representation among different groups?\n",
+      "created_at": "2025-12-02T12:44:01.906527Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T12:44:01.906527Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T12:44:01.906527Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "0121b24d-49f1-454b-9363-a7e416323ef1",
+      "content_id": "a3b066cf-5ee8-4fde-bd1f-02d5f088c9ac",
+      "claim_id": "C1",
+      "claim": "Carvedilol and alprenolol activate \u03b22AR at clinically relevant nanomolar concentrations.",
+      "claim_type": "EXPLICIT",
+      "source": "Carvedilol and alprenolol activate \u03b22AR, which promote G protein signaling and cAMP/PKA activities without action of G protein receptor kinases (GRKs).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract states that carvedilol and alprenolol activate \u03b22AR at nanomolar concentrations, which is supported by experimental data shown in Figures 2 and 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:44:01.906527Z"
+    },
+    {
+      "id": "8a5a648c-4fb1-4473-85f9-98d4157810e0",
+      "content_id": "a3b066cf-5ee8-4fde-bd1f-02d5f088c9ac",
+      "claim_id": "C2",
+      "claim": "Carvedilol and alprenolol promote G protein signaling and cAMP/PKA activities without action of GRKs.",
+      "claim_type": "EXPLICIT",
+      "source": "Carvedilol and alprenolol activate \u03b22AR, which promote G protein signaling and cAMP/PKA activities without action of G protein receptor kinases (GRKs).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by western blot data showing PKA phosphorylation but minimal GRK phosphorylation (Figures 1, 2), and by Gs\u03b1 recruitment assays (Figure 3A).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:44:01.906527Z"
+    },
+    {
+      "id": "d14060d3-8ad3-4b13-aad2-cd3b55eedb96",
+      "content_id": "a3b066cf-5ee8-4fde-bd1f-02d5f088c9ac",
+      "claim_id": "C3",
+      "claim": "The cAMP/PKA activities induced by carvedilol and alprenolol are restricted within the immediate vicinity of activated \u03b22AR.",
+      "claim_type": "EXPLICIT",
+      "source": "The cAMP/PKA activities are restricted within the immediate vicinity of activated \u03b22AR, leading to selectively enhance PKA-dependent phosphorylation and stimulation of endogenous L-type calcium channel (LTCC) but not AMPA receptor in rat hippocampal neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated by \u03b22AR-ICUE3 fusion biosensor detecting local cAMP (Figure 3D-E), and by selective phosphorylation of CaV1.2 but not GluA1 (Figure 4).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:44:01.906527Z"
+    },
+    {
+      "id": "8cbc451a-a0ce-4cc0-b200-4080e2f8be46",
+      "content_id": "a3b066cf-5ee8-4fde-bd1f-02d5f088c9ac",
+      "claim_id": "C4",
+      "claim": "Carvedilol and alprenolol selectively enhance PKA-dependent phosphorylation and stimulation of endogenous LTCC but not AMPA receptor in rat hippocampal neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "The cAMP/PKA activities are restricted within the immediate vicinity of activated \u03b22AR, leading to selectively enhance PKA-dependent phosphorylation and stimulation of endogenous L-type calcium channel (LTCC) but not AMPA receptor in rat hippocampal neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Shown by western blot analysis of phosphorylation (Figure 4A-B) and single channel recordings (Figure 5).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:44:01.906527Z"
+    },
+    {
+      "id": "c4bf95e5-d9a5-4494-8319-b0ae148a352e",
+      "content_id": "a3b066cf-5ee8-4fde-bd1f-02d5f088c9ac",
+      "claim_id": "C5",
+      "claim": "A mutant \u03b22AR lacking the catecholamine binding pocket is preferentially activated by carvedilol but not isoproterenol.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, we have engineered a mutant \u03b22AR that lacks the catecholamine binding pocket. This mutant is preferentially activated by carvedilol but not the orthosteric agonist isoproterenol.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated by cAMP FRET measurements (Figure 6B) and phosphorylation assays (Figure 6C-D) showing differential responses to ISO vs CAR.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:44:01.906527Z"
+    },
+    {
+      "id": "07f46328-5959-4cf8-a750-9fcf72c9ee8e",
+      "content_id": "a3b066cf-5ee8-4fde-bd1f-02d5f088c9ac",
+      "claim_id": "C6",
+      "claim": "Carvedilol activates the mutant \u03b22AR in mouse hippocampal neurons augmenting LTCC activity through cAMP/PKA signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "Carvedilol activates the mutant \u03b22AR in mouse hippocampal neurons augmenting LTCC activity through cAMP/PKA signaling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by confocal imaging of LTCC phosphorylation (Figure 7A-B) and single channel recordings (Figure 7C-G) in neurons expressing mutant \u03b22AR.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:44:01.906527Z"
+    },
+    {
+      "id": "59761f7d-b7cd-4c68-bd36-1579bc582c48",
+      "content_id": "a3b066cf-5ee8-4fde-bd1f-02d5f088c9ac",
+      "claim_id": "C7",
+      "claim": "GPCRs often signal through both canonical G proteins and noncanonical G protein-independent signaling via GRKs and \u03b2-arrestins.",
+      "claim_type": "EXPLICIT",
+      "source": "GPCRs often signal not only through canonical G proteins but also through noncanonical G protein-independent signaling, frequently via G protein receptor kinases (GRKs) and \u03b2-arrestins (Lefkowitz, 2000; Xiang and Kobilka, 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to established literature on GPCR signaling mechanisms.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:44:01.906527Z"
+    },
+    {
+      "id": "3dee230b-c0b4-4aad-acbd-fdb4cb0c8d51",
+      "content_id": "a3b066cf-5ee8-4fde-bd1f-02d5f088c9ac",
+      "claim_id": "C8",
+      "claim": "GPCRs undergo ligand-induced phosphorylation at different sites by either GRKs or second messenger dependent protein kinases such as PKA.",
+      "claim_type": "EXPLICIT",
+      "source": "One of the universal features of GPCRs is that they undergo ligand-induced phosphorylation at different sites by either GRKs or second messenger dependent protein kinases such as protein kinase A (PKA).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about GPCR regulation, supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:44:01.906527Z"
+    },
+    {
+      "id": "c12f23fb-8542-404d-99f9-21606a8dd52f",
+      "content_id": "a3b066cf-5ee8-4fde-bd1f-02d5f088c9ac",
+      "claim_id": "C9",
+      "claim": "Phosphorylated GPCRs may present distinct structural features that favor receptor binding to different signaling partners.",
+      "claim_type": "EXPLICIT",
+      "source": "The phosphorylated GPCRs thus may present distinct structural features that favor receptor binding to different signaling partners, engaging distinct downstream signaling cascades (Reiter and Lefkowitz, 2006; Lefkowitz, 2007; Nobles et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to literature on GPCR phosphorylation and signaling.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:44:01.906527Z"
+    },
+    {
+      "id": "f35f87d2-19db-4ffc-b77e-f7265b2afb05",
+      "content_id": "a3b066cf-5ee8-4fde-bd1f-02d5f088c9ac",
+      "claim_id": "C10",
+      "claim": "Some ligands can differentially activate a GPCR via functional selectivity or biased signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "Some ligands can differentially activate a GPCR via a phenomenon known as functional selectivity or biased signaling (Wisler et al., 2014; Zweemer et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to literature on biased GPCR signaling.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:44:01.906527Z"
+    },
+    {
+      "id": "27c61b47-50c7-4aa6-baec-8c894f82801b",
+      "content_id": "a3b066cf-5ee8-4fde-bd1f-02d5f088c9ac",
+      "claim_id": "C11",
+      "claim": "\u03b22AR is involved in memory and learning in the central nervous system and regulation of metabolism and cardiovascular function.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, stimulation of \u03b22 adrenergic receptor (\u03b22AR), a prototypical GPCR involved in memory and learning in the central nervous system (CNS) and regulation of metabolism and cardiovascular function, promotes phosphorylation by both GRKs and PKA (Najafi et al., 2016; Mammarella et al., 2016; Fu et al., 2017; Matera et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations to literature on \u03b22AR functions.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:44:01.906527Z"
+    },
+    {
+      "id": "3c336abf-76e5-4a3f-bcef-d044d099bd7d",
+      "content_id": "a3b066cf-5ee8-4fde-bd1f-02d5f088c9ac",
+      "claim_id": "C12",
+      "claim": "Stimulation of \u03b22AR promotes phosphorylation by both GRKs and PKA.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, stimulation of \u03b22 adrenergic receptor (\u03b22AR), a prototypical GPCR involved in memory and learning in the central nervous system (CNS) and regulation of metabolism and cardiovascular function, promotes phosphorylation by both GRKs and PKA (Najafi et al., 2016; Mammarella et al., 2016; Fu et al., 2017; Matera et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations and confirmed by experimental data in this study (Figures 1-2).",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:44:01.906527Z"
+    },
+    {
+      "id": "5eca579f-8fbb-429a-8bdb-9437085efffb",
+      "content_id": "a3b066cf-5ee8-4fde-bd1f-02d5f088c9ac",
+      "claim_id": "C13",
+      "claim": "Spatially segregated subpopulations of \u03b22AR undergo exclusive phosphorylation by GRKs or PKA in a single cell.",
+      "claim_type": "EXPLICIT",
+      "source": "We have recently identified spatially segregated subpopulations of \u03b22AR undergoing exclusive phosphorylation by GRKs or PKA in a single cell. These findings indicate specific GPCR subpopulation-based signaling branches can co-exist in a single cell (Shen et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to previous work by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:44:01.906527Z"
+    },
+    {
+      "id": "ff87880c-973b-4d5e-809f-de5cfc42b7ee",
+      "content_id": "a3b066cf-5ee8-4fde-bd1f-02d5f088c9ac",
+      "claim_id": "C14",
+      "claim": "GRK-mediated phosphorylation promotes pro-survival and cell growth signaling via \u03b2-arrestin-dependent MAPK/ERK pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "GRK-mediated phosphorylation promotes pro-survival and cell growth signaling via \u03b2-arrestin-dependent mitogen-activated protein kinase (MAPK/ERK) pathways, prompting the search for biased ligands that preferentially activate \u03b2-arrestin pathways (Luttrell et al., 1999; Pierce et al., 2000; Kim et al., 2005; Ren et al., 2005; Zidar et al., 2009; Choi et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations to literature on GRK/\u03b2-arrestin signaling.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:44:01.906527Z"
+    },
+    {
+      "id": "0dd2efcf-512c-4ddf-b5cb-dd86ad5b00c7",
+      "content_id": "a3b066cf-5ee8-4fde-bd1f-02d5f088c9ac",
+      "claim_id": "C15",
+      "claim": "cAMP/PKA-dependent phosphorylation of \u03b22AR controls ion channel activity at the plasma membrane in primary hippocampal neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, our recent studies show that the cAMP/PKA-dependent phosphorylation of \u03b22AR controls ion channel activity at the plasma membrane in primary hippocampal neurons (Shen et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to previous work and confirmed by data in this study (Figures 4-5).",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:44:01.906527Z"
+    },
+    {
+      "id": "086fd1c2-6eb4-499a-a78b-2e38ddc9b9de",
+      "content_id": "a3b066cf-5ee8-4fde-bd1f-02d5f088c9ac",
+      "claim_id": "C16",
+      "claim": "\u03b2-blockers are thought to reduce cAMP signaling by reducing basal activity of \u03b2ARs or blocking agonist-induced receptor activation.",
+      "claim_type": "EXPLICIT",
+      "source": "\u03b2-blockers are thought to reduce cAMP signaling because they either reduce basal activity of \u03b2ARs or block agonist-induced receptor activation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This represents the traditional understanding of \u03b2-blocker function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:44:01.906527Z"
+    },
+    {
+      "id": "e6b42811-15fc-4c38-a08b-489caf578338",
+      "content_id": "a3b066cf-5ee8-4fde-bd1f-02d5f088c9ac",
+      "claim_id": "C17",
+      "claim": "\u03b2-blockers have utility limited by side effects in both the CNS and peripheral tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "While \u03b2-blockers are successful in clinical therapies of a broad range of diseases, their utility is limited by side effects in both the CNS and peripheral tissues (Bakris, 2009; Gorre and Vandekerckhove, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to clinical literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:44:01.906527Z"
+    },
+    {
+      "id": "5621a08b-ed54-49e2-8545-a4175183fcd8",
+      "content_id": "a3b066cf-5ee8-4fde-bd1f-02d5f088c9ac",
+      "claim_id": "C18",
+      "claim": "Some \u03b2-blockers display partial agonism and can promote receptor-Gs coupling at high concentrations in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, studies have revealed that some \u03b2-blockers display partial agonism and can promote receptor-Gs coupling at high concentrations in vitro (Yao et al., 2009; DeVree et al., 2016; Gregorio et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:44:01.906527Z"
+    },
+    {
+      "id": "01f1f107-6d96-46cd-936f-57beb58b5a53",
+      "content_id": "a3b066cf-5ee8-4fde-bd1f-02d5f088c9ac",
+      "claim_id": "C19",
+      "claim": "Some \u03b2-blockers display intrinsic properties mimicking sympathetic activation (sympathomimetic \u03b2-blockers).",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, some \u03b2-blockers display intrinsic properties mimicking sympathetic activation (sympathomimetic \u03b2-blockers) (Maack et al., 2000; Brixius et al., 2001; Larochelle et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to clinical literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:44:01.906527Z"
+    },
+    {
+      "id": "2199610c-09a6-4d5d-92df-485f35ae7090",
+      "content_id": "a3b066cf-5ee8-4fde-bd1f-02d5f088c9ac",
+      "claim_id": "C20",
+      "claim": "Classic cAMP assays do not show even minimal cAMP signal induced by sympathomimetic \u03b2-blockers.",
+      "claim_type": "EXPLICIT",
+      "source": "The mechanism remains poorly understood because classic cAMP assay do not show even minimal cAMP signal induced by these \u03b2-blockers (Maack et al., 2000; Brixius et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations and confirmed by data in this study showing no signal with generic ICUE3 sensor (Figure 3B).",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:44:01.906527Z"
+    },
+    {
+      "id": "6d9726ed-0de1-4168-998a-e43fe89e5fd4",
+      "content_id": "a3b066cf-5ee8-4fde-bd1f-02d5f088c9ac",
+      "claim_id": "C21",
+      "claim": "Alprenolol, carvedilol, propranolol and CGP12177 stimulate phosphorylation of \u03b22AR at PKA sites in HEK293 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that various \u03b2-blockers including alprenolol (ALP), carvedilol (CAR), propranolol (PRO) and CGP12177 (177) were able to stimulate phosphorylation of \u03b22AR at PKA sites expressed in HEK293 cells, similar to the \u03b2AR agonist isoproterenol (ISO) (Figure 1A and Figure 1\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by western blot analysis using phospho-specific antibodies shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:44:01.906527Z"
+    },
+    {
+      "id": "e47eda62-b366-4829-92df-0e0716590003",
+      "content_id": "a3b066cf-5ee8-4fde-bd1f-02d5f088c9ac",
+      "claim_id": "C22",
+      "claim": "ICI118551, timolol and metoprolol do not stimulate phosphorylation of \u03b22AR at PKA sites in HEK293 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, other \u03b2-blockers, that is ICI118551 (ICI), timolol (TIM) and metoprolol (MET), were not able to do so (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by western blot analysis shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:44:01.906527Z"
+    },
+    {
+      "id": "43294ed3-f5ca-4a6b-8351-5ed662ad9406",
+      "content_id": "a3b066cf-5ee8-4fde-bd1f-02d5f088c9ac",
+      "claim_id": "C23",
+      "claim": "Ligand-induced phosphorylation of \u03b22AR is blocked by \u03b22AR-specific antagonist ICI but not \u03b21AR-specific antagonist CGP20712A.",
+      "claim_type": "EXPLICIT",
+      "source": "The ligand-induced phosphorylation of \u03b22AR was blocked by \u03b22AR-specific antagonist ICI but not \u03b21AR-specific antagonist CGP20712A (CGP) (Figure 1B and C, and Figure 1\u2014figure supplement 1B and C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by western blot analysis with antagonist pretreatment shown in Figures 1B-C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:44:01.906527Z"
+    },
+    {
+      "id": "e4b9d54e-b200-4449-9894-d350368e71c9",
+      "content_id": "a3b066cf-5ee8-4fde-bd1f-02d5f088c9ac",
+      "claim_id": "C24",
+      "claim": "Carvedilol and alprenolol promote phosphorylation of \u03b22AR by PKA at nanomolar concentrations.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that CAR and ALP promoted phosphorylation of \u03b22AR by PKA even at nanomolar concentrations (Figure 2A and B, and Figure 2\u2014figure supplement 1A and B), which was paralleled by concentration-dependent increases in phosphorylation of ERK (Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by concentration-response western blot analysis shown in Figures 2A-B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:44:01.906527Z"
+    },
+    {
+      "id": "ae9ed461-1770-423d-82ae-c3438f907e98",
+      "content_id": "a3b066cf-5ee8-4fde-bd1f-02d5f088c9ac",
+      "claim_id": "C25",
+      "claim": "Carvedilol and alprenolol induce concentration-dependent increases in phosphorylation of ERK.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that CAR and ALP promoted phosphorylation of \u03b22AR by PKA even at nanomolar concentrations (Figure 2A and B, and Figure 2\u2014figure supplement 1A and B), which was paralleled by concentration-dependent increases in phosphorylation of ERK (Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by western blot analysis shown in Figure 2\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:44:01.906527Z"
+    },
+    {
+      "id": "0c902995-48c9-4e36-8ae6-433120ed0657",
+      "content_id": "a3b066cf-5ee8-4fde-bd1f-02d5f088c9ac",
+      "claim_id": "C26",
+      "claim": "The roles of \u03b22AR and PKA in carvedilol/alprenolol-induced phosphorylation are confirmed by inhibition with ICI and H89, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "The roles of \u03b22AR and PKA in this phenomenon were confirmed by inhibition of \u03b22AR with ICI and inhibition of PKA with H89, respectively (Figure 2C and D, and Figure 2\u2014figure supplement 1C and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by western blot analysis with inhibitor pretreatment shown in Figures 2C-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:44:01.906527Z"
+    },
+    {
+      "id": "f0f51b78-d77c-4ae8-a5ea-524ecef7893e",
+      "content_id": "a3b066cf-5ee8-4fde-bd1f-02d5f088c9ac",
+      "claim_id": "C27",
+      "claim": "\u03b2-blockers induce minimal increases in phosphorylation of \u03b22AR at GRK sites and only at high concentrations.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, those \u03b2-blockers induced at best minimal increases in phosphorylation of \u03b22AR at GRK sites and only at high concentrations, consistent with a previous report (Wisler et al., 2007) (Figure 1A and Figure 2\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by western blot analysis shown in Figure 1A and Figure 2\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:44:01.906527Z"
+    },
+    {
+      "id": "be46d76c-77da-40cf-a508-7e38327039e9",
+      "content_id": "a3b066cf-5ee8-4fde-bd1f-02d5f088c9ac",
+      "claim_id": "C28",
+      "claim": "Isoproterenol promotes robust increases in both PKA and GRK phosphorylation of \u03b22AR at different concentrations ranging from nanomolar to micromolar.",
+      "claim_type": "EXPLICIT",
+      "source": "As positive control, the \u03b2AR agonist ISO promoted robust increases in both PKA and GRK phosphorylation of the receptors at different concentrations ranging from nanomolar to micromolar (Figures 1 and 2, and Figure 2\u2014figure supplements 2 and 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by western blot analysis shown in multiple figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:44:01.906527Z"
+    },
+    {
+      "id": "dc5074cb-c3d8-4fc2-a611-d9e15e201487",
+      "content_id": "a3b066cf-5ee8-4fde-bd1f-02d5f088c9ac",
+      "claim_id": "C29",
+      "claim": "\u03b22AR is a prevalent postsynaptic norepinephrine effector at glutamatergic synapses in the CNS.",
+      "claim_type": "EXPLICIT",
+      "source": "In the CNS, \u03b22AR emerges as a prevalent postsynaptic norepinephrine effector at glutamatergic synapses (Davare et al., 2001; Joiner et al., 2010; Wang et al., 2010; Qian et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations to literature on \u03b22AR function in neurons.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:44:01.906527Z"
+    },
+    {
+      "id": "dc12fd7e-8500-41b7-8594-ed2fd0bfada6",
+      "content_id": "a3b066cf-5ee8-4fde-bd1f-02d5f088c9ac",
+      "claim_id": "C30",
+      "claim": "\u03b2-blockers carvedilol and alprenolol activate \u03b22AR and promote phosphorylation of the receptor by PKA in hippocampal neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the data from HEK293 cells, we found \u03b2-blockers CAR and ALP activated \u03b22AR and promoted phosphorylation of the receptor by PKA in hippocampal neurons (Figure 2E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by confocal imaging of PKA-phosphorylated \u03b22AR in neurons shown in Figure 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:44:01.906527Z"
+    },
+    {
+      "id": "8197ae27-5340-4b4e-98c1-e2bfcc07f237",
+      "content_id": "a3b066cf-5ee8-4fde-bd1f-02d5f088c9ac",
+      "claim_id": "C31",
+      "claim": "Isoproterenol, carvedilol and alprenolol increase PLA signals between \u03b22AR and Gs\u03b1, indicating recruitment of Gs\u03b1 to \u03b22AR.",
+      "claim_type": "EXPLICIT",
+      "source": "We showed that ISO, CAR and ALP were able to increase the PLA signals between \u03b22AR and Gs\u03b1, indicating recruitment of Gs\u03b1 to \u03b22AR (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by proximity ligation assay shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:44:01.906527Z"
+    },
+    {
+      "id": "1859a57f-ba8f-446c-8476-2614e98c1319",
+      "content_id": "a3b066cf-5ee8-4fde-bd1f-02d5f088c9ac",
+      "claim_id": "C32",
+      "claim": "Timolol has no effect on the recruitment of Gs\u03b1 to \u03b22AR.",
+      "claim_type": "EXPLICIT",
+      "source": "As control, TIM had no effect on the recruitment of Gs\u03b1 to \u03b22ARs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated by proximity ligation assay shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:44:01.906527Z"
+    },
+    {
+      "id": "8b7678d4-3643-4ea9-8470-55ee82a0c745",
+      "content_id": "a3b066cf-5ee8-4fde-bd1f-02d5f088c9ac",
+      "claim_id": "C33",
+      "claim": "The role of Gs/AC in carvedilol-induced PKA phosphorylation of \u03b22AR is validated by AC-specific inhibition with 2',5'-dideoxyadenosine.",
+      "claim_type": "EXPLICIT",
+      "source": "The role of Gs/AC in CAR-induced PKA phosphorylation of \u03b22AR was further validated by AC-specific inhibition with 2',5'-dideoxyadenosine (ddA, Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by western blot analysis with AC inhibitor shown in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:44:01.906527Z"
+    },
+    {
+      "id": "6af92d08-5216-4db3-9da3-d045642c22ce",
+      "content_id": "a3b066cf-5ee8-4fde-bd1f-02d5f088c9ac",
+      "claim_id": "C34",
+      "claim": "Isoproterenol promotes cAMP signal in HEK293 cells while all \u03b2-blockers fail to do so without PDE inhibition.",
+      "claim_type": "EXPLICIT",
+      "source": "The full agonist ISO promoted cAMP signal in HEK293 cells while all \u03b2-blockers failed to do so (Figure 3B), in agreement with the classic definition of \u03b2-blockers.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by FRET-based cAMP measurements shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:44:01.906527Z"
+    },
+    {
+      "id": "fe189ac8-2be4-4004-9f0c-493679a34a9f",
+      "content_id": "a3b066cf-5ee8-4fde-bd1f-02d5f088c9ac",
+      "claim_id": "C35",
+      "claim": "When cells are treated with non-selective phosphodiesterase inhibitor IBMX, carvedilol, alprenolol and CGP12177 induce small but significant cAMP signal in HEK293 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "However, when cells were treated with non-selective phosphodiesterase (PDE) inhibitor IBMX, CAR, ALP and CGP12177 were able to induce small but significant cAMP signal in HEK293 cells (Figure 3C), indicating a role of PDE in suppressing and restricting the distribution of cAMP in the cells.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by FRET-based cAMP measurements with IBMX shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:44:01.906527Z"
+    },
+    {
+      "id": "3013dcba-8703-45a3-8c27-62c9fc320253",
+      "content_id": "a3b066cf-5ee8-4fde-bd1f-02d5f088c9ac",
+      "claim_id": "C36",
+      "claim": "PDE plays a role in suppressing and restricting the distribution of cAMP in cells.",
+      "claim_type": "EXPLICIT",
+      "source": "However, when cells were treated with non-selective phosphodiesterase (PDE) inhibitor IBMX, CAR, ALP and CGP12177 were able to induce small but significant cAMP signal in HEK293 cells (Figure 3C), indicating a role of PDE in suppressing and restricting the distribution of cAMP in the cells.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inferred from the observation that PDE inhibition reveals cAMP signals that were previously undetectable.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:44:01.906527Z"
+    },
+    {
+      "id": "cd06a46a-a103-4395-82d0-c2fca2092639",
+      "content_id": "a3b066cf-5ee8-4fde-bd1f-02d5f088c9ac",
+      "claim_id": "C37",
+      "claim": "When \u03b22AR is exogenously expressed in HEK293 cells, carvedilol and alprenolol induce cAMP signal even without PDE inhibition.",
+      "claim_type": "EXPLICIT",
+      "source": "When \u03b22AR was exogenously expressed in HEK293 cells, CAR and ALP were able to induce cAMP signal in HEK293 cells even without PDE inhibition (Figure 3\u2014figure supplement 2), probably due to insufficient cAMP-hydrolytic activity of endogenous PDEs to counter cAMP production induced from overexpressed \u03b22AR.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by FRET-based cAMP measurements in cells overexpressing \u03b22AR shown in Figure 3\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:44:01.906527Z"
+    },
+    {
+      "id": "e9a15769-123b-405b-872d-29d53f3e3598",
+      "content_id": "a3b066cf-5ee8-4fde-bd1f-02d5f088c9ac",
+      "claim_id": "C38",
+      "claim": "Carvedilol and alprenolol promote cAMP signals within the immediate vicinity of activated \u03b22AR even at nanomolar concentrations.",
+      "claim_type": "EXPLICIT",
+      "source": "CAR and ALP promoted cAMP signals within the immediate vicinity of activated \u03b22AR even at nanomolar concentrations (Figure 3D and E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by \u03b22AR-ICUE3 fusion biosensor measurements shown in Figures 3D-E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:44:01.906527Z"
+    },
+    {
+      "id": "b8d0b54a-3c0c-4a2b-ad08-1fa5340c96dc",
+      "content_id": "a3b066cf-5ee8-4fde-bd1f-02d5f088c9ac",
+      "claim_id": "C39",
+      "claim": "Local increases of cAMP induced by carvedilol and alprenolol are abolished by inhibition of \u03b22AR with ICI or inhibition of ACs with ddA.",
+      "claim_type": "EXPLICIT",
+      "source": "The local increases of cAMP were abolished by inhibition of \u03b22AR with ICI or inhibition of ACs with ddA (Figure 3E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by \u03b22AR-ICUE3 fusion biosensor measurements with inhibitors shown in Figure 3E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:44:01.906527Z"
+    },
+    {
+      "id": "fd430e17-394c-4354-8af7-aca729031f9a",
+      "content_id": "a3b066cf-5ee8-4fde-bd1f-02d5f088c9ac",
+      "claim_id": "C40",
+      "claim": "Neither CAAX-ICUE3 nor LYN-ICUE3 can sense cAMP induced by carvedilol and alprenolol, while ISO-induced cAMP is readily detectable on plasma membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, neither CAAX-ICUE3 targeting to the non-rafts regions of PM nor LYN-ICUE3 targeting to the rafts regions of PM could sense cAMP induced by CAR and ALP, while ISO induced cAMP were readily detectable on PM (Figure 3\u2014figure supplement 3), this further demonstrates that CAR and ALP only promote cAMP within the immediate vicinity of \u03b22AR.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by FRET measurements with membrane-targeted biosensors shown in Figure 3\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:44:01.906527Z"
+    },
+    {
+      "id": "5a626eb5-7cbd-4fb0-9f78-20592f9d81c4",
+      "content_id": "a3b066cf-5ee8-4fde-bd1f-02d5f088c9ac",
+      "claim_id": "C41",
+      "claim": "Carvedilol and alprenolol, but not timolol, significantly increase PKA phosphorylation of S1928 and S1700 of CaV1.2 in hippocampal neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "CAR and ALP, but not TIM significantly increased PKA phosphorylation of S1928 and S1700 of central \u03b111.2 subunit of CaV1.2 in hippocampal neurons when both \u03b22AR and LTCC were endogenously expressed (Figure 4A, and Figure 4\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by western blot analysis of LTCC phosphorylation shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:44:01.906527Z"
+    },
+    {
+      "id": "8845fee6-d5dd-4b00-8776-3504d5308159",
+      "content_id": "a3b066cf-5ee8-4fde-bd1f-02d5f088c9ac",
+      "claim_id": "C42",
+      "claim": "Carvedilol and alprenolol fail to promote phosphorylation of AMPAR subunit GluA1 on its PKA site serine 845.",
+      "claim_type": "EXPLICIT",
+      "source": "However, CAR and ALP failed to promote phosphorylation of the AMPAR subunit GluA1 on its PKA site serine 845 (Figure 4B, and Figure 4\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by western blot analysis of GluA1 phosphorylation shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:44:01.906527Z"
+    },
+    {
+      "id": "c6e256ee-b577-4c56-8be7-be40d8face10",
+      "content_id": "a3b066cf-5ee8-4fde-bd1f-02d5f088c9ac",
+      "claim_id": "C43",
+      "claim": "CaV1.2 and AMPARs are associated with \u03b22AR in hippocampal neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Like CaV1.2, AMPARs are associated with \u03b22AR, Gs, AC and PKA (Davare et al., 2001; Joiner et al., 2010; Wang et al., 2010; Qian et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to literature on receptor-channel complexes.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:44:01.906527Z"
+    },
+    {
+      "id": "3c0fab9a-cb91-41e7-bdd9-ef2ba61430fc",
+      "content_id": "a3b066cf-5ee8-4fde-bd1f-02d5f088c9ac",
+      "claim_id": "C44",
+      "claim": "Carvedilol and alprenolol-induced PKA phosphorylation of LTCC is blocked by \u03b22AR inhibitor ICI, AC inhibitor ddA, and PKA inhibitor H89, but not CaMKII inhibitor KN93.",
+      "claim_type": "EXPLICIT",
+      "source": "Meanwhile, the CAR and ALP-induced PKA phosphorylation of LTCC were blocked by \u03b22AR inhibitor ICI, AC inhibitor ddA, and PKA inhibitor H89, but not CaMKII inhibitor KN93, validating the activation of \u03b22AR-cAMP-PKA pathway (Figure 4C, and Figure 4\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by western blot analysis with various inhibitors shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:44:01.906527Z"
+    },
+    {
+      "id": "1567112a-71f2-459c-b904-361647301f2a",
+      "content_id": "a3b066cf-5ee8-4fde-bd1f-02d5f088c9ac",
+      "claim_id": "C45",
+      "claim": "Carvedilol but not timolol significantly increases the open probability, channel availability and mean ensemble average of endogenous LTCC in rat hippocampal neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the phosphorylation data, CAR but not TIM significantly increased the open probability, channel availability and mean ensemble average of endogenous LTCC in rat hippocampal neurons (Figure 5 and Figure 5\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by cell-attached single channel recordings shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:44:01.906527Z"
+    },
+    {
+      "id": "0a7b88ac-b736-4078-8949-6be30a6f6905",
+      "content_id": "a3b066cf-5ee8-4fde-bd1f-02d5f088c9ac",
+      "claim_id": "C46",
+      "claim": "Carvedilol stimulates LTCC channel activity when present in the patch pipette solution but not when applied outside the patch via bath perfusion.",
+      "claim_type": "EXPLICIT",
+      "source": "CAR stimulated channel activity when present in the patch pipette solution but not when applied outside the patch via bath perfusion (Figure 5 and Figure 5\u2014figure supplement 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by single channel recordings with different drug application methods shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:44:01.906527Z"
+    },
+    {
+      "id": "f3ce1403-44ba-4472-ac0c-c54ae44e5c65",
+      "content_id": "a3b066cf-5ee8-4fde-bd1f-02d5f088c9ac",
+      "claim_id": "C47",
+      "claim": "In backfilling experiments with carvedilol, L-type channel activity is relatively low at the beginning of the recording but significantly increases as the drug diffuses to the pipette tip.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, backfilling experiments with CAR found that L-type channels activity was relatively low at the beginning of the recording but then it significantly increased as the drug diffused to the pipette tip (Figure 5F\u2013G and Figure 5\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by time-course single channel recordings with backfilled pipettes shown in Figures 5F-G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:44:01.906527Z"
+    },
+    {
+      "id": "c6135e9a-1fe0-4d4f-bb0f-ce7d02b563ed",
+      "content_id": "a3b066cf-5ee8-4fde-bd1f-02d5f088c9ac",
+      "claim_id": "C48",
+      "claim": "Isoproterenol applied outside the patch via bath perfusion is able to stimulate LTCC activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with our hypothesis and prior studies (Davare et al., 2001), ISO applied outside the patch via bath perfusion was still able to stimulate LTCC activity (Figure 5\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by single channel recordings with bath-applied ISO shown in Figure 5\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:44:01.906527Z"
+    },
+    {
+      "id": "39c02dbd-4c65-4ac6-8b16-6936a2e5ebd2",
+      "content_id": "a3b066cf-5ee8-4fde-bd1f-02d5f088c9ac",
+      "claim_id": "C49",
+      "claim": "Activation of LTCC by carvedilol promotes cell death in cortical neuron cultures.",
+      "claim_type": "EXPLICIT",
+      "source": "We further found that the activation of LTCC by CAR promoted cell death in cortical neuron cultures, and inhibition of \u03b22AR or LTCC counteracted carvedilol-induced neuronal toxicities (Figure 5\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by MTT cell viability assay shown in Figure 5\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:44:01.906527Z"
+    },
+    {
+      "id": "76e97244-5f96-468b-b76c-72d885aab50e",
+      "content_id": "a3b066cf-5ee8-4fde-bd1f-02d5f088c9ac",
+      "claim_id": "C50",
+      "claim": "Inhibition of \u03b22AR or LTCC counteracts carvedilol-induced neuronal toxicities.",
+      "claim_type": "EXPLICIT",
+      "source": "We further found that the activation of LTCC by CAR promoted cell death in cortical neuron cultures, and inhibition of \u03b22AR or LTCC counteracted carvedilol-induced neuronal toxicities (Figure 5\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by MTT cell viability assay with antagonists shown in Figure 5\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:44:01.906527Z"
+    },
+    {
+      "id": "e7fc25af-e756-4ddf-8e4b-c84ad3a4e519",
+      "content_id": "a3b066cf-5ee8-4fde-bd1f-02d5f088c9ac",
+      "claim_id": "C51",
+      "claim": "Mutation of Ser204 and Ser207 sites within \u03b22AR binding pocket abolishes receptor hydrogen bonds with the catecholamine phenoxy moieties.",
+      "claim_type": "EXPLICIT",
+      "source": "We hypothesized that mutation of Ser204 and Ser207 sites within \u03b22AR binding pocket would abolish receptor hydrogen bonds with the catecholamine phenoxy moieties, thus reducing binding affinity to agonist ISO while having no effect on \u03b2-blocker binding (Figure 6A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a hypothesis based on structural knowledge of \u03b22AR binding pocket, supported by previous mutagenesis studies cited in the text.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:44:01.906527Z"
+    },
+    {
+      "id": "f70235e6-b65b-46c1-a627-18571af9426e",
+      "content_id": "a3b066cf-5ee8-4fde-bd1f-02d5f088c9ac",
+      "claim_id": "C52",
+      "claim": "The mutant S204A/S207A \u03b22AR induces a moderate cAMP signal at high but not low concentrations of isoproterenol.",
+      "claim_type": "EXPLICIT",
+      "source": "The mutant S204A/S207A \u03b22AR induced a moderate cAMP signal at high but not low concentrations of ISO (Figure 6B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by FRET-based cAMP measurements shown in Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:44:01.906527Z"
+    },
+    {
+      "id": "56042495-edce-445a-8583-0fb11d7b3d27",
+      "content_id": "a3b066cf-5ee8-4fde-bd1f-02d5f088c9ac",
+      "claim_id": "C53",
+      "claim": "After stimulation with carvedilol, the \u03b22AR mutant S204A/S207A promotes significant cAMP signals at nanomolar concentrations with a concentration response curve similar to wild-type \u03b22AR.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, after stimulation with CAR, the \u03b22AR mutant S204A/S207A promoted significant cAMP signals at nanomolar concentrations; the overall concentration response curve was similar to those induced by WT \u03b22AR (Figure 6B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by FRET-based cAMP measurements shown in Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:44:01.906527Z"
+    },
+    {
+      "id": "ad6e94ee-86b9-422f-967d-4a4fcc93302a",
+      "content_id": "a3b066cf-5ee8-4fde-bd1f-02d5f088c9ac",
+      "claim_id": "C54",
+      "claim": "Isoproterenol-induced PKA phosphorylation of \u03b22AR S204A/S207A mutant is selectively abolished at nanomolar concentrations.",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, the ISO-induced PKA phosphorylation of \u03b22AR S204A/S207A mutant was selectively abolished at nanomolar concentrations. At higher concentrations, ISO was able to induce reduced PKA phosphorylation of the \u03b22AR S204A/S207A mutant when compared to WT \u03b22AR, consistent with the data of cAMP signals (Figure 6C, and Figure 6\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by western blot analysis shown in Figure 6C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:44:01.906527Z"
+    },
+    {
+      "id": "63d43d7a-3624-47e8-b46a-b057d3d7caf2",
+      "content_id": "a3b066cf-5ee8-4fde-bd1f-02d5f088c9ac",
+      "claim_id": "C55",
+      "claim": "Isoproterenol fails to induce GRK phosphorylation of \u03b22AR S204A/S207A mutant at different concentrations.",
+      "claim_type": "EXPLICIT",
+      "source": "Meanwhile, ISO failed to induce GRK phosphorylation of \u03b22AR S204A/S207A mutant at different concentrations (Figure 6C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by western blot analysis shown in Figure 6C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:44:01.906527Z"
+    },
+    {
+      "id": "a4ccf769-9a6b-458e-80cb-22ea59e37ba9",
+      "content_id": "a3b066cf-5ee8-4fde-bd1f-02d5f088c9ac",
+      "claim_id": "C56",
+      "claim": "Carvedilol induces equivalent PKA phosphorylation of \u03b22AR wild-type and S204A/S207A mutant at different concentrations.",
+      "claim_type": "EXPLICIT",
+      "source": "In comparison, CAR induced equivalent PKA phosphorylation of \u03b22AR WT and S204A/S207A mutant at different concentrations (Figure 6D, and Figure 6\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by western blot analysis shown in Figure 6D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:44:01.906527Z"
+    },
+    {
+      "id": "edb2ba6d-fcf1-491b-8da8-cf87d23c2159",
+      "content_id": "a3b066cf-5ee8-4fde-bd1f-02d5f088c9ac",
+      "claim_id": "C57",
+      "claim": "In DKO neurons expressing the mutant S204A/S207A \u03b22AR, carvedilol but not isoproterenol (30 nM) promotes PKA phosphorylation of LTCC \u03b111.2.",
+      "claim_type": "EXPLICIT",
+      "source": "In DKO neurons expressing the mutant S204A/S207A \u03b22AR, CAR, but not ISO (30 nM) promoted PKA phosphorylation of LTCC \u03b111.2 (Figure 7A and B and Figure 7\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by confocal imaging of LTCC phosphorylation shown in Figures 7A-B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:44:01.906527Z"
+    },
+    {
+      "id": "9693fc2d-03c9-4502-bff1-3cfd083c9d61",
+      "content_id": "a3b066cf-5ee8-4fde-bd1f-02d5f088c9ac",
+      "claim_id": "C58",
+      "claim": "In DKO neurons expressing mutant S204A/S207A \u03b22AR, carvedilol but not isoproterenol significantly increases the open probability, channel availability and mean ensemble average of LTCC.",
+      "claim_type": "EXPLICIT",
+      "source": "In agreement, CAR, but not ISO significantly increased the open probability, channel availability and mean ensemble average of LTCC (Figure 7C\u20137G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by single channel recordings shown in Figures 7C-G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:44:01.906527Z"
+    },
+    {
+      "id": "40cde99c-ca54-476c-b9e6-c534f624c1df",
+      "content_id": "a3b066cf-5ee8-4fde-bd1f-02d5f088c9ac",
+      "claim_id": "C59",
+      "claim": "Carvedilol and alprenolol are Gs-biased partial agonists of \u03b2AR for highly spatially restricted cAMP/PKA signaling to CaV1.2 in neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Our study defines CAR and ALP as Gs-biased partial agonists of \u03b2AR for highly spatially restricted cAMP/PKA signaling to CaV1.2 in neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data showing selective Gs/PKA activation without GRK activation and restricted cAMP signaling.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:44:01.906527Z"
+    },
+    {
+      "id": "f1ae2fb2-0ae4-414a-98dc-0f1113bdabeb",
+      "content_id": "a3b066cf-5ee8-4fde-bd1f-02d5f088c9ac",
+      "claim_id": "C60",
+      "claim": "PKA-mediated phosphorylation plays critical roles in heterologous desensitization of GPCRs and in receptor switching from Gs to Gi coupling.",
+      "claim_type": "EXPLICIT",
+      "source": "PKA-mediated phosphorylation is thought to play critical roles in heterologous desensitization of GPCRs and in receptor switching from Gs to Gi coupling (Daaka et al., 1997; Zamah et al., 2002), whereas GRK-mediated phosphorylation is implicated in \u03b2-arrestin recruitment and \u03b2-arrestin-dependent ERK activation (Luttrell et al., 1999; Pierce et al., 2000; Kim et al., 2005; Ren et al., 2005; Zidar et al., 2009; Choi et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to literature on GPCR phosphorylation and regulation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:44:01.906527Z"
+    },
+    {
+      "id": "f334bcdc-6893-41cb-8c86-a1c4ef286503",
+      "content_id": "a3b066cf-5ee8-4fde-bd1f-02d5f088c9ac",
+      "claim_id": "C61",
+      "claim": "GRK-mediated phosphorylation is implicated in \u03b2-arrestin recruitment and \u03b2-arrestin-dependent ERK activation.",
+      "claim_type": "EXPLICIT",
+      "source": "PKA-mediated phosphorylation is thought to play critical roles in heterologous desensitization of GPCRs and in receptor switching from Gs to Gi coupling (Daaka et al., 1997; Zamah et al., 2002), whereas GRK-mediated phosphorylation is implicated in \u03b2-arrestin recruitment and \u03b2-arrestin-dependent ERK activation (Luttrell et al., 1999; Pierce et al., 2000; Kim et al., 2005; Ren et al., 2005; Zidar et al., 2009; Choi et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to literature on GRK/\u03b2-arrestin signaling.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:44:01.906527Z"
+    },
+    {
+      "id": "b79fa28f-e8af-4659-a6d5-8c3e8fbee464",
+      "content_id": "a3b066cf-5ee8-4fde-bd1f-02d5f088c9ac",
+      "claim_id": "C62",
+      "claim": "PKA and GRKs phosphorylate distinct subpopulations of \u03b22AR in a single fibroblast or neuron.",
+      "claim_type": "EXPLICIT",
+      "source": "We have recently characterized that PKA and GRKs phosphorylate distinct subpopulations of \u03b22AR in a single fibroblast or neuron (Shen et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to previous work by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:44:01.906527Z"
+    },
+    {
+      "id": "2cf50a43-8516-4b35-807e-e3335907bce2",
+      "content_id": "a3b066cf-5ee8-4fde-bd1f-02d5f088c9ac",
+      "claim_id": "C63",
+      "claim": "While GRK phosphorylation of \u03b22AR is only observed at high concentrations of agonists, PKA phosphorylation can be induced with minimal doses of agonist.",
+      "claim_type": "EXPLICIT",
+      "source": "While GRK phosphorylation of \u03b22AR is only observed at high concentrations of agonists, PKA phosphorylation can be induced with minimal doses of agonist (Shen et al., 2018; Tran et al., 2004; Tran et al., 2007; Liu et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous studies and confirmed by data in this study.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:44:01.906527Z"
+    },
+    {
+      "id": "9a22a0ff-490b-4d38-9840-190b62a4a017",
+      "content_id": "a3b066cf-5ee8-4fde-bd1f-02d5f088c9ac",
+      "claim_id": "C64",
+      "claim": "Carvedilol does not promote GRK phosphorylation at low concentrations and induces a slow and minimal GRK effect at high concentrations when compared to isoproterenol.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, our data show CAR does not promote GRK phosphorylation at low concentrations and induces a slow and minimal GRK effect at high concentrations when compared to those induced by ISO.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated by western blot analysis shown in Figures 1-2 and supplementary figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:44:01.906527Z"
+    },
+    {
+      "id": "1064ef06-2e3b-4936-bca0-8262f864631e",
+      "content_id": "a3b066cf-5ee8-4fde-bd1f-02d5f088c9ac",
+      "claim_id": "C65",
+      "claim": "Carvedilol has been recognized as a biased \u03b2-blocker that preferentially activates \u03b2-arrestin/ERK pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "Previously, CAR has been recognized as a biased \u03b2-blocker that preferentially activates \u03b2-arrestin/ERK pathways (Wisler et al., 2007; Kim et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:44:01.906527Z"
+    },
+    {
+      "id": "19d2132d-5723-43b7-8d54-c5f8a3e15253",
+      "content_id": "a3b066cf-5ee8-4fde-bd1f-02d5f088c9ac",
+      "claim_id": "C66",
+      "claim": "GRK phosphorylation of \u03b22AR is not necessary for carvedilol-induced activation of ERK.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite the prominent role of GRK phosphorylation in full agonist ISO-induced \u03b22AR-\u03b2-arrestin/ERK signaling, our data clearly indicate that GRK phosphorylation of \u03b22AR is not necessary for CAR-induced activation of ERK, consistent with a recent study showing a distinct general mechanism of \u03b2-arrestin activation that does not require the GRK-phosphorylated tail of different GPCRs (Eichel et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from data showing ERK activation without GRK phosphorylation, supported by citation to recent literature.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:44:01.906527Z"
+    },
+    {
+      "id": "e6ee1658-ef4f-4e2c-9578-0cb537b41b06",
+      "content_id": "a3b066cf-5ee8-4fde-bd1f-02d5f088c9ac",
+      "claim_id": "C67",
+      "claim": "In the absence of all G proteins, GPCRs fail to transduce \u03b2-arrestin/ERK signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "Meanwhile, other studies show that in the absence of all G proteins, GPCRs fail to transduce \u03b2-arrestin/ERK signaling (Grundmann et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:44:01.906527Z"
+    },
+    {
+      "id": "f10afc24-9339-43ee-99c8-bf9c30689bad",
+      "content_id": "a3b066cf-5ee8-4fde-bd1f-02d5f088c9ac",
+      "claim_id": "C68",
+      "claim": "There is a concentration-dependent correlation between PKA phosphorylation of \u03b22AR and ERK activity induced by \u03b2-blockers.",
+      "claim_type": "EXPLICIT",
+      "source": "In our study, we observed a concentration-dependent correlation between PKA phosphorylation of \u03b22AR with ERK activity induced by \u03b2-blockers, suggesting the potential role of Gs and PKA in CAR-induced \u03b22AR-\u03b2-arrestin/ERK signaling are overlooked.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observed from data shown in Figure 2\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:44:01.906527Z"
+    },
+    {
+      "id": "c5bdfa99-efd1-4504-a469-0192429582ac",
+      "content_id": "a3b066cf-5ee8-4fde-bd1f-02d5f088c9ac",
+      "claim_id": "C69",
+      "claim": "Gi is not required for carvedilol-induced \u03b22AR/\u03b2-arrestin signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "In comparison, Gi is not required for CAR-induced \u03b22AR/\u03b2-arrestin signaling even though CAR induces Gi recruitment to \u03b21AR for transducing \u03b21AR/\u03b2-arrestin signaling (Wang et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation and data shown in Figure 3\u2014figure supplement 1 showing no effect of pertussis toxin.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:44:01.906527Z"
+    },
+    {
+      "id": "91ff88f0-8eb0-4b54-91df-5f87bd43a02a",
+      "content_id": "a3b066cf-5ee8-4fde-bd1f-02d5f088c9ac",
+      "claim_id": "C70",
+      "claim": "Activation of \u03b22AR with femtomolar concentrations of ligands causes sustained ERK signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, our results are also in line with a recent report that activation of \u03b22AR with as low as femtomolar concentrations of ligands causes sustained ERK signaling (Civciristov et al., 2018), further support a PKA but GRK-dependent mechanism in GPCR-induced ERK activation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to recent literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:44:01.906527Z"
+    },
+    {
+      "id": "a67e8725-1279-4b43-b2a3-3c0543b4ba7b",
+      "content_id": "a3b066cf-5ee8-4fde-bd1f-02d5f088c9ac",
+      "claim_id": "C71",
+      "claim": "\u03b22AR with S204/207A mutation loses binding to adrenaline but still binds with several \u03b2-blockers including alprenolol.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous mutagenesis studies have shown that \u03b22AR with S204/207A mutation loses binding to adrenaline but still binds with several \u03b2-blockers including ALP (Liapakis et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to previous mutagenesis study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:44:01.906527Z"
+    },
+    {
+      "id": "2258be8e-c1ed-45cc-833d-24e03642cb02",
+      "content_id": "a3b066cf-5ee8-4fde-bd1f-02d5f088c9ac",
+      "claim_id": "C72",
+      "claim": "The S204/207A mutant \u03b22AR is not only refractory to its agonists but also completely lost both ISO- and CAR-induced GRK-phosphorylation of \u03b22AR.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the S204/207A \u03b22AR mutant is not only refractory to its agonists but also completely lost both ISO- and CAR-induced GRK-phosphorylation of \u03b22AR.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated by western blot analysis shown in Figure 6C-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:44:01.906527Z"
+    },
+    {
+      "id": "f0deb27e-cded-4f61-aee3-207749ed65f6",
+      "content_id": "a3b066cf-5ee8-4fde-bd1f-02d5f088c9ac",
+      "claim_id": "C73",
+      "claim": "Many \u03b2-blockers possess intrinsic sympathomimetic activities.",
+      "claim_type": "EXPLICIT",
+      "source": "Many \u03b2-blockers possess intrinsic sympathomimetic activities (Bakris, 2009; Gorre and Vandekerckhove, 2010), which are problematic due to the side effects through stimulation of \u03b2ARs (Bakris, 2009; Gorre and Vandekerckhove, 2010), a feature that limits the clinical utility of the drugs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to clinical literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:44:01.906527Z"
+    },
+    {
+      "id": "ac07e454-99aa-4c4e-832e-41d10c61c714",
+      "content_id": "a3b066cf-5ee8-4fde-bd1f-02d5f088c9ac",
+      "claim_id": "C74",
+      "claim": "\u03b2-blockers promote activation of \u03b22AR by recruiting Gs that selectively transduces cAMP/PKA signal but not GRK signal.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we show that \u03b2-blockers promote activation of \u03b22AR by recruiting Gs that selectively transduces cAMP/PKA signal but not GRK signal.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion based on the experimental data presented throughout the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:44:01.906527Z"
+    },
+    {
+      "id": "843bff65-3abd-48a7-a6ff-3156507b0299",
+      "content_id": "a3b066cf-5ee8-4fde-bd1f-02d5f088c9ac",
+      "claim_id": "C75",
+      "claim": "Binding of \u03b2-blockers to \u03b21AR enhances cAMP levels locally by dissociating a \u03b21AR-PDE4 complex, thereby reducing the local cAMP-hydrolytic activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Meanwhile, binding of \u03b2-blockers to \u03b21AR has been shown to enhance cAMP levels locally by dissociating a \u03b21AR-PDE4 complex, thereby reducing the local cAMP-hydrolytic activity (Richter et al., 2013), \u03b21AR and \u03b22AR thus could utilize different mechanisms for \u03b2-blocker-induced signaling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to literature on \u03b21AR-PDE4 interactions.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:44:01.906527Z"
+    },
+    {
+      "id": "12e5d238-c124-4255-ace1-3b57b206c3d8",
+      "content_id": "a3b066cf-5ee8-4fde-bd1f-02d5f088c9ac",
+      "claim_id": "C76",
+      "claim": "\u03b21AR and \u03b22AR could utilize different mechanisms for \u03b2-blocker-induced signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "Meanwhile, binding of \u03b2-blockers to \u03b21AR has been shown to enhance cAMP levels locally by dissociating a \u03b21AR-PDE4 complex, thereby reducing the local cAMP-hydrolytic activity (Richter et al., 2013), \u03b21AR and \u03b22AR thus could utilize different mechanisms for \u03b2-blocker-induced signaling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from comparison of \u03b21AR and \u03b22AR mechanisms described in the text.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:44:01.906527Z"
+    },
+    {
+      "id": "11d41f1a-9155-47d6-95b0-0330bdd03177",
+      "content_id": "a3b066cf-5ee8-4fde-bd1f-02d5f088c9ac",
+      "claim_id": "C77",
+      "claim": "The \u03b2-blocker-induced \u03b22AR-cAMP signal is sufficient to promote PKA phosphorylation of both \u03b22AR and the receptor-associated CaV1.2 of LTCC, but not AMPAR GluA1 subunit.",
+      "claim_type": "EXPLICIT",
+      "source": "Another interesting observation is that the \u03b2-blocker-induced \u03b22AR-cAMP signal is sufficient to promote PKA phosphorylation of both \u03b22AR and the receptor-associated CaV1.2 of LTCC, but not another substrate, the AMPAR GluA1 subunit.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated by western blot analysis shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:44:01.906527Z"
+    },
+    {
+      "id": "2a701688-c925-4ef8-a5f3-40a6ca7d751f",
+      "content_id": "a3b066cf-5ee8-4fde-bd1f-02d5f088c9ac",
+      "claim_id": "C78",
+      "claim": "Both LTCC and AMPAR are shown to associate with \u03b22AR in hippocampal neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Both LTCC and AMPAR are shown to associate with the \u03b22AR in hippocampal neurons (Davare et al., 2001; Joiner et al., 2010; Wang et al., 2010; Qian et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to literature on receptor-channel complexes.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:44:01.906527Z"
+    },
+    {
+      "id": "6e863547-2dd2-4639-8f03-913bad68277c",
+      "content_id": "a3b066cf-5ee8-4fde-bd1f-02d5f088c9ac",
+      "claim_id": "C79",
+      "claim": "The preference of one local membrane target over another local target indicates a highly restricted nature of the cAMP-PKA activities.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, the preference of one local membrane target over another local target indicates a highly restricted nature of the cAMP-PKA activities, potentially dependent on the recently identified distinct subpopulations of \u03b22AR and associated signaling molecules in the neurons (Shen et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the selective phosphorylation data, supported by citation to previous work.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:44:01.906527Z"
+    },
+    {
+      "id": "a3a4c18c-07a8-4ee7-8400-a4f78a87b685",
+      "content_id": "a3b066cf-5ee8-4fde-bd1f-02d5f088c9ac",
+      "claim_id": "C80",
+      "claim": "PKA phosphorylation of LTCC leads to augmentation of LTCC activity, potentially contributing to neuronal toxicities.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, the PKA phosphorylation leads to augmentation of LTCC activity, potentially contributing to the neuronal toxicities.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from data showing increased LTCC activity (Figure 5) and cell death (Figure 5\u2014figure supplement 2).",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:44:01.906527Z"
+    },
+    {
+      "id": "15ac8907-a6e3-4a28-b6b9-eefb4f736d13",
+      "content_id": "a3b066cf-5ee8-4fde-bd1f-02d5f088c9ac",
+      "claim_id": "C81",
+      "claim": "Activation of GPCR at low ligand concentrations should be taken into consideration when designing and screening new therapeutic drugs.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, activation of GPCR at low ligand concentrations should be taken into consideration when designing and screening new therapeutic drugs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a recommendation based on the findings of the study showing \u03b2-blocker activation of \u03b22AR at nanomolar concentrations.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:44:01.906527Z"
+    },
+    {
+      "id": "bcd0c685-0bce-4d4c-99cd-4408d464fbe7",
+      "content_id": "a3b066cf-5ee8-4fde-bd1f-02d5f088c9ac",
+      "claim_id": "C82",
+      "claim": "Isoproterenol stimulates LTCC activity in hippocampal neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown before, ISO stimulates LTCC activity (Figure 5) (Shen et al., 2018; Davare et al., 2001).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by single channel recordings shown in Figure 5 and supported by citations to previous studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:44:01.906527Z"
+    },
+    {
+      "id": "9249d381-17bc-45d0-890a-b769f3a33cfd",
+      "content_id": "a3b066cf-5ee8-4fde-bd1f-02d5f088c9ac",
+      "claim_id": "C83",
+      "claim": "\u03b22AR functionally interacts with AMPA receptor and L-type Ca2+ channel CaV1.2 at glutamatergic synapses.",
+      "claim_type": "EXPLICIT",
+      "source": "In the CNS, \u03b22AR emerges as a prevalent postsynaptic norepinephrine effector at glutamatergic synapses, where \u03b22AR functionally interacts with AMPA receptor (AMPAR) and L-type Ca2+ channel (LTCC) CaV1.2, and regulates neuronal excitability and synaptic plasticity (Davare et al., 2001; Joiner et al., 2010; Wang et al., 2010; Qian et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to literature on \u03b22AR function in neurons.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:44:01.906527Z"
+    },
+    {
+      "id": "ce6a790d-9d1f-4666-9dcc-d3793ff774b9",
+      "content_id": "a3b066cf-5ee8-4fde-bd1f-02d5f088c9ac",
+      "claim_id": "C84",
+      "claim": "\u03b22AR regulates neuronal excitability and synaptic plasticity.",
+      "claim_type": "EXPLICIT",
+      "source": "In the CNS, \u03b22AR emerges as a prevalent postsynaptic norepinephrine effector at glutamatergic synapses, where \u03b22AR functionally interacts with AMPA receptor (AMPAR) and L-type Ca2+ channel (LTCC) CaV1.2, and regulates neuronal excitability and synaptic plasticity (Davare et al., 2001; Joiner et al., 2010; Wang et al., 2010; Qian et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to literature on \u03b22AR function in neurons.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:44:01.906527Z"
+    },
+    {
+      "id": "f00ae980-c4da-44a7-9ec2-5d343127c923",
+      "content_id": "a3b066cf-5ee8-4fde-bd1f-02d5f088c9ac",
+      "claim_id": "C85",
+      "claim": "Carvedilol and alprenolol promote phosphorylation of \u03b22AR by PKA in hippocampal neurons with similar distribution to agonist-stimulated neurons.",
+      "claim_type": "IMPLICIT",
+      "source": "Confocal images show PKA-phosphorylated \u03b22AR in agonist- or \u03b2-blocker-stimulated neurons have similar distribution. Scale bar, 10 \u03bcm. Representative of 6 images for each condition, three experiments.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Shown by confocal imaging in Figure 2E demonstrating similar subcellular distribution patterns.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:44:01.906527Z"
+    },
+    {
+      "id": "35350055-cc2a-4828-8ff6-e4131b00e79b",
+      "content_id": "a3b066cf-5ee8-4fde-bd1f-02d5f088c9ac",
+      "claim_id": "C86",
+      "claim": "Carvedilol and alprenolol are partial agonists of \u03b22AR at clinically relevant concentrations rather than strict antagonists.",
+      "claim_type": "IMPLICIT",
+      "source": "In this study, using a combination of highly sensitive tools such as engineered FRET-based cAMP sensors and single channel recording together with detection by phospho-specific antibodies, we show for the first time that \u03b2-blockers such as CAR and ALP can promote receptor-Gs coupling at nanomolar concentrations in living cells, which is clinically relevant in contrast to superphysiological concentrations in previous studies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data showing \u03b22AR activation at nanomolar concentrations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:44:01.906527Z"
+    },
+    {
+      "id": "3554d89c-80d4-4a7a-9e9f-19f582bfc2df",
+      "content_id": "a3b066cf-5ee8-4fde-bd1f-02d5f088c9ac",
+      "claim_id": "C87",
+      "claim": "The differential signaling by carvedilol with respect to LTCC and AMPAR indicates both channels form complexes with \u03b22AR localized within dendritic spines.",
+      "claim_type": "EXPLICIT",
+      "source": "The differential signaling by carvedilol with respect to LTCC and AMPAR is especially remarkable because both channels form complexes with \u03b22AR that are localized within dendritic spines.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a known fact about the localization of these receptor-channel complexes.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:44:01.906527Z"
+    },
+    {
+      "id": "6171f53b-88e8-4510-a305-d354e08f4e32",
+      "content_id": "a3b066cf-5ee8-4fde-bd1f-02d5f088c9ac",
+      "claim_id": "C88",
+      "claim": "Local cAMP signals possess the potential to selectively regulate downstream effectors in receptor complexes or within the vicinity of activated receptors.",
+      "claim_type": "EXPLICIT",
+      "source": "Local cAMP signals possess the potential to selectively regulate downstream effectors in receptor complexes or within the vicinity of activated receptors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general principle supported by the experimental data showing selective phosphorylation of CaV1.2 but not GluA1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:44:01.906527Z"
+    },
+    {
+      "id": "9c165610-9139-418d-b6bc-9d319f826272",
+      "content_id": "a3b066cf-5ee8-4fde-bd1f-02d5f088c9ac",
+      "claim_id": "C89",
+      "claim": "About 30% of patches show L-type channel activity in hippocampal neurons without BayK in the recording pipette.",
+      "claim_type": "IMPLICIT",
+      "source": "Diagram reflecting our patch statistics without using BayK in the recording pipette. Only about 30% of our patches showed channel activity.",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "Shown in Figure 5\u2014figure supplement 1A as a pie chart of patch statistics.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:44:01.906527Z"
+    },
+    {
+      "id": "5e6616f0-6fc0-4306-9547-be8f629c9b2d",
+      "content_id": "a3b066cf-5ee8-4fde-bd1f-02d5f088c9ac",
+      "claim_id": "C90",
+      "claim": "Isoproterenol and carvedilol have similar effects on LTCC channel activity whether BayK is included or not in the pipette solution.",
+      "claim_type": "EXPLICIT",
+      "source": "Note that ISO and CAR had similar effects on channel activity whether BayK was included or not in the pipette solution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an observation from the electrophysiology experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:44:01.906527Z"
+    },
+    {
+      "id": "e08806b2-33ca-4585-b6ab-42b2b5ae1a9d",
+      "content_id": "a3b066cf-5ee8-4fde-bd1f-02d5f088c9ac",
+      "claim_id": "C91",
+      "claim": "BayK-8644 promotes longer open times of L-type Ca2+ channels and helps resolve channel openings.",
+      "claim_type": "EXPLICIT",
+      "source": "This pipette solution was supplemented with 1 \u00b5M \u03c9-conotoxin GVIA and 1 \u00b5M \u03c9-conotoxin MCVIIC to block N and P/Q-type Ca2+ channels, respectively, and (S)-(-)-BayK-8644 (500 nM) was included in the pipette solution to promote longer open times and resolve channel openings as previously performed by our group and others (Shen et al., 2018; Davare et al., 2001; Wang et al., 2001; Qian et al., 2017; Hess et al., 1986; Schuhmann et al., 1997; Costantin et al., 1998; Yue and Marban, 1990; Dzhura and Neely, 2003; Navedo et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail supported by citations to previous studies using this approach.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:44:01.906527Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "eed210bf-99c3-475c-b4f5-17c4338f16c8",
+      "content_id": "a3b066cf-5ee8-4fde-bd1f-02d5f088c9ac",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Carvedilol and alprenolol selectively activate \u03b22AR at nanomolar concentrations, promoting PKA phosphorylation but minimal GRK phosphorylation, while other \u03b2-blockers (ICI118551, timolol, metoprolol) do not induce PKA phosphorylation. This selective PKA activation is confirmed in both HEK293 cells and hippocampal neurons.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C2, C21-C28, and C30 provide converging evidence from western blots (Figures 1-2), concentration-response curves, and pharmacological inhibition studies demonstrating that carvedilol and alprenolol activate \u03b22AR at nanomolar concentrations to promote PKA but not GRK phosphorylation. The data are internally consistent across cell types and include appropriate controls (ICI, H89, non-activating \u03b2-blockers).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:44:01.906527Z"
+    },
+    {
+      "id": "1223d505-51fb-44d6-bea5-95ad59c01966",
+      "content_id": "a3b066cf-5ee8-4fde-bd1f-02d5f088c9ac",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Carvedilol and alprenolol promote Gs\u03b1 recruitment to \u03b22AR, as demonstrated by proximity ligation assays, and this Gs/AC coupling is necessary for PKA phosphorylation of \u03b22AR.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31-C33 demonstrate Gs\u03b1 recruitment to \u03b22AR using PLA (Figure 3A) with appropriate negative control (timolol), and validate the Gs/AC pathway using the AC inhibitor ddA (Figure 3\u2014figure supplement 1). The data support the mechanistic link between \u03b2-blocker binding, Gs activation, and downstream PKA signaling.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:44:01.906527Z"
+    },
+    {
+      "id": "f0521cb9-d67a-4a5c-9171-a8786458e906",
+      "content_id": "a3b066cf-5ee8-4fde-bd1f-02d5f088c9ac",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Carvedilol and alprenolol induce highly spatially restricted cAMP signals detectable only in the immediate vicinity of activated \u03b22AR using a \u03b22AR-ICUE3 fusion biosensor, but not by generic cytosolic or plasma membrane-targeted cAMP sensors. PDE activity suppresses and restricts cAMP distribution.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C34-C40 provide strong evidence for spatially restricted cAMP signaling using multiple complementary approaches: generic ICUE3 shows no signal (Figure 3B), IBMX reveals small signals (Figure 3C), \u03b22AR-ICUE3 fusion detects local cAMP at nanomolar concentrations (Figures 3D-E), and membrane-targeted sensors (CAAX-ICUE3, LYN-ICUE3) fail to detect \u03b2-blocker-induced cAMP (Figure 3\u2014figure supplement 3). The experimental design appropriately tests spatial compartmentalization.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:44:01.906527Z"
+    },
+    {
+      "id": "003adc17-66d5-4e0c-a037-64a9dcfbed0f",
+      "content_id": "a3b066cf-5ee8-4fde-bd1f-02d5f088c9ac",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Carvedilol and alprenolol selectively enhance PKA-dependent phosphorylation of LTCC CaV1.2 but not AMPAR GluA1 in hippocampal neurons, despite both channels being associated with \u03b22AR. This selective phosphorylation depends on \u03b22AR, AC, and PKA but not CaMKII.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C41-C42, C44, and C77 demonstrate selective substrate phosphorylation using phospho-specific antibodies (Figure 4). The data show significant phosphorylation of CaV1.2 at S1928 and S1700 but not GluA1 at S845, with appropriate pharmacological validation using ICI, ddA, H89, and KN93. This selectivity is remarkable given both channels associate with \u03b22AR and represents strong evidence for highly restricted cAMP/PKA signaling.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:44:01.906527Z"
+    },
+    {
+      "id": "f396a338-1727-4eca-80ed-470e1afd0aab",
+      "content_id": "a3b066cf-5ee8-4fde-bd1f-02d5f088c9ac",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Carvedilol increases LTCC channel activity (open probability, availability, ensemble average) in hippocampal neurons only when present inside the patch pipette, not when applied externally, demonstrating spatially restricted signaling. Isoproterenol, in contrast, stimulates LTCC activity when applied externally.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C48 and C82 provide compelling electrophysiological evidence for spatially restricted signaling using cell-attached patch clamp recordings (Figure 5). The key observation that carvedilol only works when inside the pipette (not bath-applied) while isoproterenol works from outside strongly supports restricted cAMP signaling. Backfilling experiments (Figures 5F-G) provide additional temporal evidence. The experimental design appropriately tests spatial compartmentalization at the functional level.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:44:01.906527Z"
+    },
+    {
+      "id": "3f051da6-d4da-4188-a3c8-4bf02e6aa68a",
+      "content_id": "a3b066cf-5ee8-4fde-bd1f-02d5f088c9ac",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "A \u03b22AR mutant (S204A/S207A) lacking high-affinity catecholamine binding is preferentially activated by carvedilol but not isoproterenol at nanomolar concentrations, as demonstrated by cAMP measurements and PKA phosphorylation assays. The mutant completely loses GRK phosphorylation in response to both ligands.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C51-C56 demonstrate selective activation of the engineered mutant receptor using FRET-based cAMP measurements (Figure 6B) and western blots (Figures 6C-D). The data show that the S204A/S207A mutation selectively impairs isoproterenol responses at low concentrations while preserving carvedilol responses. The complete loss of GRK phosphorylation for both ligands is an interesting observation. The hypothesis (C51) is based on structural knowledge and supported by previous mutagenesis studies.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:44:01.906527Z"
+    },
+    {
+      "id": "61e38779-7fca-4a4f-9a8e-21bbcdc57f72",
+      "content_id": "a3b066cf-5ee8-4fde-bd1f-02d5f088c9ac",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "In neurons expressing the S204A/S207A mutant \u03b22AR, carvedilol but not isoproterenol (30 nM) promotes PKA phosphorylation of LTCC and increases channel activity, demonstrating functional consequences of selective receptor activation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C57-C58 extend the mutant receptor findings to functional outcomes in neurons using confocal imaging (Figures 7A-B) and single channel recordings (Figures 7C-G). The data demonstrate that the selective activation by carvedilol translates to downstream LTCC phosphorylation and increased channel activity. This provides strong validation of the mutant receptor approach and confirms the signaling pathway.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:44:01.906527Z"
+    },
+    {
+      "id": "a53fa93d-1d74-402c-ad89-9c33a9f7012a",
+      "content_id": "a3b066cf-5ee8-4fde-bd1f-02d5f088c9ac",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Carvedilol-induced activation of LTCC promotes cell death in cortical neuron cultures, which is prevented by inhibition of \u03b22AR or LTCC.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49-C50 demonstrate neuronal toxicity using MTT cell viability assays (Figure 5\u2014figure supplement 2). The data show decreased viability with carvedilol treatment that is rescued by \u03b22AR antagonist (timolol) or LTCC blocker (isradipine) but not \u03b21AR antagonist (CGP20712A). This provides functional evidence for the physiological consequences of carvedilol-induced LTCC activation, though the mechanism linking LTCC activation to cell death could be explored further.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:44:01.906527Z"
+    },
+    {
+      "id": "61f00a32-bb65-430f-8398-959f7e321de7",
+      "content_id": "a3b066cf-5ee8-4fde-bd1f-02d5f088c9ac",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Carvedilol and alprenolol induce concentration-dependent increases in ERK phosphorylation that correlate with PKA phosphorylation of \u03b22AR, suggesting a potential role for Gs/PKA in \u03b2-arrestin/ERK signaling.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C25 and C68 show ERK phosphorylation data (Figure 2\u2014figure supplement 2) and propose a correlation with PKA phosphorylation. While the data show concentration-dependent ERK activation, the mechanistic link between PKA phosphorylation and ERK activation is speculative. The authors acknowledge this is an inference and that the role of Gs/PKA in \u03b2-arrestin/ERK signaling may be overlooked, but additional experiments (e.g., testing whether PKA inhibition blocks ERK activation) would be needed to establish causality.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:44:01.906527Z"
+    },
+    {
+      "id": "53a03826-84dc-473c-8f5f-ba1360526bde",
+      "content_id": "a3b066cf-5ee8-4fde-bd1f-02d5f088c9ac",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Carvedilol induces minimal GRK phosphorylation at low concentrations and slow/minimal GRK effects at high concentrations compared to isoproterenol. GRK phosphorylation is not necessary for carvedilol-induced ERK activation, and the S204A/S207A mutant completely loses GRK phosphorylation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C64, C66, and C72 demonstrate minimal GRK activation by carvedilol using western blots (Figures 1-2, Figure 2\u2014figure supplement 3, Figures 6C-D). The time-course data (Figure 2\u2014figure supplement 3) show slow GRK phosphorylation by carvedilol compared to isoproterenol. The inference that GRK phosphorylation is not necessary for ERK activation (C66) is supported by the observation of ERK activation without substantial GRK phosphorylation and is consistent with recent literature cited.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:44:01.906527Z"
+    },
+    {
+      "id": "4d6b7f83-2ab5-4e6a-b72b-0476350cf93a",
+      "content_id": "a3b066cf-5ee8-4fde-bd1f-02d5f088c9ac",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Background on GPCR signaling mechanisms, \u03b22AR functions, \u03b2-blocker pharmacology, and previous findings on spatially segregated \u03b22AR phosphorylation and ion channel regulation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7-C20 provide background information supported by appropriate citations to established literature. These claims establish the context for the study, including GPCR signaling mechanisms (C7-C10), \u03b22AR functions (C11-C15), and \u03b2-blocker pharmacology (C16-C20). The citations appear appropriate and the background knowledge is well-established.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:44:01.906527Z"
+    },
+    {
+      "id": "b01a3533-5cc0-4973-b416-a53d35614a12",
+      "content_id": "a3b066cf-5ee8-4fde-bd1f-02d5f088c9ac",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "\u03b22AR is a prevalent postsynaptic norepinephrine effector at glutamatergic synapses in the CNS, where it functionally interacts with AMPAR and LTCC CaV1.2 and regulates neuronal excitability and synaptic plasticity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29, C43, C78, C83-C84 describe established knowledge about \u03b22AR function in neurons, supported by multiple citations to previous literature. This background information provides important context for understanding the significance of the selective LTCC phosphorylation findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:44:01.906527Z"
+    },
+    {
+      "id": "f2100fa3-6808-4894-a55a-1f4bacd386c1",
+      "content_id": "a3b066cf-5ee8-4fde-bd1f-02d5f088c9ac",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Carvedilol and alprenolol are Gs-biased partial agonists of \u03b22AR that promote highly spatially restricted cAMP/PKA signaling to selectively target CaV1.2 in neurons at clinically relevant nanomolar concentrations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59, C74, and C86 represent the main conclusions of the study, synthesizing the experimental findings. These conclusions are well-supported by the collective evidence from phosphorylation assays, cAMP measurements, Gs\u03b1 recruitment, and functional LTCC recordings. The characterization of these \u03b2-blockers as 'Gs-biased partial agonists' with 'highly spatially restricted' signaling is justified by the data showing selective Gs/PKA activation without GRK activation and local cAMP signals detectable only by receptor-fused biosensors.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:44:01.906527Z"
+    },
+    {
+      "id": "5a6907bf-322c-44bb-96c7-d125eb5a03d0",
+      "content_id": "a3b066cf-5ee8-4fde-bd1f-02d5f088c9ac",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Discussion of PKA vs. GRK phosphorylation roles, previous characterization of carvedilol as a biased \u03b2-blocker, mechanisms of \u03b2-arrestin activation, differences between \u03b21AR and \u03b22AR mechanisms, and clinical implications of sympathomimetic \u03b2-blockers.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C60-C63, C65, C67, C69-C71, C73, C75-C76 provide discussion context supported by appropriate citations to literature. These claims interpret the findings in light of previous work and discuss mechanistic implications. The citations appear appropriate and the interpretations are reasonable, though some represent speculative connections (e.g., C76 about different mechanisms for \u03b21AR vs. \u03b22AR).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:44:01.906527Z"
+    },
+    {
+      "id": "653ef0d5-6c89-42eb-b1ed-12ebeb209701",
+      "content_id": "a3b066cf-5ee8-4fde-bd1f-02d5f088c9ac",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The selective phosphorylation of LTCC over AMPAR indicates highly restricted cAMP-PKA activity, potentially dependent on distinct \u03b22AR subpopulations. PKA phosphorylation of LTCC leads to augmented channel activity that may contribute to neuronal toxicity. These findings should be considered in drug design.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C79-C81 and C88 represent interpretations and implications of the findings. The inference about highly restricted cAMP-PKA activity (C79) is well-supported by the selective phosphorylation data. The connection to neuronal toxicity (C80) is supported by the MTT assay data. The recommendation for drug design (C81) is a reasonable implication of the findings showing low-concentration GPCR activation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:44:01.906527Z"
+    },
+    {
+      "id": "19ada9f6-5469-4eaa-9d84-9d07a5deb5e0",
+      "content_id": "a3b066cf-5ee8-4fde-bd1f-02d5f088c9ac",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Methodological observations including similar subcellular distribution of PKA-phosphorylated \u03b22AR with different ligands, localization of receptor-channel complexes in dendritic spines, patch statistics for LTCC recordings, and the use of BayK-8644 to facilitate channel recordings.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C85, C87, C89-C91 describe methodological details and observations. C85 notes similar distribution patterns in confocal images (Figure 2E). C87 states known localization of receptor-channel complexes. C89 provides patch statistics (Figure 5\u2014figure supplement 1A). C90-C91 describe methodological details about BayK-8644 use, supported by citations to previous studies using this approach.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:44:01.906527Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "0121b24d-49f1-454b-9363-a7e416323ef1",
+      "result_id": "eed210bf-99c3-475c-b4f5-17c4338f16c8"
+    },
+    {
+      "claim_id": "8a5a648c-4fb1-4473-85f9-98d4157810e0",
+      "result_id": "eed210bf-99c3-475c-b4f5-17c4338f16c8"
+    },
+    {
+      "claim_id": "6d9726ed-0de1-4168-998a-e43fe89e5fd4",
+      "result_id": "eed210bf-99c3-475c-b4f5-17c4338f16c8"
+    },
+    {
+      "claim_id": "e47eda62-b366-4829-92df-0e0716590003",
+      "result_id": "eed210bf-99c3-475c-b4f5-17c4338f16c8"
+    },
+    {
+      "claim_id": "43294ed3-f5ca-4a6b-8351-5ed662ad9406",
+      "result_id": "eed210bf-99c3-475c-b4f5-17c4338f16c8"
+    },
+    {
+      "claim_id": "e4b9d54e-b200-4449-9894-d350368e71c9",
+      "result_id": "eed210bf-99c3-475c-b4f5-17c4338f16c8"
+    },
+    {
+      "claim_id": "0c902995-48c9-4e36-8ae6-433120ed0657",
+      "result_id": "eed210bf-99c3-475c-b4f5-17c4338f16c8"
+    },
+    {
+      "claim_id": "f0f51b78-d77c-4ae8-a5ea-524ecef7893e",
+      "result_id": "eed210bf-99c3-475c-b4f5-17c4338f16c8"
+    },
+    {
+      "claim_id": "be46d76c-77da-40cf-a508-7e38327039e9",
+      "result_id": "eed210bf-99c3-475c-b4f5-17c4338f16c8"
+    },
+    {
+      "claim_id": "dc12fd7e-8500-41b7-8594-ed2fd0bfada6",
+      "result_id": "eed210bf-99c3-475c-b4f5-17c4338f16c8"
+    },
+    {
+      "claim_id": "8197ae27-5340-4b4e-98c1-e2bfcc07f237",
+      "result_id": "1223d505-51fb-44d6-bea5-95ad59c01966"
+    },
+    {
+      "claim_id": "1859a57f-ba8f-446c-8476-2614e98c1319",
+      "result_id": "1223d505-51fb-44d6-bea5-95ad59c01966"
+    },
+    {
+      "claim_id": "8b7678d4-3643-4ea9-8470-55ee82a0c745",
+      "result_id": "1223d505-51fb-44d6-bea5-95ad59c01966"
+    },
+    {
+      "claim_id": "d14060d3-8ad3-4b13-aad2-cd3b55eedb96",
+      "result_id": "f0521cb9-d67a-4a5c-9171-a8786458e906"
+    },
+    {
+      "claim_id": "6af92d08-5216-4db3-9da3-d045642c22ce",
+      "result_id": "f0521cb9-d67a-4a5c-9171-a8786458e906"
+    },
+    {
+      "claim_id": "fe189ac8-2be4-4004-9f0c-493679a34a9f",
+      "result_id": "f0521cb9-d67a-4a5c-9171-a8786458e906"
+    },
+    {
+      "claim_id": "3013dcba-8703-45a3-8c27-62c9fc320253",
+      "result_id": "f0521cb9-d67a-4a5c-9171-a8786458e906"
+    },
+    {
+      "claim_id": "cd06a46a-a103-4395-82d0-c2fca2092639",
+      "result_id": "f0521cb9-d67a-4a5c-9171-a8786458e906"
+    },
+    {
+      "claim_id": "e9a15769-123b-405b-872d-29d53f3e3598",
+      "result_id": "f0521cb9-d67a-4a5c-9171-a8786458e906"
+    },
+    {
+      "claim_id": "b8d0b54a-3c0c-4a2b-ad08-1fa5340c96dc",
+      "result_id": "f0521cb9-d67a-4a5c-9171-a8786458e906"
+    },
+    {
+      "claim_id": "fd430e17-394c-4354-8af7-aca729031f9a",
+      "result_id": "f0521cb9-d67a-4a5c-9171-a8786458e906"
+    },
+    {
+      "claim_id": "8cbc451a-a0ce-4cc0-b200-4080e2f8be46",
+      "result_id": "003adc17-66d5-4e0c-a037-64a9dcfbed0f"
+    },
+    {
+      "claim_id": "5a626eb5-7cbd-4fb0-9f78-20592f9d81c4",
+      "result_id": "003adc17-66d5-4e0c-a037-64a9dcfbed0f"
+    },
+    {
+      "claim_id": "8845fee6-d5dd-4b00-8776-3504d5308159",
+      "result_id": "003adc17-66d5-4e0c-a037-64a9dcfbed0f"
+    },
+    {
+      "claim_id": "3c0fab9a-cb91-41e7-bdd9-ef2ba61430fc",
+      "result_id": "003adc17-66d5-4e0c-a037-64a9dcfbed0f"
+    },
+    {
+      "claim_id": "11d41f1a-9155-47d6-95b0-0330bdd03177",
+      "result_id": "003adc17-66d5-4e0c-a037-64a9dcfbed0f"
+    },
+    {
+      "claim_id": "1567112a-71f2-459c-b904-361647301f2a",
+      "result_id": "f396a338-1727-4eca-80ed-470e1afd0aab"
+    },
+    {
+      "claim_id": "0a7b88ac-b736-4078-8949-6be30a6f6905",
+      "result_id": "f396a338-1727-4eca-80ed-470e1afd0aab"
+    },
+    {
+      "claim_id": "f3ce1403-44ba-4472-ac0c-c54ae44e5c65",
+      "result_id": "f396a338-1727-4eca-80ed-470e1afd0aab"
+    },
+    {
+      "claim_id": "c6135e9a-1fe0-4d4f-bb0f-ce7d02b563ed",
+      "result_id": "f396a338-1727-4eca-80ed-470e1afd0aab"
+    },
+    {
+      "claim_id": "bcd0c685-0bce-4d4c-99cd-4408d464fbe7",
+      "result_id": "f396a338-1727-4eca-80ed-470e1afd0aab"
+    },
+    {
+      "claim_id": "c4bf95e5-d9a5-4494-8319-b0ae148a352e",
+      "result_id": "3f051da6-d4da-4188-a3c8-4bf02e6aa68a"
+    },
+    {
+      "claim_id": "e7fc25af-e756-4ddf-8e4b-c84ad3a4e519",
+      "result_id": "3f051da6-d4da-4188-a3c8-4bf02e6aa68a"
+    },
+    {
+      "claim_id": "f70235e6-b65b-46c1-a627-18571af9426e",
+      "result_id": "3f051da6-d4da-4188-a3c8-4bf02e6aa68a"
+    },
+    {
+      "claim_id": "56042495-edce-445a-8583-0fb11d7b3d27",
+      "result_id": "3f051da6-d4da-4188-a3c8-4bf02e6aa68a"
+    },
+    {
+      "claim_id": "ad6e94ee-86b9-422f-967d-4a4fcc93302a",
+      "result_id": "3f051da6-d4da-4188-a3c8-4bf02e6aa68a"
+    },
+    {
+      "claim_id": "63d43d7a-3624-47e8-b46a-b057d3d7caf2",
+      "result_id": "3f051da6-d4da-4188-a3c8-4bf02e6aa68a"
+    },
+    {
+      "claim_id": "a4ccf769-9a6b-458e-80cb-22ea59e37ba9",
+      "result_id": "3f051da6-d4da-4188-a3c8-4bf02e6aa68a"
+    },
+    {
+      "claim_id": "07f46328-5959-4cf8-a750-9fcf72c9ee8e",
+      "result_id": "61e38779-7fca-4a4f-9a8e-21bbcdc57f72"
+    },
+    {
+      "claim_id": "edb2ba6d-fcf1-491b-8da8-cf87d23c2159",
+      "result_id": "61e38779-7fca-4a4f-9a8e-21bbcdc57f72"
+    },
+    {
+      "claim_id": "9693fc2d-03c9-4502-bff1-3cfd083c9d61",
+      "result_id": "61e38779-7fca-4a4f-9a8e-21bbcdc57f72"
+    },
+    {
+      "claim_id": "39c02dbd-4c65-4ac6-8b16-6936a2e5ebd2",
+      "result_id": "a53fa93d-1d74-402c-ad89-9c33a9f7012a"
+    },
+    {
+      "claim_id": "76e97244-5f96-468b-b76c-72d885aab50e",
+      "result_id": "a53fa93d-1d74-402c-ad89-9c33a9f7012a"
+    },
+    {
+      "claim_id": "ae9ed461-1770-423d-82ae-c3438f907e98",
+      "result_id": "61f00a32-bb65-430f-8398-959f7e321de7"
+    },
+    {
+      "claim_id": "f10afc24-9339-43ee-99c8-bf9c30689bad",
+      "result_id": "61f00a32-bb65-430f-8398-959f7e321de7"
+    },
+    {
+      "claim_id": "9a22a0ff-490b-4d38-9840-190b62a4a017",
+      "result_id": "53a03826-84dc-473c-8f5f-ba1360526bde"
+    },
+    {
+      "claim_id": "19d2132d-5723-43b7-8d54-c5f8a3e15253",
+      "result_id": "53a03826-84dc-473c-8f5f-ba1360526bde"
+    },
+    {
+      "claim_id": "2258be8e-c1ed-45cc-833d-24e03642cb02",
+      "result_id": "53a03826-84dc-473c-8f5f-ba1360526bde"
+    },
+    {
+      "claim_id": "59761f7d-b7cd-4c68-bd36-1579bc582c48",
+      "result_id": "4d6b7f83-2ab5-4e6a-b72b-0476350cf93a"
+    },
+    {
+      "claim_id": "3dee230b-c0b4-4aad-acbd-fdb4cb0c8d51",
+      "result_id": "4d6b7f83-2ab5-4e6a-b72b-0476350cf93a"
+    },
+    {
+      "claim_id": "c12f23fb-8542-404d-99f9-21606a8dd52f",
+      "result_id": "4d6b7f83-2ab5-4e6a-b72b-0476350cf93a"
+    },
+    {
+      "claim_id": "f35f87d2-19db-4ffc-b77e-f7265b2afb05",
+      "result_id": "4d6b7f83-2ab5-4e6a-b72b-0476350cf93a"
+    },
+    {
+      "claim_id": "27c61b47-50c7-4aa6-baec-8c894f82801b",
+      "result_id": "4d6b7f83-2ab5-4e6a-b72b-0476350cf93a"
+    },
+    {
+      "claim_id": "3c336abf-76e5-4a3f-bcef-d044d099bd7d",
+      "result_id": "4d6b7f83-2ab5-4e6a-b72b-0476350cf93a"
+    },
+    {
+      "claim_id": "5eca579f-8fbb-429a-8bdb-9437085efffb",
+      "result_id": "4d6b7f83-2ab5-4e6a-b72b-0476350cf93a"
+    },
+    {
+      "claim_id": "ff87880c-973b-4d5e-809f-de5cfc42b7ee",
+      "result_id": "4d6b7f83-2ab5-4e6a-b72b-0476350cf93a"
+    },
+    {
+      "claim_id": "0dd2efcf-512c-4ddf-b5cb-dd86ad5b00c7",
+      "result_id": "4d6b7f83-2ab5-4e6a-b72b-0476350cf93a"
+    },
+    {
+      "claim_id": "086fd1c2-6eb4-499a-a78b-2e38ddc9b9de",
+      "result_id": "4d6b7f83-2ab5-4e6a-b72b-0476350cf93a"
+    },
+    {
+      "claim_id": "e6b42811-15fc-4c38-a08b-489caf578338",
+      "result_id": "4d6b7f83-2ab5-4e6a-b72b-0476350cf93a"
+    },
+    {
+      "claim_id": "5621a08b-ed54-49e2-8545-a4175183fcd8",
+      "result_id": "4d6b7f83-2ab5-4e6a-b72b-0476350cf93a"
+    },
+    {
+      "claim_id": "01f1f107-6d96-46cd-936f-57beb58b5a53",
+      "result_id": "4d6b7f83-2ab5-4e6a-b72b-0476350cf93a"
+    },
+    {
+      "claim_id": "2199610c-09a6-4d5d-92df-485f35ae7090",
+      "result_id": "4d6b7f83-2ab5-4e6a-b72b-0476350cf93a"
+    },
+    {
+      "claim_id": "dc5074cb-c3d8-4fc2-a611-d9e15e201487",
+      "result_id": "b01a3533-5cc0-4973-b416-a53d35614a12"
+    },
+    {
+      "claim_id": "c6e256ee-b577-4c56-8be7-be40d8face10",
+      "result_id": "b01a3533-5cc0-4973-b416-a53d35614a12"
+    },
+    {
+      "claim_id": "2a701688-c925-4ef8-a5f3-40a6ca7d751f",
+      "result_id": "b01a3533-5cc0-4973-b416-a53d35614a12"
+    },
+    {
+      "claim_id": "9249d381-17bc-45d0-890a-b769f3a33cfd",
+      "result_id": "b01a3533-5cc0-4973-b416-a53d35614a12"
+    },
+    {
+      "claim_id": "ce6a790d-9d1f-4666-9dcc-d3793ff774b9",
+      "result_id": "b01a3533-5cc0-4973-b416-a53d35614a12"
+    },
+    {
+      "claim_id": "40cde99c-ca54-476c-b9e6-c534f624c1df",
+      "result_id": "f2100fa3-6808-4894-a55a-1f4bacd386c1"
+    },
+    {
+      "claim_id": "ac07e454-99aa-4c4e-832e-41d10c61c714",
+      "result_id": "f2100fa3-6808-4894-a55a-1f4bacd386c1"
+    },
+    {
+      "claim_id": "35350055-cc2a-4828-8ff6-e4131b00e79b",
+      "result_id": "f2100fa3-6808-4894-a55a-1f4bacd386c1"
+    },
+    {
+      "claim_id": "f1ae2fb2-0ae4-414a-98dc-0f1113bdabeb",
+      "result_id": "5a6907bf-322c-44bb-96c7-d125eb5a03d0"
+    },
+    {
+      "claim_id": "f334bcdc-6893-41cb-8c86-a1c4ef286503",
+      "result_id": "5a6907bf-322c-44bb-96c7-d125eb5a03d0"
+    },
+    {
+      "claim_id": "b79fa28f-e8af-4659-a6d5-8c3e8fbee464",
+      "result_id": "5a6907bf-322c-44bb-96c7-d125eb5a03d0"
+    },
+    {
+      "claim_id": "2cf50a43-8516-4b35-807e-e3335907bce2",
+      "result_id": "5a6907bf-322c-44bb-96c7-d125eb5a03d0"
+    },
+    {
+      "claim_id": "1064ef06-2e3b-4936-bca0-8262f864631e",
+      "result_id": "5a6907bf-322c-44bb-96c7-d125eb5a03d0"
+    },
+    {
+      "claim_id": "e6ee1658-ef4f-4e2c-9578-0cb537b41b06",
+      "result_id": "5a6907bf-322c-44bb-96c7-d125eb5a03d0"
+    },
+    {
+      "claim_id": "c5bdfa99-efd1-4504-a469-0192429582ac",
+      "result_id": "5a6907bf-322c-44bb-96c7-d125eb5a03d0"
+    },
+    {
+      "claim_id": "91ff88f0-8eb0-4b54-91df-5f87bd43a02a",
+      "result_id": "5a6907bf-322c-44bb-96c7-d125eb5a03d0"
+    },
+    {
+      "claim_id": "a67e8725-1279-4b43-b2a3-3c0543b4ba7b",
+      "result_id": "5a6907bf-322c-44bb-96c7-d125eb5a03d0"
+    },
+    {
+      "claim_id": "f0deb27e-cded-4f61-aee3-207749ed65f6",
+      "result_id": "5a6907bf-322c-44bb-96c7-d125eb5a03d0"
+    },
+    {
+      "claim_id": "843bff65-3abd-48a7-a6ff-3156507b0299",
+      "result_id": "5a6907bf-322c-44bb-96c7-d125eb5a03d0"
+    },
+    {
+      "claim_id": "12e5d238-c124-4255-ace1-3b57b206c3d8",
+      "result_id": "5a6907bf-322c-44bb-96c7-d125eb5a03d0"
+    },
+    {
+      "claim_id": "6e863547-2dd2-4639-8f03-913bad68277c",
+      "result_id": "653ef0d5-6c89-42eb-b1ed-12ebeb209701"
+    },
+    {
+      "claim_id": "a3a4c18c-07a8-4ee7-8400-a4f78a87b685",
+      "result_id": "653ef0d5-6c89-42eb-b1ed-12ebeb209701"
+    },
+    {
+      "claim_id": "15ac8907-a6e3-4a28-b6b9-eefb4f736d13",
+      "result_id": "653ef0d5-6c89-42eb-b1ed-12ebeb209701"
+    },
+    {
+      "claim_id": "6171f53b-88e8-4510-a305-d354e08f4e32",
+      "result_id": "653ef0d5-6c89-42eb-b1ed-12ebeb209701"
+    },
+    {
+      "claim_id": "f00ae980-c4da-44a7-9ec2-5d343127c923",
+      "result_id": "19ada9f6-5469-4eaa-9d84-9d07a5deb5e0"
+    },
+    {
+      "claim_id": "3554d89c-80d4-4a7a-9e9f-19f582bfc2df",
+      "result_id": "19ada9f6-5469-4eaa-9d84-9d07a5deb5e0"
+    },
+    {
+      "claim_id": "9c165610-9139-418d-b6bc-9d319f826272",
+      "result_id": "19ada9f6-5469-4eaa-9d84-9d07a5deb5e0"
+    },
+    {
+      "claim_id": "5e6616f0-6fc0-4306-9547-be8f629c9b2d",
+      "result_id": "19ada9f6-5469-4eaa-9d84-9d07a5deb5e0"
+    },
+    {
+      "claim_id": "e08806b2-33ca-4585-b6ab-42b2b5ae1a9d",
+      "result_id": "19ada9f6-5469-4eaa-9d84-9d07a5deb5e0"
+    }
+  ],
+  "comparisons": []
+}

@@ -1,0 +1,224 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "The authors determined the crystal structure of GtACR1 at 2.9 \u00c5 resolution using lipidic cubic phase crystallization and molecular replacement. The structure reveals a homodimer with each monomer containing seven transmembrane helices, an extracellular cap domain, and a cytoplasmic loop, creating a large funnel-shaped cytoplasmic cavity. Despite only ~24% sequence identity with CCRs, GtACR1 shares a common TM helical scaffold (r.m.s.d. 0.9 \u00c5).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The crystallographic data (Table 1) shows appropriate statistics for 2.9 \u00c5 resolution (Rwork/Rfree 0.23/0.27, 99.8% completeness). The structural features are directly observable in the electron density maps (Figure 1\u2014figure supplement 1). The homodimer arrangement and structural superposition with CCRs are well-documented with figures and quantitative measurements. The methods section provides sufficient detail for reproducibility.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "The authors identified a continuous intramolecular tunnel spanning from the extracellular to cytoplasmic surface in GtACR1, which is absent in CCRs. This tunnel is lined primarily by small polar and aliphatic residues rather than the charged residues found in CCRs, consistent with anion versus cation conductance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The tunnel is visualized by serial cross-sections (Figure 2A-B) and confirmed computationally using CAVER with 0.9 \u00c5 probe radius (Figure 2\u2014figure supplement 1). The comparison with C1C2 and CrChR2 shows only partial or no tunnels in CCRs using the same method. The residue composition differences are documented structurally (Figure 2C, Figure 2\u2014figure supplement 2) and provide a logical structural basis for functional differences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "The authors discovered a novel disulfide-immobilized extracellular cap formed by an intramolecular disulfide bridge between C21 and C219. Disrupting this structure by truncation (\u03941-25) or cysteine-to-serine mutations slowed channel closing kinetics, and both cysteines are highly conserved in ACRs but not CCRs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The disulfide bridge is directly observed in the crystal structure (Figure 3A-B). The functional importance is demonstrated by mutagenesis experiments showing slowed channel closing in both \u03941-25 and C21S_C219S mutants (Figure 3C). The conservation pattern supports ACR-specific function. However, the mechanism by which this cap facilitates closing is inferred from the closed-state structure and kinetic data, not directly observed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "The authors identified three constriction sites (C1, C2, C3) in the ion tunnel with distinct functional roles. C1 (extracellular) is stabilized by an H-bond network (Y81, R94, E223) and controls closing kinetics. C2 (photoactive site: T101, L64, M105) and C3 (intracellular: L108, A61, E60, L245, P58) are critical for conductance, with mutations at these sites greatly reducing or eliminating photocurrents.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The three constrictions are structurally defined (Figures 2D, 3D-F) with specific residues identified. The systematic glutamate scanning mutagenesis (Figure 3G) provides strong functional evidence: C1 mutations have minimal effect on current amplitude, while C2 and C3 mutations severely reduce conductance. The kinetic analysis (Figure 3\u2014figure supplement 1-2) shows differential effects on channel closing phases. This suggests C1 widens upon opening while C2/C3 remain narrow, though this interpretation is based on closed-state structure.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "The authors tested whether constriction site mutations compromise anion selectivity by measuring reversal potentials under Cl-, H+, and Na+ gradients. None of the tested mutants showed statistically significant differences from wild-type, indicating maintained anion selectivity despite altered conductance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The statistical analysis is rigorous, using Kruskal-Wallis ANOVA with detailed results in Tables 2-4 (all p > 0.05). Multiple mutants were tested under three different ionic conditions (Figure 3\u2014figure supplements 3-9). The sample sizes are adequate (5-13 cells per condition). This contradicts some prior reports and the authors appropriately note this discrepancy. The conclusion that mutations don't create cation permeability is well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "The authors found that GtACR1 contains all-trans retinal with the \u03b2-ionone ring positioned 1.2 \u00c5 more extracellular than in CCRs due to F160 (vs. G224/G185 in C1C2/CrChR2). Despite this conformational difference, the F160G mutant showed nearly identical action spectrum to wild-type.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The all-trans retinal configuration is supported by prior Raman spectroscopy (C52, cited work). The 1.2 \u00c5 shift is directly measured from the crystal structure (Figure 4). The action spectrum comparison (Figure 4\u2014figure supplement 1) demonstrates that this structural difference doesn't significantly affect spectral properties. However, the functional significance of this difference remains unclear.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C8",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "The authors revealed a novel photoactive site configuration where the protonated Schiff base (PSB) interacts only with D234, which is weakened by H-bonds from Y72 and Y207. This contrasts with the strong quadruple salt-bridge network in CCRs and may explain why the PSB remains protonated throughout the open-channel lifetime in GtACR1. Y207F mutation suppressed photocurrents more than Y72F and caused a 12 nm blue shift.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The structural differences are clearly documented (Figure 5A-B) showing absence of the CCR salt-bridge network. The tyrosine H-bonds to D234 are structurally defined. The analogy to bacteriorhodopsin (C59) and prior spectroscopic data on D234N (C60) support the interpretation of D234 neutrality. The differential effects of Y72F vs Y207F mutations (Figure 5D, Figure 5\u2014figure supplement 1-2) provide functional validation. However, the mechanistic link between this structure and PSB protonation persistence is inferred from the closed state and cited photochemical studies, not directly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C9",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "The authors propose that the PSB serves as a direct mediator for anion flux in the open state, presenting a partial positive charge for transient Cl- interaction. This is supported by: (1) PSB location centered in the anion path, (2) partial neutralization by weakened D234, (3) late deprotonation in all examined ACRs but no CCRs, (4) S97E mutation causing fast deprotonation and >30-fold current suppression, and (5) Y207F/Y72F double mutation eliminating photocurrent.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "This is a mechanistic hypothesis based on structural positioning and indirect functional evidence. The PSB location in the tunnel is structural fact (Figure 5A), and the cited photochemical studies (C71, C73) support correlation between protonation state and conductance. However, the proposal that PSB directly mediates anion flux requires open-state structure and direct demonstration of PSB-anion interaction. The S97E and Y207F/Y72F data (C73, C74) show these residues are critical but don't prove the proposed mechanism. This is appropriately presented as a suggestion/hypothesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "The authors characterized the ENS triad (E68, N239, S43) which has similar geometry to the CCR 'central gate' but doesn't occlude the tunnel in GtACR1. The three residues have distinct roles: S43A had little effect, while N239A nearly eliminated photocurrent and strongly accelerated fast decay. Remarkably, the N239A/D234N double mutant restored near wild-type closing kinetics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The structural comparison with CCRs is well-documented (Figure 5C). The differential functional effects are clearly demonstrated: S43A minimal effect vs N239A severe reduction (Figure 5D). The kinetic analysis (Figure 5\u2014figure supplement 3) shows distinct effects on fast vs slow decay phases. The epistatic interaction between N239A and D234N (C83) is particularly interesting, suggesting these residues functionally interact. The proposal that N239 assists anion movement (C84) is speculative but reasonable given its location between C2 and C3.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "The authors conclude that despite large phylogenetic differences between ACRs and CCRs, their helical scaffolds are conserved, but GtACR1 reveals fundamentally different chemistry within this scaffold. Key structural features include the preexisting full-length tunnel, PSB location in the ion path, partial positive charge on the PSB, and the novel extracellular cap.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This is a well-supported summary conclusion integrating multiple structural findings. The scaffold conservation is quantified (r.m.s.d. 0.9 \u00c5, C26-27). The chemical differences are documented throughout: tunnel composition (C33-34), PSB environment (C56-58), extracellular cap (C35-38). These features collectively provide a structural framework for understanding ACR function, though the mechanistic details of how they enable anion conductance require further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "The authors compared their structure (6EDQ) with an independently published GtACR1 structure (6CSM) from Kim et al., 2018. Despite different crystallization conditions and space groups, the two structures show extremely high similarity (RMSD ~0.4 \u00c5) with all seven TM helices well superimposed, mutually validating the closed-state conformation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The comparison is straightforward and well-documented (Figure 5\u2014figure supplement 4). The RMSD of 0.4 \u00c5 is remarkably low, indicating the structures are essentially identical within experimental error. This independent validation strengthens confidence in both structures. The authors appropriately note that different crystallization conditions and crystal packing didn't affect the protein structure, supporting the biological relevance of the observed conformation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "The authors compared their analysis approach with Kim et al., noting different methods for identifying the ion pathway (serial cross-sections vs. electropositive vestibules) but reaching similar conclusions about multiple selective regions. They conclude that deeper understanding requires an open-state structure, and both groups' analyses provide complementary information for mechanism elucidation and optogenetic optimization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This is a fair and balanced comparison of the two independent studies. The authors acknowledge methodological differences while noting convergent conclusions about multiple selectivity regions (C96-97). The statement that open-state structure is needed (C95) is appropriately cautious, recognizing limitations of closed-state interpretation. The conclusion about complementary information (C98) is reasonable given the independent validation and different analytical approaches.",
+    "result_type": "MINOR"
+  }
+]

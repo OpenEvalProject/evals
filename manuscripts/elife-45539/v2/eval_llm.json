@@ -1,0 +1,191 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Oskar protein contains two conserved domains (LOTUS and OSK), and initial sequence similarity searches revealed that the LOTUS domain matches eukaryotic sequences while the OSK domain shows no eukaryotic matches but instead resembles bacterial SGNH-like hydrolases. Sequence similarity networks confirm that LOTUS sequences cluster with eukaryotes while OSK sequences form an isolated cluster with connections to bacterial sequences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C47 provide converging evidence from multiple complementary approaches (BLAST searches, HMMER searches, sequence similarity networks) all consistently showing differential evolutionary origins for the two domains. The data are internally consistent and supported by visual evidence in Figures 1b-d.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C61",
+      "C62"
+    ],
+    "result": "Phylogenetic analyses using both Maximum Likelihood and Bayesian approaches demonstrate that LOTUS domain sequences from Oskar proteins are nested within eukaryotic sequences and show phylogenetic relationships consistent with known insect phylogeny. The results are robust to different alignment methods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C62 describe comprehensive phylogenetic analyses with multiple methods (ML and Bayesian), multiple alignment approaches (MUSCLE, PRANK, T-Coffee), and results that are internally consistent with established insect phylogeny. The concordance with known species relationships (C56, C57, C62) provides independent validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Phylogenetic analyses demonstrate that OSK domain sequences are nested within bacterial sequences, specifically within GDSL-like lipase/hydrolase sequences from bacterial phyla known to include insect germ line symbionts (Firmicutes, Bacteroidetes, Proteobacteria). This bacterial affinity is robust to different alignment methods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C76 provide strong phylogenetic evidence for bacterial origin of the OSK domain. The results are robust across multiple alignment methods (C64), and the specific bacterial clades identified (C74, C75) are biologically plausible as they include known insect symbionts, strengthening the HGT hypothesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Statistical topology testing using the SOWH test formally rejected alternative phylogenetic hypotheses requiring domain-of-life monophyly or eukaryotic monophyly, providing statistical support for the HGT-supporting topology where OSK sequences are nested within bacterial sequences rather than forming an outgroup.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C72 describe rigorous statistical hypothesis testing that formally rejects alternative explanations. The SOWH test is an appropriate method for comparing phylogenetic topologies, and the significant p-values (0.002 and 0.009) provide strong statistical support for the HGT hypothesis over vertical inheritance scenarios.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C3",
+      "C48",
+      "C77",
+      "C78",
+      "C79",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "The authors conclude that oskar arose de novo via fusion of eukaryotic (LOTUS) and prokaryotic (OSK) sequences through horizontal gene transfer from an ancient arthropod germ line endosymbiont, approximately 500 million years ago before major insect diversification. This represents a novel mechanism by which HGT can generate genes with entirely novel domain structures that may facilitate evolution of novel developmental mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C48, C77-C79, C89-C91 represent the main conclusions synthesizing all phylogenetic and sequence analyses. The HGT hypothesis is well-supported by the phylogenetic data (nested within bacteria, not sister to bacteria), the biological plausibility (known germ line symbionts), and the timing inference based on insect phylogeny. However, C91 includes speculative language ('may facilitate') which is appropriately cautious.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "The authors observe that Dipteran Osk LOTUS domains cluster separately from other insect Osk LOTUS domains and speculate this may be related to evolution of the Long Oskar domain, which appears to be a Dipteran novelty. Among 17 Dipteran oskar genes examined, seven possess a Long Osk domain and cluster into two clades.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C58-C60 describe an interesting phylogenetic pattern but the explanation is explicitly speculative (C59). While the observation is data-supported (C60), the mechanistic connection between Long Oskar evolution and LOTUS domain clustering lacks direct evidence and remains a hypothesis requiring further investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "The authors provide background on oskar as a novel gene with unknown origin that is necessary and sufficient for germ plasm assembly in insects. Its discovery across different insect orders (Diptera, Hymenoptera, Orthoptera) revised hypotheses about its evolutionary age and functional origins, establishing it as at least 350 million years old with a germ plasm role that is derived rather than ancestral.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C37 provide well-cited background establishing the biological context and prior knowledge about oskar. The evolutionary history is supported by multiple citations to primary literature (Lynch et al. 2011, Ewen-Campen et al. 2012, 2013, Abouheif 2013), and the functional importance is well-established (C24, C36).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "The authors review general principles of novel gene evolution, including origins via duplication, de novo processes, and horizontal gene transfer. They note that while novel genes can drive phenotypic change and integrate into conserved networks, the developmental and evolutionary significance of novel genes, particularly those arising via HGT, remains understudied.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C22 provide well-cited background on novel gene evolution from the literature. Each claim is supported by appropriate citations to review articles and primary research. This establishes the conceptual framework and knowledge gaps that motivate the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "The authors discuss the broader implications of their findings, noting that while novel genes might be expected to disappear rapidly, they can become essential and contribute to phenotypic diversity. HGT from bacteria to insects has been documented for various adaptive phenotypes, and oskar's role in Holometabola (nearly one million species) likely represents the mechanism underlying evolution of germ plasm-based germ line specification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C88 synthesize the implications of the findings within the broader context of novel gene evolution and HGT. The claims are well-supported by citations and represent reasonable inferences from the data presented. The connection to Holometabola evolution (C87) is appropriately qualified as 'likely' given the correlative nature of the evidence.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,1491 @@
+{
+  "submission": {
+    "id": "b6af17da-7b3f-4a9c-b6a8-556bc4037b4a",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T07:42:18.525322Z",
+    "updated_at": "2025-12-02T07:42:18.525322Z"
+  },
+  "content": [
+    {
+      "id": "fce182c9-1d60-4360-81b7-8c47bd03bf1d",
+      "submission_id": "b6af17da-7b3f-4a9c-b6a8-556bc4037b4a",
+      "content_type": "manuscript",
+      "content_text": "# Heterogeneous absorption of antimicrobial peptide LL37 in Escherichia coli cells enhances population survivability\n\n## Authors\n\n- Mehdi Snoussi<sup>1</sup>\n- John Paul Talledo<sup>2</sup>\n- Nathan-Alexander Del Rosario<sup>1</sup>\n- Salimeh Mohammadi<sup>2</sup>\n- Bae-Yeun Ha<sup>3</sup>\n- Andrej Ko\u0161mrlj<sup>4</sup> ([ORCID: 0000-0001-6137-9200](https://orcid.org/0000-0001-6137-9200)) \u2020\n- Sattar Taheri-Araghi<sup>2</sup> ([ORCID: 0000-0001-8736-1893](https://orcid.org/0000-0001-8736-1893)) \u2020\n\n### Affiliations\n\n1. Department of Biology California State University Northridge United States\n2. Department of Physics California State University Northridge United States\n3. Department of Physics and Astronomy University of Waterloo Waterloo Canada\n4. Department of Mechanical and Aerospace Engineering Princeton University Princeton United States\n5. Princeton Institute for the Science and Technology of Materials Princeton University Princeton United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nAntimicrobial peptides (AMPs) are broad spectrum antibiotics that selectively target bacteria. Here we investigate the activity of human AMP LL37 against Escherichia coli by integrating quantitative, population and single-cell level experiments with theoretical modeling. We observe an unexpected, rapid absorption and retention of a large number of LL37 peptides by E. coli cells upon the inhibition of their growth, which increases population survivability. This transition occurs more likely in the late stage of cell division cycles. Cultures with high cell density exhibit two distinct subpopulations: a non-growing population that absorb peptides and a growing population that survive owing to the sequestration of the AMPs by others. A mathematical model based on this binary picture reproduces the rather surprising observations, including the increase of the minimum inhibitory concentration with cell density (even in dilute cultures) and the extensive lag in growth introduced by sub-lethal dosages of LL37 peptides.\n\n## Introduction\n\nAntimicrobial peptides (AMPs) are natural amino-acid based antibiotics that are part of the first line of defense against invading microbes in multicellular systems (Zasloff, 2002; Brogden, 2005). In humans, AMPs are found in many organs that are in contact with the outside world, including airways, skin, and the urinary tract (Hancock and Lehrer, 1998; Zasloff, 2002; Brogden, 2005; Jenssen et al., 2006; Ganz, 2003; Epand and Vogel, 1999). The short sequence of the AMPs (typically <50 amino acids) along with the flexibility in the design and synthesis of new peptides has spurred attention towards understanding the detailed mechanism of AMPs action which can lead to the rational design of novel antibiotic agents (Zasloff, 2002; Brogden, 2005; Hancock and Sahl, 2006).\n\nA hallmark of the AMPs antibacterial mechanism is the role of physical interactions. Structures of AMPs exhibit two common motifs: cationic charge and amphiphilic form (Zasloff, 2002; Brogden, 2005). The cationic charge enables them to attack bacteria, enclosed in negatively charged membranes, rather than mammalian cells, which possess electrically neutral membranes. The amphiphilic structure allows AMPs to penetrate into the lipid membrane structures (Matsuzaki et al., 1995; Shai, 1999; Ludtke et al., 1996; Heller et al., 2000; Taheri-Araghi and Ha, 2007; Huang, 2000; Yang et al., 2001).\n\nDespite our detailed knowledge about interactions of AMPs with membranes, we lack a comprehensive picture of the dynamics of AMPs in a population of cells. We are yet to determine the extent to which the physical interactions of AMPs disrupt biological processes in bacteria and the degree to which electrostatic forces govern the diffusion and partitioning of AMPs among various cells. Specifically, it was suggested by Matsuzaki and Castanho et al. that the density of cells in a culture can alter the activity of AMPs through distributions among different cells (Matsuzaki, 1999; Melo et al., 2009). We have recently examined the role of adsorption on various cell membranes theoretically (Bagheri et al., 2015). Experimental investigations using bacteria and red blood cells by Stella and Wimley groups (Savini et al., 2017; Starr et al., 2016) directly demonstrated the decisive role of cell density on the effectivity of antimicrobial peptides.\n\nIn this work, we utilize complementary experimental and modeling approaches to understand the population dynamics of activity of AMPs from a single-cell perspective. Like all antibiotic agents, AMPs need a minimum concentration (MIC) to inhibit growth of a bacterial culture. For some antibiotics, including AMPs, the MIC is dependent on the cell density. Often referred to as the \u2018inoculum effect\u2019, these phenomena are a trivial consequence of overpopulated cultures. However, in dilute cultures, MICs have been reported to reach a plateau independent of cell density (Savini et al., 2017; Starr et al., 2016; Udekwu et al., 2009; Artemova et al., 2015), unless the cell population becomes so small that stochastic single-cell effects become important (Coates et al., 2018).\n\nFor a precise measurement of the inoculum effect, we extended microplate assays by Wiegand et al. (2008) to obtain a functional form of the MIC in terms of the initial cell density (the \u2018inoculum size\u2019). Contrary to our expectations, we observed that the MIC for the LL37 peptide (AnaSpec, California) remains dependent on Escherichia coli density, even in dilute cultures where the average cell-to-cell distance is above 50 \u03bcm, much greater than the average cell dimensions ($\u223c$1$\\times$1$\\times$5 \u03bcm) (Taheri-Araghi et al., 2015). With no direct interactions among the cells and nutrients in excess for all, this dependence suggests that the effective peptide concentration is somehow compromised in a cell density dependent manner.\n\nBy tracking a dye-tagged version of LL37 peptide (5-FAM-LC-LL37, AnaSpec), we found that the inhibition of growth of E. coli cells was followed by the translocation of a large number of AMPs into the cytoplasmic compartment of cells, thus reducing the peptide concentration in the culture, which works in favor of other cells. In the sense of such dynamics, MIC refers to a sufficient concentration of AMPs for absorption into all the cells. Below the MIC, peptide is absorbed by only a fraction of cells, leaving an inadequate amount of AMPs to inhibit the growth of remaining cells. We have directly observed that cultures with sub-MIC concentrations of dye-tagged LL37 peptides (5-FAM-LC-LL37) exhibit a heterogenous population combining non-growing cells containing many LL37 peptides and growing cells without LL37 peptides.\n\n## Results\n\n### The MIC increases as a function of cell density\n\nThe MIC of an antibiotic may depend on the cell density for various reasons: the distribution of antibiotic molecules among bacteria (Udekwu et al., 2009; Clark et al., 2009; Melo et al., 2009; Jepson et al., 2016); or as a result of cellular enzyme secretion (e.g., $\\beta$-lactamase in case of lactame resistant antibiotics (Clark et al., 2009; Artemova et al., 2015); or due to the chemical composition of the culture and regulation of gene expression (for instance in late exponential or stationary phases) (Karslake et al., 2016; Artemova et al., 2015).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/38174/elife-38174-fig1-v1.jpg)\n\n**Figure 1.:** (A) A two-dimensional dilution scheme, which includes a linear dilution of LL37 peptides in columns 7 and 12 followed by two separate 2/3 dilution series of the cells and LL37 peptides on columns 12 to 8 and 7 to 1. (B) Each well represents a different combination of densities of LL37 peptides and E. coli cells from which we can extract the MIC as a function of inoculum size by monitoring growth of the culture in individual wells. The solid data points refer to the wells with growing culture and different marker symbols refer to the number of repeated trial outcomes that resulted in growing cultures. The empty data points refer to wells with no visible growth. A theoretical model developed later in this work nicely fits the average MIC. Data represent four biological repeats where the average and standard deviations of MIC are depicted with black symbols and lines. (C) The growth of the cultures were monitored by an automated plate reader in terms of OD600. Growing cultures reach a yield comparable to each other while non-growing cultures do not exhibit consistent increase in OD600. Data are examples from column 11 of Figure 1AB and they follow the same color coding. (D) Analysis of the growth in sub-MIC cultures reveal that growth is delayed depending on the LL37 concentration, but the doubling time of the cells shows no considerable change. Data are from the same experiments as in panel B and follow the same color coding as panels A and B. (E) Through colorimetric measurement of the concentration of a fluorescently tagged analogue of LL37 peptide (5-FAM-LC-LL37), we can quantify the amount of peptides remaining in the supernatant after incubation with E. coli cells. (F) The amount of 5-FAM-LC-LL37 peptides remaining in the supernatant decreases with inoculum size (the initial AMP concentration is 14 \u00b5M). The amount of absorbed AMPs by the cells are inferred by subtracting the final (supernatant) from the initial concentration of AMPs. The results are the average of 4 biological repeats. Average and standard deviations are depicted in the figure.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/38174/elife-38174-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Each box refers to one well, where the red curve shows the growth in terms of OD600, the black overlap shows the detected exponential growth region, and the blue line depicts the exponential fit to the data. The two numbers in each box represent the calculated doubling time (in the top) and the T0.1 (in the bottom) both in terms of minutes. The T0.1 refers to the time point where the OD600 first hits 0.1. The boxes with no number and gray curve refer to the wells that did not show any growth.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/38174/elife-38174-fig1-figsupp2-v1.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A) A histogram of E.coli population grown in RDM to various OD600 in hemocytometer grids with a measured volume of $50\\times50\\times20\\mum^{3}$. (B) The linear regression of the cell density as a function of OD600 provides a conversion\u00a0factor for the calculation of respective cell densities beginning with OD600. Red refer to the cells grown in RDM and blue refer to a separate experiment where the same strain was grown in RDM in the presence of $1$\u03bcg\u2215mL\u00a0cephalexin.\n\nIn this work we focus on dilute cultures where the dependence of MIC on inoculum size reflects the number of antimicrobial molecules either absorbed or degraded by each individual cell. The MIC for AMPs is in the micromolar range, $\u223c10^{14}$ AMPs/ml. Early exponential cultures contain $\u223c10^{6}$ cells/ml, which amounts to the ratio of $\u223c10^{8}$ AMPs/cell. At such a high ratio, only binding or degradation of AMPs of the same order of magnitude per individual cells can lead to the inoculum effect (Starr et al., 2016; Savini et al., 2018).\n\nTo map out the functional form of the inoculum effect, we implemented a two-dimensional dilution scheme on a 96-well plate with a linear dilution of LL37 peptides in columns 7 and 12 followed by a 2/3 dilution series of cells and LL37 peptides over two distinct regions, columns 12 to 8 and 7 to 1 (Figure 1A). (See Materials and methods and Appendix 1 for the details of the cell counting and plate preparation). An early exponential E. coli culture in rich defined media (RDM, Teknova) was diluted to specific cell densities to cover a relatively even distribution of inoculum sizes.\n\nEach well on the microplate corresponds to a unique combination of densities of LL37 peptides and E. coli cells (Figure 1B). The cultures in the wells were monitored for 24 hr by an automated plate reader (EPOCH 2, BioTek) in terms of optical density at 600 nm wavelength (OD600), while the plate was incubated with orbital shaking at 37\u00b0C. Growth or inhibition of growth in each well is evidently distinguishable: growing cultures reach a yield comparable to each other but the non-growing cultures do not show any consistent increase in OD600 (Figure 1C).\n\nThe results, averaged over four similar trials, demonstrate a distinct increase of the MIC as a function of inoculum size (Figure 1B). (Detailed data presented in Figure 1\u2014figure supplement 1) The solid data points in Figure 1B refer to the wells with a growing culture and different marker symbols refer to the number of repeated trial outcomes resulting in growing cultures. A theoretical model developed later in this work nicely fits the average MIC. A separate set of experiments with dense cultures showed that the MIC increases to $3.69\\pm0.43$\u00a0\u03bcM and $7.09\\pm1.88$\u00a0\u03bcM for the inoculum sizes of $12.2\\times10^{6}$ and $24.4\\times10^{6}$ cells/ml (8 replicates with three biological repeats were used for each reported value). This is one order of magnitude increase in the MIC value, which can be critical in medical applications.\n\n### Sub-MIC cultures exhibit delayed growth, not slow growth\n\nAn interesting feature observed in the results was the extended lag phase, up to several hours, introduced by the sub-MIC concentrations of LL37 peptides (see Figure 1C). Despite such growth delay, the average doubling time of the cells ($T_{D}$) did not change significantly, remaining under 30 min in most cases (see Figure 1D). We tested and confirmed the stability of peptides over the duration of the experiment (Appendix 2). Hence, we hypothesized that this behavior was attributed to heterogenous cell death, where the growth of a fraction of the cells is inhibited, while the rest of the cells recover the normal population growth after a time delay that is correlated to the number of dead cells. This hypothesis is investigated further at the single-cell level.\n\n### E. coli cells absorb and retain peptides\n\nIn the microplate experiments, direct cell-to-cell interactions are minimal as the cells are on average over 50\u00a0\u03bcm apart from each other (corresponding to inoculum size in Figure 1A,B). All the electrostatic interactions are completely shielded. We asked whether the inoculum effect is due to the absorption of peptides into the cells (Clark et al., 2009). AMP absorption into bacteria has been previously discussed and quantified using various techniques. Different prokaryotes were reported to absorb $1\u221220\\times10^{7}$ AMPs/cell (Steiner et al., 1988; Savini et al., 2018; Starr et al., 2016; Tran et al., 2002; Melo et al., 2011; Roversi et al., 2014), which is high enough to initiate the inoculum effect. Here we also quantified the absorption of a dye-tagged analogue of LL37 (5-FAM-LC-LL37, AnaSpec) by colorimetric measurement of 14 \u03bcM of AMPs before and after incubation with E. coli and separation by centrifugation (see Figure 1E,F and Appendix 3 for details). We observed a reduction in the supernatant concentration of AMPs that was proportional to the inoculum size with an average rate of $7.6\\pm2.1\\times10^{8}$\u00a0AMPs/cell (calculated based on a linear fit to the data). Since the colorimetric measurements rely on clear solutions, we had to infer the amount of absorbed AMPs by subtracting the supernatant concentration from the initial concentration (Figure 1F left axis). Note that the amount of absorbed AMPs in cultures with AMP concentrations higher than the MIC can well exceed the required amount of AMPs to kill a cell.\n\n### Single-cell data demonstrate absorption and retention of peptides in target cells\n\nWe further investigated peptide absorption by tracking dye-tagged peptide action on live cells. To this end, we brought E. coli cells from an exponential culture to an imaging platform where they were treated with an above-MIC concentration (10 \u03bcM) of 5-FAM-LC-LL37 under agarose gel containing RDM growth media.\n\nWe closely monitored cell growth and distribution/localization of peptides by phase contrast and fluorescent time-lapse microscopy (Figure 2A). By analyzing 383 cells, we observed that the inhibition of growth is followed by a rapid translocation of peptides into target cells, as quantified by a jump in the cell\u2019s fluorescent signal (Figure 2B). As a result, fluorescent signals showed a bimodal distribution over the course of the experiment. A large degree of temporal, cell-to-cell heterogeneity was also observed as the peptide translocation time varied for about 30 min for different cells (Figure 2B). The fluorescent signal remained high after translocation confirming retention of peptides in the cells. The density of bound AMPs, however, cannot be estimated from the fluorescent signal due to the possibility of self-quenching of the dyes. As such, the signal strength is reduced in the regions with densely packed fluorophores (Swiecicki et al., 2016).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/38174/elife-38174-fig2-v1.jpg)\n\n**Figure 2.:** (A) Sample phase contrast and fluorescent time-lapse images of an E. coli cell treated with a lethal dosage of the dye-tagged LL37 peptides (5-FAM-LC-LL37). Phase contrast images show inhibition of growth and slight shrinkage of the cell after a brief growth period. The fluorescent channel shows the distribution, translocation and retention of the peptides. (B) Abrupt transition in the fluorescent signal of 383 cells that occur over a span of more than 30 min. The black line corresponds to the sample shown in panel A. The fluorescence intensity histogram is depicted for different time points on the right. (C) The instantaneous growth rate of individual cells collapse on each other when plotted in referenced to the peptide translocation point. The average behavior (white line) of the collapse shows that the translocation happens shortly after the inhibition of growth and shrinkage of the cell. The shaded area denotes the standard deviation. (D) The two dimensional distribution of instantaneous growth rate and fluorescent signal from all time points depict well-separated clusters referring to a binary response of the cells to the peptides.\n\nThe instantaneous growth rate of individual cells was non-monotonic and data collapsed onto each other once plotted with reference to peptide translocation time (Figure 2C). There is a drop to negative values, indicating the shrinking of cells, which was found to be synchronized with the uptake of peptides. The growth rate reaches a steady value of zero in $\u223c$10 min.\n\nAs a whole, E. coli cells exhibited a binary physiological state over the course of the peptide action in terms of growth rate and peptide uptake. That is, the cells were found to be in either of these distinct states: (1) growing, with no significant peptide uptake; and (2) non-growing, followed by an abrupt peptide uptake. This is quantitatively evident in the scatter plot of the instantaneous growth rate as a function of fluorescence intensity, where cells segregate into two separate clusters (Figure 2D). At the peptide concentration of 10\u00a0\u03bcM (above the MIC) all cells were initially in state (1) and then transitioned to state (2) within one generation.\n\n### Growth inhibition is heterogeneous in sub-MIC cultures\n\nPopulation-level data from microplates were suggestive, but not conclusive, of a heterogeneous growth inhibition in cultures with a sub-MIC concentration of AMPs. Hence, we proceeded with single-cell experiments as noted above with a sole modification of using a lower, sub-MIC concentration of 5-FAM-LC-LL37 (4.0 \u03bcM for the dye-tagged peptide). As such, most individual cells grew to form micro-colonies.\n\nThe striking observation was the phenotypic heterogeneity in the isogenic population of cells in each micro-colony (Figure 3A). As a colony expanded, growth of some cells was inhibited and peptides translocated into them. We observed a similar transition from state (1) to state (2) as previously seen in above-MIC cultures (Figure 2). The difference is that at sub-MIC the transition occurred for only a fraction of the cells.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/38174/elife-38174-fig3-v1.jpg)\n\n**Figure 3.:** (A) Sample time-lapse images (overlay of phase contrast and fluorescent image) of dividing E. coli cells show that growth of only some cells is inhibited in a growing colony. Phase contrast images show growth of a micro-colony and the fluorescent channel (green) shows translocation of the dye-tagged LL37 peptides (5-FAM-LC-LL37) in the cells whose growth is inhibited. (B) Relative growth of the total area of 13 separate colonies, consisting of 280 cells, depicts initial exponential expansion (grey area) until the appearance of non-growing subpopulation (green area). (C) An abrupt transition in fluorescent signal is observed when growth is inhibited in cells. The transition for individual cells is similar to that in above MIC cultures (see Figure 2).\n\nAnalysis of 13 separate micro-colonies, consisting of a total of 280 cells (over the course of the experiment), showed that the relative size of the colonies initially increased exponentially until the appearance of non-growing cells (Figure 3B). The fluorescence intensity of non-growing cells showed an abrupt transition, as in the case of above MIC cultures, with comparable relative changes in the signal, which suggests that a similar number of peptides are taken by each cell (Figure 3C).\n\n### Mathematical model based on peptide absorption reproduces and explains experimental observations\n\nIn order to test whether the absorption of peptides can explain the inoculum effect, we developed a mathematical model with minimal single-cell assumptions (Figure 4A), which describes the time evolution of the mean concentration $[B]$ of growing bacteria and the mean concentration $[P]$ of free AMPs in the solution. The model describes two processes: (1) bacteria are assumed to divide with a constant rate $k_{D}=ln\u20612/T_{D}$, where $T_{D}\u224823\u2062min$ is the average doubling time; (2) AMPs kill growing bacteria with a rate $k_{k}$, and afterwards each dead cell quickly takes up $N$ AMPs (see Figures 2B and 3C). These AMPs are bound to the membrane as well as to the cytoplasm of the cell and are not recycled to attack other cells. The time evolution of concentrations of growing\u00a0bacteria $[B]$ and available AMPs $[P]$ is described by the following equations:\n\n$$\n(1)\\frac{d[B]}{dt}=k_{D}[B]\u2212k_{k}[B][P],(2)\\frac{d[P]}{dt}=\u2212Nk_{k}[B][P].\n$$\n\n![Figure 4.](https://cdn.elifesciences.org/articles/38174/elife-38174-fig4-v1.jpg)\n\n**Figure 4.:** (A) E. coli cells replicate with a rate of $k_{D}$ and they get killed with a rate of $k_{k}$ Each dead cell quickly absorbs $N$ AMPs. (B) Demonstration of the inoculum effect for the initial AMP concentration [LL37]=1.2 \u03bcM. A culture with high inoculum size ($3\\times10^{6}$ cells/ml) survives as peptides deplete (solid lines) whereas growth in small inoculum size ($10^{6}$ cells/ml) is inhibited with excess peptides remaining in the solution (dashed lines). Despite the survival of culture with high inoculum size, the growth is delayed. (C) Comparison of the MIC between the theoretical model and the experimental data. (D) Growth delay as a function of [LL37]. Solid lines are theoretical results (not a fit) and circles represent experimental data from microplate experiments (Figure 1). The delay is calculated with respect to the lowest AMP concentration (row H) of Figure 1AB.\n\nThis model predicts two different outcomes (see Figure 4B) depending on the initial concentrations of bacteria and AMPs: (1) The population of bacteria goes extinct for a sufficiently large concentration of AMPs, that\u00a0is above MIC; (2) The population of bacteria can recover in a low concentration of AMPs, that\u00a0is below MIC. The two unknown parameters of the model were fitted to best approximate the MIC dependence on the inoculum size (Figure 4C). The fit resulted in a killing rate $k_{k}=0.040\\muM^{\u22121}min^{\u22121}$ and $N=3.8\\times10^{7}$ AMPs absorbed per dead cell. Note that the estimated number of absorbed AMPs from the fitting is much smaller than the estimated number of $7.6\\pm2.1\\times10^{8}$ AMPs/cell from the colorimetric measurements. This discrepancy might arise from the fact that cells can divide several times before they stop growing and absorb peptides, which was neglected in the estimate from the colorimetric measurements.\n\nNote that in the limit, where the initial concentration of bacteria goes to zero, the MIC value approaches the finite value $k_{D}/k_{k}=0.75\\muM$\u00a0(see Equation 1). This is consistent with a previous model by Stella group (Savini et al., 2017), which considered that bacteria get killed once the number of peptides bound to cell membrane reaches a certain threshold. This threshold is expected to be smaller than the number $N$ of absorbed AMPs by dead cells, which includes peptides bound to cell membrane as well as peptides bound to intracellular content. (Note that the number of surface bound peptides correlates with the concentration of free peptides in solution).\n\nWe further examined whether the model can reproduce other experimental data without additional fitting. In particular we tested whether the model could predict the growth delay in surviving bacterial population when the concentration of AMPs is increased (see Figure 1C). The predictions of our model agree reasonably well with experimental results for the growth delay of population (see Figure 4D), given the simplicity of the model. Deviations likely originate from the fact that cell doubling times are scattered (Figure 1D), while our model assumes a fixed cell doubling time of 23 min. Due to the exponential growth, the growth delay is highly sensitive to the cell doubling time.\n\n### The action of dye-tagged LL37 peptides is cell-cycle and cell size dependent\n\nThe temporal heterogeneity we reported in growth inhibition and peptide retention is a key factor for the emergence of the surviving subpopulation. The wide distribution of $\u223c$30 min (above MIC cultures, Figure 2B) is puzzling, as all the cells experienced the same environmental conditions. We looked at the correlations of the translocation time with two cell size measures to investigate any dependence on the physiological conditions of the target cells. A negative correlation was observed between peptide translocation time and initial cell length, indicating that small cells can resist the action of AMPs and they continue growing until a later time point (Figure 5A left panel). In contrast, cell length at translocation time did not show any correlation with the translocation time (Figure 5A right panel). This clearly demonstrated that the action of 5-FAM-LC-LL37 is cell-cycle and cell-age dependent. This seems in agreement with the findings made by the Weisshaar lab, where LL37 peptides were observed to first bind to the septum of dividing cells. Thus, the higher chance to act on larger, dividing cells, as opposed to small growing cells (Sochacki et al., 2011). The stronger binding of LL37 peptids to the septum area is not well understood but may have multiple physical origins. Among various possibilities, the Wong lab has shown that LL37 peptides preferentially bind to membranes with negative Gaussian curvature, a geometry that can be found in the septum of rod shaped microorganisms (Yang et al., 2008; Schmidt et al., 2011).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/38174/elife-38174-fig5-v1.jpg)\n\n**Figure 5.:** (A Left panel) A negative correlation between initial cell length and AMP translocation time indicates resistance of small cells to peptides until a later time points in their life cycle. (A Right panel) Cell length at translocation time and the time of translocation are not correlated. Average and standard deviation are depicted for the data binned based on the x axis. (B) Average cell size affects the MIC values. Addition of $1$\u03bcM\u2215mL\u00a0of cephalexin to the growth media (RDM) increases cell size by 17% (sample newborn cells shown in the bottom panel), which resulted in an increase in the MIC. The inoculum size of $6.1\\times10^{6}$ cells/ml are used for this experiment. Twelve replicates with three biological repeats were used for this data.\n\nTo investigate the cell-size dependence of action of AMPs we added a sublethal dosage of cephalexin to the growth media (RDM) that was shown to slightly increase cell sizes without the loss of viability by delaying cell divisions (Si et al., 2017). Our measurements using the microfluidic \u2018mother machine\u2019 (Wang et al., 2010) also showed that\u00a01\u00a0\u03bcg/mL of cephalexin results in the 17% increase in the length of the newborn cells (Figure 5B), from 3.37 \u03bcm to 3.96 \u03bcm, without any appreciable change of the growth rate. Based on the microplate experiments, the MIC of cells grown in the presence of cephalexin increased from $1.87\\pm0.23$\u00a0\u03bcM to $2.09\\pm0.19$\u00a0\u03bcM\u00a0for those grown in regular RDM at the inoculum size of $6.1\\times10^{6}$.\n\n## Discussion\n\nHeterogeneities in bacterial response to antibiotics can be critical if leading to the survival of a subpopulation that can recover population growth (Coates et al., 2018). In this work, we discovered an unexpected absorption and retention of an antimicrobial peptide (LL37 and the dye-tagged analogue, 5-FAM-LC-LL37) in E. coli cells, which under sub-MIC concentrations led to the emergence of two distinct subpopulations in an isogenic bacterial culture: a group of cells that retain peptides after their growth is inhibited and a group of surviving cells that grow owing to the reduction of the \u2018free\u2019 peptide concentration by the other group. This \u2018passive cooperation\u2019 is an interesting feature of an E. coli culture where cells do not have any form of active communication, unlike ion-channel based cooperation in Bacillus subtilis biofilms (Prindle et al., 2015; Liu et al., 2017; Liu et al., 2015).\n\nAt the cellular and molecular scales, a distinct feature of the action of AMPs is its collective nature, where a large number of AMPs are required to first bind to and then disrupt the cell membranes to kill the cell. Absorption of AMPs has been discussed and quantified previously for different microorganisms and peptides using various techniques (Steiner et al., 1988; Savini et al., 2018; Starr et al., 2016; Tran et al., 2002; Melo et al., 2011; Roversi et al., 2014). Utilizing live, single-cell microscopy, we observed the temporal and cell-to-cell heterogeneity in the peptide absorption into E. coli cells, which goes beyond the membrane binding.\n\nThe integration of the population and single-cell data, combined with the theoretical modeling, presented in this work, provides strong evidence that the inoculum effect in the case of LL37 pepides\u00a0arises from the retention of these peptides in target cells. Despite the seeming complexity of the partitioning of LL37 peptides in a population of bacterial cells, the picture at the single-cell level is simple and binary, consistent in cultures with above-MIC and sub-MIC concentrations of AMPs: occurrence of growth inhibition depends on the free peptide concentration and is followed by an abrupt, permanent translocation of peptides into the target cells.\n\nOur quantification of peptide retention ($\u223c3.8\\times10^{7}$ peptides/cell) is within the range reported using various methods (Steiner et al., 1988; Savini et al., 2018; Starr et al., 2016; Tran et al., 2002; Melo et al., 2011; Roversi et al., 2014). Yet, this large number raises the question of which molecules inside of the cells are interacting with LL37 peptides. The negative charge of DNA as well as some proteins can provide binding sites for LL37 peptides. To categorically distinguish between these two, we utilized an E. coli strain lacking the septum positioning minCDE system, which produces enucleated mini-cells (Figure 6A). The mini-cells do not contain DNA as confirmed by the localization of a fluorescently tagged histone-like protein hupA (Figure 6A, see Materials and methods for the details of the strains genotype). Translocation of 5-FAM-LC-LL37 peptides into mini-cells showed qualitatively similar absorption and retention as seen in regular cells (Figure 6B), which suggests the presence of significant interactions of AMPs with the intracellular content other than DNA. Yet, the rate at which AMPs are absorbed into the mini-cells is slower than that in the neighboring mother cells with DNA content (Figure 6B), perhaps indicating the role of the negative charge of DNA.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/38174/elife-38174-fig6-v1.jpg)\n\n**Figure 6.:** $\u0394$minCDE strain of E.coli was used to test the significance of interactions between peptides and DNA as well as other intracellular content.(A) Lack of septum positioning system produces enucleated mini-cells (left panel) that do not contain DNA as indicated by the localization of hupA-mRuby2 protein (middle panel). Mini-cells absorb a large amount of 5-FAM-LC-LL37 peptides similar to wild-type cells (right panel) (B) Fluorescence intensity per area of two mini-cells suggests a significant peptide interactions with enucleated mini-cells. The rate of absorption of AMPs in mini-cells is slower than in the neighboring mother cells with DNA content.\n\nWhile our results provide a quantitative picture of LL37 partitioning and acting in an E. coli population, they open new questions on the molecular and evolutionary basis of their activity. First, the strong absorption of peptides into the cytoplasmic area raises questions on the nature and impact of this intercellular binding: what specific proteins and domains are peptides binding to? How does the peptide binding perturb the protein functions? Second, the population survivability as a result of peptide absorption raises questions on the evolutionary dynamics of this phenomena: how do E. coli cells evolve to achieve this cooperative fit? How does this phenomena affect multi-species cultures with prokaryotic and eukaryotic organisms?\n\nFinally, our findings imply an important dynamics for the activity of LL37 peptides (and possibly other AMPs) in the multicellular host organisms. Considering the peptide absorption into the target cells, AMP concentration should not be assumed the only key factor, but the rate of the expression of the AMPs by the host is also decisive in determining the effectivity of AMPs. The expression rate competes with the rate of absorption of the AMPs in the bacterial cells. In the results presented in this work, we focused on closed systems where the total number of AMPs remained constant. As a future direction, one could examine growth inhibition of bacterial cultures experiencing an influx of the AMPs.\n\n## Materials and methods\n\n### Bacterial strains and growth conditions\n\nIn this work, we used derivatives of a prototrophic Escherichia coli K12 strain, NCM3722, that was constructed, sequenced, and extensively tested by Kustu and Jun labs (Soupene et al., 2003; Brown and Jun, 2015). In all microplate and single-cell experiments, we used ST08, a nonmotile derivative of NCM3722 ($\u0394$motA) (a gift from Suckjoon Jun\u2019s Lab at the University of California, San Diego), except for experiments with mini-cell producing strains where we used ST20. This strain possesses a deficiency in septum positioning system ($\u0394$minCDE) and a DNA marker ($h\u2062u\u2062p\u2062A$-$m\u2062R\u2062u\u2062b\u2062y\u20622$). ST20 was constructed using standard P1 transduction to transfer the gene deletion minCDE::aph from PAL40 (from Petra Levin\u2019s Lab at the Washington University, St. Louise) to ST12, a construct from ST08 with the infusion of $m\u2062R\u2062u\u2062b\u2062y\u20622$ fluorescent protein with the histone like protein $h\u2062u\u2062p\u2062A$ (from Suckjoon Jun\u2019s Lab).\n\nIn all experiments, a MOPS based rich defined media (RDM) was used, developed by Fred Neidhardt (Neidhardt et al., 1974), which is commercially available from Teknova Inc. The average generation time of the E. coli strain used in this study was 23 min in RDM at 37\u00b0C. All cells in the experimental samples were grown to early or mid log phase prior to the start of the experiment in a 37\u00b0C water bath shaker, set to 240 rpm.\n\n#### Sample preparations\n\nThe cell culture for each experiment was carried out in three stages: seeding of culture, pre-culture, and experimental culture.\n\n### Antimicrobial peptides\n\nAntimicrobial peptides used in this study included LL37 and a dye-tagged version 5-FAM-LC-LL37. All peptides were purchased from AnaSpec, California. The net peptide content of the purchased material was quantified at 75% by elemental analysis of the carbon, hydrogen, and nitrogen content (CHN analysis) through the manufacturing company.\n\nThe product was shipped in vials as a dry powder. 400 $\\mu$M stocks suspended in autoclaved double distilled H$_{2}$O were prepared in-house. The stock was stored in a \u221220\u00b0C cold storage until ready for use.\n\nSpecial handling precautions for the antimicrobial peptides, the stock solution, or solutions containing them were used. Low protein binding supplies including pipette tips (Low Retention Aerosol Barrier, FisherBrand), Eppendorf tubes (Protein LoBind, Eppendurf), and microplates (Ultra-Low attachment, Corning) were used.\n\n### Analysis of microplate data\n\nTo analyze the microplate data we developed a custom MATLAB (MathWorks Inc.) code to measure the growth rate and T$_{0.1}$ for each individual well. The latter quantifies the time at which the OD600 reaches 0.1, as a parameter that shows a \u2018delay\u2019 in the growth of the culture. The growth rate is calculated in the standard manner by fitting an exponential line against the growth curve that resembles stable, exponential growth.\n\nWe have conducted four experimental repeats to construct the data reported in Figure 1 of the manuscript. The full experimental data for each of these four repeats are depicted Figure 1\u2014figure supplement 1, which shows the growth curves for all 96 wells and the calculated values for the growth curve and T$_{0.1}$. Each box in the plot refers to one well, where the vertical axis corresponding to each well denotes the log scale of the OD600 (after subtracting the blank value) and horizontal axis resembles the time during the 24 hr the experiment took place. The red curves correspond to the growth curve while the black overlap shows the detected exponential growth region and the blue line represents the exponential fit with respect to the data. The two numbers in each box represent the calculated values for the doubling time (in the top) and the T0.1 (in the bottom), both in terms of minutes. The T0.1 is calculated from the initial readings generated by the plate reader. The boxes with no number and gray curve refer to wells that did not show any growth.\n\n### Cell counting experiments and calibration\n\nIn order to determine the relationship between the MIC and cell density, we first had to find the correlation between cell density and optical density measured at a wavelength of 600 nm (OD600). A high precision cell counting experiment was performed using a hemocytometer (Hausser Scientific 3900) and high magnification microscopy. Using different cell cultures with different values of OD600, we were able to correlate values obtained for OD600 measured on a spectrophotometer (Genesys 20, Fisher Scientific) with the density of E. coli ST08 cells.\n\nFor the cell counting protocol, cells from the experimental culture at mid exponential phase were harvested, fixed with\u00a00.025% formaldehyde, and diluted to four varying concentrations, corresponding to OD600$=0.115,0.066,0.033,$ and $0.022$. Each of these cultures were transferred to a hemocytometer, allowing for the enumeration of cells. The number of cells where counted in the specified grids of the hemocytometer with dimensions of $50\\times50\\times20\\mum^{3}$. The imaging was performed on a Nikon-Ti microscope with a 40$\\times$ objective lens using transmission light phase contrast microscopy. For each specific OD600 value, we have used 10 fields of view, each containing 42 grids. The histogram of the cell population in each grid is shown in Figure 1\u2014figure supplement 2A.\n\nThe average number of cells per grid compared with the average density of cells for each culture produced a strong linear correlation with the measured OD600 values obtained. The linear regression of the cell density as a function of OD600 results in the conversion\u00a0factor of $6.09\\times10^{8}$cells/ml\u00a0(Figure 1\u2014figure supplement 2B).\n\n### Live-cell imaging platform\n\nTo monitor the inhibition of growth for E. coli cells by antimicrobial peptides in a live microscopy setting we chose to use agarose pads, using 3% low melt agarose gel, to immobilize them. Inspired by previous works (Moffitt et al., 2012; Priest et al., 2017), we developed a system for patterning and housing specific amounts of agarose gel suitable for long term microscopy needs. The patterns are parallel channels that allow cells to spread and move away from one another under the agarose pad, while aligned in certain directions to help with the image analysis and cell segmentation. The housing also reduces the chance of evaporation of the liquid culture, thus allowing the gel to be used for hours at 37\u00b0C during microscopy.\n\n### Phase contrast and fluorescent imaging and analysis\n\nAn inverted microscope (Nikon Ti-E) equipped with the Perfect Focus System (PFS 3), a 100x oil immersion objective lens (NA 1.45), and an Andor Zyla sCMOS camera were used for imaging. The light source that was used for the phase contrast microscopy was made possible with the help of LED transmission light (TLED, Sutter Instruments 400\u2013700 nm) and Spectra X light engine (Lumencor), which was used for fluorescent imaging.\n\nThe illumination condition for phase contrast was 50 ms exposure with an illumination intensity set to 10% of the max TLED intensity. The fluorescent images for the 5-FAM dye were taken with the excitation wavelength of 485 while using a quad band filter (DAPI/FITC/TRITC/Cy5, 84000, Chroma Technologies).\n\nFor temperature control, the microscope was incubated in a custom made plexiglass housing with a forced air heater and temperature controller (Air-Therm SMT, World Precision Instruments) set to $37\\pm0.1^{\u2218}$\u00b0C. The temperature was constantly monitored during the course of the experiment.\n\nWe developed custom high-throughput image analysis software optimized for segmenting and analysis of individual cells whose growth are inhibited by LL37 or 5-FAM-LC-LL37 under patterned gel agarose gel (Taheri-Araghi, 2018; copy archived at https://github.com/elifesciences-publications/CellSegmentation). For the heterogeneous colonies of growing and non-growing cells, the boundary of the cells were first highlighted manually to increase contrast for segmentation.\n\nThe procedure includes standard, predefined image enhancement and processing steps available as functions in MATLAB (MathWorks Inc.) image processing toolbox. The overall steps are as follows:\n\nThe instantaneous growth rate is calculated assuming exponential growth for the cells and taking the derivative of the cell length as a function of time. To decrease the noise in the calculations, an exponential curve was fitted to three consecutive datapoint of cell length as a function of time.\n\n### Analysis of the theoretical model with Mathematica\n\nDifferential equations (Equations 1\u20132) describing the population dynamics model were analyzed in Mathematica with the function NDSolve. For each initial concentration of bacteria and peptides, the evolution of both populations were analyzed during the subsequent $T_{max}=1000$ min. If the concentration of peptides $[P\u2062(T_{max})]$ at the end of simulation was smaller than $k_{D}/k_{k}$, then the bacterial population survived (see Equations 1\u20132). On the other hand, if the concentration of peptides $[P(T_{max})]>k_{D}/k_{k}$, then the bacterial population most likely went extinct. The MIC concentration for a given initial concentration of bacteria was obtained by requiring $[P(T_{max})]=k_{D}/k_{k}$, which was found using the bisection method. Finally, the unknown model parameters $k_{k}$ and $N$ were obtained by minimizing the error between the values of MIC from the model and the experimental data (see Figure 4C) by using the function FindMinimum.\n",
+      "created_at": "2025-12-02T07:42:18.525322Z"
+    },
+    {
+      "id": "87f1aceb-dd38-4f54-b706-5f1edb8e9862",
+      "submission_id": "b6af17da-7b3f-4a9c-b6a8-556bc4037b4a",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Ry Young, Texas A & M United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.38174.022](https://doi.org/10.7554/eLife.38174.022)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Heterogeneous Absorption of Antimicrobial Peptide LL37 in Escherichia coli Cells Enhances Population Survivability\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by Ry Young as a Guest Reviewing Editor and Gisela Storz as the Senior Editor. The following individual involved in review of your submission has agreed to reveal his identity: William Wimley (Reviewer #2).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nSnoussi et al. have presented a straightforward study of the \"inoculum effect\" for the classical human AMP LL37. The authors test the hypothesis denoted in the title using LL37 against the Gram-negative bacterial species. E. coli. The authors report that the peptide is absorbed by part of the cells in the population, allowing the remaining cells to grow, which results in an increase in MIC with the innoculum size. The authors study and model the binding and accumulation of LL37 on the growth and viability of E. coli cells. Importantly, they do this quantitatively at the level of single cells and ensembles. They directly measure the binding of LL37 to E. coli, providing an important measurement that is usually lacking. Authors study the inoculum effect and successfully model the effect of peptide concentration and inoculum size. This paper presents several critical observations that will be of great interest to AMP researchers. Perhaps most importantly, the authors approach this problem in a highly quantitative manner, providing models that may enable the prediction of AMP behavior. This is rare and it may, in turn, assist in future engineering and development of novel AMPs. The quality of the data are excellent and the conclusions interesting, surprising, and potentially of general applicability to understanding of the antimicrobial effects of AMPs and other compounds. This is a very strong paper that provides deep, novel insights into a well-studied field that usually does not provide new insights. Thus, this is an important paper, and should be published.\n\nEssential revisions:\n\n1) There may be two opportunities for the authors to buttress their case. First, in the experiment shown in Figure 1, shouldn't it be possible to estimate the number of cells that are susceptible under each condition and correlate that with the observed delay times? This could be done in the Discussion, after the apparent permeability collapse has been documented. Another step that should be doable is to force the cell populations into non-septating cell forms, either by judicious use of an antibiotic, the induction of a phage septation inhibitor like lambda Kil, or by using ts septation mutants, shifted to the non-permissive temperature. We would then expect for there not to be two populations of fluorescently labelled cells and the inoculum effect would presumably be abolished.\n\n2) Figure 1 also should be improved. Figure 1E suggests the supernatant concentration of the dye-tagged LL37 is being measured. The text claims absorption of LL37 into the cell so the colorimetry readout of the supernatant fraction should decrease with increasing inoculum size. However, the readout in 1F is absorbed LL37. Is this inferred from subtracting the final signal of LL37 from the initial? The calculation should be defined explicitly and fluorescence measurements of both the supernatant and pellet should be provided. Theoretically fluorescence of the pellet + supernatant should add to the initial fluorescence unless there is degradation.\n\n3) The authors have another opportunity to correlate binding with targets in the cell. In Figure 6, the absorption kinetics of LL37 into enucleated minicells budding from mother cells was qualitatively compared to cells with DNA. A graph of adsorption into the minicell was presented in 6B. Although retention appears unaffected, it appears the binding rate is slower in the enucleated cell. If this is so, it should be addressed in the text, since the authors are trying to evaluate what the target molecules in the cytoplasm and the presence and absence of DNA. Figure 6B could also include a comparative trace of adsorption kinetics into the neighboring nucleated cells, as perfect controls. If the rate was slower for smaller cells it could support conclusions from 5A.\n\n4) Please address the following point in the manuscript text: A major problem with this study is the very modest effect of the inoculum size on the MIC, a 1.5 fold increase (Figure 1B). The accepted variation in the determination of MIC is 2 fold. Of course, it is possible to perform a more accurate measurement of MIC with many replicates and using small increments of increase in antimicrobial, which the authors do in this study. However, the significance of this small effect on the biology or clinical manifestations of an infection is unclear.\n",
+      "created_at": "2025-12-02T07:42:18.525322Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T07:42:18.525322Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T07:42:18.525322Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "cccfd28d-5665-4833-b7fa-63ad0921b9f6",
+      "content_id": "fce182c9-1d60-4360-81b7-8c47bd03bf1d",
+      "claim_id": "C1",
+      "claim": "Antimicrobial peptides (AMPs) are broad spectrum antibiotics that selectively target bacteria.",
+      "claim_type": "EXPLICIT",
+      "source": "Antimicrobial peptides (AMPs) are broad spectrum antibiotics that selectively target bacteria.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about AMPs that draws from established scientific consensus.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:18.525322Z"
+    },
+    {
+      "id": "247b771e-d1d6-4b97-a875-a15a2dbd6f24",
+      "content_id": "fce182c9-1d60-4360-81b7-8c47bd03bf1d",
+      "claim_id": "C2",
+      "claim": "E. coli cells exhibit rapid absorption and retention of a large number of LL37 peptides upon inhibition of their growth.",
+      "claim_type": "EXPLICIT",
+      "source": "We observe an unexpected, rapid absorption and retention of a large number of LL37 peptides by E. coli cells upon the inhibition of their growth, which increases population survivability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental observations described in the abstract and detailed in the results section with single-cell microscopy data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:18.525322Z"
+    },
+    {
+      "id": "16b47ee2-a8c0-48e8-83bc-d892c03ed290",
+      "content_id": "fce182c9-1d60-4360-81b7-8c47bd03bf1d",
+      "claim_id": "C3",
+      "claim": "The absorption of LL37 peptides increases population survivability of E. coli.",
+      "claim_type": "EXPLICIT",
+      "source": "We observe an unexpected, rapid absorption and retention of a large number of LL37 peptides by E. coli cells upon the inhibition of their growth, which increases population survivability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data showing heterogeneous populations and mathematical modeling.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:18.525322Z"
+    },
+    {
+      "id": "170891d6-5301-4ac4-98e1-882eb6f44ca3",
+      "content_id": "fce182c9-1d60-4360-81b7-8c47bd03bf1d",
+      "claim_id": "C4",
+      "claim": "The transition to peptide absorption occurs more likely in the late stage of cell division cycles.",
+      "claim_type": "EXPLICIT",
+      "source": "This transition occurs more likely in the late stage of cell division cycles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by single-cell data showing correlation between cell size and translocation time.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:18.525322Z"
+    },
+    {
+      "id": "0f3e8039-0d55-4a01-b0c9-fc7ae584749a",
+      "content_id": "fce182c9-1d60-4360-81b7-8c47bd03bf1d",
+      "claim_id": "C5",
+      "claim": "Cultures with high cell density exhibit two distinct subpopulations: a non-growing population that absorb peptides and a growing population that survive owing to the sequestration of the AMPs by others.",
+      "claim_type": "EXPLICIT",
+      "source": "Cultures with high cell density exhibit two distinct subpopulations: a non-growing population that absorb peptides and a growing population that survive owing to the sequestration of the AMPs by others.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly observed in single-cell microscopy experiments with sub-MIC concentrations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:18.525322Z"
+    },
+    {
+      "id": "cfc3dcb2-e7b6-498a-ac6d-ca21fb2d2b25",
+      "content_id": "fce182c9-1d60-4360-81b7-8c47bd03bf1d",
+      "claim_id": "C6",
+      "claim": "The minimum inhibitory concentration (MIC) of LL37 increases with cell density even in dilute cultures.",
+      "claim_type": "EXPLICIT",
+      "source": "the increase of the minimum inhibitory concentration with cell density (even in dilute cultures)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by microplate assays showing MIC dependence on inoculum size.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:18.525322Z"
+    },
+    {
+      "id": "a29ed1c2-1264-48d0-8ac8-bc0b76b28cce",
+      "content_id": "fce182c9-1d60-4360-81b7-8c47bd03bf1d",
+      "claim_id": "C7",
+      "claim": "Sub-lethal dosages of LL37 peptides introduce extensive lag in growth.",
+      "claim_type": "EXPLICIT",
+      "source": "the extensive lag in growth introduced by sub-lethal dosages of LL37 peptides.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in microplate experiments and reproduced by mathematical modeling.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:18.525322Z"
+    },
+    {
+      "id": "134e4ae7-8644-4713-ab08-53ea903ee09b",
+      "content_id": "fce182c9-1d60-4360-81b7-8c47bd03bf1d",
+      "claim_id": "C8",
+      "claim": "AMPs are part of the first line of defense against invading microbes in multicellular systems.",
+      "claim_type": "EXPLICIT",
+      "source": "Antimicrobial peptides (AMPs) are natural amino-acid based antibiotics that are part of the first line of defense against invading microbes in multicellular systems (Zasloff, 2002; Brogden, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:18.525322Z"
+    },
+    {
+      "id": "6fa832e3-7032-410e-9d97-bfe921342692",
+      "content_id": "fce182c9-1d60-4360-81b7-8c47bd03bf1d",
+      "claim_id": "C9",
+      "claim": "In humans, AMPs are found in many organs that are in contact with the outside world, including airways, skin, and the urinary tract.",
+      "claim_type": "EXPLICIT",
+      "source": "In humans, AMPs are found in many organs that are in contact with the outside world, including airways, skin, and the urinary tract (Hancock and Lehrer, 1998; Zasloff, 2002; Brogden, 2005; Jenssen et al., 2006; Ganz, 2003; Epand and Vogel, 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:18.525322Z"
+    },
+    {
+      "id": "08dc5992-bc3b-441a-8934-a9a6d1fbf206",
+      "content_id": "fce182c9-1d60-4360-81b7-8c47bd03bf1d",
+      "claim_id": "C10",
+      "claim": "AMPs typically contain less than 50 amino acids.",
+      "claim_type": "EXPLICIT",
+      "source": "The short sequence of the AMPs (typically <50 amino acids)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about AMP structure.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:18.525322Z"
+    },
+    {
+      "id": "ecf3c72d-2c86-414e-93ed-50fe0a463450",
+      "content_id": "fce182c9-1d60-4360-81b7-8c47bd03bf1d",
+      "claim_id": "C11",
+      "claim": "Structures of AMPs exhibit two common motifs: cationic charge and amphiphilic form.",
+      "claim_type": "EXPLICIT",
+      "source": "Structures of AMPs exhibit two common motifs: cationic charge and amphiphilic form (Zasloff, 2002; Brogden, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:18.525322Z"
+    },
+    {
+      "id": "4d55c50f-35ed-4cbd-9da1-0a937dd79452",
+      "content_id": "fce182c9-1d60-4360-81b7-8c47bd03bf1d",
+      "claim_id": "C12",
+      "claim": "The cationic charge enables AMPs to attack bacteria, enclosed in negatively charged membranes, rather than mammalian cells, which possess electrically neutral membranes.",
+      "claim_type": "EXPLICIT",
+      "source": "The cationic charge enables them to attack bacteria, enclosed in negatively charged membranes, rather than mammalian cells, which possess electrically neutral membranes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about AMP selectivity based on electrostatic interactions.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:18.525322Z"
+    },
+    {
+      "id": "9172e29b-c9fb-47f4-a594-bbc7500dfc54",
+      "content_id": "fce182c9-1d60-4360-81b7-8c47bd03bf1d",
+      "claim_id": "C13",
+      "claim": "The amphiphilic structure allows AMPs to penetrate into the lipid membrane structures.",
+      "claim_type": "EXPLICIT",
+      "source": "The amphiphilic structure allows AMPs to penetrate into the lipid membrane structures (Matsuzaki et al., 1995; Shai, 1999; Ludtke et al., 1996; Heller et al., 2000; Taheri-Araghi and Ha, 2007; Huang, 2000; Yang et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:18.525322Z"
+    },
+    {
+      "id": "bba08fb7-5f70-40f2-ab84-995297e45dcf",
+      "content_id": "fce182c9-1d60-4360-81b7-8c47bd03bf1d",
+      "claim_id": "C14",
+      "claim": "The density of cells in a culture can alter the activity of AMPs through distributions among different cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, it was suggested by Matsuzaki and Castanho et al. that the density of cells in a culture can alter the activity of AMPs through distributions among different cells (Matsuzaki, 1999; Melo et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:18.525322Z"
+    },
+    {
+      "id": "d6fa8b00-1ab9-49dc-bff9-f599f305944f",
+      "content_id": "fce182c9-1d60-4360-81b7-8c47bd03bf1d",
+      "claim_id": "C15",
+      "claim": "Cell density has a decisive role on the effectivity of antimicrobial peptides.",
+      "claim_type": "EXPLICIT",
+      "source": "Experimental investigations using bacteria and red blood cells by Stella and Wimley groups (Savini et al., 2017; Starr et al., 2016) directly demonstrated the decisive role of cell density on the effectivity of antimicrobial peptides.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous experimental work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:18.525322Z"
+    },
+    {
+      "id": "215e1378-7c49-4003-9769-7ae0b5f6c250",
+      "content_id": "fce182c9-1d60-4360-81b7-8c47bd03bf1d",
+      "claim_id": "C16",
+      "claim": "For some antibiotics, including AMPs, the MIC is dependent on the cell density.",
+      "claim_type": "EXPLICIT",
+      "source": "For some antibiotics, including AMPs, the MIC is dependent on the cell density.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the inoculum effect.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:18.525322Z"
+    },
+    {
+      "id": "17d67e3c-8b8b-4d10-b25c-ef633c13c824",
+      "content_id": "fce182c9-1d60-4360-81b7-8c47bd03bf1d",
+      "claim_id": "C17",
+      "claim": "In dilute cultures, MICs have been reported to reach a plateau independent of cell density.",
+      "claim_type": "EXPLICIT",
+      "source": "However, in dilute cultures, MICs have been reported to reach a plateau independent of cell density (Savini et al., 2017; Starr et al., 2016; Udekwu et al., 2009; Artemova et al., 2015), unless the cell population becomes so small that stochastic single-cell effects become important (Coates et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:18.525322Z"
+    },
+    {
+      "id": "45dff63b-ef0b-4b7f-b4d3-8f77ca46c3f6",
+      "content_id": "fce182c9-1d60-4360-81b7-8c47bd03bf1d",
+      "claim_id": "C20",
+      "claim": "The inhibition of growth of E. coli cells was followed by the translocation of a large number of AMPs into the cytoplasmic compartment of cells.",
+      "claim_type": "EXPLICIT",
+      "source": "By tracking a dye-tagged version of LL37 peptide (5-FAM-LC-LL37, AnaSpec), we found that the inhibition of growth of E. coli cells was followed by the translocation of a large number of AMPs into the cytoplasmic compartment of cells, thus reducing the peptide concentration in the culture, which works in favor of other cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by single-cell fluorescence microscopy data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:18.525322Z"
+    },
+    {
+      "id": "8b467add-b175-4928-ace0-355051cdc117",
+      "content_id": "fce182c9-1d60-4360-81b7-8c47bd03bf1d",
+      "claim_id": "C21",
+      "claim": "The translocation of AMPs into cells reduces the peptide concentration in the culture, which works in favor of other cells.",
+      "claim_type": "EXPLICIT",
+      "source": "we found that the inhibition of growth of E. coli cells was followed by the translocation of a large number of AMPs into the cytoplasmic compartment of cells, thus reducing the peptide concentration in the culture, which works in favor of other cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation of peptide absorption and the survival of subpopulations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:18.525322Z"
+    },
+    {
+      "id": "af69682f-534f-4cf2-b17d-8627a070def0",
+      "content_id": "fce182c9-1d60-4360-81b7-8c47bd03bf1d",
+      "claim_id": "C22",
+      "claim": "Below the MIC, peptide is absorbed by only a fraction of cells, leaving an inadequate amount of AMPs to inhibit the growth of remaining cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Below the MIC, peptide is absorbed by only a fraction of cells, leaving an inadequate amount of AMPs to inhibit the growth of remaining cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by single-cell microscopy observations of heterogeneous populations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:18.525322Z"
+    },
+    {
+      "id": "5379cbf1-870e-4935-beef-e0ff7e929606",
+      "content_id": "fce182c9-1d60-4360-81b7-8c47bd03bf1d",
+      "claim_id": "C23",
+      "claim": "Cultures with sub-MIC concentrations of dye-tagged LL37 peptides exhibit a heterogenous population combining non-growing cells containing many LL37 peptides and growing cells without LL37 peptides.",
+      "claim_type": "EXPLICIT",
+      "source": "We have directly observed that cultures with sub-MIC concentrations of dye-tagged LL37 peptides (5-FAM-LC-LL37) exhibit a heterogenous population combining non-growing cells containing many LL37 peptides and growing cells without LL37 peptides.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly observed in single-cell microscopy experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:18.525322Z"
+    },
+    {
+      "id": "8899469a-1727-4383-bc1b-07f310e16221",
+      "content_id": "fce182c9-1d60-4360-81b7-8c47bd03bf1d",
+      "claim_id": "C26",
+      "claim": "The increase in MIC with cell density represents one order of magnitude increase, which can be critical in medical applications.",
+      "claim_type": "EXPLICIT",
+      "source": "This is one order of magnitude increase in the MIC value, which can be critical in medical applications.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the experimental data showing MIC changes and speculation about medical implications.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:18.525322Z"
+    },
+    {
+      "id": "1869e9d6-ccbe-4ce4-9438-8e34bc005c38",
+      "content_id": "fce182c9-1d60-4360-81b7-8c47bd03bf1d",
+      "claim_id": "C27",
+      "claim": "Sub-MIC concentrations of LL37 peptides introduce an extended lag phase up to several hours.",
+      "claim_type": "EXPLICIT",
+      "source": "An interesting feature observed in the results was the extended lag phase, up to several hours, introduced by the sub-MIC concentrations of LL37 peptides (see Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed in microplate experiments and shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:18.525322Z"
+    },
+    {
+      "id": "498f8541-1d99-49e7-b94e-b6f238d6217d",
+      "content_id": "fce182c9-1d60-4360-81b7-8c47bd03bf1d",
+      "claim_id": "C29",
+      "claim": "The peptides are stable over the duration of the experiment.",
+      "claim_type": "EXPLICIT",
+      "source": "We tested and confirmed the stability of peptides over the duration of the experiment (Appendix 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is confirmed by experimental testing described in Appendix 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:18.525322Z"
+    },
+    {
+      "id": "e9db2ac3-0956-465f-ac93-a2bdcbd0b7cf",
+      "content_id": "fce182c9-1d60-4360-81b7-8c47bd03bf1d",
+      "claim_id": "C30",
+      "claim": "The growth delay behavior is attributed to heterogenous cell death, where the growth of a fraction of the cells is inhibited, while the rest of the cells recover the normal population growth after a time delay that is correlated to the number of dead cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, we hypothesized that this behavior was attributed to heterogenous cell death, where the growth of a fraction of the cells is inhibited, while the rest of the cells recover the normal population growth after a time delay that is correlated to the number of dead cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis based on inference from the observed growth patterns.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:18.525322Z"
+    },
+    {
+      "id": "f34296e7-1293-4aa3-9b3d-b11576af466a",
+      "content_id": "fce182c9-1d60-4360-81b7-8c47bd03bf1d",
+      "claim_id": "C31",
+      "claim": "In the microplate experiments, direct cell-to-cell interactions are minimal as the cells are on average over 50 \u03bcm apart from each other.",
+      "claim_type": "EXPLICIT",
+      "source": "In the microplate experiments, direct cell-to-cell interactions are minimal as the cells are on average over 50 \u03bcm apart from each other (corresponding to inoculum size in Figure 1A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is calculated from the inoculum sizes used in the experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:18.525322Z"
+    },
+    {
+      "id": "91f538c9-7a7c-4e06-8d59-1e0331be11ed",
+      "content_id": "fce182c9-1d60-4360-81b7-8c47bd03bf1d",
+      "claim_id": "C32",
+      "claim": "All the electrostatic interactions are completely shielded in the microplate experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "All the electrostatic interactions are completely shielded.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the large cell-to-cell distances and knowledge of electrostatic screening in solution.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:18.525322Z"
+    },
+    {
+      "id": "41c90869-65a7-4b48-8f97-aa8f1c7fd45b",
+      "content_id": "fce182c9-1d60-4360-81b7-8c47bd03bf1d",
+      "claim_id": "C35",
+      "claim": "The amount of absorbed AMPs in cultures with AMP concentrations higher than the MIC can well exceed the required amount of AMPs to kill a cell.",
+      "claim_type": "EXPLICIT",
+      "source": "Note that the amount of absorbed AMPs in cultures with AMP concentrations higher than the MIC can well exceed the required amount of AMPs to kill a cell.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the measurements of absorbed AMPs.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:18.525322Z"
+    },
+    {
+      "id": "842ac146-3c52-4723-a721-a83bfd96ce72",
+      "content_id": "fce182c9-1d60-4360-81b7-8c47bd03bf1d",
+      "claim_id": "C36",
+      "claim": "The inhibition of growth is followed by a rapid translocation of peptides into target cells, as quantified by a jump in the cell's fluorescent signal.",
+      "claim_type": "EXPLICIT",
+      "source": "By analyzing 383 cells, we observed that the inhibition of growth is followed by a rapid translocation of peptides into target cells, as quantified by a jump in the cell's fluorescent signal (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed in single-cell fluorescence microscopy experiments shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:18.525322Z"
+    },
+    {
+      "id": "7b3bfc99-1051-4874-87d3-3bd34ee562d0",
+      "content_id": "fce182c9-1d60-4360-81b7-8c47bd03bf1d",
+      "claim_id": "C37",
+      "claim": "Fluorescent signals showed a bimodal distribution over the course of the experiment.",
+      "claim_type": "EXPLICIT",
+      "source": "As a result, fluorescent signals showed a bimodal distribution over the course of the experiment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in the fluorescence intensity histograms from single-cell experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:18.525322Z"
+    },
+    {
+      "id": "9c389796-ef3c-472f-b209-5037cc311f4c",
+      "content_id": "fce182c9-1d60-4360-81b7-8c47bd03bf1d",
+      "claim_id": "C38",
+      "claim": "A large degree of temporal, cell-to-cell heterogeneity was observed as the peptide translocation time varied for about 30 min for different cells.",
+      "claim_type": "EXPLICIT",
+      "source": "A large degree of temporal, cell-to-cell heterogeneity was also observed as the peptide translocation time varied for about 30 min for different cells (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed in single-cell tracking data shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:18.525322Z"
+    },
+    {
+      "id": "dd2eefe8-6a7f-4fa8-b7ce-9fa11d9adde8",
+      "content_id": "fce182c9-1d60-4360-81b7-8c47bd03bf1d",
+      "claim_id": "C39",
+      "claim": "The fluorescent signal remained high after translocation confirming retention of peptides in the cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The fluorescent signal remained high after translocation confirming retention of peptides in the cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in time-lapse fluorescence microscopy data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:18.525322Z"
+    },
+    {
+      "id": "5d568158-b145-4583-83fc-7bb41ffa2614",
+      "content_id": "fce182c9-1d60-4360-81b7-8c47bd03bf1d",
+      "claim_id": "C41",
+      "claim": "The signal strength is reduced in the regions with densely packed fluorophores.",
+      "claim_type": "EXPLICIT",
+      "source": "As such, the signal strength is reduced in the regions with densely packed fluorophores (Swiecicki et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on knowledge of fluorophore self-quenching and supported by a citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:18.525322Z"
+    },
+    {
+      "id": "ee2d3667-c166-47d9-bab7-4496f4613601",
+      "content_id": "fce182c9-1d60-4360-81b7-8c47bd03bf1d",
+      "claim_id": "C42",
+      "claim": "The translocation happens shortly after the inhibition of growth and shrinkage of the cell.",
+      "claim_type": "EXPLICIT",
+      "source": "The average behavior (white line) of the collapse shows that the translocation happens shortly after the inhibition of growth and shrinkage of the cell.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in the analysis of instantaneous growth rate data shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:18.525322Z"
+    },
+    {
+      "id": "4813b405-c8ca-4c29-95a3-8c112148d26b",
+      "content_id": "fce182c9-1d60-4360-81b7-8c47bd03bf1d",
+      "claim_id": "C43",
+      "claim": "E. coli cells exhibited a binary physiological state over the course of the peptide action in terms of growth rate and peptide uptake.",
+      "claim_type": "EXPLICIT",
+      "source": "As a whole, E. coli cells exhibited a binary physiological state over the course of the peptide action in terms of growth rate and peptide uptake.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in single-cell microscopy data and quantified in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:18.525322Z"
+    },
+    {
+      "id": "4d117246-5c12-463a-972f-f3c2e5174fc9",
+      "content_id": "fce182c9-1d60-4360-81b7-8c47bd03bf1d",
+      "claim_id": "C44",
+      "claim": "Cells are found to be in either of these distinct states: (1) growing, with no significant peptide uptake; and (2) non-growing, followed by an abrupt peptide uptake.",
+      "claim_type": "EXPLICIT",
+      "source": "That is, the cells were found to be in either of these distinct states: (1) growing, with no significant peptide uptake; and (2) non-growing, followed by an abrupt peptide uptake.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in single-cell microscopy data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:18.525322Z"
+    },
+    {
+      "id": "d39b475b-d551-4dda-8cda-a9b9cdadfd77",
+      "content_id": "fce182c9-1d60-4360-81b7-8c47bd03bf1d",
+      "claim_id": "C45",
+      "claim": "At the peptide concentration of 10 \u03bcM (above the MIC) all cells were initially in state (1) and then transitioned to state (2) within one generation.",
+      "claim_type": "EXPLICIT",
+      "source": "At the peptide concentration of 10 \u03bcM (above the MIC) all cells were initially in state (1) and then transitioned to state (2) within one generation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in single-cell microscopy experiments with above-MIC concentrations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:18.525322Z"
+    },
+    {
+      "id": "9c1ec762-e721-4861-aecf-50cba724c1db",
+      "content_id": "fce182c9-1d60-4360-81b7-8c47bd03bf1d",
+      "claim_id": "C46",
+      "claim": "At sub-MIC concentration (4.0 \u03bcM), most individual cells grew to form micro-colonies.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, we proceeded with single-cell experiments as noted above with a sole modification of using a lower, sub-MIC concentration of 5-FAM-LC-LL37 (4.0 \u03bcM for the dye-tagged peptide). As such, most individual cells grew to form micro-colonies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in single-cell microscopy experiments with sub-MIC concentrations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:18.525322Z"
+    },
+    {
+      "id": "0c077788-fbba-4d9a-a13a-577e04882c57",
+      "content_id": "fce182c9-1d60-4360-81b7-8c47bd03bf1d",
+      "claim_id": "C47",
+      "claim": "Phenotypic heterogeneity was observed in the isogenic population of cells in each micro-colony.",
+      "claim_type": "EXPLICIT",
+      "source": "The striking observation was the phenotypic heterogeneity in the isogenic population of cells in each micro-colony (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed in single-cell microscopy experiments shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:18.525322Z"
+    },
+    {
+      "id": "361fdd2f-70a2-404f-8ce1-24b5b7bf5487",
+      "content_id": "fce182c9-1d60-4360-81b7-8c47bd03bf1d",
+      "claim_id": "C48",
+      "claim": "As a colony expanded, growth of some cells was inhibited and peptides translocated into them.",
+      "claim_type": "EXPLICIT",
+      "source": "As a colony expanded, growth of some cells was inhibited and peptides translocated into them.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in time-lapse microscopy of micro-colonies.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:18.525322Z"
+    },
+    {
+      "id": "418d8129-bd82-4bdd-97e0-afeb5d81e2d6",
+      "content_id": "fce182c9-1d60-4360-81b7-8c47bd03bf1d",
+      "claim_id": "C49",
+      "claim": "At sub-MIC the transition occurred for only a fraction of the cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The difference is that at sub-MIC the transition occurred for only a fraction of the cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in single-cell microscopy experiments with sub-MIC concentrations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:18.525322Z"
+    },
+    {
+      "id": "0cc90dea-3462-4052-96d8-ad2316038ccc",
+      "content_id": "fce182c9-1d60-4360-81b7-8c47bd03bf1d",
+      "claim_id": "C50",
+      "claim": "The relative size of the colonies initially increased exponentially until the appearance of non-growing cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Analysis of 13 separate micro-colonies, consisting of a total of 280 cells (over the course of the experiment), showed that the relative size of the colonies initially increased exponentially until the appearance of non-growing cells (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed in analysis of micro-colony growth shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:18.525322Z"
+    },
+    {
+      "id": "7e159562-4495-4a9b-aa25-3c51be988c53",
+      "content_id": "fce182c9-1d60-4360-81b7-8c47bd03bf1d",
+      "claim_id": "C51",
+      "claim": "The fluorescence intensity of non-growing cells showed an abrupt transition with comparable relative changes in the signal, which suggests that a similar number of peptides are taken by each cell.",
+      "claim_type": "EXPLICIT",
+      "source": "The fluorescence intensity of non-growing cells showed an abrupt transition, as in the case of above MIC cultures, with comparable relative changes in the signal, which suggests that a similar number of peptides are taken by each cell (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed in fluorescence intensity measurements shown in Figure 3C and inferred from the similarity of signal changes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:18.525322Z"
+    },
+    {
+      "id": "4c036eb6-9a36-4762-9aa7-6e85f5b36d8c",
+      "content_id": "fce182c9-1d60-4360-81b7-8c47bd03bf1d",
+      "claim_id": "C54",
+      "claim": "The absorbed AMPs are bound to the membrane as well as to the cytoplasm of the cell and are not recycled to attack other cells.",
+      "claim_type": "EXPLICIT",
+      "source": "These AMPs are bound to the membrane as well as to the cytoplasm of the cell and are not recycled to attack other cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an assumption in the mathematical model based on the observation of peptide retention.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:18.525322Z"
+    },
+    {
+      "id": "c24284d1-ea22-4cbe-8968-519e5b76adaa",
+      "content_id": "fce182c9-1d60-4360-81b7-8c47bd03bf1d",
+      "claim_id": "C57",
+      "claim": "The discrepancy between the two estimates might arise from the fact that cells can divide several times before they stop growing and absorb peptides.",
+      "claim_type": "EXPLICIT",
+      "source": "This discrepancy might arise from the fact that cells can divide several times before they stop growing and absorb peptides, which was neglected in the estimate from the colorimetric measurements.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about the reason for the discrepancy between measurements.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:18.525322Z"
+    },
+    {
+      "id": "b4b21681-5f01-423f-910e-70270303400d",
+      "content_id": "fce182c9-1d60-4360-81b7-8c47bd03bf1d",
+      "claim_id": "C59",
+      "claim": "The predictions of the model agree reasonably well with experimental results for the growth delay of population.",
+      "claim_type": "EXPLICIT",
+      "source": "The predictions of our model agree reasonably well with experimental results for the growth delay of population (see Figure 4D), given the simplicity of the model.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by comparison of model predictions with experimental data in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:18.525322Z"
+    },
+    {
+      "id": "9ff54bc0-d7ea-463d-8152-f64c4694ed62",
+      "content_id": "fce182c9-1d60-4360-81b7-8c47bd03bf1d",
+      "claim_id": "C60",
+      "claim": "Deviations between model and experiment likely originate from the fact that cell doubling times are scattered, while the model assumes a fixed cell doubling time of 23 min.",
+      "claim_type": "EXPLICIT",
+      "source": "Deviations likely originate from the fact that cell doubling times are scattered (Figure 1D), while our model assumes a fixed cell doubling time of 23 min.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is speculation about the source of deviations between model and experiment.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:18.525322Z"
+    },
+    {
+      "id": "a997aefc-215a-4e2e-8270-63df8ec6db6c",
+      "content_id": "fce182c9-1d60-4360-81b7-8c47bd03bf1d",
+      "claim_id": "C61",
+      "claim": "Due to the exponential growth, the growth delay is highly sensitive to the cell doubling time.",
+      "claim_type": "EXPLICIT",
+      "source": "Due to the exponential growth, the growth delay is highly sensitive to the cell doubling time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on knowledge of exponential growth dynamics.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:18.525322Z"
+    },
+    {
+      "id": "9f6ec917-8349-47f4-95d7-1175677f846c",
+      "content_id": "fce182c9-1d60-4360-81b7-8c47bd03bf1d",
+      "claim_id": "C62",
+      "claim": "A negative correlation was observed between peptide translocation time and initial cell length, indicating that small cells can resist the action of AMPs and they continue growing until a later time point.",
+      "claim_type": "EXPLICIT",
+      "source": "A negative correlation was observed between peptide translocation time and initial cell length, indicating that small cells can resist the action of AMPs and they continue growing until a later time point (Figure 5A left panel).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed in single-cell data shown in Figure 5A and inferred from the correlation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:18.525322Z"
+    },
+    {
+      "id": "4f27264b-f352-49b6-9f1e-bf77e6eaebae",
+      "content_id": "fce182c9-1d60-4360-81b7-8c47bd03bf1d",
+      "claim_id": "C63",
+      "claim": "Cell length at translocation time did not show any correlation with the translocation time.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, cell length at translocation time did not show any correlation with the translocation time (Figure 5A right panel).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed in single-cell data shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:18.525322Z"
+    },
+    {
+      "id": "cf7910e2-8347-48e9-882a-ae31ae3997c1",
+      "content_id": "fce182c9-1d60-4360-81b7-8c47bd03bf1d",
+      "claim_id": "C64",
+      "claim": "The action of 5-FAM-LC-LL37 is cell-cycle and cell-age dependent.",
+      "claim_type": "EXPLICIT",
+      "source": "This clearly demonstrated that the action of 5-FAM-LC-LL37 is cell-cycle and cell-age dependent.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the correlation between initial cell length and translocation time.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:18.525322Z"
+    },
+    {
+      "id": "50f36b71-ed13-4731-9dce-b7fee6163abd",
+      "content_id": "fce182c9-1d60-4360-81b7-8c47bd03bf1d",
+      "claim_id": "C65",
+      "claim": "LL37 peptides were observed to first bind to the septum of dividing cells.",
+      "claim_type": "EXPLICIT",
+      "source": "This seems in agreement with the findings made by the Weisshaar lab, where LL37 peptides were observed to first bind to the septum of dividing cells. Thus, the higher chance to act on larger, dividing cells, as opposed to small growing cells (Sochacki et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:18.525322Z"
+    },
+    {
+      "id": "3b0a883c-2f42-4afa-8c03-c4a421be8350",
+      "content_id": "fce182c9-1d60-4360-81b7-8c47bd03bf1d",
+      "claim_id": "C66",
+      "claim": "LL37 peptides preferentially bind to membranes with negative Gaussian curvature, a geometry that can be found in the septum of rod shaped microorganisms.",
+      "claim_type": "EXPLICIT",
+      "source": "Among various possibilities, the Wong lab has shown that LL37 peptides preferentially bind to membranes with negative Gaussian curvature, a geometry that can be found in the septum of rod shaped microorganisms (Yang et al., 2008; Schmidt et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:18.525322Z"
+    },
+    {
+      "id": "a0f96ad4-1ac0-415d-aea1-bae2f62207a9",
+      "content_id": "fce182c9-1d60-4360-81b7-8c47bd03bf1d",
+      "claim_id": "C69",
+      "claim": "Under sub-MIC concentrations, absorption of AMPs led to the emergence of two distinct subpopulations in an isogenic bacterial culture: a group of cells that retain peptides after their growth is inhibited and a group of surviving cells that grow owing to the reduction of the 'free' peptide concentration by the other group.",
+      "claim_type": "EXPLICIT",
+      "source": "In this work, we discovered an unexpected absorption and retention of an antimicrobial peptide (LL37 and the dye-tagged analogue, 5-FAM-LC-LL37) in E. coli cells, which under sub-MIC concentrations led to the emergence of two distinct subpopulations in an isogenic bacterial culture: a group of cells that retain peptides after their growth is inhibited and a group of surviving cells that grow owing to the reduction of the 'free' peptide concentration by the other group.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in single-cell microscopy experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:18.525322Z"
+    },
+    {
+      "id": "daa35a02-b2eb-48fa-9afa-2d37d534d757",
+      "content_id": "fce182c9-1d60-4360-81b7-8c47bd03bf1d",
+      "claim_id": "C70",
+      "claim": "This 'passive cooperation' is an interesting feature of an E. coli culture where cells do not have any form of active communication.",
+      "claim_type": "EXPLICIT",
+      "source": "This 'passive cooperation' is an interesting feature of an E. coli culture where cells do not have any form of active communication, unlike ion-channel based cooperation in Bacillus subtilis biofilms (Prindle et al., 2015; Liu et al., 2017; Liu et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observations and contrasted with active communication in other bacteria.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:18.525322Z"
+    },
+    {
+      "id": "4593e1a8-b9ec-4569-9a74-f73d630d14ed",
+      "content_id": "fce182c9-1d60-4360-81b7-8c47bd03bf1d",
+      "claim_id": "C71",
+      "claim": "A distinct feature of the action of AMPs is its collective nature, where a large number of AMPs are required to first bind to and then disrupt the cell membranes to kill the cell.",
+      "claim_type": "EXPLICIT",
+      "source": "At the cellular and molecular scales, a distinct feature of the action of AMPs is its collective nature, where a large number of AMPs are required to first bind to and then disrupt the cell membranes to kill the cell.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about AMP mechanism of action.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:18.525322Z"
+    },
+    {
+      "id": "328bf6c0-3f59-48dc-b47e-74fde5463cd8",
+      "content_id": "fce182c9-1d60-4360-81b7-8c47bd03bf1d",
+      "claim_id": "C72",
+      "claim": "The temporal and cell-to-cell heterogeneity in the peptide absorption into E. coli cells goes beyond the membrane binding.",
+      "claim_type": "EXPLICIT",
+      "source": "Utilizing live, single-cell microscopy, we observed the temporal and cell-to-cell heterogeneity in the peptide absorption into E. coli cells, which goes beyond the membrane binding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in single-cell microscopy experiments showing peptide translocation into the cytoplasm.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:18.525322Z"
+    },
+    {
+      "id": "68e2ea2d-9364-4a9b-bee3-faa9cb3a8412",
+      "content_id": "fce182c9-1d60-4360-81b7-8c47bd03bf1d",
+      "claim_id": "C73",
+      "claim": "The inoculum effect in the case of LL37 pepides arises from the retention of these peptides in target cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The integration of the population and single-cell data, combined with the theoretical modeling, presented in this work, provides strong evidence that the inoculum effect in the case of LL37 pepides arises from the retention of these peptides in target cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is concluded from the integration of experimental data and mathematical modeling.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:18.525322Z"
+    },
+    {
+      "id": "18a4dfb0-a0b3-436f-b756-93050fd35d59",
+      "content_id": "fce182c9-1d60-4360-81b7-8c47bd03bf1d",
+      "claim_id": "C74",
+      "claim": "The picture at the single-cell level is simple and binary, consistent in cultures with above-MIC and sub-MIC concentrations of AMPs: occurrence of growth inhibition depends on the free peptide concentration and is followed by an abrupt, permanent translocation of peptides into the target cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite the seeming complexity of the partitioning of LL37 peptides in a population of bacterial cells, the picture at the single-cell level is simple and binary, consistent in cultures with above-MIC and sub-MIC concentrations of AMPs: occurrence of growth inhibition depends on the free peptide concentration and is followed by an abrupt, permanent translocation of peptides into the target cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is concluded from single-cell microscopy observations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:18.525322Z"
+    },
+    {
+      "id": "21c21599-8a14-4b7d-ab3f-da22ce1f801b",
+      "content_id": "fce182c9-1d60-4360-81b7-8c47bd03bf1d",
+      "claim_id": "C76",
+      "claim": "The large number of absorbed peptides raises the question of which molecules inside of the cells are interacting with LL37 peptides.",
+      "claim_type": "EXPLICIT",
+      "source": "Yet, this large number raises the question of which molecules inside of the cells are interacting with LL37 peptides.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a question raised based on the observation of large numbers of absorbed peptides.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:18.525322Z"
+    },
+    {
+      "id": "855d5e46-a441-4ce4-8313-99b23b56f7e9",
+      "content_id": "fce182c9-1d60-4360-81b7-8c47bd03bf1d",
+      "claim_id": "C77",
+      "claim": "The negative charge of DNA as well as some proteins can provide binding sites for LL37 peptides.",
+      "claim_type": "EXPLICIT",
+      "source": "The negative charge of DNA as well as some proteins can provide binding sites for LL37 peptides.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on knowledge of electrostatic interactions.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:18.525322Z"
+    },
+    {
+      "id": "104d31d8-5de7-485d-a88d-12c3fb5b8643",
+      "content_id": "fce182c9-1d60-4360-81b7-8c47bd03bf1d",
+      "claim_id": "C78",
+      "claim": "Translocation of 5-FAM-LC-LL37 peptides into mini-cells showed qualitatively similar absorption and retention as seen in regular cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Translocation of 5-FAM-LC-LL37 peptides into mini-cells showed qualitatively similar absorption and retention as seen in regular cells (Figure 6B), which suggests the presence of significant interactions of AMPs with the intracellular content other than DNA.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed in experiments with mini-cells shown in Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:18.525322Z"
+    },
+    {
+      "id": "b52c610f-4e09-4cb4-b048-5e308d84d3c9",
+      "content_id": "fce182c9-1d60-4360-81b7-8c47bd03bf1d",
+      "claim_id": "C79",
+      "claim": "The rate at which AMPs are absorbed into the mini-cells is slower than that in the neighboring mother cells with DNA content, perhaps indicating the role of the negative charge of DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Yet, the rate at which AMPs are absorbed into the mini-cells is slower than that in the neighboring mother cells with DNA content (Figure 6B), perhaps indicating the role of the negative charge of DNA.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed in experiments with mini-cells shown in Figure 6B and speculation about the role of DNA.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:18.525322Z"
+    },
+    {
+      "id": "8f93517e-23f8-44cb-91b0-4244d321023f",
+      "content_id": "fce182c9-1d60-4360-81b7-8c47bd03bf1d",
+      "claim_id": "C80",
+      "claim": "The strong absorption of peptides into the cytoplasmic area raises questions on the nature and impact of this intercellular binding.",
+      "claim_type": "EXPLICIT",
+      "source": "First, the strong absorption of peptides into the cytoplasmic area raises questions on the nature and impact of this intercellular binding: what specific proteins and domains are peptides binding to? How does the peptide binding perturb the protein functions?",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "These are questions raised based on the observations.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:18.525322Z"
+    },
+    {
+      "id": "93253161-6aa5-43b9-bba5-e6002c43fb9c",
+      "content_id": "fce182c9-1d60-4360-81b7-8c47bd03bf1d",
+      "claim_id": "C81",
+      "claim": "The population survivability as a result of peptide absorption raises questions on the evolutionary dynamics of this phenomena.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, the population survivability as a result of peptide absorption raises questions on the evolutionary dynamics of this phenomena: how do E. coli cells evolve to achieve this cooperative fit? How does this phenomena affect multi-species cultures with prokaryotic and eukaryotic organisms?",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "These are questions raised based on the observations.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:18.525322Z"
+    },
+    {
+      "id": "ab7f0c2f-7745-4089-b929-1200885b80da",
+      "content_id": "fce182c9-1d60-4360-81b7-8c47bd03bf1d",
+      "claim_id": "C82",
+      "claim": "Considering the peptide absorption into the target cells, AMP concentration should not be assumed the only key factor, but the rate of the expression of the AMPs by the host is also decisive in determining the effectivity of AMPs.",
+      "claim_type": "EXPLICIT",
+      "source": "Considering the peptide absorption into the target cells, AMP concentration should not be assumed the only key factor, but the rate of the expression of the AMPs by the host is also decisive in determining the effectivity of AMPs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about the implications of the findings for AMP activity in hosts.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:18.525322Z"
+    },
+    {
+      "id": "def3c40a-e52b-4c43-9498-5a3b53abaab8",
+      "content_id": "fce182c9-1d60-4360-81b7-8c47bd03bf1d",
+      "claim_id": "C83",
+      "claim": "The expression rate competes with the rate of absorption of the AMPs in the bacterial cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The expression rate competes with the rate of absorption of the AMPs in the bacterial cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about the dynamics of AMP activity in hosts.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:18.525322Z"
+    },
+    {
+      "id": "15e6522e-8b1f-4c91-93aa-8cfcd273887e",
+      "content_id": "fce182c9-1d60-4360-81b7-8c47bd03bf1d",
+      "claim_id": "C84",
+      "claim": "The strain used is a derivative of E. coli K12 strain NCM3722.",
+      "claim_type": "EXPLICIT",
+      "source": "In this work, we used derivatives of a prototrophic Escherichia coli K12 strain, NCM3722, that was constructed, sequenced, and extensively tested by Kustu and Jun labs (Soupene et al., 2003; Brown and Jun, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the bacterial strain used, supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:18.525322Z"
+    },
+    {
+      "id": "081d7a88-5a8e-4073-951a-c6e045b165de",
+      "content_id": "fce182c9-1d60-4360-81b7-8c47bd03bf1d",
+      "claim_id": "C87",
+      "claim": "The average generation time of the E. coli strain used in this study was 23 min in RDM at 37\u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "The average generation time of the E. coli strain used in this study was 23 min in RDM at 37\u00b0C.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an experimental measurement of the growth rate.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:18.525322Z"
+    },
+    {
+      "id": "245221e0-4076-41f2-ba8d-cc9d3d81428c",
+      "content_id": "fce182c9-1d60-4360-81b7-8c47bd03bf1d",
+      "claim_id": "C88",
+      "claim": "The net peptide content of the purchased material was quantified at 75% by elemental analysis of the carbon, hydrogen, and nitrogen content (CHN analysis).",
+      "claim_type": "EXPLICIT",
+      "source": "The net peptide content of the purchased material was quantified at 75% by elemental analysis of the carbon, hydrogen, and nitrogen content (CHN analysis) through the manufacturing company.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is information about the peptide purity from the manufacturer.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:18.525322Z"
+    },
+    {
+      "id": "dab4c001-363d-4f97-b7cc-514dea54e265",
+      "content_id": "fce182c9-1d60-4360-81b7-8c47bd03bf1d",
+      "claim_id": "C90",
+      "claim": "1 \u03bcg/mL of cephalexin results in the 17% increase in the length of the newborn cells, from 3.37 \u03bcm to 3.96 \u03bcm, without any appreciable change of the growth rate.",
+      "claim_type": "EXPLICIT",
+      "source": "Our measurements using the microfluidic 'mother machine' (Wang et al., 2010) also showed that 1 \u03bcg/mL of cephalexin results in the 17% increase in the length of the newborn cells (Figure 5B), from 3.37 \u03bcm to 3.96 \u03bcm, without any appreciable change of the growth rate.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is measured experimentally using microfluidic mother machine.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:18.525322Z"
+    },
+    {
+      "id": "ad0c6dda-3a72-4dab-abc8-c6bd93053392",
+      "content_id": "fce182c9-1d60-4360-81b7-8c47bd03bf1d",
+      "claim_id": "C91",
+      "claim": "The model predicts two different outcomes depending on the initial concentrations of bacteria and AMPs: (1) The population of bacteria goes extinct for a sufficiently large concentration of AMPs, that is above MIC; (2) The population of bacteria can recover in a low concentration of AMPs, that is below MIC.",
+      "claim_type": "EXPLICIT",
+      "source": "This model predicts two different outcomes (see Figure 4B) depending on the initial concentrations of bacteria and AMPs: (1) The population of bacteria goes extinct for a sufficiently large concentration of AMPs, that is above MIC; (2) The population of bacteria can recover in a low concentration of AMPs, that is below MIC.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a prediction from the mathematical model shown in Figure 4B.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:18.525322Z"
+    },
+    {
+      "id": "828fe3e6-0a8e-414e-ba41-2bd631d76cd1",
+      "content_id": "fce182c9-1d60-4360-81b7-8c47bd03bf1d",
+      "claim_id": "C95",
+      "claim": "Only binding or degradation of AMPs of the same order of magnitude (10^8) per individual cells can lead to the inoculum effect.",
+      "claim_type": "EXPLICIT",
+      "source": "At such a high ratio, only binding or degradation of AMPs of the same order of magnitude per individual cells can lead to the inoculum effect (Starr et al., 2016; Savini et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the ratio of AMPs to cells and supported by citations.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:18.525322Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "8fb31552-526d-4ad0-8e36-a7aa32599f27",
+      "content_id": "fce182c9-1d60-4360-81b7-8c47bd03bf1d",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The MIC of LL37 increases with cell density even in dilute cultures where cells are >50 \u03bcm apart and electrostatic interactions are shielded, representing a one order of magnitude increase that requires ~10^8 AMPs absorbed per cell to explain the inoculum effect.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C26, C31, C32, and C95 collectively demonstrate the inoculum effect in dilute cultures through microplate assays (Figure 1A-B). The experimental design appropriately controls for direct cell-cell interactions by maintaining large intercellular distances, and the quantification of absorbed AMPs provides a mechanistic explanation for the observed MIC dependence on cell density.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:42:18.525322Z"
+    },
+    {
+      "id": "20371d2e-d57f-4549-9a84-9e6b5c50fbb1",
+      "content_id": "fce182c9-1d60-4360-81b7-8c47bd03bf1d",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Sub-MIC concentrations of LL37 introduce extended lag phases (up to several hours) without changing doubling time, attributed to heterogeneous cell death where a fraction of cells are inhibited while others recover. A mathematical model reproduces this growth delay reasonably well.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7, C27, and C30 describe the observed lag phase phenomenon (Figure 1C-D), while C59-C61 address model predictions. The experimental observation is clear and well-documented. The model agreement (C59) is qualified as 'reasonable' with acknowledged limitations (C60), which is appropriate given the model's simplicity. The hypothesis of heterogeneous cell death (C30) is later validated by single-cell experiments.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:42:18.525322Z"
+    },
+    {
+      "id": "81d0600f-76bc-447e-9575-34a7101b63d5",
+      "content_id": "fce182c9-1d60-4360-81b7-8c47bd03bf1d",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "E. coli cells exhibit rapid absorption and retention of large numbers of LL37 peptides following growth inhibition, as demonstrated by single-cell fluorescence microscopy showing abrupt translocation events with ~30 min temporal heterogeneity between cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C20, C36-C39, C42 describe the core observation of peptide translocation using dye-tagged LL37 (Figure 2A-C). The data from 383 cells provides adequate statistical power. The observation of bimodal fluorescence distribution and temporal heterogeneity is clearly demonstrated. C41 appropriately acknowledges the limitation of fluorescence quenching in quantifying peptide density.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:42:18.525322Z"
+    },
+    {
+      "id": "c242c874-3be0-45a9-97b7-5731ecf3e402",
+      "content_id": "fce182c9-1d60-4360-81b7-8c47bd03bf1d",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "E. coli cells exhibit a binary physiological response to LL37: (1) growing with no peptide uptake, or (2) non-growing with abrupt peptide uptake. At above-MIC concentrations (10 \u03bcM), all cells transition from state 1 to state 2 within one generation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C45 describe the binary response observed in single-cell experiments (Figure 2D). The bimodal distribution in the scatter plot of growth rate vs. fluorescence intensity provides clear quantitative support. The observation at above-MIC concentrations establishes the baseline behavior for comparison with sub-MIC conditions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:42:18.525322Z"
+    },
+    {
+      "id": "ec80a9f5-01fb-4e7a-9b62-f09e34853355",
+      "content_id": "fce182c9-1d60-4360-81b7-8c47bd03bf1d",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "At sub-MIC concentrations, peptide absorption leads to two distinct subpopulations: non-growing cells that absorb peptides and growing cells that survive due to reduced free peptide concentration. This 'passive cooperation' increases population survivability without active cell-cell communication.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C5, C21-C23, C46-C51, C69-C70 describe the heterogeneous response at sub-MIC concentrations (Figure 3). The single-cell microscopy data from 13 micro-colonies (280 cells) provides strong evidence for the emergence of two subpopulations. The inference of 'passive cooperation' (C70) is reasonable given the observed peptide sequestration and survival of non-absorbing cells, though the mechanism is indirect rather than involving active signaling.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:42:18.525322Z"
+    },
+    {
+      "id": "a174c289-bf73-4f76-8c25-113072a1d0c0",
+      "content_id": "fce182c9-1d60-4360-81b7-8c47bd03bf1d",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "A mathematical model based on peptide absorption (with parameters kk=0.040 \u03bcM^-1 min^-1 and N=3.8\u00d710^7 AMPs/cell) reproduces the MIC dependence on inoculum size and growth delays, providing evidence that the inoculum effect arises from peptide retention in target cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54, C57, C59, C73, C74, C91 describe the mathematical model and its validation (Figure 4). The model successfully fits the MIC data and predicts growth delays without additional fitting. The discrepancy between model-derived (3.8\u00d710^7) and colorimetric measurements (7.6\u00d710^8) of absorbed AMPs is acknowledged (C57) with a plausible explanation. The model's simplicity is appropriate for the level of mechanistic understanding and provides strong support for the peptide retention hypothesis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:42:18.525322Z"
+    },
+    {
+      "id": "845ec067-20de-4b14-b2d9-d20f975cf005",
+      "content_id": "fce182c9-1d60-4360-81b7-8c47bd03bf1d",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The action of LL37 is cell-cycle dependent, with smaller cells resisting peptide action longer than larger cells. Peptide translocation time negatively correlates with initial cell length but not with length at translocation. Increasing cell size by 17% with cephalexin increases MIC, consistent with preferential binding to septa.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C62-C64 describe the cell-cycle dependence observed in single-cell data (Figure 5A). The negative correlation between initial cell length and translocation time is clearly shown, while the lack of correlation with length at translocation supports the cell-cycle interpretation. The cephalexin experiment (C90, Figure 5B) provides independent validation. Citations to prior work (C65-C66) on septal binding provide mechanistic context, though the authors appropriately note this is correlative.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:42:18.525322Z"
+    },
+    {
+      "id": "c40702d0-5f58-403c-a313-8aaaa2aece2a",
+      "content_id": "fce182c9-1d60-4360-81b7-8c47bd03bf1d",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Mini-cell experiments show that LL37 peptides interact significantly with intracellular content beyond DNA, though DNA may play a role as absorption is slower in enucleated mini-cells compared to mother cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C76-C79 describe experiments with enucleated mini-cells (Figure 6). The observation that mini-cells absorb peptides qualitatively similarly to regular cells (C78) demonstrates interactions beyond DNA. The slower absorption rate in mini-cells (C79) suggests DNA contributes but is not solely responsible. The experiment is well-designed to address the question of intracellular binding targets, though the interpretation remains somewhat speculative (C79 uses 'perhaps').",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:42:18.525322Z"
+    },
+    {
+      "id": "276a0ff7-1d44-4fa7-bbea-6dcfbc966870",
+      "content_id": "fce182c9-1d60-4360-81b7-8c47bd03bf1d",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Peptides remain stable over the experiment duration, and the amount of absorbed AMPs can exceed the amount required to kill a cell at above-MIC concentrations. The purchased peptide material was 75% pure by CHN analysis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29, C35, C88 provide important methodological controls and observations. Peptide stability (C29) is confirmed in Appendix 2, which is essential for interpreting the time-course experiments. The observation that absorbed AMPs exceed lethal amounts (C35) is a reasonable inference from the measurements. Peptide purity information (C88) is appropriately documented for reproducibility.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:42:18.525322Z"
+    },
+    {
+      "id": "d0b29104-b2a3-45c3-9182-8487aa8bc813",
+      "content_id": "fce182c9-1d60-4360-81b7-8c47bd03bf1d",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The E. coli strain used is a derivative of K12 strain NCM3722 with an average generation time of 23 min in RDM at 37\u00b0C.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C84 and C87 provide essential strain and growth condition information. The strain is well-characterized with appropriate citations, and the generation time measurement is straightforward and used throughout the modeling work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:42:18.525322Z"
+    },
+    {
+      "id": "a4d78264-dff6-40a0-bd20-691c116f42e5",
+      "content_id": "fce182c9-1d60-4360-81b7-8c47bd03bf1d",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "AMPs are broad-spectrum antibiotics that are part of the first line of defense in multicellular systems. They typically contain <50 amino acids with cationic charge and amphiphilic structure, enabling selective targeting of bacteria through electrostatic interactions and membrane penetration.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C8-C13 provide background knowledge about AMPs that is well-established in the literature. These claims are appropriately supported by multiple citations and represent consensus understanding of AMP structure and function. This background contextualizes the experimental work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:42:18.525322Z"
+    },
+    {
+      "id": "fb1d591c-23c2-45d6-91fc-2ba76bebcf66",
+      "content_id": "fce182c9-1d60-4360-81b7-8c47bd03bf1d",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Prior work has suggested and demonstrated that cell density can alter AMP activity through distribution among cells, leading to MIC dependence on cell density (inoculum effect), though MICs were reported to plateau in dilute cultures.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C14-C17 accurately summarize prior literature on the inoculum effect with appropriate citations. The authors correctly note the reported plateau in dilute cultures (C17), which makes their contrary observation (C6) more significant. The literature review appropriately sets up the research question.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:42:18.525322Z"
+    },
+    {
+      "id": "0f195cfb-063f-4676-9bc1-b3f435f9223e",
+      "content_id": "fce182c9-1d60-4360-81b7-8c47bd03bf1d",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The action of AMPs has a collective nature requiring many AMPs to disrupt membranes. Single-cell microscopy revealed temporal and cell-to-cell heterogeneity in peptide absorption that goes beyond membrane binding.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C71-C72 summarize key mechanistic features. C71 represents established knowledge about AMP mechanism, while C72 describes the novel observation of heterogeneity in cytoplasmic translocation. Both are well-supported by the experimental data presented.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:42:18.525322Z"
+    },
+    {
+      "id": "5557759f-2880-4624-8f36-61842a1f46bc",
+      "content_id": "fce182c9-1d60-4360-81b7-8c47bd03bf1d",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The findings raise questions about molecular binding targets, evolutionary dynamics of cooperative behavior, and implications for AMP activity in hosts where expression rate may compete with absorption rate.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C80-C83 are explicitly framed as open questions and speculation about future directions. While these are reasonable questions arising from the work, they represent hypotheses rather than tested results. The speculation about host dynamics (C82-C83) is plausible but lacks experimental support in this closed-system study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:42:18.525322Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "cfc3dcb2-e7b6-498a-ac6d-ca21fb2d2b25",
+      "result_id": "8fb31552-526d-4ad0-8e36-a7aa32599f27"
+    },
+    {
+      "claim_id": "8899469a-1727-4383-bc1b-07f310e16221",
+      "result_id": "8fb31552-526d-4ad0-8e36-a7aa32599f27"
+    },
+    {
+      "claim_id": "f34296e7-1293-4aa3-9b3d-b11576af466a",
+      "result_id": "8fb31552-526d-4ad0-8e36-a7aa32599f27"
+    },
+    {
+      "claim_id": "91f538c9-7a7c-4e06-8d59-1e0331be11ed",
+      "result_id": "8fb31552-526d-4ad0-8e36-a7aa32599f27"
+    },
+    {
+      "claim_id": "828fe3e6-0a8e-414e-ba41-2bd631d76cd1",
+      "result_id": "8fb31552-526d-4ad0-8e36-a7aa32599f27"
+    },
+    {
+      "claim_id": "a29ed1c2-1264-48d0-8ac8-bc0b76b28cce",
+      "result_id": "20371d2e-d57f-4549-9a84-9e6b5c50fbb1"
+    },
+    {
+      "claim_id": "1869e9d6-ccbe-4ce4-9438-8e34bc005c38",
+      "result_id": "20371d2e-d57f-4549-9a84-9e6b5c50fbb1"
+    },
+    {
+      "claim_id": "e9db2ac3-0956-465f-ac93-a2bdcbd0b7cf",
+      "result_id": "20371d2e-d57f-4549-9a84-9e6b5c50fbb1"
+    },
+    {
+      "claim_id": "b4b21681-5f01-423f-910e-70270303400d",
+      "result_id": "20371d2e-d57f-4549-9a84-9e6b5c50fbb1"
+    },
+    {
+      "claim_id": "9ff54bc0-d7ea-463d-8152-f64c4694ed62",
+      "result_id": "20371d2e-d57f-4549-9a84-9e6b5c50fbb1"
+    },
+    {
+      "claim_id": "a997aefc-215a-4e2e-8270-63df8ec6db6c",
+      "result_id": "20371d2e-d57f-4549-9a84-9e6b5c50fbb1"
+    },
+    {
+      "claim_id": "247b771e-d1d6-4b97-a875-a15a2dbd6f24",
+      "result_id": "81d0600f-76bc-447e-9575-34a7101b63d5"
+    },
+    {
+      "claim_id": "45dff63b-ef0b-4b7f-b4d3-8f77ca46c3f6",
+      "result_id": "81d0600f-76bc-447e-9575-34a7101b63d5"
+    },
+    {
+      "claim_id": "842ac146-3c52-4723-a721-a83bfd96ce72",
+      "result_id": "81d0600f-76bc-447e-9575-34a7101b63d5"
+    },
+    {
+      "claim_id": "7b3bfc99-1051-4874-87d3-3bd34ee562d0",
+      "result_id": "81d0600f-76bc-447e-9575-34a7101b63d5"
+    },
+    {
+      "claim_id": "9c389796-ef3c-472f-b209-5037cc311f4c",
+      "result_id": "81d0600f-76bc-447e-9575-34a7101b63d5"
+    },
+    {
+      "claim_id": "dd2eefe8-6a7f-4fa8-b7ce-9fa11d9adde8",
+      "result_id": "81d0600f-76bc-447e-9575-34a7101b63d5"
+    },
+    {
+      "claim_id": "5d568158-b145-4583-83fc-7bb41ffa2614",
+      "result_id": "81d0600f-76bc-447e-9575-34a7101b63d5"
+    },
+    {
+      "claim_id": "ee2d3667-c166-47d9-bab7-4496f4613601",
+      "result_id": "81d0600f-76bc-447e-9575-34a7101b63d5"
+    },
+    {
+      "claim_id": "4813b405-c8ca-4c29-95a3-8c112148d26b",
+      "result_id": "c242c874-3be0-45a9-97b7-5731ecf3e402"
+    },
+    {
+      "claim_id": "4d117246-5c12-463a-972f-f3c2e5174fc9",
+      "result_id": "c242c874-3be0-45a9-97b7-5731ecf3e402"
+    },
+    {
+      "claim_id": "d39b475b-d551-4dda-8cda-a9b9cdadfd77",
+      "result_id": "c242c874-3be0-45a9-97b7-5731ecf3e402"
+    },
+    {
+      "claim_id": "16b47ee2-a8c0-48e8-83bc-d892c03ed290",
+      "result_id": "ec80a9f5-01fb-4e7a-9b62-f09e34853355"
+    },
+    {
+      "claim_id": "0f3e8039-0d55-4a01-b0c9-fc7ae584749a",
+      "result_id": "ec80a9f5-01fb-4e7a-9b62-f09e34853355"
+    },
+    {
+      "claim_id": "8b467add-b175-4928-ace0-355051cdc117",
+      "result_id": "ec80a9f5-01fb-4e7a-9b62-f09e34853355"
+    },
+    {
+      "claim_id": "af69682f-534f-4cf2-b17d-8627a070def0",
+      "result_id": "ec80a9f5-01fb-4e7a-9b62-f09e34853355"
+    },
+    {
+      "claim_id": "5379cbf1-870e-4935-beef-e0ff7e929606",
+      "result_id": "ec80a9f5-01fb-4e7a-9b62-f09e34853355"
+    },
+    {
+      "claim_id": "9c1ec762-e721-4861-aecf-50cba724c1db",
+      "result_id": "ec80a9f5-01fb-4e7a-9b62-f09e34853355"
+    },
+    {
+      "claim_id": "0c077788-fbba-4d9a-a13a-577e04882c57",
+      "result_id": "ec80a9f5-01fb-4e7a-9b62-f09e34853355"
+    },
+    {
+      "claim_id": "361fdd2f-70a2-404f-8ce1-24b5b7bf5487",
+      "result_id": "ec80a9f5-01fb-4e7a-9b62-f09e34853355"
+    },
+    {
+      "claim_id": "418d8129-bd82-4bdd-97e0-afeb5d81e2d6",
+      "result_id": "ec80a9f5-01fb-4e7a-9b62-f09e34853355"
+    },
+    {
+      "claim_id": "0cc90dea-3462-4052-96d8-ad2316038ccc",
+      "result_id": "ec80a9f5-01fb-4e7a-9b62-f09e34853355"
+    },
+    {
+      "claim_id": "7e159562-4495-4a9b-aa25-3c51be988c53",
+      "result_id": "ec80a9f5-01fb-4e7a-9b62-f09e34853355"
+    },
+    {
+      "claim_id": "a0f96ad4-1ac0-415d-aea1-bae2f62207a9",
+      "result_id": "ec80a9f5-01fb-4e7a-9b62-f09e34853355"
+    },
+    {
+      "claim_id": "daa35a02-b2eb-48fa-9afa-2d37d534d757",
+      "result_id": "ec80a9f5-01fb-4e7a-9b62-f09e34853355"
+    },
+    {
+      "claim_id": "4c036eb6-9a36-4762-9aa7-6e85f5b36d8c",
+      "result_id": "a174c289-bf73-4f76-8c25-113072a1d0c0"
+    },
+    {
+      "claim_id": "c24284d1-ea22-4cbe-8968-519e5b76adaa",
+      "result_id": "a174c289-bf73-4f76-8c25-113072a1d0c0"
+    },
+    {
+      "claim_id": "b4b21681-5f01-423f-910e-70270303400d",
+      "result_id": "a174c289-bf73-4f76-8c25-113072a1d0c0"
+    },
+    {
+      "claim_id": "68e2ea2d-9364-4a9b-bee3-faa9cb3a8412",
+      "result_id": "a174c289-bf73-4f76-8c25-113072a1d0c0"
+    },
+    {
+      "claim_id": "18a4dfb0-a0b3-436f-b756-93050fd35d59",
+      "result_id": "a174c289-bf73-4f76-8c25-113072a1d0c0"
+    },
+    {
+      "claim_id": "ad0c6dda-3a72-4dab-abc8-c6bd93053392",
+      "result_id": "a174c289-bf73-4f76-8c25-113072a1d0c0"
+    },
+    {
+      "claim_id": "170891d6-5301-4ac4-98e1-882eb6f44ca3",
+      "result_id": "845ec067-20de-4b14-b2d9-d20f975cf005"
+    },
+    {
+      "claim_id": "9f6ec917-8349-47f4-95d7-1175677f846c",
+      "result_id": "845ec067-20de-4b14-b2d9-d20f975cf005"
+    },
+    {
+      "claim_id": "4f27264b-f352-49b6-9f1e-bf77e6eaebae",
+      "result_id": "845ec067-20de-4b14-b2d9-d20f975cf005"
+    },
+    {
+      "claim_id": "cf7910e2-8347-48e9-882a-ae31ae3997c1",
+      "result_id": "845ec067-20de-4b14-b2d9-d20f975cf005"
+    },
+    {
+      "claim_id": "50f36b71-ed13-4731-9dce-b7fee6163abd",
+      "result_id": "845ec067-20de-4b14-b2d9-d20f975cf005"
+    },
+    {
+      "claim_id": "3b0a883c-2f42-4afa-8c03-c4a421be8350",
+      "result_id": "845ec067-20de-4b14-b2d9-d20f975cf005"
+    },
+    {
+      "claim_id": "dab4c001-363d-4f97-b7cc-514dea54e265",
+      "result_id": "845ec067-20de-4b14-b2d9-d20f975cf005"
+    },
+    {
+      "claim_id": "21c21599-8a14-4b7d-ab3f-da22ce1f801b",
+      "result_id": "c40702d0-5f58-403c-a313-8aaaa2aece2a"
+    },
+    {
+      "claim_id": "855d5e46-a441-4ce4-8313-99b23b56f7e9",
+      "result_id": "c40702d0-5f58-403c-a313-8aaaa2aece2a"
+    },
+    {
+      "claim_id": "104d31d8-5de7-485d-a88d-12c3fb5b8643",
+      "result_id": "c40702d0-5f58-403c-a313-8aaaa2aece2a"
+    },
+    {
+      "claim_id": "b52c610f-4e09-4cb4-b048-5e308d84d3c9",
+      "result_id": "c40702d0-5f58-403c-a313-8aaaa2aece2a"
+    },
+    {
+      "claim_id": "498f8541-1d99-49e7-b94e-b6f238d6217d",
+      "result_id": "276a0ff7-1d44-4fa7-bbea-6dcfbc966870"
+    },
+    {
+      "claim_id": "41c90869-65a7-4b48-8f97-aa8f1c7fd45b",
+      "result_id": "276a0ff7-1d44-4fa7-bbea-6dcfbc966870"
+    },
+    {
+      "claim_id": "245221e0-4076-41f2-ba8d-cc9d3d81428c",
+      "result_id": "276a0ff7-1d44-4fa7-bbea-6dcfbc966870"
+    },
+    {
+      "claim_id": "15e6522e-8b1f-4c91-93aa-8cfcd273887e",
+      "result_id": "d0b29104-b2a3-45c3-9182-8487aa8bc813"
+    },
+    {
+      "claim_id": "081d7a88-5a8e-4073-951a-c6e045b165de",
+      "result_id": "d0b29104-b2a3-45c3-9182-8487aa8bc813"
+    },
+    {
+      "claim_id": "cccfd28d-5665-4833-b7fa-63ad0921b9f6",
+      "result_id": "a4d78264-dff6-40a0-bd20-691c116f42e5"
+    },
+    {
+      "claim_id": "134e4ae7-8644-4713-ab08-53ea903ee09b",
+      "result_id": "a4d78264-dff6-40a0-bd20-691c116f42e5"
+    },
+    {
+      "claim_id": "6fa832e3-7032-410e-9d97-bfe921342692",
+      "result_id": "a4d78264-dff6-40a0-bd20-691c116f42e5"
+    },
+    {
+      "claim_id": "08dc5992-bc3b-441a-8934-a9a6d1fbf206",
+      "result_id": "a4d78264-dff6-40a0-bd20-691c116f42e5"
+    },
+    {
+      "claim_id": "ecf3c72d-2c86-414e-93ed-50fe0a463450",
+      "result_id": "a4d78264-dff6-40a0-bd20-691c116f42e5"
+    },
+    {
+      "claim_id": "4d55c50f-35ed-4cbd-9da1-0a937dd79452",
+      "result_id": "a4d78264-dff6-40a0-bd20-691c116f42e5"
+    },
+    {
+      "claim_id": "9172e29b-c9fb-47f4-a594-bbc7500dfc54",
+      "result_id": "a4d78264-dff6-40a0-bd20-691c116f42e5"
+    },
+    {
+      "claim_id": "bba08fb7-5f70-40f2-ab84-995297e45dcf",
+      "result_id": "fb1d591c-23c2-45d6-91fc-2ba76bebcf66"
+    },
+    {
+      "claim_id": "d6fa8b00-1ab9-49dc-bff9-f599f305944f",
+      "result_id": "fb1d591c-23c2-45d6-91fc-2ba76bebcf66"
+    },
+    {
+      "claim_id": "215e1378-7c49-4003-9769-7ae0b5f6c250",
+      "result_id": "fb1d591c-23c2-45d6-91fc-2ba76bebcf66"
+    },
+    {
+      "claim_id": "17d67e3c-8b8b-4d10-b25c-ef633c13c824",
+      "result_id": "fb1d591c-23c2-45d6-91fc-2ba76bebcf66"
+    },
+    {
+      "claim_id": "4593e1a8-b9ec-4569-9a74-f73d630d14ed",
+      "result_id": "0f195cfb-063f-4676-9bc1-b3f435f9223e"
+    },
+    {
+      "claim_id": "328bf6c0-3f59-48dc-b47e-74fde5463cd8",
+      "result_id": "0f195cfb-063f-4676-9bc1-b3f435f9223e"
+    },
+    {
+      "claim_id": "8f93517e-23f8-44cb-91b0-4244d321023f",
+      "result_id": "5557759f-2880-4624-8f36-61842a1f46bc"
+    },
+    {
+      "claim_id": "93253161-6aa5-43b9-bba5-e6002c43fb9c",
+      "result_id": "5557759f-2880-4624-8f36-61842a1f46bc"
+    },
+    {
+      "claim_id": "ab7f0c2f-7745-4089-b929-1200885b80da",
+      "result_id": "5557759f-2880-4624-8f36-61842a1f46bc"
+    },
+    {
+      "claim_id": "def3c40a-e52b-4c43-9498-5a3b53abaab8",
+      "result_id": "5557759f-2880-4624-8f36-61842a1f46bc"
+    }
+  ],
+  "comparisons": []
+}

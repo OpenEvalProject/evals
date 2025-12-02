@@ -1,0 +1,2089 @@
+{
+  "submission": {
+    "id": "5c5d8477-fee8-4884-9c80-f922e446a6de",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T11:09:56.412050Z",
+    "updated_at": "2025-12-02T11:09:56.412050Z"
+  },
+  "content": [
+    {
+      "id": "117e104c-e954-4d41-92ae-5e50f78b6a6d",
+      "submission_id": "5c5d8477-fee8-4884-9c80-f922e446a6de",
+      "content_type": "manuscript",
+      "content_text": "# Multi-enhancer transcriptional hubs confer phenotypic robustness\n\n## Authors\n\n- Albert Tsai<sup>1</sup> ([ORCID: 0000-0002-1643-0780](https://orcid.org/0000-0002-1643-0780)) \u2020\n- Mariana RP Alves<sup>1</sup> ([ORCID: 0000-0002-0796-2101](https://orcid.org/0000-0002-0796-2101))\n- Justin Crocker<sup>1</sup> ([ORCID: 0000-0002-5113-0476](https://orcid.org/0000-0002-5113-0476)) \u2020\n\n### Affiliations\n\n1. European Molecular Biology Laboratory Heidelberg Germany\n2. Collaboration for joint PhD degree between EMBL and Heidelberg University, Faculty of Biosciences Heidelberg Germany\n\n\u2020 Corresponding author\n\n## Abstract\n\nWe previously showed in Drosophila melanogaster embryos that low-affinity Ultrabithorax (Ubx)-responsive shavenbaby (svb) enhancers drive expression using localized transcriptional environments and that active svb enhancers on different chromosomes tended to colocalize (Tsai et al., 2017). Here, we test the hypothesis that these multi-enhancer \u2018hubs\u2019 improve phenotypic resilience to stress by buffering against decreases in transcription factor concentrations and transcriptional output. Deleting a redundant enhancer from the svb locus led to reduced trichome numbers in embryos raised at elevated temperatures. Using high-resolution fluorescence microscopy, we observed lower Ubx concentration and transcriptional output in this deletion allele. Transcription sites of the full svb cis-regulatory region inserted into a different chromosome colocalized with the svb locus, increasing Ubx concentration, the transcriptional output of svb, and partially rescuing the phenotype. Thus, multiple enhancers could reinforce a local transcriptional hub to buffer against environmental stresses and genetic perturbations, providing a mechanism for phenotypical robustness.\n\n## Introduction\n\nDuring embryogenesis, transcriptional regulation controls precise patterns of gene-expression, leading to cell-fate specification (Long et al., 2016; Mallo and Alonso, 2013; Reiter et al., 2017; Spitz and Furlong, 2012). This involves coordinating a complex series of interactions between transcription factors and their target binding sites on DNA, leading to the recruitment or exclusion of active RNA polymerases, which determines the transcriptional state of the gene. Live imaging experiments have shown that transcription factor binding in eukaryotic cell lines and embryos is dynamic but transient, occurring frequently but with each event lasting for at most a few seconds (Chen et al., 2014; Izeddin et al., 2014; Liu et al., 2014; Normanno et al., 2015). Additionally, recent studies have shown that many developmental enhancers harbor functionally important low-affinity binding sites (Antosova et al., 2016; Crocker et al., 2010; Crocker et al., 2015; Crocker et al., 2016; Farley et al., 2015; Farley et al., 2016; Gaudet and Mango, 2002; Lebrecht et al., 2005; Lorberbaum et al., 2016; Rister et al., 2015; Rowan et al., 2010; Tanay, 2006). One example is the Homeobox (Hox) family that is responsible for body segment identity along the anterior-posterior axis in animals. Because Hox transcription factors descended from a common ancestor, their preferences for binding sequences are very similar (Berger et al., 2008; McGinnis and Krumlauf, 1992; Noyes et al., 2008). To select for specific Hox factors, several enhancers in the shavenbaby (svb) locus make use of low-affinity binding sequences for Ultrabithorax (Ubx) (Crocker et al., 2015). Svb is a transcription factor that drives the formation of trichomes, epidermal projections on the surface of the segmented fly embryo (Chanut-Delalande et al., 2006; Delon et al., 2003; Payre et al., 1999). Thus, a key question was how low affinity binding sequences are able to drive strong transcriptional activation in developing embryos.\n\nWe have previously shown in living Drosophila melanogaster embryos that Ubx transiently but repeatedly explores the same physical locations in a nucleus, which are likely clusters of binding sites (Tsai et al., 2017). We have additionally shown that transcriptional microenvironments of high local Ubx and cofactor concentrations surround active transcription sites driven by low-affinity svb enhancers. As the distributions of many transcription factors in the nucleus are highly heterogeneous, the transcriptional activity of low-affinity enhancers would depend on the local microenvironments. Interestingly, we observed that transcriptionally active, minimalized versions of two of the three ventral svb enhancers (E3 and 7) are Ubx-responsive and preferentially appear near or overlap spatially with transcription sites of the endogenous svb gene, despite being on different chromosomes (Crocker et al., 2015; Tsai et al., 2017). This colocalization suggests microenvironments could be shared between related enhancers to increase transcriptional output, where enhancers would synergistically form a larger local trap for transcription factors than each could alone. Retaining multiple enhancers within a microenvironment could also provide redundancy in case individual enhancers are compromised and buffer negative impacts when the system is subjected to stress. This idea is consistent with the observed phenotypic robustness of svb enhancers in maintaining sufficient trichome numbers even under temperature stress (Crocker et al., 2015; Frankel et al., 2010). These results are consistent with multi-component transcriptional \u2018hubs\u2019 that are local areas enriched for components of the transcriptional machinery and transcription factors through multiple attractive and cooperative interactions (Boija et al., 2018; Cisse et al., 2013; Furlong and Levine, 2018; Ghavi-Helm et al., 2014; Lim et al., 2018; Mir et al., 2017; Mir et al., 2018). One potential building block for these \u2018hubs\u2019 are multiple, long-range, enhancer-to-enhancer interactions. However, it is not yet understood how such multivalent interactions function mechanistically, and how they contribute to phenotypic robustness.\n\nTo understand the mechanistic implications of having multiple enhancers in a shared microenvironment, here we examined the ability of the svb locus to maintain transcriptional output and produce the correct phenotype under temperature-induced stress in flies harboring a deletion of a partially redundant enhancer\u2014the DG3 ventral enhancer. When embryos were raised at high temperatures, we observed phenotypical defects in ventral trichome formation for the DG3-deletion svb allele but not for the wild-type. At the molecular level, Ubx concentrations around transcription sites of the DG3-deletion allele decreased. The transcriptional output of svb without DG3 also decreased. To test the hypothesis that shared microenvironments modulate transcriptional output and provide buffering under stress, we sought to rescue the DG3-deletion allele through inserting the complete svb cis-regulatory region on a BAC (svbBAC) on a different chromosome. We observed that Ubx concentration around active transcription sites of the DG3-deletion allele and their transcriptional output increased when the svbBAC is physically nearby. Moreover, we found that trichome formation was partially rescued at high temperature. As a result, our findings support the hypothesis that shared microenvironments provide a mechanism for phenotypic robustness.\n\n## Results\n\n### The DG3 enhancer responds specifically to Ubx in the A1 segment\n\nThe ventral svb enhancers DG3, E3 and 7 (Figure 1A) contain low-affinity Ubx binding sites and have been shown to be transcribed in microenvironments of high Ubx concentrations in the first abdominal (A1) segment on the ventral surface of the embryo (Tsai et al., 2017). Each of these enhancers produces ventral stripes of expression along segments A1-A7 in the embryo, resembling the endogenous expression pattern of svb (Figure 1B). Each enhancer contributes to different but partially overlapping portions of the total expression pattern. Furthermore, they have different Ubx ChIP enrichment profiles (Figure 1\u2014figure supplement 1). Whereas the interaction of E3 and 7 with Ubx had been previously explored in detail (Crocker et al., 2015), DG3 remained unexplored. Therefore, we tested the response of the DG3 enhancer to Ubx by altering Ubx levels and measuring the transcriptional output with a reporter gene (lacZ). In wild-type embryos, the DG3 reporter gene was expressed ventrally in stripes along segments A1-A7, in addition to narrow thoracic stripes in T1-T3 (Figure 1C). Expression from DG3 on the ventral surface in the T2 and T3 segments was weak with wild-type Ubx expression and was primarily seen on the sides. In the absence of Ubx, DG3 reporter expression was almost completely lost on the ventral side of A1 and reduced between A2-A7 (Figure 1D), consistent with the responses of E3, 7 and the full svb locus (Crocker et al., 2015). The incomplete loss of expression in A2-A7 suggests that additional factors influence the expression of ventral trichomes in those segments. Ubiquitous expression of Ubx increased the expression levels in A1-A7, in addition to generating ectopic expressions on the ventral side of the thoracic segments T2-T3 and A8 (Figure 1E). In summary, we showed that Ubx is necessary for DG3 expression in the ventral region of the abdominal segments (completely in A1 and partially in A2-7) and can induce ectopic expressions when overexpressed. These data are consistent with our previous observation of the localization of DG3-driven transcription sites within Ubx microenvironments (Tsai et al., 2017).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/45325/elife-45325-fig1-v2.jpg)\n\n**Figure 1.:** (A) The cis-regulatory region of the shavenbaby (svb) gene contains three enhancers expressing stripes on the ventral side of the abdominal segments: DG3, E3 and 7. (B) The expression patterns of the three enhancers are partially overlapping. The color scheme corresponds to (A), where DG3 is magenta, E3 is yellow and 7\u00a0is cyan. (C) Expression pattern of a reporter construct with the DG3 enhancer driving LacZ expression in an embryo with wild-type Ubx expression, as visualized using immunofluorescence staining. (D) DG3 reporter in Ubx null mutant shows no expression in A1 and significantly weakened expression in the other abdominal segments. (E) Overexpression of Ubx driven through a heat shock promoter induces overexpression of DG3 reporter in all abdominal segments and ectopic expression on the ventral surface of the thoracic segments T2 and T3.\n\n![Figure 1\u2014figure supplement\u00a01.](https://cdn.elifesciences.org/articles/45325/elife-45325-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement\u00a01.:** ChIP experiment of whole embryos between stages 10 and 12 targeting Ubx shows different enrichment profile around the three ventral svb enhancers: DG3, E3 and 7.\n\n### Deletion of a region including DG3 enhancer causes defects in ventral trichome formation specifically at elevated temperatures\n\nGiven the clear ventral stripes that DG3 generated in the abdominal segments, we next explored the phenotypic impact of its activity in driving trichome formation. It had been previously shown that deleting a region in the svb locus containing DG3 (Df(X)svb108) led to reduced phenotypic robustness of svb under non-optimal temperatures, with reduced numbers of trichomes produced (Frankel et al., 2010). This svb DG3-deletion allele encompasses the enhancers DG2, DG3 and Z (Figure 2A)\u2014of which only DG3 is a ventral enhancer.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/45325/elife-45325-fig2-v2.jpg)\n\n**Figure 2.:** (A) The Df(X)svb108 allele contains a deletion in the cis-regulatory of svb spanning three enhancers: DG2, DG3 and Z.\u00a0Of those, only DG3 expresses on the ventral side. (B) Wild-type phenotype of trichomes along the A1 and A2 segments at 25\u00b0C. (C) At 25\u00b0C, the Df(X)svb108 deletion allele did not show a mutant phenotype along the A1 and A2 segments. (D) Zoomed out shot of the anterior region of a cuticle preparation of a wild-type (w1118) larva. (E) Zoomed out shot of the anterior region of a cuticle preparation of a larva carrying Df(X)svb108. The lack of trichomes along the T1 segment is a recessive marker used in subsequent experiments to select for embryos/larvae carrying this deletion allele. Even at 25\u00b0C, where the overall trichome numbers in A1 and A2 for the Df(X)svb108 deletion mutant is indistinguishable from wild-type svb, the trichomes at the side of the ventral stripe for A1 and A2 were lost, as marked by the black brackets. (F) Within the overall expression pattern of svb enhancers, DG3 provides exclusive coverage in the circled regions in segments A1 and A2. These regions correspond to the black brackets in panels D and E. (G) Wild-type phenotype of trichomes along the A1 and A2 segments at 32\u00b0C. (H) At 32\u00b0C, the Df(X)svb108 deletion allele showed a mutant phenotype. (I) A1 trichomes in the dashed boxes bounded by the two sensory cells, as indicated by the arrows, as shown in panels G and H, were counted. Deficiencies of the deletion allele only become clear when the animal is subjected to elevated temperature at 32\u00b0C, showing reduced trichome numbers in the A1 segment. The number of larvae counted was: 13 for wild-type at 25\u00b0C, 19 for Df(X)svb108 at 25\u00b0C, 14 for wild-type at 32\u00b0C and 30 for Df(X)svb108 at 32\u00b0C. Two-tailed t-test was applied for each individual comparison. In box plots, center line is the mean, upper and lower limits are standard deviation and whiskers show 95% confidence intervals.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/45325/elife-45325-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A\u2013C) Phenotype of trichomes along the A2 segment for wild-type and Df(X)svb108 (shown as svb108 in the panels) at 25\u00b0C and wild-type at 32\u00b0C.\u00a0(D) At 32\u00b0C, the Df(X)svb108 deletion allele showed a mutant phenotype. (E) Deficiencies of the deletion allele become clear when the animal is subjected to elevated temperature at 32\u00b0C, showing reduced trichome numbers in the A2 segment (p-value<0.001). The number of larvae counted was: 10 for wild-type at 25\u00b0C, 11 or Df(X)svb108 at 25\u00b0C, 11 for wild-type at 32\u00b0C and 10 for Df(X)svb108 at 32\u00b0C. In box plots, center line is mean, upper and lower limits are standard deviation and whiskers show 95% confidence intervals.\n\nIn the A1 and A2 segments at 25\u00b0C, deletion of the DG3 enhancer did not result in a clear change in ventral trichome formation in the abdominal segments compared to the wild-type (Figure 2B and C), perhaps due to the redundancy provided by overlapping expression patterns from other svb enhancers. However, the T1 trichomes were missing in larvae homozygous for the deletion (Df(X)svb108) allele (Figure 2D and E), which we subsequently used as a homozygous marker to select for larvae homozygous for the deletion allele when crossing Df(X)svb108 flies to other lines (See \u2018Cuticle preparations and trichome counting\u2019 in Materials and Methods). Also, we observed defects in trichome formation in the dorsal edges of the stripe pattern, which are exclusively covered by DG3 (Figure 2D and E, the black brackets at A1 and A2). This is consistent with a lack of redundancy in enhancer usage in these areas (Figure 2F, white dotted circles). The trichome number in regions covered by the overlapping expression of the E3, 7 and DG3 enhancers in the A1 segment did not significantly reduce at 25\u00b0C upon the deletion of DG3 (Figure 2B,C and I). However, larvae homozygous for the Df(X)svb108 allele developed at 32\u00b0C produced fewer trichomes compared to wild-type larvae\u00a0(Figure 2G,H and I). We also observed similar effects in the A2 segment (Figure 2\u2014figure supplement 1). These results are similar to those shown with quartenary A5 trichomes (Frankel et al., 2010). However, the mechanisms behind this loss of phenotypic robustness under heat-induced stress are yet to be understood in detail.\n\n### Transcription sites from the DG3-deletion allele have weaker Ubx microenvironment and lower transcriptional output\n\nTo address molecular sources that may lead to the reduced number of ventral trichomes we observed for the Df(X)svb108 deletion allele, we imaged Ubx distributions and the transcriptional output of the svb gene in fixed Drosophila melanogaster embryos using high-resolution confocal microscopy. We reasoned that the defect could be due to changes in the transcription factor concentration around the enhancers (input) and/or the transcriptional output of the gene (output). As Ubx is specifically needed to drive DG3 and svb expression on the ventral surface of the A1 segment, we used it as a metric for the transcription factor distributions around svb transcription sites. The samples were stained with immunofluorescence (IF) for Ubx and RNA fluorescence in situ hybridization (FISH) for svb transcription sites as previously described (Tsai et al., 2017). We imaged both embryos containing the wild-type svb allele or\u00a0the Df(X)svb108 allele, raised at either 25\u00b0C or 32\u00b0C. For all imaging experiments involving the svb allele with the deletion, we selected only homozygous embryos for imaging (See \u2018Imaging fixed embryos\u2019 in Materials and Methods). Because DG3 expression in the A1 segment showed a clear link to changes in Ubx level, we focused most of our subsequent imaging quantifications in this segment.\n\nTo gauge the Ubx concentration around a transcription site, we counted the averaged intensity in the Ubx IF channel within a circle four pixels in diameter (170 nm, roughly the resolution limit of AiryScan) centered on the transcription site (Figure 3A and B, see \u2018Analysis of microenvironment and svb transcription intensity\u2019 in materials and methods). In nuclei from the A1 segment, Ubx intensities around svb transcription sites with the wild-type allele did not significantly change between 25\u00b0C and 32\u00b0C (Figure 3C, bottom right panel). Measuring Ubx intensity from random locations within nuclei of wild-type embryos expressing svb at 25\u00b0C using the same method showed that Ubx concentrations around svb transcription sites were in general higher than the nuclear average (Figure 3\u2014figure supplement 1), consistent with our previous findings (Tsai et al., 2017). Transcription sites in embryos with the DG3-deletion (Df(X)svb108) allele had a local Ubx concentration that is slightly lower than wild-type at 25\u00b0C (Figure 3C, bottom right panel). However, there was a clear decrease in Ubx intensity compared to the wild-type when we subjected the DG3-deletion embryos to heat-stress (Figure 3B, right panel, and 3C, bottom right panel). To measure the transcriptional output of svb, we adopted the same approach, but quantified the intensity in the svb RNA FISH channel (Figure 3C, upper left panel). Interestingly, we detected clear decreases in transcriptional output when the embryos are heat-stressed at 32\u00b0C, even with the wild-type allele. The Df(X)svb108 allele at 25\u00b0C showed reduced levels of transcriptional output slightly lower than the wild-type under heat-shock. At 32\u00b0C, the transcriptional output further decreased in the mutant. When the various conditions were\u00a0plotted by their svb transcriptional output and Ubx intensity (Figure 3C, center panel), they displayed a weak positive correlation with Ubx concentration (R-square\u00a0=\u00a00.4331). In sum, stress conditions reduced the transcriptional output of enhancers and the correlation to Ubx concentrations was positive but weak.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/45325/elife-45325-fig3-v2.jpg)\n\n**Figure 3.:** (A) Panels showing a nucleus from embryos with either the wild-type (w1118) or Df(X)svb108 deletion svb allele at either at normal (25\u00b0C) or elevated temperature (32\u00b0C), imaged using confocal fluorescence microscopy.\u00a0Ubx (shown in magenta) is stained using immunofluorescence (IF) and the svb transcription sites (shown in green) are stained using fluorescence in situ hybridization (FISH). (B) Zoomed-in panes centered on svb transcription sites, with the height of the surface plots representing the Ubx intensity. (C) Correlation between Ubx and svb transcription intensities at different conditions. The number of transcription sites quantified was: 71 for wild-type at 25\u00b0C, 51 for wild-type at 32\u00b0C, 50 for Df(X)svb108 at 25\u00b0C and 38 for Df(X)svb108 at 32\u00b0C. Bottom right panel: Integrating the Ubx intensity surrounding transcription sites shows a small defect in the Ubx concentration around the deletion allele. The drop in Ubx increased at elevated temperature. Upper left panel: The integrated intensity of svb transcriptional output shows that there is a drop in transcriptional output for the deletion allele compared to the wild-type at both 25\u00b0C and 32\u00b0C. Even the wild-type showed reduced transcriptional output at elevated temperature (32\u00b0C). We analyzed four embryos for each genotype/temperature combination. Two-tailed t-test was applied for each individual comparison. In box plots, center line is mean, upper and lower limits are standard deviation and whiskers show 95% confidence intervals.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/45325/elife-45325-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Fifty\u00a0random locations are selected from nuclei with\u00a0svb\u00a0transcription sites from\u00a0three\u00a0wild-type (w1118) embryos raised at\u00a025\u00b0C\u00a0used for analysis in\u00a0Figure 3\u00a0and the Ubx intensity around these sites are measured using the same circle ROI.\u00a0The Ubx intensity distributions from these sites in each individual embryo (cyan, orange and green) and with all three embryos pooled together (gray) are similar. The average Ubx intensity from actual svb transcription sites (purple, 61 sites) in the same three embryos is\u00a0higher compared to randomly selected sites, consistent with our previous findings (Tsai et al., 2017). Two-tailed t-test was applied for each individual comparison. In box plots, center line is mean, upper and lower limits are standard deviation and whiskers show 95% confidence intervals.\n\n### Df(X)svb108 deficiencies are rescued upon insertion of the full svb cis-regulatory region in a different chromosome\n\nHaving observed in the past that transcriptional microenvironments can be shared between related svb enhancers on different chromosomes (Tsai et al., 2017), we wondered whether this phenomenon could enhance transcriptional output and thus buffer against adverse environmental conditions. Therefore, we tested the capacity of a DNA sequence containing the full svb cis-regulatory region to rescue the described molecular and developmental defects of the Df(X)svb108 allele (Figure 4A). For this purpose, we used a transgenic fly line, where a bacterial artificial chromosome (BAC) carrying the complete cis-regulatory region of svb (Preger-Ben Noon et al., 2018) was integrated into chromosome 2. To exclude svb mRNA from effecting the rescue, this svbBAC construct drives a dsRed reporter gene instead of another copy of svb. We confirmed that DsRed protein expression driven by this regulatory sequence recapitulated the svb expression patterns (Figure 4B) in D. melanogaster embryos and was responsive to Ubx\u2014the lack of Ubx led to a decrease of expression in the A1 segment (Figure 4C).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/45325/elife-45325-fig4-v2.jpg)\n\n**Figure 4.:** (A) The svbBAC construct encompasses the entire cis-regulatory region of svb, driving the expression of dsRed.\u00a0(B and C) The svbBAC driving the expression of DsRed inserted into the second chromosome drives a similar expression pattern as the wild-type svb locus and responds similarly to Ubx. (D) In nuclei having both svb (for both the wild-type and the Df(X)svb108 allele) and svbBAC-dsRed transcription sites at 32\u00b0C, the distances between them areon average closer than between that of svb and a reporter construct of an unrelated gene, diachete (diBAC-gfp, at 25\u00b0C), inserted into the same location as svbBAC on the second chromosome. The pairs of distance quantified were: 25 between diBAC-gfp and wild-type svb, 25 between svbBAC-dsRed and wild-type svb and 26 between svbBAC-dsRed and Df(X)svb108. (E) The svb FISH intensity (representing transcriptional output) in Df(X)svb108 x svbBAC-dsRed embryos at 32\u00b0C recovered to wild-type levels when the svb transcription site is close to a dsRed transcription site (colocalized). FISH intensity of svb in the same embryos in nuclei without a dsRed transcription site or where svb and dsRed transcription sites were not near each other (non-colocalized) did not recover. The center image panel was stained for dsRed but the particular nucleus does not show dsRed signal. The number of transcription sites quantified was: 49 for wild-type, 53 for Df(X)svb108 not near a dsRed transcription site (including cells where there were no dsRed transcription sites) and 12 for Df(X)svb108 near a dsRed transcription site. (F) At 32\u00b0C, Ubx concentration around svb transcription sites recovered to wild-type levels in nuclei containing colocalized svb and dsRed transcription sites (colocalized) in Df(X)svb108 x svbBAC-dsRed embryos. Ubx levels around transcription sites of svb in the same embryos in nuclei without a dsRed transcription site or where svb and dsRed transcription sites were not near each other (non-colocalized) did not recover. The number of transcription sites quantified was: 38 for wild-type, 60 for Df(X)svb108 not near a dsRed transcription site (including cells where there were no dsRed transcription sites) and 12 for Df(X)svb108 near a dsRed transcription site. Two-tailed t-test was applied for each individual comparison. In box plots, center line is mean, upper and lower limits are standard deviation and whiskers show 95% confidence intervals. (G) A surface plot (the height representing Ubx intensity) showing two svb transcription sites in a nucleus, with the one on the right overlapping with a svbBAC-dsRed transcription site and showing higher Ubx concentration. (H) At 32\u00b0C, in nuclei having both svb (from the Df(X)svb108 allele) and svbBAC-dsRed transcription sites, the distances between them are plotted against svb FISH intensity and Ubx intensity. There are two clusters separated by a threshold of 360 nm in distance. Co-localized pairs below this distance threshold present higher intensities for both Ubx intensity and nascent svb transcription. The pairs quantified were 15 for colocalized and 14 for non-colocalized between svbBAC-dsRed and Df(X)svb108. We analyzed four embryos for diBAC-gfp x w1118, four embryos for svbBAC-dsRed x Df(X)svb108 and for five embryos for svbBAC-dsRed x w1118.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/45325/elife-45325-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Ubx concentrations around svb transcription sites in the ventral region of the A1 segment in wild-type (w1118) x svbBAC-dsRed embryos developed at 32\u00b0C did not change compared to wild-type.\u00a0The number of quantified svb transcription sites was: 20 for wild-type and 10 for wild-type x svbBAC-dsRed. Two-tailed t-test was applied for each individual comparison. We analyzed three embryos for each genotype. In box plots, center line is mean, upper and lower limits are standard deviation and whiskers show 95% confidence intervals. (B\u00a0and C) The trichome phenotype along A1 and A2 did not change with the introduction of svbBAC-dsRed to wild-type (w1118).\n\nTo test the rescue, embryos or larvae with a svbBAC-dsRed crossed into them were incubated at 32\u00b0C. We observed that many active dsRed transcription sites were close to svb transcription sites in nuclei expressing both svb and dsRed in embryos from crosses between svbBAC-dsRed and wild-type (w1118) flies (Figure 4D). Similar observations were previously seen for the endogenous svb locus with itself and with the other two ventral enhancers (E3 and 7) (Tsai et al., 2017). This observation was also true for embryos from crosses between svbBAC-dsRed and Df(X)svb108 flies, suggesting that the co-localization of related regulatory regions could occur under stressed conditions. This effect was not observed for the unrelated regulatory region of diachete driving the expression of gfp, which was inserted on a BAC in the same chromosomal location as svbBAC.\n\nWe observed that the introduction of the svb regulatory region was able to rescue both molecular and functional defects observed from the loss of the region containing DG3. Both svb transcriptional output (Figure 4E) and local Ubx concentration around svb transcription sites (Figure 4F and G) were restored to wild-type levels, but only when they co-localized with an active svbBAC-dsRed transcription site in the same nucleus (within 360 nm from each other, see \u2018Analysis of distances between transcription spots\u2019 in materials and methods for the definition of colocalization). The pairs of transcription sites under and above this threshold clustered in two groups distinguishable also by Ubx and svb transcription levels (Figure 4H). Wild-type (w1118) x svbBAC-dsRed embryos and larvae were similar to wild-type in both trichome number and Ubx levels around svb transcription sites (Figure 4\u2014figure supplement 1).\n\nThe phenotype, ventral trichome formation on the A1 segment (Figure 5A\u2013C), which is reduced with the DG3-deletion allele, was partially rescued by the introduction of svbBAC (Figure 5D). The loss of the outer edge trichomes in A1 (in the black brackets in Figure 5A\u2013C, where only DG3 provides coverage Figure 2F) with the DG3-deletion allele was not rescued with svbBAC. Additionally, introducing only the DG3 enhancer as opposed to svbBAC did not rescue trichome formation under heat-stress (Figure 5D).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/45325/elife-45325-fig5-v2.jpg)\n\n**Figure 5.:** (A\u2013C) Cuticle preparations from larvae developed at 32\u00b0C with wild-type svb, Df(X)svb108 and Df(X)svb108 x svbBAC-dsRed.\u00a0The bracket at the edge of the A1 stripe marks a region where trichome growth is exclusively covered by DG3, which disappeared with the deletion of DG3 and did not recover with the introduction of svbBAC-dsRed. (D) The trichome number in larvae developed at 32\u00b0C with Df(X)svb108 partially recovered to wild-type levels with the introduction of svbBAC-dsRed. The number of larvae counted was: 12 for wild-type svb, 28 for Df(X)svb108, 14 for Df(X)svb108 x svbBAC-dsRed and 13 for Df(X)svb108 x DG3-lacZ. Two-tailed t-test was applied for each individual comparison. In box plots, center line is mean, upper and lower limits are standard deviation and whiskers show 95% confidence intervals.\n\n## Discussion\n\nTranscriptional regulation is a complex and dynamic process which requires coordinated interactions between transcription factors and chromatin. Given the transient nature of these interactions, using multiple binding sites to ensure efficient and consistent transcriptional regulation under different environmental conditions appears to be a preferred strategy among many developmental enhancers (Frankel, 2012; Perry et al., 2010). Genes such as shavenbaby add another layer of redundancy on top of this through long cis-regulatory regions containing multiple enhancers whose expression patterns overlap. Previous works have shown that this redundancy ensures proper phenotype development when systems are subjected to stress (Crocker et al., 2015; Frankel et al., 2010; Osterwalder et al., 2018). However, the mechanism underlying this phenotypic robustness was not clear.\n\nIn this work, we took advantage of the high-resolution imaging and analysis techniques we had developed to observe transcriptional microenvironments around transcription sites (Tsai et al., 2017) and investigated how the DG3 enhancer contributes to the phenotypic robustness of the svb locus at the molecular level. Deletion of the DG3 enhancer from svb did not lead to clear defects in ventral trichome formation unless the embryos were subjected to heat-induced stress, as shown here and previously with the deletion of \u2018shadow enhancers\u2019 (Hong et al., 2008) for lateral svb expression (Frankel et al., 2010). Nevertheless, we observed that the DG3-deletion allele showed reduced transcriptional output even at normal temperature. Wild-type embryos did not show phenotypic defects under either normal or stressed conditions, but heat-induced stress led to slightly lower transcriptional output from the wild-type svb allele (Figure 6A and B). However, the mutant svb locus, starting with lower transcriptional output even under ideal conditions (Figure 6C), drops below a threshold and the system fails (Figure 6D). We observed that Ubx concentration and svb transcriptional output in the A1 segment initially have a weak positive correlation that quickly dissipated at higher Ubx concentrations and svb outputs. While this data must be interpreted with some caution, as multiple stages of the transcription cycle are included (initiation, elongation or termination), Ubx concentration increases after a certain point were not clearly coupled to increases in svb transcriptional output. Additional regulatory mechanisms could be at play beyond transcription factor retention that determines the final transcriptional output of the locus. Determining the complete response function would be complicated, due to reasons such as the enhancers each having clusters of factor binding sites and the overlap of expression patterns from related enhancers. As svb also accepts inputs from many additional transcription factors (Stern and Orgogozo, 2008), especially in the other body segments, the total response of the system would also depend on many factors not observed in this study.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/45325/elife-45325-fig6-v2.jpg)\n\n**Figure 6.:** (A\u2013F) Schematic representations of the various genotypes, temperatures and rescue conditions as tested in this work. Bottom panel: Schematic of the proposed sigmoidal relationship between svb transcriptional output and the number of cells fated to become trichomes. Note that A and C are at 25\u00b0C and the rest are at 32\u00b0C. The different conditions we have studied are represented by letters A-F along the sigmoidal curve. The part of the curve corresponding to wild-type phenotype is shaded in green.\n\nWe previously observed that transcription sites of reporter genes driven by minimal svb enhancers tended to colocalize with the endogenous svb locus when it is transcriptionally active (Tsai et al., 2017). This is true also for entire cis-regulatory regions, as we observed that the svb locus did the same with svbBAC, which implies that they potentially share a common microenvironment. Homologous regions were shown to pair over long distances, between homologous chromosomal arms (Lim et al., 2018), translocated domains and even different chromosomes (Gemkow et al., 1998; Johnston and Desplan, 2014; Peifer and Bender, 1986). Our observations could be related to them and share similar mechanisms. However, our constructs may not contain sites for structural elements such as insulators, which have been described as important supporters of trans-interactions (Postika et al., 2018). On the other hand, our observations are in line with transcription-dependent associations of interchromosomal interactions (Branco and Pombo, 2006; Joyce et al., 2016; Lomvardas et al., 2006; Maass et al., 2018; Monahan et al., 2019). It is possible that such long range interactions are driven, or reinforced, through shared microenvironments.\n\nWe were able to partially rescue the DG3-deletion svb allele with svbBAC, which contains the cis-regulatory region of svb but not the svb gene itself. High-resolution imaging showed that colocalizing with a svbBAC increases the local Ubx concentration and transcriptional output of the DG3-deletion allele (Figure 6E). This supports a mechanism where transcriptional microenvironments sequestered around large and related cis-regulatory regions in physical proximity can work in trans to increase transcriptional output of other genes, even on different chromosomes. The introduction of a shorter reporter construct containing the DG3 enhancer alone did not rescue trichome expression perhaps because it is not able to effectively pair with the svb locus. It is possible that structural elements, such as insulator proteins (Lim et al., 2018) or other topologically associated elements (Furlong and Levine, 2018) could overcome this by increasing pairing efficiency. This is consistent with recent findings for long-range interactions that are dependent on specific topologically associating domains (TADs), where pairing is necessary but not sufficient for transvection (Viets et al., 2018). Interestingly, embryos with the DG3 deletion allele and svbBAC could not produce trichomes at the dorsal edges of the ventral trichome patches, where DG3 provides exclusive coverage. As the rescue only occurred on regions where other ventral svb enhancers provided overlapping coverage, it likely is the result of compensation from the additional ventral enhancers (E3 and 7) at the svb locus instead of the DG3 enhancer on the svbBAC driving svb expression in trans. Interactions in trans may serve an auxiliary role through influencing the properties of the local transcriptional environments.\n\nSummarizing our observations, we hypothesize that the relationship between svb transcriptional output and the number of cells fated to become trichomes is sigmoidal (Figure 6, bottom panel). Below a certain threshold, the number of trichomes would drop with decreasing svb mRNA; however, any additional transcriptional output above this threshold (the green box in the figure) would not lead to significant changes in trichome production and would appear to be wild-type in phenotype. The cis-regulatory region of wild-type svb under ideal conditions likely already saturates the system, as evidenced by the lack of change in Ubx concentration and trichome numbers even with the addition of svbBAC (Figure 6F). Although operating under saturation renders this system relatively insensitive to changes in svb transcription, the risk of developing defective phenotypes when conditions are no longer ideal likely selected for this strategy to buffer against stresses. Overall, the system remains phenotypically robust and develops the same number of trichomes despite fluctuations in transcriptional outputs. In the future, it would be important to understand mechanistically how the phenotype can tolerate significant drops in transcriptional output before defects appear. It requires the direct observation of intermediate steps between svb transcription and phenotype production to understand how this buffering is achieved. Furthermore, our current technique only allows us to probe environments around active transcription sites without knowing which phase of transcription (initiation, elongation or termination) it is in and how the gene loci positioned themselves into these locations. Future works to visualize and track genes, regardless of their transcriptional state, in fixed and living embryos would answer key questions on how they find, form and interact with transcriptional microenvironments.\n\nWe previously proposed that transcriptional microenvironments form across multiple enhancers through scaffolding interactions to ensure efficient transcription from developmental enhancers. By investigating the mechanisms of how correct transcriptional regulation is maintained under stress using a DG3-deletion allele of svb, we have shown that transcriptional microenvironments could span multiple enhancers that share similar transcription factor binding sites. These microenvironments of transcription factors could form the protein core of transcription factor \u2018hubs\u2019 that have been proposed to form through phase-separation mediated through protein-protein interactions between disordered domains (Cisse et al., 2013; Furlong and Levine, 2018; Ghavi-Helm et al., 2014; Mir et al., 2017). Thus, they add another layer of redundancy on top of using multiple enhancers with overlapping expression patterns in a cis-regulatory region to ensure a sufficient margin to buffer against the negative effects of environmental stresses (Frankel et al., 2010; Perry et al., 2010). This extra margin of safety preserves phenotypical development even when environmental conditions are not ideal. Integrating multiple noisy and low-affinity elements into a coherent and synergistic network would also reduce the variance stemming from the transient and stochastic transcription factor binding dynamics observed in eukaryotic cells (Cisse et al., 2013; Ghavi-Helm et al., 2014; Mir et al., 2017; Tsai et al., 2017). In sum, specialized transcriptional microenvironments could be a critical element to ensure that gene expression occurs specifically and consistently in every embryo. Given that shadow enhancers are widespread features of gene regulatory networks (Cannav\u00f2 et al., 2016; Osterwalder et al., 2018), it is likely that high local concentrations of transcription factors are a widespread feature that provides an effective regulatory buffer to prevent deleterious phenotypic consequences to genetic and environmental perturbations.\n\n## Materials and methods\n\n### Fly strains\n\nAll fly strains used have been previously described: DG3-lacZ (Tsai et al., 2017); ubx1 (Crocker et al., 2015); HS::ubx-1: (Crocker et al., 2015); Df(X)svb108 (Frankel et al., 2010); svbBAC-dsRed (Preger-Ben Noon et al., 2018); diBAC-gfp is CH322-35A16 EGFP tagged in VK37, covering D (Venken et al., 2009). Unless otherwise noted, they are generated from w1118 stock, which is referred to as wild-type.\n\n### Preparing Drosophila embryos for staining and cuticle preps\n\nD. melanogaster strains were maintained under standard laboratory conditions, reared at 25 \u00b0C, unless otherwise specified. For heat-shock experiments, these conditions were followed: for staining with fluorescent antibodies, flies were allowed to lay eggs on apple-juice agar plates for 5 hr at 25\u00a0\u00b0C and then kept in an incubator at 32 \u00b0C for 7 hr before fixation; for cuticle preps, dechorionated embryos were kept at 32 \u00b0C until they emerged as larvae. Df(X)svb108 embryos/larvae with svbBAC-dsRed are readily discernable by the loss of svb and trichomes in the T1 segment (see Figure 2D & E).\n\n### Cuticle preparation and trichome counting\n\nLarvae collected for cuticle preparations were mounted according to a published protocol (Stern and Sucena, 2011). A phase-contrast microscope was used to image the slides. In the case of crosses involving the Df(X)svb108 allele, only larvae lacking trichomes in the T1 segment were imaged (Figure 2E). This is a homozygous marker for the deletion locus as larvae carrying any wild-type svb allele will produce trichomes in T1 (Figure 2D). Ventral trichomes in larval A1 or A2 segments were counted in Fiji/ImageJ by find using the find maximum function (Schindelin et al., 2012; Schneider et al., 2012).\n\n### Immuno-fluorescence staining of transcription factors and in situ hybridization to mRNA\n\nStandard protocols were used for embryo fixation and staining (Crocker et al., 2015; Tsai et al., 2017). Secondary antibodies labeled with Alexa Fluor dyes (1:500, Invitrogen) were used to detect primary antibodies. In situ hybridizations were performed using DIG, FITC or biotin labeled, antisense RNA-probes against a reporter construct RNA (lacZ, dsRed, gfp) or the first intron and second exon (16 kb) of svb. See Supplementary file 1 for primer sequences. DIG-labeled RNA products were detected with a DIG antibody: Thermofisher, 700772 (1:100 dilution), biotin-labeled RNA products with a biotin antibody: Thermofisher, PA1-26792 (1:100) and FITC-labeled RNA products with a FITC antibody: Thermofisher, A889 (1:100). Ubx protein was detected using Developmental Studies Hybridoma Bank, FP3.38-C antibody at 1:20 dilution, DsRed protein using MBL anti-RFP PM005 antibody at 1:100, LacZ protein using Promega anti-\u00df-Gal antibody at 1:250 and GFP protein using Aves Labs chicken anti-GFP at 1:300.\n\n### Imaging fixed embryos\n\nMounting of fixed Drosophila embryos was done in ProLong Gold\u00a0+\u00a0DAPI mounting media (Molecular Probes, Eugene, OR). Fixed embryos were imaged on a Zeiss LSM 880 confocal microscope with FastAiryscan (Carl Zeiss Microscopy, Jena, Germany). Excitation lasers with wavelengths of 405, 488, 561 and 633 nm were used as appropriate for the specific fluorescent dyes. For imaging in embryos carrying Df(X)svb108, only embryos without svb mRNA expression in the T1 segment were imaged, following the same reason described in the section on \u2018Cuticle preparations and trichome counting\u2019. Unless otherwise stated, all images were processed with Fiji/ImageJ (Schindelin et al., 2012; Schneider et al., 2012) and Matlab (MathWorks, Natick, MA, USA).\n\n### Analysis of microenvironment and svb transcription intensity\n\nInside nuclei with svb transcription sites, the center of the transcription site was identified using the find maximum function of Fiji/ImageJ. A circle with a diameter of 4 pixels (170 nm, roughly the lateral resolution limit of AiryScan in 3D mode) region of interest (ROI) centered on the transcription site is then created. The integrated fluorescent intensity inside the ROI from the Ubx IF channel and the RNA FISH channel are then reported as the local Ubx concentration and the transcriptional output, respectively. The intensity presented in the figures is the per-pixel average intensity with the maximum readout of the sensor normalized to 255.\n\n### Analysis of distances between transcription spots\n\nInside nuclei with svb and dsRed/gfp transcription sites, the centers of the transcription site were identified using the find maximum function of Fiji/ImageJ. The distance between the transcription sites were then computed using the coordinates of the transcription sites. Two sites are considered colocalized when they are within 360 nm of each other.\n\n### Ubx ChIP profile\n\nThe ChIP profile for Ubx around the svb cis-regulatory region is from Choo et al. (2011), using whole Drosophila melanogaster embryos between stages 10 and 12.\n",
+      "created_at": "2025-12-02T11:09:56.412050Z"
+    },
+    {
+      "id": "faef5463-b6a0-4ff8-a151-cb31cc17f71d",
+      "submission_id": "5c5d8477-fee8-4884-9c80-f922e446a6de",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- David N Arnosti, Michigan State University United States\n\nReviewers:\n- Angela H DePace, Harvard Medical School United States\n- Hernan Garcia, University of California, Berkeley United States\n\n## Review text\n\nDOI: [10.7554/eLife.45325.016](https://doi.org/10.7554/eLife.45325.016)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for sending your article entitled \"Multi-enhancer transcriptional hubs confer phenotypic robustness\" for peer review at eLife. Your article is being evaluated by three peer reviewers, and the evaluation is being overseen by a Reviewing Editor and Jessica Tyler as the Senior Editor.\n\nGiven the list of essential revisions, including new experiments, the editors and reviewers invite you to respond within the next two weeks with an action plan and timetable for the completion of the additional work. We plan to share your responses with the reviewers and then issue a binding recommendation.\n\nEssential points to address are the following:\n\n1) The connection between enhancers, Ubx protein concentration, transcriptional output, and phenotype. Although different concentrations of Ubx are measured at the deleted vs. wild-type locus, an important point that the three reviewers agree upon is that gene expression levels and Ubx concentrations are not well correlated. There appear to be other unexplained factors that are influencing the expression of svb that do not correlate with the TF concentration. Thus, it is unclear whether the experiments described here support or reject the hypothesis laid out in the \"multi-enhancer \"hubs\" improve robustness by increasing transcription factor retention near transcription sites.\"\n\nThe authors must consider further whether the global measurements shown in Figure 3 are the most effective measure of this proposed correlation, or whether a more fine-grained analysis might support the idea that boosted Ubx levels from complexed enhancers are driving transcription. As noted below, the authors might show scatter plots of Ubx concentration vs. svb transcription within each condition. A positive correlation would support their hypothesis.\n\nThe trichome phenotype is also not directly correlated to the transcriptional outputs and Ubx concentrations, and as mentioned in the Discussion, further layers of regulation are likely in play. This idea needs to be more fully fleshed out.\n\nA finding related to \"enhancer hubs boosting local concentration\" is the finding that an ectopic BAC appears not to influence Ubx concentration in a wild-type svb background, only in a deletion background. Does this finding indicate that such hub formation is saturable? And if so, does this indicate that the wild-type svb locus forms a local hub with enhancers in the immediate vicinity, and trans-complementation is not a normal feature of svb function?\n\n2) A second point raised concerned the exact cis regulatory regions in play. A minimal DG3 enhancer drives gene expression in ventral abdominal stripes, but does not rescue Ubx concentrations from a trans setting. A larger deletion that includes DG3 as well as additional Ubx binding regions (that are not sufficient for, but may be part of, ventral DG3-related activity) impacts transcription, trichome development, and robustness. A yet larger cis-regulatory domain on a BAC rescues some aspects of gene expression and Ubx concentration. The interpretation conflates DG3 with the function of the deleted region; reviewers noted that a more careful interpretation would differentiate results from each of these different cis elements. For instance, the lack of trans-rescue by the DG3 enhancer alone may be due to the inability of a short segment to transvect effectively. The interpretation should explicitly take into account known properties of transvecting regulatory loci in Drosophila.\n\n3) Several aspects can be addressed by better justification and explanation of methods and data presentation, including\n\n\u2013 Why sometimes either A1 or A2 trichomes are quantitatively assessed, depending on the figure;\n\n\u2013 The use of one-tailed (vs. two-tailed) T-tests for statistical relevance;\n\n\u2013 Recommendations for inclusion of both 25C and 32C phenotypes and data uniformly, and;\n\n\u2013 Clarification of exact role of Ubx in T1-T3 regulation, as the conclusions drawn about DG3 and Ubx roles are difficult to know based on the single images shown;\n\n\u2013 The number of data points in Figures 3 and 4 are limited; is there a technical limitation to more extensive sampling of the transcriptional readouts and Ubx intensities?\n\n4) In some cases, the actual experimental approach was unclear to the reviewers:\n\n\u2013 there was some confusion about whether the DG3 deletion mutants were homozygous, so there would be no wild-type copy of the gene in these embryos \u2013 is that indeed the case?\n\n\u2013 Figure 4 shows svb, but not dsRed mRNA expression; is that correct? Imaging of dsRed only used to score a svb locus as \"overlapped\" vs. \"not overlapped\"?\n\n\u2013 Choice of pixel size for ROI.\n\n\u2013 Signal to noise for Ubx across the nucleus, as well as variation in average Ubx from sample to sample.\n\nReviewer #1:\n\nThis paper addresses a timely topic, namely how multiple enhancers may coordinate to regulate gene expression. This is being actively investigated in a number of systems using both case studies and genome wide methods, and the field is fueled by new capabilities in high resolution microscopy. Thus, interest in the topic is high. However, I have substantial concerns about how this work contributes to this topic.\n\nThe central hypothesis of this work is that increased levels of Ubx, provided by micro-environments created through coalescing multiple Ubx-responsive enhancers, increases the level of transcription of shavenbaby, svb; this increased level of transcription allows svb expression to be robust to high temperature variation. However, the evidence presented in this paper does not consistently support this hypothesis.\n\nLet's first consider the set of experiments correlating the presence of the enhancer deletion (via a deficiency), the concentration of Ubx and the level of svb transcription.\n\n\u2013 Deleting an svb enhancer (DG3) decreases resilience to high temperature stress, resulting in smaller numbers of trichomes in A1.\n\n\u2013 In the A1 segment, svb enhancers localize to a microenvironment where Ubx concentrations are high compared to background.\n\n\u2013 Deleting an svb enhancer decreases the concentration of Ubx in these microenvironments moderately at high temperature, but has no effect at low temperature.\n\n\u2013 At high temperatures, transcription of svb decreases at both WT and deficiency alleles.\n\n\u2013 At low temperatures, transcription of svb decreases under low temperature stress for the deficiency allele.\n\nThese results do not support the hypothesis because svb transcription is not consistently correlated with Ubx levels in the microenvironment.\n\nA second concern is the interpretation of the rescue experiment, where a BAC containing the full svb locus is integrated onto another chromosome. This partially rescues the trichome phenotype of the deficiency allele. However, the Ubx levels in microenvironments were unchanged from WT. If the extra svb regulatory region associates with the endogenous svb transcription site, this should either result in above WT levels of Ubx, or there is some additional layer of regulation. This was not discussed.\n\nReviewer #2:\n\nIn this paper, Tsai et al. studied the general problem of how low affinity binding sites, which promote enhancer specificity, also permit robust activation. They focus on ventral \"shadow\" enhancers for shavenbaby/svb.\n\nThe authors start by focusing on the DG3 enhancer, which was less studied before, and responds to Ubx in A1. Indeed, ChIP-seq data shows Ubx binding in a DG3 element that drive reporter gene expression in trichome forming territories, and this reporter responds to perturbations of Ubx.\n\nA deletion, Df(x)svb108, removes DG3, as well as several other Ubx-bound regions, and causes trichome formation defects only upon heat stress, and primarily in the region of DG3 activity.\n\nState-of-the-art imaging of svb transcription and Ubx protein distribution show a reduction of Ubx concentration in the vicinity of active svb loci, specifically in Df(X)svb108mutant cells under heat stress, and a reduction of transcriptional output upon heat stress, even in wild-type embryos.\n\nRemarkably, exogenous svb cis-regulatory DNA could rescue the formation of a Ubx-rich \"hub\" containing the endogenous svb locus, and svb transcription, in Df(X)svb108 mutants, but only when the two loci colocalized.\n\nTaken together, the data presented is consistent with the notion that multiple enhancers form a Ubx-rich microenvironment necessary for robust svb expression and trichome formation. While the specifics are rather specialized, the problem of transcriptional hub formation and robust gene expression is a general problem of importance.\n\nNevertheless, there are still specific issues with the main conclusions based on the work presented, which seems somewhat preliminary.\n\nAccording to Figure 2, Df(X)svb108removes more than DG3, including elements that clearly bind Ubx as per Figure 1\u2014figure supplement 1, so it is not clear if the observed defects can be attributed to loss of DG3. Ideally, CRISPR/Cas9 should be used to remove Ubx-bound regions outside DG3 (e.g. Ubx-bound DG2) and to remove DG3 specifically, in order to support the conclusions that the observed effects of Df(X)svb108 are due to a loss of DG3.\n\nDG3 remains active in the most dorso-lateral cells in Ubx mutant (Figure 1), in a domain that seems to be specifically marked by DG3 reporters (Figure 1). This domain is portrayed as primarily affected by reduction of trichome formation in Df(X)svb108 mutants, but then it is not clear that this defect is due to a lack of Ubx activity on DG3 (both because DG3-LacZ seems to remain active and because the region removed by Df(X)svb108binds Ubx outside DG3).\n\nIn Figure 3, the discrepancy between robust accumulation of Ubx, except in Df(X)svb108embryo under stress, and the impact of heat stress on transcription even in wild-type embryos further indicates that changes in Ubx accumulation is only part of the explanation for both the Df(X)svb108 phenotype and the response to heat stress.\n\nThe rescue presented in Figure 4 is a strong result but also difficult to interpret: for instance, it seems likely that the \"hub\" forms independently of Ubx, which presumably cannot accumulate on the Df(X)svb108chromosome, and then help place the svb locus in a Ubx-rich microenvironment. This is implied but not explicitly stated, or clearly demonstrated by the data.\n\nFor instance, Figure 5 adds to the notion that regulatory inputs other than DG3 and Ubx govern the formation of the svb containing micro-environment and svb transcription. As acknowledged also in the Discussion, robustness of trichome formation also involves mechanisms downstream of svb transcription, making the link between Ubx hubs and robust trichome formation even more complex.\n\nTaken together, a few of the criticisms above question whether the accumulation of Ubx, or the lack thereof, in microenvironments containing the svb locus explains the phenotypes described for Df(X)svb108. Rescue experiments more directly combining loss of DG3 function with gain of Ubx function should help resolve these issues.\n\nReviewer #3:\n\nIn their previous work, Tsai, et al. observed that, during fruit fly embryogenesis, actively transcribing shavenbaby (svb) loci preferentially colocalized with regions of elevated concentration for the transcription factor Ubx, a known regulator of svb activity. Moreover, they observed that other Ubx target genes exhibited a tendency to colocalize to these same Ubx-enriched \"microenvironments\", even when located on different chromosomes. Based on these findings, they hypothesized that the spatial overlap between multiple distal enhancers and transcription factor microenvironments could result in increased transcriptional output and could be a mechanism for redundancy in the face of environmental stresses. In the present work, Tsai, et al. test this hypothesis directly by deleting the DG3 enhancer from the svb cis-regulatory region and assessing the effects on microenvironment formation, svb transcription, and trichome number (a phenotype tied to svb expression) under normal (25C) and heat-stress (32C) conditions. This manuscript constitutes an intriguing extension of the findings presented in the authors' earlier work on Ubx microenvironments in the vicinity of svb loci. They find that the deletion mutant results in a significant depletion in Ubx concentration around the mutated svb locus at 32C, and that this depletion coincides with a reduction both in svb transcription and trichome number. Furthermore, they find that the addition of the full cis-regulatory region of svb on a different chromosome leads to preferential colocalization between the added region and the original mutated svb locus. The authors report that local concentration of Ubx in the vicinity of these colocalized enhancer regions recovers to wild-type levels under heat shock. They argue that, consistent with their initial hypothesis, the coincident partial recovery of svb transcription and trichome number indicates that this colocalization of multiple Ubx targets to a single microenvironment is indeed functioning to counteract the embryo's mutation-induced sensitivity to heat shock conditions.\n\nOverall, the new experimental results presented in this work are deeply intriguing and hold the potential to offer significant new insights regarding the physical nature of transcription factor hubs, as well as their functional role in the spatiotemporal control of transcriptional activity. Nonetheless, several key questions remain regarding the interpretation of the experimental data and the proposed functional role of transcriptional microenvironments in facilitating phenotypic robustness in the face of genotypic and environmental perturbations.\n\nPerhaps most fundamentally, the authors' conclusions hinge upon the assumption that the Ubx enrichment signal they observe at active loci play a causal role in modulating transcriptional activity, yet they present no data to directly support this assumption. Indeed, the box plots in Figure 3 C and D seem to show that, while both Ubx concentration and transcription decrease in response to heat, DG3 deletion, or both, the relative impacts of these perturbations on transcription and Ubx concentration differ significantly in scale. This leaves open the possibility that the perturbations affect each feature separately, and that the correlation between transcription and local Ubx concentration are spurious, not causal. A simple but important check for this would be to show scatter plots of Ubx concentration vs. svb transcription within each condition. If the input concentration and output rate of transcription for a given locus are positively correlated when other conditions are held constant, this would constitute a solid basis for the authors' subsequent arguments. If, on the other hand, no correlation is evident, then this would fundamentally alter how the manuscripts' results are interpreted. This question can be resolved with data already in-hand and, in this reviewer's opinion, it will help clarify the significance of the reported experimental observations. Along similar lines, the strength of the work would benefit from the addition of plots that clarify not only how different variables (concentration, locus colocalization, transcription rate) change across conditions, but also with respect to one another.\n\nOn a more conceptual note, the authors' proposal that the colocalization of enhancers in transcription factor microenvironments could serve as an added layer of redundancy (akin to multiple TF binding sites and multiple enhancers) to increase the transcriptional robustness is thought-provoking. The concept of robustness is used throughout biology with different meanings, and further discussion of the implications and nuances of this proposal would also help establish what exactly the authors mean by it. For instance, what the authors cast as \"robustness\" could equally well be termed \"desensitization\". While robustness to environmental changes could be desirable, the fast pace of Drosophila development also necessitates rapid, precise transcriptional responses to changes in transcription factor concentrations. Thus, naively at least, if robustness leads to desensitization of the response of an enhancer to changes in the concentrations of inputs transcription factors, one might expect locus colocalization to actually be deleterious in the case of genes that must respond rapidly to time-varying transcription factor inputs. Augmenting the existing commentary to address this point would help clarify the implications of the present work. Does this trade-off make predictions regarding where and when this kind of clustering might manifest over the course of development (and for what genes)?\n\nGeneral Comments:\n\nCan the authors comment on why the box plots in Figure 3 and Figure 4 contain so few data points? All contain 52 or fewer, yet one would expect there to be many more active svb loci per embryo at this point in development. If the full set of svb loci was not used for the analyses presented, can the authors comment on how the analysis subset was selected. Also, given that many of the effects presented are relatively subtle, the addition of data points (to the extent that it is feasible) would greatly enhance the robustness of the analysis and might lead to the discovery of additional trends within the data not evident in such small sample sizes. Given that the authors get multiple nuclei per embryos, is there a fundamental limitation to how much data they can present such as, for example, their data analysis pipeline?\n\nAs mentioned above, this work leans heavily upon the presumed causal relationship between local Ubx concentration and transcriptional output. The work would be greatly strengthened by the addition of bivariate analyses that rigorously test the relationship between Ubx concentration and transcription within each of the four conditions shown in Figure 3 C and D.\n\nThe boxplots in Figure 4C show that Ubx concentration at loci where the mutated svb site is colocalized with the svbBAC more or less recovers Ubx concentration at the endogenous (unperturbed) svb locus, yet the authors do not address whether the resulting signal is less than, equal to, or greater than the sum of the signal at each locus (Df(X)svb and svbBAC) when they are not colocalized. Showing how the enrichment signal at colocalized loci compares to the signal at each separately would indicate whether and to what degree some sort of synergy is at play, or whether the increased signal is merely a result of having more Ubx binding sites in region.\n\nWhile the trends in Ubx intensity, radial separation, and transcriptional activity shown in Figure 4C, E, and F are interesting taken individually, much more could be learned from the data by making bivariate plots. How does transcriptional output at the mutated svb locus vary with the radial separation between loci? What about the Ubx intensity?\n",
+      "created_at": "2025-12-02T11:09:56.412050Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T11:09:56.412050Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T11:09:56.412050Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "6b5defda-66f2-4e47-aff1-a36a9a69d1c8",
+      "content_id": "117e104c-e954-4d41-92ae-5e50f78b6a6d",
+      "claim_id": "C1",
+      "claim": "Low-affinity Ultrabithorax (Ubx)-responsive shavenbaby (svb) enhancers drive expression using localized transcriptional environments in Drosophila melanogaster embryos.",
+      "claim_type": "EXPLICIT",
+      "source": "We previously showed in Drosophila melanogaster embryos that low-affinity Ultrabithorax (Ubx)-responsive shavenbaby (svb) enhancers drive expression using localized transcriptional environments and that active svb enhancers on different chromosomes tended to colocalize (Tsai et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Tsai et al., 2017",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:09:56.412050Z"
+    },
+    {
+      "id": "624b2a9c-109b-4416-8128-cd61043af420",
+      "content_id": "117e104c-e954-4d41-92ae-5e50f78b6a6d",
+      "claim_id": "C2",
+      "claim": "Active svb enhancers on different chromosomes tend to colocalize.",
+      "claim_type": "EXPLICIT",
+      "source": "We previously showed in Drosophila melanogaster embryos that low-affinity Ultrabithorax (Ubx)-responsive shavenbaby (svb) enhancers drive expression using localized transcriptional environments and that active svb enhancers on different chromosomes tended to colocalize (Tsai et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Tsai et al., 2017",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:09:56.412050Z"
+    },
+    {
+      "id": "733d28b1-22f9-4925-9a14-d62247711059",
+      "content_id": "117e104c-e954-4d41-92ae-5e50f78b6a6d",
+      "claim_id": "C3",
+      "claim": "Deleting a redundant enhancer from the svb locus led to reduced trichome numbers in embryos raised at elevated temperatures.",
+      "claim_type": "EXPLICIT",
+      "source": "Deleting a redundant enhancer from the svb locus led to reduced trichome numbers in embryos raised at elevated temperatures.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data presented in the manuscript showing trichome counts at different temperatures",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:09:56.412050Z"
+    },
+    {
+      "id": "b526d304-e96e-4c60-a4ba-2d7935becf8b",
+      "content_id": "117e104c-e954-4d41-92ae-5e50f78b6a6d",
+      "claim_id": "C4",
+      "claim": "The DG3 deletion allele shows lower Ubx concentration at transcription sites.",
+      "claim_type": "EXPLICIT",
+      "source": "Using high-resolution fluorescence microscopy, we observed lower Ubx concentration and transcriptional output in this deletion allele.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by microscopy data presented in Figure 3",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:09:56.412050Z"
+    },
+    {
+      "id": "623762c7-7e1d-44a0-b69a-ec877cc8f0d3",
+      "content_id": "117e104c-e954-4d41-92ae-5e50f78b6a6d",
+      "claim_id": "C5",
+      "claim": "The DG3 deletion allele shows lower transcriptional output.",
+      "claim_type": "EXPLICIT",
+      "source": "Using high-resolution fluorescence microscopy, we observed lower Ubx concentration and transcriptional output in this deletion allele.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by microscopy data presented in Figure 3",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:09:56.412050Z"
+    },
+    {
+      "id": "6c9bde0e-f3e1-49a4-ba1d-ba948b2d9d12",
+      "content_id": "117e104c-e954-4d41-92ae-5e50f78b6a6d",
+      "claim_id": "C6",
+      "claim": "Transcription sites of the full svb cis-regulatory region inserted into a different chromosome colocalized with the svb locus.",
+      "claim_type": "EXPLICIT",
+      "source": "Transcription sites of the full svb cis-regulatory region inserted into a different chromosome colocalized with the svb locus, increasing Ubx concentration, the transcriptional output of svb, and partially rescuing the phenotype.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by imaging data in Figure 4",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:09:56.412050Z"
+    },
+    {
+      "id": "65c93aaf-a232-4e00-8959-74433f8f9ce9",
+      "content_id": "117e104c-e954-4d41-92ae-5e50f78b6a6d",
+      "claim_id": "C7",
+      "claim": "Colocalization of svbBAC with the svb locus increases Ubx concentration at transcription sites.",
+      "claim_type": "EXPLICIT",
+      "source": "Transcription sites of the full svb cis-regulatory region inserted into a different chromosome colocalized with the svb locus, increasing Ubx concentration, the transcriptional output of svb, and partially rescuing the phenotype.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by quantitative imaging data in Figure 4F",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:09:56.412050Z"
+    },
+    {
+      "id": "a5f9c971-86b9-4460-a712-e92007a647d4",
+      "content_id": "117e104c-e954-4d41-92ae-5e50f78b6a6d",
+      "claim_id": "C8",
+      "claim": "Colocalization of svbBAC with the svb locus increases the transcriptional output of svb.",
+      "claim_type": "EXPLICIT",
+      "source": "Transcription sites of the full svb cis-regulatory region inserted into a different chromosome colocalized with the svb locus, increasing Ubx concentration, the transcriptional output of svb, and partially rescuing the phenotype.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by quantitative imaging data in Figure 4E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:09:56.412050Z"
+    },
+    {
+      "id": "41b006d1-6ff4-4db5-b8bf-e5cb51bd179e",
+      "content_id": "117e104c-e954-4d41-92ae-5e50f78b6a6d",
+      "claim_id": "C9",
+      "claim": "Colocalization of svbBAC with the svb locus partially rescues the trichome phenotype.",
+      "claim_type": "EXPLICIT",
+      "source": "Transcription sites of the full svb cis-regulatory region inserted into a different chromosome colocalized with the svb locus, increasing Ubx concentration, the transcriptional output of svb, and partially rescuing the phenotype.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by trichome counting data in Figure 5D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:09:56.412050Z"
+    },
+    {
+      "id": "c745322c-c446-47e4-825a-93ee55e876a0",
+      "content_id": "117e104c-e954-4d41-92ae-5e50f78b6a6d",
+      "claim_id": "C10",
+      "claim": "Multiple enhancers could reinforce a local transcriptional hub to buffer against environmental stresses and genetic perturbations, providing a mechanism for phenotypical robustness.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, multiple enhancers could reinforce a local transcriptional hub to buffer against environmental stresses and genetic perturbations, providing a mechanism for phenotypical robustness.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion drawn from the experimental data showing rescue effects",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:09:56.412050Z"
+    },
+    {
+      "id": "13a47b75-26a1-4bbe-adb0-f9c4db908e4b",
+      "content_id": "117e104c-e954-4d41-92ae-5e50f78b6a6d",
+      "claim_id": "C11",
+      "claim": "Transcriptional regulation controls precise patterns of gene-expression during embryogenesis, leading to cell-fate specification.",
+      "claim_type": "EXPLICIT",
+      "source": "During embryogenesis, transcriptional regulation controls precise patterns of gene-expression, leading to cell-fate specification (Long et al., 2016; Mallo and Alonso, 2013; Reiter et al., 2017; Spitz and Furlong, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations to established literature",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:09:56.412050Z"
+    },
+    {
+      "id": "9d39ec2b-a966-4b7c-9980-1c7c518013ac",
+      "content_id": "117e104c-e954-4d41-92ae-5e50f78b6a6d",
+      "claim_id": "C12",
+      "claim": "Transcription factor binding in eukaryotic cell lines and embryos is dynamic but transient, occurring frequently but with each event lasting for at most a few seconds.",
+      "claim_type": "EXPLICIT",
+      "source": "Live imaging experiments have shown that transcription factor binding in eukaryotic cell lines and embryos is dynamic but transient, occurring frequently but with each event lasting for at most a few seconds (Chen et al., 2014; Izeddin et al., 2014; Liu et al., 2014; Normanno et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations to live imaging studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:09:56.412050Z"
+    },
+    {
+      "id": "4f98146e-929c-450c-a39f-90c8ab5740a8",
+      "content_id": "117e104c-e954-4d41-92ae-5e50f78b6a6d",
+      "claim_id": "C13",
+      "claim": "Many developmental enhancers harbor functionally important low-affinity binding sites.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, recent studies have shown that many developmental enhancers harbor functionally important low-affinity binding sites (Antosova et al., 2016; Crocker et al., 2010; Crocker et al., 2015; Crocker et al., 2016; Farley et al., 2015; Farley et al., 2016; Gaudet and Mango, 2002; Lebrecht et al., 2005; Lorberbaum et al., 2016; Rister et al., 2015; Rowan et al., 2010; Tanay, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by extensive citations to recent studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:09:56.412050Z"
+    },
+    {
+      "id": "dd1560b6-a2ff-4e81-9fed-9c38973da9a4",
+      "content_id": "117e104c-e954-4d41-92ae-5e50f78b6a6d",
+      "claim_id": "C14",
+      "claim": "The Homeobox (Hox) family is responsible for body segment identity along the anterior-posterior axis in animals.",
+      "claim_type": "EXPLICIT",
+      "source": "One example is the Homeobox (Hox) family that is responsible for body segment identity along the anterior-posterior axis in animals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Established knowledge in developmental biology",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:09:56.412050Z"
+    },
+    {
+      "id": "8ca47eba-33c8-410d-8f81-d44a751d0f41",
+      "content_id": "117e104c-e954-4d41-92ae-5e50f78b6a6d",
+      "claim_id": "C15",
+      "claim": "Hox transcription factors descended from a common ancestor and their preferences for binding sequences are very similar.",
+      "claim_type": "EXPLICIT",
+      "source": "Because Hox transcription factors descended from a common ancestor, their preferences for binding sequences are very similar (Berger et al., 2008; McGinnis and Krumlauf, 1992; Noyes et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to evolutionary and molecular studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:09:56.412050Z"
+    },
+    {
+      "id": "4d57e487-a590-4000-968b-423e9dd8b56b",
+      "content_id": "117e104c-e954-4d41-92ae-5e50f78b6a6d",
+      "claim_id": "C16",
+      "claim": "Several enhancers in the shavenbaby (svb) locus make use of low-affinity binding sequences for Ultrabithorax (Ubx) to select for specific Hox factors.",
+      "claim_type": "EXPLICIT",
+      "source": "To select for specific Hox factors, several enhancers in the shavenbaby (svb) locus make use of low-affinity binding sequences for Ultrabithorax (Ubx) (Crocker et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Crocker et al., 2015",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:09:56.412050Z"
+    },
+    {
+      "id": "2897d2a6-0a19-4d86-8871-bc4889fe9f0f",
+      "content_id": "117e104c-e954-4d41-92ae-5e50f78b6a6d",
+      "claim_id": "C17",
+      "claim": "Svb is a transcription factor that drives the formation of trichomes, epidermal projections on the surface of the segmented fly embryo.",
+      "claim_type": "EXPLICIT",
+      "source": "Svb is a transcription factor that drives the formation of trichomes, epidermal projections on the surface of the segmented fly embryo (Chanut-Delalande et al., 2006; Delon et al., 2003; Payre et al., 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to studies characterizing svb function",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:09:56.412050Z"
+    },
+    {
+      "id": "d82ec23b-a242-445b-9bd6-dd8188e693e3",
+      "content_id": "117e104c-e954-4d41-92ae-5e50f78b6a6d",
+      "claim_id": "C18",
+      "claim": "Ubx transiently but repeatedly explores the same physical locations in a nucleus, which are likely clusters of binding sites.",
+      "claim_type": "EXPLICIT",
+      "source": "We have previously shown in living Drosophila melanogaster embryos that Ubx transiently but repeatedly explores the same physical locations in a nucleus, which are likely clusters of binding sites (Tsai et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Tsai et al., 2017",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:09:56.412050Z"
+    },
+    {
+      "id": "5fbd9571-d8fe-4070-8eaf-e0e216a701e8",
+      "content_id": "117e104c-e954-4d41-92ae-5e50f78b6a6d",
+      "claim_id": "C19",
+      "claim": "Transcriptional microenvironments of high local Ubx and cofactor concentrations surround active transcription sites driven by low-affinity svb enhancers.",
+      "claim_type": "EXPLICIT",
+      "source": "We have additionally shown that transcriptional microenvironments of high local Ubx and cofactor concentrations surround active transcription sites driven by low-affinity svb enhancers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Refers to previous work by the authors",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:09:56.412050Z"
+    },
+    {
+      "id": "76d2cb1c-665b-4b92-ac58-d0486c851a17",
+      "content_id": "117e104c-e954-4d41-92ae-5e50f78b6a6d",
+      "claim_id": "C20",
+      "claim": "The distributions of many transcription factors in the nucleus are highly heterogeneous.",
+      "claim_type": "EXPLICIT",
+      "source": "As the distributions of many transcription factors in the nucleus are highly heterogeneous, the transcriptional activity of low-affinity enhancers would depend on the local microenvironments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "General knowledge about transcription factor distributions",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:09:56.412050Z"
+    },
+    {
+      "id": "63b1526b-d46f-4ce3-a750-8a15b916faef",
+      "content_id": "117e104c-e954-4d41-92ae-5e50f78b6a6d",
+      "claim_id": "C21",
+      "claim": "The transcriptional activity of low-affinity enhancers depends on the local microenvironments.",
+      "claim_type": "EXPLICIT",
+      "source": "As the distributions of many transcription factors in the nucleus are highly heterogeneous, the transcriptional activity of low-affinity enhancers would depend on the local microenvironments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Logical inference from heterogeneous TF distributions and previous observations",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:09:56.412050Z"
+    },
+    {
+      "id": "c6d3e96b-ff6e-4513-87c7-756da921fb71",
+      "content_id": "117e104c-e954-4d41-92ae-5e50f78b6a6d",
+      "claim_id": "C22",
+      "claim": "Transcriptionally active, minimalized versions of two of the three ventral svb enhancers (E3 and 7) are Ubx-responsive.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, we observed that transcriptionally active, minimalized versions of two of the three ventral svb enhancers (E3 and 7) are Ubx-responsive and preferentially appear near or overlap spatially with transcription sites of the endogenous svb gene, despite being on different chromosomes (Crocker et al., 2015; Tsai et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Crocker et al., 2015 and Tsai et al., 2017",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:09:56.412050Z"
+    },
+    {
+      "id": "724e3ea4-45db-4b5b-bb9d-6864da3b6c7e",
+      "content_id": "117e104c-e954-4d41-92ae-5e50f78b6a6d",
+      "claim_id": "C23",
+      "claim": "Minimalized versions of E3 and 7 enhancers preferentially appear near or overlap spatially with transcription sites of the endogenous svb gene, despite being on different chromosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, we observed that transcriptionally active, minimalized versions of two of the three ventral svb enhancers (E3 and 7) are Ubx-responsive and preferentially appear near or overlap spatially with transcription sites of the endogenous svb gene, despite being on different chromosomes (Crocker et al., 2015; Tsai et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Crocker et al., 2015 and Tsai et al., 2017",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:09:56.412050Z"
+    },
+    {
+      "id": "44639f64-1fdb-431f-ad6e-ae005dc9067c",
+      "content_id": "117e104c-e954-4d41-92ae-5e50f78b6a6d",
+      "claim_id": "C24",
+      "claim": "Microenvironments could be shared between related enhancers to increase transcriptional output, where enhancers would synergistically form a larger local trap for transcription factors than each could alone.",
+      "claim_type": "EXPLICIT",
+      "source": "This colocalization suggests microenvironments could be shared between related enhancers to increase transcriptional output, where enhancers would synergistically form a larger local trap for transcription factors than each could alone.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative interpretation of colocalization observations",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:09:56.412050Z"
+    },
+    {
+      "id": "192c0915-8ad4-4d10-a0dc-29ce6e5669a5",
+      "content_id": "117e104c-e954-4d41-92ae-5e50f78b6a6d",
+      "claim_id": "C25",
+      "claim": "Retaining multiple enhancers within a microenvironment could provide redundancy in case individual enhancers are compromised and buffer negative impacts when the system is subjected to stress.",
+      "claim_type": "EXPLICIT",
+      "source": "Retaining multiple enhancers within a microenvironment could also provide redundancy in case individual enhancers are compromised and buffer negative impacts when the system is subjected to stress.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Hypothesis proposed based on observations",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:09:56.412050Z"
+    },
+    {
+      "id": "7868ab7e-d9ac-4911-bbbe-9c81fd06f757",
+      "content_id": "117e104c-e954-4d41-92ae-5e50f78b6a6d",
+      "claim_id": "C26",
+      "claim": "svb enhancers show phenotypic robustness in maintaining sufficient trichome numbers even under temperature stress.",
+      "claim_type": "EXPLICIT",
+      "source": "This idea is consistent with the observed phenotypic robustness of svb enhancers in maintaining sufficient trichome numbers even under temperature stress (Crocker et al., 2015; Frankel et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Crocker et al., 2015 and Frankel et al., 2010",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:09:56.412050Z"
+    },
+    {
+      "id": "e52616b7-76b6-4f11-9df2-a5505d3edd68",
+      "content_id": "117e104c-e954-4d41-92ae-5e50f78b6a6d",
+      "claim_id": "C27",
+      "claim": "The DG3 ventral enhancer contains low-affinity Ubx binding sites.",
+      "claim_type": "EXPLICIT",
+      "source": "The ventral svb enhancers DG3, E3 and 7 (Figure 1A) contain low-affinity Ubx binding sites and have been shown to be transcribed in microenvironments of high Ubx concentrations in the first abdominal (A1) segment on the ventral surface of the embryo (Tsai et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Tsai et al., 2017",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:09:56.412050Z"
+    },
+    {
+      "id": "1d9dd2d5-2e27-424b-b99e-2def84e69e70",
+      "content_id": "117e104c-e954-4d41-92ae-5e50f78b6a6d",
+      "claim_id": "C28",
+      "claim": "DG3, E3 and 7 enhancers are transcribed in microenvironments of high Ubx concentrations in the first abdominal (A1) segment on the ventral surface of the embryo.",
+      "claim_type": "EXPLICIT",
+      "source": "The ventral svb enhancers DG3, E3 and 7 (Figure 1A) contain low-affinity Ubx binding sites and have been shown to be transcribed in microenvironments of high Ubx concentrations in the first abdominal (A1) segment on the ventral surface of the embryo (Tsai et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Tsai et al., 2017",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:09:56.412050Z"
+    },
+    {
+      "id": "1de6dfe7-cda7-4ab0-a8c7-afce9a1db8a9",
+      "content_id": "117e104c-e954-4d41-92ae-5e50f78b6a6d",
+      "claim_id": "C29",
+      "claim": "Each of the ventral svb enhancers (DG3, E3, 7) produces ventral stripes of expression along segments A1-A7 in the embryo, resembling the endogenous expression pattern of svb.",
+      "claim_type": "EXPLICIT",
+      "source": "Each of these enhancers produces ventral stripes of expression along segments A1-A7 in the embryo, resembling the endogenous expression pattern of svb (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by Figure 1B showing expression patterns",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:09:56.412050Z"
+    },
+    {
+      "id": "2cd20923-1a32-476b-af1e-ac7bf22036f5",
+      "content_id": "117e104c-e954-4d41-92ae-5e50f78b6a6d",
+      "claim_id": "C30",
+      "claim": "Each ventral svb enhancer contributes to different but partially overlapping portions of the total expression pattern.",
+      "claim_type": "EXPLICIT",
+      "source": "Each enhancer contributes to different but partially overlapping portions of the total expression pattern.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observation from expression pattern analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:09:56.412050Z"
+    },
+    {
+      "id": "71e5e1ff-ca7a-4248-9021-39b1c3b1d7d8",
+      "content_id": "117e104c-e954-4d41-92ae-5e50f78b6a6d",
+      "claim_id": "C31",
+      "claim": "The three ventral svb enhancers (DG3, E3, 7) have different Ubx ChIP enrichment profiles.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, they have different Ubx ChIP enrichment profiles (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by ChIP data shown in Figure 1\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:09:56.412050Z"
+    },
+    {
+      "id": "d5b4b0df-5f7c-4dd0-86e4-32d553f72728",
+      "content_id": "117e104c-e954-4d41-92ae-5e50f78b6a6d",
+      "claim_id": "C32",
+      "claim": "In wild-type embryos, the DG3 reporter gene is expressed ventrally in stripes along segments A1-A7, in addition to narrow thoracic stripes in T1-T3.",
+      "claim_type": "EXPLICIT",
+      "source": "In wild-type embryos, the DG3 reporter gene was expressed ventrally in stripes along segments A1-A7, in addition to narrow thoracic stripes in T1-T3 (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by expression data shown in Figure 1C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:09:56.412050Z"
+    },
+    {
+      "id": "2dd111c8-407d-4bc6-87c0-19c311ca3f81",
+      "content_id": "117e104c-e954-4d41-92ae-5e50f78b6a6d",
+      "claim_id": "C33",
+      "claim": "Expression from DG3 on the ventral surface in the T2 and T3 segments is weak with wild-type Ubx expression and is primarily seen on the sides.",
+      "claim_type": "EXPLICIT",
+      "source": "Expression from DG3 on the ventral surface in the T2 and T3 segments was weak with wild-type Ubx expression and was primarily seen on the sides.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observation from expression pattern analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:09:56.412050Z"
+    },
+    {
+      "id": "68a02385-1c81-40d5-8be3-fa9d332337e8",
+      "content_id": "117e104c-e954-4d41-92ae-5e50f78b6a6d",
+      "claim_id": "C34",
+      "claim": "In the absence of Ubx, DG3 reporter expression is almost completely lost on the ventral side of A1 and reduced between A2-A7.",
+      "claim_type": "EXPLICIT",
+      "source": "In the absence of Ubx, DG3 reporter expression was almost completely lost on the ventral side of A1 and reduced between A2-A7 (Figure 1D), consistent with the responses of E3, 7 and the full svb locus (Crocker et al., 2015).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by expression data in Figure 1D and citation to Crocker et al., 2015",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:09:56.412050Z"
+    },
+    {
+      "id": "df739053-57f7-496e-9aa8-274759dcd9e3",
+      "content_id": "117e104c-e954-4d41-92ae-5e50f78b6a6d",
+      "claim_id": "C35",
+      "claim": "The incomplete loss of DG3 expression in A2-A7 in the absence of Ubx suggests that additional factors influence the expression of ventral trichomes in those segments.",
+      "claim_type": "EXPLICIT",
+      "source": "The incomplete loss of expression in A2-A7 suggests that additional factors influence the expression of ventral trichomes in those segments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from incomplete loss of expression",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:09:56.412050Z"
+    },
+    {
+      "id": "b46fb248-849a-49ce-bf71-2913f1ea5279",
+      "content_id": "117e104c-e954-4d41-92ae-5e50f78b6a6d",
+      "claim_id": "C36",
+      "claim": "Ubiquitous expression of Ubx increases DG3 expression levels in A1-A7 and generates ectopic expressions on the ventral side of the thoracic segments T2-T3 and A8.",
+      "claim_type": "EXPLICIT",
+      "source": "Ubiquitous expression of Ubx increased the expression levels in A1-A7, in addition to generating ectopic expressions on the ventral side of the thoracic segments T2-T3 and A8 (Figure 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by expression data in Figure 1E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:09:56.412050Z"
+    },
+    {
+      "id": "710d2501-a4c0-4f9b-a5d0-fdb6f69afe37",
+      "content_id": "117e104c-e954-4d41-92ae-5e50f78b6a6d",
+      "claim_id": "C37",
+      "claim": "Ubx is necessary for DG3 expression in the ventral region of the abdominal segments (completely in A1 and partially in A2-7).",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, we showed that Ubx is necessary for DG3 expression in the ventral region of the abdominal segments (completely in A1 and partially in A2-7) and can induce ectopic expressions when overexpressed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion from Ubx manipulation experiments",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:09:56.412050Z"
+    },
+    {
+      "id": "0269720f-0cf8-4e9a-ae02-f880100f3225",
+      "content_id": "117e104c-e954-4d41-92ae-5e50f78b6a6d",
+      "claim_id": "C38",
+      "claim": "Ubx can induce ectopic DG3 expressions when overexpressed.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, we showed that Ubx is necessary for DG3 expression in the ventral region of the abdominal segments (completely in A1 and partially in A2-7) and can induce ectopic expressions when overexpressed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion from Ubx overexpression experiments",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:09:56.412050Z"
+    },
+    {
+      "id": "140b6b52-6594-4987-af1f-904bf206a9d4",
+      "content_id": "117e104c-e954-4d41-92ae-5e50f78b6a6d",
+      "claim_id": "C39",
+      "claim": "The Df(X)svb108 deletion allele encompasses the enhancers DG2, DG3 and Z, of which only DG3 is a ventral enhancer.",
+      "claim_type": "EXPLICIT",
+      "source": "This svb DG3-deletion allele encompasses the enhancers DG2, DG3 and Z (Figure 2A)\u2014of which only DG3 is a ventral enhancer.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Description of the deletion allele shown in Figure 2A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:09:56.412050Z"
+    },
+    {
+      "id": "16b2f87e-1ebc-4993-b0c5-96dcac7c6952",
+      "content_id": "117e104c-e954-4d41-92ae-5e50f78b6a6d",
+      "claim_id": "C40",
+      "claim": "Deleting a region in the svb locus containing DG3 (Df(X)svb108) leads to reduced phenotypic robustness of svb under non-optimal temperatures, with reduced numbers of trichomes produced.",
+      "claim_type": "EXPLICIT",
+      "source": "It had been previously shown that deleting a region in the svb locus containing DG3 (Df(X)svb108) led to reduced phenotypic robustness of svb under non-optimal temperatures, with reduced numbers of trichomes produced (Frankel et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Frankel et al., 2010",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:09:56.412050Z"
+    },
+    {
+      "id": "b1eb4429-c8fd-4add-be6f-2a43cce0323e",
+      "content_id": "117e104c-e954-4d41-92ae-5e50f78b6a6d",
+      "claim_id": "C41",
+      "claim": "At 25\u00b0C, the Df(X)svb108 deletion allele does not show a mutant phenotype in trichome formation along the A1 and A2 segments compared to wild-type.",
+      "claim_type": "EXPLICIT",
+      "source": "In the A1 and A2 segments at 25\u00b0C, deletion of the DG3 enhancer did not result in a clear change in ventral trichome formation in the abdominal segments compared to the wild-type (Figure 2B and C), perhaps due to the redundancy provided by overlapping expression patterns from other svb enhancers.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by phenotypic data in Figure 2B and C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:09:56.412050Z"
+    },
+    {
+      "id": "368c660c-7892-4608-8db7-b647dc69a620",
+      "content_id": "117e104c-e954-4d41-92ae-5e50f78b6a6d",
+      "claim_id": "C42",
+      "claim": "The lack of trichome phenotype at 25\u00b0C in the Df(X)svb108 deletion allele may be due to redundancy provided by overlapping expression patterns from other svb enhancers.",
+      "claim_type": "EXPLICIT",
+      "source": "In the A1 and A2 segments at 25\u00b0C, deletion of the DG3 enhancer did not result in a clear change in ventral trichome formation in the abdominal segments compared to the wild-type (Figure 2B and C), perhaps due to the redundancy provided by overlapping expression patterns from other svb enhancers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative explanation for the observation",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:09:56.412050Z"
+    },
+    {
+      "id": "bcb539a0-2c6d-48ee-bdd0-17a116e34cc5",
+      "content_id": "117e104c-e954-4d41-92ae-5e50f78b6a6d",
+      "claim_id": "C43",
+      "claim": "T1 trichomes are missing in larvae homozygous for the Df(X)svb108 deletion allele.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the T1 trichomes were missing in larvae homozygous for the deletion (Df(X)svb108) allele (Figure 2D and E), which we subsequently used as a homozygous marker to select for larvae homozygous for the deletion allele when crossing Df(X)svb108 flies to other lines (See 'Cuticle preparations and trichome counting' in Materials and Methods).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by phenotypic data in Figure 2D and E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:09:56.412050Z"
+    },
+    {
+      "id": "ce55647c-c28d-48d4-9b34-4788d768be28",
+      "content_id": "117e104c-e954-4d41-92ae-5e50f78b6a6d",
+      "claim_id": "C44",
+      "claim": "Defects in trichome formation occur in the dorsal edges of the stripe pattern in the Df(X)svb108 deletion allele, which are exclusively covered by DG3.",
+      "claim_type": "EXPLICIT",
+      "source": "Also, we observed defects in trichome formation in the dorsal edges of the stripe pattern, which are exclusively covered by DG3 (Figure 2D and E, the black brackets at A1 and A2). This is consistent with a lack of redundancy in enhancer usage in these areas (Figure 2F, white dotted circles).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by phenotypic data in Figure 2D, E, and F",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:09:56.412050Z"
+    },
+    {
+      "id": "47bf415e-ca89-4361-b59e-862e641a1c10",
+      "content_id": "117e104c-e954-4d41-92ae-5e50f78b6a6d",
+      "claim_id": "C45",
+      "claim": "The trichome number in regions covered by the overlapping expression of the E3, 7 and DG3 enhancers in the A1 segment does not significantly reduce at 25\u00b0C upon the deletion of DG3.",
+      "claim_type": "EXPLICIT",
+      "source": "The trichome number in regions covered by the overlapping expression of the E3, 7 and DG3 enhancers in the A1 segment did not significantly reduce at 25\u00b0C upon the deletion of DG3 (Figure 2B,C and I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by quantitative trichome counting data in Figure 2I",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:09:56.412050Z"
+    },
+    {
+      "id": "e2a433fb-5852-4dee-bf42-a57b2a231c9c",
+      "content_id": "117e104c-e954-4d41-92ae-5e50f78b6a6d",
+      "claim_id": "C46",
+      "claim": "Larvae homozygous for the Df(X)svb108 allele developed at 32\u00b0C produce fewer trichomes compared to wild-type larvae.",
+      "claim_type": "EXPLICIT",
+      "source": "However, larvae homozygous for the Df(X)svb108 allele developed at 32\u00b0C produced fewer trichomes compared to wild-type larvae (Figure 2G,H and I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by quantitative trichome counting data in Figure 2I",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:09:56.412050Z"
+    },
+    {
+      "id": "b9160fa4-0f0b-482f-8216-d0fa6ad9537a",
+      "content_id": "117e104c-e954-4d41-92ae-5e50f78b6a6d",
+      "claim_id": "C47",
+      "claim": "Similar trichome reduction effects are observed in the A2 segment for the Df(X)svb108 allele at elevated temperature.",
+      "claim_type": "EXPLICIT",
+      "source": "We also observed similar effects in the A2 segment (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data in Figure 2\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:09:56.412050Z"
+    },
+    {
+      "id": "94bd6257-0071-4b29-8987-a37953c2bd5f",
+      "content_id": "117e104c-e954-4d41-92ae-5e50f78b6a6d",
+      "claim_id": "C48",
+      "claim": "Ubx intensities around svb transcription sites with the wild-type allele do not significantly change between 25\u00b0C and 32\u00b0C in nuclei from the A1 segment.",
+      "claim_type": "EXPLICIT",
+      "source": "In nuclei from the A1 segment, Ubx intensities around svb transcription sites with the wild-type allele did not significantly change between 25\u00b0C and 32\u00b0C (Figure 3C, bottom right panel).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by quantitative imaging data in Figure 3C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:09:56.412050Z"
+    },
+    {
+      "id": "82c6a2f2-5a74-43bc-9332-249a42d2ef2f",
+      "content_id": "117e104c-e954-4d41-92ae-5e50f78b6a6d",
+      "claim_id": "C49",
+      "claim": "Ubx concentrations around svb transcription sites are in general higher than the nuclear average in wild-type embryos expressing svb at 25\u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "Measuring Ubx intensity from random locations within nuclei of wild-type embryos expressing svb at 25\u00b0C using the same method showed that Ubx concentrations around svb transcription sites were in general higher than the nuclear average (Figure 3\u2014figure supplement 1), consistent with our previous findings (Tsai et al., 2017).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by quantitative imaging data in Figure 3\u2014figure supplement 1 and citation to Tsai et al., 2017",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:09:56.412050Z"
+    },
+    {
+      "id": "a22ed7a8-c11c-4387-aefe-2e27e653319d",
+      "content_id": "117e104c-e954-4d41-92ae-5e50f78b6a6d",
+      "claim_id": "C50",
+      "claim": "Transcription sites in embryos with the DG3-deletion (Df(X)svb108) allele have a local Ubx concentration that is slightly lower than wild-type at 25\u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "Transcription sites in embryos with the DG3-deletion (Df(X)svb108) allele had a local Ubx concentration that is slightly lower than wild-type at 25\u00b0C (Figure 3C, bottom right panel).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by quantitative imaging data in Figure 3C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:09:56.412050Z"
+    },
+    {
+      "id": "df61baba-41c5-4886-918b-d9367b2b7725",
+      "content_id": "117e104c-e954-4d41-92ae-5e50f78b6a6d",
+      "claim_id": "C51",
+      "claim": "There is a clear decrease in Ubx intensity around transcription sites in DG3-deletion embryos subjected to heat-stress compared to wild-type.",
+      "claim_type": "EXPLICIT",
+      "source": "However, there was a clear decrease in Ubx intensity compared to the wild-type when we subjected the DG3-deletion embryos to heat-stress (Figure 3B, right panel, and 3C, bottom right panel).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by quantitative imaging data in Figure 3B and 3C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:09:56.412050Z"
+    },
+    {
+      "id": "7ff974fa-4162-4651-be30-9d421098edda",
+      "content_id": "117e104c-e954-4d41-92ae-5e50f78b6a6d",
+      "claim_id": "C52",
+      "claim": "Clear decreases in transcriptional output are detected when embryos are heat-stressed at 32\u00b0C, even with the wild-type allele.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, we detected clear decreases in transcriptional output when the embryos are heat-stressed at 32\u00b0C, even with the wild-type allele.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by quantitative imaging data in Figure 3C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:09:56.412050Z"
+    },
+    {
+      "id": "a8526bfd-e4bf-4cb0-98f6-b88939c0b332",
+      "content_id": "117e104c-e954-4d41-92ae-5e50f78b6a6d",
+      "claim_id": "C53",
+      "claim": "The Df(X)svb108 allele at 25\u00b0C shows reduced levels of transcriptional output slightly lower than the wild-type under heat-shock.",
+      "claim_type": "EXPLICIT",
+      "source": "The Df(X)svb108 allele at 25\u00b0C showed reduced levels of transcriptional output slightly lower than the wild-type under heat-shock.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by quantitative imaging data in Figure 3C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:09:56.412050Z"
+    },
+    {
+      "id": "304cc446-7422-4df9-90d3-d4fd35140b9c",
+      "content_id": "117e104c-e954-4d41-92ae-5e50f78b6a6d",
+      "claim_id": "C54",
+      "claim": "At 32\u00b0C, the transcriptional output further decreases in the Df(X)svb108 mutant.",
+      "claim_type": "EXPLICIT",
+      "source": "At 32\u00b0C, the transcriptional output further decreased in the mutant.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by quantitative imaging data in Figure 3C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:09:56.412050Z"
+    },
+    {
+      "id": "0bc1dceb-05e1-43c4-bb0a-fc0ccff56ca0",
+      "content_id": "117e104c-e954-4d41-92ae-5e50f78b6a6d",
+      "claim_id": "C55",
+      "claim": "The various conditions tested display a weak positive correlation between svb transcriptional output and Ubx concentration (R-square = 0.4331).",
+      "claim_type": "EXPLICIT",
+      "source": "When the various conditions were plotted by their svb transcriptional output and Ubx intensity (Figure 3C, center panel), they displayed a weak positive correlation with Ubx concentration (R-square = 0.4331).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by correlation analysis shown in Figure 3C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:09:56.412050Z"
+    },
+    {
+      "id": "c60ef549-f795-4fd2-a6a0-d1019369be15",
+      "content_id": "117e104c-e954-4d41-92ae-5e50f78b6a6d",
+      "claim_id": "C56",
+      "claim": "Stress conditions reduce the transcriptional output of enhancers and the correlation to Ubx concentrations is positive but weak.",
+      "claim_type": "EXPLICIT",
+      "source": "In sum, stress conditions reduced the transcriptional output of enhancers and the correlation to Ubx concentrations was positive but weak.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of quantitative imaging data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:09:56.412050Z"
+    },
+    {
+      "id": "823081d4-f9ce-4e4a-97cc-6b6ca436a990",
+      "content_id": "117e104c-e954-4d41-92ae-5e50f78b6a6d",
+      "claim_id": "C57",
+      "claim": "The svbBAC construct drives a dsRed reporter gene instead of another copy of svb.",
+      "claim_type": "EXPLICIT",
+      "source": "For this purpose, we used a transgenic fly line, where a bacterial artificial chromosome (BAC) carrying the complete cis-regulatory region of svb (Preger-Ben Noon et al., 2018) was integrated into chromosome 2. To exclude svb mRNA from effecting the rescue, this svbBAC construct drives a dsRed reporter gene instead of another copy of svb.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of the experimental construct",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:09:56.412050Z"
+    },
+    {
+      "id": "c3635027-2cc5-459e-8154-81ce61a161ff",
+      "content_id": "117e104c-e954-4d41-92ae-5e50f78b6a6d",
+      "claim_id": "C58",
+      "claim": "DsRed protein expression driven by the svbBAC regulatory sequence recapitulates the svb expression patterns in D. melanogaster embryos.",
+      "claim_type": "EXPLICIT",
+      "source": "We confirmed that DsRed protein expression driven by this regulatory sequence recapitulated the svb expression patterns (Figure 4B) in D. melanogaster embryos and was responsive to Ubx\u2014the lack of Ubx led to a decrease of expression in the A1 segment (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by expression data in Figure 4B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:09:56.412050Z"
+    },
+    {
+      "id": "72986cfb-13ad-407d-b102-ce91ca808372",
+      "content_id": "117e104c-e954-4d41-92ae-5e50f78b6a6d",
+      "claim_id": "C59",
+      "claim": "DsRed expression driven by svbBAC is responsive to Ubx\u2014the lack of Ubx leads to a decrease of expression in the A1 segment.",
+      "claim_type": "EXPLICIT",
+      "source": "We confirmed that DsRed protein expression driven by this regulatory sequence recapitulated the svb expression patterns (Figure 4B) in D. melanogaster embryos and was responsive to Ubx\u2014the lack of Ubx led to a decrease of expression in the A1 segment (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by expression data in Figure 4C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:09:56.412050Z"
+    },
+    {
+      "id": "aa257f99-865d-4bff-92ec-38b20ed1d5b4",
+      "content_id": "117e104c-e954-4d41-92ae-5e50f78b6a6d",
+      "claim_id": "C60",
+      "claim": "In nuclei having both svb and svbBAC-dsRed transcription sites at 32\u00b0C, the distances between them are on average closer than between svb and an unrelated gene reporter construct (diBAC-gfp).",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that many active dsRed transcription sites were close to svb transcription sites in nuclei expressing both svb and dsRed in embryos from crosses between svbBAC-dsRed and wild-type (w1118) flies (Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by distance measurements in Figure 4D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:09:56.412050Z"
+    },
+    {
+      "id": "f2e17e39-44e1-429d-b554-428dea41d8d3",
+      "content_id": "117e104c-e954-4d41-92ae-5e50f78b6a6d",
+      "claim_id": "C62",
+      "claim": "The unrelated regulatory region of diachete does not show colocalization with svb.",
+      "claim_type": "EXPLICIT",
+      "source": "This effect was not observed for the unrelated regulatory region of diachete driving the expression of gfp, which was inserted on a BAC in the same chromosomal location as svbBAC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Negative control experiment showing specificity",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:09:56.412050Z"
+    },
+    {
+      "id": "c1364309-08be-48fd-ba12-6db2f9d97e9d",
+      "content_id": "117e104c-e954-4d41-92ae-5e50f78b6a6d",
+      "claim_id": "C63",
+      "claim": "Both svb transcriptional output and local Ubx concentration around svb transcription sites are restored to wild-type levels when they co-localize with an active svbBAC-dsRed transcription site in the same nucleus.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that the introduction of the svb regulatory region was able to rescue both molecular and functional defects observed from the loss of the region containing DG3. Both svb transcriptional output (Figure 4E) and local Ubx concentration around svb transcription sites (Figure 4F and G) were restored to wild-type levels, but only when they co-localized with an active svbBAC-dsRed transcription site in the same nucleus (within 360 nm from each other, see 'Analysis of distances between transcription spots' in materials and methods for the definition of colocalization).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by quantitative imaging data in Figure 4E, F, and G",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:09:56.412050Z"
+    },
+    {
+      "id": "277bc025-bcfa-43ab-b36e-53e67117f90d",
+      "content_id": "117e104c-e954-4d41-92ae-5e50f78b6a6d",
+      "claim_id": "C64",
+      "claim": "Pairs of transcription sites under and above the 360 nm distance threshold cluster in two groups distinguishable by Ubx and svb transcription levels.",
+      "claim_type": "EXPLICIT",
+      "source": "The pairs of transcription sites under and above this threshold clustered in two groups distinguishable also by Ubx and svb transcription levels (Figure 4H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by clustering analysis in Figure 4H",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:09:56.412050Z"
+    },
+    {
+      "id": "3ac2062b-f0ea-4747-afa6-458f902b36a4",
+      "content_id": "117e104c-e954-4d41-92ae-5e50f78b6a6d",
+      "claim_id": "C65",
+      "claim": "Wild-type (w1118) x svbBAC-dsRed embryos and larvae are similar to wild-type in both trichome number and Ubx levels around svb transcription sites.",
+      "claim_type": "EXPLICIT",
+      "source": "Wild-type (w1118) x svbBAC-dsRed embryos and larvae were similar to wild-type in both trichome number and Ubx levels around svb transcription sites (Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data in Figure 4\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:09:56.412050Z"
+    },
+    {
+      "id": "8173edf8-5177-47a4-ba0b-24de98c6c5bb",
+      "content_id": "117e104c-e954-4d41-92ae-5e50f78b6a6d",
+      "claim_id": "C66",
+      "claim": "The phenotype of ventral trichome formation on the A1 segment is partially rescued by the introduction of svbBAC to the DG3-deletion allele.",
+      "claim_type": "EXPLICIT",
+      "source": "The phenotype, ventral trichome formation on the A1 segment (Figure 5A\u2013C), which is reduced with the DG3-deletion allele, was partially rescued by the introduction of svbBAC (Figure 5D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by trichome counting data in Figure 5D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:09:56.412050Z"
+    },
+    {
+      "id": "1e0865d3-aae8-45da-ba3d-5320bd1ebbdf",
+      "content_id": "117e104c-e954-4d41-92ae-5e50f78b6a6d",
+      "claim_id": "C67",
+      "claim": "The loss of the outer edge trichomes in A1 with the DG3-deletion allele is not rescued with svbBAC.",
+      "claim_type": "EXPLICIT",
+      "source": "The loss of the outer edge trichomes in A1 (in the black brackets in Figure 5A\u2013C, where only DG3 provides coverage Figure 2F) with the DG3-deletion allele was not rescued with svbBAC.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by phenotypic data in Figure 5A-C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:09:56.412050Z"
+    },
+    {
+      "id": "b1843851-c76b-446f-8d34-5b5e967b82d2",
+      "content_id": "117e104c-e954-4d41-92ae-5e50f78b6a6d",
+      "claim_id": "C68",
+      "claim": "Introducing only the DG3 enhancer as opposed to svbBAC does not rescue trichome formation under heat-stress.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, introducing only the DG3 enhancer as opposed to svbBAC did not rescue trichome formation under heat-stress (Figure 5D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by trichome counting data in Figure 5D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:09:56.412050Z"
+    },
+    {
+      "id": "651cc101-0067-4ae5-845a-f949abd5af6a",
+      "content_id": "117e104c-e954-4d41-92ae-5e50f78b6a6d",
+      "claim_id": "C69",
+      "claim": "Using multiple binding sites to ensure efficient and consistent transcriptional regulation under different environmental conditions appears to be a preferred strategy among many developmental enhancers.",
+      "claim_type": "EXPLICIT",
+      "source": "Given the transient nature of these interactions, using multiple binding sites to ensure efficient and consistent transcriptional regulation under different environmental conditions appears to be a preferred strategy among many developmental enhancers (Frankel, 2012; Perry et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Frankel, 2012 and Perry et al., 2010",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:09:56.412050Z"
+    },
+    {
+      "id": "be2663f5-4c33-4e7b-92a3-0dfd0c6bb84e",
+      "content_id": "117e104c-e954-4d41-92ae-5e50f78b6a6d",
+      "claim_id": "C70",
+      "claim": "Genes such as shavenbaby add another layer of redundancy through long cis-regulatory regions containing multiple enhancers whose expression patterns overlap.",
+      "claim_type": "EXPLICIT",
+      "source": "Genes such as shavenbaby add another layer of redundancy on top of this through long cis-regulatory regions containing multiple enhancers whose expression patterns overlap.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "General observation about svb regulatory architecture",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:09:56.412050Z"
+    },
+    {
+      "id": "441fe286-1e9e-41f7-8f93-00eb5495b5ea",
+      "content_id": "117e104c-e954-4d41-92ae-5e50f78b6a6d",
+      "claim_id": "C71",
+      "claim": "Redundancy in enhancers ensures proper phenotype development when systems are subjected to stress.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous works have shown that this redundancy ensures proper phenotype development when systems are subjected to stress (Crocker et al., 2015; Frankel et al., 2010; Osterwalder et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:09:56.412050Z"
+    },
+    {
+      "id": "0ad8ac2b-8146-44e8-9834-c92f593283cf",
+      "content_id": "117e104c-e954-4d41-92ae-5e50f78b6a6d",
+      "claim_id": "C72",
+      "claim": "Deletion of the DG3 enhancer from svb does not lead to clear defects in ventral trichome formation unless the embryos are subjected to heat-induced stress.",
+      "claim_type": "EXPLICIT",
+      "source": "Deletion of the DG3 enhancer from svb did not lead to clear defects in ventral trichome formation unless the embryos were subjected to heat-induced stress, as shown here and previously with the deletion of 'shadow enhancers' (Hong et al., 2008) for lateral svb expression (Frankel et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data in this study and citation to Frankel et al., 2010",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:09:56.412050Z"
+    },
+    {
+      "id": "737145c0-96a8-4aa6-b4e6-56a9a092186b",
+      "content_id": "117e104c-e954-4d41-92ae-5e50f78b6a6d",
+      "claim_id": "C73",
+      "claim": "The DG3-deletion allele shows reduced transcriptional output even at normal temperature.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, we observed that the DG3-deletion allele showed reduced transcriptional output even at normal temperature.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by imaging data in Figure 3",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:09:56.412050Z"
+    },
+    {
+      "id": "3e037458-fbfb-4687-bb67-c720028c6c74",
+      "content_id": "117e104c-e954-4d41-92ae-5e50f78b6a6d",
+      "claim_id": "C74",
+      "claim": "Wild-type embryos do not show phenotypic defects under either normal or stressed conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Wild-type embryos did not show phenotypic defects under either normal or stressed conditions, but heat-induced stress led to slightly lower transcriptional output from the wild-type svb allele (Figure 6A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by phenotypic and molecular data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:09:56.412050Z"
+    },
+    {
+      "id": "3fb0b18c-1d78-47b6-865d-4418c0b4beb7",
+      "content_id": "117e104c-e954-4d41-92ae-5e50f78b6a6d",
+      "claim_id": "C75",
+      "claim": "Heat-induced stress leads to slightly lower transcriptional output from the wild-type svb allele.",
+      "claim_type": "EXPLICIT",
+      "source": "Wild-type embryos did not show phenotypic defects under either normal or stressed conditions, but heat-induced stress led to slightly lower transcriptional output from the wild-type svb allele (Figure 6A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by imaging data in Figure 3",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:09:56.412050Z"
+    },
+    {
+      "id": "15def894-cc71-4c49-a759-184f572b588a",
+      "content_id": "117e104c-e954-4d41-92ae-5e50f78b6a6d",
+      "claim_id": "C76",
+      "claim": "The mutant svb locus, starting with lower transcriptional output even under ideal conditions, drops below a threshold and the system fails under stress.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the mutant svb locus, starting with lower transcriptional output even under ideal conditions (Figure 6C), drops below a threshold and the system fails (Figure 6D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Interpretation of the data shown in Figure 6",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:09:56.412050Z"
+    },
+    {
+      "id": "9efd9197-98cd-46ff-b40e-0ccd3138f215",
+      "content_id": "117e104c-e954-4d41-92ae-5e50f78b6a6d",
+      "claim_id": "C77",
+      "claim": "Ubx concentration increases after a certain point are not clearly coupled to increases in svb transcriptional output.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that Ubx concentration and svb transcriptional output in the A1 segment initially have a weak positive correlation that quickly dissipated at higher Ubx concentrations and svb outputs. While this data must be interpreted with some caution, as multiple stages of the transcription cycle are included (initiation, elongation or termination), Ubx concentration increases after a certain point were not clearly coupled to increases in svb transcriptional output.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observation from correlation analysis in Figure 3C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:09:56.412050Z"
+    },
+    {
+      "id": "99cfbf32-867f-4cea-9e4e-a7727948f952",
+      "content_id": "117e104c-e954-4d41-92ae-5e50f78b6a6d",
+      "claim_id": "C78",
+      "claim": "Additional regulatory mechanisms beyond transcription factor retention could determine the final transcriptional output of the svb locus.",
+      "claim_type": "EXPLICIT",
+      "source": "Additional regulatory mechanisms could be at play beyond transcription factor retention that determines the final transcriptional output of the locus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculation based on the weak correlation observed",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:09:56.412050Z"
+    },
+    {
+      "id": "eb72c562-0640-4e67-a54e-1ba2f735955f",
+      "content_id": "117e104c-e954-4d41-92ae-5e50f78b6a6d",
+      "claim_id": "C79",
+      "claim": "svb accepts inputs from many additional transcription factors, especially in the other body segments.",
+      "claim_type": "EXPLICIT",
+      "source": "As svb also accepts inputs from many additional transcription factors (Stern and Orgogozo, 2008), especially in the other body segments, the total response of the system would also depend on many factors not observed in this study.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Stern and Orgogozo, 2008",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:09:56.412050Z"
+    },
+    {
+      "id": "80128aa4-940f-4bf1-a9bf-baa7f81914a7",
+      "content_id": "117e104c-e954-4d41-92ae-5e50f78b6a6d",
+      "claim_id": "C80",
+      "claim": "Transcription sites of reporter genes driven by minimal svb enhancers tend to colocalize with the endogenous svb locus when it is transcriptionally active.",
+      "claim_type": "EXPLICIT",
+      "source": "We previously observed that transcription sites of reporter genes driven by minimal svb enhancers tended to colocalize with the endogenous svb locus when it is transcriptionally active (Tsai et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Tsai et al., 2017",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:09:56.412050Z"
+    },
+    {
+      "id": "dd212c5a-7398-4386-8333-1d74574c36c2",
+      "content_id": "117e104c-e954-4d41-92ae-5e50f78b6a6d",
+      "claim_id": "C81",
+      "claim": "Entire cis-regulatory regions colocalize with the svb locus, implying that they potentially share a common microenvironment.",
+      "claim_type": "EXPLICIT",
+      "source": "This is true also for entire cis-regulatory regions, as we observed that the svb locus did the same with svbBAC, which implies that they potentially share a common microenvironment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from colocalization observations",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:09:56.412050Z"
+    },
+    {
+      "id": "7ca698ea-6ffb-4b9b-a62a-e396c6a83106",
+      "content_id": "117e104c-e954-4d41-92ae-5e50f78b6a6d",
+      "claim_id": "C82",
+      "claim": "Homologous regions pair over long distances, between homologous chromosomal arms.",
+      "claim_type": "EXPLICIT",
+      "source": "Homologous regions were shown to pair over long distances, between homologous chromosomal arms (Lim et al., 2018), translocated domains and even different chromosomes (Gemkow et al., 1998; Johnston and Desplan, 2014; Peifer and Bender, 1986).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to multiple studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:09:56.412050Z"
+    },
+    {
+      "id": "27c3d110-a7ae-42e4-882c-d3d2fb79f8c7",
+      "content_id": "117e104c-e954-4d41-92ae-5e50f78b6a6d",
+      "claim_id": "C83",
+      "claim": "Insulators have been described as important supporters of trans-interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "However, our constructs may not contain sites for structural elements such as insulators, which have been described as important supporters of trans-interactions (Postika et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Postika et al., 2018",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:09:56.412050Z"
+    },
+    {
+      "id": "9ac2c021-a15e-4c7a-bb3d-19adfe3d21f7",
+      "content_id": "117e104c-e954-4d41-92ae-5e50f78b6a6d",
+      "claim_id": "C84",
+      "claim": "The observations are in line with transcription-dependent associations of interchromosomal interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, our observations are in line with transcription-dependent associations of interchromosomal interactions (Branco and Pombo, 2006; Joyce et al., 2016; Lomvardas et al., 2006; Maass et al., 2018; Monahan et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to multiple studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:09:56.412050Z"
+    },
+    {
+      "id": "2b7a1f24-c93e-4770-9206-7acdca0a2e89",
+      "content_id": "117e104c-e954-4d41-92ae-5e50f78b6a6d",
+      "claim_id": "C85",
+      "claim": "Long range interactions may be driven, or reinforced, through shared microenvironments.",
+      "claim_type": "EXPLICIT",
+      "source": "It is possible that such long range interactions are driven, or reinforced, through shared microenvironments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculation about the mechanism of long-range interactions",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:09:56.412050Z"
+    },
+    {
+      "id": "6be548da-40de-4f2b-8bff-b1856d02dee5",
+      "content_id": "117e104c-e954-4d41-92ae-5e50f78b6a6d",
+      "claim_id": "C86",
+      "claim": "Colocalizing with a svbBAC increases the local Ubx concentration and transcriptional output of the DG3-deletion allele.",
+      "claim_type": "EXPLICIT",
+      "source": "High-resolution imaging showed that colocalizing with a svbBAC increases the local Ubx concentration and transcriptional output of the DG3-deletion allele (Figure 6E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by imaging data in Figure 4",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:09:56.412050Z"
+    },
+    {
+      "id": "95c07379-bfa4-4a70-b1ae-6ba197c39b8d",
+      "content_id": "117e104c-e954-4d41-92ae-5e50f78b6a6d",
+      "claim_id": "C87",
+      "claim": "Transcriptional microenvironments sequestered around large and related cis-regulatory regions in physical proximity can work in trans to increase transcriptional output of other genes, even on different chromosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "This supports a mechanism where transcriptional microenvironments sequestered around large and related cis-regulatory regions in physical proximity can work in trans to increase transcriptional output of other genes, even on different chromosomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Interpretation of the rescue data",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:09:56.412050Z"
+    },
+    {
+      "id": "d76b6586-dc7f-4fed-9844-296cdf5af706",
+      "content_id": "117e104c-e954-4d41-92ae-5e50f78b6a6d",
+      "claim_id": "C88",
+      "claim": "The introduction of a shorter reporter construct containing the DG3 enhancer alone does not rescue trichome expression perhaps because it is not able to effectively pair with the svb locus.",
+      "claim_type": "EXPLICIT",
+      "source": "The introduction of a shorter reporter construct containing the DG3 enhancer alone did not rescue trichome expression perhaps because it is not able to effectively pair with the svb locus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculation based on the negative result",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:09:56.412050Z"
+    },
+    {
+      "id": "323660f0-e052-4534-98fc-943a7c0cb16a",
+      "content_id": "117e104c-e954-4d41-92ae-5e50f78b6a6d",
+      "claim_id": "C90",
+      "claim": "Pairing is necessary but not sufficient for transvection in long-range interactions that are dependent on specific topologically associating domains (TADs).",
+      "claim_type": "EXPLICIT",
+      "source": "This is consistent with recent findings for long-range interactions that are dependent on specific topologically associating domains (TADs), where pairing is necessary but not sufficient for transvection (Viets et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Viets et al., 2018",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:09:56.412050Z"
+    },
+    {
+      "id": "233cb399-d10d-4661-ac14-b724b60512b9",
+      "content_id": "117e104c-e954-4d41-92ae-5e50f78b6a6d",
+      "claim_id": "C91",
+      "claim": "Embryos with the DG3 deletion allele and svbBAC cannot produce trichomes at the dorsal edges of the ventral trichome patches, where DG3 provides exclusive coverage.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, embryos with the DG3 deletion allele and svbBAC could not produce trichomes at the dorsal edges of the ventral trichome patches, where DG3 provides exclusive coverage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observation from phenotypic analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:09:56.412050Z"
+    },
+    {
+      "id": "45dd3669-1221-4bb9-94f9-2f1c99d9a356",
+      "content_id": "117e104c-e954-4d41-92ae-5e50f78b6a6d",
+      "claim_id": "C92",
+      "claim": "The rescue likely results from compensation from the additional ventral enhancers (E3 and 7) at the svb locus instead of the DG3 enhancer on the svbBAC driving svb expression in trans.",
+      "claim_type": "EXPLICIT",
+      "source": "As the rescue only occurred on regions where other ventral svb enhancers provided overlapping coverage, it likely is the result of compensation from the additional ventral enhancers (E3 and 7) at the svb locus instead of the DG3 enhancer on the svbBAC driving svb expression in trans.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from the spatial pattern of rescue",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:09:56.412050Z"
+    },
+    {
+      "id": "27344299-c359-4346-b1bd-2989a9dc2f93",
+      "content_id": "117e104c-e954-4d41-92ae-5e50f78b6a6d",
+      "claim_id": "C93",
+      "claim": "Interactions in trans may serve an auxiliary role through influencing the properties of the local transcriptional environments.",
+      "claim_type": "EXPLICIT",
+      "source": "Interactions in trans may serve an auxiliary role through influencing the properties of the local transcriptional environments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculation about the mechanism of trans interactions",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:09:56.412050Z"
+    },
+    {
+      "id": "5bf32a0a-75a9-4d15-bc46-0d3c64b257a3",
+      "content_id": "117e104c-e954-4d41-92ae-5e50f78b6a6d",
+      "claim_id": "C94",
+      "claim": "The relationship between svb transcriptional output and the number of cells fated to become trichomes is sigmoidal.",
+      "claim_type": "EXPLICIT",
+      "source": "Summarizing our observations, we hypothesize that the relationship between svb transcriptional output and the number of cells fated to become trichomes is sigmoidal (Figure 6, bottom panel).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Hypothesis proposed to explain the observations",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:09:56.412050Z"
+    },
+    {
+      "id": "b3b5ff83-744c-4376-b071-99ca793eba14",
+      "content_id": "117e104c-e954-4d41-92ae-5e50f78b6a6d",
+      "claim_id": "C95",
+      "claim": "Below a certain threshold, the number of trichomes drops with decreasing svb mRNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Below a certain threshold, the number of trichomes would drop with decreasing svb mRNA; however, any additional transcriptional output above this threshold (the green box in the figure) would not lead to significant changes in trichome production and would appear to be wild-type in phenotype.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Part of the sigmoidal relationship hypothesis",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:09:56.412050Z"
+    },
+    {
+      "id": "b5c5894c-c3f3-41ac-ab8e-281091fcf24f",
+      "content_id": "117e104c-e954-4d41-92ae-5e50f78b6a6d",
+      "claim_id": "C96",
+      "claim": "Any additional transcriptional output above a certain threshold would not lead to significant changes in trichome production and would appear to be wild-type in phenotype.",
+      "claim_type": "EXPLICIT",
+      "source": "Below a certain threshold, the number of trichomes would drop with decreasing svb mRNA; however, any additional transcriptional output above this threshold (the green box in the figure) would not lead to significant changes in trichome production and would appear to be wild-type in phenotype.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Part of the sigmoidal relationship hypothesis",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:09:56.412050Z"
+    },
+    {
+      "id": "85f246b6-fc59-4b68-86e8-0c42c53223c3",
+      "content_id": "117e104c-e954-4d41-92ae-5e50f78b6a6d",
+      "claim_id": "C97",
+      "claim": "The cis-regulatory region of wild-type svb under ideal conditions likely already saturates the system, as evidenced by the lack of change in Ubx concentration and trichome numbers even with the addition of svbBAC.",
+      "claim_type": "EXPLICIT",
+      "source": "The cis-regulatory region of wild-type svb under ideal conditions likely already saturates the system, as evidenced by the lack of change in Ubx concentration and trichome numbers even with the addition of svbBAC (Figure 6F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inference from the lack of effect of adding svbBAC to wild-type",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:09:56.412050Z"
+    },
+    {
+      "id": "b9a385c3-a544-49b4-acb1-24a7d9aa5d56",
+      "content_id": "117e104c-e954-4d41-92ae-5e50f78b6a6d",
+      "claim_id": "C98",
+      "claim": "Operating under saturation renders the svb system relatively insensitive to changes in svb transcription.",
+      "claim_type": "EXPLICIT",
+      "source": "Although operating under saturation renders this system relatively insensitive to changes in svb transcription, the risk of developing defective phenotypes when conditions are no longer ideal likely selected for this strategy to buffer against stresses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference about the evolutionary advantage of the system design",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:09:56.412050Z"
+    },
+    {
+      "id": "6e19c6f6-2608-4948-af0a-72cad46f9e23",
+      "content_id": "117e104c-e954-4d41-92ae-5e50f78b6a6d",
+      "claim_id": "C99",
+      "claim": "The risk of developing defective phenotypes when conditions are no longer ideal likely selected for the strategy of operating under saturation to buffer against stresses.",
+      "claim_type": "EXPLICIT",
+      "source": "Although operating under saturation renders this system relatively insensitive to changes in svb transcription, the risk of developing defective phenotypes when conditions are no longer ideal likely selected for this strategy to buffer against stresses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Evolutionary speculation about the system design",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:09:56.412050Z"
+    },
+    {
+      "id": "d01230f4-e4f3-4b7c-a0da-abc49467e7fd",
+      "content_id": "117e104c-e954-4d41-92ae-5e50f78b6a6d",
+      "claim_id": "C100",
+      "claim": "The system remains phenotypically robust and develops the same number of trichomes despite fluctuations in transcriptional outputs.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, the system remains phenotypically robust and develops the same number of trichomes despite fluctuations in transcriptional outputs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of the robustness observations",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:09:56.412050Z"
+    },
+    {
+      "id": "2bdb589c-beee-4236-85be-749bcd8efd20",
+      "content_id": "117e104c-e954-4d41-92ae-5e50f78b6a6d",
+      "claim_id": "C101",
+      "claim": "Transcriptional microenvironments could span multiple enhancers that share similar transcription factor binding sites.",
+      "claim_type": "EXPLICIT",
+      "source": "By investigating the mechanisms of how correct transcriptional regulation is maintained under stress using a DG3-deletion allele of svb, we have shown that transcriptional microenvironments could span multiple enhancers that share similar transcription factor binding sites.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion from the study",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:09:56.412050Z"
+    },
+    {
+      "id": "68a2227c-c939-4a89-9484-d41a4e2dc851",
+      "content_id": "117e104c-e954-4d41-92ae-5e50f78b6a6d",
+      "claim_id": "C102",
+      "claim": "Microenvironments of transcription factors could form the protein core of transcription factor 'hubs' that have been proposed to form through phase-separation mediated through protein-protein interactions between disordered domains.",
+      "claim_type": "EXPLICIT",
+      "source": "These microenvironments of transcription factors could form the protein core of transcription factor 'hubs' that have been proposed to form through phase-separation mediated through protein-protein interactions between disordered domains (Cisse et al., 2013; Furlong and Levine, 2018; Ghavi-Helm et al., 2014; Mir et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculation supported by citations to hub models",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:09:56.412050Z"
+    },
+    {
+      "id": "86e63a22-3e27-4dad-8f92-3fc088e891c0",
+      "content_id": "117e104c-e954-4d41-92ae-5e50f78b6a6d",
+      "claim_id": "C103",
+      "claim": "Transcriptional microenvironments add another layer of redundancy on top of using multiple enhancers with overlapping expression patterns in a cis-regulatory region to ensure a sufficient margin to buffer against the negative effects of environmental stresses.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, they add another layer of redundancy on top of using multiple enhancers with overlapping expression patterns in a cis-regulatory region to ensure a sufficient margin to buffer against the negative effects of environmental stresses (Frankel et al., 2010; Perry et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion supported by citations",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:09:56.412050Z"
+    },
+    {
+      "id": "2edeee33-bff7-4c5c-a2b9-8921c6c6c35e",
+      "content_id": "117e104c-e954-4d41-92ae-5e50f78b6a6d",
+      "claim_id": "C104",
+      "claim": "This extra margin of safety preserves phenotypical development even when environmental conditions are not ideal.",
+      "claim_type": "EXPLICIT",
+      "source": "This extra margin of safety preserves phenotypical development even when environmental conditions are not ideal.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion about the functional significance",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:09:56.412050Z"
+    },
+    {
+      "id": "0b36a5e3-78dc-4f74-a921-98a1ab7300fa",
+      "content_id": "117e104c-e954-4d41-92ae-5e50f78b6a6d",
+      "claim_id": "C105",
+      "claim": "Integrating multiple noisy and low-affinity elements into a coherent and synergistic network would reduce the variance stemming from the transient and stochastic transcription factor binding dynamics observed in eukaryotic cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Integrating multiple noisy and low-affinity elements into a coherent and synergistic network would also reduce the variance stemming from the transient and stochastic transcription factor binding dynamics observed in eukaryotic cells (Cisse et al., 2013; Ghavi-Helm et al., 2014; Mir et al., 2017; Tsai et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference supported by citations",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:09:56.412050Z"
+    },
+    {
+      "id": "da14cbe3-89a7-4800-a876-c2a0ebaf8314",
+      "content_id": "117e104c-e954-4d41-92ae-5e50f78b6a6d",
+      "claim_id": "C106",
+      "claim": "Specialized transcriptional microenvironments could be a critical element to ensure that gene expression occurs specifically and consistently in every embryo.",
+      "claim_type": "EXPLICIT",
+      "source": "In sum, specialized transcriptional microenvironments could be a critical element to ensure that gene expression occurs specifically and consistently in every embryo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion from the study",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:09:56.412050Z"
+    },
+    {
+      "id": "c7cf765f-bddc-4afa-b015-b13273d169bf",
+      "content_id": "117e104c-e954-4d41-92ae-5e50f78b6a6d",
+      "claim_id": "C107",
+      "claim": "Shadow enhancers are widespread features of gene regulatory networks.",
+      "claim_type": "EXPLICIT",
+      "source": "Given that shadow enhancers are widespread features of gene regulatory networks (Cannav\u00f2 et al., 2016; Osterwalder et al., 2018), it is likely that high local concentrations of transcription factors are a widespread feature that provides an effective regulatory buffer to prevent deleterious phenotypic consequences to genetic and environmental perturbations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Cannav\u00f2 et al., 2016 and Osterwalder et al., 2018",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:09:56.412050Z"
+    },
+    {
+      "id": "f3ebc1f6-2137-499e-ac2c-ec8d5d15c041",
+      "content_id": "117e104c-e954-4d41-92ae-5e50f78b6a6d",
+      "claim_id": "C108",
+      "claim": "High local concentrations of transcription factors are likely a widespread feature that provides an effective regulatory buffer to prevent deleterious phenotypic consequences to genetic and environmental perturbations.",
+      "claim_type": "EXPLICIT",
+      "source": "Given that shadow enhancers are widespread features of gene regulatory networks (Cannav\u00f2 et al., 2016; Osterwalder et al., 2018), it is likely that high local concentrations of transcription factors are a widespread feature that provides an effective regulatory buffer to prevent deleterious phenotypic consequences to genetic and environmental perturbations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from the widespread nature of shadow enhancers and the findings of this study",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:09:56.412050Z"
+    },
+    {
+      "id": "48f2df6a-435b-4727-b78e-c63a320830c9",
+      "content_id": "117e104c-e954-4d41-92ae-5e50f78b6a6d",
+      "claim_id": "C109",
+      "claim": "The ChIP profile for Ubx around the svb cis-regulatory region is from whole Drosophila melanogaster embryos between stages 10 and 12.",
+      "claim_type": "EXPLICIT",
+      "source": "The ChIP profile for Ubx around the svb cis-regulatory region is from Choo et al. (2011), using whole Drosophila melanogaster embryos between stages 10 and 12.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Citation to the source of ChIP data",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:09:56.412050Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "aba76655-e6c8-4895-92da-88e2b49cc985",
+      "content_id": "117e104c-e954-4d41-92ae-5e50f78b6a6d",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The DG3 enhancer is Ubx-responsive in the A1 segment. In wild-type embryos, DG3 drives expression in A1-A7 and T1-T3. Loss of Ubx eliminates DG3 expression in A1 and reduces it in A2-A7, while ubiquitous Ubx expression increases DG3 levels and induces ectopic expression in thoracic segments.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C38 are well-supported by reporter gene expression data shown in Figures 1C-E. The experiments systematically test DG3 response to Ubx manipulation (loss-of-function and gain-of-function), providing clear evidence that DG3 is Ubx-responsive, particularly in the A1 segment.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:09:56.412050Z"
+    },
+    {
+      "id": "c59a585a-92c8-401f-ba83-0ca63e633e4c",
+      "content_id": "117e104c-e954-4d41-92ae-5e50f78b6a6d",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Deletion of the DG3 enhancer (Df(X)svb108) causes temperature-sensitive trichome defects. At 25\u00b0C, the deletion shows no clear phenotype in overlapping enhancer regions but loses trichomes at dorsal edges where DG3 provides exclusive coverage. At 32\u00b0C, trichome numbers are significantly reduced in A1 and A2 segments.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C40-C47 are strongly supported by quantitative trichome counting data (Figures 2B-I, Figure 2\u2014figure supplement 1). The temperature-dependent phenotype is clearly demonstrated with appropriate statistical testing (p<0.01). The spatial specificity of defects correlates with enhancer expression patterns.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:09:56.412050Z"
+    },
+    {
+      "id": "b787f53c-6313-4e5a-b79d-2a2145ac2cc1",
+      "content_id": "117e104c-e954-4d41-92ae-5e50f78b6a6d",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The DG3 deletion allele shows reduced Ubx concentration and transcriptional output at transcription sites, particularly under heat stress. At 25\u00b0C, the deletion shows slightly lower Ubx and transcription compared to wild-type. At 32\u00b0C, both Ubx concentration and transcriptional output decrease further. A weak positive correlation (R\u00b2=0.43) exists between Ubx concentration and svb transcriptional output.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4-C5, C48-C56 are supported by high-resolution confocal microscopy data (Figure 3). The quantification methods are described, and statistical comparisons are provided. However, the weak correlation (R\u00b2=0.43) and the authors' own caution about interpreting data from mixed transcription cycle stages suggest the relationship between Ubx concentration and output is more complex than a simple linear model.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:09:56.412050Z"
+    },
+    {
+      "id": "e36bd5e8-8325-4f35-b8ff-14cd6f358f67",
+      "content_id": "117e104c-e954-4d41-92ae-5e50f78b6a6d",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The full svb cis-regulatory region on a BAC (svbBAC-dsRed) inserted on chromosome 2 colocalizes with the endogenous svb locus on chromosome X. When colocalized (within 360 nm), both Ubx concentration and svb transcriptional output are restored to wild-type levels in the DG3 deletion background. This effect is specific, as an unrelated gene (diBAC-gfp) does not show colocalization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6-C8, C60, C62-C64 are well-supported by imaging data (Figure 4D-H). The colocalization is quantified with a defined distance threshold (360 nm), and the rescue of molecular phenotypes is demonstrated with appropriate controls. The clustering analysis (Figure 4H) strengthens the conclusion that colocalization correlates with rescue.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:09:56.412050Z"
+    },
+    {
+      "id": "e40616c1-6721-462e-8c08-30eedabd4c23",
+      "content_id": "117e104c-e954-4d41-92ae-5e50f78b6a6d",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Introduction of svbBAC partially rescues the trichome phenotype of the DG3 deletion at 32\u00b0C in regions with overlapping enhancer coverage, but does not rescue trichomes at dorsal edges where only DG3 provides coverage. A construct with DG3 alone does not rescue the phenotype.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9, C66-C68 are supported by trichome counting data (Figure 5). The partial rescue is statistically significant (p<0.05), and the spatial specificity of rescue (only in overlapping regions) is consistent with the enhancer expression patterns. The negative result with DG3 alone provides important mechanistic insight.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:09:56.412050Z"
+    },
+    {
+      "id": "7beec2c1-d769-457d-be7c-2b99e51bc9e4",
+      "content_id": "117e104c-e954-4d41-92ae-5e50f78b6a6d",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Multiple enhancers reinforce a local transcriptional hub through shared microenvironments, providing a mechanism for phenotypic robustness. Transcriptional microenvironments can span multiple enhancers with similar transcription factor binding sites and can work in trans to increase transcriptional output, buffering against environmental stress and genetic perturbations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10, C24-C25, C87, C101, C103-C104, C106 represent the main mechanistic conclusion of the paper. This is well-supported by the convergence of multiple lines of evidence: (1) temperature-sensitive phenotype of DG3 deletion, (2) reduced Ubx concentration and transcription in deletion, (3) colocalization of svbBAC with svb locus, (4) rescue of molecular and phenotypic defects upon colocalization. The model is internally consistent with all experimental observations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:09:56.412050Z"
+    },
+    {
+      "id": "50d1173b-dfd1-429c-b080-70f3557ab17f",
+      "content_id": "117e104c-e954-4d41-92ae-5e50f78b6a6d",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The svbBAC construct drives dsRed instead of svb and recapitulates svb expression patterns in a Ubx-responsive manner. Addition of svbBAC to wild-type does not alter trichome numbers or Ubx levels.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57-C59, C65 describe the validation of the svbBAC construct. The data in Figures 4B-C and Figure 4\u2014figure supplement 1 demonstrate that the construct behaves as expected. The lack of effect in wild-type background (C65) is an important control showing the system is already saturated.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:09:56.412050Z"
+    },
+    {
+      "id": "20258bf6-4953-4fab-93e8-615ad7f7dd62",
+      "content_id": "117e104c-e954-4d41-92ae-5e50f78b6a6d",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The authors propose a sigmoidal relationship between svb transcriptional output and trichome number, where wild-type operates in a saturated regime above a threshold. The DG3 deletion starts with lower output and drops below threshold under stress. This saturation strategy buffers against stress but was likely selected to prevent defects under non-ideal conditions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C76-C77, C94-C100 present a model to explain the observations. While the model is consistent with the data (wild-type shows no phenotype despite reduced transcription at 32\u00b0C; mutant shows phenotype), the sigmoidal relationship is hypothetical and not directly tested. The weak correlation between Ubx and transcription (R\u00b2=0.43) and the authors' own caution about interpreting mixed transcription cycle stages suggest additional complexity. The model is plausible but requires further validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:09:56.412050Z"
+    },
+    {
+      "id": "d388bc11-4279-457f-b160-39ae9732f123",
+      "content_id": "117e104c-e954-4d41-92ae-5e50f78b6a6d",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The DG3 enhancer alone does not rescue the phenotype, possibly because it cannot effectively pair with the svb locus. The rescue by svbBAC occurs only in regions with overlapping enhancer coverage, suggesting compensation by E3 and 7 enhancers rather than trans-activation by DG3 on svbBAC. Trans interactions may serve an auxiliary role by influencing local transcriptional environments.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C88, C90-C93 interpret the mechanistic basis of the partial rescue. The interpretation is well-supported by the spatial pattern of rescue (only where E3 and 7 overlap, not where DG3 is exclusive) and the negative result with DG3 alone. The citation to Viets et al. 2018 regarding TAD-dependent transvection provides appropriate context.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:09:56.412050Z"
+    },
+    {
+      "id": "f29549f1-df96-4025-8f17-f29ea239caf9",
+      "content_id": "117e104c-e954-4d41-92ae-5e50f78b6a6d",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Prior work from the authors showed that low-affinity Ubx-responsive svb enhancers drive expression using localized transcriptional microenvironments with high Ubx concentrations, and that active svb enhancers on different chromosomes tend to colocalize. The current work extends these observations to full cis-regulatory regions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C2, C18-C19, C22-C23, C27-C28, C80-C81 summarize prior work (Tsai et al., 2017) that provides the foundation for the current study. These are appropriately cited and the current work builds logically on these findings. The extension to full cis-regulatory regions (C81) is supported by the svbBAC colocalization data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:09:56.412050Z"
+    },
+    {
+      "id": "c19bd1e3-654b-4199-b224-5ca222b7d79a",
+      "content_id": "117e104c-e954-4d41-92ae-5e50f78b6a6d",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The three ventral svb enhancers (DG3, E3, 7) each produce ventral stripes in A1-A7 with different but partially overlapping expression patterns and different Ubx ChIP enrichment profiles. The Df(X)svb108 deletion encompasses DG2, DG3, and Z, of which only DG3 is a ventral enhancer.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29-C31, C39 describe the basic characteristics of the enhancers and deletion allele. These are supported by expression data (Figure 1B), ChIP data (Figure 1\u2014figure supplement 1), and the schematic in Figure 2A. This provides essential context for interpreting the deletion phenotype.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:09:56.412050Z"
+    },
+    {
+      "id": "01bf5399-6c83-4226-9f6f-935e6a5ec00a",
+      "content_id": "117e104c-e954-4d41-92ae-5e50f78b6a6d",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Background knowledge and literature context: Transcriptional regulation controls cell fate during embryogenesis; transcription factor binding is transient; many developmental enhancers use low-affinity binding sites; Hox factors have similar binding preferences; svb drives trichome formation; shadow enhancers are widespread and provide robustness; homologous regions can pair over long distances.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11-C17, C20-C21, C26, C69-C71, C79, C82-C84, C107 provide background knowledge and literature context. These are appropriately cited and represent established knowledge in the field. They provide necessary context for understanding the significance of the current work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:09:56.412050Z"
+    },
+    {
+      "id": "1370de63-8bc1-4834-8b55-b15da7618471",
+      "content_id": "117e104c-e954-4d41-92ae-5e50f78b6a6d",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The DG3 deletion does not cause clear trichome defects unless embryos are heat-stressed, consistent with prior work on shadow enhancers. However, the deletion shows reduced transcriptional output even at normal temperature. Wild-type embryos show no phenotypic defects under stress but have slightly lower transcriptional output at 32\u00b0C.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C72-C75 summarize key observations that motivate the mechanistic model. These are well-supported by the phenotypic data (Figure 2) and molecular data (Figure 3). The comparison to prior work on shadow enhancers (Frankel et al., 2010) is appropriate.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:09:56.412050Z"
+    },
+    {
+      "id": "17b75d88-9354-4b34-a2d1-fefc290d8b28",
+      "content_id": "117e104c-e954-4d41-92ae-5e50f78b6a6d",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Additional regulatory mechanisms beyond transcription factor retention may determine svb transcriptional output. Long-range interactions may be driven or reinforced through shared microenvironments. These microenvironments could form the protein core of transcription factor 'hubs' proposed to form through phase-separation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C78, C85, C102 are speculative interpretations about mechanisms. While consistent with the data and supported by citations to hub/phase-separation models, these mechanisms are not directly tested in this study. The weak correlation between Ubx and transcription (C78) suggests additional complexity, but the specific mechanisms remain to be determined.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:09:56.412050Z"
+    },
+    {
+      "id": "f05a705a-7c2a-4866-bebd-61def280fadc",
+      "content_id": "117e104c-e954-4d41-92ae-5e50f78b6a6d",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Integrating multiple low-affinity elements into a synergistic network reduces variance from stochastic transcription factor binding. High local transcription factor concentrations likely provide widespread regulatory buffering against genetic and environmental perturbations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C105, C108 extend the findings to broader principles. C105 is a reasonable inference supported by citations to stochastic binding dynamics. C108 is supported by the widespread nature of shadow enhancers (C107) and the findings of this study, though direct evidence for other systems is not provided here.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:09:56.412050Z"
+    },
+    {
+      "id": "1e484144-921a-4b95-befd-ff33efac670e",
+      "content_id": "117e104c-e954-4d41-92ae-5e50f78b6a6d",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The Ubx ChIP data around the svb locus is from whole embryos at stages 10-12 (Choo et al., 2011).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C109 is a methodological detail appropriately cited. This is important for interpreting the ChIP enrichment profiles shown in Figure 1\u2014figure supplement 1.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:09:56.412050Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "d5b4b0df-5f7c-4dd0-86e4-32d553f72728",
+      "result_id": "aba76655-e6c8-4895-92da-88e2b49cc985"
+    },
+    {
+      "claim_id": "2dd111c8-407d-4bc6-87c0-19c311ca3f81",
+      "result_id": "aba76655-e6c8-4895-92da-88e2b49cc985"
+    },
+    {
+      "claim_id": "68a02385-1c81-40d5-8be3-fa9d332337e8",
+      "result_id": "aba76655-e6c8-4895-92da-88e2b49cc985"
+    },
+    {
+      "claim_id": "df739053-57f7-496e-9aa8-274759dcd9e3",
+      "result_id": "aba76655-e6c8-4895-92da-88e2b49cc985"
+    },
+    {
+      "claim_id": "b46fb248-849a-49ce-bf71-2913f1ea5279",
+      "result_id": "aba76655-e6c8-4895-92da-88e2b49cc985"
+    },
+    {
+      "claim_id": "710d2501-a4c0-4f9b-a5d0-fdb6f69afe37",
+      "result_id": "aba76655-e6c8-4895-92da-88e2b49cc985"
+    },
+    {
+      "claim_id": "0269720f-0cf8-4e9a-ae02-f880100f3225",
+      "result_id": "aba76655-e6c8-4895-92da-88e2b49cc985"
+    },
+    {
+      "claim_id": "733d28b1-22f9-4925-9a14-d62247711059",
+      "result_id": "c59a585a-92c8-401f-ba83-0ca63e633e4c"
+    },
+    {
+      "claim_id": "16b2f87e-1ebc-4993-b0c5-96dcac7c6952",
+      "result_id": "c59a585a-92c8-401f-ba83-0ca63e633e4c"
+    },
+    {
+      "claim_id": "b1eb4429-c8fd-4add-be6f-2a43cce0323e",
+      "result_id": "c59a585a-92c8-401f-ba83-0ca63e633e4c"
+    },
+    {
+      "claim_id": "368c660c-7892-4608-8db7-b647dc69a620",
+      "result_id": "c59a585a-92c8-401f-ba83-0ca63e633e4c"
+    },
+    {
+      "claim_id": "bcb539a0-2c6d-48ee-bdd0-17a116e34cc5",
+      "result_id": "c59a585a-92c8-401f-ba83-0ca63e633e4c"
+    },
+    {
+      "claim_id": "ce55647c-c28d-48d4-9b34-4788d768be28",
+      "result_id": "c59a585a-92c8-401f-ba83-0ca63e633e4c"
+    },
+    {
+      "claim_id": "47bf415e-ca89-4361-b59e-862e641a1c10",
+      "result_id": "c59a585a-92c8-401f-ba83-0ca63e633e4c"
+    },
+    {
+      "claim_id": "e2a433fb-5852-4dee-bf42-a57b2a231c9c",
+      "result_id": "c59a585a-92c8-401f-ba83-0ca63e633e4c"
+    },
+    {
+      "claim_id": "b9160fa4-0f0b-482f-8216-d0fa6ad9537a",
+      "result_id": "c59a585a-92c8-401f-ba83-0ca63e633e4c"
+    },
+    {
+      "claim_id": "b526d304-e96e-4c60-a4ba-2d7935becf8b",
+      "result_id": "b787f53c-6313-4e5a-b79d-2a2145ac2cc1"
+    },
+    {
+      "claim_id": "623762c7-7e1d-44a0-b69a-ec877cc8f0d3",
+      "result_id": "b787f53c-6313-4e5a-b79d-2a2145ac2cc1"
+    },
+    {
+      "claim_id": "94bd6257-0071-4b29-8987-a37953c2bd5f",
+      "result_id": "b787f53c-6313-4e5a-b79d-2a2145ac2cc1"
+    },
+    {
+      "claim_id": "82c6a2f2-5a74-43bc-9332-249a42d2ef2f",
+      "result_id": "b787f53c-6313-4e5a-b79d-2a2145ac2cc1"
+    },
+    {
+      "claim_id": "a22ed7a8-c11c-4387-aefe-2e27e653319d",
+      "result_id": "b787f53c-6313-4e5a-b79d-2a2145ac2cc1"
+    },
+    {
+      "claim_id": "df61baba-41c5-4886-918b-d9367b2b7725",
+      "result_id": "b787f53c-6313-4e5a-b79d-2a2145ac2cc1"
+    },
+    {
+      "claim_id": "7ff974fa-4162-4651-be30-9d421098edda",
+      "result_id": "b787f53c-6313-4e5a-b79d-2a2145ac2cc1"
+    },
+    {
+      "claim_id": "a8526bfd-e4bf-4cb0-98f6-b88939c0b332",
+      "result_id": "b787f53c-6313-4e5a-b79d-2a2145ac2cc1"
+    },
+    {
+      "claim_id": "304cc446-7422-4df9-90d3-d4fd35140b9c",
+      "result_id": "b787f53c-6313-4e5a-b79d-2a2145ac2cc1"
+    },
+    {
+      "claim_id": "0bc1dceb-05e1-43c4-bb0a-fc0ccff56ca0",
+      "result_id": "b787f53c-6313-4e5a-b79d-2a2145ac2cc1"
+    },
+    {
+      "claim_id": "c60ef549-f795-4fd2-a6a0-d1019369be15",
+      "result_id": "b787f53c-6313-4e5a-b79d-2a2145ac2cc1"
+    },
+    {
+      "claim_id": "6c9bde0e-f3e1-49a4-ba1d-ba948b2d9d12",
+      "result_id": "e36bd5e8-8325-4f35-b8ff-14cd6f358f67"
+    },
+    {
+      "claim_id": "65c93aaf-a232-4e00-8959-74433f8f9ce9",
+      "result_id": "e36bd5e8-8325-4f35-b8ff-14cd6f358f67"
+    },
+    {
+      "claim_id": "a5f9c971-86b9-4460-a712-e92007a647d4",
+      "result_id": "e36bd5e8-8325-4f35-b8ff-14cd6f358f67"
+    },
+    {
+      "claim_id": "aa257f99-865d-4bff-92ec-38b20ed1d5b4",
+      "result_id": "e36bd5e8-8325-4f35-b8ff-14cd6f358f67"
+    },
+    {
+      "claim_id": "f2e17e39-44e1-429d-b554-428dea41d8d3",
+      "result_id": "e36bd5e8-8325-4f35-b8ff-14cd6f358f67"
+    },
+    {
+      "claim_id": "c1364309-08be-48fd-ba12-6db2f9d97e9d",
+      "result_id": "e36bd5e8-8325-4f35-b8ff-14cd6f358f67"
+    },
+    {
+      "claim_id": "277bc025-bcfa-43ab-b36e-53e67117f90d",
+      "result_id": "e36bd5e8-8325-4f35-b8ff-14cd6f358f67"
+    },
+    {
+      "claim_id": "41b006d1-6ff4-4db5-b8bf-e5cb51bd179e",
+      "result_id": "e40616c1-6721-462e-8c08-30eedabd4c23"
+    },
+    {
+      "claim_id": "8173edf8-5177-47a4-ba0b-24de98c6c5bb",
+      "result_id": "e40616c1-6721-462e-8c08-30eedabd4c23"
+    },
+    {
+      "claim_id": "1e0865d3-aae8-45da-ba3d-5320bd1ebbdf",
+      "result_id": "e40616c1-6721-462e-8c08-30eedabd4c23"
+    },
+    {
+      "claim_id": "b1843851-c76b-446f-8d34-5b5e967b82d2",
+      "result_id": "e40616c1-6721-462e-8c08-30eedabd4c23"
+    },
+    {
+      "claim_id": "c745322c-c446-47e4-825a-93ee55e876a0",
+      "result_id": "7beec2c1-d769-457d-be7c-2b99e51bc9e4"
+    },
+    {
+      "claim_id": "44639f64-1fdb-431f-ad6e-ae005dc9067c",
+      "result_id": "7beec2c1-d769-457d-be7c-2b99e51bc9e4"
+    },
+    {
+      "claim_id": "192c0915-8ad4-4d10-a0dc-29ce6e5669a5",
+      "result_id": "7beec2c1-d769-457d-be7c-2b99e51bc9e4"
+    },
+    {
+      "claim_id": "95c07379-bfa4-4a70-b1ae-6ba197c39b8d",
+      "result_id": "7beec2c1-d769-457d-be7c-2b99e51bc9e4"
+    },
+    {
+      "claim_id": "2bdb589c-beee-4236-85be-749bcd8efd20",
+      "result_id": "7beec2c1-d769-457d-be7c-2b99e51bc9e4"
+    },
+    {
+      "claim_id": "86e63a22-3e27-4dad-8f92-3fc088e891c0",
+      "result_id": "7beec2c1-d769-457d-be7c-2b99e51bc9e4"
+    },
+    {
+      "claim_id": "2edeee33-bff7-4c5c-a2b9-8921c6c6c35e",
+      "result_id": "7beec2c1-d769-457d-be7c-2b99e51bc9e4"
+    },
+    {
+      "claim_id": "da14cbe3-89a7-4800-a876-c2a0ebaf8314",
+      "result_id": "7beec2c1-d769-457d-be7c-2b99e51bc9e4"
+    },
+    {
+      "claim_id": "823081d4-f9ce-4e4a-97cc-6b6ca436a990",
+      "result_id": "50d1173b-dfd1-429c-b080-70f3557ab17f"
+    },
+    {
+      "claim_id": "c3635027-2cc5-459e-8154-81ce61a161ff",
+      "result_id": "50d1173b-dfd1-429c-b080-70f3557ab17f"
+    },
+    {
+      "claim_id": "72986cfb-13ad-407d-b102-ce91ca808372",
+      "result_id": "50d1173b-dfd1-429c-b080-70f3557ab17f"
+    },
+    {
+      "claim_id": "3ac2062b-f0ea-4747-afa6-458f902b36a4",
+      "result_id": "50d1173b-dfd1-429c-b080-70f3557ab17f"
+    },
+    {
+      "claim_id": "15def894-cc71-4c49-a759-184f572b588a",
+      "result_id": "20258bf6-4953-4fab-93e8-615ad7f7dd62"
+    },
+    {
+      "claim_id": "9efd9197-98cd-46ff-b40e-0ccd3138f215",
+      "result_id": "20258bf6-4953-4fab-93e8-615ad7f7dd62"
+    },
+    {
+      "claim_id": "5bf32a0a-75a9-4d15-bc46-0d3c64b257a3",
+      "result_id": "20258bf6-4953-4fab-93e8-615ad7f7dd62"
+    },
+    {
+      "claim_id": "b3b5ff83-744c-4376-b071-99ca793eba14",
+      "result_id": "20258bf6-4953-4fab-93e8-615ad7f7dd62"
+    },
+    {
+      "claim_id": "b5c5894c-c3f3-41ac-ab8e-281091fcf24f",
+      "result_id": "20258bf6-4953-4fab-93e8-615ad7f7dd62"
+    },
+    {
+      "claim_id": "85f246b6-fc59-4b68-86e8-0c42c53223c3",
+      "result_id": "20258bf6-4953-4fab-93e8-615ad7f7dd62"
+    },
+    {
+      "claim_id": "b9a385c3-a544-49b4-acb1-24a7d9aa5d56",
+      "result_id": "20258bf6-4953-4fab-93e8-615ad7f7dd62"
+    },
+    {
+      "claim_id": "6e19c6f6-2608-4948-af0a-72cad46f9e23",
+      "result_id": "20258bf6-4953-4fab-93e8-615ad7f7dd62"
+    },
+    {
+      "claim_id": "d01230f4-e4f3-4b7c-a0da-abc49467e7fd",
+      "result_id": "20258bf6-4953-4fab-93e8-615ad7f7dd62"
+    },
+    {
+      "claim_id": "d76b6586-dc7f-4fed-9844-296cdf5af706",
+      "result_id": "d388bc11-4279-457f-b160-39ae9732f123"
+    },
+    {
+      "claim_id": "323660f0-e052-4534-98fc-943a7c0cb16a",
+      "result_id": "d388bc11-4279-457f-b160-39ae9732f123"
+    },
+    {
+      "claim_id": "233cb399-d10d-4661-ac14-b724b60512b9",
+      "result_id": "d388bc11-4279-457f-b160-39ae9732f123"
+    },
+    {
+      "claim_id": "45dd3669-1221-4bb9-94f9-2f1c99d9a356",
+      "result_id": "d388bc11-4279-457f-b160-39ae9732f123"
+    },
+    {
+      "claim_id": "27344299-c359-4346-b1bd-2989a9dc2f93",
+      "result_id": "d388bc11-4279-457f-b160-39ae9732f123"
+    },
+    {
+      "claim_id": "6b5defda-66f2-4e47-aff1-a36a9a69d1c8",
+      "result_id": "f29549f1-df96-4025-8f17-f29ea239caf9"
+    },
+    {
+      "claim_id": "624b2a9c-109b-4416-8128-cd61043af420",
+      "result_id": "f29549f1-df96-4025-8f17-f29ea239caf9"
+    },
+    {
+      "claim_id": "d82ec23b-a242-445b-9bd6-dd8188e693e3",
+      "result_id": "f29549f1-df96-4025-8f17-f29ea239caf9"
+    },
+    {
+      "claim_id": "5fbd9571-d8fe-4070-8eaf-e0e216a701e8",
+      "result_id": "f29549f1-df96-4025-8f17-f29ea239caf9"
+    },
+    {
+      "claim_id": "c6d3e96b-ff6e-4513-87c7-756da921fb71",
+      "result_id": "f29549f1-df96-4025-8f17-f29ea239caf9"
+    },
+    {
+      "claim_id": "724e3ea4-45db-4b5b-bb9d-6864da3b6c7e",
+      "result_id": "f29549f1-df96-4025-8f17-f29ea239caf9"
+    },
+    {
+      "claim_id": "e52616b7-76b6-4f11-9df2-a5505d3edd68",
+      "result_id": "f29549f1-df96-4025-8f17-f29ea239caf9"
+    },
+    {
+      "claim_id": "1d9dd2d5-2e27-424b-b99e-2def84e69e70",
+      "result_id": "f29549f1-df96-4025-8f17-f29ea239caf9"
+    },
+    {
+      "claim_id": "80128aa4-940f-4bf1-a9bf-baa7f81914a7",
+      "result_id": "f29549f1-df96-4025-8f17-f29ea239caf9"
+    },
+    {
+      "claim_id": "dd212c5a-7398-4386-8333-1d74574c36c2",
+      "result_id": "f29549f1-df96-4025-8f17-f29ea239caf9"
+    },
+    {
+      "claim_id": "1de6dfe7-cda7-4ab0-a8c7-afce9a1db8a9",
+      "result_id": "c19bd1e3-654b-4199-b224-5ca222b7d79a"
+    },
+    {
+      "claim_id": "2cd20923-1a32-476b-af1e-ac7bf22036f5",
+      "result_id": "c19bd1e3-654b-4199-b224-5ca222b7d79a"
+    },
+    {
+      "claim_id": "71e5e1ff-ca7a-4248-9021-39b1c3b1d7d8",
+      "result_id": "c19bd1e3-654b-4199-b224-5ca222b7d79a"
+    },
+    {
+      "claim_id": "140b6b52-6594-4987-af1f-904bf206a9d4",
+      "result_id": "c19bd1e3-654b-4199-b224-5ca222b7d79a"
+    },
+    {
+      "claim_id": "13a47b75-26a1-4bbe-adb0-f9c4db908e4b",
+      "result_id": "01bf5399-6c83-4226-9f6f-935e6a5ec00a"
+    },
+    {
+      "claim_id": "9d39ec2b-a966-4b7c-9980-1c7c518013ac",
+      "result_id": "01bf5399-6c83-4226-9f6f-935e6a5ec00a"
+    },
+    {
+      "claim_id": "4f98146e-929c-450c-a39f-90c8ab5740a8",
+      "result_id": "01bf5399-6c83-4226-9f6f-935e6a5ec00a"
+    },
+    {
+      "claim_id": "dd1560b6-a2ff-4e81-9fed-9c38973da9a4",
+      "result_id": "01bf5399-6c83-4226-9f6f-935e6a5ec00a"
+    },
+    {
+      "claim_id": "8ca47eba-33c8-410d-8f81-d44a751d0f41",
+      "result_id": "01bf5399-6c83-4226-9f6f-935e6a5ec00a"
+    },
+    {
+      "claim_id": "4d57e487-a590-4000-968b-423e9dd8b56b",
+      "result_id": "01bf5399-6c83-4226-9f6f-935e6a5ec00a"
+    },
+    {
+      "claim_id": "2897d2a6-0a19-4d86-8871-bc4889fe9f0f",
+      "result_id": "01bf5399-6c83-4226-9f6f-935e6a5ec00a"
+    },
+    {
+      "claim_id": "76d2cb1c-665b-4b92-ac58-d0486c851a17",
+      "result_id": "01bf5399-6c83-4226-9f6f-935e6a5ec00a"
+    },
+    {
+      "claim_id": "63b1526b-d46f-4ce3-a750-8a15b916faef",
+      "result_id": "01bf5399-6c83-4226-9f6f-935e6a5ec00a"
+    },
+    {
+      "claim_id": "7868ab7e-d9ac-4911-bbbe-9c81fd06f757",
+      "result_id": "01bf5399-6c83-4226-9f6f-935e6a5ec00a"
+    },
+    {
+      "claim_id": "651cc101-0067-4ae5-845a-f949abd5af6a",
+      "result_id": "01bf5399-6c83-4226-9f6f-935e6a5ec00a"
+    },
+    {
+      "claim_id": "be2663f5-4c33-4e7b-92a3-0dfd0c6bb84e",
+      "result_id": "01bf5399-6c83-4226-9f6f-935e6a5ec00a"
+    },
+    {
+      "claim_id": "441fe286-1e9e-41f7-8f93-00eb5495b5ea",
+      "result_id": "01bf5399-6c83-4226-9f6f-935e6a5ec00a"
+    },
+    {
+      "claim_id": "eb72c562-0640-4e67-a54e-1ba2f735955f",
+      "result_id": "01bf5399-6c83-4226-9f6f-935e6a5ec00a"
+    },
+    {
+      "claim_id": "7ca698ea-6ffb-4b9b-a62a-e396c6a83106",
+      "result_id": "01bf5399-6c83-4226-9f6f-935e6a5ec00a"
+    },
+    {
+      "claim_id": "27c3d110-a7ae-42e4-882c-d3d2fb79f8c7",
+      "result_id": "01bf5399-6c83-4226-9f6f-935e6a5ec00a"
+    },
+    {
+      "claim_id": "9ac2c021-a15e-4c7a-bb3d-19adfe3d21f7",
+      "result_id": "01bf5399-6c83-4226-9f6f-935e6a5ec00a"
+    },
+    {
+      "claim_id": "c7cf765f-bddc-4afa-b015-b13273d169bf",
+      "result_id": "01bf5399-6c83-4226-9f6f-935e6a5ec00a"
+    },
+    {
+      "claim_id": "0ad8ac2b-8146-44e8-9834-c92f593283cf",
+      "result_id": "1370de63-8bc1-4834-8b55-b15da7618471"
+    },
+    {
+      "claim_id": "737145c0-96a8-4aa6-b4e6-56a9a092186b",
+      "result_id": "1370de63-8bc1-4834-8b55-b15da7618471"
+    },
+    {
+      "claim_id": "3e037458-fbfb-4687-bb67-c720028c6c74",
+      "result_id": "1370de63-8bc1-4834-8b55-b15da7618471"
+    },
+    {
+      "claim_id": "3fb0b18c-1d78-47b6-865d-4418c0b4beb7",
+      "result_id": "1370de63-8bc1-4834-8b55-b15da7618471"
+    },
+    {
+      "claim_id": "99cfbf32-867f-4cea-9e4e-a7727948f952",
+      "result_id": "17b75d88-9354-4b34-a2d1-fefc290d8b28"
+    },
+    {
+      "claim_id": "2b7a1f24-c93e-4770-9206-7acdca0a2e89",
+      "result_id": "17b75d88-9354-4b34-a2d1-fefc290d8b28"
+    },
+    {
+      "claim_id": "68a2227c-c939-4a89-9484-d41a4e2dc851",
+      "result_id": "17b75d88-9354-4b34-a2d1-fefc290d8b28"
+    },
+    {
+      "claim_id": "0b36a5e3-78dc-4f74-a921-98a1ab7300fa",
+      "result_id": "f05a705a-7c2a-4866-bebd-61def280fadc"
+    },
+    {
+      "claim_id": "f3ebc1f6-2137-499e-ac2c-ec8d5d15c041",
+      "result_id": "f05a705a-7c2a-4866-bebd-61def280fadc"
+    },
+    {
+      "claim_id": "48f2df6a-435b-4727-b78e-c63a320830c9",
+      "result_id": "1e484144-921a-4b95-befd-ff33efac670e"
+    }
+  ],
+  "comparisons": []
+}

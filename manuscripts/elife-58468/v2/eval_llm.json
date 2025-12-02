@@ -1,0 +1,275 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C35",
+      "C36"
+    ],
+    "result": "Hearing loss at 1 kHz is correlated with poorer frequency selectivity (shallower masking function slopes), supporting the idea that hearing loss is associated with broader cochlear tuning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48 and C49 report strong, statistically significant correlations (r = -0.685 and r = 0.717, both p<0.0001) between hearing loss and masking function slopes. This is consistent with prior research (C35, C36) and provides empirical validation of the expected relationship between hearing loss and cochlear tuning.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C41",
+      "C42",
+      "C61",
+      "C63",
+      "C64",
+      "C68",
+      "C69"
+    ],
+    "result": "Sensitivity to both slow and fast FM correlated with place-coding fidelity (masking function slopes), and this relationship remained significant after controlling for age, hearing loss, and AM sensitivity. The low slope (upper cochlear filter slope) showed significant correlations with FM at both rates, while the high slope did not.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41, C61, and C63 report strong correlations between FM sensitivity and masking function slopes. Partial correlation analyses (C42, C62, C63) demonstrate that the relationship persists after controlling for confounds. Claims C68 and C69 show the relationship is specific to FM (not AM), supporting place-coding theory. The statistical evidence is robust with appropriate controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C87"
+    ],
+    "result": "Multiple linear regression analyses showed that absolute thresholds, age, AM sensitivity, and masking function slopes collectively explained approximately 60% and 52% of variance in slow and fast FM detection, respectively. The low slope contributed significantly (6.2% and 7.91%) even after accounting for other factors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C75 provide detailed variance decomposition from multiple linear regression. The analyses appropriately control for collinearity (VIF < 10) and use conservative sequential entry. The low slope's significant contribution (C74) after controlling for other factors strengthens the place-coding interpretation. Statistical methods are sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Slow and fast FM detection thresholds were strongly correlated (r = 0.826), as were slow and fast AM thresholds (r = 0.638). Fast FM correlated with fast AM (r = 0.317) and slow AM (r = 0.366), but slow FM did not significantly correlate with slow AM (r = 0.199) or fast AM (r = 0.021).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C60 report correlation patterns with appropriate statistical tests and corrections. The strong correlation between slow and fast FM (C55) contradicts predictions of separate coding mechanisms. However, the lack of significant correlation between slow FM and AM (C59, C60) is noted but not significantly different from other correlations, limiting interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C86"
+    ],
+    "result": "In the AM incoherence discrimination task, sensitivity mirrored traditional FM sensitivity patterns, with better performance at slow rates for low center frequencies (500 Hz, 1500 Hz) but not high frequencies (7000 Hz). This pattern was observed despite the absence of temporal fine structure cues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C82 report a significant three-way interaction (F1.51,28.7 = 16.6, p<0.0001) and specific post-hoc comparisons showing the predicted pattern. The experimental design (C77) appropriately eliminated peripheral interactions. The findings support place-coding by replicating FM sensitivity patterns without timing cues.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "In the complex AM detection task, sensitivity was greater for opposite-phase (incoherent) AM than in-phase AM, but only at low center frequencies and slow rates. At high frequencies (7000 Hz), the slow-rate benefit was eliminated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C85 report a significant three-way interaction (F(2,38) = 7.58, p=0.002) with specific post-hoc tests showing the predicted pattern. This directly tests the place-coding hypothesis by simulating FM through incoherent AM and demonstrates rate- and frequency-dependent effects consistent with FM detection.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C8",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "The results suggest a unitary place-based neural code for FM across all rates and carrier frequencies, contrary to the prevailing view that time coding is necessary for slow-rate FM detection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C88, and C89 represent the main conclusion, supported by converging evidence from Experiments 1 and 2. Experiment 1 shows place-coding correlates with both slow and fast FM (C5, C41, C61), while Experiment 2 demonstrates that FM-like sensitivity patterns can be reproduced without timing cues (C78, C83, C91). The evidence is strong and internally consistent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "The range of FM detection thresholds was much wider in the present study compared to normal-hearing listeners, while AM detection thresholds were comparable, confirming that hearing loss affects FM detection more than AM detection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C53 compare the current results with prior research (Whiteford et al., 2017) and draw an inference supported by citation (Lacher-Foug\u00e8re and Demany, 1998). The comparison is appropriate given the inclusion of hearing-impaired listeners, and the conclusion is consistent with the data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C54"
+    ],
+    "result": "Test-retest reliability for AM and FM detection threshold estimation was very high (r > 0.92 for all measures), as assessed by bootstrapping procedures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C54 reports high test-retest reliability with appropriate statistical methods (bootstrapping). This validates the measurement quality and supports the reliability of the correlational analyses. The methodology is sound.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C38"
+    ],
+    "result": "The dual-code hypothesis predicts that fast-rate FM should depend on cochlear tuning while slow-rate FM should not. Previous studies in normal-hearing listeners failed to find such relationships, possibly due to limited variability in cochlear filtering.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31 and C38 present logical predictions from the dual-code hypothesis. Claims C32 and C33 accurately cite prior research and provide a reasonable explanation for null findings. These claims establish the theoretical framework and rationale for the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C92",
+      "C93"
+    ],
+    "result": "A unitary place-based code for FM and AM helps explain the high collinearity between FM and AM sensitivity observed in this and previous studies, and may explain why reintroducing fine timing cues in cochlear implants has not improved speech and music perception.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92 and C93 draw reasonable inferences from the main findings, supported by citations to prior research. The collinearity observation is consistent with the data (C55-C58), and the cochlear implant inference is appropriately speculative but grounded in the unitary coding framework.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "Resolved harmonics important for human pitch perception may be represented by place of stimulation rather than temporal fine structure, consistent with studies showing pitch perception at high frequencies and the importance of steep filter slopes in vocoder simulations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C98 is an inference from the current findings, appropriately qualified as speculative. Claims C99-C101 cite supporting evidence from prior research, providing convergent support for the place-coding interpretation in the context of pitch perception. The reasoning is logical and well-supported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "Physiological studies in animals generally show little effect of hearing loss on auditory nerve phase locking, while human behavioral evidence for degraded phase locking is indirect and could be confounded by poorer cochlear tuning. Binaural ITD studies show mixed results.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C107 accurately summarize prior research with appropriate citations. The critical evaluation of alternative interpretations (that hearing loss degrades both place and time coding) is thorough and well-reasoned. The evidence supports the authors' argument that place-coding effects are not merely byproducts of degraded time coding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "The relationship between place-coding fidelity and FM sensitivity remained significant after controlling for age, AM sensitivity, and hearing loss, suggesting that the effects are not byproducts of degraded time coding or central processing factors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C110 summarize the partial correlation analyses (C62-C64) and provide appropriate interpretation of the statistical controls. The reasoning about what each control accounts for is sound and supported by citations. This strengthens the place-coding interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "A place-only model can account for rate- and frequency-dependent trends in FM and AM sensitivity. The greater carrier separation in AM-incoherence experiments compared to FM experiments may explain why overall sensitivity is poorer in AM simulations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C116 summarizes Experiment 2 findings with appropriate citations. Claims C117-C120 address a potential criticism (large AM depths needed) with a reasonable explanation based on experimental design constraints. The reasoning is logical and addresses an important methodological consideration.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "The auditory system's ability to compare changes between nearby cochlear filters is more efficient at slow than fast rates, but only at low center frequencies. This interpretation is supported by computational modeling showing that inter-neuronal noise correlations could provide benefits at low rates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C121 is an inference from the combined findings, but the mechanism is speculative. Claims C122 and C123 cite supporting computational work, but the connection to the current data is indirect. While plausible, this interpretation requires additional empirical validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "A dual code (place plus timing) could potentially explain the collinearity between FM and AM sensitivity and the observation that AM interferes with FM detection. However, coherent AM may also interfere with incoherent AM detection, which remains to be tested.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C111-C113 present an alternative interpretation (dual coding) as speculation. Claim C112 cites prior research on AM-FM interference, but C113 acknowledges that the prediction remains untested. This is appropriately presented as an alternative hypothesis requiring further investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C124",
+      "C125"
+    ],
+    "result": "It is not known why effects of carrier frequency and rate on modulation sensitivity depend on carrier frequency, but auditory cortical representations of high frequencies (>6 kHz) may be less extensive due to their relative unimportance for speech and music.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C124 and C125 acknowledge a gap in understanding and offer speculation supported by analogy to visual crowding (citation provided). This is appropriately presented as speculative, but lacks direct empirical support. The reasoning is plausible but requires further investigation.",
+    "result_type": "MINOR"
+  }
+]

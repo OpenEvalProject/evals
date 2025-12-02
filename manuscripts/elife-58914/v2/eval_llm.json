@@ -1,0 +1,227 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C46",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "A GWAS of calculated free testosterone (CFT) in 161,268 UK Biobank males identified 93 independent genetic variants (after excluding SHBG-associated variants) that explained 3.7% of CFT variance, with chip-based heritability estimated at 15%. The F-statistic of 66 indicated strong instruments for Mendelian randomization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C13 and C46, C51-C52 provide consistent evidence for the GWAS results with appropriate quality control measures (genomic inflation factor, LD score regression). The study used established methods (BOLT-LMM) and appropriate thresholds for variant selection. The F-statistic confirms adequate instrument strength for MR analyses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C28",
+      "C59",
+      "C60",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Mendelian randomization analysis of 22 a priori outcomes found that each 0.1 nmol/L higher CFT had beneficial effects on bone mineral density, body fat-free percentage, and decreased body fat percentage, but deleterious effects on hematocrit, prostate cancer risk (OR=1.51), and androgenic alopecia risk (OR=1.49). Sensitivity analyses (Egger regression, MR-RAPS, MR-PRESSO, leave-one-out) supported these findings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C19 report statistically significant MR results with appropriate p-values and confidence intervals. Multiple sensitivity analyses (C20-C21, C66-C68) support the robustness of findings. Comparison with RCT data (C28, C59-C60) shows general consistency except for BMD, which is acknowledged and explained. The comprehensive sensitivity testing strengthens causal inference.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Phenome-wide genetic risk score analysis of 439 outcomes identified novel associations: each 0.1 nmol/L increase in genetically-predicted CFT was associated with beneficial effects on lowered C-reactive protein but adverse effects on increased creatinine, lowered HDL, lowered apolipoprotein A, and increased risks of hypertension (OR=1.17) and spinal stenosis (OR=2.03). Findings were robust to sensitivity analyses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C27 report statistically significant associations after appropriate multiple testing correction (p<1.14\u00d710\u207b\u2074 for 439 outcomes). Sensitivity analyses excluding participants on blood pressure or cholesterol medications (C63-C64) and using total testosterone variants (C65) showed directional consistency, supporting the robustness of findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "The observed increased risk of prostate cancer with higher testosterone replicates findings from a previous independent MR analysis using PRACTICAL consortium data, and is consistent with the use of androgen suppression therapies for treating prostate cancer and androgenic alopecia.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C31 appropriately contextualize the prostate cancer finding with prior literature and clinical practice. The replication in independent data (C30) strengthens the causal inference. The citation to American Cancer Society (C31) appropriately emphasizes the clinical significance given prostate cancer's prevalence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "The finding of lowered HDL with higher testosterone is consistent with the Testosterone Trials, which found mildly lowered HDL after 12 months. The decreased C-reactive protein finding, while not observed in the Testosterone Trials, is consistent with testosterone's known immunosuppressive effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C34 appropriately compare MR findings with RCT evidence. The HDL finding shows direct concordance with RCTs (C32). For CRP, the authors acknowledge the discrepancy with RCTs (C33) but provide mechanistic rationale from the literature (C34), demonstrating appropriate scientific reasoning.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "The association between testosterone and hypertension is supported by evidence from RCTs showing increased NT-proBNP, studies in transgender men and anabolic steroid users showing increased arterial stiffness and blood pressure, and animal models demonstrating testosterone's role in aggravating hypertension specifically in hypertensive conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C37 provide converging evidence from multiple sources (RCTs, observational studies, animal models) supporting the biological plausibility of the hypertension finding. The citations appropriately support each claim, and the mechanistic evidence from animal models (C37) adds biological context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C38",
+      "C39"
+    ],
+    "result": "The association between testosterone and spinal stenosis is supported by evidence that higher testosterone is associated with greater cartilage loss in older males and mouse models showing testosterone's sex-specific role in worsening osteoarthritis, a risk factor for spinal stenosis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C38-C39 provide some mechanistic support for the spinal stenosis finding, but the evidence is described as limited ('some evidence'). The connection between osteoarthritis and spinal stenosis is stated but not strongly established. The large effect size (OR=2.03) for spinal stenosis warrants additional validation given the indirect mechanistic evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C61",
+      "C62"
+    ],
+    "result": "The mechanism underlying the association between testosterone and increased creatinine is unclear but may be mediated through testosterone's effect on increased muscle mass, which is tightly related to serum creatinine levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C61 explicitly states the mechanism is unclear, and C62 offers a plausible but speculative explanation. While the muscle mass-creatinine relationship is well-established, the authors appropriately acknowledge uncertainty about whether this fully explains the observed association. The speculation is reasonable but requires validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C58"
+    ],
+    "result": "The study controlled for potential pleiotropy from SHBG by excluding genetic variants associated with SHBG (p<0.05), addressing concerns that SHBG has independent associations with outcomes like type 2 diabetes and direct signaling roles on target cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C41 and C58 describe the rationale and implementation of SHBG control. The approach is methodologically sound and addresses a key limitation of prior MR studies. The stringent p<0.05 threshold for excluding SHBG-associated variants is conservative and appropriate for minimizing pleiotropy.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Study limitations include UK Biobank's healthier population limiting power for rare outcomes, CFT levels below reference ranges (potentially due to older age and immunoassay inaccuracy), though genetic variants consistently replicated known testosterone effects on body composition and hematocrit.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C45 appropriately acknowledge study limitations. The low CFT levels (C43) are contextualized with prior UK Biobank studies (C44), and the validation through replication of known effects (C45) supports the validity of the genetic instruments despite measurement limitations. These are honest assessments of study constraints.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C65"
+    ],
+    "result": "Sensitivity analyses using 52 genetic variants for total testosterone (rather than calculated free testosterone) showed directionally consistent effects for all statistically significant outcomes, supporting the robustness of the main findings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C48 describe the alternative genetic instrument, and C65 reports directional consistency. This sensitivity analysis strengthens confidence in the findings by showing results are not dependent on the specific testosterone measure (free vs. total) or the calculation method (Vermeulen equation).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "Prior work has established rising testosterone testing and therapy rates in developed countries (1.5-1.7% of US males), with RCTs showing short-term benefits on BMD, body composition, and anemia but potential adverse effects on venous thrombosis and coronary plaque. Earlier MR studies showed inconsistent CVD effects, while a recent UK Biobank MR study found harmful effects on cancers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C8 appropriately summarize prior literature with proper citations. These background claims establish the rationale for the current study and are supported by the cited references. The characterization of prior MR studies' limitations (small number of variants, inconsistent findings) justifies the current comprehensive approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C49",
+      "C50"
+    ],
+    "result": "Mendelian randomization leverages random allocation of genetic variants at meiosis to infer unconfounded relationships between exposures and outcomes, analogous to randomization in RCTs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C50 accurately describe the MR method with appropriate citation (Davies et al., 2018). This is a standard and accurate description of the MR approach that provides necessary methodological context for interpreting the study's causal inference framework.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C69",
+      "C70"
+    ],
+    "result": "The authors conclude that decisions to initiate long-term testosterone use warrant careful consideration of benefits and risks, and that well-designed, appropriately powered RCTs (such as the ongoing TRAVERSE trials) are necessary to conclusively address safety and effectiveness questions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C70 provide appropriate conclusions based on the study findings. The call for careful risk-benefit consideration (C69) is justified by the mixed beneficial and adverse effects identified. The acknowledgment that RCTs remain necessary (C70) appropriately recognizes MR's limitations and the need for experimental validation.",
+    "result_type": "MINOR"
+  }
+]

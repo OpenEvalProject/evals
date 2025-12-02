@@ -1,0 +1,279 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "The study successfully recorded brainstem neural activity across sleep-wake states in head-fixed mice, with recordings spanning multiple brainstem nuclei. State-dependent physiological markers (EEG, EMG, pupil diameter, brainstem LFP power) were characterized and found to be generally comparable between head-fixed and tethered conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C20 provide converging evidence from histological verification, electrophysiological recordings, and behavioral monitoring that establish the experimental system. The data in Figures 1 and supplements demonstrate clear state-dependent differences in multiple physiological measures with appropriate statistical analysis and cross-condition validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C65"
+    ],
+    "result": "Brainstem neurons exhibit diverse state-dependent firing patterns, with four functional classes identified (AW-on, REM-off, REM/AW-on, and REM-on neurons). Pontine cholinergic neurons specifically showed higher activity during REM sleep and wakefulness compared to NREM sleep.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C22 and C65 are supported by hierarchical clustering analysis of 76 neurons (Figure 2C) and fiber photometry data from cholinergic populations (Figures 2E-G) with significant statistical results (F2,32=5.12, p=0.012). The combination of electrophysiology and calcium imaging provides complementary evidence for state-dependent and cell-type-specific firing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C2",
+      "C66",
+      "C81"
+    ],
+    "result": "Brainstem neural activity predicts pupil diameter changes with approximately 10 seconds lead time. The asymmetric predictability profile indicates that brainstem activity precedes rather than simply correlates with pupil dilation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C32 are supported by linear and multiple linear regression analyses (Figures 3C-D) showing asymmetric R\u00b2 profiles with peak predictability ~10s before pupil changes. The statistical significance (F2,53=220.33, p<0.0001) and consistent asymmetry across neurons support the predictive rather than correlative relationship. However, the sample size for simultaneous recordings (n=6 animals) is modest.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C3",
+      "C39",
+      "C40",
+      "C67"
+    ],
+    "result": "Brainstem populations exhibit longer-lasting predictive power for behavioral state transitions (tens of seconds in advance) compared to hippocampal CA1 neurons, as demonstrated by NMF-based decoding analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C40 are supported by NMF decomposition and linear classifier analysis (Figure 4). The comparative analysis with hippocampal CA1 shows brainstem populations maintain predictive power for longer time windows. However, the hippocampal comparison is limited by small sample size (n=2 animals, 4 recordings for CA1) and the statistical test used (repeated measures ANOVA) is not fully described.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C69",
+      "C70"
+    ],
+    "result": "P-waves in mice occur more frequently during REM sleep than NREM sleep, are accompanied by synchronous brainstem neuron firing in both states, and share characteristics with P-waves described in other species (cats, rats).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C46 and C69-C70 are supported by bipolar electrode recordings and silicon probe data (Figure 5). Statistical analysis confirms higher frequency during REM (p<0.0001, t-test), and peri-event histograms show consistent firing patterns across states. The comparison to other species is supported by citations, though direct quantitative comparison is limited. Sample size is adequate (n=16 datasets).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C72"
+    ],
+    "result": "P-waves during NREM sleep are phase-locked to multiple cortical oscillations (delta, theta, beta), with stronger modulation at delta and beta ranges. The temporal coupling between P-waves and cortical oscillations is state-dependent.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C54 are supported by phase analysis and resultant vector length calculations (Figure 6). Rayleigh tests confirm significant phase preferences (p<0.01), and two-way ANOVA shows significant state effects (F1,179=4.90, p<0.05). The spectral analysis and phase histograms provide converging evidence for state-dependent phase-locking.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C6",
+      "C51",
+      "C52",
+      "C55",
+      "C56",
+      "C57",
+      "C74"
+    ],
+    "result": "P-waves during REM sleep are strongly phase-locked to theta oscillations (~7 Hz) in both cortical EEG and hippocampal LFP, with stronger phase modulation in high-frequency components (\u226530 Hz) in the hippocampus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C51-C52, C55-C57, and C74 are supported by phase analysis (Figures 6-7) with significant statistical results (F1,79=4.00, p<0.05 for hippocampal LFPs). The theta phase-locking is consistent across cortical and hippocampal recordings, and effect size analysis supports stronger high-frequency modulation during REM.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C5",
+      "C58",
+      "C59",
+      "C60",
+      "C62",
+      "C73",
+      "C106"
+    ],
+    "result": "During NREM sleep, hippocampal sharp wave-ripples (SWRs) precede P-waves, suggesting P-waves are part of brain-wide neural events triggered by SWRs. The temporal order between CA1 firing and P-waves is state-dependent.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C58-C60, C62, C73, and C106 are supported by temporal analysis (Figure 7C-D) showing SWRs precede P-waves during NREM (p<0.05, t-test, n=4 recordings). The peri-event histograms demonstrate state-dependent temporal relationships. However, the small sample size (n=4 recordings from 2 animals) limits generalizability, and the causal inference about SWRs 'triggering' P-waves requires additional experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C7",
+      "C61",
+      "C75",
+      "C76",
+      "C104"
+    ],
+    "result": "During REM sleep, P-waves precede burst firing in a subset of hippocampal CA1 neurons, suggesting P-waves may trigger brain-wide neural events during REM sleep.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C7, C61, C75, C76, and C104 are based on peri-event time histograms (Figure 7C) showing CA1 firing after P-waves during REM. While the temporal relationship is demonstrated, the causal interpretation (P-waves 'triggering' events) is speculative and acknowledged as such (C76, C104 marked as speculation). The small sample size (n=4 recordings) and lack of perturbation experiments limit confidence in the causal claim.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C68",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "The slow timescale (30-60s) of brainstem predictive dynamics may relate to observations from optogenetic experiments where state transitions emerge tens of seconds after stimulation onset, potentially reflecting complex brain-wide interactions underlying state transitions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C68, C83-C86 are largely speculative connections to prior optogenetic studies. While the temporal correspondence is noted and supported by citations (C84), the mechanistic link (C85-C86) is explicitly presented as a hypothesis without direct experimental support. This represents an interesting interpretation but requires additional experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "P-waves in mice share similarities with P-waves in other species (cats, rats) in waveform, frequency during REM sleep, and temporal evolution, though subtle differences exist in the timing of frequency increases during state transitions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C97 are supported by comparison with cited literature and data in Figure 5. The waveform consistency (C88, C90) and frequency comparisons (C91) are well-documented. The temporal evolution differences (C96-C97) are acknowledged as weak but present in the data. The cross-species comparison provides important validation, though direct quantitative comparisons are limited.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C98",
+      "C99"
+    ],
+    "result": "P-wave frequency varied across experiments, potentially due to differences in REM sleep quality, electrode positioning, or anatomical differences between species, which may imply functional differences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C92-C93 and C98-C99 acknowledge experimental variability (C92) but provide only speculative explanations (C93, C98, C99). While the observation of variability is valid, the proposed explanations lack direct experimental support. This represents an honest acknowledgment of limitations but does not constitute a well-supported result.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C71",
+      "C77",
+      "C101",
+      "C107"
+    ],
+    "result": "P-waves exhibit state-dependent functional interactions with hippocampal and cortical activity, with distinct patterns during NREM versus REM sleep, implying different functional roles for these sleep states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C64, C71, C77, C101, and C107 synthesize findings from Figures 6-7 showing state-dependent phase-locking and temporal relationships. The statistical evidence (two-way ANOVAs) supports state-dependent differences. However, the functional interpretation (C107) is somewhat speculative, as the study demonstrates associations but not direct functional consequences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Silicon probe recording enabled quantification of state-dependent brainstem ensemble dynamics, decoding of vigilance states from population activity, and characterization of neural population activity underlying P-waves for the first time in mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C80 accurately describe the methodological contributions of the study. The silicon probe approach is well-established, and the application to brainstem P-wave population dynamics appears novel based on the literature review. This represents a valid technical advance, though the claims are primarily methodological rather than mechanistic.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C102",
+      "C103"
+    ],
+    "result": "The temporal correlation between P-waves and hippocampal theta rhythms during REM sleep is consistent with previous studies in cats and rats. Phase-locked activity with fast gamma may relate to brain-wide hyperemic events.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C102 is supported by citations to prior work showing similar correlations in other species. However, claim C103 is speculative, connecting the observed gamma phase-locking to a single prior study on hyperemic events without direct experimental validation. The cross-species consistency is valuable but the functional interpretation requires further support.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C108",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C116",
+      "C117"
+    ],
+    "result": "The study used appropriate sample sizes across different experimental approaches: 21 mice total, with 6 animals for brainstem recordings, 2 for hippocampal recordings, 16 datasets for P-wave analysis, 18 for pupil analysis, and 4 for fiber photometry.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C117 accurately report sample sizes with appropriate documentation of exclusions (C113). However, the hippocampal recordings (C112: n=2 animals) represent a notably small sample for the comparative claims about predictive power. The other sample sizes are more adequate, though still modest for some analyses. Transparency in reporting is commendable.",
+    "result_type": "MINOR"
+  }
+]

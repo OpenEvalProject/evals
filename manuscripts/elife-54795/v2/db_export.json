@@ -1,0 +1,1819 @@
+{
+  "submission": {
+    "id": "23493f31-4737-4a38-ae1d-7957d98b0b3b",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T20:50:38.572080Z",
+    "updated_at": "2025-12-02T20:50:38.572080Z"
+  },
+  "content": [
+    {
+      "id": "7f7d80e8-6182-4e59-9c36-5586f5b6e76c",
+      "submission_id": "23493f31-4737-4a38-ae1d-7957d98b0b3b",
+      "content_type": "manuscript",
+      "content_text": "# Metapopulation ecology links antibiotic resistance, consumption, and patient transfers in a network of hospital wards\n\n## Authors\n\n- Julie Teresa Shapiro<sup>1</sup> ([ORCID: 0000-0002-4539-650X](https://orcid.org/0000-0002-4539-650X))\n- Gilles Leboucher<sup>2</sup> ([ORCID: 0000-0001-7043-9834](https://orcid.org/0000-0001-7043-9834))\n- Anne-Florence Myard-Dury<sup>3</sup>\n- Pascale Girardo<sup>4</sup>\n- Anatole Luzzati<sup>4</sup>\n- M\u00e9lissa Mary<sup>4</sup>\n- Jean-Fran\u00e7ois Sauzon<sup>4</sup>\n- B\u00e9n\u00e9dicte Lafay<sup>5</sup> ([ORCID: 0000-0001-5783-5269](https://orcid.org/0000-0001-5783-5269))\n- Olivier Dauwalder<sup>4</sup> ([ORCID: 0000-0003-1722-1582](https://orcid.org/0000-0003-1722-1582))\n- Fr\u00e9d\u00e9ric Laurent<sup>1</sup>\n- Gerard Lina<sup>1</sup>\n- Christian Chidiac<sup>6</sup> ([ORCID: 0000-0001-7002-2713](https://orcid.org/0000-0001-7002-2713))\n- Sandrine Couray-Targe<sup>3</sup>\n- Fran\u00e7ois Vandenesch<sup>1</sup>\n- Jean-Pierre Flandrois<sup>5</sup> ([ORCID: 0000-0002-4953-9125](https://orcid.org/0000-0002-4953-9125))\n- Jean-Philippe Rasigade<sup>1</sup> ([ORCID: 0000-0002-8264-0452](https://orcid.org/0000-0002-8264-0452)) \u2020\n\n### Affiliations\n\n1. CIRI, Centre International de Recherche en Infectiologie, Universit\u00e9 de Lyon, Inserm U1111, Ecole Normale Sup\u00e9rieure de Lyon, Universit\u00e9 Lyon 1, CNRS, UMR5308 Lyon France\n2. D\u00e9partement de Pharmacie, Hospices Civils de Lyon Lyon France\n3. P\u00f4le de Sant\u00e9 Publique, D\u00e9partement d'Information M\u00e9dicale, Hospices Civils de Lyon Lyon France\n4. Institut des Agents Infectieux, Hospices Civils de Lyon Lyon France\n5. Laboratoire de Biom\u00e9trie et Biologie Evolutive, UMR CNRS 5558, University of Lyon Lyon France\n6. Service des Maladies Infectieuses et Tropicales, Hospices Civils de Lyon Lyon France\n\n\u2020 Corresponding author\n\n## Abstract\n\nAntimicrobial resistance (AMR) is a global threat. A better understanding of how antibiotic use and between-ward patient transfers (or connectivity) impact population-level AMR in hospital networks can help optimize antibiotic stewardship and infection control strategies. Here, we used a metapopulation framework to explain variations in the incidence of infections caused by seven major bacterial species and their drug-resistant variants in a network of 357 hospital wards. We found that ward-level antibiotic consumption volume had a stronger influence on the incidence of the more resistant pathogens, while connectivity had the most influence on hospital-endemic species and carbapenem-resistant pathogens. Piperacillin-tazobactam consumption was the strongest predictor of the cumulative incidence of infections resistant to empirical sepsis therapy. Our data provide evidence that both antibiotic use and connectivity measurably influence hospital AMR. Finally, we provide a ranking of key antibiotics by their estimated population-level impact on AMR that might help inform antimicrobial stewardship strategies.\n\n## Introduction\n\nAntimicrobial resistance (AMR) of pathogenic bacteria progresses worldwide, imposing a considerable burden of morbidity, mortality and healthcare costs (Laxminarayan et al., 2013; Cassini et al., 2019). AMR is increasingly recognized to emerge in various settings including agriculture (Johnson et al., 2016) or polluted environments (L\u00fcbbert et al., 2017; Venter et al., 2017). However, hospitals continue to be important hotspots for AMR in clinically-relevant pathogens (Chatterjee et al., 2018; David et al., 2019) due to the confluence of strong antibiotic selection pressure, fragile patients, and highly resistant pathogens that can disseminate between wards and facilities through patient transfers (Safdar and Maki, 2002; Snitkin et al., 2012). These conditions result in hospitals becoming reservoirs of resistant bacteria (Clarivet et al., 2016; Cohen, 1992; Pogue et al., 2013), which can later enter the community (Huttner et al., 2013).\n\nThe primary hospital-based strategies against AMR are antimicrobial stewardship, which aims to lower the antibiotic pressure, and infection control whose goal is to reduce the transmission of pathogens (Manning et al., 2018). The need for such strategies is widely accepted but because they are often implemented together, the relative importance of each is unclear (Chatterjee et al., 2018; Goff et al., 2017). The details of how to best implement these strategies are hotly debated (Lemmen and Lewalter, 2018), especially regarding which antibiotics should be restricted first as a part of antibiotic stewardship strategies (Chastain et al., 2018) or the risk-benefit balance of screening-based patient isolation procedures to reduce transmission (Karda\u015b-S\u0142oma et al., 2017; Robotham et al., 2016). Designing effective antibiotic stewardship strategies has been hindered by the paucity of evidence concerning which antibiotics exert the strongest selection pressure. Current rankings of antibiotics for de-escalation and sparing strategies rely on expert consensus with partial agreement (Weiss et al., 2015), themselves based on conflicting evidence (Acar, 1997; Huttner et al., 2016). This is further complicated by the fact that the association between antibiotic use and resistance is not uniform across pathogen species (Bell et al., 2014) or classes of antibiotics (Niehus et al., 2020). Moreover, antibiotic consumption can also have long-term effects on the carriage of resistant bacteria within patients (Niehus et al., 2020).\n\nUnderstanding the drivers of AMR at the hospital level requires consideration not only of the selection pressure from antibiotics on individual patients, but also of the transmission and dissemination of drug-resistant pathogens in the patient population (Lipsitch, 2001; Lipsitch and Samore, 2002). However, we lack a quantitative understanding of the respective impacts of selection and transmission on the incidence of AMR infections in hospitals. Observational studies of AMR usually report on the proportion of resistant variants in a limited set of species, which conceals the overall AMR burden and can make interpretation difficult when resistant variants apparently increase in proportion while decreasing in incidence (Burton, 2009). Moreover, linking antibiotic use and AMR prevalence at the population level is difficult due to the confounding effects of bacterial transmission and the complexity of the ecological processes underlying AMR (review in Schechner et al., 2013). Thus, studies of AMR in hospitals could benefit from ecological frameworks able to simultaneously model the impact of antibiotic use and patient transfers on the incidence of infections with the most relevant pathogens. Metapopulation ecology is such a framework. It was introduced by Levins, 1969 to explain the persistence of agricultural pests across a set of habitat patches, such as crop fields, and refined by Hanski to account for the characteristics of patches, such as their size, and the connectivity between them (Hanski, 1998; Hanski, 1994). The metapopulation concept, in which populations of organisms are spread across inter-connected patches with varying characteristics, is useful to describe bacterial pathogens in a hospital network containing wards with different sizes and levels of antibiotic pressure, connected by the transfers of infected patients. Models using the metapopulation framework, beyond their frequent use in wildlife and conservation biology (Dolrenry et al., 2014; Heard et al., 2015; MacPherson and Bright, 2011), have recently provided theoretical grounds for pathogen persistence in the healthcare setting (Spagnolo et al., 2018). So far, however, metapopulation models of hospital AMR have been applied to simulated rather than empirical data (Spagnolo et al., 2018; Vilches et al., 2019).\n\nHere, we used a metapopulation framework to model and isolate the population-level effects of antibiotic use and inter-ward connectivity on the incidence of infections with major pathogen species and their drug-resistant variants within a 357-ward hospital network, using detailed data collected\u00a0over the course of one year. Our objectives were: (1), to determine the respective impacts of antibiotic use and connectivity on the incidence of infections with resistant pathogens at the population level; and (2), to compare the impacts of the use of specific antibiotics on the ward-level incidence of AMR infections, after controlling for the effect of connectivity. Based on the association patterns between the incidence of 17 pathogen variants and the use of 11 antibiotic classes, our findings highlight both common patterns and species-specific behaviors of pathogens and provide a ranking of key antibiotics by their estimated population-level impact on AMR.\n\n## Results\n\n### Distribution of bacterial pathogens and antibiotic use in a hospital network\n\nWe analyzed pathogen isolation incidence in clinical samples, antibiotic use, and patient transfers in 357 hospital wards from the region of Lyon, France. Data for all three measures were collected during the same period from October 2016 to September 2017. The hospital network contained a total of 4,685 beds. The median ward size was 12 beds (interquartile range, 5 to 20).\n\nWard-level data were aggregated from 13,915 infection episodes, defined as ward admissions with\u00a0\u22651 clinical sample positive for E. coli or one of the so-called ESKAPE pathogens (Enterococcus faecium, Staphylococcus aureus, Klebsiella pneumoniae, Acinetobacter baumannii, Pseudomonas aeruginosa and Enterobacter cloacae complex), collectively termed ESKAPE2 (Table 1). Pathogens were grouped into species-resistance pattern combinations, namely 3rd-generation cephalosporin (3GC)-resistant E. coli, E. cloacae complex and K. pneumoniae, carbapenem-resistant E. coli, E. cloacae complex, K. pneumoniae, P. aeruginosa and A. baumannii, vancomycin-resistant E. faecium and methicillin-resistant S. aureus (MRSA). Pathogen variants not falling into these resistance groups were collectively referred to as the less-resistant variants (Table 1). The median yearly incidence of infection episodes per ward was 24 (interquartile range, 7 to 55).\n\n**Table 1.**\n Distribution of ESKAPE2 pathogen infection episodes in 357 hospital wards.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Species</th>\n      <th>Resistance profile</th>\n      <th>Acronym</th>\n      <th>No. of episodes (%), n\u00a0=\u00a013,915</th>\n      <th>No. of wards (%), n\u00a0=\u00a0357</th>\n      <th>Concentration indexa (%) (95% CI)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>E. coli</td>\n      <td>Susceptible to 3GC and carbapenems</td>\n      <td>EC</td>\n      <td>6,303 (45.3)</td>\n      <td>328 (91.9)</td>\n      <td>0.6 (0.6, 0.7)</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>3GC-resistant</td>\n      <td>3GCREC</td>\n      <td>737 (5.3)</td>\n      <td>207 (58.0)</td>\n      <td>0.7 (0.6, 0.8)</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>Carbapenem-resistant</td>\n      <td>CREC</td>\n      <td>24 (0.2)</td>\n      <td>24 (5.6)</td>\n      <td>1.4 (0.0, 3.9)</td>\n    </tr>\n    <tr>\n      <td>K. pneumoniae</td>\n      <td>Susceptible to 3GC and carbapenems</td>\n      <td>KP</td>\n      <td>1,133 (8.1)</td>\n      <td>249 (69.7)</td>\n      <td>0.7 (0.6, 0.8)</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>3GC-resistant</td>\n      <td>3GCRKP</td>\n      <td>530 (3.8)</td>\n      <td>175 (49.0)</td>\n      <td>0.9 (0.7, 1.0)</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>Carbapenem-resistant</td>\n      <td>CRKP</td>\n      <td>43 (0.3)</td>\n      <td>32 (9.0)</td>\n      <td>1.7 (0.0, 3.5)</td>\n    </tr>\n    <tr>\n      <td rowspan=\"3\">E. cloacae complex</td>\n      <td>Susceptible to 3GC and carbapenems</td>\n      <td>EB</td>\n      <td>277 (2.0)</td>\n      <td>140 (39.2)</td>\n      <td>1.0 (0.7, 1.3)</td>\n    </tr>\n    <tr>\n      <td>3GC-resistant</td>\n      <td>3GCREB</td>\n      <td>212 (1.5)</td>\n      <td>116 (32.5)</td>\n      <td>0.8 (0.5, 1.0)</td>\n    </tr>\n    <tr>\n      <td>Carbapenem-resistant</td>\n      <td>CREB</td>\n      <td>102 (0.7)</td>\n      <td>74 (20.7)</td>\n      <td>0.7 (0.3, 1.1)</td>\n    </tr>\n    <tr>\n      <td>P. aeruginosa</td>\n      <td>Carbapenem-susceptible</td>\n      <td>PA</td>\n      <td>1,076 (7.7)</td>\n      <td>231 (64.7)</td>\n      <td>0.8 (0.7, 0.9)</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>Carbapenem-resistant</td>\n      <td>CRPA</td>\n      <td>444 (3.2)</td>\n      <td>148 (41.5)</td>\n      <td>1.5 (1.2, 1.7)</td>\n    </tr>\n    <tr>\n      <td>A. baumannii</td>\n      <td>Carbapenem-susceptible</td>\n      <td>AB</td>\n      <td>96 (0.7)</td>\n      <td>61 (17.1)</td>\n      <td>1.3 (0.5, 2.1)</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>Carbapenem-resistant</td>\n      <td>CRAB</td>\n      <td>12 (0.1)</td>\n      <td>10 (2.8)</td>\n      <td>3.0 (0.0, 9.8)</td>\n    </tr>\n    <tr>\n      <td>E. faecium</td>\n      <td>Vancomycin-susceptible</td>\n      <td>EF</td>\n      <td>503 (3.6)</td>\n      <td>133 (27.3)</td>\n      <td>1.4 (1.2, 1.6)</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>Vancomycin-resistant</td>\n      <td>VREF</td>\n      <td>7 (&lt;0.1)</td>\n      <td>7 (2.0)</td>\n      <td>0.0 (0.0, 9.6)</td>\n    </tr>\n    <tr>\n      <td>S. aureus</td>\n      <td>Methicillin-susceptible</td>\n      <td>SA</td>\n      <td>2,113 (15.2)</td>\n      <td>273 (76.5)</td>\n      <td>1.1 (1.0, 1.1)</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>Methicillin-resistant</td>\n      <td>MRSA</td>\n      <td>303 (2.2)</td>\n      <td>151 (42.3)</td>\n      <td>0.7 (0.5, 0.9)</td>\n    </tr>\n  </tbody>\n</table>\n\n_NOTE. aThe concentration index estimates the probability that two episodes taken at random occurred in the same ward. Here we report the concentration index as a percent (0\u2013100%). 3GC, 3rd-generation cephalosporins._\n\nInfection episodes most frequently involved the less-resistant variants, especially E. coli, which were also found in the largest number of wards (Table 1 and Figure 1\u2014figure supplement 1). Resistant variants were consistently less frequent than their less-resistant counterparts in all species (Figure 1\u2014figure supplement 1). In enterobacteria (E. coli, K. pneumoniae and E. cloacae), carbapenem-resistant variants were consistently less frequent than 3GC-resistant variants. Infections with vancomycin-resistant E. faecium and carbapenem-resistant A. baumannii were exceptional, with seven and twelve episodes respectively (Table 1).\n\nTo estimate the degree of concentration of each variant in the network, we calculated concentration indices defined as the probability that two random occurrences of the same variant originated from the same ward, analogous to the asymptotic Simpson index (see Materials\u00a0and\u00a0methods). The concentration index varies from 0% for a uniformly random distribution (each occurrence is in a different ward) to 100% for a maximally concentrated distribution (all occurrences are in the same ward). The concentration of infection episodes was weak (<5%) for all variants, indicating a global lack of clustering (Table 1). Concentration increased with resistance (~2-fold increase from the least to the most resistant variant) in E. coli, K. pneumoniae, P. aeruginosa and A. baumannii, suggesting an adaptation of resistant variants to more specific wards within the hospital network compared to their less-resistant, less-concentrated counterparts. This pattern was not found in E. cloacae complex, E. faecium or S. aureus, in which the concentration index remained comparable across resistance categories.\n\nOver the same period (October 2016 to September 2017), antibiotics were prescribed in 86.3% of wards (Table 2), with a total consumption of 125.7 defined daily doses per year per bed (ddd/y/b). Antibiotics usually suspected to select for AMR in the selected variants were grouped into 11 classes (Table 2). Antibiotics with comparatively rare use (e.g., rifampicin) were excluded. The distribution of antibiotic use in the network was analyzed using the concentration index described above, here representing the probability that two random drug doses were delivered in the same ward. Antibiotic use was diffuse, with concentration indices\u00a0<\u00a04%, ranging from 0.8% for cefotaxime-ceftriaxone and fluoroquinolones to 3.6% for oxacillin.\n\n**Table 2.**\n Distribution of the use of 11 antibiotics in 357 hospital wards.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Antibiotics</th>\n      <th>Acronym</th>\n      <th>Prescription volume in ddd/y (%)</th>\n      <th>No. of wards (%), n\u00a0=\u00a0357</th>\n      <th>Concentration indexa (%), (95% CI)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Amoxicillin</td>\n      <td>AMX</td>\n      <td>141,293 (24.0)</td>\n      <td>252 (70.6)</td>\n      <td>1.8 (1.7, 1.8)</td>\n    </tr>\n    <tr>\n      <td>Coamoxiclav</td>\n      <td>AMC</td>\n      <td>78,072 (13.3)</td>\n      <td>247 (69.3)</td>\n      <td>1.0 (0.9, 1.0)</td>\n    </tr>\n    <tr>\n      <td>First- and second- generation cephalosporins</td>\n      <td>1GC/2GC</td>\n      <td>12,915 (2.2)</td>\n      <td>191 (53.5)</td>\n      <td>1.2 (1.1, 1.3)</td>\n    </tr>\n    <tr>\n      <td>Non-antipseudomonal 3GCs, cefotaxime and ceftriaxone</td>\n      <td>CTX/CRO</td>\n      <td>53,406 (9.1)</td>\n      <td>259 (72.5)</td>\n      <td>0.8 (0.8, 0.9)</td>\n    </tr>\n    <tr>\n      <td>Antipseudomonal 3GCs, ceftazidime and cefepime</td>\n      <td>CTZ/FEP</td>\n      <td>29,204 (5.0)</td>\n      <td>184 (51.5)</td>\n      <td>1.9 (1.8, 1.9)</td>\n    </tr>\n    <tr>\n      <td>Piperacillin-tazobactam</td>\n      <td>TZP</td>\n      <td>27,593 (4.7)</td>\n      <td>198 (55.5)</td>\n      <td>1.9 (1.7, 1.9)</td>\n    </tr>\n    <tr>\n      <td>Carbapenems</td>\n      <td>IPM/MEM</td>\n      <td>25,093 (4.3)</td>\n      <td>204 (57.1)</td>\n      <td>1.5 (1.4, 1.6)</td>\n    </tr>\n    <tr>\n      <td>Oxacillin</td>\n      <td>OXA</td>\n      <td>12,374 (2.1)</td>\n      <td>143 (40.1)</td>\n      <td>3.6 (3.1, 3.7)</td>\n    </tr>\n    <tr>\n      <td>Vancomycin and teicoplanin</td>\n      <td>VAN/TEC</td>\n      <td>25,376 (4.3)</td>\n      <td>206 (57.7)</td>\n      <td>1.5 (1.4, 1.5)</td>\n    </tr>\n    <tr>\n      <td>Fluoroquinolones</td>\n      <td>FQ</td>\n      <td>52,549 (8.9)</td>\n      <td>249 (69.7)</td>\n      <td>0.8 (0.8, 0.8)</td>\n    </tr>\n    <tr>\n      <td>Aminoglycosides</td>\n      <td>AMIN</td>\n      <td>12,745 (2.2)</td>\n      <td>207 (58.0)</td>\n      <td>1.9 (1.5, 1.9)</td>\n    </tr>\n    <tr>\n      <td>All antibioticsb</td>\n      <td>-</td>\n      <td>589,014 (100)</td>\n      <td>308 (86.3)</td>\n      <td>0.8 (0.8, 0.8)</td>\n    </tr>\n  </tbody>\n</table>\n\n_NOTE. aThe concentration index estimates the probability that two antibiotic ddds taken at random were prescribed in the same ward. Here we report the concentration index as a percent (0\u2013100%). bTotal consumption of systemic-use antibiotics (ATC class J01) including those not considered in the 11 specific drug groups. 3GC, 3rd-generation cephalosporin; ddd, defined daily dose._\n\n### Antibiotic use and connectivity predict the incidence of drug-resistant infections\n\nWe used multivariable generalized linear models (GLMs) within the metapopulation framework to disentangle the influences of antibiotic pressure, connectivity, ward size, and ward type on the incidence of infections with the selected pathogens and their resistant variants.\n\nConnectivity quantifies the incoming flux of each pathogen variant in a downstream ward via the transfer of infected patients from upstream wards. Practically, we estimated connectivity for each variant and downstream ward as the sum of the direct transfers from each upstream ward multiplied by the variant\u2019s prevalence in that ward (see Materials\u00a0and\u00a0methods). Mean connectivity ranged from 168.2 estimated introductions per year for less-resistant E. coli to 0.09 for vancomycin-resistant E. faecium. Connectivity was always higher for the less-resistant variants compared to the resistant variants, consistent with the higher prevalence of the former (Supplementary file 1 Table 1a).\n\nWards were characterized by their size (no. of beds) and type, representing patient fragility. Ward type was coded as one of the following categorical variables: intensive care and blood cancer units, progressive care units, and other wards. \u2018Other wards\u2019 was considered the reference category in all models. In several pathogen variants, namely carbapenem-resistant E. coli, carbapenem-resistant A. baumannii, and vancomycin-resistant E. faecium, the small sample size in one or several ward categories prevented the inclusion of ward type as a model covariate.\n\nWe also considered that the distribution of infections across wards was a source of bias that required a specific adjustment procedure (see Materials\u00a0and\u00a0methods). The local prevalence of specific infections (e.g., respiratory tract infections) in a ward influences both the antibiotic use and the observed incidence of infections with a given pathogen, which might confound the relationship between antibiotic use and incidence (Figure 1\u2014figure supplement 2). However, the distribution of infections would be difficult to represent as an adjustment covariate with a sufficiently small number of categories. We used a proxy method to circumvent this issue. We assumed that the distribution of infections directly influences the frequency and specimen types (e.g., respiratory vs. urinary tract specimens) of microbiological samples in each ward. Under this assumption, we replaced the unrepresentable distribution of infections with a proxy variable summarizing the distribution of microbiological samples. This proxy variable, which we refer to as the incidence control, was defined as the ward-level incidence of a pathogen variant predicted by patterns of microbiological sampling alone. As expected, the incidence control correlated with both antibiotic use and the incidence of infections in all prevalent variants (Figure 1\u2014figure supplements 3 and 4). Of note, the incidence of each variant also correlated with both antibiotic use (Figure 1\u2014figure supplement 5) and connectivity (Figure 1\u2014figure supplement 6) in bivariate analyses, except for the very rare A. baumannii and E. faecium resistant variants. Hereafter, all models included the incidence control covariate to adjust for the confounding effect of the distribution of infections.\n\nThe incidence of each pathogen variant was modeled in a separate multivariable quasi-Poisson GLM (Figure 1). In these GLMs, global antibiotic use was associated with infection incidence in seven pathogen variants independent of connectivity, ward size, and ward type (Figure 1), including five resistant variants (3GC-resistant E. coli, 3GC-resistant K. pneumoniae, carbapenem-resistant K. pneumoniae, 3GC-resistant E. cloacae, and carbapenem-resistant E. cloacae) and two less-resistant variants (P. aeruginosa and E. faecium). The largest effect size was found in carbapenem-resistant K. pneumoniae, in which every doubling of antibiotic use predicted a 47% increase in incidence (95% confidence interval, 19% to 90%).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/54795/elife-54795-fig1-v2.jpg)\n\n**Figure 1.:** Shown are the predicted percent changes in incidence (points) with 95% confidence interval (bars) for each variant in each ward (n\u00a0=\u00a0357) for every doubling of antibiotic use, connectivity (estimated no. of patients infected with the same variant entering the ward), ward size (no. of beds), and ward type. All models were multivariable quasi-Poisson regressions that included the incidence control covariate (see Materials\u00a0and\u00a0methods). Models involving A. baumannii and E. faecium, which exhibited larger 95% confidence\u00a0intervals due to smaller incidence of the resistant variants, are shown with separate scales (panel b) for readability. In models of CREC, CRAB, and VREF incidence, small sample size in at least one ward category prevented the inclusion of ward type as a covariate and the estimation of the coefficient, marked as \u2018not determined\u2019. Variant acronyms are listed in Table 1.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/54795/elife-54795-fig1-figsupp1-v2.jpg)\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/54795/elife-54795-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** Boxes denote variables and arrows denote assumed causal relationships, from cause to effect. In the assumed model, the infection distribution variable opens a biasing path between antibiotic use (the exposure) and the incidence of infections with the pathogen variant of interest (the outcome). The infection distribution is an unrepresentable variable which cannot be directly adjusted for, but which might be represented by proxy variables (see Materials\u00a0and\u00a0methods). To define these proxy variables, we assume that ward type, size, and the incidence control value capture much of the variability of the unrepresentable infection distribution. Under this assumption, these measured variables are used as a proxy adjustment set to control for confounding by the infection distribution. Of note, the infection distribution influences the volume of antibiotic prescriptions, and antibiotic use also influences infections by altering the population structure of pathogens. Thus, the causal link between the infection distribution and antibiotic use is (possibly) bidirectional. However, the bidirectional link between antibiotic use and infection distribution does not prevent the identification of the causal effect under the assumption that the proxy adjustment set is valid.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/54795/elife-54795-fig1-figsupp3-v2.jpg)\n\n**Figure 1\u2014figure supplement 3.:** R\u00b2 and 95% confidence intervals (in parentheses) were obtained using simple linear regression on log2-transformed data.\n\n![Figure 1\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/54795/elife-54795-fig1-figsupp4-v2.jpg)\n\n**Figure 1\u2014figure supplement 4.:** R\u00b2 and 95% confidence intervals (in parentheses) were obtained using simple linear regression on log2-transformed data.\n\n![Figure 1\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/54795/elife-54795-fig1-figsupp5-v2.jpg)\n\n**Figure 1\u2014figure supplement 5.:** R\u00b2 and 95% confidence intervals (in parentheses) were obtained using simple linear regression on log2-transformed data.\n\n![Figure 1\u2014figure supplement 6.](https://cdn.elifesciences.org/articles/54795/elife-54795-fig1-figsupp6-v2.jpg)\n\n**Figure 1\u2014figure supplement 6.:** R\u00b2 and 95% confidence intervals (in parentheses) were obtained using simple linear regression on log2-transformed data.\u00a0.\n\nConnectivity predicted a higher incidence in all variants of P. aeruginosa and E. faecium, with a stronger effect size in the resistant variants (11.5 and 43.7%, respectively) compared to their less-resistant counterparts (6.1 and 15.3%). A significant association with connectivity was also found for the less-resistant E. coli, although with a much smaller effect size (2.6%).\n\nWard characteristics only weakly predicted infection incidence compared to antibiotic use and connectivity. Ward type, or patient fragility, predicted incidence in several variants, although with large uncertainty margins. Interestingly, associations of incidence with intensive care and blood cancer units were negative (in E. coli, 3GC-resistant E. coli, 3GC-resistant E. cloacae, and MRSA) while associations with progressive care units were positive (in 3GC-resistant K. pneumoniae and P. aeruginosa). Ward size did not predict incidence in any variant.\n\n### Do associations between antibiotic use and resistance represent AMR selection?\n\nThe metapopulation models illustrated in Figure 1 identified positive associations between total antibiotic use in hospital wards and increased incidences of infections with the more resistant variants of several species. Yet, a correlation with AMR does not necessarily establish a selective role of antibiotics. For instance, a high incidence of resistant infections in a ward can increase antibiotic use through prolonged or combined therapies (Schechner et al., 2013). Conversely, the prescription of antibiotics always inactive against a variant is unlikely to be motivated by this variant\u2019s incidence and such antibiotics are more likely to provide a direct benefit to the resistant variant. Based on this rationale, we propose stringent criteria to identify whether an association between the use of an antibiotic and the incidence of a variant possibly reflects AMR selection (hereafter, possibly selective associations; see Materials\u00a0and\u00a0methods). Under the hypothesis that antibiotic use is either a consequence of AMR or spuriously correlated with AMR, the strength of an association between the use of an antibiotic and the incidence of a variant should not depend on whether the association fulfills the criteria for possible selection.\n\nTo test this hypothesis, we identified possibly selective associations in our data and we examined whether they were equally likely to be positive compared to other associations. We constructed quasi-Poisson multivariable regression models where the total antibiotic use was replaced with the use of specific antibiotics, along with the incidence control and connectivity covariates (Figure 2a and b). Ward type and size, which were weak predictors of incidence in Figure 1 models, were excluded to avoid introducing additional noise. The 17 variant-specific models each included all antibiotic groups as predictors, including antibiotic classes not expected to exert any direct selection pressure on the variant, such as aminoglycosides on E. coli. The models yielded 187 coefficients of which 19 (10.2%) represented possibly selective associations (see Materials\u00a0and\u00a0methods). The mean percent change in incidence for every doubling of consumption volume in possibly selective associations was 6.5%, compared to 0.9% in other associations (95% CI of the difference of the means, 0.6 to 10.6%). Three of the four strongest possibly selective associations involved cefotaxime-ceftriaxone, which selected for 3GC-resistant E. coli, K. pneumoniae and P. aeruginosa; the other involved carbapenems selecting for carbapenem-resistant P. aeruginosa. Overall, the larger magnitude of the coefficients of possibly selective associations suggests that the local, ward-level selection of drug-resistant variants by antibiotics is measurably pervasive throughout our hospital network.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/54795/elife-54795-fig2-v2.jpg)\n\n**Figure 2.:** Shown are the predicted percent changes in incidence (points) with 95% confidence interval (bars) for each variant in each ward (n\u00a0=\u00a0357) for every doubling in the consumption volume of 11 antibiotic groups, based on multivariable quasi-Poisson regression models of the incidence of each variant in each ward (n\u00a0=\u00a0357) that included the connectivity and incidence control covariates (see Materials\u00a0and\u00a0methods). Associations classified as possibly selective (n\u00a0=\u00a019) are indicated by a \u2018PS\u2019 mark. Models involving A. baumannii and E. faecium, which exhibited larger 95%\u00a0confidence\u00a0intervals due to smaller incidence of the resistant variants, are shown with separate scales (panel b) for readability. (c), possibly selective associations had higher coefficients compared to other associations. The center line indicates the median; box limits indicate the upper and lower quartiles; whiskers indicate the 1.5x interquartile range; points indicate the individual coefficients. **p<0.01, two-sided Mann\u2013Whitney U-test. Acronyms of pathogen variants and antibiotics are listed in Tables 1 and 2, respectively.\n\n### Quantifying the drivers of resistance to first-line sepsis therapy\n\nFrom a clinical standpoint, the most immediate consequence of AMR is the failure to control sepsis with empirical antibiotics, mainly carbapenems and the non-antipseudomonal 3GCs cefotaxime and ceftriaxone. Because such failure can equally result from acquired or intrinsic resistance, the incidence of intrinsically resistant pathogens such as E. faecium is of equal clinical importance as that of pathogen variants with acquired resistance mechanisms. To examine the impact of antibiotics on both intrinsic and acquired resistance, we modeled the cumulative incidence of infections with 3GC- and/or carbapenem-resistant variants of the selected pathogens (see Materials\u00a0and\u00a0methods).\n\nIn these models, antibiotic use was the strongest predictor of the incidence of both carbapenem-resistant (6.5% increase in incidence for every doubling of consumption volume, 95% CI, 2.5 to 11.0%) and 3GC-resistant infections (5.1% increase, 95% CI, 2.7 to 7.5%; Figure 3a). Connectivity better predicted the incidence of carbapenem-resistant infections (4.8%, 95% CI, \u22120.4 to 10.7%) compared with 3GC-resistant infections (1.0%, 95% CI, \u22122.3 to 4.5%), in line with the comparatively stronger association of connectivity with the incidence of individual carbapenem-resistant variants (Figure 1). Ward size had no measurable effect in either model. Carbapenem-resistant infections were not associated with ward type, while 3GC-resistant infections were positively associated with progressive care units and negatively associated with intensive care and blood cancer units (Figure 3a). These findings provide an unambiguous link between population-level antibiotic use and global resistance to empirical sepsis therapy that was robust to confounding by connectivity, microbiological sampling patterns, and other ward characteristics.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/54795/elife-54795-fig3-v2.jpg)\n\n**Figure 3.:** (a) Predicted percent change in incidence (points) with the 95% confidence interval (bars) of all 3GCR and CR infections for every doubling of antibiotic use, connectivity (estimated no. of patients infected with the same variant entering the ward), ward size (no. of beds); and ward type, based on quasi-Poisson regression models of the pooled incidence of 3GCR and CR infections in each ward (n\u00a0=\u00a0357) that included the incidence control covariate (see Materials\u00a0and\u00a0methods). (b) Predicted incidence and 95% confidence bands of infections with 3GCR and CR pathogen variants depending on the consumption of CTX/CRO, IPM/MEM, and TZP, in models that included connectivity, the incidence control, and the consumption of 8 other antibiotic groups as covariates. (c) Consumption patterns of CTX/CRO, IPM/MEM, and TZP per ward in the hospital network. Variants classified as 3GCR were 3GCREC, 3GCRKP, CRKP, 3GCREB, CREB, PA, CRPA, AB, CRAB, EF, VREF, and MRSA; the CR category included CREC, CRKP, CREB, CRPA, CRAB, EF, VREF, and MRSA. Acronyms of pathogen variants and antibiotics are listed in Tables 1 and 2, respectively.\n\nTo identify the antibiotics whose use was most strongly associated with global carbapenem and cefotaxime-ceftriaxone resistance, we examined the effect of replacing the total antibiotic use in our models with\u00a0individual antibiotic classes, similar to Figure 2 models. Besides the consumption of cefotaxime-ceftriaxone and carbapenems, the consumption of piperacillin-tazobactam was a strong predictor of the incidence of both 3GC- or carbapenem-resistant infections (Table 3). To visualize the independent associations of incidence with the use of cefotaxime-ceftriaxone, carbapenems and piperacillin-tazobactam, we plotted the average ward-level infection incidence predicted by variations in the consumption volumes in models including the connectivity and incidence control covariates (Figure 3b). The incidence of 3GC-resistant infections was predicted by the consumption of cefotaxime-ceftriaxone (4.8% increase, 95% CI, 1.5 to 8.2%) but not carbapenems (1.4% increase, 95% CI, \u22121.7 to 4.6%). In the same vein, the use of carbapenems, but not 3GCs, predicted the incidence of carbapenem-resistant infections, although with a wide uncertainty margin (5.1% increase, 95% CI, \u22120.6 to 11.1%). Strikingly, the use of piperacillin-tazobactam predicted the incidence of both 3GC-resistant (5.9% increase, 95% CI, 2.9 to 9.0%) and carbapenem-resistant infections (10.3% increase, 95% CI, 5.0 to 16.0%). In both models, the amplitude of the piperacillin-tazobactam coefficient outweighed those of all other antibiotics (Table 3). Overall, these results indicate a specific association of cefotaxime-ceftriaxone and, to a slightly lesser extent, carbapenem use with resistance to the same antibiotic group, but not other groups, and identify a major role of piperacillin-tazobactam consumption in predicting the incidence of both 3GC- and carbapenem-resistant infections. To propose a unified ranking of the population-level impact of antibiotics on 3GC and carbapenem resistance, a final model was constructed by pooling all 3GC- and carbapenem-resistant variants together (Table 3). In this model, piperacillin-tazobactam and cefotaxime-ceftriaxone had the largest positive coefficients while 1GC/2GC and coamoxiclav had the largest negative coefficients (Table 3).\n\n**Table 3.**\n Associations between the consumption volume of 11 antibiotics and the cumulative incidence of 3GC- and/or carbapenem-resistant infections in 357 wards.\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th colspan=\"3\">Predicted percent change in incidence (95% CI) per doubling of consumption volume</th>\n    </tr>\n    <tr>\n      <th>Antibiotics</th>\n      <th>3GCR incidence model</th>\n      <th>CR incidence model</th>\n      <th>3GCR or CR incidence model</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>TZP</td>\n      <td>5.9 (2.9, 9.0)</td>\n      <td>10.3 (5.0, 16.0)</td>\n      <td>6.1 (3.1, 9.2)</td>\n    </tr>\n    <tr>\n      <td>CTX/CRO</td>\n      <td>4.8 (1.5, 8.2)</td>\n      <td>1.8 (-3.7, 7.6)</td>\n      <td>4.6 (1.4, 8.0)</td>\n    </tr>\n    <tr>\n      <td>AMX</td>\n      <td>2.7 (-1.5, 7.0)</td>\n      <td>3.6 (-3.4, 11.2)</td>\n      <td>2.7 (-1.4, 7.0)</td>\n    </tr>\n    <tr>\n      <td>CTZ/FEP</td>\n      <td>1.7 (-1.0, 4.5)</td>\n      <td>3.3 (-1.5, 8.3)</td>\n      <td>1.6 (-1.1, 4.4)</td>\n    </tr>\n    <tr>\n      <td>IPM/MEM</td>\n      <td>1.4 (-1.8, 4.7)</td>\n      <td>5.1 (-0.6, 11.1)</td>\n      <td>1.5 (-1.6, 4.8)</td>\n    </tr>\n    <tr>\n      <td>FQ</td>\n      <td>0.5 (-1.9, 2.9)</td>\n      <td>\u22121.2 (-5.2, 3.0)</td>\n      <td>0.4 (-1.9, 2.8)</td>\n    </tr>\n    <tr>\n      <td>OXA</td>\n      <td>\u22120.6 (-2.2, 1.1)</td>\n      <td>\u22122.0 (-4.6, 0.7)</td>\n      <td>\u22120.6 (-2.2, 1.0)</td>\n    </tr>\n    <tr>\n      <td>AMIN</td>\n      <td>\u22121.7 (-4.3, 0.9)</td>\n      <td>\u22121.1 (-5.4, 3.6)</td>\n      <td>\u22121.7 (-4.3, 0.9)</td>\n    </tr>\n    <tr>\n      <td>VAN/TEC</td>\n      <td>\u22122.3 (-4.9, 0.4)</td>\n      <td>\u22123.8 (-8.3, 0.9)</td>\n      <td>\u22122.3 (-4.9, 0.5)</td>\n    </tr>\n    <tr>\n      <td>1GC/2GC</td>\n      <td>\u22122.1 (-4.0,\u20130.2)</td>\n      <td>\u22122.3 (-5.4, 1.0)</td>\n      <td>\u22122.1 (-4.0,\u20130.3)</td>\n    </tr>\n    <tr>\n      <td>AMC</td>\n      <td>\u22124.1 (-7.0,\u20131.1)</td>\n      <td>\u22125.8 (-10.6,\u20130.7)</td>\n      <td>\u22124.1 (-7.0,\u20131.1)</td>\n    </tr>\n  </tbody>\n</table>\n\n_NOTE. a Percent change was estimated from multivariable quasi-Poisson regression models that included the connectivity and the incidence control covariates (see Materials\u00a0and\u00a0methods). 3GCR, 3rd-generation cephalosporins-resistant infections; CR, carbapenem-resistant infections. Acronyms of antibiotics are listed in Table 2._\n\n## Discussion\n\nUnderstanding the respective impacts of antibiotic use and connectivity on the incidence of drug-resistant infections is essential for optimizing interventions against AMR. Pathogens whose incidence is strongly predicted by antibiotic use might be most effectively targeted by antibiotic restrictions. On the other hand, infection control interventions might be most relevant against pathogens whose incidence is predicted by connectivity. By applying a metapopulation framework to explain variations in infection incidences across a large network of hospital wards, we found that both antibiotic use and connectivity independently contribute to ward-level AMR in several pathogen species. Our study also provides the first quantitative ranking of the predicted impact of several key antibiotics on the global burden of drug-resistant infections in a hospital network.\n\nWhile previous theoretical work based on modeling and simulation has predicted how patient transfers contribute to AMR prevalence through pathogen dissemination, they have typically considered only a single resistant variant or used a generic simulated pathogen (Donker et al., 2017; Donker et al., 2010; Vilches et al., 2019). Our study provides empirical evidence to support these predictions in general, while identifying substantial variation in the response to connectivity between different species and variants (Figure 1). In our closed network model of the hospital, the influence of connectivity on the incidence of a pathogen variant is expected to be higher if the variant is endemic to the hospital, its prevalence varies across wards, and changes from one variant category to another are rare. If a variant is frequently introduced from outside of the network, the contribution of within-network movements, hence of connectivity, to the prediction of the local incidence will be diminished. The measured influence of connectivity should also be reduced if a variant frequently undergoes transitions between resistance categories (e.g., by evolving or losing resistance) because local emergence will affect incidence more strongly than inter-ward introduction.\n\nConsistent with this theoretical interpretation of connectivity, we found that its influence was strongest in the hospital-endemic pathogens P. aeruginosa and E. faecium (Blanc et al., 2007; Wurster et al., 2016; Zhou et al., 2020). Intriguingly, MRSA incidence was not predicted by connectivity. This is at odds with the classical perception of MRSA as typically nosocomial and, by extension, hospital-endemic. However, available evidence does not strongly support the qualification of MRSA as a hospital-endemic pathogen in our setting. In France, the proportions of MRSA among S. aureus are comparable in community and hospital settings, at about 10% (ECDC, 2019; ONERBA France, 2018; Sant\u00e9 Publique France, 2019). MRSA population structures in hospitals and the community are comparably dominated by the so-called ST8 Lyon clone which is equally found in in- and outpatients (Dauwalder et al., 2008). Finally, MRSA infections were especially diffuse in our network, with a concentration index even lower than that of the less-resistant S. aureus infections (Table 1). Collectively, this does not support the conclusion that MRSA concentrates in French hospitals compared to the community, which might explain why connectivity did not predict MRSA incidence in our study.\n\nThe incidence of global carbapenem-resistant infections was strongly predicted by connectivity (Figure 3), with an effect size comparable to that of antibiotic use, while connectivity did not predict global 3GC-resistant infections. This suggests that reducing connectivity with infection control interventions could be more effective at preventing the spread of carbapenem-resistant pathogens between wards compared to 3GC-resistant pathogens. Contrasting with hospital-endemic pathogens, connectivity was a comparatively weaker predictor for community-associated variants (3GC-resistant E. coli and K. pneumoniae) that enter from outside the hospital network, and in variants whose resistance is selected locally because they can frequently shift between susceptible and resistant categories. Indeed, the weak association of connectivity with the incidence of resistant E. cloacae complex variants, for instance, might be explained by the plasticity of their resistance profile, facilitating their local selection. While resistance in E. coli and K. pneumoniae typically requires gene acquisition (Manges et al., 2019; Wyres and Holt, 2016), E. cloacae complex can resist cephalosporins and carbapenems through increased AmpC beta-lactamase and decreased porin expression (Pavez et al., 2016; Babouee Flury et al., 2016; Lee et al., 2017). Such resistance emerges through adaptation and de novo mutations that are rapidly selected from the local reservoir of susceptible progenitors under antibiotic selection pressure (Hawken et al., 2018; Moradigaravand et al., 2016).\n\nEcological studies have repeatedly identified associations between the use of antibiotics and AMR prevalence, but such associations do not necessarily reflect AMR selection (Schechner et al., 2013). Specific associations at the level of antibiotic and variant pairs are not all equally likely to result from selection by antibiotics or from increased antibiotic use in response to AMR. Based on medical and biological reasoning, we identified associations more likely to represent possible selection and showed that the average strength of these associations outweighed the others (Figure 2). Noteworthy, several associations with a sizeable strength could not be formally classified as possibly selective but might reflect co-selection. The association of cefotaxime-ceftriaxone with carbapenem-resistant variants in K. pneumoniae, but not in E. coli, possibly reflected selection for the highly frequent 3GC-resistance in carbapenemase-producing K. pneumoniae. This contrasts with E. coli Oxa48 producers that frequently remain susceptible to 3GCs but resistant to piperacillin-tazobactam (Huang et al., 2014), consistent with the strong association between the use of piperacillin-tazobactam and the incidence of carbapenem-resistant E. coli infections (Figure 2a). These findings suggest that the associations between antibiotic use and resistance preferentially reflected AMR selection by antibiotics rather than adaptation of antibiotic use in response to AMR. However, this observation does not eliminate temporal ambiguity between antibiotic use and resistance in our models. Further research using, for instance, multi-state models or time-series analyses, may better clarify this ambiguity.\n\nBecause intrinsic and acquired resistances to an antibiotic equally lead to treatment failure, we modeled the pooled incidences of infections with 3GC- or carbapenem-resistant variants of the ESKAPE2 pathogens, including those with intrinsic resistance. This approach allowed us to rank antibiotics by their potential association strength with global AMR. The use of piperacillin-tazobactam and cefotaxime-ceftriaxone predicted 3GC resistance and the use of piperacillin-tazobactam predicted carbapenem resistance (Figure 3). The positive association of the use of piperacillin-tazobactam with both 3GC- and carbapenem-resistant infections deserves further attention. Based on its in vitro efficacy against extended-spectrum beta-lactamase (ESBL)-producing enterobacteria, piperacillin-tazobactam has been repeatedly considered as an alternative drug of choice in carbapenem-sparing strategies (Harris et al., 2015; Peterson, 2008). The strategy of replacing carbapenems with piperacillin-tazobactam assumes: (1), that piperacillin-tazobactam is clinically as effective as carbapenems on piperacillin-tazobactam-susceptible pathogens; and (2), that AMR selection under piperacillin-tazobactam pressure is weaker than under carbapenem pressure, as reflected by a recent consensus-based ranking of beta-lactams for de-escalation therapy (Weiss et al., 2015). Yet, in several recent reports including a multicenter randomized clinical trial, piperacillin-tazobactam treatment of sepsis with ESBL-producing enterobacteria was associated with poorer outcomes compared to carbapenem treatment (Harris et al., 2018; Ofer-Friedman et al., 2015; Tamma et al., 2015). From an epidemiological standpoint, studies of the respective associations of piperacillin-tazobactam and carbapenem use with AMR yielded conflicting results. At the population level, the incidence of carbapenem-resistant enterobacteria was negatively associated with the use of piperacillin-tazobactam in a 5 year, single-hospital trend analysis study (McLaughlin et al., 2013). At the patient level, however, the exposure to piperacillin-tazobactam was associated with the acquisition of carbapenem-resistant P. aeruginosa in a meta-analysis (Raman et al., 2018) and carbapenem-resistant Gram-negative bacilli in a single-hospital prospective cohort study (Marchenay et al., 2015). If confirmed in other settings, our finding that piperacillin-tazobactam use correlates with both 3GC- and carbapenem-resistant infections might call for a reevaluation of the rationale of recommending piperacillin-tazobactam over other drugs for ecological reasons. As a note of caution, our observation that piperacillin-tazobactam use predicted a higher incidence of 3GC- and carbapenem-resistant variants does not imply selection for acquired resistance through any specific mechanism such as carbapenemase production. We also note that the link between piperacillin-tazobactam use and global resistance resulted from the accumulation of small, positive associations with most 3GC- and carbapenem-resistant variants, including those with intrinsic resistance (Figure 2). Because of this, links between piperacillin-tazobactam use and 3GC- or carbapenem-resistant infections might go undetected in studies focusing on individual pathogen variants.\n\nOur study has several limitations. First, we did not consider the role of healthcare workers in pathogen transmission, nor the role of direct patient admissions from the community. Second, although our 3-level categorical coding of ward types captures variations in patient fragility within our study system, such a coarse-grained classification could potentially leave residual confounding. Third, the small sample sizes of resistant variants of E. faecium and A. baumannii limited our ability to draw robust inferences regarding these variants and further studies are required to confirm these results (Arias and Murray, 2012; Hsu et al., 2017). Finally, our findings reflect the AMR ecology of a Western European area, with generally lower prevalences of carbapenemase-producing pathogens, vancomycin-resistant E. faecium, and MRSA than in other regions of the world.\n\nTo conclude, the modeling of the incidence of infections with seven major bacterial species and their drug-resistant variants in hospital wards using a metapopulation framework indicates that both antibiotic use and inter-ward connectivity may predict the burden of AMR in a variant-specific fashion. This supports the need to tailor strategies against AMR to the targeted pathogen. Along with novel hospital-level insights into the drivers of AMR, our work illustrates the application of the methodological framework of metapopulation ecology to the problem of hospital AMR. Applying this framework to other healthcare settings could help inform the local and regional antibiotic stewardship and infection control strategies.\n\n## Materials and methods\n\n### Data collection and compilation\n\nWe obtained data on infection incidence from the information system of the Institut des Agents Infectieux, the clinical microbiology laboratory of the Hospices Civils de Lyon, a group of university hospitals serving the Greater Lyon urban area (~1.4 million inhabitants) of France. For each ward from October 1st, 2016 to September 30th, 2017, we extracted the number of clinical samples, after exclusion of screening samples, positive for at least one of the ESKAPE2 species (as determined using Vitek MS MALDI-ToF identification, bioM\u00e9rieux), falling into one of the resistance variant categories defined in Table 1. Resistance was based on available results for susceptibility to, where applicable, ceftriaxone, cefotaxime, ceftazidime, cefepime, imipenem, meropenem, oxacillin, and vancomycin. Samples were deduplicated per patient, ward, and pathogen variant, so that only the first sample positive for the same variant in the same ward was considered for each patient. Patients positive for multiple variants and/or sampled from multiple wards were considered as multiple, distinct infection episodes. Antibiotic use in defined daily doses (ddd) of all systemic antibacterial drugs (ATC classification term J01), as well as of specific (groups of) molecules defined in Table 2, were extracted from the pharmacy department information system. For each pair of wards, the number of patient transfers was extracted from the hospital information system along with, for each ward, the number of beds, the type of medical activity and the number of patient admissions. Because of the aggregated nature of the data, informed consent was not sought, in accordance with French regulations. Our main response variable was the number of patients per ward infected with each pathogen variant, expressed as incidence over 1y.\n\n### Controlling for microbiological sampling patterns\n\nThe estimation of a causal effect between antibiotic use and the incidence of infections with a given pathogen variant is biased by variations in the distribution of infections across wards, because this distribution influences both antibiotic prescriptions and microbiological sampling efforts. A causal network representation of this situation is shown in Figure 1\u2014figure supplement 2. The distribution of infections is difficult to determine and to represent as a model covariate, preventing its direct inclusion in our models. To circumvent this issue, the unrepresentable distribution of infections was replaced with a proxy variable that we called the incidence control, designed to capture variations of microbiological sampling frequencies and of the sampled anatomic sites (e.g. urinary vs. respiratory tract) across wards. Of note, ward size and type were also assumed to correlate with the infection distribution and to contribute to the proxy adjustment. However, the inclusion of ward size and type had a negligible impact on model fit compared to the incidence control value, suggesting that this latter variable captures most of the signal.\n\nThe incidence control was defined as the expected incidence of a pathogen variant explained by microbiological sampling alone, under the assumption that the pathogen incidence is conditionally independent of the ward given the sampled anatomic site. Anatomic sites were assigned to seven site groups, namely, skin and soft tissues, respiratory tract, urinary tract, digestive tract, vascular access devices, sterile sites (such as cerebrospinal fluid and peripheral blood cultures) and other sites.\n\nThe incidence control was computed as follows for each pathogen variant in each ward. In this section, wards are indexed by $i=1,\u2026,357$, groups of anatomical sites are indexed by $j=1,\u2026,7$, and pathogen variants are indexed by $k=1,\u2026,17$. For conciseness, we introduce the special case $k=0$ to denote a sample not positive for any of the considered pathogen variants. Contrary to the incidence calculation described in the previous section, all samples were considered without deduplication to account for how repeated sampling increases the likelihood of pathogen detection.\n\nFirst, for each pathogen variant $k$ and group of anatomic sites $j$, we computed the average probability of variant detection aggregated for all wards in the network as\n\n$$\nPVariant=kSite=j=\\frac{\\sumi=1357NVariant=k,Site=j,Ward=i}{\\sumi=1357NWard=i,Site=j}\n$$\n\nwhere $NVariant=k,Site=j,Ward=i$ is the number of samples in ward $i$ taken from site $j$ positive for the variant $k$ (or, if $k=0$, negative for all variants) and the denominator denotes all samples taken irrespective of their result. For simplicity, we assumed independence between the pathogen variants isolated from a same sample and between samples collected from a same patient. Of note, most patients (n = 22,646 / 26,064; 86.9%) were sampled only once.\n\nTo account for repeated sampling, we considered the probability that $M$ samples from a site $j$ in a patient remained negative for pathogen variant $k$,\n\n$$\nP(Variant\\neqk|M,Site=j)=\u00a0[1\u2212P(Variant=k|Site=j)]^{M}.\n$$\n\nSampling from multiple sites was represented using the vector notation $M={M_{1},\u2026,M_{7}}$ to denote the respective numbers of samples taken from site groups 1 to 7. For instance, $M={1,0,2,0,0,0,0}$ denotes 1 skin or soft tissue sample and 2 urinary samples. Using this notation, the probability that all samples from all sites remained negative is,\n\n$$\nP(Variant\\neqk|M)=\\prodj=17P(Variant\\neqk|M_{j},Site=j),\n$$\n\nand the probability that at least one sample was positive for variant $k$ is,\n\n$$\nPVariant=kM=1-PVariant\\neqkM.\n$$\n\nThis relationship was used to calculate the expected incidence of variant $k$, that\u00a0is the number of patients with at least one sample positive for $k$, by considering in each ward $i$ the number $N(i,M)$ of patients with the same number of samples from each site $M$ and the probability of being tested positive given $M$. The expected incidence of variant $k$ in ward $i$ was then defined as,\n\n$$\nN(Variant=k|Ward=i)=\\sumM\\in\u03a9N(i,M)\\timesP(Variant=k|M)\n$$\n\nwhere $\u03a9$ denotes the set of possible sample combinations.\n\nClearly, variations in\u00a0the incidence control value between wards depend only on the number and sites of microbiological samples taken, thus reflecting the incidence and types of bacterial infections at ward-level independent of between-ward variations of pathogen community structure. Under our assumption that the incidence control is a valid proxy to the unrepresentable distribution of infections in each ward, the incidence control should correlate both with antibiotic use and the incidence of infections. Bivariate analyses confirmed that the incidence control correlated with the observed cumulative incidence of all bacteria (R\u00b2=0.96, 95% CI, 0.95 to 0.96, Figure 1\u2014figure supplement 3) and, to a lesser extent, with the total antibiotic use (R\u00b2=0.34, 95% CI, 0.25 to 0.40, Figure 1\u2014figure supplement 4). These correlations remained substantial for most pathogen variants and specific antibiotics. The incidence control was added as an adjustment covariate in all models predicting infection incidence. The adjusted models, thus, predicted the incidence of infections in excess of what would be expected based on variations in sampling intensity alone.\n\n### Connectivity and other ward characteristics\n\nIn ecology, habitat quality refers to the resources and conditions that allow individuals and populations to persist in a location (Hall et al., 1997), such as food or cover from predators (Johnson, 2005). We described the habitat quality of hospital wards for bacterial pathogens using explanatory variables adapted from Hanski\u2019s metapopulation models (Hanski, 1998; Hanski, 1994), namely patch size and connectivity, along with additional variables capturing patient fragility and antibiotic selection pressure. We considered each ward within the hospital system as a distinct habitat patch, i. We used the number of beds both as a measure of patch size (capturing the number of patients available for colonization) and as a proxy for contact opportunities between patients within the same ward.\n\nThe connectivity estimate was implemented as a proxy to the unobservable number of introductions of each variant in each ward during the study period (Donker et al., 2017). To estimate this quantity, we measured directional, partial connectivity Sj,i from ward j to ward i as the number of patients transferred directly from j to i, times the inferred probability that each patient tested positive for the variant. Partial connectivity, thus, was the expected number of positive patients transferred from j to i. Finally, connectivity for ward i was the sum of all directional connectivities, Si =\u00a0\u2211jSj,i. This estimation procedure relies on simplifying assumptions, namely that all positive cases are detected and remain positive upon transfer to the downstream ward; and that the probability and destination ward of a patient transfer does not depend on infection.\n\nAlong with size and connectivity, wards were characterized by ward type based on patient fragility, and antibiotic consumption. Ward type was coded as a categorical variable with the following three levels: general wards, intermediate (progressive) care units, and intensive care and blood cancer units. Antibiotic use was normalized by dividing by\u00a0the number of beds in each ward and expressed in ddd/bed/y.\n\n### Statistical analysis\n\nThe statistical unit was the individual ward (n\u00a0=\u00a0357) in all analyses. We used the asymptotic Simpson index (Simpson, 1949), also known as the Hunter-Gaston index (Hunter and Gaston, 1988), to determine the probability that two random isolates of a given variant were isolated in the same ward or that two random doses of a given antibiotic were delivered in the same ward. The index is defined as [\u2211ni (ni-1)]/[N (N-1)] where ni is the number of infection episodes (or antibiotic doses) detected (or delivered) in ward i and Ni =\u00a0\u2211ni is the total number of infection episodes (or antibiotic doses). In ecology, the Simpson index is typically used to measure biodiversity by estimating the probability that two individuals from a sample belong to the same species (Simpson, 1949). Here, we use this index to examine the distribution of sampling locations relative to the taxa, measuring the probability that two infection episodes occur, or two antibiotic doses are consumed, in the same ward. Hence, we used the term \u2018concentration index\u2019 to avoid confusion with a diversity measure. The iNext R package was used to determine bootstrap-based 95% confidence intervals of the concentration index (Hsieh et al., 2016).\n\nModels of infection incidence were constructed using multivariable quasi-Poisson regression of the form\n\n$$\nE(Incidence\u00a0|x)=exp\u2061(Intercept+\\beta_{1}x_{1}+\\beta_{2}x_{2}+\u2026),\u00a0Var(Incidence)=\\theta\u00a0E(Incidence\u00a0|x)\n$$\n\nwhere $E(\u22c5)$\u00a0denotes expectation, $x$ is the vector of predictors, such as antibiotic consumptions, the $\\beta$\u2019s are model coefficients, $Var(\u22c5)$ denotes variance and $\\theta$ is the overdispersion parameter of the quasi-Poisson model. The overdispersion parameter is used to relax the Poisson assumption of equality of the expectation and variance of the response variable. We used the quasi-Poisson distribution because we found evidence of both under- and overdispersion, as evidenced by fitted quasi-Poisson dispersion parameters ranging from 0.24 (strong underdispersion, found for carbapenem-resistant A. baumannii in Figure 1 model) to 2.5 (moderate overdispersion, found for less-resistant E. faecium) (Supplementary file 1 Table 1b). We favored the quasi-Poisson model over the alternative, negative binomial model because the latter gives greater weight to smaller sites, whereas the former gives greater weight to the larger sites (Ver Hoef and Boveng, 2007). In our application, greater weight should be given to wards with greater incidence rather than to those with less.\n\nWe constructed a model for each variant. The response variable was the deduplicated patient counts. All non-categorical explanatory variables including the incidence control, ward size, connectivity and antibiotic use were log2-transformed before further analyses. To avoid negative infinity values from this transformation, all zeroes were first converted to half the minimum non-zero value. This transformation was associated with better model fit (using the model structure of Figure 1), in terms of Akaike information criterion (with Poisson distribution), compared with: (1) replacing zeroes with the minimum non-zero value before taking logs; (2) adding one to zero values before taking logs; or (3) avoiding log transformation. The log2 transformed data were used for all subsequent analyses.\n\nTo ease interpretation of model coefficients, we converted the raw coefficients $\\beta^$ from all models to percent changes in infection incidence, equal to $100\\times(e^{\\beta^}-1)$. All analyses used R software version 3.6.0.\n\n### Possibly selective associations between antibiotic use and resistance\n\nWe examined criteria to identify a priori possibly selective associations between antibiotic use and resistance. The criteria were based on medical and biological considerations, namely, that antibiotics inactive against a variant are unlikely to be prescribed in response to this variant\u2019s prevalence; and that antibiotics are most likely to select for a variant when resistance provides a specific advantage, hence, when the variant is not resistant to more potent antibiotics (e.g., CTX/CRO is more likely to select for PA than for CRPA in which carbapenem resistance provides no additional benefit under CTX/CRO pressure). This rationale led to the following criteria: (1) the variant is always resistant to the antibiotics of interest; (2) the variant is not resistant to antibiotics more potent (in terms of spectrum or efficacy) than the antibiotics of interest; and (3) the antibiotics of interest can be plausibly used against the variant in empirical therapy. A total of 19 associations fulfilled the criteria for possibly selective associations: 3GCREC with CTX/CRO; CREC with IPM/MEM; KP with AMX; 3GCRKP with CTX/CRO; CRKP with IPM/MEM; EB with AMC; C3GREB with CTX/CRO and TZP; CREB with IPM/MEM; PA with CTX/CRO; CRPA with IPM/MEM; SA with AMX; MRSA with C1G/C2G, OXA and AMC; AB with CTX/CRO; CRAB with IPM/MEM; EF with CTX/CRO; and VREF with VAN/TEC. Of note, the associations not fulfilling the criteria for possible selection can be interpreted as negative controls in our models, and their coefficients are expected to be distributed around zero (null distribution) in the absence of residual confounding. In line with this interpretation, the coefficients of most of the negative control associations followed a near-zero-centered distribution (Figure 2c), suggesting that residual confounding was negligible in the adjusted models.\n\n### Pooled analysis of CTX/CRO- and IPM/MEM-resistant variants\n\nTo model the cumulative incidences of 3GC- and carbapenem-resistant infections, pathogen variants were pooled into resistance categories. When resistance to CTX/CRO or IPM/MEM was not determined by design (such as 3GC resistance in 3GCREC) or by intrinsic resistance (such as 3GC resistance in E. faecium), variants were classified as resistant when the proportion of resistance in our setting was above 80%. This less-stringent resistance criterion, compared to the criterion used to determine possibly selective associations, was chosen to avoid the exclusion of variants that are mostly resistant to an antibiotic group, which would bias pooled analyses. Applying the 80% threshold for the proportion of resistance led to classifying CRKP and CREB as 3GC-resistant (91% and 93% 3GC resistance, respectively) but not CREC (61% 3GC resistance); and EF and VREF as carbapenem-resistant (84 and 100% carbapenem resistance, respectively, inferred from ampicillin resistance [Weinstein, 2001]). Overall, the 3GCR category included 3GCREC, 3GCRKP, CRKP, 3GCREB, CREB, PA, CRPA, AB, CRAB, EF, VREF, and MRSA; and the CR category included CREC, CRKP, CREB, CRPA, CRAB, EF, VREF, and MRSA.\n\n### Data and software code availability\n\nAll data and software code that support the findings of this study are available at: Shapiro, 2020, https://github.com/rasigadelab/metapop (copy archived at https://github.com/elifesciences-publications/metapop).\n",
+      "created_at": "2025-12-02T20:50:38.572080Z"
+    },
+    {
+      "id": "82705133-5c97-4615-8585-45eb82ff1505",
+      "submission_id": "23493f31-4737-4a38-ae1d-7957d98b0b3b",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Ben S Cooper, Mahidol University Thailand\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.54795.sa1](https://doi.org/10.7554/eLife.54795.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nA metapopulation is a group geographically separated sub-populations of a species where there are interactions between the sub-populations. The concept has been usefully applied to understand the impact of patient movements on the spread of drug-resistant bacteria in healthcare settings on a number of previous occasions, but this paper represents the first application of the concept to a large data-set including multiple bacterial species and detailed data on antibiotic usage, another key driver of the spread of resistance. The analysis provides important new insights about how patterns of patient movement within healthcare settings and antibiotic exposures both contribute to the spread of antimicrobial resistance.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Metapopulation ecology links antibiotic resistance, consumption and patient transfers in a network of hospital wards\" for consideration by eLife. Your article has been reviewed by two peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Eduardo Franco as the Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Tjibbe Donker (Reviewer #1); Rene Niehus (Reviewer #2).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nAs the editors have judged that your manuscript is of interest, but as described below that additional analysis may be required before it is published, we would like to draw your attention to changes in our revision policy that we have made in response to COVID-19 (https://elifesciences.org/articles/57162). First, because of disruptions to normal working life for many, we will give authors as much time as they need to submit revised manuscripts. We are also offering, if you choose, to post the manuscript to bioRxiv (if it is not already there) along with this decision letter and a formal designation that the manuscript is 'in revision at eLife'. Please let us know if you would like to pursue this option. (If your work is more suitable for medRxiv, you will need to post the preprint yourself, as the mechanisms for us to do so are still in development.)\n\nSummary:\n\nIn this work, the authors study the very important question of how population level antibiotic resistance in clinically important bacterial taxa is driven by ward-level antibiotic use and patient transfer between wards. For this the authors use clinical specimen data, antibiotic use data and ward-connectivity data aggregated across one year. They perform a between ward comparison by applying ecological metapopulation methods to correct for confounding. They find, in agreement with previous evidence, that nosocomial and carbapenem resistance pathogen incidence is positively associated with connectivity, and that antibiotics have varying effects depending on the pathogen variant, with Piperacillin-tazobactam appearing to select most strongly for pathogens resistant to empirical treatment. More broadly, this would mean that different pathogen variants require either antibiotic stewardship or patient isolation interventions.\n\nEssential revisions:\n\nCurrently the description of the methods is incomplete and makes it difficult to assess the validity of the results. Specifics are described below.\n\n1) Is this incidence control value (Incidence(Variant|Ward) ) calculated for each of the 357 wards, or for each of the 3 ward types? This should be made clearer in the text, and also by introducing indexing into the mathematical expressions.\n\n2) The authors build a method to account for\n\ni) variants being associated with diff anatomical sites P(Variant|Location)\n\nii) different wards differing in which anatomical sites are typically sampled, and in how many samples are typically taken per patient P( No Variant | N, Ward )\n\nFrom the definition of P( No Variant | N, Ward ) it is not clear whether the authors also account for the fact that samples from one patient are not independent (in terms of the sampled anatomical site) and a definition of N(I,Ward) is missing. Is this the number of samples specific from a patient with index i, being disaggregated into location and ward, or is it the total number of samples in the ward disaggregated into the different anatomical sites? The difference is important: if N(I,ward) is the total number of ward samples disaggregated into anatomical sites, then the expression P(No Variant|N, Ward) assumes that samples taken from a patient i are independent.\n\n3) In Data collection and compilation the authors say that clinical samples are deduplicated, resulting in one sample per patient, but in the section after it seems that multiple samples per patient are used for to compute incidence control. It is correct that for the incidence control value samples where used without deduplication, but for the regression model fit were deduplicated counts used? This should be made clearer.\n\n4) Using a priori expected selective antibiotic-variant pairs the authors show that the model manages to pick up more of those pairs than others. This is expected: even when substantial confounding increases all individual antibiotic-variant associations, a direct causal effect in a abxA-variantX pair is expected to make it easier to pick up this association. It is not clear from the Materials and methods whether a multivariate model was used here. Please provide the regression equation in the Materials and methods to allow the reader to follow what was done. If it is univariate, it is to be expected that looking into different individual antibiotics will introduce a lot of new confounding from association with other antibiotic treatments. What would be useful here is a multivariate analysis of individual antibiotics (asking about the effect of each, given the effect of all the other treatment), and importantly including a few additional predictors (treatments) that one would expect to NOT be correlated with AMR (negative control). A zero-centred distribution of the negative control \u03b2 parameters would then indicate lack of confounding.\n\n5) A Poisson model was used. Typically Negative Binomial models will fit these type of data better as there's usually some overdispersion. The effect will be wider confidence intervals. It would be helpful to compare fits of Poisson and Neg Bin and go with the best fitting model.\n\n6) The repeated dichotomising between \"significant\" and \"non-significant findings\" in the paper is at odds with current statistical thinking (see, for example, the American Statistical Association consensus statement on p-values https://www.amstat.org/asa/files/pdfs/P-ValueStatement.pdf). We strongly suggest the authors drop this terminology and instead of reporting results as significant or not, report point estimates and confidence intervals for everything.\n\n7) The exclusion of rarely used antibiotics from the analysis makes sense, but it wasn't clear why narrow spectrum antibiotics or those used in combination were also excluded. We think including these in the analysis would improve the paper.\n\n8) There was a consensus that the conclusions were too strong e.g. \"Our data establish that.\u2026\". As these are observational data, with lots of unmeasured confounding likely, the conclusions should better reflect the uncertainty.\n\n9) \"Hospital-based antibiotic stewardship is a cornerstone strategy to combat AMR, based on the assumption that AMR evolves in hospitals. Yet, there is surprisingly limited evidence to support this assumption47-49\"\n\nIt's not completely clear what this statement means (there are lots of examples where antibiotic use in hospitalised patients clearly selects for resistant variants e.g. fusidic acid resistance in staphylococci), but if it's referring to population wide selection mediated by antibiotic use there are several additional papers that could be cited ( eg several papers by Jos\u00e9-Mar\u00eda L\u00f3pez Lozano and Timothy Lawes, such as their Nature Micriobiology 2019 paper or more recently Tom Crellen's 2019 paper on Klebsiella in eLife).\n\n[Editors' note: further revisions were suggested prior to acceptance, as described below.]\n\nThank you for submitting your article \"Metapopulation ecology links antibiotic resistance, consumption, and patient transfers in a network of hospital wards\" for consideration by eLife. Your article has been reviewed by two peer reviewers, and the evaluation has been overseen by a Reviewing Editor and a Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Tjibbe Donker (Reviewer #1); Ben S Cooper (Reviewer #3).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nThe manuscript is much improved both methodologically and in terms of readability, and key points raised in the first round of reviews have been addressed. There are, however some remaining concerns which are important to address.\n\nEssential revisions:\n\n1) In many places the paper refers to multivariate (or bivariate) models. Though this terminology is widely misused, multivariate (still) means models with multiple dependent variables. Models with multiple independent variables but a single dependent variable are *multivariable* models. The models used here seem to be multivariable and not multivariate.\n\n2) In most places the authors have rightly been cautious about reaching causal conclusions based on the associations found in the observational data. However there are still a small number of places where results are presented using causal language (i.e. language that many readers are likely to interpret as implying a direct causal relationship) that is not fully justified e.g \"with every doubling of antibiotic use increasing incidence by 49%\", \"connectivity had a larger effect on the incidence\". The manuscript would be improved by rephrasing results to report these as associations, and the discussion can then consider the plausibility of a causal interpretation (as has already been done in most cases).\n\n3) \"This nearly zero-centered distribution of coefficients in associations not expected to represent direct selection suggests that residual confounding in the models was negligible\u2026.\": We would suggest revising this sentence to make it easier to understand.\n\n4) \"If the resistant infections in a ward mostly result from the admission of already colonized patients, antibiotic restrictions may have a limited impact on AMR compared to infection control measures that prevent the further dissemination of the pathogens\" This makes sense if \"limited impact on AMR\" refers to colonisation with AMR (though it's not clear that it does given that the paper is concerned with clinical infection rather than carriage data), but antibiotics can also act to select for resistance within hosts increasing (or reducing) the chance of clinical infection with resistant organisms (see, for example, Niehus et al., 2020 and references therein). We strongly encourage the authors to rephrase to acknowledge that antibiotics can also have a big impact on within host dynamics and that antibiotic restrictions (or other changes) can also have an important impact even if most infections occur in already colonised patients.\n\n5) \"the influence of connectivity on the incidence of a pathogen variant is expected to be higher if the variant is endemic to the hospital\". This seems intuitive but if the level of endemicity is so high that all patients are colonised (as we would expect for E coli) then surely we would expect connectivity to have no effect on the incidence of infection with the pathogen variant. So is this statement generally true?\n\n6) \"Consistent with this theoretical interpretation of connectivity, we found that its influence was strongest in the typical nosocomial pathogens P. aeruginosa and E. faecium.\" Though isn't it also the case that there was little evidence of an association between connectivity and MRSA infection incidence, but MRSA (or, at least, many lineages of MRSA) also represents a \"typical nosocomial pathogen\". It seems as important to highlight results that don't fit with this theoretical interpretation as those that do.\n\n7) \"Further research based on time-series analyses is required..\" This seems too restrictive. Several analytical frameworks not commonly referred to as \"time-series analysis\" (e.g. various flavours of multistate models) would also be appropriate. As written this could be mis-interpreted as saying that ARIMA models are the only way to go here.\n\n8) Subsection \u201cSampling bias control\u201d \"prevalence\" or incidence?\n\n9) Subsection \u201cSampling bias control\u201d third paragraph \"from a same sample\"\n\n10) Fourth paragraph , shouldn't \"M6\" be \"M7\"?\n\n11) Final paragraph in subsection \u201cSampling bias control\u201d. The logic of this is not clear. This seems to be saying that the incidence control value (A) is correlated with sampling effort (B), and that A is also correlated with antibiotic usage (C), and this will lead to spurious correlation between incidence and antibiotic use in unadjusted models. This may be correct (if we interpret spurious correlation to mean correlation between two variables in the absence of a direct causal relationship), but it is not clear from the text why it should be so. Can this be rephrased to make it clearer. A DAG may also help here (see, for example, Judea Pearl's The Book of Why for an introduction to DAGs in representing causal relationships) as unless there is a backdoor path, there won't be \"spurious correlation\".\n\n12) Is an R2 of 0.34 really \"strong correlation\"?\n\n13) Subsection \u201cConnectivity and other ward characteristics\u201d. The coding of fragility is confusing. The text says that an ordinal scale was used implying that it is treated as a categorical variable but with a natural ordering (but with no values associated with the distances between levels). However, it is then reported that numerical values were assigned to the levels. If it is an ordinal scale, the coding is arbitrary, but, as written, it sounds as though a numeric scale might actually have been used here. This needs to be clarified, and if a numeric scale has been used (i.e. the assumption has been made that patients in intensive care units have precisely twice the \"fragility\" as those in intermediate care units ) this either needs to be justified or (in the absence of clear rationale) the analysis revised, e.g. treating ward type as a categorical variable and not making any strong assumption in how patients differ in their vulnerability to infection.\n\n14) \"\u2026exponentiated coefficients can be interpreted as the percentage increase of the incidence for every doubling of the predictor, when all other predictors are held at their reference value\". Taken literally, this sentence is not accurate, even in the special case where the independent variable is log2 of the predictor. The sentence after this one is accurate and has all the information needed, so deleting the above sentence would be fine. Note that it is more usual to report results of a Poisson regression as incidence rate ratios (exponentiating the regression coefficients) which have a simple interpretation and will be familiar to many readers, and it's not clear why the conversion reported in the second sentence is preferred here.\n\n15) Subsection \u201cPooled analysis of CTX/CRO- and IPM/MEM-resistant variants\u201d The sentence beginning \"The rationale.\u2026\" is very hard to make sense of, and we strongly suggest it is rewritten to make the meaning clearer.\n\n16) The authors removed the ESKAPE2 acronym from the Abstract. It could also be removed from the conclusion in a similar way.\n",
+      "created_at": "2025-12-02T20:50:38.572080Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T20:50:38.572080Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T20:50:38.572080Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "49978f67-e337-43d6-bc87-f58020a4e6bc",
+      "content_id": "7f7d80e8-6182-4e59-9c36-5586f5b6e76c",
+      "claim_id": "C1",
+      "claim": "The study analyzed data from 357 hospital wards in the region of Lyon, France.",
+      "claim_type": "EXPLICIT",
+      "source": "We analyzed pathogen isolation incidence in clinical samples, antibiotic use, and patient transfers in 357 hospital wards from the region of Lyon, France.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated in the manuscript text describing the study setting.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:50:38.572080Z"
+    },
+    {
+      "id": "12160c8e-1a74-4496-818d-e7e7cc670851",
+      "content_id": "7f7d80e8-6182-4e59-9c36-5586f5b6e76c",
+      "claim_id": "C2",
+      "claim": "Data were collected from October 2016 to September 2017.",
+      "claim_type": "EXPLICIT",
+      "source": "Data for all three measures were collected during the same period from October 2016 to September 2017.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated in the manuscript text describing the study period.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:50:38.572080Z"
+    },
+    {
+      "id": "c6fdb8e2-76fc-457e-84e1-99e36d138420",
+      "content_id": "7f7d80e8-6182-4e59-9c36-5586f5b6e76c",
+      "claim_id": "C3",
+      "claim": "The hospital network contained a total of 4,685 beds.",
+      "claim_type": "EXPLICIT",
+      "source": "The hospital network contained a total of 4,685 beds.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated in the manuscript text describing the hospital network.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:50:38.572080Z"
+    },
+    {
+      "id": "60b16a65-4181-438f-a9ba-0341ef146f88",
+      "content_id": "7f7d80e8-6182-4e59-9c36-5586f5b6e76c",
+      "claim_id": "C4",
+      "claim": "The median ward size was 12 beds with an interquartile range of 5 to 20.",
+      "claim_type": "EXPLICIT",
+      "source": "The median ward size was 12 beds (interquartile range, 5 to 20).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated in the manuscript text describing ward characteristics.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:50:38.572080Z"
+    },
+    {
+      "id": "7e6f3574-e921-41d6-b59e-1069c5c37883",
+      "content_id": "7f7d80e8-6182-4e59-9c36-5586f5b6e76c",
+      "claim_id": "C5",
+      "claim": "Ward-level data were aggregated from 13,915 infection episodes.",
+      "claim_type": "EXPLICIT",
+      "source": "Ward-level data were aggregated from 13,915 infection episodes, defined as ward admissions with \u22651 clinical sample positive for E. coli or one of the so-called ESKAPE pathogens (Enterococcus faecium, Staphylococcus aureus, Klebsiella pneumoniae, Acinetobacter baumannii, Pseudomonas aeruginosa and Enterobacter cloacae complex), collectively termed ESKAPE2 (Table 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated in the manuscript text describing the data collection.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:50:38.572080Z"
+    },
+    {
+      "id": "613fe4f3-e186-4e87-bb56-51b76f7490d5",
+      "content_id": "7f7d80e8-6182-4e59-9c36-5586f5b6e76c",
+      "claim_id": "C6",
+      "claim": "The median yearly incidence of infection episodes per ward was 24 with an interquartile range of 7 to 55.",
+      "claim_type": "EXPLICIT",
+      "source": "The median yearly incidence of infection episodes per ward was 24 (interquartile range, 7 to 55).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated in the manuscript text describing infection incidence.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:50:38.572080Z"
+    },
+    {
+      "id": "06171d38-6bbc-4eef-8696-cb0b0e0e09f8",
+      "content_id": "7f7d80e8-6182-4e59-9c36-5586f5b6e76c",
+      "claim_id": "C7",
+      "claim": "E. coli infections accounted for 6,303 episodes (45.3% of total).",
+      "claim_type": "EXPLICIT",
+      "source": "E. coli\tSusceptible to 3GC and carbapenems\tEC\t6,303 (45.3)\t328 (91.9)\t0.6 (0.6, 0.7)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Directly stated in Table 1 showing distribution of pathogen infection episodes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:50:38.572080Z"
+    },
+    {
+      "id": "0de8ba42-3a00-48a1-84ef-cffed6ccc4b1",
+      "content_id": "7f7d80e8-6182-4e59-9c36-5586f5b6e76c",
+      "claim_id": "C8",
+      "claim": "3GC-resistant E. coli infections accounted for 737 episodes (5.3% of total).",
+      "claim_type": "EXPLICIT",
+      "source": "\t3GC-resistant\t3GCREC\t737 (5.3)\t207 (58.0)\t0.7 (0.6, 0.8)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Directly stated in Table 1 showing distribution of pathogen infection episodes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:50:38.572080Z"
+    },
+    {
+      "id": "8f96ceaa-980e-4382-8b26-212c9706fac5",
+      "content_id": "7f7d80e8-6182-4e59-9c36-5586f5b6e76c",
+      "claim_id": "C9",
+      "claim": "Carbapenem-resistant E. coli infections accounted for 24 episodes (0.2% of total).",
+      "claim_type": "EXPLICIT",
+      "source": "\tCarbapenem-resistant\tCREC\t24 (0.2)\t24 (5.6)\t1.4 (0.0, 3.9)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Directly stated in Table 1 showing distribution of pathogen infection episodes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:50:38.572080Z"
+    },
+    {
+      "id": "80be6638-eeb3-43d8-be65-75bd89ad6597",
+      "content_id": "7f7d80e8-6182-4e59-9c36-5586f5b6e76c",
+      "claim_id": "C10",
+      "claim": "Vancomycin-resistant E. faecium infections were exceptional with only seven episodes.",
+      "claim_type": "EXPLICIT",
+      "source": "Infections with vancomycin-resistant E. faecium and carbapenem-resistant A. baumannii were exceptional, with seven and twelve episodes respectively (Table 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated in the manuscript text describing rare infection types.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:50:38.572080Z"
+    },
+    {
+      "id": "093d3440-9980-42da-b1c7-6ed90ef4fa6a",
+      "content_id": "7f7d80e8-6182-4e59-9c36-5586f5b6e76c",
+      "claim_id": "C11",
+      "claim": "Carbapenem-resistant A. baumannii infections were exceptional with only twelve episodes.",
+      "claim_type": "EXPLICIT",
+      "source": "Infections with vancomycin-resistant E. faecium and carbapenem-resistant A. baumannii were exceptional, with seven and twelve episodes respectively (Table 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated in the manuscript text describing rare infection types.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:50:38.572080Z"
+    },
+    {
+      "id": "6c5d0b85-a1b9-4d55-b47a-dba40fd4b1db",
+      "content_id": "7f7d80e8-6182-4e59-9c36-5586f5b6e76c",
+      "claim_id": "C12",
+      "claim": "Resistant variants were consistently less frequent than their less-resistant counterparts in all species.",
+      "claim_type": "EXPLICIT",
+      "source": "Resistant variants were consistently less frequent than their less-resistant counterparts in all species (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Directly stated in the manuscript text and supported by Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:50:38.572080Z"
+    },
+    {
+      "id": "7312d925-c426-45fa-9ee1-d3394b994f0b",
+      "content_id": "7f7d80e8-6182-4e59-9c36-5586f5b6e76c",
+      "claim_id": "C13",
+      "claim": "In enterobacteria, carbapenem-resistant variants were consistently less frequent than 3GC-resistant variants.",
+      "claim_type": "EXPLICIT",
+      "source": "In enterobacteria (E. coli, K. pneumoniae and E. cloacae), carbapenem-resistant variants were consistently less frequent than 3GC-resistant variants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated in the manuscript text describing resistance patterns.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:50:38.572080Z"
+    },
+    {
+      "id": "100816d9-3686-4614-bdd4-ed8c0c7b26b6",
+      "content_id": "7f7d80e8-6182-4e59-9c36-5586f5b6e76c",
+      "claim_id": "C14",
+      "claim": "The concentration of infection episodes was weak (<5%) for all variants.",
+      "claim_type": "EXPLICIT",
+      "source": "The concentration of infection episodes was weak (<5%) for all variants, indicating a global lack of clustering (Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Directly stated in the manuscript text and supported by Table 1 data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:50:38.572080Z"
+    },
+    {
+      "id": "b99c560f-154f-445c-b519-a3cb881a75b4",
+      "content_id": "7f7d80e8-6182-4e59-9c36-5586f5b6e76c",
+      "claim_id": "C15",
+      "claim": "Concentration increased with resistance (~2-fold increase from the least to the most resistant variant) in E. coli, K. pneumoniae, P. aeruginosa and A. baumannii.",
+      "claim_type": "EXPLICIT",
+      "source": "Concentration increased with resistance (~2-fold increase from the least to the most resistant variant) in E. coli, K. pneumoniae, P. aeruginosa and A. baumannii, suggesting an adaptation of resistant variants to more specific wards within the hospital network compared to their less-resistant, less-concentrated counterparts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated in the manuscript text describing concentration patterns.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:50:38.572080Z"
+    },
+    {
+      "id": "4d05792b-e9bd-49b6-a1a7-766e9f8df381",
+      "content_id": "7f7d80e8-6182-4e59-9c36-5586f5b6e76c",
+      "claim_id": "C16",
+      "claim": "Increased concentration with resistance suggests an adaptation of resistant variants to more specific wards within the hospital network.",
+      "claim_type": "EXPLICIT",
+      "source": "Concentration increased with resistance (~2-fold increase from the least to the most resistant variant) in E. coli, K. pneumoniae, P. aeruginosa and A. baumannii, suggesting an adaptation of resistant variants to more specific wards within the hospital network compared to their less-resistant, less-concentrated counterparts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated as an interpretation of the concentration data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:50:38.572080Z"
+    },
+    {
+      "id": "b7c8b80c-371e-487f-bf1b-22252f3d5f43",
+      "content_id": "7f7d80e8-6182-4e59-9c36-5586f5b6e76c",
+      "claim_id": "C17",
+      "claim": "The concentration pattern was not found in E. cloacae complex, E. faecium or S. aureus.",
+      "claim_type": "EXPLICIT",
+      "source": "This pattern was not found in E. cloacae complex, E. faecium or S. aureus, in which the concentration index remained comparable across resistance categories.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated in the manuscript text describing concentration patterns.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:50:38.572080Z"
+    },
+    {
+      "id": "c2ec46c6-7f92-4430-bff1-dba519a23e86",
+      "content_id": "7f7d80e8-6182-4e59-9c36-5586f5b6e76c",
+      "claim_id": "C18",
+      "claim": "Antibiotics were prescribed in 86.3% of wards.",
+      "claim_type": "EXPLICIT",
+      "source": "Over the same period (October 2016 to September 2017), antibiotics were prescribed in 86.3% of wards (Table 2), with a total consumption of 125.7 defined daily doses per year per bed (ddd/y/b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated in the manuscript text describing antibiotic use.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:50:38.572080Z"
+    },
+    {
+      "id": "95df0ce7-da89-4e99-902d-d525e958d4ad",
+      "content_id": "7f7d80e8-6182-4e59-9c36-5586f5b6e76c",
+      "claim_id": "C19",
+      "claim": "Total antibiotic consumption was 125.7 defined daily doses per year per bed.",
+      "claim_type": "EXPLICIT",
+      "source": "Over the same period (October 2016 to September 2017), antibiotics were prescribed in 86.3% of wards (Table 2), with a total consumption of 125.7 defined daily doses per year per bed (ddd/y/b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated in the manuscript text describing antibiotic use.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:50:38.572080Z"
+    },
+    {
+      "id": "6b701a80-2f19-4e72-9b2d-63d4f923a2af",
+      "content_id": "7f7d80e8-6182-4e59-9c36-5586f5b6e76c",
+      "claim_id": "C20",
+      "claim": "Antibiotic use was diffuse with concentration indices < 4%.",
+      "claim_type": "EXPLICIT",
+      "source": "Antibiotic use was diffuse, with concentration indices < 4%, ranging from 0.8% for cefotaxime-ceftriaxone and fluoroquinolones to 3.6% for oxacillin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated in the manuscript text describing antibiotic distribution.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:50:38.572080Z"
+    },
+    {
+      "id": "5595a40a-8dea-44fb-860f-f68399dd1635",
+      "content_id": "7f7d80e8-6182-4e59-9c36-5586f5b6e76c",
+      "claim_id": "C21",
+      "claim": "Ward-level antibiotic consumption volume had a stronger influence on the incidence of the more resistant pathogens.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that ward-level antibiotic consumption volume had a stronger influence on the incidence of the more resistant pathogens, while connectivity had the most influence on hospital-endemic species and carbapenem-resistant pathogens.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated in the abstract as a main finding.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:50:38.572080Z"
+    },
+    {
+      "id": "905410ad-682c-468f-a2f0-caa8d2924fbe",
+      "content_id": "7f7d80e8-6182-4e59-9c36-5586f5b6e76c",
+      "claim_id": "C22",
+      "claim": "Connectivity had the most influence on hospital-endemic species and carbapenem-resistant pathogens.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that ward-level antibiotic consumption volume had a stronger influence on the incidence of the more resistant pathogens, while connectivity had the most influence on hospital-endemic species and carbapenem-resistant pathogens.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated in the abstract as a main finding.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:50:38.572080Z"
+    },
+    {
+      "id": "03690ea0-b9cd-4dd3-b921-bdf2df1c0ab8",
+      "content_id": "7f7d80e8-6182-4e59-9c36-5586f5b6e76c",
+      "claim_id": "C23",
+      "claim": "Piperacillin-tazobactam consumption was the strongest predictor of the cumulative incidence of infections resistant to empirical sepsis therapy.",
+      "claim_type": "EXPLICIT",
+      "source": "Piperacillin-tazobactam consumption was the strongest predictor of the cumulative incidence of infections resistant to empirical sepsis therapy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated in the abstract as a main finding.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:50:38.572080Z"
+    },
+    {
+      "id": "e440f702-95ee-4e71-a480-278be7d49caf",
+      "content_id": "7f7d80e8-6182-4e59-9c36-5586f5b6e76c",
+      "claim_id": "C24",
+      "claim": "Global antibiotic use was associated with infection incidence in seven pathogen variants independent of connectivity, ward size, and ward type.",
+      "claim_type": "EXPLICIT",
+      "source": "In these GLMs, global antibiotic use was associated with infection incidence in seven pathogen variants independent of connectivity, ward size, and ward type (Figure 1), including five resistant variants (3GC-resistant E. coli, 3GC-resistant K. pneumoniae, carbapenem-resistant K. pneumoniae, 3GC-resistant E. cloacae, and carbapenem-resistant E. cloacae) and two less-resistant variants (P. aeruginosa and E. faecium).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Directly stated in the manuscript text describing GLM results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:50:38.572080Z"
+    },
+    {
+      "id": "cba6f725-3d3c-446f-93a9-cd109d3a5462",
+      "content_id": "7f7d80e8-6182-4e59-9c36-5586f5b6e76c",
+      "claim_id": "C25",
+      "claim": "Every doubling of antibiotic use predicted a 47% increase in carbapenem-resistant K. pneumoniae incidence (95% CI, 19% to 90%).",
+      "claim_type": "EXPLICIT",
+      "source": "The largest effect size was found in carbapenem-resistant K. pneumoniae, in which every doubling of antibiotic use predicted a 47% increase in incidence (95% confidence interval, 19% to 90%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated in the manuscript text describing GLM results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:50:38.572080Z"
+    },
+    {
+      "id": "5c970776-3e2f-4bd7-870b-0e896aae7a97",
+      "content_id": "7f7d80e8-6182-4e59-9c36-5586f5b6e76c",
+      "claim_id": "C26",
+      "claim": "Connectivity predicted a higher incidence in all variants of P. aeruginosa and E. faecium.",
+      "claim_type": "EXPLICIT",
+      "source": "Connectivity predicted a higher incidence in all variants of P. aeruginosa and E. faecium, with a stronger effect size in the resistant variants (11.5 and 43.7%, respectively) compared to their less-resistant counterparts (6.1 and 15.3%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated in the manuscript text describing GLM results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:50:38.572080Z"
+    },
+    {
+      "id": "9e43d270-fd52-4462-af8e-534030cac6de",
+      "content_id": "7f7d80e8-6182-4e59-9c36-5586f5b6e76c",
+      "claim_id": "C27",
+      "claim": "Connectivity had a stronger effect size in resistant variants of P. aeruginosa (11.5%) compared to less-resistant counterparts (6.1%).",
+      "claim_type": "EXPLICIT",
+      "source": "Connectivity predicted a higher incidence in all variants of P. aeruginosa and E. faecium, with a stronger effect size in the resistant variants (11.5 and 43.7%, respectively) compared to their less-resistant counterparts (6.1 and 15.3%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated in the manuscript text describing GLM results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:50:38.572080Z"
+    },
+    {
+      "id": "c8e7cfef-1df4-491c-aecf-08d2662ed7b1",
+      "content_id": "7f7d80e8-6182-4e59-9c36-5586f5b6e76c",
+      "claim_id": "C28",
+      "claim": "Connectivity had a stronger effect size in resistant variants of E. faecium (43.7%) compared to less-resistant counterparts (15.3%).",
+      "claim_type": "EXPLICIT",
+      "source": "Connectivity predicted a higher incidence in all variants of P. aeruginosa and E. faecium, with a stronger effect size in the resistant variants (11.5 and 43.7%, respectively) compared to their less-resistant counterparts (6.1 and 15.3%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated in the manuscript text describing GLM results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:50:38.572080Z"
+    },
+    {
+      "id": "b55e05aa-b02b-45d1-8be3-9dae43b4be52",
+      "content_id": "7f7d80e8-6182-4e59-9c36-5586f5b6e76c",
+      "claim_id": "C29",
+      "claim": "A significant association with connectivity was found for less-resistant E. coli with a small effect size (2.6%).",
+      "claim_type": "EXPLICIT",
+      "source": "A significant association with connectivity was also found for the less-resistant E. coli, although with a much smaller effect size (2.6%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated in the manuscript text describing GLM results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:50:38.572080Z"
+    },
+    {
+      "id": "e260396e-527d-4c60-a775-dc858f5e79b8",
+      "content_id": "7f7d80e8-6182-4e59-9c36-5586f5b6e76c",
+      "claim_id": "C30",
+      "claim": "Ward size did not predict incidence in any variant.",
+      "claim_type": "EXPLICIT",
+      "source": "Ward size did not predict incidence in any variant.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated in the manuscript text describing GLM results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:50:38.572080Z"
+    },
+    {
+      "id": "f24cf88a-c6ec-4511-a764-605e07f6bc47",
+      "content_id": "7f7d80e8-6182-4e59-9c36-5586f5b6e76c",
+      "claim_id": "C31",
+      "claim": "The mean percent change in incidence for every doubling of consumption volume in possibly selective associations was 6.5%.",
+      "claim_type": "EXPLICIT",
+      "source": "The mean percent change in incidence for every doubling of consumption volume in possibly selective associations was 6.5%, compared to 0.9% in other associations (95% CI of the difference of the means, 0.6 to 10.6%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated in the manuscript text describing possibly selective associations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:50:38.572080Z"
+    },
+    {
+      "id": "17e91ba8-5842-4274-9642-f533d8cc7568",
+      "content_id": "7f7d80e8-6182-4e59-9c36-5586f5b6e76c",
+      "claim_id": "C32",
+      "claim": "The mean percent change in incidence for every doubling of consumption volume in other associations was 0.9%.",
+      "claim_type": "EXPLICIT",
+      "source": "The mean percent change in incidence for every doubling of consumption volume in possibly selective associations was 6.5%, compared to 0.9% in other associations (95% CI of the difference of the means, 0.6 to 10.6%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated in the manuscript text describing possibly selective associations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:50:38.572080Z"
+    },
+    {
+      "id": "e0943568-101f-41bc-a3e2-72ea1476740c",
+      "content_id": "7f7d80e8-6182-4e59-9c36-5586f5b6e76c",
+      "claim_id": "C33",
+      "claim": "Three of the four strongest possibly selective associations involved cefotaxime-ceftriaxone.",
+      "claim_type": "EXPLICIT",
+      "source": "Three of the four strongest possibly selective associations involved cefotaxime-ceftriaxone, which selected for 3GC-resistant E. coli, K. pneumoniae and P. aeruginosa; the other involved carbapenems selecting for carbapenem-resistant P. aeruginosa.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated in the manuscript text describing possibly selective associations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:50:38.572080Z"
+    },
+    {
+      "id": "f7bcb7f9-0008-4131-b05a-5a7c0bbf23dd",
+      "content_id": "7f7d80e8-6182-4e59-9c36-5586f5b6e76c",
+      "claim_id": "C34",
+      "claim": "Antibiotic use was the strongest predictor of the incidence of carbapenem-resistant infections (6.5% increase per doubling, 95% CI, 2.5 to 11.0%).",
+      "claim_type": "EXPLICIT",
+      "source": "In these models, antibiotic use was the strongest predictor of the incidence of both carbapenem-resistant (6.5% increase in incidence for every doubling of consumption volume, 95% CI, 2.5 to 11.0%) and 3GC-resistant infections (5.1% increase, 95% CI, 2.7 to 7.5%; Figure 3a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Directly stated in the manuscript text describing cumulative resistance models.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:50:38.572080Z"
+    },
+    {
+      "id": "e710ab37-e099-4a59-8652-6e552d92b0d9",
+      "content_id": "7f7d80e8-6182-4e59-9c36-5586f5b6e76c",
+      "claim_id": "C35",
+      "claim": "Antibiotic use was the strongest predictor of the incidence of 3GC-resistant infections (5.1% increase per doubling, 95% CI, 2.7 to 7.5%).",
+      "claim_type": "EXPLICIT",
+      "source": "In these models, antibiotic use was the strongest predictor of the incidence of both carbapenem-resistant (6.5% increase in incidence for every doubling of consumption volume, 95% CI, 2.5 to 11.0%) and 3GC-resistant infections (5.1% increase, 95% CI, 2.7 to 7.5%; Figure 3a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Directly stated in the manuscript text describing cumulative resistance models.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:50:38.572080Z"
+    },
+    {
+      "id": "7ad66681-be28-4064-906b-062b2856946f",
+      "content_id": "7f7d80e8-6182-4e59-9c36-5586f5b6e76c",
+      "claim_id": "C36",
+      "claim": "Connectivity better predicted the incidence of carbapenem-resistant infections (4.8%, 95% CI, \u22120.4 to 10.7%) compared with 3GC-resistant infections (1.0%, 95% CI, \u22122.3 to 4.5%).",
+      "claim_type": "EXPLICIT",
+      "source": "Connectivity better predicted the incidence of carbapenem-resistant infections (4.8%, 95% CI, \u22120.4 to 10.7%) compared with 3GC-resistant infections (1.0%, 95% CI, \u22122.3 to 4.5%), in line with the comparatively stronger association of connectivity with the incidence of individual carbapenem-resistant variants (Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Directly stated in the manuscript text describing cumulative resistance models.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:50:38.572080Z"
+    },
+    {
+      "id": "1e2d8228-949d-4e7f-a285-33b6cc352439",
+      "content_id": "7f7d80e8-6182-4e59-9c36-5586f5b6e76c",
+      "claim_id": "C37",
+      "claim": "The use of piperacillin-tazobactam predicted the incidence of 3GC-resistant infections (5.9% increase, 95% CI, 2.9 to 9.0%).",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, the use of piperacillin-tazobactam predicted the incidence of both 3GC-resistant (5.9% increase, 95% CI, 2.9 to 9.0%) and carbapenem-resistant infections (10.3% increase, 95% CI, 5.0 to 16.0%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated in the manuscript text describing antibiotic-specific associations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:50:38.572080Z"
+    },
+    {
+      "id": "6c9e4410-b93a-4765-84a2-81592241f20a",
+      "content_id": "7f7d80e8-6182-4e59-9c36-5586f5b6e76c",
+      "claim_id": "C38",
+      "claim": "The use of piperacillin-tazobactam predicted the incidence of carbapenem-resistant infections (10.3% increase, 95% CI, 5.0 to 16.0%).",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, the use of piperacillin-tazobactam predicted the incidence of both 3GC-resistant (5.9% increase, 95% CI, 2.9 to 9.0%) and carbapenem-resistant infections (10.3% increase, 95% CI, 5.0 to 16.0%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated in the manuscript text describing antibiotic-specific associations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:50:38.572080Z"
+    },
+    {
+      "id": "2ce8367d-f3cd-4113-9cfb-012c37fd6216",
+      "content_id": "7f7d80e8-6182-4e59-9c36-5586f5b6e76c",
+      "claim_id": "C39",
+      "claim": "The incidence of 3GC-resistant infections was predicted by the consumption of cefotaxime-ceftriaxone (4.8% increase, 95% CI, 1.5 to 8.2%) but not carbapenems (1.4% increase, 95% CI, \u22121.7 to 4.6%).",
+      "claim_type": "EXPLICIT",
+      "source": "The incidence of 3GC-resistant infections was predicted by the consumption of cefotaxime-ceftriaxone (4.8% increase, 95% CI, 1.5 to 8.2%) but not carbapenems (1.4% increase, 95% CI, \u22121.7 to 4.6%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated in the manuscript text describing antibiotic-specific associations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:50:38.572080Z"
+    },
+    {
+      "id": "d03c345e-3b2e-4ba1-9fc5-1c8ecc69a71d",
+      "content_id": "7f7d80e8-6182-4e59-9c36-5586f5b6e76c",
+      "claim_id": "C40",
+      "claim": "The use of carbapenems predicted the incidence of carbapenem-resistant infections with a wide uncertainty margin (5.1% increase, 95% CI, \u22120.6 to 11.1%).",
+      "claim_type": "EXPLICIT",
+      "source": "In the same vein, the use of carbapenems, but not 3GCs, predicted the incidence of carbapenem-resistant infections, although with a wide uncertainty margin (5.1% increase, 95% CI, \u22120.6 to 11.1%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated in the manuscript text describing antibiotic-specific associations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:50:38.572080Z"
+    },
+    {
+      "id": "1785b35c-3c3e-4f90-a58e-3d232c66fd3d",
+      "content_id": "7f7d80e8-6182-4e59-9c36-5586f5b6e76c",
+      "claim_id": "C41",
+      "claim": "Hospitals continue to be important hotspots for AMR in clinically-relevant pathogens due to the confluence of strong antibiotic selection pressure, fragile patients, and highly resistant pathogens that can disseminate between wards and facilities through patient transfers.",
+      "claim_type": "EXPLICIT",
+      "source": "However, hospitals continue to be important hotspots for AMR in clinically-relevant pathogens (Chatterjee et al., 2018; David et al., 2019) due to the confluence of strong antibiotic selection pressure, fragile patients, and highly resistant pathogens that can disseminate between wards and facilities through patient transfers (Safdar and Maki, 2002; Snitkin et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated in the introduction with supporting citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:50:38.572080Z"
+    },
+    {
+      "id": "de03a9b2-8d10-4899-806c-a5635319ca3e",
+      "content_id": "7f7d80e8-6182-4e59-9c36-5586f5b6e76c",
+      "claim_id": "C42",
+      "claim": "Hospitals become reservoirs of resistant bacteria.",
+      "claim_type": "EXPLICIT",
+      "source": "These conditions result in hospitals becoming reservoirs of resistant bacteria (Clarivet et al., 2016; Cohen, 1992; Pogue et al., 2013), which can later enter the community (Huttner et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated in the introduction with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:50:38.572080Z"
+    },
+    {
+      "id": "1b9890cf-5508-4a8b-9539-d05d69a0fd37",
+      "content_id": "7f7d80e8-6182-4e59-9c36-5586f5b6e76c",
+      "claim_id": "C43",
+      "claim": "Resistant bacteria from hospitals can later enter the community.",
+      "claim_type": "EXPLICIT",
+      "source": "These conditions result in hospitals becoming reservoirs of resistant bacteria (Clarivet et al., 2016; Cohen, 1992; Pogue et al., 2013), which can later enter the community (Huttner et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated in the introduction with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:50:38.572080Z"
+    },
+    {
+      "id": "c9b99a7c-96dd-4ddd-8156-26fe7571a787",
+      "content_id": "7f7d80e8-6182-4e59-9c36-5586f5b6e76c",
+      "claim_id": "C44",
+      "claim": "The primary hospital-based strategies against AMR are antimicrobial stewardship and infection control.",
+      "claim_type": "EXPLICIT",
+      "source": "The primary hospital-based strategies against AMR are antimicrobial stewardship, which aims to lower the antibiotic pressure, and infection control whose goal is to reduce the transmission of pathogens (Manning et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated in the introduction with supporting citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:50:38.572080Z"
+    },
+    {
+      "id": "eec6dc0e-dc27-4f92-a06d-a26c22254f06",
+      "content_id": "7f7d80e8-6182-4e59-9c36-5586f5b6e76c",
+      "claim_id": "C45",
+      "claim": "The association between antibiotic use and resistance is not uniform across pathogen species.",
+      "claim_type": "EXPLICIT",
+      "source": "This is further complicated by the fact that the association between antibiotic use and resistance is not uniform across pathogen species (Bell et al., 2014) or classes of antibiotics (Niehus et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated in the introduction with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:50:38.572080Z"
+    },
+    {
+      "id": "af59ca42-2798-4e09-8477-3b6850f2a93f",
+      "content_id": "7f7d80e8-6182-4e59-9c36-5586f5b6e76c",
+      "claim_id": "C46",
+      "claim": "The association between antibiotic use and resistance is not uniform across classes of antibiotics.",
+      "claim_type": "EXPLICIT",
+      "source": "This is further complicated by the fact that the association between antibiotic use and resistance is not uniform across pathogen species (Bell et al., 2014) or classes of antibiotics (Niehus et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated in the introduction with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:50:38.572080Z"
+    },
+    {
+      "id": "8671178a-f8a5-4d1d-a092-f0ad0a4e6e8c",
+      "content_id": "7f7d80e8-6182-4e59-9c36-5586f5b6e76c",
+      "claim_id": "C47",
+      "claim": "Metapopulation ecology was introduced by Levins in 1969 to explain the persistence of agricultural pests across a set of habitat patches.",
+      "claim_type": "EXPLICIT",
+      "source": "Metapopulation ecology is such a framework. It was introduced by Levins, 1969 to explain the persistence of agricultural pests across a set of habitat patches, such as crop fields, and refined by Hanski to account for the characteristics of patches, such as their size, and the connectivity between them (Hanski, 1998; Hanski, 1994).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated in the introduction with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:50:38.572080Z"
+    },
+    {
+      "id": "d46cffd8-dff7-406c-9138-bf6cc42d4cf9",
+      "content_id": "7f7d80e8-6182-4e59-9c36-5586f5b6e76c",
+      "claim_id": "C48",
+      "claim": "Metapopulation models of hospital AMR have been applied to simulated rather than empirical data.",
+      "claim_type": "EXPLICIT",
+      "source": "So far, however, metapopulation models of hospital AMR have been applied to simulated rather than empirical data (Spagnolo et al., 2018; Vilches et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated in the introduction with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:50:38.572080Z"
+    },
+    {
+      "id": "fba37dd1-e3ec-416b-928f-cfa4f385589f",
+      "content_id": "7f7d80e8-6182-4e59-9c36-5586f5b6e76c",
+      "claim_id": "C49",
+      "claim": "The influence of connectivity on the incidence of a pathogen variant is expected to be higher if the variant is endemic to the hospital.",
+      "claim_type": "EXPLICIT",
+      "source": "In our closed network model of the hospital, the influence of connectivity on the incidence of a pathogen variant is expected to be higher if the variant is endemic to the hospital, its prevalence varies across wards, and changes from one variant category to another are rare.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated in the discussion as a theoretical interpretation.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:50:38.572080Z"
+    },
+    {
+      "id": "a4bb7030-e210-4183-b6c8-86554f2eb813",
+      "content_id": "7f7d80e8-6182-4e59-9c36-5586f5b6e76c",
+      "claim_id": "C50",
+      "claim": "The influence of connectivity is strongest in the hospital-endemic pathogens P. aeruginosa and E. faecium.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this theoretical interpretation of connectivity, we found that its influence was strongest in the hospital-endemic pathogens P. aeruginosa and E. faecium (Blanc et al., 2007; Wurster et al., 2016; Zhou et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated in the discussion with supporting citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:50:38.572080Z"
+    },
+    {
+      "id": "51f5a88f-33b5-47e9-a354-7402bc84b552",
+      "content_id": "7f7d80e8-6182-4e59-9c36-5586f5b6e76c",
+      "claim_id": "C51",
+      "claim": "MRSA incidence was not predicted by connectivity.",
+      "claim_type": "EXPLICIT",
+      "source": "Intriguingly, MRSA incidence was not predicted by connectivity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated in the discussion.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:50:38.572080Z"
+    },
+    {
+      "id": "86ba9167-67b9-4056-b1d0-63b444f51053",
+      "content_id": "7f7d80e8-6182-4e59-9c36-5586f5b6e76c",
+      "claim_id": "C52",
+      "claim": "In France, the proportions of MRSA among S. aureus are comparable in community and hospital settings, at about 10%.",
+      "claim_type": "EXPLICIT",
+      "source": "In France, the proportions of MRSA among S. aureus are comparable in community and hospital settings, at about 10% (ECDC, 2019; ONERBA France, 2018; Sant\u00e9 Publique France, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated in the discussion with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:50:38.572080Z"
+    },
+    {
+      "id": "b74ac1cc-8521-4678-b2a6-0de80bdd0450",
+      "content_id": "7f7d80e8-6182-4e59-9c36-5586f5b6e76c",
+      "claim_id": "C53",
+      "claim": "MRSA population structures in hospitals and the community are comparably dominated by the so-called ST8 Lyon clone.",
+      "claim_type": "EXPLICIT",
+      "source": "MRSA population structures in hospitals and the community are comparably dominated by the so-called ST8 Lyon clone which is equally found in in- and outpatients (Dauwalder et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated in the discussion with supporting citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:50:38.572080Z"
+    },
+    {
+      "id": "7aa97e47-b926-453a-95ff-c741296d147f",
+      "content_id": "7f7d80e8-6182-4e59-9c36-5586f5b6e76c",
+      "claim_id": "C54",
+      "claim": "Connectivity was a comparatively weaker predictor for community-associated variants (3GC-resistant E. coli and K. pneumoniae) that enter from outside the hospital network.",
+      "claim_type": "EXPLICIT",
+      "source": "Contrasting with hospital-endemic pathogens, connectivity was a comparatively weaker predictor for community-associated variants (3GC-resistant E. coli and K. pneumoniae) that enter from outside the hospital network, and in variants whose resistance is selected locally because they can frequently shift between susceptible and resistant categories.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated in the discussion.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:50:38.572080Z"
+    },
+    {
+      "id": "0f56310d-e8e3-4f80-ade9-e8bf3f547f85",
+      "content_id": "7f7d80e8-6182-4e59-9c36-5586f5b6e76c",
+      "claim_id": "C55",
+      "claim": "The weak association of connectivity with the incidence of resistant E. cloacae complex variants might be explained by the plasticity of their resistance profile.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, the weak association of connectivity with the incidence of resistant E. cloacae complex variants, for instance, might be explained by the plasticity of their resistance profile, facilitating their local selection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated in the discussion as an interpretation.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:50:38.572080Z"
+    },
+    {
+      "id": "7d26f2a5-0561-4816-9e6b-bef42b574142",
+      "content_id": "7f7d80e8-6182-4e59-9c36-5586f5b6e76c",
+      "claim_id": "C56",
+      "claim": "E. cloacae complex can resist cephalosporins and carbapenems through increased AmpC beta-lactamase and decreased porin expression.",
+      "claim_type": "EXPLICIT",
+      "source": "While resistance in E. coli and K. pneumoniae typically requires gene acquisition (Manges et al., 2019; Wyres and Holt, 2016), E. cloacae complex can resist cephalosporins and carbapenems through increased AmpC beta-lactamase and decreased porin expression (Pavez et al., 2016; Babouee Flury et al., 2016; Lee et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated in the discussion with supporting citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:50:38.572080Z"
+    },
+    {
+      "id": "871dd934-1329-4118-8411-65a82e064938",
+      "content_id": "7f7d80e8-6182-4e59-9c36-5586f5b6e76c",
+      "claim_id": "C57",
+      "claim": "Resistance in E. coli and K. pneumoniae typically requires gene acquisition.",
+      "claim_type": "EXPLICIT",
+      "source": "While resistance in E. coli and K. pneumoniae typically requires gene acquisition (Manges et al., 2019; Wyres and Holt, 2016), E. cloacae complex can resist cephalosporins and carbapenems through increased AmpC beta-lactamase and decreased porin expression (Pavez et al., 2016; Babouee Flury et al., 2016; Lee et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated in the discussion with supporting citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:50:38.572080Z"
+    },
+    {
+      "id": "cb85f889-21e7-40af-bb52-ebe1cb4c35de",
+      "content_id": "7f7d80e8-6182-4e59-9c36-5586f5b6e76c",
+      "claim_id": "C58",
+      "claim": "Piperacillin-tazobactam has been repeatedly considered as an alternative drug of choice in carbapenem-sparing strategies based on its in vitro efficacy against ESBL-producing enterobacteria.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on its in vitro efficacy against extended-spectrum beta-lactamase (ESBL)-producing enterobacteria, piperacillin-tazobactam has been repeatedly considered as an alternative drug of choice in carbapenem-sparing strategies (Harris et al., 2015; Peterson, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated in the discussion with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:50:38.572080Z"
+    },
+    {
+      "id": "77124f4c-162a-46bf-b11b-eab0773860d4",
+      "content_id": "7f7d80e8-6182-4e59-9c36-5586f5b6e76c",
+      "claim_id": "C59",
+      "claim": "In several recent reports including a multicenter randomized clinical trial, piperacillin-tazobactam treatment of sepsis with ESBL-producing enterobacteria was associated with poorer outcomes compared to carbapenem treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "Yet, in several recent reports including a multicenter randomized clinical trial, piperacillin-tazobactam treatment of sepsis with ESBL-producing enterobacteria was associated with poorer outcomes compared to carbapenem treatment (Harris et al., 2018; Ofer-Friedman et al., 2015; Tamma et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated in the discussion with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:50:38.572080Z"
+    },
+    {
+      "id": "b5059920-8a15-4f94-b131-a176a7b8cffd",
+      "content_id": "7f7d80e8-6182-4e59-9c36-5586f5b6e76c",
+      "claim_id": "C60",
+      "claim": "At the population level, the incidence of carbapenem-resistant enterobacteria was negatively associated with the use of piperacillin-tazobactam in a 5 year, single-hospital trend analysis study.",
+      "claim_type": "EXPLICIT",
+      "source": "At the population level, the incidence of carbapenem-resistant enterobacteria was negatively associated with the use of piperacillin-tazobactam in a 5 year, single-hospital trend analysis study (McLaughlin et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated in the discussion with supporting citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:50:38.572080Z"
+    },
+    {
+      "id": "955cc81f-901f-4d7f-a4dd-73bfba18c8d0",
+      "content_id": "7f7d80e8-6182-4e59-9c36-5586f5b6e76c",
+      "claim_id": "C61",
+      "claim": "At the patient level, the exposure to piperacillin-tazobactam was associated with the acquisition of carbapenem-resistant P. aeruginosa in a meta-analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "At the patient level, however, the exposure to piperacillin-tazobactam was associated with the acquisition of carbapenem-resistant P. aeruginosa in a meta-analysis (Raman et al., 2018) and carbapenem-resistant Gram-negative bacilli in a single-hospital prospective cohort study (Marchenay et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated in the discussion with supporting citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:50:38.572080Z"
+    },
+    {
+      "id": "ece008b8-5397-44fd-ab11-7ab6a1f092ef",
+      "content_id": "7f7d80e8-6182-4e59-9c36-5586f5b6e76c",
+      "claim_id": "C62",
+      "claim": "The exposure to piperacillin-tazobactam was associated with the acquisition of carbapenem-resistant Gram-negative bacilli in a single-hospital prospective cohort study.",
+      "claim_type": "EXPLICIT",
+      "source": "At the patient level, however, the exposure to piperacillin-tazobactam was associated with the acquisition of carbapenem-resistant P. aeruginosa in a meta-analysis (Raman et al., 2018) and carbapenem-resistant Gram-negative bacilli in a single-hospital prospective cohort study (Marchenay et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated in the discussion with supporting citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:50:38.572080Z"
+    },
+    {
+      "id": "44bb019d-c280-4433-abe0-f0fb302281ff",
+      "content_id": "7f7d80e8-6182-4e59-9c36-5586f5b6e76c",
+      "claim_id": "C63",
+      "claim": "The study did not consider the role of healthcare workers in pathogen transmission.",
+      "claim_type": "EXPLICIT",
+      "source": "First, we did not consider the role of healthcare workers in pathogen transmission, nor the role of direct patient admissions from the community.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated in the discussion as a study limitation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:50:38.572080Z"
+    },
+    {
+      "id": "17fa4ce6-6e5b-4408-b0fc-272947891249",
+      "content_id": "7f7d80e8-6182-4e59-9c36-5586f5b6e76c",
+      "claim_id": "C64",
+      "claim": "The study did not consider the role of direct patient admissions from the community.",
+      "claim_type": "EXPLICIT",
+      "source": "First, we did not consider the role of healthcare workers in pathogen transmission, nor the role of direct patient admissions from the community.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated in the discussion as a study limitation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:50:38.572080Z"
+    },
+    {
+      "id": "f8aabcc7-3666-4211-9167-c2684439c806",
+      "content_id": "7f7d80e8-6182-4e59-9c36-5586f5b6e76c",
+      "claim_id": "C65",
+      "claim": "The small sample sizes of resistant variants of E. faecium and A. baumannii limited the ability to draw robust inferences regarding these variants.",
+      "claim_type": "EXPLICIT",
+      "source": "Third, the small sample sizes of resistant variants of E. faecium and A. baumannii limited our ability to draw robust inferences regarding these variants and further studies are required to confirm these results (Arias and Murray, 2012; Hsu et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated in the discussion as a study limitation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:50:38.572080Z"
+    },
+    {
+      "id": "56d3280d-19da-4d27-b271-78033efd9e2c",
+      "content_id": "7f7d80e8-6182-4e59-9c36-5586f5b6e76c",
+      "claim_id": "C66",
+      "claim": "The findings reflect the AMR ecology of a Western European area with generally lower prevalences of carbapenemase-producing pathogens, vancomycin-resistant E. faecium, and MRSA than in other regions of the world.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, our findings reflect the AMR ecology of a Western European area, with generally lower prevalences of carbapenemase-producing pathogens, vancomycin-resistant E. faecium, and MRSA than in other regions of the world.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated in the discussion as a study limitation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:50:38.572080Z"
+    },
+    {
+      "id": "0e3e0917-d664-470b-adf1-441ac00533ba",
+      "content_id": "7f7d80e8-6182-4e59-9c36-5586f5b6e76c",
+      "claim_id": "C67",
+      "claim": "Both antibiotic use and inter-ward connectivity may predict the burden of AMR in a variant-specific fashion.",
+      "claim_type": "EXPLICIT",
+      "source": "To conclude, the modeling of the incidence of infections with seven major bacterial species and their drug-resistant variants in hospital wards using a metapopulation framework indicates that both antibiotic use and inter-ward connectivity may predict the burden of AMR in a variant-specific fashion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated in the conclusion.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:50:38.572080Z"
+    },
+    {
+      "id": "f549c886-e8a4-47bd-9c37-61a6a818dbf6",
+      "content_id": "7f7d80e8-6182-4e59-9c36-5586f5b6e76c",
+      "claim_id": "C68",
+      "claim": "Reducing connectivity with infection control interventions could be more effective at preventing the spread of carbapenem-resistant pathogens between wards compared to 3GC-resistant pathogens.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that reducing connectivity with infection control interventions could be more effective at preventing the spread of carbapenem-resistant pathogens between wards compared to 3GC-resistant pathogens.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated in the discussion as an interpretation of the findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:50:38.572080Z"
+    },
+    {
+      "id": "5a08a3e6-d1c7-4896-a4a4-2bf290454189",
+      "content_id": "7f7d80e8-6182-4e59-9c36-5586f5b6e76c",
+      "claim_id": "C69",
+      "claim": "The larger magnitude of the coefficients of possibly selective associations suggests that the local, ward-level selection of drug-resistant variants by antibiotics is measurably pervasive throughout the hospital network.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, the larger magnitude of the coefficients of possibly selective associations suggests that the local, ward-level selection of drug-resistant variants by antibiotics is measurably pervasive throughout our hospital network.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated in the manuscript text as an interpretation of the analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:50:38.572080Z"
+    },
+    {
+      "id": "2ce8dcc6-ccbe-4a7c-b534-4829e9f0b6d6",
+      "content_id": "7f7d80e8-6182-4e59-9c36-5586f5b6e76c",
+      "claim_id": "C70",
+      "claim": "The incidence control correlated with the observed cumulative incidence of all bacteria (R\u00b2=0.96, 95% CI, 0.95 to 0.96).",
+      "claim_type": "EXPLICIT",
+      "source": "Bivariate analyses confirmed that the incidence control correlated with the observed cumulative incidence of all bacteria (R\u00b2=0.96, 95% CI, 0.95 to 0.96, Figure 1\u2014figure supplement 3) and, to a lesser extent, with the total antibiotic use (R\u00b2=0.34, 95% CI, 0.25 to 0.40, Figure 1\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Directly stated in the manuscript text with reference to figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:50:38.572080Z"
+    },
+    {
+      "id": "063af6e8-c1b4-47dc-bcea-a952c43f1c60",
+      "content_id": "7f7d80e8-6182-4e59-9c36-5586f5b6e76c",
+      "claim_id": "C71",
+      "claim": "The incidence control correlated with total antibiotic use (R\u00b2=0.34, 95% CI, 0.25 to 0.40).",
+      "claim_type": "EXPLICIT",
+      "source": "Bivariate analyses confirmed that the incidence control correlated with the observed cumulative incidence of all bacteria (R\u00b2=0.96, 95% CI, 0.95 to 0.96, Figure 1\u2014figure supplement 3) and, to a lesser extent, with the total antibiotic use (R\u00b2=0.34, 95% CI, 0.25 to 0.40, Figure 1\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Directly stated in the manuscript text with reference to figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:50:38.572080Z"
+    },
+    {
+      "id": "57233057-2476-4aa6-8b8b-093c47410ac5",
+      "content_id": "7f7d80e8-6182-4e59-9c36-5586f5b6e76c",
+      "claim_id": "C72",
+      "claim": "Most patients (86.9%) were sampled only once.",
+      "claim_type": "EXPLICIT",
+      "source": "Of note, most patients (n = 22,646 / 26,064; 86.9%) were sampled only once.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated in the methods section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:50:38.572080Z"
+    },
+    {
+      "id": "28740725-698e-4054-91a4-28e0e7469b25",
+      "content_id": "7f7d80e8-6182-4e59-9c36-5586f5b6e76c",
+      "claim_id": "C73",
+      "claim": "Amoxicillin prescription volume was 141,293 ddd/y (24.0% of total).",
+      "claim_type": "EXPLICIT",
+      "source": "Amoxicillin\tAMX\t141,293 (24.0)\t252 (70.6)\t1.8 (1.7, 1.8)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Directly stated in Table 2 showing antibiotic distribution.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:50:38.572080Z"
+    },
+    {
+      "id": "f044f2cd-8692-4030-a44f-2af8a94fc3da",
+      "content_id": "7f7d80e8-6182-4e59-9c36-5586f5b6e76c",
+      "claim_id": "C74",
+      "claim": "Coamoxiclav prescription volume was 78,072 ddd/y (13.3% of total).",
+      "claim_type": "EXPLICIT",
+      "source": "Coamoxiclav\tAMC\t78,072 (13.3)\t247 (69.3)\t1.0 (0.9, 1.0)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Directly stated in Table 2 showing antibiotic distribution.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:50:38.572080Z"
+    },
+    {
+      "id": "92994d64-4f36-41b1-9f3e-15b41997fa25",
+      "content_id": "7f7d80e8-6182-4e59-9c36-5586f5b6e76c",
+      "claim_id": "C75",
+      "claim": "Piperacillin-tazobactam prescription volume was 27,593 ddd/y (4.7% of total).",
+      "claim_type": "EXPLICIT",
+      "source": "Piperacillin-tazobactam\tTZP\t27,593 (4.7)\t198 (55.5)\t1.9 (1.7, 1.9)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Directly stated in Table 2 showing antibiotic distribution.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:50:38.572080Z"
+    },
+    {
+      "id": "05acabc9-b367-4e58-ba46-181a388d81ee",
+      "content_id": "7f7d80e8-6182-4e59-9c36-5586f5b6e76c",
+      "claim_id": "C76",
+      "claim": "Carbapenem prescription volume was 25,093 ddd/y (4.3% of total).",
+      "claim_type": "EXPLICIT",
+      "source": "Carbapenems\tIPM/MEM\t25,093 (4.3)\t204 (57.1)\t1.5 (1.4, 1.6)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Directly stated in Table 2 showing antibiotic distribution.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:50:38.572080Z"
+    },
+    {
+      "id": "96b48ef9-b0b4-4f02-aafe-a12a17cc65b1",
+      "content_id": "7f7d80e8-6182-4e59-9c36-5586f5b6e76c",
+      "claim_id": "C77",
+      "claim": "Non-antipseudomonal 3GCs (cefotaxime and ceftriaxone) prescription volume was 53,406 ddd/y (9.1% of total).",
+      "claim_type": "EXPLICIT",
+      "source": "Non-antipseudomonal 3GCs, cefotaxime and ceftriaxone\tCTX/CRO\t53,406 (9.1)\t259 (72.5)\t0.8 (0.8, 0.9)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Directly stated in Table 2 showing antibiotic distribution.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:50:38.572080Z"
+    },
+    {
+      "id": "4057ea0d-1cd9-42eb-a09d-113bbd710d93",
+      "content_id": "7f7d80e8-6182-4e59-9c36-5586f5b6e76c",
+      "claim_id": "C78",
+      "claim": "Fluoroquinolone prescription volume was 52,549 ddd/y (8.9% of total).",
+      "claim_type": "EXPLICIT",
+      "source": "Fluoroquinolones\tFQ\t52,549 (8.9)\t249 (69.7)\t0.8 (0.8, 0.8)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Directly stated in Table 2 showing antibiotic distribution.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:50:38.572080Z"
+    },
+    {
+      "id": "855a02a6-f018-4c3d-ae9f-d1a0092a40d9",
+      "content_id": "7f7d80e8-6182-4e59-9c36-5586f5b6e76c",
+      "claim_id": "C79",
+      "claim": "Mean connectivity ranged from 168.2 estimated introductions per year for less-resistant E. coli to 0.09 for vancomycin-resistant E. faecium.",
+      "claim_type": "EXPLICIT",
+      "source": "Mean connectivity ranged from 168.2 estimated introductions per year for less-resistant E. coli to 0.09 for vancomycin-resistant E. faecium.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated in the manuscript text describing connectivity estimates.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:50:38.572080Z"
+    },
+    {
+      "id": "7150b775-e0d8-4851-9672-02a649e132a6",
+      "content_id": "7f7d80e8-6182-4e59-9c36-5586f5b6e76c",
+      "claim_id": "C80",
+      "claim": "Connectivity was always higher for the less-resistant variants compared to the resistant variants.",
+      "claim_type": "EXPLICIT",
+      "source": "Connectivity was always higher for the less-resistant variants compared to the resistant variants, consistent with the higher prevalence of the former (Supplementary file 1 Table 1a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated in the manuscript text describing connectivity patterns.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:50:38.572080Z"
+    },
+    {
+      "id": "53d59ed5-de85-42a1-ab35-16e72b0915e7",
+      "content_id": "7f7d80e8-6182-4e59-9c36-5586f5b6e76c",
+      "claim_id": "C81",
+      "claim": "In the pooled analysis model, piperacillin-tazobactam and cefotaxime-ceftriaxone had the largest positive coefficients.",
+      "claim_type": "EXPLICIT",
+      "source": "In this model, piperacillin-tazobactam and cefotaxime-ceftriaxone had the largest positive coefficients while 1GC/2GC and coamoxiclav had the largest negative coefficients (Table 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Directly stated in the manuscript text describing the pooled model results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:50:38.572080Z"
+    },
+    {
+      "id": "88c698f8-61c8-4001-8d18-6c6228996bee",
+      "content_id": "7f7d80e8-6182-4e59-9c36-5586f5b6e76c",
+      "claim_id": "C82",
+      "claim": "In the pooled analysis model, 1GC/2GC and coamoxiclav had the largest negative coefficients.",
+      "claim_type": "EXPLICIT",
+      "source": "In this model, piperacillin-tazobactam and cefotaxime-ceftriaxone had the largest positive coefficients while 1GC/2GC and coamoxiclav had the largest negative coefficients (Table 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Directly stated in the manuscript text describing the pooled model results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:50:38.572080Z"
+    },
+    {
+      "id": "fe91b985-80fe-4b5c-9776-f87b10463f77",
+      "content_id": "7f7d80e8-6182-4e59-9c36-5586f5b6e76c",
+      "claim_id": "C83",
+      "claim": "The association of cefotaxime-ceftriaxone with carbapenem-resistant variants in K. pneumoniae possibly reflected selection for the highly frequent 3GC-resistance in carbapenemase-producing K. pneumoniae.",
+      "claim_type": "EXPLICIT",
+      "source": "The association of cefotaxime-ceftriaxone with carbapenem-resistant variants in K. pneumoniae, but not in E. coli, possibly reflected selection for the highly frequent 3GC-resistance in carbapenemase-producing K. pneumoniae.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated in the discussion as an interpretation.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:50:38.572080Z"
+    },
+    {
+      "id": "ef09f085-27ab-49c8-9f69-645fd26d3bc9",
+      "content_id": "7f7d80e8-6182-4e59-9c36-5586f5b6e76c",
+      "claim_id": "C84",
+      "claim": "E. coli Oxa48 producers frequently remain susceptible to 3GCs but resistant to piperacillin-tazobactam.",
+      "claim_type": "EXPLICIT",
+      "source": "This contrasts with E. coli Oxa48 producers that frequently remain susceptible to 3GCs but resistant to piperacillin-tazobactam (Huang et al., 2014), consistent with the strong association between the use of piperacillin-tazobactam and the incidence of carbapenem-resistant E. coli infections (Figure 2a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Directly stated in the discussion with supporting citation.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:50:38.572080Z"
+    },
+    {
+      "id": "388f26f2-2f36-4726-b276-f5a042e3678c",
+      "content_id": "7f7d80e8-6182-4e59-9c36-5586f5b6e76c",
+      "claim_id": "C85",
+      "claim": "19 associations (10.2% of 187 total coefficients) represented possibly selective associations.",
+      "claim_type": "EXPLICIT",
+      "source": "The models yielded 187 coefficients of which 19 (10.2%) represented possibly selective associations (see Materials and methods).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated in the manuscript text describing the analysis results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:50:38.572080Z"
+    },
+    {
+      "id": "ed4cd28a-731f-4b53-9526-26b764b352a0",
+      "content_id": "7f7d80e8-6182-4e59-9c36-5586f5b6e76c",
+      "claim_id": "C86",
+      "claim": "Samples were deduplicated per patient, ward, and pathogen variant, so that only the first sample positive for the same variant in the same ward was considered for each patient.",
+      "claim_type": "EXPLICIT",
+      "source": "Samples were deduplicated per patient, ward, and pathogen variant, so that only the first sample positive for the same variant in the same ward was considered for each patient.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated in the methods section describing data processing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:50:38.572080Z"
+    },
+    {
+      "id": "1a05c73a-dcf5-400f-bde0-c40b6fbf3f45",
+      "content_id": "7f7d80e8-6182-4e59-9c36-5586f5b6e76c",
+      "claim_id": "C87",
+      "claim": "Patients positive for multiple variants and/or sampled from multiple wards were considered as multiple, distinct infection episodes.",
+      "claim_type": "EXPLICIT",
+      "source": "Patients positive for multiple variants and/or sampled from multiple wards were considered as multiple, distinct infection episodes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated in the methods section describing data processing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:50:38.572080Z"
+    },
+    {
+      "id": "4a89325b-af52-4c8c-82ca-a4f067a59422",
+      "content_id": "7f7d80e8-6182-4e59-9c36-5586f5b6e76c",
+      "claim_id": "C88",
+      "claim": "Informed consent was not sought because of the aggregated nature of the data, in accordance with French regulations.",
+      "claim_type": "EXPLICIT",
+      "source": "Because of the aggregated nature of the data, informed consent was not sought, in accordance with French regulations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated in the methods section describing ethical considerations.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:50:38.572080Z"
+    },
+    {
+      "id": "d72b733e-b6d9-41b5-a848-70bf86782fbd",
+      "content_id": "7f7d80e8-6182-4e59-9c36-5586f5b6e76c",
+      "claim_id": "C89",
+      "claim": "Wards were characterized by their size (no. of beds) and type, representing patient fragility.",
+      "claim_type": "EXPLICIT",
+      "source": "Wards were characterized by their size (no. of beds) and type, representing patient fragility.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated in the manuscript text describing ward characteristics.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:50:38.572080Z"
+    },
+    {
+      "id": "0121fa8d-bd1c-4d64-afd6-8c67cc713567",
+      "content_id": "7f7d80e8-6182-4e59-9c36-5586f5b6e76c",
+      "claim_id": "C90",
+      "claim": "Ward type was coded as one of the following categorical variables: intensive care and blood cancer units, progressive care units, and other wards.",
+      "claim_type": "EXPLICIT",
+      "source": "Ward type was coded as one of the following categorical variables: intensive care and blood cancer units, progressive care units, and other wards.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated in the manuscript text describing ward type coding.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:50:38.572080Z"
+    },
+    {
+      "id": "cbf5f155-d1bd-4ed8-8524-0ae0a986003e",
+      "content_id": "7f7d80e8-6182-4e59-9c36-5586f5b6e76c",
+      "claim_id": "C91",
+      "claim": "The quasi-Poisson model was favored over the negative binomial model because the former gives greater weight to the larger sites.",
+      "claim_type": "EXPLICIT",
+      "source": "We favored the quasi-Poisson model over the alternative, negative binomial model because the latter gives greater weight to smaller sites, whereas the former gives greater weight to the larger sites (Ver Hoef and Boveng, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated in the methods section with supporting citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:50:38.572080Z"
+    },
+    {
+      "id": "1be410b1-b055-4fc6-81ca-78b494e2ff52",
+      "content_id": "7f7d80e8-6182-4e59-9c36-5586f5b6e76c",
+      "claim_id": "C92",
+      "claim": "Evidence of both under- and overdispersion was found, with fitted quasi-Poisson dispersion parameters ranging from 0.24 to 2.5.",
+      "claim_type": "EXPLICIT",
+      "source": "We used the quasi-Poisson distribution because we found evidence of both under- and overdispersion, as evidenced by fitted quasi-Poisson dispersion parameters ranging from 0.24 (strong underdispersion, found for carbapenem-resistant A. baumannii in Figure 1 model) to 2.5 (moderate overdispersion, found for less-resistant E. faecium) (Supplementary file 1 Table 1b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated in the methods section describing model selection.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:50:38.572080Z"
+    },
+    {
+      "id": "72219bf5-921f-44e6-b05f-93f48fc95ba2",
+      "content_id": "7f7d80e8-6182-4e59-9c36-5586f5b6e76c",
+      "claim_id": "C93",
+      "claim": "All non-categorical explanatory variables were log2-transformed before further analyses.",
+      "claim_type": "EXPLICIT",
+      "source": "All non-categorical explanatory variables including the incidence control, ward size, connectivity and antibiotic use were log2-transformed before further analyses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated in the methods section describing data transformation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:50:38.572080Z"
+    },
+    {
+      "id": "20d02446-a2c9-4cf0-a817-a5d84172a294",
+      "content_id": "7f7d80e8-6182-4e59-9c36-5586f5b6e76c",
+      "claim_id": "C94",
+      "claim": "All zeroes were converted to half the minimum non-zero value before log transformation.",
+      "claim_type": "EXPLICIT",
+      "source": "To avoid negative infinity values from this transformation, all zeroes were first converted to half the minimum non-zero value.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated in the methods section describing data transformation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:50:38.572080Z"
+    },
+    {
+      "id": "29154026-dc44-40c7-b75f-325c41c07ee0",
+      "content_id": "7f7d80e8-6182-4e59-9c36-5586f5b6e76c",
+      "claim_id": "C95",
+      "claim": "The log2 transformation was associated with better model fit compared with alternative approaches.",
+      "claim_type": "EXPLICIT",
+      "source": "This transformation was associated with better model fit (using the model structure of Figure 1), in terms of Akaike information criterion (with Poisson distribution), compared with: (1) replacing zeroes with the minimum non-zero value before taking logs; (2) adding one to zero values before taking logs; or (3) avoiding log transformation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated in the methods section describing model selection.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:50:38.572080Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "7f569718-599d-4a80-b033-7bb18d3dcad1",
+      "content_id": "7f7d80e8-6182-4e59-9c36-5586f5b6e76c",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The study characterized the distribution of bacterial pathogens and antibiotic use across a network of 357 hospital wards in Lyon, France, over one year (October 2016-September 2017). Data included 13,915 infection episodes from ESKAPE2 pathogens with varying resistance profiles, antibiotic consumption data from 11 drug classes, and patient transfer information used to calculate connectivity between wards.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C20, C72-C80, C86-C90 provide comprehensive descriptive statistics about the study setting, pathogen distribution, antibiotic use patterns, and connectivity measures. The data are internally consistent and appropriately documented with specific numbers, percentages, and confidence intervals. The methodological details about data collection, deduplication, and ward characterization are clearly stated.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:50:38.572080Z"
+    },
+    {
+      "id": "b2926fd9-7fb5-4d5b-93e3-7a7215308b6d",
+      "content_id": "7f7d80e8-6182-4e59-9c36-5586f5b6e76c",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Using multivariable quasi-Poisson GLMs controlling for connectivity, ward size, ward type, and an incidence control variable, global antibiotic use was independently associated with infection incidence in seven pathogen variants (five resistant, two less-resistant). The largest effect was in carbapenem-resistant K. pneumoniae (47% increase per doubling of antibiotic use, 95% CI 19-90%). Connectivity predicted higher incidence in P. aeruginosa and E. faecium variants, with stronger effects in resistant variants. Ward size did not predict incidence.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24-C30 describe the main GLM results with specific effect sizes and confidence intervals. The statistical approach is appropriate for count data, includes relevant covariates, and addresses confounding through the incidence control variable. The findings are internally consistent and supported by Figure 1. However, the quasi-Poisson model assumes the mean-variance relationship is correctly specified, and residual confounding from unmeasured variables remains possible.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:50:38.572080Z"
+    },
+    {
+      "id": "96673f8d-1c2e-4849-b57c-850587f49474",
+      "content_id": "7f7d80e8-6182-4e59-9c36-5586f5b6e76c",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Associations classified as 'possibly selective' (where antibiotics are always inactive against a variant and the variant lacks resistance to more potent drugs) showed significantly larger effect sizes (mean 6.5% increase per doubling) compared to other associations (0.9% increase), with 95% CI of the difference 0.6-10.6%. This pattern suggests that local, ward-level antibiotic selection of resistant variants is measurably pervasive throughout the hospital network.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31-C33, C69, C85 describe a novel analytical approach to distinguish selective pressure from reverse causation. The criteria for 'possibly selective' associations are biologically plausible, and the statistical difference between groups supports the interpretation. However, the classification criteria involve subjective judgments about which antibiotics are 'more potent,' and the confidence interval for the difference barely excludes zero, suggesting modest statistical power.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:50:38.572080Z"
+    },
+    {
+      "id": "3a20ac3e-e148-4cf6-9438-7a28654fcdaf",
+      "content_id": "7f7d80e8-6182-4e59-9c36-5586f5b6e76c",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "In models of cumulative resistance to empirical sepsis therapy, antibiotic use was the strongest predictor of both 3GC-resistant (5.1% increase per doubling, 95% CI 2.7-7.5%) and carbapenem-resistant infections (6.5% increase, 95% CI 2.5-11.0%). Piperacillin-tazobactam use predicted both 3GC-resistant (5.9% increase, 95% CI 2.9-9.0%) and carbapenem-resistant infections (10.3% increase, 95% CI 5.0-16.0%), with the largest positive coefficients in pooled models. Connectivity better predicted carbapenem-resistant (4.8%) than 3GC-resistant infections (1.0%).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C40, C81-C82 present pooled analyses of clinically relevant resistance categories with consistent effect estimates and appropriate confidence intervals. The finding that piperacillin-tazobactam predicts both resistance types is notable and clinically important. The models control for connectivity and the incidence control variable, reducing confounding. However, pooling intrinsically resistant species with acquired resistance may obscure species-specific mechanisms.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:50:38.572080Z"
+    },
+    {
+      "id": "3fe926c1-a927-474d-b3e4-9a893a20741d",
+      "content_id": "7f7d80e8-6182-4e59-9c36-5586f5b6e76c",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The study concludes that both antibiotic use and inter-ward connectivity predict AMR burden in a variant-specific fashion. Ward-level antibiotic consumption had stronger influence on more resistant pathogens, while connectivity had the most influence on hospital-endemic species and carbapenem-resistant pathogens. Piperacillin-tazobactam was the strongest predictor of cumulative resistance to empirical sepsis therapy. This suggests infection control interventions targeting connectivity may be more effective for carbapenem-resistant than 3GC-resistant pathogens.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21-C23, C67-C68 summarize the main findings and their implications. These conclusions are well-supported by the quantitative results presented in other claim groups. The variant-specific patterns are documented with effect sizes and confidence intervals. The suggestion about differential effectiveness of infection control (C68) is a reasonable inference from the data, though it remains a hypothesis requiring prospective validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:50:38.572080Z"
+    },
+    {
+      "id": "8085c8db-55ba-424f-b913-cd12f8886cff",
+      "content_id": "7f7d80e8-6182-4e59-9c36-5586f5b6e76c",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The authors interpret connectivity effects through a metapopulation framework: connectivity should most strongly predict incidence for hospital-endemic variants with stable resistance profiles. Consistent with this, connectivity was strongest for P. aeruginosa and E. faecium (hospital-endemic), but not MRSA (which has comparable prevalence in hospital and community in France, ~10%, dominated by ST8 Lyon clone). Connectivity was weaker for community-associated variants (3GC-resistant E. coli/K. pneumoniae) and variants with plastic resistance (E. cloacae complex, which can develop resistance through AmpC/porin changes rather than gene acquisition).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49-C57 provide a coherent theoretical framework linking connectivity effects to pathogen ecology. The interpretation is supported by cited literature (C52-C53, C56-C57) and consistent with the quantitative results. The explanation for MRSA's lack of connectivity effect is plausible given the epidemiological context. However, the distinction between 'hospital-endemic' and 'community-associated' is somewhat categorical when transmission likely occurs in both directions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:50:38.572080Z"
+    },
+    {
+      "id": "b2e5e8b6-4b8b-458b-a6b7-1465a457bbf0",
+      "content_id": "7f7d80e8-6182-4e59-9c36-5586f5b6e76c",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The authors discuss the controversial role of piperacillin-tazobactam in carbapenem-sparing strategies. While piperacillin-tazobactam has been considered an alternative to carbapenems based on in vitro efficacy against ESBL-producers, recent clinical trials show poorer outcomes compared to carbapenems. Previous population-level studies found negative associations with carbapenem resistance, but patient-level studies found positive associations. The current study's finding that piperacillin-tazobactam predicts both 3GC- and carbapenem-resistant infections may reflect co-selection (e.g., K. pneumoniae carbapenemase producers are often 3GC-resistant; E. coli OXA-48 producers are often piperacillin-tazobactam-resistant but 3GC-susceptible).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-C62, C83-C84 contextualize the piperacillin-tazobactam findings within existing literature, appropriately citing conflicting prior evidence. The mechanistic explanations for species-specific associations (C83-C84) are biologically plausible and supported by citations. However, the cross-sectional design cannot definitively establish whether piperacillin-tazobactam use causes resistance or whether the associations reflect unmeasured confounding or reverse causation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:50:38.572080Z"
+    },
+    {
+      "id": "3ffbf9f6-abf0-4adf-97e3-50c3ca1ef6cb",
+      "content_id": "7f7d80e8-6182-4e59-9c36-5586f5b6e76c",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The study has several acknowledged limitations: it did not consider healthcare worker transmission or direct community admissions; small sample sizes for resistant E. faecium and A. baumannii variants limited robust inference; and findings reflect Western European AMR ecology with lower prevalences of carbapenemase-producers, vancomycin-resistant E. faecium, and MRSA than other regions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C63-C66 appropriately acknowledge study limitations. These are important caveats that affect generalizability and interpretation. The authors correctly note that healthcare worker transmission and community admissions could confound connectivity estimates. The acknowledgment of limited generalizability to high-prevalence settings is appropriate. These limitations do not invalidate the findings but constrain their interpretation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:50:38.572080Z"
+    },
+    {
+      "id": "0928a69f-3c85-45ce-986b-7a24305a51b0",
+      "content_id": "7f7d80e8-6182-4e59-9c36-5586f5b6e76c",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The incidence control variable (expected incidence based on microbiological sampling patterns alone) correlated strongly with observed cumulative bacterial incidence (R\u00b2=0.96, 95% CI 0.95-0.96) and moderately with antibiotic use (R\u00b2=0.34, 95% CI 0.25-0.40). All non-categorical variables were log2-transformed after converting zeros to half the minimum non-zero value, which provided better model fit than alternative approaches based on Akaike information criterion.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C70-C71, C93-C95 describe the incidence control variable and data transformation methods. The strong correlation between incidence control and observed incidence (C70) validates the proxy approach. The log2 transformation is appropriate for multiplicative effects and was empirically justified by model comparison. However, the moderate correlation with antibiotic use (C71) suggests the incidence control only partially controls for confounding by infection distribution.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:50:38.572080Z"
+    },
+    {
+      "id": "b781f4b0-e608-4c90-a751-595c64980732",
+      "content_id": "7f7d80e8-6182-4e59-9c36-5586f5b6e76c",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The quasi-Poisson model was chosen over the negative binomial model because it gives greater weight to larger sites, which is appropriate when larger wards should be weighted more heavily. Evidence of both under- and overdispersion was found, with fitted dispersion parameters ranging from 0.24 (strong underdispersion for carbapenem-resistant A. baumannii) to 2.5 (moderate overdispersion for less-resistant E. faecium).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C91-C92 justify the choice of quasi-Poisson over negative binomial regression with appropriate statistical reasoning and citation. The wide range of dispersion parameters (0.24-2.5) demonstrates that both under- and overdispersion occur across variants, supporting the flexible quasi-Poisson approach. However, the rationale for weighting larger sites more heavily is stated but not deeply justified\u2014one could argue smaller sites with high resistance rates are equally important from a public health perspective.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:50:38.572080Z"
+    },
+    {
+      "id": "da33bfd6-a6d7-496a-a839-d64c4145a3a3",
+      "content_id": "7f7d80e8-6182-4e59-9c36-5586f5b6e76c",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The introduction establishes that hospitals are hotspots for AMR due to antibiotic pressure, fragile patients, and pathogen dissemination through patient transfers, making them reservoirs that can seed community transmission. The primary hospital-based strategies are antimicrobial stewardship and infection control, but their relative importance is unclear. The association between antibiotic use and resistance varies by pathogen species and antibiotic class. Metapopulation ecology, introduced by Levins (1969) and refined by Hanski, provides a framework for modeling pathogen persistence across connected habitat patches, but has been applied to simulated rather than empirical hospital AMR data.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41-C48 provide appropriate background and motivation, supported by citations. The characterization of hospitals as AMR hotspots (C41-C43) and the description of intervention strategies (C44) are well-established in the literature. The acknowledgment that antibiotic-resistance associations vary by species and drug class (C45-C46) motivates the variant-specific analysis. The application of metapopulation ecology to hospital AMR (C47-C48) is appropriately framed as novel for empirical data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:50:38.572080Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "49978f67-e337-43d6-bc87-f58020a4e6bc",
+      "result_id": "7f569718-599d-4a80-b033-7bb18d3dcad1"
+    },
+    {
+      "claim_id": "12160c8e-1a74-4496-818d-e7e7cc670851",
+      "result_id": "7f569718-599d-4a80-b033-7bb18d3dcad1"
+    },
+    {
+      "claim_id": "c6fdb8e2-76fc-457e-84e1-99e36d138420",
+      "result_id": "7f569718-599d-4a80-b033-7bb18d3dcad1"
+    },
+    {
+      "claim_id": "60b16a65-4181-438f-a9ba-0341ef146f88",
+      "result_id": "7f569718-599d-4a80-b033-7bb18d3dcad1"
+    },
+    {
+      "claim_id": "7e6f3574-e921-41d6-b59e-1069c5c37883",
+      "result_id": "7f569718-599d-4a80-b033-7bb18d3dcad1"
+    },
+    {
+      "claim_id": "613fe4f3-e186-4e87-bb56-51b76f7490d5",
+      "result_id": "7f569718-599d-4a80-b033-7bb18d3dcad1"
+    },
+    {
+      "claim_id": "06171d38-6bbc-4eef-8696-cb0b0e0e09f8",
+      "result_id": "7f569718-599d-4a80-b033-7bb18d3dcad1"
+    },
+    {
+      "claim_id": "0de8ba42-3a00-48a1-84ef-cffed6ccc4b1",
+      "result_id": "7f569718-599d-4a80-b033-7bb18d3dcad1"
+    },
+    {
+      "claim_id": "8f96ceaa-980e-4382-8b26-212c9706fac5",
+      "result_id": "7f569718-599d-4a80-b033-7bb18d3dcad1"
+    },
+    {
+      "claim_id": "80be6638-eeb3-43d8-be65-75bd89ad6597",
+      "result_id": "7f569718-599d-4a80-b033-7bb18d3dcad1"
+    },
+    {
+      "claim_id": "093d3440-9980-42da-b1c7-6ed90ef4fa6a",
+      "result_id": "7f569718-599d-4a80-b033-7bb18d3dcad1"
+    },
+    {
+      "claim_id": "6c5d0b85-a1b9-4d55-b47a-dba40fd4b1db",
+      "result_id": "7f569718-599d-4a80-b033-7bb18d3dcad1"
+    },
+    {
+      "claim_id": "7312d925-c426-45fa-9ee1-d3394b994f0b",
+      "result_id": "7f569718-599d-4a80-b033-7bb18d3dcad1"
+    },
+    {
+      "claim_id": "100816d9-3686-4614-bdd4-ed8c0c7b26b6",
+      "result_id": "7f569718-599d-4a80-b033-7bb18d3dcad1"
+    },
+    {
+      "claim_id": "b99c560f-154f-445c-b519-a3cb881a75b4",
+      "result_id": "7f569718-599d-4a80-b033-7bb18d3dcad1"
+    },
+    {
+      "claim_id": "4d05792b-e9bd-49b6-a1a7-766e9f8df381",
+      "result_id": "7f569718-599d-4a80-b033-7bb18d3dcad1"
+    },
+    {
+      "claim_id": "b7c8b80c-371e-487f-bf1b-22252f3d5f43",
+      "result_id": "7f569718-599d-4a80-b033-7bb18d3dcad1"
+    },
+    {
+      "claim_id": "c2ec46c6-7f92-4430-bff1-dba519a23e86",
+      "result_id": "7f569718-599d-4a80-b033-7bb18d3dcad1"
+    },
+    {
+      "claim_id": "95df0ce7-da89-4e99-902d-d525e958d4ad",
+      "result_id": "7f569718-599d-4a80-b033-7bb18d3dcad1"
+    },
+    {
+      "claim_id": "6b701a80-2f19-4e72-9b2d-63d4f923a2af",
+      "result_id": "7f569718-599d-4a80-b033-7bb18d3dcad1"
+    },
+    {
+      "claim_id": "57233057-2476-4aa6-8b8b-093c47410ac5",
+      "result_id": "7f569718-599d-4a80-b033-7bb18d3dcad1"
+    },
+    {
+      "claim_id": "28740725-698e-4054-91a4-28e0e7469b25",
+      "result_id": "7f569718-599d-4a80-b033-7bb18d3dcad1"
+    },
+    {
+      "claim_id": "f044f2cd-8692-4030-a44f-2af8a94fc3da",
+      "result_id": "7f569718-599d-4a80-b033-7bb18d3dcad1"
+    },
+    {
+      "claim_id": "92994d64-4f36-41b1-9f3e-15b41997fa25",
+      "result_id": "7f569718-599d-4a80-b033-7bb18d3dcad1"
+    },
+    {
+      "claim_id": "05acabc9-b367-4e58-ba46-181a388d81ee",
+      "result_id": "7f569718-599d-4a80-b033-7bb18d3dcad1"
+    },
+    {
+      "claim_id": "96b48ef9-b0b4-4f02-aafe-a12a17cc65b1",
+      "result_id": "7f569718-599d-4a80-b033-7bb18d3dcad1"
+    },
+    {
+      "claim_id": "4057ea0d-1cd9-42eb-a09d-113bbd710d93",
+      "result_id": "7f569718-599d-4a80-b033-7bb18d3dcad1"
+    },
+    {
+      "claim_id": "855a02a6-f018-4c3d-ae9f-d1a0092a40d9",
+      "result_id": "7f569718-599d-4a80-b033-7bb18d3dcad1"
+    },
+    {
+      "claim_id": "7150b775-e0d8-4851-9672-02a649e132a6",
+      "result_id": "7f569718-599d-4a80-b033-7bb18d3dcad1"
+    },
+    {
+      "claim_id": "ed4cd28a-731f-4b53-9526-26b764b352a0",
+      "result_id": "7f569718-599d-4a80-b033-7bb18d3dcad1"
+    },
+    {
+      "claim_id": "1a05c73a-dcf5-400f-bde0-c40b6fbf3f45",
+      "result_id": "7f569718-599d-4a80-b033-7bb18d3dcad1"
+    },
+    {
+      "claim_id": "4a89325b-af52-4c8c-82ca-a4f067a59422",
+      "result_id": "7f569718-599d-4a80-b033-7bb18d3dcad1"
+    },
+    {
+      "claim_id": "d72b733e-b6d9-41b5-a848-70bf86782fbd",
+      "result_id": "7f569718-599d-4a80-b033-7bb18d3dcad1"
+    },
+    {
+      "claim_id": "0121fa8d-bd1c-4d64-afd6-8c67cc713567",
+      "result_id": "7f569718-599d-4a80-b033-7bb18d3dcad1"
+    },
+    {
+      "claim_id": "e440f702-95ee-4e71-a480-278be7d49caf",
+      "result_id": "b2926fd9-7fb5-4d5b-93e3-7a7215308b6d"
+    },
+    {
+      "claim_id": "cba6f725-3d3c-446f-93a9-cd109d3a5462",
+      "result_id": "b2926fd9-7fb5-4d5b-93e3-7a7215308b6d"
+    },
+    {
+      "claim_id": "5c970776-3e2f-4bd7-870b-0e896aae7a97",
+      "result_id": "b2926fd9-7fb5-4d5b-93e3-7a7215308b6d"
+    },
+    {
+      "claim_id": "9e43d270-fd52-4462-af8e-534030cac6de",
+      "result_id": "b2926fd9-7fb5-4d5b-93e3-7a7215308b6d"
+    },
+    {
+      "claim_id": "c8e7cfef-1df4-491c-aecf-08d2662ed7b1",
+      "result_id": "b2926fd9-7fb5-4d5b-93e3-7a7215308b6d"
+    },
+    {
+      "claim_id": "b55e05aa-b02b-45d1-8be3-9dae43b4be52",
+      "result_id": "b2926fd9-7fb5-4d5b-93e3-7a7215308b6d"
+    },
+    {
+      "claim_id": "e260396e-527d-4c60-a775-dc858f5e79b8",
+      "result_id": "b2926fd9-7fb5-4d5b-93e3-7a7215308b6d"
+    },
+    {
+      "claim_id": "f24cf88a-c6ec-4511-a764-605e07f6bc47",
+      "result_id": "96673f8d-1c2e-4849-b57c-850587f49474"
+    },
+    {
+      "claim_id": "17e91ba8-5842-4274-9642-f533d8cc7568",
+      "result_id": "96673f8d-1c2e-4849-b57c-850587f49474"
+    },
+    {
+      "claim_id": "e0943568-101f-41bc-a3e2-72ea1476740c",
+      "result_id": "96673f8d-1c2e-4849-b57c-850587f49474"
+    },
+    {
+      "claim_id": "5a08a3e6-d1c7-4896-a4a4-2bf290454189",
+      "result_id": "96673f8d-1c2e-4849-b57c-850587f49474"
+    },
+    {
+      "claim_id": "388f26f2-2f36-4726-b276-f5a042e3678c",
+      "result_id": "96673f8d-1c2e-4849-b57c-850587f49474"
+    },
+    {
+      "claim_id": "f7bcb7f9-0008-4131-b05a-5a7c0bbf23dd",
+      "result_id": "3a20ac3e-e148-4cf6-9438-7a28654fcdaf"
+    },
+    {
+      "claim_id": "e710ab37-e099-4a59-8652-6e552d92b0d9",
+      "result_id": "3a20ac3e-e148-4cf6-9438-7a28654fcdaf"
+    },
+    {
+      "claim_id": "7ad66681-be28-4064-906b-062b2856946f",
+      "result_id": "3a20ac3e-e148-4cf6-9438-7a28654fcdaf"
+    },
+    {
+      "claim_id": "1e2d8228-949d-4e7f-a285-33b6cc352439",
+      "result_id": "3a20ac3e-e148-4cf6-9438-7a28654fcdaf"
+    },
+    {
+      "claim_id": "6c9e4410-b93a-4765-84a2-81592241f20a",
+      "result_id": "3a20ac3e-e148-4cf6-9438-7a28654fcdaf"
+    },
+    {
+      "claim_id": "2ce8367d-f3cd-4113-9cfb-012c37fd6216",
+      "result_id": "3a20ac3e-e148-4cf6-9438-7a28654fcdaf"
+    },
+    {
+      "claim_id": "d03c345e-3b2e-4ba1-9fc5-1c8ecc69a71d",
+      "result_id": "3a20ac3e-e148-4cf6-9438-7a28654fcdaf"
+    },
+    {
+      "claim_id": "53d59ed5-de85-42a1-ab35-16e72b0915e7",
+      "result_id": "3a20ac3e-e148-4cf6-9438-7a28654fcdaf"
+    },
+    {
+      "claim_id": "88c698f8-61c8-4001-8d18-6c6228996bee",
+      "result_id": "3a20ac3e-e148-4cf6-9438-7a28654fcdaf"
+    },
+    {
+      "claim_id": "5595a40a-8dea-44fb-860f-f68399dd1635",
+      "result_id": "3fe926c1-a927-474d-b3e4-9a893a20741d"
+    },
+    {
+      "claim_id": "905410ad-682c-468f-a2f0-caa8d2924fbe",
+      "result_id": "3fe926c1-a927-474d-b3e4-9a893a20741d"
+    },
+    {
+      "claim_id": "03690ea0-b9cd-4dd3-b921-bdf2df1c0ab8",
+      "result_id": "3fe926c1-a927-474d-b3e4-9a893a20741d"
+    },
+    {
+      "claim_id": "0e3e0917-d664-470b-adf1-441ac00533ba",
+      "result_id": "3fe926c1-a927-474d-b3e4-9a893a20741d"
+    },
+    {
+      "claim_id": "f549c886-e8a4-47bd-9c37-61a6a818dbf6",
+      "result_id": "3fe926c1-a927-474d-b3e4-9a893a20741d"
+    },
+    {
+      "claim_id": "fba37dd1-e3ec-416b-928f-cfa4f385589f",
+      "result_id": "8085c8db-55ba-424f-b913-cd12f8886cff"
+    },
+    {
+      "claim_id": "a4bb7030-e210-4183-b6c8-86554f2eb813",
+      "result_id": "8085c8db-55ba-424f-b913-cd12f8886cff"
+    },
+    {
+      "claim_id": "51f5a88f-33b5-47e9-a354-7402bc84b552",
+      "result_id": "8085c8db-55ba-424f-b913-cd12f8886cff"
+    },
+    {
+      "claim_id": "86ba9167-67b9-4056-b1d0-63b444f51053",
+      "result_id": "8085c8db-55ba-424f-b913-cd12f8886cff"
+    },
+    {
+      "claim_id": "b74ac1cc-8521-4678-b2a6-0de80bdd0450",
+      "result_id": "8085c8db-55ba-424f-b913-cd12f8886cff"
+    },
+    {
+      "claim_id": "7aa97e47-b926-453a-95ff-c741296d147f",
+      "result_id": "8085c8db-55ba-424f-b913-cd12f8886cff"
+    },
+    {
+      "claim_id": "0f56310d-e8e3-4f80-ade9-e8bf3f547f85",
+      "result_id": "8085c8db-55ba-424f-b913-cd12f8886cff"
+    },
+    {
+      "claim_id": "7d26f2a5-0561-4816-9e6b-bef42b574142",
+      "result_id": "8085c8db-55ba-424f-b913-cd12f8886cff"
+    },
+    {
+      "claim_id": "871dd934-1329-4118-8411-65a82e064938",
+      "result_id": "8085c8db-55ba-424f-b913-cd12f8886cff"
+    },
+    {
+      "claim_id": "cb85f889-21e7-40af-bb52-ebe1cb4c35de",
+      "result_id": "b2e5e8b6-4b8b-458b-a6b7-1465a457bbf0"
+    },
+    {
+      "claim_id": "77124f4c-162a-46bf-b11b-eab0773860d4",
+      "result_id": "b2e5e8b6-4b8b-458b-a6b7-1465a457bbf0"
+    },
+    {
+      "claim_id": "b5059920-8a15-4f94-b131-a176a7b8cffd",
+      "result_id": "b2e5e8b6-4b8b-458b-a6b7-1465a457bbf0"
+    },
+    {
+      "claim_id": "955cc81f-901f-4d7f-a4dd-73bfba18c8d0",
+      "result_id": "b2e5e8b6-4b8b-458b-a6b7-1465a457bbf0"
+    },
+    {
+      "claim_id": "ece008b8-5397-44fd-ab11-7ab6a1f092ef",
+      "result_id": "b2e5e8b6-4b8b-458b-a6b7-1465a457bbf0"
+    },
+    {
+      "claim_id": "fe91b985-80fe-4b5c-9776-f87b10463f77",
+      "result_id": "b2e5e8b6-4b8b-458b-a6b7-1465a457bbf0"
+    },
+    {
+      "claim_id": "ef09f085-27ab-49c8-9f69-645fd26d3bc9",
+      "result_id": "b2e5e8b6-4b8b-458b-a6b7-1465a457bbf0"
+    },
+    {
+      "claim_id": "44bb019d-c280-4433-abe0-f0fb302281ff",
+      "result_id": "3ffbf9f6-abf0-4adf-97e3-50c3ca1ef6cb"
+    },
+    {
+      "claim_id": "17fa4ce6-6e5b-4408-b0fc-272947891249",
+      "result_id": "3ffbf9f6-abf0-4adf-97e3-50c3ca1ef6cb"
+    },
+    {
+      "claim_id": "f8aabcc7-3666-4211-9167-c2684439c806",
+      "result_id": "3ffbf9f6-abf0-4adf-97e3-50c3ca1ef6cb"
+    },
+    {
+      "claim_id": "56d3280d-19da-4d27-b271-78033efd9e2c",
+      "result_id": "3ffbf9f6-abf0-4adf-97e3-50c3ca1ef6cb"
+    },
+    {
+      "claim_id": "2ce8dcc6-ccbe-4a7c-b534-4829e9f0b6d6",
+      "result_id": "0928a69f-3c85-45ce-986b-7a24305a51b0"
+    },
+    {
+      "claim_id": "063af6e8-c1b4-47dc-bcea-a952c43f1c60",
+      "result_id": "0928a69f-3c85-45ce-986b-7a24305a51b0"
+    },
+    {
+      "claim_id": "72219bf5-921f-44e6-b05f-93f48fc95ba2",
+      "result_id": "0928a69f-3c85-45ce-986b-7a24305a51b0"
+    },
+    {
+      "claim_id": "20d02446-a2c9-4cf0-a817-a5d84172a294",
+      "result_id": "0928a69f-3c85-45ce-986b-7a24305a51b0"
+    },
+    {
+      "claim_id": "29154026-dc44-40c7-b75f-325c41c07ee0",
+      "result_id": "0928a69f-3c85-45ce-986b-7a24305a51b0"
+    },
+    {
+      "claim_id": "cbf5f155-d1bd-4ed8-8524-0ae0a986003e",
+      "result_id": "b781f4b0-e608-4c90-a751-595c64980732"
+    },
+    {
+      "claim_id": "1be410b1-b055-4fc6-81ca-78b494e2ff52",
+      "result_id": "b781f4b0-e608-4c90-a751-595c64980732"
+    },
+    {
+      "claim_id": "1785b35c-3c3e-4f90-a58e-3d232c66fd3d",
+      "result_id": "da33bfd6-a6d7-496a-a839-d64c4145a3a3"
+    },
+    {
+      "claim_id": "de03a9b2-8d10-4899-806c-a5635319ca3e",
+      "result_id": "da33bfd6-a6d7-496a-a839-d64c4145a3a3"
+    },
+    {
+      "claim_id": "1b9890cf-5508-4a8b-9539-d05d69a0fd37",
+      "result_id": "da33bfd6-a6d7-496a-a839-d64c4145a3a3"
+    },
+    {
+      "claim_id": "c9b99a7c-96dd-4ddd-8156-26fe7571a787",
+      "result_id": "da33bfd6-a6d7-496a-a839-d64c4145a3a3"
+    },
+    {
+      "claim_id": "eec6dc0e-dc27-4f92-a06d-a26c22254f06",
+      "result_id": "da33bfd6-a6d7-496a-a839-d64c4145a3a3"
+    },
+    {
+      "claim_id": "af59ca42-2798-4e09-8477-3b6850f2a93f",
+      "result_id": "da33bfd6-a6d7-496a-a839-d64c4145a3a3"
+    },
+    {
+      "claim_id": "8671178a-f8a5-4d1d-a092-f0ad0a4e6e8c",
+      "result_id": "da33bfd6-a6d7-496a-a839-d64c4145a3a3"
+    },
+    {
+      "claim_id": "d46cffd8-dff7-406c-9138-bf6cc42d4cf9",
+      "result_id": "da33bfd6-a6d7-496a-a839-d64c4145a3a3"
+    }
+  ],
+  "comparisons": []
+}

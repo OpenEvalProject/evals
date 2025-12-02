@@ -1,0 +1,382 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "H. arabidopsidis produces sRNAs with two major size peaks at 21 nt and 25 nt, with 5' terminal uracil enrichment. AtAGO1-associated HpasRNAs show strong enrichment for 21 nt reads with 5' U preference, matching AtAGO1's known binding preference.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C35 provide consistent sRNA-seq data showing size distribution and nucleotide preferences of HpasRNAs in total samples and AtAGO1-IP samples. The data match established AtAGO1 binding preferences (C34-C35), providing strong evidence for the characterization of HpasRNAs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C21",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "HpasRNAs associate with host AtAGO1/RISC during infection. 133 unique HpasRNAs were identified in infected samples, of which 34 were predicted to target Arabidopsis mRNAs. These HpasRNAs were enriched in AtAGO1-IP compared to AtAGO2-IP and mapped predominantly to non-annotated regions in the H. arabidopsidis genome.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21 and C32-C39 are supported by AtAGO1-IP sRNA-seq data showing HpasRNA association with AtAGO1, computational target prediction, and comparative AGO-IP experiments. The data provide strong evidence for HpasRNA-AtAGO1 association and potential targeting of plant genes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "HpasRNA2 and HpasRNA90 target AtWNK2 and AtAED3, respectively. These target genes showed down-regulation upon infection in WT plants but not in atago1-27 mutants. The HpasRNAs were confirmed to be expressed during infection by stem-loop RT-PCR.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C47 are supported by computational target prediction, qRT-PCR data showing target suppression in WT but not atago1-27, and stem-loop RT-PCR confirming HpasRNA expression. The data provide evidence for HpasRNA-mediated target suppression via AtAGO1, though the suppression is moderate (C46, C48).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "5' RACE-PCR analysis did not support HpasRNA-guided cleavage of target mRNAs. While PCR products of predicted sizes were obtained, most reads mapped to 3' downstream regions, and 5' ends were scattered rather than showing predominant peaks at the expected cleavage position 10/11.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C56 are supported by RACE-PCR sequencing data showing scattered 5' ends and reads mapping predominantly to 3' regions. This negative result is important as it suggests HpasRNAs may act through translational repression rather than mRNA cleavage.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C6",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C68",
+      "C129"
+    ],
+    "result": "A novel Csy4/GUS reporter system was developed to visualize HpasRNA-induced target suppression in situ. The reporter showed GUS activation along H. arabidopsidis hyphae when fused to HpasRNA2/90 target sequences, but not with scrambled or AtmiRNA164 control sequences, or when infected with the unrelated pathogen P. capsici.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C57-C65, C68, and C129 describe a novel reporter system with appropriate controls. The data in Figure 1e demonstrate sequence-specific activation of GUS at infection sites, providing visual evidence for HpasRNA functionality and local gene silencing. The controls (scrambled, AtmiRNA164, P. capsici) strengthen the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C7",
+      "C70",
+      "C71",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "atago1 mutants exhibited enhanced resistance to H. arabidopsidis, characterized by trailing necrosis, reduced pathogen DNA content, and lower conidiospore production. This phenotype was observed in multiple atago1 alleles but not in atago2 or atago4 mutants, consistent with HpasRNA2/90 preferentially binding AtAGO1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C70-C82 are supported by Trypan Blue staining, qPCR, spore counting, and AGO-IP data across multiple atago1 alleles. The specificity to atago1 (not atago2/4) and correlation with HpasRNA binding preference (C81-C82) provide strong evidence for AtAGO1's role in HpasRNA-mediated virulence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "The atdcl1-11 mutant showed increased susceptibility to H. arabidopsidis without trailing necrosis, indicating that plant miRNAs play a positive role in immunity. This demonstrates that the enhanced resistance in atago1 is not due to loss of the plant miRNA pathway.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C87 are supported by infection assays showing opposite phenotypes in atdcl1-11 (increased susceptibility) versus atago1 (enhanced resistance). This provides strong evidence that the atago1 resistance phenotype is not due to impaired plant miRNA function, supporting the ck-RNAi hypothesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C92",
+      "C100"
+    ],
+    "result": "The enhanced resistance in atago1 was not associated with increased expression of immunity markers AtPR1 or AtPDF1.2, but AtRBOHD and AtRBOHF were more highly expressed in WT than atago1 at 7 dpi. The resistance was likely not based on increased basal immunity or R gene-mediated resistance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C89, C92, and C100 are supported by qRT-PCR data showing no enhanced expression of PR1/PDF1.2 in atago1, and differential expression of RBOH genes. Combined with data from other mutants and pathogens (C96-C99), this supports the conclusion that atago1 resistance is not due to general immunity activation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "The atrdr6-15 and atdcl2dcl3dcl4 mutants showed increased susceptibility to H. arabidopsidis without trailing necrosis, indicating an important role for plant phasiRNAs in immunity against this pathogen.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C98 are supported by infection assays showing increased pathogen biomass in these mutants. This is consistent with prior work on phasiRNAs in plant immunity (C93-C95, C138-C139) and suggests bidirectional ck-RNAi may occur in this interaction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C8",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "Transgenic Arabidopsis expressing STTMs to block HpasRNA2/30/90 exhibited enhanced resistance to H. arabidopsidis, with trailing necrosis, target gene de-repression, reduced pathogen biomass, and lower conidiospore production. Control STTMs (scrambled, rRNA-derived) did not show this phenotype, and the STTM did not confer resistance to P. syringae.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C101-C107 are supported by infection assays, qRT-PCR, and spore counting data from multiple STTM lines with appropriate controls. The specificity (no effect with control STTMs or P. syringae) and target de-repression provide strong evidence that blocking HpasRNAs reduces pathogen virulence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C108",
+      "C110",
+      "C111",
+      "C112",
+      "C116",
+      "C137"
+    ],
+    "result": "Knockout mutants of HpasRNA target genes AtWNK2 and AtAED3 showed quantitatively enhanced susceptibility to H. arabidopsidis, with increased conidiospore and sporangiophore production. Complementation with native or target-site-resistant versions rescued the phenotype, demonstrating these genes contribute to plant immunity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C10, C108, C110-C112, C116, and C137 are supported by infection assays across multiple T-DNA insertion lines and complementation experiments. The increased susceptibility in knockouts and rescue by complementation provide strong genetic evidence that these HpasRNA targets contribute to plant defense.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C99",
+      "C145"
+    ],
+    "result": "atago1-27 did not exhibit enhanced resistance to E. cruciferarum or A. laibachii, suggesting ck-RNAi via AtAGO1 is not important for virulence of these pathogens.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99 and C145 are supported by infection assays showing no difference in disease phenotype or pathogen biomass between atago1 and WT for these two pathogens. This indicates ck-RNAi via AtAGO1 may be pathogen-specific.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C4",
+      "C22",
+      "C125",
+      "C143"
+    ],
+    "result": "The study demonstrates that ck-RNAi occurs during H. arabidopsidis infection and contributes to virulence, extending the phenomenon originally discovered in B. cinerea to oomycete pathogens.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C22, C125, and C143 represent the main conclusions supported by multiple lines of evidence: HpasRNA association with AtAGO1, target gene suppression, enhanced resistance in atago1 mutants and STTM lines, and increased susceptibility in target gene knockouts. This comprehensive evidence supports the conclusion that ck-RNAi is part of H. arabidopsidis virulence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C121",
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "HpasRNAs are highly conserved among three H. arabidopsidis isolates with minimal allelic variation. In contrast, 70% of predicted target genes in Arabidopsis show SNPs or indels that may impair silencing. HpasRNA2 shows deeper conservation across oomycete species, and its target site lies in a conserved region of plant WNK2 orthologs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C121-C124 are supported by sequence alignment and comparative genomic analyses. The conservation patterns suggest potential co-evolution between HpasRNAs and their targets, though the functional significance of target site variation requires further investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C117",
+      "C118",
+      "C120"
+    ],
+    "result": "Complementation of atwnk2-2 with AtWNK2 or AtWNK2r rescued the early flowering phenotype. Overexpression of AtWNK2r caused ectopic cell death and aberrant pathogen infection structures, further indicating a role for AtWNK2 in immunity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C117-C118, C120 are supported by phenotypic observations and microscopy. The complementation validates the genetic approach, and the overexpression phenotype provides additional evidence for AtWNK2's role in immunity, though the mechanism remains unclear.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C127",
+      "C128",
+      "C130",
+      "C131"
+    ],
+    "result": "AtAGO1-bound HpasRNAs were present at approximately 1/1000 the level of plant sRNAs, raising concerns about functional sufficiency. However, the authors argue this may be due to dilution from non-colonized tissue, and genetic evidence supports HpasRNA functionality despite low abundance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C127-C131 acknowledge a potential limitation (low HpasRNA abundance) but provide speculation (C130-C131) rather than direct evidence to address it. While the genetic evidence (C128) supports functionality, the mechanism by which low-abundance sRNAs achieve biological effects remains unclear and would benefit from additional investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C48",
+      "C49"
+    ],
+    "result": "AtAED3 expression showed down-regulation upon mock treatment during the time course, possibly due to high humidity conditions. Higher AtAED3 transcript levels were observed in atago1-27 before infection compared to WT.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C49 are supported by qRT-PCR data but represent confounding factors in the interpretation of target gene suppression. The mock treatment effect (C48) is speculative, and the baseline difference (C49) complicates interpretation of infection-induced changes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C132",
+      "C133",
+      "C134"
+    ],
+    "result": "The mechanism of HpasRNA translocation into plant cells remains unknown, but transport via the extrahaustorial matrix and extracellular vesicles are proposed as potential routes based on prior work showing biomolecule exchange and vesicle-mediated sRNA transfer in other systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C132-C134 are speculative (C132) and rely on prior work in other systems (C133-C134). No direct evidence for the translocation mechanism is provided in this study. This represents an important area for future investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C135",
+      "C136"
+    ],
+    "result": "The authors suggest that multiple HpasRNAs collaboratively sabotage plant immune gene expression, similar to the proposed collaborative function of proteinaceous pathogen effectors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C135-C136 are supported by the identification of 34 HpasRNAs targeting 49 plant genes, and the analogy to effector biology (C136) is reasonable. However, direct evidence for collaborative action (e.g., synergistic effects of multiple HpasRNAs) is not provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C142"
+    ],
+    "result": "The authors propose that ck-RNAi in the H. arabidopsidis/Arabidopsis interaction is bidirectional, based on the current study and prior work showing plant sRNAs can target pathogen genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C142 is an inference based on the current study showing pathogen-to-plant ck-RNAi and prior work (C140-C141) showing plant-to-pathogen ck-RNAi in other systems. While plausible, direct evidence for bidirectional ck-RNAi in this specific interaction is not provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C5",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C29",
+      "C34",
+      "C42",
+      "C43",
+      "C50",
+      "C57",
+      "C69",
+      "C72",
+      "C90",
+      "C91",
+      "C93",
+      "C94",
+      "C95",
+      "C109",
+      "C113",
+      "C114",
+      "C115",
+      "C119",
+      "C133",
+      "C136",
+      "C140",
+      "C141",
+      "C144",
+      "C146",
+      "C147"
+    ],
+    "result": "Background knowledge claims about ck-RNAi, plant RNAi machinery, oomycete biology, and prior work on related systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C1-C3, C5, C11-C20, C23-C26, C29, C34, C42-C43, C50, C57, C69, C72, C90-C91, C93-C95, C109, C113-C115, C119, C133, C136, C140-C141, C144, C146-C147) represent established knowledge or prior work supported by appropriate citations. They provide necessary context for the study.",
+    "result_type": "MINOR"
+  }
+]

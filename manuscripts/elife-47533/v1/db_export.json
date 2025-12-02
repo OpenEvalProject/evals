@@ -1,0 +1,1756 @@
+{
+  "submission": {
+    "id": "9a3657b7-a24f-4846-9624-517fc1c661ff",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T13:37:27.585662Z",
+    "updated_at": "2025-12-02T13:37:27.585662Z"
+  },
+  "content": [
+    {
+      "id": "a3485bed-d2c0-47ce-919f-a4d2064c94f7",
+      "submission_id": "9a3657b7-a24f-4846-9624-517fc1c661ff",
+      "content_type": "manuscript",
+      "content_text": "# Nucleolar dynamics and interactions with nucleoplasm in living cells\n\n## Authors\n\n- Christina M Caragine<sup>1</sup>\n- Shannon C Haley<sup>1</sup>\n- Alexandra Zidovska<sup>1</sup> ([ORCID: 0000-0002-4619-4424](https://orcid.org/0000-0002-4619-4424)) \u2020\n\n### Affiliations\n\n1. Center for Soft Matter Research, Department of Physics New York University New York United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nLiquid-liquid phase separation (LLPS) has been recognized as one of the key cellular organizing principles and was shown to be responsible for formation of membrane-less organelles such as nucleoli. Although nucleoli were found to behave like liquid droplets, many ramifications of LLPS including nucleolar dynamics and interactions with the surrounding liquid remain to be revealed. Here, we study the motion of human nucleoli in vivo, while monitoring the shape of the nucleolus-nucleoplasm interface. We reveal two types of nucleolar pair dynamics: an unexpected correlated motion prior to coalescence and an independent motion otherwise. This surprising kinetics leads to a nucleolar volume distribution, p\u2062(V)\u223cV-1, unaccounted for by any current theory. Moreover, we find that nucleolus-nucleoplasm interface is maintained by ATP-dependent processes and susceptible to changes in chromatin transcription and packing. Our results extend and enrich the LLPS framework by showing the impact of the surrounding nucleoplasm on nucleoli in living cells.\n\n## Introduction\n\nThe nucleolus is the largest structure present in the cell nucleus of eukaryotic cells. This membraneless organelle is a site of ribosomal biogenesis and plays a key role in cell cycle progression and stress response (Alberts et al., 2014; Montanaro et al., 2008; Boulon et al., 2010). Nucleoli are composed of RNA and proteins and embedded in the chromatin solution inside the nucleus. They form at specific parts of genome called nucleolar organizer regions (NORs) containing rDNA, which is transcribed inside the nucleolus (McClintock, 1934; Ritossa and Spiegelman, 1965; Wallace and Birnstiel, 1966). At the beginning of the cell cycle a small nucleolus forms at each NOR. These nucleoli later fuse into larger ones, while remaining connected to their NORs in somatic cells (Amenta, 1961; Sullivan et al., 2001).\n\nThe lack of a nucleolar membrane has long been intriguing biologists and physicists alike, questioning the physical nature of the nucleolus. Pioneering studies in frogs found that nucleoli in X. laevis oocytes behave like liquid droplets in vivo, as well as when reconstituted in vitro, and suggested that nucleoli form through liquid-liquid phase separation of the nucleolar components in the nucleoplasm (Brangwynne et al., 2011; Berry et al., 2015; Feric et al., 2016). The volume distribution of such nucleoli was in agreement with a diffusion-limited aggregation process with a constant influx of particles (Brangwynne et al., 2011). In addition, the size of nucleoli in the worm C. elegans embryos was found to be dependent on the concentration of nucleolar components in the nucleoplasm which is consistent with the liquid-like nature of the nucleolus (Weber and Brangwynne, 2015). The nucleolar subcompartments, that\u00a0is the granular and the dense fibrillar components, were also suggested to form via liquid-liquid phase separation (Feric et al., 2016). Recent studies in the fly D. melanogaster suggest that while the nucleolar assembly follows liquid-liquid phase separation, active protein recruitment is also involved (Falahati and Wieschaus, 2017).\n\nRecently, we have shown that human nucleoli also exhibit liquid-like behavior (Caragine et al., 2018). By analyzing the shape fluctuations of nucleolar surface and kinetics of the nucleolar fusion in human cells in vivo, we found nucleolar dynamics to be consistent with that of liquid droplets with very low surface tension $\\gamma$ ~\u00a010-6\u00a0Nm-1\u00a0surrounded by highly viscous nucleoplasm of viscosity $\u03b7$ ~\u00a0103\u00a0Pa s (Caragine et al., 2018). Strikingly, it is the nucleoplasm viscosity that sets the time scale for the nucleolar coalescence providing resistance to the already very low surface tension that drives the process (Caragine et al., 2018). Correspondingly, nucleolar coalescence in human cells takes hours to complete (until the newly formed nucleolus rounds up, Figure 1A), while the neck connecting two coalescing nucleoli is discernable only for minutes after their initial touch (Figure 1B) and its radius $r$ grows in time as $r(t)\u223ct^{1/2}$\u00a0(Caragine et al., 2018). Such long coalescence times have been speculated not to interfere with the rDNA transcription inside the nucleoli (Caragine et al., 2018).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/47533/elife-47533-fig1-v1.jpg)\n\n**Figure 1.:** (A) Time lapse of a nucleus with fluorescently labeled chromatin (H2B-GFP) and two fusing nucleoli (NPM-mApple). Time points depict: pre-fusion ($t$\u00a0=\u00a00 min), with two distinct nucleoli, fusion in progress ($t$\u00a0=\u00a033 min), with a clearly visible neck connecting the two nucleoli, and post-fusion ($t$\u00a0=\u00a0273 min), where a resultant nucleolus can be seen still rounding up. (B) Time series showing the growth of the neck connecting two coalescing nucleoli. At $t$ = 0 s, both the fluorescently labeled chromatin (H2B-GFP) and coalescing nucleoli (NPM-mApple) are depicted, the later frames, 20\u2013600 s, show the progress of the nucleolar coalescence (NPM-mApple). Parts of (B) adapted from Figure 3b in Caragine et al. (2018). Scale bar, 2 \u00b5m.\n\nThe nucleoplasm (chromatin solution) and its physical properties clearly contribute to the nucleolar physiology. Interestingly, while the nucleolar coalescence can be described by a theory of passive liquid droplets within a highly viscous passive fluid (Caragine et al., 2018; Paulsen et al., 2014), nucleoplasm is an active fluid. Specifically, chromatin dynamics was shown to be active, that\u00a0is ATP-dependent, and coherent, that\u00a0is exhibiting correlated displacements, over 3\u20135\u00a0\u00b5m in human cells (Zidovska et al., 2013). Thus, the measured $\\gamma$ and $\u03b7$ are likely effective quantities (Caragine et al., 2018). Chromatin is known to localize as a denser heterochromatin at the nucleolar surface (Padeken and Heun, 2014), yet the nature of physical interactions between the nucleolar surface and the chromatin solution remains to be revealed (N\u00e9meth and L\u00e4ngst, 2011; Bickmore and van Steensel, 2013; Towbin et al., 2013). Disruption and dysfunction of the nucleolus is implicated in a large number of human diseases, such as skeletal and neurodegenerative disorders, cardiovascular disease and cancer (Hannan et al., 2013; N\u00fa\u00f1ez Villac\u00eds et al., 2018; Ruggero and Pandolfi, 2003; Derenzini et al., 2009). Thus, elucidating physical principles governing the nucleolus-nucleoplasm interface might contribute to our understanding of the nucleolus in health and disease.\n\nIn this work, we investigate the physical interactions between the nucleoli and the surrounding nucleoplasm by studying the structural features and dynamical behavior of the nucleoli. Specifically, to illuminate the kinetics of nucleolar assembly process, we examine the changes in the nucleolar size distribution with progressing cell cycle. In addition, we probe the physical nature of the nucleolar subcompartments, specifically, the granular components and the dense fibrillar components, and their contribution to the nucleolar liquid-like properties. To elucidate the role of nucleoplasm in nucleolar coalescence, we interrogate size, shape, position and alignment, as well as mobility inside the nucleus for both nucleoli that are about to fuse as well as those that do not fuse. To determine the role of active processes in maintaining the liquid-like nucleolus-nucleoplasm interface, we deplete ATP and further evaluate its structure and dynamics. Finally, we probe the\u00a0contribution of specific cellular processes (such as cytoskeletal forces, transcriptional activity as well as protein synthesis) to maintaining the nucleolus-nucleoplasm interface by employing targeted biochemical perturbations.\n\n## Results\n\n### Nucleolar size distribution during the cell cycle\n\nTo address the kinetics of the nucleolar assembly process, we have evaluated the number and size of the nucleoli at different times during the cell cycle. After mitosis, human nuclei initially contain 10 nucleoli, which later fuse to form fewer larger ones (Savino et al., 2001). Thus, due to the changing nucleolar number, the likelihood of their coalescence is expected to vary with the cell cycle progression. First, we measure the nucleolar size distribution in an unsynchronized cell population, which contains cells at all cell cycle stages (Figure 2A). Then we obtain the specific nucleolar size distributions at different, well-defined times of the cell cycle by synchronizing the cell population and monitoring their nucleolar count and size with progressing cell cycle (Figure 2B\u2013D). Specifically, we carry out our measurements 1.5 hr and 3 hr after mitosis as well as at the end of the cell cycle, at the G2/M check point (Figure 2B\u2013D). At every time point, we collect data from the entire volume of the cell nucleus by taking a z-stack with focal planes 0.5 \u03bcm apart. Figure 2A\u2013D shows micrographs of nuclei with fluorescently labeled chromatin (H2B-GFP) and nucleoli (NPM-DsRed) for all studied populations, respectively. Moreover, Figure 2, insets 1\u20134, shows an enlarged view of the boxed in nucleus from Figure 2A\u2013D, respectively. While Figure 2, inset 1 depicts a nucleus from an unsynchronized cell population, Figure 2, insets 2\u20133 show the same nucleus with progressing time. Note, the presence of both small and large nucleoli early in the cell cycle (Figure 2, inset 2\u20133), with the large ones becoming more spherical between 1.5 hr and 3 hr after mitosis, while only large nucleoli are seen at the end of the cell cycle (Figure 2, inset 4).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/47533/elife-47533-fig2-v1.jpg)\n\n**Figure 2.:** (A\u2013D) Micrographs of HeLa cell nuclei with fluorescently labeled chromatin (H2B-GFP) and nucleoli (NPM-DsRed) under the following conditions: unsynchronized cells (A), synchronized cells 1.5 hr (B) and 3 hr (C) after mitosis, and cells arrested at G2/M checkpoint (D). (1\u20134) enlarged view of the boxed nuclei from (A\u2013D). (E) Average nucleolar area $A_{N}$ as a function of number of nucleoli per nucleus $N_{N}$ for all conditions from (A\u2013D). For unsynchronized cells, total number of nucleoli analyzed $N_{N}$ = 1331 in 228 nuclei, for $t$ = 1.5 hr, $N_{N}$ = 275 in 42 nuclei, for $t$ = 3 hr, $N_{N}$ = 257 in 51 nuclei, and for $t$\u00a0= G2/M, $N_{N}$ = 497 in 124 nuclei. (F) Distributions of nucleolar volume $V_{N}$ and their fit to $f(V_{N})\u223cV_{N}^{\\alpha}$ for all conditions from (A\u2013D). For all fits, the goodness-of-fit, $R^{2}$\u00a0>\u00a00.98. Scale bar, 15 \u00b5m.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/47533/elife-47533-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Nucleolar area distributions, $p\u2062(A_{N})$, for all conditions shown in Figure 2E: unsynchronized cells, synchronized cells 1.5 hr after mitosis, synchronized cells 3 hr after mitosis, and cells arrested in G2/M.For unsynchronized cells, number of analyzed nucleoli is $N_{N}$ = 1331 in 228 nuclei, for\u00a0$t$ = 1.5 hr, $N_{N}$ = 275 in 42 nuclei, for $t$ = 3 hr, $N_{N}$ = 257 in 51 nuclei, and for\u00a0$t$ = G2/M, $N_{N}$ = 497 in 124 nuclei.\n\nFigure 2E shows the distributions of average nucleolar area of nucleoli in one nucleus, $\u27e8A_{N}\u27e9$, as a function of the nucleolar number in the given nucleus, $N_{N}$, for the unsynchronized and synchronized cell populations at the studied time points. The distributions of nucleolar area, $A_{N}$, for each time point are shown in Figure 2\u2014figure supplement 1. For each nucleolus we measure its area in its respective focal plane within the collected z-stack. We find that as the cell cycle progresses, the number of nucleoli per nucleus decreases, while the average nucleolar area in the nucleus increases (Figure 2E). Interestingly, this trend persists beyond 3 hr into the cell cycle suggesting that the fusion of nucleoli is not limited to the first two hours of the cell cycle as previously hypothesized (Savino et al., 2001). To gain further mechanical insight into the nucleolar coalescence kinetics during the cell cycle, we have analyzed the nucleolar volume distribution for each time point (Figure 2F). We calculated nucleolar volume assuming a spherical shape, $V_{N}=4\u2062\\pi\u2062r^{3}/3$, where $r$ is the radius of a circle with the area equal to the nucleolar area, and using the least square method we fitted the nucleolar volume distribution $P\u2062(V_{N})$ to a power law $f(V_{N})\u223cV_{N}^{\\alpha}$. Our data shows that $P\u2062(V_{N})$ can be described by a power law with $\\alpha$\u00a0~\u00a0-1 for all cell populations, unsynchronized as well as synchronized at all studied time points. The confidence intervals for the fitting parameter $\\alpha$ are listed in Figure 2F with the goodness-of-fit $R^{2}$\u00a0>\u00a00.98 for all fits. It is noteworthy, that such distribution is divergent, and so is its first moment, the mean, if integrated over all volumes (from 0 to \u221e). However, the measured $p\u2062(V)$ distribution does have finite bounds given by the physical cut-offs for the nucleolar size, the minimum and maximum that it can reach inside a cell nucleus.\n\n### Physical nature of nucleolar subcompartments\n\nThe human nucleolus behaves like liquid droplet (Caragine et al., 2018), yet the nucleolar fluid is complex, containing three distinct subcompartments; fibrillar center (FC), dense fibrillar component (DFC) and granular component (GC). They all play a different role in ribosome biogenesis and vary in protein composition: While FC contains polymerase I, DFC and GC are enriched in fibrillarin (FBL) and nucleophosmin (NPM), respectively (Boisvert et al., 2007). Moreover, they show a hierarchical organization, suggested to form via liquid-liquid phase separation (Feric et al., 2016), with FCs nested inside DFCs, which are embedded in GC.\n\nTo address the contributions of these subcompartments to the overall liquidity of the human nucleolus, we examine their physical properties. Figure 3A shows micrographs of three different nuclei with fluorescently labeled chromatin (H2B-GFP, green), GC (NPM-DsRed, red) and DFCs (FBL-mCerulean, blue). We obtain the nuclear and nucleolar contours from H2B-GFP and NPM-DsRed signal, respectively. By analyzing the FBL-mCerulean signal we procure the shape, size and number of DFCs inside a nucleolus. A visual inspection of our data reveals that DFCs appear to be close to spherical. To verify this observation, we measure the DFC eccentricity: First, we measure the length of the semi-major DFC axis $a$ and the semi-minor DFC axis $b$ (Materials and methods). Figure 3B displays the distributions of measured lengths of both $a$ (red) and $b$ (green), together with the Gaussian fits $f(a_{DFC})\u223ce^{\u00a0(a_{DFC}\u2212\u27e8a_{DFC}\u27e9)^{2}/2\\sigma_{a_{DFC}}^{2}}$ (red line) and $f(b_{DFC})\u223ce^{\u00a0(b_{DFC}\u2212\u27e8b_{DFC}\u27e9)^{2}/2\\sigma_{b_{DFC}}^{2}}$ (green line) of their respective distributions. From the Gaussian fits we obtain the following average values: $\u27e8a_{D\u2062F\u2062C}\u27e9=$ 210 \u00b1 50 nm and $\u27e8b_{D\u2062F\u2062C}\u27e9=$ 180 \u00b1\u00a040 nm. Next, we evaluate the eccentricity $e=a/b$ for each DFC and find that the DFC shape is indeed close to spherical with the average eccentricity $\u27e8e\u27e9=$ 1.22 \u00b1 0.17 (where\u00a0$e$\u00a0=\u00a01 corresponds to a circle) and average area of $\u27e8A_{D\u2062F\u2062C}\u27e9=$ 0.13 \u00b1\u00a00.06 \u00b5m2, where $A_{D\u2062F\u2062C}=\\pi\u2062a\u2062b$. The distributions of $e$ and $A_{D\u2062F\u2062C}$ are shown in Figure 3\u2014figure supplement 1. Overall, we identified 1279 DFCs over 114 nucleoli in 63 nuclei, and after the removal of the DFCs that were out of focus, we obtain measurements of $a$, $b$, $e$, and $A_{DFC}$ for 1035 DFCs.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/47533/elife-47533-fig3-v1.jpg)\n\n**Figure 3.:** (A) Micrographs of HeLa nuclei with fluorescently labeled chromatin (H2B-GFP, green), nucleolar granular component (NPM-DsRed, red) and nucleolar dense fibrillar component (DFC) (FBL-mCerulean, blue) and overlays of all three signals (green, red, blue) and red and blue signal. The insets in overlay images present an enlarged view of a nucleolus from the image. (B) Distributions measured for semi-major axis $a_{D\u2062F\u2062C}$ (red) and semi-minor axis $b_{D\u2062F\u2062C}$ (green) of single DFCs ($N_{DFC}$\u00a0= 1035). The solid red and green lines correspond to the Gaussian fits of distributions of $a_{D\u2062F\u2062C}$ and $b_{D\u2062F\u2062C}$, respectively, with $\u27e8a_{DFC}\u27e9$\u00a0\u2248\u00a0210 nm and $\u27e8b_{DFC}\u27e9$\u00a0\u2248\u00a0180 nm. (C) Nucleolar area, $A_{N}$, as a function of DFC number per nucleolus, $N_{D\u2062F\u2062C}$, with a linear fit $A_{N}$\u00a0\u2248 0.92$N_{D\u2062F\u2062C}$. We evaluated 1279 DFCs over 114 nucleoli in 63 nuclei. Scale bar, 5 \u00b5m.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/47533/elife-47533-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Distribution of the measured eccentricities, $e=a/b$, where $a$ and $b$ are the DFC semi-major and semi-minor axes, respectively ($N_{DFC}=$ 1035). (B) Distribution of the DFC area, $A=\\piab$, measured for single DFCs ($N_{DFC}=$ 1035). (C) DFC volume distribution, $p(V_{DFC})$. DFC volume, $V_{DFC}$, was calculated as $V_{DFC}=4\\pia^{3}/3$, where $a$ is the semi-major axis of the DFC, providing the upper boundary on the volume estimate. $p(V_{DFC})$ exhibits a sharp maximum at $V_{DFC}$\u00a0=\u00a00.030\u00a0\u03bcm3, suggesting largely a monodisperse population of DFCs ($N_{DFC}=$ 1035).\n\nNext, we evaluate the nucleolar area, $A_{N}$, as a function of the DFC number, $N_{D\u2062F\u2062C}$, inside the given nucleolus (Figure 3C). Our data reveals that $A_{N}$ grows linearly with $N_{D\u2062F\u2062C}$, with a linear fit of $A_{N}$\u00a0=\u00a0(0.92 \u00b1 0.05)$N_{DFC}$. This implies that upon nucleolar coalescence, which leads to larger $A_{N}$, the new nucleolus contains the cumulative number of DFCs, indicating that DFCs do not fuse themselves. This is further corroborated by the volume distribution of DFCs, $p\u2062(V_{D\u2062F\u2062C})$, which has a sharp peak at $V_{DFC}$\u00a0= 0.03\u00a0\u03bcm3 (Figure 3\u2014figure supplement 1), indicating that DFCs are largely monodisperse. Moreover, this finding suggests that every DFC is associated with a GC domain of an area $A_{GC}$\u00a0\u2248\u00a00.79 \u00b5m2. Since we found DFCs to exhibit a close to spherical shape, we can estimate the volume fraction of DFCs and GC phase in the human nucleolus, and find $\u03a6_{DFC}$\u00a0\u2248 0.1 and $\u03a6_{GC}$\u00a0\u2248 0.9, respectively.\n\n### Fusing and non-fusing nucleoli\n\nOur recent study revealed that the timescale of the nucleolar coalescence is set by the\u00a0high viscosity of the surrounding nucleoplasm ($\u03b7_{np}$ ~\u00a0103\u00a0Pa s) (Caragine et al., 2018). To elucidate the physical interactions of nucleolar droplets with the chromatin solution, we interrogate their size, shape, position and alignment inside the cell nucleus. Moreover, we compare these characteristics for nucleoli that fuse and the ones that do not fuse during our observation. For non-fusing nucleoli, we record time lapses for 60 min with a time step of 5 min and at every time step we collect a z-stack with focal planes 0.5 \u00b5m apart. By collecting a z-stack, we can monitor all nucleoli present in the given nucleus and obtain measurements in their respective focal planes. To capture a fusion of nucleoli, we observe a pair of nucleoli for 60\u2013270 min with a time step of 5\u201315 min, and review at the end of the experiment if the fusion has occurred. In three cases, we were able to track three or four nucleoli simultaneously, the nucleoli closest together were then defined as pairs. In case of three nucleoli only one pair was analyzed, that\u00a0is two closest nucleoli. In one case, a nucleolar pair fused while the measurement was being set up, and was therefore only analyzed in the post-fusion nucleolar population.\n\nFigure 4A shows micrographs of a nucleus with fluorescently labeled chromatin (H2B-GFP) at\u00a0$t$ = 0 and 60 min, where the nucleoli correspond to the voids in the H2B-GFP signal and are highlighted by symbols (circle and triangle).\u00a0In contrast, Figure 4D shows micrographs of nucleus with fluorescently labeled chromatin (H2B-GFP) at $t$ = 0, 60 and 120 min, with fusion occurring shortly before $t$\u00a0= 60 min. The nucleoli correspond to the voids in the H2B-GFP signal and are highlighted by triangle and cross before fusion and by circle during and after fusion.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/47533/elife-47533-fig4-v1.jpg)\n\n**Figure 4.:** (A) Micrographs of a nucleus with fluorescently labeled chromatin (H2B-GFP), where two void spaces (labeled by yellow triangle and yellow circle) correspond to two nucleoli that did not fuse between\u00a0$t$ = 0 and 60 min. (B) Schematics of measured variables. (C) Measured variables for nonfusing nucleoli: nucleolar area, $A_{N}$, nucleolar eccentricity, $e$, shortest distance from the nucleolar centroid to the nuclear envelope, $D_{e}$, and the angle between the major nuclear and nucleolar axes, $\\alpha$ ($N_{N}$\u00a0=\u00a017, $N_{c\u2062e\u2062l\u2062l}$ = 6). All characteristics are calculated in the nucleolar focal plane. (D) Micrographs of a nucleus with fluorescently labeled chromatin (H2B-GFP), where two void spaces (labeled by yellow triangle and yellow cross) correspond to two nucleoli before fusion at $t$ = 0 min, while at $t$ = 60 and 120 min they can be seen fusing (yellow circle). (E) Measured variables for fusing nucleoli: $A_{N}$, $e$, $D_{e}$ and $\\alpha$ ($N_{N}$\u00a0=\u00a012, $N_{c\u2062e\u2062l\u2062l}$ = 7). The dashed red line at $t$ = 0 min indicates fusion. All measurements are carried out in the nucleolar focal plane. Scale bar, 5 \u00b5m.\n\nNext, we obtain contours for all nucleoli in their respective z-plane and measure their area, $A_{N}$, by filling their contour. To evaluate the nucleolar shape we compute its eccentricity, $e=a/b$, with $a$ and $b$ being the semi-major and semi-minor axes of a fitted ellipse, respectively. For $e$\u00a0= 1, the\u00a0nucleolus is spherical, while for\u00a0$e$\u00a0>\u00a01 the\u00a0nucleolus has an elliptical shape. Further, we determine the shortest distance of the nucleolar centroid to the nuclear envelope, $D_{e}$, as well as the angle between the nuclear and nucleolar major axes, $\\alpha$, when fitted by an ellipse, respectively. Figure 4B provides an illustration of the measured parameters $a$, $b$, $D_{e}$ and $\\alpha$. First, we evaluate these quantities for the non-fusing nucleoli (Figure 4C). We find that $A_{N}$, $e$ and $D_{e}$ do not change appreciably, while $\\alpha$ fluctuates significantly during the duration of the experiment. In fact, a constant area might indicate that there is no significant addition or removal of nucleolar material during this time. The eccentricity is rather low, often close to 1, making $\\alpha$ susceptible to small fluctuations.\n\nFor comparison, Figure 4E shows the same quantities for the nucleoli that fused during the experiment. We aligned the different fusion events in time with fusion occurring at $t$\u00a0=\u00a00\u00a0min, as marked by the red dashed line. The pairs of fusing nucleoli are identified by symbols of the same color, with two nucleoli before fusion indicated by a triangle and cross, and the new nucleolus after fusion by a circle. Interestingly, $A_{N}$ upon fusion is about same as the summed area of both pre-fusion nucleoli. Since we do not observe any significant increase of $A_{N}$ after fusion, there is likely no significant material influx associated with nucleolar fusion. As expected, $e$ decreases after fusion for all nucleoli, consistent with our prior finding of surface tension driving the fusion (Caragine et al., 2018). $D_{e}$ does not show any leading trends for the position of the new nucleolus; some remain closer to a position of one of the pre-fusion nucleoli, whereas some move into an intermediate $D_{e}$ of the two pre-fusion nucleoli. Interestingly, our $\\alpha$ measurement shows that nucleoli after fusion are slowly moving into a parallel ($\\alpha=$ 0\u00b0) or a perpendicular ($\\alpha=$ 90\u00b0) alignment with the major nuclear axis.\n\n### Dynamics of fusing and non-fusing nucleoli\n\nTo further elucidate the nucleolus-nucleoplasm interactions, we investigate the dynamics of both non-fusing and fusing nucleoli. We track the nucleolar motion, by tracking its centroid in time, and obtain a trajectory for every nucleolus. By analyzing nucleolar trajectories, we can extract the nucleolar velocity, $v$, which we measure relative to the nuclear centroid. Further, we evaluate the radial velocity, $v_{r\u2062a\u2062d}$, which we define as the nucleolar velocity along the line connecting centroids of two nucleoli, with origin being the line center. $v_{r\u2062a\u2062d}$ allows us to assess the motion of one nucleolus towards another, where a negative value of $v_{r\u2062a\u2062d}$ corresponds to motion towards the other nucleolus. We also compute the angle, $\\alpha_{v}$, between the nucleolar velocity $v$ and the line connecting the two nucleoli, with $\\alpha_{v}$ ranging from 0\u00b0 to 180\u00b0, informing if a nucleolus is traveling towards the other.\n\nFigure 5A shows examples of trajectories for non-fusing nucleoli, with their temporal evolution color-coded (blue to red). An enlarged view of these trajectories and the areas they cover is depicted in Figure 5\u2014figure supplement 1A\u2013B. A distribution of nucleolar velocities $v$ for non-fusing nucleoli is shown in Figure 5B, with a mean velocity $\u27e8v\u27e9$ \u2248 (0.49 \u00b1 0.30) \u00d7 10-3\u00a0\u03bcms-1.\u00a0Next, we look at the dynamic behavior of a nucleolar pair, and analyze their velocities with respect to each other. We plot the larger velocity, $v_{m\u2062a\u2062x}$, against the smaller velocity, $v_{m\u2062i\u2062n}$ (Figure 5C). The scatter plot in Figure 5C shows a wide spread and no apparent correlation between $v_{m\u2062a\u2062x}$ and $v_{m\u2062i\u2062n}$ (Pearson correlation coefficient $\u03c1=$ 0.41). Moreover, a distribution of $v_{r\u2062a\u2062d}$ is centered around 0, thus not pointing towards any preferred direction of motion (Figure 5D). This observation is further corroborated, when we find $v_{r\u2062a\u2062d}$ to fluctuate around 0 as a function of time (Figure 5E), as well as $\\alpha_{v}$ changing seemingly randomly with time (Figure 5F). By fitting a Gaussian curve to the $v_{r\u2062a\u2062d}$ distribution in Figure 5D we obtain a variance $\\sigma_{rad,nonfusing}$\u00a0=\u00a03\u00a0\u00d7\u00a010-4\u00a0\u00a0\u03bcms-1.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/47533/elife-47533-fig5-v1.jpg)\n\n**Figure 5.:** (A) Trajectories of two nonfusing nucleoli color-coded by their temporal evolution (blue to red). The time step is 5 min. (B) Histogram of the velocity magnitude, $v$, for the nonfusing nucleoli ($N_{N}$\u00a0=\u00a017, $N_{c\u2062e\u2062l\u2062l}$ = 6). (C) Velocities for pairs of nonfusing nucleoli, where $v_{m\u2062a\u2062x}$ and $v_{m\u2062i\u2062n}$ is the larger and the smaller nucleolar velocity, respectively. (D) Histogram of radial velocity, $v_{r\u2062a\u2062d}$, for nonfusing nucleoli, with $v_{r\u2062a\u2062d}$ calculated with respect to the midpoint distance between nucleoli. (E) $v_{r\u2062a\u2062d}$ as a function of time for nonfusing nucleoli. (F) Velocity angle, $\\alpha_{v}$, in polar coordinates as a function of time for nonfusing nucleoli. (G) Trajectories of pair of fusing nucleoli color-coded by their temporal evolution (blue to red). The pre-fusion nucleoli are visible at earlier times (blue to yellow), while the post-fusion nucleolus appears at later times (orange to red). The time step is 15 and 16 min. (H) Histogram of the $v$ for the fusing nucleoli ($N_{N}$\u00a0=\u00a012, $N_{c\u2062e\u2062l\u2062l}$ = 7). (I) Velocities for pairs of fusing nucleoli, where $v_{m\u2062a\u2062x}$ and $v_{m\u2062i\u2062n}$ is the larger and the smaller nucleolar velocity, respectively, with a linear fit $v_{m\u2062a\u2062x}\u2248$ 1.74$v_{m\u2062i\u2062n}$. (J) Histogram of $v_{r\u2062a\u2062d}$ for fusing nucleoli. (K) $v_{r\u2062a\u2062d}$ as a function of time for fusing nucleoli. (L) $\\alpha_{v}$ for fusing nucleoli as a function of time.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/47533/elife-47533-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) Trajectories of nucleoli which do not fuse, time increases from blue to red (enlarged view of Figure 5A). (B) The trajectory areas determined as the convex hull of the trajectories of nucleoli from A. (C) Trajectories of nucleoli which fuse, time increases from blue to red (enlarged view of Figure 5G). The post fusion nucleolus is in between the other two trajectories. (D) The trajectory areas determined as the convex hull of the trajectories of nucleoli from C.\n\nNext, we analyze the motion of pairs of fusing nucleoli in the same fashion. Examples of such trajectories, with their temporal evolution color-coded (blue to red), are shown in Figure 5G. An enlarged view of these trajectories and the areas they cover is depicted in Figure 5\u2014figure supplement 1C\u2013D. Figure 5H shows the distribution of the nucleolar velocities, $v$, for fusing nucleoli, with an average velocity $\u27e8v\u27e9$\u2248 (0.33 \u00b1 0.26) \u00d7 10-3\u00a0\u03bcms-1, which is \u223c\u00a030% smaller than for non-fusing nucleoli. This difference is statistically significant as corroborated by $p$-value of 4\u00a0\u00d7\u00a010-4. Strikingly, when we review velocities of a fusing nucleolar pair and plot the larger velocity, $v_{m\u2062a\u2062x}$, against the smaller velocity, $v_{m\u2062i\u2062n}$ (Figure 5I), we find a clear linear correlation between them, with the linear fit of $v_{max}$\u00a0=\u00a0(1.74\u00a0\u00b1\u00a00.20)$v_{min}$\u00a0(Figure 5I, blue line) and a Pearson correlation coefficient $\u03c1=$ 0.88. Moreover, we find that $\u27e8v_{max}/v_{min}\u27e9$ \u2248\u00a01.8\u00a0\u00b1\u00a00.6.\u00a0The distribution of $v_{r\u2062a\u2062d}$ for fusing nucleoli (Figure 5J) is still centered around 0, but is clearly narrower than for non-fusing nucleoli (Figure 5D) with a variance $\\sigma_{rad,fusing}$\u00a0=\u00a01\u00a0\u00d7\u00a010-4\u00a0\u03bcms-1\u00a0obtained by fitting a Gaussian curve to the $v_{r\u2062a\u2062d}$ distribution in Figure 5J. $\\sigma_{r\u2062a\u2062d,f\u2062u\u2062s\u2062i\u2062n\u2062g}$ is about three times smaller than $\\sigma_{r\u2062a\u2062d,n\u2062o\u2062n\u2062f\u2062u\u2062s\u2062i\u2062n\u2062g}$. When reviewed over time, $v_{r\u2062a\u2062d}$ exhibits much smaller fluctuations (Figure 5K) than in case of non-fusing nucleoli (Figure 5E). Lastly, Figure 5L shows $\\alpha_{v}$ of the pre-fusion nucleoli as a function of time, monitoring 40 min prior to fusion, which occurs at $t$ = 0 min. Interestingly, the nucleoli seem not to follow any preferred direction, but instead follow a zig-zag motion while approaching each other to fuse.\n\n### Nucleolar response to ATP depletion\n\nTo investigate a possible role of active (ATP-dependent) processes in maintaining the nucleolus-nucleoplasm interface, we have examined nucleoli, specifically, their shape, surface roughness and possible fusion events, upon ATP depletion. The ATP was depleted using 2-deoxyglucose and trifluoromethoxy-carbonylcyanide phenylhydrazone (see Materials and methods). Figure 6A and B show micrographs of nuclei with fluorescently labeled chromatin (H2B-GFP, green) and nucleoli (NPM-DsRed, red) under physiological conditions (control) and upon ATP depletion, respectively. In addition, we review the z-projection of nuclear and nucleolar contours obtained in different planes of the respective z-stack (Figure 6A\u2013B). We find that upon ATP depletion nucleoli do not exhibit spherical, but instead irregular shapes (Figure 6B). In fact, some of the larger irregularly shaped nucleoli might originate from nucleoli fusing at the time of ATP depletion, given the absence of nucleoli in the hour-glass shape, characteristic of nucleolar fusion under physiological conditions (Figure 1).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/47533/elife-47533-fig6-v1.jpg)\n\n**Figure 6.:** (A\u2013B) Micrographs of HeLa nuclei with fluorescently labeled chromatin (H2B-GFP, green) and nucleoli (NPM-DsRed, red), their color overlay and z-projections of nucleolar and nuclear contours: (A) under physiological conditions (control) and (B) after ATP depletion. (C) Distributions of the following nucleolar measurements under physiological conditions ($N_{N}=$ 648, $N_{C\u2062e\u2062l\u2062l}=$ 208) vs. upon ATP depletion ($N_{N}=$ 345, $N_{C\u2062e\u2062l\u2062l}=$ 127): nucleolar area normalized by nuclear area, $A_{N}/A_{N\u2062u\u2062c}$, nucleolar eccentricity, $e$, angle between the major nuclear and nucleolar axes, $\\alpha$, the shortest distance from the nucleolar centroid to the nuclear envelope normalized by the nuclear circumference, $d_{e}$, fraction of the nucleolar contour with negative curvature, $f_{n\u2062e\u2062g}$, and number of continuous regions of negative curvature along the nucleolar contour, $N_{n\u2062e\u2062g}$. All measurements are carried out in the nucleolar focal plane. Scale bar, 5 \u00b5m.\n\nTo characterize the morphological changes of nucleoli upon ATP depletion, we define parameters describing their shape and compare against the control nucleoli. Specifically, after we obtain nuclear and nucleolar contours in their respective focal planes, we compute the following six parameters for every nucleolus: $A_{N}/A_{N\u2062u\u2062c}$ (the nucleolar area $A_{N}$ normalized by the nuclear area $A_{N\u2062u\u2062c}$), $e$ (the eccentricity $e=a/b$, where $a$ and $b$ are the semi-major and semi-minor nucleolar axis, respectively), $\\alpha$ (the angle between the nuclear and nucleolar major axes), $d_{e}$ (the shortest distance from the nucleolar centroid to the nuclear envelope normalized by the nuclear circumference in the focal plane of the nucleus), $f_{n\u2062e\u2062g}$ (the fraction of the nucleolar contour with negative curvature) and $N_{n\u2062e\u2062g}$ (the number of independent nucleolar contour regions with negative curvature), where the curvature corresponds to the in plane curvature of the nucleolar contour.\n\nThe comparison of these parameters for nucleoli under physiological conditions and upon ATP depletion is shown in Figure 6C. Table 1 provides a summary of means and standard deviations for measured distributions of $A_{N}/A_{N\u2062u\u2062c}$, $e$, $\\alpha$, $d_{e}$, $f_{n\u2062e\u2062g}$ and $N_{n\u2062e\u2062g}$. In addition, we evaluated the $p$-values for all measured physical quantities as well as the relative differences of their means with respect to control (Table 1). The relative difference (in %) of the means was calculated as\u00a0100\u00a0\u00d7 $[(\\mu_{Q}\u2212\\mu_{P})/\\mu_{P}]$, where $\\mu_{P}$ is the mean of the probability distribution of the measured physical quantity under control conditions and $\\mu_{Q}$ after the perturbation. Furthermore, we computed the skew of the measured distributions, which informs about their asymmetry, and the Kullback-Leibler divergence with respect to control (Table 1). The Kullback-Leibler divergence is a measure of the difference between two probability distributions. It is defined as $\\sumP\u2062(i)\u2062ln\u2061(\\frac{P\u2062(i)}{Q\u2062(i)})$, where $P\u2062(i)$ and $Q\u2062(i)$ are the two distributions. Here, $P\u2062(i)$ corresponds to the probability distribution of the measured physical quantity under control conditions, $Q\u2062(i)$ after the perturbation.\n\nThe most striking change that we observe upon the ATP depletion is the irregularity of the nucleolar shape. The dramatic increase in the nucleolar surface roughness upon ATP depletion is nicely captured by the growing amount of the nucleolar contour possessing negative curvature as quantified by $f_{n\u2062e\u2062g}$ and $N_{n\u2062e\u2062g}$, both showing increase of \u223c\u00a020%. Remarkably, when compared to the control nucleoli, the ATP-depleted nucleoli not only show larger parts of their contour to posses negative curvature, but are also more likely to contain several more independent contour regions of negative curvature making them appear lobulated. In addition, the ATP-depleted nucleoli tend to localize further away from the nuclear envelope, as illustrated by $d_{e}$, than the control nucleoli. Surprisingly, there are no significant changes to the average nucleolar area, eccentricity and orientation as per $A_{N}/A_{N\u2062u\u2062c}$, $e$ and $\\alpha$, respectively, upon ATP depletion.\n\n### Nucleolar response to biochemical perturbations\n\nTo probe contributions of specific cellular processes (such as cytoskeletal forces, transcriptional activity as well as protein synthesis) to maintaining the nucleolus-nucleoplasm interface, we employ targeted biochemical perturbations. Specifically, to inhibit cytoskeletal forces we treat the cells with blebbistatin, which is a myosin II inhibitor, latrunculin A, which prevents actin polymerization, and nocodazole, which is a microtubule polymerization blocker. To test the contributions of transcription-related processes we apply $\\alpha$-amanitin, which inhibits the RNA polymerase II activity, and flavopiridol, which blocks the positive transcription elongation factor P-TEFb. In addition, we probed the impact of the local chromatin packing state by applying trichostatin A, which prevents histone deacetylation, and thus leads to chromatin decondensation. Finally, since\u00a0the nucleolus is the site of ribosome biogenesis and thus directly involved in cellular protein production, we explore the role of protein synthesis in maintaining the nucleolus-nucleoplasm interface. To do so, we use cycloheximide, a protein synthesis inhibitor, and evaluate its effect at two time points, $t_{1}=$\u00a030 min and $t_{2}=$\u00a06.5 hr, upon drug addition. We anticipate that at short timescales, we can observe a direct impact of protein synthesis inhibition on the nucleolar-nucleoplasm interface, while at longer timescales, we can investigate a possible feedback between protein synthesis inhibition and nucleolar size and shape.\n\nFigure 7A shows micrographs of nuclei with fluorescently labeled chromatin (H2B-GFP, green) and nucleoli (NPM-DsRed, red) under the physiological conditions (control) and after treatment with blebbistatin, latrunculin A, nocodazole, $\\alpha$-amanitin, flavopiridol, trichostatin A and cycloheximide at $t_{1}$ and $t_{2}$. We also survey the z-projection of nuclear and nucleolar contours obtained in different planes of the respective z-stack (Figure 7\u2014figure supplement 1). To examine morphological differences under the studied conditions, we evaluate the same six parameters used earlier: $A_{N}/A_{N\u2062u\u2062c}$, $e$, $\\alpha$, $d_{e}$, $f_{n\u2062e\u2062g}$, and $N_{n\u2062e\u2062g}$ and visualize their distributions as violin plots in Figure 7B. The red dot indicates the mean, while the solid and dashed red lines correspond to the median and quartiles, respectively. Table 1 provides a summary of means and standard deviations for measured distributions of $A_{N}/A_{N\u2062u\u2062c}$, $e$, $\\alpha$, $d_{e}$, $f_{n\u2062e\u2062g}$ and $N_{n\u2062e\u2062g}$. In addition, we evaluated the skew of measured distributions and computed $p$-values for all measured physical quantities, the relative differences of their means with respect to control, as well as the Kullback-Leibler divergence with respect to control (Table 1).\n\n![Figure 7.](https://cdn.elifesciences.org/articles/47533/elife-47533-fig7-v1.jpg)\n\n**Figure 7.:** (A) Micrographs of HeLa nuclei with fluorescently labeled chromatin (H2B-GFP, green) and nucleoli (NPM-DsRed, red), and the overlay, under the following conditions: control, upon addition of blebbistatin, latrunculin A, nocodazole, $\\alpha$-amanitin, flavopiridol, trichostatin A, and cycloheximide (at $t_{1}=$\u00a030 min and $t_{2}=$\u00a06.5 hr). (B) Histograms of the following measurements for all conditions (width indicates probability): nucleolar area normalized by nuclear area, $A_{N}/A_{N\u2062u\u2062c}$, nucleolar eccentricity, $e$, angle between the major nuclear and nucleolar axes, $\\alpha$, the shortest distance from the nucleolar centroid to the nuclear envelope normalized by the nuclear circumference, $d_{e}$, fraction of the nucleolar contour with negative curvature, $f_{n\u2062e\u2062g}$, and number of continuous regions of negative curvature along the nucleolar contour, $N_{n\u2062e\u2062g}$. All data collected in the nucleolar focal plane. Red dot, solid red line and dotted red lines indicate the mean, median and quartiles, respectively. Table 1 provides $p$-values for all measured data with respect to the control. The number of nucleoli and cells are as follows: control ($N_{N}=$ 648, $N_{C\u2062e\u2062l\u2062l}=$ 208), blebbistatin ($N_{N}=$ 399, $N_{C\u2062e\u2062l\u2062l}=$ 127), latrunculin A ($N_{N}=$ 307, $N_{C\u2062e\u2062l\u2062l}=$ 104), nocodazole ($N_{N}=$ 310, $N_{C\u2062e\u2062l\u2062l}=$ 106), $\\alpha$-amanitin ($N_{N}=$ 268, $N_{C\u2062e\u2062l\u2062l}=$ 95), flavopiridol ($N_{N}=$ 309, $N_{C\u2062e\u2062l\u2062l}=$ 105), trichostatin A ($N_{N}=$ 278, $N_{C\u2062e\u2062l\u2062l}=$ 95), and cycloheximide at $t_{1}=$\u00a030 min ($N_{N}=$ 291, $N_{C\u2062e\u2062l\u2062l}=$ 91), and cycloheximide at $t_{2}=$\u00a06.5 hr ($N_{N}=$ 294, $N_{C\u2062e\u2062l\u2062l}=$ 105). Scale bar, 5 \u00b5m.\n\n![Figure 7\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/47533/elife-47533-fig7-figsupp1-v1.jpg)\n\n**Figure 7\u2014figure supplement 1.:** Micrographs of HeLa nuclei with fluorescently labeled chromatin (H2B-GFP, green) and nucleoli (NPM-DsRed, red), the two signal overlay, and z-projections of nuclear and nucleolar contours, under the following conditions: control, upon addition of blebbistatin, latrunculin A, nocodazole, $\\alpha$-amanitin, flavopiridol, trichostatin A, and cycloheximide (at $t_{1}=$\u00a030 min and $t_{2}=$\u00a06.5 hr). Scale bar, 5 \u00b5m.\n\n**Table 1.**\n Statistical characteristics of distributions for physical quantities evaluated for nucleoli upon biochemical perturbations (see Figures 6\u20137).Table 1\u2014source data 1.Statistical characteristics of distributions measured in Figures 6 and 7.\n\n\n<table>\n  <thead>\n    <tr>\n      <th colspan=\"3\"></th>\n      <th colspan=\"6\">Mean \u00b1 standard deviation</th>\n    </tr>\n    <tr>\n      <th></th>\n      <th>NN\u2062u\u2062c\u2062l\u2062e\u2062o\u2062l\u2062i</th>\n      <th>NC\u2062e\u2062l\u2062l\u2062s</th>\n      <th>AN/AN\u2062u\u2062c</th>\n      <th>e</th>\n      <th>\u03b1</th>\n      <th>de</th>\n      <th>fn\u2062e\u2062g</th>\n      <th>Nn\u2062e\u2062g</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Control</td>\n      <td>648</td>\n      <td>208</td>\n      <td>0.052\u00a0\u00b1\u00a00.040</td>\n      <td>1.30 \u00b1 0.32</td>\n      <td>47 \u00b1 26</td>\n      <td>0.076 \u00b1 0.029</td>\n      <td>0.033 \u00b1 0.066</td>\n      <td>0.66 \u00b1 1.37</td>\n    </tr>\n    <tr>\n      <td>ATP-depletion</td>\n      <td>345</td>\n      <td>127</td>\n      <td>0.054 \u00b1 0.042</td>\n      <td>1.29 \u00b1 0.28</td>\n      <td>48 \u00b1 26</td>\n      <td>0.082 \u00b1\u00a00.028</td>\n      <td>0.038 \u00b1 0.064</td>\n      <td>0.82 \u00b1 1.39</td>\n    </tr>\n    <tr>\n      <td>Blebbistatin</td>\n      <td>399</td>\n      <td>127</td>\n      <td>0.052 \u00b1 0.041</td>\n      <td>1.29 \u00b1 0.28</td>\n      <td>46 \u00b1 26</td>\n      <td>0.076 \u00b1 0.028</td>\n      <td>0.036 \u00b1 0.067</td>\n      <td>0.72 \u00b1 1.38</td>\n    </tr>\n    <tr>\n      <td>Latrunculin A</td>\n      <td>307</td>\n      <td>104</td>\n      <td>0.061 \u00b1 0.044</td>\n      <td>1.31 \u00b1 0.36</td>\n      <td>47 \u00b1 25</td>\n      <td>0.071 \u00b1 0.028</td>\n      <td>0.030 \u00b1 0.063</td>\n      <td>0.56 \u00b1 1.21</td>\n    </tr>\n    <tr>\n      <td>Nocodazole</td>\n      <td>310</td>\n      <td>106</td>\n      <td>0.052 \u00b1 0.037</td>\n      <td>1.28 \u00b1 0.25</td>\n      <td>50 \u00b1 28</td>\n      <td>0.074 \u00b1 0.029</td>\n      <td>0.032 \u00b1 0.061</td>\n      <td>0.67 \u00b1 1.38</td>\n    </tr>\n    <tr>\n      <td>\u03b1-amanitin</td>\n      <td>268</td>\n      <td>95</td>\n      <td>0.060 \u00b1 0.047</td>\n      <td>1.34 \u00b1 0.29</td>\n      <td>44 \u00b1 27</td>\n      <td>0.074 \u00b1 0.029</td>\n      <td>0.046 \u00b1 0.072</td>\n      <td>0.99 \u00b1 1.71</td>\n    </tr>\n    <tr>\n      <td>Flavopiridol</td>\n      <td>309</td>\n      <td>105</td>\n      <td>0.052 \u00b1 0.040</td>\n      <td>1.34 \u00b1 0.34</td>\n      <td>43 \u00b1 27</td>\n      <td>0.074 \u00b1 0.028</td>\n      <td>0.048 \u00b1 0.080</td>\n      <td>0.92 \u00b1 1.67</td>\n    </tr>\n    <tr>\n      <td>Trichostatin A</td>\n      <td>278</td>\n      <td>95</td>\n      <td>0.044 \u00b1 0.032</td>\n      <td>1.29 \u00b1 0.36</td>\n      <td>43 \u00b1 28</td>\n      <td>0.073 \u00b1 0.026</td>\n      <td>0.025 \u00b1 0.063</td>\n      <td>0.53 \u00b1 1.35</td>\n    </tr>\n    <tr>\n      <td>Cyclohex I</td>\n      <td>291</td>\n      <td>91</td>\n      <td>0.053 \u00b1 0.037</td>\n      <td>1.32 \u00b1 0.29</td>\n      <td>46 \u00b1 26</td>\n      <td>0.076 \u00b1\u00a00.025</td>\n      <td>0.038 \u00b1 0.069</td>\n      <td>0.76 \u00b1 1.49</td>\n    </tr>\n    <tr>\n      <td>Cyclohex II</td>\n      <td>294</td>\n      <td>105</td>\n      <td>0.052 \u00b1 0.039</td>\n      <td>1.35 \u00b1 0.38</td>\n      <td>47 \u00b1 25</td>\n      <td>0.074 \u00b1 0.029</td>\n      <td>0.040 \u00b1 0.067</td>\n      <td>0.74 \u00b1 1.33</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td></td>\n      <td colspan=\"6\">p-values (with respect to control)</td>\n      <td colspan=\"6\">Relative difference of mean [%]</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>AN/AN\u2062u\u2062c</td>\n      <td>e</td>\n      <td>\u03b1</td>\n      <td>de</td>\n      <td>fn\u2062e\u2062g</td>\n      <td>Nn\u2062e\u2062g</td>\n      <td>AN/AN\u2062u\u2062c</td>\n      <td>e</td>\n      <td>\u03b1</td>\n      <td>de</td>\n      <td>fn\u2062e\u2062g</td>\n      <td>Nn\u2062e\u2062g</td>\n    </tr>\n    <tr>\n      <td>ATP-depletion</td>\n      <td>0.359</td>\n      <td>0.674</td>\n      <td>0.513</td>\n      <td>0.009</td>\n      <td>0.258</td>\n      <td>0.093</td>\n      <td>4%</td>\n      <td>\u22121%</td>\n      <td>2%</td>\n      <td>8%</td>\n      <td>15%</td>\n      <td>24%</td>\n    </tr>\n    <tr>\n      <td>Blebbistatin</td>\n      <td>0.893</td>\n      <td>0.515</td>\n      <td>0.694</td>\n      <td>0.911</td>\n      <td>0.582</td>\n      <td>0.495</td>\n      <td>0%</td>\n      <td>\u22121%</td>\n      <td>\u22122%</td>\n      <td>0%</td>\n      <td>9%</td>\n      <td>9%</td>\n    </tr>\n    <tr>\n      <td>Latrunculin A</td>\n      <td>0.002</td>\n      <td>0.714</td>\n      <td>0.940</td>\n      <td>0.011</td>\n      <td>0.464</td>\n      <td>0.246</td>\n      <td>17%</td>\n      <td>1%</td>\n      <td>0%</td>\n      <td>\u22127%</td>\n      <td>\u22129%</td>\n      <td>\u221215%</td>\n    </tr>\n    <tr>\n      <td>Nocodazole</td>\n      <td>0.985</td>\n      <td>0.376</td>\n      <td>0.169</td>\n      <td>0.335</td>\n      <td>0.734</td>\n      <td>0.925</td>\n      <td>0%</td>\n      <td>\u22122%</td>\n      <td>6%</td>\n      <td>\u22123%</td>\n      <td>\u22123%</td>\n      <td>2%</td>\n    </tr>\n    <tr>\n      <td>\u03b1-amanitin</td>\n      <td>0.011</td>\n      <td>0.089</td>\n      <td>0.090</td>\n      <td>0.280</td>\n      <td>0.017</td>\n      <td>0.006</td>\n      <td>15%</td>\n      <td>3%</td>\n      <td>\u22126%</td>\n      <td>\u22123%</td>\n      <td>39%</td>\n      <td>50%</td>\n    </tr>\n    <tr>\n      <td>Flavopiridol</td>\n      <td>0.789</td>\n      <td>0.089</td>\n      <td>0.059</td>\n      <td>0.272</td>\n      <td>0.006</td>\n      <td>0 .018</td>\n      <td>0%</td>\n      <td>3%</td>\n      <td>\u22129%</td>\n      <td>\u22123%</td>\n      <td>45%</td>\n      <td>39%</td>\n    </tr>\n    <tr>\n      <td>Trichostatin A</td>\n      <td>0.002</td>\n      <td>0.906</td>\n      <td>0.051</td>\n      <td>0.099</td>\n      <td>0.087</td>\n      <td>0.160</td>\n      <td>\u221215%</td>\n      <td>\u22121%</td>\n      <td>\u22129%</td>\n      <td>\u22124%</td>\n      <td>\u221224%</td>\n      <td>\u221220%</td>\n    </tr>\n    <tr>\n      <td>Cyclohex I</td>\n      <td>0.654</td>\n      <td>0.257</td>\n      <td>0.633</td>\n      <td>0.932</td>\n      <td>0.355</td>\n      <td>0.359</td>\n      <td>2%</td>\n      <td>2%</td>\n      <td>\u22122%</td>\n      <td>0%</td>\n      <td>15%</td>\n      <td>15%</td>\n    </tr>\n    <tr>\n      <td>Cyclohex II</td>\n      <td>0.984</td>\n      <td>0.035</td>\n      <td>0.982</td>\n      <td>0.284</td>\n      <td>0.163</td>\n      <td>0.381</td>\n      <td>0%</td>\n      <td>4%</td>\n      <td>0%</td>\n      <td>\u22123%</td>\n      <td>21%</td>\n      <td>12%</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td></td>\n      <td colspan=\"6\">Kullback-Leibler divergence (with respect to control)</td>\n      <td colspan=\"6\">Skew</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>AN/AN\u2062u\u2062c</td>\n      <td>e</td>\n      <td>\u03b1</td>\n      <td>de</td>\n      <td>fn\u2062e\u2062g</td>\n      <td>Nn\u2062e\u2062g</td>\n      <td>AN/AN\u2062u\u2062c</td>\n      <td>e</td>\n      <td>\u03b1</td>\n      <td>de</td>\n      <td>fn\u2062e\u2062g</td>\n      <td>Nn\u2062e\u2062g</td>\n    </tr>\n    <tr>\n      <td>Control</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n      <td>1.10</td>\n      <td>3.07</td>\n      <td>\u22120.09</td>\n      <td>\u22120.04</td>\n      <td>2.17</td>\n      <td>2.68</td>\n    </tr>\n    <tr>\n      <td>ATP-depletion</td>\n      <td>0.026</td>\n      <td>0.011</td>\n      <td>0.021</td>\n      <td>0.032</td>\n      <td>0.051</td>\n      <td>0.018</td>\n      <td>1.01</td>\n      <td>2.23</td>\n      <td>\u22120.19</td>\n      <td>\u22120.16</td>\n      <td>1.80</td>\n      <td>1.87</td>\n    </tr>\n    <tr>\n      <td>Blebbistatin</td>\n      <td>0.023</td>\n      <td>0.025</td>\n      <td>0.031</td>\n      <td>0.036</td>\n      <td>0.022</td>\n      <td>0.007</td>\n      <td>1.31</td>\n      <td>2.26</td>\n      <td>\u22120.11</td>\n      <td>0.03</td>\n      <td>2.00</td>\n      <td>2.14</td>\n    </tr>\n    <tr>\n      <td>Latrunculin A</td>\n      <td>0.059</td>\n      <td>0.029</td>\n      <td>0.028</td>\n      <td>0.040</td>\n      <td>0.050</td>\n      <td>0.015</td>\n      <td>0.79</td>\n      <td>3.01</td>\n      <td>\u22120.15</td>\n      <td>\u22120.07</td>\n      <td>2.06</td>\n      <td>2.36</td>\n    </tr>\n    <tr>\n      <td>Nocodazole</td>\n      <td>0.022</td>\n      <td>0.014</td>\n      <td>0.042</td>\n      <td>0.025</td>\n      <td>0.033</td>\n      <td>0.010</td>\n      <td>0.87</td>\n      <td>1.84</td>\n      <td>\u22120.28</td>\n      <td>0.07</td>\n      <td>1.90</td>\n      <td>2.55</td>\n    </tr>\n    <tr>\n      <td>\u03b1-amanitin</td>\n      <td>0.060</td>\n      <td>0.043</td>\n      <td>0.057</td>\n      <td>0.032</td>\n      <td>0.062</td>\n      <td>0.036</td>\n      <td>0.98</td>\n      <td>1.95</td>\n      <td>0.08</td>\n      <td>0.08</td>\n      <td>1.61</td>\n      <td>2.26</td>\n    </tr>\n    <tr>\n      <td>Flavopiridol</td>\n      <td>0.038</td>\n      <td>0.027</td>\n      <td>0.044</td>\n      <td>0.035</td>\n      <td>0.053</td>\n      <td>0.021</td>\n      <td>1.28</td>\n      <td>2.36</td>\n      <td>0.03</td>\n      <td>\u22120.02</td>\n      <td>1.62</td>\n      <td>2.09</td>\n    </tr>\n    <tr>\n      <td>Trichostatin A</td>\n      <td>0.056</td>\n      <td>0.046</td>\n      <td>0.062</td>\n      <td>0.059</td>\n      <td>0.047</td>\n      <td>0.034</td>\n      <td>0.85</td>\n      <td>3.15</td>\n      <td>0.17</td>\n      <td>\u22120.25</td>\n      <td>2.95</td>\n      <td>3.15</td>\n    </tr>\n    <tr>\n      <td>Cyclohex I</td>\n      <td>0.041</td>\n      <td>0.032</td>\n      <td>0.043</td>\n      <td>0.051</td>\n      <td>0.043</td>\n      <td>0.015</td>\n      <td>1.13</td>\n      <td>2.13</td>\n      <td>\u22120.08</td>\n      <td>\u22120.12</td>\n      <td>1.98</td>\n      <td>2.70</td>\n    </tr>\n    <tr>\n      <td>Cyclohex II</td>\n      <td>0.013</td>\n      <td>0.026</td>\n      <td>0.049</td>\n      <td>0.021</td>\n      <td>0.040</td>\n      <td>0.014</td>\n      <td>0.98</td>\n      <td>4.19</td>\n      <td>\u22120.08</td>\n      <td>0.01</td>\n      <td>1.66</td>\n      <td>2.14</td>\n    </tr>\n  </tbody>\n</table>\n\nA close inspection of the violin plots (Figure 7B) and their corresponding statistical characteristics (Table 1) reveals the following morphological changes upon cytoskeletal, chromatin and protein synthesis perturbations.\n\nInterestingly, the cytoskeletal perturbations, which act on the cytoskeleton outside the cell nucleus, did not lead to any major changes in the nucleolar morphology except for the actin polymerization inhibitor latrunculin A, which led to an increase of $A_{N}/A_{N\u2062u\u2062c}$ compared to the control nucleoli. This increase, however, is due to the rounding up of nuclei upon the latrunculin A treatment (Khatau et al., 2009; Burnette et al., 2014), which leads to a decrease in the nuclear area $A_{N\u2062u\u2062c}$, and thus causes the apparent increase of $A_{N}/A_{N\u2062u\u2062c}$, while the measured nucleolar area $A_{N}$ remains comparable to the $A_{N}$ of control nucleoli. Similarly, the observed decrease in the distance of nucleoli from the nuclear envelope, $d_{e}$, is likely caused by a decrease of the observed nuclear area $A_{N\u2062u\u2062c}$.\n\nIn contrast, chromatin perturbations such as transcription inhibitors $\\alpha$-amanitin, flavopiridol and histone deacetylase inhibitor trichostatin A led to visible changes in the nucleolar morphology as well as in the roughness of the nucleolus-nucleoplasm interface. Specifically, upon perturbing polymerase II activity using $\\alpha$-amanitin, we find that the nucleolar size $A_{N}/A_{N\u2062u\u2062c}$ increases by \u223c\u00a015% and nucleoli are on average more elliptical ($e$). Moreover, the roughness of the nucleolus surface strongly increases by \u223c\u00a040\u201350% as measured by the amount of negative curvature ($f_{n\u2062e\u2062g}$ and $N_{n\u2062e\u2062g}$). Similarly, when we perturb the transcription elongation using flavopiridol, we observe \u223c\u00a040\u201345% increase in the nucleolus surface roughness ($f_{n\u2062e\u2062g}$ and $N_{n\u2062e\u2062g}$) and nucleoli become on average more elliptical ($e$). Finally, when we block the histone deacetylation using trichostatin A, which leads to chromatin decondensation, we find that the nucleolar size $A_{N}/A_{N\u2062u\u2062c}$ decreases by \u223c\u00a015%, while their eccentricity ($e$) remains unchanged. Strikingly, the nucleolar surface roughness decreases by \u223c\u00a020\u201325% ($f_{n\u2062e\u2062g}$ and $N_{n\u2062e\u2062g}$), in other words upon trichostatin A treatment it becomes smoother than in the control.\n\nFinally, the protein synthesis inhibition using cycloheximide left the nucleolar size unchanged, while the nucleoli became on average more elliptical ($e$) at longer times ($t_{2}=$\u00a06.5 hr). Furthermore, protein synthesis inhibition led to a moderate \u223c\u00a015% increase in the nucleolar surface roughness ($f_{n\u2062e\u2062g}$ and $N_{n\u2062e\u2062g}$) at both times ($t_{1}=$\u00a030 min and $t_{2}=$\u00a06.5 hr).\n\nThe orientation of the nucleoli within the nucleus and the nucleolar distance from the nuclear envelope is not significantly affected by any of the studied perturbations as illustrated by $\\alpha$ and $d_{e}$, respectively.\n\n## Discussion\n\nIn this work, we study the nucleolus as the archetype of cellular organelles formed by liquid-liquid phase separation (LLPS) and monitor its size, shape and dynamics during its lifetime in human cells in vivo. We discover a rich phenomenology that grows the LLPS framework in new and unexpected ways: (i) We find that nucleoli exhibit anomalous dynamics and anomalous volume distribution during the cell cycle that defies any current theory and necessitates a new one. (ii) We uncover that the nucleolar fluid is a colloidal solution containing solid-like granules, the DFCs. (iii) We reveal that the surrounding nucleoplasm plays a key role in the LLPS of nucleoli that might have been previously overlooked and find that active (ATP-dependent) processes are involved in maintaining the nucleolus-nucleoplasm interface. Moreover, we identify specific biological processes participating in the nucleolus-nucleoplasm interactions.\n\nOur findings show that the nucleolar volume distribution scales as $P(V)\u223cV^{\u22121}$ during the entire cell cycle. The scale-free nature of this distribution suggests that nucleoli of any size can coalesce, moreover, there is no preferred size that nucleoli need to reach before/after they coalesce. It also suggests, that nucleoli of different sizes follow the same coalescence kinetics (Caragine et al., 2018). Furthermore, the nucleolar volume distribution remains unchanged during the cell cycle, suggesting that the fusion of nucleoli is not limited to the first two hours of the cell cycle as previously hypothesized (Savino et al., 2001), but can occur at any time. Nucleolar coalescence occurs from the early stages in the cell cycle, where it is thought to be a part of the nucleolar assembly process (Savino et al., 2001). It is conceivable that at later times, the nucleolar coalescence might serve a different purpose as it is less likely to happen with decreasing nucleolar number.\n\nInterestingly, a volume distribution $P\u2062(V)\u223cV^{-1}$ was previously found also for liquid-like P-granules in the C. elegans oocyte (Hubstenberger et al., 2013). In contrast, the volume distribution of nucleoli in the X. laevis oocyte follows $\u223cV^{\u22121.5}$, which was shown to be consistent with diffusion-limited aggregation with constant influx of particles (Brangwynne et al., 2011). The kinetics of human nucleolar assembly likely differs from that of the frog oocyte due to numerous differences between these two systems. For example, the nucleolar count is much lower in human cells (\u223c\u00a0100 times less than in frog oocyte), there is a dense actin network present in the frog oocyte nucleus (germinal vesicle), and human somatic nucleoli are connected to the chromatin fiber, thus, they cannot freely diffuse as it is in the case of nucleoli in the X. laevis oocyte (Gall et al., 2004; Brangwynne et al., 2011; Caragine et al., 2018; Berry et al., 2018). Further differences between the two systems include a large difference in the nuclear size (diameter ~\u00a01000 \u03bcm in frog oocytes, \u223c\u00a010 \u00b5m in human cells) and the nucleolar size with volumes of 10\u2013103\u00a0\u00b5m3 in frog oocytes and 10-2\u2013102\u00a0\u00b5m3 in human cells (Gall et al., 2004; Brangwynne et al., 2011; Caragine et al., 2018).\n\nThe anomalous volume distribution of human nucleoli might likely be connected to their anomalous dynamics. Remarkably, our data suggest that one can predict if a pair of nucleoli is going to fuse by analyzing their motion. The differences in the dynamical behavior of non-fusing nucleoli and the ones in approach for fusion are stark. While the non-fusing ones appear to move randomly through the nucleoplasm, nucleoli that will fuse in the near future, move slower than non-fusing ones and show a linear correlation in their velocities (Figure 5I). Considering the nucleolar size and the fact that they are physically tethered to the chromatin fiber, their motion unavoidably leads to local spatial reorganization of chromatin. Alternatively, a local chromatin rearrangement could facilitate the nucleolar pre-fusion approach. In fact, in our earlier work we found that the velocities of the growth of the neck connecting two fusing nucleoli (Figure 1B) are intriguingly similar to the velocities measured for active chromatin motion (Caragine et al., 2018; Zidovska et al., 2013). Since nucleoli move in an active fluid (chromatin solution), we speculate that active processes might be involved in bringing them together to undergo fusion. To explore this hypothesis, future experiments and theories are needed to probe the nucleolar interactions with chromatin.\n\nThe complex nature of the nucleolar fluid might also contribute to the anomalous behavior of human nuceoli. Strikingly, we find that dense fibrillar components (DFCs) behave as monodisperse solid-like colloidal particles (granules) suspended in a liquid phase of granular component (GC). Our data shows that DFCs do not undergo aggregation, but remain of well-defined size and dimensions with a semi-major axis length of 210 \u00b1\u00a050 nm and semi-minor axis length of 180 \u00b1\u00a040 nm, as well as shape with aspect ratio of 1.22 \u00b1 0.17 even upon nucleolar coalescence, which is consistent with solid-like particles. In contrast, the DFCs in frog oocytes were found to be polydisperse with diameter \u223c\u00a02\u20135 \u00b5m, liquid-like with viscoelastic behavior (Brangwynne et al., 2011; Feric et al., 2016), and with their fusion being observed upon latrunculin A treatment (Feric et al., 2016). It is also noteworthy that one frog oocyte DFC can be larger than the entire human nucleolus. Furthermore, our data reveal that human nucleoli obey a volumetric ratio for GC and DFC content, with DFC volume fraction \u223c 0.1, which is significantly lower than in frog oocytes (\u223c 0.25) (Feric et al., 2016). This suggests it is the rRNA-rich GC phase that provides the human nucleolus with its liquid-like properties.\n\nTo investigate the nucleolar interactions with the surrounding nucleoplasm, we have tested the impact of active (ATP-dependent) processes in general as well as specific biological processes such as cytoskeletal and transcriptional activity, chromatin packing state and protein synthesis. Our data suggest that nucleoli are closely dependent on ATP-dependent processes, losing their spherical shape upon ATP-depletion by exhibiting increased surface roughness (local deformations). In our earlier study (Caragine et al., 2018) we have shown that the surface roughness can serve as a readout of the nucleolar surface tension. Specifically, local nucleolar surface deformations, which may be driven thermally or by active processes, are opposed by the surface tension. Thus, the larger the surface roughness, the lower its surface tension. Hence, a possible interpretation of the increase in nucleolar surface roughness upon ATP-depletion is a reduction of the surface tension $\\gamma$ of the nucleolus-nucleoplasm interface. These findings are consistent with our earlier study, which found that $\\gamma$ under physiological conditions is an effective quantity, and is therefore, likely dependent on some of the ATP-dependent cellular processes (Caragine et al., 2018).\n\nOur data show that the roughness (local deformations) of the nucleolus-nucleoplasm interface is highly sensitive to the transcriptional activity in the nucleus. Interestingly, the inhibition of transcriptional activity (such as polymerase II activity or mRNA elongation) in the nucleus leads to an increase of the relative nucleolar size and the nucleolus becomes more elongated (less spherical) with a number of local deformations leading to high surface roughness. However, upon blocking the histone deacetylases, which causes a visible chromatin decondensation (T\u00f3th et al., 2004), we find not only a reduction in the relative nucleolar size, but also an increasingly smooth nucleolus-nucleoplasm interface. This suggests that the nucleolus-nucleoplasm interface is closely linked to the chromatin packing state as well as its transcriptional activity. Conversely, the perinucleolar chromatin is mostly heterochromatic, that\u00a0is largely transcriptionally inactive, yet, its peculiar packing at the nucleolar surface might require active remodeling. Moreover, this is in agreement with our hypothesis that the surface tension $\\gamma$ is maintained by active processes and thus is an effective physical quantity. To elucidate the underlying physics, new theories accounting for the non-equilibrium nature of the nucleolus-nucleoplasm liquid interface need to be developed.\n\nIn contrast, we find that the cytoskeletal forces exerted on the nucleus from the cytoplasm, do not contribute to the local roughness of the nucleolus-nucleoplasm interface, nor do they impact the nucleolar size and shape. Interestingly, in frog oocytes the disruption of the dense nuclear actin network by latrunculin A facilitates nucleolar fusion, leading to an increase in the nucleolar size (Feric et al., 2016). Conversely, there is no filamentous actin network present in human cell nucleus.\n\nLastly, our findings reveal that nucleoli are only moderately sensitive to the protein synthesis inhibition at time scales from 30 min to 6.5 hr. We do not observe any change in their size, only a slight increase in the surface roughness. However, it is possible that to observe an effect on nucleoli from the lack of protein synthesis much larger times need to be explored.\n\nIn summary, we speculate that the interplay of the complex nature of the nucleolar fluid, the reduced mobility of nucleoli due to their chromatin tethering, as well as their interactions with the surrounding nucleoplasm, might impact the nucleolar assembly kinetics and lead to the observed anomalous nucleolar volume distribution ($\u223cV^{-1}$).\n\nIn conclusion, nucleoplasm plays a major role in the life of nucleoli, the archetype of the liquid condensate formed by liquid-liquid phase separation in biology. Nucleoplasm, the fluid surrounding the nucleoli, is a complex polymeric solution containing chromatin. Chromatin fiber serves as the template for nucleolar formation and later forms a boundary at the nucleolus-nucleoplasm interface (McClintock, 1934; Ritossa and Spiegelman, 1965; Wallace and Birnstiel, 1966; Bickmore and van Steensel, 2013; N\u00e9meth and L\u00e4ngst, 2011; Towbin et al., 2013). Strikingly, the DNA sequences at which nucleoli form (NORs) and the genes located at the nucleolar interface are by no means random (N\u00e9meth and L\u00e4ngst, 2011). This likely impacts the 3D chromosomal organization in the nucleolar vicinity. Moreover, considering chromatin\u2019s active nature (Zidovska et al., 2013) and the fact that nucleoli are tethered to it during their lifetime, we speculate that active positional\u00a0fluctuations (or rearrangements) of chromatin could bring nucleoli together, facilitating fusion. While this hypothesis remains to be tested, it is consistent with our observations that nucleoli, which are in approach to fusion, exhibit different dynamics than non-fusing ones. It is also supported by previous studies of colloidal mixtures, where the presence of particles\u00a0with an actively driven translational motion leads to phase separation of active and passive (i.e., thermally driven)\u00a0components (Stenhammar et al., 2015). Similar behavior has been found for polymer mixtures containing active and passive polymers\u00a0(Smrek and Kremer, 2017).\u00a0We speculate that, with respect to its translational mobility, the nucleolus could be abstracted as a passive droplet (or colloid) immersed in an active polymer (chromatin). In such case, the active positional fluctuations of the polymer could cause demixing of the passive phase and thus effectively bring the passive colloids (nucleoli) together. That\u00a0is, the active entities phase separate from the passive entities, enabling nucleolar coalescence. Such phase separation is distinct from the liquid-liquid phase separation by which the nucleoli are thought to form at the beginning of the cell cycle (Brangwynne et al., 2011; Berry et al., 2015; Feric et al., 2016).\n\nThe nucleolus plays a key role in cellular protein synthesis, thus any changes in nucleolar composition, structure or function can lead to cell abnormalities often connected with human diseases. For example, mutations in nucleolar proteins, which interact with RNA polymerase I, regulate rRNA transcription or participate in rRNA processing, are associated with cell cycle arrest and improper nucleolar assembly. This can lead to diseases such as skeletal and neurodegenerative disorders, cardiovascular disease and cancer (Hannan et al., 2013; N\u00fa\u00f1ez Villac\u00eds et al., 2018; Ruggero and Pandolfi, 2003; Derenzini et al., 2009). Moreover, in many diseases such as cancer, Alzheimer\u2019s and Parkinson\u2019s disease, but also in aging, human nucleoli change their shape and size (Hannan et al., 2013; Tsai and Pederson, 2014; N\u00fa\u00f1ez Villac\u00eds et al., 2018; Tiku and Antebi, 2018), making the nucleolus a potential valuable diagnostic marker. Hence, a mechanistic understanding of nucleolus, its material properties and physical interactions with the nucleoplasm, might illuminate nucleolus in health and disease, contributing to new paths for diagnosis and therapy.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Cell line (H. sapiens)</td>\n      <td>HeLa</td>\n      <td>ATCC</td>\n      <td>ATCC:CCL2 RRID:CVCL_0030</td>\n      <td>Stable H2B-GFP cell line</td>\n    </tr>\n    <tr>\n      <td>Transfected construct (H. sapiens)</td>\n      <td>NPM-DsRed</td>\n      <td>Addgene</td>\n      <td>34553 RRID:Addgene_34553</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Transfected construct (H. sapiens)</td>\n      <td>mCerulean-Fibrillarin-7</td>\n      <td>Addgene</td>\n      <td>55368 RRID:Addgene_55368</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Transfected construct (H. sapiens)</td>\n      <td>NPM-mApple</td>\n      <td>Caragine et al., 2018</td>\n      <td>n/a</td>\n      <td>Generated by Zidovska Lab \u2013 published\u00a0in Caragine et al., 2018</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>RO-3306</td>\n      <td>Enzo Life Sciences</td>\n      <td>ALX-270\u2013463</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>2-Deoxy-D-Glucose\u00a0(DOG)</td>\n      <td>Millipore Sigma</td>\n      <td>D8375</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Trifluoromethoxy-carbonylcyanide phenylhydrazone (FCCP)</td>\n      <td>Millipore Sigma</td>\n      <td>C2920</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Latrunculin A</td>\n      <td>Millipore Sigma</td>\n      <td>L5163</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Blebbistatin</td>\n      <td>Millipore Sigma</td>\n      <td>B0560</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Nocodazole</td>\n      <td>Millipore Sigma</td>\n      <td>M1404</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>\u03b1-Amanitin</td>\n      <td>Santa Cruz Biotechnology</td>\n      <td>sc-202440</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Cycloheximide</td>\n      <td>Santa CruzBiotechnology</td>\n      <td>sc-3508</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Flavopiridol</td>\n      <td>Santa Cruz Biotechnology</td>\n      <td>sc-202157</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Trichostatin A</td>\n      <td>Millipore Sigma</td>\n      <td>T8552</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Matlab</td>\n      <td>MathWorks</td>\n      <td>2017a,\u00a02019a</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Adobe Illustrator,\u00a0Photoshop</td>\n      <td>Adobe Inc.</td>\n      <td>CC2018</td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### Cell culture and cell transfection\n\nThe stable HeLa H2B-GFP cell line was cultured according to ATCC recommendations (CCL-2). Cells were cultured in a humidified, 5% CO2 (vol/vol) atmosphere in Gibco Dulbecco\u2019s modified eagle medium (DMEM) supplemented with 10% FBS (vol/vol), 100 units/mL penicillin, 100 \u03bcg/mL streptomycin (Invitrogen) and 4.5 \u00b5g/mL Plasmocin Prophylactic (Invivogen). Cells were mycoplasma free, as determined by the Invivogen PlasmoTest (Invivogen). For H2B-GFP imaging, cells were plated onto 35 mm MatTek dishes with glass bottom no. 1.5 (MatTek) 24 hr before imaging. We performed four independent experiments. For concurrent H2B-GFP and NPM-DsRed (or NPM-mApple) imaging, cells were plated onto 35 mm MatTek dishes 48 hr before imaging and transiently transfected with NPM-DsRed (or NPM-mApple) 24 hr prior to the experiment. All transfections were carried out using Lipofectamine 2000 (Invitrogen) following the manufacturer\u2019s protocol. When indicated, cells were synchronized using 10 \u00b5M RO-3306 (Enzo Life Sciences) and imaged before the drug was removed after 16 hr, as well as 3.5 and 5 hr after the drug removal. The synchronized and unsynchronized populations were evaluated in two distinct experiments. For concurrent imaging of H2B GFP, NPM-DsRed and mCerulean-Fibrillarin-7, cells were plated onto 35 mm MatTek dishes 48 hr before the experiment and transiently transfected with both NPM-DsRed and m-Cerulean-Fibrillarin-7 24 hr prior to the experiment. We performed six independent experiments, all of which were analyzed qualitatively and one quantitatively. NPM-DsRed and FBL-mCerulean (mCerulean3-Fibrillarin-7) were gifts from Mary Dasso (Addgene plasmid # 34553) (Yun et al., 2008) and from Michael Davidson (Addgene plasmid # 55368) (Markwardt et al., 2011), respectively. NPM-mApple plasmid was created as described earlier (Caragine et al., 2018). For experiments involving biochemical perturbations, cells were plated onto 35 mm MatTek dishes 72 hr in advance of the experiment, transiently transfected with NPM-DsRed 48 hr prior to the experiment, and replated onto 35 mm MatTek dishes 24 hr prior to the experiment. We performed three independent experiments for each perturbation and six for the control. All imaging experiments were performed in the Gibco CO2-independent media (Invitrogen) supplemented with L-Glutamine (Invitrogen) and with MatTek dish containing cells mounted on the microscope stage in a custom-built environmental chamber maintained at 37\u00b0C with 5% CO2 supplied throughout the experiment.\n\n### Biochemical perturbations\n\nTo deplete ATP, cells were treated with 6 mM 2-deoxyglucose (DOG) and 1 \u00b5M trifluoromethoxy-carbonylcyanide phenylhydrazone (FCCP) dissolved in CO2-independent medium supplemented with L-glutamine 2 hr before imaging. For cytoskeletal perturbations 10 \u00b5M latrunculin A, 10 \u00b5M blebbistatin or 10 \u00b5M nocodazole, respectively, in CO2-independent medium supplemented with L-glutamine were added to cells 30 min before imaging. For chromatin perturbations, 20 \u00b5g/mL \u03b1-amanitin (Santa Cruz Biotechnology), 5 \u00b5g/mL cycloheximide (Santa Cruz Biotechnology), 83 nM flavopiridol (Santa Cruz Biotechnology), or 624 nM trichostatin A (TSA), respectively, in CO2-independent medium supplemented with L-glutamine were added to cells 30 min, 30 min, 2 hr, and 24 hr before imaging, respectively. For cycloheximide, additional timepoint, 6.5 hr after drug additon, was evaluated. All chemicals were from Sigma Aldrich unless stated otherwise.\n\n### Microscopy and image acquisition\n\nCells were imaged with a Yokogawa CSU-X1 confocal head with an internal motorized high-speed emission filter wheel, Spectral Applied Research Borealis modification for increased light throughput and illumination homogeneity on a Nikon Ti-E inverted microscope equipped with an oil-immersion 100\u00d7 Plan Apo NA 1.4 objective lens, an oil-immersion 40\u00d7 Plan Fluor NA 1.3 objective lens, and the Perfect Focus system. The microscope was mounted on a vibration-isolation air table. The pixel size for the 100\u00d7 and 40\u00d7 objective was 0.065 \u00b5m and 0.1625\u00a0\u00b5m, respectively. H2B-GFP and NPM-DsRed (or NPM-mApple) fluorescence was excited with a 488\u00a0nm and a 561\u00a0nm solid-state laser, respectively. To image H2B-GFP and NPM-DsRed (or NPM-mApple) at the same time, we illuminated the sample simultaneously with both excitation wavelengths, 488\u00a0nm and 561 nm. The emission was separated by the W-View Gemini Image Splitter (Hamamatsu) using a dichroic mirror (Chroma Technology), followed by an ET525/30m and an ET630/75m emission filter (Chroma Technology). The two fluorescent signals were allocated to the two halves of the image sensor, producing two distinct images. The exposure time for each frame was 250 ms. For three color imaging, H2B-GFP, NPM-DsRed, and FBL-mCerulean were excited with 488 nm, 561 nm, and 405 nm solid state lasers, respectively, and fluorescence was collected with a 405/488/561/640 multiband-pass dichroic mirror (Semrock) and then an ET525/50m, ET600/50m and ET450/50m emission filter, respectively (Chroma Technology). The exposure time was 250 ms, 250 ms, and 1000 ms for H2B-GFP, NPM-DsRed, and FBL-mCerulean, respectively. Z-stacks were taken with a z axis step size of 500 nm, with the shutter closed in-between steps and an exposure time of 250 ms per plane. Images were obtained with a Hamamatsu ORCA-R2 cooled CCD camera controlled with MetaMorph 7 (Molecular Devices). The streams of 16-bit images were saved as multi-tiff stacks.\n\n### Image processing and data analysis\n\nImages were converted to single-tiff images and analyzed with MatLab (The MathWorks). The nuclear and nucleolar contours were determined from the H2B-GFP and NPM-DsRed signal, respectively, using previously published procedures (Chu et al., 2017; Caragine et al., 2018).\n\nThe nucleolar velocity was determined as the displacement of the centroid of the filled nucleolar contour relative to the displacement of the centroid of the filled nuclear contour, divided by the elapsed time. For radial velocity calculations, we define the radial distance of each nucleolus as its distance from the midpoint of the linear distance between the centroids of two nucleoli. The radial distances for both nucleoli are measured relative to the midpoint of the linear distance between the nucleoli found in two time points, in order to exclude the movement of the other nucleolus in the calculation of nucleolar velocity. Finally, to calculate the radial velocity we divide the change in the radial distance by the time elapsed.\n\nThe nucleolar distance from the nuclear envelope was found by finding the minimum distance between the nucleolar centroid and the nuclear contour. The angle between the nucleolus and nucleus was determined by fitting both nucleus and nucleolus with an ellipse and measuring the angle between their respective major axes, for angles greater than 90\u00b0, its supplement was taken. The nuclear and nucleolar area were determined as the number of pixels filling its respective contours. Nuclear and nucleolar eccentricity was calculated as the ratio of the semi-major axis length and its semi-minor axis length, when fitted to an ellipse.\n\nTo obtain an accurate count of DFCs, we developed a feature-finding procedure. A mask created by the nucleolar contour was applied to the FBL-mCerulean image to remove the background signal. Using a local-maxima function, we found a large number of local maxima indicating possible features in the image, most of which correspond to noise. We manually selected DFCs from the local maxima that were found. Next, we manually fit each DFC with a circumscribed and an inscribed circle, measuring the semi-major DFC axis $a$ and the semi-minor DFC axis $b$, respectively.\n",
+      "created_at": "2025-12-02T13:37:27.585662Z"
+    },
+    {
+      "id": "d3ad96da-d657-4f14-b075-9bddad7f3ddb",
+      "submission_id": "9a3657b7-a24f-4846-9624-517fc1c661ff",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Arup K Chakraborty, Massachusetts Institute of Technology United States\n\nReviewers:\n- Rohit V Pappu, Washington University in St Louis United States\n- Pilong Li\n\n## Review text\n\nDOI: [10.7554/eLife.47533.sa1](https://doi.org/10.7554/eLife.47533.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nThank you for submitting your article \"Nucleolar dynamics and interactions with nucleoplasm in living cells\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by Arup Chakraborty as the Senior and Reviewing Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Rohit V Pappu (Reviewer #1); Pilong Li (Reviewer #3).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nWhile this paper builds on your past publication in Physical Review Letters in 2018, there are considerable new insights in this manuscript pertaining to the interplay between spontaneous vs. driven processes in regulating nucleolar shapes, sizes, and cell cycle dependent dynamics. However, it is important to highlight the new findings more clearly, and very importantly, to link the data reported in this manuscript to the conclusions drawn. At present, the conclusions are very general and speculative, rather than closely tied to the actual observations. Please find the three reviews appended below as it will help you address additional significant points.\n\nReviewer #1:\n\nThis work is an important and essential follow up to previous studies, one from this very group, on the dynamics of nucleoli. There is growing interest in understanding the interplay between spontaneous and driven (or what some folk refer to as passive vs. active) processes. Yes, facsimiles of nucleoli can be reconstituted in vitro, but the interplay between spontaneous vs. driven processes in regulating nucleolar shapes, sizes, and cell cycle dependent dynamics remains unclear. Here, the authors provide interesting insights based on quantitative imaging that have surprising ramifications. Overall, this is a really important contribution and should be published in eLife. Prior to publication there are some issues that need to be addressed and these are listed below.\n\n1) Please clarify whether Figure 1 is a new image or adapted from Caragine et al., 2018.\n\n2) In the fourth paragraph of the Introduction, the authors note that the nucleoplasm is an active fluid and that chromatin dynamics are active and coherent. It would help if the authors were to clarify what they mean by the terms active and coherent. These have specific meanings in the active matter field, and given the possible lack of familiarity that eLife readers might have with these concepts. In fact, I'd like to know precisely what the authors mean by active and coherent in this particular context.\n\n3) The authors indicate that \"the number of nucleoli per nucleus decreases\u2026\"; where is this shown in the data?\n\n4) The fit of the p(V) raises some questions of importance: explanation or consideration. In order to be able to interpret the model that emerges from the fits, I propose the following: (1) fit the data to a proper power law of the form p(V) = f(V)*V^(\u03b1 \u2013 1) and fix \u03b1 to be > 0; (2) then assess the value of \u03b1; (3) according to these fits, \u03b1 should be equal to 2; (4) this would indicate that the distribution of nucleolar volumes follows a model where the moments V^m diverge for all values of m \u2265 \u03b1 \u2013 1. This implies that estimates of moments, including the first moment viz., the average, will not converge no matter how many samples one extracts. This hypothesis should be tested. I suspect it will be true and if true, the implication is that the underlying features of nucleoli probably derive from Levy flight statistics and are incorrectly analyzed in terms of classical random walks, which lead to erroneous viewpoints such as effective diffusion coefficients and/or effective surface tensions. The underlying asymptotic scale free nature of volume distributions points to interesting properties that aren't explored here, but should perhaps be addressed.\n\n5) Unless I missed it, the sphericity of the DFC wasn't quantitatively analyzed and yet the authors suggest that the DFC exhibits spherical shapes.\n\n6) The trajectories shown in Figure 5A, C, and G of are difficult to parse. Inasmuch as these are trajectories, it might help to have some annotation so one can follow how the trajectories evolve.\n\n7) I felt hard pressed to compare the violin plots to one another. There is a lot of really important information in these plots and the biological implications are rather significant. Therefore, I ask that the authors consider using something like a Kullback-Leibler divergence measure as a way to compare the prior and posterior distributions where the prior would be the default and the posterior would be the effect of the biological perturbation. Absent this, it is hard to judge if the inferences are qualitative or quantitative.\n\n8) The data reveal some extraordinary insights, but interestingly the conclusions seem to either be more general or not about the data themselves. For example, the notion that there are two distinct behaviors for fusing vs. non-fusing nucleoli seems like a bit of a stretch from a quantitative standpoint. Absent a rigorous quantification, I am not convinced that the data do indeed reveal a strong dependence of the nucleolus-nucleoplasm interface on the chromatin transcriptional activity and the packing state. It is an attractive idea, but do the data really support such a strong assertion? I am not entirely sure. As noted in point 4 above, the power law distribution needs further analysis and explanation because this does imply very interesting physics that might even explain the apparent DLCA like behavior that the authors have observed. The authors appear to be invoking a direct connection to ideas from active matter, specifically motility induced phase separation; however, it is not clear that the data directly connect to these ideas. It is more than possible that I have missed the connection. Perhaps the authors would consider elaborating on how their data connect to ideas put forth by Cates and coworkers.\n\nReviewer #2:\n\nThe article by Caragine et al. reports the results of extensive live cell imaging of human HeLa cells expressing H2B-GFP as a chromatin marker and NPM-DsRed, and sometimes also FBL-mCerulean, as nucleolar markers. The senior author, Dr. Zidovska, has previously reported that the high viscosity of the nucleoplasm influences the fluid behavior of nucleoli [Caragine et al., 2018] and extends these studies in the current report to include analysis of nucleolar size and shape at different cell cycle stages, upon depletion of ATP, and after several different biochemical perturbations. The authors emphasize that nucleoli are tethered to and immersed within a fluid sea of chromatin, a perspective often overlook in studies of nucleoli. The results are generally consistent with our understanding of the fluid nature of nucleoli from past studies from others although these authors report the most detailed analysis of human nucleoli to date. The results in Figure 2 show that the size distribution of nucleoli follows a power law with an exponent of -1, in contrast to the exponent of -1.5 observed previously for frog oocyte nucleoli by Cliff Brangwynne. The authors note that differences in the numbers of nucleoli between the two systems may account for the difference in size distribution. Simultaneous observation of NPM1 in the GC and FBL in the DFC showed that DFCs behave like colloidal particles in the fluid GC and that they consistently occupy ~0.1 volume fraction of nucleoli (Figure 3). These results are consistent with findings reported by Cliff Brangwynne in 2016 [Feric, et al., 2016]. The authors compared the movements of nucleoli that, in some cases, lead to encounters and fusion (Figures 4 and 5). They state that the movements of non-fusing and fusing nucleoli are different, as follows: \"While the non-fusing ones appear to move randomly through the nucleoplasm, nucleoli that will fuse in the near future, show a bias in motion towards each other.\" This is a truism; if two nucleoli don't move towards each other, they won't fuse. The authors speculate about the influence of chromatin dynamics on nucleolar fusion but did not perform any experiments to test their ideas. Next, the authors imaged cells after depletion of ATP and observed that nucleoli become irregularly shaped, which they suggested was due to decreased surface tension, although this suggestion was not tested through experiments. Finally, the authors subjected cells to chemical treatments that alter the cytoskeleton, chromatin or protein synthesis and characterized nucleolar number, size and shape using live imaging. In some cases, the treatments led to changes in nucleolar features but this very large dataset did not provide insights of fundamental significance regarding nucleolar structure and function and interactions with the surrounding chromatin. The Conclusions section of the paper presents a series of almost exclusively speculative statements about various aspects of interactions between fluid chromatin and nucleoli. Many of these are interesting hypotheses for testing in the future but are not appropriate as conclusion statements in a primary research article in eLife.\n\nThe article presents the results of a powerful live cell imaging platform capable of monitoring the structural and dynamic features of chromatin and nucleoli in live cells in real time. However, the results presented largely confirm past observations regarding the features of nucleoli and do not provide new insights. The results can serve as a starting point for future investigations of, for example, links between the state of surrounding chromatin and nucleolar function, which the authors are encouraged to undertake.\n\nReviewer #3:\n\nThe authors extensively studied the dynamics and morphology of individual nucleoli as well as relative dynamics between fusing or non-fusing nucleoli pairs in HeLa cells. These experiments are further extensions of their recent Physical Review Letters paper. However, I find their current effort compelling as they are inferring nucleoli-nucleoplasm interactions, an understudied important topic in the field of LLPS. The authors have established a number of quantitative measurements. Using these assays, they were able to evaluate the effects of ATP hydrolysis on dynamics of nucleoli and have found out some ATP-dependent cellular processes likely regulate dynamics of nucleoli. They also evaluated alterations to dynamics of nucleoli by perturbations to cytoskeleton dynamics, transcription, epigenetic regulation, or protein synthesis. For example, they have found out that alterations to chromatin compaction via epigenetic perturbation cause salient changes in nucleoli dynamics. While it is well-accepted that ATP-dependent processes can regulate dynamics biomolecular condensates, the observation of potential interplay between global epigenetics landscape and nucleoli regulation is rather intriguing. It is highly conceivable that scientists in the field can reveal a lot more nucleoli-nucleoplasm interactions and other biomolecular condensates-surrounding environment interactions by combining these quantitative measurements and genetic perturbations. For at least these reasons, I recommend the publication of this manuscript in eLife.\n",
+      "created_at": "2025-12-02T13:37:27.585662Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T13:37:27.585662Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T13:37:27.585662Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "c8d399c4-c8cf-4e08-9110-5df90085e586",
+      "content_id": "a3485bed-d2c0-47ce-919f-a4d2064c94f7",
+      "claim_id": "C1",
+      "claim": "Liquid-liquid phase separation (LLPS) has been recognized as one of the key cellular organizing principles.",
+      "claim_type": "EXPLICIT",
+      "source": "Liquid-liquid phase separation (LLPS) has been recognized as one of the key cellular organizing principles and was shown to be responsible for formation of membrane-less organelles such as nucleoli.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the current state of scientific understanding regarding LLPS as a cellular organizing principle.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:37:27.585662Z"
+    },
+    {
+      "id": "8333022c-770e-4ce8-955e-0468c473c5cc",
+      "content_id": "a3485bed-d2c0-47ce-919f-a4d2064c94f7",
+      "claim_id": "C2",
+      "claim": "LLPS was shown to be responsible for formation of membrane-less organelles such as nucleoli.",
+      "claim_type": "EXPLICIT",
+      "source": "Liquid-liquid phase separation (LLPS) has been recognized as one of the key cellular organizing principles and was shown to be responsible for formation of membrane-less organelles such as nucleoli.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement references prior research findings that LLPS is responsible for nucleolar formation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:37:27.585662Z"
+    },
+    {
+      "id": "3ab45860-d997-4245-939f-0df882c4f2bf",
+      "content_id": "a3485bed-d2c0-47ce-919f-a4d2064c94f7",
+      "claim_id": "C3",
+      "claim": "Nucleoli were found to behave like liquid droplets.",
+      "claim_type": "EXPLICIT",
+      "source": "Although nucleoli were found to behave like liquid droplets, many ramifications of LLPS including nucleolar dynamics and interactions with the surrounding liquid remain to be revealed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This references prior findings about nucleolar liquid-like behavior.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:37:27.585662Z"
+    },
+    {
+      "id": "ef1dd365-1d3a-4820-b121-8748e887643d",
+      "content_id": "a3485bed-d2c0-47ce-919f-a4d2064c94f7",
+      "claim_id": "C4",
+      "claim": "The study reveals two types of nucleolar pair dynamics: an unexpected correlated motion prior to coalescence and an independent motion otherwise.",
+      "claim_type": "EXPLICIT",
+      "source": "We reveal two types of nucleolar pair dynamics: an unexpected correlated motion prior to coalescence and an independent motion otherwise.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study based on experimental observations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:37:27.585662Z"
+    },
+    {
+      "id": "096aeb17-6611-4b92-91b3-6ef354d182a4",
+      "content_id": "a3485bed-d2c0-47ce-919f-a4d2064c94f7",
+      "claim_id": "C5",
+      "claim": "The nucleolar volume distribution follows p(V)\u223cV^-1.",
+      "claim_type": "EXPLICIT",
+      "source": "This surprising kinetics leads to a nucleolar volume distribution, p\u2062(V)\u223cV-1, unaccounted for by any current theory.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a measured result from the study's data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:37:27.585662Z"
+    },
+    {
+      "id": "4deb7284-2dcf-4a57-8935-15794f05f18c",
+      "content_id": "a3485bed-d2c0-47ce-919f-a4d2064c94f7",
+      "claim_id": "C6",
+      "claim": "The nucleolar volume distribution p(V)\u223cV^-1 is unaccounted for by any current theory.",
+      "claim_type": "EXPLICIT",
+      "source": "This surprising kinetics leads to a nucleolar volume distribution, p\u2062(V)\u223cV-1, unaccounted for by any current theory.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the significance of the measured volume distribution.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:37:27.585662Z"
+    },
+    {
+      "id": "8d779e34-fefb-4bfc-99f6-925560feca62",
+      "content_id": "a3485bed-d2c0-47ce-919f-a4d2064c94f7",
+      "claim_id": "C7",
+      "claim": "The nucleolus-nucleoplasm interface is maintained by ATP-dependent processes.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, we find that nucleolus-nucleoplasm interface is maintained by ATP-dependent processes and susceptible to changes in chromatin transcription and packing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding based on ATP depletion experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:37:27.585662Z"
+    },
+    {
+      "id": "512a4491-b4d6-417e-aafe-b0302ec2f974",
+      "content_id": "a3485bed-d2c0-47ce-919f-a4d2064c94f7",
+      "claim_id": "C8",
+      "claim": "The nucleolus-nucleoplasm interface is susceptible to changes in chromatin transcription and packing.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, we find that nucleolus-nucleoplasm interface is maintained by ATP-dependent processes and susceptible to changes in chromatin transcription and packing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding based on biochemical perturbation experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:37:27.585662Z"
+    },
+    {
+      "id": "28357b98-f443-4357-b730-6b4e982655ba",
+      "content_id": "a3485bed-d2c0-47ce-919f-a4d2064c94f7",
+      "claim_id": "C9",
+      "claim": "The nucleolus is the largest structure present in the cell nucleus of eukaryotic cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The nucleolus is the largest structure present in the cell nucleus of eukaryotic cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about nucleolar structure.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:37:27.585662Z"
+    },
+    {
+      "id": "df5a6093-0428-43c9-ac8c-3f30d709b07f",
+      "content_id": "a3485bed-d2c0-47ce-919f-a4d2064c94f7",
+      "claim_id": "C10",
+      "claim": "The nucleolus is a membraneless organelle.",
+      "claim_type": "EXPLICIT",
+      "source": "This membraneless organelle is a site of ribosomal biogenesis and plays a key role in cell cycle progression and stress response (Alberts et al., 2014; Montanaro et al., 2008; Boulon et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:37:27.585662Z"
+    },
+    {
+      "id": "85558266-828f-417a-8d2c-f7a4bb0c2d81",
+      "content_id": "a3485bed-d2c0-47ce-919f-a4d2064c94f7",
+      "claim_id": "C11",
+      "claim": "The nucleolus is a site of ribosomal biogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "This membraneless organelle is a site of ribosomal biogenesis and plays a key role in cell cycle progression and stress response (Alberts et al., 2014; Montanaro et al., 2008; Boulon et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:37:27.585662Z"
+    },
+    {
+      "id": "c3a615fc-999f-4fe8-be32-1ab3458b9261",
+      "content_id": "a3485bed-d2c0-47ce-919f-a4d2064c94f7",
+      "claim_id": "C12",
+      "claim": "The nucleolus plays a key role in cell cycle progression and stress response.",
+      "claim_type": "EXPLICIT",
+      "source": "This membraneless organelle is a site of ribosomal biogenesis and plays a key role in cell cycle progression and stress response (Alberts et al., 2014; Montanaro et al., 2008; Boulon et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:37:27.585662Z"
+    },
+    {
+      "id": "ea5f4469-ceed-45c5-a484-a01178b5250d",
+      "content_id": "a3485bed-d2c0-47ce-919f-a4d2064c94f7",
+      "claim_id": "C13",
+      "claim": "Nucleoli are composed of RNA and proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Nucleoli are composed of RNA and proteins and embedded in the chromatin solution inside the nucleus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about nucleolar composition.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:37:27.585662Z"
+    },
+    {
+      "id": "2aa1e1cc-3a13-44e2-a6dc-65ce4f946e88",
+      "content_id": "a3485bed-d2c0-47ce-919f-a4d2064c94f7",
+      "claim_id": "C14",
+      "claim": "Nucleoli are embedded in the chromatin solution inside the nucleus.",
+      "claim_type": "EXPLICIT",
+      "source": "Nucleoli are composed of RNA and proteins and embedded in the chromatin solution inside the nucleus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about nucleolar localization.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:37:27.585662Z"
+    },
+    {
+      "id": "0e1e7411-3bd5-4d98-b049-46739ecdf518",
+      "content_id": "a3485bed-d2c0-47ce-919f-a4d2064c94f7",
+      "claim_id": "C15",
+      "claim": "Nucleoli form at specific parts of genome called nucleolar organizer regions (NORs) containing rDNA.",
+      "claim_type": "EXPLICIT",
+      "source": "They form at specific parts of genome called nucleolar organizer regions (NORs) containing rDNA, which is transcribed inside the nucleolus (McClintock, 1934; Ritossa and Spiegelman, 1965; Wallace and Birnstiel, 1966).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:37:27.585662Z"
+    },
+    {
+      "id": "dce5c7f5-70b3-48ab-aa5d-1185ddfe00a5",
+      "content_id": "a3485bed-d2c0-47ce-919f-a4d2064c94f7",
+      "claim_id": "C16",
+      "claim": "rDNA is transcribed inside the nucleolus.",
+      "claim_type": "EXPLICIT",
+      "source": "They form at specific parts of genome called nucleolar organizer regions (NORs) containing rDNA, which is transcribed inside the nucleolus (McClintock, 1934; Ritossa and Spiegelman, 1965; Wallace and Birnstiel, 1966).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:37:27.585662Z"
+    },
+    {
+      "id": "a942abb5-3ba2-4a1a-9a5b-13e943a16cb6",
+      "content_id": "a3485bed-d2c0-47ce-919f-a4d2064c94f7",
+      "claim_id": "C17",
+      "claim": "At the beginning of the cell cycle a small nucleolus forms at each NOR.",
+      "claim_type": "EXPLICIT",
+      "source": "At the beginning of the cell cycle a small nucleolus forms at each NOR. These nucleoli later fuse into larger ones, while remaining connected to their NORs in somatic cells (Amenta, 1961; Sullivan et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:37:27.585662Z"
+    },
+    {
+      "id": "f573d904-df84-4709-8ed0-0084eac6cd26",
+      "content_id": "a3485bed-d2c0-47ce-919f-a4d2064c94f7",
+      "claim_id": "C18",
+      "claim": "Nucleoli later fuse into larger ones, while remaining connected to their NORs in somatic cells.",
+      "claim_type": "EXPLICIT",
+      "source": "At the beginning of the cell cycle a small nucleolus forms at each NOR. These nucleoli later fuse into larger ones, while remaining connected to their NORs in somatic cells (Amenta, 1961; Sullivan et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:37:27.585662Z"
+    },
+    {
+      "id": "398fee77-43ae-4acc-a508-64af35d4ba71",
+      "content_id": "a3485bed-d2c0-47ce-919f-a4d2064c94f7",
+      "claim_id": "C19",
+      "claim": "Nucleoli in X. laevis oocytes behave like liquid droplets in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "Pioneering studies in frogs found that nucleoli in X. laevis oocytes behave like liquid droplets in vivo, as well as when reconstituted in vitro, and suggested that nucleoli form through liquid-liquid phase separation of the nucleolar components in the nucleoplasm (Brangwynne et al., 2011; Berry et al., 2015; Feric et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is prior research findings supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:37:27.585662Z"
+    },
+    {
+      "id": "3d5fbe32-c5ea-46da-85eb-4bd1c90984da",
+      "content_id": "a3485bed-d2c0-47ce-919f-a4d2064c94f7",
+      "claim_id": "C20",
+      "claim": "Nucleoli in X. laevis oocytes behave like liquid droplets when reconstituted in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "Pioneering studies in frogs found that nucleoli in X. laevis oocytes behave like liquid droplets in vivo, as well as when reconstituted in vitro, and suggested that nucleoli form through liquid-liquid phase separation of the nucleolar components in the nucleoplasm (Brangwynne et al., 2011; Berry et al., 2015; Feric et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is prior research findings supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:37:27.585662Z"
+    },
+    {
+      "id": "1cb0a9f7-bdc5-415e-8c82-a6b9bac686c1",
+      "content_id": "a3485bed-d2c0-47ce-919f-a4d2064c94f7",
+      "claim_id": "C21",
+      "claim": "Nucleoli form through liquid-liquid phase separation of the nucleolar components in the nucleoplasm.",
+      "claim_type": "EXPLICIT",
+      "source": "Pioneering studies in frogs found that nucleoli in X. laevis oocytes behave like liquid droplets in vivo, as well as when reconstituted in vitro, and suggested that nucleoli form through liquid-liquid phase separation of the nucleolar components in the nucleoplasm (Brangwynne et al., 2011; Berry et al., 2015; Feric et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis from prior research supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:37:27.585662Z"
+    },
+    {
+      "id": "da0c5524-4829-4580-9544-0f47a892a924",
+      "content_id": "a3485bed-d2c0-47ce-919f-a4d2064c94f7",
+      "claim_id": "C22",
+      "claim": "The volume distribution of nucleoli in X. laevis oocytes was in agreement with a diffusion-limited aggregation process with a constant influx of particles.",
+      "claim_type": "EXPLICIT",
+      "source": "The volume distribution of such nucleoli was in agreement with a diffusion-limited aggregation process with a constant influx of particles (Brangwynne et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prior research finding supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:37:27.585662Z"
+    },
+    {
+      "id": "5a28774d-0d71-4512-b945-6cfa805db2e5",
+      "content_id": "a3485bed-d2c0-47ce-919f-a4d2064c94f7",
+      "claim_id": "C23",
+      "claim": "The size of nucleoli in C. elegans embryos was found to be dependent on the concentration of nucleolar components in the nucleoplasm.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the size of nucleoli in the worm C. elegans embryos was found to be dependent on the concentration of nucleolar components in the nucleoplasm which is consistent with the liquid-like nature of the nucleolus (Weber and Brangwynne, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prior research finding supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:37:27.585662Z"
+    },
+    {
+      "id": "7cdda693-1552-48d2-9858-72d57e534fdc",
+      "content_id": "a3485bed-d2c0-47ce-919f-a4d2064c94f7",
+      "claim_id": "C24",
+      "claim": "The nucleolar subcompartments (granular and dense fibrillar components) were suggested to form via liquid-liquid phase separation.",
+      "claim_type": "EXPLICIT",
+      "source": "The nucleolar subcompartments, that is the granular and the dense fibrillar components, were also suggested to form via liquid-liquid phase separation (Feric et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis from prior research supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:37:27.585662Z"
+    },
+    {
+      "id": "b6c16f20-3060-4b79-b6db-fd164f29a1dd",
+      "content_id": "a3485bed-d2c0-47ce-919f-a4d2064c94f7",
+      "claim_id": "C25",
+      "claim": "While the nucleolar assembly in D. melanogaster follows liquid-liquid phase separation, active protein recruitment is also involved.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent studies in the fly D. melanogaster suggest that while the nucleolar assembly follows liquid-liquid phase separation, active protein recruitment is also involved (Falahati and Wieschaus, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prior research finding supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:37:27.585662Z"
+    },
+    {
+      "id": "b9bf58cd-2ef9-462f-8a61-2e4d3492951e",
+      "content_id": "a3485bed-d2c0-47ce-919f-a4d2064c94f7",
+      "claim_id": "C26",
+      "claim": "Human nucleoli exhibit liquid-like behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently, we have shown that human nucleoli also exhibit liquid-like behavior (Caragine et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prior finding from the authors' previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:37:27.585662Z"
+    },
+    {
+      "id": "8fea9ef5-f27d-4942-9433-758219ec7abf",
+      "content_id": "a3485bed-d2c0-47ce-919f-a4d2064c94f7",
+      "claim_id": "C29",
+      "claim": "It is the nucleoplasm viscosity that sets the time scale for the nucleolar coalescence.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, it is the nucleoplasm viscosity that sets the time scale for the nucleolar coalescence providing resistance to the already very low surface tension that drives the process (Caragine et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prior finding from the authors' previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:37:27.585662Z"
+    },
+    {
+      "id": "bbe6a71d-27ab-47a4-868b-af49cbb216f6",
+      "content_id": "a3485bed-d2c0-47ce-919f-a4d2064c94f7",
+      "claim_id": "C33",
+      "claim": "Long coalescence times have been speculated not to interfere with the rDNA transcription inside the nucleoli.",
+      "claim_type": "EXPLICIT",
+      "source": "Such long coalescence times have been speculated not to interfere with the rDNA transcription inside the nucleoli (Caragine et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation from prior work.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:37:27.585662Z"
+    },
+    {
+      "id": "277b2c6b-586a-4bb3-868c-22cdf105ee43",
+      "content_id": "a3485bed-d2c0-47ce-919f-a4d2064c94f7",
+      "claim_id": "C34",
+      "claim": "Chromatin dynamics was shown to be active (ATP-dependent) and coherent in human cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, chromatin dynamics was shown to be active, that is ATP-dependent, and coherent, that is exhibiting correlated displacements, over 3\u20135 \u00b5m in human cells (Zidovska et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prior finding supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:37:27.585662Z"
+    },
+    {
+      "id": "e53a61fa-df0b-47f5-a6aa-e95928b972dd",
+      "content_id": "a3485bed-d2c0-47ce-919f-a4d2064c94f7",
+      "claim_id": "C35",
+      "claim": "Chromatin exhibits correlated displacements over 3\u20135 \u00b5m in human cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, chromatin dynamics was shown to be active, that is ATP-dependent, and coherent, that is exhibiting correlated displacements, over 3\u20135 \u00b5m in human cells (Zidovska et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prior finding supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:37:27.585662Z"
+    },
+    {
+      "id": "b07d41ea-3f93-46f6-b6aa-87d3bcff43ee",
+      "content_id": "a3485bed-d2c0-47ce-919f-a4d2064c94f7",
+      "claim_id": "C37",
+      "claim": "Chromatin localizes as a denser heterochromatin at the nucleolar surface.",
+      "claim_type": "EXPLICIT",
+      "source": "Chromatin is known to localize as a denser heterochromatin at the nucleolar surface (Padeken and Heun, 2014), yet the nature of physical interactions between the nucleolar surface and the chromatin solution remains to be revealed (N\u00e9meth and L\u00e4ngst, 2011; Bickmore and van Steensel, 2013; Towbin et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:37:27.585662Z"
+    },
+    {
+      "id": "e268f250-0cbd-4000-b9f3-49ec109576fc",
+      "content_id": "a3485bed-d2c0-47ce-919f-a4d2064c94f7",
+      "claim_id": "C38",
+      "claim": "Disruption and dysfunction of the nucleolus is implicated in a large number of human diseases, such as skeletal and neurodegenerative disorders, cardiovascular disease and cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "Disruption and dysfunction of the nucleolus is implicated in a large number of human diseases, such as skeletal and neurodegenerative disorders, cardiovascular disease and cancer (Hannan et al., 2013; N\u00fa\u00f1ez Villac\u00eds et al., 2018; Ruggero and Pandolfi, 2003; Derenzini et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:37:27.585662Z"
+    },
+    {
+      "id": "71091b6d-e8fb-427d-ada6-da2038571fcb",
+      "content_id": "a3485bed-d2c0-47ce-919f-a4d2064c94f7",
+      "claim_id": "C39",
+      "claim": "After mitosis, human nuclei initially contain 10 nucleoli.",
+      "claim_type": "EXPLICIT",
+      "source": "After mitosis, human nuclei initially contain 10 nucleoli, which later fuse to form fewer larger ones (Savino et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:37:27.585662Z"
+    },
+    {
+      "id": "5b92a8ab-1711-4a60-9257-a515c510794e",
+      "content_id": "a3485bed-d2c0-47ce-919f-a4d2064c94f7",
+      "claim_id": "C40",
+      "claim": "As the cell cycle progresses, the number of nucleoli per nucleus decreases, while the average nucleolar area in the nucleus increases.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that as the cell cycle progresses, the number of nucleoli per nucleus decreases, while the average nucleolar area in the nucleus increases (Figure 2E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the study's measurements shown in Figure 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:37:27.585662Z"
+    },
+    {
+      "id": "7e1d5998-9cd7-4695-976a-635c0e6e95e7",
+      "content_id": "a3485bed-d2c0-47ce-919f-a4d2064c94f7",
+      "claim_id": "C41",
+      "claim": "The fusion of nucleoli is not limited to the first two hours of the cell cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, this trend persists beyond 3 hr into the cell cycle suggesting that the fusion of nucleoli is not limited to the first two hours of the cell cycle as previously hypothesized (Savino et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the study's data that contradicts a prior hypothesis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:37:27.585662Z"
+    },
+    {
+      "id": "fcb9c90e-84a0-4ef9-88ee-310a7d9ae892",
+      "content_id": "a3485bed-d2c0-47ce-919f-a4d2064c94f7",
+      "claim_id": "C45",
+      "claim": "The human nucleolus contains three distinct subcompartments: fibrillar center (FC), dense fibrillar component (DFC) and granular component (GC).",
+      "claim_type": "EXPLICIT",
+      "source": "The human nucleolus behaves like liquid droplet (Caragine et al., 2018), yet the nucleolar fluid is complex, containing three distinct subcompartments; fibrillar center (FC), dense fibrillar component (DFC) and granular component (GC).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about nucleolar structure.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:37:27.585662Z"
+    },
+    {
+      "id": "58acc8b1-32a6-4d42-abb0-a8c51cd2d538",
+      "content_id": "a3485bed-d2c0-47ce-919f-a4d2064c94f7",
+      "claim_id": "C46",
+      "claim": "FC contains polymerase I.",
+      "claim_type": "EXPLICIT",
+      "source": "They all play a different role in ribosome biogenesis and vary in protein composition: While FC contains polymerase I, DFC and GC are enriched in fibrillarin (FBL) and nucleophosmin (NPM), respectively (Boisvert et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:37:27.585662Z"
+    },
+    {
+      "id": "58c14ba9-e7f9-4523-a7bb-4bf6c24e5f6d",
+      "content_id": "a3485bed-d2c0-47ce-919f-a4d2064c94f7",
+      "claim_id": "C47",
+      "claim": "DFC is enriched in fibrillarin (FBL).",
+      "claim_type": "EXPLICIT",
+      "source": "They all play a different role in ribosome biogenesis and vary in protein composition: While FC contains polymerase I, DFC and GC are enriched in fibrillarin (FBL) and nucleophosmin (NPM), respectively (Boisvert et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:37:27.585662Z"
+    },
+    {
+      "id": "f23d2a21-dca1-429d-83e5-de73b373d2fb",
+      "content_id": "a3485bed-d2c0-47ce-919f-a4d2064c94f7",
+      "claim_id": "C48",
+      "claim": "GC is enriched in nucleophosmin (NPM).",
+      "claim_type": "EXPLICIT",
+      "source": "They all play a different role in ribosome biogenesis and vary in protein composition: While FC contains polymerase I, DFC and GC are enriched in fibrillarin (FBL) and nucleophosmin (NPM), respectively (Boisvert et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:37:27.585662Z"
+    },
+    {
+      "id": "95efab28-ccd8-4e88-a1e8-1d29bdb2ed42",
+      "content_id": "a3485bed-d2c0-47ce-919f-a4d2064c94f7",
+      "claim_id": "C49",
+      "claim": "Nucleolar subcompartments show a hierarchical organization, with FCs nested inside DFCs, which are embedded in GC.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, they show a hierarchical organization, suggested to form via liquid-liquid phase separation (Feric et al., 2016), with FCs nested inside DFCs, which are embedded in GC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:37:27.585662Z"
+    },
+    {
+      "id": "b8a01aed-aa26-474b-a98f-6664d33d6c01",
+      "content_id": "a3485bed-d2c0-47ce-919f-a4d2064c94f7",
+      "claim_id": "C50",
+      "claim": "DFCs appear to be close to spherical.",
+      "claim_type": "EXPLICIT",
+      "source": "A visual inspection of our data reveals that DFCs appear to be close to spherical.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the study's imaging data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:37:27.585662Z"
+    },
+    {
+      "id": "46f15812-a307-436f-8005-0fac3e55973d",
+      "content_id": "a3485bed-d2c0-47ce-919f-a4d2064c94f7",
+      "claim_id": "C72",
+      "claim": "Upon ATP depletion nucleoli do not exhibit spherical, but instead irregular shapes.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that upon ATP depletion nucleoli do not exhibit spherical, but instead irregular shapes (Figure 6B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the study's experiments shown in Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:37:27.585662Z"
+    },
+    {
+      "id": "d0b402f4-a882-41e6-b0e1-f08914e86b34",
+      "content_id": "a3485bed-d2c0-47ce-919f-a4d2064c94f7",
+      "claim_id": "C90",
+      "claim": "The scale-free nature of the nucleolar volume distribution suggests that nucleoli of any size can coalesce.",
+      "claim_type": "EXPLICIT",
+      "source": "The scale-free nature of this distribution suggests that nucleoli of any size can coalesce, moreover, there is no preferred size that nucleoli need to reach before/after they coalesce.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the measured volume distribution.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:37:27.585662Z"
+    },
+    {
+      "id": "81ccf873-13b6-463d-abad-afcaf638678d",
+      "content_id": "a3485bed-d2c0-47ce-919f-a4d2064c94f7",
+      "claim_id": "C91",
+      "claim": "There is no preferred size that nucleoli need to reach before/after they coalesce.",
+      "claim_type": "EXPLICIT",
+      "source": "The scale-free nature of this distribution suggests that nucleoli of any size can coalesce, moreover, there is no preferred size that nucleoli need to reach before/after they coalesce.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the measured volume distribution.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:37:27.585662Z"
+    },
+    {
+      "id": "a52af65c-b8b6-49a5-9963-90d6430889ef",
+      "content_id": "a3485bed-d2c0-47ce-919f-a4d2064c94f7",
+      "claim_id": "C92",
+      "claim": "Nucleoli of different sizes follow the same coalescence kinetics.",
+      "claim_type": "EXPLICIT",
+      "source": "It also suggests, that nucleoli of different sizes follow the same coalescence kinetics (Caragine et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the scale-free volume distribution and prior work.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:37:27.585662Z"
+    },
+    {
+      "id": "1c183fc2-5f5f-4ba0-b272-67b8991a9f01",
+      "content_id": "a3485bed-d2c0-47ce-919f-a4d2064c94f7",
+      "claim_id": "C93",
+      "claim": "The nucleolar volume distribution remains unchanged during the cell cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the nucleolar volume distribution remains unchanged during the cell cycle, suggesting that the fusion of nucleoli is not limited to the first two hours of the cell cycle as previously hypothesized (Savino et al., 2001), but can occur at any time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the study's data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:37:27.585662Z"
+    },
+    {
+      "id": "1660a19a-25d4-43c4-849c-bb19d7dd0398",
+      "content_id": "a3485bed-d2c0-47ce-919f-a4d2064c94f7",
+      "claim_id": "C96",
+      "claim": "The nucleolar count is much lower in human cells (\u223c 100 times less than in frog oocyte).",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the nucleolar count is much lower in human cells (\u223c 100 times less than in frog oocyte), there is a dense actin network present in the frog oocyte nucleus (germinal vesicle), and human somatic nucleoli are connected to the chromatin fiber, thus, they cannot freely diffuse as it is in the case of nucleoli in the X. laevis oocyte (Gall et al., 2004; Brangwynne et al., 2011; Caragine et al., 2018; Berry et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison based on established knowledge and citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:37:27.585662Z"
+    },
+    {
+      "id": "e6e36f48-ae42-4a76-b0a3-b7f5c203ce4f",
+      "content_id": "a3485bed-d2c0-47ce-919f-a4d2064c94f7",
+      "claim_id": "C97",
+      "claim": "There is a dense actin network present in the frog oocyte nucleus (germinal vesicle).",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the nucleolar count is much lower in human cells (\u223c 100 times less than in frog oocyte), there is a dense actin network present in the frog oocyte nucleus (germinal vesicle), and human somatic nucleoli are connected to the chromatin fiber, thus, they cannot freely diffuse as it is in the case of nucleoli in the X. laevis oocyte (Gall et al., 2004; Brangwynne et al., 2011; Caragine et al., 2018; Berry et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:37:27.585662Z"
+    },
+    {
+      "id": "d4187f84-6b3c-4820-8ade-9ef8d4c1edc8",
+      "content_id": "a3485bed-d2c0-47ce-919f-a4d2064c94f7",
+      "claim_id": "C98",
+      "claim": "Human somatic nucleoli are connected to the chromatin fiber, thus, they cannot freely diffuse.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the nucleolar count is much lower in human cells (\u223c 100 times less than in frog oocyte), there is a dense actin network present in the frog oocyte nucleus (germinal vesicle), and human somatic nucleoli are connected to the chromatin fiber, thus, they cannot freely diffuse as it is in the case of nucleoli in the X. laevis oocyte (Gall et al., 2004; Brangwynne et al., 2011; Caragine et al., 2018; Berry et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:37:27.585662Z"
+    },
+    {
+      "id": "4228863b-a3d2-45b2-835f-81a5266cf95c",
+      "content_id": "a3485bed-d2c0-47ce-919f-a4d2064c94f7",
+      "claim_id": "C99",
+      "claim": "The nuclear diameter is ~ 1000 \u03bcm in frog oocytes and \u223c 10 \u00b5m in human cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Further differences between the two systems include a large difference in the nuclear size (diameter ~ 1000 \u03bcm in frog oocytes, \u223c 10 \u00b5m in human cells) and the nucleolar size with volumes of 10\u2013103 \u00b5m3 in frog oocytes and 10-2\u2013102 \u00b5m3 in human cells (Gall et al., 2004; Brangwynne et al., 2011; Caragine et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:37:27.585662Z"
+    },
+    {
+      "id": "3f3f1d0a-144b-4ed1-bac6-a4f0b653d0d3",
+      "content_id": "a3485bed-d2c0-47ce-919f-a4d2064c94f7",
+      "claim_id": "C100",
+      "claim": "Nucleolar volumes are 10\u201310^3 \u00b5m^3 in frog oocytes and 10^-2\u201310^2 \u00b5m^3 in human cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Further differences between the two systems include a large difference in the nuclear size (diameter ~ 1000 \u03bcm in frog oocytes, \u223c 10 \u00b5m in human cells) and the nucleolar size with volumes of 10\u2013103 \u00b5m3 in frog oocytes and 10-2\u2013102 \u00b5m3 in human cells (Gall et al., 2004; Brangwynne et al., 2011; Caragine et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:37:27.585662Z"
+    },
+    {
+      "id": "b3886505-84df-44b6-bf3e-1b00a0154811",
+      "content_id": "a3485bed-d2c0-47ce-919f-a4d2064c94f7",
+      "claim_id": "C101",
+      "claim": "One can predict if a pair of nucleoli is going to fuse by analyzing their motion.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, our data suggest that one can predict if a pair of nucleoli is going to fuse by analyzing their motion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the study's data analysis.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:37:27.585662Z"
+    },
+    {
+      "id": "6c1f92e6-bbb1-4c07-aa27-7eaccf170e94",
+      "content_id": "a3485bed-d2c0-47ce-919f-a4d2064c94f7",
+      "claim_id": "C102",
+      "claim": "Non-fusing nucleoli appear to move randomly through the nucleoplasm.",
+      "claim_type": "EXPLICIT",
+      "source": "While the non-fusing ones appear to move randomly through the nucleoplasm, nucleoli that will fuse in the near future, move slower than non-fusing ones and show a linear correlation in their velocities (Figure 5I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the study's data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:37:27.585662Z"
+    },
+    {
+      "id": "51e64927-ea4e-4a08-9a14-b3ab9e3a28db",
+      "content_id": "a3485bed-d2c0-47ce-919f-a4d2064c94f7",
+      "claim_id": "C103",
+      "claim": "Nucleoli that will fuse in the near future move slower than non-fusing ones and show a linear correlation in their velocities.",
+      "claim_type": "EXPLICIT",
+      "source": "While the non-fusing ones appear to move randomly through the nucleoplasm, nucleoli that will fuse in the near future, move slower than non-fusing ones and show a linear correlation in their velocities (Figure 5I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the study's data analysis shown in Figure 5I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:37:27.585662Z"
+    },
+    {
+      "id": "fce6540e-12c6-4be9-a6a9-af1e7f51325f",
+      "content_id": "a3485bed-d2c0-47ce-919f-a4d2064c94f7",
+      "claim_id": "C104",
+      "claim": "The velocities of the growth of the neck connecting two fusing nucleoli are intriguingly similar to the velocities measured for active chromatin motion.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, in our earlier work we found that the velocities of the growth of the neck connecting two fusing nucleoli (Figure 1B) are intriguingly similar to the velocities measured for active chromatin motion (Caragine et al., 2018; Zidovska et al., 2013).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a comparison of findings from prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:37:27.585662Z"
+    },
+    {
+      "id": "3879be71-a691-4837-bc81-3f9fbafb2a24",
+      "content_id": "a3485bed-d2c0-47ce-919f-a4d2064c94f7",
+      "claim_id": "C105",
+      "claim": "Active processes might be involved in bringing nucleoli together to undergo fusion.",
+      "claim_type": "EXPLICIT",
+      "source": "Since nucleoli move in an active fluid (chromatin solution), we speculate that active processes might be involved in bringing them together to undergo fusion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation based on the study's findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:37:27.585662Z"
+    },
+    {
+      "id": "fda88a52-f539-43a4-8b30-b79c67043e38",
+      "content_id": "a3485bed-d2c0-47ce-919f-a4d2064c94f7",
+      "claim_id": "C106",
+      "claim": "Dense fibrillar components (DFCs) behave as monodisperse solid-like colloidal particles (granules) suspended in a liquid phase of granular component (GC).",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, we find that dense fibrillar components (DFCs) behave as monodisperse solid-like colloidal particles (granules) suspended in a liquid phase of granular component (GC).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the study's data analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:37:27.585662Z"
+    },
+    {
+      "id": "5f339f5b-0df3-4deb-8262-8a0f3564bdfc",
+      "content_id": "a3485bed-d2c0-47ce-919f-a4d2064c94f7",
+      "claim_id": "C107",
+      "claim": "DFCs do not undergo aggregation, but remain of well-defined size and dimensions even upon nucleolar coalescence.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data shows that DFCs do not undergo aggregation, but remain of well-defined size and dimensions with a semi-major axis length of 210 \u00b1 50 nm and semi-minor axis length of 180 \u00b1 40 nm, as well as shape with aspect ratio of 1.22 \u00b1 0.17 even upon nucleolar coalescence, which is consistent with solid-like particles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the study's data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:37:27.585662Z"
+    },
+    {
+      "id": "0db0e3ee-6b16-4e13-b9d7-f3c0be03dee2",
+      "content_id": "a3485bed-d2c0-47ce-919f-a4d2064c94f7",
+      "claim_id": "C108",
+      "claim": "DFCs in frog oocytes were found to be polydisperse with diameter \u223c 2\u20135 \u00b5m.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the DFCs in frog oocytes were found to be polydisperse with diameter \u223c 2\u20135 \u00b5m, liquid-like with viscoelastic behavior (Brangwynne et al., 2011; Feric et al., 2016), and with their fusion being observed upon latrunculin A treatment (Feric et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prior finding supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:37:27.585662Z"
+    },
+    {
+      "id": "39da7664-bfef-43b7-a62b-4d82d22f53e4",
+      "content_id": "a3485bed-d2c0-47ce-919f-a4d2064c94f7",
+      "claim_id": "C109",
+      "claim": "DFCs in frog oocytes are liquid-like with viscoelastic behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the DFCs in frog oocytes were found to be polydisperse with diameter \u223c 2\u20135 \u00b5m, liquid-like with viscoelastic behavior (Brangwynne et al., 2011; Feric et al., 2016), and with their fusion being observed upon latrunculin A treatment (Feric et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prior finding supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:37:27.585662Z"
+    },
+    {
+      "id": "002aca69-8658-47ea-b45b-b40f877b28d2",
+      "content_id": "a3485bed-d2c0-47ce-919f-a4d2064c94f7",
+      "claim_id": "C110",
+      "claim": "Fusion of DFCs in frog oocytes was observed upon latrunculin A treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the DFCs in frog oocytes were found to be polydisperse with diameter \u223c 2\u20135 \u00b5m, liquid-like with viscoelastic behavior (Brangwynne et al., 2011; Feric et al., 2016), and with their fusion being observed upon latrunculin A treatment (Feric et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prior finding supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:37:27.585662Z"
+    },
+    {
+      "id": "162b7dd6-3f4c-438d-9c8b-117992d1336b",
+      "content_id": "a3485bed-d2c0-47ce-919f-a4d2064c94f7",
+      "claim_id": "C111",
+      "claim": "One frog oocyte DFC can be larger than the entire human nucleolus.",
+      "claim_type": "EXPLICIT",
+      "source": "It is also noteworthy that one frog oocyte DFC can be larger than the entire human nucleolus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison based on the study's measurements and prior knowledge.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:37:27.585662Z"
+    },
+    {
+      "id": "a8a895ca-292a-4084-ba4f-c80a594f8b03",
+      "content_id": "a3485bed-d2c0-47ce-919f-a4d2064c94f7",
+      "claim_id": "C112",
+      "claim": "Human nucleoli obey a volumetric ratio for GC and DFC content, with DFC volume fraction \u223c 0.1.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, our data reveal that human nucleoli obey a volumetric ratio for GC and DFC content, with DFC volume fraction \u223c 0.1, which is significantly lower than in frog oocytes (\u223c 0.25) (Feric et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the study's data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:37:27.585662Z"
+    },
+    {
+      "id": "f63be003-8548-47c6-8ccf-3fa4dd4ffb5d",
+      "content_id": "a3485bed-d2c0-47ce-919f-a4d2064c94f7",
+      "claim_id": "C113",
+      "claim": "The DFC volume fraction in human nucleoli (\u223c 0.1) is significantly lower than in frog oocytes (\u223c 0.25).",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, our data reveal that human nucleoli obey a volumetric ratio for GC and DFC content, with DFC volume fraction \u223c 0.1, which is significantly lower than in frog oocytes (\u223c 0.25) (Feric et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison of the study's findings with prior work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:37:27.585662Z"
+    },
+    {
+      "id": "22abb290-8ac5-42b3-8205-b979c36f5ee5",
+      "content_id": "a3485bed-d2c0-47ce-919f-a4d2064c94f7",
+      "claim_id": "C114",
+      "claim": "It is the rRNA-rich GC phase that provides the human nucleolus with its liquid-like properties.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests it is the rRNA-rich GC phase that provides the human nucleolus with its liquid-like properties.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the study's findings about DFC and GC properties.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:37:27.585662Z"
+    },
+    {
+      "id": "fbcfd888-05f3-4ab9-a4e9-75c854521700",
+      "content_id": "a3485bed-d2c0-47ce-919f-a4d2064c94f7",
+      "claim_id": "C115",
+      "claim": "Nucleoli are closely dependent on ATP-dependent processes.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data suggest that nucleoli are closely dependent on ATP-dependent processes, losing their spherical shape upon ATP-depletion by exhibiting increased surface roughness (local deformations).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the study's ATP depletion experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:37:27.585662Z"
+    },
+    {
+      "id": "5a0741c5-0915-4a01-a9cf-03f2aebc6cae",
+      "content_id": "a3485bed-d2c0-47ce-919f-a4d2064c94f7",
+      "claim_id": "C116",
+      "claim": "Local nucleolar surface deformations may be driven thermally or by active processes.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, local nucleolar surface deformations, which may be driven thermally or by active processes, are opposed by the surface tension.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about possible mechanisms based on physical principles.",
+      "evidence_type": "[\"KNOWLEDGE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:37:27.585662Z"
+    },
+    {
+      "id": "8260c80e-5fd9-4862-98ae-eaebbb5d6429",
+      "content_id": "a3485bed-d2c0-47ce-919f-a4d2064c94f7",
+      "claim_id": "C117",
+      "claim": "The larger the surface roughness, the lower the surface tension.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the larger the surface roughness, the lower its surface tension.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on physical principles.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:37:27.585662Z"
+    },
+    {
+      "id": "8da40b90-7973-4afa-abaf-e0c7831e67a8",
+      "content_id": "a3485bed-d2c0-47ce-919f-a4d2064c94f7",
+      "claim_id": "C119",
+      "claim": "The roughness (local deformations) of the nucleolus-nucleoplasm interface is highly sensitive to the transcriptional activity in the nucleus.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data show that the roughness (local deformations) of the nucleolus-nucleoplasm interface is highly sensitive to the transcriptional activity in the nucleus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the study's biochemical perturbation experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:37:27.585662Z"
+    },
+    {
+      "id": "cf7398f2-c9f1-4c5c-953b-01ba1bf2a308",
+      "content_id": "a3485bed-d2c0-47ce-919f-a4d2064c94f7",
+      "claim_id": "C120",
+      "claim": "The nucleolus-nucleoplasm interface is closely linked to the chromatin packing state as well as its transcriptional activity.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that the nucleolus-nucleoplasm interface is closely linked to the chromatin packing state as well as its transcriptional activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the study's biochemical perturbation experiments.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:37:27.585662Z"
+    },
+    {
+      "id": "2f7feb06-07d2-4781-bd6f-5e269c4b648a",
+      "content_id": "a3485bed-d2c0-47ce-919f-a4d2064c94f7",
+      "claim_id": "C121",
+      "claim": "The perinucleolar chromatin is mostly heterochromatic, that is largely transcriptionally inactive.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, the perinucleolar chromatin is mostly heterochromatic, that is largely transcriptionally inactive, yet, its peculiar packing at the nucleolar surface might require active remodeling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about chromatin organization.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:37:27.585662Z"
+    },
+    {
+      "id": "542153ed-9813-49c2-981a-c5e87a6f01f7",
+      "content_id": "a3485bed-d2c0-47ce-919f-a4d2064c94f7",
+      "claim_id": "C122",
+      "claim": "The peculiar packing of perinucleolar chromatin at the nucleolar surface might require active remodeling.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, the perinucleolar chromatin is mostly heterochromatic, that is largely transcriptionally inactive, yet, its peculiar packing at the nucleolar surface might require active remodeling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation based on the study's findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:37:27.585662Z"
+    },
+    {
+      "id": "be262d8c-c1bc-4fa8-96b3-e0618e30ced3",
+      "content_id": "a3485bed-d2c0-47ce-919f-a4d2064c94f7",
+      "claim_id": "C124",
+      "claim": "Cytoskeletal forces exerted on the nucleus from the cytoplasm do not contribute to the local roughness of the nucleolus-nucleoplasm interface.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, we find that the cytoskeletal forces exerted on the nucleus from the cytoplasm, do not contribute to the local roughness of the nucleolus-nucleoplasm interface, nor do they impact the nucleolar size and shape.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the study's biochemical perturbation experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:37:27.585662Z"
+    },
+    {
+      "id": "4ef6f0b3-67a0-4614-8118-fd1cb9914499",
+      "content_id": "a3485bed-d2c0-47ce-919f-a4d2064c94f7",
+      "claim_id": "C125",
+      "claim": "Cytoskeletal forces exerted on the nucleus from the cytoplasm do not impact the nucleolar size and shape.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, we find that the cytoskeletal forces exerted on the nucleus from the cytoplasm, do not contribute to the local roughness of the nucleolus-nucleoplasm interface, nor do they impact the nucleolar size and shape.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the study's biochemical perturbation experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:37:27.585662Z"
+    },
+    {
+      "id": "db404ac1-0ebc-4824-af14-33e22a941ef5",
+      "content_id": "a3485bed-d2c0-47ce-919f-a4d2064c94f7",
+      "claim_id": "C126",
+      "claim": "In frog oocytes the disruption of the dense nuclear actin network by latrunculin A facilitates nucleolar fusion, leading to an increase in the nucleolar size.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, in frog oocytes the disruption of the dense nuclear actin network by latrunculin A facilitates nucleolar fusion, leading to an increase in the nucleolar size (Feric et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prior finding supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:37:27.585662Z"
+    },
+    {
+      "id": "b36322f3-eff3-446c-99f2-612fd4568f42",
+      "content_id": "a3485bed-d2c0-47ce-919f-a4d2064c94f7",
+      "claim_id": "C127",
+      "claim": "There is no filamentous actin network present in human cell nucleus.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, there is no filamentous actin network present in human cell nucleus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about human cell nuclear structure.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:37:27.585662Z"
+    },
+    {
+      "id": "6ce69f37-4a65-4c5f-8ac2-7c0392df0124",
+      "content_id": "a3485bed-d2c0-47ce-919f-a4d2064c94f7",
+      "claim_id": "C128",
+      "claim": "Nucleoli are only moderately sensitive to the protein synthesis inhibition at time scales from 30 min to 6.5 hr.",
+      "claim_type": "EXPLICIT",
+      "source": "Lastly, our findings reveal that nucleoli are only moderately sensitive to the protein synthesis inhibition at time scales from 30 min to 6.5 hr.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the study's biochemical perturbation experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:37:27.585662Z"
+    },
+    {
+      "id": "8252a03e-7d39-43ad-b634-e72c177c031d",
+      "content_id": "a3485bed-d2c0-47ce-919f-a4d2064c94f7",
+      "claim_id": "C130",
+      "claim": "Nucleoplasm plays a major role in the life of nucleoli.",
+      "claim_type": "EXPLICIT",
+      "source": "In conclusion, nucleoplasm plays a major role in the life of nucleoli, the archetype of the liquid condensate formed by liquid-liquid phase separation in biology.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from the study's findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:37:27.585662Z"
+    },
+    {
+      "id": "aff2905d-beb9-4b1f-b40b-135943d53dbc",
+      "content_id": "a3485bed-d2c0-47ce-919f-a4d2064c94f7",
+      "claim_id": "C131",
+      "claim": "Chromatin fiber serves as the template for nucleolar formation.",
+      "claim_type": "EXPLICIT",
+      "source": "Chromatin fiber serves as the template for nucleolar formation and later forms a boundary at the nucleolus-nucleoplasm interface (McClintock, 1934; Ritossa and Spiegelman, 1965; Wallace and Birnstiel, 1966; Bickmore and van Steensel, 2013; N\u00e9meth and L\u00e4ngst, 2011; Towbin et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:37:27.585662Z"
+    },
+    {
+      "id": "ca59eaad-e022-4581-b0d6-ccdb09808c4b",
+      "content_id": "a3485bed-d2c0-47ce-919f-a4d2064c94f7",
+      "claim_id": "C132",
+      "claim": "Chromatin fiber forms a boundary at the nucleolus-nucleoplasm interface.",
+      "claim_type": "EXPLICIT",
+      "source": "Chromatin fiber serves as the template for nucleolar formation and later forms a boundary at the nucleolus-nucleoplasm interface (McClintock, 1934; Ritossa and Spiegelman, 1965; Wallace and Birnstiel, 1966; Bickmore and van Steensel, 2013; N\u00e9meth and L\u00e4ngst, 2011; Towbin et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:37:27.585662Z"
+    },
+    {
+      "id": "fd59b34d-bf0f-44c4-8b0a-98befa1c8d45",
+      "content_id": "a3485bed-d2c0-47ce-919f-a4d2064c94f7",
+      "claim_id": "C133",
+      "claim": "The DNA sequences at which nucleoli form (NORs) and the genes located at the nucleolar interface are by no means random.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, the DNA sequences at which nucleoli form (NORs) and the genes located at the nucleolar interface are by no means random (N\u00e9meth and L\u00e4ngst, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:37:27.585662Z"
+    },
+    {
+      "id": "d7f27c2c-baac-4fd3-9405-8a5b6ef3277b",
+      "content_id": "a3485bed-d2c0-47ce-919f-a4d2064c94f7",
+      "claim_id": "C134",
+      "claim": "The non-random nature of NORs and genes at the nucleolar interface likely impacts the 3D chromosomal organization in the nucleolar vicinity.",
+      "claim_type": "EXPLICIT",
+      "source": "This likely impacts the 3D chromosomal organization in the nucleolar vicinity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on established knowledge.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:37:27.585662Z"
+    },
+    {
+      "id": "acb8d372-13ac-448f-944d-09402c122e21",
+      "content_id": "a3485bed-d2c0-47ce-919f-a4d2064c94f7",
+      "claim_id": "C135",
+      "claim": "Active positional fluctuations (or rearrangements) of chromatin could bring nucleoli together, facilitating fusion.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, considering chromatin's active nature (Zidovska et al., 2013) and the fact that nucleoli are tethered to it during their lifetime, we speculate that active positional fluctuations (or rearrangements) of chromatin could bring nucleoli together, facilitating fusion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation based on the study's findings and prior work.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:37:27.585662Z"
+    },
+    {
+      "id": "7a09b073-6e6b-423a-865b-2d6fa980bbe0",
+      "content_id": "a3485bed-d2c0-47ce-919f-a4d2064c94f7",
+      "claim_id": "C136",
+      "claim": "The presence of particles with an actively driven translational motion leads to phase separation of active and passive components in colloidal mixtures.",
+      "claim_type": "EXPLICIT",
+      "source": "It is also supported by previous studies of colloidal mixtures, where the presence of particles with an actively driven translational motion leads to phase separation of active and passive (i.e., thermally driven) components (Stenhammar et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prior finding supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:37:27.585662Z"
+    },
+    {
+      "id": "267baefe-71e8-4820-a870-3acc1bdafe5b",
+      "content_id": "a3485bed-d2c0-47ce-919f-a4d2064c94f7",
+      "claim_id": "C137",
+      "claim": "Similar behavior has been found for polymer mixtures containing active and passive polymers.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar behavior has been found for polymer mixtures containing active and passive polymers (Smrek and Kremer, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prior finding supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:37:27.585662Z"
+    },
+    {
+      "id": "ce8f6798-df37-4c4d-b902-257809026c55",
+      "content_id": "a3485bed-d2c0-47ce-919f-a4d2064c94f7",
+      "claim_id": "C138",
+      "claim": "With respect to its translational mobility, the nucleolus could be abstracted as a passive droplet (or colloid) immersed in an active polymer (chromatin).",
+      "claim_type": "EXPLICIT",
+      "source": "We speculate that, with respect to its translational mobility, the nucleolus could be abstracted as a passive droplet (or colloid) immersed in an active polymer (chromatin).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation based on the study's findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:37:27.585662Z"
+    },
+    {
+      "id": "d3157821-4c82-4b0b-babc-40eb384034e4",
+      "content_id": "a3485bed-d2c0-47ce-919f-a4d2064c94f7",
+      "claim_id": "C139",
+      "claim": "The active positional fluctuations of the polymer could cause demixing of the passive phase and thus effectively bring the passive colloids (nucleoli) together.",
+      "claim_type": "EXPLICIT",
+      "source": "In such case, the active positional fluctuations of the polymer could cause demixing of the passive phase and thus effectively bring the passive colloids (nucleoli) together.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation based on the study's findings and prior work on active matter.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:37:27.585662Z"
+    },
+    {
+      "id": "fa0aba96-2cf0-4699-8d14-58669614c912",
+      "content_id": "a3485bed-d2c0-47ce-919f-a4d2064c94f7",
+      "claim_id": "C140",
+      "claim": "The active entities phase separate from the passive entities, enabling nucleolar coalescence.",
+      "claim_type": "EXPLICIT",
+      "source": "That is, the active entities phase separate from the passive entities, enabling nucleolar coalescence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation based on the study's findings and prior work on active matter.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:37:27.585662Z"
+    },
+    {
+      "id": "73b5ea16-f20f-480f-afcd-d7589502d256",
+      "content_id": "a3485bed-d2c0-47ce-919f-a4d2064c94f7",
+      "claim_id": "C141",
+      "claim": "Such phase separation is distinct from the liquid-liquid phase separation by which the nucleoli are thought to form at the beginning of the cell cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "Such phase separation is distinct from the liquid-liquid phase separation by which the nucleoli are thought to form at the beginning of the cell cycle (Brangwynne et al., 2011; Berry et al., 2015; Feric et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a distinction made based on the study's findings and prior work.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:37:27.585662Z"
+    },
+    {
+      "id": "78df84a2-5c86-4899-b071-ed55aecf408f",
+      "content_id": "a3485bed-d2c0-47ce-919f-a4d2064c94f7",
+      "claim_id": "C142",
+      "claim": "Mutations in nucleolar proteins are associated with diseases such as skeletal and neurodegenerative disorders, cardiovascular disease and cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, mutations in nucleolar proteins, which interact with RNA polymerase I, regulate rRNA transcription or participate in rRNA processing, are associated with cell cycle arrest and improper nucleolar assembly. This can lead to diseases such as skeletal and neurodegenerative disorders, cardiovascular disease and cancer (Hannan et al., 2013; N\u00fa\u00f1ez Villac\u00eds et al., 2018; Ruggero and Pandolfi, 2003; Derenzini et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:37:27.585662Z"
+    },
+    {
+      "id": "2d005d22-2ad0-4355-9847-d6a3b0174ed6",
+      "content_id": "a3485bed-d2c0-47ce-919f-a4d2064c94f7",
+      "claim_id": "C143",
+      "claim": "In many diseases such as cancer, Alzheimer's and Parkinson's disease, but also in aging, human nucleoli change their shape and size.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, in many diseases such as cancer, Alzheimer's and Parkinson's disease, but also in aging, human nucleoli change their shape and size (Hannan et al., 2013; Tsai and Pederson, 2014; N\u00fa\u00f1ez Villac\u00eds et al., 2018; Tiku and Antebi, 2018), making the nucleolus a potential valuable diagnostic marker.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:37:27.585662Z"
+    },
+    {
+      "id": "03a32d35-4eaa-4f81-bddb-78783785c7a9",
+      "content_id": "a3485bed-d2c0-47ce-919f-a4d2064c94f7",
+      "claim_id": "C144",
+      "claim": "The nucleolus is a potential valuable diagnostic marker.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, in many diseases such as cancer, Alzheimer's and Parkinson's disease, but also in aging, human nucleoli change their shape and size (Hannan et al., 2013; Tsai and Pederson, 2014; N\u00fa\u00f1ez Villac\u00eds et al., 2018; Tiku and Antebi, 2018), making the nucleolus a potential valuable diagnostic marker.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on established knowledge.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:37:27.585662Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "5d40a429-b4f2-40ce-8eac-0ec48fe917cd",
+      "content_id": "a3485bed-d2c0-47ce-919f-a4d2064c94f7",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The nucleolar volume distribution follows a power law p(V)\u223cV^-1 throughout the cell cycle, which is unaccounted for by current theories. This scale-free distribution suggests nucleoli of any size can coalesce without a preferred size threshold, and the distribution remains unchanged during cell cycle progression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5 and C93 provide direct experimental measurements showing the V^-1 distribution persists throughout the cell cycle (Figure 2F). Claims C90-C92 provide reasonable interpretations of this finding. The power law fit has R\u00b2>0.98 with confidence intervals provided, and measurements span multiple synchronized time points, providing strong statistical support.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:37:27.585662Z"
+    },
+    {
+      "id": "364d8318-dc33-4db8-8bec-9f35a716f87e",
+      "content_id": "a3485bed-d2c0-47ce-919f-a4d2064c94f7",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Nucleolar pairs exhibit two distinct types of dynamics: non-fusing nucleoli move randomly with uncorrelated velocities, while nucleoli approaching fusion move slower (~30% reduction) and show strong linear correlation in their velocities (\u03c1=0.88), enabling prediction of fusion events.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C102-C103 are directly supported by quantitative data in Figure 5 showing velocity distributions, correlation analysis, and statistical significance (p=4\u00d710^-4). The linear fit (v_max = 1.74v_min) and Pearson correlation coefficient provide strong evidence. Claim C101 is a reasonable inference from this data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:37:27.585662Z"
+    },
+    {
+      "id": "9575e62c-83aa-4f22-8ec5-d5ff42c8d226",
+      "content_id": "a3485bed-d2c0-47ce-919f-a4d2064c94f7",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "As the cell cycle progresses, nucleolar number decreases while average nucleolar area increases, with this trend persisting beyond 3 hours, contradicting the previous hypothesis that nucleolar fusion is limited to the first two hours of the cell cycle.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C40 is directly supported by measurements shown in Figure 2E across multiple synchronized time points. Claim C41 provides a valid inference that contradicts prior work (Savino et al., 2001), supported by the persistence of the trend beyond 3 hours. The measurements include adequate sample sizes (>40 cells per time point).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:37:27.585662Z"
+    },
+    {
+      "id": "ff971e70-50cb-4981-9cab-4032dcfdf2d0",
+      "content_id": "a3485bed-d2c0-47ce-919f-a4d2064c94f7",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Dense fibrillar components (DFCs) behave as monodisperse solid-like colloidal particles with well-defined dimensions (semi-major axis 210\u00b150 nm, semi-minor axis 180\u00b140 nm, aspect ratio 1.22\u00b10.17) that do not aggregate during nucleolar coalescence. DFCs comprise ~10% of nucleolar volume, significantly lower than in frog oocytes (~25%), suggesting the rRNA-rich GC phase provides liquid-like properties.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50, C107, and C112 are supported by quantitative measurements from 1035 DFCs across 114 nucleoli (Figure 3). The monodisperse nature is confirmed by sharp peak in volume distribution (Figure 3\u2014figure supplement 1C). The linear relationship between nucleolar area and DFC number (Figure 3C) supports non-aggregation. Claim C114 is a reasonable inference from the comparative data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:37:27.585662Z"
+    },
+    {
+      "id": "1893e309-6a94-4d69-9135-9cf8dbc55ac4",
+      "content_id": "a3485bed-d2c0-47ce-919f-a4d2064c94f7",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The nucleolus-nucleoplasm interface is maintained by ATP-dependent processes. Upon ATP depletion, nucleoli lose their spherical shape and exhibit irregular morphology with increased surface roughness, indicating reduced surface tension.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C72 and C115 are directly supported by experimental observations in Figure 6B and quantitative measurements of surface roughness parameters (f_neg increased ~15%, N_neg increased ~24%, Table 1). Claim C117 provides a physically sound interpretation linking roughness to surface tension. The ATP depletion experiments include appropriate controls and adequate sample sizes (345 nucleoli).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:37:27.585662Z"
+    },
+    {
+      "id": "8f682ad0-a5fe-4cd4-bbea-4c83f748d667",
+      "content_id": "a3485bed-d2c0-47ce-919f-a4d2064c94f7",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The nucleolus-nucleoplasm interface is highly sensitive to chromatin transcription and packing state. Transcription inhibitors (\u03b1-amanitin, flavopiridol) increase nucleolar surface roughness by 40-50%, while chromatin decondensation (trichostatin A) decreases roughness by 20-25%.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C119 is directly supported by quantitative measurements in Figure 7B and Table 1, showing statistically significant changes in f_neg and N_neg with p-values <0.05. The opposing effects of transcription inhibition versus chromatin decondensation provide internal consistency. Claim C120 is a reasonable inference from these findings. Sample sizes are adequate (>260 nucleoli per condition).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:37:27.585662Z"
+    },
+    {
+      "id": "7b000737-a93f-40d4-a12b-b5035f877a2f",
+      "content_id": "a3485bed-d2c0-47ce-919f-a4d2064c94f7",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Cytoskeletal forces exerted on the nucleus from the cytoplasm do not contribute to nucleolar surface roughness or impact nucleolar size and shape, as demonstrated by perturbations with blebbistatin, latrunculin A, and nocodazole.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims are supported by measurements in Figure 7B and Table 1 showing no significant changes in surface roughness parameters (f_neg, N_neg) for blebbistatin and nocodazole (p>0.4). The latrunculin A effect on A_N/A_Nuc is explained by nuclear rounding rather than nucleolar changes. Sample sizes are adequate (>300 nucleoli per condition).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:37:27.585662Z"
+    },
+    {
+      "id": "b60f60fc-4706-40f2-b00a-bad9a263ee8f",
+      "content_id": "a3485bed-d2c0-47ce-919f-a4d2064c94f7",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Nucleoli are only moderately sensitive to protein synthesis inhibition at timescales from 30 minutes to 6.5 hours, showing slight increases in surface roughness (~15-21%) but no changes in size.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim is supported by measurements in Figure 7B and Table 1 showing modest increases in f_neg and N_neg at both time points, with no significant change in A_N/A_Nuc. The characterization as 'moderate' is appropriate given the smaller magnitude compared to transcription perturbations. Sample sizes are adequate (>290 nucleoli per condition).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:37:27.585662Z"
+    },
+    {
+      "id": "4fa08e80-bfbf-4b93-b1de-a8730a3f9dc3",
+      "content_id": "a3485bed-d2c0-47ce-919f-a4d2064c94f7",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The authors speculate that active chromatin fluctuations might bring nucleoli together to facilitate fusion, analogous to phase separation in active-passive colloidal mixtures, where the nucleolus acts as a passive droplet in an active chromatin polymer.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "These claims (C105, C135, C138-C140) are explicitly speculative and not directly tested. While the speculation is informed by the observed correlated motion of fusing nucleoli (C103) and prior work on active matter (C136-C137), no experiments directly test the proposed mechanism. The hypothesis is plausible but requires future experimental validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:37:27.585662Z"
+    },
+    {
+      "id": "001b6353-311f-4158-aae1-da6bd2cf7498",
+      "content_id": "a3485bed-d2c0-47ce-919f-a4d2064c94f7",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Background knowledge and prior work establishing nucleolar structure, function, LLPS behavior, and disease relevance, including comparisons between human cells and other model organisms (X. laevis, C. elegans, D. melanogaster).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims represent established knowledge and prior findings that are appropriately cited and provide necessary context for the current study. They are not novel results of this work but are accurately reported background information.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:37:27.585662Z"
+    },
+    {
+      "id": "e2490967-cd57-4bfd-b6cf-446a2ca6219b",
+      "content_id": "a3485bed-d2c0-47ce-919f-a4d2064c94f7",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Interpretive claims about mechanisms and implications, including that nucleoplasm plays a major role in nucleolar dynamics, that perinucleolar chromatin packing may require active remodeling, and that the nucleolus could serve as a diagnostic marker.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "These claims represent interpretations and implications that extend beyond the direct experimental evidence. While they are reasonable inferences from the data, they require additional validation. For example, C144 (nucleolus as diagnostic marker) is based on correlative disease associations rather than direct demonstration of diagnostic utility.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:37:27.585662Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "096aeb17-6611-4b92-91b3-6ef354d182a4",
+      "result_id": "5d40a429-b4f2-40ce-8eac-0ec48fe917cd"
+    },
+    {
+      "claim_id": "4deb7284-2dcf-4a57-8935-15794f05f18c",
+      "result_id": "5d40a429-b4f2-40ce-8eac-0ec48fe917cd"
+    },
+    {
+      "claim_id": "d0b402f4-a882-41e6-b0e1-f08914e86b34",
+      "result_id": "5d40a429-b4f2-40ce-8eac-0ec48fe917cd"
+    },
+    {
+      "claim_id": "81ccf873-13b6-463d-abad-afcaf638678d",
+      "result_id": "5d40a429-b4f2-40ce-8eac-0ec48fe917cd"
+    },
+    {
+      "claim_id": "a52af65c-b8b6-49a5-9963-90d6430889ef",
+      "result_id": "5d40a429-b4f2-40ce-8eac-0ec48fe917cd"
+    },
+    {
+      "claim_id": "1c183fc2-5f5f-4ba0-b272-67b8991a9f01",
+      "result_id": "5d40a429-b4f2-40ce-8eac-0ec48fe917cd"
+    },
+    {
+      "claim_id": "ef1dd365-1d3a-4820-b121-8748e887643d",
+      "result_id": "364d8318-dc33-4db8-8bec-9f35a716f87e"
+    },
+    {
+      "claim_id": "b3886505-84df-44b6-bf3e-1b00a0154811",
+      "result_id": "364d8318-dc33-4db8-8bec-9f35a716f87e"
+    },
+    {
+      "claim_id": "6c1f92e6-bbb1-4c07-aa27-7eaccf170e94",
+      "result_id": "364d8318-dc33-4db8-8bec-9f35a716f87e"
+    },
+    {
+      "claim_id": "51e64927-ea4e-4a08-9a14-b3ab9e3a28db",
+      "result_id": "364d8318-dc33-4db8-8bec-9f35a716f87e"
+    },
+    {
+      "claim_id": "5b92a8ab-1711-4a60-9257-a515c510794e",
+      "result_id": "9575e62c-83aa-4f22-8ec5-d5ff42c8d226"
+    },
+    {
+      "claim_id": "7e1d5998-9cd7-4695-976a-635c0e6e95e7",
+      "result_id": "9575e62c-83aa-4f22-8ec5-d5ff42c8d226"
+    },
+    {
+      "claim_id": "fda88a52-f539-43a4-8b30-b79c67043e38",
+      "result_id": "ff971e70-50cb-4981-9cab-4032dcfdf2d0"
+    },
+    {
+      "claim_id": "5f339f5b-0df3-4deb-8262-8a0f3564bdfc",
+      "result_id": "ff971e70-50cb-4981-9cab-4032dcfdf2d0"
+    },
+    {
+      "claim_id": "b8a01aed-aa26-474b-a98f-6664d33d6c01",
+      "result_id": "ff971e70-50cb-4981-9cab-4032dcfdf2d0"
+    },
+    {
+      "claim_id": "a8a895ca-292a-4084-ba4f-c80a594f8b03",
+      "result_id": "ff971e70-50cb-4981-9cab-4032dcfdf2d0"
+    },
+    {
+      "claim_id": "f63be003-8548-47c6-8ccf-3fa4dd4ffb5d",
+      "result_id": "ff971e70-50cb-4981-9cab-4032dcfdf2d0"
+    },
+    {
+      "claim_id": "22abb290-8ac5-42b3-8205-b979c36f5ee5",
+      "result_id": "ff971e70-50cb-4981-9cab-4032dcfdf2d0"
+    },
+    {
+      "claim_id": "8d779e34-fefb-4bfc-99f6-925560feca62",
+      "result_id": "1893e309-6a94-4d69-9135-9cf8dbc55ac4"
+    },
+    {
+      "claim_id": "46f15812-a307-436f-8005-0fac3e55973d",
+      "result_id": "1893e309-6a94-4d69-9135-9cf8dbc55ac4"
+    },
+    {
+      "claim_id": "fbcfd888-05f3-4ab9-a4e9-75c854521700",
+      "result_id": "1893e309-6a94-4d69-9135-9cf8dbc55ac4"
+    },
+    {
+      "claim_id": "8260c80e-5fd9-4862-98ae-eaebbb5d6429",
+      "result_id": "1893e309-6a94-4d69-9135-9cf8dbc55ac4"
+    },
+    {
+      "claim_id": "512a4491-b4d6-417e-aafe-b0302ec2f974",
+      "result_id": "8f682ad0-a5fe-4cd4-bbea-4c83f748d667"
+    },
+    {
+      "claim_id": "8da40b90-7973-4afa-abaf-e0c7831e67a8",
+      "result_id": "8f682ad0-a5fe-4cd4-bbea-4c83f748d667"
+    },
+    {
+      "claim_id": "cf7398f2-c9f1-4c5c-953b-01ba1bf2a308",
+      "result_id": "8f682ad0-a5fe-4cd4-bbea-4c83f748d667"
+    },
+    {
+      "claim_id": "be262d8c-c1bc-4fa8-96b3-e0618e30ced3",
+      "result_id": "7b000737-a93f-40d4-a12b-b5035f877a2f"
+    },
+    {
+      "claim_id": "4ef6f0b3-67a0-4614-8118-fd1cb9914499",
+      "result_id": "7b000737-a93f-40d4-a12b-b5035f877a2f"
+    },
+    {
+      "claim_id": "6ce69f37-4a65-4c5f-8ac2-7c0392df0124",
+      "result_id": "b60f60fc-4706-40f2-b00a-bad9a263ee8f"
+    },
+    {
+      "claim_id": "3879be71-a691-4837-bc81-3f9fbafb2a24",
+      "result_id": "4fa08e80-bfbf-4b93-b1de-a8730a3f9dc3"
+    },
+    {
+      "claim_id": "acb8d372-13ac-448f-944d-09402c122e21",
+      "result_id": "4fa08e80-bfbf-4b93-b1de-a8730a3f9dc3"
+    },
+    {
+      "claim_id": "ce8f6798-df37-4c4d-b902-257809026c55",
+      "result_id": "4fa08e80-bfbf-4b93-b1de-a8730a3f9dc3"
+    },
+    {
+      "claim_id": "d3157821-4c82-4b0b-babc-40eb384034e4",
+      "result_id": "4fa08e80-bfbf-4b93-b1de-a8730a3f9dc3"
+    },
+    {
+      "claim_id": "fa0aba96-2cf0-4699-8d14-58669614c912",
+      "result_id": "4fa08e80-bfbf-4b93-b1de-a8730a3f9dc3"
+    },
+    {
+      "claim_id": "c8d399c4-c8cf-4e08-9110-5df90085e586",
+      "result_id": "001b6353-311f-4158-aae1-da6bd2cf7498"
+    },
+    {
+      "claim_id": "8333022c-770e-4ce8-955e-0468c473c5cc",
+      "result_id": "001b6353-311f-4158-aae1-da6bd2cf7498"
+    },
+    {
+      "claim_id": "3ab45860-d997-4245-939f-0df882c4f2bf",
+      "result_id": "001b6353-311f-4158-aae1-da6bd2cf7498"
+    },
+    {
+      "claim_id": "28357b98-f443-4357-b730-6b4e982655ba",
+      "result_id": "001b6353-311f-4158-aae1-da6bd2cf7498"
+    },
+    {
+      "claim_id": "df5a6093-0428-43c9-ac8c-3f30d709b07f",
+      "result_id": "001b6353-311f-4158-aae1-da6bd2cf7498"
+    },
+    {
+      "claim_id": "85558266-828f-417a-8d2c-f7a4bb0c2d81",
+      "result_id": "001b6353-311f-4158-aae1-da6bd2cf7498"
+    },
+    {
+      "claim_id": "c3a615fc-999f-4fe8-be32-1ab3458b9261",
+      "result_id": "001b6353-311f-4158-aae1-da6bd2cf7498"
+    },
+    {
+      "claim_id": "ea5f4469-ceed-45c5-a484-a01178b5250d",
+      "result_id": "001b6353-311f-4158-aae1-da6bd2cf7498"
+    },
+    {
+      "claim_id": "2aa1e1cc-3a13-44e2-a6dc-65ce4f946e88",
+      "result_id": "001b6353-311f-4158-aae1-da6bd2cf7498"
+    },
+    {
+      "claim_id": "0e1e7411-3bd5-4d98-b049-46739ecdf518",
+      "result_id": "001b6353-311f-4158-aae1-da6bd2cf7498"
+    },
+    {
+      "claim_id": "dce5c7f5-70b3-48ab-aa5d-1185ddfe00a5",
+      "result_id": "001b6353-311f-4158-aae1-da6bd2cf7498"
+    },
+    {
+      "claim_id": "a942abb5-3ba2-4a1a-9a5b-13e943a16cb6",
+      "result_id": "001b6353-311f-4158-aae1-da6bd2cf7498"
+    },
+    {
+      "claim_id": "f573d904-df84-4709-8ed0-0084eac6cd26",
+      "result_id": "001b6353-311f-4158-aae1-da6bd2cf7498"
+    },
+    {
+      "claim_id": "398fee77-43ae-4acc-a508-64af35d4ba71",
+      "result_id": "001b6353-311f-4158-aae1-da6bd2cf7498"
+    },
+    {
+      "claim_id": "3d5fbe32-c5ea-46da-85eb-4bd1c90984da",
+      "result_id": "001b6353-311f-4158-aae1-da6bd2cf7498"
+    },
+    {
+      "claim_id": "1cb0a9f7-bdc5-415e-8c82-a6b9bac686c1",
+      "result_id": "001b6353-311f-4158-aae1-da6bd2cf7498"
+    },
+    {
+      "claim_id": "da0c5524-4829-4580-9544-0f47a892a924",
+      "result_id": "001b6353-311f-4158-aae1-da6bd2cf7498"
+    },
+    {
+      "claim_id": "5a28774d-0d71-4512-b945-6cfa805db2e5",
+      "result_id": "001b6353-311f-4158-aae1-da6bd2cf7498"
+    },
+    {
+      "claim_id": "7cdda693-1552-48d2-9858-72d57e534fdc",
+      "result_id": "001b6353-311f-4158-aae1-da6bd2cf7498"
+    },
+    {
+      "claim_id": "b6c16f20-3060-4b79-b6db-fd164f29a1dd",
+      "result_id": "001b6353-311f-4158-aae1-da6bd2cf7498"
+    },
+    {
+      "claim_id": "b9bf58cd-2ef9-462f-8a61-2e4d3492951e",
+      "result_id": "001b6353-311f-4158-aae1-da6bd2cf7498"
+    },
+    {
+      "claim_id": "8fea9ef5-f27d-4942-9433-758219ec7abf",
+      "result_id": "001b6353-311f-4158-aae1-da6bd2cf7498"
+    },
+    {
+      "claim_id": "bbe6a71d-27ab-47a4-868b-af49cbb216f6",
+      "result_id": "001b6353-311f-4158-aae1-da6bd2cf7498"
+    },
+    {
+      "claim_id": "277b2c6b-586a-4bb3-868c-22cdf105ee43",
+      "result_id": "001b6353-311f-4158-aae1-da6bd2cf7498"
+    },
+    {
+      "claim_id": "e53a61fa-df0b-47f5-a6aa-e95928b972dd",
+      "result_id": "001b6353-311f-4158-aae1-da6bd2cf7498"
+    },
+    {
+      "claim_id": "b07d41ea-3f93-46f6-b6aa-87d3bcff43ee",
+      "result_id": "001b6353-311f-4158-aae1-da6bd2cf7498"
+    },
+    {
+      "claim_id": "e268f250-0cbd-4000-b9f3-49ec109576fc",
+      "result_id": "001b6353-311f-4158-aae1-da6bd2cf7498"
+    },
+    {
+      "claim_id": "71091b6d-e8fb-427d-ada6-da2038571fcb",
+      "result_id": "001b6353-311f-4158-aae1-da6bd2cf7498"
+    },
+    {
+      "claim_id": "fcb9c90e-84a0-4ef9-88ee-310a7d9ae892",
+      "result_id": "001b6353-311f-4158-aae1-da6bd2cf7498"
+    },
+    {
+      "claim_id": "58acc8b1-32a6-4d42-abb0-a8c51cd2d538",
+      "result_id": "001b6353-311f-4158-aae1-da6bd2cf7498"
+    },
+    {
+      "claim_id": "58c14ba9-e7f9-4523-a7bb-4bf6c24e5f6d",
+      "result_id": "001b6353-311f-4158-aae1-da6bd2cf7498"
+    },
+    {
+      "claim_id": "f23d2a21-dca1-429d-83e5-de73b373d2fb",
+      "result_id": "001b6353-311f-4158-aae1-da6bd2cf7498"
+    },
+    {
+      "claim_id": "95efab28-ccd8-4e88-a1e8-1d29bdb2ed42",
+      "result_id": "001b6353-311f-4158-aae1-da6bd2cf7498"
+    },
+    {
+      "claim_id": "1660a19a-25d4-43c4-849c-bb19d7dd0398",
+      "result_id": "001b6353-311f-4158-aae1-da6bd2cf7498"
+    },
+    {
+      "claim_id": "e6e36f48-ae42-4a76-b0a3-b7f5c203ce4f",
+      "result_id": "001b6353-311f-4158-aae1-da6bd2cf7498"
+    },
+    {
+      "claim_id": "d4187f84-6b3c-4820-8ade-9ef8d4c1edc8",
+      "result_id": "001b6353-311f-4158-aae1-da6bd2cf7498"
+    },
+    {
+      "claim_id": "4228863b-a3d2-45b2-835f-81a5266cf95c",
+      "result_id": "001b6353-311f-4158-aae1-da6bd2cf7498"
+    },
+    {
+      "claim_id": "3f3f1d0a-144b-4ed1-bac6-a4f0b653d0d3",
+      "result_id": "001b6353-311f-4158-aae1-da6bd2cf7498"
+    },
+    {
+      "claim_id": "0db0e3ee-6b16-4e13-b9d7-f3c0be03dee2",
+      "result_id": "001b6353-311f-4158-aae1-da6bd2cf7498"
+    },
+    {
+      "claim_id": "39da7664-bfef-43b7-a62b-4d82d22f53e4",
+      "result_id": "001b6353-311f-4158-aae1-da6bd2cf7498"
+    },
+    {
+      "claim_id": "002aca69-8658-47ea-b45b-b40f877b28d2",
+      "result_id": "001b6353-311f-4158-aae1-da6bd2cf7498"
+    },
+    {
+      "claim_id": "162b7dd6-3f4c-438d-9c8b-117992d1336b",
+      "result_id": "001b6353-311f-4158-aae1-da6bd2cf7498"
+    },
+    {
+      "claim_id": "2f7feb06-07d2-4781-bd6f-5e269c4b648a",
+      "result_id": "001b6353-311f-4158-aae1-da6bd2cf7498"
+    },
+    {
+      "claim_id": "db404ac1-0ebc-4824-af14-33e22a941ef5",
+      "result_id": "001b6353-311f-4158-aae1-da6bd2cf7498"
+    },
+    {
+      "claim_id": "b36322f3-eff3-446c-99f2-612fd4568f42",
+      "result_id": "001b6353-311f-4158-aae1-da6bd2cf7498"
+    },
+    {
+      "claim_id": "aff2905d-beb9-4b1f-b40b-135943d53dbc",
+      "result_id": "001b6353-311f-4158-aae1-da6bd2cf7498"
+    },
+    {
+      "claim_id": "ca59eaad-e022-4581-b0d6-ccdb09808c4b",
+      "result_id": "001b6353-311f-4158-aae1-da6bd2cf7498"
+    },
+    {
+      "claim_id": "fd59b34d-bf0f-44c4-8b0a-98befa1c8d45",
+      "result_id": "001b6353-311f-4158-aae1-da6bd2cf7498"
+    },
+    {
+      "claim_id": "78df84a2-5c86-4899-b071-ed55aecf408f",
+      "result_id": "001b6353-311f-4158-aae1-da6bd2cf7498"
+    },
+    {
+      "claim_id": "2d005d22-2ad0-4355-9847-d6a3b0174ed6",
+      "result_id": "001b6353-311f-4158-aae1-da6bd2cf7498"
+    },
+    {
+      "claim_id": "5a0741c5-0915-4a01-a9cf-03f2aebc6cae",
+      "result_id": "e2490967-cd57-4bfd-b6cf-446a2ca6219b"
+    },
+    {
+      "claim_id": "542153ed-9813-49c2-981a-c5e87a6f01f7",
+      "result_id": "e2490967-cd57-4bfd-b6cf-446a2ca6219b"
+    },
+    {
+      "claim_id": "8252a03e-7d39-43ad-b634-e72c177c031d",
+      "result_id": "e2490967-cd57-4bfd-b6cf-446a2ca6219b"
+    },
+    {
+      "claim_id": "d7f27c2c-baac-4fd3-9405-8a5b6ef3277b",
+      "result_id": "e2490967-cd57-4bfd-b6cf-446a2ca6219b"
+    },
+    {
+      "claim_id": "73b5ea16-f20f-480f-afcd-d7589502d256",
+      "result_id": "e2490967-cd57-4bfd-b6cf-446a2ca6219b"
+    },
+    {
+      "claim_id": "03a32d35-4eaa-4f81-bddb-78783785c7a9",
+      "result_id": "e2490967-cd57-4bfd-b6cf-446a2ca6219b"
+    }
+  ],
+  "comparisons": []
+}

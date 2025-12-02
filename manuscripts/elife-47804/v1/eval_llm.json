@@ -1,0 +1,225 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C20",
+      "C21",
+      "C23",
+      "C24",
+      "C25",
+      "C27",
+      "C30",
+      "C31",
+      "C32",
+      "C35",
+      "C38",
+      "C39",
+      "C44",
+      "C45"
+    ],
+    "result": "Time-resolved ESI-MS under anaerobic, low-iron conditions reveals that RirA [4Fe-4S] cluster degradation proceeds through a series of intermediates: [4Fe-4S] \u2192 [3Fe-4S] \u2192 [3Fe-3S] \u2192 [2Fe-2S] \u2192 apo-RirA. The initial step is reversible loss of Fe2+ to form [3Fe-4S]0 (k1 = 0.30 min-1), followed by sequential loss of iron and sulfur atoms through multiple intermediates confirmed by 34S isotope labeling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C45 provide comprehensive ESI-MS evidence for cluster intermediates, with mass assignments confirmed by 34S labeling (C27). Kinetic analysis (C30-C32, C35, C38-C39, C44-C45) is supported by global fitting to a mechanistic model, with excellent agreement between ESI-MS and absorbance spectroscopy rate constants (C35). The temporal sequence of intermediates is well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "The dissociation constant for the [4Fe-4S]2+ \u21cc [3Fe-4S]0 + Fe2+ equilibrium was determined as Kd = 3 \u00b1 0.2 \u00b5M using a mag-fura-2 competition assay. This value is consistent with sensing cytoplasmic 'free' iron levels (~10 \u00b5M in E. coli) and comparable to the Fe2+ binding affinity of the Fur iron regulator (Kd ~1-10 \u00b5M).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C74 describe a well-designed competition assay with appropriate controls (C73 confirms stoichiometry). The measured Kd (C5, C74) is appropriately compared to known free iron levels (C71) and other iron sensors (C76), supporting the functional interpretation (C75). The experimental approach is sound and the value is reported with standard error from replicate experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Under aerobic conditions, RirA cluster degradation is significantly accelerated compared to anaerobic conditions. Several intermediates ([3Fe-3S], [2Fe-2S]) form more rapidly, and sulphur adduct formation from cluster-derived sulphide is greatly enhanced in the presence of O2, consistent with O2 acting as an oxidant for released S2- ions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C51 provide direct ESI-MS evidence comparing aerobic and anaerobic conditions, with rate constant comparisons (C50, Table 1) showing enhanced degradation. The increased sulphur adduct formation (C48) confirmed by 34S labeling supports O2-mediated sulphide oxidation (C49). Absorbance kinetics (C51) corroborate the ESI-MS findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "EPR spectroscopy reveals an S = \u00bd signal at g = 2.01 assigned to [3Fe-4S]1+ based on characteristic microwave power saturation behavior. Under aerobic conditions, this signal increases to ~18% of original cluster concentration by 3 min, while under anaerobic conditions it reaches only ~6.5%, indicating that the [3Fe-4S] intermediate exists predominantly as [3Fe-4S]0 anaerobically and [3Fe-4S]1+ aerobically.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C54 provide rigorous EPR characterization including power saturation studies (Figure 8B) that definitively assign the signal to [3Fe-4S]1+. Quantification (C55-C57) shows clear differences between aerobic and anaerobic conditions. The assignment is supported by comparison to well-characterized [3Fe-4S]1+ clusters (C54) and knowledge of electronic structure (C58).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "The initial iron dissociation step ([4Fe-4S]2+ \u2192 [3Fe-4S]0 + Fe2+) is O2-independent, with similar rate constants under aerobic (k = 0.32 min-1) and anaerobic (k = 0.30 min-1) conditions. However, O2 affects the oxidation state of the [3Fe-4S] intermediate, converting [3Fe-4S]0 to [3Fe-4S]1+. This O2-independence of the initial step is consistent with RirA functioning principally as an iron sensor.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59, C64-C65 are directly supported by rate constant comparisons (Table 1). The combined ESI-MS and EPR data (C60-C63) demonstrate that while [3Fe-4S] formation is O2-independent, its oxidation state is O2-dependent. The functional interpretation (C67) logically follows from the O2-independence of the rate-limiting iron dissociation step. Absorbance kinetics (C66) provide additional support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C6",
+      "C68",
+      "C69",
+      "C70",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "O2-sensing occurs through oxidation of [3Fe-4S]0 to [3Fe-4S]1+, which is more labile than the reduced form. Enhanced oxidation of cluster iron and sulphide in the presence of O2 drives increased rates of cluster degradation through subsequent intermediates, with both processes contributing to the overall enhanced degradation rate toward apo-RirA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C86 are supported by the combined ESI-MS and EPR data showing O2-dependent oxidation and enhanced degradation rates. The increased lability of [3Fe-4S]1+ (C68, C85) is inferred from rate constant comparisons (Table 1). Enhanced sulphide oxidation (C69, C48) is directly observed. The conclusion that both processes contribute (C70) is reasonably inferred from the data, though C68 involves some speculation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C26",
+      "C48",
+      "C49"
+    ],
+    "result": "Sulphur adducts of apo-RirA observed at +64 Da are double sulphur adducts derived from cluster sulphide, as confirmed by +4 Da shift with 34S labeling. These arise from oxidation of cluster sulphide to S0, which can be incorporated into Cys thiol side chains. Formation of these adducts is greatly enhanced in the presence of O2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C29 are directly supported by 34S isotope labeling data (Figure 3\u2014figure supplement 1). The chemical mechanism (C29) is consistent with known sulphur chemistry. The O2-dependence (C48-C49) is clearly demonstrated by comparing aerobic and anaerobic conditions (Figure 6).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C36",
+      "C37"
+    ],
+    "result": "The [2Fe-2S] form of RirA, previously shown to be stable in HEPES buffer, is less stable in the ammonium acetate buffer required for ESI-MS, leading to observation of apo-protein. The enhanced overall rate of cluster conversion in ammonium acetate compared to previous studies reflects the buffer conditions rather than the ESI-MS method, likely because acetate is a weak iron chelator.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C34 are supported by comparison with previous work (C33, citation) and observation of apo-protein formation (C34, Figure 4E). The buffer effect (C36-C37) is demonstrated by comparing absorbance and ESI-MS rate constants (C35) and is a reasonable inference based on acetate's chelating properties. The conclusion that ESI-MS itself doesn't cause the enhanced rate (C36) is well-supported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "A [3Fe-3S] intermediate is observed during RirA cluster conversion, similar to that recently reported for FNR, suggesting this may be a widespread feature of [4Fe-4S] cluster conversions. If this intermediate has a planar hexagonal structure like a characterized small molecule [3Fe-3S]3+ cluster, it would represent a key geometric transition from tetrahedral [4Fe-4S] to planar [2Fe-2S] coordination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C40-C41 are supported by observation of [3Fe-3S] in both RirA and FNR (C40, citation; C39, data). However, C42-C43 are speculative\u2014the structure of the RirA [3Fe-3S] intermediate was not determined, and the proposed planar geometry is based only on analogy to a small molecule cluster. The functional significance of this intermediate is demonstrated (C39), but structural claims require additional evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "EDTA simulates low iron conditions by competing for Fe2+ dissociated from the RirA cluster, resulting in an unstable [3Fe-4S]0 form that degrades to apo-RirA. This lability is not a general property of [4Fe-4S] clusters (as shown for NsrR) and may result from the cluster being bound by only three Cys residues with a weakly interacting fourth ligand such as water or hydroxide.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C77-C78 are well-supported by the experimental data showing EDTA-induced degradation. The comparison to NsrR (C79) is supported by citation. However, C80-C81 are speculative\u2014the coordination environment has not been structurally characterized, and the proposed weak fourth ligand is hypothetical. While this is a reasonable hypothesis consistent with the observed lability, it requires structural validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C95",
+      "C96"
+    ],
+    "result": "Time-resolved ESI-MS analysis of dimeric RirA shows that the rate constant for initial Fe2+ loss from the dimer (k = 0.31 min-1) is very similar to that of the monomer (k = 0.30 min-1). Within experimental limits, the dimer behaves similarly to the monomer, consistent with monomer formation from dimers during the measurement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C96 are supported by global fitting of dimer ESI-MS data (Figure 10, Supplementary file 2) showing comparable rate constants. The similar behavior (C96) is a reasonable inference from the data, though the interpretation that monomers form from dimers during measurement is somewhat speculative. The key finding of similar initial rate constants is well-supported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "The iron-sensing mechanism of RirA ([4Fe-4S]2+ \u21cc [3Fe-4S]0 + Fe2+) mirrors that of Fur and DtxR, but the complexity of the iron-sulfur cluster cofactor enables RirA to also sense O2. This dual sensing capability allows RirA to regulate both iron uptake and iron-sulfur cluster biogenesis in response to combined iron and O2 signals, meeting cellular requirements under aerobic conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C83 provide reasonable comparative analysis with other iron regulators (supported by citations). The dual sensing capability is well-demonstrated by the experimental data. Claims C88-C90 integrate the mechanistic findings with known RirA regulatory functions (C88, citation), providing a coherent functional model. The interpretation is well-supported by the data, though C87 involves some speculation about behavior under iron-replete conditions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "The rate of RirA cluster conversion/degradation is relatively slow (minutes timescale), similar to other bacterial sensing systems including FNR and Fur. Remarkably, RirA and FNR show similar cluster conversion mechanisms despite having no sequence or structural similarity beyond the cluster, and FNR does not sense iron levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C91 is supported by the rate constants in Table 1. Claims C92-C93 are supported by citations to previous work. The comparison to FNR (C94) is well-supported by citations and represents an interesting observation about convergent mechanisms. The timescale comparison provides useful context for understanding the physiological relevance of the observed rates.",
+    "result_type": "MINOR"
+  }
+]

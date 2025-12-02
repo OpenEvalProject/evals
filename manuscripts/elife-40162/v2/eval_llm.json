@@ -1,0 +1,419 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C6",
+      "C48",
+      "C49",
+      "C72",
+      "C73",
+      "C77",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "MOSES is a computational framework that uses optical flow for motion extraction, constructs long-time superpixel tracks, and employs a dynamic mesh formulation to capture local collective dynamics and derive motion measures for biological phenomena.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C6, C48, C49, C72, C73, C77, C80, C81, and C82 collectively describe the core technical approach and architecture of MOSES. The modular design with three components (motion extraction, long-time tracking, mesh construction) is clearly documented with methodological details and illustrated in figures, providing strong evidence for the framework's structure and capabilities.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C78",
+      "C79"
+    ],
+    "result": "MOSES demonstrates single-cell tracking capability comparable to TrackMate (similarity score 0.8) and provides more advanced population quantification than PIV approaches when validated on published datasets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C8, C78, and C79 are supported by quantitative validation using published cell tracking challenge datasets and spike-in experiments. The similarity score of 0.8 with TrackMate provides concrete evidence of single-cell tracking capability, and side-by-side comparisons with PIV demonstrate enhanced population-level analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Three epithelial cell lines (EPC2, CP-A, OE33) were characterized for proliferation and migration properties, showing that fluorescent dyes did not affect proliferation rates, migration patterns, or boundary formation behavior, though dyes reduced mobility in EPC2 and OE33 cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C61 describe experimental validation of the cell line model system. Quantitative data on proliferation (slope=0.976, r=0.978), migration (MSD analysis), and dye effects are provided with supporting figures. The controls demonstrate that the experimental system is suitable for studying boundary formation despite some dye-induced mobility effects.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "In 5% serum, EPC2:EPC2 cells coalesced into a monolayer, EPC2:CP-A formed a boundary after 72h following CP-A 'pushing' EPC2, and EPC2:OE33 showed continuous OE33 expansion with EPC2 disappearance. These phenotypes were not due to differential proliferation rates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C65 describe observed phenotypes in three cell combinations with supporting video and figure evidence. Cell counting data (Figure 1\u2014figure supplement 4C,D) confirms that differential proliferation does not explain the observed behaviors, strengthening the conclusion that motion dynamics rather than growth rates drive the phenotypes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Serum-free conditions had no detectable impact on cell density at confluent conditions but induced large changes in cell migration, including loss of cell contacts, collective sheet migration, absence of boundary formation, and reduced boundary displacement, with all cell combinations exhibiting similar motion dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C71 are supported by data in multiple figures showing cell density measurements, migration analysis, and motion dynamics. The serum-free condition serves as an effective computational negative control, demonstrating that MOSES can detect major differences in motion behavior while cell density remains constant.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Analysis of 125 videos (48 with 0% serum, 77 with 5% serum) using standard velocity kymographs confirmed differences between serum conditions, but speed alone was insufficient to characterize phenotypes, exhibiting high variance and failing to highlight the uniqueness of EPC2:CP-A interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C88 establish the dataset size and demonstrate the limitations of conventional velocity-based analysis. The data in Figure 3A-B shows that while kymographs can detect gross differences, speed measurements lack the discriminatory power needed for phenotype characterization, motivating the need for MOSES-derived measures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "MOSES-derived measures (boundary formation index, mesh stability index, mesh order, maximum velocity cross-correlation) quantitatively distinguished cell line combinations, with EPC2:CP-A in 5% serum showing the highest boundary formation index (0.74) and mesh stability (0.90), uniquely forming a final stable boundary.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C93 present quantitative results from MOSES analysis with specific numerical values and statistical comparisons across conditions. The measures are well-defined (Table 1, supplementary figures), and the data consistently identify EPC2:CP-A as forming a unique stable boundary phenotype, supported by multiple independent metrics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C94",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "Velocity cross-correlation analysis showed no difference across combinations in 0% serum before and after gap closure, while in 5% serum EPC2:CP-A showed the largest increase (0.03 to 0.20). Both velocity order and mesh order parameters indicated reduced collective motion in 0% versus 5% serum.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94, C96, C97, and C98 present quantitative VCC and order parameter data with specific numerical values from Figure 3E-G. The results are internally consistent and demonstrate that MOSES can detect sheet-sheet interactions and collective motion differences across experimental conditions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "Among all tested cell-type combinations, clear infiltration with 'finger-like' protrusions was observed only in CP-A:OE33 in 5% serum, while no such protrusions or significant intermixing were detected in EPC2:CP-A, with an 'interacting' final stable boundary detected uniquely in EPC2:CP-A in 5% serum.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C101 describe morphological characterization of boundaries using image segmentation and CNN cell counting (Figure 3\u2014figure supplement 10). The data clearly distinguish between invasive (CP-A:OE33) and non-invasive stable (EPC2:CP-A) boundaries, providing additional validation of the unique EPC2:CP-A phenotype.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "EGF titration (0-20 ng/ml) in EPC2:CP-A cultures showed dose-dependent effects: increased boundary displacement, slightly enhanced speed, decreased boundary coherence, and loss of boundary formation above 5 ng/ml (boundary formation index decreased from 0.74 to 0.46, mesh stability from 0.94 to 0.72), with phenotype becoming similar to EPC2:OE33.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C114 present a comprehensive dose-response analysis with 40 videos from three independent experiments. Multiple MOSES-derived measures show consistent dose-dependent changes with specific quantitative values (Figure 4A-H), demonstrating MOSES can detect subtle phenotype changes with minimal replicates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "Cell division was not the primary factor influencing boundary formation in 5% serum based on cell counting and fluorescence decay. EGF titration did not rescue serum absence effects. In 5% serum plus EGF, velocity order increased but mesh order decreased, with mesh order better reflecting human observation than velocity order.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C115-C120 provide important controls and comparative analyses. Cell counting data (Figure 4\u2014figure supplement 1-2) rules out proliferation as the primary driver. The divergence between velocity order and mesh order (Figure 4I,J) demonstrates that mesh-based measures capture collective motion more accurately than instantaneous velocity measures.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126"
+    ],
+    "result": "PCA applied to normalized mesh strain curves of 77 videos in 5% serum automatically clustered videos by cell line combination in a continuous manner. This clustering was not achieved with RMSD, appeared independent of dimensionality reduction technique, and MOSES-based signatures trained classifiers better than RMSD.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C121-C126 demonstrate MOSES enables unbiased phenotype discovery through motion signatures. The PCA analysis (Figure 5B) shows clear clustering without manual annotation, and comparative analysis with RMSD (Figure 5\u2014figure supplement 1-2) demonstrates the superiority of mesh-based features for motion characterization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131"
+    ],
+    "result": "Videos from 0% serum mapped to different areas of the 2D motion map than 5% serum while preserving continuous ordering, enabling prediction of markedly different motion dynamics and greater diversity in 5% serum. EGF-treated EPC2:CP-A motion became increasingly similar to EPC2:OE33 above 5 ng/ml, consistent with specific derived measures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C127-C131 demonstrate the motion map's utility for comparative analysis and phenotype prediction. The spatial separation of conditions on the PCA map (Figure 5C-E) and the trajectory of EGF-treated samples toward the EPC2:OE33 region validate that motion signatures capture biologically meaningful differences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136"
+    ],
+    "result": "Comparison with published datasets showed MOSES motion fields were similar to PIV but exhibited greater sensitivity to salient motion events. MOSES superpixel tracks provide more data-efficient encoding that enhances salient motion detection, including deformation waves at EphB2/ephrinB1 interfaces, while preserving all PIV-derivable velocity statistics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C132-C136 are supported by side-by-side comparison with PIV on published datasets (Figure 6A). The enhanced detection of deformation waves and improved signal-to-noise in velocity kymographs demonstrate MOSES provides additional biological insights while maintaining compatibility with standard PIV measurements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144"
+    ],
+    "result": "MOSES addresses PIV limitations: instantaneous velocity measures are noisy (shown for MCF-10A control cells), while MOSES mesh order exploits long-time continuity for robust collective motion capture. MOSES enables unbiased clustering of motion patterns, effective motion saliency mapping, and systematic framework for custom measures to characterize complex phenotypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C137-C144 demonstrate MOSES advantages over PIV through comparative analysis on published datasets. The noisy velocity order parameter (Figure 6B) contrasts with smooth mesh order curves. Automatic clustering (Figure 6C, Video 8) and motion saliency maps (Figure 6D) show MOSES enables comprehensive phenotype characterization without prior assumptions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152"
+    ],
+    "result": "MOSES combines advantages of PIV and single-cell tracking into a single systematic approach, building on established principles of long-time trajectories and graphs/meshes. It satisfies four criteria (robust, sensitive, automatic, unbiased) necessary for characterizing new phenotypes, demonstrated by analysis of variable quality videos with small replicate numbers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C145-C152 summarize MOSES's conceptual foundation and capabilities. The claims are supported by citations to established methods (C147, C148), validation on diverse datasets including variable quality videos, and demonstration of all four stated criteria throughout the results. The integration of trajectories and meshes is a documented unique contribution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C153",
+      "C154",
+      "C155",
+      "C156",
+      "C157"
+    ],
+    "result": "MOSES overcomes single-cell tracking limitations (tracks lost or broken over long times) by using superpixel tracks that recover global motion patterns. Side-by-side comparison demonstrates MOSES enables all PIV measurements plus greater insights. Complex patterns (boundary formation, deformation waves, cell death) are quantitatively captured, with long-time tracking (up to 6 days) enabling spatial localization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C153-C157 are supported by comparative analysis with both single-cell tracking (TrackMate validation) and PIV (published dataset reanalysis). The 6-day tracking duration is documented in the experimental data, and multiple complex motion patterns are successfully characterized throughout the results section.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C158",
+      "C159",
+      "C160",
+      "C161",
+      "C162",
+      "C163",
+      "C164",
+      "C165"
+    ],
+    "result": "MOSES requires minimal user settings (main parameter: number of superpixels determining spatial resolution), no complex model fitting or GPUs, is modular and adaptable, processes 96 videos (1344\u00d71024, 145 frames, 1000 superpixels) in under 4h on a single PC, stores results efficiently (~1-2 MB vs 0.1-1 GB for PIV), and is particularly useful for unbiased high-content screening.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C158-C165 describe practical implementation details with specific quantitative benchmarks. The computational efficiency (4h for 96 videos), storage efficiency (1-2 MB vs 0.1-1 GB), and hardware requirements are concrete specifications. The modular design and minimal parameter requirements are demonstrated throughout the methods and results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C10",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "The manuscript establishes biological and clinical context for studying cellular motion, identifies limitations of existing methods (single-cell tracking requires segmentation and is challenging for confluent cells; PIV lacks continuous tracking and motion signatures; previous approaches require prior knowledge), and defines requirements for suitable computational methods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C47 provide background knowledge and literature review establishing the scientific context and gap that MOSES addresses. These claims are supported by appropriate citations to prior work and accurately characterize the state of the field and limitations of existing approaches, providing strong motivation for MOSES development.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "EGFR is frequently mutated in EAC, sometimes overexpressed in BE, and is activated by bile acid reflux, the main observed cause of BE clinically, providing biological rationale for using EGF as a perturbation in the experimental system.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C104 establish the biological relevance of EGFR/EGF for the esophageal system being studied. These claims are supported by appropriate citations (Dixon et al., 2001; Souza, 2010) and provide clear rationale for the EGF titration experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C11",
+      "C50",
+      "C51"
+    ],
+    "result": "MOSES is a powerful tool that will facilitate unbiased, systematic analysis of cellular dynamics from high-content time-lapse imaging screens with little prior knowledge and few assumptions, can effectively encode complex dynamic patterns as motion signatures, and can highlight novel motion phenotypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11, C50, and C51 represent high-level conclusions about MOSES capabilities. These are supported by the comprehensive validation throughout the manuscript, including successful analysis of 125+ videos, automatic clustering without prior knowledge, detection of subtle EGF dose-response effects, and superior performance compared to existing methods.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C9"
+    ],
+    "result": "MOSES analyzed more than 190 co-culture videos of human esophageal squamous epithelial and columnar cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C9 is supported by the dataset description: 125 videos for the main serum comparison (C83), 40 videos for EGF titration (C105), and additional videos mentioned in supplementary analyses, totaling >190 videos as stated in the abstract.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Optical flow is similar to PIV but yields higher resolution motion fields with a displacement vector for each pixel at every time point. PIV typically estimates a single velocity for an image patch using spatial correlation. Optical flow is easier to modify to account for out-of-plane motion and large discontinuous movements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C76 accurately describe technical differences between optical flow and PIV. C76 is supported by citations (Brox et al., 2004; 2009), and the characterization is consistent with established computer vision literature. The choice of optical flow over PIV is well-justified.",
+    "result_type": "MINOR"
+  }
+]

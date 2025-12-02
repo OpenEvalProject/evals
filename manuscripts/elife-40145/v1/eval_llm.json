@@ -1,0 +1,377 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C22",
+      "C23",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Submovement frequencies during continuous tracking are determined by extrinsic feedback delays. Human subjects exhibited submovements at ~2 Hz with no delay, but frequencies decreased systematically with added delays (1.4 Hz at 100 ms, 1 Hz at 200 ms), with harmonic peaks appearing at higher delays. The time-periods of harmonics were linearly related to delay times.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C31 provide converging quantitative evidence from spectral analysis showing systematic changes in submovement frequencies with feedback delays. The linear relationship between harmonic periods and delays (C31) with statistical support (Table 1) strongly supports the extrinsic contribution. The data are internally consistent and replicated across 8 subjects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Artificial spatial perturbations at submovement frequencies are exacerbated by constructive interference with delayed feedback corrections. Perturbations at 2 Hz with no delay, and at 1 and 3 Hz with 200 ms delay, produced cursor amplitude responses greater than unity, indicating that errors at these frequencies are harder to track. ANOVA confirmed significant interaction between delay and perturbation frequency (F4,70=110.2, p<0.0001).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C49 describe a well-designed perturbation experiment that directly tests the constructive interference hypothesis. The cursor amplitude responses (C47) and statistical analysis (C48-C49) provide strong quantitative support. The experimental logic is sound: if submovements arise from interference, then artificial errors at those frequencies should be amplified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Force amplitude responses to perturbations reveal delay-independent intrinsic filtering of feedback corrections. Unlike cursor responses, force responses showed low-pass filtering that was independent of extrinsic delay (no main effect of delay: F1,70=3.1, p=0.08) but dependent on frequency (F4,70=36.3, p<0.0001). Phase delays also showed frequency-dependence but not delay-dependence, indicating predictive responses to low-frequency errors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C60 provide complementary evidence for intrinsic dynamics through force response analysis. The statistical tests (C52-C54, C58-C60) appropriately use two-factor ANOVA to dissociate delay and frequency effects. The finding that force responses are delay-independent while cursor responses are delay-dependent (from previous result) is crucial for distinguishing intrinsic from extrinsic contributions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "The delay-independent filtering of feedback responses reflects intrinsic dynamics in the visuomotor feedback loop rather than limitations of feedforward motor pathways. Subjects could generate force fluctuations up to 5 Hz with little attenuation in a feedforward task, demonstrating that the low-pass filtering observed during feedback control is not an inherent property of motor pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C63 address an important alternative explanation through a control experiment. The feedforward task data (C62) effectively rules out musculoskeletal filtering as the source of low-pass characteristics. This strengthens the interpretation that filtering arises from feedback control circuitry rather than motor output limitations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "Monkey motor cortex LFP recordings reveal a dissociation between delay-dependent submovements and delay-independent cortical dynamics. While cursor velocity spectra showed delay-dependent peaks matching human data, LFP power spectra and imaginary coherence between LFP pairs remained unchanged across delay conditions, maintaining a single broad peak at 2-3 Hz. This demonstrates that cortical oscillations do not directly drive movement intermittency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C98 provide critical neural evidence for the dual nature of movement intermittency. The dissociation between delay-dependent behavior (C92-C95) and delay-independent LFP dynamics (C96-C97) is striking and well-documented. The use of imaginary coherence (C90, C97) appropriately isolates local oscillatory activity from volume conduction. This result strongly challenges the 'intrinsic oscillator' hypothesis for submovements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "Submovement-triggered averages of monkey LFPs show both delay-dependent feedback corrections and delay-independent cortical cycles. LFPs exhibited multiphasic potentials with delay-dependent latencies, but when projected onto principal component space, traced consistent single cycles (~300 ms period, ~3 Hz) regardless of feedback delay. The resonant frequency of these intrinsic dynamics matched the delay-independent filtering observed in human force responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C105 provide detailed temporal analysis linking neural dynamics to behavior. The submovement-triggered average approach is appropriate, and the finding of delay-independent cycles (C101-C102) despite delay-dependent features (C100) elegantly demonstrates the coexistence of intrinsic and extrinsic components. The cross-species comparison (C105) strengthens the interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "A Smith Predictor model with Kalman filter state estimation accounts for the main features of human behavioral data. The model reproduced cursor amplitude responses, force filtering, phase delays, and overall tracking performance. The model predicted frequency-dependent intrinsic delays that matched experimental data (R=0.78, p=0.0046).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C76 demonstrate that the computational model captures key experimental observations. The quantitative match between predicted and observed frequency-dependent delays (C74-C75) is particularly compelling. However, the model has free parameters (e.g., process/measurement noise ratio) that were tuned to fit data, which somewhat limits the strength of this validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Within-trial adaptation reveals emergence of delay-specific predictive control consistent with Smith Predictor architecture. Intrinsic feedback gains inferred using the Smith Predictor model became progressively more similar across delay conditions as trials progressed, while gains inferred from a simple feedback controller diverged. This adaptation was associated with reduced phase delays and cursor lag.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C82 provide evidence for rapid adaptation to feedback delays within individual trials. The comparison between two model architectures (C78-C79) is methodologically sound and supports the Smith Predictor interpretation. However, the analysis relies on model-based inference of intrinsic gains rather than direct measurement, which introduces some uncertainty.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "The computational model accounts for conserved LFP structure during both movement and sleep. Simulated LFPs reproduced delay-dependent features in submovement-triggered averages and delay-independent cycles. The model also generated delta oscillations during simulated K-complexes that resembled submovement-related activity, suggesting intrinsic dynamics reflect state estimation circuitry active in both waking and sleep.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C113 extend the model to explain sleep oscillations, providing a parsimonious account of conserved cortical dynamics across behavioral states. The similarity between K-complex and submovement-related LFP cycles (C109-C110, C112) is compelling. However, the sleep data are from previous work (Hall et al., 2014) and the model simulation is relatively simple (impulse input), so this result is more speculative than others.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C2",
+      "C38",
+      "C39",
+      "C117",
+      "C118",
+      "C124"
+    ],
+    "result": "Movement intermittency arises from constructive interference between motor errors and continuous delayed feedback corrections, not from discrete submovement generation. Submovement frequencies reflect components of broad-band motor noise that are exacerbated by delayed feedback, embedded within a delay-independent envelope of intrinsic filtering.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This integrative claim (C2, C38-C39, C117-C118, C124) synthesizes the main findings into a coherent mechanistic explanation. It is well-supported by the convergence of behavioral (delay effects, perturbation responses), neural (LFP dissociation), and modeling evidence. The interpretation challenges the prevailing 'intrinsic oscillator' view and provides a more parsimonious account.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C5",
+      "C68",
+      "C69",
+      "C121",
+      "C125",
+      "C141"
+    ],
+    "result": "The intrinsic rhythmicity of motor cortical networks reflects implementation of a Kalman filter for optimal state estimation during feedback-guided movement. The model uses a second-order internal model of external dynamics to separate process (motor) noise from measurement (sensory) noise, attributing high-frequency errors to sensory noise.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C68-C69, C121, C125, C141 present the core theoretical interpretation. The Kalman filter framework is well-motivated by optimal control theory (C68-C69) and provides a principled explanation for low-pass filtering. However, this remains an interpretation rather than direct demonstration of Kalman filtering in the brain. Alternative implementations could potentially produce similar behavior.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144"
+    ],
+    "result": "Motor cortical population dynamics implement state estimation during continuous feedback control rather than feedforward movement generation. The cyclical LFP dynamics resemble those previously attributed to feedforward control, but the dissociation of delay-dependent submovements from delay-independent rotational dynamics contradicts the purely feedforward view. The state estimator account explains why preparatory and movement-related activity lie along distinct state-space dimensions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C136-C144 reinterpret previous findings (Churchland et al., 2012) in light of the current data. The argument that delay manipulation dissociates feedback from feedforward contributions (C140) is logical and well-supported by the LFP results. The alternative interpretation (C141-C144) is plausible and integrates well with the overall framework, though it remains somewhat speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135"
+    ],
+    "result": "Force amplitude responses were uniformly less than unity, suggesting subjects minimize changes in motor commands rather than absolute force. This is consistent with derivative-dependent motor noise and proportional-integral (PI) control. Trajectory variability correlated with changes in force rather than absolute magnitude, and derivative-dependent noise explains why submovement amplitude increases with target speed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C128-C135 address an unexpected feature of the data and provide a coherent explanation. The observations (C128-C130, C133-C134) are well-documented, and the PI control interpretation (C131-C132) is reasonable. The explanation for speed-dependent submovement amplitude (C135) is particularly insightful. However, the sub-unity responses remain somewhat puzzling and alternative explanations are not fully ruled out.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Submovement frequency was only slightly affected by target speed, consistent with previous reports and suggestive of an intrinsic oscillator determining timing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C23-C25 report a minor effect of target speed on submovement frequency. While C23-C24 are supported by data and citations, the interpretation as evidence for an intrinsic oscillator (C25) is speculative and contradicts the main conclusion that submovements arise from feedback dynamics. This observation is better explained by the model's intrinsic filtering being relatively independent of task parameters.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Physical constraints and neural integration suggest that tracking errors in the real world are dominated by low-frequency components. Limbs and targets move with constant velocity unless acted upon by force (Newtonian dynamics), and force drift during isometric tasks is dominated by low frequencies, possibly reflecting neural integration in descending pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C67 provide theoretical and empirical justification for the second-order dynamics model. The Newtonian argument (C65) is sound, and the citation-supported observation about force drift (C66) is relevant. However, the connection to neural integration (C67) is speculative. These claims provide useful context but are not central results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "Monkey motor cortex LFPs during tracking exhibited low-frequency oscillations with phase-shifts across channels. Principal component analysis revealed two orthogonal components showing close coupling with submovements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C86 describe basic observations from monkey recordings that set up the more detailed analyses. The PCA approach (C85) is standard and appropriate. These are methodological and descriptive findings that support subsequent analyses but are not major results themselves.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150"
+    ],
+    "result": "The computations for optimal tracking are likely distributed across multiple cortical areas. An alternative explanation based on recurrent neural networks minimizing 'tangling' shares conceptual links with the optimal feedback control approach, as both address noise robustness. Recurrent networks may learn implementations of computational architectures like Kalman filters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C145-C150 discuss alternative interpretations and future directions. The distributed computation hypothesis (C145) is reasonable but speculative. The comparison to tangling minimization (C146-C150) is interesting but remains conceptual. These claims acknowledge alternative frameworks but do not provide definitive evidence for or against them.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "Prior work has established that movement intermittency was described over a century ago and remains debated. Previous studies showed submovements disappear without vision, are influenced by feedback delays, but some rhythmicity persists without feedback. Cortical cycles at 300-500 ms have been proposed as neural correlates of an intrinsic oscillator, with submovements phase-locked to cortical cycles. Alternative hypotheses suggest low-frequency dynamics arise from sensorimotor feedback loops.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C21 accurately summarize the background literature and conflicting hypotheses that motivate the study. These are well-supported by appropriate citations and provide essential context. However, these are not results from the current work but rather literature review establishing the scientific question.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "Previous theories focused on either extrinsic or intrinsic explanations for submovements without consensus. The current experimental approach of manipulating feedback delays and spatial perturbations allowed dissociation of both contributions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C114-C116 summarize the state of the field and the experimental strategy. These are accurate statements supported by citations (C115) and describe the methodological approach (C116). However, these are discussion/summary points rather than novel results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C32",
+      "C69",
+      "C77",
+      "C122",
+      "C123"
+    ],
+    "result": "Technical background on signal processing and control theory: comb filtering, Kalman filters, Smith Predictors, and limitations of previous optimal feedback control models that included refractory periods without theoretical justification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32, C69, C77, C122-C123 provide technical background and critique of previous modeling approaches. These are accurate statements about established methods (C32, C69, C77) and valid critiques of prior work (C122-C123). These provide important context but are not experimental results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C127"
+    ],
+    "result": "The 2-3 Hz intrinsic dynamics in the model matched the primary submovement frequency under unperturbed conditions, accentuating the fundamental frequency while suppressing higher harmonics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C127 notes an interesting correspondence between model parameters and observed behavior. This observation about the model's behavior is accurate and provides insight into why 2-3 Hz dynamics might be advantageous. However, this is a relatively minor observation about model properties.",
+    "result_type": "MINOR"
+  }
+]

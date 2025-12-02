@@ -1,0 +1,281 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6"
+    ],
+    "result": "APS1 is a monogenic autoimmune syndrome caused by AIRE gene mutations that result in defects in thymic T cell education, leading to multi-organ autoimmunity driven by both autoreactive T cells and high-affinity autoantibodies derived from germinal center reactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C6 describe well-established background knowledge about APS1 pathogenesis, supported by multiple literature citations. These claims provide the scientific rationale for the study but represent prior work rather than novel findings from this manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "PhIP-Seq using a ~700,000 peptide library successfully detected 23 known APS1 autoantigens including cytochrome P450 family members, KCRNG, and interleukins, with validation by RLBA for CYP11A1, SOX10, and NLRP5, though conformational antigens like GAD65 and interferons showed limited signal.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C20 demonstrate that PhIP-Seq can detect known APS1 autoantigens with good correlation to orthogonal RLBA validation (C18, C19, C34). The acknowledged limitation for conformational epitopes (C16, C17, C81, C82) is appropriately discussed. The peptide-level resolution data (C20) provides additional validation of the approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "PhIP-Seq identified 81 genes (69 novel, 12 known) meeting stringent criteria (\u226510-fold enrichment in \u22653/39 APS1 sera, 0/28 controls), with these antigens showing significantly increased tissue-specificity compared to randomly sampled genes (1.5-fold, p=0.0017).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C23 present the core discovery findings with appropriate statistical analysis. The tissue-specificity analysis (C23) uses iterative random sampling as a control, providing statistical support for the biological relevance of identified antigens. The stringent criteria help minimize false positives.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Seven novel autoantigens (RFX6, ACP4, KHDC3L, NKX6-3, GIP, ASMT, PDX1) were selected for validation based on frequency and tissue-restricted expression, with all seven successfully validated by RLBA in both discovery (n=39) and validation (n=28) APS1 cohorts, showing positive correlations between PhIP-Seq and RLBA (r=0.62-0.95).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C34 demonstrate rigorous orthogonal validation of novel antigens. The use of independent discovery and validation cohorts (C31), non-APS1 controls (C32), and quantitative correlation analysis (C34) provide strong evidence. All seven selected antigens validated successfully, supporting the reliability of the PhIP-Seq approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C40",
+      "C41"
+    ],
+    "result": "Known disease associations were confirmed: anti-CYP11A1 antibodies with adrenal insufficiency and anti-SOX10 antibodies with vitiligo showed significant differences between APS1 patients with and without these conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C37, C40-C41 validate known antibody-disease associations in this cohort, providing positive controls for the phenotype association analysis. These are supported by both literature citations and PhIP-Seq data showing significant enrichment differences (Figure 4B).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Anti-KHDC3L antibodies showed significant association with ovarian insufficiency in APS1. KHDC3L is an oocyte-specific protein that forms part of the subcortical maternal complex (SCMC) with NLRP5, with all 10 females with diagnosed ovarian insufficiency testing positive for anti-KHDC3L antibodies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38, C43-C55 establish a novel antibody-disease association. The evidence includes: (1) statistical association from PhIP-Seq (C38, C43), (2) RNA-seq data confirming oocyte-specific expression (C44, C52), (3) literature support for KHDC3L/NLRP5 complex function (C45-C48), (4) 100% sensitivity in diagnosed cases (C55), and (5) gender-specific enrichment (C54). The biological plausibility is strong given known roles in fertility.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Anti-ACP4 antibodies were detected in 50% of APS1 samples with excellent PhIP-Seq/RLBA correlation, showing a trend toward association with enamel hypoplasia (p=0.064) despite ~90% of the cohort having this phenotype.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C56-C60 identify ACP4 as a highly prevalent autoantigen with biological plausibility (C56-C57 cite genetic evidence), but the clinical association is only trending (C60, p=0.064). The high prevalence of both antibodies (50%) and phenotype (90%) may limit statistical power to detect association. Additional studies would be needed to establish clinical utility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Anti-RFX6 antibodies were highly prevalent (65-82% depending on cutoff) and specifically associated with diarrheal-type intestinal dysfunction. RFX6 is expressed in intestinal enteroendocrine cells and pancreatic islets, with anti-RFX6+ sera showing nuclear staining colocalizing with ChromograninA in enteroendocrine cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C77 establish a novel antibody-disease association with multiple lines of evidence: (1) high prevalence by RLBA (C61-C62), (2) tissue expression data (C63-C64, C66), (3) immunofluorescence validation in human tissue (C67-C69), (4) statistical association with intestinal dysfunction (C73) and specifically diarrheal subtype (C74), (5) comparison to less-specific TPH1 antibodies (C75-C76), and (6) biological plausibility from genetic studies (C70-C71, C100-C101). The specificity for diarrheal vs. constipation subtypes strengthens the association.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "The PhIP-Seq library covers ~700,000 peptides representing ~20,000 proteins, providing broader coverage than previous protein arrays (~9,000 proteins), though it has limitations in detecting conformational epitopes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C82 accurately describe the technical advantages and limitations of PhIP-Seq. The broader coverage (C78, C80) and limitation for conformational epitopes (C81-C82) are appropriately acknowledged. The comparison to prior work (C79) provides context for the novelty of discoveries.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C110"
+    ],
+    "result": "This study discovered 69 novel autoantigens with 7/7 validated at the whole protein level, significantly expanding the known APS1 autoantigen repertoire, though this repertoire remains dramatically smaller than the ~4,000 AIRE-dependent genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C87, C110 summarize the major findings with appropriate context. The 100% validation rate (7/7) for tested antigens (C86) supports the reliability of the discovery approach. The observation that the autoantigen repertoire is smaller than AIRE-dependent genes (C87) provides important biological insight.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "The discovery of anti-KHDC3L antibodies in APS1-associated ovarian insufficiency supports the hypothesis of direct autoimmune targeting of oocytes rather than only granulosa cells, with antibodies present in young pre-menstrual females suggesting potential predictive value.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C92 interpret the KHDC3L findings in the context of ovarian insufficiency pathogenesis. The oocyte-specific expression of KHDC3L (established in C44, C51-C52) supports the interpretation that oocytes are directly targeted (C91). The presence in young females (C92) suggests predictive potential, though longitudinal studies would be needed for validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "Primary ovarian insufficiency affects ~1 in 100 women with up to half having proposed autoimmune etiology, and anti-NLRP5 antibodies have been detected in non-APS1 ovarian insufficiency, suggesting potential broader relevance of KHDC3L testing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C95 provide important context for the potential clinical impact beyond APS1. The prevalence data (C93-C94) and prior detection of related antibodies (C95) are supported by literature citations, suggesting that anti-KHDC3L testing may have broader clinical utility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "ASMT, a pineal gland enzyme catalyzing the final step in melatonin synthesis, represents the first reported APS1 autoantigen with CNS-restricted expression and demonstrates multi-step targeting of the serotonin/melatonin pathway.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C98 identify a novel pattern of pathway targeting. The evidence includes literature support for prior DDC/TPH1 antibodies (C96), biochemical knowledge of ASMT function (C97), and validation data (C29, C31). The claim of first CNS-restricted antigen (C98) is appropriately qualified as 'to our knowledge.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "The association of anti-RFX6 antibodies with diarrheal intestinal dysfunction is consistent with enteroendocrine cell deficiency models and suggests a common autoimmune mechanism, though multiple etiologies may contribute to APS1 intestinal dysfunction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C104 interpret the RFX6 findings in the context of intestinal pathology. The consistency with mouse models (C100) and human genetic syndromes (C101) provides biological plausibility. The acknowledgment of multiple potential etiologies (C103-C104) appropriately recognizes complexity while supporting a role for enteroendocrine autoimmunity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C109"
+    ],
+    "result": "Autoantibodies often lack perfect sensitivity and specificity for disease, as illustrated by anti-ACP4 antibodies showing high prevalence but only trending association with enamel hypoplasia despite strong biological evidence linking ACP4 dysfunction to this phenotype.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C107, C109 appropriately discuss limitations of autoantibody-disease associations. The general principles (C105-C107) are well-established, and the ACP4 example (C109) illustrates these limitations. This discussion strengthens the manuscript by acknowledging that not all identified antibodies will have strong clinical associations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C111",
+      "C112"
+    ],
+    "result": "This study identified a novel antibody-disease association between RFX6 and diarrheal-type intestinal dysfunction, providing the first clinically applicable predictive or diagnostic marker for this highly prevalent APS1 disorder.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111-C112 summarize the clinical significance of the RFX6 findings. The novelty is supported by the statement that this disorder previously lacked markers (C112), and the association is well-supported by multiple lines of evidence (C61-C77). However, prospective validation would strengthen claims of clinical utility.",
+    "result_type": "MAJOR"
+  }
+]

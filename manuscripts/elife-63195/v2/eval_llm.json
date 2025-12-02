@@ -1,0 +1,360 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C159",
+      "C160",
+      "C161",
+      "C162"
+    ],
+    "result": "The study enrolled 999 patients from 11 European hospitals between February and April 2020, with 17 patients excluded due to haematological conditions, resulting in 982 patients with 2587 measurements for temporal analysis and 923 patients with 1587 measurements for prognostic score development. The cohort had a median age of 71 years (range 18-96) and 68% were male, with 64 patients not hospitalized, 687 admitted to general wards, and 172 admitted directly to ICU.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C15-C24, C159-C162 provide consistent and detailed information about patient enrollment, exclusions, demographics, and distribution across care settings. The numbers are internally consistent (999 - 17 = 982; 982 - 59 = 923) and the study design is clearly described with specific dates and locations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "Mortality rates were comparable between ICU patients (29.3%, 53/181) and general ward patients (27.4%, 186/678). Patients who died or were critically ill were significantly older than those less severely ill (median age 74 vs 65 years, p<0.001), and while males outnumbered females (631:292) in severe disease progression, mortality rates were independent of sex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C30 present mortality and demographic data with specific numbers and statistical tests. The comparable mortality rates between ICU and ward patients is unusual but explicitly stated with supporting data. The age difference is statistically significant (p<0.001) and the sex-independent mortality finding is clearly stated despite male predominance in severe cases.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C99",
+      "C100"
+    ],
+    "result": "Lymphopenia was present for 7 days in NC and 10 days in CI groups, normalizing thereafter as lymphocyte numbers increased after day 5. NLR increased in the CI group compared to NC and remained significantly different over time (p<0.001). While absolute lymphocyte count had no significant prognostic value (AUC 0.550; 95% CI 0.523-0.576), relative presence of lymphocytes did, leading to incorporation of NLR, IGLR, and AS-LYMPH%/L in the prognostic score.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C34, C99-C100 describe lymphocyte dynamics with temporal patterns and statistical significance. The finding that absolute lymphocyte count lacks prognostic value (AUC ~0.55, essentially random) while relative measures are informative is well-supported by the data and provides clear rationale for parameter selection in the prognostic score.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "Neutrophil counts remained normal and stable in NC patients but were mildly elevated and rising in CI patients, accompanied by mildly elevated NEUT-RI. Immature granulocytes (IGs) showed small baseline differences (p<0.001) but marked rises after day 2 in CI patients, with IGLR mirroring this pattern. Unlike bacterial infections, increases in neutrophil counts and NEUT-RI were dissimilar in COVID-19.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C40, C104-C107 describe neutrophil and IG dynamics with clear temporal patterns distinguishing NC from CI groups. The observation that neutrophil count and activity (NEUT-RI) increases are dissimilar differs from bacterial infections and is supported by citation (C107). The statistical significance (p<0.001) for IG differences is stated despite small absolute differences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "AS-LYMPH%/L remained abnormally elevated in both groups throughout the first two weeks of hospitalization. Reactive lymphocytes in both NC and CI groups were largely comprised of AS-LYMPH (antibody-synthesizing lymphocytes), indicating a predominant B-cell rather than T-cell response. This finding concurs with previous studies reporting AS-LYMPH as a strong predictor of clinical severity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C43, C101-C103 describe AS-LYMPH patterns with interpretation about B-cell vs T-cell response. The inference about B-cell predominance (C43) is reasonable given AS-LYMPH represents lymphoplasmacytoid lymphocytes. Support from prior literature (C102, C103) strengthens the finding, though the interpretation relies on the assumption that AS-LYMPH accurately reflects B-cell activation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C108"
+    ],
+    "result": "Absolute monocyte counts were within normal limits and stable in NC patients, while CI patients showed largely normal values with an upward trend and mild monocytosis from day 10 onwards. RE-MONO%/M remained stable and normal in NC patients but increased up to days 3-4 in CI patients, returning to normal after a week. RE-MONO%/M was abnormal only in critical illness cases, consistent with reports of a key role for monocytes and macrophages in severe COVID-19.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C47, C108 describe monocyte dynamics with clear temporal patterns. The finding that RE-MONO%/M (reactive monocytes) is abnormal only in CI cases and peaks early (days 3-4) before normalizing is well-characterized. Support from prior literature (C108) on monocyte/macrophage roles in severe COVID-19 strengthens the biological plausibility.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "HGB gradually dropped in all patients (adjusted for age and sex), with differences between groups widening from day 5 onwards and continuing to decline only in CI patients after day 7. Despite dropping HGB, reticulocyte counts remained low in both groups initially but showed consistent rises in CI patients toward the upper normal limit. Delta-He remained stable and negative in NC patients but dropped progressively in CI patients, reaching a nadir at day 7 before rising toward zero due to improved RET-He values. Haemoglobinization of reticulocytes was significantly compromised in severe cases, possibly due to ongoing inflammation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C55, C109-C111 describe erythropoietic changes with detailed temporal patterns. The finding that HGB drops despite initially low reticulocyte response, followed by later reticulocyte increases, suggests a delayed erythropoietic response. The Delta-He pattern (difference between reticulocyte and RBC hemoglobin) indicates impaired hemoglobinization in CI patients. The speculation about inflammation (C111) is reasonable and supported by citation, though the mechanism remains somewhat uncertain.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "Nucleated red blood cells (NRBCs) were almost zero in NC patients (within normal range) but rose sharply and progressively from day 5 in CI patients. NRBCs are absent in healthy adults, and their presence without reticulocytosis in severe COVID-19 indicates hematopoietic stress, probably due to prolonged hypoxia or inflammation. NRBCs have been reported as markers of disease severity in ARDS patients, indicating higher risk of death.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C57, C112-C114 describe NRBC patterns with clear differences between groups. The interpretation that NRBC presence without reticulocytosis indicates hematopoietic stress (C113) is supported by citation and is biologically plausible. The connection to ARDS literature (C114) provides additional context, though the speculation about hypoxia vs inflammation as the cause (C113) remains somewhat uncertain.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "Platelet counts were largely within normal range but showed progressive upward trends in both groups, with CI patients manifesting mild thrombocytosis from day 10 onwards. IPF# gradually increased in CI patients, exceeding the upper reference limit parallel to PLT, while IPF% remained normal throughout. PLR was abnormally elevated in both groups, slightly higher in CI until day 5, after which groups overlapped. Contrary to other studies, PLT at presentation were similar between groups with no sign of increased consumption, and PLT/IPF# tended to increase with disease severity, suggesting thrombocytosis rather than thrombocytopenia may be linked to severe COVID-19.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C63, C115-C118 describe platelet dynamics that contradict some prior literature (C115). The finding of thrombocytosis rather than thrombocytopenia in severe disease is explicitly stated as contrasting with guidelines (C118). The data showing increasing PLT and IPF# in CI patients is consistent across claims. However, the contrast with prior studies raises questions about patient selection or timing of measurements that are not fully addressed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Six variables (NLR, IGLR, RE-MONO%/M, AS-LYMPH%/L, Delta-He, NRBC) were identified that fulfilled prespecified selection criteria (p\u22640.001 and >20% abnormal in CI group), with each assigned 0-4 points. These six variables had 68% sensitivity (249/366) in identifying CI patients in the first 3 days. Four additional parameters (HGB, HYPO-He, PLT, IPF#) were added with maximum 1 point each after observing clear abnormalities in 8 undetected CI patients. The final prognostic score comprises 10 variables with a minimum of 0 and theoretical maximum of 28 points.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C76 describe the systematic development of the prognostic score with clear selection criteria and statistical thresholds. The addition of four secondary parameters (C74-C75) based on analysis of false negatives is methodologically sound. The scoring system is well-defined with specific point allocations. However, the addition of parameters based on undetected cases (n=8) represents a form of overfitting that could affect generalizability, though validation was performed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C125",
+      "C126"
+    ],
+    "result": "The prognostic score correctly identified 70.5% (95% CI 66-75) of CI patients on days 0-3, with sensitivities increasing from 62.3% on day 0 to 87.0% on day 3 and 93% on day 6. All CI patients, whether they recovered or died, had increasing score values compared to NC patients. Non-ICU patients who subsequently died had notably higher scores during initial hospitalization (median 3-5 on days 0-3) compared to NC patients (median 1-2). Prognostic score values increased progressively in CI patients with no significant difference (p>0.05) between survivors and non-survivors, confirming the score predicts critical clinical course but not mortality outcome.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C83, C125-C126 describe prognostic score performance with specific sensitivity values and confidence intervals. The finding that the score predicts critical illness but not mortality (C83) is explicitly supported by the lack of significant difference between survivors and non-survivors in the CI group (C82). The progressive increase in sensitivity over days 0-6 is well-documented. The distinction between predicting critical course vs. mortality is an important limitation clearly stated by the authors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "The prognostic score had a ROC curve AUC at baseline of 0.753 (95% CI 0.723-0.781) increasing to 0.875 (95% CI 0.806-0.926) on day 3, and was superior to any individual parameter at distinguishing clinical severity. For the initial period (<4 days) and 14-day prediction horizon, the prognostic score was better than NLR with higher AUC at all time points. The cut-off value for the prognostic score (\u22653 or >4) was consistent over time, whereas NLR ranged from >4.7 to >11.6. AUC values for PLR, LYMPH, MONO, and PLT were all low (0.501-0.647) with highly variable cut-off values.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C6, C84-C87 provide detailed ROC curve analysis with specific AUC values and confidence intervals. The superiority of the multi-parameter score over individual parameters is well-demonstrated. The consistency of cut-off values for the prognostic score vs. variability for NLR (C85-C86) is a strength. The poor performance of individual parameters (C87) with AUCs near 0.5 (random chance) supports the need for a multi-parameter approach. Statistical comparisons are appropriately reported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C7",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C163"
+    ],
+    "result": "The prognostic score was validated in an independent cohort of 202 patients (65.8% male, median age 70 years) from two Dutch hospitals enrolled between March and May 2020. The validation cohort AUC was 0.797 (95% CI 0.724-0.829), comparable to the development cohort (AUC 0.753, 95% CI 0.723-0.781). Outcome was correctly identified in 72% (91/127) of CI patients (vs. 70.5% in development cohort), with mortality rate of 20.8% (42/202). Score values of NC and CI groups did not overlap (SEM) except on day 1, and the prognostic score AUC was superior to NLR.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C88-C94, C163 describe validation cohort performance with comparable results to the development cohort. The AUC values are similar (0.797 vs 0.753) with overlapping confidence intervals, and sensitivity is nearly identical (72% vs 70.5%). The validation cohort is independent and from different time periods, strengthening generalizability. However, the validation cohort is smaller (202 vs 923 patients) and from only 2 hospitals vs 9 in development, which may limit the robustness of validation. The day 1 overlap issue (C93) is noted but not fully explained.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C127",
+      "C128",
+      "C129",
+      "C131",
+      "C132"
+    ],
+    "result": "Males were predominantly affected by COVID-19, and disease severity was associated with increasing age and presence of comorbidities. However, not all young patients had mild courses and not all old patients with comorbidities were critical. The prognostic score, incorporating immune cell activation status, may have additional value over classical risk factors (age, gender, comorbidities) in discriminating between NC and CI patients on an individual patient level, potentially assisting in identifying any patients at risk for severe disease progression regardless of age, sex, or comorbidity status.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C127-C129, C131-C132 describe the relationship between classical risk factors and disease severity, noting important exceptions. The claim that the prognostic score adds value beyond age/sex/comorbidities (C131) is supported by Table 6 and Figure 9 showing significant score differences between NC and CI groups across age categories and comorbidity status. However, the claim is somewhat speculative (\"may have additional value\") and formal statistical testing comparing models with and without the score vs. classical risk factors alone is not presented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C122",
+      "C123",
+      "C124",
+      "C154"
+    ],
+    "result": "SARS-CoV-2 infection is accompanied by haemocytometric changes over time, and distinct haemocytometric parameters combined in a prognostic score can be used early to identify patients likely to deteriorate and benefit from ICU admission. Parameters reflecting activation or functional status of blood cells are better disease severity indicators than traditional parameters like lymphocyte or platelet counts. New parameters reflecting functional status are more frequently outside reference ranges in COVID-19 than classical parameters, but none of the measured parameters alone could discriminate patients based on disease severity. The ability to quantify blood cell activation rendered the prognostic score better than using only standard parameters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C97, C122-C124, C154 summarize the main findings about haemocytometric changes and the superiority of functional/activation parameters over traditional counts. The claim that no single parameter discriminates disease severity (C123) is supported by the low AUC values for individual parameters (C87). The rationale for combining multiple parameters (C124) is sound given heterogeneity in symptom duration at presentation. The superiority of activation parameters (C97, C154) is demonstrated by their inclusion in the final score and better performance than traditional parameters.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C133",
+      "C134",
+      "C135",
+      "C136"
+    ],
+    "result": "The mortality rate was relatively high in general ward patients (27.4%), comparable to ICU patients (29.3%), possibly due to ICU bed shortages or unfamiliarity with COVID-19 at the time. The score strives to identify deranged immune response as a harbinger of criticality before organ failure is clinically evident. Prognostic score values of CI patients were indistinguishable based on outcome (recovery vs. death), confirming the clinical applicability is to predict critical clinical course on an individual patient level, but not to predict mortality.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C133-C136 describe an important limitation and clarification of the score's intended use. The comparable mortality between ward and ICU patients (C133) is unusual and the speculation about causes is reasonable but unverified. The explicit statement that the score predicts critical illness but not mortality (C136) is supported by data showing no significant difference in scores between survivors and non-survivors in the CI group (C82). This is an important and honest limitation, though it may reduce clinical utility for some applications.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144"
+    ],
+    "result": "Most previous risk score studies were limited by small sample size, single center, univariate analysis, and lack of validation. The 4C mortality score from ISARIC incorporated >35,000 and 22,000 patients in development and validation cohorts and showed better performance than all previously published scores. The study score has several advantages: uses only objective haematology analyzer measurements vs. clinical observations subject to interpretation; aimed to be automatically generated vs. requiring calculation; uses the globally most commonly requested laboratory examination; haematology analyzers are more widely available than CRP measurements; and was developed for patients presenting at hospital vs. only admitted patients.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C137-C144 compare the study to prior work, particularly the 4C mortality score. The advantages listed (C140-C144) are reasonable but somewhat overstated. The claim that haematology analyzers are more widely available than CRP (C143) is stated as fact but not substantiated. The comparison is complicated by different endpoints (critical illness vs. mortality) and the 4C score's much larger sample size (C138). The advantages of automation (C141) and objectivity (C140) are valid, but the score's limitation to Sysmex analyzers (C152-C153) undermines the universality claims.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151"
+    ],
+    "result": "Study strengths include a relatively large group of confirmed COVID-19 cases from multiple centers and countries with a validation cohort, and all input data generated from a single haematology profile test (the most common baseline blood test globally). Limitations include the retrospective nature with sometimes incomplete data, performance during early pandemic when COVID-19 constrained healthcare and may have affected management decisions, need for data from outpatient settings and nursing homes, limited clinical data collection including comorbidities and ICU admission decisions, and ethics constraints preventing data collection on bacterial superinfections and medications that may affect outcomes and haemocytometric parameters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C145-C151 provide an honest assessment of study strengths and limitations. The multicenter nature with validation (C145) is a genuine strength. The limitation about retrospective design and incomplete data (C147) is acknowledged. The contextual limitation about early pandemic timing (C148) is important and may explain some unusual findings like comparable ward/ICU mortality. The inability to collect data on superinfections and medications (C151) is a significant limitation that could confound results, as these factors directly affect blood cell counts and outcomes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C152",
+      "C153",
+      "C155",
+      "C156",
+      "C157",
+      "C158"
+    ],
+    "result": "The prognostic score includes Sysmex-unique parameters and is not universally applicable to all haematology analyzers, although the concept is transferable. The finding of potential usefulness of extended haemocytometry may be impactful as Sysmex analyzers are widely available. Haematology blood profile requests are common, inexpensive, quick, highly standardized, quality-controlled baseline tests requested in both febrile and non-febrile patients. As non-febrile patients are at higher risk for serious COVID-19, early recognition is important to provide supportive care.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C152-C153, C155-C158 discuss the practical applicability and limitations of the score. The limitation to Sysmex analyzers (C152-C153) is a significant constraint on generalizability, though the authors note the concept is transferable. The claims about haematology testing being common, inexpensive, and standardized (C156) are accurate. The potential impact (C155) depends on Sysmex market share, which is not quantified. The point about non-febrile high-risk patients (C158) is valid but somewhat tangential to the main findings.",
+    "result_type": "MINOR"
+  }
+]

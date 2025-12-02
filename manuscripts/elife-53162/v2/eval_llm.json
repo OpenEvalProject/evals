@@ -1,0 +1,419 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "Behavioral analysis demonstrates that Agent C's agreement with the participant significantly predicts the likelihood of choosing Agent B on ally-choice trials, even after controlling for Agent B's agreement. A logistic regression model including both Agent B's and Agent C's agreement with the participant, plus their interaction, fit the data better than simpler models (\u03c7\u00b2(1) = 7.246, p=0.007). Agent B's agreement showed a significant positive effect (b = 2.325, p<0.001), as did Agent C's agreement (b = 1.322, p=0.008), with a significant negative interaction (b = \u22120.307, p=0.010).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C27 provide converging statistical evidence from logistic regression analyses showing that Agent C's agreement influences ally-choice behavior beyond dyadic similarity with Agent B. The likelihood-ratio test, main effects, and interaction term are all statistically significant with appropriate confidence intervals reported. This behavioral pattern is consistent with latent structure learning rather than simple dyadic similarity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "fMRI analysis reveals that dyadic similarity estimates correlate with activity in the pregenual anterior cingulate cortex (pgACC). The similarity-over-agents model also recruited pgACC along with bilateral temporoparietal junction, right superior temporal sulcus, and left supplementary motor area, with the pgACC cluster from similarity-over-agents encompassing the dyadic similarity pgACC cluster.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C32-C34 describe fMRI parametric modulator results that are internally consistent and supported by the neuroimaging data presented in Figure 4. The spatial overlap between dyadic similarity and similarity-over-agents models in pgACC is expected given their high correlation (r=0.96) and provides convergent evidence for pgACC's role in similarity-based processing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "Latent structure learning estimates uniquely recruit right anterior insula (rAI) extending into inferior frontal gyrus. This rAI cluster did not overlap with regions identified by dyadic similarity or similarity-over-agents models. The rAI cluster overlapped with 44.7% of an independently identified rAI region associated with non-social cluster assignment updating (Tomov et al., 2018), and activity in this independent ROI significantly correlated with the latent group model (FDR-corrected q = 0.014).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C35-C39 provide strong convergent evidence for rAI's specific role in latent structure learning. The spatial distinctness from other models' activations, quantitative overlap with an independent ROI from prior work, and significant correlation with the latent structure model all support this finding. The cross-study validation strengthens the interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Bayesian model selection analysis demonstrates that the latent structure learning model best explains variance in rAI activity. The protected exceedance probability (PXP) for the latent structure model in rAI was 82.34%, compared to 6.44% for dyadic similarity and 11.23% for similarity-over-agents models, with a Bayesian omnibus risk (BOR) of 0.190.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C42 report Bayesian model selection results using appropriate methods (k-fold cross-validation with leave-one-out). The PXP of 82.34% exceeds the ~50% discrimination threshold cited from Rigoux et al. (2014), and the BOR of 0.190 is below the 0.25 threshold, providing strong evidence that the latent structure model is more frequent in the population for explaining rAI variance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C44",
+      "C45"
+    ],
+    "result": "Bayesian model selection in pgACC shows no clear winner among the three models. PXPs were 51.58% for latent structure, 23.31% for dyadic similarity, and 25.11% for similarity-over-agents, with a BOR of 0.675.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C45 accurately report that no single model dominates in pgACC. The PXPs are relatively balanced and the BOR of 0.675 exceeds the 0.25 threshold, indicating that model frequencies are likely equal. This contrasts appropriately with the rAI results and suggests pgACC may track multiple similarity-related signals.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C5",
+      "C46",
+      "C47",
+      "C48",
+      "C63"
+    ],
+    "result": "Neural signal variability from rAI, but not pgACC or similarity-over-agents clusters, significantly improves prediction of ally-choice behavior beyond model predictions. Adding rAI signal to the latent structure model improved behavioral prediction (\u03c7\u00b2(1) = 5.312, p=0.021), while adding pgACC signal to dyadic similarity (\u03c7\u00b2(1) = 1.526, p=0.217) or any similarity-over-agents cluster signals (\u03c7\u00b2(1)s < 2.112, ps >0.250) did not improve predictions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C46-C48, C63 demonstrate that rAI neural variability has behavioral relevance through likelihood ratio tests. The analysis appropriately orthogonalized neural signals with respect to model predictions and used independent data (ally-choice phase vs. learning phase for ROI identification), avoiding circularity. The selective predictive value of rAI supports its functional role in latent structure-based decision-making.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "The study recruited 61 participants to achieve a final sample of 42 after exclusions (32 female, mean age 22.07 years). Sample size was determined based on previous fMRI studies. Exclusions were pre-specified and included participants who fell asleep (n=5), had excessive head movement \u22654mm (n=8), deduced the hypothesis (n=1), or had missing responses (n=1), plus 4 participants lost to attrition or technical issues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C21, C65-C74 provide transparent reporting of sample characteristics and exclusions. The final N=42 is reasonable for fMRI studies, though the justification based on 'other fMRI experiments' rather than formal power analysis is a limitation. Pre-specified exclusion criteria are appropriate, though the high exclusion rate (31%) should be noted. The sample is heavily female (76%), which may limit generalizability.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C83"
+    ],
+    "result": "Political issues were selected from ISideWith.com based on having \u2265500,000 votes and greatest agreement/disagreement discrepancies, yielding 48 issues. Agent faces were 36 White faces from the Chicago Face Database, gender-matched to participants to avoid similarity-based weighting. Presentation order was randomized.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C81, C83 describe appropriate stimulus selection and control procedures. Using only White faces and gender-matching controls for perceptual similarity confounds. However, this limits generalizability to interracial contexts. The political issue selection criteria are reasonable for creating divisive stimuli, though the restriction to White faces and the specific political context (U.S. politics circa 2017) constrain the scope of conclusions about social structure learning in general.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "The experimental design structured agent agreement patterns such that Agents B and C agreed on 5 issues, Agents A and C on 3 issues, and Agents A and B never agreed. This structure was intended to promote clustering of B and C together. Agent positions were randomly assigned within these constraints, resulting in some agents expressing mixed partisan beliefs. Agreement counts between participants and agents varied across blocks and participants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C98 describe the experimental manipulation clearly. The agreement structure is designed to test latent structure learning predictions while allowing natural variability. The randomization within constraints is appropriate, though it creates some agents with ideologically incoherent profiles. C99 cites prior work showing the model still predicts behavior with such profiles, addressing this potential concern.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "fMRI data were acquired on a 3T Siemens Prisma scanner with 32-channel head coil using multi-band EPI (69 slices, 2mm isotropic, TR=1.5s, TE=30ms, multi-band factor=3). Preprocessing in SPM12 included realignment, unwarping, segmentation, normalization to MNI space, and smoothing with 8mm FWHM kernel.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C113 provide standard and appropriate fMRI acquisition and preprocessing parameters. The multi-band sequence enables faster TR for better temporal resolution. Preprocessing steps are conventional and well-documented. The 8mm smoothing kernel is reasonable for group-level analysis, though it may reduce spatial specificity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C116",
+      "C119",
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "fMRI data were analyzed using event-related GLM with parametric modulators for each model (dyadic similarity, similarity-over-agents, latent structure). Modulators were not orthogonalized to the main regressor to preserve interpretation of absolute values. Models were analyzed separately as they represent different hypotheses. Statistical threshold was p<0.001 voxel-wise with cluster-level FWE correction at \u03b1=0.05.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C114-C122 describe appropriate fMRI analysis methods. The decision not to orthogonalize parametric modulators is justified by citation to Mumford et al. (2015) and the goal of tracking absolute rather than mean-centered values. Analyzing models separately is reasonable given they test different hypotheses, though C118 notes that including all three simultaneously yielded no significant results, likely due to high collinearity (C123-C127). The statistical threshold is standard for fMRI.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "Parametric modulators showed high correlations: dyadic similarity and latent structure averaged r=0.86 (range 0.56-0.97, VIF=5.06); latent structure and similarity-over-agents averaged r=0.79 (range 0.38-0.95); dyadic similarity and similarity-over-agents averaged r=0.96 (range 0.90-0.99, VIF=13.79).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C123-C127 transparently report high correlations between parametric modulators, which is expected given they derive from similar inputs. The VIF between dyadic similarity and latent structure (5.06) suggests acceptable collinearity, while the VIF between dyadic and similarity-over-agents (13.79) indicates problematic collinearity. This high correlation explains why including all models simultaneously (C118) failed and justifies the separate model approach, though it also makes it challenging to definitively attribute neural activity to one model versus another.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134"
+    ],
+    "result": "The latent structure learning model uses a Chinese restaurant process prior over group assignments with dispersion parameter \u03b1=2, combined with a Dirichlet-Multinomial likelihood that favors groupings where individuals in the same group show similar choice patterns. Parametric modulator values represent the marginal posterior probability that an agent belongs to the same group as the participant. Neural signal decoding used L2-regularized GLM with \u03bb=1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C128-C134 describe the computational model with appropriate mathematical detail and citations. The Chinese restaurant process is a standard Bayesian nonparametric prior for clustering. The choice of \u03b1=2 is stated to be robust to variation. The Dirichlet-Multinomial likelihood is appropriate for categorical choice data. The regularization parameter \u03bb=1 for signal decoding follows prior work (Tomov et al., 2018). The model is well-specified and theoretically motivated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "The latent structure learning model predicts that a third agent (Agent C) can influence decisions between two other agents (A and B) even when dyadic similarity with A and B is equated, because the third agent alters the inferred group structure. Dyadic similarity models would not predict such effects because they only consider pairwise similarity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C16, C28-C30 clearly articulate the key theoretical distinction between models. The prediction is logically derived from the models' assumptions and illustrated in Figure 1. This theoretical framework appropriately motivates the experimental design and analysis. The behavioral results (C22-C27) confirm this prediction, and C31 notes prior work has demonstrated this disambiguation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C49",
+      "C50"
+    ],
+    "result": "This study provides the first evidence that pgACC supports incremental revisions of similarity representations between oneself and others, both directly and across third agents. Using novel agents allowed examination of how alignment changes as preferences are learned over time, unlike research relying on preexisting group knowledge.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C49 asserts this is the 'only evidence of which we are aware' for pgACC tracking incremental similarity revisions, but provides no systematic review or citations to support this novelty claim. While the experimental approach (C50) of using novel agents is indeed advantageous for studying learning dynamics, the claim of being 'first' or 'only' evidence requires more rigorous support. The pgACC findings themselves are supported (C32-C34), but the novelty claim is not adequately substantiated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "The rAI result is consistent with prior work on non-social latent structure updating (Tomov et al., 2018), but social categorization is distinct because it requires self-categorization. Thus, rAI is capable of learning egocentrically defined latent structures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C53 appropriately connect the current findings to prior work while noting an important distinction. The overlap analysis (C37-C39) supports consistency with Tomov et al. (2018). The distinction about self-categorization (C52) is supported by citation to Turner et al. (1987). The conclusion (C53) that rAI handles egocentric latent structures is a reasonable inference from the data, extending prior findings to the social domain.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "The rAI/IFG region identified is well-positioned for flexible coalition representation due to connectivity with salience detection and cognitive control networks. The IFG pars orbitalis component has been associated with hierarchical processing in language and music, sentence comprehension, sensitivity to hierarchical violations, and episodic recombination. By analogy, it may build up inferences of social latent structures as agent preferences are learned.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C54-C62 provide extensive discussion of rAI/IFG function based on prior literature (C54-C61 supported by citations). However, C62's claim that IFG 'may be' building up social structure inferences is explicitly speculative ('Just as this area may be recruited...'). While the analogy to linguistic/musical hierarchical processing is interesting and the citations support IFG's role in those domains, the extension to social structure learning remains a hypothesis rather than a demonstrated result. The speculation is reasonable but not empirically tested in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C64"
+    ],
+    "result": "It is possible that pgACC signal might have been more relevant for predicting behavior if participants had been asked to make different choices, such as identifying which agent better represented a particular trait.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C64 is explicitly speculative ('It is possible that had participants been asked...'). While this is a reasonable hypothesis about task-dependent neural-behavioral relationships, it is untested and purely conjectural. The claim appropriately acknowledges a limitation of the current findings (that pgACC signal did not predict ally-choice behavior) but offers no empirical support for the alternative scenario.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C7",
+      "C8"
+    ],
+    "result": "Humans form social coalitions in every society, and being able to distinguish 'us' from 'them' is a core social capacity. However, we know surprisingly little about how social group boundaries are learned and represented in the brain, particularly without overt group membership cues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C7, C8 provide appropriate background framing. C1 and C7 make general statements about human social behavior supported by citation to Brown (1991). C2 and C8 characterize the state of knowledge in the field, which is a reasonable assessment given the novelty of the experimental approach. These are standard introductory claims that contextualize the research question.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "One dominant account proposes that people use self-similarity on contextually relevant features to distinguish in-group from out-group members, with neuroimaging studies identifying overlap between self-referential processing and in-group categorization in pgACC. An alternative account suggests people rely on functional relations ('Are you with me or against me?') rather than similarity. Social group dynamics may be better captured by models integrating information about how agents relate to one another, allowing inference of latent group structure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C13 accurately summarize prior theoretical accounts with appropriate citations (C10-C12). C13 is labeled as speculation in the evidence, but it is better characterized as a theoretical proposal that motivates the current work. The progression from dyadic similarity to functional relations to latent structure learning represents a logical theoretical development that frames the experimental hypotheses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C17"
+    ],
+    "result": "Recent evidence suggests that implicit bias and behavioral discrimination along political party lines is now as potent as bias against racial out-groups, justifying the focus on political issues in this study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C17 is supported by citations to Iyengar et al. (2012) and Iyengar and Westwood (2015). This provides appropriate justification for using political issues as stimuli. However, the study's restriction to White faces (C83) means it cannot directly test whether political bias is 'as potent as' racial bias, only that political issues are sufficiently divisive to study social structure learning.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C31"
+    ],
+    "result": "Disambiguation between dyadic similarity and latent structure learning accounts of ally-choice has been demonstrated previously with model simulations and behavioral studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C31 is supported by citations to Gershman et al. (2017) and Lau et al. (2018). This appropriately acknowledges prior work establishing the behavioral signature of latent structure learning, which the current study extends to the neural level. The citation to Lau et al. (2018) is particularly relevant as it appears to be the authors' own prior behavioral work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C99"
+    ],
+    "result": "In a previous behavioral study (Lau et al., 2018, Experiment 2), participants exhibited behavior predicted by the latent structure learning model despite learning about agents with less ideologically coherent profiles (mixed left and right partisan positions).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C99 appropriately cites prior work to address a potential concern about the current study's random assignment of agent positions (C97-C98), which could create ideologically incoherent agents. This citation demonstrates that the latent structure learning model's predictions hold even when agents don't have coherent political ideologies, supporting the validity of the current experimental approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C75",
+      "C76"
+    ],
+    "result": "Participants provided informed consent to participate and consent to publish. All procedures complied with Harvard University's Committee on the Use of Human Subjects' guidelines (Protocol #IRB15-2048).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C76 document appropriate ethical procedures and IRB approval. This is standard reporting for human subjects research and indicates the study met institutional ethical requirements.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C82",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "The experimental task involved specific timing parameters (4.5s for choices, 3-16s jittered ITI generated by optseq), visual feedback displays, and randomization procedures for issue order, agent order, and agent names.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82, C84-C91 provide detailed methodological information about task timing, display, and randomization. These are appropriate procedural details that support reproducibility. The jittered ITI using optseq is standard for fMRI designs to optimize estimation efficiency.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C118"
+    ],
+    "result": "No clusters survived correction when all three models (dyadic similarity, similarity-over-agents, latent structure) were included as parametric modulators simultaneously.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C118 reports a negative result from an analysis approach. This is important for transparency and is explained by the high collinearity between models (C123-C127), particularly between dyadic similarity and similarity-over-agents (r=0.96, VIF=13.79). The failure of the simultaneous model justifies the separate model approach used in the main analyses.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,268 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "Two behavioral experiments demonstrate that subjects exhibit categorical perception of ambiguous letter/digit stimuli, with performance decreasing for ambiguous stimuli and reaction times increasing with stimulus uncertainty.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C21 provide converging behavioral evidence from two experiments showing categorical perception (C18: sigmoidal better than linear models, p=0.017), performance effects (C20: 65% vs 92%, p<0.001), and RT effects (C21: 690ms vs 624ms, p<0.001). The statistical tests are appropriate and results are consistent across experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C22",
+      "C23",
+      "C79"
+    ],
+    "result": "MEG source localization confirms feedforward visual processing within 200ms, with early responses in primary visual cortex (~70ms) propagating along ventral and dorsal pathways, followed by sustained distributed activity across associative cortices until 500-600ms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C22, C23, and C79 consistently describe the temporal dynamics of visual processing confirmed by MEG source localization. The early feedforward response (<200ms) and subsequent sustained activity (>200ms) are well-documented with spatial and temporal specificity. C79 additionally confirms retinotopic organization consistent with prior literature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Multivariate decoding reveals five hierarchically organized representations (stimulus position, identity, perceptual category, uncertainty, and button press) that emerge sequentially over >600ms, with peak decoding times correlating with anterior-posterior spatial location (r=0.57, p<0.001).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C42 provide comprehensive temporal and spatial decoding results for all five features. Statistical significance is established with appropriate cluster correction, and the hierarchical organization is demonstrated both temporally (sequential peaks) and spatially (posterior-to-anterior progression). The extended timescale (>600ms) exceeds feedforward processing, supporting recurrent involvement.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C33",
+      "C34"
+    ],
+    "result": "Letter/digit category representations generalize to passive viewing of different tokens (max AUC=0.55, p<0.01, 200-550ms), demonstrating category-specific representations independent of specific pixel arrangements, though active trials show enhanced decoding after 350ms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C34 demonstrate that perceptual category representations are not stimulus-specific through successful generalization to different tokens during passive viewing. The divergence after 350ms between active and passive trials is appropriately interpreted as task-related enhancement. This provides important evidence for abstract categorical representations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Temporal generalization analyses reveal that representations are maintained over hundreds of milliseconds but with dynamically changing neural patterns, as evidenced by significantly longer total decoding duration compared to single-decoder generalization (e.g., 1239ms vs 287ms for perceptual category, t=-61.39, p<0.001).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C50 provide strong evidence for dynamic maintenance through temporal generalization analyses. The key comparison between total decoding duration and single-decoder generalization is statistically robust and demonstrates that representations depend on partially distinct activity patterns over time. This argues against purely feedforward or static maintenance models.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C51",
+      "C52"
+    ],
+    "result": "Spatial and temporal generalization analyses together support a hierarchical recurrent architecture (Model 4) where layers generate, maintain, and broadcast representations across partially-overlapping brain areas.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C52 synthesize spatial decoding (showing distributed, overlapping representations) and temporal generalization results to support a specific computational model. The inference is well-justified by the data showing both spatial distribution and temporal dynamics that are inconsistent with simpler feedforward or purely local recurrent models.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Neural representation latencies correlate with reaction times, with increasing correlation strength from perceptual category (r=0.35, p=0.006) to uncertainty (r=0.37, p=0.004) to button press (r=0.66, p<0.001), demonstrating that hierarchical recurrent processes partially account for behavioral variability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C56 show systematic increases in correlation strength across the processing hierarchy, providing evidence that delays accumulate across processing stages. The statistical significance is established for all three features, and the pattern supports the hierarchical accumulation hypothesis. However, the correlations are modest for early features, appropriately characterized as 'partial' explanation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Perceptual category representations transition from linear (210-530ms, r=0.38\u00b10.03) to categorical (400-810ms, sigmoid better than linear, r=0.77 vs 0.70), with ambiguous stimuli reaching peak decodability 205ms later than unambiguous stimuli (p<0.001).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C61 demonstrate a temporal shift from graded to categorical representations with appropriate statistical comparisons. The interaction between trend type and time window is significant (C61: p=0.002), and the delay for ambiguous stimuli (C60) provides converging evidence. The spatial localization to VWFA (C58) adds anatomical specificity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Motor representations are predominantly categorical (440-1290ms, mean t=3.17, p<0.001) with only transient linear trends (410-580ms), suggesting motor signals derive from categorical perceptual inputs rather than graded sensory evidence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C65 show that motor representations differ from perceptual representations by being predominantly categorical throughout their time course. The brief linear phase (C63) and predominantly categorical pattern (C62) support the inference that motor signals receive categorical inputs (C64). This completes the cascade from graded sensory to categorical perceptual to categorical motor representations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C66"
+    ],
+    "result": "MEG source reconstruction has inherent limitations that prevent definitive conclusions about subcortical contributions and within-area dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C66 appropriately acknowledges methodological limitations of MEG source reconstruction. This is a well-known limitation of the technique and the authors correctly note that invasive recordings would be needed to address these questions. This represents appropriate scientific caution.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C78"
+    ],
+    "result": "Multivariate decoding analyses were far more sensitive than univariate tests for detecting experimental effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C78 is supported by the comparison shown in Figure 2, where multivariate analyses detected significant effects (e.g., perceptual category) that did not survive correction in univariate analyses. This is an important methodological observation about the relative sensitivity of analysis approaches.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "The study's findings are consistent with previous research showing perceptual decisions in fronto-parietal cortices, category representations in prefrontal cortex, and recurrent processing in inferotemporal cortex, while extending these findings to show distributed representations across parietal and prefrontal areas.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C71 appropriately contextualize the current findings within prior literature. The citations are relevant and the comparisons are fair. The claim of extension beyond inferotemporal cortex (C71) is supported by the spatial decoding results showing widespread representations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "Uncertainty representations emerged late (~300ms) and extended into subsequent trials, potentially due to confounds with memory and task-engagement, though this contrasts with early uncertainty sensitivity (~50ms) reported in auditory tasks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C72-C74 identify an unexpected finding (late uncertainty) and offer speculative explanations. C73 acknowledges potential confounds but doesn't test them. C74 notes contrast with auditory studies but the comparison across modalities is speculative. The late timing is data-supported (C72, C35-C37) but the explanations remain hypothetical.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C75",
+      "C76"
+    ],
+    "result": "The generation and broadcast of letter/digit representations across cortex supports Global Neuronal Workspace Theory's prediction that perceptual representations must be broadcast to associative cortices for subjective reports.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C75-C76 interpret findings in the context of Global Neuronal Workspace Theory. While the data show distributed representations (supported), the specific link to 'subjective perception' and the causal claim that broadcast is necessary for reports (C76) goes beyond what the data demonstrate. The study doesn't directly test consciousness or manipulate broadcast to establish necessity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C1",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "The introduction establishes that while feedforward models can explain some aspects of visual recognition, they cannot account for trial-to-trial variability in reaction times or prolonged neural responses, motivating investigation of recurrent processing organization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C16 provide appropriate background and motivation from the literature. The limitations of feedforward models (C10-C12) and evidence for recurrent processing (C13) are well-supported by citations. The identification of the knowledge gap (C15-C16) appropriately motivates the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C77"
+    ],
+    "result": "The experimental design allows unprecedented dissection of processing stages transforming sensory input into perceptual representations and actions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C77 makes a strong assertion about the design being 'unprecedented.' While the orthogonalization of five features and parametric manipulation is sophisticated, the claim of being unprecedented is difficult to evaluate without systematic comparison to prior work. The design is certainly well-suited to the research questions but the superlative claim is not substantiated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C6"
+    ],
+    "result": "The abstract claims that brain responses sequentially generate five levels of representations through hierarchical recurrent assemblies that account for perceptual reports and reaction times.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C6 summarize the main findings presented in the abstract. These are supported by the detailed results in claims C24-C65, which provide the empirical evidence for sequential representations (C24-C42), hierarchical recurrent architecture (C43-C52), and relationship to behavior (C53-C65). The abstract accurately reflects the paper's findings.",
+    "result_type": "MAJOR"
+  }
+]

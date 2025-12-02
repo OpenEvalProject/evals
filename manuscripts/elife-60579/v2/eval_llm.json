@@ -1,0 +1,399 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C64",
+      "C65"
+    ],
+    "result": "IP-MS analysis reveals that SRRM2, not SRSF2, is the primary target of SC35 mAb. The authors performed immunoprecipitation-mass spectrometry using SC35 mAb and identified 432 significantly enriched proteins. SRRM2 was the most enriched protein by all metrics (unique peptides, total intensities, MS/MS spectra), far exceeding all SR-proteins including SRSF2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C42 provide converging evidence from IP-MS data (Figure 1A, Figure 1\u2014figure supplement 1) showing SRRM2 as the top hit with appropriate controls (IgG). The experimental design includes biological replicates, statistical thresholds (p<0.05, \u22652 peptides), and validation via STRING database analysis (C39) showing enrichment for spliceosome/NS components. The conclusion that SC35 primarily recognizes SRRM2 in IP context is well-supported by quantitative proteomics data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "SC35 mAb recognizes SRSF7 as the primary ~35 kDa band on immunoblots. Using tagged SRSF1-12 proteins and a degron-tagged SRSF7 cell line, the authors demonstrate that the 35 kDa band recognized by SC35 mAb corresponds to SRSF7, not SRSF2 as previously reported.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C51 are supported by multiple orthogonal approaches: (1) screening of all 12 SRSF proteins showing SRSF7 as main target (Figure 1B), (2) IP from untagged cells confirming SRSF7 enrichment (C45, Figure 1C), and (3) elegant degron experiment (C46-C49, Figure 1D) where tagging SRSF7 shifts the SC35-recognized band and degradation eliminates it. The convergence of these independent methods strongly supports the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C83"
+    ],
+    "result": "SC35 mAb recognizes SRRM2 on immunoblots with epitope mapping to amino acids 1,360-1,884. Using CRISPR-generated truncation series (SRRM2tr0-tr10), the authors show SC35 signal is stable through tr4, reduced in tr5, and lost from tr6 onward, mapping the epitope to the C-terminal region.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C70 and C83 are supported by systematic truncation mapping (Figure 2C) with appropriate controls using N-terminal SRRM2 antibody to confirm protein presence. The epitope localization is a logical inference from the truncation data. However, the resolution is limited to ~500 amino acid intervals, and fine epitope mapping would require additional experiments. The conclusion is well-supported within these constraints.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C84"
+    ],
+    "result": "SC35 mAb primarily stains SRRM2 in immunofluorescence. In SRRM2tr10 cells (lacking the SC35 epitope), SC35 signal virtually disappears while other NS markers (SON, SRRM1, RBM25, SRSF7) remain unaltered, demonstrating that SC35 immunofluorescence signal corresponds to SRRM2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C82 are strongly supported by immunofluorescence data (Figure 3A-C) using SRRM2tr10 cells as a genetic knockout control. The specificity is validated using SC35 mAb from two vendors and multiple NS markers as controls. The side-by-side imaging of tr0 and tr10 cells (C81, Figure 3B-C) provides compelling visual evidence. This is a well-controlled experiment with appropriate positive controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "SON and SRRM2 together form the core of nuclear speckles. Depletion of SON alone causes partial NS disassembly (collapsed speckles), but co-depletion of SON and SRRM2, or SON depletion in SRRM2tr10 cells, leads to near-complete NS dissolution with diffusion of NS markers (SRRM1, RBM25, PNN).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C12 and C103-C111 are supported by systematic depletion experiments in both HAP1 (Figure 5) and HEK293 cells (Figure 5\u2014figure supplement 4) with quantitative image analysis using ilastik/CellProfiler. The logic is sound: if both SON and SRRM2 are core components, removing both should dissolve NS more completely than removing either alone. The data support this prediction. However, the claim uses 'likely' appropriately as other interpretations (e.g., sequential dependency) aren't fully excluded.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "SRRM2 has a unique, non-redundant role in NS formation. Co-depletion of SON with SRRM1 or RBM25 does not dissolve NS, but co-depletion of SON with SRRM2 does, demonstrating SRRM2 cannot be functionally replaced by other NS-associated proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113-C116 are supported by comparative depletion experiments (Figure 5\u2014figure supplement 4-5) showing differential effects. The protein stability controls (C114) rule out indirect effects via degradation. This is a well-designed specificity control that strengthens the conclusion about SRRM2's unique role. The inference (C116) is justified by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C76"
+    ],
+    "result": "The intrinsically disordered regions (IDRs) of SRRM2 are important for protein interactions but not essential for cell viability. Full-length SRRM2 co-purifies SRRM1 and RBM25, but these interactions are severely compromised in SRRM2tr10. SRRM2tr10 cells are viable.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C74 are supported by co-IP data (Figure 2D) showing loss of SRRM1/RBM25 interactions in tr10. Claim C76 about viability is supported by the existence of homozygous tr10 cells (C75) that can be cultured. However, the viability assessment is limited\u2014no growth curves, stress sensitivity, or functional assays are shown. The conclusion is supported but could be strengthened with additional characterization.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C149"
+    ],
+    "result": "SRRM2 and SON show remarkable size variation across metazoan evolution involving IDR extensions. Phylogenetic analysis reveals SRRM2 and SON have broad size distributions (unlike other NS proteins), with size increases correlating with IDR expansion over ~0.6-1.2 billion years of metazoan evolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C98 and C149 are supported by comprehensive phylogenetic analysis (Figure 4, Figure 4\u2014figure supplements 1-2) using orthologue datasets and disorder prediction algorithms (MobiDB-Lite, IUPred2A). The analysis includes appropriate comparisons to other NS proteins (SRRM1, RBM25, PNN, PRPF8, COIL) as controls. The correlation between size increase and IDR content is clearly demonstrated. The methods are well-described and reproducible.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C146",
+      "C147",
+      "C148"
+    ],
+    "result": "The SC35 mAb was mischaracterized and actually targets SRRM2, not SRSF2. This mischaracterization hindered identification of the NS core, which consists of SON and SRRM2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C146 and C148 are well-supported by the cumulative evidence from IP-MS, immunoblotting, immunofluorescence, and functional depletion experiments. Claim C147 is speculative but reasonable given the historical reliance on SC35 mAb. The overall conclusion synthesizes multiple lines of evidence and represents the main finding of the paper.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C77",
+      "C78"
+    ],
+    "result": "Cross-reactivity with SRSF7 and limitations of immunoblotting techniques for large proteins obscured the fact that SC35 mAb primarily targets SRRM2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C77 is supported by the experimental data showing SRRM2 as the main target. Claim C78 is a reasonable speculation supported by citation to Bass et al., 2017 regarding technical limitations in detecting large proteins. The dual recognition (SRRM2 in IF, SRSF7 in WB) is demonstrated experimentally (Figure 2E). This explains the historical confusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Historical characterization and usage of SC35 mAb. The antibody was raised against spliceosomal extracts, reported to target SRSF2, frequently used to mark NS (termed 'SC35 domains'), but shows cross-reactivity and inconsistencies with SRSF2 localization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C5 and C31-C35 accurately summarize prior literature (Fu and Maniatis 1990, 1992; Fu et al. 1992; Neugebauer and Roth 1997; Politz et al. 2006; etc.). These are well-documented facts that establish the context and motivation for the current study. The inconsistencies noted (C35) are properly cited and set up the research question.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "Background on nuclear speckles biology. NS are prominent biomolecular condensates in the interchromatin space, contain RNA-processing factors, show phase-separation properties, and are involved in various cellular processes. Prior to this study, no organizing core had been identified.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C30 provide background context from established literature with appropriate citations. These accurately represent the state of knowledge in the field and are not contested. They establish the scientific context and gap that motivates the current work. All claims are properly attributed to prior studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "Historical precedent for SRRM2 antibodies. Blencowe et al. (1994) previously raised antibody B4A11 against nuclear matrix preparations that recognized SRRM2 and co-localized with NS, suggesting SRRM2 presence in both spliceosomal and nuclear matrix preparations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C89 accurately cite and interpret Blencowe et al. 1994. This historical context strengthens the authors' argument that SRRM2 has been associated with NS before but its central role was not recognized. The inference (C89) is reasonable given antibodies from different preparations recognize the same protein.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "SRSF7 and SRSF2 have significant nucleoplasmic pools in addition to NS localization, which is inconsistent with SC35 mAb staining patterns that are restricted to NS.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C54 are supported by prior literature (Politz et al. 2006; Prasanth et al. 2003; Sapra et al. 2009) and the authors' own observations. This discrepancy is a key observation that motivated the recharacterization of SC35 mAb. The logic is sound: if SC35 recognized SRSF7 or SRSF2 in IF, nucleoplasmic staining should be visible.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "SRRM2 properties and spliceosome association. SRRM2 is a ~300 kDa protein that co-purifies with spliceosomes, shows liquid-like behavior, co-localizes with SC35-stained NS, and joins the spliceosome at the Bact stage. Its orthologues interact with core spliceosomal components.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C63 accurately summarize established literature about SRRM2 with appropriate citations (Bertram et al. 2017; Bessonov et al. 2010; Rai et al. 2018; Miyagawa et al. 2012; Jia and Sun 2018; Grainger et al. 2009; Silva et al. 2011). This background establishes SRRM2 as a plausible SC35 target and provides context for its role in NS.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "Size comparison of SRRM2 orthologues. Human SRRM2 (2752 a.a.) is much larger than unicellular orthologues (S. cerevisiae Cwc21: 133 a.a., S. pombe Cwf21: 293 a.a., T. brucei: 143 a.a.), with the C-terminal extension predicted to be disordered.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C94 are supported by sequence data (C90-C93 are factual protein lengths) and disorder prediction (C94, Figure 2\u2014figure supplement 1B). This observation motivates the evolutionary analysis and supports the hypothesis about IDR-mediated NS formation. The data are straightforward and well-presented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "SRRM2 and SON are implicated in LLPS-mediated condensate formation and are positioned at the center of NS. Prior studies showed both proteins exhibit liquid-like behavior in cells and SRRM2 remains central in collapsed speckles after SON depletion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C100 are supported by citations to Rai et al. 2018 and Kim et al. 2019. Claims C101-C102 cite Fei et al. 2017 with the important reinterpretation that SC35 stains SRRM2, not SRSF2. This reinterpretation is justified by the current study's findings and strengthens the rationale for testing SON+SRRM2 as the NS core.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C112"
+    ],
+    "result": "Cajal body number remains unaltered in all experimental conditions (SON depletion, SRRM2 truncation), demonstrating specificity of effects to nuclear speckles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C112 is supported by COILIN staining quantification (Figure 5\u2014figure supplement 3B). This is an important negative control showing the manipulations specifically affect NS, not other nuclear bodies. The control strengthens the specificity of the conclusions about NS formation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C117"
+    ],
+    "result": "Mischaracterized antibodies are a primary culprit in the reproducibility crisis in natural sciences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C117 is supported by citation to Baker 2015 and represents established concern in the scientific community. This contextualizes the importance of the antibody recharacterization work. While not a result of this study, it appropriately frames the broader significance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128"
+    ],
+    "result": "Implications of SC35 mAb mischaracterization for prior studies. Previous work using SC35 mAb to study GSK-3 phosphorylation, cancer biomarkers, RNA Pol II dynamics, and NS structure may need reinterpretation in light of SRRM2 being the actual target.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C121-C128 accurately cite prior studies but the implications are speculative. While the authors correctly identify that these studies used SC35 mAb and interpreted results as SRSF2-related, determining whether conclusions change requires re-examining each study's specific context. The authors appropriately present these as examples requiring reconsideration rather than definitively invalidating prior work. This is responsible scientific communication but the actual impact on each cited study remains uncertain.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141"
+    ],
+    "result": "Context on other nuclear body cores and prior NS formation hypotheses. Other nuclear bodies have identified cores (NEAT1 for paraspeckles, COILIN for Cajal bodies, PML for PML bodies), while NS formation was hypothesized to occur through stochastic self-assembly. Various factors were proposed as important for NS but led to collapsed rather than dissolved speckles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C129-C141 accurately summarize prior literature with appropriate citations. This context establishes that (1) other nuclear bodies have identified cores, making the search for an NS core reasonable, and (2) prior attempts to identify NS cores were unsuccessful, highlighting the novelty of the current findings. The distinction between 'collapsed' and 'dissolved' speckles is important for interpreting the current results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C142",
+      "C143",
+      "C144",
+      "C145"
+    ],
+    "result": "Experimental conditions for studying NS-depleted cells. The spherical bodies remaining after SON depletion can be dissolved by co-depleting SRRM2 or using SRRM2tr10 cells. Since SON is essential for mitosis, this provides a ~24 hr window to study effects of lacking NS.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C142-C143 are supported by the experimental data (Figure 5, Figure 5\u2014figure supplement 4-5). Claim C144 is supported by citation to Sharma et al. 2010. Claim C145 is a reasonable inference about the experimental window, though the exact timing could vary. This represents an important practical outcome of the work\u2014enabling future functional studies of NS.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C150"
+    ],
+    "result": "IDRs are typically involved in LLPS and formation of biomolecular condensates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C150 represents established knowledge in the field of biomolecular condensates. This is well-supported by extensive literature and provides the conceptual framework for interpreting the IDR expansion in SRRM2 and SON. While not a result of this study, it's an accurate statement of current understanding.",
+    "result_type": "MINOR"
+  }
+]

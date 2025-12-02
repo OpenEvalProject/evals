@@ -1,0 +1,399 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "The study collected GPS tracking data from 243 participants (109 in Limbuak, 134 in Matunggong) over approximately 16 days each, generating 3.4 million GPS points representing 6.3 million person-minutes of sampling time. Median distance travelled was 1.8 km, with a maximum of 116 km.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C61 provide comprehensive descriptive statistics of the GPS tracking dataset. The sample sizes, temporal coverage (median 59.1% of sampling period), and spatial extent are clearly documented with appropriate summary statistics (medians, IQRs, ranges), providing a solid foundation for subsequent analyses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Utilisation distributions varied by gender, occupation, and site, with individuals in the more rural Limbuak site covering larger distances. Substantial differences in 24-hour movements were observed between seasons, but no seasonal differences were found during peak mosquito biting times (6pm-6am).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C66 describe patterns in human movement data supported by Table 2 and the text. The finding that seasonal differences disappear during peak biting hours (C66) is particularly important for the exposure modeling, though the statistical basis for this conclusion is not explicitly provided.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Human space use during peak vector times (6pm-6am) was highly predictable based on spatial and environmental factors, with strong negative correlations with distance from houses, roads, and slope. Models achieved high predictive accuracy (AUC ~0.94, RMSE <0.01). Demographic factors and seasons did not improve model predictions during peak biting times.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C73 describe the resource utilisation function models with strong performance metrics (Table 3). The high AUC values indicate excellent discrimination, and low RMSE suggests good fit. The finding that demographic factors don't improve nighttime predictions (C73) contrasts with 24-hour patterns, supporting a focused modeling approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Mosquito biting rate models based on 4,814 An. balabacensis from 328 sampling nights showed median biting rates of 2.1 bites/person/night. Models identified positive associations with vegetation indices (EVI) and negative associations with distance to forest and human population density. Sporozoite rate was 0.24% (4/1524 mosquitoes tested).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C81 describe the entomological data and spatiotemporal modeling (Tables 4-5). The models appropriately account for spatial structure using SPDE/GMRF approaches. However, the very low sporozoite rate (C81) introduces substantial uncertainty in exposure estimates, which the authors acknowledge by using uniform rates across the site.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "Individual exposure risk varied 150-fold between participants (range: 0.00005-0.0078 infected bites/night), but no clear differences were observed by gender, age, occupation, or distance travelled. High-risk individuals were identified across all demographic groups.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C84, C97-C99 describe individual-level exposure heterogeneity (Table 6). The large variation in exposure despite lack of demographic associations is well-documented. However, the absence of statistical testing (no p-values reported for demographic comparisons) and the statement 'no clear differences' (C83) is somewhat vague without formal hypothesis testing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "At the community level, despite 43% forest cover and high predicted biting rates in forests (mean: 1.94), less than 8% of person-nights occurred in forests. When human space use was incorporated, over 91% of predicted infected bites occurred within 500m of houses, compared to only 8.6% predicted by mosquito-only models. Highest exposure risks were near forest edges and close to households.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C93 present the key integrated finding (Figure 5). The dramatic shift from forest-focused (42% of bites, C90) to peri-domestic exposure (91% within 500m of houses, C92) when incorporating human movement is compelling and well-supported by the data integration. This represents the core novel contribution of the study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C96",
+      "C105",
+      "C114",
+      "C115"
+    ],
+    "result": "The study demonstrates that areas close to both secondary forest and houses (ecotones) have the highest probability of P. knowlesi exposure. Despite higher biting rates in forests, incorporating human movement illustrates that the majority of exposure occurs in areas with lower vector density but higher human use, particularly at forest edges.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C4, C96, C105, C114-C115 represent the main conclusions. These are well-supported by the integrated analysis showing >90% of infectious bites at forest edges/peri-domestic areas. The ecotone importance is quantitatively demonstrated through the spatial modeling, though the term 'ecotone' itself could be more precisely defined in terms of distance metrics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "The study was limited by non-uniform spatial and temporal coverage of mosquito data assembled from other studies, precluding model development for Limbuak. Additional limitations included difficulty obtaining high-resolution remote sensing data due to cloud cover and the use of uniform sporozoite rates due to few positive mosquitoes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C112 transparently acknowledge important limitations. The non-uniform mosquito sampling (C109) and inability to model Limbuak (C110) are significant constraints. The uniform sporozoite rate assumption (C112) is reasonable given only 4 positive mosquitoes, but does limit spatial refinement of infection risk estimates.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C127",
+      "C128",
+      "C129",
+      "C130"
+    ],
+    "result": "The study employed biased random bridges to calculate utilisation distributions, with parameters Tmax=3hr, Lmin=10m, and hmin=30m. Resource utilisation functions were modeled as Bayesian semi-continuous hurdle models using INLA with SPDE/GMRF spatial structures. Spatial autocorrelation was not explicitly modeled due to distance-based covariates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C118-C130 describe the methodological approach with appropriate citations. The biased random bridge parameters (C119-C121) are justified based on GPS error and habitat resolution. The Bayesian hurdle model approach (C125) is appropriate for zero-inflated utilisation data. The INLA implementation (C127-C128) provides computational efficiency. However, the decision not to include explicit spatial autocorrelation (C129) could be questioned, as distance covariates may not fully capture spatial structure.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C100",
+      "C101"
+    ],
+    "result": "A previous comprehensive survey in this community found equal proportions of men and women exposed to P. knowlesi based on antibody responses, with data suggesting higher numbers of non-clinical infections in women.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C101 cite previous work (Fornace et al., 2018; 2016a) to contextualize the current findings of no gender differences in predicted exposure. This appropriately reconciles the modeling results with serological and clinical data, though the mechanisms underlying differential clinical presentation remain unexplained.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C103",
+      "C105"
+    ],
+    "result": "The study findings illustrate the importance of targeting outdoor transmission and highlight the potential importance of peri-domestic habitats in P. knowlesi transmission, providing quantitative insight on human-mosquito mixing at forest fringes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103 and C105 draw appropriate public health implications from the data showing substantial outdoor exposure during peak biting times and concentration of risk at forest edges. These conclusions logically follow from the spatial exposure patterns, though specific intervention recommendations would require additional cost-effectiveness and feasibility analyses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C113"
+    ],
+    "result": "This is claimed to be the first large-scale study to utilize GPS tracking data and ecological methods to create fine-scale maps of exposure risk.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C113 asserts novelty but provides no systematic comparison with previous studies. While the integration of GPS tracking, ecological utilisation distribution methods, and disease exposure modeling appears novel for P. knowlesi, similar approaches have been used for other vector-borne diseases (as cited in the introduction). The specific combination and scale may be novel, but this requires more careful qualification.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "The study was conducted in two rural communities in Northern Sabah, Malaysia: Matunggong (population 1260) and Limbuak (population 1009), both with reported P. knowlesi cases and seroprevalence of 6.8% and 11.7% respectively.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C47 provide factual descriptions of study sites with appropriate citations. The seroprevalence data (C46-C47) from Fornace et al. 2018 establishes that both sites have active transmission, justifying their selection for this movement and exposure study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C54",
+      "C55"
+    ],
+    "result": "The most commonly reported occupation was farm or plantation work (n=73), primarily conducted within the immediate vicinity of houses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C55 describe occupational characteristics of the sample. The finding that farm work occurs near houses (C55) is important context for interpreting the peri-domestic exposure patterns, though the basis for this statement (observation, questionnaire, or GPS data) is not entirely clear.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C5",
+      "C6",
+      "C7",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C18",
+      "C22",
+      "C27",
+      "C28",
+      "C29",
+      "C31"
+    ],
+    "result": "The introduction establishes that human movement into vector/reservoir habitats determines zoonotic disease risk, but few data quantify land use impacts on transmission. For P. knowlesi specifically, the impact of human movement and land use on individual infection risk is poorly understood, with previous studies relying on self-reported travel and lacking spatial detail on movement patterns across demographic groups.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C5-C7, C11-C16, C18, C22, C27-C29, C31 establish the knowledge gaps and study rationale. These are appropriately supported by citations and clearly identify the limitations of previous approaches (questionnaire-based, residence-focused, lacking demographic detail). This effectively motivates the GPS tracking and integrated modeling approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C117"
+    ],
+    "result": "P. knowlesi is carried by macaques and transmitted by An. balabacensis (comprising >95% of Anopheles in the region), which is primarily exophagic and found in farm, forest, and village areas. Macaques are present near settlements and transmission remains primarily zoonotic, though higher vector abundances near case households suggest possible peri-domestic transmission.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C10, C32-C37, C117 describe the disease system ecology with appropriate citations. The characterization of An. balabacensis as the primary vector (>95%, C117) justifies focusing on this species. The exophagic behavior (C33) is crucial context for outdoor exposure risk. The suggestion of peri-domestic transmission (C37) from Manin et al. 2016 provides preliminary evidence that this study's findings confirm and quantify.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "Previous modeling and empirical studies have demonstrated the importance of human movement and mixing patterns in disease transmission, with mobile phone data revealing migration's role in disease spread at large scales, while GPS tracking allows fine-scale movement quantification despite mobile data limitations in forested areas.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C26 review relevant methodological literature on human movement and disease, appropriately citing previous work. The progression from mathematical models (C19-C21) to empirical movement data (C23-C26) logically positions the current study's approach. The acknowledgment of mobile phone data limitations in forests (C25) justifies the GPS tracking methodology.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Functional ecology approaches and utilisation distribution methods from wildlife ecology can be applied to model population distributions and relate transmission to landscape factors. Biased random bridges improve on kernel density estimates by using time-ordered GPS points to interpolate missing values and adjust for spatial error.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C41 introduce the ecological methods adapted for this study, with appropriate citations. The description of biased random bridges (C40-C41) accurately characterizes their advantages over traditional kernel density methods, particularly for handling missing data and temporal autocorrelation in GPS tracks.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C48",
+      "C49"
+    ],
+    "result": "The enhanced vegetation index (EVI) was used to capture temporal vegetation changes, as it has higher sensitivity in high biomass areas compared to NDVI.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C49 justify the choice of EVI over NDVI for this tropical forest environment. This is a reasonable methodological choice for high biomass areas, though the statement about EVI's superior sensitivity (C49) is presented as general knowledge without citation to the specific comparative studies establishing this property.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C104"
+    ],
+    "result": "Previous studies associated P. knowlesi with forest exposure and reported higher biting rates in forest interiors, with initial cases primarily in adult men working in forests.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C95, C104 cite previous work (Grigg et al. 2017, Wong et al. 2015, Singh et al. 2004) to establish the prior understanding that P. knowlesi is a forest-associated disease. This provides important context for the study's contrasting finding of predominantly peri-domestic exposure, highlighting the novelty of incorporating human movement data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C102",
+      "C106",
+      "C107"
+    ],
+    "result": "Malaria control programs typically rely on indoor interventions (bednets, indoor spraying), while Malaysia is moving toward elimination and incorporating novel surveillance methods including monitoring land use and at-risk populations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102, C106-C107 provide public health context. The description of typical control measures (C102) is general knowledge, while Malaysia's elimination efforts (C106-C107) are supported by citation to national guidelines. This context motivates the need for understanding outdoor and peri-domestic transmission.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C116"
+    ],
+    "result": "The study results can inform understanding of other zoonotic and vector-borne diseases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C116 suggests broad applicability but provides no specific examples or analysis of how the methods or findings would transfer to other disease systems. While the general approach of integrating human movement with vector ecology is likely applicable elsewhere, the specific spatial patterns (peri-domestic concentration) may be unique to this exophagic vector and zoonotic transmission system.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C126"
+    ],
+    "result": "Including equal numbers of presences and absences can improve predictive abilities of species distribution models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C126 cites Barbet-Massin et al. 2012 to justify the balanced presence-absence sampling strategy. This is an established practice in species distribution modeling, though the optimal ratio can depend on prevalence and the specific modeling approach. The citation provides appropriate support for this methodological choice.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C131",
+      "C132",
+      "C133",
+      "C134"
+    ],
+    "result": "The study received ethical approval from Malaysian and UK research ethics committees, with written informed consent obtained from all participants or guardians and assent from children under 18.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C131-C134 document ethical approvals and consent procedures. These are standard requirements for human subjects research and appear appropriately obtained. The dual approval from Malaysian and UK committees is appropriate given the international collaboration.",
+    "result_type": "MINOR"
+  }
+]

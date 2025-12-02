@@ -1,0 +1,322 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "Between January 1, 2015 and December 31, 2017, the Centre department of Haiti reported 10,931 suspected cholera cases (10,428 with comprehensive location), 2,144 cases requiring IV rehydration, and 509 positive V. cholerae O1 cultures (48% positivity rate) from 1,070 samples. Cases originated from 1,497 localities and exhibited marked seasonality.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C27 provide descriptive epidemiological data from the study's surveillance system. The data are internally consistent, include appropriate denominators, and are supported by referenced figures. The 48% culture positivity rate is reasonable for a cholera surveillance system with selective sampling.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Using a specific outbreak definition (\u22652 suspected cases with \u22651 severely dehydrated or culture-positive case within 3 days in the same locality after a 21-day refractory period), 452 cholera outbreaks were identified across 290 localities. Outbreaks had a median size of 3 cases (IQR 4) and median duration of 5 days (IQR 18), occurring mainly during case incidence peaks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C32 describe the outbreak identification methodology and characteristics. The outbreak definition is clearly specified and appropriate for the study objectives. The descriptive statistics are consistent with the data shown in Figures 1-3. However, the wide IQR for duration (18 days) suggests substantial heterogeneity in outbreak characteristics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "During the study period, 3,887 CATIs were notified by NGO rapid response teams, with 3,533 (91%) having comprehensive location data and 2,719 (70%) conducted with EMIRA staff. Of these, 3,596 (93%) were categorized as complete CATIs, with 1,922 (49%) including antibiotic prophylaxis. Only 633 complete CATIs (18%) were conducted in localities experiencing identified outbreaks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C38 provide descriptive data on CATI implementation. The percentages are internally consistent and the low proportion (18%) of CATIs conducted during identified outbreaks is acknowledged by the authors as a limitation. This finding is important for interpreting the effectiveness estimates.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Response promptness (time to first complete CATI) significantly improved over the six study semesters, was significantly faster in more densely populated localities, and was slower in localities with previous OCV campaigns. Outbreaks with prompter responses had significantly more positive cultures during the first three days than those with delayed responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C39-C42 describe confounding factors affecting response promptness. While statistical significance is reported (Table 1), claim C42 suggests confounding by indication\u2014prompter responses occurred in more severe outbreaks (more positive cultures). This is a critical bias that the authors acknowledge but may not fully address through adjustment. The direction of this bias could inflate effectiveness estimates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C43",
+      "C44"
+    ],
+    "result": "Response intensity (complete CATIs per week and per case) significantly improved over the six study semesters. Outbreaks receiving more CATIs per case had significantly fewer cases during the first three days than those receiving less intense responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C43-C44 describe temporal trends and confounding by indication for response intensity. Similar to response promptness, claim C44 indicates that more intense responses were associated with initially less severe outbreaks (fewer early cases), suggesting confounding by indication in the opposite direction. This complex confounding pattern raises concerns about residual bias in effectiveness estimates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "Prompt CATI response was associated with reduced outbreak size. Compared to first complete CATI >7 days after outbreak onset, a first complete CATI \u22641 day showed crude effectiveness of 83% (95% CI: 71-90%) and adjusted effectiveness of 76% (95% CI: 59-86%) in reducing cases from day 4 onward.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C45-C48 present the primary effectiveness estimates for response promptness on outbreak size. While statistical methods (GLMMs with negative-binomial distribution) are appropriate and adjustment for confounders was performed, several concerns remain: (1) confounding by indication may not be fully addressed despite adjustment; (2) the outcome (cases from day 4) excludes early cases, which may bias results; (3) wide confidence intervals suggest imprecision; (4) the quasi-experimental design lacks randomization. Sensitivity analyses (C61) provide some reassurance, but causality cannot be firmly established.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Prompt CATI response was associated with reduced outbreak duration. Compared to first complete CATI >7 days after outbreak onset, a first complete CATI \u22641 day showed crude effectiveness of 59% (95% CI: 36-74%) and adjusted effectiveness of 61% (95% CI: 41-75%) in reducing outbreak duration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C49-C52 present effectiveness estimates for response promptness on outbreak duration using survival analysis (Andersen-Gill models). The methodology is appropriate for time-to-event data with repeated events. However, similar concerns apply as for outbreak size: potential residual confounding, quasi-experimental design limitations, and the possibility that outbreak duration is influenced by surveillance intensity rather than true transmission dynamics. The moderate effect size (61%) with overlapping confidence intervals across some categories (Table 4) suggests uncertainty.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Response intensity (CATIs per week) was negatively associated with outbreak size. Compared to <0.25 complete CATIs per week, \u22651 complete CATI per week showed crude effectiveness of 74% (95% CI: 44-88%) and adjusted effectiveness of 59% (95% CI: 11-81%) in reducing cases from day 4 onward.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C53-C56 present effectiveness estimates for response intensity on outbreak size. The wide confidence interval for adjusted effectiveness (11-81%) indicates substantial uncertainty. The large reduction in point estimate from crude (74%) to adjusted (59%) suggests important confounding. The lower bound of the CI (11%) indicates the true effect could be much smaller than the point estimate suggests. The exposure-outcome relationship may be affected by reverse causation if smaller outbreaks naturally receive more intensive responses per case.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Response intensity (CATIs per case) was negatively associated with outbreak duration. Compared to <0.25 complete CATIs per case, \u22651 complete CATI per case showed crude effectiveness of 76% (95% CI: 54-88%) and adjusted effectiveness of 73% (95% CI: 49-86%) in reducing outbreak duration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C57-C60 present effectiveness estimates for response intensity on outbreak duration. While the confidence intervals are narrower than for outbreak size, concerns about reverse causation remain\u2014longer outbreaks may naturally accumulate more CATIs per case. The exposure metric (CATIs per case) includes the outcome (total cases) in its denominator, creating potential for circular reasoning. Despite statistical adjustment, this structural relationship between exposure and outcome is problematic.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C61"
+    ],
+    "result": "Sensitivity analyses using alternative outbreak definitions, CATI definitions, and covariate selection methods yielded consistent estimates of CATI effectiveness for both response promptness and intensity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C61 reports that sensitivity analyses (detailed in Appendix 3) showed consistent results. This strengthens confidence in the robustness of the findings to methodological choices. However, sensitivity analyses cannot address fundamental limitations like confounding by unmeasured variables or the quasi-experimental design. The consistency across definitions suggests the results are not artifacts of specific analytical choices.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Stratified analyses by antibiotic prophylaxis showed that three of four effectiveness estimates appeared higher when all CATIs included antibiotics versus none. Specifically: prompt response on outbreak size (aCE1) was 63% with antibiotics vs 39% without; prompt response on duration (aCE2) was 74% vs 58%; intense response on duration (aCE4) was 90% vs 79%. However, intense response on outbreak size (aCE3) was 62% with antibiotics vs 76% without.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C62-C66 present stratified analyses suggesting potential benefit of antibiotic prophylaxis. However, several issues limit interpretation: (1) wide, overlapping confidence intervals (e.g., C63: -38 to 73% without antibiotics); (2) inconsistent pattern (C66 shows opposite direction); (3) small sample sizes in stratified groups; (4) potential for selection bias if antibiotic use was non-random; (5) no Bonferroni correction applied despite multiple comparisons. The authors appropriately note this is exploratory and that antibiotic prophylaxis is generally not recommended due to resistance concerns.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "The study found that prompt and repeated CATIs were significantly associated with shorter outbreaks and reduced case loads after adjusting for confounding by indication. Many mild outbreaks spontaneously ended without intervention, but among responded outbreaks, prompter and more intense responses were associated with better outcomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C67-C69 present the main conclusions. While the statistical associations are documented, the causal interpretation is uncertain due to: (1) quasi-experimental design without randomization; (2) acknowledged confounding by indication that may not be fully addressed by adjustment; (3) potential for unmeasured confounders; (4) reverse causation concerns for intensity measures; (5) only 18% of CATIs occurred during identified outbreaks, limiting generalizability. The authors appropriately acknowledge these limitations but still draw causal conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "The study infers that prompt and repeated CATIs are difficult to sustain during large outbreaks due to logistical complexity and team capacity constraints, and that the CATI strategy is most relevant at epidemic beginnings, trough periods, or epidemic tails.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C72 present reasonable inferences from the data showing slow CATI scale-up and lower response intensity during larger outbreaks. These operational insights are supported by the data patterns and cited literature (Finger et al., 2018; Rebaudet et al., 2019a). This contextualizes the effectiveness findings and has important implications for implementation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "The study acknowledges multiple limitations: lack of randomization with potential unmeasured confounding; significant confounding by indication; missing data from patients not seeking care and non-systematic stool sampling; potential misdating of outbreak onset/end; and lack of standardized outbreak criteria.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C78 appropriately acknowledge important study limitations. The authors are transparent about potential biases and data quality issues. These limitations are substantial and affect the certainty of causal conclusions. The acknowledgment of confounding by indication (C74) is particularly important given the observed associations between response characteristics and outbreak severity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C99"
+    ],
+    "result": "The study concludes that CATIs are significantly effective at mitigating and shortening cholera outbreaks, that the interventions theoretically prevent both transmission pathways, and that the results confirm the relevance of rapid response teams as a key component of global cholera control strategy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNSUPPORTED",
+    "evaluation": "Claims C84, C85, C86, and C99 present strong causal conclusions that are not fully supported by the evidence. While statistical associations were demonstrated, the quasi-experimental design, confounding by indication, potential reverse causation, and other acknowledged limitations prevent firm causal inference. The claim that interventions \"theoretically\" prevent transmission (C85) is reasonable, but the empirical evidence for effectiveness is uncertain. The conclusions overstate the certainty of the findings given the methodological limitations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C9",
+      "C100"
+    ],
+    "result": "The study claims to present the first real-world effectiveness estimates for CATIs against cholera, as CATI effectiveness had never been evaluated in a real-world setting prior to this study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9 and C100 assert the novelty of this work. Given the cited literature (C4) showing CATIs have rarely been documented or evaluated, and the lack of prior real-world effectiveness studies cited, this claim of being the first such evaluation appears accurate. This represents an important contribution despite methodological limitations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "The introduction provides context on global cholera control strategy, prior evidence supporting CATIs, Haiti's cholera epidemic history, and implementation of the national CATI program starting in 2013.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C21 provide background information supported by appropriate citations. These claims establish the rationale for the study and describe the implementation context in Haiti. The information appears accurate based on the cited sources and provides necessary context for interpreting the study findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "The discussion contextualizes findings on antibiotic prophylaxis, noting prior evidence of protective effects and modeling support, but also concerns about resistance selection. In Haiti, V. cholerae O1 remained susceptible to doxycycline through 2019. Adding single-dose OCV to CATIs could be effective but logistically complex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C83 appropriately synthesize prior evidence on antibiotic prophylaxis and OCV with appropriate citations. The discussion of trade-offs between effectiveness and resistance risk is balanced. The Haiti-specific antibiotic susceptibility data (C82) provides important local context. The inference about OCV addition (C83) is appropriately cautious about logistical challenges.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "The methods describe the study design (retrospective observational, January 2015-December 2017), setting (Centre department: 3,487 km\u00b2, 746,236 inhabitants in 2015), case definitions, and key epidemiological parameters (cholera incubation period 1.5-7 days, influence of rainfall on transmission and response).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C94 provide methodological details that are clearly described and appropriately referenced. The study design, setting, and definitions are standard for observational epidemiology. The use of established parameters (e.g., incubation period from Azman et al., 2013) is appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "The abstract states that after adjusting for confounders, prompt response reduced accumulated cases by 76% (95% CI: 59-86%) and outbreak duration by 61% (95% CI: 41-75%), while intense response reduced accumulated cases by 59% (95% CI: 11-81%) and outbreak duration by 73% (95% CI: 49-86%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C95-C98 accurately report the adjusted effectiveness estimates from the full analysis. However, presenting these as definitive findings in the abstract without adequately conveying the uncertainty from the quasi-experimental design and potential residual confounding may overstate the strength of evidence. The wide confidence intervals (especially C97: 11-81%) indicate substantial uncertainty that should be emphasized.",
+    "result_type": "MAJOR"
+  }
+]

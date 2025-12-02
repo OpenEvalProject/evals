@@ -1,0 +1,2037 @@
+{
+  "submission": {
+    "id": "e311aca2-d653-4d75-8ff1-5bf57e13fd77",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T10:18:03.525141Z",
+    "updated_at": "2025-12-02T10:18:03.525141Z"
+  },
+  "content": [
+    {
+      "id": "3b24fab5-3db1-4eef-8e55-c3e2d3dae31f",
+      "submission_id": "e311aca2-d653-4d75-8ff1-5bf57e13fd77",
+      "content_type": "manuscript",
+      "content_text": "# Opportunities for improved surveillance and control of dengue from age-specific case data\n\n## Authors\n\n- Isabel Rodriguez-Barraquer<sup>1</sup> ([ORCID: 0000-0001-6784-1021](https://orcid.org/0000-0001-6784-1021)) \u2020\n- Henrik Salje<sup>2</sup> ([ORCID: 0000-0003-3626-4254](https://orcid.org/0000-0003-3626-4254))\n- Derek A Cummings<sup>6</sup>\n\n### Affiliations\n\n1. Department of Medicine University of California, San Francisco San Francisco United States\n2. Mathematical Modelling of Infectious Diseases Unit Institut Pasteur Paris France\n3. CNRS, URA3012 Paris France\n4. Center of Bioinformatics, Biostatistics and Integrative Biology Institut Pasteur Paris France\n5. Department of Epidemiology, Johns Hopkins Bloomberg School of Public Health Johns Hopkins University Baltimore United States\n6. Department of Biology University of Florida Gainesville United States\n7. Emerging Pathogens Institute University of Florida Gainesville United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nOne of the challenges faced by global disease surveillance efforts is the lack of comparability across systems. Reporting commonly focuses on overall incidence, despite differences in surveillance quality between and within countries. For most immunizing infections, the age distribution of incident cases provides a more robust picture of trends in transmission. We present a framework to estimate transmission intensity for dengue virus from age-specific incidence data, and apply it to 359 administrative units in Thailand, Colombia, Brazil and Mexico. Our estimates correlate well with those derived from seroprevalence data (the gold standard), capture the expected spatial heterogeneity in risk, and correlate with known environmental drivers of transmission. We show how this approach could be used to guide the implementation of control strategies such as vaccination. Since age-specific counts are routinely collected by masany surveillance systems, they represent a unique opportunity to further our understanding of disease burden and risk for many diseases.\n\n## Introduction\n\nA fundamental challenge of disease surveillance systems is how to transform data that is routinely collected into useful, actionable evidence that can inform control interventions. Disease surveillance systems typically focus on analyzing aggregate counts of cases over defined time periods to stratify the risk of populations\u00a0(WHO, 2012). However, the use of raw case counts, or incidences, as a measure of disease risk can frequently be misleading because the quality of surveillance often differs significantly both across countries and within regions of a country making comparisons inappropriate. Areas with more complete reporting of disease may inaccurately appear to have more disease simply because reported cases scale linearly with completeness of reporting. Surveillance systems may change over time (e.g. improving in completeness over time) making comparisons difficult or even impossible. These problems are particularly troubling when examining disease trends or ranking regions according to their disease risk. Recent efforts have tried to improve quantification of disease burden by pooling numerous sources of data. For example, disease mapping methods that combine disease presence/absence data, environmental covariates and available incidence data (from cohort or cross-sectional studies) have been used to predict spatial limits and global case counts for diseases including malaria, dengue and several neglected tropical diseases. (Hay et al., 2009; Bhatt et al., 2013; Pigott et al., 2014; Hay et al., 2013) However, while these methods are successful in identifying boundaries of endemic areas, the robustness of these approaches to quantify transmission within endemic areas has\u00a0not been validated.\n\nFor most immunizing infections (infections that generate long-lasting sterilizing immunity), serological surveys are regarded as the gold standard to measure the susceptible fraction and infer the extent of transmission, as they provide a direct measure of the proportion of the population that has been infected. This is particularly useful for diseases such as dengue, influenza or Zika, where the asymptomatic to symptomatic ratios are large or unknown. Methods to estimate transmission parameters from age-stratified serological data have been available for many years(Muench, 1959) and have been used to analyze trends in transmission for multiple diseases including measles\u00a0(Grenfell and Anderson, 1985), hepatitis A(Schenzle et al., 1979), dengue\u00a0(Ferguson et al., 1999; Imai et al., 2015; Rodriguez-Barraquer et al., 2011; Rodr\u00edguez-Barraquer et al., 2014), pertussis\u00a0(Kretzschmar et al., 2010), influenza\u00a0(Miller et al., 2010), malaria\u00a0(Bretscher et al., 2013) and chikungunya\u00a0(Salje et al., 2016). While well conducted age-stratified serological surveys can provide an unbiased measure of the susceptibility profile of a population and transmission parameters, they are generally not part of routine surveillance activities and are therefore only available for a limited number of locations and time points. For example, an extensive review of the dengue literature published recently found only three population-based serosurveys conducted in Brazil over the past 10 years, despite being the country that currently reports the largest number of cases worldwide\u00a0(Fritzell et al., 2018). Similarly, only one and three studies were identified for the Philippines and Thailand, respectively, even though the burden of dengue is very high\u00a0(Fritzell et al., 2018). Thus, the picture provided by serology is very incomplete and limited when trying to characterize transmission across time and space both within and between countries.\n\nWhile aggregated case counts can be misleading when quantifying disease risk, the age distribution of incident cases contains a lot of information on the age-specific susceptibility of the population. Importantly, the age distributionof cases is also largely robust to under-reporting, facilitating the comparison between locations or over time. By combining age-specific incidence data and mechanistic models of how population immunity is acquired over time, it is possible to estimate key transmission parameters and obtain a much more accurate picture of the local and global burdens of disease. Since age-specific counts are routinely collected by surveillance systems as part of standard practice, they represent a missed opportunity to further our understanding of epidemic patterns for many diseases.\n\nHere, we use dengue virus as an example to illustrate how age-specific incidence data can be used to quantify disease transmission and inform control interventions. Dengue is a relevant example because, despite being the most widely spread mosquito-transmitted virus, large gaps remain in our understanding of its global and local epidemiology\u00a0(Fritzell et al., 2018). We present a model to estimate the transmission intensity of dengue from age-specific incidence data, and apply it to surveillance data from administrative units in four countries that suffer from endemic dengue transmission (Thailand, Colombia, Brazil and Mexico). We validate our estimates using serological data and show that they correlate well with known environmental drivers of dengue transmission at subnational level. Finally, we show how this approach could be used to guide the implementation of dengue control strategies such as vaccination.\n\n## Results\n\nWe estimated the average forces of infection (FOI) over the last 20 years for 148 administrative level one units where age specific case data was available (Table 1,\u00a0Figure 1B): 72/76 provinces of Thailand, 28/32 departments of Colombia, 21/27 states of Brazil, and 27/31 states of Mexico. These administrative units comprise 90%, 99%, 90% and 91% of the population at risk of these countries respectively. We also estimated forces of infection for 211 municipalities (administrative level two units) of Colombia where at least 200 cases were reported over the period covered by the data.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/45474/elife-45474-fig1-v2.jpg)\n\n**Figure 1.:** (A) Examples of the age-specific incidence of dengue observed in two settings with very high endemic transmission (Thailand 1- Udon Thani, Thailand; Brazil 1 Pernambuco, Brazil) and two settings with lower and very low transmission (Thailand 2\u00a0=\u00a0Chiang Mai, Thailand; Brazil 2\u00a0=\u00a0Parana, Brazil). (B) Maps of our estimates of the FOI for the four countries. (C) Correlation between our estimates of the force of infection, with estimates derived from age-stratified serological data (gold standard) for 16 settings where we had both types of data (Thailand: Rayong (Rodr\u00edguez-Barraquer et al., 2014); Bangkok (Imai et al., 2015); Ratchaburi (Imai et al., 2015); Lop Buri, Narathiwat, Trang, Ayuttayah\u00a0(Vongpunsawad et al., 2017). Brazil: Pernambuco (Rodriguez-Barraquer et al., 2011); Salvador (Wilson et al., 2007). Colombia (unpublished). Mexico: Morelos (Amaya-Larios et al., 2014), Yucatan (Hladish et al., 2016). The locations of the specific cities are shown in the maps in panel B.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/45474/elife-45474-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Red\u00a0=\u00a0Thailand, blue\u00a0=\u00a0Colombia, purple\u00a0=\u00a0Brazil, orange\u00a0=\u00a0Mexico.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/45474/elife-45474-fig1-figsupp2-v2.jpg)\n\nThe average FOI (the rate at which susceptible individuals that will become infected in a year by any dengue serotype) was 0.096 in Thailand (95%CI 0.092-0.100), 0.132 (95%CI 0.128-0.136) in Colombia, 0.124 (95%CI 0.116-0.128) in Brazil, and 0.052 (95%CI 0.048-0.056) in Mexico. This implies that on average 9.6% of the susceptible population in Thailand gets infected every year by any of the circulating serotypes ($1-e^{-FOI}$). Similarly, 12% of the susceptible population of Colombia and Brazil, and 5% of the susceptible population of Mexico get infected yearly.\n\nHowever, as expected, transmission intensity varied greatly within countries, ranging between 0.04 and 0.15 (coefficient of variation (CV)\u00a0=\u00a00.27) across provinces of Thailand; between 0.02 and 0.20 across departments of Colombia (CV\u00a0=\u00a00.37), between 0.02 and 0.24 across states of Brazil (CV\u00a0=\u00a00.56); and between 0.01 and 0.092 across states of Mexico (CV\u00a0=\u00a00.45). Transmission was highest in the North East of Brazil (average FOI of 0.152) and in the Caribbean region of Colombia (average FOI of 0.156). There was also substantial heterogeneity within departments of Colombia. The mean CV for 15 departments where we had estimates for more than 5 municipalities was 0.4.\n\nFor the 16 locations where we had access to both age-stratified serological data (the gold standard) and case data, we found good correlation between the estimates of the FOI derived from both data sources (R2\u00a0=\u00a00.73, 95% CI 0.51\u20130.87, Figure 1C). In contrast, we found no correlation between recent incidence of dengue in these locations (the average yearly incidence over the most recent 5 years of data) and the estimates of FOI derived from serological data (R2\u00a0=\u00a00.002, Figure 1\u2014figure supplement 2).\n\nSince estimates of transmission intensity derived from seroprevalence data are only available for a small number of locations, to further validate our method we also explored the association between our estimates of the FOI for 211 Colombian municipalities (administrative level 2) with known environmental drivers of dengue transmission including temperature, elevation, precipitation a published metric of Aedes aegypti abundance and population density (Figure 2, Figure 2\u2014figure supplement 1). Models were weighted by the number of cases used to estimate the FOI. On average, the FOI increased by 0.006 (95% CI 0.004\u20130.007, R2\u00a0=\u00a00.19) for each additional \u00b0C in temperature and, similarly, it decreased by 0.005 (95% CI 0.003, 0.006, R2\u00a0=\u00a00.21) for each 100 m increase in elevation (Table 2). While population density was not associated with FOI estimates in unadjusted analyses, a twofold increase in density was associated with a 0.007 (95% 0.004\u20130.009) increase in FOI in the best fitting adjusted model. This model included elevation, population density and precipitation, and explained 35% (95%CI 23\u201350%) of the variance.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/45474/elife-45474-fig2-v2.jpg)\n\n**Figure 2.:** Top panels show correlation between estimates of the FOI for 211 municipalities (administrative level 2) of Colombia and mean temperature (A), elevation (B) and Aedes abundance (C). Size of symbols is proportional to the number of cases available to estimate the FOI. Bottom panels shows lack of correlation between environmental drivers and recent incidence, the most commonly used metric of transmission intensity. R2 values reported were obtained by fitting weighted linear regression models, with weights proportional to the number of cases used to derive the FOI estimate.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/45474/elife-45474-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Top panels show correlation between estimates of the FOI for 211 municipalities (administrative level 2) of Colombia and precipitation (A) and Population density (B). Size of symbols is proportional to the number of cases available to estimate the FOI. Bottom panels show correlation between these two environmental drivers and recent incidence. R2 values reported were obtained by fitting weighted linear regression models, with weights proportional to the number of cases used to derive the FOI estimate.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/45474/elife-45474-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** Filled circles show the estimates for each municipality (administrative level two unit) within the department that reported\u00a0>\u00a0200 cases. Hollow circles indicate the mean force of infection for those municipalities that reported\u00a0<\u00a0200 cases. Size of circles is proportional to the number of cases available to estimate the FOI. Triangles indicate the mean estimate for each department.\n\nIn contrast, the recent incidence of dengue in these municipalities was not correlated with temperature, elevation or Aedes aegypti abundance (R2 0.01, 0.01, and 0.00 respectively, Table 3). We did find a negative association between population density and incidence, indicating a 6% (95%CI 2\u201310%) decrease in log incidence for each 2-fold increase in population density.\n\n### Application: Guiding dengue vaccination policy\n\nThe only available dengue vaccine (Dengvaxia) has been licensed for use in children 9 years or older in 20 countries including Thailand, Brazil and Mexico. The WHO currently recommends confirmation (by virology or serology) of prior dengue infection at the individual level before vaccinating individuals, and therefore there is interest in identifying populations with high seropositivity to target pre-vaccination screening (WHO, 2018). In the absence of appropriate rapid serological assays that would allow implementing this individual screening strategy, an alternative that has been discussed is rolling out the vaccine in settings with 80% or greater seropositivity among 9 year olds. Using our estimates of the FOI, we calculated the proportion of the population expected to be seropositive at age 9 years for each of the subnational units represented in our data. Our results suggest that only a small minority of locations in Colombia and Brazil have\u00a0>\u00a080% seropositivity in this age group (Figure 3, Figure 3\u2014source data 1). The expected proportion seropositive at 9 years of age ranged between 0.35 and 0.75 in provinces of Thailand; 0.13 and 0.85 in departments of Colombia; 0 and 0.88 in states of Brazil; and 0.07 and 0.56 in states of Mexico. The seroprevalence was estimated to be high enough in only 2/28 Colombian departments, 4/25 Brazilian states and none of the 72 Thai provinces or 27 Mexican states. Furthermore, even within the two Colombian departments that met the 80% seroprevalence threshold, only 9/13 (70%) of the municipalities evaluated reached this level. This proportion would probably be much lower had we considered all the municipalities in these departments, as those excluded had, on average, lower FOI (Figure 2\u2014figure supplement 2).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/45474/elife-45474-fig3-v2.jpg)\n\n**Figure 3.:** Estimated dengue seroprevalence at 9 years of for administrative level 1 units of Thailand, Colombia, Brazil and Mexico Expected seroprevalence of dengue among children aged 9 years, derived from the FOI estimates (see Materials and methods for more details), for administrative level 1 units of Thailand (A), Colombia (B), Brazil (C) and Mexico (D). For each country, administrative units were ranked by their FOI. Dashed lines indicate 50% and 80% seroprevalence levels. Therefore, units above the 80% line are those where, according to the WHO-SAGE recommendation from 2018, it might be reasonable target children aged 9 years old for vaccination. Units below the 50% line are those where vaccination of this age-group would not be recommended. The axis on the right of the plot indicates the minimum age-group that would need to be targeted in each location to ensure at least 80% seropositivity.\n\nIn locations where seroprevalence among 9 year olds was estimated to be less than 80%, we calculated the age-group that could be targeted to ensure a seroprevalence\u00a0>\u00a080%. Our results suggest that, to comply with the WHO-SAGE recommendations, it would be necessary to target children 14 years of age or older in over 70% (108/148) of locations. Furthermore, in approximately 50% of the locations evaluated, it would be necessary to target individuals aged 18 years or older, precluding school-based vaccination strategies.\n\n### Alternative metrics\n\nBoth the incidence and the mean adjusted incidence performed very poorly in ranking spatial units compared to the FOI (Figure 1\u2014figure supplement 1). In contrast, the proportion of incidence under 10 years and the mean age of cases (to a lesser degree) performed quite well at ranking spatial units within countries. However, none of these metrics performed as well as the FOI when comparing spatial units from different countries, and they did not correlate as well with the gold standard (FOI estimates derived from seroprevalence data) (Figure 1\u2014figure supplement 2).\n\n### Sensitivity analyses\n\nSince different surveillance systems have different reporting practices, we compared FOI estimates obtained when using data from severe cases alone (DHF or severe dengue) to estimates obtained when all dengue cases were considered jointly (Figure 4). This comparison was limited to Colombia, Brazil and Mexico because we only had DHF data from Thailand.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/45474/elife-45474-fig4-v2.jpg)\n\n**Figure 4.:** (A)\u00a0Correlation between estimates of the FOI obtained when using data from DHF/severe dengue infections, vs. data from all cases combined.\u00a0(B) Correlation between FOI estimates derived from different types of dengue data, with estimates derived from age-stratified serological data (gold standard).\n\nIn general, estimates derived from all cases tended to underestimate those obtained from DHF cases, but the correlation between the estimates was good (Figure 4A) as well as the correlation with the gold standard (Figure 4B). The correlation was highest for Colombia and Mexico (r\u00a0=\u00a00.74 and r\u00a0=\u00a00.78, respectively), but less so for Brazil (r\u00a0=\u00a00.48). However, 2/3 of the Brazilian locations that showed discrepant results had the smallest number of DHF cases (n\u00a0=\u00a0217 and 265) suggesting that sample size may have played a role. Similarly, all the Colombian locations where there was a large discrepancy had very low counts of DHF cases (n\u00a0=\u00a041, 55, and 48, respectively).\n\n## Discussion\n\nIn this paper, we use dengue virus as an example to illustrate how age-specific incidence data can be used to quantify disease transmission and inform control interventions. We present a method to estimate the FOI of dengue from age-specific incidence data, and use it to generate country-wide subnational estimates for Thailand, Colombia, Brazil and Mexico. Our estimates correlate well with those derived from seroprevalence data (the gold standard), capture the expected spatial heterogeneity in risk, and outperform all other metrics traditionally used by surveillance systems, such as the crude incidence.\n\nMost surveillance systems use crude case counts or incidences to describe temporal and spatial trends of communicable diseases. Our results underscore the extent to which, for immunizing infections in endemic circulation, recent incidence may be a poor metric of transmission and may be misleading when ranking spatial units (Figure 1\u2014figure supplement 2). Immunity of the population in high-transmission settings reduces the number of individuals that are susceptible to infection. As a result, incidence in places where transmission intensity is lower, but people remain susceptible for a longer period of time, may be roughly equivalent to that in higher transmission intensity areas. In contrast, metrics such as the FOI, that quantify the risk among the susceptible population, better reflect the underlying transmission potential. Since FOI estimates are derived from the age distribution of incidence, and not from the aggregate counts, they are more robust to differences in surveillance efficiency and can be obtained with relatively small numbers of yearly cases.\n\nOur estimates of the average transmission intensity of dengue in Thailand, Colombia, Brazil and Mexico are consistent with large variation in dengue transmission between and within countries. Spatial heterogeneity was substantial not only between, but\u00a0also within administrative level one units. While this heterogeneity is probably driven by multiple environmental, socio-economic and demographic factors, our results suggest that as much as 35% of the variance may be explained by differences in temperature/elevation and population density alone. Transmission intensity was highest in northeastern Brazil, northern Colombia and eastern Thailand. Northeastern Brazil was also the region that experienced the highest incidence of Zika during the 2015/2016 epidemic, and this is not surprising given that both viruses are transmitted by the same mosquito vector (A. aegypti)(Lowe et al., 2018).\n\nWhile age-stratified serological data remains the gold standard to quantify dengue transmission, our results illustrate how inferences derived from age-specific surveillance data could be used to inform control interventions such as vaccination. For example, the high transmission intensities (and expected seroprevalences) found in Northeastern Brazil suggest that this region might be ideal to implement pre-vaccination screening strategies. In addition, the large heterogeneity estimated in Colombia suggests that decisions of where to deploy control interventions, including vaccines, should be made at least at the municipal/district (administrative level 2) level. Since age-specific counts are routinely collected by many surveillance systems, they represent a unique opportunity to further our understanding of dengue burden and risk at spatial scales at which serological data is rarely available. While here we focus on presenting average forces of infection over 20 years, the same methods can also be used to estimate yearly forces of infection (Hoang Quoc et al., 2016; Cummings et al., 2009).\n\nThere are several limitations of using age-specific surveillance data to estimate transmission parameters of dengue. Of concern are differences in case definitions and reporting practices between and within countries. While the case-definition of DHF\u00a0is quite specific, milder forms of the disease are characterized by a non-specific febrile syndrome. Therefore, data from locations that report \u2018all cases\u2019 rather than more severe forms (DHF) are more likely to be misclassified, and could be less useful to infer transmission histories. Nevertheless, our results and sensitivity analyses are encouraging and suggest that that even data from all dengue cases can be useful to infer transmission patterns.\n\nOur model also makes several assumptions that may be questionable. It assumes that the age distribution of cases represents the age distribution of secondary infections, thus ignoring the potential contribution of primary, tertiary and quaternary infections. It also assumes that risk of infection, symptoms, and health seeking behavior are not age dependent, even though there is some evidence that suggests that this may not be the case(Katzelnick et al., 2018; Guzm\u00e1n and Kour\u00ed, 2002; Thai et al., 2011). It assumes equal circulation of all serotypes, despite the known dominance of specific serotypes for extended periods of time in the Americas (Katzelnick et al., 2018; Teixeira et al., 2009). Finally, it estimates transmission intensities over extended periods of time (20 years), averaging over variations in the FOI that may occur at shorter time scales. Despite these simplifications, validation of our estimates using age-stratified serological data from 16 locations is very encouraging, as is the good correlation with known drivers of dengue transmission. While further validation is desirable, it is important to note that some discrepancy between our estimates and those derived from seroprevalence data is expected as the two sources of data do not represent exactly the same period of time and location. For example, most of the serosurveys available were conducted in specific urban centers, while case data represents the full administrative unit.\n\nTargeting control interventions against dengue and other communicable diseases requires good understanding of when and where transmission is occurring. Careful analyses of age-specific incidence data can provide very useful information to characterize transmission across time and space. While here we focus on dengue, the same approach should be generalizable to other immunizing infections including chikungunya and Zika. Open access to age-specific incidence data would greatly enrich and enhance existing efforts to quantify trends in the global burden of disease.\n\n## Materials and methods\n\n### Data used\n\nWe used data on the yearly age-specific reported number of dengue cases for administrative level 1 units of Thailand, Colombia, Brazil and Mexico (Minist\u00e9rio da Saude, 2017; Bureau of Epidemiology, Department of Disease Control, 2019; Direccion General de Epidemiolog\u00eda, 2017; Instituto Nacional de Salud Colombia, 2016) as well as administrative level two units from Colombia. The period of time available varied between countries, but ranged between 5 years in Colombia and 25 years in Thailand. Where possible (Thailand and Brazil) we used age-specific case reports on dengue hemorrhagic fever (DHF) for our analyses. However, for both Colombia and Mexico, we had to use data on all reported dengue cases because the number of DHF cases reported by a substantial number of spatial units (9/32 units in Colombia and 10/31 in mexico) were insufficient to estimate the FOI. We also used population data from each administrative unit analyzed, available from the national statistical office of each country. Information on the type (e.g. DHF vs. all dengue), source and years of data used are provided in Table 1.\n\n**Table 1.**\n Data sources used\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Country</th>\n      <th>Years of data available</th>\n      <th>Type of report available</th>\n      <th>Type of report used</th>\n      <th>No. admin units analyzed*</th>\n      <th>Source of dengue data</th>\n      <th>Source of census data</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Thailand</td>\n      <td>1985\u20132010</td>\n      <td>DHF</td>\n      <td>DHF</td>\n      <td>72</td>\n      <td>(Bureau of Epidemiology, Department of Disease Control, 2019)</td>\n      <td>(National Statistical Office Thailand, 2017)</td>\n    </tr>\n    <tr>\n      <td>Colombia</td>\n      <td>2007\u20132012</td>\n      <td>DHF/DF</td>\n      <td>All cases</td>\n      <td>28/211</td>\n      <td>(Instituto Nacional de Salud Colombia, 2016)</td>\n      <td>(DANE, 2019)</td>\n    </tr>\n    <tr>\n      <td>Brazil</td>\n      <td>1998\u20132015</td>\n      <td>DHF/DF\u2020</td>\n      <td>DHF</td>\n      <td>21</td>\n      <td>(Minist\u00e9rio da Saude, 2017)</td>\n      <td>(Instituto Brasileiro de Geografia e Estadistica, 2017)</td>\n    </tr>\n    <tr>\n      <td>Mexico</td>\n      <td>2000\u20132009</td>\n      <td>DHF/DF</td>\n      <td>All cases</td>\n      <td>27</td>\n      <td>(Direccion General de Epidemiolog\u00eda, 2017)</td>\n      <td>(Instituto Nacional de Estadistica y Geografia, 2016)</td>\n    </tr>\n  </tbody>\n</table>\n\n_*Admin level one/Admin level two units with at least 150 cases reported\u2020Data from Brazil is on hospitalized dengue fever and dengue hemorrhagic fever cases._\n\n**Table 2.**\n Association between environmental variables and dengue force of infection for 211 municipalities in Colombia\n\n\n<table>\n  <thead>\n    <tr>\n      <th rowspan=\"2\">Variable</th>\n      <th colspan=\"2\">Unadjusted</th>\n      <th colspan=\"2\">Adjusted</th>\n    </tr>\n    <tr>\n      <th>Estimate</th>\n      <th>95% CI</th>\n      <th>Estimate</th>\n      <th>95% CI</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Elevation (per 100 m)</td>\n      <td>\u22120.005</td>\n      <td>\u22120.003,\u20130.006</td>\n      <td>\u22120.007</td>\n      <td>\u22120.008,\u20130.006</td>\n    </tr>\n    <tr>\n      <td>Mean temperature (per \u00b0C)</td>\n      <td>0.006</td>\n      <td>0.004, 0.007</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Mean weekly precipitation</td>\n      <td>0.0001</td>\n      <td>\u22120.000, 0.001</td>\n      <td>\u22120.0005</td>\n      <td>\u22120.0008, \u22120.0002</td>\n    </tr>\n    <tr>\n      <td>Population density</td>\n      <td>\u22120.001</td>\n      <td>\u22120.003, 0.001</td>\n      <td>0.007</td>\n      <td>0.004, 0.009</td>\n    </tr>\n  </tbody>\n</table>\n\n**Table 3.**\n Association between environmental variables and the log incidence of dengue (over the last 5 years) for 211 municipalities in Colombia.\n\n\n<table>\n  <thead>\n    <tr>\n      <th rowspan=\"2\">Variable</th>\n      <th colspan=\"2\">Unadjusted</th>\n      <th colspan=\"2\">Adjusted*</th>\n    </tr>\n    <tr>\n      <th>Estimate</th>\n      <th>95% CI</th>\n      <th>Estimate</th>\n      <th>95% CI</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Elevation (per 100 m)</td>\n      <td>\u22120.02</td>\n      <td>\u22120.03, 0</td>\n      <td>0.01</td>\n      <td>\u22120.01, 0.03</td>\n    </tr>\n    <tr>\n      <td>Mean temperature (per \u00b0C)</td>\n      <td>0.01</td>\n      <td>0, 0.05</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Mean weekly precipitation</td>\n      <td>0</td>\n      <td>0, 0</td>\n      <td>\u22120.002</td>\n      <td>\u22120.01, 0</td>\n    </tr>\n    <tr>\n      <td>Population density</td>\n      <td>\u22120.04</td>\n      <td>\u22120.07,\u20130.01</td>\n      <td>\u22120.06</td>\n      <td>\u22120.10, \u22120.02</td>\n    </tr>\n    <tr>\n      <td colspan=\"2\">* R2 of adjusted model: 0.04</td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### Statistical analyses\n\n#### Estimating the force of infection\n\nWe estimated the average force of infection (FOI, \u03bb) of dengue, over the last 20 years, for each administrative unit for which we had available data. The FOI is a metric used to characterize the transmission intensity in a specific setting and estimates the per capita rate at which susceptible individuals are infected. Methods to estimate transmission intensity from age-specific incidence data have been previously used to reconstruct the transmission history of measles and dengue\u00a0(Grenfell and Anderson, 1985; Cummings et al., 2009). Briefly, these methods rely on the fact that, for immunizing infections, accumulation of immunity shapes the age distribution of future cases. In settings with high endemic transmission, incident cases are expected to be concentrated in younger age groups, as adults are likely to be already immune (Figure 1A). In contrast, in places where there is less population immunity, the age distribution of cases is more likely to resemble the age distribution of the population itself, with cases in in both children and adult populations.\n\nMethods to estimate dengue forces of infection from case data have been applied to settings where dengue is thought to be close to endemic circulation (Cummings et al., 2009; Imai et al., 2016). These methods generally rely on the cumulative incidence proportion, and therefore assume that all individuals are infected by dengue at some point in their lifetime. They also often assume that the distribution of cases (of dengue hemorrhagic fever cases in particular) is representative of the distribution of secondary cases. Here, we extend these methods to accommodate settings where transmission hazards are lower or where dengue may have been more recently introduced. We do this by modeling directly the age-specific incidence of cases, rather than the cumulative incidence proportion.\n\nThe fraction of the population susceptible to all dengue serotypes at age a and t, x(a,t) is given by,\n\n$$\nx(a,t)=e^{\\int_{0}^{a}\u22124\\lambda(t\u2212\\tau)d\\tau}.\n$$\n\nwhere \u03bb(t) is the average FOI per serotype at time t and 4\u03bb(t) is the total FOI assuming four circulating serotypes. The proportion of individuals of age a who have been infected with only serotype at time t, but are still susceptible to all other serotypes is denoted z1(a,t) and is given by:\n\n$$\nz_{1}(a,t)=4(e^{\u2212\\int_{0}^{a}3\\lambda(t\u2212\\tau)d\\tau})(1\u2212e^{\u2212\\int_{0}^{a}\\lambda(t\u2212\\tau)d\\tau}).\n$$\n\nAssuming that the age-specific incidence of cases is representative of the distribution of secondary infections, the expected incidence rate among individuals age a at time t is given by\n\n$$\nI(a,t)=3\\lambda(t)z_{1}(a,t)\n$$\n\nand the expected reported number of cases is\n\n$$\n(a,t)=(I(a,t)P(a,t)\u03d5(t)),\n$$\n\nwhere P(a,t) is the size of the population aged a at time t, and \u03a6(t) represents a time specific reporting rate/scaling factor.\n\n#### Likelihood and estimation\n\nAssuming that the observed age-specific case counts C(a,t) follow a Poisson distribution, the likelihood of the data can be expressed as\n\n$$\nL(C|\\lambda,\u03d5)=\\prodt\\proda\\frac{(\u039b(a,t)^{C(a,t)}e^{\u2212\u039b(a,t)})}{C(a,t)!},\n$$\n\nWe fit the model in a Bayesian Markov chain Monte Carlo (MCMC) framework using the RStan package in R (Stan development Team, 2019) (The R Foundation, 2019). Both the annual hazards of infection ($\\lambda$) and the reporting rates (\u03a6) were estimated on a logit scale using wide priors (Normal distribution with mean 0 and standard deviation of 1000). We simulated four independent chains, each of 30000 iterations and discarded the firs 10000 iterations as warm-up. We assessed convergence visually and using Rubin\u2019s R statistic. We obtained 95% credible intervals from the 2.5% and 97.5% percentiles of the posterior distributions. Code to implement the model is available at https://github.com/isabelrodbar/dengue_foi.\u00a0(Rodriguez-Barraquer, 2019; copy archived at https://github.com/elifesciences-publications/dengue_foi).\n\nA limitation of this approach is that, due to the large number (often in the thousands) that are characteristic of the data for some settings, the estimated confidence intervals produced are extremely narrow and do not reflect the underlying uncertainty adequately. The observed counts can also be assumed to follow a negative binomial distribution to account for some overdispersion.\n\n#### Parameters estimated\n\nSince it is known that the FOI has varied substantially over time in many of the settings considered, we allowed \u03bb(t) to vary as a function of time. To limit the number of parameters estimated, we assumed constant \u03bb(t) for periods of 20 years. Thus, if for a given setting we were estimating hazards for the period 1935\u20132015, we assumed piecewise-constant \u03bb(t)s for the periods 1935\u20131954, 1955\u20131974, 1975\u20131994, 1995\u20132015. Given the objective of this study was to characterize recent transmission in endemic settings, we focused our results on the estimate of the average \u03bb(t) for the most recent 20-year period but present other estimates in the supplementary material (Appendix 1-Figure 1). Rather than reporting \u03bb(t), we focus on reporting the total FOI (4\u03bb(t)).\n\n#### Estimating the proportion expected to be seropositive at a given age\n\nUsing our estimates of the average FOI, we estimated the proportion of individuals expected to be seropositive by age y(x) as:\n\n$$\ny(x)=1\u2212x(a)=1\u2212e^{\u22124\\lambdaa}\n$$\n\nwhere x(a) is the proportion of the population susceptible at age a and \u03bb is the average FOI per serotype (assuming four serotypes circulating). Since the vaccine has been registered for use in children 9 years of age or older, we report the proportion of individuals expected to be seropositive by age 9 years for each of the settings.\n\n#### Estimating the minimum age to achieve a given level of seropositivity\n\nGiven that the WHO recommended using this vaccine in places where at least 80% of the target age group is seropositive, we estimated the minimum age at which this level of seropositivity is expected for each of the settings. For a given level of transmission \u03bb it is possible to estimate the minimum age (A) at which a given level of seropositivity (s) is expected as:\n\n$$\nA(s)=\\frac{\u2212log(1\u2212s)}{4\\lambda}\n$$\n\n### Validation and sensitivity analyses\n\nWe validated our estimates of the FOI by comparing them to estimates obtained from age-stratified serological data (the gold standard) for 16 locations for which both serologic and age-specific case data was available. Methods to estimate forces of infection from seroprevalence data have been previously described (Ferguson et al., 1999; Rodriguez-Barraquer et al., 2011).\n\nSince dengue transmission is known to be highly spatially heterogeneous, we also correlated our administrative level two estimates for Colombia with known environmental drivers of dengue transmission: temperature, elevation, population density and a published composite metric of A. aegypti abundance\u00a0(Siraj et al., 2018).\n\nAs stated above, a key assumption of this model is that the age distribution of cases represents the age distribution of secondary infections. Data from Thailand has consistently suggested that the majority of dengue hemorrhagic fever (DHF) cases arise from secondary infections\u00a0(Burke et al., 1988) and therefore we limited our analysis to reports of DHF where possible (Thailand, Brazil). However, for Colombia and Mexico we used data from severe and non severe cases because the severe dengue data alone was too sparse. To assess the impact of the data type, we compared estimates obtained from DHF/severe cases alone, to those obtained when all dengue cases were considered.\n\n### Alternative metrics\n\nSince estimating the FOI requires fitting parametric models to the data, we explored whether alternative summary metrics, computed directly from the age-specific case data, could be equally useful in ranking spatial units within and across countries. The metrics considered included some that are commonly used by surveillance systems such as a) crude incidence and b) standardized mean incidence, but also alternative metrics that are not commonly used such as c) mean age of cases, d) cumulative proportion of incidence occurring by age 10 years and e) age at peak incidence. For each spatial unit, we computed these metrics using the most recent 5 years of data available.\n\n### Application: guiding dengue vaccination policy\n\nThe first dengue vaccine has been licensed for use in children over 9 years of age in 20 countries. Due to uncertainty regarding the vaccine\u2019s benefits and risks in individuals who haven\u2019t been previously infected by dengue, the WHO\u2019s scientific advisory group of experts (SAGE) committee recommended in April 2016 that this vaccine only be used in settings with known high endemicity, defined as places where seroprevalence is greater than 70% in the target vaccination age-group (SAGE, 2016), and should not be used in places where seroprevalence is under 50%.\n\nThis recommendation was later revised, and the WHO now recommends that individuals should be tested for dengue antibodies prior to vaccination, and the vaccine should only be given to individuals who have been infected by dengue in the past\u00a0(WHO, 2018). In the absence of appropriate serological assays that would allow for pre-vaccination screening, an alternative that has been discussed is deploying the vaccine in settings were seroprevalence is 80% or greater. These recommendations pose challenges to countries wanting to implement the vaccine, as they require detailed knowledge of the epidemiology of dengue. Specifically, they require knowledge of the population seroprevalence against dengue at subnational levels, even though such data is not available.\n\nIn order to provide information useful to countries considering deploying the vaccine according to the WHO recommendations, we used our estimates of the FOI to calculate the proportion of the population expected to be seropositive at age 9 years for of the subnational units represented in our data. We also estimated the minimum age group expected to have a seroprevalence of 80% or greater. In collaboration with the MRC center for Outbreak Analysis and Modeling, these estimates were made available online in June 2017 (https://mrcdata.dide.ic.ac.uk/_dengue/dengue.php) as a tool to help countries deciding where to target vaccination.\n",
+      "created_at": "2025-12-02T10:18:03.525141Z"
+    },
+    {
+      "id": "496dbb76-a960-4be7-bbf7-b7cffa90290b",
+      "submission_id": "e311aca2-d653-4d75-8ff1-5bf57e13fd77",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Jos WM van der Meer, Radboud University Medical Centre Netherlands\n\nReviewers:\n- Jos WM van der Meer, Radboud University Medical Centre Netherlands\n- Oliver Brady, London School of Hygiene & Tropical Medicine United Kingdom\n\n## Review text\n\nDOI: [10.7554/eLife.45474.031](https://doi.org/10.7554/eLife.45474.031)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Opportunities for improved surveillance and control of infectious diseases from age-specific case data\" for consideration by eLife. Your article has been reviewed by three peer reviewers, including Jos WM van der Meer as the Reviewing Editor and Reviewer #1, and the evaluation has been overseen by Eduardo Franco as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Oliver Brady (Reviewer #3).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThis interesting paper provides useful insight into the challenging problem of identifying populations suitable for the deployment of the dengue vaccine, given the risk of side effects in na\u00efve individuals upon exposure to the virus. There are however several concerns and major questions about the assumptions and their implications on the relevance of the work in terms of programmatic recommendations. Key details on the methods are lacking, so additional details are needed as they are important to ensure the correct interpretation of the findings.\n\nEssential revisions:\n\n1) One of the justifications for their model is that it is better able to predict dengue infections than using recent incidence. This was used both in comparisons with the FOI in the regression analysis and also in the supplementary plots correlating ranks etc. However, 'recent incidence' is not defined. Was this in the most recent year of data? The average over the 20-year block? Are the results sensitive to this definition? How does an age-adjusted incidence metric compare to the FOI? If a simpler approach is 'good enough', would not this be more operationally tractable?\n\n2) The authors correctly assume that all 4 serotypes could be co-endemic, and that DHF cases are likely to represent the second infection, with mild cases most likely a person's 1st-4th infection. The focus on the issues with the current vaccination recommendations is very relevant, but it is not very clear in the text whether the authors considered 'likely seropositive' after expected 1st infection (best candidate for vaccine) or whether it was any infection, with 2nd-4th not necessarily needing the vaccine as are already protected due to the homology between the strains. In epidemic-prone settings, this is somewhat simplified, but in areas with endemic transmission and co-circulating strains this is quite complex. If the model does in fact represent the likely first infection, then these nuances should be better described. If it regards the later infections, more justification for the relevance of the estimates should be included.\n\n3) To validate the estimates, the authors have plotted FOI against age-stratified serological data. However, how was case data (as labelled on the axis) estimated from FOI? Also, how were the seroprevalence estimates generated from the serological data and does this represent seropositive to all/at least 1 etc. serotypes?\n\n4) In addition to the limitations on the described method for calculating FOI, the paper would benefit from a few sentences in the Discussion on the limitations of using (very) long-term average FOI at a highly aggregate level to dictate control policy. Such measures will be insensitive to shorter-term changes (e.g., to interventions or a wide variety of factors that act at < 20-year intervals) and finer-scale heterogeneities clearly occur and clearly other metrics of transmission still have a role to play in deciding dengue control policy. Suggesting that these maps might be useful for prioritising the areas where more detailed serosurveys (or individual test and vaccinate) should be done in first instance would be a more conservative interpretation than stating that vaccinating in this particular province of Brazil is \"highly questionable\".\n\n5) The assumptions and limitations of the described method are well detailed in the Discussion, but it would be interesting if there were any patterns in the residuals. Are there any circumstances where this method is better or worse?\n\n6) A major advantage of this method is international comparability, yet (as acknowledged by the authors in the Materials and methods section, but not the Results and Discussion), it is affected by different case definitions of dengue and severe dengue used in each country. Supplementary Figure 4 shows some interesting discrepancies that are not mentioned in the Results section. Thus, how generalisable are the results in countries that have much less well-defined case definitions than the countries chosen here?\n\n7) Regarding the methods: the use of additive force of infection (i.e. 3*\u03bb) seems strange and the reviewers wonder whether it quite adds up due to the multiple permutations of ways in which a person can have a secondary infection. In a multi serotype model with equal FOI between serotypes, the probability of infection with any serotype is 1-(1-\u03bb)^4, i.e., 1 minus probability of no infection to any serotype and slightly lower than 4*\u03bb. This would be worth checking as it definitely affects secondary infection attack rate.\n",
+      "created_at": "2025-12-02T10:18:03.525141Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T10:18:03.525141Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T10:18:03.525141Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "4e3e76ec-42ba-4257-b5fd-66210b533607",
+      "content_id": "3b24fab5-3db1-4eef-8e55-c3e2d3dae31f",
+      "claim_id": "C1",
+      "claim": "The age distribution of incident cases provides a more robust picture of trends in transmission than overall incidence for most immunizing infections.",
+      "claim_type": "EXPLICIT",
+      "source": "For most immunizing infections, the age distribution of incident cases provides a more robust picture of trends in transmission.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as a general principle about immunizing infections and surveillance.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:03.525141Z"
+    },
+    {
+      "id": "dd1d1c16-15e4-41d4-8292-4810041331b0",
+      "content_id": "3b24fab5-3db1-4eef-8e55-c3e2d3dae31f",
+      "claim_id": "C2",
+      "claim": "The framework estimates transmission intensity for dengue virus from age-specific incidence data for 359 administrative units in Thailand, Colombia, Brazil and Mexico.",
+      "claim_type": "EXPLICIT",
+      "source": "We present a framework to estimate transmission intensity for dengue virus from age-specific incidence data, and apply it to 359 administrative units in Thailand, Colombia, Brazil and Mexico.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract explicitly states the number of administrative units analyzed.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:03.525141Z"
+    },
+    {
+      "id": "7e497674-20ef-4472-8f5a-8d684697e99d",
+      "content_id": "3b24fab5-3db1-4eef-8e55-c3e2d3dae31f",
+      "claim_id": "C3",
+      "claim": "The estimates correlate well with those derived from seroprevalence data.",
+      "claim_type": "EXPLICIT",
+      "source": "Our estimates correlate well with those derived from seroprevalence data (the gold standard)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract states this correlation, which is supported by data presented in the results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:03.525141Z"
+    },
+    {
+      "id": "4188eafc-495a-4f90-876f-2434b37db8d6",
+      "content_id": "3b24fab5-3db1-4eef-8e55-c3e2d3dae31f",
+      "claim_id": "C4",
+      "claim": "The estimates capture the expected spatial heterogeneity in risk.",
+      "claim_type": "EXPLICIT",
+      "source": "Our estimates correlate well with those derived from seroprevalence data (the gold standard), capture the expected spatial heterogeneity in risk",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract states this finding, supported by results showing variation across administrative units.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:03.525141Z"
+    },
+    {
+      "id": "10d335ce-cff1-4409-8698-94188fec0897",
+      "content_id": "3b24fab5-3db1-4eef-8e55-c3e2d3dae31f",
+      "claim_id": "C5",
+      "claim": "The estimates correlate with known environmental drivers of transmission.",
+      "claim_type": "EXPLICIT",
+      "source": "Our estimates correlate well with those derived from seroprevalence data (the gold standard), capture the expected spatial heterogeneity in risk, and correlate with known environmental drivers of transmission.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract states this correlation, which is validated in the results section with specific environmental variables.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:03.525141Z"
+    },
+    {
+      "id": "eb909d94-2563-4c25-ad8e-3c186e0a8c2b",
+      "content_id": "3b24fab5-3db1-4eef-8e55-c3e2d3dae31f",
+      "claim_id": "C6",
+      "claim": "Age-specific counts are routinely collected by many surveillance systems.",
+      "claim_type": "EXPLICIT",
+      "source": "Since age-specific counts are routinely collected by masany surveillance systems, they represent a unique opportunity to further our understanding of disease burden and risk for many diseases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a general observation about surveillance practices.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:03.525141Z"
+    },
+    {
+      "id": "e931d441-53d4-4ee8-9835-031cca717a8d",
+      "content_id": "3b24fab5-3db1-4eef-8e55-c3e2d3dae31f",
+      "claim_id": "C7",
+      "claim": "The quality of surveillance often differs significantly both across countries and within regions of a country.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the use of raw case counts, or incidences, as a measure of disease risk can frequently be misleading because the quality of surveillance often differs significantly both across countries and within regions of a country making comparisons inappropriate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a known limitation of surveillance systems.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:03.525141Z"
+    },
+    {
+      "id": "02d16aac-fbe3-4c48-ae0f-42791820b97b",
+      "content_id": "3b24fab5-3db1-4eef-8e55-c3e2d3dae31f",
+      "claim_id": "C8",
+      "claim": "Areas with more complete reporting of disease may inaccurately appear to have more disease simply because reported cases scale linearly with completeness of reporting.",
+      "claim_type": "EXPLICIT",
+      "source": "Areas with more complete reporting of disease may inaccurately appear to have more disease simply because reported cases scale linearly with completeness of reporting.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a logical consequence of differences in reporting completeness.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:03.525141Z"
+    },
+    {
+      "id": "7afe125e-ebbf-4566-a8f2-f6eb628d3c55",
+      "content_id": "3b24fab5-3db1-4eef-8e55-c3e2d3dae31f",
+      "claim_id": "C9",
+      "claim": "Serological surveys are regarded as the gold standard to measure the susceptible fraction and infer the extent of transmission for most immunizing infections.",
+      "claim_type": "EXPLICIT",
+      "source": "For most immunizing infections (infections that generate long-lasting sterilizing immunity), serological surveys are regarded as the gold standard to measure the susceptible fraction and infer the extent of transmission",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established scientific consensus.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:03.525141Z"
+    },
+    {
+      "id": "8608966e-b7fa-4977-990d-422f24868255",
+      "content_id": "3b24fab5-3db1-4eef-8e55-c3e2d3dae31f",
+      "claim_id": "C10",
+      "claim": "An extensive review of the dengue literature found only three population-based serosurveys conducted in Brazil over the past 10 years.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, an extensive review of the dengue literature published recently found only three population-based serosurveys conducted in Brazil over the past 10 years, despite being the country that currently reports the largest number of cases worldwide (Fritzell et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Fritzell et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:03.525141Z"
+    },
+    {
+      "id": "cedcffe1-a2b8-4656-8d21-63b84bb38420",
+      "content_id": "3b24fab5-3db1-4eef-8e55-c3e2d3dae31f",
+      "claim_id": "C11",
+      "claim": "Only one serosurvey was identified for the Philippines and three for Thailand despite high dengue burden.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, only one and three studies were identified for the Philippines and Thailand, respectively, even though the burden of dengue is very high (Fritzell et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Fritzell et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:03.525141Z"
+    },
+    {
+      "id": "a01621a4-6acc-4672-baf0-f4110699a849",
+      "content_id": "3b24fab5-3db1-4eef-8e55-c3e2d3dae31f",
+      "claim_id": "C12",
+      "claim": "The age distribution of cases is largely robust to under-reporting.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, the age distributionof cases is also largely robust to under-reporting, facilitating the comparison between locations or over time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a key property of age-specific data.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:03.525141Z"
+    },
+    {
+      "id": "edd55f08-f898-4128-876c-4d0d6be23295",
+      "content_id": "3b24fab5-3db1-4eef-8e55-c3e2d3dae31f",
+      "claim_id": "C13",
+      "claim": "Dengue is the most widely spread mosquito-transmitted virus.",
+      "claim_type": "EXPLICIT",
+      "source": "Dengue is a relevant example because, despite being the most widely spread mosquito-transmitted virus, large gaps remain in our understanding of its global and local epidemiology (Fritzell et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge with citation support.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:03.525141Z"
+    },
+    {
+      "id": "237e552a-f1cb-4ccb-ac77-b71ca8076bdd",
+      "content_id": "3b24fab5-3db1-4eef-8e55-c3e2d3dae31f",
+      "claim_id": "C14",
+      "claim": "Large gaps remain in our understanding of dengue's global and local epidemiology.",
+      "claim_type": "EXPLICIT",
+      "source": "Dengue is a relevant example because, despite being the most widely spread mosquito-transmitted virus, large gaps remain in our understanding of its global and local epidemiology (Fritzell et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citation support.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:03.525141Z"
+    },
+    {
+      "id": "185f2c06-2024-4c91-8ef6-c330b2bc85b6",
+      "content_id": "3b24fab5-3db1-4eef-8e55-c3e2d3dae31f",
+      "claim_id": "C15",
+      "claim": "The average force of infection over the last 20 years was estimated for 148 administrative level one units.",
+      "claim_type": "EXPLICIT",
+      "source": "We estimated the average forces of infection (FOI) over the last 20 years for 148 administrative level one units where age specific case data was available (Table 1, Figure 1B): 72/76 provinces of Thailand, 28/32 departments of Colombia, 21/27 states of Brazil, and 27/31 states of Mexico.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of the data analysis performed.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:03.525141Z"
+    },
+    {
+      "id": "c1b8d100-074c-439f-80d0-14d0c2227ae6",
+      "content_id": "3b24fab5-3db1-4eef-8e55-c3e2d3dae31f",
+      "claim_id": "C16",
+      "claim": "The administrative units analyzed comprise 90%, 99%, 90% and 91% of the population at risk in Thailand, Colombia, Brazil and Mexico respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "These administrative units comprise 90%, 99%, 90% and 91% of the population at risk of these countries respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a description of the coverage of the analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:03.525141Z"
+    },
+    {
+      "id": "f9ce75c9-2c97-45df-8513-7cdd514d1c58",
+      "content_id": "3b24fab5-3db1-4eef-8e55-c3e2d3dae31f",
+      "claim_id": "C17",
+      "claim": "Forces of infection were estimated for 211 municipalities (administrative level two units) of Colombia where at least 200 cases were reported.",
+      "claim_type": "EXPLICIT",
+      "source": "We also estimated forces of infection for 211 municipalities (administrative level two units) of Colombia where at least 200 cases were reported over the period covered by the data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of the data analysis performed.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:03.525141Z"
+    },
+    {
+      "id": "203e17b0-69a5-4150-9e17-427c045421f4",
+      "content_id": "3b24fab5-3db1-4eef-8e55-c3e2d3dae31f",
+      "claim_id": "C18",
+      "claim": "The average FOI was 0.096 (95%CI 0.092-0.100) in Thailand.",
+      "claim_type": "EXPLICIT",
+      "source": "The average FOI (the rate at which susceptible individuals that will become infected in a year by any dengue serotype) was 0.096 in Thailand (95%CI 0.092-0.100)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct result from the statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:03.525141Z"
+    },
+    {
+      "id": "cde35934-58de-453d-b0cc-dc0b20b3cb86",
+      "content_id": "3b24fab5-3db1-4eef-8e55-c3e2d3dae31f",
+      "claim_id": "C19",
+      "claim": "The average FOI was 0.132 (95%CI 0.128-0.136) in Colombia.",
+      "claim_type": "EXPLICIT",
+      "source": "0.132 (95%CI 0.128-0.136) in Colombia",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct result from the statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:03.525141Z"
+    },
+    {
+      "id": "d130ad24-1087-4cad-b42f-5d94976e23e4",
+      "content_id": "3b24fab5-3db1-4eef-8e55-c3e2d3dae31f",
+      "claim_id": "C20",
+      "claim": "The average FOI was 0.124 (95%CI 0.116-0.128) in Brazil.",
+      "claim_type": "EXPLICIT",
+      "source": "0.124 (95%CI 0.116-0.128) in Brazil",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct result from the statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:03.525141Z"
+    },
+    {
+      "id": "14e13152-1b44-4e53-9151-b31c8c3d6611",
+      "content_id": "3b24fab5-3db1-4eef-8e55-c3e2d3dae31f",
+      "claim_id": "C21",
+      "claim": "The average FOI was 0.052 (95%CI 0.048-0.056) in Mexico.",
+      "claim_type": "EXPLICIT",
+      "source": "0.052 (95%CI 0.048-0.056) in Mexico",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct result from the statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:03.525141Z"
+    },
+    {
+      "id": "964f6685-fc28-4211-acd7-ca75e0aec693",
+      "content_id": "3b24fab5-3db1-4eef-8e55-c3e2d3dae31f",
+      "claim_id": "C23",
+      "claim": "12% of the susceptible population of Colombia and Brazil get infected yearly.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, 12% of the susceptible population of Colombia and Brazil, and 5% of the susceptible population of Mexico get infected yearly.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is calculated from the FOI estimates.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:03.525141Z"
+    },
+    {
+      "id": "9c989404-f250-474d-8f5f-7abd9d430b44",
+      "content_id": "3b24fab5-3db1-4eef-8e55-c3e2d3dae31f",
+      "claim_id": "C24",
+      "claim": "5% of the susceptible population of Mexico get infected yearly.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, 12% of the susceptible population of Colombia and Brazil, and 5% of the susceptible population of Mexico get infected yearly.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is calculated from the FOI estimates.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:03.525141Z"
+    },
+    {
+      "id": "93b21ac9-2be5-4f3f-ad6f-e0ff0783e7c6",
+      "content_id": "3b24fab5-3db1-4eef-8e55-c3e2d3dae31f",
+      "claim_id": "C25",
+      "claim": "Transmission intensity varied greatly within countries.",
+      "claim_type": "EXPLICIT",
+      "source": "However, as expected, transmission intensity varied greatly within countries",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a finding with supporting data on ranges and coefficients of variation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:03.525141Z"
+    },
+    {
+      "id": "40bc5411-1479-4dac-ab94-8c2854155d1b",
+      "content_id": "3b24fab5-3db1-4eef-8e55-c3e2d3dae31f",
+      "claim_id": "C26",
+      "claim": "FOI ranged between 0.04 and 0.15 (coefficient of variation = 0.27) across provinces of Thailand.",
+      "claim_type": "EXPLICIT",
+      "source": "ranging between 0.04 and 0.15 (coefficient of variation (CV) = 0.27) across provinces of Thailand",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct result from the statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:03.525141Z"
+    },
+    {
+      "id": "5bc31708-3332-4774-b9cb-8b4338e6e699",
+      "content_id": "3b24fab5-3db1-4eef-8e55-c3e2d3dae31f",
+      "claim_id": "C27",
+      "claim": "FOI ranged between 0.02 and 0.20 (CV = 0.37) across departments of Colombia.",
+      "claim_type": "EXPLICIT",
+      "source": "between 0.02 and 0.20 across departments of Colombia (CV = 0.37)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct result from the statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:03.525141Z"
+    },
+    {
+      "id": "e1260b31-9cfe-45e2-a318-7c6af377199c",
+      "content_id": "3b24fab5-3db1-4eef-8e55-c3e2d3dae31f",
+      "claim_id": "C28",
+      "claim": "FOI ranged between 0.02 and 0.24 (CV = 0.56) across states of Brazil.",
+      "claim_type": "EXPLICIT",
+      "source": "between 0.02 and 0.24 across states of Brazil (CV = 0.56)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct result from the statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:03.525141Z"
+    },
+    {
+      "id": "f0a365f8-d7f7-4608-b75c-38d854ba5ea0",
+      "content_id": "3b24fab5-3db1-4eef-8e55-c3e2d3dae31f",
+      "claim_id": "C29",
+      "claim": "FOI ranged between 0.01 and 0.092 (CV = 0.45) across states of Mexico.",
+      "claim_type": "EXPLICIT",
+      "source": "between 0.01 and 0.092 across states of Mexico (CV = 0.45)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct result from the statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:03.525141Z"
+    },
+    {
+      "id": "7341246c-c825-4030-a0b7-ef2dbae72f37",
+      "content_id": "3b24fab5-3db1-4eef-8e55-c3e2d3dae31f",
+      "claim_id": "C30",
+      "claim": "Transmission was highest in the North East of Brazil with an average FOI of 0.152.",
+      "claim_type": "EXPLICIT",
+      "source": "Transmission was highest in the North East of Brazil (average FOI of 0.152)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct result from the statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:03.525141Z"
+    },
+    {
+      "id": "15ea4ad5-744d-462b-9caf-6bd20a9780eb",
+      "content_id": "3b24fab5-3db1-4eef-8e55-c3e2d3dae31f",
+      "claim_id": "C31",
+      "claim": "Transmission was highest in the Caribbean region of Colombia with an average FOI of 0.156.",
+      "claim_type": "EXPLICIT",
+      "source": "and in the Caribbean region of Colombia (average FOI of 0.156)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct result from the statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:03.525141Z"
+    },
+    {
+      "id": "bdaa3bec-f46c-49a3-84c3-59cf060a70b4",
+      "content_id": "3b24fab5-3db1-4eef-8e55-c3e2d3dae31f",
+      "claim_id": "C32",
+      "claim": "There was substantial heterogeneity within departments of Colombia.",
+      "claim_type": "EXPLICIT",
+      "source": "There was also substantial heterogeneity within departments of Colombia.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a finding with supporting data on coefficient of variation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:03.525141Z"
+    },
+    {
+      "id": "e7819342-4a54-4baf-8a09-7d6824c16a87",
+      "content_id": "3b24fab5-3db1-4eef-8e55-c3e2d3dae31f",
+      "claim_id": "C33",
+      "claim": "The mean coefficient of variation for 15 departments of Colombia where estimates were available for more than 5 municipalities was 0.4.",
+      "claim_type": "EXPLICIT",
+      "source": "The mean CV for 15 departments where we had estimates for more than 5 municipalities was 0.4.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct result from the statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:03.525141Z"
+    },
+    {
+      "id": "32481b13-0663-45f0-aaf1-a5ced860cfb9",
+      "content_id": "3b24fab5-3db1-4eef-8e55-c3e2d3dae31f",
+      "claim_id": "C34",
+      "claim": "Good correlation (R2 = 0.73, 95% CI 0.51\u20130.87) was found between FOI estimates derived from case data and those from serological data for 16 locations.",
+      "claim_type": "EXPLICIT",
+      "source": "For the 16 locations where we had access to both age-stratified serological data (the gold standard) and case data, we found good correlation between the estimates of the FOI derived from both data sources (R2 = 0.73, 95% CI 0.51\u20130.87, Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct result from the validation analysis comparing two data sources.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:03.525141Z"
+    },
+    {
+      "id": "b3266efb-3679-48dd-a856-5810f60075e3",
+      "content_id": "3b24fab5-3db1-4eef-8e55-c3e2d3dae31f",
+      "claim_id": "C35",
+      "claim": "No correlation (R2 = 0.002) was found between recent incidence of dengue and FOI estimates derived from serological data.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, we found no correlation between recent incidence of dengue in these locations (the average yearly incidence over the most recent 5 years of data) and the estimates of FOI derived from serological data (R2 = 0.002, Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct result from the validation analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:03.525141Z"
+    },
+    {
+      "id": "85616fca-e91d-4635-983d-313b8ba6476a",
+      "content_id": "3b24fab5-3db1-4eef-8e55-c3e2d3dae31f",
+      "claim_id": "C36",
+      "claim": "FOI increased by 0.006 (95% CI 0.004\u20130.007, R2 = 0.19) for each additional \u00b0C in temperature for 211 Colombian municipalities.",
+      "claim_type": "EXPLICIT",
+      "source": "On average, the FOI increased by 0.006 (95% CI 0.004\u20130.007, R2 = 0.19) for each additional \u00b0C in temperature",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct result from the regression analysis of environmental drivers.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:03.525141Z"
+    },
+    {
+      "id": "a28d7f45-8601-41eb-ac0d-a402d608fcf3",
+      "content_id": "3b24fab5-3db1-4eef-8e55-c3e2d3dae31f",
+      "claim_id": "C37",
+      "claim": "FOI decreased by 0.005 (95% CI 0.003, 0.006, R2 = 0.21) for each 100 m increase in elevation for 211 Colombian municipalities.",
+      "claim_type": "EXPLICIT",
+      "source": "it decreased by 0.005 (95% CI 0.003, 0.006, R2 = 0.21) for each 100 m increase in elevation (Table 2)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct result from the regression analysis of environmental drivers.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:03.525141Z"
+    },
+    {
+      "id": "2b6f806f-afd3-430c-a1dc-aa1f59e89688",
+      "content_id": "3b24fab5-3db1-4eef-8e55-c3e2d3dae31f",
+      "claim_id": "C38",
+      "claim": "Population density was not associated with FOI estimates in unadjusted analyses.",
+      "claim_type": "EXPLICIT",
+      "source": "While population density was not associated with FOI estimates in unadjusted analyses",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct result from the regression analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:03.525141Z"
+    },
+    {
+      "id": "05a6df24-7cd6-4f8a-bcef-b08f023b70c7",
+      "content_id": "3b24fab5-3db1-4eef-8e55-c3e2d3dae31f",
+      "claim_id": "C39",
+      "claim": "A twofold increase in population density was associated with a 0.007 (95% 0.004\u20130.009) increase in FOI in the best fitting adjusted model.",
+      "claim_type": "EXPLICIT",
+      "source": "a twofold increase in density was associated with a 0.007 (95% 0.004\u20130.009) increase in FOI in the best fitting adjusted model",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct result from the adjusted regression analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:03.525141Z"
+    },
+    {
+      "id": "fb962719-1e9f-49c3-a1eb-c9d6374d6bac",
+      "content_id": "3b24fab5-3db1-4eef-8e55-c3e2d3dae31f",
+      "claim_id": "C40",
+      "claim": "The best fitting adjusted model included elevation, population density and precipitation, and explained 35% (95%CI 23\u201350%) of the variance.",
+      "claim_type": "EXPLICIT",
+      "source": "This model included elevation, population density and precipitation, and explained 35% (95%CI 23\u201350%) of the variance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct result from the regression analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:03.525141Z"
+    },
+    {
+      "id": "4c7051c8-1331-4543-9384-b7d8d05a4554",
+      "content_id": "3b24fab5-3db1-4eef-8e55-c3e2d3dae31f",
+      "claim_id": "C41",
+      "claim": "Recent incidence of dengue in Colombian municipalities was not correlated with temperature (R2 = 0.01).",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the recent incidence of dengue in these municipalities was not correlated with temperature, elevation or Aedes aegypti abundance (R2 0.01, 0.01, and 0.00 respectively, Table 3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct result from the regression analysis comparing incidence with environmental drivers.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:03.525141Z"
+    },
+    {
+      "id": "571c90c6-882d-4f11-b486-fcedfa6aac16",
+      "content_id": "3b24fab5-3db1-4eef-8e55-c3e2d3dae31f",
+      "claim_id": "C42",
+      "claim": "Recent incidence of dengue in Colombian municipalities was not correlated with elevation (R2 = 0.01).",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the recent incidence of dengue in these municipalities was not correlated with temperature, elevation or Aedes aegypti abundance (R2 0.01, 0.01, and 0.00 respectively, Table 3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct result from the regression analysis comparing incidence with environmental drivers.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:03.525141Z"
+    },
+    {
+      "id": "4860eb1d-fe53-4ac5-81cc-3c5d6f887d00",
+      "content_id": "3b24fab5-3db1-4eef-8e55-c3e2d3dae31f",
+      "claim_id": "C43",
+      "claim": "Recent incidence of dengue in Colombian municipalities was not correlated with Aedes aegypti abundance (R2 = 0.00).",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the recent incidence of dengue in these municipalities was not correlated with temperature, elevation or Aedes aegypti abundance (R2 0.01, 0.01, and 0.00 respectively, Table 3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct result from the regression analysis comparing incidence with environmental drivers.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:03.525141Z"
+    },
+    {
+      "id": "554ed837-10ab-45e7-888d-5dd957b9e20e",
+      "content_id": "3b24fab5-3db1-4eef-8e55-c3e2d3dae31f",
+      "claim_id": "C44",
+      "claim": "A negative association was found between population density and incidence, indicating a 6% (95%CI 2\u201310%) decrease in log incidence for each 2-fold increase in population density.",
+      "claim_type": "EXPLICIT",
+      "source": "We did find a negative association between population density and incidence, indicating a 6% (95%CI 2\u201310%) decrease in log incidence for each 2-fold increase in population density.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct result from the regression analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:03.525141Z"
+    },
+    {
+      "id": "a59ab21f-3ba1-4618-85d0-350990da18b5",
+      "content_id": "3b24fab5-3db1-4eef-8e55-c3e2d3dae31f",
+      "claim_id": "C45",
+      "claim": "The only available dengue vaccine (Dengvaxia) has been licensed for use in children 9 years or older in 20 countries including Thailand, Brazil and Mexico.",
+      "claim_type": "EXPLICIT",
+      "source": "The only available dengue vaccine (Dengvaxia) has been licensed for use in children 9 years or older in 20 countries including Thailand, Brazil and Mexico.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as factual information about vaccine licensing.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:03.525141Z"
+    },
+    {
+      "id": "9dc9d48e-b37e-4a9e-846a-2568ed5a123d",
+      "content_id": "3b24fab5-3db1-4eef-8e55-c3e2d3dae31f",
+      "claim_id": "C46",
+      "claim": "The WHO currently recommends confirmation of prior dengue infection at the individual level before vaccinating individuals.",
+      "claim_type": "EXPLICIT",
+      "source": "The WHO currently recommends confirmation (by virology or serology) of prior dengue infection at the individual level before vaccinating individuals, and therefore there is interest in identifying populations with high seropositivity to target pre-vaccination screening (WHO, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citation to WHO 2018 guidelines.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:03.525141Z"
+    },
+    {
+      "id": "3d0d7045-a827-46de-8fd5-c737decd103b",
+      "content_id": "3b24fab5-3db1-4eef-8e55-c3e2d3dae31f",
+      "claim_id": "C47",
+      "claim": "An alternative vaccination strategy discussed is rolling out the vaccine in settings with 80% or greater seropositivity among 9 year olds.",
+      "claim_type": "EXPLICIT",
+      "source": "In the absence of appropriate rapid serological assays that would allow implementing this individual screening strategy, an alternative that has been discussed is rolling out the vaccine in settings with 80% or greater seropositivity among 9 year olds.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a discussed alternative strategy.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:03.525141Z"
+    },
+    {
+      "id": "cd22f9c1-2ab0-4bff-89e9-ed5a88ece559",
+      "content_id": "3b24fab5-3db1-4eef-8e55-c3e2d3dae31f",
+      "claim_id": "C48",
+      "claim": "Only a small minority of locations in Colombia and Brazil have > 80% seropositivity in 9 year olds.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results suggest that only a small minority of locations in Colombia and Brazil have > 80% seropositivity in this age group (Figure 3, Figure 3\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct result from the analysis of expected seroprevalence.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:03.525141Z"
+    },
+    {
+      "id": "7f830728-a230-49fa-a963-fadfa6b71f49",
+      "content_id": "3b24fab5-3db1-4eef-8e55-c3e2d3dae31f",
+      "claim_id": "C49",
+      "claim": "The expected proportion seropositive at 9 years of age ranged between 0.35 and 0.75 in provinces of Thailand.",
+      "claim_type": "EXPLICIT",
+      "source": "The expected proportion seropositive at 9 years of age ranged between 0.35 and 0.75 in provinces of Thailand",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct result from the analysis of expected seroprevalence.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:03.525141Z"
+    },
+    {
+      "id": "d8d44ae9-bd5f-46ca-b8ca-8784e4fe1f9e",
+      "content_id": "3b24fab5-3db1-4eef-8e55-c3e2d3dae31f",
+      "claim_id": "C50",
+      "claim": "The expected proportion seropositive at 9 years of age ranged between 0.13 and 0.85 in departments of Colombia.",
+      "claim_type": "EXPLICIT",
+      "source": "0.13 and 0.85 in departments of Colombia",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct result from the analysis of expected seroprevalence.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:03.525141Z"
+    },
+    {
+      "id": "928b8669-28bc-4483-98bb-50a7f5bfb811",
+      "content_id": "3b24fab5-3db1-4eef-8e55-c3e2d3dae31f",
+      "claim_id": "C51",
+      "claim": "The expected proportion seropositive at 9 years of age ranged between 0 and 0.88 in states of Brazil.",
+      "claim_type": "EXPLICIT",
+      "source": "0 and 0.88 in states of Brazil",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct result from the analysis of expected seroprevalence.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:03.525141Z"
+    },
+    {
+      "id": "22a81a8e-bbc9-473a-a20f-644a79e26636",
+      "content_id": "3b24fab5-3db1-4eef-8e55-c3e2d3dae31f",
+      "claim_id": "C52",
+      "claim": "The expected proportion seropositive at 9 years of age ranged between 0.07 and 0.56 in states of Mexico.",
+      "claim_type": "EXPLICIT",
+      "source": "0.07 and 0.56 in states of Mexico",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct result from the analysis of expected seroprevalence.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:03.525141Z"
+    },
+    {
+      "id": "0647387a-08d5-4165-9cf2-09bdac70fb6d",
+      "content_id": "3b24fab5-3db1-4eef-8e55-c3e2d3dae31f",
+      "claim_id": "C53",
+      "claim": "Seroprevalence was estimated to be high enough (\u226580%) in only 2/28 Colombian departments.",
+      "claim_type": "EXPLICIT",
+      "source": "The seroprevalence was estimated to be high enough in only 2/28 Colombian departments",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct result from the analysis of expected seroprevalence.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:03.525141Z"
+    },
+    {
+      "id": "e6f92714-b2f6-4c02-a72f-710f1cc2166a",
+      "content_id": "3b24fab5-3db1-4eef-8e55-c3e2d3dae31f",
+      "claim_id": "C54",
+      "claim": "Seroprevalence was estimated to be high enough (\u226580%) in only 4/25 Brazilian states.",
+      "claim_type": "EXPLICIT",
+      "source": "4/25 Brazilian states",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct result from the analysis of expected seroprevalence.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:03.525141Z"
+    },
+    {
+      "id": "7def0b19-6d67-424d-8793-cafbd10bd985",
+      "content_id": "3b24fab5-3db1-4eef-8e55-c3e2d3dae31f",
+      "claim_id": "C55",
+      "claim": "None of the 72 Thai provinces reached 80% seroprevalence at age 9.",
+      "claim_type": "EXPLICIT",
+      "source": "none of the 72 Thai provinces or 27 Mexican states",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct result from the analysis of expected seroprevalence.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:03.525141Z"
+    },
+    {
+      "id": "66f49597-09e9-46d2-aea5-3b607fd8a40a",
+      "content_id": "3b24fab5-3db1-4eef-8e55-c3e2d3dae31f",
+      "claim_id": "C56",
+      "claim": "None of the 27 Mexican states reached 80% seroprevalence at age 9.",
+      "claim_type": "EXPLICIT",
+      "source": "none of the 72 Thai provinces or 27 Mexican states",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct result from the analysis of expected seroprevalence.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:03.525141Z"
+    },
+    {
+      "id": "ed4fe64a-b6c9-4b91-bcb9-42b698505d07",
+      "content_id": "3b24fab5-3db1-4eef-8e55-c3e2d3dae31f",
+      "claim_id": "C57",
+      "claim": "Within the two Colombian departments that met the 80% seroprevalence threshold, only 9/13 (70%) of the municipalities evaluated reached this level.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, even within the two Colombian departments that met the 80% seroprevalence threshold, only 9/13 (70%) of the municipalities evaluated reached this level.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct result from the analysis of expected seroprevalence at municipality level.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:03.525141Z"
+    },
+    {
+      "id": "b12149f2-3b0f-40f0-b438-9d6ff2147c76",
+      "content_id": "3b24fab5-3db1-4eef-8e55-c3e2d3dae31f",
+      "claim_id": "C58",
+      "claim": "It would be necessary to target children 14 years of age or older in over 70% (108/148) of locations to comply with WHO-SAGE recommendations.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results suggest that, to comply with the WHO-SAGE recommendations, it would be necessary to target children 14 years of age or older in over 70% (108/148) of locations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct result from the analysis of minimum age for vaccination.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:03.525141Z"
+    },
+    {
+      "id": "8b1e3da7-95b7-4511-9ac4-bc6649b9b6c2",
+      "content_id": "3b24fab5-3db1-4eef-8e55-c3e2d3dae31f",
+      "claim_id": "C59",
+      "claim": "In approximately 50% of the locations evaluated, it would be necessary to target individuals aged 18 years or older, precluding school-based vaccination strategies.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, in approximately 50% of the locations evaluated, it would be necessary to target individuals aged 18 years or older, precluding school-based vaccination strategies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct result from the analysis of minimum age for vaccination.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:03.525141Z"
+    },
+    {
+      "id": "627623dc-e50b-430b-bec9-692acf7f5ecf",
+      "content_id": "3b24fab5-3db1-4eef-8e55-c3e2d3dae31f",
+      "claim_id": "C60",
+      "claim": "Both the incidence and the mean adjusted incidence performed very poorly in ranking spatial units compared to the FOI.",
+      "claim_type": "EXPLICIT",
+      "source": "Both the incidence and the mean adjusted incidence performed very poorly in ranking spatial units compared to the FOI (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct result from the comparison of alternative metrics.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:03.525141Z"
+    },
+    {
+      "id": "16fa8a6e-b91a-4f82-a2dd-8d98442c4252",
+      "content_id": "3b24fab5-3db1-4eef-8e55-c3e2d3dae31f",
+      "claim_id": "C61",
+      "claim": "The proportion of incidence under 10 years and the mean age of cases performed quite well at ranking spatial units within countries.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the proportion of incidence under 10 years and the mean age of cases (to a lesser degree) performed quite well at ranking spatial units within countries.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct result from the comparison of alternative metrics.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:03.525141Z"
+    },
+    {
+      "id": "2b080a37-a892-4083-94da-5f86994067bb",
+      "content_id": "3b24fab5-3db1-4eef-8e55-c3e2d3dae31f",
+      "claim_id": "C62",
+      "claim": "None of the alternative metrics performed as well as the FOI when comparing spatial units from different countries.",
+      "claim_type": "EXPLICIT",
+      "source": "However, none of these metrics performed as well as the FOI when comparing spatial units from different countries, and they did not correlate as well with the gold standard (FOI estimates derived from seroprevalence data) (Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct result from the comparison of alternative metrics.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:03.525141Z"
+    },
+    {
+      "id": "42cdfd31-4dd2-496f-809b-0ab63a56d1b3",
+      "content_id": "3b24fab5-3db1-4eef-8e55-c3e2d3dae31f",
+      "claim_id": "C63",
+      "claim": "Estimates derived from all cases tended to underestimate those obtained from DHF cases.",
+      "claim_type": "EXPLICIT",
+      "source": "In general, estimates derived from all cases tended to underestimate those obtained from DHF cases, but the correlation between the estimates was good (Figure 4A)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct result from the sensitivity analysis comparing different case definitions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:03.525141Z"
+    },
+    {
+      "id": "5197a769-e876-4bac-b973-db49175489ec",
+      "content_id": "3b24fab5-3db1-4eef-8e55-c3e2d3dae31f",
+      "claim_id": "C64",
+      "claim": "The correlation between FOI estimates from all cases vs. DHF cases was highest for Colombia (r = 0.74) and Mexico (r = 0.78).",
+      "claim_type": "EXPLICIT",
+      "source": "The correlation was highest for Colombia and Mexico (r = 0.74 and r = 0.78, respectively)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct result from the sensitivity analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:03.525141Z"
+    },
+    {
+      "id": "7bb177e9-1dbe-4283-ab4b-ad650474cc91",
+      "content_id": "3b24fab5-3db1-4eef-8e55-c3e2d3dae31f",
+      "claim_id": "C65",
+      "claim": "The correlation between FOI estimates from all cases vs. DHF cases was lower for Brazil (r = 0.48).",
+      "claim_type": "EXPLICIT",
+      "source": "but less so for Brazil (r = 0.48)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct result from the sensitivity analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:03.525141Z"
+    },
+    {
+      "id": "7677d6b7-b4db-4718-968f-0ef6c7afbedc",
+      "content_id": "3b24fab5-3db1-4eef-8e55-c3e2d3dae31f",
+      "claim_id": "C66",
+      "claim": "2/3 of the Brazilian locations that showed discrepant results had the smallest number of DHF cases (n = 217 and 265).",
+      "claim_type": "EXPLICIT",
+      "source": "However, 2/3 of the Brazilian locations that showed discrepant results had the smallest number of DHF cases (n = 217 and 265) suggesting that sample size may have played a role.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct observation from the sensitivity analysis with inference about sample size effects.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:03.525141Z"
+    },
+    {
+      "id": "6bfbcc04-fe64-4396-9098-f214496ec8b4",
+      "content_id": "3b24fab5-3db1-4eef-8e55-c3e2d3dae31f",
+      "claim_id": "C67",
+      "claim": "All the Colombian locations where there was a large discrepancy had very low counts of DHF cases (n = 41, 55, and 48, respectively).",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, all the Colombian locations where there was a large discrepancy had very low counts of DHF cases (n = 41, 55, and 48, respectively).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct observation from the sensitivity analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:03.525141Z"
+    },
+    {
+      "id": "e57f36e5-b882-4515-8a2e-e4a176c6ae5e",
+      "content_id": "3b24fab5-3db1-4eef-8e55-c3e2d3dae31f",
+      "claim_id": "C68",
+      "claim": "For immunizing infections in endemic circulation, recent incidence may be a poor metric of transmission and may be misleading when ranking spatial units.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results underscore the extent to which, for immunizing infections in endemic circulation, recent incidence may be a poor metric of transmission and may be misleading when ranking spatial units (Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as a conclusion from the results with supporting figure.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:03.525141Z"
+    },
+    {
+      "id": "23564f74-a734-422b-8b74-9c4e79cfda23",
+      "content_id": "3b24fab5-3db1-4eef-8e55-c3e2d3dae31f",
+      "claim_id": "C69",
+      "claim": "Immunity of the population in high-transmission settings reduces the number of individuals that are susceptible to infection.",
+      "claim_type": "EXPLICIT",
+      "source": "Immunity of the population in high-transmission settings reduces the number of individuals that are susceptible to infection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an explanation for why incidence may be misleading.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:03.525141Z"
+    },
+    {
+      "id": "b69347a7-0667-4fdc-92fb-9737e63cc756",
+      "content_id": "3b24fab5-3db1-4eef-8e55-c3e2d3dae31f",
+      "claim_id": "C70",
+      "claim": "Incidence in places where transmission intensity is lower may be roughly equivalent to that in higher transmission intensity areas.",
+      "claim_type": "EXPLICIT",
+      "source": "As a result, incidence in places where transmission intensity is lower, but people remain susceptible for a longer period of time, may be roughly equivalent to that in higher transmission intensity areas.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an explanation for why incidence may be misleading.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:03.525141Z"
+    },
+    {
+      "id": "277deec5-e98d-44c7-b1e8-4c8e2fe1735c",
+      "content_id": "3b24fab5-3db1-4eef-8e55-c3e2d3dae31f",
+      "claim_id": "C71",
+      "claim": "FOI estimates are more robust to differences in surveillance efficiency than aggregate counts.",
+      "claim_type": "EXPLICIT",
+      "source": "Since FOI estimates are derived from the age distribution of incidence, and not from the aggregate counts, they are more robust to differences in surveillance efficiency and can be obtained with relatively small numbers of yearly cases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a key advantage of the FOI approach.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:03.525141Z"
+    },
+    {
+      "id": "225266c4-76d2-4ccc-bb17-741a807e983a",
+      "content_id": "3b24fab5-3db1-4eef-8e55-c3e2d3dae31f",
+      "claim_id": "C72",
+      "claim": "FOI estimates can be obtained with relatively small numbers of yearly cases.",
+      "claim_type": "EXPLICIT",
+      "source": "Since FOI estimates are derived from the age distribution of incidence, and not from the aggregate counts, they are more robust to differences in surveillance efficiency and can be obtained with relatively small numbers of yearly cases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a key advantage of the FOI approach.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:03.525141Z"
+    },
+    {
+      "id": "138b6520-6cc8-4eea-8a17-2e3bf52ce01e",
+      "content_id": "3b24fab5-3db1-4eef-8e55-c3e2d3dae31f",
+      "claim_id": "C73",
+      "claim": "As much as 35% of the variance in FOI may be explained by differences in temperature/elevation and population density alone.",
+      "claim_type": "EXPLICIT",
+      "source": "While this heterogeneity is probably driven by multiple environmental, socio-economic and demographic factors, our results suggest that as much as 35% of the variance may be explained by differences in temperature/elevation and population density alone.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a conclusion from the regression analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:03.525141Z"
+    },
+    {
+      "id": "320caa35-485d-4d76-a9ad-3b9d108a7ea2",
+      "content_id": "3b24fab5-3db1-4eef-8e55-c3e2d3dae31f",
+      "claim_id": "C74",
+      "claim": "Northeastern Brazil was the region that experienced the highest incidence of Zika during the 2015/2016 epidemic.",
+      "claim_type": "EXPLICIT",
+      "source": "Northeastern Brazil was also the region that experienced the highest incidence of Zika during the 2015/2016 epidemic, and this is not surprising given that both viruses are transmitted by the same mosquito vector (A. aegypti)(Lowe et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citation support.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:03.525141Z"
+    },
+    {
+      "id": "4cee894d-7e5f-41be-be8e-be05df036c89",
+      "content_id": "3b24fab5-3db1-4eef-8e55-c3e2d3dae31f",
+      "claim_id": "C75",
+      "claim": "Both dengue and Zika viruses are transmitted by the same mosquito vector (A. aegypti).",
+      "claim_type": "EXPLICIT",
+      "source": "Northeastern Brazil was also the region that experienced the highest incidence of Zika during the 2015/2016 epidemic, and this is not surprising given that both viruses are transmitted by the same mosquito vector (A. aegypti)(Lowe et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge with citation support.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:03.525141Z"
+    },
+    {
+      "id": "0455198c-ba54-4c6d-9355-76ffef455ae8",
+      "content_id": "3b24fab5-3db1-4eef-8e55-c3e2d3dae31f",
+      "claim_id": "C76",
+      "claim": "The high transmission intensities found in Northeastern Brazil suggest that this region might be ideal to implement pre-vaccination screening strategies.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the high transmission intensities (and expected seroprevalences) found in Northeastern Brazil suggest that this region might be ideal to implement pre-vaccination screening strategies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an inference from the FOI estimates for vaccination policy.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:03.525141Z"
+    },
+    {
+      "id": "66277d71-e3f2-4292-a0ca-27b98b2de668",
+      "content_id": "3b24fab5-3db1-4eef-8e55-c3e2d3dae31f",
+      "claim_id": "C77",
+      "claim": "The large heterogeneity estimated in Colombia suggests that decisions of where to deploy control interventions should be made at least at the municipal/district (administrative level 2) level.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the large heterogeneity estimated in Colombia suggests that decisions of where to deploy control interventions, including vaccines, should be made at least at the municipal/district (administrative level 2) level.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an inference from the heterogeneity findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:03.525141Z"
+    },
+    {
+      "id": "64dbb7a5-983e-4349-bfd8-b97f65e6cf6c",
+      "content_id": "3b24fab5-3db1-4eef-8e55-c3e2d3dae31f",
+      "claim_id": "C78",
+      "claim": "The case-definition of DHF is quite specific.",
+      "claim_type": "EXPLICIT",
+      "source": "While the case-definition of DHF is quite specific, milder forms of the disease are characterized by a non-specific febrile syndrome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about dengue case definitions.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:03.525141Z"
+    },
+    {
+      "id": "b57e516b-274a-44be-aaad-c1576720c6aa",
+      "content_id": "3b24fab5-3db1-4eef-8e55-c3e2d3dae31f",
+      "claim_id": "C79",
+      "claim": "Milder forms of dengue are characterized by a non-specific febrile syndrome.",
+      "claim_type": "EXPLICIT",
+      "source": "While the case-definition of DHF is quite specific, milder forms of the disease are characterized by a non-specific febrile syndrome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about dengue case definitions.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:03.525141Z"
+    },
+    {
+      "id": "be1a2893-0249-4f1d-916c-db6df1c90a8d",
+      "content_id": "3b24fab5-3db1-4eef-8e55-c3e2d3dae31f",
+      "claim_id": "C80",
+      "claim": "Data from locations that report 'all cases' rather than more severe forms (DHF) are more likely to be misclassified.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, data from locations that report 'all cases' rather than more severe forms (DHF) are more likely to be misclassified, and could be less useful to infer transmission histories.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a concern about data quality with logical inference.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:03.525141Z"
+    },
+    {
+      "id": "b4cc9132-8f47-439c-8d0e-a4a020909f5e",
+      "content_id": "3b24fab5-3db1-4eef-8e55-c3e2d3dae31f",
+      "claim_id": "C81",
+      "claim": "The model assumes that the age distribution of cases represents the age distribution of secondary infections.",
+      "claim_type": "EXPLICIT",
+      "source": "It assumes that the age distribution of cases represents the age distribution of secondary infections, thus ignoring the potential contribution of primary, tertiary and quaternary infections.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a model assumption.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:03.525141Z"
+    },
+    {
+      "id": "a62b1705-f060-4481-8ca3-f317359f76c2",
+      "content_id": "3b24fab5-3db1-4eef-8e55-c3e2d3dae31f",
+      "claim_id": "C82",
+      "claim": "The model assumes that risk of infection, symptoms, and health seeking behavior are not age dependent.",
+      "claim_type": "EXPLICIT",
+      "source": "It also assumes that risk of infection, symptoms, and health seeking behavior are not age dependent, even though there is some evidence that suggests that this may not be the case(Katzelnick et al., 2018; Guzm\u00e1n and Kour\u00ed, 2002; Thai et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a model assumption with citation to evidence that may contradict it.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:03.525141Z"
+    },
+    {
+      "id": "b855c07c-d348-4922-92be-f2ba9943a8f3",
+      "content_id": "3b24fab5-3db1-4eef-8e55-c3e2d3dae31f",
+      "claim_id": "C83",
+      "claim": "The model assumes equal circulation of all serotypes.",
+      "claim_type": "EXPLICIT",
+      "source": "It assumes equal circulation of all serotypes, despite the known dominance of specific serotypes for extended periods of time in the Americas (Katzelnick et al., 2018; Teixeira et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a model assumption with citation to evidence that may contradict it.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:03.525141Z"
+    },
+    {
+      "id": "8a4d3c3c-e0ae-40ec-b305-1ba41dee5ab8",
+      "content_id": "3b24fab5-3db1-4eef-8e55-c3e2d3dae31f",
+      "claim_id": "C84",
+      "claim": "Specific serotypes have been known to dominate for extended periods of time in the Americas.",
+      "claim_type": "EXPLICIT",
+      "source": "It assumes equal circulation of all serotypes, despite the known dominance of specific serotypes for extended periods of time in the Americas (Katzelnick et al., 2018; Teixeira et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citation support.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:03.525141Z"
+    },
+    {
+      "id": "ad99ce0b-ad03-4e26-8901-e3c4c8cec77b",
+      "content_id": "3b24fab5-3db1-4eef-8e55-c3e2d3dae31f",
+      "claim_id": "C85",
+      "claim": "The model estimates transmission intensities over extended periods of time (20 years), averaging over variations in the FOI that may occur at shorter time scales.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, it estimates transmission intensities over extended periods of time (20 years), averaging over variations in the FOI that may occur at shorter time scales.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a model limitation.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:03.525141Z"
+    },
+    {
+      "id": "f97a0421-641a-44b4-9073-6da70ac52919",
+      "content_id": "3b24fab5-3db1-4eef-8e55-c3e2d3dae31f",
+      "claim_id": "C86",
+      "claim": "Some discrepancy between FOI estimates from case data and those from seroprevalence data is expected as the two sources of data do not represent exactly the same period of time and location.",
+      "claim_type": "EXPLICIT",
+      "source": "While further validation is desirable, it is important to note that some discrepancy between our estimates and those derived from seroprevalence data is expected as the two sources of data do not represent exactly the same period of time and location.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an explanation for observed discrepancies.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:03.525141Z"
+    },
+    {
+      "id": "b3b9a0f0-4dd6-4bb3-b87e-dd099e6accfe",
+      "content_id": "3b24fab5-3db1-4eef-8e55-c3e2d3dae31f",
+      "claim_id": "C87",
+      "claim": "Most of the serosurveys available were conducted in specific urban centers, while case data represents the full administrative unit.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, most of the serosurveys available were conducted in specific urban centers, while case data represents the full administrative unit.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an explanation for observed discrepancies.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:03.525141Z"
+    },
+    {
+      "id": "55dfd3ea-f289-4a36-b5b8-9ccf1a253139",
+      "content_id": "3b24fab5-3db1-4eef-8e55-c3e2d3dae31f",
+      "claim_id": "C88",
+      "claim": "The same approach should be generalizable to other immunizing infections including chikungunya and Zika.",
+      "claim_type": "EXPLICIT",
+      "source": "While here we focus on dengue, the same approach should be generalizable to other immunizing infections including chikungunya and Zika.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a speculation about the generalizability of the method.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:03.525141Z"
+    },
+    {
+      "id": "d99e7ccd-a68a-4292-a4c6-40a018a6a2e2",
+      "content_id": "3b24fab5-3db1-4eef-8e55-c3e2d3dae31f",
+      "claim_id": "C89",
+      "claim": "The WHO's SAGE committee recommended in April 2016 that dengue vaccine only be used in settings with known high endemicity, defined as places where seroprevalence is greater than 70% in the target vaccination age-group.",
+      "claim_type": "EXPLICIT",
+      "source": "Due to uncertainty regarding the vaccine's benefits and risks in individuals who haven't been previously infected by dengue, the WHO's scientific advisory group of experts (SAGE) committee recommended in April 2016 that this vaccine only be used in settings with known high endemicity, defined as places where seroprevalence is greater than 70% in the target vaccination age-group (SAGE, 2016)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citation to SAGE 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:03.525141Z"
+    },
+    {
+      "id": "13cf8874-1a37-40cb-96b9-ddca4d853c37",
+      "content_id": "3b24fab5-3db1-4eef-8e55-c3e2d3dae31f",
+      "claim_id": "C90",
+      "claim": "The WHO's SAGE committee recommended that dengue vaccine should not be used in places where seroprevalence is under 50%.",
+      "claim_type": "EXPLICIT",
+      "source": "and should not be used in places where seroprevalence is under 50%.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as part of the SAGE recommendation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:03.525141Z"
+    },
+    {
+      "id": "70f9ae0b-9340-49b7-afbe-49c2f28cb808",
+      "content_id": "3b24fab5-3db1-4eef-8e55-c3e2d3dae31f",
+      "claim_id": "C91",
+      "claim": "The WHO now recommends that individuals should be tested for dengue antibodies prior to vaccination.",
+      "claim_type": "EXPLICIT",
+      "source": "This recommendation was later revised, and the WHO now recommends that individuals should be tested for dengue antibodies prior to vaccination, and the vaccine should only be given to individuals who have been infected by dengue in the past (WHO, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citation to WHO 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:03.525141Z"
+    },
+    {
+      "id": "661814b2-ff15-45a4-902f-95ec7c2afaad",
+      "content_id": "3b24fab5-3db1-4eef-8e55-c3e2d3dae31f",
+      "claim_id": "C92",
+      "claim": "The vaccine should only be given to individuals who have been infected by dengue in the past.",
+      "claim_type": "EXPLICIT",
+      "source": "This recommendation was later revised, and the WHO now recommends that individuals should be tested for dengue antibodies prior to vaccination, and the vaccine should only be given to individuals who have been infected by dengue in the past (WHO, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citation to WHO 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:03.525141Z"
+    },
+    {
+      "id": "716335ac-5404-4d11-aa97-cb5f195ad882",
+      "content_id": "3b24fab5-3db1-4eef-8e55-c3e2d3dae31f",
+      "claim_id": "C93",
+      "claim": "These estimates were made available online in June 2017 as a tool to help countries deciding where to target vaccination.",
+      "claim_type": "EXPLICIT",
+      "source": "In collaboration with the MRC center for Outbreak Analysis and Modeling, these estimates were made available online in June 2017 (https://mrcdata.dide.ic.ac.uk/_dengue/dengue.php) as a tool to help countries deciding where to target vaccination.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a description of how the results were disseminated.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:03.525141Z"
+    },
+    {
+      "id": "5c2d6a2d-1f74-43da-8df5-2ab2a6ed2362",
+      "content_id": "3b24fab5-3db1-4eef-8e55-c3e2d3dae31f",
+      "claim_id": "C94",
+      "claim": "Data on yearly age-specific reported number of dengue cases was used for administrative level 1 units of Thailand, Colombia, Brazil and Mexico.",
+      "claim_type": "EXPLICIT",
+      "source": "We used data on the yearly age-specific reported number of dengue cases for administrative level 1 units of Thailand, Colombia, Brazil and Mexico (Minist\u00e9rio da Saude, 2017; Bureau of Epidemiology, Department of Disease Control, 2019; Direccion General de Epidemiolog\u00eda, 2017; Instituto Nacional de Salud Colombia, 2016)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a description of the data sources used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:03.525141Z"
+    },
+    {
+      "id": "1c617d2f-ba55-4785-94b2-c3c3176fd0b7",
+      "content_id": "3b24fab5-3db1-4eef-8e55-c3e2d3dae31f",
+      "claim_id": "C95",
+      "claim": "The period of time available for data varied between countries, ranging between 5 years in Colombia and 25 years in Thailand.",
+      "claim_type": "EXPLICIT",
+      "source": "The period of time available varied between countries, but ranged between 5 years in Colombia and 25 years in Thailand.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a description of the data availability.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:03.525141Z"
+    },
+    {
+      "id": "b6b0ec2a-9ceb-4cde-8979-35272343e6c0",
+      "content_id": "3b24fab5-3db1-4eef-8e55-c3e2d3dae31f",
+      "claim_id": "C96",
+      "claim": "Age-specific case reports on dengue hemorrhagic fever (DHF) were used for Thailand and Brazil where possible.",
+      "claim_type": "EXPLICIT",
+      "source": "Where possible (Thailand and Brazil) we used age-specific case reports on dengue hemorrhagic fever (DHF) for our analyses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a description of the data type used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:03.525141Z"
+    },
+    {
+      "id": "000ce8f2-24de-4dd5-a45e-fff0f0fb9afa",
+      "content_id": "3b24fab5-3db1-4eef-8e55-c3e2d3dae31f",
+      "claim_id": "C97",
+      "claim": "For Colombia and Mexico, data on all reported dengue cases was used because the number of DHF cases reported by a substantial number of spatial units were insufficient to estimate the FOI.",
+      "claim_type": "EXPLICIT",
+      "source": "However, for both Colombia and Mexico, we had to use data on all reported dengue cases because the number of DHF cases reported by a substantial number of spatial units (9/32 units in Colombia and 10/31 in mexico) were insufficient to estimate the FOI.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an explanation for the data type used.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:03.525141Z"
+    },
+    {
+      "id": "7ad428ab-818a-44f8-acaf-59285634ed4a",
+      "content_id": "3b24fab5-3db1-4eef-8e55-c3e2d3dae31f",
+      "claim_id": "C99",
+      "claim": "The model was fit in a Bayesian Markov chain Monte Carlo (MCMC) framework using the RStan package in R.",
+      "claim_type": "EXPLICIT",
+      "source": "We fit the model in a Bayesian Markov chain Monte Carlo (MCMC) framework using the RStan package in R (Stan development Team, 2019) (The R Foundation, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a description of the statistical methods used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:03.525141Z"
+    },
+    {
+      "id": "bcbe01e3-3dd0-4bdb-9cd1-f55e7804e783",
+      "content_id": "3b24fab5-3db1-4eef-8e55-c3e2d3dae31f",
+      "claim_id": "C100",
+      "claim": "Four independent chains were simulated, each of 30000 iterations, discarding the first 10000 iterations as warm-up.",
+      "claim_type": "EXPLICIT",
+      "source": "We simulated four independent chains, each of 30000 iterations and discarded the firs 10000 iterations as warm-up.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a description of the MCMC implementation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:03.525141Z"
+    },
+    {
+      "id": "17cf2671-a04e-44b6-ad9b-112c49f40833",
+      "content_id": "3b24fab5-3db1-4eef-8e55-c3e2d3dae31f",
+      "claim_id": "C101",
+      "claim": "Convergence was assessed visually and using Rubin's R statistic.",
+      "claim_type": "EXPLICIT",
+      "source": "We assessed convergence visually and using Rubin's R statistic.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a description of the model validation approach.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:03.525141Z"
+    },
+    {
+      "id": "c58ff6a8-077f-4674-bdba-54b554c436d9",
+      "content_id": "3b24fab5-3db1-4eef-8e55-c3e2d3dae31f",
+      "claim_id": "C102",
+      "claim": "95% credible intervals were obtained from the 2.5% and 97.5% percentiles of the posterior distributions.",
+      "claim_type": "EXPLICIT",
+      "source": "We obtained 95% credible intervals from the 2.5% and 97.5% percentiles of the posterior distributions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a description of the uncertainty quantification approach.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:03.525141Z"
+    },
+    {
+      "id": "7f322e69-8872-49c4-9ce6-3bb67d3c115d",
+      "content_id": "3b24fab5-3db1-4eef-8e55-c3e2d3dae31f",
+      "claim_id": "C103",
+      "claim": "The FOI has varied substantially over time in many of the settings considered.",
+      "claim_type": "EXPLICIT",
+      "source": "Since it is known that the FOI has varied substantially over time in many of the settings considered, we allowed \u03bb(t) to vary as a function of time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge justifying the modeling approach.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:03.525141Z"
+    },
+    {
+      "id": "0fc83cc9-7858-4aab-b70b-9815712ef685",
+      "content_id": "3b24fab5-3db1-4eef-8e55-c3e2d3dae31f",
+      "claim_id": "C104",
+      "claim": "Constant \u03bb(t) was assumed for periods of 20 years to limit the number of parameters estimated.",
+      "claim_type": "EXPLICIT",
+      "source": "To limit the number of parameters estimated, we assumed constant \u03bb(t) for periods of 20 years.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a modeling decision.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:03.525141Z"
+    },
+    {
+      "id": "45fd21dc-2850-4308-b644-25b59e6d9aed",
+      "content_id": "3b24fab5-3db1-4eef-8e55-c3e2d3dae31f",
+      "claim_id": "C105",
+      "claim": "The majority of dengue hemorrhagic fever (DHF) cases arise from secondary infections according to data from Thailand.",
+      "claim_type": "EXPLICIT",
+      "source": "Data from Thailand has consistently suggested that the majority of dengue hemorrhagic fever (DHF) cases arise from secondary infections (Burke et al., 1988)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citation to Burke et al., 1988.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:03.525141Z"
+    },
+    {
+      "id": "0a80d9ec-d8bc-4b10-a1e1-7b84393b030f",
+      "content_id": "3b24fab5-3db1-4eef-8e55-c3e2d3dae31f",
+      "claim_id": "C106",
+      "claim": "Methods to estimate transmission parameters from age-stratified serological data have been available for many years.",
+      "claim_type": "EXPLICIT",
+      "source": "Methods to estimate transmission parameters from age-stratified serological data have been available for many years(Muench, 1959)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citation to Muench, 1959.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:03.525141Z"
+    },
+    {
+      "id": "a6347440-cae5-480c-97d9-24dd35fa0f80",
+      "content_id": "3b24fab5-3db1-4eef-8e55-c3e2d3dae31f",
+      "claim_id": "C107",
+      "claim": "Methods to estimate dengue forces of infection from case data have been applied to settings where dengue is thought to be close to endemic circulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Methods to estimate dengue forces of infection from case data have been applied to settings where dengue is thought to be close to endemic circulation (Cummings et al., 2009; Imai et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citation support.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:03.525141Z"
+    },
+    {
+      "id": "0737f251-9470-4165-b30f-33438b4b6f0c",
+      "content_id": "3b24fab5-3db1-4eef-8e55-c3e2d3dae31f",
+      "claim_id": "C108",
+      "claim": "In settings with high endemic transmission, incident cases are expected to be concentrated in younger age groups, as adults are likely to be already immune.",
+      "claim_type": "EXPLICIT",
+      "source": "In settings with high endemic transmission, incident cases are expected to be concentrated in younger age groups, as adults are likely to be already immune (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as an expected pattern with supporting figure.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:03.525141Z"
+    },
+    {
+      "id": "30b3e9a8-1463-4237-8609-961bff6e8909",
+      "content_id": "3b24fab5-3db1-4eef-8e55-c3e2d3dae31f",
+      "claim_id": "C109",
+      "claim": "In places where there is less population immunity, the age distribution of cases is more likely to resemble the age distribution of the population itself.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, in places where there is less population immunity, the age distribution of cases is more likely to resemble the age distribution of the population itself, with cases in in both children and adult populations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an expected pattern.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:03.525141Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "f20365ee-dff5-4a95-9000-da8b13d2796f",
+      "content_id": "3b24fab5-3db1-4eef-8e55-c3e2d3dae31f",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors developed a Bayesian MCMC framework to estimate average forces of infection (FOI) from age-specific dengue case data for 148 administrative level 1 units and 211 Colombian municipalities across Thailand, Colombia, Brazil, and Mexico. Country-level average FOI estimates ranged from 0.052 in Mexico to 0.132 in Colombia, with substantial within-country heterogeneity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C15-C21, C94-C97, C99-C102, and C104 collectively describe the data sources, statistical methodology, and primary FOI estimates. The methods are clearly described with appropriate Bayesian MCMC implementation including convergence diagnostics (C101), and the results provide specific point estimates with credible intervals for each country. The approach is methodologically sound for the stated objective.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:18:03.525141Z"
+    },
+    {
+      "id": "6c678d80-721c-4360-bf70-12cc3d163fca",
+      "content_id": "3b24fab5-3db1-4eef-8e55-c3e2d3dae31f",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "FOI estimates derived from age-specific case data showed good correlation (R\u00b2 = 0.73, 95% CI 0.51\u20130.87) with estimates from seroprevalence data (the gold standard) for 16 locations, while recent incidence showed no correlation (R\u00b2 = 0.002) with seroprevalence-derived FOI estimates.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C34, and C35 provide validation of the method against the gold standard with specific statistical measures. The correlation coefficient and confidence intervals support the claim of good agreement. Claims C86-C87 appropriately acknowledge expected discrepancies due to spatial and temporal mismatches between data sources, demonstrating scientific rigor.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:18:03.525141Z"
+    },
+    {
+      "id": "288ca29f-9da8-43f1-b45e-efa12aa07f9d",
+      "content_id": "3b24fab5-3db1-4eef-8e55-c3e2d3dae31f",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Substantial spatial heterogeneity in dengue transmission intensity was observed both between and within countries, with coefficients of variation ranging from 0.27 in Thailand to 0.56 in Brazil at the administrative level 1, and averaging 0.4 within Colombian departments at administrative level 2.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C25-C33 collectively document spatial heterogeneity with specific quantitative measures (ranges, coefficients of variation, and regional patterns). The data are internally consistent and supported by the figures. The finding of within-country heterogeneity is well-documented with appropriate statistical descriptors.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:18:03.525141Z"
+    },
+    {
+      "id": "d4abff61-357f-4f81-99c8-3060ce682d6b",
+      "content_id": "3b24fab5-3db1-4eef-8e55-c3e2d3dae31f",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "FOI estimates for 211 Colombian municipalities correlated with known environmental drivers of dengue transmission, with temperature, elevation, population density, and precipitation explaining 35% (95% CI 23\u201350%) of variance in the best-fitting adjusted model. In contrast, recent incidence showed no correlation with these environmental drivers.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C36-C44, and C73 provide comprehensive validation against environmental drivers with specific regression coefficients, R\u00b2 values, and confidence intervals. The contrast between FOI and incidence correlations (C41-C44) strengthens the argument for FOI as a superior metric. The statistical analyses appear appropriate with weighted regression accounting for sample size differences.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:18:03.525141Z"
+    },
+    {
+      "id": "ea62a721-6151-42ad-ada0-045aa5b21163",
+      "content_id": "3b24fab5-3db1-4eef-8e55-c3e2d3dae31f",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Application of FOI estimates to dengue vaccination policy revealed that only a small minority of locations (2/28 Colombian departments, 4/25 Brazilian states, 0/72 Thai provinces, 0/27 Mexican states) would meet the 80% seropositivity threshold at age 9 recommended for vaccination, and over 70% of locations would require targeting individuals \u226514 years old to achieve this threshold.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48-C59, C76-C77 translate FOI estimates into actionable vaccination policy recommendations using established formulas. The calculations are mathematically sound (proportion seropositive = 1 - e^(-4\u03bba)), and the results are clearly presented with specific counts and proportions. The policy implications are appropriately framed as suggestions rather than definitive recommendations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:18:03.525141Z"
+    },
+    {
+      "id": "fb6c7943-d480-4773-babe-a70426953d3e",
+      "content_id": "3b24fab5-3db1-4eef-8e55-c3e2d3dae31f",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "FOI estimates outperformed traditional surveillance metrics (crude incidence, standardized incidence) in ranking spatial units and correlating with the gold standard, while being more robust to differences in surveillance efficiency. The age distribution-based metrics (proportion of incidence under 10 years, mean age of cases) performed better than aggregate metrics but still inferior to FOI for cross-country comparisons.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C60-C62, C68-C72 provide systematic comparison of alternative metrics with clear performance rankings supported by Figure 1\u2014figure supplements 1-2. The mechanistic explanation for why incidence is misleading (C69-C70) is scientifically sound. The stated advantages of FOI (C71-C72) are logical consequences of the methodology and supported by the validation results.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:18:03.525141Z"
+    },
+    {
+      "id": "0e20a08a-5570-4f87-9860-a1c8bb6d6ce7",
+      "content_id": "3b24fab5-3db1-4eef-8e55-c3e2d3dae31f",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Sensitivity analyses comparing FOI estimates from all dengue cases versus DHF/severe cases showed good correlation for Colombia (r=0.74) and Mexico (r=0.78) but lower correlation for Brazil (r=0.48), with discrepancies primarily occurring in locations with very low DHF case counts (<265 cases).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C63-C67 present sensitivity analysis results with specific correlation coefficients and identify sample size as a likely explanation for discrepancies (C66-C67). Claims C78-C80 provide appropriate context about case definition specificity. The analysis appropriately acknowledges limitations while demonstrating robustness of the method across different case definitions when sample sizes are adequate.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:18:03.525141Z"
+    },
+    {
+      "id": "81fa2081-cec2-45c0-80a7-355fa7349f9b",
+      "content_id": "3b24fab5-3db1-4eef-8e55-c3e2d3dae31f",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The model makes several simplifying assumptions including that the age distribution of cases represents secondary infections, that risk and health-seeking behavior are age-independent, that all serotypes circulate equally, and that FOI is constant over 20-year periods, despite evidence suggesting some of these assumptions may not hold.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C81-C85, C103, and C105 transparently acknowledge model assumptions and their potential limitations, with citations to contradictory evidence (C82-C84). This demonstrates appropriate scientific rigor in discussing model limitations. The assumptions are clearly stated and their implications for interpretation are acknowledged, though the validation results (C34) suggest the model performs well despite these simplifications.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:18:03.525141Z"
+    },
+    {
+      "id": "21df0630-ea11-498f-8d85-193ade60d96f",
+      "content_id": "3b24fab5-3db1-4eef-8e55-c3e2d3dae31f",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Age-specific case data provides a more robust picture of transmission trends than overall incidence for immunizing infections because the age distribution is largely robust to under-reporting, while serological surveys (the gold standard) are rarely available despite being routinely collected by surveillance systems.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C6-C12 establish the rationale for the study by documenting limitations of current surveillance approaches (C7-C8), scarcity of serosurveys (C10-C11), and advantages of age-specific data (C12). These are supported by citations (C10-C11) and represent established knowledge in infectious disease epidemiology. The logical framework is sound and motivates the methodological development.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:18:03.525141Z"
+    },
+    {
+      "id": "48a76fe4-843a-4a54-ba44-c189b1a647af",
+      "content_id": "3b24fab5-3db1-4eef-8e55-c3e2d3dae31f",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Dengue is the most widely spread mosquito-transmitted virus with large gaps in epidemiological understanding, and the WHO has issued evolving recommendations for Dengvaxia vaccination requiring knowledge of population seropositivity, which motivated making FOI estimates available online in June 2017 to help countries make vaccination decisions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C13-C14, C45-C47, C89-C93 provide context about dengue epidemiology and vaccination policy with appropriate citations to WHO guidelines. The evolution of WHO recommendations (C89-C92) is accurately described with citations. Claim C93 documents the practical application and dissemination of the research findings, demonstrating real-world impact.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:18:03.525141Z"
+    },
+    {
+      "id": "8fef14d1-cde5-43bf-9217-1fc187f8eeae",
+      "content_id": "3b24fab5-3db1-4eef-8e55-c3e2d3dae31f",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The FOI estimates translate to 12% of susceptible populations in Colombia and Brazil and 5% in Mexico getting infected yearly, and the approach should be generalizable to other immunizing infections including chikungunya and Zika, which share the same mosquito vector (A. aegypti) as dengue.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C23-C24 provide interpretable translations of FOI estimates using the formula 1-e^(-FOI), which is mathematically correct. Claims C74-C75 appropriately connect findings to Zika epidemiology with citation support. Claim C88 is appropriately framed as speculation about generalizability to other immunizing infections, which is reasonable given the methodological approach.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:18:03.525141Z"
+    },
+    {
+      "id": "db83876b-70e1-4ace-b6d3-e2a6c4c9637c",
+      "content_id": "3b24fab5-3db1-4eef-8e55-c3e2d3dae31f",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Methods to estimate transmission parameters from age-stratified data have been available for many years and previously applied to dengue in endemic settings, based on the principle that in high-transmission settings cases concentrate in younger age groups due to adult immunity, while in low-transmission settings the age distribution resembles the population distribution.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C106-C109 provide appropriate background on existing methods with citations (C106-C107) and explain the mechanistic basis for age-structured approaches (C108-C109). This establishes the scientific foundation for the work and appropriately positions it within the existing literature. The mechanistic explanation is consistent with established immunological principles.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:18:03.525141Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "dd1d1c16-15e4-41d4-8292-4810041331b0",
+      "result_id": "f20365ee-dff5-4a95-9000-da8b13d2796f"
+    },
+    {
+      "claim_id": "185f2c06-2024-4c91-8ef6-c330b2bc85b6",
+      "result_id": "f20365ee-dff5-4a95-9000-da8b13d2796f"
+    },
+    {
+      "claim_id": "c1b8d100-074c-439f-80d0-14d0c2227ae6",
+      "result_id": "f20365ee-dff5-4a95-9000-da8b13d2796f"
+    },
+    {
+      "claim_id": "f9ce75c9-2c97-45df-8513-7cdd514d1c58",
+      "result_id": "f20365ee-dff5-4a95-9000-da8b13d2796f"
+    },
+    {
+      "claim_id": "203e17b0-69a5-4150-9e17-427c045421f4",
+      "result_id": "f20365ee-dff5-4a95-9000-da8b13d2796f"
+    },
+    {
+      "claim_id": "cde35934-58de-453d-b0cc-dc0b20b3cb86",
+      "result_id": "f20365ee-dff5-4a95-9000-da8b13d2796f"
+    },
+    {
+      "claim_id": "d130ad24-1087-4cad-b42f-5d94976e23e4",
+      "result_id": "f20365ee-dff5-4a95-9000-da8b13d2796f"
+    },
+    {
+      "claim_id": "14e13152-1b44-4e53-9151-b31c8c3d6611",
+      "result_id": "f20365ee-dff5-4a95-9000-da8b13d2796f"
+    },
+    {
+      "claim_id": "5c2d6a2d-1f74-43da-8df5-2ab2a6ed2362",
+      "result_id": "f20365ee-dff5-4a95-9000-da8b13d2796f"
+    },
+    {
+      "claim_id": "1c617d2f-ba55-4785-94b2-c3c3176fd0b7",
+      "result_id": "f20365ee-dff5-4a95-9000-da8b13d2796f"
+    },
+    {
+      "claim_id": "b6b0ec2a-9ceb-4cde-8979-35272343e6c0",
+      "result_id": "f20365ee-dff5-4a95-9000-da8b13d2796f"
+    },
+    {
+      "claim_id": "000ce8f2-24de-4dd5-a45e-fff0f0fb9afa",
+      "result_id": "f20365ee-dff5-4a95-9000-da8b13d2796f"
+    },
+    {
+      "claim_id": "7ad428ab-818a-44f8-acaf-59285634ed4a",
+      "result_id": "f20365ee-dff5-4a95-9000-da8b13d2796f"
+    },
+    {
+      "claim_id": "bcbe01e3-3dd0-4bdb-9cd1-f55e7804e783",
+      "result_id": "f20365ee-dff5-4a95-9000-da8b13d2796f"
+    },
+    {
+      "claim_id": "17cf2671-a04e-44b6-ad9b-112c49f40833",
+      "result_id": "f20365ee-dff5-4a95-9000-da8b13d2796f"
+    },
+    {
+      "claim_id": "c58ff6a8-077f-4674-bdba-54b554c436d9",
+      "result_id": "f20365ee-dff5-4a95-9000-da8b13d2796f"
+    },
+    {
+      "claim_id": "0fc83cc9-7858-4aab-b70b-9815712ef685",
+      "result_id": "f20365ee-dff5-4a95-9000-da8b13d2796f"
+    },
+    {
+      "claim_id": "7e497674-20ef-4472-8f5a-8d684697e99d",
+      "result_id": "6c678d80-721c-4360-bf70-12cc3d163fca"
+    },
+    {
+      "claim_id": "32481b13-0663-45f0-aaf1-a5ced860cfb9",
+      "result_id": "6c678d80-721c-4360-bf70-12cc3d163fca"
+    },
+    {
+      "claim_id": "b3266efb-3679-48dd-a856-5810f60075e3",
+      "result_id": "6c678d80-721c-4360-bf70-12cc3d163fca"
+    },
+    {
+      "claim_id": "f97a0421-641a-44b4-9073-6da70ac52919",
+      "result_id": "6c678d80-721c-4360-bf70-12cc3d163fca"
+    },
+    {
+      "claim_id": "b3b9a0f0-4dd6-4bb3-b87e-dd099e6accfe",
+      "result_id": "6c678d80-721c-4360-bf70-12cc3d163fca"
+    },
+    {
+      "claim_id": "4188eafc-495a-4f90-876f-2434b37db8d6",
+      "result_id": "288ca29f-9da8-43f1-b45e-efa12aa07f9d"
+    },
+    {
+      "claim_id": "93b21ac9-2be5-4f3f-ad6f-e0ff0783e7c6",
+      "result_id": "288ca29f-9da8-43f1-b45e-efa12aa07f9d"
+    },
+    {
+      "claim_id": "40bc5411-1479-4dac-ab94-8c2854155d1b",
+      "result_id": "288ca29f-9da8-43f1-b45e-efa12aa07f9d"
+    },
+    {
+      "claim_id": "5bc31708-3332-4774-b9cb-8b4338e6e699",
+      "result_id": "288ca29f-9da8-43f1-b45e-efa12aa07f9d"
+    },
+    {
+      "claim_id": "e1260b31-9cfe-45e2-a318-7c6af377199c",
+      "result_id": "288ca29f-9da8-43f1-b45e-efa12aa07f9d"
+    },
+    {
+      "claim_id": "f0a365f8-d7f7-4608-b75c-38d854ba5ea0",
+      "result_id": "288ca29f-9da8-43f1-b45e-efa12aa07f9d"
+    },
+    {
+      "claim_id": "7341246c-c825-4030-a0b7-ef2dbae72f37",
+      "result_id": "288ca29f-9da8-43f1-b45e-efa12aa07f9d"
+    },
+    {
+      "claim_id": "15ea4ad5-744d-462b-9caf-6bd20a9780eb",
+      "result_id": "288ca29f-9da8-43f1-b45e-efa12aa07f9d"
+    },
+    {
+      "claim_id": "bdaa3bec-f46c-49a3-84c3-59cf060a70b4",
+      "result_id": "288ca29f-9da8-43f1-b45e-efa12aa07f9d"
+    },
+    {
+      "claim_id": "e7819342-4a54-4baf-8a09-7d6824c16a87",
+      "result_id": "288ca29f-9da8-43f1-b45e-efa12aa07f9d"
+    },
+    {
+      "claim_id": "10d335ce-cff1-4409-8698-94188fec0897",
+      "result_id": "d4abff61-357f-4f81-99c8-3060ce682d6b"
+    },
+    {
+      "claim_id": "85616fca-e91d-4635-983d-313b8ba6476a",
+      "result_id": "d4abff61-357f-4f81-99c8-3060ce682d6b"
+    },
+    {
+      "claim_id": "a28d7f45-8601-41eb-ac0d-a402d608fcf3",
+      "result_id": "d4abff61-357f-4f81-99c8-3060ce682d6b"
+    },
+    {
+      "claim_id": "2b6f806f-afd3-430c-a1dc-aa1f59e89688",
+      "result_id": "d4abff61-357f-4f81-99c8-3060ce682d6b"
+    },
+    {
+      "claim_id": "05a6df24-7cd6-4f8a-bcef-b08f023b70c7",
+      "result_id": "d4abff61-357f-4f81-99c8-3060ce682d6b"
+    },
+    {
+      "claim_id": "fb962719-1e9f-49c3-a1eb-c9d6374d6bac",
+      "result_id": "d4abff61-357f-4f81-99c8-3060ce682d6b"
+    },
+    {
+      "claim_id": "4c7051c8-1331-4543-9384-b7d8d05a4554",
+      "result_id": "d4abff61-357f-4f81-99c8-3060ce682d6b"
+    },
+    {
+      "claim_id": "571c90c6-882d-4f11-b486-fcedfa6aac16",
+      "result_id": "d4abff61-357f-4f81-99c8-3060ce682d6b"
+    },
+    {
+      "claim_id": "4860eb1d-fe53-4ac5-81cc-3c5d6f887d00",
+      "result_id": "d4abff61-357f-4f81-99c8-3060ce682d6b"
+    },
+    {
+      "claim_id": "554ed837-10ab-45e7-888d-5dd957b9e20e",
+      "result_id": "d4abff61-357f-4f81-99c8-3060ce682d6b"
+    },
+    {
+      "claim_id": "138b6520-6cc8-4eea-8a17-2e3bf52ce01e",
+      "result_id": "d4abff61-357f-4f81-99c8-3060ce682d6b"
+    },
+    {
+      "claim_id": "cd22f9c1-2ab0-4bff-89e9-ed5a88ece559",
+      "result_id": "ea62a721-6151-42ad-ada0-045aa5b21163"
+    },
+    {
+      "claim_id": "7f830728-a230-49fa-a963-fadfa6b71f49",
+      "result_id": "ea62a721-6151-42ad-ada0-045aa5b21163"
+    },
+    {
+      "claim_id": "d8d44ae9-bd5f-46ca-b8ca-8784e4fe1f9e",
+      "result_id": "ea62a721-6151-42ad-ada0-045aa5b21163"
+    },
+    {
+      "claim_id": "928b8669-28bc-4483-98bb-50a7f5bfb811",
+      "result_id": "ea62a721-6151-42ad-ada0-045aa5b21163"
+    },
+    {
+      "claim_id": "22a81a8e-bbc9-473a-a20f-644a79e26636",
+      "result_id": "ea62a721-6151-42ad-ada0-045aa5b21163"
+    },
+    {
+      "claim_id": "0647387a-08d5-4165-9cf2-09bdac70fb6d",
+      "result_id": "ea62a721-6151-42ad-ada0-045aa5b21163"
+    },
+    {
+      "claim_id": "e6f92714-b2f6-4c02-a72f-710f1cc2166a",
+      "result_id": "ea62a721-6151-42ad-ada0-045aa5b21163"
+    },
+    {
+      "claim_id": "7def0b19-6d67-424d-8793-cafbd10bd985",
+      "result_id": "ea62a721-6151-42ad-ada0-045aa5b21163"
+    },
+    {
+      "claim_id": "66f49597-09e9-46d2-aea5-3b607fd8a40a",
+      "result_id": "ea62a721-6151-42ad-ada0-045aa5b21163"
+    },
+    {
+      "claim_id": "ed4fe64a-b6c9-4b91-bcb9-42b698505d07",
+      "result_id": "ea62a721-6151-42ad-ada0-045aa5b21163"
+    },
+    {
+      "claim_id": "b12149f2-3b0f-40f0-b438-9d6ff2147c76",
+      "result_id": "ea62a721-6151-42ad-ada0-045aa5b21163"
+    },
+    {
+      "claim_id": "8b1e3da7-95b7-4511-9ac4-bc6649b9b6c2",
+      "result_id": "ea62a721-6151-42ad-ada0-045aa5b21163"
+    },
+    {
+      "claim_id": "0455198c-ba54-4c6d-9355-76ffef455ae8",
+      "result_id": "ea62a721-6151-42ad-ada0-045aa5b21163"
+    },
+    {
+      "claim_id": "66277d71-e3f2-4292-a0ca-27b98b2de668",
+      "result_id": "ea62a721-6151-42ad-ada0-045aa5b21163"
+    },
+    {
+      "claim_id": "627623dc-e50b-430b-bec9-692acf7f5ecf",
+      "result_id": "fb6c7943-d480-4773-babe-a70426953d3e"
+    },
+    {
+      "claim_id": "16fa8a6e-b91a-4f82-a2dd-8d98442c4252",
+      "result_id": "fb6c7943-d480-4773-babe-a70426953d3e"
+    },
+    {
+      "claim_id": "2b080a37-a892-4083-94da-5f86994067bb",
+      "result_id": "fb6c7943-d480-4773-babe-a70426953d3e"
+    },
+    {
+      "claim_id": "e57f36e5-b882-4515-8a2e-e4a176c6ae5e",
+      "result_id": "fb6c7943-d480-4773-babe-a70426953d3e"
+    },
+    {
+      "claim_id": "23564f74-a734-422b-8b74-9c4e79cfda23",
+      "result_id": "fb6c7943-d480-4773-babe-a70426953d3e"
+    },
+    {
+      "claim_id": "b69347a7-0667-4fdc-92fb-9737e63cc756",
+      "result_id": "fb6c7943-d480-4773-babe-a70426953d3e"
+    },
+    {
+      "claim_id": "277deec5-e98d-44c7-b1e8-4c8e2fe1735c",
+      "result_id": "fb6c7943-d480-4773-babe-a70426953d3e"
+    },
+    {
+      "claim_id": "225266c4-76d2-4ccc-bb17-741a807e983a",
+      "result_id": "fb6c7943-d480-4773-babe-a70426953d3e"
+    },
+    {
+      "claim_id": "42cdfd31-4dd2-496f-809b-0ab63a56d1b3",
+      "result_id": "0e20a08a-5570-4f87-9860-a1c8bb6d6ce7"
+    },
+    {
+      "claim_id": "5197a769-e876-4bac-b973-db49175489ec",
+      "result_id": "0e20a08a-5570-4f87-9860-a1c8bb6d6ce7"
+    },
+    {
+      "claim_id": "7bb177e9-1dbe-4283-ab4b-ad650474cc91",
+      "result_id": "0e20a08a-5570-4f87-9860-a1c8bb6d6ce7"
+    },
+    {
+      "claim_id": "7677d6b7-b4db-4718-968f-0ef6c7afbedc",
+      "result_id": "0e20a08a-5570-4f87-9860-a1c8bb6d6ce7"
+    },
+    {
+      "claim_id": "6bfbcc04-fe64-4396-9098-f214496ec8b4",
+      "result_id": "0e20a08a-5570-4f87-9860-a1c8bb6d6ce7"
+    },
+    {
+      "claim_id": "64dbb7a5-983e-4349-bfd8-b97f65e6cf6c",
+      "result_id": "0e20a08a-5570-4f87-9860-a1c8bb6d6ce7"
+    },
+    {
+      "claim_id": "b57e516b-274a-44be-aaad-c1576720c6aa",
+      "result_id": "0e20a08a-5570-4f87-9860-a1c8bb6d6ce7"
+    },
+    {
+      "claim_id": "be1a2893-0249-4f1d-916c-db6df1c90a8d",
+      "result_id": "0e20a08a-5570-4f87-9860-a1c8bb6d6ce7"
+    },
+    {
+      "claim_id": "b4cc9132-8f47-439c-8d0e-a4a020909f5e",
+      "result_id": "81fa2081-cec2-45c0-80a7-355fa7349f9b"
+    },
+    {
+      "claim_id": "a62b1705-f060-4481-8ca3-f317359f76c2",
+      "result_id": "81fa2081-cec2-45c0-80a7-355fa7349f9b"
+    },
+    {
+      "claim_id": "b855c07c-d348-4922-92be-f2ba9943a8f3",
+      "result_id": "81fa2081-cec2-45c0-80a7-355fa7349f9b"
+    },
+    {
+      "claim_id": "8a4d3c3c-e0ae-40ec-b305-1ba41dee5ab8",
+      "result_id": "81fa2081-cec2-45c0-80a7-355fa7349f9b"
+    },
+    {
+      "claim_id": "ad99ce0b-ad03-4e26-8901-e3c4c8cec77b",
+      "result_id": "81fa2081-cec2-45c0-80a7-355fa7349f9b"
+    },
+    {
+      "claim_id": "7f322e69-8872-49c4-9ce6-3bb67d3c115d",
+      "result_id": "81fa2081-cec2-45c0-80a7-355fa7349f9b"
+    },
+    {
+      "claim_id": "45fd21dc-2850-4308-b644-25b59e6d9aed",
+      "result_id": "81fa2081-cec2-45c0-80a7-355fa7349f9b"
+    },
+    {
+      "claim_id": "4e3e76ec-42ba-4257-b5fd-66210b533607",
+      "result_id": "21df0630-ea11-498f-8d85-193ade60d96f"
+    },
+    {
+      "claim_id": "eb909d94-2563-4c25-ad8e-3c186e0a8c2b",
+      "result_id": "21df0630-ea11-498f-8d85-193ade60d96f"
+    },
+    {
+      "claim_id": "e931d441-53d4-4ee8-9835-031cca717a8d",
+      "result_id": "21df0630-ea11-498f-8d85-193ade60d96f"
+    },
+    {
+      "claim_id": "02d16aac-fbe3-4c48-ae0f-42791820b97b",
+      "result_id": "21df0630-ea11-498f-8d85-193ade60d96f"
+    },
+    {
+      "claim_id": "7afe125e-ebbf-4566-a8f2-f6eb628d3c55",
+      "result_id": "21df0630-ea11-498f-8d85-193ade60d96f"
+    },
+    {
+      "claim_id": "8608966e-b7fa-4977-990d-422f24868255",
+      "result_id": "21df0630-ea11-498f-8d85-193ade60d96f"
+    },
+    {
+      "claim_id": "cedcffe1-a2b8-4656-8d21-63b84bb38420",
+      "result_id": "21df0630-ea11-498f-8d85-193ade60d96f"
+    },
+    {
+      "claim_id": "a01621a4-6acc-4672-baf0-f4110699a849",
+      "result_id": "21df0630-ea11-498f-8d85-193ade60d96f"
+    },
+    {
+      "claim_id": "edd55f08-f898-4128-876c-4d0d6be23295",
+      "result_id": "48a76fe4-843a-4a54-ba44-c189b1a647af"
+    },
+    {
+      "claim_id": "237e552a-f1cb-4ccb-ac77-b71ca8076bdd",
+      "result_id": "48a76fe4-843a-4a54-ba44-c189b1a647af"
+    },
+    {
+      "claim_id": "a59ab21f-3ba1-4618-85d0-350990da18b5",
+      "result_id": "48a76fe4-843a-4a54-ba44-c189b1a647af"
+    },
+    {
+      "claim_id": "9dc9d48e-b37e-4a9e-846a-2568ed5a123d",
+      "result_id": "48a76fe4-843a-4a54-ba44-c189b1a647af"
+    },
+    {
+      "claim_id": "3d0d7045-a827-46de-8fd5-c737decd103b",
+      "result_id": "48a76fe4-843a-4a54-ba44-c189b1a647af"
+    },
+    {
+      "claim_id": "d99e7ccd-a68a-4292-a4c6-40a018a6a2e2",
+      "result_id": "48a76fe4-843a-4a54-ba44-c189b1a647af"
+    },
+    {
+      "claim_id": "13cf8874-1a37-40cb-96b9-ddca4d853c37",
+      "result_id": "48a76fe4-843a-4a54-ba44-c189b1a647af"
+    },
+    {
+      "claim_id": "70f9ae0b-9340-49b7-afbe-49c2f28cb808",
+      "result_id": "48a76fe4-843a-4a54-ba44-c189b1a647af"
+    },
+    {
+      "claim_id": "661814b2-ff15-45a4-902f-95ec7c2afaad",
+      "result_id": "48a76fe4-843a-4a54-ba44-c189b1a647af"
+    },
+    {
+      "claim_id": "716335ac-5404-4d11-aa97-cb5f195ad882",
+      "result_id": "48a76fe4-843a-4a54-ba44-c189b1a647af"
+    },
+    {
+      "claim_id": "964f6685-fc28-4211-acd7-ca75e0aec693",
+      "result_id": "8fef14d1-cde5-43bf-9217-1fc187f8eeae"
+    },
+    {
+      "claim_id": "9c989404-f250-474d-8f5f-7abd9d430b44",
+      "result_id": "8fef14d1-cde5-43bf-9217-1fc187f8eeae"
+    },
+    {
+      "claim_id": "320caa35-485d-4d76-a9ad-3b9d108a7ea2",
+      "result_id": "8fef14d1-cde5-43bf-9217-1fc187f8eeae"
+    },
+    {
+      "claim_id": "4cee894d-7e5f-41be-be8e-be05df036c89",
+      "result_id": "8fef14d1-cde5-43bf-9217-1fc187f8eeae"
+    },
+    {
+      "claim_id": "55dfd3ea-f289-4a36-b5b8-9ccf1a253139",
+      "result_id": "8fef14d1-cde5-43bf-9217-1fc187f8eeae"
+    },
+    {
+      "claim_id": "0a80d9ec-d8bc-4b10-a1e1-7b84393b030f",
+      "result_id": "db83876b-70e1-4ace-b6d3-e2a6c4c9637c"
+    },
+    {
+      "claim_id": "a6347440-cae5-480c-97d9-24dd35fa0f80",
+      "result_id": "db83876b-70e1-4ace-b6d3-e2a6c4c9637c"
+    },
+    {
+      "claim_id": "0737f251-9470-4165-b30f-33438b4b6f0c",
+      "result_id": "db83876b-70e1-4ace-b6d3-e2a6c4c9637c"
+    },
+    {
+      "claim_id": "30b3e9a8-1463-4237-8609-961bff6e8909",
+      "result_id": "db83876b-70e1-4ace-b6d3-e2a6c4c9637c"
+    }
+  ],
+  "comparisons": []
+}

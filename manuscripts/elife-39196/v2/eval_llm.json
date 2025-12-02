@@ -1,0 +1,353 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "A CrebB conditional knockout allele (CrebBcKO) was successfully generated using CRISPR/Cas9, replacing the endogenous CrebB gene with a GFP-tagged version flanked by FRT sites. The CrebB::GFP fusion protein is expressed pan-neuronally and co-localizes with anti-CrebB antibody, confirming successful tagging.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C44 describe the generation and validation of the CrebBcKO allele. The experimental design is clearly described with appropriate molecular biology techniques (CRISPR/Cas9, HDR). Validation includes sequencing confirmation (C41), immunostaining showing co-localization of GFP and CrebB antibodies (C43), and pan-neuronal expression (C42, C44). Figure 1 provides visual evidence supporting these claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C32",
+      "C45",
+      "C46"
+    ],
+    "result": "FLP-mediated recombination successfully deletes CrebB::GFP from neurons, with complete loss of GFP expression in neurons while retaining expression in Repo-positive glia cells, confirming the efficiency of the conditional knockout system.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32, C45, C46 demonstrate functional validation of the FLP/FRT system. Figure 2A-B shows clear immunostaining evidence of CrebB::GFP loss in neurons (marked by absence of GFP) while maintaining expression in glia (Repo-positive cells). This provides strong evidence for cell-type-specific knockout capability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C74"
+    ],
+    "result": "Pan-neuronal CrebB knockout does not affect short-term memory (STM) or middle-term memory (MTM), but severely impairs long-term memory (LTM) tested 24h after conditioning. The genome editing does not interfere with normal CrebB function, as unflipped controls show intact LTM.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C52, C74 are supported by behavioral data in Figure 2C-E showing no significant differences in STM and MTM between knockout and controls, but significant LTM impairment in male CrebBcKO/Y flies with induced knockout. The inclusion of unflipped controls (C51) and non-induced controls strengthens the conclusion that the phenotype is due to CrebB loss, not the genetic manipulation itself. Sample sizes are adequate (N\u22658-10).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C33",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Removing CrebB from the mushroom body (MB) results in animals that can form STM but not LTM, demonstrating that the MB is essential for CrebB-mediated LTM formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33, C53-C56 are supported by both immunostaining (Figure 3B showing complete absence of CrebB::GFP from MB) and behavioral data (Figure 3C showing impaired LTM but intact STM). The use of OK107-Gal4 to target all Kenyon cells is appropriate, and controls show normal memory, supporting the specificity of the phenotype.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C3",
+      "C34",
+      "C57",
+      "C60"
+    ],
+    "result": "CrebB knockout in MB \u03b1/\u03b2 neurons significantly reduces 24h memory performance, demonstrating that appetitive LTM formation requires CrebB activity in \u03b1/\u03b2 Kenyon cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C34, C57, C60 are supported by behavioral data in Figure 3D showing significant reduction in LTM when CrebB is knocked out in \u03b1/\u03b2 neurons using c739-Gal4. Statistical analysis shows significant differences (p<0.05), and sample sizes are adequate (N\u22659). Non-induced controls show normal LTM.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C4",
+      "C34",
+      "C58",
+      "C60",
+      "C92"
+    ],
+    "result": "CrebB knockout in MB \u03b1'/\u03b2' neurons significantly reduces 24h memory performance, demonstrating that appetitive LTM formation requires CrebB activity in \u03b1'/\u03b2' Kenyon cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C34, C58, C60, C92 are supported by behavioral data in Figure 3E showing significant reduction in LTM when CrebB is knocked out in \u03b1'/\u03b2' neurons using c305a-Gal4. This is the first demonstration of CrebB requirement in this KC subtype. Statistical analysis shows significant differences, and controls are appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C34",
+      "C59",
+      "C60",
+      "C90"
+    ],
+    "result": "CrebB knockout in MB \u03b3 neurons does not impair LTM formation, indicating that CrebB is not necessary in \u03b3 neurons for appetitive olfactory LTM.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34, C59, C60, C90 are supported by behavioral data in Figure 3F showing no significant difference in LTM between knockout and control groups when CrebB is removed from \u03b3 neurons using 5-HTR1B-Gal4. Figure 3\u2014figure supplement 3 confirms successful knockout. This differential requirement across KC subtypes is consistent with their known functional specialization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C6",
+      "C35",
+      "C61",
+      "C62",
+      "C104"
+    ],
+    "result": "Removing CrebB from dopaminergic PAM neurons does not affect LTM, indicating that CrebB activity in PAM neurons is not required for appetitive olfactory LTM.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C35, C61, C62, C104 are supported by behavioral data in Figure 4A showing no significant difference in LTM between PAM neuron knockout and controls. Figure 4\u2014figure supplement 1 confirms successful knockout by showing loss of CrebB::GFP in TH-positive dopaminergic neurons. This finding is somewhat surprising given the known role of PAM neurons in appetitive learning, but the data are clear.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C5",
+      "C36",
+      "C64",
+      "C65",
+      "C66",
+      "C106"
+    ],
+    "result": "Genetic excision of CrebB in MBON \u03b13 severely reduces LTM formation, demonstrating that MBON \u03b13 requires CrebB for appetitive LTM. This is the first report that LTM requires CrebB activity in MBONs, supporting that LTM involves a memory trace in MBON extrinsic elements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C36, C64-C66, C106 are supported by behavioral data in Figure 4B showing significant impairment in LTM when CrebB is knocked out in MBON \u03b13 using G0239-Gal4. This is a novel finding extending the locus of CrebB-dependent transcriptional changes beyond the MB intrinsic neurons. Statistical analysis shows significant differences (p<0.05), and non-induced controls show normal LTM.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C7",
+      "C37"
+    ],
+    "result": "Multiple neurons require CrebB within the same neural circuit to form an appetitive LTM trace, with transcriptional memory traces occurring in different neurons (MB \u03b1/\u03b2, \u03b1'/\u03b2', and MBON \u03b13) within the mushroom body circuit.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7 and C37 represent the main conclusion synthesizing the findings from multiple experiments. The data showing CrebB requirement in MB \u03b1/\u03b2 (C3), \u03b1'/\u03b2' (C4), and MBON \u03b13 (C5), but not in \u03b3 neurons (C59) or PAM neurons (C61), support this distributed model of transcriptional memory traces. This is a well-supported inference from the experimental data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "Long-term memory formation depends on lasting changes in gene expression mediated by the conserved CrebB/CREB transcriptional activator, while short-term memories rely on rapidly acting biochemical processes. CREB-dependent gene transcription is crucial for LTM but not STM.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C13 provide established background knowledge about memory formation and CREB function. These are well-supported by extensive prior literature (cited appropriately) and are consistent with the experimental findings in this manuscript. This background is essential context but represents prior knowledge rather than novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "The Drosophila genome contains CrebA and CrebB genes, with CrebB producing multiple isoforms essential for LTM. The mushroom body circuit, consisting of Kenyon cells (\u03b1/\u03b2, \u03b1'/\u03b2', \u03b3), dopaminergic neurons, and MBONs, is the main center for olfactory associative memory in Drosophila.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C27 describe established anatomical and molecular knowledge about the Drosophila memory system. These are well-supported by citations to prior literature and provide necessary background. Figure 1A shows the nine CrebB transcript isoforms, supporting C15. This is background information rather than novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C28",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Previous studies using CrebB repressor or RNAi resulted in conflicting interpretations of CrebB requirement. The current study addresses these issues by using adult-specific conditional knockout after brain development is complete, avoiding potential developmental effects and dosage-dependent artifacts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28, C67-C70 describe the rationale for the experimental approach and limitations of prior methods. These are supported by appropriate citations (C28, C67, C69) and the experimental design described (C70). This methodological improvement is important for interpreting the results but represents experimental design rather than a primary finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "The cAMP signaling pathway mediates synaptic plasticity for learning and memory, with CrebB downstream of this pathway. Current findings, together with previous studies, convincingly show that CrebB activity is required in Kenyon cells for LTM, resolving prior conflicting reports.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C73, C75-C77 synthesize prior knowledge (C71-C73) with the current findings to resolve conflicting literature. The statement that CrebB is required in KCs (C77) is supported by the experimental data from this study combined with cited prior work. This represents an important clarification of the field but is partially a synthesis of prior work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C78"
+    ],
+    "result": "In the Chen et al. 2012 study, CrebB inhibition may have been insufficient to disrupt LTM formation, leading to conflicting conclusions about the role of CrebB in Kenyon cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C78 is speculative (as noted in evidence_type: SPECULATION) about why a prior study reached different conclusions. While this is a reasonable hypothesis given the current findings and known issues with RNAi/repressor approaches, it cannot be definitively proven without re-examining the Chen et al. study with the current methods. This represents informed speculation rather than a supported conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "MB \u03b1/\u03b2, \u03b1'/\u03b2', and \u03b3 neurons perform distinct roles in different memory types and phases. Prior studies showed \u03b1/\u03b2 neurons are particularly important for LTM, while \u03b3 neurons have a main role in STM acquisition and expression. The differential CrebB requirements align with these functional specializations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C89 describe established knowledge about functional specialization of KC subtypes, supported by extensive citations. This background is consistent with the current findings showing differential CrebB requirements (\u03b1/\u03b2 and \u03b1'/\u03b2' for LTM, but not \u03b3). This represents important context for interpreting the results but is primarily prior knowledge.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C91",
+      "C93",
+      "C94"
+    ],
+    "result": "MB \u03b1'/\u03b2' neurons contribute ~18% of total Kenyon cells and play an essential role in LTM formation and consolidation. Disrupting synaptic activity from \u03b1'/\u03b2' neurons after conditioning prevents LTM, though retrieval is independent of \u03b1'/\u03b2' output.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91, C93, C94 describe prior knowledge about \u03b1'/\u03b2' neurons supported by appropriate citations. This background contextualizes the novel finding (C92) that CrebB is required in these neurons. The information is accurate and well-cited but represents prior knowledge rather than novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "MBONs can be classified into 21 cell types with dendrites innervating specific MB lobe regions. Dopamine is released during learning to stimulate KC-MBON synaptic plasticity. PAM cluster DANs are critical for learning carbohydrate value, and recurrent network loops between MBONs and DANs are necessary for appetitive LTM formation and consolidation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C102 describe established anatomical and functional knowledge about the MB circuit, supported by appropriate citations. This background is essential for understanding the significance of the MBON \u03b13 finding but represents prior knowledge. The information is accurate and provides important context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C103",
+      "C105",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "Modifying PAM neuron synapse efficacy may be involved in appetitive LTM formation, but CrebB-mediated structural changes in PAM neurons are not required. CrebB-mediated transcription in MBON \u03b13 likely leads to changed postsynaptic efficiency or presynaptic plasticity, potentially skewing the MBON network toward approach behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C103, C105, C108-C110 are speculative interpretations (as noted in evidence_type: SPECULATION) about mechanisms. While these are reasonable hypotheses based on the findings and prior knowledge, they are not directly tested in this study. The speculation about postsynaptic vs. presynaptic changes (C108, C110) and network effects (C109) requires additional experiments to validate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C63",
+      "C107",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "MBON \u03b13 neurons were previously reported to be necessary for appetitive LTM, with dendrites projecting to the MB \u03b1 lobe and presynaptic terminals in multiple protocerebral regions. MBON \u03b13 also connect to DAL neurons, which require CrebB for aversive but not appetitive LTM.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63, C107, C111-C113 describe prior knowledge about MBON \u03b13 anatomy and connectivity, supported by appropriate citations. This background contextualizes the novel finding that MBON \u03b13 requires CrebB for appetitive LTM. The information is accurate and well-cited but represents prior knowledge.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "The molecular and neuronal mechanisms differ between appetitive and aversive memory. Appetitive learning requires food deprivation for motivational drive and efficient expression. The CrebBcKO allele may be useful for exploring CrebB's diverse functions in other processes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C114-C117 provide context about experimental considerations (C115-C116) and future applications (C117). These are supported by established knowledge (C114) and citations (C116). While accurate, these represent methodological considerations and future directions rather than primary findings.",
+    "result_type": "MINOR"
+  }
+]

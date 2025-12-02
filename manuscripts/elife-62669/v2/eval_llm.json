@@ -1,0 +1,343 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "The study designed and implemented a massively parallel reporter assay (MPRA) using two complementary libraries (TSS and Upstream) to test 5832 natural DNA variants in the promoters of 2503 yeast genes. The TSS library focused on variants within 144 bp upstream of transcription start sites (a region enriched for transcription factor binding sites), while the Upstream library tested variants located further upstream.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C45-C50 collectively describe the MPRA design with specific numbers of variants and genes tested. The methodology is clearly documented with appropriate controls (C50), and the design rationale is supported by citations to prior work establishing the importance of the tested regions (C46). The two-library approach provides complementary coverage of promoter regions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "The MPRA demonstrated high reproducibility across biological replicates, with Spearman correlations ranging from 0.55-0.93 (median 0.74-0.83) between replicates. Control oligos from prior work showed significant positive correlations (rho \u2265 0.4) with published expression levels, and MPRA expression correlated significantly with native genomic mRNA levels (rho \u2265 0.23).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C54 provide multiple lines of evidence for assay quality: within-study reproducibility, cross-study validation, and correlation with endogenous gene expression. All correlations are reported with statistical significance (p-values), and the authors appropriately acknowledge experimental differences between studies that might affect correlation strength.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C2",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "The MPRA identified 451 unique causal variants affecting gene expression at 5% FDR (166 in TSS library, 293 in Upstream library). The \u03c01 statistic suggested that at least 26-31% of all tested variants have effects on gene expression, though many could not be detected at individual significance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C55-C58 report the primary discovery of causal variants with appropriate statistical thresholds (5% FDR). The use of the \u03c01 statistic (C57-C58) provides an estimate of the true proportion of functional variants beyond those reaching individual significance, which is methodologically sound. The numbers are internally consistent across claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Causal variants had modest effect sizes, with a median fold change of 1.4-fold between alleles, and only 6% (29 variants) altered expression by more than 2-fold. These effect magnitudes agree well with known genetic effects in BY/RM strains from prior eQTL and allele-specific expression studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C61 characterize the effect sizes of causal variants and validate them against independent datasets. The comparison to prior eQTL and allele-specific expression studies (C61, citing Albert et al. 2018, 2014a) provides external validation. The modest effect sizes are consistent with expectations for regulatory variants.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Variants tested in multiple contexts (opposite orientations in the same library, or in both libraries with different flanking sequences) showed reproducible effects. Variants significant in one context were significantly more likely to be significant in the other context (Fisher's exact test p\u22640.007, OR\u22654), with significant directional agreement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C66 demonstrate internal validation through redundant testing. The statistical tests (Fisher's exact tests with reported odds ratios and p-values) appropriately assess reproducibility. This provides strong evidence that detected variants are true positives rather than technical artifacts, though the authors acknowledge some context-dependence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "The MPRA successfully detected known causal variants, including a variant in the OLE1 promoter (previously identified as the single causal variant) and a variant in the SFA1 promoter (proposed to create an Msn2/4 binding site). Both variants showed highly significant effects in the expected direction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C71 provide validation against independently characterized causal variants from prior studies (Lutz et al. 2019 for OLE1; Maurer et al. 2017, Zheng et al. 2012 for SFA1). The detection of these known variants with appropriate effect directions and magnitudes demonstrates that the MPRA can identify true causal variants.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "MPRA-identified causal variants correlated with local eQTL effects from genetic crosses, with correlations improving when restricting to significant MPRA variants (rho=0.24) and strong eQTLs (rho=0.47). Single most-significant variants per gene showed strong correlation with eQTLs (rho=0.41), and genes with allele-specific expression were more likely to harbor causal MPRA variants (OR=3.2).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C78 demonstrate that MPRA results align with independent genetic evidence from crosses and allele-specific expression studies. The progressive improvement in correlations when filtering for higher-confidence data (C73-C74) is methodologically sound and expected. The OLE1 example (C77) provides a specific case where MPRA perfectly recapitulated eQTL magnitude. Statistical tests are appropriate throughout.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C3",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C127"
+    ],
+    "result": "Multiple causal variants were identified within single promoters, with significant correlations between the number of MPRA variants per gene and both eQTL LOD scores (rho=0.12) and effect sizes (rho=0.14). Examples include CWP1 with four causal variants all increasing expression in the same direction, demonstrating that local eQTLs can have complex molecular architectures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C79-C82, C127 establish that individual eQTLs can be caused by multiple variants. The correlations between variant number and eQTL strength (C79-C80) provide statistical support, while CWP1 (C81-C82) provides a specific example. This challenges the common assumption of single causal variants per eQTL and is well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C128"
+    ],
+    "result": "Some promoters harbor variants with opposing effects that cancel each other out, as demonstrated by UFO1 which has two significant variants 47 bp apart with similar magnitudes but opposite directions, resulting in no significant local eQTL. This demonstrates that QTL mapping can miss linked causal variants of opposite effect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C84, C128 identify an important limitation of traditional QTL mapping. The UFO1 example provides clear evidence of compensatory variants that would be invisible in genetic crosses. This is a novel insight supported by the data, though it represents a single well-characterized example rather than a systematic survey.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C85"
+    ],
+    "result": "Variants in nucleosome-free regions showed stronger correlation with local eQTLs than nucleosome-bound variants, suggesting that chromatin context influences variant effects even in the plasmid-based assay.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C85 demonstrates differential correlation based on nucleosome occupancy in the native genome. This is an important observation about context-dependence of variant effects. However, the mechanism is somewhat unclear since the assay uses plasmids, and the authors acknowledge this limitation in the Discussion (C139-C141).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C4",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C131",
+      "C132"
+    ],
+    "result": "Five variant pairs showed significant non-additive epistatic interactions at FDR\u226420%, though the \u03c01 statistic suggested ~34% of variant pairs may have epistatic effects. Most variant pairs acted additively, and even significant epistatic interactions showed small quantitative departures from additivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C86-C90, C131-C132 characterize epistasis between promoter variants. The design (342 variant pairs with all four allelic combinations, C86) enables rigorous epistasis testing. The finding of rare but detectable epistasis is well-supported, though the authors appropriately note limited statistical power (C88) and small effect sizes (C132). The DAD2 example (C89-C90) provides a clear case of epistasis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "Epistatic variant pairs showed diverse patterns and population genetic properties. The DAD2 variants form a common, tightly linked haplotype (D'=0.999, r\u00b2=0.99, frequency ~74%) where both derived alleles are required for increased expression. The RTT101 variants show high D' (0.998) but low r\u00b2 (0.08) due to different allele frequencies (42% vs 6%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C98 provide detailed characterization of epistatic variant pairs using population genetic data. The linkage disequilibrium statistics and allele frequencies are clearly reported. The contrasting patterns (common linked haplotype for DAD2 vs. rare allele for RTT101) demonstrate diversity in epistatic architectures. The ancestral state determination using the Taiwanese clade (C91) is methodologically appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C5",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "Causal variants showed distinct sequence and genomic features: they were more likely to be SNVs than indels (though longer indels were more likely to be causal), less likely to be nucleosome-bound (FDR=4%), and enriched at conserved nucleotides with higher PhastCons scores (FDR=1%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C101-C104 characterize sequence-level features of causal variants using logistic regression with appropriate FDR correction. The enrichment at conserved sites (C104) is particularly important as it suggests functional constraint. The nucleosome depletion (C103) is consistent with variants in accessible regulatory regions. All associations are reported with statistical significance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C134"
+    ],
+    "result": "Multiple lines of evidence support negative selection acting on causal regulatory variants: they had lower derived allele frequencies (FDR=10%), were depleted from promoters of essential genes (FDR=6%) and genes with many synthetic genetic interactions, consistent with the known reduced expression variation of essential genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C8, C105-C108, C134 provide convergent evidence for negative selection. The depletion from essential gene promoters (C105), lower derived allele frequencies (C108), and citation of prior work on essential gene expression variation (C107) form a coherent picture. The authors appropriately note (C134) that their MPRA results are free from linkage confounding that affects population genetic studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C9",
+      "C99",
+      "C100",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "Causal variants were strongly enriched for alterations in transcription factor binding sites. Across 2,967 TF-related features, 481 features for 139 distinct TFs showed significant associations at 5% FDR. Causal variants were more likely to alter both strong binding sites (62% vs 49%, p=6e-8) and weak binding sites, with weak binding metrics showing stronger associations with causality than strong binding metrics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C99-C114 demonstrate comprehensive analysis of TF binding using 196 TFs and multiple binding metrics. The finding that weak binding sites show stronger associations (C114) is particularly interesting and well-supported. The statistical approach (logistic regression with FDR correction) is appropriate for the large number of features tested. The breadth of significant TF associations (139 TFs) suggests general importance of TF binding perturbation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C10",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C142"
+    ],
+    "result": "Prediction models integrating variant features achieved modest but statistically significant performance. The best logistic regression model achieved AUC=0.71 for predicting variant causality, while linear models predicting effect sizes achieved best correlation rho=0.15 (p=0.0004) on test data. Elastic-net regularization did not improve performance. No single feature or simple combination achieved high prediction accuracy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10, C115-C123, C142 report systematic evaluation of 112 prediction models using proper train/test splits and cross-validation. The modest performance (AUC=0.71, rho=0.15) is honestly reported and appropriately characterized as statistically significant but limited. The failure of elastic-net regularization to improve performance (C117, C123) suggests the models are not overfitting. The conclusion that prediction remains challenging (C142) is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C124",
+      "C125",
+      "C126",
+      "C143"
+    ],
+    "result": "An independent model trained on millions of random DNA sequences (de Boer et al. 2020) showed significant correlation with MPRA measurements for both absolute expression and variant fold-changes, with improved correlation for causal variants. This independent model performed similarly to models trained on the MPRA data itself.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C124-C126, C143 demonstrate that an independently trained model can predict variant effects in this dataset, providing important external validation. The similar performance to models trained on the MPRA data (C143) suggests the dataset size is not the primary limitation. However, the authors appropriately note (C126) that knowing which variants are causal would not be possible in practice.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C130",
+      "C133"
+    ],
+    "result": "The results support a highly polygenic architecture of gene expression variation, with dozens of trans-acting loci across the genome, each potentially harboring multiple causal variants. This is consistent with prior work showing that epistatic interactions in growth traits involve small deviations from additivity accounting for small fractions of phenotypic variance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C130, C133 synthesize findings from this study with prior work (citing Albert et al. 2018, 2014b, Brion et al. 2020, Metzger and Wittkopp 2019, Bloom et al. 2015, Hill et al. 2008). The inference about polygenic architecture is well-supported by the detection of multiple causal variants per gene and is consistent with quantitative genetic theory (C133).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C135",
+      "C136",
+      "C137",
+      "C138"
+    ],
+    "result": "Weak, low-affinity transcription factor binding sites with imperfect motif matches are abundant in intergenic DNA and provide a larger mutational target than strong binding sites. This may explain why many inferred causal variants in human diseases are located near but do not obviously alter recognizable TF motifs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C135-C138 present an important hypothesis about weak binding sites, supported by citations (de Boer et al. 2020, Tanay 2006, Wunderlich and Mirny 2009). However, C138 is explicitly speculative ('may also help explain') and C135 acknowledges 'more work is needed.' While the data show associations with weak binding sites (C114), the mechanistic understanding and applicability to human disease variants remain uncertain.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C139",
+      "C140",
+      "C141"
+    ],
+    "result": "The plasmid-based assay cannot capture the full chromatin state of variants in the genome, and chromatin context likely influences exact variant effects. However, causal variants still correlated with local eQTLs measured in native genomic context, showing that chromatin state does not override all variant effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C139-C141 appropriately acknowledge a key limitation of the approach while demonstrating that it still captures biologically relevant effects. The correlation with eQTLs (C140) and citations to work showing context-dependence in human cells (C141, citing Maricque et al. 2019, GTEx Consortium 2017) provide balanced assessment. This is an honest evaluation of method limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C144",
+      "C145"
+    ],
+    "result": "The prediction accuracies achieved in this study are comparable to those from state-of-the-art machine learning tools applied to human MPRA data and simulated genetic architectures, indicating that variant effect prediction remains challenging even in comparatively simple yeast promoters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C144-C145 contextualize the prediction results by comparison to other studies (citing Kircher et al. 2019, Liu et al. 2019). The conclusion that prediction remains challenging (C145) is well-supported by the modest performance despite using a simpler system (yeast) than human studies. This provides realistic assessment of the current state of variant effect prediction.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,391 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "The S1PR1-GS reporter mouse model is functional and heterozygous mice are viable without gross abnormalities, but homozygous mice show hypomorphic phenotypes including reduced lymphocytes and increased vascular leakage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C24 demonstrate that heterozygous S1pr1ki/+ mice are born at expected frequencies without abnormalities (supported by Figure 1\u2014figure supplement 1A-C). Claims C25-C27 show that homozygous mice exhibit ~2-fold reductions in lymphocytes and increased vascular leakage, indicating hypomorphism. The data consistently support the conclusion that the knock-in allele is functional in heterozygotes but hypomorphic in homozygotes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "S1PR1/\u03b2-arrestin coupling shows spatial heterogeneity in the aorta, with high GFP expression at intercostal branch points (first 2-3 rows of cells) and the lesser curvature of the aortic arch, while distal regions show low frequencies of GFP+ cells. GFP+ cells are not proliferating but show evidence of vascular leak.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C35 describe the spatial distribution of S1PR1/\u03b2-arrestin coupling based on GFP expression patterns shown in Figure 1A, demonstrating clear heterogeneity. Claims C36-C39 provide functional characterization showing lack of Ki-67 co-localization (non-proliferative) and fibrinogen co-localization (vascular leak). The immunostaining data in Figure 1A directly support these observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Bulk RNA-seq reveals that only 9.5% of differentially expressed genes are common between GFPhigh vs GFPlow and S1pr1 ECKO vs WT comparisons, suggesting that S1PR1/\u03b2-arrestin coupling correlates with heterogeneous EC subtypes rather than primarily reflecting S1PR1-regulated transcription.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C42 present the RNA-seq data showing 1,103 GFPhigh-enriched, 1,042 GFPlow-enriched, and 365 S1pr1 ECKO differentially expressed genes with only 204 (9.5%) overlap (Figure 1C). Claims C43-C46 correctly infer that the majority of differential expression reflects EC heterogeneity rather than S1PR1 signaling, with GFPhigh cells being transcriptionally similar to S1pr1 ECKO. The statistical analysis and interpretation are sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "S1PR1 suppresses inflammatory gene expression in mouse aortic endothelium by inhibiting NF\u03baB pathway activation, as evidenced by up-regulation of TNF-\u03b1, LPS, and interferon-\u03b3 signaling genes and down-regulation of glucocorticoid signaling in both GFPhigh and S1pr1 ECKO MAECs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C49 describe IPA analysis results from Figure 1D showing inflammatory pathway activation and glucocorticoid pathway suppression in both GFPhigh and S1pr1 ECKO cells. Claim C50 appropriately infers S1PR1's suppressive role on inflammation. Claim C51 adds that TGF\u03b2 pathway genes are down-regulated in GFPhigh cells. The convergent evidence from two independent comparisons (GFPhigh vs GFPlow and ECKO vs WT) strongly supports this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C52",
+      "C53"
+    ],
+    "result": "Both GFPhigh and S1pr1 ECKO MAECs are enriched with lymphatic EC markers (Lyve1, Flt4, Ccl21c), indicating that GFPhigh MAECs include aorta-associated lymphatic ECs and represent a heterogeneous population.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C53 are supported by RNA-seq data (Figure 1E, Figure 1\u2014figure supplement 2G) showing enrichment of lymphatic markers in both GFPhigh and S1pr1 ECKO populations. This is consistent with the later scRNA-seq findings that identify a distinct LEC cluster. The inference of heterogeneity is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "ATAC-seq identifies differential chromatin accessibility between GFPhigh and GFPlow MAECs (3,612 vs 501 peaks) and between S1pr1 ECKO and WT MAECs (472 vs 303 peaks), with the ~7-fold higher number of GFPhigh-enriched peaks suggesting greater activation and/or heterogeneity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C61 present ATAC-seq data showing peak numbers and differential accessibility (Figure 2A-B). The quality control data (C56-C59) validate the dataset. Claim C62 appropriately infers that the asymmetry in peak numbers reflects either increased chromatin remodeling or cellular heterogeneity in GFPhigh cells. The data quality appears robust with appropriate controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Motif enrichment analysis reveals that GFPhigh peaks are enriched for p65-NF\u03baB, AP-1, STAT3, SOX17, COUP-TFII, and NUR77 motifs, while S1pr1 ECKO peaks show p65-NF\u03baB enrichment and S1pr1 WT peaks show glucocorticoid response element enrichment, with only p65-NF\u03baB motif commonly enriched between GFPhigh and S1pr1 ECKO.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C67 present HOMER motif enrichment results (Figure 2C-F) showing distinct transcription factor binding site enrichment patterns. Claims C68-C70 correctly identify that only p65-NF\u03baB is commonly enriched, consistent with the inflammatory suppression role of S1PR1, while other motifs suggest EC heterogeneity. The analysis is appropriate and conclusions are well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Single-cell RNA-seq identifies nine distinct EC clusters including six arterial EC subtypes (aEC1-6), one lymphatic EC cluster (LEC), one venous EC cluster (vEC), and one VSMC-like cluster, with LEC, vEC, aEC1, and aEC2 showing the highest frequencies (>90%) of GFPhigh cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C76 describe the scRNA-seq clustering results (Figure 3A-F) identifying nine distinct populations based on marker gene expression. Claims C77-C81 characterize the clusters by enriched transcript numbers and GFP status. The clustering is well-supported by marker gene expression patterns, and the identification of distinct EC subtypes is consistent with the bulk RNA-seq findings of heterogeneity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "GFPhigh-dominated clusters (LEC, vEC, aEC1, aEC2) are enriched with sphingolipid metabolism genes, and hierarchical clustering reveals that aEC1 cells are more similar to LECs and vECs than to other arterial ECs, with 46 transcripts commonly enriched and 92 commonly depleted in LEC, vEC, and aEC1 compared to aEC2-6.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C83 describe sphingolipid metabolism gene enrichment in GFPhigh clusters (Figure 3\u2014figure supplement 4A). Claims C84-C90 present hierarchical clustering results and identify shared transcriptional signatures between LEC, vEC, and aEC1. The data support the conclusion that aEC1 shares transcriptional features with lymphatic/venous ECs, distinguishing it from other arterial subtypes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "GSEA analysis reveals distinct functional signatures for arterial EC clusters: aEC1 is enriched for GPCR/MAPK and VEGF signaling; aEC2 shows inflammatory/immune pathways; aEC3 exhibits immediate-early/AP-1 transcription factors similar to regenerative ECs; and aEC4 is enriched for ECM interaction genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C96 present GSEA results (Figure 4A-D) characterizing functional pathways in different arterial EC clusters. Claim C95 appropriately cites McDonald et al. (2018) to support the similarity between aEC3 and regenerative Atf3-positive cells. Claim C97 summarizes that scRNA-seq identified multiple distinct subtypes. The pathway analysis is appropriate and conclusions are well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "Immunohistochemical validation shows that aEC1 markers (NOG, ITGA6) are expressed by GFPhigh MAECs specifically at intercostal branch points (first 2-3 rows, ~20-30 cells), while aEC2 markers (TSP1, VCAM1) are expressed heterogeneously in non-branch point regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C103 present immunostaining data (Figure 5B-H) showing spatial localization of cluster-specific markers. Claims C104-C105 appropriately infer the anatomical specificity of aEC1 to branch points and the heterogeneous distribution of aEC2. The immunohistochemistry provides strong validation of the scRNA-seq clustering and demonstrates clear spatial organization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "Among 411 aEC1-enriched transcripts, only 16 are up-regulated and 5 are down-regulated in S1pr1 ECKO MAECs, indicating that the majority of aEC1-specific transcripts do not require S1PR1 signaling for normal expression, as confirmed by unchanged ITGA6 protein levels at branch points in S1pr1 ECKO mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C107 present the analysis comparing aEC1-enriched transcripts with S1pr1 ECKO differential expression (Figure 6A-C). Claims C108-C110 appropriately conclude that most aEC1 transcripts are S1PR1-independent, supported by immunostaining showing maintained ITGA6 expression in ECKO mice (Figure 6D). The conclusion is well-supported by both transcriptomic and protein-level data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "Genetic depletion of plasma S1P reduces non-branch point GFP+ ECs by ~7-fold but does not affect branch point GFP+ ECs or ITGA6 expression, demonstrating that S1PR1/\u03b2-arrestin coupling in aEC2 is ligand-dependent while coupling in aEC1 is ligand-independent.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111-C115 present experimental data from S1P-depleted mice (Figure 6E-F) showing differential effects on branch point vs non-branch point GFP+ cells. Claims C116-C117 appropriately conclude ligand-independence for aEC1 and ligand-dependence for aEC2. The genetic approach is rigorous and the differential response provides strong evidence for distinct mechanisms of S1PR1 activation in these populations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "Transcription factors highly enriched in aEC1 include Hey1, Nr4a2 (NURR1), Nr4a1 (NUR77), Sox17, Ebf1, Bcl6b, and Lef1, with LEF1 protein showing nuclear localization specifically in GFP+ ITGA6+ cells at branch point orifices, suggesting involvement of Wnt/\u03b2-catenin signaling in aEC1 gene regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C118-C119 identify enriched transcription factors from scRNA-seq (Figure 7A, Figure 7\u2014figure supplement 1A-B). Claims C120-C122 validate LEF1 expression by immunostaining (Figure 7B) and appropriately infer involvement of Wnt/\u03b2-catenin signaling. The combination of transcriptomic and protein-level validation strongly supports the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130"
+    ],
+    "result": "Temporal analysis reveals that branch point GFP+ ECs and ITGA6 expression are established by P6 and remain stable through adulthood, while non-branch point GFP+ ECs increase ~5-fold from P12 to young adult, and TSP1 expression increases with age, indicating that aEC1 specification occurs early in development while aEC2-like cells accumulate postnatally.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C123-C127 present quantitative temporal data (Figure 7C-D, Figure 7\u2014figure supplement 2) showing stable branch point populations and increasing non-branch point populations. Claims C128-C130 appropriately infer developmental timing and cite McDonald et al. (2018) for consistency with prior observations. The temporal analysis provides strong evidence for developmental specification of aEC1 and postnatal accumulation of aEC2.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137"
+    ],
+    "result": "Analysis of embryonic expression shows that Itga6 is abundantly expressed in endothelial cells at E9.5-E13.5 while Thbs1 is restricted to megakaryocytes, with E11.5 embryos showing widespread endothelial ITGA6 and GFP+ cells in the dorsal aorta and cardinal vein region, indicating that aEC1-like gene expression is characteristic of embryonic ECs and becomes spatially restricted during development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C131-C136 present embryonic expression data from the Cao et al. (2019) database and immunostaining of E11.5 embryos (Figure 7G-H, Figure 7\u2014figure supplement 3-4). Claim C137 appropriately infers spatio-temporal regulation. The developmental data strongly support the conclusion that aEC1 transcriptional features are present embryonically and become restricted to branch points postnatally.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142"
+    ],
+    "result": "ATAC-seq analysis of aEC1-enriched genes reveals GFPhigh-specific peaks containing LEF1, SOX17, and NUR77 motifs near Itga6 and Nog, while aEC2/aEC4-enriched genes (Thbs1, Frzb, Pcolce2) show peaks containing GATA6 motifs, suggesting distinct transcriptional regulatory mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C138-C142 present ATAC-seq data showing differential chromatin accessibility and transcription factor binding motifs near cluster-specific genes (Figure 7I-J, Figure 7\u2014figure supplement 5). The integration of chromatin accessibility with gene expression provides mechanistic insight into transcriptional regulation and is well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147"
+    ],
+    "result": "The aEC1 population at branch point orifices exhibits stable GFP status and gene expression throughout postnatal life, with specification likely occurring during development through epigenetic changes involving transcription factors NUR77, NURR1, SOX17, HEY1, and LEF1, rather than through direct S1PR1 signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C143-C147 synthesize multiple lines of evidence including temporal stability (C123-C127), S1PR1-independence (C106-C110, C113-C116), embryonic expression patterns (C131-C137), and transcription factor enrichment (C118-C122, C138-C142). The conclusion that aEC1 specification is developmentally determined and S1PR1-independent is well-supported by convergent evidence from multiple experimental approaches.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C155"
+    ],
+    "result": "Adventitial lymphatics show heterogeneous S1PR1/\u03b2-arrestin coupling, with three distinct expression patterns (VEGFR3+LYVE1+GFP+, VEGFR3+LYVE1lowGFP+, VEGFR3+LYVE1+GFP-) corresponding to different lymphatic vessel types, and GFP+ LECs are predominantly found in ASMA+ collecting lymphatics (73%) in an S1P-dependent manner.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C148-C151 describe immunostaining observations (Figure 8A-B) identifying three distinct lymphatic populations. Claims C152-C155 present quantitative data showing GFP+ LECs are enriched in ASMA+ structures and require lymph S1P (Figure 8D-E). The morphological and molecular characterization combined with genetic S1P depletion provides strong evidence for ligand-dependent S1PR1 activation in collecting lymphatics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C156",
+      "C157",
+      "C158",
+      "C159",
+      "C160"
+    ],
+    "result": "30% of S1pr1 ECKO up-regulated genes are enriched in the LEC cluster, including 78 LEC transcripts involved in chemokine/cytokine pathways (Irf8, Lbp, Il7, Il33, Ccl21, Tnfaip8l1) and lymphangiogenesis (Kdr, Prox1, Lyve1, Nr2f2), indicating that S1PR1 signaling suppresses inflammatory and lymphangiogenic gene expression in LECs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C156-C159 present analysis of S1pr1 ECKO differential expression mapped to scRNA-seq clusters (Figure 9A-B, Figure 9\u2014figure supplement 1A). Claim C160 appropriately infers S1PR1's suppressive role. The enrichment of ECKO up-regulated genes in the LEC cluster and the functional categories of these genes strongly support the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C161",
+      "C162",
+      "C163",
+      "C164",
+      "C165"
+    ],
+    "result": "CCL21 is abundantly expressed in the LEC cluster and up-regulated by S1PR1 loss-of-function, with immunostaining showing that GFPhigh LYVE1+ adventitial lymphatics express CCL21 protein, suggesting that \u03b2-arrestin-dependent down-regulation of S1PR1 correlates with CCL21 expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C161-C164 present scRNA-seq data (Figure 8\u2014figure supplement 1A) and immunostaining (Figure 9C-D) showing CCL21 expression in LECs and its up-regulation in S1pr1 ECKO. Claim C165 appropriately infers correlation between S1PR1/\u03b2-arrestin coupling and CCL21 expression. However, the claim of causation (\"\u03b2-arrestin-dependent down-regulation... correlates with CCL21 expression\") is somewhat circular - high GFP indicates \u03b2-arrestin coupling which indicates receptor down-regulation, but the correlation with CCL21 doesn't establish mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C166",
+      "C167",
+      "C168",
+      "C169"
+    ],
+    "result": "S1PR1/\u03b2-arrestin coupling in adventitial lymphatics correlates with S1PR1-mediated suppression of lymphangiogenic and inflammatory gene expression under homeostatic conditions, without causing widespread lymphangiogenesis or LEC proliferation as evidenced by unchanged PDPN+ LEC frequency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C166-C169 synthesize the LEC findings, with C167-C168 providing important negative control data (Figure 9\u2014figure supplement 1B) showing no change in total LEC numbers. This addresses a potential confound that gene expression changes might reflect altered cell numbers rather than transcriptional regulation. The conclusion that S1PR1 regulates LEC gene expression under homeostasis is well-supported.",
+    "result_type": "MAJOR"
+  }
+]

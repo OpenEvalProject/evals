@@ -1,0 +1,332 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Dobutamine, a membrane-permeant \u03b2-agonist, stimulates PI4P hydrolysis at the Golgi in neonatal rat ventricular myocytes (NRVMs). This effect is blocked by the cell-permeant antagonist metoprolol but not by the cell-impermeant antagonist sotalol, indicating that intracellular \u03b2-adrenergic receptors (\u03b2ARs) are required. Live-cell imaging with NES-Venus-mini-Gs shows dobutamine induces Gs activation at both the plasma membrane and the Golgi, while isoproterenol (Iso) only activates receptors at the plasma membrane.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C37 provide converging evidence from pharmacological experiments (differential antagonist effects) and live-cell imaging (NES-Venus-mini-Gs translocation, Brefeldin A reversal) demonstrating that dobutamine activates intracellular Golgi-localized \u03b2ARs to stimulate PI4P hydrolysis. The use of membrane-permeant vs. impermeant antagonists is a well-established approach to distinguish intracellular from cell surface receptor populations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Dobutamine-stimulated Golgi PI4P hydrolysis requires the Epac/mAKAP\u03b2/PLC\u03b5 signaling complex. PLC\u03b5 knockdown, disruption of the mAKAP\u03b2-PLC\u03b5 interaction with the RA1 domain, and Epac inhibition all block dobutamine-induced PI4P hydrolysis, while G\u03b2\u03b3 inhibition has no effect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C43 demonstrate through multiple complementary approaches (shRNA knockdown, dominant-negative disruption, pharmacological inhibition) that the Epac/mAKAP\u03b2/PLC\u03b5 complex is necessary for dobutamine-mediated PI4P hydrolysis. The negative result with G\u03b2\u03b3 inhibition (C42) provides important specificity, indicating the pathway does not require G\u03b2\u03b3 signaling. These loss-of-function experiments provide strong mechanistic evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C112"
+    ],
+    "result": "Golgi-resident \u03b21ARs are specifically required for dobutamine-mediated PI4P hydrolysis. Rapamycin-induced translocation of the \u03b2AR-blocking nanobody Nb80 to the Golgi inhibits dobutamine-stimulated PI4P hydrolysis, and the \u03b21AR-selective antagonist CGP-20712 completely blocks the response.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C47 and C112 use an elegant chemically-inducible targeting system (FRB-FKBP-rapamycin) to specifically block Golgi \u03b2ARs with the Nb80 nanobody, demonstrating that Golgi-localized receptors are necessary for the response. The \u03b21AR-selective antagonist data (C46-C47) confirms receptor subtype specificity. This approach provides strong spatial and pharmacological evidence for the requirement of Golgi \u03b21ARs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "The physiological neurotransmitter norepinephrine (NE) stimulates PI4P hydrolysis and activates internal \u03b2ARs in cardiac myocytes. NE-induced PI4P hydrolysis is blocked by metoprolol but not sotalol, and NES-Venus-mini-Gs imaging shows NE activates \u03b2ARs at both the plasma membrane and Golgi.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C52 extend the dobutamine findings to the physiologically relevant ligand NE. The differential antagonist effects and live-cell imaging data parallel the dobutamine results, providing strong evidence that endogenous catecholamines can access and activate intracellular \u03b2ARs. This is critical for establishing physiological relevance beyond synthetic agonists.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "NE accesses intracellular \u03b2ARs via OCT3-mediated transport, not receptor internalization. Three structurally distinct OCT3 inhibitors (corticosterone, abacavir, lamotrigine) block NE-induced PI4P hydrolysis and Gs activation at the Golgi, while the dynamin inhibitor Dyngo has no effect. Rapamycin-induced Nb80 translocation to the Golgi also blocks NE-induced PI4P hydrolysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C63 provide strong mechanistic evidence through multiple complementary approaches: (1) three structurally distinct OCT3 inhibitors all block NE effects, (2) dynamin inhibition (which blocks receptor internalization) has no effect, and (3) appropriate controls show OCT3 inhibitors don't affect cell surface receptor signaling or dobutamine responses. The use of multiple structurally unrelated inhibitors strengthens the conclusion about OCT3 involvement and rules out off-target effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Dobutamine and NE stimulate PI4P hydrolysis in adult ventricular myocytes (AVMs), and NE-induced PI4P hydrolysis in AVMs requires OCT3-mediated transport, demonstrating that the intracellular \u03b2AR signaling mechanism is conserved in adult cardiac myocytes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C68 demonstrate that the key findings from neonatal myocytes are recapitulated in adult ventricular myocytes, including OCT3-dependent NE transport. This is important for establishing that the mechanism is not an artifact of the neonatal cell culture system and is likely relevant to adult cardiac physiology. The experiments are appropriately controlled and interpreted.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Dobutamine induces cardiac myocyte hypertrophy (increased cell area and ANF expression) that is more effectively blocked by the cell-permeant antagonist metoprolol than the cell-impermeant antagonist sotalol, suggesting internal \u03b2ARs mediate hypertrophic responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C73 demonstrate that dobutamine-induced hypertrophy (measured by two independent markers: cell area and ANF expression) is differentially sensitive to membrane-permeant vs. impermeant antagonists. The significantly greater efficacy of metoprolol vs. sotalol provides strong pharmacological evidence that intracellular \u03b2ARs contribute to hypertrophic signaling. Statistical significance is reported (p<0.0001 and p=0.007).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "NE-induced cardiac myocyte hypertrophy requires OCT3-mediated transport and Golgi-localized \u03b21ARs. Corticosterone (OCT3 inhibitor) blocks NE-induced but not dobutamine-induced hypertrophy, and rapamycin-induced Nb80 translocation to the Golgi blocks hypertrophy induced by both NE and dobutamine.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C81 provide strong evidence linking the intracellular \u03b2AR signaling pathway to functional hypertrophic outcomes. The differential effects of OCT3 inhibition on NE vs. dobutamine (C76-C79) provide important specificity controls, and the Nb80 Golgi targeting experiments (C80-C81) directly demonstrate that Golgi \u03b2ARs are necessary for hypertrophy induced by both agonists. This establishes functional significance for the signaling pathway.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "The cell-permeant \u03b2-blocker metoprolol is significantly more effective than the cell-impermeant sotalol at preventing dobutamine-induced hypertrophy. Clinically effective \u03b2-blockers (metoprolol, carvedilol) are relatively hydrophobic (log P 1.8 and 4.2), while sotalol (log P -0.85) is hydrophilic and not used for heart failure treatment, suggesting hydrophobicity may be important for accessing internal receptor pools.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C101-C105 present an interesting correlation between \u03b2-blocker hydrophobicity and clinical efficacy, with speculation (C105) that this relates to accessing internal receptors. While the experimental data on metoprolol vs. sotalol efficacy is supported (C101), the clinical pharmacology claims (C102-C104) are knowledge-based, and the mechanistic link (C105) is explicitly speculative. The correlation is intriguing but would require additional experiments (e.g., testing multiple \u03b2-blockers with varying hydrophobicity, measuring intracellular drug concentrations) to establish causation. Clinical efficacy is multifactorial and may not be solely explained by intracellular receptor access.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "While the cell-impermeant agonist isoproterenol (Iso) can induce hypertrophy in vitro and in vivo, the authors suggest this occurs through alternative plasma membrane-mediated pathways not engaged by the physiological agonist NE, and that in vivo Iso effects may involve non-physiological concentrations and multiple target tissues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C106-C109 address an apparent contradiction in the manuscript's model but rely heavily on speculation (C107) and inference (C108-C109) rather than direct experimental evidence. While C106 is supported by citations, the mechanistic explanations for why Iso induces hypertrophy despite not accessing internal receptors are not experimentally tested in this study. The authors acknowledge this limitation but do not provide data distinguishing Iso vs. NE hypertrophic mechanisms. Additional experiments would be needed to support these interpretations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C110"
+    ],
+    "result": "Endogenous \u03b21ARs are present at the Golgi in cardiac myocytes, as detected by immunocytochemistry.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C110 is supported by immunocytochemistry data shown in Figure 1\u2014figure supplement 1, demonstrating colocalization of \u03b21AR with the Golgi marker TGN38. While antibody-based localization has inherent limitations (antibody specificity, fixation artifacts), this provides important supporting evidence that endogenous receptors are present at the Golgi, not just overexpressed tagged receptors.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C97",
+      "C98"
+    ],
+    "result": "Background claims establishing that increased adrenergic tone from cardiovascular stress leads to heart failure through chronic \u03b21AR stimulation, that \u03b2-blocker therapy works by blocking these receptors, and that sustained sympathetic drive is a major factor in cardiac hypertrophy development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C9-C13, C97-C98 are well-established background knowledge in cardiovascular pathophysiology and are appropriately cited. These provide the clinical and physiological context for the study but are not novel findings of this work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C3",
+      "C26",
+      "C27",
+      "C28",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "Background claims about intracellular GPCR signaling, including that GPCRs can be activated intracellularly, are found on various intracellular compartments including the Golgi and nuclear envelope, and that recent work has demonstrated Golgi-localized \u03b21ARs can be activated by ligands in HeLa cells and that TSH receptors signal from the Golgi in thyroid cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C26-C28, C84-C90 provide important background on the emerging field of intracellular GPCR signaling and are appropriately cited. These establish the conceptual framework and prior work that motivated the current study, particularly the key prior work by Irannejad et al. (2017) on Golgi \u03b21ARs in HeLa cells.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Background claims about PLC\u03b5 signaling in cardiac hypertrophy, including its role downstream of various receptors, its diverse upstream regulators, its scaffolding with Epac and mAKAP\u03b2 at the nuclear envelope, its hydrolysis of Golgi PI4P, and the paradoxical observation that isoproterenol doesn't stimulate PI4P hydrolysis despite producing cAMP, which is explained by compartmentalized cAMP pools regulated by different PDEs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C25 summarize the authors' previous work on PLC\u03b5 signaling and cAMP compartmentalization in cardiac myocytes, providing essential mechanistic background for the current study. These are appropriately cited to prior publications from the authors' laboratory and others, establishing the foundation for investigating how \u03b2ARs might access this pathway.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C91"
+    ],
+    "result": "Summary claims stating the main findings: that Golgi \u03b21ARs induce Epac-PLC\u03b5-dependent PI4P hydrolysis when stimulated by dobutamine or NE, that internal \u03b2AR stimulation is required for hypertrophy, and that this mechanism relies on Golgi-resident receptors and OCT3-mediated ligand transport rather than receptor internalization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82, C83, and C91 are summary statements of the major findings that are well-supported by the experimental data presented in the manuscript. These accurately reflect the conclusions supported by the grouped results above.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "Speculative claims about the physiological purpose of intracellular GPCR signaling: that it generates local, distinct signals; that during acute sympathetic stimulation NE may only access cell surface receptors for contractile responses; that Golgi \u03b2AR signaling is slower due to required ligand uptake and may only be activated during chronic stress; and that compartmentalization prevents inappropriate activation of hypertrophic pathways during acute stimulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C92-C95 are explicitly speculative (using language like \"likely,\" \"may,\" \"possibly\") about the physiological significance and temporal dynamics of intracellular \u03b2AR signaling. While these are reasonable hypotheses based on the data, they are not directly tested in this study. Testing these ideas would require time-course experiments with varying NE concentrations, measurements of ligand uptake kinetics, and in vivo models of acute vs. chronic sympathetic stimulation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C99",
+      "C100"
+    ],
+    "result": "The authors suggest that blockade of internal receptors may be required to prevent catecholamine-induced hypertrophy and that activation of cell surface GPCRs is not sufficient for natural catecholamines to induce hypertrophy in NRVMs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C100 are inferences based on the experimental data showing that NE-induced hypertrophy requires OCT3-mediated transport and Golgi \u03b2ARs. While these are interpretations rather than direct measurements, they are well-supported by the combined pharmacological and genetic evidence. The claim that cell surface activation is \"not sufficient\" is supported by the OCT3 inhibitor and Nb80 targeting experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C96"
+    ],
+    "result": "Stimulation of hypertrophy by NE required activity of Golgi-localized \u03b2ARs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C96 is a summary statement directly supported by the experimental data showing that OCT3 inhibition and Golgi-targeted Nb80 block NE-induced hypertrophy (C76, C80-C81). This is a key finding establishing the functional significance of Golgi \u03b2ARs for physiological ligand responses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Control experiments showing that Dyngo prevents FLAG-\u03b21AR internalization at the cell surface, that corticosterone doesn't alter cAMP production from cell surface \u03b2ARs, and that corticosterone doesn't block but rather enhances dobutamine-mediated PI4P hydrolysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C61 are important control experiments demonstrating: (1) that Dyngo is effective at blocking receptor internalization (validating its use as a negative control), (2) that OCT3 inhibition doesn't affect cell surface receptor signaling (ruling out non-specific effects), and (3) that OCT3 inhibition has differential effects on NE vs. dobutamine (supporting the specificity of the transport mechanism). These controls strengthen the main conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C111"
+    ],
+    "result": "Observation that dobutamine causes accumulation of NES-Venus-mini-Gs at punctate structures, possibly corresponding to microtubules.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C111 describes an observation from the imaging experiments with speculation about the identity of punctate structures. While the observation is data-based, the interpretation that these might be microtubules is speculative and not tested. This is a minor observation that doesn't affect the main conclusions about Golgi \u03b2AR signaling.",
+    "result_type": "MINOR"
+  }
+]

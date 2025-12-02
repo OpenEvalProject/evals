@@ -1,0 +1,230 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C6",
+      "C26",
+      "C31",
+      "C32",
+      "C95"
+    ],
+    "result": "The MIC of LL37 increases with cell density even in dilute cultures where cells are >50 \u03bcm apart and electrostatic interactions are shielded, representing a one order of magnitude increase that requires ~10^8 AMPs absorbed per cell to explain the inoculum effect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C26, C31, C32, and C95 collectively demonstrate the inoculum effect in dilute cultures through microplate assays (Figure 1A-B). The experimental design appropriately controls for direct cell-cell interactions by maintaining large intercellular distances, and the quantification of absorbed AMPs provides a mechanistic explanation for the observed MIC dependence on cell density.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C7",
+      "C27",
+      "C30",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Sub-MIC concentrations of LL37 introduce extended lag phases (up to several hours) without changing doubling time, attributed to heterogeneous cell death where a fraction of cells are inhibited while others recover. A mathematical model reproduces this growth delay reasonably well.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C27, and C30 describe the observed lag phase phenomenon (Figure 1C-D), while C59-C61 address model predictions. The experimental observation is clear and well-documented. The model agreement (C59) is qualified as 'reasonable' with acknowledged limitations (C60), which is appropriate given the model's simplicity. The hypothesis of heterogeneous cell death (C30) is later validated by single-cell experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C2",
+      "C20",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C41",
+      "C42"
+    ],
+    "result": "E. coli cells exhibit rapid absorption and retention of large numbers of LL37 peptides following growth inhibition, as demonstrated by single-cell fluorescence microscopy showing abrupt translocation events with ~30 min temporal heterogeneity between cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C20, C36-C39, C42 describe the core observation of peptide translocation using dye-tagged LL37 (Figure 2A-C). The data from 383 cells provides adequate statistical power. The observation of bimodal fluorescence distribution and temporal heterogeneity is clearly demonstrated. C41 appropriately acknowledges the limitation of fluorescence quenching in quantifying peptide density.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "E. coli cells exhibit a binary physiological response to LL37: (1) growing with no peptide uptake, or (2) non-growing with abrupt peptide uptake. At above-MIC concentrations (10 \u03bcM), all cells transition from state 1 to state 2 within one generation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C45 describe the binary response observed in single-cell experiments (Figure 2D). The bimodal distribution in the scatter plot of growth rate vs. fluorescence intensity provides clear quantitative support. The observation at above-MIC concentrations establishes the baseline behavior for comparison with sub-MIC conditions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C3",
+      "C5",
+      "C21",
+      "C22",
+      "C23",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C69",
+      "C70"
+    ],
+    "result": "At sub-MIC concentrations, peptide absorption leads to two distinct subpopulations: non-growing cells that absorb peptides and growing cells that survive due to reduced free peptide concentration. This 'passive cooperation' increases population survivability without active cell-cell communication.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C5, C21-C23, C46-C51, C69-C70 describe the heterogeneous response at sub-MIC concentrations (Figure 3). The single-cell microscopy data from 13 micro-colonies (280 cells) provides strong evidence for the emergence of two subpopulations. The inference of 'passive cooperation' (C70) is reasonable given the observed peptide sequestration and survival of non-absorbing cells, though the mechanism is indirect rather than involving active signaling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C54",
+      "C57",
+      "C59",
+      "C73",
+      "C74",
+      "C91"
+    ],
+    "result": "A mathematical model based on peptide absorption (with parameters kk=0.040 \u03bcM^-1 min^-1 and N=3.8\u00d710^7 AMPs/cell) reproduces the MIC dependence on inoculum size and growth delays, providing evidence that the inoculum effect arises from peptide retention in target cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54, C57, C59, C73, C74, C91 describe the mathematical model and its validation (Figure 4). The model successfully fits the MIC data and predicts growth delays without additional fitting. The discrepancy between model-derived (3.8\u00d710^7) and colorimetric measurements (7.6\u00d710^8) of absorbed AMPs is acknowledged (C57) with a plausible explanation. The model's simplicity is appropriate for the level of mechanistic understanding and provides strong support for the peptide retention hypothesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C4",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C90"
+    ],
+    "result": "The action of LL37 is cell-cycle dependent, with smaller cells resisting peptide action longer than larger cells. Peptide translocation time negatively correlates with initial cell length but not with length at translocation. Increasing cell size by 17% with cephalexin increases MIC, consistent with preferential binding to septa.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C62-C64 describe the cell-cycle dependence observed in single-cell data (Figure 5A). The negative correlation between initial cell length and translocation time is clearly shown, while the lack of correlation with length at translocation supports the cell-cycle interpretation. The cephalexin experiment (C90, Figure 5B) provides independent validation. Citations to prior work (C65-C66) on septal binding provide mechanistic context, though the authors appropriately note this is correlative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "Mini-cell experiments show that LL37 peptides interact significantly with intracellular content beyond DNA, though DNA may play a role as absorption is slower in enucleated mini-cells compared to mother cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C79 describe experiments with enucleated mini-cells (Figure 6). The observation that mini-cells absorb peptides qualitatively similarly to regular cells (C78) demonstrates interactions beyond DNA. The slower absorption rate in mini-cells (C79) suggests DNA contributes but is not solely responsible. The experiment is well-designed to address the question of intracellular binding targets, though the interpretation remains somewhat speculative (C79 uses 'perhaps').",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C29",
+      "C35",
+      "C88"
+    ],
+    "result": "Peptides remain stable over the experiment duration, and the amount of absorbed AMPs can exceed the amount required to kill a cell at above-MIC concentrations. The purchased peptide material was 75% pure by CHN analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29, C35, C88 provide important methodological controls and observations. Peptide stability (C29) is confirmed in Appendix 2, which is essential for interpreting the time-course experiments. The observation that absorbed AMPs exceed lethal amounts (C35) is a reasonable inference from the measurements. Peptide purity information (C88) is appropriately documented for reproducibility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C84",
+      "C87"
+    ],
+    "result": "The E. coli strain used is a derivative of K12 strain NCM3722 with an average generation time of 23 min in RDM at 37\u00b0C.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84 and C87 provide essential strain and growth condition information. The strain is well-characterized with appropriate citations, and the generation time measurement is straightforward and used throughout the modeling work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C1",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "AMPs are broad-spectrum antibiotics that are part of the first line of defense in multicellular systems. They typically contain <50 amino acids with cationic charge and amphiphilic structure, enabling selective targeting of bacteria through electrostatic interactions and membrane penetration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C8-C13 provide background knowledge about AMPs that is well-established in the literature. These claims are appropriately supported by multiple citations and represent consensus understanding of AMP structure and function. This background contextualizes the experimental work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "Prior work has suggested and demonstrated that cell density can alter AMP activity through distribution among cells, leading to MIC dependence on cell density (inoculum effect), though MICs were reported to plateau in dilute cultures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C17 accurately summarize prior literature on the inoculum effect with appropriate citations. The authors correctly note the reported plateau in dilute cultures (C17), which makes their contrary observation (C6) more significant. The literature review appropriately sets up the research question.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C71",
+      "C72"
+    ],
+    "result": "The action of AMPs has a collective nature requiring many AMPs to disrupt membranes. Single-cell microscopy revealed temporal and cell-to-cell heterogeneity in peptide absorption that goes beyond membrane binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C72 summarize key mechanistic features. C71 represents established knowledge about AMP mechanism, while C72 describes the novel observation of heterogeneity in cytoplasmic translocation. Both are well-supported by the experimental data presented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "The findings raise questions about molecular binding targets, evolutionary dynamics of cooperative behavior, and implications for AMP activity in hosts where expression rate may compete with absorption rate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C80-C83 are explicitly framed as open questions and speculation about future directions. While these are reasonable questions arising from the work, they represent hypotheses rather than tested results. The speculation about host dynamics (C82-C83) is plausible but lacks experimental support in this closed-system study.",
+    "result_type": "MINOR"
+  }
+]

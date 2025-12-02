@@ -1,0 +1,2232 @@
+{
+  "submission": {
+    "id": "14cdabc1-c81e-440a-9129-2b445828b0df",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T13:14:42.880343Z",
+    "updated_at": "2025-12-02T13:14:42.880343Z"
+  },
+  "content": [
+    {
+      "id": "50d6c23e-a424-49aa-9f07-1a2402c05fd4",
+      "submission_id": "14cdabc1-c81e-440a-9129-2b445828b0df",
+      "content_type": "manuscript",
+      "content_text": "# Lateral orbitofrontal cortex promotes trial-by-trial learning of risky, but not spatial, biases\n\n## Authors\n\n- Christine M Constantinople<sup>1</sup> ([ORCID: 0000-0003-4435-4460](https://orcid.org/0000-0003-4435-4460)) \u2020\n- Alex T Piet<sup>1</sup> ([ORCID: 0000-0002-6529-1414](https://orcid.org/0000-0002-6529-1414))\n- Peter Bibawi<sup>1</sup>\n- Athena Akrami<sup>1</sup>\n- Charles Kopec<sup>1</sup>\n- Carlos D Brody<sup>1</sup> ([ORCID: 0000-0002-4201-561X](https://orcid.org/0000-0002-4201-561X))\n\n### Affiliations\n\n1. Princeton Neuroscience Institute Princeton University Princeton United States\n2. Department of Molecular Biology Princeton University Princeton United States\n3. Howard Hughes Medical Institute, Princeton University Princeton United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nIndividual choices are not made in isolation but are embedded in a series of past experiences, decisions, and outcomes. The effects of past experiences on choices, often called sequential biases, are ubiquitous in perceptual and value-based decision-making, but their neural substrates are unclear. We trained rats to choose between cued guaranteed and probabilistic rewards in a task in which outcomes on each trial were independent. Behavioral variability often reflected sequential effects, including increased willingness to take risks following risky wins, and spatial \u2018win-stay/lose-shift\u2019 biases. Recordings from lateral orbitofrontal cortex (lOFC) revealed encoding of reward history and receipt, and optogenetic inhibition of lOFC eliminated rats\u2019 increased preference for risk following risky wins, but spared other sequential effects. Our data show that different sequential biases are neurally dissociable, and the lOFC\u2019s role in adaptive behavior promotes learning of more abstract biases (here, biases for the risky option), but not spatial ones.\n\n## Introduction\n\nSequential biases permeate human decision-making, and while using past experiences to guide decision-making can be useful in dynamic environments, it can cause us to make suboptimal decisions if the past is not informative (but see Yu and Cohen, 2008). A variety of biases have been described in two-alternative forced choice tasks in humans and animal models, including repetition of successful choices (\u2018win-stay\u2019), switching after unsuccessful choices (\u2018lose-switch\u2019), and biases due to previous sensory experiences (Abrahamyan et al., 2016; Akrami et al., 2018; Busse et al., 2011; Hollingworth, 1910; Kagel et al., 1995; Scott et al., 2015; Visscher et al., 2009). Moreover, depending on task design, these biases can be expressed in different ways: if choice options are fixed in space, as is often the case in studies of rodent behavior, sequential biases will appear spatial and action-dependent. Alternatively, if the choice options are not fixed in space, sequential biases may be expressed in non-spatial, task-dependent coordinates. It is unclear whether different sequential biases, or biases expressed in different coordinate reference frames, rely on shared or distinct neural circuits and mechanisms.\n\nWe trained rats to choose between explicitly cued guaranteed or probabilistic (i.e., risky) rewards (Constantinople et al., 2019). Guaranteed and risky rewards were randomly assigned to different locations on each trial, disambiguating biases expressed in spatial coordinates and those expressed in more abstract coordinates for the task (biases for risky or safe options). We found that the lateral orbitofrontal cortex (lOFC) was required for rats\u2019 expression of abstract, but not spatial, sequential biases. We interpret these data as consistent with proposals that OFC represents the animal\u2019s current location within an abstract cognitive map of the task (Wilson et al., 2014).\n\nThe OFC is not a monolithic structure: in rats, subdivisions (e.g., ventral orbital area, lateral orbital area, agranular insula) are characterized by distinct efferent and afferent projections and, presumably as a consequence, there is growing evidence that these subdivisions make distinct functional contributions to behavior (Dalton et al., 2016; Groenewegen, 1988; Hervig et al., 2019; Izquierdo, 2017; Murphy and Deutch, 2018; Ray and Price, 1992). Based on connectivity, the rat lOFC (including lateral orbital and agranular insular areas) is thought to be homologous to the central-lateral OFC of monkeys (Heilbronner et al., 2016; Izquierdo, 2017; Stalnaker et al., 2015), although differences have been observed in these areas across species, for example in neural dynamics following reversal learning (Morrison et al., 2011; Schoenbaum et al., 1999).\n\nThe rodent lOFC and primate central-lateral OFC have been shown to play critical roles in adapting behavior to dynamic task contingencies, especially when those contingencies are partially observable (Rushworth et al., 2011; Stalnaker et al., 2014; Wallis, 2007; Wilson et al., 2014). Lesion experiments have implicated the lOFC in tracking rewards and value, for example in extinction, devaluation, and reversal learning paradigms, in which reward contingencies were explicitly manipulated by the experimenter (Gallagher et al., 1999; Izquierdo et al., 2004; Pickens et al., 2003). A related body of work implicates the lOFC in evaluative processes, including comparing current choices to previous outcomes (Kennerley et al., 2011), and regret (Steiner and Redish, 2014; Steiner and Redish, 2012).\n\nMost of the studies demonstrating that OFC promotes behavioral flexibility have used tasks in which trial-by-trial learning improves behavioral performance (e.g., reversal learning). We hypothesized that OFC\u2019s role in behavioral flexibility might drive sequential biases even when they are deleterious. We developed a task in which sequential biases were maladaptive: trials were independent and reward contingencies were stable over months of training (Constantinople et al., 2019). Rats exhibited several dissociable biases reflecting trial and reward history, and we identified lOFC as critical for one bias in particular: an increased willingness to take risk following risky wins.\n\n## Results\n\n### Rats choosing between guaranteed and probabilistic rewards show a risky \u2018win-stay\u2019 bias\n\nWe developed a task in which rats chose between explicitly cued guaranteed and probabilistic rewards (Constantinople et al., 2019). Animals initiated a trial by nose-poking in the center of three ports. Auditory clicks were presented from left and right speakers, and the click rate (6\u201348 Hz) conveyed the volume of water reward baited at each of the two side ports. Simultaneously, light flashes were presented from side ports, and the number of flashes (0\u201310) conveyed the probability of receiving water reward at each port (Figure 1A). One port offered a guaranteed or \u2018safe\u2019 reward (p=1), and the other offered a probabilistic or \u2018risky\u2019 reward (p\u22641). Rewards were delivered 100 ms after rats entered the side port. The location of the safe and risky ports varied randomly on each trial. Four possible water volumes were offered (6, 12, 24, 48 \u03bcL), and risky reward probabilities ranged from 0 to 1, in increments of 0.1 (Figure 1B,C). The trials were self-paced, and following a choice, rats were free to initiate the next trial within 100\u2013200 ms, although they typically took longer (Figure 1\u2014figure supplement 1). However, if animals terminated the trial prematurely by breaking center fixation, they were penalized with a time-out penalty (1.5\u20138 s, adjusted across rats as needed).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/49744/elife-49744-fig1-v1.jpg)\n\n**Figure 1.:** (A) Example trial: rat initiates a trial by nose-poking and fixating in center. On each side, light flashes and click rates convey reward probability and water volume, respectively. One side (here, the right port) offers guaranteed reward (\u2018safe\u2019); safe and risky sides vary randomly over trials. (B) Relationship between flashes and probability, and click rates and reward volumes (6, 12, 24, or 48 \u03bcL) in one version of the task. Risky side could have rewarded probability between 0\u20131 (increments of 0.1). (C) Offered reward volumes and probabilities. (D) Behavioral performance in units of \u2018efficiency\u2019 for five representative rats in the final training stage (Materials\u00a0and\u00a0methods). We compared the average expected value (reward x probability) per trial the rat received compared to an agent choosing randomly, or one that always chose the option with the greater expected value (\u2018ideal performance\u2019). The dashed line is criterion performance for each rat (see \u2018Materials\u00a0and\u00a0methods\u2019). (E) Percent of trials one rat chose the safe option for each of the four safe volumes. Axes show probability and volume of risky alternatives. (F) Difference in probability of choosing the safe option following guaranteed rewards and risky rewards (relative to the mean probability of choosing safe) for all rats (black is mean). Rats were more likely to gamble following risky rewards (p=8.35e-16, paired t-test). (G) The magnitude of the risky win-stay bias exhibits graded dependence on the reward probability of the gamble (mean across rats). p=0.0035 of slope parameter of least-squares regression line (dashed line). The riskier the gamble that won, the more likely that rats will choose to gamble again. See also Figure 1\u2014figure supplement 1. (H) Change in the probability of repeating left or right choices following rewarded or unrewarded trials. Asterisks indicate that rats\u2019 \u2018win-stay\u2019 biases were significantly different from zero (p=2.06e-13, paired t-test), as were their \u2018lose-switch\u2019 biases (p=2.65e-15).\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/49744/elife-49744-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Distribution of inter-trial intervals (ITIs) for three representative rats.\u00a0Trials were self-paced, rats were free to initiate trials within 100\u2013200 ms of the preceding trial. If rats terminated the trial early by breaking center fixation, they were penalized with a time-out penalty (those trials are not shown). (B) Average number of trials per session for each rat, excluding trials that were terminated prematurely. Mean of this distribution (368 trials/session) is shown by the red arrow. (C) Mean behavioral performance across rats, including\u00a0>2.5 million trials. Percent of trials all rats chose the safe option for each of the four safe side volumes. Axes show the probability and volume of risky alternatives. Mean performance across 36 rats (normalized to max before averaging). (D) Estimates of conditional probabilities in finite sequential data can have small biases\u00a0(Miller and Sanjurjo, 2015). If this bias were driving sequential effects in our data, such as increased willingness to take risks following risky wins, we reasoned that computing this bias from random flips (of the same length as our data) of a weighted coin would also reveal an effect. Therefore, we generated random choices for each rat with a generative probability corresponding to the mean probability of choosing the safe option for that rat. We then calculated the change in the probability of choosing the safe option based on reward history for the simulated choices; the same number of trials that were used in Figure 1F were applied to this analysis. There was no observable risky win-stay bias in the simulated dataset, indicating that the effect we observed did not reflect biased estimates of conditional probabilities. (E) Difference in probability of choosing the safe option following guaranteed rewards and risky rewards of different probabilities (relative to the mean probability of choosing safe) for simulated data, as in B. Randomly simulated choices with the same sample sizes as the data (Figure 1G) did not exhibit a bias for risky choices with a graded dependence on reward probability. p=0.80 of slope parameter of least-squares regression line (dashed line). Therefore, the risky win-stay bias we observe, with graded dependence on reward probability, does not reflect biased estimation of conditional probabilities. (F) Difference in probability of choosing the safe option following guaranteed rewards, or risky unrewarded choices. There was no systematic, significant change in probability of choosing safe following unrewarded trials (paired t-test comparing change in probability of choosing safe).\n\nThe \u2018cue period\u2019 is the period when the rat is center poking, and flashes and clicks are presented. The \u2018choice reporting period\u2019 begins when the rat exits the center poke and is free to report his choice by poking in one of the side ports.\n\nTo determine when rats were sufficiently trained to understand the meaning of the cues in the task, we evaluated the \u2018efficiency\u2019 of their choices, by comparing their mean expected value (probability x reward) per trial relative to an agent that always chose the option with greater expected value (\u2018ideal performance\u2019) and one that chose randomly (\u2018random\u2019; Figure 1D; see also Rustichini et al., 2017). While variable, most rats learned the meaning of the cues within 1\u20132 months of training in the final training stage (Figure 1D). Well-trained rats (n\u00a0=\u00a036 animals) performed, on average, 368 trials per day (\u00b1\u00a028 trials, s.e.m.; Figure 1\u2014figure supplement 1B). They tended to choose the option with the higher expected value; on trials when both sides offered certain rewards, rats chose the larger reward, and when one side offered no reward (p=0), they chose the alternative (Figure 1D,E, Figure 1\u2014figure supplement 1C; Constantinople et al., 2019).\n\nRats also exhibited sequential biases observed in primates: if they chose the risky option and were rewarded on the previous trial, they were more likely to gamble and choose the risky side again (Figure 1F; Blanchard et al., 2014; Hayden et al., 2008; Neiman and Loewenstein, 2011). The change in probability of choosing the risky side following a risky win was significantly different from zero (p=1.29e-13, paired t-test across rats). This bias was not due to rats \u2018un-learning\u2019 the meaning of the flashes: there was no change in performance on trials where both sides offered the same reward volume, in which case the better option is the guaranteed reward, indicated by the flashes (p=0.397, paired t-test across rats). The magnitude of the risky win-stay bias depended on the risky reward probability (Figure 1G). We emphasize that in this task, the belief that a risky \u2018win\u2019 increases the probability of future wins is a fallacy: outcomes are independent on each trial, by design. This result did not reflect biased estimates of conditional probabilities, often observed in finite sequential data (Figure 1\u2014figure supplement 1D,E). There was no change in rats\u2019 willingness to choose the gamble following a risky loss, indicating that rats were not simply going through phases of preference for risky or safe options (p=0.79 paired t-test; Figure 1\u2014figure supplement 1F). Similarly, there was no systematic change in rats\u2019 risk preferences over the course of the training session: we examined trials where the guaranteed and risky reward had the same expected value. Rats\u2019 choices on these trials indicate their risk attitudes, with risk averse rats preferring the guaranteed reward and risk seeking rats preferring the gamble (Constantinople et al., 2019). There was no significant change in the probability of choosing the safe option on these trials, comparing the first and second half of trials in each session (p=0.15, paired t-test), again indicating that the risky win-stay bias was not due to slow fluctuations in rats\u2019 risk preferences. Finally, because the risky and safe ports switch on each trial, this risky win-stay bias was independent of a spatial win-stay/lose-switch bias for the left or right ports (Figure 1H), or repetitive behavioral patterns such as perseveration (Miller et al., 2017). It is notable, however, that the magnitude of rats\u2019 spatial win-stay/lose-switch biases was much larger than the magnitude of their risky win-stay biases (Figure 1F,H).\n\n### lOFC represents reward history during the cue period\n\nWe performed tetrode recordings in lOFC while rats performed the task. Many lOFC neurons exhibited transient responses at trial initiation, the magnitude of which reflected whether the previous trial was rewarded (Figure 2A). To quantify this, we measured the mean discriminability (d\u2019) of firing rates at each time point comparing trials following rewarded and unrewarded choices (Figure 2B), analyzing cells with significantly different spike counts on these trials (n\u00a0=\u00a0512 of 1459 units; p<0.05, unpaired t-test). lOFC neurons reflected reward history most strongly at trial initiation, when the animal has no information yet about the prospects on the current trial (Figure 2B; Figure 2\u2014figure supplement 1; Nogueira et al., 2017). A significantly greater fraction of neurons exhibited higher firing rates following unrewarded trials, compared to rewarded trials, consistent with adaptation effects (Figure 2C; Conen and Padoa-Schioppa, 2019; Kennerley et al., 2011; Padoa-Schioppa, 2009; Saez et al., 2017; Zimmermann et al., 2018).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/49744/elife-49744-fig2-v1.jpg)\n\n**Figure 2.:** (A) lOFC neuron with activity aligned to trial initiation. This neuron\u2019s firing rate reflected whether the previous trial was rewarded. (B) Mean encoding of reward history (discriminability or d\u2019) across lOFC neurons that exhibited significantly different spike counts based on reward history. Mean \u00b1\u00a0s.e.m. See also Figure 2\u2014figure supplement 1. (C) Fraction of neurons with significantly different spike counts based on reward history, with more spikes following unrewarded (no rew\u00a0>rew) or rewarded (rew\u00a0>no rew) trials. (D) Schematic of analysis (TCA/PARAFAC) used to discover low dimensional descriptions of trial-by-trial population dynamics. See also Figure 2\u2014figure supplement 2. (E) Result of TCA/PARAFAC from one recording session. Y-axis is in arbitrary units (A.U.; see Materials\u00a0and\u00a0methods). (F) Mean (\u00b1\u00a0s.d.) shuffle-corrected reward (blue) and no-reward (black) triggered averages of trial factors across all sessions (see Materials\u00a0and\u00a0methods). (G) Correlation between trial factors and reward history for each session. Gray bars indicate significance.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/49744/elife-49744-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Distribution of $d_{1}$ and $d_{2}$ values comparing waveforms across rats produces a null distribution (gray, see Materials\u00a0and\u00a0methods).\u00a0Distribution of values comparing waveforms within rats from subsequent recording sessions (red). Dashed lines are empirically chosen thresholds. (B) Subplot from panel A. (C) Neuron that was identified as putatively identical across four recording sessions. Raster plots only show 150 trials (out of 400\u2013600 each day) for display purposes (upper panels). PSTHs (derived from all trials) are shown below (lower panels). (D) Figure 2B\u00a0was reproduced combining putatively identical units recorded over multiple days. Mean discriminability index (d\u2019) depending on whether the previous trial was rewarded or not, computed in 50 ms bins. Error bars are \u00b1\u00a0s.e.m.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/49744/elife-49744-fig2-figsupp2-v1.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A\u2013C) Method used to determine model rank.\u00a0We performed 20 random initializations and compared the similarity of the factors recovered from each iteration to those recovered from the previous one. We show the distribution of similarity indices for example recording sessions that were determined to be rank 1, 2, and 3 (A,B,C, respectively). Black lines are mean \u00b1\u00a0s.e.m. The majority of the data was either rank 1 or 2 (50/105 sessions were rank 1, 50/105 were rank 2, 5/105 were rank 3), so for simplicity, we fit a rank one model to each session. (D) Four neurons from the recording session in panel 3D; firing rates are plotted when the trial factor was high (>85 th percentile) or low (<15 th percentile). (E) Mean (\u00b1\u00a0s.d.) shuffle-corrected reward (blue) and no-reward (black) triggered averages of trial factors across all sessions (see Materials\u00a0and\u00a0methods), excluding cells that had significantly different spike counts following rewarded or unrewarded trials. (F) Mean (\u00b1\u00a0s.d.) shuffle-corrected reward (blue) and no-reward (black) triggered averages of trial factors, excluding random subsets of cells, of the same number that were excluded in panel E. (G) Distribution of simultaneously recorded units across all recording sessions. (H) Relationship between the Pearson\u2019s correlation between trial factors and reward history, and number of units recorded in each session. (I) Relationship between the absolute magnitude of the Pearson\u2019s correlation between trial factors and reward history, and number of units recorded in each session.\n\nOur data show that lOFC neurons encode information about reward history (Figure 2A,B), which might be expected from neurons mediating trial history biases. Given that behavior likely requires the activity of populations of neurons, we next sought an unsupervised description of simultaneously recorded neurons. We employed an extension of principal components analysis, tensor components analysis (Williams et al., 2018); TCA, also known as CANDECOMP/PARAFAC tensor decomposition (Figure 2D). This method extracts features of three aspects of neural data: (1) neuron factors, which weight each neuron\u2019s activity; (2) temporal factors, which capture time-varying dynamics within a trial; and (3) trial factors, which capture dynamics across trials. TCA/PARAFAC provides a low dimensional description of neural dynamics both within and across trials, allowing for simple descriptions of complex, multi-neuron responses across multiple timescales. TCA provides a key advantage over more common dimensionality reduction techniques like PCA or Factor Analysis which require averaging over trials; TCA allows us to independently quantify trial to trial fluctuations in neural activity. TCA decomposes a 3rd order data tensor $X_{n,t,k}$\u00a0(with n neurons over k trials of length t) by a sum of rank 1 factors $\\sumr=1Rw_{r}b_{r}a_{r}$. Here, for each rank r, w is a vector of neuron factors, b is a vector of temporal (time within trial) factors, and a is a vector of across trial factors. Figure 2E shows the neuron, temporal, and trial factors for one recording session (see Materials\u00a0and\u00a0methods, Figure 2\u2014figure supplement 2).\n\nTrial factors were significantly modulated by reward history two trials in the past, on average (Figure 2F). This modulation required the neurons whose firing rates reflected reward history (Figure 2\u2014figure supplement 2E\u2013F). On 43% of recording sessions (45/105 sessions), there was a significant correlation between rats\u2019 reward history and the trial factors, and these correlations were typically negative (Figure 2G). The trial factor can be thought of as a gain factor applied to the population response (Figure 2\u2014figure supplement 2D); a negative correlation suggests that when rats received reward, neural activity in lOFC generally decreased on the subsequent trial, consistent with several reports of reward adaptation in OFC (Conen and Padoa-Schioppa, 2019; Kennerley et al., 2011; Padoa-Schioppa, 2009; Saez et al., 2017; Zimmermann et al., 2018). We note that there was no systematic relationship between the correlation of rats\u2019 reward history and the trial factors, and the number of simultaneously recorded neurons in each session (Figure 2\u2014figure supplement 2H,I).\n\nGiven the strong encoding of aggregated reward history, we hypothesized that disrupting lOFC dynamics during the cue period would disrupt trial-by-trial learning. Optogenetic inhibition during the cue period, however, did not affect spatial win-stay or lose-switch biases (Figure 3A\u2013D; Figure 3\u2014figure supplement 1). Photoinhibition also did not affect the risky win-stay bias, in wild-type CaMKII\u03b1-eNpHR3.0 or Pvalb-iCre-ChR2 rats (Figure 3E; p=0.005, one-way ANOVA comparing safe choices following safe or risky rewards, pooling data across all 13 optogenetic rats).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/49744/elife-49744-fig3-v1.jpg)\n\n**Figure 3.:** (A) Schematic of bilateral optogenetic perturbations. For CaMKII\u03b1-eNpHR3.0 rats (n\u00a0=\u00a08), we used continuous illumination of a green laser for photoinhibition. For Pvalb-iCre-ChR2 rats (n\u00a0=\u00a05), a blue laser was pulsed at 20 Hz. See also Figure 3\u2014figure supplement 1. While the schematic shows a 3 s trial, trial durations were variable (2.6\u20133.35 s); photoinhibition persisted for the duration of the cue period. (B) Histological section from Pvalb-iCre-ChR2 rats also stained for DAPI and parvalbumin (PV) immunoreactivity. (C) Virus injection in a wild type rat expressing CaMKII\u03b1-eNpHR3.0. Location of fibers were estimated by damage at brain surface and fiber tracks. (D) Magnitude of spatial win-stay and lose-switch biases (difference in probability of repeating a left or right choice) on control and laser trials. Error bars are normal approximation of 95% confidence intervals (Materials\u00a0and\u00a0methods). (E) Magnitude of risky win-stay bias (difference in probability of choosing the safe option following safe or risky rewards) on control and laser trials.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/49744/elife-49744-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Representative unit recorded from Pvalb-iCre rats expressing ChR2.\u00a0Three epochs of photoinhibition (blue lines) reliably suppressed spiking activity. Blue laser was pulsed at 20 Hz, 10 ms pulse width, for 8 s. (B) Normalized activity of the cell shown in A; mean \u00b1\u00a0s.e.m. over 30 photoinhibition epochs. (C) Mean suppression over 65 recorded units from two rats. (D) Activity change of each unit plotted as a function of its distance from the optical fiber. Units were recorded in four tracks, 250, 500, 750, or 1000 \u03bcm from the fiber tip. Robust photoinhibition was observed in all tracks. (E) Example injection site shown in Figure 4C; inset shows putative fiber track. (F) Percent of parvalbumin-immunoreactive cells that co-expressed eYFP in Pvalb-iCre rats expressing eYFP-ChR2 (left), and fraction of eYFP-expressing cells co-labeled for parvalbumin immunoreactivity (right).\n\n### Disrupting lOFC during the choice report eliminated the risky win-stay bias\n\nIn contrast to during the cue period, activity at the time of the choice report, when rats exited the center poke, often reflected whether rats chose the safe or risky prospect (Figure 4A,B). A subset of lOFC neurons exhibited significantly different spike counts on rewarded trials when rats chose the safe compared to the risky option (Figure 4B\u2013E; n\u00a0=\u00a0128 units, unpaired t-test). For these neurons, discriminability peaked shortly after rats left the center poke (Figure 4C,D). We also observed prominent side-selectivity (n\u00a0=\u00a0628 units) and strong encoding of reward receipt (n\u00a0=\u00a0459) during the choice reporting period (Figure 4F\u2013H). Of the neurons whose activity reflected safe/risky choice, there was no significant side bias (Figure 4\u2014figure supplement 1).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/49744/elife-49744-fig4-v1.jpg)\n\n**Figure 4.:** (A) Example lOFC neuron with activity aligned to when the rat left the center poke to report his choice. This neuron\u2019s firing rate reflected whether the rat chose the risky (magenta) or safe (black) option on the current trial, analyzing rewarded trials only. (B) Mean d\u2019 across lOFC neurons with significantly different spike counts on trials with risky or safe choices. See also Figure 4\u2014figure supplement 1. (C,D) Mean z-scored firing rate of neurons in panel B aligned to entering the center poke (C), or leaving it to report choice (D). (E) Fraction of neurons in panels B-D that preferred trials when rats made risky or safe choices. Higher firing rates on trials in which rats chose the safe reward could reflect encoding of decision confidence or reward expectation (Lak et al., 2014). (F) Mean d\u2019 reflecting whether rats chose the left/right ports, or whether rats received reward, averaged across neurons with significantly different spike counts on those trials. See also Figure 4\u2014figure supplement 1. (G) Venn diagram of overlap between neurons whose activity differentiated between left/right choices and rewarded/unrewarded trials. (H) Fraction of neurons in panels F,G preferring left/right choices or rewarded/unrewarded trials.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/49744/elife-49744-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A,B) Figure 4B (A) and 4F (B) were reproduced combining putatively identical units recorded over multiple days.\u00a0Mean discriminability index (d\u2019) depending on whether the rat chose the safe or risky option on rewarded trials only (A), chose left or right (B, purple), or was rewarded (B, yellow), computed in 50 ms bins. Error bars are \u00b1\u00a0s.e.m. (C) Of the units with significantly different spike counts on trials in which rats chose risky or safe, the fraction selective (or not) for choosing the left or right port.\n\nGiven the prominent encoding of rats\u2019 left/right choices during this period (Figure 4F,G), we next tested whether photoinhibition affected spatial win-stay/lose-switch biases for the left/right ports. We optogenetically perturbed lOFC during the choice reporting period (triggered when rats exited the center port) for 4 s, and then analyzed performance on subsequent trials. Inhibition during the choice reporting period was interleaved in the same sessions as inhibition during the cue period, in the animals shown in Figure 3. While there was a significant reduction in spatial biases, sham rats also exhibited reduced win-stay/lose-switch biases (Figure 5B). Photoinhibition during the choice reporting period imposed a minimum inter-trial interval (ITI) of 4 s (for laser illumination), which was longer than the average ITI (Figure 1\u2014figure supplement 1A). Comparing the photoinhibition trials to control trials with a minimum ITI of 4 s eliminated the reduction in spatial win-stay/lose-switch biases in CaMKII\u03b1-eNpHR3.0, Pvalb-iCre-ChR2, and sham rats (data not shown).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/49744/elife-49744-fig5-v1.jpg)\n\n**Figure 5.:** (A) For choice reporting period perturbations, the laser was triggered when rats left the center poke, and persisted for 4 s into the inter-trial-interval. See also Figure 5\u2014figure supplement 1. (B) Spatial win-stay/lose-switch biases following photoinhibition during the choice reporting period; sham rats also exhibited a significant reduction in lose-switch biases, and trended towards a reduction in win-stay biases. Control data are replotted from Figure 3D. (C) Magnitude of the risky win-stay bias following choice reporting period inactivations. Control data are replotted from Figure 3E. Error bars are 95% confidence intervals.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/49744/elife-49744-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) Psychometric performance for each CaMKII\u03b1-eNpHR3.0 rat on control trials (black) and trials following photoinhibition during the choice period. These plots include all trials, regardless of trial history, so the elimination of the risky win-stay bias is not evident. (B) Psychometric performance for each Pvalb-iCre-ChR2 rat on control trials (black) and trials following photoinhibition during the choice period. (C) Difference in logistic regression coefficients (control - photoinhibition) parameterizing different choice biases. Data are mean \u00b1\u00a0standard deviation across rats. Asterisks indicate significant Bonferroni-corrected p-value from one-way ANOVA (p=0.0063).\n\nIn contrast, optogenetic inhibition of lOFC during the choice reporting period eliminated the risky win-stay bias on the subsequent trial in rats expressing light-sensitive opsins (Figure 5A,C; p=0.667 CaMKII\u03b1-eNpHR3.0; p=0.778 Pvalb-iCre-ChR2; one-way ANOVA comparing safe choices following safe or risky rewards, pooling data across rats). Laser illumination did not disrupt the risky win-stay bias in sham rats not expressing light-activated opsins (Figure 5C; p=0.009, one-way ANOVA comparing safe choices following safe or risky rewards, n\u00a0=\u00a03 rats). For the majority of rats (7/8 CaMKII\u03b1-eNpHR3.0 rats and 4/5 Pvalb-iCre-ChR2 rats), there was no significant effect on choice latencies compared to control trials (Wilcoxon rank-sum test, Bonferroni correction for multiple comparisons). Moreover the behavioral effect occurred on trials subsequent to the optogenetic perturbations (Figure 5A), making it unlikely that they were due to off-target illumination of motor cortex, including overlying M2.\n\nWe wanted to determine if photoinhibition of lOFC affected other potential biases, so we used logistic regression with parameters for choice repetition for safe/risky choices, the risky win-stay bias described above, left/right choice repetition, and systematic left/right side biases (Kagel et al., 1995; Padoa-Schioppa, 2013). Photoinhibition during the choice report exclusively reduced the risky win-stay bias parameter, but not others (Figure 5\u2014figure supplement 1; p=0.0063, one-way ANOVA with Bonferroni correction; Materials\u00a0and\u00a0methods).\n\nThe reduction of the risky win-stay bias did not reflect changes in the baseline probability of choosing safe (Figure 5\u2014figure supplement 1), and was observed on a rat-by-rat basis (pooling CaMKII\u03b1-eNpHR3.0 and Pvalb-iCre-ChR2 rats, p=0.015; paired t-test across rats). Therefore, photoinhibition of lOFC specifically eliminated risky biases and not spatial biases. Moreover, risky biases were not sensitive to ITI duration (Figure 5C, sham), whereas spatial biases decreased with ITI duration (Figure 5B, sham), further suggesting that these sequential dependencies are dissociable.\n\n## Discussion\n\nAcross species, OFC has been implicated in myriad aspects of value-based decision-making, including representing the value of offered and chosen goods, expected outcomes, confidence, regret, and credit assignment (Akaishi et al., 2016; Kepecs et al., 2008; Padoa-Schioppa, 2011; Rudebeck and Murray, 2014; Schoenbaum et al., 1998; Steiner and Redish, 2014). Evidence from studies using reversal learning paradigms or Pavlovian instrumental transfer suggests that the OFC is critical for behavioral flexibility (Izquierdo et al., 2004; Schoenbaum et al., 2003), and recent work indicates that value representations in lOFC may drive learning rather than action selection or choice (Miller et al., 2018). Relatedly, a recent study showed that rats with lOFC lesions exhibited disrupted sensitivity to previous trial outcomes, especially when those outcomes were unexpected, analogous to probabilistic rewards in our task (Stolyarova and Izquierdo, 2017). Our data are consistent with a role for lOFC in updating rats\u2019 risk attitudes or their beliefs about the world (Jones et al., 2012; McDannald et al., 2011; Miller et al., 2017; Wilson et al., 2014). lOFC neurons reflected reward history most strongly at trial initiation, when the animal has no information yet about the prospects on the current trial (Nogueira et al., 2017). These dynamics are therefore distinct from relative value coding observed in primate OFC, in which neurons encode the value of rewards on the current trial relative to rewards on the previous trial (Kennerley et al., 2011; Padoa-Schioppa, 2009; Saez et al., 2017). The temporal response profiles we observed are generally consistent with reports that OFC neurons fire transiently when an animal initiates reward-seeking behavior, here, trial initiation (Moorman and Aston-Jones, 2014).\n\nWe observed many \u2018side-selective\u2019 neurons whose activity reflected which side the rat chose. A hallmark of primate OFC is that neurons do not encode spatial location (Grattan and Glimcher, 2014; Padoa-Schioppa and Cai, 2011). This discrepancy could reflect a species difference (Feierstein et al., 2006; Kuwabara and Holy, 2019; Roesch et al., 2006). Alternatively, side-selectivity could reflect encoding of the left and right prospects or \u2018goods\u2019 on each trial (Padoa-Schioppa, 2011).\n\nThis study used sensory stimuli (visual flashes, auditory clicks) to convey information about reward options to the animal. Evidence from primates suggests that some OFC neurons may be selective for particular stimulus identities used to indicate reward attributes (Hunt et al., 2018). An intriguing direction for future research would be to record neural activity in OFC as animals learn the associations between sensory stimuli and reward attributes, to characterize the evolution of dynamics in OFC from early to late in training.\n\nWe found that perturbation effects were uncoupled from task variables that seemed to be encoded most strongly, quantified by either fraction of neurons or discriminability, both during the cue period (reward history) and during the choice reporting period (left/right choice). This raises an intriguing question: why are these variables so strongly represented in lOFC if the animal appears to not be using those representations to guide behavior? It is possible that representations of reward history and choice may be distributed broadly enough that other brain areas can compensate for local perturbations, whereas representations used to update risk preferences may be more narrowly localized within or read out from OFC.\n\nAre specific subcircuits within OFC responsible for the risky win-stay bias, and updating dynamic risk preferences more generally? The relatively small fraction of neurons (~9%) that reflect whether choices are risky or safe may be behaviorally relevant, perhaps occupying a privileged position in the circuit and/or projecting to a common target. Alternatively, the more substantial fraction of neurons representing whether animals received reward (~31%) may be involved in updating risk preferences, in which case their activity is read out to specifically update abstract task-specific (here, risky), but not spatial, biases. This latter hypothesis is consistent with a recent study of medial OFC (mOFC) in mice (Namboodiri et al., 2019). In a Pavlovian conditioning paradigm, in which a tone probabilistically predicted a sucrose reward, mice exhibited trial-by-trial updating of their reward expectation, revealed by their anticipatory licking, based on reward history. Optogenetic inactivation of mOFC neurons projecting to the ventral tegmental area (VTA) during the reward period, but not the cue period, disrupted this trial-by-trial learning (Namboodiri et al., 2019). While there is increasing evidence for functional differences between medial and lateral OFC in rodents, these results are consistent with the present study, and suggest that the risky win-stay bias we observed may derive from lOFC neurons projecting to the VTA.\n\nThe risky win-stay bias may reflect evolutionary pressures in dynamic foraging environments, in which sequential successful outcomes are often not independent but reflect \u2018clumped\u2019 resources (Blanchard et al., 2014; Wilke and Barrett, 2009). However, today it demonstrably (and often adversely) affects behavior in finance, recreational gambling, and sports (Croson and Sundali, 2005; Hoffmann et al., 2010; Neiman and Loewenstein, 2011). Our data show that this particular sequential bias is observable and manipulable in populations of neurons in lOFC, although lOFC\u2019s involvement may depend upon task design.\n\nOFC has been proposed to represent the animal\u2019s location in a cognitive map of the task, which, in a reinforcement learning framework, corresponds to the current state in an abstract representation of task states and transitions between them (Nogueira et al., 2017; Wilson et al., 2014). The cognitive map hypothesis parsimoniously accounts for the results of OFC lesions in a variety of paradigms including delayed alternation, extinction, devaluation, and reversal learning, and is consistent with OFC\u2019s role in evaluative processes such as regret (Gallagher et al., 1999; Izquierdo et al., 2004; Pickens et al., 2003; Steiner and Redish, 2014; Steiner and Redish, 2012; Wilson et al., 2014). A recent study showed that the OFC may be particularly important for learning of action-outcome values (Miller et al., 2018). Our data are consistent with this hypothesis, and indicate that the coordinate space of the cognitive map in which OFC promoted learning in this task was in abstract (risky or safe), but not spatial (left or right) coordinates.\n\n## Materials and methods\n\n### Animal subjects\n\nA total of 39 male rats between the ages of 6 and 24 months were used for this study. These included 35 Long-evans and 4 Sprague-Dawley rats (Rattus norvegicus). Of these, three rats were used for neural recordings, and 16 for optogenetic experiments, including LE-Tg (Pvalb-iCre)2Ottc rats (n\u00a0=\u00a05) made at NIDA/NIMH and obtained from the University of Missouri RRRC (transgenic line 0773). These are BAC transgenic rats expressing Cre recombinase in parvalbumin expressing neurons. Investigators were not blinded to experimental groups during data collection or analysis. Animal use procedures were approved by the Princeton University Institutional Animal Care and Use Committee and carried out in accordance with National Institutes of Health standards.\n\nAnimals were water restricted to motivate them to perform behavioral trials. They obtained water rewards during behavioral training sessions, which ranged from 1 to 5 hr per day, and an ad lib access period of up to 1 hr. Food was typically placed in the behavioral box during training, so it was available during the water access period. All rats obtained a minimum volume of water equal to 3\u20135% of their body mass, (30\u201350 mL/kg). Water consumption was monitored during the behavioral session, and if rats consumed less than the minimum requirement, additional water was offered during an ad lib period. The ad lib period terminated either when the target water volume was exceeded or after 1 hr.\n\n### Behavior\n\nWe have previously described rats\u2019 behavior on this task in detail (Constantinople et al., 2019). Briefly, rats were trained in a high-throughput facility using a computerized training protocol. Rats were trained in operant training boxes with three nose ports. When an LED from the center port was illuminated, the animal could initiate a trial by poking his nose in that port; upon trial initiation the center LED turned off. While in the center port, rats were continuously presented with a train of randomly timed clicks from a left speaker and, simultaneously, a different train of clicks from a right speaker. The click trains were generated by Poisson processes with different underlying rates (Hanks et al., 2015); the rates conveyed the water volume baited at each side port. After a variable pre-flash interval ranging from 0 to 350 ms, rats were also presented with light flashes from the left and right side ports; the number of flashes conveyed reward probability at each port. Each flash was 20 ms in duration; flashes were presented in fixed bins, spaced every 250 ms, to avoid perceptual fusion of consecutive flashes. After a variable post-flash delay period from 0 to 500 ms, the end of the trial was cued by a go sound and the center LED turning back on. The animal was then free to choose the left or right center port, and potentially collect reward.\n\nIn this task, the rats were required to reveal their preference between safe and risky rewards. First, rats proceeded through a series of early training stages that included training the rat to center poke, gradually growing the duration of center fixation, and introducing cues representing certain rewards of each volume on one side at a time. Once they were in the final training stage they were presented with the full choice set. To determine when rats were sufficiently trained to understand the meaning of the cues in the task, we evaluated the \u2018efficiency\u2019 of their choices as follows. For each training session, we computed the average expected value per trial of an agent that chose randomly, and an expected value maximizer, or an agent that always chose the side with the greater expected value. We compared the expected value per trial from the rat\u2019s choices relative to these lower and upper bounds. Specifically, the efficiency was calculated as follows:\n\n$$\nefficiency=0.5\\frac{rat_{EV/trial}\u2212rand_{EV/trial}}{EVmax_{EV/trial}\u2212rand_{EV/trial}}+0.5\n$$\n\nThe threshold for analysis was the median performance of all sessions minus 1.5 times the interquartile range of performance across the second half of all sessions. Once performance surpassed this threshold, it was typically stable across months. Occasional days with poor performance were usually due to hardware malfunctions in the rig or a change in the experiment (e.g., the first day being tethered for electrophysiological recordings). Days in which performance was below threshold were excluded from analysis.\n\n### Psychometric curves\n\nWe measured rats\u2019 psychometric performance when choosing between the safe and risky options. For these analyses, we excluded trials where both the left and right side ports offered certain rewards. We binned the data into 11 bins of the difference in the expected value (reward x probability) of the safe minus the risky option. Psychometric plots show the probability that the subjects chose the safe option as a function of this difference (see Figure 5\u2014figure supplement 1). We fit a 4-parameter sigmoid of the form:\n\n$$\np(Choose_{S})=y_{0}+\\frac{1\u22122a}{(1+e^{(\u2212b(V_{S}\u2212V_{R}\u2212x_{0}))})},\n$$\n\nwhere y0, a, b, and x0\u00a0were free parameters. Parameters were fit using a gradient-descent algorithm to minimize the mean square error between the data and the sigmoid, using the sqp algorithm in Matlab\u2019s constrained optimization function fmincon.\n\n### Chronic electrophysiology\n\nTetrodes were constructed from twisted wires that were either PtIr (18 \u00b5m, California Fine Wire) or NiCr (25 \u00b5m, Sandvik). Tetrode tips were platinum- or gold-plated to reduce impedances to 100\u2013250 k\u2126 at 1 kHz using a nanoZ (White Matter LLC).\n\nMicrodrive assemblies were custom-made as described previously (Aronov and Tank, 2014). Each drive contained eight independently movable tetrodes, plus an immobile PtIR reference electrode. Each animal was implanted over the right OFC. On the day of implantation, electrodes were lowered to\u00a0~4.1 mm DV. Animals were allowed to recover for 2\u20133 weeks before recording. Shuttles were lowered\u00a0~30\u201360 \u00b5m approximately every 2\u20134 days.\n\nData were acquired using a Neuralynx data acquisition system. Spikes were manually sorted using MClust software. Units with fewer than 1% inter-spike intervals less than 2 ms were deemed single units. All units that fired more than two spikes on half of trials were included in analysis (n\u00a0=\u00a01459/1881). To convert spikes to firing rates, spike counts were binned in 50 ms bins and smoothed using Matlab\u2019s smooth.m function.\n\n### Discriminability, or d\u2019, of OFC neurons\n\nTo measure neuronal discriminability for different task variables, such as whether the previous trial was rewarded, we computed the mean difference in the smoothed firing rate on different trial types divided by the square root of their mean variance:\n\n$$\nd^{\u2032}=\\frac{|\\mu_{1}\u2212\\mu_{2}|}{\\sqrt{\\frac{1}{2}(\\sigma_{1}^{2}+\\sigma_{2}^{2})}}.\n$$\n\nBecause we computed the absolute value of the difference in firing rates, we subtracted the mean shuffled d\u2019, computed from shuffling the data 15 times. d\u2019 was computed in 50 ms bins, as this was the bin-width used for computing the firing rates (see above).\n\n### Spike waveform analysis for identifying the same neurons recorded over days\n\nThe single neuron data shown in Figures 2 and 4 treated each unit recorded on a different day/recording session as a unique unit. However, we also modified previously published methods (Tolias et al., 2007) to identify units recorded over days (Figure 2\u2014figure supplement 1). We computed two metrics (Tolias et al., 2007), which we describe below, based on the spike waveform. The first metric compared how similar the shape of the waveform was across recording sessions. For each waveform on session 1 (x), we computed \u03b1 to make it as close as possible to the waveform on session 2 (y):\n\n$$\n\\alpha(x,y)=argmin\\alpha||\\alphax\u2212y||^{2}\n$$\n\nWe used Matlab\u2019s constrained minimization function fmincon.m to find \u03b1. We then computed the Euclidean distance between the scaled waveforms, d1.\n\n$$\nd_{1}(X,Y)=\\sumi=44\\frac{||\\alpha(x_{i},y_{i})x_{i}\u2212y_{i}||}{||y_{i}||}\n$$\n\nThe second metric, d2 quantified the difference in amplitude across the 4 channels of each tetrode.\n\n$$\nd_{2}(X,Y)=maxi=44|log(\\alpha(x_{i},y_{i}))|+maxi,j4|log(\\alpha(x_{i},y_{i}))\u2212log(\\alpha(x_{j},y_{j}))|\n$$\n\nWe computed these metrics for all pairs of waveforms recorded on the same tetrode on subsequent recording sessions. To compare these values to a null distribution, we computed the d1 and d2 metrics for units recorded from two different animals, which could not have identical waveforms. We used this null distribution to empirically determine thresholds for d1 (0.8) and d2 (1). Units recorded on consecutive sessions with values below these thresholds, and with significant Pearson\u2019s correlation coefficients of their mean firing rates aligned to trial start (p<0.05), were tentatively classified as identical (Figure 2\u2014figure supplement 1). Putatively identical neurons were then manually examined, and those that exhibited qualitatively different PSTHs, or different mean firing rates over days were rejected and treated as separate units. 191/1459 (13%) units that met criteria for inclusion in analysis were recorded over multiple sessions. Combining data from these units over sessions did not change the results (Figure 2\u2014figure supplement 1; Figure 4\u2014figure supplement 1). For population analyses (TCA/PARAFAC; Figure 2D-G), data were not combined across recording sessions.\n\n### Tensor components analysis/CANDECOMP/PARAFAC tensor decomposition\n\nTo fit the tensor decomposition model, we used software recently made publicly available (Williams et al., 2018): https://github.com/ahwillia/tensortools (copy archived at https://github.com/elifesciences-publications/tensortools).\n\nTo initially determine the dimensionality, or rank, that should be applied to each recording session, we iteratively tried different numbers of dimensions, or \u2018tensor components\u2019, and computed a similarity index to determine how sensitive the recovered factors were to the initialized values of the optimization procedure (Williams et al., 2018). The similarity index was computed on factors recovered from consecutive initializations using the score.m function in Matlab\u2019s Tensor Toolbox. The maximum number of components that yielded an average similarity index\u00a0>90% was used as the number of components, or rank, for each recording session (Figure S3). Nearly all of our recording sessions were rank 1 or 2 (by this method). TCA/PARAFAC is notably different from principal components analysis (PCA) in that the first component does not necessarily explain the most variance of the data (Williams et al., 2018). Therefore, given that most of our data were low rank, to simplify the problem of determining which trial factors to analyze, we fit a rank one model to each recording session.\n\nWe computed the shuffle-corrected reward-triggered averages of trial factors (and no reward-triggered averages) as follows. We computed the average change in trial factors relative to the mean trial factor relative to each rewarded (and unrewarded) trial, up to seven trials in the future. We then performed a shuffle correction, shuffling the trials randomly with respect to reward history, and computed the average change in trial factors relative to rewarded and unrewarded trials (relative to the mean) for the shuffled data. We subtracted the shuffled averages from the true averages to obtain the plot in Figure 2F.\n\nTCA decomposes a 3rd order data tensor $X_{n,t,k}$(with n neurons over k trials of length t) by a sum of rank 1 factors $\\sumr=1Rw_{r}b_{r}a_{r}$. Here, for each rank r, w is a vector of neuron factors, b is a vector of temporal (time within trial) factors, and a is a vector of across trial factors. We note that each of the factors (neuron, temporal, and trial) is a linear gain factor, multiplied by the others; therefore, meaningful units are difficult to determine (as all the factors are multiplied); their scale is a gain on the other terms.\n\n### Acute electrophysiology\n\nTo confirm photoinhibition in Pvalb-iCre-ChR2 rats, we performed virus delivery as described below. After 6\u20138 weeks to allow for expression, rats (n\u00a0=\u00a02) were anesthetized with for surgery with 0.2 mL ketamine and 0.2 mL buprenorphine. Craniotomies were made over frontal orienting field (FOF; centered 2 mm anterior to the Bregma and 1.3 mm lateral to the midline), and the rat was maintained under isoflurane anesthesia.\n\nA chemically sharpened fiber optic (50 um core, 125 um cladding) was inserted into the field of infected neurons to a depth of 1 mm. A sharp tungsten electrode (0.5 MW) mounted to a Narishige oil hydraulic micromanipulator was manually lowered into the brain. Recordings were made using a Neuralynx Cheetah system applying a bandpass filter from 300 to 6000 Hz to the voltage signal. At each site an 8 s laser illumination (473 nm, 25 mW, 20 Hz, 20 ms of pulse duration) was delivered every 20 s, 10 times. A mechanical shutter (Thor Labs optical beam shutter) was used to control the laser timing.\n\nSpikes were automatically detected as brief (<1 ms) events that crossed a threshold of \u00b1\u00a05 standard deviations on the filtered voltage trace. In order to remove light artifact and possible population spikes of driven PV neurons, we removed spikes within the 20 ms of the laser pulse onset. Inhibition was defined as the mean spike rate during the 8 s laser on period/the mean spike rate during the 12 s laser off period.\n\n### Optical fiber chemical sharpening\n\nWe used standard off the shelf FC-FC duplex fiber optic cables (#FCC2433, FiberCables.com), and as previously described (Hanks et al., 2015), stripped the outer plastic coating. To etch the fiber, 2\u20132.5 mm of the fiber tip was submerged in 48% hydrofluoric acid with mineral oil on top. Over the course of\u00a0~17 min, a motor (Narishige) slowly pulled the fiber tip out of the hydrofluoric acid, producing a long taper. The speed of the motor was then increased and maintained at a constant speed until the tip was entirely removed from the acid (usually by 13\u201315 min). This protocol reliably produced sharp, well-etched fibers with uniform and broad light scatter. Fibers that did not produce sufficiently broad or uniform scatter were discarded.\n\n### Virus delivery and fiber implantation\n\nWe used methods described previously (Hanks et al., 2015); here we describe procedures specific to this experiment. We injected 2 \u00b5L of AAV virus (AAV5-CaMKII\u03b1-eNpHR3.0-eYFP in wild type rats, or AAV-FLEX-rev-ChR2-tdtomato in Pvalb-iCre rats) using a Nanoject (Drummond Scientific). Six closely spaced injection tracts (typically 500 \u00b5m apart) were made in each craniotomy; each rat had bilateral craniotomies and injections, so there were 12 total injection tracts per animal. For OFC injections, in each track, 18 injections of 14.1 nL were made every 100 \u00b5m in depth starting at 3.7 mm below brain surface (3.7\u20135.4 mm DV). Virus was expelled at 20 nL/sec. Injections were made once every 10 s; at the final injection in a tract, the pipette was left in place for at least 2 min before removal.\n\nChemically sharpened fibers (50 \u00b5m core, 125 \u00b5m cladding) were implanted at 5\u00b0 angles relative to the midline. Fiber tips were positioned 0.4 mm lateral from the center track at brain surface so that, when the tip was lowered to 4.6 mm DV, it was centered at the target coordinates (+3.5 AP, \u00b1\u00a02.5 ML). Viral constructs were allowed to develop for 6\u20138 weeks before behavioral experiments began.\n\n### Optogenetic perturbation\n\nFor bilateral halorhodopsin inactivations, the laser beam from a 200 mW, 532 nm laser (OEM Laser Systems) was split into two beams of roughly equal power (~25 mW) using a beam splitter (Doric DMC_1 \u00d7 2i_VIS_FC). Laser illumination was delivered on a subset of trials by opening a shutter with a 5 V TTL. On a random subset of 15% of trials, illumination occurred during the entire trial (triggered when the rat entered the center poke until he was free to leave it), or on a random 15% of trials, illumination was triggered when the rat left the center poke, and persisted for the first 4 s of the inter-trial interval, resulting in transient silencing of cortical dynamics. In Pvalb-iCre-ChR2 rats, we used a 473 nm laser. Laser pulses (10 ms pulse width) were delivered at 20 Hz.\n\nThe rats generally chose risky on a minority of trials, and by definition, the fraction of those that were rewarded is a smaller subset. Moreover, rewarded trials were more frequent than non-rewarded trials. To overcome these challenges, we collected data from many sessions. The median number of sessions in which rats experienced photoinhibition was 27 (range: 21\u201370, mean: 37). We did not observe differences in the optogenetic result when comparing the first or second half of all sessions (data not shown).\n\n### Normal approximation of 95% binomial confidence intervals\n\nTo compute error bars on the choice probabilities for the risky and spatial win-stay biases (Figures 3D,E and 5B,C), we computed the 95% confidence intervals using the test statistic for the chi-square distribution (Corder and Foreman, 2014) as follows:\n\n$$\nCI_{95}=z\\sqrt{\\frac{p_{psr}(1\u2212p_{psr})}{n_{psr}}+\\frac{p_{prr}(1\u2212p_{prr})}{n_{prr}}}\n$$\n\nwhere ppsr is the probability of choosing safe following a safe reward (\u2018post-safe reward\u2019) and pprr is the probability of choosing safe \u2018post-risky reward\u2019, n is the number of observations for each condition (post-safe reward and post-risky reward), and z the z-score for 95% confidence intervals from a normal distribution.\n\n### Logistic regression model of choice biases\n\nTo evaluate the contribution of different potential choice biases to behavior, we implemented a logistic regression model, in which we parameterized the rats\u2019 probability of choosing right as follows:\n\n$$\np(ChooseR)=1/(1+exp(\u0394EV+rs_{hyst}+risky_{win\u2212stay}+lr_{hyst}+lr_{bias})),\n$$\n\nwhere \u0394EV is the right minus left expected value (reward x probability) on each trial, rshyst captures risky/safe hysteresis (i.e., if the rat just chose safe, the likelihood he will choose safe on the next trial), riskywin\u2014stay parameterizes increased willingness to choose the gamble conditioned on a risky win, lrhyst parameterizes the probability of repeating left/right choices, and lrbias parameterizes overall side biases for the left and right port. The only parameter that was significantly changed (and in fact reduced) by photoinhibition during the choice report was the riskywin\u2014stay\u00a0parameter (p=0.0063, one-way ANOVA comparing parameters fit to control and opto conditions across rats, Bonferroni correction for multiple comparisons).\n",
+      "created_at": "2025-12-02T13:14:42.880343Z"
+    },
+    {
+      "id": "2bf38cd4-2181-402d-bb07-7902b4990c78",
+      "submission_id": "14cdabc1-c81e-440a-9129-2b445828b0df",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Emilio Salinas, Wake Forest School of Medicine United States\n\nReviewers:\n- Emilio Salinas, Wake Forest School of Medicine United States\n- Alicia Izquierdo, University of California, Los Angeles United States\n\n## Review text\n\nDOI: [10.7554/eLife.49744.015](https://doi.org/10.7554/eLife.49744.015)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Orbitofrontal cortex promotes trial-by-trial learning of risky, but not spatial, biases\" for consideration by eLife. Your article has been reviewed by two peer reviewers, including Emilio Salinas as the Reviewing Editor and Reviewer #1, and the evaluation has been overseen by Floris de Lange as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Alicia Izquierdo (Reviewer #2).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nConstantinople et al. study sequential biases, or the influence of past experience, on decision making. They point out a shortcoming in many similar investigations: that choice options are fixed in space and therefore make it impossible to study reward history effects independent of spatial information. Here, rats learn to combine reward probability with reward amount in a novel, two-alternative forced-choice task, and exhibit two notable effects: (1) the classic \"win-stay\" and \"lose-switch\" biases in favor of previously rewarded or against previously unrewarded locations, and (2) a preference toward the risky (low-probability) option following a previously rewarded, risky choice. In other words, when the rat gambles and wins, it is more likely to gamble again. Electrophysiology and optogenetics reveal that OFC activity encodes the history of previous rewards, the preference for risk, and the left/right choices. And somewhat surprisingly, when OFC is inactivated during the choice period of trial j, the preference for risk in trial j+1 essentially disappears, whereas the spatial bias (win-stay/lose-switch) is unchanged. This is an interesting study that provides nuanced new information about OFC contributions to decision making.\n\nEssential revisions:\n\n1) Revise some of the Introduction to include a narrower set of studies as the basis for these experiments. For example, currently there is cited evidence on mOFC (Bradfield et al., Neuron, 2015) in unobservable outcome encoding, yet there is additional (and growing) evidence for functional dissociations of rat mOFC from lOFC (Izquierdo, 2017) as is presently studied here; see most recent relevant example of this by Hervig et al., 2019. Do authors attribute this specific function to lOFC or is it also possibly mediated by other subregions of OFC? I also found the conceptual connections of the present work on the influence of reward history/statistics with the economic decision making literature in the Introduction rather loose. What about this task makes it an economic decision making task?\n\n2) During the cue period there was multimodal signaling of magnitude (click rate, auditory) and probability (light flashes, visual). Authors may wish to consider how these complex, compound stimuli experiences may change the involvement of OFC over the entire session and across sessions, particularly given that these are longitudinal experiments. For example, are these different reward attributes represented in an orthogonal way in OFC, and do they change over time (from early vs. late learning)? There is evidence of this in nonhuman primate PFC (Hunt et al., 2018) and the contrast could be interesting. Relatedly, authors could discuss if/how other regions (e.g. ACC, M2) in rat may multiplex these reward attributes and contribute to choice and action selection. Or is the authors' stance that OFC is doing this? Please clarify.\n\nFigures 3JD,E, 4J and L5B,C3) The viral expression photomicrograph looks well-focused mostly on lateral orbital but I also see expression in ventral orbital, and perhaps even in M2. It may be more thorough to show a multi-coronal section reconstruction at different AP levels of this viral spread and correlate positioning to behavioral effects.\n\n4) The bias for risk is quite small; if I understood correctly, it amounts to an average change in choice probability of 0.02, which is about 10 times smaller than the average lose-switch bias (Figure 1F, H). This is consistent with the much weaker coding of risk bias versus spatial bias (Figure 4B, F). This is fine, it is what it is, but the authors should mention this difference a bit more explicitly. Initially, it is surprising that the inactivation removes the risk bias but leaves intact the spatial bias, given how important the latter seems. The explanation offered in the Discussion (\"We found that perturbation effects\u2026\") is perfectly reasonable, but the size difference could be pointed out to emphasize that there is still a bit of a mystery to be solved there, i.e., why is the spatial bias so strongly represented in OFC, if its primary function is not to enforce it?\n\nRelated to this, the units of the risky bias change. In Figure 1F, G, it is just the actual change in probability, whereas later on (Figures 3E, 5C) it is expressed as a percentage, but a percentage of what? Wouldn't it be clearer if the numbers indicated the raw difference in probability, as in Figure 1F, G, even if they were small? By the way, the caption of Figure 3E currently describes the units of the risk bias as a \"difference in probability,\" not as a percentage.\n\n5) If I understand correctly, the trial factor in the TCA decomposition represents the gain of each trial. Doesn't this factor, and thus the result in Figure 2G, depend on the number of recorded neurons? It would be useful to say something about this in the Materials and methods, because the limited number of recorded neurons might underestimate the correlation between trial factor and reward history. Also, the significance of the correlations might depend on the number of recorded neurons, no?\n\n6) Results subsection \u201cDisrupting lOFC during the choice report eliminated the risky win-stay bias\u201d, first paragraph: \"and the majority of those units were not selective for left/right choice.\" This statement seems incorrect. Figure 4\u2014figure supplement 1 shows that 54 neurons were not selective for side, whereas 47+27=74 were selective.\n\n7) Another point concerns the OFC and timing. There are now at least 2 studies showing that rodent OFC may be important in reinforcement timing (Bakhurin et al., J Neurosci, 2017; Stolyarova and Izquierdo, 2017). Specifically, the latter reported evidence that OFC lesions reduce the animal's ability to represent a detailed delay distribution of reward delivery times, acquired over longitudinal experience (as in the present study). Perhaps I missed this, but have authors considered if/how the time window of the cue period impacts strategy/performance during the reporting period? It would be good to know that there are no differences in choice reporting that can be attributed to a failure in representing short (2.6 s) vs. long (3.4 s) cue periods. Even if this were the case, it could help address the possibility that OFC is recruited to representing the variance of a temporal quantity. Relatedly, I'm not clear on why 2.6-3.35 sec range was chosen, and 4 sec range for photoinhibition imposed, can authors provide a rationale or clarify?\n",
+      "created_at": "2025-12-02T13:14:42.880343Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T13:14:42.880343Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T13:14:42.880343Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "04690dfc-4dd1-43f0-8dd7-049ebd151223",
+      "content_id": "50d6c23e-a424-49aa-9f07-1a2402c05fd4",
+      "claim_id": "C1",
+      "claim": "Rats were trained to choose between cued guaranteed and probabilistic rewards in a task where outcomes on each trial were independent.",
+      "claim_type": "EXPLICIT",
+      "source": "We trained rats to choose between cued guaranteed and probabilistic rewards in a task in which outcomes on each trial were independent.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the abstract and describes the experimental design.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:14:42.880343Z"
+    },
+    {
+      "id": "53670bce-2751-4b99-ac17-6cc97cdf8f36",
+      "content_id": "50d6c23e-a424-49aa-9f07-1a2402c05fd4",
+      "claim_id": "C2",
+      "claim": "Rats showed increased willingness to take risks following risky wins.",
+      "claim_type": "EXPLICIT",
+      "source": "Behavioral variability often reflected sequential effects, including increased willingness to take risks following risky wins, and spatial 'win-stay/lose-shift' biases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by behavioral data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:14:42.880343Z"
+    },
+    {
+      "id": "b5eaf8e1-bfcd-4902-8433-996c4c911b7f",
+      "content_id": "50d6c23e-a424-49aa-9f07-1a2402c05fd4",
+      "claim_id": "C3",
+      "claim": "Rats exhibited spatial 'win-stay/lose-shift' biases.",
+      "claim_type": "EXPLICIT",
+      "source": "Behavioral variability often reflected sequential effects, including increased willingness to take risks following risky wins, and spatial 'win-stay/lose-shift' biases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by behavioral data in Figure 1H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:14:42.880343Z"
+    },
+    {
+      "id": "d8bc4731-9e67-4712-b55b-cb4e516d8c27",
+      "content_id": "50d6c23e-a424-49aa-9f07-1a2402c05fd4",
+      "claim_id": "C4",
+      "claim": "Lateral orbitofrontal cortex (lOFC) encodes reward history and receipt.",
+      "claim_type": "EXPLICIT",
+      "source": "Recordings from lateral orbitofrontal cortex (lOFC) revealed encoding of reward history and receipt",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by neural recording data in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:14:42.880343Z"
+    },
+    {
+      "id": "cd6a0cc7-e8f9-42a4-8e09-9c17ff5ef66b",
+      "content_id": "50d6c23e-a424-49aa-9f07-1a2402c05fd4",
+      "claim_id": "C5",
+      "claim": "Optogenetic inhibition of lOFC eliminated rats' increased preference for risk following risky wins.",
+      "claim_type": "EXPLICIT",
+      "source": "optogenetic inhibition of lOFC eliminated rats' increased preference for risk following risky wins, but spared other sequential effects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by optogenetic manipulation data in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:14:42.880343Z"
+    },
+    {
+      "id": "e730e892-152c-4836-84e7-93a882d226f1",
+      "content_id": "50d6c23e-a424-49aa-9f07-1a2402c05fd4",
+      "claim_id": "C6",
+      "claim": "Optogenetic inhibition of lOFC spared spatial sequential effects.",
+      "claim_type": "EXPLICIT",
+      "source": "optogenetic inhibition of lOFC eliminated rats' increased preference for risk following risky wins, but spared other sequential effects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by data in Figure 5B showing spatial biases were not affected.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:14:42.880343Z"
+    },
+    {
+      "id": "e9d6885a-24b4-4303-9406-70bf499055ad",
+      "content_id": "50d6c23e-a424-49aa-9f07-1a2402c05fd4",
+      "claim_id": "C7",
+      "claim": "Different sequential biases are neurally dissociable.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data show that different sequential biases are neurally dissociable",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is drawn from the differential effects of lOFC inhibition on risky vs spatial biases.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:14:42.880343Z"
+    },
+    {
+      "id": "08c228d7-3fab-4b16-a855-b08259d21829",
+      "content_id": "50d6c23e-a424-49aa-9f07-1a2402c05fd4",
+      "claim_id": "C8",
+      "claim": "The lOFC's role in adaptive behavior promotes learning of more abstract biases (biases for the risky option), but not spatial ones.",
+      "claim_type": "EXPLICIT",
+      "source": "the lOFC's role in adaptive behavior promotes learning of more abstract biases (here, biases for the risky option), but not spatial ones.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion stated in the abstract, based on the differential effects of lOFC manipulation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:14:42.880343Z"
+    },
+    {
+      "id": "1b7fb66e-5354-4010-8e3c-fe800fe32a9d",
+      "content_id": "50d6c23e-a424-49aa-9f07-1a2402c05fd4",
+      "claim_id": "C9",
+      "claim": "Sequential biases permeate human decision-making.",
+      "claim_type": "EXPLICIT",
+      "source": "Sequential biases permeate human decision-making",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement in the introduction drawing on established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:14:42.880343Z"
+    },
+    {
+      "id": "e3d5f655-17f0-4f5c-8955-702a952f3c7d",
+      "content_id": "50d6c23e-a424-49aa-9f07-1a2402c05fd4",
+      "claim_id": "C10",
+      "claim": "Using past experiences to guide decision-making can be useful in dynamic environments.",
+      "claim_type": "EXPLICIT",
+      "source": "while using past experiences to guide decision-making can be useful in dynamic environments, it can cause us to make suboptimal decisions if the past is not informative (but see Yu and Cohen, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with a citation to support the claim.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:14:42.880343Z"
+    },
+    {
+      "id": "00458db8-f9e0-48aa-855c-88b7e9262751",
+      "content_id": "50d6c23e-a424-49aa-9f07-1a2402c05fd4",
+      "claim_id": "C11",
+      "claim": "Using past experiences to guide decision-making can cause suboptimal decisions if the past is not informative.",
+      "claim_type": "EXPLICIT",
+      "source": "while using past experiences to guide decision-making can be useful in dynamic environments, it can cause us to make suboptimal decisions if the past is not informative (but see Yu and Cohen, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:14:42.880343Z"
+    },
+    {
+      "id": "9b0afb3e-7984-4a12-b2a3-211f3684d93a",
+      "content_id": "50d6c23e-a424-49aa-9f07-1a2402c05fd4",
+      "claim_id": "C12",
+      "claim": "A variety of biases have been described in two-alternative forced choice tasks in humans and animal models, including repetition of successful choices ('win-stay'), switching after unsuccessful choices ('lose-switch'), and biases due to previous sensory experiences.",
+      "claim_type": "EXPLICIT",
+      "source": "A variety of biases have been described in two-alternative forced choice tasks in humans and animal models, including repetition of successful choices ('win-stay'), switching after unsuccessful choices ('lose-switch'), and biases due to previous sensory experiences (Abrahamyan et al., 2016; Akrami et al., 2018; Busse et al., 2011; Hollingworth, 1910; Kagel et al., 1995; Scott et al., 2015; Visscher et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with multiple citations supporting the claim.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:14:42.880343Z"
+    },
+    {
+      "id": "3c3d55bf-d5e0-4c73-87b2-2f21f4e41da5",
+      "content_id": "50d6c23e-a424-49aa-9f07-1a2402c05fd4",
+      "claim_id": "C13",
+      "claim": "If choice options are fixed in space, sequential biases will appear spatial and action-dependent.",
+      "claim_type": "EXPLICIT",
+      "source": "if choice options are fixed in space, as is often the case in studies of rodent behavior, sequential biases will appear spatial and action-dependent.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction as a logical consequence of task design.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:14:42.880343Z"
+    },
+    {
+      "id": "1ec9127e-ff6a-47c1-a52d-575841de2489",
+      "content_id": "50d6c23e-a424-49aa-9f07-1a2402c05fd4",
+      "claim_id": "C14",
+      "claim": "If choice options are not fixed in space, sequential biases may be expressed in non-spatial, task-dependent coordinates.",
+      "claim_type": "EXPLICIT",
+      "source": "Alternatively, if the choice options are not fixed in space, sequential biases may be expressed in non-spatial, task-dependent coordinates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction as a logical consequence of task design.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:14:42.880343Z"
+    },
+    {
+      "id": "2cdb0089-7783-4c6d-b80e-ccdc1b590715",
+      "content_id": "50d6c23e-a424-49aa-9f07-1a2402c05fd4",
+      "claim_id": "C15",
+      "claim": "It is unclear whether different sequential biases, or biases expressed in different coordinate reference frames, rely on shared or distinct neural circuits and mechanisms.",
+      "claim_type": "EXPLICIT",
+      "source": "It is unclear whether different sequential biases, or biases expressed in different coordinate reference frames, rely on shared or distinct neural circuits and mechanisms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a knowledge gap in the introduction.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:14:42.880343Z"
+    },
+    {
+      "id": "9f6f4b43-dbf7-4e88-a0a0-91159b427be0",
+      "content_id": "50d6c23e-a424-49aa-9f07-1a2402c05fd4",
+      "claim_id": "C16",
+      "claim": "Guaranteed and risky rewards were randomly assigned to different locations on each trial in the task.",
+      "claim_type": "EXPLICIT",
+      "source": "Guaranteed and risky rewards were randomly assigned to different locations on each trial, disambiguating biases expressed in spatial coordinates and those expressed in more abstract coordinates for the task (biases for risky or safe options).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental design of the task.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:14:42.880343Z"
+    },
+    {
+      "id": "bad25627-5007-4e83-a136-e4fcad170cf0",
+      "content_id": "50d6c23e-a424-49aa-9f07-1a2402c05fd4",
+      "claim_id": "C17",
+      "claim": "The task design disambiguated biases expressed in spatial coordinates from those expressed in more abstract coordinates.",
+      "claim_type": "EXPLICIT",
+      "source": "Guaranteed and risky rewards were randomly assigned to different locations on each trial, disambiguating biases expressed in spatial coordinates and those expressed in more abstract coordinates for the task (biases for risky or safe options).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a consequence of the task design.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:14:42.880343Z"
+    },
+    {
+      "id": "80a3291e-dd4f-4d5a-bfa6-bcdb689cab87",
+      "content_id": "50d6c23e-a424-49aa-9f07-1a2402c05fd4",
+      "claim_id": "C18",
+      "claim": "The lateral orbitofrontal cortex (lOFC) was required for rats' expression of abstract, but not spatial, sequential biases.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the lateral orbitofrontal cortex (lOFC) was required for rats' expression of abstract, but not spatial, sequential biases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main finding stated in the introduction, supported by optogenetic data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:14:42.880343Z"
+    },
+    {
+      "id": "079977db-d1f4-49d0-bd49-950e0f9c4423",
+      "content_id": "50d6c23e-a424-49aa-9f07-1a2402c05fd4",
+      "claim_id": "C19",
+      "claim": "The data are consistent with proposals that OFC represents the animal's current location within an abstract cognitive map of the task.",
+      "claim_type": "EXPLICIT",
+      "source": "We interpret these data as consistent with proposals that OFC represents the animal's current location within an abstract cognitive map of the task (Wilson et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the results with a citation to support the theoretical framework.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:14:42.880343Z"
+    },
+    {
+      "id": "f15283bb-46cd-4bb1-acdf-9300baf7b5d8",
+      "content_id": "50d6c23e-a424-49aa-9f07-1a2402c05fd4",
+      "claim_id": "C20",
+      "claim": "The OFC is not a monolithic structure.",
+      "claim_type": "EXPLICIT",
+      "source": "The OFC is not a monolithic structure",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction as established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:14:42.880343Z"
+    },
+    {
+      "id": "847705f4-83d7-457e-8198-e7b4b901d826",
+      "content_id": "50d6c23e-a424-49aa-9f07-1a2402c05fd4",
+      "claim_id": "C21",
+      "claim": "In rats, OFC subdivisions (e.g., ventral orbital area, lateral orbital area, agranular insula) are characterized by distinct efferent and afferent projections.",
+      "claim_type": "EXPLICIT",
+      "source": "in rats, subdivisions (e.g., ventral orbital area, lateral orbital area, agranular insula) are characterized by distinct efferent and afferent projections and, presumably as a consequence, there is growing evidence that these subdivisions make distinct functional contributions to behavior (Dalton et al., 2016; Groenewegen, 1988; Hervig et al., 2019; Izquierdo, 2017; Murphy and Deutch, 2018; Ray and Price, 1992).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with multiple citations supporting the anatomical claim.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:14:42.880343Z"
+    },
+    {
+      "id": "7e4482a9-e2e7-403a-afb2-428de39e03bf",
+      "content_id": "50d6c23e-a424-49aa-9f07-1a2402c05fd4",
+      "claim_id": "C22",
+      "claim": "OFC subdivisions make distinct functional contributions to behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "in rats, subdivisions (e.g., ventral orbital area, lateral orbital area, agranular insula) are characterized by distinct efferent and afferent projections and, presumably as a consequence, there is growing evidence that these subdivisions make distinct functional contributions to behavior (Dalton et al., 2016; Groenewegen, 1988; Hervig et al., 2019; Izquierdo, 2017; Murphy and Deutch, 2018; Ray and Price, 1992).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citations and presented as growing evidence.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:14:42.880343Z"
+    },
+    {
+      "id": "37cdb7a4-2121-4ead-9310-6a88ff03272a",
+      "content_id": "50d6c23e-a424-49aa-9f07-1a2402c05fd4",
+      "claim_id": "C23",
+      "claim": "The rat lOFC (including lateral orbital and agranular insular areas) is thought to be homologous to the central-lateral OFC of monkeys.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on connectivity, the rat lOFC (including lateral orbital and agranular insular areas) is thought to be homologous to the central-lateral OFC of monkeys (Heilbronner et al., 2016; Izquierdo, 2017; Stalnaker et al., 2015)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citations supporting the homology claim.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:14:42.880343Z"
+    },
+    {
+      "id": "21a213de-9077-4ffc-9335-278805f19b2d",
+      "content_id": "50d6c23e-a424-49aa-9f07-1a2402c05fd4",
+      "claim_id": "C24",
+      "claim": "Differences have been observed in rodent lOFC and primate central-lateral OFC, for example in neural dynamics following reversal learning.",
+      "claim_type": "EXPLICIT",
+      "source": "although differences have been observed in these areas across species, for example in neural dynamics following reversal learning (Morrison et al., 2011; Schoenbaum et al., 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citations supporting the observation of species differences.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:14:42.880343Z"
+    },
+    {
+      "id": "370ed5cb-27f8-4ba5-b17d-de45e0d16adb",
+      "content_id": "50d6c23e-a424-49aa-9f07-1a2402c05fd4",
+      "claim_id": "C25",
+      "claim": "The rodent lOFC and primate central-lateral OFC have been shown to play critical roles in adapting behavior to dynamic task contingencies, especially when those contingencies are partially observable.",
+      "claim_type": "EXPLICIT",
+      "source": "The rodent lOFC and primate central-lateral OFC have been shown to play critical roles in adapting behavior to dynamic task contingencies, especially when those contingencies are partially observable (Rushworth et al., 2011; Stalnaker et al., 2014; Wallis, 2007; Wilson et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citations supporting the functional role.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:14:42.880343Z"
+    },
+    {
+      "id": "6b8527a1-77b4-475c-b40d-9487cb5f701d",
+      "content_id": "50d6c23e-a424-49aa-9f07-1a2402c05fd4",
+      "claim_id": "C26",
+      "claim": "Lesion experiments have implicated the lOFC in tracking rewards and value, for example in extinction, devaluation, and reversal learning paradigms.",
+      "claim_type": "EXPLICIT",
+      "source": "Lesion experiments have implicated the lOFC in tracking rewards and value, for example in extinction, devaluation, and reversal learning paradigms, in which reward contingencies were explicitly manipulated by the experimenter (Gallagher et al., 1999; Izquierdo et al., 2004; Pickens et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citations supporting the lesion findings.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:14:42.880343Z"
+    },
+    {
+      "id": "c7c84c1a-3f38-40d5-a811-7d5bb9d5fdd2",
+      "content_id": "50d6c23e-a424-49aa-9f07-1a2402c05fd4",
+      "claim_id": "C27",
+      "claim": "A body of work implicates the lOFC in evaluative processes, including comparing current choices to previous outcomes and regret.",
+      "claim_type": "EXPLICIT",
+      "source": "A related body of work implicates the lOFC in evaluative processes, including comparing current choices to previous outcomes (Kennerley et al., 2011), and regret (Steiner and Redish, 2014; Steiner and Redish, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citations supporting the role in evaluative processes.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:14:42.880343Z"
+    },
+    {
+      "id": "e2b4666c-72ad-4076-8382-80d2cf291899",
+      "content_id": "50d6c23e-a424-49aa-9f07-1a2402c05fd4",
+      "claim_id": "C28",
+      "claim": "Most studies demonstrating that OFC promotes behavioral flexibility have used tasks in which trial-by-trial learning improves behavioral performance.",
+      "claim_type": "EXPLICIT",
+      "source": "Most of the studies demonstrating that OFC promotes behavioral flexibility have used tasks in which trial-by-trial learning improves behavioral performance (e.g., reversal learning).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a characterization of prior research.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:14:42.880343Z"
+    },
+    {
+      "id": "25a233ca-9f2d-49ba-9dde-7a89e7d326c8",
+      "content_id": "50d6c23e-a424-49aa-9f07-1a2402c05fd4",
+      "claim_id": "C29",
+      "claim": "OFC's role in behavioral flexibility might drive sequential biases even when they are deleterious.",
+      "claim_type": "EXPLICIT",
+      "source": "We hypothesized that OFC's role in behavioral flexibility might drive sequential biases even when they are deleterious.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as the hypothesis of the study.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:14:42.880343Z"
+    },
+    {
+      "id": "f97789ee-eb3e-4869-a40c-e5e4ac18a6a3",
+      "content_id": "50d6c23e-a424-49aa-9f07-1a2402c05fd4",
+      "claim_id": "C30",
+      "claim": "The task was developed such that sequential biases were maladaptive: trials were independent and reward contingencies were stable over months of training.",
+      "claim_type": "EXPLICIT",
+      "source": "We developed a task in which sequential biases were maladaptive: trials were independent and reward contingencies were stable over months of training (Constantinople et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental design with a citation to prior work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:14:42.880343Z"
+    },
+    {
+      "id": "57d421ea-e977-4978-9290-c425cb8b579b",
+      "content_id": "50d6c23e-a424-49aa-9f07-1a2402c05fd4",
+      "claim_id": "C31",
+      "claim": "Rats exhibited several dissociable biases reflecting trial and reward history.",
+      "claim_type": "EXPLICIT",
+      "source": "Rats exhibited several dissociable biases reflecting trial and reward history",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a finding in the introduction.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:14:42.880343Z"
+    },
+    {
+      "id": "60b5a484-f4e5-469a-b013-639e48bb243d",
+      "content_id": "50d6c23e-a424-49aa-9f07-1a2402c05fd4",
+      "claim_id": "C32",
+      "claim": "lOFC was identified as critical for an increased willingness to take risk following risky wins.",
+      "claim_type": "EXPLICIT",
+      "source": "we identified lOFC as critical for one bias in particular: an increased willingness to take risk following risky wins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a main finding in the introduction.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:14:42.880343Z"
+    },
+    {
+      "id": "3fcb0da7-1d76-4384-8ce2-861fbbc5b88c",
+      "content_id": "50d6c23e-a424-49aa-9f07-1a2402c05fd4",
+      "claim_id": "C33",
+      "claim": "Auditory clicks were presented from left and right speakers, and the click rate (6\u201348 Hz) conveyed the volume of water reward baited at each of the two side ports.",
+      "claim_type": "EXPLICIT",
+      "source": "Auditory clicks were presented from left and right speakers, and the click rate (6\u201348 Hz) conveyed the volume of water reward baited at each of the two side ports.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the task design.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:14:42.880343Z"
+    },
+    {
+      "id": "be39b1d1-f7b2-4802-a794-7b1d40df6a58",
+      "content_id": "50d6c23e-a424-49aa-9f07-1a2402c05fd4",
+      "claim_id": "C34",
+      "claim": "Light flashes were presented from side ports, and the number of flashes (0\u201310) conveyed the probability of receiving water reward at each port.",
+      "claim_type": "EXPLICIT",
+      "source": "Simultaneously, light flashes were presented from side ports, and the number of flashes (0\u201310) conveyed the probability of receiving water reward at each port (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the task design and references Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:14:42.880343Z"
+    },
+    {
+      "id": "7c4a5788-8f7b-4fb1-8249-2cb6e39d11e9",
+      "content_id": "50d6c23e-a424-49aa-9f07-1a2402c05fd4",
+      "claim_id": "C35",
+      "claim": "One port offered a guaranteed or 'safe' reward (p=1), and the other offered a probabilistic or 'risky' reward (p\u22641).",
+      "claim_type": "EXPLICIT",
+      "source": "One port offered a guaranteed or 'safe' reward (p=1), and the other offered a probabilistic or 'risky' reward (p\u22641).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the task structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:14:42.880343Z"
+    },
+    {
+      "id": "d3d9d0a1-d91b-493c-83c4-8940d17add8f",
+      "content_id": "50d6c23e-a424-49aa-9f07-1a2402c05fd4",
+      "claim_id": "C36",
+      "claim": "Rewards were delivered 100 ms after rats entered the side port.",
+      "claim_type": "EXPLICIT",
+      "source": "Rewards were delivered 100 ms after rats entered the side port.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the task timing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:14:42.880343Z"
+    },
+    {
+      "id": "a1233e60-d48a-4944-8d15-4b5c29295272",
+      "content_id": "50d6c23e-a424-49aa-9f07-1a2402c05fd4",
+      "claim_id": "C37",
+      "claim": "The location of the safe and risky ports varied randomly on each trial.",
+      "claim_type": "EXPLICIT",
+      "source": "The location of the safe and risky ports varied randomly on each trial.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the task design.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:14:42.880343Z"
+    },
+    {
+      "id": "55922bed-e603-4971-84e2-b1d50c0dd883",
+      "content_id": "50d6c23e-a424-49aa-9f07-1a2402c05fd4",
+      "claim_id": "C38",
+      "claim": "Four possible water volumes were offered (6, 12, 24, 48 \u03bcL).",
+      "claim_type": "EXPLICIT",
+      "source": "Four possible water volumes were offered (6, 12, 24, 48 \u03bcL)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the task parameters.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:14:42.880343Z"
+    },
+    {
+      "id": "31a228c8-7b38-45d2-99be-d986dc70eceb",
+      "content_id": "50d6c23e-a424-49aa-9f07-1a2402c05fd4",
+      "claim_id": "C39",
+      "claim": "Risky reward probabilities ranged from 0 to 1, in increments of 0.1.",
+      "claim_type": "EXPLICIT",
+      "source": "risky reward probabilities ranged from 0 to 1, in increments of 0.1 (Figure 1B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the task parameters and references Figure 1B,C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:14:42.880343Z"
+    },
+    {
+      "id": "4844fe23-fea0-48ea-8537-afc5189d185b",
+      "content_id": "50d6c23e-a424-49aa-9f07-1a2402c05fd4",
+      "claim_id": "C40",
+      "claim": "The trials were self-paced, and following a choice, rats were free to initiate the next trial within 100\u2013200 ms.",
+      "claim_type": "EXPLICIT",
+      "source": "The trials were self-paced, and following a choice, rats were free to initiate the next trial within 100\u2013200 ms, although they typically took longer (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the task timing and references a supplementary figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:14:42.880343Z"
+    },
+    {
+      "id": "bb500f36-92a2-4d40-8fdb-0582a0e0add6",
+      "content_id": "50d6c23e-a424-49aa-9f07-1a2402c05fd4",
+      "claim_id": "C41",
+      "claim": "If animals terminated the trial prematurely by breaking center fixation, they were penalized with a time-out penalty (1.5\u20138 s, adjusted across rats as needed).",
+      "claim_type": "EXPLICIT",
+      "source": "However, if animals terminated the trial prematurely by breaking center fixation, they were penalized with a time-out penalty (1.5\u20138 s, adjusted across rats as needed).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the task contingencies.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:14:42.880343Z"
+    },
+    {
+      "id": "effce34a-3e75-4b17-bc8a-4c439a6f148f",
+      "content_id": "50d6c23e-a424-49aa-9f07-1a2402c05fd4",
+      "claim_id": "C42",
+      "claim": "Well-trained rats (n = 36 animals) performed, on average, 368 trials per day (\u00b1 28 trials, s.e.m.).",
+      "claim_type": "EXPLICIT",
+      "source": "Well-trained rats (n = 36 animals) performed, on average, 368 trials per day (\u00b1 28 trials, s.e.m.; Figure 1\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This reports behavioral performance data and references a supplementary figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:14:42.880343Z"
+    },
+    {
+      "id": "8fed6f21-791f-4c4a-8f24-de65985cf5d4",
+      "content_id": "50d6c23e-a424-49aa-9f07-1a2402c05fd4",
+      "claim_id": "C43",
+      "claim": "Rats tended to choose the option with the higher expected value.",
+      "claim_type": "EXPLICIT",
+      "source": "They tended to choose the option with the higher expected value",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes behavioral performance.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:14:42.880343Z"
+    },
+    {
+      "id": "1e57e182-2697-454d-805b-3c9bccf00ee0",
+      "content_id": "50d6c23e-a424-49aa-9f07-1a2402c05fd4",
+      "claim_id": "C44",
+      "claim": "On trials when both sides offered certain rewards, rats chose the larger reward.",
+      "claim_type": "EXPLICIT",
+      "source": "on trials when both sides offered certain rewards, rats chose the larger reward",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes behavioral performance.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:14:42.880343Z"
+    },
+    {
+      "id": "e0c95d46-cd87-4404-b1d4-26fef479ffb0",
+      "content_id": "50d6c23e-a424-49aa-9f07-1a2402c05fd4",
+      "claim_id": "C45",
+      "claim": "When one side offered no reward (p=0), rats chose the alternative.",
+      "claim_type": "EXPLICIT",
+      "source": "when one side offered no reward (p=0), they chose the alternative (Figure 1D,E, Figure 1\u2014figure supplement 1C; Constantinople et al., 2019).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes behavioral performance and references figures and a citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:14:42.880343Z"
+    },
+    {
+      "id": "55e062e7-6d0f-4ca6-a27c-e229ee96bc0e",
+      "content_id": "50d6c23e-a424-49aa-9f07-1a2402c05fd4",
+      "claim_id": "C46",
+      "claim": "Rats exhibited sequential biases observed in primates: if they chose the risky option and were rewarded on the previous trial, they were more likely to gamble and choose the risky side again.",
+      "claim_type": "EXPLICIT",
+      "source": "Rats also exhibited sequential biases observed in primates: if they chose the risky option and were rewarded on the previous trial, they were more likely to gamble and choose the risky side again (Figure 1F; Blanchard et al., 2014; Hayden et al., 2008; Neiman and Loewenstein, 2011).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes behavioral findings with references to figures and citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:14:42.880343Z"
+    },
+    {
+      "id": "64af9810-7151-4b36-abe0-e03478688383",
+      "content_id": "50d6c23e-a424-49aa-9f07-1a2402c05fd4",
+      "claim_id": "C47",
+      "claim": "The change in probability of choosing the risky side following a risky win was significantly different from zero (p=1.29e-13, paired t-test across rats).",
+      "claim_type": "EXPLICIT",
+      "source": "The change in probability of choosing the risky side following a risky win was significantly different from zero (p=1.29e-13, paired t-test across rats).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This reports a statistical test result.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:14:42.880343Z"
+    },
+    {
+      "id": "8d9bbd58-6348-459b-981a-9f2b1910d66f",
+      "content_id": "50d6c23e-a424-49aa-9f07-1a2402c05fd4",
+      "claim_id": "C48",
+      "claim": "The risky win-stay bias was not due to rats 'un-learning' the meaning of the flashes.",
+      "claim_type": "EXPLICIT",
+      "source": "This bias was not due to rats 'un-learning' the meaning of the flashes: there was no change in performance on trials where both sides offered the same reward volume, in which case the better option is the guaranteed reward, indicated by the flashes (p=0.397, paired t-test across rats).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a control analysis with statistical test result.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:14:42.880343Z"
+    },
+    {
+      "id": "8eb35116-4f75-4aa5-9183-cacc5c83fb53",
+      "content_id": "50d6c23e-a424-49aa-9f07-1a2402c05fd4",
+      "claim_id": "C49",
+      "claim": "The magnitude of the risky win-stay bias depended on the risky reward probability.",
+      "claim_type": "EXPLICIT",
+      "source": "The magnitude of the risky win-stay bias depended on the risky reward probability (Figure 1G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes a behavioral finding and references Figure 1G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:14:42.880343Z"
+    },
+    {
+      "id": "2fddfd53-c963-41a6-8ac1-889015f94d73",
+      "content_id": "50d6c23e-a424-49aa-9f07-1a2402c05fd4",
+      "claim_id": "C50",
+      "claim": "In this task, outcomes are independent on each trial, by design.",
+      "claim_type": "EXPLICIT",
+      "source": "We emphasize that in this task, the belief that a risky 'win' increases the probability of future wins is a fallacy: outcomes are independent on each trial, by design.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the task design.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:14:42.880343Z"
+    },
+    {
+      "id": "1be13b13-2d8e-44a4-87ae-a9f1f7fbd7b6",
+      "content_id": "50d6c23e-a424-49aa-9f07-1a2402c05fd4",
+      "claim_id": "C51",
+      "claim": "The risky win-stay bias did not reflect biased estimates of conditional probabilities, often observed in finite sequential data.",
+      "claim_type": "EXPLICIT",
+      "source": "This result did not reflect biased estimates of conditional probabilities, often observed in finite sequential data (Figure 1\u2014figure supplement 1D,E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a control analysis referencing supplementary figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:14:42.880343Z"
+    },
+    {
+      "id": "5f0810c5-85be-45f8-be58-0c600376c415",
+      "content_id": "50d6c23e-a424-49aa-9f07-1a2402c05fd4",
+      "claim_id": "C52",
+      "claim": "There was no change in rats' willingness to choose the gamble following a risky loss.",
+      "claim_type": "EXPLICIT",
+      "source": "There was no change in rats' willingness to choose the gamble following a risky loss, indicating that rats were not simply going through phases of preference for risky or safe options (p=0.79 paired t-test; Figure 1\u2014figure supplement 1F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This reports a statistical test result and references a supplementary figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:14:42.880343Z"
+    },
+    {
+      "id": "87d247bf-329d-4e4e-b3fc-1930531f998b",
+      "content_id": "50d6c23e-a424-49aa-9f07-1a2402c05fd4",
+      "claim_id": "C53",
+      "claim": "There was no systematic change in rats' risk preferences over the course of the training session.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, there was no systematic change in rats' risk preferences over the course of the training session",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a control analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:14:42.880343Z"
+    },
+    {
+      "id": "6800bb4c-8aea-4fe4-b203-0595b707ec3f",
+      "content_id": "50d6c23e-a424-49aa-9f07-1a2402c05fd4",
+      "claim_id": "C54",
+      "claim": "There was no significant change in the probability of choosing the safe option on trials where guaranteed and risky rewards had the same expected value, comparing the first and second half of trials in each session (p=0.15, paired t-test).",
+      "claim_type": "EXPLICIT",
+      "source": "There was no significant change in the probability of choosing the safe option on these trials, comparing the first and second half of trials in each session (p=0.15, paired t-test), again indicating that the risky win-stay bias was not due to slow fluctuations in rats' risk preferences.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This reports a statistical test result.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:14:42.880343Z"
+    },
+    {
+      "id": "15123182-d049-4bcf-aeea-aeeb8db89c1e",
+      "content_id": "50d6c23e-a424-49aa-9f07-1a2402c05fd4",
+      "claim_id": "C55",
+      "claim": "The risky win-stay bias was independent of a spatial win-stay/lose-switch bias for the left or right ports.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, because the risky and safe ports switch on each trial, this risky win-stay bias was independent of a spatial win-stay/lose-switch bias for the left or right ports (Figure 1H), or repetitive behavioral patterns such as perseveration (Miller et al., 2017).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes a relationship between biases and references a figure and citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:14:42.880343Z"
+    },
+    {
+      "id": "d84ea464-4e0b-4c21-84f7-5c0c8e90738d",
+      "content_id": "50d6c23e-a424-49aa-9f07-1a2402c05fd4",
+      "claim_id": "C56",
+      "claim": "The magnitude of rats' spatial win-stay/lose-switch biases was much larger than the magnitude of their risky win-stay biases.",
+      "claim_type": "EXPLICIT",
+      "source": "It is notable, however, that the magnitude of rats' spatial win-stay/lose-switch biases was much larger than the magnitude of their risky win-stay biases (Figure 1F,H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a comparison of behavioral effects referencing figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:14:42.880343Z"
+    },
+    {
+      "id": "5dacf125-9249-43ee-9f12-a64dc52a193d",
+      "content_id": "50d6c23e-a424-49aa-9f07-1a2402c05fd4",
+      "claim_id": "C57",
+      "claim": "Many lOFC neurons exhibited transient responses at trial initiation, the magnitude of which reflected whether the previous trial was rewarded.",
+      "claim_type": "EXPLICIT",
+      "source": "Many lOFC neurons exhibited transient responses at trial initiation, the magnitude of which reflected whether the previous trial was rewarded (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes neural recording findings and references Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:14:42.880343Z"
+    },
+    {
+      "id": "093b0566-4f3e-44ec-9112-d624033d0d22",
+      "content_id": "50d6c23e-a424-49aa-9f07-1a2402c05fd4",
+      "claim_id": "C58",
+      "claim": "512 of 1459 lOFC units had significantly different spike counts on trials following rewarded and unrewarded choices (p<0.05, unpaired t-test).",
+      "claim_type": "EXPLICIT",
+      "source": "analyzing cells with significantly different spike counts on these trials (n = 512 of 1459 units; p<0.05, unpaired t-test).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This reports a statistical analysis of neural data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:14:42.880343Z"
+    },
+    {
+      "id": "1f1f4bb9-6b16-4633-bf04-4ebe504bf5cf",
+      "content_id": "50d6c23e-a424-49aa-9f07-1a2402c05fd4",
+      "claim_id": "C59",
+      "claim": "lOFC neurons reflected reward history most strongly at trial initiation, when the animal has no information yet about the prospects on the current trial.",
+      "claim_type": "EXPLICIT",
+      "source": "lOFC neurons reflected reward history most strongly at trial initiation, when the animal has no information yet about the prospects on the current trial (Figure 2B; Figure 2\u2014figure supplement 1; Nogueira et al., 2017).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes neural findings and references figures and a citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:14:42.880343Z"
+    },
+    {
+      "id": "2454dd1a-6b61-46f9-9664-6f6c865531bf",
+      "content_id": "50d6c23e-a424-49aa-9f07-1a2402c05fd4",
+      "claim_id": "C60",
+      "claim": "A significantly greater fraction of neurons exhibited higher firing rates following unrewarded trials, compared to rewarded trials, consistent with adaptation effects.",
+      "claim_type": "EXPLICIT",
+      "source": "A significantly greater fraction of neurons exhibited higher firing rates following unrewarded trials, compared to rewarded trials, consistent with adaptation effects (Figure 2C; Conen and Padoa-Schioppa, 2019; Kennerley et al., 2011; Padoa-Schioppa, 2009; Saez et al., 2017; Zimmermann et al., 2018).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes neural findings and references a figure and multiple citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:14:42.880343Z"
+    },
+    {
+      "id": "88e025e5-2392-4d04-a0ce-ab53149db65d",
+      "content_id": "50d6c23e-a424-49aa-9f07-1a2402c05fd4",
+      "claim_id": "C61",
+      "claim": "Trial factors were significantly modulated by reward history two trials in the past, on average.",
+      "claim_type": "EXPLICIT",
+      "source": "Trial factors were significantly modulated by reward history two trials in the past, on average (Figure 2F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes results from TCA analysis and references Figure 2F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:14:42.880343Z"
+    },
+    {
+      "id": "7892a3a9-568b-46e4-bc71-428a94bad6c1",
+      "content_id": "50d6c23e-a424-49aa-9f07-1a2402c05fd4",
+      "claim_id": "C62",
+      "claim": "On 43% of recording sessions (45/105 sessions), there was a significant correlation between rats' reward history and the trial factors.",
+      "claim_type": "EXPLICIT",
+      "source": "On 43% of recording sessions (45/105 sessions), there was a significant correlation between rats' reward history and the trial factors, and these correlations were typically negative (Figure 2G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This reports statistical analysis of neural data and references Figure 2G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:14:42.880343Z"
+    },
+    {
+      "id": "02c8e2c8-08c6-44e8-9790-67f265ed12ef",
+      "content_id": "50d6c23e-a424-49aa-9f07-1a2402c05fd4",
+      "claim_id": "C63",
+      "claim": "A negative correlation between reward history and trial factors suggests that when rats received reward, neural activity in lOFC generally decreased on the subsequent trial, consistent with several reports of reward adaptation in OFC.",
+      "claim_type": "EXPLICIT",
+      "source": "a negative correlation suggests that when rats received reward, neural activity in lOFC generally decreased on the subsequent trial, consistent with several reports of reward adaptation in OFC (Conen and Padoa-Schioppa, 2019; Kennerley et al., 2011; Padoa-Schioppa, 2009; Saez et al., 2017; Zimmermann et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of neural data with citations supporting the interpretation.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:14:42.880343Z"
+    },
+    {
+      "id": "f91c73ae-c187-428c-bd08-97a30ba0298e",
+      "content_id": "50d6c23e-a424-49aa-9f07-1a2402c05fd4",
+      "claim_id": "C64",
+      "claim": "There was no systematic relationship between the correlation of rats' reward history and the trial factors, and the number of simultaneously recorded neurons in each session.",
+      "claim_type": "EXPLICIT",
+      "source": "We note that there was no systematic relationship between the correlation of rats' reward history and the trial factors, and the number of simultaneously recorded neurons in each session (Figure 2\u2014figure supplement 2H,I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This reports a control analysis and references supplementary figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:14:42.880343Z"
+    },
+    {
+      "id": "8d2765c8-9000-48f4-bab8-0bd15f1fa505",
+      "content_id": "50d6c23e-a424-49aa-9f07-1a2402c05fd4",
+      "claim_id": "C65",
+      "claim": "Photoinhibition during the cue period did not affect spatial win-stay or lose-switch biases.",
+      "claim_type": "EXPLICIT",
+      "source": "Optogenetic inhibition during the cue period, however, did not affect spatial win-stay or lose-switch biases (Figure 3A\u2013D; Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This reports optogenetic manipulation results and references figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:14:42.880343Z"
+    },
+    {
+      "id": "04d1c52f-7e87-4f14-ae4f-d17379717d1d",
+      "content_id": "50d6c23e-a424-49aa-9f07-1a2402c05fd4",
+      "claim_id": "C66",
+      "claim": "Photoinhibition during the cue period did not affect the risky win-stay bias, in wild-type CaMKII\u03b1-eNpHR3.0 or Pvalb-iCre-ChR2 rats.",
+      "claim_type": "EXPLICIT",
+      "source": "Photoinhibition also did not affect the risky win-stay bias, in wild-type CaMKII\u03b1-eNpHR3.0 or Pvalb-iCre-ChR2 rats (Figure 3E; p=0.005, one-way ANOVA comparing safe choices following safe or risky rewards, pooling data across all 13 optogenetic rats).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This reports optogenetic manipulation results with statistical test and references a figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:14:42.880343Z"
+    },
+    {
+      "id": "b400fb9e-fa39-4f8f-bde3-e054f43166cf",
+      "content_id": "50d6c23e-a424-49aa-9f07-1a2402c05fd4",
+      "claim_id": "C67",
+      "claim": "Activity at the time of the choice report, when rats exited the center poke, often reflected whether rats chose the safe or risky prospect.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to during the cue period, activity at the time of the choice report, when rats exited the center poke, often reflected whether rats chose the safe or risky prospect (Figure 4A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes neural findings and references figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:14:42.880343Z"
+    },
+    {
+      "id": "b565f23a-e132-41c3-841d-580ccb2512e5",
+      "content_id": "50d6c23e-a424-49aa-9f07-1a2402c05fd4",
+      "claim_id": "C68",
+      "claim": "A subset of lOFC neurons (n = 128 units) exhibited significantly different spike counts on rewarded trials when rats chose the safe compared to the risky option (unpaired t-test).",
+      "claim_type": "EXPLICIT",
+      "source": "A subset of lOFC neurons exhibited significantly different spike counts on rewarded trials when rats chose the safe compared to the risky option (Figure 4B\u2013E; n = 128 units, unpaired t-test).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This reports statistical analysis of neural data and references figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:14:42.880343Z"
+    },
+    {
+      "id": "0a034de2-8ccd-43ad-b65b-3b7c758af2fd",
+      "content_id": "50d6c23e-a424-49aa-9f07-1a2402c05fd4",
+      "claim_id": "C69",
+      "claim": "For neurons encoding safe/risky choice, discriminability peaked shortly after rats left the center poke.",
+      "claim_type": "EXPLICIT",
+      "source": "For these neurons, discriminability peaked shortly after rats left the center poke (Figure 4C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes neural findings and references figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:14:42.880343Z"
+    },
+    {
+      "id": "6be49d73-437e-4de5-b3e4-0f6d0d19585b",
+      "content_id": "50d6c23e-a424-49aa-9f07-1a2402c05fd4",
+      "claim_id": "C70",
+      "claim": "Prominent side-selectivity (n = 628 units) was observed during the choice reporting period.",
+      "claim_type": "EXPLICIT",
+      "source": "We also observed prominent side-selectivity (n = 628 units) and strong encoding of reward receipt (n = 459) during the choice reporting period (Figure 4F\u2013H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This reports neural findings and references figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:14:42.880343Z"
+    },
+    {
+      "id": "629aa4e2-97e2-40e2-9358-05a7b08f650a",
+      "content_id": "50d6c23e-a424-49aa-9f07-1a2402c05fd4",
+      "claim_id": "C71",
+      "claim": "Strong encoding of reward receipt (n = 459 units) was observed during the choice reporting period.",
+      "claim_type": "EXPLICIT",
+      "source": "We also observed prominent side-selectivity (n = 628 units) and strong encoding of reward receipt (n = 459) during the choice reporting period (Figure 4F\u2013H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This reports neural findings and references figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:14:42.880343Z"
+    },
+    {
+      "id": "cff5e117-32c9-4ce7-8d10-d5b3b0d8602b",
+      "content_id": "50d6c23e-a424-49aa-9f07-1a2402c05fd4",
+      "claim_id": "C72",
+      "claim": "Of the neurons whose activity reflected safe/risky choice, there was no significant side bias.",
+      "claim_type": "EXPLICIT",
+      "source": "Of the neurons whose activity reflected safe/risky choice, there was no significant side bias (Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This reports a control analysis and references a supplementary figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:14:42.880343Z"
+    },
+    {
+      "id": "9424eb7c-85dc-41c4-86d1-d5eb7baac0af",
+      "content_id": "50d6c23e-a424-49aa-9f07-1a2402c05fd4",
+      "claim_id": "C73",
+      "claim": "There was a significant reduction in spatial biases following photoinhibition during the choice reporting period, but sham rats also exhibited reduced win-stay/lose-switch biases.",
+      "claim_type": "EXPLICIT",
+      "source": "While there was a significant reduction in spatial biases, sham rats also exhibited reduced win-stay/lose-switch biases (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This reports optogenetic manipulation results and references a figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:14:42.880343Z"
+    },
+    {
+      "id": "891ba82f-ad41-46c8-9dfc-24d70bc1402c",
+      "content_id": "50d6c23e-a424-49aa-9f07-1a2402c05fd4",
+      "claim_id": "C74",
+      "claim": "Photoinhibition during the choice reporting period imposed a minimum inter-trial interval (ITI) of 4 s, which was longer than the average ITI.",
+      "claim_type": "EXPLICIT",
+      "source": "Photoinhibition during the choice reporting period imposed a minimum inter-trial interval (ITI) of 4 s (for laser illumination), which was longer than the average ITI (Figure 1\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes a methodological detail and references a supplementary figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:14:42.880343Z"
+    },
+    {
+      "id": "445a8ed0-0911-4208-a189-b6d3b303f900",
+      "content_id": "50d6c23e-a424-49aa-9f07-1a2402c05fd4",
+      "claim_id": "C75",
+      "claim": "Comparing photoinhibition trials to control trials with a minimum ITI of 4 s eliminated the reduction in spatial win-stay/lose-switch biases in CaMKII\u03b1-eNpHR3.0, Pvalb-iCre-ChR2, and sham rats.",
+      "claim_type": "EXPLICIT",
+      "source": "Comparing the photoinhibition trials to control trials with a minimum ITI of 4 s eliminated the reduction in spatial win-stay/lose-switch biases in CaMKII\u03b1-eNpHR3.0, Pvalb-iCre-ChR2, and sham rats (data not shown).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This reports a control analysis result.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:14:42.880343Z"
+    },
+    {
+      "id": "e4985b2b-7846-4c50-9335-d99d0c3022c4",
+      "content_id": "50d6c23e-a424-49aa-9f07-1a2402c05fd4",
+      "claim_id": "C76",
+      "claim": "Optogenetic inhibition of lOFC during the choice reporting period eliminated the risky win-stay bias on the subsequent trial in rats expressing light-sensitive opsins.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, optogenetic inhibition of lOFC during the choice reporting period eliminated the risky win-stay bias on the subsequent trial in rats expressing light-sensitive opsins (Figure 5A,C; p=0.667 CaMKII\u03b1-eNpHR3.0; p=0.778 Pvalb-iCre-ChR2; one-way ANOVA comparing safe choices following safe or risky rewards, pooling data across rats).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This reports optogenetic manipulation results with statistical tests and references figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:14:42.880343Z"
+    },
+    {
+      "id": "c85fcfbf-80b6-4d3c-a981-3b00e8a08d3f",
+      "content_id": "50d6c23e-a424-49aa-9f07-1a2402c05fd4",
+      "claim_id": "C77",
+      "claim": "Laser illumination did not disrupt the risky win-stay bias in sham rats not expressing light-activated opsins.",
+      "claim_type": "EXPLICIT",
+      "source": "Laser illumination did not disrupt the risky win-stay bias in sham rats not expressing light-activated opsins (Figure 5C; p=0.009, one-way ANOVA comparing safe choices following safe or risky rewards, n = 3 rats).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This reports a control experiment result with statistical test and references a figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:14:42.880343Z"
+    },
+    {
+      "id": "29eb554a-4214-4bcb-b311-226a0462cb2e",
+      "content_id": "50d6c23e-a424-49aa-9f07-1a2402c05fd4",
+      "claim_id": "C78",
+      "claim": "For the majority of rats (7/8 CaMKII\u03b1-eNpHR3.0 rats and 4/5 Pvalb-iCre-ChR2 rats), there was no significant effect on choice latencies compared to control trials.",
+      "claim_type": "EXPLICIT",
+      "source": "For the majority of rats (7/8 CaMKII\u03b1-eNpHR3.0 rats and 4/5 Pvalb-iCre-ChR2 rats), there was no significant effect on choice latencies compared to control trials (Wilcoxon rank-sum test, Bonferroni correction for multiple comparisons).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This reports a control analysis with statistical test.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:14:42.880343Z"
+    },
+    {
+      "id": "9d43948c-76fd-421f-a52d-4e4f4e21a3a3",
+      "content_id": "50d6c23e-a424-49aa-9f07-1a2402c05fd4",
+      "claim_id": "C79",
+      "claim": "The behavioral effect occurred on trials subsequent to the optogenetic perturbations, making it unlikely that they were due to off-target illumination of motor cortex, including overlying M2.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover the behavioral effect occurred on trials subsequent to the optogenetic perturbations (Figure 5A), making it unlikely that they were due to off-target illumination of motor cortex, including overlying M2.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference from the timing of effects, referencing a figure.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:14:42.880343Z"
+    },
+    {
+      "id": "ec00b57d-8139-44d3-a900-c3be1fe0b30c",
+      "content_id": "50d6c23e-a424-49aa-9f07-1a2402c05fd4",
+      "claim_id": "C80",
+      "claim": "Photoinhibition during the choice report exclusively reduced the risky win-stay bias parameter, but not others.",
+      "claim_type": "EXPLICIT",
+      "source": "Photoinhibition during the choice report exclusively reduced the risky win-stay bias parameter, but not others (Figure 5\u2014figure supplement 1; p=0.0063, one-way ANOVA with Bonferroni correction; Materials and methods).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This reports logistic regression analysis results with statistical test and references a supplementary figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:14:42.880343Z"
+    },
+    {
+      "id": "b33301de-eb22-4b3b-944a-906e760afe72",
+      "content_id": "50d6c23e-a424-49aa-9f07-1a2402c05fd4",
+      "claim_id": "C81",
+      "claim": "The reduction of the risky win-stay bias did not reflect changes in the baseline probability of choosing safe.",
+      "claim_type": "EXPLICIT",
+      "source": "The reduction of the risky win-stay bias did not reflect changes in the baseline probability of choosing safe (Figure 5\u2014figure supplement 1)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This reports a control analysis and references a supplementary figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:14:42.880343Z"
+    },
+    {
+      "id": "88858209-a0f9-4cfc-a4e0-32c3a4a33667",
+      "content_id": "50d6c23e-a424-49aa-9f07-1a2402c05fd4",
+      "claim_id": "C82",
+      "claim": "The reduction of the risky win-stay bias was observed on a rat-by-rat basis (pooling CaMKII\u03b1-eNpHR3.0 and Pvalb-iCre-ChR2 rats, p=0.015; paired t-test across rats).",
+      "claim_type": "EXPLICIT",
+      "source": "and was observed on a rat-by-rat basis (pooling CaMKII\u03b1-eNpHR3.0 and Pvalb-iCre-ChR2 rats, p=0.015; paired t-test across rats).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This reports statistical analysis of the optogenetic effect.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:14:42.880343Z"
+    },
+    {
+      "id": "fd09dc0c-d003-4579-a337-6a4ae8df2796",
+      "content_id": "50d6c23e-a424-49aa-9f07-1a2402c05fd4",
+      "claim_id": "C83",
+      "claim": "Photoinhibition of lOFC specifically eliminated risky biases and not spatial biases.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, photoinhibition of lOFC specifically eliminated risky biases and not spatial biases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the optogenetic manipulation results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:14:42.880343Z"
+    },
+    {
+      "id": "d788815b-01e0-491d-b67b-783a8feec734",
+      "content_id": "50d6c23e-a424-49aa-9f07-1a2402c05fd4",
+      "claim_id": "C84",
+      "claim": "Risky biases were not sensitive to ITI duration, whereas spatial biases decreased with ITI duration, further suggesting that these sequential dependencies are dissociable.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, risky biases were not sensitive to ITI duration (Figure 5C, sham), whereas spatial biases decreased with ITI duration (Figure 5B, sham), further suggesting that these sequential dependencies are dissociable.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a comparison of effects referencing figures, supporting the dissociability claim.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:14:42.880343Z"
+    },
+    {
+      "id": "4e665ae2-bb6f-46aa-99f9-ef9f8ed742fb",
+      "content_id": "50d6c23e-a424-49aa-9f07-1a2402c05fd4",
+      "claim_id": "C85",
+      "claim": "OFC has been implicated in myriad aspects of value-based decision-making, including representing the value of offered and chosen goods, expected outcomes, confidence, regret, and credit assignment.",
+      "claim_type": "EXPLICIT",
+      "source": "Across species, OFC has been implicated in myriad aspects of value-based decision-making, including representing the value of offered and chosen goods, expected outcomes, confidence, regret, and credit assignment (Akaishi et al., 2016; Kepecs et al., 2008; Padoa-Schioppa, 2011; Rudebeck and Murray, 2014; Schoenbaum et al., 1998; Steiner and Redish, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion with citations supporting the claim.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:14:42.880343Z"
+    },
+    {
+      "id": "76ccbd6d-8617-4b30-9d7b-9953a7d5c2a3",
+      "content_id": "50d6c23e-a424-49aa-9f07-1a2402c05fd4",
+      "claim_id": "C86",
+      "claim": "Evidence from studies using reversal learning paradigms or Pavlovian instrumental transfer suggests that the OFC is critical for behavioral flexibility.",
+      "claim_type": "EXPLICIT",
+      "source": "Evidence from studies using reversal learning paradigms or Pavlovian instrumental transfer suggests that the OFC is critical for behavioral flexibility (Izquierdo et al., 2004; Schoenbaum et al., 2003)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion with citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:14:42.880343Z"
+    },
+    {
+      "id": "77d8d613-1888-4fb9-9d31-e3b9d7bd7133",
+      "content_id": "50d6c23e-a424-49aa-9f07-1a2402c05fd4",
+      "claim_id": "C87",
+      "claim": "Recent work indicates that value representations in lOFC may drive learning rather than action selection or choice.",
+      "claim_type": "EXPLICIT",
+      "source": "recent work indicates that value representations in lOFC may drive learning rather than action selection or choice (Miller et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion with a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:14:42.880343Z"
+    },
+    {
+      "id": "02c3e7d2-be21-47db-bf49-101dc3c0e6cf",
+      "content_id": "50d6c23e-a424-49aa-9f07-1a2402c05fd4",
+      "claim_id": "C88",
+      "claim": "A recent study showed that rats with lOFC lesions exhibited disrupted sensitivity to previous trial outcomes, especially when those outcomes were unexpected, analogous to probabilistic rewards in the current task.",
+      "claim_type": "EXPLICIT",
+      "source": "Relatedly, a recent study showed that rats with lOFC lesions exhibited disrupted sensitivity to previous trial outcomes, especially when those outcomes were unexpected, analogous to probabilistic rewards in our task (Stolyarova and Izquierdo, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion with a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:14:42.880343Z"
+    },
+    {
+      "id": "cd3239fb-1bd0-4590-8a03-c56b14ceb916",
+      "content_id": "50d6c23e-a424-49aa-9f07-1a2402c05fd4",
+      "claim_id": "C89",
+      "claim": "The data are consistent with a role for lOFC in updating rats' risk attitudes or their beliefs about the world.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data are consistent with a role for lOFC in updating rats' risk attitudes or their beliefs about the world (Jones et al., 2012; McDannald et al., 2011; Miller et al., 2017; Wilson et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the results with citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:14:42.880343Z"
+    },
+    {
+      "id": "90503119-dcaa-4c54-b0b3-40608eb6fd72",
+      "content_id": "50d6c23e-a424-49aa-9f07-1a2402c05fd4",
+      "claim_id": "C90",
+      "claim": "The temporal response profiles observed are generally consistent with reports that OFC neurons fire transiently when an animal initiates reward-seeking behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "The temporal response profiles we observed are generally consistent with reports that OFC neurons fire transiently when an animal initiates reward-seeking behavior, here, trial initiation (Moorman and Aston-Jones, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison to prior work with a citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:14:42.880343Z"
+    },
+    {
+      "id": "5156bcde-60c1-4b02-9263-ec9b643a7973",
+      "content_id": "50d6c23e-a424-49aa-9f07-1a2402c05fd4",
+      "claim_id": "C91",
+      "claim": "The dynamics observed are distinct from relative value coding observed in primate OFC, in which neurons encode the value of rewards on the current trial relative to rewards on the previous trial.",
+      "claim_type": "EXPLICIT",
+      "source": "These dynamics are therefore distinct from relative value coding observed in primate OFC, in which neurons encode the value of rewards on the current trial relative to rewards on the previous trial (Kennerley et al., 2011; Padoa-Schioppa, 2009; Saez et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison to prior work with citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:14:42.880343Z"
+    },
+    {
+      "id": "9cd01b5d-2fbf-4d3b-b3d0-43849fac29ba",
+      "content_id": "50d6c23e-a424-49aa-9f07-1a2402c05fd4",
+      "claim_id": "C92",
+      "claim": "A hallmark of primate OFC is that neurons do not encode spatial location.",
+      "claim_type": "EXPLICIT",
+      "source": "A hallmark of primate OFC is that neurons do not encode spatial location (Grattan and Glimcher, 2014; Padoa-Schioppa and Cai, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citations supporting the claim about primate OFC.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:14:42.880343Z"
+    },
+    {
+      "id": "352d5eba-3571-4126-9a6b-5d8b82fa64a8",
+      "content_id": "50d6c23e-a424-49aa-9f07-1a2402c05fd4",
+      "claim_id": "C93",
+      "claim": "The discrepancy in side-selectivity between rodent and primate OFC could reflect a species difference.",
+      "claim_type": "EXPLICIT",
+      "source": "This discrepancy could reflect a species difference (Feierstein et al., 2006; Kuwabara and Holy, 2019; Roesch et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about the cause of observed differences, with citations.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:14:42.880343Z"
+    },
+    {
+      "id": "31c345d7-43bf-4abb-915c-b04dc6b0ebcf",
+      "content_id": "50d6c23e-a424-49aa-9f07-1a2402c05fd4",
+      "claim_id": "C94",
+      "claim": "Side-selectivity in rodent OFC could reflect encoding of the left and right prospects or 'goods' on each trial.",
+      "claim_type": "EXPLICIT",
+      "source": "Alternatively, side-selectivity could reflect encoding of the left and right prospects or 'goods' on each trial (Padoa-Schioppa, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an alternative interpretation with a citation.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:14:42.880343Z"
+    },
+    {
+      "id": "d600ba6a-2874-46c7-bc4d-9eca83ab85d8",
+      "content_id": "50d6c23e-a424-49aa-9f07-1a2402c05fd4",
+      "claim_id": "C95",
+      "claim": "Evidence from primates suggests that some OFC neurons may be selective for particular stimulus identities used to indicate reward attributes.",
+      "claim_type": "EXPLICIT",
+      "source": "Evidence from primates suggests that some OFC neurons may be selective for particular stimulus identities used to indicate reward attributes (Hunt et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:14:42.880343Z"
+    },
+    {
+      "id": "44386af1-5511-495d-9f89-e88142540c54",
+      "content_id": "50d6c23e-a424-49aa-9f07-1a2402c05fd4",
+      "claim_id": "C96",
+      "claim": "Perturbation effects were uncoupled from task variables that seemed to be encoded most strongly, both during the cue period (reward history) and during the choice reporting period (left/right choice).",
+      "claim_type": "EXPLICIT",
+      "source": "We found that perturbation effects were uncoupled from task variables that seemed to be encoded most strongly, quantified by either fraction of neurons or discriminability, both during the cue period (reward history) and during the choice reporting period (left/right choice).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of findings from the optogenetic and recording experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:14:42.880343Z"
+    },
+    {
+      "id": "bcd544ee-507a-446e-bc74-c34a96409bdc",
+      "content_id": "50d6c23e-a424-49aa-9f07-1a2402c05fd4",
+      "claim_id": "C97",
+      "claim": "Representations of reward history and choice may be distributed broadly enough that other brain areas can compensate for local perturbations.",
+      "claim_type": "EXPLICIT",
+      "source": "It is possible that representations of reward history and choice may be distributed broadly enough that other brain areas can compensate for local perturbations",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about why certain representations were not affected by perturbations.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:14:42.880343Z"
+    },
+    {
+      "id": "5b80870e-5873-4f12-9b7b-6f4db42e1fd1",
+      "content_id": "50d6c23e-a424-49aa-9f07-1a2402c05fd4",
+      "claim_id": "C98",
+      "claim": "Representations used to update risk preferences may be more narrowly localized within or read out from OFC.",
+      "claim_type": "EXPLICIT",
+      "source": "whereas representations used to update risk preferences may be more narrowly localized within or read out from OFC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about the neural basis of the observed effects.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:14:42.880343Z"
+    },
+    {
+      "id": "33b108fe-0b4d-48b1-a88e-0f32bd5504a3",
+      "content_id": "50d6c23e-a424-49aa-9f07-1a2402c05fd4",
+      "claim_id": "C99",
+      "claim": "The relatively small fraction of neurons (~9%) that reflect whether choices are risky or safe may be behaviorally relevant, perhaps occupying a privileged position in the circuit and/or projecting to a common target.",
+      "claim_type": "EXPLICIT",
+      "source": "The relatively small fraction of neurons (~9%) that reflect whether choices are risky or safe may be behaviorally relevant, perhaps occupying a privileged position in the circuit and/or projecting to a common target.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about which neurons might be responsible for the observed effects.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:14:42.880343Z"
+    },
+    {
+      "id": "4d66fe17-6402-432f-8697-3996a75910aa",
+      "content_id": "50d6c23e-a424-49aa-9f07-1a2402c05fd4",
+      "claim_id": "C100",
+      "claim": "The more substantial fraction of neurons representing whether animals received reward (~31%) may be involved in updating risk preferences, in which case their activity is read out to specifically update abstract task-specific (here, risky), but not spatial, biases.",
+      "claim_type": "EXPLICIT",
+      "source": "Alternatively, the more substantial fraction of neurons representing whether animals received reward (~31%) may be involved in updating risk preferences, in which case their activity is read out to specifically update abstract task-specific (here, risky), but not spatial, biases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an alternative speculation about which neurons might be responsible.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:14:42.880343Z"
+    },
+    {
+      "id": "cceaf9e7-5ee2-410a-a71d-e19d1a1c4369",
+      "content_id": "50d6c23e-a424-49aa-9f07-1a2402c05fd4",
+      "claim_id": "C101",
+      "claim": "In a Pavlovian conditioning paradigm in mice, optogenetic inactivation of mOFC neurons projecting to the ventral tegmental area (VTA) during the reward period, but not the cue period, disrupted trial-by-trial learning.",
+      "claim_type": "EXPLICIT",
+      "source": "In a Pavlovian conditioning paradigm, in which a tone probabilistically predicted a sucrose reward, mice exhibited trial-by-trial updating of their reward expectation, revealed by their anticipatory licking, based on reward history. Optogenetic inactivation of mOFC neurons projecting to the ventral tegmental area (VTA) during the reward period, but not the cue period, disrupted this trial-by-trial learning (Namboodiri et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes findings from another study with a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:14:42.880343Z"
+    },
+    {
+      "id": "ca862ca0-fc05-4e58-8f9b-ed492b8f4a3e",
+      "content_id": "50d6c23e-a424-49aa-9f07-1a2402c05fd4",
+      "claim_id": "C102",
+      "claim": "There is increasing evidence for functional differences between medial and lateral OFC in rodents.",
+      "claim_type": "EXPLICIT",
+      "source": "While there is increasing evidence for functional differences between medial and lateral OFC in rodents",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:14:42.880343Z"
+    },
+    {
+      "id": "15b00ae6-b6fe-4181-8d9b-3bd03613fea6",
+      "content_id": "50d6c23e-a424-49aa-9f07-1a2402c05fd4",
+      "claim_id": "C103",
+      "claim": "The results from the mOFC study are consistent with the present study, and suggest that the risky win-stay bias may derive from lOFC neurons projecting to the VTA.",
+      "claim_type": "EXPLICIT",
+      "source": "these results are consistent with the present study, and suggest that the risky win-stay bias we observed may derive from lOFC neurons projecting to the VTA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference connecting the current findings to prior work.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:14:42.880343Z"
+    },
+    {
+      "id": "77cb50dc-7fa2-4a4d-8e05-5a89ece69091",
+      "content_id": "50d6c23e-a424-49aa-9f07-1a2402c05fd4",
+      "claim_id": "C104",
+      "claim": "The risky win-stay bias may reflect evolutionary pressures in dynamic foraging environments, in which sequential successful outcomes are often not independent but reflect 'clumped' resources.",
+      "claim_type": "EXPLICIT",
+      "source": "The risky win-stay bias may reflect evolutionary pressures in dynamic foraging environments, in which sequential successful outcomes are often not independent but reflect 'clumped' resources (Blanchard et al., 2014; Wilke and Barrett, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about the evolutionary basis of the bias, with citations.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:14:42.880343Z"
+    },
+    {
+      "id": "24fae455-b66f-4c09-8446-5c82e5318879",
+      "content_id": "50d6c23e-a424-49aa-9f07-1a2402c05fd4",
+      "claim_id": "C105",
+      "claim": "The risky win-stay bias demonstrably (and often adversely) affects behavior in finance, recreational gambling, and sports.",
+      "claim_type": "EXPLICIT",
+      "source": "However, today it demonstrably (and often adversely) affects behavior in finance, recreational gambling, and sports (Croson and Sundali, 2005; Hoffmann et al., 2010; Neiman and Loewenstein, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citations supporting the claim.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:14:42.880343Z"
+    },
+    {
+      "id": "9e43b310-1c7f-4c5c-87cf-9a2b4b8d3fd6",
+      "content_id": "50d6c23e-a424-49aa-9f07-1a2402c05fd4",
+      "claim_id": "C106",
+      "claim": "This particular sequential bias is observable and manipulable in populations of neurons in lOFC, although lOFC's involvement may depend upon task design.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data show that this particular sequential bias is observable and manipulable in populations of neurons in lOFC, although lOFC's involvement may depend upon task design.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from the study with a caveat.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:14:42.880343Z"
+    },
+    {
+      "id": "5f26cf9a-ecb5-447b-a7c3-abbd50c6f134",
+      "content_id": "50d6c23e-a424-49aa-9f07-1a2402c05fd4",
+      "claim_id": "C107",
+      "claim": "OFC has been proposed to represent the animal's location in a cognitive map of the task, which, in a reinforcement learning framework, corresponds to the current state in an abstract representation of task states and transitions between them.",
+      "claim_type": "EXPLICIT",
+      "source": "OFC has been proposed to represent the animal's location in a cognitive map of the task, which, in a reinforcement learning framework, corresponds to the current state in an abstract representation of task states and transitions between them (Nogueira et al., 2017; Wilson et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citations supporting the theoretical framework.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:14:42.880343Z"
+    },
+    {
+      "id": "6005870b-10d9-45b6-b671-8a9d286eab75",
+      "content_id": "50d6c23e-a424-49aa-9f07-1a2402c05fd4",
+      "claim_id": "C108",
+      "claim": "The cognitive map hypothesis parsimoniously accounts for the results of OFC lesions in a variety of paradigms including delayed alternation, extinction, devaluation, and reversal learning, and is consistent with OFC's role in evaluative processes such as regret.",
+      "claim_type": "EXPLICIT",
+      "source": "The cognitive map hypothesis parsimoniously accounts for the results of OFC lesions in a variety of paradigms including delayed alternation, extinction, devaluation, and reversal learning, and is consistent with OFC's role in evaluative processes such as regret (Gallagher et al., 1999; Izquierdo et al., 2004; Pickens et al., 2003; Steiner and Redish, 2014; Steiner and Redish, 2012; Wilson et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citations supporting the theoretical framework.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:14:42.880343Z"
+    },
+    {
+      "id": "6f59afcc-ebcf-4003-b015-f97464f53517",
+      "content_id": "50d6c23e-a424-49aa-9f07-1a2402c05fd4",
+      "claim_id": "C109",
+      "claim": "A recent study showed that the OFC may be particularly important for learning of action-outcome values.",
+      "claim_type": "EXPLICIT",
+      "source": "A recent study showed that the OFC may be particularly important for learning of action-outcome values (Miller et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:14:42.880343Z"
+    },
+    {
+      "id": "f654adc9-5430-4cc1-aed7-d8e3516f5540",
+      "content_id": "50d6c23e-a424-49aa-9f07-1a2402c05fd4",
+      "claim_id": "C110",
+      "claim": "The data are consistent with the cognitive map hypothesis, and indicate that the coordinate space of the cognitive map in which OFC promoted learning in this task was in abstract (risky or safe), but not spatial (left or right) coordinates.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data are consistent with this hypothesis, and indicate that the coordinate space of the cognitive map in which OFC promoted learning in this task was in abstract (risky or safe), but not spatial (left or right) coordinates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the final conclusion of the discussion, integrating the findings with theory.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:14:42.880343Z"
+    },
+    {
+      "id": "333473f5-784b-4772-8f60-9e632008964c",
+      "content_id": "50d6c23e-a424-49aa-9f07-1a2402c05fd4",
+      "claim_id": "C111",
+      "claim": "A total of 39 male rats between the ages of 6 and 24 months were used for this study.",
+      "claim_type": "EXPLICIT",
+      "source": "A total of 39 male rats between the ages of 6 and 24 months were used for this study.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the animal subjects used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:14:42.880343Z"
+    },
+    {
+      "id": "2cca7169-e462-4506-a292-c7c167b3c8b1",
+      "content_id": "50d6c23e-a424-49aa-9f07-1a2402c05fd4",
+      "claim_id": "C112",
+      "claim": "The study included 35 Long-evans and 4 Sprague-Dawley rats.",
+      "claim_type": "EXPLICIT",
+      "source": "These included 35 Long-evans and 4 Sprague-Dawley rats (Rattus norvegicus).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the animal subjects used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:14:42.880343Z"
+    },
+    {
+      "id": "1796b155-5057-40cc-a96e-2a8d9c654f8b",
+      "content_id": "50d6c23e-a424-49aa-9f07-1a2402c05fd4",
+      "claim_id": "C113",
+      "claim": "Three rats were used for neural recordings, and 16 for optogenetic experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "Of these, three rats were used for neural recordings, and 16 for optogenetic experiments",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes how animals were allocated to experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:14:42.880343Z"
+    },
+    {
+      "id": "bf1e2107-cce9-4b70-9dae-650c053f2ada",
+      "content_id": "50d6c23e-a424-49aa-9f07-1a2402c05fd4",
+      "claim_id": "C114",
+      "claim": "LE-Tg (Pvalb-iCre)2Ottc rats (n = 5) are BAC transgenic rats expressing Cre recombinase in parvalbumin expressing neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "including LE-Tg (Pvalb-iCre)2Ottc rats (n = 5) made at NIDA/NIMH and obtained from the University of Missouri RRRC (transgenic line 0773). These are BAC transgenic rats expressing Cre recombinase in parvalbumin expressing neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the transgenic rat line used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:14:42.880343Z"
+    },
+    {
+      "id": "080d3712-54e4-465c-a979-1235d3defdfe",
+      "content_id": "50d6c23e-a424-49aa-9f07-1a2402c05fd4",
+      "claim_id": "C115",
+      "claim": "Investigators were not blinded to experimental groups during data collection or analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Investigators were not blinded to experimental groups during data collection or analysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a methodological detail.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:14:42.880343Z"
+    },
+    {
+      "id": "240759b3-8597-42e7-9415-f1616dd05579",
+      "content_id": "50d6c23e-a424-49aa-9f07-1a2402c05fd4",
+      "claim_id": "C116",
+      "claim": "Animal use procedures were approved by the Princeton University Institutional Animal Care and Use Committee and carried out in accordance with National Institutes of Health standards.",
+      "claim_type": "EXPLICIT",
+      "source": "Animal use procedures were approved by the Princeton University Institutional Animal Care and Use Committee and carried out in accordance with National Institutes of Health standards.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes ethical approval.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:14:42.880343Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "0b0ee9f4-04fb-47b4-b30c-1c750aae95a2",
+      "content_id": "50d6c23e-a424-49aa-9f07-1a2402c05fd4",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors developed a behavioral task where rats chose between guaranteed and probabilistic rewards, with reward locations randomized on each trial to disambiguate spatial from abstract sequential biases. Trials were independent by design, making sequential biases maladaptive.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C16, C17, C30, C33-C41, and C50 collectively describe a well-designed task with explicit controls. The randomization of reward locations (C16, C37) effectively separates spatial from abstract biases (C17), and the independence of trials (C1, C50) ensures that sequential biases are maladaptive (C30). The task design is clearly documented with appropriate parameters.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:14:42.880343Z"
+    },
+    {
+      "id": "e4da3d48-2046-4694-a975-3c6cb32b2ab0",
+      "content_id": "50d6c23e-a424-49aa-9f07-1a2402c05fd4",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Rats exhibited a risky win-stay bias: following a risky win, they were significantly more likely to choose the risky option again (p=1.29e-13). This bias was graded with reward probability, not due to unlearning cue meanings, and distinct from changes in overall risk preferences.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C46, C47 establish the main behavioral finding with strong statistical support. Control analyses (C48, C51-C54) rule out alternative explanations including unlearning, biased probability estimates, and fluctuations in risk preferences. The graded dependence on probability (C49) provides additional mechanistic insight. The behavioral characterization is thorough and well-controlled.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:14:42.880343Z"
+    },
+    {
+      "id": "0ac1ad0f-0af2-4874-b58f-d7b69f2c141c",
+      "content_id": "50d6c23e-a424-49aa-9f07-1a2402c05fd4",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Rats exhibited spatial win-stay/lose-switch biases that were independent of and larger in magnitude than the risky win-stay bias.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C55, and C56 establish that spatial biases exist and are dissociable from risky biases due to the task design where risky/safe locations switch randomly. The independence is demonstrated by the task structure (C55) and the magnitude comparison (C56) is directly stated with reference to figures showing the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:14:42.880343Z"
+    },
+    {
+      "id": "c6af10d7-f8b3-4dd6-abb6-9e3703f6274b",
+      "content_id": "50d6c23e-a424-49aa-9f07-1a2402c05fd4",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "lOFC neurons encoded reward history, with 512/1459 units showing significantly different activity following rewarded vs unrewarded trials. Encoding was strongest at trial initiation, with more neurons showing higher firing after unrewarded trials (consistent with adaptation). Population-level trial factors from TCA analysis were modulated by reward history 2 trials back.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C57-C64 provide converging evidence from single-unit and population analyses. Statistical tests are reported (C58, C62), temporal dynamics are characterized (C59), and the adaptation interpretation (C60, C63) is supported by multiple citations. Control analyses (C64) address potential confounds. The neural characterization is comprehensive and appropriately analyzed.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:14:42.880343Z"
+    },
+    {
+      "id": "ab6b3eb9-8a99-4bbe-87f4-2986ba283c84",
+      "content_id": "50d6c23e-a424-49aa-9f07-1a2402c05fd4",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Optogenetic inhibition of lOFC during the cue period did not affect spatial win-stay/lose-switch biases or the risky win-stay bias.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C65 and C66 report null effects with appropriate statistical tests (C66: p=0.005 ANOVA). The lack of effect during the cue period contrasts with effects during the choice reporting period, establishing temporal specificity. However, the interpretation of null results requires caution regarding statistical power, though the contrast with positive effects in other conditions provides some reassurance.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:14:42.880343Z"
+    },
+    {
+      "id": "956dbd58-ee14-4644-84c8-980f59c5156e",
+      "content_id": "50d6c23e-a424-49aa-9f07-1a2402c05fd4",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "During the choice reporting period, lOFC neurons encoded whether rats chose safe vs risky options (128/1459 units), with discriminability peaking after leaving the center poke. Strong side-selectivity (628 units) and reward receipt encoding (459 units) were also observed.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C67-C72 characterize neural activity during choice reporting with appropriate statistical tests (C68: unpaired t-test) and temporal resolution (C69). The large number of side-selective neurons (C70) is noted, and a control analysis (C72) addresses potential confounds. The neural characterization is thorough and well-documented.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:14:42.880343Z"
+    },
+    {
+      "id": "c8602362-1f10-4996-b0c7-d00fef697586",
+      "content_id": "50d6c23e-a424-49aa-9f07-1a2402c05fd4",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Optogenetic inhibition of lOFC during the choice reporting period eliminated the risky win-stay bias in rats expressing opsins (p=0.667 CaMKII\u03b1-eNpHR3.0; p=0.778 Pvalb-iCre-ChR2) but not in sham controls (p=0.009). The effect was specific to the risky win-stay parameter in logistic regression analysis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C76-C83 establish the causal role of lOFC with appropriate controls (sham animals C77), statistical tests, and specificity analyses (C80). Control analyses rule out motor effects (C78, C79) and baseline changes (C81). The effect is consistent across individual animals (C82) and specific to the risky bias (C83). This is a well-controlled causal manipulation experiment.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:14:42.880343Z"
+    },
+    {
+      "id": "a7468c66-739b-4bce-b202-24343ba3a39d",
+      "content_id": "50d6c23e-a424-49aa-9f07-1a2402c05fd4",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Optogenetic inhibition during the choice reporting period did not specifically affect spatial biases when controlling for inter-trial interval duration. Spatial biases decreased with ITI duration while risky biases did not, suggesting dissociable mechanisms.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C73-C75, C84 establish that spatial biases were not specifically affected by lOFC inhibition. The initial reduction (C73) was explained by ITI effects (C74, C75), and the differential sensitivity to ITI (C84) provides additional evidence for dissociable mechanisms. The control for ITI is appropriate and strengthens the specificity claim.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:14:42.880343Z"
+    },
+    {
+      "id": "3f853036-8b8f-4f38-8498-1bc7fcced064",
+      "content_id": "50d6c23e-a424-49aa-9f07-1a2402c05fd4",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Different sequential biases are neurally dissociable, with lOFC required for abstract (risky/safe) but not spatial (left/right) sequential biases.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7, C8, C18, C32 represent the main conclusions of the study, directly supported by the differential effects of lOFC manipulation on risky vs spatial biases (established in previous result groups). The conclusion that biases are neurally dissociable is well-supported by the selective optogenetic effects and the ITI sensitivity differences.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:14:42.880343Z"
+    },
+    {
+      "id": "388452d0-0d88-462c-a635-5e41c65f73fd",
+      "content_id": "50d6c23e-a424-49aa-9f07-1a2402c05fd4",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The authors interpret their findings as consistent with the cognitive map hypothesis, where lOFC represents the animal's location in an abstract task space. They conclude that OFC promoted learning in abstract (risky/safe) but not spatial (left/right) coordinates.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C19, C89, C106-C108, C110 present the theoretical interpretation with appropriate citations (C107, C108). The interpretation is consistent with the data showing selective effects on abstract vs spatial biases. However, this remains an interpretation rather than direct evidence for cognitive maps, and alternative explanations are not extensively discussed. The conclusion is reasonable but not uniquely determined by the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:14:42.880343Z"
+    },
+    {
+      "id": "5e8b2252-1caa-4bc0-a2d2-b8900c5b8db2",
+      "content_id": "50d6c23e-a424-49aa-9f07-1a2402c05fd4",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Perturbation effects were uncoupled from the most strongly encoded task variables (reward history during cue period, left/right choice during choice reporting). The authors speculate this could reflect distributed representations for some variables vs more localized representations for updating risk preferences.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C96 accurately summarizes a puzzling finding, but C97-C100 are explicitly speculative. The disconnect between encoding strength and perturbation effects is interesting but not fully explained. The speculation about distributed vs localized representations (C97-C98) and which neurons are responsible (C99-C100) lacks direct supporting evidence. This represents an important observation requiring future investigation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:14:42.880343Z"
+    },
+    {
+      "id": "1c077687-bc44-4136-b699-c7e105a9b4e5",
+      "content_id": "50d6c23e-a424-49aa-9f07-1a2402c05fd4",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The introduction establishes prior knowledge about sequential biases in decision-making, OFC anatomy and function, and the role of lOFC in behavioral flexibility and value-based learning.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9-C28 summarize established knowledge with appropriate citations. These provide context for the current study and are standard background material. The citations appear appropriate for the claims made, though detailed verification of each cited work is beyond this evaluation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:14:42.880343Z"
+    },
+    {
+      "id": "86ef1d9e-2238-42b8-b082-fd2459f8095e",
+      "content_id": "50d6c23e-a424-49aa-9f07-1a2402c05fd4",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The authors hypothesized that OFC's role in behavioral flexibility might drive sequential biases even when maladaptive, and found that rats exhibited several dissociable biases.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C29 states the hypothesis clearly, and C31 confirms the finding of dissociable biases. These are appropriately characterized as hypothesis and finding respectively. The hypothesis is reasonable given prior work on OFC function.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:14:42.880343Z"
+    },
+    {
+      "id": "996daba1-f8f7-45c6-b272-a4a11c3f6332",
+      "content_id": "50d6c23e-a424-49aa-9f07-1a2402c05fd4",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The discussion contextualizes findings within prior OFC literature, noting consistency with roles in learning, behavioral flexibility, and value representation. Comparisons are made to primate OFC and other rodent studies, with speculation about evolutionary origins and real-world relevance.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C85-C95, C101-C105, C109 appropriately cite and discuss prior work. The comparisons to primate OFC (C90-C95) acknowledge species differences. The speculation about evolutionary origins (C104) and real-world relevance (C105) is appropriately tentative. The connection to the mOFC study (C101, C103) is reasonable but speculative regarding VTA projections.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:14:42.880343Z"
+    },
+    {
+      "id": "229b7456-5b31-4d3e-aa24-168534515377",
+      "content_id": "50d6c23e-a424-49aa-9f07-1a2402c05fd4",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The study used 39 male rats (35 Long-Evans, 4 Sprague-Dawley), including 3 for recordings and 16 for optogenetics (5 Pvalb-iCre transgenic). Investigators were not blinded, and procedures were approved by Princeton IACUC.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C111-C116 provide standard methodological details. The lack of blinding (C115) is a limitation but is transparently reported. Sample sizes appear adequate for the behavioral and neural analyses, though power analyses are not reported. Ethical approval is documented (C116).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:14:42.880343Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "04690dfc-4dd1-43f0-8dd7-049ebd151223",
+      "result_id": "0b0ee9f4-04fb-47b4-b30c-1c750aae95a2"
+    },
+    {
+      "claim_id": "9f6f4b43-dbf7-4e88-a0a0-91159b427be0",
+      "result_id": "0b0ee9f4-04fb-47b4-b30c-1c750aae95a2"
+    },
+    {
+      "claim_id": "bad25627-5007-4e83-a136-e4fcad170cf0",
+      "result_id": "0b0ee9f4-04fb-47b4-b30c-1c750aae95a2"
+    },
+    {
+      "claim_id": "f97789ee-eb3e-4869-a40c-e5e4ac18a6a3",
+      "result_id": "0b0ee9f4-04fb-47b4-b30c-1c750aae95a2"
+    },
+    {
+      "claim_id": "3fcb0da7-1d76-4384-8ce2-861fbbc5b88c",
+      "result_id": "0b0ee9f4-04fb-47b4-b30c-1c750aae95a2"
+    },
+    {
+      "claim_id": "be39b1d1-f7b2-4802-a794-7b1d40df6a58",
+      "result_id": "0b0ee9f4-04fb-47b4-b30c-1c750aae95a2"
+    },
+    {
+      "claim_id": "7c4a5788-8f7b-4fb1-8249-2cb6e39d11e9",
+      "result_id": "0b0ee9f4-04fb-47b4-b30c-1c750aae95a2"
+    },
+    {
+      "claim_id": "d3d9d0a1-d91b-493c-83c4-8940d17add8f",
+      "result_id": "0b0ee9f4-04fb-47b4-b30c-1c750aae95a2"
+    },
+    {
+      "claim_id": "a1233e60-d48a-4944-8d15-4b5c29295272",
+      "result_id": "0b0ee9f4-04fb-47b4-b30c-1c750aae95a2"
+    },
+    {
+      "claim_id": "55922bed-e603-4971-84e2-b1d50c0dd883",
+      "result_id": "0b0ee9f4-04fb-47b4-b30c-1c750aae95a2"
+    },
+    {
+      "claim_id": "31a228c8-7b38-45d2-99be-d986dc70eceb",
+      "result_id": "0b0ee9f4-04fb-47b4-b30c-1c750aae95a2"
+    },
+    {
+      "claim_id": "4844fe23-fea0-48ea-8537-afc5189d185b",
+      "result_id": "0b0ee9f4-04fb-47b4-b30c-1c750aae95a2"
+    },
+    {
+      "claim_id": "bb500f36-92a2-4d40-8fdb-0582a0e0add6",
+      "result_id": "0b0ee9f4-04fb-47b4-b30c-1c750aae95a2"
+    },
+    {
+      "claim_id": "2fddfd53-c963-41a6-8ac1-889015f94d73",
+      "result_id": "0b0ee9f4-04fb-47b4-b30c-1c750aae95a2"
+    },
+    {
+      "claim_id": "53670bce-2751-4b99-ac17-6cc97cdf8f36",
+      "result_id": "e4da3d48-2046-4694-a975-3c6cb32b2ab0"
+    },
+    {
+      "claim_id": "effce34a-3e75-4b17-bc8a-4c439a6f148f",
+      "result_id": "e4da3d48-2046-4694-a975-3c6cb32b2ab0"
+    },
+    {
+      "claim_id": "8fed6f21-791f-4c4a-8f24-de65985cf5d4",
+      "result_id": "e4da3d48-2046-4694-a975-3c6cb32b2ab0"
+    },
+    {
+      "claim_id": "1e57e182-2697-454d-805b-3c9bccf00ee0",
+      "result_id": "e4da3d48-2046-4694-a975-3c6cb32b2ab0"
+    },
+    {
+      "claim_id": "e0c95d46-cd87-4404-b1d4-26fef479ffb0",
+      "result_id": "e4da3d48-2046-4694-a975-3c6cb32b2ab0"
+    },
+    {
+      "claim_id": "55e062e7-6d0f-4ca6-a27c-e229ee96bc0e",
+      "result_id": "e4da3d48-2046-4694-a975-3c6cb32b2ab0"
+    },
+    {
+      "claim_id": "64af9810-7151-4b36-abe0-e03478688383",
+      "result_id": "e4da3d48-2046-4694-a975-3c6cb32b2ab0"
+    },
+    {
+      "claim_id": "8d9bbd58-6348-459b-981a-9f2b1910d66f",
+      "result_id": "e4da3d48-2046-4694-a975-3c6cb32b2ab0"
+    },
+    {
+      "claim_id": "8eb35116-4f75-4aa5-9183-cacc5c83fb53",
+      "result_id": "e4da3d48-2046-4694-a975-3c6cb32b2ab0"
+    },
+    {
+      "claim_id": "1be13b13-2d8e-44a4-87ae-a9f1f7fbd7b6",
+      "result_id": "e4da3d48-2046-4694-a975-3c6cb32b2ab0"
+    },
+    {
+      "claim_id": "5f0810c5-85be-45f8-be58-0c600376c415",
+      "result_id": "e4da3d48-2046-4694-a975-3c6cb32b2ab0"
+    },
+    {
+      "claim_id": "87d247bf-329d-4e4e-b3fc-1930531f998b",
+      "result_id": "e4da3d48-2046-4694-a975-3c6cb32b2ab0"
+    },
+    {
+      "claim_id": "6800bb4c-8aea-4fe4-b203-0595b707ec3f",
+      "result_id": "e4da3d48-2046-4694-a975-3c6cb32b2ab0"
+    },
+    {
+      "claim_id": "b5eaf8e1-bfcd-4902-8433-996c4c911b7f",
+      "result_id": "0ac1ad0f-0af2-4874-b58f-d7b69f2c141c"
+    },
+    {
+      "claim_id": "15123182-d049-4bcf-aeea-aeeb8db89c1e",
+      "result_id": "0ac1ad0f-0af2-4874-b58f-d7b69f2c141c"
+    },
+    {
+      "claim_id": "d84ea464-4e0b-4c21-84f7-5c0c8e90738d",
+      "result_id": "0ac1ad0f-0af2-4874-b58f-d7b69f2c141c"
+    },
+    {
+      "claim_id": "d8bc4731-9e67-4712-b55b-cb4e516d8c27",
+      "result_id": "c6af10d7-f8b3-4dd6-abb6-9e3703f6274b"
+    },
+    {
+      "claim_id": "5dacf125-9249-43ee-9f12-a64dc52a193d",
+      "result_id": "c6af10d7-f8b3-4dd6-abb6-9e3703f6274b"
+    },
+    {
+      "claim_id": "093b0566-4f3e-44ec-9112-d624033d0d22",
+      "result_id": "c6af10d7-f8b3-4dd6-abb6-9e3703f6274b"
+    },
+    {
+      "claim_id": "1f1f4bb9-6b16-4633-bf04-4ebe504bf5cf",
+      "result_id": "c6af10d7-f8b3-4dd6-abb6-9e3703f6274b"
+    },
+    {
+      "claim_id": "2454dd1a-6b61-46f9-9664-6f6c865531bf",
+      "result_id": "c6af10d7-f8b3-4dd6-abb6-9e3703f6274b"
+    },
+    {
+      "claim_id": "88e025e5-2392-4d04-a0ce-ab53149db65d",
+      "result_id": "c6af10d7-f8b3-4dd6-abb6-9e3703f6274b"
+    },
+    {
+      "claim_id": "7892a3a9-568b-46e4-bc71-428a94bad6c1",
+      "result_id": "c6af10d7-f8b3-4dd6-abb6-9e3703f6274b"
+    },
+    {
+      "claim_id": "02c8e2c8-08c6-44e8-9790-67f265ed12ef",
+      "result_id": "c6af10d7-f8b3-4dd6-abb6-9e3703f6274b"
+    },
+    {
+      "claim_id": "f91c73ae-c187-428c-bd08-97a30ba0298e",
+      "result_id": "c6af10d7-f8b3-4dd6-abb6-9e3703f6274b"
+    },
+    {
+      "claim_id": "8d2765c8-9000-48f4-bab8-0bd15f1fa505",
+      "result_id": "ab6b3eb9-8a99-4bbe-87f4-2986ba283c84"
+    },
+    {
+      "claim_id": "04d1c52f-7e87-4f14-ae4f-d17379717d1d",
+      "result_id": "ab6b3eb9-8a99-4bbe-87f4-2986ba283c84"
+    },
+    {
+      "claim_id": "b400fb9e-fa39-4f8f-bde3-e054f43166cf",
+      "result_id": "956dbd58-ee14-4644-84c8-980f59c5156e"
+    },
+    {
+      "claim_id": "b565f23a-e132-41c3-841d-580ccb2512e5",
+      "result_id": "956dbd58-ee14-4644-84c8-980f59c5156e"
+    },
+    {
+      "claim_id": "0a034de2-8ccd-43ad-b65b-3b7c758af2fd",
+      "result_id": "956dbd58-ee14-4644-84c8-980f59c5156e"
+    },
+    {
+      "claim_id": "6be49d73-437e-4de5-b3e4-0f6d0d19585b",
+      "result_id": "956dbd58-ee14-4644-84c8-980f59c5156e"
+    },
+    {
+      "claim_id": "629aa4e2-97e2-40e2-9358-05a7b08f650a",
+      "result_id": "956dbd58-ee14-4644-84c8-980f59c5156e"
+    },
+    {
+      "claim_id": "cff5e117-32c9-4ce7-8d10-d5b3b0d8602b",
+      "result_id": "956dbd58-ee14-4644-84c8-980f59c5156e"
+    },
+    {
+      "claim_id": "cd6a0cc7-e8f9-42a4-8e09-9c17ff5ef66b",
+      "result_id": "c8602362-1f10-4996-b0c7-d00fef697586"
+    },
+    {
+      "claim_id": "e4985b2b-7846-4c50-9335-d99d0c3022c4",
+      "result_id": "c8602362-1f10-4996-b0c7-d00fef697586"
+    },
+    {
+      "claim_id": "c85fcfbf-80b6-4d3c-a981-3b00e8a08d3f",
+      "result_id": "c8602362-1f10-4996-b0c7-d00fef697586"
+    },
+    {
+      "claim_id": "29eb554a-4214-4bcb-b311-226a0462cb2e",
+      "result_id": "c8602362-1f10-4996-b0c7-d00fef697586"
+    },
+    {
+      "claim_id": "9d43948c-76fd-421f-a52d-4e4f4e21a3a3",
+      "result_id": "c8602362-1f10-4996-b0c7-d00fef697586"
+    },
+    {
+      "claim_id": "ec00b57d-8139-44d3-a900-c3be1fe0b30c",
+      "result_id": "c8602362-1f10-4996-b0c7-d00fef697586"
+    },
+    {
+      "claim_id": "b33301de-eb22-4b3b-944a-906e760afe72",
+      "result_id": "c8602362-1f10-4996-b0c7-d00fef697586"
+    },
+    {
+      "claim_id": "88858209-a0f9-4cfc-a4e0-32c3a4a33667",
+      "result_id": "c8602362-1f10-4996-b0c7-d00fef697586"
+    },
+    {
+      "claim_id": "fd09dc0c-d003-4579-a337-6a4ae8df2796",
+      "result_id": "c8602362-1f10-4996-b0c7-d00fef697586"
+    },
+    {
+      "claim_id": "e730e892-152c-4836-84e7-93a882d226f1",
+      "result_id": "a7468c66-739b-4bce-b202-24343ba3a39d"
+    },
+    {
+      "claim_id": "9424eb7c-85dc-41c4-86d1-d5eb7baac0af",
+      "result_id": "a7468c66-739b-4bce-b202-24343ba3a39d"
+    },
+    {
+      "claim_id": "891ba82f-ad41-46c8-9dfc-24d70bc1402c",
+      "result_id": "a7468c66-739b-4bce-b202-24343ba3a39d"
+    },
+    {
+      "claim_id": "445a8ed0-0911-4208-a189-b6d3b303f900",
+      "result_id": "a7468c66-739b-4bce-b202-24343ba3a39d"
+    },
+    {
+      "claim_id": "d788815b-01e0-491d-b67b-783a8feec734",
+      "result_id": "a7468c66-739b-4bce-b202-24343ba3a39d"
+    },
+    {
+      "claim_id": "e9d6885a-24b4-4303-9406-70bf499055ad",
+      "result_id": "3f853036-8b8f-4f38-8498-1bc7fcced064"
+    },
+    {
+      "claim_id": "08c228d7-3fab-4b16-a855-b08259d21829",
+      "result_id": "3f853036-8b8f-4f38-8498-1bc7fcced064"
+    },
+    {
+      "claim_id": "80a3291e-dd4f-4d5a-bfa6-bcdb689cab87",
+      "result_id": "3f853036-8b8f-4f38-8498-1bc7fcced064"
+    },
+    {
+      "claim_id": "60b5a484-f4e5-469a-b013-639e48bb243d",
+      "result_id": "3f853036-8b8f-4f38-8498-1bc7fcced064"
+    },
+    {
+      "claim_id": "079977db-d1f4-49d0-bd49-950e0f9c4423",
+      "result_id": "388452d0-0d88-462c-a635-5e41c65f73fd"
+    },
+    {
+      "claim_id": "cd3239fb-1bd0-4590-8a03-c56b14ceb916",
+      "result_id": "388452d0-0d88-462c-a635-5e41c65f73fd"
+    },
+    {
+      "claim_id": "9e43b310-1c7f-4c5c-87cf-9a2b4b8d3fd6",
+      "result_id": "388452d0-0d88-462c-a635-5e41c65f73fd"
+    },
+    {
+      "claim_id": "5f26cf9a-ecb5-447b-a7c3-abbd50c6f134",
+      "result_id": "388452d0-0d88-462c-a635-5e41c65f73fd"
+    },
+    {
+      "claim_id": "6005870b-10d9-45b6-b671-8a9d286eab75",
+      "result_id": "388452d0-0d88-462c-a635-5e41c65f73fd"
+    },
+    {
+      "claim_id": "f654adc9-5430-4cc1-aed7-d8e3516f5540",
+      "result_id": "388452d0-0d88-462c-a635-5e41c65f73fd"
+    },
+    {
+      "claim_id": "44386af1-5511-495d-9f89-e88142540c54",
+      "result_id": "5e8b2252-1caa-4bc0-a2d2-b8900c5b8db2"
+    },
+    {
+      "claim_id": "bcd544ee-507a-446e-bc74-c34a96409bdc",
+      "result_id": "5e8b2252-1caa-4bc0-a2d2-b8900c5b8db2"
+    },
+    {
+      "claim_id": "5b80870e-5873-4f12-9b7b-6f4db42e1fd1",
+      "result_id": "5e8b2252-1caa-4bc0-a2d2-b8900c5b8db2"
+    },
+    {
+      "claim_id": "33b108fe-0b4d-48b1-a88e-0f32bd5504a3",
+      "result_id": "5e8b2252-1caa-4bc0-a2d2-b8900c5b8db2"
+    },
+    {
+      "claim_id": "4d66fe17-6402-432f-8697-3996a75910aa",
+      "result_id": "5e8b2252-1caa-4bc0-a2d2-b8900c5b8db2"
+    },
+    {
+      "claim_id": "1b7fb66e-5354-4010-8e3c-fe800fe32a9d",
+      "result_id": "1c077687-bc44-4136-b699-c7e105a9b4e5"
+    },
+    {
+      "claim_id": "e3d5f655-17f0-4f5c-8955-702a952f3c7d",
+      "result_id": "1c077687-bc44-4136-b699-c7e105a9b4e5"
+    },
+    {
+      "claim_id": "00458db8-f9e0-48aa-855c-88b7e9262751",
+      "result_id": "1c077687-bc44-4136-b699-c7e105a9b4e5"
+    },
+    {
+      "claim_id": "9b0afb3e-7984-4a12-b2a3-211f3684d93a",
+      "result_id": "1c077687-bc44-4136-b699-c7e105a9b4e5"
+    },
+    {
+      "claim_id": "3c3d55bf-d5e0-4c73-87b2-2f21f4e41da5",
+      "result_id": "1c077687-bc44-4136-b699-c7e105a9b4e5"
+    },
+    {
+      "claim_id": "1ec9127e-ff6a-47c1-a52d-575841de2489",
+      "result_id": "1c077687-bc44-4136-b699-c7e105a9b4e5"
+    },
+    {
+      "claim_id": "2cdb0089-7783-4c6d-b80e-ccdc1b590715",
+      "result_id": "1c077687-bc44-4136-b699-c7e105a9b4e5"
+    },
+    {
+      "claim_id": "f15283bb-46cd-4bb1-acdf-9300baf7b5d8",
+      "result_id": "1c077687-bc44-4136-b699-c7e105a9b4e5"
+    },
+    {
+      "claim_id": "847705f4-83d7-457e-8198-e7b4b901d826",
+      "result_id": "1c077687-bc44-4136-b699-c7e105a9b4e5"
+    },
+    {
+      "claim_id": "7e4482a9-e2e7-403a-afb2-428de39e03bf",
+      "result_id": "1c077687-bc44-4136-b699-c7e105a9b4e5"
+    },
+    {
+      "claim_id": "37cdb7a4-2121-4ead-9310-6a88ff03272a",
+      "result_id": "1c077687-bc44-4136-b699-c7e105a9b4e5"
+    },
+    {
+      "claim_id": "21a213de-9077-4ffc-9335-278805f19b2d",
+      "result_id": "1c077687-bc44-4136-b699-c7e105a9b4e5"
+    },
+    {
+      "claim_id": "370ed5cb-27f8-4ba5-b17d-de45e0d16adb",
+      "result_id": "1c077687-bc44-4136-b699-c7e105a9b4e5"
+    },
+    {
+      "claim_id": "6b8527a1-77b4-475c-b40d-9487cb5f701d",
+      "result_id": "1c077687-bc44-4136-b699-c7e105a9b4e5"
+    },
+    {
+      "claim_id": "c7c84c1a-3f38-40d5-a811-7d5bb9d5fdd2",
+      "result_id": "1c077687-bc44-4136-b699-c7e105a9b4e5"
+    },
+    {
+      "claim_id": "e2b4666c-72ad-4076-8382-80d2cf291899",
+      "result_id": "1c077687-bc44-4136-b699-c7e105a9b4e5"
+    },
+    {
+      "claim_id": "25a233ca-9f2d-49ba-9dde-7a89e7d326c8",
+      "result_id": "86ef1d9e-2238-42b8-b082-fd2459f8095e"
+    },
+    {
+      "claim_id": "57d421ea-e977-4978-9290-c425cb8b579b",
+      "result_id": "86ef1d9e-2238-42b8-b082-fd2459f8095e"
+    },
+    {
+      "claim_id": "4e665ae2-bb6f-46aa-99f9-ef9f8ed742fb",
+      "result_id": "996daba1-f8f7-45c6-b272-a4a11c3f6332"
+    },
+    {
+      "claim_id": "76ccbd6d-8617-4b30-9d7b-9953a7d5c2a3",
+      "result_id": "996daba1-f8f7-45c6-b272-a4a11c3f6332"
+    },
+    {
+      "claim_id": "77d8d613-1888-4fb9-9d31-e3b9d7bd7133",
+      "result_id": "996daba1-f8f7-45c6-b272-a4a11c3f6332"
+    },
+    {
+      "claim_id": "02c3e7d2-be21-47db-bf49-101dc3c0e6cf",
+      "result_id": "996daba1-f8f7-45c6-b272-a4a11c3f6332"
+    },
+    {
+      "claim_id": "90503119-dcaa-4c54-b0b3-40608eb6fd72",
+      "result_id": "996daba1-f8f7-45c6-b272-a4a11c3f6332"
+    },
+    {
+      "claim_id": "5156bcde-60c1-4b02-9263-ec9b643a7973",
+      "result_id": "996daba1-f8f7-45c6-b272-a4a11c3f6332"
+    },
+    {
+      "claim_id": "9cd01b5d-2fbf-4d3b-b3d0-43849fac29ba",
+      "result_id": "996daba1-f8f7-45c6-b272-a4a11c3f6332"
+    },
+    {
+      "claim_id": "352d5eba-3571-4126-9a6b-5d8b82fa64a8",
+      "result_id": "996daba1-f8f7-45c6-b272-a4a11c3f6332"
+    },
+    {
+      "claim_id": "31c345d7-43bf-4abb-915c-b04dc6b0ebcf",
+      "result_id": "996daba1-f8f7-45c6-b272-a4a11c3f6332"
+    },
+    {
+      "claim_id": "d600ba6a-2874-46c7-bc4d-9eca83ab85d8",
+      "result_id": "996daba1-f8f7-45c6-b272-a4a11c3f6332"
+    },
+    {
+      "claim_id": "cceaf9e7-5ee2-410a-a71d-e19d1a1c4369",
+      "result_id": "996daba1-f8f7-45c6-b272-a4a11c3f6332"
+    },
+    {
+      "claim_id": "ca862ca0-fc05-4e58-8f9b-ed492b8f4a3e",
+      "result_id": "996daba1-f8f7-45c6-b272-a4a11c3f6332"
+    },
+    {
+      "claim_id": "15b00ae6-b6fe-4181-8d9b-3bd03613fea6",
+      "result_id": "996daba1-f8f7-45c6-b272-a4a11c3f6332"
+    },
+    {
+      "claim_id": "77cb50dc-7fa2-4a4d-8e05-5a89ece69091",
+      "result_id": "996daba1-f8f7-45c6-b272-a4a11c3f6332"
+    },
+    {
+      "claim_id": "24fae455-b66f-4c09-8446-5c82e5318879",
+      "result_id": "996daba1-f8f7-45c6-b272-a4a11c3f6332"
+    },
+    {
+      "claim_id": "6f59afcc-ebcf-4003-b015-f97464f53517",
+      "result_id": "996daba1-f8f7-45c6-b272-a4a11c3f6332"
+    },
+    {
+      "claim_id": "333473f5-784b-4772-8f60-9e632008964c",
+      "result_id": "229b7456-5b31-4d3e-aa24-168534515377"
+    },
+    {
+      "claim_id": "2cca7169-e462-4506-a292-c7c167b3c8b1",
+      "result_id": "229b7456-5b31-4d3e-aa24-168534515377"
+    },
+    {
+      "claim_id": "1796b155-5057-40cc-a96e-2a8d9c654f8b",
+      "result_id": "229b7456-5b31-4d3e-aa24-168534515377"
+    },
+    {
+      "claim_id": "bf1e2107-cce9-4b70-9dae-650c053f2ada",
+      "result_id": "229b7456-5b31-4d3e-aa24-168534515377"
+    },
+    {
+      "claim_id": "080d3712-54e4-465c-a979-1235d3defdfe",
+      "result_id": "229b7456-5b31-4d3e-aa24-168534515377"
+    },
+    {
+      "claim_id": "240759b3-8597-42e7-9415-f1616dd05579",
+      "result_id": "229b7456-5b31-4d3e-aa24-168534515377"
+    }
+  ],
+  "comparisons": []
+}

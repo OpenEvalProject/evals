@@ -1,0 +1,350 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142"
+    ],
+    "result": "The study recruited 75 healthy subjects (age 18-35, 24 males) who completed two reinforcement learning tasks in counterbalanced order. In the stable environment, one car won 80% of races throughout; in the volatile environment, the best car (80% win rate) switched every 20 trials. Participants were explicitly informed about task structure and environments were signaled through different car pairs and fixation symbols.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C7 and C135-C142 provide comprehensive methodological details about participant recruitment, task design, and experimental procedures. The sample size, task parameters, counterbalancing, and explicit signaling of environments are clearly documented with appropriate ethical approval (C4).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "Participants performed above chance in both environments, choosing the higher expected value option 82.1% of the time in stable and 73.3% in volatile environments (both p < 10^-13). They also chose higher probability options above chance and selected low-probability cars when they had higher expected value (stable: 61.2%, p < 0.001; volatile: 75.6%, p < 10^-9), demonstrating integration of both probability and reward information.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C14 demonstrate robust behavioral performance with highly significant statistical tests across multiple measures. The convergent evidence from expected value maximization, probability tracking, and integration trials strongly supports that participants used both probability and reward information in decision-making.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "An additive choice model (integrating probability and reward linearly) better explained behavior than a multiplicative model in both stable (\u0394BIC = 690) and volatile (\u0394BIC = 321) environments. The relative weight parameter \u03c6 was balanced (stable: 0.57\u00b10.017; volatile: 0.44\u00b10.027), confirming participants integrated both probability and reward magnitude.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C24 provide strong model comparison evidence with large BIC differences favoring the additive model. The balanced \u03c6 parameters and consistency with non-human primate studies (C21) support the conclusion. Model fits (pseudo-r\u00b2 0.45-0.62) are reasonable for behavioral data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Learning rates were substantially higher in volatile (\u03b1 = 0.47\u00b10.03) than stable (\u03b1 = 0.16\u00b10.02) environments (difference: 0.31\u00b10.03, p < 10^-11). Participants showed greater win-stay/lose-shift behavior in volatile environments, with differences of ~18-20% between environments (p < 10^-7 for high probability car, p < 10^-4 for low probability car).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C32 demonstrate adaptive learning with highly significant differences in learning rates and stay behavior between environments. The pattern is consistent with previous literature (C32) and model predictions matched observed behavior (Figure 2B), providing convergent validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Participants varied their happiness ratings substantially (SD ~24-25) and were significantly happier after winning than losing in both environments (stable: 63.8 vs 34.5, p < 10^-13; volatile: 61.9 vs 33.6, p < 10^-13). Average happiness was higher in stable than volatile environments (55.0 vs 49.5, p < 0.001), partially explained by lower choice accuracy in volatile environments (\u03c1 = 0.24, p < 0.05).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C38 establish basic happiness patterns with highly significant effects. The correlation between happiness differences and performance differences (C38) provides mechanistic insight, though the modest correlation (\u03c1 = 0.24) suggests other factors also contribute.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C70"
+    ],
+    "result": "Mood fluctuations were better explained by probability prediction errors (PPEs) than reward prediction errors (RPEs) in both stable (\u0394BIC = 399) and volatile (\u0394BIC = 240) environments. Models including choice probability outperformed those with expected value (stable \u0394BIC = 130; volatile \u0394BIC = 454). Both probability and PPE weights were significantly different from zero (all p < 10^-9), demonstrating that happiness reflects learning-relevant (PPE) rather than learning-irrelevant (RPE) variables.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C47 and C70 provide strong model comparison evidence with substantial BIC differences consistently favoring PPE over RPE models. This is a key finding distinguishing learning-relevant from learning-irrelevant information. The convergent evidence across multiple model comparisons (Table 2, Figure 4) strongly supports the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "The reference point parameter in the happiness model was significantly greater than zero in both stable (14.2\u00b19.5 points, p < 10^-11) and volatile (14.8\u00b17.3 points, p < 10^-12) environments, indicating that obtaining 0 points is aversive and decreases happiness.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C52 demonstrate that the reference point is significantly above zero with strong statistical evidence. This supports loss aversion in the happiness response, though the interpretation (C52) is somewhat inferential. The consistency across environments strengthens the finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "The P\u0302+PPE model and win-loss model performed similarly in volatile environments (exceedance probability = 0.48), but PPE weights exceeded probability weights in both environments (stable: p < 10^-8; volatile: p < 0.05). Participants reacted more strongly to losses than wins (stable: difference 0.69\u00b10.12, p < 10^-6; volatile: difference 0.31\u00b10.13, p < 0.01), consistent with the asymmetric feedback frequencies (81% wins in stable, 63% in volatile). Win and loss weights were negatively correlated across participants (stable: \u03c1 = -0.56, p < 10^-6; volatile: \u03c1 = -0.68, p < 10^-20).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C69 provide nuanced analysis of happiness model components. The similar performance of P\u0302+PPE and win-loss models in volatile environments (C54) suggests limitations in distinguishing these models under high uncertainty. The asymmetric loss sensitivity (C61-C62) and its relationship to feedback frequencies (C63-C65) provide mechanistic insight, though the lack of correlation with performance (C66-C69) is notable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "PPE weights were higher in stable than volatile environments (difference: 0.18\u00b10.05, p < 0.001), contrary to the pattern for learning rates. PPE weights were not correlated with learning rates within environments (stable: \u03c1 = -0.10, p = 0.40; volatile: \u03c1 = -0.10, p = 0.37) or across environments (\u03c1 = -0.02, p = 0.84), but were highly consistent across environments (\u03c1 = 0.44, p < 0.001).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C75 reveal a critical dissociation: happiness PPE sensitivity does not track learning rate changes across environments. The high cross-environment correlation (C75) suggests PPE sensitivity is a stable individual trait, while the lack of correlation with learning rates (C72-C74) indicates mood and learning dynamics are partially independent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "The happiness forgetting factor was slightly higher in volatile than stable environments (\u03b3: 0.63\u00b10.03 vs 0.59\u00b10.04, p = 0.064), corresponding to 6-7 previous trials influencing current happiness in both environments. Forgetting factors were not correlated with learning rate differences (\u03c1 = -0.08, p = 0.50) and remained stable when fitted with switched learning rates (stable: \u03c1 = 0.63, p < 10^-8; volatile: \u03c1 = 0.56, p < 10^-6). Forgetting factors were highly consistent across environments (\u03c1 = 0.41, p < 0.001), suggesting a trait-like feature independent of environmental volatility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C83 demonstrate that happiness integration windows do not adapt to volatility like learning rates do. The control analysis with switched learning rates (C79-C81) strengthens this conclusion by showing forgetting factors are robust to learning rate misspecification. The cross-environment consistency (C82) supports the trait interpretation (C83).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "Depressive symptoms (PHQ) were uncorrelated with choice accuracy in stable (\u03c1 = -0.06, p = 0.63), volatile (\u03c1 = -0.09, p = 0.46), or difference scores (\u03c1 = 0.04, p = 0.71). Depression was also uncorrelated with all additive choice model parameters (\u03b1, \u03c6, \u03b2) in both environments (all p > 0.09).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C97 consistently show no relationship between depression and learning/choice parameters. The comprehensive testing across multiple parameters and environments strengthens this null finding. However, the study may be underpowered for detecting small effects, and the sample appears to be healthy volunteers rather than clinically depressed individuals.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "Average happiness was uncorrelated with depressive symptoms in stable environments (\u03c1 = 0.07, p = 0.58) but negatively correlated in volatile environments (\u03c1 = -0.23, p = 0.043). The difference in happiness between environments was correlated with depression (\u03c1 = -0.28, p = 0.014), with baseline mood parameters showing the same pattern (volatile: \u03c1 = -0.28, p = 0.017; difference: \u03c1 = -0.32, p = 0.0049). No other happiness model parameters correlated with depression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C102 reveal a specific depression-mood relationship in volatile but not stable environments. The convergent evidence from average happiness and baseline mood parameters strengthens this finding. However, the correlations are modest (\u03c1 ~ -0.23 to -0.32) and the volatile environment correlation (C99, p = 0.043) is marginally significant, raising concerns about multiple comparisons.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "The study demonstrates that subjects tracked outcome probabilities and integrated probability with reward magnitude using an additive strategy, consistent with recent evidence that organisms use additive strategies under uncertainty. Mood dynamics were more closely related to learning-relevant variables (probability, PPEs) than learning-irrelevant variables (reward magnitude, RPEs), with PPE and forgetting factor parameters correlated across environments. Depression affected happiness in volatile but not stable environments, without affecting choice behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C109 provide an accurate high-level summary of the main findings. The conclusions are well-supported by the detailed results, though some statements (C106, C107) are somewhat general. The integration of behavioral, computational, and clinical findings represents a comprehensive characterization of the relationship between learning and mood.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C118",
+      "C125",
+      "C131"
+    ],
+    "result": "The authors speculate that stable environments may attenuate depression's effects on mood, that previous risky decision tasks (with 50% probabilities) may be more comparable to volatile environments, and that depression might reduce mood in volatile environments through increased negative prediction errors or uncertainty misestimation. They suggest mood ratings may capture information beyond computational models and could quantify intrinsic reward from uncertainty reduction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C110-C115, C118, C125, C131 are explicitly speculative interpretations and hypotheses for future work. While plausible, they lack direct empirical support in the current study. These represent reasonable directions for future research but should not be considered established findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151"
+    ],
+    "result": "Statistical analyses used Wilcoxon signed rank tests for group comparisons and Spearman correlations for parameter relationships. Models were fitted by minimizing negative log likelihood using fmincon in MATLAB, with parameters treated as random effects. BIC was used for model comparison, and exceedance probabilities were computed using the VBA toolbox. Happiness ratings were z-scored except when relating baseline mood to depression. Analysis code is publicly available on GitHub.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C143-C151 provide appropriate methodological details for statistical and computational analyses. The methods are standard for this type of research, and code availability (C151) supports reproducibility. The z-scoring approach (C148) is appropriate for individual differences in scale use.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C152",
+      "C153",
+      "C154",
+      "C155",
+      "C156",
+      "C157",
+      "C158",
+      "C159",
+      "C160",
+      "C161",
+      "C162",
+      "C163",
+      "C164"
+    ],
+    "result": "The introduction reviews prior work showing that learning is driven by prediction errors, that learning rates increase in volatile environments, that emotions influence adaptive behavior, that unexpected outcomes affect affective states, and that reward expectations and RPEs explain mood in risky choice tasks. Previous research shows inconsistent evidence for learning deficits in depression but links anxiety to reduced learning rate adaptation. Affective states reflect uncertainty estimates and predict stress responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C152-C164 accurately summarize relevant prior literature with appropriate citations. These provide necessary context for the current study's contributions. The characterization of inconsistent depression findings (C161) and the gap regarding depression and volatility adaptation (C163) appropriately motivate the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C116",
+      "C117",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C132",
+      "C133",
+      "C134"
+    ],
+    "result": "The discussion contextualizes findings within prior literature on mood and depression, noting that previous risky decision studies found mood depends on RPEs and rewards, whereas the current study found mood depends on learning-relevant PPEs but not rewards. The authors propose that mood reflects learning-relevant information when adaptive behavior is required. They note that dopamine may represent both RPEs and PPEs, and that mood did not reflect all learning-relevant information (forgetting factors were trait-like rather than adaptive).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C116-C134 provide appropriate discussion of findings in relation to prior work. The contrast with previous risky decision studies (C126, C128-C129) is well-supported by the data. The interpretation that mood reflects learning-relevant information (C127, C130) is reasonable but somewhat general. The acknowledgment that mood doesn't reflect all learning-relevant information (C132-C133) appropriately recognizes limitations.",
+    "result_type": "MINOR"
+  }
+]

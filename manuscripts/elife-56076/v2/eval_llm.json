@@ -1,0 +1,377 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "The smFISH method accurately detects and quantifies individual mRNA molecules in Drosophila wing imaginal discs with low false-positive (0.5%) and false-negative (6%) rates, validated through multiple control experiments including actinomycin-D treatment, negative controls, dual probe-set hybridization, and manual curation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C28 and C103-C106 provide comprehensive validation of the smFISH method through multiple independent approaches: negative controls (C22), physical principles validation (C23), intensity distribution analysis (C24), transcription inhibition (C25), false-positive estimation (C26), false-negative estimation (C27), comparison to other systems (C28), and extensive manual validation (C103-C106). The convergence of multiple validation strategies strongly supports the accuracy of the method.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C19",
+      "C20"
+    ],
+    "result": "Sens mRNA abundance in the wing disc varies from 1-50 molecules per cell in two stripes adjacent to the DV boundary, reflecting a graded expression pattern induced by the Wg morphogen, with peaks in mRNA number observed as a function of distance from the DV boundary.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C31 present quantitative measurements of sens mRNA distribution that are consistent with the known biology of Wg-induced Sens expression (C19-C20). The data show the expected spatial pattern with appropriate quantification and are supported by Figure 1F-G. The inference connecting mRNA abundance to Wg signaling (C30) is reasonable given the cited prior work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "smFISH successfully detected mRNAs from four Dpp-responsive genes (salm, omb, dad, brk) with expression patterns that qualitatively and quantitatively match their known spatial distributions in the wing disc, validated by uniform expression of the control gene sd.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C36 establish the known expression patterns from prior work, while C37-C38 demonstrate that smFISH recapitulates these patterns. The use of sd as a uniformly expressed control (C39-C40) provides important validation that the observed spatial patterns are not artifacts of the method. The convergence of prior knowledge and new measurements supports this result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "smFISH detects two distinct populations of fluorescent spots: dim cytoplasmic spots corresponding to mature mRNAs and brighter nuclear spots corresponding to sites of nascent transcription, validated by intron-specific probes that exclusively detect the nuclear population.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C43 describe the observation of two spot populations with different intensities and localizations. Claims C44-C46 provide critical validation using intron probes, which can only detect nascent transcripts since introns are spliced post-transcriptionally (C45). This experimental design provides strong evidence that the bright nuclear spots represent active transcription sites.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Fewer than 15% of diploid wing disc nuclei contain more than one detectable transcription site per gene, likely due to physical pairing of homologous chromosomes causing alleles to be spatially juxtaposed and unresolvable by confocal microscopy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C47 presents a quantitative observation that is explained by the well-established phenomenon of somatic chromosome pairing in Drosophila (C48-C49). The interpretation that paired alleles cannot be resolved is reasonable given the diffraction limit of the microscopy and is supported by cited prior work on chromosome pairing.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Between 50-80% of cells containing mature mRNAs lack detectable transcription sites, and the variance-to-mean ratio of mRNA number per cell (5-10) indicates that transcription does not follow a Poisson process, suggesting transcriptional bursting.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C50 presents a striking quantitative observation that is validated as not being a segmentation artifact (C51). Claims C52-C53 provide statistical analysis showing that the variance-to-mean ratio is much higher than 1, which rules out a Poisson process. This statistical reasoning is sound and the data support the conclusion that transcription is bursty rather than continuous.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "A two-state stochastic model of transcription with an elongation rate of 1100 nucleotides/min shows that a broad range of burst size and frequency combinations can explain the observed 20-50% frequency of cells with detectable transcription sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C54 establishes a key model parameter from prior experimental work. Claims C55-C56 present modeling results showing that the phase space of burst parameters is underdetermined by transcription site frequency alone. This is an important result that motivates the need for additional measurements to distinguish between burst size and frequency modulation. The modeling approach is appropriate and the conclusion is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "The frequency of detecting transcription sites varies spatially in a gene-specific manner that strongly parallels mRNA number per cell for all genes, and these two quantities are linearly correlated, confirming that Dpp and Wg regulate gene expression primarily through control of transcription initiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C60 present consistent observations across multiple genes showing spatial correlation and linear relationships between transcription site frequency and mRNA number. The use of sd as a control (C59) validates that this is not a technical artifact. The inference that morphogens regulate transcription initiation (C61) is well-supported by the linear correlation, though alternative explanations involving post-transcriptional regulation are not fully excluded.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "The slopes of the linear relationship between transcription site frequency and mRNA number are statistically indistinguishable for three Dpp-responsive genes (brk, omb, salm), suggesting that mRNA decay rates are similar among these genes and not actively regulated by Dpp.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C62 presents a statistical result showing similar slopes across genes. Claims C63-C64 draw reasonable inferences from this observation: if decay rates varied substantially or were regulated by Dpp, the slopes would differ. However, this inference assumes that other factors (e.g., translation rates, mRNA localization) do not significantly affect the relationship, which is not explicitly tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "The average number of nascent RNAs per transcription site does not vary with cell position relative to morphogen sources or with the likelihood of transcription occurring, indicating that burst size is independent of morphogen signaling levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C67 present consistent observations across spatial positions and transcription probabilities showing no correlation between nascent RNA number and morphogen signaling. This is an important negative result that constrains the mechanism of morphogen action. The measurements are supported by appropriate controls (sd gene) and the conclusion is well-justified by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Computational modeling shows that burst size modulation predicts a positive correlation between nascent RNA number and transcription site frequency, but this prediction is not observed experimentally, indicating that transcription burst size is not strongly regulated by Dpp and Wg.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C70 present a clear test of the burst size modulation hypothesis by comparing model predictions with experimental data. The mismatch between predictions and observations provides strong evidence against burst size regulation. This is a well-designed computational experiment that effectively constrains the mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Computational modeling shows that burst frequency modulation predicts little change in nascent RNA number as transcription site frequency changes, and these predictions agree well with experimental results, suggesting that Dpp and Wg regulate genes primarily by modulating transcriptional burst frequency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C73 present the complementary test showing that burst frequency modulation predictions match experimental observations. Combined with the negative result for burst size modulation (C68-C70), this provides strong support for the main conclusion that morphogens regulate burst frequency. The convergence of modeling and experimental data across multiple genes strengthens this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Despite diverse molecular mechanisms of regulation (brk is repressed by Mad/Medea/Schnurri, salm is directly activated by Dpp without Schnurri, omb is activated by unknown factors and repressed by Brk), all three genes show regulation of transcription burst frequency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C79 establish the diverse regulatory mechanisms from prior work, while C80 synthesizes this with the current findings to make an important point: burst frequency regulation is a common output despite different molecular inputs. This is a significant conceptual contribution supported by the combination of prior knowledge and new data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "In the two-state model of promoter kinetics, the on-rate (kon) is the most likely parameter being regulated by morphogens because it specifically affects burst frequency, and prior work shows that kon is potentiated by enhancer-promoter contact and transcription factor binding, suggesting that Dpp effector occupancy on enhancers modulates kon.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C82 establish the theoretical framework linking kon to burst frequency. Claims C83-C84 cite extensive prior work supporting the connection between enhancers, transcription factors, and burst frequency. Claim C85 makes a reasonable inference connecting these concepts to the current findings. The logic is sound and well-supported by both theory and prior experimental work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C86",
+      "C87"
+    ],
+    "result": "Burst frequency regulation is observed for developmental genes in both the embryo and imaginal discs, indicating that control of burst frequency is a common mechanism to regulate patterned gene expression during Drosophila development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C86 cites extensive prior work on burst frequency regulation in embryos, while C87 synthesizes this with the current findings to conclude that burst frequency regulation is a general developmental mechanism. This is a well-supported conclusion that places the current work in a broader context.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "While a two-state model explains much of the experimental data, other regulatory mechanisms exist in development, including burst size regulation by Notch signaling, temporal control of transcription windows, multi-state promoter transitions, and chromatin remodeling, suggesting additional complexity beyond the two-state framework.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C91 cite prior work demonstrating alternative regulatory mechanisms in other developmental contexts. Claim C92 appropriately acknowledges the limitations of the two-state model while asserting that it explains much of the current data. This balanced assessment is well-supported and appropriately cautious.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "omb and salm mRNA numbers drop gradually with distance from the Dpp source, contrasting with prior reports of sharp expression boundaries, possibly due to post-transcriptional thresholds in protein production or non-linear antibody detection in previous studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C93-C96 present observations of gradual mRNA gradients, while C97 cites prior work reporting sharp protein boundaries. Claims C98-C99 offer speculative explanations for this discrepancy. However, without direct protein measurements in the same samples or systematic comparison of detection methods, the cause of the discrepancy remains uncertain. This is an interesting observation that requires follow-up work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "The Voronoi tessellation method for assigning mRNAs to cells achieves 85% accuracy in nuclear segmentation and, despite local assignment errors and inability to accurately represent pseudostratified epithelial architecture, produces trustworthy global trends in mRNA/cell distributions across the wing disc.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C107 provides quantitative validation of nuclear segmentation. Claims C108-C109 honestly acknowledge limitations of the Voronoi approach and the current state of the field. Claims C110-C111 justify the method by showing that global trends are consistent across independent samples. This is a reasonable approach given technical limitations, and the validation supports its use for population-level analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C32",
+      "C33"
+    ],
+    "result": "The smFISH method successfully detects sens mRNA in eye imaginal discs, demonstrating broad applicability to different imaginal disc types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C33 demonstrate that the method works in a different tissue type (eye disc) beyond the wing disc. This is important for establishing the generality of the approach, though the validation is less extensive than for the wing disc.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "Background on morphogen signaling, transcriptional regulation, and transcriptional bursting establishes the conceptual framework for the study, including that morphogens form gradients that elicit concentration-dependent transcription outputs, transcription occurs in bursts, and transcription factor availability affects burst frequency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C15 establish background knowledge from prior work that is well-supported by citations and represents established concepts in the field. This provides appropriate context for the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "Wg is produced at the DV boundary and Dpp is produced at the AP boundary of the wing disc, forming concentration gradients that regulate gene expression in a concentration-dependent manner.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C18 describe well-established features of wing disc morphogen expression patterns, supported by Figure 1A and prior knowledge. This provides essential biological context for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C21",
+      "C101"
+    ],
+    "result": "The sfGFP-sens transgenic line rescues the endogenous sens gene based on function and expression, validating its use as a reporter for sens transcription.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21 and C101 cite prior work demonstrating that the transgene is a functional replacement for the endogenous gene. This is important validation for using the transgene as a reporter, though the current study does not independently verify this.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C54",
+      "C112"
+    ],
+    "result": "The stochastic model uses experimentally determined parameters including a transcription elongation rate of 1100 nucleotides/min and an mRNA decay rate of 0.04/min for sens.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54 and C112 establish key model parameters from prior experimental work in Drosophila. Using experimentally determined parameters rather than fitting them is a strength of the modeling approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C102"
+    ],
+    "result": "The expected size of diffraction-limited fluorescent spots at 633 nm wavelength with a 63X objective is approximately 600 nm in diameter.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C102 states a physical principle of microscopy supported by citation. This is used to validate that observed spot sizes match expectations for single molecules.",
+    "result_type": "MINOR"
+  }
+]

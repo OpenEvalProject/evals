@@ -1,0 +1,1673 @@
+{
+  "submission": {
+    "id": "eff34cfd-f4a8-4768-a71e-393d8f45e4f0",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T20:19:34.423636Z",
+    "updated_at": "2025-12-02T20:19:34.423636Z"
+  },
+  "content": [
+    {
+      "id": "c626170a-b095-4459-ac79-94be8a51bbcb",
+      "submission_id": "eff34cfd-f4a8-4768-a71e-393d8f45e4f0",
+      "content_type": "manuscript",
+      "content_text": "# New insights on the modeling of the molecular mechanisms underlying neural maps alignment in the midbrain\n\n## Authors\n\n- Elise Laura Savier<sup>1</sup> ([ORCID: 0000-0001-7512-1630](https://orcid.org/0000-0001-7512-1630)) \u2020\n- James Dunbar<sup>2</sup>\n- Kyle Cheung<sup>2</sup>\n- Michael Reber<sup>2</sup> ([ORCID: 0000-0001-8842-7276](https://orcid.org/0000-0001-8842-7276)) \u2020\n\n### Affiliations\n\n1. Department of Biology and Psychology, University of Virginia Charlottesville United States\n2. Donald K. Johnson Eye Institute, Krembil Research Institute, University Health Network Toronto Canada\n3. Laboratory of Medicine and Pathobiology, University of Toronto Toronto Canada\n4. Ophthalmology and Vision Sciences, University of Toronto Toronto Canada\n5. Cell and System Biology, University of Toronto Toronto Canada\n6. CNRS UPR 3212, University of Strasbourg Strasbourg France\n\n\u2020 Corresponding author\n\n## Abstract\n\nWe previously identified and modeled a principle of visual map alignment in the midbrain involving the mapping of the retinal projections and concurrent transposition of retinal guidance cues into the superior colliculus providing positional information for the organization of cortical V1 projections onto the retinal map (Savier et al., 2017). This principle relies on mechanisms involving Epha/Efna signaling, correlated neuronal activity and axon competition. Here, using the 3-step map alignment computational model, we predict and validate in vivo the visual mapping defects in a well-characterized mouse model. Our results challenge previous hypotheses and provide an alternative, although complementary, explanation for the phenotype observed. In addition, we propose a new quantification method to assess the degree of alignment and organization between maps, allowing inter-model comparisons. This work generalizes the validity and robustness of the 3-step map alignment algorithm as a predictive tool and confirms the basic mechanisms of visual map organization.\n\n## Introduction\n\nUnderstanding and modeling the mechanisms of neural circuits formation in the brain has been a challenging subject in fundamental neurobiology for decades. One of the most studied biological models to investigate the formation and function of sensory connectivity -or sensory maps- from both experimental and theoretical standpoints is the superior colliculus (SC), an evolutionary conserved structure located in the midbrain (Cang and Feldheim, 2013; Basso and May, 2017). In most vertebrates, the SC is the premier brain center for integrating sensory inputs from visual, auditory and somatosensory modalities distributed in different interacting laminae. This structure is a key node in the network of brain areas responsible for controlling the location of attention and even decision-making (Basso and May, 2017). Visual inputs in the superficial layers of the SC correspond to the organized projections from the retinal ganglion cells (RGCs) in the retina (the retino-collicular (RC) projections) and from layer V neurons in the primary visual cortex V1 (the cortico-collicular [CC] projections). Both projections form visual maps that must be aligned and in register to allow efficient detection of visual stimuli (Basso and May, 2017; Liang et al., 2015; Zhao et al., 2014).\n\nAlthough many studies have focused on the mechanisms involved in the formation of the RC map, little is known about how the RC and CC maps are aligned during development. Previous studies on RC mapping have revealed the involvement of gradients of Eph tyrosine kinases receptors (Eph) and their cognate membrane-bound ligands, the ephrins (Efn), together with competition between axons for collicular space and correlated neuronal activity in the form of spontaneous waves (Ackman and Crair, 2014; Cang and Feldheim, 2013; Triplett et al., 2011). To gain insight into the molecular mechanisms involved in map formation, mouse genetic models were generated, in which the expression of members of the Eph and ephrin family was manipulated. The mapping mechanisms of the nasal-temporal axis of the retina onto the rostral-caudal axis of the SC involving Epha/Efna signaling have been, by far, the most studied experimentally (Feldheim et al., 1998; Brown et al., 2000; Feldheim et al., 2000; Reber et al., 2004; Rashid et al., 2005; Pfeiffenberger et al., 2006; Triplett et al., 2009; Bevins et al., 2011; Suetterlin and Drescher, 2014; Owens et al., 2015; Savier et al., 2017; Savier and Reber, 2018). Several hypotheses have been made to account for the phenotypes observed in mouse genetic models and this extensive body of work has been used to generate computational approaches which attempt to replicate experimental findings (Honda, 2003; Reber et al., 2004; Honda, 2004; Koulakov and Tsigankov, 2004; Goodhill and Xu, 2005; Willshaw, 2006; Tsigankov and Koulakov, 2006; Tsigankov and Koulakov, 2010; Triplett et al., 2011; Simpson and Goodhill, 2011; Grimbert and Cang, 2012; Sterratt and Hjorth, 2013; Willshaw et al., 2014; Hjorth et al., 2015; Owens et al., 2015; Savier et al., 2017). However, until recently, these models have not been able to explain how collicular visual maps are aligned during development.\n\nInterestingly, the formation of the RC map occurs prior to the establishment of the CC map. Other studies have shown that the existence of the RC map is necessary for the formation of the CC map, suggesting an interdependence of the two mechanisms (Khachab and Bruce, 1999; Rhoades et al., 1985; Triplett et al., 2009). Similar observations have been made in other part of the visual system (Shanks et al., 2016). Another piece of evidence came from the study of map alignment in the Isl2-Epha3KI, one of the best characterized mutant in the field. In these mutants, the Epha3 receptor is ectopically expressed in 50% of RGCs, leading to a duplication of the RC map (Brown et al., 2000). Strikingly, a full duplication of the CC map is also observed in the Isl2Epha3/Epha3 homozygous mutants, which display a normal retinotopy in the visual cortex (Triplett et al., 2009). The authors concluded that a retinal-matching mechanism involving spontaneous correlated activity in the retina instructs CC projections and alignment onto the RC map. Alternative explanations can also be suggested. For instance, the ectopic expression of Epha3 specifically in the retina may alter the expression of other members of Epha/Efna throughout the visual system disrupting maps formation and alignment. In another example, molecular cues originating from the retina could be carried over to the colliculus and provide mapping/alignment information to ingrowing cortical axons, as suggested earlier (Savier et al., 2017). This latter hypothesis is in line with a retinal-matching mechanism inferred by Triplett and collaborators (Triplett et al., 2009). A similar mechanism of guidance cues transportation has recently been demonstrated for axon guidance at the optic chiasm in the mouse visual system (Peng et al., 2018).\n\nTo gain insight into the implication of molecular guidance cues in the retina in the alignment of visual maps in the SC, we have characterized a new mutant, the Isl2-Efna3KI, which over-expresses the ligand Efna3 in 50% of the RGCs (Savier et al., 2017). To our surprise, this mutant does not display any defect in the formation of the RC map, however the subsequent CC map is duplicated. This led us to conclude that molecular guidance cues expressed in the retina are implicated in the formation of the CC map (Savier et al., 2017). To simulate this mechanism in silico, we generated the 3-step map alignment model, based on the Koulakov model (Koulakov and Tsigankov, 2004; Tsigankov and Koulakov, 2010; Tsigankov and Koulakov, 2006). Many different algorithms have been generated to model RC mapping controlled by Eph/Efn. Recently, Hjorth et al., 2015 developed a pipeline which allowed for systematic testing of the currently available models and revealed that most cannot reproduce all nuances of experimental findings (Isl2-Epha3KI, EfnaKOs and Math5KO). Among those tested, the most faithful was the Koulakov model, which had recently been extended to explain the variability in the phenotypes observed in a particular mouse model, the Isl2-Epha3KI (Owens et al., 2015).\n\nThe 3-step map alignment model simulates the formation of the RC map and, for the first time, the subsequent formation and alignment of the CC map along the rostral-caudal axis of the SC based on experimental and mechanistic evidence (Savier et al., 2017; Savier and Reber, 2018). This algorithm predicts normal wild-type (WT) mapping as well as the map alignment defects observed in the Isl2-Efna3KI animals (Savier et al., 2017). However, whether it also simulates mapping abnormalities observed in other Epha/Efna mutants, and particularly in the Isl2-Epha3KI animal model, is unknown. Here we demonstrate that the 3-step map alignment algorithm accurately simulates both RC and CC mapping defects in Isl2-Epha3KI mutants (Brown et al., 2000; Triplett et al., 2009). Our results strongly suggest that the mechanism underlying the subsequent duplication of the CC projection corresponds to a redistribution of retinal molecular cues, the Efnas, into the SC. The retinal Efnas, provided by the incoming retinal axons within the SC, act together with correlated activity to instruct CC alignment onto the RC map (Savier et al., 2017; Triplett et al., 2009). We further confirmed and validated the predictions of the algorithm by quantitative in vivo map analysis in both heterozygous and homozygous Isl2-Epha3KI animals. Moreover, a new implementation of the algorithm generates indexes providing a qualitative measure of map organization and allowing comparison of visual map layouts between biological models. Together with our previous work (Savier et al., 2017), these data confirm the validity and robustness of our algorithm and reinforces the underlying principle of visual map formation and alignment in the midbrain, where the layout of the dominant RC map specifies the alignment of the CC map through spontaneous correlated activity and transposed retinal Efnas. Such principle dictates the optimal functioning of the system by allowing fine adjustments which compensate for intrinsic variability -or stochasticity- of sensory maps formation.\n\n## Results\n\n### Normal Ephas/Efnas expression in Isl2Epha3/Epha3 retinas, SC, and V1 cortex\n\nRetinal expression of Epha receptors in Isl2-Epha3KI animals (in which Epha3 was targeted into the Isl2 locus) has been extensively characterized (Reber et al., 2004). However, whether EPHA3 ectopic expression in Isl2-positive (Isl2(+)) RGCs affects retinal Efna co-expression is unknown. We performed a quantitative analysis of retinal Efna transcripts in P1/P2 nasal, central, and temporal acutely isolated RGCs (Savier et al., 2017), revealing similar expression levels between Isl2Epha3/Epha3 and WT littermates. The graded expression of Efna2 and Efna5 running form high-nasal to low-temporal is preserved in Isl2Epha3/Epha3 animals, whereas the expression of Efna3 as well as Epha3 is homogeneous (Figure 1A \u2013 Figure 1\u2014source data 1A). Transcript analyses in V1 and SC (Figure 1B \u2013 Figure 1\u2014source data 1B) revealed similar levels of Efna2/a3/a5 and Epha4/a7 receptors in Isl2Epha3/Epha3 compared to WT littermates at P7 excluding indirect effects on mapping due to local changes of Ephas/Efnas gene expression.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/59754/elife-59754-fig1-v1.jpg)\n\n**Figure 1.:** (A) Median Efna2/a3/a5 expression levels (relative to wild-type nasal expression) in P1/2 wild-type (WT - white) and Isl2Epha3/Epha3 (gray) acutely isolated RGCs from nasal (N), central (C) and temporal (T) retinas (WT, Isl2Epha3/Epha3, n = 6 animals, 12 retinas), Two-way ANOVA without replication: Efna2 x genotype: F(1,2) = 3.72 < Fcrit.=18.5, p=0.19; Efna3 x genotype : F(1, 2)=11.13 < Fcrit.=18.5, p=0.07; Efna5 x genotype: F(1, 2)=3.58 < Fcrit.=18.5, p=0.20. (B) Median Efna2/a3/a5 ligands and Epha4/a7 receptors expression levels (relative to WT expression levels) in Isl2Epha3/Epha3 V1 (WT n = 5 animals, Isl2Epha3/Epha3n = 8 animals; variables are normally distributed, one sample t-test: Efna2: p=0.29; Efna3: p=0.43; Efna5: p=0.42; Epha4: p=0.07; Epha7: p=0.54) and SC (WT n = 5 animals, Isl2Epha3/Epha3n = 6 animals; variables are normally distributed, one sample t-test: Efna2: p=0.20; Efna3: p=0.65; Efna5: p=0.71; Epha4: p=0.11; Epha7: p=0.17). qPCRs were repeated three times with duplicates for each sample.\n\n### Simulation of the Isl2-Epha3KI mutants retino- and cortico-collicular mapping\n\nOur data above, together with previous work (Reber et al., 2004; Savier et al., 2017), showed that ectopic expression of Epha3 or Efna3 in Isl2(+) RGCs does not affect endogenous Efnas nor Ephas expression within the retina, SC, and V1. We can reasonably assume that the equations modeling retinal, collicular and cortical Efna gradients as well as cortical Epha gradients related to the Isl2-Epha3KI genotypes are equivalent to the equations previously characterized (measured experimentally or estimated) in WT animals (Reber et al., 2004; Cang et al., 2005; Tsigankov and Koulakov, 2006; Tsigankov and Koulakov, 2010; Bevins et al., 2011; Savier et al., 2017). Measured gradients of Epha receptors (R Epha) in RGCs along the nasal-temporal axis (x), R Epha (x)retina (Figure 2A,G,M; Brown et al., 2000; Reber et al., 2004) are modeled by two equations, one corresponding to Isl2(+) RGCs expressing WT levels of Ephas + Epha3 (in Figure 2G,M) and the second corresponding to Isl2-negative (Isl2(-)) RGCs expressing only WT levels of Ephas (see Materials and methods for numerical values).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/59754/elife-59754-fig2-v1.jpg)\n\n**Figure 2.:** (A, G, M) Representation of measured retinal Epha gradients along the nasal-temporal (NT) axis in WT (A), Isl2Epha3/+ (G) and Isl2Epha3/Epha3 (M) animals (see Materials and methods and Table 1 for equations). (B, H, N) Representation of the estimated collicular Efna gradients along the rostral-caudal (RC) axis in WT (B), Isl2Epha3/+ (H) and Isl2Epha3/Epha3 (N) animals (see Materials and methods and Table 1 for equations). (C, I, O) Representation of the transposed retinal Efna gradients into the SC along the RC axis in WT (C), Isl2Epha3/+ (I) and Isl2Epha3/Epha3 (O) animals (see Materials and methods and Table 1 for equations). (D, J, P) Representation of the estimated cortical Epha gradients along the medial-lateral (ML) axis in V1 in WT (D), Isl2Epha3/+ (J) and Isl2Epha3/Epha3 (P) animals (see Materials and methods and Table 1 for equations). (E, K, Q) Simulated RC map in in WT (E), Isl2Epha3/+ (K) and Isl2Epha3/Epha3 (Q) animals generated by the 3-step map alignment algorithm (representative of n = 20 runs). (F, L, R) Simulated cortico-collicular map in WT (F), Isl2Epha3/+ (L) and Isl2Epha3/Epha3 (R) animals generated by the 3-step map alignment algorithm (representative of n = 20 runs). Abbreviations: N, nasal; T, temporal; R, rostral; C, caudal; M, medial; L, lateral.\n\nThe projections of one hundred RGCs onto the SC, the RC map, were simulated by the 3-step map alignment model (107 iterations per run, n = 20 runs) for the WT, Isl2Epha3/+ and Isl2Epha3/Epha3 genotypes (Figure 2E,K,Q). RGCs axons/growth cones carrying gradients of Epha receptors are repelled by complementary gradients of collicular Efna (forward signaling) (Figure 2B,H,N), while correlated activity attracts projections originating from similar locations through pair-wise attraction, which is inversely proportional to the distance between two RGC/V1 neurons. Results showed a continuous, single map for WT (Figure 2E), as expected from previous experimental findings and theoretical modeling (Brown et al., 2000; Reber et al., 2004; Savier et al., 2017; Bevins et al., 2011). For the Isl2Epha3/+, partially duplicated RC mapping is modeled, together with the presence of a collapse point for temporal-most RGCs (Figure 2K) as extensively observed experimentally (Brown et al., 2000; Reber et al., 2004; Bevins et al., 2011) and theoretically (Reber et al., 2004; Willshaw, 2006; Tsigankov and Koulakov, 2010; Simpson and Goodhill, 2011). For Isl2Epha3/Epha3, the RC map is fully duplicated, similarly to previous experimental and theoretical findings (Figure 2Q; Brown et al., 2000; Reber et al., 2004; Willshaw, 2006; Tsigankov and Koulakov, 2010; Bevins et al., 2011; Simpson and Goodhill, 2011).\n\nIn the following step, the gradient of experimentally measured retinal Efnas is transposed to the SC according to the layout of the RC map (Figure 2C,I,O). For WT, this generates a smooth monotonically increasing gradient (Figure 2C). For the Isl2Epha3/+ genotype, this transposition generates a double oscillatory gradient of retinal Efnas in the SC (Figure 2I), a consequence of the partial duplication of the RC map (Figure 2K). For the Isl2Epha3/Epha3, the transposition of the retinal Efna gradients, according to the fully duplicated RC map (Figure 2Q), generated a double oscillatory gradient of transposed retinal Efnas in the SC (Figure 2O).\n\nFinally, the projections of one hundred V1 neurons onto the SC (the CC map) were simulated for all three genotypes (Figure 2F,L,R). V1 axons/growth cones carrying gradients of Epha receptors (Figure 2D,J,P) are repelled by the transposed gradients of retinal Efna into the SC (forward signaling) as suggested previously (Savier et al., 2017). The WT CC map is smooth and continuous (Figure 2F), similarly to the RC map (Figure 2E). The Isl2Epha3/+ simulations show dispersed projections forming two separated maps collapsing in the rostral-most part of the SC from lateral-most V1 neurons (Figure 2L). CC map simulations for the Isl2Epha3/Epha3 genotype shows dispersed projections forming two fully separated maps (Figure 2R).\n\n### Experimental validation of the 3-step map alignment model\n\nTo validate the simulations of the model predicting the formation of visual maps in the Isl2-Epha3KI animals, we performed anterograde RC and CC tracings in vivo. In the Isl2Epha3/+ animals, two experimental measurements (Figure 3A, triangles and square in Figure 3B \u2013 Figure 3\u2014source data 1B) are shown, plotted on the simulated RC map (black dots, gray/black lines, Figure 3B) indicating a duplicated projection for cells from the nasal pole of the retina as extensively shown earlier (Brown et al., 2000; Reber et al., 2004; Savier et al., 2017). For RGCs located on the temporal side of the retina, a single projection can be found as was also described previously (Brown et al., 2000; Reber et al., 2004; Savier et al., 2017). Our experimental measurements (triangles and square, Figure 3B \u2013 Figure 3\u2014source data 1B) match with the theoretical representation (black dots, black/gray lines Figure 3B). Further validation of the algorithm was performed by in vivo analysis of the CC mapping in the Isl2Epha3/+ animals. CC anterograde tracing (Figure 3D, n = 15, red dots/lines \u2013 Figure 3\u2014source data 1D), performed as described earlier (Savier et al., 2017), revealed a partially duplicated CC map with the occurrence of a collapse point near 82% of the medial-lateral axis of V1 (16% of the rostral-caudal axis of the SC), similarly to the simulated map (black dots, black/gray lines Figure 3D, two-samples Kolmogorov-Smirnov test). Two of the injections and their corresponding terminations zones in the SC are depicted (Figure 3C, arrows and arrowhead in Figure 3D).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/59754/elife-59754-fig3-v1.jpg)\n\n**Figure 3.:** (A) Images of two experimental injections showing the collicular terminations zones (triangles and square, top-view, upper panels) after focal retinal injections (arrows, flat-mount, lower panel) in Isl2Epha3/+ animals. (B) Cartesian representation of the injections (triangles and square) in (A) superimposed with the simulated RC map (black dots, n = 100) in Isl2Epha3/+. Map profile is calculated by LOESS smoothing (black and gray lines). (C) Images of two experimental injections showing the collicular termination zones (sagittal view, upper panels) after focal cortical V1 injection (top-view, lower panels). Arrows and arrowheads indicate the site of the termination zones. Lower left panel shows CO staining (dark gray) delineating V1. (D) Cartesian representation of the experimental (red dots/lines, n = 15 animals) and simulated (black dots, n = 100) CC maps calculated by LOESS smoothing (black, red and gray lines). Arrows and arrowhead represent the two injections shown in (C). Two-samples Kolmogorov-Smirnov test, D-stat = 0.273 < D-crit.=0.282, p=0.06, simulated and experimentally measured CC maps are not significantly different. (E) Images of two experimental injections showing the collicular terminations zones (triangles and squares, top-view, upper panels) after focal retinal injection (arrows, flat-mount, lower panel) in Isl2Epha3/Epha3 animals. (F) Cartesian representation of the injections (triangles and squares) in (E) superimposed with the simulated RC map (black dots, n = 100) in Isl2Epha3/Epha3. Map profile is calculated by LOESS smoothing (black and gray lines). (G) Images of two experimental injections showing the collicular duplicated termination zones (arrows and arrowheads, sagittal view, upper panels) after focal cortical V1 injection (top-view, lower panels). (H) Cartesian representation of the experimental (red dots/lines, n = 7 animals) and simulated (black dots, n = 100) CC maps calculated by LOESS smoothing (black, red and gray lines). Arrows and arrowheads represent the two examples in (G). Two-samples Kolmogorov-Smirnov test, D-stat = 0.190 < D-crit.=0.371, p=0.72, simulated and experimentally measured CC maps are not significantly different. Scale bars: 400 \u03bcm (A upper, C, E upper, G), 1 mm (A, E lower). Abbreviations: N, nasal; T, temporal; R, rostral; C, caudal; M, medial; L, lateral.\n\nIn Isl2Epha3/Epha3, RC duplications are observed as shown by two experimental measurements (triangles and squares) plotted on the RC map (Figure 3E,F \u2013 Figure 3\u2014source data 1F) and as extensively described previously (Brown et al., 2000; Reber et al., 2004). These experimental data match with the simulated mapping (black dots, black/gray lines Figure 3F). CC map tracing in vivo (Figure 3G,H, red dots/line, n = 7 \u2013 Figure 3\u2014source data 1H) revealed a fully duplicated CC map, as predicted by the simulations (Figure 3H, black dots, black/gray lines, two-samples Kolmogorov-Smirnov test). Two of the injections and their corresponding terminations zones in the SC are depicted (Figure 3G, arrows and arrowhead in Figure 3H). These results further validate the predictions and reinforce the underlying mapping principle encoded in the 3-step map alignment algorithm.\n\n### Retino/cortico-collicular maps organization indexes\n\nPrevious work demonstrated that RC and CC maps must be aligned and in register to allow efficient detection of visual stimuli by the SC (Zhao et al., 2014; Liang et al., 2015; Basso and May, 2017). We further implemented the 3-step map alignment algorithm to calculate an \u2018intrinsic dispersion index\u2019 (IDI) for each visual map (IDIretino and IDIcortico) and an \u2018alignment index\u2019 (AI) for each genotype. These indexes measure the overall organization of the RC and CC maps. IDIretino and IDIcortico indicate the degree of dispersion of the corresponding map (or within-map variability) and should be minimum. AI represents the degree of alignment between the RC and CC maps and should be close to 1. AI = 1 corresponds to the theoretical one-to-one alignment of all the RGCs projections with all the V1 projections onto the SC, however such value will not be observed due to the intrinsic variability of the mapping introduced by the stochastic process of spontaneous activity. In WT animals, median IDIretino = 5.66, 95% CI [5.15; 6.17], median IDIcortico = 8.12 [7.63; 8.60] and median AI = 2.23 [2.13; 2.33] (Figure 4A,G \u2013 Figure 4\u2014source data 1A, G). These values correspond to the control values for aligned, single RC and CC maps (Figure 4B, black and white dots). In Isl2Epha3/+, median IDIretino = 38.8 [36.8; 40.8], median IDIcortico = 38.0 [36.1; 40.0] and median AI = 2.07 [1.95; 2.19] (Figure 4A \u2013 Figure 4\u2014source data 1A) indicating increased spreading of both RC and CC projections, due to the partially duplicated maps (Figure 4C, black and white dots). The median AI value in Isl2Epha3/+ (2.07 [1.95, 2.19]) is not statistically different from WT (Figure 4G \u2013 Figure 4\u2014source data 1G), suggesting that Isl2Epha3/+ RC/CC maps are aligned (Figure 4C, black and white dots). In the Isl2Epha3/Epha3 animals, median IDIretino = 51.7 [50.8; 52.6], median IDIcortico = 50.6 [49.7; 51.5] and median AI = 2.2 [2.08; 2.32] (Figure 4A,G - Figure 4\u2014source data 1A,G), indicating an increased separation between the RCand CC maps compared to WT and Isl2Epha3/+ due to fully duplicated projections (Figure 4D white and black dots). The median AI value (2.20 [2.02; 2.43]) is not significantly different from WT (Figure 4G \u2013 Figure 4\u2014source data 1G), indicating aligned RC and CC maps (Figure 4D, black and white dots). Median AI values for WT, Isl2Epha3/+ and Isl2Epha3/Epha3 are not significantly different suggesting that RC and CC maps in these animals are aligned (Figure 4G \u2013 Figure 4\u2014source data 1G), although partially or fully duplicated.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/59754/elife-59754-fig4-v1.jpg)\n\n**Figure 4.:** (A) Violin plot representation of the median IDIs (from n = 10 simulated maps, each composed of 100 projections) in WT, Isl2-Epha3KI and Isl2-Efna3KI animal models. Mann-Whitney test: WT IDIretino vs. Isl2Epha3/+ IDIretino, z-score = 12.08, effect r = 0.85, p=6E-55; WT IDIcortico vs. Isl2Epha3/+ IDIcortico, z-score = 12.04, effect r = 0.85, p=8E-52; Isl2Epha3/+ IDIretino vs Isl2Epha3/Epha3 IDIretino, z-score = 11.25, effect r = 0.80, p=2E-39; Isl2Epha3/+ IDIcortico vs Isl2Epha3/Epha3 IDIcortico, z-score = 10.53, effect r = 0.74, p=1E-32; WT IDIcortico vs Isl2Efna3/+ IDIcortico, z-score = 8.30, effect r = 0.59, p=1E-18; WT IDIcortico vs Isl2Efna3/Efna3 IDIcortico, z-score = 10.37, effect r = 0.73, p=3E-31; Isl2Efna3/+ IDIcortico vs Isl2Efna3/Efna3 IDIcortico, z-score = 6.93, effect r = 0.49, p=6E-13; ***p<0.001. (B, C, D, E, F) Representation and superimposition of simulated RC (retino-collicular) (white dots) and CC (cortico-collicular) (black dots) maps in WT (B), Isl2Epha3/+ (C), Isl2Epha3/Epha3 (D), Isl2Efna3/+ (E) and Isl2Efna3/Efna3 (F) animals (representative of n = 10 runs). (G) Box plot representation of median AI (from n = 20 simulated RC/CC maps) in WT, Isl2Epha3/+, Isl2Epha3/Epha3, Isl2Efna3/+ and Isl2Efna3/Efna3 animals. Mann-Whitney test: AI WT vs. AI Isl2Epha3/+, z-score = 1.62, effect r = 0.26 p=0.10; AI WT vs. AI Isl2Epha3/Epha3, z-score = 0.11, effect r = 0.02, p=0.90; AI WT vs AI Isl2Efna3/+, z-score = 5.40, effect r = 0.85, p=1.45E-11; AI WT vs AI Isl2Efna3/Efna3, z-score = 5.40, effect r = 0.85, p=1.45E-11. ***p<0.001. Abbreviations: IDI, intrinsic dispersion index; AI, alignment index; WT, wild-type; N, nasal; T, temporal; R, rostral; C, caudal; M, medial; L, lateral.\n\nTo further test and validate these map organization indicators, we calculated the IDIs and AI in previously characterized Isl2Efna3/+ and Isl2Efna3/Efna3 animals (Savier et al., 2017). Median values for Isl2Efna3/+ are IDIretino = 5.56 [5.04; 6.07] and IDIcortico = 12.5 [11.8; 13.2] (Figure 4A \u2013 Figure 4\u2014source data 1A). IDIretino is not significantly different from WT suggesting no dispersion of the RC map (Figure 4E, white dots). However, IDIcortico is significantly different from WT indicating a spreading of the CC map (Figure 4E, black dots). This suggests a misalignment between RC and CC maps (Figure 4E) as confirmed by the median AI value in Isl2Efna3/+ (Figure 4G, 4.52 [4.28, 4.76] - Figure 4\u2014source data 1G), significantly different from WT. Visual map misalignment is more pronounced in Isl2Efna3/Efna3 (median AI = 8.85 [8.23, 9.26], Figure 4G \u2013 Figure 4\u2014source data 1G) compared to Isl2Efna3/+ as previously shown in vivo (Savier et al., 2017). Map dispersion value IDIretino in Isl2Efna3/Efna3 indicates that RC map spreading is similar to WT (Figure 4F, white dots; Figure 4A, median IDIretino = 5.56 [5.08, 6.03], not significantly different from WT) whereas IDIcortico indicates dispersion of the CC map (Figure 4F, black dots; Figure 4A, median IDIcortico = 19.1 [17.7, 20.5] \u2013 Figure 4\u2014source data 1A) as demonstrated previously (Savier et al., 2017). Such significant dispersion of the CC map leads to an important misalignment between RC and CC projections in Isl2Efna3/Efna3 animals (median AI = 8.85 [8.59; 9.11] significantly different from WT, Figure 4F,G).\n\nWe undertook a more detailed analysis of the mapping organization and alignment by implementing the local \u2018intrinsic dispersion variation\u2019 (IDV) (y axis) for each RC and CC maps along the rostral-caudal axis of the SC (x axis, Figure 5\u2014source data 1). Median local IDVs indicate the degree of dispersion and alignment as a function of the position along the rostral-caudal axis in the SC. In WT (Figure 5A), Isl2Epha3/+ (Figure 5B) and Isl2Epha3/Epha3 (Figure 5C), median local IDVs between RC and CC maps are similar and covary (> 0) (WT RC/CC: Jaccard similarity index = 0.60 indicating 60% overlap- covariance = 1.64; Isl2Epha3/+RC/CC: Jaccard similarity index = 0.30, covariance = 88.2; Isl2Epha3/Epha3 RC/CC: Jaccard similarity index = 0.55, covariance = 12.8), indicating that the maps are aligned. This is in sharp contrast to the Isl2Efna3/+ (Figure 5D) and Isl2Efna3/Efna3 (Figure 5E) animals where median local RC and CC IDVs variation do not superimpose nor covary (Isl2Efna3/+RC/CC: Jaccard similarity index = 0.17, covariance = \u22121.99; Isl2Efna3/Efna3RC/CC: Jaccard similarity index = 0.08, covariance = \u22124.13). Moreover, values of IDV are indicative of map dispersion along the RC axis in the SC. We calculated a cut-off value of median local IDV based on WT RC/CC maps organization (median local IDVthreshold = 14.7, the minimum local IDV, dashed black line in Figure 5) corresponding to the WT maps dispersion. Values greater than the local IDVthreshold, indicate a duplication of the map, while values below this threshold indicate a single map. In WT (Figure 5A, yellow), Isl2Efna3/+ (Figure 5D, light red) and Isl2Efna3/Efna3 (Figure 5E, light blue), median local IDVretino representations suggest a similar dispersion along the RC axis with all IDV values below IDVthreshold indicating single maps and corresponding to experimental observations (Savier et al., 2017). In Isl2Epha3/+ IDVretino and IDVcortico (Figure 5B), Isl2Epha3/Epha3 IDVretino and IDVcortico (Figure 5C), Isl2Efna3/+ IDVcortico (Figure 5D, dark red) and Isl2Efna3/Efna3 IDVcortico (Figure 5E, dark blue), values are above IDVthreshold, indicating map duplication. More precisely, in Isl2Epha3/+ animals, median local IDVretino and median local IDVcortico reach IDVthreshold at 12% and at 8% of the rostral-caudal axis in the SC respectively (Figure 5B) consistent with the position of the collapse points described earlier (Brown et al., 2000; Savier et al., 2017 and Figure 3B,D). This suggests single RC and CC maps in the rostral-most pole of the SC and a duplicated visual map from 8\u201312% to 100% of the rostral-caudal axis as shown experimentally and theoretically (Brown et al., 2000; Savier et al., 2017; Figure 3B,D). In Isl2Epha3/Epha3 animals, both RC and CC median local IDV > IDVthreshold along the entire rostral-caudal axis (Figure 5C), indicating full RC and CC maps duplication as shown experimentally (Brown et al., 2000; Triplett et al., 2009; Figure 3F,H). Finally, for both Isl2Efna3/+ and Isl2Efna3/Efna3 CC maps (Figure 5D, dark red, Figure 5E, dark blue, respectively) local IDVs oscillate around the IDVthreshold with a more pronounced effect in the rostral-half of the SC in Isl2Efna3/Efna3 indicating partial duplications of the CC maps in these animals, as demonstrated in vivo (Savier et al., 2017). RC median local IDVs in Isl2Efna3/+ and Isl2Efna3/Efna3 animals (Figure 5D pink line, Figure 5E light blue line, respectively) fall below IDVthreshold indicating single maps as demonstrated previously (Savier et al., 2017). Altogether these results suggest that IDIs, AIs and median local IDVs are relevant, reliable and accurate indicators of visual map organization and conformation.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/59754/elife-59754-fig5-v1.jpg)\n\n**Figure 5.:** (A, B, C, D, E) Representation of the local IDV values for both retinal (light colors) and cortical (dark colors) projections along the rostral R (0%) \u2013 caudal C (100%) axis of the SC in WT (A), Isl2Epha3/+ Isl2Epha3/+ (B), Isl2Epha3/Epha3 (C), Isl2Efna3/+ (D) and Isl2Efna3/Efna3 (E) animals (representative of n = 10 runs). Dashed line represents the threshold above which maps are duplicated. Abbreviations: IDV, intrinsic dispersion variation; WT, wild-type; R, rostral; C, caudal.\n\n## Discussion\n\n### The 3-step map alignment model replicates other visual map-defective mutants\n\nTaken together, these experimental and theoretical results confirm the validity and robustness of the 3-step map alignment algorithm in predicting RC and CC maps formation and alignment during development. These findings broaden the simulation capacity of the model to the formation and alignment of visual maps in Isl2-Epha3KI mutant animals originally described in 2000 (Brown et al., 2000). After 107 iterations per run, the algorithm generates RC maps for Isl2Epha3/+ heterozygous and Isl2Epha3/Epha3 homozygous animals. In Isl2Epha3/Epha3, the simulated RC map is fully duplicated, as described in vivo (Brown et al., 2000; Reber et al., 2004; Figures 2Q and 3F) whereas in the Isl2Epha3/+, the simulated RC duplication collapses at approximately 80% of the nasal-temporal axis, similarly to previous results (Brown et al., 2000; Reber et al., 2004; Figures 2K and 3B). More recent experimental analyses show a collapse point appearing within a range of 74% to 80% of the nasal-temporal axis (Savier et al., 2017) in contrast to previous results indicating a collapse at 76% of the nasal-temporal axis (Brown et al., 2000; Reber et al., 2004). This discrepancy might be explained by the measurement methods which differ between the original Brown et al., 2000 publication and the recent Savier et al., 2017 and here (Figure 3B,D,E,F). In the last two, the Locally Weighted Scatterplot Smoothing (LOWESS) cross validation method (Efron and Tibshirani, 1991) was used on both experimental and simulated maps providing a range of values, instead of a given value as performed in Brown et al., 2000, for the occurrence of the collapse point along the nasal-temporal axis (see also Figure 6\u2014figure\u00a0supplement\u00a01 in Savier et al., 2017). In Isl2-Epha3KI animals, the lower RC map corresponds to Isl2(+) Epha3-expressing RGCs, covering 0 to 50% of the rostral-caudal axis in the Isl2Epha3/Epha3 and 0 to 80% of the axis in Isl2Epha3/+ (Figures 5 and 6 in Brown et al., 2000). The upper map, corresponding to the Isl2(-) WT RGCs, covers the caudal half (50 to 100%) of the rostral-caudal axis of the SC in Isl2Epha3/Epha3 and 20\u2013100% of the axis in Isl2Epha3/+ (Figures 5 and 6 in Brown et al., 2000). In both contexts, nasal Isl2(-) RGCs, expressing high levels of Efnas, project to caudal locations in the SC whereas nasal Isl2(+) RGCs, also carrying high levels of Efnas, project ectopically in a more rostral part of the SC, where the WT levels of retinal Efnas are normally low (compare Figure 2C with Figure 2I and O; see also Figure 6). Such distribution of RGC projections in the SC in both Isl2Epha3/Epha3 and Isl2Epha3/+ animals leads to a perturbation of the transposed retinal Efna gradients in the SC, generating duplicated Efna gradients along the rostral-caudal axis in both genotypes (Figure 2I,O, Figure 6). Consequently, simulated CC maps are also duplicated for both Isl2Epha3/+ and Isl2Epha3/Epha3 and further align with the duplicated RC maps as confirmed by in vivo analyses (Figure 3D,H, Figure 6). Further validation of the 3-step alignment model would involve testing this algorithm using other genetic models such as the Math5KO, which presents an unrefined CC map. The prediction of the CC map phenotype of compound mutants such as Efnas triple knock-out and Epha4KO crossed with Isl2-Epha3KI would also be of prime interest but would require the experimental assessment of the CC map in these mutants, which to our knowledge, has not been performed to this date.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/59754/elife-59754-fig6-v1.jpg)\n\n**Figure 6.:** Step 1: Isl2(+) RGCs expressing WT levels Ephas + ectopic Epha3 (dark red) and Isl2(-) RGCs expressing WT levels of Ephas (light red to red) send their axons into the SC during the first postnatal week. These retino-collicular (RC) projections form a duplicated map due to the oscillatory gradient of Ephas receptors in the RGCs reading the WT collicular Efna gradients (blue R-C gradient in SC) through forward signaling. Step 2: Retinal Efna gradients (high Efnas-nasal-dark green, low Efnas-temporal-light green) are carried to the SC during the formation of the RC projections. This transposition of retinal Efnas generates two exponential gradients of Efna in the SC, due to the duplication of the RC map and replaces the WT collicular Efna gradients previously used by the RGCs axons (Janes et al., 2005). Step 3: V1 axons, expressing smooth gradients of Ephas receptors (light red \u2013 red), are facing two exponential gradients of Efnas, of retinal origin, in SC. Through forward signaling, this two exponential Efna gradients generate a duplication of the CC projections, which aligns with the RC map. Abbreviations: N, nasal; T, temporal; M, medial; L, lateral; R, rostral; C, caudal; SC, superior colliculus; RGCs, retinal ganglion cells.\n\n### The basic map organization principle encoded in the 3-step map alignment model provides an alternative explanation for map alignment defects in Isl2-Epha3KI animals\n\nOur quantification of Ephas and Efnas throughout the visual system revealed that the ectopic over-expression of Epha3 in the retina has no effect on the expression of Efnas in this structure. These findings exclude a potential alteration of the endogenous gradient of Efnas in the retina. Previous studies (Triplett et al., 2009) suggested that the redistribution of the correlated activity was responsible for the duplication of the CC map. Our results suggest an alternative, although complementary mechanism, in which the redistribution of the molecular cues carried by retinal axons during the formation of a duplicated RC map is sufficient to induce a collicular duplication of the projections coming from V1 (Figure 6). As mentioned earlier (Savier et al., 2017), in this context retinal Efnas, free or bound to Ephas to a limited amount (Suetterlin and Drescher, 2014), retain their binding activity in the SC for incoming V1 axons carrying Epha receptors. Since the RC map is duplicated in the Isl2-Epha3KI, the nasal-temporal axis of the retina, along which the retinal Efna gradients run, is represented twice in the collicular space. This rearrangement of the retinal Efnas transposed to the SC generates a duplicated gradient which is then encountered by the incoming cortical V1 axons. At this point in development, the endogenous collicular Efnas are not available anymore as, for the most part, they have been endocytosed upon trans-binding with Epha receptors on retinal axons (Janes et al., 2005; Savier et al., 2017). As a consequence, the optimal local amount of transposed Efnas signaling the corresponding retinotopic position to V1 axons exists at two distinct locations along the rostral-caudal axis, leading to duplication of the CC map. Our previous findings in the characterization of the Isl2-Efna3KI mutant revealed an incomplete penetrance of the CC duplication phenotype, suggesting a counter-balancing role of the correlated activity within the normal RC map. For the Isl2-Epha3KI, the correlated activity is also duplicated along the rostro-caudal axis, due to the duplicated RC map, reinforcing this \u2018duplication\u2019 effect and leading to a stronger penetrance of the phenotype. To further test this hypothesis, it would be interesting to selectively manipulate correlated activity during development in either the retina, the SC or V1. Our current conceptual framework suggests that altering the activity in the SC would still result in a duplication of the CC map of the Isl2-Epha3KI and an increase in the amount of CC duplication in the Isl2-Efna3KI. The 3-step map alignment model suggests that retinal Efnas are responsible for the CC map duplication in the Isl2-Epha3KI mutants. An additional validation of this mechanism would require the mapping of Isl2-Epha3KI CC map in compound mutants in which Efnas have been specifically removed in the retina (Suetterlin and Drescher, 2014). The absence of duplication in the CC map in such a mutant would further demonstrate the implication of retinal Efnas in the alignment of visual maps in the SC. The mapping and alignment along the lateral-medial axis of the SC involving EphB/Efnb signaling is not addressed here as the Isl2-Epha3KI animals only present mapping defect along the rostral-caudal axis (Brown et al., 2000; Triplett et al., 2009).\n\n### Quantifying the degree of maps alignment and organization\n\nWe performed a quantitative analysis of the degree of visual map organization, implementing the intrinsic dispersion index (IDI) for each visual map, the mean alignment index (AI) (Figure 4\u2014source data 1) and the local intrinsic dispersion variation (local IDV) (Figure 5\u2014source data 1). These indexes objectively describe and quantify the degree of organization and conformation of both RC and CC maps, providing a detailed measure of the dispersion of each map and a measure of the degree of alignment between the maps as a whole and locally. In general, the experimental number of measured projections is low, approximately n = 15 to 20 total, compared to the n = 100 (or more) projections generated by the algorithm. This suggests that, if the algorithm accurately simulates maps organization, the indicators, IDI, AI, and local IDVs, inferred from this algorithm are more precise and refined than those inferred from experimental maps. As demonstrated above, the 3-step map alignment algorithm simulates and predicts visual map defects in Isl2-Epha3KI animals as well as in other animal models (Savier et al., 2017) indicating its reliability and robustness; therefore, we inferred the IDIs, AIs and local IDVs from the algorithm-generated maps for each genotype. An increase of both IDIs and local IDVs in Isl2Epha3/+ and Isl2Epha3/Epha3 animals correlates with increased spreading of the visual maps, consequence of the duplicated RC and CC projections. By contrast, AI values in these animals are similar to WT, indicating alignment of the RC and CC maps, as observed in vivo. The relevance of the 3-step map alignment algorithm and the validity of the map organization indexes are further confirmed by the analysis of map organization in the previously characterized Isl2-Efna3KI animals. Here, IDIs, AIs and local IDVs generated by the algorithm predict visual map organization as previously shown in vivo (Savier et al., 2017). High AI values (>2.5 = WT median + 95% CI) indicate a significant misalignment between RC and CC projections, in particular in Isl2Efna3/Efna3 (confirmed by the low Jaccard similarity index and negative covariance). Such misalignment is also indicated by a significant difference in dispersion (IDI) of the CC map when compared to the RC map (IDIretino \u2260 IDIcortico). These observations are further validated and confirmed by the local IDVs graph (Figure 5\u2014source data 1) which delivers detailed information about the conformation of the maps along the rostral-caudal axis of the SC. Descriptive analyses of the IDVs using Jaccard similarity index and covariance guaranties robust data as to the degree of similarity of the maps (Metcalf and Casey, 2016). The implementation of these indexes provides a very detailed and robust analysis of the layout and a qualitative measure of the organization and alignment of the visual maps in different mice genetic models. It would also be interesting to characterize other compound mutants which present more separated maps but high alignment like the Isl2-Epha3KI/Epha4 KO (Reber et al., 2004) or the Isl2-Epha3KI/Epha5 KO (Bevins et al., 2011) double mutants.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Genetic reagent (Mus. musculus)</td>\n      <td>Isl2tm1(Epha3)Grl</td>\n      <td>Lemke Lab (Salk Institute)</td>\n      <td>MGI:3056440 RRID:MGI:3057124</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay, kit</td>\n      <td>Neural tissue dissociation Kit \u2013 Postnatal neurons</td>\n      <td>Miltenyi</td>\n      <td>Cat # 130-094-802</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay, kit</td>\n      <td>RNeasy Mini kit</td>\n      <td>Qiagen</td>\n      <td>Cat # 74104</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay, kit</td>\n      <td>QuantiTect SYBR Green RT-PCR Kit</td>\n      <td>Qiagen</td>\n      <td>Cat # 204243</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Goat anti-rabbit IgG (H+L), polyclonal</td>\n      <td>Jackson Immunoresearch</td>\n      <td>Cat # 111-005-003 RRID:AB_2337913</td>\n      <td>1:3000</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Goat anti-mouse IgM (H+L)</td>\n      <td>Biotrend</td>\n      <td>Cat # 610\u20131107</td>\n      <td>1:3000</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Mouse anti-CD90, monoclonal</td>\n      <td>Biorad</td>\n      <td>Cat # MCA02R F7D5 IgM RRID:AB_323481</td>\n      <td>1:3000</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Rabbit anti-rat macrophage, polyclonal</td>\n      <td>Life Science</td>\n      <td>Cat # AIA51240</td>\n      <td>1:3000</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Neurobasal medium</td>\n      <td>Gibco/Thermofisher</td>\n      <td>Cat # 21103049</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>B27</td>\n      <td>Thermofisher</td>\n      <td>Cat # 17504044</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>BDNF</td>\n      <td>PeproTech</td>\n      <td>Cat # 450\u201302</td>\n      <td>25 ng/ml</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>CNTF</td>\n      <td>PeproTech</td>\n      <td>Cat # 450\u201313</td>\n      <td>10 ng/ml</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Forskolin</td>\n      <td>Sigma</td>\n      <td>Cat # F3917</td>\n      <td>10 mM</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Glutamine</td>\n      <td>Thermofisher</td>\n      <td>Cat # 25030149</td>\n      <td>2 mM</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>N-acetyl-l-cysteine</td>\n      <td>Sigma</td>\n      <td>Cat # A09165</td>\n      <td>60 mg/ml</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Penicilin/streptomycin</td>\n      <td>Gibco</td>\n      <td>Cat # 15070\u2013022</td>\n      <td>100 units/ml</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Sodium pyruvate</td>\n      <td>Thermofisher</td>\n      <td>Cat # 11360070</td>\n      <td>1 mM</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>DiI (1,1-dioctadecyl-3,3,3,3-tetramethylindocarbocyanine perchlorate)</td>\n      <td>Thermofisher</td>\n      <td>Cat # D282</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>DiD (1,1\u2019\u2013dioctadecyl-3,3,3\u2019,3\u2019- tetramethylindodicarbocyanine, 4-chlorobenzenesulfonate)</td>\n      <td>Thermofisher</td>\n      <td>Cat # D7757</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>R Project for Statistical Computing</td>\n      <td>www.r-project.org</td>\n      <td>RRID:SCR_001905</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>ImageJ</td>\n      <td>https://imagej.nih.gov/ij</td>\n      <td>RRID:SCR_003070</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>MATLAB</td>\n      <td></td>\n      <td>RRID:SCR_001622</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>3-step map alignment</td>\n      <td>Reber Lab (Krembil)</td>\n      <td>https://github.com/michaelreber/3-step-Map-Aligment-Model/blob/master/threestepsMapAlignment.m</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>LOESS smoothing</td>\n      <td>Reber Lab (Krembil)</td>\n      <td>https://github.com/michaelreber/Leave-one-out-LOESS/blob/master/wtloess.R</td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### Retinal ganglion cell isolation\n\nP1/P2 retinas were freshly dissected and RGCs were isolated and purified (>99%). For details, see Steinmetz et al., 2006 and Claudepierre et al., 2008. Briefly, cells were harvested in neurobasal medium (Gibco/Invitrogen) supplemented with (all from Sigma, except where indicated) pyruvate (1 mM), glutamine (2 mM; Gibco/Invitrogen), N-acetyl-l-cysteine (60 mg/ml), putrescine (16 mg/ml), selenite (40 ng/ml), bovine serum albumin (100 mg/ml; fraction V, crystalline grade), streptomycin (100 mg/ml), penicillin (100 U/ml), triiodothyronine (40 ng/ml), holotransferrin (100 mg/ml), insulin (5 mg/ml) and progesterone (62 ng/ml), B27 (1:50, Gibco/Invitrogen), brain-derived neurotrophic factor (BDNF; 25 ng/ml; PeproTech, London, UK), ciliary neurotrophic factor (CNTF; 10 ng/ml; PeproTech) and forskolin (10 mM; Sigma). After isolation, RGCs were treated for RNA extraction.\n\n### Quantitative RT-PCR\n\nV1 cortices, superficial layers of the SC and retinas were freshly dissected. Retinas were cut in three equal pieces along the NT axis (Nasal, Central, Temporal RGCs) and RGCs acutely isolated (Steinmetz et al., 2006; Claudepierre et al., 2008; see above). Total RNA was extracted and quantified as previously described (Savier et al., 2017). Briefly, relative quantification was performed using the comparative Delta Ct method. Duplicates were run for each sample and concentrations for the target gene and for two housekeeping genes (hypoxanthine-guanine phosphoribosyl transferase - Hprt and glyceraldehyde 3-phosphate dehydrogenase \u2013 Gapdh) were computed.\n\n### Projections analysis/mapping\n\nAnterograde DiI (1,1-dioctadecyl-3,3,3,3-tetramethylindocarbocyanine perchlorate) or DiD (1,1\u2019\u2013dioctadecyl-3,3,3\u2019,3\u2019-tetramethylindodicarbocyanine, 4-chlorobenzenesulfonate) labelling were performed blind to genotype as described (Savier et al., 2017). Retinas were dissected and imaged using Leica macroscope (MG0295) and LASAF software. RC projection coordinates of the DiI injections were calculated as described (Brown et al., 2000; Reber et al., 2004; Bevins et al., 2011). For CC map analyses, sagittal vibratome sections were performed on P14 SC and terminal zones (TZs) were plotted along the rostral-caudal axis on Cartesian coordinates (y axis). V1 were photographed as whole-mount and focal injections plotted along the V1 lateral-medial axis (x axis) (Savier et al., 2017; Triplett et al., 2009). CC maps were generated using non-parametric smoothing technique, termed LOESS smoothing (Efron and Tibshirani, 1991), to estimate the profile of the one-dimensional mapping from V1 to SC. To estimate the variability in a mapping containing N data points, we repeated the procedure N times with N-1 datapoints, each time dropping a different datapoint. This is termed a \u2018leave-one-out\u2019 method and was used in the R Project for Statistical Computing. V1 area was determined by CO staining as described (Savier et al., 2017; Zembrzycki et al., 2015) and shown on Figure 3C, lower left panel. All animal procedures were in accordance with national (council directive 87/848, October 1987), European community (2010/63/EU) guidelines and University Health Network. Official agreement number for animal experimentation is A67-395, protocol number 01831.01 and AUP 6066.4 (M.R).\n\n### In silico simulations of the retino- and cortico-collicular maps\n\nIn the 3-step map alignment model, Ephas/Efnas forward signaling level is modeled by experimentally measured and estimated values of graded expression levels of Epha receptors (Epha3/4/5/6/7) and Efna ligands (Efna2/3/5) in RGCs, SC and V1 cortex, as previously described (Tsigankov and Koulakov, 2006; Savier et al., 2017). Competition, where two RGCs/V1 neurons cannot project to the same target in the SC, is modeled by indexation of 100 RGCs/V1 neurons projecting to 100 positions in the SC (Koulakov and Tsigankov, 2004; Tsigankov and Koulakov, 2006; Savier et al., 2017). Contribution of correlated neuronal activity -assuming Hebbian plasticity between RGC/V1 axons and collicular neurons in the SC is modeled by pair-wise attraction inversely proportional to the distance between two RGC/V1 neurons (Savier et al., 2017). The 3-step map alignment algorithm first simulates the projection of 100 RGCs along the nasal-temporal axis of the retina mapping onto the rostral-caudal axis of the SC (the RC map). Second, according to the layout of this map, retinal Efna gradients are transposed along the rostral-caudal axis of the SC. Third, the projections of 100 V1 neurons following the medial-lateral axis of V1 cortex are simulated onto the rostral-caudal axis of the SC. Forward Ephas/Efnas signaling is applied for both RC and CC projections.\n\nThe 3-step map alignment model in MATLAB (Savier et al., 2017) was used to simulate the formation of both the RC and CC map in the presence of an oscillatory Epha gradient in the retina. Each brain structure (retina, SC, V1) is modeled as a 1-d array of 100 neurons (N) in each network. Two maps are generated: first, the map from retina to SC; second, the map from V1 to SC. Each map is modeled sequentially in the same way. This model consists in the minimization of affinity potential (E) which is computed as follows:\n\n$$\nE=E_{act}+E_{chem}\n$$\n\nAt each step, this potential is minimized by switching two randomly chosen axons probabilistically to reduces the energy in the system by Delta E (\u0394E). The probability of switching, p, is given by:\n\n$$\np=\\frac{1}{(1+e^{4\u0394E})}\n$$\n\nEchem is expressed as follows:\n\n$$\nE_{chem}=\\sumi\\insynapses\\alpha(R_{A}(i)\u2212R_{A}(j))(L_{A}(i^{\u2032})\u2212L_{A}(j^{\u2032}))\n$$\n\nwhere \u03b1 = 200 is the strength, RA(i) and RA(j) the Epha receptor concentration in the retina and V1 at location (i) and (j) and LA(i\u2019) and LA(j\u2019) the Efna ligand concentration at the corresponding position (i\u2019) and (j\u2019) in the SC.\n\nThe contribution of activity-dependent process is modeled as:\n\n$$\nE_{act}=-\\frac{\\gamma}{2}\\sumi,j\\insynapsesC_{ij}U(r)\n$$\n\nwhere \u03b3 = 1 is the strength parameter, Cij is the cross-correlation of neuronal activity between two RGCs (or V1) neurons during spontaneous activity located in (i) and (j), and U simulates the overlap between two SC cells. Here, we use $C_{ij}=e^{\\frac{-r}{R}}$, where r is the retinal distance between RGC (i) and (j), R = b x N, with b=0.11 and $Ur^{'}=e^{\\frac{-r'^{2}}{2d^{2}}}$, where r\u2019 is the distance between two SC points (i\u2019, j\u2019), d = 3 and N = 1 to 100 neurons. Parameters of the model are presented Table 1.\n\n**Table 1.**\n summary of the parameters of the 3-step map alignment algorithm.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Receptor</th>\n      <th>Epha3</th>\n      <th>Epha4</th>\n      <th>Epha5</th>\n      <th>Epha6</th>\n      <th>Source</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Retina</td>\n      <td>WT = 0 Epha3KI/KI = 1.86 Epha3KI/+ = 0.93</td>\n      <td>1.05</td>\n      <td>0.14e0.018x</td>\n      <td>0.09e0.029x</td>\n      <td>Measured (Brown et al., 2000; Reber et al., 2004)</td>\n    </tr>\n    <tr>\n      <td>V1</td>\n      <td colspan=\"4\">e(-x/100) \u2013 e((x \u2013 200/100) + 1)</td>\n      <td>Estimated (Tsigankov and Koulakov, 2010; Tsigankov and Koulakov, 2006)</td>\n    </tr>\n    <tr>\n      <td>Ligand</td>\n      <td>Efna2</td>\n      <td colspan=\"2\">Efna3</td>\n      <td>Efna5</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Retina</td>\n      <td>1.85 e-0.008x</td>\n      <td colspan=\"2\">0.44</td>\n      <td>1.79 e-0.014x</td>\n      <td>Measured (Savier et al., 2017)</td>\n    </tr>\n    <tr>\n      <td>SC</td>\n      <td colspan=\"4\">e((x \u2013 100)100) \u2013 e((-x-100)/100)</td>\n      <td>Estimated (Cang et al., 2005; Savier et al., 2017; Tsigankov and Koulakov, 2010; Tsigankov and Koulakov, 2006)</td>\n    </tr>\n    <tr>\n      <td colspan=\"6\">Parameters</td>\n    </tr>\n    <tr>\n      <td colspan=\"2\">\u03b3</td>\n      <td colspan=\"2\">1</td>\n      <td colspan=\"2\">Strength of activity interaction</td>\n    </tr>\n    <tr>\n      <td colspan=\"2\">\u03b1</td>\n      <td colspan=\"2\">200</td>\n      <td colspan=\"2\">Chemical strength</td>\n    </tr>\n    <tr>\n      <td colspan=\"2\">d</td>\n      <td colspan=\"2\">3</td>\n      <td colspan=\"2\">SC interaction distance</td>\n    </tr>\n    <tr>\n      <td colspan=\"2\">b</td>\n      <td colspan=\"2\">0.11</td>\n      <td colspan=\"2\">Retinal correlation distance</td>\n    </tr>\n  </tbody>\n</table>\n\n### Gradients of ligands and receptors\n\n#### Retinal Epha gradients\n\nMeasured gradients of Epha receptors (R Epha) in RGCs along the nasal-temporal axis (x) R Epha (x)retina (Figure 2A,G,M, Brown et al., 2000; Reber et al., 2004) are modeled by two equations, one corresponding to Isl2(+) RGCs expressing WT levels of Ephas + Epha3 and the second corresponding to Isl2-negative (Isl2-) RGCs expressing the WT level of Ephas only:\n\n$$\nR_{EphaIsl2+}(X)^{retina}=R_{Epha5}(X)+R_{Epha6}(X)+R_{Epha4}+R_{Epha3}=0.14e^{0.018x}+0.09e^{0.029x}+1.05+R_{Epha3}R_{EphaIsl2+}(X)^{retina}=R_{Epha5}(X)+R_{Epha6}(X)+R_{Epha4}=0.14e^{0.018x}+0.09e^{0.029x}+1.05\n$$\n\nWith R Epha3 = 0.93 in Isl2Epha3/+ and R Epha3 = 1.86 in Isl2Epha3/Epha3, since Epha3 expression level depend on the number of copies of the knocked-in allele (Brown et al., 2000; Reber et al., 2004). The oscillatory gradient was generated by randomly attributing to 50% of collicular TZs an over-expression of Epha3 in a genotype-dependent manner.\n\n#### Collicular Efna gradients\n\nEstimated gradients of Efna ligands (LEfna) in the SC along the rostral-caudal axis (x), LEfna (x)SC (Figure 2B, Cang et al., 2005; Savier et al., 2017; Tsigankov and Koulakov, 2010; Tsigankov and Koulakov, 2006):\n\n$$\nL_{Efna}(X)^{SC}=e^{(x\u2212100/100)}\u2212e^{(\u2212x\u2212100/100)}\n$$\n\n#### Cortical V1 Epha gradients\n\nEstimated gradient of Epha receptors (R Epha) in V1 along the medial-lateral axis (x), R Epha (x) V1 (Tsigankov and Koulakov, 2010; Tsigankov and Koulakov, 2006) for all genotypes:\n\n$$\nR_{Epha}(X)^{V1}=e^{(\u2212x/100)}\u2212e^{(x\u2212200/100)+1}\n$$\n\n#### Retinal Efna gradients\n\nMeasured gradients of Efna ligands in RGCs along the nasal-temporal axis LEfna (x)retina (Savier et al., 2017) for all genotypes:\n\n$$\nL_{Efna}(X)^{retina}=L_{Efna5}(X)^{retina}+L_{Efna2}(X)^{retina}+L_{Efna3}(X)^{retina}=1.79e^{\u22120.014x}+1.85e^{\u22120.008x}+0.44\n$$\n\n#### Retinal Efna gradients transposition\n\nWhen transposed along the rostral-caudal axis in the SC (retina -> SC), retinal Efna gradients are flipped along the x axis and become:\n\nThe intrinsic dispersion index and local intrinsic variation, corresponding to the degree of dispersion of the maps are calculated by:\n\nThe alignment index is calculated by:\n\n$$\nAI=\\frac{1}{100}\\sumx=1100|y_{x\u00a0retino}\n$$\n\n### Statistical analysis\n\nComparison of relative Efna/Epha mRNA expression levels in SC and V1 in Isl2Epha3/Epha3 animals relative to WT were performed by one sample t-test, reference value = 1 as described in Savier et al., 2017. Comparison of relative Efnas expression levels, relative to WT Nasal in Nasal, Central and Temporal WT and Isl2Epha3/Epha3 were performed by the two-way ANOVA without replication (Efna x genotype comparison). Experimental and simulated visual maps were compared using Kolmogorov-Smirnov 2-sample test.\n\nDescriptive analysis of IDV curves was performed using:\n\n- the Jaccard similarity index (J), which indicates the degree of similarity of two sets of data, varies between J = 0 (no similarity) and J = 1 (perfect similarity) and is calculated as follows (Metcalf and Casey, 2016):\n\n$$\nJ_{(X,Y)}=(|X\u2229Y|/|X\u222aY|)\n$$\n\n- Covariance Cov (x, y):\n\n$$\nCov(x,y)=(\\sum(x_{i}\u2212x\u00af)\u00a0(y_{i}\u2212\u00a0y\u00af))/N\n$$\n\nwhere Cov>0 indicates similar trend and Cov <0 indicates opposite trend.\n\n### Data availability\n\nLeave-one-out \u2018Leave-one-out\u2019 script in R: https://github.com/michaelreber/Leave-one-out-LOESS/blob/master/wtloess.R (Savier, 2020a; copy archived at https://github.com/elifesciences-publications/Leave-one-out-LOESS).\n\n3-step map alignment model 3-step map alignment script in MATLAB:\u00a0https://github.com/michaelreber/3-step-Map-Aligment-Model (Savier, 2020b; copy archived at https://github.com/elifesciences-publications/3-step-Map-Aligment-Model-2020).\n",
+      "created_at": "2025-12-02T20:19:34.423636Z"
+    },
+    {
+      "id": "106d7e77-f503-4d4d-b22e-beb0ef00bc39",
+      "submission_id": "eff34cfd-f4a8-4768-a71e-393d8f45e4f0",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Carol A Mason, Columbia University United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.59754.sa1](https://doi.org/10.7554/eLife.59754.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nThank you for submitting your article \"New insights on the modeling of the molecular mechanisms underlying neural maps alignment in the midbrain\" for consideration by eLife. Your article has been reviewed by two peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Andrew King as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Xavier Nicol.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nWe would like to draw your attention to changes in our revision policy that we have made in response to COVID-19 (https://elifesciences.org/articles/57162). Specifically, we are asking editors to accept without delay manuscripts, like yours, that they judge can stand as eLife papers without additional data, even if they feel that they would make the manuscript stronger. Thus the revisions requested below only address clarity and presentation.\n\nSummary:\n\nThe reviewers appreciated this follow-up to your 2017 eLife paper investigating the relationship between retinocollicular and cortico-collicular map development. Using your 3-step map alignment that you applied to the Isl2-Epha3KI in the 2017 paper, you now further evaluate the robustness of the 3-step map alignment in another mouse line with visual map duplication, the Isl2::EphA3 line. You nicely show that your 3-step map alignment algorithm accurately simulates both retino- and cortico-collicular mapping defects in the Isl2-Epha3KI, the originally used genetic model for this issue in the Brown et al. and Triplett et al. studies. You indicate that the mechanism underlying the subsequent duplication of the cortico-collicular projection corresponds to a redistribution of retinal molecular cues, the ephrin As (Efnas), into the SC. You implicate that Efnas provided by the retinal axons projecting within the SC act together with correlated activity to instruct cortico-collicular alignment onto the retinocollicular map. Your results, carefully executed with both modeling and experimental analysis, as you state, \"challenge previous hypotheses and provide an alternative, although complementary, explanation for the phenotype observed\".\n\nThe study falls within the guidelines for a Research Advance, \"a short article that allows either the authors of an eLife paper or other researchers to publish new results that build on the original research paper in an important way.\" The reviewers and I thought that your study certainly further validates the 3-step map alignment computational model.\n\nThere are a number of edits and additions that the reviewers called for:\n\nEssential revisions:\n\nYou pose the idea that correlated activity plays is a driving force in matching cortico-collicular maps to retinocollicular maps. You also use several novel quantification methods to assess map alignment and the organization of the maps. These quantification methods seem quite powerful for assessing map alignment differences (compare Figure 4E, F with Alignment Index in Figure 4G). You state that your \"data confirm the validity and robustness of our algorithm\". Additional points to mention include:\n\n1) The data presented here apply this model only to the Isl2-EphA3 Ki/Ki and Isl2-Efna3 Ki/Ki models. Since the justification for generating this model was that other models cannot faithfully \"reproduce all nuances of experimental findings\", it seems that this model should also have been compared to the other experimental models specifically referenced: EfnaKOs and Math5KO. Such an analysis is probably beyond the scope of your present study but nonetheless bears mention in the text as a future direction.\n\n2) You seek to make the point that \"transposed\" retinal Efnas (most likely Efna3 based on the data from the previous study) play a more significant role in cortico-collicular map alignment than correlated activity. This remains to be demonstrated experimentally by removing retinal derived Efna3 (or other Efnas) and assessing cortico-collicular maps (in the context of a WT SC or an Isl2-EphA3 Ki/Ki SC). This would call for a separate study but the need for such a study should be acknowledged in the Discussion.\n\n3) You mention that correlated activity is taken into account in the 3-step model without further explanation.\n\na) Clarification of this point is needed, especially in the framework of the discussion that proposes an alternative explanation of the map alignment phenotype in Isl2::EphA3 knock-in animals.\n\nb) Retinothalamic mapping is likely to be affected, at least in EphA3 knock-in animals, but likely not in ephrinA3 knock-in animals according to your results. How would this reorganization of the dLGN input and in turn in V1 electrical activity impact the retino- and cortico-collicular map alignment? Mention of this point would also be welcome in the Discussion.\n\n4) Based on the model you proposed in your 2017 paper for retina-derived Efna3 in cortico-collicular mapping, it is not clear why the cortico-collicular maps are more misaligned rostrally than caudally in Isl2-Efna3Ki/Ki mutants (see Figures 4F and 5E), and why this is essentially opposite to the misaligned maps in the Isl2-Eph3AKi/+ or Isl2-Eph3AKi/Ki mutants). Please comment in the Discussion.\n\n5) You quantify expression levels of ephrinAs and EphAs in the superior colliculus and in V1 in Isl2::EphA3 animals. Since no difference was detected with controls, a positive control would further enhance the quality of the dataset. Do you have quantitative data on the expression of EphA3 in the retina?\n",
+      "created_at": "2025-12-02T20:19:34.423636Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T20:19:34.423636Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T20:19:34.423636Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "19744c24-1f80-4ea6-814f-8841bfb91615",
+      "content_id": "c626170a-b095-4459-ac79-94be8a51bbcb",
+      "claim_id": "C1",
+      "claim": "The superior colliculus (SC) is an evolutionary conserved structure located in the midbrain.",
+      "claim_type": "EXPLICIT",
+      "source": "One of the most studied biological models to investigate the formation and function of sensory connectivity -or sensory maps- from both experimental and theoretical standpoints is the superior colliculus (SC), an evolutionary conserved structure located in the midbrain (Cang and Feldheim, 2013; Basso and May, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Cang and Feldheim, 2013 and Basso and May, 2017",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:19:34.423636Z"
+    },
+    {
+      "id": "3b71bfb8-9682-4312-8f88-91dad6b5500e",
+      "content_id": "c626170a-b095-4459-ac79-94be8a51bbcb",
+      "claim_id": "C2",
+      "claim": "In most vertebrates, the SC is the premier brain center for integrating sensory inputs from visual, auditory and somatosensory modalities distributed in different interacting laminae.",
+      "claim_type": "EXPLICIT",
+      "source": "In most vertebrates, the SC is the premier brain center for integrating sensory inputs from visual, auditory and somatosensory modalities distributed in different interacting laminae.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Draws from established scientific knowledge about the SC",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:19:34.423636Z"
+    },
+    {
+      "id": "ca962985-fb13-4843-b900-19ac05f18008",
+      "content_id": "c626170a-b095-4459-ac79-94be8a51bbcb",
+      "claim_id": "C3",
+      "claim": "The SC is a key node in the network of brain areas responsible for controlling the location of attention and even decision-making.",
+      "claim_type": "EXPLICIT",
+      "source": "This structure is a key node in the network of brain areas responsible for controlling the location of attention and even decision-making (Basso and May, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Basso and May, 2017",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:19:34.423636Z"
+    },
+    {
+      "id": "3f06071b-d624-4d6f-acc0-d7ba83bf4eb6",
+      "content_id": "c626170a-b095-4459-ac79-94be8a51bbcb",
+      "claim_id": "C4",
+      "claim": "Visual inputs in the superficial layers of the SC correspond to the organized projections from the retinal ganglion cells (RGCs) in the retina (the retino-collicular (RC) projections) and from layer V neurons in the primary visual cortex V1 (the cortico-collicular [CC] projections).",
+      "claim_type": "EXPLICIT",
+      "source": "Visual inputs in the superficial layers of the SC correspond to the organized projections from the retinal ganglion cells (RGCs) in the retina (the retino-collicular (RC) projections) and from layer V neurons in the primary visual cortex V1 (the cortico-collicular [CC] projections).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Draws from established scientific knowledge about SC anatomy",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:19:34.423636Z"
+    },
+    {
+      "id": "8d205a37-b66d-4094-8a30-ce3fa1e8f2c6",
+      "content_id": "c626170a-b095-4459-ac79-94be8a51bbcb",
+      "claim_id": "C5",
+      "claim": "Both RC and CC projections form visual maps that must be aligned and in register to allow efficient detection of visual stimuli.",
+      "claim_type": "EXPLICIT",
+      "source": "Both projections form visual maps that must be aligned and in register to allow efficient detection of visual stimuli (Basso and May, 2017; Liang et al., 2015; Zhao et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Basso and May, 2017; Liang et al., 2015; Zhao et al., 2014",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:19:34.423636Z"
+    },
+    {
+      "id": "35ba3bbe-e241-4174-9252-fd4418985032",
+      "content_id": "c626170a-b095-4459-ac79-94be8a51bbcb",
+      "claim_id": "C6",
+      "claim": "The formation of the RC map involves gradients of Eph tyrosine kinases receptors (Eph) and their cognate membrane-bound ligands, the ephrins (Efn), together with competition between axons for collicular space and correlated neuronal activity in the form of spontaneous waves.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies on RC mapping have revealed the involvement of gradients of Eph tyrosine kinases receptors (Eph) and their cognate membrane-bound ligands, the ephrins (Efn), together with competition between axons for collicular space and correlated neuronal activity in the form of spontaneous waves (Ackman and Crair, 2014; Cang and Feldheim, 2013; Triplett et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Ackman and Crair, 2014; Cang and Feldheim, 2013; Triplett et al., 2011",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:19:34.423636Z"
+    },
+    {
+      "id": "e9e970e1-22cf-440c-b18e-03d774e53998",
+      "content_id": "c626170a-b095-4459-ac79-94be8a51bbcb",
+      "claim_id": "C7",
+      "claim": "The formation of the RC map occurs prior to the establishment of the CC map.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the formation of the RC map occurs prior to the establishment of the CC map.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Draws from established scientific knowledge",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:19:34.423636Z"
+    },
+    {
+      "id": "30712bc1-4b55-4655-8d7b-42f233639e83",
+      "content_id": "c626170a-b095-4459-ac79-94be8a51bbcb",
+      "claim_id": "C8",
+      "claim": "The existence of the RC map is necessary for the formation of the CC map, suggesting an interdependence of the two mechanisms.",
+      "claim_type": "EXPLICIT",
+      "source": "Other studies have shown that the existence of the RC map is necessary for the formation of the CC map, suggesting an interdependence of the two mechanisms (Khachab and Bruce, 1999; Rhoades et al., 1985; Triplett et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Khachab and Bruce, 1999; Rhoades et al., 1985; Triplett et al., 2009",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:19:34.423636Z"
+    },
+    {
+      "id": "8d3be585-5960-4514-b304-77d70c2df6fb",
+      "content_id": "c626170a-b095-4459-ac79-94be8a51bbcb",
+      "claim_id": "C9",
+      "claim": "In Isl2-Epha3KI mutants, the Epha3 receptor is ectopically expressed in 50% of RGCs, leading to a duplication of the RC map.",
+      "claim_type": "EXPLICIT",
+      "source": "Another piece of evidence came from the study of map alignment in the Isl2-Epha3KI, one of the best characterized mutant in the field. In these mutants, the Epha3 receptor is ectopically expressed in 50% of RGCs, leading to a duplication of the RC map (Brown et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Brown et al., 2000",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:19:34.423636Z"
+    },
+    {
+      "id": "39da6bee-e9d4-4ea4-abf7-c483fab656a0",
+      "content_id": "c626170a-b095-4459-ac79-94be8a51bbcb",
+      "claim_id": "C10",
+      "claim": "A full duplication of the CC map is observed in the Isl2Epha3/Epha3 homozygous mutants, which display a normal retinotopy in the visual cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, a full duplication of the CC map is also observed in the Isl2Epha3/Epha3 homozygous mutants, which display a normal retinotopy in the visual cortex (Triplett et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Triplett et al., 2009",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:19:34.423636Z"
+    },
+    {
+      "id": "58e5dbf4-e7bb-43c1-aaa7-d518ef529df9",
+      "content_id": "c626170a-b095-4459-ac79-94be8a51bbcb",
+      "claim_id": "C11",
+      "claim": "The Isl2-Efna3KI mutant over-expresses the ligand Efna3 in 50% of the RGCs.",
+      "claim_type": "EXPLICIT",
+      "source": "To gain insight into the implication of molecular guidance cues in the retina in the alignment of visual maps in the SC, we have characterized a new mutant, the Isl2-Efna3KI, which over-expresses the ligand Efna3 in 50% of the RGCs (Savier et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Savier et al., 2017",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:19:34.423636Z"
+    },
+    {
+      "id": "316ea925-a8b2-4a1e-8b65-6bf32d10436d",
+      "content_id": "c626170a-b095-4459-ac79-94be8a51bbcb",
+      "claim_id": "C12",
+      "claim": "The Isl2-Efna3KI mutant does not display any defect in the formation of the RC map, however the subsequent CC map is duplicated.",
+      "claim_type": "EXPLICIT",
+      "source": "To our surprise, this mutant does not display any defect in the formation of the RC map, however the subsequent CC map is duplicated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Draws from experimental observations described in the manuscript",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:19:34.423636Z"
+    },
+    {
+      "id": "8a975392-df28-40c0-b2c1-261769b645d0",
+      "content_id": "c626170a-b095-4459-ac79-94be8a51bbcb",
+      "claim_id": "C13",
+      "claim": "The Koulakov model was the most faithful among tested models for reproducing experimental findings.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently, Hjorth et al., 2015 developed a pipeline which allowed for systematic testing of the currently available models and revealed that most cannot reproduce all nuances of experimental findings (Isl2-Epha3KI, EfnaKOs and Math5KO). Among those tested, the most faithful was the Koulakov model, which had recently been extended to explain the variability in the phenotypes observed in a particular mouse model, the Isl2-Epha3KI (Owens et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Hjorth et al., 2015 and Owens et al., 2015",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:19:34.423636Z"
+    },
+    {
+      "id": "4fd24373-cf3b-4706-9689-f3e689af5be1",
+      "content_id": "c626170a-b095-4459-ac79-94be8a51bbcb",
+      "claim_id": "C14",
+      "claim": "The 3-step map alignment model simulates the formation of the RC map and, for the first time, the subsequent formation and alignment of the CC map along the rostral-caudal axis of the SC.",
+      "claim_type": "EXPLICIT",
+      "source": "The 3-step map alignment model simulates the formation of the RC map and, for the first time, the subsequent formation and alignment of the CC map along the rostral-caudal axis of the SC based on experimental and mechanistic evidence (Savier et al., 2017; Savier and Reber, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Savier et al., 2017 and Savier and Reber, 2018",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:19:34.423636Z"
+    },
+    {
+      "id": "49bfb6ec-0232-4f40-98a4-9a08a1954113",
+      "content_id": "c626170a-b095-4459-ac79-94be8a51bbcb",
+      "claim_id": "C15",
+      "claim": "The 3-step map alignment algorithm predicts normal wild-type (WT) mapping as well as the map alignment defects observed in the Isl2-Efna3KI animals.",
+      "claim_type": "EXPLICIT",
+      "source": "This algorithm predicts normal wild-type (WT) mapping as well as the map alignment defects observed in the Isl2-Efna3KI animals (Savier et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Savier et al., 2017",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:19:34.423636Z"
+    },
+    {
+      "id": "e7b2dc3a-d45f-4e81-9075-acefe7c6e4d1",
+      "content_id": "c626170a-b095-4459-ac79-94be8a51bbcb",
+      "claim_id": "C16",
+      "claim": "The 3-step map alignment algorithm accurately simulates both RC and CC mapping defects in Isl2-Epha3KI mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we demonstrate that the 3-step map alignment algorithm accurately simulates both RC and CC mapping defects in Isl2-Epha3KI mutants (Brown et al., 2000; Triplett et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data in the manuscript and citations to Brown et al., 2000 and Triplett et al., 2009",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:19:34.423636Z"
+    },
+    {
+      "id": "530141b2-cca8-4028-91e2-cec464d1565b",
+      "content_id": "c626170a-b095-4459-ac79-94be8a51bbcb",
+      "claim_id": "C17",
+      "claim": "Ectopic expression of Epha3 in Isl2(+) RGCs does not affect retinal Efna co-expression.",
+      "claim_type": "EXPLICIT",
+      "source": "However, whether EPHA3 ectopic expression in Isl2-positive (Isl2(+)) RGCs affects retinal Efna co-expression is unknown. We performed a quantitative analysis of retinal Efna transcripts in P1/P2 nasal, central, and temporal acutely isolated RGCs (Savier et al., 2017), revealing similar expression levels between Isl2Epha3/Epha3 and WT littermates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental qPCR data presented in Figure 1A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:19:34.423636Z"
+    },
+    {
+      "id": "872a0399-33bd-49de-8a2d-efe4afdfcdc6",
+      "content_id": "c626170a-b095-4459-ac79-94be8a51bbcb",
+      "claim_id": "C18",
+      "claim": "The graded expression of Efna2 and Efna5 running from high-nasal to low-temporal is preserved in Isl2Epha3/Epha3 animals.",
+      "claim_type": "EXPLICIT",
+      "source": "The graded expression of Efna2 and Efna5 running form high-nasal to low-temporal is preserved in Isl2Epha3/Epha3 animals, whereas the expression of Efna3 as well as Epha3 is homogeneous (Figure 1A \u2013 Figure 1\u2014source data 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 1A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:19:34.423636Z"
+    },
+    {
+      "id": "892f114c-e614-424f-86c8-f85a85902901",
+      "content_id": "c626170a-b095-4459-ac79-94be8a51bbcb",
+      "claim_id": "C19",
+      "claim": "The expression of Efna3 as well as Epha3 is homogeneous in Isl2Epha3/Epha3 animals.",
+      "claim_type": "EXPLICIT",
+      "source": "The graded expression of Efna2 and Efna5 running form high-nasal to low-temporal is preserved in Isl2Epha3/Epha3 animals, whereas the expression of Efna3 as well as Epha3 is homogeneous (Figure 1A \u2013 Figure 1\u2014source data 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 1A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:19:34.423636Z"
+    },
+    {
+      "id": "c423be01-8e23-4842-b126-9daa056464ec",
+      "content_id": "c626170a-b095-4459-ac79-94be8a51bbcb",
+      "claim_id": "C20",
+      "claim": "Transcript analyses in V1 and SC revealed similar levels of Efna2/a3/a5 and Epha4/a7 receptors in Isl2Epha3/Epha3 compared to WT littermates at P7.",
+      "claim_type": "EXPLICIT",
+      "source": "Transcript analyses in V1 and SC (Figure 1B \u2013 Figure 1\u2014source data 1B) revealed similar levels of Efna2/a3/a5 and Epha4/a7 receptors in Isl2Epha3/Epha3 compared to WT littermates at P7 excluding indirect effects on mapping due to local changes of Ephas/Efnas gene expression.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental qPCR data shown in Figure 1B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:19:34.423636Z"
+    },
+    {
+      "id": "edd9e460-8cfe-4dea-8918-d1bf4c6c637b",
+      "content_id": "c626170a-b095-4459-ac79-94be8a51bbcb",
+      "claim_id": "C21",
+      "claim": "The equations modeling retinal, collicular and cortical Efna gradients as well as cortical Epha gradients related to the Isl2-Epha3KI genotypes are equivalent to the equations previously characterized in WT animals.",
+      "claim_type": "EXPLICIT",
+      "source": "We can reasonably assume that the equations modeling retinal, collicular and cortical Efna gradients as well as cortical Epha gradients related to the Isl2-Epha3KI genotypes are equivalent to the equations previously characterized (measured experimentally or estimated) in WT animals (Reber et al., 2004; Cang et al., 2005; Tsigankov and Koulakov, 2006; Tsigankov and Koulakov, 2010; Bevins et al., 2011; Savier et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on inference from experimental data and supported by multiple citations",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:19:34.423636Z"
+    },
+    {
+      "id": "04be71e6-a6bf-41a1-aef3-d44205d45dd2",
+      "content_id": "c626170a-b095-4459-ac79-94be8a51bbcb",
+      "claim_id": "C22",
+      "claim": "The 3-step map alignment model simulates a continuous, single RC map for WT animals.",
+      "claim_type": "EXPLICIT",
+      "source": "Results showed a continuous, single map for WT (Figure 2E), as expected from previous experimental findings and theoretical modeling (Brown et al., 2000; Reber et al., 2004; Savier et al., 2017; Bevins et al., 2011).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by simulation results shown in Figure 2E and citations to previous work",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:19:34.423636Z"
+    },
+    {
+      "id": "b1a91c9b-86d6-4764-9fad-c31e5b346ba3",
+      "content_id": "c626170a-b095-4459-ac79-94be8a51bbcb",
+      "claim_id": "C23",
+      "claim": "For the Isl2Epha3/+, partially duplicated RC mapping is modeled, together with the presence of a collapse point for temporal-most RGCs.",
+      "claim_type": "EXPLICIT",
+      "source": "For the Isl2Epha3/+, partially duplicated RC mapping is modeled, together with the presence of a collapse point for temporal-most RGCs (Figure 2K) as extensively observed experimentally (Brown et al., 2000; Reber et al., 2004; Bevins et al., 2011) and theoretically (Reber et al., 2004; Willshaw, 2006; Tsigankov and Koulakov, 2010; Simpson and Goodhill, 2011).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by simulation results shown in Figure 2K and citations to experimental and theoretical work",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:19:34.423636Z"
+    },
+    {
+      "id": "0466a88a-286d-4e5e-8686-ed84acc785b4",
+      "content_id": "c626170a-b095-4459-ac79-94be8a51bbcb",
+      "claim_id": "C24",
+      "claim": "For Isl2Epha3/Epha3, the RC map is fully duplicated.",
+      "claim_type": "EXPLICIT",
+      "source": "For Isl2Epha3/Epha3, the RC map is fully duplicated, similarly to previous experimental and theoretical findings (Figure 2Q; Brown et al., 2000; Reber et al., 2004; Willshaw, 2006; Tsigankov and Koulakov, 2010; Bevins et al., 2011; Simpson and Goodhill, 2011).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by simulation results shown in Figure 2Q and citations to previous work",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:19:34.423636Z"
+    },
+    {
+      "id": "dd7d87f3-dfa2-438e-a656-0610be84bd33",
+      "content_id": "c626170a-b095-4459-ac79-94be8a51bbcb",
+      "claim_id": "C25",
+      "claim": "For WT, the transposition of retinal Efna gradients to the SC generates a smooth monotonically increasing gradient.",
+      "claim_type": "EXPLICIT",
+      "source": "For WT, this generates a smooth monotonically increasing gradient (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by simulation results shown in Figure 2C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:19:34.423636Z"
+    },
+    {
+      "id": "02330a65-c374-4b8d-bf90-251508f315bd",
+      "content_id": "c626170a-b095-4459-ac79-94be8a51bbcb",
+      "claim_id": "C26",
+      "claim": "For the Isl2Epha3/+ genotype, the transposition of retinal Efna gradients generates a double oscillatory gradient of retinal Efnas in the SC.",
+      "claim_type": "EXPLICIT",
+      "source": "For the Isl2Epha3/+ genotype, this transposition generates a double oscillatory gradient of retinal Efnas in the SC (Figure 2I), a consequence of the partial duplication of the RC map (Figure 2K).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by simulation results shown in Figure 2I and inference from the RC map duplication",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:19:34.423636Z"
+    },
+    {
+      "id": "8982c621-664a-4259-8828-c1505a215fce",
+      "content_id": "c626170a-b095-4459-ac79-94be8a51bbcb",
+      "claim_id": "C27",
+      "claim": "For the Isl2Epha3/Epha3, the transposition of the retinal Efna gradients, according to the fully duplicated RC map, generated a double oscillatory gradient of transposed retinal Efnas in the SC.",
+      "claim_type": "EXPLICIT",
+      "source": "For the Isl2Epha3/Epha3, the transposition of the retinal Efna gradients, according to the fully duplicated RC map (Figure 2Q), generated a double oscillatory gradient of transposed retinal Efnas in the SC (Figure 2O).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by simulation results shown in Figure 2O and inference from the RC map duplication",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:19:34.423636Z"
+    },
+    {
+      "id": "909152be-0ef9-44ba-9219-b39b1cc2e1a7",
+      "content_id": "c626170a-b095-4459-ac79-94be8a51bbcb",
+      "claim_id": "C28",
+      "claim": "The WT CC map is smooth and continuous.",
+      "claim_type": "EXPLICIT",
+      "source": "The WT CC map is smooth and continuous (Figure 2F), similarly to the RC map (Figure 2E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by simulation results shown in Figure 2F",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:19:34.423636Z"
+    },
+    {
+      "id": "f3fdef66-0b62-4e5c-8d5f-27515f986ac7",
+      "content_id": "c626170a-b095-4459-ac79-94be8a51bbcb",
+      "claim_id": "C29",
+      "claim": "The Isl2Epha3/+ simulations show dispersed projections forming two separated maps collapsing in the rostral-most part of the SC from lateral-most V1 neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "The Isl2Epha3/+ simulations show dispersed projections forming two separated maps collapsing in the rostral-most part of the SC from lateral-most V1 neurons (Figure 2L).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by simulation results shown in Figure 2L",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:19:34.423636Z"
+    },
+    {
+      "id": "25a766f6-3265-4e83-93ae-4c80c5a58ad8",
+      "content_id": "c626170a-b095-4459-ac79-94be8a51bbcb",
+      "claim_id": "C30",
+      "claim": "CC map simulations for the Isl2Epha3/Epha3 genotype show dispersed projections forming two fully separated maps.",
+      "claim_type": "EXPLICIT",
+      "source": "CC map simulations for the Isl2Epha3/Epha3 genotype shows dispersed projections forming two fully separated maps (Figure 2R).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by simulation results shown in Figure 2R",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:19:34.423636Z"
+    },
+    {
+      "id": "cb639366-0090-44fc-b351-afbc5c18ea58",
+      "content_id": "c626170a-b095-4459-ac79-94be8a51bbcb",
+      "claim_id": "C31",
+      "claim": "In Isl2Epha3/+ animals, experimental measurements match with the theoretical representation of the RC map.",
+      "claim_type": "EXPLICIT",
+      "source": "Our experimental measurements (triangles and square, Figure 3B \u2013 Figure 3\u2014source data 1B) match with the theoretical representation (black dots, black/gray lines Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by comparison of experimental and simulated data shown in Figure 3B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:19:34.423636Z"
+    },
+    {
+      "id": "e5976909-5b96-4e24-82e6-7c130b75248b",
+      "content_id": "c626170a-b095-4459-ac79-94be8a51bbcb",
+      "claim_id": "C32",
+      "claim": "CC anterograde tracing in Isl2Epha3/+ animals revealed a partially duplicated CC map with the occurrence of a collapse point near 82% of the medial-lateral axis of V1 (16% of the rostral-caudal axis of the SC).",
+      "claim_type": "EXPLICIT",
+      "source": "CC anterograde tracing (Figure 3D, n = 15, red dots/lines \u2013 Figure 3\u2014source data 1D), performed as described earlier (Savier et al., 2017), revealed a partially duplicated CC map with the occurrence of a collapse point near 82% of the medial-lateral axis of V1 (16% of the rostral-caudal axis of the SC), similarly to the simulated map (black dots, black/gray lines Figure 3D, two-samples Kolmogorov-Smirnov test).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental tracing data shown in Figure 3D and statistical comparison with simulated map",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:19:34.423636Z"
+    },
+    {
+      "id": "c8486c8d-9c39-4650-b188-feabfefa793d",
+      "content_id": "c626170a-b095-4459-ac79-94be8a51bbcb",
+      "claim_id": "C33",
+      "claim": "In Isl2Epha3/Epha3, experimental RC duplications match with the simulated mapping.",
+      "claim_type": "EXPLICIT",
+      "source": "In Isl2Epha3/Epha3, RC duplications are observed as shown by two experimental measurements (triangles and squares) plotted on the RC map (Figure 3E,F \u2013 Figure 3\u2014source data 1F) and as extensively described previously (Brown et al., 2000; Reber et al., 2004). These experimental data match with the simulated mapping (black dots, black/gray lines Figure 3F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by comparison of experimental and simulated data shown in Figure 3F and citations to previous work",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:19:34.423636Z"
+    },
+    {
+      "id": "a1672dde-45c0-4704-aa32-a706293e2fbb",
+      "content_id": "c626170a-b095-4459-ac79-94be8a51bbcb",
+      "claim_id": "C34",
+      "claim": "CC map tracing in vivo in Isl2Epha3/Epha3 revealed a fully duplicated CC map, as predicted by the simulations.",
+      "claim_type": "EXPLICIT",
+      "source": "CC map tracing in vivo (Figure 3G,H, red dots/line, n = 7 \u2013 Figure 3\u2014source data 1H) revealed a fully duplicated CC map, as predicted by the simulations (Figure 3H, black dots, black/gray lines, two-samples Kolmogorov-Smirnov test).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental tracing data shown in Figure 3H and statistical comparison with simulated map",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:19:34.423636Z"
+    },
+    {
+      "id": "fc00de91-20f1-4f72-a3fb-4eb547600c5e",
+      "content_id": "c626170a-b095-4459-ac79-94be8a51bbcb",
+      "claim_id": "C35",
+      "claim": "In WT animals, median IDIretino = 5.66, 95% CI [5.15; 6.17], median IDIcortico = 8.12 [7.63; 8.60] and median AI = 2.23 [2.13; 2.33].",
+      "claim_type": "EXPLICIT",
+      "source": "In WT animals, median IDIretino = 5.66, 95% CI [5.15; 6.17], median IDIcortico = 8.12 [7.63; 8.60] and median AI = 2.23 [2.13; 2.33] (Figure 4A,G \u2013 Figure 4\u2014source data 1A, G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by computational analysis shown in Figure 4A,G",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:19:34.423636Z"
+    },
+    {
+      "id": "7b60830e-aa8e-4d4d-bcad-46a1313425b5",
+      "content_id": "c626170a-b095-4459-ac79-94be8a51bbcb",
+      "claim_id": "C36",
+      "claim": "In Isl2Epha3/+, median IDIretino = 38.8 [36.8; 40.8], median IDIcortico = 38.0 [36.1; 40.0] and median AI = 2.07 [1.95; 2.19].",
+      "claim_type": "EXPLICIT",
+      "source": "In Isl2Epha3/+, median IDIretino = 38.8 [36.8; 40.8], median IDIcortico = 38.0 [36.1; 40.0] and median AI = 2.07 [1.95; 2.19] (Figure 4A \u2013 Figure 4\u2014source data 1A) indicating increased spreading of both RC and CC projections, due to the partially duplicated maps (Figure 4C, black and white dots).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by computational analysis shown in Figure 4A and inference from map duplication",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:19:34.423636Z"
+    },
+    {
+      "id": "264692d4-9628-43d0-8ff7-970ebb1d795c",
+      "content_id": "c626170a-b095-4459-ac79-94be8a51bbcb",
+      "claim_id": "C37",
+      "claim": "The median AI value in Isl2Epha3/+ is not statistically different from WT, suggesting that Isl2Epha3/+ RC/CC maps are aligned.",
+      "claim_type": "EXPLICIT",
+      "source": "The median AI value in Isl2Epha3/+ (2.07 [1.95, 2.19]) is not statistically different from WT (Figure 4G \u2013 Figure 4\u2014source data 1G), suggesting that Isl2Epha3/+ RC/CC maps are aligned (Figure 4C, black and white dots).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by statistical analysis shown in Figure 4G and inference from AI values",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:19:34.423636Z"
+    },
+    {
+      "id": "b56aca9c-f04b-4b1e-bdc9-192d9d612eb9",
+      "content_id": "c626170a-b095-4459-ac79-94be8a51bbcb",
+      "claim_id": "C38",
+      "claim": "In the Isl2Epha3/Epha3 animals, median IDIretino = 51.7 [50.8; 52.6], median IDIcortico = 50.6 [49.7; 51.5] and median AI = 2.2 [2.08; 2.32].",
+      "claim_type": "EXPLICIT",
+      "source": "In the Isl2Epha3/Epha3 animals, median IDIretino = 51.7 [50.8; 52.6], median IDIcortico = 50.6 [49.7; 51.5] and median AI = 2.2 [2.08; 2.32] (Figure 4A,G - Figure 4\u2014source data 1A,G), indicating an increased separation between the RCand CC maps compared to WT and Isl2Epha3/+ due to fully duplicated projections (Figure 4D white and black dots).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by computational analysis shown in Figure 4A,G and inference from map duplication",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:19:34.423636Z"
+    },
+    {
+      "id": "90deacac-eead-4ee0-94ef-cb14e5e09410",
+      "content_id": "c626170a-b095-4459-ac79-94be8a51bbcb",
+      "claim_id": "C39",
+      "claim": "The median AI value in Isl2Epha3/Epha3 is not significantly different from WT, indicating aligned RC and CC maps.",
+      "claim_type": "EXPLICIT",
+      "source": "The median AI value (2.20 [2.02; 2.43]) is not significantly different from WT (Figure 4G \u2013 Figure 4\u2014source data 1G), indicating aligned RC and CC maps (Figure 4D, black and white dots).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by statistical analysis shown in Figure 4G and inference from AI values",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:19:34.423636Z"
+    },
+    {
+      "id": "d1be034e-e2ab-48db-8227-dd3849211a33",
+      "content_id": "c626170a-b095-4459-ac79-94be8a51bbcb",
+      "claim_id": "C40",
+      "claim": "Median AI values for WT, Isl2Epha3/+ and Isl2Epha3/Epha3 are not significantly different suggesting that RC and CC maps in these animals are aligned, although partially or fully duplicated.",
+      "claim_type": "EXPLICIT",
+      "source": "Median AI values for WT, Isl2Epha3/+ and Isl2Epha3/Epha3 are not significantly different suggesting that RC and CC maps in these animals are aligned (Figure 4G \u2013 Figure 4\u2014source data 1G), although partially or fully duplicated.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by statistical analysis shown in Figure 4G and inference from AI values",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:19:34.423636Z"
+    },
+    {
+      "id": "2d6e1a81-2af4-4f6e-84dc-1a1266e2d6d1",
+      "content_id": "c626170a-b095-4459-ac79-94be8a51bbcb",
+      "claim_id": "C41",
+      "claim": "Median values for Isl2Efna3/+ are IDIretino = 5.56 [5.04; 6.07] and IDIcortico = 12.5 [11.8; 13.2].",
+      "claim_type": "EXPLICIT",
+      "source": "Median values for Isl2Efna3/+ are IDIretino = 5.56 [5.04; 6.07] and IDIcortico = 12.5 [11.8; 13.2] (Figure 4A \u2013 Figure 4\u2014source data 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by computational analysis shown in Figure 4A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:19:34.423636Z"
+    },
+    {
+      "id": "d8ef59dc-022b-4b71-920b-53eefeb2aaa2",
+      "content_id": "c626170a-b095-4459-ac79-94be8a51bbcb",
+      "claim_id": "C42",
+      "claim": "IDIretino in Isl2Efna3/+ is not significantly different from WT suggesting no dispersion of the RC map.",
+      "claim_type": "EXPLICIT",
+      "source": "IDIretino is not significantly different from WT suggesting no dispersion of the RC map (Figure 4E, white dots).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by statistical analysis and inference from IDI values shown in Figure 4E",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:19:34.423636Z"
+    },
+    {
+      "id": "9252468e-7855-4f1f-9eaa-d04056349d23",
+      "content_id": "c626170a-b095-4459-ac79-94be8a51bbcb",
+      "claim_id": "C43",
+      "claim": "IDIcortico in Isl2Efna3/+ is significantly different from WT indicating a spreading of the CC map.",
+      "claim_type": "EXPLICIT",
+      "source": "However, IDIcortico is significantly different from WT indicating a spreading of the CC map (Figure 4E, black dots).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by statistical analysis and inference from IDI values shown in Figure 4E",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:19:34.423636Z"
+    },
+    {
+      "id": "844ee8c6-f921-459a-a0d8-e90eb7afab06",
+      "content_id": "c626170a-b095-4459-ac79-94be8a51bbcb",
+      "claim_id": "C44",
+      "claim": "The median AI value in Isl2Efna3/+ is 4.52 [4.28, 4.76], significantly different from WT, suggesting misalignment between RC and CC maps.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests a misalignment between RC and CC maps (Figure 4E) as confirmed by the median AI value in Isl2Efna3/+ (Figure 4G, 4.52 [4.28, 4.76] - Figure 4\u2014source data 1G), significantly different from WT.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by statistical analysis shown in Figure 4G and inference from AI values",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:19:34.423636Z"
+    },
+    {
+      "id": "0d0de85a-b3b2-4513-a0ef-67b4d7933ed2",
+      "content_id": "c626170a-b095-4459-ac79-94be8a51bbcb",
+      "claim_id": "C45",
+      "claim": "Visual map misalignment is more pronounced in Isl2Efna3/Efna3 (median AI = 8.85 [8.23, 9.26]) compared to Isl2Efna3/+.",
+      "claim_type": "EXPLICIT",
+      "source": "Visual map misalignment is more pronounced in Isl2Efna3/Efna3 (median AI = 8.85 [8.23, 9.26], Figure 4G \u2013 Figure 4\u2014source data 1G) compared to Isl2Efna3/+ as previously shown in vivo (Savier et al., 2017).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by computational analysis shown in Figure 4G and citation to Savier et al., 2017",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:19:34.423636Z"
+    },
+    {
+      "id": "e5adfeb0-1a2d-4903-bfb5-19606c11ee9b",
+      "content_id": "c626170a-b095-4459-ac79-94be8a51bbcb",
+      "claim_id": "C46",
+      "claim": "In Isl2Efna3/Efna3, IDIretino indicates that RC map spreading is similar to WT.",
+      "claim_type": "EXPLICIT",
+      "source": "Map dispersion value IDIretino in Isl2Efna3/Efna3 indicates that RC map spreading is similar to WT (Figure 4F, white dots; Figure 4A, median IDIretino = 5.56 [5.08, 6.03], not significantly different from WT)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by statistical analysis and inference from IDI values shown in Figure 4A,F",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:19:34.423636Z"
+    },
+    {
+      "id": "59f48b13-a506-40f5-bcba-1f15bdc4827c",
+      "content_id": "c626170a-b095-4459-ac79-94be8a51bbcb",
+      "claim_id": "C47",
+      "claim": "In Isl2Efna3/Efna3, IDIcortico indicates dispersion of the CC map (median IDIcortico = 19.1 [17.7, 20.5]).",
+      "claim_type": "EXPLICIT",
+      "source": "whereas IDIcortico indicates dispersion of the CC map (Figure 4F, black dots; Figure 4A, median IDIcortico = 19.1 [17.7, 20.5] \u2013 Figure 4\u2014source data 1A) as demonstrated previously (Savier et al., 2017).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by computational analysis shown in Figure 4A,F and citation to Savier et al., 2017",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:19:34.423636Z"
+    },
+    {
+      "id": "74f7b412-72f6-4275-9ffb-b41e92ef9c68",
+      "content_id": "c626170a-b095-4459-ac79-94be8a51bbcb",
+      "claim_id": "C48",
+      "claim": "In WT, Isl2Epha3/+, and Isl2Epha3/Epha3, median local IDVs between RC and CC maps are similar and covary, indicating that the maps are aligned.",
+      "claim_type": "EXPLICIT",
+      "source": "In WT (Figure 5A), Isl2Epha3/+ (Figure 5B) and Isl2Epha3/Epha3 (Figure 5C), median local IDVs between RC and CC maps are similar and covary (> 0) (WT RC/CC: Jaccard similarity index = 0.60 indicating 60% overlap- covariance = 1.64; Isl2Epha3/+RC/CC: Jaccard similarity index = 0.30, covariance = 88.2; Isl2Epha3/Epha3 RC/CC: Jaccard similarity index = 0.55, covariance = 12.8), indicating that the maps are aligned.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by computational analysis shown in Figure 5A,B,C and inference from Jaccard similarity and covariance values",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:19:34.423636Z"
+    },
+    {
+      "id": "8b383d86-51ca-4cea-99d4-25a97ee9f513",
+      "content_id": "c626170a-b095-4459-ac79-94be8a51bbcb",
+      "claim_id": "C49",
+      "claim": "In Isl2Efna3/+ and Isl2Efna3/Efna3 animals, median local RC and CC IDVs variation do not superimpose nor covary.",
+      "claim_type": "EXPLICIT",
+      "source": "This is in sharp contrast to the Isl2Efna3/+ (Figure 5D) and Isl2Efna3/Efna3 (Figure 5E) animals where median local RC and CC IDVs variation do not superimpose nor covary (Isl2Efna3/+RC/CC: Jaccard similarity index = 0.17, covariance = \u22121.99; Isl2Efna3/Efna3RC/CC: Jaccard similarity index = 0.08, covariance = \u22124.13).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by computational analysis shown in Figure 5D,E and inference from Jaccard similarity and covariance values",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:19:34.423636Z"
+    },
+    {
+      "id": "d34331f9-9863-4803-89f9-6fa89826ba47",
+      "content_id": "c626170a-b095-4459-ac79-94be8a51bbcb",
+      "claim_id": "C50",
+      "claim": "In Isl2Epha3/+ animals, median local IDVretino and median local IDVcortico reach IDVthreshold at 12% and at 8% of the rostral-caudal axis in the SC respectively, consistent with the position of the collapse points.",
+      "claim_type": "EXPLICIT",
+      "source": "More precisely, in Isl2Epha3/+ animals, median local IDVretino and median local IDVcortico reach IDVthreshold at 12% and at 8% of the rostral-caudal axis in the SC respectively (Figure 5B) consistent with the position of the collapse points described earlier (Brown et al., 2000; Savier et al., 2017 and Figure 3B,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by computational analysis shown in Figure 5B and citations to previous work",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:19:34.423636Z"
+    },
+    {
+      "id": "5031d88a-32bb-4b74-a3af-a6b110b77a79",
+      "content_id": "c626170a-b095-4459-ac79-94be8a51bbcb",
+      "claim_id": "C51",
+      "claim": "In Isl2Epha3/Epha3 animals, both RC and CC median local IDV > IDVthreshold along the entire rostral-caudal axis, indicating full RC and CC maps duplication.",
+      "claim_type": "EXPLICIT",
+      "source": "In Isl2Epha3/Epha3 animals, both RC and CC median local IDV > IDVthreshold along the entire rostral-caudal axis (Figure 5C), indicating full RC and CC maps duplication as shown experimentally (Brown et al., 2000; Triplett et al., 2009; Figure 3F,H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by computational analysis shown in Figure 5C and citations to experimental work",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:19:34.423636Z"
+    },
+    {
+      "id": "367bc8d5-fc46-40f5-aabb-525ded927d1e",
+      "content_id": "c626170a-b095-4459-ac79-94be8a51bbcb",
+      "claim_id": "C52",
+      "claim": "For both Isl2Efna3/+ and Isl2Efna3/Efna3 CC maps, local IDVs oscillate around the IDVthreshold with a more pronounced effect in the rostral-half of the SC in Isl2Efna3/Efna3 indicating partial duplications of the CC maps.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, for both Isl2Efna3/+ and Isl2Efna3/Efna3 CC maps (Figure 5D, dark red, Figure 5E, dark blue, respectively) local IDVs oscillate around the IDVthreshold with a more pronounced effect in the rostral-half of the SC in Isl2Efna3/Efna3 indicating partial duplications of the CC maps in these animals, as demonstrated in vivo (Savier et al., 2017).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by computational analysis shown in Figure 5D,E and citation to Savier et al., 2017",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:19:34.423636Z"
+    },
+    {
+      "id": "8baf464f-c827-445a-99e0-48e6b27055d8",
+      "content_id": "c626170a-b095-4459-ac79-94be8a51bbcb",
+      "claim_id": "C53",
+      "claim": "RC median local IDVs in Isl2Efna3/+ and Isl2Efna3/Efna3 animals fall below IDVthreshold indicating single maps.",
+      "claim_type": "EXPLICIT",
+      "source": "RC median local IDVs in Isl2Efna3/+ and Isl2Efna3/Efna3 animals (Figure 5D pink line, Figure 5E light blue line, respectively) fall below IDVthreshold indicating single maps as demonstrated previously (Savier et al., 2017).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by computational analysis shown in Figure 5D,E and citation to Savier et al., 2017",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:19:34.423636Z"
+    },
+    {
+      "id": "94d32146-d47a-49ce-aab7-d1adc1a99205",
+      "content_id": "c626170a-b095-4459-ac79-94be8a51bbcb",
+      "claim_id": "C54",
+      "claim": "The 3-step map alignment algorithm is valid and robust in predicting RC and CC maps formation and alignment during development.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these experimental and theoretical results confirm the validity and robustness of the 3-step map alignment algorithm in predicting RC and CC maps formation and alignment during development.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on inference from the combined experimental and computational results presented in the manuscript",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:19:34.423636Z"
+    },
+    {
+      "id": "ec79d56c-5176-4c30-b0a5-e509e89c4190",
+      "content_id": "c626170a-b095-4459-ac79-94be8a51bbcb",
+      "claim_id": "C55",
+      "claim": "The algorithm generates RC maps for Isl2Epha3/+ heterozygous and Isl2Epha3/Epha3 homozygous animals after 10^7 iterations per run.",
+      "claim_type": "EXPLICIT",
+      "source": "After 107 iterations per run, the algorithm generates RC maps for Isl2Epha3/+ heterozygous and Isl2Epha3/Epha3 homozygous animals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Describes the computational methodology used in the study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:19:34.423636Z"
+    },
+    {
+      "id": "448efaf0-150c-4307-b64b-95a66125c400",
+      "content_id": "c626170a-b095-4459-ac79-94be8a51bbcb",
+      "claim_id": "C56",
+      "claim": "In Isl2-Epha3KI animals, the lower RC map corresponds to Isl2(+) Epha3-expressing RGCs, covering 0 to 50% of the rostral-caudal axis in the Isl2Epha3/Epha3 and 0 to 80% of the axis in Isl2Epha3/+.",
+      "claim_type": "EXPLICIT",
+      "source": "In Isl2-Epha3KI animals, the lower RC map corresponds to Isl2(+) Epha3-expressing RGCs, covering 0 to 50% of the rostral-caudal axis in the Isl2Epha3/Epha3 and 0 to 80% of the axis in Isl2Epha3/+ (Figures 5 and 6 in Brown et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Brown et al., 2000",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:19:34.423636Z"
+    },
+    {
+      "id": "82137a51-37bb-43c4-85b9-5bcbb1d48a24",
+      "content_id": "c626170a-b095-4459-ac79-94be8a51bbcb",
+      "claim_id": "C57",
+      "claim": "The upper map, corresponding to the Isl2(-) WT RGCs, covers the caudal half (50 to 100%) of the rostral-caudal axis of the SC in Isl2Epha3/Epha3 and 20\u2013100% of the axis in Isl2Epha3/+.",
+      "claim_type": "EXPLICIT",
+      "source": "The upper map, corresponding to the Isl2(-) WT RGCs, covers the caudal half (50 to 100%) of the rostral-caudal axis of the SC in Isl2Epha3/Epha3 and 20\u2013100% of the axis in Isl2Epha3/+ (Figures 5 and 6 in Brown et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Brown et al., 2000",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:19:34.423636Z"
+    },
+    {
+      "id": "19234f62-6388-4463-b429-d2e383a1edd0",
+      "content_id": "c626170a-b095-4459-ac79-94be8a51bbcb",
+      "claim_id": "C58",
+      "claim": "In both Isl2Epha3/Epha3 and Isl2Epha3/+ animals, nasal Isl2(-) RGCs, expressing high levels of Efnas, project to caudal locations in the SC whereas nasal Isl2(+) RGCs, also carrying high levels of Efnas, project ectopically in a more rostral part of the SC.",
+      "claim_type": "EXPLICIT",
+      "source": "In both contexts, nasal Isl2(-) RGCs, expressing high levels of Efnas, project to caudal locations in the SC whereas nasal Isl2(+) RGCs, also carrying high levels of Efnas, project ectopically in a more rostral part of the SC, where the WT levels of retinal Efnas are normally low (compare Figure 2C with Figure 2I and O; see also Figure 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on inference from simulation results shown in Figures 2 and 6",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:19:34.423636Z"
+    },
+    {
+      "id": "e6e45ff3-faf4-4c3f-8e46-0c3f20492841",
+      "content_id": "c626170a-b095-4459-ac79-94be8a51bbcb",
+      "claim_id": "C59",
+      "claim": "The distribution of RGC projections in the SC in both Isl2Epha3/Epha3 and Isl2Epha3/+ animals leads to a perturbation of the transposed retinal Efna gradients in the SC, generating duplicated Efna gradients along the rostral-caudal axis.",
+      "claim_type": "EXPLICIT",
+      "source": "Such distribution of RGC projections in the SC in both Isl2Epha3/Epha3 and Isl2Epha3/+ animals leads to a perturbation of the transposed retinal Efna gradients in the SC, generating duplicated Efna gradients along the rostral-caudal axis in both genotypes (Figure 2I,O, Figure 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on inference from simulation results shown in Figures 2 and 6",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:19:34.423636Z"
+    },
+    {
+      "id": "257fa4be-9d78-460f-845d-952beab2ac21",
+      "content_id": "c626170a-b095-4459-ac79-94be8a51bbcb",
+      "claim_id": "C60",
+      "claim": "Simulated CC maps are duplicated for both Isl2Epha3/+ and Isl2Epha3/Epha3 and align with the duplicated RC maps as confirmed by in vivo analyses.",
+      "claim_type": "EXPLICIT",
+      "source": "Consequently, simulated CC maps are also duplicated for both Isl2Epha3/+ and Isl2Epha3/Epha3 and further align with the duplicated RC maps as confirmed by in vivo analyses (Figure 3D,H, Figure 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by simulation results and experimental validation shown in Figures 3 and 6",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:19:34.423636Z"
+    },
+    {
+      "id": "4bb7ff3a-8b19-4e46-8cb0-4e457def9c6e",
+      "content_id": "c626170a-b095-4459-ac79-94be8a51bbcb",
+      "claim_id": "C61",
+      "claim": "The ectopic over-expression of Epha3 in the retina has no effect on the expression of Efnas in this structure.",
+      "claim_type": "EXPLICIT",
+      "source": "Our quantification of Ephas and Efnas throughout the visual system revealed that the ectopic over-expression of Epha3 in the retina has no effect on the expression of Efnas in this structure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental qPCR data presented in Figure 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:19:34.423636Z"
+    },
+    {
+      "id": "cb415c7a-136f-4d2e-8d92-008c7e790a93",
+      "content_id": "c626170a-b095-4459-ac79-94be8a51bbcb",
+      "claim_id": "C62",
+      "claim": "The redistribution of the molecular cues carried by retinal axons during the formation of a duplicated RC map is sufficient to induce a collicular duplication of the projections coming from V1.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results suggest an alternative, although complementary mechanism, in which the redistribution of the molecular cues carried by retinal axons during the formation of a duplicated RC map is sufficient to induce a collicular duplication of the projections coming from V1 (Figure 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on inference from the combined experimental and computational results",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:19:34.423636Z"
+    },
+    {
+      "id": "8a8c71a7-8879-4380-bbec-e319312b174f",
+      "content_id": "c626170a-b095-4459-ac79-94be8a51bbcb",
+      "claim_id": "C63",
+      "claim": "Retinal Efnas, free or bound to Ephas to a limited amount, retain their binding activity in the SC for incoming V1 axons carrying Epha receptors.",
+      "claim_type": "EXPLICIT",
+      "source": "As mentioned earlier (Savier et al., 2017), in this context retinal Efnas, free or bound to Ephas to a limited amount (Suetterlin and Drescher, 2014), retain their binding activity in the SC for incoming V1 axons carrying Epha receptors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Savier et al., 2017 and Suetterlin and Drescher, 2014",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:19:34.423636Z"
+    },
+    {
+      "id": "613ad86c-a695-4175-ac75-d146fb0a9f38",
+      "content_id": "c626170a-b095-4459-ac79-94be8a51bbcb",
+      "claim_id": "C64",
+      "claim": "The rearrangement of the retinal Efnas transposed to the SC generates a duplicated gradient which is then encountered by the incoming cortical V1 axons.",
+      "claim_type": "EXPLICIT",
+      "source": "Since the RC map is duplicated in the Isl2-Epha3KI, the nasal-temporal axis of the retina, along which the retinal Efna gradients run, is represented twice in the collicular space. This rearrangement of the retinal Efnas transposed to the SC generates a duplicated gradient which is then encountered by the incoming cortical V1 axons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on inference from the mechanism encoded in the 3-step map alignment model",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:19:34.423636Z"
+    },
+    {
+      "id": "10cf72f7-f5dd-4789-a60c-68183a06793a",
+      "content_id": "c626170a-b095-4459-ac79-94be8a51bbcb",
+      "claim_id": "C65",
+      "claim": "At the time of CC map formation, the endogenous collicular Efnas are not available anymore as they have been endocytosed upon trans-binding with Epha receptors on retinal axons.",
+      "claim_type": "EXPLICIT",
+      "source": "At this point in development, the endogenous collicular Efnas are not available anymore as, for the most part, they have been endocytosed upon trans-binding with Epha receptors on retinal axons (Janes et al., 2005; Savier et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Janes et al., 2005 and Savier et al., 2017",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:19:34.423636Z"
+    },
+    {
+      "id": "1e3cf525-7e4e-40fa-88c6-d950720f3b9b",
+      "content_id": "c626170a-b095-4459-ac79-94be8a51bbcb",
+      "claim_id": "C66",
+      "claim": "The optimal local amount of transposed Efnas signaling the corresponding retinotopic position to V1 axons exists at two distinct locations along the rostral-caudal axis, leading to duplication of the CC map.",
+      "claim_type": "EXPLICIT",
+      "source": "As a consequence, the optimal local amount of transposed Efnas signaling the corresponding retinotopic position to V1 axons exists at two distinct locations along the rostral-caudal axis, leading to duplication of the CC map.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on inference from the mechanism encoded in the 3-step map alignment model",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:19:34.423636Z"
+    },
+    {
+      "id": "7c7efbdf-6257-48a4-bd37-c1a377fa60d2",
+      "content_id": "c626170a-b095-4459-ac79-94be8a51bbcb",
+      "claim_id": "C67",
+      "claim": "The Isl2-Efna3KI mutant revealed an incomplete penetrance of the CC duplication phenotype, suggesting a counter-balancing role of the correlated activity within the normal RC map.",
+      "claim_type": "EXPLICIT",
+      "source": "Our previous findings in the characterization of the Isl2-Efna3KI mutant revealed an incomplete penetrance of the CC duplication phenotype, suggesting a counter-balancing role of the correlated activity within the normal RC map.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on inference from previous experimental findings",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:19:34.423636Z"
+    },
+    {
+      "id": "aa6041a4-deb2-4d3b-87e1-9e4e1e73765c",
+      "content_id": "c626170a-b095-4459-ac79-94be8a51bbcb",
+      "claim_id": "C68",
+      "claim": "For the Isl2-Epha3KI, the correlated activity is also duplicated along the rostro-caudal axis, due to the duplicated RC map, reinforcing the duplication effect and leading to a stronger penetrance of the phenotype.",
+      "claim_type": "EXPLICIT",
+      "source": "For the Isl2-Epha3KI, the correlated activity is also duplicated along the rostro-caudal axis, due to the duplicated RC map, reinforcing this 'duplication' effect and leading to a stronger penetrance of the phenotype.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on inference from the mechanism and comparison with Isl2-Efna3KI",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:19:34.423636Z"
+    },
+    {
+      "id": "0b2d7b74-094b-425c-b560-d6b1519eca04",
+      "content_id": "c626170a-b095-4459-ac79-94be8a51bbcb",
+      "claim_id": "C69",
+      "claim": "IDIs, AIs and local IDVs are relevant, reliable and accurate indicators of visual map organization and conformation.",
+      "claim_type": "EXPLICIT",
+      "source": "Altogether these results suggest that IDIs, AIs and median local IDVs are relevant, reliable and accurate indicators of visual map organization and conformation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on inference from the validation of these metrics across multiple genotypes",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:19:34.423636Z"
+    },
+    {
+      "id": "ed4f96a4-4534-4a9b-a3cd-46198680f949",
+      "content_id": "c626170a-b095-4459-ac79-94be8a51bbcb",
+      "claim_id": "C70",
+      "claim": "The implementation of IDI, AI, and local IDV indexes provides a very detailed and robust analysis of the layout and a qualitative measure of the organization and alignment of the visual maps in different mice genetic models.",
+      "claim_type": "EXPLICIT",
+      "source": "The implementation of these indexes provides a very detailed and robust analysis of the layout and a qualitative measure of the organization and alignment of the visual maps in different mice genetic models.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on inference from the application of these metrics in the study",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:19:34.423636Z"
+    },
+    {
+      "id": "51a50464-b1a7-4523-810d-082a03f78b89",
+      "content_id": "c626170a-b095-4459-ac79-94be8a51bbcb",
+      "claim_id": "C71",
+      "claim": "The 3-step map alignment model is based on the Koulakov model.",
+      "claim_type": "EXPLICIT",
+      "source": "To simulate this mechanism in silico, we generated the 3-step map alignment model, based on the Koulakov model (Koulakov and Tsigankov, 2004; Tsigankov and Koulakov, 2010; Tsigankov and Koulakov, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Koulakov and Tsigankov, 2004; Tsigankov and Koulakov, 2010; Tsigankov and Koulakov, 2006",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:19:34.423636Z"
+    },
+    {
+      "id": "988e32f6-3118-4999-9523-de54581b38c7",
+      "content_id": "c626170a-b095-4459-ac79-94be8a51bbcb",
+      "claim_id": "C72",
+      "claim": "The mechanism underlying the subsequent duplication of the CC projection corresponds to a redistribution of retinal molecular cues, the Efnas, into the SC.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results strongly suggest that the mechanism underlying the subsequent duplication of the CC projection corresponds to a redistribution of retinal molecular cues, the Efnas, into the SC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on inference from the combined experimental and computational results",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:19:34.423636Z"
+    },
+    {
+      "id": "f433769a-e6ed-4b78-9dd6-b4180ff4a815",
+      "content_id": "c626170a-b095-4459-ac79-94be8a51bbcb",
+      "claim_id": "C73",
+      "claim": "The retinal Efnas, provided by the incoming retinal axons within the SC, act together with correlated activity to instruct CC alignment onto the RC map.",
+      "claim_type": "EXPLICIT",
+      "source": "The retinal Efnas, provided by the incoming retinal axons within the SC, act together with correlated activity to instruct CC alignment onto the RC map (Savier et al., 2017; Triplett et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Savier et al., 2017 and Triplett et al., 2009",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:19:34.423636Z"
+    },
+    {
+      "id": "32fb35cb-b894-4c60-9197-d620bde84087",
+      "content_id": "c626170a-b095-4459-ac79-94be8a51bbcb",
+      "claim_id": "C74",
+      "claim": "The layout of the dominant RC map specifies the alignment of the CC map through spontaneous correlated activity and transposed retinal Efnas.",
+      "claim_type": "EXPLICIT",
+      "source": "Together with our previous work (Savier et al., 2017), these data confirm the validity and robustness of our algorithm and reinforces the underlying principle of visual map formation and alignment in the midbrain, where the layout of the dominant RC map specifies the alignment of the CC map through spontaneous correlated activity and transposed retinal Efnas.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on inference from the combined results and supported by citation to Savier et al., 2017",
+      "evidence_type": "[\"INFERENCE\", \"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:19:34.423636Z"
+    },
+    {
+      "id": "e8223ffe-ce03-476e-881c-4638c55f0810",
+      "content_id": "c626170a-b095-4459-ac79-94be8a51bbcb",
+      "claim_id": "C75",
+      "claim": "The principle of visual map formation allows fine adjustments which compensate for intrinsic variability or stochasticity of sensory maps formation.",
+      "claim_type": "EXPLICIT",
+      "source": "Such principle dictates the optimal functioning of the system by allowing fine adjustments which compensate for intrinsic variability -or stochasticity- of sensory maps formation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on speculation about the functional implications of the mechanism",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:19:34.423636Z"
+    },
+    {
+      "id": "a476becb-10b0-4755-8de6-72c1f55575dd",
+      "content_id": "c626170a-b095-4459-ac79-94be8a51bbcb",
+      "claim_id": "C76",
+      "claim": "RGCs were isolated and purified to >99% purity.",
+      "claim_type": "EXPLICIT",
+      "source": "P1/P2 retinas were freshly dissected and RGCs were isolated and purified (>99%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Describes the experimental methodology used in the study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:19:34.423636Z"
+    },
+    {
+      "id": "2499c8f4-4b7d-4381-92cf-962999f11393",
+      "content_id": "c626170a-b095-4459-ac79-94be8a51bbcb",
+      "claim_id": "C78",
+      "claim": "V1 axons/growth cones carrying gradients of Epha receptors are repelled by the transposed gradients of retinal Efna into the SC through forward signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "V1 axons/growth cones carrying gradients of Epha receptors (Figure 2D,J,P) are repelled by the transposed gradients of retinal Efna into the SC (forward signaling) as suggested previously (Savier et al., 2017).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Describes the mechanism encoded in the model and supported by citation to Savier et al., 2017",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:19:34.423636Z"
+    },
+    {
+      "id": "449efad6-240f-407a-bbf7-cc076076f2ce",
+      "content_id": "c626170a-b095-4459-ac79-94be8a51bbcb",
+      "claim_id": "C79",
+      "claim": "RGCs axons/growth cones carrying gradients of Epha receptors are repelled by complementary gradients of collicular Efna through forward signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "RGCs axons/growth cones carrying gradients of Epha receptors are repelled by complementary gradients of collicular Efna (forward signaling) (Figure 2B,H,N)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Describes the mechanism encoded in the model",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:19:34.423636Z"
+    },
+    {
+      "id": "09071b74-c77f-4f50-bab2-1fffba5357ec",
+      "content_id": "c626170a-b095-4459-ac79-94be8a51bbcb",
+      "claim_id": "C80",
+      "claim": "Correlated activity attracts projections originating from similar locations through pair-wise attraction, which is inversely proportional to the distance between two RGC/V1 neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "while correlated activity attracts projections originating from similar locations through pair-wise attraction, which is inversely proportional to the distance between two RGC/V1 neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Describes the mechanism encoded in the model",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:19:34.423636Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "3c375d3b-5218-4cef-b63f-d3a3f85c7355",
+      "content_id": "c626170a-b095-4459-ac79-94be8a51bbcb",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The superior colliculus (SC) is an evolutionarily conserved midbrain structure that integrates visual, auditory, and somatosensory inputs and plays a key role in attention and decision-making. Visual inputs include retino-collicular (RC) and cortico-collicular (CC) projections that form aligned maps necessary for efficient stimulus detection.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C5 provide well-established background information about SC anatomy and function, supported by appropriate citations to the literature (Cang and Feldheim, 2013; Basso and May, 2017; Liang et al., 2015; Zhao et al., 2014). These are standard facts in the field and serve as foundational context for the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:19:34.423636Z"
+    },
+    {
+      "id": "ae02f9ed-7c6a-4831-b33a-6ce06191c916",
+      "content_id": "c626170a-b095-4459-ac79-94be8a51bbcb",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "RC map formation involves Eph/Efn gradients, axon competition, and spontaneous activity waves. The RC map forms before the CC map, and the existence of the RC map is necessary for CC map formation, suggesting interdependence.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6-C8 summarize established mechanisms of visual map formation supported by multiple citations (Ackman and Crair, 2014; Cang and Feldheim, 2013; Triplett et al., 2011; Khachab and Bruce, 1999; Rhoades et al., 1985; Triplett et al., 2009). These provide essential background for understanding the current work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:19:34.423636Z"
+    },
+    {
+      "id": "542becc1-dc86-4a74-b2ee-440dcadea2e9",
+      "content_id": "c626170a-b095-4459-ac79-94be8a51bbcb",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "In Isl2-Epha3KI mutants, ectopic Epha3 expression in 50% of RGCs leads to RC map duplication. Homozygous Isl2Epha3/Epha3 mutants also show full CC map duplication despite normal cortical retinotopy.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9-C10 describe well-characterized phenotypes from prior work (Brown et al., 2000; Triplett et al., 2009). These established findings provide the foundation for the current study's investigation of the mechanisms underlying CC map duplication.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:19:34.423636Z"
+    },
+    {
+      "id": "10fb7b36-1ef9-413f-879d-6fc9f150e86c",
+      "content_id": "c626170a-b095-4459-ac79-94be8a51bbcb",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The Isl2-Efna3KI mutant over-expresses Efna3 in 50% of RGCs, displays no RC map defects, but shows CC map duplication.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11-C12 describe the Isl2-Efna3KI phenotype from the authors' previous work (Savier et al., 2017). This mutant provides a critical comparison case for understanding the mechanisms of map alignment.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:19:34.423636Z"
+    },
+    {
+      "id": "304b1c0a-a0d6-4aeb-ba9e-fd9bffa503cf",
+      "content_id": "c626170a-b095-4459-ac79-94be8a51bbcb",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The 3-step map alignment model, based on the Koulakov model, simulates both RC and CC map formation and alignment. It successfully predicts WT mapping and Isl2-Efna3KI defects.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C13-C15, C71 describe the computational model used in this study, which is based on prior work (Koulakov and Tsigankov, 2004; Hjorth et al., 2015; Owens et al., 2015; Savier et al., 2017). The model's foundation and prior validation are well-documented.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:19:34.423636Z"
+    },
+    {
+      "id": "4262428b-9335-49f4-8c5b-c9a5b6d44a1b",
+      "content_id": "c626170a-b095-4459-ac79-94be8a51bbcb",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Ectopic Epha3 expression in Isl2(+) RGCs does not affect retinal Efna expression. Efna2 and Efna5 gradients are preserved in Isl2Epha3/Epha3 animals, while Efna3 and Epha3 expression is homogeneous. Similar Efna/Epha levels are found in V1 and SC of mutants compared to WT.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C17-C20, C61 are supported by qPCR data shown in Figure 1A-B. Statistical tests (two-way ANOVA, one-sample t-tests) show no significant differences between WT and mutant expression levels. This is a critical control experiment establishing that the mutation doesn't indirectly affect other Eph/Efn expression.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:19:34.423636Z"
+    },
+    {
+      "id": "e76fac4f-8560-48fc-8b71-488ebefd3941",
+      "content_id": "c626170a-b095-4459-ac79-94be8a51bbcb",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The equations modeling Efna and Epha gradients in Isl2-Epha3KI genotypes are equivalent to those in WT animals.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C21 is a reasonable inference based on the experimental data (C17-C20) showing no changes in endogenous Efna expression, supported by multiple citations to prior gradient measurements (Reber et al., 2004; Cang et al., 2005; Tsigankov and Koulakov, 2006, 2010; Bevins et al., 2011; Savier et al., 2017).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:19:34.423636Z"
+    },
+    {
+      "id": "336d2466-b12a-4897-b808-f66d5c545554",
+      "content_id": "c626170a-b095-4459-ac79-94be8a51bbcb",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The 3-step model simulates continuous single RC maps in WT, partially duplicated RC maps with collapse points in Isl2Epha3/+, and fully duplicated RC maps in Isl2Epha3/Epha3. Transposition of retinal Efna gradients generates smooth monotonic gradients in WT but double oscillatory gradients in mutants.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C27 describe simulation results shown in Figure 2. The simulated RC maps match extensive prior experimental and theoretical findings (Brown et al., 2000; Reber et al., 2004; Bevins et al., 2011; Willshaw, 2006; Tsigankov and Koulakov, 2010; Simpson and Goodhill, 2011). The transposed Efna gradients are logical consequences of the RC map layouts.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:19:34.423636Z"
+    },
+    {
+      "id": "ee483c6c-6c34-47f8-b377-bcb023245a2d",
+      "content_id": "c626170a-b095-4459-ac79-94be8a51bbcb",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The model simulates smooth continuous CC maps in WT, partially duplicated CC maps with rostral collapse in Isl2Epha3/+, and fully duplicated CC maps in Isl2Epha3/Epha3.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28-C30 describe CC map simulations shown in Figure 2F, L, R. These predictions are the key novel output of the model and are subsequently validated experimentally (see C31-C34).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:19:34.423636Z"
+    },
+    {
+      "id": "c60b0f55-c23c-494f-977a-8b5e4f676c38",
+      "content_id": "c626170a-b095-4459-ac79-94be8a51bbcb",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Experimental RC and CC tracing in Isl2Epha3/+ and Isl2Epha3/Epha3 animals matches the simulated maps. In Isl2Epha3/+, a partially duplicated CC map with collapse point at ~82% V1 medial-lateral axis is observed. In Isl2Epha3/Epha3, fully duplicated RC and CC maps are confirmed.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31-C34 present experimental validation shown in Figure 3. Kolmogorov-Smirnov tests confirm no significant differences between simulated and experimental maps (Isl2Epha3/+: p=0.06; Isl2Epha3/Epha3: p=0.72). Sample sizes are adequate (n=15 for Isl2Epha3/+, n=7 for Isl2Epha3/Epha3). This is strong experimental support for the model predictions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:19:34.423636Z"
+    },
+    {
+      "id": "d87dd1f4-fe5e-4361-bb2e-1f429bb0b24e",
+      "content_id": "c626170a-b095-4459-ac79-94be8a51bbcb",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Quantitative analysis using IDI and AI metrics shows that WT, Isl2Epha3/+, and Isl2Epha3/Epha3 all have aligned RC/CC maps (similar AI values ~2.0-2.2) despite increased map dispersion in mutants (higher IDI values).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C40 present novel quantitative metrics (IDI, AI) calculated from simulations shown in Figure 4. The statistical comparisons (Mann-Whitney tests) support the conclusion that AI values are not significantly different between WT and Epha3KI mutants, indicating alignment despite duplication. The metrics are well-defined and appropriately applied.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:19:34.423636Z"
+    },
+    {
+      "id": "d3affe41-a700-4bcf-824d-88d42541c79e",
+      "content_id": "c626170a-b095-4459-ac79-94be8a51bbcb",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "In Isl2Efna3/+ and Isl2Efna3/Efna3 mutants, RC maps show normal dispersion (IDIretino similar to WT) but CC maps show increased dispersion (IDIcortico significantly higher). AI values are significantly elevated (4.52 and 8.85 respectively), indicating misalignment between RC and CC maps.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41-C47 apply the same quantitative metrics to Isl2-Efna3KI mutants (Figure 4). The significantly different AI values compared to WT (Mann-Whitney tests, p<0.001) provide quantitative confirmation of the misalignment previously observed qualitatively (Savier et al., 2017). This validates the utility of the metrics.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:19:34.423636Z"
+    },
+    {
+      "id": "2e91200c-f552-4957-90fe-2fbba1c4d86c",
+      "content_id": "c626170a-b095-4459-ac79-94be8a51bbcb",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Local IDV analysis along the rostral-caudal SC axis shows that RC and CC maps covary in WT and Epha3KI mutants (indicating alignment) but not in Efna3KI mutants (indicating misalignment). IDV values above threshold indicate map duplication at specific locations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48-C53 present detailed local IDV analysis shown in Figure 5. Jaccard similarity indices and covariance values quantitatively support the alignment/misalignment conclusions. The IDVthreshold provides a clear criterion for identifying single vs. duplicated maps. The analysis is consistent with experimental observations and provides spatial resolution of map organization.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:19:34.423636Z"
+    },
+    {
+      "id": "b694e499-7d73-42d5-a708-e138d76c1c43",
+      "content_id": "c626170a-b095-4459-ac79-94be8a51bbcb",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The 3-step map alignment algorithm is validated as robust and accurate for predicting RC and CC map formation and alignment in Isl2-Epha3KI mutants.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54 and C16 represent the main conclusion, supported by the convergence of simulation results (C22-C30) with experimental validation (C31-C34) and quantitative metrics (C35-C53). The model successfully predicts previously uncharacterized phenotypes and matches experimental data statistically.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:19:34.423636Z"
+    },
+    {
+      "id": "71ce6d16-a3d6-4434-afca-19fb6a3a537c",
+      "content_id": "c626170a-b095-4459-ac79-94be8a51bbcb",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "In Isl2-Epha3KI animals, the duplicated RC map results from differential projection patterns of Isl2(+) and Isl2(-) RGCs. This leads to perturbation of transposed retinal Efna gradients in the SC, generating duplicated Efna gradients that cause CC map duplication aligned with the RC map.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56-C60 describe the mechanistic interpretation of the simulation and experimental results, illustrated in Figure 6. The spatial organization of the duplicated maps is consistent with prior characterization (Brown et al., 2000) and the model's predictions. The mechanism is logically coherent and supported by the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:19:34.423636Z"
+    },
+    {
+      "id": "b4fbe60c-3f77-4c6a-b86c-ba1a254be889",
+      "content_id": "c626170a-b095-4459-ac79-94be8a51bbcb",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The mechanism underlying CC map duplication in Isl2-Epha3KI involves redistribution of retinal Efnas into the SC during RC map formation. These transposed Efnas, which retain binding activity, create duplicated gradients that guide V1 axons, leading to CC map duplication aligned with the RC map.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C62-C66, C72-C73 present the core mechanistic hypothesis. The mechanism is supported by: (1) the model's successful predictions, (2) experimental validation, (3) prior evidence for Efna transposition (Savier et al., 2017), (4) evidence for Efna endocytosis timing (Janes et al., 2005), and (5) evidence for retained Efna binding activity (Suetterlin and Drescher, 2014). The hypothesis is well-reasoned and consistent with all available data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:19:34.423636Z"
+    },
+    {
+      "id": "5c6eb508-3b75-41b1-af71-873ef4c56de4",
+      "content_id": "c626170a-b095-4459-ac79-94be8a51bbcb",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "The incomplete penetrance of CC duplication in Isl2-Efna3KI suggests a counter-balancing role of correlated activity within the normal RC map. In Isl2-Epha3KI, correlated activity is also duplicated, reinforcing the duplication effect and leading to stronger phenotype penetrance.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C67-C68 present a speculative explanation for phenotype penetrance differences between mutants. While the reasoning is logical, it is based on inference rather than direct experimental evidence. The role of correlated activity is not directly tested in this study. The authors acknowledge this is speculative and suggest future experiments to test it.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:19:34.423636Z"
+    },
+    {
+      "id": "e2d9af9e-802e-449f-b841-a9b7d224bd4e",
+      "content_id": "c626170a-b095-4459-ac79-94be8a51bbcb",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "IDI, AI, and local IDV metrics are validated as relevant, reliable, and accurate indicators for quantifying visual map organization, dispersion, and alignment across different genetic models.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C69-C70 are supported by the successful application of these metrics across multiple genotypes (WT, Isl2-Epha3KI, Isl2-Efna3KI) where they correctly distinguish aligned from misaligned maps and single from duplicated maps. The metrics are mathematically well-defined and produce results consistent with qualitative experimental observations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:19:34.423636Z"
+    },
+    {
+      "id": "db1f7746-90fd-4f0e-a23a-76040e3ef383",
+      "content_id": "c626170a-b095-4459-ac79-94be8a51bbcb",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "The dominant RC map specifies CC map alignment through spontaneous correlated activity and transposed retinal Efnas. This principle allows fine adjustments that compensate for intrinsic variability in sensory map formation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C74 summarizes the validated principle supported by the combined experimental and computational results. Claim C75 is more speculative about functional implications but is a reasonable inference from the demonstrated mechanism. The principle is well-supported by the data presented.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:19:34.423636Z"
+    },
+    {
+      "id": "8b7af555-57fa-463f-8570-1659636bec69",
+      "content_id": "c626170a-b095-4459-ac79-94be8a51bbcb",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "The computational model uses 10^7 iterations per run to simulate map formation. RGCs were isolated to >99% purity. The model incorporates forward Eph/Efn signaling (repulsion) and correlated activity (attraction inversely proportional to distance).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55, C76, C78-C80 describe methodological details. The computational parameters and biological mechanisms are clearly specified and consistent with prior modeling work (Koulakov and Tsigankov, 2004; Tsigankov and Koulakov, 2006, 2010). The RGC isolation purity is appropriate for the qPCR experiments.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:19:34.423636Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "19744c24-1f80-4ea6-814f-8841bfb91615",
+      "result_id": "3c375d3b-5218-4cef-b63f-d3a3f85c7355"
+    },
+    {
+      "claim_id": "3b71bfb8-9682-4312-8f88-91dad6b5500e",
+      "result_id": "3c375d3b-5218-4cef-b63f-d3a3f85c7355"
+    },
+    {
+      "claim_id": "ca962985-fb13-4843-b900-19ac05f18008",
+      "result_id": "3c375d3b-5218-4cef-b63f-d3a3f85c7355"
+    },
+    {
+      "claim_id": "3f06071b-d624-4d6f-acc0-d7ba83bf4eb6",
+      "result_id": "3c375d3b-5218-4cef-b63f-d3a3f85c7355"
+    },
+    {
+      "claim_id": "8d205a37-b66d-4094-8a30-ce3fa1e8f2c6",
+      "result_id": "3c375d3b-5218-4cef-b63f-d3a3f85c7355"
+    },
+    {
+      "claim_id": "35ba3bbe-e241-4174-9252-fd4418985032",
+      "result_id": "ae02f9ed-7c6a-4831-b33a-6ce06191c916"
+    },
+    {
+      "claim_id": "e9e970e1-22cf-440c-b18e-03d774e53998",
+      "result_id": "ae02f9ed-7c6a-4831-b33a-6ce06191c916"
+    },
+    {
+      "claim_id": "30712bc1-4b55-4655-8d7b-42f233639e83",
+      "result_id": "ae02f9ed-7c6a-4831-b33a-6ce06191c916"
+    },
+    {
+      "claim_id": "8d3be585-5960-4514-b304-77d70c2df6fb",
+      "result_id": "542becc1-dc86-4a74-b2ee-440dcadea2e9"
+    },
+    {
+      "claim_id": "39da6bee-e9d4-4ea4-abf7-c483fab656a0",
+      "result_id": "542becc1-dc86-4a74-b2ee-440dcadea2e9"
+    },
+    {
+      "claim_id": "58e5dbf4-e7bb-43c1-aaa7-d518ef529df9",
+      "result_id": "10fb7b36-1ef9-413f-879d-6fc9f150e86c"
+    },
+    {
+      "claim_id": "316ea925-a8b2-4a1e-8b65-6bf32d10436d",
+      "result_id": "10fb7b36-1ef9-413f-879d-6fc9f150e86c"
+    },
+    {
+      "claim_id": "8a975392-df28-40c0-b2c1-261769b645d0",
+      "result_id": "304b1c0a-a0d6-4aeb-ba9e-fd9bffa503cf"
+    },
+    {
+      "claim_id": "4fd24373-cf3b-4706-9689-f3e689af5be1",
+      "result_id": "304b1c0a-a0d6-4aeb-ba9e-fd9bffa503cf"
+    },
+    {
+      "claim_id": "49bfb6ec-0232-4f40-98a4-9a08a1954113",
+      "result_id": "304b1c0a-a0d6-4aeb-ba9e-fd9bffa503cf"
+    },
+    {
+      "claim_id": "51a50464-b1a7-4523-810d-082a03f78b89",
+      "result_id": "304b1c0a-a0d6-4aeb-ba9e-fd9bffa503cf"
+    },
+    {
+      "claim_id": "530141b2-cca8-4028-91e2-cec464d1565b",
+      "result_id": "4262428b-9335-49f4-8c5b-c9a5b6d44a1b"
+    },
+    {
+      "claim_id": "872a0399-33bd-49de-8a2d-efe4afdfcdc6",
+      "result_id": "4262428b-9335-49f4-8c5b-c9a5b6d44a1b"
+    },
+    {
+      "claim_id": "892f114c-e614-424f-86c8-f85a85902901",
+      "result_id": "4262428b-9335-49f4-8c5b-c9a5b6d44a1b"
+    },
+    {
+      "claim_id": "c423be01-8e23-4842-b126-9daa056464ec",
+      "result_id": "4262428b-9335-49f4-8c5b-c9a5b6d44a1b"
+    },
+    {
+      "claim_id": "4bb7ff3a-8b19-4e46-8cb0-4e457def9c6e",
+      "result_id": "4262428b-9335-49f4-8c5b-c9a5b6d44a1b"
+    },
+    {
+      "claim_id": "edd9e460-8cfe-4dea-8918-d1bf4c6c637b",
+      "result_id": "e76fac4f-8560-48fc-8b71-488ebefd3941"
+    },
+    {
+      "claim_id": "04be71e6-a6bf-41a1-aef3-d44205d45dd2",
+      "result_id": "336d2466-b12a-4897-b808-f66d5c545554"
+    },
+    {
+      "claim_id": "b1a91c9b-86d6-4764-9fad-c31e5b346ba3",
+      "result_id": "336d2466-b12a-4897-b808-f66d5c545554"
+    },
+    {
+      "claim_id": "0466a88a-286d-4e5e-8686-ed84acc785b4",
+      "result_id": "336d2466-b12a-4897-b808-f66d5c545554"
+    },
+    {
+      "claim_id": "dd7d87f3-dfa2-438e-a656-0610be84bd33",
+      "result_id": "336d2466-b12a-4897-b808-f66d5c545554"
+    },
+    {
+      "claim_id": "02330a65-c374-4b8d-bf90-251508f315bd",
+      "result_id": "336d2466-b12a-4897-b808-f66d5c545554"
+    },
+    {
+      "claim_id": "8982c621-664a-4259-8828-c1505a215fce",
+      "result_id": "336d2466-b12a-4897-b808-f66d5c545554"
+    },
+    {
+      "claim_id": "909152be-0ef9-44ba-9219-b39b1cc2e1a7",
+      "result_id": "ee483c6c-6c34-47f8-b377-bcb023245a2d"
+    },
+    {
+      "claim_id": "f3fdef66-0b62-4e5c-8d5f-27515f986ac7",
+      "result_id": "ee483c6c-6c34-47f8-b377-bcb023245a2d"
+    },
+    {
+      "claim_id": "25a766f6-3265-4e83-93ae-4c80c5a58ad8",
+      "result_id": "ee483c6c-6c34-47f8-b377-bcb023245a2d"
+    },
+    {
+      "claim_id": "cb639366-0090-44fc-b351-afbc5c18ea58",
+      "result_id": "c60b0f55-c23c-494f-977a-8b5e4f676c38"
+    },
+    {
+      "claim_id": "e5976909-5b96-4e24-82e6-7c130b75248b",
+      "result_id": "c60b0f55-c23c-494f-977a-8b5e4f676c38"
+    },
+    {
+      "claim_id": "c8486c8d-9c39-4650-b188-feabfefa793d",
+      "result_id": "c60b0f55-c23c-494f-977a-8b5e4f676c38"
+    },
+    {
+      "claim_id": "a1672dde-45c0-4704-aa32-a706293e2fbb",
+      "result_id": "c60b0f55-c23c-494f-977a-8b5e4f676c38"
+    },
+    {
+      "claim_id": "fc00de91-20f1-4f72-a3fb-4eb547600c5e",
+      "result_id": "d87dd1f4-fe5e-4361-bb2e-1f429bb0b24e"
+    },
+    {
+      "claim_id": "7b60830e-aa8e-4d4d-bcad-46a1313425b5",
+      "result_id": "d87dd1f4-fe5e-4361-bb2e-1f429bb0b24e"
+    },
+    {
+      "claim_id": "264692d4-9628-43d0-8ff7-970ebb1d795c",
+      "result_id": "d87dd1f4-fe5e-4361-bb2e-1f429bb0b24e"
+    },
+    {
+      "claim_id": "b56aca9c-f04b-4b1e-bdc9-192d9d612eb9",
+      "result_id": "d87dd1f4-fe5e-4361-bb2e-1f429bb0b24e"
+    },
+    {
+      "claim_id": "90deacac-eead-4ee0-94ef-cb14e5e09410",
+      "result_id": "d87dd1f4-fe5e-4361-bb2e-1f429bb0b24e"
+    },
+    {
+      "claim_id": "d1be034e-e2ab-48db-8227-dd3849211a33",
+      "result_id": "d87dd1f4-fe5e-4361-bb2e-1f429bb0b24e"
+    },
+    {
+      "claim_id": "2d6e1a81-2af4-4f6e-84dc-1a1266e2d6d1",
+      "result_id": "d3affe41-a700-4bcf-824d-88d42541c79e"
+    },
+    {
+      "claim_id": "d8ef59dc-022b-4b71-920b-53eefeb2aaa2",
+      "result_id": "d3affe41-a700-4bcf-824d-88d42541c79e"
+    },
+    {
+      "claim_id": "9252468e-7855-4f1f-9eaa-d04056349d23",
+      "result_id": "d3affe41-a700-4bcf-824d-88d42541c79e"
+    },
+    {
+      "claim_id": "844ee8c6-f921-459a-a0d8-e90eb7afab06",
+      "result_id": "d3affe41-a700-4bcf-824d-88d42541c79e"
+    },
+    {
+      "claim_id": "0d0de85a-b3b2-4513-a0ef-67b4d7933ed2",
+      "result_id": "d3affe41-a700-4bcf-824d-88d42541c79e"
+    },
+    {
+      "claim_id": "e5adfeb0-1a2d-4903-bfb5-19606c11ee9b",
+      "result_id": "d3affe41-a700-4bcf-824d-88d42541c79e"
+    },
+    {
+      "claim_id": "59f48b13-a506-40f5-bcba-1f15bdc4827c",
+      "result_id": "d3affe41-a700-4bcf-824d-88d42541c79e"
+    },
+    {
+      "claim_id": "74f7b412-72f6-4275-9ffb-b41e92ef9c68",
+      "result_id": "2e91200c-f552-4957-90fe-2fbba1c4d86c"
+    },
+    {
+      "claim_id": "8b383d86-51ca-4cea-99d4-25a97ee9f513",
+      "result_id": "2e91200c-f552-4957-90fe-2fbba1c4d86c"
+    },
+    {
+      "claim_id": "d34331f9-9863-4803-89f9-6fa89826ba47",
+      "result_id": "2e91200c-f552-4957-90fe-2fbba1c4d86c"
+    },
+    {
+      "claim_id": "5031d88a-32bb-4b74-a3af-a6b110b77a79",
+      "result_id": "2e91200c-f552-4957-90fe-2fbba1c4d86c"
+    },
+    {
+      "claim_id": "367bc8d5-fc46-40f5-aabb-525ded927d1e",
+      "result_id": "2e91200c-f552-4957-90fe-2fbba1c4d86c"
+    },
+    {
+      "claim_id": "8baf464f-c827-445a-99e0-48e6b27055d8",
+      "result_id": "2e91200c-f552-4957-90fe-2fbba1c4d86c"
+    },
+    {
+      "claim_id": "94d32146-d47a-49ce-aab7-d1adc1a99205",
+      "result_id": "b694e499-7d73-42d5-a708-e138d76c1c43"
+    },
+    {
+      "claim_id": "e7b2dc3a-d45f-4e81-9075-acefe7c6e4d1",
+      "result_id": "b694e499-7d73-42d5-a708-e138d76c1c43"
+    },
+    {
+      "claim_id": "448efaf0-150c-4307-b64b-95a66125c400",
+      "result_id": "71ce6d16-a3d6-4434-afca-19fb6a3a537c"
+    },
+    {
+      "claim_id": "82137a51-37bb-43c4-85b9-5bcbb1d48a24",
+      "result_id": "71ce6d16-a3d6-4434-afca-19fb6a3a537c"
+    },
+    {
+      "claim_id": "19234f62-6388-4463-b429-d2e383a1edd0",
+      "result_id": "71ce6d16-a3d6-4434-afca-19fb6a3a537c"
+    },
+    {
+      "claim_id": "e6e45ff3-faf4-4c3f-8e46-0c3f20492841",
+      "result_id": "71ce6d16-a3d6-4434-afca-19fb6a3a537c"
+    },
+    {
+      "claim_id": "257fa4be-9d78-460f-845d-952beab2ac21",
+      "result_id": "71ce6d16-a3d6-4434-afca-19fb6a3a537c"
+    },
+    {
+      "claim_id": "cb415c7a-136f-4d2e-8d92-008c7e790a93",
+      "result_id": "b4fbe60c-3f77-4c6a-b86c-ba1a254be889"
+    },
+    {
+      "claim_id": "8a8c71a7-8879-4380-bbec-e319312b174f",
+      "result_id": "b4fbe60c-3f77-4c6a-b86c-ba1a254be889"
+    },
+    {
+      "claim_id": "613ad86c-a695-4175-ac75-d146fb0a9f38",
+      "result_id": "b4fbe60c-3f77-4c6a-b86c-ba1a254be889"
+    },
+    {
+      "claim_id": "10cf72f7-f5dd-4789-a60c-68183a06793a",
+      "result_id": "b4fbe60c-3f77-4c6a-b86c-ba1a254be889"
+    },
+    {
+      "claim_id": "1e3cf525-7e4e-40fa-88c6-d950720f3b9b",
+      "result_id": "b4fbe60c-3f77-4c6a-b86c-ba1a254be889"
+    },
+    {
+      "claim_id": "988e32f6-3118-4999-9523-de54581b38c7",
+      "result_id": "b4fbe60c-3f77-4c6a-b86c-ba1a254be889"
+    },
+    {
+      "claim_id": "f433769a-e6ed-4b78-9dd6-b4180ff4a815",
+      "result_id": "b4fbe60c-3f77-4c6a-b86c-ba1a254be889"
+    },
+    {
+      "claim_id": "7c7efbdf-6257-48a4-bd37-c1a377fa60d2",
+      "result_id": "5c6eb508-3b75-41b1-af71-873ef4c56de4"
+    },
+    {
+      "claim_id": "aa6041a4-deb2-4d3b-87e1-9e4e1e73765c",
+      "result_id": "5c6eb508-3b75-41b1-af71-873ef4c56de4"
+    },
+    {
+      "claim_id": "0b2d7b74-094b-425c-b560-d6b1519eca04",
+      "result_id": "e2d9af9e-802e-449f-b841-a9b7d224bd4e"
+    },
+    {
+      "claim_id": "ed4f96a4-4534-4a9b-a3cd-46198680f949",
+      "result_id": "e2d9af9e-802e-449f-b841-a9b7d224bd4e"
+    },
+    {
+      "claim_id": "32fb35cb-b894-4c60-9197-d620bde84087",
+      "result_id": "db1f7746-90fd-4f0e-a23a-76040e3ef383"
+    },
+    {
+      "claim_id": "e8223ffe-ce03-476e-881c-4638c55f0810",
+      "result_id": "db1f7746-90fd-4f0e-a23a-76040e3ef383"
+    },
+    {
+      "claim_id": "ec79d56c-5176-4c30-b0a5-e509e89c4190",
+      "result_id": "8b7af555-57fa-463f-8570-1659636bec69"
+    },
+    {
+      "claim_id": "a476becb-10b0-4755-8de6-72c1f55575dd",
+      "result_id": "8b7af555-57fa-463f-8570-1659636bec69"
+    },
+    {
+      "claim_id": "2499c8f4-4b7d-4381-92cf-962999f11393",
+      "result_id": "8b7af555-57fa-463f-8570-1659636bec69"
+    },
+    {
+      "claim_id": "449efad6-240f-407a-bbf7-cc076076f2ce",
+      "result_id": "8b7af555-57fa-463f-8570-1659636bec69"
+    },
+    {
+      "claim_id": "09071b74-c77f-4f50-bab2-1fffba5357ec",
+      "result_id": "8b7af555-57fa-463f-8570-1659636bec69"
+    }
+  ],
+  "comparisons": []
+}

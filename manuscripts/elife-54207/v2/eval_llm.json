@@ -1,0 +1,353 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C18",
+      "C19",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Deletion of threonine deaminases (\u0394ilvA \u0394tdcB) and serine deaminases (\u03945 strain) interrupts isoleucine biosynthesis at 2-ketobutyrate, and after 70-120 hr adaptation, strains grow without isoleucine supplementation. Growth depends on 2-ketobutyrate as an intermediate, as demonstrated by rescue with 2KB supplementation and inability of \u0394ilvC to grow without isoleucine.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C18-C25 provide converging evidence from multiple deletion strains and rescue experiments. The growth phenotypes (C19, C21), rescue by 2KB but not in \u0394ilvC (C23, C24), and the conclusion about 2KB as intermediate (C25) are internally consistent and well-supported by the growth curve data in Figure 2.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C26",
+      "C27"
+    ],
+    "result": "Isotope labeling experiments with glucose-1-13C and glucose-3-13C show that the labeling pattern of isoleucine in \u0394ilvA \u0394tdcB and \u03945 strains is nearly identical to wild-type, ruling out the citramalate pathway as the source of 2-ketobutyrate in these mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C27 are supported by the isotope labeling data in Figure 3B, which shows similar labeling patterns between mutant and WT strains. The logic connecting the observed labeling pattern to exclusion of the citramalate pathway is sound, as the expected labeling patterns differ substantially between the two routes (Figure 3A).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "The production of 2-ketobutyrate in the \u03945 strain depends on the methionine biosynthesis pathway, as demonstrated by inability of \u03945 \u0394metA to grow without isoleucine. E. coli lacks methionine \u03b3-lyase activity, as confirmed by the inability of \u03945 \u0394metA to grow when supplemented with methionine but not isoleucine.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C32 form a logical chain supported by growth experiments (Figure 4) and established biochemical knowledge (C30-C31). The genetic deletion experiment (C28) combined with the rescue experiment logic (C32) provides strong evidence for the dependence on methionine biosynthesis and absence of methionine \u03b3-lyase activity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C33",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C44",
+      "C45"
+    ],
+    "result": "MetB catalyzes the promiscuous cleavage of O-succinyl-L-homoserine to succinate and 2-ketobutyrate with measured kinetic parameters (kcat = 9.3 \u00b1 0.4 s\u207b\u00b9, KM = 0.60 \u00b1 0.08 mM). This activity is suppressed by physiological concentrations of cysteine but not homocysteine. Deletion of metB abolishes growth without isoleucine, confirming MetB's role in 2KB production. MetC is not involved in 2KB production in E. coli.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33, C39-C45 are well-supported by enzymatic assays (Figure 5\u2014figure supplement 2), genetic deletion experiments (Figure 4), and in vitro characterization. The kinetic data (C42), substrate specificity (C44), and genetic requirement (C45) converge to support MetB's role. The exclusion of MetC (C39-C41) is supported by both enzymatic assays and growth experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "In evolved strains, metC was deleted or mutated in 11 of 16 sequenced isolates. The \u03945 \u0394metC strain shows ~3-fold lower methionine and ~3-fold higher O-succinyl-L-homoserine concentrations compared to WT, consistent with enhanced flux through the MetB-catalyzed cleavage reaction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C49 are supported by whole-genome sequencing data (Supplementary file 1) and metabolite quantification (Figure 6A). The metabolite changes (C48-C49) are consistent with the proposed mechanism (C47) where reduced methionine biosynthesis flux enhances the promiscuous MetB activity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "A single Ala33Thr mutation in CysE (serine acetyltransferase) enables immediate growth without isoleucine. This mutation decreases kcat 2-fold and increases KM for acetyl-CoA >8-fold, resulting in ~17-fold reduced activity under physiological conditions. The decreased CysE activity halves cysteine concentration, reduces methionine >2-fold, increases metA/metB transcript levels >3-fold, and dramatically increases O-succinyl-L-homoserine 30-60-fold, thereby enhancing 2KB production via MetB.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C59 form a comprehensive mechanistic chain supported by multiple lines of evidence: genome sequencing (C50), growth experiments (C51, Figure 4), enzyme kinetics (C52-C55, Figure 5\u2014figure supplement 3), metabolite quantification (C56-C57, C59, Figure 6A, Figure 7), and transcript analysis (C58, Figure 6B). The cascade of effects from CysE mutation to enhanced 2KB production is logically coherent and well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Under anaerobic conditions, the \u03945 strain cannot grow without isoleucine unless propionate is provided. PFL catalyzes the condensation of propionyl-CoA and formate to produce 2-ketobutyrate with measured kinetic parameters (kcat = 0.9-1.7 s\u207b\u00b9, KM(propionyl-CoA) = 0.83 \u00b1 0.6 mM, KM(formate) = 69 \u00b1 11 mM). Deletion of pflB abolishes growth with propionate, confirming PFL's essential role.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C65 are supported by anaerobic growth experiments (Figure 8A-B), in vitro enzyme kinetics (C61, Table 1, Figure 8\u2014figure supplements 2-3), and genetic deletion experiments (C64-C65). The convergence of growth phenotypes, enzymatic activity, and genetic requirements provides strong support for the PFL-dependent anaerobic pathway.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "In wild-type E. coli under anaerobic conditions, the KBFL pathway naturally provides a substantial fraction of isoleucine when propionate is available: 30% with propionate alone, increasing to ~60% with added formate. In the \u03945 strain, labeling reaches ~80% with propionate and formate, and 90% when metA is also deleted.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C70 are directly supported by isotope labeling experiments shown in Figure 9. The progressive increase in labeling with different genetic backgrounds and substrate additions is internally consistent and demonstrates that the KBFL pathway operates naturally in WT cells, not just in engineered strains.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "TdcE catalyzes the KBFL reaction with superior kinetics to PFL (kcat = 2.7-3.2 s\u207b\u00b9, KM(propionyl-CoA) = 0.52 \u00b1 0.08 mM, KM(formate) = 20 \u00b1 3 mM). However, deletion of tdcE does not affect isoleucine labeling from propionate, while pflB deletion abolishes it, indicating PFL is solely responsible under tested conditions. Overexpression of tdcE can replace PFL function and increases isoleucine labeling to 70-95% depending on strain background.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C78 are supported by enzyme kinetics (Table 1), isotope labeling experiments (Figure 9), and growth experiments with overexpression (Figure 8C). The distinction between enzymatic capability (C72) and physiological role (C73-C74) is well-established, and the overexpression experiments (C75-C78) confirm TdcE's catalytic competence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C3",
+      "C80",
+      "C81"
+    ],
+    "result": "The aerobic pathway based on MetB-catalyzed cleavage of O-succinyl-L-homoserine represents a classic case of underground metabolism, where a promiscuous reaction with normally negligible physiological contribution is enhanced by metabolic rewiring. A change in cysteine concentration greatly enhances this promiscuous activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C80-C81 represent interpretive conclusions well-supported by the experimental data on the aerobic pathway (C33-C59). The characterization as 'underground metabolism' is justified by the low basal activity, requirement for metabolic perturbation, and enhancement through indirect metabolic effects (cysteine concentration).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C82",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "The anaerobic KBFL pathway is highly active in wild-type E. coli when propionate is available, providing a substantial fraction of cellular isoleucine. This pathway likely plays a key role under physiological conditions in E. coli's native habitat (mammalian intestine where propionate is abundant) and should be regarded as an auxiliary biosynthesis route rather than underground metabolism. The KBFL pathway is favorable as it better utilizes environmental carbon sources.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C5, C82, C84-C86 are supported by the isotope labeling data in WT cells (C66-C68, Figure 9) and ecological context (C83). The reclassification from 'underground' to 'auxiliary' metabolism (C85) is justified by the substantial activity in WT cells. However, the claim about 'favorable' use of carbon sources (C86) is somewhat speculative without direct fitness measurements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C6",
+      "C79"
+    ],
+    "result": "This study demonstrates that underground metabolism provides metabolic redundancy and flexibility, allowing optimal use of environmental carbon sources and offering selective advantages in nature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6 and C79 represent the overarching conclusion supported by the discovery of two alternative isoleucine biosynthesis pathways. The demonstration of metabolic flexibility is well-supported, though the claim about 'selective advantage' is somewhat inferential as direct fitness measurements under natural conditions were not performed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C71"
+    ],
+    "result": "There might be another undiscovered marginal route for isoleucine biosynthesis, as 10% of isoleucine remained unlabeled even in the \u03945 \u0394metA strain with labeled propionate and formate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C71 is speculative based on incomplete labeling (Figure 9). While the observation is valid, alternative explanations such as isotope dilution, metabolic recycling, or technical limitations of the labeling experiment are not fully excluded. The claim appropriately uses cautious language ('might be').",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C87"
+    ],
+    "result": "PFL should be renamed 'pyruvate formate-lyase/2-ketobutyrate formate-lyase' to reflect its dual activity with both acetyl-CoA and propionyl-CoA substrates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C87 is a nomenclature proposal supported by the demonstration that PFL catalyzes the KBFL reaction under physiological conditions (C61-C68). The proposal is reasonable given the precedent with TdcE naming, though nomenclature changes are ultimately decided by community consensus.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "The KBFL pathway may be widespread in microorganisms. In various microbial lineages previously thought to use 2KB:ferredoxin oxidoreductase for propionate-to-2KB conversion, the KBFL route might operate instead. Organisms producing propionyl-CoA from succinyl-CoA might use KBFL without external propionate. The prevalence of PFL genes and relevant substrates suggests widespread distribution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C88-C93 are speculative extrapolations from the E. coli findings. While the logic is reasonable and C. pasteurianum is noted to have PFL (C90), direct experimental evidence in other organisms is lacking. The claims appropriately use cautious language ('might', 'may'), but remain speculative without experimental validation in other species.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "Isoleucine biosynthesis exhibits exceptional metabolic flexibility with at least nine alternative routes for 2-ketobutyrate production, making it the epitome of metabolic flexibility among cellular building blocks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C96 are supported by the enumeration of nine distinct 2KB biosynthesis pathways (C95), including two discovered in this study and seven from prior literature. The characterization as 'epitome of metabolic flexibility' (C96) is a reasonable interpretive conclusion, though a systematic comparison with other amino acids would strengthen this claim.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C1",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "According to the patchwork model, enzyme promiscuity and underground metabolism provide fertile ground for evolution of new metabolic pathways. About half of underground reactions generate existing metabolites, enabling metabolic bypasses. Examples include proline biosynthesis via arginine enzymes, pyridoxal phosphate biosynthesis, and growth on 1,2-propanediol.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C7-C11 establish the conceptual framework based on established literature (multiple citations). These are well-supported background claims that contextualize the current study. The citations to prior work (C8-C11) are appropriate examples of the concepts.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "Isoleucine and valine biosynthesis share enzymes but differ in their 2-ketobutyrate precursor (from threonine in most organisms). Alternative 2KB biosynthesis routes exist in specific lineages, including the citramalate pathway, reductive propionate conversion in anaerobes, and methionine \u03b3-lyase in plants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C17 provide established biochemical background supported by appropriate citations. These are accurate statements of prior knowledge that contextualize the diversity of isoleucine biosynthesis pathways and motivate the current investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C20"
+    ],
+    "result": "Serine deaminases are known to accept threonine as a substrate, providing a potential explanation for growth without isoleucine in deletion strains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C20 is supported by citation to prior literature and represents established biochemical knowledge. However, this hypothesis was subsequently ruled out by the \u03945 strain experiments (C21-C22), making this a minor background claim.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Various promiscuous activities of MetB and MetC from different organisms can theoretically produce 2-ketobutyrate, including MetB condensation with homocysteine to form homolanthionine (subsequently cleaved by MetC), MetC-catalyzed \u03b3-elimination of cystathionine, homocysteine cleavage, and methionine \u03b3-lyase activity in some MetC variants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C38 describe potential reactions based on literature from various organisms (with appropriate citations). These represent established biochemical knowledge used to generate hypotheses. However, most of these activities were subsequently ruled out for E. coli (C39), making these primarily background information.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C43"
+    ],
+    "result": "Formation of 2-ketobutyrate by MetB is suppressed in the presence of cysteine, as previously reported in the literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C43 is a statement from prior literature (Holbrook et al., 1990) that was subsequently confirmed in this study (C44). This represents accurate citation of prior work that was experimentally validated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C83"
+    ],
+    "result": "Short-chain fatty acids such as propionate are abundant in the mammalian intestine, the native habitat of E. coli.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C83 is an established ecological fact supported by appropriate citation. This provides important context for the physiological relevance of the KBFL pathway but is background information rather than a novel finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C97",
+      "C98"
+    ],
+    "result": "Figure 1 depicts five known physiologically relevant 2-ketobutyrate synthesis pathways and two novel pathways identified in this study (marked in blue), with purple font indicating key enzymes of the novel pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C98 accurately describe the content and notation of Figure 1. This is a straightforward description of a figure that summarizes both prior knowledge and new findings.",
+    "result_type": "MINOR"
+  }
+]

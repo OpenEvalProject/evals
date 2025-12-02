@@ -1,0 +1,265 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "The authors engineered a triple knockout (tKO) MEF cell line lacking NCT, PSEN1, and PSEN2, then rescued it with fluorescently tagged NCT-SNAP and GFP-PSEN1. Through FACS sorting, biochemical validation, and microscopy, they demonstrated that the rescued cells exhibit normal \u03b3-secretase complex assembly, maturation, and localization comparable to wild-type cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C47 collectively demonstrate rigorous validation of the engineered cell system through multiple complementary approaches including western blotting (C37-C40), blue native PAGE (C41, C44), co-immunoprecipitation (C43), quantitative western blotting (C45), and confocal microscopy (C46). The data consistently show proper complex assembly and function, with agreement with prior literature (C33).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C48",
+      "C49"
+    ],
+    "result": "In the absence of PSEN1 expression, NCT-SNAP density at the cell surface was reduced ~8-fold compared to cells expressing both tagged subunits, demonstrating that trafficking of unassembled subunits is strongly impaired when PSEN1 is missing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C49 are supported by SIM imaging data (Figure 1G) showing quantitative differences in NCT-SNAP surface density. This result validates the interdependence of subunits for proper trafficking and further confirms normal complex assembly in the rescued cells.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Using SIM imaging of plasma membrane sheets, the authors demonstrated that NCT-SNAP and GFP-PSEN1 co-localize with a 1:1 stoichiometry. Nearest-neighbor analysis revealed peaks at ~50 nm for NCT-SNAP over GFP-PSEN1 and ~20 nm for dual-labeled GFP-PSEN1, confirming the biochemically predicted 1:1 ratio of subunits in \u03b3-secretase complexes at the plasma membrane.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C60 are well-supported by quantitative SIM data (Figure 1H-I) showing density ratios and nearest-neighbor distance distributions. The ~50 nm distance is appropriately interpreted considering the theoretical maximum separation of ~60 nm from the linkers (C58). The fraction following random distribution (~16-30%, C54) is reasonably explained by photobleaching and immature chromophores (C55-C56).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Through multiple independent approaches including nearest-neighbor analysis of dual-labeled NCT, photobleaching step counting, photon counting, and live-cell intensity measurements, the authors demonstrated that PSEN1/\u03b3-secretase complexes at the plasma membrane are predominantly monomeric (30-35%) and dimeric (22-30%), with higher-order oligomers being rare.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C67 are supported by converging evidence from three independent methodologies (Figure 2): nearest-neighbor analysis showing random distribution (C61), photobleaching steps (C62), and photon counting (C63). The live-cell intensity measurements (C64-C66) provide additional validation under physiological conditions. The consistency across fixed and live conditions strengthens the conclusion (C67).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C96"
+    ],
+    "result": "Single-particle tracking PALM (sptPALM) revealed that PSEN1/\u03b3-secretase complexes are highly dynamic at the plasma membrane, with an average diffusion coefficient of 0.15 \u03bcm\u00b2/s. While the average motility is anomalous (\u03b1 = 0.844), individual tracks show predominantly directed motility mixed with other types, and 87% of tracks are mobile.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C71 and C96 are supported by sptPALM data (Figure 3B-E). The diffusion coefficient of 0.15 \u03bcm\u00b2/s is appropriately characterized as fast for a complex with twenty transmembrane domains (C96), with proper contextualization through comparison to other membrane proteins. The characterization of motility types is based on established MSD analysis methods.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Treatment with \u03b3-secretase inhibitors (DAPT and InhX) did not significantly affect the mean squared displacement, diffusion coefficient, or overall distribution of diffusion coefficients of PSEN1/\u03b3-secretase. Only a slight increase in the immobile fraction was observed with DAPT treatment, and GSI treatment mildly reduced the distribution of mobile tracks at cell edges.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C75 are supported by sptPALM data comparing control and GSI-treated cells (Figure 3A-G). The lack of major effects on diffusion parameters is clearly documented, with only subtle changes in immobile fraction (C73) and edge localization (C75). The statistical analyses appropriately support these modest effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "DBSCAN analysis of sptPALM data identified dynamic hotspots where PSEN1/\u03b3-secretase is recruited. Treatment with GSIs significantly reduced hotspot size and the number of tracks per hotspot, with a diminishing trend in localizations per hotspot, suggesting that locking the conformation restricts visiting these hotspots.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C27 and C76-C79 are supported by DBSCAN analysis (Figure 3H-L) showing quantitative changes in hotspot characteristics upon GSI treatment. The significant reduction in hotspot size (C76) and tracks per hotspot (C78) is statistically validated. However, the mechanistic interpretation (C79) is appropriately presented as speculation based on the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C80",
+      "C81"
+    ],
+    "result": "Nearest-neighbor analysis demonstrated significant association of PSEN1/\u03b3-secretase with its substrates APP and N-cadherin at distances below 100 nm at the cell surface, supporting in situ substrate association.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C81 are supported by SIM nearest-neighbor analysis (Figure 4A-B) showing statistically significant associations below 100 nm for both substrates. The analysis appropriately accounts for the lower density of endogenous APP and uses proper statistical comparisons to random distributions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C29",
+      "C30"
+    ],
+    "result": "In contrast to substrates, nearest-neighbor analysis of PSEN1/\u03b3-secretase with sheddases ADAM10 and BACE1 showed distributions nearly indistinguishable from random, with only a small fraction of ADAM10 (6% \u00b1 0.4) showing association. These results do not support the existence of pre-formed megadalton complexes of \u03b3-secretase with sheddases, contradicting prior biochemical evidence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C85, C29-C30 are supported by SIM nearest-neighbor analysis (Figure 4C-D) showing lack of significant association with sheddases. The interpretation appropriately challenges prior biochemical findings (C18, C85) while acknowledging the surprising nature of this result. The low expression controls for tagged sheddases strengthen the validity of the negative result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C31"
+    ],
+    "result": "Analysis of PSEN1/\u03b3-secretase tracks in relation to sheddase hotspots revealed that while hotspots do not overlap (low Pearson's and Mander's coefficients), PSEN1/\u03b3-secretase tracks that frequent ADAM10 hotspots show decreased diffusion coefficients (0.04 \u00b1 0.02 \u03bcm\u00b2/s) compared to those passing by BACE1 hotspots (0.08 \u00b1 0.01 \u03bcm\u00b2/s), suggesting transient associations with ADAM10-frequented regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C90 and C31 are supported by combined analysis of hotspot overlap and track diffusion coefficients (Figure 5). The distinction between ADAM10 and BACE1 associations based on diffusion coefficients is quantitatively supported (C87-C88). However, the mechanistic interpretations (C89-C90) are appropriately presented as speculation requiring further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C91",
+      "C115",
+      "C116"
+    ],
+    "result": "This study demonstrates, for the first time, the stoichiometry of PSEN1/\u03b3-secretase complexes at the plasma membrane at single-molecule resolution in their natural environment, revealing a majorly mono- and dimeric distribution in living cells and uncovering the distribution and dynamics of these complexes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C25, C91, C115-C116 represent the primary conclusions of the study, which are well-supported by the comprehensive experimental evidence from multiple complementary super-resolution microscopy approaches. The novelty claim (C91) is appropriately contextualized, and the findings represent a significant advance in understanding \u03b3-secretase organization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C92",
+      "C93"
+    ],
+    "result": "The observed dimeric distribution of \u03b3-secretase complexes is consistent with earlier biochemical evidence showing dimeric complexes and the ~440 kDa band observed in blue native PAGE, which could correspond to a dimeric configuration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C93 appropriately contextualize the current findings with prior biochemical literature through proper citations. The interpretation that the 440 kDa complex may represent a dimer is reasonable given that the sum of four components is ~210 kDa, though this remains somewhat speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C94"
+    ],
+    "result": "SIM analysis on plasma membrane sheets achieves single-molecule imaging, likely because imaging PM monolayers increases the signal-to-noise ratio.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C94 is supported by the demonstration that individual \u03b3-secretase complexes can be resolved in SIM images of PM sheets. The technical interpretation about signal-to-noise improvement is reasonable, though the mechanism is presented as inference rather than direct demonstration.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "The authors propose that megadalton-sized complexes reported in prior biochemical studies may be artifacts formed during or after extraction, and that single-particle analysis instead favors a model of 1:1 encountering of PSEN1/\u03b3-secretase with sheddases for substrate transfer, resulting in short temporal or transient associations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C111-C114 represent interpretations and alternative hypotheses based on the negative association data with sheddases. While the speculation about extraction artifacts (C112) is reasonable, it cannot be definitively proven from the current data. The proposed 1:1 encountering model (C113-C114) is a plausible alternative interpretation but requires additional experimental validation to be fully supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "The study discusses potential mechanisms underlying PSEN1/\u03b3-secretase motility, including possible interactions with the actin cytoskeleton and conformational changes, contextualizing findings with prior literature on membrane protein dynamics and cytoskeletal interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C110 appropriately contextualize the observed motility patterns with relevant prior literature through proper citations. The discussion of potential mechanisms (cytoskeletal interactions, conformational changes) is appropriately speculative and serves to frame future investigations rather than making definitive mechanistic claims.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "The authors anticipate that single-molecule resolution approaches will become standard for studying intramembrane proteolysis dynamics, particularly in neurons where \u03b3-secretase substrates function in axonal outgrowth and synapse formation, and where synaptic plasticity is affected in Alzheimer's disease models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C117-C119 represent forward-looking statements about the impact of the methodological approaches and future research directions. These are appropriately supported by citations to relevant literature (C118-C119) and represent reasonable extrapolations from the demonstrated capabilities of the techniques.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,1752 @@
+{
+  "submission": {
+    "id": "1a647adf-c628-4d48-bbe7-724d7d0b9d23",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T15:20:02.571262Z",
+    "updated_at": "2025-12-02T15:20:02.571262Z"
+  },
+  "content": [
+    {
+      "id": "dfba817e-26de-484b-95e2-8c466e3e1c87",
+      "submission_id": "1a647adf-c628-4d48-bbe7-724d7d0b9d23",
+      "content_type": "manuscript",
+      "content_text": "# Synaptic mechanisms underlying modulation of locomotor-related motoneuron output by premotor cholinergic interneurons\n\n## Authors\n\n- Filipe Nascimento<sup>1</sup> ([ORCID: 0000-0002-9426-2807](https://orcid.org/0000-0002-9426-2807))\n- Matthew James Broadhead<sup>1</sup> ([ORCID: 0000-0002-4078-5581](https://orcid.org/0000-0002-4078-5581))\n- Efstathia Tetringa<sup>2</sup>\n- Eirini Tsape<sup>2</sup>\n- Laskaro Zagoraiou<sup>2</sup>\n- Gareth Brian Miles<sup>1</sup> ([ORCID: 0000-0002-8624-4625](https://orcid.org/0000-0002-8624-4625)) \u2020\n\n### Affiliations\n\n1. School of Psychology and Neuroscience, University of St Andrews St Andrews United Kingdom\n2. Center of Basic Research, Biomedical Research Foundation of the Academy of Athens Athens Greece\n\n\u2020 Corresponding author\n\n## Abstract\n\nSpinal motor networks are formed by diverse populations of interneurons that set the strength and rhythmicity of behaviors such as locomotion. A small cluster of cholinergic interneurons, expressing the transcription factor Pitx2, modulates the intensity of muscle activation via \u2018C-bouton\u2019 inputs to motoneurons. However, the synaptic mechanisms underlying this neuromodulation remain unclear. Here, we confirm in mice that Pitx2+ interneurons are active during fictive locomotion and that their chemogenetic inhibition reduces the amplitude of motor output. Furthermore, after genetic ablation of cholinergic Pitx2+ interneurons, M2 receptor-dependent regulation of the intensity of locomotor output is lost. Conversely, chemogenetic stimulation of Pitx2+ interneurons leads to activation of M2 receptors on motoneurons, regulation of Kv2.1 channels and greater motoneuron output due to an increase in the inter-spike afterhyperpolarization and a reduction in spike half-width. Our findings elucidate synaptic mechanisms by which cholinergic spinal interneurons modulate the final common pathway for motor output.\n\n## Introduction\n\nLocomotion is controlled by neuronal networks of the spinal cord, referred to as central pattern generators (CPGs), which can generate and sustain rhythmic patterns of muscle activity (Arber, 2012; Gosgnach et al., 2017; Goulding, 2009). The CPG for locomotion is located within the spinal cord and is formed by genetically distinct classes of interneurons that drive motoneuron activity in coordinated sequences that cause precise muscle activation necessary for behaviors such as walking or swimming. These spinal neurons are functionally diverse, as evidenced by the variety of different inhibitory, excitatory and modulatory transmitters they release to shape the pattern and frequency of motoneuron firing. Knowledge of the varying synaptic mechanisms by which interneuron subtypes participate in spinal circuits is crucial to better understand the flexibility and adaptability of spinal circuits in health and disease (Goulding, 2009; Miles and Sillar, 2011).\n\nThere are four broad, genetically distinct classes of spinal interneurons born in the ventral horn that are involved in motor function: V0, V1, V2 and V3 interneurons. V0 interneurons are derived from progenitors that express the developing brain homeobox protein 1 (Dbx-1) and can be further subdivided into V0V (ventral) or V0D (dorsal) interneurons based on the expression or absence, respectively, of the postmitotic determinant homeodomain protein even-skipped homeobox 1 (Evx1). V0 interneurons play an important role in left-right coordination (Moran-Rivard et al., 2001; Lanuza et al., 2004; Pierani et al., 2001). Less than 10% of the V0 neurons constitute a subpopulation of interneurons identified by expression of the Paired-like homeodomain 2 (Pitx2) transcription factor. Pitx2+ interneurons are preferentially clustered around the central canal and can be further subdivided into cholinergic (V0c) and glutamatergic (V0g) subtypes (Zagoraiou et al., 2009). V0c interneurons, receive excitatory inputs from spinal pathways involved in locomotion and innervate spinal motoneurons, forming 80\u2013100 large synapses (Zagoraiou et al., 2009), termed C-boutons, on each motoneuron (Li et al., 1995). Recently, Rozani et al demonstrated that C-boutons of brainstem motoneurons also derive from Pitx2+ interneurons (Rozani et al., 2019).\n\nUnlike other V0-derived interneurons, V0c interneurons are not involved in left-right or extensor-flexor coordination. Instead, they seem to be important for modulating the amplitude of motor output. In wild-type mice, the activation of specific hindlimb muscles is increased when animals switch from walking to swimming. However, when cholinergic transmission at C-boutons is genetically perturbed, this task-dependent increase in muscle activation is significantly reduced (Zagoraiou et al., 2009). These findings support that V0c interneurons and their C-bouton inputs to motoneurons provide task-dependent modulation of motor output by enhancing motoneuron firing when greater muscle activation is required.\n\nA range of postsynaptic proteins, including M2 muscarinic receptors, Kv2.1 channels and SK channels, are clustered at C-bouton synapses (Wilson et al., 2004; Deardorff et al., 2014). Previous work indicated that activation of M2 receptors in spinal cord slices increases motor output through M2 receptor-mediated inhibition of SK channels, which reduces the medium afterhyperpolarization (mAHP) allowing increased motoneuron firing rates (Miles et al., 2007). Recent work utilizing Kv2.1 channel blockers has demonstrated that Kv2.1 currents also regulate the repetitive firing of motoneurons (Romer et al., 2019). However, the exact mechanisms by which V0c-derived C-boutons modulate motor output remain unknown (Deardorff et al., 2014; Witts et al., 2014). Given the important role of V0c interneurons in\u00a0motor\u00a0control, and data implicating C-boutons as therapeutic targets for Amyotrophic Lateral Sclerosis and peripheral nerve injury (Salvany et al., 2019; Herron and Miles, 2012; Landoni et al., 2019), we sought to identify the cellular mechanisms through which this distinct class of cholinergic neurons modulates motor output.\n\nIn this study, we employed a combination of genetic, pharmacological and electrophysiological approaches to determine the synaptic mechanisms by which V0c interneurons and their C-boutons modulate motor output. Using Ca2+ imaging, we show that populations of lumbar Pitx2+ interneurons are rhythmically active during fictive locomotion. Chemogenetic inhibition of Pitx2+ interneurons during fictive locomotion, using designer receptors exclusively activated by designer drugs (DREADDs), decreased the strength of motor output in an M2 receptor-dependent manner. Genetic ablation of V0c interneurons confirmed that C-boutons increase the amplitude, but do not affect rhythmicity, of locomotor output. Chemogenetic excitation of Pitx2+ interneurons showed that activation of\u00a0M2 receptors and subsequent regulation of Kv2.1 channels at C-boutons increases motor output by decreasing motoneuron spike half-width and increasing the inter-spike AHP. Together, our findings provide the first direct evidence of the synaptic and cellular mechanisms involved in C-bouton-mediated modulation of spinal locomotor circuitry. Furthermore, we reveal a high degree of specificity within the modulatory control of spinal motor circuits, with discrete modulatory units likely to be devoted to the modulation of specific network output parameters.\n\n## Results\n\n### Pitx2+ INs are rhythmically active during fictive locomotion\n\nWe first confirmed that Pitx2+ interneurons exhibit rhythmic activity that is phase locked to spinal locomotor network output. Hemisected spinal cords were dissected from Pitx2::Cre;GCAMP6s mice to visualize Ca2+ activity from groups of Pitx2+ interneurons whilst simultaneously recording pharmacologically induced locomotor output from L1-L3 lumbar ventral roots (Figure 1a). Pitx2+ interneurons (32 upper lumbar interneurons and 19 lower lumbar interneurons, 6 hemisected spinal cords, 3 mice) exhibited clear rhythmic activity during fictive locomotion (Figure 1b\u2013c). The activity of 65.6% of L1-3 interneurons was tightly phase locked with respective L1-L3 ventral root output (indicated by a significant Rayleigh test statistic, p<0.05; Figure 1d,e), while the activity of a smaller population of lower lumbar (L4-L6) interneurons was also aligned with upper lumbar output (only 31.6%, Figure 1d,e). The remaining cells did not show any phase relationship associated with ventral root output. These data clearly demonstrate that groups of Pitx2+ interneurons are rhythmically active during fictive locomotion and that, as indicated by previous single-cell recordings (Zagoraiou et al., 2009), their activity patterns are tightly locked to the locomotor cycle.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/54170/elife-54170-fig1-v2.jpg)\n\n**Figure 1.:** (a) Illustration of ventral root recordings and Ca2+ imaging from Pitx2+ interneurons (green) in hemisected spinal cords from Pitx2::Cre;GCAMP6 mice. (b) Pitx2+ interneurons visualized in the L1-3 upper lumbar regions in a neonatal hemisected spinal cord from a Pitx2::Cre;GCAMP6 mouse. (c) Ventral root output and examples of Ca2+ imaging traces from the four neurons marked in (b). (d) Phase plots depicting relationships between Ca2+ transients in interneurons and ventral root output for three neurons in L1-3 (top) and three neurons in L4-6 (bottom). Blue points represent the phasing of individual Ca2+ transients within a locomotor cycle, red points represent the mean direction and strength of the phasing for each neuron, and grey shading indicates the average duration of upper lumbar-related bursts. (e) Summary graph of mean direction and strength of phasing for all interneurons analyzed (L1-3,\u00a0n=31; and L4-6,\u00a0n=19).\n\n### Chemogenetic inhibition of Pitx2+ INs decreases the amplitude of locomotor output\n\nWe next sought to directly demonstrate the role that Pitx2+ interneurons play in controlling motoneuron output during locomotor network activity. Cre-dependent DREADD mice were used to manipulate the activity of Pitx2+ interneurons during fictive locomotion.\n\nWe first investigated whether Pitx2+ interneurons could be effectively inhibited using DREADD expression. This was assessed by performing whole-cell patch-clamp recordings from spinal cord slices obtained from Pitx2::Cre;tdTomato;hM4Di mice. In these mice, Pitx2+ cells express both the hM4Di inhibitory receptor and the tdTomato red fluorescent reporter, which allowed them to be identified for single-cell electrophysiology (Figure 2a). Pitx2+ interneurons, which are distinctively clustered around the central canal, were targeted for recordings (Zagoraiou et al., 2009). As previously reported, the majority of Pitx2+ interneurons were tonically active at rest (Zagoraiou et al., 2009; Figure 2b,c). Application of CNO (1 \u00b5M) to activate the inhibitory DREADD was found to decrease the tonic firing of Pitx2+ interneurons in slices from Pitx2::Cre;tdTomato;hM4Di mice (Figure 2b, t(8)=6.08, Paired t-test, p=0.0003). In slices from Pitx2::Cre;tdTomato mice, which express the red fluorescent reporter in Pitx2+ interneurons but not the hM4Di receptor, CNO did not change spontaneous firing frequencies (Figure 2c, t(4)=0.53, Paired t-test, p=0.6228), confirming that the actions of CNO were selective to the hM4Di receptor.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/54170/elife-54170-fig2-v2.jpg)\n\n**Figure 2.:** (a) Schematic representation of a spinal cord slice containing Pitx2+ interneurons (red) targeted for single-cell recordings. (b and c) Spontaneous firing of Pitx2+ interneurons from Pitx2::Cre;tdTomato;hM4Di (b) and Pitx2::Cre;tdTomato (c) mice in control conditions and in the presence of CNO (1 \u03bcM); along with firing frequency data pooled for all recordings (b, n\u00a0=\u00a09; c, n\u00a0=\u00a05). *p<0.05.\n\nHaving established that populations of Pitx2+ interneurons are active during fictive locomotion and that their activity can be reduced using the inhibitory DREADD, we went on to assess the effect that chemogenetic inhibition of Pitx2+ interneurons has on ventral root output. Ventral root recordings from L1-L5 were obtained from spinal cords isolated from Pitx2::Cre;hM4Di mice. Pitx2+ interneurons were then inhibited by perfusion of CNO during fictive locomotion (Figure 3a). Inhibition of Pitx2+ interneurons during fictive locomotion did not change burst frequency (Q\u00a0=\u00a00.57, Friedman\u2019s test, p=0.7515; Figure 3c, n\u00a0=\u00a014) or duration (Q\u00a0=\u00a05.28, Friedman\u2019s test, p=0.0712; Figure 3e, n\u00a0=\u00a014) but significantly decreased burst amplitude (\u221210.7 \u00b1 1.8%, F\u00a0=\u00a04.34, Repeated measures ANOVA, p=0.0235; Figure 3g, n\u00a0=\u00a014). We also did not observe any significant changes in the variance of burst frequency (F\u00a0=\u00a04.33, Repeated measures ANOVA, p=0.1146, n\u00a0=\u00a014) or duration (F\u00a0=\u00a01.44, Repeated measures ANOVA, p=0.4857, n\u00a0=\u00a014). CNO had no effect on fictive locomotion in spinal cord preparations obtained from mice that did not express Cre-recombinase (Figure 3\u2014figure supplement 1). When M2 receptors were blocked using methoctramine (10 \u00b5M; Figure 3b), DREADD-mediated inhibition of Pitx2+ interneurons had no significant effect on burst frequency (F\u00a0=\u00a01.23, Repeated measures ANOVA, p=0.3203; Figure 3d, n\u00a0=\u00a08), duration (Q\u00a0=\u00a03.25, Friedman\u2019s test, p=0.2359; Figure 3f, n\u00a0=\u00a08) or amplitude (F\u00a0=\u00a00.89, Repeated measures ANOVA, p=0.4345, Figure 3h, n\u00a0=\u00a08), indicating that the observed reduction in motor output involved C-boutons derived from V0c interneurons.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/54170/elife-54170-fig3-v2.jpg)\n\n**Figure 3.:** (a and b) Raw (top) and integrated/rectified (bottom) traces illustrating the effects of (a) CNO (1 \u03bcM) and (b) CNO plus methoctramine (10 \u03bcM) on drug-induced locomotor output recorded from spinal cords of Pitx2::Cre;hM4Di mice. (c \u2013 h) Time course plots and box-plots of pooled data showing the effects of CNO alone or CNO plus methoctramine on locomotor burst frequency (b,c), duration (d,e) and amplitude (g,h). *p<0.05.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/54170/elife-54170-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (a) Raw (top) and integrated/rectified (bottom) traces showing locomotor-related ventral root bursts recorded from the spinal cord of a hM4Di mouse in control, CNO and wash conditions. (b\u2013d) Average time course plots (top) and mean pooled data (bottom) showing no significant effect of CNO (1 \u03bcM) on the frequency (b), duration (c) or amplitude (d) of drug-induced locomotor output recorded from the spinal cords of hM4Di mice (n\u00a0=\u00a08).\n\nWe next investigated the modulatory effects of Pitx2+ interneurons on the locomotor-related firing output of individual motoneurons by performing whole-cell patch-clamp recordings from lumbar motoneurons within intact spinal cord, preparations obtained from Pitx2::Cre;tdTomato;hM4Di mice (Figure 4a). Application of CNO, to chemogenetically inhibit Pitx2+ interneurons, led to a clear reduction in the rate of motoneuron firing during locomotor bursts (t(3)=5.40, Paired t-test, p=0.0125; Figure 4b). We also observed an outward current in motoneurons when CNO was applied (102\u00a0\u00b1\u00a014 pA, n\u00a0=\u00a011), which was associated with a decrease in input resistance (control: 88\u00a0\u00b1\u00a08 M\u03a9, CNO: 68\u00a0\u00b1\u00a04 M\u03a9, t(8)=2.455, Paired t-test, p=0.0386).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/54170/elife-54170-fig4-v2.jpg)\n\n**Figure 4.:** (a) Schematic depicting the intact spinal cord preparation used for patch clamp recordings of lumbar motoneurons (green) during fictive locomotion. (b) Spontaneous firing recorded from a motoneuron during pharmacologically\u00a0induced fictive locomotion in control conditions and after the addition of CNO; along with firing frequency data pooled for all recordings (n\u00a0=\u00a04); *p<0.05.\n\nTaken together, these results directly demonstrate that Pitx2+ interneurons play a specific role in regulating the intensity of locomotor-related motoneuron output and that this modulation is mediated by M2 receptors, known to be expressed at C-bouton synapses. In addition, Pitx2+ interneurons appear to have little influence on rhythm or pattern generating elements of spinal motor circuits.\n\n### Ablation of V0c INs eliminates muscarinic modulation of the intensity of locomotor output\n\nResults obtained from Pitx2::Cre;hM4Di mice indicate that Pitx2+ interneurons modulate motoneuron output via M2 receptors located at C-bouton synapses. However, chemogenetic inhibition with CNO did not fully abolish Pitx2+ cell firing (Figure 2b). Furthermore, spinal Pitx2+ interneurons subdivide into cholinergic (V0c) and glutamatergic (V0g) subtypes (Zagoraiou et al., 2009), but the transgenic mice utilized in our inhibitory DREADD experiments did not enable the functional dissociation of V0c versus V0g interneurons. Next, we therefore assessed the effects of the specific ablation of V0c interneurons and their C-bouton inputs to motoneurons.\n\nPitx2::Cre mice were crossed with a novel vAChT-stop-DTA mouse line (where there are two loxP sequences flanking the stop cassette) in order to achieve specific ablation of V0c interneurons via selective expression of diphtheria toxin A. Pitx2::Cre;tdTomato;vAChT-stop-DTA mice were also generated in order to determine the fate of Pitx2+ neurons at older ages, since our Pitx2 antibody does not work well after P15. We detected V0c interneurons using a combination of antibodies against Pitx2, tdTomato and ChAT, with C-bouton identity further verified by immunoreactivity against vAChT. Immunohistochemical analysis in both neonatal (P2; Figure 5a and P7; Figure 5b\u2013d) and young adult (P25; Figure 5e) transgenic mice demonstrated efficient ablation of Pitx2+/ChAT+ V0c interneurons in Pitx2::Cre;vAChT-stop-DTA and Pitx2::Cre;tdTomato;vAChT-stop-DTA mice (t(4)=8.42, Unpaired t-test, p=0.0011; Figure 5d). Furthermore, Pitx2+/VAChT+ C-bouton inputs to motoneurons were also successfully ablated. C-bouton counts from pictures of 50 randomly selected motoneurons from the control group (n\u00a0=\u00a03 Pitx2::Cre;tdTomato) and pictures of 50 randomly selected motoneurons from the experimental group (n\u00a0=\u00a03 Pitx2::Cre;tdTomato;vAChT-stop-DTA) revealed 381 synapses in the control tissue and 16 synapses in the experimental tissue (95.8% deletion). Thus, our genetic strategy led to a highly efficient, conditional ablation.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/54170/elife-54170-fig5-v2.jpg)\n\n**Figure 5.:** (a) Immunofluorescence in spinal cord sections of P2 wt (control) and Pitx2::Cre;vAChT-stop-DTA (experimental) mice using antibodies against Pitx2 (red) and Choline Acetyl Transferase (ChAT, green). (b) Immunofluorescence in spinal cord sections of P7 upper lumbar levels from wt (control) and Pitx2::Cre;;vAChT-stop-DTA (experimental) mice using antibodies against Pitx2 (red) and ChAT (green). White arrows in (a) and (b) point to double positive neurons. Neurons that are positive for cholinergic markers only but not positive for Pitx2 are preganglionics, typically present in the intermediate zone in these levels (a, b). (c) Immunofluorescence of motoneurons and their C-bouton terminals in upper lumbar spinal cord sections using an antibody against vAChT. (d) Average number of V0c neurons per 14 \u00b5m section in control and experimental P7 mice. (e) Immunofluorescence of motoneurons and their C-bouton terminals in upper lumbar spinal cord sections of P25 Pitx2::Cre;tdTomato (control) and Pitx2::Cre;tdTomato;vAChT-stop-DTA (experimental) mice using antibodies against tdTomato (red), ChAT (green) and vAChT (blue); Photos acquired with confocal microscopy using (a, b) 20x lens and (c,\u00a0e) 40x lens. Sections thickness was 14 \u03bcm and scale bar is 20 \u00b5m; n\u00a0=\u00a03 mice for each condition; **p<0.01.\n\nThe effects of genetic ablation of V0c interneurons and their C-boutons were then assessed by investigating muscarinic modulation of pharmacologically\u00a0induced locomotion recorded from L1-L5 ventral roots from spinal cord preparations from Pitx2::Cre;vAChT-stop-DTA mice and wild-type animals. In wild-type mice (Figure 6a), blockade of M2 receptors via application of methoctramine reduced the amplitude of locomotor-related ventral root bursting (\u221216.8 \u00b1 4.1%, Q\u00a0=\u00a09.50, Friedman\u2019s test, p=0.0087; Figure 6g, n\u00a0=\u00a012), decreased burst frequency (\u221211.9 \u00b1 3.6%, Q\u00a0=\u00a011.62, Friedman\u2019s test, p=0.0030; Figure 6c, n\u00a0=\u00a012) and increased burst duration (27.2 \u00b1 3.4%, Q\u00a0=\u00a020.67, Friedman\u2019s test, p<0.0001; Figure 6e, n\u00a0=\u00a012), similar to recently reported effects of M2 receptor antagonists on whole cord output in neonatal mice (Nascimento et al., 2019). Blockade of M2 receptors in Pitx2::Cre;vAChT-stop-DTA mice (Figure 6b) also led to a decrease in burst frequency (\u221224.4 \u00b1 7.6%, F\u00a0=\u00a016.59, Repeated measures ANOVA, p=0.0099; Figure 6d, n\u00a0=\u00a010) and an increase in burst duration (68.34 \u00b1 23.7%, Q\u00a0=\u00a09.80, Friedman\u2019s test, p=0.0063; Figure 6f, n\u00a0=\u00a010). However, methoctramine no longer had an effect on burst amplitude when V0c interneurons and C-boutons were ablated (2.3 \u00b1 2.2%, F\u00a0=\u00a00.32, Friedman\u2019s test, p=0.7263; Figure 6h, n\u00a0=\u00a010). These data demonstrate that V0c interneurons and their C-bouton contacts with motoneurons are solely responsible for the M2 muscarinic receptor-mediated modulation of the intensity of locomotor-related output. In addition, these results demonstrate that additional effects of M2 receptor activation on locomotor network function do not involve V0c interneurons or C-bouton synapses.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/54170/elife-54170-fig6-v2.jpg)\n\n**Figure 6.:** (a, b) Raw (top) and integrated/rectified (bottom) traces with averaged time course plots and mean pooled data illustrating the effects of methoctramine (10 \u03bcM) on Wild Type (n\u00a0=\u00a012) and Pitx2::Cre;vAChT-stop-DTA (n\u00a0=\u00a010) mice lumbar ventral root burst frequency (c, d), duration (e, f) and amplitude (g, h); *p<0.05, **p<0.01, ***p<0.001.\n\n### Chemogenetic excitation of Pitx2+ INs reveals synaptic mechanisms at C-boutons\n\nTo reveal the cellular mechanisms underlying C-bouton-mediated modulation of motor output, we used excitatory (hM3Dq receptor) DREADD expression in Pitx2+ interneurons to activate C-boutons while recording from lumbar motoneurons in intact spinal cord preparations. We first tested whether Pitx2+ interneurons could be excited using this DREADD approach. Application of CNO reliably increased the spontaneous firing frequency of Pitx2+ interneurons clustered near the central canal in spinal cord slices prepared from Pitx2::Cre;tdTomato;hM3Dq mice (t(7)=2.45, Paired t-test, p=0.0441; Figure 7a).\n\n![Figure 7.](https://cdn.elifesciences.org/articles/54170/elife-54170-fig7-v2.jpg)\n\n**Figure 7.:** (a) Spontaneous firing of a Pitx2+ interneuron from a Pitx2::Cre;tdTomato;hM3Dq mouse in control conditions and during the application of CNO; along with firing frequency data pooled for all recordings (n\u00a0=\u00a08). (b) Representative traces illustrating changes in holding current (Vhold = \u221260 mV) during recordings of motoneurons in the presence of CNO alone (left) or co-applied with methoctramine (10 \u03bcM, middle) or guangxitoxin-1E (50 nM, right). (c) Motoneuron firing in response to current steps in control conditions and in the presence of CNO (left) with pooled data plotted to show changes in rheobase, depolarizing block, current-frequency relationships and maximum firing (right) (n\u00a0=\u00a023). (d, e) Examples of motoneuron firing and pooled data depicting firing parameters in the presence of methoctramine and methoctramine co-applied with CNO (d; n\u00a0=\u00a011) or Guangxitoxin-1E and CNO co-applied with Guangxitoxin-1E (e; n\u00a0=\u00a014). *p>0.05, **p<0.01, ***p<0.001.\n\n![Figure 7\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/54170/elife-54170-fig7-figsupp1-v2.jpg)\n\n**Figure 7\u2014figure supplement 1.:** (a) CNO does not effect motoneuron firing parameters (rheobase, depolarizing block, current-frequency relationships or maximum firing rates, n\u00a0=\u00a015) and (b) mAHP amplitude (n\u00a0=\u00a04) in mice that do not express DREADD receptors. Input resistance also did not change in the presence of CNO (control: 77\u00a0\u00b1\u00a012 M\u03a9, CNO: 78\u00a0\u00b1\u00a012 M\u03a9, t(9)=0.499, Paired t-test, p=0.6295).\n\nHaving established that Pitx2+ interneurons from Pitx2::Cre;hM3Dq mice can be excited via CNO application, we next performed whole-cell patch-clamp recordings from motoneurons to directly examine the cellular effects of activating Pitx2+ interneurons. We began by assessing whether activation of Pitx2+ interneurons induced any subthreshold currents that might adjust the resting membrane potential of motoneurons (Figure 7b). In spinal cords from Pitx2::Cre;hM3Dq mice, activation of Pitx2+ interneurons with CNO elicited an inward current in motoneurons (\u221237\u00a0\u00b1\u00a06 pA, n\u00a0=\u00a014; Figure 7b left) that was associated with an increase in input resistance (control: 77\u00a0\u00b1\u00a09 M\u03a9, CNO: 90\u00a0\u00b1\u00a012 M\u03a9, W=-46, Wilcoxon signed-rank test, p=0.0217,n\u00a0=\u00a010). The M2 receptor antagonist methoctramine, blocked both this inward current (\u22122\u00a0\u00b1\u00a04 pA, n\u00a0=\u00a09; Figure 6b, middle) and the change in input resistance (methoctramine: 82\u00a0\u00b1\u00a013 M\u03a9, methoctramine+CNO: 89\u00a0\u00b1\u00a016 M\u03a9, t(7)=1.68, Paired t-test, p=0.1368, n\u00a0=\u00a08), supporting that these CNO-induced effects involve V0c interneurons and their C-boutons. Given that Kv2.1 channels are expressed by motoneurons and exhibit clustering at C-bouton synapses (Wilson et al., 2004; Deardorff et al., 2014), they could be involved in V0c interneuron-mediated modulation of motor output. To address whether changes in the subthreshold properties of motoneurons following activation of Pitx2+ interneurons involves Kv2.1 channels, we perfused CNO in the presence of the selective Kv2.1 channel blocker guangxitoxin-1E (50 nM). At this concentration, guangxitoxin-1E is thought to be highly selective for Kv2.1 channels, with limited impact on other channels including Kv4 channels (Herrington et al., 2006; Liu and Bean, 2014; Fletcher et al., 2017). Co-application of CNO with guangxitoxin-1E still induced an inward current (\u221230\u00a0\u00b1\u00a07 pA, n\u00a0=\u00a010; Figure 7b, right) that was associated with an increase in input resistance (guangxitoxin-1E: 49\u00a0\u00b1\u00a05 M\u03a9, guangxitoxin-1E and CNO: 58\u00a0\u00b1\u00a03 M\u03a9, t(7)=3.28, Paired t-test, p=0.0135, n\u00a0=\u00a08), indicating that Kv2.1 channels are not involved in this response.\n\nWe next assessed whether activation of Pitx2+ interneurons modulates the firing output of motoneurons in Pitx2::Cre;hM3Dq mice. Motoneuron input-output relationships were investigated using a series of depolarizing current steps applied in current-clamp mode during whole-cell patch-clamp recordings of motoneurons in isolated spinal cord preparations. Activation of Pitx2+ interneurons with CNO (Figure 7c) decreased motoneuron rheobase (t(22)=3.32, Paired t-test, p=0.0031), increased the current required to reach a depolarizing block of firing (W=-148, Wilcoxon signed-rank test, p=0.0054) and increased the maximum firing rate of motoneurons (t(23)=4.13, Paired t-test, p=0.0004). When M2 receptors were blocked with methoctramine (Figure 7d) activation of Pitx2+ interneurons had no effect on motoneuron rheobase (t(10)=0.04, Paired t-test, p=0.9709), depolarizing block (t(10)=0.000, Paired t-test, p=1.0000) or maximum firing rates (W\u00a0=\u00a019.00, Wilcoxon signed-rank test, p=0.3552). Activation of Pitx2+ interneurons in the presence of the Kv2.1 blocker guangxitoxin-E, still reduced motoneuron rheobase (t(13)=2.47, Paired t-test, p=0.0279), but no longer affected the current required for a depolarizing block (W\u00a0=\u00a0\u221221.00, Wilcoxon signed-rank test, p=0.3532) nor motoneuron maximum firing rates (t(13)=0.000, Paired t-test, p=1.0000). These results demonstrate that chemogenetic activation of Pitx2+ interneurons increases the firing output of motoneurons through activation of M2 receptors and subsequent regulation of Kv2.1 channels that are present at C-bouton synapses.\n\nThe observed decrease in rheobase could indicate a change in the firing threshold of motoneurons. To address this, a depolarizing current ramp (1 s duration) was used to measure action potential threshold. Activation of Pitx2+ interneurons with CNO decreased motoneuron firing threshold measured from ramps (W\u00a0=\u00a062.00, Wilcoxon signed-rank test, p=0.0029; Figure 8a), an effect which was blocked by methoctramine (t(3)=0.67, Paired t-test, p=0.5513; Figure 8b), but not by guangxitoxin1-E (t(5)=3.10, Paired t-test, p=0.0362; Figure 8c). These data indicate that activation of M2 receptors at C-bouton synapses reduces the current required for motoneuron firing by hyperpolarizing the action potential threshold via Kv2.1-independent mechanisms.\n\n![Figure 8.](https://cdn.elifesciences.org/articles/54170/elife-54170-fig8-v2.jpg)\n\n**Figure 8.:** (a\u2013c) Motoneuron firing in response to depolarizing current ramps (1 s duration) in whole spinal cord preparations from Pitx2::Cre;hM3Dq mice demonstrating action potential threshold following activation of Pitx2+ interneurons with CNO alone (a; 1 \u03bcM, a; n\u00a0=\u00a012), and CNO co-applied with either methoctramine (10 \u03bcM) (b; n\u00a0=\u00a04) or guangxitoxin-1E (50 nM) (c; n\u00a0=\u00a05). (d\u2013f) Truncated single action potentials illustrating the amplitude of the mAHP following application of CNO alone (d; n\u00a0=\u00a022), and CNO co-applied with either methoctramine (e; n\u00a0=\u00a07) or guangxitoxin-1E (f; n\u00a0=\u00a011). (g\u2013i) Successive action potentials recorded during repetitive firing showing inter-spike AHP amplitude following application of CNO alone (g; n\u00a0=\u00a021), and CNO co-applied with either methoctramine (h; n\u00a0=\u00a010) or guangxitoxin-1E (i; n\u00a0=\u00a012). (j\u2013l) Recordings of single action potentials illustrating action potential half-width following application of CNO alone (j; n\u00a0=\u00a020), and CNO in the presence of either methoctramine (k; n\u00a0=\u00a011) or guangxitoxin-1E (l; n\u00a0=\u00a013). *p<0.05, **p<0.01, ***p<0.001.\n\nPrevious, indirect evidence has suggested that activation of M2 receptors at C-bouton synapses is likely to increase motoneuron output through a reduction in the amplitude of the mAHP (Miles et al., 2007). We therefore tested this directly using our chemogenetic approach. Single action potentials were evoked from motoneurons in current-clamp mode using brief (10 ms) depolarizing current steps to assess whether activation of Pitx2+ interneurons reduced the action potential mAHP within isolated spinal cord preparations from Pitx2::Cre;hM3Dq mice. Surprisingly, activation of Pitx2+ interneurons with CNO increased the mAHP amplitude (W\u00a0=\u00a0204, Wilcoxon signed-rank test, p=0.0010; Figure 8d). This effect was blocked when CNO was co-applied with either the M2 receptor antagonist methoctramine (t(6)=0.63, Paired t-test, p=0.5513; Figure 8e) or the Kv2.1 channel blocker guangxitoxin1-E (t(15)=1.27, Paired t-test, p=0.2208; Figure 8f).\n\nKv2.1 channels can contribute to the inter-spike afterhyperpolarization, which can facilitate greater firing rates by enabling sodium channels to recover from inactivation between spikes (Liu and Bean, 2014; Johnston et al., 2008). Thus, the changes we observed in the mAHP, the amount of current required to induce a depolarizing block and the maximum firing rates of motoneurons when Pitx2+ interneurons are activated could reflect modulation of Kv2.1 conductances at C-bouton synapses. To evaluate this, we calculated the magnitude of the inter-spike AHPs that followed the last five action potentials induced by current steps that elicited maximum firing frequencies in motoneurons from Pitx2::Cre::hM3Dq mice. We observed an increase in the amplitude of inter-spike AHPs in motoneurons following activation of Pitx2+ interneurons with CNO (t(20)=8.44, Paired t-test, p<0.0001; Figure 8g). This effect was blocked by both the M2 receptor antagonist methoctramine (t(9)=1.02, Paired t-test, p=0.3354; Figure 8h) and the Kv2.1 blocker guangxitoxin1-E (t(11)=1.45, Paired t-test, p=0.1736; Figure 8i). These data indicate that C-bouton activation enables motoneurons to fire during sustained and intense stimulation by increasing the inter-spike AHP.\n\nKv2.1 channels have also been shown to affect action potential duration which can contribute to changes in motoneuron firing by allowing faster, sharper spikes (Fletcher et al., 2017). To address if C-bouton activation also modulates motoneuron firing rates by controlling spike duration, we examined spike half-width measured from single action potentials evoked in motoneurons from Pitx2::Cre::hM3Dq mice. Activation of Pitx2+ interneurons with CNO decreased spike half-width (W\u00a0=\u00a0182, Wilcoxon signed-rank test, p=0.0007; Figure 8j). This effect was blocked by both the M2 receptor antagonist methoctramine (W=-42, Wilcoxon signed-rank test, p=0.0674; Figure 8k) and the Kv2.1 blocker guangxitoxin1-E (t(12)=1.10, Paired t-test, p=0.2951; Figure 8l). These observations demonstrate that M2 receptor-mediated modulation of Kv2.1 channels at C-bouton synapses also facilitates greater motoneuron firing rates by reducing spike half-width.\n\n## Discussion\n\nIn this study, we interrogated the roles and cellular mechanisms of cholinergic modulation within motor circuits by focusing on a uniquely discrete population of genetically identifiable cholinergic spinal interneurons marked by expression of the transcription factor Pitx2. By combining Ca2+ imaging, chemogenetic manipulation and conditional ablation of cholinergic Pitx2+ interneurons (V0c), we demonstrate that recruitment of V0c interneurons and their C-bouton synapses leads to activation of postsynaptic M2 receptors, which in turn regulate Kv2.1 channel function to facilitate increased and sustained motoneuron firing. Thus, activation of the V0c system results in augmented motor output that will translate into stronger muscle activity. Such intrinsic modulation will enable spinal motor output, and muscular contraction, to be matched to variable behavioral demands.\n\nPrevious single cell recordings from Pitx2+ interneurons during pharmacologically induced locomotor-related activity demonstrated that the majority of Pitx2+ cells exhibit bursts of activity in phase with segmentally\u00a0aligned motoneuron targets (Zagoraiou et al., 2009). We have now extended these analyses to a population level by imaging Ca2+ fluctuations in groups of lumbar Pitx2+ interneurons during locomotor network activity. We find that a high proportion of Pitx2+ interneurons exhibit rhythmic activity that is phase locked to bursts of locomotor-related activity recorded from ventral roots. Similar to previous work (Zagoraiou et al., 2009), we found that the strength of the relationship between Pitx2+ cell activity and locomotor output was more robust in upper compared with lower lumbar regions. This may reflect rostro-caudal differences in the density of V0c and V0g interneurons in the lumbar spinal cord (Zagoraiou et al., 2009; Enjin et al., 2010).\n\nFollowing the demonstration that Pitx2+ interneurons are rhythmically active during locomotor network activity, we next investigated their modulatory actions on locomotor-related output by using Cre-dependent expression of DREADDs to manipulate their activity. We first verified the effectiveness and specificity of our DREADD-based approach by showing that single-cell properties and baseline network output did not differ between DREADD and control mice prior to the application of CNO (Tables 1, 2 and 3, Supplementary file 1). Both high doses of CNO (10 \u00b5M) and the CNO derivative clozapine, which is only likely to be produced at significant levels when administered in vivo (MacLaren et al., 2016; Pirmohamed et al., 1995), can exhibit off-target effects on endogenous receptors, including 5-HT receptors known to contribute to the control of locomotor networks (Armbruster et al., 2007; Gomez et al., 2017). We therefore also verified that CNO (1 \u00b5M) had no detectable effects on ventral root output, single motoneuron firing, or subthreshold motoneuron properties when applied to preparations obtained from animals that do not express DREADD receptors (Figure 3\u2014figure supplement 1 and Figure 7\u2014figure supplement 1). Having verified our DREADD approach, we first assessed the effects of inhibiting Pitx2+ interneurons on ongoing locomotor-related activity. DREADD-mediated inhibition revealed that Pitx2+ interneurons modulate the amplitude of locomotor-related output in an M2 muscarinic receptor-dependent manner. This finding is consistent with previous reports of a reduction in the amplitude of locomotor-related bursts when applying antagonists of M2-type muscarinic receptors (Miles et al., 2007; Nascimento et al., 2019). We next addressed whether cholinergic V0c interneurons, and their C-bouton inputs to motoneurons, were solely responsible for the modulation of motor output we observed. In preparations from animals in which V0c cells had been genetically ablated, blockade of M2 receptors no longer affected the amplitude of locomotor-related output. Thus, Pitx2+ interneuron-dependent modulation of the intensity of motor output originates from cholinergic V0c interneurons and their C-bouton synapses on motoneurons. Despite previous evidence of a low density of V0c-derived synapses in the intermediate zone of the spinal cord (Zagoraiou et al., 2009), our findings demonstrate a primary role for V0c interneurons in the control of motoneuron output with little or no impact on locomotor CPG interneurons. Furthermore, although glutamatergic V0g interneurons are also known to project to the intermediate zone as well as the dorsal horn of the spinal cord (Zagoraiou et al., 2009), the fact that locomotor-related activity was unaltered when Pitx2+ cell activity was manipulated in the presence of muscarinic receptor blockers indicates that V0g interneurons do not contribute to the generation or modulation of locomotor network output and hence their functional roles remain elusive.\n\n**Table 1.**\n Intrinsic properties of lumbar motoneurons from hM3Dq and Pitx2::Cre; hM3Dq mice.\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th>hM3Dq</th>\n      <th>Pitx2::Cre; hM3Dq</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Resistance (M\u03a9)</td>\n      <td>63\u00a0\u00b1\u00a03</td>\n      <td>58\u00a0\u00b1\u00a04</td>\n    </tr>\n    <tr>\n      <td>Capacitance (pF)</td>\n      <td>114\u00a0\u00b1\u00a07</td>\n      <td>113\u00a0\u00b1\u00a04</td>\n    </tr>\n    <tr>\n      <td>Membrane potential (mV)</td>\n      <td>\u221260\u00a0\u00b1\u00a02</td>\n      <td>\u221262\u00a0\u00b1\u00a02</td>\n    </tr>\n    <tr>\n      <td>Rheobase (pA)</td>\n      <td>263\u00a0\u00b1\u00a043</td>\n      <td>353\u00a0\u00b1\u00a043</td>\n    </tr>\n    <tr>\n      <td>Depolarizing block (pA)</td>\n      <td>666\u00a0\u00b1\u00a044</td>\n      <td>817\u00a0\u00b1\u00a084</td>\n    </tr>\n    <tr>\n      <td>Maximum firing (Hz)</td>\n      <td>26\u00a0\u00b1\u00a02</td>\n      <td>27\u00a0\u00b1\u00a02</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>n\u00a0=\u00a016</td>\n      <td>n\u00a0=\u00a023</td>\n    </tr>\n  </tbody>\n</table>\n\n**Table 2.**\n Intrinsic properties of Pitx2+ interneurons from control, excitatory and inhibitory DREADD mice.\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th>Pitx2::Cre;tdTomato</th>\n      <th>Pitx2::Cre;tdTomato;hM4Di</th>\n      <th>Pitx2::Cre;tdTomato;hM3Dq</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Resistance (M\u03a9)</td>\n      <td>336\u00a0\u00b1\u00a048</td>\n      <td>307\u00a0\u00b1\u00a030</td>\n      <td>320\u00a0\u00b1\u00a016</td>\n    </tr>\n    <tr>\n      <td>Capacitance (pF)</td>\n      <td>28\u00a0\u00b1\u00a02</td>\n      <td>35\u00a0\u00b1\u00a03</td>\n      <td>26\u00a0\u00b1\u00a04</td>\n    </tr>\n    <tr>\n      <td>Membrane potential (mV)</td>\n      <td>\u221252\u00a0\u00b1\u00a03</td>\n      <td>\u221252\u00a0\u00b1\u00a02</td>\n      <td>\u221253\u00a0\u00b1\u00a01</td>\n    </tr>\n    <tr>\n      <td>Spontaneous firing (Hz)</td>\n      <td>2.2\u00a0\u00b1\u00a00.6</td>\n      <td>1.8\u00a0\u00b1\u00a00.5</td>\n      <td>2.0\u00a0\u00b1\u00a00.4</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>n\u00a0=\u00a011</td>\n      <td>n\u00a0=\u00a09</td>\n      <td>n\u00a0=\u00a09</td>\n    </tr>\n  </tbody>\n</table>\n\n**Table 3.**\n Ventral root burst frequency and duration measured\u00a0in the presence of NMDA, 5-HT and DA from preparations obtained from hM4Di and Pitx2::Cre;hM4Di mice.\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th>hM4Di</th>\n      <th>Pitx2::Cre;hM4Di</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Burst frequency (Hz)</td>\n      <td>0.23\u00a0\u00b1\u00a00.03</td>\n      <td>0.21\u00a0\u00b1\u00a00.03</td>\n    </tr>\n    <tr>\n      <td>Burst duration (ms)</td>\n      <td>2049\u00a0\u00b1\u00a0507</td>\n      <td>2393\u00a0\u00b1\u00a0554</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>n\u00a0=\u00a014</td>\n      <td>n\u00a0=\u00a019</td>\n    </tr>\n  </tbody>\n</table>\n\nRecent studies have reported a diversity of muscarinic receptor-mediated effects on spinal locomotor circuits, as revealed by modulation of the frequency, duration and amplitude of locomotor-related output (Nascimento et al., 2019; Jordan et al., 2014; Finkel et al., 2014). In keeping with these observations, when V0c interneurons were genetically ablated, pharmacological blockade of M2 receptors revealed V0c-independent muscarinic modulation of the frequency and duration of locomotor bursts. Given that M2 receptors are not only juxtaposed to C-boutons but are also widely distributed throughout motoneuron somata (Wilson et al., 2004; Miles et al., 2007; Hellstr\u00f6m et al., 2003; Welton et al., 1999) and on spinal interneurons (H\u00f6glund and Baghdoyan, 1997), it is likely that additional, as yet genetically undefined, neuronal sources of intraspinal acetylcholine (Bertrand and Cazalets, 2011; Gillberg et al., 1988; Gillberg et al., 1990; Sherriff and Henderson, 1994) are responsible for these M2 receptor-dependent changes in the rhythm and pattern of locomotor output. Given the specific nature of the effects of V0c interneurons on spinal motor circuits, it will be interesting to investigate whether similarly discrete subsets of spinal cells fulfil the other modulatory roles uncovered by blockade of endogenous cholinergic signalling. Recent work suggests that such separate modulatory pathways may act in concert, via different muscarinic receptor subtypes, to ensure balanced motor circuit output (Nascimento et al., 2019).\n\nInhibition of Pitx2+ interneurons during locomotor network activity was associated with both a reduction in population level motoneuron output, measured via ventral root recordings, and a reduction in motoneuron firing rates, evidenced by patch-clamp recordings from individual cells. We next took advantage of our genetic access to this specific population of interneurons, and our successful DREADD-based manipulation of their activity, to directly identify the synaptic and cellular mechanisms underlying the discrete modulatory pathway mediated by V0c interneurons.\n\nDREADD-mediated excitation of V0c interneurons was associated with an M2 receptor-dependent increase in the excitability of motoneurons. This increased excitability was characterized by a decrease in rheobase due to hyperpolarization of the action potential threshold, greater resistance to depolarizing block, which allowed motoneurons to fire in response to greater amplitude stimuli, and an increase in maximum firing rates. Potential mediators of these effects include postsynaptic Kv2.1 potassium channels and SK-type calcium-dependent potassium channels, which are both clustered at C-boutons synapses (Wilson et al., 2004; Hellstr\u00f6m et al., 2003; Muennich and Fyffe, 2004). Blockade of Kv2.1 channels during activation of V0c interneurons prevented the increased resistance to depolarizing block and the rise in maximum firing frequency, but not hyperpolarization of the action potential threshold. Given that recent modeling experiments indicate that blockade of SK channels depolarizes the action potential threshold in midbrain dopamine neurons (Iyer et al., 2017), SK channels at C-bouton synapses may also play a role in controlling the spike threshold of motoneurons. This is supported further by previous work indicating that motoneurons that express the SK3 channel isoform might have reduced rheobase when compared to motoneurons that do not express this isoform (Deardorff, 2013). In contrast, the other mechanisms leading to increased motoneuron excitability following activation of V0c interneurons appear to involve modulation of Kv2.1 channels, which are known to facilitate repetitive firing in a wide range of neuronal types (Liu and Bean, 2014; Malin and Nerbonne, 2002; Guan et al., 2013) and to play an important role in the repolarization phase of action potentials in motoneurons (Romer et al., 2019; Gao and Ziskind-Conhaim, 1998).\n\nOur data, which support a predominant role for Kv2.1 channels in C-bouton-mediated modulation of motoneuron excitability, contrast previous work, which suggested modulation of SK channels and a reduction in the mAHP were responsible for increased motoneuron output upon C-bouton activation (Miles et al., 2007). However, this previous work relied on broad pharmacological manipulation of muscarinic receptors in spinal cord slices, prior to the discover of the C-bouton source cells, and therefore likely activated a wide population of receptors beyond those localized at C-bouton synapses. Given that activation of muscarinic receptors has a number of different effects on motoneurons (Nascimento et al., 2019), it is plausible that M2 receptor-dependent reductions in mAHP amplitude involve receptors outside the territory of C-bouton synapses. SK channel clusters preferentially appose large cholinergic C-bouton terminals (Deardorff, 2013). However, SK channels are also distributed throughout laminae VII and IX, and could therefore be present on more distal motoneuron dendrites where they might be subject to modulation by as yet uncharacterized, Pitx2-negative, populations of cholinergic spinal interneurons (Bertrand and Cazalets, 2011; Gillberg et al., 1988; Gillberg et al., 1990; Sherriff and Henderson, 1994; Deardorff, 2013). Another possible explanation for the mechanistic differences reported in the present study is that there may be differential, state-dependent levels of involvement of specific components of the C-bouton synapse, depending on the activity levels of motoneurons and V0c interneurons\u00a0(Deardorff et al., 2014). For example, Kv2.1 channel-mediated modulation might dominate at the level of V0c activity induced by our DREADD-based stimulation, but calcium-dependent potassium channels might contribute at different rates of V0c interneuron firing. Testing this hypothesis will require the development of methods that enable finer control of V0c interneuron activity than were possible using the current DREADD-based approach.\n\nInterestingly, in the current study, we found that activation of V0c interneurons was associated with a small increase in both the mAHP measured after single spikes, and the inter-spike AHP measured during repetitive firing. Given that both effects were blocked by guangxitoxin-1E, we propose that this reflects greater recruitment of Kv2.1 channels. This mechanism contrasts previous reports of a substantial reduction in the mAHP due to modulation of calcium-dependent potassium channels (Miles et al., 2007). However, as discussed above, these previous data were obtained using less direct, global activation of M2 receptors and reflected measurements of mAHPs evoked by single action potentials only. Furthermore, it remains to be determined whether these effects reflect activation of M2 receptors at C-bouton synapses. If these effects are C bouton-mediated, perhaps under certain conditions large changes in the mAHP, due to SK channel modulation, reduce the refractory period to allow greater firing frequencies. Meanwhile, in the absence of such large reductions in the mAHP, smaller Kv2.1-mediated increases in the amplitude of the inter-spike AHP may facilitate the removal of inactivation of sodium channels, enabling sustained, higher frequency firing in response to depolarizing stimuli, as has been shown in other neuron types (Liu and Bean, 2014; Johnston et al., 2008). This Kv2.1 channel-dependent mechanism is also supported by recent work in rat lumbar motoneurons, which has demonstrated that Kv2 channels permit greater motoneuron firing frequencies by maintaining hyperpolarized inter-spike membrane potentials (Romer et al., 2019). Another, likely linked, observation in our study was a Kv2.1 channel-dependent narrowing of action potentials following C-bouton activation. This is again consistent with recent reports of increased action potential half-width and a slowing of motoneuron firing when Kv2 channels are blocked (Romer et al., 2019; Fletcher et al., 2017).\n\nWhile our findings are consistent with previous work demonstrating that Kv2.1 channels help maintain appropriate levels of repetitive firing in motoneurons (Romer et al., 2019; Fletcher et al., 2017), the intracellular mechanisms by which M2 receptor activation at C bouton synapses leads to changes in Kv2.1 channel function and motoneuron firing remain unclear. One potential pathway involves the calcineurin-meditated dephosphorylation of Kv2.1 channels. It has been proposed that inhibition of N-type Ca2+ channels, known to be located at C-bouton synapses (Wilson et al., 2004), by Gi/0-dependent pathways following M2 receptor activation could lower the levels of local intracellular Ca2+, thus reducing calcineurin-related dephosphorylation of Kv2.1 channels (Deardorff et al., 2014; Romer et al., 2019). Kv2.1 dephosphorylation in response to prolonged excitatory drive is thought to cause channel delustering in motoneurons, whilst reduced activity can increase Kv2.1 channel clustering (Romer et al., 2019; Romer et al., 2016; Romer et al., 2014). Interestingly, in motoneurons, declustering occurs in response to increased glutamatergic, but not cholinergic, input (Romer et al., 2019). Thus, activation of C-boutons should not lead to declustering of Kv2.1 channels and has in fact been proposed to maintain Kv2.1 clusters and promote repetitive firing at physiological activity levels (Romer et al., 2019). In addition to effecting channel clustering, the phosphorylation state of Kv2.1 channels has been shown to influence their gating parameters. Although data are lacking for motoneurons, dephosphorylation of Kv2.1 channels leads to a hyperpolarizing shift in channel activation and inactivation properties in hippocampal neurons, which is thought to suppress action potential firing frequency (Mohapatra and Trimmer, 2006; Mohapatra et al., 2009; Misonou et al., 2005; Park et al., 2006). Thus, it seems plausible that C-bouton activation helps maintain the phosphorylation state of Kv2.1 channels required to support motoneuron firing. It will therefore be interesting to directly test this, and other possible intracellular mechanisms, in future work. Regardless of the exact mechanisms, C-boutons appear well placed to ensure that motoneuron excitability and output is maintained or increased in a task or state-dependent manner, even in the face of elevated glutamatergic drive that would otherwise reduce motoneuron output via delustering of Kv2.1 channels.\n\nAn important consideration when interpreting our results is that our experiments were performed on neonatal tissue, because whole spinal cord preparations are not viable when obtained from older animals. Although our in vitro approach allows us to access, isolate and interrogate specific pathways, which are unlikely to be accessible or separable using in vivo approaches, an important caveat is the possibility of developmental changes in C-bouton signaling. The overall pre- and post-synaptic components of C-bouton synapses, including M2 receptors and Kv2.1 channels, appear to remain consistent from early neonatal stages into adulthood (Zagoraiou et al., 2009; Wilson et al., 2004). Rather than changes in the major components, postnatal maturation of C-boutons involves increased clustering of Kv2.1 channels and M2 receptors along with an increase in the size of C-boutons until motor networks become functionally mature (~P15) (Wilson et al., 2004; Phelps et al., 1984; Wetts and Vaughn, 2001). Given that maturation of spinal networks is sometimes accompanied by changes in the effects of modulators (e.g. 5-HT and acetylcholine [Jordan et al., 2014; Schmidt and Jordan, 2000]), we cannot exclude the possibility that the exact mechanisms of action at fully mature C-boutons differs from those revealed at neonatal stages. However, the fact that genetic perturbation of C-boutons in adult mice impairs the ability of motoneurons to increase muscle activation in response to behavioral demands (Zagoraiou et al., 2009), supports a consistency in the cellular effects of the C-bouton system into adulthood. Recordings from adult motoneurons within in vivo preparations, and associated modelling studies, have shown state-dependent changes in motoneuron properties including a decrease in AHP amplitude, hyperpolarization of action potential threshold, and a small increase in action potential half-width (Power et al., 2010; MacDonell et al., 2015; Krawitz et al., 2001; Brownstone et al., 1992; Dai et al., 2002). However, it is difficult to reconcile these results with those of the current study, since the in vivo findings reflect the net effect of multiple parallel modulatory processes and focusses on differences between quiescent states and baseline activity during locomotion or scratching, behavioral states during which the C-bouton system is unlikely to be strongly engaged (Zagoraiou et al., 2009). It will therefore be important in future studies to establish methods for interrogating the specific actions and mechanisms of C-bouton-mediated modulation of adult motoneurons during motor tasks of varying intensities.\n\nCholinergic pathways within the nervous system process a variety of inputs which enable them to fulfil roles in attentional modulation, enhancing responses to stimuli in a state-dependent manner (Ye et al., 2009; Mena-Segovia, 2016; Wikman et al., 2019; Herrero et al., 2008). The premotor, intraspinal cholinergic system, involving V0c interneurons and C-boutons, appears to parallel these supraspinal cholinergic systems. V0c interneurons receive synaptic inputs from a range of sources, including sensory pathways, supraspinal structures and CPG networks (Figure 9; Zagoraiou et al., 2009; Stepien et al., 2010; Murray et al., 2018), which \u2018mirror\u2019 inputs received by motoneurons and are therefore relevant to desired motor output. The C-bouton system seems to be less active during regular motor tasks such as walking but is particularly important during locomotor behaviors that require increased muscle activation such as swimming (Zagoraiou et al., 2009). Thus, V0c interneurons and their C-boutons are thought to provide task-dependent modulation of motor output (Zagoraiou et al., 2009). Here, we report novel findings regarding both the organization and mechanisms of action of intraspinal cholinergic modulatory systems. We provide evidence in support of a modular architecture for spinal cholinergic systems, in line with that recently proposed for the locus coerleus (Chandler et al., 2019; Totah et al., 2018), where V0c interneurons represent one functionally distinct neuromodulatory module devoted to task-dependent control of the intensity of motor output. Meanwhile, we provide the first demonstration of the synaptic and cellular mode of action of C-bouton inputs to motoneurons, demonstrating a role in shaping the action potential and therefore firing patterns via modulation of Kv2.1 channels. Given similarities in the roles of supraspinal and spinal cholinergic modulatory systems in task or state-dependent modulation, the insight gained from our study is likely to provide new insight into cholinergic modulatory systems throughout the mammalian nervous system.\n\n![Figure 9.](https://cdn.elifesciences.org/articles/54170/elife-54170-fig9-v2.jpg)\n\n**Figure 9.:** V0c interneurons (red) form C-bouton synapses on motoneurons (green) and are known to received disynaptic inputs from sensory afferents (blue) as well as input from local CPG neurons (orange) and higher brain regions (yellow) (Zagoraiou et al., 2009). Activation of V0c interneurons will lead to release of acetylcholine at C-bouton synapses, activation of postsynaptic M2 muscarinic receptors on motoneurons, and subsequent facilitatory regulation of Kv2.1 channels via as yet uncharacterized signaling pathways (dotted blue line). This modulation leads to an increase in inter-spike AHP and a decrease in action potential duration, allowing for increased and sustained motoneuron firing output, which will translate into more intense muscle contraction (DRG\u00a0=\u00a0dorsal root ganglion).\n\n## Materials and methods\n\n### Animal ethics\n\nAll the procedures performed on animals were conducted in accordance with the UK Animals (Scientific Procedures) Act 1986 and were approved by the University of St Andrews Animal Welfare Ethics Committee. Experiments on animals performed in the Biomedical Research Foundation of the Academy of Athens were approved by the competent veterinary service of the Prefecture of Athens, Greece in accordance with the existing legal framework. The facility is registered as a \u2018breeding\u2019 and \u2018user\u2019 establishment by the Veterinary Service of the Prefecture of Athens according to the Presidential Decree 56/2013 in harmonization with the European Directive 2010/63/EU for the protection of animals used for scientific purposes.\n\n### Tissue preparation for in vitro electrophysiology and Ca2+ imaging\n\nWhole or hemisected spinal cord preparations and spinal cord slices were obtained from postnatal day (P)2-P7 mice. Spinal cords were isolated as previously described Jiang et al. (1999). In brief, animals were euthanized using cervical dislocation and quickly decapitated and eviscerated. They were then pinned ventral side up in a chamber filled with \u2018dissecting\u2019 artificial cerebrospinal fluid (aCSF) continuously gassed with 95% O2 and 5% CO2 at a temperature of\u00a0~4\u00b0C. The spinal vertebrae were cut and the spinal cord isolated from mid-cervical to upper sacral segments.\n\nTo perform ventral root recordings, dorsal roots were trimmed and ventral roots from L1-L5 were kept intact. For patch-clamp recordings in whole spinal cords, access to motoneurons was facilitated by making small vertical cuts in the meninges on the ventral surface. To produce hemisected spinal cords, the pia was carefully removed and the two halves cleaved gradually with a dissecting pin. To obtain spinal cord slices, both the ventral and dorsal roots were trimmed and transverse slices were prepared from lumbar segments (300 \u00b5m thick) using a vibrating microtome (Leica VT1200). Slices were transferred to a \u2018recovery\u2019 aCSF solution continuously gassed with 95% O2 and 5% CO2 and kept at\u00a0~34\u00b0C for 45\u201360 min. Slices were then transferred to a beaker with \u2018recording\u2019 aCSF gassed with 95% O2 and 5% CO2 at room temperature (~20\u00b0C).\n\n### Sections for immunofluorescence\n\nSpinal cords were isolated from P2, P7 and P25 mice. P7 and P25 mice were first perfused with 4% PFA. Spinal cords were then post-fixed in 4% PFA and cryoprotected in 30% sucrose solution. They were embedded in Optical Cutting Temperature compound and 14 \u00b5m sections were taken using a Leica cryostat. Immunofluorescence was preformed using the following antibodies: rabbit anti-Pitx2 (1:8K CU1533 Jessel lab), goat anti-ChAT (1:100 AB144P Millipore), rabbit anti-dsRed (1:500 Chemicon), rabbit anti-vAChT (1:8K CU1475 Jessell lab) and ginea pig anti-vAChT (1:12K Fitzerald).\n\n### Animal lines\n\nPitx2tm4(cre)Jfm (Pitx2::Cre) mice (Liu, 2003) were crossed with Gt(ROSA)26Sortm96.1(CAG-GCaMP6s)Hze/J (GCAMP6, Jackson Laboratories, USA; stock #024106)\u00a0animals to obtain Pitx2::Cre;GCAMP6 mice that express the GCAMP6 Ca2+ indicator in Pitx2+ interneurons (Acton et al., 2018). Pitx2::Cre mice were mated with homozygous Gt(ROSA)26Sortm14(CAG-tdTomato)Hze/J (tdTomato) fluorescent reporter animals (Madisen et al., 2010), generating Pitx2::Cre;tdTomato mice, which allow fluorescent Pitx2+ interneurons to be targeted for single-cell electrophysiology (Zagoraiou et al., 2009). Pitx2::Cre and Pitx2::Cre;tdTomato mice were crossed with Gt(ROSA)26Sortm2(CAG-hM3Dq *,-mCitrine)Ute/J animals (hM3Dq; Jackson Laboratories, USA; stock #026220) in order to generate Pitx2::Cre;hM3Dq and Pitx2::Cre;tdTomato;hM3Dq offspring respectively, which express the excitatory hM3Dq DREADD receptor in Pitx2+ interneurons. Pitx2::Cre and Pitx2::Cre;tdTomato mice were also crossed with Gt(ROSA)26Sortm1(CAG-hM4Di*,-mCitrine)Ute/J (hM4Di; Jackson Laboratories, USA; stock #026219) to obtain Pitx2::Cre;hM4Di and Pitx2::Cre;tdTomato;hM4Di animals respectively that express the inhibitory hM4Di DREADD receptor in Pitx2+ interneurons.\n\nThe vAChT-loxP-STOP-loxP-DTA targeting vector was constructed by inserting a loxP-PGKneo-triple polyA-loxP-DTA-polyA cassette at the ATG of the vAChT coding sequence. The vAChT-loxP-STOP-loxP-DTA targeting vector was electroporated into mouse embryonic stem (ES) cells (129sv/ev), selected with G418 and homologous recombinants were identified by Southern blot analysis. Targeted ES cells were then microinjected into blastocysts and chimeras were crossed to C57BL/6J females resulting the vAChT-stop-DTA mouse line. Pitx2::Cre and Pitx2::Cre;tdTomato mice were crossed with vAChT-stop-DTA animals to produce Pitx2::Cre;vAChT-stop-DTA and Pitx2::Cre;tdTomato;vAChT-stop-DTA offspring respectively in which cholinergic Pitx2+ interneurons (V0c) were selectively ablated due to expression of diphtheria toxin A. Wild Type C57/BL6 mice were also used for some ventral root recordings. All these animals were bred to a C57/BL6 background.\n\n### In vitro Ca2+imaging\n\nImaging of hemisected spinal cords was performed at 20\u201324\u00b0C. Image acquisition was controlled with Andor Solis (Andor, Oxford Instruments) software. Images were acquired with a Zyla 4.2 scientific CMOS camera using a x40 water immersion objective lens (0.9 numerical aperture). Images were acquired with a rolling shutter at 5 Hz with a 50 ms exposure time. Illumination was provided by a 470 nm CoolLED system. Fictive locomotor output was recorded from L2/3 ventral roots during image acquisition (see below). Imaging and ventral root recordings were synchronized using a TTL pulse from the Digidata 1440 A/D to the CMOS camera.\n\n### In vitro electrophysiology\n\nSpinal cord slices or intact spinal cord preparations were immersed in a recording chamber perfused with recording aCSF (approximately 1 mL per second). Whole-cell patch-clamp recordings were established using borosilicated glass microelectrodes (2.5\u20136 M\u03a9) filled with intracellular solution. Signals were amplified and filtered (4 kHz low-pass Bessel filter) with a MultiClamp 700B amplifier (Molecular Devices, Sunnyvale, CA) and acquired at\u00a0\u226510 kHz using a Digidata 1440A A/D board and pClamp software (version 10.6, Molecular Devices, Sunnyvale, CA).\n\nMeasurements of drug-induced currents and input resistance (using 2.5 mV steps from \u221275 to \u221252.5 mV) were conducted in voltage-clamp mode (Vhold, \u221260 mV). Firing output was measured in current-clamp mode using either \u2018gap-free\u2019 acquisition for spontaneous firing, by injecting a series of 1 s square current pulses (from 10 pA, 50 pA increments) to induce repetitive firing, by applying 10 ms supramaximal pulses to evoke single action potentials, or via injection of a single supramaximal current ramp (1 s duration) to investigate firing threshold. In order to facilitate comparisons, a bias current was applied as necessary during current-clamp protocols to maintain the resting potential of neurons (~\u221260 mV).\n\nVentral root recordings were performed in whole or hemisected (in parallel with Ca2+ imaging) spinal cords by attaching suction electrodes to the ventral roots (L1-L5). Rhythmic locomotor-related activity was induced by applying 5-hydroxytryptamine (5-HT; 10 \u00b5M), N-methyl-D-aspartate (NMDA; 5 \u00b5M) and dopamine (DA, 50 \u00b5M). Signals were amplified and filtered (band-pass filter 30\u20133000 Hz, Qjin Design) and then acquired at a frequency of 6 kHz with a Digidata 1440A A/D board and pClamp software. Custom built amplifiers (Qjin design) allowed acquisition of raw signals with simultaneous online rectification and integration (50 ms time constant).\n\n### Drugs and solutions\n\nThe dissecting aCSF contained (in mM): 25 NaCl, 188 sucrose, 1.9 KCl, 1.2 NaH2PO4, 10 MgSO4, 1 CaCl2, 26 NaHCO3, 25 glucose and 1.5 kynurenic acid. The recovery solution contained (in mM): 119 NaCl, 1.9 KCl, 1.2 NaH2PO4, 10 MgSO4, 1 CaCl2, 26 NaHCO3, 20 glucose and 1.5 kynurenic acid. The recording aCSF contained (in mM): 127 NaCl, 3 KCl, 1.25 NaH2PO4, 1 MgCl2, 2 CaCl2, 26 NaHCO3, 10 glucose. The intracellular solution for patch-clamp recordings contained (in mM): 140 KMeSO4, 10 NaCl, 1 CaCl2, 10 HEPES, 1 EGTA, 3 Mg-ATP and 0.4 GTP-Na2 (pH 7.2\u20137.3, adjusted with KOH). NMDA, DA, 5-HT and methoctramine were supplied by Sigma-Aldrich; Clozapine-N-oxide (CNO) by Tocris and Hello-Bio; and guangxitoxin-1E by Alomone Labs. All drugs were dissolved in H2O.\n\n### Data analysis\n\nAnalysis of Ca2+ imaging was performed with FIJI software. Data were first converted to 8 bit and processed with a background subtraction and 3D smoothing. If required, a histogram-based bleach correction was performed, along with manual drift correction to control for tissue movement. Active cells were selected and delineated from the images, guided by a maximum intensity projected image to highlight high-intensity structures. Intensity measurements were converted to \u0394f/f0, calculated as: 100 x (fluorescence value \u2013 baseline fluorescence \u00f7 baseline fluorescence). Baseline fluorescence was calculated as the mean intensity from 10 frames during a period of low-level activity for each cell within the first minute of recording. Ca2+ transients from Pitx2+ interneurons in hemisected spinal cords were detected and quantified using DataView software (courtesy of Dr W. J. Heitler, University of St Andrews). Circular phase plots were used to depict the coupling of cellular Ca2+ activity with ventral root bursts during fictive locomotion. The beginning of the locomotor cycle, marked as 0 at the top of circular plots, was defined as the onset of flexor-related bursts recorded from upper lumbar ventral roots. Rayleigh\u2019s test for uniformity was used to statistically assess whether cells were significantly coupled to bursts of locomotor related activity.\n\nIn single-cell voltage clamp recordings, changes in holding current were calculated as the difference between the current value immediately before drug perfusion and the maximum change in current induced by the drug. Voltage-current relationships were used to calculate input resistance before and after drug perfusion. In current clamp experiments, rheobase was measured as the first current step eliciting firing. The current required to generate a depolarizing block was measured from the first step in which motoneurons stopped firing repetitively during the 1s-long pulse. This was defined as a\u00a0\u2265\u00a0100 ms silent period following the establishment of repetitive firing during current injection. Maximum firing frequencies were measured from the current step eliciting the highest firing rate. The magnitude of the inter-spike afterhyperpolarization was calculated from the last five spikes of the step that elicited the maximum firing rate. For single action potential analysis, mAHP amplitude was calculated as the difference between the resting voltage before injecting the 10ms-long depolarizing current and the peak value of the mAHP (averaged across 15 traces). For these single spikes, a differential function (dV/dt) was calculated and the onset of the action potential was set when dV/dt reached 10 mV/ms, which was then used for the estimation of half-width. The voltage threshold for action potentials was calculated from the first action potential elicited by current ramps.\n\nVentral root bursts were analyzed offline using DataView software. Bursts were identified from the integrated/rectified trace from which frequency and duration were measured. Burst amplitude was calculated from the respective segment of the raw trace. Data were averaged in 0.5 min time bins and normalized to a 10 min pre-control period to construct time course plots. Statistical comparisons were made on raw data averaged over 5 min periods in each condition.\n\n### Statistical analysis\n\nData are represented in the text as mean\u00a0\u00b1\u00a0s.e.m. In the figures, values are depicted as box plots displaying the distribution of data as the minimum, first quartile, median, third quartile, and maximum value for each dataset. In patch-clamp and Ca2+ imaging experiments each \u2018n\u2019 corresponds to one cell whereas in ventral root recordings it corresponds to one whole spinal cord preparation. D'Agostino-Pearson omnibus tests were used to access normality. Repeated measures ANOVA with Tukey\u2019s multiple comparison test (for normal distributed data) or Friedman test with Dunns\u2019 post-test (for non-normal distributed data) were used for the analysis of ventral root bursts between control, drug and washout. Rayleigh\u2019s test was used to assess the mean phasing of Pitx2+ interneuron activity relative to ventral root bursting. Paired t-test or Wilcoxon signed-rank test were used to compare data from single-cell experiments between control and drug. One-way ANOVA with Tukey\u2019s post-test was used to compare properties of Pitx2+ interneurons between DREADD and control mice. Unpaired t-test or Mann-Whitney U-test were used to compare data from Ca2+ imaging, immunohistochemistry, ventral root duration and frequency, and properties of motoneurons from DREADD and control mice. Values of p<0.05 were considered statistically significant.\n",
+      "created_at": "2025-12-02T15:20:02.571262Z"
+    },
+    {
+      "id": "1cf24245-775f-4e42-bc4d-d16dafc75958",
+      "submission_id": "1a647adf-c628-4d48-bbe7-724d7d0b9d23",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Claire Wyart, Institut du Cerveau et la Moelle \u00e9pini\u00e8re, H\u00f4pital Piti\u00e9-Salp\u00eatri\u00e8re, Sorbonne Universit\u00e9s, UPMC Univ Paris 06, Inserm, CNRS France\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.54170.sa1](https://doi.org/10.7554/eLife.54170.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nYour study provides important new understanding of the mechanisms underlying the modulation of motoneurons by cholinergic Pitx2+ interneurons. The additional experiments and explanations provided to the revised manuscript nicely strengthened your claims.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Synaptic mechanisms underlying modulation of locomotor-related motoneuron output by premotor cholinergic interneurons\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Ronald Calabrese as the Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Adam Deardorff (Reviewer #2); Larry Jordan (Reviewer #3).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThis is a very nice study addressing fundamental questions regarding cholinergic neuromodulation within the mammalian spinal cord and, more specifically, cellular mechanisms underlying the state dependent regulation of motoneurons by C-boutons. The experiments are well designed and build upon prior investigations, several of which were performed in the authors' own laboratories. The data are robust, novel, and represent a significant contribution to the field of motoneuron/movement neuroscience and will be of broader interest to those studying neuromodulation and synaptic signaling.\n\nIn particular, this work provides novel information about the role of Pitx2 inter-neurons (the source of C terminals on motoneurons) using calcium imaging, chemogenetics to excite or inhibit these cells specifically, as well as a novel method to ablate V0c interneurons. The authors show that, in contrast to earlier work, the effect of specific manipulation of the Pitx2 neurons involves actions not only at the M2 receptor but also modulates the Kv2.1 channels located at C terminals. Instead of a decrease in mAHP, as shown before and used as a basis for C-terminal increases in motoneuron excitability, this genetic approach revealed increased AHP and narrowed spikes to explain the increased excitability. This is a marked change from the previously accepted basis for the increase in motoneuron excitability. The authors also showed that c-boutons hyperpolarize motoneuron threshold, another factor that could increase motoneuron excitability. They were able to distinguish effects of muscarinic receptors from those involving Kv2.1 using specific blockers.\n\nPlease read the list of essential revisions requested by the three reviewers below, address all points raised and resubmit your revised manuscript after completion of text edits and a moderate amount of experiments (mainly precisions and controls).\n\nEssential revisions:\n\n\u2013 The authors do not fully explain how these opposite effects on mAHP can lead to the same result.\n\n\u2013 The authors were fortunate that the affinity of CNO for 5-HT receptors involved in locomotion did not interfere with fictive locomotion, since the affinity of CNO for 5-HT receptors is roughly the same as its affinity for the DREADD receptors. Perhaps this issue could be addressed.\n\n\u2013 Data from adult animals with the DREADD receptors would have been useful. There is evidence that the response to ACh in adults differs from that in neonatal animals, such that in adult spinal animals the effect of a muscarinic antagonist has the opposite effect to that observed in neonates. This issue might be discussed.\n\n\u2013 Developmental changes in the effects of C terminal activation is especially relevant because all of the recordings from motoneurons in adult cats and rats (during fictive locomotion or scratch e.g., Brownstone, et al., 1992; MacDonell et al., 2015; Power et al., 2010) show a decrease in the AHP. The data on spike duration is shown in Krawitz et al., 2001, and modeling studies (Dai et al., 2002) showed that action potential shape changes occur with modeled alterations in the delayed rectifier. There seems to be no definitive work in adult animals showing a change in action potential width during fictive locomotion consistent with the current results, these results should be discussed. Changes in the effects of ACh and 5-HT during development have been observed. It is important to show in this study that the observations in the neonatal mouse persist into adulthood, otherwise the data is applicable only to motoneurons control during development. The importance of such a developmental role should be discussed, in the absence of recordings from adult animals to confirm that the observations here are relevant to adults.\n\n\u2013 Substantive concerns: CNO may be converted into clozapine, a 5-HT2a antagonist (Thompson et al. ACS Pharmacol Transl Sci. 2018 Sep 14;1(1):61-72. doi: 10.1021/acsptsci.8b00012). Perhaps a few control experiments using C21, a compound that has been suggested to have less side-effects than CNO would be recommended, though the authors do make some control experiments where CNO is non-hM4Di expressing spinal cords are done. This important control is done sometimes but not for all experiments (e.g. recordings of motoneurons to CNO were not done in non-hM4Di spinal cords).\n\nFictive locomotion recordings show L2 activity. Since calcium imaging of Pitx2 neurons seems to suggest they are flexor related, were the effects observed only constrained to flexor-dominant L2 ventral roots and not extensor-dominant L5 ventral roots?\n\n\u2013 The major finding is a prominent role for Kv2.1 in MN excitability, and that Kv2.1 is regulated by C-boutons. These data significantly advance prior studies, which are appropriately cited by the authors. I am concerned about one aspect of the interpretation. The authors state that calcium/calcineurin dependent Kv2.1 channel dephosphorylation results in \"reduced K+ conductance\". However, the cited studies by Trimmer and others show Kv2.1 channel dephosphorylation causes a leftward, hyperpolarizing shift in the voltage dependence of activation, such that the normalized conductance of dephosphorylated Kv2.1 is increased at a given membrane potential. Conversely, normalized conductance is reduced when Kv2.1 is phosphorylated. This should be corrected and the subsequent Discussion section revised to reflect this correction.\n\n\u2013 Did the authors analyze the effects of GxTx alone on single action potentials? If not, could the authors comment on the specificity of GxTx for Kv2 vs. Kv4 channels as inhibition of an A current could also broaden AP half width.\n\n\u2013 The authors state that C-bouton activation recruits Kv2.1 channels (Discussion, seventh paragraph), and Figure 9 implies a direct link between the m2 receptors and Kv2.1 channels. Some clarification here would be helpful. M2 receptors typically couple to Gi/Go coupled pathways that inhibit calcium channels (\u03b2 subunit) or decrease cAMP/PKA activity (\u03b1 subunit). Could the influence of m2 receptors on Kv.2.1 channels be via effects on intracellular calcium or other phosphorylation cascades? Or is there evidence that G protein \u03b1 or \u03b2 subunits directly activate Kv2.1 channels (in MNs or other cell types)?\n\n\u2013 The result that V0c activity increases rather than decreases MN mAHP amplitude, and that this effect is blocked by methoctramine, is surprising given the author's prior work that local application of muscarine ablates the mAHP via m2 receptors (Miles et al., 2007). The authors should be lauded for publishing data which, on the surface, appears at odds with this highly cited study. Their suggestion that m2 receptor reduction in mAHP occurs via receptors \"outside the territory of C-bouton synapses\" is plausible and intriguing, but would be strengthened if the authors could briefly address 1) a possible mechanism by which SK channels are activated by more distant m2 receptors or evidence for similar findings in other cell types and 2) the functional utility of C-bouton postsynaptic SK expression if the channels are not involved in m2 mediated C-bouton signaling.\n\n\u2013 Related to # above, m2 receptor labelling has been plagued by non-specific commercial antibodies. Though some studies cited by the authors describe a more uniform distribution of m2 receptors across the MN membrane (Welton et al., 1999; Hellstrom et al., 2003), a result suggested physiologically by the authors' prior work (Nascimento et al., 2019), other studies cited show a more clustered distribution of m2 receptors specifically localized to C-bouton postsynaptic sites (Wilson et al., 2004; Meunnich and Fyffe, 2004; Deardorff et al., 2014). The existence of extra synaptic m2 receptors is therefore not as definitive as the authors state (Discussion, fourth paragraph) \u2013 but again is certainly plausible.\n\n\u2013 Are there changes in MN properties when Pitx2 cells are inhibited?\n",
+      "created_at": "2025-12-02T15:20:02.571262Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T15:20:02.571262Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T15:20:02.571262Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "f97532a6-1082-4ecf-bf40-4f54836a35c7",
+      "content_id": "dfba817e-26de-484b-95e2-8c466e3e1c87",
+      "claim_id": "C1",
+      "claim": "Pitx2+ interneurons are a small cluster of cholinergic interneurons that express the transcription factor Pitx2.",
+      "claim_type": "EXPLICIT",
+      "source": "A small cluster of cholinergic interneurons, expressing the transcription factor Pitx2, modulates the intensity of muscle activation via 'C-bouton' inputs to motoneurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the abstract as a known fact about these interneurons.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:20:02.571262Z"
+    },
+    {
+      "id": "2c8e3706-b45b-4e85-8437-b5d13f1923a9",
+      "content_id": "dfba817e-26de-484b-95e2-8c466e3e1c87",
+      "claim_id": "C2",
+      "claim": "Pitx2+ interneurons modulate the intensity of muscle activation via C-bouton inputs to motoneurons.",
+      "claim_type": "EXPLICIT",
+      "source": "A small cluster of cholinergic interneurons, expressing the transcription factor Pitx2, modulates the intensity of muscle activation via 'C-bouton' inputs to motoneurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by previous literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:20:02.571262Z"
+    },
+    {
+      "id": "96c19b7d-9fa5-4b63-9330-1f9cc0efee1b",
+      "content_id": "dfba817e-26de-484b-95e2-8c466e3e1c87",
+      "claim_id": "C3",
+      "claim": "Pitx2+ interneurons are active during fictive locomotion in mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we confirm in mice that Pitx2+ interneurons are active during fictive locomotion and that their chemogenetic inhibition reduces the amplitude of motor output.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is confirmed through Ca2+ imaging experiments shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:20:02.571262Z"
+    },
+    {
+      "id": "6fa1ad10-97b7-44b8-9007-07cd89dac788",
+      "content_id": "dfba817e-26de-484b-95e2-8c466e3e1c87",
+      "claim_id": "C4",
+      "claim": "Chemogenetic inhibition of Pitx2+ interneurons reduces the amplitude of motor output.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we confirm in mice that Pitx2+ interneurons are active during fictive locomotion and that their chemogenetic inhibition reduces the amplitude of motor output.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through DREADD experiments shown in Figures 3 and 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:20:02.571262Z"
+    },
+    {
+      "id": "ad62c83d-8bc9-48e3-abf7-48f582afb5b4",
+      "content_id": "dfba817e-26de-484b-95e2-8c466e3e1c87",
+      "claim_id": "C5",
+      "claim": "After genetic ablation of cholinergic Pitx2+ interneurons, M2 receptor-dependent regulation of the intensity of locomotor output is lost.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, after genetic ablation of cholinergic Pitx2+ interneurons, M2 receptor-dependent regulation of the intensity of locomotor output is lost.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through experiments in Pitx2::Cre;vAChT-stop-DTA mice shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:20:02.571262Z"
+    },
+    {
+      "id": "77dfaf22-5d81-4be5-ab7e-928a03192eb8",
+      "content_id": "dfba817e-26de-484b-95e2-8c466e3e1c87",
+      "claim_id": "C6",
+      "claim": "Chemogenetic stimulation of Pitx2+ interneurons leads to activation of M2 receptors on motoneurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, chemogenetic stimulation of Pitx2+ interneurons leads to activation of M2 receptors on motoneurons, regulation of Kv2.1 channels and greater motoneuron output due to an increase in the inter-spike afterhyperpolarization and a reduction in spike half-width.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through excitatory DREADD experiments shown in Figures 7 and 8.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:20:02.571262Z"
+    },
+    {
+      "id": "47232a98-479b-4977-a32a-af0691c62aac",
+      "content_id": "dfba817e-26de-484b-95e2-8c466e3e1c87",
+      "claim_id": "C7",
+      "claim": "Activation of Pitx2+ interneurons leads to regulation of Kv2.1 channels.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, chemogenetic stimulation of Pitx2+ interneurons leads to activation of M2 receptors on motoneurons, regulation of Kv2.1 channels and greater motoneuron output due to an increase in the inter-spike afterhyperpolarization and a reduction in spike half-width.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through experiments using the Kv2.1 blocker guangxitoxin-1E shown in Figures 7 and 8.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:20:02.571262Z"
+    },
+    {
+      "id": "fffca4b7-a3c6-4ddb-ae12-6f4b5bdb89f6",
+      "content_id": "dfba817e-26de-484b-95e2-8c466e3e1c87",
+      "claim_id": "C8",
+      "claim": "Activation of Pitx2+ interneurons causes greater motoneuron output due to an increase in the inter-spike afterhyperpolarization.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, chemogenetic stimulation of Pitx2+ interneurons leads to activation of M2 receptors on motoneurons, regulation of Kv2.1 channels and greater motoneuron output due to an increase in the inter-spike afterhyperpolarization and a reduction in spike half-width.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through patch-clamp recordings shown in Figure 8g.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:20:02.571262Z"
+    },
+    {
+      "id": "57a0a5b0-6a64-412c-86c2-16de17b6e741",
+      "content_id": "dfba817e-26de-484b-95e2-8c466e3e1c87",
+      "claim_id": "C9",
+      "claim": "Activation of Pitx2+ interneurons causes greater motoneuron output due to a reduction in spike half-width.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, chemogenetic stimulation of Pitx2+ interneurons leads to activation of M2 receptors on motoneurons, regulation of Kv2.1 channels and greater motoneuron output due to an increase in the inter-spike afterhyperpolarization and a reduction in spike half-width.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through patch-clamp recordings shown in Figure 8j.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:20:02.571262Z"
+    },
+    {
+      "id": "6af3dd3c-7a07-4c01-97f4-5f7fd3020622",
+      "content_id": "dfba817e-26de-484b-95e2-8c466e3e1c87",
+      "claim_id": "C10",
+      "claim": "Locomotion is controlled by neuronal networks of the spinal cord referred to as central pattern generators (CPGs).",
+      "claim_type": "EXPLICIT",
+      "source": "Locomotion is controlled by neuronal networks of the spinal cord, referred to as central pattern generators (CPGs), which can generate and sustain rhythmic patterns of muscle activity (Arber, 2012; Gosgnach et al., 2017; Goulding, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge with supporting citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:20:02.571262Z"
+    },
+    {
+      "id": "8115395f-2caa-496b-ae07-baa1f67c9a00",
+      "content_id": "dfba817e-26de-484b-95e2-8c466e3e1c87",
+      "claim_id": "C11",
+      "claim": "Central pattern generators can generate and sustain rhythmic patterns of muscle activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Locomotion is controlled by neuronal networks of the spinal cord, referred to as central pattern generators (CPGs), which can generate and sustain rhythmic patterns of muscle activity (Arber, 2012; Gosgnach et al., 2017; Goulding, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge with supporting citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:20:02.571262Z"
+    },
+    {
+      "id": "5736841f-e9a3-4dac-b77a-76f62b229b65",
+      "content_id": "dfba817e-26de-484b-95e2-8c466e3e1c87",
+      "claim_id": "C12",
+      "claim": "The CPG for locomotion is located within the spinal cord.",
+      "claim_type": "EXPLICIT",
+      "source": "The CPG for locomotion is located within the spinal cord and is formed by genetically distinct classes of interneurons that drive motoneuron activity in coordinated sequences that cause precise muscle activation necessary for behaviors such as walking or swimming.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:20:02.571262Z"
+    },
+    {
+      "id": "c2129736-9c7f-402e-a241-ff9baceb2504",
+      "content_id": "dfba817e-26de-484b-95e2-8c466e3e1c87",
+      "claim_id": "C13",
+      "claim": "There are four broad, genetically distinct classes of spinal interneurons born in the ventral horn that are involved in motor function: V0, V1, V2 and V3 interneurons.",
+      "claim_type": "EXPLICIT",
+      "source": "There are four broad, genetically distinct classes of spinal interneurons born in the ventral horn that are involved in motor function: V0, V1, V2 and V3 interneurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about spinal interneuron classification.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:20:02.571262Z"
+    },
+    {
+      "id": "8e9cf51a-b6f4-4b3d-8ba8-cc01cf20d33c",
+      "content_id": "dfba817e-26de-484b-95e2-8c466e3e1c87",
+      "claim_id": "C14",
+      "claim": "V0 interneurons are derived from progenitors that express the developing brain homeobox protein 1 (Dbx-1).",
+      "claim_type": "EXPLICIT",
+      "source": "V0 interneurons are derived from progenitors that express the developing brain homeobox protein 1 (Dbx-1) and can be further subdivided into V0V (ventral) or V0D (dorsal) interneurons based on the expression or absence, respectively, of the postmitotic determinant homeodomain protein even-skipped homeobox 1 (Evx1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about V0 interneuron development.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:20:02.571262Z"
+    },
+    {
+      "id": "c855383f-61a7-47f2-a4e1-9def47527b71",
+      "content_id": "dfba817e-26de-484b-95e2-8c466e3e1c87",
+      "claim_id": "C15",
+      "claim": "V0 interneurons play an important role in left-right coordination.",
+      "claim_type": "EXPLICIT",
+      "source": "V0 interneurons play an important role in left-right coordination (Moran-Rivard et al., 2001; Lanuza et al., 2004; Pierani et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with supporting citations from previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:20:02.571262Z"
+    },
+    {
+      "id": "d413243b-ab91-47c8-85b8-8a93220d1b8f",
+      "content_id": "dfba817e-26de-484b-95e2-8c466e3e1c87",
+      "claim_id": "C16",
+      "claim": "Less than 10% of the V0 neurons constitute a subpopulation of interneurons identified by expression of the Paired-like homeodomain 2 (Pitx2) transcription factor.",
+      "claim_type": "EXPLICIT",
+      "source": "Less than 10% of the V0 neurons constitute a subpopulation of interneurons identified by expression of the Paired-like homeodomain 2 (Pitx2) transcription factor.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about Pitx2+ interneuron proportion.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:20:02.571262Z"
+    },
+    {
+      "id": "beb25706-c92b-4e0b-99e8-c73f66f4b95f",
+      "content_id": "dfba817e-26de-484b-95e2-8c466e3e1c87",
+      "claim_id": "C17",
+      "claim": "Pitx2+ interneurons are preferentially clustered around the central canal.",
+      "claim_type": "EXPLICIT",
+      "source": "Pitx2+ interneurons are preferentially clustered around the central canal and can be further subdivided into cholinergic (V0c) and glutamatergic (V0g) subtypes (Zagoraiou et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a supporting citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:20:02.571262Z"
+    },
+    {
+      "id": "35013fc3-25ce-4398-89fb-8deeb77c67a1",
+      "content_id": "dfba817e-26de-484b-95e2-8c466e3e1c87",
+      "claim_id": "C18",
+      "claim": "Pitx2+ interneurons can be subdivided into cholinergic (V0c) and glutamatergic (V0g) subtypes.",
+      "claim_type": "EXPLICIT",
+      "source": "Pitx2+ interneurons are preferentially clustered around the central canal and can be further subdivided into cholinergic (V0c) and glutamatergic (V0g) subtypes (Zagoraiou et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a supporting citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:20:02.571262Z"
+    },
+    {
+      "id": "4031a18f-4753-44c4-8085-883b803585d0",
+      "content_id": "dfba817e-26de-484b-95e2-8c466e3e1c87",
+      "claim_id": "C19",
+      "claim": "V0c interneurons receive excitatory inputs from spinal pathways involved in locomotion.",
+      "claim_type": "EXPLICIT",
+      "source": "V0c interneurons, receive excitatory inputs from spinal pathways involved in locomotion and innervate spinal motoneurons, forming 80\u2013100 large synapses (Zagoraiou et al., 2009), termed C-boutons, on each motoneuron (Li et al., 1995).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:20:02.571262Z"
+    },
+    {
+      "id": "c0e1386c-a475-4d97-ac78-08b1d58ee28c",
+      "content_id": "dfba817e-26de-484b-95e2-8c466e3e1c87",
+      "claim_id": "C20",
+      "claim": "V0c interneurons innervate spinal motoneurons, forming 80\u2013100 large synapses termed C-boutons on each motoneuron.",
+      "claim_type": "EXPLICIT",
+      "source": "V0c interneurons, receive excitatory inputs from spinal pathways involved in locomotion and innervate spinal motoneurons, forming 80\u2013100 large synapses (Zagoraiou et al., 2009), termed C-boutons, on each motoneuron (Li et al., 1995).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:20:02.571262Z"
+    },
+    {
+      "id": "f6557790-433e-4c50-b745-441830cbf8a9",
+      "content_id": "dfba817e-26de-484b-95e2-8c466e3e1c87",
+      "claim_id": "C21",
+      "claim": "C-boutons of brainstem motoneurons also derive from Pitx2+ interneurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently, Rozani et al demonstrated that C-boutons of brainstem motoneurons also derive from Pitx2+ interneurons (Rozani et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a supporting citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:20:02.571262Z"
+    },
+    {
+      "id": "d426f46f-9eb9-4ca1-a1ae-1648fd1bb096",
+      "content_id": "dfba817e-26de-484b-95e2-8c466e3e1c87",
+      "claim_id": "C22",
+      "claim": "V0c interneurons are not involved in left-right or extensor-flexor coordination.",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike other V0-derived interneurons, V0c interneurons are not involved in left-right or extensor-flexor coordination.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a distinguishing characteristic of V0c interneurons.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:20:02.571262Z"
+    },
+    {
+      "id": "9cb415a7-73c2-451d-b6d2-af04644e0083",
+      "content_id": "dfba817e-26de-484b-95e2-8c466e3e1c87",
+      "claim_id": "C23",
+      "claim": "V0c interneurons are important for modulating the amplitude of motor output.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, they seem to be important for modulating the amplitude of motor output.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated based on previous findings and confirmed by the current study's data.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:20:02.571262Z"
+    },
+    {
+      "id": "0c83f38d-f40d-4b2f-a05f-fee604248a44",
+      "content_id": "dfba817e-26de-484b-95e2-8c466e3e1c87",
+      "claim_id": "C24",
+      "claim": "In wild-type mice, the activation of specific hindlimb muscles is increased when animals switch from walking to swimming.",
+      "claim_type": "EXPLICIT",
+      "source": "In wild-type mice, the activation of specific hindlimb muscles is increased when animals switch from walking to swimming.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an observation from previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:20:02.571262Z"
+    },
+    {
+      "id": "b12c6f15-24cc-445d-86df-29adb0516a47",
+      "content_id": "dfba817e-26de-484b-95e2-8c466e3e1c87",
+      "claim_id": "C25",
+      "claim": "When cholinergic transmission at C-boutons is genetically perturbed, the task-dependent increase in muscle activation is significantly reduced.",
+      "claim_type": "EXPLICIT",
+      "source": "However, when cholinergic transmission at C-boutons is genetically perturbed, this task-dependent increase in muscle activation is significantly reduced (Zagoraiou et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a supporting citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:20:02.571262Z"
+    },
+    {
+      "id": "db6190c5-a49f-4f32-aef6-f2849879ea2e",
+      "content_id": "dfba817e-26de-484b-95e2-8c466e3e1c87",
+      "claim_id": "C26",
+      "claim": "V0c interneurons and their C-bouton inputs to motoneurons provide task-dependent modulation of motor output by enhancing motoneuron firing when greater muscle activation is required.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings support that V0c interneurons and their C-bouton inputs to motoneurons provide task-dependent modulation of motor output by enhancing motoneuron firing when greater muscle activation is required.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a conclusion from previous findings.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:20:02.571262Z"
+    },
+    {
+      "id": "79107a2f-36d0-493d-9a74-c46f6681c27f",
+      "content_id": "dfba817e-26de-484b-95e2-8c466e3e1c87",
+      "claim_id": "C27",
+      "claim": "M2 muscarinic receptors, Kv2.1 channels and SK channels are clustered at C-bouton synapses.",
+      "claim_type": "EXPLICIT",
+      "source": "A range of postsynaptic proteins, including M2 muscarinic receptors, Kv2.1 channels and SK channels, are clustered at C-bouton synapses (Wilson et al., 2004; Deardorff et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:20:02.571262Z"
+    },
+    {
+      "id": "4b3fbee1-31a7-4c9a-9a29-d7539ca46a95",
+      "content_id": "dfba817e-26de-484b-95e2-8c466e3e1c87",
+      "claim_id": "C28",
+      "claim": "Activation of M2 receptors in spinal cord slices increases motor output through M2 receptor-mediated inhibition of SK channels.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous work indicated that activation of M2 receptors in spinal cord slices increases motor output through M2 receptor-mediated inhibition of SK channels, which reduces the medium afterhyperpolarization (mAHP) allowing increased motoneuron firing rates (Miles et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a supporting citation from previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:20:02.571262Z"
+    },
+    {
+      "id": "b13a29ef-c2e0-45ae-91e0-b9dde4d5365a",
+      "content_id": "dfba817e-26de-484b-95e2-8c466e3e1c87",
+      "claim_id": "C29",
+      "claim": "Kv2.1 currents regulate the repetitive firing of motoneurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent work utilizing Kv2.1 channel blockers has demonstrated that Kv2.1 currents also regulate the repetitive firing of motoneurons (Romer et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a supporting citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:20:02.571262Z"
+    },
+    {
+      "id": "ad331d2b-c94a-45b8-8eea-eadb59ea0897",
+      "content_id": "dfba817e-26de-484b-95e2-8c466e3e1c87",
+      "claim_id": "C30",
+      "claim": "65.6% of L1-3 Pitx2+ interneurons were tightly phase locked with respective L1-L3 ventral root output during fictive locomotion.",
+      "claim_type": "EXPLICIT",
+      "source": "The activity of 65.6% of L1-3 interneurons was tightly phase locked with respective L1-L3 ventral root output (indicated by a significant Rayleigh test statistic, p<0.05; Figure 1d,e), while the activity of a smaller population of lower lumbar (L4-L6) interneurons was also aligned with upper lumbar output (only 31.6%, Figure 1d,e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated through Ca2+ imaging and statistical analysis shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:20:02.571262Z"
+    },
+    {
+      "id": "26b623ad-88f1-4491-bc12-d55aaabcbce1",
+      "content_id": "dfba817e-26de-484b-95e2-8c466e3e1c87",
+      "claim_id": "C31",
+      "claim": "31.6% of L4-6 Pitx2+ interneurons were phase locked with upper lumbar ventral root output during fictive locomotion.",
+      "claim_type": "EXPLICIT",
+      "source": "The activity of 65.6% of L1-3 interneurons was tightly phase locked with respective L1-L3 ventral root output (indicated by a significant Rayleigh test statistic, p<0.05; Figure 1d,e), while the activity of a smaller population of lower lumbar (L4-L6) interneurons was also aligned with upper lumbar output (only 31.6%, Figure 1d,e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated through Ca2+ imaging and statistical analysis shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:20:02.571262Z"
+    },
+    {
+      "id": "67ae778e-07b9-474c-a123-fb901d6e1692",
+      "content_id": "dfba817e-26de-484b-95e2-8c466e3e1c87",
+      "claim_id": "C32",
+      "claim": "CNO decreased the tonic firing of Pitx2+ interneurons in slices from Pitx2::Cre;tdTomato;hM4Di mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Application of CNO (1 \u00b5M) to activate the inhibitory DREADD was found to decrease the tonic firing of Pitx2+ interneurons in slices from Pitx2::Cre;tdTomato;hM4Di mice (Figure 2b, t(8)=6.08, Paired t-test, p=0.0003).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated through patch-clamp recordings shown in Figure 2b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:20:02.571262Z"
+    },
+    {
+      "id": "9dbf98ff-9c3f-4aa3-8b52-b808ce12dc74",
+      "content_id": "dfba817e-26de-484b-95e2-8c466e3e1c87",
+      "claim_id": "C33",
+      "claim": "CNO did not change spontaneous firing frequencies in slices from Pitx2::Cre;tdTomato mice that do not express the hM4Di receptor.",
+      "claim_type": "EXPLICIT",
+      "source": "In slices from Pitx2::Cre;tdTomato mice, which express the red fluorescent reporter in Pitx2+ interneurons but not the hM4Di receptor, CNO did not change spontaneous firing frequencies (Figure 2c, t(4)=0.53, Paired t-test, p=0.6228), confirming that the actions of CNO were selective to the hM4Di receptor.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated through control experiments shown in Figure 2c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:20:02.571262Z"
+    },
+    {
+      "id": "b15a9e18-9524-41b2-96b6-974c963a2feb",
+      "content_id": "dfba817e-26de-484b-95e2-8c466e3e1c87",
+      "claim_id": "C34",
+      "claim": "Inhibition of Pitx2+ interneurons during fictive locomotion did not change burst frequency.",
+      "claim_type": "EXPLICIT",
+      "source": "Inhibition of Pitx2+ interneurons during fictive locomotion did not change burst frequency (Q = 0.57, Friedman's test, p=0.7515; Figure 3c, n = 14) or duration (Q = 5.28, Friedman's test, p=0.0712; Figure 3e, n = 14) but significantly decreased burst amplitude (\u221210.7 \u00b1 1.8%, F = 4.34, Repeated measures ANOVA, p=0.0235; Figure 3g, n = 14).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated through ventral root recordings shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:20:02.571262Z"
+    },
+    {
+      "id": "0da45fa4-883e-411e-a245-83f661dbd838",
+      "content_id": "dfba817e-26de-484b-95e2-8c466e3e1c87",
+      "claim_id": "C35",
+      "claim": "Inhibition of Pitx2+ interneurons during fictive locomotion did not change burst duration.",
+      "claim_type": "EXPLICIT",
+      "source": "Inhibition of Pitx2+ interneurons during fictive locomotion did not change burst frequency (Q = 0.57, Friedman's test, p=0.7515; Figure 3c, n = 14) or duration (Q = 5.28, Friedman's test, p=0.0712; Figure 3e, n = 14) but significantly decreased burst amplitude (\u221210.7 \u00b1 1.8%, F = 4.34, Repeated measures ANOVA, p=0.0235; Figure 3g, n = 14).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated through ventral root recordings shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:20:02.571262Z"
+    },
+    {
+      "id": "87aa4a39-6e90-4542-8411-ea48ba89843d",
+      "content_id": "dfba817e-26de-484b-95e2-8c466e3e1c87",
+      "claim_id": "C36",
+      "claim": "Inhibition of Pitx2+ interneurons during fictive locomotion significantly decreased burst amplitude by 10.7%.",
+      "claim_type": "EXPLICIT",
+      "source": "Inhibition of Pitx2+ interneurons during fictive locomotion did not change burst frequency (Q = 0.57, Friedman's test, p=0.7515; Figure 3c, n = 14) or duration (Q = 5.28, Friedman's test, p=0.0712; Figure 3e, n = 14) but significantly decreased burst amplitude (\u221210.7 \u00b1 1.8%, F = 4.34, Repeated measures ANOVA, p=0.0235; Figure 3g, n = 14).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated through ventral root recordings shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:20:02.571262Z"
+    },
+    {
+      "id": "38a9fd84-1db2-43a2-803e-5121a7401b1e",
+      "content_id": "dfba817e-26de-484b-95e2-8c466e3e1c87",
+      "claim_id": "C37",
+      "claim": "When M2 receptors were blocked using methoctramine, DREADD-mediated inhibition of Pitx2+ interneurons had no significant effect on burst frequency, duration or amplitude.",
+      "claim_type": "EXPLICIT",
+      "source": "When M2 receptors were blocked using methoctramine (10 \u00b5M; Figure 3b), DREADD-mediated inhibition of Pitx2+ interneurons had no significant effect on burst frequency (F = 1.23, Repeated measures ANOVA, p=0.3203; Figure 3d, n = 8), duration (Q = 3.25, Friedman's test, p=0.2359; Figure 3f, n = 8) or amplitude (F = 0.89, Repeated measures ANOVA, p=0.4345, Figure 3h, n = 8), indicating that the observed reduction in motor output involved C-boutons derived from V0c interneurons.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated through ventral root recordings with M2 receptor blockade shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:20:02.571262Z"
+    },
+    {
+      "id": "7b767370-295d-4b2e-9637-dfa251061c16",
+      "content_id": "dfba817e-26de-484b-95e2-8c466e3e1c87",
+      "claim_id": "C38",
+      "claim": "Application of CNO to chemogenetically inhibit Pitx2+ interneurons led to a reduction in the rate of motoneuron firing during locomotor bursts.",
+      "claim_type": "EXPLICIT",
+      "source": "Application of CNO, to chemogenetically inhibit Pitx2+ interneurons, led to a clear reduction in the rate of motoneuron firing during locomotor bursts (t(3)=5.40, Paired t-test, p=0.0125; Figure 4b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated through whole-cell patch-clamp recordings shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:20:02.571262Z"
+    },
+    {
+      "id": "cb74b35d-b74d-44d3-840f-3d1ba3db632c",
+      "content_id": "dfba817e-26de-484b-95e2-8c466e3e1c87",
+      "claim_id": "C39",
+      "claim": "An outward current of 102 \u00b1 14 pA was observed in motoneurons when CNO was applied to inhibit Pitx2+ interneurons.",
+      "claim_type": "EXPLICIT",
+      "source": "We also observed an outward current in motoneurons when CNO was applied (102 \u00b1 14 pA, n = 11), which was associated with a decrease in input resistance (control: 88 \u00b1 8 M\u03a9, CNO: 68 \u00b1 4 M\u03a9, t(8)=2.455, Paired t-test, p=0.0386).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through voltage-clamp recordings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:20:02.571262Z"
+    },
+    {
+      "id": "1b999113-9f01-4720-85f4-801a15436219",
+      "content_id": "dfba817e-26de-484b-95e2-8c466e3e1c87",
+      "claim_id": "C40",
+      "claim": "Efficient ablation of Pitx2+/ChAT+ V0c interneurons was achieved in Pitx2::Cre;vAChT-stop-DTA mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Immunohistochemical analysis in both neonatal (P2; Figure 5a and P7; Figure 5b\u2013d) and young adult (P25; Figure 5e) transgenic mice demonstrated efficient ablation of Pitx2+/ChAT+ V0c interneurons in Pitx2::Cre;vAChT-stop-DTA and Pitx2::Cre;tdTomato;vAChT-stop-DTA mice (t(4)=8.42, Unpaired t-test, p=0.0011; Figure 5d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated through immunohistochemistry shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:20:02.571262Z"
+    },
+    {
+      "id": "803193c1-13d0-4bc8-9a96-3c363776f3cf",
+      "content_id": "dfba817e-26de-484b-95e2-8c466e3e1c87",
+      "claim_id": "C41",
+      "claim": "95.8% of C-bouton synapses were deleted in Pitx2::Cre;tdTomato;vAChT-stop-DTA mice.",
+      "claim_type": "EXPLICIT",
+      "source": "C-bouton counts from pictures of 50 randomly selected motoneurons from the control group (n = 3 Pitx2::Cre;tdTomato) and pictures of 50 randomly selected motoneurons from the experimental group (n = 3 Pitx2::Cre;tdTomato;vAChT-stop-DTA) revealed 381 synapses in the control tissue and 16 synapses in the experimental tissue (95.8% deletion).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through quantitative analysis of immunohistochemistry.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:20:02.571262Z"
+    },
+    {
+      "id": "3c52e818-806c-41e2-a899-65bdc2c54da1",
+      "content_id": "dfba817e-26de-484b-95e2-8c466e3e1c87",
+      "claim_id": "C42",
+      "claim": "In wild-type mice, blockade of M2 receptors via application of methoctramine reduced the amplitude of locomotor-related ventral root bursting by 16.8%.",
+      "claim_type": "EXPLICIT",
+      "source": "In wild-type mice (Figure 6a), blockade of M2 receptors via application of methoctramine reduced the amplitude of locomotor-related ventral root bursting (\u221216.8 \u00b1 4.1%, Q = 9.50, Friedman's test, p=0.0087; Figure 6g, n = 12), decreased burst frequency (\u221211.9 \u00b1 3.6%, Q = 11.62, Friedman's test, p=0.0030; Figure 6c, n = 12) and increased burst duration (27.2 \u00b1 3.4%, Q = 20.67, Friedman's test, p<0.0001; Figure 6e, n = 12), similar to recently reported effects of M2 receptor antagonists on whole cord output in neonatal mice (Nascimento et al., 2019).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated through ventral root recordings shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:20:02.571262Z"
+    },
+    {
+      "id": "5efb1d94-70a7-42ab-b3e6-80a829d88f59",
+      "content_id": "dfba817e-26de-484b-95e2-8c466e3e1c87",
+      "claim_id": "C43",
+      "claim": "In wild-type mice, blockade of M2 receptors decreased burst frequency by 11.9%.",
+      "claim_type": "EXPLICIT",
+      "source": "In wild-type mice (Figure 6a), blockade of M2 receptors via application of methoctramine reduced the amplitude of locomotor-related ventral root bursting (\u221216.8 \u00b1 4.1%, Q = 9.50, Friedman's test, p=0.0087; Figure 6g, n = 12), decreased burst frequency (\u221211.9 \u00b1 3.6%, Q = 11.62, Friedman's test, p=0.0030; Figure 6c, n = 12) and increased burst duration (27.2 \u00b1 3.4%, Q = 20.67, Friedman's test, p<0.0001; Figure 6e, n = 12), similar to recently reported effects of M2 receptor antagonists on whole cord output in neonatal mice (Nascimento et al., 2019).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated through ventral root recordings shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:20:02.571262Z"
+    },
+    {
+      "id": "34684936-238a-478f-8583-f8bd8e129f1d",
+      "content_id": "dfba817e-26de-484b-95e2-8c466e3e1c87",
+      "claim_id": "C44",
+      "claim": "In wild-type mice, blockade of M2 receptors increased burst duration by 27.2%.",
+      "claim_type": "EXPLICIT",
+      "source": "In wild-type mice (Figure 6a), blockade of M2 receptors via application of methoctramine reduced the amplitude of locomotor-related ventral root bursting (\u221216.8 \u00b1 4.1%, Q = 9.50, Friedman's test, p=0.0087; Figure 6g, n = 12), decreased burst frequency (\u221211.9 \u00b1 3.6%, Q = 11.62, Friedman's test, p=0.0030; Figure 6c, n = 12) and increased burst duration (27.2 \u00b1 3.4%, Q = 20.67, Friedman's test, p<0.0001; Figure 6e, n = 12), similar to recently reported effects of M2 receptor antagonists on whole cord output in neonatal mice (Nascimento et al., 2019).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated through ventral root recordings shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:20:02.571262Z"
+    },
+    {
+      "id": "36f27d07-4604-4f23-85f7-fc9a9cc7fa47",
+      "content_id": "dfba817e-26de-484b-95e2-8c466e3e1c87",
+      "claim_id": "C45",
+      "claim": "Methoctramine no longer had an effect on burst amplitude when V0c interneurons and C-boutons were ablated in Pitx2::Cre;vAChT-stop-DTA mice.",
+      "claim_type": "EXPLICIT",
+      "source": "However, methoctramine no longer had an effect on burst amplitude when V0c interneurons and C-boutons were ablated (2.3 \u00b1 2.2%, F = 0.32, Friedman's test, p=0.7263; Figure 6h, n = 10).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated through ventral root recordings in ablation mice shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:20:02.571262Z"
+    },
+    {
+      "id": "a117acbe-52e1-4923-ab8a-a1334402b7b2",
+      "content_id": "dfba817e-26de-484b-95e2-8c466e3e1c87",
+      "claim_id": "C46",
+      "claim": "V0c interneurons and their C-bouton contacts with motoneurons are solely responsible for the M2 muscarinic receptor-mediated modulation of the intensity of locomotor-related output.",
+      "claim_type": "EXPLICIT",
+      "source": "These data demonstrate that V0c interneurons and their C-bouton contacts with motoneurons are solely responsible for the M2 muscarinic receptor-mediated modulation of the intensity of locomotor-related output.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is concluded from the ablation experiments shown in Figure 6.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:20:02.571262Z"
+    },
+    {
+      "id": "a949a4ae-a00d-4e7d-9b91-3962576ac2e5",
+      "content_id": "dfba817e-26de-484b-95e2-8c466e3e1c87",
+      "claim_id": "C47",
+      "claim": "Application of CNO reliably increased the spontaneous firing frequency of Pitx2+ interneurons in spinal cord slices prepared from Pitx2::Cre;tdTomato;hM3Dq mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Application of CNO reliably increased the spontaneous firing frequency of Pitx2+ interneurons clustered near the central canal in spinal cord slices prepared from Pitx2::Cre;tdTomato;hM3Dq mice (t(7)=2.45, Paired t-test, p=0.0441; Figure 7a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated through patch-clamp recordings shown in Figure 7a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:20:02.571262Z"
+    },
+    {
+      "id": "5622b1f1-7677-4ca3-90ce-32925f465a73",
+      "content_id": "dfba817e-26de-484b-95e2-8c466e3e1c87",
+      "claim_id": "C48",
+      "claim": "Activation of Pitx2+ interneurons with CNO elicited an inward current of -37 \u00b1 6 pA in motoneurons from Pitx2::Cre;hM3Dq mice.",
+      "claim_type": "EXPLICIT",
+      "source": "In spinal cords from Pitx2::Cre;hM3Dq mice, activation of Pitx2+ interneurons with CNO elicited an inward current in motoneurons (\u221237 \u00b1 6 pA, n = 14; Figure 7b left) that was associated with an increase in input resistance (control: 77 \u00b1 9 M\u03a9, CNO: 90 \u00b1 12 M\u03a9, W=-46, Wilcoxon signed-rank test, p=0.0217,n = 10).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated through voltage-clamp recordings shown in Figure 7b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:20:02.571262Z"
+    },
+    {
+      "id": "db121689-454e-4e2b-959c-020e5bfc73bd",
+      "content_id": "dfba817e-26de-484b-95e2-8c466e3e1c87",
+      "claim_id": "C49",
+      "claim": "The M2 receptor antagonist methoctramine blocked the inward current induced by CNO activation of Pitx2+ interneurons.",
+      "claim_type": "EXPLICIT",
+      "source": "The M2 receptor antagonist methoctramine, blocked both this inward current (\u22122 \u00b1 4 pA, n = 9; Figure 6b, middle) and the change in input resistance (methoctramine: 82 \u00b1 13 M\u03a9, methoctramine+CNO: 89 \u00b1 16 M\u03a9, t(7)=1.68, Paired t-test, p=0.1368, n = 8), supporting that these CNO-induced effects involve V0c interneurons and their C-boutons.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated through voltage-clamp recordings with M2 receptor blockade shown in Figure 7b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:20:02.571262Z"
+    },
+    {
+      "id": "557ad039-ae7f-4fc7-a35d-cebdd18ead1a",
+      "content_id": "dfba817e-26de-484b-95e2-8c466e3e1c87",
+      "claim_id": "C50",
+      "claim": "Co-application of CNO with guangxitoxin-1E still induced an inward current of -30 \u00b1 7 pA, indicating that Kv2.1 channels are not involved in this response.",
+      "claim_type": "EXPLICIT",
+      "source": "Co-application of CNO with guangxitoxin-1E still induced an inward current (\u221230 \u00b1 7 pA, n = 10; Figure 7b, right) that was associated with an increase in input resistance (guangxitoxin-1E: 49 \u00b1 5 M\u03a9, guangxitoxin-1E and CNO: 58 \u00b1 3 M\u03a9, t(7)=3.28, Paired t-test, p=0.0135, n = 8), indicating that Kv2.1 channels are not involved in this response.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated through voltage-clamp recordings with Kv2.1 channel blockade shown in Figure 7b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:20:02.571262Z"
+    },
+    {
+      "id": "ea19196f-2543-483a-9ae2-30795edb64e0",
+      "content_id": "dfba817e-26de-484b-95e2-8c466e3e1c87",
+      "claim_id": "C51",
+      "claim": "Activation of Pitx2+ interneurons with CNO decreased motoneuron rheobase.",
+      "claim_type": "EXPLICIT",
+      "source": "Activation of Pitx2+ interneurons with CNO (Figure 7c) decreased motoneuron rheobase (t(22)=3.32, Paired t-test, p=0.0031), increased the current required to reach a depolarizing block of firing (W=-148, Wilcoxon signed-rank test, p=0.0054) and increased the maximum firing rate of motoneurons (t(23)=4.13, Paired t-test, p=0.0004).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated through current-clamp recordings shown in Figure 7c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:20:02.571262Z"
+    },
+    {
+      "id": "e6fc4077-5c54-4761-95bb-2b8597745f3e",
+      "content_id": "dfba817e-26de-484b-95e2-8c466e3e1c87",
+      "claim_id": "C52",
+      "claim": "Activation of Pitx2+ interneurons with CNO increased the current required to reach a depolarizing block of firing.",
+      "claim_type": "EXPLICIT",
+      "source": "Activation of Pitx2+ interneurons with CNO (Figure 7c) decreased motoneuron rheobase (t(22)=3.32, Paired t-test, p=0.0031), increased the current required to reach a depolarizing block of firing (W=-148, Wilcoxon signed-rank test, p=0.0054) and increased the maximum firing rate of motoneurons (t(23)=4.13, Paired t-test, p=0.0004).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated through current-clamp recordings shown in Figure 7c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:20:02.571262Z"
+    },
+    {
+      "id": "4b762371-f775-4c38-9415-07c12678c773",
+      "content_id": "dfba817e-26de-484b-95e2-8c466e3e1c87",
+      "claim_id": "C53",
+      "claim": "Activation of Pitx2+ interneurons with CNO increased the maximum firing rate of motoneurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Activation of Pitx2+ interneurons with CNO (Figure 7c) decreased motoneuron rheobase (t(22)=3.32, Paired t-test, p=0.0031), increased the current required to reach a depolarizing block of firing (W=-148, Wilcoxon signed-rank test, p=0.0054) and increased the maximum firing rate of motoneurons (t(23)=4.13, Paired t-test, p=0.0004).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated through current-clamp recordings shown in Figure 7c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:20:02.571262Z"
+    },
+    {
+      "id": "b1830e3f-a602-4d74-bbf9-a651cf817af2",
+      "content_id": "dfba817e-26de-484b-95e2-8c466e3e1c87",
+      "claim_id": "C54",
+      "claim": "When M2 receptors were blocked with methoctramine, activation of Pitx2+ interneurons had no effect on motoneuron rheobase, depolarizing block or maximum firing rates.",
+      "claim_type": "EXPLICIT",
+      "source": "When M2 receptors were blocked with methoctramine (Figure 7d) activation of Pitx2+ interneurons had no effect on motoneuron rheobase (t(10)=0.04, Paired t-test, p=0.9709), depolarizing block (t(10)=0.000, Paired t-test, p=1.0000) or maximum firing rates (W = 19.00, Wilcoxon signed-rank test, p=0.3552).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated through current-clamp recordings with M2 receptor blockade shown in Figure 7d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:20:02.571262Z"
+    },
+    {
+      "id": "d1775e41-fde5-437c-97f1-1e8ced53ba30",
+      "content_id": "dfba817e-26de-484b-95e2-8c466e3e1c87",
+      "claim_id": "C55",
+      "claim": "Activation of Pitx2+ interneurons in the presence of the Kv2.1 blocker guangxitoxin-E still reduced motoneuron rheobase but no longer affected the current required for a depolarizing block nor motoneuron maximum firing rates.",
+      "claim_type": "EXPLICIT",
+      "source": "Activation of Pitx2+ interneurons in the presence of the Kv2.1 blocker guangxitoxin-E, still reduced motoneuron rheobase (t(13)=2.47, Paired t-test, p=0.0279), but no longer affected the current required for a depolarizing block (W = \u221221.00, Wilcoxon signed-rank test, p=0.3532) nor motoneuron maximum firing rates (t(13)=0.000, Paired t-test, p=1.0000).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated through current-clamp recordings with Kv2.1 channel blockade shown in Figure 7e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:20:02.571262Z"
+    },
+    {
+      "id": "1cc2e4c7-aeb6-4f0e-82e4-a449eb701e67",
+      "content_id": "dfba817e-26de-484b-95e2-8c466e3e1c87",
+      "claim_id": "C56",
+      "claim": "Chemogenetic activation of Pitx2+ interneurons increases the firing output of motoneurons through activation of M2 receptors and subsequent regulation of Kv2.1 channels.",
+      "claim_type": "EXPLICIT",
+      "source": "These results demonstrate that chemogenetic activation of Pitx2+ interneurons increases the firing output of motoneurons through activation of M2 receptors and subsequent regulation of Kv2.1 channels that are present at C-bouton synapses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is concluded from the experiments shown in Figure 7.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:20:02.571262Z"
+    },
+    {
+      "id": "8cdc861c-ecb9-4ec7-955f-4f4073e0c5e3",
+      "content_id": "dfba817e-26de-484b-95e2-8c466e3e1c87",
+      "claim_id": "C57",
+      "claim": "Activation of Pitx2+ interneurons with CNO decreased motoneuron firing threshold measured from ramps.",
+      "claim_type": "EXPLICIT",
+      "source": "Activation of Pitx2+ interneurons with CNO decreased motoneuron firing threshold measured from ramps (W = 62.00, Wilcoxon signed-rank test, p=0.0029; Figure 8a), an effect which was blocked by methoctramine (t(3)=0.67, Paired t-test, p=0.5513; Figure 8b), but not by guangxitoxin1-E (t(5)=3.10, Paired t-test, p=0.0362; Figure 8c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated through current ramp experiments shown in Figure 8a-c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:20:02.571262Z"
+    },
+    {
+      "id": "a0b9aab2-4afa-4404-868f-758069adca37",
+      "content_id": "dfba817e-26de-484b-95e2-8c466e3e1c87",
+      "claim_id": "C58",
+      "claim": "Activation of M2 receptors at C-bouton synapses reduces the current required for motoneuron firing by hyperpolarizing the action potential threshold via Kv2.1-independent mechanisms.",
+      "claim_type": "EXPLICIT",
+      "source": "These data indicate that activation of M2 receptors at C-bouton synapses reduces the current required for motoneuron firing by hyperpolarizing the action potential threshold via Kv2.1-independent mechanisms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is concluded from the threshold experiments shown in Figure 8a-c.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:20:02.571262Z"
+    },
+    {
+      "id": "3f82e0e4-5bb5-4970-9583-9ffb308538aa",
+      "content_id": "dfba817e-26de-484b-95e2-8c466e3e1c87",
+      "claim_id": "C59",
+      "claim": "Activation of Pitx2+ interneurons with CNO increased the mAHP amplitude.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, activation of Pitx2+ interneurons with CNO increased the mAHP amplitude (W = 204, Wilcoxon signed-rank test, p=0.0010; Figure 8d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated through single action potential recordings shown in Figure 8d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:20:02.571262Z"
+    },
+    {
+      "id": "1ea02d84-b8c2-45a4-9a29-2cdc4f9e19e8",
+      "content_id": "dfba817e-26de-484b-95e2-8c466e3e1c87",
+      "claim_id": "C60",
+      "claim": "The CNO-induced increase in mAHP amplitude was blocked when CNO was co-applied with either methoctramine or guangxitoxin1-E.",
+      "claim_type": "EXPLICIT",
+      "source": "This effect was blocked when CNO was co-applied with either the M2 receptor antagonist methoctramine (t(6)=0.63, Paired t-test, p=0.5513; Figure 8e) or the Kv2.1 channel blocker guangxitoxin1-E (t(15)=1.27, Paired t-test, p=0.2208; Figure 8f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated through single action potential recordings with receptor/channel blockade shown in Figure 8e-f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:20:02.571262Z"
+    },
+    {
+      "id": "3be2bbf7-db79-4be5-bc87-5eadbad51e67",
+      "content_id": "dfba817e-26de-484b-95e2-8c466e3e1c87",
+      "claim_id": "C61",
+      "claim": "An increase in the amplitude of inter-spike AHPs in motoneurons was observed following activation of Pitx2+ interneurons with CNO.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed an increase in the amplitude of inter-spike AHPs in motoneurons following activation of Pitx2+ interneurons with CNO (t(20)=8.44, Paired t-test, p<0.0001; Figure 8g).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated through repetitive firing recordings shown in Figure 8g.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:20:02.571262Z"
+    },
+    {
+      "id": "f0e5f607-fb66-412e-83dc-3925706a34a7",
+      "content_id": "dfba817e-26de-484b-95e2-8c466e3e1c87",
+      "claim_id": "C62",
+      "claim": "The increase in inter-spike AHP amplitude was blocked by both methoctramine and guangxitoxin1-E.",
+      "claim_type": "EXPLICIT",
+      "source": "This effect was blocked by both the M2 receptor antagonist methoctramine (t(9)=1.02, Paired t-test, p=0.3354; Figure 8h) and the Kv2.1 blocker guangxitoxin1-E (t(11)=1.45, Paired t-test, p=0.1736; Figure 8i).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated through repetitive firing recordings with receptor/channel blockade shown in Figure 8h-i.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:20:02.571262Z"
+    },
+    {
+      "id": "c2bafb95-d5bf-4e2a-a28c-1238716f18c5",
+      "content_id": "dfba817e-26de-484b-95e2-8c466e3e1c87",
+      "claim_id": "C63",
+      "claim": "C-bouton activation enables motoneurons to fire during sustained and intense stimulation by increasing the inter-spike AHP.",
+      "claim_type": "EXPLICIT",
+      "source": "These data indicate that C-bouton activation enables motoneurons to fire during sustained and intense stimulation by increasing the inter-spike AHP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is concluded from the inter-spike AHP experiments shown in Figure 8g-i.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:20:02.571262Z"
+    },
+    {
+      "id": "ddb919ef-044d-40e1-9ce9-7b793058193c",
+      "content_id": "dfba817e-26de-484b-95e2-8c466e3e1c87",
+      "claim_id": "C64",
+      "claim": "Activation of Pitx2+ interneurons with CNO decreased spike half-width.",
+      "claim_type": "EXPLICIT",
+      "source": "Activation of Pitx2+ interneurons with CNO decreased spike half-width (W = 182, Wilcoxon signed-rank test, p=0.0007; Figure 8j).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated through single action potential recordings shown in Figure 8j.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:20:02.571262Z"
+    },
+    {
+      "id": "072e8e2c-7434-487c-babb-d6e822b43cad",
+      "content_id": "dfba817e-26de-484b-95e2-8c466e3e1c87",
+      "claim_id": "C65",
+      "claim": "The decrease in spike half-width was blocked by both methoctramine and guangxitoxin1-E.",
+      "claim_type": "EXPLICIT",
+      "source": "This effect was blocked by both the M2 receptor antagonist methoctramine (W=-42, Wilcoxon signed-rank test, p=0.0674; Figure 8k) and the Kv2.1 blocker guangxitoxin1-E (t(12)=1.10, Paired t-test, p=0.2951; Figure 8l).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated through single action potential recordings with receptor/channel blockade shown in Figure 8k-l.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:20:02.571262Z"
+    },
+    {
+      "id": "2ffc07bc-1908-4c45-a99e-3bd2ea7db89e",
+      "content_id": "dfba817e-26de-484b-95e2-8c466e3e1c87",
+      "claim_id": "C66",
+      "claim": "M2 receptor-mediated modulation of Kv2.1 channels at C-bouton synapses facilitates greater motoneuron firing rates by reducing spike half-width.",
+      "claim_type": "EXPLICIT",
+      "source": "These observations demonstrate that M2 receptor-mediated modulation of Kv2.1 channels at C-bouton synapses also facilitates greater motoneuron firing rates by reducing spike half-width.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is concluded from the spike half-width experiments shown in Figure 8j-l.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:20:02.571262Z"
+    },
+    {
+      "id": "27e6717a-fbc5-4f96-a0dd-252bd51bb9fe",
+      "content_id": "dfba817e-26de-484b-95e2-8c466e3e1c87",
+      "claim_id": "C67",
+      "claim": "Recruitment of V0c interneurons and their C-bouton synapses leads to activation of postsynaptic M2 receptors, which in turn regulate Kv2.1 channel function to facilitate increased and sustained motoneuron firing.",
+      "claim_type": "EXPLICIT",
+      "source": "By combining Ca2+ imaging, chemogenetic manipulation and conditional ablation of cholinergic Pitx2+ interneurons (V0c), we demonstrate that recruitment of V0c interneurons and their C-bouton synapses leads to activation of postsynaptic M2 receptors, which in turn regulate Kv2.1 channel function to facilitate increased and sustained motoneuron firing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion of the study based on all experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:20:02.571262Z"
+    },
+    {
+      "id": "315a21ef-40e2-44a5-a5c4-84fc11d79794",
+      "content_id": "dfba817e-26de-484b-95e2-8c466e3e1c87",
+      "claim_id": "C68",
+      "claim": "Activation of the V0c system results in augmented motor output that will translate into stronger muscle activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, activation of the V0c system results in augmented motor output that will translate into stronger muscle activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is concluded from the overall findings of the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:20:02.571262Z"
+    },
+    {
+      "id": "4f735dec-46a4-45db-93f8-c09f5a6b9665",
+      "content_id": "dfba817e-26de-484b-95e2-8c466e3e1c87",
+      "claim_id": "C69",
+      "claim": "V0c interneurons receive synaptic inputs from sensory pathways, supraspinal structures and CPG networks.",
+      "claim_type": "EXPLICIT",
+      "source": "V0c interneurons receive synaptic inputs from a range of sources, including sensory pathways, supraspinal structures and CPG networks (Figure 9; Zagoraiou et al., 2009; Stepien et al., 2010; Murray et al., 2018), which 'mirror' inputs received by motoneurons and are therefore relevant to desired motor output.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated with supporting citations and illustrated in Figure 9.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:20:02.571262Z"
+    },
+    {
+      "id": "8d40c596-e61e-4441-9b18-17a33407295c",
+      "content_id": "dfba817e-26de-484b-95e2-8c466e3e1c87",
+      "claim_id": "C70",
+      "claim": "The C-bouton system is less active during regular motor tasks such as walking but is particularly important during locomotor behaviors that require increased muscle activation such as swimming.",
+      "claim_type": "EXPLICIT",
+      "source": "The C-bouton system seems to be less active during regular motor tasks such as walking but is particularly important during locomotor behaviors that require increased muscle activation such as swimming (Zagoraiou et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a supporting citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:20:02.571262Z"
+    },
+    {
+      "id": "dd0a7b81-6b02-4d6e-a578-9c3aff764317",
+      "content_id": "dfba817e-26de-484b-95e2-8c466e3e1c87",
+      "claim_id": "C71",
+      "claim": "V0c interneurons represent one functionally distinct neuromodulatory module devoted to task-dependent control of the intensity of motor output.",
+      "claim_type": "EXPLICIT",
+      "source": "We provide evidence in support of a modular architecture for spinal cholinergic systems, in line with that recently proposed for the locus coerleus (Chandler et al., 2019; Totah et al., 2018), where V0c interneurons represent one functionally distinct neuromodulatory module devoted to task-dependent control of the intensity of motor output.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is concluded from the study's findings with reference to similar organizational principles in other systems.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:20:02.571262Z"
+    },
+    {
+      "id": "573e884c-3e83-4213-92cc-8b5b37eff76b",
+      "content_id": "dfba817e-26de-484b-95e2-8c466e3e1c87",
+      "claim_id": "C72",
+      "claim": "The majority of Pitx2+ interneurons are tonically active at rest.",
+      "claim_type": "EXPLICIT",
+      "source": "As previously reported, the majority of Pitx2+ interneurons were tonically active at rest (Zagoraiou et al., 2009; Figure 2b,c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated with a supporting citation and shown in Figure 2.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:20:02.571262Z"
+    },
+    {
+      "id": "80b0ed4d-192b-405d-849a-f46c8105d546",
+      "content_id": "dfba817e-26de-484b-95e2-8c466e3e1c87",
+      "claim_id": "C73",
+      "claim": "Pitx2+ interneurons are distinctively clustered around the central canal.",
+      "claim_type": "EXPLICIT",
+      "source": "Pitx2+ cells express both the hM4Di inhibitory receptor and the tdTomato red fluorescent reporter, which allowed them to be identified for single-cell electrophysiology (Figure 2a). Pitx2+ interneurons, which are distinctively clustered around the central canal, were targeted for recordings (Zagoraiou et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a supporting citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:20:02.571262Z"
+    },
+    {
+      "id": "72fbaf1d-3d65-4d0a-b4ef-db2e7e2bc5d0",
+      "content_id": "dfba817e-26de-484b-95e2-8c466e3e1c87",
+      "claim_id": "C74",
+      "claim": "M2 receptors are not only juxtaposed to C-boutons but are also widely distributed throughout motoneuron somata.",
+      "claim_type": "EXPLICIT",
+      "source": "Given that M2 receptors are not only juxtaposed to C-boutons but are also widely distributed throughout motoneuron somata (Wilson et al., 2004; Miles et al., 2007; Hellstr\u00f6m et al., 2003; Welton et al., 1999) and on spinal interneurons (H\u00f6glund and Baghdoyan, 1997), it is likely that additional, as yet genetically undefined, neuronal sources of intraspinal acetylcholine (Bertrand and Cazalets, 2011; Gillberg et al., 1988; Gillberg et al., 1990; Sherriff and Henderson, 1994) are responsible for these M2 receptor-dependent changes in the rhythm and pattern of locomotor output.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:20:02.571262Z"
+    },
+    {
+      "id": "781b881e-6653-4ef3-8ed8-7282968cd1e7",
+      "content_id": "dfba817e-26de-484b-95e2-8c466e3e1c87",
+      "claim_id": "C75",
+      "claim": "There are additional, as yet genetically undefined, neuronal sources of intraspinal acetylcholine.",
+      "claim_type": "EXPLICIT",
+      "source": "Given that M2 receptors are not only juxtaposed to C-boutons but are also widely distributed throughout motoneuron somata (Wilson et al., 2004; Miles et al., 2007; Hellstr\u00f6m et al., 2003; Welton et al., 1999) and on spinal interneurons (H\u00f6glund and Baghdoyan, 1997), it is likely that additional, as yet genetically undefined, neuronal sources of intraspinal acetylcholine (Bertrand and Cazalets, 2011; Gillberg et al., 1988; Gillberg et al., 1990; Sherriff and Henderson, 1994) are responsible for these M2 receptor-dependent changes in the rhythm and pattern of locomotor output.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with supporting citations.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:20:02.571262Z"
+    },
+    {
+      "id": "35a368aa-6684-4b8e-9f57-721d8ae984eb",
+      "content_id": "dfba817e-26de-484b-95e2-8c466e3e1c87",
+      "claim_id": "C76",
+      "claim": "SK channel clusters preferentially appose large cholinergic C-bouton terminals.",
+      "claim_type": "EXPLICIT",
+      "source": "SK channel clusters preferentially appose large cholinergic C-bouton terminals (Deardorff, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a supporting citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:20:02.571262Z"
+    },
+    {
+      "id": "f5b939bd-4a38-49d9-a593-bbe379f56a78",
+      "content_id": "dfba817e-26de-484b-95e2-8c466e3e1c87",
+      "claim_id": "C77",
+      "claim": "SK channels are distributed throughout laminae VII and IX.",
+      "claim_type": "EXPLICIT",
+      "source": "However, SK channels are also distributed throughout laminae VII and IX, and could therefore be present on more distal motoneuron dendrites where they might be subject to modulation by as yet uncharacterized, Pitx2-negative, populations of cholinergic spinal interneurons (Bertrand and Cazalets, 2011; Gillberg et al., 1988; Gillberg et al., 1990; Sherriff and Henderson, 1994; Deardorff, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:20:02.571262Z"
+    },
+    {
+      "id": "082dbf2b-0b04-4097-a854-9bbef92f84e1",
+      "content_id": "dfba817e-26de-484b-95e2-8c466e3e1c87",
+      "claim_id": "C78",
+      "claim": "Dephosphorylation of Kv2.1 channels in response to prolonged excitatory drive causes channel delustering in motoneurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Kv2.1 dephosphorylation in response to prolonged excitatory drive is thought to cause channel delustering in motoneurons, whilst reduced activity can increase Kv2.1 channel clustering (Romer et al., 2019; Romer et al., 2016; Romer et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:20:02.571262Z"
+    },
+    {
+      "id": "b6407185-50d1-41c1-ae56-50afd27903f0",
+      "content_id": "dfba817e-26de-484b-95e2-8c466e3e1c87",
+      "claim_id": "C79",
+      "claim": "In motoneurons, declustering of Kv2.1 channels occurs in response to increased glutamatergic, but not cholinergic, input.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, in motoneurons, declustering occurs in response to increased glutamatergic, but not cholinergic, input (Romer et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a supporting citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:20:02.571262Z"
+    },
+    {
+      "id": "620851b4-2767-4fd3-a338-037849337115",
+      "content_id": "dfba817e-26de-484b-95e2-8c466e3e1c87",
+      "claim_id": "C80",
+      "claim": "Activation of C-boutons has been proposed to maintain Kv2.1 clusters and promote repetitive firing at physiological activity levels.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, activation of C-boutons should not lead to declustering of Kv2.1 channels and has in fact been proposed to maintain Kv2.1 clusters and promote repetitive firing at physiological activity levels (Romer et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a supporting citation.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:20:02.571262Z"
+    },
+    {
+      "id": "3ab9b373-83ab-437b-9c53-dbfe16f0dd45",
+      "content_id": "dfba817e-26de-484b-95e2-8c466e3e1c87",
+      "claim_id": "C81",
+      "claim": "Dephosphorylation of Kv2.1 channels leads to a hyperpolarizing shift in channel activation and inactivation properties in hippocampal neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Although data are lacking for motoneurons, dephosphorylation of Kv2.1 channels leads to a hyperpolarizing shift in channel activation and inactivation properties in hippocampal neurons, which is thought to suppress action potential firing frequency (Mohapatra and Trimmer, 2006; Mohapatra et al., 2009; Misonou et al., 2005; Park et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:20:02.571262Z"
+    },
+    {
+      "id": "55e659ae-15d3-4d47-815c-76ef167bfecc",
+      "content_id": "dfba817e-26de-484b-95e2-8c466e3e1c87",
+      "claim_id": "C82",
+      "claim": "The overall pre- and post-synaptic components of C-bouton synapses, including M2 receptors and Kv2.1 channels, appear to remain consistent from early neonatal stages into adulthood.",
+      "claim_type": "EXPLICIT",
+      "source": "The overall pre- and post-synaptic components of C-bouton synapses, including M2 receptors and Kv2.1 channels, appear to remain consistent from early neonatal stages into adulthood (Zagoraiou et al., 2009; Wilson et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:20:02.571262Z"
+    },
+    {
+      "id": "4a73d465-7a2e-443c-a955-ae7dc149b3d1",
+      "content_id": "dfba817e-26de-484b-95e2-8c466e3e1c87",
+      "claim_id": "C83",
+      "claim": "Postnatal maturation of C-boutons involves increased clustering of Kv2.1 channels and M2 receptors along with an increase in the size of C-boutons until motor networks become functionally mature (~P15).",
+      "claim_type": "EXPLICIT",
+      "source": "Rather than changes in the major components, postnatal maturation of C-boutons involves increased clustering of Kv2.1 channels and M2 receptors along with an increase in the size of C-boutons until motor networks become functionally mature (~P15) (Wilson et al., 2004; Phelps et al., 1984; Wetts and Vaughn, 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:20:02.571262Z"
+    },
+    {
+      "id": "35d023e1-4c4d-4e95-b300-63069c4a8ca7",
+      "content_id": "dfba817e-26de-484b-95e2-8c466e3e1c87",
+      "claim_id": "C84",
+      "claim": "Genetic perturbation of C-boutons in adult mice impairs the ability of motoneurons to increase muscle activation in response to behavioral demands.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the fact that genetic perturbation of C-boutons in adult mice impairs the ability of motoneurons to increase muscle activation in response to behavioral demands (Zagoraiou et al., 2009), supports a consistency in the cellular effects of the C-bouton system into adulthood.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a supporting citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:20:02.571262Z"
+    },
+    {
+      "id": "dd784254-7328-496c-af14-9f0ccb35a746",
+      "content_id": "dfba817e-26de-484b-95e2-8c466e3e1c87",
+      "claim_id": "C85",
+      "claim": "Recordings from adult motoneurons within in vivo preparations have shown state-dependent changes in motoneuron properties including a decrease in AHP amplitude, hyperpolarization of action potential threshold, and a small increase in action potential half-width.",
+      "claim_type": "EXPLICIT",
+      "source": "Recordings from adult motoneurons within in vivo preparations, and associated modelling studies, have shown state-dependent changes in motoneuron properties including a decrease in AHP amplitude, hyperpolarization of action potential threshold, and a small increase in action potential half-width (Power et al., 2010; MacDonell et al., 2015; Krawitz et al., 2001; Brownstone et al., 1992; Dai et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:20:02.571262Z"
+    },
+    {
+      "id": "10bfb9f4-5653-4092-8d65-1ab8d233b196",
+      "content_id": "dfba817e-26de-484b-95e2-8c466e3e1c87",
+      "claim_id": "C86",
+      "claim": "At 50 nM concentration, guangxitoxin-1E is thought to be highly selective for Kv2.1 channels, with limited impact on other channels including Kv4 channels.",
+      "claim_type": "EXPLICIT",
+      "source": "At this concentration, guangxitoxin-1E is thought to be highly selective for Kv2.1 channels, with limited impact on other channels including Kv4 channels (Herrington et al., 2006; Liu and Bean, 2014; Fletcher et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:20:02.571262Z"
+    },
+    {
+      "id": "fa6c8be3-2ed7-4b1a-b265-6dc291a37f2b",
+      "content_id": "dfba817e-26de-484b-95e2-8c466e3e1c87",
+      "claim_id": "C87",
+      "claim": "Kv2 channels permit greater motoneuron firing frequencies by maintaining hyperpolarized inter-spike membrane potentials.",
+      "claim_type": "EXPLICIT",
+      "source": "This Kv2.1 channel-dependent mechanism is also supported by recent work in rat lumbar motoneurons, which has demonstrated that Kv2 channels permit greater motoneuron firing frequencies by maintaining hyperpolarized inter-spike membrane potentials (Romer et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a supporting citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:20:02.571262Z"
+    },
+    {
+      "id": "64346c22-3220-43e8-ab8c-2b860ff6411d",
+      "content_id": "dfba817e-26de-484b-95e2-8c466e3e1c87",
+      "claim_id": "C88",
+      "claim": "Blockade of Kv2 channels increases action potential half-width and slows motoneuron firing.",
+      "claim_type": "EXPLICIT",
+      "source": "This is again consistent with recent reports of increased action potential half-width and a slowing of motoneuron firing when Kv2 channels are blocked (Romer et al., 2019; Fletcher et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:20:02.571262Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "f79f86b5-c3ca-47fb-a508-f3599a1c76b2",
+      "content_id": "dfba817e-26de-484b-95e2-8c466e3e1c87",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Pitx2+ interneurons are rhythmically active during fictive locomotion, with 65.6% of L1-3 interneurons and 31.6% of L4-6 interneurons phase-locked to ventral root output.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C30, and C31 are supported by Ca2+ imaging data (Figure 1) with appropriate statistical analysis (Rayleigh test). The methodology is sound, sample sizes are reported (32 upper lumbar, 19 lower lumbar interneurons from 6 hemisected cords, 3 mice), and the phase-locking analysis is appropriate for assessing rhythmic coupling.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:20:02.571262Z"
+    },
+    {
+      "id": "0b5228de-1ee3-4dac-91f6-b52e7e857a6a",
+      "content_id": "dfba817e-26de-484b-95e2-8c466e3e1c87",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "CNO application via inhibitory DREADD (hM4Di) effectively and selectively decreased tonic firing of Pitx2+ interneurons.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32 and C33 demonstrate proper validation of the DREADD approach with appropriate controls. The effect is statistically significant (p=0.0003) in DREADD-expressing mice and absent in controls (p=0.6228), confirming specificity. Sample sizes are adequate (n=9 and n=5).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:20:02.571262Z"
+    },
+    {
+      "id": "e10de049-c28c-444b-a903-8a62fc97b303",
+      "content_id": "dfba817e-26de-484b-95e2-8c466e3e1c87",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Chemogenetic inhibition of Pitx2+ interneurons during fictive locomotion selectively reduces burst amplitude by 10.7% without affecting frequency or duration, and this effect is M2 receptor-dependent.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C38 are well-supported by ventral root recordings (Figure 3) and motoneuron recordings (Figure 4) with appropriate statistical tests and adequate sample sizes (n=14 for ventral root, n=8 with methoctramine). The M2 receptor dependency is demonstrated by loss of effect with methoctramine blockade. The specificity is confirmed by control experiments showing no CNO effect in non-DREADD mice.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:20:02.571262Z"
+    },
+    {
+      "id": "bbadff96-b533-4ace-9af5-b4100e36661d",
+      "content_id": "dfba817e-26de-484b-95e2-8c466e3e1c87",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Genetic ablation of V0c interneurons in Pitx2::Cre;vAChT-stop-DTA mice was highly efficient, achieving 95.8% deletion of C-bouton synapses.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40 and C41 are supported by immunohistochemical analysis across multiple developmental stages (P2, P7, P25) with quantitative assessment. The statistical significance (p=0.0011) and high deletion efficiency (95.8%) are well-documented. The methodology includes appropriate controls and adequate sample sizes (n=3 per group, 50 motoneurons analyzed per group).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:20:02.571262Z"
+    },
+    {
+      "id": "ef2e5741-2d64-4ff0-8a13-d712c12accac",
+      "content_id": "dfba817e-26de-484b-95e2-8c466e3e1c87",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "V0c interneurons and C-boutons are solely responsible for M2 receptor-mediated modulation of locomotor output amplitude, as demonstrated by loss of methoctramine effect on burst amplitude in ablation mice while effects on frequency and duration persist.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C46 are supported by systematic comparison of methoctramine effects in wild-type versus ablation mice (Figure 6). The selective loss of amplitude modulation (p=0.7263 in ablation vs p=0.0087 in WT) while frequency and duration effects persist demonstrates specificity. Sample sizes are adequate (n=12 WT, n=10 ablation) with appropriate statistical tests.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:20:02.571262Z"
+    },
+    {
+      "id": "47acfb63-9630-4fdc-a460-13584ed7ffed",
+      "content_id": "dfba817e-26de-484b-95e2-8c466e3e1c87",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Chemogenetic activation of Pitx2+ interneurons induces an M2 receptor-dependent inward current in motoneurons that is independent of Kv2.1 channels.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47-C50 are supported by patch-clamp recordings (Figure 7a-b) with appropriate pharmacological controls. The M2 receptor dependency is confirmed by methoctramine blockade, and Kv2.1 independence is shown by persistence with guangxitoxin-1E. Sample sizes are adequate (n=8-14) with appropriate statistical tests showing significant effects.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:20:02.571262Z"
+    },
+    {
+      "id": "9ecd7322-7fcb-4636-8ce5-67be8997637d",
+      "content_id": "dfba817e-26de-484b-95e2-8c466e3e1c87",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Activation of Pitx2+ interneurons increases motoneuron excitability through M2 receptor-mediated regulation of Kv2.1 channels, decreasing rheobase, increasing depolarizing block threshold, and increasing maximum firing rate.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C56 are supported by systematic current-clamp experiments (Figure 7c-e) with appropriate pharmacological dissection. The M2 receptor dependency is confirmed by methoctramine blockade, and Kv2.1 involvement in depolarizing block and maximum firing (but not rheobase) is demonstrated by guangxitoxin-1E experiments. Sample sizes are adequate (n=11-23) with appropriate statistical tests.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:20:02.571262Z"
+    },
+    {
+      "id": "854f3215-9803-48c1-88cc-14f249fdd377",
+      "content_id": "dfba817e-26de-484b-95e2-8c466e3e1c87",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Activation of M2 receptors at C-boutons hyperpolarizes action potential threshold through Kv2.1-independent mechanisms.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57-C58 are supported by current ramp experiments (Figure 8a-c) showing threshold hyperpolarization that is blocked by methoctramine but not guangxitoxin-1E. This demonstrates M2 receptor dependency and Kv2.1 independence. Sample sizes are adequate (n=4-12) with appropriate statistical tests.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:20:02.571262Z"
+    },
+    {
+      "id": "d45bb283-7abd-49e8-9c29-dea670f0eff0",
+      "content_id": "dfba817e-26de-484b-95e2-8c466e3e1c87",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Activation of Pitx2+ interneurons increases mAHP amplitude through M2 receptor and Kv2.1 channel-dependent mechanisms.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59-C60 are supported by single action potential recordings (Figure 8d-f) showing increased mAHP that is blocked by both methoctramine and guangxitoxin-1E. This finding is noted as surprising and contrasts with previous literature expectations. Sample sizes are adequate (n=7-22) with appropriate statistical tests.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:20:02.571262Z"
+    },
+    {
+      "id": "a0be9882-216f-44a2-aa67-5739c9187abe",
+      "content_id": "dfba817e-26de-484b-95e2-8c466e3e1c87",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "C-bouton activation increases inter-spike AHP amplitude through M2 receptor and Kv2.1 channel-dependent mechanisms, enabling sustained motoneuron firing during intense stimulation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C61-C63 are supported by repetitive firing recordings (Figure 8g-i) showing increased inter-spike AHP that is blocked by both methoctramine and guangxitoxin-1E. The interpretation that this enables sustained firing is reasonable given the biophysical role of inter-spike AHP. Sample sizes are adequate (n=10-21) with appropriate statistical tests.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:20:02.571262Z"
+    },
+    {
+      "id": "d30daff5-47d1-402b-acd6-8bd35b8a3134",
+      "content_id": "dfba817e-26de-484b-95e2-8c466e3e1c87",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "M2 receptor-mediated modulation of Kv2.1 channels reduces spike half-width, facilitating greater motoneuron firing rates.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C64-C66 are supported by single action potential recordings (Figure 8j-l) showing decreased spike half-width that is blocked by both methoctramine and guangxitoxin-1E. The mechanistic link to increased firing rates is consistent with biophysical principles. Sample sizes are adequate (n=11-20) with appropriate statistical tests.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:20:02.571262Z"
+    },
+    {
+      "id": "2ac132ee-0e48-4cc5-95c6-6dcf16890c24",
+      "content_id": "dfba817e-26de-484b-95e2-8c466e3e1c87",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "V0c interneurons modulate motor output through a pathway involving M2 receptor activation and Kv2.1 channel regulation, resulting in increased and sustained motoneuron firing that translates to stronger muscle activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C67-C68 represent the main conclusion integrating all experimental findings. The pathway from V0c activation through M2 receptors to Kv2.1 modulation is well-supported by the combined Ca2+ imaging, chemogenetic, ablation, and electrophysiological data. The inference to muscle activity is reasonable though not directly tested in this study.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:20:02.571262Z"
+    },
+    {
+      "id": "f12f7cb8-6b43-4e1b-bba7-384afe869ce7",
+      "content_id": "dfba817e-26de-484b-95e2-8c466e3e1c87",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Background knowledge about spinal motor circuits, V0 interneurons, Pitx2+ interneurons, and C-boutons is established from prior literature.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C2 and C10-C29 represent established knowledge from prior literature, appropriately cited. These provide necessary context for the current study and are not novel findings. The citations appear appropriate and the knowledge claims are consistent with the field.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:20:02.571262Z"
+    },
+    {
+      "id": "bc1e755d-2320-4e3f-a90c-bff991c345bb",
+      "content_id": "dfba817e-26de-484b-95e2-8c466e3e1c87",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "V0c interneurons represent a functionally distinct neuromodulatory module that receives diverse inputs and provides task-dependent control of motor output intensity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C69-C71 integrate current findings with prior literature to propose a modular architecture for spinal cholinergic systems. The input diversity (C69) and task-dependent activation (C70) are supported by citations. The modular architecture concept (C71) is a reasonable synthesis supported by the current data showing specificity of V0c function.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:20:02.571262Z"
+    },
+    {
+      "id": "3c82f2b9-608a-4615-92c5-e014aad22c6b",
+      "content_id": "dfba817e-26de-484b-95e2-8c466e3e1c87",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Discussion of prior work on Pitx2+ interneuron properties, M2 receptor distribution, SK and Kv2.1 channel function, C-bouton development, and limitations of neonatal preparations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C72-C88 represent discussion points integrating current findings with prior literature. These are appropriately cited and provide important context for interpreting the results, including discussion of potential mechanisms (C78-C81), developmental considerations (C82-C84), and methodological limitations (C85). The discussion is balanced and acknowledges uncertainties.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:20:02.571262Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "96c19b7d-9fa5-4b63-9330-1f9cc0efee1b",
+      "result_id": "f79f86b5-c3ca-47fb-a508-f3599a1c76b2"
+    },
+    {
+      "claim_id": "ad331d2b-c94a-45b8-8eea-eadb59ea0897",
+      "result_id": "f79f86b5-c3ca-47fb-a508-f3599a1c76b2"
+    },
+    {
+      "claim_id": "26b623ad-88f1-4491-bc12-d55aaabcbce1",
+      "result_id": "f79f86b5-c3ca-47fb-a508-f3599a1c76b2"
+    },
+    {
+      "claim_id": "67ae778e-07b9-474c-a123-fb901d6e1692",
+      "result_id": "0b5228de-1ee3-4dac-91f6-b52e7e857a6a"
+    },
+    {
+      "claim_id": "9dbf98ff-9c3f-4aa3-8b52-b808ce12dc74",
+      "result_id": "0b5228de-1ee3-4dac-91f6-b52e7e857a6a"
+    },
+    {
+      "claim_id": "6fa1ad10-97b7-44b8-9007-07cd89dac788",
+      "result_id": "e10de049-c28c-444b-a903-8a62fc97b303"
+    },
+    {
+      "claim_id": "b15a9e18-9524-41b2-96b6-974c963a2feb",
+      "result_id": "e10de049-c28c-444b-a903-8a62fc97b303"
+    },
+    {
+      "claim_id": "0da45fa4-883e-411e-a245-83f661dbd838",
+      "result_id": "e10de049-c28c-444b-a903-8a62fc97b303"
+    },
+    {
+      "claim_id": "87aa4a39-6e90-4542-8411-ea48ba89843d",
+      "result_id": "e10de049-c28c-444b-a903-8a62fc97b303"
+    },
+    {
+      "claim_id": "38a9fd84-1db2-43a2-803e-5121a7401b1e",
+      "result_id": "e10de049-c28c-444b-a903-8a62fc97b303"
+    },
+    {
+      "claim_id": "7b767370-295d-4b2e-9637-dfa251061c16",
+      "result_id": "e10de049-c28c-444b-a903-8a62fc97b303"
+    },
+    {
+      "claim_id": "1b999113-9f01-4720-85f4-801a15436219",
+      "result_id": "bbadff96-b533-4ace-9af5-b4100e36661d"
+    },
+    {
+      "claim_id": "803193c1-13d0-4bc8-9a96-3c363776f3cf",
+      "result_id": "bbadff96-b533-4ace-9af5-b4100e36661d"
+    },
+    {
+      "claim_id": "ad62c83d-8bc9-48e3-abf7-48f582afb5b4",
+      "result_id": "ef2e5741-2d64-4ff0-8a13-d712c12accac"
+    },
+    {
+      "claim_id": "3c52e818-806c-41e2-a899-65bdc2c54da1",
+      "result_id": "ef2e5741-2d64-4ff0-8a13-d712c12accac"
+    },
+    {
+      "claim_id": "5efb1d94-70a7-42ab-b3e6-80a829d88f59",
+      "result_id": "ef2e5741-2d64-4ff0-8a13-d712c12accac"
+    },
+    {
+      "claim_id": "34684936-238a-478f-8583-f8bd8e129f1d",
+      "result_id": "ef2e5741-2d64-4ff0-8a13-d712c12accac"
+    },
+    {
+      "claim_id": "36f27d07-4604-4f23-85f7-fc9a9cc7fa47",
+      "result_id": "ef2e5741-2d64-4ff0-8a13-d712c12accac"
+    },
+    {
+      "claim_id": "a117acbe-52e1-4923-ab8a-a1334402b7b2",
+      "result_id": "ef2e5741-2d64-4ff0-8a13-d712c12accac"
+    },
+    {
+      "claim_id": "a949a4ae-a00d-4e7d-9b91-3962576ac2e5",
+      "result_id": "47acfb63-9630-4fdc-a460-13584ed7ffed"
+    },
+    {
+      "claim_id": "5622b1f1-7677-4ca3-90ce-32925f465a73",
+      "result_id": "47acfb63-9630-4fdc-a460-13584ed7ffed"
+    },
+    {
+      "claim_id": "db121689-454e-4e2b-959c-020e5bfc73bd",
+      "result_id": "47acfb63-9630-4fdc-a460-13584ed7ffed"
+    },
+    {
+      "claim_id": "557ad039-ae7f-4fc7-a35d-cebdd18ead1a",
+      "result_id": "47acfb63-9630-4fdc-a460-13584ed7ffed"
+    },
+    {
+      "claim_id": "77dfaf22-5d81-4be5-ab7e-928a03192eb8",
+      "result_id": "9ecd7322-7fcb-4636-8ce5-67be8997637d"
+    },
+    {
+      "claim_id": "47232a98-479b-4977-a32a-af0691c62aac",
+      "result_id": "9ecd7322-7fcb-4636-8ce5-67be8997637d"
+    },
+    {
+      "claim_id": "ea19196f-2543-483a-9ae2-30795edb64e0",
+      "result_id": "9ecd7322-7fcb-4636-8ce5-67be8997637d"
+    },
+    {
+      "claim_id": "e6fc4077-5c54-4761-95bb-2b8597745f3e",
+      "result_id": "9ecd7322-7fcb-4636-8ce5-67be8997637d"
+    },
+    {
+      "claim_id": "4b762371-f775-4c38-9415-07c12678c773",
+      "result_id": "9ecd7322-7fcb-4636-8ce5-67be8997637d"
+    },
+    {
+      "claim_id": "b1830e3f-a602-4d74-bbf9-a651cf817af2",
+      "result_id": "9ecd7322-7fcb-4636-8ce5-67be8997637d"
+    },
+    {
+      "claim_id": "d1775e41-fde5-437c-97f1-1e8ced53ba30",
+      "result_id": "9ecd7322-7fcb-4636-8ce5-67be8997637d"
+    },
+    {
+      "claim_id": "1cc2e4c7-aeb6-4f0e-82e4-a449eb701e67",
+      "result_id": "9ecd7322-7fcb-4636-8ce5-67be8997637d"
+    },
+    {
+      "claim_id": "8cdc861c-ecb9-4ec7-955f-4f4073e0c5e3",
+      "result_id": "854f3215-9803-48c1-88cc-14f249fdd377"
+    },
+    {
+      "claim_id": "a0b9aab2-4afa-4404-868f-758069adca37",
+      "result_id": "854f3215-9803-48c1-88cc-14f249fdd377"
+    },
+    {
+      "claim_id": "3f82e0e4-5bb5-4970-9583-9ffb308538aa",
+      "result_id": "d45bb283-7abd-49e8-9c29-dea670f0eff0"
+    },
+    {
+      "claim_id": "1ea02d84-b8c2-45a4-9a29-2cdc4f9e19e8",
+      "result_id": "d45bb283-7abd-49e8-9c29-dea670f0eff0"
+    },
+    {
+      "claim_id": "fffca4b7-a3c6-4ddb-ae12-6f4b5bdb89f6",
+      "result_id": "a0be9882-216f-44a2-aa67-5739c9187abe"
+    },
+    {
+      "claim_id": "3be2bbf7-db79-4be5-bc87-5eadbad51e67",
+      "result_id": "a0be9882-216f-44a2-aa67-5739c9187abe"
+    },
+    {
+      "claim_id": "f0e5f607-fb66-412e-83dc-3925706a34a7",
+      "result_id": "a0be9882-216f-44a2-aa67-5739c9187abe"
+    },
+    {
+      "claim_id": "c2bafb95-d5bf-4e2a-a28c-1238716f18c5",
+      "result_id": "a0be9882-216f-44a2-aa67-5739c9187abe"
+    },
+    {
+      "claim_id": "57a0a5b0-6a64-412c-86c2-16de17b6e741",
+      "result_id": "d30daff5-47d1-402b-acd6-8bd35b8a3134"
+    },
+    {
+      "claim_id": "ddb919ef-044d-40e1-9ce9-7b793058193c",
+      "result_id": "d30daff5-47d1-402b-acd6-8bd35b8a3134"
+    },
+    {
+      "claim_id": "072e8e2c-7434-487c-babb-d6e822b43cad",
+      "result_id": "d30daff5-47d1-402b-acd6-8bd35b8a3134"
+    },
+    {
+      "claim_id": "2ffc07bc-1908-4c45-a99e-3bd2ea7db89e",
+      "result_id": "d30daff5-47d1-402b-acd6-8bd35b8a3134"
+    },
+    {
+      "claim_id": "27e6717a-fbc5-4f96-a0dd-252bd51bb9fe",
+      "result_id": "2ac132ee-0e48-4cc5-95c6-6dcf16890c24"
+    },
+    {
+      "claim_id": "315a21ef-40e2-44a5-a5c4-84fc11d79794",
+      "result_id": "2ac132ee-0e48-4cc5-95c6-6dcf16890c24"
+    },
+    {
+      "claim_id": "f97532a6-1082-4ecf-bf40-4f54836a35c7",
+      "result_id": "f12f7cb8-6b43-4e1b-bba7-384afe869ce7"
+    },
+    {
+      "claim_id": "2c8e3706-b45b-4e85-8437-b5d13f1923a9",
+      "result_id": "f12f7cb8-6b43-4e1b-bba7-384afe869ce7"
+    },
+    {
+      "claim_id": "6af3dd3c-7a07-4c01-97f4-5f7fd3020622",
+      "result_id": "f12f7cb8-6b43-4e1b-bba7-384afe869ce7"
+    },
+    {
+      "claim_id": "8115395f-2caa-496b-ae07-baa1f67c9a00",
+      "result_id": "f12f7cb8-6b43-4e1b-bba7-384afe869ce7"
+    },
+    {
+      "claim_id": "5736841f-e9a3-4dac-b77a-76f62b229b65",
+      "result_id": "f12f7cb8-6b43-4e1b-bba7-384afe869ce7"
+    },
+    {
+      "claim_id": "c2129736-9c7f-402e-a241-ff9baceb2504",
+      "result_id": "f12f7cb8-6b43-4e1b-bba7-384afe869ce7"
+    },
+    {
+      "claim_id": "8e9cf51a-b6f4-4b3d-8ba8-cc01cf20d33c",
+      "result_id": "f12f7cb8-6b43-4e1b-bba7-384afe869ce7"
+    },
+    {
+      "claim_id": "c855383f-61a7-47f2-a4e1-9def47527b71",
+      "result_id": "f12f7cb8-6b43-4e1b-bba7-384afe869ce7"
+    },
+    {
+      "claim_id": "d413243b-ab91-47c8-85b8-8a93220d1b8f",
+      "result_id": "f12f7cb8-6b43-4e1b-bba7-384afe869ce7"
+    },
+    {
+      "claim_id": "beb25706-c92b-4e0b-99e8-c73f66f4b95f",
+      "result_id": "f12f7cb8-6b43-4e1b-bba7-384afe869ce7"
+    },
+    {
+      "claim_id": "35013fc3-25ce-4398-89fb-8deeb77c67a1",
+      "result_id": "f12f7cb8-6b43-4e1b-bba7-384afe869ce7"
+    },
+    {
+      "claim_id": "4031a18f-4753-44c4-8085-883b803585d0",
+      "result_id": "f12f7cb8-6b43-4e1b-bba7-384afe869ce7"
+    },
+    {
+      "claim_id": "c0e1386c-a475-4d97-ac78-08b1d58ee28c",
+      "result_id": "f12f7cb8-6b43-4e1b-bba7-384afe869ce7"
+    },
+    {
+      "claim_id": "f6557790-433e-4c50-b745-441830cbf8a9",
+      "result_id": "f12f7cb8-6b43-4e1b-bba7-384afe869ce7"
+    },
+    {
+      "claim_id": "d426f46f-9eb9-4ca1-a1ae-1648fd1bb096",
+      "result_id": "f12f7cb8-6b43-4e1b-bba7-384afe869ce7"
+    },
+    {
+      "claim_id": "9cb415a7-73c2-451d-b6d2-af04644e0083",
+      "result_id": "f12f7cb8-6b43-4e1b-bba7-384afe869ce7"
+    },
+    {
+      "claim_id": "0c83f38d-f40d-4b2f-a05f-fee604248a44",
+      "result_id": "f12f7cb8-6b43-4e1b-bba7-384afe869ce7"
+    },
+    {
+      "claim_id": "b12c6f15-24cc-445d-86df-29adb0516a47",
+      "result_id": "f12f7cb8-6b43-4e1b-bba7-384afe869ce7"
+    },
+    {
+      "claim_id": "db6190c5-a49f-4f32-aef6-f2849879ea2e",
+      "result_id": "f12f7cb8-6b43-4e1b-bba7-384afe869ce7"
+    },
+    {
+      "claim_id": "79107a2f-36d0-493d-9a74-c46f6681c27f",
+      "result_id": "f12f7cb8-6b43-4e1b-bba7-384afe869ce7"
+    },
+    {
+      "claim_id": "4b3fbee1-31a7-4c9a-9a29-d7539ca46a95",
+      "result_id": "f12f7cb8-6b43-4e1b-bba7-384afe869ce7"
+    },
+    {
+      "claim_id": "b13a29ef-c2e0-45ae-91e0-b9dde4d5365a",
+      "result_id": "f12f7cb8-6b43-4e1b-bba7-384afe869ce7"
+    },
+    {
+      "claim_id": "4f735dec-46a4-45db-93f8-c09f5a6b9665",
+      "result_id": "bc1e755d-2320-4e3f-a90c-bff991c345bb"
+    },
+    {
+      "claim_id": "8d40c596-e61e-4441-9b18-17a33407295c",
+      "result_id": "bc1e755d-2320-4e3f-a90c-bff991c345bb"
+    },
+    {
+      "claim_id": "dd0a7b81-6b02-4d6e-a578-9c3aff764317",
+      "result_id": "bc1e755d-2320-4e3f-a90c-bff991c345bb"
+    },
+    {
+      "claim_id": "573e884c-3e83-4213-92cc-8b5b37eff76b",
+      "result_id": "3c82f2b9-608a-4615-92c5-e014aad22c6b"
+    },
+    {
+      "claim_id": "80b0ed4d-192b-405d-849a-f46c8105d546",
+      "result_id": "3c82f2b9-608a-4615-92c5-e014aad22c6b"
+    },
+    {
+      "claim_id": "72fbaf1d-3d65-4d0a-b4ef-db2e7e2bc5d0",
+      "result_id": "3c82f2b9-608a-4615-92c5-e014aad22c6b"
+    },
+    {
+      "claim_id": "781b881e-6653-4ef3-8ed8-7282968cd1e7",
+      "result_id": "3c82f2b9-608a-4615-92c5-e014aad22c6b"
+    },
+    {
+      "claim_id": "35a368aa-6684-4b8e-9f57-721d8ae984eb",
+      "result_id": "3c82f2b9-608a-4615-92c5-e014aad22c6b"
+    },
+    {
+      "claim_id": "f5b939bd-4a38-49d9-a593-bbe379f56a78",
+      "result_id": "3c82f2b9-608a-4615-92c5-e014aad22c6b"
+    },
+    {
+      "claim_id": "082dbf2b-0b04-4097-a854-9bbef92f84e1",
+      "result_id": "3c82f2b9-608a-4615-92c5-e014aad22c6b"
+    },
+    {
+      "claim_id": "b6407185-50d1-41c1-ae56-50afd27903f0",
+      "result_id": "3c82f2b9-608a-4615-92c5-e014aad22c6b"
+    },
+    {
+      "claim_id": "620851b4-2767-4fd3-a338-037849337115",
+      "result_id": "3c82f2b9-608a-4615-92c5-e014aad22c6b"
+    },
+    {
+      "claim_id": "3ab9b373-83ab-437b-9c53-dbfe16f0dd45",
+      "result_id": "3c82f2b9-608a-4615-92c5-e014aad22c6b"
+    },
+    {
+      "claim_id": "55e659ae-15d3-4d47-815c-76ef167bfecc",
+      "result_id": "3c82f2b9-608a-4615-92c5-e014aad22c6b"
+    },
+    {
+      "claim_id": "4a73d465-7a2e-443c-a955-ae7dc149b3d1",
+      "result_id": "3c82f2b9-608a-4615-92c5-e014aad22c6b"
+    },
+    {
+      "claim_id": "35d023e1-4c4d-4e95-b300-63069c4a8ca7",
+      "result_id": "3c82f2b9-608a-4615-92c5-e014aad22c6b"
+    },
+    {
+      "claim_id": "dd784254-7328-496c-af14-9f0ccb35a746",
+      "result_id": "3c82f2b9-608a-4615-92c5-e014aad22c6b"
+    },
+    {
+      "claim_id": "10bfb9f4-5653-4092-8d65-1ab8d233b196",
+      "result_id": "3c82f2b9-608a-4615-92c5-e014aad22c6b"
+    },
+    {
+      "claim_id": "fa6c8be3-2ed7-4b1a-b265-6dc291a37f2b",
+      "result_id": "3c82f2b9-608a-4615-92c5-e014aad22c6b"
+    },
+    {
+      "claim_id": "64346c22-3220-43e8-ab8c-2b860ff6411d",
+      "result_id": "3c82f2b9-608a-4615-92c5-e014aad22c6b"
+    }
+  ],
+  "comparisons": []
+}

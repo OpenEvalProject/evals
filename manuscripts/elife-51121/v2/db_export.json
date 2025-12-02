@@ -1,0 +1,1846 @@
+{
+  "submission": {
+    "id": "6ca8b84d-e328-44f6-af18-ee9bba9f8a72",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T18:30:25.787586Z",
+    "updated_at": "2025-12-02T18:30:25.787586Z"
+  },
+  "content": [
+    {
+      "id": "ad97463c-b806-425e-af22-eeb49a8eab56",
+      "submission_id": "6ca8b84d-e328-44f6-af18-ee9bba9f8a72",
+      "content_type": "manuscript",
+      "content_text": "# Stable task information from an unstable neural population\n\n## Authors\n\n- Michael E Rule<sup>1</sup> ([ORCID: 0000-0002-4196-774X](https://orcid.org/0000-0002-4196-774X))\n- Adrianna R Loback<sup>1</sup>\n- Dhruva V Raman<sup>1</sup>\n- Laura N Driscoll<sup>2</sup>\n- Christopher D Harvey<sup>3</sup>\n- Timothy O'Leary<sup>1</sup> ([ORCID: 0000-0002-1029-0158](https://orcid.org/0000-0002-1029-0158)) \u2020\n\n### Affiliations\n\n1. Department of Engineering, University of Cambridge Cambridge United Kingdom\n2. Department of Electrical Engineering, Stanford University Stanford United States\n3. Department of Neurobiology, Harvard Medical School Boston United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nOver days and weeks, neural activity representing an animal\u2019s position and movement in sensorimotor cortex has been found to continually reconfigure or \u2018drift\u2019 during repeated trials of learned tasks, with no obvious change in behavior. This challenges classical theories, which assume stable engrams underlie stable behavior. However, it is not known whether this drift occurs systematically, allowing downstream circuits to extract consistent information. Analyzing long-term calcium imaging recordings from posterior parietal cortex in mice (Mus musculus), we show that drift is systematically constrained far above chance, facilitating a linear weighted readout of behavioral variables. However, a significant component of drift continually degrades a fixed readout, implying that drift is not confined to a null coding space. We calculate the amount of plasticity required to compensate drift independently of any learning rule, and find that this is within physiologically achievable bounds. We demonstrate that a simple, biologically plausible local learning rule can achieve these bounds, accurately decoding behavior over many days.\n\n## Introduction\n\nA core principle in neuroscience is that behavioral variables are represented in neural activity. Such representations must be maintained to retain learned skills and memories. However, recent work has challenged the idea of long-lasting neural codes (Rumpel and Triesch, 2016). In our recent work (Driscoll et al., 2017), we found that neural activity\u2013behavior relationships in individual posterior parietal cortex (PPC) neurons continually changed over many days during a repeated virtual navigation task. Similar \u2018representational drift\u2019 has been shown in other neocortical areas and hippocampus (Attardo et al., 2015; Ziv et al., 2013; Levy et al., 2019). Importantly, these studies showed that representational drift is observed in brain areas essential for performing the task long after the task has been learned.\n\nThese experimental observations raise the major question of whether drifting representations are fundamentally at odds with the storage of stable memories of behavioral variables (e.g. Ganguly and Carmena, 2009; Tonegawa et al., 2015). Theoretical work has proposed that a consistent readout of a representation can be achieved if drift in neural activity patterns occurs in dimensions of population activity that are orthogonal to coding dimensions - in a \u2018null coding space\u2019 (Rokni et al., 2007; Druckmann and Chklovskii, 2012; Ajemian et al., 2013; Singh et al., 2019). This can be facilitated by neural representations that consist of low-dimensional dynamics distributed over many neurons (Montijn et al., 2016; Gallego et al., 2018; Hennig et al., 2018; Degenhart et al., 2020). Redundancy could therefore permit substantial reconfiguration of tuning in single cells without disrupting neural codes (Druckmann and Chklovskii, 2012; Huber et al., 2012; Kaufman et al., 2014; Ni et al., 2018; Kappel et al., 2018). However, the extent to which drift is confined in such a null coding space remains an open question.\n\nPurely random drift, as would occur if synaptic strengths and other circuit parameters follow independent random walks, would eventually disrupt a population code. Several studies have provided evidence that cortical synaptic weights and synaptic connections exhibit statistics that are consistent with a purely random process (Moczulska et al., 2013; Loewenstein et al., 2011; Loewenstein et al., 2015). Indeed, our previous experimental findings reveal that drift includes cells that lose representations of task relevant variables, suggesting that some component of drift affects coding dimensions (Driscoll et al., 2017).\n\nTogether, these observations raise fundamental questions that have not been directly addressed with experimental data, and which we address here. First, to what extent can ongoing drift in task representations be confined to a null coding space over extended periods while maintaining an accurate readout of behavioral variables in a biologically plausible way? Second, how might we estimate how much additional ongoing plasticity (if any) would be required to maintain a stable readout of behavioral variables, irrespective of specific learning rules? Third, is such an estimate of ongoing plasticity biologically feasible for typical levels of connectivity, and typical rates of change observed in synaptic strengths? Fourth, can a local, biologically plausible plasticity mechanism tune readout weights to identify a maximally stable coding subspace and compensate any residual drift away from this subspace?\n\nWe addressed these questions by modelling and analyzing data from Driscoll et al., 2017. This dataset consists of optical recordings of calcium activity in populations of hundreds of neurons in Posterior Parietal Cortex (PPC) during repeated trials of a virtual reality T-maze task (Figure 1a). Mice were trained to associate a visual cue at the start of the maze with turning left or right at a T-junction. Behavioral performance and kinematic variables were stable over time with some per-session variability (mouse four exhibited a slight decrease in forward speed; Figure 2\u2014figure supplement 1). Full experimental details can be found in the original study.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/51121/elife-51121-fig1-v2.jpg)\n\n**Figure 1.:** (a) Mice were trained to use visual cues to navigate to a reward in a virtual-reality maze; neural population activity was recorded using Ca2+ imaging Driscoll et al., 2017. (b) (Reprinted from Driscoll et al., 2017) Neurons in PPC (vertical axes) fire at various regions in the maze (horizontal axes). Over days to weeks, individual neurons change their tuning, reconfiguring the population code. This occurs even at steady-state behavioral performance (after learning). (c) Each plot shows how location-averaged normalized activity changes for single cells over weeks. Missing days are interpolated to the nearest available sessions, and both left and right turns are combined. Neurons show diverse changes in tuning over days, including instability, relocation, long-term stability, gain/loss of selectivity, and intermittent responsiveness.\n\nPrevious studies identified planning and choice-based roles for PPC in the T-maze task (Harvey et al., 2012), and stable decoding of such binary variables was explored in Driscoll et al., 2017. However, in primates PPC has traditionally been viewed as containing continuous motor-related representations (Andersen et al., 1997; Andersen and Buneo, 2002; Mulliken et al., 2008), and recent work (Krumin et al., 2018; Minderer et al., 2019) has confirmed that PPC has an equally motor-like role in spatial navigation in rodents (Calton and Taube, 2009). It is therefore important to\u00a0revisit these data in the context of continuous kinematics encoding.\n\nPrevious analyses showed that PPC neurons activated at specific locations in the maze on each day. When peak activation is plotted as a function of (linearized) maze location, the recorded population tiles the maze, as shown in Figure 1b. However, maintaining the same ordering in the same population of neurons revealed a loss of sequential activity over days to weeks (top row of Figure 1b). Nonetheless, a different subset of neurons could always be found to tile the maze in these later experimental sessions. In all cases, the same gradual loss of ordered activation was observed (second and third rows, Figure 1b). Figure 1c shows that PPC neurons gain or lose selectivity and occasionally change tuning locations. Together, these data show that PPC neurons form a continually reconfiguring representation of a fixed, learned task.\n\n### PPC representations facilitate a linear readout\n\nWe asked whether precise task information can be extracted from this population of neurons, despite the continual activity reconfiguration evident in these data. We began by fitting a linear decoder for each task variable of interest (animal location, heading, and velocity) for each day. This model has the form $x\u2062(t)=M^{\u22a4}\u2062z\u2062(t)$, where $x\u2062(t)$ is the time-binned estimate of position, velocity or heading (view angle) in the virtual maze, $M$ is a vector of weights, and $z\u2062(t)$ is the normalized time-binned calcium fluorescence (Materials\u00a0and\u00a0methods: Decoding analyses).\n\nExample decoding results for two mice are shown in Figure 2a, and summaries of decoding performance for four mice in Figure 2b. Position, speed, and view angle can each be recovered with a separate linear model. The average mean absolute decoding error for all animals included in the analysis was\u00a047.2 cm \u00b18.8 cm (mean \u00b11 standard deviation) for position, 9.6 cm/s \u00b12.2 cm/s for speed, and 13.8\u00b0\u00a0\u00b1\u00a04.0\u00b0 for view angle (Materials\u00a0and\u00a0methods: Decoding analyses).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/51121/elife-51121-fig2-v2.jpg)\n\n**Figure 2.:** (a) Example decoding performance for a single session for mice 4 and 5. Grey denotes held-out test data; colors denote the prediction for the corresponding kinematic variable. (b) Summary of the decoding performance on single days; each point denotes one mouse. Error bars denote one standard deviation over all sessions that had at least $N=200$ high-confidence PPC neurons for each mouse. (Mouse two is excluded due to an insufficient number of isolated neurons). Chance level is \u223c1.5 m for forward position, and varies across subjects for forward velocity (\u223c0.2\u20130.25 m/s) and head direction (\u223c20-30 ). (c) Extrapolation of the performance of the static linear decoder for decoding position as a function of the number of PPC neurons, done via Gaussian process regression (Materials\u00a0and\u00a0methods). Red '\u00d7' marks denote data; solid black line denotes the inferred mean of the GP. Shaded regions reflect \u00b11.96\u03c3 Gaussian estimates of the 95th and 5th percentiles. (d) Same as panel (c), but where the neurons have been ranked such that the \u2018best\u2019 subset of size 1\u2264K\u2264N is chosen, selected by greedy search based on explained variance (Materials\u00a0and\u00a0methods: Best K-Subset Ranking).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/51121/elife-51121-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Statistics of forward motion show small daily variations.\u00a0It is possible that changes in population codes relate to systematic changes in behavior over time. As described in Driscoll et al., 2017, these experiments were performed only after mice achieved asymptotic performance in speed and accuracy. Nevertheless, there is some behavioral variability. Each mouse\u2019s velocity in the initial (forward) segment of the \u2018T\u2019 maze varies slightly between days. Differences in means (black lines) are often statistically significant (p<0.05 in 91% pairs of sessions; Bonferroni multiple-comparison correction for a 0.05 false discovery rate), but are small ($\u0394\u2062\\mu/\\sigma$ i.e. Cohen\u2019s d ranges between 10\u201316% per animal). Systematic drift-like trends appear absent from mice 1 and 3. A statistically significant trend is present for mouse 4 (Pearson\u2019s \u03c1\u00a0= \u2212 0.9, p<0.05). We show only forward velocity here, as other kinematics variables exhibited less variability. Daily fluctuations in behavior could be used to weakly predict the recording session. Under cross-validation, linear discriminant analysis based on ten-second windows of kinematics predicted the recording session 9\u201317% above chance. This suggests that each mouse exhibited small but detectable daily variability in their behavior. Most variability was unsystematic, and therefore unrelated to the slow changes in neural codes studied here. We expect changes in forward speed in mouse four to contribute to apparent drift in some cells. However, the results presented here generalize across mice 1, 3, and 5, which exhibited stable behavior.\n\nWe chose a linear decoder specifically because it can be interpreted biologically as a single \u2018readout\u2019 neuron that receives input from a few hundred PPC neurons, and whose activity approximates a linear weighted sum. The fact that a linear decoder recovers behavioral variables to reasonable accuracy suggests that brain areas with sufficiently dense connectivity to PPC can extract this information via simple weighted sums.\n\nThe number of PPC neurons recorded is a subset of the total PPC population. To assess whether additional neurons might improve decoding accuracy, we evaluated decoding performance of randomly drawn subsets of recorded neurons (Figure 2c). Extrapolation of the decoding performance suggested that better performance might be possible with a larger population of randomly sampled PPC neurons than we recorded.\n\nIt is possible that a random sample of neurons misses the \u2018best\u2019 subset of cells for decoding task variables. When we restricted to optimal subsets of neurons we found that performance improved rapidly up to \u223c30 neurons and saturated at \u223c30%(50\u2013100 neurons) of the neurons recorded (Figure 2d). On a given day task variables could be decoded well with relatively few (\u223c10) neurons. However, the identity of the neurons in this optimal subset changed over days. For all subjects, no more than 1% of cells were consistently ranked in the top 10%, an no more than 13% in the top 50%. We confirmed that this instability was not due to under-regularization in training (Materials\u00a0and\u00a0methods: Best\u00a0K-Subset Ranking).\n\nOf the neurons with strong location tuning, Driscoll et al., 2017 found that 60% changed their location tuning over two weeks and a total of 80% changed over the 30- day period examined. We find that even the small remaining \u2018stable\u2019 subset of neurons exhibited daily variations in their Signal-to-Noise Ratio (SNR) with respect to task decoding, consistent with other studies (Carmena et al., 2005). For example, no more than 8% of neurons that were in the top 25% in terms of tuning-peak stability were also consistently in the top 25% in terms of SNR for all days. If a neuron becomes relatively less reliable, then the weight assigned may become inappropriate for decoding. This affects our analyses, and would also physiologically affect a downstream neuron with fixed synaptic weights.\n\n### Representational drift is systematic and significantly degrades a fixed readout\n\nNaively fitting a linear model to data from any given day shows that behavioral variables are encoded in a way that permits a simple readout, but there is no guarantee that this readout will survive long-term drift in the neural code. To illustrate this, we compared the decoding performance of models fitted on a given day with decoders optimized on data from earlier or later days. We restricted this analysis to those neurons that were identified with high confidence on all days considered. We found that decoding performance decreased as the separation between days grew (Figure 3a). This is unsurprising given the extent of reconfiguration reported in the original study (Driscoll et al., 2017) and depicted in Figure 1. Furthermore, because task-related PPC activity is distributed over many neurons, many different linear decoders can achieve similar error rates due to the degeneracy in the representation (Rokni et al., 2007; Kaufman et al., 2014; Montijn et al., 2016). Since the directions in population activity used for inter-area communication might differ from the directions that maximally encode stimulus information in the local population (Ni et al., 2018; Semedo et al., 2019), single-day decoders might overlook a long-term stable subspace used for encoding and communication. This motivates the question of whether a drift-invariant linear decoder exists and whether its existence is biologically plausible.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/51121/elife-51121-fig3-v2.jpg)\n\n**Figure 3.:** (a) Blue: % increase in error over the optimal decoder for the testing day (mouse 3, 136 neurons; mouse 4, 166 neurons). Red: Mean absolute error for decoders trained on a single day (\u20180\u2019) and tested on past/future days. (b) Fixed decoders $M$ for multiple days $d\\in1\u2062\u2026\u2062D$ (\u2018concatenated decoders\u2019) are fit to concatenated excerpts from several sessions. The inset equation reflects the objective function to be minimized (Methods). Due to redundancy in the neural code, many decoders can perform well on a single day. Although the single-day optimal decoders vary, a stable subspace with good performance can exist. (c) Concatenated decoders (cyan) perform slightly but significantly worse than single-day decoders (ochre; Mann-Whitney U test, p<0.01). They also perform better than expected if neural codes were unrelated across days (permutation tests; red). Plots show the mean absolute decoding error as a percent of the chance-level error (points: median, whiskers: 5th\u201395th%). Chance-level error was estimated by shuffling kinematics traces relative to neural time-series (mean of 100 samples). For the permutation tests, 100 random samples were drawn with the neuronal identities randomly permuted. (d) Plots show the rate at which concatenated-decoder accuracy (normalized $R^{2}$) degrades as the number of days increase. Concatenated decoders (black) degrade more slowly than expected for random drift (ochre). Shaded regions reflect the inner 95% of the data (generated by resampling for the null model). The null model statistics are matched to the within- and between-day variance and sparsity of the experimental data for each animal (Materials\u00a0and\u00a0methods).\n\nTo address this, we tested the performance of a single linear decoder optimized across data from multiple days. We concatenated data from different days using the same subset of PPC neurons (Figure 3b). In all four subjects, we found that such fixed multiple-day linear \u2018concatenated\u2019 decoders could recover accurate task variable information despite ongoing changes in PPC neuron tuning. However, the average performance of the multiple-day decoders was significantly worse than single-day linear decoders for each day (Figure 3c).\n\nThe existence of a fixed, approximate decoder implies a degenerate representation of task variables in the population activity of PPC neurons. In other words, there is a family of linear decoders that can recover behavioral variables while allowing weights to vary in some region of weight space. This situation is illustrated in Figure 3b, which depicts regions of good performance of single-day linear decoders as ellipsoids. The existence of an approximate concatenated decoder implies that these ellipsoids intersect over several days for some allowable level of error in the decoder. For a sufficiently redundant neural code, one might expect to find an invariant decoder for some specified level of accuracy even if the underlying code drifts. However, there are many qualitative ways in which drift can occur in a neural code: it could resemble a random walk, as some studies suggest (Moczulska et al., 2013; Loewenstein et al., 2011; Loewenstein et al., 2015), or there could be a systematic component. Is the accuracy we observe in the concatenated decoder expected for a random walk? In all subjects, we found that a concatenated decoder performed substantially better on experimental data than on randomly drifting synthetic data with matched sparseness and matched within/between-session variability (Figure 3d). This suggests that the drift in the neural data is not purely random.\n\nWe further investigated the dynamics of drift by quantifying the direction of changes in neural variability over time (Figure 4c,d, Materials\u00a0and\u00a0methods: Drift alignment). We found that drift is indeed aligned above chance to within-session neural population variability. This suggests that the biological mechanisms underlying drift are in part systematic and constrained by a requirement to keep a consistent population code over time. In comparison, the projection of drift onto behavior-coding directions was small, but still above chance. This is consistent with the hypothesis that ongoing compensation might be needed for a long-term stable readout.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/51121/elife-51121-fig4-v2.jpg)\n\n**Figure 4.:** (a) The small error increase when training concatenated decoders (Figure 3) suggests that plasticity is needed to maintain good decoding in the long term. We assess the minimum rate for this plasticity by training a separate decoder $M_{d}$ for each day, while minimizing the change in weights across days. The parameter \u03bb controls how strongly we constrain weight changes across days (the inset equation reflects the objective function to be minimized; Methods). (b) Decoders trained on all days (cyan) perform better than chance (red), but worse than single-day decoders (ochre). Black traces illustrate the plasticity-accuracy trade-off for adaptive decoding. Modest weight changes per day are sufficient to match the performance of single-day decoders (Boxes: inner 50% of data, horizontal lines: median, whiskers: 5\u201395th%). (c) Across days, the mean neural activity associated with a particular phase of the task changes ($\u0394\u2062\\mu$). We define an alignment measure $\u03c1$ (Materials\u00a0and\u00a0methods) to assess the extent to which these changes align with behavior-coding directions in the population code (blue) verses directions of noise correlations (ochre). (d) Drift is more aligned with noise (ochre) than it is with behavior-coding directions (blue). Nevertheless, drift overlaps this behavior-coding subspace much more than chance (grey; dashed line: 95% Monte-Carlo sample). Each box reflects the distribution over all maze locations, with all consecutive pairs of sessions combined.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/51121/elife-51121-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** sufficiently low-rank drift resembles the data in terms of the performance of a concatenated decoder.\u00a0Here, we further explore the null model introduced in Figure 3d. As in Figure 3d, we simulated random drift in the neural readout. We matched the null model to the statistics of neural activity, the within-day decoding accuracy, and the performance degradation when generalizing between days. In these simulations, we explore the scenario that the drift may be confined to a (randomly-selected) low-dimensional subspace. We evaluated a range of dimensionalities for the drift subspace (horizontal axes), and evaluated the performance of a concatenated decoder on simulated data. While unconstrained drift prevents the identification of a concatenated decoder with good performance (Figure 3d), sufficiently constrained drift does not. In these simulations, we found that constraining drift to a subspace of rank 14\u201326 (red vertical lines) led to similar performance as the data (dashed horizontal lines) in all subjects except for mouse 5. We speculate that this is because Mouse five had limited data and poor generalization of single-day decoders over time, but other scenarios are possible. Black traces reflect the mean over 20 random simulations, and shaded regions reflect one standard deviation.\n\nTo quantify the systematic nature of drift further, we modified the null model to make drift partially systematic by constraining the null-model drift within a low rank subspace (Figure 4\u2014figure supplement 1). This reflects a scenario in which only a few components of the population code change over time. We found that the performance of a concatenated decoder for low-rank drift better approximated experimental data. For three of the four mice we could match concatenated decoder performance when the dimension of the drift process was constrained within a range of 14\u201326, a relatively small fraction (around 20%) of the components of the full population.\n\n### Biologically achievable rates of plasticity can compensate drift, independent of specific learning rules\n\nTogether, these analyses show that the observed dynamics of drift favor a fixed linear readout above what would be expected for random drift. However, our results also show that a substantial component of drift cannot be confined to the null space of a fixed downstream linear readout. We asked how much ongoing weight change would be needed to achieve the performance of single-day decoders while minimizing day-to-day changes in decoding weights. We first approached this without assuming a specific plasticity rule, by simultaneously optimizing linear decoders for all recorded days while penalizing the magnitude of weight change between sessions (Figure 4a, Materials\u00a0and\u00a0methods: Concatenated and constrained analyses). By varying the magnitude of the weight change penalty we interpolated between the concatenated decoder (no weight changes) and the single-day decoders (optimal weights for each day). The result of this is shown in Figure 4b. Performance improves rapidly once small weight changes are permitted (\u223c12\u201325% per session). Thus, relatively modest amounts of synaptic plasticity might suffice to keep encoding consistent with changes in representation, provided a mechanism exists to implement appropriate weight changes.\n\n### A biologically plausible local learning rule can compensate drift\n\nThe results in Figure 4b suggest that modest amounts of synaptic plasticity could compensate for drift, but do not suggest a biologically plausible mechanism for this compensation. Could neurons track slow reconfiguration using locally available signals in practice? To test this, we used an adaptive linear neuron model based on the least mean square learning (LMS) rule (Widrow and Hoff, 1960; Widrow and Hoff, 1962) (Materials\u00a0and\u00a0methods). This algorithm is biologically plausible because it only requires each synapse to access its current weight and recent prediction error (Figure 5a, Materials\u00a0and\u00a0methods: Online LMS\u00a0algorithm).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/51121/elife-51121-fig5-v2.jpg)\n\n**Figure 5.:** (a) The Least Mean-Squares (LMS) algorithm learns to linearly decode a target kinematic variable based on error feedback. Continued online learning can track gradual reconfiguration in population representations. (b) As the average weight change per day (horizontal axis) increases, the average decoding error (vertical axis) of the LMS algorithm improves, shown here for three kinematic variables (Mouse 4, 144 units, 10 sessions over 12 days; Methods: methods:lms). (Dashed line: error for a decoder trained on only the previous session without online learning; Solid line: performance of a decoder trained over all testing days). As the rate of synaptic plasticity is increased, LMS achieves error rates comparable to the concatenated decoder. (c) Example LMS decoding results for three kinematic variables. Ground truth is plotted in black, and LMS estimate in color. Sample traces are taken from day six. Dashed traces indicate the performance of the decoder without ongoing re-training. (d) (top) Average percent weight-change per session for online decoding of forward position (learning rate: 4\u00a0\u00d7\u00a010-4/sample). The horizontal axis reflects time, with vertical bars separating days. The average weight change is 10.2% per session. To visualize %$\u0394\u2062w$ continuously in this plot, we use a sliding difference with a window reflecting the average number of samples per session. (bottom) LMS (black) performs comparably to the concatenated decoder (cyan) (LMS mean absolute error of 0.47 m is within \u2264\u00a03% of concatenated decoder error). Without ongoing learning, the performance of the initial decoder degrades (orange). Error traces have been averaged over ten minute intervals within each session. Discontinuities between days reflect day-to-day variability and suggest a small transient increase in error for LMS decoding at the start of each day.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/51121/elife-51121-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** LMS results for mice 1, 3, 4, and 5. Results of applying the online LMS algorithm with a learning rate of 4\u00a0\u00d7\u00a010-4/sample. Errors reflect the mean absolute error over ten minute intervals. LMS (black) achieves errors comparable to an offline decoder trained on all sessions ('concatenated\u2019, blue), and outperforms a fixed decoder trained on the initial day (red). Only times within a trial were used for training. For the LMS algorithm, we observed inter-day weight changes of 7.6-10.4%, consistent with observed rates of change in the volume of dendritic spines in other studies.\u00a0We present two spans of time from Mouse 3, reflecting two largely non-overlapping populations of tracked neurons on non-overlapping spans of days.\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/51121/elife-51121-fig5-figsupp2-v2.jpg)\n\n**Figure 5\u2014figure supplement 2.:** Smaller populations require more plasticity to achieve target error levels.\u00a0These plots show the daily weight changes required to track drift when decoding forward positions as a function of population size for mice 3 and 4. Smaller populations require more plasticity. The target error (M3: 0.68 m, M4: 0.48 m) was set based on the performance of LMS on the full population (M3: 114 neurons, M4: 134 neurons). For each sub-population size, 50 random sub-populations were drawn, and the learning rate was optimized to achieve the target error level. Shaded regions reflect the inner 95th percentile over all sampled sub-populations. Weight change was assessed as the weight change between the end of consecutive sessions and normalized by the overall average weight magnitude.\n\n![Figure 5\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/51121/elife-51121-fig5-figsupp3-v2.jpg)\n\n**Figure 5\u2014figure supplement 3.:** The plasticity required to achieve a fixed error level decreases for larger populations. Typically, the number of inputs to a neuron is much larger than the \u223c100 neurons observed here. The \u223c10% weight change per day reported by LMS could therefore over-estimate of plasticity needed to track drift. To address this, we combined data from multiple mice to extend the LMS analysis to a synthetic population of 1238 cells over six sessions. Trials were matched based on the current and previous cue, and converted to pseudotime based on the fraction of the maze completed between 0 and 100%. We allowed up to two-day recording gaps between consecutive sessions from the same mouse. These synthetic populations are not equivalent to large recordings from a single mouse, but nevertheless reveal how plasticity scales with population size. We found that larger populations could achieve the same performance as \u223c100 cells with a \u223c4% weight change per day.\u00a0(a) Trial pseudotime (% of trial complete; black) can be decoded from a synthetic pooled population (1238 cells) using the LMS algorithm (violet: prediction). (b) Similarly to the single-subject results, LMS tracks changes in the population code over time. In this case, a learning rate of 8\u00a0\u00d7\u00a010-4/sample achieved comparable error to a concatenated decoder. The larger population permits better decoding error of \u223c5%, compared to the \u223c15\u00a0-\u00a020% error in forward position decoded from \u223c100 neurons. (c) As population size increases, both the weight magnitudes (left) and the rates of weight change (middle) decrease. Small populations could not achieve the error rates possible using the full population, even with very large learning rates. We therefore set the target error a bit higher, at 13% chance level. This is comparable to the error rates seen in individual mice using \u223c100 cells. Overall, the required percentage weight change decreased for larger populations (right).\n\nFigure 5b shows that this online learning rule achieved decoding performance comparable to the offline constrained decoders. Over the timespan of the data, LMS allows a linear decoder to track representational drift observed (Figure 5c), exhibiting weight changes of \u223c10%/day across all animals (learning rate 4\u00a0\u00d7\u00a010-4/sample, Figure 5\u2014figure supplement 1). These results suggest that small weight changes could track representational drift in practice. In contrast, we found that LMS struggled to match the unconstrained drift of the null model explored in Figure 3d. Calibrating the LMS learning rate on the null model to match the mean performance seen on the true data required an average weight change of 93% per day. In comparison, matching the average percent weight change per day of 10%, the null model produced a normalized mean-squared-error of 1.3\u00a0$\\sigma^{2}$ (averaged over all mice), worse than chance. This further indicates that drift is highly structured, facilitating online compensation with a local learning rule.\n\nWe stress that modeling assumptions mean that these results are necessarily a proxy for the rates of synaptic plasticity that are observed in vivo. Nonetheless, we believe these calculations are conservative. We were restricted to a sample of \u223c100\u2013200 neurons, at least an order of magnitude less than the typical number of inputs to a pyramidal cell in cortex. The per-synapse magnitude of plasticity necessarily increases when smaller subsets are used for a readout (Figure 5\u2014figure supplement 2). One would therefore expect lower rates of plasticity for larger populations. Indeed, when we combined neurons across mice into a large synthetic population (1238 cells), we found that the plasticity required to achieve target error asymptotes at less than 4% per day (Figure 5\u2014figure supplement 3). Together, these results show a conservatively achievable bound on the rate of plasticity required to compensate drift in a biologically plausible model.\n\n## Discussion\n\nSeveral theories have been proposed for how stable behavior could be maintained despite ongoing changes in connectivity and neural activity. Here, we found that representational drift occurred in both coding and non-coding subspaces. On a timescale of a few days, redundancy in the neural population could accommodate a significant component of drift, assuming a biological mechanism exists for establishing appropriate readout weights. Simulations suggested that the existence of this approximately stable subspace were not simply a result of population redundancy, since random diffusive drift quickly degraded a downstream readout. Drift being confined to a low-dimensional subspace is one scenario that could give rise to this, although we do not exclude other possibilities. Nevertheless, a non-negligible component of drift resides outside the null space of a linear encoding subspace, implying that drift will eventually destroy any fixed-weight readout.\n\nHowever, we showed that this destructive component of drift could be compensated with small and biologically realistic changes in synaptic weights, independently of any specific learning rule. Furthermore, we provided an example of a simple and biologically plausible learning rule that can achieve such compensation over long timescales with modest rates of plasticity. If our modeling results are taken literally, this would suggest that a single unit with connections to \u223c100 PPC neurons can accurately decode task information with modest changes in synaptic weights over many days. This provides a concrete and quantitative analysis of the implications of drift on synaptic plasticity and connectivity. Together, our findings provide some of the first evidence from experimental data that representational drift could be compatible with long-term memories of learned behavioral associations.\n\nA natural question is whether a long-term stable subspace is supported by an unobserved subset of neurons that have stable tuning (Clopath et al., 2017). We do not exclude this possibility because we measured a subset of the neural population. However, over multiple samples from different animals our analyses consistently suggest that drift will reconfigure the code entirely over months. Specifically, we found that past reliability in single cells is no guarantee of future stability. This, combined with an abundance of highly-informative cells on a single day, contributes to poor (fixed) decoder generalization, because previously reliable cells eventually drop out or change their tuning. Consistent with this, studies have shown that connectivity in mammalian cortex is surprisingly dynamic. Connections between neurons change on a timescale of hours to days with a small number of stable connections (Holtmaat et al., 2005; Minerbi et al., 2009; Holtmaat and Svoboda, 2009; Attardo et al., 2015).\n\nWe stress that the kind of reconfiguration observed in PPC is not seen in all parts of the brain; primary sensory and motor cortices can show remarkable stability in neural representations over time (Gallego et al., 2020). However, even if stable representations exist elsewhere in the brain, PPC still must communicate with these areas. We suggest that a component of ongoing plasticity maintains congruent representations across different neural circuits. Such maintenance would be important in a distributed, adaptive system like the brain, in which multiple areas learn in parallel. How this is achieved is the subject of intense debate (Rule et al., 2019). We hypothesize that neural circuits have continual access to two kinds of error signals. One kind should reflect mismatch between internal representations and external task variables, and another should reflect prediction mismatch between one neural circuit and another. Our study therefore motivates new experiments to search for neural correlates of error feedback between areas, and suggests further theoretical work to explore the consequences of such feedback.\n\n## Materials and methods\n\n### Data acquisition\n\nThe behavioral and two-photon calcium imaging data analyzed here were provided by the Harvey lab. Details regarding the experimental subjects and methods are provided in Driscoll et al., 2017.\n\n### Virtual reality task\n\nDetails of the virtual reality environment, training protocol, and fixed association navigation task are described in Driscoll et al., 2017. In brief, virtual reality environments were constructed and operated using the MATLAB-based ViRMEn software (Virtual Reality Mouse Engine) Harvey et al., 2012. Data were obtained from mice that had completed the 4\u20138 week training program for the two-alternative forced choice T-maze task. The length of the virtual reality maze was fixed to have a total length of 4.5 m. The cues were patterns on the walls (black with white dots or white with black dots), and were followed by a gray striped \u2018cue recall\u2019 segment (2.25 m long) that was identical across trial types.\n\n### Data preparation and pre-processing\n\nRaw Ca2+ fluorescence videos (sample rate=5.3Hz) were corrected for motion artefacts, and individual sources of Ca2+ fluorescence were identified and extracted (Driscoll et al., 2017). Processed data consisted of normalized Ca2+ fluorescence transients ('$\u0394\u2062F/F$') and behavioral variables (mouse position, view angle, and velocity). Inter-trial intervals (ITIs) were removed for all subsequent analyses. For offline decoding, we considered only correct trials, and all signals were centered to zero-mean on each trial as a pre-processing step.\n\nWhen considering sequences of days, we restricted analysis to units that were continuously tracked over all days. For Figures 3 and 4, we use the following data: M1: seven sessions, 15 days, 101 neurons; M3: 10 sessions, 13 days, 114 neurons; M4: 10 sessions, 11 days, 146 neurons; M5: seven sessions, 7 days, 112 neurons. We allowed up to two-day recording gaps between consecutive sessions from the same mouse.\n\n### Quantification and statistical analysis\n\n#### Decoding analyses\n\nWe decoded kinematics time-series $\ud835\udc31={x_{1},\u2026,x_{T}}$ with $T$ time-points from the vector of instantaneous neural population activity $z={z_{1},...,z_{T}}$, using a linear decoder with a fixed set of weights $M$, that\u00a0is $\ud835\udc31^=M^{\u22a4}\u2062\ud835\udc33$. We used the ordinary least-squares (OLS) solution for $M$, which minimizes the squared (L2) prediction error $\\epsilon=\u2225\ud835\udc31-M^{\u22a4}\u2062\ud835\udc33\u2225^{2}$ over all time-points. For the \u2018same-day\u2019 analyses, we optimize a separate $M_{d}$ for each day $d$ (Figure 2), restricting analysis to sessions with at least 200 identified units. We assessed decoding performance using 10-fold cross-validation, and report the mean absolute error, defined as $\u27e8\u2223\ud835\udc31-\ud835\udc31^\u2223\u27e9$. Here, $\u2223.\u2223$ denotes the element-wise absolute value, and $\u27e8.\u27e9$ denotes expectation.\n\n### Best K-Subset ranking\n\nFor Figure 2d, we ranked cells in order of explained variance using a greedy algorithm. Starting with the most predictive cell, we iteratively added the next cell that minimized the MSE under ten-fold cross-validated linear decoding. To accelerate this procedure, we pre-computed the mean and covariance structure for training and testing datasets. MSE fits and decoding performance can be computed directly from these summary statistics, accelerating the several thousand evaluations required for greedy selection. We added L2 regularization to this analysis by adding a constant $\\lambda\u2062I$ to the covariance matrix of the neural data. The optimal regularization strength (\u03bb\u00a0=\u00a010-4 to 10-3) slightly reduced decoding error, but did not alter the ranking of cells.\n\n### Extrapolation via GP regression\n\nTo qualitatively assess whether decoding performance saturates with the available number of recorded neurons, we computed decoding performance on a sequence of random subsets of the population of various sizes (Figure 2c,d). Results for all analyses are reported as the mean over 20 randomly-drawn neuronal sub-populations, and over all sessions that had at least $N=150$ units. Gaussian process (GP) regression was implemented in Python, using a combination of a Mat\u00e9rn kernel and an additive white noise kernel. Kernel parameters were optimized via maximum likelihood (Scikit-learn, Pedregosa et al., 2011).\n\n### Concatenated and constrained analyses\n\nFor both the concatenated (Figure 3b,e) and constrained analyses (Figure 4a,b), we used the set of identified neurons included in all sessions considered. In the concatenated analyses, we solved for a single decoder $M_{c}$ for all days:\n\n$$\n\\epsilon=\\sumd=1n\u2225\ud835\udc31_{d}-M_{c}^{\u22a4}\u2062\ud835\udc33_{d}\u2225^{2},\n$$\n\nwhere $\\epsilon$ denotes the quadratic objective function to be minimized. In the constrained analysis, we optimized a series of different weights $M={M_{1},...,M_{D}}$ for each day $d\\in1...D$, and added an adjustable L2 penalty $\\lambda$ on the change in weights across days. This problem reduces to the \u2018same-day\u2019 analysis for $\\lambda=0$, and approaches the concatenated decoder as $\\lambda$ approaches 1:\n\n$$\n\\epsilon=(1-\\lambda)\u2062\\sumd=1n\u2225\ud835\udc31_{d}-M_{d}^{\u22a4}\u2062\ud835\udc33_{d}\u2225^{2}+\\lambda\u2062\\sumd=1n-1\u2225M_{d+1}-M_{d}\u2225^{2}.\n$$\n\nFor the purposes of the constrained analysis, missing days were ignored and the remaining days treated as if they were contiguous. Two sessions were missing from the 10 and 14 day spans for mice 3 and 4, respectively (Figure 4b). Figure 3c also shows the expected performance of a concatenated decoder for completely unrelated neural codes. To assess this, we permuted neuronal identities within individual sessions, so that each day uses a different \u201dcode\u2019.\n\n### Null model\n\nWe developed a null model to assess whether the performance of the concatenated decoder was consistent with random drift. For this, we matched the amount of day-to-day drift based on the rate at which single-day decoders degrade. We also sampled neural states from the true data to preserve sparsity and correlation statistics. The null model related neural activity to a \u2019fake\u2019 observable readout (e.g. mouse position) via an arbitrary linear mapping. The null model changed from day to day, reflecting drift in the neural code. The fidelity of single day and across day decoders in inferring a readout from the null model was matched to the true data.\n\nFor each animal, we take the matrix $z\\inR^{n\\timesd}$ of mean-centered neural activity on day one, where $n$ represents the number of recorded neurons and $d$ represents the number of datapoints. We relate this matrix to pseudo-observations of mouse position $z$ via a null model of the form $z_{r}=M_{r}^{\u22a4}\u2062z+\u03f5_{r}$, where $M_{r}^{\u22a4},\u03f5_{r}\\inR^{1\\timesn}$. Note that $r$ indexes days. The vector $\u03f5_{r}$ is generated as scaled i.i.d. Gaussian noise. We scale $\u03f5_{r}$ such that the accuracy of a linear decoder trained on the data $(z,x_{r})$ matches the average (over days) accuracy of a single-day decoder trained on the true data.\n\nNext, we consider the choice of the randomly-drifting readout, $M_{r}$. On day one, $M_{1}$ is generated as a vector of uniform random variables on $[0,1]$. Given $M_{r}$, we desire an $M_{r+1}$ that satisfies.\n\nTo do this, we first generate a candidate $\u0394M_{r}^{\u2032}\\inR^{n\\times1}$ as a vector of i.i.d. white noise. The components of $\u0394\u2062M_{r}^{\u2032}$ orthogonal and parallel to $M_{r}$ are then scaled so that $M_{r+1}=M_{r}+\u0394\u2062M_{r}$ satisfies the constraints above.\n\nIn Figure 4\u2014figure supplement 1, a modification of the null model that confined inter-day model drift to a predefined subspace was used. Before simulating the null model over days, we randomly chose $k$ orthogonal basis vectors, representing a $k$-dimensional subspace. We then searched for a candidate $\u0394\u2062M_{r}^{\u2032}$, on each inter-day interval, that was representable as a weighted sum of these basis vectors. This requirement was in addition to those previously posed. Finding such a $\u0394\u2062M_{r}^{\u2032}$ corresponds to solving a quadratically-constrained quadratic program. This is non-convex, and thus a solution will not necessarily be found. However, solutions were always found in practice. We used unit Gaussian random variables as our initial guesses for each component of $\u0394\u2062M_{r}^{\u2032}$, before solving the quadratic program using the IPOPT toolbox (W\u00e4chter and Biegler, 2006).\n\n### Drift alignment\n\nWe examine how much drift aligns with noise correlations verses directions of neural activity that vary with the task ('behavior-coding directions\u2019). We define an alignment statistic $\u03c1$ that reflects how much drift projects onto a given subspace (i.e. noise vs. behavior). We normalize $\u03c1$ so that 0 reflects chance-level alignment and one reflects perfect alignment of the drift with the largest eigenvector of a given subspace (e.g. the principal eigenvector of the noise covariance).\n\nLet $z\u2062(x)$ denote the neural population activity, where $x$ reflects a normalized measure of maze location, akin to trial pseudotime. Define drift $\u0394\u2062\\mu_{z}\u2062(x)$ as the change in the mean neural activity $\\mu_{z}\u2062(x)$ across days. We examine how much drift aligns with noise correlations verses directions of neural activity that vary with task pseudotime ($d\u2062z\u2062(x)/d\u2062x$).\n\nTo measure the alignment of a drift vector $\u0394\u2062\\mu$ with the distribution of inter-trial variability (i.e. noise), we consider the trial-averaged mean\u00a0\u00b5 and covariance $\u03a3$ of the neural activity (log calcium-fluorescence signals filtered between 0.03 and .3 Hz and z-scored), conditioned on trial location and the current/previous cue direction. We use the mean squared magnitude of the dot product between the change in trial-conditioned means between days ($\u0394\u2062\\mu$), with the directions of inter-trial variability ($\u0394\u2062z=z-\u27e8z\u27e9$) on the first day, which is summarized by the product $\u0394\u2062\\mu^{\u22a4}\u2062\u03a3\u2062\u0394\u2062\\mu$:\n\n$$\n\u27e8|\u0394\\mu^{\u22a4}\u0394z|^{2}\u27e9=\u27e8\u0394\\mu^{\u22a4}\u0394z\u0394z^{\u22a4}\u0394\\mu\u27e9=\u0394\\mu^{\u22a4}\u27e8\u0394z\u0394z^{\u22a4}\u27e9\u0394\\mu=\u0394\\mu^{\u22a4}\u03a3\u0394\\mu.\n$$\n\nTo compare pairs of sessions with different amounts of drift and variability, we normalize the drift vector to unit length, and normalize the trial-conditioned covariance by its largest eigenvalue $\\lambda_{max}$:\n\n$$\n\u03d5_{trial}^{2}=\\frac{\u0394\\mu^{\u22a4}\u03a3\u0394\\mu}{|\u0394\\mu|^{2}\u22c5\\lambda_{max}}\n$$\n\nThe statistic $\u03d5_{trial}$ equals one if the drift aligns perfectly with the direction of largest inter-trial variability, and can be interpreted as the fraction of drift explained by the directions of noise correlations.\n\nRandom drift can still align with some directions by chance, and the mean squared dot-product between two randomly-oriented $D$-dimensional unit vectors scales as $1/D$. Accounting for the contribution from each dimension of $\u03a3$, the expected chance alignment is therefore $\u03d5_{0}^{2}=tr\u2061(\u03a3)/(D\u22c5\\lambda_{max})$. We normalize the alignment coefficient $\u03c1_{noise}$ such that it is 0 for randomly oriented vectors, and one if the drift aligns perfectly with the direction of largest variability:\n\n$$\n\u03c1_{noise}=\\frac{\u03d5_{trial}\u2212\u03d5_{0}}{1\u2212\u03d5_{0}}\n$$\n\nWe define a similar alignment statistic $\u03c1_{coding}$ to assess how drift aligns with directions of neural variability that encode location. We consider the root-mean-squared dot product between the drift $\u0394\u2062\\mu$, and the directions of neural activity ($z$) that vary with location ($x$) on a given trial, that\u00a0is $\\nabla_{x}\u2061z\u2062(x)$:\n\n$$\n\u27e8\u0394\\mu^{\u22a4}\u2207_{x}z(x)|^{2}\u27e9=\u27e8\u0394\\mu^{\u22a4}[\u2207_{x}z(x)][\u2207_{x}z(x)]^{\u22a4}\u0394\\mu\u27e9=\u0394\\mu^{\u22a4}\u27e8[\u2207_{x}z(x)][\u2207_{x}z(x)]^{\u22a4}\u27e9\u0394\\mu=\u0394\\mu^{\u22a4}[\u03a3_{\u2207}+\\mu_{\u2207}\\mu_{\u2207}^{\u22a4}]\u0394\\mu\n$$\n\nIn contrast to the trial-to-trial variability statistic, this statistic depends on the second moment $\u03a3_{\\nabla}+\\mu_{\\nabla}\u2062\\mu_{\\nabla}^{\u22a4}$, where $\\nabla_{x}\u2061z\u2062(x)\u223c\ud835\udca9\u2062(\\mu_{\\nabla},\u03a3_{\\nabla})$. We define a normalized $\u03d5_{coding}^{2}$ and $\u03c1_{coding}$ similarly to $\u03d5_{trial}^{2}$ and $\u03c1_{noise}$. For the alignment of drift with behavior, we observed $\u03c1_{coding}=$\u00a00.11\u20130.24 (\u00b5=0.15, \u03c3=0.03), which was significantly above chance for all mice. In contrast, the 95th percentile for chance alignment (i.e. random drift) ranged from 0.06 to 0.10 (\u00b5=0.07, \u03c3=0.02). Drift aligned substantially more with noise correlations, with \u03c1=0.29\u20130.43 (\u00b5=0.36, \u03c3=0.04).\n\n### Online LMS algorithm\n\nThe Least Mean-Squares (LMS) algorithm is an online approach to training and updating a linear decoder, and corresponds to stochastic gradient-descent (Figure 4a). The algorithm was originally introduced in Widrow and Hoff, 1960; Widrow and Hoff, 1962; Widrow and Stearns, 1985. Briefly, LMS computes a prediction error for an affine decoder (i.e. a linear decoder with a constant offset feature or bias parameter) at every time-point, which is then used to update the decoding weights. We analyzed twelve contiguous sessions from mouse 4 (144 units in common), and initialized the decoder by training on the first two sessions using OLS.\n\nBy varying the learning rate, we obtained a trade-off (Figure 4b) between the rate of weight changes and the decoding error, with the most rapid learning rates exceeding the performance of offline (static) decoders. In Figure 4d, we selected an example with a learning rate of $\u03b7=4\\times10^{-4}$. To provide a continuous visualization of the rate of weight change in Figure 4d, we used a sliding difference with a duration matching the average session length. This was normalized by the average weight magnitude to report percent weight change per day. In all other statistics, per-day weight change is assessed as the difference in weights at the end of each session, divided by the days between the sessions.\n\n### Data and code availability\n\nDatasets recorded in Driscoll et al., 2017 are available from the Dryad repository (https://doi.org/10.5061/dryad.gqnk98sjq). The analysis code generated during this study is available on Github (https://github.com/michaelerule/stable-task-information; copy archived at https://github.com/elifesciences-publications/stable-task-information; Rule, 2020).\n",
+      "created_at": "2025-12-02T18:30:25.787586Z"
+    },
+    {
+      "id": "81a16448-9081-4767-961a-e13a95f5f7ee",
+      "submission_id": "6ca8b84d-e328-44f6-af18-ee9bba9f8a72",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Stephanie Palmer, University of Chicago United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.51121.sa1](https://doi.org/10.7554/eLife.51121.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nThis work addresses how accurate readout in the brain can be maintained despite shifts in neural population tuning and variability. The work reanalyzes previous data from posterior parietal cortex and digs deeper to show that a simple linear readout can, in fact, recover kinematic variables like animal position and speed from this drifting population. While this simple readout works well, it does slowly degrade over days. This work also shows how to ameliorate this degradation: plasticity that operates via a biologically plausible mechanism can maintain accurate readout.\n\nDecision letter after peer review:\n\n[Editors\u2019 note: the authors submitted for reconsideration following the decision after peer review. What follows is the decision letter after the first round of review.]\n\nThank you for submitting your work entitled \"Stable task information from an unstable neural population\" for consideration by eLife. Your article has been reviewed by three peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation has been overseen by a Senior Editor. The reviewers have opted to remain anonymous.\n\nOur decision has been reached after consultation between the reviewers. Based on these discussions and the individual reviews below, we regret to inform you that your work will not be considered further for publication in eLife.\n\nThis is a clearly-presented initial study on how stable readout across days might be achieved despite shifting neural representations. The results have been judged to be sound, analytically, but the potential impact of the work falls short of threshold for a Short Report. Individual reviewer comments are listed below, but the main critiques are summarized here:\n\n1) There are only data on 1 mouse to support the key result, which itself is not surprising given previous work from Driscoll et al., 2017.\n\n2) The present work lacks a null model against which one can properly interpret the success of the concatenated decoder.\n\nReviewer #1:\n\nThis is a well-written, short manuscript about changes in neuronal activity patterns in PPC over days, and how stable readout can be achieved with a simple, linear decoder despite these shifting sands. The idea is that a single, best compromise, linear decoder can be found that is immune to the reconfiguration in the neural population. The work posits, but doesn't prove that the reconfiguration exists in the \"null space\" of the task.\n\nThere are a number of theoretical papers (as nicely referenced in this document) about how accurate decoders might be maintained in changing neural populations, but the upside of this work is that:\n\na) The results are taken from experimental data with large enough N's and over enough days that decoding accuracy can be traced, and\n\nb) This is the simplest of all possible theories of how performance is maintained, and it's reasonably plausible.\n\nI have some substantive concerns :\n\n1) Given that the consensus decoder had to perform better across days than any single day decoder, it's not clear how surprising these results are.\n\n2) It wasn't clear how well this extrapolates across different mice. In some figures, 3 or 4 individuals are compared, others just 2, others yet, just 1 mouse (mouse 4) is mentioned. This is central to the generality of the paper and should be laid out more clearly. Do the concatenated decoder and LMS decoder results hold for more than one individual?\n\n3) The arguments about the scaling of the biologically plausible weight adjustments seem a little problematic. It's not clear why the results here form an upper bound on the weight changes needed to maintain accurate decoding. Also, it wasn't clear how the interactions between networks, maintaining congruence, is achieved. That final part of the Discussion was a bit vague.\n\nReviewer #2:\n\nLoback et al. re-analyze data from Driscoll et al., 2017, which had previously shown that PPC representations are unstable over days during a delayed VR T-maze task. Here, using linear decoders, they find that a static decoder can do a reasonable job if trained on data from all days, and that an old model of synaptic weight updates can be applied to maintain decoder performance. The analyses seem to have been done reasonably, but the results strike me as rather shallow and are based on limited data.\n\nThe first main result is simply that unstable representations cause single-day (linear) decoders to generalize poorly, but a multi-day decoder to perform somewhat better. I have two issues with this result:\n\n1) Given that activity is sparse and does not have systematic shifts in tuning, this decoding result is very nearly a mathematical necessity. Because of sparsity, the decoder likely ends up built so that different units drive the decoder performance on different sessions. This would not be news. Further, there are no null models analyzed for what would happen under different patterns of tuning shifts, which would be a helpful comparison. It is therefore not clear whether there is anything to be surprised at here.\n\n2) How stable is the behavior within and across sessions? Details of behavior matter all over the brain (Stringer, Pachitariu et al., 2019, Musall, Kaufman et al., 2019), so it is possible that drift in behavioral details could lead to these shifts as well. At least, it should really be shown whether the parameters the authors track are stable over time.\n\nThese points said, there is value in this section. The quantifications of instability and of how many neurons are required for good decoder quality are helpful, and the point that only 6% of neurons are even in the top 50% of informativeness is surprising and interesting.\n\nThe second major result is the application of the Widrow and Hoff, 1962 model. If I understand correctly, this is primarily a different way of quantifying how fast the tuning changes occur (requiring ~2%/minute weight changes), and secondarily a proof of principle for that model. However, unless I'm missing something, this is a one-mouse result. That would not meet the standard for the field. In addition, comment #2 above applies to this result as well, making it harder to interpret.\n\nReviewer #3:\n\nIn their report, Loback and colleagues reanalyze data from Driscoll et al., 2017. They confirm the finding of that paper, namely that neuronal representations in the parietal cortex of mice reorganize over the time scale of days, while the overall information content is preserved. The authors then more specifically study the dynamics of these changes and relate them to simplified synaptic plasticity rules.\n\nOverall, I find that the paper is clearly written and everything seems technically correct. However, I also find that it lacks scientific novelty. While I find the idea of linking the observed reorganization of neural activity with synaptic plasticity exciting, I find that the paper does not quite achieve that. I think the authors would need to work out some concrete consequences/constraints on plasticity for\n\nthis paper to become viable.\n\nBroadly speaking, the current study is divided into two parts. The first part is a re-analysis of the data of Driscoll et al., 2017, which is performed in Figures 1-3. The authors use decoding methods to retrieve task information from the population activity. While some of the details of the population decoding methods are different to those used by the Driscoll et al., the overall conclusions are the same. The strongest point of the re-analysis is that the authors more clearly quantify the strength of the day-to-day changes using decoders that are constrained to change only little over days. That is a nice twist that was not performed in the Driscoll paper.\n\nThe second part of the paper is an attempt to relate these day-to-day changes to synaptic plasticity (Figures 3, 4). This part is rather brief and quite sketchy. Roughly, the authors simply reformulate the constrained decoder as an adaptive decoder. Conceptually, that is similar to the ideas brought forward by Rokni et al., Ajemian et al., and others. What could make this part interesting, is if this link could be made stronger, i.e., if it could really be a link to synaptic plasticity, rather than a link to a hypothetical readout. But even if the authors limit themselves to a single readout neuron, many questions are left unaddressed, e.g. how to extrapolate the adaptation rules for the decoder to realistic network sizes.\n\nOther comments:\n\n1) It was not clear to me what happens with the decoders within a session and between days. Do decoders 'jump' between days or stay roughly the same? How does that influence the adaptation rules?\n\n2) Legend of Figure 4 and subsection \u201cBiologically plausible weight adjustment can compensate for ongoing reconfiguration of PPC activity\u201d. You repeatedly state that you approach the 'concatenated decoder.' I guess that should be the 'constrained decoder', otherwise it makes no sense to me.\n\n[Editors\u2019 note: further revisions were suggested prior to acceptance, as described below.]\n\nThank you for choosing to send your work entitled \"Stable task information from an unstable neural population\" for consideration at eLife. Your letter of appeal has been considered by a Senior Editor and a Reviewing editor, and we are prepared to consider a revised submission with no guarantees of acceptance.\n\nPlease address the following concerns that were raised in the discussion of your appeal and revised manuscript:\n\nThe null model added is a very nice one (Figure 3\u2014figure supplement 2). It seems there has been a good effort to match it to properties of the data while incorporating a random walk. This is a crucial control. In addition, the new analysis of how drift aligns with coding vs. noise vs. chance (Figure 3\u2014figure supplement 3) is also of substantial interest. Both of these new results are for 4 mice, which is excellent. The framing in the new manuscript also makes it somewhat clearer what the point of this paper is.\n\nPoints left to address in full:\n\n1) Please go back and consider the more interesting null model in the other analyses and quantifications in this manuscript. This will improve many other parts of the paper. Please also place this new null model result in the main text of the paper.\n\n2) Regarding the new null model:\n\nPast evidence has clearly shown that neural tuning (or population activity) changes both randomly (assumed to be due to plasticity noise) and directionally (assumed to be due to feedback and learning). With the new null model, the analyses attempts to rule out a random walk. This is valuable effort. However, please add commentary on how this null model is useful despite ignoring the influence of the systematic, directional changes which were already demonstrated in the past, including the authors' own data, and which have usually been related to ongoing learning.\n\n3) Please address in full the expanded review comments sent during the initial appeal. That text is reproduced here:\n\nThank you for sending us your thoughts and questions about the reviewer comments. This is an excellent piece of work, and the rejection is in no way about whether or not this is solid and publishable. The debate amongst the reviewers revolved around whether it was a significant enough advance for eLife. I have consulted with the reviewers in question and have a more thorough explanation of their comments. Please feel free to reach out if you have further questions.\n\nThis manuscript does, indeed, have some basic controls / null models. The shuffle control shows that the decoding is better than chance, and the static same-day model gives an idea of how much the weights have to change per session to do as well as freshly retrained decoders. The null models we'd like to see would compare results with more specific models. This is explained below:\n\nThe issue that I think all of the reviewers had is that it wasn't clear how much we should be surprised by these results, and we weren't clear on what new beliefs we should have after reading this paper if we've already read Driscoll, 2017.\n\nThere are two basic results that are claimed to be original. First: we should be surprised by the success of a concatenated decoder. On reviewer commented:\n\n\"Given that activity is sparse and does not have systematic shifts in tuning, this decoding result is very nearly a mathematical necessity. Because of sparsity, the decoder likely ends up built so that different units drive the decoder performance on different sessions. This would not be news.\"\n\nIn other words, to believe that there's something novel here, we would want to see a null model that can recapitulate the changes seen in Driscoll, 2017, with similar sparsity in the responses, where there isn't an ability to obtain a good concatenated decoder. We'd like to see what's required to have a different result. Without that, we would have expected that the concatenated decoder would work well.\n\nSecond, as it was understood by the reviewers, the manuscript argues that we should be surprised that updating decoder weights with the Widrow and Hoff model works here. From Driscoll, 2017, we have an idea of how rapidly location selectivity changes, and how rapidly a static decoder decays. Given that we know this, how rapidly would you expect to have to change the decoder? We didn't see much in the paper that wasn't just a different way of quantifying the same tuning changes. One reviewer suggested adding more specific null models because they think this would let the authors answer these deeper questions. For example, are all of the neurons smoothly changing their tuning? Do some change fast and others slow, and is this a continuous distribution? Is there coordination between neurons' tuning changes or are neurons changing independently? The current null models are extremes: the shuffle is related to a model where everything changes instantly (obviously wrong), and the same-day decoder is equivalent to there being no changes ever (which we know is wrong from Driscoll, 2017). So, what new have we learned?\n\nFinally, regarding the result that only 6% of neurons are in the top 50% all 10 days: again, we lack the context to know how surprised we should be. If we suppose that the informative neurons are chosen randomly each day, then we'd expect the number of neurons that are in the top 50% for 10 days to be 0.5 ^ 9 = ~0.2%. In that case, 6% is surprisingly high. Looking at Driscoll's Figure 2B, ~40% of neurons keep their place preference for 10 days. In that case, 6% is surprisingly low. In fact, why is it so low? Could this just mean the decoder is under-regularized?\n",
+      "created_at": "2025-12-02T18:30:25.787586Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T18:30:25.787586Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T18:30:25.787586Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "c473ca84-af9b-4e5f-af7a-f9176c8314a4",
+      "content_id": "ad97463c-b806-425e-af22-eeb49a8eab56",
+      "claim_id": "C1",
+      "claim": "Neural activity representing an animal's position and movement in sensorimotor cortex has been found to continually reconfigure or 'drift' during repeated trials of learned tasks over days and weeks, with no obvious change in behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "Over days and weeks, neural activity representing an animal's position and movement in sensorimotor cortex has been found to continually reconfigure or 'drift' during repeated trials of learned tasks, with no obvious change in behavior.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about findings from prior research, supported by citations in the broader context of the manuscript.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:30:25.787586Z"
+    },
+    {
+      "id": "d9dd3aca-20fd-4aba-8f46-4ddac9744316",
+      "content_id": "ad97463c-b806-425e-af22-eeb49a8eab56",
+      "claim_id": "C2",
+      "claim": "Representational drift challenges classical theories which assume stable engrams underlie stable behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "This challenges classical theories, which assume stable engrams underlie stable behavior.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical interpretation based on established neuroscience theories and recent experimental findings.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:30:25.787586Z"
+    },
+    {
+      "id": "3e790879-20fc-4038-a32f-561f4be83bac",
+      "content_id": "ad97463c-b806-425e-af22-eeb49a8eab56",
+      "claim_id": "C3",
+      "claim": "Drift in posterior parietal cortex is systematically constrained far above chance, facilitating a linear weighted readout of behavioral variables.",
+      "claim_type": "EXPLICIT",
+      "source": "Analyzing long-term calcium imaging recordings from posterior parietal cortex in mice (Mus musculus), we show that drift is systematically constrained far above chance, facilitating a linear weighted readout of behavioral variables.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the authors' analysis of experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:30:25.787586Z"
+    },
+    {
+      "id": "6c5d3ef2-ca5a-4cb9-978e-7bc6ebd3afc9",
+      "content_id": "ad97463c-b806-425e-af22-eeb49a8eab56",
+      "claim_id": "C4",
+      "claim": "A significant component of drift continually degrades a fixed readout, implying that drift is not confined to a null coding space.",
+      "claim_type": "EXPLICIT",
+      "source": "However, a significant component of drift continually degrades a fixed readout, implying that drift is not confined to a null coding space.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the authors' data analysis showing degradation of fixed decoders over time.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:30:25.787586Z"
+    },
+    {
+      "id": "34269052-1780-4f0b-a3a4-8d344e8387b7",
+      "content_id": "ad97463c-b806-425e-af22-eeb49a8eab56",
+      "claim_id": "C5",
+      "claim": "The amount of plasticity required to compensate drift is within physiologically achievable bounds.",
+      "claim_type": "EXPLICIT",
+      "source": "We calculate the amount of plasticity required to compensate drift independently of any learning rule, and find that this is within physiologically achievable bounds.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on calculations performed by the authors comparing required plasticity rates to known physiological rates.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:30:25.787586Z"
+    },
+    {
+      "id": "64f5c1e0-ec6c-45df-a2fd-4fa624a12090",
+      "content_id": "ad97463c-b806-425e-af22-eeb49a8eab56",
+      "claim_id": "C6",
+      "claim": "A simple, biologically plausible local learning rule can accurately decode behavior over many days.",
+      "claim_type": "EXPLICIT",
+      "source": "We demonstrate that a simple, biologically plausible local learning rule can achieve these bounds, accurately decoding behavior over many days.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through simulations using the LMS algorithm on experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:30:25.787586Z"
+    },
+    {
+      "id": "9e7804ca-efec-4461-b33a-bd715750c416",
+      "content_id": "ad97463c-b806-425e-af22-eeb49a8eab56",
+      "claim_id": "C7",
+      "claim": "Neural activity\u2013behavior relationships in individual posterior parietal cortex neurons continually changed over many days during a repeated virtual navigation task.",
+      "claim_type": "EXPLICIT",
+      "source": "In our recent work (Driscoll et al., 2017), we found that neural activity\u2013behavior relationships in individual posterior parietal cortex (PPC) neurons continually changed over many days during a repeated virtual navigation task.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This refers to findings from a previous study by the authors.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:30:25.787586Z"
+    },
+    {
+      "id": "ae794bcc-5f33-4bf5-be4a-27858682fb62",
+      "content_id": "ad97463c-b806-425e-af22-eeb49a8eab56",
+      "claim_id": "C8",
+      "claim": "Similar representational drift has been shown in other neocortical areas and hippocampus.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar 'representational drift' has been shown in other neocortical areas and hippocampus (Attardo et al., 2015; Ziv et al., 2013; Levy et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to other published studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:30:25.787586Z"
+    },
+    {
+      "id": "4e716448-1fa6-4bb1-9090-2d4f33eaac8d",
+      "content_id": "ad97463c-b806-425e-af22-eeb49a8eab56",
+      "claim_id": "C9",
+      "claim": "Representational drift is observed in brain areas essential for performing the task long after the task has been learned.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, these studies showed that representational drift is observed in brain areas essential for performing the task long after the task has been learned.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of findings from cited studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:30:25.787586Z"
+    },
+    {
+      "id": "cbfee67d-104c-4b2d-9f58-083da938ed2c",
+      "content_id": "ad97463c-b806-425e-af22-eeb49a8eab56",
+      "claim_id": "C10",
+      "claim": "A consistent readout of a representation can be achieved if drift in neural activity patterns occurs in dimensions orthogonal to coding dimensions - in a 'null coding space'.",
+      "claim_type": "EXPLICIT",
+      "source": "Theoretical work has proposed that a consistent readout of a representation can be achieved if drift in neural activity patterns occurs in dimensions of population activity that are orthogonal to coding dimensions - in a 'null coding space' (Rokni et al., 2007; Druckmann and Chklovskii, 2012; Ajemian et al., 2013; Singh et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical proposal from cited literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:30:25.787586Z"
+    },
+    {
+      "id": "ef2b5020-554e-483e-8103-b0ec0849e903",
+      "content_id": "ad97463c-b806-425e-af22-eeb49a8eab56",
+      "claim_id": "C11",
+      "claim": "Low-dimensional dynamics distributed over many neurons can facilitate drift in a null coding space.",
+      "claim_type": "EXPLICIT",
+      "source": "This can be facilitated by neural representations that consist of low-dimensional dynamics distributed over many neurons (Montijn et al., 2016; Gallego et al., 2018; Hennig et al., 2018; Degenhart et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to theoretical and experimental studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:30:25.787586Z"
+    },
+    {
+      "id": "90718e5d-21fa-42b0-af96-c4a3e9de9cec",
+      "content_id": "ad97463c-b806-425e-af22-eeb49a8eab56",
+      "claim_id": "C12",
+      "claim": "Redundancy in neural codes could permit substantial reconfiguration of tuning in single cells without disrupting neural codes.",
+      "claim_type": "EXPLICIT",
+      "source": "Redundancy could therefore permit substantial reconfiguration of tuning in single cells without disrupting neural codes (Druckmann and Chklovskii, 2012; Huber et al., 2012; Kaufman et al., 2014; Ni et al., 2018; Kappel et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical inference supported by citations.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:30:25.787586Z"
+    },
+    {
+      "id": "bebb7054-fe41-409d-a839-b1422cf2cc0d",
+      "content_id": "ad97463c-b806-425e-af22-eeb49a8eab56",
+      "claim_id": "C13",
+      "claim": "The extent to which drift is confined to a null coding space remains an open question.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the extent to which drift is confined in such a null coding space remains an open question.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the current state of knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:30:25.787586Z"
+    },
+    {
+      "id": "3c26f769-1204-444f-89d9-ca9db5ce7f67",
+      "content_id": "ad97463c-b806-425e-af22-eeb49a8eab56",
+      "claim_id": "C14",
+      "claim": "Purely random drift would eventually disrupt a population code.",
+      "claim_type": "EXPLICIT",
+      "source": "Purely random drift, as would occur if synaptic strengths and other circuit parameters follow independent random walks, would eventually disrupt a population code.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical inference about the consequences of random drift.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:30:25.787586Z"
+    },
+    {
+      "id": "caf0c8e0-80b5-4b6a-a515-aca6146640b5",
+      "content_id": "ad97463c-b806-425e-af22-eeb49a8eab56",
+      "claim_id": "C15",
+      "claim": "Cortical synaptic weights and synaptic connections exhibit statistics consistent with a purely random process.",
+      "claim_type": "EXPLICIT",
+      "source": "Several studies have provided evidence that cortical synaptic weights and synaptic connections exhibit statistics that are consistent with a purely random process (Moczulska et al., 2013; Loewenstein et al., 2011; Loewenstein et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to experimental studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:30:25.787586Z"
+    },
+    {
+      "id": "04105c31-6111-43c9-890a-1f8e5a5c4c49",
+      "content_id": "ad97463c-b806-425e-af22-eeb49a8eab56",
+      "claim_id": "C16",
+      "claim": "Drift includes cells that lose representations of task relevant variables, suggesting that some component of drift affects coding dimensions.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, our previous experimental findings reveal that drift includes cells that lose representations of task relevant variables, suggesting that some component of drift affects coding dimensions (Driscoll et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on findings from a previous study by the authors.",
+      "evidence_type": "[\"CITATION\", \"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:30:25.787586Z"
+    },
+    {
+      "id": "df8671ab-6107-496a-8ffc-f9bc1e1d50a1",
+      "content_id": "ad97463c-b806-425e-af22-eeb49a8eab56",
+      "claim_id": "C17",
+      "claim": "Mice were trained to associate a visual cue at the start of the maze with turning left or right at a T-junction.",
+      "claim_type": "EXPLICIT",
+      "source": "Mice were trained to associate a visual cue at the start of the maze with turning left or right at a T-junction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental task design.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:30:25.787586Z"
+    },
+    {
+      "id": "f9eea274-a85c-4257-88fa-aac66572e604",
+      "content_id": "ad97463c-b806-425e-af22-eeb49a8eab56",
+      "claim_id": "C18",
+      "claim": "Behavioral performance and kinematic variables were stable over time with some per-session variability.",
+      "claim_type": "EXPLICIT",
+      "source": "Behavioral performance and kinematic variables were stable over time with some per-session variability (mouse four exhibited a slight decrease in forward speed; Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in a supplementary figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:30:25.787586Z"
+    },
+    {
+      "id": "8e904686-2519-4c04-9c54-6facaafff31b",
+      "content_id": "ad97463c-b806-425e-af22-eeb49a8eab56",
+      "claim_id": "C19",
+      "claim": "Mouse four exhibited a slight decrease in forward speed over time.",
+      "claim_type": "EXPLICIT",
+      "source": "Behavioral performance and kinematic variables were stable over time with some per-session variability (mouse four exhibited a slight decrease in forward speed; Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on data shown in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:30:25.787586Z"
+    },
+    {
+      "id": "36572021-ae5c-429f-8041-af9a6c0d0fa5",
+      "content_id": "ad97463c-b806-425e-af22-eeb49a8eab56",
+      "claim_id": "C20",
+      "claim": "PPC has planning and choice-based roles in the T-maze task.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies identified planning and choice-based roles for PPC in the T-maze task (Harvey et al., 2012), and stable decoding of such binary variables was explored in Driscoll et al., 2017.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:30:25.787586Z"
+    },
+    {
+      "id": "4c6046f0-fe1c-42ce-a903-9c64e4d0fee4",
+      "content_id": "ad97463c-b806-425e-af22-eeb49a8eab56",
+      "claim_id": "C21",
+      "claim": "In primates, PPC has traditionally been viewed as containing continuous motor-related representations.",
+      "claim_type": "EXPLICIT",
+      "source": "However, in primates PPC has traditionally been viewed as containing continuous motor-related representations (Andersen et al., 1997; Andersen and Buneo, 2002; Mulliken et al., 2008), and recent work (Krumin et al., 2018; Minderer et al., 2019) has confirmed that PPC has an equally motor-like role in spatial navigation in rodents (Calton and Taube, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to studies in primates and rodents.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:30:25.787586Z"
+    },
+    {
+      "id": "91d15324-41e1-4fee-ba6d-285cedd7aa5b",
+      "content_id": "ad97463c-b806-425e-af22-eeb49a8eab56",
+      "claim_id": "C22",
+      "claim": "PPC has a motor-like role in spatial navigation in rodents.",
+      "claim_type": "EXPLICIT",
+      "source": "However, in primates PPC has traditionally been viewed as containing continuous motor-related representations (Andersen et al., 1997; Andersen and Buneo, 2002; Mulliken et al., 2008), and recent work (Krumin et al., 2018; Minderer et al., 2019) has confirmed that PPC has an equally motor-like role in spatial navigation in rodents (Calton and Taube, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to recent studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:30:25.787586Z"
+    },
+    {
+      "id": "06058b1b-d5f8-4fd4-9f4d-236fe99c4810",
+      "content_id": "ad97463c-b806-425e-af22-eeb49a8eab56",
+      "claim_id": "C23",
+      "claim": "PPC neurons activated at specific locations in the maze on each day.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous analyses showed that PPC neurons activated at specific locations in the maze on each day.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This refers to findings from previous analyses of the data.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:30:25.787586Z"
+    },
+    {
+      "id": "64936804-6339-49e3-9578-ee52b6c79eda",
+      "content_id": "ad97463c-b806-425e-af22-eeb49a8eab56",
+      "claim_id": "C24",
+      "claim": "When peak activation is plotted as a function of linearized maze location, the recorded population tiles the maze.",
+      "claim_type": "EXPLICIT",
+      "source": "When peak activation is plotted as a function of (linearized) maze location, the recorded population tiles the maze, as shown in Figure 1b.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 1b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:30:25.787586Z"
+    },
+    {
+      "id": "966fca4f-720c-4519-be5e-9c260c433f5e",
+      "content_id": "ad97463c-b806-425e-af22-eeb49a8eab56",
+      "claim_id": "C25",
+      "claim": "Maintaining the same ordering in the same population of neurons revealed a loss of sequential activity over days to weeks.",
+      "claim_type": "EXPLICIT",
+      "source": "However, maintaining the same ordering in the same population of neurons revealed a loss of sequential activity over days to weeks (top row of Figure 1b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 1b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:30:25.787586Z"
+    },
+    {
+      "id": "9de2a514-86ce-4ffe-bfd3-53225d545f1e",
+      "content_id": "ad97463c-b806-425e-af22-eeb49a8eab56",
+      "claim_id": "C26",
+      "claim": "A different subset of neurons could always be found to tile the maze in later experimental sessions.",
+      "claim_type": "EXPLICIT",
+      "source": "Nonetheless, a different subset of neurons could always be found to tile the maze in these later experimental sessions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:30:25.787586Z"
+    },
+    {
+      "id": "5cf4c276-cc91-491d-85b4-26b1c1a7c479",
+      "content_id": "ad97463c-b806-425e-af22-eeb49a8eab56",
+      "claim_id": "C27",
+      "claim": "PPC neurons gain or lose selectivity and occasionally change tuning locations.",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 1c shows that PPC neurons gain or lose selectivity and occasionally change tuning locations.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 1c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:30:25.787586Z"
+    },
+    {
+      "id": "a9735f35-6d0d-481d-9f99-fb45af7b8b3e",
+      "content_id": "ad97463c-b806-425e-af22-eeb49a8eab56",
+      "claim_id": "C28",
+      "claim": "PPC neurons form a continually reconfiguring representation of a fixed, learned task.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these data show that PPC neurons form a continually reconfiguring representation of a fixed, learned task.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the data presented in Figure 1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:30:25.787586Z"
+    },
+    {
+      "id": "f55b7edc-f65e-4f72-a411-281fb9e25955",
+      "content_id": "ad97463c-b806-425e-af22-eeb49a8eab56",
+      "claim_id": "C29",
+      "claim": "Position, speed, and view angle can each be recovered with a separate linear model from PPC neural activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Position, speed, and view angle can each be recovered with a separate linear model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by the decoding analysis results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:30:25.787586Z"
+    },
+    {
+      "id": "37c58b62-336d-41cf-8e05-0b1822b9429f",
+      "content_id": "ad97463c-b806-425e-af22-eeb49a8eab56",
+      "claim_id": "C30",
+      "claim": "The average mean absolute decoding error for all animals was 47.2 cm \u00b18.8 cm for position, 9.6 cm/s \u00b12.2 cm/s for speed, and 13.8\u00b0 \u00b1 4.0\u00b0 for view angle.",
+      "claim_type": "EXPLICIT",
+      "source": "The average mean absolute decoding error for all animals included in the analysis was 47.2 cm \u00b18.8 cm (mean \u00b11 standard deviation) for position, 9.6 cm/s \u00b12.2 cm/s for speed, and 13.8\u00b0 \u00b1 4.0\u00b0 for view angle (Materials and methods: Decoding analyses).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from the decoding analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:30:25.787586Z"
+    },
+    {
+      "id": "2323e37a-d999-447d-a867-63806636fd97",
+      "content_id": "ad97463c-b806-425e-af22-eeb49a8eab56",
+      "claim_id": "C31",
+      "claim": "Brain areas with sufficiently dense connectivity to PPC can extract behavioral information via simple weighted sums.",
+      "claim_type": "EXPLICIT",
+      "source": "The fact that a linear decoder recovers behavioral variables to reasonable accuracy suggests that brain areas with sufficiently dense connectivity to PPC can extract this information via simple weighted sums.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the success of linear decoding.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:30:25.787586Z"
+    },
+    {
+      "id": "a37105c9-6106-428d-9a06-287662fdec60",
+      "content_id": "ad97463c-b806-425e-af22-eeb49a8eab56",
+      "claim_id": "C32",
+      "claim": "Better decoding performance might be possible with a larger population of randomly sampled PPC neurons than were recorded.",
+      "claim_type": "EXPLICIT",
+      "source": "Extrapolation of the decoding performance suggested that better performance might be possible with a larger population of randomly sampled PPC neurons than we recorded.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on extrapolation analysis shown in Figure 2c.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:30:25.787586Z"
+    },
+    {
+      "id": "c4259601-d823-4cf5-8965-bd80aac1e44b",
+      "content_id": "ad97463c-b806-425e-af22-eeb49a8eab56",
+      "claim_id": "C33",
+      "claim": "Performance improved rapidly up to ~30 neurons and saturated at ~30%(50\u2013100 neurons) of the neurons recorded when restricted to optimal subsets of neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "When we restricted to optimal subsets of neurons we found that performance improved rapidly up to \u223c30 neurons and saturated at \u223c30%(50\u2013100 neurons) of the neurons recorded (Figure 2d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 2d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:30:25.787586Z"
+    },
+    {
+      "id": "b5f75878-aa22-41c9-a807-bd13db7feb90",
+      "content_id": "ad97463c-b806-425e-af22-eeb49a8eab56",
+      "claim_id": "C34",
+      "claim": "On a given day task variables could be decoded well with relatively few (~10) neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "On a given day task variables could be decoded well with relatively few (\u223c10) neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the optimal subset analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:30:25.787586Z"
+    },
+    {
+      "id": "319ff504-0c82-4c36-ae0b-0694cdc50aee",
+      "content_id": "ad97463c-b806-425e-af22-eeb49a8eab56",
+      "claim_id": "C35",
+      "claim": "The identity of the neurons in the optimal subset changed over days.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the identity of the neurons in this optimal subset changed over days.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:30:25.787586Z"
+    },
+    {
+      "id": "fa86a200-c203-4e7b-b4a4-07eee4e7235e",
+      "content_id": "ad97463c-b806-425e-af22-eeb49a8eab56",
+      "claim_id": "C36",
+      "claim": "For all subjects, no more than 1% of cells were consistently ranked in the top 10%, and no more than 13% in the top 50%.",
+      "claim_type": "EXPLICIT",
+      "source": "For all subjects, no more than 1% of cells were consistently ranked in the top 10%, an no more than 13% in the top 50%.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from the ranking analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:30:25.787586Z"
+    },
+    {
+      "id": "21b8d1b0-df7e-4c44-b013-f252f725b91a",
+      "content_id": "ad97463c-b806-425e-af22-eeb49a8eab56",
+      "claim_id": "C37",
+      "claim": "60% of neurons with strong location tuning changed their location tuning over two weeks.",
+      "claim_type": "EXPLICIT",
+      "source": "Of the neurons with strong location tuning, Driscoll et al., 2017 found that 60% changed their location tuning over two weeks and a total of 80% changed over the 30- day period examined.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from a previous study by the authors.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:30:25.787586Z"
+    },
+    {
+      "id": "fd1e21eb-951c-421a-a03d-8f37c84d4632",
+      "content_id": "ad97463c-b806-425e-af22-eeb49a8eab56",
+      "claim_id": "C38",
+      "claim": "80% of neurons with strong location tuning changed their location tuning over 30 days.",
+      "claim_type": "EXPLICIT",
+      "source": "Of the neurons with strong location tuning, Driscoll et al., 2017 found that 60% changed their location tuning over two weeks and a total of 80% changed over the 30- day period examined.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from a previous study by the authors.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:30:25.787586Z"
+    },
+    {
+      "id": "e3292151-a97b-4980-af87-bb9f6240b1f0",
+      "content_id": "ad97463c-b806-425e-af22-eeb49a8eab56",
+      "claim_id": "C39",
+      "claim": "Even the small 'stable' subset of neurons exhibited daily variations in their Signal-to-Noise Ratio with respect to task decoding.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that even the small remaining 'stable' subset of neurons exhibited daily variations in their Signal-to-Noise Ratio (SNR) with respect to task decoding, consistent with other studies (Carmena et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the data analysis, consistent with cited studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:30:25.787586Z"
+    },
+    {
+      "id": "8b401bf7-9bf2-4761-a22f-f1196ace04f2",
+      "content_id": "ad97463c-b806-425e-af22-eeb49a8eab56",
+      "claim_id": "C40",
+      "claim": "No more than 8% of neurons that were in the top 25% in terms of tuning-peak stability were also consistently in the top 25% in terms of SNR for all days.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, no more than 8% of neurons that were in the top 25% in terms of tuning-peak stability were also consistently in the top 25% in terms of SNR for all days.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from the stability analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:30:25.787586Z"
+    },
+    {
+      "id": "5740891a-417d-45a6-82e2-ccba46c19a2f",
+      "content_id": "ad97463c-b806-425e-af22-eeb49a8eab56",
+      "claim_id": "C41",
+      "claim": "Decoding performance decreased as the separation between training and testing days grew.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that decoding performance decreased as the separation between days grew (Figure 3a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 3a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:30:25.787586Z"
+    },
+    {
+      "id": "3343c740-3e09-4c51-9bd6-786054e2442b",
+      "content_id": "ad97463c-b806-425e-af22-eeb49a8eab56",
+      "claim_id": "C42",
+      "claim": "Many different linear decoders can achieve similar error rates due to degeneracy in the representation.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, because task-related PPC activity is distributed over many neurons, many different linear decoders can achieve similar error rates due to the degeneracy in the representation (Rokni et al., 2007; Kaufman et al., 2014; Montijn et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the distributed nature of the representation, supported by citations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:30:25.787586Z"
+    },
+    {
+      "id": "07e955e7-2179-44de-8455-d9618505e965",
+      "content_id": "ad97463c-b806-425e-af22-eeb49a8eab56",
+      "claim_id": "C43",
+      "claim": "Single-day decoders might overlook a long-term stable subspace used for encoding and communication.",
+      "claim_type": "EXPLICIT",
+      "source": "Since the directions in population activity used for inter-area communication might differ from the directions that maximally encode stimulus information in the local population (Ni et al., 2018; Semedo et al., 2019), single-day decoders might overlook a long-term stable subspace used for encoding and communication.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical consideration supported by citations.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:30:25.787586Z"
+    },
+    {
+      "id": "9c5a633a-56ad-42cf-b3c0-67e2cfa9aa09",
+      "content_id": "ad97463c-b806-425e-af22-eeb49a8eab56",
+      "claim_id": "C44",
+      "claim": "A fixed linear decoder optimized across data from multiple days could recover accurate task variable information despite ongoing changes in PPC neuron tuning.",
+      "claim_type": "EXPLICIT",
+      "source": "In all four subjects, we found that such fixed multiple-day linear 'concatenated' decoders could recover accurate task variable information despite ongoing changes in PPC neuron tuning.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the concatenated decoder analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:30:25.787586Z"
+    },
+    {
+      "id": "3200ca5d-28ca-4a6d-acd0-f79f297d8dde",
+      "content_id": "ad97463c-b806-425e-af22-eeb49a8eab56",
+      "claim_id": "C45",
+      "claim": "The average performance of multiple-day decoders was significantly worse than single-day linear decoders for each day.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the average performance of the multiple-day decoders was significantly worse than single-day linear decoders for each day (Figure 3c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 3c with statistical testing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:30:25.787586Z"
+    },
+    {
+      "id": "31123504-a979-434c-94cc-07724b998d18",
+      "content_id": "ad97463c-b806-425e-af22-eeb49a8eab56",
+      "claim_id": "C46",
+      "claim": "The existence of a fixed, approximate decoder implies a degenerate representation of task variables in the population activity of PPC neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "The existence of a fixed, approximate decoder implies a degenerate representation of task variables in the population activity of PPC neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the concatenated decoder results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:30:25.787586Z"
+    },
+    {
+      "id": "6cf6c6f3-8844-4c9c-8726-733478ab8248",
+      "content_id": "ad97463c-b806-425e-af22-eeb49a8eab56",
+      "claim_id": "C47",
+      "claim": "A concatenated decoder performed substantially better on experimental data than on randomly drifting synthetic data with matched sparseness and matched within/between-session variability.",
+      "claim_type": "EXPLICIT",
+      "source": "In all subjects, we found that a concatenated decoder performed substantially better on experimental data than on randomly drifting synthetic data with matched sparseness and matched within/between-session variability (Figure 3d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 3d comparing data to null model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:30:25.787586Z"
+    },
+    {
+      "id": "335d24d3-fa4f-49a5-a3cb-e77bcc76c945",
+      "content_id": "ad97463c-b806-425e-af22-eeb49a8eab56",
+      "claim_id": "C48",
+      "claim": "The drift in the neural data is not purely random.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that the drift in the neural data is not purely random.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on comparison to the null model.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:30:25.787586Z"
+    },
+    {
+      "id": "8e699a28-64ed-4474-ac56-800802a854e5",
+      "content_id": "ad97463c-b806-425e-af22-eeb49a8eab56",
+      "claim_id": "C49",
+      "claim": "Drift is aligned above chance to within-session neural population variability.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that drift is indeed aligned above chance to within-session neural population variability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the drift alignment analysis shown in Figure 4c,d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:30:25.787586Z"
+    },
+    {
+      "id": "a2d18fdf-6b6c-409f-b2d3-fe0c380070da",
+      "content_id": "ad97463c-b806-425e-af22-eeb49a8eab56",
+      "claim_id": "C50",
+      "claim": "The biological mechanisms underlying drift are in part systematic and constrained by a requirement to keep a consistent population code over time.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that the biological mechanisms underlying drift are in part systematic and constrained by a requirement to keep a consistent population code over time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the alignment analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:30:25.787586Z"
+    },
+    {
+      "id": "1dab6326-0d7e-43c6-abee-74ef6cbf7b3c",
+      "content_id": "ad97463c-b806-425e-af22-eeb49a8eab56",
+      "claim_id": "C51",
+      "claim": "The projection of drift onto behavior-coding directions was small, but still above chance.",
+      "claim_type": "EXPLICIT",
+      "source": "In comparison, the projection of drift onto behavior-coding directions was small, but still above chance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the drift alignment analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:30:25.787586Z"
+    },
+    {
+      "id": "2e5f0a5c-e9a4-43ba-93d9-841669b00baf",
+      "content_id": "ad97463c-b806-425e-af22-eeb49a8eab56",
+      "claim_id": "C52",
+      "claim": "Ongoing compensation might be needed for a long-term stable readout.",
+      "claim_type": "EXPLICIT",
+      "source": "This is consistent with the hypothesis that ongoing compensation might be needed for a long-term stable readout.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis based on the finding that drift overlaps behavior-coding directions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:30:25.787586Z"
+    },
+    {
+      "id": "6400bf1c-d5ff-48e6-aaf4-9d820daae381",
+      "content_id": "ad97463c-b806-425e-af22-eeb49a8eab56",
+      "claim_id": "C53",
+      "claim": "Modest weight changes per day (\u223c12\u201325% per session) are sufficient to match the performance of single-day decoders.",
+      "claim_type": "EXPLICIT",
+      "source": "Performance improves rapidly once small weight changes are permitted (\u223c12\u201325% per session).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in Figure 4b from the constrained decoder analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:30:25.787586Z"
+    },
+    {
+      "id": "796e6aad-b56b-44ab-896d-9dbb32689883",
+      "content_id": "ad97463c-b806-425e-af22-eeb49a8eab56",
+      "claim_id": "C54",
+      "claim": "Relatively modest amounts of synaptic plasticity might suffice to keep encoding consistent with changes in representation, provided a mechanism exists to implement appropriate weight changes.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, relatively modest amounts of synaptic plasticity might suffice to keep encoding consistent with changes in representation, provided a mechanism exists to implement appropriate weight changes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the constrained decoder analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:30:25.787586Z"
+    },
+    {
+      "id": "919fdd5e-0309-4c44-bdd5-d7215a1e7bcf",
+      "content_id": "ad97463c-b806-425e-af22-eeb49a8eab56",
+      "claim_id": "C55",
+      "claim": "Constraining drift to a subspace of rank 14\u201326 led to similar concatenated decoder performance as the data in three of four mice.",
+      "claim_type": "EXPLICIT",
+      "source": "In these simulations, we found that constraining drift to a subspace of rank 14\u201326 (red vertical lines) led to similar performance as the data (dashed horizontal lines) in all subjects except for mouse 5.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:30:25.787586Z"
+    },
+    {
+      "id": "9bb0e443-9791-490c-bd75-0c2ea55b7ea0",
+      "content_id": "ad97463c-b806-425e-af22-eeb49a8eab56",
+      "claim_id": "C56",
+      "claim": "The LMS algorithm is biologically plausible because it only requires each synapse to access its current weight and recent prediction error.",
+      "claim_type": "EXPLICIT",
+      "source": "This algorithm is biologically plausible because it only requires each synapse to access its current weight and recent prediction error (Figure 5a, Materials and methods: Online LMS algorithm).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a property of the LMS algorithm.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:30:25.787586Z"
+    },
+    {
+      "id": "c64b5cc4-7d0b-4023-a626-28505ea59e2c",
+      "content_id": "ad97463c-b806-425e-af22-eeb49a8eab56",
+      "claim_id": "C57",
+      "claim": "As the rate of synaptic plasticity is increased, LMS achieves error rates comparable to the concatenated decoder.",
+      "claim_type": "EXPLICIT",
+      "source": "As the rate of synaptic plasticity is increased, LMS achieves error rates comparable to the concatenated decoder.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in Figure 5b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:30:25.787586Z"
+    },
+    {
+      "id": "7ff62f78-b347-4073-abf0-5a7601922a90",
+      "content_id": "ad97463c-b806-425e-af22-eeb49a8eab56",
+      "claim_id": "C58",
+      "claim": "LMS with a learning rate of 4 \u00d7 10-4/sample achieved inter-day weight changes of 7.6-10.4%.",
+      "claim_type": "EXPLICIT",
+      "source": "For the LMS algorithm, we observed inter-day weight changes of 7.6-10.4%, consistent with observed rates of change in the volume of dendritic spines in other studies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from the LMS analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:30:25.787586Z"
+    },
+    {
+      "id": "ae01feda-7ce8-4f4b-8412-dd7bfdc26ab2",
+      "content_id": "ad97463c-b806-425e-af22-eeb49a8eab56",
+      "claim_id": "C59",
+      "claim": "The inter-day weight changes observed with LMS are consistent with observed rates of change in the volume of dendritic spines in other studies.",
+      "claim_type": "EXPLICIT",
+      "source": "For the LMS algorithm, we observed inter-day weight changes of 7.6-10.4%, consistent with observed rates of change in the volume of dendritic spines in other studies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This compares the modeling results to experimental observations from other studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:30:25.787586Z"
+    },
+    {
+      "id": "b3d75fb9-e134-481d-ae41-30264fbdb6cb",
+      "content_id": "ad97463c-b806-425e-af22-eeb49a8eab56",
+      "claim_id": "C60",
+      "claim": "LMS struggled to match the unconstrained drift of the null model.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, we found that LMS struggled to match the unconstrained drift of the null model explored in Figure 3d.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from testing LMS on the null model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:30:25.787586Z"
+    },
+    {
+      "id": "93e984b1-cde7-486f-a225-f7a645869dde",
+      "content_id": "ad97463c-b806-425e-af22-eeb49a8eab56",
+      "claim_id": "C61",
+      "claim": "Calibrating the LMS learning rate on the null model to match the mean performance seen on the true data required an average weight change of 93% per day.",
+      "claim_type": "EXPLICIT",
+      "source": "Calibrating the LMS learning rate on the null model to match the mean performance seen on the true data required an average weight change of 93% per day.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from testing LMS on the null model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:30:25.787586Z"
+    },
+    {
+      "id": "fa7b1648-fb69-4249-bdf4-8212dba6110d",
+      "content_id": "ad97463c-b806-425e-af22-eeb49a8eab56",
+      "claim_id": "C63",
+      "claim": "Drift is highly structured, facilitating online compensation with a local learning rule.",
+      "claim_type": "EXPLICIT",
+      "source": "This further indicates that drift is highly structured, facilitating online compensation with a local learning rule.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the comparison of LMS performance on data versus null model.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:30:25.787586Z"
+    },
+    {
+      "id": "3eaac6f1-fa1c-47df-9522-9fffcc30ab61",
+      "content_id": "ad97463c-b806-425e-af22-eeb49a8eab56",
+      "claim_id": "C64",
+      "claim": "The per-synapse magnitude of plasticity necessarily increases when smaller subsets are used for a readout.",
+      "claim_type": "EXPLICIT",
+      "source": "The per-synapse magnitude of plasticity necessarily increases when smaller subsets are used for a readout (Figure 5\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 5\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:30:25.787586Z"
+    },
+    {
+      "id": "de5ee0b9-4d24-4a0c-8ee1-a490920668e5",
+      "content_id": "ad97463c-b806-425e-af22-eeb49a8eab56",
+      "claim_id": "C65",
+      "claim": "Lower rates of plasticity would be expected for larger populations.",
+      "claim_type": "EXPLICIT",
+      "source": "One would therefore expect lower rates of plasticity for larger populations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the relationship between population size and required plasticity.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:30:25.787586Z"
+    },
+    {
+      "id": "842ba7d7-5025-48db-9905-be6973a1ca69",
+      "content_id": "ad97463c-b806-425e-af22-eeb49a8eab56",
+      "claim_id": "C66",
+      "claim": "When neurons were combined across mice into a large synthetic population (1238 cells), the plasticity required to achieve target error asymptotes at less than 4% per day.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, when we combined neurons across mice into a large synthetic population (1238 cells), we found that the plasticity required to achieve target error asymptotes at less than 4% per day (Figure 5\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 5\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:30:25.787586Z"
+    },
+    {
+      "id": "f4a72d10-2f55-4e73-b9a9-416f035705f5",
+      "content_id": "ad97463c-b806-425e-af22-eeb49a8eab56",
+      "claim_id": "C67",
+      "claim": "Representational drift occurred in both coding and non-coding subspaces.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we found that representational drift occurred in both coding and non-coding subspaces.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the main findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:30:25.787586Z"
+    },
+    {
+      "id": "e652aca9-32aa-4657-94f6-5b5521eef2d5",
+      "content_id": "ad97463c-b806-425e-af22-eeb49a8eab56",
+      "claim_id": "C68",
+      "claim": "On a timescale of a few days, redundancy in the neural population could accommodate a significant component of drift, assuming a biological mechanism exists for establishing appropriate readout weights.",
+      "claim_type": "EXPLICIT",
+      "source": "On a timescale of a few days, redundancy in the neural population could accommodate a significant component of drift, assuming a biological mechanism exists for establishing appropriate readout weights.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from the analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:30:25.787586Z"
+    },
+    {
+      "id": "d98d0b69-3505-4e61-81bf-6873e5516ec4",
+      "content_id": "ad97463c-b806-425e-af22-eeb49a8eab56",
+      "claim_id": "C69",
+      "claim": "The existence of an approximately stable subspace was not simply a result of population redundancy, since random diffusive drift quickly degraded a downstream readout.",
+      "claim_type": "EXPLICIT",
+      "source": "Simulations suggested that the existence of this approximately stable subspace were not simply a result of population redundancy, since random diffusive drift quickly degraded a downstream readout.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on comparison to the null model simulations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:30:25.787586Z"
+    },
+    {
+      "id": "27174163-c61b-462d-80cb-d5529fd9d622",
+      "content_id": "ad97463c-b806-425e-af22-eeb49a8eab56",
+      "claim_id": "C70",
+      "claim": "A non-negligible component of drift resides outside the null space of a linear encoding subspace, implying that drift will eventually destroy any fixed-weight readout.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, a non-negligible component of drift resides outside the null space of a linear encoding subspace, implying that drift will eventually destroy any fixed-weight readout.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the degradation of concatenated decoders over time.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:30:25.787586Z"
+    },
+    {
+      "id": "a223d9f3-1544-4b26-b22b-ee2d173497b2",
+      "content_id": "ad97463c-b806-425e-af22-eeb49a8eab56",
+      "claim_id": "C71",
+      "claim": "This destructive component of drift could be compensated with small and biologically realistic changes in synaptic weights, independently of any specific learning rule.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we showed that this destructive component of drift could be compensated with small and biologically realistic changes in synaptic weights, independently of any specific learning rule.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the constrained decoder analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:30:25.787586Z"
+    },
+    {
+      "id": "180013a5-4b1c-495b-b898-6d8af5a88759",
+      "content_id": "ad97463c-b806-425e-af22-eeb49a8eab56",
+      "claim_id": "C72",
+      "claim": "A simple and biologically plausible learning rule can achieve compensation over long timescales with modest rates of plasticity.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, we provided an example of a simple and biologically plausible learning rule that can achieve such compensation over long timescales with modest rates of plasticity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by the LMS algorithm results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:30:25.787586Z"
+    },
+    {
+      "id": "993b0680-f213-4812-999d-2d400a4f9d33",
+      "content_id": "ad97463c-b806-425e-af22-eeb49a8eab56",
+      "claim_id": "C73",
+      "claim": "A single unit with connections to ~100 PPC neurons can accurately decode task information with modest changes in synaptic weights over many days.",
+      "claim_type": "EXPLICIT",
+      "source": "If our modeling results are taken literally, this would suggest that a single unit with connections to \u223c100 PPC neurons can accurately decode task information with modest changes in synaptic weights over many days.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the modeling results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:30:25.787586Z"
+    },
+    {
+      "id": "ab7ed9ad-dbb7-4d58-8079-f9a6098ed175",
+      "content_id": "ad97463c-b806-425e-af22-eeb49a8eab56",
+      "claim_id": "C74",
+      "claim": "These findings provide some of the first evidence from experimental data that representational drift could be compatible with long-term memories of learned behavioral associations.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, our findings provide some of the first evidence from experimental data that representational drift could be compatible with long-term memories of learned behavioral associations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the significance of the findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:30:25.787586Z"
+    },
+    {
+      "id": "f8833f82-ad4f-4b3c-9129-b163a91c6715",
+      "content_id": "ad97463c-b806-425e-af22-eeb49a8eab56",
+      "claim_id": "C75",
+      "claim": "Over multiple samples from different animals, analyses consistently suggest that drift will reconfigure the code entirely over months.",
+      "claim_type": "EXPLICIT",
+      "source": "However, over multiple samples from different animals our analyses consistently suggest that drift will reconfigure the code entirely over months.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the analyses across multiple animals.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:30:25.787586Z"
+    },
+    {
+      "id": "ac191c0c-3d91-4ff8-ad50-396617ee013f",
+      "content_id": "ad97463c-b806-425e-af22-eeb49a8eab56",
+      "claim_id": "C76",
+      "claim": "Past reliability in single cells is no guarantee of future stability.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, we found that past reliability in single cells is no guarantee of future stability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:30:25.787586Z"
+    },
+    {
+      "id": "99f4b832-08f5-4cc8-8c6c-7f7f4d811720",
+      "content_id": "ad97463c-b806-425e-af22-eeb49a8eab56",
+      "claim_id": "C77",
+      "claim": "Connections between neurons change on a timescale of hours to days with a small number of stable connections.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this, studies have shown that connectivity in mammalian cortex is surprisingly dynamic. Connections between neurons change on a timescale of hours to days with a small number of stable connections (Holtmaat et al., 2005; Minerbi et al., 2009; Holtmaat and Svoboda, 2009; Attardo et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to experimental studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:30:25.787586Z"
+    },
+    {
+      "id": "edb28e98-a8cf-4474-9906-15ebb5d17189",
+      "content_id": "ad97463c-b806-425e-af22-eeb49a8eab56",
+      "claim_id": "C78",
+      "claim": "The kind of reconfiguration observed in PPC is not seen in all parts of the brain; primary sensory and motor cortices can show remarkable stability in neural representations over time.",
+      "claim_type": "EXPLICIT",
+      "source": "We stress that the kind of reconfiguration observed in PPC is not seen in all parts of the brain; primary sensory and motor cortices can show remarkable stability in neural representations over time (Gallego et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to another study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:30:25.787586Z"
+    },
+    {
+      "id": "e3295f95-e6ec-48d2-ac32-898e77d817df",
+      "content_id": "ad97463c-b806-425e-af22-eeb49a8eab56",
+      "claim_id": "C79",
+      "claim": "Even if stable representations exist elsewhere in the brain, PPC still must communicate with these areas.",
+      "claim_type": "EXPLICIT",
+      "source": "However, even if stable representations exist elsewhere in the brain, PPC still must communicate with these areas.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference about neural communication.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:30:25.787586Z"
+    },
+    {
+      "id": "40d337b5-3fd6-4a0b-bda1-41ed0d93b5c1",
+      "content_id": "ad97463c-b806-425e-af22-eeb49a8eab56",
+      "claim_id": "C80",
+      "claim": "A component of ongoing plasticity maintains congruent representations across different neural circuits.",
+      "claim_type": "EXPLICIT",
+      "source": "We suggest that a component of ongoing plasticity maintains congruent representations across different neural circuits.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis proposed by the authors.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:30:25.787586Z"
+    },
+    {
+      "id": "14f8ba97-ba82-4170-9366-a1d6bdd73278",
+      "content_id": "ad97463c-b806-425e-af22-eeb49a8eab56",
+      "claim_id": "C81",
+      "claim": "Such maintenance would be important in a distributed, adaptive system like the brain, in which multiple areas learn in parallel.",
+      "claim_type": "EXPLICIT",
+      "source": "Such maintenance would be important in a distributed, adaptive system like the brain, in which multiple areas learn in parallel.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical consideration.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:30:25.787586Z"
+    },
+    {
+      "id": "9d1c6b87-1c5f-4e0e-bead-c38eaf83b881",
+      "content_id": "ad97463c-b806-425e-af22-eeb49a8eab56",
+      "claim_id": "C82",
+      "claim": "Neural circuits have continual access to two kinds of error signals: one reflecting mismatch between internal representations and external task variables, and another reflecting prediction mismatch between one neural circuit and another.",
+      "claim_type": "EXPLICIT",
+      "source": "We hypothesize that neural circuits have continual access to two kinds of error signals. One kind should reflect mismatch between internal representations and external task variables, and another should reflect prediction mismatch between one neural circuit and another.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis proposed by the authors.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:30:25.787586Z"
+    },
+    {
+      "id": "c4a1d46b-1577-4424-ac4a-92d6655a2943",
+      "content_id": "ad97463c-b806-425e-af22-eeb49a8eab56",
+      "claim_id": "C83",
+      "claim": "The virtual reality maze had a total length of 4.5 m.",
+      "claim_type": "EXPLICIT",
+      "source": "The length of the virtual reality maze was fixed to have a total length of 4.5 m.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental setup.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:30:25.787586Z"
+    },
+    {
+      "id": "3f4983f8-2d1d-4108-bc13-9c22b5be2276",
+      "content_id": "ad97463c-b806-425e-af22-eeb49a8eab56",
+      "claim_id": "C84",
+      "claim": "The cues were patterns on the walls (black with white dots or white with black dots), followed by a gray striped 'cue recall' segment (2.25 m long) that was identical across trial types.",
+      "claim_type": "EXPLICIT",
+      "source": "The cues were patterns on the walls (black with white dots or white with black dots), and were followed by a gray striped 'cue recall' segment (2.25 m long) that was identical across trial types.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental setup.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:30:25.787586Z"
+    },
+    {
+      "id": "3c7cf2cf-9ddf-4ef7-96e7-01260823187c",
+      "content_id": "ad97463c-b806-425e-af22-eeb49a8eab56",
+      "claim_id": "C85",
+      "claim": "Raw Ca2+ fluorescence videos were sampled at 5.3Hz.",
+      "claim_type": "EXPLICIT",
+      "source": "Raw Ca2+ fluorescence videos (sample rate=5.3Hz) were corrected for motion artefacts, and individual sources of Ca2+ fluorescence were identified and extracted (Driscoll et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the data acquisition.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:30:25.787586Z"
+    },
+    {
+      "id": "fb6c11f3-b106-4e03-9f64-4186b81b30d2",
+      "content_id": "ad97463c-b806-425e-af22-eeb49a8eab56",
+      "claim_id": "C86",
+      "claim": "For offline decoding, only correct trials were considered, and all signals were centered to zero-mean on each trial as a pre-processing step.",
+      "claim_type": "EXPLICIT",
+      "source": "For offline decoding, we considered only correct trials, and all signals were centered to zero-mean on each trial as a pre-processing step.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the data preprocessing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:30:25.787586Z"
+    },
+    {
+      "id": "1863d04d-50b1-4ef7-a1fb-8da5a2c5a528",
+      "content_id": "ad97463c-b806-425e-af22-eeb49a8eab56",
+      "claim_id": "C87",
+      "claim": "For Figures 3 and 4, the following data were used: M1: seven sessions, 15 days, 101 neurons; M3: 10 sessions, 13 days, 114 neurons; M4: 10 sessions, 11 days, 146 neurons; M5: seven sessions, 7 days, 112 neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "For Figures 3 and 4, we use the following data: M1: seven sessions, 15 days, 101 neurons; M3: 10 sessions, 13 days, 114 neurons; M4: 10 sessions, 11 days, 146 neurons; M5: seven sessions, 7 days, 112 neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the data used in specific analyses.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:30:25.787586Z"
+    },
+    {
+      "id": "6a5a3769-225a-47cc-9cb6-589f48aa86a5",
+      "content_id": "ad97463c-b806-425e-af22-eeb49a8eab56",
+      "claim_id": "C88",
+      "claim": "Up to two-day recording gaps between consecutive sessions from the same mouse were allowed.",
+      "claim_type": "EXPLICIT",
+      "source": "We allowed up to two-day recording gaps between consecutive sessions from the same mouse.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the data selection criteria.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:30:25.787586Z"
+    },
+    {
+      "id": "35d86d60-93f5-4220-94b0-9fef9e4de8ab",
+      "content_id": "ad97463c-b806-425e-af22-eeb49a8eab56",
+      "claim_id": "C91",
+      "claim": "The optimal regularization strength (\u03bb = 10-4 to 10-3) slightly reduced decoding error, but did not alter the ranking of cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The optimal regularization strength (\u03bb = 10-4 to 10-3) slightly reduced decoding error, but did not alter the ranking of cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the regularization analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:30:25.787586Z"
+    },
+    {
+      "id": "638d8fc1-f6d0-4e3f-ab66-54a3e77a28c0",
+      "content_id": "ad97463c-b806-425e-af22-eeb49a8eab56",
+      "claim_id": "C92",
+      "claim": "Gaussian process regression was implemented in Python, using a combination of a Mat\u00e9rn kernel and an additive white noise kernel.",
+      "claim_type": "EXPLICIT",
+      "source": "Gaussian process (GP) regression was implemented in Python, using a combination of a Mat\u00e9rn kernel and an additive white noise kernel.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the analysis method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:30:25.787586Z"
+    },
+    {
+      "id": "16c36760-e961-40ff-b1d3-a1282352d2d4",
+      "content_id": "ad97463c-b806-425e-af22-eeb49a8eab56",
+      "claim_id": "C93",
+      "claim": "Kernel parameters for Gaussian process regression were optimized via maximum likelihood.",
+      "claim_type": "EXPLICIT",
+      "source": "Kernel parameters were optimized via maximum likelihood (Scikit-learn, Pedregosa et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the analysis method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:30:25.787586Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "b90a055a-1f9f-4b93-8c69-71bdd2a667c1",
+      "content_id": "ad97463c-b806-425e-af22-eeb49a8eab56",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Representational drift\u2014continual reconfiguration of neural activity-behavior relationships\u2014has been observed in sensorimotor cortex, PPC, other neocortical areas, and hippocampus during repeated learned tasks without obvious behavioral changes, challenging classical theories of stable engrams.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C7-C9 are well-supported by citations to prior experimental work. C2 is a reasonable theoretical interpretation. These claims establish the context and motivation for the current study based on established findings in the field.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:30:25.787586Z"
+    },
+    {
+      "id": "d80372d4-90f6-4448-8bb5-b545d572e18e",
+      "content_id": "ad97463c-b806-425e-af22-eeb49a8eab56",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "PPC neurons form a continually reconfiguring representation of the learned T-maze task, with neurons activating at specific maze locations each day but losing sequential activity over days to weeks, while different subsets of neurons can tile the maze in later sessions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C23-C28 are directly supported by data shown in Figure 1b,c. The visualizations clearly demonstrate loss of sequential activity when neuron ordering is fixed, while showing that different subsets maintain spatial tiling. This is a core observational finding.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:30:25.787586Z"
+    },
+    {
+      "id": "4a1de7cb-a675-4556-b664-709d9f8f8723",
+      "content_id": "ad97463c-b806-425e-af22-eeb49a8eab56",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Behavioral variables (position, speed, view angle) can be accurately decoded from PPC neural activity using linear models, with mean absolute errors of 47.2\u00b18.8 cm for position, 9.6\u00b12.2 cm/s for speed, and 13.8\u00b14.0\u00b0 for view angle, suggesting downstream areas could extract information via simple weighted sums.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29-C30 are supported by decoding analysis results shown in Figure 2a,b with quantitative performance metrics. C31 is a reasonable inference about biological plausibility. The linear decoding approach is appropriate and well-validated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:30:25.787586Z"
+    },
+    {
+      "id": "80b35868-20a4-4887-b6f7-ab44cf49be1b",
+      "content_id": "ad97463c-b806-425e-af22-eeb49a8eab56",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Decoding performance saturates at ~30-100 neurons when using optimal subsets, with ~10 neurons sufficient for good single-day decoding, but the identity of optimal neurons changes over days with minimal consistency (\u22641% in top 10%, \u226413% in top 50%).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C36 are supported by analyses shown in Figure 2c,d. The extrapolation analysis (C32) uses appropriate GP regression. The optimal subset analysis demonstrates instability in neuron rankings, which is critical for understanding drift dynamics.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:30:25.787586Z"
+    },
+    {
+      "id": "12b4fe77-0af9-42a0-84b5-75667f3175c9",
+      "content_id": "ad97463c-b806-425e-af22-eeb49a8eab56",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "60-80% of strongly tuned neurons changed location tuning over 2-4 weeks, and even 'stable' neurons exhibited daily SNR variations, with minimal overlap (<8%) between neurons stable in tuning-peak and those stable in SNR.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-C38 cite prior work (Driscoll et al., 2017). C39-C40 present new quantitative analyses of stability that are consistent with the observed drift. These findings establish that no truly stable subset exists for long-term fixed readout.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:30:25.787586Z"
+    },
+    {
+      "id": "fb94ce8c-d8ef-4d37-b53e-b626538d7d62",
+      "content_id": "ad97463c-b806-425e-af22-eeb49a8eab56",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Fixed linear decoders trained on single days degrade when tested on other days, but concatenated decoders optimized across multiple days can recover accurate information despite drift, performing significantly worse than single-day decoders but better than chance, implying a degenerate representation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41, C44-C45 are supported by data in Figure 3a,c showing decoder degradation and concatenated decoder performance with statistical testing. C42-C43, C46 are reasonable inferences about degeneracy. The concatenated decoder analysis is methodologically sound.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:30:25.787586Z"
+    },
+    {
+      "id": "dfbf70f9-0e4b-4f91-adea-184680b96525",
+      "content_id": "ad97463c-b806-425e-af22-eeb49a8eab56",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Concatenated decoders perform substantially better on experimental data than on null models with random drift matched for sparseness and variability, and drift aligns above chance with within-session population variability, indicating drift is systematic and constrained rather than purely random.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47-C50 are supported by null model comparisons (Figure 3d) and drift alignment analyses (Figure 4c,d). The null model is appropriately designed to match key statistical properties. The alignment analysis provides quantitative evidence for systematic constraints on drift.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:30:25.787586Z"
+    },
+    {
+      "id": "21d76fc5-0f02-4534-912f-943effe1040a",
+      "content_id": "ad97463c-b806-425e-af22-eeb49a8eab56",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Drift projects onto behavior-coding directions at levels small but above chance, consistent with the hypothesis that ongoing compensation is needed for long-term stable readout.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C52 are supported by drift alignment analysis in Figure 4c,d. While drift aligns more with noise than coding directions, the above-chance alignment with coding directions is statistically demonstrated and motivates the compensation analyses that follow.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:30:25.787586Z"
+    },
+    {
+      "id": "9b840507-7ed2-4823-9b78-c28f2abc0782",
+      "content_id": "ad97463c-b806-425e-af22-eeb49a8eab56",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Modest weight changes per day (12-25% per session) are sufficient to match single-day decoder performance when optimizing decoders across days with weight change penalties, suggesting modest synaptic plasticity could maintain consistent encoding.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53-C54 are supported by constrained decoder analysis shown in Figure 4a,b. This analysis is independent of specific learning rules and provides a lower bound on required plasticity. The quantitative estimates are clearly presented and the methodology is sound.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:30:25.787586Z"
+    },
+    {
+      "id": "76bfd84c-22fe-40d2-893b-d8fe2ce6a9fa",
+      "content_id": "ad97463c-b806-425e-af22-eeb49a8eab56",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Constraining drift to a low-rank subspace (rank 14-26, ~20% of population dimensions) in simulations matched concatenated decoder performance for three of four mice.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C55 is supported by simulations in Figure 4\u2014figure supplement 1. This analysis provides insight into the dimensionality of drift. The failure for mouse 5 is acknowledged, and the authors appropriately note this could reflect limited data or other factors.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:30:25.787586Z"
+    },
+    {
+      "id": "e343f64b-3583-4b7e-b69b-4f8a5d2a7bf9",
+      "content_id": "ad97463c-b806-425e-af22-eeb49a8eab56",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The biologically plausible LMS learning algorithm achieves error rates comparable to concatenated decoders with inter-day weight changes of 7.6-10.4%, consistent with observed rates of dendritic spine volume changes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56-C59 are supported by LMS simulations shown in Figure 5 and supplements. C56 correctly describes LMS as biologically plausible due to local computation. C57-C58 present quantitative results. C59 appropriately compares to physiological observations, though the comparison is indirect.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:30:25.787586Z"
+    },
+    {
+      "id": "8b6511e4-a110-4f14-98ec-149a29568ba9",
+      "content_id": "ad97463c-b806-425e-af22-eeb49a8eab56",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "LMS struggled to compensate random drift in the null model, requiring 93% weight changes per day to match performance on real data versus 10% for real data, indicating drift is highly structured and facilitates compensation with local learning rules.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C60-C61, C63 are supported by testing LMS on the null model. The stark contrast (93% vs 10% weight changes) provides strong evidence that real drift is structured. This comparison strengthens the conclusion that drift is systematically constrained.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:30:25.787586Z"
+    },
+    {
+      "id": "dfad6f56-54ea-4d0d-9b25-e143ee89ee56",
+      "content_id": "ad97463c-b806-425e-af22-eeb49a8eab56",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Required plasticity per synapse increases for smaller populations, and extrapolation to a large synthetic population (1238 cells) shows plasticity requirements asymptote at <4% per day, suggesting lower rates for larger populations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C64-C66 are supported by analyses in Figure 5\u2014figure supplements 2-3. The scaling analysis addresses an important limitation (small recorded populations) and provides more realistic estimates. The synthetic population approach is reasonable though not equivalent to single-animal recordings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:30:25.787586Z"
+    },
+    {
+      "id": "6c012341-e559-4cdf-a3b6-7bc4d0cdee61",
+      "content_id": "ad97463c-b806-425e-af22-eeb49a8eab56",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Representational drift in PPC is systematically constrained above chance but includes components in both coding and non-coding subspaces that degrade fixed readouts; however, biologically achievable plasticity (12-25% weight changes per session, ~10% with LMS) can compensate this drift, providing evidence that drift is compatible with stable behavioral memories.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This integrative result synthesizes the major findings (C3-C6, C67-C74). The claims are well-supported by the concatenated decoder, constrained decoder, and LMS analyses. The conclusion that drift is compatible with stable memories is justified by demonstrating both systematic constraints and feasible compensation mechanisms.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:30:25.787586Z"
+    },
+    {
+      "id": "269d7e5d-3454-4291-9e07-35d933fe841f",
+      "content_id": "ad97463c-b806-425e-af22-eeb49a8eab56",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Analyses across multiple animals consistently suggest drift will completely reconfigure the neural code over months, with past reliability in single cells providing no guarantee of future stability.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C75-C76 are supported by the instability analyses (C35-C40) and the degradation of concatenated decoders over time. The conclusion about complete reconfiguration over months is a reasonable extrapolation from the observed rates of change over days to weeks.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:30:25.787586Z"
+    },
+    {
+      "id": "7e7af74f-20b1-4361-aa20-71b662b6d496",
+      "content_id": "ad97463c-b806-425e-af22-eeb49a8eab56",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Theoretical work proposes drift could be confined to null coding spaces through redundancy and low-dimensional dynamics, but the extent of such confinement remains unclear, and evidence suggests some drift affects coding dimensions including cells losing task-relevant representations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10-C12 accurately cite theoretical proposals. C13 correctly identifies the open question. C14-C16 present relevant considerations and prior findings. These claims appropriately frame the theoretical context and motivate the empirical investigations in this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:30:25.787586Z"
+    },
+    {
+      "id": "bd9101bf-0377-4330-b52f-c95362f3019b",
+      "content_id": "ad97463c-b806-425e-af22-eeb49a8eab56",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Mice performed a virtual T-maze task with stable behavioral performance and kinematics over time (except slight speed decrease in mouse 4), and PPC has both planning/choice roles and motor-related continuous representations relevant to spatial navigation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C17-C19 describe the experimental paradigm and are supported by methods and Figure 2\u2014figure supplement 1. C20-C22 cite prior work establishing PPC's functional roles. These claims provide necessary experimental context and justify focusing on continuous kinematic decoding.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:30:25.787586Z"
+    },
+    {
+      "id": "c84a9c18-20de-4c54-a427-95ec6dfa7dc8",
+      "content_id": "ad97463c-b806-425e-af22-eeb49a8eab56",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "The authors propose that ongoing plasticity maintains congruent representations across brain circuits, with neural circuits accessing error signals reflecting both internal-external mismatches and inter-circuit prediction mismatches, noting that PPC drift differs from stability in primary sensory/motor cortices.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C77-C78 appropriately cite prior work on connectivity dynamics and regional differences. However, C80-C82 are speculative hypotheses about mechanisms (marked as SPECULATION in evidence_type). While these are reasonable proposals motivated by the findings, they lack direct experimental support in this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:30:25.787586Z"
+    },
+    {
+      "id": "23620509-e3d7-4974-a154-fc2075d1daea",
+      "content_id": "ad97463c-b806-425e-af22-eeb49a8eab56",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "The study used calcium imaging data from mice performing a 4.5m virtual T-maze task with visual cues, analyzing 101-146 neurons per mouse across 7-10 sessions spanning 7-15 days, with appropriate preprocessing and statistical methods including regularization and Gaussian process regression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C83-C93 describe experimental methods, data characteristics, and analysis procedures. These are straightforward methodological descriptions that are adequately documented. The methods appear appropriate for the analyses performed, though some details about reproducibility could be enhanced.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:30:25.787586Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "c473ca84-af9b-4e5f-af7a-f9176c8314a4",
+      "result_id": "b90a055a-1f9f-4b93-8c69-71bdd2a667c1"
+    },
+    {
+      "claim_id": "d9dd3aca-20fd-4aba-8f46-4ddac9744316",
+      "result_id": "b90a055a-1f9f-4b93-8c69-71bdd2a667c1"
+    },
+    {
+      "claim_id": "9e7804ca-efec-4461-b33a-bd715750c416",
+      "result_id": "b90a055a-1f9f-4b93-8c69-71bdd2a667c1"
+    },
+    {
+      "claim_id": "ae794bcc-5f33-4bf5-be4a-27858682fb62",
+      "result_id": "b90a055a-1f9f-4b93-8c69-71bdd2a667c1"
+    },
+    {
+      "claim_id": "4e716448-1fa6-4bb1-9090-2d4f33eaac8d",
+      "result_id": "b90a055a-1f9f-4b93-8c69-71bdd2a667c1"
+    },
+    {
+      "claim_id": "06058b1b-d5f8-4fd4-9f4d-236fe99c4810",
+      "result_id": "d80372d4-90f6-4448-8bb5-b545d572e18e"
+    },
+    {
+      "claim_id": "64936804-6339-49e3-9578-ee52b6c79eda",
+      "result_id": "d80372d4-90f6-4448-8bb5-b545d572e18e"
+    },
+    {
+      "claim_id": "966fca4f-720c-4519-be5e-9c260c433f5e",
+      "result_id": "d80372d4-90f6-4448-8bb5-b545d572e18e"
+    },
+    {
+      "claim_id": "9de2a514-86ce-4ffe-bfd3-53225d545f1e",
+      "result_id": "d80372d4-90f6-4448-8bb5-b545d572e18e"
+    },
+    {
+      "claim_id": "5cf4c276-cc91-491d-85b4-26b1c1a7c479",
+      "result_id": "d80372d4-90f6-4448-8bb5-b545d572e18e"
+    },
+    {
+      "claim_id": "a9735f35-6d0d-481d-9f99-fb45af7b8b3e",
+      "result_id": "d80372d4-90f6-4448-8bb5-b545d572e18e"
+    },
+    {
+      "claim_id": "f55b7edc-f65e-4f72-a411-281fb9e25955",
+      "result_id": "4a1de7cb-a675-4556-b664-709d9f8f8723"
+    },
+    {
+      "claim_id": "37c58b62-336d-41cf-8e05-0b1822b9429f",
+      "result_id": "4a1de7cb-a675-4556-b664-709d9f8f8723"
+    },
+    {
+      "claim_id": "2323e37a-d999-447d-a867-63806636fd97",
+      "result_id": "4a1de7cb-a675-4556-b664-709d9f8f8723"
+    },
+    {
+      "claim_id": "a37105c9-6106-428d-9a06-287662fdec60",
+      "result_id": "80b35868-20a4-4887-b6f7-ab44cf49be1b"
+    },
+    {
+      "claim_id": "c4259601-d823-4cf5-8965-bd80aac1e44b",
+      "result_id": "80b35868-20a4-4887-b6f7-ab44cf49be1b"
+    },
+    {
+      "claim_id": "b5f75878-aa22-41c9-a807-bd13db7feb90",
+      "result_id": "80b35868-20a4-4887-b6f7-ab44cf49be1b"
+    },
+    {
+      "claim_id": "319ff504-0c82-4c36-ae0b-0694cdc50aee",
+      "result_id": "80b35868-20a4-4887-b6f7-ab44cf49be1b"
+    },
+    {
+      "claim_id": "fa86a200-c203-4e7b-b4a4-07eee4e7235e",
+      "result_id": "80b35868-20a4-4887-b6f7-ab44cf49be1b"
+    },
+    {
+      "claim_id": "21b8d1b0-df7e-4c44-b013-f252f725b91a",
+      "result_id": "12b4fe77-0af9-42a0-84b5-75667f3175c9"
+    },
+    {
+      "claim_id": "fd1e21eb-951c-421a-a03d-8f37c84d4632",
+      "result_id": "12b4fe77-0af9-42a0-84b5-75667f3175c9"
+    },
+    {
+      "claim_id": "e3292151-a97b-4980-af87-bb9f6240b1f0",
+      "result_id": "12b4fe77-0af9-42a0-84b5-75667f3175c9"
+    },
+    {
+      "claim_id": "8b401bf7-9bf2-4761-a22f-f1196ace04f2",
+      "result_id": "12b4fe77-0af9-42a0-84b5-75667f3175c9"
+    },
+    {
+      "claim_id": "5740891a-417d-45a6-82e2-ccba46c19a2f",
+      "result_id": "fb94ce8c-d8ef-4d37-b53e-b626538d7d62"
+    },
+    {
+      "claim_id": "3343c740-3e09-4c51-9bd6-786054e2442b",
+      "result_id": "fb94ce8c-d8ef-4d37-b53e-b626538d7d62"
+    },
+    {
+      "claim_id": "07e955e7-2179-44de-8455-d9618505e965",
+      "result_id": "fb94ce8c-d8ef-4d37-b53e-b626538d7d62"
+    },
+    {
+      "claim_id": "9c5a633a-56ad-42cf-b3c0-67e2cfa9aa09",
+      "result_id": "fb94ce8c-d8ef-4d37-b53e-b626538d7d62"
+    },
+    {
+      "claim_id": "3200ca5d-28ca-4a6d-acd0-f79f297d8dde",
+      "result_id": "fb94ce8c-d8ef-4d37-b53e-b626538d7d62"
+    },
+    {
+      "claim_id": "31123504-a979-434c-94cc-07724b998d18",
+      "result_id": "fb94ce8c-d8ef-4d37-b53e-b626538d7d62"
+    },
+    {
+      "claim_id": "6cf6c6f3-8844-4c9c-8726-733478ab8248",
+      "result_id": "dfbf70f9-0e4b-4f91-adea-184680b96525"
+    },
+    {
+      "claim_id": "335d24d3-fa4f-49a5-a3cb-e77bcc76c945",
+      "result_id": "dfbf70f9-0e4b-4f91-adea-184680b96525"
+    },
+    {
+      "claim_id": "8e699a28-64ed-4474-ac56-800802a854e5",
+      "result_id": "dfbf70f9-0e4b-4f91-adea-184680b96525"
+    },
+    {
+      "claim_id": "a2d18fdf-6b6c-409f-b2d3-fe0c380070da",
+      "result_id": "dfbf70f9-0e4b-4f91-adea-184680b96525"
+    },
+    {
+      "claim_id": "1dab6326-0d7e-43c6-abee-74ef6cbf7b3c",
+      "result_id": "21d76fc5-0f02-4534-912f-943effe1040a"
+    },
+    {
+      "claim_id": "2e5f0a5c-e9a4-43ba-93d9-841669b00baf",
+      "result_id": "21d76fc5-0f02-4534-912f-943effe1040a"
+    },
+    {
+      "claim_id": "6400bf1c-d5ff-48e6-aaf4-9d820daae381",
+      "result_id": "9b840507-7ed2-4823-9b78-c28f2abc0782"
+    },
+    {
+      "claim_id": "796e6aad-b56b-44ab-896d-9dbb32689883",
+      "result_id": "9b840507-7ed2-4823-9b78-c28f2abc0782"
+    },
+    {
+      "claim_id": "919fdd5e-0309-4c44-bdd5-d7215a1e7bcf",
+      "result_id": "76bfd84c-22fe-40d2-893b-d8fe2ce6a9fa"
+    },
+    {
+      "claim_id": "9bb0e443-9791-490c-bd75-0c2ea55b7ea0",
+      "result_id": "e343f64b-3583-4b7e-b69b-4f8a5d2a7bf9"
+    },
+    {
+      "claim_id": "c64b5cc4-7d0b-4023-a626-28505ea59e2c",
+      "result_id": "e343f64b-3583-4b7e-b69b-4f8a5d2a7bf9"
+    },
+    {
+      "claim_id": "7ff62f78-b347-4073-abf0-5a7601922a90",
+      "result_id": "e343f64b-3583-4b7e-b69b-4f8a5d2a7bf9"
+    },
+    {
+      "claim_id": "ae01feda-7ce8-4f4b-8412-dd7bfdc26ab2",
+      "result_id": "e343f64b-3583-4b7e-b69b-4f8a5d2a7bf9"
+    },
+    {
+      "claim_id": "b3d75fb9-e134-481d-ae41-30264fbdb6cb",
+      "result_id": "8b6511e4-a110-4f14-98ec-149a29568ba9"
+    },
+    {
+      "claim_id": "93e984b1-cde7-486f-a225-f7a645869dde",
+      "result_id": "8b6511e4-a110-4f14-98ec-149a29568ba9"
+    },
+    {
+      "claim_id": "fa7b1648-fb69-4249-bdf4-8212dba6110d",
+      "result_id": "8b6511e4-a110-4f14-98ec-149a29568ba9"
+    },
+    {
+      "claim_id": "3eaac6f1-fa1c-47df-9522-9fffcc30ab61",
+      "result_id": "dfad6f56-54ea-4d0d-9b25-e143ee89ee56"
+    },
+    {
+      "claim_id": "de5ee0b9-4d24-4a0c-8ee1-a490920668e5",
+      "result_id": "dfad6f56-54ea-4d0d-9b25-e143ee89ee56"
+    },
+    {
+      "claim_id": "842ba7d7-5025-48db-9905-be6973a1ca69",
+      "result_id": "dfad6f56-54ea-4d0d-9b25-e143ee89ee56"
+    },
+    {
+      "claim_id": "3e790879-20fc-4038-a32f-561f4be83bac",
+      "result_id": "6c012341-e559-4cdf-a3b6-7bc4d0cdee61"
+    },
+    {
+      "claim_id": "6c5d3ef2-ca5a-4cb9-978e-7bc6ebd3afc9",
+      "result_id": "6c012341-e559-4cdf-a3b6-7bc4d0cdee61"
+    },
+    {
+      "claim_id": "34269052-1780-4f0b-a3a4-8d344e8387b7",
+      "result_id": "6c012341-e559-4cdf-a3b6-7bc4d0cdee61"
+    },
+    {
+      "claim_id": "64f5c1e0-ec6c-45df-a2fd-4fa624a12090",
+      "result_id": "6c012341-e559-4cdf-a3b6-7bc4d0cdee61"
+    },
+    {
+      "claim_id": "f4a72d10-2f55-4e73-b9a9-416f035705f5",
+      "result_id": "6c012341-e559-4cdf-a3b6-7bc4d0cdee61"
+    },
+    {
+      "claim_id": "e652aca9-32aa-4657-94f6-5b5521eef2d5",
+      "result_id": "6c012341-e559-4cdf-a3b6-7bc4d0cdee61"
+    },
+    {
+      "claim_id": "d98d0b69-3505-4e61-81bf-6873e5516ec4",
+      "result_id": "6c012341-e559-4cdf-a3b6-7bc4d0cdee61"
+    },
+    {
+      "claim_id": "27174163-c61b-462d-80cb-d5529fd9d622",
+      "result_id": "6c012341-e559-4cdf-a3b6-7bc4d0cdee61"
+    },
+    {
+      "claim_id": "a223d9f3-1544-4b26-b22b-ee2d173497b2",
+      "result_id": "6c012341-e559-4cdf-a3b6-7bc4d0cdee61"
+    },
+    {
+      "claim_id": "180013a5-4b1c-495b-b898-6d8af5a88759",
+      "result_id": "6c012341-e559-4cdf-a3b6-7bc4d0cdee61"
+    },
+    {
+      "claim_id": "993b0680-f213-4812-999d-2d400a4f9d33",
+      "result_id": "6c012341-e559-4cdf-a3b6-7bc4d0cdee61"
+    },
+    {
+      "claim_id": "ab7ed9ad-dbb7-4d58-8079-f9a6098ed175",
+      "result_id": "6c012341-e559-4cdf-a3b6-7bc4d0cdee61"
+    },
+    {
+      "claim_id": "f8833f82-ad4f-4b3c-9129-b163a91c6715",
+      "result_id": "269d7e5d-3454-4291-9e07-35d933fe841f"
+    },
+    {
+      "claim_id": "ac191c0c-3d91-4ff8-ad50-396617ee013f",
+      "result_id": "269d7e5d-3454-4291-9e07-35d933fe841f"
+    },
+    {
+      "claim_id": "cbfee67d-104c-4b2d-9f58-083da938ed2c",
+      "result_id": "7e7af74f-20b1-4361-aa20-71b662b6d496"
+    },
+    {
+      "claim_id": "ef2b5020-554e-483e-8103-b0ec0849e903",
+      "result_id": "7e7af74f-20b1-4361-aa20-71b662b6d496"
+    },
+    {
+      "claim_id": "90718e5d-21fa-42b0-af96-c4a3e9de9cec",
+      "result_id": "7e7af74f-20b1-4361-aa20-71b662b6d496"
+    },
+    {
+      "claim_id": "bebb7054-fe41-409d-a839-b1422cf2cc0d",
+      "result_id": "7e7af74f-20b1-4361-aa20-71b662b6d496"
+    },
+    {
+      "claim_id": "3c26f769-1204-444f-89d9-ca9db5ce7f67",
+      "result_id": "7e7af74f-20b1-4361-aa20-71b662b6d496"
+    },
+    {
+      "claim_id": "caf0c8e0-80b5-4b6a-a515-aca6146640b5",
+      "result_id": "7e7af74f-20b1-4361-aa20-71b662b6d496"
+    },
+    {
+      "claim_id": "04105c31-6111-43c9-890a-1f8e5a5c4c49",
+      "result_id": "7e7af74f-20b1-4361-aa20-71b662b6d496"
+    },
+    {
+      "claim_id": "df8671ab-6107-496a-8ffc-f9bc1e1d50a1",
+      "result_id": "bd9101bf-0377-4330-b52f-c95362f3019b"
+    },
+    {
+      "claim_id": "f9eea274-a85c-4257-88fa-aac66572e604",
+      "result_id": "bd9101bf-0377-4330-b52f-c95362f3019b"
+    },
+    {
+      "claim_id": "8e904686-2519-4c04-9c54-6facaafff31b",
+      "result_id": "bd9101bf-0377-4330-b52f-c95362f3019b"
+    },
+    {
+      "claim_id": "36572021-ae5c-429f-8041-af9a6c0d0fa5",
+      "result_id": "bd9101bf-0377-4330-b52f-c95362f3019b"
+    },
+    {
+      "claim_id": "4c6046f0-fe1c-42ce-a903-9c64e4d0fee4",
+      "result_id": "bd9101bf-0377-4330-b52f-c95362f3019b"
+    },
+    {
+      "claim_id": "91d15324-41e1-4fee-ba6d-285cedd7aa5b",
+      "result_id": "bd9101bf-0377-4330-b52f-c95362f3019b"
+    },
+    {
+      "claim_id": "99f4b832-08f5-4cc8-8c6c-7f7f4d811720",
+      "result_id": "c84a9c18-20de-4c54-a427-95ec6dfa7dc8"
+    },
+    {
+      "claim_id": "edb28e98-a8cf-4474-9906-15ebb5d17189",
+      "result_id": "c84a9c18-20de-4c54-a427-95ec6dfa7dc8"
+    },
+    {
+      "claim_id": "e3295f95-e6ec-48d2-ac32-898e77d817df",
+      "result_id": "c84a9c18-20de-4c54-a427-95ec6dfa7dc8"
+    },
+    {
+      "claim_id": "40d337b5-3fd6-4a0b-bda1-41ed0d93b5c1",
+      "result_id": "c84a9c18-20de-4c54-a427-95ec6dfa7dc8"
+    },
+    {
+      "claim_id": "14f8ba97-ba82-4170-9366-a1d6bdd73278",
+      "result_id": "c84a9c18-20de-4c54-a427-95ec6dfa7dc8"
+    },
+    {
+      "claim_id": "9d1c6b87-1c5f-4e0e-bead-c38eaf83b881",
+      "result_id": "c84a9c18-20de-4c54-a427-95ec6dfa7dc8"
+    },
+    {
+      "claim_id": "c4a1d46b-1577-4424-ac4a-92d6655a2943",
+      "result_id": "23620509-e3d7-4974-a154-fc2075d1daea"
+    },
+    {
+      "claim_id": "3f4983f8-2d1d-4108-bc13-9c22b5be2276",
+      "result_id": "23620509-e3d7-4974-a154-fc2075d1daea"
+    },
+    {
+      "claim_id": "3c7cf2cf-9ddf-4ef7-96e7-01260823187c",
+      "result_id": "23620509-e3d7-4974-a154-fc2075d1daea"
+    },
+    {
+      "claim_id": "fb6c11f3-b106-4e03-9f64-4186b81b30d2",
+      "result_id": "23620509-e3d7-4974-a154-fc2075d1daea"
+    },
+    {
+      "claim_id": "1863d04d-50b1-4ef7-a1fb-8da5a2c5a528",
+      "result_id": "23620509-e3d7-4974-a154-fc2075d1daea"
+    },
+    {
+      "claim_id": "6a5a3769-225a-47cc-9cb6-589f48aa86a5",
+      "result_id": "23620509-e3d7-4974-a154-fc2075d1daea"
+    },
+    {
+      "claim_id": "35d86d60-93f5-4220-94b0-9fef9e4de8ab",
+      "result_id": "23620509-e3d7-4974-a154-fc2075d1daea"
+    },
+    {
+      "claim_id": "638d8fc1-f6d0-4e3f-ab66-54a3e77a28c0",
+      "result_id": "23620509-e3d7-4974-a154-fc2075d1daea"
+    },
+    {
+      "claim_id": "16c36760-e961-40ff-b1d3-a1282352d2d4",
+      "result_id": "23620509-e3d7-4974-a154-fc2075d1daea"
+    }
+  ],
+  "comparisons": []
+}

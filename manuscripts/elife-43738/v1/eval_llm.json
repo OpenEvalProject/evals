@@ -1,0 +1,410 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "The authors developed a synchronization protocol (2S/3S) that enriches preleptotene spermatocytes expressing STRA8 to ~44% of all cells (31-fold enrichment) and can isolate them with >90% purity without contamination from later-stage germ cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C16 are well-supported by quantitative histological data (Figure 1B,C) showing 31-fold enrichment and methodological validation from published work (Romer et al., 2018). The purity claim is supported by FACS data (Figure 1D) and the lack of contamination is verified by histological staging.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "At meiotic initiation, 2,361 genes are upregulated and 2,278 genes are downregulated (FDR<0.05). Remarkably, 97% of upregulated genes were already expressed in Stra8-deficient preleptotene cells, indicating that meiotic initiation primarily involves amplification rather than de novo activation of gene expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C21 are strongly supported by RNA-seq data comparing high-STRA8 and Stra8-deficient preleptotene cells (Figure 1E,F). The finding that 97% of upregulated genes are already expressed (C20) is particularly well-documented and leads to the logical inference about amplification (C21). The consistency across different STRA8 levels (C19) provides additional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "STRA8FLAG/FLAG mice are fully fertile with normal histology. ChIP-seq reveals that STRA8 binds primarily at promoters, with 83% of peaks within 1 kb of transcription start sites and 2,845 genes showing STRA8 binding in at least two of three replicates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C28 are well-supported by fertility data, histology (Figure 2\u2014figure supplement 1D,F), and ChIP-seq analysis (Figure 2C-E). The promoter-proximal binding pattern is clearly demonstrated with appropriate controls (wild-type samples). The reproducibility across replicates strengthens the identification of STRA8-bound genes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Integration of ChIP-seq and RNA-seq data reveals that 1,351 genes (57.2% of upregulated genes) are both STRA8-bound and upregulated at meiotic initiation. STRA8-bound genes show strong bias toward upregulation (89% of differentially expressed STRA8-bound genes are upregulated; odds ratio=17.1, p<2.2\u00d710\u207b\u00b9\u2076), demonstrating that STRA8 functions primarily as a transcriptional activator.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C34 are strongly supported by statistical integration of ChIP-seq and RNA-seq datasets (Figure 3A-D). The hypergeometric tests show highly significant overlaps (p<6.8\u00d710\u207b\u00b3\u00b2\u00b2), and the odds ratio analysis with confidence intervals provides robust evidence for STRA8's role as an activator. The depletion of STRA8 binding among downregulated genes (C30) further supports this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Using stringent criteria (binding in \u22652 of 3 ChIP-seq replicates and significant upregulation), the authors identify 1,351 'STRA8-activated genes,' though relaxed criteria suggest up to 3,128 genes may be directly activated. The stringent set shows 96% concordance with upregulation between low- and high-STRA8 preleptotene cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C37 are supported by systematic analysis with different statistical cutoffs (Figure 3\u2014figure supplement 1, Figure 3A,F). The authors appropriately focus on stringent criteria while acknowledging the broader potential scope. The validation across different preleptotene populations (C37) strengthens confidence in the gene set.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "98% of STRA8-bound genes are already expressed in Stra8-deficient cells (median 104 TPM), indicating that STRA8 binds open chromatin regions and functions to amplify transcriptional levels rather than acting as a pioneer factor initiating transcription of silent genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C40 are well-supported by RNA-seq data (Figure 4A) showing pre-existing expression of STRA8 target genes. The inference that STRA8 is not a pioneer factor (C39) and functions to amplify expression (C40) logically follows from this data and is consistent with the promoter-binding pattern. This mechanistic interpretation is reasonable given the evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "De novo motif analysis identifies CNCCTCAG as the most enriched sequence at STRA8 binding sites (p<1\u00d710\u207b\u00b9\u2074\u2070). Multiple lines of evidence support functional significance: motif count correlates with ChIP-seq peak scores (\u03c1=0.23, p<1\u00d710\u207b\u2076), additional motifs increase STRA8 binding, and greater motif numbers associate with higher fold-changes in gene expression at meiotic initiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C45 are strongly supported by comprehensive motif analysis (Figure 4B-D, Figure 4\u2014figure supplement 1). The three predictions tested (correlation with peak score, binding level, and expression change) all show statistically significant relationships, providing convergent evidence that STRA8 binding to CNCCTCAG drives gene upregulation. The statistical tests are appropriate and well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C46"
+    ],
+    "result": "97% of STRA8-bound genes have CpG island promoters, and the effect of the CNCCTCAG motif on transcriptional upregulation is enhanced near CpG islands.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C46 is supported by analysis shown in Figure 4\u2014figure supplement 1D-F. The high percentage of CGI promoters among STRA8-bound genes and the enhanced motif effect near CGIs are clearly documented, though the mechanistic basis for this association is not explored.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C47",
+      "C48"
+    ],
+    "result": "Gene Ontology analysis reveals that 'cell cycle process' is the most significantly enriched category among STRA8-activated genes (2.2-fold enrichment, p<2.7\u00d710\u207b\u00b9\u2077), and only 16% of STRA8-activated genes are testis-biased, indicating the program extends beyond meiosis-specific functions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C48 are well-supported by GO analysis (Figure 5A) and tissue expression analysis (Figure 5B). The comparison with all preleptotene-expressed genes (12% testis-biased) provides appropriate context. This finding challenges the expectation that meiotic initiation would primarily involve meiosis-specific genes and is a key observation of the study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Of 103 published meiotic prophase genes, 76 are STRA8-bound and 68 are STRA8-activated in males (p<8.2\u00d710\u207b\u00b3\u2078). These genes show robust amplification (median 3.8-fold), but 66 of 68 were already expressed in Stra8-deficient preleptotene cells, demonstrating that STRA8 directly upregulates the meiotic prophase transcriptional program through amplification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C53 are strongly supported by comparison with published meiotic gene lists (Soh et al., 2015) and integration of ChIP-seq and RNA-seq data (Figure 6A,B). The statistical significance is high, and the finding that most genes are pre-expressed is consistent with the broader pattern observed for all STRA8-activated genes. This validates STRA8's direct role in meiotic gene regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "All nine genes validated as Stra8-dependent in female meiosis are STRA8-bound in males (e.g., Dmc1 upregulated 7.3-fold), while the Stra8-independent gene Rec8 lacks STRA8 binding and is downregulated 1.6-fold. This demonstrates that most, but not all, of the meiotic prophase program is directly amplified by STRA8, with similar regulatory logic in both sexes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C59 are well-supported by comparison with published single-cell data from female meiosis (Soh et al., 2015) and ChIP-seq/RNA-seq analysis (Figure 6C,D). The contrasting examples of Dmc1 (STRA8-activated) and Rec8 (STRA8-independent) provide clear evidence for nuanced regulation. The inference about similar regulatory logic between sexes (C59) is reasonable given the concordance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C60",
+      "C61"
+    ],
+    "result": "STRA8 directly binds its own promoter, suggesting a positive feedback loop in upregulation of the gene expression program.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C60 is directly supported by ChIP-seq data (Figure 6E). However, C61 is speculative\u2014while autoregulation is observed, demonstrating it functions as a positive feedback loop would require additional experiments (e.g., time-course analysis, perturbation studies). The speculation is reasonable but not definitively proven.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "STRA8 directly upregulates multiple genes critical for meiotic progression: Top6bl (3.9-fold) and Prdm9 (6.1-fold) for DSB formation; Meioc and Ythdc2 (2.6- and 2.0-fold) for post-transcriptional regulation; and Ccnb3 (6.9-fold) for cell cycle control. This direct upregulation explains why Stra8-deficient germ cells fail to initiate meiosis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C65 are supported by RNA-seq and ChIP-seq data showing STRA8 binding and upregulation of these genes, with citations to published functional studies. The inference that this explains the Stra8-deficient phenotype (C65) is logical given the known functions of these genes, though it remains somewhat speculative without rescue experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "STRA8 upregulates several transcriptional regulators including Taf7l, Taf4b, and the rodent-specific retrogene Taf7l2 (TFIID components), as well as Pparg (activated from 'off' to 38 TPM with 8 STRA8 motifs). STRA8 also upregulates germ cell markers Dazl (1.7-fold) and Gcna (3.3-fold).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C70 are supported by RNA-seq and ChIP-seq data, with phylogenetic analysis for Taf7l2 (Figure 6\u2014figure supplement 1). The identification of Pparg as a candidate meiotic regulator (C69) is speculative but reasonable given the strong activation. The upregulation of Dazl and Gcna suggests ongoing functions during meiosis beyond their known roles in earlier germ cell development.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Meiotic prophase gene promoters are significantly enriched for CNCCTCAG motifs compared to all other genes (p<3.5\u00d710\u207b\u00b9\u2076 in mouse, p<1.1\u00d710\u207b\u2078 in human orthologs), suggesting that STRA8-mediated upregulation via CNCCTCAG binding may be conserved in humans.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C74 are well-supported by motif analysis (Figure 6\u2014figure supplement 2A,B) showing significant enrichment in both mouse and human. However, C75 (conservation in humans) is speculative\u2014motif enrichment suggests but does not prove functional conservation, which would require experimental validation in human cells. The speculation is reasonable but overstated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Non-meiotic cell-cycle genes are significantly overrepresented among STRA8-activated genes (p<5.0\u00d710\u207b\u2076), and STRA8-activated genes are enriched in a curated list of ~200 cell division genes (p<9.1\u00d710\u207b\u2079), confirming STRA8's direct role in upregulating a cell cycle-associated program.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C78 are strongly supported by GO analysis excluding meiotic terms (Figure 7A) and comparison with an independent curated gene list (McKinley and Cheeseman, 2017). The statistical significance is high, and the use of an independent gene list strengthens the conclusion. The inference about STRA8's direct role (C78) is well-justified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "STRA8 directly activates key G1-S transition genes: E2f1 (3.0-fold), Ccne1 and Ccne2 (cyclins regulating CDK2), Cdk2 itself, and components of the pre-replicative complex (ORC4, ORC6, MCM4/5/6, CDC6) and DNA replication initiation machinery (DBF4, CDC7).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C82 are well-supported by ChIP-seq and RNA-seq data (Figure 7B-D) with appropriate citations to published functional studies. The comprehensive coverage of G1-S and DNA replication machinery provides strong evidence for STRA8's role in driving cell cycle entry, corroborating genetic evidence that meiotic initiation occurs upstream of meiotic S phase.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "More than half of STRA8-activated genes are also targets of cell cycle transcription factors E2F4, E2F1, or FOXM1 (from ENCODE data), and E2F motifs are the most enriched known motifs at STRA8-activated gene promoters, demonstrating that STRA8 amplifies a broad cell cycle-associated transcriptional program at meiotic initiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C85 are supported by analysis of ENCODE ChIP-seq data (Figure 7E) and motif enrichment analysis (Figure 7F). The integration with published datasets is appropriate, though using data from non-meiotic cell lines introduces some uncertainty about direct applicability. The overall conclusion (C85) is well-justified by the convergent evidence from multiple analyses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C86",
+      "C87"
+    ],
+    "result": "Meiotic initiation entails robust upregulation of a broad gene ensemble in the preleptotene stage. STRA8 is a transcriptional activator that triggers the unique meiotic cell cycle by amplifying expression of meiotic prophase I genes, G1-S cell-cycle genes, and factors that inhibit the mitotic program.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C87 represent the central conclusions of the study, well-supported by the integrated RNA-seq and ChIP-seq data presented throughout. The characterization of STRA8 as a transcriptional activator is strongly supported, and the breadth of the program (meiotic, cell cycle, and meiosis-specific regulatory genes) is clearly demonstrated. This is the major finding of the work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Most genes upregulated at meiotic initiation, including canonical meiotic prophase genes, are already expressed in preleptotene cells before meiotic initiation. Expression alone is insufficient to trigger meiosis; rather, coordinated upregulation by STRA8 past threshold levels likely triggers the chromosomal events of meiotic prophase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C89 are well-supported by RNA-seq data and citations to prior anecdotal reports. However, C90-C91 are speculative\u2014while the threshold model is reasonable given the data, it has not been directly tested (e.g., by titrating gene expression levels). The speculation is well-grounded in the observations but represents a hypothesis requiring further validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C92",
+      "C93"
+    ],
+    "result": "STRA8 upregulates key meiotic genes Prdm9, Dmc1, and Hormad1 more than 4-fold, and the meiotic telomere complex factor Majin by 23-fold.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C93 are directly supported by RNA-seq data showing specific fold-changes for these important meiotic genes. These examples illustrate the magnitude of STRA8-mediated amplification for critical meiotic factors.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "STRA8's CNCCTCAG binding motif differs from the typical bHLH motif CANNTG, but results are consistent with bHLH function. A STRA8 isoform lacking the bHLH domain cannot initiate meiosis or localize to the nucleus in vivo. The authors propose that STRA8's HLH domain heterodimerizes with another HLH factor before nuclear translocation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C95 are supported by motif comparison, data from the Stra8\u0394121 allele (Figure 2\u2014figure supplement 2-3), and citations to prior in vitro work. However, C96 is speculative\u2014while heterodimerization is a common HLH mechanism, no direct evidence for a STRA8 binding partner is provided. The speculation is reasonable but unproven.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "STRA8's promoter specificity (84% of binding at promoters) is unusual among transcription factors. STRA8 may regulate transcription by releasing promoter-paused RNA polymerase II or by recruiting RNAPII, the pre-initiation complex, or chromatin modifiers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C97 is supported by comparison with published data (Neph et al., 2012). However, C98-C99 are purely speculative mechanisms without experimental support. While these are reasonable hypotheses based on the promoter-proximal binding pattern, they remain untested. Additional experiments (e.g., RNAPII ChIP-seq, pausing analysis) would be needed to evaluate these mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "STRA8 activates DNA-replication and G1-S genes, corroborating that meiotic initiation occurs upstream of meiotic S phase. STRA8 directly activates E2f1, which drives G1-S transition. The coordinated upregulation of E2F1-CCNE1/2-CDK2 feedback-loop genes suggests meiotic initiation involves passage through a meiotic 'restriction point.'",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C102 are well-supported by ChIP-seq/RNA-seq data and citations to published work on cell cycle regulation and prior genetic studies. However, C103 is speculative\u2014while the analogy to the mitotic restriction point is compelling given the genes involved, direct evidence for a meiotic restriction point (e.g., commitment assays, irreversibility) is not provided. The speculation is reasonable but represents a hypothesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C104"
+    ],
+    "result": "Positive feedback during meiotic G1-S may be followed by negative feedback, as Stra8 is downregulated after meiotic entry in fetal ovaries and STRA8 levels decline after leptotene in males.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C104 is speculative but supported by citations to published observations of Stra8 downregulation (Soh et al., 2015; Zhou et al., 2008). The analogy to mitotic cell cycle regulation is reasonable, though the functional significance of Stra8 downregulation has not been directly tested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "Meiotic specificity may result from upregulation of genes ensuring a meiosis-specific cell-cycle state: STRA8 directly upregulates MEIOC and YTHDC2 (which prevent mitotic gene expression and maintain extended prophase), Ccnb3 (6.9-fold, prevents precocious progression), and Ccne2/Cdk2 (which have meiosis-specific roles in homolog pairing and synapsis).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C107 are well-supported by RNA-seq/ChIP-seq data and citations to functional studies. C105 and C108 are somewhat speculative\u2014while the genes identified do have meiosis-specific functions, whether their upregulation is sufficient to ensure meiotic specificity is not directly tested. The reasoning is sound but represents a hypothesis about mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "STRA8 alone is not sufficient to initiate meiosis. STRA8 is expressed in early spermatogonia without inducing meiosis, and ectopic STRA8 expression in intermediate spermatogonia or in vitro-derived germ cells is insufficient. Competency for meiotic initiation may require chromatin or transcriptional states established in preceding divisions, and preleptotene-specific competency intersects with STRA8 function to drive meiosis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110-C111 are supported by citations to published studies. C109, C112, and C113 are speculative but well-reasoned based on the cited evidence and the observation that most STRA8 target genes are pre-expressed. The competency model is a reasonable hypothesis that explains why STRA8 is necessary but not sufficient, though it has not been directly tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C114"
+    ],
+    "result": "The combination of pre-existing transcriptional programs with dramatic amplification of a broad meiosis-associated gene ensemble may be a common strategy across organisms to trigger the one meiotic cell cycle per generation with precision.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C114 is highly speculative, extrapolating from mouse data to propose a general mechanism across organisms. While the logic is appealing, no comparative data from other organisms is presented to support this generalization. This represents a hypothesis for future investigation rather than a supported conclusion from the current work.",
+    "result_type": "MINOR"
+  }
+]

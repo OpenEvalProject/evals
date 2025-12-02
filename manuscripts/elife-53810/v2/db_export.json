@@ -1,0 +1,1452 @@
+{
+  "submission": {
+    "id": "7913fe02-ba40-4d9d-a04f-8579e3ff6b05",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T15:36:09.180852Z",
+    "updated_at": "2025-12-02T15:36:09.180852Z"
+  },
+  "content": [
+    {
+      "id": "2a4c0593-4854-4176-9bb6-4a11179917df",
+      "submission_id": "7913fe02-ba40-4d9d-a04f-8579e3ff6b05",
+      "content_type": "manuscript",
+      "content_text": "# Comprehensive fitness maps of Hsp90 show widespread environmental dependence\n\n## Authors\n\n- Julia M Flynn<sup>1</sup> ([ORCID: 0000-0002-5490-393X](https://orcid.org/0000-0002-5490-393X))\n- Ammeret Rossouw<sup>1</sup>\n- Pamela Cote-Hammarlof<sup>1</sup>\n- In\u00eas Fragata<sup>2</sup> ([ORCID: 0000-0001-6865-1510](https://orcid.org/0000-0001-6865-1510))\n- David Mavor<sup>1</sup>\n- Carl Hollins<sup>1</sup> ([ORCID: 0000-0003-0410-9639](https://orcid.org/0000-0003-0410-9639))\n- Claudia Bank<sup>2</sup> ([ORCID: 0000-0003-4730-758X](https://orcid.org/0000-0003-4730-758X))\n- Daniel NA Bolon<sup>1</sup> ([ORCID: 0000-0001-5857-6676](https://orcid.org/0000-0001-5857-6676)) \u2020\n\n### Affiliations\n\n1. Department of Biochemistry and Molecular Pharmacology, University of Massachusetts Medical School Worcester United States\n2. Instituto Gulbenkian de Ci\u00eancia Oeiras Portugal\n\n\u2020 Corresponding author\n\n## Abstract\n\nGene-environment interactions have long been theorized to influence molecular evolution. However, the environmental dependence of most mutations remains unknown. Using deep mutational scanning, we engineered yeast with all 44,604 single codon changes encoding 14,160 amino acid variants in Hsp90 and quantified growth effects under standard conditions and under five stress conditions. To our knowledge, these are the largest determined comprehensive fitness maps of point mutants. The growth of many variants differed between conditions, indicating that environment can have a large impact on Hsp90 evolution. Multiple variants provided growth advantages under individual conditions; however, these variants tended to exhibit growth defects in other environments. The diversity of Hsp90 sequences observed in extant eukaryotes preferentially contains variants that supported robust growth under all tested conditions. Rather than favoring substitutions in individual conditions, the long-term selective pressure on Hsp90 may have been that of fluctuating environments, leading to robustness under a variety of conditions.\n\n## Introduction\n\nThe role of environment has been contemplated in theories of evolution for over a hundred years (Darwin, 1859; Darwin and Wallace, 1858; Wright, 1932), yet molecular level analyses of how environment impacts the evolution of gene sequences remain experimentally under-explored. Depending on environmental conditions, mutations can be categorized into three classes: strongly deleterious mutations that are purged from populations by purifying selection, nearly-neutral mutations that are governed by stochastic processes, and beneficial mutations that tend to provide a selective advantage (Ohta, 1973). It has long been clear that environmental conditions can alter the fitness effects of mutations (Tutt, 1896). However, examining how environmental conditions impact any of the three classes of mutations is challenging. Measurable properties of nearly-neutral and deleterious mutations in natural populations are impacted by both demography and selection (Ohta, 1973), which are difficult to disentangle. In addition, many traits are complex, making it challenging to identify all contributing genetic variations (McCarthy et al., 2008). For these and other reasons, we do not have a detailed understanding of how environmental conditions impact the evolution of most gene sequences.\n\nMutational scanning approaches (Fowler et al., 2010) provide novel opportunities to examine fitness effects of the same mutations under different laboratory conditions (Boucher et al., 2016; Boucher et al., 2014; Canale et al., 2018; Kemble et al., 2019). The EMPIRIC (Exceedingly Meticulous and Parallel Investigation of Randomized Individual Codons) approach that we previously developed (Hietpas et al., 2011) is particularly well suited to address questions regarding the environmental impact of mutational effects for three reasons: it quantifies growth rates that are a direct measure of experimental fitness, all point mutations are engineered providing comprehensive maps of growth effects, and all the variants can be tracked in the same flask while experiencing identical growth conditions. We have previously used the EMPIRIC approach to investigate how protein fitness maps of ubiquitin vary in different environmental conditions (Mavor et al., 2016). The analysis of ubiquitin fitness maps revealed that stress environments can exacerbate the fitness defects of mutations. However, the small size of ubiquitin and the near absence of natural variation in ubiquitin sequences (only three amino acid differences between yeast and human) hindered investigation of the properties underlying historically observed substitutions.\n\nMutational scanning approaches have emerged as a robust method to analyze relationships between gene sequence and function, including aspects of environmental-dependent selection pressure. Multiple studies have investigated resistance mutations that enhance growth in drug or antibody environments (Dingens et al., 2019; Doud et al., 2018; Firnberg et al., 2014; Jiang et al., 2016; Stiffler et al., 2015). Most of these studies have focused on interpreting adaptation in the light of protein structure. Of note, Dandage, Chakraborty and colleagues explored how environmental perturbations to protein folding influenced tolerance of mutations in the 178 amino acid gentamicin-resistant gene in bacteria (Dandage et al., 2018). However, the question of how environmental variation shapes the selection pressure on gene sequences has not been well studied.\n\nHere, we report comprehensive experimental fitness maps of Heat Shock Protein 90 (Hsp90) under multiple stress conditions and compare our experimental results with the historical record of hundreds of Hsp90 substitutions accrued during its billion years of evolution in eukaryotes. Hsp90 encodes a 709 amino acid protein and to our knowledge it is the largest gene for which a comprehensive protein fitness map has been determined. Hsp90 is an essential and highly abundant molecular chaperone which is induced by a wide variety of environmental stresses (Gasch et al., 2000; Lindquist, 1981). Hsp90 assists cells in responding to these stressful conditions by facilitating the folding and activation of client proteins through a series of ATP-dependent conformational changes mediated by co-chaperones (Krukenberg et al., 2011). These clients are primarily signal transduction proteins, highly enriched in kinases and transcription factors (Taipale et al., 2012). Through its clients, Hsp90 activity is linked to virtually every cellular process.\n\nHsp90 can facilitate the emergence and evolution of new traits in response to stress conditions, including drug resistance in fungi (Cowen and Lindquist, 2005), gross morphology in flies (Rutherford and Lindquist, 1998) and plants (Queitsch et al., 2002), and vision loss in cave fish (Rohner et al., 2013). In non-stress conditions, an abundance of Hsp90 promotes standing variation by masking the phenotypic effects of destabilizing mutations in clients. Stressful conditions that tax Hsp90 capacity can then manifest in phenotypic diversity that can contribute to adaptation. Because of the biochemical and evolutionary links between Hsp90 and stress, we hypothesized that environmental stress would result in altered fitness maps.\n\nThe conditions in natural environments often fluctuate, and all organisms contain stress response systems that aid in acclimation to new conditions. The conditions experienced by different populations can vary tremendously depending on the niches that they inhabit, providing the potential for distinct selective pressures on Hsp90. Previous studies of a nine amino acid loop in Hsp90 identified multiple amino acid changes that increased the growth rate of yeast in elevated salinity (Hietpas et al., 2013), demonstrating the potential for environmental-dependent beneficial mutations in Hsp90. However, the sequence of Hsp90 is strongly conserved in eukaryotes (57% amino acid identity from yeast to human), indicating consistent strong purifying selection.\n\nTo investigate the potential influence of the environment on Hsp90 evolution, we quantified fitness maps in six different conditions. While proximity to ATP is the dominant functional constraint in standard conditions, the influence of client and co-chaperone interactions on growth rate dramatically increases under stress conditions. Increased selection pressure from heat and diamide stresses led to a greater number of beneficial variants compared to standard conditions. The observed beneficial variants were enriched at functional hotspots in Hsp90. However, the natural variants of Hsp90 tend to support efficient growth in all environments tested, indicating selection for robustness to diverse stress conditions in the natural evolution of Hsp90.\n\n## Results\n\nWe developed a powerful experimental system to analyze the growth rate supported by all possible Hsp90 point mutations under distinct growth conditions. Bulk competitions of yeast with a deep sequencing readout enabled the simultaneous quantification of 98% of possible amino acid changes (Figure 1A). The single point mutant library was engineered by incorporating a single degenerate codon (NNN) into an otherwise wild-type Hsp90 sequence as previously described (Hietpas et al., 2012). To provide a sensitive readout of changes in Hsp90 function, we transferred the library to a plasmid under a constitutive low-expression level ADH promoter that reduced Hsp90 protein levels to near-critical levels (Jiang et al., 2013). To efficiently track all variants in a single competition flask so that all variants experience identical conditions, we updated our previously developed EMPIRIC approach to include a barcoding strategy (Hietpas et al., 2012). As described in the Materials\u00a0and\u00a0methods, this barcode strategy enabled us to track mutations across a large gene using a short sequencing readout.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/53810/elife-53810-fig1-v2.jpg)\n\n**Figure 1.:** (A)\u00a0Barcoded competition strategy to analyze the growth effects of all single codon variants of Hsp90 in a single bulk culture. Hsp82 is the stress-inducible gene that encodes for Hsp90 (B) Measurements of selection coefficients of amino acid variants are reproducible in replicate growth competitions (see Figure 1\u2014source data 1). Wild-type amino acids are shown in green and stop codons are shown in red. The bottom panel shows the Root-mean-square deviation (RMSD) averaged for a running window of 40 data points. (C) Average selection coefficients at each position in standard conditions mapped onto a homodimeric structure of Hsp90 (PDB 2cg9, Ali et al., 2006) and compared to patterns of evolutionary conservation (see Figure 1\u2014source data 2). ATP is shown in yellow. The graph on the right compares relative conservation at each position of Hsp90 to the average selection coefficient at that position.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/53810/elife-53810-fig1-figsupp1-v2.jpg)\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/53810/elife-53810-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** The blue dashed line indicates the line of best fit.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/53810/elife-53810-fig1-figsupp3-v2.jpg)\n\n**Figure 1\u2014figure supplement 3.:** (A)\u00a0The average initial reads measured per codon for each amino acid. (B) The difference in the selection coefficients between stops in the two standard replicates compared to the initial reads for the corresponding stop in replicate 1. The blue dashed line indicates the line of best fit. R2\u00a0=\u00a00.022, p<0.0001. (C) The distribution of selection coefficients for each stop codon in standard replicate 1.\n\n![Figure 1\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/53810/elife-53810-fig1-figsupp4-v2.jpg)\n\n![Figure 1\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/53810/elife-53810-fig1-figsupp5-v2.jpg)\n\n**Figure 1\u2014figure supplement 5.:** (A)\u00a0The average selection coefficient at each position in standard (30\u00b0C) conditions correlates with distance to ATP (R2\u00a0=\u00a00.49). (B) The average selection coefficient at each position at 37\u00b0C does not correlate as well with distance to ATP as in standard conditions (R2\u00a0=\u00a00.26). The data points were fit to a sigmoid function.\n\nWe transformed the plasmid library of comprehensive Hsp90 point mutations into a conditional yeast strain where we could turn selection of the library on or off. We used a yeast Hsp90-shutoff strain in which both paralogs of Hsp90 (hsc82 and hsp82) are deleted and a copy of hsp82 with expression under strict regulation of a galactose-inducible promoter is integrated into the chromosome (Jiang et al., 2013). The mutant libraries were amplified in the absence of selection on the mutant variant by growing the transformed yeast in galactose media that expresses the wild-type chromosomal copy of hsp82. We switched the yeast to dextrose media to shut off the expression of wild-type Hsp90, allowing the mutagenized variants to be the sole source of Hsp90 protein in the cell, and then split the culture into six different environmental conditions. We extracted samples from each condition at multiple time points and used Illumina sequencing to estimate the frequency of each Hsp90 variant over time. We assessed the selection coefficient of each Hsp90 variant from the change in frequency relative to wild-type Hsp90 using a previously developed Bayesian Markov Chain Monte Carlo (MCMC) method (Bank et al., 2014; Fragata et al., 2018), where 0 represents wild-type and \u22121 represents null alleles (Figure 1\u2014source data 1).\n\nTo analyze reproducibility of the growth competition, we performed a technical replicate under standard conditions. We used a batch of the same transformed cells that we had frozen and stored such that the repeat bulk competition experiments and sequencing were performed independently. Selection coefficients between replicates were strongly correlated (R2\u00a0=\u00a00.90), and indicated that we could clearly distinguish between selection coefficients for members of the library containing silent mutations that do not change the amino acid sequence (wild-type synonyms) and those containing stop codons (Figure 1B, Figure 1\u2014figure supplement 1). For the second replicate we noted a small fitness defect (s\u00a0~\u00a0\u2013\ufeff0.2) for wild-type synonyms at positions 679\u2013709 relative to other positions (Figure 1\u2014figure supplement 1). We did not see this behavior in any other condition or replicate tested and do not understand its source. The selection coefficients in this study under standard conditions also correlated strongly (R2\u00a0=\u00a00.87) with estimates of the Hsp90 N-domain in a previous study (Mishra et al., 2016;\u00a0Figure 1\u2014figure supplement 2), indicating that biological replicates also show high reproducibility. Of note, variants with strongly deleterious effects exhibited the greatest variation between replicates, consistent with the noise inherent in estimating the frequency of rapidly depleting variants (Figure 1B). The stop codons were already partially depleted from the cells at the 0 time point, likely contributing to their variation between replicates (Figure 1\u2014figure supplement 3A). In accordance with this, there was a higher variation in selection coefficients between replicates for stop codons with the lowest initial reads (Figure 1\u2014figure supplement 3B). Stop codon fitness was similar for all three stop codons (Figure 1\u2014figure supplement 3C) and at positions across Hsp90 with exception of the last 32 positions that have previously been shown to be dispensable for its viability (Louvion et al., 1996;\u00a0Figure 1\u2014figure supplement 1). A heatmap representation of all the selection coefficients determined in standard conditions in replicate one is shown in Figure 1\u2014figure supplement 4.\n\nThe large number of signaling pathways that depend on Hsp90 (Taipale et al., 2012) and its strong sequence conservation suggest that many mutations of Hsp90 may decrease fitness. However, most variants of Hsp90 had wild-type-like fitness in the competition experiment in standard conditions (Figure 1C, Figure 1\u2014figure supplement 4). All possible mutations (excluding stops) were compatible with function at 425 positions. Only 17 positions had low mutational tolerance to the extent that 15 or more substitutions caused null-like growth defects (R32, E33, N37, D40, D79, G81, G94, I96, A97, S99, G118, G121, G123, Y125, F156, W300, and R380). All these positions except for W300 are in contact with ATP or mediate ATP-dependent conformational changes in the N-domain of Hsp90. In fact, the average selection coefficient at different positions (a measure of mutational sensitivity) in standard growth conditions correlates (R2\u00a0=\u00a00.49) with distance from ATP (Figure 1\u2014figure supplement 5). While W300 does not contact ATP, it transmits information from client binding to long range conformational changes of Hsp90 that are driven by ATP hydrolysis (R\u00f6hl et al., 2013). Our results indicate that ATP binding and the conformational changes driven by ATP hydrolysis impose dominant physical constraints in Hsp90 under standard laboratory conditions.\n\nAt first sight, the observation that most mutations are compatible with robust growth in standard conditions is at odds with the fact that the Hsp90 sequence is strongly conserved across large evolutionary distances (Figure 1C). One potential reason for this discrepancy could be that the strength of purifying selection in large natural populations over long evolutionary time-scales is more stringent than can be measured in the laboratory. In other words, experimentally unmeasurable fitness defects could be subject to purifying selection in nature. In addition, the range of environmental conditions that yeast experience in natural settings may not be reflected by standard laboratory growth conditions. To investigate the impact of environmental conditions on mutational effects in Hsp90, we measured the growth rate of Hsp90 variants under five additional stress conditions.\n\n### Impact of stress conditions on mutational sensitivity of Hsp90\n\nWe measured the fitness of Hsp90 variants in conditions of nitrogen depletion (ND) (0.0125% ammonium sulfate), hyper-osmotic shock (0.8 M NaCl), ethanol stress (7.5% ethanol), the sulfhydryl-oxidizing agent diamide (0.85 mM), and temperature shock (37\u00b0C). All these stresses are known to elicit a common shared environmental stress response characterized by altered expression of\u00a0~900 genes as well as having specific responses unique to each stress (Gasch et al., 2000). Genes encoding heat-shock proteins, including Hsp90, are transiently upregulated in all these stresses except elevated salinity (Gasch et al., 2000; Piper, 1995).\n\nOne way to characterize stress conditions is to measure the extent to which they slow down growth. For our experiments, each of the environmental stresses were selected to partially decrease the growth rate. Consistently, all stresses reduced the growth rate of the parental strain within a two-fold range, with depletion of nitrogen levels causing the smallest reduction in growth rate and diamide causing the greatest reduction (Figure 2A). To investigate how critical Hsp90 is for growth in each condition, we measured growth rates of yeast with either normal or more than 10-fold reduced (Jiang et al., 2013) levels of Hsp90 protein (Figure 2A). Under standard conditions, the normal level of Hsp90 protein can be dramatically reduced without major impacts on growth rate, consistent with previous findings (Jiang et al., 2013; Picard et al., 1990).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/53810/elife-53810-fig2-v2.jpg)\n\n**Figure 2.:** (A) Growth rate of yeast with normal and reduced expression of Hsp90 protein in standard and stress conditions based on individual growth curves. Growth rates are normalized to growth in standard conditions with reduced Hsp90 expression. (B) Selection coefficients of all Hsp90 amino acid variants in stress conditions compared to standard conditions (see Figure 2\u2014source data 1). Wild-type synonyms are shown in green and stop codons are shown in red. Selection coefficients were scaled to null (s = \u22121) for the average stop codon and neutral (s\u00a0=\u00a00) for the average wild\u00a0type. The diagonal is indicated by the blue dashed line. (C) The average selection coefficient of all mutations relative to standard conditions, a metric of the strength of selection acting on Hsp90 sequence, in each stress condition.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/53810/elife-53810-fig2-figsupp1-v2.jpg)\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/53810/elife-53810-fig2-figsupp2-v2.jpg)\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/53810/elife-53810-fig2-figsupp3-v2.jpg)\n\n![Figure 2\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/53810/elife-53810-fig2-figsupp4-v2.jpg)\n\n![Figure 2\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/53810/elife-53810-fig2-figsupp5-v2.jpg)\n\n![Figure 2\u2014figure supplement 6.](https://cdn.elifesciences.org/articles/53810/elife-53810-fig2-figsupp6-v2.jpg)\n\n![Figure 2\u2014figure supplement 7.](https://cdn.elifesciences.org/articles/53810/elife-53810-fig2-figsupp7-v2.jpg)\n\n**Figure 2\u2014figure supplement 7.:** Mutations were categorized as beneficial (light blue shading), wild-type-like (white shading), intermediate (light pink shading) or deleterious (dark pink shading) based on the distribution of wild-type synonyms and stop codons in each condition.\n\n![Figure 2\u2014figure supplement 8.](https://cdn.elifesciences.org/articles/53810/elife-53810-fig2-figsupp8-v2.jpg)\n\n**Figure 2\u2014figure supplement 8.:** (A)\u00a0Distribution of selection coefficients for the wild-type synonyms in each condition. The standard of deviation of wild-type synonyms in each condition relative to standard conditions (x) is specified under the corresponding box. (B) The selection coefficient for wild-type synonyms at each position of Hsp90 in each condition. (C) The variation of selection coefficients for barcodes with greater than 50 initial reads for each wild-type codon in each condition.\n\n![Figure 2\u2014figure supplement 9.](https://cdn.elifesciences.org/articles/53810/elife-53810-fig2-figsupp9-v2.jpg)\n\nWe anticipated that Hsp90 would be required at increased levels for robust experimental growth in diamide, nitrogen starvation, ethanol, and high temperature (Gasch et al., 2000) based on the concept that cells increase expression level of genes in conditions where those gene products are needed at higher concentration. Consistent with this concept, reduced Hsp90 levels cause a marked decrease in growth rate at 37\u00b0C. However, Hsp90 protein levels had smaller impacts on growth rates under the other stress conditions, indicating that reliance on overall Hsp90 function does not increase dramatically in these conditions.\n\nWe quantified the growth rates of all Hsp90 single-mutant variants in each of the stress conditions as selection coefficients (Figure 2\u2014source data 1, Figure 2\u2014figure supplements 1\u20135). We could clearly differentiate between the selection coefficients of wild-type synonyms and stop codons in all conditions (Figure 2B, Figure 2\u2014figure supplement 6), and we normalized to these classes of mutations to facilitate comparisons between each condition (Figure 2\u2014figure supplement 7). Of note, the observed selection coefficients of wild-type synonyms varied more in conditions of high temperature and diamide stress compared to standard (Figure 2\u2014figure supplement 8A,B). We also note greater variation in the selection coefficients of barcodes for the same codon in the diamide and high temperature conditions (Figure 2\u2014figure supplement 8C). We conclude that diamide and elevated temperature provided greater noise in our selection coefficient measurements. To take into account differences in signal to noise for each condition, we either averaged over large numbers of mutations or categorized selection coefficients as wild-type-like, strongly deleterious, intermediate, or beneficial based on the distribution of wild-type synonyms and stop codons in each condition (see Materials and methods and Figure 2\u2014figure supplement 7).\n\nWe compared selection coefficients of each Hsp90 variant in each stress condition to standard condition (Figure 2B&C). The stresses of 37\u00b0C and diamide tend to exaggerate the growth defects of many mutants compared to standard conditions, whereas high salt and ethanol tend to rescue growth defects (Figure 2B&C and Figure 2\u2014figure supplement 9). According to the theory of metabolic flux (Dykhuizen et al., 1987; Kacser and Burns, 1981), gene products that are rate limiting for growth will be subject to the strongest selection. Accordingly, the relationship between Hsp90 function and growth rate should largely determine the strength of selection acting on Hsp90 sequence. Conditions where Hsp90 function is more directly linked to growth rate would be more sensitive to Hsp90 mutations than conditions where Hsp90 function can be reduced without changing growth rates (Bershtein et al., 2013; Jiang et al., 2013). The average selection coefficients are more deleterious in diamide and temperature stress compared to standard conditions. These findings are consistent with heat and diamide stresses causing a growth limiting increase in unfolded Hsp90 clients that is rate limiting for growth. In contrast, the average selection coefficients are less deleterious in ethanol and salt stress than in standard conditions, which suggests a decrease in the demand for Hsp90 function in these conditions. Due to the complex role Hsp90 plays in diverse signaling pathways in the cell, the different environmental stresses may differentially impact subsets of client proteins that cause distinct selection pressures on Hsp90 function.\n\n### Structural analyses of environmental responsive positions\n\nAltering environmental conditions had a pervasive influence on mutational effects along the sequence of Hsp90 (Figure 3A and Figure 3\u2014figure supplement 1). We structurally mapped the average selection coefficient of each position in each condition relative to standard conditions as a measure of the sensitivity to mutation of each position under each environmental stress (Figure 3A, Figure 3\u2014source data 1). Many positions had mutational profiles that were responsive to a range of environments. Environmentally responsive positions with large changes in average selection coefficient in at least three conditions are highlighted on the Hsp90 structure in green in Figure 3B. Unlike the critical positions that cluster around the ATP binding site (Figure 1C), the environmentally responsive positions are located throughout all domains of Hsp90. Similar to critical residues, environmentally responsive positions are more conserved in nature compared to other positions in Hsp90 (Figure 3C), suggesting that the suite of experimental stress conditions tested captured aspects of natural selection pressures on Hsp90 sequence.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/53810/elife-53810-fig3-v2.jpg)\n\n**Figure 3.:** (A)\u00a0The average selection coefficient (s) at each position relative to standard conditions was mapped onto Hsp90 structure (Ali et al., 2006) (See Figure 3\u2014source data 1). (B) Structural images indicating the location of positions that are critical for Hsp90 function in all conditions (magenta), positions that are environmentally responsive (ER) (green), and positions that are tolerant in all environments (gray). Critical residues have mean selection coefficients that are null-like in all environments. ER positions have mean selection coefficients that differed from standard in three or more environments by an amount greater than one standard deviation of wild-type synonyms. Tolerant residues are not shifted more than this cutoff in any environment. (C) For different classes of positions, evolutionary variation was calculated as amino acid entropy at each position in Hsp90 sequences from diverse eukaryotes. Distributions are significantly different as measured by a two-sample Kolmogorov-Smirnov (KS) (All positions vs. ER: N\u00a0=\u00a0678, 137, p<0.0001, D\u00a0=\u00a00.39; All positions vs. critical: N\u00a0=\u00a0678, 27, p<0.0001, D\u00a0=\u00a00.57; All positions vs. tolerant: N\u00a0=\u00a0678, 136, p<0.0001, D\u00a0=\u00a00.38) (D) Fraction of different classes of mutations located at contact sites with binding partners. p<0.0001 (E) A heatmap of the average selection coefficient for all positions at the stated interfaces relative to standard conditions in each environment. (F) Venn diagram of deleterious mutations in different environmental conditions (Heberle et al., 2015). Total number of deleterious mutants in each condition are stated in parentheses.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/53810/elife-53810-fig3-figsupp1-v2.jpg)\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/53810/elife-53810-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** (A)\u00a0The fraction of Hsp90 positions at interfaces that were categorized as environmentally responsive. (B) The average selection coefficient in each environment relative to standard at all the Hsp90 positions at each stated interface.\n\nHsp90 positions with environmentally responsive selection coefficients were enriched in binding contacts with clients, co-chaperones and intramolecular Hsp90 contacts involved in transient conformational changes (Figure 3D and Figure 3\u2014figure supplement 2A). About 65% of the environmentally responsive residues have been identified either structurally or genetically as interacting with binding partners (Ali et al., 2006; Bohen and Yamamoto, 1993; Genest et al., 2013; Hagn et al., 2011; Hawle et al., 2006; Kravats et al., 2018; Lorenz et al., 2014; Meyer et al., 2003; Meyer et al., 2004; Nathan and Lindquist, 1995; Retzlaff et al., 2009; Roe et al., 2004; Verba et al., 2016; Zhang et al., 2010), compared to about 15% of positions that were not responsive to stress conditions. This analysis was performed on the small subset of clients and cochaperones with known Hsp90-binding sites. While ATP binding and hydrolysis are the main structural determinants that constrain fitness in standard growth conditions, client and co-chaperone interactions have a larger impact on experimental fitness under stress conditions. Although the mean selection coefficients of mutations at the known client and co-chaperone binding sites are responsive to changes in environment, the direction of the shift of growth rate compared to standard conditions depends on the specific binding partner and environment (Figure 3E and Figure 3\u2014figure supplement 2B). This suggests that different environments place unique functional demands on Hsp90 that may be mediated by the relative affinities of different clients and co-chaperones. Consistent with these observations, we hypothesize that Hsp90 client priority is determined by relative binding affinity and that Hsp90 mutations can reprioritize clients that in turn impacts many signaling pathways.\n\n### Constraint of mutational sensitivity at high temperature\n\nWe find that different environmental conditions lead to distinct selection on Hsp90 based on the number of beneficial and deleterious variants in each condition, including elevated temperature placing the greatest purifying selection pressure on Hsp90. Of the 2504 variants of Hsp90 that are deleterious when grown at 37\u00b0C, 884 of them (~35%) are deleterious only in this condition (Figure 3F). We defined mutants that confer temperature sensitive (ts) growth phenotypes on cells as variants with selection coefficients within the distribution of wild-type synonyms in standard conditions and that of stop codons at 37\u00b0C. Based on this definition, 663 Hsp90 amino acid changes (roughly 5% of possible changes) were found to be temperature sensitive (Figure 4A, Figure 4\u2014source data 1). We sought to understand the physical underpinnings of this large set of Hsp90 ts mutations.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/53810/elife-53810-fig4-v2.jpg)\n\n**Figure 4.:** (A)\u00a0Ts variants were identified that supported WT-like growth at 30\u00b0C, but were null-like at 37\u00b0C in bulk competitions. WT synonyms are shown in green and stops in red. The horizonal dashed line corresponds to y\u00a0=\u00a0\u22120.47, the upper limit of stops at 37\u00b0C and the vertical dashed line corresponds to x\u00a0=\u00a0\u22120.11, the lower limit of WT synonyms in standard conditions. The pink-shaded quadrant highlights ts mutations. All ts mutants are listed in Figure 4\u2014source data 1. (B) Distribution of the number of observed ts mutations at the same positions of Hsp90 (\u25cf) is much greater than expected if they had occurred independently (\u25ca). Independent expectations were calculated as the probability of the stated number of mutations occurring at the same position by chance. * Indicates observations that were significantly (p<0.01) greater than independent expectations based on random simulations and one-tailed t-tests. (C) Mapping positions with multiple ts variants onto Hsp90 structure. ATP is shown in black. (D) Solvent accessible surface area (SASA) of ts mutants compared to non-ts mutants. A two sample KS test showed significant differences in distributions (N\u00a0=\u00a0663, 11762, p<0.0001, D\u00a0=\u00a00.1735) (E) Amino acid similarity to the wild\u00a0type was estimated as the Blosum score (Henikoff and Henikoff, 1992) for ts and non-ts variants. A two-proportion z-test was performed on each pair for each Blosum score and their p-values were adjusted using Benjamini-Hochberg adaptive step-up procedure. * Indicates p<0.05 F. Growth rate of a panel of individual Hsp90 ts variants analyzed in isolation.\n\nWe examined Hsp90 ts mutations for structural and physical patterns. We found that ts mutations tended to concentrate at certain amino acid positions of Hsp90 (Figure 4B). The clustering of ts mutations was significant compared to random simulations. Positions with greater than four ts mutations were spread across all three domains of Hsp90 (Figure 4C) with the largest cluster occurring in the C domain of Hsp90. The C domain forms a constitutive homodimer that is critical for function (Wayne and Bolon, 2007). Of note, homo-oligomerization domains may have a larger ts potential because all subunits contribute to folding and dimerization essentially multiplying the impacts of mutations (Lynch, 2013). To explore the physical underpinnings of ts mutations, we examined if they were buried in the structure or surface exposed. Mutations at buried residues tend to have a larger impact on protein folding energy compared to surface residues (Chakravarty and Varadarajan, 1999). Consistent with the idea that many ts mutations may disrupt protein folding at elevated temperature, substitutions that confer a ts phenotype are enriched in buried residues (Figure 4D). Also consistent with this idea, ts mutations tend to have negative Blosum scores (Henikoff and Henikoff, 1992;\u00a0Figure 4E), a hallmark of disruptive amino acid changes.\n\nBecause growth at elevated temperatures requires higher levels of Hsp90 protein (Borkovich et al., 1989), some ts mutations are likely due to a reduced function that is enough for growth at standard temperature, but is insufficient at 37\u00b0C (Nathan and Lindquist, 1995). We reasoned that we could distinguish these mutants by examining how growth rate depended on the expression levels of Hsp90. We expect that destabilizing mutants that cause Hsp90 to unfold at elevated temperature would not support efficient growth at 37\u00b0C independent of expression levels. In contrast, we expect mutants that reduce Hsp90 function to exhibit an expression-dependent growth defect at 37\u00b0C. We tested a panel of ts mutations identified in the bulk competitions at high and low expression levels (Figure 4F). The dependence of growth rate at 37\u00b0C on expression level varied for different Hsp90 ts variants. The I66E, G170D and L499R Hsp90 mutants have no activity at 37\u00b0C irrespective of expression levels. These disruptive substitutions at buried positions likely destabilize the structure of Hsp90. In contrast, increasing the Hsp90 expression levels at least partially rescued the growth defect for five ts variants (L50D, K102A, D180L, K398L, K594I), indicating that these variants do not provide enough Hsp90 function for robust growth at elevated temperature. All five of these expression-dependent ts variants were located at surface positions. Thus, for the ts mutants we tested individually, we see a correlation between location of the mutation and type of ts mutation. Destabilizing mutations tend to be buried and mutants with reduced function tend to be surface exposed, indicating that the location of ts mutations can delineate these different mechanistic classes.\n\n### Hsp90 potential for adaptation to environmental stress\n\nNumerous Hsp90 variants provided a growth benefit compared to the wild-type sequence in stress conditions. The largest number of beneficial variants in Hsp90 occurred in high temperature and diamide conditions (Figure 5A, Figure 5\u2014source data 1). Multiple lines of evidence indicate that these mutants are truly beneficial variants and not simply measurement noise. First, the beneficial amino acids generally exhibited consistent selection coefficients among synonymous variants (Figure 5\u2014figure supplement 1A). Second, beneficial mutants in diamide and high temperature tend to cluster at certain positions (Figure 5B), which would not be expected for noise. Finally, we confirmed the increased growth rate at elevated temperature of a panel of variants analyzed in isolation (Figure 5\u2014figure supplement 1B). The fact that beneficial mutations in elevated temperature and diamide often clustered at specific positions in Hsp90 indicates that the wild-type amino acids at these positions are far from optimum for growth in these conditions. In contrast, the apparent beneficial mutations in other conditions did not tend to cluster at specific positions (Figure 5\u2014figure supplement 2).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/53810/elife-53810-fig5-v2.jpg)\n\n**Figure 5.:** (A) Number of beneficial mutations identified in each condition based on selection coefficients more than two standard deviations greater than wild-type synonyms. Beneficial mutants at 37\u00b0C and in diamide are listed in Figure 5\u2014source data 1. (B) Distribution of the number of beneficial mutations at the same position in both 37\u00b0C (left) and diamide (right) conditions (\u25cf) is greater than expected if they had occurred independently (\u25ca). Independent expectations were calculated as the probability of the stated number of mutations occurring at the same position by chance. * Indicates observations that were significantly (p<0.01) greater than independent expectations based on random simulations and one-tailed t-tests. (C) Location of positions with four or more beneficial mutations. Positions that are unique to diamide or 37\u00b0C are shown in cyan and two shared positions are shown in magenta. (D) The solvent accessible surface area (SASA) of beneficial mutations at 37\u00b0C and in diamide compared to all mutations. Distributions are significantly different as measured by a two-sample KS test (37\u00b0C vs. all data, N\u00a0=\u00a0270, 12393, p<0.0001, D\u00a0=\u00a00.2851; Diamide vs. all data, N\u00a0=\u00a060,12393, p<0.0001, D\u00a0=\u00a00.3465) (E) The fraction of Hsp90 positions at interfaces that were beneficial in 37\u00b0C and diamide conditions. (F) Selection coefficients in standard conditions for beneficial mutations at 37\u00b0C and in diamide compared to wild-type synonyms. (KS test; 37\u00b0C vs. WT synonyms: N\u00a0=\u00a0463, 660, p<0.0001, D\u00a0=\u00a00.3281; Diamide vs. WT synonyms: N\u00a0=\u00a0353, 660, p<0.0001, D\u00a0=\u00a00.3809).\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/53810/elife-53810-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A)\u00a0Selection coefficients of synonymous codon variants for four amino acid mutants with beneficial selection coefficients at 37\u00b0C show high correlation. (B) The same individual variants analyzed in isolation exhibit increased growth rates.\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/53810/elife-53810-fig5-figsupp2-v2.jpg)\n\n**Figure 5\u2014figure supplement 2.:** Independent expectations were calculated as the probability of the stated number of mutations occurring at the same position by chance.\n\n![Figure 5\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/53810/elife-53810-fig5-figsupp3-v2.jpg)\n\n![Figure 5\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/53810/elife-53810-fig5-figsupp4-v2.jpg)\n\n**Figure 5\u2014figure supplement 4.:** (A)\u00a0Selection coefficients for all codon variants of synonymous mutations at each position of Hsp90 (black) at 37\u00b0C compared to the average selection coefficient of all mutations at each position (green) at 37\u00b0C. Synonymous mutations that were deemed beneficial or deleterious after a Bonferroni correction are noted with a red asterisk. (B) Selection coefficients for codon variants of synonymous mutants at position Ala2 show high variation. (C) The individual Hsp90 variant containing the synonymous codon mutation GCT to GCA at position 2 exhibited an increased growth rate 37\u00b0C. (D) The individual synonymous mutant variant GCA at position two exhibited higher cellular expression levels at 37\u00b0C. WT: wild-type Hsp90 (GCT at 2nd position), NI: No insert, A2A: Hsp90 with the GCT to GCA codon mutation.\n\nTo obtain a more general picture of the potential for adaptation derived from the full fitness distributions, we used Fisher\u2019s Geometric model (FGM) (Fisher, 1930). According to FGM, populations evolve in an n-dimensional phenotypic space, through random single-step mutations, and any such mutation that brings the population closer to the optimum is considered beneficial. An intuitive hypothesis derived from FGM is that the potential for adaptation in a given environment (i.e. is the availability of beneficial mutations) depends on the distance to the optimum. In order to estimate the distance to the optimum d, we adopted the approach by Martin and Lenormand and fitted a displaced gamma distribution to the neutral and beneficial mutations for each environment (Martin and Lenormand, 2006). We observed that the yeast populations were furthest from the optimum in elevated temperature and diamide (d\u00a0=\u00a00.072 and 0.05, respectively), followed by nitrogen deprivation (d\u00a0=\u00a00.023), high salinity and ethanol (d\u00a0=\u00a00.021) and standard (d\u00a0=\u00a00.014). This suggests that exposure to elevated temperature and diamide results in the largest potential for adaptation and is consistent with the observation of the largest proportions of beneficial mutations in these environments. Interestingly, previous results from a 9-amino-acid region in Hsp90 indicated that there was very little potential for adaptation at high temperature (36\u00b0C) as compared with high salinity (Hietpas et al., 2013). This apparent contradiction between results from the full Hsp90 sequence and the 582\u2013590 region indicates that a specific region of the protein may be already close to its functional optimum in a specific environment, whereas there is ample opportunity for adaptation when the whole protein sequence is considered.\n\nIn diamide and elevated temperature, the clustered beneficial positions were almost entirely located in the ATP-binding domain and the middle domain (Figure 5C), both of which make extensive contacts with clients and co-chaperones (Ali et al., 2006; Meyer et al., 2003; Meyer et al., 2004; Roe et al., 2004; Verba et al., 2016; Zhang et al., 2010). Beneficial mutations in elevated temperature and diamide conditions were preferentially located on the surface of Hsp90 (Figure 5D) at positions accessible to binding partners. Analyses of available Hsp90 complexes indicate that beneficial positions were disproportionately located at known interfaces with co-chaperones and clients (Figure 5E). Clustered beneficial mutations are consistent with disruptive mechanisms because a number of different amino acid changes can lead to disruptions, whereas a gain of function is usually mediated by specific amino acid changes. Amino acids that are beneficial in diamide and elevated temperature tend to exhibit deleterious effects in standard conditions (Figure 5F), consistent with a cost of adaptation. In comparison, wild-type-like mutations in diamide and high temperature tend to exhibit wild-type-like fitness in standard conditions (Figure 5\u2014figure supplement 3). We conjecture that the clustered beneficial mutations are at positions that mediate the binding affinity of subsets of clients and co-chaperones and that disruptive mutations at these positions can lead to re-prioritization of multiple clients. The priority or efficiency of Hsp90 for sets of clients can in turn impact most aspects of physiology because Hsp90 clients include hundreds of kinases that influence virtually every aspect of cell biology.\n\nIn the first seven amino acids of Hsp90, we noted both a large variation in the selection coefficients of synonymous mutations at elevated temperature and that many nonsynonymous substitutions at these positions generated strong beneficial effects (Figure 5\u2014figure supplement 4A,B). Synonymous mutations at these positions were only strongly beneficial at high temperature where Hsp90 protein levels are limiting for growth. Analysis of an individual clone confirms that a synonymous mutation at the beginning of Hsp90 that was beneficial at high temperature was expressed at higher level in our plasmid system (Figure 5\u2014figure supplement 4C,D). These results are consistent with a large body of research showing that mRNA structure near the beginning of coding regions often impacts translation efficiency (Li, 2015; Plotkin and Kudla, 2011; Tuller et al., 2010), and that adaptations can be mediated by changes in expression levels (Lang and Desai, 2014).\n\n### Natural selection favors Hsp90 variants that are robust to environment\n\nWe next examined how experimental protein fitness maps compared with the diversity of Hsp90 sequences in current eukaryotes. We analyzed Hsp90 diversity in a set of 267 sequences from organisms that broadly span across eukaryotes. We identified 1750 amino acid differences in total that were located at 499 positions in Hsp90. We examined the experimental growth effects of the subset of amino acids that were observed in nature. While the overall distribution of selection coefficients in all conditions was bimodal with peaks around neutral (s\u00a0=\u00a00) and null (s = \u22121), the natural amino acids were unimodal with a peak centered near neutral (Figure 6A, Figure 6\u2014source data 1). The vast majority of natural amino acids had wild-type-like fitness in all conditions studied here (Figure 6B and C). Whereas naturally occurring amino acids in Hsp90 were rarely deleterious in any experimental condition, they were similarly likely to provide a growth benefit compared to all possible amino acids (5%). This observation indicates that condition-dependent fitness benefits are not a major determinant of natural variation in Hsp90 sequences. Instead, our results indicate that natural selection has favored Hsp90 substitutions that are robust to multiple stressful conditions (Figure 6D). Beneficial mutations in heat and diamide indicate that there is room for improvement in Hsp90 function in individual conditions. The clustering of beneficial mutations at known binding interfaces suggests that the optimal binding affinity for partner proteins may depend on growth conditions. We propose that natural variants of Hsp90 have been selected for binding properties that are robust to different stresses rather than specific to individual conditions.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/53810/elife-53810-fig6-v2.jpg)\n\n**Figure 6.:** (A) The distribution of selection coefficients of natural variants compared to all variants in each environmental condition (see Figure 6\u2014source data 1). (B) Across all environments, the fraction of natural variants compared to all variants that were beneficial, wild-type-like, or deleterious. (C) The fraction of natural variants compared to all variants that were environmentally responsive or tolerant in all environments. Categories were defined as in Figure 3B. (D)\u00a0Landscape model indicating that natural variants of Hsp90 tend to support robust growth under a variety of stress conditions.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/53810/elife-53810-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** Cells were grown for 12 hr in dextrose media at 30\u00b0C and then were transferred into the individual environmental conditions and grown for eight additional hours. Hsp90 levels were monitored by western blotting.\n\n![Figure 6\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/53810/elife-53810-fig6-figsupp2-v2.jpg)\n\n**Figure 6\u2014figure supplement 2.:** Euclidean clustering along rows is based on the Spearman\u2019s rank correlation coefficients. See Figure 6\u2014figure supplement 2\u2014source data 1.\n\n![Figure 6\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/53810/elife-53810-fig6-figsupp3-v2.jpg)\n\n**Figure 6\u2014figure supplement 3.:** (A)\u00a0Growth of Hsp90 shutoff yeast harboring either wild-type (WT) Hsp90 under the ADH promoter (\u25cf) or a null plasmid (\u25b2). Growth was monitored by optical density (OD) at 600 nm. (B) Hsp90 expression in cells harboring the same plasmids grown in dextose for the stated number of hours. Hsp90 protein levels were monitored by western blotting.\n\nEpistasis may provide a compelling explanation for the naturally occurring amino acids that we observed with deleterious selection coefficients. Analyses of Hsp90 mutations in the context of likely ancestral states has demonstrated a few instances of historical substitutions with fitness effects that depend strongly on the Hsp90 sequence background (Starr et al., 2018). Indeed, many of the natural amino acids previously identified with strong epistasis (E7A, V23F, T13N) are in the small set of natural amino acids with deleterious effects in at least one condition. Further analyses of natural variants under diverse environmental conditions will likely provide insights into historical epistasis and will be the focus of future research.\n\n## Discussion\n\nIn this study, we analyzed the protein-wide distribution of fitness effects of Hsp90 across standard and five stress conditions. We found that environment has a profound effect on the fates of Hsp90 mutations. Each environmental stress varies in the strength of selection on Hsp90 mutations; heat and diamide increase the strength of selection and ethanol and salt decrease the strength of selection. While proximity to ATP is the dominant functional constraint in standard conditions, the influence of client and co-chaperone interactions on growth rate dramatically increases under stress conditions. Additionally, beneficial mutations cluster at positions that mediate binding to clients and cochaperones. The fact that different Hsp90 binding partners have distinct environmental dependencies suggests that Hsp90 can reprioritize clients that in turn impacts many downstream signaling pathways.\n\nOur results demonstrate that mutations to Hsp90 can have environment-dependent effects that are similar to the stress-induced changes to the function of wild-type Hsp90 that have been shown to contribute to new phenotypes (Jarosz et al., 2010). The low frequency of environment-dependent amino acids in Hsp90 from extant eukaryotes indicates that this type of evolutionary mechanism is rare relative to drift and other mechanisms shaping Hsp90 sequence diversity.\n\nWe observed distinct structural trends for mutations that provide environment-dependent costs and benefits. Many mutations in Hsp90 caused growth defects at elevated temperature where Hsp90 function is limiting for growth. These temperature-sensitive mutations tended to be buried and in the homodimerization domain, consistent with an increased requirement for folding stability at elevated temperatures. In contrast, beneficial mutations tended to be on the surface of Hsp90 and at contact sites with binding partners, suggesting that change-of-function mutations may be predominantly governed by alterations to binding interactions. Mutations that disrupt binding to certain clients can lead to the re-prioritization of others, which, due to Hsp90\u2019s central role in numerous cellular pathways, has the potential to modify integral networks in response to stress. Once more comprehensive data is available on Hsp90-client binding sites, it may be possible to simulate this rewiring of cellular networks, providing insight into the causes of the beneficial mutations. However, presently, the large number of clients with unknown binding sites makes these analyses challenging. In the future, comparing Hsp90 client-interactomes (Taipale et al., 2012) may help delineate adaptive biochemical mechanisms.\n\nLimitations:\n\nOur experimental setup has limitations that we have tried to account for in our analyses and conclusions. For example, we measured the fitness effects of Hsp90 under artificially low expression where yeast growth rates are tightly coupled to function of Hsp90 in order to provide a sensitive readout of fitness defects (Jiang et al., 2013). Expression of Hsp90 under this promoter remains stable in the stresses tested (Figure 6\u2014figure supplement 1). However, this defined promoter does not capture the native transcriptional regulation and may not fully recapitulate translational and post-translational regulation controlling hsp82. While these levels of regulation of Hsp90 are clearly important physiologically, the sensitive readouts of fitness that we measured appear to capture critical features of Hsp90 with regard to biochemical function and evolutionary mechanism. For example, virtually all deleterious mutants measured in this study under stress conditions appear to have also been subject to purifying selection in nature.\n\nIn addition, the experimental strain used in this study is deleted for the constitutively expressed paralog of hsp82, hsc82. Hsp82 and hsc82 are functionally overlapping, essential genes with 97% sequence identify (16 amino acid differences) that can compensate for each other\u2019s loss-of-function in normal growth conditions (Girstmair et al., 2019). The high sequence identity between the two paralogs indicates that they are both under similar selection pressure. Despite the high sequence identity, a number of distinct differences have been noted in stability, conformational cycles, and client interactomes. Experimental evidence indicates that hsp82 is more stress-specific, and more stable to unfolding (Girstmair et al., 2019). Further efforts will be required to resolve how distinctions between Hsp90 paralogs contribute to function and selection.\n\nRelationship to prior work:\n\nA handful of studies have assessed the impact of environment on the fitness landscape of genes (Dandage et al., 2018; Hietpas et al., 2013; Li and Zhang, 2018; Mavor et al., 2016). For example, Dandage, Chakraborty and colleges investigated the effects of temperature and chemical chaperones on the fitness landscape of the Gentamicin resistance gene and found that protein stability and distance to the ligand binding site are the molecular properties with the strongest correlations with fitness (Dandage et al., 2018). To understand the strength of the molecular constraints on Hsp90 on a whole protein level, we performed similar analyses (Figure 6\u2014figure supplement 2). Consistent with the Gentamicin study, we find the features that best correlate with fitness are protein stability and distance from the active site. The constraint of protein stability is the highest at 37\u00b0C, indicating increased dependence on stability at the higher temperature. In addition, distance from the ATP-binding site imposes strong molecular constraints on Hsp90, signifying the importance of ATP hydrolysis on Hsp90 function. While individual features correlate with fitness effects and show environmental dependence, single features are unable to capture the majority of observed variance in fitness effects, consistent with a complex set of physical properties that underlie fitness effects in both proteins.\n\nIn another study of the effect of environment on mutational fitness, Li and Zhang detected pervasive genotype-by-environment interactions between a yeast tRNA gene and environment (Li and Zhang, 2018). They found that the correlation of the fitness between mutations in each tested environment was linear such that the fitness landscape in one environment together with a change in slope could be used to accurately predict fitness effects in the second environment. In this study, we observed a large impact of environment on Hsp90 fitness; however, we observe many fitness effects that deviate from a linear relationship between environments. While linear models can predict the fitness of some mutations in different environments, it would not predict many of the types of mutations that are focuses of this study, such as mutations that exhibit an adaptive trade-off, those with beneficial effects in one environment that become deleterious in another. In addition, the linear model would not predict the large group of ts mutations with wild-type fitness in standard conditions and null fitness at 37\u00b0C. As environmental-dependent protein fitness landscapes are analyzed for an increasing set of genes, it will provide opportunities to explore how different protein properties such as the number of binding partners may contribute to global trends.\n\nImportantly, our results demonstrate that while mutations to Hsp90 can provide a growth advantage in specific environmental conditions, naturally occurring amino acids in Hsp90 tend to support robust growth over multiple stress conditions. The finding of beneficial mutations in Hsp90 in specific conditions suggests that similar long-term stresses in nature can lead to positive selection on Hsp90. Consistent with previous work (Hietpas et al., 2013), we found that experimentally beneficial mutations tended to have a fitness cost in alternate conditions (Figure 5F). This indicates that natural environments which fluctuate among different stresses would reduce or eliminate positive selection on Hsp90. Therefore, our results suggest that natural selection on Hsp90 sequence has predominantly been governed by strong purifying selection integrated over multiple stressful conditions. Taken together, these results support the hypothesis that natural populations might experience a so-called \u2018micro-evolutionary fitness seascape\u2019 (Mustonen and L\u00e4ssig, 2009), in which rapidly fluctuating environments result in a distribution of quasi-neutral substitutions over evolutionary time scales.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Gene (Saccharomyces cerevisiae)</td>\n      <td>hsp82</td>\n      <td>Saccharomyces Genome Database</td>\n      <td>SGD: S000006161</td>\n      <td>Hsp90 chaperone</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti-Hsp90 \u03b1/\u03b2 (Mouse monoclonal)</td>\n      <td>Cayman chemical; Cat# 10011439</td>\n      <td>RRID:AB_10349777</td>\n      <td>WB (1:3000)</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>Barcoded Hsp90 plasmid library</td>\n      <td>This paper</td>\n      <td></td>\n      <td>See Materials and methods for library construction</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>p414ADH \u0394ter plasmid</td>\n      <td>PMID: 23825969</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>p414GPD plasmid</td>\n      <td>PMID: 23825969</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>BCA Protein Assay Kit</td>\n      <td>Pierce</td>\n      <td>Cat #23227</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>KAPA SYBR FAST qPCR Master Mix</td>\n      <td>Kapa Biosystems</td>\n      <td>KK4600</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Diamide</td>\n      <td>Sigma Aldrich</td>\n      <td>D3648</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Barcode \u2013 Hsp90 ORF assembly</td>\n      <td>This paper</td>\n      <td>https://github.com/JuliaFlynn/Barcode_ORF_assembly</td>\n      <td>Associates barcodes with open reading frame mutations from paired end sequencing data\u00a0(Flynn, 2020a; copy archived at https://github.com/elifesciences-publications/Barcode_ORF_assembly)</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Tabulate Hsp90 counts</td>\n      <td>This paper</td>\n      <td>https://github.com/JuliaFlynn/Tabulate_counts</td>\n      <td>Counts Hsp90 alleles from raw fastq files and barcode_orf assembly file\u00a0(Flynn, 2020b; copy archived at https://github.com/JuliaFlynn/Tabulate_counts)</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>EmpiricIST</td>\n      <td>PMID: 30127529</td>\n      <td>https://github.com/Matu2083/empiricIST</td>\n      <td>Estimates selection coefficients based on the MCMC approach</td>\n    </tr>\n    <tr>\n      <td>Sequenced-based reagent</td>\n      <td>Sequencing primers</td>\n      <td>This paper</td>\n      <td></td>\n      <td>See Supplementary file 1</td>\n    </tr>\n    <tr>\n      <td>Sequenced-based reagent</td>\n      <td>Site-directed mutagenesis primers</td>\n      <td>This paper</td>\n      <td></td>\n      <td>See Supplementary file 1</td>\n    </tr>\n    <tr>\n      <td>Sequenced-based reagent</td>\n      <td>Library construction oligomers</td>\n      <td>This paper</td>\n      <td></td>\n      <td>Available upon request</td>\n    </tr>\n  </tbody>\n</table>\n\n### Generating mutant libraries\n\nA library of Hsp90 genes was saturated with single point mutations using oligos containing NNN codons as previously described (Hietpas et al., 2012). The resulting library was pooled into 12 separate 60 amino acid long sub-libraries (amino acids 1\u201360, 61\u2013120 etc.) and combined via Gibson Assembly (NEB) with a linearized p414ADH\u0394ter Hsp90 destination vector, a low copy number plasmid with the trp1 selectable marker. To simplify sequencing steps during bulk competition, each variant of the library was tagged with a unique barcode. For each 60 amino acid sub-library, a pool of DNA constructs containing a randomized 18 bp barcode sequence (N18) was cloned 200 nt downstream from the Hsp90 stop codon via restriction digestion, ligation, and transformation into chemically competent E. coli with the goal of each mutant being represented by 10\u201320 unique barcodes.\n\n### Barcode association of library variants\n\nWe added barcodes and associated them with Hsp90 variants essentially as previously described (Starr et al., 2018). To associate barcodes with Hsp90 variants, we performed paired-end sequencing of each 60 amino acid sub-library using a primer that reads the N18 barcode in one read and a primer unique to each sub-library that anneals upstream of the region containing mutations. To facilitate efficient Illumina sequencing, we generated PCR products that were less than 1 kb in length for sequencing. We created shorter PCR products by generating plasmids with regions removed between the randomized regions and the barcode. To remove regions from the plasmids, we performed restriction digest with two unique enzymes, followed by blunt ending with T4 DNA polymerase (NEB) and plasmid ligation at a low concentration (3 ng/\u03bcL) to favor circularization over bimolecular ligations. The resulting DNA was re-linearized by restriction digest, and amplified with 11 cycles of PCR to generate products for Illumina sequencing. The resulting PCR products were sequenced using an Illumina MiSeq instrument with asymmetric reads of 50 bases for Read1 (barcode) and 250 bases for Read2 (Hsp90 sequence). After filtering low-quality reads (Phred scores\u00a0<\u00a010), the data was organized by barcode sequence. For each barcode that was read more than three times, we generated a consensus of the Hsp90 sequence that we compared to wild\u00a0type to call mutations. Of note, the building of consensus of at least three independent reads reduces the chance that errors will lead to mistaken variant identity because the same misread would have to occur in the majority of these reads.\n\n### Bulk growth competitions\n\nEqual molar quantities of each sub-library were mixed to form a pool of DNA containing the entire Hsp90 library with each codon variant present at similar concentration. The plasmid library was transformed using the lithium acetate procedure into the DBY288 Hsp90 shutoff strain of S. cerevisiae which has both genomic paralogs of Hsp90 (hsp82 and hsc82) deleted and a chromosomal copy of hsp82 under a galactose-dependent promoter inserted (can1-100 ade2-1 his3-11,15 leu2-3, 12 trp1-1, ura3-1 hsp82::leu2 hsc82::leu2 ho::pgals-hsp82-his3) essentially as previously described (Jiang et al., 2013). Sufficient transformation reactions were performed to attain\u00a0~5 million independent yeast transformants representing a fivefold sampling for the average barcode and 50 to 100-fold sampling for the average codon variant. Following 12 hr of recovery in SRGal (synthetic 1% raffinose and 1% galactose) media, transformed cells were washed five times in SRGal-W media (SRGal lacking tryptophan to select for the presence of the Hsp90 variant plasmid) to remove extracellular DNA, and grown in SRGal-W media at 30\u00b0C for 48 hr with repeated dilution to maintain the cells in log phase of growth. This yeast library was supplemented with 20% glycerol, aliquoted and slowly frozen in a \u221280\u00b0C freezer.\n\nFor each competition experiment, an aliquot of the frozen yeast library cells was thawed at 37\u00b0C. Viability of the cells was accessed before and after freezing and was determined to be greater than 90% with this slow freeze, quick thaw procedure. Thawed cells were amplified in SRGal-W for 24 hr, and then shifted to shutoff conditions by centrifugation, washing, and resuspension in 300 mL of synthetic dextrose lacking tryptophan (SD-W) for 12 hr at 30\u00b0C. At this time, cells containing a null-rescue plasmid had stopped growing and Hsp90 was undetectable by western blot (Figure 6\u2014figure supplement 3). At this point, cells were split and transferred to different conditions including: Standard (SD-W, 30\u00b0C), Nitrogen depletion (SD-W with limiting amounts of ammonium sulfate, 0.0125%, 30\u00b0C), Salt (SD-W with 0.8 M NaCl, 30\u00b0C), Ethanol (SD-W with 7.5% ethanol, 30\u00b0C), Diamide (SD-W with 0.85 mM diamide, 30\u00b0C), or high temperature (SD-W, 37\u00b0C). We collected samples of\u00a0~108 cells at eight time points over a period of 36 hr and stored them at \u221280\u00b0C. Cultures were maintained in log phase by regular dilution with fresh media every 6\u201310 hr to maintain a population size of 108\u2013109 cells in order to prevent population bottlenecks relative to sample diversity. Bulk competition from the standard condition were conducted in technical duplicates from the frozen yeast library.\n\n### DNA preparation and sequencing\n\nWe isolated plasmid DNA from each bulk competition time point as described (Jiang et al., 2013). Purified plasmid was linearized with AscI. Barcodes were amplified by 19 cycles of PCR using Phusion polymerase (NEB) and primers that add Illumina adapter sequences and an 8 bp identifier sequence used to distinguish libraries and time points. The identifier sequence was located at positions 91\u201398 relative to the Illumina primer and the barcode was located at positions 1\u201318. PCR products were purified two times over silica columns (Zymo Research) and quantified using the KAPA SYBR FAST qPCR Master Mix (Kapa Biosystems) on a Bio-Rad CFX machine. Samples were pooled and sequenced on an Illumina NextSeq instrument in single-end 100 bp mode.\n\n### Analysis of bulk competition sequencing data\n\nIllumina sequence reads were filtered for Phred scores\u00a0>\u00a020 and strict matching of the sequence to the expected template and identifier sequence. Reads that passed these filters were parsed based on the identifier sequence. For each condition/time-point identifier, each unique N18 read was counted. The unique N18 count file was then used to identify the frequency of each mutant using the variant-barcode association table. This barcoding strategy reduces the impact of bases misread by Illumina, as they result in barcodes that are not in our lookup table created by paired end sequencing and thus are discarded from the fitness analyses. To generate a cumulative count for each codon and amino acid variant in the library, the counts of each associated barcode were summed. To reduce experimental noise, selection coefficients were not calculated for variants with less than 100 reads at the 0 time point (Boucher et al., 2014). The average variant at the 0 time point had approximately 500 reads.\n\n### Determination of selection coefficient\n\nSelection coefficients were estimated using empiricIST (Fragata et al., 2018), a software package developed based on a previously published Markov Chain Monte Carlo (MCMC) approach (Bank et al., 2014). Briefly, we estimated individual growth rates and initial population sizes relative to the wild-type sequence simultaneously, based on a model of exponential growth and multinomial sampling of sequencing reads independently at each time point. For each mutant we obtained 10,000 posterior samples for the growth rate and initial population using a Metropolis-Hastings algorithm. The resulting growth rate estimates correspond to the median of 1000 samples of the posterior. Subsequently, selection coefficients (s) were scaled so that the average stop codon in each environmental condition represented a null allele (s = \u22121). For the second replicate in standard conditions, we noted a small fitness defect (s\u2248\u22120.2) for wild-type synonyms at positions 679\u2013709 relative to other positions. We do not understand the source of this behavior, and chose to normalize to wild-type synonyms from 1 to 678 for this condition and to exclude positions 679\u2013709 from analyses that include the second replicate of standard conditions. We did not observe this behavior in any other condition including the first standard condition replicate. Variants were categorized as having wild-type-like, beneficial, intermediate, or deleterious fitness based on the comparison of their selection coefficients with the distribution of wild-type synonyms and stop codons in each condition (Figure 2\u2014figure supplement 7) in the following manner; Wild-type-like: variants with selection coefficients within two standard deviations (SD) of the mean of wild-type synonyms; Beneficial: variants with selection coefficients above two SD of wild-type synonyms; Strongly deleterious: variants with selection coefficients within two SD of stop codons; Intermediate: variants with selection coefficients between those of stop-like and wild-type-like. Where stated, the average selection coefficient was calculated as the mean selection coefficient of all mutations at a position excluding that of the stop codon.\n\n### Structural analysis\n\nThe solvent accessible surface area was computed by the algorithm of Lee and Richards (1971)\u00a0using the PDB 2cg9 structure with the chains for Sba1 removed. The Blosom score was derived from the Blosom62 matrix (Henikoff and Henikoff, 1992). Evolutionary conservation was calculated with an alignment of homologs from diverse species using the ConSurf server (Ashkenazy et al., 2016). The change in protein stability upon mutation (\u0394\u0394G) was predicted by the PoPMuSic server (Dehouck et al., 2011). Distance from the \u0263-phosphate of ATP to the C-\u03b1 of each amino acid residue was calculated using Pymol. Physico-chemical properties of the amino acids were retrieved from Abriata et al. (2015). Correlation coefficients were calculated by Pearson product-moment correlations unless otherwise stated.\n\n### Random simulations to assess clustering of mutations\n\nTo assess if classes of mutations (e.g. temperature-sensitive mutations) clustered at positions more than expected based on chance, we compared the observed distribution of mutations to random simulations. For the random simulations, we randomly selected a position for the number of observed mutations and stored the clustering distribution (e.g. the number of positions with 0, 1, 2, 3, etc. simulated mutations). We performed 1000 simulations and used the average and standard deviation from these simulations to define statistical cutoffs for random expectations.\n\n### Yeast growth analysis\n\nIndividual variants of Hsp90 were generated by site-directed mutagenesis and confirmed by Sanger sequencing. Variants were cloned in a p414 plasmid either under a low-expression, ADH promoter, or a high-expression, GPD promoter, as specified. Variants were generated by site directed mutagenesis and transformed into DBY288 cells. Selected transformed colonies were grown in liquid SRGal-W media to mid-log phase at 30\u00b0C, washed three times and grown in shutoff media (SD-W) for 10 hrs at 30\u00b0C, and then either kept at 30\u00b0C or shifted to 37\u00b0C as indicated. After sufficient time to stall the growth of control cells lacking a rescue copy of Hsp90 (~16 hr), cell density was monitored based on absorbance at 600 nm over time and fit to an exponential growth curve to quantify growth rate. Growth estimates were based on individual growth curves with at least four timepoints over an eight hour period. Using this approach we routinely observe measurement noise of 2\u20135%.\n\n### Analysis of Hsp90 expression by western\u00a0blot\n\nTo analyze expression levels of Hsp90, cells were grown for the specified time in SD-W or the indicated environmental condition. 108 yeast cells were collected by centrifugation and frozen as pellets at \u221280\u00b0C. Cells were lysed by vortexing the thawed pellets with glass beads in lysis buffer (50 mM Tris-HCl pH 7.5, 5 mM EDTA and 10 mM PMSF), followed by addition of 2% Sodium dodecyl sulfate (SDS). Lysed cells were centrifuged at 18,000 g for 1 min to remove debris, and the protein concentration of the supernatants was determined using a BCA protein assay kit (Pierce) compared to a Bovine Serum Albumin (BSA) protein standard. 15 \u00b5g of total cellular protein was resolved by SDS-PAGE, transferred to a PVDF membrane, and Hsp90 was probed using an anti-human Hsp90 \u03b1/\u03b2 antibody that cross reacts with yeast Hsp90 (Cayman chemical).\n\n### Natural variation in Hsp90 sequence\n\nWe analyzed sequence variation in a previously described alignment of Hsp90 protein sequences from 261 eukaryotic species that broadly span a billion years of evolutionary distance (Starr et al., 2018).\n",
+      "created_at": "2025-12-02T15:36:09.180852Z"
+    },
+    {
+      "id": "d5e07dde-6dd4-438d-be33-06adcf239bb9",
+      "submission_id": "7913fe02-ba40-4d9d-a04f-8579e3ff6b05",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Christian R Landry, Universit\u00e9 Laval Canada\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.53810.sa1](https://doi.org/10.7554/eLife.53810.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nThe authors performed a mutational scanning experiment of Hsp90, a large heat-shock protein involved in regulating multiple cellular processes. They mutated all positions of this large protein to other amino acids and measured the growth of each mutant in standard condition and five stress conditions that may require Hsp90's function. The authors found that many variants are deleterious, as expected, and that these cluster in specific regions and tend not to be found in Hsp90 orthologs. The authors found that some mutations are beneficial, but these tend to be condition-specific, suggesting that evolution in fluctuating environments would favor overall robustness rather than allele variants that would be beneficial in specific conditions. This study reports one of the most extensive genotype-fitness maps of a protein performed to date and brings novel hypotheses regarding the evolution of proteins that have a large array of molecular functions and binding partners.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Comprehensive fitness maps of Hsp90 show widespread environmental dependence\" for consideration by eLife. Your article has been reviewed by three peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation has been overseen by Patricia Wittkopp as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nFlynn et al., carried out a comprehensive deep mutational scanning of HSP90 in S cerevisiae (709 amino acids long). They measure the fitness effects of all possible single mutations and find that these effects are condition dependent. Their results allow to propose further models on the evolution of proteins such as HSP90 that play a role in stress response in variable environments. Overall, the study is elegantly designed, and the results are well presented. The three reviewers found the results highly interesting and found the scale of the experiments impressive. However, they raised several major points that need to be addressed. Some of them relate to the technical aspects of the work, others to the data analysis and finally, some relate to the potential broader impact of the results and interpretation.\n\nThe major comments are combined in a single list here:\n\n1) The analysis of variability in the mutational sensitivity of synonymous mutations (discussed in subsection \"Hsp90 potential for adaptation to environmental stress\") seems a bit reductive. The analysis does not include the comparison of synonymous mutations at the beginning of the gene with the rest of synonymous mutations. The authors could have shown position-wise selection coefficients of synonymous mutations in a figure just to give a context of the data. In order to provide sense of the scale of variation, variability in synonymous mutations could be compared with that of non-synonymous mutations. Apart from this, there seems to be some inconsistent deleteriousness of some of the synonymous mutations (mentioned in subsection \"Determination of Selection Coefficient\"). I think it should be acknowledged in the results.\n\n2) Figure 5\u2014figure supplement 4B,C: statistical tests would be needed to draw a conclusion from the data.\n\n3) Analysis of stop mutations\n\nSimilar to variability in the selection coefficients of the synonymous mutations, evidently there is also an extent of variability in the selection coefficients of stop mutations too (as seen in Figure 2\u2014figure supplement 7). In my opinion, this aspect should have been addressed in the results. Also, are there any factors that determine the variability in the selection coefficients of stop mutations, apart from the position of the stop mutation?\n\n4) Estimation of the level of between-replicate variation of deleterious mutations as a function of depth of sequencing. In the Results section, the authors acknowledge that the between-replicate variation is larger for the most deleterious mutations. As deleterious mutations are central to the results of this study, I think this point needs to be substantiated. In order to do so, an estimation of the level of between-replicate variation of deleterious mutations as a function of depth of sequencing could be shown.\n\n5) Network analysis of altered protein-protein interactions\n\nOne of the most striking results of the study was that the beneficial mutations in elevated temperature condition and in case of diamide stress were found to be preferentially located on the binding surfaces of HSP90. However, the analysis to uncover the cause of such effect seems underdeveloped. Are there ways with which this could be considered further? Computationally, based on the mutationally altered binding between the protein interfaces, it could be possible to simulate the network rewiring and deduce the causes of the beneficial effect. Although not mandatory, such analyses would help in providing a network context to the study.\n\n6) Relative strengths of the constraints. At various places in the text, the authors have analysed different constraints that guide mutational fitness effects while considering subsets of positions eg. ATP binding region, buried residues etc. However, I believe it could be helpful to analyse such strengths of constraints at the whole protein level. The estimation the relative strengths of the constraints and then ranking the constraints based on their strengths could be helpful in comparing the features of mutational sensitivity of HSP90 with other proteins such as with gentamicin-resistant gene in bacteria that they cite (Dandage et al., 2018). Such analysis could help in identifying the potentially unique features that are specific to HSP90.\n\n7) Position-wise clustering of the variants\n\nFigure 4B and Figure 5B: The analysis shown is difficult to understand. Either modifications in the plot or the caption is needed. The significance of the difference should be tested with a statistical test. How are the 'independent expectations' calculated?\n\n8) The paralog of HSP90 is not discussed in the text. However, an earlier study showed that (https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.1000347) one paralog is induced in expression when the other paralog is deleted (Figure 2, Hsp82). This seems to be a potential confounding factor if some mutations reduce protein abundance and in response the other copy's expression is induced. This may make some mutations be buffered by the other copy and not others. The strain used in this study appears to be the one described previously (Jiang et al., 2013) as a Hsc82 knockout. Therefore, interpretation of the fitness effects of Hsp82 variants is confounded by the absence of Hsc82. In nature, it is possible/likely that redundancy of the Hsp90 paralogs enables Hsp82 to navigate areas of the fitness landscape that appear selectively inaccessible in the present study (although there is now evidence that these paralogs exhibit some functional differences (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6689086/)). Relaxed constraint could on influence molecular evolution of Hsp90, specifically in regions that bind to clients and/or co-chaperones.\n\nIn addition, given the artificial context in which the protein is expressed, it seems likely that this system fails to recapitulate the native transcriptional, post-transcriptional, or translational regulation of the native system. While I do not doubt that the authors have devised an elegant system for assessing the effect of the various mutants on the Hsp90 protein (and in some cases the relevant mRNA, in the case of meaningfully important synonyms), it seems likely that the native gene(s) are under a much more complex selective pressure. I understand that fully addressing this concern experimentally is likely beyond the scope of the current study, but it needs to be considered in the Discussion section.\n\n9) Another major point relates to expression levels (Hsp82 as stated in subsection \"Impact of stress conditions on mutational sensitivity of Hsp90\"). Was expression of Hsp82 affected by the stress conditions? The manuscript references a previous paper that describes a 10-fold reduction in Hsp82 expression, presumably in standard conditions. Is Hsp82 downregulated to a similar in the stress conditions? I would want to see Hsp82 expression levels before drawing any conclusions about Hsp82 function in the stress conditions. Another issue relates to the protein. What is the half-life of HSP90 and what happens when transcription is shut off?\n\n10) Other technical aspects would be to be better described. For instance, the copy number and auxotrophy of the Hsp90 mutant expression plasmid are not indicated. Moreover, the genetic background of the experimental strains are also insufficiently described. Other questions also arise when trying to make sense of the experimental details. Which paralog is deleted and which is under the control of the galactose-inducible promoter? How many technical replicates per environment? I think duplicates for the standard condition and none for the other selective conditions? But this was hard to tell. How does noise affect the estimation of selective coefficients? Are the authors convinced that the behavior of this promoter is consistent across stress conditions? I would also like to know the copy number of plasmids used for cloning and expressing the libraries.\n\n11) Another concern is regarding the scope and broad interest of the work described in the manuscript. The core experiment appears well designed and carefully conducted, but most of the key findings are intuitive or reflect existing knowledge of the Hsp90 protein or its intermolecular interactions. For reasons related to the three concerns described in more detail below, the strongest claims pertaining to evolution and selection are perhaps not best-addressed in this model system. Rather, it seems most suited for examining the behavior and function of the Hsp90 polypeptide in the abstract, and the findings here may be of interest to a more focused audience. Finally, there is limited validation, confirmation, or exploration of the findings from the selection experiment in orthogonal experimental systems.\n\n12) One of the major novelties of the work is the systematic assessment of GXE. Since only a few studies have performed such comprehensive assays, it would be important to mention them and contrast them with the current work. I missed a comparison and discussion, or even just a mention, of the fitness landscapes of 23,000 tRNA genotypes across four different selective environments (Li and Zhang, 2018). In that paper, whereas the GxE was pervasive, the patterns detected were so simple that the fitness landscape in a given environment could be easily predicted from the fitness of a few genotypes in another environment using a piecewise linear regression model. Would the same approach work here? If that approach does not work with the Hsp90 data, could that indicate a fundamental difference in fitness landscapes and GxE interactions between RNA molecules and proteins?\n\n13) My final significant question relates to the observation of minimal antagonistic pleiotropy (and little deleterious variation) amongst naturally occurring variants across different experimental conditions. The authors claim that this constitutes evidence for selection on \"robustness\" across fluctuating environments. I would propose that, rather, it may suggest that the molecular function (potentially modulo selective client binding, as the authors observe) is simply similar across environments and thus, \"robustness\" merely reflects that Hsp90 foldase function is an important cellular process (as reflected by the inviability of the HSP82 HSC82 double-deletion strain). Indeed, it seems most \"essential\" genes would likely exhibit this behavior by dint of the importance of maintaining their function. Perhaps this is a semantic difference; in any case the authors would do well to clarify this line of argument in the text.\n\n[Editors' note: further revisions were suggested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \"Comprehensive fitness maps of Hsp90 show widespread environmental dependence\" for further consideration by eLife. Your revised article has been evaluated by Patricia Wittkopp (Senior Editor) and a Reviewing Editor.\n\nThe manuscript has been improved but there are some remaining issues that need to be addressed before acceptance, as outlined below:\n\n1) The randomizations discussed in subsection \"Constraint of mutational sensitivity at high temperature\" should be described in the Materials and methods section.\n\n2) The description of the different types of mutations in subsection \"Constraint of mutational sensitivity at high temperature\" could be better explained. Deleterious mutations are not always purged so it would be better to say \"strongly deleterious mutations that are purged\" to contrast with slightly deleterious ones (nearly-neutral).\n\n3) The Western blot shown in Figure 6\u2014figure supplement 1 does not include a loading control to show that the same amount of protein was loaded. If the amount of protein loaded was measured and normalized, please specify how otherwise it would be important to mention how you can compare the samples without appropriate controls.\n\n4) It would be better to show the data mentioned here: \"cells containing a null-rescue plasmid had stopped growing and Hsp90 was undetectable by Western blot (data not shown).\"\n\n5) The tabulated data used to generate figures is provided but the code used to generate this data is not provided. Please provide the code or make it available through an online public repositories such as GitHub or others.\n",
+      "created_at": "2025-12-02T15:36:09.180852Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T15:36:09.180852Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T15:36:09.180852Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "2f4eefd9-5663-4e34-b670-5ac1d1265705",
+      "content_id": "2a4c0593-4854-4176-9bb6-4a11179917df",
+      "claim_id": "C1",
+      "claim": "Using deep mutational scanning, yeast were engineered with all 44,604 single codon changes encoding 14,160 amino acid variants in Hsp90.",
+      "claim_type": "EXPLICIT",
+      "source": "Using deep mutational scanning, we engineered yeast with all 44,604 single codon changes encoding 14,160 amino acid variants in Hsp90 and quantified growth effects under standard conditions and under five stress conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract explicitly states the number of codon changes and amino acid variants engineered in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:36:09.180852Z"
+    },
+    {
+      "id": "9d7c48b4-5890-45f9-bec8-0c7600b2520c",
+      "content_id": "2a4c0593-4854-4176-9bb6-4a11179917df",
+      "claim_id": "C2",
+      "claim": "Growth effects of Hsp90 variants were quantified under standard conditions and under five stress conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Using deep mutational scanning, we engineered yeast with all 44,604 single codon changes encoding 14,160 amino acid variants in Hsp90 and quantified growth effects under standard conditions and under five stress conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract describes the experimental design of measuring growth effects under multiple conditions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:36:09.180852Z"
+    },
+    {
+      "id": "0497f30a-0726-472f-8a79-a0807c98b680",
+      "content_id": "2a4c0593-4854-4176-9bb6-4a11179917df",
+      "claim_id": "C3",
+      "claim": "These are the largest determined comprehensive fitness maps of point mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "To our knowledge, these are the largest determined comprehensive fitness maps of point mutants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The authors explicitly state this is the largest such study to their knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:36:09.180852Z"
+    },
+    {
+      "id": "04623e61-a80d-424f-953f-ecf6020c3fdf",
+      "content_id": "2a4c0593-4854-4176-9bb6-4a11179917df",
+      "claim_id": "C4",
+      "claim": "The growth of many Hsp90 variants differed between conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "The growth of many variants differed between conditions, indicating that environment can have a large impact on Hsp90 evolution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract states that many variants showed different growth between conditions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:36:09.180852Z"
+    },
+    {
+      "id": "ef1af158-f149-4e84-9dcc-80deb01cbb9d",
+      "content_id": "2a4c0593-4854-4176-9bb6-4a11179917df",
+      "claim_id": "C5",
+      "claim": "Environment can have a large impact on Hsp90 evolution.",
+      "claim_type": "EXPLICIT",
+      "source": "The growth of many variants differed between conditions, indicating that environment can have a large impact on Hsp90 evolution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the observed data on variant growth differences.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:36:09.180852Z"
+    },
+    {
+      "id": "d6540f4d-8b76-43d4-9844-d24030afe931",
+      "content_id": "2a4c0593-4854-4176-9bb6-4a11179917df",
+      "claim_id": "C6",
+      "claim": "Multiple Hsp90 variants provided growth advantages under individual conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Multiple variants provided growth advantages under individual conditions; however, these variants tended to exhibit growth defects in other environments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract explicitly states that multiple variants were beneficial in specific conditions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:36:09.180852Z"
+    },
+    {
+      "id": "84f6ecf6-147f-43dc-b762-b2e66127e903",
+      "content_id": "2a4c0593-4854-4176-9bb6-4a11179917df",
+      "claim_id": "C7",
+      "claim": "Variants that provided growth advantages under individual conditions tended to exhibit growth defects in other environments.",
+      "claim_type": "EXPLICIT",
+      "source": "Multiple variants provided growth advantages under individual conditions; however, these variants tended to exhibit growth defects in other environments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract describes a trade-off pattern observed in the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:36:09.180852Z"
+    },
+    {
+      "id": "1f8a41a1-c110-47b9-b182-024473c45ac7",
+      "content_id": "2a4c0593-4854-4176-9bb6-4a11179917df",
+      "claim_id": "C8",
+      "claim": "The diversity of Hsp90 sequences observed in extant eukaryotes preferentially contains variants that supported robust growth under all tested conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "The diversity of Hsp90 sequences observed in extant eukaryotes preferentially contains variants that supported robust growth under all tested conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract states this finding from comparing natural variants to experimental fitness data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:36:09.180852Z"
+    },
+    {
+      "id": "f2333636-5104-492c-ac72-d40575f61a67",
+      "content_id": "2a4c0593-4854-4176-9bb6-4a11179917df",
+      "claim_id": "C9",
+      "claim": "The long-term selective pressure on Hsp90 may have been that of fluctuating environments, leading to robustness under a variety of conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Rather than favoring substitutions in individual conditions, the long-term selective pressure on Hsp90 may have been that of fluctuating environments, leading to robustness under a variety of conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis proposed by the authors based on their findings.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:36:09.180852Z"
+    },
+    {
+      "id": "89522c1e-b252-46b4-bc81-1ed14ecf6241",
+      "content_id": "2a4c0593-4854-4176-9bb6-4a11179917df",
+      "claim_id": "C10",
+      "claim": "Environmental conditions can alter the fitness effects of mutations.",
+      "claim_type": "EXPLICIT",
+      "source": "It has long been clear that environmental conditions can alter the fitness effects of mutations (Tutt, 1896).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge with a historical citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:36:09.180852Z"
+    },
+    {
+      "id": "b5db2fbd-1fa4-44dd-8ed9-1085741d5459",
+      "content_id": "2a4c0593-4854-4176-9bb6-4a11179917df",
+      "claim_id": "C11",
+      "claim": "Mutations can be categorized into three classes: strongly deleterious mutations, nearly-neutral mutations, and beneficial mutations.",
+      "claim_type": "EXPLICIT",
+      "source": "Depending on environmental conditions, mutations can be categorized into three classes: strongly deleterious mutations that are purged from populations by purifying selection, nearly-neutral mutations that are governed by stochastic processes, and beneficial mutations that tend to provide a selective advantage (Ohta, 1973).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This classification is cited from Ohta, 1973.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:36:09.180852Z"
+    },
+    {
+      "id": "1ad0c100-9ccf-40c9-8cb7-576195e368f3",
+      "content_id": "2a4c0593-4854-4176-9bb6-4a11179917df",
+      "claim_id": "C12",
+      "claim": "The EMPIRIC approach quantifies growth rates that are a direct measure of experimental fitness.",
+      "claim_type": "EXPLICIT",
+      "source": "The EMPIRIC (Exceedingly Meticulous and Parallel Investigation of Randomized Individual Codons) approach that we previously developed (Hietpas et al., 2011) is particularly well suited to address questions regarding the environmental impact of mutational effects for three reasons: it quantifies growth rates that are a direct measure of experimental fitness, all point mutations are engineered providing comprehensive maps of growth effects, and all the variants can be tracked in the same flask while experiencing identical growth conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The authors describe the capabilities of their method.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:36:09.180852Z"
+    },
+    {
+      "id": "de52562a-5d88-4cb6-aaf1-14792ae41f7d",
+      "content_id": "2a4c0593-4854-4176-9bb6-4a11179917df",
+      "claim_id": "C13",
+      "claim": "The EMPIRIC approach engineers all point mutations providing comprehensive maps of growth effects.",
+      "claim_type": "EXPLICIT",
+      "source": "The EMPIRIC (Exceedingly Meticulous and Parallel Investigation of Randomized Individual Codons) approach that we previously developed (Hietpas et al., 2011) is particularly well suited to address questions regarding the environmental impact of mutational effects for three reasons: it quantifies growth rates that are a direct measure of experimental fitness, all point mutations are engineered providing comprehensive maps of growth effects, and all the variants can be tracked in the same flask while experiencing identical growth conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The authors describe the capabilities of their method.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:36:09.180852Z"
+    },
+    {
+      "id": "dc8bafbc-8820-43ee-a98f-e1542e24ccaf",
+      "content_id": "2a4c0593-4854-4176-9bb6-4a11179917df",
+      "claim_id": "C14",
+      "claim": "In the EMPIRIC approach, all variants can be tracked in the same flask while experiencing identical growth conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "The EMPIRIC (Exceedingly Meticulous and Parallel Investigation of Randomized Individual Codons) approach that we previously developed (Hietpas et al., 2011) is particularly well suited to address questions regarding the environmental impact of mutational effects for three reasons: it quantifies growth rates that are a direct measure of experimental fitness, all point mutations are engineered providing comprehensive maps of growth effects, and all the variants can be tracked in the same flask while experiencing identical growth conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The authors describe the capabilities of their method.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:36:09.180852Z"
+    },
+    {
+      "id": "0026de9c-02d7-4588-bef6-9bf79635ba11",
+      "content_id": "2a4c0593-4854-4176-9bb6-4a11179917df",
+      "claim_id": "C15",
+      "claim": "Stress environments can exacerbate the fitness defects of mutations in ubiquitin.",
+      "claim_type": "EXPLICIT",
+      "source": "The analysis of ubiquitin fitness maps revealed that stress environments can exacerbate the fitness defects of mutations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from previous work on ubiquitin cited by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:36:09.180852Z"
+    },
+    {
+      "id": "72c66c34-59ef-439e-adba-00bec16ba104",
+      "content_id": "2a4c0593-4854-4176-9bb6-4a11179917df",
+      "claim_id": "C16",
+      "claim": "There are only three amino acid differences in ubiquitin between yeast and human.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the small size of ubiquitin and the near absence of natural variation in ubiquitin sequences (only three amino acid differences between yeast and human) hindered investigation of the properties underlying historically observed substitutions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a fact about ubiquitin sequence conservation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:36:09.180852Z"
+    },
+    {
+      "id": "409190fa-6b33-4dfa-98fc-ea9401375285",
+      "content_id": "2a4c0593-4854-4176-9bb6-4a11179917df",
+      "claim_id": "C17",
+      "claim": "Hsp90 encodes a 709 amino acid protein.",
+      "claim_type": "EXPLICIT",
+      "source": "Hsp90 encodes a 709 amino acid protein and to our knowledge it is the largest gene for which a comprehensive protein fitness map has been determined.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement about the size of Hsp90.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:36:09.180852Z"
+    },
+    {
+      "id": "6c07c585-3dae-45b9-acfc-b0040163d54c",
+      "content_id": "2a4c0593-4854-4176-9bb6-4a11179917df",
+      "claim_id": "C18",
+      "claim": "Hsp90 is the largest gene for which a comprehensive protein fitness map has been determined.",
+      "claim_type": "EXPLICIT",
+      "source": "Hsp90 encodes a 709 amino acid protein and to our knowledge it is the largest gene for which a comprehensive protein fitness map has been determined.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The authors state this is the largest such study to their knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:36:09.180852Z"
+    },
+    {
+      "id": "fd610fc5-eb01-42df-9046-58c8a3b33d88",
+      "content_id": "2a4c0593-4854-4176-9bb6-4a11179917df",
+      "claim_id": "C19",
+      "claim": "Hsp90 is an essential and highly abundant molecular chaperone.",
+      "claim_type": "EXPLICIT",
+      "source": "Hsp90 is an essential and highly abundant molecular chaperone which is induced by a wide variety of environmental stresses (Gasch et al., 2000; Lindquist, 1981).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge with citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:36:09.180852Z"
+    },
+    {
+      "id": "71337d32-4978-4fe6-8d68-5d621b87eef1",
+      "content_id": "2a4c0593-4854-4176-9bb6-4a11179917df",
+      "claim_id": "C20",
+      "claim": "Hsp90 is induced by a wide variety of environmental stresses.",
+      "claim_type": "EXPLICIT",
+      "source": "Hsp90 is an essential and highly abundant molecular chaperone which is induced by a wide variety of environmental stresses (Gasch et al., 2000; Lindquist, 1981).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge with citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:36:09.180852Z"
+    },
+    {
+      "id": "795d8356-fc0c-483d-b475-bbc448d811c8",
+      "content_id": "2a4c0593-4854-4176-9bb6-4a11179917df",
+      "claim_id": "C21",
+      "claim": "Hsp90 assists cells in responding to stressful conditions by facilitating the folding and activation of client proteins through ATP-dependent conformational changes mediated by co-chaperones.",
+      "claim_type": "EXPLICIT",
+      "source": "Hsp90 assists cells in responding to these stressful conditions by facilitating the folding and activation of client proteins through a series of ATP-dependent conformational changes mediated by co-chaperones (Krukenberg et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the known mechanism of Hsp90 function with a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:36:09.180852Z"
+    },
+    {
+      "id": "b17fef78-3f83-4d85-a5f7-3fa0497e6923",
+      "content_id": "2a4c0593-4854-4176-9bb6-4a11179917df",
+      "claim_id": "C22",
+      "claim": "Hsp90 clients are primarily signal transduction proteins, highly enriched in kinases and transcription factors.",
+      "claim_type": "EXPLICIT",
+      "source": "These clients are primarily signal transduction proteins, highly enriched in kinases and transcription factors (Taipale et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge with a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:36:09.180852Z"
+    },
+    {
+      "id": "7d837873-c1a2-4bd2-bf94-8c8a43d50bfd",
+      "content_id": "2a4c0593-4854-4176-9bb6-4a11179917df",
+      "claim_id": "C23",
+      "claim": "Through its clients, Hsp90 activity is linked to virtually every cellular process.",
+      "claim_type": "EXPLICIT",
+      "source": "Through its clients, Hsp90 activity is linked to virtually every cellular process.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the broad range of Hsp90 clients.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:36:09.180852Z"
+    },
+    {
+      "id": "5662e35d-2923-44e5-9b75-3cf9c78177ab",
+      "content_id": "2a4c0593-4854-4176-9bb6-4a11179917df",
+      "claim_id": "C24",
+      "claim": "Hsp90 can facilitate the emergence and evolution of new traits in response to stress conditions, including drug resistance in fungi.",
+      "claim_type": "EXPLICIT",
+      "source": "Hsp90 can facilitate the emergence and evolution of new traits in response to stress conditions, including drug resistance in fungi (Cowen and Lindquist, 2005), gross morphology in flies (Rutherford and Lindquist, 1998) and plants (Queitsch et al., 2002), and vision loss in cave fish (Rohner et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with multiple citations supporting different examples.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:36:09.180852Z"
+    },
+    {
+      "id": "e39ef566-6726-4d0c-b82b-0869b72d6b36",
+      "content_id": "2a4c0593-4854-4176-9bb6-4a11179917df",
+      "claim_id": "C25",
+      "claim": "Hsp90 can facilitate the emergence and evolution of new traits in response to stress conditions, including gross morphology in flies.",
+      "claim_type": "EXPLICIT",
+      "source": "Hsp90 can facilitate the emergence and evolution of new traits in response to stress conditions, including drug resistance in fungi (Cowen and Lindquist, 2005), gross morphology in flies (Rutherford and Lindquist, 1998) and plants (Queitsch et al., 2002), and vision loss in cave fish (Rohner et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with multiple citations supporting different examples.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:36:09.180852Z"
+    },
+    {
+      "id": "683107bf-d226-43f7-9164-5b3d9bd80310",
+      "content_id": "2a4c0593-4854-4176-9bb6-4a11179917df",
+      "claim_id": "C26",
+      "claim": "Hsp90 can facilitate the emergence and evolution of new traits in response to stress conditions, including gross morphology in plants.",
+      "claim_type": "EXPLICIT",
+      "source": "Hsp90 can facilitate the emergence and evolution of new traits in response to stress conditions, including drug resistance in fungi (Cowen and Lindquist, 2005), gross morphology in flies (Rutherford and Lindquist, 1998) and plants (Queitsch et al., 2002), and vision loss in cave fish (Rohner et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with multiple citations supporting different examples.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:36:09.180852Z"
+    },
+    {
+      "id": "d65f1633-15e0-41cd-8780-a0536e8a4df6",
+      "content_id": "2a4c0593-4854-4176-9bb6-4a11179917df",
+      "claim_id": "C27",
+      "claim": "Hsp90 can facilitate the emergence and evolution of new traits in response to stress conditions, including vision loss in cave fish.",
+      "claim_type": "EXPLICIT",
+      "source": "Hsp90 can facilitate the emergence and evolution of new traits in response to stress conditions, including drug resistance in fungi (Cowen and Lindquist, 2005), gross morphology in flies (Rutherford and Lindquist, 1998) and plants (Queitsch et al., 2002), and vision loss in cave fish (Rohner et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with multiple citations supporting different examples.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:36:09.180852Z"
+    },
+    {
+      "id": "231ce733-2090-4b9e-93f0-76b879a8b710",
+      "content_id": "2a4c0593-4854-4176-9bb6-4a11179917df",
+      "claim_id": "C28",
+      "claim": "An abundance of Hsp90 promotes standing variation by masking the phenotypic effects of destabilizing mutations in clients in non-stress conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "In non-stress conditions, an abundance of Hsp90 promotes standing variation by masking the phenotypic effects of destabilizing mutations in clients.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a known mechanism of Hsp90 function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:36:09.180852Z"
+    },
+    {
+      "id": "6937c309-f84c-4cbd-ad7d-05076755e508",
+      "content_id": "2a4c0593-4854-4176-9bb6-4a11179917df",
+      "claim_id": "C29",
+      "claim": "Stressful conditions that tax Hsp90 capacity can manifest in phenotypic diversity that can contribute to adaptation.",
+      "claim_type": "EXPLICIT",
+      "source": "Stressful conditions that tax Hsp90 capacity can then manifest in phenotypic diversity that can contribute to adaptation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a known mechanism of Hsp90 function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:36:09.180852Z"
+    },
+    {
+      "id": "a7334906-8f64-446d-a9a9-0f51bc8e8405",
+      "content_id": "2a4c0593-4854-4176-9bb6-4a11179917df",
+      "claim_id": "C30",
+      "claim": "The sequence of Hsp90 is strongly conserved in eukaryotes with 57% amino acid identity from yeast to human.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the sequence of Hsp90 is strongly conserved in eukaryotes (57% amino acid identity from yeast to human), indicating consistent strong purifying selection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement about Hsp90 sequence conservation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:36:09.180852Z"
+    },
+    {
+      "id": "9eb67cf3-2310-407b-82cc-6c30c25d3c71",
+      "content_id": "2a4c0593-4854-4176-9bb6-4a11179917df",
+      "claim_id": "C31",
+      "claim": "The strong conservation of Hsp90 sequence indicates consistent strong purifying selection.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the sequence of Hsp90 is strongly conserved in eukaryotes (57% amino acid identity from yeast to human), indicating consistent strong purifying selection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the observed sequence conservation.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:36:09.180852Z"
+    },
+    {
+      "id": "a533d3c1-5a60-4698-9cea-1e587adddb6c",
+      "content_id": "2a4c0593-4854-4176-9bb6-4a11179917df",
+      "claim_id": "C32",
+      "claim": "98% of possible amino acid changes in Hsp90 were quantified in bulk competitions.",
+      "claim_type": "EXPLICIT",
+      "source": "Bulk competitions of yeast with a deep sequencing readout enabled the simultaneous quantification of 98% of possible amino acid changes (Figure 1A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the coverage achieved in the experimental approach.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:36:09.180852Z"
+    },
+    {
+      "id": "8e36f645-afad-4136-836d-af68ce149594",
+      "content_id": "2a4c0593-4854-4176-9bb6-4a11179917df",
+      "claim_id": "C33",
+      "claim": "Selection coefficients between technical replicates under standard conditions were strongly correlated (R2 = 0.90).",
+      "claim_type": "EXPLICIT",
+      "source": "Selection coefficients between replicates were strongly correlated (R2 = 0.90), and indicated that we could clearly distinguish between selection coefficients for members of the library containing silent mutations that do not change the amino acid sequence (wild-type synonyms) and those containing stop codons (Figure 1B, Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative result from the reproducibility analysis shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:36:09.180852Z"
+    },
+    {
+      "id": "06c2e532-8294-4804-9d7c-d64f9c218be0",
+      "content_id": "2a4c0593-4854-4176-9bb6-4a11179917df",
+      "claim_id": "C34",
+      "claim": "Selection coefficients in this study under standard conditions correlated strongly (R2 = 0.87) with estimates of the Hsp90 N-domain in a previous study.",
+      "claim_type": "EXPLICIT",
+      "source": "The selection coefficients in this study under standard conditions also correlated strongly (R2 = 0.87) with estimates of the Hsp90 N-domain in a previous study (Mishra et al., 2016; Figure 1\u2014figure supplement 2), indicating that biological replicates also show high reproducibility.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This compares current results to a previous study, shown in Figure 1\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:36:09.180852Z"
+    },
+    {
+      "id": "d1c59263-5da0-4759-987a-829ea442b59e",
+      "content_id": "2a4c0593-4854-4176-9bb6-4a11179917df",
+      "claim_id": "C35",
+      "claim": "Most variants of Hsp90 had wild-type-like fitness in the competition experiment in standard conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "However, most variants of Hsp90 had wild-type-like fitness in the competition experiment in standard conditions (Figure 1C, Figure 1\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a summary of the fitness distribution observed in standard conditions, shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:36:09.180852Z"
+    },
+    {
+      "id": "52a5ef21-e1c6-42be-b32a-cd89f4c53c6b",
+      "content_id": "2a4c0593-4854-4176-9bb6-4a11179917df",
+      "claim_id": "C36",
+      "claim": "All possible mutations (excluding stops) were compatible with function at 425 positions in Hsp90.",
+      "claim_type": "EXPLICIT",
+      "source": "All possible mutations (excluding stops) were compatible with function at 425 positions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from the fitness data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:36:09.180852Z"
+    },
+    {
+      "id": "a4e9859f-97c3-4dce-bbe3-502d65242ba8",
+      "content_id": "2a4c0593-4854-4176-9bb6-4a11179917df",
+      "claim_id": "C37",
+      "claim": "Only 17 positions in Hsp90 had low mutational tolerance to the extent that 15 or more substitutions caused null-like growth defects.",
+      "claim_type": "EXPLICIT",
+      "source": "Only 17 positions had low mutational tolerance to the extent that 15 or more substitutions caused null-like growth defects (R32, E33, N37, D40, D79, G81, G94, I96, A97, S99, G118, G121, G123, Y125, F156, W300, and R380).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result identifying specific critical positions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:36:09.180852Z"
+    },
+    {
+      "id": "b5398ae8-1a82-4254-b6d4-2f5985c326b6",
+      "content_id": "2a4c0593-4854-4176-9bb6-4a11179917df",
+      "claim_id": "C38",
+      "claim": "All critical positions except W300 are in contact with ATP or mediate ATP-dependent conformational changes in the N-domain of Hsp90.",
+      "claim_type": "EXPLICIT",
+      "source": "All these positions except for W300 are in contact with ATP or mediate ATP-dependent conformational changes in the N-domain of Hsp90.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a structural analysis of the critical positions identified.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:36:09.180852Z"
+    },
+    {
+      "id": "9725b81f-70d3-404e-b02c-53a04c80a3f6",
+      "content_id": "2a4c0593-4854-4176-9bb6-4a11179917df",
+      "claim_id": "C39",
+      "claim": "W300 transmits information from client binding to long range conformational changes of Hsp90 that are driven by ATP hydrolysis.",
+      "claim_type": "EXPLICIT",
+      "source": "While W300 does not contact ATP, it transmits information from client binding to long range conformational changes of Hsp90 that are driven by ATP hydrolysis (R\u00f6hl et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a citation to explain the functional role of W300.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:36:09.180852Z"
+    },
+    {
+      "id": "2326b840-4365-4fa1-8f13-59e6c05c4b43",
+      "content_id": "2a4c0593-4854-4176-9bb6-4a11179917df",
+      "claim_id": "C40",
+      "claim": "The average selection coefficient at different positions in standard growth conditions correlates (R2 = 0.49) with distance from ATP.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, the average selection coefficient at different positions (a measure of mutational sensitivity) in standard growth conditions correlates (R2 = 0.49) with distance from ATP (Figure 1\u2014figure supplement 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative correlation analysis shown in Figure 1\u2014figure supplement 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:36:09.180852Z"
+    },
+    {
+      "id": "328f7d97-0c6a-4be9-8444-cd22e8644cb5",
+      "content_id": "2a4c0593-4854-4176-9bb6-4a11179917df",
+      "claim_id": "C41",
+      "claim": "ATP binding and the conformational changes driven by ATP hydrolysis impose dominant physical constraints in Hsp90 under standard laboratory conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results indicate that ATP binding and the conformational changes driven by ATP hydrolysis impose dominant physical constraints in Hsp90 under standard laboratory conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the correlation between fitness and distance from ATP.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:36:09.180852Z"
+    },
+    {
+      "id": "d6d10394-6ae2-4fb8-820e-fd185132fd37",
+      "content_id": "2a4c0593-4854-4176-9bb6-4a11179917df",
+      "claim_id": "C42",
+      "claim": "All tested stress conditions reduced the growth rate of the parental strain within a two-fold range.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistently, all stresses reduced the growth rate of the parental strain within a two-fold range, with depletion of nitrogen levels causing the smallest reduction in growth rate and diamide causing the greatest reduction (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative result from growth rate measurements shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:36:09.180852Z"
+    },
+    {
+      "id": "f8984c75-36c8-4093-a5aa-6dbe56bb4891",
+      "content_id": "2a4c0593-4854-4176-9bb6-4a11179917df",
+      "claim_id": "C43",
+      "claim": "Depletion of nitrogen levels caused the smallest reduction in growth rate among the tested stresses.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistently, all stresses reduced the growth rate of the parental strain within a two-fold range, with depletion of nitrogen levels causing the smallest reduction in growth rate and diamide causing the greatest reduction (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative result from growth rate measurements shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:36:09.180852Z"
+    },
+    {
+      "id": "9c182c59-6243-4ecc-afe8-13e2366ba946",
+      "content_id": "2a4c0593-4854-4176-9bb6-4a11179917df",
+      "claim_id": "C44",
+      "claim": "Diamide caused the greatest reduction in growth rate among the tested stresses.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistently, all stresses reduced the growth rate of the parental strain within a two-fold range, with depletion of nitrogen levels causing the smallest reduction in growth rate and diamide causing the greatest reduction (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative result from growth rate measurements shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:36:09.180852Z"
+    },
+    {
+      "id": "a2779d13-2818-440c-b663-10010783bb50",
+      "content_id": "2a4c0593-4854-4176-9bb6-4a11179917df",
+      "claim_id": "C45",
+      "claim": "Under standard conditions, the normal level of Hsp90 protein can be dramatically reduced without major impacts on growth rate.",
+      "claim_type": "EXPLICIT",
+      "source": "Under standard conditions, the normal level of Hsp90 protein can be dramatically reduced without major impacts on growth rate, consistent with previous findings (Jiang et al., 2013; Picard et al., 1990).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a finding consistent with previous studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:36:09.180852Z"
+    },
+    {
+      "id": "228cd86c-5aef-402e-ac4f-4859f0549be5",
+      "content_id": "2a4c0593-4854-4176-9bb6-4a11179917df",
+      "claim_id": "C46",
+      "claim": "Reduced Hsp90 levels cause a marked decrease in growth rate at 37\u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this concept, reduced Hsp90 levels cause a marked decrease in growth rate at 37\u00b0C.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the growth rate measurements at elevated temperature.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:36:09.180852Z"
+    },
+    {
+      "id": "e63979d5-800b-4ae2-b584-3a2dbcb62802",
+      "content_id": "2a4c0593-4854-4176-9bb6-4a11179917df",
+      "claim_id": "C47",
+      "claim": "The stresses of 37\u00b0C and diamide tend to exaggerate the growth defects of many mutants compared to standard conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "The stresses of 37\u00b0C and diamide tend to exaggerate the growth defects of many mutants compared to standard conditions, whereas high salt and ethanol tend to rescue growth defects (Figure 2B&C and Figure 2\u2014figure supplement 9).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a summary of the comparative fitness data shown in Figure 2B&C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:36:09.180852Z"
+    },
+    {
+      "id": "7a984294-6c87-49f1-ab8f-811bcec3a994",
+      "content_id": "2a4c0593-4854-4176-9bb6-4a11179917df",
+      "claim_id": "C48",
+      "claim": "High salt and ethanol tend to rescue growth defects compared to standard conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "The stresses of 37\u00b0C and diamide tend to exaggerate the growth defects of many mutants compared to standard conditions, whereas high salt and ethanol tend to rescue growth defects (Figure 2B&C and Figure 2\u2014figure supplement 9).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a summary of the comparative fitness data shown in Figure 2B&C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:36:09.180852Z"
+    },
+    {
+      "id": "7504e277-a6dc-4672-96c0-3acab56bdee2",
+      "content_id": "2a4c0593-4854-4176-9bb6-4a11179917df",
+      "claim_id": "C49",
+      "claim": "The average selection coefficients are more deleterious in diamide and temperature stress compared to standard conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "The average selection coefficients are more deleterious in diamide and temperature stress compared to standard conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative comparison of fitness distributions across conditions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:36:09.180852Z"
+    },
+    {
+      "id": "d2eb9abe-9b8e-4df8-8228-70c652cc67ba",
+      "content_id": "2a4c0593-4854-4176-9bb6-4a11179917df",
+      "claim_id": "C50",
+      "claim": "The average selection coefficients are less deleterious in ethanol and salt stress than in standard conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the average selection coefficients are less deleterious in ethanol and salt stress than in standard conditions, which suggests a decrease in the demand for Hsp90 function in these conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative comparison of fitness distributions across conditions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:36:09.180852Z"
+    },
+    {
+      "id": "ced40433-7a85-4dad-ae00-722aca6bce11",
+      "content_id": "2a4c0593-4854-4176-9bb6-4a11179917df",
+      "claim_id": "C51",
+      "claim": "Environmentally responsive positions with large changes in average selection coefficient in at least three conditions are located throughout all domains of Hsp90.",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike the critical positions that cluster around the ATP binding site (Figure 1C), the environmentally responsive positions are located throughout all domains of Hsp90.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a structural analysis of environmentally responsive positions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:36:09.180852Z"
+    },
+    {
+      "id": "2ca878ac-c851-48b9-8034-378016b6a90d",
+      "content_id": "2a4c0593-4854-4176-9bb6-4a11179917df",
+      "claim_id": "C52",
+      "claim": "Environmentally responsive positions are more conserved in nature compared to other positions in Hsp90.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to critical residues, environmentally responsive positions are more conserved in nature compared to other positions in Hsp90 (Figure 3C), suggesting that the suite of experimental stress conditions tested captured aspects of natural selection pressures on Hsp90 sequence.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a comparison of conservation patterns shown in Figure 3C.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:36:09.180852Z"
+    },
+    {
+      "id": "28581046-c516-4d91-a676-a5ad9bf6a7ed",
+      "content_id": "2a4c0593-4854-4176-9bb6-4a11179917df",
+      "claim_id": "C53",
+      "claim": "About 65% of the environmentally responsive residues have been identified as interacting with binding partners.",
+      "claim_type": "EXPLICIT",
+      "source": "About 65% of the environmentally responsive residues have been identified either structurally or genetically as interacting with binding partners (Ali et al., 2006; Bohen and Yamamoto, 1993; Genest et al., 2013; Hagn et al., 2011; Hawle et al., 2006; Kravats et al., 2018; Lorenz et al., 2014; Meyer et al., 2003; Meyer et al., 2004; Nathan and Lindquist, 1995; Retzlaff et al., 2009; Roe et al., 2004; Verba et al., 2016; Zhang et al., 2010), compared to about 15% of positions that were not responsive to stress conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative analysis of binding site enrichment with multiple citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:36:09.180852Z"
+    },
+    {
+      "id": "13d66347-d411-4012-bde6-8bf69ab4a655",
+      "content_id": "2a4c0593-4854-4176-9bb6-4a11179917df",
+      "claim_id": "C54",
+      "claim": "About 15% of positions that were not responsive to stress conditions have been identified as interacting with binding partners.",
+      "claim_type": "EXPLICIT",
+      "source": "About 65% of the environmentally responsive residues have been identified either structurally or genetically as interacting with binding partners (Ali et al., 2006; Bohen and Yamamoto, 1993; Genest et al., 2013; Hagn et al., 2011; Hawle et al., 2006; Kravats et al., 2018; Lorenz et al., 2014; Meyer et al., 2003; Meyer et al., 2004; Nathan and Lindquist, 1995; Retzlaff et al., 2009; Roe et al., 2004; Verba et al., 2016; Zhang et al., 2010), compared to about 15% of positions that were not responsive to stress conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative analysis of binding site enrichment with multiple citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:36:09.180852Z"
+    },
+    {
+      "id": "3a228fda-ab74-4c29-b60d-147ba1fcbe2a",
+      "content_id": "2a4c0593-4854-4176-9bb6-4a11179917df",
+      "claim_id": "C55",
+      "claim": "Client and co-chaperone interactions have a larger impact on experimental fitness under stress conditions compared to standard conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "While ATP binding and hydrolysis are the main structural determinants that constrain fitness in standard growth conditions, client and co-chaperone interactions have a larger impact on experimental fitness under stress conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the enrichment of environmentally responsive positions at binding sites.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:36:09.180852Z"
+    },
+    {
+      "id": "7936fcda-8566-49e7-ac64-985d73b27634",
+      "content_id": "2a4c0593-4854-4176-9bb6-4a11179917df",
+      "claim_id": "C56",
+      "claim": "Of the 2504 variants of Hsp90 that are deleterious when grown at 37\u00b0C, 884 of them (~35%) are deleterious only in this condition.",
+      "claim_type": "EXPLICIT",
+      "source": "Of the 2504 variants of Hsp90 that are deleterious when grown at 37\u00b0C, 884 of them (~35%) are deleterious only in this condition (Figure 3F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative result from the Venn diagram analysis shown in Figure 3F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:36:09.180852Z"
+    },
+    {
+      "id": "81ad05d0-4770-41c3-8bab-fea82ddc0678",
+      "content_id": "2a4c0593-4854-4176-9bb6-4a11179917df",
+      "claim_id": "C57",
+      "claim": "663 Hsp90 amino acid changes (roughly 5% of possible changes) were found to be temperature sensitive.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on this definition, 663 Hsp90 amino acid changes (roughly 5% of possible changes) were found to be temperature sensitive (Figure 4A, Figure 4\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative result identifying temperature-sensitive mutations shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:36:09.180852Z"
+    },
+    {
+      "id": "555b47d1-b6d7-49f5-960f-ac1746331ab5",
+      "content_id": "2a4c0593-4854-4176-9bb6-4a11179917df",
+      "claim_id": "C58",
+      "claim": "Temperature-sensitive mutations tended to concentrate at certain amino acid positions of Hsp90.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that ts mutations tended to concentrate at certain amino acid positions of Hsp90 (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from the clustering analysis shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:36:09.180852Z"
+    },
+    {
+      "id": "710d9234-ad5f-4f52-aa23-b748d45c798c",
+      "content_id": "2a4c0593-4854-4176-9bb6-4a11179917df",
+      "claim_id": "C59",
+      "claim": "The clustering of temperature-sensitive mutations was significant compared to random simulations.",
+      "claim_type": "EXPLICIT",
+      "source": "The clustering of ts mutations was significant compared to random simulations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical result from comparing observed clustering to simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:36:09.180852Z"
+    },
+    {
+      "id": "f7a7912b-cb0b-41fd-abc7-8ff946d8374c",
+      "content_id": "2a4c0593-4854-4176-9bb6-4a11179917df",
+      "claim_id": "C60",
+      "claim": "Substitutions that confer a temperature-sensitive phenotype are enriched in buried residues.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the idea that many ts mutations may disrupt protein folding at elevated temperature, substitutions that confer a ts phenotype are enriched in buried residues (Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from the SASA analysis shown in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:36:09.180852Z"
+    },
+    {
+      "id": "b8bba59a-c7a1-4f12-933b-035d89e600d4",
+      "content_id": "2a4c0593-4854-4176-9bb6-4a11179917df",
+      "claim_id": "C61",
+      "claim": "Temperature-sensitive mutations tend to have negative Blosum scores.",
+      "claim_type": "EXPLICIT",
+      "source": "Also consistent with this idea, ts mutations tend to have negative Blosum scores (Henikoff and Henikoff, 1992; Figure 4E), a hallmark of disruptive amino acid changes.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from the Blosum score analysis shown in Figure 4E.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:36:09.180852Z"
+    },
+    {
+      "id": "25c93b74-d864-46a8-aa4d-07529104f9a4",
+      "content_id": "2a4c0593-4854-4176-9bb6-4a11179917df",
+      "claim_id": "C62",
+      "claim": "The I66E, G170D and L499R Hsp90 mutants have no activity at 37\u00b0C irrespective of expression levels.",
+      "claim_type": "EXPLICIT",
+      "source": "The I66E, G170D and L499R Hsp90 mutants have no activity at 37\u00b0C irrespective of expression levels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from testing individual mutants at different expression levels.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:36:09.180852Z"
+    },
+    {
+      "id": "00e4b057-45d4-4847-955a-3c314046a50f",
+      "content_id": "2a4c0593-4854-4176-9bb6-4a11179917df",
+      "claim_id": "C63",
+      "claim": "Increasing the Hsp90 expression levels at least partially rescued the growth defect for five temperature-sensitive variants (L50D, K102A, D180L, K398L, K594I).",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, increasing the Hsp90 expression levels at least partially rescued the growth defect for five ts variants (L50D, K102A, D180L, K398L, K594I), indicating that these variants do not provide enough Hsp90 function for robust growth at elevated temperature.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from testing individual mutants at different expression levels.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:36:09.180852Z"
+    },
+    {
+      "id": "388af2d8-5249-433e-9b13-bb7235ff2d6f",
+      "content_id": "2a4c0593-4854-4176-9bb6-4a11179917df",
+      "claim_id": "C64",
+      "claim": "The largest number of beneficial variants in Hsp90 occurred in high temperature and diamide conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "The largest number of beneficial variants in Hsp90 occurred in high temperature and diamide conditions (Figure 5A, Figure 5\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative result shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:36:09.180852Z"
+    },
+    {
+      "id": "cc579d69-6034-4f75-afaa-f2a07dc758cd",
+      "content_id": "2a4c0593-4854-4176-9bb6-4a11179917df",
+      "claim_id": "C65",
+      "claim": "Beneficial mutants in diamide and high temperature tend to cluster at specific positions.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, beneficial mutants in diamide and high temperature tend to cluster at certain positions (Figure 5B), which would not be expected for noise.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from the clustering analysis shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:36:09.180852Z"
+    },
+    {
+      "id": "6962f2c8-28f3-4a79-adb7-7c8e5dbc80f6",
+      "content_id": "2a4c0593-4854-4176-9bb6-4a11179917df",
+      "claim_id": "C66",
+      "claim": "In diamide and elevated temperature, the clustered beneficial positions were almost entirely located in the ATP-binding domain and the middle domain.",
+      "claim_type": "EXPLICIT",
+      "source": "In diamide and elevated temperature, the clustered beneficial positions were almost entirely located in the ATP-binding domain and the middle domain (Figure 5C), both of which make extensive contacts with clients and co-chaperones (Ali et al., 2006; Meyer et al., 2003; Meyer et al., 2004; Roe et al., 2004; Verba et al., 2016; Zhang et al., 2010).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a structural analysis of beneficial positions shown in Figure 5C with citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:36:09.180852Z"
+    },
+    {
+      "id": "63736a48-f338-4692-b63d-95286189e5e9",
+      "content_id": "2a4c0593-4854-4176-9bb6-4a11179917df",
+      "claim_id": "C67",
+      "claim": "Beneficial mutations in elevated temperature and diamide conditions were preferentially located on the surface of Hsp90.",
+      "claim_type": "EXPLICIT",
+      "source": "Beneficial mutations in elevated temperature and diamide conditions were preferentially located on the surface of Hsp90 (Figure 5D) at positions accessible to binding partners.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from the SASA analysis shown in Figure 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:36:09.180852Z"
+    },
+    {
+      "id": "23cec88d-6907-4ffa-beba-531bab126fb2",
+      "content_id": "2a4c0593-4854-4176-9bb6-4a11179917df",
+      "claim_id": "C68",
+      "claim": "Beneficial positions were disproportionately located at known interfaces with co-chaperones and clients.",
+      "claim_type": "EXPLICIT",
+      "source": "Analyses of available Hsp90 complexes indicate that beneficial positions were disproportionately located at known interfaces with co-chaperones and clients (Figure 5E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from the interface analysis shown in Figure 5E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:36:09.180852Z"
+    },
+    {
+      "id": "a4baf528-09bb-474d-91cd-4ebc2c25a66c",
+      "content_id": "2a4c0593-4854-4176-9bb6-4a11179917df",
+      "claim_id": "C69",
+      "claim": "Amino acids that are beneficial in diamide and elevated temperature tend to exhibit deleterious effects in standard conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Amino acids that are beneficial in diamide and elevated temperature tend to exhibit deleterious effects in standard conditions (Figure 5F), consistent with a cost of adaptation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from comparing fitness across conditions shown in Figure 5F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:36:09.180852Z"
+    },
+    {
+      "id": "671292f4-c9ad-4e99-bde9-f470191d2813",
+      "content_id": "2a4c0593-4854-4176-9bb6-4a11179917df",
+      "claim_id": "C70",
+      "claim": "A synonymous mutation at the beginning of Hsp90 that was beneficial at high temperature was expressed at higher level in the plasmid system.",
+      "claim_type": "EXPLICIT",
+      "source": "Analysis of an individual clone confirms that a synonymous mutation at the beginning of Hsp90 that was beneficial at high temperature was expressed at higher level in our plasmid system (Figure 5\u2014figure supplement 4C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from analyzing individual clones shown in Figure 5\u2014figure supplement 4C,D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:36:09.180852Z"
+    },
+    {
+      "id": "f76b658e-3471-45e3-8ee1-7faaed6a918b",
+      "content_id": "2a4c0593-4854-4176-9bb6-4a11179917df",
+      "claim_id": "C71",
+      "claim": "1750 amino acid differences in total were located at 499 positions in Hsp90 across 267 sequences from organisms that broadly span across eukaryotes.",
+      "claim_type": "EXPLICIT",
+      "source": "We identified 1750 amino acid differences in total that were located at 499 positions in Hsp90.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from the natural sequence analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:36:09.180852Z"
+    },
+    {
+      "id": "05865f44-6bd1-4aff-8d15-4bee0c60f164",
+      "content_id": "2a4c0593-4854-4176-9bb6-4a11179917df",
+      "claim_id": "C72",
+      "claim": "The vast majority of natural amino acids in Hsp90 had wild-type-like fitness in all conditions studied.",
+      "claim_type": "EXPLICIT",
+      "source": "The vast majority of natural amino acids had wild-type-like fitness in all conditions studied here (Figure 6B and C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from comparing natural variants to experimental fitness shown in Figure 6B and C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:36:09.180852Z"
+    },
+    {
+      "id": "1ff3d9e2-46f4-4b84-a02c-7049cd24680f",
+      "content_id": "2a4c0593-4854-4176-9bb6-4a11179917df",
+      "claim_id": "C73",
+      "claim": "Naturally occurring amino acids in Hsp90 were rarely deleterious in any experimental condition.",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas naturally occurring amino acids in Hsp90 were rarely deleterious in any experimental condition, they were similarly likely to provide a growth benefit compared to all possible amino acids (5%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from comparing natural variants to experimental fitness.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:36:09.180852Z"
+    },
+    {
+      "id": "c45251e9-d36a-4174-a1f8-1bbf41201d78",
+      "content_id": "2a4c0593-4854-4176-9bb6-4a11179917df",
+      "claim_id": "C74",
+      "claim": "Naturally occurring amino acids in Hsp90 were similarly likely to provide a growth benefit compared to all possible amino acids (5%).",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas naturally occurring amino acids in Hsp90 were rarely deleterious in any experimental condition, they were similarly likely to provide a growth benefit compared to all possible amino acids (5%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from comparing natural variants to experimental fitness.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:36:09.180852Z"
+    },
+    {
+      "id": "583567d2-dda5-4c47-a025-b5f895c32d60",
+      "content_id": "2a4c0593-4854-4176-9bb6-4a11179917df",
+      "claim_id": "C75",
+      "claim": "Condition-dependent fitness benefits are not a major determinant of natural variation in Hsp90 sequences.",
+      "claim_type": "EXPLICIT",
+      "source": "This observation indicates that condition-dependent fitness benefits are not a major determinant of natural variation in Hsp90 sequences.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the finding that natural variants are not enriched for beneficial effects.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:36:09.180852Z"
+    },
+    {
+      "id": "6ca93482-c769-4b0f-827b-d6f873997cd9",
+      "content_id": "2a4c0593-4854-4176-9bb6-4a11179917df",
+      "claim_id": "C76",
+      "claim": "Natural selection has favored Hsp90 substitutions that are robust to multiple stressful conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, our results indicate that natural selection has favored Hsp90 substitutions that are robust to multiple stressful conditions (Figure 6D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an interpretation of the finding that natural variants support robust growth across conditions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:36:09.180852Z"
+    },
+    {
+      "id": "58003dfa-4ba8-4669-a4c7-eb314a41c485",
+      "content_id": "2a4c0593-4854-4176-9bb6-4a11179917df",
+      "claim_id": "C77",
+      "claim": "The clustering of beneficial mutations at known binding interfaces suggests that the optimal binding affinity for partner proteins may depend on growth conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "The clustering of beneficial mutations at known binding interfaces suggests that the optimal binding affinity for partner proteins may depend on growth conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the structural location of beneficial mutations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:36:09.180852Z"
+    },
+    {
+      "id": "dc02f34c-9373-4c9a-937a-0817c797e019",
+      "content_id": "2a4c0593-4854-4176-9bb6-4a11179917df",
+      "claim_id": "C78",
+      "claim": "Natural variants of Hsp90 have been selected for binding properties that are robust to different stresses rather than specific to individual conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "We propose that natural variants of Hsp90 have been selected for binding properties that are robust to different stresses rather than specific to individual conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis proposed by the authors based on their findings.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:36:09.180852Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "b268f171-1c39-4db0-966f-13b57e0fd643",
+      "content_id": "2a4c0593-4854-4176-9bb6-4a11179917df",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors engineered a comprehensive library of 44,604 single codon changes encoding 14,160 amino acid variants in Hsp90 and quantified 98% of possible amino acid changes under standard and five stress conditions, representing the largest comprehensive fitness map of point mutants to date.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C2, C3, and C32 collectively describe the scope and scale of the deep mutational scanning experiment. The experimental design is well-documented with appropriate methodology (barcoding strategy, bulk competitions, deep sequencing), and the coverage metrics (98% of amino acid changes, 44,604 codon changes) are clearly stated and supported by the described methods.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:36:09.180852Z"
+    },
+    {
+      "id": "23312b24-56d3-437d-8d65-2f920498a4ed",
+      "content_id": "2a4c0593-4854-4176-9bb6-4a11179917df",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The experimental approach demonstrated high reproducibility with technical replicates showing strong correlation (R\u00b2 = 0.90) and biological replicates correlating strongly (R\u00b2 = 0.87) with a previous study of the Hsp90 N-domain.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33 and C34 provide quantitative evidence of reproducibility through correlation analyses shown in Figures 1B and 1\u2014figure supplement 2. The high R\u00b2 values and consistency between technical and biological replicates support the reliability of the measurements, though some noise is noted for strongly deleterious variants.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:36:09.180852Z"
+    },
+    {
+      "id": "93de4a46-a50c-4d56-a70d-6f1a5a7f0711",
+      "content_id": "2a4c0593-4854-4176-9bb6-4a11179917df",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Under standard conditions, most Hsp90 variants exhibited wild-type-like fitness, with only 17 positions showing low mutational tolerance. These critical positions cluster around the ATP-binding site, and the average selection coefficient correlates with distance from ATP (R\u00b2 = 0.49), indicating that ATP binding and hydrolysis impose dominant physical constraints.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C38, C40-C41 describe the fitness landscape under standard conditions with specific quantitative results (425 tolerant positions, 17 critical positions, R\u00b2 = 0.49 correlation with ATP distance). The structural analysis linking critical positions to ATP binding is supported by Figure 1C and established knowledge of Hsp90 function. The interpretation that ATP binding/hydrolysis imposes dominant constraints is a reasonable inference from the correlation data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:36:09.180852Z"
+    },
+    {
+      "id": "3c226b66-0ed2-4bc8-9b85-c279aa4dd22e",
+      "content_id": "2a4c0593-4854-4176-9bb6-4a11179917df",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "All tested stress conditions reduced growth rate of the parental strain within a two-fold range, with nitrogen depletion causing the smallest and diamide the greatest reduction. While Hsp90 levels can be dramatically reduced under standard conditions without major growth impacts, reduced Hsp90 levels cause marked growth defects at 37\u00b0C.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C46 describe the characterization of stress conditions and Hsp90 dependence, supported by growth rate measurements in Figure 2A. The quantitative comparisons between conditions and the differential requirement for Hsp90 at elevated temperature are clearly documented and consistent with cited prior work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:36:09.180852Z"
+    },
+    {
+      "id": "fbf87f49-982c-4dcb-a810-ca1a36aa3c40",
+      "content_id": "2a4c0593-4854-4176-9bb6-4a11179917df",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Environmental conditions have profound effects on Hsp90 mutational fitness: 37\u00b0C and diamide exaggerate growth defects while salt and ethanol rescue them. The average selection coefficients are more deleterious in diamide and temperature stress but less deleterious in ethanol and salt stress compared to standard conditions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4-C5 and C47-C50 describe environment-dependent fitness effects supported by comparative data in Figure 2B-C. The directional effects (exacerbation vs. rescue) are clearly demonstrated, and the interpretation that environment impacts Hsp90 evolution is well-supported by the data showing many variants with condition-dependent fitness.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:36:09.180852Z"
+    },
+    {
+      "id": "5f8c1527-c46f-45bc-83a6-e91110ecbbda",
+      "content_id": "2a4c0593-4854-4176-9bb6-4a11179917df",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Environmentally responsive positions are distributed throughout all Hsp90 domains (unlike critical positions that cluster near ATP), are more conserved in nature, and are enriched at binding sites for clients and co-chaperones (65% vs. 15% for non-responsive positions), indicating that client and co-chaperone interactions have larger impacts on fitness under stress conditions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C55 describe the structural and functional properties of environmentally responsive positions, supported by analyses in Figure 3. The enrichment at binding sites (65% vs. 15%) is quantified with multiple citations, and the conservation analysis (Figure 3C) supports the inference that experimental conditions captured aspects of natural selection. The conclusion about client/co-chaperone interactions is a reasonable interpretation of the binding site enrichment.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:36:09.180852Z"
+    },
+    {
+      "id": "707d927c-d507-4fed-a66f-fe243387af29",
+      "content_id": "2a4c0593-4854-4176-9bb6-4a11179917df",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Approximately 35% (884/2504) of deleterious variants at 37\u00b0C are temperature-specific, with 663 temperature-sensitive mutations identified (~5% of possible changes). These mutations cluster significantly at specific positions, are enriched in buried residues, and have negative Blosum scores. Individual testing revealed two mechanistic classes: destabilizing mutations (e.g., I66E, G170D, L499R) that are non-functional regardless of expression, and reduced-function mutations (e.g., L50D, K102A, D180L, K398L, K594I) that can be rescued by increased expression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56-C63 describe temperature-sensitive mutations with specific quantitative results and mechanistic insights. The clustering analysis (Figure 4B) with statistical validation, structural properties (SASA, Blosum scores in Figures 4D-E), and individual variant testing (Figure 4F) provide converging evidence. The distinction between destabilizing and reduced-function mutations based on expression-dependence is well-supported by the experimental data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:36:09.180852Z"
+    },
+    {
+      "id": "19294b45-2297-4e2f-8b59-062d698da77f",
+      "content_id": "2a4c0593-4854-4176-9bb6-4a11179917df",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The largest number of beneficial variants occurred in high temperature and diamide conditions, clustering at specific positions in the ATP-binding and middle domains. These beneficial mutations are preferentially located on the protein surface at known interfaces with co-chaperones and clients, but tend to exhibit deleterious effects under standard conditions, consistent with a cost of adaptation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C64-C69 describe beneficial mutations with multiple lines of evidence: quantification (Figure 5A), significant clustering (Figure 5B), structural localization (Figures 5C-E), and fitness trade-offs (Figure 5F). The clustering analysis includes statistical validation against random simulations, and individual variants were confirmed. The interpretation of adaptation costs is supported by the negative correlation between beneficial effects in stress and fitness in standard conditions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:36:09.180852Z"
+    },
+    {
+      "id": "453eda52-7b16-4e69-9e5c-799c05c76b65",
+      "content_id": "2a4c0593-4854-4176-9bb6-4a11179917df",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "A synonymous mutation at the beginning of Hsp90 that was beneficial at high temperature was expressed at higher levels in the plasmid system.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C70 describes a specific finding about synonymous mutations affecting expression, supported by individual clone analysis in Figure 5\u2014figure supplement 4C-D. This result is consistent with known effects of mRNA structure on translation efficiency.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:36:09.180852Z"
+    },
+    {
+      "id": "9efc6914-d1ca-498a-b432-4e14055a9d7a",
+      "content_id": "2a4c0593-4854-4176-9bb6-4a11179917df",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Analysis of 1,750 amino acid differences at 499 positions across 267 eukaryotic sequences revealed that naturally occurring amino acids in Hsp90 had wild-type-like fitness in all conditions, were rarely deleterious, but were similarly likely to be beneficial as all possible amino acids (5%). This indicates that condition-dependent fitness benefits are not a major determinant of natural variation, and instead natural selection has favored substitutions that are robust to multiple stressful conditions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C71-C76 describe the comparison between natural variants and experimental fitness data, supported by analyses in Figure 6. The finding that natural variants are enriched for robustness rather than condition-specific benefits is well-supported by the data showing wild-type-like fitness across conditions and lack of enrichment for beneficial effects. The interpretation about selection for robustness is a reasonable inference from the observed patterns.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:36:09.180852Z"
+    },
+    {
+      "id": "d0d1966a-5b66-47a1-9ede-319ca0ec5269",
+      "content_id": "2a4c0593-4854-4176-9bb6-4a11179917df",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Multiple Hsp90 variants provided growth advantages under individual conditions but tended to exhibit growth defects in other environments. Natural Hsp90 sequences preferentially contain variants supporting robust growth under all tested conditions, suggesting long-term selective pressure from fluctuating environments rather than individual conditions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6-C9 summarize key findings about adaptive trade-offs and evolutionary implications. The trade-off pattern is supported by data in Figures 5F and 6, and the enrichment of natural variants for robustness is demonstrated in Figure 6B-D. However, C9 is explicitly labeled as a hypothesis/speculation by the authors, making it an interpretation rather than a directly demonstrated result. The supporting evidence is strong but the causal claim about fluctuating environments in natural history is speculative.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:36:09.180852Z"
+    },
+    {
+      "id": "f6109469-7ac8-4dec-adc0-9722ab247df2",
+      "content_id": "2a4c0593-4854-4176-9bb6-4a11179917df",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The clustering of beneficial mutations at known binding interfaces suggests that optimal binding affinity for partner proteins may depend on growth conditions, and the authors propose that natural Hsp90 variants have been selected for binding properties that are robust to different stresses rather than specific to individual conditions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C77-C78 are explicitly speculative interpretations (labeled as \"suggests\" and \"propose\") about the mechanistic basis for beneficial mutations and evolutionary selection. While the clustering at binding interfaces is well-documented (C68), the inference about optimal binding affinities and the proposal about selection for robust binding properties are hypotheses that would require direct measurement of binding affinities and functional assays to validate.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:36:09.180852Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "2f4eefd9-5663-4e34-b670-5ac1d1265705",
+      "result_id": "b268f171-1c39-4db0-966f-13b57e0fd643"
+    },
+    {
+      "claim_id": "9d7c48b4-5890-45f9-bec8-0c7600b2520c",
+      "result_id": "b268f171-1c39-4db0-966f-13b57e0fd643"
+    },
+    {
+      "claim_id": "0497f30a-0726-472f-8a79-a0807c98b680",
+      "result_id": "b268f171-1c39-4db0-966f-13b57e0fd643"
+    },
+    {
+      "claim_id": "a533d3c1-5a60-4698-9cea-1e587adddb6c",
+      "result_id": "b268f171-1c39-4db0-966f-13b57e0fd643"
+    },
+    {
+      "claim_id": "8e36f645-afad-4136-836d-af68ce149594",
+      "result_id": "23312b24-56d3-437d-8d65-2f920498a4ed"
+    },
+    {
+      "claim_id": "06c2e532-8294-4804-9d7c-d64f9c218be0",
+      "result_id": "23312b24-56d3-437d-8d65-2f920498a4ed"
+    },
+    {
+      "claim_id": "d1c59263-5da0-4759-987a-829ea442b59e",
+      "result_id": "93de4a46-a50c-4d56-a70d-6f1a5a7f0711"
+    },
+    {
+      "claim_id": "52a5ef21-e1c6-42be-b32a-cd89f4c53c6b",
+      "result_id": "93de4a46-a50c-4d56-a70d-6f1a5a7f0711"
+    },
+    {
+      "claim_id": "a4e9859f-97c3-4dce-bbe3-502d65242ba8",
+      "result_id": "93de4a46-a50c-4d56-a70d-6f1a5a7f0711"
+    },
+    {
+      "claim_id": "b5398ae8-1a82-4254-b6d4-2f5985c326b6",
+      "result_id": "93de4a46-a50c-4d56-a70d-6f1a5a7f0711"
+    },
+    {
+      "claim_id": "2326b840-4365-4fa1-8f13-59e6c05c4b43",
+      "result_id": "93de4a46-a50c-4d56-a70d-6f1a5a7f0711"
+    },
+    {
+      "claim_id": "328f7d97-0c6a-4be9-8444-cd22e8644cb5",
+      "result_id": "93de4a46-a50c-4d56-a70d-6f1a5a7f0711"
+    },
+    {
+      "claim_id": "d6d10394-6ae2-4fb8-820e-fd185132fd37",
+      "result_id": "3c226b66-0ed2-4bc8-9b85-c279aa4dd22e"
+    },
+    {
+      "claim_id": "f8984c75-36c8-4093-a5aa-6dbe56bb4891",
+      "result_id": "3c226b66-0ed2-4bc8-9b85-c279aa4dd22e"
+    },
+    {
+      "claim_id": "9c182c59-6243-4ecc-afe8-13e2366ba946",
+      "result_id": "3c226b66-0ed2-4bc8-9b85-c279aa4dd22e"
+    },
+    {
+      "claim_id": "a2779d13-2818-440c-b663-10010783bb50",
+      "result_id": "3c226b66-0ed2-4bc8-9b85-c279aa4dd22e"
+    },
+    {
+      "claim_id": "228cd86c-5aef-402e-ac4f-4859f0549be5",
+      "result_id": "3c226b66-0ed2-4bc8-9b85-c279aa4dd22e"
+    },
+    {
+      "claim_id": "04623e61-a80d-424f-953f-ecf6020c3fdf",
+      "result_id": "fbf87f49-982c-4dcb-a810-ca1a36aa3c40"
+    },
+    {
+      "claim_id": "ef1af158-f149-4e84-9dcc-80deb01cbb9d",
+      "result_id": "fbf87f49-982c-4dcb-a810-ca1a36aa3c40"
+    },
+    {
+      "claim_id": "e63979d5-800b-4ae2-b584-3a2dbcb62802",
+      "result_id": "fbf87f49-982c-4dcb-a810-ca1a36aa3c40"
+    },
+    {
+      "claim_id": "7a984294-6c87-49f1-ab8f-811bcec3a994",
+      "result_id": "fbf87f49-982c-4dcb-a810-ca1a36aa3c40"
+    },
+    {
+      "claim_id": "7504e277-a6dc-4672-96c0-3acab56bdee2",
+      "result_id": "fbf87f49-982c-4dcb-a810-ca1a36aa3c40"
+    },
+    {
+      "claim_id": "d2eb9abe-9b8e-4df8-8228-70c652cc67ba",
+      "result_id": "fbf87f49-982c-4dcb-a810-ca1a36aa3c40"
+    },
+    {
+      "claim_id": "ced40433-7a85-4dad-ae00-722aca6bce11",
+      "result_id": "5f8c1527-c46f-45bc-83a6-e91110ecbbda"
+    },
+    {
+      "claim_id": "2ca878ac-c851-48b9-8034-378016b6a90d",
+      "result_id": "5f8c1527-c46f-45bc-83a6-e91110ecbbda"
+    },
+    {
+      "claim_id": "28581046-c516-4d91-a676-a5ad9bf6a7ed",
+      "result_id": "5f8c1527-c46f-45bc-83a6-e91110ecbbda"
+    },
+    {
+      "claim_id": "13d66347-d411-4012-bde6-8bf69ab4a655",
+      "result_id": "5f8c1527-c46f-45bc-83a6-e91110ecbbda"
+    },
+    {
+      "claim_id": "3a228fda-ab74-4c29-b60d-147ba1fcbe2a",
+      "result_id": "5f8c1527-c46f-45bc-83a6-e91110ecbbda"
+    },
+    {
+      "claim_id": "7936fcda-8566-49e7-ac64-985d73b27634",
+      "result_id": "707d927c-d507-4fed-a66f-fe243387af29"
+    },
+    {
+      "claim_id": "81ad05d0-4770-41c3-8bab-fea82ddc0678",
+      "result_id": "707d927c-d507-4fed-a66f-fe243387af29"
+    },
+    {
+      "claim_id": "555b47d1-b6d7-49f5-960f-ac1746331ab5",
+      "result_id": "707d927c-d507-4fed-a66f-fe243387af29"
+    },
+    {
+      "claim_id": "710d9234-ad5f-4f52-aa23-b748d45c798c",
+      "result_id": "707d927c-d507-4fed-a66f-fe243387af29"
+    },
+    {
+      "claim_id": "f7a7912b-cb0b-41fd-abc7-8ff946d8374c",
+      "result_id": "707d927c-d507-4fed-a66f-fe243387af29"
+    },
+    {
+      "claim_id": "b8bba59a-c7a1-4f12-933b-035d89e600d4",
+      "result_id": "707d927c-d507-4fed-a66f-fe243387af29"
+    },
+    {
+      "claim_id": "25c93b74-d864-46a8-aa4d-07529104f9a4",
+      "result_id": "707d927c-d507-4fed-a66f-fe243387af29"
+    },
+    {
+      "claim_id": "00e4b057-45d4-4847-955a-3c314046a50f",
+      "result_id": "707d927c-d507-4fed-a66f-fe243387af29"
+    },
+    {
+      "claim_id": "388af2d8-5249-433e-9b13-bb7235ff2d6f",
+      "result_id": "19294b45-2297-4e2f-8b59-062d698da77f"
+    },
+    {
+      "claim_id": "cc579d69-6034-4f75-afaa-f2a07dc758cd",
+      "result_id": "19294b45-2297-4e2f-8b59-062d698da77f"
+    },
+    {
+      "claim_id": "6962f2c8-28f3-4a79-adb7-7c8e5dbc80f6",
+      "result_id": "19294b45-2297-4e2f-8b59-062d698da77f"
+    },
+    {
+      "claim_id": "63736a48-f338-4692-b63d-95286189e5e9",
+      "result_id": "19294b45-2297-4e2f-8b59-062d698da77f"
+    },
+    {
+      "claim_id": "23cec88d-6907-4ffa-beba-531bab126fb2",
+      "result_id": "19294b45-2297-4e2f-8b59-062d698da77f"
+    },
+    {
+      "claim_id": "a4baf528-09bb-474d-91cd-4ebc2c25a66c",
+      "result_id": "19294b45-2297-4e2f-8b59-062d698da77f"
+    },
+    {
+      "claim_id": "671292f4-c9ad-4e99-bde9-f470191d2813",
+      "result_id": "453eda52-7b16-4e69-9e5c-799c05c76b65"
+    },
+    {
+      "claim_id": "f76b658e-3471-45e3-8ee1-7faaed6a918b",
+      "result_id": "9efc6914-d1ca-498a-b432-4e14055a9d7a"
+    },
+    {
+      "claim_id": "05865f44-6bd1-4aff-8d15-4bee0c60f164",
+      "result_id": "9efc6914-d1ca-498a-b432-4e14055a9d7a"
+    },
+    {
+      "claim_id": "1ff3d9e2-46f4-4b84-a02c-7049cd24680f",
+      "result_id": "9efc6914-d1ca-498a-b432-4e14055a9d7a"
+    },
+    {
+      "claim_id": "c45251e9-d36a-4174-a1f8-1bbf41201d78",
+      "result_id": "9efc6914-d1ca-498a-b432-4e14055a9d7a"
+    },
+    {
+      "claim_id": "583567d2-dda5-4c47-a025-b5f895c32d60",
+      "result_id": "9efc6914-d1ca-498a-b432-4e14055a9d7a"
+    },
+    {
+      "claim_id": "6ca93482-c769-4b0f-827b-d6f873997cd9",
+      "result_id": "9efc6914-d1ca-498a-b432-4e14055a9d7a"
+    },
+    {
+      "claim_id": "d6540f4d-8b76-43d4-9844-d24030afe931",
+      "result_id": "d0d1966a-5b66-47a1-9ede-319ca0ec5269"
+    },
+    {
+      "claim_id": "84f6ecf6-147f-43dc-b762-b2e66127e903",
+      "result_id": "d0d1966a-5b66-47a1-9ede-319ca0ec5269"
+    },
+    {
+      "claim_id": "1f8a41a1-c110-47b9-b182-024473c45ac7",
+      "result_id": "d0d1966a-5b66-47a1-9ede-319ca0ec5269"
+    },
+    {
+      "claim_id": "f2333636-5104-492c-ac72-d40575f61a67",
+      "result_id": "d0d1966a-5b66-47a1-9ede-319ca0ec5269"
+    },
+    {
+      "claim_id": "58003dfa-4ba8-4669-a4c7-eb314a41c485",
+      "result_id": "f6109469-7ac8-4dec-adc0-9722ab247df2"
+    },
+    {
+      "claim_id": "dc02f34c-9373-4c9a-937a-0817c797e019",
+      "result_id": "f6109469-7ac8-4dec-adc0-9722ab247df2"
+    }
+  ],
+  "comparisons": []
+}

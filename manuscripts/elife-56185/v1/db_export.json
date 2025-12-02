@@ -1,0 +1,2051 @@
+{
+  "submission": {
+    "id": "0559e50b-6f9d-4b6a-aa61-ea711816ee46",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T18:02:04.779437Z",
+    "updated_at": "2025-12-02T18:02:04.779437Z"
+  },
+  "content": [
+    {
+      "id": "8dce894c-7872-412b-ad08-2962ffca83ab",
+      "submission_id": "0559e50b-6f9d-4b6a-aa61-ea711816ee46",
+      "content_type": "manuscript",
+      "content_text": "# Moyamoya disease factor RNF213 is a giant E3 ligase with a dynein-like core and a distinct ubiquitin-transfer mechanism\n\n## Authors\n\n- Juraj Ahel<sup>1</sup> ([ORCID: 0000-0003-0293-1063](https://orcid.org/0000-0003-0293-1063))\n- Anita Lehner<sup>2</sup>\n- Antonia Vogel<sup>1</sup>\n- Alexander Schleiffer<sup>1</sup>\n- Anton Meinhart<sup>1</sup>\n- David Haselbach<sup>1</sup> ([ORCID: 0000-0002-5276-5633](https://orcid.org/0000-0002-5276-5633)) \u2020\n- Tim Clausen<sup>1</sup> ([ORCID: 0000-0003-1582-6924](https://orcid.org/0000-0003-1582-6924)) \u2020\n\n### Affiliations\n\n1. Research Institute of Molecular Pathology (IMP), Vienna BioCenter Vienna Austria\n2. Vienna BioCenter Core Facilities, Vienna BioCenter Vienna Austria\n3. Medical University of Vienna Vienna Austria\n\n\u2020 Corresponding author\n\n## Abstract\n\nRNF213 is the major susceptibility factor for Moyamoya disease, a progressive cerebrovascular disorder that often leads to brain stroke in adults and children. Characterization of disease-associated mutations has been complicated by the enormous size of RNF213. Here, we present the cryo-EM structure of mouse RNF213. The structure reveals the intricate fold of the 584 kDa protein, comprising an N-terminal stalk, a dynein-like core with six ATPase units, and a multidomain E3 module. Collaboration with UbcH7, a cysteine-reactive E2, points to an unexplored ubiquitin-transfer mechanism that proceeds in a RING-independent manner. Moreover, we show that pathologic MMD mutations cluster in the composite E3 domain, likely interfering with substrate ubiquitination. In conclusion, the structure of RNF213 uncovers a distinct type of an E3 enzyme, highlighting the growing mechanistic diversity in ubiquitination cascades. Our results also provide the molecular framework for investigating the emerging role of RNF213 in lipid metabolism, hypoxia, and angiogenesis.\n\n## Introduction\n\nRNF213, also known as \u2018mysterin\u2019, is the major susceptibility gene for Moyamoya disease (MMD), a cerebrovascular disorder characterized by arterial occlusions and abnormal blood vessel generation (Liu et al., 2011; Lutterman et al., 1998; Morito et al., 2015). MMD is most prevalent in East Asia, where at least 16 million people are carriers of RNF213 mutations, with onset of disease in\u00a0>50,000 cases (Liu et al., 2012). Although the pathologic role of RNF213 is little understood, recent studies highlight its function as a metabolic gatekeeper. It was shown that RNF213 plays an important role in lipid metabolism modulating lipotoxicity (Piccolis et al., 2019), fat storage, and lipid droplet formation (Sugihara et al., 2019). Moreover, RNF213 together with PTP1B and HIF1A coordinates the cellular response to hypoxia, controlling non-mitochondrial oxygen consumption (Banh et al., 2016). Proteomic searches for cellular targets revealed a connection to the ubiquitin-proteasome system, where RNF213 knock-down causes gross changes in the ubiquitome, in particular of members of the NF-\u03baB pathway (Banh et al., 2016; Piccolis et al., 2019). In fact, RNF213 is capable of activating NF-\u03baB signaling and could thus, by inducing the expression of inflammatory cytokines such as interleukin-6, influence angiogenesis and MMD (Piccolis et al., 2019). Still, its exact role in these diverse biological processes needs to be further investigated. The major obstacle in understanding RNF213 is the lack of structural and biochemical data, hampered by the enormous size and complexity of the protein. Notably, with a mass of 591 kDa, RNF213 is the largest E3 ubiquitin ligase in the human proteome. It combines RING and AAA (ATPase associated with a variety of cellular activities) domains in a single polypeptide, making it a unique E3 machine in the ubiquitination system. In the present study, we applied an integrative biochemical and structural approach to reconstitute RNF213, address its structure and mechanism, and analyze the molecular basis of its MMD-causing mutations.\n\n## Results\n\n### Cryo-EM structure of RNF213\n\nRNF213 is a highly conserved protein expressed in all vertebrates (Figure 1a, Supplementary file 1). Despite the lack of annotated domains for\u00a0>4000 residues, the giant E3 ligase is predicted to be a structured protein with few disordered regions (Figure 1\u2014figure supplement 1a). Consistent with this, the full-length mouse RNF213 (584 kDa, 5148 residues) analyzed in the present study is a stable protein that could be efficiently produced in insect cells and analyzed by single-particle cryo-EM (Figure 1\u2014figure supplement 2). The initial cryo-EM class averages revealed a compact macromolecule with overall dimensions of 90\u00a0\u00d7\u00a0130\u00a0\u00d7\u00a0220 \u00c53, depicting the RNF213 ubiquitin ligase in its monomeric state. Size exclusion chromatography (SEC) and dynamic light scattering (DLS) analyses pointed to a monodisperse protein population (Figure 1bc), suggesting that the monomer is the dominant form of RNF213 in solution. To cope with the conformational flexibility within the RNF213 particle (Video 1), we performed focused refinements, masking the densities of the mobile portions and processing them separately (Figure 1\u2014figure supplement 3). Although model building was complicated by the lack of available homologous structures, the high quality of the focused cryo-EM maps (Video 2) enabled us to build the RNF213 structure de novo. During the whole process, the correct tracing of the polypeptide chain was carefully validated against cross-linking mass spectrometry (XL-MS) data (Figure 1\u2014figure supplement 4). The final atomic models of wildtype (wt) RNF213 and the R4753K MMD mutant comprise residues 476\u20135148, contain\u00a0>80% of all side chains and were resolved at an average resolution of 3.2 \u00c5 and 3.1 \u00c5, respectively, with the best-refined regions reaching 2.8 \u00c5 (Figure 1\u2014figure supplement 2, Table 1).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/56185/elife-56185-fig1-v1.jpg)\n\n**Figure 1.:** (a) Conservation and domain organization of RNF213. (b) Composite cryo-EM maps of wt and R4753K RNF213 resulting from focused refinements. (c) Architecture of RNF213, shown in orthogonal views (top row; first view matches orientation of panel b), illustrated as ribbon model using a domain-based color mode similar as in (a). The lower panel depicts the collection of dissected RNF213 domains.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/56185/elife-56185-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (a) Prediction of folded (green, above the axis) and disordered (red, below the axis) regions. The prediction is based on the FoldIndex score. (b, c) Dynamic light scattering (DLS) and size exclusion chromatography (SEC) analysis of the purified protein used for structural and biochemical analysis. The SDS-PAGE gel highlights the purity of the sample.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/56185/elife-56185-fig1-figsupp2-v1.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (a) Cryo-EM analysis of wt RNF213 showing a representative micrograph, (b) highest populated class averages, (c) angular distribution of individual wt particles, (d) Fourier Shell Correlation curve of the refined map showing a resolution of 3.2 \u00c5 and (e) local resolution map. (f) Cryo-EM analysis of R4753K RNF213 mutant showing a representative micrograph, (g) the highest populated class averages, (h) the angular distribution of individual mutant particles, (i) the Fourier Shell Correlation curve of the refined map showing a resolution 3.1 \u00c5 and (j) the local resolution map.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/56185/elife-56185-fig1-figsupp3-v1.jpg)\n\n**Figure 1\u2014figure supplement 3.:** The scheme shows various computational steps that were performed to generate the final EM density maps, which were used to determine the molecular model of wt RNF213. Top: The iterative process leading to the overall EM density is shown. From left to right: 1) generating the initial EM density map, 2) generating the second density map following optimized particle picking guided by the first map, 3) picking additional particles using the projections of the second density map as a reference, and\u00a04) generating the final overall EM density. Bottom: The focus refinement scheme is illustrated, showing both the mask used and the generated density from each refinement. The number of particles included in each step is noted in green. The achieved resolution (resolution cutoff at FSC\u00a0=\u00a00.143) is indicated below different models.\n\n![Figure 1\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/56185/elife-56185-fig1-figsupp4-v1.jpg)\n\n**Figure 1\u2014figure supplement 4.:** (a) Ribbon plot of RNF213 with DSS-mediated crosslinks between Lys residues shown as rods. Crosslinks with permitted distances are shown in light blue (0\u201310 \u00c5) or dark blue (10\u201330 \u00c5), those with larger distance in lilac. Crosslinker length is calculated with respect to the N-atom of the lysine amino group, or the O-atom the serine, threonine, or tyrosine side chains. (b) Distance distribution of the crosslinks. These data show that the majority of the crosslinks is in the allowed range. (c, d) Corresponding plots but only showing crosslinks between lysine pairs. Here, only a single link did not fulfill distance constrains.\n\n**Table 1.**\n Cryo-EM data collection, refinement and validation statistics.\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th>Wild type (EMDB-10429) (PDB 6TAX)</th>\n      <th>R4753K (EMDB-10430) (PDB 6TAY)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Data collection and processing</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Magnification</td>\n      <td>130kx</td>\n      <td>130kx</td>\n    </tr>\n    <tr>\n      <td>Voltage (kV)</td>\n      <td>300</td>\n      <td>300</td>\n    </tr>\n    <tr>\n      <td>Electron exposure (e\u2013/\u00c52)</td>\n      <td>59.9</td>\n      <td>47.3</td>\n    </tr>\n    <tr>\n      <td>Defocus range (\u03bcm)</td>\n      <td>\u20131.5 to \u20133.5</td>\n      <td>\u20130.8 to \u20132.0</td>\n    </tr>\n    <tr>\n      <td>Pixel size (\u00c5)</td>\n      <td>1.04</td>\n      <td>1.04</td>\n    </tr>\n    <tr>\n      <td>Symmetry imposed</td>\n      <td>C1</td>\n      <td>C1</td>\n    </tr>\n    <tr>\n      <td>Initial particle images (no.)</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Final particle images (no.)</td>\n      <td>374683</td>\n      <td>426312</td>\n    </tr>\n    <tr>\n      <td>Map resolution (\u00c5) FSC threshold</td>\n      <td>3.2 0.143</td>\n      <td>3.2 0.143</td>\n    </tr>\n    <tr>\n      <td>Map resolution range (\u00c5)</td>\n      <td>3.1-6.5</td>\n      <td>2.9-6.5</td>\n    </tr>\n    <tr>\n      <td>Refinement</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Initial model used (PDB code)</td>\n      <td>none</td>\n      <td>none</td>\n    </tr>\n    <tr>\n      <td>Model resolution (\u00c5) FSC threshold</td>\n      <td>3.3 0.5</td>\n      <td>3.3 0.5</td>\n    </tr>\n    <tr>\n      <td>Model resolution range (\u00c5)</td>\n      <td>3.1-6.5</td>\n      <td>2.9-6.5</td>\n    </tr>\n    <tr>\n      <td>Map sharpening B factor (\u00c52)</td>\n      <td>\u201350</td>\n      <td>\u201350</td>\n    </tr>\n    <tr>\n      <td>Model composition Non-hydrogen atoms Protein residues Ligands</td>\n      <td>35241 4383 ATP, Zn, Mg</td>\n      <td>35235 4382 ATP, Zn, Mg</td>\n    </tr>\n    <tr>\n      <td>B factors (\u00c52) Protein Ligand (ATP)</td>\n      <td>86 64</td>\n      <td>64 50</td>\n    </tr>\n    <tr>\n      <td>R.m.s. deviations Bond lengths (\u00c5) Bond angles (\u00b0)</td>\n      <td>0.011 1.17</td>\n      <td>0.007 1.01</td>\n    </tr>\n    <tr>\n      <td>Validation MolProbity score Clashscore Poor rotamers (%)</td>\n      <td>1.9 5.9 0.5</td>\n      <td>1.7 4.6 0.2</td>\n    </tr>\n    <tr>\n      <td>Ramachandran plot Favored (%) Allowed (%) Disallowed (%)</td>\n      <td>90.1 9.8 0.2</td>\n      <td>91.8 8.2 0.1</td>\n    </tr>\n  </tbody>\n</table>\n\n![Video 1.](https://cdn.elifesciences.org/articles/56185/elife-56185-video1.mp4.jpg)\n\n**Video 1.:** The movie shows representative states seen in negative staining EM, in which the E3 module moves relative to the rest of the protein, most noticeably changing the distance between the E3 module and the proximal end of the N-arm.\n\n![Video 2.](https://cdn.elifesciences.org/articles/56185/elife-56185-video2.mp4.jpg)\n\n**Video 2.:** The movie illustrates the nucleotide binding site of AAA2 and the regulatory insertions IR5 (orange) and IR3 (orange) located near the AAA4 and AAA3 active sites, respectively. The bound ATP (AAA2) is highlighted in green.\n\nOur cryo-EM structure shows that RNF213 is a multipartite AAA-E3 machine. Its intricate protein fold arranges 20 sub-domains in a zig-zag meandering manner into three structural components, to which we refer as N-arm, AAA, and E3 module (Figure 1, Video 3). The individual components were visualized at an average resolution of 3.4, 3.0, and 3.1 \u00c5, respectively. The N-arm (residues 1\u20131290) is composed of a disordered region followed by a string of helical bundles that yield a 180 \u00c5-long stalk leaning against the AAA and E3 portions. A linker (1291\u20131774) connects the N-arm to the second module, the AAA core, which is composed of six non-equivalent AAA units (1775\u20133405, AAA1 to AAA6). The midpoint of the RNF213 molecule consists of the hinge domain (3406\u20133588), which connects the AAA core to the third module, harboring the ubiquitin ligase activity. This E3 module (3589\u20134926) is composed of a heart-shaped, 4-domain scaffold that positions the E3-RING (3940\u20133999) at the edge of the RNF213 molecule, opposite to the AAA core. At its distal end, the E3 fold embraces a 20-residue loop that returns to the center of the molecule (Figure 1c), placing the CTD \u2013 a bilobal \u03b1-helical domain \u2013 at the AAA-E3 interface.\n\n![Video 3.](https://cdn.elifesciences.org/articles/56185/elife-56185-video3.mp4.jpg)\n\n**Video 3.:** The movie shows the overall architecture of RNF213 by highlighting the different domains from N- to C-terminus and their respective cryo-EM densities.\n\n### RNF213 has a dynein-related ATPase core\n\nOne of the most prominent features of RNF213 is the presence of a six-membered AAA ring (Figure 2a). Of note, only two of the AAA domains had been identified in previous analyses, and given their homology to Hsp100 unfoldases, RNF213 was proposed to form hexameric particles to yield the active AAA ATPase (Morito et al., 2015). Contrary to this, the present structure demonstrates that the protein encodes six AAA units within a single polypeptide chain. As such, RNF213 is equivalent to dynein, which was found to be the closest structural homolog of RNF213 (Figure 2\u2014figure supplement 1). In general, AAA ATPase domains are composed of a large \u03b1/\u03b2 (L) and a small \u03b1-helical (S) domain, with the nucleotide binding site located at their interface (Erzberger and Berger, 2006). While the L/S domains carry most motifs for ATP binding (Walker A) and hydrolysis (Walker B, sensor I/II), one critical catalytic residue, the arginine finger (RF), is provided by the L-domain of the adjacent AAA unit, enabling signaling between AAA \u2018rigid bodies\u2019 (Wang et al., 2001). Analysis of individual ATPase motifs revealed that in RNF213 only AAA3 and AAA4 are catalytically competent, bearing all functional motifs (Figure 2b). Moreover, the cryo-EM density unambiguously revealed a co-purified ATP molecule that is bound to AAA2 (Figure 2a, Video 2). Consistent with the unexpected density, AAA2 contains a proper nucleotide binding site, but lacks catalytic residues (Walker B, sensor I) required for ATP hydrolysis. Instead, residues from both AAA2 and AAA3 tightly coordinate ATP, making the nucleotide a molecular glue tethering the two domains (Figure 2\u2014figure supplement 2a). Furthermore, comparison with canonical AAA hexamers revealed RNF213-specific insertions (Figure 2ab), most of which seem to have a structural role stabilizing the rigid bodies within the AAA ring. Curiously, two insertions hint at a regulatory function. First, AAA3L harbors a 51-residue loop (IR3, 2487\u20132538) that protrudes in a well-defined conformation to the adjacent AAA4. The cryo-EM structure suggests that this RNF213 signature motif functions as a molecular wedge, separating AAA3 and AAA4. Comparison with nucleotide-bound dynein (Bhabha et al., 2014) illustrates this effect for the AAA4 arginine finger, which is trapped in a remote position to the AAA3 active site, such that it cannot participate in ATP sensing and hydrolysis (Figure 2\u2014figure supplement 2b). Second, AAA5L contains a 40-residue insertion (IR5, 3063\u20133103) forming an \u03b1\u03b23 structure at the AAA4/AAA5 interface. At the edge of IR5, Tyr3078 reaches over toward the active site of AAA4, sterically blocking nucleotide binding (Figure 2a). Together, the two insertions IR3 and IR5, which are amongst the most conserved RNF213 protein stretches (Figure 2\u2014figure supplement 2c), should hinder nucleotide binding to AAA3 and AAA4, diminishing RNF213 ATPase activity. Both inhibitory loops are tightly bound to the AAA ring, suggesting that their displacement and concomitant activation of the ATPase requires a yet unknown regulatory event. We thus presume that the current cryo-EM structure reflects the auto-inhibited form of the RNF213 ATPase. Our structural data suggest that the latent ATPase state is characterized by an opened AAA ring (Figure 2ab). A 20 \u00c5 gap between AAA6 and AAA1 divides the hexamer into two halves, AAA1/2/3 and AAA4/5/6, which may reorient en-bloc upon nucleotide-dependent structural changes in AAA3 and AAA4. A similar open-closed transition of the AAA ring has been observed for dynein (Bhabha et al., 2014; Schmidt et al., 2012). Detailed structural comparisons revealed that RNF213 matches best to the resting states of dynein \u2013 the phi-particle (Zhang et al., 2017) and the apo form (Schmidt et al., 2012; Figure 2c, Figure 2\u2014figure supplement 1). Overall, the structural alignments highlight the analogous AAA2/3/4 architecture between dynein and RNF213, with functional ATPase units at positions 3 and 4, and an ATP-bound, catalytically inactive AAA2. Moreover, the upstream linker domain adopts a similar fold and position above the RNF213 and dynein AAA rings (Figure 2c), despite lacking any sequence similarity, and may therefore regulate ATPase function in an equivalent manner. An important mechanistic difference, however, relates to AAA1. In dynein, AAA1 is the most active ATPase driving processive movement along microtubules (Kon et al., 2004; Reck-Peterson and Vale, 2004), while AAA3/AAA4 are proposed to function as a molecular switch turning the dynein motor on and off (Bhabha et al., 2014). In contrast, AAA1 of RNF213 lacks Walker A and Walker B motifs altogether and should be incapable of binding and hydrolyzing ATP and functioning as processive motor. Consistent with this, we observed that the ATPase activity of RNF213 is an order of magnitude lower than that of a processive AAA machine (Figure 2d). Moreover, the basal activity of RNF213 is\u00a0~3 fold lower than that of dynein at rest, pointing to an additional inhibitory element controlling AAA activity, as predicted by the cryo-EM structure.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/56185/elife-56185-fig2-v1.jpg)\n\n**Figure 2.:** (a) Organization of the 6 AAA domains, shown in alternating gray tones, highlighting insertions with structural (IS, green) and regulatory (IR, orange) roles. Orientation is similar as in Figure 1c. The insets below illustrate the EM density of the IR5 motif blocking via Tyr3078 nucleotide binding to AAA4 and the ATP molecule tightly bound at AAA2 (also shown in Video 1). (b) Schematic cartoon of the ATPase core emphasizing the AAA \u2018rigid bodies\u2019 formed between the L domain of one and the S domain of the previous unit (Wang et al., 2001). The catalytically competent ATPase sites (red dots), the ATP-bound AAA2 (black dot), and the respective functional motifs for ATP binding and hydrolysis are indicated. (c) Structural superposition of RNF213 (top row) with two dynein states (Phi particle, middle; apo dynein, bottom). The left panel illustrates the aligned dynein domains (orange), the middle shows the corresponding cartoon of the matching RNF213 AAA portions, and the right panel highlights the upstream linker of RNF213 (lilac) superimposed with phi-particle and apo dynein structures (AAA core, grey; linker, green). (d) ATPase assay comparing RNF213 variants with dynein and a processive ATPase, the unfoldase Mpa. The top panel illustrates representative NADH decay curves, with used protein concentrations being indicated. The region for calculating reaction rates is highlighted in red. The lower panel quantifies the respective ATPase rates calculated per AAA ring. Rates for tested RNF213 variants are also shown enlarged. Error bars indicate standard deviation.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/56185/elife-56185-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (a) AAA cores of dynein Phi particle, dynein apo state, dynein AMPPNP-bound form, and Rea1, highlighting those residues in orange that could be aligned to RNF213 (top). The rms deviations and number of aligned C\u03b1 atoms are indicated. (b) Schematic cartoon of the RNF213 AAA core, emphasizing the aligned AAA units. Accordingly, RNF213 and dynein show the greatest similarity in the AAA2/3/4 part. (c) AAA cores of RNF213, dynein and Rea1 as in panel a) are shown together with their N-terminal linker (green), superimposed with the RNF213 counterpart (lilac). The pictures highlight the similar linker architecture in RNF213 and dynein.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/56185/elife-56185-fig2-figsupp2-v1.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (a) Atomic model of the AAA2 active site, tightly engaging ATP/Mg. Residues of the adjacent AAA rigid body are marked (*). (b) IR3 stabilizes the inactive state of AAA3 by trapping the arginine finger (RF) in a remote position from the AAA3 active site. For comparison, the aligned RF motif of the dynein AMPPNP structure (PDB ID 4w8f) is shown in cyan together with the bound nucleotide. (c) Conservation pattern of the full-length protein colored according to the degree of sequence conservation from low (green) to high (magenta). This plot illustrates that the core of the AAA ring represents the most highly conserved portion of RNF213. The zoomed-in inserts illustrate the conservation of the central E3 part, where only few functional motifs are conserved including the Zn-coordinating residues of the RING (top), the conservation of the IR5 motif (orange circle) and the conservation of the IR3 motif (orange circle). Notably, for IR3, specifically those residues that extend to the protein interior are conserved, whereas the conservation of surface-exposed residues varies.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/56185/elife-56185-fig2-figsupp3-v1.jpg)\n\n**Figure 2\u2014figure supplement 3.:** The picture compares the overall organization of the two AAA6 proteins. From the aligned AAA rings, large C-terminal extensions project into the periphery. In case of RNF213, the tilted AAA6 domain guides the C-terminal E3 extension into a different direction aligning it with the N-arm, which is absent in Rea1.\n\n### RNF213 is a distinct E3 ubiquitin ligase\n\nThe ubiquitin ligase activity of RNF213 is expected to depend on the E3-RING domain, which is located on top of the E3 scaffold composed by the E3-back, E3-shell, and E3-core domains (Figure 1c, Figure 3a). The E3-RING, inserted between the two ultimate helices of the E3-back, contains a C4HC3 motif coordinating two Zn2+ ions in a cross-braced arrangement (Metzger et al., 2014). To delineate its mechanistic features, we aligned E3-RING with the TRIM25/Ubc13\u00a0~\u00a0Ub complex (Sanchez et al., 2016), the most closely related RING E3 characterized with a ubiquitin-loaded E2 (Figure 3b). In RING/E2\u00a0~Ub complexes, ubiquitin is covalently bound via a strained thioester to the E2, facilitating nucleophilic attack of a substrate\u2019s lysine residue (Plechanovov\u00e1 et al., 2012). Key for this lysine-reactivity is the RING \u2018linchpin\u2019, a conserved Lys/Arg residue that locks the E2 and Ub in the \u2018closed\u2019 conformation primed for catalysis (Pruneda et al., 2012). In RNF213, however, the Lys/Arg linchpin is replaced by a Leu (Figure 3b), a hydrophobic residue that is unlikely to stabilize the reactive E2\u00a0~Ub intermediate (Koliopoulos et al., 2016; Pruneda et al., 2012). To characterize the E3 activity in vitro, we followed the auto-ubiquitination of RNF213. To this end, we performed an E2 screen testing 34 ubiquitin-conjugating enzymes and observed that UbcH7 is most efficient in enabling the Ub transfer activity. The stimulated activity was in this case even 2\u20133 times higher than with UbcH5 variants, which are promiscuous E2 enzymes working with many E3 ligases (Figure 3c). This finding is surprising, because UbcH7 is not known to collaborate with canonical RING-type E3s as it lacks intrinsic reactivity with lysine. Instead, UbcH7 is reactive only with cysteine residues and works together with transthiolation E3 enzymes such as HECT (Schwarz et al., 1998), RBR (Wenzel et al., 2011), and RCR (Pao et al., 2018) ubiquitin ligases. Support for the here proposed cysteine-dependent ubiquitination activity of RNF213 stems from a recent E3 proteomics analysis (Pao et al., 2018). Using an activity-based E2 probe, RNF213 was identified as one of the most prominent E3 ligases collaborating with UbcH7, outranking its established partner enzymes, such as LUBAC, PARKIN, and HERC2. To further corroborate that RNF213 is capable to promote the ubiquitin transfer by a transthiolation mechanism rather than by activating the E2-Ub conjugate, we generated a \u0394RING mutant, replacing residues 3941\u20133999 with a Gly-Ser-Gly-Ser-Gly linker. Strikingly, \u0394RING exhibited wt-like auto-ubiquitination activity with either UbcH7 or UbcH5c (Figure 3d, Figure 3\u2014figure supplement 1), indicating that the RING itself is not involved in the ubiquitin transfer. These data contrast with a previous analysis claiming a critical role of the RING for the ubiquitination reaction (Liu et al., 2011). However, that analysis was carried out with a deletion far beyond the RING domain (corresponding to \u03943947\u20134042 in mouse RNF213) that presumably disrupted the E3 fold, highlighting the value of precise structural information for performing detailed mechanistic analyses. On top of that, a DALI search for structural homologs revealed that the E3 subdomains \u2013 namely the E3-back, the E3-shell, the E3-core, and the CTD \u2013 do not have counterparts in the PDB database. The active \u0394RING mutant therefore shares no similarity to any known E3 ligase either on the sequence or on the structural level, suggesting that RNF213 employs a yet undescribed E3 scaffold to perform its ubiquitin ligase function in a RING-independent manner.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/56185/elife-56185-fig3-v1.jpg)\n\n**Figure 3.:** (a) EM density of the RNF213 RING (green ribbon) and its engaging structural elements in the E3 domain. (b) Superposition with the TRIM25/Ubc13\u00a0~Ub complex (PDB id 5eya; colored in brown, slate, blue, respectively), showing the relative orientation of the three domains in the activated \u2018closed\u2019 conformation. Zn2+ ions are shown as spheres. The right panel illustrates the catalytic effect of the Arg linchpin in TRIM25, aligning Ub and Ubc13 (important hydrogen bonds are indicated as dashed lines). The corresponding RNF213 linchpin, Leu3986, cannot undergo such interactions. (c) E2 screen, monitoring RNF213 auto-ubiquitination with various E2 enzymes. The panel below shows the quantification of the RNF213-associated poly-Ub signal, revealing the pronounced E3 activity with UbcH7 relative to the indicated UbcH5 variants. (d) Auto-ubiquitination assay comparing the activities of wt and \u0394RING RNF213 in the presence of UbcH7. Equivalent results are seen with UbcH5c (Figure 3\u2014figure supplement 1).\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/56185/elife-56185-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** UbcH5c dependent auto-ubiquitination activity of R4753K MMD and \u0394RING mutants. Like the wt protein, both mutants retain E3 activity with UbcH5c.\n\n### MMD mutations cluster in the E3 domain\n\nFinally, we investigated the molecular basis of RNF213 mutations causing the MMD. We concentrated our analysis on the human R4810K founder mutation, the most widespread disease variant present in more than 2.0% of the East Asian population. Cryo-EM analysis of the equivalent R4753K mutation in mouse RNF213 indicated that wt and R4753K proteins have an almost identical structure and can be aligned with a root mean square (rms) deviation of 0.69 \u00c5 for 4308 C\u03b1 atoms. The well-defined EM density at the mutation site allowed us to directly compare the two atomic models and identify structural differences. Arg4753 is located at the end of an \u03b1-helix, fastening the ends of an \u2018omega\u2019 structure formed by residues 4750\u20134809 (Figure 4a). Asp4806, the partner residue on the opposite flank of this motif, undergoes close interactions with Arg4753, as directly seen in the cryo-EM density (Figure 4b). The R4753K mutation disrupts this salt bridge, weakening the sealing of the omega motif and leading to small but significant structural adaptations in its immediate environment (Figure 4b). Interestingly, mutating the Arg4753 partner residue Asp4806 is also associated with MMD (Liu et al., 2011), highlighting the relevance of the identified structural motif. To functionally characterize R4753K, we performed ATPase and ubiquitination assays. These data indicated that the MMD founder mutation, though causing local structural changes, does not significantly alter the enzymatic properties of RNF213 in vitro (Figure 2d, Figure 4c). Consistent with the minor structural and functional effects, the penetrance of R4753K in MMD is low, as only 1 from 200 carriers develops disease (Liu et al., 2011). To obtain a comprehensive overview how MMD mutations affect RNF213 function, we mapped known variants on the cryo-EM structure, color coded by their pathology scores from Combined Annotation Dependent Depletion analysis (CADD Kircher et al., 2014; Moteki et al., 2015; Figure 4d, Figure 4\u2014figure supplement 1). This plot reveals that MMD mutations strongly cluster in the E3 module, with 21 out of 28 severe RNF213 mutations (CADD-score\u00a0>20) localized in one of its four E3 sub-domains (Supplementary file 2). Remarkably, the mutations with the highest predicted pathogenicity are located at the subdomain interfaces and should alter the overall conformation and dynamics of the composite E3 module, and thus its ubiquitination activity.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/56185/elife-56185-fig4-v1.jpg)\n\n**Figure 4.:** (a) Arg4753 stabilizes the \u2018omega\u2019 motif (orange), located in the periphery of the E3 domain. Arg4753 and its partner residue Asp4806 are highlighted. (b) Focused cryo-EM maps of wt (top) and R4753K (bottom), showing that the introduced mutation disrupts the Arg4753-Asp4806 salt bridge (pink), leading to local structural changes. Affected side chains are labelled. (c) Auto-ubiquitination assay with UbcH7 comparing the wt and the R4753K mutant. The bar plot represents the quantification of the poly-ubiquitination signal (Ub*), resulting from ten replicated measurements. Error bars indicate standard deviation. (d) MMD-associated mutations (colored spheres) mapped on the cryo-EM structure of RNF213 cluster in the E3 domain, though separated in sequence by\u00a0~1000 residues. The zoomed-in window (right panel) shows that all four portions of the E3 module (core sub-domain shown in orange) carry MMD mutations. Residues are colored by CADD\u00a0score (0\u201315 green, 15\u201320 cyan, 20+ blue; listed in Supplementary file 2). The most pathologic mutations (blue) are individually labeled in Figure 4\u2014figure supplement 1.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/56185/elife-56185-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** For clarity, only the most severe mutations with a CADD score\u00a0>20 are labeled (blue). The left panel shows the overall structure, the right an enlarged view on the composite E3 module.\n\n## Discussion\n\nMoyamoya Disease (MMD) is a severe cerebrovascular disorder leading to early onset of brain stroke in adults and even young children. More than 2% of the East Asian population carry disease-associated mutations in RNF213. Upon addressing its pathologic role in MDD, recent work revealed the involvement RNF213 in hypoxia, lipid metabolism, NF-\u03baB signalling, and angiogenesis (Banh et al., 2016; Piccolis et al., 2019; Sugihara et al., 2019). Moreover, it was shown that RNF213 combines AAA ATPase and E3 activities in a single polypeptide (Kamada et al., 2011), yielding a unique ubiquitination machine in the ubiquitin-proteasome system. The current study presents the cryo-EM structure of this giant E3 ligase, depicting the structural organization of the wild-type protein and the MMD founder mutant R4810K. Together with a detailed functional analysis, these data depict a distinctive AAA-E3 enzyme exhibiting various structural and mechanistic peculiarities. As seen in the high-resolution cryo-EM structure, the 584 kDa RNF213 protein adopts an intricately intertwined fold that is organized into three major modules, namely an N-terminal stalk, a dynein-like core with six AAA units, and a multidomain E3 module. The absence of structural counterparts to the E3 module subdomains in the PDB database apart from the RING domain highlights the distinct architecture of the RNF213 ubiquitin ligase.\n\nOne of the most remarkable features discovered by the cryo-EM analysis is that RNF213 belongs to the dynein ATPase family, encoding six AAA units in a single polypeptide. Structural alignments indicated that RNF213 is most similar to the resting states of dynein, in which the AAA ring is also open (Figure 2\u2014figure supplement 1). Moreover, RNF213 features two highly conserved loops in the AAA ring, presumably controlling the ATPase activity of the two functional AAA3 and AAA4 units. A striking difference to dynein is the lack of the highly active ATPase AAA1, powering movement along microtubule tracks. We thus propose that RNF213 does not represent a processive ATPase, as would be required for example for it to use its AAA ring to promote the remodeling of E3 target proteins. The distribution of active/inactive ATPase sites rather point to a regulated switch promoting conformational changes by opening and closing the AAA ring, of which the first state is depicted in the present study. Interestingly, the ribosome maturation factor Rea1 \u2013 another six AAA-domain containing protein with structural homology to RNF213 (Figure 2\u2014figure supplement 1) \u2013 was also observed in an auto-inhibited form that is stabilized by a specific insertion into AAA2 (Chen et al., 2018; Sosnowski et al., 2018). In Rea1, certain cofactors promote the release of the inhibitory element, unlocking the AAA hexamer and inducing conformational changes required to interact with the C-terminal MIDAS domain, and subsequently with other ribosome assembly factors. Given the similar overall organization of Rea1 and RNF213 (Figure 2\u2014figure supplement 3), the AAA switch proposed for RNF213 could be analogously transmitted to the C-terminal E3 module, regulating ubiquitination activity.\n\nTo characterize the E3 function of RNF213, we used auto-ubiquitination as a proxy readout for its catalytic activity. Our data demonstrate that RNF213 collaborates with UbcH7, a cysteine-reactive E2 enzyme typically stimulating ubiquitination activity of HECT and RBR E3 ligases. Moreover, we observed that RNF213 does not depend on its naming RING domain to function as an E3 ubiquitin ligase. These data are consistent with a recent proteomic study, where a UbcH7-derived activity-based probe (ABP) was developed, lacking those E2 residues required to interact with the E3 RING domain. Contrary to RBR enzymes, the modified UbcH7 ABP exhibited the same cross-linking activity with RNF213 as the unmodified ABP (Pao et al., 2018). These in vivo data are consistent with our in vitro findings, demonstrating that the RING is not involved in promoting the transthiolation reaction. Strikingly, the RING-less RNF213, which exhibits strong auto-ubiquitination activity, does not display structural similarity to any of the known ubiquitination enzyme in eukaryotes nor to the novel E3-like ligases (NEL, Maculins et al., 2016) that are found in bacterial pathogens and also operate in a RING-independent manner. We thus propose that RNF213 is the founding member of a distinct class of E3 ligases, employing a Cys-containing motif similarly as HECT, RBR, and RCR enzymes, but utilizing a distinct structural scaffold to promote the ubiquitin transfer. Although the E3 mechanism, the identity of the active site cysteine and the role of the RING domain remain to be resolved, our findings highlight the unexplored mechanistic diversity within the ubiquitination network. Remarkably, the majority of the MMD mutations with a high pathology CADD score cluster in the composite E3 module, affecting each of the four sub-domains. These data suggest that MMD mutations interfere with the ubiquitination activity of RNF213, leading to either mechanistic inhibition or altered substrate binding. The presented cryo-EM structure now provides a precise roadmap to dissect the role of RNF213 in vascular formation and the connected Moyamoya disease.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Gene (Mus musculus)</td>\n      <td>RNF213</td>\n      <td>RefSeq</td>\n      <td>HGNC:14539; RefSeq: NP_001035094.2</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Escherichia coli)</td>\n      <td>DH10EmBacY</td>\n      <td>Geneva Biotech</td>\n      <td>DH10EmBacY</td>\n      <td>Strain propagated locally from source commercial stock</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Escherichia coli)</td>\n      <td>BL21(DE3)</td>\n      <td>Sigma-Aldrich</td>\n      <td>CMC0016; RRID:NCBITaxon_ 469008</td>\n      <td>Strain propagated locally from source commercial stock</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (AcMNPV)</td>\n      <td>EmBacY</td>\n      <td>Geneva Biotech</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cell line (Spodoptera frugiperda)</td>\n      <td>Sf9</td>\n      <td>Thermo Fisher Scientific</td>\n      <td>IPLB-Sf-21-AE; RRID:CVCL_0549</td>\n      <td>Strain propagated locally from source commercial stock</td>\n    </tr>\n    <tr>\n      <td>Cell line (Trichoplusia ni)</td>\n      <td>High Five</td>\n      <td>Thermo Fisher Scientific</td>\n      <td>BTI-TN-5B1-4; RRID:CVCL_C190</td>\n      <td>Strain propagated locally from source commercial stock</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pCLA00001</td>\n      <td>This paper</td>\n      <td>addgene: 138607; RRID:Addgene_ 138607</td>\n      <td>Bac-to-Bac compatible plasmid with wt RNF213</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pCLA00002</td>\n      <td>This paper</td>\n      <td>addgene: 138608; RRID:Addgene_138608</td>\n      <td>Bac-to-Bac compatible plasmid with MMD RNF213</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pCLA00003</td>\n      <td>This paper</td>\n      <td>addgene: 138609; RRID:Addgene_138609</td>\n      <td>Bac-to-Bac compatible plasmid with \u0394RING RNF213</td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>RNF213 wild type</td>\n      <td>This paper</td>\n      <td>NP_001035094.2: p.\u00a0=</td>\n      <td>Internal ID:Mys1b</td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>RNF213 MMD</td>\n      <td>This paper</td>\n      <td>NP_001035094.2: p.R4753K</td>\n      <td>Internal ID:Mys18a</td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>RNF213 \u0394RING</td>\n      <td>This paper</td>\n      <td>NP_001035094.2: p.3941_3999delinsGSGSG</td>\n      <td>Internal ID:Mys_Mm_20a</td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>Ub_fluor</td>\n      <td>This paper</td>\n      <td>NP_066289.3 (1\u201376): p.1_2insGPLCGS</td>\n      <td>Cysteine-labelable ubiquitin, based on DOI:10.1038/s41589-019-0426-z</td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>DSS-H12/D12</td>\n      <td>Creative Molecules</td>\n      <td>001S</td>\n      <td>Cross-linking reagent used for XL-MS</td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>DyLight 800 Maleimide</td>\n      <td>Thermo Fisher Scientific</td>\n      <td>46621</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>4\u201320% Criterion TGX Stain-Free Protein Gel</td>\n      <td>Bio-Rad</td>\n      <td>5678095</td>\n      <td>For ubiqutination assay analysis</td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>Quantifoil R2/2 Cu 200</td>\n      <td>Quantifoil</td>\n      <td>Quantifoil R2/2 Cu 200</td>\n      <td>EM grid used for wt RNF213</td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>UltrAuFoil R2/2 Au 200</td>\n      <td>Quantifoil</td>\n      <td>UltrAuFoil R2/2 Au 200</td>\n      <td>EM grid used for MMD RNF213</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>FoldIndex</td>\n      <td>doi:10.1093/bioinformatics/bti537</td>\n      <td>RRID:SCR_018390</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>CADD</td>\n      <td>doi:10.1093/nar/gky1016</td>\n      <td>RRID:SCR_018393</td>\n      <td>https://cadd.gs.washington.edu/snv</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>hhpred</td>\n      <td>doi:10.1093/nar/gki408</td>\n      <td>RRID:SCR_010276</td>\n      <td>https://toolkit.tuebingen.mpg.de/tools/hhpred</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>MUSCLE</td>\n      <td>doi:10.1093/nar/gkh340</td>\n      <td>RRID:SCR_011812</td>\n      <td>https://www.drive5.com/muscle/</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Fiji</td>\n      <td>other</td>\n      <td>RRID:SCR_002285</td>\n      <td>https://fiji.sc/</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Sphire</td>\n      <td>other</td>\n      <td>RRID:SCR_018391</td>\n      <td>http://sphire.mpg.de/</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>gctf</td>\n      <td>doi:10.1016/j.jsb.2015.11.003</td>\n      <td>RRID:SCR_016500</td>\n      <td>https://www.mrc-lmb.cam.ac.uk/kzhang/</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>ctffind</td>\n      <td>doi:10.1016/j.jsb.2015.08.008</td>\n      <td>RRID:SCR_016732</td>\n      <td>https://grigoriefflab. umassmed.edu/</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Relion</td>\n      <td>doi:10.7554/eLife.42166</td>\n      <td>RRID:SCR_016274</td>\n      <td>https://www3.mrc-lmb.cam.ac.uk/relion/</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>cryoSPARC</td>\n      <td>doi:10.1038/nmeth.4169</td>\n      <td>RRID:SCR_016501</td>\n      <td>https://cryosparc.com/</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>UCSF Chimera</td>\n      <td>doi:10.1016/j.jsb.2006.06.010</td>\n      <td>RRID:SCR_004097</td>\n      <td>https://www.cgl.ucsf.edu/chimera/</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>MotionCor2</td>\n      <td>doi:10.1038/nmeth.4193</td>\n      <td>RRID:SCR_016499</td>\n      <td>https://emcore.ucsf.edu/ucsf-motioncor2</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>cryolo</td>\n      <td>doi:10.1038/s42003-019-0437-z</td>\n      <td>RRID:SCR_018392</td>\n      <td>https://sphire.mpg.de/wiki/</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>O</td>\n      <td>doi:10.1107/s0108767390010224</td>\n      <td>RRID:SCR_018394</td>\n      <td>http://xray.bmc.uu.se/~alwyn/TAJ/Home.html</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>USCF ChimeraX</td>\n      <td>doi:10.1002/pro.3235</td>\n      <td>RRID:SCR_015872</td>\n      <td>https://www.rbvi.ucsf.edu/chimerax/</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Pymol</td>\n      <td>other</td>\n      <td>RRID:SCR_000305</td>\n      <td>https://pymol.org/2/</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Phenix</td>\n      <td>doi:10.1107/S2059798318006551</td>\n      <td>RRID:SCR_014224</td>\n      <td>https://www.phenix-online.org/</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>xiSEARCH</td>\n      <td>doi:10.1074/mcp.M115.049296</td>\n      <td>RRID:SCR_018395</td>\n      <td>https://www.rappsilberlab.org/software/xisearch/</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>MS amanda</td>\n      <td>doi:10.1021/pr500202e</td>\n      <td>RRID:SCR_018396</td>\n      <td>http://ms.imp.ac.at/?goto=msamanda</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>IMP-apQuant</td>\n      <td>doi:10.1021/acs.jproteome.8b00113</td>\n      <td>RRID:SCR_018397</td>\n      <td>http://ms.imp.ac.at/index.php?action=apQuant</td>\n    </tr>\n  </tbody>\n</table>\n\n### Protein sequence analysis\n\nTo compare RNF213 protein sequences, the sequence of the mouse orthologue was searched against the NCBI nr protein database using NCBI BLAST, and the results manually curated to remove redundant entries and false positives. A multiple sequence alignment was generated with MUSCLE (Edgar, 2004), and conservation scores generated with Jalview (Waterhouse et al., 2009). The profile shown in Figure 1a represents a smoothed conservation plot, applying a sliding window of 100 residues. In Figure 1\u2014figure supplement 1, sequence conservation values for each single residue were calculated with the program al2co, using the sum-of-pairs calculation method, no sequence weight adjustment, and BLOSUM62 as the scoring matrix (Katoh and Toh, 2008; Pei and Grishin, 2001).\n\nStructurally ordered and disordered regions (Figure 1\u2014figure supplement 2a) were predicted with FoldIndex (Prilusky et al., 2005). For this purpose, we prepared a composite FoldIndex profile, aligning multiple profiles of the same sequence generated with different window sizes. Each FoldIndex profile was normalized using the reciprocal of the window size and plotted with the areas under the positive (ordered) and negative (disordered) parts of the graph colored green and red, respectively.\n\nProtein domain predictions were carried out with HHpred (S\u00f6ding et al., 2005), initially covering the entire sequence, later the selected sub-regions to confirm the results. Only a few domains were identified with a high confidence score. The identified structural fragments, accounting for less than 15% of the residues altogether, comprised three AAA domains (AAA2, AAA3, AAA4 using the nomenclature in Figure 2a) and the RING motif (3940\u20133999). In the later stages of the structural analysis, the respective RNF213 homology models guided model building into the cryo-EM maps.\n\n### Assembly of RNF213 expression constructs\n\nTo obtain recombinant RNF213, we synthesized codon-optimized DNA fragments for insect cell expression. We focused our analysis on the physiologically most relevant mouse RNF213 isoform (RefSeq #NP_001035094.2), adding a Gly3-His10 tag to the C-terminus. The 7 cDNA fragments obtained as GeneArt Strings (Thermo Fisher Scientific) were assembled via Gibson Assembly into the pFastBAC1 vector. The final expression vector was confirmed to contain the target sequence by Sanger sequencing. Mutants were generated by splitting the full-length DNA into the separate cloning vectors, performing site-directed mutagenesis, and reassembling the expression vector by Golden Gate Assembly. The mutated cloning sites of the final vectors were validated by Sanger sequencing.\n\n### Expression of RNF213 in insect cells\n\nSource plasmids containing the target constructs were transformed into DH10EMBacY cells. Blue-white screening was used to isolate colonies containing recombinant baculoviral shuttle vectors (bacmids) and bacmid DNA was extracted by alkaline lysis and isopropanol precipitation. Bacmids were then transfected into adherent Sf9 insect cells in 6-well plates, using either Fugene HD transfection reagent (Promega #E2311) or PEI (Polysciences #23966). Successful transfection was tracked by monitoring fluorescence of YFP, encoded by the bacmid backbone. High-titer baculoviral stocks were prepared by transfecting Sf9 suspension cultures. Recombinant protein was expressed at 21\u00b0C in High Five insect cells (Thermo Fisher). Cells were harvested 4 days after transfection, and pellets flash-frozen in liquid nitrogen and stored at \u201380\u00b0C. All insect cell culture works were performed at 27\u00b0C, using ESF921 serum-free growth medium (Expression Systems #96-001-01) without antibiotic supplementation.\n\n### Purification of RNF213\n\nFrozen cell pellet from 1 L of expression culture was rapidly thawed and resuspended in 50 mL of lysis buffer (50 mM HEPES, 200 mM KCl, 1 mM TCEP, pH 7.2) supplemented with two tablets of Complete EDTA-free Protease Inhibitor (Roche #05056489001) and 200 \u00b5L Benzonase (IMP Molecular Biology Service). The lysate was centrifugated for 30 min at 40000\u00a0\u00d7\u00a0g to obtain the soluble protein extract. To precipitate DNA, PEI (0.1% w/v final concentration) was added and the suspension incubated for 10 min. After centrifugation, the protein sample was supplemented with 20 mM imidazole and applied to a 5 mL HisTrap FF column (GE Healthcare #17531901) pre-equilibrated with buffer A (50 mM HEPES, 200 mM KCl, 0.25 mM TCEP, 20 mM imidazole, pH 7.2). The column was washed for 30 column volumes with buffer A, after which RNF213 was eluted in a single step using buffer B (50 mM HEPES, 200 mM KCl, 0.25 mM TCEP, 500 mM imidazole, pH 7.2). Fractions containing RNF213 were identified by SDS-PAGE and diluted with buffer C (50 mM HEPES, 0.25 mM TCEP, pH 7.2) to a final conductivity of\u00a0~15 mS/cm. After centrifugation for 30 min at 40,000\u00a0\u00d7\u00a0g, the supernatant was loaded onto a 6 mL Resource Q anion exchange column (GE Healthcare #17117901). The protein was eluted with a linear 0\u201350% gradient over 20 column volumes against buffer D (50 mM HEPES, 1000 mM KCl, 0.25 mM TCEP, pH 7.2). The pooled RNF213 fractions were concentrated to a final volume of\u00a0~200 \u00b5L by Vivaspin ultrafiltration (100 kDa cutoff, Sigma-Aldrich-Sigma-Aldrich # Z614661) and finally applied to a Superose 6 Increase 10/300 GL column (GE Healthcare #29-0915-96) equilibrated with buffer E (50 mM HEPES, 200 mM KCl, 0.25 mM TCEP, pH 7.2). Purified RNF213 was concentrated to\u00a0>1 mg/mL, flash-frozen in liquid nitrogen and stored at \u201380\u00b0C. All purification steps were carried out at 4\u00b0C, using \u00c4KTA FPLC or \u00c4KTA pure 25 (GE Healthcare) instruments.\n\n### Preparation of fluorescently labeled ubiquitin\n\nRecombinant human ubiquitin with an N-terminal Met-Gly-Pro-Leu-Cys-Gly-Ser overhang was expressed at 37\u00b0C in BL21(DE3) cells using autoinduction medium. Following an established ubiquitin purification procedure (Ecker et al., 1987), the expression pellet was resuspended in 50 mM ammonium acetate pH 4.5 and the cells opened by sonication (Branson Digital Sonifier 450, Marshall Scientific). The lysate was centrifugated for 30 min at 40,000\u00a0\u00d7\u00a0g, after which the supernatant was heat-denatured for 10 min at 70\u00b0C and re-centrifugated. Ubiquitin was finally purified by IEX using SP Sepharose Fast Flow (GE Healthcare) and size exclusion chromatography (SEC) using a Superdex 75 Increase column (GE Healthcare). The protein was concentrated by Vivaspin ultrafiltration (5 kDa cutoff, Sigma-Aldrich #Z614580) to 10 mg/mL. Purified ubiquitin was fluorescently labeled with DyLight800-Maleimide (Thermo Fisher Scientific #46621) and re-purified by IEX as before, and SEC using 5 mM phosphate buffer, pH 7.5. The final ubiquitin sample was concentrated to 5 mg/mL, flash-frozen in liquid nitrogen, and stored at \u201380\u00b0C.\n\n### RNF213 auto-ubiquitination assay\n\nIn vitro auto-ubiquitination assays were performed in 10 \u00b5L reactions, using 25 mM HEPES, 150 mM NaCl, 10 mM MgCl2, and 2 mM TCEP (VWR #97064\u2013848), pH 8.0 as ligase buffer. The reactions contained 2 mM ATP (Sigma-Aldrich #A2383-5G), 40 \u00b5M BSA monomer (Sigma Aldrich #A1900), 0.25 \u00b5M human UBE1, 4 \u00b5M E2, 20 \u00b5M DyLight800-Maleimide-Ubiquitin (as described above), and 0.2 \u00b5M RNF213. Recombinant human UBE1 and UbcH7 were provided by the Vienna BioCenter Core Facilities and the Ikeda lab at IMBA, Vienna, respectively. Prior to the E3 ligase activity analysis, the cognate E2, UbcH7, was identified by using a commercially-available kit (E2scan, Ubiquigent #67-0005-001). Reactions were pre-mixed on ice, incubated 30\u201360 min at 37\u00b0C, and stopped by adding SDS-PAGE sample buffer. Proteins were electrophoretically separated on BioRad Stain-Free TGX 4\u201320% gels. Ubiquitin bands and total protein were visualized by DyLight800 fluorescence and Stain-Free Tryptophan fluorescence, respectively. The images were quantified using Fiji software.\n\n### NADH-coupled ATPase assay\n\nThe AAA activity of RNF213 variants was measured in an NADH-coupled ATPase assay using 20 mM HEPES, 200 mM KCl, 2 mM MgCl2, and 0.25 mM TCEP (VWR #97064\u2013848), pH 7.2 as reaction buffer. The final concentrations of the added pyruvate kinase (Sigma-Aldrich #P9136-25KU), lactate dehydrogenase (Sigma-Aldrich #L1254-25KU), phosphoenolpyruvate (Sigma-Aldrich #860077\u20131G), and NADH (Sigma-Aldrich #N6005-1G) were 5 U/mL, 5 U/mL, 500 \u00b5M, and 50 \u00b5M, respectively. ATP (Sigma-Aldrich #A2383-5G) was present at the final concentration of 2 mM, with equimolar MgCl2 supplementation. The concentration of RNF213 in the assay was 0.1 \u00b5M. A 4\u00a0\u00d7\u00a0master mix was prepared with all the components apart from RNF213 and ATP. 2.5 \u00b5L of the RNF213 protein sample pre-diluted to 0.4 \u00b5M was mixed with 2.5 \u00b5L of the master mix and 5 \u00b5L of an appropriate pre-diluted ATP stock solution in the same buffer with matched pH. The reactions were pipetted into a 1536-well plate (Greiner Bio-One #782900) and monitored by measuring NADH fluorescence signal over time in a PHERAstar FS plate-reader instrument (BMG Labtech). A 0.05\u2013100 \u00b5M NADH dilution series was used as the calibration standard. Reactions were carried out for 12 hr at 30\u00b0C. For each curve, the reaction rate was derived from the slope of the region where the signal decayed linearly. By applying the pseudo-zero-order kinetics approximation, ATPase rates were calculated as hydrolyzed ATP molecules per enzyme molecule per minute. Human cytoplasmic dynein (Cytoskeleton #CS-DN01-A) and the actinobacterial Mpa unfoldase were used as a reference for comparison.\n\n### Negative staining EM\n\nThe samples were diluted to 0.05\u20130.1 mg/mL and applied onto carbon-coated Cu/Pd Hexagonal 400 mesh grids (Agar Scientific, #G2440PD). Prior to application of the sample, the grids were glow-discharged on a glass plate with a current of 20 mA for 60 s in the SCD 005 Sputter Coater (BAL-TEC) to clean and hydrophilize the surface. The grids were screened to assess sample quality on a FEI Morgagni microscope equipped with a Morada camera (Olympus-SIS) or a FEI Tecnai G2 20 microscope equipped with a 4 k Eagle camera (FEI). Additionally, promising negative stain grids were imaged on the FEI Tecnai G2 20 using SerialEM (Schorb et al., 2019) with a defocus range of \u20131.5 \u00b5m to \u20132.5 \u00b5m and a pixel size of 1.85 \u00c5/px. Negative staining micrographs were analyzed using Relion 2.1 (Scheres, 2012). No CTF correction was applied to the images. Around 5000 individual particles were manually picked, from which 2D class averages were generated and used for auto-picking the entire dataset. This dataset was again subjected to 2D classification to assess the conformational variability of RNF213 particles.\n\n### Cryo-EM sample preparation\n\nFrozen aliquots of RNF213 were thawed on ice and diluted in the working buffer (20 mM HEPES, 200 mM KCl, 0.25 mM TCEP, pH 7.2) shortly before freezing cryo-EM grids. Cryo-EM grids were prepared using the EM GP freeze plunger (Leica Microsystems) using Whatman Filter Paper Grade 1 (GE Healthcare #1001\u2013055) as the blotting substrate and a relative humidity of 80\u201390% and a temperature of 4\u00b0C in the sample grid chamber. As cryogenic agent, liquid ethane (Ethane N45, Air Liquide #P0502M20R0A001) adjusted to \u2013182\u00b0C was used. Grids were clipped into Titan-Krios-compatible autoloader cartridges\u00a0~\u00a024 hr after preparation and stored as such until screening and data collection.\n\nFor wt RNF213, R2/2 Cu 200 mesh grids (Quantifoil) pre-floated onto custom-made 2.9 nm continuous carbon film were used. The grids were placed on a glass slide and glow-discharged with a current of 20 mA for 60 s in a SCD 005 Sputter Coater (BAL-TEC). The wt protein was diluted to 0.05 mg/mL and 5 \u00b5L were applied to the grids. The final grid was blotted for 2 s with the Z-position, H position, and post-sensor offset set to 3.5, 178, and +8, respectively.\n\nFor R4753K RNF213, UltrAuFoil R2/2 Au 200 mesh grids (Quantifoil) without an additional continuous film were used. These grids were placed on a metallic mesh carrier and glow-discharged with a current of 20 mA for 60 s. The MMD variant protein was diluted to 0.4 mg/mL and 3.5 \u00b5L were applied to the grids. The final grid was blotted for 1.5 s with the Z-position, H position, and post-sensor offset set to 3.0, 182, and +6, respectively.\n\n### Screening of cryo-EM grids and data collection\n\nCryo-EM grids were screened in-house using either a FEI Polara equipped with a K2 camera (Gatan), or a Glacios equipped with a Falcon 3 camera (Thermo Fisher Scientific). Grids of wt RNF213 were further screened at EMBL Heidelberg. Selected grids for both constructs were recorded on a Titan Krios equipped with a K2 camera at the EMBL Heidelberg. Further acquisition parameters are listed in Supplementary file 3.\n\n### Image processing and EM map reconstruction\n\nThe image processing was carried out predominantly in relion 3.0 (Zivanov et al., 2018), with other software being used for smaller subroutines in the process.\n\nFor the wt protein, motion correction of the multi-frame micrographs was done with Motioncor2 1.0.5 (Zheng et al., 2017) and CTF parameters were estimated using gctf 1.06 (Zhang, 2016). From a random subset of 10 micrographs, all visible particles were selected, yielding\u00a0~850 particles. A neural network model was trained using cryolo 1.1.1 (Wagner et al., 2019) using YOLO architecture with 3\u00a0\u00d7\u00a03 patches per micrograph. The model was used to pick particles from all micrographs, selecting a threshold of 0.1 that yielded maximal number of particles while allowing only a small amount of false positive hits. For cryolo training and picking, a gaussian lowpass filter at 20 \u00c5 was found to be optimal. Particle coordinates were imported into Relion and subjected to multiple rounds of 2D classification, discarding classes showing obvious artifacts. Particles from clean classes were exported to Cryosparc v0 (Punjani et al., 2017), and an initial reference model was generated and refined. The refined map generated by Cryosparc was imported back into Relion and subjected to one round of 3D classification, after which refinement yielded a 3.4 \u00c5 map. This map was low-pass filtered and projected for a new round of auto-picking yielding extra particles representing projections that were underrepresented during initial picking. These particles were analogously processed as the cryolo-picked ones. Duplicate particles were excluded by enforcing a minimal interparticle distance of 50 \u00c5, after which the particle sets were combined, and further refined by Bayesian Polishing and CTF Refinement, yielding a 3.2 \u00c5 overall map with a non-uniform local resolution (Figure 1\u2014figure supplement 2). Following that, rigid body boundaries within the structure were identified by performing 3D refinements using masks constrained to different parts of the map and observing which regions remain well-refined even when masked-out (i.e. co-refine). Soft masks were generated using Sphire for the three identified rigid bodies (N-arm, AAA, E3 \u2013 see Figure 1\u2014figure supplement 2). The partitioning was repeated yielding a final set of four rigid body zones (N-arm, AAA, E3a, E3b). Focused Refinements were carried out for all zones, yielding maps with improved resolution. A composite map from all focused maps was calculated in UCSF Chimera (Goddard et al., 2007).\n\nFor the MMD variant, motion correction was done using the native Relion implementation of the algorithm and CTF parameters were estimated using CTFFIND4 (Rohou and Grigorieff, 2015). The cryolo model trained on wt protein was used to auto-pick particles from the full set of micrographs with a 20 \u00c5 lowpass filter and an optimized picking threshold. Separately, the auto-picking was performed with Relion, where the picking reference was the wt EM density map lowpass-filtered to 10 \u00c5. The two coordinate sets were processed separately in Relion 3.0 analogously to the wt RNF213 map, using a relion-generated ab initio model of the MMD variant as a reference. The particle sets were combined and further refined as for the wt map, applying the same masks for the Focused Refinement as for the wt map.\n\n### Building the molecular model of RNF213\n\nOwing to the slightly better resolved cryo-EM density of the R4753K mutant, as compared to the wt protein, we used the respective focused EM maps for chain tracing of RNF213. The high resolution of these maps (N-arm: 3.4 \u00c5; AAA: 3.0 \u00c5; E3: 3.1 \u00c5) enabled us to build the entire model de novo (residues 475\u20135148; except flexible regions indicated in Supplementary file 1). It was even possible to include side chains for\u00a0>80% of the residues with high accuracy. Model building was carried out with the program O (Jones et al., 1991), using its Lego_Ca command to build non-regular loop regions of the molecule. Throughout the model building progress, we used XL-MS data, resulting from triplicate measurements of both wt and RNF213 samples, to carefully cross-check the inserted and assigned protein portions. In the final model, 90% of the DSS-mediated crosslinks observed between lysine residues are separated by 15\u201330 \u00c5 (Figure 2\u2014figure supplement 1). We also confirmed the fold of AAA2/3/4 and the RING with HHpred homology models, derived from apo dynein (4aki, Schmidt et al., 2012) and TRIM25 (5eya, Sanchez et al., 2016). To further minimize model bias, we carried out simulated annealing, implemented in the real-space refinement procedure of Phenix (Afonine et al., 2018). Afterwards, the refined wt and R4753K structures were checked for proper stereochemistry by EM-RINGER (Barad et al., 2015; Table 1). Owing to the slightly better quality of the R4753K density and the derived model, all structural illustrations were made with this variant, using either PyMOL (Schrodinger LLC, 2015) or UCSF Chimera (Goddard et al., 2007).\n\n### Cross-linking mass spectrometry (XL-MS)\n\nFor XL-MS experiments 0.7 mg/mL of purified RNF213 supplied in 150 mM NaCl, 20 mM HEPES pH 7.5 was crosslinked with 0.35 mM DSS (Creative Molecule) for 40 min at 25\u00b0C. The reaction was quenched with 50 mM ammonium bicarbonate (Sigma) for 10 min at 37\u00b0C. Samples were dried at 45\u00b0C (Concentrator, Eppendorf), resuspended in 8 M Urea (VWR) and reduced with 2.5 mM TCEP (VWR). Subsequently, samples were alkylated with 5 mM iodoacetamide (Sigma) for 30 min at room temperature in the dark. Urea was then diluted to 1 M by adding 50 mM ammonium bicarbonate. The samples were digested with trypsin (Promega), using 2 \u00b5g of protease per 100 \u00b5g protein. After 20 hr at 37\u00b0C, trypsin was inactivated by adding 0.4% (v/v) trifluoroacetic acid (Thermo Fisher). Samples were loaded on Sep-Pak cartridges (50 mg, Waters) equilibrated with 5% (v/v) acetonitrile (VWR), 0.1% (v/v) formic acid (Fisher Chemicals) and subsequently eluted with 50% (v/v) acetonitrile, 0.1% (v/v) formic acid. To enrich for crosslinked peptides, the samples were separated by SEC. For this purpose, peptides were resuspended in 30% (v/v) acetonitrile, 0.1% (v/v) trifluoroacetic acid and applied to a Superdex 30 Increase 3.2/300 column (GE Healthcare). Fractions containing crosslinked peptides were evaporated to dryness.\n\nFor MS-analysis samples were resuspended in 5% (v/v) acetonitrile, 0.1% (v/v) TFA. The nano HPLC system used was an UltiMate 3000 RSLC nano system (Thermo Fisher Scientific) coupled to an Orbitrap Fusion Lumos Tribrid mass spectrometer (Thermo Fisher Scientific), equipped with a Proxeon nanospray source (Thermo Fisher Scientific). Peptides were loaded onto a trap column (Thermo Fisher Scientific, No. 160454) at a flow rate of 25 \u03bcL/min using 0.1% TFA as mobile phase. After 10 min, the trap column was switched in line with the analytical column (Thermo Fisher Scientific, No. 164739). Peptides were eluted using a flow rate of 230 nL/min, and a binary 3 hr gradient. The gradient starts with 98% mobile phase A (water/formic acid, 99.9/0.1, v/v) and 2% mobile phase B (water/acetonitrile/formic acid, 19.92/80/0.08, v/v/v), increases to 35% mobile phase B over 180 min, followed by a 5 min-gradient to 90% mobile phase B. Acquisition was performed in data-dependent mode with a 3 s cycle time. The full scan spectrum was recorded at a resolution of 60 000 in the range of 350\u20131500 m/z. Precursors with a charge state of +3 to +7 were fragmented. HCD-collision energy was set to 29%. The resolution of MS2-scans recorded in the Orbitrap was 45 000 with a precursor isolation width of 1.0 m/z. Dynamic exclusion was enabled with 30 s exclusion time.\n\nFragment spectra peak lists were generated from the raw MS-data using the software MSConvert (v 3.0.9974) (Chambers et al., 2012) selecting the peak picking filter. Crosslink search was performed using the XiSearch (v 1.6.742) (Giese et al., 2016) applying the following parameters: 6 ppm MS1-accuracy; 20 ppm MS2-accuracy; DSS-crosslinker with reaction specificity for lysine, serine, threonine, tyrosine, and protein N-termini with a penalty of 0.2 (scale 0\u20131) assigned for serine, threonine, and tyrosine; carbamidomethylation of cysteine as a fixed modification; oxidation of methionine as variable modification; tryptic digest with up to four missed cleavages; and all other variables at default settings. Identified crosslinks were filtered to 5% FDR on link level with the software XiFDR (v 1.1.27) (Fischer and Rappsilber, 2017;\u00a0Supplementary file 4). For analysis of the crosslinked data, the in-house software CrossLinkingVisualizer has been used (Ahel, 2020).\n\n### Mapping of RNF213 mutation severity scores\n\nA comprehensive list of RNF213 mutations implicated with MMD was extracted from a recent publication (Gagunashvili et al., 2019). The list was pre-curated, including only missense point mutations and removing the annotated mutations that did not fit the reference RNF213 sequence (Uniprot #Q63HN8-3). All mutations were mapped to genomic coordinates in the GRCh38 human genome assembly, after which a Combined Annotation Dependent Depletion (CADD) score was assigned for each using CADD v1.5 (Rentzsch et al., 2019;\u00a0Supplementary file 2). The CADD score was used as a proxy for the pathologic severity of each mutation and was finally mapped onto the RNF213 structure (Figure 4c). Residues numbers were transferred from the human to the mouse protein according to the sequence alignment shown in Supplementary file 1.\n\n### Data availability\n\nAtomic coordinates and cryo-EM density maps have been deposited in the Protein Data Bank (PDBe) under accession codes EMD-10429 resp. 6TAX for the wildtype and EMD-10430 resp. 6TAY for the MMD variant. The raw micrographs were submitted to the EMPIAR database (EMPIAR-10334). The mass spectrometry proteomics data have been deposited to the ProteomeXchange Consortium via the PRIDE (Perez-Riverol et al., 2019) partner repository with the dataset identifier PXD018701. All other source data are included in the paper.\n",
+      "created_at": "2025-12-02T18:02:04.779437Z"
+    },
+    {
+      "id": "c1a9463a-e987-4353-a7ff-f6452d1a57a9",
+      "submission_id": "0559e50b-6f9d-4b6a-aa61-ea711816ee46",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Ivan Dikic, Institute of Biochemistry II Germany\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.56185.sa1](https://doi.org/10.7554/eLife.56185.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nRNF213 is the major susceptibility gene for Moyamoya disease and is the largest single polypeptide E3 ubiquitin ligase known. The precise function of this giant E3 ligase is not well understood at present though it has been suggested to function as a metabolic gatekeeper. This manuscript describes the cryo-EM structure of mouse RNF213 and provides the first analysis of disease-associated mutations. This is an exciting story that highlights how structural biology can provide insight into the potential function of proteins that lack annotated domains for most of their sequence.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Moyamoya disease factor RNF213 is a giant E3 ligase with a dynein-like core and a distinct ubiquitin-transfer mechanism\" for consideration by eLife. Your article has been reviewed by three peer reviewers, including Ivan Dikic as the Reviewing Editor and Reviewer #1, and the evaluation has been overseen by David Ron as the Senior Editor The following individual involved in review of your submission has agreed to reveal their identity: NIng Zheng (Reviewer #2).\n\nThe reviewers have discussed the reviews with one another, and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nWe would like to draw your attention to changes in our revision policy that we have made in response to COVID-19 (https://elifesciences.org/articles/57162). Specifically, we are asking editors to accept without delay manuscripts, like yours, that they judge can stand as eLife papers without additional data, even if they feel that they would make the manuscript stronger. Thus, the revisions requested below only address clarity and presentation.\n\nThis manuscript describes a remarkable structure of a very large ubiquitin E3 ligase, known as RNF213, which contains more than 5000 amino acids. Mutations of RNF213 are associated with a human cerebrovascular disorder called Moyamoya Disease (MMD). Because of its giant size, biochemical and functional analyses of the protein have been challenging. By leveraging the power of cryo-EM, the authors have determined the structure of RNF213, which reveals a complex architecture highlighted by a dynein-like six AAA ATPase domain core and a novel multi-domain E3 scaffold. Based on structural comparison analysis, the authors show that the AAA ring of RNF213 has a topology similar to the resting states of dynein and features distinct structural elements that argue against a processive ATPase. Perhaps one of the most stunning findings of the study is the RING-independent E3 activity of RNF213, which hints at a new class of ubiquitin E3 ligases. Another mystery arising from the structural studies is the functional role of two interacting charged residues, R4753, and D4806, located in the E3 module, which are mutated in MMD. Structural comparison between the wt and R4753K mutant form of RNF213 reveals only subtle conformational differences.\n\nAlthough the study does not yet conclusively establish some concrete structure-function relationships of RNF213, it does provide, for the first time, the necessary structural framework for dissecting the multifaceted functions of this enormous E3 protein. There are no serious concerns regarding this manuscript. However, there are a few suggestions, which might add an additional level of novelty and excitement as well as some changes to the presentation that could be made that the work is more easily accessible to the reader.\n\n1) The authors used auto-ubiquitination as a readout for E3 activity. It would be interesting to know if the ubiquitination of one of its substrates involved in MMD and focus on any potential differences between wild type and mutant RNF213. Have the authors done that? It might be possible that auto-ubiquitination is unaffected, but the ubiquitination of its substrate(s) changed.\n\n2) The SEC elution profile shown in Figure 1\u2014figure supplement 1B provides evidence that the sample is a single species but in the absence of a MW calibration curve or SEC-MALLS data does not provide any information about the monomeric/oligomeric state of the protein. Please either show such data if they are available or otherwise rephrase the sentence.\n\n3) The statement in subsection \u201cRNF213 is a distinct E3 ubiquitin ligase\u201d that UbcH7 is among the less reactive E2s is incorrect. UbcH7 is a cysteine-reactive E2. This section needs to be rephrased to make it explicitly clear what the difference between UbcH7 and other, lysine-reactive E2s is. And why the observation that RNF213 works with UbcH7 is so remarkable. Please make sure to include all relevant references to E3s that function via thioester intermediates.\n\nPlease also comment in the Results section if there is any structural or sequence homology between the E3 module of RNF213 and those E3s that contain a catalytic cysteine.\n\nBased on this structure, could the authors speculate how RNF213 might work?\n",
+      "created_at": "2025-12-02T18:02:04.779437Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T18:02:04.779437Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T18:02:04.779437Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "47993493-0df1-475e-ba43-77da5af9338b",
+      "content_id": "8dce894c-7872-412b-ad08-2962ffca83ab",
+      "claim_id": "C1",
+      "claim": "RNF213 is the major susceptibility factor for Moyamoya disease.",
+      "claim_type": "EXPLICIT",
+      "source": "RNF213 is the major susceptibility factor for Moyamoya disease, a progressive cerebrovascular disorder that often leads to brain stroke in adults and children.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the abstract and introduction, supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:02:04.779437Z"
+    },
+    {
+      "id": "8361e43c-af5f-4799-8a97-9949af1fcb9c",
+      "content_id": "8dce894c-7872-412b-ad08-2962ffca83ab",
+      "claim_id": "C2",
+      "claim": "Moyamoya disease is a progressive cerebrovascular disorder that often leads to brain stroke in adults and children.",
+      "claim_type": "EXPLICIT",
+      "source": "RNF213 is the major susceptibility factor for Moyamoya disease, a progressive cerebrovascular disorder that often leads to brain stroke in adults and children.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as established knowledge about the disease.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:02:04.779437Z"
+    },
+    {
+      "id": "d3b1be03-c980-41e7-8312-93585c6550d2",
+      "content_id": "8dce894c-7872-412b-ad08-2962ffca83ab",
+      "claim_id": "C3",
+      "claim": "Mouse RNF213 is a 584 kDa protein comprising 5148 residues.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this, the full-length mouse RNF213 (584 kDa, 5148 residues) analyzed in the present study is a stable protein that could be efficiently produced in insect cells and analyzed by single-particle cryo-EM (Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly stated in the Results section describing the protein studied.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:02:04.779437Z"
+    },
+    {
+      "id": "a0b13664-8113-49b1-9fb7-a9c666b0909c",
+      "content_id": "8dce894c-7872-412b-ad08-2962ffca83ab",
+      "claim_id": "C4",
+      "claim": "RNF213 has overall dimensions of 90 \u00d7 130 \u00d7 220 \u00c5\u00b3.",
+      "claim_type": "EXPLICIT",
+      "source": "The initial cryo-EM class averages revealed a compact macromolecule with overall dimensions of 90 \u00d7 130 \u00d7 220 \u00c53, depicting the RNF213 ubiquitin ligase in its monomeric state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This measurement is derived from cryo-EM analysis of the protein.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:02:04.779437Z"
+    },
+    {
+      "id": "4f692f1c-ec57-4206-8f10-aa2c314c3aa5",
+      "content_id": "8dce894c-7872-412b-ad08-2962ffca83ab",
+      "claim_id": "C5",
+      "claim": "RNF213 exists as a monomer in solution.",
+      "claim_type": "EXPLICIT",
+      "source": "Size exclusion chromatography (SEC) and dynamic light scattering (DLS) analyses pointed to a monodisperse protein population (Figure 1bc), suggesting that the monomer is the dominant form of RNF213 in solution.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by SEC and DLS experimental data shown in Figure 1bc.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:02:04.779437Z"
+    },
+    {
+      "id": "202aff67-2e0f-469f-aa39-9d92d2ee89a3",
+      "content_id": "8dce894c-7872-412b-ad08-2962ffca83ab",
+      "claim_id": "C6",
+      "claim": "The cryo-EM structure of wildtype RNF213 was resolved at an average resolution of 3.2 \u00c5.",
+      "claim_type": "EXPLICIT",
+      "source": "The final atomic models of wildtype (wt) RNF213 and the R4753K MMD mutant comprise residues 476\u20135148, contain >80% of all side chains and were resolved at an average resolution of 3.2 \u00c5 and 3.1 \u00c5, respectively, with the best-refined regions reaching 2.8 \u00c5 (Figure 1\u2014figure supplement 2, Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This resolution is reported from the cryo-EM structure determination.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:02:04.779437Z"
+    },
+    {
+      "id": "0fa5ee60-a259-43dd-8666-059b85f0d0d3",
+      "content_id": "8dce894c-7872-412b-ad08-2962ffca83ab",
+      "claim_id": "C7",
+      "claim": "The cryo-EM structure of R4753K RNF213 mutant was resolved at an average resolution of 3.1 \u00c5.",
+      "claim_type": "EXPLICIT",
+      "source": "The final atomic models of wildtype (wt) RNF213 and the R4753K MMD mutant comprise residues 476\u20135148, contain >80% of all side chains and were resolved at an average resolution of 3.2 \u00c5 and 3.1 \u00c5, respectively, with the best-refined regions reaching 2.8 \u00c5 (Figure 1\u2014figure supplement 2, Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This resolution is reported from the cryo-EM structure determination.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:02:04.779437Z"
+    },
+    {
+      "id": "9598d12d-2689-4124-93fe-76136c9d749b",
+      "content_id": "8dce894c-7872-412b-ad08-2962ffca83ab",
+      "claim_id": "C8",
+      "claim": "RNF213 comprises an N-terminal stalk, a dynein-like core with six ATPase units, and a multidomain E3 module.",
+      "claim_type": "EXPLICIT",
+      "source": "The structure reveals the intricate fold of the 584 kDa protein, comprising an N-terminal stalk, a dynein-like core with six ATPase units, and a multidomain E3 module.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by the structural analysis presented.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:02:04.779437Z"
+    },
+    {
+      "id": "aa24c883-e866-48c1-99c6-ee30aa78445e",
+      "content_id": "8dce894c-7872-412b-ad08-2962ffca83ab",
+      "claim_id": "C9",
+      "claim": "RNF213 is organized into three structural components: N-arm, AAA, and E3 module.",
+      "claim_type": "EXPLICIT",
+      "source": "Its intricate protein fold arranges 20 sub-domains in a zig-zag meandering manner into three structural components, to which we refer as N-arm, AAA, and E3 module (Figure 1, Video 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly stated in the Results section and shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:02:04.779437Z"
+    },
+    {
+      "id": "4610149f-f635-429a-b900-9ce4823e334b",
+      "content_id": "8dce894c-7872-412b-ad08-2962ffca83ab",
+      "claim_id": "C10",
+      "claim": "The N-arm of RNF213 comprises residues 1-1290.",
+      "claim_type": "EXPLICIT",
+      "source": "The N-arm (residues 1\u20131290) is composed of a disordered region followed by a string of helical bundles that yield a 180 \u00c5-long stalk leaning against the AAA and E3 portions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the structural description of RNF213.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:02:04.779437Z"
+    },
+    {
+      "id": "d402b893-a5f7-4c45-97c1-1aa6f1861cb6",
+      "content_id": "8dce894c-7872-412b-ad08-2962ffca83ab",
+      "claim_id": "C11",
+      "claim": "The N-arm forms a 180 \u00c5-long stalk.",
+      "claim_type": "EXPLICIT",
+      "source": "The N-arm (residues 1\u20131290) is composed of a disordered region followed by a string of helical bundles that yield a 180 \u00c5-long stalk leaning against the AAA and E3 portions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This measurement is derived from the cryo-EM structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:02:04.779437Z"
+    },
+    {
+      "id": "6f1c2b1f-b1e3-4eaa-82ec-ab4f10865f12",
+      "content_id": "8dce894c-7872-412b-ad08-2962ffca83ab",
+      "claim_id": "C12",
+      "claim": "The AAA core of RNF213 is composed of six non-equivalent AAA units spanning residues 1775-3405.",
+      "claim_type": "EXPLICIT",
+      "source": "A linker (1291\u20131774) connects the N-arm to the second module, the AAA core, which is composed of six non-equivalent AAA units (1775\u20133405, AAA1 to AAA6).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the structural description.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:02:04.779437Z"
+    },
+    {
+      "id": "47822d25-54ae-4190-9743-0b29dd8f7e41",
+      "content_id": "8dce894c-7872-412b-ad08-2962ffca83ab",
+      "claim_id": "C13",
+      "claim": "The E3 module of RNF213 comprises residues 3589-4926.",
+      "claim_type": "EXPLICIT",
+      "source": "This E3 module (3589\u20134926) is composed of a heart-shaped, 4-domain scaffold that positions the E3-RING (3940\u20133999) at the edge of the RNF213 molecule, opposite to the AAA core.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the structural description.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:02:04.779437Z"
+    },
+    {
+      "id": "260554ae-b42c-4c97-9529-30b309f3c201",
+      "content_id": "8dce894c-7872-412b-ad08-2962ffca83ab",
+      "claim_id": "C14",
+      "claim": "The E3-RING domain spans residues 3940-3999.",
+      "claim_type": "EXPLICIT",
+      "source": "This E3 module (3589\u20134926) is composed of a heart-shaped, 4-domain scaffold that positions the E3-RING (3940\u20133999) at the edge of the RNF213 molecule, opposite to the AAA core.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the structural description.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:02:04.779437Z"
+    },
+    {
+      "id": "d5da375d-2217-4577-b466-62395dd935c9",
+      "content_id": "8dce894c-7872-412b-ad08-2962ffca83ab",
+      "claim_id": "C15",
+      "claim": "RNF213 is the closest structural homolog to dynein.",
+      "claim_type": "EXPLICIT",
+      "source": "As such, RNF213 is equivalent to dynein, which was found to be the closest structural homolog of RNF213 (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated based on structural comparison analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:02:04.779437Z"
+    },
+    {
+      "id": "2d607419-5627-4644-b8d3-4a9ffcc1b7bf",
+      "content_id": "8dce894c-7872-412b-ad08-2962ffca83ab",
+      "claim_id": "C16",
+      "claim": "Only AAA3 and AAA4 of RNF213 are catalytically competent ATPase domains.",
+      "claim_type": "EXPLICIT",
+      "source": "Analysis of individual ATPase motifs revealed that in RNF213 only AAA3 and AAA4 are catalytically competent, bearing all functional motifs (Figure 2b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on analysis of conserved ATPase motifs in the structure.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:02:04.779437Z"
+    },
+    {
+      "id": "362e86a7-4b12-4334-89da-5883fd4e6a4b",
+      "content_id": "8dce894c-7872-412b-ad08-2962ffca83ab",
+      "claim_id": "C17",
+      "claim": "AAA2 of RNF213 contains a bound ATP molecule.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the cryo-EM density unambiguously revealed a co-purified ATP molecule that is bound to AAA2 (Figure 2a, Video 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly observed in the cryo-EM density map.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:02:04.779437Z"
+    },
+    {
+      "id": "a834fab5-1af1-466a-a601-5055d286d627",
+      "content_id": "8dce894c-7872-412b-ad08-2962ffca83ab",
+      "claim_id": "C18",
+      "claim": "AAA2 of RNF213 lacks catalytic residues required for ATP hydrolysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the unexpected density, AAA2 contains a proper nucleotide binding site, but lacks catalytic residues (Walker B, sensor I) required for ATP hydrolysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on structural analysis of the AAA2 active site.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:02:04.779437Z"
+    },
+    {
+      "id": "f9c64a17-3a77-41b5-aabe-ec327a69974d",
+      "content_id": "8dce894c-7872-412b-ad08-2962ffca83ab",
+      "claim_id": "C19",
+      "claim": "The IR3 insertion (residues 2487-2538) in AAA3 functions as a molecular wedge separating AAA3 and AAA4.",
+      "claim_type": "EXPLICIT",
+      "source": "First, AAA3L harbors a 51-residue loop (IR3, 2487\u20132538) that protrudes in a well-defined conformation to the adjacent AAA4. The cryo-EM structure suggests that this RNF213 signature motif functions as a molecular wedge, separating AAA3 and AAA4.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the structural position and conformation of IR3.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:02:04.779437Z"
+    },
+    {
+      "id": "4e012624-13da-4990-8f3c-8c186336057b",
+      "content_id": "8dce894c-7872-412b-ad08-2962ffca83ab",
+      "claim_id": "C20",
+      "claim": "The IR5 insertion (residues 3063-3103) in AAA5 sterically blocks nucleotide binding to AAA4.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, AAA5L contains a 40-residue insertion (IR5, 3063\u20133103) forming an \u03b1\u03b23 structure at the AAA4/AAA5 interface. At the edge of IR5, Tyr3078 reaches over toward the active site of AAA4, sterically blocking nucleotide binding (Figure 2a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed in the cryo-EM structure showing Tyr3078 blocking the AAA4 active site.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:02:04.779437Z"
+    },
+    {
+      "id": "c4e91230-3278-4f8f-aa44-a9e2fe471067",
+      "content_id": "8dce894c-7872-412b-ad08-2962ffca83ab",
+      "claim_id": "C21",
+      "claim": "The IR3 and IR5 insertions should hinder nucleotide binding to AAA3 and AAA4, diminishing RNF213 ATPase activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, the two insertions IR3 and IR5, which are amongst the most conserved RNF213 protein stretches (Figure 2\u2014figure supplement 2c), should hinder nucleotide binding to AAA3 and AAA4, diminishing RNF213 ATPase activity.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the structural positions of IR3 and IR5 and their conservation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:02:04.779437Z"
+    },
+    {
+      "id": "8870f083-2d95-44c2-9081-f1c31c7f087d",
+      "content_id": "8dce894c-7872-412b-ad08-2962ffca83ab",
+      "claim_id": "C22",
+      "claim": "The current cryo-EM structure reflects the auto-inhibited form of the RNF213 ATPase.",
+      "claim_type": "EXPLICIT",
+      "source": "We thus presume that the current cryo-EM structure reflects the auto-inhibited form of the RNF213 ATPase.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the structural features showing inhibitory elements.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:02:04.779437Z"
+    },
+    {
+      "id": "d17cc696-441e-47b3-b449-b40472dfbe88",
+      "content_id": "8dce894c-7872-412b-ad08-2962ffca83ab",
+      "claim_id": "C23",
+      "claim": "A 20 \u00c5 gap between AAA6 and AAA1 divides the AAA hexamer into two halves.",
+      "claim_type": "EXPLICIT",
+      "source": "A 20 \u00c5 gap between AAA6 and AAA1 divides the hexamer into two halves, AAA1/2/3 and AAA4/5/6, which may reorient en-bloc upon nucleotide-dependent structural changes in AAA3 and AAA4.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in the cryo-EM structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:02:04.779437Z"
+    },
+    {
+      "id": "9d6cda97-037f-4f49-aa3d-b37ce9e1ce69",
+      "content_id": "8dce894c-7872-412b-ad08-2962ffca83ab",
+      "claim_id": "C24",
+      "claim": "RNF213 matches best to the resting states of dynein (phi-particle and apo form).",
+      "claim_type": "EXPLICIT",
+      "source": "Detailed structural comparisons revealed that RNF213 matches best to the resting states of dynein \u2013 the phi-particle (Zhang et al., 2017) and the apo form (Schmidt et al., 2012; Figure 2c, Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on structural alignment and comparison with dynein structures.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:02:04.779437Z"
+    },
+    {
+      "id": "480da284-0754-40dc-95f8-65f091dfc326",
+      "content_id": "8dce894c-7872-412b-ad08-2962ffca83ab",
+      "claim_id": "C25",
+      "claim": "AAA1 of RNF213 lacks Walker A and Walker B motifs.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, AAA1 of RNF213 lacks Walker A and Walker B motifs altogether and should be incapable of binding and hydrolyzing ATP and functioning as processive motor.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on sequence and structural analysis of AAA1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:02:04.779437Z"
+    },
+    {
+      "id": "73eb3051-43be-441f-b309-9705e1798b51",
+      "content_id": "8dce894c-7872-412b-ad08-2962ffca83ab",
+      "claim_id": "C26",
+      "claim": "The ATPase activity of RNF213 is an order of magnitude lower than that of a processive AAA machine.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this, we observed that the ATPase activity of RNF213 is an order of magnitude lower than that of a processive AAA machine (Figure 2d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by the ATPase assay data shown in Figure 2d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:02:04.779437Z"
+    },
+    {
+      "id": "466d24b0-0bf8-49e3-8c33-1160c72582c8",
+      "content_id": "8dce894c-7872-412b-ad08-2962ffca83ab",
+      "claim_id": "C27",
+      "claim": "The basal ATPase activity of RNF213 is approximately 3-fold lower than that of dynein at rest.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the basal activity of RNF213 is ~3 fold lower than that of dynein at rest, pointing to an additional inhibitory element controlling AAA activity, as predicted by the cryo-EM structure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by the ATPase assay comparing RNF213 and dynein.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:02:04.779437Z"
+    },
+    {
+      "id": "1d0f3478-bde3-4a0c-aaa4-e288c52334f7",
+      "content_id": "8dce894c-7872-412b-ad08-2962ffca83ab",
+      "claim_id": "C28",
+      "claim": "The E3-RING domain contains a C4HC3 motif coordinating two Zn\u00b2\u207a ions in a cross-braced arrangement.",
+      "claim_type": "EXPLICIT",
+      "source": "The E3-RING, inserted between the two ultimate helices of the E3-back, contains a C4HC3 motif coordinating two Zn2+ ions in a cross-braced arrangement (Metzger et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in the cryo-EM structure and is consistent with known RING domain structures.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:02:04.779437Z"
+    },
+    {
+      "id": "38f59888-8d69-4274-8b95-85b7d0c19cd8",
+      "content_id": "8dce894c-7872-412b-ad08-2962ffca83ab",
+      "claim_id": "C29",
+      "claim": "In RNF213, the conserved Lys/Arg linchpin residue is replaced by a Leu.",
+      "claim_type": "EXPLICIT",
+      "source": "In RNF213, however, the Lys/Arg linchpin is replaced by a Leu (Figure 3b), a hydrophobic residue that is unlikely to stabilize the reactive E2 ~Ub intermediate (Koliopoulos et al., 2016; Pruneda et al., 2012).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed in the structure and compared to canonical RING E3 ligases.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:02:04.779437Z"
+    },
+    {
+      "id": "e9dae7f0-6215-45a0-9d91-2d082729f669",
+      "content_id": "8dce894c-7872-412b-ad08-2962ffca83ab",
+      "claim_id": "C30",
+      "claim": "UbcH7 is the most efficient E2 enzyme for enabling RNF213 ubiquitin transfer activity.",
+      "claim_type": "EXPLICIT",
+      "source": "To this end, we performed an E2 screen testing 34 ubiquitin-conjugating enzymes and observed that UbcH7 is most efficient in enabling the Ub transfer activity. The stimulated activity was in this case even 2\u20133 times higher than with UbcH5 variants, which are promiscuous E2 enzymes working with many E3 ligases (Figure 3c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by the E2 screen assay shown in Figure 3c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:02:04.779437Z"
+    },
+    {
+      "id": "aaa56b7a-75c7-4f1f-beb8-3ec9c5a6f07d",
+      "content_id": "8dce894c-7872-412b-ad08-2962ffca83ab",
+      "claim_id": "C31",
+      "claim": "UbcH7 is reactive only with cysteine residues and works with transthiolation E3 enzymes such as HECT, RBR, and RCR ubiquitin ligases.",
+      "claim_type": "EXPLICIT",
+      "source": "This finding is surprising, because UbcH7 is not known to collaborate with canonical RING-type E3s as it lacks intrinsic reactivity with lysine. Instead, UbcH7 is reactive only with cysteine residues and works together with transthiolation E3 enzymes such as HECT (Schwarz et al., 1998), RBR (Wenzel et al., 2011), and RCR (Pao et al., 2018) ubiquitin ligases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated based on established knowledge about UbcH7 and cited literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:02:04.779437Z"
+    },
+    {
+      "id": "756a99e3-142c-4f80-a378-0f403ebde5ae",
+      "content_id": "8dce894c-7872-412b-ad08-2962ffca83ab",
+      "claim_id": "C32",
+      "claim": "RNF213 was identified as one of the most prominent E3 ligases collaborating with UbcH7 in an E3 proteomics analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Support for the here proposed cysteine-dependent ubiquitination activity of RNF213 stems from a recent E3 proteomics analysis (Pao et al., 2018). Using an activity-based E2 probe, RNF213 was identified as one of the most prominent E3 ligases collaborating with UbcH7, outranking its established partner enzymes, such as LUBAC, PARKIN, and HERC2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from a published proteomics study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:02:04.779437Z"
+    },
+    {
+      "id": "badfeb00-f0b1-4d1b-9b84-a6bc1ef813d3",
+      "content_id": "8dce894c-7872-412b-ad08-2962ffca83ab",
+      "claim_id": "C33",
+      "claim": "The \u0394RING mutant of RNF213 exhibited wildtype-like auto-ubiquitination activity with either UbcH7 or UbcH5c.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, \u0394RING exhibited wt-like auto-ubiquitination activity with either UbcH7 or UbcH5c (Figure 3d, Figure 3\u2014figure supplement 1), indicating that the RING itself is not involved in the ubiquitin transfer.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by the auto-ubiquitination assay comparing wt and \u0394RING mutant.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:02:04.779437Z"
+    },
+    {
+      "id": "24c1fa86-5460-43a8-a04a-38ab44a74e8b",
+      "content_id": "8dce894c-7872-412b-ad08-2962ffca83ab",
+      "claim_id": "C34",
+      "claim": "The RING domain is not involved in the ubiquitin transfer reaction of RNF213.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, \u0394RING exhibited wt-like auto-ubiquitination activity with either UbcH7 or UbcH5c (Figure 3d, Figure 3\u2014figure supplement 1), indicating that the RING itself is not involved in the ubiquitin transfer.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by the functional activity of the \u0394RING mutant.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:02:04.779437Z"
+    },
+    {
+      "id": "a1f0f0e3-3089-470f-bd22-2096565d2d21",
+      "content_id": "8dce894c-7872-412b-ad08-2962ffca83ab",
+      "claim_id": "C35",
+      "claim": "The E3 subdomains (E3-back, E3-shell, E3-core, and CTD) do not have counterparts in the PDB database.",
+      "claim_type": "EXPLICIT",
+      "source": "On top of that, a DALI search for structural homologs revealed that the E3 subdomains \u2013 namely the E3-back, the E3-shell, the E3-core, and the CTD \u2013 do not have counterparts in the PDB database.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on a DALI structural homology search.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:02:04.779437Z"
+    },
+    {
+      "id": "433bf318-4b29-4083-bd0e-c9feac767634",
+      "content_id": "8dce894c-7872-412b-ad08-2962ffca83ab",
+      "claim_id": "C36",
+      "claim": "RNF213 shares no similarity to any known E3 ligase on either the sequence or structural level.",
+      "claim_type": "EXPLICIT",
+      "source": "The active \u0394RING mutant therefore shares no similarity to any known E3 ligase either on the sequence or on the structural level, suggesting that RNF213 employs a yet undescribed E3 scaffold to perform its ubiquitin ligase function in a RING-independent manner.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the structural analysis and functional data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:02:04.779437Z"
+    },
+    {
+      "id": "aac725ff-b8ff-4f95-a002-726804cc86ba",
+      "content_id": "8dce894c-7872-412b-ad08-2962ffca83ab",
+      "claim_id": "C37",
+      "claim": "Wildtype and R4753K RNF213 proteins have an almost identical structure with an rms deviation of 0.69 \u00c5 for 4308 C\u03b1 atoms.",
+      "claim_type": "EXPLICIT",
+      "source": "Cryo-EM analysis of the equivalent R4753K mutation in mouse RNF213 indicated that wt and R4753K proteins have an almost identical structure and can be aligned with a root mean square (rms) deviation of 0.69 \u00c5 for 4308 C\u03b1 atoms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on structural comparison of the two cryo-EM structures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:02:04.779437Z"
+    },
+    {
+      "id": "af6a8976-a778-43be-a45d-567bdaf42a6b",
+      "content_id": "8dce894c-7872-412b-ad08-2962ffca83ab",
+      "claim_id": "C38",
+      "claim": "Arg4753 is located at the end of an \u03b1-helix, fastening the ends of an 'omega' structure formed by residues 4750-4809.",
+      "claim_type": "EXPLICIT",
+      "source": "Arg4753 is located at the end of an \u03b1-helix, fastening the ends of an 'omega' structure formed by residues 4750\u20134809 (Figure 4a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed in the cryo-EM structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:02:04.779437Z"
+    },
+    {
+      "id": "70d25945-1562-43b3-88d1-a277cc4f0c50",
+      "content_id": "8dce894c-7872-412b-ad08-2962ffca83ab",
+      "claim_id": "C39",
+      "claim": "Asp4806 undergoes close interactions with Arg4753.",
+      "claim_type": "EXPLICIT",
+      "source": "Asp4806, the partner residue on the opposite flank of this motif, undergoes close interactions with Arg4753, as directly seen in the cryo-EM density (Figure 4b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly observed in the cryo-EM density map.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:02:04.779437Z"
+    },
+    {
+      "id": "b9124023-b22c-42c8-b42c-56e8dbb73d64",
+      "content_id": "8dce894c-7872-412b-ad08-2962ffca83ab",
+      "claim_id": "C40",
+      "claim": "The R4753K mutation disrupts the salt bridge between Arg4753 and Asp4806.",
+      "claim_type": "EXPLICIT",
+      "source": "The R4753K mutation disrupts this salt bridge, weakening the sealing of the omega motif and leading to small but significant structural adaptations in its immediate environment (Figure 4b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed by comparing the wt and R4753K cryo-EM structures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:02:04.779437Z"
+    },
+    {
+      "id": "e4a5fb0a-ab43-48ff-8dde-0d37f6057506",
+      "content_id": "8dce894c-7872-412b-ad08-2962ffca83ab",
+      "claim_id": "C41",
+      "claim": "Mutation of Asp4806 is also associated with Moyamoya disease.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, mutating the Arg4753 partner residue Asp4806 is also associated with MMD (Liu et al., 2011), highlighting the relevance of the identified structural motif.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from published literature on MMD mutations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:02:04.779437Z"
+    },
+    {
+      "id": "7100c451-39d2-4095-9c06-21fa3f91f8d5",
+      "content_id": "8dce894c-7872-412b-ad08-2962ffca83ab",
+      "claim_id": "C42",
+      "claim": "The R4753K MMD founder mutation does not significantly alter the enzymatic properties of RNF213 in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "These data indicated that the MMD founder mutation, though causing local structural changes, does not significantly alter the enzymatic properties of RNF213 in vitro (Figure 2d, Figure 4c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by ATPase and ubiquitination assays comparing wt and R4753K.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:02:04.779437Z"
+    },
+    {
+      "id": "8b2a1940-645a-48cf-bfbc-1ec710d38644",
+      "content_id": "8dce894c-7872-412b-ad08-2962ffca83ab",
+      "claim_id": "C43",
+      "claim": "The penetrance of R4753K in Moyamoya disease is low, with only 1 in 200 carriers developing disease.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the minor structural and functional effects, the penetrance of R4753K in MMD is low, as only 1 from 200 carriers develops disease (Liu et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from published literature on MMD epidemiology.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:02:04.779437Z"
+    },
+    {
+      "id": "2f7fe103-6fd8-41d6-9bc5-09d6560779a1",
+      "content_id": "8dce894c-7872-412b-ad08-2962ffca83ab",
+      "claim_id": "C44",
+      "claim": "21 out of 28 severe RNF213 mutations (CADD-score >20) are localized in one of the four E3 sub-domains.",
+      "claim_type": "EXPLICIT",
+      "source": "This plot reveals that MMD mutations strongly cluster in the E3 module, with 21 out of 28 severe RNF213 mutations (CADD-score >20) localized in one of its four E3 sub-domains (Supplementary file 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on mapping MMD mutations onto the structure and analyzing their CADD scores.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:02:04.779437Z"
+    },
+    {
+      "id": "38b4b215-0bdf-4277-a9d7-405499e4542b",
+      "content_id": "8dce894c-7872-412b-ad08-2962ffca83ab",
+      "claim_id": "C45",
+      "claim": "The mutations with the highest predicted pathogenicity are located at the subdomain interfaces of the E3 module.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, the mutations with the highest predicted pathogenicity are located at the subdomain interfaces and should alter the overall conformation and dynamics of the composite E3 module, and thus its ubiquitination activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the structural positions of high-CADD score mutations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:02:04.779437Z"
+    },
+    {
+      "id": "16fce6f0-699e-4b90-b7bd-3c5f6068f3c5",
+      "content_id": "8dce894c-7872-412b-ad08-2962ffca83ab",
+      "claim_id": "C46",
+      "claim": "At least 16 million people in East Asia are carriers of RNF213 mutations.",
+      "claim_type": "EXPLICIT",
+      "source": "MMD is most prevalent in East Asia, where at least 16 million people are carriers of RNF213 mutations, with onset of disease in >50,000 cases (Liu et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from published epidemiological data.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:02:04.779437Z"
+    },
+    {
+      "id": "1ac8437f-cb62-4693-b733-11fef02ee20a",
+      "content_id": "8dce894c-7872-412b-ad08-2962ffca83ab",
+      "claim_id": "C47",
+      "claim": "More than 50,000 cases of Moyamoya disease have onset in East Asia.",
+      "claim_type": "EXPLICIT",
+      "source": "MMD is most prevalent in East Asia, where at least 16 million people are carriers of RNF213 mutations, with onset of disease in >50,000 cases (Liu et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from published epidemiological data.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:02:04.779437Z"
+    },
+    {
+      "id": "fbdae182-1eee-4d84-8f5f-763e252985d6",
+      "content_id": "8dce894c-7872-412b-ad08-2962ffca83ab",
+      "claim_id": "C48",
+      "claim": "RNF213 plays an important role in lipid metabolism modulating lipotoxicity.",
+      "claim_type": "EXPLICIT",
+      "source": "It was shown that RNF213 plays an important role in lipid metabolism modulating lipotoxicity (Piccolis et al., 2019), fat storage, and lipid droplet formation (Sugihara et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from published studies on RNF213 function.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:02:04.779437Z"
+    },
+    {
+      "id": "b2b3a5e5-47ac-4bdc-bb1a-c95073381376",
+      "content_id": "8dce894c-7872-412b-ad08-2962ffca83ab",
+      "claim_id": "C49",
+      "claim": "RNF213 plays a role in fat storage and lipid droplet formation.",
+      "claim_type": "EXPLICIT",
+      "source": "It was shown that RNF213 plays an important role in lipid metabolism modulating lipotoxicity (Piccolis et al., 2019), fat storage, and lipid droplet formation (Sugihara et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from published studies on RNF213 function.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:02:04.779437Z"
+    },
+    {
+      "id": "c5d8d26b-ae3e-4221-9253-8999935b4e44",
+      "content_id": "8dce894c-7872-412b-ad08-2962ffca83ab",
+      "claim_id": "C50",
+      "claim": "RNF213 together with PTP1B and HIF1A coordinates the cellular response to hypoxia, controlling non-mitochondrial oxygen consumption.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, RNF213 together with PTP1B and HIF1A coordinates the cellular response to hypoxia, controlling non-mitochondrial oxygen consumption (Banh et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from published studies on RNF213 function.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:02:04.779437Z"
+    },
+    {
+      "id": "edc8ed75-4707-4c58-9415-603b1e77614b",
+      "content_id": "8dce894c-7872-412b-ad08-2962ffca83ab",
+      "claim_id": "C51",
+      "claim": "RNF213 knock-down causes gross changes in the ubiquitome, particularly of members of the NF-\u03baB pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "Proteomic searches for cellular targets revealed a connection to the ubiquitin-proteasome system, where RNF213 knock-down causes gross changes in the ubiquitome, in particular of members of the NF-\u03baB pathway (Banh et al., 2016; Piccolis et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from published proteomic studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:02:04.779437Z"
+    },
+    {
+      "id": "2c1ad604-5cec-43b2-b024-e59a8478f588",
+      "content_id": "8dce894c-7872-412b-ad08-2962ffca83ab",
+      "claim_id": "C52",
+      "claim": "RNF213 is capable of activating NF-\u03baB signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, RNF213 is capable of activating NF-\u03baB signaling and could thus, by inducing the expression of inflammatory cytokines such as interleukin-6, influence angiogenesis and MMD (Piccolis et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from published studies on RNF213 function.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:02:04.779437Z"
+    },
+    {
+      "id": "48266f13-16bc-4748-a1a6-4469ec702a41",
+      "content_id": "8dce894c-7872-412b-ad08-2962ffca83ab",
+      "claim_id": "C53",
+      "claim": "With a mass of 591 kDa, RNF213 is the largest E3 ubiquitin ligase in the human proteome.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, with a mass of 591 kDa, RNF213 is the largest E3 ubiquitin ligase in the human proteome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a known fact about RNF213.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:02:04.779437Z"
+    },
+    {
+      "id": "6c630504-9e2c-40b4-b210-09562d10c5de",
+      "content_id": "8dce894c-7872-412b-ad08-2962ffca83ab",
+      "claim_id": "C54",
+      "claim": "RNF213 combines RING and AAA domains in a single polypeptide.",
+      "claim_type": "EXPLICIT",
+      "source": "It combines RING and AAA (ATPase associated with a variety of cellular activities) domains in a single polypeptide, making it a unique E3 machine in the ubiquitination system.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated based on the domain organization of RNF213.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:02:04.779437Z"
+    },
+    {
+      "id": "1b0f2204-ed62-400d-93ac-91bccf33c2a0",
+      "content_id": "8dce894c-7872-412b-ad08-2962ffca83ab",
+      "claim_id": "C55",
+      "claim": "RNF213 is a highly conserved protein expressed in all vertebrates.",
+      "claim_type": "EXPLICIT",
+      "source": "RNF213 is a highly conserved protein expressed in all vertebrates (Figure 1a, Supplementary file 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated based on sequence conservation analysis shown in Figure 1a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:02:04.779437Z"
+    },
+    {
+      "id": "fad214dc-111d-4521-996c-5c8c5c4b3a10",
+      "content_id": "8dce894c-7872-412b-ad08-2962ffca83ab",
+      "claim_id": "C56",
+      "claim": "The giant E3 ligase RNF213 is predicted to be a structured protein with few disordered regions.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite the lack of annotated domains for >4000 residues, the giant E3 ligase is predicted to be a structured protein with few disordered regions (Figure 1\u2014figure supplement 1a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on FoldIndex prediction analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:02:04.779437Z"
+    },
+    {
+      "id": "3717d49a-9891-48d5-930c-a41f92170423",
+      "content_id": "8dce894c-7872-412b-ad08-2962ffca83ab",
+      "claim_id": "C57",
+      "claim": "Full-length mouse RNF213 is a stable protein that could be efficiently produced in insect cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this, the full-length mouse RNF213 (584 kDa, 5148 residues) analyzed in the present study is a stable protein that could be efficiently produced in insect cells and analyzed by single-particle cryo-EM (Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by the successful expression and purification of the protein.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:02:04.779437Z"
+    },
+    {
+      "id": "65cc0ed1-b5ed-435a-9d00-58fe4d3414ab",
+      "content_id": "8dce894c-7872-412b-ad08-2962ffca83ab",
+      "claim_id": "C58",
+      "claim": "The individual components of RNF213 (N-arm, AAA, E3 module) were visualized at average resolutions of 3.4, 3.0, and 3.1 \u00c5, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "The individual components were visualized at an average resolution of 3.4, 3.0, and 3.1 \u00c5, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is reported from the focused refinement of different structural modules.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:02:04.779437Z"
+    },
+    {
+      "id": "326d0643-def0-4781-b397-879292be2180",
+      "content_id": "8dce894c-7872-412b-ad08-2962ffca83ab",
+      "claim_id": "C59",
+      "claim": "A linker comprising residues 1291-1774 connects the N-arm to the AAA core.",
+      "claim_type": "EXPLICIT",
+      "source": "A linker (1291\u20131774) connects the N-arm to the second module, the AAA core, which is composed of six non-equivalent AAA units (1775\u20133405, AAA1 to AAA6).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the structural description.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:02:04.779437Z"
+    },
+    {
+      "id": "a6411548-d7b9-40ae-8dec-502e195ebec3",
+      "content_id": "8dce894c-7872-412b-ad08-2962ffca83ab",
+      "claim_id": "C60",
+      "claim": "The hinge domain of RNF213 comprises residues 3406-3588.",
+      "claim_type": "EXPLICIT",
+      "source": "The midpoint of the RNF213 molecule consists of the hinge domain (3406\u20133588), which connects the AAA core to the third module, harboring the ubiquitin ligase activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the structural description.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:02:04.779437Z"
+    },
+    {
+      "id": "87c80739-7760-4753-9f6b-bf7195b7cf0f",
+      "content_id": "8dce894c-7872-412b-ad08-2962ffca83ab",
+      "claim_id": "C61",
+      "claim": "The E3 module is composed of a heart-shaped, 4-domain scaffold.",
+      "claim_type": "EXPLICIT",
+      "source": "This E3 module (3589\u20134926) is composed of a heart-shaped, 4-domain scaffold that positions the E3-RING (3940\u20133999) at the edge of the RNF213 molecule, opposite to the AAA core.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in the cryo-EM structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:02:04.779437Z"
+    },
+    {
+      "id": "f5c7d569-4b24-4b28-a675-0da592d2a9a6",
+      "content_id": "8dce894c-7872-412b-ad08-2962ffca83ab",
+      "claim_id": "C62",
+      "claim": "The CTD is a bilobal \u03b1-helical domain located at the AAA-E3 interface.",
+      "claim_type": "EXPLICIT",
+      "source": "At its distal end, the E3 fold embraces a 20-residue loop that returns to the center of the molecule (Figure 1c), placing the CTD \u2013 a bilobal \u03b1-helical domain \u2013 at the AAA-E3 interface.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed in the cryo-EM structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:02:04.779437Z"
+    },
+    {
+      "id": "e7b6a0e0-660f-4897-849b-e9fbf5368acb",
+      "content_id": "8dce894c-7872-412b-ad08-2962ffca83ab",
+      "claim_id": "C63",
+      "claim": "RNF213 was previously proposed to form hexameric particles to yield the active AAA ATPase.",
+      "claim_type": "EXPLICIT",
+      "source": "Of note, only two of the AAA domains had been identified in previous analyses, and given their homology to Hsp100 unfoldases, RNF213 was proposed to form hexameric particles to yield the active AAA ATPase (Morito et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from a previous publication.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:02:04.779437Z"
+    },
+    {
+      "id": "31bd43f2-edd9-43e6-8dba-78815f518b3a",
+      "content_id": "8dce894c-7872-412b-ad08-2962ffca83ab",
+      "claim_id": "C64",
+      "claim": "The present structure demonstrates that RNF213 encodes six AAA units within a single polypeptide chain.",
+      "claim_type": "EXPLICIT",
+      "source": "Contrary to this, the present structure demonstrates that the protein encodes six AAA units within a single polypeptide chain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by the cryo-EM structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:02:04.779437Z"
+    },
+    {
+      "id": "581e31b2-562f-4f87-ae14-435418054d66",
+      "content_id": "8dce894c-7872-412b-ad08-2962ffca83ab",
+      "claim_id": "C65",
+      "claim": "AAA ATPase domains are composed of a large \u03b1/\u03b2 (L) and a small \u03b1-helical (S) domain, with the nucleotide binding site located at their interface.",
+      "claim_type": "EXPLICIT",
+      "source": "In general, AAA ATPase domains are composed of a large \u03b1/\u03b2 (L) and a small \u03b1-helical (S) domain, with the nucleotide binding site located at their interface (Erzberger and Berger, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about AAA domains, supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:02:04.779437Z"
+    },
+    {
+      "id": "f1197a60-acef-4319-b45a-1cb608369e20",
+      "content_id": "8dce894c-7872-412b-ad08-2962ffca83ab",
+      "claim_id": "C66",
+      "claim": "The arginine finger is provided by the L-domain of the adjacent AAA unit, enabling signaling between AAA 'rigid bodies'.",
+      "claim_type": "EXPLICIT",
+      "source": "While the L/S domains carry most motifs for ATP binding (Walker A) and hydrolysis (Walker B, sensor I/II), one critical catalytic residue, the arginine finger (RF), is provided by the L-domain of the adjacent AAA unit, enabling signaling between AAA 'rigid bodies' (Wang et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about AAA domains, supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:02:04.779437Z"
+    },
+    {
+      "id": "5e7553a8-3436-425c-984f-fa144f082ace",
+      "content_id": "8dce894c-7872-412b-ad08-2962ffca83ab",
+      "claim_id": "C67",
+      "claim": "Residues from both AAA2 and AAA3 tightly coordinate ATP, making the nucleotide a molecular glue tethering the two domains.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, residues from both AAA2 and AAA3 tightly coordinate ATP, making the nucleotide a molecular glue tethering the two domains (Figure 2\u2014figure supplement 2a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed in the cryo-EM structure of the AAA2 active site.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:02:04.779437Z"
+    },
+    {
+      "id": "5c607020-5bbc-43ea-b6d8-b7ee07047fcb",
+      "content_id": "8dce894c-7872-412b-ad08-2962ffca83ab",
+      "claim_id": "C68",
+      "claim": "Most RNF213-specific insertions have a structural role stabilizing the rigid bodies within the AAA ring.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, comparison with canonical AAA hexamers revealed RNF213-specific insertions (Figure 2ab), most of which seem to have a structural role stabilizing the rigid bodies within the AAA ring.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from structural comparison with canonical AAA hexamers.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:02:04.779437Z"
+    },
+    {
+      "id": "7b653b86-3877-47e4-ad28-746f3f67dc8b",
+      "content_id": "8dce894c-7872-412b-ad08-2962ffca83ab",
+      "claim_id": "C69",
+      "claim": "IR3 and IR5 are amongst the most conserved RNF213 protein stretches.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, the two insertions IR3 and IR5, which are amongst the most conserved RNF213 protein stretches (Figure 2\u2014figure supplement 2c), should hinder nucleotide binding to AAA3 and AAA4, diminishing RNF213 ATPase activity.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by sequence conservation analysis in Figure 2\u2014figure supplement 2c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:02:04.779437Z"
+    },
+    {
+      "id": "065d64aa-117e-4a72-85ca-e6f695ee5c90",
+      "content_id": "8dce894c-7872-412b-ad08-2962ffca83ab",
+      "claim_id": "C70",
+      "claim": "The latent ATPase state of RNF213 is characterized by an opened AAA ring.",
+      "claim_type": "EXPLICIT",
+      "source": "Our structural data suggest that the latent ATPase state is characterized by an opened AAA ring (Figure 2ab).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed in the cryo-EM structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:02:04.779437Z"
+    },
+    {
+      "id": "f299c768-c9c4-40cc-844e-3edc7fa33198",
+      "content_id": "8dce894c-7872-412b-ad08-2962ffca83ab",
+      "claim_id": "C71",
+      "claim": "A similar open-closed transition of the AAA ring has been observed for dynein.",
+      "claim_type": "EXPLICIT",
+      "source": "A similar open-closed transition of the AAA ring has been observed for dynein (Bhabha et al., 2014; Schmidt et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from published dynein structures.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:02:04.779437Z"
+    },
+    {
+      "id": "d80ab1f4-316f-444b-af75-73146eb373b9",
+      "content_id": "8dce894c-7872-412b-ad08-2962ffca83ab",
+      "claim_id": "C72",
+      "claim": "The upstream linker domain adopts a similar fold and position above the RNF213 and dynein AAA rings.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the upstream linker domain adopts a similar fold and position above the RNF213 and dynein AAA rings (Figure 2c), despite lacking any sequence similarity, and may therefore regulate ATPase function in an equivalent manner.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed by structural comparison with dynein.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:02:04.779437Z"
+    },
+    {
+      "id": "0edf0bff-05a5-49b8-a99a-09f9ba985fba",
+      "content_id": "8dce894c-7872-412b-ad08-2962ffca83ab",
+      "claim_id": "C73",
+      "claim": "In dynein, AAA1 is the most active ATPase driving processive movement along microtubules.",
+      "claim_type": "EXPLICIT",
+      "source": "In dynein, AAA1 is the most active ATPase driving processive movement along microtubules (Kon et al., 2004; Reck-Peterson and Vale, 2004), while AAA3/AAA4 are proposed to function as a molecular switch turning the dynein motor on and off (Bhabha et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from published studies on dynein mechanism.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:02:04.779437Z"
+    },
+    {
+      "id": "d8b3f7c4-07e2-497d-8375-f9e2b4514526",
+      "content_id": "8dce894c-7872-412b-ad08-2962ffca83ab",
+      "claim_id": "C74",
+      "claim": "In dynein, AAA3/AAA4 are proposed to function as a molecular switch turning the dynein motor on and off.",
+      "claim_type": "EXPLICIT",
+      "source": "In dynein, AAA1 is the most active ATPase driving processive movement along microtubules (Kon et al., 2004; Reck-Peterson and Vale, 2004), while AAA3/AAA4 are proposed to function as a molecular switch turning the dynein motor on and off (Bhabha et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from published studies on dynein mechanism.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:02:04.779437Z"
+    },
+    {
+      "id": "d59859b6-8fe0-42c9-93b0-2d72ab5b30ae",
+      "content_id": "8dce894c-7872-412b-ad08-2962ffca83ab",
+      "claim_id": "C75",
+      "claim": "The E3 module is composed of the E3-back, E3-shell, E3-core domains, and the CTD.",
+      "claim_type": "EXPLICIT",
+      "source": "The ubiquitin ligase activity of RNF213 is expected to depend on the E3-RING domain, which is located on top of the E3 scaffold composed by the E3-back, E3-shell, and E3-core domains (Figure 1c, Figure 3a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the structural description and shown in figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:02:04.779437Z"
+    },
+    {
+      "id": "fb1708e7-7e41-4c87-9ddf-92fb4ab5a200",
+      "content_id": "8dce894c-7872-412b-ad08-2962ffca83ab",
+      "claim_id": "C76",
+      "claim": "In RING/E2~Ub complexes, ubiquitin is covalently bound via a strained thioester to the E2, facilitating nucleophilic attack of a substrate's lysine residue.",
+      "claim_type": "EXPLICIT",
+      "source": "In RING/E2 ~Ub complexes, ubiquitin is covalently bound via a strained thioester to the E2, facilitating nucleophilic attack of a substrate's lysine residue (Plechanovov\u00e1 et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about RING E3 mechanisms, supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:02:04.779437Z"
+    },
+    {
+      "id": "93cd0c71-af01-4233-bf47-925dea43fac9",
+      "content_id": "8dce894c-7872-412b-ad08-2962ffca83ab",
+      "claim_id": "C77",
+      "claim": "The RING 'linchpin' is a conserved Lys/Arg residue that locks the E2 and Ub in the 'closed' conformation primed for catalysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Key for this lysine-reactivity is the RING 'linchpin', a conserved Lys/Arg residue that locks the E2 and Ub in the 'closed' conformation primed for catalysis (Pruneda et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about RING E3 mechanisms, supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:02:04.779437Z"
+    },
+    {
+      "id": "d1dae86c-6331-4a72-be01-df8b393cdfae",
+      "content_id": "8dce894c-7872-412b-ad08-2962ffca83ab",
+      "claim_id": "C78",
+      "claim": "A hydrophobic residue at the linchpin position is unlikely to stabilize the reactive E2~Ub intermediate.",
+      "claim_type": "EXPLICIT",
+      "source": "In RNF213, however, the Lys/Arg linchpin is replaced by a Leu (Figure 3b), a hydrophobic residue that is unlikely to stabilize the reactive E2 ~Ub intermediate (Koliopoulos et al., 2016; Pruneda et al., 2012).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the structure and cited literature on RING mechanisms.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:02:04.779437Z"
+    },
+    {
+      "id": "2b9d6415-768a-4a26-bee6-e8d42c5171c4",
+      "content_id": "8dce894c-7872-412b-ad08-2962ffca83ab",
+      "claim_id": "C79",
+      "claim": "The stimulated activity of RNF213 with UbcH7 was 2-3 times higher than with UbcH5 variants.",
+      "claim_type": "EXPLICIT",
+      "source": "The stimulated activity was in this case even 2\u20133 times higher than with UbcH5 variants, which are promiscuous E2 enzymes working with many E3 ligases (Figure 3c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by the E2 screen assay.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:02:04.779437Z"
+    },
+    {
+      "id": "706ecb08-c661-400f-8622-e0399cf60ac6",
+      "content_id": "8dce894c-7872-412b-ad08-2962ffca83ab",
+      "claim_id": "C80",
+      "claim": "UbcH5 variants are promiscuous E2 enzymes working with many E3 ligases.",
+      "claim_type": "EXPLICIT",
+      "source": "The stimulated activity was in this case even 2\u20133 times higher than with UbcH5 variants, which are promiscuous E2 enzymes working with many E3 ligases (Figure 3c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as established knowledge about UbcH5.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:02:04.779437Z"
+    },
+    {
+      "id": "52c23e7a-e91e-4ca1-8fca-5cd77ebfb643",
+      "content_id": "8dce894c-7872-412b-ad08-2962ffca83ab",
+      "claim_id": "C81",
+      "claim": "UbcH7 lacks intrinsic reactivity with lysine.",
+      "claim_type": "EXPLICIT",
+      "source": "This finding is surprising, because UbcH7 is not known to collaborate with canonical RING-type E3s as it lacks intrinsic reactivity with lysine.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about UbcH7.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:02:04.779437Z"
+    },
+    {
+      "id": "453f5223-3650-44c9-83bf-3d96bdd49a74",
+      "content_id": "8dce894c-7872-412b-ad08-2962ffca83ab",
+      "claim_id": "C82",
+      "claim": "RNF213 outranks LUBAC, PARKIN, and HERC2 as a UbcH7-collaborating E3 ligase in proteomics analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Using an activity-based E2 probe, RNF213 was identified as one of the most prominent E3 ligases collaborating with UbcH7, outranking its established partner enzymes, such as LUBAC, PARKIN, and HERC2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from a published proteomics study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:02:04.779437Z"
+    },
+    {
+      "id": "126eff76-0e0b-4d6c-b762-a716da4aaaa1",
+      "content_id": "8dce894c-7872-412b-ad08-2962ffca83ab",
+      "claim_id": "C83",
+      "claim": "A previous analysis claimed a critical role of the RING for the ubiquitination reaction.",
+      "claim_type": "EXPLICIT",
+      "source": "These data contrast with a previous analysis claiming a critical role of the RING for the ubiquitination reaction (Liu et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from a previous publication.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:02:04.779437Z"
+    },
+    {
+      "id": "e4ffb7b8-c036-4a4c-81ae-17e47e179646",
+      "content_id": "8dce894c-7872-412b-ad08-2962ffca83ab",
+      "claim_id": "C84",
+      "claim": "The previous analysis used a deletion far beyond the RING domain (corresponding to \u03943947-4042 in mouse RNF213) that presumably disrupted the E3 fold.",
+      "claim_type": "EXPLICIT",
+      "source": "However, that analysis was carried out with a deletion far beyond the RING domain (corresponding to \u03943947\u20134042 in mouse RNF213) that presumably disrupted the E3 fold, highlighting the value of precise structural information for performing detailed mechanistic analyses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred by comparing the previous deletion with the current structural information.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:02:04.779437Z"
+    },
+    {
+      "id": "37c98e68-b112-410b-8724-bf414cb5a78a",
+      "content_id": "8dce894c-7872-412b-ad08-2962ffca83ab",
+      "claim_id": "C85",
+      "claim": "RNF213 employs a yet undescribed E3 scaffold to perform its ubiquitin ligase function in a RING-independent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "The active \u0394RING mutant therefore shares no similarity to any known E3 ligase either on the sequence or on the structural level, suggesting that RNF213 employs a yet undescribed E3 scaffold to perform its ubiquitin ligase function in a RING-independent manner.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the structural and functional data.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:02:04.779437Z"
+    },
+    {
+      "id": "448bf217-4162-448e-8677-f74278e93fc5",
+      "content_id": "8dce894c-7872-412b-ad08-2962ffca83ab",
+      "claim_id": "C86",
+      "claim": "More than 2% of the East Asian population carry disease-associated mutations in RNF213.",
+      "claim_type": "EXPLICIT",
+      "source": "More than 2% of the East Asian population carry disease-associated mutations in RNF213.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion as epidemiological information.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:02:04.779437Z"
+    },
+    {
+      "id": "28e7df0b-4617-497b-a49d-3280a6a644f3",
+      "content_id": "8dce894c-7872-412b-ad08-2962ffca83ab",
+      "claim_id": "C87",
+      "claim": "Recent work revealed the involvement of RNF213 in hypoxia, lipid metabolism, NF-\u03baB signalling, and angiogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon addressing its pathologic role in MDD, recent work revealed the involvement RNF213 in hypoxia, lipid metabolism, NF-\u03baB signalling, and angiogenesis (Banh et al., 2016; Piccolis et al., 2019; Sugihara et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from recent publications on RNF213 function.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:02:04.779437Z"
+    },
+    {
+      "id": "e9e1136e-690a-4645-8a86-e92b6b8e1839",
+      "content_id": "8dce894c-7872-412b-ad08-2962ffca83ab",
+      "claim_id": "C88",
+      "claim": "RNF213 combines AAA ATPase and E3 activities in a single polypeptide, yielding a unique ubiquitination machine.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, it was shown that RNF213 combines AAA ATPase and E3 activities in a single polypeptide (Kamada et al., 2011), yielding a unique ubiquitination machine in the ubiquitin-proteasome system.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from a previous publication.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:02:04.779437Z"
+    },
+    {
+      "id": "beb5d6a7-6902-4fe1-a7f5-e02a6687d59a",
+      "content_id": "8dce894c-7872-412b-ad08-2962ffca83ab",
+      "claim_id": "C89",
+      "claim": "The absence of structural counterparts to the E3 module subdomains in the PDB database highlights the distinct architecture of the RNF213 ubiquitin ligase.",
+      "claim_type": "EXPLICIT",
+      "source": "The absence of structural counterparts to the E3 module subdomains in the PDB database apart from the RING domain highlights the distinct architecture of the RNF213 ubiquitin ligase.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the DALI search results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:02:04.779437Z"
+    },
+    {
+      "id": "1ab50066-190d-433a-89a1-f85bf454defd",
+      "content_id": "8dce894c-7872-412b-ad08-2962ffca83ab",
+      "claim_id": "C90",
+      "claim": "RNF213 belongs to the dynein ATPase family.",
+      "claim_type": "EXPLICIT",
+      "source": "One of the most remarkable features discovered by the cryo-EM analysis is that RNF213 belongs to the dynein ATPase family, encoding six AAA units in a single polypeptide.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on structural comparison with dynein.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:02:04.779437Z"
+    },
+    {
+      "id": "180d3475-c4cd-4920-9b03-e4e7e2a87916",
+      "content_id": "8dce894c-7872-412b-ad08-2962ffca83ab",
+      "claim_id": "C91",
+      "claim": "RNF213 is most similar to the resting states of dynein, in which the AAA ring is also open.",
+      "claim_type": "EXPLICIT",
+      "source": "Structural alignments indicated that RNF213 is most similar to the resting states of dynein, in which the AAA ring is also open (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on structural alignment with dynein structures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:02:04.779437Z"
+    },
+    {
+      "id": "be3f5fa7-6e3a-46c7-8fcd-dbe3d6759516",
+      "content_id": "8dce894c-7872-412b-ad08-2962ffca83ab",
+      "claim_id": "C92",
+      "claim": "RNF213 features two highly conserved loops in the AAA ring, presumably controlling the ATPase activity of AAA3 and AAA4.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, RNF213 features two highly conserved loops in the AAA ring, presumably controlling the ATPase activity of the two functional AAA3 and AAA4 units.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the structural positions and conservation of IR3 and IR5.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:02:04.779437Z"
+    },
+    {
+      "id": "6eb463ab-d974-426e-b31e-9070fa7969c4",
+      "content_id": "8dce894c-7872-412b-ad08-2962ffca83ab",
+      "claim_id": "C93",
+      "claim": "RNF213 does not represent a processive ATPase.",
+      "claim_type": "EXPLICIT",
+      "source": "We thus propose that RNF213 does not represent a processive ATPase, as would be required for example for it to use its AAA ring to promote the remodeling of E3 target proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the lack of an active AAA1 and low ATPase activity.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:02:04.779437Z"
+    },
+    {
+      "id": "b4ce548b-813f-4bd5-8af3-fd4f627c7c12",
+      "content_id": "8dce894c-7872-412b-ad08-2962ffca83ab",
+      "claim_id": "C94",
+      "claim": "The distribution of active/inactive ATPase sites in RNF213 points to a regulated switch promoting conformational changes by opening and closing the AAA ring.",
+      "claim_type": "EXPLICIT",
+      "source": "The distribution of active/inactive ATPase sites rather point to a regulated switch promoting conformational changes by opening and closing the AAA ring, of which the first state is depicted in the present study.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the structural features of the AAA ring.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:02:04.779437Z"
+    },
+    {
+      "id": "3c924815-d729-4aef-9741-db1a4842b93a",
+      "content_id": "8dce894c-7872-412b-ad08-2962ffca83ab",
+      "claim_id": "C95",
+      "claim": "The ribosome maturation factor Rea1 was observed in an auto-inhibited form stabilized by a specific insertion into AAA2.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the ribosome maturation factor Rea1 \u2013 another six AAA-domain containing protein with structural homology to RNF213 (Figure 2\u2014figure supplement 1) \u2013 was also observed in an auto-inhibited form that is stabilized by a specific insertion into AAA2 (Chen et al., 2018; Sosnowski et al., 2018).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is cited from published studies on Rea1.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:02:04.779437Z"
+    },
+    {
+      "id": "b78362c8-41af-4f13-9db8-fd7253523fa5",
+      "content_id": "8dce894c-7872-412b-ad08-2962ffca83ab",
+      "claim_id": "C96",
+      "claim": "In Rea1, certain cofactors promote the release of the inhibitory element, unlocking the AAA hexamer.",
+      "claim_type": "EXPLICIT",
+      "source": "In Rea1, certain cofactors promote the release of the inhibitory element, unlocking the AAA hexamer and inducing conformational changes required to interact with the C-terminal MIDAS domain, and subsequently with other ribosome assembly factors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from published studies on Rea1 mechanism.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:02:04.779437Z"
+    },
+    {
+      "id": "1e806438-3b53-4733-9554-6a424dec3bd2",
+      "content_id": "8dce894c-7872-412b-ad08-2962ffca83ab",
+      "claim_id": "C97",
+      "claim": "The AAA switch in RNF213 could be transmitted to the C-terminal E3 module, regulating ubiquitination activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Given the similar overall organization of Rea1 and RNF213 (Figure 2\u2014figure supplement 3), the AAA switch proposed for RNF213 could be analogously transmitted to the C-terminal E3 module, regulating ubiquitination activity.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred by analogy with Rea1 mechanism.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:02:04.779437Z"
+    },
+    {
+      "id": "9538dad6-f137-4c2f-96f1-4a542b5accc5",
+      "content_id": "8dce894c-7872-412b-ad08-2962ffca83ab",
+      "claim_id": "C98",
+      "claim": "RNF213 collaborates with UbcH7, a cysteine-reactive E2 enzyme typically stimulating ubiquitination activity of HECT and RBR E3 ligases.",
+      "claim_type": "EXPLICIT",
+      "source": "To characterize the E3 function of RNF213, we used auto-ubiquitination as a proxy readout for its catalytic activity. Our data demonstrate that RNF213 collaborates with UbcH7, a cysteine-reactive E2 enzyme typically stimulating ubiquitination activity of HECT and RBR E3 ligases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by the E2 screen and auto-ubiquitination assays.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:02:04.779437Z"
+    },
+    {
+      "id": "b83c7dc9-bfb4-4845-94c4-a46ec7ad0f02",
+      "content_id": "8dce894c-7872-412b-ad08-2962ffca83ab",
+      "claim_id": "C99",
+      "claim": "RNF213 does not depend on its RING domain to function as an E3 ubiquitin ligase.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, we observed that RNF213 does not depend on its naming RING domain to function as an E3 ubiquitin ligase.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by the functional activity of the \u0394RING mutant.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:02:04.779437Z"
+    },
+    {
+      "id": "f2c990ed-f95e-416f-aaed-4a72e78e562e",
+      "content_id": "8dce894c-7872-412b-ad08-2962ffca83ab",
+      "claim_id": "C100",
+      "claim": "The modified UbcH7 ABP exhibited the same cross-linking activity with RNF213 as the unmodified ABP.",
+      "claim_type": "EXPLICIT",
+      "source": "Contrary to RBR enzymes, the modified UbcH7 ABP exhibited the same cross-linking activity with RNF213 as the unmodified ABP (Pao et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from a published proteomics study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:02:04.779437Z"
+    },
+    {
+      "id": "e5eccb3b-1aa1-4ff1-a9d1-ca0e739c255d",
+      "content_id": "8dce894c-7872-412b-ad08-2962ffca83ab",
+      "claim_id": "C101",
+      "claim": "The RING-less RNF213 exhibits strong auto-ubiquitination activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, the RING-less RNF213, which exhibits strong auto-ubiquitination activity, does not display structural similarity to any of the known ubiquitination enzyme in eukaryotes nor to the novel E3-like ligases (NEL, Maculins et al., 2016) that are found in bacterial pathogens and also operate in a RING-independent manner.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by the auto-ubiquitination assay of the \u0394RING mutant.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:02:04.779437Z"
+    },
+    {
+      "id": "509aa854-9106-4645-ba4b-3ec2fa351ef3",
+      "content_id": "8dce894c-7872-412b-ad08-2962ffca83ab",
+      "claim_id": "C102",
+      "claim": "Novel E3-like ligases (NEL) are found in bacterial pathogens and operate in a RING-independent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, the RING-less RNF213, which exhibits strong auto-ubiquitination activity, does not display structural similarity to any of the known ubiquitination enzyme in eukaryotes nor to the novel E3-like ligases (NEL, Maculins et al., 2016) that are found in bacterial pathogens and also operate in a RING-independent manner.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from published literature on NEL enzymes.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:02:04.779437Z"
+    },
+    {
+      "id": "93225e3d-3d4a-471b-b041-ccd199a7fe44",
+      "content_id": "8dce894c-7872-412b-ad08-2962ffca83ab",
+      "claim_id": "C103",
+      "claim": "RNF213 is the founding member of a distinct class of E3 ligases employing a Cys-containing motif.",
+      "claim_type": "EXPLICIT",
+      "source": "We thus propose that RNF213 is the founding member of a distinct class of E3 ligases, employing a Cys-containing motif similarly as HECT, RBR, and RCR enzymes, but utilizing a distinct structural scaffold to promote the ubiquitin transfer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the structural and functional data.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:02:04.779437Z"
+    },
+    {
+      "id": "0167c99b-4115-4f92-92fe-cefa22905a39",
+      "content_id": "8dce894c-7872-412b-ad08-2962ffca83ab",
+      "claim_id": "C104",
+      "claim": "The findings highlight the unexplored mechanistic diversity within the ubiquitination network.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the E3 mechanism, the identity of the active site cysteine and the role of the RING domain remain to be resolved, our findings highlight the unexplored mechanistic diversity within the ubiquitination network.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the novel findings about RNF213.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:02:04.779437Z"
+    },
+    {
+      "id": "7e81908d-b009-4984-9a5e-309165c0f47f",
+      "content_id": "8dce894c-7872-412b-ad08-2962ffca83ab",
+      "claim_id": "C105",
+      "claim": "The majority of MMD mutations with a high pathology CADD score cluster in the composite E3 module.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, the majority of the MMD mutations with a high pathology CADD score cluster in the composite E3 module, affecting each of the four sub-domains.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on mapping MMD mutations onto the structure and analyzing CADD scores.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:02:04.779437Z"
+    },
+    {
+      "id": "f78ab945-5575-4b2f-9629-9c9ab4c4d12e",
+      "content_id": "8dce894c-7872-412b-ad08-2962ffca83ab",
+      "claim_id": "C106",
+      "claim": "MMD mutations interfere with the ubiquitination activity of RNF213, leading to either mechanistic inhibition or altered substrate binding.",
+      "claim_type": "EXPLICIT",
+      "source": "These data suggest that MMD mutations interfere with the ubiquitination activity of RNF213, leading to either mechanistic inhibition or altered substrate binding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the clustering of mutations in the E3 module.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:02:04.779437Z"
+    },
+    {
+      "id": "731cb71c-17b9-46f6-86b3-92e5d8588c9e",
+      "content_id": "8dce894c-7872-412b-ad08-2962ffca83ab",
+      "claim_id": "C107",
+      "claim": "The cryo-EM structure provides a precise roadmap to dissect the role of RNF213 in vascular formation and Moyamoya disease.",
+      "claim_type": "EXPLICIT",
+      "source": "The presented cryo-EM structure now provides a precise roadmap to dissect the role of RNF213 in vascular formation and the connected Moyamoya disease.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion about the utility of the structural information.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:02:04.779437Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "32a4361b-9c7b-46fc-9c2d-066fcf01ad7d",
+      "content_id": "8dce894c-7872-412b-ad08-2962ffca83ab",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The cryo-EM structure of RNF213 reveals a 584 kDa protein organized into three major structural modules: an N-terminal stalk (N-arm, residues 1-1290, 180 \u00c5 long), a dynein-like AAA core (residues 1775-3405, comprising six non-equivalent AAA units), and a multidomain E3 module (residues 3589-4926) containing a heart-shaped 4-domain scaffold with an E3-RING domain (residues 3940-3999). The wildtype and R4753K mutant structures were resolved at average resolutions of 3.2 \u00c5 and 3.1 \u00c5, respectively, with RNF213 existing as a monomer in solution.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The structural characterization is well-supported by high-resolution cryo-EM data (C6, C7), biophysical validation of the monomeric state (C5), and detailed domain mapping (C8-C14, C59-C62). The resolution achieved allows for confident assignment of >80% of side chains, and the structure is validated by cross-linking mass spectrometry data showing 90% of crosslinks within expected distances. The focused refinement approach yielded high-quality density maps for individual modules (C58).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:02:04.779437Z"
+    },
+    {
+      "id": "5b984f10-6ae4-4315-8292-4cda6a834508",
+      "content_id": "8dce894c-7872-412b-ad08-2962ffca83ab",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "RNF213 belongs to the dynein ATPase family with six AAA units in a single polypeptide, but differs fundamentally from dynein in its ATPase organization. Only AAA3 and AAA4 are catalytically competent, while AAA2 contains a bound ATP molecule but lacks catalytic residues for hydrolysis. Two conserved regulatory insertions (IR3 in AAA3 and IR5 in AAA5) sterically block nucleotide binding to AAA3 and AAA4, resulting in an auto-inhibited state with ATPase activity an order of magnitude lower than processive AAA machines and ~3-fold lower than resting dynein. The structure most closely resembles the resting states of dynein (phi-particle and apo form) with an open AAA ring.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The structural and functional characterization of the AAA core is well-supported by multiple lines of evidence: direct observation of ATP bound to AAA2 in cryo-EM density (C17), structural analysis of catalytic motifs (C16, C18), visualization of inhibitory insertions IR3 and IR5 (C19, C20), and quantitative ATPase assays comparing RNF213 to dynein and processive ATPases (C26, C27). The structural homology to dynein is validated by detailed alignments (C15, C24, C91), though the functional interpretation as auto-inhibited (C22) is inferential and would benefit from additional activation studies.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:02:04.779437Z"
+    },
+    {
+      "id": "96ccb063-5022-4745-bbb4-c32947852fef",
+      "content_id": "8dce894c-7872-412b-ad08-2962ffca83ab",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "RNF213 represents a novel class of E3 ubiquitin ligase that functions independently of its RING domain. The E3-RING contains an atypical leucine residue instead of the conserved lysine/arginine linchpin, and a \u0394RING mutant exhibits wildtype-like auto-ubiquitination activity. RNF213 preferentially collaborates with UbcH7, a cysteine-reactive E2 enzyme (2-3 times more efficient than UbcH5 variants), suggesting a transthiolation mechanism similar to HECT, RBR, and RCR ligases but utilizing a structurally distinct E3 scaffold with no homology to known E3 ligases.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The characterization of RNF213 as a novel E3 ligase class is supported by multiple converging lines of evidence: structural observation of the atypical linchpin residue (C29), comprehensive E2 screening identifying UbcH7 as the preferred partner (C30, C79), functional demonstration that \u0394RING retains full activity (C33, C34), independent proteomics validation (C32, C82), and DALI searches showing no structural homology to known E3 ligases (C35, C36, C89). However, the specific cysteine residue and detailed mechanism remain unidentified, which the authors acknowledge (C103, C104). The conclusion that RNF213 represents a founding member of a new E3 class is well-justified but requires future mechanistic studies.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:02:04.779437Z"
+    },
+    {
+      "id": "78c8c135-19c8-4acd-a7cb-fc9c412322ea",
+      "content_id": "8dce894c-7872-412b-ad08-2962ffca83ab",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The R4753K Moyamoya disease founder mutation causes minimal structural changes (0.69 \u00c5 RMSD for 4308 C\u03b1 atoms) localized to an omega motif where Arg4753 forms a salt bridge with Asp4806. The mutation disrupts this salt bridge, leading to small local structural adaptations but does not significantly alter ATPase or ubiquitination activity in vitro. This is consistent with the low penetrance of R4753K (1 in 200 carriers develop disease).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The structural and functional characterization of the R4753K mutation is well-supported by high-resolution cryo-EM comparison (C37), direct visualization of the salt bridge disruption in density maps (C39, C40), and quantitative enzymatic assays showing no significant functional changes (C42). The correlation with low disease penetrance (C43) and the observation that the partner residue Asp4806 is also associated with MMD (C41) strengthen the interpretation. However, the lack of in vitro functional changes raises questions about the disease mechanism that would require cellular or in vivo studies to resolve.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:02:04.779437Z"
+    },
+    {
+      "id": "4ff624d3-1187-4398-b814-920fb51f9a29",
+      "content_id": "8dce894c-7872-412b-ad08-2962ffca83ab",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Moyamoya disease mutations cluster predominantly in the E3 module, with 21 out of 28 severe mutations (CADD score >20) localized to one of the four E3 subdomains. The most pathogenic mutations are located at subdomain interfaces and are predicted to alter the conformation and dynamics of the E3 module, thereby interfering with ubiquitination activity through either mechanistic inhibition or altered substrate binding.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The mutation clustering analysis is supported by systematic mapping of known MMD mutations onto the structure with CADD score analysis (C44, C105). The observation that high-pathogenicity mutations localize to subdomain interfaces (C45) is based on structural data. However, the proposed mechanism of interference with ubiquitination activity (C106) is inferential and not directly tested experimentally. The analysis would be strengthened by functional validation of representative high-CADD mutations beyond R4753K.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:02:04.779437Z"
+    },
+    {
+      "id": "89b22cba-e07a-44e8-8988-ae432fc1037b",
+      "content_id": "8dce894c-7872-412b-ad08-2962ffca83ab",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "RNF213 is the major susceptibility factor for Moyamoya disease, a progressive cerebrovascular disorder leading to stroke. The disease is most prevalent in East Asia, where at least 16 million people carry RNF213 mutations, with over 50,000 disease cases, and more than 2% of the East Asian population carry disease-associated mutations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These epidemiological and disease association claims are well-established in the literature and properly cited (C1, C2, C46, C47, C86). The claims represent accepted knowledge in the field rather than novel findings from this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:02:04.779437Z"
+    },
+    {
+      "id": "697a1d72-1157-44ca-9a01-448beec55020",
+      "content_id": "8dce894c-7872-412b-ad08-2962ffca83ab",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "RNF213 plays important roles in lipid metabolism (modulating lipotoxicity, fat storage, and lipid droplet formation), coordinates cellular response to hypoxia with PTP1B and HIF1A (controlling non-mitochondrial oxygen consumption), causes changes in the ubiquitome particularly affecting NF-\u03baB pathway members upon knockdown, and is capable of activating NF-\u03baB signaling.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These functional roles are properly cited from recent published studies (C48-C52, C87) and represent established knowledge from prior work rather than findings from the current study. The claims accurately summarize the cited literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:02:04.779437Z"
+    },
+    {
+      "id": "a8c4b7c9-bd42-40a5-8cb2-6b442cd3fbff",
+      "content_id": "8dce894c-7872-412b-ad08-2962ffca83ab",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "RNF213 is the largest E3 ubiquitin ligase in the human proteome at 591 kDa and uniquely combines RING and AAA domains in a single polypeptide, making it a unique E3 machine in the ubiquitination system.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims about RNF213's size and unique domain architecture are well-established facts properly cited from prior literature (C53, C54, C88). They provide important context but are not novel findings from this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:02:04.779437Z"
+    },
+    {
+      "id": "4917c2c4-c720-4e3d-bef4-1f6092b67a1d",
+      "content_id": "8dce894c-7872-412b-ad08-2962ffca83ab",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Prior work proposed RNF213 forms hexameric particles, but this is contradicted by the current structure. Dynein's AAA1 drives processive movement while AAA3/AAA4 function as a molecular switch. The ribosome maturation factor Rea1 exhibits auto-inhibition via AAA2 insertion, with cofactors promoting release of the inhibitory element.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims accurately represent prior work on RNF213 (C63), dynein (C73, C74), and Rea1 (C95, C96) from cited literature. The current study's structure contradicts the hexamerization hypothesis (C63, C64), which is appropriately noted. These are contextual claims about prior work rather than novel findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:02:04.779437Z"
+    },
+    {
+      "id": "d1fde7e0-5bd9-4c96-8851-5d318d10a1a5",
+      "content_id": "8dce894c-7872-412b-ad08-2962ffca83ab",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "RNF213 likely does not function as a processive ATPase but rather as a regulated switch promoting conformational changes through AAA ring opening and closing. By analogy to Rea1, the AAA switch could be transmitted to the E3 module to regulate ubiquitination activity. The findings highlight unexplored mechanistic diversity in the ubiquitination network, and the structure provides a roadmap for dissecting RNF213's role in vascular formation and Moyamoya disease.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "These mechanistic proposals are largely inferential, based on structural features (C92, C94), analogy to Rea1 (C97), and the lack of processive ATPase activity (C93). While the inferences are reasonable given the structural data, they represent hypotheses rather than demonstrated mechanisms. The authors appropriately acknowledge that key mechanistic details remain unresolved (C104). The claims about future utility of the structure (C107) are forward-looking rather than results. Direct experimental evidence for the proposed regulatory mechanism is needed.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:02:04.779437Z"
+    },
+    {
+      "id": "ea40b476-d025-4724-b0c1-f7dc690698b8",
+      "content_id": "8dce894c-7872-412b-ad08-2962ffca83ab",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "General principles of AAA ATPase domain organization and RING E3 ligase mechanisms are described, including that AAA domains comprise large \u03b1/\u03b2 and small \u03b1-helical domains with the arginine finger provided by adjacent units, RING E3s use a conserved Lys/Arg linchpin for catalysis, UbcH5 variants are promiscuous E2 enzymes, UbcH7 lacks lysine reactivity, and novel E3-like ligases (NEL) operate in a RING-independent manner.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These are accurate statements of established knowledge about AAA domains (C65, C66), RING E3 mechanisms (C76, C77), and E2 enzyme properties (C80, C81, C102), properly supported by citations. They provide necessary background context but are not novel findings from this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:02:04.779437Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "d3b1be03-c980-41e7-8312-93585c6550d2",
+      "result_id": "32a4361b-9c7b-46fc-9c2d-066fcf01ad7d"
+    },
+    {
+      "claim_id": "a0b13664-8113-49b1-9fb7-a9c666b0909c",
+      "result_id": "32a4361b-9c7b-46fc-9c2d-066fcf01ad7d"
+    },
+    {
+      "claim_id": "4f692f1c-ec57-4206-8f10-aa2c314c3aa5",
+      "result_id": "32a4361b-9c7b-46fc-9c2d-066fcf01ad7d"
+    },
+    {
+      "claim_id": "202aff67-2e0f-469f-aa39-9d92d2ee89a3",
+      "result_id": "32a4361b-9c7b-46fc-9c2d-066fcf01ad7d"
+    },
+    {
+      "claim_id": "0fa5ee60-a259-43dd-8666-059b85f0d0d3",
+      "result_id": "32a4361b-9c7b-46fc-9c2d-066fcf01ad7d"
+    },
+    {
+      "claim_id": "9598d12d-2689-4124-93fe-76136c9d749b",
+      "result_id": "32a4361b-9c7b-46fc-9c2d-066fcf01ad7d"
+    },
+    {
+      "claim_id": "aa24c883-e866-48c1-99c6-ee30aa78445e",
+      "result_id": "32a4361b-9c7b-46fc-9c2d-066fcf01ad7d"
+    },
+    {
+      "claim_id": "4610149f-f635-429a-b900-9ce4823e334b",
+      "result_id": "32a4361b-9c7b-46fc-9c2d-066fcf01ad7d"
+    },
+    {
+      "claim_id": "d402b893-a5f7-4c45-97c1-1aa6f1861cb6",
+      "result_id": "32a4361b-9c7b-46fc-9c2d-066fcf01ad7d"
+    },
+    {
+      "claim_id": "6f1c2b1f-b1e3-4eaa-82ec-ab4f10865f12",
+      "result_id": "32a4361b-9c7b-46fc-9c2d-066fcf01ad7d"
+    },
+    {
+      "claim_id": "47822d25-54ae-4190-9743-0b29dd8f7e41",
+      "result_id": "32a4361b-9c7b-46fc-9c2d-066fcf01ad7d"
+    },
+    {
+      "claim_id": "260554ae-b42c-4c97-9529-30b309f3c201",
+      "result_id": "32a4361b-9c7b-46fc-9c2d-066fcf01ad7d"
+    },
+    {
+      "claim_id": "1b0f2204-ed62-400d-93ac-91bccf33c2a0",
+      "result_id": "32a4361b-9c7b-46fc-9c2d-066fcf01ad7d"
+    },
+    {
+      "claim_id": "fad214dc-111d-4521-996c-5c8c5c4b3a10",
+      "result_id": "32a4361b-9c7b-46fc-9c2d-066fcf01ad7d"
+    },
+    {
+      "claim_id": "3717d49a-9891-48d5-930c-a41f92170423",
+      "result_id": "32a4361b-9c7b-46fc-9c2d-066fcf01ad7d"
+    },
+    {
+      "claim_id": "65cc0ed1-b5ed-435a-9d00-58fe4d3414ab",
+      "result_id": "32a4361b-9c7b-46fc-9c2d-066fcf01ad7d"
+    },
+    {
+      "claim_id": "326d0643-def0-4781-b397-879292be2180",
+      "result_id": "32a4361b-9c7b-46fc-9c2d-066fcf01ad7d"
+    },
+    {
+      "claim_id": "a6411548-d7b9-40ae-8dec-502e195ebec3",
+      "result_id": "32a4361b-9c7b-46fc-9c2d-066fcf01ad7d"
+    },
+    {
+      "claim_id": "87c80739-7760-4753-9f6b-bf7195b7cf0f",
+      "result_id": "32a4361b-9c7b-46fc-9c2d-066fcf01ad7d"
+    },
+    {
+      "claim_id": "f5c7d569-4b24-4b28-a675-0da592d2a9a6",
+      "result_id": "32a4361b-9c7b-46fc-9c2d-066fcf01ad7d"
+    },
+    {
+      "claim_id": "31bd43f2-edd9-43e6-8dba-78815f518b3a",
+      "result_id": "32a4361b-9c7b-46fc-9c2d-066fcf01ad7d"
+    },
+    {
+      "claim_id": "d5da375d-2217-4577-b466-62395dd935c9",
+      "result_id": "5b984f10-6ae4-4315-8292-4cda6a834508"
+    },
+    {
+      "claim_id": "2d607419-5627-4644-b8d3-4a9ffcc1b7bf",
+      "result_id": "5b984f10-6ae4-4315-8292-4cda6a834508"
+    },
+    {
+      "claim_id": "362e86a7-4b12-4334-89da-5883fd4e6a4b",
+      "result_id": "5b984f10-6ae4-4315-8292-4cda6a834508"
+    },
+    {
+      "claim_id": "a834fab5-1af1-466a-a601-5055d286d627",
+      "result_id": "5b984f10-6ae4-4315-8292-4cda6a834508"
+    },
+    {
+      "claim_id": "f9c64a17-3a77-41b5-aabe-ec327a69974d",
+      "result_id": "5b984f10-6ae4-4315-8292-4cda6a834508"
+    },
+    {
+      "claim_id": "4e012624-13da-4990-8f3c-8c186336057b",
+      "result_id": "5b984f10-6ae4-4315-8292-4cda6a834508"
+    },
+    {
+      "claim_id": "c4e91230-3278-4f8f-aa44-a9e2fe471067",
+      "result_id": "5b984f10-6ae4-4315-8292-4cda6a834508"
+    },
+    {
+      "claim_id": "8870f083-2d95-44c2-9081-f1c31c7f087d",
+      "result_id": "5b984f10-6ae4-4315-8292-4cda6a834508"
+    },
+    {
+      "claim_id": "d17cc696-441e-47b3-b449-b40472dfbe88",
+      "result_id": "5b984f10-6ae4-4315-8292-4cda6a834508"
+    },
+    {
+      "claim_id": "9d6cda97-037f-4f49-aa3d-b37ce9e1ce69",
+      "result_id": "5b984f10-6ae4-4315-8292-4cda6a834508"
+    },
+    {
+      "claim_id": "480da284-0754-40dc-95f8-65f091dfc326",
+      "result_id": "5b984f10-6ae4-4315-8292-4cda6a834508"
+    },
+    {
+      "claim_id": "73eb3051-43be-441f-b309-9705e1798b51",
+      "result_id": "5b984f10-6ae4-4315-8292-4cda6a834508"
+    },
+    {
+      "claim_id": "466d24b0-0bf8-49e3-8c33-1160c72582c8",
+      "result_id": "5b984f10-6ae4-4315-8292-4cda6a834508"
+    },
+    {
+      "claim_id": "31bd43f2-edd9-43e6-8dba-78815f518b3a",
+      "result_id": "5b984f10-6ae4-4315-8292-4cda6a834508"
+    },
+    {
+      "claim_id": "581e31b2-562f-4f87-ae14-435418054d66",
+      "result_id": "5b984f10-6ae4-4315-8292-4cda6a834508"
+    },
+    {
+      "claim_id": "f1197a60-acef-4319-b45a-1cb608369e20",
+      "result_id": "5b984f10-6ae4-4315-8292-4cda6a834508"
+    },
+    {
+      "claim_id": "5e7553a8-3436-425c-984f-fa144f082ace",
+      "result_id": "5b984f10-6ae4-4315-8292-4cda6a834508"
+    },
+    {
+      "claim_id": "5c607020-5bbc-43ea-b6d8-b7ee07047fcb",
+      "result_id": "5b984f10-6ae4-4315-8292-4cda6a834508"
+    },
+    {
+      "claim_id": "7b653b86-3877-47e4-ad28-746f3f67dc8b",
+      "result_id": "5b984f10-6ae4-4315-8292-4cda6a834508"
+    },
+    {
+      "claim_id": "065d64aa-117e-4a72-85ca-e6f695ee5c90",
+      "result_id": "5b984f10-6ae4-4315-8292-4cda6a834508"
+    },
+    {
+      "claim_id": "f299c768-c9c4-40cc-844e-3edc7fa33198",
+      "result_id": "5b984f10-6ae4-4315-8292-4cda6a834508"
+    },
+    {
+      "claim_id": "d80ab1f4-316f-444b-af75-73146eb373b9",
+      "result_id": "5b984f10-6ae4-4315-8292-4cda6a834508"
+    },
+    {
+      "claim_id": "1ab50066-190d-433a-89a1-f85bf454defd",
+      "result_id": "5b984f10-6ae4-4315-8292-4cda6a834508"
+    },
+    {
+      "claim_id": "180d3475-c4cd-4920-9b03-e4e7e2a87916",
+      "result_id": "5b984f10-6ae4-4315-8292-4cda6a834508"
+    },
+    {
+      "claim_id": "1d0f3478-bde3-4a0c-aaa4-e288c52334f7",
+      "result_id": "96ccb063-5022-4745-bbb4-c32947852fef"
+    },
+    {
+      "claim_id": "38f59888-8d69-4274-8b95-85b7d0c19cd8",
+      "result_id": "96ccb063-5022-4745-bbb4-c32947852fef"
+    },
+    {
+      "claim_id": "e9dae7f0-6215-45a0-9d91-2d082729f669",
+      "result_id": "96ccb063-5022-4745-bbb4-c32947852fef"
+    },
+    {
+      "claim_id": "aaa56b7a-75c7-4f1f-beb8-3ec9c5a6f07d",
+      "result_id": "96ccb063-5022-4745-bbb4-c32947852fef"
+    },
+    {
+      "claim_id": "756a99e3-142c-4f80-a378-0f403ebde5ae",
+      "result_id": "96ccb063-5022-4745-bbb4-c32947852fef"
+    },
+    {
+      "claim_id": "badfeb00-f0b1-4d1b-9b84-a6bc1ef813d3",
+      "result_id": "96ccb063-5022-4745-bbb4-c32947852fef"
+    },
+    {
+      "claim_id": "24c1fa86-5460-43a8-a04a-38ab44a74e8b",
+      "result_id": "96ccb063-5022-4745-bbb4-c32947852fef"
+    },
+    {
+      "claim_id": "a1f0f0e3-3089-470f-bd22-2096565d2d21",
+      "result_id": "96ccb063-5022-4745-bbb4-c32947852fef"
+    },
+    {
+      "claim_id": "433bf318-4b29-4083-bd0e-c9feac767634",
+      "result_id": "96ccb063-5022-4745-bbb4-c32947852fef"
+    },
+    {
+      "claim_id": "d59859b6-8fe0-42c9-93b0-2d72ab5b30ae",
+      "result_id": "96ccb063-5022-4745-bbb4-c32947852fef"
+    },
+    {
+      "claim_id": "fb1708e7-7e41-4c87-9ddf-92fb4ab5a200",
+      "result_id": "96ccb063-5022-4745-bbb4-c32947852fef"
+    },
+    {
+      "claim_id": "93cd0c71-af01-4233-bf47-925dea43fac9",
+      "result_id": "96ccb063-5022-4745-bbb4-c32947852fef"
+    },
+    {
+      "claim_id": "d1dae86c-6331-4a72-be01-df8b393cdfae",
+      "result_id": "96ccb063-5022-4745-bbb4-c32947852fef"
+    },
+    {
+      "claim_id": "2b9d6415-768a-4a26-bee6-e8d42c5171c4",
+      "result_id": "96ccb063-5022-4745-bbb4-c32947852fef"
+    },
+    {
+      "claim_id": "706ecb08-c661-400f-8622-e0399cf60ac6",
+      "result_id": "96ccb063-5022-4745-bbb4-c32947852fef"
+    },
+    {
+      "claim_id": "52c23e7a-e91e-4ca1-8fca-5cd77ebfb643",
+      "result_id": "96ccb063-5022-4745-bbb4-c32947852fef"
+    },
+    {
+      "claim_id": "453f5223-3650-44c9-83bf-3d96bdd49a74",
+      "result_id": "96ccb063-5022-4745-bbb4-c32947852fef"
+    },
+    {
+      "claim_id": "126eff76-0e0b-4d6c-b762-a716da4aaaa1",
+      "result_id": "96ccb063-5022-4745-bbb4-c32947852fef"
+    },
+    {
+      "claim_id": "e4ffb7b8-c036-4a4c-81ae-17e47e179646",
+      "result_id": "96ccb063-5022-4745-bbb4-c32947852fef"
+    },
+    {
+      "claim_id": "37c98e68-b112-410b-8724-bf414cb5a78a",
+      "result_id": "96ccb063-5022-4745-bbb4-c32947852fef"
+    },
+    {
+      "claim_id": "beb5d6a7-6902-4fe1-a7f5-e02a6687d59a",
+      "result_id": "96ccb063-5022-4745-bbb4-c32947852fef"
+    },
+    {
+      "claim_id": "9538dad6-f137-4c2f-96f1-4a542b5accc5",
+      "result_id": "96ccb063-5022-4745-bbb4-c32947852fef"
+    },
+    {
+      "claim_id": "b83c7dc9-bfb4-4845-94c4-a46ec7ad0f02",
+      "result_id": "96ccb063-5022-4745-bbb4-c32947852fef"
+    },
+    {
+      "claim_id": "f2c990ed-f95e-416f-aaed-4a72e78e562e",
+      "result_id": "96ccb063-5022-4745-bbb4-c32947852fef"
+    },
+    {
+      "claim_id": "e5eccb3b-1aa1-4ff1-a9d1-ca0e739c255d",
+      "result_id": "96ccb063-5022-4745-bbb4-c32947852fef"
+    },
+    {
+      "claim_id": "93225e3d-3d4a-471b-b041-ccd199a7fe44",
+      "result_id": "96ccb063-5022-4745-bbb4-c32947852fef"
+    },
+    {
+      "claim_id": "aac725ff-b8ff-4f95-a002-726804cc86ba",
+      "result_id": "78c8c135-19c8-4acd-a7cb-fc9c412322ea"
+    },
+    {
+      "claim_id": "af6a8976-a778-43be-a45d-567bdaf42a6b",
+      "result_id": "78c8c135-19c8-4acd-a7cb-fc9c412322ea"
+    },
+    {
+      "claim_id": "70d25945-1562-43b3-88d1-a277cc4f0c50",
+      "result_id": "78c8c135-19c8-4acd-a7cb-fc9c412322ea"
+    },
+    {
+      "claim_id": "b9124023-b22c-42c8-b42c-56e8dbb73d64",
+      "result_id": "78c8c135-19c8-4acd-a7cb-fc9c412322ea"
+    },
+    {
+      "claim_id": "e4a5fb0a-ab43-48ff-8dde-0d37f6057506",
+      "result_id": "78c8c135-19c8-4acd-a7cb-fc9c412322ea"
+    },
+    {
+      "claim_id": "7100c451-39d2-4095-9c06-21fa3f91f8d5",
+      "result_id": "78c8c135-19c8-4acd-a7cb-fc9c412322ea"
+    },
+    {
+      "claim_id": "8b2a1940-645a-48cf-bfbc-1ec710d38644",
+      "result_id": "78c8c135-19c8-4acd-a7cb-fc9c412322ea"
+    },
+    {
+      "claim_id": "2f7fe103-6fd8-41d6-9bc5-09d6560779a1",
+      "result_id": "4ff624d3-1187-4398-b814-920fb51f9a29"
+    },
+    {
+      "claim_id": "38b4b215-0bdf-4277-a9d7-405499e4542b",
+      "result_id": "4ff624d3-1187-4398-b814-920fb51f9a29"
+    },
+    {
+      "claim_id": "7e81908d-b009-4984-9a5e-309165c0f47f",
+      "result_id": "4ff624d3-1187-4398-b814-920fb51f9a29"
+    },
+    {
+      "claim_id": "f78ab945-5575-4b2f-9629-9c9ab4c4d12e",
+      "result_id": "4ff624d3-1187-4398-b814-920fb51f9a29"
+    },
+    {
+      "claim_id": "47993493-0df1-475e-ba43-77da5af9338b",
+      "result_id": "89b22cba-e07a-44e8-8988-ae432fc1037b"
+    },
+    {
+      "claim_id": "8361e43c-af5f-4799-8a97-9949af1fcb9c",
+      "result_id": "89b22cba-e07a-44e8-8988-ae432fc1037b"
+    },
+    {
+      "claim_id": "16fce6f0-699e-4b90-b7bd-3c5f6068f3c5",
+      "result_id": "89b22cba-e07a-44e8-8988-ae432fc1037b"
+    },
+    {
+      "claim_id": "1ac8437f-cb62-4693-b733-11fef02ee20a",
+      "result_id": "89b22cba-e07a-44e8-8988-ae432fc1037b"
+    },
+    {
+      "claim_id": "448bf217-4162-448e-8677-f74278e93fc5",
+      "result_id": "89b22cba-e07a-44e8-8988-ae432fc1037b"
+    },
+    {
+      "claim_id": "fbdae182-1eee-4d84-8f5f-763e252985d6",
+      "result_id": "697a1d72-1157-44ca-9a01-448beec55020"
+    },
+    {
+      "claim_id": "b2b3a5e5-47ac-4bdc-bb1a-c95073381376",
+      "result_id": "697a1d72-1157-44ca-9a01-448beec55020"
+    },
+    {
+      "claim_id": "c5d8d26b-ae3e-4221-9253-8999935b4e44",
+      "result_id": "697a1d72-1157-44ca-9a01-448beec55020"
+    },
+    {
+      "claim_id": "edc8ed75-4707-4c58-9415-603b1e77614b",
+      "result_id": "697a1d72-1157-44ca-9a01-448beec55020"
+    },
+    {
+      "claim_id": "2c1ad604-5cec-43b2-b024-e59a8478f588",
+      "result_id": "697a1d72-1157-44ca-9a01-448beec55020"
+    },
+    {
+      "claim_id": "28e7df0b-4617-497b-a49d-3280a6a644f3",
+      "result_id": "697a1d72-1157-44ca-9a01-448beec55020"
+    },
+    {
+      "claim_id": "48266f13-16bc-4748-a1a6-4469ec702a41",
+      "result_id": "a8c4b7c9-bd42-40a5-8cb2-6b442cd3fbff"
+    },
+    {
+      "claim_id": "6c630504-9e2c-40b4-b210-09562d10c5de",
+      "result_id": "a8c4b7c9-bd42-40a5-8cb2-6b442cd3fbff"
+    },
+    {
+      "claim_id": "e9e1136e-690a-4645-8a86-e92b6b8e1839",
+      "result_id": "a8c4b7c9-bd42-40a5-8cb2-6b442cd3fbff"
+    },
+    {
+      "claim_id": "e7b6a0e0-660f-4897-849b-e9fbf5368acb",
+      "result_id": "4917c2c4-c720-4e3d-bef4-1f6092b67a1d"
+    },
+    {
+      "claim_id": "0edf0bff-05a5-49b8-a99a-09f9ba985fba",
+      "result_id": "4917c2c4-c720-4e3d-bef4-1f6092b67a1d"
+    },
+    {
+      "claim_id": "d8b3f7c4-07e2-497d-8375-f9e2b4514526",
+      "result_id": "4917c2c4-c720-4e3d-bef4-1f6092b67a1d"
+    },
+    {
+      "claim_id": "3c924815-d729-4aef-9741-db1a4842b93a",
+      "result_id": "4917c2c4-c720-4e3d-bef4-1f6092b67a1d"
+    },
+    {
+      "claim_id": "b78362c8-41af-4f13-9db8-fd7253523fa5",
+      "result_id": "4917c2c4-c720-4e3d-bef4-1f6092b67a1d"
+    },
+    {
+      "claim_id": "be3f5fa7-6e3a-46c7-8fcd-dbe3d6759516",
+      "result_id": "d1fde7e0-5bd9-4c96-8851-5d318d10a1a5"
+    },
+    {
+      "claim_id": "6eb463ab-d974-426e-b31e-9070fa7969c4",
+      "result_id": "d1fde7e0-5bd9-4c96-8851-5d318d10a1a5"
+    },
+    {
+      "claim_id": "b4ce548b-813f-4bd5-8af3-fd4f627c7c12",
+      "result_id": "d1fde7e0-5bd9-4c96-8851-5d318d10a1a5"
+    },
+    {
+      "claim_id": "1e806438-3b53-4733-9554-6a424dec3bd2",
+      "result_id": "d1fde7e0-5bd9-4c96-8851-5d318d10a1a5"
+    },
+    {
+      "claim_id": "0167c99b-4115-4f92-92fe-cefa22905a39",
+      "result_id": "d1fde7e0-5bd9-4c96-8851-5d318d10a1a5"
+    },
+    {
+      "claim_id": "731cb71c-17b9-46f6-86b3-92e5d8588c9e",
+      "result_id": "d1fde7e0-5bd9-4c96-8851-5d318d10a1a5"
+    },
+    {
+      "claim_id": "581e31b2-562f-4f87-ae14-435418054d66",
+      "result_id": "ea40b476-d025-4724-b0c1-f7dc690698b8"
+    },
+    {
+      "claim_id": "f1197a60-acef-4319-b45a-1cb608369e20",
+      "result_id": "ea40b476-d025-4724-b0c1-f7dc690698b8"
+    },
+    {
+      "claim_id": "fb1708e7-7e41-4c87-9ddf-92fb4ab5a200",
+      "result_id": "ea40b476-d025-4724-b0c1-f7dc690698b8"
+    },
+    {
+      "claim_id": "93cd0c71-af01-4233-bf47-925dea43fac9",
+      "result_id": "ea40b476-d025-4724-b0c1-f7dc690698b8"
+    },
+    {
+      "claim_id": "706ecb08-c661-400f-8622-e0399cf60ac6",
+      "result_id": "ea40b476-d025-4724-b0c1-f7dc690698b8"
+    },
+    {
+      "claim_id": "52c23e7a-e91e-4ca1-8fca-5cd77ebfb643",
+      "result_id": "ea40b476-d025-4724-b0c1-f7dc690698b8"
+    },
+    {
+      "claim_id": "509aa854-9106-4645-ba4b-3ec2fa351ef3",
+      "result_id": "ea40b476-d025-4724-b0c1-f7dc690698b8"
+    }
+  ],
+  "comparisons": []
+}

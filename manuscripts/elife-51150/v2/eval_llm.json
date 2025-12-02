@@ -1,0 +1,515 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "Myo1S742 is phosphorylated in a TORC2-Gad8-dependent manner. Phosphorylation is significantly reduced in cells lacking Ste20 (TORC2 component) and abolished in cells lacking Gad8. Reduced Gad8 activity (via phosphomimetic Gad8.T6D) also reduces Myo1S742 phosphorylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C8 provide converging evidence from prior phospho-proteomic studies (C1-C2), genetic deletion experiments (C3-C5), and phosphomimetic mutant analysis (C7-C8) that collectively establish TORC2-Gad8-dependent phosphorylation of Myo1S742. The western blot data in Figure 1B-D directly support the genetic dependencies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "TORC2-Gad8-dependent phosphorylation at S742 regulates Myo1 activity. Cells lacking TORC2 or Gad8 display defects in actin organization, polarized growth, and cell-cycle progression. The myo1.S742A mutation blocks cell division under nutrient restriction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C11 link the phosphorylation pathway to functional outcomes. C9 establishes the phenotypic consequences of pathway disruption via citations, C10 provides direct experimental evidence of the S742A phenotype with quantitative cell length data, and C11 synthesizes these findings into a regulatory conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "Cam1 binds to Myo1 IQ motifs in a calcium-dependent manner with sequential cooperative binding. Ca2+ binding induces conformational changes in Cam1. Cam1 associates with Myo1IQ12 through two binding events with affinities <0.1 \u00b5M and 0.68 \u00b5M, with calcium sensitivity (pCa 5.87).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C19 describe Cam1-Myo1 interactions using multiple biophysical approaches (FRET, IAANS fluorescence, Quin-2 assays). The data demonstrate calcium-dependent conformational changes (C12-C13), FRET signal changes upon binding (C14-C15), biphasic binding kinetics (C16-C17), and calcium sensitivity (C18). The inference about low Ca2+ requirement (C19) follows logically from the pCa value.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "Cam1 binds tightly to isolated Myo1IQ1 (Kd <0.1 \u00b5M) but shows no detectable binding to isolated Myo1IQ2. This suggests sequential cooperative binding where IQ1 occupancy is required before Cam1 can bind IQ2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C21 provide experimental binding data from Figure 2E showing differential affinity for individual IQ motifs. C22 is a reasonable mechanistic inference from this differential binding pattern, consistent with cooperative binding models.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Myo1S742 phosphorylation (S742D mutation) changes the conformation of the lever arm upon Cam1 binding without affecting binding affinity, calcium sensitivity, or cooperativity. The S742D mutation alters maximum FRET signal (Fmax 46.05 vs 31.64).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C25 demonstrate that phosphorylation affects lever arm conformation rather than binding affinity. C23-C24 provide experimental FRET data showing unchanged binding parameters but altered Fmax values. C25 is a well-supported inference that conformational change, not affinity modulation, is the mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Myo1 and Cam1 associate with the cell membrane in two distinct ways: rapid single-molecule binding (~8 s\u207b\u00b9 off rate, low mobility) and longer endocytic events (~13.84 s duration). During endocytosis, ~45 Myo1 and ~90 Cam1 molecules accumulate, consistent with two Cam1 per Myo1. Cam1 dissociates before Myo1 (Tdur: 10.99 s vs 13.84 s).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C34 describe Myo1/Cam1 dynamics using TIRF microscopy. The data show two distinct membrane association modes (C27), quantify single-molecule kinetics (C28-C29), measure endocytic event parameters (C30-C32), and establish stoichiometry (C33-C34). The 2:1 Cam1:Myo1 ratio is consistent with in vitro binding data showing occupation of both IQ sites.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C35",
+      "C36"
+    ],
+    "result": "Cam1 dissociates from Myo1 before Myo1 leaves the endocytic patch. Two-color imaging shows Myo1 and Cam1 arrive simultaneously, but Cam1 dissociates ~3 s before Myo1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C36 establish the temporal relationship between Cam1 and Myo1 dynamics. C35 is an inference from timing differences, directly confirmed by two-color imaging data in C36 (Figure 3D).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C37",
+      "C38"
+    ],
+    "result": "The myo1.S742A mutation reduces endocytic event duration by 1.5 s (12.3 s vs 13.84 s) without affecting assembly/disassembly rates or peak intensity. In S742A cells, Myo1 and Cam1 dissociate simultaneously and earlier than in wild-type.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C38 describe the functional consequence of blocking phosphorylation on endocytic dynamics. The TIRF data (Figure 3E) show quantitative changes in timing without affecting other parameters, supporting the conclusion that phosphorylation specifically modulates the duration of membrane association.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Fission yeast cells grow monopolarly after division, then transition to bipolar growth at NETO (New End Take Off) during interphase. This growth pattern switch correlates with redistribution of endocytic actin patches.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C41 establish background knowledge about fission yeast cell polarity, supported by citations to Mitchison and Nurse, 1985 and Marks and Hyams, 1985. This is well-established prior work providing context for the experimental findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Myo1S742 phosphorylation does not affect assembly of Myo1-Cam1 foci but regulates endocytosis rate during bipolar growth. In myo1.S742A cells, Myo1 and Cam1 foci have shorter lifetimes, and endocytosis rates differ significantly between old and new cell ends (p<0.01), unlike wild-type cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C46 demonstrate that phosphorylation affects endocytic function without changing protein localization. The widefield imaging data (C42-C44) show differential effects at old vs. new cell ends in S742A mutants, supporting the conclusion (C45-C46) that phosphorylation modulates activity rather than assembly.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Myo1S742 phosphorylation is cell-cycle-dependent, peaking in early interphase (before NETO) when ~50% of Myo1 is phosphorylated, then dropping to undetectable levels by late G2 before mitosis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C49 establish cell-cycle regulation of Myo1S742 phosphorylation using cell-cycle mutants (Figure 4A) and synchronized cells (Figure 4B-D). The quantitative western blot data support the temporal pattern and stoichiometry of phosphorylation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "myo1.S742A cells are longer than wild-type (13.2 vs 9.77 \u00b5m), with 24.7% showing bent morphology and increased monopolar growth. The actin patch marker Sla2 fails to redistribute to the new cell end in S742A cells. The S742A allele does not have additive effects with tea4\u0394.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C54 describe morphological and polarity defects in S742A mutants. The quantitative data on cell length (C50), bent morphology (C51), monopolar growth (C53), and Sla2 redistribution (C54) are well-documented with statistical significance. The genetic interaction with tea4\u0394 (C52) provides mechanistic context.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "The failure of myo1.S742A cells to switch to bipolar growth correlates with reduced growth rate at end of log phase and higher density at stationary phase. Cell-cycle-dependent Myo1S742 phosphorylation modulates the myosin lever arm's ability to regulate endocytosis and polarized growth.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C57 link the NETO defect to growth phenotypes. C55-C56 provide growth curve data (Figure 5C) showing altered growth dynamics. C57 is a well-supported synthesis of the cell-cycle phosphorylation data and functional phenotypes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Cam1 occupies both Myo1 IQ motifs during endocytosis, contrasting with prior reports of Cam2 binding. Cam2 is recruited later than Myo1/Cam1 but before vesicle scission, then remains associated with internalized endosomes. Cam1 and Cam2 localize to distinct populations of foci.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C63 establish differential Cam1 vs. Cam2 dynamics. C58 cites prior work, C59 presents the authors' contrasting finding based on stoichiometry data. C60-C63 use widefield and two-color imaging (Figures 6A-D) to demonstrate temporal and spatial differences in Cam1 vs. Cam2 localization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Cam1 recruitment to endocytic foci is abolished in myo1\u0394 cells, while Cam2 foci intensity, volume, and number increase in the absence of Myo1. However, internalization and oscillating dynamics of Cam2 and actin depend on Myo1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C66 describe differential Myo1-dependence of Cam1 vs. Cam2. The imaging data (Figures 6E-G, Supplementary Table 1) show complete Cam1 dependence on Myo1 (C64), paradoxical increase in Cam2 foci in myo1\u0394 (C65), but Myo1-dependence for Cam2 dynamics (C66). This suggests Cam2 can localize independently but requires Myo1 for function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "~30 Cam2 molecules are recruited per endocytic focus (vs. 45 Myo1 and 90 Cam1). Cam2 recruitment kinetics differ from Myo1/Cam1, showing steady increase then abrupt decline. Cam2 remains associated with endocytic vesicles after internalization and membrane disconnection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C70 quantify Cam2 dynamics using TIRF microscopy. The stoichiometry (C67), distinct kinetics (C68-C69), and post-scission association (C70, Video 3) are well-documented and distinguish Cam2 from Cam1 behavior.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C71",
+      "C72"
+    ],
+    "result": "Endosome scission occurs immediately before Myo1 disassembly and around the time Cam1 dissociates from Myo1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C72 establish the timing of vesicle scission relative to protein dynamics. These are reasonable inferences from the timing data in Figures 3B-C showing Cam1 departure ~3 s before Myo1, with scission occurring in this window based on Cam2 dynamics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C73",
+      "C74"
+    ],
+    "result": "In cam2\u0394 cells, overall Myo1 and Cam1 distribution appears unaffected, but the number, volume, and intensity of foci are significantly reduced.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C74 describe the phenotype of cam2\u0394 cells using imaging data (Figures 7C-D, Supplementary Table 1). The data show that Cam2 affects the properties of Myo1/Cam1 foci without changing their spatial distribution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Two Cam2 molecules can bind Myo1IQ12 in vitro, with 70% of signal from one binding event (Kd 1.10 \u00b5M). Cam2 does not bind calcium and its Myo1 interactions are calcium-insensitive. Like Cam1, Cam2 binds IQ1 (0.4 \u00b5M) but not IQ2 alone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C80 characterize Cam2-Myo1 interactions using the same biophysical approaches as for Cam1. The data (Figure 2D-G) show calcium-insensitivity (C77-C78), biphasic binding with different stoichiometry than Cam1 (C75-C76), and similar IQ motif preferences (C79-C80).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "Cam1 calcium binding is unaffected by Cam2, and no direct physical interaction between Cam1 and Cam2 was detected. However, differential fluorescence amplitudes between Cam1 and Cam2 binding to IQ12 indicate different impacts on lever arm conformation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C83 establish that Cam1 and Cam2 do not interact directly but have distinct effects on Myo1 conformation. The gel filtration and fluorescence data (Figure 2\u2014figure supplement 2, Figure 2G) support these conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C84"
+    ],
+    "result": "Myo1S742 phosphorylation has no measurable impact on Cam2 dynamics and distribution during normal vegetative growth.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C84 is supported by imaging data (Figure 8A, Supplementary Table 1) showing no difference in Cam2 behavior between wild-type and S742A cells during vegetative growth. This contrasts with effects during meiosis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "Calcium levels in log phase yeast are low (100-200 nM), favoring Cam1-Myo1 association. The cellular ratio of Myo1:Cam1:Cam2 is 0.25:1.56:1. Only 1.7% of Cam1 associates with foci, 40% of which depends on Myo1, indicating ~0.68% of cellular Cam1 associates with Myo1 at endocytic foci.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C89 establish the cellular context for Cam1-Myo1 interactions. C85 cites prior work on calcium levels. C86 provides experimental protein abundance data consistent with published proteomics. C87-C89 calculate the fraction of Cam1 at endocytic foci from imaging data, providing quantitative context for the functional studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "Calcium levels increase during mating and meiosis (~10-fold during meiosis/sporulation). Myo1S742 is phosphorylated in mating and meiotic cells. Cam2 abundance increases relative to Cam1 upon starvation, mating, and meiosis entry.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C93 establish the conditions during sexual differentiation. C90-C91 cite prior work on calcium dynamics. C92 provides experimental western blot data (Figure 8C). C93 cites transcriptomic studies showing Cam2 upregulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "During meiosis and sporulation, Myo1, Cam1, and Cam2 foci have significantly longer lifetimes (>1 min vs. seconds in vegetative cells, p<0.0001), are less dynamic, lack oscillation, and remain fixed. Endocytosis is significantly diminished in meiotic cells, indicating reduced foci dynamics minimizes endocytosis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C97 describe altered protein dynamics during meiosis using imaging data (Figure 8D-E, Supplementary Table 1, Videos 5-8). The quantitative differences in foci lifetimes and dynamics are well-documented. C97 is a reasonable inference linking reduced dynamics to reduced endocytosis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "During meiosis in myo1.S742A cells, Myo1 and Cam1 foci lifetimes are not significantly different from each other (unlike wild-type) and are reduced compared to wild-type. Cam2 dynamics do not correlate with Myo1 in S742A cells. This indicates Myo1S742 phosphorylation is required for Cam2 interaction with Myo1 IQ motifs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C101 demonstrate the requirement for phosphorylation during meiosis. The imaging data (Supplementary Table 1) show altered dynamics in S742A mutants during meiosis. C101 is a well-supported inference that phosphorylation enables Cam2-Myo1 interaction under high calcium conditions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "myo1.S742A cells fail to inhibit polar growth upon nitrogen starvation. During mating, 27.9% of S742A cells continue growing at schmooing tips (vs. 1.8% wild-type). Meiosis produces abnormal asci (13.1% vs. 0.9% wild-type), resembling cam2\u0394 phenotype. This supports that both Ca\u00b2\u207a increases and Myo1S742 phosphorylation are required for Cam2-Myo1 association and regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C106 demonstrate functional consequences of blocking phosphorylation during sexual differentiation. The quantitative phenotypic data (Figure 8F) show growth and meiotic defects. The similarity to cam2\u0394 phenotype (C105) supports the mechanistic conclusion (C106) that phosphorylation enables Cam2 function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "The authors propose a two-stage mechanism where changes in calcium levels and TORC2-dependent phosphorylation modulate myosin motor activity. During vegetative growth at low calcium, Myo1 associates with two Cam1 molecules. Phosphorylation changes Cam1-associated lever arm conformation to regulate endocytosis rate and the monopolar-to-bipolar growth switch.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C110 synthesize the major findings into a mechanistic model. These conclusions are well-supported by the extensive biochemical, biophysical, and cell biological data presented throughout the manuscript.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "TORC2 and Gad8 activity increase upon starvation, promoting meiosis. Myo1S742 phosphorylation increases upon starvation, and S742A cells fail to arrest growth. Combined with increased Ca\u00b2\u207a during starvation/meiosis, phosphorylation switches light chain preference to favor Cam2 recruitment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111-C113 integrate the phosphorylation and calcium signaling pathways. C111 cites prior work on TORC2/Gad8 regulation. C112 provides experimental data on phosphorylation and growth arrest. C113 synthesizes these into a model for light chain switching.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C114",
+      "C115"
+    ],
+    "result": "Structural considerations suggest Myo1S742 phosphorylation likely impacts Cam2 binding at IQ1. Cooperative binding occurs where IQ1 occupancy is required before a second calmodulin can bind IQ2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C114-C115 provide structural and mechanistic insights. C114 is a reasonable inference based on structural data (Lu et al., 2015). C115 is well-supported by the experimental binding data showing no IQ2-only binding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R30",
+    "claim_ids": [
+      "C116"
+    ],
+    "result": "The switch in light-chain occupancy may change Myo1 neck stiffness and thereby modulate movement, force production, and/or load-sensitivity during the acto-myosin ATPase cycle.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C116 is explicitly speculative (\"may provide\"). While the conformational changes are demonstrated, the specific effects on stiffness, force, and load-sensitivity are proposed mechanisms that would require additional biophysical measurements (e.g., optical trap studies) to validate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R31",
+    "claim_ids": [
+      "C117",
+      "C118"
+    ],
+    "result": "Motor activity from a ring of myosins at the endosome lip is necessary for internalization (from budding yeast studies). The size of the early endocytic patch determines the number of Myo1 molecules needed to generate critical Arp2/3-nucleated actin concentration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C117 cites prior work (Mund et al., 2018; Sun et al., 2006) on myosin ring function. C118 is a reasonable inference from the authors' data on Myo1 accumulation kinetics and stoichiometry, integrated with prior work on Arp2/3 activation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R32",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "Myo1 acts as a tension sensor against actin pushing the endosome membrane against turgor pressure (0.85 MPa). Myo1 number remains constant during internalization until 2 s after Cam1 dissociation. The trigger for Cam1 release is unknown but likely involves rapid localized calcium spike, possibly from membrane deformation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C119 proposes a tension-sensing mechanism based on the data and turgor pressure (Minc et al., 2009), which is reasonable but not directly tested. C120 is supported by the TIRF data. C121 is explicitly speculative about the calcium trigger mechanism, though the kinetics support rapid release.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R33",
+    "claim_ids": [
+      "C122",
+      "C123",
+      "C124",
+      "C125"
+    ],
+    "result": "After Cam1 detachment, the neck loses rigidity, reducing tension and promoting F-actin detachment. Without actin interaction, Myo1 would leave ~1 s after losing Cam1 (based on ~8 s\u207b\u00b9 off rate). Lever arm conformation and rigidity modulate tension-sensing. Phosphorylation-dependent conformational changes provide a mechanism to modulate endocytosis rate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C122-C125 propose a mechanistic model integrating the structural, dynamic, and functional data. C122 cites prior work on calmodulin and rigidity. C123 is a reasonable calculation from the single-molecule data. C124-C125 are well-supported syntheses of the experimental findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R34",
+    "claim_ids": [
+      "C126",
+      "C127"
+    ],
+    "result": "In the presence of Ca\u00b2\u207a and Myo1S742 phosphorylation, a single Cam2 resides at IQ1. The vacant IQ2 allows flexibility in the C-terminal neck region, providing a tension-insensitive motor that stalls against actin and persists longer at endocytic foci (as observed in meiotic cells).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C126-C127 propose the mechanism for altered dynamics during meiosis. C126 is supported by the in vitro binding data and cellular observations. C127 is a reasonable mechanistic inference from the structural implications and the observed longer foci lifetimes in meiotic cells (Figure 8D, Supplementary Table 1).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R35",
+    "claim_ids": [
+      "C128"
+    ],
+    "result": "Phosphorylation-dependent changes in calcium-regulated myosin lever arm conformation and rigidity could provide a universal mechanism for regulating diverse myosin motor activities in all cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C128 is explicitly speculative (\"could provide\") and extrapolates the findings to other systems. While the mechanism is well-established in S. pombe Myo1, generalization to other myosins and cell types requires additional experimental validation.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,274 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "CO2/H+ causes vasoconstriction in the RTN but vasodilation in other chemoreceptor regions (cNTS, ROb) and cortex. In vitro slice experiments show RTN arterioles constrict by \u221211.2\u00b14.5% with 15% CO2, while cNTS, ROb, and cortex arterioles dilate by +6.0\u00b12.2%, +6.5\u00b12.6%, and +3.7\u00b10.9% respectively. Similar regional differences are observed with astrocyte activation by t-ACPD.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C28 and C43-C46 provide consistent in vitro data with appropriate statistical analysis (ANOVA, p<0.0001) showing opposite vascular responses between RTN and other regions. Sample sizes (N=5-11 vessels per region) are adequate. The use of U46619 to pre-constrict vessels is acknowledged as a limitation but necessary for the slice preparation. Control experiments with TTX (C33) confirm the response is independent of neuronal activity, distinguishing it from canonical neurovascular coupling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C93"
+    ],
+    "result": "P2Y2 receptor expression is uniquely distributed in RTN vascular cells compared to other regions. qRT-PCR from FACS-sorted cells shows P2ry2 is under-expressed in RTN endothelial cells (\u22129.2\u00b10.3 log2 fold, p=0.0013) but over-expressed in RTN smooth muscle cells (+6.8\u00b11.5 log2 fold, p=0.0462) relative to control. This pattern is consistent with a vasoconstrictor role.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C22 provide qRT-PCR data with statistical significance and appropriate controls (Gapdh normalization, cell-type markers). The FACS approach (C19-C20) ensures cell-type specificity. However, the pooling of 3-8 animals per region limits assessment of biological variability. The interpretation that this expression pattern favors vasoconstriction is reasonable given prior literature (C23-C24) but remains correlative without functional validation at this stage.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "P2Y2 receptor activation is necessary and sufficient for CO2/H+-induced vasoconstriction in the RTN. Pharmacological blockade with AR-C118925 eliminates CO2/H+ constriction in vitro (\u0394 +0.2\u00b10.3%, p>0.05) and in vivo (converts to +5.2\u00b10.9% dilation). The P2Y2 agonist PSB1114 mimics CO2/H+ constriction in RTN (\u22122.3\u00b10.7%, p<0.01) but has minimal effect in cNTS and ROb.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C32 and C48-C51 provide converging pharmacological evidence across in vitro and in vivo preparations. The specificity of PSB1114 for P2Y2 and lack of effect in other regions (C31-C32) strengthens the conclusion. Sample sizes are adequate (N=6-11 vessels in vitro, N=7 animals in vivo). The conversion from constriction to dilation upon P2Y2 blockade (C49-C50) suggests an underlying dilatory mechanism that is normally opposed by P2Y2-mediated constriction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "CO2/H+-induced vasoconstriction in the RTN is independent of adenosine A1 receptors, ectonucleotidase activity, and PGE2/EP3 signaling. Blockade of A1 receptors (8-PT), ectonucleotidases (POM1), or EP3 receptors (L-798,106) does not prevent CO2/H+ constriction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C36 and C39 provide negative control data ruling out alternative mechanisms. While PGE2 itself causes vasodilation (C38), EP3 blockade does not prevent CO2/H+ constriction (C39), supporting the inference that PGE2/EP3 is dispensable for vascular regulation (C40). These controls strengthen the specificity of the P2Y2 mechanism, though sample sizes are not always reported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "P2Y2-dependent vasoconstriction in the RTN contributes to respiratory drive. In anesthetized mice, VMS application of AR-C118925 does not affect the apneic threshold but reduces intercostal EMG amplitude by 23\u00b15% at high CO2 (9-10%). Conversely, P2Y2 activation with PSB1114 increases EMG amplitude by 20\u00b13% at 5% CO2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C54 provide in vivo functional data linking vascular P2Y2 signaling to respiratory output. The bidirectional effects (blockade reduces, activation increases) support causality. However, the authors acknowledge that VMS drug application may affect nearby respiratory centers (limitation discussed with C106). The lack of effect on respiratory frequency (only amplitude affected) is unexplained and somewhat inconsistent with the genetic data (C107) showing both frequency and tidal volume are affected in cKO mice.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C89"
+    ],
+    "result": "Disrupting CO2/H+-induced vasodilation in cNTS and ROb by injecting the vasoconstrictor U46619 causes unstable breathing with increased apneas (1.2\u00b10.6 vs 0.4\u00b10.2 apneas/min, p<0.001) and lowers the CO2 apneic threshold from 3.2\u00b10.3% to 2.1\u00b10.1%. This suggests CO2/H+ vasodilation in these regions stabilizes breathing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C58-C59 provide experimental support for the hypothesis that vasodilation in cNTS/ROb limits chemoreceptor activity. However, U46619 injection into cNTS also increases blood pressure (C60), which could activate baroreceptors and confound respiratory effects. The authors acknowledge this limitation but do not adequately control for it. Additionally, U46619 may directly activate neurons or astrocytes expressing thromboxane receptors. The inference that vasodilation 'stabilizes' breathing (C89) is reasonable but not definitively proven.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Smooth muscle-specific P2Y2 knockout mice (TaglnCre::P2ry2f/f) exhibit normal baseline respiration but blunted ventilatory responses to CO2. At 5% and 7% CO2, minute ventilation is reduced by 28% and 35% respectively compared to controls, due to decreases in both frequency and tidal volume. Hypoxic ventilatory responses remain normal.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C65 confirm genetic specificity (Cre restricted to smooth muscle, P2ry2 not detectable in cKO). Baseline parameters are normal (C66-C67, Table 1), indicating the phenotype is specific to CO2 chemoreception. The dose-dependent reduction in CO2 responses (C69-C70) is statistically robust (Figure 4, Table 2). Normal hypoxic responses (C71) demonstrate specificity for central chemoreception. Sample sizes appear adequate though exact N is not always clear. This is a key result establishing physiological relevance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "In P2Y2 cKO mice, RTN arterioles no longer constrict to CO2/H+ or tACPD but instead dilate (+4.7\u00b10.2% and +3.2\u00b10.7% respectively), similar to cortical vessels. This suggests CO2/H+-induced vasodilation is a general phenomenon that is normally opposed by P2Y2-mediated constriction in the RTN.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C77 provide in vitro vascular data from cKO mice showing loss of constriction and unmasking of dilation. The interpretation (C78-C79) that P2Y2 opposes an underlying dilatory mechanism is logical and supported by the pharmacological data (C49-C50). However, the mechanisms underlying the general vasodilatory response remain 'undetermined' (C78), which is acknowledged as speculation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C103",
+      "C104"
+    ],
+    "result": "Viral re-expression of P2Y2 specifically in RTN smooth muscle cells fully rescues the blunted CO2 ventilatory response in P2Y2 cKO mice. AAV2-Myh11p-eGFP-2A-mP2ry2 injections result in ~80% transduction of RTN smooth muscle cells and restore both vascular constriction and respiratory responses to CO2. Control virus has no effect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C85 provide the critical rescue experiment establishing sufficiency and anatomical specificity. Immunohistochemistry (C103) confirms ~80% transduction efficiency. qRT-PCR (C104) shows P2ry2 expression is restored in RTN but not cortex. The full rescue of ventilatory responses (C80, Figure 4C-F) with appropriate controls (C81) is compelling. This is the strongest evidence that RTN smooth muscle P2Y2 receptors are both necessary and sufficient for normal CO2 chemoreception. Minor concern: P2ry2 levels in rescue mice don't reach control levels (C104), yet function is fully restored, suggesting partial restoration is sufficient.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "P2Y2 receptors in RTN smooth muscle cells are requisite determinants of respiratory chemoreception. This conclusion integrates pharmacological blockade (C6), genetic deletion (C7), and viral rescue (C8) experiments showing that P2Y2-mediated vasoconstriction in the RTN is unique (C87) and required for normal ventilatory responses to CO2 (C88).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This is the central conclusion of the manuscript, supported by converging evidence from multiple experimental approaches (C5-C9, C86-C88). The combination of loss-of-function (pharmacological and genetic) and gain-of-function (rescue) experiments with anatomical specificity provides strong support. The claim that this is the 'first vascular element of respiratory control' (C86) may be overstated given prior work on GPR4 (C97-C98), but the identification of the specific receptor and cell type is novel.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C17",
+      "C56",
+      "C90"
+    ],
+    "result": "The authors speculate that differential CO2/H+ vascular reactivity across chemoreceptor regions (constriction in RTN, dilation in cNTS/ROb) fine-tunes respiratory drive and stability by modulating local tissue CO2/H+ levels. Vasoconstriction in RTN would prevent CO2/H+ washout and maintain chemoreceptor stimulation, while vasodilation elsewhere would buffer tissue CO2/H+ and limit over-activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C17, C56, and C90 are explicitly stated as speculation or inference. While the hypothesis is logical and consistent with the data, direct measurement of tissue CO2/H+ levels in different regions under these conditions is not provided. The U46619 experiments (C58-C62) provide some support but have confounding factors. This remains an attractive hypothesis requiring further validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C33",
+      "C34"
+    ],
+    "result": "CO2/H+-induced vasoconstriction in the RTN is independent of neuronal activity. TTX blockade of action potentials does not prevent the vascular response, distinguishing it from canonical neurovascular coupling in terms of both polarity (constriction vs dilation) and dependence on neural activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C33 provides experimental data with TTX, and C34 draws appropriate inferences comparing to established neurovascular coupling mechanisms. This control is important for ruling out indirect neural effects and supports a direct vascular mechanism. Sample size and statistics are not fully reported but the result is shown in supplementary data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "The cellular mechanism for CO2/H+-induced RTN vasoconstriction involves ATP release from astrocytes. Prior work shows CO2/H+ causes ATP release near RTN, astrocytes respond to acidification with Ca2+ elevations, and astrocyte activation with tACPD constricts RTN arterioles via purinergic signaling. ATP receptor blockade blunts both vasoconstriction and ventilatory responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C112 synthesize prior literature (citations provided) with current data (C43, C111). The inference that astrocyte-derived ATP activates smooth muscle P2Y2 receptors is well-supported by converging evidence, though direct demonstration of ATP release in response to CO2/H+ in the current study is not provided. This represents integration of the current findings with established mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "The authors acknowledge an experimental limitation: VMS drug application affects only tidal volume (C106), whereas genetic deletion affects both frequency and tidal volume (C107). This discrepancy may reflect drug effects on nearby respiratory centers, but is mitigated by the more specific genetic approaches.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This is an honest acknowledgment of experimental limitations (C105-C107). The authors appropriately note that genetic approaches (C107) provide more definitive evidence. This transparency strengthens confidence in the overall conclusions while acknowledging methodological constraints of the pharmacological experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C1",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C18",
+      "C23",
+      "C24",
+      "C41",
+      "C42",
+      "C91",
+      "C92",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "The manuscript establishes context by citing established knowledge about blood flow regulation, CO2/H+ vascular reactivity, RTN chemoreception, P2Y2 receptor signaling, and prior work on purinergic and prostaglandin mechanisms. These citations provide appropriate background for the current findings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C102 (selected) represent background knowledge and prior work appropriately cited throughout the manuscript. These establish the scientific context and justify the experimental approach. No major concerns with attribution or accuracy of cited work are evident, though comprehensive verification of all citations is beyond this review's scope.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,272 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C45",
+      "C104"
+    ],
+    "result": "Regulatory ribosomal ubiquitylation (RRub) events are reversible and diminish over time following stress stimuli. The authors demonstrate that RRub levels decrease without corresponding protein degradation, suggesting deubiquitylating enzymes mediate this reversibility rather than protein turnover.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C38-C43, and C45 provide converging experimental evidence from multiple stress conditions (ANS, DTT, UV) showing time-dependent reduction in RRub levels without corresponding changes in unmodified protein levels. The lack of protein accumulation with proteasome inhibitors (C41) supports the deubiquitylation mechanism over degradation. This is a well-controlled set of experiments with consistent results across different stressors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C54",
+      "C57",
+      "C58"
+    ],
+    "result": "A hierarchical relationship exists among RRub events where uS10 ubiquitylation depends on eS10 ubiquitylation, and uS5 ubiquitylation depends on uS3 ubiquitylation. This establishes a sequential ubiquitin code on ribosomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C4 and C54, C57-C58 are strongly supported by knock-in experiments showing that loss of eS10 ubiquitylation substantially reduces uS10 modification (Figure 2A), and loss of uS3 ubiquitylation completely ablates uS5 modification (Figure 2C,D). The reciprocal experiments (uS10-KI and uS5-KI) show no effect on upstream targets, confirming directionality. This hierarchical relationship is reproducible and well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C68",
+      "C69",
+      "C105"
+    ],
+    "result": "OTUD3 and USP21 are deubiquitylating enzymes that antagonize ZNF598-mediated eS10 and uS10 ubiquitylation and can limit RQC activation. Overexpression of these Dubs increases poly(A) stall readthrough and reduces ZNF598-stimulated ubiquitylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C11 and C68-C69 are supported by multiple complementary assays: the poly(A) stall reporter showing increased readthrough (Figure 3), immunoblotting demonstrating reduced eS10/uS10 ubiquitylation upon Dub overexpression (Figure 3E), and co-expression experiments showing antagonism of ZNF598 (Figure 3D). The activity-dependent nature is confirmed with catalytically inactive mutants. The evidence is robust and internally consistent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C94",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "Loss of USP21 or OTUD3 function results in altered RQC activity and delayed eS10 deubiquitylation following stress. Knockout cells show reduced poly(A) stall readthrough and sustained eS10 ubiquitylation up to 24 hours post-UV exposure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C15 and C94-C98 are supported by loss-of-function experiments using knockout cell lines. Figure 6A shows reduced stall readthrough in knockout cells, and Figure 6B demonstrates delayed deubiquitylation kinetics. The use of multiple independent knockout clones strengthens the findings. However, the authors note that siRNA knockdown was insufficient to observe phenotypes, requiring complete genetic ablation, which suggests the phenotype may be subtle or that compensatory mechanisms exist.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C106"
+    ],
+    "result": "Overexpression of wild-type USP21 or OTUD3 results in accelerated removal of ubiquitin from eS10 and uS10 following UV-induced RQC in an activity-dependent manner.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C93 and C106 are supported by experiments using doxycycline-inducible cell lines (Figure 5). Wild-type Dub expression leads to rapid deubiquitylation of eS10 and complete ablation of uS10 ubiquitylation, while inactive mutants show no effect. The activity-dependence is clearly demonstrated, and the use of inducible systems provides good temporal control. The experiments are well-controlled with appropriate inactive mutant comparisons.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C66",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "The relative abundance of ZNF598 versus USP21/OTUD3 governs RQC activity. Increasing ZNF598 levels relative to Dubs reduces stall readthrough, while increasing Dub levels enhances readthrough, demonstrating dose-dependent antagonism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66 and C85-C88 are supported by titration experiments (Figure 4F,G) showing that the ChFP:GFP ratio changes predictably with varying ratios of ZNF598 to Dub expression plasmids. This demonstrates quantitative antagonism. The observation that ZNF598 is naturally 19-fold more abundant than OTUD3 (C83) provides physiological context. The dose-response relationship is clear and reproducible.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C108",
+      "C109"
+    ],
+    "result": "Combinatorial ubiquitylation of both eS10 and uS10 is required for optimal RQC function. Overexpression of Dubs in knock-in cell lines lacking either eS10 or uS10 ubiquitylation sites results in enhanced stall readthrough beyond that observed with single mutations alone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C77 and C108-C109 are supported by experiments combining knock-in mutations with Dub overexpression (Figure 4C,D). The observation that Dub overexpression further enhances readthrough in cells already lacking one ubiquitylation site demonstrates that both modifications contribute independently to RQC function. The activity-dependence is confirmed with inactive mutants. This provides strong evidence for a combinatorial ubiquitin code.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C107"
+    ],
+    "result": "USP21 has broader substrate specificity than OTUD3, deubiquitylating both RQC-associated (eS10, uS10) and ISR-associated (uS3, uS5) ribosomal proteins, while OTUD3 primarily targets RQC substrates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C100 and C107 are supported by experiments testing Dub activity against different RRub substrates (Figure 7A,B). USP21 reduces ubiquitylation of all four tested ribosomal proteins in an activity-dependent manner, while OTUD3 only affects uS5 (modestly) and has no impact on uS3. This differential substrate specificity is clearly demonstrated and suggests distinct functional roles for the two Dubs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "OTUD3 associates with ribosomes and is preferentially localized to 40S-containing fractions rather than 80S or polysomes, suggesting it acts on split ribosomal subunits during late RQC events.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C101-C102 are supported by biochemical fractionation data (Figure 7C-E) showing OTUD3 in ribosome pellets and 40S fractions. However, C103 is speculative inference about the functional significance of this localization. While the localization data is clear, the interpretation that OTUD3 acts as a 'late step' during RQC requires additional functional validation. The authors appropriately use cautious language ('may preferentially'), but the mechanistic conclusion remains uncertain.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "Following UV exposure, eS10 and uS10 ubiquitylation precedes uS5 and uS3 ubiquitylation, with the latter occurring coincident with eIF2\u03b1 phosphorylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C48 are supported by time-course experiments following UV exposure (Figure 1E,F). The temporal separation between RQC-associated (eS10/uS10) and ISR-associated (uS3/uS5) ubiquitylation events is clearly demonstrated. The correlation with eIF2\u03b1 phosphorylation is consistent with prior work (C47) and observed in the data. This temporal analysis provides insight into the sequential activation of different stress response pathways.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Mutation of RRub lysine residues in eS10, uS10, uS5, or uS3 does not alter the stability or steady-state abundance of these ribosomal proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C52 are supported by experiments in knock-in cell lines showing no appreciable changes in total protein abundance (Figure 2A-D and supplements). This is an important control demonstrating that the ubiquitylation events are regulatory rather than degradative. The experiments include proteasome inhibitor treatments to rule out rapid turnover. This supports the non-degradative role of monoubiquitylation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C70",
+      "C71"
+    ],
+    "result": "Expression of USP21 or OTUD3 in ZNF598 knockout cells modestly enhances poly(A) stall readthrough beyond the elevated baseline observed in ZNF598-KO cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C71 are supported by experiments in ZNF598-KO cells (Figure 4A,B). The modest enhancement suggests ZNF598-independent functions for these Dubs. However, the authors note this modest effect is also observed with other Dubs and may be partially non-specific. The interpretation of ZNF598-independent activity is reasonable but should be considered preliminary.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C72",
+      "C73"
+    ],
+    "result": "eS10-KI and uS10-KI cell lines show enhanced poly(A) stall readthrough, while uS3-KI and uS5-KI cell lines do not alter readthrough compared to parental cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C73 are supported by FACS-based reporter assays (Figure 2\u2014figure supplement 1G). This confirms that eS10/uS10 ubiquitylation is required for RQC function while uS3/uS5 ubiquitylation is not, consistent with their distinct roles in ISR versus RQC pathways. This validates the knock-in cell lines and confirms prior findings from the literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C83",
+      "C84"
+    ],
+    "result": "ZNF598 protein levels are 19-fold in excess of OTUD3, while USP21 levels are undetectable in quantitative proteomic datasets from human cell lines.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C84 are supported by citation to published proteomic data (Itzhak et al., 2016). This provides important physiological context for the antagonism experiments, suggesting that under normal conditions, ZNF598 activity predominates. However, this is based on a single cited dataset and the authors' own overexpression experiments required 40-100 fold overexpression to compete with endogenous ZNF598.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C95"
+    ],
+    "result": "Combined loss of USP21 and OTUD3 does not further reduce stall readthrough compared to individual knockouts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C95 is supported by experiments with double knockout cells (Figure 6A). The lack of additivity suggests the Dubs may act at the same step or that a threshold effect exists. The authors interpret this as evidence for distinct action points, but alternative explanations (saturation, compensatory mechanisms) are possible. The observation is clear but the mechanistic interpretation is speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C44",
+      "C59"
+    ],
+    "result": "Background claims establishing prior knowledge about ISR, RQC pathways, and regulatory ribosomal ubiquitylation from the literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C1-C2, C16-C37, C44, C59) are supported by appropriate citations to prior work and represent established knowledge in the field. They provide necessary context for the current study but are not novel findings. The authors accurately represent prior work and cite appropriate references.",
+    "result_type": "MINOR"
+  }
+]

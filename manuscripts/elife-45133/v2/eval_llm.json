@@ -1,0 +1,387 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "BioRxiv experienced rapid growth in preprint submissions from 2013-2018, with 37,648 total preprints by November 2018. More preprints were posted in the first 11 months of 2018 (18,825) than in all four previous years combined, with neuroscience being the largest and fastest-growing category, reaching 6,000 preprints in October 2018.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C18-C25 provide consistent, specific numerical data on preprint growth patterns supported by referenced figures. The data shows clear temporal trends with specific counts and percentages. The neuroscience category's dominance is well-documented with milestone achievements and comparative statistics across categories.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "BioRxiv downloads increased dramatically, exceeding 2,100 preprints and 1.1 million downloads in October 2018. Total downloads reached 19.7 million from 2013-2018, with an 82% year-over-year increase. The overall median downloads per paper was 279, with genomics having the highest median (496) and neuroscience overtaking bioinformatics as the most downloaded category in October 2018.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C4, C26-C35 provide detailed download statistics with specific numbers, percentages, and temporal comparisons. The data is internally consistent and supported by referenced figures. Statistical comparisons between categories (C36-C38) include appropriate Mann-Whitney U tests with significant p-values.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "The neuroscience category has a slightly lower median downloads per paper (269.5) compared to all other categories combined (281), a difference that is statistically significant (Mann-Whitney U test p=0.0003).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C38 provide specific median values and appropriate statistical testing. The small difference (11.5 downloads) is statistically significant but the authors correctly attribute neuroscience's high total downloads to volume rather than per-paper popularity. The statistical test is appropriate for comparing medians between two groups.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Preprint downloads follow a predictable temporal pattern, with the highest activity in the first month (median 73 downloads) followed by rapid decay in months 2-3 (medians of 46 and 27 respectively), though preprints continue receiving about 12 downloads per month after one year.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C45 describe a clear temporal pattern in download behavior with specific median values for different time periods. The data shows consistent decay patterns and is supported by referenced figures. The finding that some preprints have late peaks (C45) adds nuance to the overall pattern.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "BioRxiv had 170,287 individual authors by November 2018, with 62.4% posting in 2018 including 84,339 first-time authors (98% increase). Author productivity is highly skewed: 76% have only one preprint, but 10% of authors account for 72.8% of all preprints, with George Davey Smith being the most prolific at 97 preprints.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C53 provide detailed author statistics with specific counts and percentages. The skewed distribution is well-documented and appropriately compared to conventional publishing patterns (citing R\u00f8rstad and Aksnes, 2015). However, the methods section (C117-C120) reveals significant data quality issues with author identification that could affect these counts.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C54",
+      "C55"
+    ],
+    "result": "Stanford University is the most represented institution on bioRxiv with 1,473 authors, and five of the top 11 universities by author count are from Great Britain despite US institutions dominating the top 100.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C54-C55 provide institutional statistics, but the manuscript explicitly acknowledges confounding factors in the methods section regarding inconsistent institutional naming (e.g., 'Harvard University' vs. various Harvard-affiliated institutions). This makes the institutional counts unreliable and potentially underestimated for institutions with multiple naming variations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Overall, 42.0% of bioRxiv preprints have been published in journals, with evolutionary biology having the highest publication rate (51.5%) and neuroscience having the most published preprints (2,608). Publication rates vary by posting year: 67.0% for 2013-2016 preprints, 64.0% including 2017, and only 20.0% for 2018 preprints.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C56-C61 provide publication statistics, but the validation study (C62-C64) reveals substantial false-negative rates in bioRxiv's publication detection system, particularly for older preprints (53% false-negative rate for 2015). This suggests the true publication rates are significantly higher than reported, making these estimates unreliable lower bounds rather than accurate measurements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Manual validation of 120 preprints revealed that 37.5% of preprints marked as unpublished had actually appeared in journals, with false-negative rates varying by year from 53% in 2015 to less than 17% in 2017.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C64 describe a systematic validation study with clear methodology and specific false-negative rates. The sample size (n=120, 30 per year) is modest but provides useful estimates with calculable margins of error. This finding is critical for interpreting all publication rate claims and demonstrates important limitations in bioRxiv's publication tracking system.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "BioRxiv preprints have been published in 1,531 different journals, with Scientific Reports (828), eLife (750), and PLOS ONE (741) publishing the most. However, the proportion of preprints varies greatly: GigaScience had the highest proportion at 49.4%, while Scientific Reports' 398 preprints in 2018 represented only 2.36% of its total output.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C73 provide detailed journal-level statistics with specific counts and proportions. The distinction between absolute numbers and proportions is important and well-documented. The data is supported by referenced figures and source data. However, these counts are subject to the same false-negative issues identified in the validation study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Journals vary in the breadth of bioRxiv categories they publish from, with PLOS ONE publishing from 26 of 27 categories (excluding clinical trials), while specialized journals like The Journal of Neuroscience and NeuroImage focus almost exclusively on neuroscience preprints.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C77 describe category diversity patterns across journals with specific examples. The data demonstrates expected patterns (specialized journals publish from narrow categories) and provides specific counts. This is a straightforward descriptive finding well-supported by the data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "There is a significant positive correlation between journal impact factor and median downloads per preprint (Kendall's \u03c4b=0.5862, p=1.364e-06 at journal level; \u03c4b=0.2053, p=9.311e-152 at preprint level), with high-impact journals like Nature Methods (JIF 26.919) publishing preprints with median 2,266 downloads versus PLOS ONE (JIF 2.766) with median 279 downloads.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C82 report correlations with appropriate statistical tests (Kendall's \u03c4b) and specific examples. The authors appropriately note this is correlation, not causation, and acknowledge they did not evaluate temporal relationships. The weaker correlation at the preprint level (\u03c4b=0.2053) versus journal level (\u03c4b=0.5862) is expected and properly reported. However, the causal interpretation is appropriately cautious.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "Published preprints have nearly twice as many downloads as unpublished ones (median 394 vs. 208, Mann-Whitney U test p<2.2e-16), a difference that persists even when excluding 2018 publications, though the gap narrows.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C87 report a clear difference in downloads between published and unpublished preprints with appropriate statistical testing. The sensitivity analysis excluding 2018 publications strengthens the finding. However, the authors correctly note they cannot determine causality (whether downloads predict publication or publication drives downloads).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "The median interval between preprint posting and journal publication is 166 days (about 5.5 months), with 75% published within 247 days and 90% within 346 days. This represents a 23.9% increase over the 134-day median reported by bioRxiv in mid-2016.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C91 provide specific publication interval statistics with quartile data and historical comparison. The data is well-documented with referenced figures. The comparison to historical data (C91) shows an increasing trend. However, the methods section notes important caveats about publication date reliability and 66 preprints with inconsistent dates that were excluded.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "Among the 30 journals publishing the most bioRxiv preprints, Nature Genetics has the longest median publication interval (272 days), significantly different from all journals except Genome Research, while G3 has the shortest (119 days), significantly different from all except Genetics, mBio, and The Biophysical Journal.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C95 report journal-specific publication intervals with appropriate statistical testing (Kruskal-Wallis and Dunn's test with Benjamini-Hochberg correction). The statistical approach is sound for comparing multiple groups. However, the authors appropriately caution that these intervals don't directly evaluate journal processes since authors may submit to multiple journals.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C96",
+      "C97"
+    ],
+    "result": "Publication intervals show extreme variation, with 122 preprints published within a week of posting to bioRxiv and the longest interval being 3 years, 7 months and 2 days (March 2015 to October 2018).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C97 document the range of publication intervals with specific extreme values. This provides important context for the median values reported elsewhere. The data demonstrates substantial heterogeneity in the publication process.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "The authors developed a Python-based web crawler to collect metadata from all bioRxiv preprints across 27 categories, including title, authors, downloads, dates, DOI, abstract, email addresses, institutional affiliations, and publication information, storing the data in a PostgreSQL database with Crossref used for publication dates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C116 describe the data collection methodology clearly. The technical approach is straightforward and appropriate for web scraping. The methods section provides additional implementation details about the crawler design, database structure, and update frequency. The data is made available through multiple access methods (API, database dumps, website).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C117",
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "Only 17.4% of bioRxiv authors have an associated ORCID, while 68.4% have at least one email address. However, data quality issues exist: 4.40% of authors have multiple email addresses, and 5.50% of email addresses are duplicates associated with multiple authors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C117-C120 document important data quality issues in author identification. The low ORCID adoption rate (17.4%) and email address duplication problems highlight significant challenges in accurately tracking individual authors. These issues directly impact the reliability of author-level statistics reported elsewhere in the manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "Publication dates were found for 99.8% of published preprints (all but 31 of 15,797), though 66 preprints (0.42%) had publication dates before their bioRxiv posting date and were excluded from interval analyses. Additionally, 10 preprints (0.03%) could not be associated with a bioRxiv collection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C121-C123 document data completeness and quality issues. The high success rate for publication dates (99.8%) is good, but the 66 preprints with inconsistent dates and 10 without category assignments represent data quality problems. The authors appropriately excluded problematic cases from relevant analyses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C1",
+      "C17",
+      "C110"
+    ],
+    "result": "BioRxiv is the largest biology-focused preprint server, and beginning in September 2018, held more biology preprints than all other major preprint servers combined.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C17, and C110 assert bioRxiv's status as the largest biology preprint server, citing Anaya, 2018 for the comparison to other servers. While the claim is well-cited and the total count of 37,648 preprints is documented, the manuscript does not provide direct comparison data to other servers, relying entirely on the cited source.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "The study's findings on download patterns and publication rates are consistent with prior work: Serghiou and Ioannidis (2018) found similar first-month download medians, Klein et al. (2016) found published papers largely indistinguishable from preprints, and the 75% publication rate within 247 days aligns with arXiv patterns and prior bioRxiv studies, though the current data shows 68.2% of 2015 and earlier preprints published versus 33.6% reported by Schloss (2017).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C105 appropriately contextualize findings within prior literature. The comparisons are well-cited and show general consistency with previous work. The substantial difference between the current study's 68.2% publication rate for 2015 preprints versus Schloss's 33.6% is explained by the additional time elapsed (spring 2017 to November 2018), demonstrating how publication rates increase over time.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "The manuscript provides historical context on preprints: physicists have used arXiv since 1991, early life sciences preprint efforts failed, a PubMed Central proposal was blocked by the National Academy of Sciences, bioRxiv was founded in 2013, and preprints have gained institutional support with over 100 journals accepting direct submissions, NIH allowing preprint citations in grants, and Chan Zuckerberg Initiative requiring preprint posting.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C16 provide well-cited historical background on preprint adoption in biology. Each claim is supported by appropriate citations to primary sources or reviews. This contextual information is accurate and helps frame the significance of bioRxiv's growth.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C111"
+    ],
+    "result": "The manuscript identifies open questions about preprints' relationship to citations (as found with arXiv), Twitter mentions and citations (Thelwall et al. 2013), and notes prior findings that only 17.8% of bioRxiv papers had open licenses (Himmelstein 2016b) and no correlation between Facebook likes and impact for bioRxiv preprints (Ringelhan et al. 2015). BioRxiv has compensated for low on-site comment rates by highlighting external sources.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C109, C111 appropriately cite prior work on preprint metrics and altmetrics. These claims frame open research questions and acknowledge limitations in current understanding. The citations are appropriate and the claims accurately represent the cited work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C7",
+      "C8"
+    ],
+    "result": "In September 2018, four leading biology journals published 85 full-length research articles in 30 days, while bioRxiv posted 85 preprints by September 3rd, illustrating the rapid pace of preprint posting relative to traditional publishing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C8 provide a striking comparison between traditional journal publishing and preprint posting rates. The specific numbers are documented and referenced to source data. This serves as an effective illustration of preprint velocity, though it's worth noting this compares four journals to an entire preprint server.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C98"
+    ],
+    "result": "An average preprint can receive hundreds of downloads in its first few months online, with bioRxiv preprints being downloaded more than one million times per month.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C98 summarizes download patterns for typical preprints. This is supported by the detailed temporal download data (C39-C45) showing median first-month downloads of 73, second month 46, and third month 27, which sum to approximately 146 downloads in three months. The 'hundreds' characterization is reasonable given the median and the distribution's right tail.",
+    "result_type": "MINOR"
+  }
+]

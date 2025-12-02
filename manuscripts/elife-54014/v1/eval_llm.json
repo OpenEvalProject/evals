@@ -1,0 +1,155 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Phasic arousal, indexed by rapid pupil dilations, is associated with reduced decision biases across species (humans and mice), decision types (perceptual and memory-based), and bias directions (conservative and liberal). In go/no-go auditory detection tasks, both mice and humans showed conservative biases that were significantly reduced during trials with large pupil responses. In yes/no tasks with manipulated signal probabilities, pupil responses predicted shifts toward neutral bias for both conservative (rare signal) and liberal (frequent signal) conditions. In a memory-based picture recognition task, subjects with the strongest overall biases (liberal or conservative) showed the strongest pupil-linked shifts toward neutral.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The claims are well-supported by converging evidence from multiple experimental paradigms (C3-C7, C22-C27, C30-C34). The data demonstrate consistent pupil-linked bias reduction across species, task types, and bias directions. The experimental designs appropriately control for motor confounds (C28-C29), and the effects are replicated across independent datasets with adequate sample sizes (N=5 mice, N=20-54 humans depending on task). Statistical analyses show significant effects with appropriate corrections.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Drift diffusion modeling reveals that pupil-linked arousal specifically affects drift bias (evidence accumulation bias) rather than other decision parameters. Individual pupil-linked changes in drift bias, but not starting point, strongly correlated with behavioral bias changes. Pupil responses predicted linear shifts in drift bias across all datasets but did not consistently affect starting point, drift rate, boundary separation, or non-decision time. Model simulations demonstrated that variations in drift bias can appear as apparent drift rate variability when not properly modeled, and model comparisons favored drift bias over starting point or urgency mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The modeling results (C35-C47) provide strong mechanistic support through multiple converging lines of evidence: correlational analyses (C35), systematic parameter variations (C36-C40), simulation studies (C41-C44), and formal model comparisons (C45-C47). The drift diffusion model fits are well-constrained and account for the data across all tasks. The simulation studies (C41-C44) provide important theoretical insight into how drift bias variations manifest as apparent noise. Model comparison metrics (BIC, DIC) consistently favor the drift bias account over alternatives.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "The pupil-linked bias reduction reflects phasic arousal rather than tonic (baseline) arousal. Pupil responses showed negligible to weak correlations with baseline pupil diameter, and the relationship between phasic arousal and bias was monotonic, contrasting with the non-monotonic relationship previously reported for baseline pupil diameter and bias in mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C50 effectively distinguish phasic from tonic arousal effects through multiple lines of evidence: comparison with prior work showing different functional relationships (C48), direct measurement of correlations between pupil response and baseline (C49), and absence of consistent baseline-bias relationships (C50). This addresses an important potential confound and strengthens the interpretation that the effects are specifically related to phasic arousal.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C28",
+      "C29"
+    ],
+    "result": "Pupil responses in go/no-go and yes/no tasks were correlated across participants for both choice types, indicating that pupil responses primarily reflect decision processing rather than motor preparation or execution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The correlation between pupil responses across task types (C28) provides evidence that the pupil signal is not primarily driven by motor factors, since the yes/no task balances motor responses across choices. However, the inference that this definitively establishes decision processing as the primary driver (C29) is somewhat strong given that other factors could also correlate across tasks. The evidence supports the claim but additional controls would strengthen it.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "Prior work established that rapid pupil dilations report evoked responses of arousal systems (including noradrenergic LC) during decisions and track suppression of conservative biases in perceptual evidence accumulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C1-C2, C16-C18) accurately summarize prior work by the authors (de Gee et al., 2017) and provide appropriate context for the current study. The citations are appropriate and the claims are consistent with the cited literature. These serve as important background for understanding the novelty of the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C19",
+      "C20",
+      "C21",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Background claims establish that arousal systems modulate cortical circuits, are recruited during decisions, and that pupil diameter tracks arousal across species. Prior work has shown various relationships between arousal/noradrenergic systems and decision-making, including effects on bias, exploration, and choice consistency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These background claims (C9-C21, C52-C63) are well-supported by appropriate citations to established literature. They provide necessary context for the study but do not represent novel findings. The citations appear accurate and comprehensive, covering key prior work on arousal systems, decision-making, and pupillometry across species.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C51"
+    ],
+    "result": "The overall conclusion that phasic arousal suppresses biases in evidence accumulation, generalizing across species and decision domains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This summary claim (C51) is well-supported by the comprehensive experimental and modeling results (C3-C8, C22-C47). It appropriately synthesizes the major findings without overstating the conclusions. The generalization claims are justified by the multiple experimental paradigms tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C64",
+      "C65"
+    ],
+    "result": "Phasic arousal affects evidence accumulation (suppressing biases) but not non-decision time, ruling out purely post-decisional accounts and establishing an important role in evidence accumulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C65 are supported by the modeling results showing selective effects on drift bias without effects on non-decision time (C39-C40). This effectively rules out a purely post-decisional motor account. However, the authors acknowledge that they cannot rule out effects on movement kinematics, which is an appropriate caveat.",
+    "result_type": "MAJOR"
+  }
+]

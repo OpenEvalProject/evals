@@ -1,0 +1,232 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C65",
+      "C73",
+      "C74"
+    ],
+    "result": "The authors developed a multiplexed DNA FISH Oligopaint library for C. elegans containing 170,594 primary probes with ~2 probes/kb coverage across all six chromosomes. The library uses a bioinformatics pipeline to identify 42 bp sequences with specific properties, and incorporates barcode sequences enabling targeting at chromosome, 3 Mb, and 500 kb scales.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C24 provide quantitative data on probe density and distribution (Table 1, Figure 1), while C3, C65, C73-C74 describe the library design and synthesis methods. The bioinformatics approach is properly cited (C65) and the probe distribution data shows consistent coverage with few gaps (C22). The library design is well-documented with specific technical details.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C25",
+      "C26"
+    ],
+    "result": "The authors developed a bridge oligo hybridization strategy that couples primary probes to fluorescently-labeled detection oligos, allowing flexible probe labeling without requiring synthesis of new labeled probes for each experiment. The design enables up to eight fluorophores per primary probe.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4 and C25 describe the bridge oligo strategy with supporting experimental validation throughout the manuscript. C26 provides the mathematical logic for achieving 8-fluorophore labeling per probe. The approach is demonstrated to work in multiple experimental contexts (Figures 2-5), confirming its flexibility and utility.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "The Oligopaint library demonstrates specificity by correctly labeling expected chromosomal structures in C. elegans germline cells. X chromosome FISH showed single bivalents in wild-type oocytes (58/58) and two univalents in 84% of him-8 mutant oocytes (51/61), consistent with the known pairing defect in him-8 mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C28 provide quantitative validation data with appropriate sample sizes (n=58-61). The him-8 mutant control (C29-C30) is well-established in the literature and provides strong evidence for probe specificity. The 84% penetrance in him-8 mutants is reasonable given biological variability. Figure 2 and Figure 2\u2014figure supplement 1 support these claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "The DNA FISH approach shows robust labeling efficiency across developmental stages and cell types, with 83% of larval animals, 97% of adults, and 50% of in utero embryos displaying FISH signal. Within successfully stained animals, 100% of randomly sampled somatic (50/50) and germline (50/50) nuclei showed positive signals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C36 provide quantitative efficiency data with adequate sample sizes (n=50-1303). The 50% efficiency for in utero embryos is acknowledged as a limitation, with an alternative protocol achieving 90% efficiency noted (C70). The within-animal efficiency of 100% (C35-C36) is impressive and well-documented. Figure 2\u2014figure supplement 2 provides visual support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C39",
+      "C40"
+    ],
+    "result": "C. elegans chromosomes occupy largely distinct territories within interphase nuclei, and these territories persist in post-mitotic somatic cells including intestinal, hypodermal, and neuronal cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C40 are supported by six-chromosome FISH data showing distinct colored regions in multiple cell types (Figure 3). The observation is consistent with established knowledge in other eukaryotes (C12). However, the authors appropriately note that the six-color strategy with overlapping fluorophores limits precise territorial boundary definition, recommending single-channel approaches for rigorous spatial analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C41",
+      "C42"
+    ],
+    "result": "The Oligopaint library successfully visualizes 3 Mb and 500 kb subregions of C. elegans chromosomes, with 100% of randomly sampled nuclei (50/50) in successfully stained animals showing all three fluorescent signals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C42 are supported by experimental data in Figure 4 showing nested visualization of whole chromosome, 3 Mb, and 500 kb regions. The quantification (50/50 nuclei positive) demonstrates robust performance. The visual data clearly shows the expected hierarchical organization of signals.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Chromosome territories become disorganized during aging in wild-type C. elegans, with 10-day-old animals showing ~50% increase in chromosome volume and increased territorial overlap compared to 1-day-old adults. This effect is linked to biological aging rather than chronological time, as long-lived daf-2 mutants do not show territorial disorganization at day 10.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C47 provide quantitative data with statistical analysis (Figure 5a-b, p<0.0005) and adequate sample sizes (n>50 nuclei from \u22655 animals). The daf-2 control experiment (C48-C49) is well-designed to distinguish aging from chronological time, though the inference in C49 could benefit from additional mechanistic validation. The use of intestinal cells is appropriate as they are post-mitotic and easily identifiable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "RNAi knockdown of mes-3, encoding a component of Polycomb Repressive Complex 2 (PRC2), causes loss of chromosome territories in adult hypodermal cells, with ~45% increase in chromosome volume and ~2-fold increase in territorial overlap. This suggests MES-3/PRC2 is required for maintaining chromosome territories.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C54-C55, C57 provide quantitative data with statistical support (Figure 5c-d, p<0.0005, n>50 nuclei). However, the result has significant limitations: (1) RNAi may have incomplete knockdown; (2) cell-type specificity is unexplained (Figure 5\u2014figure supplement 2 shows minimal effects in other cell types); (3) the causal inference (C56, C59) requires validation with genetic mutants; (4) only one gene from a small screen is reported, raising concerns about selective reporting. The authors appropriately acknowledge these limitations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C5",
+      "C37",
+      "C63"
+    ],
+    "result": "The developed Oligopaint library and hybridization protocol enable visualization of genome organization at multiple scales in all/most cells across all developmental stages in intact C. elegans animals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C37, C63 are supported by comprehensive experimental validation across multiple cell types (germline, somatic, embryonic) and developmental stages (embryo, larva, adult) shown in Figures 2-5. The efficiency data (C32-C36) and successful multi-scale visualization (C41-C42) provide strong support. This represents a significant technical advance over previous methods (C14, C61-C62).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "Background claims establishing the importance of genome organization, the utility of FISH and chromatin capture technologies, known features of genome architecture (TADs, compartments, chromosome territories, gene positioning), and C. elegans as a model system.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C6-C13 represent established scientific knowledge supported by appropriate citations to the literature. These provide necessary context for the study but are not novel findings. C13 appropriately describes the advantages of C. elegans as a model organism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "Background claims describing previous DNA FISH approaches in C. elegans and the development and applications of Oligopaint technology in other systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C19 are supported by appropriate citations and provide context for how the current work improves upon previous methods. These establish the rationale for developing the C. elegans Oligopaint library but are not novel findings of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Background claims about aging effects on chromatin structure, daf-2 function in longevity, and PRC2's role in chromatin architecture, providing context for the aging and mes-3 RNAi experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C44, C50-C53 are supported by appropriate literature citations and provide necessary background for interpreting the experimental results. These are established facts from prior work, not novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C64"
+    ],
+    "result": "Discussion claims about C. elegans as a model system, limitations of previous DNA FISH approaches, and future research possibilities enabled by the new technology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C62 accurately describe established knowledge and limitations of prior methods. C64 is appropriate speculation about future research directions enabled by the technology, clearly framed as possibilities rather than demonstrated results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C75"
+    ],
+    "result": "Methodological details and established biological facts about C. elegans development, including germline organization, chromosome behavior during meiosis, lifespan, and references to established protocols.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C72, C75 provide methodological context and established biological facts supported by appropriate citations. C70 describes an alternative protocol for improved embryo staining efficiency (90% vs 50%). These are supporting details rather than primary findings.",
+    "result_type": "MINOR"
+  }
+]

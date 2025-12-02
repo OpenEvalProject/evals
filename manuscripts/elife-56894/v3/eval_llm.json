@@ -1,0 +1,349 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C26",
+      "C27",
+      "C28",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C85"
+    ],
+    "result": "The model demonstrates coordinated, joint representation of position across multiple environments through bidirectional coupling between hippocampal and entorhinal attractor networks. The system exhibits persistent states where place cells and grid cells simultaneously represent the same spatial location in a given map, enables path integration through grid cell velocity integration that drives coordinated hippocampal updates, and provides error correction that eliminates incompatible drifts between grid cell modules.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C26-C28, C40-C46, and C85 collectively demonstrate the core functionality of the coupled model through extensive simulations (Figures 2-5). The model successfully produces coordinated persistent states across all tested initial conditions (C43), implements path integration with small errors using realistic velocities (C44-C45), and maintains coordination between grid cell modules through hippocampal coupling (C28, C47-C50). The evidence is primarily computational but is internally consistent and well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C51",
+      "C52",
+      "C86",
+      "C89",
+      "C90"
+    ],
+    "result": "The model accounts for experimentally observed variability in grid cell firing rates across firing fields through a mechanism involving multiple embedded spatial maps in hippocampal connectivity. The variability arises from place cell inputs that provide spatially aperiodic contributions from non-active maps, independent of sensory inputs, and increases with the number of embedded maps.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C33, C51-C52, and C89 demonstrate that the model reproduces grid cell firing rate variability through simulations (Figure 6). The mechanism is clearly explained (C33, C51) and quantified (C52), showing CVs increase with number of maps. Supporting evidence from rank correlation changes under depolarization (C90, C74) strengthens the hypothesis that place cell inputs contribute to variability. The model provides a novel mechanistic explanation for established experimental observations (C30-C31).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C92",
+      "C93",
+      "C96"
+    ],
+    "result": "The model reproduces artificial remapping of place cells under MEC depolarization but not hyperpolarization, as observed experimentally. Depolarization induces mixed states where hippocampal activity patterns exhibit overlap with multiple embedded spatial maps, while hyperpolarization has minimal effects. The model captures the heterogeneous place cell responses including field shifts, rate remapping, and cells maintaining baseline activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C38, C53-C72, and C92-C93 demonstrate comprehensive reproduction of experimental artificial remapping phenomenology (Kanter et al., 2017) through simulations (Figures 7-8). The asymmetric effects of depolarization vs. hyperpolarization are clearly shown (C53-C54, C72), the emergence of mixed states is well-documented (C55-C58, C61), and the mechanistic interpretation involving quenched noise amplification is supported by control experiments (C63-C66). Quantitative classification of place cell responses (C67-C69) matches experimental observations qualitatively (C70). The model provides a novel theoretical framework for understanding artificial remapping.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Bidirectional coupling between grid cells and place cells coordinates the positions represented in different grid cell modules, preventing catastrophic readout errors from incompatible drifts. Without coupling, modules drift independently; with coupling, they remain coordinated even under noisy conditions or incompatible velocity inputs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C50 are directly demonstrated through simulations in Figure 5b-c, showing clear differences between coupled and uncoupled networks. The quantification of mean square displacement between modules provides strong evidence for the coordination mechanism. This addresses a key theoretical challenge in grid cell coding (C29, C84) and is consistent with the model's architecture.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "The manuscript establishes the background knowledge that grid cell modules in MEC express stable low-dimensional activity manifolds across environments, while hippocampal place cells exhibit global remapping with distinct manifolds in different environments. Grid cells maintain their correlation structure and phase relationships across environments and under hippocampal inactivation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C6-C10, C19-C22 accurately summarize established experimental findings with appropriate citations. These are well-established facts in the field supported by multiple independent studies. The claims correctly distinguish between the stability of grid cell representations (C1, C20-C22) and the remapping of place cell representations (C2, C19) across environments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Prior theoretical and experimental work has explored feedforward architectures between grid cells and place cells, but experimental evidence shows that place fields can be maintained without grid cell inputs and that grid cells maintain their structure without hippocampal inputs. The MEC and hippocampus are reciprocally connected anatomically.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C25 accurately summarize prior work with appropriate citations. The experimental evidence cited (C14-C18) provides strong support for the limitations of purely feedforward models, motivating the bidirectional architecture explored in this manuscript. The anatomical connectivity claims (C23-C25) are well-established facts.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "The model exhibits quenched noise from multiple embedded maps, which prevents true steady states but allows highly persistent bump states when the noise is sufficiently weak. Drift rates scale inversely with network size, and sensory inputs can pin representations to prevent drift.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C78 describe theoretical properties of attractor networks with multiple embedded maps, supported by citations to prior theoretical work (C77-C78) and demonstrated in the model's behavior (Figure 3d shows small drifts). These are well-established theoretical concepts appropriately applied to the current model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "The hippocampal network model most closely represents CA3 due to its auto-associative features. The capacity of joint representation is limited by grid-to-place connections under independent remapping, consistent with recent theoretical analysis. Place fields are not solely determined by grid cell inputs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C82 provide appropriate caveats and interpretations of the model's scope. C79 correctly identifies CA3 as the most relevant hippocampal subregion based on functional properties. C80-C81 acknowledge capacity limitations with appropriate citations. C82 correctly notes that place field determination mechanisms remain incompletely understood, supported by experimental evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C29",
+      "C83",
+      "C84"
+    ],
+    "result": "Grid cell representations have high dynamic range enabling precise spatial coding over large ranges, but the distributed modular code requires precise coordination between modules to prevent catastrophic readout errors from incompatible drifts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29, C83-C84 accurately summarize established theoretical understanding of grid cell coding with appropriate citations to prior work. These claims provide important motivation for the coordination mechanism explored in the model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C87",
+      "C88"
+    ],
+    "result": "Alternative mechanisms for grid cell firing rate variability have been proposed, including inhomogeneities in place-to-grid connectivity unrelated to multiple maps, sensory inputs, or inputs from different modules.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C88 accurately cite alternative theoretical proposals for grid cell variability with appropriate references. These provide important context for the model's novel mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C91"
+    ],
+    "result": "Artificial remapping occurs under manipulations where sensory inputs are kept fixed, distinguishing it from partial remapping and indicating it must arise from intrinsic MEC-hippocampal network mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C91 correctly distinguishes artificial remapping from partial remapping based on the experimental protocol (Kanter et al., 2017). This is an important conceptual distinction that motivates the model's focus on intrinsic network dynamics.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C94"
+    ],
+    "result": "The model did not include silent cells in each spatial map, which explains why cells that acquire firing fields after depolarization were not observed, though this could be straightforwardly added.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C94 acknowledges a limitation of the model with appropriate citation to how it could be addressed (Monasson and Rosay, 2013). This is a minor limitation that does not affect the main conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C95",
+      "C97"
+    ],
+    "result": "The model predicts that artificial remapping occurs at specific spatial locations determined by the relationship between grid phases and place cell firing locations across maps, likely where grid phases align under coordinates of another map and where synaptic input to place cells is elevated before depolarization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C95 and C97 make specific predictions about the spatial structure of artificial remapping, but these predictions are not directly tested or quantitatively validated in the presented results. While the predictions follow logically from the model's mechanism, they remain speculative without additional analysis or experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C98",
+      "C99"
+    ],
+    "result": "The model predicts that during idiothetic path integration, hippocampal position representation lags behind MEC representation due to synaptic delays, but this lag may reverse when sensory inputs projecting mainly to hippocampus are highly informative.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C98 is directly supported by simulation results (Figure 4d) showing ~100ms lag. Claim C99 is a logical prediction based on the model's architecture, though it remains untested. The first prediction is well-supported; the second is speculative but reasonable.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C100",
+      "C101"
+    ],
+    "result": "The model predicts that under MEC lesions without sensory inputs, hippocampal bump activity patterns persist at the population level but lose their association with position, severely disrupting single-cell spatial fields.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C100-C101 make predictions about MEC lesion effects that follow logically from the model's architecture (hippocampus can sustain bumps independently but needs MEC for path integration), but these predictions are not directly tested in simulations. The predictions are plausible but remain speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "The model proposes experimental tests of grid cell module coordination by decoding multiple modules under poor sensory conditions. Alternative hippocampus-independent coordination mechanisms have been proposed, and it remains unknown whether modules stay coordinated under hippocampal inactivation. The model predicts reduced grid cell firing rate variability under hippocampal inactivation and that variability independence from sensory inputs could be tested in poor sensory conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C102-C106 propose experimental tests and acknowledge gaps in current knowledge (C104). While the proposed experiments are reasonable, they remain untested predictions. The acknowledgment of alternative mechanisms (C103) is appropriate, but the predictions about variability (C105-C106) are speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "The model predicts artificial remapping arises in CA3 due to auto-associative dynamics, with mixed states observable in CA3 and only a subset of place fields shifting. Artificial remapping is not expected in dentate gyrus. CA1 shows more correlated activity across environments than CA3, so partial remapping in CA1 doesn't necessarily imply partial remapping in CA3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C107-C112 make predictions about hippocampal subregion-specific effects. While C108-C109 correctly cite established differences between CA1 and CA3, the predictions about where artificial remapping should occur (C110-C112) are logical inferences from the model but remain untested. The model was not explicitly designed to distinguish between hippocampal subregions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "The model proposes testing whether artificial remapping involves mixing of activity patterns from distinct environments by raising animals in limited environments, then applying MEC depolarization and looking for overlap with previously characterized spatial maps. If successful, this could provide direct evidence for mixed states in auto-associative networks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C113-C115 propose an experimental test of the model's core prediction about mixed states. While the proposed experiment is well-designed and could provide strong evidence, it remains a speculative proposal. The potential significance (C115) is appropriately qualified with 'if successful' and includes appropriate citations to theoretical work on mixed states.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C117"
+    ],
+    "result": "The model uses one-dimensional environments spanning 192 cm with periodic boundary conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C117 accurately describes a basic architectural feature of the model as stated in the Methods section. This is a straightforward methodological detail.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C39"
+    ],
+    "result": "Artificial remapping may offer the first experimental observation of mixed states in a well-characterized neural network.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C39 is speculative about the significance of artificial remapping observations. While the model provides a compelling interpretation of artificial remapping as mixed states, whether this represents the 'first experimental observation' depends on interpretation and acceptance of the model's framework. The claim is appropriately qualified with 'may offer' but remains uncertain.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C73",
+      "C74"
+    ],
+    "result": "When a single spatial map is embedded in connectivity, rank correlation of grid cell firing rates across fields equals unity. With multiple maps embedded, rank order correlation weakens, consistent with experimental observations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C74 are directly demonstrated in Figure 8\u2014figure supplement 2, showing perfect correlation with one map and weakening with multiple maps. This is consistent with experimental observations (Kanter et al., 2017) and provides additional validation of the model's mechanism for grid cell variability.",
+    "result_type": "MINOR"
+  }
+]

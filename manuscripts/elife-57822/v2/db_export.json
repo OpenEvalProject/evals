@@ -1,0 +1,1536 @@
+{
+  "submission": {
+    "id": "8a67999b-621a-4903-899f-d7f952563d42",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T17:20:49.271426Z",
+    "updated_at": "2025-12-02T17:20:49.271426Z"
+  },
+  "content": [
+    {
+      "id": "eef1df68-db07-427c-a66a-be8cef78260b",
+      "submission_id": "8a67999b-621a-4903-899f-d7f952563d42",
+      "content_type": "manuscript",
+      "content_text": "# TANGO1 membrane helices create a lipid diffusion barrier at curved membranes\n\n## Authors\n\n- Ishier Raote<sup>1</sup> ([ORCID: 0000-0002-5898-4896](https://orcid.org/0000-0002-5898-4896)) \u2020\n- Andreas M Ernst<sup>2</sup>\n- Felix Campelo<sup>3</sup> ([ORCID: 0000-0002-0786-9548](https://orcid.org/0000-0002-0786-9548))\n- James E Rothman<sup>2</sup>\n- Frederic Pincet<sup>2</sup> ([ORCID: 0000-0002-4243-2157](https://orcid.org/0000-0002-4243-2157)) \u2020\n- Vivek Malhotra<sup>1</sup> ([ORCID: 0000-0001-6198-7943](https://orcid.org/0000-0001-6198-7943)) \u2020\n\n### Affiliations\n\n1. Centre for Genomic Regulation, The Barcelona Institute of Science and Technology Barcelona Spain\n2. Department of Cell Biology, Yale School of Medicine New Haven United States\n3. ICFO-Institut de Ciencies Fotoniques, The Barcelona Institute of Science and Technology Castelldefels Spain\n4. Laboratoire de Physique de l\u2019Ecole normale sup\u00e9rieure, ENS, Universit\u00e9 PSL, CNRS, Sorbonne Universit\u00e9, Universit\u00e9 de Paris Paris France\n5. Universitat Pompeu Fabra Barcelona Spain\n6. Instituci\u00f3 Catalana de Recerca i Estudis Avan\u00e7ats Barcelona Spain\n\n\u2020 Corresponding author\n\n## Abstract\n\nWe have previously shown TANGO1 organises membranes at the interface of the endoplasmic reticulum (ER) and ERGIC/Golgi (Raote et al., 2018). TANGO1 corrals retrograde membranes at ER exit sites to create an export conduit. Here the retrograde membrane is, in itself, an anterograde carrier. This mode of forward transport necessitates a mechanism to prevent membrane mixing between ER and the retrograde membrane. TANGO1 has an unusual membrane helix organisation, composed of one membrane-spanning helix (TM) and another that penetrates the inner leaflet (IM). We have reconstituted these membrane helices in model membranes and shown that TM and IM together reduce the flow of lipids at a region of defined shape. We have also shown that the helices align TANGO1 around an ER exit site. We suggest this is a mechanism to prevent membrane mixing during TANGO1-mediated transfer of bulky secretory cargos from the ER to the ERGIC/Golgi via a tunnel.\n\n## Introduction\n\nIntracellular membrane trafficking is key for the homeostatic regulation of compositional gradients of proteins and lipids, required to maintain organelle identity along the secretory pathway (von Blume and Hausser, 2019; Guo et al., 2014; Holthuis and Menon, 2014; van Meer and Lisman, 2002; van Meer et al., 2008). These gradients are established by the formation and transport of highly curved transport intermediaries; a key question is whether (and how) membrane curvature plays a major role in lipid and protein sorting (Campelo and Malhotra, 2012). While it is clear that lipid sorting occurs during the biogenesis of transport intermediates, current evidence suggests that curvature-mediated lipid sorting is not based on curvature alone, but requires additional protein-lipid interactions (Br\u00fcgger et al., 2000; Callan-Jones et al., 2011; Gruenberg, 2003; Klemm et al., 2009; Roux et al., 2005; Sorre et al., 2009; Tian and Baumgart, 2009).\n\nProtein and lipid sorting during export from the endoplasmic reticulum (ER) utilises ER export machinery including the multisubunit COPII complex, which controls the formation of cargo-containing transport intermediates. In vitro preparations of COPII vesicles show a differential lipidomic profile from the ER, including an enrichment in lysolipids such as lysophosphatidylinositol (LPI) and a decrease in phosphatidylserine (Melero et al., 2018). COPII vesicles form at ER exit sites (ERES), which are semi-stable specialized subdomains of the ER with structures of a pleomorphic organization of diverse curvatures, including cup-like shapes and beaded tubes (Bannykh et al., 1996; Hughes et al., 2009). How ERES morphology is established and maintained, and how these structures contribute to cargo export and protein/lipid sorting between the ER and subsequent secretory compartments, are still open questions.\n\nA unique challenge during ERES-mediated lipid sorting arises during the export of bulky and complex cargoes such as procollagens from the ER. During procollagen export, the ER and the post-ER compartment (ERGIC/Golgi) are transiently connected, yet there is a controlled transfer of proteins and lipids between the two compartments. Procollagens in the ER fold and trimerize into rigid, rod-like elements that are considered too large for conventional COPII coated vesicle-mediated transport (Burgeson et al., 1985; Gorur et al., 2017; Kadler, 2017; Kadler et al., 2007; McCaughey and Stephens, 2019; Omari et al., 2018). Due to large cargo size, it has been hypothesized that large COPII-coated carriers mediate procollagen export from the ER to the Golgi. Outsize COPII carriers were reported in cells overexpressing KLHL12, which generates large procollagen-containing structures that co-label with Sec31A (Jin et al., 2012; Yuan et al., 2017; Yuan et al., 2018). A subsequent report suggested that these structures are destined for degradation and not bona fide transport carriers (Omari et al., 2018). Alternatively, it has been proposed that coordinated assembly of inner and outer COPII coats can mediate the biogenesis of vesicles ranging from small spheres to large tubular carriers, commensurate with the size of bulky cargoes (Hutchings and Zanetti, 2019; Hutchings et al., 2018; Stagg et al., 2008; Zanetti et al., 2013). However, ER-to-Golgi procollagen carriers appear pleomorphic and do not seem to contain any detectable COPII (Mironov et al., 2003).\n\nMore recent evidence suggests an entirely different mechanism is at play. Procollagen export from the ER requires the assembly of a functional machine centred on the transmembrane ERES-resident protein TANGO1 (Ishikawa et al., 2016; Lekszas et al., 2020; Saito et al., 2009; Wilson et al., 2011). As a master regulator of ERES assembly, TANGO1 acts as a filamentous linactant to recruit, constrain, and scaffold ERES machinery and post-ER (ERGIC) membranes for procollagen export (Ma and Goldberg, 2016; Maeda et al., 2017; Nogueira et al., 2014; Raote et al., 2017; Raote et al., 2018; Raote et al., 2019; Saito and Maeda, 2019; Saito et al., 2009; Santos et al., 2015).\n\nWe have proposed that a procollagen carrier is not formed by sculpting a vesicle from ER membrane as in the conventional model of COPII coated vesicle formation. Instead, TANGO1 utilises a retrograde membrane tether complex (NRZ complex) to tether post-ER membranes (ERGIC/Golgi), which fuse at the ERES to create an export route for procollagens. The membrane fusion creates a pore or tunnel between the ER and the ERGIC which is stabilised and constrains by TANGO1, as cargo is transferred for anterograde transport. Thus retrograde membrane (the ERGIC) is the anterograde carrier. During the process of cargo transfer, we propose the ERGIC and the ER are maintained as two distinct compartments, but how are their membrane lipids and proteins prevented from mixing completely?\n\nUsing super-resolution (STED) microscopy to visualise TANGO1, its interactors, and associated machinery we have described its assembly into a filament-like ring to organise the early secretory pathway (Liu et al., 2017; Raote and Malhotra, 2019; Raote et al., 2017; Raote et al., 2018; Raote et al., 2019; Reynolds et al., 2019). By assembling into a ring around an ERES, TANGO1 corrals COPII machinery and generates a semi-stable sub-domain across multiple compartments. Could TANGO1 also participate in preventing lipid mixing between the ERGIC and the ER? A ring of TANGO1 is ideally spatially organised to partially separate membrane inside the ring from the rest of the ER. Retrograde ERGIC membranes fuse within the ring, serving as an anterograde conduit for collagen. In other words, how are ERGIC membranes effectively partitioned from the rest of the ER, by a diffusion barrier created around the site of REGIC retrograde fusion at an ERES?\n\nTANGO1 is a single-pass transmembrane protein with two adjacent hydrophobic helices; amino acid residues 1177\u20131197 of human TANGO1 are predicted to form a transmembrane helix, while residues 1145\u20131165 form a helix that penetrates the lumenal leaflet of the ER membrane (Saito et al., 2009). Together, these helices could mediate membrane partitioning. We have reconstituted the two hydrophobic helices in model membrane and show that they create a diffusion barrier for lipids, at a region of defined membrane curvature and shape. The diffusion barrier should occur at the base of the tube, paralleling the neck of a growing transport carrier/tunnel at an ERES. Finally, using super resolution (STED) microscopy, we show that the functions mediated by the helices are incorporated into TANGO1 assembly into a ring around an ERES. We propose that such a barrier could sub-compartmentalise ER membrane, allowing retrograde ERGIC/Golgi membrane to be constrained during cargo transfer out of the ER, while maintaining the compositional identities of the individual compartments.\n\n## Results and discussion\n\n### TANGO1 membrane helices partition lipids\n\nIn order to investigate whether the membrane-associated helices of TANGO1 can contribute to the organisation of the ER-ERES boundary, we employed recombinant minimal transmembrane proteins that were reconstituted in model membranes. In order to mimic the marked changes in curvature that are encountered at this boundary, we employed micro-manipulation of giant unilamellar vesicles (GUV). Here, a tube with a diameter of 50\u2013200 nm is pulled from the surface of the GUV, providing an ideal proxy to characterise membrane reorganisation and the role of membrane curvature and shape during transport intermediate biogenesis at the ER.\n\nWe purified the intramembrane (IM) and transmembrane (TM) helices, tagged with monomeric superfolder enhanced GFP (IM-TM_GFP). As an experimental control, we used the TM_GFP alone. Proteins were expressed and purified (Figure 1A) using EXPI293F cells, as before (Ernst et al., 2018). Proteo-GUVs were generated using an osmotic shock as described before (Motta et al., 2015), with a lipid mixture of POPC:DSPE-PEG-biot:DOPE-Atto647N; 95: 5: 0.1. Atto647N was used to visualize lipids in the GUV membrane.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/57822/elife-57822-fig1-v2.jpg)\n\n**Figure 1.:** (A) The two constructs used in this study. Schematics and Coomassie gels of the purified proteins with either both hydrophobic helices (Intramembrane IM, and transmembrane TM) tagged with monomeric superfolder EGFP (IM-TM_GFP left), or the transmembrane alone with the same EGFP tag (TM_GFP right). (B) The proteins (green) were reconstituted into GUVs and a second pipette with a biotin-tagged bead was used to pull a tube from the surface of the GUV. Scale bar 25 \u03bcm.\n\nTo confirm that similar levels of protein were incorporated into GUVs in the two conditions tested, we compared the intensities of IM-TM and TM in the GUVs and found that they are similar under the same conditions of microscope objective, laser power and gain: 92\u00a0\u00b1\u00a023 a.u. for IM-TM and 106\u00a0\u00b1\u00a038 a.u. for TM respectively. The lipid intensities are also the same, 191\u00a0\u00b1\u00a061 a.u. and 178\u00a0\u00b1\u00a037 a.u. for IM-TM and TM respectively. All values are mean\u00a0\u00b1\u00a0standard deviation.\n\nThese fluorescence intensities can be used to arrive at an approximation of the ratio of protein to lipids. Under our conditions, we estimate 1 IM-TM protein per 18,000 lipids, that\u00a0is a typical inter-protein distance of 80 nm (see Materials\u00a0and\u00a0methods section for a more detailed description of this quantification).\n\nA micropipette was used to grab the GUV, and a streptavidin-coated silica bead was brought in contact with the GUV for a few seconds to form streptavidin-biotin bonds. Separation of the bead from the GUV led to a\u00a0~\u00a0100 \u00b5m long membrane tube, thereby generating a site of saddle-like curvature at the junction of tube and the flat GUV membrane (Figure 1B). The aspiration pressure in the GUV micropipette was varied between 5 Pa and 100 Pa, which in our geometry corresponds to tube diameters between 200 nm and 50 nm. We did not observe any dependency in our experiments on the aspiration pressure; hence this is not discussed further.\n\nTo observe lipid diffusion across the region of saddle-like curvature between the tube and the GUV, we photobleached Atto647N in the tube membrane and quantified its recovery after photobleaching. Fluorescence recovery in the tube was due to the diffusion of labelled lipids from the GUV into the tube. This experiment was carried out in GUVs under three conditions: with no protein (no protein), with TM_GFP (TM), and with IM-TM_GFP (IM-TM) as depicted schematically in Figure 2A. Images of Atto647N in the tube were acquired before bleaching (prebleach), immediately after the photobleach (0 min) and six minutes later (6 min) (Figure 2B). The recovery of fluorescence was plotted six minutes after photobleaching (Figure 2C). This single time point was chosen such that fluorescence recovery in the tube had plateaued (see Materials\u00a0and\u00a0methods section for details). Fluorescence recovered to 60 \u00b1 6% (mean\u00a0\u00b1s.d.) of the prebleach intensity in tubes from GUVs with no protein. Similarly, in tubes pulled from GUVs with the transmembrane helix alone (TM), fluorescence recovered to 56 \u00b1 12%. However, the two helices together (IM-TM), considerably inhibited fluorescence recovery. Now, the recovery was only 35 \u00b1 5% (Figure 2C), showing that TANGO1 membrane helices together inhibited the exchange of lipids between the tube and the rest of the GUV.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/57822/elife-57822-fig2-v2.jpg)\n\n**Figure 2.:** (A) Schematic of the three conditions (no protein, TM, IM-TM) with protein reconstitution into a GUV showing a tube pulled from the GUV; (B) Atto647N-labelled lipids visualised in the pulled tube in all three conditions, before bleaching (prebleach), then immediately after bleaching (0 min) and six minutes later (6 min). (C) Box plot quantification of the fluorescence recovery after 6 min; (D) Frequency histogram showing the extent of fluorescence recovery in tubes pulled from GUVs with no protein or TM pooled (yellow) or GUVs with TM_IM (blue). Most trials with low recovery rates were those where tubes were pulled from GUVs with IM-TM (blue line vs green and red lines). ns \u2013 not significant or p<0.02 by ANOVA.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/57822/elife-57822-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A)\u00a0Schematic of the experiment. A bottom pole of a micromanipulated GUV is placed in the focal plane of the confocal microscope. The fluorescence in a disk-shaped region of interest is monitored before bleaching and during the recovery phase. The three pictures show the pole of the GUV delineated by the red circle, the region of interest delineated by the white circle (here, the diameter is 5 \u00b5m) before bleach, right after bleach and after recovery from left to right respectively. The graph shows the raw fluorescence recovery in the region of interest (blue points), the three data-point rolling average (orange) and the fit of the rolling average using the equation indicated in the Materials\u00a0and\u00a0methods section. (B) The square of the diameter of the region of interest is plotted vs. the raw values of \u03c4 (multiplied by a factor of 16), from the fit of 6 different FRAP experiments (three experiments performed twice on two different days). The slope is equal to the diffusion coefficient, D, here 0.69 \u00b5m\u00b2/s. At the bottom, the extreme values of D obtained from the data point (red lines) are indicated. Hence, D\u00a0=\u00a00.7\u00a0\u00b1\u00a00.3 \u00b5m\u00b2/s.\n\nOur observations will probably under-represent the magnitude of the effect; many trials showed no effect due to several confounds including, that proteins were disrupted by a movement of the membranes, drift of the pipette, slight variation of pressure in the pipette, convective flow in the buffer, etc. This is made clear in an alternate representation of the data, shown in a frequency histogram of all the trials together (Figure 2D). The two treatments, no protein and TM, are grouped as control, and compared with the trials with \u2018IM-TM\u2019. Results from the trials with IM-TM (blue bars) appear to divide into two peaks, one with a lower recovery rate and a second peak that looks like control trials. Most trials with low recovery rates were those observed in tubes pulled from GUVs with IM-TM. There were almost no trials in control conditions (either no protein, or TM alone) with slowed recovery. We expect that those trials that showed no effect might have been affected by one or more of the confounds described above.\n\nTo make sure the low recovery in the tube is not due to a global reduced fluidity of the membrane of GUV with IM-TM, we performed fluorescence recovery after photobleaching (FRAP) experiments on the EGFP-labeled protein in the GUV (Figure 2\u2014figure supplement 1A). We found a diffusion coefficient (0.7\u00a0\u00b1\u00a00.3 \u00b5m\u00b2/s), consistent with a protein that is monomeric or in the form of small oligomers (Figure 2\u2014figure supplement 1B). These data show that the membrane (protein and lipid) is fully fluid without hindered diffusion, confirming that the low recovery in the tube is due to reduced crossing at the junction between the GUV and the tube.\n\nIn treatments where lipid flux between the GUV and the tube is slowed or blocked, we expect a similar or even more pronounced behavior for transmembrane proteins. To test this hypothesis, we attempted to use the same photobleaching and recovery assay to estimate the flux of GFP-associated fluorescence between the GUV and the tube. Unfortunately, we were unable to accurately quantify the GFP-associated fluorescence in the tube, as the protein levels in the tube are too low to be clearly distinguished from the background and are rapidly bleached during imaging.\n\nSuch a diffusion barrier could most likely form if the membrane helices are concentrated and retained at the base of the pulled tube. We were unable to test this prediction and visualise an immobile pool of protein at the base of the tube under our experimental conditions, as the diameter of the tube is 50\u2013200 nm and a stable pool of GFP fluorescence is indistinguishable from the fluorescence in the rest of the GUV, even after photobleaching the bulk of the GUV and attempting to visualise GFP signal retained at the base of the tube. Visualising such a cluster of a few molecules might be possible using total internal reflection (TIRF) microscopy. Our procedure does not permit this type of single-molecule measurements; we used a confocal microscope with a dry objective resulting in a relatively high background from the surrounding membrane. Additionally the dyes used are neither bright nor photostable enough for such analyses.\n\nThese results showed that the two TANGO1 helices were sufficient to partially restrict lipid exchange between the tube and the rest of the GUV. What role do the two helices play in how TANGO1 interacts with the ER membrane?\n\n### The intramembrane helix is not required to target TANGO1 to ERES\n\nProteins that insert into the lipid bilayer can bend membranes by changing the local spontaneous curvature of the monolayer or, by being retained at a location, they can stabilise a specific shape of membrane (Kozlov et al., 2014). We envisage that TANGO1 helices together are retained at, and/or stabilise, the saddle-shape membrane at the junction of the tube and the GUV, as at the junction of the ERES and a transport intermediate. Thus, we propose that the pair of helices act as a membrane shape-sensing module.\n\nWhat could TANGO1 use this shape sensor for, in vivo? A first possibility we could test is that it promotes the correct localisation of TANGO1 in the ER. The ability to detect defined membrane shapes and curvatures could be utilised by TANGO1 to localise to the site of defined shape at an ERES, particularly the junction of the ER and an export intermediate. We have previously shown that TANGO1 is recruited to ERES via an interaction between its C-terminal proline rich domain (PRD) and ERES proteins Sec23A and Sec16A. Perhaps the membrane shape-sensitivity of TANGO1 would play an additional role in its localisation as well. To test the role of the putative shape sensor in targeting TANGO1 to an ERES, we deleted the IM helix (amino acids 1145\u20131165, TANGO1\u0394IM) or the TM (amino acids 1177\u20131197, TANGO1\u0394TM) from full length TANGO1 (schematic representation is shown in Figure 3A) and assayed for the ability of the resulting proteins to localise to ERES. We transfected these constructs in HeLa cells from which endogenous TANGO1 has been deleted using CRISPR/Cas9 methodology (named 2H5 cells), as described before (Raote et al., 2018; Santos et al., 2015), and observed their pattern of expression. Deletion of the IM helix had no discernible effect on the ability of TANGO1 (Figure 3B, green) to localise to ERES as visualised by its localisation to puncta of the ERES marker Sec16A (Figure 3B, red).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/57822/elife-57822-fig3-v2.jpg)\n\n**Figure 3.:** (A) Schematic of TANGO1 constructs used in this study, showing the sequence of the transmembrane and intramembrane helices. (B) The three HA-epitope tagged constructs were expressed in 2H5 cells, which were then imaged for HA and Sec16A. Scale bar: 20\u03bcm, Inset: 2\u03bcm. (C) Plot of the Manders\u2019 colocalization coefficients of the extent of overlap of HA (TANGO1 constructs) with Sec16A.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/57822/elife-57822-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) TANGO1 or TANGO1\u0394IM (green) form distinct puncta at procollagen VII (red) accumulations in the ER (ER marker calreticulin in white). TANGO1 lacking a transmembrane domain (TANGO1\u0394TM) does not form ERES puncta at procollagen VII accumulations; instead it uniformly coats the collagen. Arrowheads indicate representative features in each channel. Scale bar: 20 \u03bcm, Inset: 2 \u03bcm. (B) Plot of the Manders\u2019 colocalization coefficients of the extent of overlap of HA (TANGO1 constructs) with procollagen VII. ns: not significant, p<0.02 by Student\u2019s t test.\n\nDeletion of the TM helix had a more substantive effect and resulted in a loss of TANGO1 localisation to ERES (Figure 3A,B, quantified in 3C). We have previously shown that when the TM in TANGO1 is deleted, the IM changes its topology and becomes a transmembrane. Deleting both hydrophobic helices leads to a soluble protein in the ER lumen (Saito et al., 2009).\n\nAs a control, we confirmed that deleting either helix had no effect on targeting TANGO1 to accumulations of procollagen VII in the ER (Figure 3\u2014figure supplement 1). Both TANGO1 and TANGO1\u0394IM were recruited as small, discrete puncta, which were apposed to collagen accumulations in the ER. The TANGO1\u0394TM entirely overlapped with procollagen VII accumulations.\n\nTogether, these data reveal that membrane curvature/shape sensitivity in TANGO1 membrane helices is not the dominant ERES-targeting device, instead the PRD is more important to target TANGO1 to its cellular location at an ERES. If the membrane shape sensor is not to target TANGO1 to ERES or collagen, what role does it play?\n\n### TANGO1 membrane helices confer direction to TANGO1 molecules in a ring\n\nTANGO1 and procollagen VII were co-expressed in HeLa cells from which TANGO1 has been knocked out using the CRISPR/Cas9 system (2H5 cells). As before, transfected cells were fixed and processed for super-resolution (STED) imaging and TANGO1 was imaged at accumulations of procollagen in the ER. TANGO1 can be visualised assembled into rings at ERES (Raote et al., 2017; Raote et al., 2018). TANGO1-HA was visualised with two different antibodies raised against two distinct epitopes in the full-length protein. One epitope is in the ER lumen (corresponding to amino acids 472\u2013525 of TANGO1), while the other is a cytoplasmic C-terminal HA-epitope (for schematic, Figure 4A). Under these conditions there was a clear separation of the signal from antibodies directed against the two different epitopes and we could identify two distinct configurations of the ring of TANGO1. Either the C terminus coalesced into a single spot within a ring formed by the lumenal antibody, or both could be visualised as concentric/colocalized rings (Figure 4A red vs. green respectively).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/57822/elife-57822-fig4-v2.jpg)\n\n**Figure 4.:** Two different epitopes on TANGO1 are visualised concomitantly.\u00a0The ER-lumenal epitope in green, the c-terminal HA epitope in red (A) TANGO1, (B) TANGO1\u0394IM. (C) Quantification of the number of rings observed in each configuration. Regions with diagonal bars refer to rings with HA signal (red) contained within the lumenal signal (green), while the dotted region refers to rings with at least some HA signal (red) contained outside, but apposed to, the lumenal signal (green). (D) Schematic model of the different configurations of TANGO1 molecules in a ring.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/57822/elife-57822-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) TANGO1\u00a0Lumenal epitope (green), when visualised as a ring could have the C-terminal HA epitope (red) randomly oriented with respect to the ring, or encircled entirely within the ring. (B) Quantification of the number of rings observed in each configuration. Regions with diagonal bars refer to rings with HA signal (red) contained entirely within the lumenal signal (green), while the dotted region refers to rings with at least some HA signal (red) contained outside, but apposed to, the lumenal signal (green).\n\nWe propose that these distinct sets of images represented discrete configurations of TANGO1 during the formation of a carrier at an ERES. Initially, the C termini of TANGO1 lie within the ring, overlying the site of the formation of a carrier. As the carrier grows, the C termini are gradually pushed apart (for a schematic, Figure 4D).\n\nWe used STED microscopy to monitor the organisation of TANGO1 into rings by imaging samples stained for both the TANGO1 and HA epitopes. Qualitatively, we observed that abrogating the intramembrane helix reduced the frequency with which we observed rings, but this observation could not be quantified given the subjective nature of the selection of fields to image. Interestingly, in several of the rings that did form, the C termini (HA epitope) and lumenal portions of TANGO1 were now misaligned (Figure 4B). Now, the C termini were often randomly oriented with respect to the ring formed by the lumenal epitope.\n\nAlternatively, we mutated two hydrophobic residues in the IM helix to charged residues (phenylalanine 1152 and 1154 to arginine \u2013 TANGO1-FMF-RMR), such that it would no longer form a hydrophobic helix (Figure 4\u2014figure supplement 1). Here too, many rings of TANGO1 showed altered alignment of the two epitopes.\n\nIn such a ring, a nascent bud will be encircled by the ring and serve to recruit and stabilise a membrane-shape-sensitive TANGO1 to the site. In other words, ring formation could create a feedback loop through orientation/shape sensing to further reinforce rings.\n\nRegulating lipid sorting and trafficking is key in organelle homoeostasis, to control all membrane traffic, and spatiotemporal modulation of membrane curvature is essential in this control. We showed that the transmembrane organisation of TANGO1 is sufficient to act as a diffusion barrier for membrane lipids. In doing so, our data suggest that TANGO1 is concentrated at the neck of a budding membrane and can act as a fence, constraining the flow of lipids.\n\nWe have proposed that cargo transport through the secretory pathway can be mediated by transient tunnels or pores between successive compartments (Raote and Malhotra, 2019). We have shown that retrograde fusion of ERGIC membrane to the ER could create a tunnel between the two compartments for procollagen export (Nogueira et al., 2014). How are two compartments, joined by a transient tunnel, kept biochemically distinct? How do COP coats, conventional cargo receptors, cargo proteins, and TANGO1 function as gatekeepers between the ER and the ERGIC? Lipids such as PI4P are required at the ERGIC-ERES interface to assist in the assembly of COPII\u2010coated vesicles at ERES and hence traffic from the ER (Blumental-Perry et al., 2006; Farhan et al., 2008). Yet, if lipids like PI4P are largely restricted to the ERGIC/Golgi, how are they prevented from flowing from the ERGIC/Golgi into the bulk ER membrane?\n\nThe lipid flux through the partial barrier between the GUV and the tube is proportional to the effective perimeter of the saddle. From the recovery rates observed in Figure 2, then 50\u201375% of the saddle is blocked by the membrane helices.\n\nTo what extent might these numbers recapitulate events at an ERES? There are\u00a0~172,000 molecules of TANGO1 and 250\u2013500 exit sites per cell or 350\u2013700 TANGO1 molecules per exit site, surrounding transport intermediates (Hammond and Glick, 2000; Itzhak et al., 2016). Further reconstitution and modeling will be informative in delineating how this number of proteins generates the perimeter block. In vivo, there will be further effects from other associated ERES proteins including the TANGO1 family protein cTAGE5 (Saito et al., 2011).\n\nOur data presented here suggest that by assembling into a ring at an ERES, TANGO1 can act to reduce lipid flow at the boundary between the two compartments, delaying lipid and most likely transmembrane protein mixing between them.\n\nWe envisage that the recruitment of TANGO1 to membrane regions of specific shape and curvature will make for greater efficiency in generating a bud at an ERES. Neighbouring TANGO1 molecules in the ER membrane will align along curved membrane - found at an ERES. This process, whereby a TANGO1 fence limiting the coat polymerisation zone, could be homologous to the roles played by proteins which contribute to the initiation of clathrin-mediated endocytosis FCHO1/2 and EPS15/EPSR (Avinoam et al., 2015; Ma et al., 2016). Hundreds of TANGO1 molecules, at each site, will have an additive or even synergistic effect in stabilising the bud. As the site of budding is defined, the increased membrane curvature will promote the recruitment and localisation of curvature-sensitive components including Sar1 and COPII coat proteins. These proteins will serve to reinforce the curvature stabilisation, in effect setting up a positive feedback loop, where exit site machinery and TANGO1 mutually recruit and constrain each other through their membrane sculpting capabilities. Aligned TANGO1 molecules will be constrained into a configuration in which it is more likely for them to participate in lateral interactions with each other, promoting their assembly into a filament, further reinforcing the organisation of TANGO1 and its interactors at the site.\n\nThese reinforcing activities are evident from our data, showing that only half of the rings of TANGO1\u0394IM show detectable signal outside the ring from the C-terminal epitope (Figure 4). Each ring is likely comprised of hundreds, of TANGO1\u0394IM molecules. For signal from the two different epitopes to appear normal, most molecules must be constrained in the correct orientation, probably by the combined effects of other proteins at the site including COPII components and other TANGO1 family proteins.\n\nIt is possible that the recruitment/stabilisation of TANGO1 at a region of defined saddle-like shape will contribute partially to the retention of TANGO1 in the ER instead of accompanying cargo to the next secretory compartment.\n\nDo other proteins exhibit a similar pair of helices, and could this combination of helices represent a general mechanism to sense or stabilise membrane curvature and modulate lipid diffusion at sites of contact between two compartments? Proteins related to TANGO1 also have two adjacent membrane helices; an alternatively spliced short variant of TANGO1 (TANGO1-short) lacks lumenal domains, but still has two helices though its IM helix has a different sequence. The TANGO1-like protein TALI (or MIA2) also has two membrane helices and it too is a single-pass transmembrane protein. Interestingly, a recent study described another single-pass transmembrane protein TMEM131 with two adjacent predicted membrane helices, which functions at the interface of two compartments. Again one of these helices must span the membrane, while the other is likely inserted into one leaflet of a compartment membrane (Zhang et al., 2020).\n\nIn sum, TANGO1 through its various parts select and bind cargoes like the procollagens in the lumen, and interacts with coats and other cytoplasmic components that tether and transiently fuse ERES to ERGIC or the cis-Golgi (in cells that lack an ERGIC). The transmembrane helices in TANGO1 assist in its alignment into a ring to prevent membrane protein and lipid mixing during the transient coupling of these two secretory compartments. This transient pore or tunnel thus allows cargo movement while retaining compartmental specificity.\n\n## Materials and methods\n\n### Cell culture and transfection\n\nHeLa cells were grown at 37\u00b0C with 5% CO2 in complete DMEM with 10% FBS unless otherwise stated. Plasmids were transfected in HeLa cells with TransIT-HeLa MONSTER (Mirus Bio LLC) or Lipofectamine 3000 Transfection Reagent (Thermo Fisher Scientific) according to the manufacturer\u2019s protocols. All cells in culture were tested every month to confirm they were clear of contamination by mycoplasma.\n\n### Molecular biology\n\nAll molecular cloning, of constructs with TANGO1, was carried out using MAX Efficiency Stbl2 Competent Cells (Thermo Fisher Scientific), following manufacturer\u2019s instructions.\n\n### Antibodies\n\nThe following antibodies were used procollagen VII (rabbit anti\u2013human [Abcam]; mouse anti\u2013human [Sigma-Aldrich]), Sec31A (mouse anti\u2013human; BD), TANGO1 (rabbit anti\u2013human; Sigma-Aldrich), sec16A (rabbit anti-human; Sigma-Aldrich), calreticulin (goat anti\u2013human; Enzo Life Sciences), HA (mouse; BioLegend), TGN46 (sheep polyclonal, Bio-Rad), HA (mouse monoclonal, BioLegend; rat monoclonal BioLegend). Mounting media used in confocal and STED microscopy were either Vectashield (Vector Laboratories) or ProLong (Thermo Fisher Scientific, Waltham, Massachusetts).\n\n### Protein expression\n\nProteins were purified as previously described (Ernst et al., 2018). In brief, Plasmid encoding for FLAG-tagged TM or IM-TM were transfected into EXPI293F cells according to the manufacturer (Thermo Fisher), and incubated at 37\u00b0C, 8% CO2 for 48 hr, pelleted, and resuspended in 50 mM HEPES/KOH pH 7.3, 175 mM NaCl, 5 mM EDTA, 1 mM PMSF, 1 mM TCEP, protease inhibitor cocktail, and 8% (v/v) TX-100. After a brief microtip sonication, the lysate was placed rotating at 4\u00b0C for 3 hr. After centrifugation of the cell debris, the lysate was incubated with FLAG-affinity resin for 2 hr at 4\u00b0C. The resin was added to a column, settled, and washed three times with 50 mM HEPES/KOH pH 7.3, 175 mM NaCl, 5 mM EDTA, 50 mM n-Octyl-\u03b2-D-glucopyranoside (OG), and proteinase inhibitor (Roche). Finally, the proteins were eluted by adding 125 ng/ml FLAG peptide to the OG-containing buffer (Sigma-Aldrich) and incubating the beads for 30 min per round of elution. Eluates were analysed on 4\u201320% Bis-Tris gradient gels, stained with Coomassie, and analysed on a LI-COR Odyssey infrared scanner.\n\n### Giant unilamellar vesicle (GUV) formation\n\nThe GUVs contained 1-palmitoyl-2-oleoyl-glycero-3-phosphocholine (POPC, Avanti Polar Lipids, product #850457C), 1,2-distearoyl-sn-glycero-3-phosphoethanolamine-N-[biotinyl(polyethylene glycol)\u22122000] (DSPE-PEG2000-Biotin, Avanti Polar Lipids, product # 880129C) and 1,2-Dioleoyl-sn-glycero-3-phosphoethanolamine were pro-Atto-647N (ATTO-647N-DOPE, Atto-tec) at a ratio 94.9:5:0.1 mol/mol. The first step was to prepare proteo-liposomes. 0.8 \u00b5mol of the lipid mixture (POPC:DSPE-PEG-biot:DOPE-Atto647N; 95: 5: 0.1) was deposited in a test tube and dried by nitrogen flow followed by desiccation for 30 min. 50 \u00b5l of either the TM or the IM-TM peptide were added to the tube and slowly vortexed at room temperature for 15 min to resuspend the lipids. 150 \u00b5l of 10 mM HEPES pH 7.4, 100 mM KCl buffer (190 mOsm) was then added to the tube while vortexing to ensure homogeneous mixing. This buffer addition formed proteo-liposomes by diluting OG below its micellar critical concentration (initial OG concentration: 50 mM, final concentration: 12.5 mM, CMC\u00a0~\u00a023 mM). The solution was then injected in a dialysis cassette, which was subsequently placed in a large container with 4 l of 10 mM HEPES pH 7.4, 100 mM KCl buffer (190 mOsm). The container was placed in a cold room and the buffer stirred overnight. This dialysis ensured optimum removal of OG from the proteo-liposomes, which were subsequently transferred in a 500 \u00b5l microcentrifuge tube.\n\nGuvs were produced using the osmotic shock method (Motta et al., 2015). In brief, a 2 \u00b5l drop of the proteo-liposomes was deposited on a MatTek dish (MatTek Corporation) and left to dry at room temperature. It was then rehydrated with a 2 \u00b5l water drop. The osmotic difference between the inside of the proteo-liposomes and the water drop immediately popped them and they resealed in a larger structure. The drying/rehydration cycle was repeated three more times to produce larger and more unilamellar proteo-GUVs (hereinafter called GUVs). The water drop was 6 \u00b5l for the third and fourth rehydration. After the last rehydration, water drops were deposited at the edge of the dish that was subsequently closed. This prevented any further evaporation while the GUVs are left to grow for an additional 30 min (or more). Afterwards, the water drops were removed and the MatTek dish was filled with the dialysis buffer diluted 2.5 times to slightly deflate the proteo-GUVs.\n\n### Quantification of protein to lipid ratio in the GUVs\n\nWe plotted fluorescence intensity along a straight line across the GUV and measured the intensities of the two peaks corresponding to the membrane. We compared the intensities of lipids and GFP from IM-TM and TM in the GUVs under the same conditions of microscope objective, laser power and gain. Measurements were carried out on eight different GUVs from four independent experiments for IM-TM and three different GUVs from two independent experiments for TM. The protein intensity can provide a very approximate value of the concentration using a separate calibration with Atto488 dyes. We measured that Atto488 dyes are twice as bright as Alexa488 (Figure 5A) which itself is twice as bright as EGFP (quantum yield and brightness). In addition, increasing the gain of image by 100 leads to approximately a twofold increase in intensity. We made GUVs with various concentrations of Atto488 (from 0.05% to 2% lipids) and observed them with 5% laser power and a gain of 500. The result is a linear variation with Atto488 concentration (Figure 5B).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/57822/elife-57822-fig5-v2.jpg)\n\n**Figure 5.:** (A) Alexa488 and Atto488 intensities in solution at different concentrations. (B) Atto488 lipid intensity increases linearly with concentration.\n\nUsing these calibration data and assuming a linear increase of the intensity with laser power, the value of 92 for the intensity of IM-TM with 20% laser power and 1250 gain leads to one protein per 18,000 lipids. It corresponds to an average of one protein per 6300 nm\u00b2, that\u00a0is a typical inter protein distance of 80 nm. With our experimental conditions and parameters, this density corresponds to one protein per pixel at the pole of the GUVs, and 10 proteins per pixel at the equator of the GUV (because of the vertical projection). This rough estimate seems realistic with regard to the low intensity observed in our GUV experiments (see for instance the FRAP experiments described in the Figure 2\u2014figure supplement 1).\n\nCalculation of the protein density:\n\n$$\n(\\frac{92\u22172\u22172\u22175/(20\u2217)^{2.5}(\\frac{1250\u2212500}{100})}{10768})=0.00056%\n$$\n\nNote that we needed to go through Atto488 intermediate because this is a bright dye, commercially available on lipids.\n\n### Tube formation, bleaching and recovery\n\nMatTek dishes were modified to have two diametrically opposed openings in the wall so that quasi-horizontal micropipettes can move downward and reach the bottom coverslip. After GUV formation, the MatTek dish was placed on a Leica SP8 confocal microscope and\u00a0~10,000 streptavidin coated silica beads (2 \u00b5m, Bangs Laboratories) were added. A first micropipette (inner diameter\u00a0~4 \u00b5m) was used to grab a proteo-GUV. A second one (inner diameter 1\u20132 \u00b5m) grabbed a bead. The aspiration in both micropipettes was controlled by a standard hydrostatic pressure system (relative accuracy: 1 Pa, absolute accuracy: 5 Pa, aspiration range: 5 Pa to 3,000 Pa). The GUV were then placed facing each other\u00a0~50 \u00b5m above the coverslip. The aspiration in the GUV was reduced to 5 Pa to lower the surface tension. Then, the bead was brought in contact with the GUV for a few seconds to ensure the formation of several streptavidin-biotin bonds. Upon separation of the bead from the GUV, a\u00a0~\u00a0100 \u00b5m long tube of membrane was pulled, setting two connecting regions of very different curvature: the high curvature tube and the flat GUV membrane. The aspiration in the GUV micropipette was increased to the desired value and the system was left alone to relax for a couple of minutes. We varied the aspiration between 5 Pa and 100 Pa, which in our geometry corresponds to tube diameters between 200 nm and 50 nm. We did not observe any dependency of the fluorescence recovery on the aspiration; hence this is not discussed in the results section.\n\nA first picture of the tube was acquired to obtain the initial tube fluorescence intensity (i0). Then, fluorescent lipids in the tube alone (not the GUV) were almost completely bleached by illumination with a 647 He-Ne laser at maximum power for a few seconds. A second picture was immediately acquired and the tube fluorescence intensity after bleaching was measured (ib). Finally, a third picture was taken after 6 min, which provided the final tube fluorescence intensity (i6). The recovery was established as (i6 - ib)/(i0 - ib). We chose not to continuously monitor the fluorescence to avoid bleaching the fluorescent lipids as they migrate from the GUV to the tube.\n\nWe used 6 min because we wanted to be close to the fluorescence recovery plateau. We also wished to avoid spontaneous bleaching to have as accurate a measurement as possible and therefore acquired only one data point.\n\nDiffusion time varies with the square of the typical dimension. Here we are working with 30 \u00b5m tubes, hence it takes about 10 times longer to reach the recovery plateau compared to a 10 \u00b5m experiment (size of a cell). Thus a recovery time of 30 s for 10 \u00b5m would take 5 min here.\n\nBeing more quantitative requires a better modeling of the geometry. Namely, the system of a tube blocked by a bead is equivalent to two mirror images (Figure 6A). With boundary conditions at t\u00a0=\u00a00 (Figure 6B):\n\n![Figure 6.](https://cdn.elifesciences.org/articles/57822/elife-57822-fig6-v2.jpg)\n\n**Figure 6.:** (A) Schematic of the system.\u00a0(B) Schematic of system under boundary conditions at time t\u00a0=\u00a00. (C) Kinetics of recovery.\n\nThe 1D diffusion equation, $\\frac{\\partial\u03c1}{\\partialt}-D\\frac{\\partial^{2}\u03c1}{\\partialx^{2}}\u03c1=0$, can then be resolved numerically. A plot of the position of the mid recovery x1/2 is a good representation of the kinetics (Figure 6C).\n\nx1/2 reaches the end of the tube at t1/2 ~ 0.38 ltube\u00b2/D. The typical diffusion coefficient of a lipid in free membrane is\u00a0~5 \u00b5m\u00b2/s for which t1/2 is slightly more than 1 min. Even if the diffusion coefficient of the lipid is reduced five times (unlikely), 6 min would be sufficient to be close to the recovery plateau. Hence, the choice of 6 min is a good compromise between an optimum recovery and a minimal experimental risk (drift of the pipettes, rupture of the GUV, etc.).\n\nFRAP-based quantification of protein diffusion in the GUV membrane:\n\nExperiments were carried out using the protocol we previously described (Pincet et al., 2016). In brief, a GUV is micromanipulated and positioned slightly above the coverslip so that lower pole is positioned in the focal plane of the confocal microscope. A disk-shaped region of interest (ROI) with a known diameter d is chosen at the pole of the GUV. A couple of \u2018prebleach\u2019 images are acquired with the laser power adjusted at the minimum value providing an above-noise fluorescence signal from the ROI with minimal intrinsic bleaching. The EGFP signal from the GUV is dim, attesting the low protein concentration. This forced us to use high laser power, 20% of the maximum value and maximum gain. One image with 100% power was sufficient to completely bleach the fluorescence from the ROI. Then, recovery was recorded, typically at two images per second, at 20% of the laser power. The recovery phase was monitored over\u00a0~15\u201320 s. The raw data are very noisy (blue data points in Figure 2\u2014figure supplement 1) but still display significant intrinsic bleaching, showing the difficulty to adjust the laser power and obtain quantifiable measurements. To resolve this issue, we performed the rolling average over three successive images (orange data points in Figure 2\u2014figure supplement 1). The data were normalized to one before bleach and 0 right after bleach. The resulting curve was fitted using the standard recovery behavior for diffusive species:\n\n$$\nIt=I_{\u221e}e^{-\\frac{2\\tau}{t}}+J_{0}\\frac{2\\tau}{t}+J_{1}\\frac{2\\tau}{t}\n$$\n\nWhere J0 and J1 are the modified Bessel functions of order 0 and 1, I\u221e is the fluorescence at t=\u221e and \u03c4 is the characteristic diffusion time. The details of the calculation leading to Equation (1) are provided by Soumpasis, 1983. Note that I\u221e is expected to be slightly below one when there is no intrinsic bleaching because a few percent of the total GUV area are bleached. Because of the spontaneous bleaching, the fit was performed over the first\u00a0~5 s of the recovery phase. The diffusion coefficient is equal to d\u00b2/(16\u03c4).\n\n### Immunofluorescence microscopy\n\nCells grown on coverslips were fixed with cold methanol for 8 min at \u221220\u00b0C or 4% formaldehyde (Ted Pella, Inc) for 15 min at room temperature. Cells fixed with formaldehyde were permeabilised with 0.1% Triton in PBS and then incubated with blocking reagent (Roche) or 2\u20135% BSA for 30 min at room temperature. Primary antibodies were diluted in blocking reagent or 2% BSA and incubated overnight at 4\u00b0C or at 37\u00b0C for 1 hr. Secondary antibodies conjugated with Alexa Fluor 594, 488, or 647 were diluted in blocking reagent and incubated for 1 hr at room temperature.\n\nConfocal images were taken with a TCS SP5 (63\u00d7, 1.4\u20130.6 NA, oil, HCX PL APO), TCS SP8 (63\u00d7, 1.4 NA, oil, HC PL APO CS2), all from Leica Microsystems, using Leica acquisition software. Lasers and spectral detection bands were chosen for the optimal imaging of Alexa Fluor 488, 594, and 647 signals. Two-channel colocalization analysis was performed using ImageJ (National Institutes of Health).\n\n### STED\n\nSTED images were taken on a TCS SP8 STED 3\u00a0\u00d7\u00a0microscope (Leica Microsystems) on a DMI8 stand using a 100\u00a0\u00d7\u00a01.4 NA oil HCS2 PL APO objective and a pulsed supercontinuum light source (white light laser). Images were acquired and deconvolved exactly as described before (Raote et al., 2017; Raote et al., 2018). In all images acquired and presented here, a goat-anti mouse secondary antibody, coupled to Abberior 635 was used to visualise anti-HA antibody localisation, while secondary antibody coupled to Alexa 594 was used to visualise the antibody targeted against the lumenal epitope of TANGO1. Axial resolution were found to be \u223c60 nm for the Abberior 635 channel and 50 nm for the Alexa Fluor 594 channel as described before (Raote et al., 2017).\n",
+      "created_at": "2025-12-02T17:20:49.271426Z"
+    },
+    {
+      "id": "47140008-095d-48b6-b15e-16cfa7659d55",
+      "submission_id": "8a67999b-621a-4903-899f-d7f952563d42",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Adam Linstedt, Carnegie Mellon University United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.57822.sa1](https://doi.org/10.7554/eLife.57822.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nThank you for submitting your article \"TANGO1 membrane helices create a lipid diffusion barrier at curved membranes\" for consideration by eLife. Your article has been reviewed by three peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation has been overseen by Suzanne Pfeffer as the Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Benjamin S Glick (Reviewer #3); Jose Rizo-Rey (Reviewer #4).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nThe editors have judged that your manuscript is of interest, but as described below that additional experiments are required before it is published, we would like to draw your attention to changes in our revision policy that we have made in response to COVID-19 (https://elifesciences.org/articles/57162). First, because many researchers have temporarily lost access to the labs, we will give authors as much time as they need to submit revised manuscripts. We are also offering, if you choose, to post the manuscript to bioRxiv (if it is not already there) along with this decision letter and a formal designation that the manuscript is \"in revision at eLife\". Please let us know if you would like to pursue this option.\n\nSummary:\n\nIn this \"Research Advance\" the authors build on their previous characterization of how the transmembrane protein TANGO1 resides at ER exit sites and mediates linkage to nearby ERGIC compartments. There are two key observations that together suggest a potentially novel and important role for TANGO1 in tubule-mediated transport- the prevention of intermixing of the membranes of donor and acceptor compartments. The first observation is that the TANGO1 membrane binding intramembrane helix called IM impedes lipid flux between a GUV and a tubule protruding from it. The second observation is that IM localizes TANGO1's cytoplasmic domain into clustered ring-like structures presumed to reflect targeting to the neck of budding ER export structures. There was agreement among the reviewers that these results will be of interest to the audience of eLife.\n\nHowever, there were issues that need to be addressed. The first two will require additional experiments that should be straightforward, and it is agreed that they will significantly strengthen the conclusion that TANGO1 forms a membrane diffusion barrier that prevents the mixing of contents when ERGIC membranes fuse with the ER.\n\nIf performing one or both is not feasible because of the pandemic, the authors could try to address this with a textual revision, but it may be advisable to delay submission of a revised version until such experiments are possible again. There will be no deadline for completion.\n\n1) How much of the IM-TM construct is present in the GUV relative to the lipids? Could it be so much that lipids fail to diffuse rapidly in the entire GUV? To show that a diffusion barrier exists specifically at the junction between the tube and the spherical portion, a suitable control would be to bleach half of the spherical portion of the GUV and confirm that fluorescence recovery within the spherical portion is unaffected by the IM-TM construct. This is a major concern that needs to be addressed, as it casts doubt on the main conclusion of the paper.\n\n2) There is a need for a functional test. The authors analyze cells expressing Tango1\u2206IM-HA but do not report any tests for defects in compartmentalization. Their model predicts these cells should have loss of ERGIC-to-ER barrier function (e.g. ERGIC components redistributed to the ER among other changes).\n\n3) The authors state that during procollagen export, the ER and ERGIC are transiently connected by a tunnel that keeps the two membranes distinct. Arguably, this an interesting hypothesis rather than an established fact. Such connections have not been directly visualized, and there is a diversity of views about how a large cargo traffics out of the ER. The language here should be modified to accurately reflect the current state of knowledge.\n\n4) Please explain the rationale for choosing the single 6-minute time point for the fluorescence recovery assay. It seems like a long time for a lipid diffusion experiment.\n\n5) Figure 2D is hard to process and lacks a statistical test. Because it's apparently important to the argument, a fuller explanation would help.\n\n6) There is some uncertainty about the relevance of the experiments in Figures 3 and 4. This section could be strengthened with a clearer explanation of the questions that were being asked.\n\n7) There is a concern regarding how the images of Figure 3\u2014figure supplement 1 support the conclusion that TANGO1 and TANGO1\u0394IM form small, discrete puncta, while TANGO1\u0394TM does not.\n\n8) The protein concentrations for the two constructs in the GUVs need to be shown equivalent after GUV formation (GFP intensity should suffice).\n\n9) The conclusion \"The two membrane helices together are not required to target TANGO1 to ERES\" is confusing because the authors show the \u2206TM construct is not localized to ERES. This construct contains the PRD and uses IM as a cryptic transmembrane domain and yet it is mislocalized. This seems to argue that both membrane domains are needed.\n",
+      "created_at": "2025-12-02T17:20:49.271426Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T17:20:49.271426Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T17:20:49.271426Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "31648bbc-4ace-457b-a8d4-76167143787a",
+      "content_id": "eef1df68-db07-427c-a66a-be8cef78260b",
+      "claim_id": "C1",
+      "claim": "TANGO1 organises membranes at the interface of the endoplasmic reticulum (ER) and ERGIC/Golgi.",
+      "claim_type": "EXPLICIT",
+      "source": "We have previously shown TANGO1 organises membranes at the interface of the endoplasmic reticulum (ER) and ERGIC/Golgi (Raote et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Raote et al., 2018",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:20:49.271426Z"
+    },
+    {
+      "id": "09a86cbf-2c74-43db-bb6d-ecd9479637aa",
+      "content_id": "eef1df68-db07-427c-a66a-be8cef78260b",
+      "claim_id": "C2",
+      "claim": "TANGO1 corrals retrograde membranes at ER exit sites to create an export conduit.",
+      "claim_type": "EXPLICIT",
+      "source": "TANGO1 corrals retrograde membranes at ER exit sites to create an export conduit.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to previous work (Raote et al., 2018) mentioned in the abstract",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:20:49.271426Z"
+    },
+    {
+      "id": "8e34fe90-5568-4947-a53e-ce9976c9c168",
+      "content_id": "eef1df68-db07-427c-a66a-be8cef78260b",
+      "claim_id": "C3",
+      "claim": "The retrograde membrane is, in itself, an anterograde carrier.",
+      "claim_type": "EXPLICIT",
+      "source": "Here the retrograde membrane is, in itself, an anterograde carrier.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on the authors' interpretation of their previous findings",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:20:49.271426Z"
+    },
+    {
+      "id": "1428b519-c34c-470a-b851-594e9d93ec15",
+      "content_id": "eef1df68-db07-427c-a66a-be8cef78260b",
+      "claim_id": "C4",
+      "claim": "TANGO1 has one membrane-spanning helix (TM) and another helix that penetrates the inner leaflet (IM).",
+      "claim_type": "EXPLICIT",
+      "source": "TANGO1 has an unusual membrane helix organisation, composed of one membrane-spanning helix (TM) and another that penetrates the inner leaflet (IM).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Structural characterization of TANGO1 membrane helices",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:20:49.271426Z"
+    },
+    {
+      "id": "28d86728-a261-4c84-801b-a2cd6858e801",
+      "content_id": "eef1df68-db07-427c-a66a-be8cef78260b",
+      "claim_id": "C5",
+      "claim": "TM and IM together reduce the flow of lipids at a region of defined shape in model membranes.",
+      "claim_type": "EXPLICIT",
+      "source": "We have reconstituted these membrane helices in model membranes and shown that TM and IM together reduce the flow of lipids at a region of defined shape.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Experimental data from reconstitution experiments shown in Figure 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:20:49.271426Z"
+    },
+    {
+      "id": "70b12c91-67ac-4ede-af30-bb0521399099",
+      "content_id": "eef1df68-db07-427c-a66a-be8cef78260b",
+      "claim_id": "C6",
+      "claim": "The helices align TANGO1 around an ER exit site.",
+      "claim_type": "EXPLICIT",
+      "source": "We have also shown that the helices align TANGO1 around an ER exit site.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Experimental data from STED microscopy shown in Figure 4",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:20:49.271426Z"
+    },
+    {
+      "id": "4a340c80-7c74-4f53-9159-00cf367a0c0b",
+      "content_id": "eef1df68-db07-427c-a66a-be8cef78260b",
+      "claim_id": "C7",
+      "claim": "Membrane curvature plays a major role in lipid and protein sorting during transport intermediate formation.",
+      "claim_type": "EXPLICIT",
+      "source": "a key question is whether (and how) membrane curvature plays a major role in lipid and protein sorting (Campelo and Malhotra, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited as an open question in the field",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:20:49.271426Z"
+    },
+    {
+      "id": "9fadd8cc-7097-4b91-b1c0-64be7d164f50",
+      "content_id": "eef1df68-db07-427c-a66a-be8cef78260b",
+      "claim_id": "C8",
+      "claim": "Curvature-mediated lipid sorting requires additional protein-lipid interactions beyond curvature alone.",
+      "claim_type": "EXPLICIT",
+      "source": "current evidence suggests that curvature-mediated lipid sorting is not based on curvature alone, but requires additional protein-lipid interactions (Br\u00fcgger et al., 2000; Callan-Jones et al., 2011; Gruenberg, 2003; Klemm et al., 2009; Roux et al., 2005; Sorre et al., 2009; Tian and Baumgart, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations to previous studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:20:49.271426Z"
+    },
+    {
+      "id": "d67da1cd-0c7b-4700-a601-0564dbb68ba8",
+      "content_id": "eef1df68-db07-427c-a66a-be8cef78260b",
+      "claim_id": "C9",
+      "claim": "COPII vesicles show enrichment in lysolipids such as lysophosphatidylinositol (LPI) and a decrease in phosphatidylserine compared to the ER.",
+      "claim_type": "EXPLICIT",
+      "source": "In vitro preparations of COPII vesicles show a differential lipidomic profile from the ER, including an enrichment in lysolipids such as lysophosphatidylinositol (LPI) and a decrease in phosphatidylserine (Melero et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Melero et al., 2018",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:20:49.271426Z"
+    },
+    {
+      "id": "9f076238-4ada-4157-82b5-c8efcfbd2f82",
+      "content_id": "eef1df68-db07-427c-a66a-be8cef78260b",
+      "claim_id": "C10",
+      "claim": "ERES are semi-stable specialized subdomains of the ER with pleomorphic organization of diverse curvatures, including cup-like shapes and beaded tubes.",
+      "claim_type": "EXPLICIT",
+      "source": "COPII vesicles form at ER exit sites (ERES), which are semi-stable specialized subdomains of the ER with structures of a pleomorphic organization of diverse curvatures, including cup-like shapes and beaded tubes (Bannykh et al., 1996; Hughes et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Bannykh et al., 1996 and Hughes et al., 2009",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:20:49.271426Z"
+    },
+    {
+      "id": "aa078220-5846-407a-9074-866dd7477842",
+      "content_id": "eef1df68-db07-427c-a66a-be8cef78260b",
+      "claim_id": "C11",
+      "claim": "Procollagens fold and trimerize into rigid, rod-like elements that are considered too large for conventional COPII coated vesicle-mediated transport.",
+      "claim_type": "EXPLICIT",
+      "source": "Procollagens in the ER fold and trimerize into rigid, rod-like elements that are considered too large for conventional COPII coated vesicle-mediated transport (Burgeson et al., 1985; Gorur et al., 2017; Kadler, 2017; Kadler et al., 2007; McCaughey and Stephens, 2019; Omari et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations to previous studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:20:49.271426Z"
+    },
+    {
+      "id": "93a0adb1-aa02-46a5-a8b0-41e77561ce93",
+      "content_id": "eef1df68-db07-427c-a66a-be8cef78260b",
+      "claim_id": "C12",
+      "claim": "Large COPII-coated carriers were reported in cells overexpressing KLHL12.",
+      "claim_type": "EXPLICIT",
+      "source": "Outsize COPII carriers were reported in cells overexpressing KLHL12, which generates large procollagen-containing structures that co-label with Sec31A (Jin et al., 2012; Yuan et al., 2017; Yuan et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Jin et al., 2012; Yuan et al., 2017; Yuan et al., 2018",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:20:49.271426Z"
+    },
+    {
+      "id": "7f9e130d-87cf-4f78-b992-c60a034905ca",
+      "content_id": "eef1df68-db07-427c-a66a-be8cef78260b",
+      "claim_id": "C13",
+      "claim": "Large procollagen-containing structures generated by KLHL12 overexpression are destined for degradation and not bona fide transport carriers.",
+      "claim_type": "EXPLICIT",
+      "source": "A subsequent report suggested that these structures are destined for degradation and not bona fide transport carriers (Omari et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Omari et al., 2018",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:20:49.271426Z"
+    },
+    {
+      "id": "a69dbdd8-e043-49b4-86e2-ecbfd213feff",
+      "content_id": "eef1df68-db07-427c-a66a-be8cef78260b",
+      "claim_id": "C14",
+      "claim": "ER-to-Golgi procollagen carriers appear pleomorphic and do not seem to contain any detectable COPII.",
+      "claim_type": "EXPLICIT",
+      "source": "However, ER-to-Golgi procollagen carriers appear pleomorphic and do not seem to contain any detectable COPII (Mironov et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Mironov et al., 2003",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:20:49.271426Z"
+    },
+    {
+      "id": "ff635f23-2e2f-4c50-bd6f-fefbe238bcc8",
+      "content_id": "eef1df68-db07-427c-a66a-be8cef78260b",
+      "claim_id": "C15",
+      "claim": "Procollagen export from the ER requires the assembly of a functional machine centred on the transmembrane ERES-resident protein TANGO1.",
+      "claim_type": "EXPLICIT",
+      "source": "Procollagen export from the ER requires the assembly of a functional machine centred on the transmembrane ERES-resident protein TANGO1 (Ishikawa et al., 2016; Lekszas et al., 2020; Saito et al., 2009; Wilson et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations to previous studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:20:49.271426Z"
+    },
+    {
+      "id": "76cccfb7-b808-4253-a7cb-2e82636dc343",
+      "content_id": "eef1df68-db07-427c-a66a-be8cef78260b",
+      "claim_id": "C16",
+      "claim": "TANGO1 acts as a filamentous linactant to recruit, constrain, and scaffold ERES machinery and post-ER (ERGIC) membranes for procollagen export.",
+      "claim_type": "EXPLICIT",
+      "source": "As a master regulator of ERES assembly, TANGO1 acts as a filamentous linactant to recruit, constrain, and scaffold ERES machinery and post-ER (ERGIC) membranes for procollagen export (Ma and Goldberg, 2016; Maeda et al., 2017; Nogueira et al., 2014; Raote et al., 2017; Raote et al., 2018; Raote et al., 2019; Saito and Maeda, 2019; Saito et al., 2009; Santos et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations to previous studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:20:49.271426Z"
+    },
+    {
+      "id": "5361769d-e47f-4f52-b866-e6dd3f9061cd",
+      "content_id": "eef1df68-db07-427c-a66a-be8cef78260b",
+      "claim_id": "C17",
+      "claim": "TANGO1 utilises a retrograde membrane tether complex (NRZ complex) to tether post-ER membranes (ERGIC/Golgi), which fuse at the ERES to create an export route for procollagens.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, TANGO1 utilises a retrograde membrane tether complex (NRZ complex) to tether post-ER membranes (ERGIC/Golgi), which fuse at the ERES to create an export route for procollagens.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on the authors' previous work and model",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:20:49.271426Z"
+    },
+    {
+      "id": "1d3f64c8-21a7-4ba4-9dd7-b5eed9cbbffe",
+      "content_id": "eef1df68-db07-427c-a66a-be8cef78260b",
+      "claim_id": "C18",
+      "claim": "TANGO1 assembles into a filament-like ring to organise the early secretory pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "Using super-resolution (STED) microscopy to visualise TANGO1, its interactors, and associated machinery we have described its assembly into a filament-like ring to organise the early secretory pathway (Liu et al., 2017; Raote and Malhotra, 2019; Raote et al., 2017; Raote et al., 2018; Raote et al., 2019; Reynolds et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations to previous studies by the authors",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:20:49.271426Z"
+    },
+    {
+      "id": "b2d58a65-9f87-4dbf-9b45-3bb717024ea6",
+      "content_id": "eef1df68-db07-427c-a66a-be8cef78260b",
+      "claim_id": "C19",
+      "claim": "Amino acid residues 1177\u20131197 of human TANGO1 are predicted to form a transmembrane helix.",
+      "claim_type": "EXPLICIT",
+      "source": "amino acid residues 1177\u20131197 of human TANGO1 are predicted to form a transmembrane helix, while residues 1145\u20131165 form a helix that penetrates the lumenal leaflet of the ER membrane (Saito et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Saito et al., 2009",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:20:49.271426Z"
+    },
+    {
+      "id": "c31f1120-4355-42dd-b114-2ab0bf78cea2",
+      "content_id": "eef1df68-db07-427c-a66a-be8cef78260b",
+      "claim_id": "C20",
+      "claim": "Amino acid residues 1145\u20131165 of human TANGO1 form a helix that penetrates the lumenal leaflet of the ER membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "amino acid residues 1177\u20131197 of human TANGO1 are predicted to form a transmembrane helix, while residues 1145\u20131165 form a helix that penetrates the lumenal leaflet of the ER membrane (Saito et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Saito et al., 2009",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:20:49.271426Z"
+    },
+    {
+      "id": "9b05623f-86b1-4d5a-9e6b-d69ca11656ab",
+      "content_id": "eef1df68-db07-427c-a66a-be8cef78260b",
+      "claim_id": "C21",
+      "claim": "Similar levels of protein were incorporated into GUVs in the IM-TM and TM conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "To confirm that similar levels of protein were incorporated into GUVs in the two conditions tested, we compared the intensities of IM-TM and TM in the GUVs and found that they are similar under the same conditions of microscope objective, laser power and gain: 92 \u00b1 23 a.u. for IM-TM and 106 \u00b1 38 a.u. for TM respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Quantitative fluorescence intensity measurements from GUV experiments",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:20:49.271426Z"
+    },
+    {
+      "id": "c8142de7-46bd-4762-a7ea-107e3a3d3de4",
+      "content_id": "eef1df68-db07-427c-a66a-be8cef78260b",
+      "claim_id": "C22",
+      "claim": "The protein to lipid ratio in the GUVs is approximately 1 IM-TM protein per 18,000 lipids.",
+      "claim_type": "EXPLICIT",
+      "source": "Under our conditions, we estimate 1 IM-TM protein per 18,000 lipids, that is a typical inter-protein distance of 80 nm (see Materials and methods section for a more detailed description of this quantification).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Calculated from fluorescence intensity measurements",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:20:49.271426Z"
+    },
+    {
+      "id": "133eb07f-ce64-4818-ade0-91db37cc1ee4",
+      "content_id": "eef1df68-db07-427c-a66a-be8cef78260b",
+      "claim_id": "C23",
+      "claim": "Fluorescence recovered to 60 \u00b1 6% of the prebleach intensity in tubes from GUVs with no protein.",
+      "claim_type": "EXPLICIT",
+      "source": "Fluorescence recovered to 60 \u00b1 6% (mean \u00b1s.d.) of the prebleach intensity in tubes from GUVs with no protein.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Experimental data from photobleaching recovery experiments shown in Figure 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:20:49.271426Z"
+    },
+    {
+      "id": "b7dccb25-e3d9-41c7-b9b1-447d0334cbc4",
+      "content_id": "eef1df68-db07-427c-a66a-be8cef78260b",
+      "claim_id": "C24",
+      "claim": "In tubes pulled from GUVs with the transmembrane helix alone (TM), fluorescence recovered to 56 \u00b1 12%.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, in tubes pulled from GUVs with the transmembrane helix alone (TM), fluorescence recovered to 56 \u00b1 12%.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Experimental data from photobleaching recovery experiments shown in Figure 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:20:49.271426Z"
+    },
+    {
+      "id": "1cb8e9a2-1d76-412a-b7f2-b9231b9ab28f",
+      "content_id": "eef1df68-db07-427c-a66a-be8cef78260b",
+      "claim_id": "C25",
+      "claim": "The two helices together (IM-TM) reduced fluorescence recovery to only 35 \u00b1 5%.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the two helices together (IM-TM), considerably inhibited fluorescence recovery. Now, the recovery was only 35 \u00b1 5% (Figure 2C), showing that TANGO1 membrane helices together inhibited the exchange of lipids between the tube and the rest of the GUV.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Experimental data from photobleaching recovery experiments shown in Figure 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:20:49.271426Z"
+    },
+    {
+      "id": "42481158-9147-4c51-861e-71eb403a1837",
+      "content_id": "eef1df68-db07-427c-a66a-be8cef78260b",
+      "claim_id": "C26",
+      "claim": "TANGO1 membrane helices together inhibited the exchange of lipids between the tube and the rest of the GUV.",
+      "claim_type": "EXPLICIT",
+      "source": "showing that TANGO1 membrane helices together inhibited the exchange of lipids between the tube and the rest of the GUV.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Interpretation of experimental data from photobleaching recovery experiments",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:20:49.271426Z"
+    },
+    {
+      "id": "04b03931-5b58-463e-a2e5-9b2e8cefa756",
+      "content_id": "eef1df68-db07-427c-a66a-be8cef78260b",
+      "claim_id": "C27",
+      "claim": "The diffusion coefficient of EGFP-labeled protein in the GUV is 0.7 \u00b1 0.3 \u00b5m\u00b2/s.",
+      "claim_type": "EXPLICIT",
+      "source": "We found a diffusion coefficient (0.7 \u00b1 0.3 \u00b5m\u00b2/s), consistent with a protein that is monomeric or in the form of small oligomers (Figure 2\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental data from FRAP experiments shown in Figure 2\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:20:49.271426Z"
+    },
+    {
+      "id": "f8b82c5e-d7b7-49e5-9715-360a85e7830c",
+      "content_id": "eef1df68-db07-427c-a66a-be8cef78260b",
+      "claim_id": "C28",
+      "claim": "The measured diffusion coefficient is consistent with a protein that is monomeric or in the form of small oligomers.",
+      "claim_type": "EXPLICIT",
+      "source": "We found a diffusion coefficient (0.7 \u00b1 0.3 \u00b5m\u00b2/s), consistent with a protein that is monomeric or in the form of small oligomers (Figure 2\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Interpretation of diffusion coefficient measurement based on established knowledge",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:20:49.271426Z"
+    },
+    {
+      "id": "893c7dc2-c90d-442e-98aa-61b28b6358e6",
+      "content_id": "eef1df68-db07-427c-a66a-be8cef78260b",
+      "claim_id": "C29",
+      "claim": "The membrane (protein and lipid) is fully fluid without hindered diffusion.",
+      "claim_type": "EXPLICIT",
+      "source": "These data show that the membrane (protein and lipid) is fully fluid without hindered diffusion, confirming that the low recovery in the tube is due to reduced crossing at the junction between the GUV and the tube.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Interpretation of FRAP data",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:20:49.271426Z"
+    },
+    {
+      "id": "5d7e519b-253d-4fc2-a1b6-73e271dfc9a8",
+      "content_id": "eef1df68-db07-427c-a66a-be8cef78260b",
+      "claim_id": "C30",
+      "claim": "The low recovery in the tube is due to reduced crossing at the junction between the GUV and the tube.",
+      "claim_type": "EXPLICIT",
+      "source": "confirming that the low recovery in the tube is due to reduced crossing at the junction between the GUV and the tube.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from FRAP and photobleaching recovery data",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:20:49.271426Z"
+    },
+    {
+      "id": "d4779d12-be27-483e-93dd-bf21d3361b67",
+      "content_id": "eef1df68-db07-427c-a66a-be8cef78260b",
+      "claim_id": "C31",
+      "claim": "Deletion of the IM helix had no discernible effect on the ability of TANGO1 to localise to ERES.",
+      "claim_type": "EXPLICIT",
+      "source": "Deletion of the IM helix had no discernible effect on the ability of TANGO1 (Figure 3B, green) to localise to ERES as visualised by its localisation to puncta of the ERES marker Sec16A (Figure 3B, red).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental data from immunofluorescence microscopy shown in Figure 3B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:20:49.271426Z"
+    },
+    {
+      "id": "40b2bf6c-87e4-45ed-8e0f-25df67a518e6",
+      "content_id": "eef1df68-db07-427c-a66a-be8cef78260b",
+      "claim_id": "C32",
+      "claim": "Deletion of the TM helix resulted in a loss of TANGO1 localisation to ERES.",
+      "claim_type": "EXPLICIT",
+      "source": "Deletion of the TM helix had a more substantive effect and resulted in a loss of TANGO1 localisation to ERES (Figure 3A,B, quantified in 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental data from immunofluorescence microscopy shown in Figure 3",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:20:49.271426Z"
+    },
+    {
+      "id": "9b2e1759-165c-406c-a8e1-d924304723b3",
+      "content_id": "eef1df68-db07-427c-a66a-be8cef78260b",
+      "claim_id": "C33",
+      "claim": "When the TM in TANGO1 is deleted, the IM changes its topology and becomes a transmembrane helix.",
+      "claim_type": "EXPLICIT",
+      "source": "We have previously shown that when the TM in TANGO1 is deleted, the IM changes its topology and becomes a transmembrane.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to previous work",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:20:49.271426Z"
+    },
+    {
+      "id": "493fb9ec-5dc6-4fb8-a259-cab1b203a8f3",
+      "content_id": "eef1df68-db07-427c-a66a-be8cef78260b",
+      "claim_id": "C34",
+      "claim": "Deleting both hydrophobic helices leads to a soluble protein in the ER lumen.",
+      "claim_type": "EXPLICIT",
+      "source": "Deleting both hydrophobic helices leads to a soluble protein in the ER lumen (Saito et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Saito et al., 2009",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:20:49.271426Z"
+    },
+    {
+      "id": "e2f9612a-0183-41cc-870d-4dbae8e93b33",
+      "content_id": "eef1df68-db07-427c-a66a-be8cef78260b",
+      "claim_id": "C35",
+      "claim": "Deleting either helix had no effect on targeting TANGO1 to accumulations of procollagen VII in the ER.",
+      "claim_type": "EXPLICIT",
+      "source": "As a control, we confirmed that deleting either helix had no effect on targeting TANGO1 to accumulations of procollagen VII in the ER (Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental data from immunofluorescence microscopy shown in Figure 3\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:20:49.271426Z"
+    },
+    {
+      "id": "27114ae6-2d80-4395-9a47-e2c8bd7fb2b8",
+      "content_id": "eef1df68-db07-427c-a66a-be8cef78260b",
+      "claim_id": "C36",
+      "claim": "Both TANGO1 and TANGO1\u0394IM were recruited as small, discrete puncta, which were apposed to collagen accumulations in the ER.",
+      "claim_type": "EXPLICIT",
+      "source": "Both TANGO1 and TANGO1\u0394IM were recruited as small, discrete puncta, which were apposed to collagen accumulations in the ER.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Experimental observation from immunofluorescence microscopy",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:20:49.271426Z"
+    },
+    {
+      "id": "30d62955-cb87-409d-b6fe-f0484a665216",
+      "content_id": "eef1df68-db07-427c-a66a-be8cef78260b",
+      "claim_id": "C37",
+      "claim": "TANGO1\u0394TM entirely overlapped with procollagen VII accumulations.",
+      "claim_type": "EXPLICIT",
+      "source": "The TANGO1\u0394TM entirely overlapped with procollagen VII accumulations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Experimental observation from immunofluorescence microscopy",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:20:49.271426Z"
+    },
+    {
+      "id": "6fa7c602-c9f4-47b2-981a-2fc67a249f5d",
+      "content_id": "eef1df68-db07-427c-a66a-be8cef78260b",
+      "claim_id": "C38",
+      "claim": "Membrane curvature/shape sensitivity in TANGO1 membrane helices is not the dominant ERES-targeting device.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these data reveal that membrane curvature/shape sensitivity in TANGO1 membrane helices is not the dominant ERES-targeting device, instead the PRD is more important to target TANGO1 to its cellular location at an ERES.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Interpretation of experimental data from Figure 3",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:20:49.271426Z"
+    },
+    {
+      "id": "2a2423b6-0c52-4056-bf32-26018da52228",
+      "content_id": "eef1df68-db07-427c-a66a-be8cef78260b",
+      "claim_id": "C39",
+      "claim": "The PRD is more important to target TANGO1 to its cellular location at an ERES.",
+      "claim_type": "EXPLICIT",
+      "source": "instead the PRD is more important to target TANGO1 to its cellular location at an ERES.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Interpretation of experimental data and previous knowledge",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:20:49.271426Z"
+    },
+    {
+      "id": "7c341442-d60a-4a1f-9df5-ac06bb205a88",
+      "content_id": "eef1df68-db07-427c-a66a-be8cef78260b",
+      "claim_id": "C40",
+      "claim": "TANGO1 can be visualised assembled into rings at ERES.",
+      "claim_type": "EXPLICIT",
+      "source": "TANGO1 can be visualised assembled into rings at ERES (Raote et al., 2017; Raote et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous studies by the authors",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:20:49.271426Z"
+    },
+    {
+      "id": "cf351e6e-04f4-4c64-a92e-d2c60b0279ec",
+      "content_id": "eef1df68-db07-427c-a66a-be8cef78260b",
+      "claim_id": "C41",
+      "claim": "There was a clear separation of the signal from antibodies directed against the lumenal and cytoplasmic epitopes of TANGO1.",
+      "claim_type": "EXPLICIT",
+      "source": "Under these conditions there was a clear separation of the signal from antibodies directed against the two different epitopes and we could identify two distinct configurations of the ring of TANGO1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Experimental observation from STED microscopy shown in Figure 4",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:20:49.271426Z"
+    },
+    {
+      "id": "9c79b874-817f-4eb4-9966-ec4934896ab8",
+      "content_id": "eef1df68-db07-427c-a66a-be8cef78260b",
+      "claim_id": "C42",
+      "claim": "Two distinct configurations of the TANGO1 ring were identified: either the C terminus coalesced into a single spot within a ring formed by the lumenal antibody, or both could be visualised as concentric/colocalized rings.",
+      "claim_type": "EXPLICIT",
+      "source": "Either the C terminus coalesced into a single spot within a ring formed by the lumenal antibody, or both could be visualised as concentric/colocalized rings (Figure 4A red vs. green respectively).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental observation from STED microscopy shown in Figure 4A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:20:49.271426Z"
+    },
+    {
+      "id": "b37aefc4-b6e9-4336-9e41-b51458a5c85f",
+      "content_id": "eef1df68-db07-427c-a66a-be8cef78260b",
+      "claim_id": "C43",
+      "claim": "The distinct sets of images represented discrete configurations of TANGO1 during the formation of a carrier at an ERES.",
+      "claim_type": "EXPLICIT",
+      "source": "We propose that these distinct sets of images represented discrete configurations of TANGO1 during the formation of a carrier at an ERES.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Authors' interpretation of STED microscopy data",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:20:49.271426Z"
+    },
+    {
+      "id": "495a217d-6530-4a3c-b234-f2926221905f",
+      "content_id": "eef1df68-db07-427c-a66a-be8cef78260b",
+      "claim_id": "C44",
+      "claim": "Initially, the C termini of TANGO1 lie within the ring, overlying the site of the formation of a carrier.",
+      "claim_type": "EXPLICIT",
+      "source": "Initially, the C termini of TANGO1 lie within the ring, overlying the site of the formation of a carrier. As the carrier grows, the C termini are gradually pushed apart (for a schematic, Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Authors' model based on STED microscopy observations",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:20:49.271426Z"
+    },
+    {
+      "id": "c9decadd-6575-4f33-bc83-6662bdb7272b",
+      "content_id": "eef1df68-db07-427c-a66a-be8cef78260b",
+      "claim_id": "C45",
+      "claim": "As the carrier grows, the C termini are gradually pushed apart.",
+      "claim_type": "EXPLICIT",
+      "source": "As the carrier grows, the C termini are gradually pushed apart (for a schematic, Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Authors' model based on STED microscopy observations",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:20:49.271426Z"
+    },
+    {
+      "id": "14c0b9e5-9f38-4407-91dc-b8c18f6d7eb8",
+      "content_id": "eef1df68-db07-427c-a66a-be8cef78260b",
+      "claim_id": "C46",
+      "claim": "Abrogating the intramembrane helix reduced the frequency with which rings were observed.",
+      "claim_type": "EXPLICIT",
+      "source": "Qualitatively, we observed that abrogating the intramembrane helix reduced the frequency with which we observed rings, but this observation could not be quantified given the subjective nature of the selection of fields to image.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Qualitative observation from STED microscopy",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:20:49.271426Z"
+    },
+    {
+      "id": "d9c8345a-3db0-41f2-ade0-b8869464b83f",
+      "content_id": "eef1df68-db07-427c-a66a-be8cef78260b",
+      "claim_id": "C47",
+      "claim": "In several of the rings that did form with TANGO1\u0394IM, the C termini (HA epitope) and lumenal portions of TANGO1 were misaligned.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, in several of the rings that did form, the C termini (HA epitope) and lumenal portions of TANGO1 were now misaligned (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental observation from STED microscopy shown in Figure 4B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:20:49.271426Z"
+    },
+    {
+      "id": "bf2b77b7-6a80-4114-bd72-515de19d192e",
+      "content_id": "eef1df68-db07-427c-a66a-be8cef78260b",
+      "claim_id": "C48",
+      "claim": "With TANGO1\u0394IM, the C termini were often randomly oriented with respect to the ring formed by the lumenal epitope.",
+      "claim_type": "EXPLICIT",
+      "source": "Now, the C termini were often randomly oriented with respect to the ring formed by the lumenal epitope.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Experimental observation from STED microscopy",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:20:49.271426Z"
+    },
+    {
+      "id": "3f6636b7-ccba-41fa-8df0-228ce0b30bbf",
+      "content_id": "eef1df68-db07-427c-a66a-be8cef78260b",
+      "claim_id": "C49",
+      "claim": "Mutating two hydrophobic residues in the IM helix to charged residues (phenylalanine 1152 and 1154 to arginine \u2013 TANGO1-FMF-RMR) resulted in many rings of TANGO1 showing altered alignment of the two epitopes.",
+      "claim_type": "EXPLICIT",
+      "source": "Alternatively, we mutated two hydrophobic residues in the IM helix to charged residues (phenylalanine 1152 and 1154 to arginine \u2013 TANGO1-FMF-RMR), such that it would no longer form a hydrophobic helix (Figure 4\u2014figure supplement 1). Here too, many rings of TANGO1 showed altered alignment of the two epitopes.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental observation from STED microscopy shown in Figure 4\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:20:49.271426Z"
+    },
+    {
+      "id": "23e2b2a4-6ef8-4bd4-8383-e76d537e6d82",
+      "content_id": "eef1df68-db07-427c-a66a-be8cef78260b",
+      "claim_id": "C50",
+      "claim": "Ring formation could create a feedback loop through orientation/shape sensing to further reinforce rings.",
+      "claim_type": "EXPLICIT",
+      "source": "In other words, ring formation could create a feedback loop through orientation/shape sensing to further reinforce rings.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Authors' speculation based on their model",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:20:49.271426Z"
+    },
+    {
+      "id": "846c0305-605f-4bfb-8ac7-3ed4d0e343db",
+      "content_id": "eef1df68-db07-427c-a66a-be8cef78260b",
+      "claim_id": "C51",
+      "claim": "The transmembrane organisation of TANGO1 is sufficient to act as a diffusion barrier for membrane lipids.",
+      "claim_type": "EXPLICIT",
+      "source": "We showed that the transmembrane organisation of TANGO1 is sufficient to act as a diffusion barrier for membrane lipids.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion from experimental data in Figure 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:20:49.271426Z"
+    },
+    {
+      "id": "7e90e48b-79e4-4bbe-b132-bdcb069e0396",
+      "content_id": "eef1df68-db07-427c-a66a-be8cef78260b",
+      "claim_id": "C52",
+      "claim": "TANGO1 is concentrated at the neck of a budding membrane and can act as a fence, constraining the flow of lipids.",
+      "claim_type": "EXPLICIT",
+      "source": "In doing so, our data suggest that TANGO1 is concentrated at the neck of a budding membrane and can act as a fence, constraining the flow of lipids.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Interpretation of experimental data",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:20:49.271426Z"
+    },
+    {
+      "id": "3dfc6933-3fa0-42f6-a244-b01de9730fb0",
+      "content_id": "eef1df68-db07-427c-a66a-be8cef78260b",
+      "claim_id": "C53",
+      "claim": "Cargo transport through the secretory pathway can be mediated by transient tunnels or pores between successive compartments.",
+      "claim_type": "EXPLICIT",
+      "source": "We have proposed that cargo transport through the secretory pathway can be mediated by transient tunnels or pores between successive compartments (Raote and Malhotra, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to previous work by the authors",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:20:49.271426Z"
+    },
+    {
+      "id": "25159812-bb07-4fca-953e-8e4e5ca6d156",
+      "content_id": "eef1df68-db07-427c-a66a-be8cef78260b",
+      "claim_id": "C54",
+      "claim": "Retrograde fusion of ERGIC membrane to the ER could create a tunnel between the two compartments for procollagen export.",
+      "claim_type": "EXPLICIT",
+      "source": "We have shown that retrograde fusion of ERGIC membrane to the ER could create a tunnel between the two compartments for procollagen export (Nogueira et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Nogueira et al., 2014",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:20:49.271426Z"
+    },
+    {
+      "id": "90ddcd39-58b6-484b-8ad3-cf2e437c0f09",
+      "content_id": "eef1df68-db07-427c-a66a-be8cef78260b",
+      "claim_id": "C55",
+      "claim": "PI4P is required at the ERGIC-ERES interface to assist in the assembly of COPII\u2010coated vesicles at ERES.",
+      "claim_type": "EXPLICIT",
+      "source": "Lipids such as PI4P are required at the ERGIC-ERES interface to assist in the assembly of COPII\u2010coated vesicles at ERES and hence traffic from the ER (Blumental-Perry et al., 2006; Farhan et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Blumental-Perry et al., 2006 and Farhan et al., 2008",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:20:49.271426Z"
+    },
+    {
+      "id": "ccedadbd-2dfe-4ced-a41b-f3cf9e4e7dd3",
+      "content_id": "eef1df68-db07-427c-a66a-be8cef78260b",
+      "claim_id": "C56",
+      "claim": "50\u201375% of the saddle is blocked by the membrane helices based on recovery rates observed.",
+      "claim_type": "EXPLICIT",
+      "source": "The lipid flux through the partial barrier between the GUV and the tube is proportional to the effective perimeter of the saddle. From the recovery rates observed in Figure 2, then 50\u201375% of the saddle is blocked by the membrane helices.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Calculation based on experimental data from Figure 2",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:20:49.271426Z"
+    },
+    {
+      "id": "dfc63761-29ef-497b-846f-87de82e081e8",
+      "content_id": "eef1df68-db07-427c-a66a-be8cef78260b",
+      "claim_id": "C57",
+      "claim": "There are approximately 172,000 molecules of TANGO1 per cell.",
+      "claim_type": "EXPLICIT",
+      "source": "There are ~172,000 molecules of TANGO1 and 250\u2013500 exit sites per cell or 350\u2013700 TANGO1 molecules per exit site, surrounding transport intermediates (Hammond and Glick, 2000; Itzhak et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Hammond and Glick, 2000 and Itzhak et al., 2016",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:20:49.271426Z"
+    },
+    {
+      "id": "38cdc5eb-a710-484c-86cc-b283bcce2d5a",
+      "content_id": "eef1df68-db07-427c-a66a-be8cef78260b",
+      "claim_id": "C58",
+      "claim": "There are 250\u2013500 exit sites per cell.",
+      "claim_type": "EXPLICIT",
+      "source": "There are ~172,000 molecules of TANGO1 and 250\u2013500 exit sites per cell or 350\u2013700 TANGO1 molecules per exit site, surrounding transport intermediates (Hammond and Glick, 2000; Itzhak et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Hammond and Glick, 2000 and Itzhak et al., 2016",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:20:49.271426Z"
+    },
+    {
+      "id": "56f6653a-73ba-439b-8e45-1112f9ac7418",
+      "content_id": "eef1df68-db07-427c-a66a-be8cef78260b",
+      "claim_id": "C59",
+      "claim": "There are 350\u2013700 TANGO1 molecules per exit site.",
+      "claim_type": "EXPLICIT",
+      "source": "There are ~172,000 molecules of TANGO1 and 250\u2013500 exit sites per cell or 350\u2013700 TANGO1 molecules per exit site, surrounding transport intermediates (Hammond and Glick, 2000; Itzhak et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Calculation based on cited data",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:20:49.271426Z"
+    },
+    {
+      "id": "c0e4d7d3-6731-4528-b52a-d1f8c871301a",
+      "content_id": "eef1df68-db07-427c-a66a-be8cef78260b",
+      "claim_id": "C60",
+      "claim": "By assembling into a ring at an ERES, TANGO1 can act to reduce lipid flow at the boundary between the ER and ERGIC compartments.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data presented here suggest that by assembling into a ring at an ERES, TANGO1 can act to reduce lipid flow at the boundary between the two compartments, delaying lipid and most likely transmembrane protein mixing between them.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Interpretation of experimental data",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:20:49.271426Z"
+    },
+    {
+      "id": "5f1b3ffc-79be-4504-9bb1-db3bb3af9163",
+      "content_id": "eef1df68-db07-427c-a66a-be8cef78260b",
+      "claim_id": "C61",
+      "claim": "TANGO1 assembly into a ring delays lipid and most likely transmembrane protein mixing between the ER and ERGIC.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data presented here suggest that by assembling into a ring at an ERES, TANGO1 can act to reduce lipid flow at the boundary between the two compartments, delaying lipid and most likely transmembrane protein mixing between them.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Interpretation of experimental data with speculation about transmembrane proteins",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:20:49.271426Z"
+    },
+    {
+      "id": "7e2b1990-a744-46ac-b9d4-a4797c761dcf",
+      "content_id": "eef1df68-db07-427c-a66a-be8cef78260b",
+      "claim_id": "C62",
+      "claim": "The recruitment of TANGO1 to membrane regions of specific shape and curvature will make for greater efficiency in generating a bud at an ERES.",
+      "claim_type": "EXPLICIT",
+      "source": "We envisage that the recruitment of TANGO1 to membrane regions of specific shape and curvature will make for greater efficiency in generating a bud at an ERES.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Authors' speculation based on their findings",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:20:49.271426Z"
+    },
+    {
+      "id": "7692e1fe-14dd-4c0a-ab13-3da6bf93ea41",
+      "content_id": "eef1df68-db07-427c-a66a-be8cef78260b",
+      "claim_id": "C63",
+      "claim": "Neighbouring TANGO1 molecules in the ER membrane will align along curved membrane found at an ERES.",
+      "claim_type": "EXPLICIT",
+      "source": "Neighbouring TANGO1 molecules in the ER membrane will align along curved membrane - found at an ERES.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Authors' model based on their findings",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:20:49.271426Z"
+    },
+    {
+      "id": "42ff1bf4-d6de-4a5c-b9fb-31bacdc27afe",
+      "content_id": "eef1df68-db07-427c-a66a-be8cef78260b",
+      "claim_id": "C64",
+      "claim": "The process whereby a TANGO1 fence limits the coat polymerisation zone could be homologous to the roles played by proteins FCHO1/2 and EPS15/EPSR in clathrin-mediated endocytosis.",
+      "claim_type": "EXPLICIT",
+      "source": "This process, whereby a TANGO1 fence limiting the coat polymerisation zone, could be homologous to the roles played by proteins which contribute to the initiation of clathrin-mediated endocytosis FCHO1/2 and EPS15/EPSR (Avinoam et al., 2015; Ma et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculation based on analogy to other systems, supported by citations",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:20:49.271426Z"
+    },
+    {
+      "id": "2b9a567f-1629-4667-b858-f19759d1c126",
+      "content_id": "eef1df68-db07-427c-a66a-be8cef78260b",
+      "claim_id": "C65",
+      "claim": "Hundreds of TANGO1 molecules at each site will have an additive or even synergistic effect in stabilising the bud.",
+      "claim_type": "EXPLICIT",
+      "source": "Hundreds of TANGO1 molecules, at each site, will have an additive or even synergistic effect in stabilising the bud.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Authors' speculation based on their model",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:20:49.271426Z"
+    },
+    {
+      "id": "92119307-aeb5-4611-ae61-7cb02a9d98a7",
+      "content_id": "eef1df68-db07-427c-a66a-be8cef78260b",
+      "claim_id": "C66",
+      "claim": "Increased membrane curvature will promote the recruitment and localisation of curvature-sensitive components including Sar1 and COPII coat proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "As the site of budding is defined, the increased membrane curvature will promote the recruitment and localisation of curvature-sensitive components including Sar1 and COPII coat proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Authors' model based on their findings and established knowledge",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:20:49.271426Z"
+    },
+    {
+      "id": "4b7ae9ec-af55-43b0-ab60-cd462dbd4ffd",
+      "content_id": "eef1df68-db07-427c-a66a-be8cef78260b",
+      "claim_id": "C67",
+      "claim": "Curvature-sensitive components will serve to reinforce the curvature stabilisation, setting up a positive feedback loop.",
+      "claim_type": "EXPLICIT",
+      "source": "These proteins will serve to reinforce the curvature stabilisation, in effect setting up a positive feedback loop, where exit site machinery and TANGO1 mutually recruit and constrain each other through their membrane sculpting capabilities.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Authors' model based on their findings",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:20:49.271426Z"
+    },
+    {
+      "id": "240dc4f5-f35e-492a-8c19-00f883c510f8",
+      "content_id": "eef1df68-db07-427c-a66a-be8cef78260b",
+      "claim_id": "C68",
+      "claim": "Aligned TANGO1 molecules will be constrained into a configuration in which it is more likely for them to participate in lateral interactions with each other.",
+      "claim_type": "EXPLICIT",
+      "source": "Aligned TANGO1 molecules will be constrained into a configuration in which it is more likely for them to participate in lateral interactions with each other, promoting their assembly into a filament, further reinforcing the organisation of TANGO1 and its interactors at the site.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Authors' model based on their findings",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:20:49.271426Z"
+    },
+    {
+      "id": "799309b2-375c-4b09-8e5b-dc12ceffd1c8",
+      "content_id": "eef1df68-db07-427c-a66a-be8cef78260b",
+      "claim_id": "C69",
+      "claim": "Only half of the rings of TANGO1\u0394IM show detectable signal outside the ring from the C-terminal epitope.",
+      "claim_type": "EXPLICIT",
+      "source": "These reinforcing activities are evident from our data, showing that only half of the rings of TANGO1\u0394IM show detectable signal outside the ring from the C-terminal epitope (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental observation from STED microscopy shown in Figure 4",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:20:49.271426Z"
+    },
+    {
+      "id": "4762d9ae-f278-4f1e-933d-2964ac02f2ab",
+      "content_id": "eef1df68-db07-427c-a66a-be8cef78260b",
+      "claim_id": "C70",
+      "claim": "Each ring is likely comprised of hundreds of TANGO1\u0394IM molecules.",
+      "claim_type": "EXPLICIT",
+      "source": "Each ring is likely comprised of hundreds, of TANGO1\u0394IM molecules.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on previous quantification of TANGO1 molecules per exit site",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:20:49.271426Z"
+    },
+    {
+      "id": "28fb4fba-349a-465b-954a-fcc6ece8294f",
+      "content_id": "eef1df68-db07-427c-a66a-be8cef78260b",
+      "claim_id": "C71",
+      "claim": "For signal from the two different epitopes to appear normal, most molecules must be constrained in the correct orientation, probably by the combined effects of other proteins at the site including COPII components and other TANGO1 family proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "For signal from the two different epitopes to appear normal, most molecules must be constrained in the correct orientation, probably by the combined effects of other proteins at the site including COPII components and other TANGO1 family proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Authors' interpretation of STED microscopy data",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:20:49.271426Z"
+    },
+    {
+      "id": "1aa2caba-e83c-49b0-8ba7-7f9b73f4afd5",
+      "content_id": "eef1df68-db07-427c-a66a-be8cef78260b",
+      "claim_id": "C72",
+      "claim": "The recruitment/stabilisation of TANGO1 at a region of defined saddle-like shape may contribute partially to the retention of TANGO1 in the ER instead of accompanying cargo to the next secretory compartment.",
+      "claim_type": "EXPLICIT",
+      "source": "It is possible that the recruitment/stabilisation of TANGO1 at a region of defined saddle-like shape will contribute partially to the retention of TANGO1 in the ER instead of accompanying cargo to the next secretory compartment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Authors' speculation",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:20:49.271426Z"
+    },
+    {
+      "id": "d184e939-b8a3-434b-b86d-f91244a08e60",
+      "content_id": "eef1df68-db07-427c-a66a-be8cef78260b",
+      "claim_id": "C73",
+      "claim": "An alternatively spliced short variant of TANGO1 (TANGO1-short) lacks lumenal domains, but still has two helices though its IM helix has a different sequence.",
+      "claim_type": "EXPLICIT",
+      "source": "an alternatively spliced short variant of TANGO1 (TANGO1-short) lacks lumenal domains, but still has two helices though its IM helix has a different sequence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Established knowledge about TANGO1 variants",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:20:49.271426Z"
+    },
+    {
+      "id": "ee7a4dc5-41c3-44d7-b3e8-1f73a9418494",
+      "content_id": "eef1df68-db07-427c-a66a-be8cef78260b",
+      "claim_id": "C74",
+      "claim": "The TANGO1-like protein TALI (or MIA2) also has two membrane helices and is a single-pass transmembrane protein.",
+      "claim_type": "EXPLICIT",
+      "source": "The TANGO1-like protein TALI (or MIA2) also has two membrane helices and it too is a single-pass transmembrane protein.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Established knowledge about related proteins",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:20:49.271426Z"
+    },
+    {
+      "id": "6851ca49-5971-48dc-b978-4147a63b4d8d",
+      "content_id": "eef1df68-db07-427c-a66a-be8cef78260b",
+      "claim_id": "C75",
+      "claim": "TMEM131 is a single-pass transmembrane protein with two adjacent predicted membrane helices, which functions at the interface of two compartments.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, a recent study described another single-pass transmembrane protein TMEM131 with two adjacent predicted membrane helices, which functions at the interface of two compartments. Again one of these helices must span the membrane, while the other is likely inserted into one leaflet of a compartment membrane (Zhang et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Zhang et al., 2020",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:20:49.271426Z"
+    },
+    {
+      "id": "24aa60ac-de58-4a4b-85ca-b03d410a8bf4",
+      "content_id": "eef1df68-db07-427c-a66a-be8cef78260b",
+      "claim_id": "C76",
+      "claim": "In TMEM131, one helix must span the membrane, while the other is likely inserted into one leaflet of a compartment membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "Again one of these helices must span the membrane, while the other is likely inserted into one leaflet of a compartment membrane (Zhang et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Zhang et al., 2020",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:20:49.271426Z"
+    },
+    {
+      "id": "883c0506-f75b-4ffc-92e5-14347b306ba7",
+      "content_id": "eef1df68-db07-427c-a66a-be8cef78260b",
+      "claim_id": "C77",
+      "claim": "TANGO1 through its various parts selects and binds cargoes like the procollagens in the lumen.",
+      "claim_type": "EXPLICIT",
+      "source": "In sum, TANGO1 through its various parts select and bind cargoes like the procollagens in the lumen, and interacts with coats and other cytoplasmic components that tether and transiently fuse ERES to ERGIC or the cis-Golgi (in cells that lack an ERGIC).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of established knowledge about TANGO1 function",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:20:49.271426Z"
+    },
+    {
+      "id": "e1ee2dac-3c38-442a-bb0b-9ab2492b8e96",
+      "content_id": "eef1df68-db07-427c-a66a-be8cef78260b",
+      "claim_id": "C78",
+      "claim": "TANGO1 interacts with coats and other cytoplasmic components that tether and transiently fuse ERES to ERGIC or the cis-Golgi.",
+      "claim_type": "EXPLICIT",
+      "source": "and interacts with coats and other cytoplasmic components that tether and transiently fuse ERES to ERGIC or the cis-Golgi (in cells that lack an ERGIC).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of established knowledge about TANGO1 function",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:20:49.271426Z"
+    },
+    {
+      "id": "822f08b7-a9ff-42ad-bb2c-25fb339ed620",
+      "content_id": "eef1df68-db07-427c-a66a-be8cef78260b",
+      "claim_id": "C79",
+      "claim": "The transmembrane helices in TANGO1 assist in its alignment into a ring to prevent membrane protein and lipid mixing during the transient coupling of the ER and ERGIC compartments.",
+      "claim_type": "EXPLICIT",
+      "source": "The transmembrane helices in TANGO1 assist in its alignment into a ring to prevent membrane protein and lipid mixing during the transient coupling of these two secretory compartments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion based on experimental data and interpretation",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:20:49.271426Z"
+    },
+    {
+      "id": "bcc97ca7-c992-491f-8acb-1c5b9ebe68a5",
+      "content_id": "eef1df68-db07-427c-a66a-be8cef78260b",
+      "claim_id": "C80",
+      "claim": "The transient pore or tunnel allows cargo movement while retaining compartmental specificity.",
+      "claim_type": "EXPLICIT",
+      "source": "This transient pore or tunnel thus allows cargo movement while retaining compartmental specificity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion based on the authors' model and experimental findings",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:20:49.271426Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "783f5789-d8f0-4a92-b8f3-a13deb92fe28",
+      "content_id": "eef1df68-db07-427c-a66a-be8cef78260b",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors reconstituted TANGO1 membrane helices (IM-TM) in model membranes (GUVs) and demonstrated that the two helices together reduce lipid flow between a pulled tube and the GUV. Fluorescence recovery after photobleaching showed that IM-TM reduced recovery to 35\u00b15% compared to 60\u00b16% for no protein and 56\u00b112% for TM alone. The authors estimate this corresponds to blocking 50-75% of the saddle region.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C23-C26, C51 are well-supported by experimental data from the GUV tube-pulling and photobleaching experiments (Figure 2). The protein incorporation was validated (C21), protein:lipid ratios were estimated (C22), and membrane fluidity was confirmed by FRAP (C27-C30). The calculation that 50-75% of the saddle is blocked (C56) follows logically from the recovery data, though it involves assumptions about the relationship between recovery and barrier extent.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:20:49.271426Z"
+    },
+    {
+      "id": "e6f3366c-3810-479d-9e90-488d0eb26526",
+      "content_id": "eef1df68-db07-427c-a66a-be8cef78260b",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The authors tested whether TANGO1 membrane helices function as a shape sensor for ERES localization by deleting the IM or TM helices. Deletion of IM had no effect on ERES localization (measured by colocalization with Sec16A), while deletion of TM abolished ERES localization. The authors conclude that membrane curvature/shape sensitivity is not the dominant ERES-targeting mechanism, and that the PRD domain is more important.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31-C32 are supported by immunofluorescence data (Figure 3) showing differential effects of IM vs TM deletion on ERES localization. The control experiments with procollagen VII (C35-C37) strengthen the interpretation. The conclusion (C38-C39) that the PRD is more important than membrane shape sensing for ERES targeting is reasonable given the data, though the PRD was not directly tested in these experiments.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:20:49.271426Z"
+    },
+    {
+      "id": "89f08a6c-fa7c-42da-99c3-39ba24783f50",
+      "content_id": "eef1df68-db07-427c-a66a-be8cef78260b",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Using STED microscopy with antibodies against lumenal and cytoplasmic epitopes, the authors show that TANGO1 assembles into rings at ERES with two distinct configurations. Deletion or mutation of the IM helix resulted in misalignment of the C-terminal and lumenal epitopes in many rings, suggesting the IM helix helps orient TANGO1 molecules within the ring structure.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41-C42, C47-C49, and C69 are supported by STED microscopy data (Figure 4). The observation that TANGO1\u0394IM shows altered epitope alignment compared to wild-type TANGO1 provides evidence that the IM helix contributes to proper molecular orientation. However, the interpretation that these represent discrete temporal configurations during carrier formation (C43-C45) is speculative and not directly demonstrated. The claim that hundreds of molecules must be properly oriented (C70-C71) is reasonable inference but not directly measured.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:20:49.271426Z"
+    },
+    {
+      "id": "c92cd14b-8fdc-46f7-8fff-b0ff37cc9a89",
+      "content_id": "eef1df68-db07-427c-a66a-be8cef78260b",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The authors summarize their previous work establishing that TANGO1 organizes membranes at ER-ERGIC/Golgi interfaces, assembles into rings at ERES, and utilizes retrograde membrane fusion to create export conduits for procollagen. In this model, the retrograde ERGIC membrane itself serves as the anterograde carrier.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims (C1-C3, C15-C18, C53-C54, C77-C78) are appropriately cited to previous work by the authors and others. They provide essential context for the current study but are not new findings presented in this manuscript. The citations appear accurate based on the references provided.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:20:49.271426Z"
+    },
+    {
+      "id": "70273d35-a9e5-4927-a6d8-644b41c303cc",
+      "content_id": "eef1df68-db07-427c-a66a-be8cef78260b",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The authors propose that by assembling into a ring at ERES, TANGO1 acts to reduce lipid flow at the boundary between ER and ERGIC compartments, thereby delaying lipid and transmembrane protein mixing while allowing cargo movement through a transient tunnel/pore.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C60 and C52 represent reasonable interpretations of the combined in vitro (GUV) and in vivo (STED) data. However, the extension to transmembrane proteins (C61) is speculative as no direct evidence for protein barrier function is provided. The claim about the transient tunnel allowing cargo movement while maintaining compartmental specificity (C80) is a model/hypothesis rather than a demonstrated result from this study.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:20:49.271426Z"
+    },
+    {
+      "id": "3efa864b-eb39-47f6-b784-5e4b0e1e349d",
+      "content_id": "eef1df68-db07-427c-a66a-be8cef78260b",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "TANGO1 has an unusual membrane organization with one transmembrane helix (TM, residues 1177-1197) and one intramembrane helix (IM, residues 1145-1165) that penetrates the inner leaflet. Related proteins including TANGO1-short, TALI/MIA2, and TMEM131 also possess similar dual-helix architectures.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C19-C20 are supported by citations to previous structural work (Saito et al., 2009). The information about related proteins (C73-C76) is appropriately cited to established knowledge and recent literature (Zhang et al., 2020). These are accurate summaries of prior work providing context for the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:20:49.271426Z"
+    },
+    {
+      "id": "c66b5737-dad1-42e5-bb11-24cb210fdb78",
+      "content_id": "eef1df68-db07-427c-a66a-be8cef78260b",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The authors review background literature on membrane curvature in lipid sorting, COPII vesicle composition, ERES structure, procollagen size constraints, and conflicting reports about large COPII carriers.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims (C7-C14, C55) accurately summarize relevant background literature with appropriate citations. They establish the scientific context and open questions that motivate the current study. The citations appear accurate and the summaries fair.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:20:49.271426Z"
+    },
+    {
+      "id": "795f1733-5d6b-4aad-a615-ced93494184e",
+      "content_id": "eef1df68-db07-427c-a66a-be8cef78260b",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Based on published quantitative proteomics and cell biology data, there are approximately 172,000 TANGO1 molecules per cell distributed across 250-500 exit sites, corresponding to 350-700 TANGO1 molecules per ERES.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57-C59 are appropriately cited to published quantitative studies (Hammond and Glick, 2000; Itzhak et al., 2016). The calculation of molecules per exit site (C59) follows logically from the cited values. These provide useful quantitative context for interpreting the model.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:20:49.271426Z"
+    },
+    {
+      "id": "c31644eb-071f-420e-9eff-63afa39a72bf",
+      "content_id": "eef1df68-db07-427c-a66a-be8cef78260b",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The authors propose several speculative mechanisms by which TANGO1 membrane helices might contribute to ERES organization, including feedback loops for ring reinforcement, recruitment of curvature-sensitive proteins, promotion of lateral interactions, and potential contributions to ER retention.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "These claims (C50, C62-C68, C72) are explicitly speculative models and hypotheses rather than demonstrated results. They represent reasonable extrapolations from the data but lack direct experimental support. The analogy to clathrin-mediated endocytosis proteins (C64) is interesting but speculative. These are appropriate for a Discussion section but should not be considered supported findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:20:49.271426Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "28d86728-a261-4c84-801b-a2cd6858e801",
+      "result_id": "783f5789-d8f0-4a92-b8f3-a13deb92fe28"
+    },
+    {
+      "claim_id": "9b05623f-86b1-4d5a-9e6b-d69ca11656ab",
+      "result_id": "783f5789-d8f0-4a92-b8f3-a13deb92fe28"
+    },
+    {
+      "claim_id": "c8142de7-46bd-4762-a7ea-107e3a3d3de4",
+      "result_id": "783f5789-d8f0-4a92-b8f3-a13deb92fe28"
+    },
+    {
+      "claim_id": "133eb07f-ce64-4818-ade0-91db37cc1ee4",
+      "result_id": "783f5789-d8f0-4a92-b8f3-a13deb92fe28"
+    },
+    {
+      "claim_id": "b7dccb25-e3d9-41c7-b9b1-447d0334cbc4",
+      "result_id": "783f5789-d8f0-4a92-b8f3-a13deb92fe28"
+    },
+    {
+      "claim_id": "1cb8e9a2-1d76-412a-b7f2-b9231b9ab28f",
+      "result_id": "783f5789-d8f0-4a92-b8f3-a13deb92fe28"
+    },
+    {
+      "claim_id": "42481158-9147-4c51-861e-71eb403a1837",
+      "result_id": "783f5789-d8f0-4a92-b8f3-a13deb92fe28"
+    },
+    {
+      "claim_id": "04b03931-5b58-463e-a2e5-9b2e8cefa756",
+      "result_id": "783f5789-d8f0-4a92-b8f3-a13deb92fe28"
+    },
+    {
+      "claim_id": "f8b82c5e-d7b7-49e5-9715-360a85e7830c",
+      "result_id": "783f5789-d8f0-4a92-b8f3-a13deb92fe28"
+    },
+    {
+      "claim_id": "893c7dc2-c90d-442e-98aa-61b28b6358e6",
+      "result_id": "783f5789-d8f0-4a92-b8f3-a13deb92fe28"
+    },
+    {
+      "claim_id": "5d7e519b-253d-4fc2-a1b6-73e271dfc9a8",
+      "result_id": "783f5789-d8f0-4a92-b8f3-a13deb92fe28"
+    },
+    {
+      "claim_id": "846c0305-605f-4bfb-8ac7-3ed4d0e343db",
+      "result_id": "783f5789-d8f0-4a92-b8f3-a13deb92fe28"
+    },
+    {
+      "claim_id": "ccedadbd-2dfe-4ced-a41b-f3cf9e4e7dd3",
+      "result_id": "783f5789-d8f0-4a92-b8f3-a13deb92fe28"
+    },
+    {
+      "claim_id": "d4779d12-be27-483e-93dd-bf21d3361b67",
+      "result_id": "e6f3366c-3810-479d-9e90-488d0eb26526"
+    },
+    {
+      "claim_id": "40b2bf6c-87e4-45ed-8e0f-25df67a518e6",
+      "result_id": "e6f3366c-3810-479d-9e90-488d0eb26526"
+    },
+    {
+      "claim_id": "9b2e1759-165c-406c-a8e1-d924304723b3",
+      "result_id": "e6f3366c-3810-479d-9e90-488d0eb26526"
+    },
+    {
+      "claim_id": "493fb9ec-5dc6-4fb8-a259-cab1b203a8f3",
+      "result_id": "e6f3366c-3810-479d-9e90-488d0eb26526"
+    },
+    {
+      "claim_id": "e2f9612a-0183-41cc-870d-4dbae8e93b33",
+      "result_id": "e6f3366c-3810-479d-9e90-488d0eb26526"
+    },
+    {
+      "claim_id": "27114ae6-2d80-4395-9a47-e2c8bd7fb2b8",
+      "result_id": "e6f3366c-3810-479d-9e90-488d0eb26526"
+    },
+    {
+      "claim_id": "30d62955-cb87-409d-b6fe-f0484a665216",
+      "result_id": "e6f3366c-3810-479d-9e90-488d0eb26526"
+    },
+    {
+      "claim_id": "6fa7c602-c9f4-47b2-981a-2fc67a249f5d",
+      "result_id": "e6f3366c-3810-479d-9e90-488d0eb26526"
+    },
+    {
+      "claim_id": "2a2423b6-0c52-4056-bf32-26018da52228",
+      "result_id": "e6f3366c-3810-479d-9e90-488d0eb26526"
+    },
+    {
+      "claim_id": "70b12c91-67ac-4ede-af30-bb0521399099",
+      "result_id": "89f08a6c-fa7c-42da-99c3-39ba24783f50"
+    },
+    {
+      "claim_id": "7c341442-d60a-4a1f-9df5-ac06bb205a88",
+      "result_id": "89f08a6c-fa7c-42da-99c3-39ba24783f50"
+    },
+    {
+      "claim_id": "cf351e6e-04f4-4c64-a92e-d2c60b0279ec",
+      "result_id": "89f08a6c-fa7c-42da-99c3-39ba24783f50"
+    },
+    {
+      "claim_id": "9c79b874-817f-4eb4-9966-ec4934896ab8",
+      "result_id": "89f08a6c-fa7c-42da-99c3-39ba24783f50"
+    },
+    {
+      "claim_id": "b37aefc4-b6e9-4336-9e41-b51458a5c85f",
+      "result_id": "89f08a6c-fa7c-42da-99c3-39ba24783f50"
+    },
+    {
+      "claim_id": "495a217d-6530-4a3c-b234-f2926221905f",
+      "result_id": "89f08a6c-fa7c-42da-99c3-39ba24783f50"
+    },
+    {
+      "claim_id": "c9decadd-6575-4f33-bc83-6662bdb7272b",
+      "result_id": "89f08a6c-fa7c-42da-99c3-39ba24783f50"
+    },
+    {
+      "claim_id": "14c0b9e5-9f38-4407-91dc-b8c18f6d7eb8",
+      "result_id": "89f08a6c-fa7c-42da-99c3-39ba24783f50"
+    },
+    {
+      "claim_id": "d9c8345a-3db0-41f2-ade0-b8869464b83f",
+      "result_id": "89f08a6c-fa7c-42da-99c3-39ba24783f50"
+    },
+    {
+      "claim_id": "bf2b77b7-6a80-4114-bd72-515de19d192e",
+      "result_id": "89f08a6c-fa7c-42da-99c3-39ba24783f50"
+    },
+    {
+      "claim_id": "3f6636b7-ccba-41fa-8df0-228ce0b30bbf",
+      "result_id": "89f08a6c-fa7c-42da-99c3-39ba24783f50"
+    },
+    {
+      "claim_id": "799309b2-375c-4b09-8e5b-dc12ceffd1c8",
+      "result_id": "89f08a6c-fa7c-42da-99c3-39ba24783f50"
+    },
+    {
+      "claim_id": "4762d9ae-f278-4f1e-933d-2964ac02f2ab",
+      "result_id": "89f08a6c-fa7c-42da-99c3-39ba24783f50"
+    },
+    {
+      "claim_id": "28fb4fba-349a-465b-954a-fcc6ece8294f",
+      "result_id": "89f08a6c-fa7c-42da-99c3-39ba24783f50"
+    },
+    {
+      "claim_id": "822f08b7-a9ff-42ad-bb2c-25fb339ed620",
+      "result_id": "89f08a6c-fa7c-42da-99c3-39ba24783f50"
+    },
+    {
+      "claim_id": "31648bbc-4ace-457b-a8d4-76167143787a",
+      "result_id": "c92cd14b-8fdc-46f7-8fff-b0ff37cc9a89"
+    },
+    {
+      "claim_id": "09a86cbf-2c74-43db-bb6d-ecd9479637aa",
+      "result_id": "c92cd14b-8fdc-46f7-8fff-b0ff37cc9a89"
+    },
+    {
+      "claim_id": "8e34fe90-5568-4947-a53e-ce9976c9c168",
+      "result_id": "c92cd14b-8fdc-46f7-8fff-b0ff37cc9a89"
+    },
+    {
+      "claim_id": "ff635f23-2e2f-4c50-bd6f-fefbe238bcc8",
+      "result_id": "c92cd14b-8fdc-46f7-8fff-b0ff37cc9a89"
+    },
+    {
+      "claim_id": "76cccfb7-b808-4253-a7cb-2e82636dc343",
+      "result_id": "c92cd14b-8fdc-46f7-8fff-b0ff37cc9a89"
+    },
+    {
+      "claim_id": "5361769d-e47f-4f52-b866-e6dd3f9061cd",
+      "result_id": "c92cd14b-8fdc-46f7-8fff-b0ff37cc9a89"
+    },
+    {
+      "claim_id": "1d3f64c8-21a7-4ba4-9dd7-b5eed9cbbffe",
+      "result_id": "c92cd14b-8fdc-46f7-8fff-b0ff37cc9a89"
+    },
+    {
+      "claim_id": "3dfc6933-3fa0-42f6-a244-b01de9730fb0",
+      "result_id": "c92cd14b-8fdc-46f7-8fff-b0ff37cc9a89"
+    },
+    {
+      "claim_id": "25159812-bb07-4fca-953e-8e4e5ca6d156",
+      "result_id": "c92cd14b-8fdc-46f7-8fff-b0ff37cc9a89"
+    },
+    {
+      "claim_id": "883c0506-f75b-4ffc-92e5-14347b306ba7",
+      "result_id": "c92cd14b-8fdc-46f7-8fff-b0ff37cc9a89"
+    },
+    {
+      "claim_id": "e1ee2dac-3c38-442a-bb0b-9ab2492b8e96",
+      "result_id": "c92cd14b-8fdc-46f7-8fff-b0ff37cc9a89"
+    },
+    {
+      "claim_id": "c0e4d7d3-6731-4528-b52a-d1f8c871301a",
+      "result_id": "70273d35-a9e5-4927-a6d8-644b41c303cc"
+    },
+    {
+      "claim_id": "5f1b3ffc-79be-4504-9bb1-db3bb3af9163",
+      "result_id": "70273d35-a9e5-4927-a6d8-644b41c303cc"
+    },
+    {
+      "claim_id": "7e90e48b-79e4-4bbe-b132-bdcb069e0396",
+      "result_id": "70273d35-a9e5-4927-a6d8-644b41c303cc"
+    },
+    {
+      "claim_id": "bcc97ca7-c992-491f-8acb-1c5b9ebe68a5",
+      "result_id": "70273d35-a9e5-4927-a6d8-644b41c303cc"
+    },
+    {
+      "claim_id": "1428b519-c34c-470a-b851-594e9d93ec15",
+      "result_id": "3efa864b-eb39-47f6-b784-5e4b0e1e349d"
+    },
+    {
+      "claim_id": "b2d58a65-9f87-4dbf-9b45-3bb717024ea6",
+      "result_id": "3efa864b-eb39-47f6-b784-5e4b0e1e349d"
+    },
+    {
+      "claim_id": "c31f1120-4355-42dd-b114-2ab0bf78cea2",
+      "result_id": "3efa864b-eb39-47f6-b784-5e4b0e1e349d"
+    },
+    {
+      "claim_id": "d184e939-b8a3-434b-b86d-f91244a08e60",
+      "result_id": "3efa864b-eb39-47f6-b784-5e4b0e1e349d"
+    },
+    {
+      "claim_id": "ee7a4dc5-41c3-44d7-b3e8-1f73a9418494",
+      "result_id": "3efa864b-eb39-47f6-b784-5e4b0e1e349d"
+    },
+    {
+      "claim_id": "6851ca49-5971-48dc-b978-4147a63b4d8d",
+      "result_id": "3efa864b-eb39-47f6-b784-5e4b0e1e349d"
+    },
+    {
+      "claim_id": "24aa60ac-de58-4a4b-85ca-b03d410a8bf4",
+      "result_id": "3efa864b-eb39-47f6-b784-5e4b0e1e349d"
+    },
+    {
+      "claim_id": "4a340c80-7c74-4f53-9159-00cf367a0c0b",
+      "result_id": "c66b5737-dad1-42e5-bb11-24cb210fdb78"
+    },
+    {
+      "claim_id": "9fadd8cc-7097-4b91-b1c0-64be7d164f50",
+      "result_id": "c66b5737-dad1-42e5-bb11-24cb210fdb78"
+    },
+    {
+      "claim_id": "d67da1cd-0c7b-4700-a601-0564dbb68ba8",
+      "result_id": "c66b5737-dad1-42e5-bb11-24cb210fdb78"
+    },
+    {
+      "claim_id": "9f076238-4ada-4157-82b5-c8efcfbd2f82",
+      "result_id": "c66b5737-dad1-42e5-bb11-24cb210fdb78"
+    },
+    {
+      "claim_id": "aa078220-5846-407a-9074-866dd7477842",
+      "result_id": "c66b5737-dad1-42e5-bb11-24cb210fdb78"
+    },
+    {
+      "claim_id": "93a0adb1-aa02-46a5-a8b0-41e77561ce93",
+      "result_id": "c66b5737-dad1-42e5-bb11-24cb210fdb78"
+    },
+    {
+      "claim_id": "7f9e130d-87cf-4f78-b992-c60a034905ca",
+      "result_id": "c66b5737-dad1-42e5-bb11-24cb210fdb78"
+    },
+    {
+      "claim_id": "a69dbdd8-e043-49b4-86e2-ecbfd213feff",
+      "result_id": "c66b5737-dad1-42e5-bb11-24cb210fdb78"
+    },
+    {
+      "claim_id": "90ddcd39-58b6-484b-8ad3-cf2e437c0f09",
+      "result_id": "c66b5737-dad1-42e5-bb11-24cb210fdb78"
+    },
+    {
+      "claim_id": "dfc63761-29ef-497b-846f-87de82e081e8",
+      "result_id": "795f1733-5d6b-4aad-a615-ced93494184e"
+    },
+    {
+      "claim_id": "38cdc5eb-a710-484c-86cc-b283bcce2d5a",
+      "result_id": "795f1733-5d6b-4aad-a615-ced93494184e"
+    },
+    {
+      "claim_id": "56f6653a-73ba-439b-8e45-1112f9ac7418",
+      "result_id": "795f1733-5d6b-4aad-a615-ced93494184e"
+    },
+    {
+      "claim_id": "23e2b2a4-6ef8-4bd4-8383-e76d537e6d82",
+      "result_id": "c31644eb-071f-420e-9eff-63afa39a72bf"
+    },
+    {
+      "claim_id": "7e2b1990-a744-46ac-b9d4-a4797c761dcf",
+      "result_id": "c31644eb-071f-420e-9eff-63afa39a72bf"
+    },
+    {
+      "claim_id": "7692e1fe-14dd-4c0a-ab13-3da6bf93ea41",
+      "result_id": "c31644eb-071f-420e-9eff-63afa39a72bf"
+    },
+    {
+      "claim_id": "42ff1bf4-d6de-4a5c-b9fb-31bacdc27afe",
+      "result_id": "c31644eb-071f-420e-9eff-63afa39a72bf"
+    },
+    {
+      "claim_id": "2b9a567f-1629-4667-b858-f19759d1c126",
+      "result_id": "c31644eb-071f-420e-9eff-63afa39a72bf"
+    },
+    {
+      "claim_id": "92119307-aeb5-4611-ae61-7cb02a9d98a7",
+      "result_id": "c31644eb-071f-420e-9eff-63afa39a72bf"
+    },
+    {
+      "claim_id": "4b7ae9ec-af55-43b0-ab60-cd462dbd4ffd",
+      "result_id": "c31644eb-071f-420e-9eff-63afa39a72bf"
+    },
+    {
+      "claim_id": "240dc4f5-f35e-492a-8c19-00f883c510f8",
+      "result_id": "c31644eb-071f-420e-9eff-63afa39a72bf"
+    },
+    {
+      "claim_id": "1aa2caba-e83c-49b0-8ba7-7f9b73f4afd5",
+      "result_id": "c31644eb-071f-420e-9eff-63afa39a72bf"
+    }
+  ],
+  "comparisons": []
+}

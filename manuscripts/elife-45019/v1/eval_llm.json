@@ -1,0 +1,337 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "Differential expansion between the EGL and core correlates temporally with cerebellar folding initiation. At E16.5 and E17.5, the EGL and core expand proportionally (approximating semicircular expansion), and the cerebellum remains unfolded. At E18.5 and P0, the EGL expands faster than the core (differential expansion), and folding initiates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C16 provide consistent measurements from Figure 1f-g showing that proportional expansion precedes folding, while differential expansion coincides with folding initiation. The temporal correlation is clearly demonstrated with appropriate sample sizes (n=6-9 cerebella per stage) and quantitative metrics (folding index).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "Elastic bilayer wrinkling models require a stiffness ratio of ~50:1 (EGL:core) to produce the observed number of folds, but scanning acoustic microscopy measurements reveal only a ~1.05:1 ratio, which is insufficient to generate the observed folding pattern.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C20 demonstrate a clear discrepancy between model requirements and experimental measurements. The modeling prediction (C17) is well-constrained by developmental measurements, and the SAM measurements (C18-C19, Figure 2b-d) are conducted across multiple stages with appropriate statistical analysis (ANOVA, p=1.0e-4). The conclusion that elastic wrinkling models are insufficient (C20) logically follows from this mismatch.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C83"
+    ],
+    "result": "Tissue cutting experiments reveal circumferential tension in the EGL, contradicting elastic bilayer model predictions. Elastic models predict the EGL should remain closed after radial cutting, but time-lapse imaging shows the EGL opens after cutting.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C22 and C83 present a clear experimental test of model predictions. The elastic simulation prediction (C83, Figure 2e) is contradicted by experimental observations (C21, Figure 2f-h, Video 1) from 10 radial cuts. The inference of circumferential tension (C22) is a reasonable interpretation of the opening behavior, though alternative explanations are not explicitly ruled out.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "The EGL exhibits 'out-of-phase' thickness variation (thickest at anchoring centers) during folding initiation, which is incompatible with elastic bilayer models that require 'in-phase' thickness variation (thinnest at folds) for mechanical equilibrium.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C24 provide quantitative measurements showing EGL is 1.2-1.4\u00d7 thicker at ACs at E16.5-17.5 and 1.7\u00d7 thicker at E18.5 (Figure 2i-l, with appropriate statistical analysis). Claims C84-C86 correctly identify this as contradicting elastic model requirements. The mechanical equilibrium argument (C85) is supported by citation to Engstrom et al., 2018. However, the claim relies partly on prior work (C86) rather than being fully demonstrated here.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Proliferation rates in the EGL are uniform across lobule regions (L123, L45, L678) at E16.5, with only a slight reduction in L678 at E17.5. This uniformity indicates that lobule size is not determined by differential proliferation at folding initiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C26 present proliferation measurements (Figure 3c-d) with appropriate statistical analysis (two-way ANOVA). The inference of uniform proliferation (C27) and conclusion about lobule size determination (C28) are reasonable given the data. However, the conclusion (C28) is somewhat speculative as alternative mechanisms for lobule size determination are not directly tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Proliferation rates within anchoring centers (ACs) are uniform with surrounding EGL at E16.5 and E17.5, indicating that regional modulation of proliferation does not form or position ACs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C31 provide measurements showing uniform proliferation in ACs versus surrounding regions (Figure 3e-f, two-way ANOVA). The inference that proliferation uniformity means proliferation doesn't position ACs (C31) is logical, though it doesn't rule out that other properties of proliferating cells might be involved. The conclusion is appropriately limited to the initiation phase.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Granule cell precursors in the EGL show uniform cell shape and size across lobule regions at folding initiation (E16.5), with only minor regional differences. Cell size decreases from E16.5 to E18.5.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C36 present cell shape (sphericity) and size measurements from 3D segmentation of fluorescently labeled cells (Figure 3g-k, n=131 at E16.5, n=201 at E18.5). Statistical analysis (ANOVA) supports the uniformity claims. The summary inference (C37) appropriately integrates these findings with proliferation data. The methods for 3D segmentation and sphericity calculation are adequately described.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C38",
+      "C39"
+    ],
+    "result": "Bergmann glial and radial glial fibers are distributed evenly along the anterior-posterior axis of the EGL and therefore do not direct folding positions through uneven regional distribution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C39 present fiber density measurements from fluorescently labeled glial cells (Figure 4a-b, ANOVA p=0.76). The uniform distribution is well-documented. However, the inference (C39) that uniform distribution means fibers don't direct folding is somewhat limited\u2014fibers could still play a role through mechanisms other than regional density variation (e.g., through tension as explored elsewhere in the paper).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C40",
+      "C41"
+    ],
+    "result": "Horizontal cuts between the EGL and ventricular zone reveal radial tension within the cerebellum. Horizontal cuts open along their full length but more slowly than radial cuts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C41 present tissue cutting experiments (Figure 4c-e, Video 2, Figure 2\u2014supplement 2g-j) with quantification of opening behavior (8 horizontal cuts). Statistical analysis (t-tests) supports the differential opening patterns. The inference of radial tension (C40) is reasonable given the relaxation behavior, though the interpretation could be complicated by anisotropic material properties.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "Granule cells in the EGL are highly motile and constantly exchange nearest neighbors over tens to hundreds of minutes, indicating the EGL behaves as a fluid-like material at the timescale of folding rather than as a solid epithelial layer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C47 present live imaging data tracking cell positions over 5 hours (Figure 5, Videos 3-4, n=3 time-lapses). The observation of neighbor exchange is clearly documented. The inference that this indicates fluid-like behavior (C48) is reasonable given the timescale of rearrangement relative to folding (days), though a more quantitative analysis of diffusivity or viscosity would strengthen this claim.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "A multi-phase model incorporating differential expansion of a fluid EGL, incompressible core, and radial/circumferential constraints approximates the observed shape evolution from E16.5-E18.5, including out-of-phase thickness oscillations. However, the model cannot produce self-contacting folds or hierarchical folding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C50 present modeling results constrained by experimental measurements (Figure 6a-c). The model successfully captures phase and amplitude behavior of thickness and radius oscillations. Claims C89-C91 describe key model predictions that distinguish it from elastic models. The limitation (C50) is appropriately acknowledged. However, the model involves several fitted parameters and assumptions, and the degree to which it uniquely explains the data versus other possible models is not fully explored.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "In lobule regions L123 and L678 that undergo hierarchical folding, there is temporal correlation between differential expansion and sub-folding onset. In contrast, region L45 maintains rectangular proportional expansion and does not fold during the same period.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C53 present measurements of regional expansion from E18.5 to P3 (Figure 7). The correlation between differential expansion and folding in L123/L678, and the lack of both in L45, is clearly demonstrated. This provides evidence that similar mechanics may drive hierarchical folding. However, the sample sizes and statistical analysis for these later-stage measurements are not fully specified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C32",
+      "C33"
+    ],
+    "result": "At E18.5 (after folding initiation), proliferation is significantly lower in L678 compared to L123 and L45, but proliferation within ACs remains uniform with surrounding regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C33 present proliferation measurements at E18.5 (Figure 3\u2014supplement 1a-b) with appropriate statistical analysis (ANOVA). This demonstrates that regional proliferation differences emerge after folding initiation, consistent with the interpretation that they are consequences rather than causes of initial folding. The sample size (n=4 cerebella) is adequate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C54"
+    ],
+    "result": "At folding initiation, the EGL grows uniformly without pre-patterning in cellular behaviors or fiber distribution, and the cerebellum is under both radial and circumferential constraints. Traditional morphometric cellular behaviors do not direct where folding initiates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C44 and C54 provide summary conclusions integrating multiple experimental findings (proliferation uniformity, cell shape/size uniformity, fiber distribution uniformity, and mechanical constraints). These conclusions are well-supported by the individual experimental results. However, the claim that there is 'no evidence' of pre-patterning (C44) is strong\u2014absence of evidence in the measured parameters doesn't definitively rule out pre-patterning in unmeasured molecular or cellular properties.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "The multi-phase model predicts that the ratio of core stiffness to radial tension must increase from E17.5 to E18.5, but since core bulk modulus doesn't increase, radial tension must decrease during development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C61 present a logical inference from the model combined with experimental measurements. The model prediction (C59) is clearly stated, the experimental observation (C60) is supported by SAM data, and the conclusion (C61) follows logically. However, this is a prediction that requires future experimental validation\u2014the decrease in radial tension is inferred but not directly measured.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Radial glial fibers are proposed as candidates to mediate changes in radial tension, as they span from VZ to surface at E16.5 and transition to Bergmann glia during folding initiation, potentially reducing global radial tension.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C62-C65 present a speculative mechanism for how radial tension might decrease. While the biological facts about radial glia (C63-C64) are supported by citations, the connection to tension changes (C62, C65) is speculative and not directly tested. This represents a reasonable hypothesis for future work but is not experimentally validated in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Anchoring centers (ACs) maintain spatial positions and compartmentalize granule cells, potentially creating fixed mechanical boundaries that divide the cerebellum into self-similar domains and allow lobule regions to develop distinct characteristics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C66-C67 cite prior work (Legu\u00e9 et al., 2015) for AC properties. Claims C68-C69 present speculative interpretations about mechanical boundaries and regional differentiation. While consistent with the hierarchical folding observations (C51-C53), the mechanical boundary hypothesis is not directly tested. This represents a reasonable model for future investigation but lacks direct experimental support in this manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "The multi-phase model predicts that adjusting tension will change folding degree, which could explain disrupted folding in mutants lacking Bergmann glia. These mutants show more localized and less regular folds, consistent with model predictions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C55 presents a model prediction. Claims C56-C58 attempt to connect this to published mutant phenotypes (Li et al., 2014). However, this is post-hoc interpretation of existing data rather than a direct test. The connection between the model and the mutant phenotype is plausible but speculative\u2014other mechanisms could also explain the mutant phenotype. This would require targeted experiments to validate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "The murine cerebellum has stereotypical folds and a temporary external granule cell layer (EGL) that drives anterior-posterior growth. A bilayer model (EGL and core) is more appropriate than a tri-layer model for studying folding initiation, as the molecular layer and inner granule layer are absent at folding initiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C6 present established anatomical and developmental facts about the cerebellum, supported by citations and general knowledge. Claim C7 presents a logical inference that the bilayer approximation is more appropriate for studying folding initiation. This reasoning is sound given that the additional layers are not present at the relevant developmental stage.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Similarities exist between cerebellar and cerebral cortex development, including radial glia spanning both structures, evolution of outer radial glial cells in folded cerebrums, similar tension patterns during folding, and outer radial glial cell proliferation driving expansion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C75 present comparisons between cerebellum and cerebral cortex based on cited literature. These are appropriate contextualizations of the current work within the broader field. However, these are not novel findings of this study but rather synthesis of prior work to motivate potential broader implications of the cerebellar findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "The unfolded murine cerebellum is a cylinder-like structure elongated medio-laterally, with folds in the vermis aligned in the same axis, and approximates a semicircle in cross-section.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C78 describe the cerebellar geometry that justifies the 2D measurement approach. C76 is supported by citation and Figure 1e. C77-C78 describe anatomical features that are well-established. These claims provide important methodological justification for the measurement approach used throughout the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C81",
+      "C82"
+    ],
+    "result": "Small modulus contrasts have been reported for other brain regions, and elastic models with graded growth profiles can predict cortical folding without large stiffness differentials.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C82 cite prior literature to contextualize the findings about small stiffness ratios in the cerebellum. These appropriately acknowledge that the finding of small stiffness contrast is consistent with other brain regions and that alternative elastic models exist. However, the paper goes on to show these models are also insufficient (via the cutting experiments and thickness variation observations).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C70"
+    ],
+    "result": "Folding patterns across cerebellar species may have evolved through adjustment of global and regional levels of differential expansion and tension.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C70 presents an evolutionary speculation based on the findings. While this is a reasonable hypothesis given the demonstrated importance of differential expansion and tension in the mouse cerebellum, it is purely speculative without comparative data from other species. This represents an interesting direction for future comparative studies.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,466 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C39",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C80",
+      "C81",
+      "C86",
+      "C87"
+    ],
+    "result": "Yeast P bodies contain two distinct classes of proteins: seven highly concentrated (HC) proteins at 5.1\u201315 \u00b5M (Dcp2, Edc3, Pat1, Xrn1, Lsm1, Dhh1, Upf1) and 24 less concentrated (LC) proteins, most at \u22642.6 \u00b5M. This demonstrates that P bodies are compositionally simpler than suggested by qualitative proteomic studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C3, C39, C73-C78, C80-C81, and C86-C87 are well-supported by quantitative fluorescence microscopy measurements shown in Figure 1. The data clearly show a bimodal distribution with a sharp distinction between HC and LC proteins, with appropriate sample sizes (16-25 cells per protein) and statistical presentation (mean \u00b1 SEM). The methodology includes proper PSF correction and calibration against GFP standards.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C40",
+      "C46",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "P body protein concentration inversely correlates with cytoplasmic exchange rate. HC proteins exchange 5-fold slower and show 2-fold lower fractional recovery compared to LC proteins, as measured by FRAP.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C40, C46, C88-C94 are supported by FRAP data in Figure 2 and Figure 2\u2014figure supplement 1. The inverse correlation between concentration and dynamics is demonstrated with appropriate statistical analysis (Wilcoxon rank-sum test, p<0.001). Multiple controls (iFRAP, different tags) validate that the slower dynamics reflect P body interactions rather than technical artifacts (C95-C96).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C41",
+      "C47",
+      "C182",
+      "C185",
+      "C187",
+      "C189"
+    ],
+    "result": "HC proteins (except Xrn1) have high connectivity (\u22654 direct interactions) with other P body components and RNA, while LC proteins have low connectivity and typically interact with RNA and/or only one HC protein.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41, C47, C182, C185, C187, C189 are supported by literature-based interaction network analysis shown in Figure 2\u2014figure supplement 4 and Supplementary file 3. The connectivity patterns correlate with the measured concentration and dynamics data, providing a mechanistic explanation for the HC/LC distinction. However, the authors acknowledge this correlation is imperfect (C192-C193), as affinity and energy-consuming processes also play roles.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C200",
+      "C201"
+    ],
+    "result": "Partitioning of HC proteins (Dcp2, Edc3, Pat1, Xrn1) into P bodies is positively correlated (Pearson r = 0.6-0.7), suggesting cooperative assembly consistent with their high connectivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C43, C101-C106, C200-C201 are supported by dual-color imaging experiments measuring paired protein concentrations in the same P bodies (Figure 3). The positive correlations (r = 0.6-0.7) and narrower ratios compared to randomized pairing provide strong evidence for cooperative assembly. Sample sizes are adequate (64-135 cells) and statistical tests appropriate (Pearson correlation, Fligner-Killeen test for variance).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145"
+    ],
+    "result": "Multiple sequence elements distributed across Dcp2 (N-terminal domain, HLM1, and C-terminal domain) contribute to P body partitioning and dynamics. These elements act synergistically when combined.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C6, C48-C51, C136-C145 are supported by systematic deletion analysis of Dcp2 constructs (Figure 5). The data show that: (1) Dcp2\u0394N has reduced PC (72\u00b18 vs 124\u00b19) and faster recovery (0.35 vs 0); (2) Dcp2\u0394H1 has strongly reduced PC (~26) and increased recovery (0.65); (3) Dcp2 300 shows no effect, but Dcp2 300\u0394H1 is impaired. Expression levels are controlled (Figure 5\u2014figure supplement 1B). The distributed organization is well-demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C146",
+      "C147",
+      "C148",
+      "C150",
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C155",
+      "C156",
+      "C157"
+    ],
+    "result": "Weak-binding Dcp2 fragments (Dcp2 300\u0394H1 binding RNA, Dcp2C \u03945H binding Edc3) partition weakly individually (PC = 2.5 and 3.5, ~20-30% of cells), but their fusion (Dcp2\u0394H1 \u03945H) partitions strongly (PC = 31, ~95% of cells), demonstrating synergistic recruitment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C146-C157 are supported by experiments with Dcp2 fragments (Figure 5D-F). The synergy is quantitatively demonstrated: the product of individual PCs (8.75) is less than the fusion PC (31), indicating greater than additive effects. The interpretation that this represents synergistic action of elements recognizing distinct ligands (RNA and Edc3) is well-supported. Expression levels are controlled (Figure 5\u2014figure supplement 1D).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C159",
+      "C160",
+      "C161",
+      "C162",
+      "C163",
+      "C164"
+    ],
+    "result": "Adding HLM1 to weakly partitioning Dcp2C \u03945H increases its P body concentration to ~16 \u00b5M (PC ~69), but adding HLM1 to strongly partitioning Dcp2 FL has no effect, suggesting the Dcp2-Edc3 interaction is saturated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C159-C164 are supported by data in Figure 6. The differential effect of adding HLM1 to weak vs. strong partitioning constructs demonstrates saturation of the Dcp2-Edc3 interaction. This is consistent with the strong correlation in their concentrations (Figure 3). However, expression level differences between constructs (Figure 6\u2014figure supplement 1) complicate interpretation slightly, though the conclusion remains valid.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C165",
+      "C166",
+      "C167",
+      "C168",
+      "C169",
+      "C170",
+      "C171",
+      "C172",
+      "C173",
+      "C174",
+      "C175",
+      "C176",
+      "C177",
+      "C178"
+    ],
+    "result": "RNA binding is important for Dcp2 partitioning (Dcp2 300 AAAA does not partition). Catalytically inactive Dcp2\u0394H1 WD forms more P bodies (6 vs 2 per cell) with slower dynamics and higher sequestration (~10% vs ~4%) due to increased mRNA concentration, though catalytic activity also contributes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C165-C178 are supported by experiments in Figure 7. The RNA binding requirement is demonstrated by loss of partitioning in Dcp2 300 AAAA. The WD mutant effects are well-characterized under both normal and glucose starvation conditions, allowing separation of mRNA concentration effects from catalytic activity effects. The convergence of dynamics under starvation (C173-C174) supports the mRNA concentration interpretation, while persistent differences in sequestration (C176) indicate catalytic activity also matters. Expression controls are provided (Figure 7\u2014figure supplement 1B).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C125",
+      "C126"
+    ],
+    "result": "P bodies do not strongly sequester their resident proteins under the conditions examined. In mid-log phase, Dcp2 and Edc3 are ~30% sequestered, other HC proteins ~10%, and LC proteins ~5%. Even accounting for small unobserved P bodies, most proteins are <20% sequestered.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C119-C123, C125-C126 are supported by quantitative measurements in Figure 4 and Figure 4\u2014figure supplement 1. The low sequestration fractions are calculated from measured concentrations and P body volumes. The authors appropriately acknowledge the limitation of potentially missing small P bodies (C124) and provide conservative estimates accounting for this. The conclusion that P bodies do not strongly sequester proteins is well-supported, though the authors appropriately note this doesn't rule out higher sequestration under other conditions (C127).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C44",
+      "C202",
+      "C203",
+      "C204",
+      "C205"
+    ],
+    "result": "All proteins known from genetic studies to contribute strongly to P body formation (Dcp2, Pat1, Edc3, Dhh1, Upf1, Lsm1-7) are in the HC group. None of the LC components are required for efficient P body assembly.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44, C202-C205 are supported by comparison with published genetic studies (citations in C203-C204). The correlation between high concentration and genetic requirement for P body formation is strong. This validates the functional significance of the HC/LC distinction and supports the scaffold-like vs. client-like interpretation. The claim is based on literature assessment rather than new experiments, but the correlation is compelling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C7",
+      "C53",
+      "C179",
+      "C180",
+      "C181",
+      "C261",
+      "C264",
+      "C265",
+      "C266"
+    ],
+    "result": "P bodies (and probably other condensates) are compositionally simpler than suggested by proteomic analyses. While many components are present, only a small number are highly concentrated, with the majority of protein mass deriving from a few types of molecules.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C53, C179-C181, C261, C264-C266 represent the major conceptual conclusion of the paper. This is well-supported by the quantitative data showing only 7 HC proteins vs. 24 LC proteins, with the HC proteins at much higher concentrations. The generalization to other condensates (C7, C180-C181) is more speculative but reasonable given the archetypal nature of P bodies. The practical implications for reconstitution and understanding (C266) are logical inferences from the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "The authors used quantitative fluorescence microscopy to measure absolute concentrations of 31 P body proteins in dcp1\u0394 strains. Of these, 19 showed sufficiently punctate distributions (PC >~2) for analysis, while 12 were uniformly distributed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C38, C58-C65 describe the experimental approach. The methodology is well-documented in Materials and Methods and Figure 1\u2014figure supplement 2. The use of dcp1\u0394 strains to enlarge P bodies is justified (C54-C58). Co-localization with Edc3-mCherry validates P body identity (C60). The PSF correction approach (C61-C62) is appropriate for objects near the diffraction limit. The partition coefficient definition (C63) is standard. Sample sizes are adequate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "The GFP tag probably does not strongly affect protein behaviors, as PC values and dynamics are similar for Edc3 and Dhh1 tagged with GFP vs. mCherry, and for Dcp2 with N- vs. C-terminal GFP tags.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C71 are supported by control experiments in Figure 1\u2014figure supplement 3A-C. The similar behaviors with different tags and tag positions provide good evidence that the tag does not strongly perturb function. The authors appropriately acknowledge that some proteins might still be affected (C71). This is an important validation of the approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C85"
+    ],
+    "result": "Total cellular protein concentrations measured in this study are similar to a unified quantitative protein abundance database of S. cerevisiae.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C85 is supported by comparison with published data (Ho et al., 2018) shown in Figure 1\u2014figure supplement 3D. This validates the quantitative measurements and provides confidence in the absolute concentration values. This is an important quality control for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C113",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "Partitioning and dynamics of proteins are qualitatively similar in wild type strains under glucose starvation and dcp1\u0394 strains. The same seven proteins remain most concentrated, though Pat1 and Lsm1 drop. Dcp1 and Pby1 also partition strongly in wild type. LC protein partitioning is lower under starvation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C116 are supported by data in Figure 2\u2014figure supplement 3. The comparison validates that the findings in dcp1\u0394 strains are representative of wild type P bodies under stress. The differences noted (Pat1/Lsm1 reduction, Dcp1/Pby1 presence, reduced LC partitioning) are appropriately documented. This addresses a potential concern about the use of dcp1\u0394 strains.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C183",
+      "C184",
+      "C186",
+      "C190",
+      "C191"
+    ],
+    "result": "High connectivity should afford increased partitioning and reduced exchange rates. Connectivity and valency of interaction provide significant predictive power for understanding condensate composition, though the correlation is not perfect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C183-C184, C186, C190-C191 represent theoretical predictions based on principles of multivalent interactions that are validated by the data. The correlation between connectivity and concentration/dynamics is demonstrated, though the authors appropriately note it's not perfect (C192-C193) due to affinity and energy-dependent processes. The predictive utility of connectivity is a valuable conceptual contribution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C222",
+      "C223",
+      "C224",
+      "C225",
+      "C226",
+      "C227",
+      "C228",
+      "C229",
+      "C230",
+      "C231",
+      "C232",
+      "C233",
+      "C234",
+      "C235",
+      "C236"
+    ],
+    "result": "The authors refine the scaffold/client model, proposing that components are better described as more scaffold-like or client-like on a continuum. Scaffold-like components (HC proteins, RNA) have high connectivity and are required for formation; client-like components (LC proteins) have low connectivity and are not required.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C222-C236 present a refined conceptual framework. The refinement from binary classification to a continuum (C232) is well-justified by the observation that different deletions have different magnitudes of effect (C231). The correlation between HC/LC classification and scaffold-like/client-like properties (C227-C230) is supported by the data and literature. The predictions about connectivity and network position (C235-C236) are logical. This represents an important conceptual advance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C244",
+      "C245",
+      "C246",
+      "C247",
+      "C248",
+      "C249",
+      "C250",
+      "C252"
+    ],
+    "result": "Three principles govern compositional specificity: (1) mass action concentrates high-affinity binders; (2) increasing affinity doesn't increase partitioning if already saturated; (3) weak-binding elements act synergistically when fused, narrowing specificity even for promiscuous scaffolds.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C244-C250, C252 synthesize principles from the Dcp2 dissection experiments. Principle 1 is illustrated by Xrn1 (C245, C197). Principle 2 is demonstrated by the Dcp2 FL-H1 experiment (C246, C161-C163). Principle 3 is shown by the Dcp2 fragment fusion experiments (C249-C250, C156-C157). These principles provide a mechanistic framework for understanding specificity and have broad implications for condensate biology.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "P bodies in wild type S. cerevisiae are typically diffraction-limited under normal conditions but become larger when mRNA decay is decreased (e.g., Dcp1 deletion or glucose starvation).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C57 are supported by citations to previous literature (Teixeira et al., 2005; Teixeira and Parker, 2007) and observations in this study. This provides the rationale for using dcp1\u0394 strains to enlarge P bodies for quantitative analysis. The approach is well-justified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C1",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "Background on biomolecular condensates: they are membrane-less compartments that concentrate specific molecules, form through self-assembly of multivalent molecules, can be liquid-like or solid-like, and their activities derive from assembling functionally related molecules.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C8-C19 provide established background knowledge supported by appropriate citations. These claims set the context for the study and are well-supported by the literature. They represent accepted knowledge in the field rather than new findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "Prior proteomic studies of condensates have been qualitative, suggesting condensates contain tens to hundreds of proteins with complex interaction patterns. The relative and absolute concentrations of proteins in condensates and their relationships to dynamics and connectivity are largely unknown.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C30 accurately characterize the state of the field prior to this study, supported by appropriate citations. These claims identify the knowledge gap that this study addresses. The characterization of prior work as qualitative (C27) and the identification of missing quantitative information (C28-C30) are accurate and well-supported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "P bodies are protein- and mRNA-rich cytoplasmic condensates conserved from yeast to mammals, thought to participate in RNA metabolism, modulating mRNA decay and acting as sites of RNA storage during stress.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C36 provide established background on P bodies supported by appropriate citations. This contextualizes why P bodies are a good model system for studying condensate composition. The claims represent accepted knowledge rather than new findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C52",
+      "C253",
+      "C254",
+      "C262",
+      "C263"
+    ],
+    "result": "The distributive organization of Dcp2 recruitment elements suggests evolutionary implications: it provides a ready means of quantitatively modulating condensate composition, routes for evolving new clients through genetic rearrangements, and reduced susceptibility to mutations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C52, C253-C254, C262-C263 are speculative inferences about evolutionary implications. While the distributed organization is well-demonstrated (supported), the evolutionary interpretations are plausible but not directly tested. These represent reasonable hypotheses that would require evolutionary or comparative studies to validate. The speculation is clearly identified as such.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C127",
+      "C128",
+      "C216",
+      "C217",
+      "C221"
+    ],
+    "result": "Open questions and limitations: the data don't rule out higher sequestration under different conditions or for RNA; whether intermolecular RNA-RNA interactions contribute to P body assembly remains unclear.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C127-C128, C216-C217, C221 appropriately acknowledge limitations and open questions. The authors clearly state what their data do and don't address. The speculation about RNA-RNA interactions (C217) is supported by citations to relevant literature. This represents good scientific practice in acknowledging the scope and limitations of the findings.",
+    "result_type": "MINOR"
+  }
+]

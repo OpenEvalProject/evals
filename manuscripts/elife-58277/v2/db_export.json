@@ -1,0 +1,2219 @@
+{
+  "submission": {
+    "id": "9994e2a2-111e-4075-90eb-38b9678cbc55",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T21:22:28.495216Z",
+    "updated_at": "2025-12-02T21:22:28.495216Z"
+  },
+  "content": [
+    {
+      "id": "135535d0-761f-425f-8bfa-e73b6834d20f",
+      "submission_id": "9994e2a2-111e-4075-90eb-38b9678cbc55",
+      "content_type": "manuscript",
+      "content_text": "# Bacterial OTU deubiquitinases regulate substrate ubiquitination upon Legionella infection\n\n## Authors\n\n- Donghyuk Shin<sup>1</sup> ([ORCID: 0000-0002-8272-6133](https://orcid.org/0000-0002-8272-6133))\n- Anshu Bhattacharya<sup>1</sup> ([ORCID: 0000-0002-7383-3594](https://orcid.org/0000-0002-7383-3594))\n- Yi-Lin Cheng<sup>1</sup> ([ORCID: 0000-0002-3603-5913](https://orcid.org/0000-0002-3603-5913))\n- Marta Campos Alonso<sup>2</sup>\n- Ahmad Reza Mehdipour<sup>3</sup>\n- Gerbrand J van der Heden van Noort<sup>5</sup>\n- Huib Ovaa<sup>5</sup>\n- Gerhard Hummer<sup>3</sup> ([ORCID: 0000-0001-7768-746X](https://orcid.org/0000-0001-7768-746X))\n- Ivan Dikic<sup>1</sup> ([ORCID: 0000-0001-8156-9511](https://orcid.org/0000-0001-8156-9511)) \u2020\n\n### Affiliations\n\n1. Institute of Biochemistry II, Faculty of Medicine, Goethe University Frankfurt Frankfurt Germany\n2. Buchmann Institute for Molecular Life Sciences, Goethe University Frankfurt Frankfurt Germany\n3. Max Planck Institute of Biophysics Frankfurt Germany\n4. Department of Nano-Bioengineering, Incheon National University Incheon Republic of Korea\n5. Oncode Institute and Department of Cell and Chemical Biology, Leiden University Medical Centre Leiden Netherlands\n6. Institute of Biophysics, Goethe University Frankfurt Frankfurt Germany\n\n\u2020 Corresponding author\n\n## Abstract\n\nLegionella pneumophila causes a severe pneumonia known as Legionnaires\u2019 disease. During the infection, Legionella injects more than 300 effector proteins into host cells. Among them are enzymes involved in altering the host-ubiquitination system. Here, we identified two LegionellaOTU (ovarian tumor)-like deubiquitinases (LOT-DUBs; LotB [Lpg1621/Ceg23] and LotC [Lpg2529]). The crystal structure of the LotC catalytic core (LotC14-310) was determined at 2.4 \u212b. Unlike the classical OTU-family, the LOT-family shows an extended helical lobe between the Cys-loop and the variable loop, which defines them as a unique class of OTU-DUBs. LotB has an additional ubiquitin-binding site (S1\u2019), which enables the specific cleavage of Lys63-linked polyubiquitin chains. By contrast, LotC only contains the S1 site and cleaves different species of ubiquitin chains. MS analysis of LotB and LotC identified different categories of host-interacting proteins and substrates. Together, our results provide new structural insights into bacterial OTU-DUBs and indicate distinct roles in host\u2013pathogen interactions.\n\n## Introduction\n\nUbiquitination, a well-studied post-translational modification, regulates various cellular events (Yau and Rape, 2016). A representative example of the ubiquitin-mediated cellular process is the ubiquitin-proteasome system, where misfolded proteins get ubiquitinated, degraded by the proteasome, and, finally, recycled (Dikic, 2017). For larger cellular waste, such as cellular components (endoplasmic\u00a0reticulum\u00a0[ER], mitochondria, etc.), protein aggregates, or intracellular bacteria, ubiquitination works together with the autophagy machinery, which includes the sequestration of ubiquitinated components and their transfer into the lysosome for degradation (Pohl and Dikic, 2019). To maintain homeostasis in the cell, ubiquitination events are tightly regulated by a reverse process called deubiquitination, where ubiquitin molecules are specifically cleaved from the target substrates and subsequently recycled by deubiquitinating enzymes (deubiquitinases [DUBs]) (Clague et al., 2019).\n\nTo date, about 100 different DUBs have been identified in human. They are categorized into seven different classes based on their structure and mechanism of action, and these include USP, JAMM (MPN), OTU, MJD (Josepin), UCH, and the recently discovered MINDY and ZUFSP (Abdul Rehman et al., 2016; Clague et al., 2019; Haahr et al., 2018; Hermanns et al., 2018; Hewings et al., 2018; Kwasna et al., 2018). Six of them belong to the cysteine protease family (USP, OTU, MJD\u00a0[Josepin], UCH, MINDY, and ZUFSP), while JAMM (MPN) belongs to the zinc-containing metalloproteases. Among them, the OTU-family is distinguished from other DUBs, as they exhibit linkage specificity (Mevissen et al., 2016; Mevissen et al., 2013; Mevissen and Komander, 2017). For example, Cezanne specifically cleaves Lys11-linked polyubiquitin chains (Bremm et al., 2010) and OTUB1 preferentially cleaves Lys48-linked chains (Edelmann et al., 2009; Wang et al., 2009), while OTULIN exclusively cleaves M1-linked (linear) chains (Keusekotten et al., 2013). Extensive biochemical and structural studies have provided general mechanisms of the diverse linkage specificity within the structurally similar OTU-family. In general, the selectivity is achieved by the specific orientation of the S1 site, which accepts proximal ubiquitin and the S1\u2019 site that binds primed ubiquitin of ubiquitin chains. Besides, the presence or the absence of additional ubiquitin-binding domains (UBDs), sequence variations on ubiquitinated substrates, or S2-binding site that binds to the third ubiquitin within the chains can also affect the specificity of OTU-family (Mevissen et al., 2013).\n\nConsidering the importance of ubiquitin-mediated cellular pathways, it is not surprising that pathogens are armed with various weapons to hijack the host-ubiquitination system. For instance, Salmonella typhimurium encodes HECT type E3 ligase SopA (Diao et al., 2008; Fiskin et al., 2017; Lin et al., 2012) and Legionella pneumophila contains LubX and LegU1, which are similar to U-box- and F-box-containing E3 ligases, respectively (Ensminger and Isberg, 2010; Kubori et al., 2008; Quaile et al., 2015). In addition, bacterial pathogens possess atypical ubiquitin ligases that do not belong to any of the known E3 ligases, such as IpaH family (Shigella) or SidC/SdCA (Legionella) (Hsu et al., 2014; Wasilko et al., 2018). More recently, the SidE family (SdeA, SdeB, SdeC, and SidC) of Legionella has been shown to mediate unconventional phosphoribosyl (PR) serine ubiquitination mechanism, which is also tightly regulated by the meta-effector SidJ or PR-ubiquitin-specific DUBs (DupA and DupB) (Bhogaraju et al., 2019; Bhogaraju et al., 2016; Black et al., 2019; Kalayil et al., 2018; Qiu et al., 2016; Shin et al., 2020). Pathogenic bacteria encode not only ubiquitin ligases but also DUBs (Hermanns and Hofmann, 2019). The most studied bacterial DUBs are CE-clan proteases, based on the MEROPS database classification, which cleave either ubiquitin or ubiquitin-like modifiers (SUMO1 or NEDD8) (Pruneda et al., 2016; Rawlings et al., 2018). In addition to CE-clan DUBs, bacteria and viruses encode OTU-like DUBs. Several structures from viral-OTUs revealed that they have a unique structure compared to those of known OTU family members (Akutsu et al., 2011; Capodagli et al., 2013; James et al., 2011; Lombardi et al., 2013; van Kasteren et al., 2013). OTUs from nairovirus Crimean-Congo hemorrhagic fever virus (CCHFV) and Dugbe virus (DUGV) have an additional \u03b2-hairpin in their S1-binding site. While viral OTUs have been studied extensively, only three bacterial OTU-like DUBs have been identified to date. ChlaOTU from Chlamydophila pneumoniae contains an OTU-domain that cleaves both K48- and K63-linked polyubiquitin chains (Furtado et al., 2013). LotA (Lpg2248; Lem21), Legionella OTU\u00a0(LOT)-like DUB, contains two OTU-like domains with two catalytic Cys residues (C13\u00a0and C303), both of which are required for cleaving ubiquitin chains from an LCV (Legionella-containing vacuole) (Kubori et al., 2018). Interestingly, LotA showed K6-linkage preference that is solely dependent on its first OTU domain (Cys13). Recently, another OTU-like DUB from Legionella (Lpg1621, Ceg23) has been identified as K63 chain-specific OTU-DUB (Ma et al., 2020).\n\nDespite these findings, little is known about the structure and molecular details of bacterial OTU-like DUBs. Here, we describe two novel OTU-like DUBs in Legionella \u2013 LotB (Lpg1621; Ceg23) and LotC (Lpg2529). Structural analysis of the LOT-DUBs provides insights into how bacterial OTU-DUBs are distinguished from the known OTU members. Furthermore, we also identified the specific host-substrates or interacting proteins of LotB and LotC by mass-spectrometry (MS) analysis using catalytically inactive variants. Collectively, our findings provide valuable structural insights into bacterial DUBs and their roles in host\u2013pathogen interactions.\n\n## Results\n\n### Identification of two novel OTU-like DUBs from Legionella effector proteins\n\nTo identify putative DUBs amongst the Legionella effector proteins, we analyzed effector proteins from L. pneumophila (Lpg genes). Based on the type IV Icm/Dot complex secretion signal (>2.0), 305 effector proteins were selected (Burstein et al., 2016). Using pairwise sequence-structure comparison based on hidden Markov models (HMMs, HHpred suite) (Zimmermann et al., 2018), we revealed four previously uncharacterized proteins as putative DUBs. These proteins all contain catalytic domains of known DUBs (Figure 1a). Lpg1621(Ceg23) and Lpg2529 are found as members of the OTU-family, whereas Lpg2411 and Lpg2907 belong to the UCH and CE-clan, respectively (Figure 1b, Table 1). An in vitro di-ubiquitin cleavage assay with di-Ub panel (eight different linkage-specific Ub2 chains [El Oualid et al., 2010]) showed that the OTU-like DUBs (Lpg1621 and Lpg2529) are capable of cleaving Ub2 chains with different specificity, while other candidates (Lpg2411 and Lpg2907) did not show catalytic activity (Figure 1\u2014figure supplement 1). The OTU family DUBs have been shown to have linkage specificity against certain polyubiquitin chains (Mevissen et al., 2016; Mevissen et al., 2013). To address whether Lpg1621 and Lpg2529 follow this fundamental rule, we performed a time-course in vitro DUB assay with di-Ub panel (Figure 1c\u2013f). Consistent with the recent evidence, Lpg1621 exclusively processed the K63-linked Ub2 (Ma et al., 2020), while Lpg2529 showed activity against K6-, K11-, K33-, K48-, and K63- linked Ub2. Based on the sequence homology and catalytic activity, we have now renamed the Lpg1621 and Lpg2529 as LOT-like DUBs (LotB and LotC, respectively).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/58277/elife-58277-fig1-v2.jpg)\n\n**Figure 1.:** (a) Graphical illustration of identification of novel DUBs from L. pneumophila effector proteins. (b) Predicted DUB\u00a0domain of four putative Legionella DUBs. (c, e) Time-course di-ubiquitin panel cleavage assay with Lpg1621 (LotB) and Lpg2529 (LotC). (d, f) Linkage specificity diagram of Lpg1621 (LotB) and Lpg2529 (LotC). The percentage of cleaved ubiquitin species at 90 min was plotted.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/58277/elife-58277-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (a) Di-ubiquitin species were incubated with putative Legionella DUBs and analyzed by immuno-blotting with ubiquitin antibody. (b) HEK293 cell lysates were treated with purified Legionella DUBs and analyzed by immuno-blotting with indicated antibodies.\n\n**Table 1.**\n TOP five candidates for putative deubiquitinases\u00a0(DUBs) from Legionella effector proteins.\n\n\n<table>\n  <thead>\n    <tr>\n      <th colspan=\"2\">Legionella proteins</th>\n      <th colspan=\"5\">Target proteins</th>\n    </tr>\n    <tr>\n      <th>Name</th>\n      <th>Aligned region</th>\n      <th>Name</th>\n      <th>Aligned region</th>\n      <th>Probability (%)</th>\n      <th>Identities (%)</th>\n      <th>PDB ID_Chain</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td rowspan=\"5\">Lpg1621</td>\n      <td>195\u2013274</td>\n      <td>Viral OTU (CC hemorrhagic fever virus)</td>\n      <td>69\u2013157</td>\n      <td>92.59</td>\n      <td>16</td>\n      <td>3PHU_B</td>\n    </tr>\n    <tr>\n      <td>195\u2013274</td>\n      <td>Human OTUD2</td>\n      <td>63\u2013140</td>\n      <td>92.52</td>\n      <td>17</td>\n      <td>4BOQ_A</td>\n    </tr>\n    <tr>\n      <td>195\u2013279</td>\n      <td>Human OTUD3</td>\n      <td>59\u2013142</td>\n      <td>92.40</td>\n      <td>13</td>\n      <td>4BOU_A</td>\n    </tr>\n    <tr>\n      <td>193\u2013278</td>\n      <td>Human OTUD5</td>\n      <td>100\u2013183</td>\n      <td>91.18</td>\n      <td>21</td>\n      <td>3PFY_A</td>\n    </tr>\n    <tr>\n      <td>192\u2013279</td>\n      <td>Viral OTU (Farallon virus)</td>\n      <td>88\u2013183</td>\n      <td>91.08</td>\n      <td>16</td>\n      <td>6D \u00d7 5_B</td>\n    </tr>\n    <tr>\n      <td rowspan=\"5\">Lpg2529</td>\n      <td>1\u2013310</td>\n      <td>Viral OTU (Erve virus)</td>\n      <td>17\u2013157</td>\n      <td>96.24</td>\n      <td>18</td>\n      <td>5JZE_A</td>\n    </tr>\n    <tr>\n      <td>7\u2013310</td>\n      <td>Viral OTU (Dera Ghazi Khan orthonairovirus)</td>\n      <td>25\u2013156</td>\n      <td>96.15</td>\n      <td>18</td>\n      <td>6D \u00d7 2_B</td>\n    </tr>\n    <tr>\n      <td>20\u2013310</td>\n      <td>Human Otubain1</td>\n      <td>50\u2013234</td>\n      <td>96.02</td>\n      <td>13</td>\n      <td>2ZFY_A</td>\n    </tr>\n    <tr>\n      <td>20\u2013310</td>\n      <td>Human Otubain2</td>\n      <td>50\u2013233</td>\n      <td>95.84</td>\n      <td>13</td>\n      <td>4FJV_C</td>\n    </tr>\n    <tr>\n      <td>7\u2013310</td>\n      <td>Viral OTU (Taggert virus)</td>\n      <td>23\u2013156</td>\n      <td>95.71</td>\n      <td>13</td>\n      <td>6D \u00d7 3_D</td>\n    </tr>\n    <tr>\n      <td rowspan=\"5\">Lpg2411</td>\n      <td>110\u2013216</td>\n      <td>Yeast UCH8</td>\n      <td>152\u2013259</td>\n      <td>37.94</td>\n      <td>11</td>\n      <td>3MHS_A</td>\n    </tr>\n    <tr>\n      <td>183\u2013272</td>\n      <td>EntA-im (Enterococcus faecium)</td>\n      <td>7\u201389</td>\n      <td>37.06</td>\n      <td>15</td>\n      <td>2BL8_B</td>\n    </tr>\n    <tr>\n      <td>33\u201394</td>\n      <td>Uncharacterized protein (Corynebacterium diphtheriae)</td>\n      <td>7\u201372</td>\n      <td>36.65</td>\n      <td>21</td>\n      <td>3KDQ_D</td>\n    </tr>\n    <tr>\n      <td>120\u2013212</td>\n      <td>PG0816 (Porphyromonas gingivalis)</td>\n      <td>53\u2013139</td>\n      <td>35.31</td>\n      <td>16</td>\n      <td>2APL_A</td>\n    </tr>\n    <tr>\n      <td>104\u2013114</td>\n      <td>PSII reaction center protein K (Cyanidium caldarium)</td>\n      <td>2\u201312</td>\n      <td>32.96</td>\n      <td>36</td>\n      <td>4YUU_X2</td>\n    </tr>\n    <tr>\n      <td rowspan=\"5\">Lpg2907</td>\n      <td>117\u2013384</td>\n      <td>AvrA (Salmonella typhimurium)</td>\n      <td>59\u2013299</td>\n      <td>100</td>\n      <td>11</td>\n      <td>6BE0_A</td>\n    </tr>\n    <tr>\n      <td>158\u2013398</td>\n      <td>PopP2 (Arabidopsis thaliana)</td>\n      <td>99\u2013339</td>\n      <td>99.93</td>\n      <td>13</td>\n      <td>5W3X_C</td>\n    </tr>\n    <tr>\n      <td>115\u2013390</td>\n      <td>HopZ1a (Pseudomonas syringae)</td>\n      <td>54\u2013342</td>\n      <td>99.88</td>\n      <td>10</td>\n      <td>5KLP_C</td>\n    </tr>\n    <tr>\n      <td>118\u2013275</td>\n      <td>XopD (Xanthomonas campestris)</td>\n      <td>1\u2013148</td>\n      <td>95.53</td>\n      <td>11</td>\n      <td>2OIX_A</td>\n    </tr>\n    <tr>\n      <td>95\u2013276</td>\n      <td>Human SENP1</td>\n      <td>2\u2013177</td>\n      <td>95.21</td>\n      <td>16</td>\n      <td>2G4D_A</td>\n    </tr>\n  </tbody>\n</table>\n\n_Values are obtained from the HHpred server (MPI Bioinformatics Toolkit)._\n\n### Biochemical properties of LotB and LotC\n\nThe OTU-family belongs to the cysteine protease family, which requires the presence of a catalytic triad for their activity (Mevissen et al., 2013). Based on the sequence analysis, we identified the conserved catalytic triad for both LotB (D27, C29, and H270) and LotC (D17, C24, and H304). Mutations on either cysteine or histidine completely abolished the catalytic activity of both DUBs, suggesting that both LotB and LotC follow the general catalytic mechanism of the OTU-family (Figure 2a\u00a0and\u00a0c). Next, we sought to find whether LotB and LotC require additional ubiquitin-binding sites (S1\u2019 or S2). To elicit this information, we used two different types of ubiquitin activity-based probes (ABPs). The propargyl-di-ubiquitin-ABP (Prg-ABP) contains a highly reactive propargyl group at the C-terminus of ubiquitin chains, which can target S1 and S2 pocket (third-generation probes) and form a covalent bond with the catalytic cysteine (Ekkebus et al., 2013; Flierman et al., 2016; Sommer et al., 2013). The vinyl methyl ester-ubiquitin-ABP (VME-ABP) contains VME, which replaces the isopeptide bond between two ubiquitin moieties in chains, which can detect S1 and S1\u2019 pocket (second-generation probe), and also forms a covalent bond with the catalytic cysteine (Borodovsky et al., 2002; Mulder et al., 2014). Both LotB and LotC showed clear shifts with all Prg-ABPs (mono-, K48-, and K63- linked), with different reactivity. LotB only partially shifted after 30 min, as evident by the amount of unreacted species, while LotC rapidly reacted with Prg-ABP and was completely conjugated after 30 min (Figure 2d\u00a0and\u00a0e). These results suggest that both LotB and LotC have a primary ubiquitin-binding S1 site, where the propargyl group can be located in close proximity to the catalytic cysteine. In contrast with Prg-ABP, only LotB reacted with K63-Ub2-VME-ABP, which is consistent with the di-Ub panel assay (Figure 1c\u2013f), where LotB showed specificity toward the K63-linkage. The VME-ABP results suggest that there is an additional S1\u2019 ubiquitin-binding site on LotB, which helps to properly locate the K63-linked-VME group on the catalytic site proximal to the catalytic cysteine. LotC lacks this S1\u2019 site, causing the VME group between two ubiquitin moieties to be unable to reach the catalytic cysteine. Next, we asked whether both LotB and LotC can interact with other ubiquitin-like modifiers (SUMO1/2/3, NEDD8) (Figure 2f\u00a0and\u00a0g, Figure 2\u2014figure supplement 1a\u00a0and\u00a0b). Interestingly, LotB showed modification with both NEDD8-Prg and ubiquitin-Prg after a 30 min reaction, while LotC was modified only with ubiquitin. This suggests that LotB binds to both ubiquitin and NEDD8 through the conserved Ile44-mediated hydrophobic interactions, while LotC interacts with ubiquitin through specific residues present only in ubiquitin (Figure 2\u2014figure supplement 1c).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/58277/elife-58277-fig2-v2.jpg)\n\n**Figure 2.:** (a) Predicted catalytic residues on LotB and LotC. (b, c) Di-Ub cleavage activity assay with wild-type and catalytic mutants of LotB and LotC. (d, e) Activity-based probes (ABPs) test on LotB and LotC. Propargyl-Ub-ABP (Prg-ABP) and vinylmethylester-ubiquitin-ABP (VME-ABP) were incubated as indicated time-points with LotB and LotC and analyzed on SDS-PAGE with coomassie staining. (f, g) Propargyl ubiquitin or ubiquitin-like modifiers reactivity test on LotB and LotC. Prg-ABPs are incubated with LotB and LotC with indicated time points.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/58277/elife-58277-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (a, b) Propargyl (Prg) \u2013 ubiquitin or ubiquitin-like modifiers reactivity test on LotB and LotC.\u00a0Prg-ABPs are incubated with LotB and LotC for 60 min. (c) Sequence alignment of ubiquitin with NEDD8. Non-conserved residues are marked with red-reversed triangle.\n\n### Structural analysis of LOT-like DUBs\n\nLinkage specificity of the OTU family relies on one of the following mechanisms: (1) additional UBDs, (2) ubiquitinated sequences in the substrates, or (3) defined S1\u2019 or S2 ubiquitin-binding sites (Mevissen et al., 2013). To determine the minimal OTU domain for biochemical and structural studies, we designed several constructs and tested their activity against the di-Ub panel (Figure 3a\u00a0and\u00a0b). While LotC retained its activity with the predicted OTU domain (7\u2013310), LotB lost its activity after deletion of 50 amino acids (300\u2013350) located at the C-terminus, beyond the predicted OTU domain (11\u2013283). Based on the LotB structure (PDB:6KS5, Ma et al., 2020), we assumed that this additional helical region might be required for the another ubiquitin-binding site (S1\u2019) to accept the distal ubiquitin moiety from K63 Ub2 (Figure 3c). To understand the detailed mechanism of the linkage specificity of LotB and LotC at the molecular level, we determined the crystal structure of the catalytic domain of LotC (LotC14-310) at 2.4 \u212b (Figure 3d, Supplementary file 1, PDB ID: 6YK8). A structural comparison of both LotB and LotC with other OTU-DUBs predicted by HHpred revealed that both Lot-DUBs have the unique structural features in the S1 ubiquitin-binding site (Figure 3c\u00a0and\u00a0d and Table 1). Whereas the overall fold of the catalytic core of LotB and LotC resembles that of other OTU-DUBs, both showed apparent differences in the helical arm region, which has been shown to serve as an S1-binding site and interact with ubiquitin (Mevissen et al., 2013). The structure and sequence alignment with other OTUs clearly showed that both LotB and LotC contain a relatively long insertion between the Cys-loop and the variable loop, compared to other OTU members (Figure 3e). The typical length of the helical lobe of the known OTUs is ranging from 50 to 60 amino acids (except the Otubain family, which contains 110\u2013120 amino acids). In comparison, the helical lobes in LotB and LotC contain 183 and 210 amino acids, respectively. Based on this observation, we wondered whether LotA, another LOT-DUB (Kubori et al., 2018), also contains this extended insertion in the same region. Based on the catalytic cysteine and histidine residues of the two OTU domains on LotA (Hermanns and Hofmann, 2019), we analyzed the sequence and found that both OTU domains of LotA contain the extended insertion between the Cys loop and the variable loop (179 and 178 amino acids,\u00a0respectively; Figure 3e). Together, our results identify Lot-DUBs as a novel class of the OTU-family with longer insertions in the helical lobe region (Figure 3\u2014figure supplement 1a).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/58277/elife-58277-fig3-v2.jpg)\n\n**Figure 3.:** (a, b) Minimal domain boundaries of catalytically active LotB and LotC. Different constructs were cloned based on the predicted OTU-domains and their activity, and were tested with di-Ub panel. (c, d) Structural comparison of LotB and LotC with the closest homologues. CCHF- (PDB: 3PHU), OTUD2 (PDB: 4BOQ), OTUD3 (PDB: 4BOU), Taggert- (PDB: 6D \u00d7 3), DGK nairo- (PDB: 6D \u00d7 2), Otubain1 (PDB: 2ZFY), Otubain2 (PDB: 4FJV). (e) Sequence alignment of LotB and LotC with their closest homologues. Catalytic cysteine and histidine are highlighted in red and conserved residues are highlighted in yellow.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/58277/elife-58277-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** The helical lobe between the catalytic Cys loop and the variable loop is\u00a0shown as bar. The catalytic Cys is highlighted in red and conserved residues are highlighted in yellow.\n\n### A novel structural fold of S1 ubiquitin-binding sites on LOTs\n\nBoth LotB and LotC have extended helices, specifically near the S1 ubiquitin-binding site and we wondered how these regions interact with ubiquitin. To address this, we performed ubiquitin docking into both LotB and LotC, followed by molecular dynamics (MD) simulations for 600 ns (Figure 4a\u2013d). The final models showed that ubiquitin indeed makes contacts with the additional helical regions of both LotB and LotC. In LotB, Phe143 and Met144 form hydrophobic interactions with ubiquitin (Phe45 and Ala46). In addition to these interactions, we found another hydrophobic patch in LotB (Ile238, Val247, Ala248, Ile264, and\u00a0Ala266) to interact with ubiquitin (Leu71\u00a0and Leu73). For LotC, we identified several hydrophobic interactions of the extended helical region (Tyr119\u00a0and Tyr149) with ubiquitin (Ile44). During the simulation, the C-terminus of ubiquitin (Arg72\u00a0and Arg74) formed transient electrostatic interactions with LotC (Glu153\u00a0and Glu245). To validate the interactions observed in the simulations, we introduced several mutations to the binding interface of both LotB and LotC, and performed a ubiquitin-cleavage assay (Figure 4e\u00a0and\u00a0f). Consistent with a recent study (Ma et al., 2020), mutations of both F143 and M144 decreased the catalytic activity of LotB. Interestingly, mutations of the newly identified hydrophobic patch (I238\u00a0and A266) also reduced the catalytic activity. For LotC, the mutations in the hydrophobic patch (Y119\u00a0and Y149) affected its catalytic activity. Remarkably, a single mutation on E153 completely abolished the catalytic activity, which indicates that the electrostatic interactions are essential for the correct docking of the ubiquitin C-terminus into the catalytic pocket of LotC. This observation also explains the result observed in ubiquitin-like protein ABP assays with LotC (Figure 2g). The NEDD8, which has an alanine instead of Arg72 in ubiquitin, showed no modification toward LotC (Figure 2\u2014figure supplement 1c). Together, our results reveal how the extra helical lobes of the Lot-DUBs interact with ubiquitin and how they differ within the LOT\u00a0family.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/58277/elife-58277-fig4-v2.jpg)\n\n**Figure 4.:** (a, b) Molecular docking and simulations of monoubiquitin to LotB and LotC. Shown are representative snapshots of the MD simulations. Catalytic cysteine and key residues for the interaction between ubiquitin and LotB or LotC are depicted as sticks. (c, d) Key residues mediating interactions between ubiquitin and LotB or LotC. Residues are highlighted in the structure (left). Side-chain center-of-mass distances are shown as a function of the simulation time (right). (e, f) Di-ubiquitin cleavage assay for mutants of LotB and LotC. The catalytic activity of LotB or LotC wild-type and their mutants was tested with K63- or K48-linked Ub2, respectively.\n\n### Proteomic studies of LotB and LotC\n\nTo gain better insights into the physiological functions of LotB and LotC, we decided to identify their interacting proteins or substrates. First, to enrich the interacting partners, catalytically inactive LotB or LotC were expressed in cells and immuno-precipitated from cell lysates. Ubiquitin (UBB) is strongly enriched with both catalytically inactive LotB and LotC (Figure 5a\u00a0and\u00a0b). MS analysis revealed that LotB mainly interacts with membrane protein complexes (COPB1, ATP5B, ATP5H, COX5A, and\u00a0SEC61B). We also found the interaction of LotB with some ER-resident proteins (Calnexin [CANX], DDOST, STT3A). By contrast, most of the enriched proteins from the inactive LotC pull-down were non-membrane-bound organelle- and ribosome-related proteins (RPS8, RPLP2, RPS27, RPLP1, and\u00a0RPL13) (Figure 5a\u00a0and b). To further understand this, we sought to find the cellular localization of both DUBs (Figure 5c\u00a0and\u00a0d). Consistent with the recent publication, LotB specifically co-localized with the ER marker protein Calnexin, but not with other organelle markers (TOMM20 and GM130 for mitochondria and Golgi, respectively; Figure 5c), and the OTU domain itself failed to localize on the ER (Figure 5\u2014figure supplement 1a). By contrast, we could not find a specific cellular localization of LotC (Figure 5d). Next, to gain more insights into the functional roles of LotB and LotC, we decided to explore combinatorial ubiquitination events with other ubiquitin-related Legionella effector proteins. To do this, we co-transfected the cells with one of the Lot-DUBs and previously known Legionella E3 ligases (SidC or SdcA) (Hsu et al., 2014; Wasilko et al., 2018). We chose these two ligases because their cellular substrates are poorly studied. TMT-labeled samples from cells expressing either SidC or SdcA alone, or together with a catalytically inactive mutant of LotB or LotC, were prepared (four combinations; SidC-LotB, SidC-LotC, SdcA-LotC, or SdcA-LotC, Figure 5\u2014figure supplement 2a\u2013d). Interestingly, we identified a distinct sub-class of substrates. Overall, a smaller number of proteins were enriched with LotB compared to LotC. We reasoned that LotB specifically interacts with proteins modified with K63-linked ubiquitin chains, while LotC interacts with different types of ubiquitin chains. Intriguingly, we found a significant number of ribosome-structural proteins in LotC:SdcA combination, which were not enriched in the SidC background. Even though, our interactome study provided us useful information on putative host-interacting partners of LotB and LotC, it is still possible that only one of these proteins is genuine interactor and others are enriched through the complex formation. To avoid this question and to identify host-specific substrates of LotB or LotC under Legionella-infected condition, we developed new MS approaches. HEK293T cells were transfected with CD32 to facilitate the infection and subsequently infected with Legionella. The infected lysates were then subjected to GST pull-down with wild-type and catalytic dead mutant of LotB or LotC (Figure 6a). The catalytic mutant of both LotB and LotC efficiently enriched ubiquitinated proteins (Figure 6b\u00a0and\u00a0d). Interestingly, several Legionella proteins were enriched from both DUBs (Figure 6d\u00a0and\u00a0e). The LotB-C29S pulled-down some essential Legionella proteins such as atpD;ATP synthase, lpg2812;sporulation protein, lpg0841;Toluene ABC transporter, and SdhA;succinate dehydrogenase. In contrast, the LotC-C24S enriched two Legionella ribosomal proteins (rplT\u00a0and rpsM) and a DNA recombinase (recA). It will be interesting to study the ubiquitination level on these Legionella proteins during infection. As expected, many of the\u00a0host proteins are also enriched in these experiments. To validate whether these proteins are genuine substrate of LotB or LotC, ubiquitination level of selected substrates was analyzed by in vitro deubiquitination assay (Figure 6g\u00a0and\u00a0h). The ubiquitination level of all six substrates from different subcellular localization (RYK, Rab13, and PCYT1A for LotB, VAT1, HMOX1, and PPP2R1A for LotC) was reduced upon treatment of purified LotB or LotC, suggesting that the enriched proteins from catalytic dead mutants are putative substrates of LotB or LotC. Further studies on how the ubiquitination level of these proteins is regulated by LotB or LotC will unveil physiological roles of both LotB and LotC during Legionella infection.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/58277/elife-58277-fig5-v2.jpg)\n\n**Figure 5.:** (a, c) Proteomic analysis of interacting partners of LotB and LotC. Catalytically inactive FLAG-LotB (C29A) and FLAG-LotC (C24A) were transfected and immunoprecipitated. Co-precipitated interacting proteins were analyzed by mass spectrometry. (b, d) Cellular localization of LotB and LotC. FLAG-tagged LotB and LotC were ectopically expressed in U2OS cells and immune-stained with cellular organelle markers (endoplasmic\u00a0reticulum: Calnexin, mitochondria: TOMM20, Golgi: GM130).\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/58277/elife-58277-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** FLAG-tagged LotB or LotC-OTU catalytic core was ectopically expressed in U2OS cells and immune-stained with cellular organelle markers (endoplasmic\u00a0reticulum: Calnexin, mitochondria: TOMM20, Golgi: GM130).\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/58277/elife-58277-fig5-figsupp2-v2.jpg)\n\n**Figure 5\u2014figure supplement 2.:** (a, b) Proteomic analysis of interacting partners of LotB together with SdcA and SidC, respectively.\u00a0Catalytically inactive FLAG-LotB (C29A) was co-transfected with either SdcA or SidC and immunoprecipitated. Co-precipitated interacting proteins were analyzed by mass spectrometry. (c, d) Proteomic analysis of interacting partners of LotC together with SdcA and SidC, respectively. Catalytically inactive FLAG-LotC (C24A) was co-transfected with either SdcA or SidC and immunoprecipitated. Co-precipitated interacting proteins were analyzed by mass spectrometry.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/58277/elife-58277-fig6-v2.jpg)\n\n**Figure 6.:** (a\u2013c) Schematic of the experiment and subsequent validation using western blot. (d,\u00a0e) Volcano plot depicting the identified proteins with corresponding fold change and p-values. Comparison was done between Mut and WT deubiquitinase\u00a0(DUB). Enriched proteins with Log2 Fold change\u00a0\u2265 0.5 along with \u2212Log10 p-value\u00a0\u2265 1.3 was considered for further validation. (f\u2013h) Immunoprecipitation of myc from the infected lysates was performed to enrich the potential substrates for LotB, which are RYK, Rab13, and PCYT1A, and for LotC, which are VAT1, HMOX1, and PPP2R1A, respectively. The enriched potential substrates were further incubated with wild-type or catalytic dead mutant DUB, followed by western blotting to detect ubiquitin and myc expression.\n\n## Discussion\n\nIn this study, we have identified two novel bacterial OTU-DUBs from Legionella, which we suggest to be founding members of a new sub-class of OTU-DUBs. Unlike classical OTU-DUBs, the LOT-DUBs possess extended helical insertions between the catalytic Cys-loop and the variable loop. Molecular dynamic simulations, in combination with biochemical studies, showed that the helical insertions interact with ubiquitin. As this insertion is unique for LOTs and not found in other known OTU-family members, LOT-DUBs define a new sub-class of the OTU-DUB family. We have also shown that LotB and LotC have preferences for certain ubiquitin chains and have a distinct cellular localization. Moreover, host-protein interactome studies revealed that LotB and LotC have different sets of host-interacting proteins. Together, these findings establish guidance on screening more DUBs in other pathogenic bacteria or viruses and characterizing their physiological roles during infection.\n\nWe also showed that the two LOTs have different ubiquitin-binding modes that enable them to cleave specific ubiquitin chains. With ubiquitin ABPs (Prg-\u00a0and VME-probes), we showed that LotB contains an additional ubiquitin-binding site (S1\u2019) and is specific to K63-linked ubiquitin chains. In contrast, LotC cleaves various types of ubiquitin chains. Interestingly, we observed a modification of LotB with NEDD8-Prg ABP. Further studies on neddylated proteins with LotB will give us more insights into the dual-activity of LotB. In contrast, we could not see the modification between NEDD8-ABP and LotC. We reasoned that the Arg72 on ubiquitin, which is replaced by alanine in NEDD8, is essential to locate the C-terminus of ubiquitin to the catalytic site. Indeed, in molecular dynamic simulations of LotC with ubiquitin, we found Arg72 from transient interactions with Glu153 of LotC. Further structural analysis will shed light on how different ubiquitin chains bind to LotB or LotC through the different binding modes.\n\nDUBs from bacteria and viruses have been shown to alter the host immune system. For example, papain-like proteases (PLPro) from coronaviruses, such as middle east respiratory syndrome (MERS), severe acute respiratory syndrome (SARS) or SARS-CoV-2, have dual DUB and de-ISGylation activities and antagonized type I interferon (IFN-I) response, which is the primary defense system against viral infections (Davis and Gack, 2015; Devaraj et al., 2007; Frieman et al., 2009; Sadler and Williams, 2008). Interestingly, we identified OTUD4 as an interacting partner of LotB. OTUD4 has been shown to deubiquitinate K63-linked chains of myeloid differentiation primary response 88 (MYD88) and to downregulate NF-kB-dependent inflammation. While the recent study on LotB showed no detectable inhibition of NF-kB reporter expression (Ma et al., 2020), further studies are awaited to show the cross-talk between LotB and the host ubiquitination system.\n\nL. pneumophila has been shown to possess multiple genes altering the host ubiquitination system. However, little is known about functional cross-talk between ubiquitin ligases and DUBs. To understand the combinatorial effects of Legionella ubiquitin ligases and DUBs, we analyzed the interactome of LotB/LotC with host proteins in the presence or absence of Legionella ligases (SidC and SdcA). We could see apparent differences in the number of enriched proteins in different combinations. A significant number of ribosomal proteins were enriched with LotC in the background of SdcA, but not from SidC background, which has 71% sequence similarity to SdcA. This finding suggests distinct physiological roles of SdcA and SidC, and a putative relationship between LotC and SdcA on regulating translation processes. Since LotC processes different types of ubiquitin chains and is mainly localized to the cytosol, the catalytically dead version of LotC can be used as a standard tool for identifying specific substrates of other known Legionella ligases. We could also nicely enrich ubiquitinated substrates of LotB and LotC from Legionella-infected cell lysates. Both DUBs enriched several Legionella proteins together with various of host proteins. It would be interesting to understand how all these ubiquitin machineries work together and alter the host-ubiquitination system at different time points of infection.\n\n## Materials and methods\n\n### Protein expression and purification\n\nAll proteins used in this study were expressed and purified as previously described (Bhogaraju et al., 2016; Qiu et al., 2016). Lpg1621 (LotB), Lpg2529 (LotC), Lpg2411, and Lpg2907 were cloned into either pParallelGST2 or pParallelHis2 vector (Sheffield et al., 1999). T7 express Escherichia coli competent cells (NEB) were transformed with plasmids and grown in LB medium to an OD600 of 0.6\u20130.8 at 37\u00b0C. Protein expression was induced by the addition of 0.5 mM IPTG (isopropyl D-thiogalactopyranoside), and the cells were further grown overnight at 18\u00b0C and harvested. The cell pellet was resuspended in lysis buffer (50 mM Tris-HCl pH 7.5, 150 mM NaCl, and\u00a02 mM DTT) and lysed by sonication and centrifuged at 13,000 rpm to clarify the supernatant. The supernatant of GST-tagged protein was incubated for 1 hr with glutathione-S-sepharose which is pre-equilibrated with washing buffer (50 mM Tris-HCl pH 7.5, 500 mM NaCl, and\u00a02 mM DTT), and nonspecific proteins were cleared with washing. GST-proteins were eluted with elution buffer (50 mM Tris-HCl pH 8.0, 50 mM NaCl, 2 mM DTT, and\u00a015 mM reduced glutathione) and buffer exchanged to storage buffer (50 mM Tris-HCl pH 7.5, 150 mM NaCl, and\u00a01 mM DTT). For His-tagged proteins, the supernatant was incubated with Ni-NTA pre-equilibrated with washing buffer (50 mM Tris-HCl pH 7.5, 500 mM NaCl, and\u00a020 mM Imidazole) for 2 hr and eluted with elution buffer (50 mM Tris-HCl pH 7.5, 500 mM NaCl, and\u00a0300 mM imidazole) and the buffer was exchanged to the storage buffer. For LotC14-310, instead of using the elution buffer, glutathione beads were incubated with sfGFP-TEV protease (Wu et al., 2009) overnight at 4\u00b0C. Cleaved protein was buffer exchanged to IEX buffer A (20 mM Tris-HCl pH 8.0, 20 mM NaCl, and\u00a01 mM DTT) and purified by anion-exchange chromatography on HitrapQ (GE Healthcare) with gradient elution with IEX buffer B (20 mM Tris-HCl pH 8.0, 1 M NaCl, and\u00a01 mM DTT) and fractions contacting samples were loaded onto size-exclusion column (Superdex 75 16/60, GE Healthcare) pre-equilibrated with 50 mM Tris-HCl pH 7.5, 50 mM NaCl, and\u00a01 mM TCEP. Proteins were concentrated to 20 mg/ml and stored for crystallization.\n\n### Di-Ub panel cleavage assay\n\nTo activate DUBs, 3 \u00b5l of 5 \u00b5M of DUBs were mixed with 12 \u00b5l of activation buffer (25 mM Tris-HCl pH 7.5, 150 mM NaCl, and\u00a010 mM DTT) and incubated 15 min at 25\u00b0C. For di-ubiquitin samples, 3 \u00b5l of di-ubiquitin chains (1 mg/ml) were mixed with 3 \u00b5l 10\u00d7 reaction buffer (500 mM Tris-HCl pH 7.5, 500 mM NaCl, and\u00a050 mM DTT) and 12 \u00b5l of ultra-pure water. To initiate the reaction, the activated DUBs were mixed with di-ubiquitin, and samples were taken at the indicated time points. The reactions were quenched by the addition of SDS-sample buffer. The samples were further analyzed by SDS-PAGE and stained with a silver-staining kit (Pierce Silver Staining Kit, Thermo Fischer).\n\n### Ubiquitin/NEDD8/SUMO-/ISG15/UFM ABPs assay\n\nDUBs were diluted (1.5 \u00b5M, final concentration) with activation buffer and incubated 10 min at 25\u00b0C and the ABPs were diluted (50 \u00b5M, final concentration) in dilution buffer (50 mM Tris-HCl pH\u00a07.5\u00a0and 150 mM NaCl). A total of 30 \u00b5l of the reaction mixture was prepared by mixing 20 \u00b5l of activated DUBs (1.5 \u00b5M), 3 \u00b5l of ABPs, 3 \u00b5l of reaction buffer (500 mM Tris-HCl pH 7.5, 500 mM NaCl, and\u00a050 mM DTT), and 4 \u00b5l of ultra-pure water. Samples were taken at the indicated time points, and the reactions were quenched by the addition of SDS-sample buffer. Samples were further analyzed by SDS-PAGE and stained with Coomassie staining solution.\n\n### Crystallization\n\nThe concentrated LotC14-310 were screened with sitting drop matrix screens in a 96-well plate with 100 nl of protein and 100 nl of precipitant solution at 293\u00a0K. Initial crystals appeared from solution containing 25% PEG3350, 100 mM Tris-HCl pH 8.5, and\u00a0200 mM NaCl with 18.4 mg/ml protein concentration. Diffraction-quality crystals were grown in optimized solution containing 19% PEG 3350, 100 mM Tris-HCl pH 8.5, and\u00a0150 mM NaCl with 24 mg/ml protein concentration.\n\n### Data collection, processing, and structure determination\n\nTo obtain the phase, 0.4 \u00b5l of 10 mM K2PtCl4 was added to the drop containing crystals and incubated for 18 hr. Heavy atom-soaked crystals were cryo-protected using mother liquor solution supplemented with 15% (v/v) glycerol. Diffraction data were collected on a single frozen crystal in a nitrogen stream at 100\u00a0K at beamline PXI as Swiss Light Source, Villigen. Initial data sets were processed using XDS (Kabsch, 2010), and initial-phases were determined by Autosol in Phenix (Terwilliger et al., 2009). Structure refinement and manual model building were performed with Coot and Phenix. Refine (Afonine et al., 2012; Emsley et al., 2010).\n\n### Protein\u2013protein docking\n\nWe used the Rosetta protein\u2013protein docking method (Gray et al., 2003) to identify low-energy conformations of the complexes of ubiquitin with LotB and LotC. Given that the C-terminus of ubiquitin should interact with the catalytic residue of the OTUs, we used the local docking approach in which we placed the C-terminal end of ubiquitin (Gly76) near the catalytic residues in both ligases (Cys29 and His270 for LotB and Cys16 and His296 for LotC). We then started the docking by optimizing the rigid-body orientation and side-chain conformation sampling. The program requires two protein structures as inputs, which were prepared by running the refinement protocol before the docking step. We performed the local docking approach and generated 100 independent structures for each complex. The complexes in this way were subject to local refinement to remove remaining small clashes. The complexes were then clustered based on the distance matrix of C\u03b1 atoms between the ligase and ubiquitin using the KMeans method. The representatives of two major clusters in each case were selected based on the interface score (I_sc), which represents the energy of the interactions across the interface of two proteins. These representative complexes were used for MD simulations.\n\n### Molecular dynamics simulations\n\nAll-atom explicit solvent molecular dynamics (MD) simulations were performed for two docking results for each ligase. The systems were built using the CHARMM-GUI web server (Wu et al., 2014). The systems were hydrated with 150 mM NaCl electrolyte. The all-atom CHARMM36m force field was used for proteins, lipids, and ions, and TIP3P was used for water molecules (Best et al., 2012). The MD trajectories were analyzed with visual molecular dynamics (VMD) (Humphrey et al., 1996). The MD simulations were performed using GROMACS 2019 (Abraham et al., 2015). The starting system was minimized for 5000 steps with the steepest descent energy minimization and equilibrated for 6.5 ns of MD simulation first in the NVT ensemble (1.5 ns) and then in the NPT (5 ns) ensemble, in which all non-hydrogen atoms of the protein were restrained to the fixed reference positions with progressively reduced force constants, starting at 1000 kJ/mol\u00b7nm2. Afterwards, the production runs were carried out in the NPT ensemble for 600 ns for each setup. To keep the C-terminus\u00a0of ubiquitin in the catalytic site, 7 \u00c5 wall restraints were placed on the distance between C\u03b1 of G76UB and Cys29/His270 in LotB and between C\u03b1 of G76UB and Cys16/His296 in LotC. Periodic boundary conditions were used. Particle mesh Ewald (Darden et al., 1993) with cubic interpolation and 0.12 nm grid spacing for Fast Fourier Transform was used to treat long-range electrostatic interactions. The time step was two fs. The LINCS algorithm (Hess et al., 1997) was used to fix all bond lengths. Constant temperature (310 K) was set with a Nos\u00e9-Hoover thermostat (Hoover, 1985), with a coupling constant of 1.0 ps. An isotropic Parrinello-Rahman barostat (Parrinello and Rahman, 1981) with a coupling constant of 5.0 ps was used to maintain a pressure of 1 bar.\n\n### Identification of host-interacting proteins of LotB and LotC\n\nFor interactome analysis, HEK 293 cells were transfected with FLAG-LotB WT or FLAG-LotB C29A and FLAG-LotC WT or FLAG-LotC C24A. To identify the substrates or interactors modified by Legionella-derived E3 ligases, GFP-SidC or GFP-SdcA were co-transfected with FLAG-LotB WT or FLAG-LotB C29A and FLAG-LotC WT or FLAG-LotC C24A. Three independent biological replicates were processed per experiment for downstream statistical analysis. Since in some instances comparing between Mut over Wt DuB did not enrich ubiquitin significantly we looked for interacting partners by comparing between Mut over empty vecvotr. Cells were lysed in ice cold lysis buffer (50 mM Tris-HCl, pH 7.5; 150 mM NaCl; 1% Triton x-100) and equal amount of lysates were incubated with FLAG-M2 beads in IP buffer (Lysis buffer without detergent). After incubation, IPs were washed with wash buffer (50 mM Tris-HCl, pH\u00a07.5; 400 mM NaCl; and\u00a00.5 mM EDTA) and the interacting proteins were eluted with 8\u00a0M urea solution. After the reduction and alkylation with TCEP and chloroacetamide, the samples were digested with 0.5 \u00b5g trypsin (Promega) at 37\u00b0C overnight after diluting the urea\u00a0<2\u00a0M. Digests were acidified using trifluoroacetic\u00a0acid (TFA) to a pH of 2\u20133, and the peptides were enriched using C18 stage tips (Rappsilber et al., 2003). To get quantitative information, peptides were either labeled with TMT 10 plex reagent (Thermo fisher) or analyzed label-free. The peptides were separated on an in-house made C18 column (20 cm length, 75 \u03bcm inner diameter, and\u00a01.9 \u03bcm particle size) by an easy n-LC 1200 (ThermoFisher) and directly injected in a QExactive-HF or in case of TMT samples into a Fusion Lumos mass-spectrometer (ThermoFisher) and analyzed in data-dependent mode. Data analysis was done using Maxquant 1.65 (Cox and Mann, 2008). Fragment spectra were searched against Homo sapiens SwissProt database (TaxID:9606, version 2018). Label-free quantification was done with MaxLFQ (Cox et al., 2014) method with activated match between runs. TMT-labeled samples were analyzed by using TMT 10 Plex option within the software.\n\nFurther normalization was done using NormalyserDE (Willforss et al., 2019). Statistically significant changes between samples were determined using a two-sample t-test with a permutation-based FDR of 5% on log2 transformed values in Perseus (Tyanova et al., 2016). Data files are available in supplementary files.\n\n### Identification and validation of putative substrates of LotB and LotC\n\nFor identifying potential substrates, we performed GST pull down for both the proteins from infected lysates. For proteomic-based identification, three independent biological replicates were processed. To this end, HEK293T cells were transfected with CD32 and infected with Legionella WT strain for 2 hr. Cells were lysed with ice cold lysis buffer (10 mM Tris-HCl pH 7.5, 150 mM NaCl, 0.5 mM EDTA pH 8,\u00a0and 0.5% NP40). Total 1 mg lysate was used for IP. Lysates were incubated with glutathione beads to rule out background binding and the precleared lysates were incubated with fresh bead containing pure GST inactive DuB protein in 1:100 ratio (pure DuB:Lysate). IPs were washed three times with wash buffer (10 mM\u00a0Tris-HCl pH 7.5, 300 mM NaCl, and\u00a00.5 mM EDTA pH 8) and subsequently two times with IP buffer (Lysis buffer without detergent) and two times with MS grade water prior to urea elution. Samples were processed for mass spectrometry as described in previous section. Data files are available in supplementary files.\n\nFor validating the potential substrates from the results of mass spectrometry, we performed in vitro deubiquitination assay for selected targets. HEK293T cells were first transfected with myc-tag proteins and CD32, followed by Legionella WT strain infection for 2 hr. Cells were lysed with ice cold lysis buffer (50 mM Tris-HCl pH 7.5, 150 mM NaCl, 5 mM EDTA pH 8, and\u00a01% NP40). Total 2 mg lysate was incubated with myc agarose (Sigma Aldrich) at 4\u00b0C, overnight. After washing three times with wash buffer (50 mM Tris-HCl pH 7.5, 400 mM NaCl, and\u00a05 mM EDTA pH 8), the agarose beads were incubated with pure GST wild-type or catalytic dead mutant DUB protein at 37\u00b0C for 1.5 hr and subsequently washed by wash buffer for two times. Samples were boiled in sample buffer and further detected the ubiquitination level by western blotting.\n\n### Confocal imaging and image analysis\n\nU2OS cells were transfected with FLAG-LotB or FLAG-LotC by GeneJuice transfection reagent (Merck) for 24 hr and fixed by 4% paraformaldehyde for 20 min. After fixation, cells were permeabilized and blocked by 0.1% saponin and 1% BSA in PBS for 1 hr at room temperature. Cells were incubated with anti-Flag antibody (Sigma and Cell Signaling), with either anti-calnexin antibody (Abcam), anti-TOMM20 antibody (Abcam), or anti-GM130 (BD Transduction Laboratories) at 4\u00b0C overnight. Alexa Fluor 488 and Alexa Fluor 546 (Invitrogen) secondary antibody were incubated for 1 hr at room temperature. Images were acquired by the Zeiss LSM780 microscope system with 63\u00a0\u00d7\u00a01.4 NA oil immersion objective and further analyzed by Zeiss Zen microscope software.\n\n### Cell lines\n\nHEK293T (ATCC CRL-3216) and U2OS (ATCC HTB-96) were used in this study. Both cell lines were authenticated by STR profiling from the suppliers (ATCC). Cells were tested negative for mycoplasma contamination.\n",
+      "created_at": "2025-12-02T21:22:28.495216Z"
+    },
+    {
+      "id": "07429c13-446a-4ed9-813e-98acb27bddec",
+      "submission_id": "9994e2a2-111e-4075-90eb-38b9678cbc55",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Wade Harper, Harvard Medical School United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.58277.sa1](https://doi.org/10.7554/eLife.58277.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nThis paper describes a biochemical analysis of LotC and LotB, two OTU domain DUBs found in Legionella. The work includes a determination of the substrate specificity of the DUBs on ubiquitin conjugates, as well as a structural analysis of LotB and LotC. The paper also examines interaction partners for Lot proteins, as well as their subcellular localization. The interaction partners for the DUBs provides a resource for the community. Your efforts to address the previous reviewers comments made the paper much stronger.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Novel class of OTU deubiquitinases regulate substrate ubiquitination upon Legionella infection\" for consideration by eLife. Your article has been reviewed by three peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation has been overseen by Cynthia Wolberger as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Claudio A P Joazeiro (Reviewer #1).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nAs the editors have judged that your manuscript is of interest, but as described below that additional experiments are required before it is published, we would like to draw your attention to changes in our revision policy that we have made in response to COVID-19 (https://elifesciences.org/articles/57162). First, because many researchers have temporarily lost access to the labs, we will give authors as much time as they need to submit revised manuscripts. We are also offering, if you choose, to post the manuscript to bioRxiv (if it is not already there) along with this decision letter and a formal designation that the manuscript is \"in revision at eLife\". Please let us know if you would like to pursue this option. (If your work is more suitable for medRxiv, you will need to post the preprint yourself, as the mechanisms for us to do so are still in development.)\n\nSummary:\n\nThis paper describes a biochemical analysis of LotC and LotB, two OTU domain DUBs found in Legionella. The work includes a determination of the substrate specificity of the DUBs on ubiquitin conjugates, as well as a structural analysis of LotB and LotC. The paper also examines interaction partners for Lot proteins, as well as their subcellular localization. The interaction partners for the DUBs provides a resource for the community.\n\nEssential revisions:\n\nWhile the reviewers feel that the work is potentially appropriate for publication in eLife, they feel that additional work is needed to strengthen various aspects of the paper.\n\n1) Given that LotB is already known to be an OTU DUB, careful and appropriate descriptions of what is known and what is new would strengthen the paper. In addition, it would be helpful to spend more time presenting the unique features of LotC relative to LotA/B. Are there new mutations that would be easy to make and test that would lead to some validation of the unique features of LotC? Perhaps you already have such data. In this regard, it would be interesting to compare a simple docking of Ub to the molecular dynamics simulation.\n\n2) The reviewers feel that the interaction proteomics is less well developed than it might be. Recognizing that it may be difficult to develop novel biological insights in the current situation, the reviewers feel that more effort in organizing the data would improve the paper substantially. Many of the interactors are in complexes and so potentially only one protein within the complex is a substrate. So the description and interpretation of the data should also be more precise. The reviewers feel that some additional form of orthogonal validation would really help. Is it possible to try to validate at least s small number of the potential interactions? A second possibility is to take perhaps a small number of potential high value targets (like Rabs, given that they are known to be ubiquitylated in the context of Legionella infection), and see if their ubiquitylation is reduced by LotB/C expression using a simple western blot assay. Other likely ubiquitylated proteins could also potentially be tested in a similar way. In addition, the interaction with the ribosome is interesting but given its abundance, raises the question of whether it could be a false positive. Can this interaction be validated better? Organizing the hits into protein complexes and presenting the data as a \"complexome\" might help.\n\n3) The interaction data is provided only for the inactive Lot proteins. If available, this data should also be provided for the WT protein. Also, the localization data is provided for the WT protein, so in order to be parallel with the proteomics, it would also be important to have the mutant protein localization data as well.\n\nBecause some of the comments of the reviewers may facilitate an understanding of the desired revisions, I have provided all of the comments below.\n\nReviewer #1:Legionella pneumophila, a Gram-negative bacterium, is an important human pathogen. Its pathogenic mechanism relies on the secretion of effector proteins into the host cell to modify innate immunity and metabolism. There is therefore great interest in identifying and characterizing such bacterial effectors. Here, Dikic and colleagues present a multi-disciplinary study of two novel Legionella effectors that act as deubiquitinating enzymes (DUBs) that interfere with the host ubiquitin signaling.Using a well-conceived bioinformatics approach to fish for candidate DUBs among 305 predicted secreted Legionella proteins, the authors found two novel DUBs belonging to the OTU family, which they named LotB and LotC. OTU-family DUBs are unique in that they can act in a ubiquitin linkage-specific manner. Indeed, results of a di-ubiquitin cleavage assay suggested that LotB acted more effectively towards Ub K63 linkages (and to a weaker extent towards K48 and K6 linkages), whereas LotC did not show linkage specificity. To elucidate the ubiquitin specificity and catalytic mechanism of these DUBs the authors used a combination of activity-based probes, structure-function studies, and crystallographic structural determination. A main feature that has emerged is that the Ub K63 linkage specificity of LotB relies on an additional ubiquitin-binding site (S1'). The authors also performed initial studies aimed at understanding the functional role of LotB and LotC in the host cell. LotB appears to localize predominantly to the ER membrane and its interactome indeed revealed primarily membrane proteins. On the other hand, LotC appears to have a broad subcellular distribution and did not exhibit preference towards membrane interactors. Interestingly, co-expression of the DUBs with selected Legionella-secreted E3 ligases uncovered further interactors. Among those, the combination of LotC and SdcA revealed the interaction with a number of ribosomal proteins. In conclusion, this manuscript integrates data obtained using a wide variety of experimental approaches to characterize the specificity, mechanism, structure and potential biological functions of two novel effector proteins of an important bacterial pathogen. The work will be of broad interest and merits publication.\n\nThe only major weakness of the work is the writing. First, there are many errors throughout the text (\"Legionella pneumophila that causes Legionaries' disease\"; \"host-protein interactome studies revealed that LotB and LotC have different sets of host-interacting proteins to LotB and LotC\"; etc). Second, communicating the manuscript's beautiful messages to a general audience would benefit enormously from a major revision to improve on explanations (e.g., S1' is not defined anywhere) and clarity overall.\n\nAlthough the findings open several future directions outside the scope of the manuscript (e.g., what is the LotB membrane-targeting mechanism?) it would be exciting to see some of the functional studies developed further. For example, what are functional consequences of the ribosome interactions found? Does expression of a ubiquitin K63R mutant interfere with LotB (but not LotC) interactions?\n\nThe legends are fairly undescriptive and incomplete. For example, in Figure 5E-F, what is the basis for classification of the different protein groups? I was particularly confused by the presence of proteins such as CNOT1, HNRNPs, PCNA, PSMCs, PSMDs, SMN1, etc., listed under \"Orgenelle\" in Figure 5E. And what is the light green box in Figure 5E?\n\nReviewer #2:\n\nThis paper describes a molecular analysis of LotB and LotC DUBs from Legionelle, and defines these enzymes as well as the previously characterized LotA DUB as unique OTU-like DUBs. The paper combines a lot of biochemical analysis of substrate specificity with structural biology to elucidate mechanisms underlying the interesting substrate specificities of the enzymes. LotB appears quite specific for K63 linkages whereas LotC is a bit more promiscuous and cleaves multiple chain types. Lot enzymes were found to have unique structural features in their S1 binding site compared with other OTU-class DUBs which may explain their specificity, in part. The authors used molecular dynamics to identify potential ubiquitin S1 binding site residues and tested candidate residues in vitro using chain cleavage assays. These studies verified a subset of residues as being important.\n\nFinally, the authors perform a series of exploratory studies to understand potential biological functions of LotB and LotC. The authors demonstrate that LotB is associated with ER and appears to interact with proteins that are often associated with ER, including some membrane proteins. In contrast, LotC doesn't seem to have a specific subcellular localization and interacts preferentially with soluble proteins or protein complexes. They performed analogous experiments with over expression of Legionella E3s, identifying additional candidate substrates.\n\nOverall, the paper covers a lot of ground. The structural and biochemical studies are very complete. The target identification studies are a good start, but the study doesn't have much in the way of validation currently. However, this work provides many new leads for potential biological functions of the DUBs.\n\nReviewer #3:\n\nThis manuscript concerns the characterization of two Legionella OUT-like deubiquitinases LotB and LotC. The authors use a combination of activity based suicide probes and endpoint assays using di-ubiquitin to define the UBL selectivity and ubiquitin chain specificity of these enzymes. A crystal structure of the catalytic domain of LotC is presented and compared with the already existing PDB structure of LotB. The authors identify extended insertions in the catalytic domain that based on molecular dynamics simulations contribute to the mode of ubiquitin binding. The authors then conduct a series of differential proteomic interactome studies using catalytically inactive mutants as baits. Some of these experiments are conducted in the presence of overexpressed Legionella ubiquitin E3 ligases. Interacting proteins are not further validated but presented as likely substrates of these enzymes.\n\nWhilst this is in principle an interesting topic, the study at this stage does not provide substantial fundamental new insights or present clear conceptual advances in the mechanistic understanding of DUBs in general or in the role of these particular DUBs in the context of a Legionella infection.\n\n1) LotB (as the authors also state) was recently (in January 2020) described in a manuscript by Ma et al. (Ma et al., 2020) that included a crystal structure identifying LotB as OTU-related and also described its of K63-ubiquitin chain selectivity. Related LotA was already characterised as a DUB in 2018 (Kubori et al., 2018). Given that this study does not undertake a full blown phylogenetic/bioinformatics analysis of the family, the title seems somewhat misleading. This manuscript is not the first to describe the \"novel class of OTU deubiquitinases\". The biochemical characterization of the enzymatic activity is quite basic and the cell biology of the enzymes is not explored except for an attempt at subcellular localization which identifies LotB as an ER-localised protein.\n\n2) Interactors are not necessarily substrates \u2013 Whilst the title alludes to substrate ubiquitination, and the Introduction states \"we\u2026identified the specific host-substrates of LotB and LotC\", the experiments are not directed to identify the substrates \u2013 i.e. proteins that may be less ubiquitinated in the presence of the Legionella DUBs. This would have required a different approach, for example isolating ubiquitylated proteins or peptides in the first place.\n\nThe interactome datasets may of course identify interesting binding partners that may well include both regulators and substrates. However no orthologous validation experiments have been conducted to verify firstly the interaction and secondly assess the putative enzyme-substrate relationship. The figures focus on the comparison of interactors that are enriched in \"mutant over empty\" \u2013 presumably an empty plasmid \u2013 rather than drawing a comparison between wild-type and inactive mutants. Importantly, there is a priori no evidence that catalytically inactive DUBs would act as true substrate traps \u2013 they may misfold or mislocalise and for that reason associate non-specifically with a different subset of proteins. Thus in the absence of further work, the information value of these datasets is unclear.\n\nThe introduction of some Legionella E3 ligases in the experimental set-up does alter the interactome data but this could be due to an overall change in the ubiquitin landscape upon the overexpression of those E3s. In other words, overexpression of any other E3 may also impinge on the interactome associated with the Legionella DUBs. This does not necessarily imply a coordination of activities in the host. The overall rationale of those experiments is not clear \u2013 the Legionella E3 ligases do not necessarily modify host proteins that are then targeted by Legionella DUBs.\n",
+      "created_at": "2025-12-02T21:22:28.495216Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T21:22:28.495216Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T21:22:28.495216Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "4352b338-9e60-4dd5-8993-a7c5d6bacac1",
+      "content_id": "135535d0-761f-425f-8bfa-e73b6834d20f",
+      "claim_id": "C1",
+      "claim": "Legionella pneumophila causes a severe pneumonia known as Legionnaires' disease.",
+      "claim_type": "EXPLICIT",
+      "source": "Legionella pneumophila causes a severe pneumonia known as Legionnaires' disease.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge about the pathogen and disease.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:22:28.495216Z"
+    },
+    {
+      "id": "6d44cb0b-98bd-47b9-90d9-787a88f83566",
+      "content_id": "135535d0-761f-425f-8bfa-e73b6834d20f",
+      "claim_id": "C2",
+      "claim": "During infection, Legionella injects more than 300 effector proteins into host cells.",
+      "claim_type": "EXPLICIT",
+      "source": "During the infection, Legionella injects more than 300 effector proteins into host cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Burstein et al., 2016 in the manuscript and represents established knowledge.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:22:28.495216Z"
+    },
+    {
+      "id": "a345436b-9566-48f2-9707-80ed465508f1",
+      "content_id": "135535d0-761f-425f-8bfa-e73b6834d20f",
+      "claim_id": "C3",
+      "claim": "Two Legionella OTU-like deubiquitinases were identified: LotB (Lpg1621/Ceg23) and LotC (Lpg2529).",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we identified two LegionellaOTU (ovarian tumor)-like deubiquitinases (LOT-DUBs; LotB [Lpg1621/Ceg23] and LotC [Lpg2529]).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study supported by experimental data shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:22:28.495216Z"
+    },
+    {
+      "id": "b5677689-c1a6-44f7-a45a-803b07daa5a4",
+      "content_id": "135535d0-761f-425f-8bfa-e73b6834d20f",
+      "claim_id": "C4",
+      "claim": "The crystal structure of the LotC catalytic core (LotC14-310) was determined at 2.4 \u00c5 resolution.",
+      "claim_type": "EXPLICIT",
+      "source": "The crystal structure of the LotC catalytic core (LotC14-310) was determined at 2.4 \u00c5.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by crystallographic data presented in the manuscript and deposited as PDB ID: 6YK8.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:22:28.495216Z"
+    },
+    {
+      "id": "d95ef1b7-fe1b-4511-ba9b-7563b4b9c794",
+      "content_id": "135535d0-761f-425f-8bfa-e73b6834d20f",
+      "claim_id": "C5",
+      "claim": "LOT-family DUBs show an extended helical lobe between the Cys-loop and the variable loop, which defines them as a unique class of OTU-DUBs.",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike the classical OTU-family, the LOT-family shows an extended helical lobe between the Cys-loop and the variable loop, which defines them as a unique class of OTU-DUBs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by structural analysis data shown in Figure 3 and sequence alignments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:22:28.495216Z"
+    },
+    {
+      "id": "ade4a00d-01aa-42ec-b180-3361854bb8b7",
+      "content_id": "135535d0-761f-425f-8bfa-e73b6834d20f",
+      "claim_id": "C6",
+      "claim": "LotB has an additional ubiquitin-binding site (S1') which enables specific cleavage of Lys63-linked polyubiquitin chains.",
+      "claim_type": "EXPLICIT",
+      "source": "LotB has an additional ubiquitin-binding site (S1'), which enables the specific cleavage of Lys63-linked polyubiquitin chains.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by activity-based probe experiments shown in Figure 2 and di-ubiquitin cleavage assays in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:22:28.495216Z"
+    },
+    {
+      "id": "799bcc28-51a0-4da8-bf9f-d13fcb1a7f2f",
+      "content_id": "135535d0-761f-425f-8bfa-e73b6834d20f",
+      "claim_id": "C7",
+      "claim": "LotC only contains the S1 site and cleaves different species of ubiquitin chains.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, LotC only contains the S1 site and cleaves different species of ubiquitin chains.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by activity-based probe experiments shown in Figure 2 and di-ubiquitin cleavage assays in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:22:28.495216Z"
+    },
+    {
+      "id": "d22fa48f-e2c5-477d-a318-bc7b7fd711a9",
+      "content_id": "135535d0-761f-425f-8bfa-e73b6834d20f",
+      "claim_id": "C8",
+      "claim": "MS analysis of LotB and LotC identified different categories of host-interacting proteins and substrates.",
+      "claim_type": "EXPLICIT",
+      "source": "MS analysis of LotB and LotC identified different categories of host-interacting proteins and substrates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by mass spectrometry data shown in Figures 5 and 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:22:28.495216Z"
+    },
+    {
+      "id": "e4ac9583-a9c8-4ed7-9e99-42240f418327",
+      "content_id": "135535d0-761f-425f-8bfa-e73b6834d20f",
+      "claim_id": "C9",
+      "claim": "Ubiquitination is a well-studied post-translational modification that regulates various cellular events.",
+      "claim_type": "EXPLICIT",
+      "source": "Ubiquitination, a well-studied post-translational modification, regulates various cellular events (Yau and Rape, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:22:28.495216Z"
+    },
+    {
+      "id": "a16c635e-08d1-44b0-ade0-adbec4beadbb",
+      "content_id": "135535d0-761f-425f-8bfa-e73b6834d20f",
+      "claim_id": "C10",
+      "claim": "The ubiquitin-proteasome system involves ubiquitination of misfolded proteins, degradation by the proteasome, and recycling.",
+      "claim_type": "EXPLICIT",
+      "source": "A representative example of the ubiquitin-mediated cellular process is the ubiquitin-proteasome system, where misfolded proteins get ubiquitinated, degraded by the proteasome, and, finally, recycled (Dikic, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:22:28.495216Z"
+    },
+    {
+      "id": "16e42c78-ec97-4f98-a386-ff3c77abe5e2",
+      "content_id": "135535d0-761f-425f-8bfa-e73b6834d20f",
+      "claim_id": "C11",
+      "claim": "Ubiquitination works together with the autophagy machinery for degradation of larger cellular waste.",
+      "claim_type": "EXPLICIT",
+      "source": "For larger cellular waste, such as cellular components (endoplasmic reticulum [ER], mitochondria, etc.), protein aggregates, or intracellular bacteria, ubiquitination works together with the autophagy machinery, which includes the sequestration of ubiquitinated components and their transfer into the lysosome for degradation (Pohl and Dikic, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:22:28.495216Z"
+    },
+    {
+      "id": "2f4d48f5-b4e7-4cc9-b81d-720c7deb7ad2",
+      "content_id": "135535d0-761f-425f-8bfa-e73b6834d20f",
+      "claim_id": "C12",
+      "claim": "Deubiquitinating enzymes (DUBs) cleave ubiquitin molecules from target substrates to maintain cellular homeostasis.",
+      "claim_type": "EXPLICIT",
+      "source": "To maintain homeostasis in the cell, ubiquitination events are tightly regulated by a reverse process called deubiquitination, where ubiquitin molecules are specifically cleaved from the target substrates and subsequently recycled by deubiquitinating enzymes (deubiquitinases [DUBs]) (Clague et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:22:28.495216Z"
+    },
+    {
+      "id": "834e7df0-c5c8-40b0-8865-cdda486e453f",
+      "content_id": "135535d0-761f-425f-8bfa-e73b6834d20f",
+      "claim_id": "C13",
+      "claim": "About 100 different DUBs have been identified in humans.",
+      "claim_type": "EXPLICIT",
+      "source": "To date, about 100 different DUBs have been identified in human.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:22:28.495216Z"
+    },
+    {
+      "id": "05f7e847-cc86-4d2d-a877-3bf0ee9e197b",
+      "content_id": "135535d0-761f-425f-8bfa-e73b6834d20f",
+      "claim_id": "C14",
+      "claim": "Human DUBs are categorized into seven different classes: USP, JAMM (MPN), OTU, MJD (Josepin), UCH, MINDY, and ZUFSP.",
+      "claim_type": "EXPLICIT",
+      "source": "They are categorized into seven different classes based on their structure and mechanism of action, and these include USP, JAMM (MPN), OTU, MJD (Josepin), UCH, and the recently discovered MINDY and ZUFSP (Abdul Rehman et al., 2016; Clague et al., 2019; Haahr et al., 2018; Hermanns et al., 2018; Hewings et al., 2018; Kwasna et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge supported by multiple citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:22:28.495216Z"
+    },
+    {
+      "id": "02acb4eb-a8c0-40e8-a6e0-80bd01085311",
+      "content_id": "135535d0-761f-425f-8bfa-e73b6834d20f",
+      "claim_id": "C15",
+      "claim": "Six DUB classes belong to the cysteine protease family (USP, OTU, MJD, UCH, MINDY, and ZUFSP), while JAMM (MPN) belongs to zinc-containing metalloproteases.",
+      "claim_type": "EXPLICIT",
+      "source": "Six of them belong to the cysteine protease family (USP, OTU, MJD [Josepin], UCH, MINDY, and ZUFSP), while JAMM (MPN) belongs to the zinc-containing metalloproteases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:22:28.495216Z"
+    },
+    {
+      "id": "6cade51b-0c3e-45fb-b58b-06f880503d0a",
+      "content_id": "135535d0-761f-425f-8bfa-e73b6834d20f",
+      "claim_id": "C16",
+      "claim": "The OTU-family exhibits linkage specificity, distinguishing it from other DUBs.",
+      "claim_type": "EXPLICIT",
+      "source": "Among them, the OTU-family is distinguished from other DUBs, as they exhibit linkage specificity (Mevissen et al., 2016; Mevissen et al., 2013; Mevissen and Komander, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:22:28.495216Z"
+    },
+    {
+      "id": "77dd6cfa-00e7-4f76-90b7-1f478f21fed4",
+      "content_id": "135535d0-761f-425f-8bfa-e73b6834d20f",
+      "claim_id": "C17",
+      "claim": "Cezanne specifically cleaves Lys11-linked polyubiquitin chains.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, Cezanne specifically cleaves Lys11-linked polyubiquitin chains (Bremm et al., 2010)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:22:28.495216Z"
+    },
+    {
+      "id": "07557464-d48a-4c95-abc8-690ab59d509a",
+      "content_id": "135535d0-761f-425f-8bfa-e73b6834d20f",
+      "claim_id": "C18",
+      "claim": "OTUB1 preferentially cleaves Lys48-linked chains.",
+      "claim_type": "EXPLICIT",
+      "source": "OTUB1 preferentially cleaves Lys48-linked chains (Edelmann et al., 2009; Wang et al., 2009)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:22:28.495216Z"
+    },
+    {
+      "id": "76bcd64a-0b49-4f8c-bcf5-9672680134c3",
+      "content_id": "135535d0-761f-425f-8bfa-e73b6834d20f",
+      "claim_id": "C19",
+      "claim": "OTULIN exclusively cleaves M1-linked (linear) chains.",
+      "claim_type": "EXPLICIT",
+      "source": "while OTULIN exclusively cleaves M1-linked (linear) chains (Keusekotten et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:22:28.495216Z"
+    },
+    {
+      "id": "1c094f2e-2b48-4091-b7d2-2d764a451769",
+      "content_id": "135535d0-761f-425f-8bfa-e73b6834d20f",
+      "claim_id": "C20",
+      "claim": "OTU-family linkage specificity is achieved by the specific orientation of the S1 site and the S1' site.",
+      "claim_type": "EXPLICIT",
+      "source": "In general, the selectivity is achieved by the specific orientation of the S1 site, which accepts proximal ubiquitin and the S1' site that binds primed ubiquitin of ubiquitin chains.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge based on structural and biochemical studies.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:22:28.495216Z"
+    },
+    {
+      "id": "359f946a-32c1-45bd-8ef7-027ab0f766d4",
+      "content_id": "135535d0-761f-425f-8bfa-e73b6834d20f",
+      "claim_id": "C21",
+      "claim": "The presence or absence of additional ubiquitin-binding domains (UBDs), sequence variations on ubiquitinated substrates, or S2-binding site can affect OTU-family specificity.",
+      "claim_type": "EXPLICIT",
+      "source": "Besides, the presence or the absence of additional ubiquitin-binding domains (UBDs), sequence variations on ubiquitinated substrates, or S2-binding site that binds to the third ubiquitin within the chains can also affect the specificity of OTU-family (Mevissen et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:22:28.495216Z"
+    },
+    {
+      "id": "757f30e4-e726-40f7-ac50-6a4a35b4eda9",
+      "content_id": "135535d0-761f-425f-8bfa-e73b6834d20f",
+      "claim_id": "C22",
+      "claim": "Pathogens are armed with various weapons to hijack the host-ubiquitination system.",
+      "claim_type": "EXPLICIT",
+      "source": "Considering the importance of ubiquitin-mediated cellular pathways, it is not surprising that pathogens are armed with various weapons to hijack the host-ubiquitination system.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge supported by subsequent examples and citations.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:22:28.495216Z"
+    },
+    {
+      "id": "cfdad56b-ab48-4489-aca0-4ea7b0c41b92",
+      "content_id": "135535d0-761f-425f-8bfa-e73b6834d20f",
+      "claim_id": "C23",
+      "claim": "Salmonella typhimurium encodes HECT type E3 ligase SopA.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, Salmonella typhimurium encodes HECT type E3 ligase SopA (Diao et al., 2008; Fiskin et al., 2017; Lin et al., 2012)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:22:28.495216Z"
+    },
+    {
+      "id": "27bdd395-9ab4-4a58-841b-3d9babf25b09",
+      "content_id": "135535d0-761f-425f-8bfa-e73b6834d20f",
+      "claim_id": "C24",
+      "claim": "Legionella pneumophila contains LubX and LegU1, which are similar to U-box- and F-box-containing E3 ligases, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "Legionella pneumophila contains LubX and LegU1, which are similar to U-box- and F-box-containing E3 ligases, respectively (Ensminger and Isberg, 2010; Kubori et al., 2008; Quaile et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:22:28.495216Z"
+    },
+    {
+      "id": "e8f0bef2-b125-4b2d-9f6b-aa4d21060c78",
+      "content_id": "135535d0-761f-425f-8bfa-e73b6834d20f",
+      "claim_id": "C25",
+      "claim": "Bacterial pathogens possess atypical ubiquitin ligases that do not belong to any known E3 ligases, such as IpaH family (Shigella) or SidC/SdcA (Legionella).",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, bacterial pathogens possess atypical ubiquitin ligases that do not belong to any of the known E3 ligases, such as IpaH family (Shigella) or SidC/SdCA (Legionella) (Hsu et al., 2014; Wasilko et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:22:28.495216Z"
+    },
+    {
+      "id": "70828587-f065-438a-8255-3e67ffa8613c",
+      "content_id": "135535d0-761f-425f-8bfa-e73b6834d20f",
+      "claim_id": "C26",
+      "claim": "The SidE family (SdeA, SdeB, SdeC, and SidC) of Legionella mediates unconventional phosphoribosyl (PR) serine ubiquitination mechanism.",
+      "claim_type": "EXPLICIT",
+      "source": "More recently, the SidE family (SdeA, SdeB, SdeC, and SidC) of Legionella has been shown to mediate unconventional phosphoribosyl (PR) serine ubiquitination mechanism, which is also tightly regulated by the meta-effector SidJ or PR-ubiquitin-specific DUBs (DupA and DupB) (Bhogaraju et al., 2019; Bhogaraju et al., 2016; Black et al., 2019; Kalayil et al., 2018; Qiu et al., 2016; Shin et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge supported by multiple citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:22:28.495216Z"
+    },
+    {
+      "id": "ca0895a9-d9b3-4bae-a91b-9ba58150dd5c",
+      "content_id": "135535d0-761f-425f-8bfa-e73b6834d20f",
+      "claim_id": "C27",
+      "claim": "Pathogenic bacteria encode not only ubiquitin ligases but also DUBs.",
+      "claim_type": "EXPLICIT",
+      "source": "Pathogenic bacteria encode not only ubiquitin ligases but also DUBs (Hermanns and Hofmann, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:22:28.495216Z"
+    },
+    {
+      "id": "85697485-2ee1-42ad-9040-4576afc04524",
+      "content_id": "135535d0-761f-425f-8bfa-e73b6834d20f",
+      "claim_id": "C28",
+      "claim": "The most studied bacterial DUBs are CE-clan proteases, which cleave either ubiquitin or ubiquitin-like modifiers (SUMO1 or NEDD8).",
+      "claim_type": "EXPLICIT",
+      "source": "The most studied bacterial DUBs are CE-clan proteases, based on the MEROPS database classification, which cleave either ubiquitin or ubiquitin-like modifiers (SUMO1 or NEDD8) (Pruneda et al., 2016; Rawlings et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:22:28.495216Z"
+    },
+    {
+      "id": "f6f3e380-c336-42be-85e6-287dc3b55141",
+      "content_id": "135535d0-761f-425f-8bfa-e73b6834d20f",
+      "claim_id": "C29",
+      "claim": "Bacteria and viruses encode OTU-like DUBs.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to CE-clan DUBs, bacteria and viruses encode OTU-like DUBs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge supported by subsequent examples and citations.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:22:28.495216Z"
+    },
+    {
+      "id": "29af803b-962c-4421-b1ef-e4a155600b15",
+      "content_id": "135535d0-761f-425f-8bfa-e73b6834d20f",
+      "claim_id": "C30",
+      "claim": "Viral-OTUs have a unique structure compared to known OTU family members.",
+      "claim_type": "EXPLICIT",
+      "source": "Several structures from viral-OTUs revealed that they have a unique structure compared to those of known OTU family members (Akutsu et al., 2011; Capodagli et al., 2013; James et al., 2011; Lombardi et al., 2013; van Kasteren et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge supported by multiple citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:22:28.495216Z"
+    },
+    {
+      "id": "ade32b0d-0da7-471b-99c1-28e47b68965b",
+      "content_id": "135535d0-761f-425f-8bfa-e73b6834d20f",
+      "claim_id": "C31",
+      "claim": "OTUs from nairovirus CCHFV and DUGV have an additional \u03b2-hairpin in their S1-binding site.",
+      "claim_type": "EXPLICIT",
+      "source": "OTUs from nairovirus Crimean-Congo hemorrhagic fever virus (CCHFV) and Dugbe virus (DUGV) have an additional \u03b2-hairpin in their S1-binding site.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge based on structural studies.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:22:28.495216Z"
+    },
+    {
+      "id": "e4e5020d-80f5-45dc-8aaa-a6c81239ccb4",
+      "content_id": "135535d0-761f-425f-8bfa-e73b6834d20f",
+      "claim_id": "C32",
+      "claim": "Only three bacterial OTU-like DUBs have been identified to date.",
+      "claim_type": "EXPLICIT",
+      "source": "While viral OTUs have been studied extensively, only three bacterial OTU-like DUBs have been identified to date.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the state of knowledge in the field at the time of writing.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:22:28.495216Z"
+    },
+    {
+      "id": "8e365d40-5e8e-4950-ae8b-edf7d110d158",
+      "content_id": "135535d0-761f-425f-8bfa-e73b6834d20f",
+      "claim_id": "C33",
+      "claim": "ChlaOTU from Chlamydophila pneumoniae contains an OTU-domain that cleaves both K48- and K63-linked polyubiquitin chains.",
+      "claim_type": "EXPLICIT",
+      "source": "ChlaOTU from Chlamydophila pneumoniae contains an OTU-domain that cleaves both K48- and K63-linked polyubiquitin chains (Furtado et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:22:28.495216Z"
+    },
+    {
+      "id": "9757a823-6f85-4d4b-8701-8a18e7369910",
+      "content_id": "135535d0-761f-425f-8bfa-e73b6834d20f",
+      "claim_id": "C34",
+      "claim": "LotA (Lpg2248; Lem21) contains two OTU-like domains with two catalytic Cys residues (C13 and C303), both required for cleaving ubiquitin chains from an LCV.",
+      "claim_type": "EXPLICIT",
+      "source": "LotA (Lpg2248; Lem21), Legionella OTU (LOT)-like DUB, contains two OTU-like domains with two catalytic Cys residues (C13 and C303), both of which are required for cleaving ubiquitin chains from an LCV (Legionella-containing vacuole) (Kubori et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:22:28.495216Z"
+    },
+    {
+      "id": "7811e4d7-7c40-43ca-99c6-0d1df98fe983",
+      "content_id": "135535d0-761f-425f-8bfa-e73b6834d20f",
+      "claim_id": "C35",
+      "claim": "LotA showed K6-linkage preference that is solely dependent on its first OTU domain (Cys13).",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, LotA showed K6-linkage preference that is solely dependent on its first OTU domain (Cys13).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge supported by citation to Kubori et al., 2018.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:22:28.495216Z"
+    },
+    {
+      "id": "b7520a69-b652-46f5-8e5a-2b2bf101d18a",
+      "content_id": "135535d0-761f-425f-8bfa-e73b6834d20f",
+      "claim_id": "C36",
+      "claim": "Another OTU-like DUB from Legionella (Lpg1621, Ceg23) has been identified as K63 chain-specific OTU-DUB.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently, another OTU-like DUB from Legionella (Lpg1621, Ceg23) has been identified as K63 chain-specific OTU-DUB (Ma et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:22:28.495216Z"
+    },
+    {
+      "id": "0a881731-9725-4645-bdf9-fbb20d6e9c58",
+      "content_id": "135535d0-761f-425f-8bfa-e73b6834d20f",
+      "claim_id": "C37",
+      "claim": "Little is known about the structure and molecular details of bacterial OTU-like DUBs.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite these findings, little is known about the structure and molecular details of bacterial OTU-like DUBs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the state of knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:22:28.495216Z"
+    },
+    {
+      "id": "e1f77fa9-ed8c-4253-a68b-80f87f03b041",
+      "content_id": "135535d0-761f-425f-8bfa-e73b6834d20f",
+      "claim_id": "C38",
+      "claim": "305 effector proteins were selected from L. pneumophila based on type IV Icm/Dot complex secretion signal (>2.0).",
+      "claim_type": "EXPLICIT",
+      "source": "Based on the type IV Icm/Dot complex secretion signal (>2.0), 305 effector proteins were selected (Burstein et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological statement supported by citation and shown in Figure 1a.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:22:28.495216Z"
+    },
+    {
+      "id": "2daa5824-9e7e-47fb-ae47-f61ee9637f98",
+      "content_id": "135535d0-761f-425f-8bfa-e73b6834d20f",
+      "claim_id": "C39",
+      "claim": "Using HHpred suite, four previously uncharacterized proteins were revealed as putative DUBs containing catalytic domains of known DUBs.",
+      "claim_type": "EXPLICIT",
+      "source": "Using pairwise sequence-structure comparison based on hidden Markov models (HMMs, HHpred suite) (Zimmermann et al., 2018), we revealed four previously uncharacterized proteins as putative DUBs. These proteins all contain catalytic domains of known DUBs (Figure 1a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding supported by computational analysis and shown in Figure 1a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:22:28.495216Z"
+    },
+    {
+      "id": "1269e250-6553-4d5e-bd3d-cfda65491e19",
+      "content_id": "135535d0-761f-425f-8bfa-e73b6834d20f",
+      "claim_id": "C40",
+      "claim": "Lpg1621(Ceg23) and Lpg2529 are members of the OTU-family, whereas Lpg2411 and Lpg2907 belong to the UCH and CE-clan, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "Lpg1621(Ceg23) and Lpg2529 are found as members of the OTU-family, whereas Lpg2411 and Lpg2907 belong to the UCH and CE-clan, respectively (Figure 1b, Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by computational analysis shown in Figure 1b and Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:22:28.495216Z"
+    },
+    {
+      "id": "e8e3eb17-0764-4bff-81c9-84df2ca98268",
+      "content_id": "135535d0-761f-425f-8bfa-e73b6834d20f",
+      "claim_id": "C41",
+      "claim": "In vitro di-ubiquitin cleavage assay showed that OTU-like DUBs (Lpg1621 and Lpg2529) are capable of cleaving Ub2 chains with different specificity.",
+      "claim_type": "EXPLICIT",
+      "source": "An in vitro di-ubiquitin cleavage assay with di-Ub panel (eight different linkage-specific Ub2 chains [El Oualid et al., 2010]) showed that the OTU-like DUBs (Lpg1621 and Lpg2529) are capable of cleaving Ub2 chains with different specificity, while other candidates (Lpg2411 and Lpg2907) did not show catalytic activity (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:22:28.495216Z"
+    },
+    {
+      "id": "61a996db-db79-47c5-8439-e2eea96ca3a8",
+      "content_id": "135535d0-761f-425f-8bfa-e73b6834d20f",
+      "claim_id": "C42",
+      "claim": "Lpg2411 and Lpg2907 did not show catalytic activity in the di-ubiquitin cleavage assay.",
+      "claim_type": "EXPLICIT",
+      "source": "An in vitro di-ubiquitin cleavage assay with di-Ub panel (eight different linkage-specific Ub2 chains [El Oualid et al., 2010]) showed that the OTU-like DUBs (Lpg1621 and Lpg2529) are capable of cleaving Ub2 chains with different specificity, while other candidates (Lpg2411 and Lpg2907) did not show catalytic activity (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:22:28.495216Z"
+    },
+    {
+      "id": "f72ba840-0300-4005-ae7b-9fe95165fe6a",
+      "content_id": "135535d0-761f-425f-8bfa-e73b6834d20f",
+      "claim_id": "C43",
+      "claim": "Lpg1621 exclusively processed the K63-linked Ub2.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the recent evidence, Lpg1621 exclusively processed the K63-linked Ub2 (Ma et al., 2020)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1c-d and consistent with cited literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:22:28.495216Z"
+    },
+    {
+      "id": "ae204fb5-bc78-4635-8b15-a31acf35d2ab",
+      "content_id": "135535d0-761f-425f-8bfa-e73b6834d20f",
+      "claim_id": "C44",
+      "claim": "Lpg2529 showed activity against K6-, K11-, K33-, K48-, and K63-linked Ub2.",
+      "claim_type": "EXPLICIT",
+      "source": "while Lpg2529 showed activity against K6-, K11-, K33-, K48-, and K63- linked Ub2.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1e-f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:22:28.495216Z"
+    },
+    {
+      "id": "1e998085-1aac-4c01-8d7f-d0c546f27e5c",
+      "content_id": "135535d0-761f-425f-8bfa-e73b6834d20f",
+      "claim_id": "C45",
+      "claim": "Lpg1621 and Lpg2529 were renamed as LotB and LotC, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on the sequence homology and catalytic activity, we have now renamed the Lpg1621 and Lpg2529 as LOT-like DUBs (LotB and LotC, respectively).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a nomenclature decision based on sequence homology and catalytic activity data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:22:28.495216Z"
+    },
+    {
+      "id": "ecb172bb-9a19-4f85-9cb4-b1e3a95ac419",
+      "content_id": "135535d0-761f-425f-8bfa-e73b6834d20f",
+      "claim_id": "C46",
+      "claim": "The OTU-family belongs to the cysteine protease family, which requires the presence of a catalytic triad for their activity.",
+      "claim_type": "EXPLICIT",
+      "source": "The OTU-family belongs to the cysteine protease family, which requires the presence of a catalytic triad for their activity (Mevissen et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:22:28.495216Z"
+    },
+    {
+      "id": "120361a7-d709-4d02-b965-45b80dc38360",
+      "content_id": "135535d0-761f-425f-8bfa-e73b6834d20f",
+      "claim_id": "C47",
+      "claim": "The conserved catalytic triad for LotB is D27, C29, and H270.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on the sequence analysis, we identified the conserved catalytic triad for both LotB (D27, C29, and H270)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by sequence analysis shown in Figure 2a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:22:28.495216Z"
+    },
+    {
+      "id": "0a6e0d31-7bed-44f1-a806-f6a05684f0b4",
+      "content_id": "135535d0-761f-425f-8bfa-e73b6834d20f",
+      "claim_id": "C48",
+      "claim": "The conserved catalytic triad for LotC is D17, C24, and H304.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on the sequence analysis, we identified the conserved catalytic triad for both LotB (D27, C29, and H270) and LotC (D17, C24, and H304).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by sequence analysis shown in Figure 2a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:22:28.495216Z"
+    },
+    {
+      "id": "352eac50-c9ec-49d5-8cdc-920b8714689b",
+      "content_id": "135535d0-761f-425f-8bfa-e73b6834d20f",
+      "claim_id": "C49",
+      "claim": "Mutations on either cysteine or histidine completely abolished the catalytic activity of both LotB and LotC.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutations on either cysteine or histidine completely abolished the catalytic activity of both DUBs, suggesting that both LotB and LotC follow the general catalytic mechanism of the OTU-family (Figure 2a and c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2a and c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:22:28.495216Z"
+    },
+    {
+      "id": "6d43f854-5990-4157-be5b-2634a2323e96",
+      "content_id": "135535d0-761f-425f-8bfa-e73b6834d20f",
+      "claim_id": "C50",
+      "claim": "Both LotB and LotC follow the general catalytic mechanism of the OTU-family.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutations on either cysteine or histidine completely abolished the catalytic activity of both DUBs, suggesting that both LotB and LotC follow the general catalytic mechanism of the OTU-family (Figure 2a and c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the mutagenesis data shown in Figure 2a and c.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:22:28.495216Z"
+    },
+    {
+      "id": "655c422c-62c7-46e9-9089-dea61b332deb",
+      "content_id": "135535d0-761f-425f-8bfa-e73b6834d20f",
+      "claim_id": "C51",
+      "claim": "Both LotB and LotC showed clear shifts with all Prg-ABPs (mono-, K48-, and K63-linked), with different reactivity.",
+      "claim_type": "EXPLICIT",
+      "source": "Both LotB and LotC showed clear shifts with all Prg-ABPs (mono-, K48-, and K63- linked), with different reactivity.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2d and e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:22:28.495216Z"
+    },
+    {
+      "id": "6e0cb239-838a-4b24-92d9-111003584e55",
+      "content_id": "135535d0-761f-425f-8bfa-e73b6834d20f",
+      "claim_id": "C52",
+      "claim": "LotB only partially shifted after 30 min with Prg-ABP, as evident by the amount of unreacted species.",
+      "claim_type": "EXPLICIT",
+      "source": "LotB only partially shifted after 30 min, as evident by the amount of unreacted species",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:22:28.495216Z"
+    },
+    {
+      "id": "ad703513-8c08-4f75-b8ae-db072875544a",
+      "content_id": "135535d0-761f-425f-8bfa-e73b6834d20f",
+      "claim_id": "C53",
+      "claim": "LotC rapidly reacted with Prg-ABP and was completely conjugated after 30 min.",
+      "claim_type": "EXPLICIT",
+      "source": "while LotC rapidly reacted with Prg-ABP and was completely conjugated after 30 min (Figure 2d and e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:22:28.495216Z"
+    },
+    {
+      "id": "f6668cc8-8a71-4bfa-8893-ee5545cf2204",
+      "content_id": "135535d0-761f-425f-8bfa-e73b6834d20f",
+      "claim_id": "C54",
+      "claim": "Both LotB and LotC have a primary ubiquitin-binding S1 site where the propargyl group can be located in close proximity to the catalytic cysteine.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that both LotB and LotC have a primary ubiquitin-binding S1 site, where the propargyl group can be located in close proximity to the catalytic cysteine.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the Prg-ABP reactivity data shown in Figure 2d and e.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:22:28.495216Z"
+    },
+    {
+      "id": "d188ccae-2a44-4aaa-8a4a-65c23a3d4136",
+      "content_id": "135535d0-761f-425f-8bfa-e73b6834d20f",
+      "claim_id": "C55",
+      "claim": "Only LotB reacted with K63-Ub2-VME-ABP.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast with Prg-ABP, only LotB reacted with K63-Ub2-VME-ABP, which is consistent with the di-Ub panel assay (Figure 1c\u2013f), where LotB showed specificity toward the K63-linkage.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:22:28.495216Z"
+    },
+    {
+      "id": "a5863234-cecb-4c8d-9386-d07df84b4012",
+      "content_id": "135535d0-761f-425f-8bfa-e73b6834d20f",
+      "claim_id": "C56",
+      "claim": "There is an additional S1' ubiquitin-binding site on LotB, which helps to properly locate the K63-linked-VME group on the catalytic site proximal to the catalytic cysteine.",
+      "claim_type": "EXPLICIT",
+      "source": "The VME-ABP results suggest that there is an additional S1' ubiquitin-binding site on LotB, which helps to properly locate the K63-linked-VME group on the catalytic site proximal to the catalytic cysteine.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the VME-ABP reactivity data shown in Figure 2d.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:22:28.495216Z"
+    },
+    {
+      "id": "8538cb0e-80b7-4f5c-b1de-467a391c69a6",
+      "content_id": "135535d0-761f-425f-8bfa-e73b6834d20f",
+      "claim_id": "C57",
+      "claim": "LotC lacks the S1' site, causing the VME group between two ubiquitin moieties to be unable to reach the catalytic cysteine.",
+      "claim_type": "EXPLICIT",
+      "source": "LotC lacks this S1' site, causing the VME group between two ubiquitin moieties to be unable to reach the catalytic cysteine.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the lack of VME-ABP reactivity with LotC shown in Figure 2e.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:22:28.495216Z"
+    },
+    {
+      "id": "f4fdc06c-7268-4a17-b04a-81044cf76812",
+      "content_id": "135535d0-761f-425f-8bfa-e73b6834d20f",
+      "claim_id": "C58",
+      "claim": "LotB showed modification with both NEDD8-Prg and ubiquitin-Prg after a 30 min reaction.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, LotB showed modification with both NEDD8-Prg and ubiquitin-Prg after a 30 min reaction",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:22:28.495216Z"
+    },
+    {
+      "id": "55c8cb4b-0571-4a64-b65c-2d3edaeb6b24",
+      "content_id": "135535d0-761f-425f-8bfa-e73b6834d20f",
+      "claim_id": "C59",
+      "claim": "LotC was modified only with ubiquitin-Prg.",
+      "claim_type": "EXPLICIT",
+      "source": "while LotC was modified only with ubiquitin.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2g.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:22:28.495216Z"
+    },
+    {
+      "id": "1e67ada1-6616-4840-90f6-e3dd3ff8997c",
+      "content_id": "135535d0-761f-425f-8bfa-e73b6834d20f",
+      "claim_id": "C60",
+      "claim": "LotB binds to both ubiquitin and NEDD8 through the conserved Ile44-mediated hydrophobic interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that LotB binds to both ubiquitin and NEDD8 through the conserved Ile44-mediated hydrophobic interactions",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the NEDD8-Prg reactivity data and sequence analysis shown in Figure 2f and Figure 2\u2014figure supplement 1c.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:22:28.495216Z"
+    },
+    {
+      "id": "8e2d87e0-5cb5-4ac8-b7be-b3648ea7f7b1",
+      "content_id": "135535d0-761f-425f-8bfa-e73b6834d20f",
+      "claim_id": "C61",
+      "claim": "LotC interacts with ubiquitin through specific residues present only in ubiquitin.",
+      "claim_type": "EXPLICIT",
+      "source": "while LotC interacts with ubiquitin through specific residues present only in ubiquitin (Figure 2\u2014figure supplement 1c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the lack of NEDD8-Prg reactivity and sequence analysis shown in Figure 2g and Figure 2\u2014figure supplement 1c.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:22:28.495216Z"
+    },
+    {
+      "id": "7e8b457e-ae99-4130-a716-c6d9dcfcdec1",
+      "content_id": "135535d0-761f-425f-8bfa-e73b6834d20f",
+      "claim_id": "C62",
+      "claim": "LotC retained its activity with the predicted OTU domain (7\u2013310).",
+      "claim_type": "EXPLICIT",
+      "source": "While LotC retained its activity with the predicted OTU domain (7\u2013310)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:22:28.495216Z"
+    },
+    {
+      "id": "98b85b61-8b2d-40d9-aa0c-3489f714fe51",
+      "content_id": "135535d0-761f-425f-8bfa-e73b6834d20f",
+      "claim_id": "C63",
+      "claim": "LotB lost its activity after deletion of 50 amino acids (300\u2013350) located at the C-terminus, beyond the predicted OTU domain (11\u2013283).",
+      "claim_type": "EXPLICIT",
+      "source": "LotB lost its activity after deletion of 50 amino acids (300\u2013350) located at the C-terminus, beyond the predicted OTU domain (11\u2013283).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:22:28.495216Z"
+    },
+    {
+      "id": "d2b753f9-cda4-4ee4-956e-791aa6e7f7a9",
+      "content_id": "135535d0-761f-425f-8bfa-e73b6834d20f",
+      "claim_id": "C64",
+      "claim": "The additional helical region (300-350) in LotB might be required for another ubiquitin-binding site (S1') to accept the distal ubiquitin moiety from K63 Ub2.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on the LotB structure (PDB:6KS5, Ma et al., 2020), we assumed that this additional helical region might be required for the another ubiquitin-binding site (S1') to accept the distal ubiquitin moiety from K63 Ub2 (Figure 3c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the activity data and structural analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:22:28.495216Z"
+    },
+    {
+      "id": "e5da8b75-d0fe-40a0-ad6b-041e9583f276",
+      "content_id": "135535d0-761f-425f-8bfa-e73b6834d20f",
+      "claim_id": "C65",
+      "claim": "Both LotB and LotC have unique structural features in the S1 ubiquitin-binding site compared to other OTU-DUBs.",
+      "claim_type": "EXPLICIT",
+      "source": "A structural comparison of both LotB and LotC with other OTU-DUBs predicted by HHpred revealed that both Lot-DUBs have the unique structural features in the S1 ubiquitin-binding site (Figure 3c and d and Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by structural comparison shown in Figure 3c and d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:22:28.495216Z"
+    },
+    {
+      "id": "7d4e6496-b53a-43b6-bfe9-e3598f723b9f",
+      "content_id": "135535d0-761f-425f-8bfa-e73b6834d20f",
+      "claim_id": "C66",
+      "claim": "The overall fold of the catalytic core of LotB and LotC resembles that of other OTU-DUBs.",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas the overall fold of the catalytic core of LotB and LotC resembles that of other OTU-DUBs",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by structural comparison shown in Figure 3c and d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:22:28.495216Z"
+    },
+    {
+      "id": "b1468213-92d1-4970-afba-42fc673d88b7",
+      "content_id": "135535d0-761f-425f-8bfa-e73b6834d20f",
+      "claim_id": "C67",
+      "claim": "Both LotB and LotC showed apparent differences in the helical arm region compared to other OTU members.",
+      "claim_type": "EXPLICIT",
+      "source": "both showed apparent differences in the helical arm region, which has been shown to serve as an S1-binding site and interact with ubiquitin (Mevissen et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by structural comparison shown in Figure 3c and d.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:22:28.495216Z"
+    },
+    {
+      "id": "a7444088-72a5-4f6d-b28a-ae6f59f84723",
+      "content_id": "135535d0-761f-425f-8bfa-e73b6834d20f",
+      "claim_id": "C68",
+      "claim": "Both LotB and LotC contain a relatively long insertion between the Cys-loop and the variable loop, compared to other OTU members.",
+      "claim_type": "EXPLICIT",
+      "source": "The structure and sequence alignment with other OTUs clearly showed that both LotB and LotC contain a relatively long insertion between the Cys-loop and the variable loop, compared to other OTU members (Figure 3e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by structural and sequence alignment shown in Figure 3e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:22:28.495216Z"
+    },
+    {
+      "id": "70ddbb6a-4cf2-4fc5-9e75-6232c40a9ae6",
+      "content_id": "135535d0-761f-425f-8bfa-e73b6834d20f",
+      "claim_id": "C69",
+      "claim": "The typical length of the helical lobe of known OTUs ranges from 50 to 60 amino acids (except the Otubain family, which contains 110\u2013120 amino acids).",
+      "claim_type": "EXPLICIT",
+      "source": "The typical length of the helical lobe of the known OTUs is ranging from 50 to 60 amino acids (except the Otubain family, which contains 110\u2013120 amino acids).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on sequence analysis of known OTU family members.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:22:28.495216Z"
+    },
+    {
+      "id": "fc09ad4d-577b-44ea-9ea8-fc8c2cce8570",
+      "content_id": "135535d0-761f-425f-8bfa-e73b6834d20f",
+      "claim_id": "C70",
+      "claim": "The helical lobes in LotB and LotC contain 183 and 210 amino acids, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "In comparison, the helical lobes in LotB and LotC contain 183 and 210 amino acids, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on sequence analysis shown in Figure 3e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:22:28.495216Z"
+    },
+    {
+      "id": "c4618670-5e1e-4cb8-b13a-9251b9b651ab",
+      "content_id": "135535d0-761f-425f-8bfa-e73b6834d20f",
+      "claim_id": "C71",
+      "claim": "Both OTU domains of LotA contain the extended insertion between the Cys loop and the variable loop (179 and 178 amino acids, respectively).",
+      "claim_type": "EXPLICIT",
+      "source": "Based on the catalytic cysteine and histidine residues of the two OTU domains on LotA (Hermanns and Hofmann, 2019), we analyzed the sequence and found that both OTU domains of LotA contain the extended insertion between the Cys loop and the variable loop (179 and 178 amino acids, respectively; Figure 3e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on sequence analysis shown in Figure 3e.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:22:28.495216Z"
+    },
+    {
+      "id": "3da2a27a-8e2d-4d69-ba46-6249dcf2021b",
+      "content_id": "135535d0-761f-425f-8bfa-e73b6834d20f",
+      "claim_id": "C72",
+      "claim": "Lot-DUBs are a novel class of the OTU-family with longer insertions in the helical lobe region.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, our results identify Lot-DUBs as a novel class of the OTU-family with longer insertions in the helical lobe region (Figure 3\u2014figure supplement 1a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a conclusion based on structural and sequence analysis data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:22:28.495216Z"
+    },
+    {
+      "id": "0634f8b4-b476-45d9-9eaf-0e90bf40e8f4",
+      "content_id": "135535d0-761f-425f-8bfa-e73b6834d20f",
+      "claim_id": "C73",
+      "claim": "Molecular dynamics simulations showed that ubiquitin makes contacts with the additional helical regions of both LotB and LotC.",
+      "claim_type": "EXPLICIT",
+      "source": "The final models showed that ubiquitin indeed makes contacts with the additional helical regions of both LotB and LotC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by molecular dynamics simulation data shown in Figure 4a-d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:22:28.495216Z"
+    },
+    {
+      "id": "8bf3b86c-7308-432b-99e7-8f74de6bc93e",
+      "content_id": "135535d0-761f-425f-8bfa-e73b6834d20f",
+      "claim_id": "C74",
+      "claim": "In LotB, Phe143 and Met144 form hydrophobic interactions with ubiquitin (Phe45 and Ala46).",
+      "claim_type": "EXPLICIT",
+      "source": "In LotB, Phe143 and Met144 form hydrophobic interactions with ubiquitin (Phe45 and Ala46).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by molecular dynamics simulation data shown in Figure 4c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:22:28.495216Z"
+    },
+    {
+      "id": "e8a810fb-607f-45e8-8bbd-8fbe0dc41fb4",
+      "content_id": "135535d0-761f-425f-8bfa-e73b6834d20f",
+      "claim_id": "C75",
+      "claim": "A hydrophobic patch in LotB (Ile238, Val247, Ala248, Ile264, and Ala266) interacts with ubiquitin (Leu71 and Leu73).",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to these interactions, we found another hydrophobic patch in LotB (Ile238, Val247, Ala248, Ile264, and Ala266) to interact with ubiquitin (Leu71 and Leu73).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by molecular dynamics simulation data shown in Figure 4c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:22:28.495216Z"
+    },
+    {
+      "id": "a2d5df2b-0e3e-47fd-9424-d52e16353dd5",
+      "content_id": "135535d0-761f-425f-8bfa-e73b6834d20f",
+      "claim_id": "C76",
+      "claim": "Several hydrophobic interactions of the extended helical region of LotC (Tyr119 and Tyr149) with ubiquitin (Ile44) were identified.",
+      "claim_type": "EXPLICIT",
+      "source": "For LotC, we identified several hydrophobic interactions of the extended helical region (Tyr119 and Tyr149) with ubiquitin (Ile44).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by molecular dynamics simulation data shown in Figure 4d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:22:28.495216Z"
+    },
+    {
+      "id": "43d7bb58-8684-489a-b7a5-f2004bdf0af8",
+      "content_id": "135535d0-761f-425f-8bfa-e73b6834d20f",
+      "claim_id": "C77",
+      "claim": "During the simulation, the C-terminus of ubiquitin (Arg72 and Arg74) formed transient electrostatic interactions with LotC (Glu153 and Glu245).",
+      "claim_type": "EXPLICIT",
+      "source": "During the simulation, the C-terminus of ubiquitin (Arg72 and Arg74) formed transient electrostatic interactions with LotC (Glu153 and Glu245).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by molecular dynamics simulation data shown in Figure 4d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:22:28.495216Z"
+    },
+    {
+      "id": "23809e32-2952-4dd1-8662-43e72159cfd8",
+      "content_id": "135535d0-761f-425f-8bfa-e73b6834d20f",
+      "claim_id": "C78",
+      "claim": "Mutations of both F143 and M144 decreased the catalytic activity of LotB.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with a recent study (Ma et al., 2020), mutations of both F143 and M144 decreased the catalytic activity of LotB.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4e and consistent with cited literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:22:28.495216Z"
+    },
+    {
+      "id": "ef0c5986-e593-4aab-b40a-6f636bc0cf94",
+      "content_id": "135535d0-761f-425f-8bfa-e73b6834d20f",
+      "claim_id": "C79",
+      "claim": "Mutations of the hydrophobic patch (I238 and A266) in LotB reduced the catalytic activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, mutations of the newly identified hydrophobic patch (I238 and A266) also reduced the catalytic activity.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:22:28.495216Z"
+    },
+    {
+      "id": "816ff0cd-6263-42e3-bb2b-eb58e5849d12",
+      "content_id": "135535d0-761f-425f-8bfa-e73b6834d20f",
+      "claim_id": "C80",
+      "claim": "Mutations in the hydrophobic patch (Y119 and Y149) of LotC affected its catalytic activity.",
+      "claim_type": "EXPLICIT",
+      "source": "For LotC, the mutations in the hydrophobic patch (Y119 and Y149) affected its catalytic activity.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:22:28.495216Z"
+    },
+    {
+      "id": "fca9da02-6980-41a5-974d-d3f75b417317",
+      "content_id": "135535d0-761f-425f-8bfa-e73b6834d20f",
+      "claim_id": "C81",
+      "claim": "A single mutation on E153 in LotC completely abolished the catalytic activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, a single mutation on E153 completely abolished the catalytic activity, which indicates that the electrostatic interactions are essential for the correct docking of the ubiquitin C-terminus into the catalytic pocket of LotC.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:22:28.495216Z"
+    },
+    {
+      "id": "a9a13b38-88c7-4510-aa6b-f98beae7251c",
+      "content_id": "135535d0-761f-425f-8bfa-e73b6834d20f",
+      "claim_id": "C82",
+      "claim": "The electrostatic interactions are essential for the correct docking of the ubiquitin C-terminus into the catalytic pocket of LotC.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, a single mutation on E153 completely abolished the catalytic activity, which indicates that the electrostatic interactions are essential for the correct docking of the ubiquitin C-terminus into the catalytic pocket of LotC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the E153 mutation data shown in Figure 4f.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:22:28.495216Z"
+    },
+    {
+      "id": "c009406f-239c-4ae2-94e0-bfc0da4c87d1",
+      "content_id": "135535d0-761f-425f-8bfa-e73b6834d20f",
+      "claim_id": "C83",
+      "claim": "NEDD8, which has an alanine instead of Arg72 in ubiquitin, showed no modification toward LotC.",
+      "claim_type": "EXPLICIT",
+      "source": "The NEDD8, which has an alanine instead of Arg72 in ubiquitin, showed no modification toward LotC (Figure 2\u2014figure supplement 1c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2g and Figure 2\u2014figure supplement 1c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:22:28.495216Z"
+    },
+    {
+      "id": "995d4763-014d-4efd-b0e2-ea9563cb6d99",
+      "content_id": "135535d0-761f-425f-8bfa-e73b6834d20f",
+      "claim_id": "C84",
+      "claim": "Ubiquitin (UBB) is strongly enriched with both catalytically inactive LotB and LotC.",
+      "claim_type": "EXPLICIT",
+      "source": "Ubiquitin (UBB) is strongly enriched with both catalytically inactive LotB and LotC (Figure 5a and b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by mass spectrometry data shown in Figure 5a and b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:22:28.495216Z"
+    },
+    {
+      "id": "ea62e838-dc55-44c4-8d7a-acee69ac32e3",
+      "content_id": "135535d0-761f-425f-8bfa-e73b6834d20f",
+      "claim_id": "C85",
+      "claim": "LotB mainly interacts with membrane protein complexes (COPB1, ATP5B, ATP5H, COX5A, and SEC61B).",
+      "claim_type": "EXPLICIT",
+      "source": "MS analysis revealed that LotB mainly interacts with membrane protein complexes (COPB1, ATP5B, ATP5H, COX5A, and SEC61B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by mass spectrometry data shown in Figure 5a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:22:28.495216Z"
+    },
+    {
+      "id": "79c1dab8-f639-4934-a8ad-9943d5a3b18c",
+      "content_id": "135535d0-761f-425f-8bfa-e73b6834d20f",
+      "claim_id": "C86",
+      "claim": "LotB interacts with some ER-resident proteins (Calnexin [CANX], DDOST, STT3A).",
+      "claim_type": "EXPLICIT",
+      "source": "We also found the interaction of LotB with some ER-resident proteins (Calnexin [CANX], DDOST, STT3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by mass spectrometry data shown in Figure 5a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:22:28.495216Z"
+    },
+    {
+      "id": "ebddd30a-ec6a-4808-951c-baf12c751e79",
+      "content_id": "135535d0-761f-425f-8bfa-e73b6834d20f",
+      "claim_id": "C87",
+      "claim": "Most of the enriched proteins from the inactive LotC pull-down were non-membrane-bound organelle- and ribosome-related proteins (RPS8, RPLP2, RPS27, RPLP1, and RPL13).",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, most of the enriched proteins from the inactive LotC pull-down were non-membrane-bound organelle- and ribosome-related proteins (RPS8, RPLP2, RPS27, RPLP1, and RPL13) (Figure 5a and b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by mass spectrometry data shown in Figure 5b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:22:28.495216Z"
+    },
+    {
+      "id": "4e38a7b6-349f-4146-9965-89ad1433c0b9",
+      "content_id": "135535d0-761f-425f-8bfa-e73b6834d20f",
+      "claim_id": "C88",
+      "claim": "LotB specifically co-localized with the ER marker protein Calnexin, but not with other organelle markers (TOMM20 and GM130 for mitochondria and Golgi, respectively).",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the recent publication, LotB specifically co-localized with the ER marker protein Calnexin, but not with other organelle markers (TOMM20 and GM130 for mitochondria and Golgi, respectively; Figure 5c)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by confocal microscopy data shown in Figure 5c and consistent with cited literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:22:28.495216Z"
+    },
+    {
+      "id": "90e944ff-99db-42b3-9e2f-4267be2950e4",
+      "content_id": "135535d0-761f-425f-8bfa-e73b6834d20f",
+      "claim_id": "C89",
+      "claim": "The OTU domain of LotB itself failed to localize on the ER.",
+      "claim_type": "EXPLICIT",
+      "source": "and the OTU domain itself failed to localize on the ER (Figure 5\u2014figure supplement 1a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by confocal microscopy data shown in Figure 5\u2014figure supplement 1a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:22:28.495216Z"
+    },
+    {
+      "id": "d7ae23e7-5bce-4065-9bb7-7bbb284bfaad",
+      "content_id": "135535d0-761f-425f-8bfa-e73b6834d20f",
+      "claim_id": "C90",
+      "claim": "No specific cellular localization of LotC was found.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, we could not find a specific cellular localization of LotC (Figure 5d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by confocal microscopy data shown in Figure 5d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:22:28.495216Z"
+    },
+    {
+      "id": "e80c6e13-ff42-443e-b48a-7b75b1324f0c",
+      "content_id": "135535d0-761f-425f-8bfa-e73b6834d20f",
+      "claim_id": "C91",
+      "claim": "A distinct sub-class of substrates was identified in different combinations of Lot-DUBs with Legionella E3 ligases.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, we identified a distinct sub-class of substrates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by mass spectrometry data shown in Figure 5\u2014figure supplement 2a-d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:22:28.495216Z"
+    },
+    {
+      "id": "0a7d267b-37ae-4eae-9a1c-61bf579c2b83",
+      "content_id": "135535d0-761f-425f-8bfa-e73b6834d20f",
+      "claim_id": "C92",
+      "claim": "A smaller number of proteins were enriched with LotB compared to LotC.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, a smaller number of proteins were enriched with LotB compared to LotC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by mass spectrometry data shown in Figure 5\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:22:28.495216Z"
+    },
+    {
+      "id": "b49cc446-68b0-4d1b-9317-a183e0512bf4",
+      "content_id": "135535d0-761f-425f-8bfa-e73b6834d20f",
+      "claim_id": "C93",
+      "claim": "LotB specifically interacts with proteins modified with K63-linked ubiquitin chains, while LotC interacts with different types of ubiquitin chains.",
+      "claim_type": "EXPLICIT",
+      "source": "We reasoned that LotB specifically interacts with proteins modified with K63-linked ubiquitin chains, while LotC interacts with different types of ubiquitin chains.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the mass spectrometry data and linkage specificity data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:22:28.495216Z"
+    },
+    {
+      "id": "e7a13d57-9509-4233-9c17-475aa6b82422",
+      "content_id": "135535d0-761f-425f-8bfa-e73b6834d20f",
+      "claim_id": "C94",
+      "claim": "A significant number of ribosome-structural proteins were found in LotC:SdcA combination, which were not enriched in the SidC background.",
+      "claim_type": "EXPLICIT",
+      "source": "Intriguingly, we found a significant number of ribosome-structural proteins in LotC:SdcA combination, which were not enriched in the SidC background.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by mass spectrometry data shown in Figure 5\u2014figure supplement 2c-d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:22:28.495216Z"
+    },
+    {
+      "id": "fb2fb64f-7b5d-4448-be05-cc73eb32ef52",
+      "content_id": "135535d0-761f-425f-8bfa-e73b6834d20f",
+      "claim_id": "C95",
+      "claim": "The catalytic mutant of both LotB and LotC efficiently enriched ubiquitinated proteins from Legionella-infected lysates.",
+      "claim_type": "EXPLICIT",
+      "source": "The catalytic mutant of both LotB and LotC efficiently enriched ubiquitinated proteins (Figure 6b and d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 6b and d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:22:28.495216Z"
+    },
+    {
+      "id": "c4693e9b-b174-40e7-88e6-fe530b339c30",
+      "content_id": "135535d0-761f-425f-8bfa-e73b6834d20f",
+      "claim_id": "C96",
+      "claim": "Several Legionella proteins were enriched from both LotB and LotC catalytic mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, several Legionella proteins were enriched from both DUBs (Figure 6d and e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by mass spectrometry data shown in Figure 6d and e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:22:28.495216Z"
+    },
+    {
+      "id": "8c8d2ec7-bec1-439a-a253-507c23ed5e65",
+      "content_id": "135535d0-761f-425f-8bfa-e73b6834d20f",
+      "claim_id": "C97",
+      "claim": "LotB-C29S pulled-down some essential Legionella proteins such as atpD (ATP synthase), lpg2812 (sporulation protein), lpg0841 (Toluene ABC transporter), and SdhA (succinate dehydrogenase).",
+      "claim_type": "EXPLICIT",
+      "source": "The LotB-C29S pulled-down some essential Legionella proteins such as atpD;ATP synthase, lpg2812;sporulation protein, lpg0841;Toluene ABC transporter, and SdhA;succinate dehydrogenase.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by mass spectrometry data shown in Figure 6d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:22:28.495216Z"
+    },
+    {
+      "id": "3bb82b77-ff70-4a3f-8d03-488a639a2b43",
+      "content_id": "135535d0-761f-425f-8bfa-e73b6834d20f",
+      "claim_id": "C98",
+      "claim": "LotC-C24S enriched two Legionella ribosomal proteins (rplT and rpsM) and a DNA recombinase (recA).",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the LotC-C24S enriched two Legionella ribosomal proteins (rplT and rpsM) and a DNA recombinase (recA).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by mass spectrometry data shown in Figure 6e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:22:28.495216Z"
+    },
+    {
+      "id": "824e8188-a6dd-4bc3-8a9a-6f69188e35bc",
+      "content_id": "135535d0-761f-425f-8bfa-e73b6834d20f",
+      "claim_id": "C99",
+      "claim": "The ubiquitination level of all six substrates (RYK, Rab13, and PCYT1A for LotB; VAT1, HMOX1, and PPP2R1A for LotC) was reduced upon treatment of purified LotB or LotC.",
+      "claim_type": "EXPLICIT",
+      "source": "The ubiquitination level of all six substrates from different subcellular localization (RYK, Rab13, and PCYT1A for LotB, VAT1, HMOX1, and PPP2R1A for LotC) was reduced upon treatment of purified LotB or LotC, suggesting that the enriched proteins from catalytic dead mutants are putative substrates of LotB or LotC.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by in vitro deubiquitination assay data shown in Figure 6g and h.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:22:28.495216Z"
+    },
+    {
+      "id": "dc0c5839-3937-4812-96ab-bd5b06e3bb71",
+      "content_id": "135535d0-761f-425f-8bfa-e73b6834d20f",
+      "claim_id": "C100",
+      "claim": "The enriched proteins from catalytic dead mutants are putative substrates of LotB or LotC.",
+      "claim_type": "EXPLICIT",
+      "source": "The ubiquitination level of all six substrates from different subcellular localization (RYK, Rab13, and PCYT1A for LotB, VAT1, HMOX1, and PPP2R1A for LotC) was reduced upon treatment of purified LotB or LotC, suggesting that the enriched proteins from catalytic dead mutants are putative substrates of LotB or LotC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the in vitro deubiquitination assay data shown in Figure 6g and h.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:22:28.495216Z"
+    },
+    {
+      "id": "3bdf3d91-e3a5-4724-9bb2-672ced2af0c4",
+      "content_id": "135535d0-761f-425f-8bfa-e73b6834d20f",
+      "claim_id": "C101",
+      "claim": "LOT-DUBs possess extended helical insertions between the catalytic Cys-loop and the variable loop, unlike classical OTU-DUBs.",
+      "claim_type": "EXPLICIT",
+      "source": "In this study, we have identified two novel bacterial OTU-DUBs from Legionella, which we suggest to be founding members of a new sub-class of OTU-DUBs. Unlike classical OTU-DUBs, the LOT-DUBs possess extended helical insertions between the catalytic Cys-loop and the variable loop.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on structural analysis data shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:22:28.495216Z"
+    },
+    {
+      "id": "87f97534-3c55-41a8-bd20-1d9aba0e749a",
+      "content_id": "135535d0-761f-425f-8bfa-e73b6834d20f",
+      "claim_id": "C102",
+      "claim": "The helical insertions in LOT-DUBs interact with ubiquitin.",
+      "claim_type": "EXPLICIT",
+      "source": "Molecular dynamic simulations, in combination with biochemical studies, showed that the helical insertions interact with ubiquitin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by molecular dynamics simulation data shown in Figure 4 and biochemical validation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:22:28.495216Z"
+    },
+    {
+      "id": "4a395d58-5fcc-4f4d-9920-0b3a4fee1a3d",
+      "content_id": "135535d0-761f-425f-8bfa-e73b6834d20f",
+      "claim_id": "C103",
+      "claim": "LOT-DUBs define a new sub-class of the OTU-DUB family.",
+      "claim_type": "EXPLICIT",
+      "source": "As this insertion is unique for LOTs and not found in other known OTU-family members, LOT-DUBs define a new sub-class of the OTU-DUB family.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on structural and sequence analysis data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:22:28.495216Z"
+    },
+    {
+      "id": "7930885e-de32-460f-adec-4e4245adb9d0",
+      "content_id": "135535d0-761f-425f-8bfa-e73b6834d20f",
+      "claim_id": "C104",
+      "claim": "LotB and LotC have preferences for certain ubiquitin chains.",
+      "claim_type": "EXPLICIT",
+      "source": "We have also shown that LotB and LotC have preferences for certain ubiquitin chains",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by di-ubiquitin cleavage assay data shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:22:28.495216Z"
+    },
+    {
+      "id": "220b3ced-4036-4070-be28-be2f42f328b7",
+      "content_id": "135535d0-761f-425f-8bfa-e73b6834d20f",
+      "claim_id": "C105",
+      "claim": "LotB and LotC have a distinct cellular localization.",
+      "claim_type": "EXPLICIT",
+      "source": "and have a distinct cellular localization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by confocal microscopy data shown in Figure 5c and d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:22:28.495216Z"
+    },
+    {
+      "id": "0444e009-da69-4d90-8692-e57c64a15592",
+      "content_id": "135535d0-761f-425f-8bfa-e73b6834d20f",
+      "claim_id": "C106",
+      "claim": "LotB and LotC have different sets of host-interacting proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, host-protein interactome studies revealed that LotB and LotC have different sets of host-interacting proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by mass spectrometry data shown in Figure 5 and 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:22:28.495216Z"
+    },
+    {
+      "id": "3f8a70f2-6990-4439-a97c-c896daafcf25",
+      "content_id": "135535d0-761f-425f-8bfa-e73b6834d20f",
+      "claim_id": "C107",
+      "claim": "The two LOTs have different ubiquitin-binding modes that enable them to cleave specific ubiquitin chains.",
+      "claim_type": "EXPLICIT",
+      "source": "We also showed that the two LOTs have different ubiquitin-binding modes that enable them to cleave specific ubiquitin chains.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by activity-based probe experiments shown in Figure 2 and structural analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:22:28.495216Z"
+    },
+    {
+      "id": "6a9c2497-31d5-4890-b030-b1ab10473615",
+      "content_id": "135535d0-761f-425f-8bfa-e73b6834d20f",
+      "claim_id": "C108",
+      "claim": "LotB contains an additional ubiquitin-binding site (S1') and is specific to K63-linked ubiquitin chains.",
+      "claim_type": "EXPLICIT",
+      "source": "With ubiquitin ABPs (Prg- and VME-probes), we showed that LotB contains an additional ubiquitin-binding site (S1') and is specific to K63-linked ubiquitin chains.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by activity-based probe experiments shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:22:28.495216Z"
+    },
+    {
+      "id": "4b612e2f-d651-4092-8d88-8eab31f2b787",
+      "content_id": "135535d0-761f-425f-8bfa-e73b6834d20f",
+      "claim_id": "C109",
+      "claim": "LotC cleaves various types of ubiquitin chains.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, LotC cleaves various types of ubiquitin chains.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by di-ubiquitin cleavage assay data shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:22:28.495216Z"
+    },
+    {
+      "id": "2ea11a53-6bab-4dcb-b6b6-bde995ec83ab",
+      "content_id": "135535d0-761f-425f-8bfa-e73b6834d20f",
+      "claim_id": "C110",
+      "claim": "A modification of LotB with NEDD8-Prg ABP was observed.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, we observed a modification of LotB with NEDD8-Prg ABP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:22:28.495216Z"
+    },
+    {
+      "id": "c48b084a-37f8-4d62-aca1-0e18b5a55ae7",
+      "content_id": "135535d0-761f-425f-8bfa-e73b6834d20f",
+      "claim_id": "C111",
+      "claim": "No modification between NEDD8-ABP and LotC was observed.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, we could not see the modification between NEDD8-ABP and LotC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2g.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:22:28.495216Z"
+    },
+    {
+      "id": "639f8857-f45f-44f4-97c8-cfc0bd4c2dc0",
+      "content_id": "135535d0-761f-425f-8bfa-e73b6834d20f",
+      "claim_id": "C112",
+      "claim": "The Arg72 on ubiquitin, which is replaced by alanine in NEDD8, is essential to locate the C-terminus of ubiquitin to the catalytic site of LotC.",
+      "claim_type": "EXPLICIT",
+      "source": "We reasoned that the Arg72 on ubiquitin, which is replaced by alanine in NEDD8, is essential to locate the C-terminus of ubiquitin to the catalytic site.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the lack of NEDD8-ABP reactivity with LotC and molecular dynamics simulation data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:22:28.495216Z"
+    },
+    {
+      "id": "caeeb8d3-32dc-4b7b-ac5b-e5e347af62a9",
+      "content_id": "135535d0-761f-425f-8bfa-e73b6834d20f",
+      "claim_id": "C113",
+      "claim": "In molecular dynamic simulations of LotC with ubiquitin, Arg72 from ubiquitin formed transient interactions with Glu153 of LotC.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, in molecular dynamic simulations of LotC with ubiquitin, we found Arg72 from transient interactions with Glu153 of LotC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by molecular dynamics simulation data shown in Figure 4d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:22:28.495216Z"
+    },
+    {
+      "id": "2f57df84-30fe-4307-9fdc-7c7d6d22dd7b",
+      "content_id": "135535d0-761f-425f-8bfa-e73b6834d20f",
+      "claim_id": "C114",
+      "claim": "DUBs from bacteria and viruses have been shown to alter the host immune system.",
+      "claim_type": "EXPLICIT",
+      "source": "DUBs from bacteria and viruses have been shown to alter the host immune system.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge supported by subsequent examples.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:22:28.495216Z"
+    },
+    {
+      "id": "c3279f84-351c-4922-a4e7-9f4d9064c55b",
+      "content_id": "135535d0-761f-425f-8bfa-e73b6834d20f",
+      "claim_id": "C115",
+      "claim": "Papain-like proteases (PLPro) from coronaviruses (MERS, SARS, or SARS-CoV-2) have dual DUB and de-ISGylation activities and antagonized type I interferon (IFN-I) response.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, papain-like proteases (PLPro) from coronaviruses, such as middle east respiratory syndrome (MERS), severe acute respiratory syndrome (SARS) or SARS-CoV-2, have dual DUB and de-ISGylation activities and antagonized type I interferon (IFN-I) response, which is the primary defense system against viral infections (Davis and Gack, 2015; Devaraj et al., 2007; Frieman et al., 2009; Sadler and Williams, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:22:28.495216Z"
+    },
+    {
+      "id": "61b85177-7af5-4ec5-a47e-c48c1c7d559b",
+      "content_id": "135535d0-761f-425f-8bfa-e73b6834d20f",
+      "claim_id": "C116",
+      "claim": "OTUD4 was identified as an interacting partner of LotB.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, we identified OTUD4 as an interacting partner of LotB.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by mass spectrometry data shown in Figure 5a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:22:28.495216Z"
+    },
+    {
+      "id": "cf39a9bf-60cd-408f-bc26-7ce5ed9572f6",
+      "content_id": "135535d0-761f-425f-8bfa-e73b6834d20f",
+      "claim_id": "C117",
+      "claim": "OTUD4 has been shown to deubiquitinate K63-linked chains of myeloid differentiation primary response 88 (MYD88) and to downregulate NF-kB-dependent inflammation.",
+      "claim_type": "EXPLICIT",
+      "source": "OTUD4 has been shown to deubiquitinate K63-linked chains of myeloid differentiation primary response 88 (MYD88) and to downregulate NF-kB-dependent inflammation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:22:28.495216Z"
+    },
+    {
+      "id": "02570d98-b289-4431-8f0a-11fcb6f78dc1",
+      "content_id": "135535d0-761f-425f-8bfa-e73b6834d20f",
+      "claim_id": "C118",
+      "claim": "The recent study on LotB showed no detectable inhibition of NF-kB reporter expression.",
+      "claim_type": "EXPLICIT",
+      "source": "While the recent study on LotB showed no detectable inhibition of NF-kB reporter expression (Ma et al., 2020)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:22:28.495216Z"
+    },
+    {
+      "id": "5a98af99-e55e-4958-99ef-6b323ef249f0",
+      "content_id": "135535d0-761f-425f-8bfa-e73b6834d20f",
+      "claim_id": "C120",
+      "claim": "Little is known about functional cross-talk between ubiquitin ligases and DUBs in Legionella.",
+      "claim_type": "EXPLICIT",
+      "source": "However, little is known about functional cross-talk between ubiquitin ligases and DUBs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the state of knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:22:28.495216Z"
+    },
+    {
+      "id": "7e63eaf4-8b0e-4f05-9e19-02749d07b459",
+      "content_id": "135535d0-761f-425f-8bfa-e73b6834d20f",
+      "claim_id": "C121",
+      "claim": "Apparent differences in the number of enriched proteins were observed in different combinations of Lot-DUBs with Legionella ligases.",
+      "claim_type": "EXPLICIT",
+      "source": "We could see apparent differences in the number of enriched proteins in different combinations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by mass spectrometry data shown in Figure 5\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:22:28.495216Z"
+    },
+    {
+      "id": "7017ff47-82c0-4ea5-898f-98b7abf09fd0",
+      "content_id": "135535d0-761f-425f-8bfa-e73b6834d20f",
+      "claim_id": "C122",
+      "claim": "A significant number of ribosomal proteins were enriched with LotC in the background of SdcA, but not from SidC background.",
+      "claim_type": "EXPLICIT",
+      "source": "A significant number of ribosomal proteins were enriched with LotC in the background of SdcA, but not from SidC background, which has 71% sequence similarity to SdcA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by mass spectrometry data shown in Figure 5\u2014figure supplement 2c-d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:22:28.495216Z"
+    },
+    {
+      "id": "fbf90362-d816-4add-966f-069dee418a22",
+      "content_id": "135535d0-761f-425f-8bfa-e73b6834d20f",
+      "claim_id": "C123",
+      "claim": "SdcA and SidC have 71% sequence similarity.",
+      "claim_type": "EXPLICIT",
+      "source": "A significant number of ribosomal proteins were enriched with LotC in the background of SdcA, but not from SidC background, which has 71% sequence similarity to SdcA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about sequence similarity.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:22:28.495216Z"
+    },
+    {
+      "id": "69c38be9-5850-4909-85b3-d90ccb50dfae",
+      "content_id": "135535d0-761f-425f-8bfa-e73b6834d20f",
+      "claim_id": "C124",
+      "claim": "There are distinct physiological roles of SdcA and SidC.",
+      "claim_type": "EXPLICIT",
+      "source": "This finding suggests distinct physiological roles of SdcA and SidC",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the differential enrichment of ribosomal proteins with LotC in different ligase backgrounds.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:22:28.495216Z"
+    },
+    {
+      "id": "e0eda742-d162-4324-bca7-ac53f0739f35",
+      "content_id": "135535d0-761f-425f-8bfa-e73b6834d20f",
+      "claim_id": "C125",
+      "claim": "There is a putative relationship between LotC and SdcA on regulating translation processes.",
+      "claim_type": "EXPLICIT",
+      "source": "and a putative relationship between LotC and SdcA on regulating translation processes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the enrichment of ribosomal proteins with LotC in the SdcA background.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:22:28.495216Z"
+    },
+    {
+      "id": "a5d4ed84-fd9f-40e7-8de7-60ad55c79dc3",
+      "content_id": "135535d0-761f-425f-8bfa-e73b6834d20f",
+      "claim_id": "C126",
+      "claim": "LotC processes different types of ubiquitin chains and is mainly localized to the cytosol.",
+      "claim_type": "EXPLICIT",
+      "source": "Since LotC processes different types of ubiquitin chains and is mainly localized to the cytosol",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by di-ubiquitin cleavage assay data shown in Figure 1 and localization data shown in Figure 5d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:22:28.495216Z"
+    },
+    {
+      "id": "3841da77-74a4-4fbf-8e4e-81741d0a7352",
+      "content_id": "135535d0-761f-425f-8bfa-e73b6834d20f",
+      "claim_id": "C127",
+      "claim": "The catalytically dead version of LotC can be used as a standard tool for identifying specific substrates of other known Legionella ligases.",
+      "claim_type": "EXPLICIT",
+      "source": "the catalytically dead version of LotC can be used as a standard tool for identifying specific substrates of other known Legionella ligases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a proposed application based on the broad specificity and cytosolic localization of LotC.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:22:28.495216Z"
+    },
+    {
+      "id": "f2cc1332-a193-4428-8025-1c06e741bde3",
+      "content_id": "135535d0-761f-425f-8bfa-e73b6834d20f",
+      "claim_id": "C128",
+      "claim": "Both LotB and LotC enriched several Legionella proteins together with various host proteins from Legionella-infected cell lysates.",
+      "claim_type": "EXPLICIT",
+      "source": "We could also nicely enrich ubiquitinated substrates of LotB and LotC from Legionella-infected cell lysates. Both DUBs enriched several Legionella proteins together with various of host proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by mass spectrometry data shown in Figure 6d and e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:22:28.495216Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "1ddae177-bfba-4cf3-a843-5c94aa5fc99b",
+      "content_id": "135535d0-761f-425f-8bfa-e73b6834d20f",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Two novel OTU-like deubiquitinases, LotB (Lpg1621/Ceg23) and LotC (Lpg2529), were identified from Legionella pneumophila effector proteins using computational prediction (HHpred) and validated by di-ubiquitin cleavage assays. LotB specifically cleaves K63-linked ubiquitin chains, while LotC cleaves multiple linkage types (K6, K11, K33, K48, K63).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C38-C45 provide converging computational and experimental evidence for the identification and characterization of two novel bacterial DUBs. The HHpred prediction (C39-C40) is validated by functional di-ubiquitin cleavage assays (C41-C44), with LotB showing K63 specificity consistent with prior work (C43) and LotC showing broader specificity (C44). The nomenclature decision (C45) is appropriately based on the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:22:28.495216Z"
+    },
+    {
+      "id": "73dd4a36-f2ed-4cd4-a13b-b935c395b7dd",
+      "content_id": "135535d0-761f-425f-8bfa-e73b6834d20f",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "LOT-DUBs represent a novel structural class of OTU-family deubiquitinases characterized by extended helical insertions (183-210 amino acids) between the Cys-loop and variable loop, significantly longer than classical OTU members (50-60 amino acids). The crystal structure of LotC catalytic core was determined at 2.4 \u00c5 resolution, revealing these unique structural features.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C62-C72, C5, C101, C103 provide strong structural evidence through crystallography (C4), domain mapping (C62-C63), sequence analysis (C68-C71), and structural comparison (C65-C67). The extended helical insertions are quantitatively characterized and consistently observed across all three LOT family members (LotA, LotB, LotC), supporting the classification as a novel OTU subclass. The structural data is deposited (PDB: 6YK8) and figures support the claims.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:22:28.495216Z"
+    },
+    {
+      "id": "4c32c10c-579c-4241-ae53-6bb92e4f3c64",
+      "content_id": "135535d0-761f-425f-8bfa-e73b6834d20f",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "LotB and LotC follow the general catalytic mechanism of OTU-family cysteine proteases, requiring a catalytic triad. The catalytic triads were identified as D27-C29-H270 for LotB and D17-C24-H304 for LotC, with mutations of cysteine or histidine completely abolishing catalytic activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46-C50 demonstrate that LOT-DUBs follow established OTU-family mechanisms. Sequence analysis identified the catalytic triads (C47-C48), and mutagenesis experiments (C49) provide functional validation shown in Figure 2a,c. The complete loss of activity upon mutation of catalytic residues is consistent with cysteine protease mechanisms.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:22:28.495216Z"
+    },
+    {
+      "id": "50baf698-0fcd-448a-8984-f651d0059b2a",
+      "content_id": "135535d0-761f-425f-8bfa-e73b6834d20f",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "LotB and LotC have different ubiquitin-binding modes revealed by activity-based probes. LotB contains an additional S1' ubiquitin-binding site enabling K63-linkage specificity, evidenced by reactivity with K63-Ub2-VME-ABP. LotC lacks the S1' site and only contains the S1 site, consistent with its broader linkage specificity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C57, C6-C7, C107-C109 provide mechanistic insight through Prg-ABP and VME-ABP experiments (Figure 2d-e). The differential reactivity with VME-ABP (C55) directly demonstrates the presence of S1' in LotB but not LotC. The inference about S1' site function (C56-C57) is well-supported by the probe data and consistent with the linkage specificity observed in di-ubiquitin assays.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:22:28.495216Z"
+    },
+    {
+      "id": "c53afc8a-f2be-4a04-b7f7-a40ae3316e84",
+      "content_id": "135535d0-761f-425f-8bfa-e73b6834d20f",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "LotB, but not LotC, can bind and be modified by NEDD8-Prg in addition to ubiquitin-Prg. Molecular dynamics simulations and sequence analysis suggest LotB binds both ubiquitin and NEDD8 through conserved Ile44-mediated hydrophobic interactions, while LotC requires ubiquitin-specific residues, particularly Arg72, which forms transient electrostatic interactions with Glu153 of LotC.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-C61, C83, C110-C113 combine experimental data (Figure 2f-g) with computational modeling (Figure 4d) and sequence analysis. The differential NEDD8 reactivity is clearly demonstrated experimentally (C58-C59, C110-C111). The mechanistic explanation involving Arg72 (C112-C113) is supported by MD simulations showing transient interactions with Glu153, and the fact that NEDD8 has alanine at this position (C83) provides a logical explanation for the lack of LotC-NEDD8 interaction.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:22:28.495216Z"
+    },
+    {
+      "id": "5e2bcd1b-49ea-47ce-b87e-ec1741f84390",
+      "content_id": "135535d0-761f-425f-8bfa-e73b6834d20f",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Molecular dynamics simulations identified specific residues in the extended helical regions of LotB and LotC that interact with ubiquitin. For LotB, Phe143/Met144 and a hydrophobic patch (Ile238, Val247, Ala248, Ile264, Ala266) interact with ubiquitin. For LotC, Tyr119/Tyr149 form hydrophobic interactions and Glu153 forms essential electrostatic interactions with ubiquitin Arg72. Mutagenesis validated these interactions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C73-C82, C102 integrate computational predictions (MD simulations, Figure 4a-d) with experimental validation (mutagenesis, Figure 4e-f). The MD simulations identify specific residue interactions (C74-C77), and mutagenesis experiments confirm their functional importance (C78-C81). The E153 mutation completely abolishing LotC activity (C81) strongly supports the critical role of electrostatic interactions (C82). The consistency between computational and experimental data strengthens the conclusions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:22:28.495216Z"
+    },
+    {
+      "id": "c09e2b8c-fa6e-4719-bc12-57be53ed4638",
+      "content_id": "135535d0-761f-425f-8bfa-e73b6834d20f",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "LotB and LotC have distinct cellular localizations and interact with different host protein categories. LotB localizes to the ER and interacts with membrane protein complexes and ER-resident proteins (COPB1, ATP5B, CANX, DDOST, STT3A), while LotC shows no specific localization and interacts with cytosolic and ribosome-related proteins (RPS8, RPLP2, RPS27, RPLP1, RPL13).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C84-C90, C105-C106 are supported by complementary approaches: mass spectrometry of catalytically inactive mutants (Figure 5a-b) and confocal microscopy (Figure 5c-d). The ER localization of LotB is validated by colocalization with Calnexin (C88) and consistent with cited literature. The observation that the OTU domain alone fails to localize to ER (C89) suggests additional regions are required. The distinct protein interaction profiles correlate with the different localizations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:22:28.495216Z"
+    },
+    {
+      "id": "10791e2f-badf-4804-9fa1-5aabd3d389c6",
+      "content_id": "135535d0-761f-425f-8bfa-e73b6834d20f",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Co-expression of LOT-DUBs with Legionella E3 ligases (SidC or SdcA) revealed distinct substrate profiles. LotC enriched significantly more proteins than LotB, consistent with their linkage specificities. Notably, ribosomal proteins were enriched with LotC in the SdcA background but not with SidC (71% sequence similarity), suggesting distinct physiological roles for SdcA and SidC and a putative relationship between LotC and SdcA in regulating translation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C91-C94, C121-C125 are supported by TMT-labeled mass spectrometry experiments (Figure 5\u2014figure supplement 2). The differential enrichment of ribosomal proteins with LotC depending on ligase background (C94, C122) is a specific and interesting finding. However, the inference about distinct physiological roles (C124) and the relationship to translation regulation (C125) are speculative and would require additional functional validation. The data support the observations but the mechanistic interpretations remain uncertain.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:22:28.495216Z"
+    },
+    {
+      "id": "262eb115-930c-4537-8ee5-813f0af78c1f",
+      "content_id": "135535d0-761f-425f-8bfa-e73b6834d20f",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Catalytically inactive LotB and LotC efficiently enriched ubiquitinated substrates from Legionella-infected cell lysates, including both host and Legionella proteins. LotB enriched essential Legionella proteins (atpD, lpg2812, lpg0841, SdhA) while LotC enriched ribosomal proteins (rplT, rpsM) and recA. In vitro deubiquitination assays validated six host proteins (RYK, Rab13, PCYT1A for LotB; VAT1, HMOX1, PPP2R1A for LotC) as genuine substrates.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C95-C100, C128 describe a novel approach to identify substrates from infected cells (Figure 6). The enrichment of ubiquitinated proteins is demonstrated by western blot (C95, Figure 6b,d) and mass spectrometry identifies specific proteins (C96-C98, Figure 6d-e). Critically, the in vitro deubiquitination assays (C99, Figure 6g-h) validate that enriched proteins are genuine substrates, as their ubiquitination is reduced by wild-type but not catalytic mutant DUBs. This provides strong evidence that the enriched proteins are true substrates rather than indirect interactors.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:22:28.495216Z"
+    },
+    {
+      "id": "209fd6cd-5124-4556-bc80-94a798b14482",
+      "content_id": "135535d0-761f-425f-8bfa-e73b6834d20f",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "OTUD4, a host DUB that deubiquitinates K63-linked chains of MYD88 and downregulates NF-\u03baB inflammation, was identified as an interacting partner of LotB. However, a recent study showed no detectable inhibition of NF-\u03baB reporter expression by LotB.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C116-C118 identify an interesting interaction (C116, supported by MS data Figure 5a) and provide context about OTUD4 function (C117). However, the functional significance is unclear given the negative result from prior work (C118). The interaction is observed but its biological relevance to NF-\u03baB signaling or other pathways remains to be determined. Additional experiments would be needed to understand the functional consequences of this interaction.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:22:28.495216Z"
+    },
+    {
+      "id": "82cc6b5f-a910-408e-bc51-f97e952437e0",
+      "content_id": "135535d0-761f-425f-8bfa-e73b6834d20f",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The catalytically dead version of LotC can potentially be used as a standard tool for identifying specific substrates of other Legionella ligases, given its broad ubiquitin chain specificity and cytosolic localization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C126-C127 propose a methodological application based on LotC's properties (broad specificity and cytosolic localization, supported by prior claims). While the rationale is logical, this is a prospective suggestion (C127 marked as INFERENCE/SPECULATION) that has not been systematically validated. The approach was used in this study with SidC/SdcA, but broader applicability to other ligases would require additional validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:22:28.495216Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "a345436b-9566-48f2-9707-80ed465508f1",
+      "result_id": "1ddae177-bfba-4cf3-a843-5c94aa5fc99b"
+    },
+    {
+      "claim_id": "e1f77fa9-ed8c-4253-a68b-80f87f03b041",
+      "result_id": "1ddae177-bfba-4cf3-a843-5c94aa5fc99b"
+    },
+    {
+      "claim_id": "2daa5824-9e7e-47fb-ae47-f61ee9637f98",
+      "result_id": "1ddae177-bfba-4cf3-a843-5c94aa5fc99b"
+    },
+    {
+      "claim_id": "1269e250-6553-4d5e-bd3d-cfda65491e19",
+      "result_id": "1ddae177-bfba-4cf3-a843-5c94aa5fc99b"
+    },
+    {
+      "claim_id": "e8e3eb17-0764-4bff-81c9-84df2ca98268",
+      "result_id": "1ddae177-bfba-4cf3-a843-5c94aa5fc99b"
+    },
+    {
+      "claim_id": "61a996db-db79-47c5-8439-e2eea96ca3a8",
+      "result_id": "1ddae177-bfba-4cf3-a843-5c94aa5fc99b"
+    },
+    {
+      "claim_id": "f72ba840-0300-4005-ae7b-9fe95165fe6a",
+      "result_id": "1ddae177-bfba-4cf3-a843-5c94aa5fc99b"
+    },
+    {
+      "claim_id": "ae204fb5-bc78-4635-8b15-a31acf35d2ab",
+      "result_id": "1ddae177-bfba-4cf3-a843-5c94aa5fc99b"
+    },
+    {
+      "claim_id": "1e998085-1aac-4c01-8d7f-d0c546f27e5c",
+      "result_id": "1ddae177-bfba-4cf3-a843-5c94aa5fc99b"
+    },
+    {
+      "claim_id": "b5677689-c1a6-44f7-a45a-803b07daa5a4",
+      "result_id": "73dd4a36-f2ed-4cd4-a13b-b935c395b7dd"
+    },
+    {
+      "claim_id": "7e8b457e-ae99-4130-a716-c6d9dcfcdec1",
+      "result_id": "73dd4a36-f2ed-4cd4-a13b-b935c395b7dd"
+    },
+    {
+      "claim_id": "98b85b61-8b2d-40d9-aa0c-3489f714fe51",
+      "result_id": "73dd4a36-f2ed-4cd4-a13b-b935c395b7dd"
+    },
+    {
+      "claim_id": "d2b753f9-cda4-4ee4-956e-791aa6e7f7a9",
+      "result_id": "73dd4a36-f2ed-4cd4-a13b-b935c395b7dd"
+    },
+    {
+      "claim_id": "e5da8b75-d0fe-40a0-ad6b-041e9583f276",
+      "result_id": "73dd4a36-f2ed-4cd4-a13b-b935c395b7dd"
+    },
+    {
+      "claim_id": "7d4e6496-b53a-43b6-bfe9-e3598f723b9f",
+      "result_id": "73dd4a36-f2ed-4cd4-a13b-b935c395b7dd"
+    },
+    {
+      "claim_id": "b1468213-92d1-4970-afba-42fc673d88b7",
+      "result_id": "73dd4a36-f2ed-4cd4-a13b-b935c395b7dd"
+    },
+    {
+      "claim_id": "a7444088-72a5-4f6d-b28a-ae6f59f84723",
+      "result_id": "73dd4a36-f2ed-4cd4-a13b-b935c395b7dd"
+    },
+    {
+      "claim_id": "70ddbb6a-4cf2-4fc5-9e75-6232c40a9ae6",
+      "result_id": "73dd4a36-f2ed-4cd4-a13b-b935c395b7dd"
+    },
+    {
+      "claim_id": "fc09ad4d-577b-44ea-9ea8-fc8c2cce8570",
+      "result_id": "73dd4a36-f2ed-4cd4-a13b-b935c395b7dd"
+    },
+    {
+      "claim_id": "c4618670-5e1e-4cb8-b13a-9251b9b651ab",
+      "result_id": "73dd4a36-f2ed-4cd4-a13b-b935c395b7dd"
+    },
+    {
+      "claim_id": "3da2a27a-8e2d-4d69-ba46-6249dcf2021b",
+      "result_id": "73dd4a36-f2ed-4cd4-a13b-b935c395b7dd"
+    },
+    {
+      "claim_id": "d95ef1b7-fe1b-4511-ba9b-7563b4b9c794",
+      "result_id": "73dd4a36-f2ed-4cd4-a13b-b935c395b7dd"
+    },
+    {
+      "claim_id": "3bdf3d91-e3a5-4724-9bb2-672ced2af0c4",
+      "result_id": "73dd4a36-f2ed-4cd4-a13b-b935c395b7dd"
+    },
+    {
+      "claim_id": "4a395d58-5fcc-4f4d-9920-0b3a4fee1a3d",
+      "result_id": "73dd4a36-f2ed-4cd4-a13b-b935c395b7dd"
+    },
+    {
+      "claim_id": "ecb172bb-9a19-4f85-9cb4-b1e3a95ac419",
+      "result_id": "4c32c10c-579c-4241-ae53-6bb92e4f3c64"
+    },
+    {
+      "claim_id": "120361a7-d709-4d02-b965-45b80dc38360",
+      "result_id": "4c32c10c-579c-4241-ae53-6bb92e4f3c64"
+    },
+    {
+      "claim_id": "0a6e0d31-7bed-44f1-a806-f6a05684f0b4",
+      "result_id": "4c32c10c-579c-4241-ae53-6bb92e4f3c64"
+    },
+    {
+      "claim_id": "352eac50-c9ec-49d5-8cdc-920b8714689b",
+      "result_id": "4c32c10c-579c-4241-ae53-6bb92e4f3c64"
+    },
+    {
+      "claim_id": "6d43f854-5990-4157-be5b-2634a2323e96",
+      "result_id": "4c32c10c-579c-4241-ae53-6bb92e4f3c64"
+    },
+    {
+      "claim_id": "655c422c-62c7-46e9-9089-dea61b332deb",
+      "result_id": "50baf698-0fcd-448a-8984-f651d0059b2a"
+    },
+    {
+      "claim_id": "6e0cb239-838a-4b24-92d9-111003584e55",
+      "result_id": "50baf698-0fcd-448a-8984-f651d0059b2a"
+    },
+    {
+      "claim_id": "ad703513-8c08-4f75-b8ae-db072875544a",
+      "result_id": "50baf698-0fcd-448a-8984-f651d0059b2a"
+    },
+    {
+      "claim_id": "f6668cc8-8a71-4bfa-8893-ee5545cf2204",
+      "result_id": "50baf698-0fcd-448a-8984-f651d0059b2a"
+    },
+    {
+      "claim_id": "d188ccae-2a44-4aaa-8a4a-65c23a3d4136",
+      "result_id": "50baf698-0fcd-448a-8984-f651d0059b2a"
+    },
+    {
+      "claim_id": "a5863234-cecb-4c8d-9386-d07df84b4012",
+      "result_id": "50baf698-0fcd-448a-8984-f651d0059b2a"
+    },
+    {
+      "claim_id": "8538cb0e-80b7-4f5c-b1de-467a391c69a6",
+      "result_id": "50baf698-0fcd-448a-8984-f651d0059b2a"
+    },
+    {
+      "claim_id": "ade4a00d-01aa-42ec-b180-3361854bb8b7",
+      "result_id": "50baf698-0fcd-448a-8984-f651d0059b2a"
+    },
+    {
+      "claim_id": "799bcc28-51a0-4da8-bf9f-d13fcb1a7f2f",
+      "result_id": "50baf698-0fcd-448a-8984-f651d0059b2a"
+    },
+    {
+      "claim_id": "3f8a70f2-6990-4439-a97c-c896daafcf25",
+      "result_id": "50baf698-0fcd-448a-8984-f651d0059b2a"
+    },
+    {
+      "claim_id": "6a9c2497-31d5-4890-b030-b1ab10473615",
+      "result_id": "50baf698-0fcd-448a-8984-f651d0059b2a"
+    },
+    {
+      "claim_id": "4b612e2f-d651-4092-8d88-8eab31f2b787",
+      "result_id": "50baf698-0fcd-448a-8984-f651d0059b2a"
+    },
+    {
+      "claim_id": "f4fdc06c-7268-4a17-b04a-81044cf76812",
+      "result_id": "c53afc8a-f2be-4a04-b7f7-a40ae3316e84"
+    },
+    {
+      "claim_id": "55c8cb4b-0571-4a64-b65c-2d3edaeb6b24",
+      "result_id": "c53afc8a-f2be-4a04-b7f7-a40ae3316e84"
+    },
+    {
+      "claim_id": "1e67ada1-6616-4840-90f6-e3dd3ff8997c",
+      "result_id": "c53afc8a-f2be-4a04-b7f7-a40ae3316e84"
+    },
+    {
+      "claim_id": "8e2d87e0-5cb5-4ac8-b7be-b3648ea7f7b1",
+      "result_id": "c53afc8a-f2be-4a04-b7f7-a40ae3316e84"
+    },
+    {
+      "claim_id": "c009406f-239c-4ae2-94e0-bfc0da4c87d1",
+      "result_id": "c53afc8a-f2be-4a04-b7f7-a40ae3316e84"
+    },
+    {
+      "claim_id": "2ea11a53-6bab-4dcb-b6b6-bde995ec83ab",
+      "result_id": "c53afc8a-f2be-4a04-b7f7-a40ae3316e84"
+    },
+    {
+      "claim_id": "c48b084a-37f8-4d62-aca1-0e18b5a55ae7",
+      "result_id": "c53afc8a-f2be-4a04-b7f7-a40ae3316e84"
+    },
+    {
+      "claim_id": "639f8857-f45f-44f4-97c8-cfc0bd4c2dc0",
+      "result_id": "c53afc8a-f2be-4a04-b7f7-a40ae3316e84"
+    },
+    {
+      "claim_id": "caeeb8d3-32dc-4b7b-ac5b-e5e347af62a9",
+      "result_id": "c53afc8a-f2be-4a04-b7f7-a40ae3316e84"
+    },
+    {
+      "claim_id": "0634f8b4-b476-45d9-9eaf-0e90bf40e8f4",
+      "result_id": "5e2bcd1b-49ea-47ce-b87e-ec1741f84390"
+    },
+    {
+      "claim_id": "8bf3b86c-7308-432b-99e7-8f74de6bc93e",
+      "result_id": "5e2bcd1b-49ea-47ce-b87e-ec1741f84390"
+    },
+    {
+      "claim_id": "e8a810fb-607f-45e8-8bbd-8fbe0dc41fb4",
+      "result_id": "5e2bcd1b-49ea-47ce-b87e-ec1741f84390"
+    },
+    {
+      "claim_id": "a2d5df2b-0e3e-47fd-9424-d52e16353dd5",
+      "result_id": "5e2bcd1b-49ea-47ce-b87e-ec1741f84390"
+    },
+    {
+      "claim_id": "43d7bb58-8684-489a-b7a5-f2004bdf0af8",
+      "result_id": "5e2bcd1b-49ea-47ce-b87e-ec1741f84390"
+    },
+    {
+      "claim_id": "23809e32-2952-4dd1-8662-43e72159cfd8",
+      "result_id": "5e2bcd1b-49ea-47ce-b87e-ec1741f84390"
+    },
+    {
+      "claim_id": "ef0c5986-e593-4aab-b40a-6f636bc0cf94",
+      "result_id": "5e2bcd1b-49ea-47ce-b87e-ec1741f84390"
+    },
+    {
+      "claim_id": "816ff0cd-6263-42e3-bb2b-eb58e5849d12",
+      "result_id": "5e2bcd1b-49ea-47ce-b87e-ec1741f84390"
+    },
+    {
+      "claim_id": "fca9da02-6980-41a5-974d-d3f75b417317",
+      "result_id": "5e2bcd1b-49ea-47ce-b87e-ec1741f84390"
+    },
+    {
+      "claim_id": "a9a13b38-88c7-4510-aa6b-f98beae7251c",
+      "result_id": "5e2bcd1b-49ea-47ce-b87e-ec1741f84390"
+    },
+    {
+      "claim_id": "87f97534-3c55-41a8-bd20-1d9aba0e749a",
+      "result_id": "5e2bcd1b-49ea-47ce-b87e-ec1741f84390"
+    },
+    {
+      "claim_id": "995d4763-014d-4efd-b0e2-ea9563cb6d99",
+      "result_id": "c09e2b8c-fa6e-4719-bc12-57be53ed4638"
+    },
+    {
+      "claim_id": "ea62e838-dc55-44c4-8d7a-acee69ac32e3",
+      "result_id": "c09e2b8c-fa6e-4719-bc12-57be53ed4638"
+    },
+    {
+      "claim_id": "79c1dab8-f639-4934-a8ad-9943d5a3b18c",
+      "result_id": "c09e2b8c-fa6e-4719-bc12-57be53ed4638"
+    },
+    {
+      "claim_id": "ebddd30a-ec6a-4808-951c-baf12c751e79",
+      "result_id": "c09e2b8c-fa6e-4719-bc12-57be53ed4638"
+    },
+    {
+      "claim_id": "4e38a7b6-349f-4146-9965-89ad1433c0b9",
+      "result_id": "c09e2b8c-fa6e-4719-bc12-57be53ed4638"
+    },
+    {
+      "claim_id": "90e944ff-99db-42b3-9e2f-4267be2950e4",
+      "result_id": "c09e2b8c-fa6e-4719-bc12-57be53ed4638"
+    },
+    {
+      "claim_id": "d7ae23e7-5bce-4065-9bb7-7bbb284bfaad",
+      "result_id": "c09e2b8c-fa6e-4719-bc12-57be53ed4638"
+    },
+    {
+      "claim_id": "220b3ced-4036-4070-be28-be2f42f328b7",
+      "result_id": "c09e2b8c-fa6e-4719-bc12-57be53ed4638"
+    },
+    {
+      "claim_id": "0444e009-da69-4d90-8692-e57c64a15592",
+      "result_id": "c09e2b8c-fa6e-4719-bc12-57be53ed4638"
+    },
+    {
+      "claim_id": "e80c6e13-ff42-443e-b48a-7b75b1324f0c",
+      "result_id": "10791e2f-badf-4804-9fa1-5aabd3d389c6"
+    },
+    {
+      "claim_id": "0a7d267b-37ae-4eae-9a1c-61bf579c2b83",
+      "result_id": "10791e2f-badf-4804-9fa1-5aabd3d389c6"
+    },
+    {
+      "claim_id": "b49cc446-68b0-4d1b-9317-a183e0512bf4",
+      "result_id": "10791e2f-badf-4804-9fa1-5aabd3d389c6"
+    },
+    {
+      "claim_id": "e7a13d57-9509-4233-9c17-475aa6b82422",
+      "result_id": "10791e2f-badf-4804-9fa1-5aabd3d389c6"
+    },
+    {
+      "claim_id": "7e63eaf4-8b0e-4f05-9e19-02749d07b459",
+      "result_id": "10791e2f-badf-4804-9fa1-5aabd3d389c6"
+    },
+    {
+      "claim_id": "7017ff47-82c0-4ea5-898f-98b7abf09fd0",
+      "result_id": "10791e2f-badf-4804-9fa1-5aabd3d389c6"
+    },
+    {
+      "claim_id": "fbf90362-d816-4add-966f-069dee418a22",
+      "result_id": "10791e2f-badf-4804-9fa1-5aabd3d389c6"
+    },
+    {
+      "claim_id": "69c38be9-5850-4909-85b3-d90ccb50dfae",
+      "result_id": "10791e2f-badf-4804-9fa1-5aabd3d389c6"
+    },
+    {
+      "claim_id": "e0eda742-d162-4324-bca7-ac53f0739f35",
+      "result_id": "10791e2f-badf-4804-9fa1-5aabd3d389c6"
+    },
+    {
+      "claim_id": "fb2fb64f-7b5d-4448-be05-cc73eb32ef52",
+      "result_id": "262eb115-930c-4537-8ee5-813f0af78c1f"
+    },
+    {
+      "claim_id": "c4693e9b-b174-40e7-88e6-fe530b339c30",
+      "result_id": "262eb115-930c-4537-8ee5-813f0af78c1f"
+    },
+    {
+      "claim_id": "8c8d2ec7-bec1-439a-a253-507c23ed5e65",
+      "result_id": "262eb115-930c-4537-8ee5-813f0af78c1f"
+    },
+    {
+      "claim_id": "3bb82b77-ff70-4a3f-8d03-488a639a2b43",
+      "result_id": "262eb115-930c-4537-8ee5-813f0af78c1f"
+    },
+    {
+      "claim_id": "824e8188-a6dd-4bc3-8a9a-6f69188e35bc",
+      "result_id": "262eb115-930c-4537-8ee5-813f0af78c1f"
+    },
+    {
+      "claim_id": "dc0c5839-3937-4812-96ab-bd5b06e3bb71",
+      "result_id": "262eb115-930c-4537-8ee5-813f0af78c1f"
+    },
+    {
+      "claim_id": "f2cc1332-a193-4428-8025-1c06e741bde3",
+      "result_id": "262eb115-930c-4537-8ee5-813f0af78c1f"
+    },
+    {
+      "claim_id": "61b85177-7af5-4ec5-a47e-c48c1c7d559b",
+      "result_id": "209fd6cd-5124-4556-bc80-94a798b14482"
+    },
+    {
+      "claim_id": "cf39a9bf-60cd-408f-bc26-7ce5ed9572f6",
+      "result_id": "209fd6cd-5124-4556-bc80-94a798b14482"
+    },
+    {
+      "claim_id": "02570d98-b289-4431-8f0a-11fcb6f78dc1",
+      "result_id": "209fd6cd-5124-4556-bc80-94a798b14482"
+    },
+    {
+      "claim_id": "a5d4ed84-fd9f-40e7-8de7-60ad55c79dc3",
+      "result_id": "82cc6b5f-a910-408e-bc51-f97e952437e0"
+    },
+    {
+      "claim_id": "3841da77-74a4-4fbf-8e4e-81741d0a7352",
+      "result_id": "82cc6b5f-a910-408e-bc51-f97e952437e0"
+    }
+  ],
+  "comparisons": []
+}

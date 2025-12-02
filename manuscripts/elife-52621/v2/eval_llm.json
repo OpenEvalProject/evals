@@ -1,0 +1,207 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C5"
+    ],
+    "result": "A CAD FMRP knockout cell line was successfully generated with a single basepair deletion causing a frameshift and premature termination upstream of all RNA-binding domains, resulting in no detectable FMRP protein expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C5 provide converging evidence from sequencing (C2), genetic inference (C3, C4), and Western blot (C5) that establish successful knockout of FMRP. The molecular characterization is thorough and the loss of protein expression validates the functional knockout.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C10",
+      "C11"
+    ],
+    "result": "86 genes showed impaired neurite localization in FMRP knockout CAD cells, enriched for vesicle transport regulators including kinesins, with reduced expression specifically in neurites but not soma.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C11 collectively demonstrate identification of FMRP localization targets using appropriate statistical methods (Xtail, FDR<0.01), functional enrichment analysis, and compartment-specific expression changes. The data support that mislocalization is due to trafficking defects rather than general expression changes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C12",
+      "C13"
+    ],
+    "result": "FMRP localization targets identified in knockout cells are enriched for direct FMRP binding as determined by CLIP-seq, and conversely, FMRP CLIP-seq targets show preferential mislocalization in knockout cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C13 establish bidirectional validation between functional localization targets and direct binding targets using published CLIP-seq datasets. The ~4-fold enrichment and significant p-values support that FMRP directly regulates localization of these targets.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "FMRP localization targets are significantly enriched for G-quadruplex sequences in their 3' UTRs, as determined by multiple computational methods and experimental data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C19 provide robust evidence using multiple independent approaches (6mer analysis, regular expression, RNAfold, experimental G-quadruplex data) that all converge on G-quadruplex enrichment. The consistency across methods and agreement with prior FMRP binding motifs (C15) strongly support this result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "FMRP localization targets have longer ORFs and 3' UTRs than expected, with G-quadruplex enrichment restricted to 3' UTRs, and no relationship to transcript abundance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C23 characterize transcript features of FMRP targets. The findings are supported by data in Figure 2G and are consistent with prior literature on 3' UTR regulation of localization (C21). The regional specificity of G-quadruplex enrichment strengthens the mechanistic model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C24",
+      "C25"
+    ],
+    "result": "G-quadruplexes in FMRP localization targets show low positional conservation but functional conservation, with significant enrichment in human orthologs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C25 address an apparent paradox: low PhyloP scores but functional conservation across species. This is appropriately interpreted as presence rather than positional conservation, supported by enrichment in human orthologs (Figures 2I,J).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "Human orthologs of mouse FMRP localization targets show reduced neurite localization in FXS patient-derived neurons, with enrichment for FMRP binding and G-quadruplexes, demonstrating conservation across species and experimental systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C30 validate findings in human FXS neurons. Despite modest correlation (R=0.21, C28), the highly significant p-value and consistent enrichments for CLIP targets and G-quadruplexes across species provide strong support for conservation of mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "The RGG domain of FMRP specifically binds G-quadruplex RNA sequences with high affinity (~30 nM Kd) in a folding-dependent manner, while KH domains do not show G-quadruplex specificity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C34 demonstrate domain-specific binding using RBNS (~10-fold enrichment) and fluorescence polarization (Kd ~30 nM). The lithium control (C32) confirms folding-dependence. The specificity to RGG vs KH domains is clearly shown in Figures 4C,D.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "Both the RGG domain of FMRP and G-quadruplex sequences in target 3' UTRs are required for efficient neurite localization, as demonstrated by smFISH and CLIP-qPCR experiments with reporter constructs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C39 provide functional validation using multiple orthogonal approaches (smFISH, CLIP-qPCR, immunofluorescence). The requirement for both RGG domain and G-quadruplex sequence is clearly demonstrated, and controls show \u0394RGG is trafficked normally (C39) but binds poorly to G-quadruplex RNA (C37).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Transcriptome-wide analysis of rescue cell lines confirms that genes more localized with full-length FMRP versus GFP or \u0394RGG controls are enriched for 3' UTR G-quadruplexes, with no relationship between GFP and \u0394RGG conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C42 extend single-gene findings to transcriptome-wide scale. The consistent G-quadruplex enrichment when comparing functional FMRP to non-functional controls (C40, C41), and lack of difference between two non-functional controls (C42), support the model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "FMRP's translational regulatory targets and RNA localization targets are largely distinct transcript pools with different sequence features and functional enrichments, with no relationship between G-quadruplex content and translational regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C49 demonstrate separation of FMRP functions using ribosome profiling. The weak correlation (R=0.08, C44) but lack of significant overlap (C45), different GO enrichments (C46-C47), and absence of G-quadruplex association with translation targets (C48) support functional separation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "The I304N FMRP mutant, which cannot regulate translation, retains ability to promote localization of G-quadruplex-containing transcripts, though with reduced efficiency potentially due to decreased protein stability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C50-C56 show I304N retains some localization function (C50-C51) but is deficient compared to wildtype (C52). However, the confounding factor of 4-fold reduced expression (C53) makes it difficult to determine if the deficiency is due to reduced abundance or partial loss of function. The protein stability explanation (C55) is speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "FMRP's dual functionalities (RNA localization and translational regulation) are driven by distinct binding capabilities of different RNA binding domains: RGG domain recognizes G-quadruplexes for localization, while KH domains mediate translational regulation through unknown features.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C64 synthesize the study's findings into a coherent model supported by multiple lines of evidence from the current work and literature (C59-C63). The model is well-supported by domain-specific binding data, functional separation of targets, and mutant phenotypes.",
+    "result_type": "MAJOR"
+  }
+]

@@ -1,0 +1,292 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "The crystal structure of PUF-8 bound to an 8-nt PBE RNA was determined at 2.6 \u00c5 resolution, revealing that PUF-8 adopts a curved structure similar to human PUM1 and uses a base-omission mode where the 5th nucleotide is not specifically recognized. PUF-8's curvature contrasts with the flatter FBF-2 scaffold.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C18 provide converging structural evidence from crystallography (Table 1, Figures 1-2), binding assays (Table 2), and structural comparisons (RMSD calculations). The base-omission mode is validated by binding data showing similar affinity for all nucleotides at position 5 (C11, Table 2). The structural comparison to PUM1 (RMSD 1.2 \u00c5, C15) and contrast with FBF-2 (C16-C17) are quantitatively supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "A modified yeast three-hybrid screen with magnetic cell sorting identified FBF-2 variants with altered R5 TRM that preferentially bind 8-nt PBE over 9-nt FBE. The SS/Y variant showed comparable binding affinity to PUF-8 for PBE (22.7 nM vs 25.9 nM) and reversed the binding preference compared to wild-type FBF-2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C31 describe a well-controlled screening approach with ~20,000 transformants (C27), appropriate controls (C29-C30), and validation by both yeast three-hybrid assays (Figure 3B) and electrophoretic mobility shift assays (C31, Table 2, Figure 3\u2014supplement 2). The quantitative binding data support the specificity switch, though the screen recovered only one validated variant from a large library, suggesting stringent selection or low hit rate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "Crystal structures of FBF-2 R5 SS/Y variant bound to PBE RNA reveal that the tyrosine at position 364 stacks between bases A4 and A5, converting the recognition mode from accommodating a triple-stack to a 1:1 repeat-to-base pattern. Critically, this specificity switch occurs without changing the overall protein curvature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C39 are strongly supported by crystallographic data (Table 1, Figure 3C) showing the structural mechanism. The key finding that curvature is unchanged (C38, Figure 3\u2014supplement 3) challenges the prevailing model that curvature alone determines motif length. The structural observations of specific interactions (C36-C37) are consistent with the binding data. This is a well-supported mechanistic result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C40",
+      "C41"
+    ],
+    "result": "The SS/Y TRM combination identified through in vitro selection was found to occur naturally in a PUM repeat from Naegleria gruberi, suggesting this amino acid combination has arisen through natural selection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C41 are supported by sequence alignment data (Figure 3D). While C41 is an inference about evolutionary origins, the identification of the same TRM in nature provides strong support that this is a biologically relevant solution to the specificity problem. The claim is appropriately cautious ('implies').",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Systematic mutagenesis of the R5 TRM reveals that the tyrosine stacking residue is necessary for 8-nt specificity, while small residues at edge-on positions are required for complete specificity switch. The CQ/Y variant failed to bind either RNA, indicating both components are essential.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C49 present a logical mutagenesis series with appropriate controls. The data from yeast three-hybrid assays (Figure 4A) and EMSAs (Figure 4\u2014supplement 1, Table 2) consistently show that: (1) tyrosine is necessary (C46), (2) small edge-on residues enhance specificity (C42), and (3) both are required (C48). The CQ/Y expression control (Figure 4\u2014supplement 2) addresses a potential artifact. The conclusion (C49) is well-supported by the systematic data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C50",
+      "C51"
+    ],
+    "result": "Compensatory mutation experiments introducing a G-selective TRM at repeat R2 demonstrate that FBF-2 R5 TRM variants retain association with the 3' end of target RNAs, confirming a 1:1 binding mode across all eight repeats.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C51 describe a clever compensatory mutation approach that tests whether the 3' end is engaged. The preferential binding to 8-nt U7G RNA (C50, Figure 4D) over shorter or longer sequences provides strong evidence for 3' engagement. This addresses a potential concern that the crystal structures might show artifactual 3' contacts due to high protein concentrations during crystallization.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Base recognition specificity analysis reveals that FBF-2 R5 TRM variants retain FBF-2-like specificity for U3 and A4/G4 recognition, but show variant-dependent differences at position 5. The AQ/Y variant most closely resembles PUF-8 specificity, and the data suggest cooperativity between TRMs rather than strict modularity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C63 present systematic base substitution analysis (Figure 5) showing that the variants retain some FBF-2 characteristics while acquiring PUF-8-like properties. The observation of cooperativity (C62) is an important mechanistic insight supported by the position 5 specificity differences (C61). The conclusion that AQ/Y is most PUF-8-like (C63) is supported by the specificity data and foreshadows the in vivo experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "In the glp-1(ar202) sensitized background, depletion of puf-8 by RNAi causes germline tumors in 98% of animals at the permissive temperature (15\u00b0C), providing a functional assay for PUF-8 activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C69 establish the experimental system with appropriate citations (C64-C66) and controls (C69). The phenotypic data (C68, Table 3, Figure 6A) are quantitative and include proper controls (scrambled RNAi). This provides a robust in vivo assay for testing whether engineered FBF-2 can substitute for PUF-8 function.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "CRISPR genome editing generated an fbf-2(lot14) strain expressing the AQ/Y variant, which largely rescues the puf-8 depletion tumor phenotype (36% tumors vs 98% in controls), demonstrating that altered RNA motif length recognition enables functional substitution in vivo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C80 present a compelling in vivo validation. The CRISPR approach is described (C70-C71), and the serendipitous recovery of AQ/Y (C72) is validated by prior characterization (C74-C77). The phenotypic rescue is substantial (36% vs 98%, C78-C79, Table 3, Figure 6B) and statistically meaningful given the sample sizes (N=89 and N=61). This demonstrates that motif length recognition is critical for biological function. However, the rescue is partial, suggesting additional factors may contribute to PUF-8 function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "The study reveals three key insights: (1) PUF-8 structure resembles PUM1 with base-omission mode, (2) mutations in FBF-2 repeat 5 can switch binding preference to 8-nt motifs, and (3) this engineered specificity change rescues puf-8 loss-of-function in vivo. The identified TRM combinations occur in nature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C84 accurately summarize the major findings, which are well-supported by the preceding results. These summary claims integrate structural, biochemical, and in vivo data into a coherent narrative about the importance of motif length in PUF protein function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "The results indicate that TRM identities contribute to RNA motif length recognition independently of curvature. While prior work correlated curvature with motif length, the FBF-2-to-PUF-8 specificity switch was achieved with minimal mutations (CQ/R to AQ/Y) without changing curvature, though the reverse switch might require curvature changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C93 present a nuanced discussion of the curvature model. The data clearly show that curvature change is not required for the FBF-2-to-PUF-8 switch (C86, C91), supported by structural comparisons (Figure 3\u2014supplement 3). The speculation about the reverse switch (C93) is appropriately cautious. The discussion properly contextualizes prior work (C88-C90) while presenting the new findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C94"
+    ],
+    "result": "Changes in protein curvature may affect protein-protein interactions on the convex surface, potentially impacting RNA regulatory mechanisms beyond motif length recognition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C94 is speculative ('perhaps') and supported only by citations to prior work on protein partnerships. While this is a reasonable hypothesis, there is no direct experimental evidence in this manuscript to support or refute this idea. The speculation is appropriately presented as such.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "The work has implications for synthetic biology applications of engineered PUF proteins. The ability to modulate motif length through TRM changes provides an additional tool beyond adding/removing PUM repeats for tailoring RNA recognition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C100 discuss applications and are supported by appropriate citations to prior work (C95-C99). The conclusion (C100) logically follows from the demonstrated ability to change motif length through TRM mutations. This is a reasonable extrapolation of the findings to practical applications.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "The functional rescue experiment reveals that PUF-8 and FBF-2 have similar downstream molecular mechanisms despite opposite effects on proliferation (PUF-8 restricts, FBF-2 promotes). Their different biological outcomes are directed by their respective mRNA targets, which are determined by motif length recognition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C107 present a logical interpretation of the rescue data. The inference that downstream mechanisms are similar (C106) is supported by the functional rescue, while the conclusion that target specificity drives different outcomes (C107) is a reasonable interpretation. The background information (C102-C105) is properly cited.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "Modulation of motif length recognition is a broadly conserved evolutionary mechanism in PUF protein families. The use of a conserved 5'UGUA handle with variable downstream sequences may enable rapid co-evolution of RNA motifs and regulators. This principle may extend to other RNA-binding protein families with modular domains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C108-C114 present evolutionary speculation. While C108 is supported by citation (Wilinski et al., 2017) and C109 is a general principle, the specific mechanisms proposed (C110-C111) are speculative. The extension to other RNA-binding proteins (C112-C114) is reasonable but lacks direct experimental support. These are interesting hypotheses that would require additional comparative and evolutionary studies to validate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3"
+    ],
+    "result": "C. elegans encodes nine classical PUF proteins in four phylogenetic clades, with FBF proteins recognizing 9-nt FBE motifs and PUF-8/9 recognizing 8-nt PBE motifs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3 provide essential background information supported by appropriate citations and Figure 1A. These establish the biological context for the study and are well-documented in prior literature.",
+    "result_type": "MINOR"
+  }
+]

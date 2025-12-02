@@ -1,0 +1,1972 @@
+{
+  "submission": {
+    "id": "4dc5c8d6-9bf5-4026-99a2-95ab7b9f6df3",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T08:14:19.138184Z",
+    "updated_at": "2025-12-02T08:14:19.138184Z"
+  },
+  "content": [
+    {
+      "id": "257bc81b-4cf0-432e-a231-54c26a651f07",
+      "submission_id": "4dc5c8d6-9bf5-4026-99a2-95ab7b9f6df3",
+      "content_type": "manuscript",
+      "content_text": "# Molecular safeguarding of CRISPR gene drive experiments\n\n## Authors\n\n- Jackson Champer<sup>1</sup> ([ORCID: 0000-0002-3814-3774](https://orcid.org/0000-0002-3814-3774)) \u2020\n- Joan Chung<sup>1</sup>\n- Yoo Lim Lee<sup>1</sup>\n- Chen Liu<sup>1</sup>\n- Emily Yang<sup>1</sup>\n- Zhaoxin Wen<sup>1</sup>\n- Andrew G Clark<sup>1</sup>\n- Philipp W Messer<sup>1</sup> ([ORCID: 0000-0001-8453-9377](https://orcid.org/0000-0001-8453-9377)) \u2020\n\n### Affiliations\n\n1. Department of Biological Statistics and Computational Biology Cornell University Ithaca United States\n2. Department of Molecular Biology and Genetics Cornell University Ithaca United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nCRISPR-based homing gene drives have sparked both enthusiasm and deep concerns due to their potential for genetically altering entire species. This raises the question about our ability to prevent the unintended spread of such drives from the laboratory into a natural population. Here, we experimentally demonstrate the suitability of synthetic target site drives as well as split drives as flexible safeguarding strategies for gene drive experiments by showing that their performance closely resembles that of standard homing drives in Drosophila melanogaster. Using our split drive system, we further find that maternal deposition of both Cas9 and gRNA is required to form resistance alleles in the early embryo and that maternally-deposited Cas9 alone can power germline drive conversion in individuals that lack a genomic source of Cas9.\n\n## Introduction\n\nHoming gene drives have the potential to rapidly spread through a population by converting wild-type alleles to drive alleles in the germline of heterozygous individuals, thereby enabling super-Mendelian inheritance of the drive allele (Esvelt et al., 2014; Champer et al., 2016; Burt, 2014; Unckless et al., 2015; Alphey, 2014; Noble et al., 2017; Deredec et al., 2011). Such systems could be a tool for the eradication of vector-borne diseases such as malaria or dengue by propagating transgenes through mosquito populations that prevent disease transmission (Esvelt et al., 2014; Champer et al., 2016; Burt, 2014; Alphey, 2014). Other proposed applications include the direct suppression of vector populations, invasive species, or agricultural pests (Esvelt et al., 2014; Champer et al., 2016; Burt, 2014; Alphey, 2014).\n\nProof-of-principle studies using CRISPR-based homing drive constructs have now been demonstrated in a variety of potential target systems. The first experiments to achieve successful drive conversion were conducted in yeast (DiCarlo et al., 2015; Roggenkamp et al., 2018; Basgall et al., 2018; Shapiro et al., 2018), flies (Champer et al., 2018a; Oberhofer et al., 2018; KaramiNejadRanjbar et al., 2018; Gantz and Bier, 2015; Champer et al., 2017), and mosquitoes (Hammond et al., 2017; Hammond et al., 2016; Gantz et al., 2015). These experiments revealed highly variable conversion efficiencies, ranging from close to 100% in Saccharomyces cerevisiae to between 19\u201362% in Drosophila melanogaster and 87\u201399% in Anopheles. Such variability could be due to several factors, including differences in the level and timing of Cas9 expression, the genomic targets, and organism-specific factors such as recombination rate. In Anopheles, for instance, conversion rates generally tend to be higher than in D. melanogaster, especially in males, consistent with the fact that there is no recombination in male flies. A recent study has further demonstrated successful drive conversion in mice (Grunwald et al., 2019), although with a lower efficiency than most of the other systems.\n\nIt has also become clear that homing gene drives face a significant obstacle due to the frequent formation of resistance alleles when cleavage is repaired by end-joining, which typically generates mutations at the target site (Champer et al., 2017). This process has been observed to take place in the germline during failed drive conversion, but also in the embryo due to the persistence of maternally-deposited Cas9 (Champer et al., 2017). Similar to conversion rates, resistance rates too are highly variable between drive systems and organisms (DiCarlo et al., 2015; Champer et al., 2017; Gantz et al., 2015; Grunwald et al., 2019; Champer et al., 2018b; Hammond et al., 2018). However, strategies for improving conversion efficiency and lowering resistance rates have already been successfully tested, including gRNA multiplexing (Champer et al., 2018b), improved promoters (Champer et al., 2018b; Hammond et al., 2018), and careful selection of target sites to render resistance alleles non-viable (Kyrou et al., 2018). In fact, total population elimination with a CRISPR gene drive was recently achieved in laboratory cages of Anopheles gambiae for the first time (Kyrou et al., 2018).\n\nWhile some have touted CRISPR homing drives as a potential game-changer in the fight against vector-borne diseases, key questions loom large about our ability to predict the outcome of releasing such a drive into a natural population. Unintended effects or even an accidental release could result in severe societal backlash. These concerns may seem hypothetical at present, given that most drives are still prone to rapid evolution of resistance (KaramiNejadRanjbar et al., 2018; Champer et al., 2017; Unckless et al., 2017). Yet even an inefficient drive that reaches only a modest fraction of the population may spread resistance alleles to the entire population (Noble et al., 2018). Furthermore, the first examples of effective drives are already on the horizon (Kyrou et al., 2018), and even more powerful drives will likely be developed in the near future.\n\nRegardless of the likelihood of their escape from a lab or a field trial, it is imperative that we safeguard laboratory gene drives so that they cannot accidentally spread into a natural population. Current strategies typically rely on physical confinement of drive-containing organisms. However, it is doubtful whether this sufficiently reduces the likelihood of any accidental escape into the wild given the possibility of human error. Since very few escapees can establish an effective drive in a population (Unckless et al., 2015; Noble et al., 2018; Marshall and Hay, 2012; Marshall, 2009), additional safety measures should be employed in any experiments with drives potentially capable of spreading indefinitely.\n\nTwo molecular safeguarding strategies have recently been proposed that go beyond physical or ecological confinement (Akbari et al., 2015). The first is synthetic target site drive, which homes into engineered genomic sites that are absent in the wild. The second is split drive, where the drive construct lacks its own endonuclease, relying on one engineered into an unlinked site instead. Both strategies should thereby reliably prevent efficient drive outside of their respective laboratory lines.\n\nOne potential drawback of these strategies is that each requires an additional transgenesis step compared to a standard drive. For a split drive, the line containing the Cas9 gene needs to be engineered, although one such line could be used for multiple split drive systems, and the transformation of the two individual elements may be easier since each is smaller than a standard drive. For the synthetic target site drive, the line containing the synthetic target needs to be separately engineered. However, such a system can also provide distinct advantages over standard drives in addition to confinement. For example, moving a target gene from a pest species into a model organism would permit researchers to test some aspects of the drive system in the model organism prior to release in the pest population. Additionally, the flexibility of synthetic target site drives allows targeting a dominant marker such as a fluorescent gene, facilitating the measurement of drive performance parameters while preventing the need to target a natural marker gene that may have significant fitness effects.\n\nHere, we provide the first experimental demonstration of synthetic target site drives and split drives in an insect system and show that their behavior closely resembles that of standard drives, with similar rates of drive conversion efficiency and resistance allele formation. This suggests that these strategies can serve as appropriate molecular safeguards in the development and testing of CRISPR homing gene drives.\n\n## Results and discussion\n\n### Synthetic target sites\n\nWe designed and tested three synthetic target site drives in D. melanogaster, each targeting an enhanced green fluorescent protein (EGFP) gene introduced at two autosomal sites and an X-linked site adjacent to the yellow gene (Figure 1a). To determine conversion efficiencies of these drives (the percentage of EGFP alleles converted to drive alleles in the germline), we scored dsRed phenotype in the progeny of crosses between EGFP homozygotes and drive/EGFP heterozygotes. We found drive conversion efficiencies of approximately 52\u201354% in females and 32\u201346% in males in these drive/EGFP heterozygotes (Table 1, Supplementary file 2-Datasets S1-S3), which were similar to our previous homing drives targeting natural sites (Champer et al., 2017; Champer et al., 2018b). We next measured the rate at which \u2018r2\u2019 resistance alleles (those that disrupt the target gene) were formed in the embryo by scoring the progeny of female heterozygotes for EGFP phenotype. This rate was high in all three drives, ranging from 80\u00a0to\u00a091% (Table 1, Supplementary file 2-Datasets S1-S3). It is thus likely that nearly all EGFP target alleles were converted to resistance alleles. These rates are again similar to what we found for previous drive constructs targeting the autosomal cinnabar and X-linked white loci (Champer et al., 2018b), but significantly less than a construct targeting the X-linked yellow (Champer et al., 2017) gene (p\u00a0<\u00a00.001, Fisher\u2019s exact test). This difference is likely due to location-specific variation in expression levels of Cas9 (and possibly also the gRNA) between constructs inserted into the yellow gene and other sites.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/41439/elife-41439-fig1-v2.jpg)\n\n**Figure 1.:** (a) The synthetic target site drive constructs contain Cas9 with the germline nanos promoter and 3\u2019UTR, a dsRed marker with a slightly recoded (*) 3xP3 promoter and P10 3\u2019UTR, and a gRNA driven by the U6:3 promoter that targets the synthetic EGFP gene. The two homology arms include the EGFP sequence with its 3xP3 promoter and SV40 3\u2019UTR regions. (b) The split drive contains a dsRed marker gene driven by a 3xP3 promoter together with a SV40 3\u2019UTR, a gRNA expressed by the U6:3 promoter that targets yellow, and two homology arms for yellow. The unlinked supporting element contains Cas9 driven by the nanos promoter with a nanos 3\u2019UTR, and an EGFP marker gene driven by a 3xP3 promoter together with a SV40 3\u2019UTR.\n\n**Table 1.**\n Drive performances of synthetic target site and split drives compared with the standard drives from our previous studies (Champer et al., 2017; Champer et al., 2018b).\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Drive</th>\n      <th>Male drive conversion efficiency</th>\n      <th>Female drive conversion efficiency</th>\n      <th>Embryo r2 resistance rate</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>EGFP site B</td>\n      <td>32 \u00b1 3%</td>\n      <td>52 \u00b1 3%</td>\n      <td>88 \u00b1 1%</td>\n    </tr>\n    <tr>\n      <td>EGFP site E</td>\n      <td>46 \u00b1 4%</td>\n      <td>54 \u00b1 5%</td>\n      <td>91 \u00b1 2%</td>\n    </tr>\n    <tr>\n      <td>EGFP site Y</td>\n      <td>N/A</td>\n      <td>53 \u00b1 3%</td>\n      <td>80 \u00b1 2%</td>\n    </tr>\n    <tr>\n      <td>cinnabar</td>\n      <td>39 \u00b1 3%</td>\n      <td>54 \u00b1 4%</td>\n      <td>100 \u00b1 0%</td>\n    </tr>\n    <tr>\n      <td>white</td>\n      <td>N/A</td>\n      <td>59 \u00b1 2%</td>\n      <td>77 \u00b1 2%</td>\n    </tr>\n    <tr>\n      <td>Split-yellow</td>\n      <td>N/A</td>\n      <td>74 \u00b1 2%</td>\n      <td>74 \u00b1 2%</td>\n    </tr>\n    <tr>\n      <td>yellow</td>\n      <td>N/A</td>\n      <td>63 \u00b1 3%</td>\n      <td>20 \u00b1 2%</td>\n    </tr>\n  </tbody>\n</table>\n\n### Split drives\n\nFor our split drive system, we designed a drive construct targeting the X-linked yellow gene, similar to the one used in a previous study (Champer et al., 2017), but lacking Cas9 (Figure 1b). We then designed a second construct containing Cas9 driven by a nanos promoter for germline-restricted expression, which was inserted into chromosome 2R. We assessed drive performance of this system by first crossing males that had the drive element but no Cas9 to females that were homozygous for Cas9 but lacked the drive element. Similarly, we also crossed females homozygous for the drive but lacking Cas9 to males homozygous for Cas9 but lacking the drive. The progeny of these crosses followed Mendelian inheritance rules, indicating that both Cas9 and gRNA must be maternally deposited for resistance alleles to form in the early embryo.\n\nThe progeny of w1118 males and drive/wild-type heterozygous females containing one copy of Cas9 were then scored for dsRed and yellow phenotype to assess drive conversion efficiency and resistance rates (Table 1, Supplementary file 2-Datasets S4). Compared to our previous results with a standard gene drive targeting yellow (Champer et al., 2017), where drive conversion efficiency was 62% (and which shared the same genomic location, gRNA, dsRed marker, and nanos-Cas9 element, albeit at a different location), we measured a significantly higher drive conversion efficiency of 74% for the split drive using the same experimental parameters (p<0.0001, Fisher\u2019s exact test). This improvement may be due to increased efficiency of homology-directed repair for the split drive element compared to the larger standard drive. However, we also observed that early embryo r2 resistance allele formation was much higher in the split drive at 74% compared to the 20% for the standard drive (p<0.001, Fisher\u2019s exact test). This is likely because Cas9, rather than the gRNA, is the main limiting factor in determining the cleavage rate and that Cas9 at its new site had higher expression than the Cas9 in the standard drive at yellow (it was located only 277 nucleotides away from synthetic target site B, and the drive at this site had 88% embryo resistance).\n\nOne concern regarding the use of split drives as a surrogate for standard drives is that every genome in the experimental split drive population would contain Cas9, so maternally-deposited Cas9 would likely be present in each embryo, even if the mother did not have a drive element. In combination with the zygotically expressed gRNA from a paternal allele, this might then result in a higher rate of embryo resistance allele formation. However, our finding that both Cas9 and gRNA must be maternally deposited to form such embryo resistance alleles suggests that a split drive in a laboratory population should behave similarly to a standard drive.\n\nA hypothetical split drive where Cas9 is encoded in the driving element and the gRNA forms the supporting element (the reverse of our split drive) would presumably have nearly identical behavior to a standard drive. This is because in such a drive the Cas9 gene would always be present in the same copy number per individual as in a standard drive, and it would be located at the same genomic position, eliminating the possibility of position-based differences in Cas9 expression levels between the two drives. It would also be much closer to the standard drive in total size, minimizing potential differences in the efficiency of homology-directed repair. However, such a strategy would be experimentally less flexible because both elements would have to be redesigned for every new target site, rather than just the drive element when Cas9 is in the supporting element. Nevertheless, such a strategy may be advantageous for testing standard homing drives, integral homing drives (Nash et al., 2019) with gRNAs driving in a separate synthetic target site, and other future types of CRISPR-based gene drives.\n\n### Split drive mechanisms\n\nThe flexibility of the split drive system, facilitated by its genomic separation of Cas9 and gRNA, allowed us to further refine our understanding of the general mechanisms by which homing drives operate. Previous studies have indicated that germline resistance alleles can form in pre-gonial germline cells (KaramiNejadRanjbar et al., 2018; Champer et al., 2018b), but it remained unclear whether this could also occur at other stages. The fact that we observed a higher drive conversion efficiency of the split drive compared with a standard drive strongly implies that not all resistance alleles form prior to drive conversion, since resistance allele formation alone should not be affected by the reduced size of the split drive. This raises the possibility that drive conversion could potentially take place as an alternative to resistance allele formation in pre-gonial germline cells, where resistance alleles are known to form. However, a perhaps more likely explanation would be that only a portion of resistance alleles form in pre-gonial germline cells and the remainder form either in gametocytes as an alternative to drive conversion or afterward in late meiosis, when a template for homology-directed repair is no longer available.\n\nWe further found evidence that even in individuals lacking a genomic source of Cas9, maternally-deposited Cas9 can persist through to gametocytes in the germline, where it can then facilitate successful drive conversion. This was demonstrated by crosses of w1118 males with females that were mosaic yellow and had inherited a drive allele with dsRed from their mother but not the Cas9 allele itself, as evidenced by the absence of a EGFP phenotype. These females still received maternally-deposited Cas9 from their heterozygous mothers. Despite lacking a Cas9 gene, fifteen out of sixteen of these flies showed an average drive conversion efficiency of 54%, with a single fly showing no drive conversion (Supplementary file 2-Datasets S4). By contrast, nine out of eleven females from the same cross that were fully yellow, rather than mosaic, and two wild-type females showed no detectable drive conversion, while two fully yellow females showed successful drive conversion. In the wild-type females, \u2018r1\u2019 resistance alleles that preserve the function of the target gene had presumably formed at the embryo stage. It is unlikely that any drive conversion had occurred in these females with full yellow phenotype at the early embryo stage, because in that case their progeny should have consistently displayed biased inheritance of the drive allele. Thus, it appears that when Cas9 and gRNA are maternally-deposited, they can fail to cleave the target site in the early embryo and induce end-joining repair, while nonetheless showing significant cleavage activity in later stages when homology-directed repair is possible. This creates yellow phenotype over most of their body while also usually enabling drive conversion in the germline. Such Cas9 did not persist to embryos of the subsequent generation, as indicated by the lack of yellow phenotype in female progeny.\n\nWe also found that maternally-deposited gRNA was not necessary to achieve drive conversion in conjunction with maternally-deposited Cas9 when a genomic source of gRNA is provided. For example, we found that the progeny of drive-heterozygous females receiving a paternal drive allele without genomic Cas9 (but receiving maternally-deposited Cas9 from a mother with a single copy of Cas9) showed 38% germline drive conversion efficiency (Supplementary file 2-Datasets S4). An additional 12% of wild-type alleles were converted to r2 resistance alleles, and the remainder most likely remained wild-type. These rates were lower than those of the full split drive, likely because of reduced Cas9 and gRNA activity due to the fact that only maternally-deposited Cas9 could be utilized.\n\nTaken together, our results suggest that in the absence of early embryo resistance alleles, germline drive rates in an individual may be affected by the level of maternally-deposited Cas9 and gRNAs. Individuals inheriting a drive allele from their mother, as opposed to their father, will also receive maternally-deposited Cas9, which could increase the level of cleavage during the window for homology-directed repair, thereby increasing the rate of drive conversion. On the other hand, cleavage by the maternally-deposited Cas9 prior to this stage in pre-gonial germline cells, in addition to the early embryo, should usually form additional resistance alleles compared to individuals that have no such persistent Cas9.\n\n### Conclusions\n\nOur results demonstrate that CRISPR homing gene drives with synthetic target sites such as EGFP will show highly similar behavior to standard drives and can thus be used for most testing in lieu of these drives. Split drives also show similar performance, while allowing for the targeting of natural sequences in situations where the use of synthetic targets is difficult, such as for certain resistance reduction strategies and population suppression drives that require the targeting of wild-type genes.\n\nWe therefore suggest that gene drive research should consistently adopt these molecular safeguarding strategies in the development and testing of new drives. This will be particularly important for large-scale cage experiments aimed at gaining a better understanding of the expected population dynamics of candidate drives, which will be integral for any informed discussion about their feasibility and risks.\n\n## Materials and methods\n\n### Design of the synthetic target site drives\n\nWe constructed three synthetic target site drives at different genomic sites (B, E, and Y) into which the EGFP target was inserted. Sites B and E were on chromosomes 2R and 3R, respectively, located 3\u2019 of two protein- coding genes. Site Y was on the X chromosome immediately downstream of yellow. All of our synthetic target site drives used a slightly recoded 3xP3 promoter (3xP3v2) to drive the dsRed marker and also used a P10 3\u2019UTR. This was to reduce potential misalignment with the 3xP3 promoter and SV40 3\u2019UTR in the homology arms (see Figure 1a), which we found to result in poor drive efficiency in initial tests of drive constructs that used the same 3xP3 promoter and SV40 3\u2019UTR for the EGFP and dsRed markers.\n\n### Genotypes and phenotypes\n\nSince all our synthetic target site drives home into EGFP, successful insertion of the drives will disrupt this marker (Figure 1a). For the split drive, the driving element disrupts yellow, causing a recessive yellow body phenotype (Figure 1b). If cleavage is repaired by end-joining, rather than homology-directed repair, this will typically result in a mutated target site, creating a resistance allele. Most such resistance alleles will render the target gene nonfunctional due to a frameshift or otherwise sufficient change in the amino acid sequence. We term these alleles \u2018r2\u2019. Resistance alleles that preserve the function of the target gene are termed \u2018r1\u2019. In some cases, we observed mosaicism for EGFP in the eyes of heterozygotes for the drive and the synthetic target site. This indicates that the germline nanos promoter may still drive a low level of expression in somatic cells. However, since no mosaicism was observed in the body of the split drive flies, this mosaicism may be due to proximity of the nanos promoter to the nearby 3xP3 promoter that drives expression in the eyes (the promoters were only eight nucleotides apart in the synthetic target site flies but 68 nucleotides apart in the split Cas9 construct). The different phenotypes and genotypes of our drive systems are summarized in Supplementary file 2-Datasets S1-S3, as are calculations for determining drive performance parameters based on phenotype counts.\n\n### Generation of transgenic lines\n\nOne line in the study was transformed at GenetiVision by injecting the donor plasmid (ATSabG) into a w1118 D. melanogaster line, and seven lines were transformed at Rainbow Transgenic Flies by injecting the donor plasmid (ATSaeG, ATSxyG, BHDgN1bv2, BHDgN1e, BHDgN1y, BHDaaN, IHDyi2) into the same w1118 line. Cas9 from plasmid pHsp70-Cas9 (Gratz et al., 2013) (provided by Melissa Harrison and Kate O'Connor-Giles and Jill Wildonger, Addgene plasmid #45945) and gRNA from plasmids BHDaag1, BHDabg1, BHDaeg1, or BHDxyg1 were included in the injection, depending on the target site. For Genetivision injections, concentrations of donor, Cas9, and gRNA plasmids were 102, 88, and 60 ng/\u00b5L, respectively in 10 mM Tris-HCl, 23 \u00b5M EDTA, pH 8.1 solution. For Rainbow Transgenic Flies injections, concentrations of donor, Cas9, and gRNA plasmids were approximately 350\u2013500, 250\u2013500, and 50\u2013100 ng/\u00b5L, respectively in 10 mM Tris-HCl, 100 \u00b5M EDTA, pH 8.5 solution. Note that the synthetic target site drives were transformed into the w1118 line in parallel with the synthetic targets themselves, including elements of the target on either side of the drive. This avoids the need to transform the drive into lines already possessing the synthetic target site. To obtain homozygous lines, the injected embryos were reared and crossed with w1118 flies. The progeny with dsRed or EGFP fluorescent protein in the eyes, which usually indicated successful insertion of the donor plasmid, were selected and crossed with each other for several generations. The stock was considered homozygous at the drive locus after sequencing confirmed lack of wild-type or resistance alleles.\n\n### Fly rearing and phenotyping\n\nAll flies were reared at 25 \u02daC with a 14/10 hr day/night cycle. Bloomington Standard medium was provided as food every 2\u20133 weeks. During phenotyping, flies were anesthetized with CO2 and examined with a stereo dissecting microscope. Flies were considered \u2018mosaic\u2019 if any discernible mixture of green fluorescence was observed in either eye. However, for the synthetic target site drives, flies that carried a drive allele were only considered mosaic if either eye had less than 50% EGFP phenotype coverage, to avoid identifying flies with possible somatic expression of Cas9 as mosaic for EGFP. This definition was stringent enough that no mosaic insects without the drive were found that would have avoided mosaic classification based on this definition. Fluorescent phenotypes were scored using the NIGHTSEA system only in the eyes (SFA-GR for dsRed and SFA-RB-GO for EGFP). Even though dsRed did bleed through into the EGFP channel, both types of fluorescence could still be easily distinguished.\n\nAll experiments involving live gene drive flies were carried out using Arthropod Containment Level two protocols at the Sarkaria Arthropod Research Laboratory at Cornell University, a quarantine facility constructed to comply with containment standards developed by USDA APHIS. Additional safety protocols regarding insect handling approved by the Institutional Biosafety Committee at Cornell University were strictly obeyed throughout the study, further minimizing the risk of accidental release of transgenic flies.\n\n### Genotyping\n\nTo obtain the DNA sequences of gRNA target sites, individual flies were first frozen and then ground in 30 \u00b5L of 10 mM Tris-HCl pH 8, 1 mM EDTA, 25 mM NaCl, and 200 \u00b5g/mL recombinant proteinase K (Thermo Scientific). The homogenized mixture was incubated at 37 \u02daC for 30 min and then 95 \u02daC for 5 min. 1 \u00b5L of the supernatant was used as the template for PCR to amplify the gRNA target site. DNA was further purified by gel extraction and Sanger sequenced. Sequences were analyzed using the ApE software, available at:\u00a0http://biologylabs.utah.edu/jorgensen/wayned/ape.\n\n### Plasmid construction\n\nThe starting plasmid pCFD3-dU6:3gRNA (Port et al., 2014) (Addgene plasmid #49410) was kindly supplied by Simon Bullock, starting plasmid pJFRC81-10XUAS-IVS-Syn21-GFP-p10 (Pfeiffer et al., 2012) was a gift from Gerald Rubin (Addgene plasmid # 36432), and starting plasmid IHDyi2 was constructed in our previous study (Champer et al., 2017). All plasmids were digested with restriction enzymes from New England Biolabs (HF versions, when available). PCR was conducted with Q5 Hot Start DNA Polymerase (New England Biolabs) using DNA oligos and gBlocks from Integrated DNA Technologies. Gibson assembly of plasmids was conducted with Assembly Master Mix (New England Biolabs) and plasmids were transformed into JM109 competent cells (Zymo Research). Plasmids used for injection into eggs were purified with ZymoPure Midiprep kit (Zymo Research). Cas9 gRNA target sequences were identified using CRISPR Optimal Target Finder (Gratz et al., 2014). Tables of the DNA fragments used for Gibson Assembly of each plasmid, the PCR products with the oligonucleotide primer pair used, and plasmid digests with the restriction enzymes are shown in the Supporting Information.\n",
+      "created_at": "2025-12-02T08:14:19.138184Z"
+    },
+    {
+      "id": "07f61fab-921e-4ba7-8645-a3a07075d4e5",
+      "submission_id": "4dc5c8d6-9bf5-4026-99a2-95ab7b9f6df3",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Kevin M Esvelt, Massachusetts Institute of Technology United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.41439.009](https://doi.org/10.7554/eLife.41439.009)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Molecular safeguarding of CRISPR gene drive experiments\" for consideration by eLife. Your article has been reviewed by two peer reviewers, and the evaluation has been overseen by a guest Reviewing Editor and Patricia Wittkopp as the Senior Editor. The following individual involved in review of your submission has agreed to reveal his identity: Owain Edwards (Reviewer #1). Reviewer #2 remains anonymous.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThe major concern with the manuscript is one of clarity. The title and Abstract are somewhat misleading, as they suggest that the paper investigates how good the synthetic target and split drive strategies achieve their safeguarding aims, when in actual fact the paper is focused on how well they perform relative to standard gene drive designs. Nor does the Abstract mention the novel findings on maternal deposition. Moreover, there is little background available to orient the nonspecialist reader. The reviewers recommend the following general steps:\n\nEssential revisions:\n\nPurpose: The Abstract and Introduction of the manuscript should clearly state the purpose of the study \u2013 to assess whether two proposed methods of safeguarding gene drive research in the laboratory, synthetic target drives and split drives, will produce drive constructs that function in a manner comparable to earlier gene drive constructs that did not use these safeguards. To avoid misleading the reader into thinking that multiple-generation drive experiments were performed or that it was about testing the efficacy of the safeguards, it should specify that relevant drive parameters were measured, such as homing frequency, resistance allele formation, parental deposition frequency, etc. One sentence of the Abstract should mention the interesting results from maternally-deposited vs zygotically-expressed Cas9 and gRNA.\n\nContext 1: An additional paragraph in the Introduction should clearly summarize all previous publications, including relevant preprints, involving CRISPR-based gene drive in insects. This should clearly detail the discrepancies between Drosophila and mosquitoes, including male recombination frequencies.\n\nContext 2: The Introduction should clearly describe synthetic site targeting and split drive, including the amount of additional time or research steps required. For example, synthetic site targeting requires an additional transgenesis step, while split drive may require one fewer step if a pre-existing nuclease-expressing line is used. Also pertinent is their relevance to the target application. For example, when contextualizing synthetic site targeting, we recommend noting that moving a target gene from a pest species into a model organism (thereby creating a synthetic site) could permit researchers to test drive systems intended to affect the pest species in the model organism. Notably, a recently published PNAS article (Oberhofer et al., 2018) would have been safer and more relevant had the target genes been moved from the pest D. suzukii into D. melanogaster, so raising awareness of this point may be useful.\n\nResults: We recommend reporting the results on split drive in two separate sections. The first section should compare the performance of the split drive constructs relative to past experiments that did not use these safeguards, including in the authors' lab, to address the primary topic of the study. Only once this is completely resolved should the second section, which may deserve its own heading, detail the novel findings regarding maternal deposition vs zygotic expression. Particularly noteworthy is the lack of resistance allele formation when Cas9 is maternally deposited into an embryo that zygotically expresses gRNA.\n\nPerhaps the most surprising result is that \"even in individuals that lack any genomic source of Cas9, maternally-deposited Cas9 can persist through to gametocyte formation in the germline, where it can then facilitate successful drive conversion.\" That this occurs at efficiency comparable to that of organisms that do inherit a genomic source of Cas9 is so surprising that we highly recommend the authors quickly repeat this specific cross to verify the finding.\n\nStatistics: Because these experiments were independent of earlier studies that did not use safeguards, statistical comparisons of the conversion efficiencies may need to be justified by some statements that the designs were identical with respect to any experimental design parameters that could reasonably affect the dependent variables measured.\n\nLanguage: Given the high-profile nature of the field, we advise avoiding generalities and overstatement throughout the manuscript.\n",
+      "created_at": "2025-12-02T08:14:19.138184Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T08:14:19.138184Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T08:14:19.138184Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "6d658ed2-812b-4932-ac4d-9268a1485eb0",
+      "content_id": "257bc81b-4cf0-432e-a231-54c26a651f07",
+      "claim_id": "C1",
+      "claim": "CRISPR-based homing gene drives have the potential to rapidly spread through a population by converting wild-type alleles to drive alleles in the germline of heterozygous individuals, thereby enabling super-Mendelian inheritance of the drive allele.",
+      "claim_type": "EXPLICIT",
+      "source": "Homing gene drives have the potential to rapidly spread through a population by converting wild-type alleles to drive alleles in the germline of heterozygous individuals, thereby enabling super-Mendelian inheritance of the drive allele (Esvelt et al., 2014; Champer et al., 2016; Burt, 2014; Unckless et al., 2015; Alphey, 2014; Noble et al., 2017; Deredec et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by multiple citations to prior research establishing this concept.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:14:19.138184Z"
+    },
+    {
+      "id": "e9a7a408-b299-4b87-aedc-b913831cddf0",
+      "content_id": "257bc81b-4cf0-432e-a231-54c26a651f07",
+      "claim_id": "C2",
+      "claim": "CRISPR homing gene drives could be used for the eradication of vector-borne diseases such as malaria or dengue by propagating transgenes through mosquito populations that prevent disease transmission.",
+      "claim_type": "EXPLICIT",
+      "source": "Such systems could be a tool for the eradication of vector-borne diseases such as malaria or dengue by propagating transgenes through mosquito populations that prevent disease transmission (Esvelt et al., 2014; Champer et al., 2016; Burt, 2014; Alphey, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior research proposing this application.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:14:19.138184Z"
+    },
+    {
+      "id": "674d3096-d6e7-40ad-813a-a86d6f1a8e90",
+      "content_id": "257bc81b-4cf0-432e-a231-54c26a651f07",
+      "claim_id": "C3",
+      "claim": "CRISPR homing gene drives have been proposed for the direct suppression of vector populations, invasive species, or agricultural pests.",
+      "claim_type": "EXPLICIT",
+      "source": "Other proposed applications include the direct suppression of vector populations, invasive species, or agricultural pests (Esvelt et al., 2014; Champer et al., 2016; Burt, 2014; Alphey, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior research proposing these applications.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:14:19.138184Z"
+    },
+    {
+      "id": "7f4f9fb8-f3ee-4465-a9c9-b97b0c4b8608",
+      "content_id": "257bc81b-4cf0-432e-a231-54c26a651f07",
+      "claim_id": "C4",
+      "claim": "The first successful CRISPR-based homing drive conversion experiments were conducted in yeast.",
+      "claim_type": "EXPLICIT",
+      "source": "The first experiments to achieve successful drive conversion were conducted in yeast (DiCarlo et al., 2015; Roggenkamp et al., 2018; Basgall et al., 2018; Shapiro et al., 2018), flies (Champer et al., 2018a; Oberhofer et al., 2018; KaramiNejadRanjbar et al., 2018; Gantz and Bier, 2015; Champer et al., 2017), and mosquitoes (Hammond et al., 2017; Hammond et al., 2016; Gantz et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior experimental studies in yeast.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:14:19.138184Z"
+    },
+    {
+      "id": "251fca8f-6594-47b0-b9d1-9198ae7be88a",
+      "content_id": "257bc81b-4cf0-432e-a231-54c26a651f07",
+      "claim_id": "C5",
+      "claim": "The first successful CRISPR-based homing drive conversion experiments were conducted in flies.",
+      "claim_type": "EXPLICIT",
+      "source": "The first experiments to achieve successful drive conversion were conducted in yeast (DiCarlo et al., 2015; Roggenkamp et al., 2018; Basgall et al., 2018; Shapiro et al., 2018), flies (Champer et al., 2018a; Oberhofer et al., 2018; KaramiNejadRanjbar et al., 2018; Gantz and Bier, 2015; Champer et al., 2017), and mosquitoes (Hammond et al., 2017; Hammond et al., 2016; Gantz et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior experimental studies in flies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:14:19.138184Z"
+    },
+    {
+      "id": "e982ce6f-b510-41ff-a559-405bd46111b7",
+      "content_id": "257bc81b-4cf0-432e-a231-54c26a651f07",
+      "claim_id": "C6",
+      "claim": "The first successful CRISPR-based homing drive conversion experiments were conducted in mosquitoes.",
+      "claim_type": "EXPLICIT",
+      "source": "The first experiments to achieve successful drive conversion were conducted in yeast (DiCarlo et al., 2015; Roggenkamp et al., 2018; Basgall et al., 2018; Shapiro et al., 2018), flies (Champer et al., 2018a; Oberhofer et al., 2018; KaramiNejadRanjbar et al., 2018; Gantz and Bier, 2015; Champer et al., 2017), and mosquitoes (Hammond et al., 2017; Hammond et al., 2016; Gantz et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior experimental studies in mosquitoes.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:14:19.138184Z"
+    },
+    {
+      "id": "147b575a-cd85-4968-af67-d11a4116a732",
+      "content_id": "257bc81b-4cf0-432e-a231-54c26a651f07",
+      "claim_id": "C7",
+      "claim": "CRISPR homing drive conversion efficiencies range from close to 100% in Saccharomyces cerevisiae.",
+      "claim_type": "EXPLICIT",
+      "source": "These experiments revealed highly variable conversion efficiencies, ranging from close to 100% in Saccharomyces cerevisiae to between 19\u201362% in Drosophila melanogaster and 87\u201399% in Anopheles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on reported experimental results from prior studies.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:14:19.138184Z"
+    },
+    {
+      "id": "b8e23f32-2175-4847-ad77-33fbcda220af",
+      "content_id": "257bc81b-4cf0-432e-a231-54c26a651f07",
+      "claim_id": "C8",
+      "claim": "CRISPR homing drive conversion efficiencies range between 19\u201362% in Drosophila melanogaster.",
+      "claim_type": "EXPLICIT",
+      "source": "These experiments revealed highly variable conversion efficiencies, ranging from close to 100% in Saccharomyces cerevisiae to between 19\u201362% in Drosophila melanogaster and 87\u201399% in Anopheles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on reported experimental results from prior studies.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:14:19.138184Z"
+    },
+    {
+      "id": "91066253-e988-47bf-a614-781ad3b577cf",
+      "content_id": "257bc81b-4cf0-432e-a231-54c26a651f07",
+      "claim_id": "C9",
+      "claim": "CRISPR homing drive conversion efficiencies range between 87\u201399% in Anopheles.",
+      "claim_type": "EXPLICIT",
+      "source": "These experiments revealed highly variable conversion efficiencies, ranging from close to 100% in Saccharomyces cerevisiae to between 19\u201362% in Drosophila melanogaster and 87\u201399% in Anopheles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on reported experimental results from prior studies.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:14:19.138184Z"
+    },
+    {
+      "id": "4652784e-3e95-40e1-9503-2cc4afcb4aca",
+      "content_id": "257bc81b-4cf0-432e-a231-54c26a651f07",
+      "claim_id": "C10",
+      "claim": "Variability in CRISPR homing drive conversion efficiency could be due to differences in the level and timing of Cas9 expression, the genomic targets, and organism-specific factors such as recombination rate.",
+      "claim_type": "EXPLICIT",
+      "source": "Such variability could be due to several factors, including differences in the level and timing of Cas9 expression, the genomic targets, and organism-specific factors such as recombination rate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a speculative explanation for observed variability based on known biological factors.",
+      "evidence_type": "[\"SPECULATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:14:19.138184Z"
+    },
+    {
+      "id": "4ff42927-6d1f-4d5e-bf52-f24c8201fea2",
+      "content_id": "257bc81b-4cf0-432e-a231-54c26a651f07",
+      "claim_id": "C11",
+      "claim": "Conversion rates in Anopheles generally tend to be higher than in D. melanogaster, especially in males.",
+      "claim_type": "EXPLICIT",
+      "source": "In Anopheles, for instance, conversion rates generally tend to be higher than in D. melanogaster, especially in males, consistent with the fact that there is no recombination in male flies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on comparison of experimental results from prior studies and is consistent with known biological differences.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:14:19.138184Z"
+    },
+    {
+      "id": "cae6786b-9484-492b-a322-45d79cc77da5",
+      "content_id": "257bc81b-4cf0-432e-a231-54c26a651f07",
+      "claim_id": "C12",
+      "claim": "There is no recombination in male Drosophila flies.",
+      "claim_type": "EXPLICIT",
+      "source": "In Anopheles, for instance, conversion rates generally tend to be higher than in D. melanogaster, especially in males, consistent with the fact that there is no recombination in male flies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge about Drosophila biology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:14:19.138184Z"
+    },
+    {
+      "id": "f4ca4eee-fef0-41a7-b53a-b196d9ac049c",
+      "content_id": "257bc81b-4cf0-432e-a231-54c26a651f07",
+      "claim_id": "C13",
+      "claim": "Successful drive conversion has been demonstrated in mice, although with a lower efficiency than most other systems.",
+      "claim_type": "EXPLICIT",
+      "source": "A recent study has further demonstrated successful drive conversion in mice (Grunwald et al., 2019), although with a lower efficiency than most of the other systems.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to a prior study in mice.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:14:19.138184Z"
+    },
+    {
+      "id": "dcc898ab-b0a9-4cdc-b154-247dc4251ae6",
+      "content_id": "257bc81b-4cf0-432e-a231-54c26a651f07",
+      "claim_id": "C14",
+      "claim": "Homing gene drives face a significant obstacle due to the frequent formation of resistance alleles when cleavage is repaired by end-joining, which typically generates mutations at the target site.",
+      "claim_type": "EXPLICIT",
+      "source": "It has also become clear that homing gene drives face a significant obstacle due to the frequent formation of resistance alleles when cleavage is repaired by end-joining, which typically generates mutations at the target site (Champer et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:14:19.138184Z"
+    },
+    {
+      "id": "140145a5-a978-400c-a19d-ca1761c38ebf",
+      "content_id": "257bc81b-4cf0-432e-a231-54c26a651f07",
+      "claim_id": "C15",
+      "claim": "Resistance allele formation in homing gene drives has been observed to take place in the germline during failed drive conversion.",
+      "claim_type": "EXPLICIT",
+      "source": "This process has been observed to take place in the germline during failed drive conversion, but also in the embryo due to the persistence of maternally-deposited Cas9 (Champer et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:14:19.138184Z"
+    },
+    {
+      "id": "624acc11-23c1-48b8-b340-e97d89dc8c64",
+      "content_id": "257bc81b-4cf0-432e-a231-54c26a651f07",
+      "claim_id": "C16",
+      "claim": "Resistance allele formation in homing gene drives has been observed to take place in the embryo due to the persistence of maternally-deposited Cas9.",
+      "claim_type": "EXPLICIT",
+      "source": "This process has been observed to take place in the germline during failed drive conversion, but also in the embryo due to the persistence of maternally-deposited Cas9 (Champer et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:14:19.138184Z"
+    },
+    {
+      "id": "9c733f49-11e9-4cba-a976-919d6b41372f",
+      "content_id": "257bc81b-4cf0-432e-a231-54c26a651f07",
+      "claim_id": "C17",
+      "claim": "Resistance rates in homing gene drives are highly variable between drive systems and organisms.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to conversion rates, resistance rates too are highly variable between drive systems and organisms (DiCarlo et al., 2015; Champer et al., 2017; Gantz et al., 2015; Grunwald et al., 2019; Champer et al., 2018b; Hammond et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to multiple prior studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:14:19.138184Z"
+    },
+    {
+      "id": "b194893b-a1db-42b2-9b0d-dc1d9055ee01",
+      "content_id": "257bc81b-4cf0-432e-a231-54c26a651f07",
+      "claim_id": "C18",
+      "claim": "Strategies for improving conversion efficiency and lowering resistance rates in homing gene drives have been successfully tested, including gRNA multiplexing.",
+      "claim_type": "EXPLICIT",
+      "source": "However, strategies for improving conversion efficiency and lowering resistance rates have already been successfully tested, including gRNA multiplexing (Champer et al., 2018b), improved promoters (Champer et al., 2018b; Hammond et al., 2018), and careful selection of target sites to render resistance alleles non-viable (Kyrou et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:14:19.138184Z"
+    },
+    {
+      "id": "dc033071-c3ea-4d0f-9e32-eb586b4346ef",
+      "content_id": "257bc81b-4cf0-432e-a231-54c26a651f07",
+      "claim_id": "C19",
+      "claim": "Strategies for improving conversion efficiency and lowering resistance rates in homing gene drives have been successfully tested, including improved promoters.",
+      "claim_type": "EXPLICIT",
+      "source": "However, strategies for improving conversion efficiency and lowering resistance rates have already been successfully tested, including gRNA multiplexing (Champer et al., 2018b), improved promoters (Champer et al., 2018b; Hammond et al., 2018), and careful selection of target sites to render resistance alleles non-viable (Kyrou et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:14:19.138184Z"
+    },
+    {
+      "id": "8efbcfaf-644a-4592-a801-6d7c120a7158",
+      "content_id": "257bc81b-4cf0-432e-a231-54c26a651f07",
+      "claim_id": "C20",
+      "claim": "Strategies for improving conversion efficiency and lowering resistance rates in homing gene drives have been successfully tested, including careful selection of target sites to render resistance alleles non-viable.",
+      "claim_type": "EXPLICIT",
+      "source": "However, strategies for improving conversion efficiency and lowering resistance rates have already been successfully tested, including gRNA multiplexing (Champer et al., 2018b), improved promoters (Champer et al., 2018b; Hammond et al., 2018), and careful selection of target sites to render resistance alleles non-viable (Kyrou et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:14:19.138184Z"
+    },
+    {
+      "id": "5610f205-4f17-45d6-94da-ae55dc1c8eaa",
+      "content_id": "257bc81b-4cf0-432e-a231-54c26a651f07",
+      "claim_id": "C21",
+      "claim": "Total population elimination with a CRISPR gene drive was recently achieved in laboratory cages of Anopheles gambiae for the first time.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, total population elimination with a CRISPR gene drive was recently achieved in laboratory cages of Anopheles gambiae for the first time (Kyrou et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:14:19.138184Z"
+    },
+    {
+      "id": "2207bff2-66b2-4a4b-a11d-9b2e0e22e2c8",
+      "content_id": "257bc81b-4cf0-432e-a231-54c26a651f07",
+      "claim_id": "C22",
+      "claim": "Most current gene drives are still prone to rapid evolution of resistance.",
+      "claim_type": "EXPLICIT",
+      "source": "These concerns may seem hypothetical at present, given that most drives are still prone to rapid evolution of resistance (KaramiNejadRanjbar et al., 2018; Champer et al., 2017; Unckless et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:14:19.138184Z"
+    },
+    {
+      "id": "6c83263d-4cb8-4c17-80ff-8a446eb8d987",
+      "content_id": "257bc81b-4cf0-432e-a231-54c26a651f07",
+      "claim_id": "C23",
+      "claim": "Even an inefficient drive that reaches only a modest fraction of the population may spread resistance alleles to the entire population.",
+      "claim_type": "EXPLICIT",
+      "source": "Yet even an inefficient drive that reaches only a modest fraction of the population may spread resistance alleles to the entire population (Noble et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:14:19.138184Z"
+    },
+    {
+      "id": "5d155bd8-abb9-4458-85cf-d170df65546d",
+      "content_id": "257bc81b-4cf0-432e-a231-54c26a651f07",
+      "claim_id": "C24",
+      "claim": "Very few escapees can establish an effective drive in a population.",
+      "claim_type": "EXPLICIT",
+      "source": "Since very few escapees can establish an effective drive in a population (Unckless et al., 2015; Noble et al., 2018; Marshall and Hay, 2012; Marshall, 2009), additional safety measures should be employed in any experiments with drives potentially capable of spreading indefinitely.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:14:19.138184Z"
+    },
+    {
+      "id": "d3b48e4a-5cf7-4dd4-87d0-ea8c40407705",
+      "content_id": "257bc81b-4cf0-432e-a231-54c26a651f07",
+      "claim_id": "C25",
+      "claim": "Synthetic target site drive is a molecular safeguarding strategy where the drive homes into engineered genomic sites that are absent in the wild.",
+      "claim_type": "EXPLICIT",
+      "source": "The first is synthetic target site drive, which homes into engineered genomic sites that are absent in the wild.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a description of a proposed strategy cited from prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:14:19.138184Z"
+    },
+    {
+      "id": "925d3dc6-9fdd-4cab-90ee-322efcf31223",
+      "content_id": "257bc81b-4cf0-432e-a231-54c26a651f07",
+      "claim_id": "C26",
+      "claim": "Split drive is a molecular safeguarding strategy where the drive construct lacks its own endonuclease, relying on one engineered into an unlinked site instead.",
+      "claim_type": "EXPLICIT",
+      "source": "The second is split drive, where the drive construct lacks its own endonuclease, relying on one engineered into an unlinked site instead.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a description of a proposed strategy cited from prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:14:19.138184Z"
+    },
+    {
+      "id": "4656cf93-dfd4-4ef4-9d10-b236e76ba776",
+      "content_id": "257bc81b-4cf0-432e-a231-54c26a651f07",
+      "claim_id": "C27",
+      "claim": "Synthetic target site drives and split drives should reliably prevent efficient drive outside of their respective laboratory lines.",
+      "claim_type": "EXPLICIT",
+      "source": "Both strategies should thereby reliably prevent efficient drive outside of their respective laboratory lines.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a theoretical prediction based on the design of these strategies.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:14:19.138184Z"
+    },
+    {
+      "id": "03780c60-d4da-430f-b469-8136b2605161",
+      "content_id": "257bc81b-4cf0-432e-a231-54c26a651f07",
+      "claim_id": "C28",
+      "claim": "The performance of synthetic target site drives closely resembles that of standard homing drives in Drosophila melanogaster.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we experimentally demonstrate the suitability of synthetic target site drives as well as split drives as flexible safeguarding strategies for gene drive experiments by showing that their performance closely resembles that of standard homing drives in Drosophila melanogaster.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:14:19.138184Z"
+    },
+    {
+      "id": "c6464c74-e8cb-4ad6-bc8f-bbad84859ec0",
+      "content_id": "257bc81b-4cf0-432e-a231-54c26a651f07",
+      "claim_id": "C29",
+      "claim": "The performance of split drives closely resembles that of standard homing drives in Drosophila melanogaster.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we experimentally demonstrate the suitability of synthetic target site drives as well as split drives as flexible safeguarding strategies for gene drive experiments by showing that their performance closely resembles that of standard homing drives in Drosophila melanogaster.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:14:19.138184Z"
+    },
+    {
+      "id": "6f1b41a7-9b7a-48ad-bfef-d1672f6a0441",
+      "content_id": "257bc81b-4cf0-432e-a231-54c26a651f07",
+      "claim_id": "C30",
+      "claim": "Maternal deposition of both Cas9 and gRNA is required to form resistance alleles in the early embryo.",
+      "claim_type": "EXPLICIT",
+      "source": "Using our split drive system, we further find that maternal deposition of both Cas9 and gRNA is required to form resistance alleles in the early embryo and that maternally-deposited Cas9 alone can power germline drive conversion in individuals that lack a genomic source of Cas9.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data from the split drive system presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:14:19.138184Z"
+    },
+    {
+      "id": "e8bac946-76f1-4299-b53e-bf07376fb8c0",
+      "content_id": "257bc81b-4cf0-432e-a231-54c26a651f07",
+      "claim_id": "C31",
+      "claim": "Maternally-deposited Cas9 alone can power germline drive conversion in individuals that lack a genomic source of Cas9.",
+      "claim_type": "EXPLICIT",
+      "source": "Using our split drive system, we further find that maternal deposition of both Cas9 and gRNA is required to form resistance alleles in the early embryo and that maternally-deposited Cas9 alone can power germline drive conversion in individuals that lack a genomic source of Cas9.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data from the split drive system presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:14:19.138184Z"
+    },
+    {
+      "id": "0cce2f79-cd81-43b8-b353-b5588c643ed4",
+      "content_id": "257bc81b-4cf0-432e-a231-54c26a651f07",
+      "claim_id": "C32",
+      "claim": "Three synthetic target site drives were designed and tested in D. melanogaster, each targeting an EGFP gene introduced at two autosomal sites and an X-linked site adjacent to the yellow gene.",
+      "claim_type": "EXPLICIT",
+      "source": "We designed and tested three synthetic target site drives in D. melanogaster, each targeting an enhanced green fluorescent protein (EGFP) gene introduced at two autosomal sites and an X-linked site adjacent to the yellow gene (Figure 1a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental design described in the text and illustrated in Figure 1a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:14:19.138184Z"
+    },
+    {
+      "id": "67c45eab-376c-40c8-ab08-c5019e47850e",
+      "content_id": "257bc81b-4cf0-432e-a231-54c26a651f07",
+      "claim_id": "C33",
+      "claim": "The synthetic target site drives showed drive conversion efficiencies of approximately 52\u201354% in females.",
+      "claim_type": "EXPLICIT",
+      "source": "We found drive conversion efficiencies of approximately 52\u201354% in females and 32\u201346% in males in these drive/EGFP heterozygotes (Table 1, Supplementary file 2-Datasets S1-S3), which were similar to our previous homing drives targeting natural sites (Champer et al., 2017; Champer et al., 2018b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data presented in Table 1 and supplementary datasets.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:14:19.138184Z"
+    },
+    {
+      "id": "950b7995-dbb4-495f-bee6-757ea9d227c9",
+      "content_id": "257bc81b-4cf0-432e-a231-54c26a651f07",
+      "claim_id": "C34",
+      "claim": "The synthetic target site drives showed drive conversion efficiencies of approximately 32\u201346% in males.",
+      "claim_type": "EXPLICIT",
+      "source": "We found drive conversion efficiencies of approximately 52\u201354% in females and 32\u201346% in males in these drive/EGFP heterozygotes (Table 1, Supplementary file 2-Datasets S1-S3), which were similar to our previous homing drives targeting natural sites (Champer et al., 2017; Champer et al., 2018b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data presented in Table 1 and supplementary datasets.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:14:19.138184Z"
+    },
+    {
+      "id": "476bd527-0383-4ad4-930e-90fd729fc23b",
+      "content_id": "257bc81b-4cf0-432e-a231-54c26a651f07",
+      "claim_id": "C35",
+      "claim": "The conversion efficiencies of synthetic target site drives were similar to previous homing drives targeting natural sites.",
+      "claim_type": "EXPLICIT",
+      "source": "We found drive conversion efficiencies of approximately 52\u201354% in females and 32\u201346% in males in these drive/EGFP heterozygotes (Table 1, Supplementary file 2-Datasets S1-S3), which were similar to our previous homing drives targeting natural sites (Champer et al., 2017; Champer et al., 2018b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by comparison of current experimental data with prior studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:14:19.138184Z"
+    },
+    {
+      "id": "b3026847-3f2f-43e7-b4ed-27b2215577cf",
+      "content_id": "257bc81b-4cf0-432e-a231-54c26a651f07",
+      "claim_id": "C36",
+      "claim": "The rate of r2 resistance allele formation in the embryo was high in all three synthetic target site drives, ranging from 80 to 91%.",
+      "claim_type": "EXPLICIT",
+      "source": "We next measured the rate at which 'r2' resistance alleles (those that disrupt the target gene) were formed in the embryo by scoring the progeny of female heterozygotes for EGFP phenotype. This rate was high in all three drives, ranging from 80 to 91% (Table 1, Supplementary file 2-Datasets S1-S3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data presented in Table 1 and supplementary datasets.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:14:19.138184Z"
+    },
+    {
+      "id": "345c2b15-d35f-4976-8d65-62ae6f09badc",
+      "content_id": "257bc81b-4cf0-432e-a231-54c26a651f07",
+      "claim_id": "C37",
+      "claim": "Nearly all EGFP target alleles were likely converted to resistance alleles in the synthetic target site drives.",
+      "claim_type": "EXPLICIT",
+      "source": "It is thus likely that nearly all EGFP target alleles were converted to resistance alleles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an inference based on the high rate of r2 resistance allele formation observed.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:14:19.138184Z"
+    },
+    {
+      "id": "d625a13a-d0e1-408c-ba56-8300f44345b1",
+      "content_id": "257bc81b-4cf0-432e-a231-54c26a651f07",
+      "claim_id": "C38",
+      "claim": "The embryo resistance rates of synthetic target site drives are similar to previous drive constructs targeting the autosomal cinnabar and X-linked white loci.",
+      "claim_type": "EXPLICIT",
+      "source": "These rates are again similar to what we found for previous drive constructs targeting the autosomal cinnabar and X-linked white loci (Champer et al., 2018b), but significantly less than a construct targeting the X-linked yellow (Champer et al., 2017) gene (p < 0.001, Fisher's exact test).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by comparison of current experimental data with prior studies and statistical testing.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:14:19.138184Z"
+    },
+    {
+      "id": "5ddbb699-fdb3-4bd7-94de-21daa74ba869",
+      "content_id": "257bc81b-4cf0-432e-a231-54c26a651f07",
+      "claim_id": "C39",
+      "claim": "The embryo resistance rates of synthetic target site drives are significantly less than a construct targeting the X-linked yellow gene (p < 0.001).",
+      "claim_type": "EXPLICIT",
+      "source": "These rates are again similar to what we found for previous drive constructs targeting the autosomal cinnabar and X-linked white loci (Champer et al., 2018b), but significantly less than a construct targeting the X-linked yellow (Champer et al., 2017) gene (p < 0.001, Fisher's exact test).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by comparison of current experimental data with prior studies and statistical testing.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:14:19.138184Z"
+    },
+    {
+      "id": "16fed7fa-79cb-4282-b0d7-20024ad0eb54",
+      "content_id": "257bc81b-4cf0-432e-a231-54c26a651f07",
+      "claim_id": "C40",
+      "claim": "The difference in embryo resistance rates between synthetic target site drives and the yellow-targeting construct is likely due to location-specific variation in expression levels of Cas9 between constructs inserted into the yellow gene and other sites.",
+      "claim_type": "EXPLICIT",
+      "source": "This difference is likely due to location-specific variation in expression levels of Cas9 (and possibly also the gRNA) between constructs inserted into the yellow gene and other sites.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a speculative explanation for observed differences based on known biological factors.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:14:19.138184Z"
+    },
+    {
+      "id": "1801091c-2924-4d2c-b382-e134e874c0f2",
+      "content_id": "257bc81b-4cf0-432e-a231-54c26a651f07",
+      "claim_id": "C41",
+      "claim": "A split drive construct was designed targeting the X-linked yellow gene, similar to one used in a previous study but lacking Cas9.",
+      "claim_type": "EXPLICIT",
+      "source": "For our split drive system, we designed a drive construct targeting the X-linked yellow gene, similar to the one used in a previous study (Champer et al., 2017), but lacking Cas9 (Figure 1b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim describes the experimental design of the split drive system.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:14:19.138184Z"
+    },
+    {
+      "id": "1b0d3525-c5ff-46ae-8078-d974f8c59ca8",
+      "content_id": "257bc81b-4cf0-432e-a231-54c26a651f07",
+      "claim_id": "C42",
+      "claim": "A second construct containing Cas9 driven by a nanos promoter for germline-restricted expression was inserted into chromosome 2R.",
+      "claim_type": "EXPLICIT",
+      "source": "We then designed a second construct containing Cas9 driven by a nanos promoter for germline-restricted expression, which was inserted into chromosome 2R.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the experimental design of the Cas9-supplying element.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:14:19.138184Z"
+    },
+    {
+      "id": "31a7dfb2-796c-4fd2-aa45-d3018c286e31",
+      "content_id": "257bc81b-4cf0-432e-a231-54c26a651f07",
+      "claim_id": "C43",
+      "claim": "The progeny of crosses between males with the drive element but no Cas9 and females homozygous for Cas9 but lacking the drive element followed Mendelian inheritance rules.",
+      "claim_type": "EXPLICIT",
+      "source": "We assessed drive performance of this system by first crossing males that had the drive element but no Cas9 to females that were homozygous for Cas9 but lacked the drive element. Similarly, we also crossed females homozygous for the drive but lacking Cas9 to males homozygous for Cas9 but lacking the drive. The progeny of these crosses followed Mendelian inheritance rules, indicating that both Cas9 and gRNA must be maternally deposited for resistance alleles to form in the early embryo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental observations from the split drive crosses.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:14:19.138184Z"
+    },
+    {
+      "id": "38ea5903-8f87-4ba4-a82c-5e35a476f506",
+      "content_id": "257bc81b-4cf0-432e-a231-54c26a651f07",
+      "claim_id": "C44",
+      "claim": "Both Cas9 and gRNA must be maternally deposited for resistance alleles to form in the early embryo.",
+      "claim_type": "EXPLICIT",
+      "source": "The progeny of these crosses followed Mendelian inheritance rules, indicating that both Cas9 and gRNA must be maternally deposited for resistance alleles to form in the early embryo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an inference from the observation that progeny followed Mendelian inheritance when Cas9 and gRNA were not co-inherited maternally.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:14:19.138184Z"
+    },
+    {
+      "id": "d8029039-c568-4acd-83a8-b9f956035e08",
+      "content_id": "257bc81b-4cf0-432e-a231-54c26a651f07",
+      "claim_id": "C45",
+      "claim": "The split drive showed a drive conversion efficiency of 74%.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared to our previous results with a standard gene drive targeting yellow (Champer et al., 2017), where drive conversion efficiency was 62% (and which shared the same genomic location, gRNA, dsRed marker, and nanos-Cas9 element, albeit at a different location), we measured a significantly higher drive conversion efficiency of 74% for the split drive using the same experimental parameters (p<0.0001, Fisher's exact test).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data and statistical comparison with prior studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:14:19.138184Z"
+    },
+    {
+      "id": "f5bec670-2587-476e-87bf-a01c44053188",
+      "content_id": "257bc81b-4cf0-432e-a231-54c26a651f07",
+      "claim_id": "C46",
+      "claim": "The split drive showed a significantly higher drive conversion efficiency (74%) compared to a standard gene drive targeting yellow (62%) (p<0.0001).",
+      "claim_type": "EXPLICIT",
+      "source": "Compared to our previous results with a standard gene drive targeting yellow (Champer et al., 2017), where drive conversion efficiency was 62% (and which shared the same genomic location, gRNA, dsRed marker, and nanos-Cas9 element, albeit at a different location), we measured a significantly higher drive conversion efficiency of 74% for the split drive using the same experimental parameters (p<0.0001, Fisher's exact test).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data and statistical testing comparing with prior studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:14:19.138184Z"
+    },
+    {
+      "id": "f7d9c6d4-a6fd-46b2-98f5-0700281599b3",
+      "content_id": "257bc81b-4cf0-432e-a231-54c26a651f07",
+      "claim_id": "C47",
+      "claim": "The improvement in drive conversion efficiency for the split drive may be due to increased efficiency of homology-directed repair for the split drive element compared to the larger standard drive.",
+      "claim_type": "EXPLICIT",
+      "source": "This improvement may be due to increased efficiency of homology-directed repair for the split drive element compared to the larger standard drive.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a speculative explanation for the observed improvement.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:14:19.138184Z"
+    },
+    {
+      "id": "32b3391b-9684-4a07-81b7-a124ef0ce981",
+      "content_id": "257bc81b-4cf0-432e-a231-54c26a651f07",
+      "claim_id": "C48",
+      "claim": "Early embryo r2 resistance allele formation was much higher in the split drive at 74% compared to the 20% for the standard drive (p<0.001).",
+      "claim_type": "EXPLICIT",
+      "source": "However, we also observed that early embryo r2 resistance allele formation was much higher in the split drive at 74% compared to the 20% for the standard drive (p<0.001, Fisher's exact test).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data and statistical testing comparing with prior studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:14:19.138184Z"
+    },
+    {
+      "id": "12524f78-b156-4a20-82e1-228aa1126681",
+      "content_id": "257bc81b-4cf0-432e-a231-54c26a651f07",
+      "claim_id": "C49",
+      "claim": "The higher embryo resistance in the split drive is likely because Cas9, rather than the gRNA, is the main limiting factor in determining the cleavage rate.",
+      "claim_type": "EXPLICIT",
+      "source": "This is likely because Cas9, rather than the gRNA, is the main limiting factor in determining the cleavage rate and that Cas9 at its new site had higher expression than the Cas9 in the standard drive at yellow (it was located only 277 nucleotides away from synthetic target site B, and the drive at this site had 88% embryo resistance).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a speculative explanation supported by comparison of embryo resistance rates at different genomic locations.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:14:19.138184Z"
+    },
+    {
+      "id": "ae49e086-1cd3-4ddf-bac0-d039d41824dd",
+      "content_id": "257bc81b-4cf0-432e-a231-54c26a651f07",
+      "claim_id": "C50",
+      "claim": "Cas9 at its new site in the split drive had higher expression than the Cas9 in the standard drive at yellow.",
+      "claim_type": "EXPLICIT",
+      "source": "This is likely because Cas9, rather than the gRNA, is the main limiting factor in determining the cleavage rate and that Cas9 at its new site had higher expression than the Cas9 in the standard drive at yellow (it was located only 277 nucleotides away from synthetic target site B, and the drive at this site had 88% embryo resistance).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the observation that the Cas9 location was near synthetic target site B which had 88% embryo resistance.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:14:19.138184Z"
+    },
+    {
+      "id": "b4722c0e-8caa-45ce-b086-580592c55dbf",
+      "content_id": "257bc81b-4cf0-432e-a231-54c26a651f07",
+      "claim_id": "C51",
+      "claim": "The Cas9 element in the split drive was located only 277 nucleotides away from synthetic target site B.",
+      "claim_type": "EXPLICIT",
+      "source": "This is likely because Cas9, rather than the gRNA, is the main limiting factor in determining the cleavage rate and that Cas9 at its new site had higher expression than the Cas9 in the standard drive at yellow (it was located only 277 nucleotides away from synthetic target site B, and the drive at this site had 88% embryo resistance).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a factual statement about the genomic location of the Cas9 element.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:14:19.138184Z"
+    },
+    {
+      "id": "d7892fdf-1a1a-46e0-b006-bdb5d2baf24d",
+      "content_id": "257bc81b-4cf0-432e-a231-54c26a651f07",
+      "claim_id": "C52",
+      "claim": "The finding that both Cas9 and gRNA must be maternally deposited to form embryo resistance alleles suggests that a split drive in a laboratory population should behave similarly to a standard drive.",
+      "claim_type": "EXPLICIT",
+      "source": "However, our finding that both Cas9 and gRNA must be maternally deposited to form such embryo resistance alleles suggests that a split drive in a laboratory population should behave similarly to a standard drive.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an inference based on the experimental finding about maternal deposition requirements.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:14:19.138184Z"
+    },
+    {
+      "id": "cc0661fc-3e48-42db-8404-ef9bf4c7639e",
+      "content_id": "257bc81b-4cf0-432e-a231-54c26a651f07",
+      "claim_id": "C53",
+      "claim": "A hypothetical split drive where Cas9 is encoded in the driving element and the gRNA forms the supporting element would presumably have nearly identical behavior to a standard drive.",
+      "claim_type": "EXPLICIT",
+      "source": "A hypothetical split drive where Cas9 is encoded in the driving element and the gRNA forms the supporting element (the reverse of our split drive) would presumably have nearly identical behavior to a standard drive.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a speculative prediction about an alternative split drive design.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:14:19.138184Z"
+    },
+    {
+      "id": "6ac6116f-0f3d-49ab-b170-29146b0df294",
+      "content_id": "257bc81b-4cf0-432e-a231-54c26a651f07",
+      "claim_id": "C54",
+      "claim": "In a hypothetical reverse split drive, the Cas9 gene would always be present in the same copy number per individual as in a standard drive.",
+      "claim_type": "EXPLICIT",
+      "source": "This is because in such a drive the Cas9 gene would always be present in the same copy number per individual as in a standard drive, and it would be located at the same genomic position, eliminating the possibility of position-based differences in Cas9 expression levels between the two drives.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a logical inference about the properties of a hypothetical reverse split drive design.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:14:19.138184Z"
+    },
+    {
+      "id": "69ee39e4-03f9-4866-a2aa-2efa018d4f7e",
+      "content_id": "257bc81b-4cf0-432e-a231-54c26a651f07",
+      "claim_id": "C55",
+      "claim": "The higher drive conversion efficiency of the split drive compared with a standard drive strongly implies that not all resistance alleles form prior to drive conversion.",
+      "claim_type": "EXPLICIT",
+      "source": "The fact that we observed a higher drive conversion efficiency of the split drive compared with a standard drive strongly implies that not all resistance alleles form prior to drive conversion, since resistance allele formation alone should not be affected by the reduced size of the split drive.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an inference from the experimental observation of higher drive conversion efficiency.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:14:19.138184Z"
+    },
+    {
+      "id": "f4282faa-317d-427f-b961-a14887e8d697",
+      "content_id": "257bc81b-4cf0-432e-a231-54c26a651f07",
+      "claim_id": "C56",
+      "claim": "Drive conversion could potentially take place as an alternative to resistance allele formation in pre-gonial germline cells.",
+      "claim_type": "EXPLICIT",
+      "source": "This raises the possibility that drive conversion could potentially take place as an alternative to resistance allele formation in pre-gonial germline cells, where resistance alleles are known to form.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a speculative possibility raised by the experimental findings.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:14:19.138184Z"
+    },
+    {
+      "id": "379bb6cd-76c4-4878-ae08-4d9128e78167",
+      "content_id": "257bc81b-4cf0-432e-a231-54c26a651f07",
+      "claim_id": "C57",
+      "claim": "A more likely explanation is that only a portion of resistance alleles form in pre-gonial germline cells and the remainder form either in gametocytes as an alternative to drive conversion or afterward in late meiosis.",
+      "claim_type": "EXPLICIT",
+      "source": "However, a perhaps more likely explanation would be that only a portion of resistance alleles form in pre-gonial germline cells and the remainder form either in gametocytes as an alternative to drive conversion or afterward in late meiosis, when a template for homology-directed repair is no longer available.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a speculative explanation for the observed data.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:14:19.138184Z"
+    },
+    {
+      "id": "88e2df72-3749-4aa5-a848-b0691b4d06a6",
+      "content_id": "257bc81b-4cf0-432e-a231-54c26a651f07",
+      "claim_id": "C58",
+      "claim": "Maternally-deposited Cas9 can persist through to gametocytes in the germline in individuals lacking a genomic source of Cas9, where it can facilitate successful drive conversion.",
+      "claim_type": "EXPLICIT",
+      "source": "We further found evidence that even in individuals lacking a genomic source of Cas9, maternally-deposited Cas9 can persist through to gametocytes in the germline, where it can then facilitate successful drive conversion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental observations from the split drive system.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:14:19.138184Z"
+    },
+    {
+      "id": "4f013803-a339-41cc-b3e7-6cce962dda08",
+      "content_id": "257bc81b-4cf0-432e-a231-54c26a651f07",
+      "claim_id": "C59",
+      "claim": "Fifteen out of sixteen mosaic yellow females that inherited a drive allele but not the Cas9 allele showed an average drive conversion efficiency of 54%.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite lacking a Cas9 gene, fifteen out of sixteen of these flies showed an average drive conversion efficiency of 54%, with a single fly showing no drive conversion (Supplementary file 2-Datasets S4).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data presented in the supplementary datasets.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:14:19.138184Z"
+    },
+    {
+      "id": "4726847e-19d6-436c-95bb-8d5e5a34bdc4",
+      "content_id": "257bc81b-4cf0-432e-a231-54c26a651f07",
+      "claim_id": "C60",
+      "claim": "Nine out of eleven females that were fully yellow showed no detectable drive conversion.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, nine out of eleven females from the same cross that were fully yellow, rather than mosaic, and two wild-type females showed no detectable drive conversion, while two fully yellow females showed successful drive conversion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental observations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:14:19.138184Z"
+    },
+    {
+      "id": "198bbef0-c16a-44c6-b1b9-c7be77ccd5ea",
+      "content_id": "257bc81b-4cf0-432e-a231-54c26a651f07",
+      "claim_id": "C61",
+      "claim": "In fully yellow females, r1 resistance alleles that preserve the function of the target gene had presumably formed at the embryo stage.",
+      "claim_type": "EXPLICIT",
+      "source": "In the wild-type females, 'r1' resistance alleles that preserve the function of the target gene had presumably formed at the embryo stage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an inference from the observation of fully yellow phenotype in females.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:14:19.138184Z"
+    },
+    {
+      "id": "3fba29d7-8ae6-4f3c-b298-2fdb8a403a60",
+      "content_id": "257bc81b-4cf0-432e-a231-54c26a651f07",
+      "claim_id": "C62",
+      "claim": "When Cas9 and gRNA are maternally-deposited, they can fail to cleave the target site in the early embryo and induce end-joining repair, while nonetheless showing significant cleavage activity in later stages when homology-directed repair is possible.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, it appears that when Cas9 and gRNA are maternally-deposited, they can fail to cleave the target site in the early embryo and induce end-joining repair, while nonetheless showing significant cleavage activity in later stages when homology-directed repair is possible.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an inference from the experimental observations of mosaic yellow phenotype and drive conversion.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:14:19.138184Z"
+    },
+    {
+      "id": "d3c43067-f8b7-4303-8a96-c3ff06106a5a",
+      "content_id": "257bc81b-4cf0-432e-a231-54c26a651f07",
+      "claim_id": "C63",
+      "claim": "Maternally-deposited Cas9 did not persist to embryos of the subsequent generation, as indicated by the lack of yellow phenotype in female progeny.",
+      "claim_type": "EXPLICIT",
+      "source": "Such Cas9 did not persist to embryos of the subsequent generation, as indicated by the lack of yellow phenotype in female progeny.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental observations of phenotypes in subsequent generations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:14:19.138184Z"
+    },
+    {
+      "id": "fc5e7d7c-df35-4e36-9320-c1a12e291ec1",
+      "content_id": "257bc81b-4cf0-432e-a231-54c26a651f07",
+      "claim_id": "C64",
+      "claim": "Maternally-deposited gRNA was not necessary to achieve drive conversion in conjunction with maternally-deposited Cas9 when a genomic source of gRNA is provided.",
+      "claim_type": "EXPLICIT",
+      "source": "We also found that maternally-deposited gRNA was not necessary to achieve drive conversion in conjunction with maternally-deposited Cas9 when a genomic source of gRNA is provided.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental observations from the split drive system.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:14:19.138184Z"
+    },
+    {
+      "id": "915a268c-3fb3-4078-a185-0bd458a13808",
+      "content_id": "257bc81b-4cf0-432e-a231-54c26a651f07",
+      "claim_id": "C65",
+      "claim": "The progeny of drive-heterozygous females receiving a paternal drive allele without genomic Cas9 but receiving maternally-deposited Cas9 showed 38% germline drive conversion efficiency.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, we found that the progeny of drive-heterozygous females receiving a paternal drive allele without genomic Cas9 (but receiving maternally-deposited Cas9 from a mother with a single copy of Cas9) showed 38% germline drive conversion efficiency (Supplementary file 2-Datasets S4).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data presented in the supplementary datasets.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:14:19.138184Z"
+    },
+    {
+      "id": "ec6d34f2-5723-4b9e-a08f-7131e1ccb8cb",
+      "content_id": "257bc81b-4cf0-432e-a231-54c26a651f07",
+      "claim_id": "C66",
+      "claim": "An additional 12% of wild-type alleles were converted to r2 resistance alleles in progeny receiving a paternal drive allele and maternally-deposited Cas9.",
+      "claim_type": "EXPLICIT",
+      "source": "An additional 12% of wild-type alleles were converted to r2 resistance alleles, and the remainder most likely remained wild-type.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:14:19.138184Z"
+    },
+    {
+      "id": "203f7b7e-18c5-4647-96ef-2bc16df5d341",
+      "content_id": "257bc81b-4cf0-432e-a231-54c26a651f07",
+      "claim_id": "C67",
+      "claim": "The drive conversion rates in progeny receiving only maternally-deposited Cas9 were lower than those of the full split drive, likely because of reduced Cas9 and gRNA activity.",
+      "claim_type": "EXPLICIT",
+      "source": "These rates were lower than those of the full split drive, likely because of reduced Cas9 and gRNA activity due to the fact that only maternally-deposited Cas9 could be utilized.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an inference from the experimental data comparing different conditions.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:14:19.138184Z"
+    },
+    {
+      "id": "05c2527c-6248-439f-b1e5-263a7dcfe968",
+      "content_id": "257bc81b-4cf0-432e-a231-54c26a651f07",
+      "claim_id": "C68",
+      "claim": "In the absence of early embryo resistance alleles, germline drive rates in an individual may be affected by the level of maternally-deposited Cas9 and gRNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, our results suggest that in the absence of early embryo resistance alleles, germline drive rates in an individual may be affected by the level of maternally-deposited Cas9 and gRNAs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a conclusion drawn from the experimental results.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:14:19.138184Z"
+    },
+    {
+      "id": "59f395db-5531-4c2b-9f7a-ab7cbd7dcf50",
+      "content_id": "257bc81b-4cf0-432e-a231-54c26a651f07",
+      "claim_id": "C69",
+      "claim": "Individuals inheriting a drive allele from their mother will receive maternally-deposited Cas9, which could increase the level of cleavage during the window for homology-directed repair, thereby increasing the rate of drive conversion.",
+      "claim_type": "EXPLICIT",
+      "source": "Individuals inheriting a drive allele from their mother, as opposed to their father, will also receive maternally-deposited Cas9, which could increase the level of cleavage during the window for homology-directed repair, thereby increasing the rate of drive conversion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a speculative inference from the experimental findings.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:14:19.138184Z"
+    },
+    {
+      "id": "3ac85ac8-c443-44bd-8c15-7879228afbdb",
+      "content_id": "257bc81b-4cf0-432e-a231-54c26a651f07",
+      "claim_id": "C70",
+      "claim": "Cleavage by maternally-deposited Cas9 prior to the homology-directed repair stage in pre-gonial germline cells should usually form additional resistance alleles compared to individuals that have no such persistent Cas9.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, cleavage by the maternally-deposited Cas9 prior to this stage in pre-gonial germline cells, in addition to the early embryo, should usually form additional resistance alleles compared to individuals that have no such persistent Cas9.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a speculative inference from the experimental findings.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:14:19.138184Z"
+    },
+    {
+      "id": "3f86bec4-da26-4a2a-8397-1ff425819a84",
+      "content_id": "257bc81b-4cf0-432e-a231-54c26a651f07",
+      "claim_id": "C71",
+      "claim": "CRISPR homing gene drives with synthetic target sites such as EGFP show highly similar behavior to standard drives.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results demonstrate that CRISPR homing gene drives with synthetic target sites such as EGFP will show highly similar behavior to standard drives and can thus be used for most testing in lieu of these drives.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a conclusion drawn from the experimental results presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:14:19.138184Z"
+    },
+    {
+      "id": "e8081561-2027-4f7b-9831-39d899101ce4",
+      "content_id": "257bc81b-4cf0-432e-a231-54c26a651f07",
+      "claim_id": "C72",
+      "claim": "Synthetic target site drives can be used for most testing in lieu of standard drives.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results demonstrate that CRISPR homing gene drives with synthetic target sites such as EGFP will show highly similar behavior to standard drives and can thus be used for most testing in lieu of these drives.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a conclusion and recommendation based on the experimental results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:14:19.138184Z"
+    },
+    {
+      "id": "34ca3350-84bd-43c1-a973-b2c69e317bd2",
+      "content_id": "257bc81b-4cf0-432e-a231-54c26a651f07",
+      "claim_id": "C73",
+      "claim": "Split drives show similar performance to standard drives.",
+      "claim_type": "EXPLICIT",
+      "source": "Split drives also show similar performance, while allowing for the targeting of natural sequences in situations where the use of synthetic targets is difficult, such as for certain resistance reduction strategies and population suppression drives that require the targeting of wild-type genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a conclusion drawn from the experimental results presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:14:19.138184Z"
+    },
+    {
+      "id": "59658611-235a-4f5f-a6c6-c6ef3f1dda85",
+      "content_id": "257bc81b-4cf0-432e-a231-54c26a651f07",
+      "claim_id": "C74",
+      "claim": "Split drives allow for the targeting of natural sequences in situations where the use of synthetic targets is difficult.",
+      "claim_type": "EXPLICIT",
+      "source": "Split drives also show similar performance, while allowing for the targeting of natural sequences in situations where the use of synthetic targets is difficult, such as for certain resistance reduction strategies and population suppression drives that require the targeting of wild-type genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a statement about the advantages of split drives based on their design.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:14:19.138184Z"
+    },
+    {
+      "id": "f36f8dbd-83d6-437f-9476-e5ca9b5187d1",
+      "content_id": "257bc81b-4cf0-432e-a231-54c26a651f07",
+      "claim_id": "C75",
+      "claim": "Gene drive research should consistently adopt molecular safeguarding strategies in the development and testing of new drives.",
+      "claim_type": "EXPLICIT",
+      "source": "We therefore suggest that gene drive research should consistently adopt these molecular safeguarding strategies in the development and testing of new drives.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a recommendation based on the experimental results.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:14:19.138184Z"
+    },
+    {
+      "id": "0280abc3-8a4b-496c-98e1-19de2f569589",
+      "content_id": "257bc81b-4cf0-432e-a231-54c26a651f07",
+      "claim_id": "C76",
+      "claim": "Molecular safeguarding strategies will be particularly important for large-scale cage experiments aimed at gaining a better understanding of the expected population dynamics of candidate drives.",
+      "claim_type": "EXPLICIT",
+      "source": "This will be particularly important for large-scale cage experiments aimed at gaining a better understanding of the expected population dynamics of candidate drives, which will be integral for any informed discussion about their feasibility and risks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a recommendation about the importance of safeguarding strategies for future experiments.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:14:19.138184Z"
+    },
+    {
+      "id": "53d5e293-9510-4456-bc8f-495a4bc93360",
+      "content_id": "257bc81b-4cf0-432e-a231-54c26a651f07",
+      "claim_id": "C77",
+      "claim": "The synthetic target site drives used a slightly recoded 3xP3 promoter (3xP3v2) to drive the dsRed marker.",
+      "claim_type": "EXPLICIT",
+      "source": "All of our synthetic target site drives used a slightly recoded 3xP3 promoter (3xP3v2) to drive the dsRed marker and also used a P10 3'UTR.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the design of the synthetic target site drives.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:14:19.138184Z"
+    },
+    {
+      "id": "e4b2c675-1ba1-4d8a-bb42-41744fc28a70",
+      "content_id": "257bc81b-4cf0-432e-a231-54c26a651f07",
+      "claim_id": "C78",
+      "claim": "The recoded 3xP3 promoter was used to reduce potential misalignment with the 3xP3 promoter and SV40 3'UTR in the homology arms.",
+      "claim_type": "EXPLICIT",
+      "source": "This was to reduce potential misalignment with the 3xP3 promoter and SV40 3'UTR in the homology arms (see Figure 1a), which we found to result in poor drive efficiency in initial tests of drive constructs that used the same 3xP3 promoter and SV40 3'UTR for the EGFP and dsRed markers.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim explains the rationale for the design choice based on initial test results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:14:19.138184Z"
+    },
+    {
+      "id": "0d87e503-6bf9-4539-b6fc-efec686faa6d",
+      "content_id": "257bc81b-4cf0-432e-a231-54c26a651f07",
+      "claim_id": "C79",
+      "claim": "Initial tests of drive constructs that used the same 3xP3 promoter and SV40 3'UTR for the EGFP and dsRed markers resulted in poor drive efficiency.",
+      "claim_type": "EXPLICIT",
+      "source": "This was to reduce potential misalignment with the 3xP3 promoter and SV40 3'UTR in the homology arms (see Figure 1a), which we found to result in poor drive efficiency in initial tests of drive constructs that used the same 3xP3 promoter and SV40 3'UTR for the EGFP and dsRed markers.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on experimental observations from initial tests.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:14:19.138184Z"
+    },
+    {
+      "id": "ec6caa62-6374-4f9f-889e-ed866c424cb1",
+      "content_id": "257bc81b-4cf0-432e-a231-54c26a651f07",
+      "claim_id": "C80",
+      "claim": "Mosaicism for EGFP was observed in the eyes of heterozygotes for the drive and the synthetic target site.",
+      "claim_type": "EXPLICIT",
+      "source": "In some cases, we observed mosaicism for EGFP in the eyes of heterozygotes for the drive and the synthetic target site.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on experimental observations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:14:19.138184Z"
+    },
+    {
+      "id": "211ed94f-2766-4c63-b1da-6cccfb2f4325",
+      "content_id": "257bc81b-4cf0-432e-a231-54c26a651f07",
+      "claim_id": "C81",
+      "claim": "The germline nanos promoter may drive a low level of expression in somatic cells.",
+      "claim_type": "EXPLICIT",
+      "source": "This indicates that the germline nanos promoter may still drive a low level of expression in somatic cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an inference from the observation of mosaicism in the eyes.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:14:19.138184Z"
+    },
+    {
+      "id": "a60272b2-15d3-4128-8d70-60829dd9bfa4",
+      "content_id": "257bc81b-4cf0-432e-a231-54c26a651f07",
+      "claim_id": "C82",
+      "claim": "No mosaicism was observed in the body of the split drive flies.",
+      "claim_type": "EXPLICIT",
+      "source": "However, since no mosaicism was observed in the body of the split drive flies, this mosaicism may be due to proximity of the nanos promoter to the nearby 3xP3 promoter that drives expression in the eyes (the promoters were only eight nucleotides apart in the synthetic target site flies but 68 nucleotides apart in the split Cas9 construct).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on experimental observations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:14:19.138184Z"
+    },
+    {
+      "id": "48e58595-c23d-4ef9-b167-7bfdbd85f554",
+      "content_id": "257bc81b-4cf0-432e-a231-54c26a651f07",
+      "claim_id": "C83",
+      "claim": "The mosaicism in synthetic target site flies may be due to proximity of the nanos promoter to the nearby 3xP3 promoter that drives expression in the eyes.",
+      "claim_type": "EXPLICIT",
+      "source": "However, since no mosaicism was observed in the body of the split drive flies, this mosaicism may be due to proximity of the nanos promoter to the nearby 3xP3 promoter that drives expression in the eyes (the promoters were only eight nucleotides apart in the synthetic target site flies but 68 nucleotides apart in the split Cas9 construct).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a speculative explanation for the observed mosaicism based on promoter proximity.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:14:19.138184Z"
+    },
+    {
+      "id": "60898327-e196-4657-b02f-642b7b28b994",
+      "content_id": "257bc81b-4cf0-432e-a231-54c26a651f07",
+      "claim_id": "C84",
+      "claim": "The nanos and 3xP3 promoters were only eight nucleotides apart in the synthetic target site flies.",
+      "claim_type": "EXPLICIT",
+      "source": "However, since no mosaicism was observed in the body of the split drive flies, this mosaicism may be due to proximity of the nanos promoter to the nearby 3xP3 promoter that drives expression in the eyes (the promoters were only eight nucleotides apart in the synthetic target site flies but 68 nucleotides apart in the split Cas9 construct).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a factual statement about the design of the synthetic target site flies.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:14:19.138184Z"
+    },
+    {
+      "id": "1abd979e-e63b-431f-803f-d627d46f8730",
+      "content_id": "257bc81b-4cf0-432e-a231-54c26a651f07",
+      "claim_id": "C85",
+      "claim": "The nanos and 3xP3 promoters were 68 nucleotides apart in the split Cas9 construct.",
+      "claim_type": "EXPLICIT",
+      "source": "However, since no mosaicism was observed in the body of the split drive flies, this mosaicism may be due to proximity of the nanos promoter to the nearby 3xP3 promoter that drives expression in the eyes (the promoters were only eight nucleotides apart in the synthetic target site flies but 68 nucleotides apart in the split Cas9 construct).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a factual statement about the design of the split Cas9 construct.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:14:19.138184Z"
+    },
+    {
+      "id": "b5a9373b-a05b-4e8e-a4c8-4270ef821301",
+      "content_id": "257bc81b-4cf0-432e-a231-54c26a651f07",
+      "claim_id": "C86",
+      "claim": "All experiments involving live gene drive flies were carried out using Arthropod Containment Level two protocols at the Sarkaria Arthropod Research Laboratory at Cornell University.",
+      "claim_type": "EXPLICIT",
+      "source": "All experiments involving live gene drive flies were carried out using Arthropod Containment Level two protocols at the Sarkaria Arthropod Research Laboratory at Cornell University, a quarantine facility constructed to comply with containment standards developed by USDA APHIS.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the safety protocols used in the experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:14:19.138184Z"
+    },
+    {
+      "id": "e5e89ab4-e3c0-48fd-9853-68b9f50f6980",
+      "content_id": "257bc81b-4cf0-432e-a231-54c26a651f07",
+      "claim_id": "C87",
+      "claim": "The Sarkaria Arthropod Research Laboratory at Cornell University is a quarantine facility constructed to comply with containment standards developed by USDA APHIS.",
+      "claim_type": "EXPLICIT",
+      "source": "All experiments involving live gene drive flies were carried out using Arthropod Containment Level two protocols at the Sarkaria Arthropod Research Laboratory at Cornell University, a quarantine facility constructed to comply with containment standards developed by USDA APHIS.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a factual statement about the facility used for experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:14:19.138184Z"
+    },
+    {
+      "id": "ad0c6311-ead4-4796-bbea-256c2a810e75",
+      "content_id": "257bc81b-4cf0-432e-a231-54c26a651f07",
+      "claim_id": "C88",
+      "claim": "Additional safety protocols regarding insect handling approved by the Institutional Biosafety Committee at Cornell University were strictly obeyed throughout the study.",
+      "claim_type": "EXPLICIT",
+      "source": "Additional safety protocols regarding insect handling approved by the Institutional Biosafety Committee at Cornell University were strictly obeyed throughout the study, further minimizing the risk of accidental release of transgenic flies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the safety protocols used in the experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:14:19.138184Z"
+    },
+    {
+      "id": "f2c95a3a-42fd-4e41-ad6b-01b8f3e4903b",
+      "content_id": "257bc81b-4cf0-432e-a231-54c26a651f07",
+      "claim_id": "C89",
+      "claim": "The synthetic target site drive constructs contain Cas9 with the germline nanos promoter and 3'UTR.",
+      "claim_type": "EXPLICIT",
+      "source": "The synthetic target site drive constructs contain Cas9 with the germline nanos promoter and 3'UTR, a dsRed marker with a slightly recoded (*) 3xP3 promoter and P10 3'UTR, and a gRNA driven by the U6:3 promoter that targets the synthetic EGFP gene.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim describes the components of the synthetic target site drive constructs as shown in Figure 1a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:14:19.138184Z"
+    },
+    {
+      "id": "34036a8e-05b6-45cd-b0d2-610ce87730c1",
+      "content_id": "257bc81b-4cf0-432e-a231-54c26a651f07",
+      "claim_id": "C90",
+      "claim": "The synthetic target site drive constructs contain a dsRed marker with a slightly recoded 3xP3 promoter and P10 3'UTR.",
+      "claim_type": "EXPLICIT",
+      "source": "The synthetic target site drive constructs contain Cas9 with the germline nanos promoter and 3'UTR, a dsRed marker with a slightly recoded (*) 3xP3 promoter and P10 3'UTR, and a gRNA driven by the U6:3 promoter that targets the synthetic EGFP gene.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim describes the components of the synthetic target site drive constructs as shown in Figure 1a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:14:19.138184Z"
+    },
+    {
+      "id": "d7446261-f876-4dc5-978c-49d31486a8c6",
+      "content_id": "257bc81b-4cf0-432e-a231-54c26a651f07",
+      "claim_id": "C91",
+      "claim": "The synthetic target site drive constructs contain a gRNA driven by the U6:3 promoter that targets the synthetic EGFP gene.",
+      "claim_type": "EXPLICIT",
+      "source": "The synthetic target site drive constructs contain Cas9 with the germline nanos promoter and 3'UTR, a dsRed marker with a slightly recoded (*) 3xP3 promoter and P10 3'UTR, and a gRNA driven by the U6:3 promoter that targets the synthetic EGFP gene.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim describes the components of the synthetic target site drive constructs as shown in Figure 1a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:14:19.138184Z"
+    },
+    {
+      "id": "650d23b9-e970-47db-8ee5-6c8c48ee15ec",
+      "content_id": "257bc81b-4cf0-432e-a231-54c26a651f07",
+      "claim_id": "C92",
+      "claim": "The split drive contains a dsRed marker gene driven by a 3xP3 promoter together with a SV40 3'UTR.",
+      "claim_type": "EXPLICIT",
+      "source": "The split drive contains a dsRed marker gene driven by a 3xP3 promoter together with a SV40 3'UTR, a gRNA expressed by the U6:3 promoter that targets yellow, and two homology arms for yellow.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim describes the components of the split drive as shown in Figure 1b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:14:19.138184Z"
+    },
+    {
+      "id": "1cdd9b43-978a-4fe3-aca2-a3bd35f58653",
+      "content_id": "257bc81b-4cf0-432e-a231-54c26a651f07",
+      "claim_id": "C93",
+      "claim": "The split drive contains a gRNA expressed by the U6:3 promoter that targets yellow.",
+      "claim_type": "EXPLICIT",
+      "source": "The split drive contains a dsRed marker gene driven by a 3xP3 promoter together with a SV40 3'UTR, a gRNA expressed by the U6:3 promoter that targets yellow, and two homology arms for yellow.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim describes the components of the split drive as shown in Figure 1b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:14:19.138184Z"
+    },
+    {
+      "id": "0732778a-eeea-4e28-ad66-24780977fdfe",
+      "content_id": "257bc81b-4cf0-432e-a231-54c26a651f07",
+      "claim_id": "C94",
+      "claim": "The unlinked supporting element contains Cas9 driven by the nanos promoter with a nanos 3'UTR.",
+      "claim_type": "EXPLICIT",
+      "source": "The unlinked supporting element contains Cas9 driven by the nanos promoter with a nanos 3'UTR, and an EGFP marker gene driven by a 3xP3 promoter together with a SV40 3'UTR.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim describes the components of the unlinked supporting element as shown in Figure 1b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:14:19.138184Z"
+    },
+    {
+      "id": "a56dc770-bf7e-497b-bd2a-8a7f23e2e5af",
+      "content_id": "257bc81b-4cf0-432e-a231-54c26a651f07",
+      "claim_id": "C95",
+      "claim": "The unlinked supporting element contains an EGFP marker gene driven by a 3xP3 promoter together with a SV40 3'UTR.",
+      "claim_type": "EXPLICIT",
+      "source": "The unlinked supporting element contains Cas9 driven by the nanos promoter with a nanos 3'UTR, and an EGFP marker gene driven by a 3xP3 promoter together with a SV40 3'UTR.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim describes the components of the unlinked supporting element as shown in Figure 1b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:14:19.138184Z"
+    },
+    {
+      "id": "41f612f5-5a1a-4cfa-872e-3bb78ffc89ba",
+      "content_id": "257bc81b-4cf0-432e-a231-54c26a651f07",
+      "claim_id": "C96",
+      "claim": "The EGFP site B drive showed male drive conversion efficiency of 32 \u00b1 3%.",
+      "claim_type": "EXPLICIT",
+      "source": "EGFP site B\t32 \u00b1 3%\t52 \u00b1 3%\t88 \u00b1 1%",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "The claim is supported by data presented in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:14:19.138184Z"
+    },
+    {
+      "id": "cb39a954-1d56-4ddc-9782-70a5d1b996a0",
+      "content_id": "257bc81b-4cf0-432e-a231-54c26a651f07",
+      "claim_id": "C97",
+      "claim": "The EGFP site B drive showed female drive conversion efficiency of 52 \u00b1 3%.",
+      "claim_type": "EXPLICIT",
+      "source": "EGFP site B\t32 \u00b1 3%\t52 \u00b1 3%\t88 \u00b1 1%",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "The claim is supported by data presented in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:14:19.138184Z"
+    },
+    {
+      "id": "5c69d526-e4b4-470d-9125-e9ade9a021fc",
+      "content_id": "257bc81b-4cf0-432e-a231-54c26a651f07",
+      "claim_id": "C98",
+      "claim": "The EGFP site B drive showed embryo r2 resistance rate of 88 \u00b1 1%.",
+      "claim_type": "EXPLICIT",
+      "source": "EGFP site B\t32 \u00b1 3%\t52 \u00b1 3%\t88 \u00b1 1%",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "The claim is supported by data presented in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:14:19.138184Z"
+    },
+    {
+      "id": "ca397404-df37-4c43-9505-208a8bee65ea",
+      "content_id": "257bc81b-4cf0-432e-a231-54c26a651f07",
+      "claim_id": "C99",
+      "claim": "The EGFP site E drive showed male drive conversion efficiency of 46 \u00b1 4%.",
+      "claim_type": "EXPLICIT",
+      "source": "EGFP site E\t46 \u00b1 4%\t54 \u00b1 5%\t91 \u00b1 2%",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "The claim is supported by data presented in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:14:19.138184Z"
+    },
+    {
+      "id": "a3c1dbe8-2730-437e-a5e9-59a9bc3f4186",
+      "content_id": "257bc81b-4cf0-432e-a231-54c26a651f07",
+      "claim_id": "C100",
+      "claim": "The EGFP site E drive showed female drive conversion efficiency of 54 \u00b1 5%.",
+      "claim_type": "EXPLICIT",
+      "source": "EGFP site E\t46 \u00b1 4%\t54 \u00b1 5%\t91 \u00b1 2%",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "The claim is supported by data presented in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:14:19.138184Z"
+    },
+    {
+      "id": "c6d5d8d5-dc6a-4513-8f7d-99778bc010be",
+      "content_id": "257bc81b-4cf0-432e-a231-54c26a651f07",
+      "claim_id": "C101",
+      "claim": "The EGFP site E drive showed embryo r2 resistance rate of 91 \u00b1 2%.",
+      "claim_type": "EXPLICIT",
+      "source": "EGFP site E\t46 \u00b1 4%\t54 \u00b1 5%\t91 \u00b1 2%",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "The claim is supported by data presented in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:14:19.138184Z"
+    },
+    {
+      "id": "15d6aee0-5a12-4d5c-bc4a-d36c16f242d0",
+      "content_id": "257bc81b-4cf0-432e-a231-54c26a651f07",
+      "claim_id": "C102",
+      "claim": "The EGFP site Y drive showed female drive conversion efficiency of 53 \u00b1 3%.",
+      "claim_type": "EXPLICIT",
+      "source": "EGFP site Y\tN/A\t53 \u00b1 3%\t80 \u00b1 2%",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "The claim is supported by data presented in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:14:19.138184Z"
+    },
+    {
+      "id": "0b1164f4-58eb-4b4f-9056-b1efb029d955",
+      "content_id": "257bc81b-4cf0-432e-a231-54c26a651f07",
+      "claim_id": "C103",
+      "claim": "The EGFP site Y drive showed embryo r2 resistance rate of 80 \u00b1 2%.",
+      "claim_type": "EXPLICIT",
+      "source": "EGFP site Y\tN/A\t53 \u00b1 3%\t80 \u00b1 2%",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "The claim is supported by data presented in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:14:19.138184Z"
+    },
+    {
+      "id": "c4319ad7-d144-42e9-9adc-1afa0de0a54a",
+      "content_id": "257bc81b-4cf0-432e-a231-54c26a651f07",
+      "claim_id": "C104",
+      "claim": "The cinnabar drive showed male drive conversion efficiency of 39 \u00b1 3%.",
+      "claim_type": "EXPLICIT",
+      "source": "cinnabar\t39 \u00b1 3%\t54 \u00b1 4%\t100 \u00b1 0%",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "The claim is supported by data presented in Table 1 from previous studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:14:19.138184Z"
+    },
+    {
+      "id": "1910f013-b155-4a9f-97a2-16b8d866c9c6",
+      "content_id": "257bc81b-4cf0-432e-a231-54c26a651f07",
+      "claim_id": "C105",
+      "claim": "The cinnabar drive showed female drive conversion efficiency of 54 \u00b1 4%.",
+      "claim_type": "EXPLICIT",
+      "source": "cinnabar\t39 \u00b1 3%\t54 \u00b1 4%\t100 \u00b1 0%",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "The claim is supported by data presented in Table 1 from previous studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:14:19.138184Z"
+    },
+    {
+      "id": "b26a91aa-a41f-4af9-a866-2ee788b47d5b",
+      "content_id": "257bc81b-4cf0-432e-a231-54c26a651f07",
+      "claim_id": "C106",
+      "claim": "The cinnabar drive showed embryo r2 resistance rate of 100 \u00b1 0%.",
+      "claim_type": "EXPLICIT",
+      "source": "cinnabar\t39 \u00b1 3%\t54 \u00b1 4%\t100 \u00b1 0%",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "The claim is supported by data presented in Table 1 from previous studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:14:19.138184Z"
+    },
+    {
+      "id": "ea4ffc33-1e48-45da-adb6-e0267d2b2318",
+      "content_id": "257bc81b-4cf0-432e-a231-54c26a651f07",
+      "claim_id": "C107",
+      "claim": "The white drive showed female drive conversion efficiency of 59 \u00b1 2%.",
+      "claim_type": "EXPLICIT",
+      "source": "white\tN/A\t59 \u00b1 2%\t77 \u00b1 2%",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "The claim is supported by data presented in Table 1 from previous studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:14:19.138184Z"
+    },
+    {
+      "id": "1a892454-2678-4524-87be-12584f7d2436",
+      "content_id": "257bc81b-4cf0-432e-a231-54c26a651f07",
+      "claim_id": "C108",
+      "claim": "The white drive showed embryo r2 resistance rate of 77 \u00b1 2%.",
+      "claim_type": "EXPLICIT",
+      "source": "white\tN/A\t59 \u00b1 2%\t77 \u00b1 2%",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "The claim is supported by data presented in Table 1 from previous studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:14:19.138184Z"
+    },
+    {
+      "id": "30f9f464-9470-4c2b-8c4d-ccb0e1986ec1",
+      "content_id": "257bc81b-4cf0-432e-a231-54c26a651f07",
+      "claim_id": "C109",
+      "claim": "The split-yellow drive showed female drive conversion efficiency of 74 \u00b1 2%.",
+      "claim_type": "EXPLICIT",
+      "source": "Split-yellow\tN/A\t74 \u00b1 2%\t74 \u00b1 2%",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "The claim is supported by data presented in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:14:19.138184Z"
+    },
+    {
+      "id": "f9023efe-c459-4ad7-a6a0-388392f08adc",
+      "content_id": "257bc81b-4cf0-432e-a231-54c26a651f07",
+      "claim_id": "C110",
+      "claim": "The split-yellow drive showed embryo r2 resistance rate of 74 \u00b1 2%.",
+      "claim_type": "EXPLICIT",
+      "source": "Split-yellow\tN/A\t74 \u00b1 2%\t74 \u00b1 2%",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "The claim is supported by data presented in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:14:19.138184Z"
+    },
+    {
+      "id": "125a648f-207b-4498-8e84-851e2cad3de6",
+      "content_id": "257bc81b-4cf0-432e-a231-54c26a651f07",
+      "claim_id": "C111",
+      "claim": "The yellow drive showed female drive conversion efficiency of 63 \u00b1 3%.",
+      "claim_type": "EXPLICIT",
+      "source": "yellow\tN/A\t63 \u00b1 3%\t20 \u00b1 2%",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "The claim is supported by data presented in Table 1 from previous studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:14:19.138184Z"
+    },
+    {
+      "id": "213c008e-fa97-4577-a16b-2bdf2cc0ba7f",
+      "content_id": "257bc81b-4cf0-432e-a231-54c26a651f07",
+      "claim_id": "C112",
+      "claim": "The yellow drive showed embryo r2 resistance rate of 20 \u00b1 2%.",
+      "claim_type": "EXPLICIT",
+      "source": "yellow\tN/A\t63 \u00b1 3%\t20 \u00b1 2%",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "The claim is supported by data presented in Table 1 from previous studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:14:19.138184Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "a4ed9233-22e8-4659-9da3-594feb27c466",
+      "content_id": "257bc81b-4cf0-432e-a231-54c26a651f07",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Synthetic target site drives targeting EGFP at three genomic locations showed drive conversion efficiencies of 32-54% and embryo resistance rates of 80-91%, which are similar to standard drives targeting natural sites. This demonstrates that synthetic target site drives can serve as effective molecular safeguards while maintaining comparable performance to standard drives.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C39 and C96-C103 provide comprehensive experimental data showing that synthetic target site drives perform comparably to standard drives. The data includes conversion efficiencies across multiple genomic locations with appropriate statistical comparisons to prior work (C35, C38, C39). The experimental design is sound with proper controls and phenotypic scoring methods described.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:14:19.138184Z"
+    },
+    {
+      "id": "849a3891-d59b-4ce8-9fce-ebfc9558457c",
+      "content_id": "257bc81b-4cf0-432e-a231-54c26a651f07",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "A split drive system where Cas9 and gRNA are separated at unlinked loci showed 74% drive conversion efficiency, significantly higher than a comparable standard drive (62%, p<0.0001). The split drive also showed 74% embryo resistance compared to 20% for the standard drive (p<0.001), demonstrating that split drives perform similarly or better than standard drives while providing molecular safeguarding.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41-C46 and C48-C110 provide experimental evidence with appropriate statistical testing showing the split drive performs comparably or better than standard drives. The experimental design properly controls for genomic location and promoter elements. However, the higher embryo resistance rate (C48) suggests some differences in mechanism that are appropriately discussed in claims C49-C50.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:14:19.138184Z"
+    },
+    {
+      "id": "9783b002-cd30-4630-a5ed-d502076d29d7",
+      "content_id": "257bc81b-4cf0-432e-a231-54c26a651f07",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Using the split drive system, the authors found that both Cas9 and gRNA must be maternally deposited for resistance alleles to form in the early embryo. Additionally, maternally-deposited Cas9 alone can persist to gametocytes and power germline drive conversion (54% efficiency in 15/16 mosaic yellow females) in individuals lacking a genomic source of Cas9, though this Cas9 does not persist to the next generation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30, C44, C58-C63 provide experimental evidence from genetic crosses showing Mendelian inheritance when Cas9 and gRNA are not co-inherited maternally (C43-C44), and drive conversion in mosaic females lacking genomic Cas9 (C59). The phenotypic observations (yellow mosaicism, progeny phenotypes) support the mechanistic conclusions about maternal deposition requirements and Cas9 persistence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:14:19.138184Z"
+    },
+    {
+      "id": "09fc447a-7281-4408-bd52-65882d3f4954",
+      "content_id": "257bc81b-4cf0-432e-a231-54c26a651f07",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Maternally-deposited gRNA is not necessary for drive conversion when a genomic source of gRNA is provided, as progeny receiving paternal drive alleles with maternally-deposited Cas9 showed 38% germline conversion efficiency. The results suggest that germline drive rates may be affected by the level of maternally-deposited Cas9 and gRNAs, with potential trade-offs between increased drive conversion and increased resistance allele formation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C64-C70 provide experimental data (C65-C66) showing drive conversion with only maternally-deposited Cas9, though at reduced efficiency compared to the full split drive (C67). The mechanistic interpretations (C68-C70) are appropriately presented as inferences from the data, acknowledging both potential benefits and drawbacks of maternal deposition.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:14:19.138184Z"
+    },
+    {
+      "id": "85be75e7-e6aa-4fcd-88b9-c0c79ce5eee2",
+      "content_id": "257bc81b-4cf0-432e-a231-54c26a651f07",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The higher drive conversion efficiency of the split drive compared to the standard drive implies that not all resistance alleles form prior to drive conversion. The authors propose that resistance alleles may form at multiple stages: in pre-gonial germline cells, in gametocytes as an alternative to drive conversion, or in late meiosis when homology-directed repair is unavailable.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C55-C57 present mechanistic interpretations of the observed higher conversion efficiency in split drives. While the inference that not all resistance forms pre-conversion is logical (C55), the specific timing proposals (C56-C57) are speculative and presented as possibilities rather than demonstrated facts. Additional experiments would be needed to definitively determine when resistance alleles form.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:14:19.138184Z"
+    },
+    {
+      "id": "060f7afb-fad7-4dbe-ab8e-66a305d98fb0",
+      "content_id": "257bc81b-4cf0-432e-a231-54c26a651f07",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Location-specific variation in Cas9 expression levels likely explains differences in embryo resistance rates between drives at different genomic positions. The split drive's higher embryo resistance (74% vs 20%) is attributed to higher Cas9 expression at its new location (277 nucleotides from synthetic target site B with 88% embryo resistance) and Cas9 being the main limiting factor for cleavage rate.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C40, C47, C49-C51 provide speculative explanations for observed differences in drive performance. While the proximity data (C51) and correlative evidence from site B (C49-C50) support the hypothesis, direct measurements of Cas9 expression levels at different genomic locations are not provided. The explanations are reasonable but remain inferential.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:14:19.138184Z"
+    },
+    {
+      "id": "23c6f2f0-9db2-47a9-b09e-247c4074cc57",
+      "content_id": "257bc81b-4cf0-432e-a231-54c26a651f07",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The authors conclude that synthetic target site drives and split drives show highly similar behavior to standard drives and can be used for most testing in lieu of standard drives. They recommend that gene drive research should consistently adopt these molecular safeguarding strategies, particularly for large-scale cage experiments.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C71-C76 present conclusions and recommendations that are well-supported by the experimental data showing comparable performance of safeguarded drives (Results 1-2). The recommendation for consistent adoption (C75-C76) is a reasonable policy suggestion based on the demonstrated efficacy of these safeguarding approaches, though it represents a normative rather than empirical claim.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:14:19.138184Z"
+    },
+    {
+      "id": "d2676587-d5a5-43ae-b78f-33d0d1576dca",
+      "content_id": "257bc81b-4cf0-432e-a231-54c26a651f07",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The finding that both Cas9 and gRNA must be maternally deposited for embryo resistance suggests that a split drive in a laboratory population should behave similarly to a standard drive. A hypothetical reverse split drive (Cas9 in driving element, gRNA in supporting element) would presumably have nearly identical behavior to a standard drive due to identical Cas9 copy number and genomic position.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52-C54 present logical inferences from the maternal deposition findings (C30, C44). The conclusion about split drive behavior in laboratory populations (C52) follows from the experimental evidence. The prediction about reverse split drives (C53-C54) is speculative but based on sound reasoning about genetic architecture and expression levels.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:14:19.138184Z"
+    },
+    {
+      "id": "906fc1ab-1261-41a1-aa5f-255ccc4173ab",
+      "content_id": "257bc81b-4cf0-432e-a231-54c26a651f07",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The synthetic target site drives used a recoded 3xP3v2 promoter for dsRed and P10 3'UTR to avoid misalignment with homology arms, as initial tests with identical promoters resulted in poor drive efficiency. The drive constructs contained Cas9 with nanos promoter, dsRed marker, and gRNA targeting EGFP. The split drive contained dsRed marker, gRNA targeting yellow, and an unlinked Cas9 element with EGFP marker.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C77-C79 and C89-C95 describe the molecular design of the drive constructs with appropriate rationale for design choices. The recoding strategy (C77-C78) is justified by initial test results showing poor efficiency with identical promoters (C79). The component descriptions match Figure 1 and represent standard molecular biology design principles.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:14:19.138184Z"
+    },
+    {
+      "id": "497232d8-ba61-4caa-a42e-580e5ce3baa2",
+      "content_id": "257bc81b-4cf0-432e-a231-54c26a651f07",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Mosaicism for EGFP was observed in the eyes of synthetic target site drive heterozygotes, suggesting the germline nanos promoter may drive low-level somatic expression. This mosaicism may be due to proximity of the nanos promoter to the 3xP3 promoter (8 nucleotides apart in synthetic target site flies vs 68 nucleotides in split Cas9 construct), as no body mosaicism was observed in split drive flies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C80-C85 report an observed phenomenon (eye mosaicism, C80) and propose an explanation based on promoter proximity (C83-C85). While the correlation between promoter spacing and mosaicism is suggestive, the explanation remains speculative without direct functional testing. The observation itself (C80) is supported, but the mechanistic interpretation (C81, C83) is uncertain.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:14:19.138184Z"
+    },
+    {
+      "id": "e8acb8ab-aee3-4f47-974f-6f357e9d671c",
+      "content_id": "257bc81b-4cf0-432e-a231-54c26a651f07",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "All experiments were conducted using Arthropod Containment Level 2 protocols at the Sarkaria Arthropod Research Laboratory at Cornell University, a USDA APHIS-compliant quarantine facility, with additional safety protocols approved by the Institutional Biosafety Committee.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C86-C88 describe the biosafety measures used in the study. These are factual statements about experimental protocols and facility compliance that are appropriately documented in the methods section.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:14:19.138184Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "03780c60-d4da-430f-b469-8136b2605161",
+      "result_id": "a4ed9233-22e8-4659-9da3-594feb27c466"
+    },
+    {
+      "claim_id": "0cce2f79-cd81-43b8-b353-b5588c643ed4",
+      "result_id": "a4ed9233-22e8-4659-9da3-594feb27c466"
+    },
+    {
+      "claim_id": "67c45eab-376c-40c8-ab08-c5019e47850e",
+      "result_id": "a4ed9233-22e8-4659-9da3-594feb27c466"
+    },
+    {
+      "claim_id": "950b7995-dbb4-495f-bee6-757ea9d227c9",
+      "result_id": "a4ed9233-22e8-4659-9da3-594feb27c466"
+    },
+    {
+      "claim_id": "476bd527-0383-4ad4-930e-90fd729fc23b",
+      "result_id": "a4ed9233-22e8-4659-9da3-594feb27c466"
+    },
+    {
+      "claim_id": "b3026847-3f2f-43e7-b4ed-27b2215577cf",
+      "result_id": "a4ed9233-22e8-4659-9da3-594feb27c466"
+    },
+    {
+      "claim_id": "345c2b15-d35f-4976-8d65-62ae6f09badc",
+      "result_id": "a4ed9233-22e8-4659-9da3-594feb27c466"
+    },
+    {
+      "claim_id": "d625a13a-d0e1-408c-ba56-8300f44345b1",
+      "result_id": "a4ed9233-22e8-4659-9da3-594feb27c466"
+    },
+    {
+      "claim_id": "5ddbb699-fdb3-4bd7-94de-21daa74ba869",
+      "result_id": "a4ed9233-22e8-4659-9da3-594feb27c466"
+    },
+    {
+      "claim_id": "41f612f5-5a1a-4cfa-872e-3bb78ffc89ba",
+      "result_id": "a4ed9233-22e8-4659-9da3-594feb27c466"
+    },
+    {
+      "claim_id": "cb39a954-1d56-4ddc-9782-70a5d1b996a0",
+      "result_id": "a4ed9233-22e8-4659-9da3-594feb27c466"
+    },
+    {
+      "claim_id": "5c69d526-e4b4-470d-9125-e9ade9a021fc",
+      "result_id": "a4ed9233-22e8-4659-9da3-594feb27c466"
+    },
+    {
+      "claim_id": "ca397404-df37-4c43-9505-208a8bee65ea",
+      "result_id": "a4ed9233-22e8-4659-9da3-594feb27c466"
+    },
+    {
+      "claim_id": "a3c1dbe8-2730-437e-a5e9-59a9bc3f4186",
+      "result_id": "a4ed9233-22e8-4659-9da3-594feb27c466"
+    },
+    {
+      "claim_id": "c6d5d8d5-dc6a-4513-8f7d-99778bc010be",
+      "result_id": "a4ed9233-22e8-4659-9da3-594feb27c466"
+    },
+    {
+      "claim_id": "15d6aee0-5a12-4d5c-bc4a-d36c16f242d0",
+      "result_id": "a4ed9233-22e8-4659-9da3-594feb27c466"
+    },
+    {
+      "claim_id": "0b1164f4-58eb-4b4f-9056-b1efb029d955",
+      "result_id": "a4ed9233-22e8-4659-9da3-594feb27c466"
+    },
+    {
+      "claim_id": "c6464c74-e8cb-4ad6-bc8f-bbad84859ec0",
+      "result_id": "849a3891-d59b-4ce8-9fce-ebfc9558457c"
+    },
+    {
+      "claim_id": "1801091c-2924-4d2c-b382-e134e874c0f2",
+      "result_id": "849a3891-d59b-4ce8-9fce-ebfc9558457c"
+    },
+    {
+      "claim_id": "1b0d3525-c5ff-46ae-8078-d974f8c59ca8",
+      "result_id": "849a3891-d59b-4ce8-9fce-ebfc9558457c"
+    },
+    {
+      "claim_id": "31a7dfb2-796c-4fd2-aa45-d3018c286e31",
+      "result_id": "849a3891-d59b-4ce8-9fce-ebfc9558457c"
+    },
+    {
+      "claim_id": "38ea5903-8f87-4ba4-a82c-5e35a476f506",
+      "result_id": "849a3891-d59b-4ce8-9fce-ebfc9558457c"
+    },
+    {
+      "claim_id": "d8029039-c568-4acd-83a8-b9f956035e08",
+      "result_id": "849a3891-d59b-4ce8-9fce-ebfc9558457c"
+    },
+    {
+      "claim_id": "f5bec670-2587-476e-87bf-a01c44053188",
+      "result_id": "849a3891-d59b-4ce8-9fce-ebfc9558457c"
+    },
+    {
+      "claim_id": "32b3391b-9684-4a07-81b7-a124ef0ce981",
+      "result_id": "849a3891-d59b-4ce8-9fce-ebfc9558457c"
+    },
+    {
+      "claim_id": "30f9f464-9470-4c2b-8c4d-ccb0e1986ec1",
+      "result_id": "849a3891-d59b-4ce8-9fce-ebfc9558457c"
+    },
+    {
+      "claim_id": "f9023efe-c459-4ad7-a6a0-388392f08adc",
+      "result_id": "849a3891-d59b-4ce8-9fce-ebfc9558457c"
+    },
+    {
+      "claim_id": "6f1b41a7-9b7a-48ad-bfef-d1672f6a0441",
+      "result_id": "9783b002-cd30-4630-a5ed-d502076d29d7"
+    },
+    {
+      "claim_id": "38ea5903-8f87-4ba4-a82c-5e35a476f506",
+      "result_id": "9783b002-cd30-4630-a5ed-d502076d29d7"
+    },
+    {
+      "claim_id": "88e2df72-3749-4aa5-a848-b0691b4d06a6",
+      "result_id": "9783b002-cd30-4630-a5ed-d502076d29d7"
+    },
+    {
+      "claim_id": "4f013803-a339-41cc-b3e7-6cce962dda08",
+      "result_id": "9783b002-cd30-4630-a5ed-d502076d29d7"
+    },
+    {
+      "claim_id": "4726847e-19d6-436c-95bb-8d5e5a34bdc4",
+      "result_id": "9783b002-cd30-4630-a5ed-d502076d29d7"
+    },
+    {
+      "claim_id": "198bbef0-c16a-44c6-b1b9-c7be77ccd5ea",
+      "result_id": "9783b002-cd30-4630-a5ed-d502076d29d7"
+    },
+    {
+      "claim_id": "3fba29d7-8ae6-4f3c-b298-2fdb8a403a60",
+      "result_id": "9783b002-cd30-4630-a5ed-d502076d29d7"
+    },
+    {
+      "claim_id": "d3c43067-f8b7-4303-8a96-c3ff06106a5a",
+      "result_id": "9783b002-cd30-4630-a5ed-d502076d29d7"
+    },
+    {
+      "claim_id": "fc5e7d7c-df35-4e36-9320-c1a12e291ec1",
+      "result_id": "09fc447a-7281-4408-bd52-65882d3f4954"
+    },
+    {
+      "claim_id": "915a268c-3fb3-4078-a185-0bd458a13808",
+      "result_id": "09fc447a-7281-4408-bd52-65882d3f4954"
+    },
+    {
+      "claim_id": "ec6d34f2-5723-4b9e-a08f-7131e1ccb8cb",
+      "result_id": "09fc447a-7281-4408-bd52-65882d3f4954"
+    },
+    {
+      "claim_id": "203f7b7e-18c5-4647-96ef-2bc16df5d341",
+      "result_id": "09fc447a-7281-4408-bd52-65882d3f4954"
+    },
+    {
+      "claim_id": "05c2527c-6248-439f-b1e5-263a7dcfe968",
+      "result_id": "09fc447a-7281-4408-bd52-65882d3f4954"
+    },
+    {
+      "claim_id": "59f395db-5531-4c2b-9f7a-ab7cbd7dcf50",
+      "result_id": "09fc447a-7281-4408-bd52-65882d3f4954"
+    },
+    {
+      "claim_id": "3ac85ac8-c443-44bd-8c15-7879228afbdb",
+      "result_id": "09fc447a-7281-4408-bd52-65882d3f4954"
+    },
+    {
+      "claim_id": "69ee39e4-03f9-4866-a2aa-2efa018d4f7e",
+      "result_id": "85be75e7-e6aa-4fcd-88b9-c0c79ce5eee2"
+    },
+    {
+      "claim_id": "f4282faa-317d-427f-b961-a14887e8d697",
+      "result_id": "85be75e7-e6aa-4fcd-88b9-c0c79ce5eee2"
+    },
+    {
+      "claim_id": "379bb6cd-76c4-4878-ae08-4d9128e78167",
+      "result_id": "85be75e7-e6aa-4fcd-88b9-c0c79ce5eee2"
+    },
+    {
+      "claim_id": "16fed7fa-79cb-4282-b0d7-20024ad0eb54",
+      "result_id": "060f7afb-fad7-4dbe-ab8e-66a305d98fb0"
+    },
+    {
+      "claim_id": "f7d9c6d4-a6fd-46b2-98f5-0700281599b3",
+      "result_id": "060f7afb-fad7-4dbe-ab8e-66a305d98fb0"
+    },
+    {
+      "claim_id": "12524f78-b156-4a20-82e1-228aa1126681",
+      "result_id": "060f7afb-fad7-4dbe-ab8e-66a305d98fb0"
+    },
+    {
+      "claim_id": "ae49e086-1cd3-4ddf-bac0-d039d41824dd",
+      "result_id": "060f7afb-fad7-4dbe-ab8e-66a305d98fb0"
+    },
+    {
+      "claim_id": "b4722c0e-8caa-45ce-b086-580592c55dbf",
+      "result_id": "060f7afb-fad7-4dbe-ab8e-66a305d98fb0"
+    },
+    {
+      "claim_id": "3f86bec4-da26-4a2a-8397-1ff425819a84",
+      "result_id": "23c6f2f0-9db2-47a9-b09e-247c4074cc57"
+    },
+    {
+      "claim_id": "e8081561-2027-4f7b-9831-39d899101ce4",
+      "result_id": "23c6f2f0-9db2-47a9-b09e-247c4074cc57"
+    },
+    {
+      "claim_id": "34ca3350-84bd-43c1-a973-b2c69e317bd2",
+      "result_id": "23c6f2f0-9db2-47a9-b09e-247c4074cc57"
+    },
+    {
+      "claim_id": "59658611-235a-4f5f-a6c6-c6ef3f1dda85",
+      "result_id": "23c6f2f0-9db2-47a9-b09e-247c4074cc57"
+    },
+    {
+      "claim_id": "f36f8dbd-83d6-437f-9476-e5ca9b5187d1",
+      "result_id": "23c6f2f0-9db2-47a9-b09e-247c4074cc57"
+    },
+    {
+      "claim_id": "0280abc3-8a4b-496c-98e1-19de2f569589",
+      "result_id": "23c6f2f0-9db2-47a9-b09e-247c4074cc57"
+    },
+    {
+      "claim_id": "d7892fdf-1a1a-46e0-b006-bdb5d2baf24d",
+      "result_id": "d2676587-d5a5-43ae-b78f-33d0d1576dca"
+    },
+    {
+      "claim_id": "cc0661fc-3e48-42db-8404-ef9bf4c7639e",
+      "result_id": "d2676587-d5a5-43ae-b78f-33d0d1576dca"
+    },
+    {
+      "claim_id": "6ac6116f-0f3d-49ab-b170-29146b0df294",
+      "result_id": "d2676587-d5a5-43ae-b78f-33d0d1576dca"
+    },
+    {
+      "claim_id": "53d5e293-9510-4456-bc8f-495a4bc93360",
+      "result_id": "906fc1ab-1261-41a1-aa5f-255ccc4173ab"
+    },
+    {
+      "claim_id": "e4b2c675-1ba1-4d8a-bb42-41744fc28a70",
+      "result_id": "906fc1ab-1261-41a1-aa5f-255ccc4173ab"
+    },
+    {
+      "claim_id": "0d87e503-6bf9-4539-b6fc-efec686faa6d",
+      "result_id": "906fc1ab-1261-41a1-aa5f-255ccc4173ab"
+    },
+    {
+      "claim_id": "f2c95a3a-42fd-4e41-ad6b-01b8f3e4903b",
+      "result_id": "906fc1ab-1261-41a1-aa5f-255ccc4173ab"
+    },
+    {
+      "claim_id": "34036a8e-05b6-45cd-b0d2-610ce87730c1",
+      "result_id": "906fc1ab-1261-41a1-aa5f-255ccc4173ab"
+    },
+    {
+      "claim_id": "d7446261-f876-4dc5-978c-49d31486a8c6",
+      "result_id": "906fc1ab-1261-41a1-aa5f-255ccc4173ab"
+    },
+    {
+      "claim_id": "650d23b9-e970-47db-8ee5-6c8c48ee15ec",
+      "result_id": "906fc1ab-1261-41a1-aa5f-255ccc4173ab"
+    },
+    {
+      "claim_id": "1cdd9b43-978a-4fe3-aca2-a3bd35f58653",
+      "result_id": "906fc1ab-1261-41a1-aa5f-255ccc4173ab"
+    },
+    {
+      "claim_id": "0732778a-eeea-4e28-ad66-24780977fdfe",
+      "result_id": "906fc1ab-1261-41a1-aa5f-255ccc4173ab"
+    },
+    {
+      "claim_id": "a56dc770-bf7e-497b-bd2a-8a7f23e2e5af",
+      "result_id": "906fc1ab-1261-41a1-aa5f-255ccc4173ab"
+    },
+    {
+      "claim_id": "ec6caa62-6374-4f9f-889e-ed866c424cb1",
+      "result_id": "497232d8-ba61-4caa-a42e-580e5ce3baa2"
+    },
+    {
+      "claim_id": "211ed94f-2766-4c63-b1da-6cccfb2f4325",
+      "result_id": "497232d8-ba61-4caa-a42e-580e5ce3baa2"
+    },
+    {
+      "claim_id": "a60272b2-15d3-4128-8d70-60829dd9bfa4",
+      "result_id": "497232d8-ba61-4caa-a42e-580e5ce3baa2"
+    },
+    {
+      "claim_id": "48e58595-c23d-4ef9-b167-7bfdbd85f554",
+      "result_id": "497232d8-ba61-4caa-a42e-580e5ce3baa2"
+    },
+    {
+      "claim_id": "60898327-e196-4657-b02f-642b7b28b994",
+      "result_id": "497232d8-ba61-4caa-a42e-580e5ce3baa2"
+    },
+    {
+      "claim_id": "1abd979e-e63b-431f-803f-d627d46f8730",
+      "result_id": "497232d8-ba61-4caa-a42e-580e5ce3baa2"
+    },
+    {
+      "claim_id": "b5a9373b-a05b-4e8e-a4c8-4270ef821301",
+      "result_id": "e8acb8ab-aee3-4f47-974f-6f357e9d671c"
+    },
+    {
+      "claim_id": "e5e89ab4-e3c0-48fd-9853-68b9f50f6980",
+      "result_id": "e8acb8ab-aee3-4f47-974f-6f357e9d671c"
+    },
+    {
+      "claim_id": "ad0c6311-ead4-4796-bbea-256c2a810e75",
+      "result_id": "e8acb8ab-aee3-4f47-974f-6f357e9d671c"
+    }
+  ],
+  "comparisons": []
+}

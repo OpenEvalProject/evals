@@ -1,0 +1,227 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C11",
+      "C12"
+    ],
+    "result": "Axolotl limbs lack a morphological AER throughout development. Histological analysis showed limb mesenchyme expanding above body wall musculature with no AER or ectodermal thickening observed at any developmental stage (C11, C12).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C12 are supported by histological evidence in Figure 1C showing consistent 1-2 cell thick ectoderm throughout limb development. The observations are explicit and directly demonstrated through microscopy.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "Axolotl limb skeletal development exhibits preaxial dominance with uncoupled digit specification and differentiation. Cartilage condensations form proximal-to-distal and anterior-to-posterior (C13, C14), with digits I and II differentiating simultaneously (C15). However, Sox9 expression reveals digit specification occurs in a 2>1>3>4 sequence in 86.66% of limbs (C16), indicating specification precedes and differs from differentiation patterns (C17).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C17 are well-supported by complementary Alcian blue staining and Sox9 expression data (Figure 1D-E). The quantification (13/15 limbs, 86.66%) provides statistical rigor. The conclusion that specification and differentiation are uncoupled is logically derived from the divergent temporal patterns observed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Shh expression in axolotl limbs is posteriorly restricted but proximally localized and appears after Hoxd11 expression. Shh was first detected at stage 45 posteriorly (C18) and persisted through stage 49 in a posterior-proximal position (C19), appearing after Hoxd11 unlike in other tetrapods (C20). An anterior Shh domain was observed at stages 46-48 (C21, C22). The posterior Shh domain remains proximal and does not extend into the autopod (C25), contrasting with the elongated distal expression in other tetrapods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C25 are supported by in situ hybridization and qRT-PCR data (Figures 2A, 2\u2014figure supplement 2-3). The 42% similarity between Shh and Ihh probes (C23) raises potential cross-reactivity concerns, but distinct Ihh expression patterns (C24) validate probe specificity. The temporal and spatial differences from other tetrapods are well-documented with appropriate citations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C26",
+      "C27"
+    ],
+    "result": "Shh-expressing cells contribute exclusively to digit IV in axolotl limbs. DiI labeling showed cells from the Shh domain migrated along the posterior margin to form digit IV (C26), similar to chick ZPA cell fate mapping (C27).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C26 is supported by DiI labeling experiments (Figure 2E, n=34). The comparison to chick experiments (C27) appropriately contextualizes the finding. However, the authors acknowledge that nearby non-Shh-expressing cells were also labeled, introducing some uncertainty about exclusive Shh+ cell contribution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "AER-specific Fgf ligands and receptors are expressed entirely in the mesenchyme of axolotl limbs, not in the ectoderm. Fgf8, Fgf9, and Fgf17 showed mesenchymal-only expression (C28), while Fgf4 was barely detectable (C29). Fgf receptors FgfR1 and FgfR2 were also mesenchymal (C38-C41). This represents a fundamental departure from the ectodermal-mesenchymal compartmentalization seen in anurans and amniotes (C44).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C44 are strongly supported by comprehensive in situ hybridization data (Figure 3) and validated by single-cell RNA-seq analysis. The use of ectodermal markers (Keratin5, Keratin17) and mesenchymal markers (Msx2) in Figure 2\u2014figure supplement 1 provides critical validation of tissue compartment identification. This is a major finding that challenges established models.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Single-cell RNA-seq analysis reveals spatial segregation of Fgf ligands and receptors along the proximodistal axis. PC3 models the proximodistal axis (C45) with proximal and distal markers on opposite ends (C46). Fgf ligands localize distally while receptors localize proximally (C48, C49), with statistical confirmation of separation (C50, p=0.0038). Limited co-expression occurs between FgfR1 and some Fgf ligands (C51), but FgfR2-4 show minimal co-expression with Fgf ligands (C52).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C52 are supported by rigorous computational analysis of published scRNA-seq data (Figure 4). The statistical validation (Welch t-test, p=0.0038) strengthens the conclusion. However, the small sample size (<200 cells, acknowledged by authors) and reliance on a single dataset limit generalizability. The co-expression analysis (C51-C52) suggests some complexity in ligand-receptor interactions that warrants further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Fgf-signaling regulates cell proliferation but not cell survival during axolotl limb development. SU5402 treatment from stage 39 resulted in significantly smaller limbs at stage 46 (C53, p<0.0001) with 83% reduction in proliferating cells (C64, p<0.05) but no cell death (C62, C63). Long-term treatment resulted in smaller limbs lacking digit IV in 73.5% of cases (C67, C68). Fgf-signaling regulates Gremlin1 (C72) but Shh-signaling remains relatively independent of Fgf-signaling (C73, C60).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C73 are well-supported by comprehensive pharmacological inhibition experiments with appropriate statistical analyses (Figure 5). The use of multiple readouts (limb size, gene expression, proliferation, cell death, skeletal phenotypes) provides strong convergent evidence. The statistical correction showing body length changes don't account for limb size differences (C55) strengthens the conclusion. However, SU5402 is a broad FgfR inhibitor, so specific receptor contributions cannot be determined.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Shh-signaling regulates Fgf8 expression and controls distal cell proliferation during axolotl limb development. Cyclopamine treatment resulted in significantly smaller limbs at stage 46 (C75, p<0.0001) with efficient Shh pathway inhibition (C76). Fgf8 and Gremlin1 expression were significantly reduced (C77, C78), placing them downstream of Shh (C79, C83). Shh inhibition caused 53% reduction in proliferation (C81) with dramatic loss in the distal limb bud (C82) but no cell death (C80).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C84 are supported by cyclopamine inhibition experiments with appropriate controls and statistical validation (Figure 6). The spatial specificity of proliferation defects (distal vs. proportional for Fgf inhibition) provides mechanistic insight. The comparison to Shh-/- mouse phenotypes (C74) appropriately contextualizes findings. However, cyclopamine can have off-target effects, and genetic validation would strengthen conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C6",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "Urodele limb development exhibits unique features distinguishing it from anurans and amniotes. Urodeles show preaxial skeletal differentiation (C1), lack an AER (C2), and demonstrate autonomous development temporally decoupled from body axis patterning (C87). These features contrast with postaxial dominance and AER-dependent development in anurans and amniotes (C6), and urodeles uniquely retain adult limb regeneration capacity (C90).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C6, C85-C90 represent established knowledge appropriately cited and contextualized. These background claims provide essential framework for interpreting the novel findings. The citations appear accurate and the comparisons are well-established in the literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5"
+    ],
+    "result": "Salamander limbs lack a molecular AER, with AER-specific Fgfs and receptors expressed in mesenchyme, and Fgf-signaling regulating proliferation across all three limb axes rather than cell survival and proximodistal patterning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C5 are summary statements directly supported by the detailed experimental results in other claim groups. These represent the core conclusions of the manuscript and are well-supported by the comprehensive data presented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "Inhibiting Shh-signaling affects multiple aspects of limb development including Fgf8 expression, anteroposterior patterning, and distal cell proliferation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C10 are summary statements from the abstract that are supported by detailed experimental results presented in later claim groups (particularly C75-C84). These accurately represent the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "The role of Shh-signaling from the ZPA is conserved in salamander limb development, but movement of AER-Fgf ligands to the mesenchyme was accompanied by functional changes in Fgf-signaling regulation. The divergent molecular program in urodeles resides predominantly in the limb mesenchyme.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C93 represent the major conclusions synthesizing all experimental findings. These are well-supported by the comprehensive data on Shh function (conserved) and Fgf compartmentalization and function (divergent). The conclusions are appropriately cautious and acknowledge both conservation and divergence.",
+    "result_type": "MAJOR"
+  }
+]

@@ -1,0 +1,370 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C6",
+      "C7"
+    ],
+    "result": "Longevity of ribosomal protein deletion mutants is not significantly associated with generation time or ribosomal protein abundance in wild-type cells. Statistical analysis using Spearman correlation showed \u03c1 = -0.02 for generation time and \u03c1 = -0.06 for protein abundance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C6, and C7 are well-supported by statistical analysis presented in Figure 1, showing no significant correlation between lifespan and either generation time or protein abundance. The use of appropriate non-parametric correlation methods and adequate sample sizes strengthen these findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "Ribosome composition remains largely constant in rpl22 deletion mutants despite compensatory changes in paralog expression. In rpl22a\u0394 cells, Rpl22Bp increases ~5-fold but total Rpl22 remains 2-3-fold lower than wild-type. Other ribosomal proteins maintain constant proportions (\u03c1 \u2265 0.95).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C12 are supported by SWATH-mass spectrometry data in Figure 2B-C showing compensatory paralog expression and overall ribosome composition stability. The high correlation coefficients and multiple biological replicates provide strong evidence. Claim C11 regarding mice is appropriately cited.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "Loss of Rpl22Ap reduces overall protein synthesis ~2-fold, but reduced protein synthesis alone is insufficient for longevity extension. Both rpl22a\u0394 and rpl22a,b\u0394 cells show similar HPG incorporation reduction, yet only rpl22a\u0394 cells are long-lived.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C15 are well-supported by HPG incorporation data (Figure 2\u2014figure supplement 1B) and prior work with cycloheximide. The logic that reduced protein synthesis alone cannot explain longevity is sound, given that rpl22a,b\u0394 cells have reduced synthesis but normal lifespan.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C28",
+      "C29"
+    ],
+    "result": "Transcripts encoding glycolytic and gluconeogenic enzymes are significantly reduced in rpl22a\u0394 compared to rpl22b\u0394 cells (p=4.9E-04), suggesting downregulation of central carbon metabolism pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C29 are supported by RNAseq data in Figure 4C with appropriate statistical analysis. The inference in C29 is reasonable given the data, though it remains an interpretation of transcript-level changes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C30",
+      "C32",
+      "C33",
+      "C63"
+    ],
+    "result": "Translational efficiency of enzymes in serine family amino acid metabolism and one-carbon pathways is reduced in rpl22a\u0394 cells. Met3p protein levels are 4-5-fold lower in rpl22a\u0394 compared to rpl22b\u0394 cells, consistent with ribosome profiling data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30, C32-C33, and C63 are strongly supported by ribosome profiling (Figure 5A), gene ontology enrichment analysis (p=2.93E-02), and immunoblot validation (Figure 5C). Multiple independent lines of evidence converge on translational control of 1C metabolism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "Metabolomic profiling reveals that rpl22a\u0394 cells have lower levels of metabolites in central carbon and amino acid pathways, including significantly reduced Gly:Ser ratio and tryptophan levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C36 are supported by comprehensive metabolomic profiling (Figure 6A-C) using both untargeted MS-based approaches and targeted amino acid analysis. Statistical analysis with bootstrap ANOVA and multiple biological replicates strengthen the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C5"
+    ],
+    "result": "Loss of folate-dependent one-carbon enzymes (SHM1, SHM2, ADE17) significantly extends replicative lifespan in wild-type cells, while loss of the non-folate-dependent enzyme ADE2 has no effect. This demonstrates the physiological relevance of 1C metabolism in longevity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C41 and C5 are strongly supported by replicative lifespan data in Figure 7 showing significant lifespan extension (p<0.0001) for folate-dependent enzymes but not for ADE2. This provides direct genetic evidence linking 1C metabolism to longevity and validates the translational profiling findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C45",
+      "C46"
+    ],
+    "result": "Double mutants combining rpl22a\u0394 with deletions of 1C enzymes (ade17\u0394, shm1\u0394, or shm2\u0394) show no further lifespan extension compared to rpl22a\u0394 alone, suggesting these mutations act in the same pathway.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C46 are supported by lifespan data in Figure 7\u2014figure supplement 1. The lack of additive effects suggests epistasis, though the authors appropriately note the differences did not reach statistical significance. This is consistent with the hypothesis that 1C metabolism mediates rpl22a\u0394 longevity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C54",
+      "C55"
+    ],
+    "result": "Double shm2\u0394,ade3\u0394 mutants exhibit complex cell cycle phenotypes: they are slow-growing with larger mean cell size but normal birth size and DNA content. They have reduced size increase rate (~50% of wild-type) and smaller critical size, yet substantially longer G1 phase (~170% longer).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C52, C54-C55 are well-supported by multiple complementary measurements in Figure 8: tetrad dissection, cell size analysis, flow cytometry, and elutriation experiments. The data demonstrate distinct impacts of 1C metabolism on different cell cycle phases, though some claims involve inferences from the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C83",
+      "C84"
+    ],
+    "result": "The translational efficiency of SHM2 is highly cell cycle-dependent in wild-type cells, peaking in G1 phase. This periodicity is lost in rpl deletion mutants (except possibly rpl22b\u0394).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C84 are supported by ribosome profiling data across the cell cycle shown in Figure 8\u2014figure supplement 1. The cell cycle-dependent pattern in wild-type and its disruption in mutants provides evidence for cell cycle-specific regulation of 1C metabolism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Compared to wild-type, rpl paralog mutants show upregulated translational efficiency of cytoplasmic translation mRNAs, while rpl34a\u0394 and rpl34b\u0394 show reduced translational efficiency of one-carbon and amino acid metabolic pathways, respectively.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C76 are supported by ribosome profiling data in Figure 5\u2014figure supplement 1B and 3. The compensatory upregulation of translation machinery and pathway-specific downregulation are consistent with the study's overall findings, though the biological significance of some changes requires further investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "GCN4 translational efficiency is reduced in wild-type and rpl22b\u0394 but not in long-lived rpl22a\u0394 cells. Gcn4p is required for full longevity extension in rpl mutants and its overexpression extends lifespan without changing bulk protein synthesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C80 are supported by ribosome profiling data (Figure 5\u2014figure supplement 2) and appropriate citations to prior work. While GCN4 was not identified by all computational pipelines, the strain-specific analysis and supporting literature provide adequate evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "rpl22a\u0394 cells accumulate elevated levels of the plant flavonoid nobiletin, which has antioxidant properties. This may relate to the oxidative stress sensitivity of these cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C87 is supported by metabolomic data (Figure 6\u2014figure supplement 2), and C88 is appropriately cited. However, C89 is speculative\u2014while the correlation between nobiletin accumulation and oxidative stress sensitivity is plausible, no direct mechanistic evidence is provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "Loss of Rpl22Ap, but not Rpl22Bp, results in specific phenotypes: longer G1 phase due to small birth size and lower size increase rate, ~38% longer replicative lifespan, and increased oxidative stress sensitivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C17 and C25-C27 are supported by appropriate citations to prior work. These establish the phenotypic differences between paralogs that motivated the current study's mechanistic investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C1",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "Prior work establishes that mutations in large ribosomal subunit proteins promote longevity in yeast and other organisms, with complex paralog-specific effects. For Rpl22, only rpl22a\u0394 (not rpl22b\u0394 or the double deletion) extends lifespan, and bulk translation inhibition does not increase lifespan.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1 and C18-C24 appropriately summarize prior work with proper citations. These establish the context and rationale for the current study's focus on paralog-specific mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C31",
+      "C42"
+    ],
+    "result": "Loss of Met3p in wild-type cells extends replicative longevity by approximately 15%, a phenotype shared with loss of Rpl22Ap.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31 and C42 are supported by appropriate citations to McCormick et al., 2015 and Steffen et al., 2008, 2012. This prior work provides important context for the current findings on 1C metabolism and longevity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C43",
+      "C44"
+    ],
+    "result": "Enzymes encoded by SHM2, ADE17, and SHM1 catalyze folate-dependent reactions, while the carboxylase activity of Ade2p is not folate-dependent.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C44 are supported by appropriate citation (Tibbetts and Appling, 2000) and established biochemical knowledge. This distinction is important for interpreting the differential effects on lifespan.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "Single deletions of 1C enzymes have minimal effects on cell cycle progression and doubling time, while double deletions (shm1\u0394,shm2\u0394 is lethal; shm2\u0394,ade3\u0394 is severely impaired) show dramatic effects, reflecting pathway redundancy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C94 are supported by DNA content data (Figure 8C), citations to prior work, and logical inference. The redundancy explanation is reasonable given the parallel cytoplasmic and mitochondrial pathways.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C53",
+      "C37"
+    ],
+    "result": "Reduced rate of cell size increase and lower tryptophan levels are both associated with longer replicative longevity in prior work.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53 and C37 are supported by appropriate citations to He et al., 2014. These provide context for interpreting the current findings on shm2\u0394,ade3\u0394 cells and rpl22a\u0394 metabolite profiles.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "RPL22 mutations are found in human cancers (10% of T-ALL, 77% of microsatellite-unstable colorectal cancers, 50% of endometrial cancers) and affect T cell development in mice. Compensatory paralog expression occurs in both yeast and mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C60 are supported by appropriate citations to prior work in human and mouse systems. These establish the broader biomedical relevance of the yeast findings, though direct mechanistic connections remain to be established.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C64",
+      "C65"
+    ],
+    "result": "Methionine restriction promotes longevity in yeast and animals, metformin promotes longevity and is in clinical trials, 1C pathways are conserved across organisms, and targeting 1C enzymes could represent longevity interventions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C61-C62 and C64 are supported by appropriate citations and established knowledge. However, C65 is speculative\u2014while the yeast data support a role for 1C metabolism in longevity, extrapolation to therapeutic interventions in other organisms requires additional validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Background on ribosomal proteins and ribosomopathies: mutations cause diseases in humans, affect translation in Diamond-Blackfan anemia, may cause dose-dependent gene expression changes in yeast, and 15 of 79 yeast ribosomal proteins are non-essential with most encoded by paralog pairs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C73 appropriately summarize background knowledge with proper citations. These establish the scientific context for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C90"
+    ],
+    "result": "GCN4 translation is regulated by uORFs in response to nutrient availability in yeast, and human SHMT1 protein levels increase in S phase without mRNA changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C82 and C90 are supported by appropriate citations to established work. These provide relevant context for interpreting the translational control findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C85",
+      "C86"
+    ],
+    "result": "Cells lacking both Shm2p and Ade3p were previously reported to be enlarged, consistent with DNA replication delay analogous to megaloblastosis in folate deficiencies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C86 are supported by citation to Yang and Meier, 2003 and Das et al., 2005. The inference in C86 is reasonable given the known role of folate in DNA synthesis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C95"
+    ],
+    "result": "Folate-based reactions may be uniquely positioned to integrate growth cues and nutrient status with cell cycle progression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C95 is explicitly speculative. While the data on cell cycle effects of 1C metabolism perturbations are supportive, this remains a hypothesis requiring further testing.",
+    "result_type": "MINOR"
+  }
+]

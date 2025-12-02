@@ -1,0 +1,1863 @@
+{
+  "submission": {
+    "id": "50560ac1-3cf7-4802-9196-c76c960bd6c5",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T19:24:26.053551Z",
+    "updated_at": "2025-12-02T19:24:26.053551Z"
+  },
+  "content": [
+    {
+      "id": "aa387d34-e740-415f-9159-c6cd05f91435",
+      "submission_id": "50560ac1-3cf7-4802-9196-c76c960bd6c5",
+      "content_type": "manuscript",
+      "content_text": "# Responding to preconditioned cues is devaluation sensitive and requires orbitofrontal cortex during cue-cue learning\n\n## Authors\n\n- Evan E Hart<sup>1</sup> ([ORCID: 0000-0003-1487-5628](https://orcid.org/0000-0003-1487-5628)) \u2020\n- Melissa J Sharpe<sup>1</sup> ([ORCID: 0000-0002-5375-2076](https://orcid.org/0000-0002-5375-2076))\n- Matthew PH Gardner<sup>1</sup> ([ORCID: 0000-0002-9146-5043](https://orcid.org/0000-0002-9146-5043))\n- Geoffrey Schoenbaum<sup>1</sup> ([ORCID: 0000-0001-8180-0701](https://orcid.org/0000-0001-8180-0701)) \u2020\n\n### Affiliations\n\n1. National Institute on Drug Abuse Intramural Research Program, National Institutes of Health Baltimore United States\n2. Department of Psychology, University of California, Los Angeles Los Angeles United States\n3. Department of Neuroscience, Johns Hopkins School of Medicine Baltimore United States\n4. Department of Psychiatry, University of Maryland School of Medicine Baltimore United States\n5. Department of Anatomy and Neurobiology, University of Maryland School of Medicine Baltimore United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe orbitofrontal cortex (OFC) is necessary for inferring value in tests of model-based reasoning, including in sensory preconditioning. This involvement could be accounted for by representation of value or by representation of broader associative structure. We recently reported neural correlates of such broader associative structure in OFC during the initial phase of sensory preconditioning (Sadacca et al., 2018). Here, we used optogenetic inhibition of OFC to test whether these correlates might be necessary for value inference during later probe testing. We found that inhibition of OFC during cue-cue learning abolished value inference during the probe test, inference subsequently shown in control rats to be sensitive to devaluation of the expected reward. These results demonstrate that OFC must be online during cue-cue learning, consistent with the argument that the correlates previously observed are not simply downstream readouts of sensory processing and instead contribute to building the associative model supporting later behavior.\n\n## Introduction\n\nModel-based reasoning requires using information about the structure of the world to infer information on-the-fly. This ability relies on a circuit involving the orbitofrontal cortex (OFC), as evidenced by the finding that humans and laboratory animals cannot infer value in several situations when OFC function is impaired (Gallagher et al., 1999; Izquierdo et al., 2004; McDannald et al., 2005; Takahashi et al., 2009; West et al., 2011; Gremel and Costa, 2013; Reber et al., 2017; Howard et al., 2020). Model-based reasoning can be isolated in sensory preconditioning (Brogden, 1939). During this task, subjects first learn an association between neutral or valueless stimuli. If one of these stimuli is thereafter paired with a biologically meaningful stimulus (e.g. food), presentation of the never-reward-paired preconditioned stimulus will produce a strong food-approach response. This demonstrates that subjects formed an associative model in which the preconditioned cue predicts the conditioned cue, which can subsequently be mobilized to produce a food-approach response when the preconditioned cue is presented. Because the preconditioned cue itself was never reinforced, this response to the preconditioned cue cannot be explained by model-free mechanisms. Preconditioned responding is reflective of the ability of subjects to infer value on-the-fly using knowledge about the associative structure of the information acquired during preconditioning.\n\nPrevious work from our lab has shown that the lateral OFC activity is necessary for inferring the value of never-reinforced sensory stimuli in the probe test at the end of sensory preconditioning (Jones et al., 2012). Interestingly, subsequent single-unit recording showed that neural activity in the OFC reflects not only the value predictions in the final probe test, but also tracks acquisition of the sensory-sensory associations in the initial phase of training (Sadacca et al., 2018). This result suggested a wider role for OFC in building associative models, independent of encoding of overt biological significance or value, the role often ascribed to this region (Kringelbach, 2005; Padoa-Schioppa and Assad, 2006; Padoa-Schioppa, 2011; Levy and Glimcher, 2012).\n\nOf course, single-unit recording is correlative and cannot demonstrate that OFC activity is necessary for proper acquisition of the sensory-sensory associations during preconditioning. The correlates could simply reflect activity in primary sensory (Engineer et al., 2008; Garrido et al., 2009; Headley and Weinberger, 2015) or other cortical areas that are necessary in the first phase (Port et al., 1987; Robinson et al., 2011; Robinson et al., 2014; Fournier et al., 2020). If this is the case, then interference with processing in OFC during preconditioning should not affect responding to the preconditioned cue during the probe test. On the other hand, if the representations of the sensory-sensory associations formed in OFC in the initial phase contribute to building the model of the task used to infer value and drive responding in the probe test, then interference with processing in OFC during preconditioning should affect probe test responding, either directly impairing normal responding to the preconditioned cue, if responding in our task is entirely model-based as we have suggested (Jones et al., 2012; Sadacca et al., 2018), or by making any responding insensitive to devaluation of the predicted food reward, if responding in the probe is partly maintained by transfer of cached value to the cue during conditioning (Doll and Daw, 2016). Here we tested for such functional effects by training rats on a sensory preconditioning task nearly identical to those previously used by our lab (Jones et al., 2012; Sharpe et al., 2017; Sadacca et al., 2018), optogenetically inactivating the lateral OFC during cue presentation in the preconditioning phase of training and adding an additional assessment of responding after devaluation at the end of the experiment. We found that interfering with processing in OFC during the preconditioning phase completely abolished responding to the preconditioned cue in the probe test after conditioning, responding that in controls was subsequently disrupted by devaluation of the expected food reward.\n\n## Results\n\n### Orbitofrontal cortex activity is necessary for forming sensory associations\n\nWe tested whether the OFC has a causal role in learning about value-neutral associations acquired during sensory preconditioning. For this, we used a sensory preconditioning task largely identical to that used in previous work (Figure 1A) and optogenetic inhibition (Figure 1A\u2013C) to test whether this activity during preconditioning is necessary for proper value inference during later probe testing.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/59998/elife-59998-fig1-v2.jpg)\n\n**Figure 1.:** (A) Task Schematic. Rats received value-neutral cue pairings during preconditioning. Light was delivered to eYFP control and NpHR rats during cue presentation. Reward conditioning occurred in phase two during which cue B was paired with sucrose pellets and Cue D was presented alone. Cues A and C were probed in phase 3. (B) Schematic reconstruction of fiber tip placements and viral expression in eYFP controls (left) and NpHR rats (right). Light shading indicates areas of minimal spread and dark shading areas of maximal spread. Black circles indicate fiber tip placements. (C) Representative photomicrographs of fiber placements and eYFP expression in lateral OFC.\n\nPrior to any training, two groups of rats underwent surgery in which virus was infused into the lateral area of OFC, where recordings were obtained in our prior experiment (Sadacca et al., 2018). One group, the NpHR experimental group (N\u00a0=\u00a021), received AAV5 containing halorhodopsin (NpHR) linked to a CamKII\u03b1 promoter. NpHR is a light gated chloride pump that induces neuronal hyperpolarization to allow real-time neuronal inactivation (Gradinaru et al., 2008). The other group of rats, the eYFP control group (N\u00a0=\u00a022), received the same virus but without the opsin. Both viruses contained eYFP for histological verification of successful transfection. All rats also had fiberoptic probes implanted bilaterally overlying the injection site to allow light delivery. After recovery from surgery and a brief period of food deprivation, training began.\n\n#### Preconditioning\n\nTraining began with a preconditioning phase, which involved two sessions in which the rats were presented with neutral cue pairs (A\u2192B; C\u2192D; six pairings of each per session), in a blocked and counterbalanced fashion. Laser light was delivered into OFC in both eYFP controls and NpHR rats, starting 500 ms prior to presentation of the first cue in each pair and lasting for the duration of both cues. No reward was presented, so responding to the food cup during this phase was negligible, and there were no differences between cues or groups (Figure 2A). A two-way ANOVA with cue as a within subjects factor and group as a between subjects factor revealed no main effects of cue (F(3,123)=0.43, p=0.73) or group (F(1,41)=1.99, p=0.17) and no group x cue interaction (F(3,123)=0.86, p=0.46).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/59998/elife-59998-fig2-v2.jpg)\n\n**Figure 2.:** (A) All rats showed low levels of responding during preconditioning when neutral cue pairs were presented. There was no effect of cue or group. (B) During reward conditioning, all rats (grey, eYFP; green, NpHR) showed higher responding to the rewarded cue B (solid lines) than to the non-rewarded cue D (dotted lines). (C) During the probe test, responding to A was higher than to C in control rats (eYFP, left, grey), but not in OFC inhibition rats (NpHR, right, green). (D) Scatter plot of A versus C responding during the probe test. To the extent that responding to A and C are equal, points should congregate along the diagonal. Points below the diagonal indicate A>C responding and therefore evidence of preconditioning.\n\n#### Conditioning\n\nFollowing preconditioning, rats underwent six sessions of Pavlovian conditioning in which they received cue B paired with reward and cue D without reward (B\u2192US; D; six pairings of each per session, interleaved in a counterbalanced fashion). As expected, rats developed a conditioned response to B with training, responding more at the food cup during cue B than during cue D, and there was no difference between groups (Figure 2B). A three-way mixed-design (cue, session within subjects factors; group between subjects factor) ANOVA revealed significant main effects of cue (F(1,41)=143.00, p<0.0001) and session (F(5,205)=36.23, p<0.0001), and a significant session x cue interaction (F(5,205)=9.76, p<0.0001). Critically, there were no main effects of, nor any interactions with, group (main: F(1,41)=0.02, p=0.90; session x group: F(5,205)=1.72, p=0.13; group x cue interaction: F(1,41)=0.53, p=0.47).\n\n#### Probe test\n\nFinally, the rats underwent a single probe test in which cues A and C were presented alone and without reward, counterbalanced across subjects. We found that control rats responded more to A than C, and NpHR rats did not (Figure 2C\u2013D). A two-way mixed-design ANOVA revealed no main effects of cue (F(1,41)=1.33, p=0.26) or group (F(1,41)=0.00, p=0.99). There was a significant cue x group interaction (F(1,41)=4.57, p=0.04); ergo, the effect of cue during the probe test (A-C) did depend on group (eYFP control \u2013 NpHR OFC inhibition). Posthoc comparisons revealed responding to A was significantly higher than C in controls (p=0.046), but not in NpHR rats (p=0.75).\n\n### Preconditioned responding in controls is sensitive to outcome devaluation\n\n#### Taste aversion training\n\nTo confirm the associative basis of responding to the preconditioned cue observed in controls, a subset of the eYFP rats (n\u00a0=\u00a013) were split into two groups (paired and unpaired) with equal responding to A and C (no main effect of group (F(1,11)=0.06, p=0.81) or group x cue interaction (F(1,11)=2.60, p=0.13)). All rats consumed all pellets during the first free exposure session. Following this, the paired group immediately received lithium chloride injections, while the unpaired group received the same injections 24 hr following sucrose pellet exposure. Subsequently, during the second free exposure session, the paired group demonstrated a conditioned taste aversion, consuming significantly fewer pellets than in the first test (t(5)\u00a0= 4.95, p=0.001, second exposure mean\u00a0=\u00a02.25 g, range\u00a0=\u00a00.6\u20133.0 g); to equalize exposure, rats in the unpaired group were given sucrose pellets yoked to the amount that the paired group consumed in this second session, then rats in both groups underwent probe testing.\n\n#### Devaluation probe\n\nFor the devaluation probe test, rats in both the paired and unpaired groups were presented with cue A six times, alone and without reward, after which they were given a final consumption test to confirm devaluation. On probe, responding extinguished quickly in both groups, however it was much higher in the unpaired group on the initial trials (Figure 3A). A two-way ANOVA revealed a significant main effect of trial block (F(2,22)=4.91, p=0.02) and significant trial block x group interaction (F(2,22)=4.58, p=0.02). Post hoc comparisons revealed responding was significantly higher to A in the unpaired group than the paired group during the first trial block (p=0.02; Figure 3B). This change in responding was accompanied by reduced consumption of the outcome by rats in the paired group (t(11)\u00a0= 4.95, p=0.0004; Figure 3C).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/59998/elife-59998-fig3-v2.jpg)\n\n**Figure 3.:** (A) Rats that received LiCl and pellets unpaired (black) showed higher levels of responding to A during the first 2-trial block than rats that received them paired (grey). All rats quickly extinguished. (B) Average responses during the first 2-trial block. (C) Rats that received paired LiCl and pellets (left) consumed fewer pellets than rats that received them unpaired (right) during the consumption test.\n\n## Discussion\n\nWhile the OFC is generally thought to contribute to behavior where there are changes in, or computations of, value (Gallagher et al., 1999; Kringelbach, 2005; Padoa-Schioppa and Assad, 2006; Schoenbaum et al., 2011), our lab recently showed that neural activity in lateral OFC can also track the development of valueless sensory-sensory associative information in a sensory preconditioning task (Sadacca et al., 2018). While performance in the final phase of this task is ultimately sensitive to OFC manipulations in both rats (Jones et al., 2012) and humans (Wang et al., 2020b), the development of neural correlates of neutral sensory associations in the initial phase of training suggested that OFC might not be restricted to encoding information once clear biological significance is established and instead could be more widely involved in representing structure among features of the environment, with value being just one of these features. Here we tested this question by optogenetically-inactivating the OFC during the initial phase of preconditioning, when correlates were previously observed, and we found that this manipulation also disrupted performance in the final phase of the task. These findings are consistent with the argument that the associative correlates we observed during preconditioning in our prior study are not simply downstream reflections of sensory or other cortical processing and instead must contribute to the construction of the model used to guide responding in the final probe test. These data are also in accord with the findings that OFC represents not only value, but also features of the environment such as trial type (Lopatina et al., 2017), sequence (Zhou et al., 2019), direction, and goal location (Feierstein et al., 2006; Mainen and Kepecs, 2009).\n\nThese results come with several important considerations that are worth discussing. The first is whether OFC inhibition caused the rats to simply generalize between the preconditioned cues. In considering this possibility, we would first note that generalization or failure to treat these cues differently would be to some extent the final common outcome of disrupting the more detailed encoding of their identities and different associative relationships to reward that we argue is affected. For that reason, it is difficult to formally rule this out. However we believe that generalization as a primary cause is unlikely given the low overall levels of responding to these cues during the probe, relative to responses to the reward-paired cue. Additionally, responding to the two preconditioned cues in the experimental group was no different than responding to the preconditioned cue predicting reward in the control group. If generalization alone accounted for the results, we would expect higher levels of responding to both cues during the probe in the OFC-inhibited rats. There is also no evidence from other studies that the OFC is necessary for discriminating the sensory properties of cues; rats without OFC or in whom the OFC is inactivated perform well in a number of settings that require them to distinguish different cues to guide responding (Schoenbaum et al., 2002; Boulougouris et al., 2007; Takahashi et al., 2009; Jones et al., 2012).\n\nA second consideration to discuss is the timing of our manipulation and its specificity. We inhibited OFC only during cue presentation, precisely when we previously observed single unit correlates of cue-cue encoding; our design did not include control conditions in which similar inhibition was done before or after the cues or during the intertrial intervals. Thus, while we can conclude that OFC must be online at the time the neural correlates were observed, we cannot conclude that it does not need to be online at any other time during the first phase. Although OFC can be inactivated briefly between trials without affecting OFC-dependent learning and behavior (Takahashi et al., 2013), we would not be surprised if processing outside the strictly defined cue period \u2013 say immediately before or after \u2013 were also necessary for normal learning. Such a result would not invalidate what we have shown here, but it would show that learning is not fully completed during the external sensory events. While defining this critical period would be very interesting, it would require a succession of control groups that we did not deem practical (just after the cues, 20 s after the cues, 40 s after the cues, and so on).\n\nA third consideration is whether the effect of optogenetic inhibition could reflect something other than the inhibition of the neural correlates demonstrated in our earlier study. While we know from our control group, that simply delivering light during the cue period is not sufficient, perhaps inhibiting OFC neurons during this period distracts the rats, because it is rewarding or punishing or for some other reason. If this were the case, then we would have expected to see an impact of this on learning and responding to these cues in the later periods of the task. We did not see any evidence of this. Further we know from a number of prior studies that brief periods of OFC inhibition, similar to that employed here, often have minimal or no effects on ongoing behavior (Takahashi et al., 2013; Gardner et al., 2017; Gardner et al., 2018). These results suggest this is not, by itself, rewarding, painful or otherwise distracting. Finally, it has been shown that lateral OFC inactivation is not sufficient to produce state-dependent learning, which provides very strong evidence that it does not create a tangible experience in and of itself (Panayi and Killcross, 2014).\n\nA final consideration is that all rats received food cup approach shaping prior to preconditioning. It is possible that this changes the salience of the conditioning chamber context and causes increased attention to the cues during preconditioning, which may facilitate learning. If this is the case, then one interpretation of the current findings would be that OFC is necessary for normal acquisition of the associations during preconditioning because it contributes to this boost in attention, perhaps secondary to a role in processing the value of the context, rather than contributing to the encoding itself. This idea would be consistent with results showing correlates of risk (O'Neill and Schultz, 2010; Ogawa et al., 2013), uncertainty (van Duuren et al., 2009) and salience (Ogawa et al., 2013) in OFC neurons, as well as the finding that OFC value coding is attentionally gated (McGinty et al., 2016) and active in auditory oddball task (Nguyen and Lin, 2014). However, while it is possible that inactivating OFC affected learning of the sensory-sensory associations by interfering with a primary role for OFC in supporting the context or even cue salience, it seems more parsimonious to us to propose that the role OFC plays in supporting salience is secondary to the associative learning role that OFC clearly supports. This idea is consistent with attentional models, both old and new, that link cue salience to associative strength \u2013 changes in cue associative strength drive changes in salience (Mackintosh, 1975; Pearce and Hall, 1980; Haselgrove et al., 2010; Esber and Haselgrove, 2011).\n\nOf course, we do not intend to suggest that OFC is the only area that is necessary for this sort of value-neutral sensory learning. This is surely not the case. Indeed even when preconditioning is the readout, we know that interfering with several cortical areas including hippocampus (Port et al., 1987), retrosplenial cortex (Robinson et al., 2011; Robinson et al., 2014; Fournier et al., 2020), and perirhinal cortex (Holmes et al., 2013; Wong et al., 2019) seems to impair the acquisition of sensory-sensory associations. While most cortical and subcortical areas encode variables relevant to predicting biologically-relevant outcomes (Milad and Quirk, 2002; Burgos-Robles et al., 2009; Kennerley et al., 2011; Cai and Padoa-Schioppa, 2012; Burgos-Robles et al., 2013; Giustino et al., 2016; Giustino et al., 2019; Halladay et al., 2020), few studies look at whether the same areas track incidental sensory-sensory associations. Perhaps correlates like those observed in the OFC are ubiquitous; since the organism does not yet understand whether this information is useful it is encoded and is available for some time to enter into relationships reflecting the function of the area. This account would predict that other cortical areas (e.g. prelimbic, infralimbic, cingulate, retrosplenial) will likely also exhibit correlates of incidental sensory-sensory pairings, like OFC, yet unique single unit responses would not be apparent until the probe test, when subjects must infer specific information about the preconditioned cues based on new information acquired during conditioning. Indeed, fMRI correlates of cue-cue learning were observed in precentral gyrus, middle occipital gyrus, insula, and hippocampus in a human sensory preconditioning task (Wang et al., 2020a), and single unit correlates also exist in nucleus accumbens (Cerri et al., 2014). Along similar lines, OFC might contribute something to how the sensory-sensory associations are laid down that is necessary for their subsequent recall for use in the probe test, when it involves appetitive responding, while not being involved more generally in all forms of sensory associations. This could be assessed with fear conditioning.\n\nLastly we would note that while preconditioned responding has been shown as sensitive to extinction of the conditioned cue in fear conditioning (Rizley and Rescorla, 1972) as well as to aversive conditioning when the conditioned cue is a tastant (Blundell et al., 2003), sensitivity of the preconditioned response to devaluation of the reward predicted by the conditioned cue is novel. This result is important because, while it is conciliant with a mechanism whereby preconditioned responding reflects inference about food in the probe test, it is less consistent with other mechanisms whereby the preconditioned cue has been proposed to acquire value directly through so-called mediated learning in the conditioning phase. Such directly acquired value should leave residual responding that is resistant to devaluation. We did not see any evidence of this, consistent with prior work showing that preconditioned cues trained as we have done here do not acquire value (Sharpe et al., 2017). The demonstration of the devaluation sensitivity of this response nicely supports our contention that its OFC-dependence, both here and in prior work, reflects the role of OFC in using the underlying associative model to infer the likely delivery of food.\n\n## Materials and methods\n\n### Subjects\n\nFifty-four adult male (n\u00a0=\u00a031) and female (n\u00a0=\u00a023) Long-Evans rats age three to four months weighing between 270\u2013320 g during the time of experiments were individually housed and given ad libitum food and water except during behavioral training and testing. The effect of cue during the critical probe test did not depend on sex (main: F(1,39)=0.54, p=0.47; sex x cue: F(1,39)=0.19, p=0.66; sex x cue x group interaction: F(1,39)=2.66, p=0.11), so male and female rats were pooled for all analyses presented in the results. One day prior to behavioral training rats were food restricted to 12 g (males) or 10 g (females) of standard rat chow per day, following each session. Rats were maintained on a 12 hr/12 hr light/dark cycle and tested during the light phase between 8:00 am and 12:00 pm five days per week. Experiments were performed at the National Institute on Drug Abuse Intramural Research Program, in accordance with NIH guidelines. Eleven subjects were not included in the final analyses due to loss of a headcap (n\u00a0=\u00a01), target miss and/or lack of viral expression (n\u00a0=\u00a07), and failure to acquire greater rewarded cue than non-rewarded cue responding during the conditioning phase (n\u00a0=\u00a03).\n\n### Apparatus\n\nAll chambers and cue devices were commercially available equipment (Coulbourn Instruments, Allentown, PA). A recessed food port was placed in the center of the right wall of each chamber and was attached to a pellet dispenser that dispensed three 45 mg sucrose pellets (Bioserv F0023) during each rewarded cue presentation. Auditory cues consisted of a pure tone, siren, 2 Hz clicker, and white noise, each calibrated to 70 dB. Cues A and C were white noise or clicker; cues B and D were tone or siren; all cues were counterbalanced across rats, sexes, and groups such that every possible permutation of cue identities, sex, and group was equally present.\n\n### Surgical procedures\n\nRats were anesthetized with isoflurane (3% induction, 1\u20132% maintenance in 2 L/m O2) and placed in a standard stereotaxic device. Burr holes were drilled bilaterally on the skull for insertion of fiber optics and 33-gauge injectors (PlasticsOne, Roanoke, VA). Rats were infused with 1.0 \u03bcL of virus at a flow rate of 0.2 \u03bcL/minute, and injectors were subsequently left in place for five additional minutes to allow for diffusion of solution. Halorhodopsin (NpHR), a light gated chloride pump that induces neuronal hyperpolarization (Gradinaru et al., 2008), was used for OFC inhibition. Enhanced yellow fluorescent protein (eYFP) was used as the control virus. eYFP rats received AAV5-CaMKII\u03b1-eYFP (titer\u00a0~\u00a01012). NpHR rats received AAV5-CaMKII\u03b1-eNpHR-eYFP (titer\u00a0~\u00a01012) (Gene Therapy Center, University of North Carolina Chapel Hill). The coordinates used for targeting OFC in male rats were: AP\u00a0= +3.0 mm, ML=\u00b13.2 mm, DV\u00a0= \u22125.3 mm from Bregma. Female rats received infusions at: AP\u00a0= +2.85 mm, ML=\u00b13.04 mm, DV\u00a0= \u22125.09 mm from Bregma. Optic fibers (200 \u03bcm core diameter, Thorlabs, Newton, NJ) were implanted bilaterally at 10 degrees away from the midline at the following target: AP\u00a0= +3.0 mm, ML=\u00b13.2 mm, DV\u00a0= \u22124.90 mm from Bregma (males) or AP\u00a0= +2.85 mm, ML=\u00b13.04 mm, DV\u00a0= \u22124.66 mm from Bregma (females). Headcaps were secured with 0\u201380 1/8\u2019 machine screws and dental acrylic. Rats received 5 mg/kg carprofen s.c. on the day of surgery and 60 mg/kg p.o. cephalexin for ten days following surgery to prevent infection. Rats were given three weeks to allow viral expression prior to testing.\n\n### Behavioral training\n\nThe task used was nearly identical to those from previous studies (Jones et al., 2012; Sharpe et al., 2017; Sadacca et al., 2018).\n\n#### Preconditioning\n\nOn the day following the beginning of food restriction, rats were shaped to retrieve pellets from the food port in one session. During this session, twenty pellets were delivered, with each single pellet delivery occurring on a 3\u20136 m variable time schedule. After this shaping, rats underwent two days of preconditioning. In each day of preconditioning, rats received trials in which two pairs of auditory cues (A\u2192B and C\u2192D) were presented in blocks of six trials, and the order was counterbalanced across rats. Cues were each 10 s long, the inter-trial intervals varied from 3 to 6 m, and the order of the blocks was alternated across the two days. 532 nm laser light was calibrated to between 16 and 18 mW at patch cord output. Constant laser light began 500 ms prior to presentation of each cue pair and ended with cue termination. Cues A and C were a white noise or a clicker, counterbalanced. Cues B and D were a siren or a constant tone, counterbalanced. Behavioral responses reported are the percentage of time spent during each 10 s cue in the food port, minus the 10 s preceding each cue.\n\n#### Conditioning\n\nRats underwent conditioning following preconditioning. No laser light occurred during this phase. Each day, rats received a single training session, consisting of six trials of cue B paired with pellet delivery and six trials of D paired with no reward. The pellets were presented three times during cue B at 3, 6.5, and 9 s into the 10 s presentation. Cue D was presented for 10 s without reward. The two cues were presented in 3-trial blocks, counterbalanced across subjects, and with the order of blocks alternating across days. The inter-trial intervals varied between 3 and 6 min. Behavioral responses reported are the percentage of time spent during each 10 s cue in the food port, minus the 10 s preceding each cue.\n\n#### Probe test\n\nAfter conditioning, the rats underwent probe testing. Rats were given blocked or alternating presentation of cues A and C alone, six times each, without reward. The order of the cues/blocks was counterbalanced across subjects. Inter-trial intervals were variable 3\u20136 m. Behavioral responses reported are the percentage of time spent during each 10 s cue in the food port, minus the 10 s preceding each cue.\n\n#### Taste aversion\n\nProcedures followed those of previous studies (Pickens et al., 2003; Singh et al., 2011). Rats in the eYFP group were matched for performance and divided into paired and unpaired groups. Taste aversion training lasted four days during which both groups received two ten-m sessions of access to sucrose pellets and two injections of 0.3 M LiCl, 5 mL/kg, i.p. On days 1 and 3, rats in the paired group were given 10 m free access to 4.5 g pellets in the testing chambers, immediately followed by injections. Rats in the unpaired group were given injections with no pellet exposure. On Days 2 and 4, rats in the unpaired group were given 10 m free pellet exposure in the chambers. All rats therefore received equal free exposure to pellets, the chambers, and injections; the groups only differed in contiguity between pellets and injections. Behavioral responses reported are the percentage of time spent during each 10 s cue presentation in the food port.\n\n#### Devaluation probe\n\nFollowing taste aversion training, rats were given a devaluation probe test during which cue A was presented six times. The intertrial interval varied between 3 and 6 m. Immediately following this, rats were presented with 10 g free pellets in the testing chambers for 10 m. Behavioral responses reported are the percentage of time spent during each 10 s cue presentation in the food port.\n\n#### Histology\n\nRats were sacrificed by carbon dioxide and perfused with PBS followed by 4% formaldehyde in PBS. 0.05 mm coronal slices were visualized for confirmation of fiber tip placements and eYFP expression by a blind experimenter.\n\n### Statistical analyses\n\nData were collected using Graphic State three software (Coulbourn Instruments, Allentown, PA). Raw data were processed in Matlab 2018b (Mathworks, Natick, MA) to extract percentage of time spent in the food port during and preceding cue presentation. These behavioral data were analyzed in Matlab and Graphpad Prism (La Jolla, CA). Responses during preconditioning and probe testing were compared by two-way (group, cue) ANOVA. Responses during conditioning were compared by three-way (group, cue, session) ANOVA. Posthoc comparisons using \u0160id\u00e1k\u2019s correction for familywise error (Sidak, 1967) were conducted on probe test and devaluation probe test data. Adjusted p values are reported.\n",
+      "created_at": "2025-12-02T19:24:26.053551Z"
+    },
+    {
+      "id": "793e4647-bc0d-4b27-9859-53018f22adc6",
+      "submission_id": "50560ac1-3cf7-4802-9196-c76c960bd6c5",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Michael J Frank, Brown University United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.59998.sa1](https://doi.org/10.7554/eLife.59998.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nThank you for submitting your article \"Devaluation-sensitive responding to preconditioned cues requires orbitofrontal cortex during initial cue-cue learning\" for consideration by eLife. Your article has been reviewed by Michael Frank as the Senior Editor, a Reviewing Editor, and two reviewers. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nWe would like to draw your attention to changes in our revision policy that we have made in response to COVID-19 (https://elifesciences.org/articles/57162). Specifically, we are asking editors to accept without delay manuscripts, like yours, that they judge can stand as eLife papers without additional data, even if they feel that they would make the manuscript stronger. Thus the revisions requested below only address clarity and presentation.\n\nSummary:\n\nSensory preconditioning has been a powerful behavioral tool for exploring how, when and where model based associative structures are stored in the brain. In the present experiment, a natural follow-up to a recent study by Sadacca et al., (2018), the authors explore a single outstanding issue relating to whether neural encoding of valueless associations at the time of preconditioning are actually necessary for subsequent associative value transfer to non-conditioned cues. The broader issue here is whether OFC is a specialized economic structure or whether it plays a more general role in linking information about outcomes to options. Here they use the temporal specificity of optogenetics, activating halorhodopsin to inhibit the activity of OFC neurons only when the two unconditioned cues are presented. They report that inhibition during this period abolishes subsequent responding to the unconditioned cue, indicating that OFC inhibition blocked cue-cue learning. A subsequent experiment using only the control animals, showed that devaluing the US was associated with reductions in responding confirming that model-based associations formed during sensory preconditioning are dependent on OFC.\n\nEssential revisions:\n\nThis is an elegant albeit short report that will be of interest to many in the field but mostly as an important control to a larger body of work. There are, however, a couple of places where the manuscript could use some work, most notably in clarifying what the authors think the mechanisms of sensory preconditioning are and confounds relating to the design.\n\n1) The authors only delivered laser light to inhibit OFC neurons during the 10 seconds where the two cues were presented together. This makes perfect sense as they were aiming to understand how disrupting OFC at this point impacts learning. A question then logically follows; is it the case that disrupting OFC for this length of time, irrespective of when during the preconditioning phase is sufficient to disrupt associative learning? Put simply, if 10 seconds of laser light was delivered during the ITI in the preconditioning phase, is this sufficient to disrupt learning/retention of the cue-cue associations? I'm not asking for an extra experiment here, but this should be acknowledged in the discussion as it speaks to the role of OFC in both learning AND/OR retention of cue-cue associations.\n\n2) The discussion of attention in the learning of cue-cue value associations should be expanded as this is the key take away from the paper. Cues that the rats did not expect to be presented are likely learned about as they are attentionally salient. More of a discussion of the role of OFC in attentionally salient events and interaction with other areas feels more than a little appropriate here. For instance, OFC is known to be modulated during odd-ball tasks through input from the basal forebrain (Nguyen and Lin, 2014) and more recently work in primates has started to reveal that OFC encoding of value is attentionally gated (McGinty, et al., 2015). Similarly, how does this speak to learning models based on attention such as the Pearce-Hall model?\n\n3) The paper is brief and relies on a small amount of data. From what I can tell, the key analysis is Figure 2C, which is described in subsection \u201cOrbitofrontal cortex activity is necessary for forming sensory associations\u201d. The thing I don't totally get is that the finding relies on a positive effect in the control condition and a null effect in the experimental condition (subsection \u201cOrbitofrontal cortex activity is necessary for forming sensory associations\u201d). Strictly speaking, this is invalid \u2013 the difference between significant and non-significant is not in itself significant (it can be and often is, but isn\u2019t necessarily so, Nieuwenhuis, Forstmann and Wagenmakers, 2011). This is especially important to address because the control effect is marginally significant (p=0.046). Anyway, it looks like it probably is significant, but that ought to be reported. (Another reviewer during consultation surmised that you did do this analysis but they weren't quite sure \"It looks like they have computed the interaction term and reported it 'however, there was a significant cue x group interaction (F(1,41)=4.57, p=0.04).'\".\n\n4) The second issue is that a disruption of effect, while it does demonstrate causality, has multiple possible interpretations. It could be that the optogenetic effect is, like, super-distracting, or causes a headache or something, and that causes the animal to get distracted and not do very well on the task. There are probably ways to deal with this concern, like showing other things that aren't disrupted. But in this case, I want to see that because we don't want to assume causality from any abolition of effect.\n",
+      "created_at": "2025-12-02T19:24:26.053551Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T19:24:26.053551Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T19:24:26.053551Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "25e95338-4277-4e3d-9ada-15715a98ec85",
+      "content_id": "aa387d34-e740-415f-9159-c6cd05f91435",
+      "claim_id": "C1",
+      "claim": "The orbitofrontal cortex (OFC) is necessary for inferring value in tests of model-based reasoning, including in sensory preconditioning.",
+      "claim_type": "EXPLICIT",
+      "source": "The orbitofrontal cortex (OFC) is necessary for inferring value in tests of model-based reasoning, including in sensory preconditioning.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research studies.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:24:26.053551Z"
+    },
+    {
+      "id": "f01c7d9b-09b7-4dcf-a209-9eeb68c2d8b6",
+      "content_id": "aa387d34-e740-415f-9159-c6cd05f91435",
+      "claim_id": "C2",
+      "claim": "Neural correlates of broader associative structure exist in OFC during the initial phase of sensory preconditioning.",
+      "claim_type": "EXPLICIT",
+      "source": "We recently reported neural correlates of such broader associative structure in OFC during the initial phase of sensory preconditioning (Sadacca et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim references a specific prior study by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:24:26.053551Z"
+    },
+    {
+      "id": "5a8434a3-7ef2-4b55-b35a-485a830195c2",
+      "content_id": "aa387d34-e740-415f-9159-c6cd05f91435",
+      "claim_id": "C3",
+      "claim": "Inhibition of OFC during cue-cue learning abolished value inference during the probe test.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that inhibition of OFC during cue-cue learning abolished value inference during the probe test, inference subsequently shown in control rats to be sensitive to devaluation of the expected reward.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the current study supported by experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:24:26.053551Z"
+    },
+    {
+      "id": "54fed9a3-de19-4e34-9b8e-978cceb3cefc",
+      "content_id": "aa387d34-e740-415f-9159-c6cd05f91435",
+      "claim_id": "C4",
+      "claim": "Value inference in control rats during the probe test is sensitive to devaluation of the expected reward.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that inhibition of OFC during cue-cue learning abolished value inference during the probe test, inference subsequently shown in control rats to be sensitive to devaluation of the expected reward.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding supported by experimental data from the devaluation experiment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:24:26.053551Z"
+    },
+    {
+      "id": "ad067d72-5576-4a9f-938b-e026eb10a7ec",
+      "content_id": "aa387d34-e740-415f-9159-c6cd05f91435",
+      "claim_id": "C5",
+      "claim": "OFC must be online during cue-cue learning for proper value inference.",
+      "claim_type": "EXPLICIT",
+      "source": "These results demonstrate that OFC must be online during cue-cue learning, consistent with the argument that the correlates previously observed are not simply downstream readouts of sensory processing and instead contribute to building the associative model supporting later behavior.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is drawn from the experimental data showing effects of OFC inhibition.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:24:26.053551Z"
+    },
+    {
+      "id": "67c58c94-cafb-49b1-ae09-a926bfa28fce",
+      "content_id": "aa387d34-e740-415f-9159-c6cd05f91435",
+      "claim_id": "C6",
+      "claim": "The neural correlates previously observed in OFC are not simply downstream readouts of sensory processing.",
+      "claim_type": "EXPLICIT",
+      "source": "These results demonstrate that OFC must be online during cue-cue learning, consistent with the argument that the correlates previously observed are not simply downstream readouts of sensory processing and instead contribute to building the associative model supporting later behavior.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the experimental results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:24:26.053551Z"
+    },
+    {
+      "id": "05f130b9-f4a7-4ce2-b986-3e04fc9219c0",
+      "content_id": "aa387d34-e740-415f-9159-c6cd05f91435",
+      "claim_id": "C7",
+      "claim": "OFC neural correlates contribute to building the associative model supporting later behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "These results demonstrate that OFC must be online during cue-cue learning, consistent with the argument that the correlates previously observed are not simply downstream readouts of sensory processing and instead contribute to building the associative model supporting later behavior.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the experimental results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:24:26.053551Z"
+    },
+    {
+      "id": "3333fbd7-e812-4810-a42e-22b0cd718cc1",
+      "content_id": "aa387d34-e740-415f-9159-c6cd05f91435",
+      "claim_id": "C8",
+      "claim": "Humans and laboratory animals cannot infer value in several situations when OFC function is impaired.",
+      "claim_type": "EXPLICIT",
+      "source": "This ability relies on a circuit involving the orbitofrontal cortex (OFC), as evidenced by the finding that humans and laboratory animals cannot infer value in several situations when OFC function is impaired (Gallagher et al., 1999; Izquierdo et al., 2004; McDannald et al., 2005; Takahashi et al., 2009; West et al., 2011; Gremel and Costa, 2013; Reber et al., 2017; Howard et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:24:26.053551Z"
+    },
+    {
+      "id": "d3cbaf7c-be90-46b2-9031-0eb33912e6d4",
+      "content_id": "aa387d34-e740-415f-9159-c6cd05f91435",
+      "claim_id": "C9",
+      "claim": "Model-based reasoning can be isolated in sensory preconditioning.",
+      "claim_type": "EXPLICIT",
+      "source": "Model-based reasoning can be isolated in sensory preconditioning (Brogden, 1939).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:24:26.053551Z"
+    },
+    {
+      "id": "783c9c64-c9b4-475e-bdc7-09e4d0198328",
+      "content_id": "aa387d34-e740-415f-9159-c6cd05f91435",
+      "claim_id": "C10",
+      "claim": "In sensory preconditioning, presentation of the never-reward-paired preconditioned stimulus will produce a strong food-approach response after one stimulus is paired with food.",
+      "claim_type": "EXPLICIT",
+      "source": "If one of these stimuli is thereafter paired with a biologically meaningful stimulus (e.g. food), presentation of the never-reward-paired preconditioned stimulus will produce a strong food-approach response.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the established behavioral phenomenon of sensory preconditioning.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:24:26.053551Z"
+    },
+    {
+      "id": "fc3d3453-6166-461c-ad00-d0202a7a7de8",
+      "content_id": "aa387d34-e740-415f-9159-c6cd05f91435",
+      "claim_id": "C11",
+      "claim": "The response to the preconditioned cue cannot be explained by model-free mechanisms.",
+      "claim_type": "EXPLICIT",
+      "source": "Because the preconditioned cue itself was never reinforced, this response to the preconditioned cue cannot be explained by model-free mechanisms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference based on the definition of model-free learning.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:24:26.053551Z"
+    },
+    {
+      "id": "c00d67b0-8872-45ec-899e-a35220c33b99",
+      "content_id": "aa387d34-e740-415f-9159-c6cd05f91435",
+      "claim_id": "C12",
+      "claim": "Preconditioned responding reflects the ability to infer value on-the-fly using knowledge about associative structure.",
+      "claim_type": "EXPLICIT",
+      "source": "Preconditioned responding is reflective of the ability of subjects to infer value on-the-fly using knowledge about the associative structure of the information acquired during preconditioning.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation based on established understanding of sensory preconditioning.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:24:26.053551Z"
+    },
+    {
+      "id": "5d3b2b34-05f0-414d-bed5-90285cf80149",
+      "content_id": "aa387d34-e740-415f-9159-c6cd05f91435",
+      "claim_id": "C13",
+      "claim": "Lateral OFC activity is necessary for inferring the value of never-reinforced sensory stimuli in the probe test at the end of sensory preconditioning.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous work from our lab has shown that the lateral OFC activity is necessary for inferring the value of never-reinforced sensory stimuli in the probe test at the end of sensory preconditioning (Jones et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior work from the authors' lab.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:24:26.053551Z"
+    },
+    {
+      "id": "934feb17-a879-4093-ab65-57488fb8c15f",
+      "content_id": "aa387d34-e740-415f-9159-c6cd05f91435",
+      "claim_id": "C14",
+      "claim": "Neural activity in the OFC reflects not only value predictions in the final probe test, but also tracks acquisition of sensory-sensory associations in the initial phase of training.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, subsequent single-unit recording showed that neural activity in the OFC reflects not only the value predictions in the final probe test, but also tracks acquisition of the sensory-sensory associations in the initial phase of training (Sadacca et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior single-unit recording study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:24:26.053551Z"
+    },
+    {
+      "id": "fb9eadb9-eb74-432c-8711-c120240ad1c9",
+      "content_id": "aa387d34-e740-415f-9159-c6cd05f91435",
+      "claim_id": "C15",
+      "claim": "OFC has a wider role in building associative models, independent of encoding overt biological significance or value.",
+      "claim_type": "EXPLICIT",
+      "source": "This result suggested a wider role for OFC in building associative models, independent of encoding of overt biological significance or value, the role often ascribed to this region (Kringelbach, 2005; Padoa-Schioppa and Assad, 2006; Padoa-Schioppa, 2011; Levy and Glimcher, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from prior recording results, contrasted with cited literature.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:24:26.053551Z"
+    },
+    {
+      "id": "2de6730a-d646-4426-b938-735f93c44a35",
+      "content_id": "aa387d34-e740-415f-9159-c6cd05f91435",
+      "claim_id": "C16",
+      "claim": "Single-unit recording is correlative and cannot demonstrate that OFC activity is necessary for proper acquisition of sensory-sensory associations during preconditioning.",
+      "claim_type": "EXPLICIT",
+      "source": "Of course, single-unit recording is correlative and cannot demonstrate that OFC activity is necessary for proper acquisition of the sensory-sensory associations during preconditioning.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the limitations of correlative methods, based on general scientific knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:24:26.053551Z"
+    },
+    {
+      "id": "a1821996-7db8-4545-aa98-8d5db62edf85",
+      "content_id": "aa387d34-e740-415f-9159-c6cd05f91435",
+      "claim_id": "C17",
+      "claim": "The correlates observed in OFC could simply reflect activity in primary sensory or other cortical areas that are necessary in the first phase.",
+      "claim_type": "EXPLICIT",
+      "source": "The correlates could simply reflect activity in primary sensory (Engineer et al., 2008; Garrido et al., 2009; Headley and Weinberger, 2015) or other cortical areas that are necessary in the first phase (Port et al., 1987; Robinson et al., 2011; Robinson et al., 2014; Fournier et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative alternative hypothesis supported by citations.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:24:26.053551Z"
+    },
+    {
+      "id": "8843f50a-1432-4e19-8c16-cb496e302e18",
+      "content_id": "aa387d34-e740-415f-9159-c6cd05f91435",
+      "claim_id": "C18",
+      "claim": "If OFC correlates simply reflect downstream processing, then interference with OFC during preconditioning should not affect responding to the preconditioned cue during the probe test.",
+      "claim_type": "EXPLICIT",
+      "source": "If this is the case, then interference with processing in OFC during preconditioning should not affect responding to the preconditioned cue during the probe test.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical prediction based on a hypothetical scenario.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:24:26.053551Z"
+    },
+    {
+      "id": "9c3e2b15-3572-4c0e-a023-fbc1c009c3a1",
+      "content_id": "aa387d34-e740-415f-9159-c6cd05f91435",
+      "claim_id": "C19",
+      "claim": "If OFC representations contribute to building the task model, then interference with OFC during preconditioning should affect probe test responding.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, if the representations of the sensory-sensory associations formed in OFC in the initial phase contribute to building the model of the task used to infer value and drive responding in the probe test, then interference with processing in OFC during preconditioning should affect probe test responding, either directly impairing normal responding to the preconditioned cue, if responding in our task is entirely model-based as we have suggested (Jones et al., 2012; Sadacca et al., 2018), or by making any responding insensitive to devaluation of the predicted food reward, if responding in the probe is partly maintained by transfer of cached value to the cue during conditioning (Doll and Daw, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical prediction based on a hypothetical scenario, supported by citations.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:24:26.053551Z"
+    },
+    {
+      "id": "0e541694-4442-4374-ac7f-6d3bb1f2df51",
+      "content_id": "aa387d34-e740-415f-9159-c6cd05f91435",
+      "claim_id": "C20",
+      "claim": "Interfering with processing in OFC during the preconditioning phase completely abolished responding to the preconditioned cue in the probe test after conditioning.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that interfering with processing in OFC during the preconditioning phase completely abolished responding to the preconditioned cue in the probe test after conditioning, responding that in controls was subsequently disrupted by devaluation of the expected food reward.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study supported by experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:24:26.053551Z"
+    },
+    {
+      "id": "a323a579-3c09-4756-96b9-3cba47de6297",
+      "content_id": "aa387d34-e740-415f-9159-c6cd05f91435",
+      "claim_id": "C21",
+      "claim": "Responding to the preconditioned cue in controls was disrupted by devaluation of the expected food reward.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that interfering with processing in OFC during the preconditioning phase completely abolished responding to the preconditioned cue in the probe test after conditioning, responding that in controls was subsequently disrupted by devaluation of the expected food reward.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study supported by experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:24:26.053551Z"
+    },
+    {
+      "id": "3a7f5e10-1a3b-4970-b944-dbff025b1163",
+      "content_id": "aa387d34-e740-415f-9159-c6cd05f91435",
+      "claim_id": "C22",
+      "claim": "The NpHR experimental group received AAV5 containing halorhodopsin (NpHR) linked to a CamKII\u03b1 promoter.",
+      "claim_type": "EXPLICIT",
+      "source": "One group, the NpHR experimental group (N = 21), received AAV5 containing halorhodopsin (NpHR) linked to a CamKII\u03b1 promoter.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental methods used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:24:26.053551Z"
+    },
+    {
+      "id": "05335f43-d869-455b-82c0-60b11d4f56a0",
+      "content_id": "aa387d34-e740-415f-9159-c6cd05f91435",
+      "claim_id": "C23",
+      "claim": "NpHR is a light gated chloride pump that induces neuronal hyperpolarization to allow real-time neuronal inactivation.",
+      "claim_type": "EXPLICIT",
+      "source": "NpHR is a light gated chloride pump that induces neuronal hyperpolarization to allow real-time neuronal inactivation (Gradinaru et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the optogenetic tool, supported by citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:24:26.053551Z"
+    },
+    {
+      "id": "f7471c6d-2967-4a52-ac70-4b9f6a114294",
+      "content_id": "aa387d34-e740-415f-9159-c6cd05f91435",
+      "claim_id": "C24",
+      "claim": "The eYFP control group received the same virus but without the opsin.",
+      "claim_type": "EXPLICIT",
+      "source": "The other group of rats, the eYFP control group (N = 22), received the same virus but without the opsin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the control condition in the experimental design.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:24:26.053551Z"
+    },
+    {
+      "id": "5e2d8309-f5e5-400a-a9a4-4aa47d4bc9bf",
+      "content_id": "aa387d34-e740-415f-9159-c6cd05f91435",
+      "claim_id": "C25",
+      "claim": "Both viruses contained eYFP for histological verification of successful transfection.",
+      "claim_type": "EXPLICIT",
+      "source": "Both viruses contained eYFP for histological verification of successful transfection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:24:26.053551Z"
+    },
+    {
+      "id": "ad18a564-4a2a-4433-a569-3c07f1c6e4d8",
+      "content_id": "aa387d34-e740-415f-9159-c6cd05f91435",
+      "claim_id": "C26",
+      "claim": "All rats had fiberoptic probes implanted bilaterally overlying the injection site to allow light delivery.",
+      "claim_type": "EXPLICIT",
+      "source": "All rats also had fiberoptic probes implanted bilaterally overlying the injection site to allow light delivery.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the surgical procedure used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:24:26.053551Z"
+    },
+    {
+      "id": "34542db6-fe4a-402f-87ff-1be053642e07",
+      "content_id": "aa387d34-e740-415f-9159-c6cd05f91435",
+      "claim_id": "C27",
+      "claim": "Responding to the food cup during preconditioning was negligible, and there were no differences between cues or groups.",
+      "claim_type": "EXPLICIT",
+      "source": "No reward was presented, so responding to the food cup during this phase was negligible, and there were no differences between cues or groups (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data and reference to Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:24:26.053551Z"
+    },
+    {
+      "id": "ab03b047-d13e-4404-b5c0-f361b0b9c219",
+      "content_id": "aa387d34-e740-415f-9159-c6cd05f91435",
+      "claim_id": "C28",
+      "claim": "A two-way ANOVA revealed no main effects of cue (F(3,123)=0.43, p=0.73) or group (F(1,41)=1.99, p=0.17) and no group x cue interaction (F(3,123)=0.86, p=0.46) during preconditioning.",
+      "claim_type": "EXPLICIT",
+      "source": "A two-way ANOVA with cue as a within subjects factor and group as a between subjects factor revealed no main effects of cue (F(3,123)=0.43, p=0.73) or group (F(1,41)=1.99, p=0.17) and no group x cue interaction (F(3,123)=0.86, p=0.46).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical analysis of the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:24:26.053551Z"
+    },
+    {
+      "id": "114e6fe8-7fa3-41a0-82fc-2f1f97c38156",
+      "content_id": "aa387d34-e740-415f-9159-c6cd05f91435",
+      "claim_id": "C29",
+      "claim": "Rats developed a conditioned response to B with training, responding more at the food cup during cue B than during cue D.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, rats developed a conditioned response to B with training, responding more at the food cup during cue B than during cue D, and there was no difference between groups (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data and reference to Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:24:26.053551Z"
+    },
+    {
+      "id": "e7cf7b84-7982-4ae6-8935-5a8d07bf8c54",
+      "content_id": "aa387d34-e740-415f-9159-c6cd05f91435",
+      "claim_id": "C30",
+      "claim": "There was no difference between groups in conditioned responding during the conditioning phase.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, rats developed a conditioned response to B with training, responding more at the food cup during cue B than during cue D, and there was no difference between groups (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data and reference to Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:24:26.053551Z"
+    },
+    {
+      "id": "d2f811c4-3d10-40f0-8898-a3181f9205da",
+      "content_id": "aa387d34-e740-415f-9159-c6cd05f91435",
+      "claim_id": "C31",
+      "claim": "A three-way mixed-design ANOVA revealed significant main effects of cue (F(1,41)=143.00, p<0.0001) and session (F(5,205)=36.23, p<0.0001), and a significant session x cue interaction (F(5,205)=9.76, p<0.0001) during conditioning.",
+      "claim_type": "EXPLICIT",
+      "source": "A three-way mixed-design (cue, session within subjects factors; group between subjects factor) ANOVA revealed significant main effects of cue (F(1,41)=143.00, p<0.0001) and session (F(5,205)=36.23, p<0.0001), and a significant session x cue interaction (F(5,205)=9.76, p<0.0001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical analysis of the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:24:26.053551Z"
+    },
+    {
+      "id": "571651b9-532f-457f-8ef2-3ba9828fb776",
+      "content_id": "aa387d34-e740-415f-9159-c6cd05f91435",
+      "claim_id": "C32",
+      "claim": "There were no main effects of, nor any interactions with, group during conditioning.",
+      "claim_type": "EXPLICIT",
+      "source": "Critically, there were no main effects of, nor any interactions with, group (main: F(1,41)=0.02, p=0.90; session x group: F(5,205)=1.72, p=0.13; group x cue interaction: F(1,41)=0.53, p=0.47).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical analysis of the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:24:26.053551Z"
+    },
+    {
+      "id": "b1709354-3f07-4130-baea-ad747f784cc3",
+      "content_id": "aa387d34-e740-415f-9159-c6cd05f91435",
+      "claim_id": "C33",
+      "claim": "Control rats responded more to A than C during the probe test.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that control rats responded more to A than C, and NpHR rats did not (Figure 2C\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data and reference to Figures 2C-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:24:26.053551Z"
+    },
+    {
+      "id": "58e5798e-ccb7-450c-bbdf-efc76f6f8a94",
+      "content_id": "aa387d34-e740-415f-9159-c6cd05f91435",
+      "claim_id": "C34",
+      "claim": "NpHR rats did not respond more to A than C during the probe test.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that control rats responded more to A than C, and NpHR rats did not (Figure 2C\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data and reference to Figures 2C-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:24:26.053551Z"
+    },
+    {
+      "id": "31016b77-4a9c-417e-9ed6-515df4335055",
+      "content_id": "aa387d34-e740-415f-9159-c6cd05f91435",
+      "claim_id": "C35",
+      "claim": "A two-way mixed-design ANOVA revealed no main effects of cue (F(1,41)=1.33, p=0.26) or group (F(1,41)=0.00, p=0.99) during the probe test.",
+      "claim_type": "EXPLICIT",
+      "source": "A two-way mixed-design ANOVA revealed no main effects of cue (F(1,41)=1.33, p=0.26) or group (F(1,41)=0.00, p=0.99).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical analysis of the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:24:26.053551Z"
+    },
+    {
+      "id": "3d6c33f9-f3a3-46f6-8803-180c2eac5f43",
+      "content_id": "aa387d34-e740-415f-9159-c6cd05f91435",
+      "claim_id": "C36",
+      "claim": "There was a significant cue x group interaction (F(1,41)=4.57, p=0.04) during the probe test.",
+      "claim_type": "EXPLICIT",
+      "source": "There was a significant cue x group interaction (F(1,41)=4.57, p=0.04); ergo, the effect of cue during the probe test (A-C) did depend on group (eYFP control \u2013 NpHR OFC inhibition).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical analysis of the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:24:26.053551Z"
+    },
+    {
+      "id": "00d165e2-0ada-4df3-9b22-2059f227874c",
+      "content_id": "aa387d34-e740-415f-9159-c6cd05f91435",
+      "claim_id": "C37",
+      "claim": "The effect of cue during the probe test (A-C) did depend on group (eYFP control \u2013 NpHR OFC inhibition).",
+      "claim_type": "EXPLICIT",
+      "source": "There was a significant cue x group interaction (F(1,41)=4.57, p=0.04); ergo, the effect of cue during the probe test (A-C) did depend on group (eYFP control \u2013 NpHR OFC inhibition).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the statistical analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:24:26.053551Z"
+    },
+    {
+      "id": "e57334fe-f794-4cfe-8ac2-b643362e7df3",
+      "content_id": "aa387d34-e740-415f-9159-c6cd05f91435",
+      "claim_id": "C38",
+      "claim": "Posthoc comparisons revealed responding to A was significantly higher than C in controls (p=0.046).",
+      "claim_type": "EXPLICIT",
+      "source": "Posthoc comparisons revealed responding to A was significantly higher than C in controls (p=0.046), but not in NpHR rats (p=0.75).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical analysis of the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:24:26.053551Z"
+    },
+    {
+      "id": "fdd62f15-d5a4-42c7-94a6-04ea6eb935ab",
+      "content_id": "aa387d34-e740-415f-9159-c6cd05f91435",
+      "claim_id": "C39",
+      "claim": "Posthoc comparisons revealed responding to A was not significantly higher than C in NpHR rats (p=0.75).",
+      "claim_type": "EXPLICIT",
+      "source": "Posthoc comparisons revealed responding to A was significantly higher than C in controls (p=0.046), but not in NpHR rats (p=0.75).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical analysis of the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:24:26.053551Z"
+    },
+    {
+      "id": "554f0750-a30c-4fb0-8f8f-23b10b18685b",
+      "content_id": "aa387d34-e740-415f-9159-c6cd05f91435",
+      "claim_id": "C40",
+      "claim": "A subset of the eYFP rats (n = 13) were split into two groups (paired and unpaired) with equal responding to A and C.",
+      "claim_type": "EXPLICIT",
+      "source": "To confirm the associative basis of responding to the preconditioned cue observed in controls, a subset of the eYFP rats (n = 13) were split into two groups (paired and unpaired) with equal responding to A and C (no main effect of group (F(1,11)=0.06, p=0.81) or group x cue interaction (F(1,11)=2.60, p=0.13)).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental design for the devaluation test.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:24:26.053551Z"
+    },
+    {
+      "id": "ca512c3a-85fc-4ed8-8978-c3a4788a8434",
+      "content_id": "aa387d34-e740-415f-9159-c6cd05f91435",
+      "claim_id": "C41",
+      "claim": "All rats consumed all pellets during the first free exposure session.",
+      "claim_type": "EXPLICIT",
+      "source": "All rats consumed all pellets during the first free exposure session.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the experimental procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:24:26.053551Z"
+    },
+    {
+      "id": "c98a7b20-5cb1-475b-8668-ce4b57c39cc4",
+      "content_id": "aa387d34-e740-415f-9159-c6cd05f91435",
+      "claim_id": "C42",
+      "claim": "The paired group demonstrated a conditioned taste aversion, consuming significantly fewer pellets than in the first test (t(5) = 4.95, p=0.001).",
+      "claim_type": "EXPLICIT",
+      "source": "Subsequently, during the second free exposure session, the paired group demonstrated a conditioned taste aversion, consuming significantly fewer pellets than in the first test (t(5) = 4.95, p=0.001, second exposure mean = 2.25 g, range = 0.6\u20133.0 g)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data and statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:24:26.053551Z"
+    },
+    {
+      "id": "81c47ca2-334e-4f8e-bead-da6e7b010c9d",
+      "content_id": "aa387d34-e740-415f-9159-c6cd05f91435",
+      "claim_id": "C43",
+      "claim": "Responding extinguished quickly in both groups during the devaluation probe, however it was much higher in the unpaired group on the initial trials.",
+      "claim_type": "EXPLICIT",
+      "source": "On probe, responding extinguished quickly in both groups, however it was much higher in the unpaired group on the initial trials (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data and reference to Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:24:26.053551Z"
+    },
+    {
+      "id": "88609c57-ec52-4252-b706-3cf31e83694d",
+      "content_id": "aa387d34-e740-415f-9159-c6cd05f91435",
+      "claim_id": "C44",
+      "claim": "A two-way ANOVA revealed a significant main effect of trial block (F(2,22)=4.91, p=0.02) and significant trial block x group interaction (F(2,22)=4.58, p=0.02) during the devaluation probe.",
+      "claim_type": "EXPLICIT",
+      "source": "A two-way ANOVA revealed a significant main effect of trial block (F(2,22)=4.91, p=0.02) and significant trial block x group interaction (F(2,22)=4.58, p=0.02).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical analysis of the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:24:26.053551Z"
+    },
+    {
+      "id": "453ab78e-a8d9-478f-8195-f6418e337065",
+      "content_id": "aa387d34-e740-415f-9159-c6cd05f91435",
+      "claim_id": "C45",
+      "claim": "Post hoc comparisons revealed responding was significantly higher to A in the unpaired group than the paired group during the first trial block (p=0.02).",
+      "claim_type": "EXPLICIT",
+      "source": "Post hoc comparisons revealed responding was significantly higher to A in the unpaired group than the paired group during the first trial block (p=0.02; Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statistical analysis of the experimental data, with reference to Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:24:26.053551Z"
+    },
+    {
+      "id": "e1bfd66b-c4a8-4a71-ab1a-1d33efa3ac2f",
+      "content_id": "aa387d34-e740-415f-9159-c6cd05f91435",
+      "claim_id": "C46",
+      "claim": "The change in responding was accompanied by reduced consumption of the outcome by rats in the paired group (t(11) = 4.95, p=0.0004).",
+      "claim_type": "EXPLICIT",
+      "source": "This change in responding was accompanied by reduced consumption of the outcome by rats in the paired group (t(11) = 4.95, p=0.0004; Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data and statistical analysis, with reference to Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:24:26.053551Z"
+    },
+    {
+      "id": "c0e6d643-a391-49f4-b49e-885c84387c1c",
+      "content_id": "aa387d34-e740-415f-9159-c6cd05f91435",
+      "claim_id": "C47",
+      "claim": "The OFC is generally thought to contribute to behavior where there are changes in, or computations of, value.",
+      "claim_type": "EXPLICIT",
+      "source": "While the OFC is generally thought to contribute to behavior where there are changes in, or computations of, value (Gallagher et al., 1999; Kringelbach, 2005; Padoa-Schioppa and Assad, 2006; Schoenbaum et al., 2011), our lab recently showed that neural activity in lateral OFC can also track the development of valueless sensory-sensory associative information in a sensory preconditioning task (Sadacca et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:24:26.053551Z"
+    },
+    {
+      "id": "02bd88ed-0fe7-48ff-b3e5-5fce5ba1b65d",
+      "content_id": "aa387d34-e740-415f-9159-c6cd05f91435",
+      "claim_id": "C48",
+      "claim": "Neural activity in lateral OFC can track the development of valueless sensory-sensory associative information in a sensory preconditioning task.",
+      "claim_type": "EXPLICIT",
+      "source": "While the OFC is generally thought to contribute to behavior where there are changes in, or computations of, value (Gallagher et al., 1999; Kringelbach, 2005; Padoa-Schioppa and Assad, 2006; Schoenbaum et al., 2011), our lab recently showed that neural activity in lateral OFC can also track the development of valueless sensory-sensory associative information in a sensory preconditioning task (Sadacca et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:24:26.053551Z"
+    },
+    {
+      "id": "7b650d21-56fd-4dff-ba13-23de44b46bed",
+      "content_id": "aa387d34-e740-415f-9159-c6cd05f91435",
+      "claim_id": "C49",
+      "claim": "Performance in the final phase of sensory preconditioning is sensitive to OFC manipulations in both rats and humans.",
+      "claim_type": "EXPLICIT",
+      "source": "While performance in the final phase of this task is ultimately sensitive to OFC manipulations in both rats (Jones et al., 2012) and humans (Wang et al., 2020b), the development of neural correlates of neutral sensory associations in the initial phase of training suggested that OFC might not be restricted to encoding information once clear biological significance is established and instead could be more widely involved in representing structure among features of the environment, with value being just one of these features.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:24:26.053551Z"
+    },
+    {
+      "id": "3c6d80ee-b72c-4c2b-8bb4-7123a72a9196",
+      "content_id": "aa387d34-e740-415f-9159-c6cd05f91435",
+      "claim_id": "C50",
+      "claim": "OFC might be more widely involved in representing structure among features of the environment, with value being just one of these features.",
+      "claim_type": "EXPLICIT",
+      "source": "While performance in the final phase of this task is ultimately sensitive to OFC manipulations in both rats (Jones et al., 2012) and humans (Wang et al., 2020b), the development of neural correlates of neutral sensory associations in the initial phase of training suggested that OFC might not be restricted to encoding information once clear biological significance is established and instead could be more widely involved in representing structure among features of the environment, with value being just one of these features.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative inference drawn from prior observations.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:24:26.053551Z"
+    },
+    {
+      "id": "b5f9b121-59c5-411f-8545-19c09c1de553",
+      "content_id": "aa387d34-e740-415f-9159-c6cd05f91435",
+      "claim_id": "C51",
+      "claim": "Optogenetically-inactivating the OFC during the initial phase of preconditioning disrupted performance in the final phase of the task.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we tested this question by optogenetically-inactivating the OFC during the initial phase of preconditioning, when correlates were previously observed, and we found that this manipulation also disrupted performance in the final phase of the task.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study supported by experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:24:26.053551Z"
+    },
+    {
+      "id": "569d58bb-1af6-4a0a-bede-8f6d3b82bc22",
+      "content_id": "aa387d34-e740-415f-9159-c6cd05f91435",
+      "claim_id": "C52",
+      "claim": "The associative correlates observed during preconditioning are not simply downstream reflections of sensory or other cortical processing.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings are consistent with the argument that the associative correlates we observed during preconditioning in our prior study are not simply downstream reflections of sensory or other cortical processing and instead must contribute to the construction of the model used to guide responding in the final probe test.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the experimental results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:24:26.053551Z"
+    },
+    {
+      "id": "347fea08-1cc4-4b8c-951b-72721c88cf6d",
+      "content_id": "aa387d34-e740-415f-9159-c6cd05f91435",
+      "claim_id": "C53",
+      "claim": "The associative correlates must contribute to the construction of the model used to guide responding in the final probe test.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings are consistent with the argument that the associative correlates we observed during preconditioning in our prior study are not simply downstream reflections of sensory or other cortical processing and instead must contribute to the construction of the model used to guide responding in the final probe test.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the experimental results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:24:26.053551Z"
+    },
+    {
+      "id": "2cf30486-f865-466e-a622-cb3a86e7641f",
+      "content_id": "aa387d34-e740-415f-9159-c6cd05f91435",
+      "claim_id": "C54",
+      "claim": "OFC represents not only value, but also features of the environment such as trial type, sequence, direction, and goal location.",
+      "claim_type": "EXPLICIT",
+      "source": "These data are also in accord with the findings that OFC represents not only value, but also features of the environment such as trial type (Lopatina et al., 2017), sequence (Zhou et al., 2019), direction, and goal location (Feierstein et al., 2006; Mainen and Kepecs, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:24:26.053551Z"
+    },
+    {
+      "id": "f086c3af-13ec-41e9-871c-5d64b15575d0",
+      "content_id": "aa387d34-e740-415f-9159-c6cd05f91435",
+      "claim_id": "C55",
+      "claim": "Generalization or failure to treat cues differently would be the final common outcome of disrupting the detailed encoding of their identities and different associative relationships to reward.",
+      "claim_type": "EXPLICIT",
+      "source": "In considering this possibility, we would first note that generalization or failure to treat these cues differently would be to some extent the final common outcome of disrupting the more detailed encoding of their identities and different associative relationships to reward that we argue is affected.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference about the relationship between mechanisms.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:24:26.053551Z"
+    },
+    {
+      "id": "3a7fd33b-46de-416a-8d4a-65abf0f05a1b",
+      "content_id": "aa387d34-e740-415f-9159-c6cd05f91435",
+      "claim_id": "C56",
+      "claim": "Generalization as a primary cause is unlikely given the low overall levels of responding to preconditioned cues during the probe, relative to responses to the reward-paired cue.",
+      "claim_type": "EXPLICIT",
+      "source": "However we believe that generalization as a primary cause is unlikely given the low overall levels of responding to these cues during the probe, relative to responses to the reward-paired cue.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:24:26.053551Z"
+    },
+    {
+      "id": "bd0fafcf-b950-4aea-ac5d-28d07831a505",
+      "content_id": "aa387d34-e740-415f-9159-c6cd05f91435",
+      "claim_id": "C57",
+      "claim": "There is no evidence from other studies that the OFC is necessary for discriminating the sensory properties of cues.",
+      "claim_type": "EXPLICIT",
+      "source": "There is also no evidence from other studies that the OFC is necessary for discriminating the sensory properties of cues; rats without OFC or in whom the OFC is inactivated perform well in a number of settings that require them to distinguish different cues to guide responding (Schoenbaum et al., 2002; Boulougouris et al., 2007; Takahashi et al., 2009; Jones et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:24:26.053551Z"
+    },
+    {
+      "id": "5dd794db-e11b-472a-ba00-5d77bad20dc0",
+      "content_id": "aa387d34-e740-415f-9159-c6cd05f91435",
+      "claim_id": "C58",
+      "claim": "OFC was inhibited only during cue presentation, precisely when single unit correlates of cue-cue encoding were previously observed.",
+      "claim_type": "EXPLICIT",
+      "source": "We inhibited OFC only during cue presentation, precisely when we previously observed single unit correlates of cue-cue encoding; our design did not include control conditions in which similar inhibition was done before or after the cues or during the intertrial intervals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental design.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:24:26.053551Z"
+    },
+    {
+      "id": "2d056c40-4112-4524-8bbc-2b2a2e3e2c14",
+      "content_id": "aa387d34-e740-415f-9159-c6cd05f91435",
+      "claim_id": "C59",
+      "claim": "The design did not include control conditions in which similar inhibition was done before or after the cues or during the intertrial intervals.",
+      "claim_type": "EXPLICIT",
+      "source": "We inhibited OFC only during cue presentation, precisely when we previously observed single unit correlates of cue-cue encoding; our design did not include control conditions in which similar inhibition was done before or after the cues or during the intertrial intervals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a limitation of the experimental design.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:24:26.053551Z"
+    },
+    {
+      "id": "094056d0-91b1-4e94-b910-32c892be3f84",
+      "content_id": "aa387d34-e740-415f-9159-c6cd05f91435",
+      "claim_id": "C60",
+      "claim": "OFC must be online at the time the neural correlates were observed.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, while we can conclude that OFC must be online at the time the neural correlates were observed, we cannot conclude that it does not need to be online at any other time during the first phase.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:24:26.053551Z"
+    },
+    {
+      "id": "00100788-5905-42cc-b6ab-862a300e49cd",
+      "content_id": "aa387d34-e740-415f-9159-c6cd05f91435",
+      "claim_id": "C61",
+      "claim": "We cannot conclude that OFC does not need to be online at any other time during the first phase.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, while we can conclude that OFC must be online at the time the neural correlates were observed, we cannot conclude that it does not need to be online at any other time during the first phase.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This acknowledges a limitation in what can be concluded from the experiment.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:24:26.053551Z"
+    },
+    {
+      "id": "7de6df54-c7ef-4ac8-ac78-fa0e54799a87",
+      "content_id": "aa387d34-e740-415f-9159-c6cd05f91435",
+      "claim_id": "C62",
+      "claim": "OFC can be inactivated briefly between trials without affecting OFC-dependent learning and behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "Although OFC can be inactivated briefly between trials without affecting OFC-dependent learning and behavior (Takahashi et al., 2013), we would not be surprised if processing outside the strictly defined cue period \u2013 say immediately before or after \u2013 were also necessary for normal learning.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:24:26.053551Z"
+    },
+    {
+      "id": "9557f4c1-6dcc-4916-92fa-e9dccbb305e3",
+      "content_id": "aa387d34-e740-415f-9159-c6cd05f91435",
+      "claim_id": "C63",
+      "claim": "Processing outside the strictly defined cue period might also be necessary for normal learning.",
+      "claim_type": "EXPLICIT",
+      "source": "Although OFC can be inactivated briefly between trials without affecting OFC-dependent learning and behavior (Takahashi et al., 2013), we would not be surprised if processing outside the strictly defined cue period \u2013 say immediately before or after \u2013 were also necessary for normal learning.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about what might be found in future experiments.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:24:26.053551Z"
+    },
+    {
+      "id": "85f55d9b-b7c0-4bc5-a46a-bf7a11bbf2be",
+      "content_id": "aa387d34-e740-415f-9159-c6cd05f91435",
+      "claim_id": "C64",
+      "claim": "Simply delivering light during the cue period is not sufficient to produce the observed effects.",
+      "claim_type": "EXPLICIT",
+      "source": "While we know from our control group, that simply delivering light during the cue period is not sufficient, perhaps inhibiting OFC neurons during this period distracts the rats, because it is rewarding or punishing or for some other reason.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the control group data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:24:26.053551Z"
+    },
+    {
+      "id": "3b227bbc-aeb4-4bc7-91d7-a7c406c1f854",
+      "content_id": "aa387d34-e740-415f-9159-c6cd05f91435",
+      "claim_id": "C65",
+      "claim": "There was no evidence that OFC inhibition impacted learning and responding to cues in the later periods of the task.",
+      "claim_type": "EXPLICIT",
+      "source": "If this were the case, then we would have expected to see an impact of this on learning and responding to these cues in the later periods of the task. We did not see any evidence of this.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:24:26.053551Z"
+    },
+    {
+      "id": "830c2b01-bf6e-49f0-8dd9-fa5e66233bb3",
+      "content_id": "aa387d34-e740-415f-9159-c6cd05f91435",
+      "claim_id": "C66",
+      "claim": "Brief periods of OFC inhibition often have minimal or no effects on ongoing behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "Further we know from a number of prior studies that brief periods of OFC inhibition, similar to that employed here, often have minimal or no effects on ongoing behavior (Takahashi et al., 2013; Gardner et al., 2017; Gardner et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:24:26.053551Z"
+    },
+    {
+      "id": "f36d92a9-6bbb-47ca-a675-43802038a67f",
+      "content_id": "aa387d34-e740-415f-9159-c6cd05f91435",
+      "claim_id": "C67",
+      "claim": "Brief OFC inhibition is not, by itself, rewarding, painful or otherwise distracting.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest this is not, by itself, rewarding, painful or otherwise distracting.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from cited prior research.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:24:26.053551Z"
+    },
+    {
+      "id": "92dca330-edaf-4604-8f3d-3ccd629bfe21",
+      "content_id": "aa387d34-e740-415f-9159-c6cd05f91435",
+      "claim_id": "C68",
+      "claim": "Lateral OFC inactivation is not sufficient to produce state-dependent learning.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, it has been shown that lateral OFC inactivation is not sufficient to produce state-dependent learning, which provides very strong evidence that it does not create a tangible experience in and of itself (Panayi and Killcross, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:24:26.053551Z"
+    },
+    {
+      "id": "887ea26e-c231-468f-bb19-abeddc14a3cb",
+      "content_id": "aa387d34-e740-415f-9159-c6cd05f91435",
+      "claim_id": "C69",
+      "claim": "All rats received food cup approach shaping prior to preconditioning.",
+      "claim_type": "EXPLICIT",
+      "source": "A final consideration is that all rats received food cup approach shaping prior to preconditioning.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:24:26.053551Z"
+    },
+    {
+      "id": "31362779-362a-406e-8451-ae9fb80286c4",
+      "content_id": "aa387d34-e740-415f-9159-c6cd05f91435",
+      "claim_id": "C70",
+      "claim": "Food cup approach shaping may change the salience of the conditioning chamber context and cause increased attention to the cues during preconditioning.",
+      "claim_type": "EXPLICIT",
+      "source": "It is possible that this changes the salience of the conditioning chamber context and causes increased attention to the cues during preconditioning, which may facilitate learning.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about a possible mechanism.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:24:26.053551Z"
+    },
+    {
+      "id": "c367b4d5-201e-4957-869d-fd5981a7aac8",
+      "content_id": "aa387d34-e740-415f-9159-c6cd05f91435",
+      "claim_id": "C71",
+      "claim": "OFC contributes to risk, uncertainty and salience processing.",
+      "claim_type": "EXPLICIT",
+      "source": "This idea would be consistent with results showing correlates of risk (O'Neill and Schultz, 2010; Ogawa et al., 2013), uncertainty (van Duuren et al., 2009) and salience (Ogawa et al., 2013) in OFC neurons, as well as the finding that OFC value coding is attentionally gated (McGinty et al., 2016) and active in auditory oddball task (Nguyen and Lin, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:24:26.053551Z"
+    },
+    {
+      "id": "1c1a2a91-6c6a-4219-ac46-924740c45bc6",
+      "content_id": "aa387d34-e740-415f-9159-c6cd05f91435",
+      "claim_id": "C72",
+      "claim": "OFC value coding is attentionally gated.",
+      "claim_type": "EXPLICIT",
+      "source": "This idea would be consistent with results showing correlates of risk (O'Neill and Schultz, 2010; Ogawa et al., 2013), uncertainty (van Duuren et al., 2009) and salience (Ogawa et al., 2013) in OFC neurons, as well as the finding that OFC value coding is attentionally gated (McGinty et al., 2016) and active in auditory oddball task (Nguyen and Lin, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:24:26.053551Z"
+    },
+    {
+      "id": "e52a81ce-82b8-472c-abb8-58e55fd4cecc",
+      "content_id": "aa387d34-e740-415f-9159-c6cd05f91435",
+      "claim_id": "C73",
+      "claim": "OFC is active in auditory oddball task.",
+      "claim_type": "EXPLICIT",
+      "source": "This idea would be consistent with results showing correlates of risk (O'Neill and Schultz, 2010; Ogawa et al., 2013), uncertainty (van Duuren et al., 2009) and salience (Ogawa et al., 2013) in OFC neurons, as well as the finding that OFC value coding is attentionally gated (McGinty et al., 2016) and active in auditory oddball task (Nguyen and Lin, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:24:26.053551Z"
+    },
+    {
+      "id": "fdf23f37-0f58-4f3e-8c25-8ebacd9c9b96",
+      "content_id": "aa387d34-e740-415f-9159-c6cd05f91435",
+      "claim_id": "C74",
+      "claim": "The role OFC plays in supporting salience is secondary to the associative learning role that OFC supports.",
+      "claim_type": "EXPLICIT",
+      "source": "However, while it is possible that inactivating OFC affected learning of the sensory-sensory associations by interfering with a primary role for OFC in supporting the context or even cue salience, it seems more parsimonious to us to propose that the role OFC plays in supporting salience is secondary to the associative learning role that OFC clearly supports.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation of the results.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:24:26.053551Z"
+    },
+    {
+      "id": "f6c4aa39-5a5d-4276-8d0d-0aeeb0d34241",
+      "content_id": "aa387d34-e740-415f-9159-c6cd05f91435",
+      "claim_id": "C75",
+      "claim": "Attentional models link cue salience to associative strength \u2013 changes in cue associative strength drive changes in salience.",
+      "claim_type": "EXPLICIT",
+      "source": "This idea is consistent with attentional models, both old and new, that link cue salience to associative strength \u2013 changes in cue associative strength drive changes in salience (Mackintosh, 1975; Pearce and Hall, 1980; Haselgrove et al., 2010; Esber and Haselgrove, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to theoretical models.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:24:26.053551Z"
+    },
+    {
+      "id": "a7ede229-1b37-4679-b50f-7489a3eb2f71",
+      "content_id": "aa387d34-e740-415f-9159-c6cd05f91435",
+      "claim_id": "C76",
+      "claim": "OFC is not the only area that is necessary for value-neutral sensory learning.",
+      "claim_type": "EXPLICIT",
+      "source": "Of course, we do not intend to suggest that OFC is the only area that is necessary for this sort of value-neutral sensory learning. This is surely not the case.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an acknowledgment of the broader literature.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:24:26.053551Z"
+    },
+    {
+      "id": "3cb65a02-08ce-44e5-afce-d24d8c5e4773",
+      "content_id": "aa387d34-e740-415f-9159-c6cd05f91435",
+      "claim_id": "C77",
+      "claim": "Interfering with hippocampus, retrosplenial cortex, and perirhinal cortex impairs the acquisition of sensory-sensory associations.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed even when preconditioning is the readout, we know that interfering with several cortical areas including hippocampus (Port et al., 1987), retrosplenial cortex (Robinson et al., 2011; Robinson et al., 2014; Fournier et al., 2020), and perirhinal cortex (Holmes et al., 2013; Wong et al., 2019) seems to impair the acquisition of sensory-sensory associations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:24:26.053551Z"
+    },
+    {
+      "id": "4a581543-84e0-4295-ba78-81c88d7c0f52",
+      "content_id": "aa387d34-e740-415f-9159-c6cd05f91435",
+      "claim_id": "C78",
+      "claim": "Most cortical and subcortical areas encode variables relevant to predicting biologically-relevant outcomes.",
+      "claim_type": "EXPLICIT",
+      "source": "While most cortical and subcortical areas encode variables relevant to predicting biologically-relevant outcomes (Milad and Quirk, 2002; Burgos-Robles et al., 2009; Kennerley et al., 2011; Cai and Padoa-Schioppa, 2012; Burgos-Robles et al., 2013; Giustino et al., 2016; Giustino et al., 2019; Halladay et al., 2020), few studies look at whether the same areas track incidental sensory-sensory associations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:24:26.053551Z"
+    },
+    {
+      "id": "4a1f8a20-740d-4db2-ad96-726299035da1",
+      "content_id": "aa387d34-e740-415f-9159-c6cd05f91435",
+      "claim_id": "C79",
+      "claim": "Few studies look at whether cortical and subcortical areas track incidental sensory-sensory associations.",
+      "claim_type": "EXPLICIT",
+      "source": "While most cortical and subcortical areas encode variables relevant to predicting biologically-relevant outcomes (Milad and Quirk, 2002; Burgos-Robles et al., 2009; Kennerley et al., 2011; Cai and Padoa-Schioppa, 2012; Burgos-Robles et al., 2013; Giustino et al., 2016; Giustino et al., 2019; Halladay et al., 2020), few studies look at whether the same areas track incidental sensory-sensory associations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation about the state of the literature.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:24:26.053551Z"
+    },
+    {
+      "id": "520af057-6aa5-4a47-81df-4d58be23ac64",
+      "content_id": "aa387d34-e740-415f-9159-c6cd05f91435",
+      "claim_id": "C80",
+      "claim": "Other cortical areas (e.g. prelimbic, infralimbic, cingulate, retrosplenial) will likely also exhibit correlates of incidental sensory-sensory pairings, like OFC.",
+      "claim_type": "EXPLICIT",
+      "source": "This account would predict that other cortical areas (e.g. prelimbic, infralimbic, cingulate, retrosplenial) will likely also exhibit correlates of incidental sensory-sensory pairings, like OFC, yet unique single unit responses would not be apparent until the probe test, when subjects must infer specific information about the preconditioned cues based on new information acquired during conditioning.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative prediction based on the current findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:24:26.053551Z"
+    },
+    {
+      "id": "e3c7547c-58dd-45ed-841d-b45de0cf4efa",
+      "content_id": "aa387d34-e740-415f-9159-c6cd05f91435",
+      "claim_id": "C81",
+      "claim": "fMRI correlates of cue-cue learning were observed in precentral gyrus, middle occipital gyrus, insula, and hippocampus in a human sensory preconditioning task.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, fMRI correlates of cue-cue learning were observed in precentral gyrus, middle occipital gyrus, insula, and hippocampus in a human sensory preconditioning task (Wang et al., 2020a), and single unit correlates also exist in nucleus accumbens (Cerri et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:24:26.053551Z"
+    },
+    {
+      "id": "24468864-83cc-4c68-a6fb-00957f9688f1",
+      "content_id": "aa387d34-e740-415f-9159-c6cd05f91435",
+      "claim_id": "C82",
+      "claim": "Single unit correlates of cue-cue learning exist in nucleus accumbens.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, fMRI correlates of cue-cue learning were observed in precentral gyrus, middle occipital gyrus, insula, and hippocampus in a human sensory preconditioning task (Wang et al., 2020a), and single unit correlates also exist in nucleus accumbens (Cerri et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:24:26.053551Z"
+    },
+    {
+      "id": "61057f24-a79a-43e6-8475-ee62ad7c2599",
+      "content_id": "aa387d34-e740-415f-9159-c6cd05f91435",
+      "claim_id": "C83",
+      "claim": "Preconditioned responding has been shown as sensitive to extinction of the conditioned cue in fear conditioning.",
+      "claim_type": "EXPLICIT",
+      "source": "Lastly we would note that while preconditioned responding has been shown as sensitive to extinction of the conditioned cue in fear conditioning (Rizley and Rescorla, 1972) as well as to aversive conditioning when the conditioned cue is a tastant (Blundell et al., 2003), sensitivity of the preconditioned response to devaluation of the reward predicted by the conditioned cue is novel.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:24:26.053551Z"
+    },
+    {
+      "id": "785438e2-e70e-4466-b5d4-abbc78021642",
+      "content_id": "aa387d34-e740-415f-9159-c6cd05f91435",
+      "claim_id": "C84",
+      "claim": "Preconditioned responding has been shown as sensitive to aversive conditioning when the conditioned cue is a tastant.",
+      "claim_type": "EXPLICIT",
+      "source": "Lastly we would note that while preconditioned responding has been shown as sensitive to extinction of the conditioned cue in fear conditioning (Rizley and Rescorla, 1972) as well as to aversive conditioning when the conditioned cue is a tastant (Blundell et al., 2003), sensitivity of the preconditioned response to devaluation of the reward predicted by the conditioned cue is novel.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:24:26.053551Z"
+    },
+    {
+      "id": "d98c8469-5227-4edd-9841-9720b30be7b7",
+      "content_id": "aa387d34-e740-415f-9159-c6cd05f91435",
+      "claim_id": "C85",
+      "claim": "Sensitivity of the preconditioned response to devaluation of the reward predicted by the conditioned cue is novel.",
+      "claim_type": "EXPLICIT",
+      "source": "Lastly we would note that while preconditioned responding has been shown as sensitive to extinction of the conditioned cue in fear conditioning (Rizley and Rescorla, 1972) as well as to aversive conditioning when the conditioned cue is a tastant (Blundell et al., 2003), sensitivity of the preconditioned response to devaluation of the reward predicted by the conditioned cue is novel.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a claim about the novelty of the current findings.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:24:26.053551Z"
+    },
+    {
+      "id": "302b6a35-9b40-4f02-bd5e-1dbd1c4451d7",
+      "content_id": "aa387d34-e740-415f-9159-c6cd05f91435",
+      "claim_id": "C86",
+      "claim": "The devaluation sensitivity result is consistent with a mechanism whereby preconditioned responding reflects inference about food in the probe test.",
+      "claim_type": "EXPLICIT",
+      "source": "This result is important because, while it is conciliant with a mechanism whereby preconditioned responding reflects inference about food in the probe test, it is less consistent with other mechanisms whereby the preconditioned cue has been proposed to acquire value directly through so-called mediated learning in the conditioning phase.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the experimental results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:24:26.053551Z"
+    },
+    {
+      "id": "8e84fd5e-96f6-4da5-8543-5cd0582a50db",
+      "content_id": "aa387d34-e740-415f-9159-c6cd05f91435",
+      "claim_id": "C87",
+      "claim": "The devaluation sensitivity result is less consistent with mechanisms whereby the preconditioned cue acquires value directly through mediated learning in the conditioning phase.",
+      "claim_type": "EXPLICIT",
+      "source": "This result is important because, while it is conciliant with a mechanism whereby preconditioned responding reflects inference about food in the probe test, it is less consistent with other mechanisms whereby the preconditioned cue has been proposed to acquire value directly through so-called mediated learning in the conditioning phase.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the experimental results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:24:26.053551Z"
+    },
+    {
+      "id": "cb0f75b4-e575-44f4-b9bc-87a5c7eca2b2",
+      "content_id": "aa387d34-e740-415f-9159-c6cd05f91435",
+      "claim_id": "C88",
+      "claim": "Directly acquired value should leave residual responding that is resistant to devaluation.",
+      "claim_type": "EXPLICIT",
+      "source": "Such directly acquired value should leave residual responding that is resistant to devaluation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical prediction based on theoretical understanding.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:24:26.053551Z"
+    },
+    {
+      "id": "c1692226-5977-433f-aa92-47df7fcdc463",
+      "content_id": "aa387d34-e740-415f-9159-c6cd05f91435",
+      "claim_id": "C89",
+      "claim": "There was no evidence of residual responding resistant to devaluation.",
+      "claim_type": "EXPLICIT",
+      "source": "We did not see any evidence of this, consistent with prior work showing that preconditioned cues trained as we have done here do not acquire value (Sharpe et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:24:26.053551Z"
+    },
+    {
+      "id": "5aa715cd-ca91-40fe-b3e9-e25e7c9d9845",
+      "content_id": "aa387d34-e740-415f-9159-c6cd05f91435",
+      "claim_id": "C90",
+      "claim": "Preconditioned cues trained in this paradigm do not acquire value.",
+      "claim_type": "EXPLICIT",
+      "source": "We did not see any evidence of this, consistent with prior work showing that preconditioned cues trained as we have done here do not acquire value (Sharpe et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:24:26.053551Z"
+    },
+    {
+      "id": "a0d11dad-a601-448c-aa8f-6aabe1b058dc",
+      "content_id": "aa387d34-e740-415f-9159-c6cd05f91435",
+      "claim_id": "C91",
+      "claim": "The demonstration of devaluation sensitivity supports the contention that OFC-dependence reflects the role of OFC in using the underlying associative model to infer the likely delivery of food.",
+      "claim_type": "EXPLICIT",
+      "source": "The demonstration of the devaluation sensitivity of this response nicely supports our contention that its OFC-dependence, both here and in prior work, reflects the role of OFC in using the underlying associative model to infer the likely delivery of food.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the experimental results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:24:26.053551Z"
+    },
+    {
+      "id": "8346aa12-1cab-4646-9ac0-4baac00e3d7f",
+      "content_id": "aa387d34-e740-415f-9159-c6cd05f91435",
+      "claim_id": "C92",
+      "claim": "Fifty-four adult male (n = 31) and female (n = 23) Long-Evans rats were used in the experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "Fifty-four adult male (n = 31) and female (n = 23) Long-Evans rats age three to four months weighing between 270\u2013320 g during the time of experiments were individually housed and given ad libitum food and water except during behavioral training and testing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the subjects used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:24:26.053551Z"
+    },
+    {
+      "id": "244f40e9-72cd-4bb5-961d-45ef2e8e1614",
+      "content_id": "aa387d34-e740-415f-9159-c6cd05f91435",
+      "claim_id": "C93",
+      "claim": "The effect of cue during the critical probe test did not depend on sex.",
+      "claim_type": "EXPLICIT",
+      "source": "The effect of cue during the critical probe test did not depend on sex (main: F(1,39)=0.54, p=0.47; sex x cue: F(1,39)=0.19, p=0.66; sex x cue x group interaction: F(1,39)=2.66, p=0.11), so male and female rats were pooled for all analyses presented in the results.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical analysis of the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:24:26.053551Z"
+    },
+    {
+      "id": "374afd3e-d653-42cb-9503-d7ae478a0b3d",
+      "content_id": "aa387d34-e740-415f-9159-c6cd05f91435",
+      "claim_id": "C94",
+      "claim": "Male and female rats were pooled for all analyses presented in the results.",
+      "claim_type": "EXPLICIT",
+      "source": "The effect of cue during the critical probe test did not depend on sex (main: F(1,39)=0.54, p=0.47; sex x cue: F(1,39)=0.19, p=0.66; sex x cue x group interaction: F(1,39)=2.66, p=0.11), so male and female rats were pooled for all analyses presented in the results.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data analysis approach.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:24:26.053551Z"
+    },
+    {
+      "id": "462c2ade-d9fc-418a-904e-8c436478def2",
+      "content_id": "aa387d34-e740-415f-9159-c6cd05f91435",
+      "claim_id": "C95",
+      "claim": "Eleven subjects were not included in the final analyses due to loss of a headcap (n = 1), target miss and/or lack of viral expression (n = 7), and failure to acquire greater rewarded cue than non-rewarded cue responding during the conditioning phase (n = 3).",
+      "claim_type": "EXPLICIT",
+      "source": "Eleven subjects were not included in the final analyses due to loss of a headcap (n = 1), target miss and/or lack of viral expression (n = 7), and failure to acquire greater rewarded cue than non-rewarded cue responding during the conditioning phase (n = 3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the exclusion criteria for the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:24:26.053551Z"
+    },
+    {
+      "id": "d08c159f-f75b-45f9-978a-1e2abe1f06cb",
+      "content_id": "aa387d34-e740-415f-9159-c6cd05f91435",
+      "claim_id": "C96",
+      "claim": "Laser light was delivered at 532 nm calibrated to between 16 and 18 mW at patch cord output.",
+      "claim_type": "EXPLICIT",
+      "source": "532 nm laser light was calibrated to between 16 and 18 mW at patch cord output.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:24:26.053551Z"
+    },
+    {
+      "id": "a88d4115-1884-4416-8c9d-c55c55ae93b0",
+      "content_id": "aa387d34-e740-415f-9159-c6cd05f91435",
+      "claim_id": "C97",
+      "claim": "Constant laser light began 500 ms prior to presentation of each cue pair and ended with cue termination during preconditioning.",
+      "claim_type": "EXPLICIT",
+      "source": "Constant laser light began 500 ms prior to presentation of each cue pair and ended with cue termination.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental protocol.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:24:26.053551Z"
+    },
+    {
+      "id": "8b8a07fc-22c0-4ff1-8ab8-9fe2d38abb59",
+      "content_id": "aa387d34-e740-415f-9159-c6cd05f91435",
+      "claim_id": "C98",
+      "claim": "Rats underwent six sessions of Pavlovian conditioning in which they received cue B paired with reward and cue D without reward.",
+      "claim_type": "EXPLICIT",
+      "source": "Following preconditioning, rats underwent six sessions of Pavlovian conditioning in which they received cue B paired with reward and cue D without reward (B\u2192US; D; six pairings of each per session, interleaved in a counterbalanced fashion).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental protocol.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:24:26.053551Z"
+    },
+    {
+      "id": "86e8535b-c418-491e-8b60-d6b50732be7e",
+      "content_id": "aa387d34-e740-415f-9159-c6cd05f91435",
+      "claim_id": "C99",
+      "claim": "Pellets were presented three times during cue B at 3, 6.5, and 9 s into the 10 s presentation.",
+      "claim_type": "EXPLICIT",
+      "source": "The pellets were presented three times during cue B at 3, 6.5, and 9 s into the 10 s presentation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental protocol.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:24:26.053551Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "1df4b800-82a5-401b-a2a4-9b18bdfe1884",
+      "content_id": "aa387d34-e740-415f-9159-c6cd05f91435",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Optogenetic inhibition of OFC during the preconditioning phase (cue-cue learning) completely abolished responding to the preconditioned cue A during the probe test. Control rats showed significantly higher responding to A than C (p=0.046), while NpHR rats did not (p=0.75), with a significant cue \u00d7 group interaction (F(1,41)=4.57, p=0.04).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C20, C33-39, and C51 collectively demonstrate that OFC inhibition during preconditioning eliminates value inference. The statistical analyses are appropriate (two-way ANOVA with post-hoc comparisons), proper controls were used (eYFP group receiving light without opsin), and the effect is specific to the experimental manipulation. The significant interaction term directly supports the conclusion that OFC activity during cue-cue learning is necessary for later probe test performance.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:24:26.053551Z"
+    },
+    {
+      "id": "e8dd6139-9e3a-4778-9126-f3ad83486bcc",
+      "content_id": "aa387d34-e740-415f-9159-c6cd05f91435",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Preconditioned responding in control rats is sensitive to outcome devaluation. Rats that received paired LiCl-pellet presentations showed significantly reduced responding to cue A compared to unpaired controls during the first trial block (p=0.02), with a significant trial block \u00d7 group interaction (F(2,22)=4.58, p=0.02). This devaluation sensitivity is novel for appetitive sensory preconditioning.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C21, C40-46, and C85-91 demonstrate that preconditioned responding reflects model-based value inference rather than cached value transfer. The devaluation procedure was properly controlled (paired vs. unpaired groups with matched exposure), taste aversion was confirmed (t(5)=4.95, p=0.001), and the behavioral effect was statistically significant. This finding is important because it rules out alternative mechanisms involving direct value transfer during conditioning, as such mechanisms would leave devaluation-insensitive residual responding.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:24:26.053551Z"
+    },
+    {
+      "id": "e4ea660e-604b-44f5-94f1-2269f4b6a78c",
+      "content_id": "aa387d34-e740-415f-9159-c6cd05f91435",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "OFC must be online during cue-cue learning to support later value inference. The neural correlates previously observed in OFC are not simply downstream readouts of sensory processing but instead contribute to building the associative model that supports subsequent behavior during the probe test.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5-7, C52-53, and C60 present the main theoretical conclusion drawn from the optogenetic inhibition results. The inference is well-supported by the experimental data showing that OFC inhibition during preconditioning (when neural correlates were previously observed) disrupts later probe test performance. However, the authors appropriately acknowledge limitations regarding the temporal specificity of the manipulation (C59, C61) - they cannot rule out that OFC activity outside the cue period might also be necessary.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:24:26.053551Z"
+    },
+    {
+      "id": "5862d123-c971-4ff5-8207-afa824985a9d",
+      "content_id": "aa387d34-e740-415f-9159-c6cd05f91435",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The experimental design used appropriate optogenetic methods (NpHR vs. eYFP control), proper viral targeting and histological verification, and demonstrated equivalent baseline responding and conditioning across groups. During preconditioning, responding was negligible with no group differences (F(1,41)=1.99, p=0.17). During conditioning, both groups showed equivalent acquisition (no main effect of group: F(1,41)=0.02, p=0.90).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-32 and C92-99 describe methodological details and demonstrate proper experimental controls. The use of eYFP controls receiving identical light delivery rules out non-specific effects of illumination. The lack of group differences during preconditioning and conditioning phases confirms that the manipulation specifically affected the formation of cue-cue associations rather than causing general behavioral impairments. Histological verification and exclusion criteria (C95) were appropriate. Sex was properly controlled (C93-94).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:24:26.053551Z"
+    },
+    {
+      "id": "ffa46e87-1576-4d32-bb0f-43e8219ddd8e",
+      "content_id": "aa387d34-e740-415f-9159-c6cd05f91435",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The authors address alternative explanations including generalization between cues, non-specific effects of optogenetic inhibition, and temporal specificity of the manipulation. They argue against generalization as the primary mechanism based on low overall responding levels and cite prior work showing OFC is not necessary for sensory discrimination. They acknowledge that the manipulation was specific to cue presentation but cannot rule out necessity of OFC activity at other times.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55-68 present a thorough discussion of alternative interpretations and limitations. The arguments against generalization (C55-57) are reasonable given the data patterns and prior literature. The discussion of optogenetic control issues (C64-68) appropriately cites prior work showing brief OFC inhibition is not inherently distracting or rewarding. The acknowledgment of temporal specificity limitations (C58-63) is scientifically honest and appropriate. These considerations strengthen rather than weaken the main conclusions by demonstrating critical evaluation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:24:26.053551Z"
+    },
+    {
+      "id": "af7f33b8-413e-4ad6-ba33-62dccf18f3a0",
+      "content_id": "aa387d34-e740-415f-9159-c6cd05f91435",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The study builds on established knowledge that OFC is necessary for model-based value inference and prior findings from the authors' lab showing neural correlates of sensory-sensory associations in OFC during preconditioning. The current work tests whether these correlates are functionally necessary or merely downstream reflections of processing elsewhere.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-2, C8-19, and C47-50 establish the background and rationale for the study. These claims are well-supported by appropriate citations to prior literature. The authors correctly identify the limitation of their prior correlative recording work (C16) and formulate clear alternative hypotheses (C17-19) that motivate the current causal manipulation experiment. This provides strong scientific justification for the experimental approach.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:24:26.053551Z"
+    },
+    {
+      "id": "1f7cef7c-da2f-4970-96c9-d1ca94a9cc0e",
+      "content_id": "aa387d34-e740-415f-9159-c6cd05f91435",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The findings are consistent with broader literature showing OFC encodes multiple task features beyond value (trial type, sequence, direction, goal location). The authors discuss whether OFC's role in salience/attention might be secondary to its associative learning function, noting consistency with attentional models linking salience to associative strength.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C54, C69-75 present speculative interpretations about the relationship between OFC's role in associative learning versus salience/attention. While the citations to prior work are appropriate (C54, C71-73, C75), the argument that salience effects are secondary to associative learning (C74) is not directly tested in this study. The food cup shaping procedure (C69-70) could potentially confound interpretation, though the authors acknowledge this. These remain plausible but unproven hypotheses requiring additional experiments.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:24:26.053551Z"
+    },
+    {
+      "id": "6aea79a4-3838-4058-974f-90228fa6a7c9",
+      "content_id": "aa387d34-e740-415f-9159-c6cd05f91435",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The authors acknowledge that OFC is not the only brain region necessary for sensory preconditioning, citing evidence that hippocampus, retrosplenial cortex, and perirhinal cortex are also involved. They speculate that other cortical areas may show similar correlates of sensory-sensory associations but predict region-specific contributions would emerge during value inference in the probe test.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C76-82 appropriately contextualize the findings within broader neuroscience literature. The citations to other brain regions involved in preconditioning (C77) and sensory-sensory associations in other areas (C81-82) are accurate. The speculation about other cortical areas (C80) is reasonable but clearly identified as a prediction rather than a demonstrated finding. This discussion appropriately acknowledges the distributed nature of associative learning while maintaining focus on OFC's specific contribution.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:24:26.053551Z"
+    },
+    {
+      "id": "269ab378-076c-489c-a4ff-422e4189efe8",
+      "content_id": "aa387d34-e740-415f-9159-c6cd05f91435",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Prior work has shown preconditioned responding is sensitive to extinction of the conditioned cue in fear conditioning and to aversive conditioning when the conditioned cue is a tastant, providing precedent for manipulations affecting preconditioned responses.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C83-84 accurately cite prior literature showing that preconditioned responding can be modified by post-conditioning manipulations. These citations provide important context for the devaluation experiment, showing that while some forms of sensitivity have been demonstrated before, the specific devaluation manipulation used here is novel for appetitive preconditioning.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:24:26.053551Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "5a8434a3-7ef2-4b55-b35a-485a830195c2",
+      "result_id": "1df4b800-82a5-401b-a2a4-9b18bdfe1884"
+    },
+    {
+      "claim_id": "0e541694-4442-4374-ac7f-6d3bb1f2df51",
+      "result_id": "1df4b800-82a5-401b-a2a4-9b18bdfe1884"
+    },
+    {
+      "claim_id": "b1709354-3f07-4130-baea-ad747f784cc3",
+      "result_id": "1df4b800-82a5-401b-a2a4-9b18bdfe1884"
+    },
+    {
+      "claim_id": "58e5798e-ccb7-450c-bbdf-efc76f6f8a94",
+      "result_id": "1df4b800-82a5-401b-a2a4-9b18bdfe1884"
+    },
+    {
+      "claim_id": "31016b77-4a9c-417e-9ed6-515df4335055",
+      "result_id": "1df4b800-82a5-401b-a2a4-9b18bdfe1884"
+    },
+    {
+      "claim_id": "3d6c33f9-f3a3-46f6-8803-180c2eac5f43",
+      "result_id": "1df4b800-82a5-401b-a2a4-9b18bdfe1884"
+    },
+    {
+      "claim_id": "00d165e2-0ada-4df3-9b22-2059f227874c",
+      "result_id": "1df4b800-82a5-401b-a2a4-9b18bdfe1884"
+    },
+    {
+      "claim_id": "e57334fe-f794-4cfe-8ac2-b643362e7df3",
+      "result_id": "1df4b800-82a5-401b-a2a4-9b18bdfe1884"
+    },
+    {
+      "claim_id": "fdd62f15-d5a4-42c7-94a6-04ea6eb935ab",
+      "result_id": "1df4b800-82a5-401b-a2a4-9b18bdfe1884"
+    },
+    {
+      "claim_id": "b5f9b121-59c5-411f-8545-19c09c1de553",
+      "result_id": "1df4b800-82a5-401b-a2a4-9b18bdfe1884"
+    },
+    {
+      "claim_id": "54fed9a3-de19-4e34-9b8e-978cceb3cefc",
+      "result_id": "e8dd6139-9e3a-4778-9126-f3ad83486bcc"
+    },
+    {
+      "claim_id": "a323a579-3c09-4756-96b9-3cba47de6297",
+      "result_id": "e8dd6139-9e3a-4778-9126-f3ad83486bcc"
+    },
+    {
+      "claim_id": "554f0750-a30c-4fb0-8f8f-23b10b18685b",
+      "result_id": "e8dd6139-9e3a-4778-9126-f3ad83486bcc"
+    },
+    {
+      "claim_id": "ca512c3a-85fc-4ed8-8978-c3a4788a8434",
+      "result_id": "e8dd6139-9e3a-4778-9126-f3ad83486bcc"
+    },
+    {
+      "claim_id": "c98a7b20-5cb1-475b-8668-ce4b57c39cc4",
+      "result_id": "e8dd6139-9e3a-4778-9126-f3ad83486bcc"
+    },
+    {
+      "claim_id": "81c47ca2-334e-4f8e-bead-da6e7b010c9d",
+      "result_id": "e8dd6139-9e3a-4778-9126-f3ad83486bcc"
+    },
+    {
+      "claim_id": "88609c57-ec52-4252-b706-3cf31e83694d",
+      "result_id": "e8dd6139-9e3a-4778-9126-f3ad83486bcc"
+    },
+    {
+      "claim_id": "453ab78e-a8d9-478f-8195-f6418e337065",
+      "result_id": "e8dd6139-9e3a-4778-9126-f3ad83486bcc"
+    },
+    {
+      "claim_id": "e1bfd66b-c4a8-4a71-ab1a-1d33efa3ac2f",
+      "result_id": "e8dd6139-9e3a-4778-9126-f3ad83486bcc"
+    },
+    {
+      "claim_id": "d98c8469-5227-4edd-9841-9720b30be7b7",
+      "result_id": "e8dd6139-9e3a-4778-9126-f3ad83486bcc"
+    },
+    {
+      "claim_id": "302b6a35-9b40-4f02-bd5e-1dbd1c4451d7",
+      "result_id": "e8dd6139-9e3a-4778-9126-f3ad83486bcc"
+    },
+    {
+      "claim_id": "8e84fd5e-96f6-4da5-8543-5cd0582a50db",
+      "result_id": "e8dd6139-9e3a-4778-9126-f3ad83486bcc"
+    },
+    {
+      "claim_id": "cb0f75b4-e575-44f4-b9bc-87a5c7eca2b2",
+      "result_id": "e8dd6139-9e3a-4778-9126-f3ad83486bcc"
+    },
+    {
+      "claim_id": "c1692226-5977-433f-aa92-47df7fcdc463",
+      "result_id": "e8dd6139-9e3a-4778-9126-f3ad83486bcc"
+    },
+    {
+      "claim_id": "5aa715cd-ca91-40fe-b3e9-e25e7c9d9845",
+      "result_id": "e8dd6139-9e3a-4778-9126-f3ad83486bcc"
+    },
+    {
+      "claim_id": "a0d11dad-a601-448c-aa8f-6aabe1b058dc",
+      "result_id": "e8dd6139-9e3a-4778-9126-f3ad83486bcc"
+    },
+    {
+      "claim_id": "ad067d72-5576-4a9f-938b-e026eb10a7ec",
+      "result_id": "e4ea660e-604b-44f5-94f1-2269f4b6a78c"
+    },
+    {
+      "claim_id": "67c58c94-cafb-49b1-ae09-a926bfa28fce",
+      "result_id": "e4ea660e-604b-44f5-94f1-2269f4b6a78c"
+    },
+    {
+      "claim_id": "05f130b9-f4a7-4ce2-b986-3e04fc9219c0",
+      "result_id": "e4ea660e-604b-44f5-94f1-2269f4b6a78c"
+    },
+    {
+      "claim_id": "569d58bb-1af6-4a0a-bede-8f6d3b82bc22",
+      "result_id": "e4ea660e-604b-44f5-94f1-2269f4b6a78c"
+    },
+    {
+      "claim_id": "347fea08-1cc4-4b8c-951b-72721c88cf6d",
+      "result_id": "e4ea660e-604b-44f5-94f1-2269f4b6a78c"
+    },
+    {
+      "claim_id": "094056d0-91b1-4e94-b910-32c892be3f84",
+      "result_id": "e4ea660e-604b-44f5-94f1-2269f4b6a78c"
+    },
+    {
+      "claim_id": "3a7f5e10-1a3b-4970-b944-dbff025b1163",
+      "result_id": "5862d123-c971-4ff5-8207-afa824985a9d"
+    },
+    {
+      "claim_id": "05335f43-d869-455b-82c0-60b11d4f56a0",
+      "result_id": "5862d123-c971-4ff5-8207-afa824985a9d"
+    },
+    {
+      "claim_id": "f7471c6d-2967-4a52-ac70-4b9f6a114294",
+      "result_id": "5862d123-c971-4ff5-8207-afa824985a9d"
+    },
+    {
+      "claim_id": "5e2d8309-f5e5-400a-a9a4-4aa47d4bc9bf",
+      "result_id": "5862d123-c971-4ff5-8207-afa824985a9d"
+    },
+    {
+      "claim_id": "ad18a564-4a2a-4433-a569-3c07f1c6e4d8",
+      "result_id": "5862d123-c971-4ff5-8207-afa824985a9d"
+    },
+    {
+      "claim_id": "34542db6-fe4a-402f-87ff-1be053642e07",
+      "result_id": "5862d123-c971-4ff5-8207-afa824985a9d"
+    },
+    {
+      "claim_id": "ab03b047-d13e-4404-b5c0-f361b0b9c219",
+      "result_id": "5862d123-c971-4ff5-8207-afa824985a9d"
+    },
+    {
+      "claim_id": "114e6fe8-7fa3-41a0-82fc-2f1f97c38156",
+      "result_id": "5862d123-c971-4ff5-8207-afa824985a9d"
+    },
+    {
+      "claim_id": "e7cf7b84-7982-4ae6-8935-5a8d07bf8c54",
+      "result_id": "5862d123-c971-4ff5-8207-afa824985a9d"
+    },
+    {
+      "claim_id": "d2f811c4-3d10-40f0-8898-a3181f9205da",
+      "result_id": "5862d123-c971-4ff5-8207-afa824985a9d"
+    },
+    {
+      "claim_id": "571651b9-532f-457f-8ef2-3ba9828fb776",
+      "result_id": "5862d123-c971-4ff5-8207-afa824985a9d"
+    },
+    {
+      "claim_id": "8346aa12-1cab-4646-9ac0-4baac00e3d7f",
+      "result_id": "5862d123-c971-4ff5-8207-afa824985a9d"
+    },
+    {
+      "claim_id": "244f40e9-72cd-4bb5-961d-45ef2e8e1614",
+      "result_id": "5862d123-c971-4ff5-8207-afa824985a9d"
+    },
+    {
+      "claim_id": "374afd3e-d653-42cb-9503-d7ae478a0b3d",
+      "result_id": "5862d123-c971-4ff5-8207-afa824985a9d"
+    },
+    {
+      "claim_id": "462c2ade-d9fc-418a-904e-8c436478def2",
+      "result_id": "5862d123-c971-4ff5-8207-afa824985a9d"
+    },
+    {
+      "claim_id": "d08c159f-f75b-45f9-978a-1e2abe1f06cb",
+      "result_id": "5862d123-c971-4ff5-8207-afa824985a9d"
+    },
+    {
+      "claim_id": "a88d4115-1884-4416-8c9d-c55c55ae93b0",
+      "result_id": "5862d123-c971-4ff5-8207-afa824985a9d"
+    },
+    {
+      "claim_id": "8b8a07fc-22c0-4ff1-8ab8-9fe2d38abb59",
+      "result_id": "5862d123-c971-4ff5-8207-afa824985a9d"
+    },
+    {
+      "claim_id": "86e8535b-c418-491e-8b60-d6b50732be7e",
+      "result_id": "5862d123-c971-4ff5-8207-afa824985a9d"
+    },
+    {
+      "claim_id": "f086c3af-13ec-41e9-871c-5d64b15575d0",
+      "result_id": "ffa46e87-1576-4d32-bb0f-43e8219ddd8e"
+    },
+    {
+      "claim_id": "3a7fd33b-46de-416a-8d4a-65abf0f05a1b",
+      "result_id": "ffa46e87-1576-4d32-bb0f-43e8219ddd8e"
+    },
+    {
+      "claim_id": "bd0fafcf-b950-4aea-ac5d-28d07831a505",
+      "result_id": "ffa46e87-1576-4d32-bb0f-43e8219ddd8e"
+    },
+    {
+      "claim_id": "5dd794db-e11b-472a-ba00-5d77bad20dc0",
+      "result_id": "ffa46e87-1576-4d32-bb0f-43e8219ddd8e"
+    },
+    {
+      "claim_id": "2d056c40-4112-4524-8bbc-2b2a2e3e2c14",
+      "result_id": "ffa46e87-1576-4d32-bb0f-43e8219ddd8e"
+    },
+    {
+      "claim_id": "094056d0-91b1-4e94-b910-32c892be3f84",
+      "result_id": "ffa46e87-1576-4d32-bb0f-43e8219ddd8e"
+    },
+    {
+      "claim_id": "00100788-5905-42cc-b6ab-862a300e49cd",
+      "result_id": "ffa46e87-1576-4d32-bb0f-43e8219ddd8e"
+    },
+    {
+      "claim_id": "7de6df54-c7ef-4ac8-ac78-fa0e54799a87",
+      "result_id": "ffa46e87-1576-4d32-bb0f-43e8219ddd8e"
+    },
+    {
+      "claim_id": "9557f4c1-6dcc-4916-92fa-e9dccbb305e3",
+      "result_id": "ffa46e87-1576-4d32-bb0f-43e8219ddd8e"
+    },
+    {
+      "claim_id": "85f55d9b-b7c0-4bc5-a46a-bf7a11bbf2be",
+      "result_id": "ffa46e87-1576-4d32-bb0f-43e8219ddd8e"
+    },
+    {
+      "claim_id": "3b227bbc-aeb4-4bc7-91d7-a7c406c1f854",
+      "result_id": "ffa46e87-1576-4d32-bb0f-43e8219ddd8e"
+    },
+    {
+      "claim_id": "830c2b01-bf6e-49f0-8dd9-fa5e66233bb3",
+      "result_id": "ffa46e87-1576-4d32-bb0f-43e8219ddd8e"
+    },
+    {
+      "claim_id": "f36d92a9-6bbb-47ca-a675-43802038a67f",
+      "result_id": "ffa46e87-1576-4d32-bb0f-43e8219ddd8e"
+    },
+    {
+      "claim_id": "92dca330-edaf-4604-8f3d-3ccd629bfe21",
+      "result_id": "ffa46e87-1576-4d32-bb0f-43e8219ddd8e"
+    },
+    {
+      "claim_id": "25e95338-4277-4e3d-9ada-15715a98ec85",
+      "result_id": "af7f33b8-413e-4ad6-ba33-62dccf18f3a0"
+    },
+    {
+      "claim_id": "f01c7d9b-09b7-4dcf-a209-9eeb68c2d8b6",
+      "result_id": "af7f33b8-413e-4ad6-ba33-62dccf18f3a0"
+    },
+    {
+      "claim_id": "3333fbd7-e812-4810-a42e-22b0cd718cc1",
+      "result_id": "af7f33b8-413e-4ad6-ba33-62dccf18f3a0"
+    },
+    {
+      "claim_id": "d3cbaf7c-be90-46b2-9031-0eb33912e6d4",
+      "result_id": "af7f33b8-413e-4ad6-ba33-62dccf18f3a0"
+    },
+    {
+      "claim_id": "783c9c64-c9b4-475e-bdc7-09e4d0198328",
+      "result_id": "af7f33b8-413e-4ad6-ba33-62dccf18f3a0"
+    },
+    {
+      "claim_id": "fc3d3453-6166-461c-ad00-d0202a7a7de8",
+      "result_id": "af7f33b8-413e-4ad6-ba33-62dccf18f3a0"
+    },
+    {
+      "claim_id": "c00d67b0-8872-45ec-899e-a35220c33b99",
+      "result_id": "af7f33b8-413e-4ad6-ba33-62dccf18f3a0"
+    },
+    {
+      "claim_id": "5d3b2b34-05f0-414d-bed5-90285cf80149",
+      "result_id": "af7f33b8-413e-4ad6-ba33-62dccf18f3a0"
+    },
+    {
+      "claim_id": "934feb17-a879-4093-ab65-57488fb8c15f",
+      "result_id": "af7f33b8-413e-4ad6-ba33-62dccf18f3a0"
+    },
+    {
+      "claim_id": "fb9eadb9-eb74-432c-8711-c120240ad1c9",
+      "result_id": "af7f33b8-413e-4ad6-ba33-62dccf18f3a0"
+    },
+    {
+      "claim_id": "2de6730a-d646-4426-b938-735f93c44a35",
+      "result_id": "af7f33b8-413e-4ad6-ba33-62dccf18f3a0"
+    },
+    {
+      "claim_id": "a1821996-7db8-4545-aa98-8d5db62edf85",
+      "result_id": "af7f33b8-413e-4ad6-ba33-62dccf18f3a0"
+    },
+    {
+      "claim_id": "8843f50a-1432-4e19-8c16-cb496e302e18",
+      "result_id": "af7f33b8-413e-4ad6-ba33-62dccf18f3a0"
+    },
+    {
+      "claim_id": "9c3e2b15-3572-4c0e-a023-fbc1c009c3a1",
+      "result_id": "af7f33b8-413e-4ad6-ba33-62dccf18f3a0"
+    },
+    {
+      "claim_id": "c0e6d643-a391-49f4-b49e-885c84387c1c",
+      "result_id": "af7f33b8-413e-4ad6-ba33-62dccf18f3a0"
+    },
+    {
+      "claim_id": "02bd88ed-0fe7-48ff-b3e5-5fce5ba1b65d",
+      "result_id": "af7f33b8-413e-4ad6-ba33-62dccf18f3a0"
+    },
+    {
+      "claim_id": "7b650d21-56fd-4dff-ba13-23de44b46bed",
+      "result_id": "af7f33b8-413e-4ad6-ba33-62dccf18f3a0"
+    },
+    {
+      "claim_id": "3c6d80ee-b72c-4c2b-8bb4-7123a72a9196",
+      "result_id": "af7f33b8-413e-4ad6-ba33-62dccf18f3a0"
+    },
+    {
+      "claim_id": "2cf30486-f865-466e-a622-cb3a86e7641f",
+      "result_id": "1f7cef7c-da2f-4970-96c9-d1ca94a9cc0e"
+    },
+    {
+      "claim_id": "887ea26e-c231-468f-bb19-abeddc14a3cb",
+      "result_id": "1f7cef7c-da2f-4970-96c9-d1ca94a9cc0e"
+    },
+    {
+      "claim_id": "31362779-362a-406e-8451-ae9fb80286c4",
+      "result_id": "1f7cef7c-da2f-4970-96c9-d1ca94a9cc0e"
+    },
+    {
+      "claim_id": "c367b4d5-201e-4957-869d-fd5981a7aac8",
+      "result_id": "1f7cef7c-da2f-4970-96c9-d1ca94a9cc0e"
+    },
+    {
+      "claim_id": "1c1a2a91-6c6a-4219-ac46-924740c45bc6",
+      "result_id": "1f7cef7c-da2f-4970-96c9-d1ca94a9cc0e"
+    },
+    {
+      "claim_id": "e52a81ce-82b8-472c-abb8-58e55fd4cecc",
+      "result_id": "1f7cef7c-da2f-4970-96c9-d1ca94a9cc0e"
+    },
+    {
+      "claim_id": "fdf23f37-0f58-4f3e-8c25-8ebacd9c9b96",
+      "result_id": "1f7cef7c-da2f-4970-96c9-d1ca94a9cc0e"
+    },
+    {
+      "claim_id": "f6c4aa39-5a5d-4276-8d0d-0aeeb0d34241",
+      "result_id": "1f7cef7c-da2f-4970-96c9-d1ca94a9cc0e"
+    },
+    {
+      "claim_id": "a7ede229-1b37-4679-b50f-7489a3eb2f71",
+      "result_id": "6aea79a4-3838-4058-974f-90228fa6a7c9"
+    },
+    {
+      "claim_id": "3cb65a02-08ce-44e5-afce-d24d8c5e4773",
+      "result_id": "6aea79a4-3838-4058-974f-90228fa6a7c9"
+    },
+    {
+      "claim_id": "4a581543-84e0-4295-ba78-81c88d7c0f52",
+      "result_id": "6aea79a4-3838-4058-974f-90228fa6a7c9"
+    },
+    {
+      "claim_id": "4a1f8a20-740d-4db2-ad96-726299035da1",
+      "result_id": "6aea79a4-3838-4058-974f-90228fa6a7c9"
+    },
+    {
+      "claim_id": "520af057-6aa5-4a47-81df-4d58be23ac64",
+      "result_id": "6aea79a4-3838-4058-974f-90228fa6a7c9"
+    },
+    {
+      "claim_id": "e3c7547c-58dd-45ed-841d-b45de0cf4efa",
+      "result_id": "6aea79a4-3838-4058-974f-90228fa6a7c9"
+    },
+    {
+      "claim_id": "24468864-83cc-4c68-a6fb-00957f9688f1",
+      "result_id": "6aea79a4-3838-4058-974f-90228fa6a7c9"
+    },
+    {
+      "claim_id": "61057f24-a79a-43e6-8475-ee62ad7c2599",
+      "result_id": "269ab378-076c-489c-a4ff-422e4189efe8"
+    },
+    {
+      "claim_id": "785438e2-e70e-4466-b5d4-abbc78021642",
+      "result_id": "269ab378-076c-489c-a4ff-422e4189efe8"
+    }
+  ],
+  "comparisons": []
+}
